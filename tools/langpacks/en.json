@@ -1124,6 +1124,34 @@
     [
       "<a> minus <b> is <c>",
       "<a> - <b> = <c>"
+    ],
+    [
+      "the sum of the first <n> numbers is <e...>",
+      "\\sum_{i=1}^{<n>} i = <e>"
+    ],
+    [
+      "half of <a> equals <b>",
+      "<a> / 2 = <b>"
+    ],
+    [
+      "half of <a> is <b>",
+      "<a> / 2 = <b>"
+    ],
+    [
+      "a third of <a> equals <b>",
+      "<a> / 3 = <b>"
+    ],
+    [
+      "a third of <a> is <b>",
+      "<a> / 3 = <b>"
+    ],
+    [
+      "a quarter of <a> equals <b>",
+      "<a> / 4 = <b>"
+    ],
+    [
+      "a quarter of <a> is <b>",
+      "<a> / 4 = <b>"
     ]
   ]
 }
