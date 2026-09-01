@@ -1206,10 +1206,20 @@
     "a loop that does not change its condition never ends"
   ],
   "shape_names": {
-    "diamond": "choice",
+    "diamond": [
+      "choice",
+      "decision"
+    ],
     "rectangle": "step",
     "oval": "start",
     "arrow": "transition",
     "circle": "end"
+  },
+  "concepts": {
+    "remainder": "what is left over",
+    "quotient": "how many times the divisor fits",
+    "divisor": "what one divides by",
+    "sum": "what addition gives",
+    "difference": "what subtraction gives"
   }
 }

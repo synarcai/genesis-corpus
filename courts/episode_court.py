@@ -32,7 +32,8 @@ import sys
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
 from genesis import Unreadable, worlds  # noqa: E402
 from gsm_items import ANIMATE, ITEMS  # noqa: E402
-from plural import singular  # noqa: E402
+from plural import singular
+from plural import by_count as _по_счёту  # noqa: E402
 import units  # noqa: E402
 
 # РУБЕЖ-ДОЛГА: ЛОЖНЫХ_РУБЕЖ = 0
@@ -90,6 +91,12 @@ import units  # noqa: E402
 # ЧИСЛО ТОЖЕ УТВЕРЖДЕНИЕ: «is» стоит при единственном, «are» при
 # множественном, и подмена одного другим есть ложь о языке, отличимая
 # от лжи о мире.
+# ОТДАННОЕ УБЫЛО, И ФОРМА ВЕЩИ ИДЁТ ЗА ЧИСЛОМ. Показ несёт три
+# состояния и три формы одного слова — и всё это проверяемо разом.
+ОТДАЛ = re.compile(
+    rf"^({С}) had (\d+) ({С})\. \1 gave away (\d+) ({С})\. "
+    rf"\1 has (\d+) ({С}) left\.$")
+
 РОД_ВЕЩИ = re.compile(
     rf"^the ({С}) (is|are) an? (thing|person|measure)\.$")
 МЕСТО_ВЕЩИ = re.compile(
@@ -97,6 +104,12 @@ import units  # noqa: E402
 
 
 ЖИВЫЕ = {singular(w) for w in ANIMATE} | set(ANIMATE)
+МНОЖЕСТВЕННОЕ = {singular(w): w for w in ПРЕДМЕТЫ if singular(w) != w}
+
+
+def plural_of(один):
+    """Множественное число вещи — по объявленному списку."""
+    return МНОЖЕСТВЕННОЕ.get(один, один + "s")
 
 
 def _род(слово):
@@ -331,6 +344,19 @@ def впитать_ставки(путь):
 
 def судить(строка):
     с = строка.strip()
+    m = ОТДАЛ.match(с)
+    if m:
+        имя, было, вещь1, отдал, вещь2, стало, вещь3 = m.groups()
+        вещи = {singular(в) for в in (вещь1, вещь2, вещь3)}
+        числа = int(было), int(отдал), int(стало)
+        # ФОРМА ВЕЩИ СОГЛАСУЕТСЯ СО СВОИМ ЧИСЛОМ В КАЖДОЙ ТРЕТИ ПОКАЗА,
+        # и это отдельное утверждение рядом со счётным: «gave away 1
+        # apples» ложно о языке при верной арифметике.
+        формы = all(
+            в == (singular(в) if n == 1 else plural_of(singular(в)))
+            for n, в in zip(числа, (вещь1, вещь2, вещь3)))
+        return True, (len(вещи) == 1 and числа[0] - числа[1] == числа[2]
+                      and формы)
     m = РОД_ВЕЩИ.match(с)
     if m:
         слово, связка, род = m.groups()
