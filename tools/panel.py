@@ -46,7 +46,8 @@ for _где in (КОРЕНЬ / "courts", КОРЕНЬ / "tools", КОРЕНЬ / 
 ПРОСТЫЕ = ("algo", "physics", "cyber", "notation", "program", "statistics",
            "proof", "machine", "episode", "copula", "unit", "number",
            "sequence", "geometry", "linalg", "calendar", "speech",
-           "rugram", "physlaw", "compsci", "case", "valence")
+           "rugram", "physlaw", "compsci", "case", "valence",
+           "inquiry")
 
 
 def _взять(имя):
@@ -71,11 +72,16 @@ class Палата:
         return len(self.суды)
 
     def слои(self, путь):
-        """Контекст файла для судов, читающих слой целиком."""
+        """Контекст файла для судов, читающих слой целиком.
+
+        СЛОЙ ПОЛАГАЕТСЯ ВСЯКОМУ, КТО ЕГО ОБЪЯВИЛ, а не двум названным
+        поимённо. Прибор судимости держал именно такой — общий — зов, и
+        в этом был правее палаты; палата берёт его себе, и список
+        «markup, formula» перестаёт существовать как список.
+        """
         вон = {}
-        for имя in ("markup", "formula"):
-            суд = self.суды.get(имя)
-            если = getattr(суд, "Слой", None) if суд else None
+        for имя, суд in self.суды.items():
+            если = getattr(суд, "Слой", None)
             if если is not None:
                 вон[имя] = если()
                 вон[имя].впитать(путь)
@@ -104,10 +110,10 @@ class Палата:
                     свой = суд.судить(строка, self.знаки)
                 elif имя == "markup":
                     свой = суд.судить(строка, слои.get("markup"))
-                elif имя == "formula":
-                    свой = суд.судить(строка, слой=слои.get("formula"))
                 elif имя == "langlayer":
                     continue
+                elif имя in слои:
+                    свой = суд.судить(строка, слой=слои[имя])
                 else:
                     свой = суд.судить(строка)
             except Exception:
@@ -124,16 +130,32 @@ class Палата:
             return True, True, ["langlayer"]
         return судимо, True, кем
 
+    def пласт_файла(self, путь):
+        """Словарь пакета, если файл есть пласт языка, иначе None.
+
+        Имя пласта несёт свой язык («genesis_lang_uk» → «uk»), и
+        спрашивать об этом дважды в разных домах — тот же двойник, что
+        два списка судов.
+        """
+        LL = self.суды.get("langlayer")
+        основа = pathlib.Path(путь).stem
+        if LL is None or "_lang_" not in основа:
+            return None
+        слова, _ = LL.словарь_пакета(основа.rsplit("_", 1)[-1])
+        return слова
+
     def судить_файл(self, путь):
         """[(строка, судимо, истинно, кем)] по всему файлу."""
         путь = pathlib.Path(путь)
         слои = self.слои(путь)
+        пласт = self.пласт_файла(путь)
         вон = []
         with путь.open(encoding="utf-8", errors="replace") as поток:
             for строка in поток:
                 if not строка.strip():
                     continue
-                судимо, истинно, кем = self.судить(строка, слои)
+                судимо, истинно, кем = self.судить(строка, слои,
+                                                    пласт)
                 вон.append((строка.rstrip("\n"), судимо, истинно, кем))
         return вон
 
