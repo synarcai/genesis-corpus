@@ -1195,5 +1195,21 @@
       "multiplication distributes over addition",
       "a × ( b + c ) = a × b + a × c"
     ]
-  ]
+  ],
+  "maxims": [
+    "one witness kills a universal claim",
+    "base and step together give every natural",
+    "recursion without a base is a hang, not a program",
+    "a binding gives a name to a value",
+    "the branch not taken changes nothing",
+    "the order of steps matters",
+    "a loop that does not change its condition never ends"
+  ],
+  "shape_names": {
+    "diamond": "choice",
+    "rectangle": "step",
+    "oval": "start",
+    "arrow": "transition",
+    "circle": "end"
+  }
 }

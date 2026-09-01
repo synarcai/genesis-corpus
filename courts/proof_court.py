@@ -30,6 +30,11 @@ import sys
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
 from genesis import Unreadable, worlds  # noqa: E402
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import arith_court  # noqa: E402
+import declared  # noqa: E402
+
+_СЛОВАРЬ = None
 
 # РУБЕЖ-ДОЛГА: ЛОЖНЫХ_РУБЕЖ = 0
 ЛОЖНЫХ_РУБЕЖ = 0
@@ -78,7 +83,22 @@ def квадрат(n):
     r"^если n чётно, то n в квадрате чётно: (\d+) чётно и (\d+) чётно$")
 
 
+def _счёт(кусок):
+    """Пересчитать пример при максиме, если он счётный."""
+    global _СЛОВАРЬ
+    if _СЛОВАРЬ is None:
+        _СЛОВАРЬ = arith_court.словари()
+    return arith_court.судить(кусок, _СЛОВАРЬ)
+
+
 def судить(строка):
+    # ОБЪЯВЛЕННОЕ ЗНАНИЕ ЕСТЬ РОД ЭТОГО СУДА. Максимы слоя нельзя
+    # пересчитать, но они объявлены рядом со списком, который
+    # уточняют, — и сверяются с объявлением, как имена знаков.
+    судимо, истинно = declared.судить_объявленное(строка, _счёт)
+    if судимо:
+        return судимо, истинно
+
     с = строка.strip().rstrip(".")
     m = ШАГ_EN.match(с) or ШАГ_RU.match(с)
     if m:
