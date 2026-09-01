@@ -50,13 +50,18 @@ from genesis import Unreadable, worlds  # noqa: E402
     r"(?:каждый элемент|every element of)\s*\{([^}]*)\}\s*"
     r"(?:принадлежит|belongs to)\s*\{([^}]*)\}")
 ПРИНАД = re.compile(r"(\w+)\s*∈\s*\{([^}]*)\}\s*=\s*([TF])")
+# ГЛИФ И СЛОВО — ОДНА ЗАПИСЬ, И РАЗНИЦА МЕЖДУ НИМИ ЕСТЬ РАЗНИЦА
+# ЗАПИСИ, А НЕ РОДА. «T ∨ T = T» и «true or true equals true» говорят
+# одно; суд, знавший лишь слова, молчал о глифах — а глифами записана
+# половина слоя логики. Связка «equals» тоже есть «равно».
+ЗНАЧЕНИЕ = r"истина|ложь|true|false|T|F"
 БУЛЬ = re.compile(
-    r"\b(истина|ложь|true|false)\s+(и|или|and|or)\s+"
-    r"(истина|ложь|true|false)\s+(?:равно|is)\s+"
-    r"(истина|ложь|true|false)")
+    rf"\b({ЗНАЧЕНИЕ})\s*(и|или|and|or|∧|∨)\s*"
+    rf"({ЗНАЧЕНИЕ})\s*(?:равно|is|equals|=)\s*"
+    rf"({ЗНАЧЕНИЕ})\b")
 ОТРИЦ = re.compile(
-    r"\b(?:не|not)\s+(истина|ложь|true|false)\s+"
-    r"(?:равно|is)\s+(истина|ложь|true|false)")
+    rf"(?:\b(?:не|not)\s+|¬\s*)({ЗНАЧЕНИЕ})\s*"
+    rf"(?:равно|is|equals|=)\s*({ЗНАЧЕНИЕ})\b")
 ВЫВОД = re.compile(
     r"(?:из|from)\s+(\w+)\s+(?:и|and)\s+(\w+)\s*→\s*(\w+)\s+"
     r"(?:следует|follows)\s+(\w+)")
@@ -200,7 +205,7 @@ def судить(строка, знаки):
     if m:
         a, оп, b, c = (g.lower() for g in m.groups())
         A, B, C = ИСТИНА[a], ИСТИНА[b], ИСТИНА[c]
-        ждём = (A and B) if оп in ("и", "and") else (A or B)
+        ждём = (A and B) if оп in ("и", "and", "∧") else (A or B)
         return True, ждём == C
     m = ОТРИЦ.search(с)
     if m:
