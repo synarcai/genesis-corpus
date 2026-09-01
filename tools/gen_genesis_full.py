@@ -60,6 +60,32 @@ def собрать(сборка="full"):
 ШКОЛА = "datasets/GENESIS-SCHOOL.txt"
 
 
+def записать_размер(цель, байт, строк):
+    """Вписать НАСТОЯЩИЙ размер сборки в её узел манифеста.
+
+    Поле `size` стояло обещанием, которого никто не сверял, — и сосед,
+    варивший канон по манифесту, взял старое число и потерял хвост.
+    Объявление, которого не сверяют, есть та же дыра, что мера, которой
+    нет: обещание неотличимо от факта, пока не спросят. Свод вписывает
+    факт при каждой сборке, а суд манифеста роняет расхождение.
+    """
+    import collections
+    import json
+    путь = genesis.MANIFEST
+    м = json.loads(путь.read_text(encoding="utf-8"),
+                   object_pairs_hook=collections.OrderedDict)
+    тронуто = False
+    for мир in м["worlds"]:
+        if мир.get("file") != цель:
+            continue
+        if мир.get("size") != байт or мир.get("lines") != строк:
+            мир["size"], мир["lines"] = байт, строк
+            тронуто = True
+    if тронуто:
+        путь.write_text(json.dumps(м, ensure_ascii=False, indent=2)
+                        + "\n", encoding="utf-8")
+
+
 def main():
     for сборка, цель in (("full", ЦЕЛЬ), ("school", ШКОЛА)):
         тело, перепись = собрать(сборка)
@@ -70,7 +96,9 @@ def main():
         путь = genesis._resolve(цель)
         путь.write_text(тело, encoding="utf-8")
         строк = sum(n for _и, n in перепись)
-        print(f"written {цель}: {len(тело.encode('utf-8'))} bytes, "
+        байт = len(тело.encode("utf-8"))
+        записать_размер(цель, байт, строк)
+        print(f"written {цель}: {байт} bytes, "
               f"{строк} lines, {len(перепись)} worlds")
     return 0
 

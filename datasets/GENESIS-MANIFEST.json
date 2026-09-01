@@ -793,20 +793,55 @@
       "text": "shows"
     },
     {
+      "name": "dataformat",
+      "file": "datasets/genesis_dataformat.txt",
+      "genre": "data formats: ONE flat record written in JSON, YAML, TOML and CSV and said in two tongues, with the conversion between them as the show; the court parses both sides with its own readers and requires the SAME RECORD, not the same string — two writings differ in every character and mean one thing, which is what a format IS; the boundary is declared: flat records only, because nesting is held differently by every format and not at all by CSV",
+      "size": 200000,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
+    },
+    {
+      "name": "everyday",
+      "file": "datasets/genesis_everyday.txt",
+      "genre": "everyday life, and every line of it CARRIES A COMPUTABLE GROUND: things counted, containment walked through a declared tree, time ordered by a declared row, the past of a verb by rule with irregulars named, comparison by subtraction, and what remains after spending — the world that pays the debt named by the reach measure, where the corpus was rich in structure and poor in words",
+      "size": 400000,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
+    },
+    {
+      "name": "story_chain",
+      "file": "datasets/genesis_story_chain.txt",
+      "genre": "the three-part chain: one bearer, one thing, THREE different verbs in ONE show — «Tom picked 12 apples and gave away 5; Tom keeps 7 apples». A market law is bought only inside one episode, so the law lives in the show or it does not live; the third fact carries its bearer explicitly, both polarities are shown, and the polarity is declared BY THE VERBS, not read off the numbers",
+      "size": 100000,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
+    },
+    {
       "name": "school",
       "file": "datasets/GENESIS-SCHOOL.txt",
       "genre": "the school assembly: every world that declares «school» in its `assemblies`, in manifest order — the ladder a learner walks before the whole corpus; a consequence of the manifest, not a decision of whoever assembles it",
-      "size": 0,
+      "size": 4138602,
       "tiers": [],
-      "text": "mix"
+      "text": "mix",
+      "lines": 79291
     },
     {
       "name": "full",
       "file": "datasets/GENESIS-FULL.txt",
       "genre": "the full mix: every world of shows, in manifest order, welded by the same seam that welds passes inside a layer — a consequence of the manifest, not a decision of whoever assembles it",
-      "size": 0,
+      "size": 6678345,
       "tiers": [],
-      "text": "mix"
+      "text": "mix",
+      "lines": 127929
     }
   ]
 }
