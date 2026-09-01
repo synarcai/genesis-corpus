@@ -19,6 +19,7 @@ COURTS=("courts/arith_court.py" "courts/algo_court.py"
         "courts/agreement_court.py" "courts/notation_court.py"
         "courts/program_court.py" "courts/statistics_court.py"
         "courts/proof_court.py" "courts/machine_court.py"
+        "courts/episode_court.py"
         "tools/gsm_census.py --court"
         "scripts/reproducible.py" "scripts/bash32_court.py")
 FELL=0
