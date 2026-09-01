@@ -635,11 +635,32 @@
     "yours"
   ],
   "sign_names": {
+    "#": [
+      "heading"
+    ],
+    "(": [
+      "open bracket"
+    ],
+    ")": [
+      "close bracket"
+    ],
+    "**": [
+      "bold"
+    ],
     "+": [
       "plus"
     ],
+    "-->": [
+      "leads to"
+    ],
+    "<": [
+      "less than"
+    ],
     "=": [
       "equals"
+    ],
+    ">": [
+      "greater than"
     ],
     "\\Delta": [
       "capital delta",
@@ -699,6 +720,9 @@
     ],
     "\\forall": [
       "for all"
+    ],
+    "\\frac": [
+      "fraction"
     ],
     "\\gamma": [
       "gamma"
@@ -798,6 +822,9 @@
     "\\xi": [
       "xi"
     ],
+    "`": [
+      "code"
+    ],
     "a": [
       "a"
     ],
@@ -816,8 +843,14 @@
     "f": [
       "f"
     ],
+    "false": [
+      "f"
+    ],
     "g": [
       "g"
+    ],
+    "graph": [
+      "diagram"
     ],
     "h": [
       "h"
@@ -825,17 +858,27 @@
     "i": [
       "i"
     ],
+    "if": [
+      "if"
+    ],
     "j": [
       "j"
     ],
     "k": [
       "k"
     ],
+    "kg": [
+      "kilogram"
+    ],
     "l": [
       "l"
     ],
+    "let": [
+      "let"
+    ],
     "m": [
-      "m"
+      "m",
+      "meter"
     ],
     "n": [
       "n"
@@ -853,9 +896,13 @@
       "r"
     ],
     "s": [
-      "s"
+      "s",
+      "second"
     ],
     "t": [
+      "t"
+    ],
+    "true": [
       "t"
     ],
     "u": [
@@ -883,7 +930,8 @@
       "times"
     ],
     "÷": [
-      "over"
+      "over",
+      "divided by"
     ],
     "Γ": [
       "capital gamma",
@@ -986,7 +1034,8 @@
       "empty set"
     ],
     "∈": [
-      "belongs"
+      "belongs",
+      "belongs to"
     ],
     "∏": [
       "product"
@@ -1036,5 +1085,23 @@
     "⊂": [
       "subset"
     ]
-  }
+  },
+  "latex_readings": [
+    [
+      "\\frac{<a>}{<b>}",
+      "<a> over <b>"
+    ],
+    [
+      "<a> \\in <b>",
+      "<a> belongs to <b>"
+    ],
+    [
+      "<a> \\subset <b>",
+      "<a> is contained in <b>"
+    ],
+    [
+      "<f>: <x> \\to <y>",
+      "a function from <x> to <y>"
+    ]
+  ]
 }
