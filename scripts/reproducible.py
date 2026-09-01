@@ -47,10 +47,15 @@ def main():
     with tempfile.TemporaryDirectory() as врем:
         двор = pathlib.Path(врем)
         (двор / "datasets").mkdir()
-        for ф in ["layer.py", "plural.py", "segment.py", "genesis.py",
-                  "gsm_items.py", "langpack.py"]:
-            if (КОРЕНЬ / "tools" / ф).is_file():
-                shutil.copy(КОРЕНЬ / "tools" / ф, двор / ф)
+        # ДОМА ВЫВОДЯТСЯ, А НЕ ПЕРЕЧИСЛЯЮТСЯ. Здесь стоял рукописный
+        # список из шести имён — и первый же новый общий дом
+        # (`units.py`) обрушил сборку трёх генераторов: список
+        # охраняет список, а не закон (М-76). Общий дом есть всякий
+        # модуль `tools/`, который не генератор; лишняя копия не стоит
+        # ничего, пропущенная стоит ложного «FAIL».
+        for ф in sorted((КОРЕНЬ / "tools").glob("*.py")):
+            if not ф.name.startswith("gen_genesis_"):
+                shutil.copy(ф, двор / ф.name)
         if (КОРЕНЬ / "tools/langpacks").is_dir():
             shutil.copytree(КОРЕНЬ / "tools/langpacks", двор / "langpacks")
         for ген in генераторы:

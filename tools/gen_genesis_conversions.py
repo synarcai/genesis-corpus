@@ -30,42 +30,31 @@ import pathlib
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-from langpack import count_form_index  # noqa: E402
+import units  # noqa: E402
 
-RU_PACK = json.loads(
-    (pathlib.Path(__file__).resolve().parent
-     / "langpacks/ru.json").read_text(encoding="utf-8")
-)
-RU_RULE = {"forms": ["one", "few", "many"],
-           "count_agreement": RU_PACK["count_agreement"]}
-
-# (english singular, english plural, ratio, russian «в ЧЁМ»,
-#  russian NOMINATIVE of that same word, russian target forms
-#  one/few/many) — every fact true, none derived.
+# ПОРЯДОК СВОЙ, ОТНОШЕНИЯ ОБЩИЕ. Восемь фактов жили здесь, семь — в
+# слое единиц, пять приставочных — в слое физики; три дома одного
+# знания расходятся в день, когда тронут любой из них. Слой называет,
+# ЧТО показывает и КАКИМ письмом; отношения, формы и предложный падеж
+# читаются из `tools/units.py` — оттуда же их берёт суд единиц.
 # ИМЕНИТЕЛЬНЫЙ ОБЪЯВЛЕН ОТДЕЛЬНО, а не отрезан от предложного: первая
 # редакция брала второе слово из «в году» и печатала «году — это
 # мера». Русскую форму нельзя получить отсечением, её называют.
-FACTS = [
-    ("day", "hours", 24, "в сутках", "сутки",
-     ("час", "часа", "часов")),
-    ("hour", "minutes", 60, "в часе", "час",
-     ("минута", "минуты", "минут")),
-    ("minute", "seconds", 60, "в минуте", "минута",
-     ("секунда", "секунды", "секунд")),
-    ("week", "days", 7, "в неделе", "неделя",
-     ("день", "дня", "дней")),
-    ("year", "months", 12, "в году", "год",
-     ("месяц", "месяца", "месяцев")),
-    ("dollar", "cents", 100, "в долларе", "доллар",
-     ("цент", "цента", "центов")),
-    ("foot", "inches", 12, "в футе", "фут",
-     ("дюйм", "дюйма", "дюймов")),
-    ("kilometer", "meters", 1000, "в километре", "километр",
-     ("метр", "метра", "метров")),
-]
-EN_PLURAL = {"day": "days", "hour": "hours", "minute": "minutes",
-             "week": "weeks", "year": "years", "dollar": "dollars",
-             "foot": "feet", "kilometer": "kilometers"}
+ПОРЯДОК = ("day", "hour", "minute", "week", "year", "dollar",
+           "foot", "kilometre")
+ПИСЬМО = "amer"
+
+FACTS = []
+EN_PLURAL = {}
+for _имя in ПОРЯДОК:
+    _часть = next(б for (а, б) in units.РЁБРА if а == _имя)
+    _ru_in, _ru_nom = units.В_ЧЁМ[_имя]
+    _ед = units.англ(_имя, False, ПИСЬМО)
+    FACTS.append((_ед, units.англ(_часть, True, ПИСЬМО),
+                  int(units.отношение(_имя, _часть)),
+                  _ru_in, _ru_nom, units.ФОРМЫ_ВСЕХ[_часть][1]))
+    EN_PLURAL[_ед] = units.англ(_имя, True, ПИСЬМО)
+
 BARE = [
     "the {one} is a unit.",
     "what is a {one}?",
@@ -74,7 +63,7 @@ BARE = [
 
 
 def ru_form(forms, k):
-    return forms[count_form_index(RU_PACK, RU_RULE, k)]
+    return units.ру_форма(forms, k)
 
 
 def pass_shows(pass_i):

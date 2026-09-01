@@ -9,45 +9,38 @@ laws: bare shows, three surfaces (glyph / RU / EN),
 deterministic coprime shuffles, form-feed seams.
 """
 
+import units
 from layer import emit_grouped
 
 
-# RU units carry their case forms: (one, few 2-4,
-# many 5+) — the organism lives on exact word
-# forms, a caseless show never matches a lived
-# question («2 часа равно», not «2 час равно»).
-CONVERSIONS = [
-    # ((ru_one, ru_few, ru_many), en, en_pl,
-    #  ru_sub_many, en_sub, factor)
-    (("час", "часа", "часов"), "hour", "hours",
-     "минут", "minutes", 60),
-    (("минута", "минуты", "минут"), "minute",
-     "minutes", "секунд", "seconds", 60),
-    (("метр", "метра", "метров"), "meter",
-     "meters", "сантиметров", "centimeters",
-     100),
-    (("километр", "километра", "километров"),
-     "kilometer", "kilometers", "метров",
-     "meters", 1000),
-    (("килограмм", "килограмма",
-      "килограммов"), "kilogram", "kilograms",
-     "граммов", "grams", 1000),
-    (("неделя", "недели", "недель"), "week",
-     "weeks", "дней", "days", 7),
-    (("дюжина", "дюжины", "дюжин"), "dozen",
-     "dozens", "штук", "items", 12),
-]
+# ПОРЯДОК СВОЙ, ОТНОШЕНИЯ ОБЩИЕ. Здесь жила ВТОРАЯ
+# таблица переводов (два факта повторяли соседний
+# слой) и ТРЕТЬЯ копия русского согласования — та
+# самая, от которой сосед прямо предостерегал в
+# своей же шапке. Слой называет, ЧТО показывает и
+# КАКИМ письмом; отношения и формы читаются из
+# `tools/units.py`. Русские падежные формы нужны
+# по-прежнему: организм живёт точными формами, и
+# бесподежный показ не отвечает прожитому вопросу
+# («2 часа равно», не «2 час равно»).
+ПОРЯДОК = ("hour", "minute", "metre", "kilometre",
+           "kilogram", "week", "dozen")
+ПИСЬМО = "amer"
 
 
-def ru_form(forms, k):
-    one, few, many = forms
-    if k % 10 == 1 and k % 100 != 11:
-        return one
-    if k % 10 in (2, 3, 4) and k % 100 not in (
-        12, 13, 14,
-    ):
-        return few
-    return many
+def conversions():
+    """(формы ру, ед. англ, мн. англ, ру мн. части,
+    англ мн. части, во сколько раз)."""
+    for имя in ПОРЯДОК:
+        часть = next(б for (а, б) in units.РЁБРА
+                     if а == имя)
+        yield (units.ФОРМЫ_ВСЕХ[имя][1],
+               units.англ(имя, False, ПИСЬМО),
+               units.англ(имя, True, ПИСЬМО),
+               units.рус(часть, 5),
+               units.англ(часть, True, ПИСЬМО),
+               int(units.отношение(имя, часть)))
+
 
 RU_NUM = ["ноль", "один", "два", "три", "четыре",
           "пять", "шесть", "семь", "восемь",
@@ -59,14 +52,14 @@ EN_NUM = ["zero", "one", "two", "three", "four",
 
 def conversion_shows():
     out = []
-    for (ruf, en, enp, rus, ens, f) in CONVERSIONS:
+    for (ruf, en, enp, rus, ens, f) in conversions():
         out.append(
             f"один {ruf[0]} равно {f} {rus}."
         )
         out.append(f"one {en} equals {f} {ens}.")
         for k in (2, 3, 5):
             out.append(
-                f"{k} {ru_form(ruf, k)} равно "
+                f"{k} {units.ру_форма(ruf, k)} равно "
                 f"{k * f} {rus}."
             )
             out.append(
@@ -127,9 +120,9 @@ def rate_shows():
     for k in range(2, 7):
         for p in (2, 3, 5):
             out.append(
-                f"{k} по {p} {ru_form(rub, p)} "
+                f"{k} по {p} {units.ру_форма(rub, p)} "
                 f"равно {k * p} "
-                f"{ru_form(rub, k * p)}."
+                f"{units.ру_форма(rub, k * p)}."
             )
             out.append(
                 f"{k} items at {p} dollars "

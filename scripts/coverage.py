@@ -52,7 +52,8 @@ EP = _взять("episode_court")
 # ПУСТОЙ-ОБХОД: --manifest no-such-manifest
 
 ПРОЧИЕ = ["algo", "formula", "physics", "cyber", "notation", "program",
-          "statistics", "proof", "machine", "episode", "copula"]
+          "statistics", "proof", "machine", "episode", "copula",
+          "unit"]
 
 
 def main():
@@ -74,6 +75,10 @@ def main():
         return 2
     всего = взято = 0
     по_мирам = []
+    # СЛЕПОЕ ПОКАЗЫВАЕТСЯ, А НЕ СЧИТАЕТСЯ. Число слепых строк
+    # говорит, СКОЛЬКО осталось, но не говорит ЧТО — а закон
+    # покупается только с формой в руках.
+    слепые = {} if "--слепые" in sys.argv else None
     for мир in миры:
         if мир.get("text") == "prose":
             continue
@@ -106,6 +111,9 @@ def main():
                 if not видно and слова is not None:
                     видно = True
                 взяты += видно
+                if not видно and слепые is not None:
+                    слепые.setdefault(мир["name"], []).append(
+                        строка.rstrip())
         всего += свои
         взято += взяты
         по_мирам.append((взяты / свои if свои else 1.0,
@@ -115,9 +123,15 @@ def main():
         return 2
     доля = 100 * взято // всего
     по_мирам.sort()
-    for д, имя, свои, взяты in по_мирам[:5]:
+    сколько_миров = len(по_мирам) if "--всё" in sys.argv else 5
+    for д, имя, свои, взяты in по_мирам[:сколько_миров]:
         if д < 1.0:
             print(f"  {имя:<22}{свои:>7}{взяты:>8}{int(д * 100):>6}%")
+    if слепые is not None:
+        сколько = 3 if "--много" not in sys.argv else 10 ** 9
+        for _, имя, _, _ in по_мирам:
+            for строка in слепые.get(имя, ())[:сколько]:
+                print(f"  СЛЕП {имя:<20} {строка[:110]}")
     итог = "PASS" if доля >= СУДИМОСТЬ_РУБЕЖ else "FAIL"
     # СЛЕПЫЕ НАЗВАНЫ ЧИСЛОМ, А НЕ ВЫЧИТАНИЕМ В ГОЛОВЕ ЧИТАЮЩЕГО:
     # находка прибора есть строка, которую не читает никто, и она
