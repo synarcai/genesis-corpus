@@ -826,22 +826,44 @@
       ]
     },
     {
+      "name": "age",
+      "file": "datasets/genesis_age.txt",
+      "genre": "age and the shift of time: the difference between two ages does NOT change when both move forward or back — the law a corpus of single facts cannot teach; ages now, the shift in both directions, the multiple relation with its ground, the multiple in the future built so it is true by construction, and a refusal when nothing is said about the person asked",
+      "size": 100000,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
+    },
+    {
+      "name": "share",
+      "file": "datasets/genesis_share.txt",
+      "genre": "shares said in WORDS: «two thirds», «три четверти», the share of a quantity with its ground («12 divided by 3 is 4, and 4 times 2 is 8»), the share in comparison («half as many»), mixed numbers («one and a half»), and shares that add to one whole; only whole results are uttered",
+      "size": 100000,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
+    },
+    {
       "name": "school",
       "file": "datasets/GENESIS-SCHOOL.txt",
       "genre": "the school assembly: every world that declares «school» in its `assemblies`, in manifest order — the ladder a learner walks before the whole corpus; a consequence of the manifest, not a decision of whoever assembles it",
-      "size": 4138602,
+      "size": 4314052,
       "tiers": [],
       "text": "mix",
-      "lines": 79291
+      "lines": 81391
     },
     {
       "name": "full",
       "file": "datasets/GENESIS-FULL.txt",
       "genre": "the full mix: every world of shows, in manifest order, welded by the same seam that welds passes inside a layer — a consequence of the manifest, not a decision of whoever assembles it",
-      "size": 6678345,
+      "size": 6853795,
       "tiers": [],
       "text": "mix",
-      "lines": 127929
+      "lines": 130029
     }
   ]
 }

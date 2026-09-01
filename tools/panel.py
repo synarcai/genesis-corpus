@@ -63,7 +63,8 @@ for _где in (КОРЕНЬ / "courts", КОРЕНЬ / "tools", КОРЕНЬ / 
            "rates_court", "formula_lang_court",
            "percent_court", "average_court",
            "equation_court", "dataformat_court", "everyday_court",
-           "story_chain_court")
+           "story_chain_court", "age_court",
+           "share_court")
 
 
 def _взять(модуль):
