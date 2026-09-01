@@ -1,0 +1,570 @@
+{
+  "lang": "ja",
+  "script": "japanese",
+  "script_range": "ぁ-ゟ゠-ヿ",
+  "graphemes": "あいかがきくけこさしすそたちっつでなにのはべまみらりるれをカトドノペンー一七三九二五何使傘八六冊写分切割匹十古台四大女安家小引彼手掛新書木本来枚物猫白百皿真石私筆箱紙色見話誌読買足車軒通鉛長雑零靴食飲高",
+  "tier": 1,
+  "comment": "FOURTEENTH PACK. Japanese: THREE SCRIPTS IN ONE LINE (kanji, hiragana, katakana) where the pack has one `script` field; COUNTER WORDS chosen by the noun's semantic class (冊 books, 台 machines, 本 long thin things, 枚 flat things, 通 letters, 軒 houses, 足 footwear, つ the rest) — not agreement, a third element with no field of its own, so it rides in the noun's own paradigm; NO PLURAL and NO PERSON — six verb cells hold one form. The forge hard-codes a space and a Latin full stop into two kinds; Japanese writes neither, and those two kinds are wrong on purpose rather than the language bent. TIER 1.",
+  "lexeme_source": {
+    "law": "every morph class must carry >= LAW distinct lexemes; a class below its declared need is judged poor by the engine",
+    "need_per_class": 5
+  },
+  "numerals": {
+    "0": "零",
+    "1": "一",
+    "2": "二",
+    "3": "三",
+    "4": "四",
+    "5": "五",
+    "6": "六",
+    "7": "七",
+    "8": "八",
+    "9": "九",
+    "10": "十",
+    "11": "十一",
+    "12": "十二",
+    "13": "十三",
+    "14": "十四",
+    "15": "十五",
+    "16": "十六",
+    "17": "十七",
+    "18": "十八",
+    "19": "十九",
+    "20": "二十",
+    "21": "二十一",
+    "24": "二十四",
+    "25": "二十五",
+    "27": "二十七",
+    "28": "二十八",
+    "30": "三十",
+    "32": "三十二",
+    "35": "三十五",
+    "36": "三十六",
+    "40": "四十",
+    "45": "四十五",
+    "50": "五十",
+    "60": "六十",
+    "70": "七十",
+    "80": "八十",
+    "90": "九十",
+    "100": "百"
+  },
+  "count_agreement": [
+    {
+      "form": "one"
+    }
+  ],
+  "morph_classes": {
+    "verb_pres": {
+      "forms": [
+        "s1",
+        "s2",
+        "s3",
+        "p1",
+        "p2",
+        "p3"
+      ],
+      "paradigm_cells": 6,
+      "need": 5,
+      "lexemes": {
+        "書く": [
+          "書きます",
+          "書きます",
+          "書きます",
+          "書きます",
+          "書きます",
+          "書きます"
+        ],
+        "読む": [
+          "読みます",
+          "読みます",
+          "読みます",
+          "読みます",
+          "読みます",
+          "読みます"
+        ],
+        "飲む": [
+          "飲みます",
+          "飲みます",
+          "飲みます",
+          "飲みます",
+          "飲みます",
+          "飲みます"
+        ],
+        "話す": [
+          "話します",
+          "話します",
+          "話します",
+          "話します",
+          "話します",
+          "話します"
+        ],
+        "買う": [
+          "買います",
+          "買います",
+          "買います",
+          "買います",
+          "買います",
+          "買います"
+        ],
+        "使う": [
+          "使います",
+          "使います",
+          "使います",
+          "使います",
+          "使います",
+          "使います"
+        ],
+        "分かる": [
+          "分かります",
+          "分かります",
+          "分かります",
+          "分かります",
+          "分かります",
+          "分かります"
+        ],
+        "食べる": [
+          "食べます",
+          "食べます",
+          "食べます",
+          "食べます",
+          "食べます",
+          "食べます"
+        ],
+        "見る": [
+          "見ます",
+          "見ます",
+          "見ます",
+          "見ます",
+          "見ます",
+          "見ます"
+        ],
+        "する": [
+          "します",
+          "します",
+          "します",
+          "します",
+          "します",
+          "します"
+        ],
+        "来る": [
+          "来ます",
+          "来ます",
+          "来ます",
+          "来ます",
+          "来ます",
+          "来ます"
+        ]
+      },
+      "rule": {
+        "classes": {
+          "godan-ku": {
+            "strip": "く",
+            "endings": [
+              "きます",
+              "きます",
+              "きます",
+              "きます",
+              "きます",
+              "きます"
+            ]
+          },
+          "godan-mu": {
+            "strip": "む",
+            "endings": [
+              "みます",
+              "みます",
+              "みます",
+              "みます",
+              "みます",
+              "みます"
+            ]
+          },
+          "godan-su": {
+            "strip": "す",
+            "endings": [
+              "します",
+              "します",
+              "します",
+              "します",
+              "します",
+              "します"
+            ]
+          },
+          "godan-u": {
+            "strip": "う",
+            "endings": [
+              "います",
+              "います",
+              "います",
+              "います",
+              "います",
+              "います"
+            ]
+          },
+          "godan-ru": {
+            "strip": "る",
+            "endings": [
+              "ります",
+              "ります",
+              "ります",
+              "ります",
+              "ります",
+              "ります"
+            ]
+          },
+          "ichidan": {
+            "strip": "る",
+            "endings": [
+              "ます",
+              "ます",
+              "ます",
+              "ます",
+              "ます",
+              "ます"
+            ]
+          }
+        },
+        "of": {
+          "書く": "godan-ku",
+          "読む": "godan-mu",
+          "飲む": "godan-mu",
+          "話す": "godan-su",
+          "買う": "godan-u",
+          "使う": "godan-u",
+          "分かる": "godan-ru",
+          "食べる": "ichidan",
+          "見る": "ichidan",
+          "する": "*",
+          "来る": "*"
+        }
+      }
+    },
+    "noun_count": {
+      "forms": [
+        "one",
+        "many"
+      ],
+      "paradigm_cells": 2,
+      "need": 5,
+      "lexemes": {
+        "本": [
+          "本",
+          "三冊の本"
+        ],
+        "雑誌": [
+          "雑誌",
+          "三冊の雑誌"
+        ],
+        "ノート": [
+          "ノート",
+          "三冊のノート"
+        ],
+        "車": [
+          "車",
+          "三台の車"
+        ],
+        "ペン": [
+          "ペン",
+          "三本のペン"
+        ],
+        "鉛筆": [
+          "鉛筆",
+          "三本の鉛筆"
+        ],
+        "傘": [
+          "傘",
+          "三本の傘"
+        ],
+        "木": [
+          "木",
+          "三本の木"
+        ],
+        "紙": [
+          "紙",
+          "三枚の紙"
+        ],
+        "皿": [
+          "皿",
+          "三枚の皿"
+        ],
+        "写真": [
+          "写真",
+          "三枚の写真"
+        ],
+        "切手": [
+          "切手",
+          "三枚の切手"
+        ],
+        "カード": [
+          "カード",
+          "三枚のカード"
+        ],
+        "手紙": [
+          "手紙",
+          "三通の手紙"
+        ],
+        "家": [
+          "家",
+          "三軒の家"
+        ],
+        "靴": [
+          "靴",
+          "三足の靴"
+        ],
+        "箱": [
+          "箱",
+          "三つの箱"
+        ],
+        "石": [
+          "石",
+          "三つの石"
+        ]
+      }
+    },
+    "adj_forms": {
+      "forms": [
+        "plain",
+        "negative",
+        "past",
+        "past_negative"
+      ],
+      "paradigm_cells": 4,
+      "need": 5,
+      "lexemes": {
+        "高い": [
+          "高い",
+          "高くない",
+          "高かった",
+          "高くなかった"
+        ],
+        "安い": [
+          "安い",
+          "安くない",
+          "安かった",
+          "安くなかった"
+        ],
+        "新しい": [
+          "新しい",
+          "新しくない",
+          "新しかった",
+          "新しくなかった"
+        ],
+        "古い": [
+          "古い",
+          "古くない",
+          "古かった",
+          "古くなかった"
+        ],
+        "大きい": [
+          "大きい",
+          "大きくない",
+          "大きかった",
+          "大きくなかった"
+        ],
+        "小さい": [
+          "小さい",
+          "小さくない",
+          "小さかった",
+          "小さくなかった"
+        ],
+        "長い": [
+          "長い",
+          "長くない",
+          "長かった",
+          "長くなかった"
+        ],
+        "白い": [
+          "白い",
+          "白くない",
+          "白かった",
+          "白くなかった"
+        ]
+      }
+    }
+  },
+  "show_kinds": {
+    "arithmetic": {
+      "lexicon": [
+        "足す",
+        "引く",
+        "掛ける",
+        "割る",
+        "は"
+      ],
+      "ops": {
+        "足す": "+",
+        "引く": "-",
+        "掛ける": "*",
+        "割る": "/",
+        "は": "="
+      },
+      "instances_per_pass": 14,
+      "templates": [
+        "{num:n} 足す {num:m} は {num:sum}.",
+        "{n} + {m} = {sum}.",
+        "{num:sum} 引く {num:m} は {num:n}.",
+        "{num:n} 掛ける {num:m} は {num:prod}.",
+        "{num:prod} 割る {num:m} は {num:n}."
+      ]
+    },
+    "conjugation": {
+      "lexicon": [
+        "私は",
+        "あなたは",
+        "彼は",
+        "彼女は",
+        "私たちは",
+        "彼らは"
+      ],
+      "instances_per_pass": 22,
+      "templates": [
+        "私は {lex:verb_pres:s1}.",
+        "あなたは {lex:verb_pres:s2}.",
+        "彼は {lex:verb_pres:s3}.",
+        "彼女は {lex:verb_pres:p1}.",
+        "私たちは {lex:verb_pres:p2}.",
+        "彼らは {lex:verb_pres:p3}."
+      ]
+    },
+    "counting": {
+      "lexicon": [
+        "あります",
+        "ここに"
+      ],
+      "instances_per_pass": 36,
+      "templates": [
+        "{lex:noun_count:one}があります。",
+        "{lex:noun_count:many}があります。",
+        "ここに{lex:noun_count:one}があります。",
+        "{num:prod}冊の本があります。"
+      ]
+    },
+    "definition": {
+      "lexicon": [
+        "物",
+        "これ",
+        "です"
+      ],
+      "instances_per_pass": 36,
+      "templates": [
+        "{lex:noun_count:one}は物です。",
+        "これは{lex:noun_count:one}です。"
+      ]
+    },
+    "refusals": {
+      "refusal": true,
+      "marker": "¬ ",
+      "lexicon": [
+        "¬"
+      ],
+      "pairs": [
+        {
+          "bad": "三冊の猫。",
+          "good": "三匹の猫。",
+          "reason": "agreement"
+        },
+        {
+          "bad": "三台の本。",
+          "good": "三冊の本。",
+          "reason": "agreement"
+        },
+        {
+          "bad": "本を三冊があります。",
+          "good": "本が三冊あります。",
+          "reason": "agreement"
+        },
+        {
+          "bad": "七は何色ですか。",
+          "good": "本は何ですか。",
+          "reason": "unanswerable"
+        },
+        {
+          "bad": "本 足す 猫 は。",
+          "good": "百 引く 百 は 零.",
+          "reason": "type_mismatch"
+        }
+      ]
+    },
+    "agreement": {
+      "lexicon": [
+        "この",
+        "その",
+        "あの",
+        "それ"
+      ],
+      "instances_per_pass": 12,
+      "templates": [
+        "この本は{lex:adj_forms:plain}です。",
+        "その本は{lex:adj_forms:negative}です。",
+        "あの本は{lex:adj_forms:past}です。",
+        "それは{lex:adj_forms:past_negative}です。"
+      ]
+    }
+  },
+  "core_pairing": [
+    {
+      "lang_word": "足す",
+      "core": "+",
+      "core_form": "+",
+      "lang_form": "足す"
+    },
+    {
+      "lang_word": "引く",
+      "core": "-",
+      "core_form": "-",
+      "lang_form": "引く"
+    },
+    {
+      "lang_word": "掛ける",
+      "core": "×",
+      "core_form": "×",
+      "lang_form": "掛ける"
+    },
+    {
+      "lang_word": "割る",
+      "core": "÷",
+      "core_form": "÷",
+      "lang_form": "割る"
+    },
+    {
+      "lang_word": "は",
+      "core": "=",
+      "core_form": "=",
+      "lang_form": "は"
+    }
+  ],
+  "cross_kind_share": 0.3,
+  "irregulars": [
+    "します",
+    "来ます",
+    "三冊の本",
+    "三本のペン",
+    "三枚の紙"
+  ],
+  "probe": {
+    "words": [
+      "あなたは",
+      "あります",
+      "これ",
+      "です",
+      "は",
+      "一",
+      "三",
+      "二",
+      "割る",
+      "引く",
+      "彼は",
+      "彼女は",
+      "掛ける",
+      "本",
+      "物",
+      "私は",
+      "足す"
+    ],
+    "diacritics": ""
+  },
+  "segmentation": "longest-match",
+  "stem_min": 1,
+  "ending_max": 4
+}

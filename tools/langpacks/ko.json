@@ -1,0 +1,502 @@
+{
+  "lang": "ko",
+  "script": "hangul",
+  "script_range": "가-힣",
+  "graphemes": "가개건것고곱구그기꽃나녀누는답더도들람를리마많먹무물배백별봐빼사산삼새색생셔슨십써아알양어엇에여영예오와요우워원육은을이일읽있저좋책친칠팔하학해",
+  "tier": 1,
+  "comment": "FIFTEENTH PACK. Korean: SYLLABIC WRITING where a syllable is built from letters (한 = ㅎ+ㅏ+ㄴ) but stored as ONE code point — the grapheme judge therefore sees syllables and is blind to the letters inside; PARTICLES chosen by the coda of the preceding syllable (책이 but 나무가, 책을 but 나무를, 책이에요 but 나무예요) — one phonological law, listed as forms because `verb_rule` hangs on verbs and there is no noun rule; POLITENESS as an obligatory verb category with three levels (합니다 / 해요 / 한다) and no field to hold it, so one level is shown; NO PERSON — six verb cells hold one form. TIER 1.",
+  "lexeme_source": {
+    "law": "every morph class must carry >= LAW distinct lexemes; a class below its declared need is judged poor by the engine",
+    "need_per_class": 5
+  },
+  "numerals": {
+    "0": "영",
+    "1": "일",
+    "2": "이",
+    "3": "삼",
+    "4": "사",
+    "5": "오",
+    "6": "육",
+    "7": "칠",
+    "8": "팔",
+    "9": "구",
+    "10": "십",
+    "11": "십일",
+    "12": "십이",
+    "13": "십삼",
+    "14": "십사",
+    "15": "십오",
+    "16": "십육",
+    "17": "십칠",
+    "18": "십팔",
+    "19": "십구",
+    "20": "이십",
+    "21": "이십일",
+    "24": "이십사",
+    "25": "이십오",
+    "27": "이십칠",
+    "28": "이십팔",
+    "30": "삼십",
+    "32": "삼십이",
+    "35": "삼십오",
+    "36": "삼십육",
+    "40": "사십",
+    "45": "사십오",
+    "50": "오십",
+    "60": "육십",
+    "70": "칠십",
+    "80": "팔십",
+    "90": "구십",
+    "100": "백"
+  },
+  "count_agreement": [
+    {
+      "form": "one"
+    }
+  ],
+  "morph_classes": {
+    "verb_pres": {
+      "forms": [
+        "s1",
+        "s2",
+        "s3",
+        "p1",
+        "p2",
+        "p3"
+      ],
+      "paradigm_cells": 6,
+      "need": 5,
+      "lexemes": {
+        "쓰다": [
+          "써요",
+          "써요",
+          "써요",
+          "써요",
+          "써요",
+          "써요"
+        ],
+        "보다": [
+          "봐요",
+          "봐요",
+          "봐요",
+          "봐요",
+          "봐요",
+          "봐요"
+        ],
+        "읽다": [
+          "읽어요",
+          "읽어요",
+          "읽어요",
+          "읽어요",
+          "읽어요",
+          "읽어요"
+        ],
+        "먹다": [
+          "먹어요",
+          "먹어요",
+          "먹어요",
+          "먹어요",
+          "먹어요",
+          "먹어요"
+        ],
+        "가다": [
+          "가요",
+          "가요",
+          "가요",
+          "가요",
+          "가요",
+          "가요"
+        ],
+        "오다": [
+          "와요",
+          "와요",
+          "와요",
+          "와요",
+          "와요",
+          "와요"
+        ],
+        "배우다": [
+          "배워요",
+          "배워요",
+          "배워요",
+          "배워요",
+          "배워요",
+          "배워요"
+        ],
+        "알다": [
+          "알아요",
+          "알아요",
+          "알아요",
+          "알아요",
+          "알아요",
+          "알아요"
+        ],
+        "마시다": [
+          "마셔요",
+          "마셔요",
+          "마셔요",
+          "마셔요",
+          "마셔요",
+          "마셔요"
+        ]
+      },
+      "rule": {
+        "classes": {
+          "light": {
+            "strip": "다",
+            "endings": [
+              "아요",
+              "아요",
+              "아요",
+              "아요",
+              "아요",
+              "아요"
+            ]
+          },
+          "dark": {
+            "strip": "다",
+            "endings": [
+              "어요",
+              "어요",
+              "어요",
+              "어요",
+              "어요",
+              "어요"
+            ]
+          },
+          "vowel-a": {
+            "strip": "다",
+            "endings": [
+              "요",
+              "요",
+              "요",
+              "요",
+              "요",
+              "요"
+            ]
+          }
+        },
+        "of": {
+          "알다": "light",
+          "읽다": "dark",
+          "먹다": "dark",
+          "가다": "vowel-a",
+          "배우다": "*",
+          "쓰다": "*",
+          "보다": "*",
+          "오다": "*",
+          "마시다": "*"
+        }
+      }
+    },
+    "noun_count": {
+      "forms": [
+        "one",
+        "many"
+      ],
+      "paradigm_cells": 2,
+      "need": 5,
+      "lexemes": {
+        "사람": [
+          "사람도",
+          "사람들도"
+        ],
+        "아이": [
+          "아이도",
+          "아이들도"
+        ],
+        "학생": [
+          "학생도",
+          "학생들도"
+        ],
+        "친구": [
+          "친구도",
+          "친구들도"
+        ],
+        "고양이": [
+          "고양이도",
+          "고양이들도"
+        ],
+        "개": [
+          "개도",
+          "개들도"
+        ],
+        "새": [
+          "새도",
+          "새들도"
+        ],
+        "나무": [
+          "나무도",
+          "나무들도"
+        ],
+        "꽃": [
+          "꽃도",
+          "꽃들도"
+        ],
+        "책": [
+          "책도",
+          "책들도"
+        ],
+        "산": [
+          "산도",
+          "산들도"
+        ],
+        "별": [
+          "별도",
+          "별들도"
+        ]
+      }
+    },
+    "adj_forms": {
+      "forms": [
+        "bare",
+        "subject",
+        "object",
+        "copula"
+      ],
+      "paradigm_cells": 4,
+      "need": 5,
+      "lexemes": {
+        "책": [
+          "책",
+          "책이",
+          "책을",
+          "책이에요"
+        ],
+        "꽃": [
+          "꽃",
+          "꽃이",
+          "꽃을",
+          "꽃이에요"
+        ],
+        "산": [
+          "산",
+          "산이",
+          "산을",
+          "산이에요"
+        ],
+        "별": [
+          "별",
+          "별이",
+          "별을",
+          "별이에요"
+        ],
+        "학생": [
+          "학생",
+          "학생이",
+          "학생을",
+          "학생이에요"
+        ],
+        "나무": [
+          "나무",
+          "나무가",
+          "나무를",
+          "나무예요"
+        ],
+        "친구": [
+          "친구",
+          "친구가",
+          "친구를",
+          "친구예요"
+        ],
+        "고양이": [
+          "고양이",
+          "고양이가",
+          "고양이를",
+          "고양이예요"
+        ],
+        "아이": [
+          "아이",
+          "아이가",
+          "아이를",
+          "아이예요"
+        ],
+        "새": [
+          "새",
+          "새가",
+          "새를",
+          "새예요"
+        ]
+      }
+    }
+  },
+  "show_kinds": {
+    "arithmetic": {
+      "lexicon": [
+        "더하기",
+        "빼기",
+        "곱하기",
+        "나누기",
+        "답은"
+      ],
+      "ops": {
+        "더하기": "+",
+        "빼기": "-",
+        "곱하기": "*",
+        "나누기": "/",
+        "답은": "="
+      },
+      "instances_per_pass": 14,
+      "templates": [
+        "{num:n} 더하기 {num:m} 답은 {num:sum}.",
+        "{n} + {m} = {sum}.",
+        "{num:sum} 빼기 {num:m} 답은 {num:n}.",
+        "{num:n} 곱하기 {num:m} 답은 {num:prod}.",
+        "{num:prod} 나누기 {num:m} 답은 {num:n}."
+      ]
+    },
+    "conjugation": {
+      "lexicon": [
+        "저는",
+        "그는",
+        "그녀는",
+        "아이는",
+        "우리는",
+        "그들은"
+      ],
+      "instances_per_pass": 18,
+      "templates": [
+        "저는 {lex:verb_pres:s1}.",
+        "그는 {lex:verb_pres:s2}.",
+        "그녀는 {lex:verb_pres:s3}.",
+        "아이는 {lex:verb_pres:p1}.",
+        "우리는 {lex:verb_pres:p2}.",
+        "그들은 {lex:verb_pres:p3}."
+      ]
+    },
+    "counting": {
+      "lexicon": [
+        "있어요",
+        "여기에"
+      ],
+      "instances_per_pass": 24,
+      "templates": [
+        "{lex:noun_count:one} 있어요.",
+        "{lex:noun_count:many} 있어요.",
+        "여기에 {lex:noun_count:one} 있어요.",
+        "{num:prod} 원이에요."
+      ]
+    },
+    "definition": {
+      "lexicon": [
+        "저것도",
+        "물건이에요"
+      ],
+      "instances_per_pass": 24,
+      "templates": [
+        "{lex:noun_count:one} 물건이에요.",
+        "저것도 {lex:adj_forms:copula}."
+      ]
+    },
+    "refusals": {
+      "refusal": true,
+      "marker": "¬ ",
+      "lexicon": [
+        "¬"
+      ],
+      "pairs": [
+        {
+          "bad": "책가 있어요.",
+          "good": "책이 있어요.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "나무이 있어요.",
+          "good": "나무가 있어요.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "저는 책를 봐요.",
+          "good": "저는 책을 봐요.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "칠은 무슨 색이에요?",
+          "good": "책은 무엇이에요?",
+          "reason": "unanswerable"
+        },
+        {
+          "bad": "책 더하기 고양이 답은?",
+          "good": "백 빼기 백 답은 영.",
+          "reason": "type_mismatch"
+        }
+      ]
+    },
+    "agreement": {
+      "lexicon": [
+        "많아요",
+        "좋아해요",
+        "이것은"
+      ],
+      "instances_per_pass": 12,
+      "templates": [
+        "{lex:adj_forms:subject} 많아요.",
+        "저는 {lex:adj_forms:object} 좋아해요.",
+        "이것은 {lex:adj_forms:copula}."
+      ]
+    }
+  },
+  "core_pairing": [
+    {
+      "lang_word": "더하기",
+      "core": "+",
+      "core_form": "+",
+      "lang_form": "더하기"
+    },
+    {
+      "lang_word": "빼기",
+      "core": "-",
+      "core_form": "-",
+      "lang_form": "빼기"
+    },
+    {
+      "lang_word": "곱하기",
+      "core": "×",
+      "core_form": "×",
+      "lang_form": "곱하기"
+    },
+    {
+      "lang_word": "나누기",
+      "core": "÷",
+      "core_form": "÷",
+      "lang_form": "나누기"
+    },
+    {
+      "lang_word": "답은",
+      "core": "=",
+      "core_form": "=",
+      "lang_form": "답은"
+    }
+  ],
+  "cross_kind_share": 0.3,
+  "irregulars": [
+    "나무예요",
+    "책이에요",
+    "봐요",
+    "와요",
+    "마셔요"
+  ],
+  "probe": {
+    "words": [
+      "곱하기",
+      "그녀는",
+      "그는",
+      "나누기",
+      "나무",
+      "답은",
+      "더하기",
+      "빼기",
+      "삼",
+      "우리는",
+      "이",
+      "이것은",
+      "일",
+      "있어요",
+      "저는",
+      "책"
+    ],
+    "diacritics": ""
+  },
+  "stem_min": 1,
+  "ending_max": 4
+}

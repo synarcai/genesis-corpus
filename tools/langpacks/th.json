@@ -1,0 +1,452 @@
+{
+  "lang": "th",
+  "script": "thai",
+  "script_range": "ก-๛",
+  "graphemes": "กขคงจชญณดตถทธนบปผพมยรลวศษสหอะาำเแโใไ",
+  "tier": 1,
+  "comment": "SIXTEENTH PACK. Thai: a script that writes words TOGETHER but sentences APART — the third case between Chinese (no spaces) and Latin (spaces between words), and the `longest-match` declaration turns out to cover it, because the segmenter SKIPS a space rather than requiring one. Vowels written BEFORE the consonant they follow in sound and tone marks written ABOVE it: `graphemes` is a flat set and can say nothing of either. NO plural and NO person — classifiers ride in the noun's own paradigm, six verb cells hold one form. The forge hard-codes a space and a Latin full stop into two kinds; Thai writes neither. TIER 1.",
+  "lexeme_source": {
+    "law": "every morph class must carry >= LAW distinct lexemes; a class below its declared need is judged poor by the engine",
+    "need_per_class": 5
+  },
+  "numerals": {
+    "0": "ศูนย์",
+    "1": "หนึ่ง",
+    "2": "สอง",
+    "3": "สาม",
+    "4": "สี่",
+    "5": "ห้า",
+    "6": "หก",
+    "7": "เจ็ด",
+    "8": "แปด",
+    "9": "เก้า",
+    "10": "สิบ",
+    "11": "สิบเอ็ด",
+    "12": "สิบสอง",
+    "13": "สิบสาม",
+    "14": "สิบสี่",
+    "15": "สิบห้า",
+    "16": "สิบหก",
+    "17": "สิบเจ็ด",
+    "18": "สิบแปด",
+    "19": "สิบเก้า",
+    "20": "ยี่สิบ",
+    "21": "ยี่สิบเอ็ด",
+    "24": "ยี่สิบสี่",
+    "25": "ยี่สิบห้า",
+    "27": "ยี่สิบเจ็ด",
+    "28": "ยี่สิบแปด",
+    "30": "สามสิบ",
+    "32": "สามสิบสอง",
+    "35": "สามสิบห้า",
+    "36": "สามสิบหก",
+    "40": "สี่สิบ",
+    "45": "สี่สิบห้า",
+    "50": "ห้าสิบ",
+    "60": "หกสิบ",
+    "70": "เจ็ดสิบ",
+    "80": "แปดสิบ",
+    "90": "เก้าสิบ",
+    "100": "หนึ่งร้อย"
+  },
+  "count_agreement": [
+    {
+      "form": "one"
+    }
+  ],
+  "morph_classes": {
+    "verb_pres": {
+      "forms": [
+        "s1",
+        "s2",
+        "s3",
+        "p1",
+        "p2",
+        "p3"
+      ],
+      "paradigm_cells": 6,
+      "need": 5,
+      "lexemes": {
+        "อ่าน": [
+          "อ่าน",
+          "อ่าน",
+          "อ่าน",
+          "อ่าน",
+          "อ่าน",
+          "อ่าน"
+        ],
+        "เขียน": [
+          "เขียน",
+          "เขียน",
+          "เขียน",
+          "เขียน",
+          "เขียน",
+          "เขียน"
+        ],
+        "กิน": [
+          "กิน",
+          "กิน",
+          "กิน",
+          "กิน",
+          "กิน",
+          "กิน"
+        ],
+        "ดื่ม": [
+          "ดื่ม",
+          "ดื่ม",
+          "ดื่ม",
+          "ดื่ม",
+          "ดื่ม",
+          "ดื่ม"
+        ],
+        "เห็น": [
+          "เห็น",
+          "เห็น",
+          "เห็น",
+          "เห็น",
+          "เห็น",
+          "เห็น"
+        ],
+        "ไป": [
+          "ไป",
+          "ไป",
+          "ไป",
+          "ไป",
+          "ไป",
+          "ไป"
+        ],
+        "มา": [
+          "มา",
+          "มา",
+          "มา",
+          "มา",
+          "มา",
+          "มา"
+        ],
+        "ทำ": [
+          "ทำ",
+          "ทำ",
+          "ทำ",
+          "ทำ",
+          "ทำ",
+          "ทำ"
+        ],
+        "พูด": [
+          "พูด",
+          "พูด",
+          "พูด",
+          "พูด",
+          "พูด",
+          "พูด"
+        ],
+        "ชอบ": [
+          "ชอบ",
+          "ชอบ",
+          "ชอบ",
+          "ชอบ",
+          "ชอบ",
+          "ชอบ"
+        ],
+        "รู้": [
+          "รู้",
+          "รู้",
+          "รู้",
+          "รู้",
+          "รู้",
+          "รู้"
+        ]
+      }
+    },
+    "noun_count": {
+      "forms": [
+        "one",
+        "many"
+      ],
+      "paradigm_cells": 2,
+      "need": 5,
+      "lexemes": {
+        "หนังสือ": [
+          "หนังสือ",
+          "หนังสือหลายเล่ม"
+        ],
+        "โต๊ะ": [
+          "โต๊ะ",
+          "โต๊ะหลายตัว"
+        ],
+        "เก้าอี้": [
+          "เก้าอี้",
+          "เก้าอี้หลายตัว"
+        ],
+        "บ้าน": [
+          "บ้าน",
+          "บ้านหลายหลัง"
+        ],
+        "ต้นไม้": [
+          "ต้นไม้",
+          "ต้นไม้หลายต้น"
+        ],
+        "ดอกไม้": [
+          "ดอกไม้",
+          "ดอกไม้หลายดอก"
+        ],
+        "รถ": [
+          "รถ",
+          "รถหลายคัน"
+        ],
+        "ปากกา": [
+          "ปากกา",
+          "ปากกาหลายด้าม"
+        ],
+        "กระดาษ": [
+          "กระดาษ",
+          "กระดาษหลายแผ่น"
+        ],
+        "ประตู": [
+          "ประตู",
+          "ประตูหลายบาน"
+        ],
+        "แก้ว": [
+          "แก้ว",
+          "แก้วหลายใบ"
+        ]
+      }
+    },
+    "adj_forms": {
+      "forms": [
+        "plain",
+        "very",
+        "most"
+      ],
+      "paradigm_cells": 3,
+      "need": 5,
+      "lexemes": {
+        "ใหญ่": [
+          "ใหญ่",
+          "ใหญ่มาก",
+          "ใหญ่ที่สุด"
+        ],
+        "เล็ก": [
+          "เล็ก",
+          "เล็กมาก",
+          "เล็กที่สุด"
+        ],
+        "ใหม่": [
+          "ใหม่",
+          "ใหม่มาก",
+          "ใหม่ที่สุด"
+        ],
+        "สวย": [
+          "สวย",
+          "สวยมาก",
+          "สวยที่สุด"
+        ],
+        "ดี": [
+          "ดี",
+          "ดีมาก",
+          "ดีที่สุด"
+        ],
+        "แพง": [
+          "แพง",
+          "แพงมาก",
+          "แพงที่สุด"
+        ]
+      }
+    }
+  },
+  "show_kinds": {
+    "arithmetic": {
+      "lexicon": [
+        "บวก",
+        "ลบ",
+        "คูณ",
+        "หาร",
+        "เท่ากับ"
+      ],
+      "ops": {
+        "บวก": "+",
+        "ลบ": "-",
+        "คูณ": "*",
+        "หาร": "/",
+        "เท่ากับ": "="
+      },
+      "instances_per_pass": 14,
+      "templates": [
+        "{num:n} บวก {num:m} เท่ากับ {num:sum}.",
+        "{n} + {m} = {sum}.",
+        "{num:sum} ลบ {num:m} เท่ากับ {num:n}.",
+        "{num:n} คูณ {num:m} เท่ากับ {num:prod}.",
+        "{num:prod} หาร {num:m} เท่ากับ {num:n}."
+      ]
+    },
+    "conjugation": {
+      "lexicon": [
+        "ผม",
+        "คุณ",
+        "เขา",
+        "เธอ",
+        "เรา",
+        "พวกเขา"
+      ],
+      "instances_per_pass": 22,
+      "templates": [
+        "ผม {lex:verb_pres:s1}.",
+        "คุณ {lex:verb_pres:s2}.",
+        "เขา {lex:verb_pres:s3}.",
+        "เธอ {lex:verb_pres:p1}.",
+        "เรา {lex:verb_pres:p2}.",
+        "พวกเขา {lex:verb_pres:p3}."
+      ]
+    },
+    "counting": {
+      "lexicon": [
+        "นี่คือ",
+        "ที่นี่มี",
+        "เล่ม",
+        "ตัว",
+        "หลัง",
+        "ต้น",
+        "ดอก",
+        "คัน",
+        "ด้าม",
+        "แผ่น",
+        "บาน",
+        "ใบ"
+      ],
+      "instances_per_pass": 22,
+      "templates": [
+        "นี่คือ{lex:noun_count:one}",
+        "ที่นี่มี{lex:noun_count:many}",
+        "ที่นี่มีหนังสือ{num:prod}เล่ม"
+      ]
+    },
+    "definition": {
+      "lexicon": [
+        "เป็นสิ่งของ",
+        "สี",
+        "อะไร",
+        "คือ"
+      ],
+      "instances_per_pass": 22,
+      "templates": [
+        "{lex:noun_count:one}เป็นสิ่งของ"
+      ]
+    },
+    "refusals": {
+      "refusal": true,
+      "marker": "¬ ",
+      "lexicon": [
+        "¬"
+      ],
+      "pairs": [
+        {
+          "bad": "ผมเห็นหนังสือสองตัว",
+          "good": "ผมเห็นหนังสือสองเล่ม",
+          "reason": "agreement"
+        },
+        {
+          "bad": "ผมเห็นแก้วสองเล่ม",
+          "good": "ผมเห็นแก้วสองใบ",
+          "reason": "agreement"
+        },
+        {
+          "bad": "ผมเห็นสองหนังสือ",
+          "good": "ผมเห็นหนังสือสองเล่ม",
+          "reason": "agreement"
+        },
+        {
+          "bad": "เจ็ดสีอะไร",
+          "good": "หนังสือคืออะไร",
+          "reason": "unanswerable"
+        },
+        {
+          "bad": "สิบหารศูนย์เท่ากับ",
+          "good": "สิบหารสองเท่ากับห้า",
+          "reason": "unanswerable"
+        },
+        {
+          "bad": "หนังสือบวกรถเท่ากับ",
+          "good": "สิบลบหนึ่งเท่ากับเก้า",
+          "reason": "type_mismatch"
+        }
+      ]
+    },
+    "agreement": {
+      "lexicon": [
+        "มาก",
+        "ที่สุด"
+      ],
+      "instances_per_pass": 12,
+      "templates": [
+        "{lex:noun_count:one}{lex:adj_forms:plain}",
+        "{lex:noun_count:one}{lex:adj_forms:very}",
+        "{lex:noun_count:one}{lex:adj_forms:most}"
+      ]
+    }
+  },
+  "core_pairing": [
+    {
+      "lang_word": "บวก",
+      "core": "+",
+      "core_form": "+",
+      "lang_form": "บวก"
+    },
+    {
+      "lang_word": "ลบ",
+      "core": "-",
+      "core_form": "-",
+      "lang_form": "ลบ"
+    },
+    {
+      "lang_word": "คูณ",
+      "core": "×",
+      "core_form": "×",
+      "lang_form": "คูณ"
+    },
+    {
+      "lang_word": "หาร",
+      "core": "÷",
+      "core_form": "÷",
+      "lang_form": "หาร"
+    },
+    {
+      "lang_word": "เท่ากับ",
+      "core": "=",
+      "core_form": "=",
+      "lang_form": "เท่ากับ"
+    }
+  ],
+  "cross_kind_share": 0.3,
+  "irregulars": [
+    "สิบเอ็ด",
+    "หนังสือหลายเล่ม",
+    "กระดาษหลายแผ่น",
+    "แก้วหลายใบ"
+  ],
+  "probe": {
+    "words": [
+      "คุณ",
+      "คูณ",
+      "นี่คือ",
+      "บวก",
+      "บ้าน",
+      "ผม",
+      "พวกเขา",
+      "ลบ",
+      "สอง",
+      "สาม",
+      "หนังสือ",
+      "หนึ่ง",
+      "หาร",
+      "เขา",
+      "เท่ากับ",
+      "เธอ",
+      "เป็นสิ่งของ",
+      "เรา",
+      "โต๊ะ"
+    ],
+    "diacritics": "่้๊๋์"
+  },
+  "segmentation": "longest-match",
+  "stem_min": 1,
+  "ending_max": 0
+}

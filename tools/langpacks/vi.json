@@ -1,0 +1,469 @@
+{
+  "lang": "vi",
+  "script": "latin",
+  "script_range": "A-Za-zÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠƯẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼẾỀỂỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪỬỮỰỲỴỶỸàáâãèéêìíòóôõùúăđĩũơưạảấầẩẫậắằẳẵặẹẻẽếềểễệỉịọỏốồổỗộớờởỡợụủứừửữựỳỵỷỹ",
+  "graphemes": "abcdeghiklmnopqrstuvxyàáâèéêìíòóôùúăđưạảấậắằếọốồộờừửữ",
+  "tier": 1,
+  "comment": "Vietnamese: SIX TONES written as diacritics — ma / mà / má / mả / mã / mạ are six different words, so a tone mark is a letter and is declared as a grapheme. A word is written as SYLLABLES SEPARATED BY SPACES («cuốn sách» is one word in two graphic pieces), so the space is not a word boundary. No number on the noun at all, and a CLASSIFIER chosen by the noun stands between numeral and noun. TIER 1.",
+  "lexeme_source": {
+    "law": "every morph class must carry >= LAW distinct lexemes; a class below its declared need is judged poor by the engine",
+    "need_per_class": 5
+  },
+  "numerals": {
+    "0": "không",
+    "1": "một",
+    "2": "hai",
+    "3": "ba",
+    "4": "bốn",
+    "5": "năm",
+    "6": "sáu",
+    "7": "bảy",
+    "8": "tám",
+    "9": "chín",
+    "10": "mười",
+    "11": "mười một",
+    "12": "mười hai",
+    "13": "mười ba",
+    "14": "mười bốn",
+    "16": "mười sáu",
+    "17": "mười bảy",
+    "18": "mười tám",
+    "19": "mười chín"
+  },
+  "count_agreement": [
+    {
+      "form": "one"
+    }
+  ],
+  "morph_classes": {
+    "verb_pres": {
+      "forms": [
+        "s1",
+        "s2",
+        "s3",
+        "p1",
+        "p2",
+        "p3"
+      ],
+      "paradigm_cells": 6,
+      "need": 5,
+      "lexemes": {
+        "đọc": [
+          "đọc",
+          "đọc",
+          "đọc",
+          "đọc",
+          "đọc",
+          "đọc"
+        ],
+        "viết": [
+          "viết",
+          "viết",
+          "viết",
+          "viết",
+          "viết",
+          "viết"
+        ],
+        "nói": [
+          "nói",
+          "nói",
+          "nói",
+          "nói",
+          "nói",
+          "nói"
+        ],
+        "đi": [
+          "đi",
+          "đi",
+          "đi",
+          "đi",
+          "đi",
+          "đi"
+        ],
+        "xem": [
+          "xem",
+          "xem",
+          "xem",
+          "xem",
+          "xem",
+          "xem"
+        ],
+        "nghe": [
+          "nghe",
+          "nghe",
+          "nghe",
+          "nghe",
+          "nghe",
+          "nghe"
+        ],
+        "ăn": [
+          "ăn",
+          "ăn",
+          "ăn",
+          "ăn",
+          "ăn",
+          "ăn"
+        ],
+        "uống": [
+          "uống",
+          "uống",
+          "uống",
+          "uống",
+          "uống",
+          "uống"
+        ],
+        "biết": [
+          "biết",
+          "biết",
+          "biết",
+          "biết",
+          "biết",
+          "biết"
+        ],
+        "làm": [
+          "làm",
+          "làm",
+          "làm",
+          "làm",
+          "làm",
+          "làm"
+        ],
+        "học": [
+          "học",
+          "học",
+          "học",
+          "học",
+          "học",
+          "học"
+        ],
+        "mua": [
+          "mua",
+          "mua",
+          "mua",
+          "mua",
+          "mua",
+          "mua"
+        ]
+      },
+      "rule": {
+        "classes": {
+          "нуль": {
+            "strip": "",
+            "endings": [
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          }
+        },
+        "of": {
+          "đọc": "нуль",
+          "viết": "нуль",
+          "nói": "нуль",
+          "đi": "нуль",
+          "xem": "нуль",
+          "nghe": "нуль",
+          "ăn": "нуль",
+          "uống": "нуль",
+          "biết": "нуль",
+          "làm": "нуль",
+          "học": "нуль",
+          "mua": "нуль"
+        }
+      }
+    },
+    "noun_count": {
+      "forms": [
+        "one",
+        "many"
+      ],
+      "paradigm_cells": 2,
+      "need": 5,
+      "lexemes": {
+        "sách": [
+          "cuốn sách",
+          "những cuốn sách"
+        ],
+        "bàn": [
+          "cái bàn",
+          "những cái bàn"
+        ],
+        "ghế": [
+          "cái ghế",
+          "những cái ghế"
+        ],
+        "nhà": [
+          "ngôi nhà",
+          "những ngôi nhà"
+        ],
+        "mèo": [
+          "con mèo",
+          "những con mèo"
+        ],
+        "chó": [
+          "con chó",
+          "những con chó"
+        ],
+        "hoa": [
+          "bông hoa",
+          "những bông hoa"
+        ],
+        "giấy": [
+          "tờ giấy",
+          "những tờ giấy"
+        ],
+        "báo": [
+          "tờ báo",
+          "những tờ báo"
+        ],
+        "cửa": [
+          "cái cửa",
+          "những cái cửa"
+        ],
+        "phòng": [
+          "căn phòng",
+          "những căn phòng"
+        ],
+        "xe": [
+          "chiếc xe",
+          "những chiếc xe"
+        ],
+        "táo": [
+          "quả táo",
+          "những quả táo"
+        ],
+        "bánh": [
+          "cái bánh",
+          "những cái bánh"
+        ],
+        "cây": [
+          "cái cây",
+          "những cái cây"
+        ],
+        "đường": [
+          "con đường",
+          "những con đường"
+        ],
+        "sông": [
+          "con sông",
+          "những con sông"
+        ],
+        "núi": [
+          "ngọn núi",
+          "những ngọn núi"
+        ],
+        "trường": [
+          "ngôi trường",
+          "những ngôi trường"
+        ],
+        "bút": [
+          "cây bút",
+          "những cây bút"
+        ],
+        "mắt": [
+          "con mắt",
+          "những con mắt"
+        ],
+        "người": [
+          "người",
+          "những người"
+        ],
+        "dao": [
+          "con dao",
+          "những con dao"
+        ],
+        "đêm": [
+          "đêm",
+          "những đêm"
+        ],
+        "mùa": [
+          "mùa",
+          "những mùa"
+        ],
+        "chén": [
+          "cái chén",
+          "những cái chén"
+        ]
+      }
+    }
+  },
+  "show_kinds": {
+    "arithmetic": {
+      "lexicon": [
+        "cộng",
+        "trừ",
+        "nhân",
+        "chia",
+        "bằng"
+      ],
+      "ops": {
+        "cộng": "+",
+        "trừ": "-",
+        "nhân": "*",
+        "chia": "/",
+        "bằng": "="
+      },
+      "instances_per_pass": 14,
+      "templates": [
+        "{num:n} cộng {num:m} bằng {num:sum}.",
+        "{n} + {m} = {sum}.",
+        "{num:sum} trừ {num:m} bằng {num:n}.",
+        "{num:n} nhân {num:m} bằng {num:prod}.",
+        "{num:prod} chia {num:m} bằng {num:n}."
+      ]
+    },
+    "conjugation": {
+      "lexicon": [
+        "tôi",
+        "bạn",
+        "anh ấy",
+        "chúng tôi",
+        "các bạn",
+        "họ"
+      ],
+      "instances_per_pass": 24,
+      "templates": [
+        "tôi {lex:verb_pres:s1}.",
+        "bạn {lex:verb_pres:s2}.",
+        "anh ấy {lex:verb_pres:s3}.",
+        "chúng tôi {lex:verb_pres:p1}.",
+        "các bạn {lex:verb_pres:p2}.",
+        "họ {lex:verb_pres:p3}."
+      ]
+    },
+    "counting": {
+      "lexicon": [
+        "đây",
+        "kia",
+        "là",
+        "có"
+      ],
+      "instances_per_pass": 52,
+      "templates": [
+        "đây là {lex:noun_count:one}.",
+        "kia là {lex:noun_count:many}.",
+        "đây có {lex:noun_count:many}."
+      ]
+    },
+    "definition": {
+      "lexicon": [
+        "đồ",
+        "vật",
+        "gì",
+        "màu"
+      ],
+      "instances_per_pass": 52,
+      "templates": [
+        "{lex:noun_count:one} là một đồ vật.",
+        "{lex:noun_count:one} là gì?",
+        "{lex:noun_count:one} có màu."
+      ]
+    },
+    "refusals": {
+      "refusal": true,
+      "marker": "¬ ",
+      "lexicon": [
+        "¬"
+      ],
+      "pairs": [
+        {
+          "bad": "một con sách.",
+          "good": "một cuốn sách.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "hai con bàn.",
+          "good": "hai cái bàn.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "ba quả mèo.",
+          "good": "ba con mèo.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "bảy màu gì?",
+          "good": "đồ vật là gì?",
+          "reason": "unanswerable"
+        },
+        {
+          "bad": "nhà cộng mèo bằng?",
+          "good": "không cộng không bằng không.",
+          "reason": "type_mismatch"
+        }
+      ]
+    }
+  },
+  "core_pairing": [
+    {
+      "lang_word": "cộng",
+      "core": "+",
+      "core_form": "+",
+      "lang_form": "cộng"
+    },
+    {
+      "lang_word": "trừ",
+      "core": "-",
+      "core_form": "-",
+      "lang_form": "trừ"
+    },
+    {
+      "lang_word": "nhân",
+      "core": "×",
+      "core_form": "×",
+      "lang_form": "nhân"
+    },
+    {
+      "lang_word": "chia",
+      "core": "÷",
+      "core_form": "÷",
+      "lang_form": "chia"
+    },
+    {
+      "lang_word": "bằng",
+      "core": "=",
+      "core_form": "=",
+      "lang_form": "bằng"
+    }
+  ],
+  "cross_kind_share": 0.3,
+  "irregulars": [
+    "con mèo",
+    "cuốn sách",
+    "quả táo",
+    "ngôi nhà",
+    "bông hoa",
+    "ngọn núi",
+    "tờ giấy"
+  ],
+  "probe": {
+    "words": [
+      "bạn",
+      "bằng",
+      "chia",
+      "con",
+      "cuốn",
+      "cái",
+      "có",
+      "cộng",
+      "gì",
+      "hai",
+      "họ",
+      "kia",
+      "là",
+      "một",
+      "nhân",
+      "những",
+      "quả",
+      "trừ",
+      "tôi",
+      "vật",
+      "đây",
+      "đồ"
+    ],
+    "diacritics": "àáâèéêìíòóôùúăđưạảấậắằếọốồộờừửữ"
+  }
+}

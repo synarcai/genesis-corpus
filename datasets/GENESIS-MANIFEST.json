@@ -848,22 +848,33 @@
       ]
     },
     {
+      "name": "compare_mult",
+      "file": "datasets/genesis_compare_mult.txt",
+      "genre": "multiple comparison, and the two frames English keeps apart standing SIDE BY SIDE ON THE SAME NUMBERS: «as many as» for the countable and «as much as» for the uncountable — the organism had bought one and not the other because they never stood together; plus worded multipliers (twice, thrice) beside the numeric ones, «N times more than» with its ground, and the difference comparison next to the multiple one so the two are told apart",
+      "size": 100000,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
+    },
+    {
       "name": "school",
       "file": "datasets/GENESIS-SCHOOL.txt",
       "genre": "the school assembly: every world that declares «school» in its `assemblies`, in manifest order — the ladder a learner walks before the whole corpus; a consequence of the manifest, not a decision of whoever assembles it",
-      "size": 4314052,
+      "size": 4485178,
       "tiers": [],
       "text": "mix",
-      "lines": 81391
+      "lines": 83270
     },
     {
       "name": "full",
       "file": "datasets/GENESIS-FULL.txt",
       "genre": "the full mix: every world of shows, in manifest order, welded by the same seam that welds passes inside a layer — a consequence of the manifest, not a decision of whoever assembles it",
-      "size": 6853795,
+      "size": 7024921,
       "tiers": [],
       "text": "mix",
-      "lines": 130029
+      "lines": 131908
     }
   ]
 }
