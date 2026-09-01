@@ -30,6 +30,8 @@ from fractions import Fraction
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from genesis import Unreadable, worlds  # noqa: E402
+from gsm_items import ITEMS  # noqa: E402
+from plural import singular  # noqa: E402
 from units import единица, отношение  # noqa: E402
 import arith_court  # noqa: E402
 
@@ -43,6 +45,23 @@ import arith_court  # noqa: E402
     r"^([\w]+)\s+([^\W\d_]+)\s+(?:=|равно|равен|равна|equals|equal)\s+"
     r"([\w]+)\s+([^\W\d_]+)\s*[.。]?$"
 )
+
+# ЕДИНИЦА, НАЗВАННАЯ МЕРОЙ, ЕСТЬ УТВЕРЖДЕНИЕ О РОДЕ, И ОНО ПРОВЕРЯЕМО
+# ТЕМ ЖЕ ДОМОМ: «год — это мера» истинно, ибо год объявлен единицей;
+# «яблоко — это мера» было бы ложью того же рода, что «the teacher is a
+# thing». ВОПРОС О ЕДИНИЦЕ судится так же: спросить можно о том, что
+# объявлено, — вопрос о невыдуманном есть его собственное ручательство.
+РОД_ЕДИНИЦЫ = re.compile(
+    r"^(?:the ([^\W\d_]+) is an? (unit|measure)"
+    r"|([^\W\d_]+) — это (мера|единица))\.$")
+ВОПРОС = re.compile(
+    r"^(?:what is an? ([^\W\d_]+)\?|что такое ([^\W\d_]+)\?)$")
+
+# ВЕЩЬ, НАЗВАННАЯ МЕРОЙ, ЕСТЬ ЛОЖЬ, А НЕ НЕИЗВЕСТНОСТЬ. Без этого суд
+# лишь принимал истинное и молчал о ложном — а молчание о ложном есть
+# та же слепота, только вежливая. Список вещей объявлен переписью, и
+# слово, стоящее в нём и не стоящее среди единиц, мерой не является.
+ВЕЩИ = set(ITEMS) | {singular(w) for w in ITEMS}
 
 _ЧИСЛА = None
 
@@ -65,6 +84,26 @@ def величина(слово):
 
 def судить(строка):
     """(судимо, истинно) для одной строки."""
+    с = строка.strip()
+    m = РОД_ЕДИНИЦЫ.match(с)
+    if m:
+        слово = next(г for г in m.groups() if г)
+        if единица(слово):
+            return True, True
+        if слово in ВЕЩИ or singular(слово) in ВЕЩИ:
+            return True, False
+        return False, True
+    m = ВОПРОС.match(с)
+    if m:
+        # ВОПРОС НЕ УТВЕРЖДАЕТ РОДА. «what is a pack?» спрашивает о
+        # вместилище, а не объявляет его мерой, и суд, читавший вопрос
+        # как утверждение, назвал ложью пятнадцать честных строк.
+        # Опровержимое в вопросе одно: СУЩЕСТВУЕТ ЛИ СПРОШЕННОЕ —
+        # спрашивать о том, чего корпус не объявлял, значит выдумывать.
+        слово = next(г for г in m.groups() if г)
+        известно = bool(единица(слово)) or слово in ВЕЩИ \
+            or singular(слово) in ВЕЩИ
+        return (True, True) if известно else (False, True)
     m = ПЕРЕВОД.match(строка.strip())
     if not m:
         return False, True
