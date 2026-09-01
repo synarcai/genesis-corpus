@@ -22,21 +22,22 @@ random), form-feed seams between passes, glyph axis only
 shared across surfaces (the cross stays verbal).
 """
 
+import lexicon
 from layer import emit_grouped
 
 
-RU = [
-    "вода", "сила", "город", "поле", "время",
-    "дорога", "мера", "число", "слово", "камень",
-    "свет", "звук", "дом", "лес", "река",
-    "гора", "мост", "круг", "точка", "линия",
-]
-EN = [
-    "water", "force", "city", "field", "time",
-    "road", "measure", "number", "word", "stone",
-    "light", "sound", "house", "forest", "river",
-    "mountain", "bridge", "circle", "point", "line",
-]
+# СЛОВА ЖИВУТ В ОДНОМ ДОМЕ (`tools/lexicon.py`), а не двумя списками
+# здесь: слой разметки-и-формул держал свои двадцать одну пару, и
+# «гора» разошлась — mountain тут, hill там. Оба перевода истинны, и
+# потому расхождение не поймал бы счёт: его ловит только общий дом.
+СЛОВА = lexicon.набор(
+    ["вода", "сила", "город", "поле", "время",
+     "дорога", "мера", "число", "слово", "камень",
+     "свет", "звук", "дом", "лес", "река",
+     "гора", "мост", "круг", "точка", "линия"]
+)
+RU = [р for р, _ in СЛОВА]
+EN = [а for _, а in СЛОВА]
 NODES = ["A", "B", "C", "D", "E", "F", "G", "H"]
 RU_LEVEL = ["один", "два", "три"]
 EN_LEVEL = ["one", "two", "three"]
