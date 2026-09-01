@@ -163,7 +163,7 @@ the sum of the first 7 numbers is 28.
 graph TD; A-->B; B-->C; A-->C; in this graph A reaches C in 1 step.
 die formel a^2 + b^2 = c^2 mit a = 20 und b = 21 ergibt c = 29.
 6^2 − 4^2 = ( 6 − 4 ) × ( 6 + 4 ) = 20.
-graph TD; A-->B; B-->C; C-->D; D-->E; этот граф имеет 5 узлов и 4 рёбер.
+graph TD; A-->B; B-->C; C-->D; D-->E; этот граф имеет 5 узлов и 4 ребра.
 формула a^2 + b^2 = c^2 при a = 9 и b = 40 даёт c = 41.
 ( 10 + 3 )^2 = 169.
 graph TD; A-->B; B-->D; A-->C; C-->D; this graph has 4 nodes and 4 edges.
@@ -215,7 +215,7 @@ graph TD; A-->B; A-->C; in this graph A reaches C in 1 step.
 graph TD; A-->B; B-->C; C-->D; 这个图有三条边。
 4 to the power 2 is 16.
 the area of a rectangle 7 by 2 is 14.
-graph TD; A-->B; B-->C; C-->D; D-->E; этот граф имеет 5 узлов и 4 рёбер.
+graph TD; A-->B; B-->C; C-->D; D-->E; этот граф имеет 5 узлов и 4 ребра.
 ( 4 + 1 )^2 = 4^2 + 2 × 4 × 1 + 1^2 = 25.
 graph TD; A-->B; B-->C; A-->C; das diagramm hat drei kanten.
 сумма первых 7 чисел равна 28.
@@ -259,7 +259,7 @@ graph TD; A-->B; B-->C; A-->C; in this graph A reaches C in 1 step.
 graph TD; A-->B; B-->C; C-->D; D-->E; 这个图有四条边。
 2 to the power 6 is 64.
 the area of a rectangle 4 by 11 is 44.
-graph TD; A-->B; B-->C; C-->D; D-->E; этот граф имеет 5 узлов и 4 рёбер.
+graph TD; A-->B; B-->C; C-->D; D-->E; этот граф имеет 5 узлов и 4 ребра.
 ( 10 + 3 )^2 = 10^2 + 2 × 10 × 3 + 3^2 = 169.
 graph TD; A-->B; B-->D; A-->C; C-->D; das diagramm hat vier kanten.
 сумма первых 9 чисел равна 45.
@@ -427,7 +427,7 @@ graph TD; A-->B; A-->C; in this graph A reaches C in 1 step.
 graph TD; A-->B; B-->C; C-->D; 这个图有三条边。
 3 to the power 2 is 9.
 the area of a rectangle 7 by 2 is 14.
-graph TD; A-->B; B-->C; C-->D; D-->E; этот граф имеет 5 узлов и 4 рёбер.
+graph TD; A-->B; B-->C; C-->D; D-->E; этот граф имеет 5 узлов и 4 ребра.
 ( 4 + 1 )^2 = 4^2 + 2 × 4 × 1 + 1^2 = 25.
 graph TD; A-->B; B-->D; A-->C; C-->D; das diagramm hat vier kanten.
 сумма первых 6 чисел равна 21.
@@ -531,7 +531,7 @@ graph TD; A-->B; A-->C; the diagram has two edges.
 
 площадь прямоугольника 5 на 6 равна 30.
 graph TD; A-->B; B-->C; A-->C; 这个图有三条边。
-graph TD; A-->B; B-->C; C-->D; D-->E; этот граф имеет 5 узлов и 4 рёбер.
+graph TD; A-->B; B-->C; C-->D; D-->E; этот граф имеет 5 узлов и 4 ребра.
 сумма первых 4 чисел равна 10.
 площадь треугольника с основанием 10 и высотой 3 равна 15.
 формула a^2 + b^2 = c^2 при a = 28 и b = 45 даёт c = 53.
@@ -663,7 +663,7 @@ graph TD; A-->B; A-->C;
 5^2 − 2^2 = ( 5 − 2 ) × ( 5 + 2 ) = 21.
 площадь прямоугольника 12 на 5 равна 60.
 graph TD; A-->B; B-->C; A-->C; 这个图有三条边。
-graph TD; A-->B; B-->C; C-->D; D-->E; этот граф имеет 5 узлов и 4 рёбер.
+graph TD; A-->B; B-->C; C-->D; D-->E; этот граф имеет 5 узлов и 4 ребра.
 сумма первых 10 чисел равна 55.
 площадь треугольника с основанием 6 и высотой 4 равна 12.
 формула a^2 + b^2 = c^2 при a = 9 и b = 40 даёт c = 41.
@@ -822,7 +822,7 @@ graph TD; A-->B; B-->C; this graph has 3 nodes and 2 edges.
 the area of a rectangle 10 by 3 is 30.
 a^2 + b^2 = c^2 with a = 28 and b = 45 gives c = 53.
 graph TD; A-->B; B-->C; A-->C; диаграмма имеет три ребра.
-graph TD; A-->B; B-->C; C-->D; D-->E; этот граф имеет 5 узлов и 4 рёбер.
+graph TD; A-->B; B-->C; C-->D; D-->E; этот граф имеет 5 узлов и 4 ребра.
 3 в степени 2 равно 9.
 the sum of the first 10 numbers is 55.
 ( 4 + 1 )^2 = 4^2 + 2 × 4 × 1 + 1^2 = 25.

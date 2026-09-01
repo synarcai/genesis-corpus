@@ -32,6 +32,7 @@ import pathlib
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import rugram
 from layer import emit  # noqa: E402
 from plural import by_count  # noqa: E402
 
@@ -79,20 +80,24 @@ def pass_shows(pass_i):
         # --- счёт способов
         out.append(f"choosing {k} from {n} gives {сочетаний} "
                    f"{by_count(сочетаний, 'ways')}.")
-        out.append(f"выбор {k} из {n} даёт {сочетаний} способов.")
+        out.append(f"выбор {k} из {n} даёт {сочетаний} "
+                   f"{rugram.форма('способ', сочетаний)}.")
         out.append(f"arranging {p} items gives {порядков} "
                    f"{by_count(порядков, 'orders')}.")
-        out.append(f"расстановка {p} предметов даёт {порядков} порядков.")
+        out.append(f"расстановка {p} {rugram.форма('предмет', p)} даёт "
+                   f"{порядков} {rugram.форма('порядок', порядков)}.")
         out.append(f"choosing is not arranging: {k} from {n} gives "
                    f"{сочетаний}, arranging {k} of them gives "
                    f"{сочетаний * math.factorial(k)}.")
         # --- случай как счёт исходов
         out.append(f"a trial has {всего} outcomes; {чему} happens in "
                    f"{благо} of them.")
-        out.append(f"испытание имеет {всего} исходов; благоприятных "
+        out.append(f"испытание имеет {всего} "
+                   f"{rugram.форма('исход', всего)}; благоприятных "
                    f"{благо}.")
         out.append(f"{монет} coins give {2 ** монет} outcomes.")
-        out.append(f"{монет} монет дают {2 ** монет} исходов.")
+        out.append(f"{монет} {rugram.форма('монета', монет)} дают "
+                   f"{2 ** монет} {rugram.форма('исход', 2 ** монет)}.")
     return out
 
 

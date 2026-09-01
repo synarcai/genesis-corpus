@@ -55,11 +55,11 @@ def числа(s):
      lambda a, b: max(числа(a)) - min(числа(a)) == int(b)),
     (r"^choosing (\d+) from (\d+) gives (\d+) ways?$",
      lambda k, n, r: math.comb(int(n), int(k)) == int(r)),
-    (r"^выбор (\d+) из (\d+) даёт (\d+) способов$",
+    (r"^выбор (\d+) из (\d+) даёт (\d+) способ\S*$",
      lambda k, n, r: math.comb(int(n), int(k)) == int(r)),
     (r"^arranging (\d+) items gives (\d+) orders?$",
      lambda p, r: math.factorial(int(p)) == int(r)),
-    (r"^расстановка (\d+) предметов даёт (\d+) порядков$",
+    (r"^расстановка (\d+) предмет\S* даёт (\d+) порядк\S*$",
      lambda p, r: math.factorial(int(p)) == int(r)),
     (r"^choosing is not arranging: (\d+) from (\d+) gives (\d+), "
      r"arranging \1 of them gives (\d+)$",
@@ -67,11 +67,11 @@ def числа(s):
      and math.comb(int(n), int(k)) * math.factorial(int(k)) == int(a)),
     (r"^a trial has (\d+) outcomes; .+ happens in (\d+) of them$",
      lambda n, k: 0 <= int(k) <= int(n)),
-    (r"^испытание имеет (\d+) исходов; благоприятных (\d+)$",
+    (r"^испытание имеет (\d+) исход\S*; благоприятных (\d+)$",
      lambda n, k: 0 <= int(k) <= int(n)),
     (r"^(\d+) coins give (\d+) outcomes$",
      lambda n, r: 2 ** int(n) == int(r)),
-    (r"^(\d+) монет дают (\d+) исходов$",
+    (r"^(\d+) монет\S* дают (\d+) исход\S*$",
      lambda n, r: 2 ** int(n) == int(r)),
 ]
 СОБРАНО = [(re.compile(о), ф) for о, ф in ФОРМЫ]

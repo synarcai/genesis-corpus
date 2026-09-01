@@ -28,6 +28,7 @@ import pathlib
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import rugram
 from layer import emit  # noqa: E402
 
 # (a, b, c) with a² + b² = c² — whole triples only
@@ -97,10 +98,13 @@ def pass_shows(pass_i):
         out.append(текст)
         out.append(f"{текст} this graph has {узлов} nodes and "
                    f"{рёбер} edges.")
-        out.append(f"{текст} этот граф имеет {узлов} узла и "
-                   f"{рёбер} ребра." if узлов < 5 else
-                   f"{текст} этот граф имеет {узлов} узлов и "
-                   f"{рёбер} рёбер.")
+        # ОДНО УСЛОВИЕ ПРАВИЛО ДВУМЯ НЕЗАВИСИМЫМИ СЧЁТАМИ: ветвь
+        # выбиралась по числу УЗЛОВ и применялась к РЁБРАМ тоже,
+        # и «5 узлов и 4 рёбер» стояло в корпусе непойманным.
+        # Форма каждого счёта берётся из дома отдельно.
+        out.append(f"{текст} этот граф имеет "
+                   f"{узлов} {rugram.форма('узел', узлов)} и "
+                   f"{рёбер} {rugram.форма('ребро', рёбер)}.")
         out.append(f"{текст} in this graph {откуда} reaches {куда} in "
                    f"{шагов} steps." if шагов > 1 else
                    f"{текст} in this graph {откуда} reaches {куда} in "

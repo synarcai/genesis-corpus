@@ -45,7 +45,8 @@ for _где in (КОРЕНЬ / "courts", КОРЕНЬ / "tools", КОРЕНЬ / 
 # Прочие судят строку одним доводом.
 ПРОСТЫЕ = ("algo", "physics", "cyber", "notation", "program", "statistics",
            "proof", "machine", "episode", "copula", "unit", "number",
-           "sequence", "geometry", "linalg", "calendar", "speech")
+           "sequence", "geometry", "linalg", "calendar", "speech",
+           "rugram", "physlaw")
 
 
 def _взять(имя):

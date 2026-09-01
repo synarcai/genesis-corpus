@@ -29,6 +29,7 @@ import pathlib
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import rugram
 import units
 from layer import emit  # noqa: E402
 
@@ -96,25 +97,35 @@ def pass_shows(pass_i):
         km, kv = КИНЕТИКА[(pass_i * 2 + i) % len(КИНЕТИКА)]
         out.append(f"a body covering {s} metres in {t} seconds has speed "
                    f"{s // t} metres per second.")
-        out.append(f"тело, прошедшее {s} метров за {t} секунд, имеет "
-                   f"скорость {s // t} метров в секунду.")
+        out.append(f"тело, прошедшее {s} {rugram.форма('метр', s)} за "
+                   f"{t} {rugram.форма('секунда', t)}, имеет скорость "
+                   f"{s // t} {rugram.форма('метр', s // t)} в секунду.")
         out.append(f"speed = distance / time; {s} / {t} = {s // t}.")
         out.append(f"force = mass × acceleration; {m} kilograms × {a} "
                    f"metres per second squared = {m * a} newtons.")
-        out.append(f"сила = масса × ускорение; {m} килограммов × {a} "
-                   f"метров на секунду в квадрате = {m * a} ньютонов.")
+        out.append(f"сила = масса × ускорение; "
+                   f"{m} {rugram.форма('килограмм', m)} × "
+                   f"{a} {rugram.форма('метр', a)} на секунду в квадрате = "
+                   f"{m * a} {rugram.форма('ньютон', m * a)}.")
         out.append(f"work = force × distance; {f} newtons × {d} metres = "
                    f"{f * d} joules.")
-        out.append(f"работа = сила × путь; {f} ньютонов × {d} метров = "
-                   f"{f * d} джоулей.")
+        out.append(f"работа = сила × путь; "
+                   f"{f} {rugram.форма('ньютон', f)} × "
+                   f"{d} {rugram.форма('метр', d)} = "
+                   f"{f * d} {rugram.форма('джоуль', f * d)}.")
         out.append(f"power = work / time; {f * d} joules / {d} seconds = "
                    f"{f} watts.")
-        out.append(f"мощность = работа / время; {f * d} джоулей / {d} "
-                   f"секунд = {f} ватт.")
+        out.append(f"мощность = работа / время; {f * d} "
+                   f"{rugram.форма('джоуль', f * d)} / {d} "
+                   f"{rugram.форма('секунда', d)} = {f} "
+                   f"{rugram.форма('ватт', f)}.")
         out.append(f"density = mass / volume; {mm} kilograms / {v} cubic "
                    f"metres = {mm // v} kilograms per cubic metre.")
-        out.append(f"плотность = масса / объём; {mm} килограммов / {v} "
-                   f"кубометров = {mm // v} килограммов на кубометр.")
+        out.append(f"плотность = масса / объём; "
+                   f"{mm} {rugram.форма('килограмм', mm)} / "
+                   f"{v} {rugram.форма('кубометр', v)} = "
+                   f"{mm // v} {rugram.форма('килограмм', mm // v)} "
+                   f"на кубометр.")
         out.append(f"voltage = current × resistance; {cur} amperes × {r} "
                    f"ohms = {cur * r} volts.")
         out.append(f"напряжение = ток × сопротивление; {cur} ампер × {r} "
@@ -122,7 +133,8 @@ def pass_shows(pass_i):
         out.append(f"kinetic energy = mass × speed squared / 2; {km} × "
                    f"{kv} × {kv} / 2 = {km * kv * kv // 2} joules.")
         out.append(f"кинетическая энергия = масса × квадрат скорости / 2; "
-                   f"{km} × {kv} × {kv} / 2 = {km * kv * kv // 2} джоулей.")
+                   f"{km} × {kv} × {kv} / 2 = {km * kv * kv // 2} "
+                   f"{rugram.форма('джоуль', km * kv * kv // 2)}.")
         out.extend(ПРИСТАВОЧНЫЕ)
         en_имя, en_ед, ru_имя, ru_ед = ИЗМЕРЯЕТСЯ[
             (pass_i * 3 + i) % len(ИЗМЕРЯЕТСЯ)]

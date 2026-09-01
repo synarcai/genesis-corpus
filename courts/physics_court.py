@@ -69,8 +69,8 @@ from genesis import Unreadable, worlds  # noqa: E402
     r"^a body covering (\d+) metres in (\d+) seconds has speed "
     r"(\d+) metres per second$")
 СКОРОСТЬ_RU = re.compile(
-    r"^тело, прошедшее (\d+) метров за (\d+) секунд, имеет скорость "
-    r"(\d+) метров в секунду$")
+    r"^тело, прошедшее (\d+) метр\S* за (\d+) секунд\S*, имеет скорость "
+    r"(\d+) метр\S* в секунду$")
 КИНЕТИКА = re.compile(
     r"^(?:kinetic energy|кинетическая энергия) = .*?; "
     r"(\d+) × (\d+) × (\d+) / 2 = (\d+)")
