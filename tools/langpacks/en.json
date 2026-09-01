@@ -1103,5 +1103,27 @@
       "<f>: <x> \\to <y>",
       "a function from <x> to <y>"
     ]
+  ],
+  "verbal_math": [
+    [
+      "the sum of i from <a> to <b> is <c>",
+      "\\sum_{i=<a>}^{<b>} i = <c>"
+    ],
+    [
+      "the root of <a> is <b>",
+      "\\sqrt{<a>} = <b>"
+    ],
+    [
+      "<a> to the power <b> is <c>",
+      "<a>^<b> = <c>"
+    ],
+    [
+      "<a> plus <b> is <c>",
+      "<a> + <b> = <c>"
+    ],
+    [
+      "<a> minus <b> is <c>",
+      "<a> - <b> = <c>"
+    ]
   ]
 }

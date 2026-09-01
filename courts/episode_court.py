@@ -31,7 +31,7 @@ import sys
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
 from genesis import Unreadable, worlds  # noqa: E402
-from gsm_items import ITEMS  # noqa: E402
+from gsm_items import ANIMATE, ITEMS  # noqa: E402
 from plural import singular  # noqa: E402
 import units  # noqa: E402
 
@@ -42,12 +42,19 @@ import units  # noqa: E402
 
 С = r"[a-zа-яё]+"
 
+# ПРЕДМЕТ СОГЛАСУЕТСЯ ПО СЧЁТУ И ВНУТРИ ОДНОГО ЭПИЗОДА: «vera packed
+# 7 balls. vera used 1 ball away» — одна и та же вещь в двух формах,
+# и обратная ссылка на неё БУКВОЙ лгала. Восемьсот показов уходили в
+# неразобранное не оттого, что их нечем проверить, а оттого, что
+# образец требовал буквы там, где корпус согласует форму. Формы
+# сводятся органом — тем же, что уже сводит их в агрегатах.
 ПРИБАВЛЕНИЕ = re.compile(
-    rf"^({С}) {С} (\d+) ({С})\. \1 {С} (\d+) \3 more\. "
-    rf"how many \3 does \1 \w+( \w+)?\? \1 \w+ (\d+) \3\.$")
+    rf"^({С}) {С} (\d+) ({С})\. \1 {С} (\d+) ({С}) more\. "
+    rf"how many ({С}) does \1 \w+( \w+)?\? \1 \w+ (\d+) ({С})\.$")
 УБАВЛЕНИЕ = re.compile(
-    rf"^({С}) {С} (\d+) ({С})\. \1 {С} (\d+) \3( away)?\. "
-    rf"how many \3 does \1 (?:keep|still know)\? \1 \w+ (\d+) \3\.$")
+    rf"^({С}) {С} (\d+) ({С})\. \1 {С} (\d+) ({С})( away)?\. "
+    rf"how many ({С}) does \1 (?:keep|still know)\? "
+    rf"\1 \w+ (\d+) ({С})\.$")
 # ПРЕДМЕТ СОГЛАСУЕТСЯ ПО СЧЁТУ, и обратная ссылка на него ЛОЖНА:
 # «felix has 1 balloon» рядом с «carla has 5 balloons» — одна и та же
 # вещь в двух формах, и суд, требующий буквального совпадения, объявил
@@ -72,6 +79,36 @@ import units  # noqa: E402
     rf"|{С} likes the ({С})\."
     rf"|{С} looks at the ({С})\.)$")
 ПРЕДМЕТЫ = set(ITEMS) | {singular(w) for w in ITEMS}
+
+# РОД ВЕЩИ ОБЪЯВЛЕН РЯДОМ СО СПИСКОМ, И ПОТОМУ ПРОВЕРЯЕМ (М-103).
+# «the teacher is a thing» и «the books are here» безупречны
+# грамматически и ложны о мире — тот же род ошибки, что «ida bought 3
+# friends». Восемьсот строк этого рода стояли вне суда не оттого, что
+# их нечем проверить, а оттого, что никто не спросил: суд ВЛАДЕЕТ
+# одушевлённостью, объявленной в `gsm_items.py`.
+#
+# ЧИСЛО ТОЖЕ УТВЕРЖДЕНИЕ: «is» стоит при единственном, «are» при
+# множественном, и подмена одного другим есть ложь о языке, отличимая
+# от лжи о мире.
+РОД_ВЕЩИ = re.compile(
+    rf"^the ({С}) (is|are) an? (thing|person|measure)\.$")
+МЕСТО_ВЕЩИ = re.compile(
+    rf"^the ({С}) (is|are) (on the table|here)\.$")
+
+
+ЖИВЫЕ = {singular(w) for w in ANIMATE} | set(ANIMATE)
+
+
+def _род(слово):
+    """(в списке ли, одушевлено ли, множественное ли) — или None."""
+    один = singular(слово)
+    if один not in ПРЕДМЕТЫ and слово not in ПРЕДМЕТЫ:
+        return None
+    много = слово != один
+    # ОДУШЕВЛЁННОСТЬ ОБЪЯВЛЕНА МНОЖЕСТВЕННЫМИ, и приписать «s» к
+    # единственному значит выдумать «childs» и «peoples»: формы
+    # СВОДЯТСЯ ОРГАНОМ, тем же, что сводит их всюду в этом суде.
+    return True, один in ЖИВЫЕ, много
 НЕЗНАКОМЫЕ = []
 
 
@@ -294,14 +331,36 @@ def впитать_ставки(путь):
 
 def судить(строка):
     с = строка.strip()
+    m = РОД_ВЕЩИ.match(с)
+    if m:
+        слово, связка, род = m.groups()
+        разбор = _род(слово)
+        if разбор is None:
+            return False, True
+        _, живое, много = разбор
+        числом = связка == ("are" if много else "is")
+        ждём = "person" if живое else "thing"
+        return True, числом and род == ждём
+    m = МЕСТО_ВЕЩИ.match(с)
+    if m:
+        слово, связка, место = m.groups()
+        разбор = _род(слово)
+        if разбор is None:
+            return False, True
+        _, живое, много = разбор
+        числом = связка == ("are" if много else "is")
+        return True, числом and место == ("here" if живое
+                                          else "on the table")
     m = ПРИБАВЛЕНИЕ.match(с)
     if m:
-        a, b, итог = int(m.group(2)), int(m.group(4)), int(m.group(6))
-        return True, a + b == итог
+        a, b, итог = int(m.group(2)), int(m.group(4)), int(m.group(8))
+        вещи = {singular(m.group(i)) for i in (3, 5, 6, 9)}
+        return True, len(вещи) == 1 and a + b == итог
     m = УБАВЛЕНИЕ.match(с)
     if m:
-        a, b, итог = int(m.group(2)), int(m.group(4)), int(m.group(6))
-        return True, a - b == итог
+        a, b, итог = int(m.group(2)), int(m.group(4)), int(m.group(8))
+        вещи = {singular(m.group(i)) for i in (3, 5, 7, 9)}
+        return True, len(вещи) == 1 and a - b == итог
     m = АГРЕГАТ3.match(с)
     if m:
         вещи = {singular(m.group(i)) for i in (3, 6, 9, 10, 12)}
