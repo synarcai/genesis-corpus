@@ -322,6 +322,18 @@ def краткое(основа, с):
     lambda ш: [{"знак": з} for з in ("*", "_", "[", "#", "`")])
 
 конструкция(
+    "hard_break", "commonmark",
+    "(?P<текст>[^\\\\\\n]+)\\\\",
+    lambda п: п["текст"] + "\\",
+    lambda п: (f"a backslash ending a line is a hard line break: after "
+               f"{п['текст']} the text goes on in a NEW LINE and not in "
+               f"a new paragraph; two trailing spaces do the same."),
+    lambda п: (f"обратная косая в конце строки есть жёсткий перенос: "
+               f"после {ру(п['текст'])} текст идёт с НОВОЙ СТРОКИ, а не "
+               f"с нового абзаца; два пробела в конце делают то же."),
+    lambda ш: [{"текст": слово(ш, i)} for i in range(4)])
+
+конструкция(
     "entity", "commonmark",
     r"&(?P<имя>[a-z]+);",
     lambda п: f"&{п['имя']};",

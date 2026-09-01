@@ -581,6 +581,14 @@
       "text": "shows"
     },
     {
+      "name": "doctree",
+      "file": "datasets/genesis_doctree.txt",
+      "genre": "document structure: a link is an EDGE and is judged by RESOLUTION against a declared tree — relative paths counted from the document's own folder, anchors into a document, slugification of a heading into an anchor, order by sidebar_position, and links that lead NOWHERE with the ground of the refusal named; the oracle is two opposite walks (build the link text from a pair, resolve the link text back to a pair)",
+      "size": 150000,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
       "name": "full",
       "file": "datasets/GENESIS-FULL.txt",
       "genre": "the full mix: every world of shows, in manifest order, welded by the same seam that welds passes inside a layer — a consequence of the manifest, not a decision of whoever assembles it",

@@ -47,7 +47,8 @@ for _где in (КОРЕНЬ / "courts", КОРЕНЬ / "tools", КОРЕНЬ / 
            "proof", "machine", "episode", "copula", "unit", "number",
            "sequence", "geometry", "linalg", "calendar", "speech",
            "rugram", "physlaw", "compsci", "case", "valence",
-           "inquiry", "surfaces", "markdown")
+           "inquiry", "surfaces", "markdown",
+           "doctree")
 
 
 def _взять(имя):
