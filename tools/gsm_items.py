@@ -71,3 +71,30 @@ ANIMATE = {
     "students",
     "teachers",
 }
+
+
+# УПАКОВАТЬ МОЖНО ВЕЩЬ, НО НЕ МЕРУ — И ПЕРЕПИСЬ ЭТОГО НЕ ВИДИТ (М-103).
+# «acres come 2 to a pack», «centimeters come 4 to a crate» безупречны
+# грамматически и ложны о мире: акр и сантиметр суть МЕРЫ, у них нет
+# штук, которые кладут в коробку. Различие не выводится ни из позиции
+# после числа, ни из вопросной рамки — оно объявляется здесь, рядом со
+# списком, который уточняет.
+#
+# Список положительный, а не дополнение: сказать, ЧТО упаковывается,
+# честнее, чем сказать, что не упаковывается, — второе молча впустит
+# всякое новое слово.
+PACKAGEABLE = {
+    "apples", "balloons", "bananas", "bandages", "bolts", "books",
+    "candies", "cards", "chimichangas", "cookies", "cupcakes",
+    "eggs", "flowers", "guns", "jewels", "lollipops", "marbles",
+    "newspapers", "paintings", "pens", "roses",
+    "sandwiches", "shells", "spoons", "stickers", "toys",
+}
+
+# ВСЯКОЕ ОБЪЯВЛЕНИЕ О СЛОВАРЕ ПРОВЕРЯЕТСЯ ИМ ЖЕ. Первая редакция назвала
+# упаковываемыми «seeds», «seashells» и «pencils» — слов, которых
+# перепись не давала вовсе: объявление о списке, вышедшее за список,
+# есть выдумка под видом уточнения.
+assert PACKAGEABLE <= set(ITEMS), sorted(PACKAGEABLE - set(ITEMS))
+assert not (PACKAGEABLE & ANIMATE), sorted(PACKAGEABLE & ANIMATE)
+

@@ -33,6 +33,7 @@ units are the census lexicon of the benchmark (tools/gsm_items.py).
 from layer import emit
 
 
+from gsm_items import PACKAGEABLE
 from gsm_items import ITEMS as CENSUS
 from plural import by_count, singular
 
@@ -56,6 +57,9 @@ DOINGS = [
 # (period phrase, its plural for the span) — four surfaces of one genus
 PERIODS = [("every day", "days"), ("every night", "nights"),
            ("each day", "days"), ("a day", "days")]
+# (container, its plural) — упаковка как второй род ставки
+CONTAINERS = [("pack", "packs"), ("box", "boxes"), ("crate", "crates"),
+              ("batch", "batches")]
 # THE PERIOD MUST LIVE WHERE NO DIGIT STANDS, or it is known only as
 # «the word after a number» and the question frame cannot confirm it.
 BARE = [
@@ -86,6 +90,26 @@ def pass_shows(pass_i):
                 f"{a} {verb} {total} {by_count(total, unit)} "
                 f"in {k} {plural_span}."
             )
+    # ВТОРОЙ РОД СТАВКИ: НЕ ПЕРИОД, А УПАКОВКА. Бенчмарк пишет «razors
+    # come 4 to a pack» и «popsicles come 8 to a box» — это ставка между
+    # ПРЕДМЕТОМ и ВМЕСТИЛИЩЕМ, той же формы, что ставка во времени, но с
+    # иным вторым носителем. Перепись назвала глагол «come» стоящим
+    # перед числом, и соблазн был велик добавить его четырёхместным —
+    # но «ida comes 4 packs» ложно о мире (М-103): приходит не агент,
+    # а товар, и приходит УПАКОВКОЙ.
+    for j, (one, many) in enumerate(CONTAINERS):
+        товары = sorted(PACKAGEABLE)
+        unit = товары[(pass_i * 11 + j * 7) % len(товары)]
+        rate = (pass_i + j) % 6 + 2          # 2..7
+        k = (pass_i * 3 + j) % 5 + 2         # 2..6
+        out.append(
+            f"{unit} come {rate} to a {one}. "
+            f"how many {unit} in {k} {many}? "
+            f"{k} {many} hold {rate * k} {unit}."
+        )
+        out.append(f"a {one} holds {rate} {unit}.")
+        out.append(f"the {one} is a container.")
+        out.append(f"what is a {one}?")
     # THE PERIOD'S NUMBER-FREE LIFE IS EMITTED ONCE PER PASS, over
     # every distinct period word. Emitting it inside the verb loop
     # repeated one period and starved another — coverage by accident

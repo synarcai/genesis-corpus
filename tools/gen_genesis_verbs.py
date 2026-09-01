@@ -75,6 +75,10 @@ VERBS = [
     ("spend", "spends", "spent", "spent", ['minutes', 'hours', 'dollars']),
     ("pay", "pays", "paid", "paid", ['dollars']),
     ("read", "reads", "read", "read", ['pages', 'books', 'newspapers']),
+    # «gets» и «drinks» перепись назвала третьими лицами, стоящими перед
+    # числом: «she gets 20 marbles», «ingrid drinks 8 cups».
+    ("get", "gets", "got", "got", ['marbles', 'cards', 'points']),
+    ("drink", "drinks", "drank", "drunk", ['cups', 'gallons', 'ounces']),
 ]
 
 
