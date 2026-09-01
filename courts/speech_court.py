@@ -106,8 +106,151 @@ def _объявленные_лица():
     r"for it)\.$")
 
 
+ПРОСТЫЕ_ОБЫЧНО = re.compile(
+    r"^(?:простые числа обычно нечётны: из (\d+) простых до (\d+) "
+    r"нечётны (\d+)"
+    r"|primes are usually odd: of (\d+) primes below (\d+), "
+    r"(\d+) are odd)\.$")
+ХОТЯ = re.compile(
+    r"^(?:хотя (\d+) простое, \1 чётно"
+    r"|although (\d+) is prime, \2 is even)\.$")
+ХОТЯ_БЫ = re.compile(
+    r"^(?:хотя бы одно из чисел ([\d, ]+?) чётно: это (\d+)"
+    r"|at least one of ([\d, ]+?) is even: it is (\d+))\.$")
+МОЖЕТ = re.compile(
+    r"^(?:сумма двух нечётных может быть кратна 4: (\d+) \+ (\d+) = (\d+)"
+    r"|the sum of two odd numbers can be a multiple of 4: "
+    r"(\d+) \+ (\d+) = (\d+))\.$")
+ДОЛЖНА = re.compile(
+    r"^(?:сумма двух чётных должна быть чётной: проверено на всех "
+    r"чётных до (\d+)"
+    r"|the sum of two even numbers must be even: checked on all even "
+    r"numbers below (\d+))\.$")
+ТЕЗИС = re.compile(
+    r"^(?:тезис: (\d+) составное\. шаг: (\d+) делится на (\d+)\. "
+    r"шаг: (\d+) не равно 1 и (\d+) не равно (\d+)\. итог: (\d+) составное"
+    r"|thesis: (\d+) is composite\. step: (\d+) is divisible by (\d+)\. "
+    r"step: (\d+) is not 1 and (\d+) is not (\d+)\. "
+    r"hence: (\d+) is composite)\.$")
+СТЫК_СЛЕД_АНАФ = re.compile(
+    r"^(?:у (\w+) (\d+) \S+\. значит у (него|неё) чётное число предметов"
+    r"|(\w+) has (\d+) \w+\. therefore (he|she) has an even count)\.$")
+СТЫК_КВАНТ_ПРИД = re.compile(
+    r"^(?:все числа, которые делятся на (\d+), чётны\. (\d+) делится "
+    r"на (\d+)\. значит (\d+) чётно"
+    r"|all numbers that are divisible by (\d+) are even\. (\d+) is "
+    r"divisible by (\d+)\. therefore (\d+) is even)\.$")
+СТЫК_СЛЕД_СЛЕД = re.compile(
+    r"^(?:(\d+) делится на (\d+)\. значит (\d+) делится на (\d+)\. "
+    r"значит (\d+) чётно"
+    r"|(\d+) is divisible by (\d+)\. therefore (\d+) is divisible by "
+    r"(\d+)\. therefore (\d+) is even)\.$")
+СТЫК_НЕ_ВСЕ = re.compile(
+    r"^(?:не все числа ([\d, ]+?) чётны: (\d+) нечётно"
+    r"|not all of ([\d, ]+?) are even: (\d+) is odd)\.$")
+СТЫК_ОНИ = re.compile(
+    r"^(?:числа ([\d, ]+?) названы\. они все чётны"
+    r"|the numbers ([\d, ]+?) are named\. they are all even)\.$")
+СТЫК_МОЖЕТ_ХОТЯ_БЫ = re.compile(
+    r"^(?:может быть, что хотя бы одно из чисел ([\d, ]+?) чётно: это (\d+)"
+    r"|it may be that at least one of ([\d, ]+?) is even: "
+    r"it is (\d+))\.$")
+
+
+def _простые_до(n):
+    return [k for k in range(2, n)
+            if all(k % d for d in range(2, int(k ** 0.5) + 1))]
+
+
+def _ряд(текст):
+    return [int(x) for x in текст.replace(",", " ").split()]
+
+
+def связь(строка):
+    """(судимо, истинно) для форм второго яруса и стыков; None — не наше."""
+    с = строка.strip()
+    m = ПРОСТЫЕ_ОБЫЧНО.match(с)
+    if m:
+        г = [int(x) for x in m.groups() if x is not None]
+        сколько, верх, нечётных = г
+        простые = _простые_до(верх)
+        return (len(простые) == сколько
+                and sum(1 for p in простые if p % 2) == нечётных)
+    m = ХОТЯ.match(с)
+    if m:
+        n = int(next(г for г in m.groups() if г))
+        # ИСКЛЮЧЕНИЕ ОБЯЗАНО БЫТЬ ИСКЛЮЧЕНИЕМ: число простое, чётное, и
+        # правило по умолчанию («простые обычно нечётны») обязано
+        # держаться на всех прочих.
+        простое = n > 1 and all(n % d for d in range(2, int(n ** .5) + 1))
+        прочие = [p for p in _простые_до(60) if p != n]
+        return простое and n % 2 == 0 and all(p % 2 for p in прочие)
+    m = ХОТЯ_БЫ.match(с)
+    if m:
+        г = [x for x in m.groups() if x is not None]
+        числа, свидетель = _ряд(г[0]), int(г[1])
+        return свидетель in числа and свидетель % 2 == 0
+    m = МОЖЕТ.match(с)
+    if m:
+        a, b, c = (int(x) for x in m.groups() if x is not None)
+        return a % 2 and b % 2 and a + b == c and c % 4 == 0
+    m = ДОЛЖНА.match(с)
+    if m:
+        верх = int(next(г for г in m.groups() if г))
+        область = list(range(2, верх, 2))
+        return bool(область) and all((x + y) % 2 == 0
+                                     for x in область for y in область)
+    m = ТЕЗИС.match(с)
+    if m:
+        г = [int(x) for x in m.groups() if x is not None]
+        тезис_, n, d, d2, d3, n2, итог = г
+        # КОНТРОЛЬ verum-6c: цепь обязана вести ИМЕННО к заявленному.
+        if not (тезис_ == n == n2 == итог and d == d2 == d3):
+            return False
+        составное = n % d == 0 and d != 1 and d != n
+        return составное
+    m = СТЫК_СЛЕД_АНАФ.match(с)
+    if m:
+        г = [x for x in m.groups() if x is not None]
+        кто, n, мест = г[0], int(г[1]), г[2]
+        объявлено = ЛИЦА.get(кто)
+        if объявлено is None:
+            return False
+        ждём = объявлено[1] if мест in ("него", "неё") else объявлено[0]
+        return ждём == мест and n % 2 == 0
+    m = СТЫК_КВАНТ_ПРИД.match(с)
+    if m:
+        d, n, d2, n2 = (int(x) for x in m.groups() if x is not None)
+        return (d == d2 and n == n2 and d % 2 == 0
+                and n % d == 0 and n % 2 == 0)
+    m = СТЫК_СЛЕД_СЛЕД.match(с)
+    if m:
+        n, d1, n2, d2, n3 = (int(x) for x in m.groups() if x is not None)
+        return (n == n2 == n3 and n % d1 == 0 and n % d2 == 0
+                and d1 % d2 == 0 and n % 2 == 0)
+    m = СТЫК_НЕ_ВСЕ.match(с)
+    if m:
+        г = [x for x in m.groups() if x is not None]
+        числа, свидетель = _ряд(г[0]), int(г[1])
+        return (свидетель in числа and свидетель % 2
+                and not all(x % 2 == 0 for x in числа))
+    m = СТЫК_ОНИ.match(с)
+    if m:
+        числа = _ряд(next(г for г in m.groups() if г))
+        return bool(числа) and all(x % 2 == 0 for x in числа)
+    m = СТЫК_МОЖЕТ_ХОТЯ_БЫ.match(с)
+    if m:
+        г = [x for x in m.groups() if x is not None]
+        числа, свидетель = _ряд(г[0]), int(г[1])
+        return свидетель in числа and свидетель % 2 == 0
+    return None
+
+
 def судить(строка):
     """(судимо, истинно) для одной строки."""
+    вон = связь(строка)
+    if вон is not None:
+        return True, вон
     с = строка.strip()
     m = АНАФОРА_RU.match(с)
     if m:
