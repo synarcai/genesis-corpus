@@ -123,6 +123,13 @@ def фибо(n):
      lambda a, b, c, d: divmod(int(a), int(b)) == (int(c), int(d))),
     (r"^деление (\d+) на (\d+) даёт частное (\d+) и остаток (\d+)$",
      lambda a, b, c, d: divmod(int(a), int(b)) == (int(c), int(d))),
+    # ТА ЖЕ ИСТИНА ИНОЙ ПОВЕРХНОСТЬЮ: слой остатка пишет её короче, и
+    # суд, знавший лишь одну запись, молчал о двухстах шестидесяти
+    # строках.
+    (r"^(\d+) divided by (\d+) is (\d+) remainder (\d+)$",
+     lambda a, b, c, d: divmod(int(a), int(b)) == (int(c), int(d))),
+    (r"^(\d+) разделить на (\d+) будет (\d+), остаток (\d+)$",
+     lambda a, b, c, d: divmod(int(a), int(b)) == (int(c), int(d))),
 ]
 СОБРАНО = [(re.compile(о), ф) for о, ф in ФОРМЫ]
 

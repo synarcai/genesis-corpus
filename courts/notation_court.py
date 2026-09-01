@@ -22,6 +22,7 @@
 import pathlib
 import re
 import sys
+from fractions import Fraction
 
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
@@ -73,6 +74,45 @@ from genesis import Unreadable, worlds  # noqa: E402
      and int(a) // int(b) == int(c)),
     (r"^(\d+) \* (\d+) = (\d+)$", lambda a, b, c: int(a) * int(b) == int(c)),
 ]
+# ДРОБЬ И ЕЁ ДЕСЯТИЧНАЯ ЗАПИСЬ — ОДНО ЧИСЛО В ДВУХ ОДЕЖДАХ, и равенство
+# между ними проверяется точно: Fraction(1, 4) есть 0.25 и ничто иное.
+ФОРМЫ += [
+    (r"^(\d+)/(\d+) = (\d+\.\d+)$",
+     lambda ч, з, д: int(з) != 0
+     and Fraction(int(ч), int(з)) == Fraction(д)),
+    (r"^(\d+)/(\d+) = (\d+)$",
+     lambda ч, з, ц: int(з) != 0
+     and Fraction(int(ч), int(з)) == int(ц)),
+]
+# ИМЕНА ДОЛЕЙ ОБЪЯВЛЕНЫ, и безчисловая жизнь доли судится ими: «what is
+# a third?» истинно, если треть объявлена долей, и молчит о чужом.
+# ИМЯ ДОЛИ НЕСЁТ ЗНАЧЕНИЕ, А НЕ ТОЛЬКО ПРИНАДЛЕЖНОСТЬ. Первая редакция
+# проверяла лишь членство в списке имён — и приняла «1/4 = 0.25.
+# половина. quarter.» за истину: оба слова суть имена долей, но одно из
+# них называет ДРУГУЮ долю. Членство не есть соответствие.
+ДОЛИ_ЗНАЧЕНИЯ = {
+    "half": Fraction(1, 2), "a half": Fraction(1, 2),
+    "половина": Fraction(1, 2),
+    "third": Fraction(1, 3), "a third": Fraction(1, 3),
+    "треть": Fraction(1, 3),
+    "quarter": Fraction(1, 4), "a quarter": Fraction(1, 4),
+    "четверть": Fraction(1, 4),
+    "fifth": Fraction(1, 5), "a fifth": Fraction(1, 5),
+    "пятая часть": Fraction(1, 5),
+    "three quarters": Fraction(3, 4), "три четверти": Fraction(3, 4),
+}
+ДОЛИ_ИМЕНА = set(ДОЛИ_ЗНАЧЕНИЯ) | {"quarters", "четверти"}
+# ДРОБЬ, ЕЁ ДЕСЯТИЧНАЯ ЗАПИСЬ И ДВА ЕЁ ИМЕНИ В ОДНОЙ СТРОКЕ: «1/4 =
+# 0.25. четверть. quarter.» — три утверждения разом, и все три
+# проверяемы. Образец, требовавший всей строки одним предложением,
+# молчал о двухстах таких.
+ДРОБЬ_С_ИМЕНАМИ = re.compile(
+    r"^(\d+)/(\d+) = (\d+\.\d+)\. (\S+)\. (\S+)$")
+ЖИЗНЬ_ДОЛИ = re.compile(
+    r"^(?:what is (?:a |an )?(.+?)\?"
+    r"|что такое (.+?)\?"
+    r"|(.+?) is a part of a whole"
+    r"|(.+?) — это часть целого)$")
 СОБРАНО = [(re.compile(о), ф) for о, ф in ФОРМЫ]
 ПОЛОВИНА_EN = re.compile(
     r"^(\w+) and a half plus \1 and a half is (\w+)$")
@@ -88,6 +128,23 @@ def судить(строка):
         m = образец.match(с)
         if m:
             return True, bool(проверка(*m.groups()))
+    m = ДРОБЬ_С_ИМЕНАМИ.match(с)
+    if m:
+        ч, з, д, имя_ru, имя_en = m.groups()
+        if int(з) == 0:
+            return True, False
+        значение = Fraction(int(ч), int(з))
+        верно = значение == Fraction(д)
+        # ИМЯ ОБЯЗАНО НАЗЫВАТЬ ИМЕННО ЭТУ ДОЛЮ
+        имена = all(ДОЛИ_ЗНАЧЕНИЯ.get(и.lower()) == значение
+                    for и in (имя_ru, имя_en))
+        return True, верно and имена
+    m = ЖИЗНЬ_ДОЛИ.match(с)
+    if m:
+        слово = next(г for г in m.groups() if г)
+        if слово.lower() in ДОЛИ_ИМЕНА:
+            return True, True
+        return False, True     # чужая доля — не наша, и не наш приговор
     for образец in (ПОЛОВИНА_EN, ПОЛОВИНА_RU, ДВАЖДЫ_EN, ДВАЖДЫ_RU):
         m = образец.match(с)
         if m:
