@@ -115,6 +115,24 @@
           "des hofes",
           "dem hof",
           "den hof"
+        ],
+        "brief": [
+          "der brief",
+          "des briefes",
+          "dem brief",
+          "den brief"
+        ],
+        "wagen": [
+          "der wagen",
+          "des wagens",
+          "dem wagen",
+          "den wagen"
+        ],
+        "spiegel": [
+          "der spiegel",
+          "des spiegels",
+          "dem spiegel",
+          "den spiegel"
         ]
       }
     },
@@ -175,6 +193,12 @@
           "des wortes",
           "dem wort",
           "das wort"
+        ],
+        "gebäude": [
+          "das gebäude",
+          "des gebäudes",
+          "dem gebäude",
+          "das gebäude"
         ]
       }
     },
@@ -313,6 +337,38 @@
           "trinken",
           "trinkt",
           "trinken"
+        ],
+        "lernen": [
+          "lerne",
+          "lernst",
+          "lernt",
+          "lernen",
+          "lernt",
+          "lernen"
+        ],
+        "spielen": [
+          "spiele",
+          "spielst",
+          "spielt",
+          "spielen",
+          "spielt",
+          "spielen"
+        ],
+        "kaufen": [
+          "kaufe",
+          "kaufst",
+          "kauft",
+          "kaufen",
+          "kauft",
+          "kaufen"
+        ],
+        "sagen": [
+          "sage",
+          "sagst",
+          "sagt",
+          "sagen",
+          "sagt",
+          "sagen"
         ]
       }
     },
@@ -398,6 +454,18 @@
           "der blumen",
           "den blumen",
           "die blumen"
+        ],
+        "briefe": [
+          "die briefe",
+          "der briefe",
+          "den briefen",
+          "die briefe"
+        ],
+        "wagen": [
+          "die wagen",
+          "der wagen",
+          "den wagen",
+          "die wagen"
         ]
       }
     }
@@ -435,7 +503,7 @@
         "neben",
         "sehe"
       ],
-      "instances_per_pass": 6,
+      "instances_per_pass": 14,
       "templates": [
         "hier steht {lex:noun_masc_case:nom}.",
         "wegen {lex:noun_masc_case:gen} bleibt maria hier.",
@@ -526,8 +594,8 @@
           "reason": "agreement"
         },
         {
-          "bad": "ich sehe der brief.",
-          "good": "ich sehe den brief.",
+          "bad": "ich sehe der zettel.",
+          "good": "ich sehe den zettel.",
           "reason": "agreement"
         },
         {
@@ -571,7 +639,7 @@
       "lang_form": "mal"
     }
   ],
-  "graphemes": "abcdefghijklmnopqrstuvwxyzäöüß",
+  "graphemes": "abcdefghijklmnopqrstuvwxyzßäöü",
   "cross_kind_share": 0.3,
   "irregulars": [
     "weiß",
@@ -582,27 +650,31 @@
   ],
   "probe": {
     "words": [
-      "der",
       "das",
-      "den",
       "dem",
+      "den",
+      "der",
       "des",
-      "und",
-      "ich",
+      "diagramm",
       "du",
-      "sie",
-      "wir",
-      "ihr",
-      "ist",
       "ein",
       "eine",
-      "nicht",
-      "mit",
+      "ergibt",
+      "gleich",
+      "heisst",
       "hier",
-      "wegen",
+      "ich",
+      "ihr",
+      "ist",
+      "kanten",
+      "mit",
       "neben",
+      "nicht",
+      "sie",
       "steht",
-      "gleich"
+      "und",
+      "wegen",
+      "wir"
     ],
     "diacritics": "äöüß"
   },

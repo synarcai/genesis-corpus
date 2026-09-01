@@ -29,7 +29,10 @@ import sys
 
 ЗДЕСЬ = pathlib.Path(__file__).resolve().parent
 sys.path.insert(0, str(ЗДЕСЬ))
-from layer import emit  # noqa: E402
+from layer import PASSES, emit  # noqa: E402
+
+# ЗАКОН ПОВТОРА — из кремния архитектуры; здесь ЧИТАЕТСЯ.
+LAW = 2
 
 ПАКЕТЫ = {я: json.loads((ЗДЕСЬ / f"langpacks/{я}.json").read_text(
     encoding="utf-8")) for я in ("en", "ru", "de")}
@@ -50,7 +53,13 @@ from layer import emit  # noqa: E402
 def pass_shows(pass_i):
     out = []
     for i, знак in enumerate(ЗНАКИ):
-        if (i + pass_i) % 3:
+        # ЗАКОН ПОВТОРА РЕШАЕТ, СКОЛЬКО РАЗ ПОКАЗАН ЗНАК. Прежнее «% 3»
+        # давало знаку от одного до двух проходов, и показанный ОДНАЖДЫ
+        # знак не покупается вовсе — перепись честно назвала тринадцать
+        # таких одиночек (\emptyset, \geq, α, π…). Каждый знак живёт
+        # ровно LAW проходов из пяти: столько, сколько нужно закону, и
+        # ни одним больше.
+        if (i + pass_i) % len(PASSES) >= LAW:
             continue
         for я, рамка in РАМКА.items():
             # ИМЁН У ЗНАКА НЕСКОЛЬКО, а называется он ПЕРВЫМ: у стрелки
