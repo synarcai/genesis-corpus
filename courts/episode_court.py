@@ -32,7 +32,7 @@ import sys
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
 from genesis import Unreadable, worlds  # noqa: E402
-from gsm_items import ANIMATE, ITEMS  # noqa: E402
+from gsm_items import ANIMATE, ITEMS, PACKAGEABLE  # noqa: E402
 from plural import singular
 from plural import by_count as _по_счёту  # noqa: E402
 import units  # noqa: E402
@@ -149,8 +149,43 @@ def лицо_сходится(строка):
 # СТАВКА В ДЕНЬ, ПОМНОЖЕННАЯ НА ДНИ, ЕСТЬ ИТОГ — и форма вещи идёт за
 # числом в обеих третях показа: «1 page each day … 5 pages in 5 days».
 ЗА_ДНИ = re.compile(
-    rf"^({С}) ({С}) (\d+) ({С}) each day\. how much in (\d+) days\? "
+    rf"^({С}) ({С}) (\d+) ({С}) (?:each|every) day\. "
+    rf"how much in (\d+) days\? "
     rf"\1 \2 (\d+) ({С}) in (\d+) days\.$")
+
+# УПАКОВАТЬ МОЖНО ВЕЩЬ, НО НЕ МЕРУ — И ЭТО ОБЪЯВЛЕНО РЯДОМ СО СПИСКОМ
+# (М-103). «apples come 2 to a pack» истинно, «acres come 2 to a pack»
+# безупречно грамматически и ложно о мире: у акра нет штук, которые
+# кладут в коробку. Двадцать таких строк стояли вне суда последними —
+# не оттого, что их нечем проверить, а оттого, что суд ждал ВТОРОЙ
+# поверхности отношения и молчал, когда её не было. Проверяемое здесь
+# не число, а РОД: вторая поверхность уточняет ставку, объявление —
+# саму возможность её иметь.
+КОРОБКИ = {"pack", "box", "crate", "batch", "packs", "boxes",
+           "crates", "batches"}
+
+
+def упаковка_возможна(строка):
+    """Можно ли упаковать названное; None — не наше."""
+    m = ПРИХОДЯТ.match(строка.strip())
+    if not m:
+        return None
+    вещь, _, вместилище = m.groups()
+    if вместилище not in КОРОБКИ:
+        return None
+    один = singular(вещь)
+    if вещь not in ПРЕДМЕТЫ and один not in ПРЕДМЕТЫ:
+        return None
+    можно = {вещь, один} & {*PACKAGEABLE,
+                            *(singular(w) for w in PACKAGEABLE)}
+    return bool(можно)
+
+
+# ДЕЛЁЖ ОСТАВЛЯЕТ ОСТАТОК, И ОСТАТОК СЧИТАЕТСЯ. «13 cupcakes shared
+# among 2 students leaves 1 left over» проверяемо целиком; и делящих
+# должно быть больше нуля, иначе делёж не делёж.
+ДЕЛЁЖ = re.compile(
+    rf"^(\d+) ({С}) shared among (\d+) ({С}) leaves (\d+) left over\.$")
 
 # ОТДАННОЕ УБЫЛО, И ФОРМА ВЕЩИ ИДЁТ ЗА ЧИСЛОМ. Показ несёт три
 # состояния и три формы одного слова — и всё это проверяемо разом.
@@ -405,6 +440,15 @@ def впитать_ставки(путь):
 
 def судить(строка):
     с = строка.strip()
+    упаковано = упаковка_возможна(строка)
+    if упаковано is not None:
+        return True, упаковано
+    m = ДЕЛЁЖ.match(с)
+    if m:
+        сколько, _, делящих, _, остаток = m.groups()
+        if int(делящих) < 1:
+            return True, False
+        return True, int(сколько) % int(делящих) == int(остаток)
     m = ЗА_ДНИ.match(с)
     if m:
         _, _, ставка, вещь1, дней, итог, вещь2, дней2 = m.groups()
