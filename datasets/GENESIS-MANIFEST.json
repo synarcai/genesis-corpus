@@ -277,6 +277,38 @@
       "text": "shows"
     },
     {
+      "name": "numbers",
+      "file": "datasets/genesis_numbers.txt",
+      "genre": "number theory: primes, unique factorisation, divisors, congruence modulo n, coprimality",
+      "size": 60000,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
+      "name": "sequences",
+      "file": "datasets/genesis_sequences.txt",
+      "genre": "sequences: arithmetic and geometric progression, limit of a series, rate of change and the power rule",
+      "size": 100000,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
+      "name": "geometry",
+      "file": "datasets/genesis_geometry.txt",
+      "genre": "geometry: area and perimeter, volume and surface, the Pythagorean theorem on exact triples",
+      "size": 70000,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
+      "name": "linalg",
+      "file": "datasets/genesis_linalg.txt",
+      "genre": "linear algebra: vector sum and scale, exact length, dot product, determinant and the action of a matrix",
+      "size": 60000,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
       "name": "formulas",
       "file": "datasets/genesis_formulas.txt",
       "genre": "formulas and mermaid diagrams, described in four languages",
