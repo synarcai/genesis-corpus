@@ -653,6 +653,9 @@
     "-->": [
       "leads to"
     ],
+    ";": [
+      "end of step"
+    ],
     "<": [
       "less than"
     ],
@@ -822,6 +825,12 @@
     "\\xi": [
       "xi"
     ],
+    "^": [
+      "power"
+    ],
+    "_": [
+      "index"
+    ],
     "`": [
       "code"
     ],
@@ -895,6 +904,9 @@
     "r": [
       "r"
     ],
+    "return": [
+      "return"
+    ],
     "s": [
       "s",
       "second"
@@ -922,6 +934,9 @@
     ],
     "z": [
       "z"
+    ],
+    "|": [
+      "table column"
     ],
     "¬": [
       "not"
@@ -1083,7 +1098,8 @@
       "greater or equal"
     ],
     "⊂": [
-      "subset"
+      "subset",
+      "is contained in"
     ]
   },
   "latex_readings": [
@@ -1152,6 +1168,32 @@
     [
       "a quarter of <a> is <b>",
       "<a> / 4 = <b>"
+    ],
+    [
+      "three quarters of <a> is <b>",
+      "<a> × 3 / 4 = <b>"
+    ],
+    [
+      "two thirds of <a> is <b>",
+      "<a> × 2 / 3 = <b>"
+    ],
+    [
+      "it holds for n = <k>: <e...>",
+      "<e>"
+    ]
+  ],
+  "verbal_laws": [
+    [
+      "the sum does not depend on the order",
+      "a + b = b + a"
+    ],
+    [
+      "the product does not depend on the order",
+      "a × b = b × a"
+    ],
+    [
+      "multiplication distributes over addition",
+      "a × ( b + c ) = a × b + a × c"
     ]
   ]
 }
