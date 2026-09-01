@@ -30,7 +30,7 @@ teachers every day» would be grammatical and false, the same fault as
 units are the census lexicon of the benchmark (tools/gsm_items.py).
 """
 
-from layer import emit
+from layer import PASSES, emit
 
 
 from gsm_items import PACKAGEABLE
@@ -100,14 +100,24 @@ def pass_shows(pass_i):
     for j, (one, many) in enumerate(CONTAINERS):
         товары = sorted(PACKAGEABLE)
         unit = товары[(pass_i * 11 + j * 7) % len(товары)]
-        rate = (pass_i + j) % 6 + 2          # 2..7
-        k = (pass_i * 3 + j) % 5 + 2         # 2..6
-        out.append(
-            f"{unit} come {rate} to a {one}. "
-            f"how many {unit} in {k} {many}? "
-            f"{k} {many} hold {rate * k} {unit}."
-        )
+        # СТАВКА ПРИНАДЛЕЖИТ ПАРЕ, А НЕ ПРОХОДУ. Прежде она считалась
+        # от номера прохода, и стоило вращению дважды свести одну пару,
+        # как корпус сказал бы «apples come 4 to a pack» и «apples come
+        # 6 to a pack» — противоречие о мире, которое не поймает ни
+        # один счётный прибор, ибо обе строки верны поодиночке. Теперь
+        # ставка выводится из самой пары, и противоречие невозможно
+        # ПО ПОСТРОЕНИЮ.
+        rate = (товары.index(unit) + j) % 6 + 2      # 2..7
+        out.append(f"{unit} come {rate} to a {one}.")
         out.append(f"a {one} holds {rate} {unit}.")
+        # НЕСКОЛЬКО ЧИСЛОВЫХ ПАР НА ОДИН КЛЮЧ: константа покупается
+        # рынком лишь тогда, когда одно и то же отношение показано на
+        # РАЗНЫХ числах. Одна пара учит паре, а не отношению.
+        for k in (2, 3, 5):
+            out.append(
+                f"how many {unit} in {k} {many}? "
+                f"{k} {many} hold {rate * k} {unit}."
+            )
         out.append(f"the {one} is a container.")
         out.append(f"what is a {one}?")
     # THE PERIOD'S NUMBER-FREE LIFE IS EMITTED ONCE PER PASS, over
@@ -124,7 +134,22 @@ def pass_shows(pass_i):
     return out
 
 
+def _ставка_одна():
+    """Одна пара — одна ставка, и это условие СБОРКИ, а не присмотра."""
+    видано = {}
+    for pi in range(len(PASSES)):
+        товары = sorted(PACKAGEABLE)
+        for j, (one, _) in enumerate(CONTAINERS):
+            unit = товары[(pi * 11 + j * 7) % len(товары)]
+            ставка = (товары.index(unit) + j) % 6 + 2
+            ключ = (unit, one)
+            if видано.setdefault(ключ, ставка) != ставка:
+                raise AssertionError(f"{ключ}: {видано[ключ]} и {ставка}")
+    return len(видано)
+
+
 def main():
+    _ставка_одна()
     emit("datasets/genesis_rates.txt", pass_shows)
 
 
