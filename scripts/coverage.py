@@ -34,7 +34,7 @@ import episode_court as EP  # noqa: E402
 # РУБЕЖ-ОХВАТА: доля судимых строк корпуса, %
 СУДИМОСТЬ_РУБЕЖ = 86
 
-# ПУСТОЙ-ОБХОД: no-such-manifest
+# ПУСТОЙ-ОБХОД: --manifest no-such-manifest
 
 ПРОЧИЕ = ["algo", "formula", "physics", "cyber", "notation", "program",
           "statistics", "proof", "machine", "episode", "copula"]
@@ -44,6 +44,13 @@ def main():
     словарь = A.словари()
     знаки = L.имена_знаков()
     суды = {и: importlib.import_module(f"{и}_court") for и in ПРОЧИЕ}
+    # ЯВНО НАЗВАННЫЙ МАНИФЕСТ: без него прибор не мог отказать НИ НА ЧЁМ
+    # — обход выводился из репозитория и всегда был полон. Маркер
+    # пустого обхода при этом стоял, и парк честно назвал его ложью:
+    # объявление, которого нельзя прожить, есть обещание, а не договор.
+    if "--manifest" in sys.argv:
+        свой = sys.argv[sys.argv.index("--manifest") + 1]
+        genesis.MANIFEST = pathlib.Path(свой)
     try:
         миры = genesis.manifest()["worlds"]
     except genesis.Unreadable as беда:
