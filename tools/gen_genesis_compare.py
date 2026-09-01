@@ -69,7 +69,24 @@ ASK_SUB = [("keep", "keeps"),
 # показов теперь ВЫВОДИТСЯ из ширины веера, и добавленная поверхность
 # растит слой, а не отнимает у прежних. Родня уроку «индекс % 2 при
 # растущем списке»: величина, зависящая от списка, обязана его читать.
-ВЕЕР = max(len(ADD_SURF), len(SUB_SURF), len(MUL_SURF))
+# МНОЖИТЕЛЬ БЕЗ ЧИСЛОВОГО ТОКЕНА. «twice as many» и «double the amount»
+# несут двойку В СЕБЕ: числа в строке нет, а связь та же. Рынок вложений
+# ждёт числового якоря, и такая поверхность для него нема, пока не
+# показана — а бенчмарк пишет ею (g1.32).
+TWICE_SURF = [
+    "{a} has twice as many {it} as {b}.",
+    "{a} has double the amount of {it} that {b} has.",
+    "{a} has double the number of {it} that {b} has.",
+]
+# ВЛОЖЕННАЯ СВЯЗЬ: сложение НАД умножением в одной клаузе — «3 more than
+# twice the number of books that sally has» есть 2·база + 3. Здесь два
+# отношения сразу, и внешнее читается только после внутреннего.
+NESTED_SURF = [
+    "{a} has {n} more than twice the number of {it} that {b} has.",
+    "{a} has {n} more than twice as many {it} as {b}.",
+]
+ВЕЕР = max(len(ADD_SURF), len(SUB_SURF), len(MUL_SURF),
+           len(TWICE_SURF), len(NESTED_SURF))
 
 
 def pass_shows(pi):
@@ -90,7 +107,7 @@ def pass_shows(pi):
         it = ITEMS[
             (base + i * 5) % len(ITEMS)
         ]
-        kind = (base + i) % 3
+        kind = (base + i) % 5
         if kind == 0:
             # ADD: A = B + n
             bv = (base + i * 7) % 7 + 3
@@ -113,7 +130,7 @@ def pass_shows(pi):
             ask, av_verb = ASK_SUB[
                 ((base + i) // 6) % 2
             ]
-        else:
+        elif kind == 2:
             # MUL: A = B × n
             bv = (base + i * 7) % 4 + 2
             n = (base + i * 3) % 2 + 2
@@ -122,6 +139,20 @@ def pass_shows(pi):
             ask, av_verb = ASK_ADD[
                 ((base + i) // 6) % 2
             ]
+        elif kind == 3:
+            # TWICE: A = B × 2, и двойка живёт в СЛОВЕ, а не в числе
+            bv = (base + i * 7) % 6 + 2
+            n = 2
+            av = bv * 2
+            surf = TWICE_SURF[((base + i) // 3) % len(TWICE_SURF)]
+            ask, av_verb = ASK_ADD[((base + i) // 6) % 2]
+        else:
+            # NESTED: A = B × 2 + n — сложение над умножением
+            bv = (base + i * 7) % 5 + 2
+            n = (base + i * 3) % 3 + 1
+            av = bv * 2 + n
+            surf = NESTED_SURF[((base + i) // 3) % len(NESTED_SURF)]
+            ask, av_verb = ASK_ADD[((base + i) // 6) % 2]
         # THE COUNT CHOOSES THE FORM. «1 eggs» was shown
         # 48 times here and «1 egg» never, so the wrong
         # agreement was the only one on offer. «as many X
@@ -129,7 +160,9 @@ def pass_shows(pi):
         # it agrees with the comparison, not with `n`.
         cmp_s = surf.format(
             a=a, n=n, b=b,
-            it=it if kind == 2 else by_count(n, it),
+            # множественное держится при всяком множителе: оно
+            # согласуется со сравнением, а не с числом
+            it=it if kind in (2, 3, 4) else by_count(n, it),
         )
         # BOTH ORDERS OF THE COMPARISON, NOT ONE.
         # The relation road reads «value(A) =

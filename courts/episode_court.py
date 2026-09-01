@@ -79,6 +79,17 @@ from plural import singular  # noqa: E402
 РАЗ_КОНЕЦ = re.compile(rf"({С}) has (\d+) times as many ({С}) as ({С})\.")
 РАЗ_СЕРЕДИНА = re.compile(
     rf"({С}) has (\d+) times the (?:amount|number) of ({С}) that ({С}) has\.")
+# МНОЖИТЕЛЬ БЕЗ ЧИСЛОВОГО ТОКЕНА: «twice» и «double» несут двойку в
+# слове. Суд, ищущий цифру, такую связь не прочтёт вовсе — а бенчмарк
+# пишет ею.
+ДВАЖДЫ = re.compile(
+    rf"({С}) has (?:twice as many|double the (?:amount|number) of) "
+    rf"({С})(?: as | that )({С})(?: has)?\.")
+# ВЛОЖЕННАЯ СВЯЗЬ: сложение НАД умножением, внешнее читается после
+# внутреннего.
+ВЛОЖЕННО = re.compile(
+    rf"({С}) has (\d+) more than twice (?:the number of |as many )"
+    rf"({С}) (?:that |as )({С})(?: has)?\.")
 ИТОГ = re.compile(rf"({С}) (?:holds|owns|keeps|saves|has) (\d+) ({С})\.\s*$")
 СТАВКА = re.compile(
     rf"^({С}) ({С}) (\d+) ({С}) (?:every|each|a) (?:day|night)\. "
@@ -86,6 +97,42 @@ from plural import singular  # noqa: E402
 УПАКОВКА = re.compile(
     rf"^({С}) come (\d+) to a ({С})\. how many \1 in (\d+) ({С})\? "
     rf"\3 \4 hold (\d+) \1\.$")
+# ДОЛЬНАЯ УБЫЛЬ: итог складывается из частей, доля УХОДИТ, остаток
+# спрашивается. Три перехода в одном показе, и каждый судится: сумма,
+# деление на знаменатель, разность. Доля читается обеими записями —
+# косой чертой и словом.
+ДОЛЯ_СЛОВОМ = {"a half": 2, "a third": 3, "a quarter": 4, "a fifth": 5,
+               "половина": 2, "треть": 3, "четверть": 4,
+               "пятая часть": 5}
+ДВА_ШАГА = re.compile(
+    rf"^({С}) counted (\d+) ({С})\. \1 counted (\d+) more \3\. "
+    rf"(1/\d+|a \w+) of the \3 [\w ]+\. how many \3 [\w ]+\? "
+    rf"(\d+) \3 [\w ]+\.$")
+# НАЧАЛА, СКАЗАННЫЕ СЛОВАМИ, тоже принадлежат слою и тоже судятся — не
+# счётом, а принадлежностью объявленному: строка вне объявления есть
+# дрейф, который иначе никто не заметит.
+НАЧАЛА = {
+    "a part goes and a part remains.",
+    "what is left is the whole minus what went.",
+}
+ОДИН_ШАГ = re.compile(
+    rf"^({С}) had (\d+) ({С})\. (1/\d+|a \w+) of the \3 [\w ]+\. "
+    rf"how many \3 (?:remain|are left|stay)\? (\d+) \3 "
+    rf"(?:remain|are left|stay)\.$")
+УШЕДШЕЕ = re.compile(
+    rf"^({С}) had (\d+) ({С})\. (1/\d+|a \w+) of the \3 [\w ]+\. "
+    rf"how many \3 went\? (\d+) \3 went\.$")
+УБЫЛЬ_RU = re.compile(
+    r"^у \w+ было (\d+) (\S+)\. (половина|треть|четверть|пятая часть) "
+    r"(\S+) ушла\. сколько \4 осталось\? осталось (\d+) (\S+)\.$")
+
+
+def знаменатель(текст):
+    if текст.startswith("1/"):
+        return int(текст[2:])
+    return ДОЛЯ_СЛОВОМ.get(текст)
+
+
 КОНВЕРСИЯ = re.compile(rf"^1 ({С}) = (\d+) ({С})\.$")
 КОНВЕРСИЯ_К = re.compile(rf"^(\d+) ({С}) (?:=|are) (\d+) ({С})\.$")
 ДЕРЖИТ = re.compile(rf"^a ({С}) holds (\d+) ({С})\.$")
@@ -129,6 +176,37 @@ def судить(строка):
     if m:
         ставка, k, итог = int(m.group(2)), int(m.group(4)), int(m.group(5))
         return True, ставка * k == итог
+    if с in НАЧАЛА:
+        return True, True
+    m = ДВА_ШАГА.match(с)
+    if m:
+        a, b, зн = int(m.group(2)), int(m.group(4)), знаменатель(m.group(5))
+        осталось = int(m.group(6))
+        if зн is None:
+            return False, True
+        всего = a + b
+        return True, всего % зн == 0 and всего - всего // зн == осталось
+    m = ОДИН_ШАГ.match(с)
+    if m:
+        всего, зн = int(m.group(2)), знаменатель(m.group(4))
+        осталось = int(m.group(5))
+        if зн is None:
+            return False, True
+        return True, всего % зн == 0 and всего - всего // зн == осталось
+    m = УШЕДШЕЕ.match(с)
+    if m:
+        всего, зн = int(m.group(2)), знаменатель(m.group(4))
+        ушло = int(m.group(5))
+        if зн is None:
+            return False, True
+        return True, всего % зн == 0 and всего // зн == ушло
+    m = УБЫЛЬ_RU.match(с)
+    if m:
+        всего, зн = int(m.group(1)), знаменатель(m.group(3))
+        осталось = int(m.group(5))
+        if зн is None:
+            return False, True
+        return True, всего % зн == 0 and всего - всего // зн == осталось
     m = КОНВЕРСИЯ.match(с) or ДЕРЖИТ.match(с)
     if m:
         # отношение объявляется показом; судить нечего, кроме его формы
@@ -143,6 +221,19 @@ def судить(строка):
         база = {им: int(n) for им, n, _ in БАЗА.findall(с)}
         база.update({им: int(n) for им, n, _ in БАЗА_ПЕРФЕКТ.findall(с)})
         кто, сколько = итог_m.group(1), int(итог_m.group(2))
+        # ВЛОЖЕННОЕ ЧИТАЕТСЯ ПЕРВЫМ: «3 more than twice the number of X»
+        # содержит и «more than», и множитель, и суд, взявший внешнее
+        # отношение отдельно, посчитал бы 2·база вместо 2·база + 3.
+        m = ВЛОЖЕННО.search(с)
+        if m:
+            a, d, b = m.group(1), int(m.group(2)), m.group(4)
+            if a == кто and b in база:
+                return True, база[b] * 2 + d == сколько
+        m = ДВАЖДЫ.search(с)
+        if m:
+            a, b = m.group(1), m.group(3)
+            if a == кто and b in база:
+                return True, база[b] * 2 == сколько
         for рег, действие in (
                 (БОЛЬШЕ, lambda o, d: o + d),
                 (БОЛЬШЕ_ПЕРФЕКТ, lambda o, d: o + d),
