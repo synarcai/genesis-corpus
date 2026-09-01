@@ -1,0 +1,455 @@
+{
+  "lang": "it",
+  "script": "latin",
+  "script_range": "A-Za-zÀÈÉÌÒÙàèéìòù",
+  "graphemes": "abcdefghijklmnopqrstuvwxyzàèéìòù",
+  "tier": 1,
+  "comment": "SEVENTH PACK. Italian: six persons whose endings differ in every cell — the cleanest person paradigm in the corpus so far. TIER 1: structure green, forms not checked by a native.",
+  "lexeme_source": {
+    "law": "every morph class must carry >= LAW distinct lexemes; a class below its declared need is judged poor by the engine",
+    "need_per_class": 5
+  },
+  "numerals": {
+    "0": "zero",
+    "1": "uno",
+    "2": "due",
+    "3": "tre",
+    "4": "quattro",
+    "5": "cinque",
+    "6": "sei",
+    "7": "sette",
+    "8": "otto",
+    "9": "nove",
+    "10": "dieci",
+    "11": "undici",
+    "12": "dodici",
+    "13": "tredici",
+    "14": "quattordici",
+    "15": "quindici",
+    "16": "sedici",
+    "17": "diciassette",
+    "18": "diciotto",
+    "19": "diciannove",
+    "20": "venti",
+    "30": "trenta",
+    "40": "quaranta",
+    "50": "cinquanta",
+    "60": "sessanta",
+    "100": "cento"
+  },
+  "count_agreement": [
+    {
+      "mod": 10,
+      "in": [
+        1
+      ],
+      "form": "one"
+    },
+    {
+      "form": "many"
+    }
+  ],
+  "morph_classes": {
+    "verb_pres": {
+      "forms": [
+        "s1",
+        "s2",
+        "s3",
+        "p1",
+        "p2",
+        "p3"
+      ],
+      "paradigm_cells": 6,
+      "need": 5,
+      "lexemes": {
+        "parlare": [
+          "parlo",
+          "parli",
+          "parla",
+          "parliamo",
+          "parlate",
+          "parlano"
+        ],
+        "mangiare": [
+          "mangio",
+          "mangi",
+          "mangia",
+          "mangiamo",
+          "mangiate",
+          "mangiano"
+        ],
+        "vendere": [
+          "vendo",
+          "vendi",
+          "vende",
+          "vendiamo",
+          "vendete",
+          "vendono"
+        ],
+        "leggere": [
+          "leggo",
+          "leggi",
+          "legge",
+          "leggiamo",
+          "leggete",
+          "leggono"
+        ],
+        "correre": [
+          "corro",
+          "corri",
+          "corre",
+          "corriamo",
+          "correte",
+          "corrono"
+        ],
+        "aprire": [
+          "apro",
+          "apri",
+          "apre",
+          "apriamo",
+          "aprite",
+          "aprono"
+        ],
+        "cantare": [
+          "canto",
+          "canti",
+          "canta",
+          "cantiamo",
+          "cantate",
+          "cantano"
+        ],
+        "dormire": [
+          "dormo",
+          "dormi",
+          "dorme",
+          "dormiamo",
+          "dormite",
+          "dormono"
+        ]
+      },
+      "rule": {
+        "classes": {
+          "are": {
+            "strip": "are",
+            "endings": [
+              "o",
+              "i",
+              "a",
+              "iamo",
+              "ate",
+              "ano"
+            ]
+          },
+          "ere": {
+            "strip": "ere",
+            "endings": [
+              "o",
+              "i",
+              "e",
+              "iamo",
+              "ete",
+              "ono"
+            ]
+          },
+          "ire": {
+            "strip": "ire",
+            "endings": [
+              "o",
+              "i",
+              "e",
+              "iamo",
+              "ite",
+              "ono"
+            ]
+          }
+        },
+        "of": {
+          "parlare": "are",
+          "mangiare": "*",
+          "vendere": "ere",
+          "leggere": "ere",
+          "correre": "ere",
+          "aprire": "ire",
+          "cantare": "are",
+          "dormire": "ire"
+        }
+      }
+    },
+    "noun_count": {
+      "forms": [
+        "one",
+        "many"
+      ],
+      "paradigm_cells": 2,
+      "need": 5,
+      "lexemes": {
+        "libro": [
+          "il libro",
+          "i libri"
+        ],
+        "casa": [
+          "la casa",
+          "le case"
+        ],
+        "tavolo": [
+          "il tavolo",
+          "i tavoli"
+        ],
+        "macchina": [
+          "la macchina",
+          "le macchine"
+        ],
+        "fiore": [
+          "il fiore",
+          "i fiori"
+        ],
+        "carta": [
+          "la carta",
+          "le carte"
+        ],
+        "gatto": [
+          "il gatto",
+          "i gatti"
+        ],
+        "chilo": [
+          "il chilo",
+          "i chili"
+        ],
+        "esame": [
+          "l esame",
+          "gli esami"
+        ],
+        "taxi": [
+          "il taxi",
+          "i taxi"
+        ],
+        "treno": [
+          "il treno",
+          "i treni"
+        ],
+        "zebra": [
+          "la zebra",
+          "le zebre"
+        ],
+        "giornale": [
+          "il giornale",
+          "i giornali"
+        ],
+        "quaderno": [
+          "il quaderno",
+          "i quaderni"
+        ],
+        "kiwi": [
+          "il kiwi",
+          "i kiwi"
+        ],
+        "yogurt": [
+          "lo yogurt",
+          "gli yogurt"
+        ],
+        "jeans": [
+          "i jeans",
+          "i jeans"
+        ],
+        "wafer": [
+          "il wafer",
+          "i wafer"
+        ],
+        "città": [
+          "la città",
+          "le città"
+        ],
+        "caffè": [
+          "il caffè",
+          "i caffè"
+        ],
+        "così": [
+          "il così",
+          "i così"
+        ],
+        "però": [
+          "il però",
+          "i però"
+        ],
+        "virtù": [
+          "la virtù",
+          "le virtù"
+        ],
+        "perché": [
+          "il perché",
+          "i perché"
+        ]
+      }
+    }
+  },
+  "show_kinds": {
+    "arithmetic": {
+      "lexicon": [
+        "più",
+        "meno",
+        "per",
+        "diviso",
+        "fa"
+      ],
+      "ops": {
+        "più": "+",
+        "meno": "-",
+        "per": "*",
+        "diviso": "/",
+        "fa": "="
+      },
+      "instances_per_pass": 14,
+      "templates": [
+        "{num:n} più {num:m} fa {num:sum}.",
+        "{n} + {m} = {sum}.",
+        "{num:sum} meno {num:m} fa {num:n}.",
+        "{num:n} per {num:m} fa {num:prod}.",
+        "{num:prod} diviso {num:m} fa {num:n}."
+      ]
+    },
+    "conjugation": {
+      "lexicon": [
+        "io",
+        "tu",
+        "lui",
+        "noi",
+        "voi",
+        "loro"
+      ],
+      "instances_per_pass": 16,
+      "templates": [
+        "io {lex:verb_pres:s1}.",
+        "tu {lex:verb_pres:s2}.",
+        "lui {lex:verb_pres:s3}.",
+        "noi {lex:verb_pres:p1}.",
+        "voi {lex:verb_pres:p2}.",
+        "loro {lex:verb_pres:p3}."
+      ]
+    },
+    "counting": {
+      "lexicon": [
+        "ecco",
+        "qui"
+      ],
+      "instances_per_pass": 48,
+      "templates": [
+        "ecco {lex:noun_count:one}.",
+        "ecco {lex:noun_count:many}.",
+        "qui {lex:noun_count:many}."
+      ]
+    },
+    "definition": {
+      "lexicon": [
+        "cosa",
+        "una",
+        "oggetto"
+      ],
+      "instances_per_pass": 48,
+      "templates": [
+        "{lex:noun_count:one} è una cosa."
+      ]
+    },
+    "refusals": {
+      "refusal": true,
+      "marker": "¬ ",
+      "lexicon": [
+        "¬"
+      ],
+      "pairs": [
+        {
+          "bad": "la libro è piccolo.",
+          "good": "il libro è piccolo.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "le casa sono grandi.",
+          "good": "le case sono grandi.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "io parli.",
+          "good": "io scrivo.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "qual è il colore di sette ?",
+          "good": "che cosa è un oggetto ?",
+          "reason": "unanswerable"
+        },
+        {
+          "bad": "libro più casa fa ?",
+          "good": "cento meno uno fa novantanove.",
+          "reason": "type_mismatch"
+        }
+      ]
+    }
+  },
+  "core_pairing": [
+    {
+      "lang_word": "più",
+      "core": "+",
+      "core_form": "+",
+      "lang_form": "più"
+    },
+    {
+      "lang_word": "meno",
+      "core": "-",
+      "core_form": "-",
+      "lang_form": "meno"
+    },
+    {
+      "lang_word": "per",
+      "core": "×",
+      "core_form": "×",
+      "lang_form": "per"
+    },
+    {
+      "lang_word": "diviso",
+      "core": "÷",
+      "core_form": "÷",
+      "lang_form": "diviso"
+    },
+    {
+      "lang_word": "fa",
+      "core": "=",
+      "core_form": "=",
+      "lang_form": "fa"
+    }
+  ],
+  "cross_kind_share": 0.3,
+  "irregulars": [
+    "leggo",
+    "corro",
+    "città",
+    "caffè",
+    "gli"
+  ],
+  "probe": {
+    "words": [
+      "cosa",
+      "diviso",
+      "ecco",
+      "fa",
+      "gatto",
+      "gli",
+      "il",
+      "io",
+      "la",
+      "le",
+      "libro",
+      "loro",
+      "lui",
+      "meno",
+      "noi",
+      "oggetto",
+      "per",
+      "più",
+      "qui",
+      "tu",
+      "una",
+      "voi",
+      "è"
+    ],
+    "diacritics": "àèéìòù"
+  }
+}

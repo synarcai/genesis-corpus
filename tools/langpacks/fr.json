@@ -1,0 +1,478 @@
+{
+  "lang": "fr",
+  "script": "latin",
+  "script_range": "A-Za-zÀÂÇÉÈÊËÎÏÔÙÛÜŸàâçéèêëîïôùûüÿ",
+  "graphemes": "abcdefghijklmnopqrstuvwxyzàâçéèêëîïôùû",
+  "tier": 1,
+  "comment": "SIXTH PACK. French: six persons, silent endings that differ in writing where they merge in speech — a paradigm the written corpus can teach and the spoken cannot. TIER 1: structure green, forms not checked by a native.",
+  "lexeme_source": {
+    "law": "every morph class must carry >= LAW distinct lexemes; a class below its declared need is judged poor by the engine",
+    "need_per_class": 5
+  },
+  "numerals": {
+    "0": "zéro",
+    "1": "un",
+    "2": "deux",
+    "3": "trois",
+    "4": "quatre",
+    "5": "cinq",
+    "6": "six",
+    "7": "sept",
+    "8": "huit",
+    "9": "neuf",
+    "10": "dix",
+    "11": "onze",
+    "12": "douze",
+    "13": "treize",
+    "14": "quatorze",
+    "15": "quinze",
+    "16": "seize",
+    "17": "dix-sept",
+    "18": "dix-huit",
+    "19": "dix-neuf",
+    "20": "vingt",
+    "30": "trente",
+    "40": "quarante",
+    "50": "cinquante",
+    "60": "soixante",
+    "70": "soixante-dix",
+    "80": "quatre-vingts",
+    "90": "quatre-vingt-dix",
+    "99": "quatre-vingt-dix-neuf",
+    "100": "cent"
+  },
+  "count_agreement": [
+    {
+      "mod": 10,
+      "in": [
+        1
+      ],
+      "form": "one"
+    },
+    {
+      "form": "many"
+    }
+  ],
+  "morph_classes": {
+    "verb_pres": {
+      "forms": [
+        "s1",
+        "s2",
+        "s3",
+        "p1",
+        "p2",
+        "p3"
+      ],
+      "paradigm_cells": 6,
+      "need": 5,
+      "lexemes": {
+        "parler": [
+          "parle",
+          "parles",
+          "parle",
+          "parlons",
+          "parlez",
+          "parlent"
+        ],
+        "manger": [
+          "mange",
+          "manges",
+          "mange",
+          "mangeons",
+          "mangez",
+          "mangent"
+        ],
+        "finir": [
+          "finis",
+          "finis",
+          "finit",
+          "finissons",
+          "finissez",
+          "finissent"
+        ],
+        "vendre": [
+          "vends",
+          "vends",
+          "vend",
+          "vendons",
+          "vendez",
+          "vendent"
+        ],
+        "lire": [
+          "lis",
+          "lis",
+          "lit",
+          "lisons",
+          "lisez",
+          "lisent"
+        ],
+        "courir": [
+          "cours",
+          "cours",
+          "court",
+          "courons",
+          "courez",
+          "courent"
+        ],
+        "ouvrir": [
+          "ouvre",
+          "ouvres",
+          "ouvre",
+          "ouvrons",
+          "ouvrez",
+          "ouvrent"
+        ],
+        "chanter": [
+          "chante",
+          "chantes",
+          "chante",
+          "chantons",
+          "chantez",
+          "chantent"
+        ]
+      },
+      "rule": {
+        "classes": {
+          "er": {
+            "strip": "er",
+            "endings": [
+              "e",
+              "es",
+              "e",
+              "ons",
+              "ez",
+              "ent"
+            ]
+          },
+          "ir_iss": {
+            "strip": "ir",
+            "endings": [
+              "is",
+              "is",
+              "it",
+              "issons",
+              "issez",
+              "issent"
+            ]
+          },
+          "ir_bare": {
+            "strip": "ir",
+            "endings": [
+              "s",
+              "s",
+              "t",
+              "ons",
+              "ez",
+              "ent"
+            ]
+          },
+          "ir_er": {
+            "strip": "ir",
+            "endings": [
+              "e",
+              "es",
+              "e",
+              "ons",
+              "ez",
+              "ent"
+            ]
+          },
+          "re": {
+            "strip": "re",
+            "endings": [
+              "s",
+              "s",
+              "",
+              "ons",
+              "ez",
+              "ent"
+            ]
+          }
+        },
+        "of": {
+          "parler": "er",
+          "manger": "*",
+          "finir": "ir_iss",
+          "vendre": "re",
+          "lire": "*",
+          "courir": "ir_bare",
+          "ouvrir": "ir_er",
+          "chanter": "er"
+        }
+      }
+    },
+    "noun_count": {
+      "forms": [
+        "one",
+        "many"
+      ],
+      "paradigm_cells": 2,
+      "need": 5,
+      "lexemes": {
+        "livre": [
+          "le livre",
+          "les livres"
+        ],
+        "maison": [
+          "la maison",
+          "les maisons"
+        ],
+        "table": [
+          "la table",
+          "les tables"
+        ],
+        "voiture": [
+          "la voiture",
+          "les voitures"
+        ],
+        "fleur": [
+          "la fleur",
+          "les fleurs"
+        ],
+        "ville": [
+          "la ville",
+          "les villes"
+        ],
+        "papier": [
+          "le papier",
+          "les papiers"
+        ],
+        "chat": [
+          "le chat",
+          "les chats"
+        ],
+        "kilo": [
+          "le kilo",
+          "les kilos"
+        ],
+        "examen": [
+          "l examen",
+          "les examens"
+        ],
+        "taxi": [
+          "le taxi",
+          "les taxis"
+        ],
+        "wagon": [
+          "le wagon",
+          "les wagons"
+        ],
+        "zèbre": [
+          "le zèbre",
+          "les zèbres"
+        ],
+        "journal": [
+          "le journal",
+          "les journaux"
+        ],
+        "gâteau": [
+          "le gâteau",
+          "les gâteaux"
+        ],
+        "garçon": [
+          "le garçon",
+          "les garçons"
+        ],
+        "fenêtre": [
+          "la fenêtre",
+          "les fenêtres"
+        ],
+        "île": [
+          "l île",
+          "les îles"
+        ],
+        "maïs": [
+          "le maïs",
+          "les maïs"
+        ],
+        "hôtel": [
+          "l hôtel",
+          "les hôtels"
+        ],
+        "stylo": [
+          "le stylo",
+          "les stylos"
+        ],
+        "coût": [
+          "le coût",
+          "les coûts"
+        ],
+        "noël": [
+          "le noël",
+          "les noëls"
+        ]
+      }
+    }
+  },
+  "show_kinds": {
+    "arithmetic": {
+      "lexicon": [
+        "plus",
+        "moins",
+        "fois",
+        "divisé",
+        "égale"
+      ],
+      "ops": {
+        "plus": "+",
+        "moins": "-",
+        "fois": "*",
+        "divisé": "/",
+        "égale": "="
+      },
+      "instances_per_pass": 14,
+      "templates": [
+        "{num:n} plus {num:m} égale {num:sum}.",
+        "{n} + {m} = {sum}.",
+        "{num:sum} moins {num:m} égale {num:n}.",
+        "{num:n} fois {num:m} égale {num:prod}.",
+        "{num:prod} divisé {num:m} égale {num:n}."
+      ]
+    },
+    "conjugation": {
+      "lexicon": [
+        "je",
+        "tu",
+        "il",
+        "nous",
+        "vous",
+        "ils"
+      ],
+      "instances_per_pass": 16,
+      "templates": [
+        "je {lex:verb_pres:s1}.",
+        "tu {lex:verb_pres:s2}.",
+        "il {lex:verb_pres:s3}.",
+        "nous {lex:verb_pres:p1}.",
+        "vous {lex:verb_pres:p2}.",
+        "ils {lex:verb_pres:p3}."
+      ]
+    },
+    "counting": {
+      "lexicon": [
+        "voici",
+        "voilà"
+      ],
+      "instances_per_pass": 46,
+      "templates": [
+        "voici {lex:noun_count:one}.",
+        "voici {lex:noun_count:many}.",
+        "voilà {lex:noun_count:many}."
+      ]
+    },
+    "definition": {
+      "lexicon": [
+        "chose",
+        "une",
+        "objet"
+      ],
+      "instances_per_pass": 46,
+      "templates": [
+        "{lex:noun_count:one} est une chose."
+      ]
+    },
+    "refusals": {
+      "refusal": true,
+      "marker": "¬ ",
+      "lexicon": [
+        "¬"
+      ],
+      "pairs": [
+        {
+          "bad": "la livre est petit.",
+          "good": "le livre est petit.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "les maison sont grandes.",
+          "good": "les maisons sont grandes.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "je parles.",
+          "good": "je danse.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "quelle est la couleur de sept ?",
+          "good": "où est le stylo ?",
+          "reason": "unanswerable"
+        },
+        {
+          "bad": "livre plus maison égale ?",
+          "good": "cent moins un égale quatre-vingt-dix-neuf.",
+          "reason": "type_mismatch"
+        }
+      ]
+    }
+  },
+  "core_pairing": [
+    {
+      "lang_word": "plus",
+      "core": "+",
+      "core_form": "+",
+      "lang_form": "plus"
+    },
+    {
+      "lang_word": "moins",
+      "core": "-",
+      "core_form": "-",
+      "lang_form": "moins"
+    },
+    {
+      "lang_word": "fois",
+      "core": "×",
+      "core_form": "×",
+      "lang_form": "fois"
+    },
+    {
+      "lang_word": "divisé",
+      "core": "÷",
+      "core_form": "÷",
+      "lang_form": "divisé"
+    },
+    {
+      "lang_word": "égale",
+      "core": "=",
+      "core_form": "=",
+      "lang_form": "égale"
+    }
+  ],
+  "cross_kind_share": 0.3,
+  "irregulars": [
+    "journaux",
+    "lis",
+    "vends",
+    "cours",
+    "est"
+  ],
+  "probe": {
+    "words": [
+      "chat",
+      "chose",
+      "divisé",
+      "est",
+      "et",
+      "fois",
+      "il",
+      "ils",
+      "je",
+      "la",
+      "le",
+      "les",
+      "livre",
+      "moins",
+      "nous",
+      "objet",
+      "où",
+      "plus",
+      "tu",
+      "une",
+      "voici",
+      "voilà",
+      "vous",
+      "égale"
+    ],
+    "diacritics": "àâçéèêëîïôùû"
+  }
+}

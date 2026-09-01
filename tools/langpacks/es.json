@@ -1,0 +1,504 @@
+{
+  "lang": "es",
+  "script": "latin",
+  "script_range": "A-Za-zÁÉÍÓÚÑÜáéíóúñü",
+  "graphemes": "abcdefghijklmnñopqrstuvwxyzáéíóúü",
+  "comment": "FIFTH PACK. Spanish is the second most spoken language and the first here whose ADJECTIVE agrees in both gender and number — four cells where German has case and English has nothing. The claim under test is the engine's own: a language costs ONE PACK and ZERO ENGINE EDITS. If this pack needed a branch in the engine, the claim was false and the engine, not the language, is at fault.",
+  "lexeme_source": {
+    "law": "every morph class must carry >= LAW distinct lexemes; a class below its declared need is judged poor by the engine",
+    "need_per_class": 5
+  },
+  "numerals": {
+    "0": "cero",
+    "1": "uno",
+    "2": "dos",
+    "3": "tres",
+    "4": "cuatro",
+    "5": "cinco",
+    "6": "seis",
+    "7": "siete",
+    "8": "ocho",
+    "9": "nueve",
+    "10": "diez",
+    "11": "once",
+    "12": "doce",
+    "13": "trece",
+    "14": "catorce",
+    "15": "quince",
+    "16": "dieciséis",
+    "17": "diecisiete",
+    "18": "dieciocho",
+    "19": "diecinueve",
+    "20": "veinte",
+    "21": "veintiuno",
+    "24": "veinticuatro",
+    "25": "veinticinco",
+    "30": "treinta",
+    "40": "cuarenta",
+    "50": "cincuenta",
+    "60": "sesenta",
+    "70": "setenta",
+    "80": "ochenta",
+    "90": "noventa",
+    "100": "cien"
+  },
+  "count_agreement": [
+    {
+      "mod": 10,
+      "in": [
+        1
+      ],
+      "form": "one"
+    },
+    {
+      "form": "many"
+    }
+  ],
+  "morph_classes": {
+    "verb_pres": {
+      "forms": [
+        "s1",
+        "s2",
+        "s3",
+        "p1",
+        "p2",
+        "p3"
+      ],
+      "paradigm_cells": 6,
+      "need": 5,
+      "lexemes": {
+        "hablar": [
+          "hablo",
+          "hablas",
+          "habla",
+          "hablamos",
+          "habláis",
+          "hablan"
+        ],
+        "comer": [
+          "como",
+          "comes",
+          "come",
+          "comemos",
+          "coméis",
+          "comen"
+        ],
+        "vivir": [
+          "vivo",
+          "vives",
+          "vive",
+          "vivimos",
+          "vivís",
+          "viven"
+        ],
+        "leer": [
+          "leo",
+          "lees",
+          "lee",
+          "leemos",
+          "leéis",
+          "leen"
+        ],
+        "correr": [
+          "corro",
+          "corres",
+          "corre",
+          "corremos",
+          "corréis",
+          "corren"
+        ],
+        "beber": [
+          "bebo",
+          "bebes",
+          "bebe",
+          "bebemos",
+          "bebéis",
+          "beben"
+        ],
+        "abrir": [
+          "abro",
+          "abres",
+          "abre",
+          "abrimos",
+          "abrís",
+          "abren"
+        ],
+        "vender": [
+          "vendo",
+          "vendes",
+          "vende",
+          "vendemos",
+          "vendéis",
+          "venden"
+        ]
+      },
+      "rule": {
+        "classes": {
+          "ar": {
+            "strip": "ar",
+            "endings": [
+              "o",
+              "as",
+              "a",
+              "amos",
+              "áis",
+              "an"
+            ]
+          },
+          "er": {
+            "strip": "er",
+            "endings": [
+              "o",
+              "es",
+              "e",
+              "emos",
+              "éis",
+              "en"
+            ]
+          },
+          "ir": {
+            "strip": "ir",
+            "endings": [
+              "o",
+              "es",
+              "e",
+              "imos",
+              "ís",
+              "en"
+            ]
+          }
+        },
+        "of": {
+          "hablar": "ar",
+          "comer": "er",
+          "vivir": "ir",
+          "leer": "er",
+          "correr": "er",
+          "beber": "er",
+          "abrir": "ir",
+          "vender": "er"
+        }
+      }
+    },
+    "noun_count": {
+      "forms": [
+        "one",
+        "many"
+      ],
+      "paradigm_cells": 2,
+      "need": 5,
+      "lexemes": {
+        "libro": [
+          "el libro",
+          "los libros"
+        ],
+        "casa": [
+          "la casa",
+          "las casas"
+        ],
+        "mesa": [
+          "la mesa",
+          "las mesas"
+        ],
+        "coche": [
+          "el coche",
+          "los coches"
+        ],
+        "flor": [
+          "la flor",
+          "las flores"
+        ],
+        "árbol": [
+          "el árbol",
+          "los árboles"
+        ],
+        "ciudad": [
+          "la ciudad",
+          "las ciudades"
+        ],
+        "papel": [
+          "el papel",
+          "los papeles"
+        ],
+        "gato": [
+          "el gato",
+          "los gatos"
+        ],
+        "kilo": [
+          "el kilo",
+          "los kilos"
+        ],
+        "kiwi": [
+          "el kiwi",
+          "los kiwis"
+        ],
+        "examen": [
+          "el examen",
+          "los exámenes"
+        ],
+        "canción": [
+          "la canción",
+          "las canciones"
+        ],
+        "pingüino": [
+          "el pingüino",
+          "los pingüinos"
+        ],
+        "taxi": [
+          "el taxi",
+          "los taxis"
+        ],
+        "avión": [
+          "el avión",
+          "los aviones"
+        ]
+      }
+    },
+    "adj_gender_number": {
+      "forms": [
+        "m_sg",
+        "f_sg",
+        "m_pl",
+        "f_pl"
+      ],
+      "paradigm_cells": 4,
+      "need": 5,
+      "lexemes": {
+        "alto": [
+          "alto",
+          "alta",
+          "altos",
+          "altas"
+        ],
+        "pequeño": [
+          "pequeño",
+          "pequeña",
+          "pequeños",
+          "pequeñas"
+        ],
+        "rojo": [
+          "rojo",
+          "roja",
+          "rojos",
+          "rojas"
+        ],
+        "nuevo": [
+          "nuevo",
+          "nueva",
+          "nuevos",
+          "nuevas"
+        ],
+        "viejo": [
+          "viejo",
+          "vieja",
+          "viejos",
+          "viejas"
+        ],
+        "blanco": [
+          "blanco",
+          "blanca",
+          "blancos",
+          "blancas"
+        ]
+      }
+    }
+  },
+  "show_kinds": {
+    "arithmetic": {
+      "lexicon": [
+        "más",
+        "menos",
+        "por",
+        "entre",
+        "es"
+      ],
+      "ops": {
+        "más": "+",
+        "menos": "-",
+        "por": "*",
+        "entre": "/",
+        "es": "="
+      },
+      "instances_per_pass": 14,
+      "templates": [
+        "{num:n} más {num:m} es {num:sum}.",
+        "{n} + {m} = {sum}.",
+        "{num:sum} menos {num:m} es {num:n}.",
+        "{num:n} por {num:m} es {num:prod}.",
+        "{num:prod} entre {num:m} es {num:n}."
+      ]
+    },
+    "conjugation": {
+      "lexicon": [
+        "yo",
+        "tú",
+        "él",
+        "nosotros",
+        "vosotros",
+        "ellos"
+      ],
+      "instances_per_pass": 12,
+      "templates": [
+        "yo {lex:verb_pres:s1}.",
+        "tú {lex:verb_pres:s2}.",
+        "él {lex:verb_pres:s3}.",
+        "nosotros {lex:verb_pres:p1}.",
+        "vosotros {lex:verb_pres:p2}.",
+        "ellos {lex:verb_pres:p3}."
+      ]
+    },
+    "counting": {
+      "lexicon": [
+        "hay",
+        "aquí",
+        "y"
+      ],
+      "instances_per_pass": 12,
+      "templates": [
+        "aquí está {lex:noun_count:one}.",
+        "aquí están {lex:noun_count:many}.",
+        "hay {lex:noun_count:many} aquí."
+      ]
+    },
+    "agreement": {
+      "lexicon": [
+        "muy",
+        "bastante",
+        "también"
+      ],
+      "instances_per_pass": 12,
+      "templates": [
+        "el libro es {lex:adj_gender_number:m_sg}.",
+        "la casa es {lex:adj_gender_number:f_sg}.",
+        "los libros son {lex:adj_gender_number:m_pl}.",
+        "las casas son {lex:adj_gender_number:f_pl}."
+      ]
+    },
+    "definition": {
+      "lexicon": [
+        "cosa",
+        "una",
+        "objeto"
+      ],
+      "instances_per_pass": 10,
+      "templates": [
+        "{lex:noun_count:one} es una cosa."
+      ]
+    },
+    "refusals": {
+      "refusal": true,
+      "marker": "¬ ",
+      "lexicon": [
+        "¬"
+      ],
+      "pairs": [
+        {
+          "bad": "la gato es grande.",
+          "good": "el gato es grande.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "los flor son bonitas.",
+          "good": "las flores son bonitas.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "yo cantas.",
+          "good": "yo canto.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "¿cuál es el color de siete?",
+          "good": "¿qué es un objeto?",
+          "reason": "unanswerable"
+        },
+        {
+          "bad": "libro más casa es ?",
+          "good": "cien menos uno es noventa y nueve.",
+          "reason": "type_mismatch"
+        }
+      ]
+    }
+  },
+  "core_pairing": [
+    {
+      "lang_word": "más",
+      "core": "+",
+      "core_form": "+",
+      "lang_form": "más"
+    },
+    {
+      "lang_word": "menos",
+      "core": "-",
+      "core_form": "-",
+      "lang_form": "menos"
+    },
+    {
+      "lang_word": "es",
+      "core": "=",
+      "core_form": "=",
+      "lang_form": "es"
+    },
+    {
+      "lang_word": "por",
+      "core": "×",
+      "core_form": "×",
+      "lang_form": "por"
+    },
+    {
+      "lang_word": "entre",
+      "core": "÷",
+      "core_form": "÷",
+      "lang_form": "entre"
+    }
+  ],
+  "cross_kind_share": 0.3,
+  "irregulars": [
+    "es",
+    "son",
+    "hay",
+    "árboles",
+    "ciudades",
+    "exámenes",
+    "canciones",
+    "aviones"
+  ],
+  "probe": {
+    "words": [
+      "aquí",
+      "avión",
+      "bastante",
+      "canción",
+      "cosa",
+      "el",
+      "ellos",
+      "entre",
+      "es",
+      "examen",
+      "gato",
+      "hay",
+      "kilo",
+      "la",
+      "las",
+      "los",
+      "menos",
+      "muy",
+      "más",
+      "nosotros",
+      "objeto",
+      "pingüino",
+      "por",
+      "qué",
+      "son",
+      "también",
+      "taxi",
+      "tú",
+      "una",
+      "vosotros",
+      "y",
+      "yo",
+      "él"
+    ],
+    "diacritics": "áéíóúñü"
+  }
+}

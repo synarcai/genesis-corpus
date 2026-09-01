@@ -1,0 +1,467 @@
+{
+  "lang": "pt",
+  "script": "latin",
+  "script_range": "A-Za-zÁÂÃÀÇÉÊÍÓÔÕÚáâãàçéêíóôõú",
+  "graphemes": "abcdefghijklmnopqrstuvwxyzáâãàçéêíóôõú",
+  "tier": 1,
+  "comment": "EIGHTH PACK. Portuguese: nasal vowels written with a tilde that no other pack carries, and a plural that changes the stem («papel → papéis»). TIER 1: structure green, forms not checked by a native.",
+  "lexeme_source": {
+    "law": "every morph class must carry >= LAW distinct lexemes; a class below its declared need is judged poor by the engine",
+    "need_per_class": 5
+  },
+  "numerals": {
+    "0": "zero",
+    "1": "um",
+    "2": "dois",
+    "3": "três",
+    "4": "quatro",
+    "5": "cinco",
+    "6": "seis",
+    "7": "sete",
+    "8": "oito",
+    "9": "nove",
+    "10": "dez",
+    "11": "onze",
+    "12": "doze",
+    "13": "treze",
+    "14": "catorze",
+    "15": "quinze",
+    "16": "dezesseis",
+    "17": "dezessete",
+    "18": "dezoito",
+    "19": "dezenove",
+    "20": "vinte",
+    "30": "trinta",
+    "40": "quarenta",
+    "50": "cinquenta",
+    "60": "sessenta",
+    "100": "cem"
+  },
+  "count_agreement": [
+    {
+      "mod": 10,
+      "in": [
+        1
+      ],
+      "form": "one"
+    },
+    {
+      "form": "many"
+    }
+  ],
+  "morph_classes": {
+    "verb_pres": {
+      "forms": [
+        "s1",
+        "s2",
+        "s3",
+        "p1",
+        "p2",
+        "p3"
+      ],
+      "paradigm_cells": 6,
+      "need": 5,
+      "lexemes": {
+        "falar": [
+          "falo",
+          "falas",
+          "fala",
+          "falamos",
+          "falais",
+          "falam"
+        ],
+        "comer": [
+          "como",
+          "comes",
+          "come",
+          "comemos",
+          "comeis",
+          "comem"
+        ],
+        "vender": [
+          "vendo",
+          "vendes",
+          "vende",
+          "vendemos",
+          "vendeis",
+          "vendem"
+        ],
+        "abrir": [
+          "abro",
+          "abres",
+          "abre",
+          "abrimos",
+          "abris",
+          "abrem"
+        ],
+        "correr": [
+          "corro",
+          "corres",
+          "corre",
+          "corremos",
+          "correis",
+          "correm"
+        ],
+        "beber": [
+          "bebo",
+          "bebes",
+          "bebe",
+          "bebemos",
+          "bebeis",
+          "bebem"
+        ],
+        "cantar": [
+          "canto",
+          "cantas",
+          "canta",
+          "cantamos",
+          "cantais",
+          "cantam"
+        ],
+        "viver": [
+          "vivo",
+          "vives",
+          "vive",
+          "vivemos",
+          "viveis",
+          "vivem"
+        ]
+      },
+      "rule": {
+        "classes": {
+          "ar": {
+            "strip": "ar",
+            "endings": [
+              "o",
+              "as",
+              "a",
+              "amos",
+              "ais",
+              "am"
+            ]
+          },
+          "er": {
+            "strip": "er",
+            "endings": [
+              "o",
+              "es",
+              "e",
+              "emos",
+              "eis",
+              "em"
+            ]
+          },
+          "ir": {
+            "strip": "ir",
+            "endings": [
+              "o",
+              "es",
+              "e",
+              "imos",
+              "is",
+              "em"
+            ]
+          }
+        },
+        "of": {
+          "falar": "ar",
+          "comer": "er",
+          "vender": "er",
+          "abrir": "ir",
+          "correr": "er",
+          "beber": "er",
+          "cantar": "ar",
+          "viver": "er"
+        }
+      }
+    },
+    "noun_count": {
+      "forms": [
+        "one",
+        "many"
+      ],
+      "paradigm_cells": 2,
+      "need": 5,
+      "lexemes": {
+        "livro": [
+          "o livro",
+          "os livros"
+        ],
+        "casa": [
+          "a casa",
+          "as casas"
+        ],
+        "mesa": [
+          "a mesa",
+          "as mesas"
+        ],
+        "carro": [
+          "o carro",
+          "os carros"
+        ],
+        "flor": [
+          "a flor",
+          "as flores"
+        ],
+        "cidade": [
+          "a cidade",
+          "as cidades"
+        ],
+        "papel": [
+          "o papel",
+          "os papéis"
+        ],
+        "gato": [
+          "o gato",
+          "os gatos"
+        ],
+        "quilo": [
+          "o quilo",
+          "os quilos"
+        ],
+        "exame": [
+          "o exame",
+          "os exames"
+        ],
+        "táxi": [
+          "o táxi",
+          "os táxis"
+        ],
+        "avião": [
+          "o avião",
+          "os aviões"
+        ],
+        "canção": [
+          "a canção",
+          "as canções"
+        ],
+        "jornal": [
+          "o jornal",
+          "os jornais"
+        ],
+        "irmã": [
+          "a irmã",
+          "as irmãs"
+        ],
+        "coração": [
+          "o coração",
+          "os corações"
+        ],
+        "avô": [
+          "o avô",
+          "os avôs"
+        ],
+        "ônibus": [
+          "o ônibus",
+          "os ônibus"
+        ],
+        "kiwi": [
+          "o kiwi",
+          "os kiwis"
+        ],
+        "yoga": [
+          "o yoga",
+          "os yogas"
+        ],
+        "jipe": [
+          "o jipe",
+          "os jipes"
+        ],
+        "web": [
+          "a web",
+          "as webs"
+        ],
+        "xale": [
+          "o xale",
+          "os xales"
+        ],
+        "âmbar": [
+          "o âmbar",
+          "os âmbares"
+        ],
+        "índio": [
+          "o índio",
+          "os índios"
+        ],
+        "público": [
+          "o público",
+          "os públicos"
+        ],
+        "àquela": [
+          "o àquela",
+          "os àquelas"
+        ]
+      }
+    }
+  },
+  "show_kinds": {
+    "arithmetic": {
+      "lexicon": [
+        "mais",
+        "menos",
+        "vezes",
+        "dividido",
+        "é"
+      ],
+      "ops": {
+        "mais": "+",
+        "menos": "-",
+        "vezes": "*",
+        "dividido": "/",
+        "é": "="
+      },
+      "instances_per_pass": 14,
+      "templates": [
+        "{num:n} mais {num:m} é {num:sum}.",
+        "{n} + {m} = {sum}.",
+        "{num:sum} menos {num:m} é {num:n}.",
+        "{num:n} vezes {num:m} é {num:prod}.",
+        "{num:prod} dividido {num:m} é {num:n}."
+      ]
+    },
+    "conjugation": {
+      "lexicon": [
+        "eu",
+        "tu",
+        "ele",
+        "nós",
+        "vós",
+        "eles"
+      ],
+      "instances_per_pass": 16,
+      "templates": [
+        "eu {lex:verb_pres:s1}.",
+        "tu {lex:verb_pres:s2}.",
+        "ele {lex:verb_pres:s3}.",
+        "nós {lex:verb_pres:p1}.",
+        "vós {lex:verb_pres:p2}.",
+        "eles {lex:verb_pres:p3}."
+      ]
+    },
+    "counting": {
+      "lexicon": [
+        "aqui",
+        "há"
+      ],
+      "instances_per_pass": 54,
+      "templates": [
+        "aqui está {lex:noun_count:one}.",
+        "aqui estão {lex:noun_count:many}.",
+        "há {lex:noun_count:many} aqui."
+      ]
+    },
+    "definition": {
+      "lexicon": [
+        "coisa",
+        "uma",
+        "objeto"
+      ],
+      "instances_per_pass": 54,
+      "templates": [
+        "{lex:noun_count:one} é uma coisa."
+      ]
+    },
+    "refusals": {
+      "refusal": true,
+      "marker": "¬ ",
+      "lexicon": [
+        "¬"
+      ],
+      "pairs": [
+        {
+          "bad": "a livro é pequeno.",
+          "good": "o livro é pequeno.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "os casa são grandes.",
+          "good": "as casas são grandes.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "eu falas.",
+          "good": "eu escrevo.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "qual é a cor de sete ?",
+          "good": "o que é um objeto ?",
+          "reason": "unanswerable"
+        },
+        {
+          "bad": "livro mais casa é ?",
+          "good": "cem menos um é noventa e nove.",
+          "reason": "type_mismatch"
+        }
+      ]
+    }
+  },
+  "core_pairing": [
+    {
+      "lang_word": "mais",
+      "core": "+",
+      "core_form": "+",
+      "lang_form": "mais"
+    },
+    {
+      "lang_word": "menos",
+      "core": "-",
+      "core_form": "-",
+      "lang_form": "menos"
+    },
+    {
+      "lang_word": "vezes",
+      "core": "×",
+      "core_form": "×",
+      "lang_form": "vezes"
+    },
+    {
+      "lang_word": "dividido",
+      "core": "÷",
+      "core_form": "÷",
+      "lang_form": "dividido"
+    },
+    {
+      "lang_word": "é",
+      "core": "=",
+      "core_form": "=",
+      "lang_form": "é"
+    }
+  ],
+  "cross_kind_share": 0.3,
+  "irregulars": [
+    "papéis",
+    "aviões",
+    "corações",
+    "jornais",
+    "há"
+  ],
+  "probe": {
+    "words": [
+      "a",
+      "aqui",
+      "as",
+      "coisa",
+      "dividido",
+      "ele",
+      "eles",
+      "está",
+      "eu",
+      "gato",
+      "há",
+      "livro",
+      "mais",
+      "menos",
+      "nós",
+      "o",
+      "objeto",
+      "os",
+      "tu",
+      "uma",
+      "vezes",
+      "vós",
+      "é"
+    ],
+    "diacritics": "áâãàçéêíóôõú"
+  }
+}
