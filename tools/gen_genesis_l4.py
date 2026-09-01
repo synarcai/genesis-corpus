@@ -88,6 +88,13 @@ def en_lines(rng):
     return out
 
 
+# ЦЕЛЬ ОБЪЯВЛЕНА ИМЕНЕМ МОДУЛЯ, А НЕ ПЕРЕМЕННОЙ ВНУТРИ ТЕЛА. Прибор
+# воспроизводимости читает цель генератора объявлением; путь, живший
+#лишь в теле функции, делал этот слой НЕВИДИМЫМ для меры — и он был
+# невидим всё время её существования.
+ЦЕЛЬ = "datasets/genesis_l4.txt"
+
+
 def main():
     rng = random.Random(41)
     ru = ru_lines(rng)
@@ -104,7 +111,7 @@ def main():
         r.shuffle(b)
         blocks.append("\n".join(b))
     text = "\n\f\n".join(blocks) + "\n"
-    path = "datasets/genesis_l4.txt"
+    path = ЦЕЛЬ
     with open(path, "w", encoding="utf-8") as f:
         f.write(text)
     print(f"L4: RU={len(ru)} EN={len(en)} строк-базы, файл={path}, байт={len(text.encode('utf-8'))}")
