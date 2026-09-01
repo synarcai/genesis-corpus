@@ -22,7 +22,8 @@ COURTS=("courts/arith_court.py" "courts/algo_court.py"
         "courts/episode_court.py" "courts/copula_court.py"
         "courts/markup_court.py" "courts/langlayer_court.py"
         "tools/gsm_census.py --court"
-        "scripts/reproducible.py" "scripts/bash32_court.py")
+        "scripts/reproducible.py" "scripts/bash32_court.py"
+        "scripts/coverage.py")
 FELL=0
 for entry in "${COURTS[@]}"; do
   set -- $entry; tool="$1"; shift
