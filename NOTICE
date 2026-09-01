@@ -1,0 +1,31 @@
+GENESIS corpus
+Copyright (c) 2026 the SynarcAI authors
+
+This product includes software developed as part of the SynarcAI
+architecture. Licensed under the Apache License, Version 2.0 (see
+LICENSE). The corpus data is licensed under CC BY 4.0 (see
+LICENSE-DATA).
+
+DERIVED VOCABULARY — ATTRIBUTION
+
+`tools/gsm_items.py` (the item lexicon) and the verb catalogue in
+`tools/gen_genesis_verbs.py` are DERIVED by census from the grade-school
+word problem suites in the architecture repository, which are themselves
+adapted from GSM8K:
+
+    GSM8K — Training Verifiers to Solve Math Word Problems
+    Cobbe et al., OpenAI, 2021. MIT License.
+    https://github.com/openai/grade-school-math
+
+What is derived is a vocabulary — single words that pass two
+independent witnesses — and not any problem text. The corpus is checked
+against verbatim reuse by `bench/adapters/leak_court.py` in the
+architecture repository, whose frontier is zero and which reports 0
+leaked cases of 468.
+
+WHAT THE PROSE WORLDS ARE
+
+The manifest declares seven PROSE worlds (msfs, uhm, mf, diakrisis,
+verum) that are NOT contained in this repository: they are built by the
+architecture repository's own pipeline and are resolved through the
+declared `external_root`. Their licensing follows that repository.

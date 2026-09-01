@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+# СУДЫ КОРПУСА — все приборы разом, одним вердиктом.
+#
+# Всякий суд обязан быть НУЛЁМ: корпус, растящий исследователя, не
+# вправе нести ни одного проверяемого утверждения, которое не сходится.
+# Осанка та же, что в парке архитектуры: 0 чисто, 1 есть находка,
+# 2 отказ судить.
+#
+# ИМЕНА ПЕРЕМЕННЫХ ЛАТИНИЦЕЙ: bash 3.2 (тот, что несёт macOS)
+# кириллических идентификаторов не берёт вовсе — синтаксическая ошибка,
+# а не предупреждение. Этот самый файл был написан с «СУДЫ=(...)» и
+# упал, потому что страж, ловящий такое, оставался в другом репозитории;
+# теперь он здесь.
+set -u
+cd "$(dirname "$0")/.."
+COURTS=("courts/arith_court.py" "courts/algo_court.py"
+        "courts/formula_court.py" "courts/logic_court.py"
+        "courts/physics_court.py" "courts/cyber_court.py"
+        "courts/agreement_court.py" "tools/gsm_census.py --court"
+        "scripts/reproducible.py" "scripts/bash32_court.py")
+FELL=0
+for entry in "${COURTS[@]}"; do
+  set -- $entry; tool="$1"; shift
+  out=$(python3 "$tool" "$@" 2>&1); rc=$?
+  last=$(printf '%s\n' "$out" | tail -1)
+  if [ "$rc" = 0 ]; then
+    printf 'СУД ЦЕЛ   %-26s %s\n' "$(basename "$tool")" "$last"
+  else
+    FELL=$((FELL+1))
+    printf 'СУД ПАЛ   %-26s (rc=%s)\n' "$(basename "$tool")" "$rc"
+    printf '%s\n' "$out" | tail -6 | sed 's/^/    /'
+  fi
+done
+echo "---"
+if [ "$FELL" = 0 ]; then
+  echo "СУДЫ КОРПУСА: все ${#COURTS[@]} целы"
+else
+  echo "СУДЫ КОРПУСА: ПАЛО $FELL из ${#COURTS[@]}"
+fi
+exit $((FELL > 0))

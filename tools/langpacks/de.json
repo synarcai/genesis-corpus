@@ -1,0 +1,868 @@
+{
+  "lang": "de",
+  "script": "latin",
+  "comment": "SECOND PACK, AND THE PROOF OF THE ENGINE'S CLAIM: German cost one file and zero engine edits. Its agreement rule is TWO lines where Russian needs four, and the engine reads both from data. German carries the case ON THE ARTICLE, so a paradigm cell here is «der Tisch / des Tisches / dem Tisch / den Tisch» — the article is part of the form, not a word beside it.",
+  "lexeme_source": {
+    "law": "every morph class must carry >= LAW distinct lexemes; a class below its declared need is judged poor by the engine",
+    "need_per_class": 5
+  },
+  "numerals": {
+    "0": "null",
+    "1": "eins",
+    "2": "zwei",
+    "3": "drei",
+    "4": "vier",
+    "5": "fünf",
+    "6": "sechs",
+    "7": "sieben",
+    "8": "acht",
+    "9": "neun",
+    "10": "zehn",
+    "11": "elf",
+    "12": "zwölf",
+    "13": "dreizehn",
+    "14": "vierzehn",
+    "15": "fünfzehn",
+    "16": "sechzehn",
+    "17": "siebzehn",
+    "18": "achtzehn",
+    "19": "neunzehn",
+    "20": "zwanzig",
+    "21": "einundzwanzig",
+    "24": "vierundzwanzig",
+    "25": "fünfundzwanzig",
+    "27": "siebenundzwanzig",
+    "28": "achtundzwanzig",
+    "30": "dreißig",
+    "32": "zweiunddreißig",
+    "35": "fünfunddreißig",
+    "36": "sechsunddreißig",
+    "40": "vierzig",
+    "45": "fünfundvierzig",
+    "50": "fünfzig",
+    "60": "sechzig",
+    "70": "siebzig",
+    "80": "achtzig",
+    "90": "neunzig",
+    "100": "hundert"
+  },
+  "count_agreement": [
+    {
+      "in": [
+        1
+      ],
+      "form": "one"
+    },
+    {
+      "form": "many"
+    }
+  ],
+  "morph_classes": {
+    "noun_masc_case": {
+      "forms": [
+        "nom",
+        "gen",
+        "dat",
+        "acc"
+      ],
+      "paradigm_cells": 4,
+      "need": 5,
+      "lexemes": {
+        "tisch": [
+          "der tisch",
+          "des tisches",
+          "dem tisch",
+          "den tisch"
+        ],
+        "garten": [
+          "der garten",
+          "des gartens",
+          "dem garten",
+          "den garten"
+        ],
+        "wald": [
+          "der wald",
+          "des waldes",
+          "dem wald",
+          "den wald"
+        ],
+        "stuhl": [
+          "der stuhl",
+          "des stuhles",
+          "dem stuhl",
+          "den stuhl"
+        ],
+        "baum": [
+          "der baum",
+          "des baumes",
+          "dem baum",
+          "den baum"
+        ],
+        "berg": [
+          "der berg",
+          "des berges",
+          "dem berg",
+          "den berg"
+        ],
+        "weg": [
+          "der weg",
+          "des weges",
+          "dem weg",
+          "den weg"
+        ],
+        "hof": [
+          "der hof",
+          "des hofes",
+          "dem hof",
+          "den hof"
+        ]
+      }
+    },
+    "noun_neut_case": {
+      "forms": [
+        "nom",
+        "gen",
+        "dat",
+        "acc"
+      ],
+      "paradigm_cells": 4,
+      "need": 5,
+      "lexemes": {
+        "fenster": [
+          "das fenster",
+          "des fensters",
+          "dem fenster",
+          "das fenster"
+        ],
+        "haus": [
+          "das haus",
+          "des hauses",
+          "dem haus",
+          "das haus"
+        ],
+        "buch": [
+          "das buch",
+          "des buches",
+          "dem buch",
+          "das buch"
+        ],
+        "bild": [
+          "das bild",
+          "des bildes",
+          "dem bild",
+          "das bild"
+        ],
+        "feld": [
+          "das feld",
+          "des feldes",
+          "dem feld",
+          "das feld"
+        ],
+        "zimmer": [
+          "das zimmer",
+          "des zimmers",
+          "dem zimmer",
+          "das zimmer"
+        ],
+        "dorf": [
+          "das dorf",
+          "des dorfes",
+          "dem dorf",
+          "das dorf"
+        ],
+        "wort": [
+          "das wort",
+          "des wortes",
+          "dem wort",
+          "das wort"
+        ]
+      }
+    },
+    "noun_fem_case": {
+      "forms": [
+        "nom",
+        "gen",
+        "dat",
+        "acc"
+      ],
+      "paradigm_cells": 4,
+      "need": 5,
+      "lexemes": {
+        "karte": [
+          "die karte",
+          "der karte",
+          "der karte",
+          "die karte"
+        ],
+        "tür": [
+          "die tür",
+          "der tür",
+          "der tür",
+          "die tür"
+        ],
+        "blume": [
+          "die blume",
+          "der blume",
+          "der blume",
+          "die blume"
+        ],
+        "straße": [
+          "die straße",
+          "der straße",
+          "der straße",
+          "die straße"
+        ],
+        "lampe": [
+          "die lampe",
+          "der lampe",
+          "der lampe",
+          "die lampe"
+        ],
+        "stadt": [
+          "die stadt",
+          "der stadt",
+          "der stadt",
+          "die stadt"
+        ],
+        "frage": [
+          "die frage",
+          "der frage",
+          "der frage",
+          "die frage"
+        ],
+        "woche": [
+          "die woche",
+          "der woche",
+          "der woche",
+          "die woche"
+        ]
+      }
+    },
+    "verb_pres": {
+      "forms": [
+        "s1",
+        "s2",
+        "s3",
+        "p1",
+        "p2",
+        "p3"
+      ],
+      "paradigm_cells": 6,
+      "need": 5,
+      "lexemes": {
+        "lesen": [
+          "lese",
+          "liest",
+          "liest",
+          "lesen",
+          "lest",
+          "lesen"
+        ],
+        "schreiben": [
+          "schreibe",
+          "schreibst",
+          "schreibt",
+          "schreiben",
+          "schreibt",
+          "schreiben"
+        ],
+        "gehen": [
+          "gehe",
+          "gehst",
+          "geht",
+          "gehen",
+          "geht",
+          "gehen"
+        ],
+        "sehen": [
+          "sehe",
+          "siehst",
+          "sieht",
+          "sehen",
+          "seht",
+          "sehen"
+        ],
+        "wissen": [
+          "weiß",
+          "weißt",
+          "weiß",
+          "wissen",
+          "wisst",
+          "wissen"
+        ],
+        "kommen": [
+          "komme",
+          "kommst",
+          "kommt",
+          "kommen",
+          "kommt",
+          "kommen"
+        ],
+        "machen": [
+          "mache",
+          "machst",
+          "macht",
+          "machen",
+          "macht",
+          "machen"
+        ],
+        "trinken": [
+          "trinke",
+          "trinkst",
+          "trinkt",
+          "trinken",
+          "trinkt",
+          "trinken"
+        ]
+      }
+    },
+    "noun_count": {
+      "forms": [
+        "one",
+        "many"
+      ],
+      "paradigm_cells": 2,
+      "need": 5,
+      "plural_by_count": true,
+      "lexemes": {
+        "buch": [
+          "buch",
+          "bücher"
+        ],
+        "karte": [
+          "karte",
+          "karten"
+        ],
+        "tisch": [
+          "tisch",
+          "tische"
+        ],
+        "haus": [
+          "haus",
+          "häuser"
+        ],
+        "blume": [
+          "blume",
+          "blumen"
+        ],
+        "wort": [
+          "wort",
+          "wörter"
+        ],
+        "frage": [
+          "frage",
+          "fragen"
+        ],
+        "weg": [
+          "weg",
+          "wege"
+        ]
+      }
+    },
+    "noun_plural_case": {
+      "forms": [
+        "nom",
+        "gen",
+        "dat",
+        "acc"
+      ],
+      "paradigm_cells": 4,
+      "need": 5,
+      "lexemes": {
+        "bücher": [
+          "die bücher",
+          "der bücher",
+          "den büchern",
+          "die bücher"
+        ],
+        "häuser": [
+          "die häuser",
+          "der häuser",
+          "den häusern",
+          "die häuser"
+        ],
+        "tische": [
+          "die tische",
+          "der tische",
+          "den tischen",
+          "die tische"
+        ],
+        "karten": [
+          "die karten",
+          "der karten",
+          "den karten",
+          "die karten"
+        ],
+        "blumen": [
+          "die blumen",
+          "der blumen",
+          "den blumen",
+          "die blumen"
+        ]
+      }
+    }
+  },
+  "show_kinds": {
+    "arithmetic": {
+      "lexicon": [
+        "plus",
+        "minus",
+        "mal",
+        "durch",
+        "gleich"
+      ],
+      "ops": {
+        "plus": "+",
+        "minus": "-",
+        "mal": "*",
+        "durch": "/",
+        "gleich": "=",
+        "geteilt": "/"
+      },
+      "instances_per_pass": 14,
+      "templates": [
+        "{num:n} plus {num:m} gleich {num:sum}.",
+        "{n} + {m} = {sum}.",
+        "{num:sum} minus {num:m} gleich {num:n}.",
+        "{num:n} mal {num:m} gleich {num:prod}.",
+        "{num:prod} durch {num:m} gleich {num:n}."
+      ]
+    },
+    "case_frames": {
+      "lexicon": [
+        "hier",
+        "wegen",
+        "neben",
+        "sehe"
+      ],
+      "instances_per_pass": 6,
+      "templates": [
+        "hier steht {lex:noun_masc_case:nom}.",
+        "wegen {lex:noun_masc_case:gen} bleibt maria hier.",
+        "neben {lex:noun_masc_case:dat} steht ein stuhl.",
+        "ich sehe {lex:noun_masc_case:acc}.",
+        "hier steht {lex:noun_neut_case:nom}.",
+        "wegen {lex:noun_neut_case:gen} bleibt maria hier.",
+        "neben {lex:noun_neut_case:dat} steht ein stuhl.",
+        "ich sehe {lex:noun_neut_case:acc}.",
+        "hier steht {lex:noun_fem_case:nom}.",
+        "wegen {lex:noun_fem_case:gen} bleibt maria hier.",
+        "neben {lex:noun_fem_case:dat} steht ein stuhl.",
+        "ich sehe {lex:noun_fem_case:acc}.",
+        "hier stehen {lex:noun_plural_case:nom}.",
+        "wegen {lex:noun_plural_case:gen} bleibt maria hier.",
+        "neben {lex:noun_plural_case:dat} steht ein stuhl.",
+        "ich sehe {lex:noun_plural_case:acc}."
+      ]
+    },
+    "conjugation": {
+      "lexicon": [
+        "ich",
+        "du",
+        "er",
+        "wir",
+        "ihr",
+        "sie"
+      ],
+      "instances_per_pass": 6,
+      "templates": [
+        "ich {lex:verb_pres:s1}.",
+        "du {lex:verb_pres:s2}.",
+        "er {lex:verb_pres:s3}.",
+        "wir {lex:verb_pres:p1}.",
+        "ihr {lex:verb_pres:p2}.",
+        "sie {lex:verb_pres:p3}."
+      ]
+    },
+    "counting": {
+      "lexicon": [
+        "zähle",
+        "viele"
+      ],
+      "instances_per_pass": 6,
+      "templates": [
+        "ich zähle {n} {lex:noun_count:by_n}.",
+        "ich zähle {sum} {lex:noun_count:by_sum}."
+      ]
+    },
+    "definition": {
+      "lexicon": [
+        "ding",
+        "sache",
+        "quelle",
+        "text",
+        "system",
+        "typ",
+        "dinge"
+      ],
+      "instances_per_pass": 6,
+      "templates": [
+        "die quelle ist ein ding.",
+        "der text ist eine sache.",
+        "das system ist ein ding.",
+        "der typ ist eine sache.",
+        "das jahr ist eine sache.",
+        "{lex:noun_masc_case:nom} ist ein ding.",
+        "{lex:noun_neut_case:nom} ist ein ding.",
+        "{lex:noun_fem_case:nom} ist eine sache.",
+        "{lex:noun_plural_case:nom} sind dinge."
+      ]
+    },
+    "refusals": {
+      "refusal": true,
+      "marker": "¬ ",
+      "lexicon": [
+        "¬"
+      ],
+      "pairs": [
+        {
+          "bad": "zwei buch.",
+          "good": "zwei bücher.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "ich liest ein buch.",
+          "good": "ich lese ein buch.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "ich sehe der brief.",
+          "good": "ich sehe den brief.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "die farbe von sieben?",
+          "good": "was ist ein buch?",
+          "reason": "unanswerable"
+        },
+        {
+          "bad": "buch plus haus gleich?",
+          "good": "hundert minus zehn gleich neunzig.",
+          "reason": "type_mismatch"
+        }
+      ]
+    }
+  },
+  "core_pairing": [
+    {
+      "lang_word": "plus",
+      "core": "plus"
+    },
+    {
+      "lang_word": "minus",
+      "core": "minus"
+    },
+    {
+      "lang_word": "gleich",
+      "core": "=",
+      "core_form": "=",
+      "lang_form": "gleich"
+    },
+    {
+      "lang_word": "durch",
+      "core": "÷",
+      "core_form": "÷",
+      "lang_form": "durch"
+    },
+    {
+      "lang_word": "mal",
+      "core": "×",
+      "core_form": "×",
+      "lang_form": "mal"
+    }
+  ],
+  "graphemes": "abcdefghijklmnopqrstuvwxyzäöüß",
+  "cross_kind_share": 0.3,
+  "irregulars": [
+    "weiß",
+    "liest",
+    "siehst",
+    "bücher",
+    "häuser"
+  ],
+  "probe": {
+    "words": [
+      "der",
+      "das",
+      "den",
+      "dem",
+      "des",
+      "und",
+      "ich",
+      "du",
+      "sie",
+      "wir",
+      "ihr",
+      "ist",
+      "ein",
+      "eine",
+      "nicht",
+      "mit",
+      "hier",
+      "wegen",
+      "neben",
+      "steht",
+      "gleich"
+    ],
+    "diacritics": "äöüß"
+  },
+  "script_range": "A-Za-zÄÖÜäöüß",
+  "sign_names": {
+    "\\Delta": [
+      "grosses delta",
+      "delta"
+    ],
+    "\\Gamma": [
+      "grosses gamma",
+      "gamma"
+    ],
+    "\\Omega": [
+      "grosses omega",
+      "omega"
+    ],
+    "\\Phi": [
+      "grosses phi",
+      "phi"
+    ],
+    "\\Sigma": [
+      "grosses sigma",
+      "sigma"
+    ],
+    "\\alpha": [
+      "alpha"
+    ],
+    "\\approx": [
+      "ungefähr"
+    ],
+    "\\beta": [
+      "beta"
+    ],
+    "\\chi": [
+      "chi"
+    ],
+    "\\delta": [
+      "delta"
+    ],
+    "\\emptyset": [
+      "leere menge"
+    ],
+    "\\epsilon": [
+      "epsilon"
+    ],
+    "\\equiv": [
+      "identisch"
+    ],
+    "\\exists": [
+      "es gibt"
+    ],
+    "\\forall": [
+      "für alle"
+    ],
+    "\\gamma": [
+      "gamma"
+    ],
+    "\\geq": [
+      "grösser gleich"
+    ],
+    "\\infty": [
+      "unendlich"
+    ],
+    "\\int": [
+      "integral"
+    ],
+    "\\iota": [
+      "iota"
+    ],
+    "\\kappa": [
+      "kappa"
+    ],
+    "\\lambda": [
+      "lambda"
+    ],
+    "\\leftrightarrow": [
+      "doppelpfeil"
+    ],
+    "\\leq": [
+      "kleiner gleich"
+    ],
+    "\\mu": [
+      "my"
+    ],
+    "\\neq": [
+      "ungleich"
+    ],
+    "\\nu": [
+      "ny"
+    ],
+    "\\omega": [
+      "omega"
+    ],
+    "\\partial": [
+      "partiell"
+    ],
+    "\\phi": [
+      "phi"
+    ],
+    "\\pi": [
+      "pi"
+    ],
+    "\\prod": [
+      "produkt"
+    ],
+    "\\psi": [
+      "psi"
+    ],
+    "\\rho": [
+      "rho"
+    ],
+    "\\sigma": [
+      "sigma"
+    ],
+    "\\sqrt": [
+      "wurzel"
+    ],
+    "\\sum": [
+      "summe"
+    ],
+    "\\tau": [
+      "tau"
+    ],
+    "\\theta": [
+      "theta"
+    ],
+    "\\to": [
+      "pfeil"
+    ],
+    "\\xi": [
+      "xi"
+    ],
+    "Γ": [
+      "grosses gamma",
+      "gamma"
+    ],
+    "Δ": [
+      "grosses delta",
+      "delta"
+    ],
+    "Σ": [
+      "grosses sigma",
+      "sigma"
+    ],
+    "Φ": [
+      "grosses phi",
+      "phi"
+    ],
+    "Ω": [
+      "grosses omega",
+      "omega"
+    ],
+    "α": [
+      "alpha"
+    ],
+    "β": [
+      "beta"
+    ],
+    "γ": [
+      "gamma"
+    ],
+    "δ": [
+      "delta"
+    ],
+    "ε": [
+      "epsilon"
+    ],
+    "θ": [
+      "theta"
+    ],
+    "ι": [
+      "iota"
+    ],
+    "κ": [
+      "kappa"
+    ],
+    "λ": [
+      "lambda"
+    ],
+    "μ": [
+      "my"
+    ],
+    "ν": [
+      "ny"
+    ],
+    "ξ": [
+      "xi"
+    ],
+    "π": [
+      "pi"
+    ],
+    "ρ": [
+      "rho"
+    ],
+    "σ": [
+      "sigma"
+    ],
+    "τ": [
+      "tau"
+    ],
+    "φ": [
+      "phi"
+    ],
+    "χ": [
+      "chi"
+    ],
+    "ψ": [
+      "psi"
+    ],
+    "ω": [
+      "omega"
+    ],
+    "→": [
+      "pfeil"
+    ],
+    "↔": [
+      "doppelpfeil"
+    ],
+    "∀": [
+      "für alle"
+    ],
+    "∂": [
+      "partiell"
+    ],
+    "∃": [
+      "es gibt"
+    ],
+    "∅": [
+      "leere menge"
+    ],
+    "∏": [
+      "produkt"
+    ],
+    "∑": [
+      "summe"
+    ],
+    "√": [
+      "wurzel"
+    ],
+    "∞": [
+      "unendlich"
+    ],
+    "∫": [
+      "integral"
+    ],
+    "≈": [
+      "ungefähr"
+    ],
+    "≠": [
+      "ungleich"
+    ],
+    "≡": [
+      "identisch"
+    ],
+    "≤": [
+      "kleiner gleich"
+    ],
+    "≥": [
+      "grösser gleich"
+    ]
+  }
+}

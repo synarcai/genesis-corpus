@@ -1,0 +1,961 @@
+{
+  "lang": "en",
+  "script": "latin",
+  "comment": "THIRD PACK. English lived in GENESIS without one: its morphology was scattered across six generators and its identity in the census was the SCRIPT DEFAULT — the only language claimed by omission. Its paradigms are thin where English is actually hard: the -s of the third person (keep/keeps) and the plurals that obey nothing (child/children, foot/feet). Both are declared here, in the one place a language is supposed to live.",
+  "lexeme_source": {
+    "law": "every morph class must carry >= LAW distinct lexemes; a class below its declared need is judged poor by the engine",
+    "need_per_class": 5
+  },
+  "numerals": {
+    "0": "zero",
+    "1": "one",
+    "2": "two",
+    "3": "three",
+    "4": "four",
+    "5": "five",
+    "6": "six",
+    "7": "seven",
+    "8": "eight",
+    "9": "nine",
+    "10": "ten",
+    "11": "eleven",
+    "12": "twelve",
+    "13": "thirteen",
+    "14": "fourteen",
+    "15": "fifteen",
+    "16": "sixteen",
+    "17": "seventeen",
+    "18": "eighteen",
+    "19": "nineteen",
+    "20": "twenty",
+    "21": "twenty one",
+    "24": "twenty four",
+    "25": "twenty five",
+    "27": "twenty seven",
+    "28": "twenty eight",
+    "30": "thirty",
+    "32": "thirty two",
+    "35": "thirty five",
+    "36": "thirty six",
+    "40": "forty",
+    "45": "forty five",
+    "50": "fifty",
+    "60": "sixty",
+    "70": "seventy",
+    "80": "eighty",
+    "90": "ninety",
+    "100": "hundred"
+  },
+  "count_agreement": [
+    {
+      "in": [
+        1
+      ],
+      "form": "one"
+    },
+    {
+      "form": "many"
+    }
+  ],
+  "morph_classes": {
+    "noun_count": {
+      "forms": [
+        "one",
+        "many"
+      ],
+      "paradigm_cells": 2,
+      "need": 5,
+      "plural_by_count": true,
+      "lexemes": {
+        "book": [
+          "book",
+          "books"
+        ],
+        "card": [
+          "card",
+          "cards"
+        ],
+        "page": [
+          "page",
+          "pages"
+        ],
+        "egg": [
+          "egg",
+          "eggs"
+        ],
+        "mile": [
+          "mile",
+          "miles"
+        ]
+      }
+    },
+    "noun_irreg": {
+      "forms": [
+        "one",
+        "many"
+      ],
+      "paradigm_cells": 2,
+      "need": 5,
+      "plural_by_count": true,
+      "lexemes": {
+        "child": [
+          "child",
+          "children"
+        ],
+        "foot": [
+          "foot",
+          "feet"
+        ],
+        "person": [
+          "person",
+          "people"
+        ],
+        "mouse": [
+          "mouse",
+          "mice"
+        ],
+        "leaf": [
+          "leaf",
+          "leaves"
+        ]
+      }
+    },
+    "verb_pres": {
+      "forms": [
+        "s1",
+        "s2",
+        "s3",
+        "p1",
+        "p2",
+        "p3"
+      ],
+      "paradigm_cells": 6,
+      "need": 5,
+      "lexemes": {
+        "keep": [
+          "keep",
+          "keep",
+          "keeps",
+          "keep",
+          "keep",
+          "keep"
+        ],
+        "hold": [
+          "hold",
+          "hold",
+          "holds",
+          "hold",
+          "hold",
+          "hold"
+        ],
+        "own": [
+          "own",
+          "own",
+          "owns",
+          "own",
+          "own",
+          "own"
+        ],
+        "have": [
+          "have",
+          "have",
+          "has",
+          "have",
+          "have",
+          "have"
+        ],
+        "go": [
+          "go",
+          "go",
+          "goes",
+          "go",
+          "go",
+          "go"
+        ]
+      }
+    },
+    "verb_past": {
+      "forms": [
+        "base",
+        "past",
+        "done"
+      ],
+      "paradigm_cells": 3,
+      "need": 5,
+      "lexemes": {
+        "go": [
+          "go",
+          "went",
+          "gone"
+        ],
+        "see": [
+          "see",
+          "saw",
+          "seen"
+        ],
+        "write": [
+          "write",
+          "wrote",
+          "written"
+        ],
+        "take": [
+          "take",
+          "took",
+          "taken"
+        ],
+        "eat": [
+          "eat",
+          "ate",
+          "eaten"
+        ]
+      }
+    }
+  },
+  "show_kinds": {
+    "arithmetic": {
+      "lexicon": [
+        "plus",
+        "minus",
+        "times",
+        "over",
+        "equals"
+      ],
+      "ops": {
+        "plus": "+",
+        "minus": "-",
+        "times": "*",
+        "over": "/",
+        "equals": "=",
+        "divided": "/",
+        "multiplied": "*"
+      },
+      "numeral_compose": "additive",
+      "instances_per_pass": 8,
+      "templates": [
+        "{num:n} plus {num:m} equals {num:sum}.",
+        "{n} + {m} = {sum}.",
+        "{num:sum} minus {num:m} equals {num:n}.",
+        "{num:n} times {num:m} equals {num:prod}.",
+        "{num:prod} over {num:m} equals {num:n}."
+      ]
+    },
+    "counting": {
+      "lexicon": [
+        "count",
+        "counts"
+      ],
+      "instances_per_pass": 6,
+      "templates": [
+        "i count {n} {lex:noun_count:by_n}.",
+        "i count {sum} {lex:noun_count:by_sum}.",
+        "i count {n} {lex:noun_irreg:by_n}.",
+        "i count {sum} {lex:noun_irreg:by_sum}."
+      ]
+    },
+    "conjugation": {
+      "lexicon": [
+        "you",
+        "she",
+        "we",
+        "they"
+      ],
+      "instances_per_pass": 6,
+      "templates": [
+        "you {lex:verb_pres:s2} it.",
+        "she {lex:verb_pres:s3} it.",
+        "we {lex:verb_pres:p1} it.",
+        "they {lex:verb_pres:p3} it."
+      ]
+    },
+    "tense": {
+      "lexicon": [
+        "yesterday",
+        "today",
+        "already"
+      ],
+      "instances_per_pass": 6,
+      "templates": [
+        "today they {lex:verb_past:base}.",
+        "yesterday she {lex:verb_past:past}.",
+        "she has already {lex:verb_past:done}."
+      ]
+    },
+    "definition": {
+      "lexicon": [
+        "thing",
+        "quiz",
+        "box",
+        "yard",
+        "zebra",
+        "jar"
+      ],
+      "instances_per_pass": 4,
+      "templates": [
+        "the quiz is a thing.",
+        "the box is a thing.",
+        "the yard is a thing.",
+        "the zebra is a thing.",
+        "the jar is a thing.",
+        "a {lex:noun_count:one} is a thing.",
+        "a {lex:noun_irreg:one} is a thing."
+      ]
+    },
+    "refusals": {
+      "refusal": true,
+      "marker": "¬ ",
+      "lexicon": [
+        "¬"
+      ],
+      "pairs": [
+        {
+          "bad": "two book.",
+          "good": "two books.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "three childs.",
+          "good": "three children.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "she keep it now.",
+          "good": "she keeps it now.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "the colour of seven?",
+          "good": "what is a leaf?",
+          "reason": "unanswerable"
+        },
+        {
+          "bad": "a book plus a jar equals?",
+          "good": "seven minus two equals five.",
+          "reason": "type_mismatch"
+        }
+      ]
+    }
+  },
+  "core_pairing": [
+    {
+      "lang_word": "plus",
+      "core": "plus"
+    },
+    {
+      "lang_word": "minus",
+      "core": "minus"
+    },
+    {
+      "lang_word": "equals",
+      "core": "=",
+      "core_form": "=",
+      "lang_form": "equals"
+    },
+    {
+      "lang_word": "over",
+      "core": "÷",
+      "core_form": "÷",
+      "lang_form": "over"
+    },
+    {
+      "lang_word": "times",
+      "core": "×",
+      "core_form": "×",
+      "lang_form": "times"
+    }
+  ],
+  "graphemes": "abcdefghijklmnopqrstuvwxyz",
+  "cross_kind_share": 0.3,
+  "irregulars": [
+    "children",
+    "feet",
+    "people",
+    "went",
+    "gone"
+  ],
+  "probe": {
+    "words": [
+      "the",
+      "and",
+      "is",
+      "are",
+      "has",
+      "have",
+      "how",
+      "many",
+      "does",
+      "she",
+      "they",
+      "yesterday",
+      "already",
+      "count"
+    ],
+    "diacritics": ""
+  },
+  "reserved": [
+    "10 + 7 =",
+    "12 + 5 =",
+    "2 + 2 × 2 =",
+    "2 + 3 =",
+    "4 + 4 =",
+    "7 + 1 =",
+    "9 + 4 =",
+    "eleven minus eight equals",
+    "five plus four equals",
+    "fourteen divided by two equals",
+    "nine minus three equals",
+    "seven minus four equals",
+    "seven plus two equals",
+    "seven quazi nine equals",
+    "seventeen minus nine equals",
+    "thirteen minus five equals",
+    "three plus six equals",
+    "twelve minus seven equals",
+    "two plus three equals",
+    "what is oxygen?"
+  ],
+  "script_range": "A-Za-z",
+  "script_default": true,
+  "noun_forms": {
+    "acre": "acres",
+    "app": "apps",
+    "apple": "apples",
+    "ball": "balls",
+    "balloon": "balloons",
+    "banana": "bananas",
+    "bandage": "bandages",
+    "batch": "batches",
+    "bit": "bits",
+    "bolt": "bolts",
+    "book": "books",
+    "box": "boxes",
+    "calorie": "calories",
+    "candy": "candies",
+    "car": "cars",
+    "card": "cards",
+    "centimeter": "centimeters",
+    "child": "children",
+    "chimichanga": "chimichangas",
+    "coin": "coins",
+    "cookie": "cookies",
+    "crate": "crates",
+    "cup": "cups",
+    "cupcake": "cupcakes",
+    "day": "days",
+    "degree": "degrees",
+    "disturbance": "disturbances",
+    "dollar": "dollars",
+    "egg": "eggs",
+    "fish": "fish",
+    "flower": "flowers",
+    "foot": "feet",
+    "friend": "friends",
+    "gallon": "gallons",
+    "gun": "guns",
+    "hour": "hours",
+    "inch": "inches",
+    "item": "items",
+    "kid": "kids",
+    "kilogram": "kilograms",
+    "kilometer": "kilometers",
+    "leaf": "leaves",
+    "lollipop": "lollipops",
+    "marble": "marbles",
+    "meal": "meals",
+    "mile": "miles",
+    "minute": "minutes",
+    "month": "months",
+    "mouse": "mice",
+    "newspaper": "newspapers",
+    "nut": "nuts",
+    "ounce": "ounces",
+    "pack": "packs",
+    "page": "pages",
+    "painting": "paintings",
+    "pair": "pairs",
+    "pen": "pens",
+    "pencil": "pencils",
+    "person": "people",
+    "piece": "pieces",
+    "point": "points",
+    "pound": "pounds",
+    "puppy": "puppies",
+    "report": "reports",
+    "rose": "roses",
+    "sandwich": "sandwiches",
+    "second": "seconds",
+    "seed": "seeds",
+    "shell": "shells",
+    "signature": "signatures",
+    "slice": "slices",
+    "stamp": "stamps",
+    "state": "states",
+    "step": "steps",
+    "sticker": "stickers",
+    "student": "students",
+    "tablespoon": "tablespoons",
+    "teacher": "teachers",
+    "toy": "toys",
+    "transition": "transitions",
+    "vlog": "vlogs",
+    "week": "weeks",
+    "yard": "yards",
+    "year": "years"
+  },
+  "function_words": [
+    "a",
+    "about",
+    "after",
+    "all",
+    "also",
+    "am",
+    "an",
+    "and",
+    "another",
+    "any",
+    "are",
+    "as",
+    "at",
+    "be",
+    "because",
+    "been",
+    "before",
+    "being",
+    "between",
+    "both",
+    "but",
+    "by",
+    "can",
+    "could",
+    "d",
+    "did",
+    "do",
+    "does",
+    "doing",
+    "done",
+    "each",
+    "every",
+    "few",
+    "for",
+    "from",
+    "had",
+    "has",
+    "have",
+    "having",
+    "he",
+    "her",
+    "here",
+    "hers",
+    "him",
+    "his",
+    "how",
+    "i",
+    "if",
+    "in",
+    "into",
+    "is",
+    "it",
+    "its",
+    "just",
+    "least",
+    "left",
+    "less",
+    "ll",
+    "m",
+    "many",
+    "may",
+    "me",
+    "might",
+    "mine",
+    "more",
+    "most",
+    "much",
+    "must",
+    "my",
+    "no",
+    "not",
+    "of",
+    "off",
+    "on",
+    "only",
+    "onto",
+    "or",
+    "other",
+    "our",
+    "out",
+    "over",
+    "own",
+    "per",
+    "re",
+    "s",
+    "same",
+    "several",
+    "shall",
+    "she",
+    "should",
+    "so",
+    "some",
+    "such",
+    "t",
+    "than",
+    "that",
+    "the",
+    "their",
+    "theirs",
+    "them",
+    "then",
+    "there",
+    "these",
+    "they",
+    "this",
+    "those",
+    "to",
+    "total",
+    "up",
+    "us",
+    "ve",
+    "was",
+    "we",
+    "were",
+    "what",
+    "when",
+    "where",
+    "which",
+    "while",
+    "who",
+    "whom",
+    "whose",
+    "why",
+    "will",
+    "with",
+    "without",
+    "would",
+    "you",
+    "your",
+    "yours"
+  ],
+  "sign_names": {
+    "+": [
+      "plus"
+    ],
+    "=": [
+      "equals"
+    ],
+    "\\Delta": [
+      "capital delta",
+      "delta"
+    ],
+    "\\Gamma": [
+      "capital gamma",
+      "gamma"
+    ],
+    "\\Omega": [
+      "capital omega",
+      "omega"
+    ],
+    "\\Phi": [
+      "capital phi",
+      "phi"
+    ],
+    "\\Sigma": [
+      "capital sigma",
+      "sigma"
+    ],
+    "\\alpha": [
+      "alpha"
+    ],
+    "\\approx": [
+      "approximately"
+    ],
+    "\\beta": [
+      "beta"
+    ],
+    "\\cap": [
+      "intersection"
+    ],
+    "\\chi": [
+      "chi"
+    ],
+    "\\cup": [
+      "union"
+    ],
+    "\\delta": [
+      "delta"
+    ],
+    "\\div": [
+      "over"
+    ],
+    "\\emptyset": [
+      "empty set"
+    ],
+    "\\epsilon": [
+      "epsilon"
+    ],
+    "\\equiv": [
+      "identical"
+    ],
+    "\\exists": [
+      "exists"
+    ],
+    "\\forall": [
+      "for all"
+    ],
+    "\\gamma": [
+      "gamma"
+    ],
+    "\\geq": [
+      "greater or equal"
+    ],
+    "\\in": [
+      "belongs"
+    ],
+    "\\infty": [
+      "infinity"
+    ],
+    "\\int": [
+      "integral"
+    ],
+    "\\iota": [
+      "iota"
+    ],
+    "\\kappa": [
+      "kappa"
+    ],
+    "\\lambda": [
+      "lambda"
+    ],
+    "\\leftrightarrow": [
+      "double arrow",
+      "equivalent"
+    ],
+    "\\leq": [
+      "less or equal"
+    ],
+    "\\mu": [
+      "mu"
+    ],
+    "\\neg": [
+      "not"
+    ],
+    "\\neq": [
+      "not equal"
+    ],
+    "\\nu": [
+      "nu"
+    ],
+    "\\omega": [
+      "omega"
+    ],
+    "\\partial": [
+      "partial"
+    ],
+    "\\phi": [
+      "phi"
+    ],
+    "\\pi": [
+      "pi"
+    ],
+    "\\prod": [
+      "product"
+    ],
+    "\\psi": [
+      "psi"
+    ],
+    "\\rho": [
+      "rho"
+    ],
+    "\\sigma": [
+      "sigma"
+    ],
+    "\\sqrt": [
+      "root"
+    ],
+    "\\subset": [
+      "subset"
+    ],
+    "\\sum": [
+      "sum"
+    ],
+    "\\tau": [
+      "tau"
+    ],
+    "\\theta": [
+      "theta"
+    ],
+    "\\times": [
+      "times"
+    ],
+    "\\to": [
+      "arrow",
+      "implies"
+    ],
+    "\\vee": [
+      "or"
+    ],
+    "\\wedge": [
+      "and"
+    ],
+    "\\xi": [
+      "xi"
+    ],
+    "¬": [
+      "not"
+    ],
+    "×": [
+      "times"
+    ],
+    "÷": [
+      "over"
+    ],
+    "Γ": [
+      "capital gamma",
+      "gamma"
+    ],
+    "Δ": [
+      "capital delta",
+      "delta"
+    ],
+    "Σ": [
+      "capital sigma",
+      "sigma"
+    ],
+    "Φ": [
+      "capital phi",
+      "phi"
+    ],
+    "Ω": [
+      "capital omega",
+      "omega"
+    ],
+    "α": [
+      "alpha"
+    ],
+    "β": [
+      "beta"
+    ],
+    "γ": [
+      "gamma"
+    ],
+    "δ": [
+      "delta"
+    ],
+    "ε": [
+      "epsilon"
+    ],
+    "θ": [
+      "theta"
+    ],
+    "ι": [
+      "iota"
+    ],
+    "κ": [
+      "kappa"
+    ],
+    "λ": [
+      "lambda"
+    ],
+    "μ": [
+      "mu"
+    ],
+    "ν": [
+      "nu"
+    ],
+    "ξ": [
+      "xi"
+    ],
+    "π": [
+      "pi"
+    ],
+    "ρ": [
+      "rho"
+    ],
+    "σ": [
+      "sigma"
+    ],
+    "τ": [
+      "tau"
+    ],
+    "φ": [
+      "phi"
+    ],
+    "χ": [
+      "chi"
+    ],
+    "ψ": [
+      "psi"
+    ],
+    "ω": [
+      "omega"
+    ],
+    "→": [
+      "arrow",
+      "implies"
+    ],
+    "↔": [
+      "double arrow",
+      "equivalent"
+    ],
+    "∀": [
+      "for all"
+    ],
+    "∂": [
+      "partial"
+    ],
+    "∃": [
+      "exists"
+    ],
+    "∅": [
+      "empty set"
+    ],
+    "∈": [
+      "belongs"
+    ],
+    "∏": [
+      "product"
+    ],
+    "∑": [
+      "sum"
+    ],
+    "−": [
+      "minus"
+    ],
+    "√": [
+      "root"
+    ],
+    "∞": [
+      "infinity"
+    ],
+    "∧": [
+      "and"
+    ],
+    "∨": [
+      "or"
+    ],
+    "∩": [
+      "intersection"
+    ],
+    "∪": [
+      "union"
+    ],
+    "∫": [
+      "integral"
+    ],
+    "≈": [
+      "approximately"
+    ],
+    "≠": [
+      "not equal"
+    ],
+    "≡": [
+      "identical"
+    ],
+    "≤": [
+      "less or equal"
+    ],
+    "≥": [
+      "greater or equal"
+    ],
+    "⊂": [
+      "subset"
+    ]
+  }
+}

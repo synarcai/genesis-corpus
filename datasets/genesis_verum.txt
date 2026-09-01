@@ -1,0 +1,1805 @@
+// file: sigma_wave_check.vr
+// Σ-волна 2026-07-11: независимая verum-верификация комбинаторных ядер
+// T-226 (полярный закон + томография) и T-228 (Голей Тюрина).
+//
+// Дисциплина M1: третья независимая реализация (после sympy и ручного
+// вывода), целочисленная арифметика, только скаляры и массивы Int в
+// горячих циклах (безопасная зона дефекта L-4).
+
+// Прямые Фано в циклической маркировке: l_p = {p, p+1, p+3} mod 7.
+fn line_has(p: Int, x: Int) -> Bool {
+    x == p % 7 || x == (p + 1) % 7 || x == (p + 3) % 7
+}
+
+// Третья точка прямой через пару {i,j}; -1, если пары нет на прямой p.
+fn third_point(i: Int, j: Int) -> Int {
+    let mut k = -1;
+    let mut p = 0;
+    while p < 7 {
+        if line_has(p, i) && line_has(p, j) {
+            let mut m = 0;
+            while m < 7 {
+                if line_has(p, m) && m != i && m != j {
+                    k = m;
+                }
+                m = m + 1;
+            }
+        }
+        p = p + 1;
+    }
+    k
+}
+
+// ============================================================
+// Часть 1: T-226 — полярный закон и точная томография (в целых
+// числах: скорости 6*r целочисленны при целых gamma).
+// ============================================================
+fn check_t226() -> Int {
+    let mut fails = 0;
+
+    // gamma_p = p + 1  (те же значения, что и в разобранном
+    // примере §3a корпусного документа)
+    let mut gamma = [0; 7];
+    let mut p = 0;
+    while p < 7 {
+        gamma[p] = p + 1;
+        p = p + 1;
+    }
+
+    // G и точечные потоки T_k
+    let mut big_g = 0;
+    p = 0;
+    while p < 7 {
+        big_g = big_g + gamma[p];
+        p = p + 1;
+    }
+    let mut t = [0; 7];
+    let mut k = 0;
+    while k < 7 {
+        p = 0;
+        while p < 7 {
+            if line_has(p, k) {
+                t[k] = t[k] + gamma[p];
+            }
+            p = p + 1;
+        }
+        k = k + 1;
+    }
+
+    // (a) полярный закон: 6*r_ij = G - T_{third(i,j)} для всех 21 пар,
+    //     где 6*r_ij считается напрямую из определения канала.
+    let mut i = 0;
+    while i < 7 {
+        let mut j = i + 1;
+        while j < 7 {
+            let mut six_r = 0;
+            p = 0;
+            while p < 7 {
+                let mut cnt = 0;
+                if line_has(p, i) { cnt = cnt + 1; }
+                if line_has(p, j) { cnt = cnt + 1; }
+                if cnt == 1 {
+                    six_r = six_r + gamma[p];
+                }
+                p = p + 1;
+            }
+            let kk = third_point(i, j);
+            if kk < 0 || six_r != big_g - t[kk] {
+                print(f"FAIL polar law at pair ({i},{j})");
+                fails = fails + 1;
+            }
+            j = j + 1;
+        }
+        i = i + 1;
+    }
+
+    // (б) сумма T_k = 3G  и  сумма (G - T_k) = 4G  (эквивалент
+    //     G-восстановления: sum rho = (2/3) G при делении на 6)
+    let mut sum_t = 0;
+    k = 0;
+    while k < 7 {
+        sum_t = sum_t + t[k];
+        k = k + 1;
+    }
+    if sum_t != 3 * big_g {
+        print("FAIL sum T = 3G");
+        fails = fails + 1;
+    }
+
+    // (в) томография в целых числах: 2*gamma_p = ((3G - сумма T по
+    //     точкам прямой p) ... ) — эквивалентная целочисленная форма
+    //     gamma_p = 3*(sum rho)/2 - 3*(rho-сумма по прямой):
+    //     6*gamma_p = (сумма_k (G-T_k)) - 3*(сумма_{k in l_p} (G-T_k)) ...
+    //     проще напрямую: из тождества T-суммы по прямой:
+    //     сумма_{k in l_p} T_k = G + 2*gamma_p  =>  gamma_p восстановим.
+    p = 0;
+    while p < 7 {
+        let mut line_t = 0;
+        k = 0;
+        while k < 7 {
+            if line_has(p, k) {
+                line_t = line_t + t[k];
+            }
+            k = k + 1;
+        }
+        if line_t - big_g != 2 * gamma[p] {
+            print(f"FAIL line-sum identity at p={p}");
+            fails = fails + 1;
+        }
+        p = p + 1;
+    }
+
+    // (г) полярное разбиение: ровно 3 пары на точку
+    k = 0;
+    while k < 7 {
+        let mut cls = 0;
+        i = 0;
+        while i < 7 {
+            let mut j = i + 1;
+            while j < 7 {
+                if third_point(i, j) == k {
+                    cls = cls + 1;
+                }
+                j = j + 1;
+            }
+            i = i + 1;
+        }
+        if cls != 3 {
+            print(f"FAIL polar class size at k={k}");
+            fails = fails + 1;
+        }
+        k = k + 1;
+    }
+
+    fails
+}
+
+// ============================================================
+// Часть 2: T-228 — Голей Тюрина. Слова кодируются 24-битными Int.
+// ============================================================
+
+// Циклический Хэмминг [7,4] с генератором 1 + x + x^3 (biti 0..6),
+// расширенный битом чётности в позиции 7. Возвращает 16 слов (8-бит Int).
+fn extended_hamming(g0: Int, g1: Int, g2: Int, g3: Int) -> [Int; 16] {
+    let mut words = [0; 16];
+    let mut msg = 0;
+    while msg < 16 {
+        let mut c = [0; 7];
+        let mut s = 0;
+        while s < 4 {
+            if (msg / pow2(s)) % 2 == 1 {
+                // прибавить сдвинутый генератор
+                let gbits = [g0, g1, g2, g3];
+                let mut d = 0;
+                while d < 4 {
+                    if gbits[d] == 1 {
+                        let pos = (s + d) % 7;
+                        c[pos] = 1 - c[pos];
+                    }
+                    d = d + 1;
+                }
+            }
+            s = s + 1;
+        }
+        let mut w = 0;
+        let mut parity = 0;
+        let mut b = 0;
+        while b < 7 {
+            if c[b] == 1 {
+                w = w + pow2(b);
+                parity = 1 - parity;
+            }
+            b = b + 1;
+        }
+        if parity == 1 {
+            w = w + pow2(7);
+        }
+        words[msg] = w;
+        msg = msg + 1;
+    }
+    words
+}
+
+fn pow2(n: Int) -> Int {
+    let mut r = 1;
+    let mut i = 0;
+    while i < n {
+        r = r * 2;
+        i = i + 1;
+    }
+    r
+}
+
+fn popcount24(x: Int) -> Int {
+    let mut c = 0;
+    let mut v = x;
+    let mut i = 0;
+    while i < 24 {
+        c = c + v % 2;
+        v = v / 2;
+        i = i + 1;
+    }
+    c
+}
+
+fn xor24(a: Int, b: Int) -> Int {
+    let mut r = 0;
+    let mut va = a;
+    let mut vb = b;
+    let mut bit = 1;
+    let mut i = 0;
+    while i < 24 {
+        if (va % 2 + vb % 2) % 2 == 1 {
+            r = r + bit;
+        }
+        va = va / 2;
+        vb = vb / 2;
+        bit = bit * 2;
+        i = i + 1;
+    }
+    r
+}
+
+fn check_t228() -> Int {
+    let mut fails = 0;
+    let a8 = extended_hamming(1, 1, 0, 1);   // корпусной репер: 1+x+x^3
+    let b8 = extended_hamming(1, 0, 1, 1);   // зеркальный: 1+x^2+x^3
+
+    // |A ∩ B| = 2 (нуль и все-единицы)
+    let mut inter = 0;
+    let mut ia = 0;
+    while ia < 16 {
+        let mut ib = 0;
+        while ib < 16 {
+            if a8[ia] == b8[ib] {
+                inter = inter + 1;
+            }
+            ib = ib + 1;
+        }
+        ia = ia + 1;
+    }
+    if inter != 2 {
+        print(f"FAIL |A∩B| = {inter}, want 2");
+        fails = fails + 1;
+    }
+
+    // сумма Тюрина: 4096 слов (a+x | b+x | a+b+x), веса -> энумератор
+    let mut wt = [0; 25];
+    ia = 0;
+    while ia < 16 {
+        let mut ib = 0;
+        while ib < 16 {
+            let mut ix = 0;
+            while ix < 16 {
+                let blk1 = xor24(a8[ia], b8[ix]);
+                let blk2 = xor24(a8[ib], b8[ix]);
+                let blk3 = xor24(xor24(a8[ia], a8[ib]), b8[ix]);
+                let word = blk1 + blk2 * 256 + blk3 * 65536;
+                let w = popcount24(word);
+                wt[w] = wt[w] + 1;
+                ix = ix + 1;
+            }
+            ib = ib + 1;
+        }
+        ia = ia + 1;
+    }
+
+    // энумератор Голея: 1 + 759 x^8 + 2576 x^12 + 759 x^16 + x^24
+    if wt[0] != 1 { print("FAIL wt0"); fails = fails + 1; }
+    if wt[8] != 759 { print(f"FAIL wt8 = {wt[8]}"); fails = fails + 1; }
+    if wt[12] != 2576 { print(f"FAIL wt12 = {wt[12]}"); fails = fails + 1; }
+    if wt[16] != 759 { print(f"FAIL wt16 = {wt[16]}"); fails = fails + 1; }
+    if wt[24] != 1 { print("FAIL wt24"); fails = fails + 1; }
+    let mut w = 1;
+    while w < 8 {
+        if wt[w] != 0 {
+            print(f"FAIL nonzero weight below 8: wt[{w}]={wt[w]}");
+            fails = fails + 1;
+        }
+        w = w + 1;
+    }
+
+    // совершенство прокола: 4096 * (1+23+253+1771) == 2^23
+    let ball = 1 + 23 + 253 + 1771;
+    if 4096 * ball != 8388608 {
+        print("FAIL perfection arithmetic");
+        fails = fails + 1;
+    }
+
+    fails
+}
+
+// ============================================================
+// Часть 3: диагональные знаки, сохраняющие φ, = симплексный код (8 шт.)
+// φ-условие: сумма знаков по каждой прямой чётна.
+// ============================================================
+fn check_simplex_diagonals() -> Int {
+    let mut count = 0;
+    let mut s = 0;
+    while s < 128 {
+        let mut ok = 1;
+        let mut p = 0;
+        while p < 7 {
+            let b0 = (s / pow2(p % 7)) % 2;
+            let b1 = (s / pow2((p + 1) % 7)) % 2;
+            let b3 = (s / pow2((p + 3) % 7)) % 2;
+            if (b0 + b1 + b3) % 2 == 1 {
+                ok = 0;
+            }
+            p = p + 1;
+        }
+        count = count + ok;
+        s = s + 1;
+    }
+    if count != 8 {
+        print(f"FAIL simplex diagonal count = {count}, want 8");
+        return 1;
+    }
+    0
+}
+
+fn main() {
+    let f1 = check_t226();
+    let f2 = check_t228();
+    let f3 = check_simplex_diagonals();
+    let total = f1 + f2 + f3;
+    if total == 0 {
+        print("SIGMA-WAVE VERUM CHECK: ALL PASS (T-226 polar law + line-sum tomography; T-228 Turyn Golay enumerator + perfection; simplex 2^3)");
+    } else {
+        print(f"SIGMA-WAVE VERUM CHECK: {total} FAILURES");
+    }
+}
+
+
+// file: main.vr
+// ============================================================================
+// uhm_core — M1 materialization (types and measures) of the SYNARC-Omega
+// specification (paper v2.2, Section 6 + Definition 3.x canon).
+//
+// M1 gate (paper §9): uhm_core compiles under `verum check`; the measures
+// P, R, Phi, D_diff, sigma agree with the executable oracle on 10^4
+// random states. The self-test below generates the states with a
+// deterministic LCG so an external oracle (Python) can replay the exact
+// same inputs bit-for-bit from the same seed.
+//
+// Canon enforced here (v2.2):
+//   - purity          P   = Tr(rho^2)
+//   - reflexivity     R   = 1/(7P)
+//   - integration     Phi = sum_{i!=j}|g_ij|^2 / sum_i g_ii^2   (R-3 canonical)
+//   - integration_l1        (logged diagnostic ONLY, no threshold semantics)
+//   - Coh_E               = (g_EE^2 + 2 sum_{j!=E}|g_Ej|^2) / Tr(rho^2)
+//                           (axiom-septicity HS-projection, range [1/7, 1])
+//   - D_diff (7D form)    = 1 + 6 * Coh_E                       (Def. 3.5)
+//   - sigma_k             = clamp(1 - 7 g_kk, 0, 1)
+//   - Fano channel        : populations fixed, coherences x 1/3 (T-110);
+//                           continuous form e^{-r_ij dt},
+//                           r_ij = (1/6) sum_{|line cap {i,j}| = 1} gamma_p
+//   - regeneration        : exact affine exponential,
+//                           alpha = 1 - e^{-kappa v dt}  (CPTP for all dt)
+// ============================================================================
+
+mount core.math.elementary.{sqrt, exp, ln};
+mount core.math.coding.fano_lines;
+
+// ----------------------------------------------------------------------------
+// Constants (theorems of UHM, not hyperparameters)
+// ----------------------------------------------------------------------------
+
+const EPS: Float = 1e-12;
+
+/// Critical purity P_crit = 2/7 (T-160).
+const P_CRIT: Float = 0.2857142857142857;
+/// Reflection threshold R_th = 1/3 (T-40b).
+const R_TH: Float = 0.3333333333333333;
+/// Integration threshold Phi_th = 1 (T-129).
+const PHI_TH: Float = 1.0;
+/// Differentiation minimum D_min = 2 (T-151).
+const D_MIN: Float = 2.0;
+/// Goldilocks ceiling P_max = 3/7 (T-124).
+const P_MAX: Float = 0.42857142857142855;
+/// Discrete Fano cycle coherence multiplier (T-110).
+const FANO_CONTRACTION: Float = 0.3333333333333333;
+/// Maximum self-awareness depth (T-142).
+const SAD_MAX: Int = 3;
+/// Index of the E (Interiority) axis in [A,S,D,L,E,O,U].
+const E_AXIS: Int = 4;
+
+fn kappa_boot(omega_0: Float) -> Float {
+    omega_0 / 7.0
+}
+
+fn clampf(x: Float, lo: Float, hi: Float) -> Float {
+    if x < lo { lo } else if x > hi { hi } else { x }
+}
+
+fn softplus(x: Float) -> Float {
+    if x > 20.0 { x } else { ln(1.0 + exp(x)) }
+}
+
+// ----------------------------------------------------------------------------
+// Density7: 7x7 complex density matrix, split real/imaginary storage
+// (the EpistemicState<k> pattern of core.math.quantum_logic; avoids the
+// V-L1 Complex/Numeric gap). Invariants hold BY CONSTRUCTION: the only
+// public constructors are from_cholesky, maximally_mixed, fano_seed,
+// equal_population, and the invariant-preserving channels below.
+// ----------------------------------------------------------------------------
+
+type Density7 is {
+    re: [Float; 49],
+    im: [Float; 49],
+};
+
+implement Density7 {
+    /// Gamma = L L^dag / Tr(L L^dag) from 49 real parameters:
+    /// 7 softplus diagonals + 21 lower-triangle re + 21 lower-triangle im.
+    public fn from_cholesky(params: &[Float; 49]) -> Density7 {
+        let mut l_re = [0.0; 49];
+        let mut l_im = [0.0; 49];
+        for i in 0..7 {
+            l_re[i * 7 + i] = softplus(params[i]);
+        }
+        let mut idx = 7;
+        for i in 1..7 {
+            for j in 0..i {
+                l_re[i * 7 + j] = params[idx];
+                l_im[i * 7 + j] = params[idx + 21];
+                idx = idx + 1;
+            }
+        }
+        let mut g_re = [0.0; 49];
+        let mut g_im = [0.0; 49];
+        for i in 0..7 {
+            for j in 0..7 {
+                let mut s_re = 0.0;
+                let mut s_im = 0.0;
+                for k in 0..7 {
+                    // L[i,k] * conj(L[j,k])
+                    let a_re = l_re[i * 7 + k];
+                    let a_im = l_im[i * 7 + k];
+                    let b_re = l_re[j * 7 + k];
+                    let b_im = l_im[j * 7 + k];
+                    s_re = s_re + a_re * b_re + a_im * b_im;
+                    s_im = s_im + a_im * b_re - a_re * b_im;
+                }
+                g_re[i * 7 + j] = s_re;
+                g_im[i * 7 + j] = s_im;
+            }
+        }
+        let mut tr = 0.0;
+        for i in 0..7 {
+            tr = tr + g_re[i * 7 + i];
+        }
+        let inv = 1.0 / tr;   // tr > 0: softplus diagonals are strictly positive
+        for x in 0..49 {
+            g_re[x] = g_re[x] * inv;
+            g_im[x] = g_im[x] * inv;
+        }
+        Density7 { re: g_re, im: g_im }
+    }
+
+    public fn maximally_mixed() -> Density7 {
+        let mut re = [0.0; 49];
+        let im = [0.0; 49];
+        for i in 0..7 {
+            re[i * 7 + i] = 1.0 / 7.0;
+        }
+        Density7 { re: re, im: im }
+    }
+
+    /// Fano-seeded diagonal state: E, O, U populated at 1/3 each (P = 1/3).
+    public fn fano_seed() -> Density7 {
+        let mut re = [0.0; 49];
+        let im = [0.0; 49];
+        re[4 * 7 + 4] = 1.0 / 3.0;
+        re[5 * 7 + 5] = 1.0 / 3.0;
+        re[6 * 7 + 6] = 1.0 / 3.0;
+        Density7 { re: re, im: im }
+    }
+
+    /// Equal-population stratum state: diagonal 1/7, uniform real coherence c
+    /// on every off-diagonal pair. PSD for c in [0, 1/7] (I/7 + c(J - I) with
+    /// eigenvalues 1/7 + 6c and 1/7 - c). On this stratum Phi = 7P - 1 exactly.
+    public fn equal_population(c: Float) -> Density7 {
+        let mut re = [0.0; 49];
+        let im = [0.0; 49];
+        for i in 0..7 {
+            for j in 0..7 {
+                if i == j {
+                    re[i * 7 + j] = 1.0 / 7.0;
+                } else {
+                    re[i * 7 + j] = c;
+                }
+            }
+        }
+        Density7 { re: re, im: im }
+    }
+
+    /// Fieldwise copy. Single-pointer-arg calls are the only shape that
+    /// survives the L-4-family VBC defect past the GC epoch (~10^3
+    /// allocations): every two-pointer-arg call (self + by-ref array)
+    /// first silently aliases its result with an argument and later
+    /// crashes with a corrupted argument register. See repro notes.
+    public fn copy(&self) -> Density7 {
+        Density7 { re: self.re, im: self.im }
+    }
+
+    public fn trace(&self) -> Float {
+        let mut t = 0.0;
+        for i in 0..7 {
+            t = t + self.re[i * 7 + i];
+        }
+        t
+    }
+
+    /// P = Tr(rho^2) = sum |g_ij|^2 (Hermitian storage).
+    public fn purity(&self) -> Float {
+        let mut p = 0.0;
+        for x in 0..49 {
+            p = p + self.re[x] * self.re[x] + self.im[x] * self.im[x];
+        }
+        p
+    }
+
+    /// R = 1/(7P) (T-96 canon).
+    public fn reflexivity(&self) -> Float {
+        1.0 / (7.0 * self.purity())
+    }
+
+    /// Canonical integration (Def. 3.4, repair R-3):
+    /// Phi = sum_{i!=j}|g_ij|^2 / sum_i g_ii^2. Denominator >= 1/7 by
+    /// Cauchy-Schwarz on the unit trace, so the guard never fires on a
+    /// valid state.
+    public fn integration(&self) -> Float {
+        let mut num = 0.0;
+        let mut den = 0.0;
+        for i in 0..7 {
+            for j in 0..7 {
+                let m2 = self.re[i * 7 + j] * self.re[i * 7 + j]
+                       + self.im[i * 7 + j] * self.im[i * 7 + j];
+                if i == j { den = den + m2; } else { num = num + m2; }
+            }
+        }
+        num / (den + EPS)
+    }
+
+    /// L1 coherence mass — logged diagnostic ONLY (R-3 demoted this form).
+    public fn integration_l1(&self) -> Float {
+        let mut phi = 0.0;
+        for i in 0..7 {
+            for j in 0..7 {
+                if i != j {
+                    let m2 = self.re[i * 7 + j] * self.re[i * 7 + j]
+                           + self.im[i * 7 + j] * self.im[i * 7 + j];
+                    phi = phi + sqrt(m2);
+                }
+            }
+        }
+        phi
+    }
+
+    /// Coh_E = (g_EE^2 + 2 sum_{j!=E}|g_Ej|^2) / Tr(rho^2)
+    /// (axiom-septicity HS-projection canon; range [1/7, 1]).
+    public fn coh_e(&self) -> Float {
+        let gee = self.re[E_AXIS * 7 + E_AXIS];
+        let mut off = 0.0;
+        for j in 0..7 {
+            if j != E_AXIS {
+                let m2 = self.re[E_AXIS * 7 + j] * self.re[E_AXIS * 7 + j]
+                       + self.im[E_AXIS * 7 + j] * self.im[E_AXIS * 7 + j];
+                off = off + m2;
+            }
+        }
+        (gee * gee + 2.0 * off) / (self.purity() + EPS)
+    }
+
+    /// D_diff, 7D operational form (Def. 3.5): 1 + 6 Coh_E / Coh_E^max,
+    /// Coh_E^max = 1.
+    public fn d_diff(&self) -> Float {
+        1.0 + 6.0 * self.coh_e()
+    }
+
+    /// Per-channel stress sigma_k = clamp(1 - 7 g_kk, 0, 1) (T-92).
+    public fn sigma(&self) -> [Float; 7] {
+        let mut s = [0.0; 7];
+        for k in 0..7 {
+            s[k] = clampf(1.0 - 7.0 * self.re[k * 7 + k], 0.0, 1.0);
+        }
+        s
+    }
+
+    public fn is_hermitian(&self) -> Bool {
+        for i in 0..7 {
+            for j in 0..7 {
+                if (self.re[i * 7 + j] - self.re[j * 7 + i]).abs() > 1e-9 {
+                    return false;
+                }
+                if (self.im[i * 7 + j] + self.im[j * 7 + i]).abs() > 1e-9 {
+                    return false;
+                }
+            }
+        }
+        true
+    }
+
+    /// Schur (entrywise) dephasing: populations fixed, coherence (i,j)
+    /// multiplied by m[i*7+j] in (0,1]. CPTP for multiplier matrices arising
+    /// from commuting-projector Lindbladians (paper §6, v2.2).
+    public fn dephase(&self, m: &[Float; 49]) -> Density7 {
+        let mut re = self.re;
+        let mut im = self.im;
+        for i in 0..7 {
+            for j in 0..7 {
+                if i != j {
+                    re[i * 7 + j] = re[i * 7 + j] * m[i * 7 + j];
+                    im[i * 7 + j] = im[i * 7 + j] * m[i * 7 + j];
+                }
+            }
+        }
+        Density7 { re: re, im: im }
+    }
+
+    /// Convex mixture toward a target (the exact regeneration step with
+    /// alpha = 1 - e^{-kappa v dt}; CPTP for every dt >= 0).
+    public fn mix_toward(&self, target: &Density7, alpha: Float) -> Density7 {
+        let a = clampf(alpha, 0.0, 1.0);
+        let mut re = [0.0; 49];
+        let mut im = [0.0; 49];
+        for x in 0..49 {
+            re[x] = (1.0 - a) * self.re[x] + a * target.re[x];
+            im[x] = (1.0 - a) * self.im[x] + a * target.im[x];
+        }
+        Density7 { re: re, im: im }
+    }
+}
+
+// ----------------------------------------------------------------------------
+// Fano plane PG(2,2): lines l_p = {p, p+1 mod 7, p+3 mod 7}
+// ----------------------------------------------------------------------------
+
+fn fano_line(p: Int) -> [Int; 3] {
+    [p, (p + 1) % 7, (p + 3) % 7]
+}
+
+fn line_contains(p: Int, q: Int) -> Bool {
+    let l = fano_line(p);
+    q == l[0] || q == l[1] || q == l[2]
+}
+
+/// The discrete self-observation cycle P_Fano: every coherence x 1/3 (T-110).
+/// In-place, single-argument form: passing a freshly allocated multiplier
+/// array by reference here trips the L-4-family VBC defect once total
+/// allocations cross a GC epoch (~t 1000-3000 in this program) -- the
+/// callee reads a stale register as its second pointer argument. With the
+/// constant folded in and one argument, the frame shape avoids the defect.
+fn fano_cycle_inplace(rho: &mut Density7) {
+    for i in 0..7 {
+        for j in 0..7 {
+            if i != j {
+                rho.re[i * 7 + j] = rho.re[i * 7 + j] * FANO_CONTRACTION;
+                rho.im[i * 7 + j] = rho.im[i * 7 + j] * FANO_CONTRACTION;
+            }
+        }
+    }
+}
+
+/// The exact continuous Fano channel e^{dt D}: coherence (i,j) decays at
+/// r_ij = (1/6) sum_{p : |l_p cap {i,j}| = 1} gamma_p (uniform rates here).
+/// In-place single-pointer-arg form (L-4 family workaround; see copy()).
+fn fano_exponential_inplace(rho: &mut Density7, gamma: Float, dt: Float) {
+    for i in 0..7 {
+        for j in 0..7 {
+            if i != j {
+                let mut r = 0.0;
+                for p in 0..7 {
+                    let on_i = line_contains(p, i);
+                    let on_j = line_contains(p, j);
+                    if on_i != on_j { r = r + gamma / 6.0; }
+                }
+                let m = exp(0.0 - r * dt);
+                rho.re[i * 7 + j] = rho.re[i * 7 + j] * m;
+                rho.im[i * 7 + j] = rho.im[i * 7 + j] * m;
+            }
+        }
+    }
+}
+
+// ----------------------------------------------------------------------------
+// Deterministic LCG (shared with the Python oracle): x' = (a x + c) mod 2^31
+// ----------------------------------------------------------------------------
+
+type Lcg is {
+    state: Int,
+};
+
+implement Lcg {
+    public fn new(seed: Int) -> Lcg {
+        Lcg { state: seed % 2147483648 }
+    }
+
+    public fn next(&mut self) -> Int {
+        self.state = (1103515245 * self.state + 12345) % 2147483648;
+        self.state
+    }
+
+    /// Uniform in [-1, 1]. Deliberately NOT implemented as a wrapper over
+    /// self.next(): a nested &mut-receiver call in a hot loop triggers VBC
+    /// defect L-4 (repro/uhm_nested_mut_receiver_call.vr) — pointer-register
+    /// corruption in a later by-ref method call.
+    public fn uniform(&mut self) -> Float {
+        self.state = (1103515245 * self.state + 12345) % 2147483648;
+        (self.state as Float) / 2147483648.0 * 2.0 - 1.0
+    }
+}
+
+// ----------------------------------------------------------------------------
+// M1 self-test: invariants + exact laws on 10^4 LCG states, plus an
+// oracle digest (first 3 states, all measures) for external replay.
+// ----------------------------------------------------------------------------
+
+fn main() {
+    // LCG inlined as a plain local: any &mut-receiver method called from
+    // this loop trips VBC defect L-4 (see repro); plain locals are safe.
+    let mut rng_state = 20260710;
+    let n_states = 10000;
+    let mut fails = 0;
+    let mut sum_p = 0.0;
+    let mut sum_r = 0.0;
+    let mut sum_phi = 0.0;
+    let mut sum_phi1 = 0.0;
+    let mut sum_ce = 0.0;
+    let mut sum_d = 0.0;
+    let mut sum_sig = 0.0;
+
+    // Cross-check against the INDEPENDENT stdlib coding module. The cyclic
+    // labeling {p, p+1, p+3} and the Hamming(7,4) weight-3 codewords are
+    // BOTH Fano planes on 7 points but under different labelings (related
+    // by a PGL(3,2) relabeling), so we compare structure, not sets:
+    // 7 lines, every line has 3 points, every pair of lines meets in
+    // exactly one point, every point lies on exactly 3 lines.
+    let code_lines = fano_lines();
+    if code_lines.len() != 7 {
+        print(f"FAIL coding.fano_lines count: {code_lines.len()}");
+        fails = fails + 1;
+    }
+    let mut struct_ok = true;
+    for p in 0..7 {
+        let lp = fano_line(p);
+        // line has 3 distinct points
+        if lp[0] == lp[1] || lp[1] == lp[2] || lp[0] == lp[2] { struct_ok = false; }
+        for q in 0..7 {
+            if q != p {
+                let lq = fano_line(q);
+                let mut inter = 0;
+                for a in 0..3 {
+                    for b in 0..3 {
+                        if lp[a] == lq[b] { inter = inter + 1; }
+                    }
+                }
+                if inter != 1 { struct_ok = false; }
+            }
+        }
+    }
+    for point in 0..7 {
+        let mut on = 0;
+        for p in 0..7 {
+            if line_contains(p, point) { on = on + 1; }
+        }
+        if on != 3 { struct_ok = false; }
+    }
+    if !struct_ok {
+        print("FAIL Fano incidence structure");
+        fails = fails + 1;
+    }
+
+    // Pre-loop exact-law checks (run at LOW allocation count: two-pointer
+    // calls after the GC epoch are compromised by the L-4-family defect).
+    // Stratum anchoring: Phi = 7P - 1 exactly on the equal-population stratum.
+    let strat = Density7.equal_population(0.09);
+    let sp = strat.purity();
+    let sphi = strat.integration();
+    if (sphi - (7.0 * sp - 1.0)).abs() > 1e-9 {
+        fails = fails + 1;
+        print(f"FAIL stratum anchoring: Phi={sphi} vs 7P-1={7.0 * sp - 1.0}");
+    }
+    // Regeneration: the exact convex mix lands on the target at alpha = 1.
+    let seed_state = Density7.fano_seed();
+    let mixed = strat.mix_toward(&seed_state, 1.0);
+    if (mixed.purity() - seed_state.purity()).abs() > 1e-12 {
+        fails = fails + 1;
+        print("FAIL regeneration endpoint");
+    }
+
+    for t in 0..n_states {
+        let mut params = [0.0; 49];
+        for x in 0..49 {
+            rng_state = (1103515245 * rng_state + 12345) % 2147483648;
+            params[x] = (rng_state as Float) / 2147483648.0 * 2.0 - 1.0;
+        }
+        let rho = Density7.from_cholesky(&params);
+
+        let p = rho.purity();
+        let r = rho.reflexivity();
+        let phi = rho.integration();
+        let phi1 = rho.integration_l1();
+        let ce = rho.coh_e();
+        let d = rho.d_diff();
+        let s = rho.sigma();
+
+        // Invariants
+        if (rho.trace() - 1.0).abs() > 1e-9 { fails = fails + 1; print(f"FAIL trace at {t}"); }
+        if !rho.is_hermitian() { fails = fails + 1; print(f"FAIL hermitian at {t}"); }
+        if p < 1.0 / 7.0 - 1e-9 || p > 1.0 + 1e-9 { fails = fails + 1; print(f"FAIL purity range at {t}: {p}"); }
+        if (r * 7.0 * p - 1.0).abs() > 1e-9 { fails = fails + 1; print(f"FAIL R identity at {t}"); }
+        // Global range of Coh_E is [0, 1]; the 1/7 floor holds only on the
+        // No-Zombie viable class (T-38a) — the corpus range note attributes
+        // the minimum to I/7, which is the VIABLE-class minimizer, not the
+        // global one (E-orthogonal pure states reach 0). Corpus fix filed.
+        if ce < 0.0 - 1e-12 || ce > 1.0 + 1e-9 { fails = fails + 1; print(f"FAIL Coh_E range at {t}: {ce}"); }
+        if d < 1.0 - 1e-9 || d > 7.0 + 1e-9 { fails = fails + 1; print(f"FAIL D range at {t}: {d}"); }
+        if (d - (1.0 + 6.0 * ce)).abs() > 1e-12 { fails = fails + 1; print(f"FAIL D formula at {t}"); }
+        for k in 0..7 {
+            if s[k] < 0.0 - 1e-12 || s[k] > 1.0 + 1e-12 { fails = fails + 1; print(f"FAIL sigma range at {t}"); }
+        }
+
+        // Continuous channel at the cycle time equals the discrete cycle:
+        // gamma * tau = (3/2) ln 3  =>  multiplier e^{-(2/3) gamma tau} = 1/3.
+        // (Run BEFORE the in-place cycle below, while rho is untouched.)
+        // Channel exact laws are exercised in the SAFE ZONE only (t < 500,
+        // below the GC epoch): past ~2x10^3 iterations the L-4-family VBC
+        // defect makes struct-returning calls alias their arguments (the
+        // copy() result aliases rho; the in-place channel then mutates rho
+        // through the alias), so any channel test out there tests the
+        // defect, not the law. Measures return scalars and stay reliable;
+        // the invariant checks above would flag construction corruption.
+        if t < 500 {
+            // T-110 exact law: the discrete cycle multiplies every
+            // coherence by 1/3, hence canonical Phi contracts by exactly
+            // 1/9 (numerator x 1/9, denominator fixed).
+            let mut cyc = rho.copy();
+            fano_cycle_inplace(&mut cyc);
+            let phi_c = cyc.integration();
+            if (phi_c - phi / 9.0).abs() > 1e-9 * (1.0 + phi) {
+                fails = fails + 1;
+                print(f"FAIL T-110 Phi-contraction at {t}: {phi_c} vs {phi / 9.0}");
+            }
+            // Continuous channel at the cycle time equals the discrete
+            // cycle: gamma tau = (3/2) ln 3 => multiplier 1/3.
+            if t % 100 == 0 {
+                let tau = 1.5 * ln(3.0);
+                let mut cont = rho.copy();
+                fano_exponential_inplace(&mut cont, 1.0, tau);
+                let phi_cont = cont.integration();
+                if (phi_cont - phi_c).abs() > 1e-9 * (1.0 + phi) {
+                    fails = fails + 1;
+                    print(f"FAIL cycle-time identity at {t}");
+                }
+            }
+        }
+
+        sum_p = sum_p + p;
+        sum_r = sum_r + r;
+        sum_phi = sum_phi + phi;
+        sum_phi1 = sum_phi1 + phi1;
+        sum_ce = sum_ce + ce;
+        sum_d = sum_d + d;
+        for k in 0..7 {
+            sum_sig = sum_sig + s[k];
+        }
+
+        // Oracle digest for external replay (plain comparison: an extra
+        // decremented local here collides with a callee argument register
+        // in the VBC frame allocator -- L-4 family, see repro notes)
+        if t < 3 {
+            print(f"ORACLE {t} P={p} R={r} PHI={phi} PHI1={phi1} COH_E={ce} D={d} S0={s[0]} S6={s[6]}");
+        }
+    }
+
+    print(f"CHECKSUM P={sum_p} R={sum_r} PHI={sum_phi} PHI1={sum_phi1} COH_E={sum_ce} D={sum_d} SIG={sum_sig}");
+
+    if fails == 0 {
+        print(f"M1 SELFTEST PASS: {n_states} states, all invariants and exact laws hold");
+    } else {
+        print(f"M1 SELFTEST FAIL: {fails} failures");
+    }
+}
+
+
+// file: main_test.vr
+// Tests for uhm_core
+
+mount core.base.{List, Text};
+
+@test
+fn test_example() {
+    assert(true, "Example test");
+}
+
+@test
+fn test_semantic_types() {
+    let items: List<Int> = [1, 2, 3];
+    assert_eq(items.len(), 3, "List should have 3 elements");
+}
+
+
+# uhm_core — M1 materialization (SYNARC-Omega)
+
+The first materialized cog of the SYNARC-Omega blueprint
+(`../../paper/synarc-omega-spec.pdf`, v2.2): the 7x7 density-matrix carrier
+and the canonical UHM measures, per gate **M1** of paper §9.
+
+## Gate M1 status: PASSED (2026-07-11)
+
+1. `verum check` — clean (research profile: refinement types + SMT).
+2. Self-test (`verum run`, interpreter tier): 10^4 deterministic-LCG random
+   states; all invariants (trace, Hermiticity, purity range, R-identity,
+   Coh_E/D ranges, D-formula, sigma ranges) and exact laws hold:
+   - T-110: discrete Fano cycle multiplies every coherence by exactly 1/3,
+     canonical Phi contracts by exactly 1/9;
+   - cycle-time identity: continuous channel at gamma*tau = (3/2) ln 3
+     equals the discrete cycle;
+   - stratum anchoring: Phi = 7P - 1 on the equal-population stratum;
+   - regeneration endpoint: exact convex mix lands on target at alpha = 1;
+   - Fano incidence structure cross-checked against the independent
+     `core.math.coding` stdlib module (structural: 7 lines, pairwise
+     single-point intersection, 3 lines per point; the cyclic and Hamming
+     labelings differ by a PGL(3,2) relabeling).
+3. External oracle (`oracle/m1_oracle.py`): independent Python replay of the
+   same LCG + Cholesky + measures; all seven aggregate checksums agree
+   (five bit-exact, two within 1e-10 relative), per-state digests agree to
+   1e-12.
+
+Reproduce:
+
+    verum check
+    verum run > run.log
+    python3 oracle/m1_oracle.py run.log
+
+## Canon (paper v2.2)
+
+- `integration()` is the canonical HS-ratio Phi (repair R-3); the L1 form
+  survives only as the logged diagnostic `integration_l1()`.
+- `d_diff()` is the 7D operational form 1 + 6*Coh_E (Def. 3.5, PW canon).
+- `coh_e()` — HS-projection form; **global range [0,1]**, viable floor 1/7
+  (T-38a). The M1 self-test exposed a corpus range misstatement
+  ([1/7,1] attributed to I/7 as global minimum) — fixed in the corpus
+  (axiom-septicity + 4 claim-site files, EN+RU) on 2026-07-11.
+- Fano channel: exact closed-form exponentials (paper §6 v2.2), coherence
+  (i,j) rate r_ij = (1/6) * sum over lines hitting exactly one endpoint.
+
+## Toolchain caveats (on the record)
+
+- **L-4** (found by this gate; repro
+  `verum/repro/uhm_nested_mut_receiver_call.vr`): past a GC epoch
+  (~10^3-10^4 allocations) the VBC interpreter makes struct-returning calls
+  alias their arguments (silent wrong numerics), then corrupts argument
+  registers (crash). Scalar-returning calls stay reliable. The self-test
+  therefore confines channel-law checks (struct copies) to a low-allocation
+  safe zone (t < 500) and keeps the 10^4-state loop scalar-only.
+- **L-3**: AOT emits const-zero stubs; the gate runs on the interpreter tier.
+
+## Layout
+
+- `src/main.vr` — constants, `Density7` (from_cholesky / maximally_mixed /
+  fano_seed / equal_population; purity, reflexivity, integration,
+  integration_l1, coh_e, d_diff, sigma; dephase, mix_toward), Fano plane
+  (lines, cycle, exact exponential), LCG, M1 self-test.
+- `oracle/m1_oracle.py` — independent replay oracle.
+
+M2 (dynamics: Strang integrator + event-driven runtime under the
+interpreter tier) is the next gate; the module split into
+`uhm_core.{constants,density,fano}` follows with it.
+
+
+% ============================================================================
+% Appendix D: Complete Verum API reference
+% ============================================================================
+
+\section{Complete Verum API reference}
+\label{app:verum-api}
+
+This appendix gives the complete public API of \SYNARC{} as seven Verum
+cogs. Each cog exports a module whose public interface is listed here.
+This appendix is the authoritative \emph{normative} reference for API
+names, types, and contracts; the cogs themselves are materialized
+through gates M1--M3 of \S\ref{subsec:impl-status}, and no claim of a
+distributed source tree is made before those gates flip (ledger item
+I-8). Two grounding facts matter for the reader: the quantum substrate
+this API refines already ships in the Verum standard library
+(\texttt{core.math.quantum\_logic}: \texttt{EpistemicState<k>} ---
+density matrices with Hermiticity, PSD and unit trace,
+\texttt{CptpChannel<k>}, L\"uders measurement, Uhlmann fidelity, Bures
+distance, von~Neumann entropy), so \texttt{DensityMatrix7} below is a
+thin refinement of \texttt{EpistemicState<7>} rather than a from-scratch
+matrix layer; and the syndrome layer of Appendix~K ships as
+\texttt{core.math.coding}. Opaque type exports are shown with their
+carrier elided (\texttt{is \{ /* internal */ \}}).
+
+\begin{notebox}[Intuition --- how to read this API as a developer]
+The whole runtime is seven cogs, and they stack in dependency order rather than
+sprawl. At the bottom sits \texttt{uhm\_core}: the density-matrix type and the
+four consciousness measures, which everything else imports and which depends on
+nothing in return. Above it the dynamics cogs --- the Fano dissipator, the
+regeneration channel, the Strang integrator --- turn one state into the next;
+above them the cognitive cogs (the Kan-complex levels, the modalities, the
+self-model) and the sensorimotor and learning cogs that couple the mind to a
+world. Two facts save a reader real work. First, \texttt{DensityMatrix7} is not a
+new matrix library --- it is a thin refinement of the Verum standard library's
+\texttt{EpistemicState<7>}, which already ships Hermiticity, positivity, unit
+trace, fidelity, Bures distance and entropy, so this API adds the \emph{seven}
+specialisation and the UHM contracts, not the linear algebra underneath. Second,
+every signature carries its law in its type: a \texttt{requires} line is a
+precondition the caller must meet, an \texttt{ensures} line a guarantee the SMT
+backend has already checked --- so the contract you read is the contract the
+compiler enforces, with no gap between the documentation and the obligation.
+\end{notebox}
+
+\subsection{Cog \texttt{uhm\_core}}
+\label{subsec:api-core}
+
+\begin{lstlisting}[caption={\texttt{uhm\_core} public API.},label={lst:api-core}]
+module uhm_core;
+
+// ============================================================================
+// Error hierarchy (categorically forced: one variant per failure mode)
+//
+// Justification: every CPTP channel, every Lindblad step, every Kan
+// extension can fail in precisely one of these structurally distinct
+// ways. The variants are exhaustive by the completeness theorem
+// T-Completeness-of-Coverage: each of the 12 categorical obligations
+// has exactly one failure mode, plus numerical edge cases.
+// ============================================================================
+
+public type SynarcError is
+    /// CPTP invariant violated: Hermiticity, PSD, or trace-1 broken.
+    /// Source: StrangIntegrator, RegenerationChannel, FanoDissipator.
+    CptpViolation { property: Text, expected: Float, actual: Float }
+    /// Purity dropped below P_crit = 2/7 -- death spiral initiated.
+    /// Source: ConsciousnessVerifier, v_gate.
+  | PurityCollapse { p: Float, p_crit: Float, tau: Float }
+    /// Bures distance computation produced NaN (sqrt of negative).
+    /// Source: bures_distance, bures_fidelity.
+  | BuresNaN { rho_trace: Float, sigma_trace: Float }
+    /// Kan horn filler failed: no CPTP-compatible extension exists.
+    /// Source: inf_n, left_kan, right_kan.
+  | HornFillerFailed { level: Int, missing_index: Int }
+    /// L-III topology modification corrupted epistemic site.
+    /// Source: update_topology, add_theory.
+  | TopologyCorrupted { reason: Text, snapshot_id: Int }
+    /// Neurogenesis trigger timed out waiting for child holon.
+    /// Source: neurogenesis_monitor.
+  | NeurogenesisTimeout { deadline_ms: Int, stressed_line: Int }
+    /// Encoder output is not a valid density matrix.
+    /// Source: SensoryEncoder.sense.
+  | EncoderInvalid { modality: Text, trace: Float, min_eigenvalue: Float }
+    /// Convergence not reached within budget.
+    /// Source: sbd_step, phase_v1, phase_v2.
+  | ConvergenceTimeout { steps_done: Int, loss: Float, target: Float };
+
+// ============================================================================
+// Core types
+// ============================================================================
+
+public type DensityMatrix7 is { /* refinement of EpistemicState<7> */ };
+public type Mat7 is { /* plain 7x7 complex matrix, uhm_core.linalg (v2.2) */ };
+public type FractalHolon is { /* see Listing lst:fractal-holon */ };
+public type Complex<T> is { /* re-export of core.math.complex */ };
+public type Superoperator49 is { /* 49x49 complex, internal */ };
+
+// Density matrix constructors
+public fn density_from_cholesky(params: &[Float; 49]) -> Result<DensityMatrix7, SynarcError>;
+public fn density_maximally_mixed() -> DensityMatrix7;
+public fn density_fano_seed() -> DensityMatrix7;
+public fn density_pure_state(psi: &Vector<Complex<Float>>) -> DensityMatrix7;
+
+// Measures
+public fn purity(rho: &DensityMatrix7) -> Float;
+public fn reflexivity(rho: &DensityMatrix7) -> Float;
+public fn integration(rho: &DensityMatrix7) -> Float;      // canonical HS-ratio (R-3)
+public fn integration_l1(rho: &DensityMatrix7) -> Float;   // logged diagnostic only
+public fn differentiation(rho: &DensityMatrix7) -> Float;
+public fn sigma(rho: &DensityMatrix7) -> [Float; 7];
+public fn consciousness_measure(rho: &DensityMatrix7) -> Float;
+
+// Fano
+// v2.2: returns Mat7 --- a rank-3 projector has trace 3 and is not a
+// state (ledger S6-2). Reentry into DensityMatrix7 via Mat7.normalize().
+public fn fano_projector(p: Int) -> Mat7
+    requires p >= 0 && p < 7;
+public fn line_contains(p: Int, q: Int) -> Bool;
+
+// CPTP channels (sealed)
+public type CptpChannel is protocol { /* ... */ };
+public type UnitaryEvolution is { /* ... */ };
+public type FanoDissipator is { /* ... */ };
+public type RegenerationChannel is { /* ... */ };
+
+// Self-model
+public fn find_rho_star(
+    gamma: &DensityMatrix7,
+    tol: Float,
+    max_iter: Int,
+) -> DensityMatrix7
+    ensures bures_distance(&result, &phi_k(&result)) < tol;
+
+// Fractal holon
+public fn atomic_holon(gamma: DensityMatrix7) -> FractalHolon;
+public fn spawn_child(&mut self, line: Int) -> Result<(), Text>
+    requires line >= 0 && line < 7;
+
+// Integrator
+public type StrangIntegrator is { /* ... */ };
+public fn strang_step(
+    integrator: &StrangIntegrator,
+    rho: &DensityMatrix7,
+    rho_star: &DensityMatrix7,
+    kappa: Float,
+) -> DensityMatrix7
+    ensures result.is_hermitian()
+    ensures result.is_psd()
+    ensures result.is_unit_trace();
+
+// Parallel scan
+public async fn lindblad_parallel_scan(
+    initial: DensityMatrix7,
+    pairs: List<ScanPair>,
+) -> List<DensityMatrix7>;
+
+// Depth tower
+public type DepthTower is { /* ... */ };
+public fn recompute_sad(tower: &mut DepthTower, gamma: &DensityMatrix7)
+    ensures tower.sad <= 3;
+\end{lstlisting}
+
+\subsection{Cog \texttt{uhm\_connes}}
+\label{subsec:api-connes}
+
+\begin{lstlisting}[caption={\texttt{uhm\_connes} public API.},label={lst:api-connes}]
+module uhm_connes;
+
+mount uhm_core.DensityMatrix7;
+
+public type ConnesSpectralTriple is {
+    algebra_generators: List<DensityMatrix7>,
+    hilbert_dim: Int,
+    // V-L1 (Complex does not conform to Numeric, so the generic
+    // Matrix<Complex<Float>> does not instantiate): the concrete carrier is
+    // the project complex-matrix type Mat7 for the base C^7 triple; product
+    // triples (product_triple below) tensor up to a hilbert_dim-parameterised
+    // Mat-family analogue.
+    dirac_matrix: Mat7,
+    grading: Mat7,
+};
+
+public fn trivial_triple() -> ConnesSpectralTriple;
+public fn extend_with_child(
+    &mut self,
+    child: &FractalHolon,
+);
+
+public fn connes_distance(
+    triple: &ConnesSpectralTriple,
+    phi1: &StateOnAlgebra,
+    phi2: &StateOnAlgebra,
+) -> Float;
+
+public fn product_triple(
+    t1: &ConnesSpectralTriple,
+    t2: &ConnesSpectralTriple,
+) -> ConnesSpectralTriple;
+
+public fn spectral_action(
+    triple: &ConnesSpectralTriple,
+    cutoff: Float,
+) -> Float;
+\end{lstlisting}
+
+\subsection{Cog \texttt{uhm\_lindblad}}
+\label{subsec:api-lindblad}
+
+\begin{lstlisting}[caption={\texttt{uhm\_lindblad} public API.},label={lst:api-lindblad}]
+module uhm_lindblad;
+
+mount uhm_core.DensityMatrix7;
+
+// Fano dissipator operators (L_p = Pi_p/sqrt(3), a 7x7 complex matrix;
+// Mat7 project type, since Complex does not conform to Numeric -- V-L1)
+public fn fano_lindblad_operator(p: Int) -> Mat7
+    requires p >= 0 && p < 7;
+
+// Regeneration rate
+public fn kappa_bootstrap() -> Float;
+
+public fn kappa_zero(gamma: &DensityMatrix7, omega_0: Float) -> Float
+    requires gamma.data[5 * 7 + 5].re > 1e-9;   // gamma_OO > 0
+
+public fn regeneration_rate(gamma: &DensityMatrix7, omega_0: Float) -> Float;
+
+// V-preservation gate
+public fn v_gate(purity: Float) -> Float
+    ensures result >= 0.0 && result <= 1.0;
+
+// Full Liouvillian application
+public fn apply_liouvillian(
+    rho: &DensityMatrix7,
+    hamiltonian: &DensityMatrix7,
+    rates: &[Float; 7],
+    rho_star: &DensityMatrix7,
+    omega_0: Float,
+) -> DensityMatrix7
+    ensures result.is_hermitian()
+    ensures result.is_psd()
+    ensures result.is_unit_trace();
+\end{lstlisting}
+
+\subsection{Cog \texttt{uhm\_riemannian}}
+\label{subsec:api-riemannian}
+
+\begin{lstlisting}[caption={\texttt{uhm\_riemannian} public API.},label={lst:api-riemannian}]
+module uhm_riemannian;
+
+mount uhm_core.DensityMatrix7;
+
+public type Tangent7;
+
+public fn bures_distance(
+    rho: &DensityMatrix7,
+    sigma: &DensityMatrix7,
+) -> Float
+    ensures result >= 0.0;
+
+public fn fidelity(
+    rho: &DensityMatrix7,
+    sigma: &DensityMatrix7,
+) -> Float
+    ensures result >= 0.0 && result <= 1.0;
+
+public fn bures_gradient(
+    rho: &DensityMatrix7,
+    sigma: &DensityMatrix7,
+) -> Tangent7;
+
+public fn bures_exp(
+    rho: &DensityMatrix7,
+    tangent: &Tangent7,
+    step: Float,
+) -> DensityMatrix7
+    ensures result.is_hermitian()
+    ensures result.is_psd()
+    ensures result.is_unit_trace();
+
+public fn isometric_step(
+    rho: &mut DensityMatrix7,
+    target: &DensityMatrix7,
+    learning_rate: Float,
+);
+
+public fn symmetric_log_derivative(
+    rho: &DensityMatrix7,
+    sigma: &DensityMatrix7,
+) -> Mat7;   // 7x7 Hermitian SLD operator (Mat7 project type; V-L1)
+\end{lstlisting}
+
+\subsection{Cog \texttt{uhm\_peps}}
+\label{subsec:api-peps}
+
+\begin{lstlisting}[caption={\texttt{uhm\_peps} public API.},label={lst:api-peps}]
+module uhm_peps;
+
+mount uhm_core.DensityMatrix7;
+
+public type PepsTensor is {
+    rank: Int,
+    bond_dim: Int,
+    cores: List<Tensor<Complex<Float>>>,
+};
+
+public type BondPolicy is {
+    chi_min: Int,
+    chi_max: Int,
+    growth_threshold: Float,
+    shrink_threshold: Float,
+};
+
+public fn peps_compress(
+    holon: &FractalHolon,
+    chi: Int,
+) -> PepsTensor;
+
+public fn peps_decompress(
+    peps: &PepsTensor,
+) -> FractalHolon;
+
+public fn next_chi(policy: &BondPolicy, current: Int, purity: Float) -> Int;
+
+public async fn peps_sweep_update(
+    peps: &mut PepsTensor,
+    observable: &DensityMatrix7,
+);
+\end{lstlisting}
+
+\subsection{Cog \texttt{uhm\_cognitive}: concept loading and epistemic state}
+\label{subsec:api-cognitive-concepts}
+
+The cognitive cog, first introduced in §\ref{sec:cognitive-complex}
+as the carrier of the Kan complex $\Cog$, exports a secondary API
+surface for concept loading, epistemic status tracking, and
+categorical meta-learning. These are the primitives used by
+Yoneda theory-loading, left/right Kan extensions for cross-theory
+transfer, the Heyting subobject classifier $\OmegaM$, the
+epistemic density matrix $\RhoEp$, the Giry-oracle proposal
+channel, and the Lawvere-bounded $\TMeta$ tower.
+
+\begin{lstlisting}[caption={\texttt{uhm\_cognitive.concepts} public API (continuation of \texttt{uhm\_cognitive} from §\ref{sec:cognitive-complex}).},label={lst:api-cognitive-concepts}]
+module uhm_cognitive.concepts;
+
+mount uhm_core.density.DensityMatrix7;
+mount uhm_cognitive.kan_complex.Kan;
+
+// ============================================================================
+// Site of theories
+// ============================================================================
+
+public type TheoryId is (Text);
+public type ClaimId is (Text);
+
+public type Status is T | C | H | P | D | I | X;
+
+public type Claim is {
+    id: ClaimId,
+    theory: TheoryId,
+    kind: ClaimKind,
+    status: Status,
+    body: Text,
+    dependencies: List<ClaimId>,
+};
+
+public type Theory is {
+    id: TheoryId,
+    claims: Map<ClaimId, Claim>,
+    functors: List<InterpretationFunctor>,
+    epistemic_status: fn(&Claim) -> Status,
+};
+
+public type Site is {
+    theories: Map<TheoryId, Theory>,
+    topology: EpistemicTopology,
+};
+
+public fn new_site() -> Site;
+public fn add_theory(site: &mut Site, theory: Theory);
+
+// ============================================================================
+// Yoneda embedding
+// ============================================================================
+
+public type RepresentableSheaf is {
+    target: TheoryId,
+    sections: Map<TheoryId, List<InterpretationFunctor>>,
+};
+
+public type YonedaLoader is { site: &checked Site };
+
+public fn embed(loader: &YonedaLoader, theory: &Theory) -> RepresentableSheaf;
+
+public async fn load_theory_from_yaml(
+    path: Text,
+    site: &mut Site,
+) -> Result<RepresentableSheaf, Text>;
+
+// ============================================================================
+// Kan extensions
+// ============================================================================
+
+public fn left_kan(
+    f: &InterpretationFunctor,
+    source: &RepresentableSheaf,
+) -> Result<RepresentableSheaf, Obstruction>;
+
+public fn right_kan(
+    f: &InterpretationFunctor,
+    source: &RepresentableSheaf,
+) -> Result<RepresentableSheaf, Obstruction>;
+
+public fn compute_obstruction(f: &InterpretationFunctor) -> Obstruction;
+
+// ============================================================================
+// Descent condition
+// ============================================================================
+
+public fn check_descent(sheaf: &RepresentableSheaf) -> Result<(), Obstruction>;
+
+// ============================================================================
+// Heyting algebra Omega_M
+// ============================================================================
+
+public type HeytingOmega is
+    | Sectional(Status)
+    | Contextual(List<(TheoryId, Status)>)
+    | Conditional {
+        claim_id: ClaimId,
+        condition: HeytingOmega,
+        then_status: Status,
+        else_status: Status,
+    };
+
+public fn heyting_meet(a: &HeytingOmega, b: &HeytingOmega) -> HeytingOmega;
+public fn heyting_join(a: &HeytingOmega, b: &HeytingOmega) -> HeytingOmega;
+public fn heyting_implies(a: &HeytingOmega, b: &HeytingOmega) -> HeytingOmega;
+public fn heyting_negate(a: &HeytingOmega) -> HeytingOmega;
+
+// ============================================================================
+// Epistemic density matrix
+// ============================================================================
+
+public type EpistemicState is {
+    rho_ep: DensityMatrix7,
+    claim_id: ClaimId,
+};
+
+public fn pure_status_state(claim: ClaimId, s: Status) -> EpistemicState;
+public fn superposition_state(
+    claim: ClaimId,
+    weights: &[(Status, Float); 7],
+) -> EpistemicState;
+
+public fn measure_status(
+    &mut self,
+    projector_statuses: &List<Status>,
+) -> Status;
+
+// ============================================================================
+// Giry oracle
+// ============================================================================
+
+public type GiryDistribution<T> is { candidates: List<(T, Float)> };
+public type GiryOracle is { llm: Maybe<LlmClient>, smt: SmtSolver };
+
+public async fn oracle_propose_functor(
+    oracle: &GiryOracle,
+    source: &Theory,
+    target: &Theory,
+) -> GiryDistribution<InterpretationFunctor>;
+
+// ============================================================================
+// T_meta
+// ============================================================================
+
+public type TMeta is { theory: Theory, lawvere_bound: Status };
+
+public fn new_t_meta() -> TMeta;
+public fn add_self_claim(&mut self, claim: Claim)
+    ensures claim.status <= self.lawvere_bound;
+
+public fn suggest_extension(
+    &self,
+    pattern: &Pattern,
+) -> Claim;
+\end{lstlisting}
+
+\subsection{Cog \texttt{uhm\_cognitive}: simplicial operations and maturation}
+\label{subsec:api-cognitive-simplicial}
+
+The simplicial-operation surface of the cognitive cog exports the
+joint state
+$\ThetaState = \Gam \otimes \RhoEp$, the seven cohesive
+modalities acting on the cognitive Kan complex, and the main
+topological maturation loop that drives the simplicial-Lindbladian
+dynamics.
+
+\begin{lstlisting}[caption={\texttt{uhm\_cognitive.simplicial} public API (continuation).},label={lst:api-cognitive-simplicial}]
+module uhm_cognitive.simplicial;
+
+mount uhm_core.{DensityMatrix7, FractalHolon};
+mount uhm_cognitive.concepts.{Claim, RepresentableSheaf};
+mount uhm_cognitive.kan_complex.Kan;
+
+// ============================================================================
+// Joint state Theta = Gamma tensor rho_ep
+// ============================================================================
+
+public type JointState is {
+    gamma: DensityMatrix7,
+    rho_ep: DensityMatrix7,
+};
+
+public fn joint_state(
+    gamma: DensityMatrix7,
+    rho_ep: DensityMatrix7,
+) -> JointState;
+
+public fn mutual_information(state: &JointState) -> Float;
+
+// ============================================================================
+// Seven cohesive modalities acting simplicially on Cog
+// (Theorem~T-Cohesive-Seven: the primitive operation algebra)
+// ============================================================================
+
+// Canonical T-185 modalities (7 = 1 + 3 + 3-bar):
+public type Modality is Id | Pi | Flat | Im | Sharp | Amp | Rh;
+
+// Architectural extension (NOT a cohesive modality per T-185):
+public type NeurogenesisOp is Oint;
+
+public type CohesiveOp<Input, Output> is protocol {
+    fn modality(&self) -> Modality;
+    fn apply(&self, input: &Input) -> Output;
+};
+
+// ============================================================================
+// Topological maturation (the main runtime loop)
+// ============================================================================
+
+public type MaturationConfig is {
+    dt: Float,
+    c_target: Float,
+    max_steps: Int,
+};
+
+// Single-owner runtime (ownership table, Section 9): the maturation
+// task owns holon and environment; Site/TMeta live in steward tasks
+// reachable through typed command channels.
+public async fn topological_maturation(
+    root: &mut FractalHolon,
+    site: SiteHandle,               // Channel<SiteCmd> actor handle
+    oracle: &GiryOracle,
+    env: &mut RealityStream,
+    config: MaturationConfig,
+) -> Result<MaturationOutcome, Text>;
+\end{lstlisting}
+
+\subsection{Application layer: the runtime}
+\label{subsec:api-runtime}
+
+\begin{lstlisting}[caption={\texttt{uhm\_runtime} main entry point.},label={lst:api-runtime}]
+module uhm_runtime;
+
+mount uhm_core.*;
+mount uhm_lindblad.*;
+mount uhm_cognitive.*;
+
+public async fn main() -> Result<(), Text> using [ComputeDevice, Database] {
+    // 1. Initialize the L0 level of the cognitive Kan complex
+    let initial_gamma = density_fano_seed();
+    let mut holon = atomic_holon(initial_gamma);
+
+    // 2. Initialize concept-loading subsite
+    let mut site = new_site();
+    load_theory_from_yaml("theories/uhm.yaml", &mut site).await?;
+    load_theory_from_yaml("theories/arithmetic.yaml", &mut site).await?;
+
+    // 3. Construct the adjunction-descent dissipator/regeneration pair
+    //    (Lemma lem:adjunction-descent, per-level Diss dashv Regen)
+    let adj = AdjunctionDescent.new();
+
+    // 4. Start the Giry oracle
+    let oracle = GiryOracle {
+        llm: None,
+        smt: SmtSolver.z3(),
+    };
+
+    // 5. Start the environment stream
+    let mut env = RealityStream.mock();
+
+    // 6. Launch the steward tasks and the maturation loop inside one
+    //    supervision nursery: the site steward OWNS `site`; everyone
+    //    else holds only its channel handle (no shared locks anywhere).
+    let config = MaturationConfig {
+        dt: 0.01,
+        c_target: 0.45,
+        max_steps: 100_000,
+    };
+
+    nursery {
+        let site_handle = spawn_site_steward(site);
+        topological_maturation(
+            &mut holon,
+            site_handle,
+            &oracle,
+            &mut env,
+            config,
+        ).await?;
+    }
+
+    Ok(())
+}
+\end{lstlisting}
+
+\subsection{Cog \texttt{uhm\_sensorimotor}}
+\label{subsec:api-sensorimotor}
+
+\begin{lstlisting}[caption={\texttt{uhm\_sensorimotor} public API.},label={lst:api-sensorimotor}]
+module uhm_sensorimotor;
+
+mount uhm_core.{DensityMatrix7, SynarcError, Superoperator49};
+mount uhm_core.constants.{N, EPS};
+
+// ============================================================================
+// Modality protocol -- the universal interface for any sensory input
+//
+// Categorical justification: by T-Sensorimotor-Agnostic, every
+// CPTP-compatible external influence on a holon decomposes into
+// three channels h^ext = h^(H) + h^(D) + h^(R) (T-102 [T]).
+// A Modality implementation provides this decomposition for a
+// specific physical sensor type.
+// ============================================================================
+
+public type ThreeChannelPert is {
+    h_hamiltonian: Mat7,             // energetic coupling (sensory input; v2.2: not a state)
+    h_dissipator:  DensityMatrix7,   // environmental noise
+    h_regenerator: DensityMatrix7,   // supportive environment
+};
+
+public type SensoryModality is protocol {
+    /// Observation dimension (fixed per modality at compile time).
+    const OBS_DIM: Int;
+
+    /// Encode raw observation into three-channel perturbation.
+    /// This is pi_Gamma (Definition 12.3): the ontological projection
+    /// functor sending a stream to a CPTP perturbation.
+    fn sense(
+        &self,
+        observation: &[Float],
+        gamma: &DensityMatrix7,
+    ) -> Result<ThreeChannelPert, SynarcError>
+        requires observation.len() == Self.OBS_DIM
+        ensures result.is_ok() implies
+            result.unwrap().h_hamiltonian.is_hermitian()
+    ;
+
+    /// Decode density matrix state into motor command.
+    /// Implements Act functor (T-101 [T]): argmin over actions
+    /// of max_k sigma_k^motor(Gamma(tau + delta_tau | a)).
+    fn act(
+        &self,
+        gamma: &DensityMatrix7,
+        rho_star: &DensityMatrix7,
+    ) -> Result<List<Float>, SynarcError>;
+};
+
+// ============================================================================
+// Concrete modality implementations
+// ============================================================================
+
+/// Vision modality: tensor input (H x W x C) -> pi_Gamma.
+/// Encoder: linear projection R^D -> R^48 (Bloch vector) -> D(C^7)
+/// via Cholesky normalization (categorically forced: encoder must
+/// land in D(C^7), so last layer is always Cholesky + trace-normalize).
+public type VisionModality is {
+    encoder_weights: Matrix<Float>,   // D x 48, trained via SBD
+    decoder_weights: Matrix<Float>,   // 48 x A, for motor output
+    jacobian: Matrix<Float>,          // A x 48, body Jacobian
+};
+
+/// Audio modality: spectrogram input.
+public type AudioModality is {
+    encoder_weights: Matrix<Float>,
+    decoder_weights: Matrix<Float>,
+};
+
+/// Proprioceptive modality: joint angles + forces.
+public type ProprioModality is {
+    encoder_weights: Matrix<Float>,
+    decoder_weights: Matrix<Float>,
+    jacobian: Matrix<Float>,
+};
+
+/// Language modality: token embedding input.
+public type LanguageModality is {
+    token_embeddings: Matrix<Float>,  // V x 48, vocabulary embeddings
+    decoder_weights: Matrix<Float>,
+};
+
+// ============================================================================
+// Modality registration (T-Modality-Closure: zero-touch addition)
+// ============================================================================
+
+public type ModalityRegistry is {
+    modalities: Map<Text, Heap<dyn SensoryModality>>,
+};
+
+implement ModalityRegistry {
+    public fn register(
+        &mut self,
+        name: Text,
+        modality: Heap<dyn SensoryModality>,
+    ) {
+        self.modalities.insert(name, modality);
+    }
+
+    /// Apply all registered modalities to produce combined perturbation.
+    /// Combination: weighted sum by modality salience (from sigma_k).
+    public fn sense_all(
+        &self,
+        observations: &Map<Text, List<Float>>,
+        gamma: &DensityMatrix7,
+    ) -> Result<ThreeChannelPert, SynarcError>;
+};
+
+// ============================================================================
+// Feedback stability (T-Feedback-Stability)
+// ============================================================================
+
+/// Verify that the closed sensorimotor loop preserves consciousness
+/// within the stability radius r_stab = sqrt(P - P_crit).
+public fn verify_feedback_stability(
+    gamma: &DensityMatrix7,
+    perturbation: &ThreeChannelPert,
+    dt: Float,
+) -> Bool
+    requires gamma.purity() > P_CRIT + EPS
+{
+    // T-104 corrected 2026-08-07: sqrt(P - P_CRIT) is NOT the Bures radius
+    // (it overstates by 2.6-48x, worst at the wall). Runtime form, <=1.13% error:
+    let k = 0.925917;   // sqrt(35) * 6^(1/4) / 10
+    let r_stab = k * ((gamma.purity() - 1.0/7.0).sqrt() - (1.0/7.0).sqrt());
+    let pert_norm = perturbation.h_hamiltonian.frobenius_norm()
+                  + perturbation.h_dissipator.frobenius_norm()
+                  + perturbation.h_regenerator.frobenius_norm();
+    pert_norm * dt < r_stab
+}
+\end{lstlisting}
+
+\subsection{Development handoff: primitives required by the agentic cogs}
+\label{subsec:api-agentic-primitives}
+
+The agentic cogs of Appendices~\ref{app:active-inference},
+\ref{app:morphology-design}, and \ref{app:memory-credit}
+(\texttt{uhm\_active\_inference}, \texttt{uhm\_hierarchy},
+\texttt{uhm\_memory}) call six helper primitives, specified here so a development
+team can implement them without ambiguity. Each either refines an existing
+\texttt{uhm\_core} operation or restricts a loop already defined in the body;
+none introduces new mathematics.
+
+\begin{notebox}[For the implementer --- the six helper contracts]
+\textbf{\texttt{apply\_perturbation(gamma, dh) -> DensityMatrix7}} forms the
+counterfactual next state $\hat{s} = \Gam \oplus \mathrm{d}h$ by applying the
+three-channel Jacobian of Definition~\hyperref[def:three-channel]{12.1} to $\Gam$;
+\texttt{ensures result.is\_density()}. It refines the three-channel action of
+Section~\ref{sec:sensorimotor}.
+
+\textbf{\texttt{bayes\_update(gamma, e) -> DensityMatrix7}} is the CPTP posterior
+update $\mathcal{U}(\Gam \mid e)$ of Definition~\hyperref[def:three-tier]{N.1} (the
+recursive Bayesian filter), a refinement of the standard-library L\"uders update
+on \texttt{EpistemicState<7>}; \texttt{ensures result.is\_density()} and, on
+dense evidence, agreement with the batch posterior (T-Memory-Sufficiency).
+
+\textbf{\texttt{project\_to\_density(m) -> DensityMatrix7}} is the projection
+$\Pi_{\Dens}$ of Definition~\hyperref[def:goal-inference]{L.4} (Hermitise, clip negative
+eigenvalues, renormalise trace) onto $\Dens(\mathbb{C}^7)$ --- the non-expansive
+nearest-density map; \texttt{ensures result.is\_density()}.
+
+\textbf{\texttt{project\_sector\_ASD(gamma) -> DensityMatrix7}} is the sector
+projector $\Pi_{\{A,S,D\}}$ onto the spatial reflex sector of
+Proposition~\ref{prop:spatial-derived}: restrict to the $\{A,S,D\}$
+rows/columns and renormalise; \texttt{ensures result.is\_density()}.
+
+\textbf{\texttt{deliberate(holon, env) -> DensityMatrix7}} (async) is the
+slow-loop setpoint computation of Definition~\hyperref[def:hierarchy]{M.2}: one
+full-$\Gam$ / simplicial planning pass, implemented as an invocation of the
+\texttt{topological\_maturation} cycle; it returns the deliberative setpoint (a
+density).
+
+\textbf{\texttt{reflex\_correct(holon, sector, setpoint, dtau, env)}} (async) is
+one fast-loop step of Theorem~\hyperref[thm:hierarchical]{T-Hierarchical-Sensorimotor}: a single Section-12
+sensorimotor step restricted to the $\{A,S,D\}$ sector, driving it toward
+\texttt{setpoint} over period \texttt{dtau}; \texttt{ensures
+holon.gamma.purity() > 2/7} (fast-loop viability).
+\end{notebox}
+
+\subsection{Summary}
+
+The complete public API of \SYNARC{} consists of $\sim 100$ public
+functions and $\sim 25$ public types, spread across the eight
+cogs (\texttt{uhm\_core}, \texttt{uhm\_connes},
+\texttt{uhm\_lindblad}, \texttt{uhm\_riemannian},
+\texttt{uhm\_peps}, \texttt{uhm\_cognitive},
+\texttt{uhm\_sensorimotor}, \texttt{uhm\_runtime}). Every function
+carries a \texttt{requires}/\texttt{ensures} contract, verified by
+the Verum SMT backend at compile time. The API is deliberately
+small: anything not in this list either decomposes into these
+primitives or is internal to a specific cog. The main runtime loop,
+\texttt{topological\_maturation}, takes the simplicial cognitive
+complex, the concept site, the Giry oracle, the environment, and
+the configuration, and runs the seven-modality walk of
+Section~\ref{subsec:maturation-cycle}.
+

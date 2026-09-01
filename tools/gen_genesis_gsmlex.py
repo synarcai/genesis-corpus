@@ -1,0 +1,104 @@
+#!/usr/bin/env python3
+"""GENESIS layer: THE GSM8K FOUR-PLACE LEXICON.
+
+The bill of materials measured from the real
+questions' own four-places [w NUMBER w]: top verbs
+(has/bought/buys/takes/eats/makes/sold/ate/needs/
+weighs) and top items (hours/minutes/miles/pounds/
+days/people/cookies/eggs/boxes/slices...). Shows are
+OUR stories on OUR numbers — the lexicon is a closed
+class, instances never copy benchmark strings (the
+leak court holds by substring).
+
+Discipline: [agent verb NUMBER item], three-verb
+episodes on one (agent, item) key, both polarities,
+instances vary by pass, no glyph pairs in-layer.
+"""
+
+from layer import emit
+
+
+from plural import by_count
+
+
+NAMES = ["ava", "ben", "carla", "dan",
+         "elena", "felix", "grace", "hugo"]
+ITEMS = ["hours", "minutes", "miles", "pounds",
+         "days", "people", "cookies", "eggs",
+         "boxes", "slices", "points", "pages",
+         "weeks", "students", "pieces", "cards", "dollars", "coins"]
+ADD_PAIRS = [
+    ("has", "buys"),
+    ("had", "bought"),
+    ("makes", "adds"),
+    ("takes", "needs"),
+]
+SUB_PAIRS = [
+    ("has", "eats"),
+    ("had", "sold"),
+    ("makes", "uses"),
+    ("takes", "loses"),
+]
+ASK_ADD = [("hold now", "holds"),
+           ("own now", "owns")]
+ASK_SUB = [("keep", "keeps"),
+           ("save", "saves")]
+
+
+def pass_shows(pi):
+    base = pi * 37
+    out = []
+    for i in range(len(NAMES) * 10):
+        # name index coprime-decoupled from the
+        # pair/polarity systematics (a lockstep
+        # gave buys ONE agent over 10 triples)
+        # the i//8 floor breaks any linear tie
+        # with (base+i): the first decoupling
+        # collapsed to identity (11≡3 mod 8 —
+        # buys got ava forever)
+        nm = NAMES[
+            (base + i + (i // 8) * 5)
+            % len(NAMES)
+        ]
+        it = ITEMS[
+            (base + i * 5) % len(ITEMS)
+        ]
+        a = (base + i * 7) % 9 + 4   # 4..12
+        b = (base + i * 3) % 3 + 1   # 1..3
+        add = (base + i) % 2 == 0
+        pick = ((base + i) // 2) % 4
+        if add:
+            (v1, v2) = ADD_PAIRS[pick]
+            (ask, av) = ASK_ADD[
+                ((base + i) // 2) % 2
+            ]
+            c = a + b
+            out.append(
+                f"{nm} {v1} {a} {by_count(a, it)}. "
+                f"{nm} {v2} {b} {by_count(b, it)} "
+                f"more. how many {it} does {nm} "
+                f"{ask}? {nm} {av} {c} "
+                f"{by_count(c, it)}."
+            )
+        else:
+            (v1, v2) = SUB_PAIRS[pick]
+            (ask, av) = ASK_SUB[
+                ((base + i) // 2) % 2
+            ]
+            c = a - b
+            out.append(
+                f"{nm} {v1} {a} {by_count(a, it)}. "
+                f"{nm} {v2} {b} {by_count(b, it)} "
+                f"away. how many {it} does {nm} "
+                f"{ask}? {nm} {av} {c} "
+                f"{by_count(c, it)}."
+            )
+    return out
+
+
+def main():
+    emit("datasets/genesis_gsmlex.txt", pass_shows)
+
+
+if __name__ == "__main__":
+    main()

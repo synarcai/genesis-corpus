@@ -1,0 +1,18 @@
+The corpus in `datasets/` and the language packs in `tools/langpacks/`
+are licensed under the Creative Commons Attribution 4.0 International
+License (CC BY 4.0).
+
+    Human-readable summary: https://creativecommons.org/licenses/by/4.0/
+    Legal code:             https://creativecommons.org/licenses/by/4.0/legalcode
+
+You are free to share and adapt this material for any purpose,
+including commercially, provided you give appropriate credit, provide a
+link to the license, and indicate if changes were made.
+
+The code in `tools/`, `courts/` and `scripts/` is licensed separately,
+under the Apache License 2.0 — see LICENSE.
+
+WHY TWO LICENSES. The generators, the courts and the organs are
+software and carry Apache-2.0 for its explicit patent grant; the corpus
+is data and carries the licence data is normally shared under. Mixing
+them under one text would misdescribe one of the two.

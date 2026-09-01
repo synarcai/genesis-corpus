@@ -1,0 +1,2069 @@
+заголовок уровня два: сила.
+# поле.
+heading level two: time.
+# measure.
+заголовок уровня три: слово.
+## свет.
+heading level three: sound.
+## forest.
+заголовок уровня один: гора.
+### круг.
+heading level one: point.
+# water.
+заголовок уровня три: город.
+## время.
+heading level three: road.
+## number.
+заголовок уровня один: камень.
+### звук.
+heading level one: house.
+### river.
+заголовок уровня два: мост.
+# точка.
+heading level two: line.
+## force.
+заголовок уровня один: поле.
+### дорога.
+heading level one: measure.
+### word.
+заголовок уровня два: свет.
+# дом.
+heading level two: forest.
+# mountain.
+заголовок уровня три: круг.
+## линия.
+heading level one: water.
+### city.
+заголовок уровня два: время.
+# мера.
+heading level two: number.
+# stone.
+заголовок уровня три: звук.
+## лес.
+heading level three: river.
+## bridge.
+заголовок уровня один: точка.
+# вода.
+heading level two: force.
+# field.
+заголовок уровня три: дорога.
+## число.
+heading level three: word.
+## light.
+заголовок уровня один: дом.
+### река.
+heading level one: mountain.
+### circle.
+заголовок уровня два: линия.
+## сила.
+heading level three: city.
+## time.
+заголовок уровня один: мера.
+### слово.
+heading level one: stone.
+### sound.
+заголовок уровня два: лес.
+# гора.
+heading level two: bridge.
+# point.
+заголовок уровня один: вода.
+### город.
+heading level one: field.
+### road.
+заголовок уровня два: число.
+# камень.
+heading level two: light.
+# house.
+заголовок уровня три: река.
+## мост.
+heading level three: circle.
+## line.
+
+список: сила и слово.
+- поле.
+- свет.
+list: time and sound.
+- measure.
+- forest.
+список: слово и гора.
+- свет.
+- круг.
+list: sound and point.
+- forest.
+- water.
+список: гора и город.
+- круг.
+- время.
+list: point and road.
+- water.
+- number.
+список: город и камень.
+- время.
+- звук.
+list: road and house.
+- number.
+- river.
+список: камень и мост.
+- звук.
+- точка.
+list: house and line.
+- river.
+- force.
+список: мост и поле.
+- точка.
+- дорога.
+list: line and measure.
+- force.
+- word.
+список: поле и свет.
+- дорога.
+- дом.
+list: measure and forest.
+- word.
+- mountain.
+список: свет и круг.
+- дом.
+- линия.
+list: forest and water.
+- mountain.
+- city.
+список: круг и время.
+- линия.
+- мера.
+list: water and number.
+- city.
+- stone.
+список: время и звук.
+- мера.
+- лес.
+list: number and river.
+- stone.
+- bridge.
+список: звук и точка.
+- лес.
+- вода.
+list: river and force.
+- bridge.
+- field.
+список: точка и дорога.
+- вода.
+- число.
+list: force and word.
+- field.
+- light.
+список: дорога и дом.
+- число.
+- река.
+list: word and mountain.
+- light.
+- circle.
+список: дом и линия.
+- река.
+- сила.
+list: mountain and city.
+- circle.
+- time.
+список: линия и мера.
+- сила.
+- слово.
+list: city and stone.
+- time.
+- sound.
+список: мера и лес.
+- слово.
+- гора.
+list: stone and bridge.
+- sound.
+- point.
+список: лес и вода.
+- гора.
+- город.
+list: bridge and field.
+- point.
+- road.
+список: вода и число.
+- город.
+- камень.
+list: field and light.
+- road.
+- house.
+список: число и река.
+- камень.
+- мост.
+list: light and circle.
+- house.
+- line.
+список: река и сила.
+- мост.
+- поле.
+list: circle and time.
+- line.
+- measure.
+
+раздел сила содержит дом.
+# поле.
+## река.
+section time contains mountain.
+# measure.
+## circle.
+раздел слово содержит линия.
+# свет.
+## сила.
+section sound contains city.
+# forest.
+## time.
+раздел гора содержит мера.
+# круг.
+## слово.
+section point contains stone.
+# water.
+## sound.
+раздел город содержит лес.
+# время.
+## гора.
+section road contains bridge.
+# number.
+## point.
+раздел камень содержит вода.
+# звук.
+## город.
+section house contains field.
+# river.
+## road.
+раздел мост содержит число.
+# точка.
+## камень.
+section line contains light.
+# force.
+## house.
+раздел поле содержит река.
+# дорога.
+## мост.
+section measure contains circle.
+# word.
+## line.
+раздел свет содержит сила.
+# дом.
+## поле.
+section forest contains time.
+# mountain.
+## measure.
+раздел круг содержит слово.
+# линия.
+## свет.
+section water contains sound.
+# city.
+## forest.
+раздел время содержит гора.
+# мера.
+## круг.
+section number contains point.
+# stone.
+## water.
+раздел звук содержит город.
+# лес.
+## время.
+section river contains road.
+# bridge.
+## number.
+раздел точка содержит камень.
+# вода.
+## звук.
+section force contains house.
+# field.
+## river.
+раздел дорога содержит мост.
+# число.
+## точка.
+section word contains line.
+# light.
+## force.
+раздел дом содержит поле.
+# река.
+## дорога.
+section mountain contains measure.
+# circle.
+## word.
+раздел линия содержит свет.
+# сила.
+## дом.
+section city contains forest.
+# time.
+## mountain.
+раздел мера содержит круг.
+# слово.
+## линия.
+section stone contains water.
+# sound.
+## city.
+раздел лес содержит время.
+# гора.
+## мера.
+section bridge contains number.
+# point.
+## stone.
+раздел вода содержит звук.
+# город.
+## лес.
+section field contains river.
+# road.
+## bridge.
+раздел число содержит точка.
+# камень.
+## вода.
+section light contains force.
+# house.
+## field.
+раздел река содержит дорога.
+# мост.
+## число.
+section circle contains word.
+# line.
+## light.
+
+the road from B to D goes through C.
+graph TD; E-->F; F-->G;
+путь от G к A идёт через H.
+the road from A to C goes through B.
+graph TD; D-->E; E-->F;
+путь от F к H идёт через G.
+the road from H to B goes through A.
+graph TD; C-->D; D-->E;
+путь от E к G идёт через F.
+the road from G to A goes through H.
+graph TD; B-->C; C-->D;
+путь от D к F идёт через E.
+the road from F to H goes through G.
+graph TD; A-->B; B-->C;
+путь от C к E идёт через D.
+the road from E to G goes through F.
+graph TD; H-->A; A-->B;
+путь от B к D идёт через C.
+the road from D to F goes through E.
+graph TD; G-->H; H-->A;
+путь от A к C идёт через B.
+the road from C to E goes through D.
+graph TD; F-->G; G-->H;
+путь от H к B идёт через A.
+
+draw the chain F H: graph TD; F-->H;
+нарисуй цепь B D: graph TD; B-->D;
+draw the chain E G: graph TD; E-->G;
+нарисуй цепь A C: graph TD; A-->C;
+draw the chain D F: graph TD; D-->F;
+нарисуй цепь H B: graph TD; H-->B;
+draw the chain C E: graph TD; C-->E;
+нарисуй цепь G A: graph TD; G-->A;
+draw the chain B D: graph TD; B-->D;
+нарисуй цепь F H: graph TD; F-->H;
+draw the chain A C: graph TD; A-->C;
+нарисуй цепь E G: graph TD; E-->G;
+draw the chain H B: graph TD; H-->B;
+нарисуй цепь D F: graph TD; D-->F;
+draw the chain G A: graph TD; G-->A;
+нарисуй цепь C E: graph TD; C-->E;
+
+$ 0 + 3 $ equals $ 3 $.
+$ 2 + 1 $ равно $ 3 $.
+$ 3 + 1 $ equals $ 4 $.
+$ 4 + 2 $ равно $ 6 $.
+$ 5 + 2 $ equals $ 7 $.
+$ 6 + 3 $ равно $ 9 $.
+$ 7 + 3 $ equals $ 10 $.
+$ 1 + 1 $ равно $ 2 $.
+$ 2 + 1 $ equals $ 3 $.
+$ 3 + 2 $ равно $ 5 $.
+$ 4 + 2 $ equals $ 6 $.
+$ 5 + 3 $ равно $ 8 $.
+$ 6 + 3 $ equals $ 9 $.
+$ 0 + 1 $ равно $ 1 $.
+$ 1 + 1 $ equals $ 2 $.
+$ 2 + 2 $ равно $ 4 $.
+$ 3 + 2 $ equals $ 5 $.
+$ 4 + 3 $ равно $ 7 $.
+$ 5 + 3 $ equals $ 8 $.
+$ 7 + 1 $ равно $ 8 $.
+$ 0 + 1 $ equals $ 1 $.
+$ 1 + 2 $ равно $ 3 $.
+$ 2 + 2 $ equals $ 4 $.
+$ 3 + 3 $ равно $ 6 $.
+$ 4 + 3 $ equals $ 7 $.
+$ 6 + 1 $ равно $ 7 $.
+$ 7 + 1 $ equals $ 8 $.
+$ 0 + 2 $ равно $ 2 $.
+$ 1 + 2 $ equals $ 3 $.
+$ 2 + 3 $ равно $ 5 $.
+$ 3 + 3 $ equals $ 6 $.
+$ 5 + 1 $ равно $ 6 $.
+$ 6 + 1 $ equals $ 7 $.
+$ 7 + 2 $ равно $ 9 $.
+$ 0 + 2 $ equals $ 2 $.
+$ 1 + 3 $ равно $ 4 $.
+$ 2 + 3 $ equals $ 5 $.
+$ 4 + 1 $ равно $ 5 $.
+$ 5 + 1 $ equals $ 6 $.
+$ 6 + 2 $ равно $ 8 $.
+$ 7 + 2 $ equals $ 9 $.
+$ 0 + 3 $ равно $ 3 $.
+$ 1 + 3 $ equals $ 4 $.
+$ 3 + 1 $ равно $ 4 $.
+$ 4 + 1 $ equals $ 5 $.
+$ 5 + 2 $ равно $ 7 $.
+$ 6 + 2 $ equals $ 8 $.
+$ 7 + 3 $ равно $ 10 $.
+
+# water.
+заголовок уровня один: поле.
+# мера.
+heading level three: word.
+### sound.
+заголовок уровня три: река.
+### круг.
+heading level two: line.
+### city.
+заголовок уровня три: дорога.
+### слово.
+heading level two: light.
+## forest.
+заголовок уровня два: мост.
+## линия.
+heading level two: force.
+## time.
+заголовок уровня два: число.
+## свет.
+heading level one: house.
+# mountain.
+заголовок уровня один: точка.
+## сила.
+heading level one: field.
+# measure.
+заголовок уровня один: камень.
+# дом.
+heading level three: river.
+### circle.
+заголовок уровня один: вода.
+# поле.
+heading level three: road.
+### word.
+заголовок уровня три: звук.
+### река.
+heading level two: bridge.
+## line.
+заголовок уровня три: город.
+### дорога.
+heading level two: number.
+## light.
+заголовок уровня два: лес.
+## мост.
+heading level one: point.
+## force.
+заголовок уровня два: время.
+## число.
+heading level one: stone.
+# house.
+заголовок уровня один: гора.
+# точка.
+heading level one: water.
+# field.
+заголовок уровня один: мера.
+# камень.
+heading level three: sound.
+### river.
+заголовок уровня три: круг.
+# вода.
+heading level three: city.
+### road.
+заголовок уровня три: слово.
+### звук.
+heading level two: forest.
+## bridge.
+заголовок уровня два: линия.
+### город.
+heading level two: time.
+## number.
+заголовок уровня два: свет.
+## лес.
+heading level one: mountain.
+# point.
+заголовок уровня два: сила.
+## время.
+heading level one: measure.
+# stone.
+заголовок уровня один: дом.
+# гора.
+heading level three: circle.
+
+- water.
+- number.
+список: поле и свет.
+- мера.
+- лес.
+list: word and mountain.
+- sound.
+- point.
+список: река и сила.
+- круг.
+- время.
+list: line and measure.
+- city.
+- stone.
+список: дорога и дом.
+- слово.
+- гора.
+list: light and circle.
+- forest.
+- water.
+список: мост и поле.
+- линия.
+- мера.
+list: force and word.
+- time.
+- sound.
+список: число и река.
+- свет.
+- круг.
+list: house and line.
+- mountain.
+- city.
+список: точка и дорога.
+- сила.
+- слово.
+list: field and light.
+- measure.
+- forest.
+список: камень и мост.
+- дом.
+- линия.
+list: river and force.
+- circle.
+- time.
+список: вода и число.
+- поле.
+- свет.
+list: road and house.
+- word.
+- mountain.
+список: звук и точка.
+- река.
+- сила.
+list: bridge and field.
+- line.
+- measure.
+список: город и камень.
+- дорога.
+- дом.
+list: number and river.
+- light.
+- circle.
+список: лес и вода.
+- мост.
+- поле.
+list: point and road.
+- force.
+- word.
+список: время и звук.
+- число.
+- река.
+list: stone and bridge.
+- house.
+- line.
+список: гора и город.
+- точка.
+- дорога.
+list: water and number.
+- field.
+- light.
+список: мера и лес.
+- камень.
+- мост.
+list: sound and point.
+- river.
+- force.
+список: круг и время.
+- вода.
+- число.
+list: city and stone.
+- road.
+- house.
+список: слово и гора.
+- звук.
+- точка.
+list: forest and water.
+- bridge.
+- field.
+список: линия и мера.
+- город.
+- камень.
+list: time and sound.
+- number.
+- river.
+список: свет и круг.
+- лес.
+- вода.
+list: mountain and city.
+- point.
+- road.
+список: сила и слово.
+- время.
+- звук.
+list: measure and forest.
+- stone.
+- bridge.
+список: дом и линия.
+- гора.
+- город.
+list: circle and time.
+
+# water.
+## sound.
+раздел поле содержит река.
+# мера.
+## круг.
+section word contains line.
+# sound.
+## city.
+раздел река содержит дорога.
+# круг.
+## слово.
+section line contains light.
+# city.
+## forest.
+раздел дорога содержит мост.
+# слово.
+## линия.
+section light contains force.
+# forest.
+## time.
+раздел мост содержит число.
+# линия.
+## свет.
+section force contains house.
+# time.
+## mountain.
+раздел число содержит точка.
+# свет.
+## сила.
+section house contains field.
+# mountain.
+## measure.
+раздел точка содержит камень.
+# сила.
+## дом.
+section field contains river.
+# measure.
+## circle.
+раздел камень содержит вода.
+# дом.
+## поле.
+section river contains road.
+# circle.
+## word.
+раздел вода содержит звук.
+# поле.
+## река.
+section road contains bridge.
+# word.
+## line.
+раздел звук содержит город.
+# река.
+## дорога.
+section bridge contains number.
+# line.
+## light.
+раздел город содержит лес.
+# дорога.
+## мост.
+section number contains point.
+# light.
+## force.
+раздел лес содержит время.
+# мост.
+## число.
+section point contains stone.
+# force.
+## house.
+раздел время содержит гора.
+# число.
+## точка.
+section stone contains water.
+# house.
+## field.
+раздел гора содержит мера.
+# точка.
+## камень.
+section water contains sound.
+# field.
+## river.
+раздел мера содержит круг.
+# камень.
+## вода.
+section sound contains city.
+# river.
+## road.
+раздел круг содержит слово.
+# вода.
+## звук.
+section city contains forest.
+# road.
+## bridge.
+раздел слово содержит линия.
+# звук.
+## город.
+section forest contains time.
+# bridge.
+## number.
+раздел линия содержит свет.
+# город.
+## лес.
+section time contains mountain.
+# number.
+## point.
+раздел свет содержит сила.
+# лес.
+## время.
+section mountain contains measure.
+# point.
+## stone.
+раздел сила содержит дом.
+# время.
+## гора.
+section measure contains circle.
+# stone.
+## water.
+раздел дом содержит поле.
+# гора.
+## мера.
+section circle contains word.
+
+the road from A to C goes through B.
+путь от E к G идёт через F.
+graph TD; A-->B; B-->C;
+the road from D to F goes through E.
+путь от H к B идёт через A.
+graph TD; D-->E; E-->F;
+the road from G to A goes through H.
+путь от C к E идёт через D.
+graph TD; G-->H; H-->A;
+the road from B to D goes through C.
+путь от F к H идёт через G.
+graph TD; B-->C; C-->D;
+the road from E to G goes through F.
+путь от A к C идёт через B.
+graph TD; E-->F; F-->G;
+the road from H to B goes through A.
+путь от D к F идёт через E.
+graph TD; H-->A; A-->B;
+the road from C to E goes through D.
+путь от G к A идёт через H.
+graph TD; C-->D; D-->E;
+the road from F to H goes through G.
+путь от B к D идёт через C.
+graph TD; F-->G; G-->H;
+
+нарисуй цепь E G: graph TD; E-->G;
+draw the chain B D: graph TD; B-->D;
+нарисуй цепь H B: graph TD; H-->B;
+draw the chain E G: graph TD; E-->G;
+нарисуй цепь C E: graph TD; C-->E;
+draw the chain H B: graph TD; H-->B;
+нарисуй цепь F H: graph TD; F-->H;
+draw the chain C E: graph TD; C-->E;
+нарисуй цепь A C: graph TD; A-->C;
+draw the chain F H: graph TD; F-->H;
+нарисуй цепь D F: graph TD; D-->F;
+draw the chain A C: graph TD; A-->C;
+нарисуй цепь G A: graph TD; G-->A;
+draw the chain D F: graph TD; D-->F;
+нарисуй цепь B D: graph TD; B-->D;
+draw the chain G A: graph TD; G-->A;
+
+$ 0 + 2 $ равно $ 2 $.
+$ 2 + 1 $ equals $ 3 $.
+$ 4 + 1 $ равно $ 5 $.
+$ 5 + 3 $ equals $ 8 $.
+$ 7 + 3 $ равно $ 10 $.
+$ 1 + 2 $ equals $ 3 $.
+$ 3 + 2 $ равно $ 5 $.
+$ 5 + 1 $ equals $ 6 $.
+$ 7 + 1 $ равно $ 8 $.
+$ 0 + 3 $ equals $ 3 $.
+$ 2 + 3 $ равно $ 5 $.
+$ 4 + 2 $ equals $ 6 $.
+$ 6 + 2 $ равно $ 8 $.
+$ 0 + 1 $ equals $ 1 $.
+$ 2 + 1 $ равно $ 3 $.
+$ 3 + 3 $ equals $ 6 $.
+$ 5 + 3 $ равно $ 8 $.
+$ 7 + 2 $ equals $ 9 $.
+$ 1 + 2 $ равно $ 3 $.
+$ 3 + 1 $ equals $ 4 $.
+$ 5 + 1 $ равно $ 6 $.
+$ 6 + 3 $ equals $ 9 $.
+$ 0 + 3 $ равно $ 3 $.
+$ 2 + 2 $ equals $ 4 $.
+$ 4 + 2 $ равно $ 6 $.
+$ 6 + 1 $ equals $ 7 $.
+$ 0 + 1 $ равно $ 1 $.
+$ 1 + 3 $ equals $ 4 $.
+$ 3 + 3 $ равно $ 6 $.
+$ 5 + 2 $ equals $ 7 $.
+$ 7 + 2 $ равно $ 9 $.
+$ 1 + 1 $ equals $ 2 $.
+$ 3 + 1 $ равно $ 4 $.
+$ 4 + 3 $ equals $ 7 $.
+$ 6 + 3 $ равно $ 9 $.
+$ 0 + 2 $ equals $ 2 $.
+$ 2 + 2 $ равно $ 4 $.
+$ 4 + 1 $ equals $ 5 $.
+$ 6 + 1 $ равно $ 7 $.
+$ 7 + 3 $ equals $ 10 $.
+$ 1 + 3 $ равно $ 4 $.
+$ 3 + 2 $ equals $ 5 $.
+$ 5 + 2 $ равно $ 7 $.
+$ 7 + 1 $ equals $ 8 $.
+$ 1 + 1 $ равно $ 2 $.
+$ 2 + 3 $ equals $ 5 $.
+$ 4 + 3 $ равно $ 7 $.
+$ 6 + 2 $ equals $ 8 $.
+
+заголовок уровня три: город.
+### road.
+heading level three: word.
+# дом.
+заголовок уровня один: гора.
+# point.
+heading level two: force.
+### дорога.
+заголовок уровня три: слово.
+### sound.
+heading level three: river.
+# точка.
+заголовок уровня два: сила.
+## time.
+heading level two: number.
+### звук.
+заголовок уровня три: река.
+### circle.
+heading level one: water.
+## время.
+заголовок уровня два: число.
+## light.
+heading level two: forest.
+### круг.
+заголовок уровня один: вода.
+# field.
+heading level one: measure.
+## свет.
+заголовок уровня два: лес.
+## bridge.
+heading level two: line.
+# поле.
+заголовок уровня один: мера.
+# stone.
+heading level one: house.
+## мост.
+заголовок уровня два: линия.
+### city.
+heading level three: road.
+# камень.
+заголовок уровня один: дом.
+# mountain.
+heading level one: point.
+### город.
+заголовок уровня три: дорога.
+### word.
+heading level three: sound.
+# гора.
+заголовок уровня один: точка.
+## force.
+heading level two: time.
+### слово.
+заголовок уровня три: звук.
+### river.
+heading level three: circle.
+## сила.
+заголовок уровня два: время.
+## number.
+heading level two: light.
+### река.
+заголовок уровня три: круг.
+# water.
+heading level one: field.
+## число.
+заголовок уровня два: свет.
+## forest.
+heading level two: bridge.
+# вода.
+заголовок уровня один: поле.
+# measure.
+heading level one: stone.
+## лес.
+заголовок уровня два: мост.
+## line.
+heading level three: city.
+# мера.
+заголовок уровня один: камень.
+# house.
+heading level one: mountain.
+## линия.
+
+список: город и камень.
+- road.
+- house.
+list: word and mountain.
+- дом.
+- линия.
+список: гора и город.
+- point.
+- road.
+list: force and word.
+- дорога.
+- дом.
+список: слово и гора.
+- sound.
+- point.
+list: river and force.
+- точка.
+- дорога.
+список: сила и слово.
+- time.
+- sound.
+list: number and river.
+- звук.
+- точка.
+список: река и сила.
+- circle.
+- time.
+list: water and number.
+- время.
+- звук.
+список: число и река.
+- light.
+- circle.
+list: forest and water.
+- круг.
+- время.
+список: вода и число.
+- field.
+- light.
+list: measure and forest.
+- свет.
+- круг.
+список: лес и вода.
+- bridge.
+- field.
+list: line and measure.
+- поле.
+- свет.
+список: мера и лес.
+- stone.
+- bridge.
+list: house and line.
+- мост.
+- поле.
+список: линия и мера.
+- city.
+- stone.
+list: road and house.
+- камень.
+- мост.
+список: дом и линия.
+- mountain.
+- city.
+list: point and road.
+- город.
+- камень.
+список: дорога и дом.
+- word.
+- mountain.
+list: sound and point.
+- гора.
+- город.
+список: точка и дорога.
+- force.
+- word.
+list: time and sound.
+- слово.
+- гора.
+список: звук и точка.
+- river.
+- force.
+list: circle and time.
+- сила.
+- слово.
+список: время и звук.
+- number.
+- river.
+list: light and circle.
+- река.
+- сила.
+список: круг и время.
+- water.
+- number.
+list: field and light.
+- число.
+- река.
+список: свет и круг.
+- forest.
+- water.
+list: bridge and field.
+- вода.
+- число.
+список: поле и свет.
+- measure.
+- forest.
+list: stone and bridge.
+- лес.
+- вода.
+список: мост и поле.
+- line.
+- measure.
+list: city and stone.
+- мера.
+- лес.
+список: камень и мост.
+- house.
+- line.
+list: mountain and city.
+- линия.
+- мера.
+
+раздел город содержит лес.
+# road.
+## bridge.
+section word contains line.
+# дом.
+## поле.
+раздел гора содержит мера.
+# point.
+## stone.
+section force contains house.
+# дорога.
+## мост.
+раздел слово содержит линия.
+# sound.
+## city.
+section river contains road.
+# точка.
+## камень.
+раздел сила содержит дом.
+# time.
+## mountain.
+section number contains point.
+# звук.
+## город.
+раздел река содержит дорога.
+# circle.
+## word.
+section water contains sound.
+# время.
+## гора.
+раздел число содержит точка.
+# light.
+## force.
+section forest contains time.
+# круг.
+## слово.
+раздел вода содержит звук.
+# field.
+## river.
+section measure contains circle.
+# свет.
+## сила.
+раздел лес содержит время.
+# bridge.
+## number.
+section line contains light.
+# поле.
+## река.
+раздел мера содержит круг.
+# stone.
+## water.
+section house contains field.
+# мост.
+## число.
+раздел линия содержит свет.
+# city.
+## forest.
+section road contains bridge.
+# камень.
+## вода.
+раздел дом содержит поле.
+# mountain.
+## measure.
+section point contains stone.
+# город.
+## лес.
+раздел дорога содержит мост.
+# word.
+## line.
+section sound contains city.
+# гора.
+## мера.
+раздел точка содержит камень.
+# force.
+## house.
+section time contains mountain.
+# слово.
+## линия.
+раздел звук содержит город.
+# river.
+## road.
+section circle contains word.
+# сила.
+## дом.
+раздел время содержит гора.
+# number.
+## point.
+section light contains force.
+# река.
+## дорога.
+раздел круг содержит слово.
+# water.
+## sound.
+section field contains river.
+# число.
+## точка.
+раздел свет содержит сила.
+# forest.
+## time.
+section bridge contains number.
+# вода.
+## звук.
+раздел поле содержит река.
+# measure.
+## circle.
+section stone contains water.
+# лес.
+## время.
+раздел мост содержит число.
+# line.
+## light.
+section city contains forest.
+# мера.
+## круг.
+раздел камень содержит вода.
+# house.
+## field.
+section mountain contains measure.
+# линия.
+## свет.
+
+graph TD; D-->E; E-->F;
+путь от H к B идёт через A.
+the road from D to F goes through E.
+graph TD; A-->B; B-->C;
+путь от E к G идёт через F.
+the road from A to C goes through B.
+graph TD; F-->G; G-->H;
+путь от B к D идёт через C.
+the road from F to H goes through G.
+graph TD; C-->D; D-->E;
+путь от G к A идёт через H.
+the road from C to E goes through D.
+graph TD; H-->A; A-->B;
+путь от D к F идёт через E.
+the road from H to B goes through A.
+graph TD; E-->F; F-->G;
+путь от A к C идёт через B.
+the road from E to G goes through F.
+graph TD; B-->C; C-->D;
+путь от F к H идёт через G.
+the road from B to D goes through C.
+graph TD; G-->H; H-->A;
+путь от C к E идёт через D.
+the road from G to A goes through H.
+
+draw the chain H B: graph TD; H-->B;
+нарисуй цепь G A: graph TD; G-->A;
+draw the chain E G: graph TD; E-->G;
+нарисуй цепь D F: graph TD; D-->F;
+draw the chain B D: graph TD; B-->D;
+нарисуй цепь A C: graph TD; A-->C;
+draw the chain G A: graph TD; G-->A;
+нарисуй цепь F H: graph TD; F-->H;
+draw the chain D F: graph TD; D-->F;
+нарисуй цепь C E: graph TD; C-->E;
+draw the chain A C: graph TD; A-->C;
+нарисуй цепь H B: graph TD; H-->B;
+draw the chain F H: graph TD; F-->H;
+нарисуй цепь E G: graph TD; E-->G;
+draw the chain C E: graph TD; C-->E;
+нарисуй цепь B D: graph TD; B-->D;
+
+$ 1 + 2 $ equals $ 3 $.
+$ 3 + 3 $ равно $ 6 $.
+$ 5 + 3 $ equals $ 8 $.
+$ 0 + 1 $ равно $ 1 $.
+$ 2 + 1 $ equals $ 3 $.
+$ 4 + 2 $ равно $ 6 $.
+$ 6 + 2 $ equals $ 8 $.
+$ 0 + 3 $ равно $ 3 $.
+$ 2 + 3 $ equals $ 5 $.
+$ 5 + 1 $ равно $ 6 $.
+$ 7 + 1 $ equals $ 8 $.
+$ 1 + 2 $ равно $ 3 $.
+$ 3 + 2 $ equals $ 5 $.
+$ 5 + 3 $ равно $ 8 $.
+$ 7 + 3 $ equals $ 10 $.
+$ 2 + 1 $ равно $ 3 $.
+$ 4 + 1 $ equals $ 5 $.
+$ 6 + 2 $ равно $ 8 $.
+$ 0 + 2 $ equals $ 2 $.
+$ 2 + 3 $ равно $ 5 $.
+$ 4 + 3 $ equals $ 7 $.
+$ 7 + 1 $ равно $ 8 $.
+$ 1 + 1 $ equals $ 2 $.
+$ 3 + 2 $ равно $ 5 $.
+$ 5 + 2 $ equals $ 7 $.
+$ 7 + 3 $ равно $ 10 $.
+$ 1 + 3 $ equals $ 4 $.
+$ 4 + 1 $ равно $ 5 $.
+$ 6 + 1 $ equals $ 7 $.
+$ 0 + 2 $ равно $ 2 $.
+$ 2 + 2 $ equals $ 4 $.
+$ 4 + 3 $ равно $ 7 $.
+$ 6 + 3 $ equals $ 9 $.
+$ 1 + 1 $ равно $ 2 $.
+$ 3 + 1 $ equals $ 4 $.
+$ 5 + 2 $ равно $ 7 $.
+$ 7 + 2 $ equals $ 9 $.
+$ 1 + 3 $ равно $ 4 $.
+$ 3 + 3 $ equals $ 6 $.
+$ 6 + 1 $ равно $ 7 $.
+$ 0 + 1 $ equals $ 1 $.
+$ 2 + 2 $ равно $ 4 $.
+$ 4 + 2 $ equals $ 6 $.
+$ 6 + 3 $ равно $ 9 $.
+$ 0 + 3 $ equals $ 3 $.
+$ 3 + 1 $ равно $ 4 $.
+$ 5 + 1 $ equals $ 6 $.
+$ 7 + 2 $ равно $ 9 $.
+
+## сила.
+заголовок уровня три: дорога.
+# stone.
+heading level two: forest.
+# точка.
+заголовок уровня три: город.
+# measure.
+heading level two: light.
+# гора.
+заголовок уровня два: линия.
+# field.
+heading level two: number.
+# дом.
+заголовок уровня два: мост.
+# water.
+heading level two: time.
+# камень.
+заголовок уровня два: лес.
+### circle.
+heading level two: force.
+# мера.
+заголовок уровня два: свет.
+### river.
+heading level one: point.
+# поле.
+заголовок уровня два: число.
+### sound.
+heading level one: mountain.
+# вода.
+заголовок уровня два: время.
+### word.
+heading level one: house.
+### круг.
+заголовок уровня два: сила.
+### road.
+heading level one: stone.
+### река.
+заголовок уровня один: точка.
+### city.
+heading level one: measure.
+### звук.
+заголовок уровня один: гора.
+## line.
+heading level one: field.
+### слово.
+заголовок уровня один: дом.
+## bridge.
+heading level one: water.
+### дорога.
+заголовок уровня один: камень.
+## forest.
+heading level three: circle.
+### город.
+заголовок уровня один: мера.
+## light.
+heading level three: river.
+## линия.
+заголовок уровня один: поле.
+## number.
+heading level three: sound.
+## мост.
+заголовок уровня один: вода.
+## time.
+heading level three: word.
+## лес.
+заголовок уровня три: круг.
+## force.
+heading level three: road.
+## свет.
+заголовок уровня три: река.
+# point.
+heading level three: city.
+## число.
+заголовок уровня три: звук.
+# mountain.
+heading level two: line.
+## время.
+заголовок уровня три: слово.
+# house.
+heading level two: bridge.
+
+- сила.
+- слово.
+список: дорога и дом.
+- stone.
+- bridge.
+list: forest and water.
+- точка.
+- дорога.
+список: город и камень.
+- measure.
+- forest.
+list: light and circle.
+- гора.
+- город.
+список: линия и мера.
+- field.
+- light.
+list: number and river.
+- дом.
+- линия.
+список: мост и поле.
+- water.
+- number.
+list: time and sound.
+- камень.
+- мост.
+список: лес и вода.
+- circle.
+- time.
+list: force and word.
+- мера.
+- лес.
+список: свет и круг.
+- river.
+- force.
+list: point and road.
+- поле.
+- свет.
+список: число и река.
+- sound.
+- point.
+list: mountain and city.
+- вода.
+- число.
+список: время и звук.
+- word.
+- mountain.
+list: house and line.
+- круг.
+- время.
+список: сила и слово.
+- road.
+- house.
+list: stone and bridge.
+- река.
+- сила.
+список: точка и дорога.
+- city.
+- stone.
+list: measure and forest.
+- звук.
+- точка.
+список: гора и город.
+- line.
+- measure.
+list: field and light.
+- слово.
+- гора.
+список: дом и линия.
+- bridge.
+- field.
+list: water and number.
+- дорога.
+- дом.
+список: камень и мост.
+- forest.
+- water.
+list: circle and time.
+- город.
+- камень.
+список: мера и лес.
+- light.
+- circle.
+list: river and force.
+- линия.
+- мера.
+список: поле и свет.
+- number.
+- river.
+list: sound and point.
+- мост.
+- поле.
+список: вода и число.
+- time.
+- sound.
+list: word and mountain.
+- лес.
+- вода.
+список: круг и время.
+- force.
+- word.
+list: road and house.
+- свет.
+- круг.
+список: река и сила.
+- point.
+- road.
+list: city and stone.
+- число.
+- река.
+список: звук и точка.
+- mountain.
+- city.
+list: line and measure.
+- время.
+- звук.
+список: слово и гора.
+- house.
+- line.
+list: bridge and field.
+
+# сила.
+## дом.
+раздел дорога содержит мост.
+# stone.
+## water.
+section forest contains time.
+# точка.
+## камень.
+раздел город содержит лес.
+# measure.
+## circle.
+section light contains force.
+# гора.
+## мера.
+раздел линия содержит свет.
+# field.
+## river.
+section number contains point.
+# дом.
+## поле.
+раздел мост содержит число.
+# water.
+## sound.
+section time contains mountain.
+# камень.
+## вода.
+раздел лес содержит время.
+# circle.
+## word.
+section force contains house.
+# мера.
+## круг.
+раздел свет содержит сила.
+# river.
+## road.
+section point contains stone.
+# поле.
+## река.
+раздел число содержит точка.
+# sound.
+## city.
+section mountain contains measure.
+# вода.
+## звук.
+раздел время содержит гора.
+# word.
+## line.
+section house contains field.
+# круг.
+## слово.
+раздел сила содержит дом.
+# road.
+## bridge.
+section stone contains water.
+# река.
+## дорога.
+раздел точка содержит камень.
+# city.
+## forest.
+section measure contains circle.
+# звук.
+## город.
+раздел гора содержит мера.
+# line.
+## light.
+section field contains river.
+# слово.
+## линия.
+раздел дом содержит поле.
+# bridge.
+## number.
+section water contains sound.
+# дорога.
+## мост.
+раздел камень содержит вода.
+# forest.
+## time.
+section circle contains word.
+# город.
+## лес.
+раздел мера содержит круг.
+# light.
+## force.
+section river contains road.
+# линия.
+## свет.
+раздел поле содержит река.
+# number.
+## point.
+section sound contains city.
+# мост.
+## число.
+раздел вода содержит звук.
+# time.
+## mountain.
+section word contains line.
+# лес.
+## время.
+раздел круг содержит слово.
+# force.
+## house.
+section road contains bridge.
+# свет.
+## сила.
+раздел река содержит дорога.
+# point.
+## stone.
+section city contains forest.
+# число.
+## точка.
+раздел звук содержит город.
+# mountain.
+## measure.
+section line contains light.
+# время.
+## гора.
+раздел слово содержит линия.
+# house.
+## field.
+section bridge contains number.
+
+путь от B к D идёт через C.
+graph TD; H-->A; A-->B;
+the road from E to G goes through F.
+путь от C к E идёт через D.
+graph TD; A-->B; B-->C;
+the road from F to H goes through G.
+путь от D к F идёт через E.
+graph TD; B-->C; C-->D;
+the road from G to A goes through H.
+путь от E к G идёт через F.
+graph TD; C-->D; D-->E;
+the road from H to B goes through A.
+путь от F к H идёт через G.
+graph TD; D-->E; E-->F;
+the road from A to C goes through B.
+путь от G к A идёт через H.
+graph TD; E-->F; F-->G;
+the road from B to D goes through C.
+путь от H к B идёт через A.
+graph TD; F-->G; G-->H;
+the road from C to E goes through D.
+путь от A к C идёт через B.
+graph TD; G-->H; H-->A;
+the road from D to F goes through E.
+
+нарисуй цепь F H: graph TD; F-->H;
+draw the chain F H: graph TD; F-->H;
+нарисуй цепь G A: graph TD; G-->A;
+draw the chain G A: graph TD; G-->A;
+нарисуй цепь H B: graph TD; H-->B;
+draw the chain H B: graph TD; H-->B;
+нарисуй цепь A C: graph TD; A-->C;
+draw the chain A C: graph TD; A-->C;
+нарисуй цепь B D: graph TD; B-->D;
+draw the chain B D: graph TD; B-->D;
+нарисуй цепь C E: graph TD; C-->E;
+draw the chain C E: graph TD; C-->E;
+нарисуй цепь D F: graph TD; D-->F;
+draw the chain D F: graph TD; D-->F;
+нарисуй цепь E G: graph TD; E-->G;
+draw the chain E G: graph TD; E-->G;
+
+$ 0 + 3 $ равно $ 3 $.
+$ 3 + 2 $ equals $ 5 $.
+$ 6 + 2 $ равно $ 8 $.
+$ 1 + 1 $ equals $ 2 $.
+$ 4 + 1 $ равно $ 5 $.
+$ 6 + 3 $ equals $ 9 $.
+$ 1 + 3 $ равно $ 4 $.
+$ 4 + 2 $ equals $ 6 $.
+$ 7 + 2 $ равно $ 9 $.
+$ 2 + 1 $ equals $ 3 $.
+$ 5 + 1 $ равно $ 6 $.
+$ 7 + 3 $ equals $ 10 $.
+$ 2 + 3 $ равно $ 5 $.
+$ 5 + 2 $ equals $ 7 $.
+$ 0 + 2 $ равно $ 2 $.
+$ 3 + 1 $ equals $ 4 $.
+$ 6 + 1 $ равно $ 7 $.
+$ 0 + 3 $ equals $ 3 $.
+$ 3 + 3 $ равно $ 6 $.
+$ 6 + 2 $ equals $ 8 $.
+$ 1 + 2 $ равно $ 3 $.
+$ 4 + 1 $ equals $ 5 $.
+$ 7 + 1 $ равно $ 8 $.
+$ 1 + 3 $ equals $ 4 $.
+$ 4 + 3 $ равно $ 7 $.
+$ 7 + 2 $ equals $ 9 $.
+$ 2 + 2 $ равно $ 4 $.
+$ 5 + 1 $ equals $ 6 $.
+$ 0 + 1 $ равно $ 1 $.
+$ 2 + 3 $ equals $ 5 $.
+$ 5 + 3 $ равно $ 8 $.
+$ 0 + 2 $ equals $ 2 $.
+$ 3 + 2 $ равно $ 5 $.
+$ 6 + 1 $ equals $ 7 $.
+$ 1 + 1 $ равно $ 2 $.
+$ 3 + 3 $ equals $ 6 $.
+$ 6 + 3 $ равно $ 9 $.
+$ 1 + 2 $ equals $ 3 $.
+$ 4 + 2 $ равно $ 6 $.
+$ 7 + 1 $ equals $ 8 $.
+$ 2 + 1 $ равно $ 3 $.
+$ 4 + 3 $ equals $ 7 $.
+$ 7 + 3 $ равно $ 10 $.
+$ 2 + 2 $ equals $ 4 $.
+$ 5 + 2 $ равно $ 7 $.
+$ 0 + 1 $ equals $ 1 $.
+$ 3 + 1 $ равно $ 4 $.
+$ 5 + 3 $ equals $ 8 $.
+
+# поле.
+heading level two: number.
+# house.
+заголовок уровня три: круг.
+### город.
+heading level one: measure.
+### sound.
+заголовок уровня два: мост.
+## сила.
+heading level three: road.
+## light.
+заголовок уровня один: гора.
+# вода.
+heading level two: time.
+# stone.
+заголовок уровня три: река.
+## линия.
+heading level one: field.
+### word.
+заголовок уровня два: лес.
+# точка.
+heading level three: city.
+## number.
+заголовок уровня один: дом.
+### круг.
+heading level two: force.
+# measure.
+заголовок уровня три: звук.
+## мост.
+heading level one: water.
+### road.
+заголовок уровня два: свет.
+# гора.
+heading level two: line.
+## time.
+заголовок уровня один: камень.
+### река.
+heading level one: point.
+# field.
+заголовок уровня три: слово.
+## лес.
+heading level three: circle.
+### city.
+заголовок уровня два: число.
+# дом.
+heading level two: bridge.
+## force.
+заголовок уровня один: мера.
+### звук.
+heading level one: mountain.
+# water.
+заголовок уровня три: дорога.
+## свет.
+heading level three: river.
+## line.
+заголовок уровня два: время.
+# камень.
+heading level two: forest.
+# point.
+заголовок уровня один: поле.
+### слово.
+heading level one: house.
+### circle.
+заголовок уровня три: город.
+## число.
+heading level three: sound.
+## bridge.
+заголовок уровня два: сила.
+# мера.
+heading level two: light.
+# mountain.
+заголовок уровня один: вода.
+### дорога.
+heading level one: stone.
+### river.
+заголовок уровня два: линия.
+## время.
+heading level three: word.
+## forest.
+заголовок уровня один: точка.
+
+- поле.
+- свет.
+list: number and river.
+- house.
+- line.
+список: круг и время.
+- город.
+- камень.
+list: measure and forest.
+- sound.
+- point.
+список: мост и поле.
+- сила.
+- слово.
+list: road and house.
+- light.
+- circle.
+список: гора и город.
+- вода.
+- число.
+list: time and sound.
+- stone.
+- bridge.
+список: река и сила.
+- линия.
+- мера.
+list: field and light.
+- word.
+- mountain.
+список: лес и вода.
+- точка.
+- дорога.
+list: city and stone.
+- number.
+- river.
+список: дом и линия.
+- круг.
+- время.
+list: force and word.
+- measure.
+- forest.
+список: звук и точка.
+- мост.
+- поле.
+list: water and number.
+- road.
+- house.
+список: свет и круг.
+- гора.
+- город.
+list: line and measure.
+- time.
+- sound.
+список: камень и мост.
+- река.
+- сила.
+list: point and road.
+- field.
+- light.
+список: слово и гора.
+- лес.
+- вода.
+list: circle and time.
+- city.
+- stone.
+список: число и река.
+- дом.
+- линия.
+list: bridge and field.
+- force.
+- word.
+список: мера и лес.
+- звук.
+- точка.
+list: mountain and city.
+- water.
+- number.
+список: дорога и дом.
+- свет.
+- круг.
+list: river and force.
+- line.
+- measure.
+список: время и звук.
+- камень.
+- мост.
+list: forest and water.
+- point.
+- road.
+список: поле и свет.
+- слово.
+- гора.
+list: house and line.
+- circle.
+- time.
+список: город и камень.
+- число.
+- река.
+list: sound and point.
+- bridge.
+- field.
+список: сила и слово.
+- мера.
+- лес.
+list: light and circle.
+- mountain.
+- city.
+список: вода и число.
+- дорога.
+- дом.
+list: stone and bridge.
+- river.
+- force.
+список: линия и мера.
+- время.
+- звук.
+list: word and mountain.
+- forest.
+- water.
+список: точка и дорога.
+
+# поле.
+## река.
+section number contains point.
+# house.
+## field.
+раздел круг содержит слово.
+# город.
+## лес.
+section measure contains circle.
+# sound.
+## city.
+раздел мост содержит число.
+# сила.
+## дом.
+section road contains bridge.
+# light.
+## force.
+раздел гора содержит мера.
+# вода.
+## звук.
+section time contains mountain.
+# stone.
+## water.
+раздел река содержит дорога.
+# линия.
+## свет.
+section field contains river.
+# word.
+## line.
+раздел лес содержит время.
+# точка.
+## камень.
+section city contains forest.
+# number.
+## point.
+раздел дом содержит поле.
+# круг.
+## слово.
+section force contains house.
+# measure.
+## circle.
+раздел звук содержит город.
+# мост.
+## число.
+section water contains sound.
+# road.
+## bridge.
+раздел свет содержит сила.
+# гора.
+## мера.
+section line contains light.
+# time.
+## mountain.
+раздел камень содержит вода.
+# река.
+## дорога.
+section point contains stone.
+# field.
+## river.
+раздел слово содержит линия.
+# лес.
+## время.
+section circle contains word.
+# city.
+## forest.
+раздел число содержит точка.
+# дом.
+## поле.
+section bridge contains number.
+# force.
+## house.
+раздел мера содержит круг.
+# звук.
+## город.
+section mountain contains measure.
+# water.
+## sound.
+раздел дорога содержит мост.
+# свет.
+## сила.
+section river contains road.
+# line.
+## light.
+раздел время содержит гора.
+# камень.
+## вода.
+section forest contains time.
+# point.
+## stone.
+раздел поле содержит река.
+# слово.
+## линия.
+section house contains field.
+# circle.
+## word.
+раздел город содержит лес.
+# число.
+## точка.
+section sound contains city.
+# bridge.
+## number.
+раздел сила содержит дом.
+# мера.
+## круг.
+section light contains force.
+# mountain.
+## measure.
+раздел вода содержит звук.
+# дорога.
+## мост.
+section stone contains water.
+# river.
+## road.
+раздел линия содержит свет.
+# время.
+## гора.
+section word contains line.
+# forest.
+## time.
+раздел точка содержит камень.
+
+graph TD; E-->F; F-->G;
+путь от C к E идёт через D.
+the road from A to C goes through B.
+graph TD; H-->A; A-->B;
+путь от F к H идёт через G.
+the road from D to F goes through E.
+graph TD; C-->D; D-->E;
+путь от A к C идёт через B.
+the road from G to A goes through H.
+graph TD; F-->G; G-->H;
+путь от D к F идёт через E.
+the road from B to D goes through C.
+graph TD; A-->B; B-->C;
+путь от G к A идёт через H.
+the road from E to G goes through F.
+graph TD; D-->E; E-->F;
+путь от B к D идёт через C.
+the road from H to B goes through A.
+graph TD; G-->H; H-->A;
+путь от E к G идёт через F.
+the road from C to E goes through D.
+graph TD; B-->C; C-->D;
+путь от H к B идёт через A.
+the road from F to H goes through G.
+
+нарисуй цепь B D: graph TD; B-->D;
+draw the chain C E: graph TD; C-->E;
+нарисуй цепь E G: graph TD; E-->G;
+draw the chain F H: graph TD; F-->H;
+нарисуй цепь H B: graph TD; H-->B;
+draw the chain A C: graph TD; A-->C;
+нарисуй цепь C E: graph TD; C-->E;
+draw the chain D F: graph TD; D-->F;
+нарисуй цепь F H: graph TD; F-->H;
+draw the chain G A: graph TD; G-->A;
+нарисуй цепь A C: graph TD; A-->C;
+draw the chain B D: graph TD; B-->D;
+нарисуй цепь D F: graph TD; D-->F;
+draw the chain E G: graph TD; E-->G;
+нарисуй цепь G A: graph TD; G-->A;
+draw the chain H B: graph TD; H-->B;
+
+$ 2 + 1 $ равно $ 3 $.
+$ 5 + 1 $ equals $ 6 $.
+$ 0 + 2 $ равно $ 2 $.
+$ 3 + 2 $ equals $ 5 $.
+$ 6 + 3 $ равно $ 9 $.
+$ 1 + 3 $ equals $ 4 $.
+$ 5 + 1 $ равно $ 6 $.
+$ 0 + 1 $ equals $ 1 $.
+$ 3 + 2 $ равно $ 5 $.
+$ 6 + 2 $ equals $ 8 $.
+$ 1 + 3 $ равно $ 4 $.
+$ 4 + 3 $ equals $ 7 $.
+$ 0 + 1 $ равно $ 1 $.
+$ 3 + 1 $ equals $ 4 $.
+$ 6 + 2 $ равно $ 8 $.
+$ 1 + 2 $ equals $ 3 $.
+$ 4 + 3 $ равно $ 7 $.
+$ 7 + 3 $ equals $ 10 $.
+$ 3 + 1 $ равно $ 4 $.
+$ 6 + 1 $ equals $ 7 $.
+$ 1 + 2 $ равно $ 3 $.
+$ 4 + 2 $ equals $ 6 $.
+$ 7 + 3 $ равно $ 10 $.
+$ 2 + 3 $ equals $ 5 $.
+$ 6 + 1 $ равно $ 7 $.
+$ 1 + 1 $ equals $ 2 $.
+$ 4 + 2 $ равно $ 6 $.
+$ 7 + 2 $ equals $ 9 $.
+$ 2 + 3 $ равно $ 5 $.
+$ 5 + 3 $ equals $ 8 $.
+$ 1 + 1 $ равно $ 2 $.
+$ 4 + 1 $ equals $ 5 $.
+$ 7 + 2 $ равно $ 9 $.
+$ 2 + 2 $ equals $ 4 $.
+$ 5 + 3 $ равно $ 8 $.
+$ 0 + 3 $ equals $ 3 $.
+$ 4 + 1 $ равно $ 5 $.
+$ 7 + 1 $ equals $ 8 $.
+$ 2 + 2 $ равно $ 4 $.
+$ 5 + 2 $ equals $ 7 $.
+$ 0 + 3 $ равно $ 3 $.
+$ 3 + 3 $ equals $ 6 $.
+$ 7 + 1 $ равно $ 8 $.
+$ 2 + 1 $ equals $ 3 $.
+$ 5 + 2 $ равно $ 7 $.
+$ 0 + 2 $ equals $ 2 $.
+$ 3 + 3 $ равно $ 6 $.
+$ 6 + 3 $ equals $ 9 $.

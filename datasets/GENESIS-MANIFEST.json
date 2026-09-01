@@ -1,0 +1,312 @@
+{
+  "comment": "v7 genre-shard manifest: a layer is a WORLD (prepped alone, poisoning nothing); the glue is dead (links 1150→620 measured). The layered state (frozen base + genre sessions) turns these worlds into one mind; until the L-1 seam lands, each world answers its own tiers. Each world declares its TEXT KIND: «shows» is generated show-material whose every claim is checkable, «prose» is essay corpus where a hyphen lives inside a name, a power lives in a superscript and a falsehood may be QUOTED to be refuted. A judge calibrated on shows produces false accusations on prose, so jurisdiction is declared, not assumed.",
+  "core": "school_biling_v2c",
+  "external_root": "../omega",
+  "external_root_comment": "Worlds whose file does not resolve inside this repository are looked up here: the prose corpora are built by the architecture repository's own pipeline, and copying them would create a second source of one fact. Override with GENESIS_EXTERNAL_ROOT.",
+  "worlds": [
+    {
+      "name": "school_biling_v2c",
+      "file": "datasets/school_biling_v2c.txt",
+      "genre": "arithmetic school (3 surfaces)",
+      "size": 700000,
+      "tiers": [
+        "t0_glyph_arith",
+        "t1_verbal_arith",
+        "t2_bridge",
+        "t3_multistep",
+        "t4_derivation",
+        "t6_refusals"
+      ],
+      "text": "shows"
+    },
+    {
+      "name": "ruler_dense",
+      "file": "datasets/school_ruler_dense.txt",
+      "genre": "dense ±1 rulers",
+      "size": 100000,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
+      "name": "genesis_l4",
+      "file": "datasets/genesis_l4.txt",
+      "genre": "copula/science links",
+      "size": 100000,
+      "tiers": [
+        "t5_definitions"
+      ],
+      "text": "shows"
+    },
+    {
+      "name": "genesis_units",
+      "file": "datasets/genesis_units.txt",
+      "genre": "quantities, units, fractions",
+      "size": 100000,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
+      "name": "genesis_story",
+      "file": "datasets/genesis_story.txt",
+      "genre": "story as third surface (verb algebra)",
+      "size": 300000,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
+      "name": "genesis_bignum",
+      "file": "datasets/genesis_bignum.txt",
+      "genre": "large numbers, place rulers",
+      "size": 100000,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
+      "name": "md_structures",
+      "file": "datasets/genesis_md_structures.txt",
+      "genre": "markdown/mermaid structures",
+      "size": 100000,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
+      "name": "lang_ru",
+      "file": "datasets/genesis_lang_ru.txt",
+      "genre": "russian as a LANGUAGE: paradigms, graphemes, irregulars",
+      "size": 100000,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
+      "name": "genesis_compare",
+      "file": "datasets/genesis_compare.txt",
+      "genre": "comparative genus (times-as / more-than / fewer-than)",
+      "size": 100000,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
+      "name": "lang_de",
+      "file": "datasets/genesis_lang_de.txt",
+      "genre": "german as a LANGUAGE: four cases on the article, six persons",
+      "size": 100000,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
+      "name": "items",
+      "file": "datasets/genesis_items.txt",
+      "genre": "living item lexicon of GSM8K: item role and number-free life",
+      "size": 200000,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
+      "name": "aggregate",
+      "file": "datasets/genesis_aggregate.txt",
+      "genre": "aggregate genus: a fact of a plural bearer",
+      "size": 100000,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
+      "name": "rates",
+      "file": "datasets/genesis_rates.txt",
+      "genre": "temporal unfoldings: rate over a period (genus 8)",
+      "size": 100000,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
+      "name": "fractions",
+      "file": "datasets/genesis_fractions.txt",
+      "genre": "parts of a whole: half/third/quarter on three surfaces",
+      "size": 100000,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
+      "name": "lang_en",
+      "file": "datasets/genesis_lang_en.txt",
+      "genre": "english as a LANGUAGE: the third-person -s and the plurals that obey nothing",
+      "size": 100000,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
+      "name": "conversions",
+      "file": "datasets/genesis_conversions.txt",
+      "genre": "conversions (genus 10): one unit told in another, three surfaces",
+      "size": 100000,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
+      "name": "remainders",
+      "file": "datasets/genesis_remainders.txt",
+      "genre": "division with a remainder (genus 9): four surfaces, self-judging weld",
+      "size": 100000,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
+      "name": "lang_zh",
+      "file": "datasets/genesis_lang_zh.txt",
+      "genre": "chinese as a LANGUAGE: aspect particles and measure words, no alphabet",
+      "size": 100000,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
+      "name": "msfs_en",
+      "file": "ozar/corpus/build/msfs_en.txt",
+      "genre": "MSFS: the moduli space of formal systems (en)",
+      "size": 90060,
+      "tiers": [],
+      "text": "prose",
+      "lang": "en"
+    },
+    {
+      "name": "msfs_ru",
+      "file": "ozar/corpus/build/msfs_ru.txt",
+      "genre": "MSFS: пространство модулей формальных систем (ru; английские вкрапления — термины и формулы)",
+      "size": 161108,
+      "tiers": [],
+      "text": "prose",
+      "lang": "ru"
+    },
+    {
+      "name": "diakrisis_ru",
+      "file": "ozar/corpus/build/diakrisis_en.txt",
+      "genre": "Diakrisis: различение как операция (ru; имя файла обещает en и лжёт)",
+      "size": 1810997,
+      "tiers": [],
+      "text": "prose",
+      "lang": "ru"
+    },
+    {
+      "name": "uhm_en",
+      "file": "ozar/corpus/build/uhm_en.txt",
+      "genre": "UHM: the universal holonomic model (en)",
+      "size": 4944932,
+      "tiers": [],
+      "text": "prose",
+      "lang": "en"
+    },
+    {
+      "name": "uhm_ru",
+      "file": "ozar/corpus/build/uhm_ru.txt",
+      "genre": "УГМ: универсальная голономная модель (ru)",
+      "size": 8973603,
+      "tiers": [],
+      "text": "prose",
+      "lang": "ru"
+    },
+    {
+      "name": "mf_ru",
+      "file": "ozar/corpus/build/mf_en.txt",
+      "genre": "математические основания (ru; имя файла обещает en и лжёт)",
+      "size": 8073132,
+      "tiers": [],
+      "text": "prose",
+      "lang": "ru"
+    },
+    {
+      "name": "verum_en",
+      "file": "ozar/corpus/build/verum_en.txt",
+      "genre": "Verum: proof discipline and gates (en)",
+      "size": 2437920,
+      "tiers": [],
+      "text": "prose",
+      "lang": "en"
+    },
+    {
+      "name": "verbs",
+      "file": "datasets/genesis_verbs.txt",
+      "genre": "benchmark verbs and the perfect shown beside its past",
+      "size": 100000,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
+      "name": "logic_sets",
+      "file": "datasets/genesis_l1_logic_sets.txt",
+      "genre": "foundations: sets, boolean connectives, membership, modus ponens",
+      "size": 200000,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
+      "name": "algebra_units",
+      "file": "datasets/genesis_l2_algebra_units.txt",
+      "genre": "foundations: linear equations, fractions, unit conversion",
+      "size": 200000,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
+      "name": "prog",
+      "file": "datasets/genesis_l3_prog.txt",
+      "genre": "foundations: bindings, sorting, list operations",
+      "size": 200000,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
+      "name": "eng_proof",
+      "file": "datasets/genesis_l3_eng_proof.txt",
+      "genre": "foundations: functions, flowcharts, probability shares",
+      "size": 200000,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
+      "name": "md_latex",
+      "file": "datasets/genesis_md_latex.txt",
+      "genre": "structures: markdown, links, code blocks, latex",
+      "size": 200000,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
+      "name": "algorithms",
+      "file": "datasets/genesis_algorithms.txt",
+      "genre": "foundations of algorithms: order, number theory, complexity, structures, notation",
+      "size": 200000,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
+      "name": "formulas",
+      "file": "datasets/genesis_formulas.txt",
+      "genre": "formulas and mermaid diagrams, described in four languages",
+      "size": 200000,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
+      "name": "algebra",
+      "file": "datasets/genesis_algebra.txt",
+      "genre": "signs of mathematics, identities and simplification, checked by substitution",
+      "size": 200000,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
+      "name": "physics",
+      "file": "datasets/genesis_physics.txt",
+      "genre": "foundations of physics: seven integer laws, prefixes, dimensions",
+      "size": 200000,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
+      "name": "cybernetics",
+      "file": "datasets/genesis_cybernetics.txt",
+      "genre": "foundations of cybernetics: error, convergence, machines, requisite variety",
+      "size": 200000,
+      "tiers": [],
+      "text": "shows"
+    }
+  ]
+}

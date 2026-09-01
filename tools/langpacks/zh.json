@@ -1,0 +1,475 @@
+{
+  "lang": "zh",
+  "script": "han",
+  "script_range": "一-鿿",
+  "script_default": true,
+  "segmentation": "longest-match",
+  "comment": "FOURTH PACK, AND THE FIRST WITHOUT AN ALPHABET. Chinese was the test the owner asked for: does the architecture take an ideographic language? Everything held except one thing — every parser assumed the space, and «三加二等于五。» came out as ONE token. The cure is declared, not branched: the pack says how its script separates words, and the segmenter cuts by longest match over what the pack itself declares. A PARADIGM HERE IS NOT INFLECTION BUT CONSTRUCTION — aspect particles and measure words — and that is the honest shape of an isolating language, not a hole in it.",
+  "lexeme_source": {
+    "law": "every morph class must carry >= LAW distinct lexemes; a class below its declared need is judged poor by the engine",
+    "need_per_class": 5
+  },
+  "numerals": {
+    "0": "零",
+    "1": "一",
+    "2": "二",
+    "3": "三",
+    "4": "四",
+    "5": "五",
+    "6": "六",
+    "7": "七",
+    "8": "八",
+    "9": "九",
+    "10": "十",
+    "11": "十一",
+    "12": "十二",
+    "13": "十三",
+    "14": "十四",
+    "15": "十五",
+    "16": "十六",
+    "17": "十七",
+    "18": "十八",
+    "19": "十九",
+    "20": "二十",
+    "21": "二十一",
+    "24": "二十四",
+    "25": "二十五",
+    "27": "二十七",
+    "28": "二十八",
+    "30": "三十",
+    "32": "三十二",
+    "35": "三十五",
+    "36": "三十六",
+    "40": "四十",
+    "45": "四十五",
+    "50": "五十",
+    "60": "六十",
+    "70": "七十",
+    "80": "八十",
+    "90": "九十",
+    "100": "一百"
+  },
+  "count_agreement": [
+    {
+      "form": "one"
+    }
+  ],
+  "morph_classes": {
+    "verb_aspect": {
+      "forms": [
+        "base",
+        "perfective",
+        "durative",
+        "experiential"
+      ],
+      "paradigm_cells": 4,
+      "need": 5,
+      "lexemes": {
+        "看": [
+          "看",
+          "看了",
+          "看着",
+          "看过"
+        ],
+        "写": [
+          "写",
+          "写了",
+          "写着",
+          "写过"
+        ],
+        "听": [
+          "听",
+          "听了",
+          "听着",
+          "听过"
+        ],
+        "学": [
+          "学",
+          "学了",
+          "学着",
+          "学过"
+        ],
+        "用": [
+          "用",
+          "用了",
+          "用着",
+          "用过"
+        ],
+        "吃": [
+          "吃",
+          "吃了",
+          "吃着",
+          "吃过"
+        ],
+        "喝": [
+          "喝",
+          "喝了",
+          "喝着",
+          "喝过"
+        ],
+        "走": [
+          "走",
+          "走了",
+          "走着",
+          "走过"
+        ],
+        "说": [
+          "说",
+          "说了",
+          "说着",
+          "说过"
+        ],
+        "做": [
+          "做",
+          "做了",
+          "做着",
+          "做过"
+        ]
+      }
+    },
+    "noun_classifier": {
+      "forms": [
+        "bare",
+        "one_unit"
+      ],
+      "paradigm_cells": 2,
+      "need": 5,
+      "lexemes": {
+        "书": [
+          "书",
+          "一本书"
+        ],
+        "猫": [
+          "猫",
+          "一只猫"
+        ],
+        "人": [
+          "人",
+          "一个人"
+        ],
+        "纸": [
+          "纸",
+          "一张纸"
+        ],
+        "车": [
+          "车",
+          "一辆车"
+        ],
+        "花": [
+          "花",
+          "一朵花"
+        ],
+        "狗": [
+          "狗",
+          "一只狗"
+        ],
+        "门": [
+          "门",
+          "一扇门"
+        ],
+        "山": [
+          "山",
+          "一座山"
+        ],
+        "水": [
+          "水",
+          "一杯水"
+        ]
+      }
+    },
+    "person_plural": {
+      "forms": [
+        "one",
+        "many"
+      ],
+      "paradigm_cells": 2,
+      "need": 5,
+      "lexemes": {
+        "我": [
+          "我",
+          "我们"
+        ],
+        "你": [
+          "你",
+          "你们"
+        ],
+        "他": [
+          "他",
+          "他们"
+        ],
+        "她": [
+          "她",
+          "她们"
+        ],
+        "朋友": [
+          "朋友",
+          "朋友们"
+        ]
+      }
+    },
+    "adj_degree": {
+      "forms": [
+        "bare",
+        "very",
+        "most"
+      ],
+      "paradigm_cells": 3,
+      "need": 5,
+      "lexemes": {
+        "大": [
+          "大",
+          "很大",
+          "最大"
+        ],
+        "小": [
+          "小",
+          "很小",
+          "最小"
+        ],
+        "高": [
+          "高",
+          "很高",
+          "最高"
+        ],
+        "长": [
+          "长",
+          "很长",
+          "最长"
+        ],
+        "新": [
+          "新",
+          "很新",
+          "最新"
+        ]
+      }
+    },
+    "place": {
+      "forms": [
+        "bare",
+        "on",
+        "in"
+      ],
+      "paradigm_cells": 3,
+      "need": 5,
+      "lexemes": {
+        "桌子": [
+          "桌子",
+          "桌子上",
+          "桌子里"
+        ],
+        "房子": [
+          "房子",
+          "房子上",
+          "房子里"
+        ],
+        "盒子": [
+          "盒子",
+          "盒子上",
+          "盒子里"
+        ],
+        "箱子": [
+          "箱子",
+          "箱子上",
+          "箱子里"
+        ],
+        "袋子": [
+          "袋子",
+          "袋子上",
+          "袋子里"
+        ]
+      }
+    }
+  },
+  "show_kinds": {
+    "arithmetic": {
+      "lexicon": [
+        "加",
+        "减",
+        "乘",
+        "除以",
+        "等于"
+      ],
+      "ops": {
+        "加": "+",
+        "减": "-",
+        "乘": "*",
+        "除以": "/",
+        "等于": "="
+      },
+      "instances_per_pass": 14,
+      "templates": [
+        "{num:n}加{num:m}等于{num:sum}。",
+        "{n} + {m} = {sum}。",
+        "{num:sum}减{num:m}等于{num:n}。",
+        "{num:n}乘{num:m}等于{num:prod}。",
+        "{num:prod}除以{num:m}等于{num:n}。"
+      ]
+    },
+    "aspect": {
+      "lexicon": [
+        "我",
+        "你",
+        "他"
+      ],
+      "instances_per_pass": 10,
+      "templates": [
+        "我{lex:verb_aspect:base}。",
+        "你{lex:verb_aspect:perfective}。",
+        "他{lex:verb_aspect:durative}。",
+        "我{lex:verb_aspect:experiential}。"
+      ]
+    },
+    "classifier": {
+      "lexicon": [
+        "这",
+        "那",
+        "有"
+      ],
+      "instances_per_pass": 10,
+      "templates": [
+        "这是{lex:noun_classifier:one_unit}。",
+        "那是{lex:noun_classifier:one_unit}。",
+        "我有{lex:noun_classifier:one_unit}。"
+      ]
+    },
+    "definition": {
+      "lexicon": [
+        "东西",
+        "是",
+        "人"
+      ],
+      "instances_per_pass": 12,
+      "templates": [
+        "{lex:noun_classifier:bare}是东西。",
+        "{lex:person_plural:one}是人。"
+      ]
+    },
+    "refusals": {
+      "refusal": true,
+      "marker": "¬ ",
+      "lexicon": [
+        "¬"
+      ],
+      "pairs": [
+        {
+          "bad": "三本猫。",
+          "good": "三只猫。",
+          "reason": "agreement"
+        },
+        {
+          "bad": "一本笔。",
+          "good": "一支笔。",
+          "reason": "agreement"
+        },
+        {
+          "bad": "我看了着。",
+          "good": "我看着。",
+          "reason": "agreement"
+        },
+        {
+          "bad": "七的颜色是什么？",
+          "good": "书是什么？",
+          "reason": "unanswerable"
+        },
+        {
+          "bad": "书加猫等于？",
+          "good": "一百减十等于九十。",
+          "reason": "type_mismatch"
+        }
+      ]
+    },
+    "plurality": {
+      "lexicon": [
+        "来"
+      ],
+      "instances_per_pass": 10,
+      "templates": [
+        "{lex:person_plural:one}来了。",
+        "{lex:person_plural:many}来了。",
+        "{lex:person_plural:one}在这里。",
+        "{lex:person_plural:many}在这里。"
+      ]
+    },
+    "degree": {
+      "lexicon": [
+        "很",
+        "最"
+      ],
+      "instances_per_pass": 10,
+      "templates": [
+        "这个{lex:adj_degree:bare}。",
+        "那个{lex:adj_degree:very}。",
+        "这个{lex:adj_degree:most}。"
+      ]
+    },
+    "location": {
+      "lexicon": [
+        "在",
+        "个"
+      ],
+      "instances_per_pass": 10,
+      "templates": [
+        "书在{lex:place:on}。",
+        "猫在{lex:place:in}。",
+        "{lex:place:bare}在这里。"
+      ]
+    }
+  },
+  "core_pairing": [
+    {
+      "lang_word": "加",
+      "core": "+",
+      "core_form": "+",
+      "lang_form": "加"
+    },
+    {
+      "lang_word": "减",
+      "core": "−",
+      "core_form": "−",
+      "lang_form": "减"
+    },
+    {
+      "lang_word": "等于",
+      "core": "=",
+      "core_form": "=",
+      "lang_form": "等于"
+    },
+    {
+      "lang_word": "除以",
+      "core": "÷",
+      "core_form": "÷",
+      "lang_form": "除以"
+    },
+    {
+      "lang_word": "乘",
+      "core": "×",
+      "core_form": "×",
+      "lang_form": "乘"
+    }
+  ],
+  "cross_kind_share": 0.3,
+  "irregulars": [
+    "看过",
+    "写过",
+    "听过",
+    "学过",
+    "用过"
+  ],
+  "probe": {
+    "words": [
+      "我",
+      "你",
+      "他",
+      "是",
+      "有",
+      "这",
+      "那",
+      "的",
+      "东西"
+    ],
+    "diacritics": ""
+  },
+  "graphemes": "一七三上东个么乘九书了二于五人什他以们你做八六写减加十友只吃听喝四在大她子学小山座张很我房扇支新是最有朋本朵来杯桌水狗猫用百的盒看着笔等箱纸色花袋西说走车辆过这那里长门除颜高",
+  "stem_min": 1,
+  "ending_max": 2
+}
