@@ -128,8 +128,9 @@ def pass_shows(pass_i):
                    f"на кубометр.")
         out.append(f"voltage = current × resistance; {cur} amperes × {r} "
                    f"ohms = {cur * r} volts.")
-        out.append(f"напряжение = ток × сопротивление; {cur} ампер × {r} "
-                   f"ом = {cur * r} вольт.")
+        out.append(f"напряжение = ток × сопротивление; {cur} "
+                   f"{rugram.форма('ампер', cur)} × {r} {rugram.форма('ом', r)} = "
+                   f"{cur * r} {rugram.форма('вольт', cur * r)}.")
         out.append(f"kinetic energy = mass × speed squared / 2; {km} × "
                    f"{kv} × {kv} / 2 = {km * kv * kv // 2} joules.")
         out.append(f"кинетическая энергия = масса × квадрат скорости / 2; "
