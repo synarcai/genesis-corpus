@@ -515,6 +515,46 @@
       "size": 60000,
       "tiers": [],
       "text": "shows"
+    },
+    {
+      "name": "lang_nl",
+      "file": "datasets/genesis_lang_nl.txt",
+      "genre": "dutch: three distinct present cells, not six (tier 1: structure green, forms agree with the pack's own rules)",
+      "size": 40000,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
+      "name": "lang_sv",
+      "file": "datasets/genesis_lang_sv.txt",
+      "genre": "swedish: NO person agreement at all — the paradigm is tense (tier 1: structure green, forms agree with the pack's own rules)",
+      "size": 40000,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
+      "name": "lang_pl",
+      "file": "datasets/genesis_lang_pl.txt",
+      "genre": "polish: the slavic count law on a latin alphabet, nine diacritics (tier 1: structure green, forms agree with the pack's own rules)",
+      "size": 40000,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
+      "name": "lang_uk",
+      "file": "datasets/genesis_lang_uk.txt",
+      "genre": "ukrainian: cyrillic with four letters russian lacks, apostrophe inside the word (tier 1: structure green, forms agree with the pack's own rules)",
+      "size": 40000,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
+      "name": "lang_tr",
+      "file": "datasets/genesis_lang_tr.txt",
+      "genre": "turkish: agglutination, vowel harmony in four classes, teens as two words, and NO count agreement — the noun stays singular after a numeral (tier 1: structure green, forms agree with the pack's own rules)",
+      "size": 40000,
+      "tiers": [],
+      "text": "shows"
     }
   ]
 }

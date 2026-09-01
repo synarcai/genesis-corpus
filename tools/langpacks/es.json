@@ -317,7 +317,8 @@
         "menos": "-",
         "por": "*",
         "entre": "/",
-        "es": "="
+        "es": "=",
+        "es igual a": "="
       },
       "instances_per_pass": 14,
       "templates": [
@@ -500,5 +501,8 @@
       "él"
     ],
     "diacritics": "áéíóúñü"
-  }
+  },
+  "numeral_connectors": [
+    "y"
+  ]
 }

@@ -35,6 +35,9 @@
     "40": "quarenta",
     "50": "cinquenta",
     "60": "sessenta",
+    "70": "setenta",
+    "80": "oitenta",
+    "90": "noventa",
     "100": "cem"
   },
   "count_agreement": [
@@ -463,5 +466,8 @@
       "é"
     ],
     "diacritics": "áâãàçéêíóôõú"
-  }
+  },
+  "numeral_connectors": [
+    "e"
+  ]
 }

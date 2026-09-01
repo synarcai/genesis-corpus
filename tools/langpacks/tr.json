@@ -1,0 +1,482 @@
+{
+  "lang": "tr",
+  "script": "latin",
+  "script_range": "A-Za-zÇĞİIÖŞÜçğıiöşü",
+  "graphemes": "abcçdefgğhıijklmnoöprsştuüvyz",
+  "tier": 1,
+  "comment": "THIRTEENTH PACK. Turkish: agglutination, vowel harmony in four classes, teens written as two words, and NO count agreement at all — after a numeral the noun stays singular. Three architectural probes in one pack. TIER 1.",
+  "lexeme_source": {
+    "law": "every morph class must carry >= LAW distinct lexemes; a class below its declared need is judged poor by the engine",
+    "need_per_class": 5
+  },
+  "numerals": {
+    "0": "sıfır",
+    "1": "bir",
+    "2": "iki",
+    "3": "üç",
+    "4": "dört",
+    "5": "beş",
+    "6": "altı",
+    "7": "yedi",
+    "8": "sekiz",
+    "9": "dokuz",
+    "10": "on",
+    "11": "on bir",
+    "12": "on iki",
+    "13": "on üç",
+    "14": "on dört",
+    "15": "on beş",
+    "16": "on altı",
+    "17": "on yedi",
+    "18": "on sekiz",
+    "19": "on dokuz",
+    "20": "yirmi",
+    "30": "otuz",
+    "40": "kırk",
+    "50": "elli",
+    "60": "altmış",
+    "70": "yetmiş",
+    "80": "seksen",
+    "90": "doksan",
+    "100": "yüz"
+  },
+  "count_agreement": [
+    {
+      "form": "one"
+    }
+  ],
+  "morph_classes": {
+    "verb_pres": {
+      "forms": [
+        "s1",
+        "s2",
+        "s3",
+        "p1",
+        "p2",
+        "p3"
+      ],
+      "paradigm_cells": 6,
+      "need": 5,
+      "lexemes": {
+        "yazmak": [
+          "yazıyorum",
+          "yazıyorsun",
+          "yazıyor",
+          "yazıyoruz",
+          "yazıyorsunuz",
+          "yazıyorlar"
+        ],
+        "bakmak": [
+          "bakıyorum",
+          "bakıyorsun",
+          "bakıyor",
+          "bakıyoruz",
+          "bakıyorsunuz",
+          "bakıyorlar"
+        ],
+        "almak": [
+          "alıyorum",
+          "alıyorsun",
+          "alıyor",
+          "alıyoruz",
+          "alıyorsunuz",
+          "alıyorlar"
+        ],
+        "gelmek": [
+          "geliyorum",
+          "geliyorsun",
+          "geliyor",
+          "geliyoruz",
+          "geliyorsunuz",
+          "geliyorlar"
+        ],
+        "sevmek": [
+          "seviyorum",
+          "seviyorsun",
+          "seviyor",
+          "seviyoruz",
+          "seviyorsunuz",
+          "seviyorlar"
+        ],
+        "bilmek": [
+          "biliyorum",
+          "biliyorsun",
+          "biliyor",
+          "biliyoruz",
+          "biliyorsunuz",
+          "biliyorlar"
+        ],
+        "görmek": [
+          "görüyorum",
+          "görüyorsun",
+          "görüyor",
+          "görüyoruz",
+          "görüyorsunuz",
+          "görüyorlar"
+        ],
+        "gülmek": [
+          "gülüyorum",
+          "gülüyorsun",
+          "gülüyor",
+          "gülüyoruz",
+          "gülüyorsunuz",
+          "gülüyorlar"
+        ],
+        "gitmek": [
+          "gidiyorum",
+          "gidiyorsun",
+          "gidiyor",
+          "gidiyoruz",
+          "gidiyorsunuz",
+          "gidiyorlar"
+        ]
+      },
+      "rule": {
+        "classes": {
+          "ı": {
+            "strip": "mak",
+            "endings": [
+              "ıyorum",
+              "ıyorsun",
+              "ıyor",
+              "ıyoruz",
+              "ıyorsunuz",
+              "ıyorlar"
+            ]
+          },
+          "i": {
+            "strip": "mek",
+            "endings": [
+              "iyorum",
+              "iyorsun",
+              "iyor",
+              "iyoruz",
+              "iyorsunuz",
+              "iyorlar"
+            ]
+          },
+          "ü": {
+            "strip": "mek",
+            "endings": [
+              "üyorum",
+              "üyorsun",
+              "üyor",
+              "üyoruz",
+              "üyorsunuz",
+              "üyorlar"
+            ]
+          }
+        },
+        "of": {
+          "yazmak": "ı",
+          "bakmak": "ı",
+          "almak": "ı",
+          "gelmek": "i",
+          "sevmek": "i",
+          "bilmek": "i",
+          "görmek": "ü",
+          "gülmek": "ü",
+          "gitmek": "*"
+        }
+      }
+    },
+    "noun_count": {
+      "forms": [
+        "one",
+        "many"
+      ],
+      "paradigm_cells": 2,
+      "need": 5,
+      "lexemes": {
+        "kitap": [
+          "kitap",
+          "kitaplar"
+        ],
+        "ev": [
+          "ev",
+          "evler"
+        ],
+        "masa": [
+          "masa",
+          "masalar"
+        ],
+        "çiçek": [
+          "çiçek",
+          "çiçekler"
+        ],
+        "şehir": [
+          "şehir",
+          "şehirler"
+        ],
+        "kağıt": [
+          "kağıt",
+          "kağıtlar"
+        ],
+        "kedi": [
+          "kedi",
+          "kediler"
+        ],
+        "kilo": [
+          "kilo",
+          "kilolar"
+        ],
+        "sınav": [
+          "sınav",
+          "sınavlar"
+        ],
+        "tren": [
+          "tren",
+          "trenler"
+        ],
+        "gazete": [
+          "gazete",
+          "gazeteler"
+        ],
+        "göz": [
+          "göz",
+          "gözler"
+        ],
+        "yol": [
+          "yol",
+          "yollar"
+        ],
+        "öğrenci": [
+          "öğrenci",
+          "öğrenciler"
+        ],
+        "ağaç": [
+          "ağaç",
+          "ağaçlar"
+        ],
+        "su": [
+          "su",
+          "sular"
+        ],
+        "güneş": [
+          "güneş",
+          "güneşler"
+        ],
+        "ışık": [
+          "ışık",
+          "ışıklar"
+        ],
+        "dağ": [
+          "dağ",
+          "dağlar"
+        ],
+        "jeton": [
+          "jeton",
+          "jetonlar"
+        ],
+        "cam": [
+          "cam",
+          "camlar"
+        ],
+        "fil": [
+          "fil",
+          "filler"
+        ],
+        "vapur": [
+          "vapur",
+          "vapurlar"
+        ],
+        "para": [
+          "para",
+          "paralar"
+        ],
+        "uçak": [
+          "uçak",
+          "uçaklar"
+        ],
+        "lale": [
+          "lale",
+          "laleler"
+        ],
+        "jüri": [
+          "jüri",
+          "jüriler"
+        ],
+        "hava": [
+          "hava",
+          "havalar"
+        ],
+        "fikir": [
+          "fikir",
+          "fikirler"
+        ],
+        "resim": [
+          "resim",
+          "resimler"
+        ],
+        "cevap": [
+          "cevap",
+          "cevaplar"
+        ]
+      }
+    }
+  },
+  "show_kinds": {
+    "arithmetic": {
+      "lexicon": [
+        "artı",
+        "eksi",
+        "çarpı",
+        "bölü",
+        "eder"
+      ],
+      "ops": {
+        "artı": "+",
+        "eksi": "-",
+        "çarpı": "*",
+        "bölü": "/",
+        "eder": "="
+      },
+      "instances_per_pass": 14,
+      "templates": [
+        "{num:n} artı {num:m} eder {num:sum}.",
+        "{n} + {m} = {sum}.",
+        "{num:sum} eksi {num:m} eder {num:n}.",
+        "{num:n} çarpı {num:m} eder {num:prod}.",
+        "{num:prod} bölü {num:m} eder {num:n}."
+      ]
+    },
+    "conjugation": {
+      "lexicon": [
+        "ben",
+        "sen",
+        "o",
+        "biz",
+        "siz",
+        "onlar"
+      ],
+      "instances_per_pass": 18,
+      "templates": [
+        "ben {lex:verb_pres:s1}.",
+        "sen {lex:verb_pres:s2}.",
+        "o {lex:verb_pres:s3}.",
+        "biz {lex:verb_pres:p1}.",
+        "siz {lex:verb_pres:p2}.",
+        "onlar {lex:verb_pres:p3}."
+      ]
+    },
+    "counting": {
+      "lexicon": [
+        "işte",
+        "burada"
+      ],
+      "instances_per_pass": 62,
+      "templates": [
+        "işte {lex:noun_count:one}.",
+        "işte {lex:noun_count:many}.",
+        "burada {lex:noun_count:many}."
+      ]
+    },
+    "definition": {
+      "lexicon": [
+        "nesne",
+        "şey",
+        "nedir"
+      ],
+      "instances_per_pass": 62,
+      "templates": [
+        "{lex:noun_count:one} bir nesnedir."
+      ]
+    },
+    "refusals": {
+      "refusal": true,
+      "marker": "¬ ",
+      "lexicon": [
+        "¬"
+      ],
+      "pairs": [
+        {
+          "bad": "beş kediler.",
+          "good": "beş kedi.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "ben okuyorsun.",
+          "good": "ben koşuyorum.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "iki eviniz.",
+          "good": "iki ev.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "yedi ne renktedir ?",
+          "good": "nesne nedir ?",
+          "reason": "unanswerable"
+        },
+        {
+          "bad": "ev artı kedi eder ?",
+          "good": "on eksi bir dokuz eder.",
+          "reason": "type_mismatch"
+        }
+      ]
+    }
+  },
+  "core_pairing": [
+    {
+      "lang_word": "artı",
+      "core": "+",
+      "core_form": "+",
+      "lang_form": "artı"
+    },
+    {
+      "lang_word": "eksi",
+      "core": "-",
+      "core_form": "-",
+      "lang_form": "eksi"
+    },
+    {
+      "lang_word": "çarpı",
+      "core": "×",
+      "core_form": "×",
+      "lang_form": "çarpı"
+    },
+    {
+      "lang_word": "bölü",
+      "core": "÷",
+      "core_form": "÷",
+      "lang_form": "bölü"
+    },
+    {
+      "lang_word": "eder",
+      "core": "=",
+      "core_form": "=",
+      "lang_form": "eder"
+    }
+  ],
+  "cross_kind_share": 0.3,
+  "irregulars": [
+    "gidiyorum",
+    "gidiyor",
+    "filler",
+    "yollar"
+  ],
+  "probe": {
+    "words": [
+      "artı",
+      "ben",
+      "bir",
+      "biz",
+      "burada",
+      "bölü",
+      "eder",
+      "eksi",
+      "işte",
+      "kedi",
+      "kitap",
+      "nesne",
+      "o",
+      "onlar",
+      "sen",
+      "siz",
+      "çarpı",
+      "şey"
+    ],
+    "diacritics": "çğıöşü"
+  }
+}

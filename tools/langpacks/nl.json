@@ -1,0 +1,418 @@
+{
+  "lang": "nl",
+  "script": "latin",
+  "script_range": "A-Za-zÉÈËÏÖÜéèëïöü",
+  "graphemes": "abcdefghijklmnopqrstuvwxyzéëï",
+  "tier": 1,
+  "comment": "NINTH PACK. Dutch: the verb has three distinct present cells, not six — singular 1, singular 2/3, and one plural for all three persons. TIER 1.",
+  "lexeme_source": {
+    "law": "every morph class must carry >= LAW distinct lexemes; a class below its declared need is judged poor by the engine",
+    "need_per_class": 5
+  },
+  "numerals": {
+    "0": "nul",
+    "1": "een",
+    "2": "twee",
+    "3": "drie",
+    "4": "vier",
+    "5": "vijf",
+    "6": "zes",
+    "7": "zeven",
+    "8": "acht",
+    "9": "negen",
+    "10": "tien",
+    "11": "elf",
+    "12": "twaalf",
+    "13": "dertien",
+    "14": "veertien",
+    "15": "vijftien",
+    "16": "zestien",
+    "17": "zeventien",
+    "18": "achttien",
+    "19": "negentien",
+    "20": "twintig",
+    "30": "dertig",
+    "40": "veertig",
+    "50": "vijftig",
+    "60": "zestig",
+    "70": "zeventig",
+    "80": "tachtig",
+    "90": "negentig",
+    "100": "honderd"
+  },
+  "count_agreement": [
+    {
+      "mod": 10,
+      "in": [
+        1
+      ],
+      "form": "one"
+    },
+    {
+      "form": "many"
+    }
+  ],
+  "morph_classes": {
+    "verb_pres": {
+      "forms": [
+        "s1",
+        "s2",
+        "s3",
+        "p1",
+        "p2",
+        "p3"
+      ],
+      "paradigm_cells": 6,
+      "need": 5,
+      "lexemes": {
+        "werken": [
+          "werk",
+          "werkt",
+          "werkt",
+          "werken",
+          "werken",
+          "werken"
+        ],
+        "lezen": [
+          "lees",
+          "leest",
+          "leest",
+          "lezen",
+          "lezen",
+          "lezen"
+        ],
+        "eten": [
+          "eet",
+          "eet",
+          "eet",
+          "eten",
+          "eten",
+          "eten"
+        ],
+        "lopen": [
+          "loop",
+          "loopt",
+          "loopt",
+          "lopen",
+          "lopen",
+          "lopen"
+        ],
+        "kopen": [
+          "koop",
+          "koopt",
+          "koopt",
+          "kopen",
+          "kopen",
+          "kopen"
+        ],
+        "drinken": [
+          "drink",
+          "drinkt",
+          "drinkt",
+          "drinken",
+          "drinken",
+          "drinken"
+        ],
+        "zingen": [
+          "zing",
+          "zingt",
+          "zingt",
+          "zingen",
+          "zingen",
+          "zingen"
+        ],
+        "maken": [
+          "maak",
+          "maakt",
+          "maakt",
+          "maken",
+          "maken",
+          "maken"
+        ]
+      },
+      "rule": {
+        "classes": {
+          "en": {
+            "strip": "en",
+            "endings": [
+              "",
+              "t",
+              "t",
+              "en",
+              "en",
+              "en"
+            ]
+          }
+        },
+        "of": {
+          "werken": "en",
+          "lezen": "*",
+          "eten": "*",
+          "lopen": "*",
+          "kopen": "*",
+          "drinken": "en",
+          "zingen": "en",
+          "maken": "*"
+        }
+      }
+    },
+    "noun_count": {
+      "forms": [
+        "one",
+        "many"
+      ],
+      "paradigm_cells": 2,
+      "need": 5,
+      "lexemes": {
+        "boek": [
+          "het boek",
+          "de boeken"
+        ],
+        "huis": [
+          "het huis",
+          "de huizen"
+        ],
+        "tafel": [
+          "de tafel",
+          "de tafels"
+        ],
+        "bloem": [
+          "de bloem",
+          "de bloemen"
+        ],
+        "stad": [
+          "de stad",
+          "de steden"
+        ],
+        "papier": [
+          "het papier",
+          "de papieren"
+        ],
+        "kat": [
+          "de kat",
+          "de katten"
+        ],
+        "kilo": [
+          "de kilo",
+          "de kilos"
+        ],
+        "examen": [
+          "het examen",
+          "de examens"
+        ],
+        "taxi": [
+          "de taxi",
+          "de taxis"
+        ],
+        "trein": [
+          "de trein",
+          "de treinen"
+        ],
+        "quiz": [
+          "de quiz",
+          "de quizzen"
+        ],
+        "café": [
+          "het café",
+          "de cafés"
+        ],
+        "ruïne": [
+          "de ruïne",
+          "de ruïnes"
+        ],
+        "yoghurt": [
+          "de yoghurt",
+          "de yoghurts"
+        ],
+        "jas": [
+          "de jas",
+          "de jassen"
+        ],
+        "wolk": [
+          "de wolk",
+          "de wolken"
+        ],
+        "zon": [
+          "de zon",
+          "de zonnen"
+        ],
+        "reeks": [
+          "de reeks",
+          "de reeksen"
+        ],
+        "coëfficiënt": [
+          "de coëfficiënt",
+          "de coëfficiënten"
+        ]
+      }
+    }
+  },
+  "show_kinds": {
+    "arithmetic": {
+      "lexicon": [
+        "plus",
+        "min",
+        "keer",
+        "gedeeld",
+        "is"
+      ],
+      "ops": {
+        "plus": "+",
+        "min": "-",
+        "keer": "*",
+        "gedeeld": "/",
+        "is": "="
+      },
+      "instances_per_pass": 14,
+      "templates": [
+        "{num:n} plus {num:m} is {num:sum}.",
+        "{n} + {m} = {sum}.",
+        "{num:sum} min {num:m} is {num:n}.",
+        "{num:n} keer {num:m} is {num:prod}.",
+        "{num:prod} gedeeld {num:m} is {num:n}."
+      ]
+    },
+    "conjugation": {
+      "lexicon": [
+        "ik",
+        "jij",
+        "hij",
+        "wij",
+        "jullie",
+        "zij"
+      ],
+      "instances_per_pass": 16,
+      "templates": [
+        "ik {lex:verb_pres:s1}.",
+        "jij {lex:verb_pres:s2}.",
+        "hij {lex:verb_pres:s3}.",
+        "wij {lex:verb_pres:p1}.",
+        "jullie {lex:verb_pres:p2}.",
+        "zij {lex:verb_pres:p3}."
+      ]
+    },
+    "counting": {
+      "lexicon": [
+        "hier",
+        "daar"
+      ],
+      "instances_per_pass": 40,
+      "templates": [
+        "hier is {lex:noun_count:one}.",
+        "hier zijn {lex:noun_count:many}.",
+        "daar zijn {lex:noun_count:many}."
+      ]
+    },
+    "definition": {
+      "lexicon": [
+        "ding",
+        "een",
+        "voorwerp"
+      ],
+      "instances_per_pass": 40,
+      "templates": [
+        "{lex:noun_count:one} is een ding."
+      ]
+    },
+    "refusals": {
+      "refusal": true,
+      "marker": "¬ ",
+      "lexicon": [
+        "¬"
+      ],
+      "pairs": [
+        {
+          "bad": "de boek is klein.",
+          "good": "het boek is klein.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "de huis zijn groot.",
+          "good": "de huizen zijn groot.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "ik werkt.",
+          "good": "ik dans.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "welke kleur heeft zeven ?",
+          "good": "wat is een voorwerp ?",
+          "reason": "unanswerable"
+        },
+        {
+          "bad": "boek plus huis is ?",
+          "good": "honderd min een is negenennegentig.",
+          "reason": "type_mismatch"
+        }
+      ]
+    }
+  },
+  "core_pairing": [
+    {
+      "lang_word": "plus",
+      "core": "+",
+      "core_form": "+",
+      "lang_form": "plus"
+    },
+    {
+      "lang_word": "min",
+      "core": "-",
+      "core_form": "-",
+      "lang_form": "min"
+    },
+    {
+      "lang_word": "keer",
+      "core": "×",
+      "core_form": "×",
+      "lang_form": "keer"
+    },
+    {
+      "lang_word": "gedeeld",
+      "core": "÷",
+      "core_form": "÷",
+      "lang_form": "gedeeld"
+    },
+    {
+      "lang_word": "is",
+      "core": "=",
+      "core_form": "=",
+      "lang_form": "is"
+    }
+  ],
+  "cross_kind_share": 0.3,
+  "irregulars": [
+    "huizen",
+    "steden",
+    "lees",
+    "eet",
+    "quizzen"
+  ],
+  "probe": {
+    "words": [
+      "boek",
+      "daar",
+      "de",
+      "ding",
+      "een",
+      "gedeeld",
+      "het",
+      "hier",
+      "hij",
+      "ik",
+      "is",
+      "jij",
+      "jullie",
+      "kat",
+      "keer",
+      "min",
+      "plus",
+      "voorwerp",
+      "wij",
+      "zij",
+      "zijn"
+    ],
+    "diacritics": "éèëïöü"
+  }
+}

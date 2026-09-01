@@ -44,7 +44,8 @@
     "70": "seventy",
     "80": "eighty",
     "90": "ninety",
-    "100": "hundred"
+    "100": "hundred",
+    "1/2": "and a half"
   },
   "count_agreement": [
     {
@@ -227,7 +228,9 @@
         "over": "/",
         "equals": "=",
         "divided": "/",
-        "multiplied": "*"
+        "multiplied": "*",
+        "divided by": "/",
+        "multiplied by": "*"
       },
       "numeral_compose": "additive",
       "instances_per_pass": 8,
@@ -1198,6 +1201,10 @@
     [
       "<a> minus <b> equals <c>",
       "<a> - <b> = <c>"
+    ],
+    [
+      "twice <a...> is <b>",
+      "2 × <a> = <b>"
     ]
   ],
   "verbal_laws": [

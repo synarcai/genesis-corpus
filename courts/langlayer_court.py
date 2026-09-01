@@ -29,14 +29,20 @@ import sys
 ПАКЕТЫ = КОРЕНЬ / "tools/langpacks"
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
 from genesis import Unreadable, manifest  # noqa: E402
-from segment import tokens  # noqa: E402
+from segment import tokens, word_re  # noqa: E402
 
 # РУБЕЖ-ДОЛГА: ЧУЖИХ_РУБЕЖ = 0
 ЧУЖИХ_РУБЕЖ = 0
 
 # ПУСТОЙ-ОБХОД: no-such-corpus-file
 
-СЛОВО = re.compile(r"[^\W\d_]+", re.UNICODE)
+# СЛОВО РЕЖЕТСЯ ПО ПИСЬМУ ПАКЕТА, А НЕ ПО ЛАТИНСКОЙ ПРИВЫЧКЕ. Этот
+# образец — лишь запасной, для пакета, чьи слова ещё не прочтены;
+# рабочий выводится из объявленного словаря (`segment.word_re`), ибо
+# знак, живущий между двумя буквами объявленного слова, тем самым
+# объявлен буквой по должности. Украинское «п'ятнадцять» резалось
+# надвое, и «ятнадцять» звалось необъявленным.
+СЛОВО = word_re()
 
 
 def словарь_пакета(язык):
@@ -76,11 +82,12 @@ def словарь_пакета(язык):
 
 def чужие(строка, слова, без_пробела):
     """Слова показа, которых пакет не объявлял."""
+    образец = word_re(слова)
     if без_пробела:
         куски = tokens(строка.lower(), слова, spaced=False)
     else:
-        куски = СЛОВО.findall(строка.lower())
-    return [w for w in куски if СЛОВО.fullmatch(w) and w not in слова]
+        куски = образец.findall(строка.lower())
+    return [w for w in куски if образец.fullmatch(w) and w not in слова]
 
 
 def пласты(явные):

@@ -1,0 +1,389 @@
+{
+  "lang": "sv",
+  "script": "latin",
+  "script_range": "A-Za-zÅÄÖåäö",
+  "graphemes": "abcdefghijklmnopqrstuvwxyzåäö",
+  "tier": 1,
+  "comment": "TENTH PACK, AND THE FIRST WITHOUT PERSON AGREEMENT AT ALL. Swedish conjugates by TENSE, never by person: «jag talar», «vi talar» — one form for all six. The paradigm declared here is therefore TENSE (present, past, supine), and the six persons take the SAME cell. If the engine demands distinct person cells, that is a finding about the engine: a language without person agreement is lawful, and the architecture must take it. TIER 1.",
+  "lexeme_source": {
+    "law": "every morph class must carry >= LAW distinct lexemes; a class below its declared need is judged poor by the engine",
+    "need_per_class": 5
+  },
+  "numerals": {
+    "0": "noll",
+    "1": "ett",
+    "2": "två",
+    "3": "tre",
+    "4": "fyra",
+    "5": "fem",
+    "6": "sex",
+    "7": "sju",
+    "8": "åtta",
+    "9": "nio",
+    "10": "tio",
+    "11": "elva",
+    "12": "tolv",
+    "13": "tretton",
+    "14": "fjorton",
+    "15": "femton",
+    "16": "sexton",
+    "17": "sjutton",
+    "18": "arton",
+    "19": "nitton",
+    "20": "tjugo",
+    "30": "trettio",
+    "40": "fyrtio",
+    "50": "femtio",
+    "60": "sextio",
+    "70": "sjuttio",
+    "80": "åttio",
+    "90": "nittio",
+    "100": "hundra"
+  },
+  "count_agreement": [
+    {
+      "mod": 10,
+      "in": [
+        1
+      ],
+      "form": "one"
+    },
+    {
+      "form": "many"
+    }
+  ],
+  "morph_classes": {
+    "verb_pres": {
+      "forms": [
+        "s1",
+        "s2",
+        "s3",
+        "p1",
+        "p2",
+        "p3"
+      ],
+      "paradigm_cells": 6,
+      "need": 5,
+      "lexemes": {
+        "tala": [
+          "talar",
+          "talar",
+          "talar",
+          "talar",
+          "talar",
+          "talar"
+        ],
+        "läsa": [
+          "läser",
+          "läser",
+          "läser",
+          "läser",
+          "läser",
+          "läser"
+        ],
+        "äta": [
+          "äter",
+          "äter",
+          "äter",
+          "äter",
+          "äter",
+          "äter"
+        ],
+        "springa": [
+          "springer",
+          "springer",
+          "springer",
+          "springer",
+          "springer",
+          "springer"
+        ],
+        "köpa": [
+          "köper",
+          "köper",
+          "köper",
+          "köper",
+          "köper",
+          "köper"
+        ],
+        "dricka": [
+          "dricker",
+          "dricker",
+          "dricker",
+          "dricker",
+          "dricker",
+          "dricker"
+        ],
+        "sjunga": [
+          "sjunger",
+          "sjunger",
+          "sjunger",
+          "sjunger",
+          "sjunger",
+          "sjunger"
+        ],
+        "göra": [
+          "gör",
+          "gör",
+          "gör",
+          "gör",
+          "gör",
+          "gör"
+        ]
+      }
+    },
+    "noun_count": {
+      "forms": [
+        "one",
+        "many"
+      ],
+      "paradigm_cells": 2,
+      "need": 5,
+      "lexemes": {
+        "bok": [
+          "en bok",
+          "böcker"
+        ],
+        "hus": [
+          "ett hus",
+          "hus"
+        ],
+        "bord": [
+          "ett bord",
+          "bord"
+        ],
+        "blomma": [
+          "en blomma",
+          "blommor"
+        ],
+        "stad": [
+          "en stad",
+          "städer"
+        ],
+        "papper": [
+          "ett papper",
+          "papper"
+        ],
+        "katt": [
+          "en katt",
+          "katter"
+        ],
+        "kilo": [
+          "ett kilo",
+          "kilon"
+        ],
+        "examen": [
+          "en examen",
+          "examina"
+        ],
+        "taxi": [
+          "en taxi",
+          "taxibilar"
+        ],
+        "tåg": [
+          "ett tåg",
+          "tåg"
+        ],
+        "zebra": [
+          "en zebra",
+          "zebror"
+        ],
+        "quiz": [
+          "ett quiz",
+          "quiz"
+        ],
+        "väg": [
+          "en väg",
+          "vägar"
+        ],
+        "yta": [
+          "en yta",
+          "ytor"
+        ],
+        "jord": [
+          "en jord",
+          "jordar"
+        ],
+        "ö": [
+          "en ö",
+          "öar"
+        ],
+        "watt": [
+          "ett watt",
+          "watt"
+        ],
+        "webb": [
+          "en webb",
+          "webbar"
+        ]
+      }
+    }
+  },
+  "show_kinds": {
+    "arithmetic": {
+      "lexicon": [
+        "plus",
+        "minus",
+        "gånger",
+        "delat",
+        "blir"
+      ],
+      "ops": {
+        "plus": "+",
+        "minus": "-",
+        "gånger": "*",
+        "delat": "/",
+        "blir": "="
+      },
+      "instances_per_pass": 14,
+      "templates": [
+        "{num:n} plus {num:m} blir {num:sum}.",
+        "{n} + {m} = {sum}.",
+        "{num:sum} minus {num:m} blir {num:n}.",
+        "{num:n} gånger {num:m} blir {num:prod}.",
+        "{num:prod} delat {num:m} blir {num:n}."
+      ]
+    },
+    "conjugation": {
+      "lexicon": [
+        "jag",
+        "du",
+        "han",
+        "vi",
+        "ni",
+        "de"
+      ],
+      "instances_per_pass": 16,
+      "templates": [
+        "jag {lex:verb_pres:s1}.",
+        "du {lex:verb_pres:s2}.",
+        "han {lex:verb_pres:s3}.",
+        "vi {lex:verb_pres:p1}.",
+        "ni {lex:verb_pres:p2}.",
+        "de {lex:verb_pres:p3}."
+      ]
+    },
+    "counting": {
+      "lexicon": [
+        "här",
+        "där"
+      ],
+      "instances_per_pass": 38,
+      "templates": [
+        "här är {lex:noun_count:one}.",
+        "här är {lex:noun_count:many}.",
+        "där är {lex:noun_count:many}."
+      ]
+    },
+    "definition": {
+      "lexicon": [
+        "sak",
+        "ting",
+        "föremål"
+      ],
+      "instances_per_pass": 38,
+      "templates": [
+        "{lex:noun_count:one} är en sak."
+      ]
+    },
+    "refusals": {
+      "refusal": true,
+      "marker": "¬ ",
+      "lexicon": [
+        "¬"
+      ],
+      "pairs": [
+        {
+          "bad": "ett bok är liten.",
+          "good": "en bok är liten.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "en hus är stora.",
+          "good": "ett hus är stort.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "jag talarar.",
+          "good": "jag dansar.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "vilken färg har sju ?",
+          "good": "vad är ett föremål ?",
+          "reason": "unanswerable"
+        },
+        {
+          "bad": "bok plus hus blir ?",
+          "good": "hundra minus ett blir nittionio.",
+          "reason": "type_mismatch"
+        }
+      ]
+    }
+  },
+  "core_pairing": [
+    {
+      "lang_word": "plus",
+      "core": "+",
+      "core_form": "+",
+      "lang_form": "plus"
+    },
+    {
+      "lang_word": "minus",
+      "core": "-",
+      "core_form": "-",
+      "lang_form": "minus"
+    },
+    {
+      "lang_word": "gånger",
+      "core": "×",
+      "core_form": "×",
+      "lang_form": "gånger"
+    },
+    {
+      "lang_word": "delat",
+      "core": "÷",
+      "core_form": "÷",
+      "lang_form": "delat"
+    },
+    {
+      "lang_word": "blir",
+      "core": "=",
+      "core_form": "=",
+      "lang_form": "blir"
+    }
+  ],
+  "cross_kind_share": 0.3,
+  "irregulars": [
+    "böcker",
+    "städer",
+    "gör",
+    "examina",
+    "öar"
+  ],
+  "probe": {
+    "words": [
+      "blir",
+      "bok",
+      "de",
+      "delat",
+      "du",
+      "där",
+      "en",
+      "ett",
+      "föremål",
+      "gånger",
+      "han",
+      "här",
+      "jag",
+      "katt",
+      "minus",
+      "ni",
+      "plus",
+      "sak",
+      "ting",
+      "vi",
+      "är"
+    ],
+    "diacritics": "åäö"
+  }
+}
