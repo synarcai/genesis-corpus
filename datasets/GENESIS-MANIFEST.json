@@ -395,6 +395,14 @@
       "size": 100000,
       "tiers": [],
       "text": "shows"
+    },
+    {
+      "name": "speech",
+      "file": "datasets/genesis_speech.txt",
+      "genre": "connected speech: anaphora across a sentence, the inference connective, the relative clause, quantifier with domain, nominalisation, sufficient and necessary",
+      "size": 90000,
+      "tiers": [],
+      "text": "shows"
     }
   ]
 }
