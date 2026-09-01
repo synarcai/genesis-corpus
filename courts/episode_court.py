@@ -176,6 +176,38 @@ def знаменатель(текст):
 
 КОНВЕРСИЯ = re.compile(rf"^1 ({С}) = (\d+) ({С})\.$")
 КОНВЕРСИЯ_К = re.compile(rf"^(\d+) ({С}) (?:=|are) (\d+) ({С})\.$")
+# ОТНОШЕНИЯ ЕДИНИЦ ОБЪЯВЛЕНЫ СЛОЕМ КОНВЕРСИЙ, и суд их ЧИТАЕТ: «3 hours
+# equal 180 minutes» проверяемо ровно потому, что час объявлен в
+# шестидесяти минутах. Без объявления это было бы утверждение на веру.
+def _отношения():
+    import ast
+    ф = КОРЕНЬ / "tools/gen_genesis_conversions.py"
+    try:
+        дерево = ast.parse(ф.read_text(encoding="utf-8"))
+    except OSError:
+        return {}
+    for узел in ast.walk(дерево):
+        if (isinstance(узел, ast.Assign)
+                and getattr(узел.targets[0], "id", None) == "FACTS"):
+            вон = {}
+            for запись in ast.literal_eval(узел.value):
+                один, много, ставка = запись[0], запись[1], запись[2]
+                вон[(один, много)] = ставка
+                вон[(один + "s", много)] = ставка
+            return вон
+    return {}
+
+
+ОТНОШЕНИЯ = _отношения()
+РАВНЫ = re.compile(rf"^(\d+) ({С}) equals? (\d+) ({С})\.$")
+ОСТАТОК_EN = re.compile(
+    rf"^(\d+) divided by (\d+) equals (\d+) remainder (\d+)\.$")
+ОСТАТОК_RU = re.compile(
+    rf"^(\d+) делить (\d+) равно (\d+) остаток (\d+)\.$")
+СТАВКА_ШТУК = re.compile(
+    rf"^(\d+) ({С}) at (\d+) ({С}) equals? (\d+) ({С})\.$")
+СТАВКА_RU = re.compile(
+    rf"^(\d+) по (\d+) (\S+) равно (\d+) (\S+)\.$")
 ДЕРЖИТ = re.compile(rf"^a ({С}) holds (\d+) ({С})\.$")
 
 
@@ -261,6 +293,26 @@ def судить(строка):
         if зн is None:
             return False, True
         return True, всего % зн == 0 and всего - всего // зн == осталось
+    m = ОСТАТОК_EN.match(с) or ОСТАТОК_RU.match(с)
+    if m:
+        a, b, q, r = (int(x) for x in m.groups())
+        return True, b != 0 and divmod(a, b) == (q, r)
+    m = СТАВКА_ШТУК.match(с)
+    if m:
+        штук, цена, итог = (int(m.group(i)) for i in (1, 3, 5))
+        return True, штук * цена == итог
+    m = СТАВКА_RU.match(с)
+    if m:
+        штук, цена, итог = (int(m.group(i)) for i in (1, 2, 4))
+        return True, штук * цена == итог
+    m = РАВНЫ.match(с)
+    if m:
+        k, один, итог, много = (m.group(1), m.group(2),
+                                m.group(3), m.group(4))
+        ставка = ОТНОШЕНИЯ.get((один.rstrip("s"), много))
+        if ставка is None:
+            return False, True
+        return True, int(k) * ставка == int(итог)
     m = УПАКОВКА_ВОПРОС.match(с)
     if m:
         k, итог = int(m.group(2)), int(m.group(4))
