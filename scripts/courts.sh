@@ -17,7 +17,7 @@ COURTS=("courts/arith_court.py" "courts/algo_court.py"
         "courts/formula_court.py" "courts/logic_court.py"
         "courts/physics_court.py" "courts/cyber_court.py"
         "courts/agreement_court.py" "courts/notation_court.py"
-        "courts/unit_court.py" "courts/number_court.py" "courts/inquiry_court.py" "courts/surfaces_court.py" "courts/markdown_court.py" "courts/doctree_court.py" "courts/sequence_court.py"
+        "courts/unit_court.py" "courts/number_court.py" "courts/inquiry_court.py" "courts/surfaces_court.py" "courts/markdown_court.py" "courts/doctree_court.py" "courts/rates_court.py" "courts/formula_lang_court.py" "courts/percent_court.py" "courts/average_court.py" "courts/equation_court.py" "courts/sequence_court.py"
         "courts/geometry_court.py" "courts/linalg_court.py"
         "courts/calendar_court.py" "courts/speech_court.py"
         "courts/rugram_court.py" "courts/physlaw_court.py"
@@ -33,6 +33,7 @@ COURTS=("courts/arith_court.py" "courts/algo_court.py"
         "courts/markup_court.py" "courts/langlayer_court.py"
         "tools/gsm_census.py --court"
         "scripts/reproducible.py" "scripts/bash32_court.py"
+        "scripts/lexicon_reach.py"
         "scripts/coverage.py")
 FELL=0
 for entry in "${COURTS[@]}"; do

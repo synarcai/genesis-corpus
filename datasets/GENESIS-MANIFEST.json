@@ -75,7 +75,12 @@
       "genre": "russian as a LANGUAGE: paradigms, graphemes, irregulars",
       "size": 100000,
       "tiers": [],
-      "text": "shows"
+      "text": "shows",
+      "script": "cyrillic",
+      "segmentation": "spaced",
+      "assemblies": [
+        "school"
+      ]
     },
     {
       "name": "genesis_compare",
@@ -91,7 +96,12 @@
       "genre": "german as a LANGUAGE: four cases on the article, six persons",
       "size": 100000,
       "tiers": [],
-      "text": "shows"
+      "text": "shows",
+      "script": "latin",
+      "segmentation": "spaced",
+      "assemblies": [
+        "school"
+      ]
     },
     {
       "name": "items",
@@ -99,7 +109,10 @@
       "genre": "living item lexicon of GSM8K: item role and number-free life",
       "size": 200000,
       "tiers": [],
-      "text": "shows"
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
     },
     {
       "name": "aggregate",
@@ -107,7 +120,10 @@
       "genre": "aggregate genus: a fact of a plural bearer",
       "size": 100000,
       "tiers": [],
-      "text": "shows"
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
     },
     {
       "name": "rates",
@@ -115,7 +131,10 @@
       "genre": "temporal unfoldings: rate over a period (genus 8)",
       "size": 100000,
       "tiers": [],
-      "text": "shows"
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
     },
     {
       "name": "fractions",
@@ -123,7 +142,10 @@
       "genre": "parts of a whole: half/third/quarter on three surfaces",
       "size": 100000,
       "tiers": [],
-      "text": "shows"
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
     },
     {
       "name": "lang_en",
@@ -131,7 +153,12 @@
       "genre": "english as a LANGUAGE: the third-person -s and the plurals that obey nothing",
       "size": 100000,
       "tiers": [],
-      "text": "shows"
+      "text": "shows",
+      "script": "latin",
+      "segmentation": "spaced",
+      "assemblies": [
+        "school"
+      ]
     },
     {
       "name": "conversions",
@@ -139,7 +166,10 @@
       "genre": "conversions (genus 10): one unit told in another, three surfaces",
       "size": 100000,
       "tiers": [],
-      "text": "shows"
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
     },
     {
       "name": "remainders",
@@ -147,7 +177,10 @@
       "genre": "division with a remainder (genus 9): four surfaces, self-judging weld",
       "size": 100000,
       "tiers": [],
-      "text": "shows"
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
     },
     {
       "name": "lang_zh",
@@ -155,7 +188,12 @@
       "genre": "chinese as a LANGUAGE: aspect particles and measure words, no alphabet",
       "size": 100000,
       "tiers": [],
-      "text": "shows"
+      "text": "shows",
+      "script": "han",
+      "segmentation": "longest-match",
+      "assemblies": [
+        "school"
+      ]
     },
     {
       "name": "msfs_en",
@@ -226,7 +264,10 @@
       "genre": "benchmark verbs and the perfect shown beside its past",
       "size": 100000,
       "tiers": [],
-      "text": "shows"
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
     },
     {
       "name": "logic_sets",
@@ -282,7 +323,10 @@
       "genre": "number theory: primes, unique factorisation, divisors, congruence modulo n, coprimality",
       "size": 60000,
       "tiers": [],
-      "text": "shows"
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
     },
     {
       "name": "calendar",
@@ -290,7 +334,10 @@
       "genre": "calendar: the week as congruence modulo 7, month order and length, the year as a sum of months",
       "size": 50000,
       "tiers": [],
-      "text": "shows"
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
     },
     {
       "name": "sequences",
@@ -298,7 +345,10 @@
       "genre": "sequences: arithmetic and geometric progression, limit of a series, rate of change and the power rule",
       "size": 100000,
       "tiers": [],
-      "text": "shows"
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
     },
     {
       "name": "geometry",
@@ -306,7 +356,10 @@
       "genre": "geometry: area and perimeter, volume and surface, the Pythagorean theorem on exact triples",
       "size": 70000,
       "tiers": [],
-      "text": "shows"
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
     },
     {
       "name": "linalg",
@@ -314,7 +367,10 @@
       "genre": "linear algebra: vector sum and scale, exact length, dot product, determinant and the action of a matrix",
       "size": 60000,
       "tiers": [],
-      "text": "shows"
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
     },
     {
       "name": "formulas",
@@ -322,7 +378,10 @@
       "genre": "formulas and mermaid diagrams, described in four languages",
       "size": 200000,
       "tiers": [],
-      "text": "shows"
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
     },
     {
       "name": "algebra",
@@ -330,7 +389,10 @@
       "genre": "signs of mathematics, identities and simplification, checked by substitution",
       "size": 200000,
       "tiers": [],
-      "text": "shows"
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
     },
     {
       "name": "physics",
@@ -338,7 +400,10 @@
       "genre": "foundations of physics: seven integer laws, prefixes, dimensions",
       "size": 200000,
       "tiers": [],
-      "text": "shows"
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
     },
     {
       "name": "cybernetics",
@@ -354,7 +419,10 @@
       "genre": "how a number is written: per cent, money, mixed numbers, ascii signs",
       "size": 100000,
       "tiers": [],
-      "text": "shows"
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
     },
     {
       "name": "programs",
@@ -370,7 +438,10 @@
       "genre": "counting, chance and the middle of a set",
       "size": 100000,
       "tiers": [],
-      "text": "shows"
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
     },
     {
       "name": "proof",
@@ -378,7 +449,10 @@
       "genre": "the forms of a proof: induction, cases, counterexample, direct",
       "size": 100000,
       "tiers": [],
-      "text": "shows"
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
     },
     {
       "name": "machine",
@@ -386,7 +460,10 @@
       "genre": "how a machine holds a number: bases, bitwise operations, shifts, width",
       "size": 100000,
       "tiers": [],
-      "text": "shows"
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
     },
     {
       "name": "depletion",
@@ -394,7 +471,10 @@
       "genre": "a fraction of a total goes and a part remains (g1.36 shape)",
       "size": 100000,
       "tiers": [],
-      "text": "shows"
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
     },
     {
       "name": "speech",
@@ -402,7 +482,10 @@
       "genre": "connected speech: anaphora across a sentence, the inference connective, the relative clause, quantifier with domain, nominalisation, sufficient and necessary",
       "size": 90000,
       "tiers": [],
-      "text": "shows"
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
     },
     {
       "name": "physlaws",
@@ -426,7 +509,10 @@
       "genre": "foundations of mathematics and the named case: function as one object, injection by witness, cardinality and countability, proof by contradiction, induction, the six Russian cases named",
       "size": 60000,
       "tiers": [],
-      "text": "shows"
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
     },
     {
       "name": "gsmlex",
@@ -434,7 +520,10 @@
       "genre": "GSM lexicon drill: possession verbs over the item lexicon (working layer of the band stand)",
       "size": 45000,
       "tiers": [],
-      "text": "shows"
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
     },
     {
       "name": "gsmwide",
@@ -442,7 +531,10 @@
       "genre": "GSM wide frames: possessive bearers and herd subjects (working layer of the band stand)",
       "size": 100000,
       "tiers": [],
-      "text": "shows"
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
     },
     {
       "name": "heads",
@@ -450,7 +542,10 @@
       "genre": "GSM question heads: left-over, have-now, price-each, rate-per-day (working layer of the band stand)",
       "size": 60000,
       "tiers": [],
-      "text": "shows"
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
     },
     {
       "name": "realverbs",
@@ -458,7 +553,10 @@
       "genre": "real verbs of the benchmark in their canonical frames (working layer of the band stand)",
       "size": 30000,
       "tiers": [],
-      "text": "shows"
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
     },
     {
       "name": "verbal",
@@ -466,7 +564,10 @@
       "genre": "verbal equality with the copula «is» beside «equals», and the past tense in the market's own frame",
       "size": 40000,
       "tiers": [],
-      "text": "shows"
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
     },
     {
       "name": "lang_es",
@@ -474,7 +575,12 @@
       "genre": "es as a LANGUAGE: numerals, six-person present, noun with article in two numbers, refusal pairs (tier 1: structure green, forms agree with the pack's own rules)",
       "size": 40000,
       "tiers": [],
-      "text": "shows"
+      "text": "shows",
+      "script": "latin",
+      "segmentation": "spaced",
+      "assemblies": [
+        "school"
+      ]
     },
     {
       "name": "lang_fr",
@@ -482,7 +588,12 @@
       "genre": "fr as a LANGUAGE: numerals, six-person present, noun with article in two numbers, refusal pairs (tier 1: structure green, forms agree with the pack's own rules)",
       "size": 40000,
       "tiers": [],
-      "text": "shows"
+      "text": "shows",
+      "script": "latin",
+      "segmentation": "spaced",
+      "assemblies": [
+        "school"
+      ]
     },
     {
       "name": "lang_it",
@@ -490,7 +601,12 @@
       "genre": "it as a LANGUAGE: numerals, six-person present, noun with article in two numbers, refusal pairs (tier 1: structure green, forms agree with the pack's own rules)",
       "size": 40000,
       "tiers": [],
-      "text": "shows"
+      "text": "shows",
+      "script": "latin",
+      "segmentation": "spaced",
+      "assemblies": [
+        "school"
+      ]
     },
     {
       "name": "lang_pt",
@@ -498,7 +614,12 @@
       "genre": "pt as a LANGUAGE: numerals, six-person present, noun with article in two numbers, refusal pairs (tier 1: structure green, forms agree with the pack's own rules)",
       "size": 40000,
       "tiers": [],
-      "text": "shows"
+      "text": "shows",
+      "script": "latin",
+      "segmentation": "spaced",
+      "assemblies": [
+        "school"
+      ]
     },
     {
       "name": "valence",
@@ -522,7 +643,12 @@
       "genre": "dutch: three distinct present cells, not six (tier 1: structure green, forms agree with the pack's own rules)",
       "size": 40000,
       "tiers": [],
-      "text": "shows"
+      "text": "shows",
+      "script": "latin",
+      "segmentation": "spaced",
+      "assemblies": [
+        "school"
+      ]
     },
     {
       "name": "lang_sv",
@@ -530,7 +656,12 @@
       "genre": "swedish: NO person agreement at all — the paradigm is tense (tier 1: structure green, forms agree with the pack's own rules)",
       "size": 40000,
       "tiers": [],
-      "text": "shows"
+      "text": "shows",
+      "script": "latin",
+      "segmentation": "spaced",
+      "assemblies": [
+        "school"
+      ]
     },
     {
       "name": "lang_pl",
@@ -538,7 +669,12 @@
       "genre": "polish: the slavic count law on a latin alphabet, nine diacritics (tier 1: structure green, forms agree with the pack's own rules)",
       "size": 40000,
       "tiers": [],
-      "text": "shows"
+      "text": "shows",
+      "script": "latin",
+      "segmentation": "spaced",
+      "assemblies": [
+        "school"
+      ]
     },
     {
       "name": "lang_uk",
@@ -546,7 +682,12 @@
       "genre": "ukrainian: cyrillic with four letters russian lacks, apostrophe inside the word (tier 1: structure green, forms agree with the pack's own rules)",
       "size": 40000,
       "tiers": [],
-      "text": "shows"
+      "text": "shows",
+      "script": "cyrillic",
+      "segmentation": "spaced",
+      "assemblies": [
+        "school"
+      ]
     },
     {
       "name": "lang_tr",
@@ -554,7 +695,12 @@
       "genre": "turkish: agglutination, vowel harmony in four classes, teens as two words, and NO count agreement — the noun stays singular after a numeral (tier 1: structure green, forms agree with the pack's own rules)",
       "size": 40000,
       "tiers": [],
-      "text": "shows"
+      "text": "shows",
+      "script": "latin",
+      "segmentation": "spaced",
+      "assemblies": [
+        "school"
+      ]
     },
     {
       "name": "inquiry",
@@ -562,7 +708,10 @@
       "genre": "the ladder of inquiry: for six genera — primality, divisibility, the sum of odd numbers, the conditional, injectivity, the square — four rungs are shown, definition then a decided case with its ground then a counterexample then the law; both tongues, every ground recomputed by the court",
       "size": 120000,
       "tiers": [],
-      "text": "shows"
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
     },
     {
       "name": "surfaces",
@@ -570,7 +719,10 @@
       "genre": "the surfaces of an act: the same arithmetic fact said as a nominalisation («сложение 7 и 6 даёт 13», «the addition of 7 and 6 gives 13»), as a named result («сумма … равна», «произведение … равно» — the copula agrees with gender), as a question to each, and with numerals SPOKEN in words («сорок два минус пять будет тридцать семь»); government is declared once and the question is derived from the same phrase it answers",
       "size": 120000,
       "tiers": [],
-      "text": "shows"
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
     },
     {
       "name": "markdown",
@@ -587,6 +739,66 @@
       "size": 150000,
       "tiers": [],
       "text": "shows"
+    },
+    {
+      "name": "formula_lang",
+      "file": "datasets/genesis_formula_lang.txt",
+      "genre": "formula and speech, converted both ways at any depth: ONE expression TREE with four surfaces (LaTeX, glyphs, English words, Russian words) and four inverse walks written apart; a compound argument is always spoken in brackets, which is what makes speech parsable at any depth; the court parses BOTH sides of a conversion and requires the SAME TREE, and the home's oracle proves all eight walks agree on six thousand trees to depth five",
+      "size": 300000,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
+    },
+    {
+      "name": "percent",
+      "file": "datasets/genesis_percent.txt",
+      "genre": "percent on three surfaces (glyph, word, both tongues): «20% of 80 is 16», the conversion percent<->hundredths, the inverse question «16 is 20% of 80», and growth and cut by a percent; only whole results are uttered — a percent that does not come out whole is not shown at all",
+      "size": 100000,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
+    },
+    {
+      "name": "average",
+      "file": "datasets/genesis_average.txt",
+      "genre": "the summary of a row: average with its GROUND beside it (the sum and the count named separately), largest and smallest, the law that the average lies between them, and the counterexample that the average need not be one of the numbers",
+      "size": 100000,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
+    },
+    {
+      "name": "equation",
+      "file": "datasets/genesis_equation.txt",
+      "genre": "the ladder of inquiry on equations: what a root IS, a case DECIDED by substitution with the arithmetic beside the verdict, Vieta shown as sum and product of the roots rather than a formula recited, a refusal with its ground («no whole root between 0 and 10: every value leaves a remainder»), and the square root as the INVERSE surface of the square; coefficients derived from the roots, numbers by range and not by case",
+      "size": 150000,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
+    },
+    {
+      "name": "equation_signed",
+      "file": "datasets/genesis_equation_signed.txt",
+      "genre": "the same ladder of equations where roots may be NEGATIVE or zero — kept a world apart, not because the mathematics differs but because a frame is bought only when ONE performer speaks on EVERY show of it: a solver living in the unsigned world cannot reproduce «is -6 a root», and one such show kills the purchase of the whole frame",
+      "size": 150000,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
+      "name": "school",
+      "file": "datasets/GENESIS-SCHOOL.txt",
+      "genre": "the school assembly: every world that declares «school» in its `assemblies`, in manifest order — the ladder a learner walks before the whole corpus; a consequence of the manifest, not a decision of whoever assembles it",
+      "size": 0,
+      "tiers": [],
+      "text": "mix"
     },
     {
       "name": "full",

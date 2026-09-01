@@ -385,6 +385,13 @@
           "reason": "type_mismatch"
         }
       ]
+    },
+    "counting_chain": {
+      "lexicon": [],
+      "instances_per_pass": 3,
+      "templates": [
+        "{chain}."
+      ]
     }
   },
   "core_pairing": [

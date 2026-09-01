@@ -233,7 +233,7 @@
         "multiplied by": "*"
       },
       "numeral_compose": "additive",
-      "instances_per_pass": 8,
+      "instances_per_pass": 32,
       "templates": [
         "{num:n} plus {num:m} equals {num:sum}.",
         "{n} + {m} = {sum}.",
@@ -247,7 +247,7 @@
         "count",
         "counts"
       ],
-      "instances_per_pass": 6,
+      "instances_per_pass": 24,
       "templates": [
         "i count {n} {lex:noun_count:by_n}.",
         "i count {sum} {lex:noun_count:by_sum}.",
@@ -262,7 +262,7 @@
         "we",
         "they"
       ],
-      "instances_per_pass": 6,
+      "instances_per_pass": 24,
       "templates": [
         "you {lex:verb_pres:s2} it.",
         "she {lex:verb_pres:s3} it.",
@@ -276,7 +276,7 @@
         "today",
         "already"
       ],
-      "instances_per_pass": 6,
+      "instances_per_pass": 24,
       "templates": [
         "today they {lex:verb_past:base}.",
         "yesterday she {lex:verb_past:past}.",
@@ -292,7 +292,7 @@
         "zebra",
         "jar"
       ],
-      "instances_per_pass": 4,
+      "instances_per_pass": 16,
       "templates": [
         "the quiz is a thing.",
         "the box is a thing.",
@@ -332,9 +332,16 @@
         },
         {
           "bad": "a book plus a jar equals?",
-          "good": "seven minus two equals five.",
+          "good": "one hundred minus one equals ninety nine.",
           "reason": "type_mismatch"
         }
+      ]
+    },
+    "counting_chain": {
+      "lexicon": [],
+      "instances_per_pass": 4,
+      "templates": [
+        "{chain}."
       ]
     }
   },

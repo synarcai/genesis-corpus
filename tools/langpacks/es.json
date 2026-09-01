@@ -320,7 +320,7 @@
         "es": "=",
         "es igual a": "="
       },
-      "instances_per_pass": 14,
+      "instances_per_pass": 42,
       "templates": [
         "{num:n} más {num:m} es {num:sum}.",
         "{n} + {m} = {sum}.",
@@ -338,7 +338,7 @@
         "vosotros",
         "ellos"
       ],
-      "instances_per_pass": 12,
+      "instances_per_pass": 36,
       "templates": [
         "yo {lex:verb_pres:s1}.",
         "tú {lex:verb_pres:s2}.",
@@ -354,7 +354,7 @@
         "aquí",
         "y"
       ],
-      "instances_per_pass": 12,
+      "instances_per_pass": 36,
       "templates": [
         "aquí está {lex:noun_count:one}.",
         "aquí están {lex:noun_count:many}.",
@@ -367,7 +367,7 @@
         "bastante",
         "también"
       ],
-      "instances_per_pass": 12,
+      "instances_per_pass": 36,
       "templates": [
         "el libro es {lex:adj_gender_number:m_sg}.",
         "la casa es {lex:adj_gender_number:f_sg}.",
@@ -381,7 +381,7 @@
         "una",
         "objeto"
       ],
-      "instances_per_pass": 10,
+      "instances_per_pass": 30,
       "templates": [
         "{lex:noun_count:one} es una cosa."
       ]
@@ -418,6 +418,13 @@
           "good": "cien menos uno es noventa y nueve.",
           "reason": "type_mismatch"
         }
+      ]
+    },
+    "counting_chain": {
+      "lexicon": [],
+      "instances_per_pass": 3,
+      "templates": [
+        "{chain}."
       ]
     }
   },

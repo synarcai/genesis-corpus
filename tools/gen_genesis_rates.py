@@ -1,196 +1,292 @@
 #!/usr/bin/env python3
-"""GENESIS layer: TEMPORAL UNFOLDINGS (genus 8).
+"""GENESIS layer: RATE, MONEY AND TIME — the bridge a word problem walks.
 
-A rate is a fact of a PAIR (item, period) with the value carried
-impersonally — holon's rate roads read `rate_facts = (item, unit,
-rate)` and take no agent into the link; the agent belongs to the
-episode, not to the rate. The target line shape is his, given as fact
-rather than guess:
+A band of thirty questions died on one bridge. «Gerald earns 30 dollars
+every day; how much in a week?» needs FOUR things at once, and the corpus
+carried each of them apart and none of them together:
 
-    5 × 4 = 20.
-    ida walks 5 miles every day. how much in 4 days?
-    ida walks 20 miles in 4 days.
+    СТАВКА     — «30 dollars EVERY day» ties a money unit to a time unit;
+                 the pair (dollars, day) must be LIVED, not merely stated;
+    ЧИСЛОФОРМА — «a week has 7 DAYS» but «7 days make a WEEK»: singular and
+                 plural of the SAME unit on the SAME numbers, side by side.
+                 This is where the band actually stopped: the organism knew
+                 «day» and knew «days» and did not know they are one word;
+    ПЕРЕВОД    — hour↔minute, day↔hour, week↔day, dollar↔cent, walked as a
+                 relation and not memorised as a pair;
+    ГЛАГОЛ ДЕНЕГ — cost / spend / have left, with the polarity that spending
+                 SUBTRACTS; and «X and Y cost N» — a sum said by a verb.
 
-THREE THINGS THE SHAPE INSISTS ON, EACH FOR A REASON:
-  · the GLYPH AXIS rides in-layer as the weld — the road buys the
-    multiplication from it, and without the weld the prose line has
-    nothing to be checked against;
-  · the question frame carries a SHOWN ANSWER. «how much in 4 days?»
-    with no answer is not a frame at all, and the road cannot read it;
-  · NO DIVISION IS SHOWN. The road reads the inverse by inference
-    (total ÷ K through the OR-6 inversion over a bought ×). A division
-    show is not merely unnecessary here but harmful — the langpack
-    shipped 40 division shows of which 40 were false, because the
-    machinery had no product to write them over.
+ONE FACT, THREE SURFACES, SAME NUMBERS. The rate, the total and the question
+stand together on one triple of numbers, in English and in Russian, because
+the bridge is crossed by seeing the same numbers wear three clothes.
 
-VERB AND UNIT ARE DECLARED TOGETHER. A rate joins a doing to a thing,
-and no census can tell which pairs are true of the world: «ida walks 5
-teachers every day» would be grammatical and false, the same fault as
-«own 5 teachers» and «keeps -1 coins». So the pairs are named, and the
-units are the census lexicon of the benchmark (tools/gsm_items.py).
+RUSSIAN PAYS ITS OWN PRICE, AND IT IS PAID HERE. «сколько минут в двух
+часах?» needs the numeral in an oblique form («двух», declared by the pack)
+AND the noun in the prepositional plural («часах»), which no house carried:
+counting triples are AGREEMENT under a number, not case. The prepositional
+plural is now DERIVED from the declared paradigm (`rugram.предложный_мн`),
+and the question can finally be asked in Russian at all.
+
+EVERY RELATION IS WALKED, NOT WRITTEN: `units.отношение` finds the factor
+through the declared graph, and the court walks it again.
 """
 
-from layer import PASSES, emit
+import pathlib
+import sys
+
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import numerals  # noqa: E402
+import rugram  # noqa: E402
+import units  # noqa: E402
+from layer import emit_grouped  # noqa: E402
+
+ЦЕЛЬ = "datasets/genesis_rates.txt"
+
+# (крупная единица, мелкая) — отношение НЕ пишется, оно проходится
+ПЕРЕВОДЫ = (("hour", "minute"), ("day", "hour"), ("week", "day"),
+            ("year", "month"), ("dollar", "cent"),
+            ("rouble", "kopeck"), ("kilometre", "metre"))
+# русское имя единицы для парадигмы — по английскому имени дома единиц
+РУССКОЕ = {"hour": "час", "minute": "минута", "day": "день",
+           "week": "неделя", "month": "месяц", "year": "год",
+           "dollar": None, "cent": None, "rouble": "рубль",
+           "kopeck": "копейка", "kilometre": "километр",
+           "metre": None}
+# ставка: что платят, за какую единицу времени, и кем
+СТАВКИ = (("dollar", "day"), ("dollar", "hour"), ("cent", "minute"),
+          ("rouble", "day"), ("rouble", "hour"))
+ДЕЯТЕЛИ = (("a worker", "рабочий", "зарабатывает"),
+           ("a driver", "водитель", "зарабатывает"),
+           ("a baker", "пекарь", "зарабатывает"))
+ВЕЩИ = (("book", "книга"), ("pen", "ручка"), ("card", "карта"))
 
 
-from gsm_items import PACKAGEABLE
-from gsm_items import ITEMS as CENSUS
-from plural import by_count, singular
-
-NAMES = ["ida", "omar", "pia", "rosa", "sven",
-         "tara", "umar", "vera"]
-# (verb, units it truly takes) — the pairing is the declaration
-DOINGS = [
-    ("walks", ["miles", "kilometers"]),
-    ("runs", ["miles", "yards"]),
-    ("writes", ["pages", "reports"]),
-    ("reads", ["pages", "books", "newspapers"]),
-    ("bakes", ["cookies", "cupcakes", "batches"]),
-    ("earns", ["dollars"]),
-    ("saves", ["dollars", "pounds"]),
-    ("packs", ["crates", "bandages", "cards"]),
-    ("collects", ["shells", "stickers", "cards", "marbles"]),
-    ("drinks", ["cups", "gallons", "ounces"]),
-    ("eats", ["calories", "eggs", "sandwiches", "meals"]),
-    ("plants", ["roses", "flowers"]),
-]
-# (period phrase, its plural for the span) — four surfaces of one genus
-PERIODS = [("every day", "days"), ("every night", "nights"),
-           ("each day", "days"), ("a day", "days")]
-# (container, its plural) — упаковка как второй род ставки
-CONTAINERS = [("pack", "packs"), ("box", "boxes"), ("crate", "crates"),
-              ("batch", "batches")]
-# THE PERIOD MUST LIVE WHERE NO DIGIT STANDS, or it is known only as
-# «the word after a number» and the question frame cannot confirm it.
-BARE = [
-    "the {one} is a period.",
-    "{a} waits for the {one}.",
-    "what is a {one}?",
-]
+# АРТИКЛЬ ИДЁТ ЗА ЗВУКОМ, А НЕ ЗА БУКВОЙ. «a hour» — ошибка, которую
+# слой учил бы с полной судимостью: «h» в «hour» не звучит, и артикль
+# берёт форму «an». Гласные названы правилом, немое «h» — именованным
+# списком, ибо это факт ПРОИЗНОШЕНИЯ, из письма не выводимый.
+_НЕМОЕ_H = ("hour", "honest", "heir")
 
 
-# РУССКИЕ ИМЕНА ВЕЩЕЙ И ВМЕСТИЛИЩ ОБЪЯВЛЕНЫ, А НЕ ВЫВЕДЕНЫ: перевод не
-# следует из английской формы, и род с падежом тем более. Формы даны
-# тройкой один / два-четыре / пять, как всюду в корпусе.
-ВЕЩЬ_RU = {
-    "apples": ("яблоко", "яблока", "яблок"),
-    "books": ("книга", "книги", "книг"),
-    "cards": ("карта", "карты", "карт"),
-    "cookies": ("печенье", "печенья", "печений"),
-    "eggs": ("яйцо", "яйца", "яиц"),
-    "flowers": ("цветок", "цветка", "цветков"),
-    "pens": ("ручка", "ручки", "ручек"),
-    "spoons": ("ложка", "ложки", "ложек"),
-    "toys": ("игрушка", "игрушки", "игрушек"),
-    "marbles": ("шарик", "шарика", "шариков"),
-    "shells": ("ракушка", "ракушки", "ракушек"),
-    "stickers": ("наклейка", "наклейки", "наклеек"),
-}
-ВМЕСТИЛИЩЕ_RU = {
-    "pack": ("упаковке", "упаковки"),
-    "box": ("коробке", "коробки"),
-    "crate": ("ящике", "ящика"),
-    "batch": ("партии", "партии"),
-}
+def артикль(слово):
+    """«a» или «an» — по звуку, с которого слово начинается."""
+    if слово[0] in "aeiou" or слово.startswith(_НЕМОЕ_H):
+        return "an"
+    return "a"
 
 
-def pass_shows(pass_i):
-    out = []
-    unknown = [u for _, us in DOINGS for u in us if u not in CENSUS]
-    assert not unknown, unknown
-    i = 0
-    for verb, units in DOINGS:
-        for unit in units:
-            seed = pass_i * 29 + i * 11
-            i += 1
-            a = NAMES[seed % len(NAMES)]
-            rate = seed % 6 + 1          # 1..6
-            k = seed % 8 + 2             # 2..9
-            span, plural_span = PERIODS[seed % len(PERIODS)]
-            total = rate * k
-            out.append(f"{rate} × {k} = {total}.")
-            out.append(
-                f"{a} {verb} {rate} {by_count(rate, unit)} {span}. "
-                f"how much in {k} {plural_span}? "
-                f"{a} {verb} {total} {by_count(total, unit)} "
-                f"in {k} {plural_span}."
-            )
-    # ВТОРОЙ РОД СТАВКИ: НЕ ПЕРИОД, А УПАКОВКА. Бенчмарк пишет «razors
-    # come 4 to a pack» и «popsicles come 8 to a box» — это ставка между
-    # ПРЕДМЕТОМ и ВМЕСТИЛИЩЕМ, той же формы, что ставка во времени, но с
-    # иным вторым носителем. Перепись назвала глагол «come» стоящим
-    # перед числом, и соблазн был велик добавить его четырёхместным —
-    # но «ida comes 4 packs» ложно о мире (М-103): приходит не агент,
-    # а товар, и приходит УПАКОВКОЙ.
-    for j, (one, many) in enumerate(CONTAINERS):
-        товары = sorted(PACKAGEABLE)
-        unit = товары[(pass_i * 11 + j * 7) % len(товары)]
-        # СТАВКА ПРИНАДЛЕЖИТ ПАРЕ, А НЕ ПРОХОДУ. Прежде она считалась
-        # от номера прохода, и стоило вращению дважды свести одну пару,
-        # как корпус сказал бы «apples come 4 to a pack» и «apples come
-        # 6 to a pack» — противоречие о мире, которое не поймает ни
-        # один счётный прибор, ибо обе строки верны поодиночке. Теперь
-        # ставка выводится из самой пары, и противоречие невозможно
-        # ПО ПОСТРОЕНИЮ.
-        rate = (товары.index(unit) + j) % 6 + 2      # 2..7
-        out.append(f"{unit} come {rate} to a {one}.")
-        out.append(f"a {one} holds {rate} {unit}.")
-        # НЕСКОЛЬКО ЧИСЛОВЫХ ПАР НА ОДИН КЛЮЧ: константа покупается
-        # рынком лишь тогда, когда одно и то же отношение показано на
-        # РАЗНЫХ числах. Одна пара учит паре, а не отношению.
-        for k in (2, 3, 5):
-            out.append(
-                f"how many {unit} in {k} {many}? "
-                f"{k} {many} hold {rate * k} {unit}."
-            )
-        # РУССКАЯ ПОВЕРХНОСТЬ ТОЙ ЖЕ СТАВКИ. Английская половина знала
-        # вместилище, русская не знала вовсе — а ставка есть отношение,
-        # а не английский оборот. Имя вещи по-русски объявлено рядом со
-        # списком (`ВЕЩЬ_RU`), ибо перевод не выводится из формы.
-        ру_вещь = ВЕЩЬ_RU.get(unit)
-        ру_вмест = ВМЕСТИЛИЩЕ_RU.get(one)
-        if ру_вещь and ру_вмест:
-            один, few, many_ru = ру_вещь
-            в_чём, вмест_few = ру_вмест
-            out.append(f"в {в_чём} {rate} {many_ru if rate >= 5 else few}.")
-            for k in (2, 3):
-                out.append(
-                    f"{k} {вмест_few} вмещают {rate * k} "
-                    f"{many_ru if rate * k >= 5 else few}."
-                )
-        out.append(f"the {one} is a container.")
-        out.append(f"what is a {one}?")
-    # THE PERIOD'S NUMBER-FREE LIFE IS EMITTED ONCE PER PASS, over
-    # every distinct period word. Emitting it inside the verb loop
-    # repeated one period and starved another — coverage by accident
-    # instead of by construction.
-    for j, one in enumerate(sorted(
-        {singular(pl) for _, pl in PERIODS}
-    )):
-        for tpl in BARE:
-            out.append(tpl.format(
-                a=NAMES[(pass_i + j) % len(NAMES)], one=one,
-            ))
-    return out
+def _мн(имя):
+    return units.англ(имя, True)
 
 
-def _ставка_одна():
-    """Одна пара — одна ставка, и это условие СБОРКИ, а не присмотра."""
-    видано = {}
-    for pi in range(len(PASSES)):
-        товары = sorted(PACKAGEABLE)
-        for j, (one, _) in enumerate(CONTAINERS):
-            unit = товары[(pi * 11 + j * 7) % len(товары)]
-            ставка = (товары.index(unit) + j) % 6 + 2
-            ключ = (unit, one)
-            if видано.setdefault(ключ, ставка) != ставка:
-                raise AssertionError(f"{ключ}: {видано[ключ]} и {ставка}")
-    return len(видано)
+def _ед(имя):
+    return units.англ(имя)
+
+
+def _по_счёту(n, имя):
+    """Английская форма единицы при числе: единица — единственное.
+
+    «1 dollars» есть та же ложь, что «a hour»: число один требует
+    единственного, и слой, писавший множественное всегда, учил бы
+    английскому согласованию наоборот.
+    """
+    return units.англ(имя, n != 1)
+
+
+def числоформа(шаг):
+    """Единственное и множественное ОДНОЙ единицы на одних числах.
+
+    Мост, о который встала полоса: организм знал «day» и знал «days» и
+    не знал, что это одно слово. Обе формы стоят рядом, и число между
+    ними одно.
+    """
+    вон = []
+    for i, (крупно, мелко) in enumerate(ПЕРЕВОДЫ):
+        k = units.отношение(крупно, мелко)
+        if k is None:
+            continue
+        n = 2 + (шаг + i) % 4
+        вон.append(f"{артикль(_ед(крупно))} {_ед(крупно)} has "
+                   f"{k} {_по_счёту(k, мелко)}.")
+        вон.append(f"{k} {_по_счёту(k, мелко)} make "
+                   f"{артикль(_ед(крупно))} {_ед(крупно)}.")
+        вон.append(f"{n} {_по_счёту(n, крупно)} are "
+                   f"{n * k} {_по_счёту(n * k, мелко)}.")
+        вон.append(f"the plural of {_ед(крупно)} is {_мн(крупно)}, and "
+                   f"1 {_ед(крупно)} is {k} {_по_счёту(k, мелко)}.")
+        ру_к, ру_м = РУССКОЕ.get(крупно), РУССКОЕ.get(мелко)
+        if ру_к and ру_м:
+            вон.append(f"в {rugram.ПАРАДИГМЫ[ру_к][5]} "
+                       f"{k} {units.рус(мелко, k)}.")
+            вон.append(f"{k} {units.рус(мелко, k)} составляют "
+                       f"{rugram.ПАРАДИГМЫ[ру_к][3]}.")
+            вон.append(f"{n} {units.рус(крупно, n)} — это "
+                       f"{n * k} {units.рус(мелко, n * k)}.")
+    return вон
+
+
+def вопрос_перевода(шаг):
+    """«сколько минут в двух часах?» — числительное косвенно, имя в предложном."""
+    вон = []
+    табл = numerals.таблица("ru")
+    косвенно = _косвенные()
+    for i, (крупно, мелко) in enumerate(ПЕРЕВОДЫ):
+        k = units.отношение(крупно, мелко)
+        if k is None:
+            continue
+        n = 2 + (шаг * 2 + i) % 5
+        вон.append(f"how many {_мн(мелко)} are in "
+                   f"{n} {_по_счёту(n, крупно)}? "
+                   f"{n} {_по_счёту(n, крупно)} are "
+                   f"{n * k} {_по_счёту(n * k, мелко)}.")
+        ру_к, ру_м = РУССКОЕ.get(крупно), РУССКОЕ.get(мелко)
+        предл = rugram.предложный_мн(ру_к) if ру_к else None
+        слово_n = косвенно.get(str(n))
+        if предл and слово_n and ру_м:
+            вон.append(f"сколько {units.рус(мелко, 5)} в {слово_n} "
+                       f"{предл}? {n} {units.рус(крупно, n)} — это "
+                       f"{n * k} {units.рус(мелко, n * k)}.")
+    return вон
+
+
+def _косвенные():
+    import json
+    ф = pathlib.Path(__file__).resolve().parent / "langpacks" / "ru.json"
+    try:
+        return json.loads(ф.read_text(encoding="utf-8")).get(
+            "numeral_oblique") or {}
+    except (OSError, ValueError):
+        return {}
+
+
+def ставки(шаг):
+    """СТАВКА связывает единицу денег с единицей времени."""
+    вон = []
+    for i, (деньги, время) in enumerate(СТАВКИ):
+        ставка = 2 + (шаг + i) % 9
+        сколько = 2 + (шаг * 3 + i) % 6
+        итог = ставка * сколько
+        кто_en, кто_ru, глагол = ДЕЯТЕЛИ[(шаг + i) % len(ДЕЯТЕЛИ)]
+        вон.append(f"{кто_en} earns {ставка} "
+                   f"{_по_счёту(ставка, деньги)} every "
+                   f"{_ед(время)}.")
+        вон.append(f"{кто_en} earns {ставка} "
+                   f"{_по_счёту(ставка, деньги)} per {_ед(время)}; in "
+                   f"{сколько} {_по_счёту(сколько, время)} {кто_en} "
+                   f"earns {итог} {_по_счёту(итог, деньги)}.")
+        вон.append(f"how much does {кто_en} earn in {сколько} "
+                   f"{_по_счёту(сколько, время)}? in {сколько} "
+                   f"{_по_счёту(сколько, время)} {кто_en} earns "
+                   f"{итог} {_по_счёту(итог, деньги)}.")
+        ру_вр = РУССКОЕ.get(время)
+        if ру_вр:
+            в_ед = rugram.ПАРАДИГМЫ[ру_вр][3]
+            вон.append(f"{кто_ru} {глагол} {ставка} "
+                       f"{units.рус(деньги, ставка)} в {в_ед}.")
+            вон.append(f"{кто_ru} {глагол} {ставка} "
+                       f"{units.рус(деньги, ставка)} в {в_ед}; за "
+                       f"{сколько} {units.рус(время, сколько)} "
+                       f"{кто_ru} {глагол} {итог} "
+                       f"{units.рус(деньги, итог)}.")
+            вон.append(f"сколько {units.рус(деньги, 5)} {кто_ru} "
+                       f"{глагол} за {сколько} "
+                       f"{units.рус(время, сколько)}? за {сколько} "
+                       f"{units.рус(время, сколько)} {кто_ru} "
+                       f"{глагол} {итог} {units.рус(деньги, итог)}.")
+    return вон
+
+
+def за_штуку(шаг):
+    """«each bolt costs 3 cents» — ставка за ШТУКУ, а не за время."""
+    вон = []
+    for i, (вещь_en, вещь_ru) in enumerate(ВЕЩИ):
+        цена = 2 + (шаг + i) % 8
+        сколько = 2 + (шаг * 2 + i) % 7
+        итог = цена * сколько
+        вон.append(f"each {вещь_en} costs {цена} dollars.")
+        вон.append(f"each {вещь_en} costs {цена} dollars; {сколько} "
+                   f"{вещь_en}s cost {итог} dollars.")
+        вон.append(f"how much do {сколько} {вещь_en}s cost? {сколько} "
+                   f"{вещь_en}s cost {итог} dollars.")
+        вон.append(f"одна {вещь_ru} стоит {цена} "
+                   f"{units.рус('rouble', цена)}; {сколько} "
+                   f"{_ру_счёт(вещь_ru, сколько)} стоят {итог} "
+                   f"{units.рус('rouble', итог)}.")
+    return вон
+
+
+def _ру_счёт(слово, счёт):
+    """Форма русского имени при счёте — по объявленной тройке."""
+    return rugram.форма(слово, счёт)
+
+
+def трата(шаг):
+    """ТРАТА ВЫЧИТАЕТ, и остаток назван вместе с основанием."""
+    вон = []
+    for i in range(6):
+        было = 20 + (шаг * 7 + i * 5) % 60
+        потрачено = 3 + (шаг + i * 3) % 15
+        осталось = было - потрачено
+        вон.append(f"he had {было} dollars and spent {потрачено} "
+                   f"dollars; he has {осталось} dollars left.")
+        вон.append(f"how much does he have left after spending "
+                   f"{потрачено} dollars of {было} dollars? he has "
+                   f"{осталось} dollars left.")
+        вон.append(f"у него было {было} "
+                   f"{units.рус('rouble', было)}, он потратил "
+                   f"{потрачено} {units.рус('rouble', потрачено)}; у "
+                   f"него осталось {осталось} "
+                   f"{units.рус('rouble', осталось)}.")
+    return вон
+
+
+def вместе_стоят(шаг):
+    """«X and Y cost N» — сумма, сказанная ГЛАГОЛОМ, а не знаком."""
+    вон = []
+    for i in range(5):
+        а = 5 + (шаг * 3 + i * 7) % 40
+        б = 4 + (шаг + i * 5) % 30
+        (одна, ру_а), (вторая, ру_б) = (ВЕЩИ[i % len(ВЕЩИ)],
+                                        ВЕЩИ[(i + 1) % len(ВЕЩИ)])
+        вон.append(f"the {одна} costs {а} dollars and the {вторая} "
+                   f"costs {б} dollars; the {одна} and the {вторая} "
+                   f"cost {а + б} dollars.")
+        вон.append(f"{ру_а} стоит {а} {units.рус('rouble', а)}, а "
+                   f"{ру_б} стоит {б} {units.рус('rouble', б)}; "
+                   f"вместе они стоят {а + б} "
+                   f"{units.рус('rouble', а + б)}.")
+    return вон
+
+
+def доллары_и_центы(шаг):
+    """Крупное и мелкое обеими сторонами: 105 центов и 1 доллар 5 центов."""
+    вон = []
+    k = units.отношение("dollar", "cent")
+    for i in range(6):
+        д = 1 + (шаг + i) % 9
+        ц = 5 + (шаг * 7 + i * 11) % 90
+        всего = д * k + ц
+        дс, цс = _по_счёту(д, "dollar"), _по_счёту(ц, "cent")
+        вон.append(f"{д} {дс} and {ц} {цс} are {всего} cents.")
+        вон.append(f"{всего} cents are {д} {дс} and {ц} {цс}.")
+        вон.append(f"how many cents are {д} {дс} and {ц} {цс}? "
+                   f"{д} {дс} and {ц} {цс} are {всего} cents.")
+        вон.append(f"{д} {units.рус('rouble', д)} {ц} "
+                   f"{units.рус('kopeck', ц)} — это {всего} "
+                   f"{units.рус('kopeck', всего)}.")
+    return вон
+
+
+ГРУППЫ = (числоформа, вопрос_перевода, ставки, за_штуку, трата,
+          вместе_стоят, доллары_и_центы)
+
+
+def pass_groups(шаг):
+    return [сделать(шаг) for сделать in ГРУППЫ]
 
 
 def main():
-    _ставка_одна()
-    emit("datasets/genesis_rates.txt", pass_shows)
+    emit_grouped(ЦЕЛЬ, pass_groups)
 
 
 if __name__ == "__main__":

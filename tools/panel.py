@@ -40,29 +40,60 @@ for _где in (КОРЕНЬ / "courts", КОРЕНЬ / "tools", КОРЕНЬ / 
     if _где.is_dir() and str(_где) not in sys.path:
         sys.path.insert(0, str(_где))
 
-# Суды с особым зовом — каждый по своей причине, названной здесь.
-ОСОБЫЕ = ("arith", "logic", "markup", "formula", "langlayer")
+# СУДЫ НАЗВАНЫ ПОЛНЫМИ ИМЕНАМИ МОДУЛЕЙ, А НЕ ОСНОВАМИ. Основа
+# («arith») собиралась в имя на месте зова (`f"{имя}_court"`), и всякий,
+# кто читает зависимости ГЛАЗАМИ ИЛИ ПРИБОРОМ, их не видел: парк
+# самопроверки выводит соседей в том числе по СТРОКАМ-ЛИТЕРАЛАМ, и
+# «arith» не совпадало ни с одним модулем. Когда прибор судимости
+# перешёл на палату, вместе с ним ушли и последние видимые литералы —
+# стенд остался без судов и объявил честное дерево слепым. Зависимость,
+# невидимая читателю, невидима и прибору: имя названо целиком.
+ОСОБЫЕ = ("arith_court", "logic_court", "markup_court",
+          "formula_court", "langlayer_court")
 # Прочие судят строку одним доводом.
-ПРОСТЫЕ = ("algo", "physics", "cyber", "notation", "program", "statistics",
-           "proof", "machine", "episode", "copula", "unit", "number",
-           "sequence", "geometry", "linalg", "calendar", "speech",
-           "rugram", "physlaw", "compsci", "case", "valence",
-           "inquiry", "surfaces", "markdown",
-           "doctree")
+ПРОСТЫЕ = ("algo_court", "physics_court", "cyber_court",
+           "notation_court", "program_court", "statistics_court",
+           "proof_court", "machine_court", "episode_court",
+           "copula_court", "unit_court", "number_court",
+           "sequence_court", "geometry_court", "linalg_court",
+           "calendar_court", "speech_court", "rugram_court",
+           "physlaw_court", "compsci_court", "case_court",
+           "valence_court", "inquiry_court", "surfaces_court",
+           "markdown_court", "doctree_court",
+           "rates_court", "formula_lang_court",
+           "percent_court", "average_court",
+           "equation_court")
 
 
-def _взять(имя):
+def _взять(модуль):
+    """Суд, если он загрузился; None — если нет.
+
+    ОТКАЗ ОДНОГО СУДА НЕ ЕСТЬ ОТКАЗ ПАЛАТЫ. Суд вправе отказать о
+    СЕБЕ — «источника нет, судить не вправе», — и делает это выходом с
+    кодом два. Но `SystemExit` не есть `Exception`, и такой отказ
+    УБИВАЛ ВЕСЬ ПРОЦЕСС вместе с палатой и её звавшим: в стенде парка
+    один суд без своего генератора обрушил прибор судимости целиком, и
+    честное дерево объявилось нечитаемым. Палата ловит и это: суд,
+    отказавший о себе, просто отсутствует, и его отсутствие ВИДНО
+    числом живых.
+    """
     try:
-        return importlib.import_module(f"{имя}_court")
-    except Exception:
+        return importlib.import_module(модуль)
+    except (Exception, SystemExit):
         return None
+
+
+def _род(модуль):
+    """Короткое имя рода: им палата различает особый зов."""
+    return модуль[:-len("_court")] if модуль.endswith("_court") else модуль
 
 
 class Палата:
     """Все суды разом, с их слоями и особенностями зова."""
 
     def __init__(self):
-        self.суды = {и: с for и in ОСОБЫЕ + ПРОСТЫЕ if (с := _взять(и))}
+        self.суды = {_род(м): с for м in ОСОБЫЕ + ПРОСТЫЕ
+                     if (с := _взять(м))}
         A = self.суды.get("arith")
         self.словарь = A.словари() if A else None
         L = self.суды.get("logic")
@@ -117,7 +148,8 @@ class Палата:
                     свой = суд.судить(строка, слой=слои[имя])
                 else:
                     свой = суд.судить(строка)
-            except Exception:
+            except (Exception, SystemExit):
+                # СУД, ОТКАЗАВШИЙ О СТРОКЕ, МОЛЧИТ О НЕЙ — И ТОЛЬКО.
                 continue
             if not свой[0]:
                 continue

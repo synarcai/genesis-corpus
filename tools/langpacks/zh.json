@@ -296,7 +296,7 @@
         "除以": "/",
         "等于": "="
       },
-      "instances_per_pass": 14,
+      "instances_per_pass": 40,
       "templates": [
         "{num:n}加{num:m}等于{num:sum}。",
         "{n} + {m} = {sum}。",
@@ -311,7 +311,7 @@
         "你",
         "他"
       ],
-      "instances_per_pass": 10,
+      "instances_per_pass": 40,
       "templates": [
         "我{lex:verb_aspect:base}。",
         "你{lex:verb_aspect:perfective}。",
@@ -325,7 +325,7 @@
         "那",
         "有"
       ],
-      "instances_per_pass": 10,
+      "instances_per_pass": 40,
       "templates": [
         "这是{lex:noun_classifier:one_unit}。",
         "那是{lex:noun_classifier:one_unit}。",
@@ -338,7 +338,7 @@
         "是",
         "人"
       ],
-      "instances_per_pass": 12,
+      "instances_per_pass": 40,
       "templates": [
         "{lex:noun_classifier:bare}是东西。",
         "{lex:person_plural:one}是人。"
@@ -382,7 +382,7 @@
       "lexicon": [
         "来"
       ],
-      "instances_per_pass": 10,
+      "instances_per_pass": 40,
       "templates": [
         "{lex:person_plural:one}来了。",
         "{lex:person_plural:many}来了。",
@@ -395,7 +395,7 @@
         "很",
         "最"
       ],
-      "instances_per_pass": 10,
+      "instances_per_pass": 40,
       "templates": [
         "这个{lex:adj_degree:bare}。",
         "那个{lex:adj_degree:very}。",
@@ -407,11 +407,18 @@
         "在",
         "个"
       ],
-      "instances_per_pass": 10,
+      "instances_per_pass": 40,
       "templates": [
         "书在{lex:place:on}。",
         "猫在{lex:place:in}。",
         "{lex:place:bare}在这里。"
+      ]
+    },
+    "counting_chain": {
+      "lexicon": [],
+      "instances_per_pass": 6,
+      "templates": [
+        "{chain}。"
       ]
     }
   },
@@ -471,5 +478,6 @@
   },
   "graphemes": "一七三上东个么乘九书了二于五人什他以们你做八六写减加十友只吃听喝四在大她子学小山座张很我房扇支新是最有朋本朵来杯桌水狗猫用百的盒看着笔等箱纸色花袋西说走车辆过这那里长门除颜高",
   "stem_min": 1,
-  "ending_max": 2
+  "ending_max": 2,
+  "list_separator": "、"
 }

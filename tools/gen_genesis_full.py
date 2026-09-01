@@ -27,13 +27,23 @@ import genesis  # noqa: E402
 from layer import SEAM  # noqa: E402
 
 ЦЕЛЬ = "datasets/GENESIS-FULL.txt"
+# СБОРКА ОБЪЯВЛЯЕТСЯ МАНИФЕСТОМ, А НЕ СПИСКОМ ЗДЕСЬ. Мир входит в
+# сборку, если несёт её имя в поле `assemblies`; полный микс берёт
+# ВСЕ миры показов и потому имени не спрашивает. Так у всякой сборки
+# один хозяин — манифест, — и всякий, кому нужна школьная лестница,
+# цитирует сборку, а не склеивает файлы своей рукой.
+СБОРКИ = {"full": None, "school": "school"}
 
 
-def собрать():
-    """(тело, [(имя мира, строк)]) — миры показов в порядке манифеста."""
+def собрать(сборка="full"):
+    """(тело, [(имя мира, строк)]) — миры сборки в порядке манифеста."""
+    имя_сборки = СБОРКИ.get(сборка, сборка)
     куски, перепись = [], []
     for мир in genesis.manifest()["worlds"]:
         if мир.get("text") != "shows":
+            continue
+        if имя_сборки is not None and имя_сборки not in (
+                мир.get("assemblies") or ()):
             continue
         путь = genesis._resolve(мир["file"])
         if not путь.is_file():
@@ -47,13 +57,21 @@ def собрать():
     return SEAM.join(куски) + "\n", перепись
 
 
+ШКОЛА = "datasets/GENESIS-SCHOOL.txt"
+
+
 def main():
-    тело, перепись = собрать()
-    путь = genesis._resolve(ЦЕЛЬ)
-    путь.write_text(тело, encoding="utf-8")
-    строк = sum(n for _и, n in перепись)
-    print(f"written {ЦЕЛЬ}: {len(тело.encode('utf-8'))} bytes, "
-          f"{строк} lines, {len(перепись)} worlds")
+    for сборка, цель in (("full", ЦЕЛЬ), ("school", ШКОЛА)):
+        тело, перепись = собрать(сборка)
+        if not перепись:
+            print(f"СБОРКА ОТКАЗ: {сборка} пуста — ни один мир не "
+                  f"объявил её в поле assemblies")
+            return 2
+        путь = genesis._resolve(цель)
+        путь.write_text(тело, encoding="utf-8")
+        строк = sum(n for _и, n in перепись)
+        print(f"written {цель}: {len(тело.encode('utf-8'))} bytes, "
+              f"{строк} lines, {len(перепись)} worlds")
     return 0
 
 

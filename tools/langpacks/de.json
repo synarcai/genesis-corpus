@@ -489,7 +489,7 @@
         "ist gleich": "=",
         "geteilt durch": "/"
       },
-      "instances_per_pass": 14,
+      "instances_per_pass": 42,
       "templates": [
         "{num:n} plus {num:m} gleich {num:sum}.",
         "{n} + {m} = {sum}.",
@@ -505,7 +505,7 @@
         "neben",
         "sehe"
       ],
-      "instances_per_pass": 14,
+      "instances_per_pass": 42,
       "templates": [
         "hier steht {lex:noun_masc_case:nom}.",
         "wegen {lex:noun_masc_case:gen} bleibt maria hier.",
@@ -534,7 +534,7 @@
         "ihr",
         "sie"
       ],
-      "instances_per_pass": 6,
+      "instances_per_pass": 18,
       "templates": [
         "ich {lex:verb_pres:s1}.",
         "du {lex:verb_pres:s2}.",
@@ -549,7 +549,7 @@
         "zähle",
         "viele"
       ],
-      "instances_per_pass": 6,
+      "instances_per_pass": 18,
       "templates": [
         "ich zähle {n} {lex:noun_count:by_n}.",
         "ich zähle {sum} {lex:noun_count:by_sum}."
@@ -565,7 +565,7 @@
         "typ",
         "dinge"
       ],
-      "instances_per_pass": 6,
+      "instances_per_pass": 18,
       "templates": [
         "die quelle ist ein ding.",
         "der text ist eine sache.",
@@ -610,6 +610,13 @@
           "good": "hundert minus zehn gleich neunzig.",
           "reason": "type_mismatch"
         }
+      ]
+    },
+    "counting_chain": {
+      "lexicon": [],
+      "instances_per_pass": 3,
+      "templates": [
+        "{chain}."
       ]
     }
   },

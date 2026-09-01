@@ -48,7 +48,10 @@ from rugram import ПО_ФОРМЕ  # noqa: E402
         r"(?:\d[^.]*\d[^.]*(?:всего|in all|итог|hence)"
         r"|сколько[^?]*\?[^.]*\d"
         r"|how many[^?]*\?[^.]*\d)",
-        {"arith", "episode", "algo", "number", "sequence", "geometry",
+        # МИР СТАВОК СЧИТАЕТ ПО СУЩЕСТВУ: «сколько минут в двух часах»
+        # есть его собственный род, и он пересчитывает отношение по
+        # объявленному графу единиц, а не догадывается.
+        {"rates", "percent", "average", "equation", "arith", "episode", "algo", "number", "sequence", "geometry",
          "linalg", "statistics", "program", "compsci", "unit",
          "notation", "formula", "physlaw", "physics", "calendar",
          "speech", "case", "valence", "cyber", "machine", "proof"}),
@@ -68,7 +71,11 @@ from rugram import ПО_ФОРМЕ  # noqa: E402
         # как» есть его собственный оборот для стилей, и он же держит
         # ВОПРОСНУЮ поверхность того же утверждения, какой старый суд
         # стиля не читает (его образец привязан к зачину записи).
-        {"logic", "markup", "program", "proof", "compsci", "markdown"}),
+        {"logic", "markup", "program", "proof", "compsci", "markdown",
+         # МИР КОНВЕРСИИ ГОВОРИТ ЭТИМ РОДОМ ЗАКОННО: «вслух читается
+         # как» есть его собственный оборот, и он проверяет его
+         # РАЗБОРОМ обеих сторон в одно дерево.
+         "formula_lang"}),
     Род("оценка",
         "оценочное слово: утверждение о ЦЕННОСТИ, и оно обязано нести "
         "вычислимое основание",

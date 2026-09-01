@@ -22,6 +22,16 @@ this layer READS it. A second copy would drift from the first the day
 either was touched — the same reason the item lexicon became one file.
 """
 
+_НЕМОЕ_H = ("hour", "honest", "heir")
+
+
+def артикль(слово):
+    """«a» или «an» — по звуку, с которого слово начинается."""
+    if слово[0] in "aeiou" or слово.startswith(_НЕМОЕ_H):
+        return "an"
+    return "a"
+
+
 from layer import emit
 
 
@@ -70,7 +80,10 @@ def pass_shows(pass_i):
     out = []
     for i, (one, many, ratio, ru_in, ru_nom, ru_forms) in enumerate(FACTS):
         out.append(f"1 {one} = {ratio} {many}.")
-        out.append(f"a {one} has {ratio} {many}.")
+        # АРТИКЛЬ ИДЁТ ЗА ЗВУКОМ: «an hour», не «a hour». Слой учил
+        # этому пять строк подряд, и поймал его НОВЫЙ суд ставок —
+        # старый мир вычищен задним числом, как и «жирное свет».
+        out.append(f"{артикль(one)} {one} has {ratio} {many}.")
         out.append(f"{ru_in} {ratio} {ru_form(ru_forms, ratio)}.")
         k = (pass_i * 3 + i) % 8 + 2          # 2..9
         out.append(f"{k} {EN_PLURAL[one]} = {k * ratio} {many}.")

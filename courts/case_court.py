@@ -26,6 +26,7 @@ import sys
 
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
+import units  # noqa: E402
 from genesis import Unreadable, worlds  # noqa: E402
 from rugram import ПАДЕЖИ, ПАДЕЖИ_В, ПАРАДИГМЫ  # noqa: E402
 
@@ -76,9 +77,63 @@ def _г(m):
     return [x for x in m.groups() if x is not None]
 
 
+# ЧИСЛОВАЯ РАМКА СУДИТСЯ ПРАВИЛОМ ПИСЬМА, А НЕ ТАБЛИЦЕЙ. Суд выводит
+# множественное САМ и сверяет с названным: это вторая рука к паре,
+# объявленной в доме единиц, и она ловит ложь ДОМА, а не только порчу
+# строки. Исключение объявлено там же и названо в показе вслух.
+МНОЖЕСТВЕННОЕ = re.compile(
+    r"^the plural of (\w+) is (\w+)\.$")
+ЕДИНСТВЕННОЕ = re.compile(
+    r"^the singular of (\w+) is (\w+)\.$")
+ИСКЛЮЧЕНИЕ = re.compile(
+    r"^the plural of (\w+) is (\w+), not (\w+): it does not follow "
+    r"the rule\.$")
+_ОБЪЯВЛЕННЫЕ = frozenset(
+    units.англ(и, м) for и in units.ФОРМЫ_ВСЕХ for м in (False, True)
+    if units.ФОРМЫ_ВСЕХ[и][0])
+ВОПРОС_ЧИСЛА = re.compile(
+    r"^what is the (plural|singular) of (\w+)\? (.+)$")
+
+
+def _объявлено(слово):
+    """Есть ли такое английское слово в доме единиц."""
+    return слово in _ОБЪЯВЛЕННЫЕ
+
+
 def судить(строка):
     """(судимо, истинно) для одной строки."""
     с = строка.strip()
+    m = ВОПРОС_ЧИСЛА.match(с)
+    if m:
+        какое, спрошено, ответ = m.groups()
+        образец = (МНОЖЕСТВЕННОЕ if какое == "plural"
+                   else ЕДИНСТВЕННОЕ)
+        свой = образец.match(ответ)
+        if свой is None:
+            return False, True
+        судимо, истинно = судить(ответ)
+        назван = свой.group(1)
+        return судимо, bool(истинно and назван == спрошено)
+    m = ИСКЛЮЧЕНИЕ.match(с)
+    if m:
+        один, много, наивное = m.groups()
+        return True, (units.МН_ИСКЛЮЧЕНИЯ.get(один) == много
+                      and наивное == один + "s" and наивное != много)
+    m = МНОЖЕСТВЕННОЕ.match(с)
+    if m:
+        один, много = m.groups()
+        return True, (_объявлено(один)
+                      and units.мн_правилом(один) == много)
+    m = ЕДИНСТВЕННОЕ.match(с)
+    if m:
+        много, один = m.groups()
+        # ЕДИНСТВЕННОЕ ОБЯЗАНО БЫТЬ ОБЪЯВЛЕННЫМ СЛОВОМ, А НЕ ЛЮБОЙ
+        # СТРОКОЙ, ЧЬЁ ПРАВИЛО ДАЁТ НАЗВАННОЕ МНОЖЕСТВЕННОЕ. «the
+        # singular of inches is inche» проходило правило («inche» + s
+        # = «inches») и было ложью: правило проверяет ПЕРЕХОД, а не
+        # СУЩЕСТВОВАНИЕ. Слова корпуса объявлены домом единиц.
+        return True, (_объявлено(один)
+                      and units.мн_правилом(один) == много)
     m = ПАДЕЖОМ.match(с)
     if m:
         слово, падеж_в, форма = m.groups()
