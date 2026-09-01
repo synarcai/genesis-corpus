@@ -61,6 +61,7 @@ from langpack import count_form_index  # noqa: E402
     ("week", "day", 7),
     ("year", "month", 12),
     ("dollar", "cent", 100),
+    ("rouble", "kopeck", 100),
     ("foot", "inch", 12),
     ("dozen", "item", 12),
 )
@@ -84,6 +85,11 @@ from langpack import count_form_index  # noqa: E402
     "dollar": ({"amer": ("dollar", "dollars")},
                ("доллар", "доллара", "долларов")),
     "cent": ({"amer": ("cent", "cents")}, ("цент", "цента", "центов")),
+    "rouble": ({"brit": ("rouble", "roubles"),
+                "amer": ("ruble", "rubles")},
+               ("рубль", "рубля", "рублей")),
+    "kopeck": ({"amer": ("kopeck", "kopecks")},
+               ("копейка", "копейки", "копеек")),
     "foot": ({"amer": ("foot", "feet")}, ("фут", "фута", "футов")),
     "inch": ({"amer": ("inch", "inches")}, ("дюйм", "дюйма", "дюймов")),
     "dozen": ({"amer": ("dozen", "dozens")},
@@ -102,6 +108,7 @@ from langpack import count_form_index  # noqa: E402
     "week": ("в неделе", "неделя"),
     "year": ("в году", "год"),
     "dollar": ("в долларе", "доллар"),
+    "rouble": ("в рубле", "рубль"),
     "foot": ("в футе", "фут"),
     "kilometre": ("в километре", "километр"),
 }

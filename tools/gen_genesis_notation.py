@@ -34,6 +34,7 @@ import pathlib
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import units
 from layer import emit  # noqa: E402
 from plural import by_count  # noqa: E402
 
@@ -72,6 +73,9 @@ def pass_shows(pass_i):
         out.append(f"{p}% of {whole} is {часть}.")
         out.append(f"{p}% от {whole} — это {часть}.")
         out.append(f"what is {p}% of {whole}? it is {часть}.")
+        # ВОПРОС ЗАДАЁТСЯ НА ОБОИХ ЯЗЫКАХ, а не только на одном: русская
+        # половина слоя знала утверждение и не знала вопроса.
+        out.append(f"сколько будет {p}% от {whole}? это {часть}.")
         out.append(f"{p}% means {p} out of 100.")
         out.append(f"{p}% значит {p} из 100.")
         # --- деньги: мост записи к центам, НИКОГДА не в конце фразы
@@ -93,6 +97,26 @@ def pass_shows(pass_i):
         else:
             out.append(f"${d} is {d} {by_count(d, 'dollars')} in all.")
             out.append(f"${d} makes {d * 100} {by_count(d * 100, 'cents')} in all.")
+        # --- РУССКИЕ ДЕНЬГИ: тот же род составной величины, что доллар
+        # с центом. Формы рубля и копейки читаются из дома единиц —
+        # там же, где объявлено и само отношение «в рубле 100 копеек».
+        руб, коп = units.рус("rouble", d), units.рус("kopeck", c)
+        всего = d * 100 + c
+        коп_всего = units.рус("kopeck", всего)
+        if d and c:
+            out.append(f"{d} {руб} {c} {коп} — это {всего} {коп_всего}.")
+            out.append(f"{d} {руб} и {c} {коп} вместе дают {всего} "
+                       f"{коп_всего}.")
+            out.append(f"сколько копеек в {d} {руб} {c} {коп}? "
+                       f"это {всего} {коп_всего}.")
+        elif c:
+            out.append(f"{c} {коп} — это {c} {коп}.")
+            out.append(f"сколько копеек в {c} {коп}? это {c} {коп}.")
+        else:
+            out.append(f"{d} {руб} — это {d * 100} "
+                       f"{units.рус('kopeck', d * 100)}.")
+            out.append(f"сколько копеек в {d} {руб}? это {d * 100} "
+                       f"{units.рус('kopeck', d * 100)}.")
         # --- смешанные числа: только суммы, остающиеся целыми
         en, ru = СЛОВОМ[h]
         # СУММА ДВУХ ЧИСЕЛ «h с половиной» ЕСТЬ 2h + 1, а не 2h:

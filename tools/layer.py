@@ -50,6 +50,67 @@ def shuffle(items, mult, shift):
     return [items[(i * step + shift) % n] for i in range(n)]
 
 
+# ВОРОТА ЗАПИСИ: СЛОЙ НЕ МОЖЕТ РОДИТЬСЯ С ЛОЖНОЙ ИЛИ НЕСУДИМОЙ СТРОКОЙ.
+#
+# Прежде порядок был иной: генератор писал файл, а суды спрашивали
+# потом, обходом. Это ЛОВИТ дефект, но ДОПУСКАЕТ ЕГО СУЩЕСТВОВАНИЕ — и
+# допустило дважды за час: «1 days after saturday» (английское
+# согласование в слое календаря) и шесть честных русских ставок,
+# объявленных ложью чужим судом из-за совпадения формы. Оба поймал
+# обход, и оба УСПЕЛИ ЛЕЧЬ В КОРПУС.
+#
+# Здесь дефект становится НЕВОЗМОЖНЫМ, а не обнаружимым. Это разница
+# между «мы это ловим» и «этого не бывает».
+#
+# ДВА УСЛОВИЯ, И ОБА ОБЯЗАТЕЛЬНЫ:
+#  · ни одна строка не названа ЛОЖЬЮ ни одним судом;
+#  · ни одна строка не осталась НЕСУДИМОЙ — рубеж охвата стоит на ста
+#    процентах, и слой, приносящий несудимую форму, уронил бы его
+#    завтра. Пусть падает сегодня, у своего автора, а не в общем обходе.
+#
+# ВОРОТА, КОТОРЫХ НЕТ, ОБЪЯВЛЯЮТ О СЕБЕ. Сборка в пустом дереве (прибор
+# воспроизводимости) судов не имеет; запись не запрещается, но число
+# живых судов ПЕЧАТАЕТСЯ. Тихо выключенная охрана хуже отсутствующей:
+# отсутствие видно.
+ВОРОТА_ВЫКЛ = "GENESIS_NO_GATE"
+
+
+def _ворота(path, body):
+    """Отказать в записи, если суд зовёт строку ложью или молчит о ней."""
+    import os
+    import pathlib
+    if os.environ.get(ВОРОТА_ВЫКЛ):
+        print(f"ВОРОТА ОТКЛЮЧЕНЫ ({ВОРОТА_ВЫКЛ}) — {path} записан без суда")
+        return
+    try:
+        from panel import палата
+        суд = палата()
+    except Exception as беда:
+        print(f"ВОРОТА БЕЗ ПАЛАТЫ ({беда}) — {path} записан без суда")
+        return
+    if not суд.живых:
+        print(f"ВОРОТА БЕЗ СУДОВ (живых 0) — {path} записан без суда")
+        return
+    врем = pathlib.Path(str(path) + ".ворота")
+    врем.write_text(body, encoding="utf-8")
+    try:
+        вердикты = суд.судить_файл(врем)
+    finally:
+        врем.unlink(missing_ok=True)
+    ложных = [с for с, судимо, истинно, _ in вердикты if судимо and not истинно]
+    немых = [с for с, судимо, _, _ in вердикты if not судимо]
+    if ложных or немых:
+        for с in ложных[:3]:
+            print(f"  ЛОЖЬ: {с[:90]}")
+        for с in немых[:3]:
+            print(f"  НЕСУДИМО: {с[:90]}")
+        raise SystemExit(
+            f"ВОРОТА ЗАКРЫТЫ: {path} не записан — "
+            f"ложных {len(ложных)}, несудимых {len(немых)} "
+            f"(судов живых {суд.живых})")
+
+
+
 def emit(path, pass_shows, passes=PASSES):
     """Run the passes, weld them with seams, write, and say the number.
 
@@ -64,6 +125,7 @@ def emit(path, pass_shows, passes=PASSES):
         total += len(shows)
         blocks.append("\n".join(shuffle(shows, mult, shift)))
     body = SEAM.join(blocks) + "\n"
+    _ворота(path, body)
     with open(path, "w", encoding="utf-8") as f:
         f.write(body)
     print(f"written {path}: {len(body)} bytes, {total} shows")
@@ -85,6 +147,7 @@ def emit_grouped(path, pass_groups, passes=PASSES):
             total += len(shows)
             blocks.append("\n".join(shuffle(shows, mult, shift)))
     body = SEAM.join(blocks) + "\n"
+    _ворота(path, body)
     with open(path, "w", encoding="utf-8") as f:
         f.write(body)
     print(f"written {path}: {len(body)} bytes, {total} shows")

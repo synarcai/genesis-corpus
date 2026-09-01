@@ -64,6 +64,25 @@ from genesis import Unreadable, worlds  # noqa: E402
      lambda d, c, n: int(d) * 100 + int(c) == int(n)),
     (r"^how many cents is \$(\d+)\.(\d\d)\? it is (\d+) cents$",
      lambda d, c, n: int(d) * 100 + int(c) == int(n)),
+    # РУССКИЕ ДЕНЬГИ — ТОТ ЖЕ СОСТАВНОЙ РОД, и проверяется он тем же
+    # счётом: рубли на сто плюс копейки. Формы слов суд НЕ проверяет
+    # здесь — согласование числа есть род суда согласования, и делить
+    # один факт надвое значило бы завести двух судей одному показу.
+    (r"^(\d+) рубл\S+ (\d+) копе\S+ — это (\d+) копе\S+$",
+     lambda d, c, n: int(d) * 100 + int(c) == int(n)),
+    (r"^(\d+) рубл\S+ и (\d+) копе\S+ вместе дают (\d+) копе\S+$",
+     lambda d, c, n: int(d) * 100 + int(c) == int(n)),
+    (r"^сколько копеек в (\d+) рубл\S+ (\d+) копе\S+\? это (\d+) копе\S+$",
+     lambda d, c, n: int(d) * 100 + int(c) == int(n)),
+    (r"^(\d+) копе\S+ — это (\d+) копе\S+$", lambda a, b: int(a) == int(b)),
+    (r"^сколько копеек в (\d+) копе\S+\? это (\d+) копе\S+$",
+     lambda a, b: int(a) == int(b)),
+    (r"^(\d+) рубл\S+ — это (\d+) копе\S+$",
+     lambda d, n: int(d) * 100 == int(n)),
+    (r"^сколько копеек в (\d+) рубл\S+\? это (\d+) копе\S+$",
+     lambda d, n: int(d) * 100 == int(n)),
+    (r"^сколько будет (\d+)% от (\d+)\? это (\d+)$",
+     lambda p, w, r: int(p) * int(w) // 100 == int(r)),
     (r"^\$0\.(\d\d) is (\d+) cents in all$", lambda c, n: int(c) == int(n)),
     (r"^\$(\d+) is (\d+) dollars in all$", lambda d, n: int(d) == int(n)),
     (r"^\$(\d+) makes (\d+) cents in all$",

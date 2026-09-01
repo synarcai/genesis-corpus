@@ -285,6 +285,14 @@
       "text": "shows"
     },
     {
+      "name": "calendar",
+      "file": "datasets/genesis_calendar.txt",
+      "genre": "calendar: the week as congruence modulo 7, month order and length, the year as a sum of months",
+      "size": 50000,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
       "name": "sequences",
       "file": "datasets/genesis_sequences.txt",
       "genre": "sequences: arithmetic and geometric progression, limit of a series, rate of change and the power rule",

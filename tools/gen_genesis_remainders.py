@@ -64,6 +64,15 @@ def pass_shows(pass_i):
         out.append(
             f"{a} разделить на {b} будет {q}, остаток {r}."
         )
+        # ВОПРОСНАЯ ПОВЕРХНОСТЬ БЫЛА ТОЛЬКО ОПРЕДЕЛИТЕЛЬНОЙ («что такое
+        # остаток?») — вычислительного вопроса не знал ни один язык.
+        out.append(
+            f"сколько будет {a} разделить на {b}? "
+            f"будет {q}, остаток {r}."
+        )
+        out.append(
+            f"what is {a} divided by {b}? it is {q} remainder {r}."
+        )
     for tpl in BARE:
         out.append(tpl)
     return out
