@@ -52,7 +52,7 @@ EP = _взять("episode_court")
 # ПУСТОЙ-ОБХОД: --manifest no-such-manifest
 
 ПРОЧИЕ = ["algo", "formula", "physics", "cyber", "notation", "program",
-          "statistics", "proof", "machine", "episode", "copula", "number", "sequence", "geometry", "linalg", "calendar", "speech", "rugram", "physlaw",
+          "statistics", "proof", "machine", "episode", "copula", "number", "sequence", "geometry", "linalg", "calendar", "speech", "rugram", "physlaw", "compsci", "case",
           "unit"]
 
 

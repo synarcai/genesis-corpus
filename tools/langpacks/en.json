@@ -428,6 +428,7 @@
     "bolt": "bolts",
     "book": "books",
     "box": "boxes",
+    "cake": "cakes",
     "calorie": "calories",
     "candy": "candies",
     "car": "cars",
@@ -467,6 +468,7 @@
     "month": "months",
     "mouse": "mice",
     "newspaper": "newspapers",
+    "novel": "novels",
     "nut": "nuts",
     "ounce": "ounces",
     "pack": "packs",
@@ -1180,6 +1182,22 @@
     [
       "it holds for n = <k>: <e...>",
       "<e>"
+    ],
+    [
+      "<a> times <b> is <c>",
+      "<a> × <b> = <c>"
+    ],
+    [
+      "<a> times <b> equals <c>",
+      "<a> × <b> = <c>"
+    ],
+    [
+      "<a> plus <b> equals <c>",
+      "<a> + <b> = <c>"
+    ],
+    [
+      "<a> minus <b> equals <c>",
+      "<a> - <b> = <c>"
     ]
   ],
   "verbal_laws": [

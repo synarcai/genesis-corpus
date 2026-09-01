@@ -46,7 +46,7 @@ for _где in (КОРЕНЬ / "courts", КОРЕНЬ / "tools", КОРЕНЬ / 
 ПРОСТЫЕ = ("algo", "physics", "cyber", "notation", "program", "statistics",
            "proof", "machine", "episode", "copula", "unit", "number",
            "sequence", "geometry", "linalg", "calendar", "speech",
-           "rugram", "physlaw")
+           "rugram", "physlaw", "compsci", "case")
 
 
 def _взять(имя):

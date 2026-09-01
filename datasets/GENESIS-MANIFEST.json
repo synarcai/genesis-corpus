@@ -411,6 +411,62 @@
       "size": 70000,
       "tiers": [],
       "text": "shows"
+    },
+    {
+      "name": "compsci",
+      "file": "datasets/genesis_compsci.txt",
+      "genre": "foundations of informatics and control: entropy in bits, finite automaton, formal grammar, decidability, type of a value, loop invariant, homeostasis, model and observer",
+      "size": 70000,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
+      "name": "mathfound",
+      "file": "datasets/genesis_mathfound.txt",
+      "genre": "foundations of mathematics and the named case: function as one object, injection by witness, cardinality and countability, proof by contradiction, induction, the six Russian cases named",
+      "size": 60000,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
+      "name": "gsmlex",
+      "file": "datasets/genesis_gsmlex.txt",
+      "genre": "GSM lexicon drill: possession verbs over the item lexicon (working layer of the band stand)",
+      "size": 45000,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
+      "name": "gsmwide",
+      "file": "datasets/genesis_gsmwide.txt",
+      "genre": "GSM wide frames: possessive bearers and herd subjects (working layer of the band stand)",
+      "size": 100000,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
+      "name": "heads",
+      "file": "datasets/genesis_heads.txt",
+      "genre": "GSM question heads: left-over, have-now, price-each, rate-per-day (working layer of the band stand)",
+      "size": 60000,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
+      "name": "realverbs",
+      "file": "datasets/genesis_realverbs.txt",
+      "genre": "real verbs of the benchmark in their canonical frames (working layer of the band stand)",
+      "size": 30000,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
+      "name": "verbal",
+      "file": "datasets/genesis_verbal.txt",
+      "genre": "verbal equality with the copula «is» beside «equals», and the past tense in the market's own frame",
+      "size": 40000,
+      "tiers": [],
+      "text": "shows"
     }
   ]
 }
