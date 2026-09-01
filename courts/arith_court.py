@@ -45,6 +45,7 @@ from fractions import Fraction
 ПАКЕТЫ = КОРЕНЬ / "tools/langpacks"
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
 from genesis import Unreadable, worlds  # noqa: E402
+from segment import tokens  # noqa: E402
 
 # РУБЕЖ-ДОЛГА: ЛОЖНЫХ_РУБЕЖ = 0
 ЛОЖНЫХ_РУБЕЖ = 0
@@ -80,6 +81,40 @@ from genesis import Unreadable, worlds  # noqa: E402
 ЛЕКСЕМА = re.compile(
     r"[0-9]+|[^\W\d_]+|[+\-*/×÷=^\u2212\u22c5]"
 )
+
+
+def письмена_без_пробела():
+    """[(образец письма, словарь пакета)] — языки, пишущие без пробелов.
+
+    ПОСЛЕДНИЙ НЕПОЧИНЕННЫЙ СЛУЧАЙ ОБЩЕЙ СЛЕПОТЫ. Разбор здесь полагал
+    пробел, и «九加一等于十» приходило одним токеном: суд читал
+    китайскую арифметику как одно слово и молчал о ней — тысяча триста
+    строк пласта стояли при пяти процентах судимости.
+    """
+    вон = []
+    if not ПАКЕТЫ.is_dir():
+        return вон
+    for ф in sorted(ПАКЕТЫ.glob("*.json")):
+        try:
+            п = json.loads(ф.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            continue
+        if п.get("segmentation") != "longest-match":
+            continue
+        словарь = {str(v) for v in (п.get("numerals") or {}).values()}
+        for род in (п.get("show_kinds") or {}).values():
+            словарь |= {str(w) for w in (род.get("ops") or {})}
+            словарь |= {str(w) for w in род.get("lexicon", [])}
+        for кл in (п.get("morph_classes") or {}).values():
+            for формы in кл.get("lexemes", {}).values():
+                словарь |= {str(ф_) for ф_ in формы}
+        диапазон = п.get("script_range")
+        if диапазон and словарь:
+            вон.append((re.compile(f"[{диапазон}]"), словарь))
+    return вон
+
+
+БЕЗ_ПРОБЕЛА = None
 
 
 def словари():
@@ -119,8 +154,16 @@ def словари():
 
 def разбор(строка, значения, операции, равенства, складывать):
     """[(род, величина)] строки: v — значение, o — операция, e — равно."""
+    global БЕЗ_ПРОБЕЛА
+    if БЕЗ_ПРОБЕЛА is None:
+        БЕЗ_ПРОБЕЛА = письмена_без_пробела()
+    куски = None
+    for образец, словарь in БЕЗ_ПРОБЕЛА:
+        if образец.search(строка):
+            куски = tokens(строка, словарь, spaced=False)
+            break
     ряд = []
-    for знак in ЛЕКСЕМА.findall(строка):
+    for знак in (куски if куски is not None else ЛЕКСЕМА.findall(строка)):
         н = знак.lower()
         if знак.isdigit() and знак.isascii():
             ряд.append(("v", Fraction(int(знак)), True))
