@@ -509,45 +509,45 @@ let circle = 8;
 `knowledge` is read as code knowledge.
 `время` читается как код время.
 *sound* is read as italic sound.
-*круг* читается как курсив круг.
+*круг* читается как курсивный круг.
 **law** is read as bold law.
-**вода** читается как жирное вода.
+**вода** читается как жирная вода.
 `point` is read as code point.
 `лес` читается как код лес.
 *measure* is read as italic measure.
-*число* читается как курсив число.
+*число* читается как курсивное число.
 **light** is read as bold light.
 **поле** читается как жирное поле.
 `force` is read as code force.
 `форма` читается как код форма.
 *word* is read as italic word.
-*схема* читается как курсив схема.
+*схема* читается как курсивная схема.
 **city** is read as bold city.
-**материя** читается как жирное материя.
+**материя** читается как жирная материя.
 `line` is read as code line.
 `знание` читается как код знание.
 *hill* is read as italic hill.
-*звук* читается как курсив звук.
+*звук* читается как курсивный звук.
 **bridge** is read as bold bridge.
-**закон** читается как жирное закон.
+**закон** читается как жирный закон.
 `time` is read as code time.
 `точка` читается как код точка.
 *circle* is read as italic circle.
-*мера* читается как курсив мера.
+*мера* читается как курсивная мера.
 **water** is read as bold water.
-**свет** читается как жирное свет.
+**свет** читается как жирный свет.
 `forest` is read as code forest.
 `сила` читается как код сила.
 *number* is read as italic number.
-*слово* читается как курсив слово.
+*слово* читается как курсивное слово.
 **field** is read as bold field.
-**город** читается как жирное город.
+**город** читается как жирный город.
 `form` is read as code form.
 `линия` читается как код линия.
 *schema* is read as italic schema.
-*гора* читается как курсив гора.
+*гора* читается как курсивная гора.
 **matter** is read as bold matter.
-**мост** читается как жирное мост.
+**мост** читается как жирный мост.
 
 ссылка с текстом knowledge ведёт на https://example.org/city.
 [time](https://example.org/matter)
@@ -1499,45 +1499,45 @@ a code block of one line: let bridge = 2;
 
 `схема` читается как код схема.
 *city* is read as italic city.
-*материя* читается как курсив материя.
+*материя* читается как курсивная материя.
 **line** is read as bold line.
 **знание** читается как жирное знание.
 `hill` is read as code hill.
 `звук` читается как код звук.
 *bridge* is read as italic bridge.
-*закон* читается как курсив закон.
+*закон* читается как курсивный закон.
 **time** is read as bold time.
-**точка** читается как жирное точка.
+**точка** читается как жирная точка.
 `circle` is read as code circle.
 `мера` читается как код мера.
 *water* is read as italic water.
-*свет* читается как курсив свет.
+*свет* читается как курсивный свет.
 **forest** is read as bold forest.
-**сила** читается как жирное сила.
+**сила** читается как жирная сила.
 `number` is read as code number.
 `слово` читается как код слово.
 *field* is read as italic field.
-*город* читается как курсив город.
+*город* читается как курсивный город.
 **form** is read as bold form.
-**линия** читается как жирное линия.
+**линия** читается как жирная линия.
 `schema` is read as code schema.
 `гора` читается как код гора.
 *matter* is read as italic matter.
-*мост* читается как курсив мост.
+*мост* читается как курсивный мост.
 **knowledge** is read as bold knowledge.
 **время** читается как жирное время.
 `sound` is read as code sound.
 `круг` читается как код круг.
 *law* is read as italic law.
-*вода* читается как курсив вода.
+*вода* читается как курсивная вода.
 **point** is read as bold point.
-**лес** читается как жирное лес.
+**лес** читается как жирный лес.
 `measure` is read as code measure.
 `число` читается как код число.
 *light* is read as italic light.
-*поле* читается как курсив поле.
+*поле* читается как курсивное поле.
 **force** is read as bold force.
-**форма** читается как жирное форма.
+**форма** читается как жирная форма.
 `word` is read as code word.
 
 [schema](https://example.org/city)
@@ -2489,47 +2489,47 @@ let forest = 8;
 ```
 
 **measure** is read as bold measure.
-*форма* читается как курсив форма.
+*форма* читается как курсивная форма.
 *line* is read as italic line.
 `закон` читается как код закон.
 `water` is read as code water.
 **слово** читается как жирное слово.
 **schema** is read as bold schema.
-*время* читается как курсив время.
+*время* читается как курсивное время.
 *point* is read as italic point.
 `поле` читается как код поле.
 `city` is read as code city.
-**звук** читается как жирное звук.
+**звук** читается как жирный звук.
 **circle** is read as bold circle.
-*сила* читается как курсив сила.
+*сила* читается как курсивная сила.
 *form* is read as italic form.
 `мост` читается как код мост.
 `law` is read as code law.
 **число** читается как жирное число.
 **word** is read as bold word.
-*знание* читается как курсив знание.
+*знание* читается как курсивное знание.
 *time* is read as italic time.
 `свет` читается как код свет.
 `field` is read as code field.
-**гора** читается как жирное гора.
+**гора** читается как жирная гора.
 **sound** is read as bold sound.
-*лес* читается как курсив лес.
+*лес* читается как курсивный лес.
 *force* is read as italic force.
 `материя` читается как код материя.
 `bridge` is read as code bridge.
-**мера** читается как жирное мера.
+**мера** читается как жирная мера.
 **number** is read as bold number.
-*линия* читается как курсив линия.
+*линия* читается как курсивная линия.
 *knowledge* is read as italic knowledge.
 `вода` читается как код вода.
 `light` is read as code light.
-**схема** читается как жирное схема.
+**схема** читается как жирная схема.
 **hill** is read as bold hill.
-*точка* читается как курсив точка.
+*точка* читается как курсивная точка.
 *forest* is read as italic forest.
 `город` читается как код город.
 `matter` is read as code matter.
-**круг** читается как жирное круг.
+**круг** читается как жирный круг.
 
 ссылка с текстом measure ведёт на https://example.org/number.
 [form](https://example.org/line)
@@ -3481,45 +3481,45 @@ a code block of one line: let line = 6;
 
 `знание` читается как код знание.
 *number* is read as italic number.
-*круг* читается как курсив круг.
+*круг* читается как курсивный круг.
 **city** is read as bold city.
-**свет** читается как жирное свет.
+**свет** читается как жирный свет.
 `knowledge` is read as code knowledge.
 `форма` читается как код форма.
 *circle* is read as italic circle.
-*гора* читается как курсив гора.
+*гора* читается как курсивная гора.
 **light** is read as bold light.
-**закон** читается как жирное закон.
+**закон** читается как жирный закон.
 `form` is read as code form.
 `лес` читается как код лес.
 *hill* is read as italic hill.
-*слово* читается как курсив слово.
+*слово* читается как курсивное слово.
 **law** is read as bold law.
-**материя** читается как жирное материя.
+**материя** читается как жирная материя.
 `forest` is read as code forest.
 `время` читается как код время.
 *word* is read as italic word.
-*мера* читается как курсив мера.
+*мера* читается как курсивная мера.
 **matter** is read as bold matter.
 **поле** читается как жирное поле.
 `time` is read as code time.
 `линия` читается как код линия.
 *measure* is read as italic measure.
-*звук* читается как курсив звук.
+*звук* читается как курсивный звук.
 **field** is read as bold field.
-**вода** читается как жирное вода.
+**вода** читается как жирная вода.
 `line` is read as code line.
 `сила` читается как код сила.
 *sound* is read as italic sound.
-*схема* читается как курсив схема.
+*схема* читается как курсивная схема.
 **water** is read as bold water.
-**мост** читается как жирное мост.
+**мост** читается как жирный мост.
 `force` is read as code force.
 `точка` читается как код точка.
 *schema* is read as italic schema.
-*число* читается как курсив число.
+*число* читается как курсивное число.
 **bridge** is read as bold bridge.
-**город** читается как жирное город.
+**город** читается как жирный город.
 `point` is read as code point.
 
 [knowledge](https://example.org/water)
@@ -4470,43 +4470,43 @@ let point = 4;
 ```
 код-блок из одной строки: let circle = 3;
 
-*город* читается как курсив город.
+*город* читается как курсивный город.
 *light* is read as italic light.
 `мера` читается как код мера.
 `sound` is read as code sound.
 **знание** читается как жирное знание.
 **form** is read as bold form.
-*поле* читается как курсив поле.
+*поле* читается как курсивное поле.
 *water* is read as italic water.
 `круг` читается как код круг.
 `hill` is read as code hill.
-**линия** читается как жирное линия.
+**линия** читается как жирная линия.
 **force** is read as bold force.
-*свет* читается как курсив свет.
+*свет* читается как курсивный свет.
 *law* is read as italic law.
 `звук` читается как код звук.
 `schema` is read as code schema.
-**форма** читается как жирное форма.
+**форма** читается как жирная форма.
 **forest** is read as bold forest.
-*вода* читается как курсив вода.
+*вода* читается как курсивная вода.
 *bridge* is read as italic bridge.
 `гора` читается как код гора.
 `word` is read as code word.
-**сила** читается как жирное сила.
+**сила** читается как жирная сила.
 **point** is read as bold point.
-*закон* читается как курсив закон.
+*закон* читается как курсивный закон.
 *matter* is read as italic matter.
 `схема` читается как код схема.
 `number` is read as code number.
-**лес** читается как жирное лес.
+**лес** читается как жирный лес.
 **time** is read as bold time.
-*мост* читается как курсив мост.
+*мост* читается как курсивный мост.
 *city* is read as italic city.
 `слово` читается как код слово.
 `measure` is read as code measure.
-**точка** читается как жирное точка.
+**точка** читается как жирная точка.
 **knowledge** is read as bold knowledge.
-*материя* читается как курсив материя.
+*материя* читается как курсивная материя.
 *field* is read as italic field.
 `число` читается как код число.
 `circle` is read as code circle.
