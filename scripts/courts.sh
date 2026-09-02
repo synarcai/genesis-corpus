@@ -50,6 +50,11 @@ for entry in "${COURTS[@]}"; do
   set -- $entry; tool="$1"; shift
   out=$(python3 "$tool" "$@" 2>&1); rc=$?
   last=$(printf '%s\n' "$out" | tail -1)
+  # ЛЕДЖЕР ПРИБОРОВ: последняя строка каждого суда — с датой и кодом —
+  # дописывается в reports/ledger.tsv; отчёт «состояние кристалла»
+  # (scripts/crystal.py) читает оттуда последний вердикт каждого прибора.
+  mkdir -p reports
+  printf '%s\t%s\t%s\t%s\n' "$(date -u +%Y-%m-%dT%H:%M:%SZ)" "$(basename "$tool")" "$rc" "$last" >> reports/ledger.tsv
   if [ "$rc" = 0 ]; then
     printf 'СУД ЦЕЛ   %-26s %s\n' "$(basename "$tool")" "$last"
   else

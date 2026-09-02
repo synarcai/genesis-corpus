@@ -21,10 +21,17 @@ rebuilt from nothing and re-judged by anyone.
 
 | | |
 |---|---|
-| **36 worlds** | declared in `datasets/GENESIS-MANIFEST.json` |
-| **4 languages** | English, Russian, German, Chinese — each one pack, zero engine edits |
-| **10 courts** | arithmetic, algorithms, formulas & diagrams, logic & sets, physics, cybernetics, number agreement, item census, reproducibility, shell portability |
-| **0** | false claims among ~26 000 judged |
+| **107 worlds of shows + 78 of prose** | declared in `datasets/GENESIS-MANIFEST.json`; 71 prose worlds are public-domain books on the shelf (`shelf/`, contract `declarations/SHELF.md`) |
+| **29 languages** | one pack each in `tools/langpacks/`, zero engine edits |
+| **66 courts + 13 closure instruments** | every line re-executed by a court; the corpus as a whole measured by judgeability, reproducibility, manifest, shelf, band, library, concept reach, mutation catch |
+| **0** | false or blind lines among ~236 000 judged |
+
+The corpus is a **knowledge engine**, not a text dump: worlds are
+functions of the manifest, courts re-execute every claim, executor
+houses are shared by generator and court, and the whole is closed on
+itself by instruments whose verdicts are kept in a ledger — see
+`declarations/KNOWLEDGE-ENGINE.md` (in Russian, the working language of
+the college) and `python3 scripts/crystal.py`.
 
 The foundations covered: **language** (paradigms shown in frames that
 determine the form, never in tables), **mathematics** (arithmetic,
