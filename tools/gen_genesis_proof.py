@@ -97,8 +97,13 @@ def pass_shows(pass_i):
                      f"{'even' if x % 2 == 0 else 'odd'}.")
         случай_ru = (f"всякое целое чётно или нечётно; {x} "
                      f"{'чётно' if x % 2 == 0 else 'нечётно'}.")
-        out.append(f"is {x} even or odd? {случай_en}")
-        out.append(f"чётно или нечётно {x}? {случай_ru}")
+        # THE CHOSEN ALTERNATIVE OPENS THE ANSWER (М-147 for a choice question,
+        # holon 03.09: «is # even or odd» read as a value, not a verdict): the
+        # word chosen comes first, the witness — the division by two — after.
+        чётн = x % 2 == 0
+        свид = f"{x} = 2 × {x // 2}" if чётн else f"{x} = 2 × {x // 2} + 1"
+        out.append(f"is {x} even or odd? {'even' if чётн else 'odd'}: {свид}.")
+        out.append(f"чётно или нечётно {x}? {'чётно' if чётн else 'нечётно'}: {свид}.")
         прямое_en = (f"if n is even then n squared is even: {e} is even "
                      f"and {e * e} is even.")
         прямое_ru = (f"если n чётно, то n в квадрате чётно: {e} чётно и "

@@ -76,6 +76,9 @@ def квадрат(n):
     r"^every whole number is even or odd; (\d+) is (even|odd)$")
 СЛУЧАЙ_RU = re.compile(
     r"^всякое целое чётно или нечётно; (\d+) (чётно|нечётно)$")
+# ВЫБОР ОТКРЫВАЕТ ОТВЕТ (М-147): слово выбора, затем свидетель делением на два.
+ВЫБОР_ЧЁТНОСТИ = re.compile(
+    r"^(even|odd|чётно|нечётно): (\d+) = 2 × (\d+)( \+ 1)?$")
 КОНТР = re.compile(r"^(.+?) is false: (.+?)$")
 ПРЯМОЕ_EN = re.compile(
     r"^if n is even then n squared is even: (\d+) is even and (\d+) "
@@ -211,6 +214,11 @@ def судить(строка):
                       and добавка == следом
                       and справа == следом * (следом + 1) // 2
                       and слева + добавка == справа)
+    m = ВЫБОР_ЧЁТНОСТИ.match(с)
+    if m:
+        слово, x, q, хвост = m.group(1), int(m.group(2)), int(m.group(3)), m.group(4)
+        чётн = слово in ("even", "чётно")
+        return True, (x == 2 * q + (0 if чётн else 1)) and (хвост is None) == чётн
     m = СЛУЧАЙ_EN.match(с)
     if m:
         x, род = int(m.group(1)), m.group(2)
