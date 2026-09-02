@@ -40,6 +40,12 @@ def дол(d, c):
     return f"{d}.{c:02d}"
 
 
+def запись(d, c, k):
+    """The two writings of a price, alternating: «16.50 dollars» and «$16.50»
+    (e9 04.09: the g1 band writes money with the sign)."""
+    return f"${дол(d, c)}" if k % 2 else f"{дол(d, c)} dollars"
+
+
 def мост(шаг):
     """The decimal writing and the cents, with the ledger between them."""
     вон = []
@@ -50,14 +56,16 @@ def мост(шаг):
         всего = d * 100 + c
         леджер = f"{d} × 100 = {d * 100}, {d * 100} + {c} = {всего}"
         if i % 2 == 0:
-            вон.append(f"{дол(d, c)} dollars is {всего} cents: {леджер}.")
+            вон.append(f"{запись(d, c, шаг + i // 2)} is {всего} cents: {леджер}.")
             вон.append(f"{d} {ру('рубль', d)} {c} {ру('копейка', c)} — это {всего} {ру('копейка', всего)}: {леджер}.")
         else:
-            вон.append(f"how many cents is {дол(d, c)} dollars? {леджер} cents.")
+            вон.append(f"how many cents is {запись(d, c, шаг + i // 2)}? {леджер} cents.")
             вон.append(f"сколько копеек составляют {d} {ру('рубль', d)} {c} {ру('копейка', c)}? {леджер} {ру('копейка', всего)}.")
         # the way back: cents to dollars and cents (a statement; the question
         # would have to open with the cents and answer with the dollars)
-        вон.append(f"{всего} cents is {d} dollars {c} cents: {d} × 100 = {d * 100}, {всего} − {d * 100} = {c}.")
+        # the way back in both writings: «16 dollars 50 cents» and «$16.50»
+        обратно = f"${дол(d, c)}" if i % 2 else f"{d} dollars {c} cents"
+        вон.append(f"{всего} cents is {обратно}: {d} × 100 = {d * 100}, {всего} − {d * 100} = {c}.")
     return вон
 
 
@@ -109,9 +117,10 @@ def суммы(шаг):
         S = A + B
         s, sc = divmod(S, 100)
         if i % 2 == 0:
-            вон.append(f"{дол(a, ac)} dollars + {дол(b, bc)} dollars = {дол(s, sc)} dollars: {A} + {B} = {S} cents.")
+            вон.append(f"{запись(a, ac, шаг + i // 2)} + {запись(b, bc, шаг + i // 2)} = {запись(s, sc, шаг + i // 2)}: {A} + {B} = {S} cents.")
         else:
-            вон.append(f"how much is {дол(a, ac)} dollars + {дол(b, bc)} dollars? {дол(a, ac)} + {дол(b, bc)} = {дол(s, sc)} dollars: {A} + {B} = {S} cents.")
+            k = шаг + i // 2
+            вон.append(f"how much is {запись(a, ac, k)} + {запись(b, bc, k)}? {запись(a, ac, k)} + {запись(b, bc, k)} = {запись(s, sc, k)}: {A} + {B} = {S} cents.")
     return вон
 
 

@@ -29,6 +29,8 @@ _RU = json.loads((КОРЕНЬ / "tools" / "langpacks" / "ru.json").read_text(en
 ИМЕНА_RU = {n.capitalize(): ф["gender"] for n, ф in _RU["person_forms"].items()}
 Ч = r"(\d+)"
 Д = r"(\d+)\.(\d\d)"
+# a price in either writing: «16.50 dollars» or «$16.50» — two number groups either way
+ДЛ = r"(?:\$(\d+)\.(\d\d)|(\d+)\.(\d\d) dollars)"
 С = r"([a-z]+)"
 СЛ = r"([а-яё]+)"
 
@@ -43,15 +45,15 @@ def _мост(d, c, всего, d2, s100, s100b, c2, всего2):
 
 
 ОБРАЗЦЫ = (
-    (rf"^{Д} dollars is {Ч} cents: {Ч} × 100 = {Ч}, {Ч} \+ {Ч} = {Ч}\.$",
+    (rf"^{ДЛ} is {Ч} cents: {Ч} × 100 = {Ч}, {Ч} \+ {Ч} = {Ч}\.$",
      lambda d, c, всего, d2, s1, s2, c2, в2: _мост(d, c, всего, d2, s1, s2, c2, в2)),
-    (rf"^how many cents is {Д} dollars\? {Ч} × 100 = {Ч}, {Ч} \+ {Ч} = {Ч} cents\.$",
+    (rf"^how many cents is {ДЛ}\? {Ч} × 100 = {Ч}, {Ч} \+ {Ч} = {Ч} cents\.$",
      lambda d, c, d2, s1, s2, c2, в2: _мост(d, c, в2, d2, s1, s2, c2, в2)),
     (rf"^{Ч} {СЛ} {Ч} {СЛ} — это {Ч} {СЛ}: {Ч} × 100 = {Ч}, {Ч} \+ {Ч} = {Ч}\.$",
      lambda d, р, c, к, всего, к2, d2, s1, s2, c2, в2: _мост(d, c, всего, d2, s1, s2, c2, в2) and _коп(d, р) and _коп(c, к) and _коп(всего, к2)),
     (rf"^сколько копеек составляют {Ч} {СЛ} {Ч} {СЛ}\? {Ч} × 100 = {Ч}, {Ч} \+ {Ч} = {Ч} {СЛ}\.$",
      lambda d, р, c, к, d2, s1, s2, c2, в2, к2: _мост(d, c, в2, d2, s1, s2, c2, в2) and _коп(d, р) and _коп(c, к) and _коп(в2, к2)),
-    (rf"^{Ч} cents is {Ч} dollars {Ч} cents: {Ч} × 100 = {Ч}, {Ч} − {Ч} = {Ч}\.$",
+    (rf"^{Ч} cents is (?:\$(\d+)\.(\d\d)|(\d+) dollars (\d+) cents): {Ч} × 100 = {Ч}, {Ч} − {Ч} = {Ч}\.$",
      lambda всего, d, c, d2, s1, в2, s2, c2: всего == d * 100 + c and d2 == d and s1 == s2 == d * 100 and в2 == всего and c2 == c),
     (rf"^a {С} costs {Ч} cents and a {С} costs {Ч} cents; together they cost {Ч} cents: {Ч} \+ {Ч} = {Ч}\.$",
      lambda т1, p1, т2, p2, s, o1, o2, s2: (o1, o2) == (p1, p2) and s == s2 == p1 + p2),
@@ -75,9 +77,9 @@ def _мост(d, c, всего, d2, s100, s100b, c2, всего2):
      lambda имя, г, paid, к1, т, p, к2, сд, к3, o1, o2, сд2: имя in ИМЕНА_RU and (г == "заплатила") == (ИМЕНА_RU[имя] == "f") and (o1, o2) == (paid, p) and сд == сд2 == paid - p > 0 and _коп(paid, к1) and _коп(p, к2) and _коп(сд, к3)),
     (rf"^([А-ЯЁ][а-яё]+) (заплатил|заплатила) {Ч} {СЛ}, а {СЛ} стоила {Ч} {СЛ}\. сколько сдачи (получил|получила) ([А-ЯЁ][а-яё]+)\? {Ч} − {Ч} = {Ч} {СЛ}\.$",
      lambda имя, г, paid, к1, т, p, к2, г2, имя2, o1, o2, сд2, к3: имя in ИМЕНА_RU and имя2 == имя and (г == "заплатила") == (г2 == "получила") == (ИМЕНА_RU[имя] == "f") and (o1, o2) == (paid, p) and сд2 == paid - p > 0 and _коп(paid, к1) and _коп(p, к2) and _коп(сд2, к3)),
-    (rf"^{Д} dollars \+ {Д} dollars = {Д} dollars: {Ч} \+ {Ч} = {Ч} cents\.$",
+    (rf"^{ДЛ} \+ {ДЛ} = {ДЛ}: {Ч} \+ {Ч} = {Ч} cents\.$",
      lambda a, ac, b, bc, s, sc, A, B, S: A == a * 100 + ac and B == b * 100 + bc and S == A + B == s * 100 + sc),
-    (rf"^how much is {Д} dollars \+ {Д} dollars\? {Д} \+ {Д} = {Д} dollars: {Ч} \+ {Ч} = {Ч} cents\.$",
+    (rf"^how much is {ДЛ} \+ {ДЛ}\? {ДЛ} \+ {ДЛ} = {ДЛ}: {Ч} \+ {Ч} = {Ч} cents\.$",
      lambda a, ac, b, bc, a2, ac2, b2, bc2, s, sc, A, B, S: (a2, ac2, b2, bc2) == (a, ac, b, bc) and A == a * 100 + ac and B == b * 100 + bc and S == A + B == s * 100 + sc),
 )
 
