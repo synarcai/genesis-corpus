@@ -41,9 +41,11 @@ from genesis import Unreadable, worlds  # noqa: E402
     r"([\d ]+)\.$")
 ЧЛЕН = re.compile(
     r"^(?:term number (\d+) of the progression from (\d+) with step (\d+) is"
-    r"|член номер (\d+) прогрессии от (\d+) с шагом (\d+) равен) (\d+)\.$")
+    r"|член номер (\d+) прогрессии от (\d+) с шагом (\d+) равен) (\d+): "
+    r"(\d+) − 1 = (\d+), (\d+) × (\d+) = (\d+), (\d+) \+ (\d+) = (\d+)\.$")
 СУММА = re.compile(
-    r"^(?:the sum of ([\d ]+) is|сумма ([\d ]+) равна) (\d+)\.$")
+    r"^(?:the sum of ([\d ]+) is|сумма ([\d ]+) равна) (\d+)"
+    r"(?:: (\d+) \+ (\d+) = (\d+), (\d+) × (\d+) = (\d+), (\d+) ÷ 2 = (\d+))?\.$")
 ПРЕДЕЛ = re.compile(
     r"^(?:the sequence ([\d/ ]+) has limit"
     r"|последовательность ([\d/ ]+) имеет предел) (\d+)\.$")
@@ -105,7 +107,16 @@ def судить(строка):
     m = СУММА.match(с)
     if m:
         члены = [int(x) for x in (m.group(1) or m.group(2)).split()]
-        return True, sum(члены) == int(m.group(3))
+        итог = int(m.group(3))
+        if m.group(4) is None:
+            return True, sum(члены) == итог
+        # ЗВЕНЬЯ: первый + последний, k × сумма, ÷ 2 — арифметическая прогрессия.
+        a1, an, s1, k, s2, ks, ks2, r = (int(m.group(i)) for i in range(4, 12))
+        шаг = члены[1] - члены[0] if len(члены) > 1 else 0
+        прогрессия = all(b - a == шаг for a, b in zip(члены, члены[1:]))
+        return True, (прогрессия and (a1, an) == (члены[0], члены[-1]) and s1 == a1 + an
+                      and k == len(члены) and s2 == s1 and ks == k * s1 and ks2 == ks
+                      and 2 * r == ks and r == итог == sum(члены))
     m = ПРЕДЕЛ.match(с)
     if m:
         члены = дроби(m.group(1) or m.group(2))
@@ -156,7 +167,9 @@ def судить(строка):
         n = int(m.group(1) or m.group(4))
         a = int(m.group(2) or m.group(5))
         d = int(m.group(3) or m.group(6))
-        return True, a + (n - 1) * d == int(m.group(7))
+        итог, n1, n2, n3, d1, p, a1, p2, r = (int(m.group(i)) for i in range(7, 16))
+        return True, (n1 == n and n2 == n - 1 == n3 and d1 == d and p == (n - 1) * d
+                      and a1 == a and p2 == p and r == a + p and итог == r)
     return False, True
 
 
