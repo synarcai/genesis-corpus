@@ -70,8 +70,10 @@ def объявленное():
 МЕСЯЦ_ПОСЛЕ = re.compile(
     r"^(?:the month after (\w+) is (\w+)"
     r"|месяц после (\w+) — это (\w+))\.$")
+# СЧЁТ ПРАВИТ ФОРМОЙ И ГЛАГОЛА: «the first month … has», «the first 2
+# months … have» — единица без числительного читается единицей.
 ПЕРВЫЕ_МЕСЯЦЫ = re.compile(
-    r"^(?:the first (\d+) months of a common year have (\d+) days in all"
+    r"^(?:the first (?:(\d+) months|(month)) of a common year (?:have|has) (\d+) days in all"
     r"|\S+ (\d+) \S+ обычного года дают (\d+) \S+ всего)\.$")
 # КОЛЕСО ПАРОЙ: связь живёт ВНУТРИ показа, и суд проходит круг для
 # обеих половин — названной и выведенной.
@@ -178,7 +180,7 @@ def судить(строка):
     m = ПЕРВЫЕ_МЕСЯЦЫ.match(с)
     if m:
         г = [x for x in m.groups() if x is not None]
-        сколько, всего = int(г[0]), int(г[1])
+        сколько, всего = (1 if г[0] == "month" else int(г[0])), int(г[1])
         if not 1 <= сколько <= len(ОБЪЯВЛЕНО["ДЛИНЫ"]):
             return True, False
         return True, sum(ОБЪЯВЛЕНО["ДЛИНЫ"][:сколько]) == всего

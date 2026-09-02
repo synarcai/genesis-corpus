@@ -3179,10 +3179,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 9525428,
+      "size": 9600323,
       "tiers": [],
       "text": "mix",
-      "lines": 166086
+      "lines": 166726
     },
     {
       "name": "full",
@@ -3197,10 +3197,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 13654195,
+      "size": 13729090,
       "tiers": [],
       "text": "mix",
-      "lines": 235937
+      "lines": 236577
     },
     {
       "name": "selfmeasure",
@@ -3312,6 +3312,31 @@
       "text": "shows",
       "assemblies": [
         "school"
+      ]
+    },
+    {
+      "name": "gsmforms",
+      "file": "datasets/genesis_gsmforms.txt",
+      "genre": "school forms of GSM8K (owner's word 03.09: band g1 to 100 %; e9's FORM-MUTE named the question families whose form with an answer lives in no world) — first layer of eight families: the total number of X (sum over carriers), temperature in degrees below zero, percentage of a share (whole percents only), weight in pounds from ounces, a tank's water depth from volume and base, probability expressed as a fraction, a part given as quarters back to the whole, the complement (originally / missing / people on the bus); every family as a school story with the ground after the colon, both polarities where a verdict exists, explicit deltas and relations, and the question with its answer in the same line — the answer opens with the question's quantities in their order and closes with the result (the pair house); numbers by residues, names from the houses of names of both packs; the court recomputes every line",
+      "act": [
+        "recount",
+        "decide"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "exact_only"
+      ],
+      "size": 74893,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ],
+      "actors": [
+        "person_names:en",
+        "person_names:ru"
       ]
     },
     {
@@ -4343,6 +4368,566 @@
       "источник": "public-domain",
       "происхождение": "wikisource-pl-scan:M. Arcta słownik ilustrowany języka polskiego - Tom 1.djvu; M. Arcta słownik ilustrowany języka polskiego - Tom 2.djvu; M. Arcta słownik ilustrowany języka polskiego - Tom 3.djvu",
       "held_out": "shelf/pl/arct_1916_pl.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_baldwin_mind",
+      "file": "shelf/en/baldwin_mind.txt",
+      "genre": "The Story of the Mind — James Mark Baldwin; английское издание 1898",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "психология",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1898,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:20522",
+      "held_out": "shelf/en/baldwin_mind.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_bergson_evolution",
+      "file": "shelf/en/bergson_evolution.txt",
+      "genre": "Creative Evolution — Henri Bergson; английское издание 1911",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "философия",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1907,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:26163",
+      "held_out": "shelf/en/bergson_evolution.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_binet_mind_brain",
+      "file": "shelf/en/binet_mind_brain.txt",
+      "genre": "The Mind and the Brain — Alfred Binet; английское издание 1907",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "психология",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1905,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:21077",
+      "held_out": "shelf/en/binet_mind_brain.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_dewey_think",
+      "file": "shelf/en/dewey_think.txt",
+      "genre": "How We Think — John Dewey; английское издание 1910",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "психология",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1910,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:37423",
+      "held_out": "shelf/en/dewey_think.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_freud_dreams",
+      "file": "shelf/en/freud_dreams.txt",
+      "genre": "The Interpretation of Dreams — Sigmund Freud; английское издание 1913",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "психология",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1900,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:66048",
+      "held_out": "shelf/en/freud_dreams.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_freud_group",
+      "file": "shelf/en/freud_group.txt",
+      "genre": "Group Psychology and the Analysis of the Ego — Sigmund Freud; английское издание 1922",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "психология",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1921,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:35877",
+      "held_out": "shelf/en/freud_group.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_freud_introduction",
+      "file": "shelf/en/freud_introduction.txt",
+      "genre": "A General Introduction to Psychoanalysis — Sigmund Freud; английское издание 1920",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "психология",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1917,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:38219",
+      "held_out": "shelf/en/freud_introduction.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_freud_three",
+      "file": "shelf/en/freud_three.txt",
+      "genre": "Three Contributions to the Theory of Sex — Sigmund Freud; английское издание 1910",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "психология",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1905,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:14969",
+      "held_out": "shelf/en/freud_three.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_james_talks",
+      "file": "shelf/en/james_talks.txt",
+      "genre": "Talks to Teachers on Psychology — William James; английское издание 1899",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "психология",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1899,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:16287",
+      "held_out": "shelf/en/james_talks.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_james_varieties",
+      "file": "shelf/en/james_varieties.txt",
+      "genre": "The Varieties of Religious Experience — William James; английское издание 1902",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "психология",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1902,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:621",
+      "held_out": "shelf/en/james_varieties.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_jung_analytical",
+      "file": "shelf/en/jung_analytical.txt",
+      "genre": "Collected Papers on Analytical Psychology — Carl Gustav Jung; английское издание 1917",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "психология",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1916,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:48225",
+      "held_out": "shelf/en/jung_analytical.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_jung_theory",
+      "file": "shelf/en/jung_theory.txt",
+      "genre": "The Theory of Psychoanalysis — Carl Gustav Jung; английское издание 1915",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "психология",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1913,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:66041",
+      "held_out": "shelf/en/jung_theory.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_jung_unconscious",
+      "file": "shelf/en/jung_unconscious.txt",
+      "genre": "Psychology of the Unconscious — Carl Gustav Jung; английское издание 1916",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "психология",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1912,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:65903",
+      "held_out": "shelf/en/jung_unconscious.holdout.txt",
+      "судится": [
+        "prosetree"
+      ]
+    },
+    {
+      "name": "gutenberg_mcdougall_group",
+      "file": "shelf/en/mcdougall_group.txt",
+      "genre": "The Group Mind — William McDougall; английское издание 1920",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "психология",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1920,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:40826",
+      "held_out": "shelf/en/mcdougall_group.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_munsterberg_psychotherapy",
+      "file": "shelf/en/munsterberg_psychotherapy.txt",
+      "genre": "Psychotherapy — Hugo Münsterberg; английское издание 1909",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "психология",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1909,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:22775",
+      "held_out": "shelf/en/munsterberg_psychotherapy.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_ribot_emotions",
+      "file": "shelf/en/ribot_emotions.txt",
+      "genre": "The Psychology of the Emotions — Théodule Ribot; английское издание 1897",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "психология",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1896,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:67585",
+      "held_out": "shelf/en/ribot_emotions.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_ribot_ideas",
+      "file": "shelf/en/ribot_ideas.txt",
+      "genre": "The Evolution of General Ideas — Théodule Ribot; английское издание 1899",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "психология",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1897,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:70911",
+      "held_out": "shelf/en/ribot_ideas.holdout.txt",
+      "судится": [
+        "prosetree"
+      ]
+    },
+    {
+      "name": "gutenberg_ribot_imagination",
+      "file": "shelf/en/ribot_imagination.txt",
+      "genre": "Essay on the Creative Imagination — Théodule Ribot; английское издание 1906",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "психология",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1900,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:26430",
+      "held_out": "shelf/en/ribot_imagination.holdout.txt",
+      "судится": [
+        "prosetree"
+      ]
+    },
+    {
+      "name": "gutenberg_russell_mind",
+      "file": "shelf/en/russell_mind.txt",
+      "genre": "The Analysis of Mind — Bertrand Russell; английское издание 1921",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "психология",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1921,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:2529",
+      "held_out": "shelf/en/russell_mind.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_thorndike_arithmetic",
+      "file": "shelf/en/thorndike_arithmetic.txt",
+      "genre": "The Psychology of Arithmetic — Edward Thorndike; английское издание 1922",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "психология",
+      "язык": "en",
+      "плотность": "исследование",
+      "издано": 1922,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:39300",
+      "held_out": "shelf/en/thorndike_arithmetic.holdout.txt",
+      "судится": [
+        "prosetree"
+      ]
+    },
+    {
+      "name": "gutenberg_titchener_beginner",
+      "file": "shelf/en/titchener_beginner.txt",
+      "genre": "A Beginner's Psychology — Edward Titchener; английское издание 1915",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "психология",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1915,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:51442",
+      "held_out": "shelf/en/titchener_beginner.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_wundt_folk",
+      "file": "shelf/en/wundt_folk.txt",
+      "genre": "Elements of Folk Psychology — Wilhelm Wundt; английское издание 1916",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "психология",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1912,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:44138",
+      "held_out": "shelf/en/wundt_folk.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_wundt_introduction",
+      "file": "shelf/en/wundt_introduction.txt",
+      "genre": "An Introduction to Psychology — Wilhelm Wundt; английское издание 1912",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "психология",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1911,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:46677",
+      "held_out": "shelf/en/wundt_introduction.holdout.txt",
       "судится": []
     }
   ]

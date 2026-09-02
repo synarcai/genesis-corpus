@@ -96,6 +96,7 @@ _КРАЙ = "«»\"'()[],.;:!"
 ЗАЧИНЫ = frozenset("""
 what how which where when who whom whose why is are was were does do did
 whence whither wherefore wherein whereby whereof
+what's what’s how's how’s where's where’s who's who’s
 can could should has have will shall must may might would ought need
 чему как сколько что какой какая какое какие каков какова каково
 каковы каком какую какого какими где

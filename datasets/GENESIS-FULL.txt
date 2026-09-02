@@ -238260,3 +238260,683 @@ matrix [3 0 / 2 1] transposed is [3 2 / 0 1]: rows become columns.
 [1 3 / 1 4] · (1, 2) = (7, 9): 1 × 1 + 3 × 2 = 7 и 1 × 1 + 4 × 2 = 9.
 row 1 of [−1 2 / 0 3] is (−1, 2).
 matrix [1 0 / 1 1] transposed is not [1 0 / 1 1]: it is [1 1 / 0 1].
+
+Маша имеет 5 ручек, Аня имеет 7 ручек; всего у них 12 ручек: 5 + 7 = 12.
+ann has 2 apples and ben has 5 apples; the total number of apples is 7: 2 + 5 = 7.
+dan has 11 coins and peter has 5 coins. what's the total number of coins? 11 + 5 = 16.
+peter has 8 pens and hugo has 3 pens; the total number of pens is not 12: it is 11.
+Вера имеет 5 книг, Лена имеет 3 книги; всего у них 8 книг: 5 + 3 = 8.
+ida has 2 coins and ben has 10 coins; the total number of coins is 12: 2 + 10 = 12.
+dan has 11 pens and peter has 8 pens. what's the total number of pens? 11 + 8 = 19.
+grace has 8 books and hugo has 8 books; the total number of books is not 17: it is 16.
+Маша имеет 5 монет, Аня имеет 6 монет; всего у них 11 монет: 5 + 6 = 11.
+elena has 2 cards and ben has 6 cards; the total number of cards is 8: 2 + 6 = 8.
+vera has 11 books and peter has 4 books. what's the total number of books? 11 + 4 = 15.
+carla has 8 apples and hugo has 4 apples; the total number of apples is not 13: it is 12.
+Вера имеет 5 карт, Лена имеет 2 карты; всего у них 7 карт: 5 + 2 = 7.
+ann has 2 pens and ben has 2 pens; the total number of pens is 4: 2 + 2 = 4.
+hugo has 11 apples and peter has 9 apples. what's the total number of apples? 11 + 9 = 20.
+carla has 8 cards and hugo has 7 cards; the total number of cards is not 16: it is 15.
+
+температура была −1 градус и поднялась на 3 градуса; теперь температура — 2 градуса: −1 + 3 = 2.
+the temperature was 6 degrees and fell by 2 degrees; the temperature in degrees is now 4: 6 − 2 = 4.
+the temperature was −3 degrees and rose by 5 degrees. what is the temperature in degrees now? −3 + 5 = 2.
+the temperature was 4 degrees and fell by 4 degrees; the temperature in degrees is not 4: it is 0.
+температура была −5 градусов и поднялась на 7 градусов; теперь температура — 2 градуса: −5 + 7 = 2.
+the temperature was 2 degrees and fell by 6 degrees; the temperature in degrees is now −4: 2 − 6 = −4.
+the temperature was −6 degrees and rose by 5 degrees. what is the temperature in degrees now? −6 + 5 = −1.
+the temperature was 0 degrees and fell by 8 degrees; the temperature in degrees is not 0: it is −8.
+температура была 7 градусов и поднялась на 7 градусов; теперь температура — 14 градусов: 7 + 7 = 14.
+the temperature was −2 degrees and fell by 10 degrees; the temperature in degrees is now −12: −2 − 10 = −12.
+the temperature was 5 degrees and rose by 9 degrees. what is the temperature in degrees now? 5 + 9 = 14.
+the temperature was −4 degrees and fell by 12 degrees; the temperature in degrees is not −4: it is −16.
+температура была 3 градуса и поднялась на 11 градусов; теперь температура — 14 градусов: 3 + 11 = 14.
+the temperature was −6 degrees and fell by 2 degrees; the temperature in degrees is now −8: −6 − 2 = −8.
+the temperature was 1 degree and rose by 13 degrees. what is the temperature in degrees now? 1 + 13 = 14.
+the temperature was 8 degrees and fell by 12 degrees; the temperature in degrees is not 8: it is −4.
+
+в классе 80 учеников, из них 24 — девочки; доля девочек — 30 %: 24 ÷ 80 × 100 = 30.
+the class has 80 pupils and 52 of them are girls; the percentage of girls is 65 %: 52 ÷ 80 × 100 = 65.
+the class has 50 pupils and 4 of them are girls. what percentage of the class are girls? 50 pupils and 4 girls: 4 ÷ 50 × 100 = 8 %.
+the class has 50 pupils and 11 of them are girls; the percentage of girls is not 27 %: it is 22 %.
+в классе 25 учеников, из них 2 — девочки; доля девочек — 8 %: 2 ÷ 25 × 100 = 8.
+the class has 25 pupils and 9 of them are girls; the percentage of girls is 36 %: 9 ÷ 25 × 100 = 36.
+the class has 25 pupils and 16 of them are girls. what percentage of the class are girls? 25 pupils and 16 girls: 16 ÷ 25 × 100 = 64 %.
+the class has 100 pupils and 7 of them are girls; the percentage of girls is not 12 %: it is 7 %.
+в классе 100 учеников, из них 14 — девочек; доля девочек — 14 %: 14 ÷ 100 × 100 = 14.
+the class has 60 pupils and 15 of them are girls; the percentage of girls is 25 %: 15 ÷ 60 × 100 = 25.
+the class has 60 pupils and 36 of them are girls. what percentage of the class are girls? 60 pupils and 36 girls: 36 ÷ 60 × 100 = 60 %.
+the class has 40 pupils and 6 of them are girls; the percentage of girls is not 20 %: it is 15 %.
+в классе 40 учеников, из них 20 — девочек; доля девочек — 50 %: 20 ÷ 40 × 100 = 50.
+the class has 20 pupils and 1 of them are girls; the percentage of girls is 5 %: 1 ÷ 20 × 100 = 5.
+the class has 20 pupils and 8 of them are girls. what percentage of the class are girls? 20 pupils and 8 girls: 8 ÷ 20 × 100 = 40 %.
+the class has 20 pupils and 15 of them are girls; the percentage of girls is not 80 %: it is 75 %.
+
+посылка весит 96 унций, а в фунте 16 унций; вес в фунтах — 6 фунтов: 96 ÷ 16 = 6.
+the parcel weighs 64 ounces and a pound is 16 ounces; the weight in pounds is 4: 64 ÷ 16 = 4.
+the parcel weighs 64 ounces and a pound is 16 ounces. what is the weight in pounds? 64 ÷ 16 = 4.
+the parcel weighs 32 ounces and a pound is 16 ounces; the weight in pounds is not 3: it is 2.
+посылка весит 32 унции, а в фунте 16 унций; вес в фунтах — 2 фунта: 32 ÷ 16 = 2.
+the parcel weighs 144 ounces and a pound is 16 ounces; the weight in pounds is 9: 144 ÷ 16 = 9.
+the parcel weighs 112 ounces and a pound is 16 ounces. what is the weight in pounds? 112 ÷ 16 = 7.
+the parcel weighs 112 ounces and a pound is 16 ounces; the weight in pounds is not 8: it is 7.
+посылка весит 80 унций, а в фунте 16 унций; вес в фунтах — 5 фунтов: 80 ÷ 16 = 5.
+the parcel weighs 80 ounces and a pound is 16 ounces; the weight in pounds is 5: 80 ÷ 16 = 5.
+the parcel weighs 48 ounces and a pound is 16 ounces. what is the weight in pounds? 48 ÷ 16 = 3.
+the parcel weighs 48 ounces and a pound is 16 ounces; the weight in pounds is not 4: it is 3.
+посылка весит 16 унций, а в фунте 16 унций; вес в фунтах — 1 фунт: 16 ÷ 16 = 1.
+the parcel weighs 16 ounces and a pound is 16 ounces; the weight in pounds is 1: 16 ÷ 16 = 1.
+the parcel weighs 128 ounces and a pound is 16 ounces. what is the weight in pounds? 128 ÷ 16 = 8.
+the parcel weighs 96 ounces and a pound is 16 ounces; the weight in pounds is not 7: it is 6.
+
+бак шириной 2 фута и длиной 5 футов вмещает 60 кубических футов воды; глубина воды в баке — 6 футов: 60 ÷ (2 × 5) = 6.
+the tank is 4 feet wide and 2 feet long and holds 8 cubic feet of water; the tank's water depth is 1 foot: 8 ÷ (4 × 2) = 1.
+the tank is 5 feet wide and 5 feet long and holds 100 cubic feet of water. what is the tank's water depth? 5 by 5 holding 100: 100 ÷ (5 × 5) = 4 feet.
+the tank is 2 feet wide and 2 feet long and holds 20 cubic feet of water; the tank's water depth is not 6 feet: it is 5 feet.
+бак шириной 3 фута и длиной 5 футов вмещает 30 кубических футов воды; глубина воды в баке — 2 фута: 30 ÷ (3 × 5) = 2.
+the tank is 5 feet wide and 2 feet long and holds 30 cubic feet of water; the tank's water depth is 3 feet: 30 ÷ (5 × 2) = 3.
+the tank is 2 feet wide and 5 feet long and holds 40 cubic feet of water. what is the tank's water depth? 2 by 5 holding 40: 40 ÷ (2 × 5) = 4 feet.
+the tank is 3 feet wide and 2 feet long and holds 6 cubic feet of water; the tank's water depth is not 2 feet: it is 1 foot.
+бак шириной 5 футов и длиной 5 футов вмещает 50 кубических футов воды; глубина воды в баке — 2 фута: 50 ÷ (5 × 5) = 2.
+the tank is 6 feet wide and 2 feet long and holds 60 cubic feet of water; the tank's water depth is 5 feet: 60 ÷ (6 × 2) = 5.
+the tank is 3 feet wide and 5 feet long and holds 90 cubic feet of water. what is the tank's water depth? 3 by 5 holding 90: 90 ÷ (3 × 5) = 6 feet.
+the tank is 4 feet wide and 2 feet long and holds 24 cubic feet of water; the tank's water depth is not 4 feet: it is 3 feet.
+бак шириной 6 футов и длиной 5 футов вмещает 120 кубических футов воды; глубина воды в баке — 4 фута: 120 ÷ (6 × 5) = 4.
+the tank is 2 feet wide and 2 feet long and holds 4 cubic feet of water; the tank's water depth is 1 foot: 4 ÷ (2 × 2) = 1.
+the tank is 4 feet wide and 5 feet long and holds 40 cubic feet of water. what is the tank's water depth? 4 by 5 holding 40: 40 ÷ (4 × 5) = 2 feet.
+the tank is 6 feet wide and 2 feet long and holds 36 cubic feet of water; the tank's water depth is not 4 feet: it is 3 feet.
+
+в мешке 6 шаров красных и 4 шара синих; вероятность вынуть красный шар, выраженная дробью, — 6/10: 6 красных из 10.
+a bag holds 1 red marble and 4 blue marbles; the probability of drawing a red marble, expressed as a fraction, is 1/5: 1 red out of 5.
+a bag holds 4 red marbles and 7 blue marbles. what is the probability of drawing a red marble, expressed as a fraction? 4 red and 7 blue make 11: 4/11.
+a bag holds 5 red marbles and 7 blue marbles; the probability of drawing a red marble, expressed as a fraction, is not 6/12: it is 5/12.
+в мешке 2 шара красных и 3 шара синих; вероятность вынуть красный шар, выраженная дробью, — 2/5: 2 красных из 5.
+a bag holds 3 red marbles and 3 blue marbles; the probability of drawing a red marble, expressed as a fraction, is 3/6: 3 red out of 6.
+a bag holds 4 red marbles and 3 blue marbles. what is the probability of drawing a red marble, expressed as a fraction? 4 red and 3 blue make 7: 4/7.
+a bag holds 1 red marble and 6 blue marbles; the probability of drawing a red marble, expressed as a fraction, is not 2/7: it is 1/7.
+в мешке 2 шара красных и 6 шаров синих; вероятность вынуть красный шар, выраженная дробью, — 2/8: 2 красных из 8.
+a bag holds 5 red marbles and 2 blue marbles; the probability of drawing a red marble, expressed as a fraction, is 5/7: 5 red out of 7.
+a bag holds 6 red marbles and 2 blue marbles. what is the probability of drawing a red marble, expressed as a fraction? 6 red and 2 blue make 8: 6/8.
+a bag holds 3 red marbles and 5 blue marbles; the probability of drawing a red marble, expressed as a fraction, is not 4/8: it is 3/8.
+в мешке 4 шара красных и 5 шаров синих; вероятность вынуть красный шар, выраженная дробью, — 4/9: 4 красных из 9.
+a bag holds 1 red marble and 1 blue marble; the probability of drawing a red marble, expressed as a fraction, is 1/2: 1 red out of 2.
+a bag holds 2 red marbles and 1 blue marble. what is the probability of drawing a red marble, expressed as a fraction? 2 red and 1 blue make 3: 2/3.
+a bag holds 3 red marbles and 1 blue marble; the probability of drawing a red marble, expressed as a fraction, is not 2/4: it is 3/4.
+
+если 24 — это три четверти класса, в классе 32 ученика: 24 ÷ 3 × 4 = 32.
+if 6 is one quarter of the class, the class has 24 pupils: 6 ÷ 1 × 4 = 24.
+if 6 is one quarter of the class, how many pupils does the class have? 6 ÷ 1 × 4 = 24.
+if 8 is two quarters of the class, the class does not have 20 pupils: it has 16.
+если 8 — это две четверти класса, в классе 16 учеников: 8 ÷ 2 × 4 = 16.
+if 33 is three quarters of the class, the class has 44 pupils: 33 ÷ 3 × 4 = 44.
+if 9 is one quarter of the class, how many pupils does the class have? 9 ÷ 1 × 4 = 36.
+if 9 is one quarter of the class, the class does not have 40 pupils: it has 36.
+если 14 — это две четверти класса, в классе 28 учеников: 14 ÷ 2 × 4 = 28.
+if 14 is two quarters of the class, the class has 28 pupils: 14 ÷ 2 × 4 = 28.
+if 15 is three quarters of the class, how many pupils does the class have? 15 ÷ 3 × 4 = 20.
+if 15 is three quarters of the class, the class does not have 24 pupils: it has 20.
+если 3 — это четверть класса, в классе 12 учеников: 3 ÷ 1 × 4 = 12.
+if 3 is one quarter of the class, the class has 12 pupils: 3 ÷ 1 × 4 = 12.
+if 20 is two quarters of the class, how many pupils does the class have? 20 ÷ 2 × 4 = 40.
+if 24 is three quarters of the class, the class does not have 36 pupils: it has 32.
+
+в автобусе было 25 человек, 6 вышли; теперь в автобусе 19 человек: 25 − 6 = 19.
+there were originally 46 cars in the lot and 4 drove away; 42 cars remain: 46 − 4 = 42.
+if there were originally 19 cars in the lot and 4 drove away, how many cars remain? 19 − 4 = 15.
+the set has 40 pieces and 38 are in the box; 3 pieces are not missing: 2 are missing.
+в наборе 13 деталей, в коробке 11 деталей; не хватает 2 детали: 13 − 11 = 2.
+there were 34 people on the bus and 9 got off; 25 people are on the bus now: 34 − 9 = 25.
+if there were originally 15 cars in the lot and 7 drove away, how many cars remain? 15 − 7 = 8.
+there were originally 28 cars in the lot and 7 drove away; 22 cars do not remain: 21 remain.
+в наборе 49 деталей, в коробке 44 детали; не хватает 5 деталей: 49 − 44 = 5.
+the set has 22 pieces and 17 are in the box; 5 pieces are missing: 22 − 17 = 5.
+if there were 43 people on the bus and 3 got off, how many people are on the bus now? 43 − 3 = 40.
+there were 16 people on the bus and 3 got off; the number of people on the bus now is not 14: it is 13.
+на стоянке изначально было 37 машин, 1 уехали; осталось 36 машин: 37 − 1 = 36.
+there were originally 10 cars in the lot and 1 drove away; 9 cars remain: 10 − 1 = 9.
+the set has 31 pieces and 23 are in the box. how many pieces are missing? 31 − 23 = 8.
+there were 12 people on the bus and 6 got off; the number of people on the bus now is not 7: it is 6.
+
+dan has 13 coins and ida has 2 coins. what's the total number of coins? 13 + 2 = 15.
+carla has 10 cards and felix has 4 cards; the total number of cards is not 15: it is 14.
+Вера имеет 7 карт, Дима имеет 8 карт; всего у них 15 карт: 7 + 8 = 15.
+elena has 4 cards and vera has 3 cards; the total number of cards is 7: 4 + 3 = 7.
+dan has 13 pens and ida has 5 pens. what's the total number of pens? 13 + 5 = 18.
+peter has 10 pens and felix has 9 pens; the total number of pens is not 20: it is 19.
+Маша имеет 7 ручек, Петя имеет 4 ручки; всего у них 11 ручек: 7 + 4 = 11.
+elena has 4 books and vera has 6 books; the total number of books is 10: 4 + 6 = 10.
+vera has 13 books and ida has 10 books. what's the total number of books? 13 + 10 = 23.
+grace has 10 books and felix has 5 books; the total number of books is not 16: it is 15.
+Вера имеет 7 книг, Дима имеет 9 книг; всего у них 16 книг: 7 + 9 = 16.
+ann has 4 apples and vera has 2 apples; the total number of apples is 6: 4 + 2 = 6.
+hugo has 13 apples and ida has 6 apples. what's the total number of apples? 13 + 6 = 19.
+carla has 10 apples and felix has 10 apples; the total number of apples is not 21: it is 20.
+Маша имеет 7 монет, Петя имеет 3 монеты; всего у них 10 монет: 7 + 3 = 10.
+ida has 4 coins and vera has 7 coins; the total number of coins is 11: 4 + 7 = 11.
+
+the temperature was −1 degree and rose by 13 degrees. what is the temperature in degrees now? −1 + 13 = 12.
+the temperature was −5 degrees and fell by 8 degrees; the temperature in degrees is not −5: it is −13.
+температура была 5 градусов и поднялась на 7 градусов; теперь температура — 12 градусов: 5 + 7 = 12.
+the temperature was 0 degrees and fell by 6 degrees; the temperature in degrees is now −6: 0 − 6 = −6.
+the temperature was −4 degrees and rose by 13 degrees. what is the temperature in degrees now? −4 + 13 = 9.
+the temperature was 6 degrees and fell by 12 degrees; the temperature in degrees is not 6: it is −6.
+температура была 1 градус и поднялась на 11 градусов; теперь температура — 12 градусов: 1 + 11 = 12.
+the temperature was −3 degrees and fell by 6 degrees; the temperature in degrees is now −9: −3 − 6 = −9.
+the temperature was 7 degrees and rose by 5 degrees. what is the temperature in degrees now? 7 + 5 = 12.
+the temperature was 2 degrees and fell by 4 degrees; the temperature in degrees is not 2: it is −2.
+температура была −3 градуса и поднялась на 3 градуса; теперь температура — 0 градусов: −3 + 3 = 0.
+the temperature was 8 degrees and fell by 10 degrees; the temperature in degrees is now −2: 8 − 10 = −2.
+the temperature was 3 degrees and rose by 9 degrees. what is the temperature in degrees now? 3 + 9 = 12.
+the temperature was −2 degrees and fell by 8 degrees; the temperature in degrees is not −2: it is −10.
+температура была −6 градусов и поднялась на 3 градуса; теперь температура — −3 градуса: −6 + 3 = −3.
+the temperature was 4 degrees and fell by 2 degrees; the temperature in degrees is now 2: 4 − 2 = 2.
+
+the class has 50 pupils and 6 of them are girls. what percentage of the class are girls? 50 pupils and 6 girls: 6 ÷ 50 × 100 = 12 %.
+the class has 20 pupils and 17 of them are girls; the percentage of girls is not 90 %: it is 85 %.
+в классе 40 учеников, из них 24 — девочки; доля девочек — 60 %: 24 ÷ 40 × 100 = 60.
+the class has 60 pupils and 21 of them are girls; the percentage of girls is 35 %: 21 ÷ 60 × 100 = 35.
+the class has 25 pupils and 18 of them are girls. what percentage of the class are girls? 25 pupils and 18 girls: 18 ÷ 25 × 100 = 72 %.
+the class has 50 pupils and 13 of them are girls; the percentage of girls is not 31 %: it is 26 %.
+в классе 80 учеников, из них 32 — девочки; доля девочек — 40 %: 32 ÷ 80 × 100 = 40.
+the class has 40 pupils and 38 of them are girls; the percentage of girls is 95 %: 38 ÷ 40 × 100 = 95.
+the class has 60 pupils and 42 of them are girls. what percentage of the class are girls? 60 pupils and 42 girls: 42 ÷ 60 × 100 = 70 %.
+the class has 100 pupils and 9 of them are girls; the percentage of girls is not 14 %: it is 9 %.
+в классе 25 учеников, из них 4 — девочки; доля девочек — 16 %: 4 ÷ 25 × 100 = 16.
+the class has 80 pupils and 60 of them are girls; the percentage of girls is 75 %: 60 ÷ 80 × 100 = 75.
+the class has 20 pupils and 10 of them are girls. what percentage of the class are girls? 20 pupils and 10 girls: 10 ÷ 20 × 100 = 50 %.
+the class has 40 pupils and 10 of them are girls; the percentage of girls is not 30 %: it is 25 %.
+в классе 100 учеников, из них 16 — девочек; доля девочек — 16 %: 16 ÷ 100 × 100 = 16.
+the class has 25 pupils and 11 of them are girls; the percentage of girls is 44 %: 11 ÷ 25 × 100 = 44.
+
+the parcel weighs 96 ounces and a pound is 16 ounces. what is the weight in pounds? 96 ÷ 16 = 6.
+the parcel weighs 128 ounces and a pound is 16 ounces; the weight in pounds is not 9: it is 8.
+посылка весит 48 унций, а в фунте 16 унций; вес в фунтах — 3 фунта: 48 ÷ 16 = 3.
+the parcel weighs 112 ounces and a pound is 16 ounces; the weight in pounds is 7: 112 ÷ 16 = 7.
+the parcel weighs 144 ounces and a pound is 16 ounces. what is the weight in pounds? 144 ÷ 16 = 9.
+the parcel weighs 64 ounces and a pound is 16 ounces; the weight in pounds is not 5: it is 4.
+посылка весит 128 унций, а в фунте 16 унций; вес в фунтах — 8 фунтов: 128 ÷ 16 = 8.
+the parcel weighs 16 ounces and a pound is 16 ounces; the weight in pounds is 1: 16 ÷ 16 = 1.
+the parcel weighs 80 ounces and a pound is 16 ounces. what is the weight in pounds? 80 ÷ 16 = 5.
+the parcel weighs 144 ounces and a pound is 16 ounces; the weight in pounds is not 10: it is 9.
+посылка весит 64 унции, а в фунте 16 унций; вес в фунтах — 4 фунта: 64 ÷ 16 = 4.
+the parcel weighs 96 ounces and a pound is 16 ounces; the weight in pounds is 6: 96 ÷ 16 = 6.
+the parcel weighs 16 ounces and a pound is 16 ounces. what is the weight in pounds? 16 ÷ 16 = 1.
+the parcel weighs 80 ounces and a pound is 16 ounces; the weight in pounds is not 6: it is 5.
+посылка весит 112 унций, а в фунте 16 унций; вес в фунтах — 7 фунтов: 112 ÷ 16 = 7.
+the parcel weighs 32 ounces and a pound is 16 ounces; the weight in pounds is 2: 32 ÷ 16 = 2.
+
+the tank is 5 feet wide and 4 feet long and holds 40 cubic feet of water. what is the tank's water depth? 5 by 4 holding 40: 40 ÷ (5 × 4) = 2 feet.
+the tank is 6 feet wide and 7 feet long and holds 42 cubic feet of water; the tank's water depth is not 2 feet: it is 1 foot.
+бак шириной 6 футов и длиной 4 фута вмещает 48 кубических футов воды; глубина воды в баке — 2 фута: 48 ÷ (6 × 4) = 2.
+the tank is 6 feet wide and 7 feet long and holds 126 cubic feet of water; the tank's water depth is 3 feet: 126 ÷ (6 × 7) = 3.
+the tank is 2 feet wide and 4 feet long and holds 16 cubic feet of water. what is the tank's water depth? 2 by 4 holding 16: 16 ÷ (2 × 4) = 2 feet.
+the tank is 2 feet wide and 7 feet long and holds 42 cubic feet of water; the tank's water depth is not 4 feet: it is 3 feet.
+бак шириной 2 фута и длиной 4 фута вмещает 32 кубических футов воды; глубина воды в баке — 4 фута: 32 ÷ (2 × 4) = 4.
+the tank is 3 feet wide and 7 feet long and holds 63 cubic feet of water; the tank's water depth is 3 feet: 63 ÷ (3 × 7) = 3.
+the tank is 3 feet wide and 4 feet long and holds 48 cubic feet of water. what is the tank's water depth? 3 by 4 holding 48: 48 ÷ (3 × 4) = 4 feet.
+the tank is 3 feet wide and 7 feet long and holds 105 cubic feet of water; the tank's water depth is not 6 feet: it is 5 feet.
+бак шириной 3 фута и длиной 4 фута вмещает 72 кубических футов воды; глубина воды в баке — 6 футов: 72 ÷ (3 × 4) = 6.
+the tank is 4 feet wide and 7 feet long and holds 140 cubic feet of water; the tank's water depth is 5 feet: 140 ÷ (4 × 7) = 5.
+the tank is 4 feet wide and 4 feet long and holds 96 cubic feet of water. what is the tank's water depth? 4 by 4 holding 96: 96 ÷ (4 × 4) = 6 feet.
+the tank is 4 feet wide and 7 feet long and holds 28 cubic feet of water; the tank's water depth is not 2 feet: it is 1 foot.
+бак шириной 5 футов и длиной 4 фута вмещает 120 кубических футов воды; глубина воды в баке — 6 футов: 120 ÷ (5 × 4) = 6.
+the tank is 5 feet wide and 7 feet long and holds 35 cubic feet of water; the tank's water depth is 1 foot: 35 ÷ (5 × 7) = 1.
+
+a bag holds 4 red marbles and 1 blue marble. what is the probability of drawing a red marble, expressed as a fraction? 4 red and 1 blue make 5: 4/5.
+a bag holds 3 red marbles and 2 blue marbles; the probability of drawing a red marble, expressed as a fraction, is not 4/5: it is 3/5.
+в мешке 4 шара красных и 6 шаров синих; вероятность вынуть красный шар, выраженная дробью, — 4/10: 4 красных из 10.
+a bag holds 5 red marbles and 3 blue marbles; the probability of drawing a red marble, expressed as a fraction, is 5/8: 5 red out of 8.
+a bag holds 4 red marbles and 4 blue marbles. what is the probability of drawing a red marble, expressed as a fraction? 4 red and 4 blue make 8: 4/8.
+a bag holds 5 red marbles and 1 blue marble; the probability of drawing a red marble, expressed as a fraction, is not 4/6: it is 5/6.
+в мешке 6 шаров красных и 5 шаров синих; вероятность вынуть красный шар, выраженная дробью, — 6/11: 6 красных из 11.
+a bag holds 5 red marbles and 6 blue marbles; the probability of drawing a red marble, expressed as a fraction, is 5/11: 5 red out of 11.
+a bag holds 6 red marbles and 3 blue marbles. what is the probability of drawing a red marble, expressed as a fraction? 6 red and 3 blue make 9: 6/9.
+a bag holds 1 red marble and 7 blue marbles; the probability of drawing a red marble, expressed as a fraction, is not 2/8: it is 1/8.
+в мешке 2 шара красных и 4 шара синих; вероятность вынуть красный шар, выраженная дробью, — 2/6: 2 красных из 6.
+a bag holds 1 red marble and 5 blue marbles; the probability of drawing a red marble, expressed as a fraction, is 1/6: 1 red out of 6.
+a bag holds 2 red marbles and 2 blue marbles. what is the probability of drawing a red marble, expressed as a fraction? 2 red and 2 blue make 4: 2/4.
+a bag holds 3 red marbles and 6 blue marbles; the probability of drawing a red marble, expressed as a fraction, is not 4/9: it is 3/9.
+в мешке 2 шара красных и 7 шаров синих; вероятность вынуть красный шар, выраженная дробью, — 2/9: 2 красных из 9.
+a bag holds 3 red marbles and 4 blue marbles; the probability of drawing a red marble, expressed as a fraction, is 3/7: 3 red out of 7.
+
+if 8 is one quarter of the class, how many pupils does the class have? 8 ÷ 1 × 4 = 32.
+if 30 is three quarters of the class, the class does not have 44 pupils: it has 40.
+если 5 — это четверть класса, в классе 20 учеников: 5 ÷ 1 × 4 = 20.
+if 18 is two quarters of the class, the class has 36 pupils: 18 ÷ 2 × 4 = 36.
+if 11 is one quarter of the class, how many pupils does the class have? 11 ÷ 1 × 4 = 44.
+if 12 is two quarters of the class, the class does not have 28 pupils: it has 24.
+если 30 — это три четверти класса, в классе 40 учеников: 30 ÷ 3 × 4 = 40.
+if 6 is two quarters of the class, the class has 12 pupils: 6 ÷ 2 × 4 = 12.
+if 21 is three quarters of the class, how many pupils does the class have? 21 ÷ 3 × 4 = 28.
+if 11 is one quarter of the class, the class does not have 48 pupils: it has 44.
+если 12 — это две четверти класса, в классе 24 ученика: 12 ÷ 2 × 4 = 24.
+if 8 is one quarter of the class, the class has 32 pupils: 8 ÷ 1 × 4 = 32.
+if 6 is two quarters of the class, how many pupils does the class have? 6 ÷ 2 × 4 = 12.
+if 21 is three quarters of the class, the class does not have 32 pupils: it has 28.
+если 18 — это две четверти класса, в классе 36 учеников: 18 ÷ 2 × 4 = 36.
+if 12 is three quarters of the class, the class has 16 pupils: 12 ÷ 3 × 4 = 16.
+
+if there were originally 23 cars in the lot and 6 drove away, how many cars remain? 23 − 6 = 17.
+there were 16 people on the bus and 8 got off; the number of people on the bus now is not 9: it is 8.
+на стоянке изначально было 41 машина, 3 уехали; осталось 38 машин: 41 − 3 = 38.
+the set has 26 pieces and 19 are in the box; 7 pieces are missing: 26 − 19 = 7.
+if there were originally 19 cars in the lot and 9 drove away, how many cars remain? 19 − 9 = 10.
+the set has 44 pieces and 40 are in the box; 5 pieces are not missing: 4 are missing.
+в автобусе было 29 человек, 8 вышли; теперь в автобусе 21 человек: 29 − 8 = 21.
+the set has 22 pieces and 21 are in the box; 1 piece is missing: 22 − 21 = 1.
+if there were 47 people on the bus and 5 got off, how many people are on the bus now? 47 − 5 = 42.
+there were originally 32 cars in the lot and 9 drove away; 24 cars do not remain: 23 remain.
+в наборе 17 деталей, в коробке 13 деталей; не хватает 4 детали: 17 − 13 = 4.
+there were originally 10 cars in the lot and 6 drove away; 4 cars remain: 10 − 6 = 4.
+the set has 35 pieces and 34 are in the box. how many pieces are missing? 35 − 34 = 1.
+there were 20 people on the bus and 5 got off; the number of people on the bus now is not 16: it is 15.
+в наборе 13 деталей, в коробке 6 деталей; не хватает 7 деталей: 13 − 6 = 7.
+there were 38 people on the bus and 2 got off; 36 people are on the bus now: 38 − 2 = 36.
+
+vera has 3 books and grace has 7 books. what's the total number of books? 3 + 7 = 10.
+ida has 6 coins and omar has 4 coins; the total number of coins is 10: 6 + 4 = 10.
+Маша имеет 9 ручек, Лена имеет 10 ручек; всего у них 19 ручек: 9 + 10 = 19.
+carla has 12 apples and dan has 7 apples; the total number of apples is not 20: it is 19.
+dan has 3 pens and grace has 2 pens. what's the total number of pens? 3 + 2 = 5.
+ann has 6 apples and omar has 8 apples; the total number of apples is 14: 6 + 8 = 14.
+Вера имеет 9 карт, Аня имеет 5 карт; всего у них 14 карт: 9 + 5 = 14.
+grace has 12 books and dan has 2 books; the total number of books is not 15: it is 14.
+dan has 3 coins and grace has 8 coins. what's the total number of coins? 3 + 8 = 11.
+elena has 6 books and omar has 3 books; the total number of books is 9: 6 + 3 = 9.
+Маша имеет 9 монет, Лена имеет 9 монет; всего у них 18 монет: 9 + 9 = 18.
+peter has 12 pens and dan has 6 pens; the total number of pens is not 19: it is 18.
+hugo has 3 apples and grace has 3 apples. what's the total number of apples? 3 + 3 = 6.
+elena has 6 cards and omar has 9 cards; the total number of cards is 15: 6 + 9 = 15.
+Вера имеет 9 яблок, Аня имеет 4 яблока; всего у них 13 яблок: 9 + 4 = 13.
+carla has 12 cards and dan has 10 cards; the total number of cards is not 23: it is 22.
+
+the temperature was −6 degrees and rose by 13 degrees. what is the temperature in degrees now? −6 + 13 = 7.
+the temperature was 6 degrees and fell by 10 degrees; the temperature in degrees is now −4: 6 − 10 = −4.
+температура была 3 градуса и поднялась на 7 градусов; теперь температура — 10 градусов: 3 + 7 = 10.
+the temperature was 0 degrees and fell by 4 degrees; the temperature in degrees is not 0: it is −4.
+the temperature was −2 degrees and rose by 9 degrees. what is the temperature in degrees now? −2 + 9 = 7.
+the temperature was −5 degrees and fell by 6 degrees; the temperature in degrees is now −11: −5 − 6 = −11.
+температура была 7 градусов и поднялась на 3 градуса; теперь температура — 10 градусов: 7 + 3 = 10.
+the temperature was 4 degrees and fell by 12 degrees; the temperature in degrees is not 4: it is −8.
+the temperature was 1 degree and rose by 9 degrees. what is the temperature in degrees now? 1 + 9 = 10.
+the temperature was −1 degree and fell by 2 degrees; the temperature in degrees is now −3: −1 − 2 = −3.
+температура была −4 градуса и поднялась на 11 градусов; теперь температура — 7 градусов: −4 + 11 = 7.
+the temperature was 8 degrees and fell by 8 degrees; the temperature in degrees is not 8: it is 0.
+the temperature was 5 degrees and rose by 5 degrees. what is the temperature in degrees now? 5 + 5 = 10.
+the temperature was 2 degrees and fell by 2 degrees; the temperature in degrees is now 0: 2 − 2 = 0.
+температура была 0 градусов и поднялась на 7 градусов; теперь температура — 7 градусов: 0 + 7 = 7.
+the temperature was −3 degrees and fell by 4 degrees; the temperature in degrees is not −3: it is −7.
+
+the class has 60 pupils and 48 of them are girls. what percentage of the class are girls? 60 pupils and 48 girls: 48 ÷ 60 × 100 = 80 %.
+the class has 25 pupils and 13 of them are girls; the percentage of girls is 52 %: 13 ÷ 25 × 100 = 52.
+в классе 80 учеников, из них 40 — девочек; доля девочек — 50 %: 40 ÷ 80 × 100 = 50.
+the class has 40 pupils and 14 of them are girls; the percentage of girls is not 40 %: it is 35 %.
+the class has 25 pupils and 20 of them are girls. what percentage of the class are girls? 25 pupils and 20 girls: 20 ÷ 25 × 100 = 80 %.
+the class has 80 pupils and 68 of them are girls; the percentage of girls is 85 %: 68 ÷ 80 × 100 = 85.
+в классе 40 учеников, из них 28 — девочек; доля девочек — 70 %: 28 ÷ 40 × 100 = 70.
+the class has 100 pupils and 11 of them are girls; the percentage of girls is not 16 %: it is 11 %.
+the class has 50 pupils and 8 of them are girls. what percentage of the class are girls? 50 pupils and 8 girls: 8 ÷ 50 × 100 = 16 %.
+the class has 40 pupils and 4 of them are girls; the percentage of girls is 10 %: 4 ÷ 40 × 100 = 10.
+в классе 100 учеников, из них 18 — девочек; доля девочек — 18 %: 18 ÷ 100 × 100 = 18.
+the class has 50 pupils and 15 of them are girls; the percentage of girls is not 35 %: it is 30 %.
+the class has 20 pupils and 12 of them are girls. what percentage of the class are girls? 20 pupils and 12 girls: 12 ÷ 20 × 100 = 60 %.
+the class has 60 pupils and 27 of them are girls; the percentage of girls is 45 %: 27 ÷ 60 × 100 = 45.
+в классе 50 учеников, из них 22 — девочки; доля девочек — 44 %: 22 ÷ 50 × 100 = 44.
+the class has 20 pupils and 19 of them are girls; the percentage of girls is not 100 %: it is 95 %.
+
+the parcel weighs 112 ounces and a pound is 16 ounces. what is the weight in pounds? 112 ÷ 16 = 7.
+the parcel weighs 64 ounces and a pound is 16 ounces; the weight in pounds is 4: 64 ÷ 16 = 4.
+посылка весит 16 унций, а в фунте 16 унций; вес в фунтах — 1 фунт: 16 ÷ 16 = 1.
+the parcel weighs 112 ounces and a pound is 16 ounces; the weight in pounds is not 8: it is 7.
+the parcel weighs 32 ounces and a pound is 16 ounces. what is the weight in pounds? 32 ÷ 16 = 2.
+the parcel weighs 128 ounces and a pound is 16 ounces; the weight in pounds is 8: 128 ÷ 16 = 8.
+посылка весит 80 унций, а в фунте 16 унций; вес в фунтах — 5 фунтов: 80 ÷ 16 = 5.
+the parcel weighs 32 ounces and a pound is 16 ounces; the weight in pounds is not 3: it is 2.
+the parcel weighs 128 ounces and a pound is 16 ounces. what is the weight in pounds? 128 ÷ 16 = 8.
+the parcel weighs 48 ounces and a pound is 16 ounces; the weight in pounds is 3: 48 ÷ 16 = 3.
+посылка весит 144 унции, а в фунте 16 унций; вес в фунтах — 9 фунтов: 144 ÷ 16 = 9.
+the parcel weighs 96 ounces and a pound is 16 ounces; the weight in pounds is not 7: it is 6.
+the parcel weighs 48 ounces and a pound is 16 ounces. what is the weight in pounds? 48 ÷ 16 = 3.
+the parcel weighs 144 ounces and a pound is 16 ounces; the weight in pounds is 9: 144 ÷ 16 = 9.
+посылка весит 64 унции, а в фунте 16 унций; вес в фунтах — 4 фунта: 64 ÷ 16 = 4.
+the parcel weighs 16 ounces and a pound is 16 ounces; the weight in pounds is not 2: it is 1.
+
+the tank is 3 feet wide and 3 feet long and holds 18 cubic feet of water. what is the tank's water depth? 3 by 3 holding 18: 18 ÷ (3 × 3) = 2 feet.
+the tank is 5 feet wide and 6 feet long and holds 150 cubic feet of water; the tank's water depth is 5 feet: 150 ÷ (5 × 6) = 5.
+бак шириной 2 фута и длиной 3 фута вмещает 12 кубических футов воды; глубина воды в баке — 2 фута: 12 ÷ (2 × 3) = 2.
+the tank is 4 feet wide and 6 feet long and holds 120 cubic feet of water; the tank's water depth is not 6 feet: it is 5 feet.
+the tank is 2 feet wide and 3 feet long and holds 36 cubic feet of water. what is the tank's water depth? 2 by 3 holding 36: 36 ÷ (2 × 3) = 6 feet.
+the tank is 4 feet wide and 6 feet long and holds 72 cubic feet of water; the tank's water depth is 3 feet: 72 ÷ (4 × 6) = 3.
+бак шириной 6 футов и длиной 3 фута вмещает 108 кубических футов воды; глубина воды в баке — 6 футов: 108 ÷ (6 × 3) = 6.
+the tank is 3 feet wide and 6 feet long and holds 54 cubic feet of water; the tank's water depth is not 4 feet: it is 3 feet.
+the tank is 5 feet wide and 3 feet long and holds 90 cubic feet of water. what is the tank's water depth? 5 by 3 holding 90: 90 ÷ (5 × 3) = 6 feet.
+the tank is 3 feet wide and 6 feet long and holds 18 cubic feet of water; the tank's water depth is 1 foot: 18 ÷ (3 × 6) = 1.
+бак шириной 5 футов и длиной 3 фута вмещает 60 кубических футов воды; глубина воды в баке — 4 фута: 60 ÷ (5 × 3) = 4.
+the tank is 2 feet wide and 6 feet long and holds 12 cubic feet of water; the tank's water depth is not 2 feet: it is 1 foot.
+the tank is 4 feet wide and 3 feet long and holds 48 cubic feet of water. what is the tank's water depth? 4 by 3 holding 48: 48 ÷ (4 × 3) = 4 feet.
+the tank is 6 feet wide and 6 feet long and holds 36 cubic feet of water; the tank's water depth is 1 foot: 36 ÷ (6 × 6) = 1.
+бак шириной 4 фута и длиной 3 фута вмещает 24 кубических футов воды; глубина воды в баке — 2 фута: 24 ÷ (4 × 3) = 2.
+the tank is 6 feet wide and 6 feet long and holds 180 cubic feet of water; the tank's water depth is not 6 feet: it is 5 feet.
+
+a bag holds 6 red marbles and 4 blue marbles. what is the probability of drawing a red marble, expressed as a fraction? 6 red and 4 blue make 10: 6/10.
+a bag holds 3 red marbles and 5 blue marbles; the probability of drawing a red marble, expressed as a fraction, is 3/8: 3 red out of 8.
+в мешке 6 шаров красных и 6 шаров синих; вероятность вынуть красный шар, выраженная дробью, — 6/12: 6 красных из 12.
+a bag holds 3 red marbles and 7 blue marbles; the probability of drawing a red marble, expressed as a fraction, is not 4/10: it is 3/10.
+a bag holds 4 red marbles and 5 blue marbles. what is the probability of drawing a red marble, expressed as a fraction? 4 red and 5 blue make 9: 4/9.
+a bag holds 1 red marble and 6 blue marbles; the probability of drawing a red marble, expressed as a fraction, is 1/7: 1 red out of 7.
+в мешке 4 шара красных и 7 шаров синих; вероятность вынуть красный шар, выраженная дробью, — 4/11: 4 красных из 11.
+a bag holds 1 red marble and 1 blue marble; the probability of drawing a red marble, expressed as a fraction, is not 0/2: it is 1/2.
+a bag holds 4 red marbles and 2 blue marbles. what is the probability of drawing a red marble, expressed as a fraction? 4 red and 2 blue make 6: 4/6.
+a bag holds 5 red marbles and 7 blue marbles; the probability of drawing a red marble, expressed as a fraction, is 5/12: 5 red out of 12.
+в мешке 2 шара красных и 1 шар синих; вероятность вынуть красный шар, выраженная дробью, — 2/3: 2 красных из 3.
+a bag holds 5 red marbles and 2 blue marbles; the probability of drawing a red marble, expressed as a fraction, is not 6/7: it is 5/7.
+a bag holds 2 red marbles and 3 blue marbles. what is the probability of drawing a red marble, expressed as a fraction? 2 red and 3 blue make 5: 2/5.
+a bag holds 5 red marbles and 4 blue marbles; the probability of drawing a red marble, expressed as a fraction, is 5/9: 5 red out of 9.
+в мешке 6 шаров красных и 2 шара синих; вероятность вынуть красный шар, выраженная дробью, — 6/8: 6 красных из 8.
+a bag holds 3 red marbles and 3 blue marbles; the probability of drawing a red marble, expressed as a fraction, is not 4/6: it is 3/6.
+
+if 27 is three quarters of the class, how many pupils does the class have? 27 ÷ 3 × 4 = 36.
+if 18 is three quarters of the class, the class has 24 pupils: 18 ÷ 3 × 4 = 24.
+если 9 — это три четверти класса, в классе 12 учеников: 9 ÷ 3 × 4 = 12.
+if 27 is three quarters of the class, the class does not have 40 pupils: it has 36.
+if 4 is one quarter of the class, how many pupils does the class have? 4 ÷ 1 × 4 = 16.
+if 10 is one quarter of the class, the class has 40 pupils: 10 ÷ 1 × 4 = 40.
+если 7 — это четверть класса, в классе 28 учеников: 7 ÷ 1 × 4 = 28.
+if 4 is one quarter of the class, the class does not have 20 pupils: it has 16.
+if 10 is one quarter of the class, how many pupils does the class have? 10 ÷ 1 × 4 = 40.
+if 10 is two quarters of the class, the class has 20 pupils: 10 ÷ 2 × 4 = 20.
+если 22 — это две четверти класса, в классе 44 ученика: 22 ÷ 2 × 4 = 44.
+if 16 is two quarters of the class, the class does not have 36 pupils: it has 32.
+if 10 is two quarters of the class, how many pupils does the class have? 10 ÷ 2 × 4 = 20.
+if 22 is two quarters of the class, the class has 44 pupils: 22 ÷ 2 × 4 = 44.
+если 18 — это три четверти класса, в классе 24 ученика: 18 ÷ 3 × 4 = 24.
+if 9 is three quarters of the class, the class does not have 16 pupils: it has 12.
+
+if there were 11 people on the bus and 7 got off, how many people are on the bus now? 11 − 7 = 4.
+there were 42 people on the bus and 4 got off; 38 people are on the bus now: 42 − 4 = 38.
+в автобусе было 33 человека, 1 вышли; теперь в автобусе 32 человека: 33 − 1 = 32.
+there were 24 people on the bus and 7 got off; the number of people on the bus now is not 18: it is 17.
+if there were originally 23 cars in the lot and 2 drove away, how many cars remain? 23 − 2 = 21.
+there were originally 14 cars in the lot and 8 drove away; 6 cars remain: 14 − 8 = 6.
+на стоянке изначально было 45 машин, 5 уехали; осталось 40 машин: 45 − 5 = 40.
+there were originally 36 cars in the lot and 2 drove away; 35 cars do not remain: 34 remain.
+if there were originally 27 cars in the lot and 8 drove away, how many cars remain? 27 − 8 = 19.
+the set has 26 pieces and 23 are in the box; 3 pieces are missing: 26 − 23 = 3.
+в наборе 17 деталей, в коробке 8 деталей; не хватает 9 деталей: 17 − 8 = 9.
+the set has 48 pieces and 42 are in the box; 7 pieces are not missing: 6 are missing.
+the set has 39 pieces and 36 are in the box. how many pieces are missing? 39 − 36 = 3.
+the set has 30 pieces and 21 are in the box; 9 pieces are missing: 30 − 21 = 9.
+в автобусе было 29 человек, 4 вышли; теперь в автобусе 25 человек: 29 − 4 = 25.
+there were 20 people on the bus and 1 got off; the number of people on the bus now is not 20: it is 19.
+
+hugo has 5 apples and elena has 9 apples. what's the total number of apples? 5 + 9 = 14.
+ida has 8 coins and hugo has 10 coins; the total number of coins is 18: 8 + 10 = 18.
+Вера имеет 11 карт, Петя имеет 2 карты; всего у них 13 карт: 11 + 2 = 13.
+peter has 2 pens and ben has 3 pens; the total number of pens is not 6: it is 5.
+vera has 5 books and elena has 4 books. what's the total number of books? 5 + 4 = 9.
+ann has 8 apples and hugo has 5 apples; the total number of apples is 13: 8 + 5 = 13.
+Маша имеет 11 монет, Дима имеет 6 монет; всего у них 17 монет: 11 + 6 = 17.
+carla has 2 cards and ben has 7 cards; the total number of cards is not 10: it is 9.
+dan has 5 pens and elena has 8 pens. what's the total number of pens? 5 + 8 = 13.
+elena has 8 books and hugo has 9 books; the total number of books is 17: 8 + 9 = 17.
+Вера имеет 11 яблок, Петя имеет 10 яблок; всего у них 21 яблоко: 11 + 10 = 21.
+grace has 2 coins and ben has 2 coins; the total number of coins is not 5: it is 4.
+dan has 5 coins and elena has 5 coins. what's the total number of coins? 5 + 5 = 10.
+elena has 8 cards and hugo has 6 cards; the total number of cards is 14: 8 + 6 = 14.
+Маша имеет 11 ручек, Дима имеет 7 ручек; всего у них 18 ручек: 11 + 7 = 18.
+grace has 2 books and ben has 8 books; the total number of books is not 11: it is 10.
+
+the temperature was 7 degrees and rose by 13 degrees. what is the temperature in degrees now? 7 + 13 = 20.
+the temperature was 8 degrees and fell by 6 degrees; the temperature in degrees is now 2: 8 − 6 = 2.
+температура была −6 градусов и поднялась на 11 градусов; теперь температура — 5 градусов: −6 + 11 = 5.
+the temperature was −5 degrees and fell by 4 degrees; the temperature in degrees is not −5: it is −9.
+the temperature was −4 degrees and rose by 9 degrees. what is the temperature in degrees now? −4 + 9 = 5.
+the temperature was −3 degrees and fell by 2 degrees; the temperature in degrees is now −5: −3 − 2 = −5.
+температура была −2 градуса и поднялась на 7 градусов; теперь температура — 5 градусов: −2 + 7 = 5.
+the temperature was −1 degree and fell by 12 degrees; the temperature in degrees is not −1: it is −13.
+the temperature was 0 degrees and rose by 5 degrees. what is the temperature in degrees now? 0 + 5 = 5.
+the temperature was 1 degree and fell by 10 degrees; the temperature in degrees is now −9: 1 − 10 = −9.
+температура была 2 градуса и поднялась на 3 градуса; теперь температура — 5 градусов: 2 + 3 = 5.
+the temperature was 3 degrees and fell by 8 degrees; the temperature in degrees is not 3: it is −5.
+the temperature was 3 degrees and rose by 5 degrees. what is the temperature in degrees now? 3 + 5 = 8.
+the temperature was 4 degrees and fell by 10 degrees; the temperature in degrees is now −6: 4 − 10 = −6.
+температура была 5 градусов и поднялась на 3 градуса; теперь температура — 8 градусов: 5 + 3 = 8.
+the temperature was 6 degrees and fell by 8 degrees; the temperature in degrees is not 6: it is −2.
+
+the class has 20 pupils and 14 of them are girls. what percentage of the class are girls? 20 pupils and 14 girls: 14 ÷ 20 × 100 = 70 %.
+the class has 25 pupils and 15 of them are girls; the percentage of girls is 60 %: 15 ÷ 25 × 100 = 60.
+в классе 40 учеников, из них 32 — девочки; доля девочек — 80 %: 32 ÷ 40 × 100 = 80.
+the class has 50 pupils and 17 of them are girls; the percentage of girls is not 39 %: it is 34 %.
+the class has 60 pupils and 54 of them are girls. what percentage of the class are girls? 60 pupils and 54 girls: 54 ÷ 60 × 100 = 90 %.
+the class has 80 pupils and 76 of them are girls; the percentage of girls is 95 %: 76 ÷ 80 × 100 = 95.
+в классе 100 учеников, из них 20 — девочек; доля девочек — 20 %: 20 ÷ 100 × 100 = 20.
+the class has 20 pupils and 2 of them are girls; the percentage of girls is not 15 %: it is 10 %.
+the class has 25 pupils and 22 of them are girls. what percentage of the class are girls? 25 pupils and 22 girls: 22 ÷ 25 × 100 = 88 %.
+the class has 40 pupils and 8 of them are girls; the percentage of girls is 20 %: 8 ÷ 40 × 100 = 20.
+в классе 50 учеников, из них 24 — девочки; доля девочек — 48 %: 24 ÷ 50 × 100 = 48.
+the class has 60 pupils and 18 of them are girls; the percentage of girls is not 35 %: it is 30 %.
+the class has 50 pupils and 10 of them are girls. what percentage of the class are girls? 50 pupils and 10 girls: 10 ÷ 50 × 100 = 20 %.
+the class has 60 pupils and 33 of them are girls; the percentage of girls is 55 %: 33 ÷ 60 × 100 = 55.
+в классе 80 учеников, из них 48 — девочек; доля девочек — 60 %: 48 ÷ 80 × 100 = 60.
+the class has 100 pupils and 13 of them are girls; the percentage of girls is not 18 %: it is 13 %.
+
+the parcel weighs 80 ounces and a pound is 16 ounces. what is the weight in pounds? 80 ÷ 16 = 5.
+the parcel weighs 96 ounces and a pound is 16 ounces; the weight in pounds is 6: 96 ÷ 16 = 6.
+посылка весит 112 унций, а в фунте 16 унций; вес в фунтах — 7 фунтов: 112 ÷ 16 = 7.
+the parcel weighs 128 ounces and a pound is 16 ounces; the weight in pounds is not 9: it is 8.
+the parcel weighs 144 ounces and a pound is 16 ounces. what is the weight in pounds? 144 ÷ 16 = 9.
+the parcel weighs 16 ounces and a pound is 16 ounces; the weight in pounds is 1: 16 ÷ 16 = 1.
+посылка весит 32 унции, а в фунте 16 унций; вес в фунтах — 2 фунта: 32 ÷ 16 = 2.
+the parcel weighs 48 ounces and a pound is 16 ounces; the weight in pounds is not 4: it is 3.
+the parcel weighs 64 ounces and a pound is 16 ounces. what is the weight in pounds? 64 ÷ 16 = 4.
+the parcel weighs 80 ounces and a pound is 16 ounces; the weight in pounds is 5: 80 ÷ 16 = 5.
+посылка весит 96 унций, а в фунте 16 унций; вес в фунтах — 6 фунтов: 96 ÷ 16 = 6.
+the parcel weighs 112 ounces and a pound is 16 ounces; the weight in pounds is not 8: it is 7.
+the parcel weighs 16 ounces and a pound is 16 ounces. what is the weight in pounds? 16 ÷ 16 = 1.
+the parcel weighs 32 ounces and a pound is 16 ounces; the weight in pounds is 2: 32 ÷ 16 = 2.
+посылка весит 48 унций, а в фунте 16 унций; вес в фунтах — 3 фунта: 48 ÷ 16 = 3.
+the parcel weighs 64 ounces and a pound is 16 ounces; the weight in pounds is not 5: it is 4.
+
+the tank is 4 feet wide and 2 feet long and holds 16 cubic feet of water. what is the tank's water depth? 4 by 2 holding 16: 16 ÷ (4 × 2) = 2 feet.
+the tank is 5 feet wide and 5 feet long and holds 75 cubic feet of water; the tank's water depth is 3 feet: 75 ÷ (5 × 5) = 3.
+бак шириной 6 футов и длиной 2 фута вмещает 48 кубических футов воды; глубина воды в баке — 4 фута: 48 ÷ (6 × 2) = 4.
+the tank is 2 feet wide and 5 feet long and holds 50 cubic feet of water; the tank's water depth is not 6 feet: it is 5 feet.
+the tank is 3 feet wide and 2 feet long and holds 36 cubic feet of water. what is the tank's water depth? 3 by 2 holding 36: 36 ÷ (3 × 2) = 6 feet.
+the tank is 4 feet wide and 5 feet long and holds 20 cubic feet of water; the tank's water depth is 1 foot: 20 ÷ (4 × 5) = 1.
+бак шириной 5 футов и длиной 2 фута вмещает 20 кубических футов воды; глубина воды в баке — 2 фута: 20 ÷ (5 × 2) = 2.
+the tank is 6 feet wide and 5 feet long and holds 90 cubic feet of water; the tank's water depth is not 4 feet: it is 3 feet.
+the tank is 2 feet wide and 2 feet long and holds 16 cubic feet of water. what is the tank's water depth? 2 by 2 holding 16: 16 ÷ (2 × 2) = 4 feet.
+the tank is 3 feet wide and 5 feet long and holds 75 cubic feet of water; the tank's water depth is 5 feet: 75 ÷ (3 × 5) = 5.
+бак шириной 4 фута и длиной 2 фута вмещает 48 кубических футов воды; глубина воды в баке — 6 футов: 48 ÷ (4 × 2) = 6.
+the tank is 5 feet wide and 5 feet long and holds 25 cubic feet of water; the tank's water depth is not 2 feet: it is 1 foot.
+the tank is 5 feet wide and 2 feet long and holds 40 cubic feet of water. what is the tank's water depth? 5 by 2 holding 40: 40 ÷ (5 × 2) = 4 feet.
+the tank is 6 feet wide and 5 feet long and holds 150 cubic feet of water; the tank's water depth is 5 feet: 150 ÷ (6 × 5) = 5.
+бак шириной 2 фута и длиной 2 фута вмещает 24 кубических футов воды; глубина воды в баке — 6 футов: 24 ÷ (2 × 2) = 6.
+the tank is 3 feet wide and 5 feet long and holds 15 cubic feet of water; the tank's water depth is not 2 feet: it is 1 foot.
+
+a bag holds 2 red marbles and 4 blue marbles. what is the probability of drawing a red marble, expressed as a fraction? 2 red and 4 blue make 6: 2/6.
+a bag holds 3 red marbles and 6 blue marbles; the probability of drawing a red marble, expressed as a fraction, is 3/9: 3 red out of 9.
+в мешке 4 шара красных и 1 шар синих; вероятность вынуть красный шар, выраженная дробью, — 4/5: 4 красных из 5.
+a bag holds 5 red marbles and 3 blue marbles; the probability of drawing a red marble, expressed as a fraction, is not 6/8: it is 5/8.
+a bag holds 6 red marbles and 5 blue marbles. what is the probability of drawing a red marble, expressed as a fraction? 6 red and 5 blue make 11: 6/11.
+a bag holds 1 red marble and 7 blue marbles; the probability of drawing a red marble, expressed as a fraction, is 1/8: 1 red out of 8.
+в мешке 2 шара красных и 2 шара синих; вероятность вынуть красный шар, выраженная дробью, — 2/4: 2 красных из 4.
+a bag holds 3 red marbles and 4 blue marbles; the probability of drawing a red marble, expressed as a fraction, is not 4/7: it is 3/7.
+a bag holds 4 red marbles and 6 blue marbles. what is the probability of drawing a red marble, expressed as a fraction? 4 red and 6 blue make 10: 4/10.
+a bag holds 5 red marbles and 1 blue marble; the probability of drawing a red marble, expressed as a fraction, is 5/6: 5 red out of 6.
+в мешке 6 шаров красных и 3 шара синих; вероятность вынуть красный шар, выраженная дробью, — 6/9: 6 красных из 9.
+a bag holds 1 red marble and 5 blue marbles; the probability of drawing a red marble, expressed as a fraction, is not 2/6: it is 1/6.
+a bag holds 4 red marbles and 3 blue marbles. what is the probability of drawing a red marble, expressed as a fraction? 4 red and 3 blue make 7: 4/7.
+a bag holds 5 red marbles and 5 blue marbles; the probability of drawing a red marble, expressed as a fraction, is 5/10: 5 red out of 10.
+в мешке 6 шаров красных и 7 шаров синих; вероятность вынуть красный шар, выраженная дробью, — 6/13: 6 красных из 13.
+a bag holds 1 red marble and 2 blue marbles; the probability of drawing a red marble, expressed as a fraction, is not 2/3: it is 1/3.
+
+if 14 is two quarters of the class, how many pupils does the class have? 14 ÷ 2 × 4 = 28.
+if 24 is three quarters of the class, the class has 32 pupils: 24 ÷ 3 × 4 = 32.
+если 9 — это четверть класса, в классе 36 учеников: 9 ÷ 1 × 4 = 36.
+if 20 is two quarters of the class, the class does not have 44 pupils: it has 40.
+if 33 is three quarters of the class, how many pupils does the class have? 33 ÷ 3 × 4 = 44.
+if 3 is one quarter of the class, the class has 12 pupils: 3 ÷ 1 × 4 = 12.
+если 8 — это две четверти класса, в классе 16 учеников: 8 ÷ 2 × 4 = 16.
+if 15 is three quarters of the class, the class does not have 24 pupils: it has 20.
+if 6 is one quarter of the class, how many pupils does the class have? 6 ÷ 1 × 4 = 24.
+if 14 is two quarters of the class, the class has 28 pupils: 14 ÷ 2 × 4 = 28.
+если 24 — это три четверти класса, в классе 32 ученика: 24 ÷ 3 × 4 = 32.
+if 9 is one quarter of the class, the class does not have 40 pupils: it has 36.
+if 3 is one quarter of the class, how many pupils does the class have? 3 ÷ 1 × 4 = 12.
+if 8 is two quarters of the class, the class has 16 pupils: 8 ÷ 2 × 4 = 16.
+если 15 — это три четверти класса, в классе 20 учеников: 15 ÷ 3 × 4 = 20.
+if 6 is one quarter of the class, the class does not have 28 pupils: it has 24.
+
+the set has 43 pieces and 38 are in the box. how many pieces are missing? 43 − 38 = 5.
+there were 46 people on the bus and 6 got off; 40 people are on the bus now: 46 − 6 = 40.
+на стоянке изначально было 49 машин, 7 уехали; осталось 42 машины: 49 − 7 = 42.
+the set has 12 pieces and 4 are in the box; 9 pieces are not missing: 8 are missing.
+if there were 15 people on the bus and 9 got off, how many people are on the bus now? 15 − 9 = 6.
+there were originally 18 cars in the lot and 1 drove away; 17 cars remain: 18 − 1 = 17.
+в наборе 21 деталь, в коробке 19 деталей; не хватает 2 детали: 21 − 19 = 2.
+there were 24 people on the bus and 3 got off; the number of people on the bus now is not 22: it is 21.
+if there were originally 27 cars in the lot and 4 drove away, how many cars remain? 27 − 4 = 23.
+the set has 30 pieces and 25 are in the box; 5 pieces are missing: 30 − 25 = 5.
+в автобусе было 33 человека, 6 вышли; теперь в автобусе 27 человек: 33 − 6 = 27.
+there were originally 36 cars in the lot and 7 drove away; 30 cars do not remain: 29 remain.
+if there were originally 31 cars in the lot and 1 drove away, how many cars remain? 31 − 1 = 30.
+the set has 34 pieces and 32 are in the box; 2 pieces are missing: 34 − 32 = 2.
+в автобусе было 37 человек, 3 вышли; теперь в автобусе 34 человека: 37 − 3 = 34.
+there were originally 40 cars in the lot and 4 drove away; 37 cars do not remain: 36 remain.
+
+elena has 10 books and felix has 6 books; the total number of books is 16: 10 + 6 = 16.
+hugo has 7 cards and carla has 9 cards. what's the total number of cards? 7 + 9 = 16.
+grace has 4 books and vera has 5 books; the total number of books is not 10: it is 9.
+Вера имеет 13 карт, Лена имеет 8 карт; всего у них 21 карта: 13 + 8 = 21.
+ann has 10 apples and felix has 2 apples; the total number of apples is 12: 10 + 2 = 12.
+dan has 7 pens and carla has 5 pens. what's the total number of pens? 7 + 5 = 12.
+grace has 4 coins and vera has 8 coins; the total number of coins is not 13: it is 12.
+Маша имеет 13 ручек, Аня имеет 4 ручки; всего у них 17 ручек: 13 + 4 = 17.
+ida has 10 coins and felix has 7 coins; the total number of coins is 17: 10 + 7 = 17.
+vera has 7 books and carla has 10 books. what's the total number of books? 7 + 10 = 17.
+carla has 4 cards and vera has 4 cards; the total number of cards is not 9: it is 8.
+Вера имеет 13 яблок, Лена имеет 7 яблок; всего у них 20 яблок: 13 + 7 = 20.
+elena has 10 cards and felix has 3 cards; the total number of cards is 13: 10 + 3 = 13.
+hugo has 7 apples and carla has 6 apples. what's the total number of apples? 7 + 6 = 13.
+peter has 4 pens and vera has 9 pens; the total number of pens is not 14: it is 13.
+Маша имеет 13 монет, Аня имеет 3 монеты; всего у них 16 монет: 13 + 3 = 16.
+
+the temperature was 3 degrees and fell by 6 degrees; the temperature in degrees is now −3: 3 − 6 = −3.
+the temperature was 6 degrees and rose by 9 degrees. what is the temperature in degrees now? 6 + 9 = 15.
+the temperature was 8 degrees and fell by 4 degrees; the temperature in degrees is not 8: it is 4.
+температура была −4 градуса и поднялась на 7 градусов; теперь температура — 3 градуса: −4 + 7 = 3.
+the temperature was −1 degree and fell by 10 degrees; the temperature in degrees is now −11: −1 − 10 = −11.
+the temperature was 2 degrees and rose by 13 degrees. what is the temperature in degrees now? 2 + 13 = 15.
+the temperature was 5 degrees and fell by 4 degrees; the temperature in degrees is not 5: it is 1.
+температура была 7 градусов и поднялась на 11 градусов; теперь температура — 18 градусов: 7 + 11 = 18.
+the temperature was −5 degrees and fell by 2 degrees; the temperature in degrees is now −7: −5 − 2 = −7.
+the temperature was −2 degrees and rose by 5 degrees. what is the temperature in degrees now? −2 + 5 = 3.
+the temperature was 1 degree and fell by 8 degrees; the temperature in degrees is not 1: it is −7.
+температура была 4 градуса и поднялась на 11 градусов; теперь температура — 15 градусов: 4 + 11 = 15.
+the temperature was 6 degrees and fell by 6 degrees; the temperature in degrees is now 0: 6 − 6 = 0.
+the temperature was −6 degrees and rose by 9 degrees. what is the temperature in degrees now? −6 + 9 = 3.
+the temperature was −3 degrees and fell by 12 degrees; the temperature in degrees is not −3: it is −15.
+температура была 0 градусов и поднялась на 3 градуса; теперь температура — 3 градуса: 0 + 3 = 3.
+
+the class has 40 pupils and 12 of them are girls; the percentage of girls is 30 %: 12 ÷ 40 × 100 = 30.
+the class has 80 pupils and 36 of them are girls. what percentage of the class are girls? 80 pupils and 36 girls: 36 ÷ 80 × 100 = 45 %.
+the class has 100 pupils and 15 of them are girls; the percentage of girls is not 20 %: it is 15 %.
+в классе 40 учеников, из них 36 — девочек; доля девочек — 90 %: 36 ÷ 40 × 100 = 90.
+the class has 80 pupils and 8 of them are girls; the percentage of girls is 10 %: 8 ÷ 80 × 100 = 10.
+the class has 25 pupils and 24 of them are girls. what percentage of the class are girls? 25 pupils and 24 girls: 24 ÷ 25 × 100 = 96 %.
+the class has 60 pupils and 24 of them are girls; the percentage of girls is not 45 %: it is 40 %.
+в классе 80 учеников, из них 56 — девочек; доля девочек — 70 %: 56 ÷ 80 × 100 = 70.
+the class has 25 pupils and 17 of them are girls; the percentage of girls is 68 %: 17 ÷ 25 × 100 = 68.
+the class has 60 pupils and 3 of them are girls. what percentage of the class are girls? 60 pupils and 3 girls: 3 ÷ 60 × 100 = 5 %.
+the class has 20 pupils and 4 of them are girls; the percentage of girls is not 25 %: it is 20 %.
+в классе 50 учеников, из них 26 — девочек; доля девочек — 52 %: 26 ÷ 50 × 100 = 52.
+the class has 60 pupils and 39 of them are girls; the percentage of girls is 65 %: 39 ÷ 60 × 100 = 65.
+the class has 20 pupils and 16 of them are girls. what percentage of the class are girls? 20 pupils and 16 girls: 16 ÷ 20 × 100 = 80 %.
+the class has 50 pupils and 19 of them are girls; the percentage of girls is not 43 %: it is 38 %.
+в классе 100 учеников, из них 22 — девочки; доля девочек — 22 %: 22 ÷ 100 × 100 = 22.
+
+the parcel weighs 112 ounces and a pound is 16 ounces; the weight in pounds is 7: 112 ÷ 16 = 7.
+the parcel weighs 16 ounces and a pound is 16 ounces. what is the weight in pounds? 16 ÷ 16 = 1.
+the parcel weighs 96 ounces and a pound is 16 ounces; the weight in pounds is not 7: it is 6.
+посылка весит 144 унции, а в фунте 16 унций; вес в фунтах — 9 фунтов: 144 ÷ 16 = 9.
+the parcel weighs 48 ounces and a pound is 16 ounces; the weight in pounds is 3: 48 ÷ 16 = 3.
+the parcel weighs 96 ounces and a pound is 16 ounces. what is the weight in pounds? 96 ÷ 16 = 6.
+the parcel weighs 144 ounces and a pound is 16 ounces; the weight in pounds is not 10: it is 9.
+посылка весит 80 унций, а в фунте 16 унций; вес в фунтах — 5 фунтов: 80 ÷ 16 = 5.
+the parcel weighs 128 ounces and a pound is 16 ounces; the weight in pounds is 8: 128 ÷ 16 = 8.
+the parcel weighs 32 ounces and a pound is 16 ounces. what is the weight in pounds? 32 ÷ 16 = 2.
+the parcel weighs 80 ounces and a pound is 16 ounces; the weight in pounds is not 6: it is 5.
+посылка весит 128 унций, а в фунте 16 унций; вес в фунтах — 8 фунтов: 128 ÷ 16 = 8.
+the parcel weighs 64 ounces and a pound is 16 ounces; the weight in pounds is 4: 64 ÷ 16 = 4.
+the parcel weighs 112 ounces and a pound is 16 ounces. what is the weight in pounds? 112 ÷ 16 = 7.
+the parcel weighs 16 ounces and a pound is 16 ounces; the weight in pounds is not 2: it is 1.
+посылка весит 64 унции, а в фунте 16 унций; вес в фунтах — 4 фунта: 64 ÷ 16 = 4.
+
+the tank is 3 feet wide and 4 feet long and holds 36 cubic feet of water; the tank's water depth is 3 feet: 36 ÷ (3 × 4) = 3.
+the tank is 6 feet wide and 7 feet long and holds 252 cubic feet of water. what is the tank's water depth? 6 by 7 holding 252: 252 ÷ (6 × 7) = 6 feet.
+the tank is 3 feet wide and 4 feet long and holds 60 cubic feet of water; the tank's water depth is not 6 feet: it is 5 feet.
+бак шириной 6 футов и длиной 7 футов вмещает 84 кубических футов воды; глубина воды в баке — 2 фута: 84 ÷ (6 × 7) = 2.
+the tank is 4 feet wide and 4 feet long and holds 80 cubic feet of water; the tank's water depth is 5 feet: 80 ÷ (4 × 4) = 5.
+the tank is 2 feet wide and 7 feet long and holds 28 cubic feet of water. what is the tank's water depth? 2 by 7 holding 28: 28 ÷ (2 × 7) = 2 feet.
+the tank is 5 feet wide and 4 feet long and holds 100 cubic feet of water; the tank's water depth is not 6 feet: it is 5 feet.
+бак шириной 2 фута и длиной 7 футов вмещает 56 кубических футов воды; глубина воды в баке — 4 фута: 56 ÷ (2 × 7) = 4.
+the tank is 5 feet wide and 4 feet long and holds 20 cubic feet of water; the tank's water depth is 1 foot: 20 ÷ (5 × 4) = 1.
+the tank is 3 feet wide and 7 feet long and holds 84 cubic feet of water. what is the tank's water depth? 3 by 7 holding 84: 84 ÷ (3 × 7) = 4 feet.
+the tank is 6 feet wide and 4 feet long and holds 24 cubic feet of water; the tank's water depth is not 2 feet: it is 1 foot.
+бак шириной 4 фута и длиной 7 футов вмещает 112 кубических футов воды; глубина воды в баке — 4 фута: 112 ÷ (4 × 7) = 4.
+the tank is 6 feet wide and 4 feet long and holds 72 cubic feet of water; the tank's water depth is 3 feet: 72 ÷ (6 × 4) = 3.
+the tank is 4 feet wide and 7 feet long and holds 168 cubic feet of water. what is the tank's water depth? 4 by 7 holding 168: 168 ÷ (4 × 7) = 6 feet.
+the tank is 2 feet wide and 4 feet long and holds 24 cubic feet of water; the tank's water depth is not 4 feet: it is 3 feet.
+бак шириной 5 футов и длиной 7 футов вмещает 210 кубических футов воды; глубина воды в баке — 6 футов: 210 ÷ (5 × 7) = 6.
+
+a bag holds 5 red marbles and 2 blue marbles; the probability of drawing a red marble, expressed as a fraction, is 5/7: 5 red out of 7.
+a bag holds 2 red marbles and 1 blue marble. what is the probability of drawing a red marble, expressed as a fraction? 2 red and 1 blue make 3: 2/3.
+a bag holds 1 red marble and 3 blue marbles; the probability of drawing a red marble, expressed as a fraction, is not 2/4: it is 1/4.
+в мешке 4 шара красных и 2 шара синих; вероятность вынуть красный шар, выраженная дробью, — 4/6: 4 красных из 6.
+a bag holds 1 red marble and 1 blue marble; the probability of drawing a red marble, expressed as a fraction, is 1/2: 1 red out of 2.
+a bag holds 4 red marbles and 7 blue marbles. what is the probability of drawing a red marble, expressed as a fraction? 4 red and 7 blue make 11: 4/11.
+a bag holds 1 red marble and 6 blue marbles; the probability of drawing a red marble, expressed as a fraction, is not 2/7: it is 1/7.
+в мешке 6 шаров красных и 1 шар синих; вероятность вынуть красный шар, выраженная дробью, — 6/7: 6 красных из 7.
+a bag holds 3 red marbles and 7 blue marbles; the probability of drawing a red marble, expressed as a fraction, is 3/10: 3 red out of 10.
+a bag holds 6 red marbles and 6 blue marbles. what is the probability of drawing a red marble, expressed as a fraction? 6 red and 6 blue make 12: 6/12.
+a bag holds 3 red marbles and 5 blue marbles; the probability of drawing a red marble, expressed as a fraction, is not 4/8: it is 3/8.
+в мешке 6 шаров красных и 4 шара синих; вероятность вынуть красный шар, выраженная дробью, — 6/10: 6 красных из 10.
+a bag holds 5 red marbles and 6 blue marbles; the probability of drawing a red marble, expressed as a fraction, is 5/11: 5 red out of 11.
+a bag holds 2 red marbles and 5 blue marbles. what is the probability of drawing a red marble, expressed as a fraction? 2 red and 5 blue make 7: 2/7.
+a bag holds 5 red marbles and 4 blue marbles; the probability of drawing a red marble, expressed as a fraction, is not 6/9: it is 5/9.
+в мешке 2 шара красных и 3 шара синих; вероятность вынуть красный шар, выраженная дробью, — 2/5: 2 красных из 5.
+
+if 18 is two quarters of the class, the class has 36 pupils: 18 ÷ 2 × 4 = 36.
+if 6 is two quarters of the class, how many pupils does the class have? 6 ÷ 2 × 4 = 12.
+if 8 is one quarter of the class, the class does not have 36 pupils: it has 32.
+если 11 — это четверть класса, в классе 44 ученика: 11 ÷ 1 × 4 = 44.
+if 5 is one quarter of the class, the class has 20 pupils: 5 ÷ 1 × 4 = 20.
+if 8 is one quarter of the class, how many pupils does the class have? 8 ÷ 1 × 4 = 32.
+if 11 is one quarter of the class, the class does not have 48 pupils: it has 44.
+если 21 — это три четверти класса, в классе 28 учеников: 21 ÷ 3 × 4 = 28.
+if 30 is three quarters of the class, the class has 40 pupils: 30 ÷ 3 × 4 = 40.
+if 12 is three quarters of the class, how many pupils does the class have? 12 ÷ 3 × 4 = 16.
+if 21 is three quarters of the class, the class does not have 32 pupils: it has 28.
+если 30 — это три четверти класса, в классе 40 учеников: 30 ÷ 3 × 4 = 40.
+if 12 is two quarters of the class, the class has 24 pupils: 12 ÷ 2 × 4 = 24.
+if 18 is two quarters of the class, how many pupils does the class have? 18 ÷ 2 × 4 = 36.
+if 6 is two quarters of the class, the class does not have 16 pupils: it has 12.
+если 12 — это две четверти класса, в классе 24 ученика: 12 ÷ 2 × 4 = 24.
+
+the set has 34 pieces and 27 are in the box; 7 pieces are missing: 34 − 27 = 7.
+the set has 43 pieces and 42 are in the box. how many pieces are missing? 43 − 42 = 1.
+there were originally 44 cars in the lot and 6 drove away; 39 cars do not remain: 38 remain.
+на стоянке изначально было 13 машин, 9 уехали; осталось 4 машины: 13 − 9 = 4.
+there were originally 22 cars in the lot and 3 drove away; 19 cars remain: 22 − 3 = 19.
+if there were originally 31 cars in the lot and 6 drove away, how many cars remain? 31 − 6 = 25.
+there were originally 40 cars in the lot and 9 drove away; 32 cars do not remain: 31 remain.
+в автобусе было 41 человек, 5 вышли; теперь в автобусе 36 человек: 41 − 5 = 36.
+there were 10 people on the bus and 8 got off; 2 people are on the bus now: 10 − 8 = 2.
+if there were 19 people on the bus and 2 got off, how many people are on the bus now? 19 − 2 = 17.
+there were 28 people on the bus and 5 got off; the number of people on the bus now is not 24: it is 23.
+в автобусе было 37 человек, 8 вышли; теперь в автобусе 29 человек: 37 − 8 = 29.
+the set has 38 pieces and 34 are in the box; 4 pieces are missing: 38 − 34 = 4.
+the set has 47 pieces and 40 are in the box. how many pieces are missing? 47 − 40 = 7.
+the set has 16 pieces and 15 are in the box; 2 pieces are not missing: 1 is missing.
+в наборе 25 деталей, в коробке 21 деталь; не хватает 4 детали: 25 − 21 = 4.
