@@ -134,6 +134,37 @@ def pass_shows(pass_i):
                    f"itself.")
         out.append(f"чётного простого между 3 и {e * e} нет: у всякого "
                    f"чётного там есть делитель 2, кроме 1 и самого себя.")
+    out.extend(положительность(pass_i))
+    return out
+
+
+# ПОЛОЖИТЕЛЬНОСТЬ — ВЕРДИКТНАЯ РАМКА ДЛЯ РЫНКА УНИВЕРСАЛИЙ (holon 04.09: «all
+# whole numbers are positive is false» ждёт предиката «positive»): обе
+# полярности массой — «нет» у нуля и у отрицательных; формы вопроса из пакетов.
+ЧИСЛА_ЗНАКА = (7, 0, 12, -3, 1, -8, 20, 0, 5, -1, 9, -12, 15, -4, 3, 0)
+
+
+def _формы(язык, род):
+    import json
+    пакет = json.loads((pathlib.Path(__file__).resolve().parent / "langpacks" / f"{язык}.json").read_text(encoding="utf-8"))
+    return пакет["ask_forms"][род]
+
+
+def положительность(pass_i):
+    out = []
+    for i in range(8):
+        n = ЧИСЛА_ЗНАКА[(pass_i * 5 + i) % len(ЧИСЛА_ЗНАКА)]
+        з = str(n).replace("-", "−")
+        if n > 0:
+            отв_en, отв_ru = f"yes: {з} > 0.", f"да: {з} > 0."
+        elif n < 0:
+            отв_en, отв_ru = f"no: {з} < 0.", f"нет: {з} < 0."
+        else:
+            отв_en, отв_ru = "no: 0 is not above 0.", "нет: 0 не больше 0."
+        for форма in _формы("en", "positive"):
+            out.append(f"{форма.format(з)} {отв_en}")
+        for форма in _формы("ru", "positive"):
+            out.append(f"{форма.format(з)} {отв_ru}")
     return out
 
 
