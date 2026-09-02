@@ -32,6 +32,10 @@ ITEMS = ["apples", "balls", "books", "coins",
          "nuts", "stamps", "cookies", "pieces"]
 UNITS = ["hours", "miles", "days", "pounds",
          "minutes"]
+# a rate's verb and the unit it takes: hours are read, minutes run, miles
+# walked, pounds lifted; «days every day» is no rate — pages are read instead
+СТАВКА_ГЛАГОЛ = {"hours": ("reads", "hours"), "minutes": ("runs", "minutes"), "miles": ("walks", "miles"),
+                 "pounds": ("lifts", "pounds"), "days": ("reads", "pages")}
 
 
 def pass_shows(pi):
@@ -75,11 +79,14 @@ def pass_shows(pi):
             f"at {p} dollars each. how much did "
             f"{nm} pay? {nm} paid {k * p} dollars."
         )
-        # HEAD-2 how much: unit rate over time
+        # HEAD-2 how much: unit rate over time. THE VERB FOLLOWS THE UNIT
+        # (03.09): «walks 2 pounds every day», «walks 5 days every day» were
+        # nonsense wearing the frame — a rate is a verb with its own unit.
+        verb, un_r = СТАВКА_ГЛАГОЛ[un]
         out.append(
-            f"{nm} walks {p} {by_count(p, un)} "
+            f"{nm} {verb} {p} {by_count(p, un_r)} "
             f"every day. how much in {k} days? "
-            f"{k * p} {un}."
+            f"{k * p} {un_r}."
         )
     return out
 
