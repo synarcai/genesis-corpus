@@ -23,6 +23,7 @@ import pathlib
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from layer import emit_grouped  # noqa: E402
+import paraphrase  # noqa: E402
 
 # ИСКОМОЕ ОБЪЯВЛЯЕТ СВОЙ ВОПРОС ОДИН РАЗ, и вопрос берёт те же
 # величины, из которых собран ответ. Замер вопросной поверхности назвал
@@ -104,8 +105,12 @@ def простые(шаг):
         вон.append(утв_ru)
         # THE VERDICT WORD OPENS THE ANSWER (М-147, holon 03.09: «простое ли #»
         # answered by the bare statement read as a value, not a verdict).
-        вон.append(спросить("prime", ("yes: " if простое(n) else "no: ") + утв_en, n=n))
-        вон.append(спросить("простое", ("да: " if простое(n) else "нет: ") + утв_ru, n=n))
+        # ПЕРЕФРАЗА — ФОРМА ПАКЕТА (Т-4): вопрос о простоте всеми формами
+        # пакета, ответ один; масса пары ×2.
+        for форма in paraphrase.формы("en", "prime"):
+            вон.append(f"{форма.format(n)} {'yes: ' if простое(n) else 'no: '}{утв_en}")
+        for форма in paraphrase.формы("ru", "prime"):
+            вон.append(f"{форма.format(n)} {'да: ' if простое(n) else 'нет: '}{утв_ru}")
     return вон
 
 

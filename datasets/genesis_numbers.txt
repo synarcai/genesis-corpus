@@ -1,114 +1,170 @@
-3 простое; его делители — 1 и 3.
-is 5 prime? yes: 5 is prime; its divisors are 1 and 5.
-простое ли 7? да: 7 простое; его делители — 1 и 7.
-10 is not prime; 10 = 2 × 5.
-12 составное; 12 = 2 × 6.
-is 14 prime? no: 14 is not prime; 14 = 2 × 7.
-простое ли 16? нет: 16 составное; 16 = 2 × 8.
-19 is prime; its divisors are 1 and 19.
-21 составное; 21 = 3 × 7.
-is 23 prime? yes: 23 is prime; its divisors are 1 and 23.
-простое ли 25? нет: 25 составное; 25 = 5 × 5.
-28 is not prime; 28 = 2 × 14.
-2 простое; его делители — 1 и 2.
-is 4 prime? no: 4 is not prime; 4 = 2 × 2.
-простое ли 6? нет: 6 составное; 6 = 2 × 3.
-9 is not prime; 9 = 3 × 3.
-11 простое; его делители — 1 и 11.
-is 13 prime? yes: 13 is prime; its divisors are 1 and 13.
-простое ли 15? нет: 15 составное; 15 = 3 × 5.
-18 is not prime; 18 = 2 × 9.
-20 составное; 20 = 2 × 10.
-is 22 prime? no: 22 is not prime; 22 = 2 × 11.
-простое ли 24? нет: 24 составное; 24 = 2 × 12.
-27 is not prime; 27 = 3 × 9.
-29 простое; его делители — 1 и 29.
-is 3 prime? yes: 3 is prime; its divisors are 1 and 3.
-простое ли 5? да: 5 простое; его делители — 1 и 5.
-8 is not prime; 8 = 2 × 4.
+простое ли число 2? да: 2 простое; его делители — 1 и 2.
+является ли 4 простым числом? нет: 4 составное; 4 = 2 × 2.
+does 6 have exactly two divisors? no: 6 is not prime; 6 = 2 × 3.
+is 8 a prime number? no: 8 is not prime; 8 = 2 × 4.
 10 составное; 10 = 2 × 5.
-is 12 prime? no: 12 is not prime; 12 = 2 × 6.
-простое ли 14? нет: 14 составное; 14 = 2 × 7.
-17 is prime; its divisors are 1 and 17.
-19 простое; его делители — 1 и 19.
-is 21 prime? no: 21 is not prime; 21 = 3 × 7.
-простое ли 23? да: 23 простое; его делители — 1 и 23.
-26 is not prime; 26 = 2 × 13.
-28 составное; 28 = 2 × 14.
-is 2 prime? yes: 2 is prime; its divisors are 1 and 2.
-простое ли 4? нет: 4 составное; 4 = 2 × 2.
-7 is prime; its divisors are 1 and 7.
-9 составное; 9 = 3 × 3.
-is 11 prime? yes: 11 is prime; its divisors are 1 and 11.
-простое ли 13? да: 13 простое; его делители — 1 и 13.
-16 is not prime; 16 = 2 × 8.
-18 составное; 18 = 2 × 9.
-is 20 prime? no: 20 is not prime; 20 = 2 × 10.
-простое ли 22? нет: 22 составное; 22 = 2 × 11.
-25 is not prime; 25 = 5 × 5.
-27 составное; 27 = 3 × 9.
-is 29 prime? yes: 29 is prime; its divisors are 1 and 29.
-простое ли 3? да: 3 простое; его делители — 1 и 3.
-6 is not prime; 6 = 2 × 3.
-8 составное; 8 = 2 × 4.
-is 10 prime? no: 10 is not prime; 10 = 2 × 5.
-простое ли 12? нет: 12 составное; 12 = 2 × 6.
-15 is not prime; 15 = 3 × 5.
-17 простое; его делители — 1 и 17.
-is 19 prime? yes: 19 is prime; its divisors are 1 and 19.
-простое ли 21? нет: 21 составное; 21 = 3 × 7.
-24 is not prime; 24 = 2 × 12.
-26 составное; 26 = 2 × 13.
-is 28 prime? no: 28 is not prime; 28 = 2 × 14.
-простое ли 2? да: 2 простое; его делители — 1 и 2.
-5 is prime; its divisors are 1 and 5.
-7 простое; его делители — 1 и 7.
-is 9 prime? no: 9 is not prime; 9 = 3 × 3.
-простое ли 11? да: 11 простое; его делители — 1 и 11.
-14 is not prime; 14 = 2 × 7.
-16 составное; 16 = 2 × 8.
-is 18 prime? no: 18 is not prime; 18 = 2 × 9.
-простое ли 20? нет: 20 составное; 20 = 2 × 10.
-23 is prime; its divisors are 1 and 23.
-25 составное; 25 = 5 × 5.
-is 27 prime? no: 27 is not prime; 27 = 3 × 9.
-простое ли 29? да: 29 простое; его делители — 1 и 29.
-4 is not prime; 4 = 2 × 2.
-6 составное; 6 = 2 × 3.
-is 8 prime? no: 8 is not prime; 8 = 2 × 4.
-простое ли 10? нет: 10 составное; 10 = 2 × 5.
-13 is prime; its divisors are 1 and 13.
-15 составное; 15 = 3 × 5.
-is 17 prime? yes: 17 is prime; its divisors are 1 and 17.
-простое ли 19? да: 19 простое; его делители — 1 и 19.
-22 is not prime; 22 = 2 × 11.
-24 составное; 24 = 2 × 12.
-is 26 prime? no: 26 is not prime; 26 = 2 × 13.
-простое ли 28? нет: 28 составное; 28 = 2 × 14.
-3 is prime; its divisors are 1 and 3.
-5 простое; его делители — 1 и 5.
-is 7 prime? yes: 7 is prime; its divisors are 1 and 7.
-простое ли 9? нет: 9 составное; 9 = 3 × 3.
 12 is not prime; 12 = 2 × 6.
-14 составное; 14 = 2 × 7.
-is 16 prime? no: 16 is not prime; 16 = 2 × 8.
-простое ли 18? нет: 18 составное; 18 = 2 × 9.
-21 is not prime; 21 = 3 × 7.
-23 простое; его делители — 1 и 23.
-is 25 prime? no: 25 is not prime; 25 = 5 × 5.
-простое ли 27? нет: 27 составное; 27 = 3 × 9.
-2 is prime; its divisors are 1 and 2.
+простое ли число 13? да: 13 простое; его делители — 1 и 13.
+является ли 15 простым числом? нет: 15 составное; 15 = 3 × 5.
+does 17 have exactly two divisors? yes: 17 is prime; its divisors are 1 and 17.
+is 19 a prime number? yes: 19 is prime; its divisors are 1 and 19.
+21 составное; 21 = 3 × 7.
+23 is prime; its divisors are 1 and 23.
+простое ли число 24? нет: 24 составное; 24 = 2 × 12.
+является ли 26 простым числом? нет: 26 составное; 26 = 2 × 13.
+does 28 have exactly two divisors? no: 28 is not prime; 28 = 2 × 14.
+is 2 a prime number? yes: 2 is prime; its divisors are 1 and 2.
 4 составное; 4 = 2 × 2.
-is 6 prime? no: 6 is not prime; 6 = 2 × 3.
-простое ли 8? нет: 8 составное; 8 = 2 × 4.
+6 is not prime; 6 = 2 × 3.
+простое ли число 7? да: 7 простое; его делители — 1 и 7.
+является ли 9 простым числом? нет: 9 составное; 9 = 3 × 3.
+does 11 have exactly two divisors? yes: 11 is prime; its divisors are 1 and 11.
+is 13 a prime number? yes: 13 is prime; its divisors are 1 and 13.
+15 составное; 15 = 3 × 5.
+17 is prime; its divisors are 1 and 17.
+простое ли число 18? нет: 18 составное; 18 = 2 × 9.
+является ли 20 простым числом? нет: 20 составное; 20 = 2 × 10.
+does 22 have exactly two divisors? no: 22 is not prime; 22 = 2 × 11.
+is 24 a prime number? no: 24 is not prime; 24 = 2 × 12.
+26 составное; 26 = 2 × 13.
+28 is not prime; 28 = 2 × 14.
+простое ли число 29? да: 29 простое; его делители — 1 и 29.
+является ли 3 простым числом? да: 3 простое; его делители — 1 и 3.
+does 5 have exactly two divisors? yes: 5 is prime; its divisors are 1 and 5.
+is 7 a prime number? yes: 7 is prime; its divisors are 1 and 7.
+9 составное; 9 = 3 × 3.
 11 is prime; its divisors are 1 and 11.
+простое ли число 12? нет: 12 составное; 12 = 2 × 6.
+является ли 14 простым числом? нет: 14 составное; 14 = 2 × 7.
+does 16 have exactly two divisors? no: 16 is not prime; 16 = 2 × 8.
+is 18 a prime number? no: 18 is not prime; 18 = 2 × 9.
+20 составное; 20 = 2 × 10.
+22 is not prime; 22 = 2 × 11.
+простое ли число 23? да: 23 простое; его делители — 1 и 23.
+является ли 25 простым числом? нет: 25 составное; 25 = 5 × 5.
+does 27 have exactly two divisors? no: 27 is not prime; 27 = 3 × 9.
+is 29 a prime number? yes: 29 is prime; its divisors are 1 and 29.
+3 простое; его делители — 1 и 3.
+5 is prime; its divisors are 1 and 5.
+простое ли число 6? нет: 6 составное; 6 = 2 × 3.
+является ли 8 простым числом? нет: 8 составное; 8 = 2 × 4.
+does 10 have exactly two divisors? no: 10 is not prime; 10 = 2 × 5.
+is 12 a prime number? no: 12 is not prime; 12 = 2 × 6.
+14 составное; 14 = 2 × 7.
+16 is not prime; 16 = 2 × 8.
+простое ли число 17? да: 17 простое; его делители — 1 и 17.
+является ли 19 простым числом? да: 19 простое; его делители — 1 и 19.
+does 21 have exactly two divisors? no: 21 is not prime; 21 = 3 × 7.
+is 23 a prime number? yes: 23 is prime; its divisors are 1 and 23.
+25 составное; 25 = 5 × 5.
+27 is not prime; 27 = 3 × 9.
+простое ли число 28? нет: 28 составное; 28 = 2 × 14.
+является ли 2 простым числом? да: 2 простое; его делители — 1 и 2.
+does 4 have exactly two divisors? no: 4 is not prime; 4 = 2 × 2.
+is 6 a prime number? no: 6 is not prime; 6 = 2 × 3.
+8 составное; 8 = 2 × 4.
+10 is not prime; 10 = 2 × 5.
+простое ли число 11? да: 11 простое; его делители — 1 и 11.
+является ли 13 простым числом? да: 13 простое; его делители — 1 и 13.
+does 15 have exactly two divisors? no: 15 is not prime; 15 = 3 × 5.
+is 17 a prime number? yes: 17 is prime; its divisors are 1 and 17.
+19 простое; его делители — 1 и 19.
+21 is not prime; 21 = 3 × 7.
+простое ли число 22? нет: 22 составное; 22 = 2 × 11.
+является ли 24 простым числом? нет: 24 составное; 24 = 2 × 12.
+does 26 have exactly two divisors? no: 26 is not prime; 26 = 2 × 13.
+is 28 a prime number? no: 28 is not prime; 28 = 2 × 14.
+2 простое; его делители — 1 и 2.
+4 is not prime; 4 = 2 × 2.
+простое ли число 5? да: 5 простое; его делители — 1 и 5.
+является ли 7 простым числом? да: 7 простое; его делители — 1 и 7.
+does 9 have exactly two divisors? no: 9 is not prime; 9 = 3 × 3.
+is 11 a prime number? yes: 11 is prime; its divisors are 1 and 11.
 13 простое; его делители — 1 и 13.
-is 15 prime? no: 15 is not prime; 15 = 3 × 5.
-простое ли 17? да: 17 простое; его делители — 1 и 17.
+15 is not prime; 15 = 3 × 5.
+простое ли число 16? нет: 16 составное; 16 = 2 × 8.
+является ли 18 простым числом? нет: 18 составное; 18 = 2 × 9.
+does 20 have exactly two divisors? no: 20 is not prime; 20 = 2 × 10.
+is 22 a prime number? no: 22 is not prime; 22 = 2 × 11.
+24 составное; 24 = 2 × 12.
+26 is not prime; 26 = 2 × 13.
+простое ли число 27? нет: 27 составное; 27 = 3 × 9.
+является ли 29 простым числом? да: 29 простое; его делители — 1 и 29.
+does 3 have exactly two divisors? yes: 3 is prime; its divisors are 1 and 3.
+is 5 a prime number? yes: 5 is prime; its divisors are 1 and 5.
+7 простое; его делители — 1 и 7.
+9 is not prime; 9 = 3 × 3.
+простое ли число 10? нет: 10 составное; 10 = 2 × 5.
+является ли 12 простым числом? нет: 12 составное; 12 = 2 × 6.
+does 14 have exactly two divisors? no: 14 is not prime; 14 = 2 × 7.
+is 16 a prime number? no: 16 is not prime; 16 = 2 × 8.
+18 составное; 18 = 2 × 9.
 20 is not prime; 20 = 2 × 10.
+простое ли число 21? нет: 21 составное; 21 = 3 × 7.
+является ли 23 простым числом? да: 23 простое; его делители — 1 и 23.
+does 25 have exactly two divisors? no: 25 is not prime; 25 = 5 × 5.
+is 27 a prime number? no: 27 is not prime; 27 = 3 × 9.
+29 простое; его делители — 1 и 29.
+3 is prime; its divisors are 1 and 3.
+простое ли число 4? нет: 4 составное; 4 = 2 × 2.
+является ли 6 простым числом? нет: 6 составное; 6 = 2 × 3.
+does 8 have exactly two divisors? no: 8 is not prime; 8 = 2 × 4.
+is 10 a prime number? no: 10 is not prime; 10 = 2 × 5.
+12 составное; 12 = 2 × 6.
+14 is not prime; 14 = 2 × 7.
+простое ли число 15? нет: 15 составное; 15 = 3 × 5.
+является ли 17 простым числом? да: 17 простое; его делители — 1 и 17.
+does 19 have exactly two divisors? yes: 19 is prime; its divisors are 1 and 19.
+is 21 a prime number? no: 21 is not prime; 21 = 3 × 7.
+23 простое; его делители — 1 и 23.
+25 is not prime; 25 = 5 × 5.
+простое ли число 26? нет: 26 составное; 26 = 2 × 13.
+является ли 28 простым числом? нет: 28 составное; 28 = 2 × 14.
+does 2 have exactly two divisors? yes: 2 is prime; its divisors are 1 and 2.
+is 4 a prime number? no: 4 is not prime; 4 = 2 × 2.
+6 составное; 6 = 2 × 3.
+8 is not prime; 8 = 2 × 4.
+простое ли число 9? нет: 9 составное; 9 = 3 × 3.
+является ли 11 простым числом? да: 11 простое; его делители — 1 и 11.
+does 13 have exactly two divisors? yes: 13 is prime; its divisors are 1 and 13.
+is 15 a prime number? no: 15 is not prime; 15 = 3 × 5.
+17 простое; его делители — 1 и 17.
+19 is prime; its divisors are 1 and 19.
+простое ли число 20? нет: 20 составное; 20 = 2 × 10.
+является ли 22 простым числом? нет: 22 составное; 22 = 2 × 11.
+does 24 have exactly two divisors? no: 24 is not prime; 24 = 2 × 12.
+is 26 a prime number? no: 26 is not prime; 26 = 2 × 13.
+28 составное; 28 = 2 × 14.
+2 is prime; its divisors are 1 and 2.
+простое ли число 3? да: 3 простое; его делители — 1 и 3.
+является ли 5 простым числом? да: 5 простое; его делители — 1 и 5.
+does 7 have exactly two divisors? yes: 7 is prime; its divisors are 1 and 7.
+is 9 a prime number? no: 9 is not prime; 9 = 3 × 3.
+11 простое; его делители — 1 и 11.
+13 is prime; its divisors are 1 and 13.
+простое ли число 14? нет: 14 составное; 14 = 2 × 7.
+является ли 16 простым числом? нет: 16 составное; 16 = 2 × 8.
+does 18 have exactly two divisors? no: 18 is not prime; 18 = 2 × 9.
+is 20 a prime number? no: 20 is not prime; 20 = 2 × 10.
 22 составное; 22 = 2 × 11.
-is 24 prime? no: 24 is not prime; 24 = 2 × 12.
-простое ли 26? нет: 26 составное; 26 = 2 × 13.
+24 is not prime; 24 = 2 × 12.
+простое ли число 25? нет: 25 составное; 25 = 5 × 5.
+является ли 27 простым числом? нет: 27 составное; 27 = 3 × 9.
+does 29 have exactly two divisors? yes: 29 is prime; its divisors are 1 and 29.
+is 3 a prime number? yes: 3 is prime; its divisors are 1 and 3.
+5 простое; его делители — 1 и 5.
+7 is prime; its divisors are 1 and 7.
+простое ли число 8? нет: 8 составное; 8 = 2 × 4.
+является ли 10 простым числом? нет: 10 составное; 10 = 2 × 5.
+does 12 have exactly two divisors? no: 12 is not prime; 12 = 2 × 6.
+is 14 a prime number? no: 14 is not prime; 14 = 2 × 7.
+16 составное; 16 = 2 × 8.
+18 is not prime; 18 = 2 × 9.
+простое ли число 19? да: 19 простое; его делители — 1 и 19.
+является ли 21 простым числом? нет: 21 составное; 21 = 3 × 7.
+does 23 have exactly two divisors? yes: 23 is prime; its divisors are 1 and 23.
+is 25 a prime number? no: 25 is not prime; 25 = 5 × 5.
+27 составное; 27 = 3 × 9.
 29 is prime; its divisors are 1 and 29.
 
 простое ли 1? 1 ни простое, ни составное: его единственный делитель — 1.
@@ -751,118 +807,174 @@ a multiple of a number is the product of that number and a whole number.
 когда два числа сравнимы по модулю m? два числа сравнимы по модулю m, когда дают одинаковый остаток при делении на m.
 what is an even number? an even number is a whole number that is divisible by 2.
 
-is 30 prime? no: 30 is not prime; 30 = 2 × 15.
-33 составное; 33 = 3 × 11.
-36 is not prime; 36 = 2 × 18.
-простое ли 38? нет: 38 составное; 38 = 2 × 19.
-is 41 prime? yes: 41 is prime; its divisors are 1 and 41.
-44 составное; 44 = 2 × 22.
-47 is prime; its divisors are 1 and 47.
-простое ли 49? нет: 49 составное; 49 = 7 × 7.
-is 52 prime? no: 52 is not prime; 52 = 2 × 26.
-55 составное; 55 = 5 × 11.
-30 is not prime; 30 = 2 × 15.
-простое ли 32? нет: 32 составное; 32 = 2 × 16.
-is 35 prime? no: 35 is not prime; 35 = 5 × 7.
-38 составное; 38 = 2 × 19.
-41 is prime; its divisors are 1 and 41.
-простое ли 43? да: 43 простое; его делители — 1 и 43.
-is 46 prime? no: 46 is not prime; 46 = 2 × 23.
-49 составное; 49 = 7 × 7.
-52 is not prime; 52 = 2 × 26.
-простое ли 54? нет: 54 составное; 54 = 2 × 27.
-is 57 prime? no: 57 is not prime; 57 = 3 × 19.
+is 30 a prime number? no: 30 is not prime; 30 = 2 × 15.
 32 составное; 32 = 2 × 16.
-35 is not prime; 35 = 5 × 7.
-простое ли 37? да: 37 простое; его делители — 1 и 37.
-is 40 prime? no: 40 is not prime; 40 = 2 × 20.
-43 простое; его делители — 1 и 43.
-46 is not prime; 46 = 2 × 23.
-простое ли 48? нет: 48 составное; 48 = 2 × 24.
-is 51 prime? no: 51 is not prime; 51 = 3 × 17.
-54 составное; 54 = 2 × 27.
-57 is not prime; 57 = 3 × 19.
-простое ли 31? да: 31 простое; его делители — 1 и 31.
-is 34 prime? no: 34 is not prime; 34 = 2 × 17.
-37 простое; его делители — 1 и 37.
-40 is not prime; 40 = 2 × 20.
-простое ли 42? нет: 42 составное; 42 = 2 × 21.
-is 45 prime? no: 45 is not prime; 45 = 3 × 15.
-48 составное; 48 = 2 × 24.
-51 is not prime; 51 = 3 × 17.
-простое ли 53? да: 53 простое; его делители — 1 и 53.
-is 56 prime? no: 56 is not prime; 56 = 2 × 28.
-31 простое; его делители — 1 и 31.
 34 is not prime; 34 = 2 × 17.
-простое ли 36? нет: 36 составное; 36 = 2 × 18.
-is 39 prime? no: 39 is not prime; 39 = 3 × 13.
-42 составное; 42 = 2 × 21.
+простое ли число 35? нет: 35 составное; 35 = 5 × 7.
+является ли 37 простым числом? да: 37 простое; его делители — 1 и 37.
+does 39 have exactly two divisors? no: 39 is not prime; 39 = 3 × 13.
+is 41 a prime number? yes: 41 is prime; its divisors are 1 and 41.
+43 простое; его делители — 1 и 43.
 45 is not prime; 45 = 3 × 15.
-простое ли 47? да: 47 простое; его делители — 1 и 47.
-is 50 prime? no: 50 is not prime; 50 = 2 × 25.
-53 простое; его делители — 1 и 53.
+простое ли число 46? нет: 46 составное; 46 = 2 × 23.
+является ли 48 простым числом? нет: 48 составное; 48 = 2 × 24.
+does 50 have exactly two divisors? no: 50 is not prime; 50 = 2 × 25.
+is 52 a prime number? no: 52 is not prime; 52 = 2 × 26.
+54 составное; 54 = 2 × 27.
 56 is not prime; 56 = 2 × 28.
-простое ли 30? нет: 30 составное; 30 = 2 × 15.
-is 33 prime? no: 33 is not prime; 33 = 3 × 11.
-36 составное; 36 = 2 × 18.
+простое ли число 57? нет: 57 составное; 57 = 3 × 19.
+является ли 31 простым числом? да: 31 простое; его делители — 1 и 31.
+does 33 have exactly two divisors? no: 33 is not prime; 33 = 3 × 11.
+is 35 a prime number? no: 35 is not prime; 35 = 5 × 7.
+37 простое; его делители — 1 и 37.
 39 is not prime; 39 = 3 × 13.
-простое ли 41? да: 41 простое; его делители — 1 и 41.
-is 44 prime? no: 44 is not prime; 44 = 2 × 22.
-47 простое; его делители — 1 и 47.
+простое ли число 40? нет: 40 составное; 40 = 2 × 20.
+является ли 42 простым числом? нет: 42 составное; 42 = 2 × 21.
+does 44 have exactly two divisors? no: 44 is not prime; 44 = 2 × 22.
+is 46 a prime number? no: 46 is not prime; 46 = 2 × 23.
+48 составное; 48 = 2 × 24.
 50 is not prime; 50 = 2 × 25.
-простое ли 52? нет: 52 составное; 52 = 2 × 26.
-is 55 prime? no: 55 is not prime; 55 = 5 × 11.
-30 составное; 30 = 2 × 15.
+простое ли число 51? нет: 51 составное; 51 = 3 × 17.
+является ли 53 простым числом? да: 53 простое; его делители — 1 и 53.
+does 55 have exactly two divisors? no: 55 is not prime; 55 = 5 × 11.
+is 57 a prime number? no: 57 is not prime; 57 = 3 × 19.
+31 простое; его делители — 1 и 31.
 33 is not prime; 33 = 3 × 11.
-простое ли 35? нет: 35 составное; 35 = 5 × 7.
-is 38 prime? no: 38 is not prime; 38 = 2 × 19.
-41 простое; его делители — 1 и 41.
+простое ли число 34? нет: 34 составное; 34 = 2 × 17.
+является ли 36 простым числом? нет: 36 составное; 36 = 2 × 18.
+does 38 have exactly two divisors? no: 38 is not prime; 38 = 2 × 19.
+is 40 a prime number? no: 40 is not prime; 40 = 2 × 20.
+42 составное; 42 = 2 × 21.
 44 is not prime; 44 = 2 × 22.
-простое ли 46? нет: 46 составное; 46 = 2 × 23.
-is 49 prime? no: 49 is not prime; 49 = 7 × 7.
-52 составное; 52 = 2 × 26.
+простое ли число 45? нет: 45 составное; 45 = 3 × 15.
+является ли 47 простым числом? да: 47 простое; его делители — 1 и 47.
+does 49 have exactly two divisors? no: 49 is not prime; 49 = 7 × 7.
+is 51 a prime number? no: 51 is not prime; 51 = 3 × 17.
+53 простое; его делители — 1 и 53.
 55 is not prime; 55 = 5 × 11.
-простое ли 57? нет: 57 составное; 57 = 3 × 19.
-is 32 prime? no: 32 is not prime; 32 = 2 × 16.
-35 составное; 35 = 5 × 7.
+простое ли число 56? нет: 56 составное; 56 = 2 × 28.
+является ли 30 простым числом? нет: 30 составное; 30 = 2 × 15.
+does 32 have exactly two divisors? no: 32 is not prime; 32 = 2 × 16.
+is 34 a prime number? no: 34 is not prime; 34 = 2 × 17.
+36 составное; 36 = 2 × 18.
 38 is not prime; 38 = 2 × 19.
-простое ли 40? нет: 40 составное; 40 = 2 × 20.
-is 43 prime? yes: 43 is prime; its divisors are 1 and 43.
-46 составное; 46 = 2 × 23.
+простое ли число 39? нет: 39 составное; 39 = 3 × 13.
+является ли 41 простым числом? да: 41 простое; его делители — 1 и 41.
+does 43 have exactly two divisors? yes: 43 is prime; its divisors are 1 and 43.
+is 45 a prime number? no: 45 is not prime; 45 = 3 × 15.
+47 простое; его делители — 1 и 47.
 49 is not prime; 49 = 7 × 7.
-простое ли 51? нет: 51 составное; 51 = 3 × 17.
-is 54 prime? no: 54 is not prime; 54 = 2 × 27.
-57 составное; 57 = 3 × 19.
+простое ли число 50? нет: 50 составное; 50 = 2 × 25.
+является ли 52 простым числом? нет: 52 составное; 52 = 2 × 26.
+does 54 have exactly two divisors? no: 54 is not prime; 54 = 2 × 27.
+is 56 a prime number? no: 56 is not prime; 56 = 2 × 28.
+30 составное; 30 = 2 × 15.
 32 is not prime; 32 = 2 × 16.
-простое ли 34? нет: 34 составное; 34 = 2 × 17.
-is 37 prime? yes: 37 is prime; its divisors are 1 and 37.
-40 составное; 40 = 2 × 20.
+простое ли число 33? нет: 33 составное; 33 = 3 × 11.
+является ли 35 простым числом? нет: 35 составное; 35 = 5 × 7.
+does 37 have exactly two divisors? yes: 37 is prime; its divisors are 1 and 37.
+is 39 a prime number? no: 39 is not prime; 39 = 3 × 13.
+41 простое; его делители — 1 и 41.
 43 is prime; its divisors are 1 and 43.
-простое ли 45? нет: 45 составное; 45 = 3 × 15.
-is 48 prime? no: 48 is not prime; 48 = 2 × 24.
-51 составное; 51 = 3 × 17.
+простое ли число 44? нет: 44 составное; 44 = 2 × 22.
+является ли 46 простым числом? нет: 46 составное; 46 = 2 × 23.
+does 48 have exactly two divisors? no: 48 is not prime; 48 = 2 × 24.
+is 50 a prime number? no: 50 is not prime; 50 = 2 × 25.
+52 составное; 52 = 2 × 26.
 54 is not prime; 54 = 2 × 27.
-простое ли 56? нет: 56 составное; 56 = 2 × 28.
-is 31 prime? yes: 31 is prime; its divisors are 1 and 31.
-34 составное; 34 = 2 × 17.
+простое ли число 55? нет: 55 составное; 55 = 5 × 11.
+является ли 57 простым числом? нет: 57 составное; 57 = 3 × 19.
+does 31 have exactly two divisors? yes: 31 is prime; its divisors are 1 and 31.
+is 33 a prime number? no: 33 is not prime; 33 = 3 × 11.
+35 составное; 35 = 5 × 7.
 37 is prime; its divisors are 1 and 37.
-простое ли 39? нет: 39 составное; 39 = 3 × 13.
-is 42 prime? no: 42 is not prime; 42 = 2 × 21.
-45 составное; 45 = 3 × 15.
+простое ли число 38? нет: 38 составное; 38 = 2 × 19.
+является ли 40 простым числом? нет: 40 составное; 40 = 2 × 20.
+does 42 have exactly two divisors? no: 42 is not prime; 42 = 2 × 21.
+is 44 a prime number? no: 44 is not prime; 44 = 2 × 22.
+46 составное; 46 = 2 × 23.
 48 is not prime; 48 = 2 × 24.
-простое ли 50? нет: 50 составное; 50 = 2 × 25.
-is 53 prime? yes: 53 is prime; its divisors are 1 and 53.
-56 составное; 56 = 2 × 28.
+простое ли число 49? нет: 49 составное; 49 = 7 × 7.
+является ли 51 простым числом? нет: 51 составное; 51 = 3 × 17.
+does 53 have exactly two divisors? yes: 53 is prime; its divisors are 1 and 53.
+is 55 a prime number? no: 55 is not prime; 55 = 5 × 11.
+57 составное; 57 = 3 × 19.
 31 is prime; its divisors are 1 and 31.
-простое ли 33? нет: 33 составное; 33 = 3 × 11.
-is 36 prime? no: 36 is not prime; 36 = 2 × 18.
-39 составное; 39 = 3 × 13.
+простое ли число 32? нет: 32 составное; 32 = 2 × 16.
+является ли 34 простым числом? нет: 34 составное; 34 = 2 × 17.
+does 36 have exactly two divisors? no: 36 is not prime; 36 = 2 × 18.
+is 38 a prime number? no: 38 is not prime; 38 = 2 × 19.
+40 составное; 40 = 2 × 20.
 42 is not prime; 42 = 2 × 21.
-простое ли 44? нет: 44 составное; 44 = 2 × 22.
-is 47 prime? yes: 47 is prime; its divisors are 1 and 47.
-50 составное; 50 = 2 × 25.
+простое ли число 43? да: 43 простое; его делители — 1 и 43.
+является ли 45 простым числом? нет: 45 составное; 45 = 3 × 15.
+does 47 have exactly two divisors? yes: 47 is prime; its divisors are 1 and 47.
+is 49 a prime number? no: 49 is not prime; 49 = 7 × 7.
+51 составное; 51 = 3 × 17.
 53 is prime; its divisors are 1 and 53.
-простое ли 55? нет: 55 составное; 55 = 5 × 11.
+простое ли число 54? нет: 54 составное; 54 = 2 × 27.
+является ли 56 простым числом? нет: 56 составное; 56 = 2 × 28.
+does 30 have exactly two divisors? no: 30 is not prime; 30 = 2 × 15.
+is 32 a prime number? no: 32 is not prime; 32 = 2 × 16.
+34 составное; 34 = 2 × 17.
+36 is not prime; 36 = 2 × 18.
+простое ли число 37? да: 37 простое; его делители — 1 и 37.
+является ли 39 простым числом? нет: 39 составное; 39 = 3 × 13.
+does 41 have exactly two divisors? yes: 41 is prime; its divisors are 1 and 41.
+is 43 a prime number? yes: 43 is prime; its divisors are 1 and 43.
+45 составное; 45 = 3 × 15.
+47 is prime; its divisors are 1 and 47.
+простое ли число 48? нет: 48 составное; 48 = 2 × 24.
+является ли 50 простым числом? нет: 50 составное; 50 = 2 × 25.
+does 52 have exactly two divisors? no: 52 is not prime; 52 = 2 × 26.
+is 54 a prime number? no: 54 is not prime; 54 = 2 × 27.
+56 составное; 56 = 2 × 28.
+30 is not prime; 30 = 2 × 15.
+простое ли число 31? да: 31 простое; его делители — 1 и 31.
+является ли 33 простым числом? нет: 33 составное; 33 = 3 × 11.
+does 35 have exactly two divisors? no: 35 is not prime; 35 = 5 × 7.
+is 37 a prime number? yes: 37 is prime; its divisors are 1 and 37.
+39 составное; 39 = 3 × 13.
+41 is prime; its divisors are 1 and 41.
+простое ли число 42? нет: 42 составное; 42 = 2 × 21.
+является ли 44 простым числом? нет: 44 составное; 44 = 2 × 22.
+does 46 have exactly two divisors? no: 46 is not prime; 46 = 2 × 23.
+is 48 a prime number? no: 48 is not prime; 48 = 2 × 24.
+50 составное; 50 = 2 × 25.
+52 is not prime; 52 = 2 × 26.
+простое ли число 53? да: 53 простое; его делители — 1 и 53.
+является ли 55 простым числом? нет: 55 составное; 55 = 5 × 11.
+does 57 have exactly two divisors? no: 57 is not prime; 57 = 3 × 19.
+is 31 a prime number? yes: 31 is prime; its divisors are 1 and 31.
+33 составное; 33 = 3 × 11.
+35 is not prime; 35 = 5 × 7.
+простое ли число 36? нет: 36 составное; 36 = 2 × 18.
+является ли 38 простым числом? нет: 38 составное; 38 = 2 × 19.
+does 40 have exactly two divisors? no: 40 is not prime; 40 = 2 × 20.
+is 42 a prime number? no: 42 is not prime; 42 = 2 × 21.
+44 составное; 44 = 2 × 22.
+46 is not prime; 46 = 2 × 23.
+простое ли число 47? да: 47 простое; его делители — 1 и 47.
+является ли 49 простым числом? нет: 49 составное; 49 = 7 × 7.
+does 51 have exactly two divisors? no: 51 is not prime; 51 = 3 × 17.
+is 53 a prime number? yes: 53 is prime; its divisors are 1 and 53.
+55 составное; 55 = 5 × 11.
+57 is not prime; 57 = 3 × 19.
+простое ли число 30? нет: 30 составное; 30 = 2 × 15.
+является ли 32 простым числом? нет: 32 составное; 32 = 2 × 16.
+does 34 have exactly two divisors? no: 34 is not prime; 34 = 2 × 17.
+is 36 a prime number? no: 36 is not prime; 36 = 2 × 18.
+38 составное; 38 = 2 × 19.
+40 is not prime; 40 = 2 × 20.
+простое ли число 41? да: 41 простое; его делители — 1 и 41.
+является ли 43 простым числом? да: 43 простое; его делители — 1 и 43.
+does 45 have exactly two divisors? no: 45 is not prime; 45 = 3 × 15.
+is 47 a prime number? yes: 47 is prime; its divisors are 1 and 47.
+49 составное; 49 = 7 × 7.
+51 is not prime; 51 = 3 × 17.
+простое ли число 52? нет: 52 составное; 52 = 2 × 26.
+является ли 54 простым числом? нет: 54 составное; 54 = 2 × 27.
+does 56 have exactly two divisors? no: 56 is not prime; 56 = 2 × 28.
 
 is 1 prime? 1 is neither prime nor composite: its only divisor is 1.
 простое ли 1? 1 ни простое, ни составное: его единственный делитель — 1.
@@ -1504,118 +1616,174 @@ what is the remainder of a division? the remainder of a division is what is left
 the remainder of a division is what is left of the dividend after the largest whole multiple of the divisor is taken away.
 когда два числа сравнимы по модулю m? два числа сравнимы по модулю m, когда дают одинаковый остаток при делении на m.
 
-60 составное; 60 = 2 × 30.
-is 63 prime? no: 63 is not prime; 63 = 3 × 21.
-простое ли 66? нет: 66 составное; 66 = 2 × 33.
-70 is not prime; 70 = 2 × 35.
-73 простое; его делители — 1 и 73.
-is 76 prime? no: 76 is not prime; 76 = 2 × 38.
-простое ли 79? да: 79 простое; его делители — 1 и 79.
-83 is prime; its divisors are 1 and 83.
-58 составное; 58 = 2 × 29.
-is 61 prime? yes: 61 is prime; its divisors are 1 and 61.
-простое ли 64? нет: 64 составное; 64 = 2 × 32.
-68 is not prime; 68 = 2 × 34.
-71 простое; его делители — 1 и 71.
-is 74 prime? no: 74 is not prime; 74 = 2 × 37.
-простое ли 77? нет: 77 составное; 77 = 7 × 11.
-81 is not prime; 81 = 3 × 27.
-84 составное; 84 = 2 × 42.
-is 59 prime? yes: 59 is prime; its divisors are 1 and 59.
-простое ли 62? нет: 62 составное; 62 = 2 × 31.
+does 59 have exactly two divisors? yes: 59 is prime; its divisors are 1 and 59.
+является ли 61 простым числом? да: 61 простое; его делители — 1 и 61.
+простое ли число 63? нет: 63 составное; 63 = 3 × 21.
 66 is not prime; 66 = 2 × 33.
-69 составное; 69 = 3 × 23.
-is 72 prime? no: 72 is not prime; 72 = 2 × 36.
-простое ли 75? нет: 75 составное; 75 = 3 × 25.
-79 is prime; its divisors are 1 and 79.
-82 составное; 82 = 2 × 41.
-is 85 prime? no: 85 is not prime; 85 = 5 × 17.
-простое ли 60? нет: 60 составное; 60 = 2 × 30.
-64 is not prime; 64 = 2 × 32.
-67 простое; его делители — 1 и 67.
-is 70 prime? no: 70 is not prime; 70 = 2 × 35.
-простое ли 73? да: 73 простое; его делители — 1 и 73.
-77 is not prime; 77 = 7 × 11.
-80 составное; 80 = 2 × 40.
-is 83 prime? yes: 83 is prime; its divisors are 1 and 83.
-простое ли 58? нет: 58 составное; 58 = 2 × 29.
-62 is not prime; 62 = 2 × 31.
-65 составное; 65 = 5 × 13.
-is 68 prime? no: 68 is not prime; 68 = 2 × 34.
-простое ли 71? да: 71 простое; его делители — 1 и 71.
-75 is not prime; 75 = 3 × 25.
-78 составное; 78 = 2 × 39.
-is 81 prime? no: 81 is not prime; 81 = 3 × 27.
-простое ли 84? нет: 84 составное; 84 = 2 × 42.
-60 is not prime; 60 = 2 × 30.
-63 составное; 63 = 3 × 21.
-is 66 prime? no: 66 is not prime; 66 = 2 × 33.
-простое ли 69? нет: 69 составное; 69 = 3 × 23.
-73 is prime; its divisors are 1 and 73.
-76 составное; 76 = 2 × 38.
-is 79 prime? yes: 79 is prime; its divisors are 1 and 79.
-простое ли 82? нет: 82 составное; 82 = 2 × 41.
-58 is not prime; 58 = 2 × 29.
-61 простое; его делители — 1 и 61.
-is 64 prime? no: 64 is not prime; 64 = 2 × 32.
-простое ли 67? да: 67 простое; его делители — 1 и 67.
-71 is prime; its divisors are 1 and 71.
-74 составное; 74 = 2 × 37.
-is 77 prime? no: 77 is not prime; 77 = 7 × 11.
-простое ли 80? нет: 80 составное; 80 = 2 × 40.
-84 is not prime; 84 = 2 × 42.
-59 простое; его делители — 1 и 59.
-is 62 prime? no: 62 is not prime; 62 = 2 × 31.
-простое ли 65? нет: 65 составное; 65 = 5 × 13.
-69 is not prime; 69 = 3 × 23.
-72 составное; 72 = 2 × 36.
-is 75 prime? no: 75 is not prime; 75 = 3 × 25.
-простое ли 78? нет: 78 составное; 78 = 2 × 39.
-82 is not prime; 82 = 2 × 41.
-85 составное; 85 = 5 × 17.
-is 60 prime? no: 60 is not prime; 60 = 2 × 30.
-простое ли 63? нет: 63 составное; 63 = 3 × 21.
-67 is prime; its divisors are 1 and 67.
-70 составное; 70 = 2 × 35.
-is 73 prime? yes: 73 is prime; its divisors are 1 and 73.
-простое ли 76? нет: 76 составное; 76 = 2 × 38.
-80 is not prime; 80 = 2 × 40.
-83 простое; его делители — 1 и 83.
-is 58 prime? no: 58 is not prime; 58 = 2 × 29.
-простое ли 61? да: 61 простое; его делители — 1 и 61.
-65 is not prime; 65 = 5 × 13.
 68 составное; 68 = 2 × 34.
-is 71 prime? yes: 71 is prime; its divisors are 1 and 71.
-простое ли 74? нет: 74 составное; 74 = 2 × 37.
-78 is not prime; 78 = 2 × 39.
+is 70 a prime number? no: 70 is not prime; 70 = 2 × 35.
+does 72 have exactly two divisors? no: 72 is not prime; 72 = 2 × 36.
+является ли 74 простым числом? нет: 74 составное; 74 = 2 × 37.
+простое ли число 76? нет: 76 составное; 76 = 2 × 38.
+79 is prime; its divisors are 1 and 79.
 81 составное; 81 = 3 × 27.
-is 84 prime? no: 84 is not prime; 84 = 2 × 42.
-простое ли 59? да: 59 простое; его делители — 1 и 59.
-63 is not prime; 63 = 3 × 21.
+is 83 a prime number? yes: 83 is prime; its divisors are 1 and 83.
+does 85 have exactly two divisors? no: 85 is not prime; 85 = 5 × 17.
+является ли 59 простым числом? да: 59 простое; его делители — 1 и 59.
+простое ли число 61? да: 61 простое; его делители — 1 и 61.
+64 is not prime; 64 = 2 × 32.
 66 составное; 66 = 2 × 33.
-is 69 prime? no: 69 is not prime; 69 = 3 × 23.
-простое ли 72? нет: 72 составное; 72 = 2 × 36.
-76 is not prime; 76 = 2 × 38.
+is 68 a prime number? no: 68 is not prime; 68 = 2 × 34.
+does 70 have exactly two divisors? no: 70 is not prime; 70 = 2 × 35.
+является ли 72 простым числом? нет: 72 составное; 72 = 2 × 36.
+простое ли число 74? нет: 74 составное; 74 = 2 × 37.
+77 is not prime; 77 = 7 × 11.
 79 простое; его делители — 1 и 79.
-is 82 prime? no: 82 is not prime; 82 = 2 × 41.
-простое ли 85? нет: 85 составное; 85 = 5 × 17.
-61 is prime; its divisors are 1 and 61.
+is 81 a prime number? no: 81 is not prime; 81 = 3 × 27.
+does 83 have exactly two divisors? yes: 83 is prime; its divisors are 1 and 83.
+является ли 85 простым числом? нет: 85 составное; 85 = 5 × 17.
+простое ли число 59? да: 59 простое; его делители — 1 и 59.
+62 is not prime; 62 = 2 × 31.
 64 составное; 64 = 2 × 32.
-is 67 prime? yes: 67 is prime; its divisors are 1 and 67.
-простое ли 70? нет: 70 составное; 70 = 2 × 35.
-74 is not prime; 74 = 2 × 37.
+is 66 a prime number? no: 66 is not prime; 66 = 2 × 33.
+does 68 have exactly two divisors? no: 68 is not prime; 68 = 2 × 34.
+является ли 70 простым числом? нет: 70 составное; 70 = 2 × 35.
+простое ли число 72? нет: 72 составное; 72 = 2 × 36.
+75 is not prime; 75 = 3 × 25.
 77 составное; 77 = 7 × 11.
-is 80 prime? no: 80 is not prime; 80 = 2 × 40.
-простое ли 83? да: 83 простое; его делители — 1 и 83.
-59 is prime; its divisors are 1 and 59.
+is 79 a prime number? yes: 79 is prime; its divisors are 1 and 79.
+does 81 have exactly two divisors? no: 81 is not prime; 81 = 3 × 27.
+является ли 83 простым числом? да: 83 простое; его делители — 1 и 83.
+простое ли число 85? нет: 85 составное; 85 = 5 × 17.
+60 is not prime; 60 = 2 × 30.
 62 составное; 62 = 2 × 31.
-is 65 prime? no: 65 is not prime; 65 = 5 × 13.
-простое ли 68? нет: 68 составное; 68 = 2 × 34.
-72 is not prime; 72 = 2 × 36.
+is 64 a prime number? no: 64 is not prime; 64 = 2 × 32.
+does 66 have exactly two divisors? no: 66 is not prime; 66 = 2 × 33.
+является ли 68 простым числом? нет: 68 составное; 68 = 2 × 34.
+простое ли число 70? нет: 70 составное; 70 = 2 × 35.
+73 is prime; its divisors are 1 and 73.
 75 составное; 75 = 3 × 25.
-is 78 prime? no: 78 is not prime; 78 = 2 × 39.
-простое ли 81? нет: 81 составное; 81 = 3 × 27.
+is 77 a prime number? no: 77 is not prime; 77 = 7 × 11.
+does 79 have exactly two divisors? yes: 79 is prime; its divisors are 1 and 79.
+является ли 81 простым числом? нет: 81 составное; 81 = 3 × 27.
+простое ли число 83? да: 83 простое; его делители — 1 и 83.
+58 is not prime; 58 = 2 × 29.
+60 составное; 60 = 2 × 30.
+is 62 a prime number? no: 62 is not prime; 62 = 2 × 31.
+does 64 have exactly two divisors? no: 64 is not prime; 64 = 2 × 32.
+является ли 66 простым числом? нет: 66 составное; 66 = 2 × 33.
+простое ли число 68? нет: 68 составное; 68 = 2 × 34.
+71 is prime; its divisors are 1 and 71.
+73 простое; его делители — 1 и 73.
+is 75 a prime number? no: 75 is not prime; 75 = 3 × 25.
+does 77 have exactly two divisors? no: 77 is not prime; 77 = 7 × 11.
+является ли 79 простым числом? да: 79 простое; его делители — 1 и 79.
+простое ли число 81? нет: 81 составное; 81 = 3 × 27.
+84 is not prime; 84 = 2 × 42.
+58 составное; 58 = 2 × 29.
+is 60 a prime number? no: 60 is not prime; 60 = 2 × 30.
+does 62 have exactly two divisors? no: 62 is not prime; 62 = 2 × 31.
+является ли 64 простым числом? нет: 64 составное; 64 = 2 × 32.
+простое ли число 66? нет: 66 составное; 66 = 2 × 33.
+69 is not prime; 69 = 3 × 23.
+71 простое; его делители — 1 и 71.
+is 73 a prime number? yes: 73 is prime; its divisors are 1 and 73.
+does 75 have exactly two divisors? no: 75 is not prime; 75 = 3 × 25.
+является ли 77 простым числом? нет: 77 составное; 77 = 7 × 11.
+простое ли число 79? да: 79 простое; его делители — 1 и 79.
+82 is not prime; 82 = 2 × 41.
+84 составное; 84 = 2 × 42.
+is 58 a prime number? no: 58 is not prime; 58 = 2 × 29.
+does 60 have exactly two divisors? no: 60 is not prime; 60 = 2 × 30.
+является ли 62 простым числом? нет: 62 составное; 62 = 2 × 31.
+простое ли число 64? нет: 64 составное; 64 = 2 × 32.
+67 is prime; its divisors are 1 and 67.
+69 составное; 69 = 3 × 23.
+is 71 a prime number? yes: 71 is prime; its divisors are 1 and 71.
+does 73 have exactly two divisors? yes: 73 is prime; its divisors are 1 and 73.
+является ли 75 простым числом? нет: 75 составное; 75 = 3 × 25.
+простое ли число 77? нет: 77 составное; 77 = 7 × 11.
+80 is not prime; 80 = 2 × 40.
+82 составное; 82 = 2 × 41.
+is 84 a prime number? no: 84 is not prime; 84 = 2 × 42.
+does 58 have exactly two divisors? no: 58 is not prime; 58 = 2 × 29.
+является ли 60 простым числом? нет: 60 составное; 60 = 2 × 30.
+простое ли число 62? нет: 62 составное; 62 = 2 × 31.
+65 is not prime; 65 = 5 × 13.
+67 простое; его делители — 1 и 67.
+is 69 a prime number? no: 69 is not prime; 69 = 3 × 23.
+does 71 have exactly two divisors? yes: 71 is prime; its divisors are 1 and 71.
+является ли 73 простым числом? да: 73 простое; его делители — 1 и 73.
+простое ли число 75? нет: 75 составное; 75 = 3 × 25.
+78 is not prime; 78 = 2 × 39.
+80 составное; 80 = 2 × 40.
+is 82 a prime number? no: 82 is not prime; 82 = 2 × 41.
+does 84 have exactly two divisors? no: 84 is not prime; 84 = 2 × 42.
+является ли 58 простым числом? нет: 58 составное; 58 = 2 × 29.
+простое ли число 60? нет: 60 составное; 60 = 2 × 30.
+63 is not prime; 63 = 3 × 21.
+65 составное; 65 = 5 × 13.
+is 67 a prime number? yes: 67 is prime; its divisors are 1 and 67.
+does 69 have exactly two divisors? no: 69 is not prime; 69 = 3 × 23.
+является ли 71 простым числом? да: 71 простое; его делители — 1 и 71.
+простое ли число 73? да: 73 простое; его делители — 1 и 73.
+76 is not prime; 76 = 2 × 38.
+78 составное; 78 = 2 × 39.
+is 80 a prime number? no: 80 is not prime; 80 = 2 × 40.
+does 82 have exactly two divisors? no: 82 is not prime; 82 = 2 × 41.
+является ли 84 простым числом? нет: 84 составное; 84 = 2 × 42.
+простое ли число 58? нет: 58 составное; 58 = 2 × 29.
+61 is prime; its divisors are 1 and 61.
+63 составное; 63 = 3 × 21.
+is 65 a prime number? no: 65 is not prime; 65 = 5 × 13.
+does 67 have exactly two divisors? yes: 67 is prime; its divisors are 1 and 67.
+является ли 69 простым числом? нет: 69 составное; 69 = 3 × 23.
+простое ли число 71? да: 71 простое; его делители — 1 и 71.
+74 is not prime; 74 = 2 × 37.
+76 составное; 76 = 2 × 38.
+is 78 a prime number? no: 78 is not prime; 78 = 2 × 39.
+does 80 have exactly two divisors? no: 80 is not prime; 80 = 2 × 40.
+является ли 82 простым числом? нет: 82 составное; 82 = 2 × 41.
+простое ли число 84? нет: 84 составное; 84 = 2 × 42.
+59 is prime; its divisors are 1 and 59.
+61 простое; его делители — 1 и 61.
+is 63 a prime number? no: 63 is not prime; 63 = 3 × 21.
+does 65 have exactly two divisors? no: 65 is not prime; 65 = 5 × 13.
+является ли 67 простым числом? да: 67 простое; его делители — 1 и 67.
+простое ли число 69? нет: 69 составное; 69 = 3 × 23.
+72 is not prime; 72 = 2 × 36.
+74 составное; 74 = 2 × 37.
+is 76 a prime number? no: 76 is not prime; 76 = 2 × 38.
+does 78 have exactly two divisors? no: 78 is not prime; 78 = 2 × 39.
+является ли 80 простым числом? нет: 80 составное; 80 = 2 × 40.
+простое ли число 82? нет: 82 составное; 82 = 2 × 41.
 85 is not prime; 85 = 5 × 17.
+59 простое; его делители — 1 и 59.
+is 61 a prime number? yes: 61 is prime; its divisors are 1 and 61.
+does 63 have exactly two divisors? no: 63 is not prime; 63 = 3 × 21.
+является ли 65 простым числом? нет: 65 составное; 65 = 5 × 13.
+простое ли число 67? да: 67 простое; его делители — 1 и 67.
+70 is not prime; 70 = 2 × 35.
+72 составное; 72 = 2 × 36.
+is 74 a prime number? no: 74 is not prime; 74 = 2 × 37.
+does 76 have exactly two divisors? no: 76 is not prime; 76 = 2 × 38.
+является ли 78 простым числом? нет: 78 составное; 78 = 2 × 39.
+простое ли число 80? нет: 80 составное; 80 = 2 × 40.
+83 is prime; its divisors are 1 and 83.
+85 составное; 85 = 5 × 17.
+is 59 a prime number? yes: 59 is prime; its divisors are 1 and 59.
+does 61 have exactly two divisors? yes: 61 is prime; its divisors are 1 and 61.
+является ли 63 простым числом? нет: 63 составное; 63 = 3 × 21.
+простое ли число 65? нет: 65 составное; 65 = 5 × 13.
+68 is not prime; 68 = 2 × 34.
+70 составное; 70 = 2 × 35.
+is 72 a prime number? no: 72 is not prime; 72 = 2 × 36.
+does 74 have exactly two divisors? no: 74 is not prime; 74 = 2 × 37.
+является ли 76 простым числом? нет: 76 составное; 76 = 2 × 38.
+простое ли число 78? нет: 78 составное; 78 = 2 × 39.
+81 is not prime; 81 = 3 × 27.
+83 простое; его делители — 1 и 83.
+is 85 a prime number? no: 85 is not prime; 85 = 5 × 17.
 
 простое ли 1? 1 ни простое, ни составное: его единственный делитель — 1.
 is 1 prime? 1 is neither prime nor composite: its only divisor is 1.
@@ -2257,118 +2425,174 @@ what is a coprime pair? a coprime pair is two numbers whose greatest common divi
 что такое остаток от деления? остаток от деления — это то, что остаётся от делимого после вычитания наибольшего целого кратного делителя.
 an even number is a whole number that is divisible by 2.
 
-87 is not prime; 87 = 3 × 29.
-91 составное; 91 = 7 × 13.
-is 95 prime? no: 95 is not prime; 95 = 5 × 19.
-простое ли 99? нет: 99 составное; 99 = 3 × 33.
-104 is not prime; 104 = 2 × 52.
-108 составное; 108 = 2 × 54.
-is 112 prime? no: 112 is not prime; 112 = 2 × 56.
-простое ли 88? нет: 88 составное; 88 = 2 × 44.
-93 is not prime; 93 = 3 × 31.
-97 простое; его делители — 1 и 97.
-is 101 prime? yes: 101 is prime; its divisors are 1 and 101.
-простое ли 105? нет: 105 составное; 105 = 3 × 35.
-110 is not prime; 110 = 2 × 55.
-86 составное; 86 = 2 × 43.
-is 90 prime? no: 90 is not prime; 90 = 2 × 45.
-простое ли 94? нет: 94 составное; 94 = 2 × 47.
-99 is not prime; 99 = 3 × 33.
-103 простое; его делители — 1 и 103.
-is 107 prime? yes: 107 is prime; its divisors are 1 and 107.
-простое ли 111? нет: 111 составное; 111 = 3 × 37.
-88 is not prime; 88 = 2 × 44.
-92 составное; 92 = 2 × 46.
-is 96 prime? no: 96 is not prime; 96 = 2 × 48.
-простое ли 100? нет: 100 составное; 100 = 2 × 50.
-105 is not prime; 105 = 3 × 35.
-109 простое; его делители — 1 и 109.
-is 113 prime? yes: 113 is prime; its divisors are 1 and 113.
-простое ли 89? да: 89 простое; его делители — 1 и 89.
-94 is not prime; 94 = 2 × 47.
-98 составное; 98 = 2 × 49.
-is 102 prime? no: 102 is not prime; 102 = 2 × 51.
-простое ли 106? нет: 106 составное; 106 = 2 × 53.
-111 is not prime; 111 = 3 × 37.
-87 составное; 87 = 3 × 29.
-is 91 prime? no: 91 is not prime; 91 = 7 × 13.
-простое ли 95? нет: 95 составное; 95 = 5 × 19.
-100 is not prime; 100 = 2 × 50.
-104 составное; 104 = 2 × 52.
-is 108 prime? no: 108 is not prime; 108 = 2 × 54.
-простое ли 112? нет: 112 составное; 112 = 2 × 56.
-89 is prime; its divisors are 1 and 89.
-93 составное; 93 = 3 × 31.
-is 97 prime? yes: 97 is prime; its divisors are 1 and 97.
-простое ли 101? да: 101 простое; его делители — 1 и 101.
-106 is not prime; 106 = 2 × 53.
-110 составное; 110 = 2 × 55.
-is 86 prime? no: 86 is not prime; 86 = 2 × 43.
-простое ли 90? нет: 90 составное; 90 = 2 × 45.
-95 is not prime; 95 = 5 × 19.
-99 составное; 99 = 3 × 33.
-is 103 prime? yes: 103 is prime; its divisors are 1 and 103.
-простое ли 107? да: 107 простое; его делители — 1 и 107.
-112 is not prime; 112 = 2 × 56.
-88 составное; 88 = 2 × 44.
-is 92 prime? no: 92 is not prime; 92 = 2 × 46.
-простое ли 96? нет: 96 составное; 96 = 2 × 48.
-101 is prime; its divisors are 1 and 101.
-105 составное; 105 = 3 × 35.
-is 109 prime? yes: 109 is prime; its divisors are 1 and 109.
-простое ли 113? да: 113 простое; его делители — 1 и 113.
-90 is not prime; 90 = 2 × 45.
-94 составное; 94 = 2 × 47.
-is 98 prime? no: 98 is not prime; 98 = 2 × 49.
-простое ли 102? нет: 102 составное; 102 = 2 × 51.
-107 is prime; its divisors are 1 and 107.
-111 составное; 111 = 3 × 37.
-is 87 prime? no: 87 is not prime; 87 = 3 × 29.
-простое ли 91? нет: 91 составное; 91 = 7 × 13.
-96 is not prime; 96 = 2 × 48.
-100 составное; 100 = 2 × 50.
-is 104 prime? no: 104 is not prime; 104 = 2 × 52.
-простое ли 108? нет: 108 составное; 108 = 2 × 54.
-113 is prime; its divisors are 1 and 113.
-89 простое; его делители — 1 и 89.
-is 93 prime? no: 93 is not prime; 93 = 3 × 31.
-простое ли 97? да: 97 простое; его делители — 1 и 97.
-102 is not prime; 102 = 2 × 51.
-106 составное; 106 = 2 × 53.
-is 110 prime? no: 110 is not prime; 110 = 2 × 55.
-простое ли 86? нет: 86 составное; 86 = 2 × 43.
-91 is not prime; 91 = 7 × 13.
+является ли 86 простым числом? нет: 86 составное; 86 = 2 × 43.
+does 89 have exactly two divisors? yes: 89 is prime; its divisors are 1 and 89.
+is 92 a prime number? no: 92 is not prime; 92 = 2 × 46.
 95 составное; 95 = 5 × 19.
-is 99 prime? no: 99 is not prime; 99 = 3 × 33.
-простое ли 103? да: 103 простое; его делители — 1 и 103.
-108 is not prime; 108 = 2 × 54.
-112 составное; 112 = 2 × 56.
-is 88 prime? no: 88 is not prime; 88 = 2 × 44.
-простое ли 92? нет: 92 составное; 92 = 2 × 46.
-97 is prime; its divisors are 1 and 97.
-101 простое; его делители — 1 и 101.
-is 105 prime? no: 105 is not prime; 105 = 3 × 35.
-простое ли 109? да: 109 простое; его делители — 1 и 109.
-86 is not prime; 86 = 2 × 43.
-90 составное; 90 = 2 × 45.
-is 94 prime? no: 94 is not prime; 94 = 2 × 47.
-простое ли 98? нет: 98 составное; 98 = 2 × 49.
-103 is prime; its divisors are 1 and 103.
-107 простое; его делители — 1 и 107.
-is 111 prime? no: 111 is not prime; 111 = 3 × 37.
-простое ли 87? нет: 87 составное; 87 = 3 × 29.
-92 is not prime; 92 = 2 × 46.
-96 составное; 96 = 2 × 48.
-is 100 prime? no: 100 is not prime; 100 = 2 × 50.
-простое ли 104? нет: 104 составное; 104 = 2 × 52.
-109 is prime; its divisors are 1 and 109.
-113 простое; его делители — 1 и 113.
-is 89 prime? yes: 89 is prime; its divisors are 1 and 89.
-простое ли 93? нет: 93 составное; 93 = 3 × 31.
 98 is not prime; 98 = 2 × 49.
+простое ли число 100? нет: 100 составное; 100 = 2 × 50.
+является ли 103 простым числом? да: 103 простое; его делители — 1 и 103.
+does 106 have exactly two divisors? no: 106 is not prime; 106 = 2 × 53.
+is 109 a prime number? yes: 109 is prime; its divisors are 1 and 109.
+112 составное; 112 = 2 × 56.
+87 is not prime; 87 = 3 × 29.
+простое ли число 89? да: 89 простое; его делители — 1 и 89.
+является ли 92 простым числом? нет: 92 составное; 92 = 2 × 46.
+does 95 have exactly two divisors? no: 95 is not prime; 95 = 5 × 19.
+is 98 a prime number? no: 98 is not prime; 98 = 2 × 49.
+101 простое; его делители — 1 и 101.
+104 is not prime; 104 = 2 × 52.
+простое ли число 106? нет: 106 составное; 106 = 2 × 53.
+является ли 109 простым числом? да: 109 простое; его делители — 1 и 109.
+does 112 have exactly two divisors? no: 112 is not prime; 112 = 2 × 56.
+is 87 a prime number? no: 87 is not prime; 87 = 3 × 29.
+90 составное; 90 = 2 × 45.
+93 is not prime; 93 = 3 × 31.
+простое ли число 95? нет: 95 составное; 95 = 5 × 19.
+является ли 98 простым числом? нет: 98 составное; 98 = 2 × 49.
+does 101 have exactly two divisors? yes: 101 is prime; its divisors are 1 and 101.
+is 104 a prime number? no: 104 is not prime; 104 = 2 × 52.
+107 простое; его делители — 1 и 107.
+110 is not prime; 110 = 2 × 55.
+простое ли число 112? нет: 112 составное; 112 = 2 × 56.
+является ли 87 простым числом? нет: 87 составное; 87 = 3 × 29.
+does 90 have exactly two divisors? no: 90 is not prime; 90 = 2 × 45.
+is 93 a prime number? no: 93 is not prime; 93 = 3 × 31.
+96 составное; 96 = 2 × 48.
+99 is not prime; 99 = 3 × 33.
+простое ли число 101? да: 101 простое; его делители — 1 и 101.
+является ли 104 простым числом? нет: 104 составное; 104 = 2 × 52.
+does 107 have exactly two divisors? yes: 107 is prime; its divisors are 1 and 107.
+is 110 a prime number? no: 110 is not prime; 110 = 2 × 55.
+113 простое; его делители — 1 и 113.
+88 is not prime; 88 = 2 × 44.
+простое ли число 90? нет: 90 составное; 90 = 2 × 45.
+является ли 93 простым числом? нет: 93 составное; 93 = 3 × 31.
+does 96 have exactly two divisors? no: 96 is not prime; 96 = 2 × 48.
+is 99 a prime number? no: 99 is not prime; 99 = 3 × 33.
 102 составное; 102 = 2 × 51.
-is 106 prime? no: 106 is not prime; 106 = 2 × 53.
-простое ли 110? нет: 110 составное; 110 = 2 × 55.
+105 is not prime; 105 = 3 × 35.
+простое ли число 107? да: 107 простое; его делители — 1 и 107.
+является ли 110 простым числом? нет: 110 составное; 110 = 2 × 55.
+does 113 have exactly two divisors? yes: 113 is prime; its divisors are 1 and 113.
+is 88 a prime number? no: 88 is not prime; 88 = 2 × 44.
+91 составное; 91 = 7 × 13.
+94 is not prime; 94 = 2 × 47.
+простое ли число 96? нет: 96 составное; 96 = 2 × 48.
+является ли 99 простым числом? нет: 99 составное; 99 = 3 × 33.
+does 102 have exactly two divisors? no: 102 is not prime; 102 = 2 × 51.
+is 105 a prime number? no: 105 is not prime; 105 = 3 × 35.
+108 составное; 108 = 2 × 54.
+111 is not prime; 111 = 3 × 37.
+простое ли число 113? да: 113 простое; его делители — 1 и 113.
+является ли 88 простым числом? нет: 88 составное; 88 = 2 × 44.
+does 91 have exactly two divisors? no: 91 is not prime; 91 = 7 × 13.
+is 94 a prime number? no: 94 is not prime; 94 = 2 × 47.
+97 простое; его делители — 1 и 97.
+100 is not prime; 100 = 2 × 50.
+простое ли число 102? нет: 102 составное; 102 = 2 × 51.
+является ли 105 простым числом? нет: 105 составное; 105 = 3 × 35.
+does 108 have exactly two divisors? no: 108 is not prime; 108 = 2 × 54.
+is 111 a prime number? no: 111 is not prime; 111 = 3 × 37.
+86 составное; 86 = 2 × 43.
+89 is prime; its divisors are 1 and 89.
+простое ли число 91? нет: 91 составное; 91 = 7 × 13.
+является ли 94 простым числом? нет: 94 составное; 94 = 2 × 47.
+does 97 have exactly two divisors? yes: 97 is prime; its divisors are 1 and 97.
+is 100 a prime number? no: 100 is not prime; 100 = 2 × 50.
+103 простое; его делители — 1 и 103.
+106 is not prime; 106 = 2 × 53.
+простое ли число 108? нет: 108 составное; 108 = 2 × 54.
+является ли 111 простым числом? нет: 111 составное; 111 = 3 × 37.
+does 86 have exactly two divisors? no: 86 is not prime; 86 = 2 × 43.
+is 89 a prime number? yes: 89 is prime; its divisors are 1 and 89.
+92 составное; 92 = 2 × 46.
+95 is not prime; 95 = 5 × 19.
+простое ли число 97? да: 97 простое; его делители — 1 и 97.
+является ли 100 простым числом? нет: 100 составное; 100 = 2 × 50.
+does 103 have exactly two divisors? yes: 103 is prime; its divisors are 1 and 103.
+is 106 a prime number? no: 106 is not prime; 106 = 2 × 53.
+109 простое; его делители — 1 и 109.
+112 is not prime; 112 = 2 × 56.
+простое ли число 86? нет: 86 составное; 86 = 2 × 43.
+является ли 89 простым числом? да: 89 простое; его делители — 1 и 89.
+does 92 have exactly two divisors? no: 92 is not prime; 92 = 2 × 46.
+is 95 a prime number? no: 95 is not prime; 95 = 5 × 19.
+98 составное; 98 = 2 × 49.
+101 is prime; its divisors are 1 and 101.
+простое ли число 103? да: 103 простое; его делители — 1 и 103.
+является ли 106 простым числом? нет: 106 составное; 106 = 2 × 53.
+does 109 have exactly two divisors? yes: 109 is prime; its divisors are 1 and 109.
+is 112 a prime number? no: 112 is not prime; 112 = 2 × 56.
+87 составное; 87 = 3 × 29.
+90 is not prime; 90 = 2 × 45.
+простое ли число 92? нет: 92 составное; 92 = 2 × 46.
+является ли 95 простым числом? нет: 95 составное; 95 = 5 × 19.
+does 98 have exactly two divisors? no: 98 is not prime; 98 = 2 × 49.
+is 101 a prime number? yes: 101 is prime; its divisors are 1 and 101.
+104 составное; 104 = 2 × 52.
+107 is prime; its divisors are 1 and 107.
+простое ли число 109? да: 109 простое; его делители — 1 и 109.
+является ли 112 простым числом? нет: 112 составное; 112 = 2 × 56.
+does 87 have exactly two divisors? no: 87 is not prime; 87 = 3 × 29.
+is 90 a prime number? no: 90 is not prime; 90 = 2 × 45.
+93 составное; 93 = 3 × 31.
+96 is not prime; 96 = 2 × 48.
+простое ли число 98? нет: 98 составное; 98 = 2 × 49.
+является ли 101 простым числом? да: 101 простое; его делители — 1 и 101.
+does 104 have exactly two divisors? no: 104 is not prime; 104 = 2 × 52.
+is 107 a prime number? yes: 107 is prime; its divisors are 1 and 107.
+110 составное; 110 = 2 × 55.
+113 is prime; its divisors are 1 and 113.
+простое ли число 87? нет: 87 составное; 87 = 3 × 29.
+является ли 90 простым числом? нет: 90 составное; 90 = 2 × 45.
+does 93 have exactly two divisors? no: 93 is not prime; 93 = 3 × 31.
+is 96 a prime number? no: 96 is not prime; 96 = 2 × 48.
+99 составное; 99 = 3 × 33.
+102 is not prime; 102 = 2 × 51.
+простое ли число 104? нет: 104 составное; 104 = 2 × 52.
+является ли 107 простым числом? да: 107 простое; его делители — 1 и 107.
+does 110 have exactly two divisors? no: 110 is not prime; 110 = 2 × 55.
+is 113 a prime number? yes: 113 is prime; its divisors are 1 and 113.
+88 составное; 88 = 2 × 44.
+91 is not prime; 91 = 7 × 13.
+простое ли число 93? нет: 93 составное; 93 = 3 × 31.
+является ли 96 простым числом? нет: 96 составное; 96 = 2 × 48.
+does 99 have exactly two divisors? no: 99 is not prime; 99 = 3 × 33.
+is 102 a prime number? no: 102 is not prime; 102 = 2 × 51.
+105 составное; 105 = 3 × 35.
+108 is not prime; 108 = 2 × 54.
+простое ли число 110? нет: 110 составное; 110 = 2 × 55.
+является ли 113 простым числом? да: 113 простое; его делители — 1 и 113.
+does 88 have exactly two divisors? no: 88 is not prime; 88 = 2 × 44.
+is 91 a prime number? no: 91 is not prime; 91 = 7 × 13.
+94 составное; 94 = 2 × 47.
+97 is prime; its divisors are 1 and 97.
+простое ли число 99? нет: 99 составное; 99 = 3 × 33.
+является ли 102 простым числом? нет: 102 составное; 102 = 2 × 51.
+does 105 have exactly two divisors? no: 105 is not prime; 105 = 3 × 35.
+is 108 a prime number? no: 108 is not prime; 108 = 2 × 54.
+111 составное; 111 = 3 × 37.
+86 is not prime; 86 = 2 × 43.
+простое ли число 88? нет: 88 составное; 88 = 2 × 44.
+является ли 91 простым числом? нет: 91 составное; 91 = 7 × 13.
+does 94 have exactly two divisors? no: 94 is not prime; 94 = 2 × 47.
+is 97 a prime number? yes: 97 is prime; its divisors are 1 and 97.
+100 составное; 100 = 2 × 50.
+103 is prime; its divisors are 1 and 103.
+простое ли число 105? нет: 105 составное; 105 = 3 × 35.
+является ли 108 простым числом? нет: 108 составное; 108 = 2 × 54.
+does 111 have exactly two divisors? no: 111 is not prime; 111 = 3 × 37.
+is 86 a prime number? no: 86 is not prime; 86 = 2 × 43.
+89 простое; его делители — 1 и 89.
+92 is not prime; 92 = 2 × 46.
+простое ли число 94? нет: 94 составное; 94 = 2 × 47.
+является ли 97 простым числом? да: 97 простое; его делители — 1 и 97.
+does 100 have exactly two divisors? no: 100 is not prime; 100 = 2 × 50.
+is 103 a prime number? yes: 103 is prime; its divisors are 1 and 103.
+106 составное; 106 = 2 × 53.
+109 is prime; its divisors are 1 and 109.
+простое ли число 111? нет: 111 составное; 111 = 3 × 37.
 
 is 1 prime? 1 is neither prime nor composite: its only divisor is 1.
 простое ли 1? 1 ни простое, ни составное: его единственный делитель — 1.
@@ -3010,118 +3234,174 @@ a multiple of a number is the product of that number and a whole number.
 what is a coprime pair? a coprime pair is two numbers whose greatest common divisor is 1.
 что такое кратное числа? кратное числа — это произведение этого числа и целого числа.
 
-117 is not prime; 117 = 3 × 39.
-простое ли 121? нет: 121 составное; 121 = 11 × 11.
-is 126 prime? no: 126 is not prime; 126 = 2 × 63.
-131 простое; его делители — 1 и 131.
-136 is not prime; 136 = 2 × 68.
-простое ли 140? нет: 140 составное; 140 = 2 × 70.
-is 117 prime? no: 117 is not prime; 117 = 3 × 39.
-122 составное; 122 = 2 × 61.
-127 is prime; its divisors are 1 and 127.
-простое ли 131? да: 131 простое; его делители — 1 и 131.
-is 136 prime? no: 136 is not prime; 136 = 2 × 68.
-141 составное; 141 = 3 × 47.
-118 is not prime; 118 = 2 × 59.
-простое ли 122? нет: 122 составное; 122 = 2 × 61.
-is 127 prime? yes: 127 is prime; its divisors are 1 and 127.
-132 составное; 132 = 2 × 66.
-137 is prime; its divisors are 1 and 137.
-простое ли 141? нет: 141 составное; 141 = 3 × 47.
-is 118 prime? no: 118 is not prime; 118 = 2 × 59.
-123 составное; 123 = 3 × 41.
-128 is not prime; 128 = 2 × 64.
-простое ли 132? нет: 132 составное; 132 = 2 × 66.
-is 137 prime? yes: 137 is prime; its divisors are 1 and 137.
-114 составное; 114 = 2 × 57.
-119 is not prime; 119 = 7 × 17.
-простое ли 123? нет: 123 составное; 123 = 3 × 41.
-is 128 prime? no: 128 is not prime; 128 = 2 × 64.
-133 составное; 133 = 7 × 19.
-138 is not prime; 138 = 2 × 69.
-простое ли 114? нет: 114 составное; 114 = 2 × 57.
-is 119 prime? no: 119 is not prime; 119 = 7 × 17.
-124 составное; 124 = 2 × 62.
-129 is not prime; 129 = 3 × 43.
-простое ли 133? нет: 133 составное; 133 = 7 × 19.
-is 138 prime? no: 138 is not prime; 138 = 2 × 69.
-115 составное; 115 = 5 × 23.
-120 is not prime; 120 = 2 × 60.
-простое ли 124? нет: 124 составное; 124 = 2 × 62.
-is 129 prime? no: 129 is not prime; 129 = 3 × 43.
-134 составное; 134 = 2 × 67.
-139 is prime; its divisors are 1 and 139.
-простое ли 115? нет: 115 составное; 115 = 5 × 23.
-is 120 prime? no: 120 is not prime; 120 = 2 × 60.
-125 составное; 125 = 5 × 25.
-130 is not prime; 130 = 2 × 65.
-простое ли 134? нет: 134 составное; 134 = 2 × 67.
-is 139 prime? yes: 139 is prime; its divisors are 1 and 139.
-116 составное; 116 = 2 × 58.
-121 is not prime; 121 = 11 × 11.
-простое ли 125? нет: 125 составное; 125 = 5 × 25.
-is 130 prime? no: 130 is not prime; 130 = 2 × 65.
-135 составное; 135 = 3 × 45.
-140 is not prime; 140 = 2 × 70.
-простое ли 116? нет: 116 составное; 116 = 2 × 58.
-is 121 prime? no: 121 is not prime; 121 = 11 × 11.
-126 составное; 126 = 2 × 63.
-131 is prime; its divisors are 1 and 131.
-простое ли 135? нет: 135 составное; 135 = 3 × 45.
-is 140 prime? no: 140 is not prime; 140 = 2 × 70.
-117 составное; 117 = 3 × 39.
-122 is not prime; 122 = 2 × 61.
-простое ли 126? нет: 126 составное; 126 = 2 × 63.
-is 131 prime? yes: 131 is prime; its divisors are 1 and 131.
-136 составное; 136 = 2 × 68.
-141 is not prime; 141 = 3 × 47.
-простое ли 117? нет: 117 составное; 117 = 3 × 39.
-is 122 prime? no: 122 is not prime; 122 = 2 × 61.
-127 простое; его делители — 1 и 127.
-132 is not prime; 132 = 2 × 66.
-простое ли 136? нет: 136 составное; 136 = 2 × 68.
-is 141 prime? no: 141 is not prime; 141 = 3 × 47.
-118 составное; 118 = 2 × 59.
-123 is not prime; 123 = 3 × 41.
-простое ли 127? да: 127 простое; его делители — 1 и 127.
-is 132 prime? no: 132 is not prime; 132 = 2 × 66.
-137 простое; его делители — 1 и 137.
-114 is not prime; 114 = 2 × 57.
-простое ли 118? нет: 118 составное; 118 = 2 × 59.
-is 123 prime? no: 123 is not prime; 123 = 3 × 41.
-128 составное; 128 = 2 × 64.
-133 is not prime; 133 = 7 × 19.
-простое ли 137? да: 137 простое; его делители — 1 и 137.
-is 114 prime? no: 114 is not prime; 114 = 2 × 57.
-119 составное; 119 = 7 × 17.
-124 is not prime; 124 = 2 × 62.
-простое ли 128? нет: 128 составное; 128 = 2 × 64.
-is 133 prime? no: 133 is not prime; 133 = 7 × 19.
-138 составное; 138 = 2 × 69.
-115 is not prime; 115 = 5 × 23.
-простое ли 119? нет: 119 составное; 119 = 7 × 17.
-is 124 prime? no: 124 is not prime; 124 = 2 × 62.
-129 составное; 129 = 3 × 43.
-134 is not prime; 134 = 2 × 67.
-простое ли 138? нет: 138 составное; 138 = 2 × 69.
-is 115 prime? no: 115 is not prime; 115 = 5 × 23.
-120 составное; 120 = 2 × 60.
-125 is not prime; 125 = 5 × 25.
-простое ли 129? нет: 129 составное; 129 = 3 × 43.
-is 134 prime? no: 134 is not prime; 134 = 2 × 67.
-139 простое; его делители — 1 и 139.
 116 is not prime; 116 = 2 × 58.
-простое ли 120? нет: 120 составное; 120 = 2 × 60.
-is 125 prime? no: 125 is not prime; 125 = 5 × 25.
-130 составное; 130 = 2 × 65.
+119 составное; 119 = 7 × 17.
+is 122 a prime number? no: 122 is not prime; 122 = 2 × 61.
+does 125 have exactly two divisors? no: 125 is not prime; 125 = 5 × 25.
+является ли 128 простым числом? нет: 128 составное; 128 = 2 × 64.
+простое ли число 131? да: 131 простое; его делители — 1 и 131.
 135 is not prime; 135 = 3 × 45.
-простое ли 139? да: 139 простое; его делители — 1 и 139.
-is 116 prime? no: 116 is not prime; 116 = 2 × 58.
-121 составное; 121 = 11 × 11.
+138 составное; 138 = 2 × 69.
+is 141 a prime number? no: 141 is not prime; 141 = 3 × 47.
+does 116 have exactly two divisors? no: 116 is not prime; 116 = 2 × 58.
+является ли 119 простым числом? нет: 119 составное; 119 = 7 × 17.
+простое ли число 122? нет: 122 составное; 122 = 2 × 61.
 126 is not prime; 126 = 2 × 63.
-простое ли 130? нет: 130 составное; 130 = 2 × 65.
-is 135 prime? no: 135 is not prime; 135 = 3 × 45.
+129 составное; 129 = 3 × 43.
+is 132 a prime number? no: 132 is not prime; 132 = 2 × 66.
+does 135 have exactly two divisors? no: 135 is not prime; 135 = 3 × 45.
+является ли 138 простым числом? нет: 138 составное; 138 = 2 × 69.
+простое ли число 141? нет: 141 составное; 141 = 3 × 47.
+117 is not prime; 117 = 3 × 39.
+120 составное; 120 = 2 × 60.
+is 123 a prime number? no: 123 is not prime; 123 = 3 × 41.
+does 126 have exactly two divisors? no: 126 is not prime; 126 = 2 × 63.
+является ли 129 простым числом? нет: 129 составное; 129 = 3 × 43.
+простое ли число 132? нет: 132 составное; 132 = 2 × 66.
+136 is not prime; 136 = 2 × 68.
+139 простое; его делители — 1 и 139.
+is 114 a prime number? no: 114 is not prime; 114 = 2 × 57.
+does 117 have exactly two divisors? no: 117 is not prime; 117 = 3 × 39.
+является ли 120 простым числом? нет: 120 составное; 120 = 2 × 60.
+простое ли число 123? нет: 123 составное; 123 = 3 × 41.
+127 is prime; its divisors are 1 and 127.
+130 составное; 130 = 2 × 65.
+is 133 a prime number? no: 133 is not prime; 133 = 7 × 19.
+does 136 have exactly two divisors? no: 136 is not prime; 136 = 2 × 68.
+является ли 139 простым числом? да: 139 простое; его делители — 1 и 139.
+простое ли число 114? нет: 114 составное; 114 = 2 × 57.
+118 is not prime; 118 = 2 × 59.
+121 составное; 121 = 11 × 11.
+is 124 a prime number? no: 124 is not prime; 124 = 2 × 62.
+does 127 have exactly two divisors? yes: 127 is prime; its divisors are 1 and 127.
+является ли 130 простым числом? нет: 130 составное; 130 = 2 × 65.
+простое ли число 133? нет: 133 составное; 133 = 7 × 19.
+137 is prime; its divisors are 1 and 137.
 140 составное; 140 = 2 × 70.
+is 115 a prime number? no: 115 is not prime; 115 = 5 × 23.
+does 118 have exactly two divisors? no: 118 is not prime; 118 = 2 × 59.
+является ли 121 простым числом? нет: 121 составное; 121 = 11 × 11.
+простое ли число 124? нет: 124 составное; 124 = 2 × 62.
+128 is not prime; 128 = 2 × 64.
+131 простое; его делители — 1 и 131.
+is 134 a prime number? no: 134 is not prime; 134 = 2 × 67.
+does 137 have exactly two divisors? yes: 137 is prime; its divisors are 1 and 137.
+является ли 140 простым числом? нет: 140 составное; 140 = 2 × 70.
+простое ли число 115? нет: 115 составное; 115 = 5 × 23.
+119 is not prime; 119 = 7 × 17.
+122 составное; 122 = 2 × 61.
+is 125 a prime number? no: 125 is not prime; 125 = 5 × 25.
+does 128 have exactly two divisors? no: 128 is not prime; 128 = 2 × 64.
+является ли 131 простым числом? да: 131 простое; его делители — 1 и 131.
+простое ли число 134? нет: 134 составное; 134 = 2 × 67.
+138 is not prime; 138 = 2 × 69.
+141 составное; 141 = 3 × 47.
+is 116 a prime number? no: 116 is not prime; 116 = 2 × 58.
+does 119 have exactly two divisors? no: 119 is not prime; 119 = 7 × 17.
+является ли 122 простым числом? нет: 122 составное; 122 = 2 × 61.
+простое ли число 125? нет: 125 составное; 125 = 5 × 25.
+129 is not prime; 129 = 3 × 43.
+132 составное; 132 = 2 × 66.
+is 135 a prime number? no: 135 is not prime; 135 = 3 × 45.
+does 138 have exactly two divisors? no: 138 is not prime; 138 = 2 × 69.
+является ли 141 простым числом? нет: 141 составное; 141 = 3 × 47.
+простое ли число 116? нет: 116 составное; 116 = 2 × 58.
+120 is not prime; 120 = 2 × 60.
+123 составное; 123 = 3 × 41.
+is 126 a prime number? no: 126 is not prime; 126 = 2 × 63.
+does 129 have exactly two divisors? no: 129 is not prime; 129 = 3 × 43.
+является ли 132 простым числом? нет: 132 составное; 132 = 2 × 66.
+простое ли число 135? нет: 135 составное; 135 = 3 × 45.
+139 is prime; its divisors are 1 and 139.
+114 составное; 114 = 2 × 57.
+is 117 a prime number? no: 117 is not prime; 117 = 3 × 39.
+does 120 have exactly two divisors? no: 120 is not prime; 120 = 2 × 60.
+является ли 123 простым числом? нет: 123 составное; 123 = 3 × 41.
+простое ли число 126? нет: 126 составное; 126 = 2 × 63.
+130 is not prime; 130 = 2 × 65.
+133 составное; 133 = 7 × 19.
+is 136 a prime number? no: 136 is not prime; 136 = 2 × 68.
+does 139 have exactly two divisors? yes: 139 is prime; its divisors are 1 and 139.
+является ли 114 простым числом? нет: 114 составное; 114 = 2 × 57.
+простое ли число 117? нет: 117 составное; 117 = 3 × 39.
+121 is not prime; 121 = 11 × 11.
+124 составное; 124 = 2 × 62.
+is 127 a prime number? yes: 127 is prime; its divisors are 1 and 127.
+does 130 have exactly two divisors? no: 130 is not prime; 130 = 2 × 65.
+является ли 133 простым числом? нет: 133 составное; 133 = 7 × 19.
+простое ли число 136? нет: 136 составное; 136 = 2 × 68.
+140 is not prime; 140 = 2 × 70.
+115 составное; 115 = 5 × 23.
+is 118 a prime number? no: 118 is not prime; 118 = 2 × 59.
+does 121 have exactly two divisors? no: 121 is not prime; 121 = 11 × 11.
+является ли 124 простым числом? нет: 124 составное; 124 = 2 × 62.
+простое ли число 127? да: 127 простое; его делители — 1 и 127.
+131 is prime; its divisors are 1 and 131.
+134 составное; 134 = 2 × 67.
+is 137 a prime number? yes: 137 is prime; its divisors are 1 and 137.
+does 140 have exactly two divisors? no: 140 is not prime; 140 = 2 × 70.
+является ли 115 простым числом? нет: 115 составное; 115 = 5 × 23.
+простое ли число 118? нет: 118 составное; 118 = 2 × 59.
+122 is not prime; 122 = 2 × 61.
+125 составное; 125 = 5 × 25.
+is 128 a prime number? no: 128 is not prime; 128 = 2 × 64.
+does 131 have exactly two divisors? yes: 131 is prime; its divisors are 1 and 131.
+является ли 134 простым числом? нет: 134 составное; 134 = 2 × 67.
+простое ли число 137? да: 137 простое; его делители — 1 и 137.
+141 is not prime; 141 = 3 × 47.
+116 составное; 116 = 2 × 58.
+is 119 a prime number? no: 119 is not prime; 119 = 7 × 17.
+does 122 have exactly two divisors? no: 122 is not prime; 122 = 2 × 61.
+является ли 125 простым числом? нет: 125 составное; 125 = 5 × 25.
+простое ли число 128? нет: 128 составное; 128 = 2 × 64.
+132 is not prime; 132 = 2 × 66.
+135 составное; 135 = 3 × 45.
+is 138 a prime number? no: 138 is not prime; 138 = 2 × 69.
+does 141 have exactly two divisors? no: 141 is not prime; 141 = 3 × 47.
+является ли 116 простым числом? нет: 116 составное; 116 = 2 × 58.
+простое ли число 119? нет: 119 составное; 119 = 7 × 17.
+123 is not prime; 123 = 3 × 41.
+126 составное; 126 = 2 × 63.
+is 129 a prime number? no: 129 is not prime; 129 = 3 × 43.
+does 132 have exactly two divisors? no: 132 is not prime; 132 = 2 × 66.
+является ли 135 простым числом? нет: 135 составное; 135 = 3 × 45.
+простое ли число 138? нет: 138 составное; 138 = 2 × 69.
+114 is not prime; 114 = 2 × 57.
+117 составное; 117 = 3 × 39.
+is 120 a prime number? no: 120 is not prime; 120 = 2 × 60.
+does 123 have exactly two divisors? no: 123 is not prime; 123 = 3 × 41.
+является ли 126 простым числом? нет: 126 составное; 126 = 2 × 63.
+простое ли число 129? нет: 129 составное; 129 = 3 × 43.
+133 is not prime; 133 = 7 × 19.
+136 составное; 136 = 2 × 68.
+is 139 a prime number? yes: 139 is prime; its divisors are 1 and 139.
+does 114 have exactly two divisors? no: 114 is not prime; 114 = 2 × 57.
+является ли 117 простым числом? нет: 117 составное; 117 = 3 × 39.
+простое ли число 120? нет: 120 составное; 120 = 2 × 60.
+124 is not prime; 124 = 2 × 62.
+127 простое; его делители — 1 и 127.
+is 130 a prime number? no: 130 is not prime; 130 = 2 × 65.
+does 133 have exactly two divisors? no: 133 is not prime; 133 = 7 × 19.
+является ли 136 простым числом? нет: 136 составное; 136 = 2 × 68.
+простое ли число 139? да: 139 простое; его делители — 1 и 139.
+115 is not prime; 115 = 5 × 23.
+118 составное; 118 = 2 × 59.
+is 121 a prime number? no: 121 is not prime; 121 = 11 × 11.
+does 124 have exactly two divisors? no: 124 is not prime; 124 = 2 × 62.
+является ли 127 простым числом? да: 127 простое; его делители — 1 и 127.
+простое ли число 130? нет: 130 составное; 130 = 2 × 65.
+134 is not prime; 134 = 2 × 67.
+137 простое; его делители — 1 и 137.
+is 140 a prime number? no: 140 is not prime; 140 = 2 × 70.
+does 115 have exactly two divisors? no: 115 is not prime; 115 = 5 × 23.
+является ли 118 простым числом? нет: 118 составное; 118 = 2 × 59.
+простое ли число 121? нет: 121 составное; 121 = 11 × 11.
+125 is not prime; 125 = 5 × 25.
+128 составное; 128 = 2 × 64.
+is 131 a prime number? yes: 131 is prime; its divisors are 1 and 131.
+does 134 have exactly two divisors? no: 134 is not prime; 134 = 2 × 67.
+является ли 137 простым числом? да: 137 простое; его делители — 1 и 137.
+простое ли число 140? нет: 140 составное; 140 = 2 × 70.
 
 is 1 prime? 1 is neither prime nor composite: its only divisor is 1.
 простое ли 1? 1 ни простое, ни составное: его единственный делитель — 1.
