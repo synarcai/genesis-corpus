@@ -70,7 +70,7 @@ for _где in (КОРЕНЬ / "courts", КОРЕНЬ / "tools", КОРЕНЬ / 
            "ru_conversion_court", "ru_compare_court",
            "selfmeasure_court",
            "ru_story_court",
-           "share_court", "compare_mult_court", "notationvar_court",
+           "share_court", "compare_mult_court", "notationvar_court", "ruverbs_court",
            "inquiry_pt_nl_court", "inquiry_pl_tr_court",
            "relation_court", "prosetree_court", "longdiv_court",
            "metalang_court")
