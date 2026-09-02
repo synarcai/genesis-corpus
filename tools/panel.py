@@ -65,6 +65,7 @@ for _где in (КОРЕНЬ / "courts", КОРЕНЬ / "tools", КОРЕНЬ / 
            # суды объявлены здесь, а не только обходом (суд состава
            # 03.09: семь живых судов без объявления).
            "glyph_court", "space_court", "stenogram_court",
+           "money_court",
            "mathspaces_court", "gsmforms_court", "engram_court",
            "definitions_court", "pronoun_court",
            "rates_court", "formula_lang_court",

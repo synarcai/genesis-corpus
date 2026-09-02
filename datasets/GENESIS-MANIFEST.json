@@ -226,6 +226,33 @@
       ]
     },
     {
+      "name": "money",
+      "file": "datasets/genesis_money.txt",
+      "genre": "money in CENTS and the bridge to the decimal writing (e9's order 04.09, band g1: 15 of 65 problems carry «$16.50», and the organism is honestly mute on decimals): prices, sums, multiples and change counted in whole cents and kopecks — «a pen costs 250 cents and a book costs 375 cents. how much do they cost together? 250 + 375 = 625 cents.», «ann paid 1000 cents for a book that costs 625 cents. how much change did ann get? 1000 − 625 = 375 cents.», «ручка стоит 250 копеек, а книга стоит 375 копеек; вместе они стоят 625 копеек: 250 + 375 = 625.»; the decimal price is shown as a BRIDGE with its ledger («16.50 dollars is 1650 cents: 16 × 100 = 1600, 1600 + 50 = 1650.», «16 рублей 50 копеек — это 1650 копеек: …») and a sum in dollars carries the same sum in cents as its witness («16.50 + 2.50 = 19.00 dollars: 1650 + 250 = 1900 cents»); the answer opens with the question's first quantity; the court reads dollars and cents from the decimal writing itself, recomputes every link, and checks the kopeck and rouble forms by the house of forms and the names by the packs",
+      "act": [
+        "recount",
+        "name",
+        "translate"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "exact_only"
+      ],
+      "size": 46305,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": [
+        "person_names:en",
+        "person_names:ru"
+      ]
+    },
+    {
       "name": "aggregate",
       "file": "datasets/genesis_aggregate.txt",
       "genre": "aggregate genus: a fact of a plural bearer",
