@@ -52,42 +52,58 @@ def словарь_пакета(язык):
         п = json.loads(ф.read_text(encoding="utf-8"))
     except (OSError, ValueError):
         return None, False
+    # ОБЪЯВЛЕННАЯ ФОРМА БЕРЁТСЯ ЦЕЛИКОМ, А НЕ ЧЕРЕЗ ОБРАЗЕЦ СЛОВА.
+    # Прежде ВСЕ поля пакета резались слепым `[^\W\d_]+` — и слово
+    # деванагари не попадало в словарь ВООБЩЕ: «अच्छा» распадалось на
+    # обломки, обломки ложились в набор, а целое слово из показа
+    # объявлялось необъявленным. Прибор резал объявление тем же
+    # промахом, каким резал показ, и потому расхождения не видел.
+    # Формы кладутся целиком; образец нужен лишь там, где объявлена
+    # ФРАЗА (шаблон, пара отказа, вопрос) — и он выводится из уже
+    # собранных форм, а не из латинской привычки.
     слова = {str(v).lower() for v in (п.get("numerals") or {}).values()}
+    фразы = []
     for род in (п.get("show_kinds") or {}).values():
         слова |= {str(w).lower() for w in (род.get("ops") or {})}
         слова |= {str(w).lower() for w in род.get("lexicon", [])}
         for пара in род.get("pairs", []):
-            for сторона in ("bad", "good"):
-                слова |= {w.lower() for w in СЛОВО.findall(пара.get(сторона, ""))}
+            фразы += [пара.get(с, "") for с in ("bad", "good")]
         for шаблон in род.get("templates", []):
-            # слова САМОГО шаблона — рамка, в которой живёт форма
-            голый = re.sub(r"\{[^}]*\}", " ", шаблон)
-            слова |= {w.lower() for w in СЛОВО.findall(голый)}
+            фразы.append(re.sub(r"\{[^}]*\}", " ", шаблон))
     for кл in (п.get("morph_classes") or {}).values():
         for формы in кл.get("lexemes", {}).values():
-            for ф_ in формы:
-                слова |= {w.lower() for w in СЛОВО.findall(str(ф_))}
+            слова |= {str(ф_).strip().lower() for ф_ in формы
+                      if str(ф_).strip()}
     for имена in (п.get("sign_names") or {}).values():
         имена = [имена] if isinstance(имена, str) else имена
-        for имя in имена:
-            слова |= {w.lower() for w in СЛОВО.findall(str(имя))}
+        слова |= {str(и).strip().lower() for и in имена}
     слова |= {w.lower() for w in п.get("function_words", [])}
-    for вопрос in п.get("reserved", []):
-        слова |= {w.lower() for w in СЛОВО.findall(вопрос)}
+    фразы += list(п.get("reserved", []))
     for пара in (п.get("noun_forms") or {}).items():
-        слова |= {str(x).lower() for x in пара}
+        слова |= {str(x).strip().lower() for x in пара}
+    слова |= {str(x).strip().lower() for x in п.get("probe", [])}
+    слова |= {str(x).strip().lower() for x in п.get("irregulars", [])}
+    образец = word_re(слова)
+    for фраза in фразы:
+        слова |= {w.lower() for w in образец.findall(str(фраза))}
+    слова.discard("")
     без_пробела = п.get("segmentation") == "longest-match"
     return слова, без_пробела
 
 
 def чужие(строка, слова, без_пробела):
-    """Слова показа, которых пакет не объявлял."""
+    """Слова показа, которых пакет не объявлял.
+
+    РЕЖЕТ ОДИН ДОМ. Прежде здесь стоял свой образец слова, и он не знал
+    об ОБЪЯВЛЕННОМ МНОГОСЛОВНОМ: вьетнамское «mười lăm» (пятнадцать) и
+    «bốn mươi» (сорок) распадались, и обломки «lăm», «mươi» объявлялись
+    необъявленными словами. Сегментатор знает этот закон; суд обязан
+    звать его, а не повторять половину.
+    """
     образец = word_re(слова)
-    if без_пробела:
-        куски = tokens(строка.lower(), слова, spaced=False)
-    else:
-        куски = образец.findall(строка.lower())
-    return [w for w in куски if образец.fullmatch(w) and w not in слова]
+    куски = tokens(строка.lower(), слова, spaced=not без_пробела)
+    return [w for w in куски
+            if w not in слова and (образец.fullmatch(w) or " " in w)]
 
 
 def пласты(явные):

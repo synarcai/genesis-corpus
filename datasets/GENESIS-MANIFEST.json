@@ -859,22 +859,126 @@
       ]
     },
     {
+      "name": "lang_el",
+      "file": "datasets/genesis_lang_el.txt",
+      "genre": "greek: the corpus's third alphabet, three genders, and the accent as an OBLIGATORY sign — a word without it is a different word (tier 1: structure green, forms agree with the pack's own rules)",
+      "size": 60000,
+      "tiers": [],
+      "text": "shows",
+      "script": "greek",
+      "segmentation": "spaced",
+      "assemblies": [
+        "school"
+      ]
+    },
+    {
+      "name": "lang_ar",
+      "file": "datasets/genesis_lang_ar.txt",
+      "genre": "arabic: written RIGHT TO LEFT, with a DUAL number — a third count form beside singular and plural — and teens said as two words (tier 1: structure green, forms agree with the pack's own rules)",
+      "size": 60000,
+      "tiers": [],
+      "text": "shows",
+      "script": "arabic",
+      "segmentation": "spaced",
+      "assemblies": [
+        "school"
+      ]
+    },
+    {
+      "name": "lang_hi",
+      "file": "datasets/genesis_lang_hi.txt",
+      "genre": "hindi: devanagari, the corpus's first ABUGIDA — a vowel is a MARK ON the consonant, not a letter beside it; the pack is declared SPACED, which is the truth about the language, and the instrument was taught to read a combining mark as a letter by office (tier 1: structure green, forms agree with the pack's own rules)",
+      "size": 60000,
+      "tiers": [],
+      "text": "shows",
+      "script": "devanagari",
+      "segmentation": "spaced",
+      "assemblies": [
+        "school"
+      ]
+    },
+    {
+      "name": "lang_ja",
+      "file": "datasets/genesis_lang_ja.txt",
+      "genre": "japanese: three scripts in one line, counters instead of number agreement, and NO plural at all (tier 1: structure green, forms agree with the pack's own rules)",
+      "size": 60000,
+      "tiers": [],
+      "text": "shows",
+      "script": "japanese",
+      "segmentation": "longest-match",
+      "assemblies": [
+        "school"
+      ]
+    },
+    {
+      "name": "lang_ko",
+      "file": "datasets/genesis_lang_ko.txt",
+      "genre": "korean: hangul, where a sign is BUILT from letters; particles instead of cases, chosen by whether the word ends in a consonant (tier 1: structure green, forms agree with the pack's own rules)",
+      "size": 60000,
+      "tiers": [],
+      "text": "shows",
+      "script": "hangul",
+      "segmentation": "spaced",
+      "assemblies": [
+        "school"
+      ]
+    },
+    {
+      "name": "lang_sw",
+      "file": "datasets/genesis_lang_sw.txt",
+      "genre": "swahili: NOUN CLASSES, where the class of the noun governs the PREFIX of verb, adjective and numeral alike — agreement that changes the BEGINNING of a word, not its end (tier 1: structure green, forms agree with the pack's own rules)",
+      "size": 60000,
+      "tiers": [],
+      "text": "shows",
+      "script": "latin",
+      "segmentation": "spaced",
+      "assemblies": [
+        "school"
+      ]
+    },
+    {
+      "name": "lang_th",
+      "file": "datasets/genesis_lang_th.txt",
+      "genre": "thai: written without spaces between words but WITH spaces between sentences — a third case the segmenter did not have; tone marks above the consonant and vowels written before it (tier 1: structure green, forms agree with the pack's own rules)",
+      "size": 60000,
+      "tiers": [],
+      "text": "shows",
+      "script": "thai",
+      "segmentation": "longest-match",
+      "assemblies": [
+        "school"
+      ]
+    },
+    {
+      "name": "lang_vi",
+      "file": "datasets/genesis_lang_vi.txt",
+      "genre": "vietnamese: six tones by diacritic, where ma, mà, má, mả, mã, mạ are six different words; a word written in syllables separated by spaces (tier 1: structure green, forms agree with the pack's own rules)",
+      "size": 60000,
+      "tiers": [],
+      "text": "shows",
+      "script": "latin",
+      "segmentation": "spaced",
+      "assemblies": [
+        "school"
+      ]
+    },
+    {
       "name": "school",
       "file": "datasets/GENESIS-SCHOOL.txt",
       "genre": "the school assembly: every world that declares «school» in its `assemblies`, in manifest order — the ladder a learner walks before the whole corpus; a consequence of the manifest, not a decision of whoever assembles it",
-      "size": 4485178,
+      "size": 5252217,
       "tiers": [],
       "text": "mix",
-      "lines": 83270
+      "lines": 108974
     },
     {
       "name": "full",
       "file": "datasets/GENESIS-FULL.txt",
       "genre": "the full mix: every world of shows, in manifest order, welded by the same seam that welds passes inside a layer — a consequence of the manifest, not a decision of whoever assembles it",
-      "size": 7024921,
+      "size": 7791960,
       "tiers": [],
       "text": "mix",
-      "lines": 131908
+      "lines": 157612
     }
   ]
 }

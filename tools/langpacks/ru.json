@@ -332,7 +332,7 @@
         "делить",
         "умножить"
       ],
-      "instances_per_pass": 8,
+      "instances_per_pass": 24,
       "templates": [
         "{num:n} плюс {num:m} равно {num:sum}.",
         "{n} + {m} = {sum}.",
@@ -360,7 +360,7 @@
         "стало",
         "осталось"
       ],
-      "instances_per_pass": 8,
+      "instances_per_pass": 24,
       "templates": [
         "было {n} {lex:noun_fem_a:by_n}. стало {sum} {lex:noun_fem_a:by_sum}.",
         "было {sum} {lex:noun_masc:by_sum}. осталось {n} {lex:noun_masc:by_n}."
@@ -372,7 +372,7 @@
         "предмет",
         "вещь"
       ],
-      "instances_per_pass": 6,
+      "instances_per_pass": 18,
       "templates": [
         "{lex:noun_fem_a:one} это предмет.",
         "{lex:noun_masc:one} это вещь."
@@ -384,7 +384,7 @@
         "потом",
         "дальше"
       ],
-      "instances_per_pass": 8,
+      "instances_per_pass": 24,
       "templates": [
         "вчера маша {lex:verb_past:f} {num:n} {lex:noun_fem_a:by_n}. потом маша {lex:verb_past:f} ещё.",
         "вчера юра {lex:verb_past:m} {num:m} {lex:noun_masc:by_n}. юра шёл домой. дальше юра был дома.",
@@ -406,7 +406,7 @@
         },
         {
           "bad": "пять книга.",
-          "good": "пять книг.",
+          "good": "сорок книг.",
           "reason": "agreement"
         },
         {
@@ -421,7 +421,7 @@
         },
         {
           "bad": "книга плюс дом равно?",
-          "good": "семь минус два равно пять.",
+          "good": "сто минус один равно девяносто девять.",
           "reason": "type_mismatch"
         }
       ]
@@ -435,7 +435,7 @@
         "довольна",
         "думает"
       ],
-      "instances_per_pass": 6,
+      "instances_per_pass": 18,
       "templates": [
         "вот {lex:noun_fem_case:nom}.",
         "нет {lex:noun_fem_case:gen}.",
@@ -460,7 +460,7 @@
         "вы",
         "они"
       ],
-      "instances_per_pass": 6,
+      "instances_per_pass": 18,
       "templates": [
         "я {lex:verb_pres:s1}.",
         "ты {lex:verb_pres:s2}.",
