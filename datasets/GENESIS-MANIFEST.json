@@ -253,6 +253,33 @@
       ]
     },
     {
+      "name": "holes",
+      "file": "datasets/genesis_holes.txt",
+      "genre": "the HOLE MARKET — one fact frame and every role of it asked in turn (holon's Д-1, REVISION 02.09: a question in the organism is a per-genus surface, not an operation over a bought fact frame; the census of the svod: the number hole carries ~20 000 questions, who/where/when a few dozen): «on monday ann put 5 cups on the shelf.» stands beside «… who put 5 cups on the shelf on monday? ann.», «… how many cups did ann put on the shelf on monday? 5.», «… what did ann put on the shelf on monday? 5 cups.», «… where did ann put 5 cups on monday? on the shelf.», «… when did ann put 5 cups on the shelf? on monday.» and the RU frame with кто/сколько/что/куда-где/когда («в понедельник Анна положила 5 чашек на полку. куда положила Анна 5 чашек в понедельник? на полку.»); the question word names the hole's type, the question keeps every other role, the answer is exactly the filler the question removed; five verb frames (put, bought, found, ate, read) with their own places and things; the court parses the fact by the house of holes, recomputes every lawful question with its answer and accepts the line only as one of them; RU count and gender forms by the house of forms",
+      "act": [
+        "recount",
+        "name",
+        "translate"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unsigned_only"
+      ],
+      "size": 83009,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": [
+        "person_names:en",
+        "person_names:ru"
+      ]
+    },
+    {
       "name": "aggregate",
       "file": "datasets/genesis_aggregate.txt",
       "genre": "aggregate genus: a fact of a plural bearer",
@@ -3206,10 +3233,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 12262414,
+      "size": 12268173,
       "tiers": [],
       "text": "mix",
-      "lines": 183334
+      "lines": 183494
     },
     {
       "name": "full",
@@ -3224,10 +3251,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 16712725,
+      "size": 16718484,
       "tiers": [],
       "text": "mix",
-      "lines": 256471
+      "lines": 256631
     },
     {
       "name": "selfmeasure",
