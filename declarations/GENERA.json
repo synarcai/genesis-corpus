@@ -1,7 +1,7 @@
 {
  "comment": "таблица родов с формулами — эталон суда охвата; числа показов замерены генераторами на 5 проходах (tools/genera_table.py)",
- "родов": 159,
- "показов": 16976,
+ "родов": 160,
+ "показов": 16836,
  "роды": [
   {
    "мир": "gsmforms",
@@ -614,25 +614,25 @@
     "слова"
    ],
    "вопрос": {
-    "ru": [
-     "если @ потратил # долларов на книги и # долларов на ручки, на сколько долларов больше потрачено на книги, чем на ручки?",
-     "если @ съела в понедельник # печений, а во вторник # печенья, на сколько печений больше в понедельник, чем во вторник?",
-     "если @ испекла # тортов и # булочки, на сколько тортов больше, чем булочек?",
-     "если @ съела утром # печений, а днём # печенья, на сколько печений больше утром, чем днём?"
-    ],
     "en": [
+     "if there were # storks and # birds on the fence, how many more storks than birds were there?",
+     "if @ spent # dollars on the shirt and # dollars on the hat, how much more money did @ spend on the shirt than on the hat?",
      "if there were # red flowers and # white flowers in the garden, how many fewer white flowers than red flowers were there?",
-     "if there were # red flowers and # white flowers in the garden, how many more red flowers than white flowers were there?",
-     "if @ spent # dollars on books and # dollars on pens, how much more money did @ spend on books than on pens?",
-     "if @ played with # kids in the morning and # kids in the afternoon, how many more kids did @ play with in the morning than in the afternoon?"
+     "if @ brought # balloons and @ brought # balloons, how many more balloons did @ bring than @?"
+    ],
+    "ru": [
+     "если @ съела в понедельник # печений, а во вторник # печенья, на сколько печений больше в понедельник, чем во вторник?",
+     "если @ испёк # тортов и # булочки, на сколько тортов больше, чем булочек?",
+     "если @ потратила # долларов на книги и # долларов на ручки, на сколько долларов больше потрачено на книги, чем на ручки?",
+     "если @ прочитал # страниц математики и # страницы чтения, на сколько страниц математики больше, чем страниц чтения?"
     ]
    },
    "показов": {
-    "en/вопрос": 25,
+    "en/вопрос": 32,
     "en/отрицание": 20,
     "en/утверждение": 20,
-    "ru/вопрос": 9,
-    "ru/утверждение": 6
+    "ru/вопрос": 4,
+    "ru/утверждение": 4
    },
    "всего": 80
   },
@@ -874,6 +874,38 @@
     "en/вопрос": 20,
     "en/отрицание": 20,
     "en/утверждение": 20,
+    "ru/вопрос": 10,
+    "ru/утверждение": 10
+   },
+   "всего": 80
+  },
+  {
+   "мир": "gsmforms",
+   "семейство": "части",
+   "формула": "ответ = всего ÷ (k + 1) (участок) | всего ÷ (k + 1) × k (дом)",
+   "величины": [
+    "k",
+    "всего",
+    "дом",
+    "лот",
+    "ру_слово",
+    "слово"
+   ],
+   "вопрос": {
+    "en": [
+     "if a house and a lot cost # dollars and the house cost # times as much as the lot, how much did the lot cost?",
+     "if a house and a lot cost # dollars and the house cost # times as much as the lot, how much did the house cost?",
+     "if a house and a lot cost # dollars and the house cost twice as much as the lot, how much did the lot cost?",
+     "if a house and a lot cost # dollars and the house cost three times as much as the lot, how much did the house cost?"
+    ],
+    "ru": [
+     "если дом и участок стоили # долларов, а дом стоил вчетверо дороже участка, сколько стоил участок?",
+     "если дом и участок стоили # долларов, а дом стоил втрое дороже участка, сколько стоил участок?"
+    ]
+   },
+   "показов": {
+    "en/вопрос": 20,
+    "en/утверждение": 40,
     "ru/вопрос": 10,
     "ru/утверждение": 10
    },
@@ -1837,9 +1869,9 @@
    "вопрос": "is {n} prime?",
    "формула": "делители n суть ровно 1 и n",
    "показов": {
-    "en/вопрос": 145
+    "en/вопрос": 5
    },
-   "всего": 145
+   "всего": 5
   },
   {
    "мир": "numbers",
@@ -2367,9 +2399,9 @@
    "вопрос": "what is the median of {предмет}?",
    "формула": "медиана = средний по порядку",
    "показов": {
-    "ru/вопрос": 105
+    "ru/вопрос": 65
    },
-   "всего": 105
+   "всего": 65
   },
   {
    "мир": "statistics",
@@ -2417,9 +2449,9 @@
    "вопрос": "чему равна медиана {предмет}?",
    "формула": "медиана = средний по порядку",
    "показов": {
-    "ru/вопрос": 100
+    "ru/вопрос": 60
    },
-   "всего": 100
+   "всего": 60
   },
   {
    "мир": "statistics",
