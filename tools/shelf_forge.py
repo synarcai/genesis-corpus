@@ -173,8 +173,8 @@ class Книга:
           1912, 1916, "Elements of Folk Psychology", "Wilhelm Wundt"),
     Книга(51442, "titchener_beginner", "психология", "трактат",
           1915, 1915, "A Beginner's Psychology", "Edward Titchener"),
-    Книга(39300, "thorndike_arithmetic", "психология", "исследование",
-          1922, 1922, "The Psychology of Arithmetic", "Edward Thorndike"),
+    # Торндайк «The Psychology of Arithmetic» (39300): плотность прозы 5,5 %
+    # ниже порога 6 % — по договору полки не кладётся (мера, не вкус).
     Книга(37423, "dewey_think", "психология", "трактат",
           1910, 1910, "How We Think", "John Dewey"),
     Книга(26163, "bergson_evolution", "философия", "трактат",
