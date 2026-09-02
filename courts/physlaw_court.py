@@ -58,14 +58,16 @@ def объявленные_размерности():
     r"^(?:размерность величины (\S+) есть (.+?); измеряется в (.+?)"
     r"|the dimension of (\S+) is (.+?); it is measured in (.+?))\.$")
 ИМПУЛЬС = re.compile(
-    r"^(?:импульс сохраняется: было (\d+) и (\d+), стало (\d+), "
+    r"^(?:(\w+) сохраняется: было (\d+) и (\d+), стало (\d+), "
     r"сумма не изменилась"
-    r"|momentum is conserved: (\d+) and (\d+) before, (\d+) after, "
+    r"|(\w+) is conserved: (\d+) and (\d+) before, (\d+) after, "
     r"the sum did not change)\.$")
+ИМЕНА_ИМПУЛЬСА = {"импульс", "momentum"}
 ЭНЕРГИЯ = re.compile(
-    r"^(?:энергия сохраняется: (\d+) \S+ разделились на (\d+) и (\d+) \S+"
-    r"|energy is conserved: (\d+) joules split into (\d+) and "
+    r"^(?:(\w+) сохраняется: (\d+) \S+ разделились на (\d+) и (\d+) \S+"
+    r"|(\w+) is conserved: (\d+) joules split into (\d+) and "
     r"(\d+) joules)\.$")
+ИМЕНА_ЭНЕРГИИ = {"энергия", "energy"}
 # ИМЯ ЗАКОНА ЧИТАЕТСЯ ГРУППОЙ И СВЕРЯЕТСЯ, А НЕ ЗАШИВАЕТСЯ В ОБРАЗЕЦ.
 # Подсадка словом: «давлениЕ = сила ÷ площадь; 42 ньютона ÷ 6 квадратных
 # метров = 7 паскалей» → «давлени = …» — образец с зашитым именем не
@@ -92,7 +94,7 @@ def объявленные_размерности():
     r"|the period is (\d+) \S+; the frequency is (\d+) per minute; "
     r"(\d+) × (\d+) = 60)\.$")
 СКОРОСТЬ_ВОЛНЫ = re.compile(
-    r"^(?:скорость волны = длина ÷ период; (\d+) \S+ ÷ (\d+) \S+ = "
+    r"^(?:(\w+) волны = длина ÷ период; (\d+) \S+ ÷ (\d+) \S+ = "
     r"(\d+) \S+ в секунду"
     r"|wave speed = length ÷ period; (\d+) metres ÷ (\d+) \S+ = "
     r"(\d+) metres per second)\.$")
@@ -123,10 +125,16 @@ def судить(строка):
         return True, объявлено == (форм, ед)
     m = ИМПУЛЬС.match(с)
     if m:
+        имя = next((g for g in m.groups() if g is not None and not g.isdigit()), None)
+        if имя is not None and имя not in ИМЕНА_ИМПУЛЬСА:
+            return True, False
         a, b, итог = _числа(m)
         return True, a + b == итог
     m = ЭНЕРГИЯ.match(с)
     if m:
+        имя = next((g for g in m.groups() if g is not None and not g.isdigit()), None)
+        if имя is not None and имя not in ИМЕНА_ЭНЕРГИИ:
+            return True, False
         целое, часть, остаток = _числа(m)
         return True, часть + остаток == целое
     m = ДАВЛЕНИЕ.match(с)
@@ -149,6 +157,9 @@ def судить(строка):
                       and период * частота == 60)
     m = СКОРОСТЬ_ВОЛНЫ.match(с)
     if m:
+        имя = m.group(1)
+        if имя is not None and имя != "скорость":
+            return True, False
         длина, период, скорость = _числа(m)
         return True, период > 0 and длина == скорость * период
     return False, True
