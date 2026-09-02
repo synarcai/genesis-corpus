@@ -431,6 +431,8 @@
       "waar",
       "is",
       "zijn",
+      "wie",
+      "wanneer",
       "¬"
     ],
     "position": "front"
@@ -457,5 +459,41 @@
       "bereken",
       "reken uit"
     ]
+  },
+  "person_names": [
+    "Anna",
+    "Daan",
+    "Emma",
+    "Sem",
+    "Lotte",
+    "Bram",
+    "Sanne",
+    "Luuk"
+  ],
+  "person_forms": {
+    "Anna": {
+      "gender": "f"
+    },
+    "Daan": {
+      "gender": "m"
+    },
+    "Emma": {
+      "gender": "f"
+    },
+    "Sem": {
+      "gender": "m"
+    },
+    "Lotte": {
+      "gender": "f"
+    },
+    "Bram": {
+      "gender": "m"
+    },
+    "Sanne": {
+      "gender": "f"
+    },
+    "Luuk": {
+      "gender": "m"
+    }
   }
 }

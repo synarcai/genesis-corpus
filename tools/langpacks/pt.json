@@ -487,6 +487,9 @@
       "onde",
       "é",
       "são",
+      "quem",
+      "quantas",
+      "quando",
       "¬"
     ],
     "position": "front"
@@ -513,5 +516,41 @@
       "calcule",
       "calcula"
     ]
+  },
+  "person_names": [
+    "Ana",
+    "João",
+    "Maria",
+    "Pedro",
+    "Inês",
+    "Tiago",
+    "Beatriz",
+    "Rui"
+  ],
+  "person_forms": {
+    "Ana": {
+      "gender": "f"
+    },
+    "João": {
+      "gender": "m"
+    },
+    "Maria": {
+      "gender": "f"
+    },
+    "Pedro": {
+      "gender": "m"
+    },
+    "Inês": {
+      "gender": "f"
+    },
+    "Tiago": {
+      "gender": "m"
+    },
+    "Beatriz": {
+      "gender": "f"
+    },
+    "Rui": {
+      "gender": "m"
+    }
   }
 }

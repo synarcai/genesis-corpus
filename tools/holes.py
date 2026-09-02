@@ -31,7 +31,7 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import rugram  # noqa: E402
 
 КОРЕНЬ = pathlib.Path(__file__).resolve().parents[1]
-ЯЗЫКИ = ("en", "ru", "de", "es", "it", "fr")
+ЯЗЫКИ = ("en", "ru", "de", "es", "it", "fr", "pt", "nl")
 
 ДНИ = {
     "en": ("on monday", "on tuesday", "on wednesday", "on thursday", "on friday", "on saturday", "on sunday"),
@@ -40,6 +40,8 @@ import rugram  # noqa: E402
     "es": ("el lunes", "el martes", "el miércoles", "el jueves", "el viernes", "el sábado", "el domingo"),
     "it": ("lunedì", "martedì", "mercoledì", "giovedì", "venerdì", "sabato", "domenica"),
     "fr": ("lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"),
+    "pt": ("na segunda-feira", "na terça-feira", "na quarta-feira", "na quinta-feira", "na sexta-feira", "no sábado", "no domingo"),
+    "nl": ("op maandag", "op dinsdag", "op woensdag", "op donderdag", "op vrijdag", "op zaterdag", "op zondag"),
 }
 
 # FRAMES BY INDEX — 0 put, 1 bought, 2 found, 3 ate, 4 read. Per language: the
@@ -120,6 +122,30 @@ import rugram  # noqa: E402
         dict(гл="a lu", прич=("lus", "lues"), места=("à la bibliothèque", "à l'école", "à la maison"),
              вещи=(("livres", "m"), ("histoires", "f"), ("lettres", "f"))),
     ),
+    "pt": (
+        dict(гл="pôs", места=("na estante", "na caixa", "na mesa", "na bolsa"),
+             вещи=(("xícaras", "f"), ("livros", "m"), ("canetas", "f"), ("pratos", "m"))),
+        dict(гл="comprou", места=("no mercado", "na loja", "na feira"),
+             вещи=(("maçãs", "f"), ("peras", "f"), ("canetas", "f"), ("livros", "m"))),
+        dict(гл="encontrou", места=("no parque", "no jardim", "na estrada", "na praia"),
+             вещи=(("moedas", "f"), ("conchas", "f"), ("pedras", "f"), ("chaves", "f"))),
+        dict(гл="comeu", места=("na cozinha", "na escola", "no jardim"),
+             вещи=(("maçãs", "f"), ("peras", "f"), ("biscoitos", "m"), ("ameixas", "f"))),
+        dict(гл="leu", места=("na biblioteca", "na escola", "em casa"),
+             вещи=(("livros", "m"), ("contos", "m"), ("cartas", "f"))),
+    ),
+    "nl": (  # Dutch: verb-second fact like German, nouns lowercase, «waar» for every place
+        dict(гл="legde", места=("op de plank", "in de doos", "op de tafel", "in de tas"),
+             вещи=("kopjes", "boeken", "pennen", "borden")),
+        dict(гл="kocht", места=("op de markt", "in de winkel", "op de kermis"),
+             вещи=("appels", "peren", "pennen", "boeken")),
+        dict(гл="vond", места=("in het park", "in de tuin", "op de weg", "op het strand"),
+             вещи=("munten", "schelpen", "stenen", "sleutels")),
+        dict(гл="at", места=("in de keuken", "op school", "in de tuin"),
+             вещи=("appels", "peren", "koekjes", "pruimen")),
+        dict(гл="las", места=("in de bibliotheek", "op school", "thuis"),
+             вещи=("boeken", "verhalen", "brieven")),
+    ),
 }
 
 
@@ -147,7 +173,7 @@ def _вещь(язык, вещь, n):
         return вещь[1]
     if язык == "ru":
         return rugram.форма(вещь, n)
-    if язык == "de":
+    if язык in ("de", "nl"):
         return вещь
     return вещь[0]
 
@@ -160,7 +186,7 @@ def факт(язык, день, имя, род, k, n, вещь, место):
         return f"{день} {имя} {р['прош']} {n} {в} {место}."
     if язык == "ru":
         return f"{день} {имя} {р['ж'] if род == 'f' else р['м']} {n} {в} {место}."
-    if язык == "de":
+    if язык in ("de", "nl"):
         return f"{день} {р['гл']} {имя} {n} {в} {место}."
     return f"{день} {имя} {р['гл']} {n} {в} {место}."
 
@@ -217,6 +243,25 @@ def дыры(язык, день, имя, род, k, n, вещь, место):
             (f"dove {гл} {имя} {n} {в} {день}?", f"{место}."),
             (f"quando {гл} {имя} {n} {в} {место}?", f"{день}."),
         )
+    if язык == "pt":
+        гл = р["гл"]
+        ск = "quantas" if вещь[1] == "f" else "quantos"
+        return (
+            (f"quem {гл} {n} {в} {место} {день}?", f"{имя}."),
+            (f"{ск} {в} {имя} {гл} {место} {день}?", f"{n}."),
+            (f"o que {имя} {гл} {место} {день}?", f"{n} {в}."),
+            (f"onde {имя} {гл} {n} {в} {день}?", f"{место}."),
+            (f"quando {имя} {гл} {n} {в} {место}?", f"{день}."),
+        )
+    if язык == "nl":
+        гл = р["гл"]
+        return (
+            (f"wie {гл} {день} {n} {в} {место}?", f"{имя}."),
+            (f"hoeveel {в} {гл} {имя} {день} {место}?", f"{n}."),
+            (f"wat {гл} {имя} {день} {место}?", f"{n} {в}."),
+            (f"waar {гл} {имя} {день} {n} {в}?", f"{место}."),
+            (f"wanneer {гл} {имя} {n} {в} {место}?", f"{день}."),
+        )
     гл = р["гл"]
     осн = гл.split(" ", 1)[1]                       # the participle unagreed
     прич = р["прич"][1 if вещь[1] == "f" else 0]    # agreed with the fronted object
@@ -253,7 +298,9 @@ _ЛАТ_СЛОВО = "[a-zà-ÿß]+"
     "de": re.compile(rf"^(?P<день>{_alt(ДНИ['de'])}) (?P<гл>{_alt(_глаголы('de'))}) (?P<имя>{_ЛАТ}) (?P<n>\d+) "
                      rf"(?P<вещь>{_ЛАТ}) (?P<место>{_alt(м for р in РАМКИ['de'] for м in р['места'])})\.$"),
 }
-for _я in ("es", "it", "fr"):
+ФАКТ["nl"] = re.compile(rf"^(?P<день>{_alt(ДНИ['nl'])}) (?P<гл>{_alt(_глаголы('nl'))}) (?P<имя>{_ЛАТ}) (?P<n>\d+) "
+                        rf"(?P<вещь>{_ЛАТ_СЛОВО}) (?P<место>{_alt(м for р in РАМКИ['nl'] for м in р['места'])})\.$")
+for _я in ("es", "it", "fr", "pt"):
     ФАКТ[_я] = re.compile(rf"^(?P<день>{_alt(ДНИ[_я])}) (?P<имя>{_ЛАТ}) (?P<гл>{_alt(_глаголы(_я))}) (?P<n>\d+) "
                           rf"(?P<вещь>{_ЛАТ_СЛОВО}) (?P<место>{_alt(м for р in РАМКИ[_я] for м in р['места'])})\.$")
 СТРОКА = re.compile(r"^(?P<факт>[^.?]+\.)(?: (?P<вопрос>[^?]+?) ?\? (?P<ответ>[^.?]+)\.)?$")
