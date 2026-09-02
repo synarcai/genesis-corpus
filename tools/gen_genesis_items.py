@@ -122,6 +122,17 @@ def pass_shows(pass_i):
             f"how many {it} does {b} {q2}? "
             f"{b} {a2} {n - gave} {by_count(n - gave, it)}: {n} − {gave} = {n - gave}."
         )
+        # НАКОПЛЕНИЕ ПОВТОРЁННОГО АКТА (e9 04.09): «made … sold … of them.
+        # then made N more … how many more did X make than sell?» — оба
+        # звена цепью; вещи только неодушевлённые.
+        if not anim:
+            sold = min(n, m)
+            out.append(
+                f"{a} made {n} {by_count(n, it)}. {a} sold {sold} of them. "
+                f"then {a} made {m} more {it}. "
+                f"how many more {it} did {a} make than sell? "
+                f"{n} + {m} = {n + m}, {n + m} − {sold} = {n + m - sold}."
+            )
         for tpl in (BARE_PLURAL_ANIM if anim
                     else BARE_PLURAL):
             out.append(tpl.format(a=a, it=it))

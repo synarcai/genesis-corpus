@@ -508,6 +508,13 @@ def _звено_верно(строка, итог_m, сколько):
     до = [int(x) for x in re.findall(r"\d+", строка[:итог_m.start()])]
     ожидание = з1 + з2 if зн == "+" else з1 - з2
     return ожидание == з3 == сколько and з1 in до and з2 in до
+# НАКОПЛЕНИЕ ПОВТОРЁННОГО АКТА (e9 04.09, SVAMP «made … sold … then made N
+# more … how many more did he make than sell?»): один глагол у одного
+# носителя дважды — величины складываются, потом сравниваются; оба звена
+# стоят в ответе, и суд считает оба.
+НАКОПЛЕНИЕ = re.compile(
+    rf"^({С}) made (\d+) ({С})\. \1 sold (\d+) of them\. then \1 made (\d+) more \3\. "
+    rf"how many more \3 did \1 make than sell\? (\d+) \+ (\d+) = (\d+), (\d+) − (\d+) = (\d+)\.$")
 СТАВКА = re.compile(
     rf"^({С}) ({С}) (\d+) ({С}) (?:every|each|a) (?:day|night)\. "
     rf"how much in (\d+) ({С})\? \1 \2 (\d+) \4 in \5 \6\.$")
@@ -853,6 +860,11 @@ def судить(строка, слой=None):
         # поправлен. Незнакомое слово уходит в СЧЁТ, а не в приговор.
         НЕЗНАКОМЫЕ.append(слово)
         return False, True
+    m = НАКОПЛЕНИЕ.match(с)
+    if m:
+        n, k, m2, n2, m3, t, t2, k2, d = (int(m.group(i)) for i in (2, 4, 5, 6, 7, 8, 9, 10, 11))
+        return True, ((n2, m3) == (n, m2) and t == n + m2 and t2 == t and k2 == k
+                      and k <= n and d == t - k >= 0)
     m = СТАВКА.match(с)
     if m:
         ставка, k, итог = int(m.group(3)), int(m.group(5)), int(m.group(7))
