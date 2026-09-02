@@ -15,6 +15,7 @@ Instances vary by pass (32's trail number: repeats buy
 weight, not coverage); bare shows; form-feed seams.
 """
 
+import inverting
 from layer import emit
 
 
@@ -47,8 +48,27 @@ def kinds_for_pass(pi):
     return shows
 
 
+def with_asks(pi):
+    """Every glyph equality gets its question beside it.
+
+    KNOWLEDGE WITHOUT A QUESTION SURFACE DOES NOT ANSWER — IT ONLY
+    TELLS. The layer had 424 lines and zero questions; the owner made
+    zero silent worlds a law. The question is the same line with the
+    predicate lifted out («what is 950 − 100? 950 − 100 = 850.»), so
+    the answer is judged by the same court as the statement; a
+    corrupted answer is caught — checked before writing.
+    """
+    out = []
+    for i, show in enumerate(kinds_for_pass(pi)):
+        out.append(show)
+        ask = inverting.обратить(show, ("глиф",), i)
+        if ask:
+            out.append(ask)
+    return out
+
+
 def main():
-    emit("datasets/genesis_bignum.txt", kinds_for_pass)
+    emit("datasets/genesis_bignum.txt", with_asks)
 
 
 if __name__ == "__main__":
