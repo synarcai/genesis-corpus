@@ -36,8 +36,10 @@ COURTS=("courts/arith_court.py" "courts/algo_court.py"
         "scripts/reproducible.py" "scripts/bash32_court.py"
         "scripts/manifest_court.py" "scripts/prose_court.py" "tools/mutants.py" "scripts/lexicon_reach.py"
         "courts/inquiry_pt_nl_court.py" "courts/inquiry_pl_tr_court.py"
+        "courts/relation_court.py"
         "scripts/court_mutants.py" "scripts/panel_court.py"
-        "scripts/concept_reach.py"
+        "scripts/concept_reach.py" "scripts/ask_reach.py" "scripts/band_reach.py"
+        "courts/prosetree_court.py"
         "scripts/coverage.py")
 FELL=0
 for entry in "${COURTS[@]}"; do
