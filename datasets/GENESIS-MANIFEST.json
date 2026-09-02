@@ -4225,6 +4225,30 @@
       "судится": [
         "prosetree"
       ]
+    },
+    {
+      "name": "gutenberg_roget_thesaurus",
+      "file": "shelf/en/roget_thesaurus.txt",
+      "genre": "Roget's Thesaurus of English Words and Phrases — Peter Mark Roget; английское издание 1911",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "язык",
+      "язык": "en",
+      "плотность": "тезаурус",
+      "издано": 1852,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:22",
+      "held_out": "shelf/en/roget_thesaurus.holdout.txt",
+      "судится": []
     }
   ]
 }
