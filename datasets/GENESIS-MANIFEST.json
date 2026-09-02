@@ -99,7 +99,10 @@
       "size": 300000,
       "tiers": [],
       "text": "shows",
-      "actors": "person_names:en"
+      "actors": [
+        "person_names:en",
+        "person_names:ru"
+      ]
     },
     {
       "name": "genesis_bignum",
@@ -173,7 +176,9 @@
       "size": 100000,
       "tiers": [],
       "text": "shows",
-      "actors": "person_names:en"
+      "actors": [
+        "person_names:en"
+      ]
     },
     {
       "name": "lang_de",
@@ -215,6 +220,9 @@
       "text": "shows",
       "assemblies": [
         "school"
+      ],
+      "actors": [
+        "person_names:en"
       ]
     },
     {
@@ -236,7 +244,9 @@
       "assemblies": [
         "school"
       ],
-      "actors": "person_names:en"
+      "actors": [
+        "person_names:en"
+      ]
     },
     {
       "name": "rates",
@@ -510,7 +520,9 @@
       "assemblies": [
         "school"
       ],
-      "actors": "person_names:en"
+      "actors": [
+        "person_names:en"
+      ]
     },
     {
       "name": "logic_sets",
@@ -918,7 +930,9 @@
       "assemblies": [
         "school"
       ],
-      "actors": "person_names:en"
+      "actors": [
+        "person_names:en"
+      ]
     },
     {
       "name": "speech",
@@ -939,6 +953,9 @@
       "text": "shows",
       "assemblies": [
         "school"
+      ],
+      "actors": [
+        "person_names:ru"
       ]
     },
     {
@@ -1021,7 +1038,9 @@
       "assemblies": [
         "school"
       ],
-      "actors": "person_names:en"
+      "actors": [
+        "person_names:en"
+      ]
     },
     {
       "name": "gsmwide",
@@ -1042,7 +1061,9 @@
       "assemblies": [
         "school"
       ],
-      "actors": "person_names:en"
+      "actors": [
+        "person_names:en"
+      ]
     },
     {
       "name": "heads",
@@ -1063,7 +1084,9 @@
       "assemblies": [
         "school"
       ],
-      "actors": "person_names:en"
+      "actors": [
+        "person_names:en"
+      ]
     },
     {
       "name": "realverbs",
@@ -1084,7 +1107,9 @@
       "assemblies": [
         "school"
       ],
-      "actors": "person_names:en"
+      "actors": [
+        "person_names:en"
+      ]
     },
     {
       "name": "verbal",
@@ -1238,7 +1263,10 @@
       ],
       "size": 60000,
       "tiers": [],
-      "text": "shows"
+      "text": "shows",
+      "actors": [
+        "person_names:ru"
+      ]
     },
     {
       "name": "lang_nl",
@@ -1596,6 +1624,9 @@
       "text": "shows",
       "assemblies": [
         "school"
+      ],
+      "actors": [
+        "person_names:en"
       ]
     },
     {
@@ -1617,6 +1648,9 @@
       "text": "shows",
       "assemblies": [
         "school"
+      ],
+      "actors": [
+        "person_names:en"
       ]
     },
     {
@@ -1641,7 +1675,9 @@
       "assemblies": [
         "school"
       ],
-      "actors": "person_names:en"
+      "actors": [
+        "person_names:en"
+      ]
     },
     {
       "name": "share",
@@ -1663,6 +1699,9 @@
       "text": "shows",
       "assemblies": [
         "school"
+      ],
+      "actors": [
+        "person_names:en"
       ]
     },
     {
@@ -1685,6 +1724,9 @@
       "text": "shows",
       "assemblies": [
         "school"
+      ],
+      "actors": [
+        "person_names:en"
       ]
     },
     {
@@ -2320,6 +2362,9 @@
       "boundary": [
         "whole_only",
         "unsigned_only"
+      ],
+      "actors": [
+        "person_names:ru"
       ]
     },
     {

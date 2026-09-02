@@ -686,31 +686,14 @@ _ПАКЕТ_EN = json.loads((КОРЕНЬ / "tools" / "langpacks" / "en.json")
 _МЕСТО_ИМЕНИ = re.compile(r"(?:^|(?<=[.?!] ))([a-z]+)|\b(?:does|did|and)\s+([a-z]+)|\bthan\s+([a-z]+)")
 
 
+_ЧИСЛ = _ПАКЕТ_EN.get("numerals") or {}
 ЧИСЛИТЕЛЬНЫЕ_EN = frozenset(
-    (_ПАКЕТ_EN.get("numerals") or {}).keys() if isinstance(_ПАКЕТ_EN.get("numerals"), dict)
-    else _ПАКЕТ_EN.get("numerals") or ())
+    (list(_ЧИСЛ.values()) + list(_ЧИСЛ.keys())) if isinstance(_ЧИСЛ, dict) else _ЧИСЛ)
 _ЗАЧИН = re.compile(r"(?:^|(?<=[.?!] ))([a-z]+)")
 _ПОСЛЕ = re.compile(r"\b(?:does|than)\s+([a-z]+)")
 
 
-class Слой:
-    """Объявление мира: чьи в нём деятели. Мир, объявивший в манифесте
-    `actors: person_names:en`, подсуден дому имён; прочие — нет."""
-
-    def __init__(self):
-        self.деятели = None
-
-    def впитать(self, путь):
-        try:
-            м = json.loads((КОРЕНЬ / "datasets" / "GENESIS-MANIFEST.json")
-                           .read_text(encoding="utf-8"))
-        except (OSError, ValueError):
-            return
-        имя = pathlib.Path(путь).name
-        for мир in м.get("worlds", ()):
-            if pathlib.Path(мир.get("file", "")).name == имя:
-                self.деятели = мир.get("actors")
-                return
+from actors import Слой  # noqa: E402 — деятели мира из манифеста
 
 
 def имена_на_месте(строка, слой=None):
@@ -722,7 +705,7 @@ def имена_на_месте(строка, слой=None):
     сравнения. Так порченое имя («elen», «pi») ловится и тогда, когда оно
     сломало рамку и строку читал один лишь суд числа.
     """
-    if слой is None or слой.деятели != "person_names:en" or not ИМЕНА_EN:
+    if слой is None or not слой.лица("en") or not ИМЕНА_EN:
         return True
     низ = строка.strip().lower()
     if re.search(r"[а-яё]", низ):

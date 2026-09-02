@@ -25,6 +25,7 @@ import sys
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
 import rugram  # noqa: E402
+from actors import Слой  # noqa: E402
 import gen_genesis_ruverbs as Г  # noqa: E402
 from genesis import worlds  # noqa: E402
 
@@ -79,19 +80,21 @@ def _факт(имя, глагол, n, вещь):
     return вещь == rugram.форма(ключ, int(n))
 
 
-def судить(строка):
+def судить(строка, слой=None):
     с = строка.strip()
     m = НАСТОЯЩЕЕ.match(с)
     if m:
         имя, гл, n, вещь = m.groups()
         if имя not in ИМЕНА:
-            return False, True   # чужое лицо — чужая рамка, молчим
+            # ЧУЖОЕ ЛИЦО: в мире, объявившем деятелей лицами пакета, — ложь
+            # записи; иначе — чужая рамка, и суд молчит (М-131, дом имён).
+            return (True, False) if слой is not None and слой.лица("ru") else (False, True)
         return True, _факт(имя, гл, n, вещь)
     m = ВОПРОС.match(с)
     if m:
         имя, гл, n, вещь, чего, гл2, имя2, имя3, гл3, n2, вещь2 = m.groups()
         if имя not in ИМЕНА:
-            return False, True
+            return (True, False) if слой is not None and слой.лица("ru") else (False, True)
         ключ = _глагол(гл, имя)
         return True, (ключ is not None and _факт(имя, гл, n, вещь)
                       and чего == Г.РОДИТЕЛЬНЫЙ.get(ключ)
