@@ -95,6 +95,50 @@ def показанные(путь, предел):
     return вон
 
 
+# ТРЕТЬЯ ГРУППА: РОД С ПОВЕСТВОВАНИЕМ, НО БЕЗ ПОКАЗАННОГО ВОПРОСА.
+#
+# Две первые группы различались РОДОМ, и разница могла нести трудность
+# рода. Третья группа чиста ПО РОДУ: те же шесть вердиктных родов
+# дознания, что и во второй, но организм растёт на сборке HOLDOUT, где
+# их вопросы ВЫРЕЗАНЫ, а повествование («91 is not a prime number: 91 =
+# 7 × 13») оставлено. Вопрос здесь СТРОИТСЯ из повествования дословным
+# обращением сказуемого — «is 91 a prime number?» — и ответ есть
+# полярность сказуемого, а не вычисление.
+ПОВЕСТВОВАНИЯ = (
+    # (образец повествования, форма вопроса, род, ответ из полярности)
+    (re.compile(r"^(?P<n>\d+) is (?P<pol>not )?a prime number: "),
+     "is {n} a prime number?", "primality"),
+    (re.compile(r"^(?P<n>\d+) is (?P<pol>not )?divisible by (?P<b>\d+): "),
+     "is {n} divisible by {b}?", "divisibility"),
+    (re.compile(r"^f\(x\) = x × (?P<k>\d+) (?P<pol>is not |is )injective "
+                r"on 1, 2, 3: "),
+     "is f(x) = x × {k} injective on 1, 2, 3?", "injectivity"),
+    (re.compile(r"^if n is even, n \+ (?P<m>\d+) (?P<pol>is not |is )even: "),
+     "if n is even, is n + {m} even?", "conditional"),
+)
+
+
+def третья_группа(путь, предел):
+    """Вопросы к повествованиям дознания; ответ — полярность сказуемого."""
+    вон = []
+    for с in путь.read_text(encoding="utf-8", errors="replace").splitlines():
+        т = с.strip()
+        if not т or "?" in т:
+            continue
+        for образец, форма, род in ПОВЕСТВОВАНИЯ:
+            m = образец.match(т)
+            if not m:
+                continue
+            нет = bool(m.group("pol")) and "not" in m.group("pol")
+            вон.append((форма.format(**{k: v for k, v in m.groupdict().items()
+                                          if k != "pol"}),
+                        "no" if нет else "yes", род))
+            break
+        if len(вон) >= предел:
+            break
+    return вон
+
+
 def main():
     предел = 60
     если = [а for а in sys.argv[1:] if not а.startswith("-")]
@@ -130,6 +174,19 @@ def main():
                 "tags": ["held_out_form:false", f"genus:{имя}",
                          "source:corpus"],
             })
+    # ТРЕТЬЯ ГРУППА — из повествований дознания (сборка HOLDOUT вырезает
+    # их вопросы; здесь вопрос строится заново обращением сказуемого).
+    путь = КОРЕНЬ / "datasets" / "genesis_inquiry.txt"
+    if путь.exists():
+        for вопрос, ответ, род in третья_группа(путь, предел):
+            n += 1
+            вон.append({
+                "id": f"ho{n:04d}",
+                "ask": вопрос,
+                "expect": {"kind": "verdict", "v": ответ},
+                "tags": ["held_out_form:true", "narrative_shown:true",
+                         f"genus:{род}", "source:inverted"],
+            })
     if not вон:
         print("HELD-OUT ОТКАЗ: ни одного вопроса не собрано")
         return 2
@@ -138,9 +195,11 @@ def main():
     with выход.open("w", encoding="utf-8") as ф:
         for з in вон:
             ф.write(json.dumps(з, ensure_ascii=False) + "\n")
-    скрытых = sum(1 for з in вон if "held_out_form:true" in з["tags"])
+    третья = sum(1 for з in вон if "narrative_shown:true" in з["tags"])
+    скрытых = sum(1 for з in вон if "held_out_form:true" in з["tags"]) - третья
     print(f"HELD-OUT: {len(вон)} вопросов записано в {выход.name} — "
-          f"скрытая форма {скрытых}, показанная {len(вон) - скрытых}")
+          f"скрытая форма {скрытых}, показанная {len(вон) - скрытых - третья}, "
+          f"третья группа (повествование без вопроса) {третья}")
     return 0
 
 
