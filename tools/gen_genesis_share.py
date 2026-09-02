@@ -309,6 +309,40 @@ def вопросом(шаг):
     return вон
 
 
+
+def обратным_ходом(ч, з, итог, англ):
+    """The ledger of the WAY BACK: the part from the value (absent at
+    numerator one — no action that changes nothing is written), the whole
+    from the part."""
+    часть = итог // ч
+    целое = часть * з
+    if англ:
+        второе = f"{часть} times {з} is {целое}"
+        return второе if ч == 1 else f"{итог} divided by {ч} is {часть}, and {второе}"
+    второе = f"{часть} умножить на {з} — это {целое}"
+    return второе if ч == 1 else f"{итог} разделить на {ч} — это {часть}, а {второе}"
+
+
+def обратно(шаг):
+    """THE WAY BACK — the share of an unknown whole is given, the whole is
+    recovered (e9 04.09, g1.61 Regina: «three quarters of the number is 9
+    — the number?» — the organism had it only by composition, and lost
+    it). Stated («three quarters of a number is 9; the number is 12: …»)
+    and asked; the answer opens with the given value in its own role
+    («9 is three quarters of 12»), so the question's quantity stands in
+    the answer as the share, not as the whole, and the ledger walks back:
+    the part from the value, the whole from the part."""
+    вон = []
+    for ч, з, сколько in случаи(ЯДРО_ОТ_ВЕЛИЧИНЫ, ход_от_величины(шаг)):
+        _частное, итог = основание(ч, з, сколько)
+        англ, рус = имя_англ(ч, з), имя_рус(ч, з)
+        х_en, х_ru = обратным_ходом(ч, з, итог, True), обратным_ходом(ч, з, итог, False)
+        вон.append(f"{англ} of a number is {итог}; the number is {сколько}: {х_en}.")
+        вон.append(f"{рус} числа — это {итог}; число — это {сколько}: {х_ru}.")
+        вон.append(f"{англ} of a number is {итог}. what is the number? {итог} is {англ} of {сколько}: {х_en}.")
+        вон.append(f"{рус} числа — это {итог}. чему равно число? {итог} — это {рус} от {сколько}: {х_ru}.")
+    return вон
+
 # ------------------------------------------------------ РОД: СРАВНЕНИЕ
 
 # ИМЕНА И ВЕЩИ ОБЪЯВЛЕНЫ ПАРАМИ. Русское имя дано СРАЗУ В РОДИТЕЛЬНОМ
@@ -491,6 +525,7 @@ def целым(шаг):
     ("as-many", сравнением),
     ("mixed", смешанным),
     ("whole", целым),
+    ("обратно", обратно),
 )
 
 
