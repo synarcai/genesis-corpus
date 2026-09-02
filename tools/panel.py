@@ -67,9 +67,11 @@ for _где in (КОРЕНЬ / "courts", КОРЕНЬ / "tools", КОРЕНЬ / 
            "story_chain_court", "age_court",
            "halves_court",
            "inquiry_de_fr_court", "inquiry_es_it_court",
-           "share_court", "compare_mult_court",
+           "ru_conversion_court", "ru_compare_court",
+           "ru_story_court",
+           "share_court", "compare_mult_court", "notationvar_court",
            "inquiry_pt_nl_court", "inquiry_pl_tr_court",
-           "relation_court", "prosetree_court",
+           "relation_court", "prosetree_court", "longdiv_court",
            "metalang_court")
 
 
