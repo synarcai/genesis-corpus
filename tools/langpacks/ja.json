@@ -444,12 +444,15 @@
       "lexicon": [
         "物",
         "これ",
-        "です"
+        "です",
+        "何",
+        "か"
       ],
       "instances_per_pass": 36,
       "templates": [
         "{lex:noun_count:one}は物です。",
-        "これは{lex:noun_count:one}です。"
+        "これは{lex:noun_count:one}です。",
+        "{lex:noun_count:one}は何ですか？{lex:noun_count:one}は物です。"
       ]
     },
     "refusals": {

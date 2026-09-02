@@ -345,11 +345,13 @@
     "definition": {
       "lexicon": [
         "ni",
-        "kitu"
+        "kitu",
+        "nini"
       ],
       "instances_per_pass": 96,
       "templates": [
-        "{lex:noun_count:one} ni kitu."
+        "{lex:noun_count:one} ni kitu.",
+        "{lex:noun_count:one} ni nini? {lex:noun_count:one} ni kitu."
       ]
     },
     "refusals": {

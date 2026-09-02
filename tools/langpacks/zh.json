@@ -336,12 +336,14 @@
       "lexicon": [
         "东西",
         "是",
-        "人"
+        "人",
+        "什么"
       ],
       "instances_per_pass": 40,
       "templates": [
         "{lex:noun_classifier:bare}是东西。",
-        "{lex:person_plural:one}是人。"
+        "{lex:person_plural:one}是人。",
+        "{lex:noun_classifier:bare}是什么？{lex:noun_classifier:bare}是东西。"
       ]
     },
     "refusals": {

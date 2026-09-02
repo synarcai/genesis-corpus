@@ -319,7 +319,8 @@
       ],
       "instances_per_pass": 22,
       "templates": [
-        "{lex:noun_count:one} ஒரு பொருள்."
+        "{lex:noun_count:one} ஒரு பொருள்.",
+        "{lex:noun_count:one} என்ன? {lex:noun_count:one} ஒரு பொருள்."
       ]
     },
     "refusals": {

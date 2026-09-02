@@ -355,11 +355,13 @@
       "lexicon": [
         "πράγμα",
         "αντικείμενο",
-        "είναι"
+        "είναι",
+        "τι"
       ],
       "instances_per_pass": 60,
       "templates": [
-        "{lex:noun_count:one} είναι ένα πράγμα."
+        "{lex:noun_count:one} είναι ένα πράγμα.",
+        "τι είναι {lex:noun_count:one}; {lex:noun_count:one} είναι ένα πράγμα."
       ]
     },
     "refusals": {
@@ -459,5 +461,8 @@
       "συν"
     ],
     "diacritics": "άέήίόύώϊϋΐΰ"
-  }
+  },
+  "question": [
+    "τι"
+  ]
 }

@@ -291,7 +291,8 @@
       ],
       "instances_per_pass": 26,
       "templates": [
-        "{lex:noun_count:one} ነገር ነው።"
+        "{lex:noun_count:one} ነገር ነው።",
+        "{lex:noun_count:one} ምን ነው? {lex:noun_count:one} ነገር ነው።"
       ]
     },
     "refusals": {

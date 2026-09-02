@@ -141,12 +141,34 @@ def вывод(шаг):
         d = 2 if n % 2 == 0 else 3
         if n % d:
             n += d - n % d
-        вон.append(f"{n} делится на {d}. значит {n} кратно {d}.")
-        вон.append(f"{n} is divisible by {d}. therefore {n} "
-                   f"is a multiple of {d}.")
+        утв_ru = f"{n} делится на {d}. значит {n} кратно {d}."
+        утв_en = (f"{n} is divisible by {d}. therefore {n} "
+                  f"is a multiple of {d}.")
+        вон.append(утв_ru)
+        вон.append(утв_en)
+        # ВОПРОС ПОРОЖДЁН ОТВЕТОМ: обе половины строит одна пара
+        # величин, и закон пары (`tools/asking.py`) требует, чтобы
+        # числа вопроса были начальным отрезком чисел ответа. Вопрос
+        # повторяет ПОСЫЛКУ, ответ добавляет ВЫВОД.
+        вон.append(f"делится ли {n} на {d}? {утв_ru}")
+        вон.append(f"is {n} divisible by {d}? {утв_en}")
         if n % 2 == 0:
-            вон.append(f"{n} делится на 2. значит {n} чётно.")
-            вон.append(f"{n} is divisible by 2. therefore {n} is even.")
+            чёт_ru = f"{n} делится на 2. значит {n} чётно."
+            чёт_en = f"{n} is divisible by 2. therefore {n} is even."
+            вон.append(чёт_ru)
+            вон.append(чёт_en)
+            вон.append(f"делится ли {n} на 2? {чёт_ru}")
+            вон.append(f"is {n} divisible by 2? {чёт_en}")
+        # ОТКАЗ С ОСНОВАНИЕМ: делимости может и не быть, и тогда
+        # честный ответ — «нет, и вот остаток». Мир, умеющий только
+        # утверждать, учит соглашаться; основание здесь вычислимо.
+        косой = n + 1
+        if косой % d:
+            вон.append(f"делится ли {косой} на {d}? нет: {косой} на "
+                       f"{d} не делится, остаток {косой % d}.")
+            вон.append(f"is {косой} divisible by {d}? no: {косой} is "
+                       f"not divisible by {d}, the remainder is "
+                       f"{косой % d}.")
     return вон
 
 

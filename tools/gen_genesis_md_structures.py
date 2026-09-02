@@ -133,11 +133,51 @@ def formula_step_shows():
     return out
 
 
+
+def question_shows():
+    """ВОПРОС ПОРОЖДЁН ОТВЕТОМ: счёт пунктов держит обе половины.
+
+    Закон пары (`tools/asking.py`) требует, чтобы числа вопроса были
+    НАЧАЛЬНЫМ ОТРЕЗКОМ чисел ответа. Здесь вопрос называет СЧЁТ и
+    спрашивает состав, а ответ повторяет счёт и называет пункты: порча
+    счёта в вопросе рвёт пару, и суд зовёт её ложью.
+    """
+    out = []
+    for i in range(len(RU)):
+        a, b = RU[i], RU[(i + 7) % len(RU)]
+        ae, be = EN[i], EN[(i + 7) % len(EN)]
+        ру = f"список из 2 пунктов: {a} и {b}."
+        ан = f"numbered list of 2 items: {ae} and {be}."
+        out.append(ру)
+        out.append(ан)
+        out.append(f"список из 2 пунктов — какие это пункты? {ру}")
+        out.append(f"a numbered list of 2 items — which items? {ан}")
+    return out
+
+
+def refusal_shows():
+    """ОТКАЗ С ОСНОВАНИЕМ: спрошенного уровня в слое нет.
+
+    Слой показывал только уровни, которые ЕСТЬ, и учил, что всякий
+    спрошенный уровень есть. Уровень отказа взят ЗА ПРЕДЕЛОМ объявленных
+    (их три, и вложенность добавляет первый и второй), а подлинный —
+    тот же, каким слово объявлено заголовком.
+    """
+    out = []
+    for i, (r, e) in enumerate(zip(RU, EN)):
+        lv = i % 3
+        out.append(f"нет ни одного заголовка «{r}» на уровне {lv + 4}: "
+                   f"в слое он стоит на уровне {lv + 1}.")
+        out.append(f"there is no heading «{e}» at level {lv + 4}: in "
+                   f"this layer it stands at level {lv + 1}.")
+    return out
+
+
 def main():
     kinds = [
         heading_shows(), list_shows(), nesting_shows(),
         mermaid_transit_shows(), draw_shows(),
-        formula_step_shows(),
+        formula_step_shows(), question_shows(), refusal_shows(),
     ]
     emit_grouped("datasets/genesis_md_structures.txt", lambda _pi: kinds)
 
