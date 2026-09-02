@@ -279,7 +279,34 @@ def модель(шаг):
     return вон
 
 
-ГРУППЫ = (отказ_алфавита, энтропия, автомат, грамматика, разрешимость,
+import discourse  # noqa: E402
+import laws  # noqa: E402
+
+
+def рассужд_энтропия(шаг):
+    """Энтропия рассуждением: свидетель 2^k = n, вывод — утверждение мира,
+    закон — энтропия равновозможных исходов."""
+    вон = []
+    зак_en, зак_ru = laws.ЗАКОНЫ["compsci"][0][2], laws.ЗАКОНЫ["compsci"][0][3]
+    for k in range(1, 9):
+        n = 2 ** k
+        св = f"2^{k} = {n}"
+        выв_en = f"{n} equally likely outcomes: entropy {k} {'bit' if k == 1 else 'bits'}"
+        выв_ru = f"{n} {rugram.форма('равновозможный исход', n)}: энтропия {k} {rugram.форма('бит', k)}"
+        if (k + шаг) % 2 == 0:
+            вон.append(discourse.рассуждение_величины("en", f"what is the entropy of {n} equally likely outcomes", св, выв_en, зак_en))
+            вон.append(discourse.рассуждение_величины("ru", f"чему равна энтропия {n} {rugram.форма('равновозможный исход', n)}", св, выв_ru, зак_ru))
+        else:
+            вон.append(discourse.почему("en", f"why is the entropy of {n} equally likely outcomes {k} {'bit' if k == 1 else 'bits'}", св, выв_en, зак_en))
+            вон.append(discourse.почему("ru", f"почему энтропия {n} {rugram.форма('равновозможный исход', n)} равна {k} {rugram.форма('бит', k)}", св, выв_ru, зак_ru))
+    return вон
+
+
+def законы(шаг):
+    return laws.ступень("compsci")
+
+
+ГРУППЫ = (отказ_алфавита, энтропия, рассужд_энтропия, законы, автомат, грамматика, разрешимость,
           тип, инвариант, гомеостаз, модель)
 
 

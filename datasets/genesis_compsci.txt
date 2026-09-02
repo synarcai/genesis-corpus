@@ -116,6 +116,40 @@ what is the entropy of 32 equally likely outcomes? 32 equally likely outcomes: e
 how many bits do 256 equally likely outcomes carry? 256 equally likely outcomes carry 8 bits.
 чему равна энтропия 256 равновозможных исходов? 256 равновозможных исходов: энтропия 8 битов.
 
+почему энтропия 8 равновозможных исходов равна 3 бита? потому что 2^3 = 8: 8 равновозможных исходов: энтропия 3 бита. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+why is the entropy of 128 equally likely outcomes 7 bits? because 2^7 = 128: 128 equally likely outcomes: entropy 7 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+чему равна энтропия 4 равновозможных исхода? 2^2 = 4. значит 4 равновозможных исхода: энтропия 2 бита. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+what is the entropy of 64 equally likely outcomes? 2^6 = 64. therefore 64 equally likely outcomes: entropy 6 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+почему энтропия 2 равновозможных исхода равна 1 бит? потому что 2^1 = 2: 2 равновозможных исхода: энтропия 1 бит. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+why is the entropy of 32 equally likely outcomes 5 bits? because 2^5 = 32: 32 equally likely outcomes: entropy 5 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+чему равна энтропия 256 равновозможных исходов? 2^8 = 256. значит 256 равновозможных исходов: энтропия 8 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+what is the entropy of 16 equally likely outcomes? 2^4 = 16. therefore 16 equally likely outcomes: entropy 4 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+почему энтропия 128 равновозможных исходов равна 7 битов? потому что 2^7 = 128: 128 равновозможных исходов: энтропия 7 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+why is the entropy of 8 equally likely outcomes 3 bits? because 2^3 = 8: 8 equally likely outcomes: entropy 3 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+чему равна энтропия 64 равновозможных исхода? 2^6 = 64. значит 64 равновозможных исхода: энтропия 6 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+what is the entropy of 4 equally likely outcomes? 2^2 = 4. therefore 4 equally likely outcomes: entropy 2 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+почему энтропия 32 равновозможных исхода равна 5 битов? потому что 2^5 = 32: 32 равновозможных исхода: энтропия 5 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+why is the entropy of 2 equally likely outcomes 1 bit? because 2^1 = 2: 2 equally likely outcomes: entropy 1 bit. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+чему равна энтропия 16 равновозможных исходов? 2^4 = 16. значит 16 равновозможных исходов: энтропия 4 бита. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+what is the entropy of 256 equally likely outcomes? 2^8 = 256. therefore 256 equally likely outcomes: entropy 8 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+
+бит — это информация, различающая два равновозможных исхода.
+a decidable question is a question that a procedure answers yes or no in finitely many steps.
+что такое энтропия равновозможных исходов? энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+what is a finite automaton? a finite automaton is a set of states with transitions, and an input leads from state to state along them.
+энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+a finite automaton is a set of states with transitions, and an input leads from state to state along them.
+что такое разрешимый вопрос? разрешимый вопрос — это вопрос, на который процедура отвечает да или нет за конечное число шагов.
+what is a bit? a bit is the information that tells apart two equally likely outcomes.
+разрешимый вопрос — это вопрос, на который процедура отвечает да или нет за конечное число шагов.
+a bit is the information that tells apart two equally likely outcomes.
+что такое конечный автомат? конечный автомат — это множество состояний с переходами, и вход ведёт от состояния к состоянию по ним.
+what is the entropy of equally likely outcomes? the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+конечный автомат — это множество состояний с переходами, и вход ведёт от состояния к состоянию по ним.
+the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+что такое бит? бит — это информация, различающая два равновозможных исхода.
+what is a decidable question? a decidable question is a question that a procedure answers yes or no in finitely many steps.
+
 parity automaton: input 0 0 1; the state after is odd.
 автомат чётности: вход 1 1 1; состояние после — нечётное.
 parity automaton: input 1 1; the state after is even.
@@ -406,6 +440,40 @@ how much does a word of 1 sign over an alphabet of 4 signs cost? a word of 1 sig
 a word of 3 signs over an alphabet of 2 signs costs 3 bits.
 слово из 4 знака алфавита в 4 знака стоит 8 битов.
 how many bits do 256 equally likely outcomes carry? 256 equally likely outcomes carry 8 bits.
+
+why is the entropy of 4 equally likely outcomes 2 bits? because 2^2 = 4: 4 equally likely outcomes: entropy 2 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+чему равна энтропия 128 равновозможных исходов? 2^7 = 128. значит 128 равновозможных исходов: энтропия 7 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+what is the entropy of 32 equally likely outcomes? 2^5 = 32. therefore 32 equally likely outcomes: entropy 5 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+почему энтропия 4 равновозможных исхода равна 2 бита? потому что 2^2 = 4: 4 равновозможных исхода: энтропия 2 бита. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+why is the entropy of 256 equally likely outcomes 8 bits? because 2^8 = 256: 256 equally likely outcomes: entropy 8 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+чему равна энтропия 32 равновозможных исхода? 2^5 = 32. значит 32 равновозможных исхода: энтропия 5 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+what is the entropy of 8 equally likely outcomes? 2^3 = 8. therefore 8 equally likely outcomes: entropy 3 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+почему энтропия 256 равновозможных исходов равна 8 битов? потому что 2^8 = 256: 256 равновозможных исходов: энтропия 8 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+why is the entropy of 64 equally likely outcomes 6 bits? because 2^6 = 64: 64 equally likely outcomes: entropy 6 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+чему равна энтропия 8 равновозможных исходов? 2^3 = 8. значит 8 равновозможных исходов: энтропия 3 бита. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+what is the entropy of 2 equally likely outcomes? 2^1 = 2. therefore 2 equally likely outcomes: entropy 1 bit. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+почему энтропия 64 равновозможных исхода равна 6 битов? потому что 2^6 = 64: 64 равновозможных исхода: энтропия 6 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+why is the entropy of 16 equally likely outcomes 4 bits? because 2^4 = 16: 16 equally likely outcomes: entropy 4 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+чему равна энтропия 2 равновозможных исхода? 2^1 = 2. значит 2 равновозможных исхода: энтропия 1 бит. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+what is the entropy of 128 equally likely outcomes? 2^7 = 128. therefore 128 equally likely outcomes: entropy 7 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+почему энтропия 16 равновозможных исходов равна 4 бита? потому что 2^4 = 16: 16 равновозможных исходов: энтропия 4 бита. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+
+what is the entropy of equally likely outcomes? the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+разрешимый вопрос — это вопрос, на который процедура отвечает да или нет за конечное число шагов.
+a finite automaton is a set of states with transitions, and an input leads from state to state along them.
+что такое энтропия равновозможных исходов? энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+what is a decidable question? a decidable question is a question that a procedure answers yes or no in finitely many steps.
+конечный автомат — это множество состояний с переходами, и вход ведёт от состояния к состоянию по ним.
+a bit is the information that tells apart two equally likely outcomes.
+что такое разрешимый вопрос? разрешимый вопрос — это вопрос, на который процедура отвечает да или нет за конечное число шагов.
+what is a finite automaton? a finite automaton is a set of states with transitions, and an input leads from state to state along them.
+бит — это информация, различающая два равновозможных исхода.
+the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+что такое конечный автомат? конечный автомат — это множество состояний с переходами, и вход ведёт от состояния к состоянию по ним.
+what is a bit? a bit is the information that tells apart two equally likely outcomes.
+энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+a decidable question is a question that a procedure answers yes or no in finitely many steps.
+что такое бит? бит — это информация, различающая два равновозможных исхода.
 
 автомат чётности: вход 1 1; состояние после — чётное.
 parity automaton: input 1 1 1; the state after is odd.
@@ -698,6 +766,40 @@ a word of 2 signs over an alphabet of 8 signs costs 6 bits.
 how much does a word of 4 signs over an alphabet of 4 signs cost? a word of 4 signs over an alphabet of 4 signs costs 8 bits.
 256 равновозможных исходов: энтропия 8 битов.
 
+почему энтропия 32 равновозможных исхода равна 5 битов? потому что 2^5 = 32: 32 равновозможных исхода: энтропия 5 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+what is the entropy of 16 equally likely outcomes? 2^4 = 16. therefore 16 equally likely outcomes: entropy 4 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+чему равна энтропия 4 равновозможных исхода? 2^2 = 4. значит 4 равновозможных исхода: энтропия 2 бита. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+why is the entropy of 2 equally likely outcomes 1 bit? because 2^1 = 2: 2 equally likely outcomes: entropy 1 bit. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+почему энтропия 128 равновозможных исходов равна 7 битов? потому что 2^7 = 128: 128 равновозможных исходов: энтропия 7 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+what is the entropy of 64 equally likely outcomes? 2^6 = 64. therefore 64 equally likely outcomes: entropy 6 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+чему равна энтропия 16 равновозможных исходов? 2^4 = 16. значит 16 равновозможных исходов: энтропия 4 бита. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+why is the entropy of 8 equally likely outcomes 3 bits? because 2^3 = 8: 8 equally likely outcomes: entropy 3 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+почему энтропия 2 равновозможных исхода равна 1 бит? потому что 2^1 = 2: 2 равновозможных исхода: энтропия 1 бит. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+what is the entropy of 256 equally likely outcomes? 2^8 = 256. therefore 256 equally likely outcomes: entropy 8 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+чему равна энтропия 64 равновозможных исхода? 2^6 = 64. значит 64 равновозможных исхода: энтропия 6 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+why is the entropy of 32 equally likely outcomes 5 bits? because 2^5 = 32: 32 equally likely outcomes: entropy 5 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+почему энтропия 8 равновозможных исходов равна 3 бита? потому что 2^3 = 8: 8 равновозможных исходов: энтропия 3 бита. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+what is the entropy of 4 equally likely outcomes? 2^2 = 4. therefore 4 equally likely outcomes: entropy 2 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+чему равна энтропия 256 равновозможных исходов? 2^8 = 256. значит 256 равновозможных исходов: энтропия 8 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+why is the entropy of 128 equally likely outcomes 7 bits? because 2^7 = 128: 128 equally likely outcomes: entropy 7 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+
+конечный автомат — это множество состояний с переходами, и вход ведёт от состояния к состоянию по ним.
+what is a bit? a bit is the information that tells apart two equally likely outcomes.
+что такое энтропия равновозможных исходов? энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+разрешимый вопрос — это вопрос, на который процедура отвечает да или нет за конечное число шагов.
+what is a finite automaton? a finite automaton is a set of states with transitions, and an input leads from state to state along them.
+что такое бит? бит — это информация, различающая два равновозможных исхода.
+a bit is the information that tells apart two equally likely outcomes.
+энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+what is a decidable question? a decidable question is a question that a procedure answers yes or no in finitely many steps.
+что такое конечный автомат? конечный автомат — это множество состояний с переходами, и вход ведёт от состояния к состоянию по ним.
+a finite automaton is a set of states with transitions, and an input leads from state to state along them.
+бит — это информация, различающая два равновозможных исхода.
+what is the entropy of equally likely outcomes? the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+что такое разрешимый вопрос? разрешимый вопрос — это вопрос, на который процедура отвечает да или нет за конечное число шагов.
+a decidable question is a question that a procedure answers yes or no in finitely many steps.
+
 parity automaton: input 1; the state after is odd.
 автомат чётности: вход 1 0 0 1 1; состояние после — нечётное.
 parity automaton: input 1 1; the state after is even.
@@ -989,6 +1091,40 @@ how many bits do 4 equally likely outcomes carry? 4 equally likely outcomes carr
 сколько бит стоит слово из 3 знака алфавита в 2 знака? слово из 3 знака алфавита в 2 знака стоит 3 бита.
 what is the entropy of 128 equally likely outcomes? 128 equally likely outcomes: entropy 7 bits.
 
+what is the entropy of 8 equally likely outcomes? 2^3 = 8. therefore 8 equally likely outcomes: entropy 3 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+чему равна энтропия 8 равновозможных исходов? 2^3 = 8. значит 8 равновозможных исходов: энтропия 3 бита. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+why is the entropy of 16 equally likely outcomes 4 bits? because 2^4 = 16: 16 equally likely outcomes: entropy 4 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+почему энтропия 16 равновозможных исходов равна 4 бита? потому что 2^4 = 16: 16 равновозможных исходов: энтропия 4 бита. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+what is the entropy of 32 equally likely outcomes? 2^5 = 32. therefore 32 equally likely outcomes: entropy 5 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+чему равна энтропия 32 равновозможных исхода? 2^5 = 32. значит 32 равновозможных исхода: энтропия 5 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+why is the entropy of 64 equally likely outcomes 6 bits? because 2^6 = 64: 64 equally likely outcomes: entropy 6 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+почему энтропия 64 равновозможных исхода равна 6 битов? потому что 2^6 = 64: 64 равновозможных исхода: энтропия 6 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+what is the entropy of 128 equally likely outcomes? 2^7 = 128. therefore 128 equally likely outcomes: entropy 7 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+чему равна энтропия 128 равновозможных исходов? 2^7 = 128. значит 128 равновозможных исходов: энтропия 7 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+why is the entropy of 256 equally likely outcomes 8 bits? because 2^8 = 256: 256 equally likely outcomes: entropy 8 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+почему энтропия 256 равновозможных исходов равна 8 битов? потому что 2^8 = 256: 256 равновозможных исходов: энтропия 8 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+what is the entropy of 2 equally likely outcomes? 2^1 = 2. therefore 2 equally likely outcomes: entropy 1 bit. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+чему равна энтропия 2 равновозможных исхода? 2^1 = 2. значит 2 равновозможных исхода: энтропия 1 бит. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+why is the entropy of 4 equally likely outcomes 2 bits? because 2^2 = 4: 4 equally likely outcomes: entropy 2 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+почему энтропия 4 равновозможных исхода равна 2 бита? потому что 2^2 = 4: 4 равновозможных исхода: энтропия 2 бита. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+
+a bit is the information that tells apart two equally likely outcomes.
+бит — это информация, различающая два равновозможных исхода.
+what is a bit? a bit is the information that tells apart two equally likely outcomes.
+что такое бит? бит — это информация, различающая два равновозможных исхода.
+a finite automaton is a set of states with transitions, and an input leads from state to state along them.
+конечный автомат — это множество состояний с переходами, и вход ведёт от состояния к состоянию по ним.
+what is a finite automaton? a finite automaton is a set of states with transitions, and an input leads from state to state along them.
+что такое конечный автомат? конечный автомат — это множество состояний с переходами, и вход ведёт от состояния к состоянию по ним.
+a decidable question is a question that a procedure answers yes or no in finitely many steps.
+разрешимый вопрос — это вопрос, на который процедура отвечает да или нет за конечное число шагов.
+what is a decidable question? a decidable question is a question that a procedure answers yes or no in finitely many steps.
+что такое разрешимый вопрос? разрешимый вопрос — это вопрос, на который процедура отвечает да или нет за конечное число шагов.
+the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+what is the entropy of equally likely outcomes? the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+что такое энтропия равновозможных исходов? энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+
 автомат чётности: вход 0 0 1; состояние после — нечётное.
 parity automaton: input 0 0 1; the state after is odd.
 автомат чётности: вход 1 0 0 1 1; состояние после — нечётное.
@@ -1279,6 +1415,40 @@ what is the entropy of 64 equally likely outcomes? 64 equally likely outcomes: e
 how many bits do 32 equally likely outcomes carry? 32 equally likely outcomes carry 5 bits.
 чему равна энтропия 64 равновозможных исхода? 64 равновозможных исхода: энтропия 6 битов.
 a word of 1 sign over an alphabet of 8 signs costs 3 bits.
+
+why is the entropy of 128 equally likely outcomes 7 bits? because 2^7 = 128: 128 equally likely outcomes: entropy 7 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+чему равна энтропия 256 равновозможных исходов? 2^8 = 256. значит 256 равновозможных исходов: энтропия 8 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+what is the entropy of 4 equally likely outcomes? 2^2 = 4. therefore 4 equally likely outcomes: entropy 2 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+почему энтропия 8 равновозможных исходов равна 3 бита? потому что 2^3 = 8: 8 равновозможных исходов: энтропия 3 бита. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+why is the entropy of 32 equally likely outcomes 5 bits? because 2^5 = 32: 32 equally likely outcomes: entropy 5 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+чему равна энтропия 64 равновозможных исхода? 2^6 = 64. значит 64 равновозможных исхода: энтропия 6 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+what is the entropy of 256 equally likely outcomes? 2^8 = 256. therefore 256 equally likely outcomes: entropy 8 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+почему энтропия 2 равновозможных исхода равна 1 бит? потому что 2^1 = 2: 2 равновозможных исхода: энтропия 1 бит. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+why is the entropy of 8 equally likely outcomes 3 bits? because 2^3 = 8: 8 equally likely outcomes: entropy 3 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+чему равна энтропия 16 равновозможных исходов? 2^4 = 16. значит 16 равновозможных исходов: энтропия 4 бита. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+what is the entropy of 64 equally likely outcomes? 2^6 = 64. therefore 64 equally likely outcomes: entropy 6 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+почему энтропия 128 равновозможных исходов равна 7 битов? потому что 2^7 = 128: 128 равновозможных исходов: энтропия 7 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+why is the entropy of 2 equally likely outcomes 1 bit? because 2^1 = 2: 2 equally likely outcomes: entropy 1 bit. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+чему равна энтропия 4 равновозможных исхода? 2^2 = 4. значит 4 равновозможных исхода: энтропия 2 бита. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+what is the entropy of 16 equally likely outcomes? 2^4 = 16. therefore 16 equally likely outcomes: entropy 4 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+почему энтропия 32 равновозможных исхода равна 5 битов? потому что 2^5 = 32: 32 равновозможных исхода: энтропия 5 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+
+a decidable question is a question that a procedure answers yes or no in finitely many steps.
+что такое разрешимый вопрос? разрешимый вопрос — это вопрос, на который процедура отвечает да или нет за конечное число шагов.
+what is the entropy of equally likely outcomes? the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+бит — это информация, различающая два равновозможных исхода.
+a finite automaton is a set of states with transitions, and an input leads from state to state along them.
+что такое конечный автомат? конечный автомат — это множество состояний с переходами, и вход ведёт от состояния к состоянию по ним.
+what is a decidable question? a decidable question is a question that a procedure answers yes or no in finitely many steps.
+энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+a bit is the information that tells apart two equally likely outcomes.
+что такое бит? бит — это информация, различающая два равновозможных исхода.
+what is a finite automaton? a finite automaton is a set of states with transitions, and an input leads from state to state along them.
+разрешимый вопрос — это вопрос, на который процедура отвечает да или нет за конечное число шагов.
+the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+что такое энтропия равновозможных исходов? энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+what is a bit? a bit is the information that tells apart two equally likely outcomes.
+конечный автомат — это множество состояний с переходами, и вход ведёт от состояния к состоянию по ним.
 
 автомат чётности: вход 1 1 1; состояние после — нечётное.
 parity automaton: input 0 1 0 1; the state after is even.

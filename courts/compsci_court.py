@@ -104,8 +104,48 @@ def _г(m):
     return [x for x in m.groups() if x is not None]
 
 
+import discourse  # noqa: E402
+import laws  # noqa: E402
+ЗАКОНЫ = laws.свод("compsci")
+ЗАКОН_ЭНТРОПИИ = {"en": laws.ЗАКОНЫ["compsci"][0][2], "ru": laws.ЗАКОНЫ["compsci"][0][3]}
+ВОПРОС_ЭНТРОПИИ = re.compile(
+    r"^(?:what is the entropy of (\d+) equally likely outcomes|чему равна энтропия (\d+) \S+ \S+"
+    r"|why is the entropy of (\d+) equally likely outcomes (\d+) bits?|почему энтропия (\d+) \S+ \S+ равна (\d+) \S+)$")
+СВИД_ЭНТРОПИИ = re.compile(r"^2\^(\d+) = (\d+)$")
+ВЫВОД_ЭНТРОПИИ = re.compile(r"^(?:(\d+) equally likely outcomes: entropy (\d+) bits?|(\d+) \S+ \S+: энтропия (\d+) \S+)$")
+
+
+def _рассуждение(с):
+    язык = "ru" if re.search(r"[а-яё]", с) else "en"
+    ч_ = discourse.части(с, язык)
+    if ч_ is None:
+        return None
+    м = ВОПРОС_ЭНТРОПИИ.match(ч_["вопрос"])
+    if not м:
+        return None
+    if ч_["связка"] is None or ч_["вердикт"] is not None:
+        return True, False
+    г = [int(x) for x in м.groups() if x is not None]
+    n = г[0]
+    if n < 2 or n & (n - 1):
+        return True, False
+    k = n.bit_length() - 1
+    if len(г) > 1 and г[1] != k:
+        return True, False
+    св = СВИД_ЭНТРОПИИ.match(ч_["свидетель"])
+    выв = ВЫВОД_ЭНТРОПИИ.match(ч_["вывод"])
+    return True, (bool(св) and [int(x) for x in св.groups()] == [k, n]
+                  and bool(выв) and [int(x) for x in выв.groups() if x is not None] == [n, k]
+                  and ч_["закон"] == ЗАКОН_ЭНТРОПИИ[язык])
+
+
 def судить(строка):
     """(судимо, истинно) для одной строки."""
+    if строка.strip() in ЗАКОНЫ:
+        return True, True
+    р = _рассуждение(строка.strip())
+    if р is not None:
+        return р
     # ВОПРОС СУДИТСЯ СВОИМ ОТВЕТОМ, А РОД ОПРЕДЕЛЯЕТСЯ ОТВЕТОМ.
     # Связь половин держит общий дом `tools/asking.py`: величины
     # вопроса суть начальный отрезок величин ответа, и порча любой из

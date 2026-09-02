@@ -92,8 +92,36 @@ def спросить(искомое, предмет, ответ):
     return f"{СПРОСИТЬ[искомое].format(предмет=предмет)} {ответ}"
 
 
-def pass_shows(pass_i):
+import discourse  # noqa: E402
+import laws  # noqa: E402
+
+
+def рассужд_сходимость(pass_i):
+    """Счёт шагов рассуждением (дом речи): свидетель — «нач + шагов × шаг =
+    цель», вывод — утверждение мира, закон — замкнутый контур."""
     out = []
+    зак_en, зак_ru = laws.ЗАКОНЫ["cybernetics"][1][2], laws.ЗАКОНЫ["cybernetics"][1][3]
+    for i in range(10):
+        цель, нач, шаг = КОНТУРЫ[(pass_i + i) % len(КОНТУРЫ)]
+        ошибка = цель - нач
+        if ошибка % шаг:
+            continue
+        шагов = ошибка // шаг
+        св_en = f"{нач} + {шагов} × {шаг} = {цель}"
+        св_ru = f"{нач} + {шагов} × {шаг} = {цель}"
+        выв_en = f"starting at {нач} with target {цель} and step {шаг} the value reaches {цель} in {шагов} steps"
+        выв_ru = f"начав с {нач} при цели {цель} и шаге {шаг}, значение достигает {цель} за {шагов} {ру('шаг', шагов)}"
+        if i % 2 == 0:
+            out.append(discourse.рассуждение_величины("en", f"how many steps does starting at {нач} with target {цель} and step {шаг} take", св_en, выв_en, зак_en))
+            out.append(discourse.рассуждение_величины("ru", f"за сколько шагов начав с {нач} при цели {цель} и шаге {шаг} достигает цели", св_ru, выв_ru, зак_ru))
+        else:
+            out.append(discourse.почему("en", f"why does starting at {нач} with target {цель} and step {шаг} take {шагов} steps", св_en, выв_en, зак_en))
+            out.append(discourse.почему("ru", f"почему начав с {нач} при цели {цель} и шаге {шаг}, значение достигает цели за {шагов} {ру('шаг', шагов)}", св_ru, выв_ru, зак_ru))
+    return out
+
+
+def pass_shows(pass_i):
+    out = list(laws.ступень("cybernetics")) + рассужд_сходимость(pass_i)
     for i in range(10):
         цель, нач, шаг = КОНТУРЫ[(pass_i + i) % len(КОНТУРЫ)]
         n = СОСТОЯНИЙ[(pass_i * 3 + i) % len(СОСТОЯНИЙ)]

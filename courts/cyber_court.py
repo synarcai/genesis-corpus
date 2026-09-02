@@ -101,7 +101,52 @@ def бит_хватает(строка):
     return бит == нужно
 
 
+import discourse  # noqa: E402
+import laws  # noqa: E402
+ЗАКОНЫ = laws.свод("cybernetics")
+ЗАКОН_КОНТУРА = {"en": laws.ЗАКОНЫ["cybernetics"][1][2], "ru": laws.ЗАКОНЫ["cybernetics"][1][3]}
+ВОПРОС_ШАГОВ = re.compile(
+    r"^(?:how many steps does starting at (\d+) with target (\d+) and step (\d+) take"
+    r"|за сколько шагов начав с (\d+) при цели (\d+) и шаге (\d+) достигает цели"
+    r"|why does starting at (\d+) with target (\d+) and step (\d+) take (\d+) steps"
+    r"|почему начав с (\d+) при цели (\d+) и шаге (\d+), значение достигает цели за (\d+) \S+)$")
+СВИД_ШАГОВ = re.compile(r"^(\d+) \+ (\d+) × (\d+) = (\d+)$")
+ВЫВОД_ШАГОВ = re.compile(
+    r"^(?:starting at (\d+) with target (\d+) and step (\d+) the value reaches (\d+) in (\d+) steps"
+    r"|начав с (\d+) при цели (\d+) и шаге (\d+), значение достигает (\d+) за (\d+) \S+)$")
+
+
+def _рассуждение(с):
+    """Рассуждение о сходимости судится частями (дом речи)."""
+    язык = "ru" if re.search(r"[а-яё]", с) else "en"
+    ч_ = discourse.части(с, язык)
+    if ч_ is None:
+        return None
+    м = ВОПРОС_ШАГОВ.match(ч_["вопрос"])
+    if not м:
+        return None
+    if ч_["связка"] is None or ч_["вердикт"] is not None:
+        return True, False
+    г = [int(x) for x in м.groups() if x is not None]
+    нач, цель, шаг = г[0], г[1], г[2]
+    if шаг == 0 or (цель - нач) % шаг or цель < нач:
+        return True, False
+    шагов = (цель - нач) // шаг
+    if len(г) > 3 and г[3] != шагов:
+        return True, False
+    св = СВИД_ШАГОВ.match(ч_["свидетель"])
+    выв = ВЫВОД_ШАГОВ.match(ч_["вывод"])
+    return True, (bool(св) and [int(x) for x in св.groups()] == [нач, шагов, шаг, цель]
+                  and bool(выв) and [int(x) for x in выв.groups() if x is not None] == [нач, цель, шаг, цель, шагов]
+                  and ч_["закон"] == ЗАКОН_КОНТУРА[язык])
+
+
 def судить(строка):
+    if строка.strip() in ЗАКОНЫ:
+        return True, True
+    р = _рассуждение(строка.strip())
+    if р is not None:
+        return р
     # ВОПРОС СУДИТСЯ СВОИМ ОТВЕТОМ, А РОД ОПРЕДЕЛЯЕТСЯ ОТВЕТОМ.
     # Связь половин держит общий дом `tools/asking.py`: величины
     # вопроса суть начальный отрезок величин ответа, и порча любой из
