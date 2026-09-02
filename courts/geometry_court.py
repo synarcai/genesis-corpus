@@ -40,28 +40,30 @@ from genesis import Unreadable, worlds  # noqa: E402
 
 # ПУСТОЙ-ОБХОД: no-such-corpus-file
 
+# ПРОМЕЖУТОЧНЫЕ ВЕЛИЧИНЫ В ОТВЕТЕ (коллегия 03.09, П-1): показ несёт и счёт, и
+# итог, и суд сверяет каждое звено: множители — стороны, произведение — счёт.
 ПРЯМОУГОЛЬНИК = re.compile(
-    r"^(?:a rectangle (\d+) by (\d+) has area (\d+) and perimeter (\d+)"
-    r"|прямоугольник (\d+) на (\d+) имеет площадь (\d+) и периметр (\d+))\.$")
+    r"^(?:a rectangle (\d+) by (\d+) has area (\d+) × (\d+) = (\d+) and perimeter 2 × \((\d+) \+ (\d+)\) = (\d+)"
+    r"|прямоугольник (\d+) на (\d+) имеет площадь (\d+) × (\d+) = (\d+) и периметр 2 × \((\d+) \+ (\d+)\) = (\d+))\.$")
 КВАДРАТ = re.compile(
-    r"^(?:a square with side (\d+) has area (\d+) and perimeter (\d+)"
-    r"|квадрат со стороной (\d+) имеет площадь (\d+) и периметр (\d+))\.$")
+    r"^(?:a square with side (\d+) has area (\d+) × (\d+) = (\d+) and perimeter 4 × (\d+) = (\d+)"
+    r"|квадрат со стороной (\d+) имеет площадь (\d+) × (\d+) = (\d+) и периметр 4 × (\d+) = (\d+))\.$")
 ТРЕУГОЛЬНИК = re.compile(
-    r"^(?:a triangle with base (\d+) and height (\d+) has area (\d+)"
+    r"^(?:a triangle with base (\d+) and height (\d+) has area (\d+) × (\d+) ÷ 2 = (\d+)"
     r"|треугольник с основанием (\d+) и высотой (\d+) "
-    r"имеет площадь (\d+))\.$")
+    r"имеет площадь (\d+) × (\d+) ÷ 2 = (\d+))\.$")
 ГИПОТЕНУЗА = re.compile(
-    r"^(?:a right triangle with legs (\d+) and (\d+) has hypotenuse (\d+)"
+    r"^(?:a right triangle with legs (\d+) and (\d+) has hypotenuse (\d+): (\d+)\^2 \+ (\d+)\^2 = (\d+) and (\d+)\^2 = (\d+)"
     r"|прямоугольный треугольник с катетами (\d+) и (\d+) "
-    r"имеет гипотенузу (\d+))\.$")
+    r"имеет гипотенузу (\d+): (\d+)\^2 \+ (\d+)\^2 = (\d+) и (\d+)\^2 = (\d+))\.$")
 КВАДРАТЫ = re.compile(r"^(\d+)\^2 \+ (\d+)\^2 = (\d+)\^2\.$")
 КОРОБКА = re.compile(
-    r"^(?:a box (\d+) by (\d+) by (\d+) has volume (\d+) and surface (\d+)"
-    r"|коробка (\d+) на (\d+) на (\d+) имеет объём (\d+) "
-    r"и поверхность (\d+))\.$")
+    r"^(?:a box (\d+) by (\d+) by (\d+) has volume (\d+) × (\d+) × (\d+) = (\d+) and surface 2 × \((\d+) × (\d+) \+ (\d+) × (\d+) \+ (\d+) × (\d+)\) = (\d+)"
+    r"|коробка (\d+) на (\d+) на (\d+) имеет объём (\d+) × (\d+) × (\d+) = (\d+) "
+    r"и поверхность 2 × \((\d+) × (\d+) \+ (\d+) × (\d+) \+ (\d+) × (\d+)\) = (\d+))\.$")
 КУБ = re.compile(
-    r"^(?:a cube with edge (\d+) has volume (\d+)"
-    r"|куб с ребром (\d+) имеет объём (\d+))\.$")
+    r"^(?:a cube with edge (\d+) has volume (\d+) × (\d+) × (\d+) = (\d+)"
+    r"|куб с ребром (\d+) имеет объём (\d+) × (\d+) × (\d+) = (\d+))\.$")
 ОТКАЗ_ГИПОТЕНУЗЫ = re.compile(
     r"^(?:no whole answer for legs (\d+) and (\d+): (\d+)\^2 \+ (\d+)\^2"
     r" = (\d+), and (\d+) is not a perfect square"
@@ -99,33 +101,36 @@ def судить(строка):
         return если
     m = ПРЯМОУГОЛЬНИК.match(с)
     if m:
-        a, b, площадь, периметр = числа(m, 4)
-        return True, площадь == a * b and периметр == 2 * (a + b)
+        a, b, a2, b2, площадь, a3, b3, периметр = числа(m, 8)
+        return True, ((a2, b2, a3, b3) == (a, b, a, b) and площадь == a * b
+                      and периметр == 2 * (a + b))
     m = КВАДРАТ.match(с)
     if m:
-        a, площадь, периметр = числа(m, 3)
-        return True, площадь == a * a and периметр == 4 * a
+        a, a2, a3, площадь, a4, периметр = числа(m, 6)
+        return True, (a2 == a3 == a4 == a and площадь == a * a and периметр == 4 * a)
     m = ТРЕУГОЛЬНИК.match(с)
     if m:
-        b, h, площадь = числа(m, 3)
-        return True, b * h == 2 * площадь
+        b, h, b2, h2, площадь = числа(m, 5)
+        return True, (b2, h2) == (b, h) and b * h == 2 * площадь
     m = ГИПОТЕНУЗА.match(с)
     if m:
-        a, b, c = числа(m, 3)
-        return True, a * a + b * b == c * c
+        a, b, c, a2, b2, сумма, c2, кв = числа(m, 8)
+        return True, ((a2, b2, c2) == (a, b, c) and a * a + b * b == сумма
+                      and c * c == кв and сумма == кв)
     m = КВАДРАТЫ.match(с)
     if m:
         a, b, c = числа(m, 3)
         return True, a * a + b * b == c * c
     m = КОРОБКА.match(с)
     if m:
-        a, b, c, объём, поверхность = числа(m, 5)
-        return True, (объём == a * b * c
+        a, b, c, a2, b2, c2, объём, p1, p2, p3, p4, p5, p6, поверхность = числа(m, 14)
+        return True, ((a2, b2, c2) == (a, b, c) and объём == a * b * c
+                      and (p1, p2, p3, p4, p5, p6) == (a, b, b, c, a, c)
                       and поверхность == 2 * (a * b + b * c + a * c))
     m = КУБ.match(с)
     if m:
-        a, объём = числа(m, 2)
-        return True, объём == a ** 3
+        a, a2, a3, a4, объём = числа(m, 5)
+        return True, a2 == a3 == a4 == a and объём == a ** 3
     m = ОТКАЗ_ГИПОТЕНУЗЫ.match(с)
     if m:
         a, b, a2, b2, сумма, сумма2 = числа(m, 6)

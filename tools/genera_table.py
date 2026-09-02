@@ -40,8 +40,20 @@ def семейства_gsmforms():
             for i in range(16):
                 с = G.с_ответом(семья(шаг, i), шаг, i)
                 счёт[("ru" if КИРИЛЛИЦА.search(с) else "en", полярность(с))] += 1
+        # ФОРМЫ ВОПРОСА СЕМЕЙСТВА — ЧИСЛА ЗАМЕНЕНЫ РЕШЁТКОЙ: по ним прибор охвата
+        # сверяет купленную рамку с семейством (holon: «вопрос» в таблице пуст).
+        вопросы = {}
+        for шаг in range(ПРОХОДОВ):
+            for i in range(16):
+                с = семья(шаг, i)
+                if "?" in с:
+                    яз = "ru" if КИРИЛЛИЦА.search(с) else "en"
+                    форма = re.sub(r"\d+", "#", с.split("?")[0] + "?")
+                    форма = re.sub(r"\b(?:" + "|".join(sorted(map(re.escape, G.ИМЕНА_EN + G.ИМЕНА_RU), key=len, reverse=True)) + r")\b", "@", форма)
+                    вопросы.setdefault(яз, collections.Counter())[форма] += 1
         вон.append({"мир": "gsmforms", "семейство": имя, "формула": G.ФОРМУЛЫ[имя],
                     "величины": sorted(k for k in getattr(G, "п_" + имя)(0, 0) if k != "ответ"),
+                    "вопрос": {яз: [ф for ф, _ in c.most_common(4)] for яз, c in вопросы.items()},
                     "показов": {f"{яз}/{пол}": n for (яз, пол), n in sorted(счёт.items())},
                     "всего": sum(счёт.values())})
     return вон
