@@ -580,6 +580,31 @@ das Quadrat einer ungeraden Zahl ist ungerade: 3 × 3 = 9.
 est-il vrai que le carré d'un nombre impair est impair ? oui : aucun contre-exemple parmi 1..1000 ; exemple : 5 × 5 = 25.
 le carré d'un nombre pair est pair : 8 × 8 = 64.
 
+est-ce que 15 est pair ou impair ? impair: 15 = 2 × 7 + 1.
+ist 25 gerade oder ungerade? ungerade: 25 = 2 × 12 + 1.
+est-ce que 11 est pair ou impair ? impair: 11 = 2 × 5 + 1.
+ist 20 gerade oder ungerade? gerade: 20 = 2 × 10.
+est-ce que 21 est pair ou impair ? impair: 21 = 2 × 10 + 1.
+ist 27 gerade oder ungerade? ungerade: 27 = 2 × 13 + 1.
+est-ce que 14 est pair ou impair ? pair: 14 = 2 × 7.
+ist 12 gerade oder ungerade? gerade: 12 = 2 × 6.
+est-ce que 25 est pair ou impair ? impair: 25 = 2 × 12 + 1.
+ist 33 gerade oder ungerade? ungerade: 33 = 2 × 16 + 1.
+est-ce que 20 est pair ou impair ? pair: 20 = 2 × 10.
+ist 7 gerade oder ungerade? ungerade: 7 = 2 × 3 + 1.
+est-ce que 27 est pair ou impair ? impair: 27 = 2 × 13 + 1.
+ist 9 gerade oder ungerade? ungerade: 9 = 2 × 4 + 1.
+est-ce que 12 est pair ou impair ? pair: 12 = 2 × 6.
+ist 18 gerade oder ungerade? gerade: 18 = 2 × 9.
+est-ce que 33 est pair ou impair ? impair: 33 = 2 × 16 + 1.
+ist 15 gerade oder ungerade? ungerade: 15 = 2 × 7 + 1.
+est-ce que 7 est pair ou impair ? impair: 7 = 2 × 3 + 1.
+ist 11 gerade oder ungerade? ungerade: 11 = 2 × 5 + 1.
+est-ce que 9 est pair ou impair ? impair: 9 = 2 × 4 + 1.
+ist 21 gerade oder ungerade? ungerade: 21 = 2 × 10 + 1.
+est-ce que 18 est pair ou impair ? pair: 18 = 2 × 9.
+ist 14 gerade oder ungerade? gerade: 14 = 2 × 7.
+
 was ist eine Primzahl? eine Primzahl ist eine ganze Zahl größer als 1, deren einzige Teiler 1 und sie selbst sind.
 ist 47 nur durch 1 und sich selbst teilbar? ja: die Teiler von 47 sind 1 und 47.
 ist 95 eine Primzahl? nein: 95 = 5 × 19.
@@ -1161,6 +1186,31 @@ tout carré est pair est faux : 17 est impair et 17 × 17 = 289, qui est impair.
 ist es wahr: das Quadrat einer geraden Zahl ist gerade? ja: kein Gegenbeispiel unter 1..1000; Beispiel: 2 × 2 = 4.
 das Quadrat einer ungeraden Zahl ist ungerade: 3 × 3 = 9.
 est-il vrai que le carré d'un nombre impair est impair ? oui : aucun contre-exemple parmi 1..1000 ; exemple : 5 × 5 = 25.
+
+ist 25 gerade oder ungerade? ungerade: 25 = 2 × 12 + 1.
+est-ce que 14 est pair ou impair ? pair: 14 = 2 × 7.
+ist 7 gerade oder ungerade? ungerade: 7 = 2 × 3 + 1.
+est-ce que 33 est pair ou impair ? impair: 33 = 2 × 16 + 1.
+ist 45 gerade oder ungerade? ungerade: 45 = 2 × 22 + 1.
+est-ce que 11 est pair ou impair ? impair: 11 = 2 × 5 + 1.
+ist 16 gerade oder ungerade? gerade: 16 = 2 × 8.
+est-ce que 27 est pair ou impair ? impair: 27 = 2 × 13 + 1.
+ist 39 gerade oder ungerade? ungerade: 39 = 2 × 19 + 1.
+est-ce que 18 est pair ou impair ? pair: 18 = 2 × 9.
+ist 13 gerade oder ungerade? ungerade: 13 = 2 × 6 + 1.
+est-ce que 25 est pair ou impair ? impair: 25 = 2 × 12 + 1.
+ist 35 gerade oder ungerade? ungerade: 35 = 2 × 17 + 1.
+est-ce que 7 est pair ou impair ? impair: 7 = 2 × 3 + 1.
+ist 14 gerade oder ungerade? gerade: 14 = 2 × 7.
+est-ce que 45 est pair ou impair ? impair: 45 = 2 × 22 + 1.
+ist 33 gerade oder ungerade? ungerade: 33 = 2 × 16 + 1.
+est-ce que 16 est pair ou impair ? pair: 16 = 2 × 8.
+ist 11 gerade oder ungerade? ungerade: 11 = 2 × 5 + 1.
+est-ce que 39 est pair ou impair ? impair: 39 = 2 × 19 + 1.
+ist 27 gerade oder ungerade? ungerade: 27 = 2 × 13 + 1.
+est-ce que 13 est pair ou impair ? impair: 13 = 2 × 6 + 1.
+ist 18 gerade oder ungerade? gerade: 18 = 2 × 9.
+est-ce que 35 est pair ou impair ? impair: 35 = 2 × 17 + 1.
 
 ist 44 nur durch 1 und sich selbst teilbar? nein: 44 = 2 × 22.
 131 est-il un nombre premier ? oui : les diviseurs de 131 sont 1 et 131.
@@ -1744,6 +1794,31 @@ le carré d'un nombre pair est pair : 2 × 2 = 4.
 est-il vrai que le carré d'un nombre pair est pair ? oui : aucun contre-exemple parmi 1..1000 ; exemple : 16 × 16 = 256.
 das Quadrat einer ungeraden Zahl ist ungerade: 5 × 5 = 25.
 
+est-ce que 39 est pair ou impair ? impair: 39 = 2 × 19 + 1.
+ist 20 gerade oder ungerade? gerade: 20 = 2 × 10.
+est-ce que 16 est pair ou impair ? pair: 16 = 2 × 8.
+ist 33 gerade oder ungerade? ungerade: 33 = 2 × 16 + 1.
+est-ce que 45 est pair ou impair ? impair: 45 = 2 × 22 + 1.
+ist 14 gerade oder ungerade? gerade: 14 = 2 × 7.
+est-ce que 22 est pair ou impair ? pair: 22 = 2 × 11.
+ist 35 gerade oder ungerade? ungerade: 35 = 2 × 17 + 1.
+est-ce que 49 est pair ou impair ? impair: 49 = 2 × 24 + 1.
+ist 13 gerade oder ungerade? ungerade: 13 = 2 × 6 + 1.
+est-ce que 17 est pair ou impair ? impair: 17 = 2 × 8 + 1.
+ist 39 gerade oder ungerade? ungerade: 39 = 2 × 19 + 1.
+est-ce que 9 est pair ou impair ? impair: 9 = 2 × 4 + 1.
+ist 16 gerade oder ungerade? gerade: 16 = 2 × 8.
+est-ce que 20 est pair ou impair ? pair: 20 = 2 × 10.
+ist 45 gerade oder ungerade? ungerade: 45 = 2 × 22 + 1.
+est-ce que 33 est pair ou impair ? impair: 33 = 2 × 16 + 1.
+ist 22 gerade oder ungerade? gerade: 22 = 2 × 11.
+est-ce que 14 est pair ou impair ? pair: 14 = 2 × 7.
+ist 49 gerade oder ungerade? ungerade: 49 = 2 × 24 + 1.
+est-ce que 35 est pair ou impair ? impair: 35 = 2 × 17 + 1.
+ist 17 gerade oder ungerade? ungerade: 17 = 2 × 8 + 1.
+est-ce que 13 est pair ou impair ? impair: 13 = 2 × 6 + 1.
+ist 9 gerade oder ungerade? ungerade: 9 = 2 × 4 + 1.
+
 ist 41 eine Primzahl? ja: die Teiler von 41 sind 1 und 41.
 ist 170 nur durch 1 und sich selbst teilbar? nein: 170 = 2 × 85.
 182 est-il un nombre premier ? non : 182 = 2 × 91.
@@ -2326,6 +2401,31 @@ ist es wahr: jedes Quadrat ist gerade? nein: 7 ist ungerade und 7 × 7 = 49, was
 le carré d'un nombre pair est pair : 2 × 2 = 4.
 est-il vrai que le carré d'un nombre impair est impair ? oui : aucun contre-exemple parmi 1..1000 ; exemple : 15 × 15 = 225.
 
+ist 22 gerade oder ungerade? gerade: 22 = 2 × 11.
+est-ce que 7 est pair ou impair ? impair: 7 = 2 × 3 + 1.
+ist 15 gerade oder ungerade? ungerade: 15 = 2 × 7 + 1.
+est-ce que 49 est pair ou impair ? impair: 49 = 2 × 24 + 1.
+ist 16 gerade oder ungerade? gerade: 16 = 2 × 8.
+est-ce que 12 est pair ou impair ? pair: 12 = 2 × 6.
+ist 9 gerade oder ungerade? ungerade: 9 = 2 × 4 + 1.
+est-ce que 45 est pair ou impair ? impair: 45 = 2 × 22 + 1.
+ist 7 gerade oder ungerade? ungerade: 7 = 2 × 3 + 1.
+est-ce que 20 est pair ou impair ? pair: 20 = 2 × 10.
+ist 49 gerade oder ungerade? ungerade: 49 = 2 × 24 + 1.
+est-ce que 25 est pair ou impair ? impair: 25 = 2 × 12 + 1.
+ist 12 gerade oder ungerade? gerade: 12 = 2 × 6.
+est-ce que 17 est pair ou impair ? impair: 17 = 2 × 8 + 1.
+ist 45 gerade oder ungerade? ungerade: 45 = 2 × 22 + 1.
+est-ce que 21 est pair ou impair ? impair: 21 = 2 × 10 + 1.
+ist 20 gerade oder ungerade? gerade: 20 = 2 × 10.
+est-ce que 22 est pair ou impair ? pair: 22 = 2 × 11.
+ist 25 gerade oder ungerade? ungerade: 25 = 2 × 12 + 1.
+est-ce que 15 est pair ou impair ? impair: 15 = 2 × 7 + 1.
+ist 17 gerade oder ungerade? ungerade: 17 = 2 × 8 + 1.
+est-ce que 16 est pair ou impair ? pair: 16 = 2 × 8.
+ist 21 gerade oder ungerade? ungerade: 21 = 2 × 10 + 1.
+est-ce que 9 est pair ou impair ? impair: 9 = 2 × 4 + 1.
+
 ist 47 eine Primzahl? ja: die Teiler von 47 sind 1 und 47.
 215 est-il divisible seulement par 1 et par lui-même ? non : 215 = 5 × 43.
 230 est-il un nombre premier ? non : 230 = 2 × 115.
@@ -2907,3 +3007,28 @@ was ist das Quadrat von 14? 14 × 14 = 196.
 est-il vrai que tout carré est pair ? non : 7 est impair et 7 × 7 = 49, qui est impair.
 le carré d'un nombre impair est impair : 3 × 3 = 9.
 ist es wahr: das Quadrat einer ungeraden Zahl ist ungerade? ja: kein Gegenbeispiel unter 1..1000; Beispiel: 15 × 15 = 225.
+
+ist 25 gerade oder ungerade? ungerade: 25 = 2 × 12 + 1.
+est-ce que 12 est pair ou impair ? pair: 12 = 2 × 6.
+ist 20 gerade oder ungerade? gerade: 20 = 2 × 10.
+est-ce que 33 est pair ou impair ? impair: 33 = 2 × 16 + 1.
+ist 27 gerade oder ungerade? ungerade: 27 = 2 × 13 + 1.
+est-ce que 7 est pair ou impair ? impair: 7 = 2 × 3 + 1.
+ist 12 gerade oder ungerade? gerade: 12 = 2 × 6.
+est-ce que 9 est pair ou impair ? impair: 9 = 2 × 4 + 1.
+ist 33 gerade oder ungerade? ungerade: 33 = 2 × 16 + 1.
+est-ce que 18 est pair ou impair ? pair: 18 = 2 × 9.
+ist 7 gerade oder ungerade? ungerade: 7 = 2 × 3 + 1.
+est-ce que 15 est pair ou impair ? impair: 15 = 2 × 7 + 1.
+ist 9 gerade oder ungerade? ungerade: 9 = 2 × 4 + 1.
+est-ce que 11 est pair ou impair ? impair: 11 = 2 × 5 + 1.
+ist 18 gerade oder ungerade? gerade: 18 = 2 × 9.
+est-ce que 21 est pair ou impair ? impair: 21 = 2 × 10 + 1.
+ist 15 gerade oder ungerade? ungerade: 15 = 2 × 7 + 1.
+est-ce que 14 est pair ou impair ? pair: 14 = 2 × 7.
+ist 11 gerade oder ungerade? ungerade: 11 = 2 × 5 + 1.
+est-ce que 25 est pair ou impair ? impair: 25 = 2 × 12 + 1.
+ist 21 gerade oder ungerade? ungerade: 21 = 2 × 10 + 1.
+est-ce que 20 est pair ou impair ? pair: 20 = 2 × 10.
+ist 14 gerade oder ungerade? gerade: 14 = 2 × 7.
+est-ce que 27 est pair ou impair ? impair: 27 = 2 × 13 + 1.

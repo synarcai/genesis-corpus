@@ -82,6 +82,7 @@ import sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from layer import emit_grouped  # noqa: E402
 import universals  # noqa: E402
+import parity  # noqa: E402
 import paraphrase  # noqa: E402
 
 ЦЕЛЬ = "datasets/genesis_inquiry_pt_nl.txt"
@@ -507,6 +508,9 @@ def pass_groups(шаг):
     for _имя, вопр, опр, исп, контр, общ in РОДЫ:
         вон.append(ступень_определения(вопр, опр)
                    + исп(шаг) + контр(шаг) + общ(шаг))
+    # ЧЁТНОСТЬ КАК ВОПРОС ВЫБОРА (tools/parity.py, holon 03.09): предикат
+    # «чётно/нечётно» рынку универсалий на языках мира.
+    вон.append(parity.показы(ЯЗЫКИ_МИРА, шаг))
     return вон
 
 
