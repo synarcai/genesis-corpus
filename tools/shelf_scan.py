@@ -174,10 +174,13 @@ def страницы_из_xml(пути, индексы):
         x = путь.read_text(encoding="utf-8")
         for м in re.finditer(
                 r"<title>(.*?)</title>.*?<text[^>]*>(.*?)</text>", x, re.S):
-            титул, номер = м.group(1).rsplit("/", 1)
-            том = next((i for i, и in enumerate(индексы)
-                        if титул.endswith(и)), len(индексы))
-            вон.append(((том, int(номер)), html.unescape(м.group(2))))
+            титул = html.unescape(м.group(1))
+            м_номер = НОМЕР_СТРАНИЦЫ.search(титул)
+            if not м_номер:
+                continue
+            # Том — тот индекс, чьё имя стоит в титуле («…djvu/N» или «… N.jpeg»).
+            том = next((i for i, и in enumerate(индексы) if и in титул), len(индексы))
+            вон.append(((том, int(м_номер.group(1))), html.unescape(м.group(2))))
     return [(н, т) for (_том, н), т in sorted(вон, key=lambda п: п[0])]
 
 
@@ -338,7 +341,10 @@ def суд_орфографии(страницы, сколько):
 
 def объявление(скан, сдал, байт, строк):
     return {
-        "name": скан.имя + "_ru",
+        # ИМЯ МИРА НЕСЁТ ЯЗЫК ОДИН РАЗ: «dal_1880» → «dal_1880_ru», «bruckner_1927_pl»
+        # остаётся собой, «newton_principia» → «newton_principia_en» (первая
+        # редакция звала английские «Начала» «_ru»).
+        "name": скан.имя if скан.имя.endswith("_" + скан.язык) else скан.имя + "_" + скан.язык,
         "file": f"shelf/{скан.язык}/{скан.имя}.txt",
         "genre": (f"{скан.автор}, «{скан.заглавие}» ({скан.издано}): "
                   + ("словарь гнёздами — заголовок капсом, толкование, "

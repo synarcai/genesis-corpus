@@ -4188,7 +4188,7 @@
       "судится": []
     },
     {
-      "name": "newton_principia_ru",
+      "name": "newton_principia_en",
       "file": "shelf/en/newton_principia.txt",
       "genre": "Isaac Newton, «The Mathematical Principles of Natural Philosophy (Motte's translation, 1846)» (1687): со скана Викитеки, абзацами страниц",
       "act": [
@@ -4238,6 +4238,31 @@
       "источник": "public-domain",
       "происхождение": "gutenberg:22",
       "held_out": "shelf/en/roget_thesaurus.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "bruckner_1927_pl",
+      "file": "shelf/pl/bruckner_1927_pl.txt",
+      "genre": "Aleksander Brückner, «Słownik etymologiczny języka polskiego» (1927): словарь гнёздами — заголовок капсом, толкование, пословицы и говоры при нём; орфография переведена правилом (tools/oldspell.py)",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 2568483,
+      "tiers": [],
+      "text": "prose",
+      "язык": "pl",
+      "тема": "язык",
+      "плотность": "словарь",
+      "издано": 1927,
+      "источник": "public-domain",
+      "происхождение": "wikisource-pl-scan:PL Aleksander Brückner-Słownik etymologiczny języka polskiego",
+      "held_out": "shelf/pl/bruckner_1927_pl.holdout.txt",
       "судится": []
     }
   ]
