@@ -1,0 +1,140 @@
+{"id": "ho0001", "ask": "what is 13 xor 6?", "expect": {"kind": "value", "n": 11}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
+{"id": "ho0002", "ask": "what is 5 shifted left by 3?", "expect": {"kind": "value", "n": 40}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
+{"id": "ho0003", "ask": "what is 25 in octal?", "expect": {"kind": "value", "n": 31}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
+{"id": "ho0004", "ask": "what is 7 or 3?", "expect": {"kind": "value", "n": 7}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
+{"id": "ho0005", "ask": "what is 60 and 15?", "expect": {"kind": "value", "n": 12}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
+{"id": "ho0006", "ask": "what is 100 in hex?", "expect": {"kind": "value", "n": 64}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
+{"id": "ho0007", "ask": "what is 88 shifted right by 3?", "expect": {"kind": "value", "n": 11}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
+{"id": "ho0008", "ask": "what is 31 in binary?", "expect": {"kind": "value", "n": 11111}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
+{"id": "ho0009", "ask": "what is 100 xor 36?", "expect": {"kind": "value", "n": 64}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
+{"id": "ho0010", "ask": "what is 2 shifted left by 5?", "expect": {"kind": "value", "n": 64}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
+{"id": "ho0011", "ask": "what is 255 in octal?", "expect": {"kind": "value", "n": 377}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
+{"id": "ho0012", "ask": "what is 17 shifted left by 2?", "expect": {"kind": "value", "n": 68}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
+{"id": "ho0013", "ask": "what is 12 in octal?", "expect": {"kind": "value", "n": 14}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
+{"id": "ho0014", "ask": "what is 13 shifted left by 2?", "expect": {"kind": "value", "n": 52}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
+{"id": "ho0015", "ask": "what is 9 in octal?", "expect": {"kind": "value", "n": 11}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
+{"id": "ho0016", "ask": "чему равно 19 по модулю 6?", "expect": {"kind": "value", "n": 1}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
+{"id": "ho0017", "ask": "чему равно 40 по модулю 6?", "expect": {"kind": "value", "n": 4}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
+{"id": "ho0018", "ask": "чему равно 61 по модулю 6?", "expect": {"kind": "value", "n": 1}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
+{"id": "ho0019", "ask": "чему равно 10 по модулю 3?", "expect": {"kind": "value", "n": 1}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
+{"id": "ho0020", "ask": "чему равно 31 по модулю 3?", "expect": {"kind": "value", "n": 1}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
+{"id": "ho0021", "ask": "чему равно 52 по модулю 3?", "expect": {"kind": "value", "n": 1}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
+{"id": "ho0022", "ask": "чему равно 73 по модулю 3?", "expect": {"kind": "value", "n": 1}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
+{"id": "ho0023", "ask": "чему равно 22 по модулю 7?", "expect": {"kind": "value", "n": 1}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
+{"id": "ho0024", "ask": "чему равно 43 по модулю 7?", "expect": {"kind": "value", "n": 1}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
+{"id": "ho0025", "ask": "чему равно 64 по модулю 7?", "expect": {"kind": "value", "n": 1}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
+{"id": "ho0026", "ask": "чему равно 13 по модулю 4?", "expect": {"kind": "value", "n": 1}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
+{"id": "ho0027", "ask": "чему равно 34 по модулю 4?", "expect": {"kind": "value", "n": 2}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
+{"id": "ho0028", "ask": "чему равно 55 по модулю 4?", "expect": {"kind": "value", "n": 3}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
+{"id": "ho0029", "ask": "чему равно 76 по модулю 4?", "expect": {"kind": "value", "n": 0}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
+{"id": "ho0030", "ask": "чему равно 25 по модулю 8?", "expect": {"kind": "value", "n": 1}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
+{"id": "ho0031", "ask": "чему равно 9 в степени 3?", "expect": {"kind": "value", "n": 729}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
+{"id": "ho0032", "ask": "чему равно 32 в степени 3?", "expect": {"kind": "value", "n": 32768}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
+{"id": "ho0033", "ask": "чему равно 27 в степени 2?", "expect": {"kind": "value", "n": 729}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
+{"id": "ho0034", "ask": "чему равно 4 в степени 5?", "expect": {"kind": "value", "n": 1024}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
+{"id": "ho0035", "ask": "чему равно 16 в степени 2?", "expect": {"kind": "value", "n": 256}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
+{"id": "ho0036", "ask": "чему равно 36 в степени 2?", "expect": {"kind": "value", "n": 1296}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
+{"id": "ho0037", "ask": "чему равно 8 в степени 4?", "expect": {"kind": "value", "n": 4096}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
+{"id": "ho0038", "ask": "чему равно 100 в степени 2?", "expect": {"kind": "value", "n": 10000}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
+{"id": "ho0039", "ask": "чему равно 16 в степени 3?", "expect": {"kind": "value", "n": 4096}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
+{"id": "ho0040", "ask": "чему равно 25 в степени 2?", "expect": {"kind": "value", "n": 625}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
+{"id": "ho0041", "ask": "чему равно 27 в степени 2?", "expect": {"kind": "value", "n": 729}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
+{"id": "ho0042", "ask": "чему равно 100 в степени 2?", "expect": {"kind": "value", "n": 10000}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
+{"id": "ho0043", "ask": "чему равно 32 в степени 3?", "expect": {"kind": "value", "n": 32768}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
+{"id": "ho0044", "ask": "чему равно 36 в степени 2?", "expect": {"kind": "value", "n": 1296}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
+{"id": "ho0045", "ask": "чему равно 8 в степени 4?", "expect": {"kind": "value", "n": 4096}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
+{"id": "ho0046", "ask": "чему равен член номер 5 прогрессии от 2 с шагом 2?", "expect": {"kind": "value", "n": 10}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
+{"id": "ho0047", "ask": "чему равна сумма 4 8 12 16?", "expect": {"kind": "value", "n": 40}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
+{"id": "ho0048", "ask": "what is term number 5 of the progression from 5 with step 5?", "expect": {"kind": "value", "n": 25}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
+{"id": "ho0049", "ask": "what is the sum of 7 9 11 13?", "expect": {"kind": "value", "n": 40}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
+{"id": "ho0050", "ask": "чему равен член номер 5 прогрессии от 9 с шагом 4?", "expect": {"kind": "value", "n": 25}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
+{"id": "ho0051", "ask": "чему равна сумма 11 17 23 29?", "expect": {"kind": "value", "n": 80}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
+{"id": "ho0052", "ask": "what is term number 5 of the progression from 12 with step 2?", "expect": {"kind": "value", "n": 20}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
+{"id": "ho0053", "ask": "what is the sum of 14 18 22 26?", "expect": {"kind": "value", "n": 80}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
+{"id": "ho0054", "ask": "чему равен член номер 5 прогрессии от 16 с шагом 6?", "expect": {"kind": "value", "n": 40}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
+{"id": "ho0055", "ask": "чему равна сумма 18 21 24 27?", "expect": {"kind": "value", "n": 90}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
+{"id": "ho0056", "ask": "what is term number 5 of the progression from 19 with step 4?", "expect": {"kind": "value", "n": 35}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
+{"id": "ho0057", "ask": "what is the sum of 21 27 33 39?", "expect": {"kind": "value", "n": 120}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
+{"id": "ho0058", "ask": "чему равен член номер 5 прогрессии от 23 с шагом 3?", "expect": {"kind": "value", "n": 35}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
+{"id": "ho0059", "ask": "чему равна сумма 25 30 35 40?", "expect": {"kind": "value", "n": 130}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
+{"id": "ho0060", "ask": "what is term number 5 of the progression from 2 with step 2?", "expect": {"kind": "value", "n": 10}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
+{"id": "ho0061", "ask": "чему равна медиана 1 3 7?", "expect": {"kind": "value", "n": 3}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
+{"id": "ho0062", "ask": "what is the mean of 4 8?", "expect": {"kind": "value", "n": 6}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
+{"id": "ho0063", "ask": "чему равно среднее 2 2 8?", "expect": {"kind": "value", "n": 4}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
+{"id": "ho0064", "ask": "what is the range of 10 1 6?", "expect": {"kind": "value", "n": 9}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
+{"id": "ho0065", "ask": "чему равен размах 7 3 3?", "expect": {"kind": "value", "n": 4}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
+{"id": "ho0066", "ask": "what is the median of 9 9 1?", "expect": {"kind": "value", "n": 9}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
+{"id": "ho0067", "ask": "чему равна медиана 6 2 4?", "expect": {"kind": "value", "n": 4}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
+{"id": "ho0068", "ask": "what is the mean of 1 3 5?", "expect": {"kind": "value", "n": 3}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
+{"id": "ho0069", "ask": "чему равно среднее 4 8?", "expect": {"kind": "value", "n": 6}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
+{"id": "ho0070", "ask": "what is the range of 4 4 8?", "expect": {"kind": "value", "n": 4}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
+{"id": "ho0071", "ask": "чему равен размах 10 1 6?", "expect": {"kind": "value", "n": 9}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
+{"id": "ho0072", "ask": "what is the median of 2 8 5?", "expect": {"kind": "value", "n": 5}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
+{"id": "ho0073", "ask": "чему равна медиана 9 9 1?", "expect": {"kind": "value", "n": 9}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
+{"id": "ho0074", "ask": "what is the mean of 2 4 6?", "expect": {"kind": "value", "n": 4}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
+{"id": "ho0075", "ask": "чему равно среднее 1 3 5?", "expect": {"kind": "value", "n": 3}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
+{"id": "ho0076", "ask": "чему равна сумма первых 2 нечётных чисел?", "expect": {"kind": "value", "n": 4}, "tags": ["held_out_form:false", "genus:genesis_inquiry", "source:corpus"]}
+{"id": "ho0077", "ask": "what is the sum of the first 6 odd numbers?", "expect": {"kind": "value", "n": 36}, "tags": ["held_out_form:false", "genus:genesis_inquiry", "source:corpus"]}
+{"id": "ho0078", "ask": "чему равна сумма первых 9 нечётных чисел?", "expect": {"kind": "value", "n": 81}, "tags": ["held_out_form:false", "genus:genesis_inquiry", "source:corpus"]}
+{"id": "ho0079", "ask": "чему равна сумма первых 4 нечётных чисел?", "expect": {"kind": "value", "n": 16}, "tags": ["held_out_form:false", "genus:genesis_inquiry", "source:corpus"]}
+{"id": "ho0080", "ask": "what is the sum of the first 8 odd numbers?", "expect": {"kind": "value", "n": 64}, "tags": ["held_out_form:false", "genus:genesis_inquiry", "source:corpus"]}
+{"id": "ho0081", "ask": "чему равна сумма первых 11 нечётных чисел?", "expect": {"kind": "value", "n": 121}, "tags": ["held_out_form:false", "genus:genesis_inquiry", "source:corpus"]}
+{"id": "ho0082", "ask": "what is the sum of the first 3 odd numbers?", "expect": {"kind": "value", "n": 9}, "tags": ["held_out_form:false", "genus:genesis_inquiry", "source:corpus"]}
+{"id": "ho0083", "ask": "чему равна сумма первых 6 нечётных чисел?", "expect": {"kind": "value", "n": 36}, "tags": ["held_out_form:false", "genus:genesis_inquiry", "source:corpus"]}
+{"id": "ho0084", "ask": "what is the sum of the first 10 odd numbers?", "expect": {"kind": "value", "n": 100}, "tags": ["held_out_form:false", "genus:genesis_inquiry", "source:corpus"]}
+{"id": "ho0085", "ask": "what is the sum of the first 5 odd numbers?", "expect": {"kind": "value", "n": 25}, "tags": ["held_out_form:false", "genus:genesis_inquiry", "source:corpus"]}
+{"id": "ho0086", "ask": "чему равна сумма первых 8 нечётных чисел?", "expect": {"kind": "value", "n": 64}, "tags": ["held_out_form:false", "genus:genesis_inquiry", "source:corpus"]}
+{"id": "ho0087", "ask": "чему равна сумма первых 3 нечётных чисел?", "expect": {"kind": "value", "n": 9}, "tags": ["held_out_form:false", "genus:genesis_inquiry", "source:corpus"]}
+{"id": "ho0088", "ask": "what is the sum of the first 7 odd numbers?", "expect": {"kind": "value", "n": 49}, "tags": ["held_out_form:false", "genus:genesis_inquiry", "source:corpus"]}
+{"id": "ho0089", "ask": "чему равна сумма первых 10 нечётных чисел?", "expect": {"kind": "value", "n": 100}, "tags": ["held_out_form:false", "genus:genesis_inquiry", "source:corpus"]}
+{"id": "ho0090", "ask": "what is the sum of the first 2 odd numbers?", "expect": {"kind": "value", "n": 4}, "tags": ["held_out_form:false", "genus:genesis_inquiry", "source:corpus"]}
+{"id": "ho0091", "ask": "чему равна сумма 36 и 6?", "expect": {"kind": "value", "n": 42}, "tags": ["held_out_form:false", "genus:genesis_surfaces", "source:corpus"]}
+{"id": "ho0092", "ask": "чему равна сумма 20 и 4?", "expect": {"kind": "value", "n": 24}, "tags": ["held_out_form:false", "genus:genesis_surfaces", "source:corpus"]}
+{"id": "ho0093", "ask": "чему равна разность 64 и 8?", "expect": {"kind": "value", "n": 56}, "tags": ["held_out_form:false", "genus:genesis_surfaces", "source:corpus"]}
+{"id": "ho0094", "ask": "чему равно произведение 9 и 3?", "expect": {"kind": "value", "n": 27}, "tags": ["held_out_form:false", "genus:genesis_surfaces", "source:corpus"]}
+{"id": "ho0095", "ask": "чему равно произведение 20 и 10?", "expect": {"kind": "value", "n": 200}, "tags": ["held_out_form:false", "genus:genesis_surfaces", "source:corpus"]}
+{"id": "ho0096", "ask": "чему равно частное 25 и 5?", "expect": {"kind": "value", "n": 5}, "tags": ["held_out_form:false", "genus:genesis_surfaces", "source:corpus"]}
+{"id": "ho0097", "ask": "чему равно частное 12 и 3?", "expect": {"kind": "value", "n": 4}, "tags": ["held_out_form:false", "genus:genesis_surfaces", "source:corpus"]}
+{"id": "ho0098", "ask": "what is the sum of 49 and 7?", "expect": {"kind": "value", "n": 56}, "tags": ["held_out_form:false", "genus:genesis_surfaces", "source:corpus"]}
+{"id": "ho0099", "ask": "what is the difference of 4 and 2?", "expect": {"kind": "value", "n": 2}, "tags": ["held_out_form:false", "genus:genesis_surfaces", "source:corpus"]}
+{"id": "ho0100", "ask": "what is the difference of 81 and 9?", "expect": {"kind": "value", "n": 72}, "tags": ["held_out_form:false", "genus:genesis_surfaces", "source:corpus"]}
+{"id": "ho0101", "ask": "what is the product of 16 and 4?", "expect": {"kind": "value", "n": 64}, "tags": ["held_out_form:false", "genus:genesis_surfaces", "source:corpus"]}
+{"id": "ho0102", "ask": "what is the product of 6 and 2?", "expect": {"kind": "value", "n": 12}, "tags": ["held_out_form:false", "genus:genesis_surfaces", "source:corpus"]}
+{"id": "ho0103", "ask": "what is the quotient of 36 and 6?", "expect": {"kind": "value", "n": 6}, "tags": ["held_out_form:false", "genus:genesis_surfaces", "source:corpus"]}
+{"id": "ho0104", "ask": "what is the quotient of 20 and 4?", "expect": {"kind": "value", "n": 5}, "tags": ["held_out_form:false", "genus:genesis_surfaces", "source:corpus"]}
+{"id": "ho0105", "ask": "чему равна сумма 64 и 8?", "expect": {"kind": "value", "n": 72}, "tags": ["held_out_form:false", "genus:genesis_surfaces", "source:corpus"]}
+{"id": "ho0106", "ask": "what is 5% of 40?", "expect": {"kind": "value", "n": 2}, "tags": ["held_out_form:false", "genus:genesis_percent", "source:corpus"]}
+{"id": "ho0107", "ask": "what is 5% of 20?", "expect": {"kind": "value", "n": 1}, "tags": ["held_out_form:false", "genus:genesis_percent", "source:corpus"]}
+{"id": "ho0108", "ask": "what is 4% of 300?", "expect": {"kind": "value", "n": 12}, "tags": ["held_out_form:false", "genus:genesis_percent", "source:corpus"]}
+{"id": "ho0109", "ask": "what is 4% of 200?", "expect": {"kind": "value", "n": 8}, "tags": ["held_out_form:false", "genus:genesis_percent", "source:corpus"]}
+{"id": "ho0110", "ask": "what is 4% of 100?", "expect": {"kind": "value", "n": 4}, "tags": ["held_out_form:false", "genus:genesis_percent", "source:corpus"]}
+{"id": "ho0111", "ask": "what is 4% of 75?", "expect": {"kind": "value", "n": 3}, "tags": ["held_out_form:false", "genus:genesis_percent", "source:corpus"]}
+{"id": "ho0112", "ask": "what is 4% of 50?", "expect": {"kind": "value", "n": 2}, "tags": ["held_out_form:false", "genus:genesis_percent", "source:corpus"]}
+{"id": "ho0113", "ask": "what is 5% of 60?", "expect": {"kind": "value", "n": 3}, "tags": ["held_out_form:false", "genus:genesis_percent", "source:corpus"]}
+{"id": "ho0114", "ask": "what is 20% of 180?", "expect": {"kind": "value", "n": 36}, "tags": ["held_out_form:false", "genus:genesis_percent", "source:corpus"]}
+{"id": "ho0115", "ask": "what is 20% of 300?", "expect": {"kind": "value", "n": 60}, "tags": ["held_out_form:false", "genus:genesis_percent", "source:corpus"]}
+{"id": "ho0116", "ask": "what is 25% of 60?", "expect": {"kind": "value", "n": 15}, "tags": ["held_out_form:false", "genus:genesis_percent", "source:corpus"]}
+{"id": "ho0117", "ask": "what is 20% of 200?", "expect": {"kind": "value", "n": 40}, "tags": ["held_out_form:false", "genus:genesis_percent", "source:corpus"]}
+{"id": "ho0118", "ask": "what is 25% of 20?", "expect": {"kind": "value", "n": 5}, "tags": ["held_out_form:false", "genus:genesis_percent", "source:corpus"]}
+{"id": "ho0119", "ask": "what is 20% of 160?", "expect": {"kind": "value", "n": 32}, "tags": ["held_out_form:false", "genus:genesis_percent", "source:corpus"]}
+{"id": "ho0120", "ask": "what is 20% of 240?", "expect": {"kind": "value", "n": 48}, "tags": ["held_out_form:false", "genus:genesis_percent", "source:corpus"]}
+{"id": "ho0121", "ask": "what is an axiom?", "expect": {"kind": "value", "n": 2}, "tags": ["held_out_form:false", "genus:genesis_metalang", "source:corpus"]}
+{"id": "ho0122", "ask": "what is an axiom?", "expect": {"kind": "value", "n": 3}, "tags": ["held_out_form:false", "genus:genesis_metalang", "source:corpus"]}
+{"id": "ho0123", "ask": "what is an axiom?", "expect": {"kind": "value", "n": 4}, "tags": ["held_out_form:false", "genus:genesis_metalang", "source:corpus"]}
+{"id": "ho0124", "ask": "what is to be proved?", "expect": {"kind": "value", "n": 10}, "tags": ["held_out_form:false", "genus:genesis_metalang", "source:corpus"]}
+{"id": "ho0125", "ask": "what is to be proved?", "expect": {"kind": "value", "n": 56}, "tags": ["held_out_form:false", "genus:genesis_metalang", "source:corpus"]}
+{"id": "ho0126", "ask": "what is an axiom?", "expect": {"kind": "value", "n": 5}, "tags": ["held_out_form:false", "genus:genesis_metalang", "source:corpus"]}
+{"id": "ho0127", "ask": "what is an axiom?", "expect": {"kind": "value", "n": 4}, "tags": ["held_out_form:false", "genus:genesis_metalang", "source:corpus"]}
+{"id": "ho0128", "ask": "what is an axiom?", "expect": {"kind": "value", "n": 2}, "tags": ["held_out_form:false", "genus:genesis_metalang", "source:corpus"]}
+{"id": "ho0129", "ask": "what is to be proved?", "expect": {"kind": "value", "n": 39}, "tags": ["held_out_form:false", "genus:genesis_metalang", "source:corpus"]}
+{"id": "ho0130", "ask": "what is an axiom?", "expect": {"kind": "value", "n": 3}, "tags": ["held_out_form:false", "genus:genesis_metalang", "source:corpus"]}
+{"id": "ho0131", "ask": "what is an axiom?", "expect": {"kind": "value", "n": 4}, "tags": ["held_out_form:false", "genus:genesis_metalang", "source:corpus"]}
+{"id": "ho0132", "ask": "what is an axiom?", "expect": {"kind": "value", "n": 2}, "tags": ["held_out_form:false", "genus:genesis_metalang", "source:corpus"]}
+{"id": "ho0133", "ask": "what is to be proved?", "expect": {"kind": "value", "n": 16}, "tags": ["held_out_form:false", "genus:genesis_metalang", "source:corpus"]}
+{"id": "ho0134", "ask": "what is an axiom?", "expect": {"kind": "value", "n": 5}, "tags": ["held_out_form:false", "genus:genesis_metalang", "source:corpus"]}
+{"id": "ho0135", "ask": "what is an axiom?", "expect": {"kind": "value", "n": 4}, "tags": ["held_out_form:false", "genus:genesis_metalang", "source:corpus"]}
+{"id": "ho0136", "ask": "what is the distance between A and B in the space of the declared graph?", "expect": {"kind": "value", "n": 1}, "tags": ["held_out_form:false", "genus:genesis_relation", "source:corpus"]}
+{"id": "ho0137", "ask": "what is the distance between B and C in the space of the declared graph?", "expect": {"kind": "value", "n": 2}, "tags": ["held_out_form:false", "genus:genesis_relation", "source:corpus"]}
+{"id": "ho0138", "ask": "what is the distance between C and D in the space of the declared graph?", "expect": {"kind": "value", "n": 1}, "tags": ["held_out_form:false", "genus:genesis_relation", "source:corpus"]}
+{"id": "ho0139", "ask": "what is the distance between D and E in the space of the declared graph?", "expect": {"kind": "value", "n": 2}, "tags": ["held_out_form:false", "genus:genesis_relation", "source:corpus"]}
+{"id": "ho0140", "ask": "what is the distance between E and F in the space of the declared graph?", "expect": {"kind": "value", "n": 1}, "tags": ["held_out_form:false", "genus:genesis_relation", "source:corpus"]}
