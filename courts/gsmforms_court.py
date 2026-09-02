@@ -17,6 +17,7 @@ import sys
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
 import asking  # noqa: E402
+import families  # noqa: E402
 import rugram  # noqa: E402
 
 Ч = r"(−?\d+)"
@@ -620,35 +621,7 @@ def _всего_насекомых(n, кр, t, on, on2, знак, k, ot):
     ("завышение", ОБРАЗЦЫ_3[53:57]),
     ("половина", ОБРАЗЦЫ_3[57:61]),
 )
-КИРИЛЛИЦА = re.compile(r"[а-яё]", re.I)
-
-
-def _слить(формы):
-    """Один якорный образец на семейство-язык и судья, зовущий совпавшую форму."""
-    собранные = tuple((re.compile(о), п) for о, п in формы)
-    общий = re.compile("^(?:" + "|".join(f"(?:{о[1:-1]})" for о, _ in формы) + ")$")
-
-    def судья(м):
-        строка = м.group(0)
-        for о, п in собранные:
-            мм = о.match(строка)
-            if мм:
-                return п(мм)
-        return False
-    return общий, судья
-
-
-def _правила():
-    вон = []
-    for семья, формы in СЕМЕЙСТВА_СУДА:
-        for язык in ("en", "ru"):
-            свои = [(о, п) for о, п in формы if bool(КИРИЛЛИЦА.search(о.replace("[а-яё]", "").replace("[А-Яа-яЁё]", ""))) == (язык == "ru")]
-            if свои:
-                вон.append(_слить(свои))
-    return tuple(вон)
-
-
-ПРАВИЛА = _правила()
+ПРАВИЛА = families.правила(СЕМЕЙСТВА_СУДА)
 
 
 def судить(строка):

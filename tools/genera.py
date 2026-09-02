@@ -68,6 +68,8 @@ from rugram import ПО_ФОРМЕ  # noqa: E402
         # лямбдой над её числами — оба владеют счётом делом.
         {"rates", "percent", "average", "equation", "everyday", "story_chain", "age", "share", "compare_mult", "inquiry_de_fr",
          "selfmeasure", "ru_conversion", "ru_compare", "ru_story", "space", "gsmforms",
+         # СУД МЕСТОИМЕНИЙ пересчитывает итог страницы K = N ± M (03.09).
+         "pronoun",
          "inquiry_es_it", "arith", "episode", "algo", "number", "sequence", "geometry",
          "linalg", "statistics", "program", "compsci", "unit",
          "notation", "formula", "physlaw", "physics", "calendar",

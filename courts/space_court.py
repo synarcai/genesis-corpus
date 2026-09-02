@@ -14,6 +14,7 @@ import sys
 
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
+import families  # noqa: E402
 import spacegrid as S  # noqa: E402
 
 Г = S.СЕТКА.pattern
@@ -79,11 +80,15 @@ def _соседи(м):
     return S.соседи(г, r, c) == k
 
 
+def _в_сетке(г, r, c):
+    return 1 <= r <= len(г) and 1 <= c <= len(г[0])
+
+
 def _путь(м):
     r1, c1, r2, c2, а = int(м.group(1)), int(м.group(2)), int(м.group(3)), int(м.group(4)), м.group(5)
     L = int(м.group(6))
     г = _г(а)
-    if г is None:
+    if г is None or not _в_сетке(г, r1, c1) or not _в_сетке(г, r2, c2):
         return False
     return S.путь(г, (r1, c1), (r2, c2)) == L
 
@@ -91,7 +96,11 @@ def _путь(м):
 def _пути_нет(м):
     r1, c1, r2, c2, а = int(м.group(1)), int(м.group(2)), int(м.group(3)), int(м.group(4)), м.group(5)
     г = _г(а)
-    return г is not None and S.путь(г, (r1, c1), (r2, c2)) is None
+    # КЛЕТКА ВНЕ СЕТКИ — ЛОЖЬ, А НЕ ОТСУТСТВИЕ ПУТИ: основание «закрашенные
+    # клетки перекрывают» о ней неверно (порча координаты, 03.09).
+    if г is None or not _в_сетке(г, r1, c1) or not _в_сетке(г, r2, c2):
+        return False
+    return S.путь(г, (r1, c1), (r2, c2)) is None
 
 
 def _счёт(м):
@@ -130,7 +139,17 @@ def _счёт(м):
     (rf"^the number of filled cells in grid ({Г}) is {Ч}\.$", _счёт),
     (rf"^число закрашенных клеток в сетке ({Г}) — {Ч}\.$", _счёт),
 )
-ПРАВИЛА = tuple((re.compile(о), п) for о, п in ОБРАЗЦЫ)
+# СЕМЕЙСТВО ЕСТЬ РОД (М-146): формы одной рамки — утверждение с основанием,
+# утверждение, вопрос, отказ — один род на язык.
+СЕМЕЙСТВА_СУДА = (
+    ("поворот", [ОБРАЗЦЫ[i] for i in (0, 1, 4, 5, 6, 7)]),
+    ("отражение", [ОБРАЗЦЫ[i] for i in (2, 3, 8, 9, 10, 11)]),
+    ("сдвиг", [ОБРАЗЦЫ[i] for i in (12, 13, 14, 15)]),
+    ("соседи", [ОБРАЗЦЫ[i] for i in (16, 17, 18, 19)]),
+    ("путь", [ОБРАЗЦЫ[i] for i in (20, 21, 22, 23, 24, 25)]),
+    ("счёт", [ОБРАЗЦЫ[i] for i in (26, 27)]),
+)
+assert sum(len(ф) for _, ф in СЕМЕЙСТВА_СУДА) == len(ОБРАЗЦЫ) == 28, len(ОБРАЗЦЫ)
 
 
 class _М:
@@ -144,6 +163,13 @@ class _М:
         return self._г
 
 
+# ПУСТАЯ ГРУППА ЧИТАЕТСЯ КАК ОТСУТСТВУЮЩАЯ: образцы вопроса держат «()» на
+# месте «(not )?», чтобы группы стояли одинаково у всех форм рамки.
+ПРАВИЛА = families.правила(
+    СЕМЕЙСТВА_СУДА,
+    обёртка=lambda мм: _М(tuple(None if г == "" else г for г in мм.groups())))
+
+
 def судить(строка):
     """(судимо, истинно) для одной строки."""
     с = строка.strip()
@@ -152,8 +178,7 @@ def судить(строка):
     for образец, проверить in ПРАВИЛА:
         м = образец.match(с)
         if м:
-            группы = tuple(None if г == "" else г for г in м.groups())
-            return True, bool(проверить(_М(группы)))
+            return True, bool(проверить(м))
     return False, False
 
 

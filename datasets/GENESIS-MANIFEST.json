@@ -824,7 +824,7 @@
       "boundary": [
         "unnamed"
       ],
-      "size": 30016,
+      "size": 30286,
       "tiers": [],
       "text": "shows",
       "assemblies": [
@@ -904,7 +904,7 @@
       "boundary": [
         "unnamed"
       ],
-      "size": 112312,
+      "size": 112612,
       "tiers": [],
       "text": "shows",
       "assemblies": [
@@ -3179,10 +3179,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 10565074,
+      "size": 10591274,
       "tiers": [],
       "text": "mix",
-      "lines": 172357
+      "lines": 172597
     },
     {
       "name": "full",
@@ -3197,10 +3197,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 14696546,
+      "size": 14722746,
       "tiers": [],
       "text": "mix",
-      "lines": 242231
+      "lines": 242471
     },
     {
       "name": "selfmeasure",
@@ -3329,6 +3329,31 @@
         "exact_only"
       ],
       "size": 307034,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ],
+      "actors": [
+        "person_names:en",
+        "person_names:ru"
+      ]
+    },
+    {
+      "name": "pronouns",
+      "file": "datasets/genesis_pronouns.txt",
+      "genre": "the pronoun genus (e9's order 03.09, SVAMP band: the pronoun market buys a word as a pronoun from pages of three sentences «X V1 N. <pron> V2 M. X V3 K» with K = N ± M, and without this genus it bought names standing second): pages of three sentences in one line — the person named first, the pronoun second (he/she by the declared gender of the name in en.json person_forms, they for two persons; then he / later she / he also), the name again third with the result; the question surface asks BY NAME and answers with the equation («paco had 25 cookies. he ate 5 of them. how many cookies does paco have? 25 − 5 = 20.»); four verb triples with sign — loss with «of them» / «из них», gain with «more» / «ещё»; Russian pages with он/она/они and the genitive of the name from ru.json person_forms («у Вани было 25 печений. потом он съел 5 из них. у Вани осталось 20 печений.»); the pronoun never opens a page; the court checks the pronoun against gender and number of persons, the third name against the first, the verb triple and recomputes K",
+      "act": [
+        "recount",
+        "name"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "exact_only"
+      ],
+      "size": 25628,
       "tiers": [],
       "text": "shows",
       "assemblies": [

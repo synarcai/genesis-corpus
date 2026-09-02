@@ -66,7 +66,8 @@ def процент(p, w, r):
 ФОРМЫ = [
     (r"^(\d+)% of (\d+) is (\d+)$", процент),
     (r"^(\d+)% от (\d+) — это (\d+)$", процент),
-    (r"^what is (\d+)% of (\d+)\? it is (\d+)$", процент),
+    (r"^what is (\d+)% of (\d+)\? (\d+)% of (\d+) is (\d+)$",
+     lambda p, w, p2, w2, ч: (p, w) == (p2, w2) and процент(p, w, ч)),
     (r"^(\d+)% means (\d+) out of 100$", lambda a, b: a == b),
     (r"^(\d+)% значит (\d+) из 100$", lambda a, b: a == b),
     (r"^\$(\d+)\.(\d\d) is (\d+) dollars? and (\d+) cents? in all$",

@@ -1475,7 +1475,9 @@
     "who",
     "why",
     "yes",
-    "yesterday"
+    "yesterday",
+    "then",
+    "later"
   ],
   "compare_words": [
     "twice",
@@ -1500,5 +1502,152 @@
     "six times": 6,
     "ten times": 10
   },
-  "quantity_words_comment": "QUANTITY WORDS (03.09, second layer of g1 forms): a multiplicative word names a number and the pair house reads it as that number, in text order with the digits — «was tripled and then reduced by 4» is answered by «7 × 3 − 4 = 17», and the 3 between the question's quantities is the question's own. Shares (half, a quarter) are NOT here: a share is a part, not a count, and its number in the answer is a divisor the word does not name."
+  "quantity_words_comment": "QUANTITY WORDS (03.09, second layer of g1 forms): a multiplicative word names a number and the pair house reads it as that number, in text order with the digits — «was tripled and then reduced by 4» is answered by «7 × 3 − 4 = 17», and the 3 between the question's quantities is the question's own. Shares (half, a quarter) are NOT here: a share is a part, not a count, and its number in the answer is a divisor the word does not name.",
+  "person_forms": {
+    "ann": {
+      "gender": "f"
+    },
+    "anna": {
+      "gender": "f"
+    },
+    "ava": {
+      "gender": "f"
+    },
+    "ben": {
+      "gender": "m"
+    },
+    "carla": {
+      "gender": "f"
+    },
+    "carlos": {
+      "gender": "m"
+    },
+    "cynthia": {
+      "gender": "f"
+    },
+    "dan": {
+      "gender": "m"
+    },
+    "dima": {
+      "gender": "m"
+    },
+    "elena": {
+      "gender": "f"
+    },
+    "felix": {
+      "gender": "m"
+    },
+    "grace": {
+      "gender": "f"
+    },
+    "greg": {
+      "gender": "m"
+    },
+    "hugo": {
+      "gender": "m"
+    },
+    "ida": {
+      "gender": "f"
+    },
+    "ira": {
+      "gender": "f"
+    },
+    "iris": {
+      "gender": "f"
+    },
+    "ivan": {
+      "gender": "m"
+    },
+    "james": {
+      "gender": "m"
+    },
+    "janet": {
+      "gender": "f"
+    },
+    "kate": {
+      "gender": "f"
+    },
+    "kyle": {
+      "gender": "m"
+    },
+    "lena": {
+      "gender": "f"
+    },
+    "lucy": {
+      "gender": "f"
+    },
+    "maria": {
+      "gender": "f"
+    },
+    "mark": {
+      "gender": "m"
+    },
+    "mary": {
+      "gender": "f"
+    },
+    "mia": {
+      "gender": "f"
+    },
+    "misha": {
+      "gender": "m"
+    },
+    "nick": {
+      "gender": "m"
+    },
+    "nina": {
+      "gender": "f"
+    },
+    "olya": {
+      "gender": "f"
+    },
+    "omar": {
+      "gender": "m"
+    },
+    "paul": {
+      "gender": "m"
+    },
+    "peter": {
+      "gender": "m"
+    },
+    "pia": {
+      "gender": "f"
+    },
+    "raj": {
+      "gender": "m"
+    },
+    "regina": {
+      "gender": "f"
+    },
+    "rosa": {
+      "gender": "f"
+    },
+    "sam": {
+      "gender": "m"
+    },
+    "sara": {
+      "gender": "f"
+    },
+    "sven": {
+      "gender": "m"
+    },
+    "tara": {
+      "gender": "f"
+    },
+    "tom": {
+      "gender": "m"
+    },
+    "umar": {
+      "gender": "m"
+    },
+    "vera": {
+      "gender": "f"
+    },
+    "wanda": {
+      "gender": "f"
+    },
+    "yuri": {
+      "gender": "m"
+    }
+  },
+  "person_forms_comment": "HOUSE OF NAMES, GENDER (03.09, the pronoun genus asked by e9): every declared name carries its gender once; a pronoun after a named person (he/she, they for two) is judged against it by the pronoun court, and generators pick the pronoun from it."
 }

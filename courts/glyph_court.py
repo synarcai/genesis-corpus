@@ -18,6 +18,7 @@ import sys
 
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
+import families  # noqa: E402
 import glyphs as G  # noqa: E402
 import spacegrid as S  # noqa: E402
 
@@ -94,7 +95,18 @@ def _сетка_слово(м):
     (rf"^ряд глифов ({СС}) читается как (?:слово|число|выражение) «({СЛОВО})»\.$",
      _сетка_слово),
 )
-ПРАВИЛА = tuple((re.compile(о), п) for о, п in ОБРАЗЦЫ)
+# СЕМЕЙСТВО ЕСТЬ РОД (М-146).
+СЕМЕЙСТВА_СУДА = (
+    ("сетка→знак", [ОБРАЗЦЫ[i] for i in (0, 1, 2, 3, 6, 7)]),
+    ("знак→сетка", [ОБРАЗЦЫ[i] for i in (4, 5)]),
+    ("слово→ряды", [ОБРАЗЦЫ[i] for i in (8, 9)]),
+    ("ряды→слово", [ОБРАЗЦЫ[i] for i in (10, 11)]),
+)
+assert sum(len(ф) for _, ф in СЕМЕЙСТВА_СУДА) == len(ОБРАЗЦЫ) == 12, len(ОБРАЗЦЫ)
+# Пустая группа-заглушка в вопросах играет роль «не» = None.
+ПРАВИЛА = families.правила(
+    СЕМЕЙСТВА_СУДА,
+    обёртка=lambda мм: type("М", (), {"groups": lambda self, г=tuple(None if г == "" else г for г in мм.groups()): г})())
 
 
 def судить(строка):
@@ -105,9 +117,7 @@ def судить(строка):
     for образец, проверить in ПРАВИЛА:
         м = образец.match(с)
         if м:
-            # Пустая группа-заглушка в вопросах играет роль «не» = None.
-            группы = tuple(None if г == "" else г for г in м.groups())
-            return True, bool(проверить(type("М", (), {"groups": lambda self: группы})()))
+            return True, bool(проверить(м))
     return False, False
 
 
