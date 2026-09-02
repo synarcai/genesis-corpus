@@ -100,6 +100,44 @@ def объявленные_размерности():
     r"(\d+) metres per second)\.$")
 
 
+import discourse  # noqa: E402
+import laws  # noqa: E402
+ЗАКОНЫ = laws.свод("physlaws")
+ЗАКОН_ДАВЛЕНИЯ = {"en": laws.ЗАКОНЫ["physlaws"][0][2], "ru": laws.ЗАКОНЫ["physlaws"][0][3]}
+ВОПРОС_ДАВЛЕНИЯ = re.compile(
+    r"^(?:what is the pressure of (\d+) newtons on (\d+) square metres"
+    r"|каково давление силы (\d+) \S+ на (\d+) квадратн\S+ метр\S*"
+    r"|why is the pressure of (\d+) newtons on (\d+) square metres equal to (\d+) pascals"
+    r"|почему давление силы (\d+) \S+ на (\d+) квадратн\S+ метр\S* равно (\d+) \S+)$")
+СВИД_ДАВЛЕНИЯ = re.compile(r"^(\d+) (?:newtons|\S+) ÷ (\d+) (?:square metres|квадратн\S+ метр\S*) = (\d+) (?:pascals|\S+)$")
+ВЫВОД_ДАВЛЕНИЯ = re.compile(r"^(?:the pressure is (\d+) pascals|давление — (\d+) \S+)$")
+
+
+def _рассуждение(с):
+    """Рассуждение о давлении судится частями (дом речи)."""
+    язык = "ru" if re.search(r"[а-яё]", с) else "en"
+    ч_ = discourse.части(с, язык)
+    if ч_ is None:
+        return None
+    м = ВОПРОС_ДАВЛЕНИЯ.match(ч_["вопрос"])
+    if not м:
+        return None
+    if ч_["связка"] is None or ч_["вердикт"] is not None:
+        return True, False
+    г = [int(x) for x in м.groups() if x is not None]
+    сила, площадь = г[0], г[1]
+    if площадь == 0 or сила % площадь:
+        return True, False
+    p = сила // площадь
+    if len(г) > 2 and г[2] != p:
+        return True, False
+    св = СВИД_ДАВЛЕНИЯ.match(ч_["свидетель"])
+    выв = ВЫВОД_ДАВЛЕНИЯ.match(ч_["вывод"])
+    return True, (bool(св) and [int(x) for x in св.groups()] == [сила, площадь, p]
+                  and bool(выв) and int(next(x for x in выв.groups() if x)) == p
+                  and ч_["закон"] == ЗАКОН_ДАВЛЕНИЯ[язык])
+
+
 def _числа(m):
     return [int(x) for x in m.groups() if x is not None and x.isdigit()]
 
@@ -111,6 +149,11 @@ def судить(строка):
     # вопроса суть начальный отрезок величин ответа, и порча любой из
     # них рвёт пару. Без этого суд читал бы вторую половину строки и
     # звал истиной вопрос, спрашивающий о другом.
+    if строка.strip() in ЗАКОНЫ:
+        return True, True
+    р = _рассуждение(строка.strip())
+    if р is not None:
+        return р
     если = asking.судить_парой(строка, судить)
     if если is not None:
         return если
