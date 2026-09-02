@@ -1,524 +1,884 @@
 sum for i from 1 to 4 is 10.
 рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
-сумма для i от 1 до 5 равна 15.
-let a = 12; let b = 5; let c = a - b; c = 7.
-product for i from 2 to 5 is 120.
-a binding gives a name to a value; here c is 36.
-произведение для i от 1 до 6 равно 720.
-связывание даёт имя значению; здесь c равно 12.
-function q(n) = n * 3; q(7) = 21.
-if 6 > 6 then y = 1 else y = 2; y = 2.
-функция t(n) = n - 1; t(12) = 11.
-the branch not taken changes nothing; y = 1.
-factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(5) = 120.
-sum for i from 1 to 7 is 28.
-рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
-сумма для i от 1 до 4 равна 10.
-let a = 9; let b = 4; let c = a + b; c = 13.
-product for i from 1 to 5 is 120.
-a binding gives a name to a value; here c is 7.
-произведение для i от 2 до 5 равно 120.
-связывание даёт имя значению; здесь c равно 36.
-function g(n) = n + 7; g(4) = 11.
-if 1 > 8 then y = 1 else y = 2; y = 2.
-функция q(n) = n * 3; q(7) = 21.
+if 3 < 5, what is y? if 3 < 5 then y = 1 else y = 2; y = 1.
 the branch not taken changes nothing; y = 2.
 factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(4) = 24.
-sum for i from 2 to 4 is 9.
-рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
-сумма для i от 1 до 7 равна 28.
-let a = 7; let b = 3; let c = a * b; c = 21.
-product for i from 1 to 4 is 24.
-a binding gives a name to a value; here c is 13.
-произведение для i от 1 до 5 равно 120.
-связывание даёт имя значению; здесь c равно 7.
-function s(n) = n * 5; s(3) = 15.
-if 9 > 2 then y = 1 else y = 2; y = 1.
-функция g(n) = n + 7; g(4) = 11.
-the branch not taken changes nothing; y = 2.
-factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(3) = 6.
-sum for i from 1 to 3 is 6.
-рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
-сумма для i от 2 до 4 равна 9.
-let a = 11; let b = 2; let c = a - b; c = 9.
-product for i from 1 to 7 is 5040.
-a binding gives a name to a value; here c is 21.
-произведение для i от 1 до 4 равно 24.
-связывание даёт имя значению; здесь c равно 13.
-function p(n) = n - 3; p(9) = 6.
+если p(n) = n - 3, чему равно p(9)? функция p(n) = n - 3; p(9) = 6.
 if 4 < 4 then y = 1 else y = 2; y = 2.
 функция s(n) = n * 5; s(3) = 15.
-the branch not taken changes nothing; y = 1.
-factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(6) = 720.
-sum for i from 3 to 6 is 18.
-рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
-сумма для i от 1 до 3 равна 6.
-let a = 20; let b = 4; let c = a * b; c = 80.
-product for i from 2 to 4 is 24.
-a binding gives a name to a value; here c is 9.
-произведение для i от 1 до 7 равно 5040.
-связывание даёт имя значению; здесь c равно 21.
-function f(n) = n * 2; f(5) = 10.
-if 7 < 5 then y = 1 else y = 2; y = 2.
-функция p(n) = n - 3; p(9) = 6.
-the branch not taken changes nothing; y = 2.
-factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(5) = 120.
-sum for i from 1 to 6 is 21.
-рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
-сумма для i от 3 до 6 равна 18.
-let a = 8; let b = 7; let c = a + b; c = 15.
-product for i from 1 to 3 is 6.
-a binding gives a name to a value; here c is 80.
-произведение для i от 2 до 4 равно 24.
-связывание даёт имя значению; здесь c равно 9.
-function r(n) = n + n; r(8) = 16.
-if 3 < 5 then y = 1 else y = 2; y = 1.
-функция f(n) = n * 2; f(5) = 10.
-the branch not taken changes nothing; y = 2.
-factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(4) = 24.
-sum for i from 2 to 5 is 14.
-рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
-сумма для i от 1 до 6 равна 21.
-let a = 15; let b = 3; let c = a - b; c = 12.
-product for i from 3 to 6 is 360.
-a binding gives a name to a value; here c is 15.
-произведение для i от 1 до 3 равно 6.
-связывание даёт имя значению; здесь c равно 80.
-function h(n) = n * n; h(6) = 36.
-if 10 > 3 then y = 1 else y = 2; y = 1.
-функция r(n) = n + n; r(8) = 16.
-the branch not taken changes nothing; y = 1.
-factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(3) = 6.
-sum for i from 1 to 5 is 15.
-рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
-сумма для i от 2 до 5 равна 14.
-let a = 6; let b = 6; let c = a * b; c = 36.
-product for i from 1 to 6 is 720.
+if s(n) = n * 5, what is s(3)? function s(n) = n * 5; s(3) = 15.
+связывание даёт имя значению; здесь c равно 36.
+function g(n) = n + 7; g(4) = 11.
+чему равно произведение для i от 1 до 6? произведение для i от 1 до 6 равно 720.
 a binding gives a name to a value; here c is 12.
 произведение для i от 3 до 6 равно 360.
-связывание даёт имя значению; здесь c равно 15.
-function t(n) = n - 1; t(12) = 11.
-if 2 < 9 then y = 1 else y = 2; y = 1.
-функция h(n) = n * n; h(6) = 36.
+what is the product for i from 3 to 6? product for i from 3 to 6 is 360.
+let a = 8; let b = 7; let c = a + b; c = 15.
+product for i from 1 to 3 is 6.
+чему равна сумма для i от 1 до 3? сумма для i от 1 до 3 равна 6.
+для i от 3 до 1 нет ни одного шага: 3 уже больше 1.
+сумма для i от 2 до 4 равна 9.
+what is the sum for i from 2 to 4? sum for i from 2 to 4 is 9.
+for i from 4 to 2 there is no step at all: 4 is already greater than 2.
+sum for i from 1 to 7 is 28.
+рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
+if 10 > 3, what is y? if 10 > 3 then y = 1 else y = 2; y = 1.
+the branch not taken changes nothing; y = 1.
+factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(3) = 6.
+если f(n) = n * 2, чему равно f(5)? функция f(n) = n * 2; f(5) = 10.
+if 7 < 5 then y = 1 else y = 2; y = 2.
+функция p(n) = n - 3; p(9) = 6.
+if p(n) = n - 3, what is p(9)? function p(n) = n - 3; p(9) = 6.
+связывание даёт имя значению; здесь c равно 7.
+function s(n) = n * 5; s(3) = 15.
+чему равно произведение для i от 2 до 5? произведение для i от 2 до 5 равно 120.
+a binding gives a name to a value; here c is 36.
+произведение для i от 1 до 6 равно 720.
+what is the product for i from 1 to 6? product for i from 1 to 6 is 720.
+let a = 15; let b = 3; let c = a - b; c = 12.
+product for i from 3 to 6 is 360.
+чему равна сумма для i от 3 до 6? сумма для i от 3 до 6 равна 18.
+для i от 6 до 3 нет ни одного шага: 6 уже больше 3.
+сумма для i от 1 до 3 равна 6.
+what is the sum for i from 1 to 3? sum for i from 1 to 3 is 6.
+for i from 3 to 1 there is no step at all: 3 is already greater than 1.
+sum for i from 2 to 4 is 9.
+рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
+if 2 < 9, what is y? if 2 < 9 then y = 1 else y = 2; y = 1.
 the branch not taken changes nothing; y = 1.
 factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(6) = 720.
+если r(n) = n + n, чему равно r(8)? функция r(n) = n + n; r(8) = 16.
+if 3 < 5 then y = 1 else y = 2; y = 1.
+функция f(n) = n * 2; f(5) = 10.
+if f(n) = n * 2, what is f(5)? function f(n) = n * 2; f(5) = 10.
+связывание даёт имя значению; здесь c равно 13.
+function p(n) = n - 3; p(9) = 6.
+чему равно произведение для i от 1 до 5? произведение для i от 1 до 5 равно 120.
+a binding gives a name to a value; here c is 7.
+произведение для i от 2 до 5 равно 120.
+what is the product for i from 2 to 5? product for i from 2 to 5 is 120.
+let a = 6; let b = 6; let c = a * b; c = 36.
+product for i from 1 to 6 is 720.
+чему равна сумма для i от 1 до 6? сумма для i от 1 до 6 равна 21.
+для i от 6 до 1 нет ни одного шага: 6 уже больше 1.
+сумма для i от 3 до 6 равна 18.
+what is the sum for i from 3 to 6? sum for i from 3 to 6 is 18.
+for i from 6 to 3 there is no step at all: 6 is already greater than 3.
+sum for i from 1 to 3 is 6.
+рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
+if 6 > 6, what is y? if 6 > 6 then y = 1 else y = 2; y = 2.
+the branch not taken changes nothing; y = 1.
+factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(5) = 120.
+если h(n) = n * n, чему равно h(6)? функция h(n) = n * n; h(6) = 36.
+if 10 > 3 then y = 1 else y = 2; y = 1.
+функция r(n) = n + n; r(8) = 16.
+if r(n) = n + n, what is r(8)? function r(n) = n + n; r(8) = 16.
+связывание даёт имя значению; здесь c равно 21.
+function f(n) = n * 2; f(5) = 10.
+чему равно произведение для i от 1 до 4? произведение для i от 1 до 4 равно 24.
+a binding gives a name to a value; here c is 13.
+произведение для i от 1 до 5 равно 120.
+what is the product for i from 1 to 5? product for i from 1 to 5 is 120.
+let a = 12; let b = 5; let c = a - b; c = 7.
+product for i from 2 to 5 is 120.
+чему равна сумма для i от 2 до 5? сумма для i от 2 до 5 равна 14.
+для i от 5 до 2 нет ни одного шага: 5 уже больше 2.
+сумма для i от 1 до 6 равна 21.
+what is the sum for i from 1 to 6? sum for i from 1 to 6 is 21.
+for i from 6 to 1 there is no step at all: 6 is already greater than 1.
+sum for i from 3 to 6 is 18.
+рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
+if 1 > 8, what is y? if 1 > 8 then y = 1 else y = 2; y = 2.
+the branch not taken changes nothing; y = 2.
+factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(4) = 24.
+если t(n) = n - 1, чему равно t(12)? функция t(n) = n - 1; t(12) = 11.
+if 2 < 9 then y = 1 else y = 2; y = 1.
+функция h(n) = n * n; h(6) = 36.
+if h(n) = n * n, what is h(6)? function h(n) = n * n; h(6) = 36.
+связывание даёт имя значению; здесь c равно 9.
+function r(n) = n + n; r(8) = 16.
+чему равно произведение для i от 1 до 7? произведение для i от 1 до 7 равно 5040.
+a binding gives a name to a value; here c is 21.
+произведение для i от 1 до 4 равно 24.
+what is the product for i from 1 to 4? product for i from 1 to 4 is 24.
+let a = 9; let b = 4; let c = a + b; c = 13.
+product for i from 1 to 5 is 120.
+чему равна сумма для i от 1 до 5? сумма для i от 1 до 5 равна 15.
+для i от 5 до 1 нет ни одного шага: 5 уже больше 1.
+сумма для i от 2 до 5 равна 14.
+what is the sum for i from 2 to 5? sum for i from 2 to 5 is 14.
+for i from 5 to 2 there is no step at all: 5 is already greater than 2.
+sum for i from 1 to 6 is 21.
+рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
+if 9 > 2, what is y? if 9 > 2 then y = 1 else y = 2; y = 1.
+the branch not taken changes nothing; y = 2.
+factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(3) = 6.
+если q(n) = n * 3, чему равно q(7)? функция q(n) = n * 3; q(7) = 21.
+if 6 > 6 then y = 1 else y = 2; y = 2.
+функция t(n) = n - 1; t(12) = 11.
+if t(n) = n - 1, what is t(12)? function t(n) = n - 1; t(12) = 11.
+связывание даёт имя значению; здесь c равно 80.
+function h(n) = n * n; h(6) = 36.
+чему равно произведение для i от 2 до 4? произведение для i от 2 до 4 равно 24.
+a binding gives a name to a value; here c is 9.
+произведение для i от 1 до 7 равно 5040.
+what is the product for i from 1 to 7? product for i from 1 to 7 is 5040.
+let a = 7; let b = 3; let c = a * b; c = 21.
+product for i from 1 to 4 is 24.
+чему равна сумма для i от 1 до 4? сумма для i от 1 до 4 равна 10.
+для i от 4 до 1 нет ни одного шага: 4 уже больше 1.
+сумма для i от 1 до 5 равна 15.
+what is the sum for i from 1 to 5? sum for i from 1 to 5 is 15.
+for i from 5 to 1 there is no step at all: 5 is already greater than 1.
+sum for i from 2 to 5 is 14.
+рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
+if 4 < 4, what is y? if 4 < 4 then y = 1 else y = 2; y = 2.
+the branch not taken changes nothing; y = 1.
+factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(6) = 720.
+если g(n) = n + 7, чему равно g(4)? функция g(n) = n + 7; g(4) = 11.
+if 1 > 8 then y = 1 else y = 2; y = 2.
+функция q(n) = n * 3; q(7) = 21.
+if q(n) = n * 3, what is q(7)? function q(n) = n * 3; q(7) = 21.
+связывание даёт имя значению; здесь c равно 15.
+function t(n) = n - 1; t(12) = 11.
+чему равно произведение для i от 1 до 3? произведение для i от 1 до 3 равно 6.
+a binding gives a name to a value; here c is 80.
+произведение для i от 2 до 4 равно 24.
+what is the product for i from 2 to 4? product for i from 2 to 4 is 24.
+let a = 11; let b = 2; let c = a - b; c = 9.
+product for i from 1 to 7 is 5040.
+чему равна сумма для i от 1 до 7? сумма для i от 1 до 7 равна 28.
+для i от 7 до 1 нет ни одного шага: 7 уже больше 1.
+сумма для i от 1 до 4 равна 10.
+what is the sum for i from 1 to 4? sum for i from 1 to 4 is 10.
+for i from 4 to 1 there is no step at all: 4 is already greater than 1.
+sum for i from 1 to 5 is 15.
+рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
+if 7 < 5, what is y? if 7 < 5 then y = 1 else y = 2; y = 2.
+the branch not taken changes nothing; y = 2.
+factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(5) = 120.
+если s(n) = n * 5, чему равно s(3)? функция s(n) = n * 5; s(3) = 15.
+if 9 > 2 then y = 1 else y = 2; y = 1.
+функция g(n) = n + 7; g(4) = 11.
+if g(n) = n + 7, what is g(4)? function g(n) = n + 7; g(4) = 11.
+связывание даёт имя значению; здесь c равно 12.
+function q(n) = n * 3; q(7) = 21.
+чему равно произведение для i от 3 до 6? произведение для i от 3 до 6 равно 360.
+a binding gives a name to a value; here c is 15.
+произведение для i от 1 до 3 равно 6.
+what is the product for i from 1 to 3? product for i from 1 to 3 is 6.
+let a = 20; let b = 4; let c = a * b; c = 80.
+product for i from 2 to 4 is 24.
+чему равна сумма для i от 2 до 4? сумма для i от 2 до 4 равна 9.
+для i от 4 до 2 нет ни одного шага: 4 уже больше 2.
+сумма для i от 1 до 7 равна 28.
+what is the sum for i from 1 to 7? sum for i from 1 to 7 is 28.
+for i from 7 to 1 there is no step at all: 7 is already greater than 1.
 
 связывание даёт имя значению; здесь c равно 13.
-let a = 12; let b = 5; let c = a - b; c = 7.
-factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(6) = 720.
-function t(n) = n - 1; t(12) = 11.
-product for i from 1 to 4 is 24.
-sum for i from 1 to 5 is 15.
-if 3 < 5 then y = 1 else y = 2; y = 1.
-a binding gives a name to a value; here c is 9.
-рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
-функция s(n) = n * 5; s(3) = 15.
-произведение для i от 1 до 3 равно 6.
+what is the product for i from 1 to 3? product for i from 1 to 3 is 6.
 сумма для i от 2 до 4 равна 9.
-the branch not taken changes nothing; y = 2.
-связывание даёт имя значению; здесь c равно 12.
-let a = 8; let b = 7; let c = a + b; c = 15.
-factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(5) = 120.
-function f(n) = n * 2; f(5) = 10.
-product for i from 1 to 6 is 720.
-sum for i from 3 to 6 is 18.
-if 9 > 2 then y = 1 else y = 2; y = 1.
-a binding gives a name to a value; here c is 7.
-рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
+if 1 > 8, what is y? if 1 > 8 then y = 1 else y = 2; y = 2.
 функция t(n) = n - 1; t(12) = 11.
-произведение для i от 1 до 4 равно 24.
-сумма для i от 1 до 5 равна 15.
-the branch not taken changes nothing; y = 1.
-связывание даёт имя значению; здесь c равно 9.
-let a = 7; let b = 3; let c = a * b; c = 21.
-factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(4) = 24.
-function g(n) = n + 7; g(4) = 11.
-product for i from 2 to 4 is 24.
-sum for i from 1 to 7 is 28.
-if 2 < 9 then y = 1 else y = 2; y = 1.
-a binding gives a name to a value; here c is 15.
-рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
-функция f(n) = n * 2; f(5) = 10.
-произведение для i от 1 до 6 равно 720.
-сумма для i от 3 до 6 равна 18.
-the branch not taken changes nothing; y = 1.
-связывание даёт имя значению; здесь c равно 7.
-let a = 6; let b = 6; let c = a * b; c = 36.
-factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(3) = 6.
-function h(n) = n * n; h(6) = 36.
-product for i from 1 to 5 is 120.
-sum for i from 2 to 5 is 14.
-if 7 < 5 then y = 1 else y = 2; y = 2.
-a binding gives a name to a value; here c is 21.
-рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
-функция g(n) = n + 7; g(4) = 11.
-произведение для i от 2 до 4 равно 24.
-сумма для i от 1 до 7 равна 28.
-the branch not taken changes nothing; y = 1.
-связывание даёт имя значению; здесь c равно 15.
-let a = 20; let b = 4; let c = a * b; c = 80.
-factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(6) = 720.
-function p(n) = n - 3; p(9) = 6.
-product for i from 3 to 6 is 360.
-sum for i from 1 to 3 is 6.
-if 1 > 8 then y = 1 else y = 2; y = 2.
-a binding gives a name to a value; here c is 36.
-рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
-функция h(n) = n * n; h(6) = 36.
-произведение для i от 1 до 5 равно 120.
-сумма для i от 2 до 5 равна 14.
-the branch not taken changes nothing; y = 2.
-связывание даёт имя значению; здесь c равно 21.
-let a = 9; let b = 4; let c = a + b; c = 13.
-factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(5) = 120.
-function q(n) = n * 3; q(7) = 21.
-product for i from 1 to 7 is 5040.
-sum for i from 1 to 4 is 10.
-if 10 > 3 then y = 1 else y = 2; y = 1.
-a binding gives a name to a value; here c is 80.
-рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
-функция p(n) = n - 3; p(9) = 6.
-произведение для i от 3 до 6 равно 360.
-сумма для i от 1 до 3 равна 6.
-the branch not taken changes nothing; y = 2.
-связывание даёт имя значению; здесь c равно 36.
-let a = 15; let b = 3; let c = a - b; c = 12.
-factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(4) = 24.
-function r(n) = n + n; r(8) = 16.
-product for i from 2 to 5 is 120.
-sum for i from 1 to 6 is 21.
-if 4 < 4 then y = 1 else y = 2; y = 2.
-a binding gives a name to a value; here c is 13.
-рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
-функция q(n) = n * 3; q(7) = 21.
-произведение для i от 1 до 7 равно 5040.
-сумма для i от 1 до 4 равна 10.
-the branch not taken changes nothing; y = 1.
-связывание даёт имя значению; здесь c равно 80.
-let a = 11; let b = 2; let c = a - b; c = 9.
-factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(3) = 6.
-function s(n) = n * 5; s(3) = 15.
-product for i from 1 to 3 is 6.
-sum for i from 2 to 4 is 9.
-if 6 > 6 then y = 1 else y = 2; y = 2.
 a binding gives a name to a value; here c is 12.
-рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
-функция r(n) = n + n; r(8) = 16.
-произведение для i от 2 до 5 равно 120.
-сумма для i от 1 до 6 равна 21.
+чему равна сумма для i от 1 до 4? сумма для i от 1 до 4 равна 10.
+sum for i from 1 to 5 is 15.
+если r(n) = n + n, чему равно r(8)? функция r(n) = n + n; r(8) = 16.
+function f(n) = n * 2; f(5) = 10.
+let a = 11; let b = 2; let c = a - b; c = 9.
+what is the sum for i from 1 to 6? sum for i from 1 to 6 is 21.
 the branch not taken changes nothing; y = 2.
+if s(n) = n * 5, what is s(3)? function s(n) = n * 5; s(3) = 15.
+произведение для i от 1 до 3 равно 6.
+для i от 3 до 1 нет ни одного шага: 3 уже больше 1.
+рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
+if 6 > 6 then y = 1 else y = 2; y = 2.
+чему равно произведение для i от 1 до 7? произведение для i от 1 до 7 равно 5040.
+product for i from 1 to 4 is 24.
+for i from 4 to 1 there is no step at all: 4 is already greater than 1.
+factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(5) = 120.
+связывание даёт имя значению; здесь c равно 80.
+what is the product for i from 2 to 5? product for i from 2 to 5 is 120.
+сумма для i от 1 до 6 равна 21.
+if 7 < 5, what is y? if 7 < 5 then y = 1 else y = 2; y = 2.
+функция s(n) = n * 5; s(3) = 15.
+a binding gives a name to a value; here c is 13.
+чему равна сумма для i от 1 до 3? сумма для i от 1 до 3 равна 6.
+sum for i from 2 to 4 is 9.
+если q(n) = n * 3, чему равно q(7)? функция q(n) = n * 3; q(7) = 21.
+function t(n) = n - 1; t(12) = 11.
+let a = 15; let b = 3; let c = a - b; c = 12.
+what is the sum for i from 1 to 4? sum for i from 1 to 4 is 10.
+the branch not taken changes nothing; y = 1.
+if r(n) = n + n, what is r(8)? function r(n) = n + n; r(8) = 16.
+произведение для i от 2 до 5 равно 120.
+для i от 5 до 2 нет ни одного шага: 5 уже больше 2.
+рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
+if 4 < 4 then y = 1 else y = 2; y = 2.
+чему равно произведение для i от 3 до 6? произведение для i от 3 до 6 равно 360.
+product for i from 1 to 3 is 6.
+for i from 3 to 1 there is no step at all: 3 is already greater than 1.
+factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(6) = 720.
+связывание даёт имя значению; здесь c равно 36.
+what is the product for i from 1 to 7? product for i from 1 to 7 is 5040.
+сумма для i от 1 до 4 равна 10.
+if 2 < 9, what is y? if 2 < 9 then y = 1 else y = 2; y = 1.
+функция r(n) = n + n; r(8) = 16.
+a binding gives a name to a value; here c is 80.
+чему равна сумма для i от 2 до 5? сумма для i от 2 до 5 равна 14.
+sum for i from 1 to 6 is 21.
+если p(n) = n - 3, чему равно p(9)? функция p(n) = n - 3; p(9) = 6.
+function s(n) = n * 5; s(3) = 15.
+let a = 9; let b = 4; let c = a + b; c = 13.
+what is the sum for i from 1 to 3? sum for i from 1 to 3 is 6.
+the branch not taken changes nothing; y = 2.
+if q(n) = n * 3, what is q(7)? function q(n) = n * 3; q(7) = 21.
+произведение для i от 1 до 7 равно 5040.
+для i от 7 до 1 нет ни одного шага: 7 уже больше 1.
+рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
+if 10 > 3 then y = 1 else y = 2; y = 1.
+чему равно произведение для i от 1 до 5? произведение для i от 1 до 5 равно 120.
+product for i from 2 to 5 is 120.
+for i from 5 to 2 there is no step at all: 5 is already greater than 2.
+factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(3) = 6.
+связывание даёт имя значению; здесь c равно 21.
+what is the product for i from 3 to 6? product for i from 3 to 6 is 360.
+сумма для i от 1 до 3 равна 6.
+if 9 > 2, what is y? if 9 > 2 then y = 1 else y = 2; y = 1.
+функция q(n) = n * 3; q(7) = 21.
+a binding gives a name to a value; here c is 36.
+чему равна сумма для i от 1 до 7? сумма для i от 1 до 7 равна 28.
+sum for i from 1 to 4 is 10.
+если h(n) = n * n, чему равно h(6)? функция h(n) = n * n; h(6) = 36.
+function r(n) = n + n; r(8) = 16.
+let a = 20; let b = 4; let c = a * b; c = 80.
+what is the sum for i from 2 to 5? sum for i from 2 to 5 is 14.
+the branch not taken changes nothing; y = 2.
+if p(n) = n - 3, what is p(9)? function p(n) = n - 3; p(9) = 6.
+произведение для i от 3 до 6 равно 360.
+для i от 6 до 3 нет ни одного шага: 6 уже больше 3.
+рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
+if 1 > 8 then y = 1 else y = 2; y = 2.
+чему равно произведение для i от 2 до 4? произведение для i от 2 до 4 равно 24.
+product for i from 1 to 7 is 5040.
+for i from 7 to 1 there is no step at all: 7 is already greater than 1.
+factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(4) = 24.
+связывание даёт имя значению; здесь c равно 15.
+what is the product for i from 1 to 5? product for i from 1 to 5 is 120.
+сумма для i от 2 до 5 равна 14.
+if 3 < 5, what is y? if 3 < 5 then y = 1 else y = 2; y = 1.
+функция p(n) = n - 3; p(9) = 6.
+a binding gives a name to a value; here c is 21.
+чему равна сумма для i от 3 до 6? сумма для i от 3 до 6 равна 18.
+sum for i from 1 to 3 is 6.
+если g(n) = n + 7, чему равно g(4)? функция g(n) = n + 7; g(4) = 11.
+function q(n) = n * 3; q(7) = 21.
+let a = 6; let b = 6; let c = a * b; c = 36.
+what is the sum for i from 1 to 7? sum for i from 1 to 7 is 28.
+the branch not taken changes nothing; y = 1.
+if h(n) = n * n, what is h(6)? function h(n) = n * n; h(6) = 36.
+произведение для i от 1 до 5 равно 120.
+для i от 5 до 1 нет ни одного шага: 5 уже больше 1.
+рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
+if 7 < 5 then y = 1 else y = 2; y = 2.
+чему равно произведение для i от 1 до 6? произведение для i от 1 до 6 равно 720.
+product for i from 3 to 6 is 360.
+for i from 6 to 3 there is no step at all: 6 is already greater than 3.
+factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(5) = 120.
+связывание даёт имя значению; здесь c равно 7.
+what is the product for i from 2 to 4? product for i from 2 to 4 is 24.
+сумма для i от 1 до 7 равна 28.
+if 6 > 6, what is y? if 6 > 6 then y = 1 else y = 2; y = 2.
+функция h(n) = n * n; h(6) = 36.
+a binding gives a name to a value; here c is 15.
+чему равна сумма для i от 1 до 5? сумма для i от 1 до 5 равна 15.
+sum for i from 2 to 5 is 14.
+если f(n) = n * 2, чему равно f(5)? функция f(n) = n * 2; f(5) = 10.
+function p(n) = n - 3; p(9) = 6.
+let a = 7; let b = 3; let c = a * b; c = 21.
+what is the sum for i from 3 to 6? sum for i from 3 to 6 is 18.
+the branch not taken changes nothing; y = 1.
+if g(n) = n + 7, what is g(4)? function g(n) = n + 7; g(4) = 11.
+произведение для i от 2 до 4 равно 24.
+для i от 4 до 2 нет ни одного шага: 4 уже больше 2.
+рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
+if 2 < 9 then y = 1 else y = 2; y = 1.
+чему равно произведение для i от 1 до 4? произведение для i от 1 до 4 равно 24.
+product for i from 1 to 5 is 120.
+for i from 5 to 1 there is no step at all: 5 is already greater than 1.
+factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(6) = 720.
+связывание даёт имя значению; здесь c равно 9.
+what is the product for i from 1 to 6? product for i from 1 to 6 is 720.
+сумма для i от 3 до 6 равна 18.
+if 4 < 4, what is y? if 4 < 4 then y = 1 else y = 2; y = 2.
+функция g(n) = n + 7; g(4) = 11.
+a binding gives a name to a value; here c is 7.
+чему равна сумма для i от 2 до 4? сумма для i от 2 до 4 равна 9.
+sum for i from 1 to 7 is 28.
+если t(n) = n - 1, чему равно t(12)? функция t(n) = n - 1; t(12) = 11.
+function h(n) = n * n; h(6) = 36.
+let a = 8; let b = 7; let c = a + b; c = 15.
+what is the sum for i from 1 to 5? sum for i from 1 to 5 is 15.
+the branch not taken changes nothing; y = 1.
+if f(n) = n * 2, what is f(5)? function f(n) = n * 2; f(5) = 10.
+произведение для i от 1 до 6 равно 720.
+для i от 6 до 1 нет ни одного шага: 6 уже больше 1.
+рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
+if 9 > 2 then y = 1 else y = 2; y = 1.
+чему равно произведение для i от 1 до 3? произведение для i от 1 до 3 равно 6.
+product for i from 2 to 4 is 24.
+for i from 4 to 2 there is no step at all: 4 is already greater than 2.
+factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(3) = 6.
+связывание даёт имя значению; здесь c равно 12.
+what is the product for i from 1 to 4? product for i from 1 to 4 is 24.
+сумма для i от 1 до 5 равна 15.
+if 10 > 3, what is y? if 10 > 3 then y = 1 else y = 2; y = 1.
+функция f(n) = n * 2; f(5) = 10.
+a binding gives a name to a value; here c is 9.
+чему равна сумма для i от 1 до 6? сумма для i от 1 до 6 равна 21.
+sum for i from 3 to 6 is 18.
+если s(n) = n * 5, чему равно s(3)? функция s(n) = n * 5; s(3) = 15.
+function g(n) = n + 7; g(4) = 11.
+let a = 12; let b = 5; let c = a - b; c = 7.
+what is the sum for i from 2 to 4? sum for i from 2 to 4 is 9.
+the branch not taken changes nothing; y = 2.
+if t(n) = n - 1, what is t(12)? function t(n) = n - 1; t(12) = 11.
+произведение для i от 1 до 4 равно 24.
+для i от 4 до 1 нет ни одного шага: 4 уже больше 1.
+рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
+if 3 < 5 then y = 1 else y = 2; y = 1.
+чему равно произведение для i от 2 до 5? произведение для i от 2 до 5 равно 120.
+product for i from 1 to 6 is 720.
+for i from 6 to 1 there is no step at all: 6 is already greater than 1.
+factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(4) = 24.
 
 function h(n) = n * n; h(6) = 36.
-factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(4) = 24.
-let a = 8; let b = 7; let c = a + b; c = 15.
-связывание даёт имя значению; здесь c равно 80.
-the branch not taken changes nothing; y = 1.
-сумма для i от 1 до 4 равна 10.
-произведение для i от 1 до 5 равно 120.
-функция h(n) = n * n; h(6) = 36.
-рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
-a binding gives a name to a value; here c is 15.
-if 4 < 4 then y = 1 else y = 2; y = 2.
-sum for i from 1 to 7 is 28.
-product for i from 1 to 4 is 24.
-function t(n) = n - 1; t(12) = 11.
-factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(3) = 6.
-let a = 15; let b = 3; let c = a - b; c = 12.
-связывание даёт имя значению; здесь c равно 15.
-the branch not taken changes nothing; y = 2.
-сумма для i от 1 до 7 равна 28.
-произведение для i от 1 до 4 равно 24.
-функция t(n) = n - 1; t(12) = 11.
-рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
-a binding gives a name to a value; here c is 12.
-if 7 < 5 then y = 1 else y = 2; y = 2.
-sum for i from 2 to 4 is 9.
-product for i from 1 to 7 is 5040.
-function q(n) = n * 3; q(7) = 21.
-factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(6) = 720.
 let a = 6; let b = 6; let c = a * b; c = 36.
-связывание даёт имя значению; здесь c равно 12.
-the branch not taken changes nothing; y = 2.
-сумма для i от 2 до 4 равна 9.
-произведение для i от 1 до 7 равно 5040.
-функция q(n) = n * 3; q(7) = 21.
-рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
-a binding gives a name to a value; here c is 36.
-if 3 < 5 then y = 1 else y = 2; y = 1.
-sum for i from 1 to 3 is 6.
-product for i from 2 to 4 is 24.
-function g(n) = n + 7; g(4) = 11.
-factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(5) = 120.
-let a = 12; let b = 5; let c = a - b; c = 7.
-связывание даёт имя значению; здесь c равно 36.
+what is the sum for i from 1 to 6? sum for i from 1 to 6 is 21.
 the branch not taken changes nothing; y = 1.
-сумма для i от 1 до 3 равна 6.
-произведение для i от 2 до 4 равно 24.
-функция g(n) = n + 7; g(4) = 11.
-рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
-a binding gives a name to a value; here c is 7.
-if 10 > 3 then y = 1 else y = 2; y = 1.
-sum for i from 3 to 6 is 18.
-product for i from 1 to 3 is 6.
-function s(n) = n * 5; s(3) = 15.
-factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(4) = 24.
-let a = 9; let b = 4; let c = a + b; c = 13.
-связывание даёт имя значению; здесь c равно 7.
-the branch not taken changes nothing; y = 1.
-сумма для i от 3 до 6 равна 18.
+if f(n) = n * 2, what is f(5)? function f(n) = n * 2; f(5) = 10.
 произведение для i от 1 до 3 равно 6.
-функция s(n) = n * 5; s(3) = 15.
+для i от 3 до 1 нет ни одного шага: 3 уже больше 1.
 рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
-a binding gives a name to a value; here c is 13.
-if 2 < 9 then y = 1 else y = 2; y = 1.
-sum for i from 1 to 6 is 21.
-product for i from 3 to 6 is 360.
-function p(n) = n - 3; p(9) = 6.
-factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(3) = 6.
-let a = 7; let b = 3; let c = a * b; c = 21.
-связывание даёт имя значению; здесь c равно 13.
-the branch not taken changes nothing; y = 1.
-сумма для i от 1 до 6 равна 21.
-произведение для i от 3 до 6 равно 360.
-функция p(n) = n - 3; p(9) = 6.
-рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
-a binding gives a name to a value; here c is 21.
-if 6 > 6 then y = 1 else y = 2; y = 2.
-sum for i from 2 to 5 is 14.
-product for i from 1 to 6 is 720.
-function f(n) = n * 2; f(5) = 10.
-factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(6) = 720.
-let a = 11; let b = 2; let c = a - b; c = 9.
-связывание даёт имя значению; здесь c равно 21.
-the branch not taken changes nothing; y = 2.
-сумма для i от 2 до 5 равна 14.
-произведение для i от 1 до 6 равно 720.
-функция f(n) = n * 2; f(5) = 10.
-рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
-a binding gives a name to a value; here c is 9.
-if 1 > 8 then y = 1 else y = 2; y = 2.
-sum for i from 1 to 5 is 15.
-product for i from 2 to 5 is 120.
-function r(n) = n + n; r(8) = 16.
-factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(5) = 120.
-let a = 20; let b = 4; let c = a * b; c = 80.
-связывание даёт имя значению; здесь c равно 9.
-the branch not taken changes nothing; y = 2.
-сумма для i от 1 до 5 равна 15.
-произведение для i от 2 до 5 равно 120.
-функция r(n) = n + n; r(8) = 16.
-рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
-a binding gives a name to a value; here c is 80.
 if 9 > 2 then y = 1 else y = 2; y = 1.
+чему равно произведение для i от 1 до 7? произведение для i от 1 до 7 равно 5040.
+product for i from 1 to 4 is 24.
+for i from 4 to 1 there is no step at all: 4 is already greater than 1.
+factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(6) = 720.
+связывание даёт имя значению; здесь c равно 7.
+what is the product for i from 2 to 5? product for i from 2 to 5 is 120.
+сумма для i от 1 до 6 равна 21.
+if 10 > 3, what is y? if 10 > 3 then y = 1 else y = 2; y = 1.
+функция f(n) = n * 2; f(5) = 10.
+a binding gives a name to a value; here c is 15.
+чему равна сумма для i от 1 до 3? сумма для i от 1 до 3 равна 6.
+sum for i from 2 to 4 is 9.
+если s(n) = n * 5, чему равно s(3)? функция s(n) = n * 5; s(3) = 15.
+function g(n) = n + 7; g(4) = 11.
+let a = 7; let b = 3; let c = a * b; c = 21.
+what is the sum for i from 1 to 4? sum for i from 1 to 4 is 10.
+the branch not taken changes nothing; y = 2.
+if t(n) = n - 1, what is t(12)? function t(n) = n - 1; t(12) = 11.
+произведение для i от 2 до 5 равно 120.
+для i от 5 до 2 нет ни одного шага: 5 уже больше 2.
+рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
+if 3 < 5 then y = 1 else y = 2; y = 1.
+чему равно произведение для i от 3 до 6? произведение для i от 3 до 6 равно 360.
+product for i from 1 to 3 is 6.
+for i from 3 to 1 there is no step at all: 3 is already greater than 1.
+factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(3) = 6.
+связывание даёт имя значению; здесь c равно 9.
+what is the product for i from 1 to 7? product for i from 1 to 7 is 5040.
+сумма для i от 1 до 4 равна 10.
+if 1 > 8, what is y? if 1 > 8 then y = 1 else y = 2; y = 2.
+функция t(n) = n - 1; t(12) = 11.
+a binding gives a name to a value; here c is 7.
+чему равна сумма для i от 2 до 5? сумма для i от 2 до 5 равна 14.
+sum for i from 1 to 6 is 21.
+если r(n) = n + n, чему равно r(8)? функция r(n) = n + n; r(8) = 16.
+function f(n) = n * 2; f(5) = 10.
+let a = 8; let b = 7; let c = a + b; c = 15.
+what is the sum for i from 1 to 3? sum for i from 1 to 3 is 6.
+the branch not taken changes nothing; y = 2.
+if s(n) = n * 5, what is s(3)? function s(n) = n * 5; s(3) = 15.
+произведение для i от 1 до 7 равно 5040.
+для i от 7 до 1 нет ни одного шага: 7 уже больше 1.
+рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
+if 6 > 6 then y = 1 else y = 2; y = 2.
+чему равно произведение для i от 1 до 5? произведение для i от 1 до 5 равно 120.
+product for i from 2 to 5 is 120.
+for i from 5 to 2 there is no step at all: 5 is already greater than 2.
+factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(4) = 24.
+связывание даёт имя значению; здесь c равно 12.
+what is the product for i from 3 to 6? product for i from 3 to 6 is 360.
+сумма для i от 1 до 3 равна 6.
+if 7 < 5, what is y? if 7 < 5 then y = 1 else y = 2; y = 2.
+функция s(n) = n * 5; s(3) = 15.
+a binding gives a name to a value; here c is 9.
+чему равна сумма для i от 1 до 7? сумма для i от 1 до 7 равна 28.
 sum for i from 1 to 4 is 10.
+если q(n) = n * 3, чему равно q(7)? функция q(n) = n * 3; q(7) = 21.
+function t(n) = n - 1; t(12) = 11.
+let a = 12; let b = 5; let c = a - b; c = 7.
+what is the sum for i from 2 to 5? sum for i from 2 to 5 is 14.
+the branch not taken changes nothing; y = 1.
+if r(n) = n + n, what is r(8)? function r(n) = n + n; r(8) = 16.
+произведение для i от 3 до 6 равно 360.
+для i от 6 до 3 нет ни одного шага: 6 уже больше 3.
+рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
+if 4 < 4 then y = 1 else y = 2; y = 2.
+чему равно произведение для i от 2 до 4? произведение для i от 2 до 4 равно 24.
+product for i from 1 to 7 is 5040.
+for i from 7 to 1 there is no step at all: 7 is already greater than 1.
+factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(5) = 120.
+связывание даёт имя значению; здесь c равно 13.
+what is the product for i from 1 to 5? product for i from 1 to 5 is 120.
+сумма для i от 2 до 5 равна 14.
+if 2 < 9, what is y? if 2 < 9 then y = 1 else y = 2; y = 1.
+функция r(n) = n + n; r(8) = 16.
+a binding gives a name to a value; here c is 12.
+чему равна сумма для i от 3 до 6? сумма для i от 3 до 6 равна 18.
+sum for i from 1 to 3 is 6.
+если p(n) = n - 3, чему равно p(9)? функция p(n) = n - 3; p(9) = 6.
+function s(n) = n * 5; s(3) = 15.
+let a = 11; let b = 2; let c = a - b; c = 9.
+what is the sum for i from 1 to 7? sum for i from 1 to 7 is 28.
+the branch not taken changes nothing; y = 2.
+if q(n) = n * 3, what is q(7)? function q(n) = n * 3; q(7) = 21.
+произведение для i от 1 до 5 равно 120.
+для i от 5 до 1 нет ни одного шага: 5 уже больше 1.
+рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
+if 10 > 3 then y = 1 else y = 2; y = 1.
+чему равно произведение для i от 1 до 6? произведение для i от 1 до 6 равно 720.
+product for i from 3 to 6 is 360.
+for i from 6 to 3 there is no step at all: 6 is already greater than 3.
+factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(6) = 720.
+связывание даёт имя значению; здесь c равно 80.
+what is the product for i from 2 to 4? product for i from 2 to 4 is 24.
+сумма для i от 1 до 7 равна 28.
+if 9 > 2, what is y? if 9 > 2 then y = 1 else y = 2; y = 1.
+функция q(n) = n * 3; q(7) = 21.
+a binding gives a name to a value; here c is 13.
+чему равна сумма для i от 1 до 5? сумма для i от 1 до 5 равна 15.
+sum for i from 2 to 5 is 14.
+если h(n) = n * n, чему равно h(6)? функция h(n) = n * n; h(6) = 36.
+function r(n) = n + n; r(8) = 16.
+let a = 15; let b = 3; let c = a - b; c = 12.
+what is the sum for i from 3 to 6? sum for i from 3 to 6 is 18.
+the branch not taken changes nothing; y = 2.
+if p(n) = n - 3, what is p(9)? function p(n) = n - 3; p(9) = 6.
+произведение для i от 2 до 4 равно 24.
+для i от 4 до 2 нет ни одного шага: 4 уже больше 2.
+рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
+if 1 > 8 then y = 1 else y = 2; y = 2.
+чему равно произведение для i от 1 до 4? произведение для i от 1 до 4 равно 24.
 product for i from 1 to 5 is 120.
+for i from 5 to 1 there is no step at all: 5 is already greater than 1.
+factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(3) = 6.
+связывание даёт имя значению; здесь c равно 36.
+what is the product for i from 1 to 6? product for i from 1 to 6 is 720.
+сумма для i от 3 до 6 равна 18.
+if 3 < 5, what is y? if 3 < 5 then y = 1 else y = 2; y = 1.
+функция p(n) = n - 3; p(9) = 6.
+a binding gives a name to a value; here c is 80.
+чему равна сумма для i от 2 до 4? сумма для i от 2 до 4 равна 9.
+sum for i from 1 to 7 is 28.
+если g(n) = n + 7, чему равно g(4)? функция g(n) = n + 7; g(4) = 11.
+function q(n) = n * 3; q(7) = 21.
+let a = 9; let b = 4; let c = a + b; c = 13.
+what is the sum for i from 1 to 5? sum for i from 1 to 5 is 15.
+the branch not taken changes nothing; y = 1.
+if h(n) = n * n, what is h(6)? function h(n) = n * n; h(6) = 36.
+произведение для i от 1 до 6 равно 720.
+для i от 6 до 1 нет ни одного шага: 6 уже больше 1.
+рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
+if 7 < 5 then y = 1 else y = 2; y = 2.
+чему равно произведение для i от 1 до 3? произведение для i от 1 до 3 равно 6.
+product for i from 2 to 4 is 24.
+for i from 4 to 2 there is no step at all: 4 is already greater than 2.
+factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(4) = 24.
+связывание даёт имя значению; здесь c равно 21.
+what is the product for i from 1 to 4? product for i from 1 to 4 is 24.
+сумма для i от 1 до 5 равна 15.
+if 6 > 6, what is y? if 6 > 6 then y = 1 else y = 2; y = 2.
+функция h(n) = n * n; h(6) = 36.
+a binding gives a name to a value; here c is 36.
+чему равна сумма для i от 1 до 6? сумма для i от 1 до 6 равна 21.
+sum for i from 3 to 6 is 18.
+если f(n) = n * 2, чему равно f(5)? функция f(n) = n * 2; f(5) = 10.
+function p(n) = n - 3; p(9) = 6.
+let a = 20; let b = 4; let c = a * b; c = 80.
+what is the sum for i from 2 to 4? sum for i from 2 to 4 is 9.
+the branch not taken changes nothing; y = 1.
+if g(n) = n + 7, what is g(4)? function g(n) = n + 7; g(4) = 11.
+произведение для i от 1 до 4 равно 24.
+для i от 4 до 1 нет ни одного шага: 4 уже больше 1.
+рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
+if 2 < 9 then y = 1 else y = 2; y = 1.
+чему равно произведение для i от 2 до 5? произведение для i от 2 до 5 равно 120.
+product for i from 1 to 6 is 720.
+for i from 6 to 1 there is no step at all: 6 is already greater than 1.
+factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(5) = 120.
+связывание даёт имя значению; здесь c равно 15.
+what is the product for i from 1 to 3? product for i from 1 to 3 is 6.
+сумма для i от 2 до 4 равна 9.
+if 4 < 4, what is y? if 4 < 4 then y = 1 else y = 2; y = 2.
+функция g(n) = n + 7; g(4) = 11.
+a binding gives a name to a value; here c is 21.
+чему равна сумма для i от 1 до 4? сумма для i от 1 до 4 равна 10.
+sum for i from 1 to 5 is 15.
+если t(n) = n - 1, чему равно t(12)? функция t(n) = n - 1; t(12) = 11.
 
 the branch not taken changes nothing; y = 2.
-произведение для i от 1 до 4 равно 24.
-рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
-if 6 > 6 then y = 1 else y = 2; y = 2.
-product for i from 3 to 6 is 360.
+для i от 7 до 1 нет ни одного шага: 7 уже больше 1.
+чему равно произведение для i от 1 до 4? произведение для i от 1 до 4 равно 24.
 factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(3) = 6.
-связывание даёт имя значению; здесь c равно 36.
-сумма для i от 1 до 4 равна 10.
-функция g(n) = n + 7; g(4) = 11.
-a binding gives a name to a value; here c is 9.
-sum for i from 3 to 6 is 18.
-function r(n) = n + n; r(8) = 16.
-let a = 6; let b = 6; let c = a * b; c = 36.
-the branch not taken changes nothing; y = 2.
-произведение для i от 1 до 5 равно 120.
-рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
-if 2 < 9 then y = 1 else y = 2; y = 1.
-product for i from 1 to 3 is 6.
-factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(4) = 24.
-связывание даёт имя значению; здесь c равно 12.
-сумма для i от 1 до 5 равна 15.
-функция q(n) = n * 3; q(7) = 21.
-a binding gives a name to a value; here c is 21.
-sum for i from 1 to 3 is 6.
-function f(n) = n * 2; f(5) = 10.
-let a = 15; let b = 3; let c = a - b; c = 12.
-the branch not taken changes nothing; y = 1.
-произведение для i от 2 до 5 равно 120.
-рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
-if 10 > 3 then y = 1 else y = 2; y = 1.
-product for i from 2 to 4 is 24.
-factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(5) = 120.
-связывание даёт имя значению; здесь c равно 15.
 сумма для i от 2 до 5 равна 14.
-функция t(n) = n - 1; t(12) = 11.
-a binding gives a name to a value; here c is 13.
-sum for i from 2 to 4 is 9.
-function p(n) = n - 3; p(9) = 6.
-let a = 8; let b = 7; let c = a + b; c = 15.
-the branch not taken changes nothing; y = 2.
-произведение для i от 1 до 6 равно 720.
-рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
-if 3 < 5 then y = 1 else y = 2; y = 1.
-product for i from 1 to 7 is 5040.
-factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(6) = 720.
-связывание даёт имя значению; здесь c равно 80.
-сумма для i от 1 до 6 равна 21.
-функция h(n) = n * n; h(6) = 36.
-a binding gives a name to a value; here c is 7.
-sum for i from 1 to 7 is 28.
-function s(n) = n * 5; s(3) = 15.
-let a = 20; let b = 4; let c = a * b; c = 80.
-the branch not taken changes nothing; y = 2.
-произведение для i от 3 до 6 равно 360.
-рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
-if 7 < 5 then y = 1 else y = 2; y = 2.
-product for i from 1 to 4 is 24.
-factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(3) = 6.
-связывание даёт имя значению; здесь c равно 9.
-сумма для i от 3 до 6 равна 18.
-функция r(n) = n + n; r(8) = 16.
-a binding gives a name to a value; here c is 36.
-sum for i from 1 to 4 is 10.
-function g(n) = n + 7; g(4) = 11.
-let a = 11; let b = 2; let c = a - b; c = 9.
-the branch not taken changes nothing; y = 1.
+a binding gives a name to a value; here c is 9.
+если t(n) = n - 1, чему равно t(12)? функция t(n) = n - 1; t(12) = 11.
+what is the sum for i from 3 to 6? sum for i from 3 to 6 is 18.
 произведение для i от 1 до 3 равно 6.
-рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
-if 4 < 4 then y = 1 else y = 2; y = 2.
-product for i from 1 to 5 is 120.
-factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(4) = 24.
-связывание даёт имя значению; здесь c равно 21.
-сумма для i от 1 до 3 равна 6.
-функция f(n) = n * 2; f(5) = 10.
-a binding gives a name to a value; here c is 12.
-sum for i from 1 to 5 is 15.
-function q(n) = n * 3; q(7) = 21.
-let a = 7; let b = 3; let c = a * b; c = 21.
-the branch not taken changes nothing; y = 1.
-произведение для i от 2 до 4 равно 24.
-рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
-if 9 > 2 then y = 1 else y = 2; y = 1.
-product for i from 2 to 5 is 120.
-factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(5) = 120.
-связывание даёт имя значению; здесь c равно 13.
-сумма для i от 2 до 4 равна 9.
-функция p(n) = n - 3; p(9) = 6.
-a binding gives a name to a value; here c is 15.
-sum for i from 2 to 5 is 14.
-function t(n) = n - 1; t(12) = 11.
-let a = 9; let b = 4; let c = a + b; c = 13.
-the branch not taken changes nothing; y = 1.
-произведение для i от 1 до 7 равно 5040.
-рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
-if 1 > 8 then y = 1 else y = 2; y = 2.
-product for i from 1 to 6 is 720.
-factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(6) = 720.
-связывание даёт имя значению; здесь c равно 7.
-сумма для i от 1 до 7 равна 28.
+if 3 < 5 then y = 1 else y = 2; y = 1.
+for i from 4 to 2 there is no step at all: 4 is already greater than 2.
+what is the product for i from 1 to 7? product for i from 1 to 7 is 5040.
 функция s(n) = n * 5; s(3) = 15.
-a binding gives a name to a value; here c is 80.
+sum for i from 1 to 5 is 15.
+let a = 20; let b = 4; let c = a * b; c = 80.
+if q(n) = n * 3, what is q(7)? function q(n) = n * 3; q(7) = 21.
+рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
+product for i from 3 to 6 is 360.
+связывание даёт имя значению; здесь c равно 13.
+if 10 > 3, what is y? if 10 > 3 then y = 1 else y = 2; y = 1.
+чему равна сумма для i от 2 до 4? сумма для i от 2 до 4 равна 9.
+function p(n) = n - 3; p(9) = 6.
+the branch not taken changes nothing; y = 2.
+для i от 4 до 1 нет ни одного шага: 4 уже больше 1.
+чему равно произведение для i от 1 до 5? произведение для i от 1 до 5 равно 120.
+factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(4) = 24.
+сумма для i от 1 до 6 равна 21.
+a binding gives a name to a value; here c is 21.
+если h(n) = n * n, чему равно h(6)? функция h(n) = n * n; h(6) = 36.
+what is the sum for i from 1 to 3? sum for i from 1 to 3 is 6.
+произведение для i от 2 до 4 равно 24.
+if 7 < 5 then y = 1 else y = 2; y = 2.
+for i from 7 to 1 there is no step at all: 7 is already greater than 1.
+what is the product for i from 1 to 4? product for i from 1 to 4 is 24.
+функция g(n) = n + 7; g(4) = 11.
+sum for i from 2 to 5 is 14.
+let a = 11; let b = 2; let c = a - b; c = 9.
+if t(n) = n - 1, what is t(12)? function t(n) = n - 1; t(12) = 11.
+рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
+product for i from 1 to 3 is 6.
+связывание даёт имя значению; здесь c равно 7.
+if 3 < 5, what is y? if 3 < 5 then y = 1 else y = 2; y = 1.
+чему равна сумма для i от 1 до 7? сумма для i от 1 до 7 равна 28.
+function s(n) = n * 5; s(3) = 15.
+the branch not taken changes nothing; y = 1.
+для i от 5 до 1 нет ни одного шага: 5 уже больше 1.
+чему равно произведение для i от 2 до 5? произведение для i от 2 до 5 равно 120.
+factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(5) = 120.
+сумма для i от 3 до 6 равна 18.
+a binding gives a name to a value; here c is 13.
+если r(n) = n + n, чему равно r(8)? функция r(n) = n + n; r(8) = 16.
+what is the sum for i from 2 to 4? sum for i from 2 to 4 is 9.
+произведение для i от 1 до 7 равно 5040.
+if 4 < 4 then y = 1 else y = 2; y = 2.
+for i from 4 to 1 there is no step at all: 4 is already greater than 1.
+what is the product for i from 1 to 5? product for i from 1 to 5 is 120.
+функция q(n) = n * 3; q(7) = 21.
 sum for i from 1 to 6 is 21.
-function h(n) = n * n; h(6) = 36.
+let a = 7; let b = 3; let c = a * b; c = 21.
+if h(n) = n * n, what is h(6)? function h(n) = n * n; h(6) = 36.
+рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
+product for i from 2 to 4 is 24.
+связывание даёт имя значению; здесь c равно 36.
+if 7 < 5, what is y? if 7 < 5 then y = 1 else y = 2; y = 2.
+чему равна сумма для i от 1 до 4? сумма для i от 1 до 4 равна 10.
+function g(n) = n + 7; g(4) = 11.
+the branch not taken changes nothing; y = 2.
+для i от 5 до 2 нет ни одного шага: 5 уже больше 2.
+чему равно произведение для i от 1 до 6? произведение для i от 1 до 6 равно 720.
+factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(6) = 720.
+сумма для i от 1 до 3 равна 6.
+a binding gives a name to a value; here c is 7.
+если f(n) = n * 2, чему равно f(5)? функция f(n) = n * 2; f(5) = 10.
+what is the sum for i from 1 to 7? sum for i from 1 to 7 is 28.
+произведение для i от 1 до 4 равно 24.
+if 9 > 2 then y = 1 else y = 2; y = 1.
+for i from 5 to 1 there is no step at all: 5 is already greater than 1.
+what is the product for i from 2 to 5? product for i from 2 to 5 is 120.
+функция t(n) = n - 1; t(12) = 11.
+sum for i from 3 to 6 is 18.
+let a = 9; let b = 4; let c = a + b; c = 13.
+if r(n) = n + n, what is r(8)? function r(n) = n + n; r(8) = 16.
+рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
+product for i from 1 to 7 is 5040.
+связывание даёт имя значению; здесь c равно 12.
+if 4 < 4, what is y? if 4 < 4 then y = 1 else y = 2; y = 2.
+чему равна сумма для i от 1 до 5? сумма для i от 1 до 5 равна 15.
+function q(n) = n * 3; q(7) = 21.
+the branch not taken changes nothing; y = 2.
+для i от 6 до 1 нет ни одного шага: 6 уже больше 1.
+чему равно произведение для i от 3 до 6? произведение для i от 3 до 6 равно 360.
+factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(3) = 6.
+сумма для i от 2 до 4 равна 9.
+a binding gives a name to a value; here c is 36.
+если p(n) = n - 3, чему равно p(9)? функция p(n) = n - 3; p(9) = 6.
+what is the sum for i from 1 to 4? sum for i from 1 to 4 is 10.
+произведение для i от 1 до 5 равно 120.
+if 1 > 8 then y = 1 else y = 2; y = 2.
+for i from 5 to 2 there is no step at all: 5 is already greater than 2.
+what is the product for i from 1 to 6? product for i from 1 to 6 is 720.
+функция h(n) = n * n; h(6) = 36.
+sum for i from 1 to 3 is 6.
 let a = 12; let b = 5; let c = a - b; c = 7.
+if f(n) = n * 2, what is f(5)? function f(n) = n * 2; f(5) = 10.
+рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
+product for i from 1 to 4 is 24.
+связывание даёт имя значению; здесь c равно 15.
+if 9 > 2, what is y? if 9 > 2 then y = 1 else y = 2; y = 1.
+чему равна сумма для i от 2 до 5? сумма для i от 2 до 5 равна 14.
+function t(n) = n - 1; t(12) = 11.
+the branch not taken changes nothing; y = 1.
+для i от 6 до 3 нет ни одного шага: 6 уже больше 3.
+чему равно произведение для i от 1 до 3? произведение для i от 1 до 3 равно 6.
+factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(4) = 24.
+сумма для i от 1 до 7 равна 28.
+a binding gives a name to a value; here c is 12.
+если s(n) = n * 5, чему равно s(3)? функция s(n) = n * 5; s(3) = 15.
+what is the sum for i from 1 to 5? sum for i from 1 to 5 is 15.
+произведение для i от 2 до 5 равно 120.
+if 6 > 6 then y = 1 else y = 2; y = 2.
+for i from 6 to 1 there is no step at all: 6 is already greater than 1.
+what is the product for i from 3 to 6? product for i from 3 to 6 is 360.
+функция r(n) = n + n; r(8) = 16.
+sum for i from 2 to 4 is 9.
+let a = 6; let b = 6; let c = a * b; c = 36.
+if p(n) = n - 3, what is p(9)? function p(n) = n - 3; p(9) = 6.
+рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
+product for i from 1 to 5 is 120.
+связывание даёт имя значению; здесь c равно 80.
+if 1 > 8, what is y? if 1 > 8 then y = 1 else y = 2; y = 2.
+чему равна сумма для i от 1 до 6? сумма для i от 1 до 6 равна 21.
+function h(n) = n * n; h(6) = 36.
+the branch not taken changes nothing; y = 1.
+для i от 3 до 1 нет ни одного шага: 3 уже больше 1.
+чему равно произведение для i от 2 до 4? произведение для i от 2 до 4 равно 24.
+factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(5) = 120.
+сумма для i от 1 до 4 равна 10.
+a binding gives a name to a value; here c is 15.
+если g(n) = n + 7, чему равно g(4)? функция g(n) = n + 7; g(4) = 11.
+what is the sum for i from 2 to 5? sum for i from 2 to 5 is 14.
+произведение для i от 1 до 6 равно 720.
+if 2 < 9 then y = 1 else y = 2; y = 1.
+for i from 6 to 3 there is no step at all: 6 is already greater than 3.
+what is the product for i from 1 to 3? product for i from 1 to 3 is 6.
+функция f(n) = n * 2; f(5) = 10.
+sum for i from 1 to 7 is 28.
+let a = 15; let b = 3; let c = a - b; c = 12.
+if s(n) = n * 5, what is s(3)? function s(n) = n * 5; s(3) = 15.
+рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
+product for i from 2 to 5 is 120.
+связывание даёт имя значению; здесь c равно 9.
+if 6 > 6, what is y? if 6 > 6 then y = 1 else y = 2; y = 2.
+чему равна сумма для i от 3 до 6? сумма для i от 3 до 6 равна 18.
+function r(n) = n + n; r(8) = 16.
+the branch not taken changes nothing; y = 1.
+для i от 4 до 2 нет ни одного шага: 4 уже больше 2.
+чему равно произведение для i от 1 до 7? произведение для i от 1 до 7 равно 5040.
+factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(6) = 720.
+сумма для i от 1 до 5 равна 15.
+a binding gives a name to a value; here c is 80.
+если q(n) = n * 3, чему равно q(7)? функция q(n) = n * 3; q(7) = 21.
+what is the sum for i from 1 to 6? sum for i from 1 to 6 is 21.
+произведение для i от 3 до 6 равно 360.
+if 10 > 3 then y = 1 else y = 2; y = 1.
+for i from 3 to 1 there is no step at all: 3 is already greater than 1.
+what is the product for i from 2 to 4? product for i from 2 to 4 is 24.
+функция p(n) = n - 3; p(9) = 6.
+sum for i from 1 to 4 is 10.
+let a = 8; let b = 7; let c = a + b; c = 15.
+if g(n) = n + 7, what is g(4)? function g(n) = n + 7; g(4) = 11.
+рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
+product for i from 1 to 6 is 720.
+связывание даёт имя значению; здесь c равно 21.
+if 2 < 9, what is y? if 2 < 9 then y = 1 else y = 2; y = 1.
+чему равна сумма для i от 1 до 3? сумма для i от 1 до 3 равна 6.
+function f(n) = n * 2; f(5) = 10.
 
 рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
-sum for i from 2 to 4 is 9.
-factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(6) = 720.
-the branch not taken changes nothing; y = 2.
-функция s(n) = n * 5; s(3) = 15.
-if 1 > 8 then y = 1 else y = 2; y = 2.
 function t(n) = n - 1; t(12) = 11.
-связывание даёт имя значению; здесь c равно 9.
-произведение для i от 1 до 4 равно 24.
-a binding gives a name to a value; here c is 7.
-product for i from 1 to 6 is 720.
-let a = 8; let b = 7; let c = a + b; c = 15.
 сумма для i от 2 до 4 равна 9.
-рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
-sum for i from 1 to 5 is 15.
-factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(5) = 120.
-the branch not taken changes nothing; y = 2.
-функция t(n) = n - 1; t(12) = 11.
 if 10 > 3 then y = 1 else y = 2; y = 1.
-function f(n) = n * 2; f(5) = 10.
-связывание даёт имя значению; здесь c равно 7.
-произведение для i от 1 до 6 равно 720.
-a binding gives a name to a value; here c is 15.
-product for i from 2 to 4 is 24.
 let a = 7; let b = 3; let c = a * b; c = 21.
-сумма для i от 1 до 5 равна 15.
-рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
-sum for i from 3 to 6 is 18.
-factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(4) = 24.
-the branch not taken changes nothing; y = 1.
-функция f(n) = n * 2; f(5) = 10.
-if 4 < 4 then y = 1 else y = 2; y = 2.
-function g(n) = n + 7; g(4) = 11.
-связывание даёт имя значению; здесь c равно 15.
-произведение для i от 2 до 4 равно 24.
-a binding gives a name to a value; here c is 21.
-product for i from 1 to 5 is 120.
-let a = 6; let b = 6; let c = a * b; c = 36.
-сумма для i от 3 до 6 равна 18.
-рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
-sum for i from 1 to 7 is 28.
-factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(3) = 6.
-the branch not taken changes nothing; y = 2.
+if 3 < 5, what is y? if 3 < 5 then y = 1 else y = 2; y = 1.
+чему равно произведение для i от 1 до 5? произведение для i от 1 до 5 равно 120.
+what is the sum for i from 2 to 5? sum for i from 2 to 5 is 14.
 функция g(n) = n + 7; g(4) = 11.
-if 6 > 6 then y = 1 else y = 2; y = 2.
-function h(n) = n * n; h(6) = 36.
-связывание даёт имя значению; здесь c равно 21.
-произведение для i от 1 до 5 равно 120.
-a binding gives a name to a value; here c is 36.
 product for i from 3 to 6 is 360.
-let a = 20; let b = 4; let c = a * b; c = 80.
-сумма для i от 1 до 7 равна 28.
-рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
-sum for i from 2 to 5 is 14.
-factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(6) = 720.
 the branch not taken changes nothing; y = 2.
-функция h(n) = n * n; h(6) = 36.
-if 3 < 5 then y = 1 else y = 2; y = 1.
-function p(n) = n - 3; p(9) = 6.
-связывание даёт имя значению; здесь c равно 36.
-произведение для i от 3 до 6 равно 360.
 a binding gives a name to a value; here c is 80.
-product for i from 1 to 7 is 5040.
-let a = 9; let b = 4; let c = a + b; c = 13.
-сумма для i от 2 до 5 равна 14.
-рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
-sum for i from 1 to 3 is 6.
-factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(5) = 120.
-the branch not taken changes nothing; y = 1.
-функция p(n) = n - 3; p(9) = 6.
-if 9 > 2 then y = 1 else y = 2; y = 1.
-function q(n) = n * 3; q(7) = 21.
-связывание даёт имя значению; здесь c равно 80.
-произведение для i от 1 до 7 равно 5040.
-a binding gives a name to a value; here c is 13.
-product for i from 2 to 5 is 120.
-let a = 15; let b = 3; let c = a - b; c = 12.
-сумма для i от 1 до 3 равна 6.
-рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
-sum for i from 1 to 4 is 10.
+for i from 4 to 2 there is no step at all: 4 is already greater than 2.
+if r(n) = n + n, what is r(8)? function r(n) = n + n; r(8) = 16.
+чему равна сумма для i от 1 до 4? сумма для i от 1 до 4 равна 10.
 factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(4) = 24.
-the branch not taken changes nothing; y = 1.
-функция q(n) = n * 3; q(7) = 21.
-if 2 < 9 then y = 1 else y = 2; y = 1.
-function r(n) = n + n; r(8) = 16.
-связывание даёт имя значению; здесь c равно 13.
 произведение для i от 2 до 5 равно 120.
-a binding gives a name to a value; here c is 12.
-product for i from 1 to 3 is 6.
-let a = 11; let b = 2; let c = a - b; c = 9.
-сумма для i от 1 до 4 равна 10.
-рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
 sum for i from 1 to 6 is 21.
-factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(3) = 6.
-the branch not taken changes nothing; y = 1.
-функция r(n) = n + n; r(8) = 16.
-if 7 < 5 then y = 1 else y = 2; y = 2.
-function s(n) = n * 5; s(3) = 15.
 связывание даёт имя значению; здесь c равно 12.
+для i от 6 до 3 нет ни одного шага: 6 уже больше 3.
+если t(n) = n - 1, чему равно t(12)? функция t(n) = n - 1; t(12) = 11.
+what is the product for i from 2 to 4? product for i from 2 to 4 is 24.
+рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
+function f(n) = n * 2; f(5) = 10.
+сумма для i от 1 до 5 равна 15.
+if 4 < 4 then y = 1 else y = 2; y = 2.
+let a = 6; let b = 6; let c = a * b; c = 36.
+if 9 > 2, what is y? if 9 > 2 then y = 1 else y = 2; y = 1.
+чему равно произведение для i от 3 до 6? произведение для i от 3 до 6 равно 360.
+what is the sum for i from 1 to 3? sum for i from 1 to 3 is 6.
+функция h(n) = n * n; h(6) = 36.
+product for i from 1 to 7 is 5040.
+the branch not taken changes nothing; y = 1.
+a binding gives a name to a value; here c is 13.
+for i from 5 to 1 there is no step at all: 5 is already greater than 1.
+if s(n) = n * 5, what is s(3)? function s(n) = n * 5; s(3) = 15.
+чему равна сумма для i от 1 до 6? сумма для i от 1 до 6 равна 21.
+factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(3) = 6.
 произведение для i от 1 до 3 равно 6.
+sum for i from 2 to 4 is 9.
+связывание даёт имя значению; здесь c равно 9.
+для i от 7 до 1 нет ни одного шага: 7 уже больше 1.
+если f(n) = n * 2, чему равно f(5)? функция f(n) = n * 2; f(5) = 10.
+what is the product for i from 1 to 5? product for i from 1 to 5 is 120.
+рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
+function g(n) = n + 7; g(4) = 11.
+сумма для i от 3 до 6 равна 18.
+if 6 > 6 then y = 1 else y = 2; y = 2.
+let a = 20; let b = 4; let c = a * b; c = 80.
+if 2 < 9, what is y? if 2 < 9 then y = 1 else y = 2; y = 1.
+чему равно произведение для i от 1 до 7? произведение для i от 1 до 7 равно 5040.
+what is the sum for i from 1 to 4? sum for i from 1 to 4 is 10.
+функция p(n) = n - 3; p(9) = 6.
+product for i from 2 to 5 is 120.
+the branch not taken changes nothing; y = 1.
+a binding gives a name to a value; here c is 12.
+for i from 6 to 3 there is no step at all: 6 is already greater than 3.
+if t(n) = n - 1, what is t(12)? function t(n) = n - 1; t(12) = 11.
+чему равна сумма для i от 2 до 4? сумма для i от 2 до 4 равна 9.
+factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(6) = 720.
+произведение для i от 1 до 4 равно 24.
+sum for i from 1 to 5 is 15.
+связывание даёт имя значению; здесь c равно 7.
+для i от 5 до 2 нет ни одного шага: 5 уже больше 2.
+если g(n) = n + 7, чему равно g(4)? функция g(n) = n + 7; g(4) = 11.
+what is the product for i from 3 to 6? product for i from 3 to 6 is 360.
+рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
+function h(n) = n * n; h(6) = 36.
+сумма для i от 1 до 7 равна 28.
+if 3 < 5 then y = 1 else y = 2; y = 1.
+let a = 9; let b = 4; let c = a + b; c = 13.
+if 7 < 5, what is y? if 7 < 5 then y = 1 else y = 2; y = 2.
+чему равно произведение для i от 2 до 5? произведение для i от 2 до 5 равно 120.
+what is the sum for i from 1 to 6? sum for i from 1 to 6 is 21.
+функция q(n) = n * 3; q(7) = 21.
+product for i from 1 to 3 is 6.
+the branch not taken changes nothing; y = 1.
 a binding gives a name to a value; here c is 9.
+for i from 7 to 1 there is no step at all: 7 is already greater than 1.
+if f(n) = n * 2, what is f(5)? function f(n) = n * 2; f(5) = 10.
+чему равна сумма для i от 1 до 5? сумма для i от 1 до 5 равна 15.
+factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(5) = 120.
+произведение для i от 1 до 6 равно 720.
+sum for i from 3 to 6 is 18.
+связывание даёт имя значению; здесь c равно 15.
+для i от 3 до 1 нет ни одного шага: 3 уже больше 1.
+если h(n) = n * n, чему равно h(6)? функция h(n) = n * n; h(6) = 36.
+what is the product for i from 1 to 7? product for i from 1 to 7 is 5040.
+рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
+function p(n) = n - 3; p(9) = 6.
+сумма для i от 2 до 5 равна 14.
+if 9 > 2 then y = 1 else y = 2; y = 1.
+let a = 15; let b = 3; let c = a - b; c = 12.
+if 1 > 8, what is y? if 1 > 8 then y = 1 else y = 2; y = 2.
+чему равно произведение для i от 1 до 3? произведение для i от 1 до 3 равно 6.
+what is the sum for i from 2 to 4? sum for i from 2 to 4 is 9.
+функция r(n) = n + n; r(8) = 16.
 product for i from 1 to 4 is 24.
+the branch not taken changes nothing; y = 2.
+a binding gives a name to a value; here c is 7.
+for i from 5 to 2 there is no step at all: 5 is already greater than 2.
+if g(n) = n + 7, what is g(4)? function g(n) = n + 7; g(4) = 11.
+чему равна сумма для i от 3 до 6? сумма для i от 3 до 6 равна 18.
+factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(4) = 24.
+произведение для i от 2 до 4 равно 24.
+sum for i from 1 to 7 is 28.
+связывание даёт имя значению; здесь c равно 21.
+для i от 4 до 1 нет ни одного шага: 4 уже больше 1.
+если p(n) = n - 3, чему равно p(9)? функция p(n) = n - 3; p(9) = 6.
+what is the product for i from 2 to 5? product for i from 2 to 5 is 120.
+рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
+function q(n) = n * 3; q(7) = 21.
+сумма для i от 1 до 3 равна 6.
+if 2 < 9 then y = 1 else y = 2; y = 1.
+let a = 11; let b = 2; let c = a - b; c = 9.
+if 10 > 3, what is y? if 10 > 3 then y = 1 else y = 2; y = 1.
+чему равно произведение для i от 1 до 4? произведение для i от 1 до 4 равно 24.
+what is the sum for i from 1 to 5? sum for i from 1 to 5 is 15.
+функция s(n) = n * 5; s(3) = 15.
+product for i from 1 to 6 is 720.
+the branch not taken changes nothing; y = 2.
+a binding gives a name to a value; here c is 15.
+for i from 3 to 1 there is no step at all: 3 is already greater than 1.
+if h(n) = n * n, what is h(6)? function h(n) = n * n; h(6) = 36.
+чему равна сумма для i от 1 до 7? сумма для i от 1 до 7 равна 28.
+factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(3) = 6.
+произведение для i от 1 до 5 равно 120.
+sum for i from 2 to 5 is 14.
+связывание даёт имя значению; здесь c равно 36.
+для i от 6 до 1 нет ни одного шага: 6 уже больше 1.
+если q(n) = n * 3, чему равно q(7)? функция q(n) = n * 3; q(7) = 21.
+what is the product for i from 1 to 3? product for i from 1 to 3 is 6.
+рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
+function r(n) = n + n; r(8) = 16.
+сумма для i от 1 до 4 равна 10.
+if 7 < 5 then y = 1 else y = 2; y = 2.
 let a = 12; let b = 5; let c = a - b; c = 7.
+if 4 < 4, what is y? if 4 < 4 then y = 1 else y = 2; y = 2.
+чему равно произведение для i от 1 до 6? произведение для i от 1 до 6 равно 720.
+what is the sum for i from 3 to 6? sum for i from 3 to 6 is 18.
+функция t(n) = n - 1; t(12) = 11.
+product for i from 2 to 4 is 24.
+the branch not taken changes nothing; y = 1.
+a binding gives a name to a value; here c is 21.
+for i from 4 to 1 there is no step at all: 4 is already greater than 1.
+if p(n) = n - 3, what is p(9)? function p(n) = n - 3; p(9) = 6.
+чему равна сумма для i от 2 до 5? сумма для i от 2 до 5 равна 14.
+factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(6) = 720.
+произведение для i от 3 до 6 равно 360.
+sum for i from 1 to 3 is 6.
+связывание даёт имя значению; здесь c равно 80.
+для i от 4 до 2 нет ни одного шага: 4 уже больше 2.
+если r(n) = n + n, чему равно r(8)? функция r(n) = n + n; r(8) = 16.
+what is the product for i from 1 to 4? product for i from 1 to 4 is 24.
+рекурсия без основания есть зависание, а не программа; factorial(0) = 1.
+function s(n) = n * 5; s(3) = 15.
 сумма для i от 1 до 6 равна 21.
+if 1 > 8 then y = 1 else y = 2; y = 2.
+let a = 8; let b = 7; let c = a + b; c = 15.
+if 6 > 6, what is y? if 6 > 6 then y = 1 else y = 2; y = 2.
+чему равно произведение для i от 2 до 4? произведение для i от 2 до 4 равно 24.
+what is the sum for i from 1 to 7? sum for i from 1 to 7 is 28.
+функция f(n) = n * 2; f(5) = 10.
+product for i from 1 to 5 is 120.
+the branch not taken changes nothing; y = 2.
+a binding gives a name to a value; here c is 36.
+for i from 6 to 1 there is no step at all: 6 is already greater than 1.
+if q(n) = n * 3, what is q(7)? function q(n) = n * 3; q(7) = 21.
+чему равна сумма для i от 1 до 3? сумма для i от 1 до 3 равна 6.
+factorial(0) = 1; factorial(n) = n * factorial(n - 1); factorial(5) = 120.
+произведение для i от 1 до 7 равно 5040.
+sum for i from 1 to 4 is 10.
+связывание даёт имя значению; здесь c равно 13.
+для i от 5 до 1 нет ни одного шага: 5 уже больше 1.
+если s(n) = n * 5, чему равно s(3)? функция s(n) = n * 5; s(3) = 15.
+what is the product for i from 1 to 6? product for i from 1 to 6 is 720.

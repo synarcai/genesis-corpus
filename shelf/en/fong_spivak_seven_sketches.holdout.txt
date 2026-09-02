@@ -1,0 +1,81 @@
+) \] What is the monoidal product matrix A + B? The monoidal product of $A= (
+
+What matrices does the signal flow graph \[
+
+\] represent? What about the signal flow graph \[
+
+? \] Are they equal? The signal flow graph on the left represents the matrix on the right: \[ $
+
+Write down a detailed proof of . Suppose M is an m × n-matrix. Follow the idea of the (2× 2)-case in , and construct the signal flow graph g---having m inputs and n outputs---as the composite of four layers, respectively comprising (i) copy maps, (ii) scalars, (iii) swaps and identities, (iv) addition maps. For the first layer g_1, take the monoidal product of m copies of c_n, \[ g_1 c_n + + c_n m (m n), \] where c_n is the signal flow diagram that makes n copies of a single input: \[ c_n (1+ ) (1+1+ ) (1+ +1+ ) 1 n \] Next, define
+
+For each matrix in , draw another signal flow graph that represents that matrix. Using the above equations and the prop axioms, prove that the two signal flow graphs represent the same matrix
+
+The matrices in may also be drawn as the following signal flow graphs: \[ 0 1 2
+
+\] Here are graphical proofs that the representations we chose in our solution to agree with those chosen in Part 1 above. \[
+
+Consider the signal flow graphs
+
+\] cannot represent the same morphism because one has a path from a vertex on the left to one on the right, and the other does not. To prove this, observe that the only graphical equation in that breaks a path from left to right is the equation \[
+
+\] So a 0 scalar must within a path from left to right before we could rewrite the diagram to break that path. No such 0 scalar can appear, however, because the diagram does not contain any, and the sum and product of any two nonzero natural numbers is always nonzero. Replacing each of the 3s with 0 allows us to rewrite the diagram to \[
+
+\] is equal to the kernel of the matrix S(g). Show that the composite of discard-reverses with g, shown here \[
+
+Explain why coproducts in a preorder are the same as joins. Let (P,≤) be a preorder, and p,q ∈ P. Recall that a preorder is a category with at most one morphism, denoted ≤, between any two objects. Also recall that all diagrams in a preorder commute, since this means any two morphisms with the same domain and codomain are equal
+
+Note that this construction sends identity morphisms to identity morphisms, since by 4 we have \[ _A + _B = _A _ A , _B _ B = _ A , _ B = _ A+B . \]
+
+Check that the pushout of pushouts from satisfies the universal property of the colimit for the original diagram, . We have to check that the colimit of the diagram shown left really is given by taking three pushouts as shown right: \[ [ampersand replacement=\&] \& B \& Z A \& C D [ampersand replacement=\&] \& B \& Z A \& Y \& R X \& Q \& S \] That is, we need to show that S, together with the maps from A, B, X, Y, and Z, has the required universal property. So suppose given an object T with two commuting diagrams as shown: \[ [ampersand replacement=\&] \& B \& Z A \& Y \&
+
+Depicting the composite of cospans in with the wire notation gives \[
+
+Which morphisms in the following list are equal? \[
+
+\] Morphisms 1, 4, and 6 are equal, and morphisms 3 and 5 are equal. Morphism 3 is not equal to any other depicted morphism. This is an immediate consequence of
+
+Using your knowledge of colimits, show that the maps defined in do indeed obey the special law (see )
+
+The special law says that the composite of cospans \[ = X X X+X X X \] is the identity. This comes down to checking that the square
+
+Fill in the missing diagram in the proof of . The missing diagram is \[
+
+Thus the required square commutes
+
+Suppose we have circuits \[
+
+\] This is exactly what is depicted in
+
+and composing the result of ε gives
+
+\] Compute the cospan g∘_1 f. What is its arity? Draw the cospan g∘_1 f. Do you see it as substitution? The cospan shown left corresponds to the wiring diagram shown right: \[
+
+\] It has two inner circles, each with two ports. One port of the first is wired to a port of the second. One port of the first is wired to the outside circle, and one port of the second is wired to the outside circle. This is exactly what the cospan says to do. The cospan shown left corresponds to the wiring diagram shown right: \[
+
+\] The composite g∘_1 f has arity (2,2,2,2;0); there is a depiction on the left: \[
+
+\] The associated wiring diagram is shown on the right above. One can see that one diagram has been substituted in to a circle of the other
+
+Prove using the definition of limit from . In the commutative diagram below, suppose the (B,C,B',C') square is a pullback: \[ [ampersand replacement=\&] A \&B \&C A' \&B' \&C' \] We need to show that the (A,B,A',B') square is a pullback iff the (A,C,A',C') rectangle is a pullback
+
+To do this, we use two applications of the pasting lemma, . Since the right-hand face is a pullback and the back face is a pullback, the diagonal rectangle (lightly drawn) is also a pullback. Since the front face is a pullback, the left-hand face is also a pullback
+
+\] The following is an epi-mono factorization of f: \[
+
+->-/.style= decoration= markings, mark=at position .5 with ,postaction= decorate
+
+=[inner sep=0pt] =[circle, fill=black, draw, inner sep=1.5pt, anchor=center] =[circle, fill=black, draw, inner sep=1.5pt, anchor=center] =[circle, fill=white, draw, inner sep=1.5pt] =[circle, fill=white, draw, inner sep=3pt] =[rounded rectangle, rounded rectangle west arc=0pt, draw, inner sep = 2pt,minimum width=4ex,minimum height=2ex,fill=black,text=white] =[rounded rectangle, rounded rectangle east arc=0pt, draw, inner sep = 2pt,minimum width=4ex,minimum height=2ex,fill=black,text=white] =[rounded rectangle, rounded rectangle west arc=0pt, draw, inner sep = 2pt,minimum width=4ex,minimum height=2ex,fill=white] =[rounded rectangle, rounded rectangle east arc=0pt, draw, inner sep = 2pt,minimum width=4ex,minimum height=2ex,fill=white]
+
+tick/.style= postaction= decorate, decoration= markings, mark=at position 0.5 with (0,.4ex) -- (0,-.4ex)
+
+functor/.style= ->, thick, shorten <=4pt, shorten >=4pt
+
+function/.style= ->, thin, shorten <=4pt, shorten >=4pt
+
+mapsto/.style= ->, densely dashed, blue, shorten <= , shorten >= , >=stealth, thick , short/.store in= , short=0pt
+
+oriented WD/.style= every to/.style= out=0,in=180,draw , label/.style= font= , inner sep=0pt, node distance=2pt and -2pt , semithick, node distance=1 and 1, decoration= markings, mark=at position with , ar/.style= postaction= decorate , execute at begin picture= x= , y= , every fit/.style= inner xsep= , inner ysep= , string decoration/.store in= , string decoration= ; , string decoration pos/.store in= , string decoration pos=.7, bbx/.store in= , bbx = 1.5cm, bby/.store in= , bby = 1.5ex, bb port sep/.store in= , bb port sep=1.5
+
+unoriented WD/.style= every to/.style= draw , shorten <=- , shorten >=- , label distance=-2pt, thick, node distance= , execute at begin picture= , pack size/.store in= , pack size = 8pt, spacing/.store in= , spacing = 8pt, link size/.store in= , link size = 2pt, penetration/.store in= , penetration = 2pt, pack color/.store in= , pack color = blue, pack inside color/.store in= , pack inside color=blue!20, pack outside color/.store in= , pack outside color=blue!50!black, surround sep/.store in= , surround sep=8pt, link/.style= circle, draw=black, fill=black, inner sep=0pt, minimum size= , pack/.style= circle, draw = , fill = , inner sep = .25* , minimum size = , outer pack/.style= ellipse, draw, inner sep= , color= , , intermediate pack/.style= ellipse, dashed, draw, inner sep= , color=
+
+bijection/.style= every arrow/.append style= dash

@@ -1,0 +1,1101 @@
+How can mathematics make this diagram meaningful?
+
+An early version of this book was put on line in February 2013 to serve as the textbook for my course Category Theory for Scientists taught in the spring semester of 2013 at MIT. During that semester, students provided me with hundreds of comments and questions, which led to a substantial improvement (and the addition of 50 pages) to the original document
+
+In the summer of 2013 I signed a contract with the MIT Press to publish a new version of this work under the title Category Theory for the Sciences . Because I am committed to the open source development model I insisted that a version of this book, namely the one you are reading, remain freely available online. The MIT Press version will of course not be free
+
+Other than the title, there are two main differences between the present version and the MIT Press version. The first difference is that I will do a full edit with the help of professional editors from the Press. The second difference is that I will write up solutions to the book's (approximately 280) exercises; some of these will be included in the published version, whereas the rest will be available by way of a password-protected page, accessible only to professors who teach the subject
+
+The title page of this book contains a graphic that we reproduce here
+
+It is intended to evoke thoughts of the scientific method. A hypothesis analyzed by a person produces a prediction, which motivates the specification of an experiment, which when executed results in an observation, which analyzed by a person yields a hypothesis. This sounds valid, and a good graphic can be exceptionally useful for leading a reader through the story that the author wishes to tell
+
+Interestingly, a graphic has the power to evoke feelings of understanding, without really meaning much. The same is true for text: it is possible to use a language such as English to express ideas that are never made rigorous or clear. When someone says ``I believe in free will," what does she believe in? We may all have some concept of what she's saying---something we can conceptually work with and discuss or argue about. But to what extent are we all discussing the same thing, the thing she intended to convey?
+
+Science is about agreement. When we supply a convincing argument, the result of this convincing is agreement. When, in an experiment, the observation matches the hypothesis---success!---that is agreement. When my methods make sense to you, that is agreement. When practice does not agree with theory, that is disagreement. Agreement is the good stuff in science; it's the high fives
+
+But it is easy to think we're in agreement, when really we're not. Modeling our thoughts on heuristics and pictures may be convenient for quick travel down the road, but we're liable to miss our turnoff at the first mile. The danger is in mistaking our convenient conceptualizations for what's actually there. It is imperative that we have the ability at any time to ground out in reality. What does that mean?
+
+Data. Hard evidence. The physical world. It is here that science touches down and heuristics evaporate. So let's look again at the diagram on the cover. It is intended to evoke an idea of how science is performed. Is there hard evidence and data to back this theory up? Can we set up an experiment to find out whether science is actually performed according to such a protocol? To do so we have to shake off the stupor evoked by the diagram and ask the question: ``what does this diagram intend to communicate?"
+
+This course is an attempt to extol the virtues of a new branch of mathematics, called category theory , which was invented for powerful communication of ideas between different fields and subfields within mathematics. By powerful communication of ideas I actually mean something precise. Different branches of mathematics can be formalized into categories. These categories can then be connected together by functors. And the sense in which these functors provide powerful communication of ideas is that facts and theorems proven in one category can be transferred through a connecting functor to yield proofs of analogous theorems in another category. A functor is like a conductor of mathematical truth
+
+I believe that the language and toolset of category theory can be useful throughout science. We build scientific understanding by developing models, and category theory is the study of basic conceptual building blocks and how they cleanly fit together to make such models. Certain structures and conceptual frameworks show up again and again in our understanding of reality. No one would dispute that vector spaces are ubiquitous. But so are hierarchies, symmetries, actions of agents on objects, data models, global behavior emerging as the aggregate of local behavior, self-similarity, and the effect of methodological context
+
+Some ideas are so common that our use of them goes virtually undetected, such as set-theoretic intersections. For example, when we speak of a material that is both lightweight and ductile, we are intersecting two sets. But what is the use of even mentioning this set-theoretic fact? The answer is that when we formalize our ideas, our understanding is almost always clarified. Our ability to communicate with others is enhanced, and the possibility for developing new insights expands. And if we are ever to get to the point that we can input our ideas into computers, we will need to be able to formalize these ideas first
+
+It is my hope that this course will offer scientists a new vocabulary in which to think and communicate, and a new pipeline to the vast array of theorems that exist and are considered immensely powerful within mathematics. These theorems have not made their way out into the world of science, but they are directly applicable there. Hierarchies are partial orders, symmetries are group elements, data models are categories, agent actions are monoid actions, local-to-global principles are sheaves, self-similarity is modeled by operads, context can be modeled by monads
+
+A brief history of category theory
+
+The paradigm shift brought on by Einstein's theory of relativity brought on the realization that there is no single perspective from which to view the world. There is no background framework that we need to find; there are infinitely many different frameworks and perspectives, and the real power lies in being able to translate between them. It is in this historical context that category theory got its start. The following history of category theory is far too brief, and perhaps reflects more of the author's aesthetic than any kind of objective truth, whatever that may mean. Here are some much better references
+
+At first category theory was little more than a deeply clarifying language for existing difficult mathematical ideas. However, in 1957 Alexander Grothendieck used category theory to build new mathematical machinery (new cohomology theories) that granted unprecedented insight into the behavior of algebraic equations. Since that time, categories have been built specifically to zoom in on particular features of mathematical subjects and study them with a level of acuity that is simply unavailable elsewhere
+
+Bill Lawvere saw category theory as a new foundation for all mathematical thought. Mathematicians had been searching for foundations in the 19th century and were reasonably satisfied with set theory as the foundation . But Lawvere showed that the category of sets is simply a category with certain nice properties, not necessarily the center of the mathematical universe. He explained how whole algebraic theories can be viewed as examples of a single system. He and others went on to show that higher order logic was beautifully captured in the setting of category theory (more specifically toposes). It is here also that Grothendieck and his school worked out major results in algebraic geometry
+
+In 1980 Joachim Lambek showed that the types and programs used in computer science form a specific kind of category. This provided a new semantics for talking about programs, allowing people to investigate how programs combine and compose to create other programs, without caring about the specifics of implementation. Eugenio Moggi brought the category theoretic notion of monads into computer science to encapsulate ideas that up to that point were considered outside the realm of such theory
+
+It is difficult to explain the clarity and beauty brought to category theory by people like Daniel Kan and Andr\' e Joyal Joyal, Andr\' e . They have each repeatedly extracted the essence of a whole mathematical subject to reveal and formalize a stunningly simple yet extremely powerful pattern of thinking, revolutionizing how mathematics is done
+
+All this time, however, category theory was consistently seen by much of the mathematical community as ridiculously abstract. But in the 21st century it has finally come to find healthy respect within the larger community of pure mathematics. It is the language of choice for graduate-level algebra and topology courses, and in my opinion will continue to establish itself as the basic framework in which mathematics is done
+
+As mentioned above category theory has branched out into certain areas of science as well. Baez and Dolan have shown its value in making sense of quantum physics, it is well established in computer science, and it has found proponents in several other fields as well. But to my mind, we are the very beginning of its venture into scientific methodology. Category theory was invented as a bridge and it will continue to serve in that role
+
+Intention of this book
+
+The world of applied mathematics is much smaller than the world of applicable mathematics . As alluded to above, this course is intended to create a bridge between the vast array of mathematical concepts that are used daily by mathematicians to describe all manner of phenomena that arise in our studies, and the models and frameworks of scientific disciplines such as physics, computation, and neuroscience
+
+To the pure mathematician I'll try to prove that concepts such as categories, functors, natural transformations, limits, colimits, functor categories, sheaves, monads, and operads---concepts that are often considered too abstract for even math majors---can be communicated to scientists with no math background beyond linear algebra. If this material is as teachable as I think, it means that category theory is not esoteric but somehow well-aligned with ideas that already make sense to the scientific mind. Note, however, that this book is example-based rather than proof-based, so it may not be suitable as a reference for students of pure mathematics
+
+To the scientist I'll try to prove the claim that category theory includes a formal treatment of conceptual structures that the scientist sees often, perhaps without realizing that there is well-oiled mathematical machinery to be employed. We will work on the structure of information; how data is made meaningful by its connections, both internal and outreaching, to other data. Note, however, that this book should most certainly not be taken as a reference on scientific matters themselves. One should assume that any account of physics, materials science, chemistry, etc. has been oversimplified. The intention is to give a flavor of how category theory may help us model scientific ideas, not to explain these ideas in a serious way
+
+Data gathering is ubiquitous in science. Giant databases are currently being mined for unknown patterns, but in fact there are many (many) known patterns that simply have not been catalogued. Consider the well-known case of medical records. A patient's medical history is often known by various individual doctor-offices but quite inadequately shared between them. Sharing medical records often means faxing a hand-written note or a filled-in house-created form between offices
+
+Similarly, in science there exists substantial expertise making brilliant connections between concepts, but it is being conveyed in silos of English prose known as journal articles. Every scientific journal article has a methods section, but it is almost impossible to read a methods section and subsequently repeat the experiment---the English language is inadequate to precisely and concisely convey what is being done
+
+The first thing to understand in this course is that reusable methodologies can be formalized, and that doing so is inherently valuable. Consider the following analogy. Suppose you want to add up the area of a region in space (or the area under a curve). You break the region down into small squares, each of which you know has area A; then you count the number of squares, say n, and the result is that the region has an area of about nA. If you want a more precise and accurate result you repeat the process with half-size squares. This methodology can be used for any area-finding problem (of which there are more than a first-year calculus student generally realizes) and thus it deserves to be formalized. But once we have formalized this methodology, it can be taken to its limit and out comes integration by Riemann sums
+
+I intend to show that category theory is incredibly efficient as a language for experimental design patterns, introducing formality while remaining flexible. It forms a rich and tightly woven conceptual fabric that will allow the scientist to maneuver between different perspectives whenever the need arises. Once one builds that fabric for oneself, he or she has an ability to think about models in a way that simply would not occur without it. Moreover, putting ideas into the language of category theory forces a person to clarify their assumptions. This is highly valuable both for the researcher and for his or her audience
+
+What must be recognized in order to find value in this course is that conceptual chaos is a major problem. Creativity demands clarity of thinking, and to think clearly about a subject requires an organized understanding of how its pieces fit together. Organization and clarity also lead to better communication with others. Academics often say they are paid to think and understand, but that is not true. They are paid to think, understand, and communicate their findings . Universal languages for science---languages such as calculus and differential equations, matrices, or simply graphs and pie-charts---already exist, and they grant us a cohesiveness that makes scientific research worthwhile. In this book I will attempt to show that category theory can be similarly useful in describing complex scientific understandings
+
+What is requested from the student
+
+I will do my best to make clear the value of category theory in science, but I am not a scientist. To that end I am asking for your help in exploring how category theory may be useful in your specific field
+
+I also want you to recognize that the value of mathematics is not generally obvious at first. A good student learning a good subject with a good teacher will see something compelling almost immediately, but may not see how it will be useful in real life. This will come later. I hope you will work hard to understand even without yet knowing what its actual value in your life and research will be. Like a student of soccer is encouraged to spend hours juggling the ball when he or she could be practicing penalty shots, it is important to gain facility with the materials you will be using. Doing exercises is imperative for learning mathematics
+
+Category theory references
+
+I wrote this book because the available books on category theory are almost all written for mathematicians (the rest are written for computer scientists). There is one book by Lawvere and Schanuel, called Conceptual Mathematics , that offers category theory to a wider audience, but its style is not appropriate for this course. Still, it is very well written and clear
+
+The ``bible" of category theory is Categories for the working mathematician by Mac Lane . But as the title suggests, it was written for working mathematicians and will be quite opaque to my target audience. However, once a person has read my book, Mac Lane's book may become a valuable reference
+
+Other good books include Steve Awodey's book Category theory and Barr and Wells book Category theory for computing science , . A paper by Brown and Porter called Category Theory: an abstract setting for analogy and comparison is more in line with the style of this book, only much shorter. Online, I find wikipedia and a site called the nlab to be quite useful
+
+This book attempts to explain category theory by examples and exercises rather than by theorems and proofs. I hope this approach will be valuable to the working scientist
+
+I would like to express my deep appreciation for the many scientists who I have worked with over the past five years. It all started with Paea LePendu who first taught me about databases when I was naively knocking on doors in the University of Oregon computer science department. This book would never have been written if Tristan Nguyen and Dave Balaban had not noticed my work and encouraged me to continue. Dave Balaban and Peter Gates have been my scientific partners since the beginning, working hard to understand what I'm offering and working just as hard to help me understand all that I'm missing. Peter Gates has deepened my understanding of data in profound ways
+
+I have also been tremendously lucky to know Haynes Miller, who made it possible for me set down at MIT, with the help of Clark Barwick and Jacob Lurie. I knew that MIT would be the best place in the world for me to pursue this type of research, and it has really come through. Researchers like Markus Buehler and his graduate students Tristan Giesa and Dieter Brommer have been a pleasure to work with, and the many materials science examples scattered throughout this book is a testament to how much our work together has influenced my thinking
+
+I'd also like to thank my collaborators and conversation partners with whom I have discussed subjects written about in this book. Other than people mentioned above, these include Steve Awodey, Allen Brown, Adam Chlipala, Carlo Curino, Dan Dugger, Henrik Forssell, David Gepner, Jason Gross, Bob Harper, Ralph Hutchison, Robert Kent, Jack Morava, Scott Morrison, David Platt, Joey Perricone, Dylan Rupel, Guarav Singh, Sam Shames, Nat Stapleton, Patrick Schultz, Ka Yu Tam, Ryan Wisnesky, Jesse Wolfson, and Elizabeth Wood
+
+I would like to thank Peter Kleinhenz and Peter Gates for reading this book and providing invaluable feedback before I began teaching the 18-S996 class at MIT in Spring 2013. In particular the cover image is a mild alteration of something Gates sent me to help motivate the book to scientists. I would also like to greatly thank the 18-S996 course grader Darij Grinberg, who was not only the best grader I've had in my 14 years of teaching, but gave me more comments than anyone else on the book itself. I'd also like to thank the students from the 18-S996 class at MIT who helped me find typos, pointed me to unclear explanations, and generally helped me improve the book in many ways. Other than the people listed above, these include Aaron Brookner, Leon Dimas, Dylan Erb, Deokhwan Kim, Taesoo Kim, Owen Lewis, Yair Shenfeld, and Adam Strandberg
+
+I would like to thank my teacher, Peter Ralston, who taught me to repeatedly question the obvious. My ability to commit to a project like this one and to see it to fruition has certainly been enhanced since studying with him
+
+Finally, I acknowledge my appreciation for support from the Office of Naval Research without which this book would not have been remotely possible. I believe that their funding of basic research is an excellent way of ensuring that the US remains a global leader in the years to come
+
+The category of sets
+
+Note that for every element x∈ X, there is exactly one arrow emanating from x, but for an element y∈ Y, there can be several arrows pointing to y, or there can be no arrows pointing to y
+
+In studying the mechanics of materials, one wishes to know how a material responds to tension. For example a rubber band responds to tension differently than a spring does. To each material we can associate a force-extension curve , recording how much force the material carries when extended to various lengths. Once we fix a methodology for performing experiments, finding a material's force-extension curve would ideally constitute a function from the set of materials to the set of curves
+
+Here is a simplified account of how the brain receives light . The eye contains about 100 million photoreceptor (PR) cells. Each connects to a retinal ganglion (RG) cell. No PR cell connects to two different RG cells, but usually many PR cells can attach to a single RG cell
+
+Let PR denote the set of photoreceptor cells and let RG denote the set of retinal ganglion cells. According to the above account, does the connection pattern constitute a function RG→ PR, a function PR→ RG or neither one? Would you guess that the connection pattern that exists between other areas of the brain are ``function-like"?
+
+Definition. [Isomorphism]
+
+Protein production can be modeled as a function from the set of 3-nucleotide sequences to the set of eukaryotic amino acids. However, it cannot be an isomorphism because there are 4 ^ 3 = 64 triplets of RNA nucleotides, but only 21 eukaryotic amino acids
+
+Definition. Cardinality of finite sets] [
+
+Commutative diagrams
+
+At this point it is difficult to precisely define diagrams or commutative diagrams in general, but we can give the heuristic idea. We will define commutative diagrams precisely in Section . Consider the following picture
+
+The central dogma of molecular biology is that ``DNA codes for RNA codes for protein". That is, there is a function from DNA triplets to RNA triplets and a function from RNA triplets to amino acids. But sometimes we just want to discuss the translation from DNA to amino acids, and this is the composite of the other two. The commutative diagram is a picture of this fact
+
+In this course we will ground the mathematical ideas in applications whenever possible. To that end we introduce ologs, which will serve as a bridge between mathematics and various conceptual landscapes. The following material is taken from , an introduction to ologs
+
+A type is an abstract concept, a distinction the author has made. We represent each type as a box containing a singular indefinite noun phrase. Each of the following four boxes is a type
+
+Each of the four boxes in ( ) represents a type of thing, a whole class of things, and the label on that box is what one should call each example of that class. Thus does not represent a single man, but the set of men, each example of which is called ``a man". Similarly, the bottom right box represents an abstract type of thing, which probably has more than a million examples, but the label on the box indicates the common name for each such example
+
+Typographical problems emerge when writing a text-box in a line of text, e.g. the text-box seems out of place here, and the more in-line text-boxes there are, the worse it gets. To remedy this, I will denote types which occur in a line of text with corner-symbols; e.g. I will write instead of
+
+Types with compound structures
+
+A type is presented as a text box. The text in that box should [(i)] begin with the word ``a" or ``an"; refer to a distinction made and recognizable by the olog's author; refer to a distinction for which instances can be documented; declare all variables in a compound structure
+
+The first, second, and third rules ensure that the class of things represented by each box appears to the author as a well-defined set. The fourth rule encourages good ``readability" of arrows, as will be discussed next in Section
+
+I will not always follow the rules of good practice throughout this document. I think of these rules being followed ``in the background" but that I have ``nicknamed" various boxes. So may stand as a nickname for and as a nickname for . However, when pressed, one should always be able to rename each type according to the rules of good practice
+
+I tried above to clarify what it is that makes an aspect ``valid", namely that it must be a ``functional relationship." In this subsection I will show two arrows which on their face may appear to be aspects, but which on closer inspection are not functional (and hence are not valid as aspects)
+
+Consider the following two arrows
+
+A person may have no children or may have more than one child, so the first arrow is invalid: it is not a function. Similarly, if we drew an arrow from each mechanical pencil to each piece of lead it uses, it would not be a function
+
+Reading aspects and paths as English phrases
+
+Sometimes the label on an arrow can be shortened or dropped altogether if it is obvious from context. We will discuss this more in Section but here is a common example from the way I write ologs. Neither arrow is readable by the protocol given above (e.g. ``a pair (x,y) where x and y are integers x an integer" is not an English sentence), and yet it is obvious what each map means. For example, given (8,11) in A, arrow x would yield 8 and arrow y would yield 11. The label x can be thought of as a nickname for the full name ``yields, via the value of x," and similarly for y. I do not generally use the full name for fear that the olog would become cluttered with text
+
+One can also read paths through an olog by inserting the word ``which" after each intermediate box. For example the following olog has two paths of length 3 (counting arrows in a chain): The top path is read ``a child is a person, who has as parents a pair (w,m) where w is a woman and m is a man, which yields, via the value of w, a woman." The reader should read and understand the content of the bottom path, which associates to every child a year
+
+Converting non-functional relationships to aspects
+
+Exercise. On page we indicate a so-called invalid aspect, namely
+
+Create a (valid) olog that captures the parent-child relationship; your olog should still have boxes and but may have an additional box
+
+An aspect is presented as a labeled arrow, pointing from a source box to a target box. The arrow text should
+
+[(i)] begin with a verb; yield an English sentence, when the source-box text followed by the arrow text followed by the target-box text is read; and refer to a functional relationship: each instance of the source type should give rise to a specific instance of the target type
+
+In this section I will discuss facts, which are simply ``path equivalences" in an olog. It is the notion of path equivalences that make category theory so powerful
+
+A path in an olog is a head-to-tail sequence of arrows. That is, any path starts at some box B_0, then follows an arrow emanating from B_0 (moving in the appropriate direction), at which point it lands at another box B_1, then follows any arrow emanating from B_1, etc, eventually landing at a box B_n and stopping there. The number of arrows is the length of the path. So a path of length 1 is just an arrow, and a path of length 0 is just a box. We call B_0 the source and B_n the target of the path
+
+Given an olog, the author may want to declare that two paths are equivalent. For example consider the two paths from A to C in the olog We know as English speakers that a woman parent is called a mother, so these two paths A→ C should be equivalent. A more mathematical way to say this is that the triangle in Olog ( ) commutes . That is, path equivalences are simply commutative diagrams as in Section . In the example above we concisely say ``a woman parent is equivalent to a mother." We declare this by defining the diagonal map in ( ) to be the composition of the horizontal map and the vertical map
+
+Here is another, more scientific example
+
+Note how this diagram gives us the established terminology for the various ways in which DNA, RNA, and protein are related in this context
+
+Example. [Non-commuting diagram]
+
+In my conception of the world, the following diagram does not commute
+
+The non-commutativity of Diagram ( ) does not imply that, in my conception, no person lives in the same city as his or her father. Rather it implies that, in my conception, it is not the case that every person lives in the same city as his or her father
+
+Exercise. Create an olog about a scientific subject, preferably one you think about often. The olog should have at least five boxes, five arrows, and one commutative diagram
+
+A formula for writing facts as English
+
+Every fact consists of two paths, say P and Q, that are to be declared equivalent. The paths P and Q will necessarily have the same source, say s, and target, say t, but their lengths may be different, say m and n respectively. We draw these paths as
+
+To put the fact that Diagram commutes into English, we first Englishify the two paths: F=``a person has an address which is in a city" and G=``a person lives in a city". The source of both is s=``a person" and the target of both is t=``a city". write
+
+Exercise. This olog was taken from
+
+It says that a landline phone is physically located in the region that its phone number is assigned. Translate this fact into English using the formula from
+
+Exercise. In the above olog ( ), suppose that the box is replaced with the box . Would the diagram still commute?
+
+Exercise. For each of the following types, write down a function for which it is the image, or say ``not clearly an image type"
+
+Products and coproducts
+
+In this section we introduce two concepts that are likely to be familiar, although perhaps not by their category-theoretic names, product and coproduct. Each is an example of a large class of ideas that exist far beyond the realm of sets
+
+Example. [Grid of dots]
+
+A traditional (Mendelian) way to predict the genotype of offspring based on the genotype of its parents is by the use of Punnett squares . If F is the set of possible genotypes for the female parent and M is the set of possible genotypes of the male parent, then F× M is drawn as a square, called a Punnett square, in which every combination is drawn
+
+This kind of generality is useful in understanding multiple dimensions, e.g. what physicists mean by 10-dimensional space. It comes under the heading of limits , which we will see in Section
+
+Universal property for products
+
+Lemma. [Universal property for product]
+
+Example. [Grid of dots, continued]
+
+Hint: Do not be alarmed: this problem is a bit ``recursive" in that you'll use products in your formula
+
+Example. [Airplane seats]
+
+Exercise. Would you say that is the coproduct of and ?
+
+Example. [Disjoint union of dots]
+
+Universal property for coproducts
+
+Lemma. [Universal property for coproduct]
+
+Example. [Airplane seats, continued]
+
+The universal property of coproducts formalizes the following intuitively obvious fact: If we know how economy class seats are priced and we know how first class seats are priced, and if we know that every seat is either economy class or first class, then we automatically know how all seats are priced. To say it another way (and using the other induced map): If we keep track of which airplane every economy class seat is in and we keep track of which airplane every first class seat is in, and if we know that every seat is either economy class or first class, then we require no additional tracking for any airplane seat whatsoever
+
+[Piecewise defined curves]
+
+In science, curves are often defined or considered piecewise. For example in testing the mechanical properties of a material, we might be interested in various regions of deformation , such as elastic, plastic, or post-fracture. These are three intervals on which the material displays different kinds of properties
+
+Understand Example and see if a similar idea would make sense for particles and waves. Make an olog, and choose your wording in accordance with Rules . How do photons, which exhibit properties of both waves and particles, fit into the coproduct in your olog?
+
+Exercise. Following the section above, ``Ologging products" page , come up with a naming system for coproducts, the inclusions, and the universal maps. Try it out by making an olog (involving coproducts) discussing the idea that both a .wav file and a .mp3 file can be played on a modern computer. Be careful that your arrows are valid in the sense of Section
+
+In this section we discuss what are called limits of variously-shaped diagrams of sets. We will make all this much more precise when we discuss limits in arbitrary categories in Section
+
+Definition. [Pullback]
+
+Suppose given the diagram of sets and functions below
+
+Some may prefer to denote this fiber product by f×_Zg rather than X×_ZY. The former is mathematically better notation, but human-readability is often enhanced by the latter, which is also more common in the literature. We use whichever is more convenient
+
+Using pullbacks to define new ideas from old
+
+In this section we will see that the fiber product of a diagram can serve to define a new concept. For example, in ( ) we define what it means for a cellphone to have a bad battery, in terms of the length of time for which it remains charged. By being explicit, we reduce the chance of misunderstandings between different groups of people. This can be useful in situations like audits and those in which one is trying to reuse or understand data gathered by others
+
+Consider the following two ologs. The one on the right is the pullback of the one on the left
+
+Note that in Diagram ( ) the top-left box could have been (non-canonically named) . If it was taken to be the fiber product, then the author would be effectively defining a good customer to be one that is wealthy and loyal
+
+Exercise. For each of the following, an author has proposed that the diagram on the right is a pullback. Do you think their labels are appropriate or misleading; that is, is the label on the upper-left box reasonable given the rest of the olog, or is it suspect in some way?
+
+Exercise. Consider your olog from Exercise . Are any of the commutative squares there actually pullback squares? Now use ologs with products and pullbacks to define what a brother is and what a sister is (again in a human biological nuclear family), in terms of types such as , , , , and so on
+
+Definition. [Preimage]
+
+Lemma. [Universal property for pullback]
+
+Suppose given the diagram of sets and functions as below
+
+Pasting diagrams for pullback
+
+Proposition can be useful in authoring ologs. For example, the type is vague, but we can lay out precisely what it means using pullbacks
+
+Spans, experiments, and matrices
+
+The information we get this way might be seen by some as unscientific, but it certainly is the kind of information people use in business and in every day life calculation---we get our data from multiple sources and put it together. Moreover, it is scientific in the sense that it is reproducible. The way we obtained our T-V data is completely transparent
+
+We can relate spans to matrices of natural numbers, and see a natural ``categorification" of matrix addition and matrix multiplication. If our spans come from experiments as in Applications and the matrices involved will look like huge but sparse matrices. Let's go through that
+
+Equalizers and terminal objects
+
+Suppose given two parallel arrows
+
+Exercise. Come up with an olog that uses equalizers in a reasonably interesting way. Alternatively, use an equalizer to specify those published authors who have published exactly one paper. Hint: find a function from authors to papers; then find another
+
+Exercise. Find a universal property enjoyed by the equalizer of two arrows, and present it in the style of Lemmas , , and
+
+This section will parallel Section ---I will introduce several types of finite colimits and hope that this gives the reader some intuition about them, without formally defining them yet. Before doing so, I must define equivalence relations and quotients
+
+Background: equivalence relations
+
+Definition. [Equivalence relations and equivalence classes]
+
+Example. [Partitions]
+
+Lemma. [Generating equivalence relations]
+
+Definition. [Pushout]
+
+Suppose given the diagram of sets and functions below
+
+In each example below, the diagram to the right is intended to be a pushout of the diagram to the left. The new object, D, is the union of B and C, but instances of A are equated to their B and C aspects. This will be discussed after the two diagrams
+
+In the left-hand olog ( , the two arrows are inclusions: the author considers every cell in the shoulder to be both in the arm and in the torso. The pushout is then just the union, where cells in the shoulder are not double-counted
+
+In Olog ( ), if every mathematics course is simply ``too hard," then when reading off a list of courses, each math course will not be read aloud but simply read as ``too hard." To form D we begin by taking the union of B and C, and then we consider everything in A to be the same whether one looks at it as a course or as the phrase ``too hard." The math courses are all blurred together as one thing. Thus we see that the power to equate different things can be exercised with pushouts
+
+Lemma. [Universal property for pushout]
+
+Suppose given the diagram of sets and functions as below
+
+Other finite colimits
+
+Definition. [Coequalizer]
+
+Suppose given two parallel arrows
+
+Exercise. Find a universal property enjoyed by the coequalizer of two arrows
+
+Exercise. [Initial object] An initial set is a set S such that for every set A, there exists a unique function S→ A. Find an initial set. Do you think that the notion initial set belongs in this section (Section )? How so? If coproducts, pushouts, and coequalizers are all colimits, what do colimits have in common?
+
+In this section we discuss some left-over notions in the category of Sets
+
+Proposition. [Currying]
+
+Let A denote a set. For any sets X,Y there is a bijection
+
+Again, the natural numbers are the isomorphism classes of finite sets. Their behavior, i.e. the arithmetic of natural numbers, reflects the behavior of sets. For example the fact that multiplication distributes over addition is a fact about grids of dots as in Example . The following proposition lays out such arithmetic properties of sets
+
+It is true that a set is isomorphic to any other set with the same number of elements, but don't be fooled into thinking that the study of sets reduces to the study of numbers. Functions that are not isomorphisms cannot be captured within the framework of numbers
+
+Subobjects and characteristic functions
+
+Simplicial complexes
+
+Thus, the 0-simplex Δ^0, the 1-simplex Δ^1, the 2-simplex Δ^2, and the 3-simplex Δ^3 are drawn here
+
+Write out X_2 and X_3 (hint: the drawing of X indicates that X_3 should have one element)
+
+Subobject classifier
+
+Definition. [Characteristic function]
+
+Surjections, injections
+
+The classical definition of injections and surjections involves elements, which we give now. But a more robust notion involves all maps and will be given in Proposition
+
+A function that is both injective and surjective is called bijective
+
+It turns out that a function that is bijective is always an isomorphism and that all isomorphisms are bijective. We will not show that here, but it is not too hard; see for example
+
+But we assumed that f is a monomorphism so this implies that q = r. By the universal property of pullbacks, Lemma , we have m = n
+
+Exercise. Show, in analogy to Proposition , that pushouts preserve epimorphisms
+
+Multisets, relative sets, and set-indexed sets
+
+Consider the set X of words in a given document. If WC(X) is the wordcount of the document, we will not generally have WC ( X ) = X. The reason is that a set cannot contain the same element more than once, so words like ``the" might be undercounted in X. A multiset is a set in which elements can be assigned a multiplicity, i.e. a number of times they are to be counted
+
+But if X and Y are multisets, what is the appropriate type of mapping from X to Y? Since every set is a multiset (in which each element has multiplicity 1), let's restrict ourselves to notions of mapping that agree with the usual one on sets. That is, if multisets X and Y happen to be sets then our mappings X→ Y should just be functions
+
+In Chapter we will be getting to the definition of category, and you can test whether your notion of mapping in fact defines a category. Here is my definition of mapping for multisets
+
+Exercise. Suppose that a pseudo-multiset is defined to be almost the same as a multiset, except that π is not required to be surjective. Write down a pseudo-multiset that is not a multi-set. Describe the difference between the two notions in terms of multiplicities. Complexity of names aside, which do you think is a more useful notion: multiset or pseudo-multisets?
+
+Exercise. Consider the multisets described in Exercise . Write each of them in the form (E,B,π), as in Definition . In terms of the same definition, what are the mappings X→ Y? If we remove the restriction that diagram must commute, how many mappings X→ Y are there?
+
+Definition. [Relative set]
+
+Let A be a set. Suppose we want to assign to each element a∈ A a set S_a. This is called an A-indexed set. In category theory we are always interested in the legal mappings between two different structures of the same sort, so we need a notion of A-indexed mappings; we do the ``obvious thing"
+
+Let C be a set of classrooms. For each c∈ C let P_c denote the set of people in classroom c, and let S_c denote the set of seats (chairs) in classroom c. Then P and S are C-indexed sets. The appropriate kind of mapping between them respects the indexes. That is, a mapping of multi-sets P→ S should, for each classroom c∈ C, be a function P_c→ S_c. If we wanted to allow people from any classroom to choose a chair from just any classroom, category theory would tell us to reconsider P and S as sets, forgetting their indices. See Section
+
+Exercise. There is a strong relationship between A-indexed sets and relative sets over A. What is it?
+
+Categories and functors, without admitting it
+
+In this chapter we begin to use our understanding of sets to build more interesting mathematical devices, each of which organizes our understanding of a certain kind of domain. For example, monoids organize our thoughts about agents acting on objects; groups are monoids except restricted to only allow agents to act reversibly. We will then study graphs, which are systems of nodes and arrows that can capture ideas like information flow through a network or model connections between building blocks in a material. We will discuss orders, which can be used to study taxonomies or hierarchies. Finally we take a mathematical look at databases, which actually subsume everything else in the chapter. Databases are connection patterns for structuring information
+
+However, we will not really say the word ``category" much if at all in this chapter. It seems preferable to let the ideas rise on their own accord as interesting structures in their own right before explaining that everything in site fits into a single framework. That will be the pleasant reward to come in Chapter
+
+A common way to interpret phenomena we see around us is to say that agents are acting on objects. For example, in a computer drawing program, the user acts on the canvas in certain prescribed ways. Choices of actions from an available list can be performed in sequence to transform one image into another. As another example, one might investigate the notion that time acts on the position of hands on a clock in a prescribed way. A first rule for actions is this: the performance of a sequence of several actions is itself the performance of an action---a more complex action, but an action nonetheless
+
+Mathematical objects called monoids and groups are tasked with encoding the agent's perspective in all this, i.e. what the agent can do, and what happens when different actions are done in succession. A monoid can be construed as a set of actions, together with a formula that encodes how a sequence of actions is itself considered an action. A group is the same as a monoid, except that every action is required to be reversible. In this section we concentrate on monoids; we will get to groups in Section
+
+Definition and examples
+
+Definition. [Monoid]
+
+Example. [Additive monoid of natural numbers]
+
+Example. [Non-monoid]
+
+Exercise. Recall the notion of commutativity for monoids from Exercise . What is the smallest set M that you can give the structure of a non-commutative monoid? What is the smallest set M that you can give the structure of a monoid?
+
+Example. [Trivial monoid]
+
+In fact, the product of any list of monoid elements is the same, regardless of parenthesization. Therefore, we can unambiguously write m_1m_2m_3m_4m_5 rather than any given parenthesization of it. This is known as the coherence theorem and can be found in
+
+Free monoids and finitely presented monoids
+
+In the definition below, we will define a monoid M by specifying some generators and some relations. Lists of generators provide us all the possible ways to write elements of M. The relations allow us to have two such ways of writing the same element. The following definition is a bit dense, so see Example for a concrete example
+
+Definition. [Presented monoid]
+
+Every free monoid is a presented monoid, because we can just take the set of relations to be empty
+
+A monoid is called cyclic if it has a presentation involving only one generator
+
+Exercise. [Classify the cyclic monoids]
+
+Classify all the cyclic monoids up to isomorphism. That is, come up with a naming system such that every cyclic monoid can be given a name in your system, such that no two non-isomorphic cyclic monoids have the same name, and such that no name exists in the system unless it refers to a cyclic monoid
+
+Definition. [Monoid action]
+
+One can think of this as an action of the monoid of time on the clock
+
+However, Newton's method can get into trouble. For example at a critical point it causes division by 0, and sometimes it can oscillate or overshoot. In these cases we want to perturb a bit to the left or right. To have these actions available to us, we would add ``perturb" elements to our monoid. Now we have more available actions at any point, but at the cost of using a more complicated monoid
+
+When publishing an experimental finding, there may be some deep methodological questions that are not considered suitably important to mention. For example, one may not publish the kind solution finding method (e.g. Newton's method or Runge-Kutta) that was used, nor the set of available actions, e.g. what kinds of perturbation were used by the researcher. However, these may actually influence the reproducibility of results. By using a language such as that of monoid actions, we can align our data model with our unspoken assumptions about how functions are analyzed
+
+A monoid is useful for understanding how an agent acts on the set of states of an object, but there is only one kind of action. At any point, all actions are available. In reality it is often the case that contexts can change and different actions are available at different times. For example on a computer, the commands available in one application have no meaning in another. This will get us to categories in the next chapter
+
+Monoids actions as ologs
+
+If monoids are understood in terms of how they act on sets, then it is reasonable to think of them in terms of ologs. In fact, the ologs associated to monoids are precisely those ologs that have exactly one type (and possibly many arrows and commutative diagrams)
+
+Finite state machines
+
+In this book we will not worry about the initial state and the set of final states, concerning ourselves more with the interaction via δ of the alphabet Σ on the set S of states
+
+The following proposition expresses the notion of finite state automata in terms of free monoids and their actions on finite sets
+
+We sum up the idea of this section as follows: A finite state machine is an action of a free monoid on a finite set
+
+Monoid action tables
+
+Example. [Action table]
+
+Example. [Multiplication action table]
+
+Try to understand what is meant by this: ``applying column 2 and then column 2 returns the same thing as applying column 4."
+
+Monoid homomorphisms
+
+Homomorphisms from free monoids
+
+Restriction of scalars
+
+Groups are monoids in which every element has an inverse. If we think of these structures in terms of how they act on sets, the difference between groups and monoids is that the action of every group element can be undone. One way of thinking about groups is in terms of symmetries. For example, the rotations and reflections of a square form a group
+
+Another way to think of the difference between monoids and groups is in terms of time. Monoids are likely useful in thinking about diffusion, in which time plays a role and things cannot be undone. Groups are more likely useful in thinking about mechanics, where actions are time-reversible
+
+Definition and examples
+
+Come up with an identity, and a multiplication formula, such that the set of permutations of S forms a monoid. Is it a group?
+
+Exercise. In Exercise you classified the cyclic monoids. Which of them are groups?
+
+Definition. [Group action]
+
+In terms of action tables, we would need infinitely many columns to express this action. Here is a sample
+
+Exercise. Let X be a set and consider the group of permutations of X (see Exercise ), which we will denote Σ_X . Find a canonical action of Σ_X on X
+
+In this course, unless otherwise specified, whenever we speak of graphs we are not talking about curves in the plane, such as parabolas, or pictures of functions generally. We are speaking of systems of vertices and arrows
+
+We will take our graphs to be directed , meaning that every arrow points from a vertex to a vertex; rather than merely connecting vertices, arrows will have direction. If a and b are vertices, there can be many arrows from a to b, or none at all. There can be arrows from a to itself. Here is the formal definition in terms of sets and functions
+
+Definition and examples
+
+To draw a graph, first draw a dot for every element of V. Then for every element a∈ A, draw an arrow connecting dot src(a) to dot tgt(a)
+
+In fact, all of the data of the graph G is captured in the two tables above---together they tell us the sets A and V and the functions src and tgt
+
+Every olog has an underlying graph. The additional information in an olog has to do with which pairs of paths are declared equivalent, as well as text that has certain English-readability rules
+
+Exercise. Draw the graph corresponding to the following tables
+
+Exercise. Let V be a set. Suppose we just draw the elements of V as vertices and have no arrows between them. Is this a graph? Given V, is there any other ``canonical" or somehow automatic non-random procedure for generating a graph with those vertices?
+
+A graph (V,A,src,tgt) involves two sets and two functions. For two graphs to be comparable, their two sets and their two functions should be appropriately comparable
+
+Example. [Graph homomorphism]
+
+Is the commutativity of the diagram in ( ) indeed equivalent to the commutativity of the diagrams in ( )?
+
+Binary relations and graphs
+
+Exercise. [Binary relations to graphs]
+
+People usually think of certain sets as though they just are ordered, e.g. that an order is ordained by God. For example the natural numbers just are ordered. The letters in the alphabet just are ordered. But in fact we put orders on sets, and some are simply more commonly used in culture. One could order the letters in the alphabet by frequency of use and e would come before a. Given different purposes, we can put different orders on the same set. For example in Exercise we will give a different ordering on the natural numbers that is useful in elementary number theory
+
+In science, we might order the set of materials in two different ways. In the first, we consider material A to be ``before" material B if A is an ingredient or part of B, so water would be before concrete. But we could also order materials based on how electrically conductive they are, whereby concrete would be before water. This section is about different kinds of orders
+
+Definitions of preorder, partial order, linear order
+
+Exercise. Decide whether the table to the left in Display ( ) constitutes a linear order. Show that neither of the other tables are even preorders
+
+Example. [Partial order not linear order]
+
+We will draw an olog for playing cards
+
+We can put a binary relation on the set of boxes here by saying A≤ B if there is a path A→ B. One can see immediately that this is a preorder because length=0 paths give reflexivity and concatenation of paths gives transitivity. To see that it is a partial order we only note that there are no loops. But this partial order is not a linear order because there is no path (in either direction) between, e.g., and , so it violates the comparability condition
+
+Example. [Preorder not partial order]
+
+Example. [Finite linear orders]
+
+Every finite linear order, i.e. linear order on a finite set, is of the above form. That is, though the labels might change, the picture would be the same. We can make this precise when we have a notion of morphism of orders (see Definition )
+
+Given a graph G, we can create a binary relation ≤ on its set S of vertices as follows. Say a≤ b if there is a path in G from a to b. This relation will be reflexive and transitive, so it is a preorder. If the graph satisfies Property 3 then the preorder will be a partial order, and if the graph also satisfies Property 4 then the partial order will be a linear order. Thus graphs give us a nice way to visualize orders
+
+A graph generates a preorder: v≤ w if there is a path v→ w. This is a great way to picture a preorder
+
+Exercise. True or false: a partial order is a preorder that has no cliques. (If false, is there a ``nearby" true statement?)
+
+The point is that we can turn any relation into a preorder in a canonical way. Here is a concrete case of the above idea
+
+That is, the meet of s and t is the biggest thing smaller than both, i.e. a greatest lower bound , and the join of s and t is the smallest thing bigger than both, i.e. a least upper bound . Note that the meet of s and t might be s or t itself. Note that s and t may have more than one meet (or more than one join). However, any two meets of s and t must be in the same clique, by the universal property (and the same for joins)
+
+Exercise. Consider the partial order from Example . What is the join of and ? What is the meet of and ? What is the meet of and ?
+
+Not every two elements in a preorder need have a meet, nor need they have a join
+
+Exercise. If possible, find two elements in the partial order from Example that do not have a meet. If possible, find two elements that do not have a join (in that preorder)
+
+A tree , i.e. a system of nodes and branches, all of which emanate from a single node called the root , is a partial order, but generally not a linear order. A tree (T,≤) can either be oriented toward the root (so the root is the largest element) or away from the root (so the root is the smallest element); let's only consider the latter
+
+Below is a tree, pictured as a graph. The root is labeled e
+
+An order (S,≤), be it a preorder, a partial order, or a linear order, involves a set and a binary relations. For two orders to be comparable, their sets and their relations should be appropriately comparable
+
+It's often said that ``a team is only as strong as its weakest member". Is this true for materials? The hypothesis that a material is only as strong as its weakest constituent can be understood as follows
+
+Recall from the introduction to this section (see , page ) that we can put several different orders on the set M of materials. One example there was the order given by constituency (m≤_C m' if m is an ingredient or constituent of m'). Another order is given by strength: m≤_S m' if m' is stronger than m (in some fixed setting)
+
+Let S be a set. The smallest preorder structure that can be put on S is to say a≤ b iff a = b. This is indeed reflexive and transitive, and it is called the discrete preorder on S
+
+The largest preorder structure that can be put on S is to say a≤ b for all a,b∈ S. This again is reflexive and transitive, and it is called the indiscrete preorder on S
+
+Exercise. Let S be a set and let (T,≤_T) be a preorder. Let ≤_D be the discrete preorder on S. Given a morphism of preorders (S,≤_D)→ (T,≤_T) we get a function S→ T. Which functions S→ T arise in this way? Given a morphism of preorders (T,≤_T)→(S,≤_D), we get a function T→ S. In terms of ≤_T, which functions T→ S arise in this way?
+
+Exercise. Let S be a set and let (T,≤_T) be a preorder. Let ≤_I be the indiscrete preorder on S. Given a morphism of preorders (S,≤_I)→ (T,≤_T) we get a function S→ T. In terms of ≤_T, which functions S→ T arise in this way? Given a morphism of preorders (T,≤_T)→(S,≤_I), we get a function T→ S. In terms of ≤_T, which functions T→ S arise in this way?
+
+Biological classification
+
+Exercise. Since the phylogenetic tree is a tree, it has all meets. Determine the meet of dogs and humans. If we did not require the phylogenetic partial order to be a tree, what would it mean if two taxa (nodes in the phylogenetic partial order), say a and b, had join c with c≠ a and c≠ b?
+
+Exercise. In your favorite scientific realm, are there any interesting classification systems that are actually orders? Choose one; what would meets and joins mean in that setting?
+
+Security, say of sensitive information, is based on two things: a security clearance and ``need to know." The former, security clearance might have levels like ``confidential", ``secret", ``top secret". But maybe we can throw in ``president" and some others too, like ``plebe"
+
+Exercise. Does it appear that security clearance is a preorder, a partial order, or a linear order?
+
+Need-to-know is another classification of people. For each bit of information, we do not necessarily want everyone to know about it, even everyone of the specified clearance. It is only disseminated to those that need to know
+
+Spaces, e.g. geography
+
+Exercise. Let S be the set of open subsets on earth, as defined in the above paragraph. If ≤ is the subset relation, is (S,≤) a preorder or a partial order? Does it have meets, does it have joins?
+
+Exercise. Can you think of a space relevant to your favorite area of science for which it makes sense to assign an interval of real numbers to each open set somehow, analogously to Exercise ? For example for a sample of some material under stress, perhaps the strain on each open set is somehow an interval? Repeat the questions from Exercise
+
+Databases: schemas and instances
+
+The first three sections of this chapter were about classical objects from mathematics. The present section is about databases, which are classical objects from computer science. These are truly ``categories and functors, without admitting it" (see Theorem )
+
+Data, in particular the set of observations made during experiment, plays The word data is generally considered to be the plural form of the word datum. However, individual datum elements are only useful when they are organized into structures (e.g. if one were to shuffle the cells in a spreadsheet, most would consider the data to be destroyed). It is the whole organized structure that really houses the information; the data must be in formation in order to be useful. Thus I will use the word data as a collective noun (akin to the word ``sand"); it bridges the divide between the individual datum elements (akin to the grains of sand) and the data set (akin to a sand pile). In particular, I will often use the word data as a singular noun. a primary role in science of any kind. To be useful data must be organized, often in a row-and-column display called a table. Columns existing in different tables can refer to the same data
+
+A database is a collection of tables, each table T of which consists of a set of columns and a set of rows. We roughly explain the role of tables, columns, and rows as follows. The existence of table T suggests the existence of a fixed methodology for observing objects or events of a certain type. Each column c in T prescribes a single kind or method of observation, so that the datum inhabiting any cell in column c refers to an observation of that kind. Each row r in T has a fixed sourcing event or object, which can be observed using the methods prescribed by the columns. The cell (r,c) refers to the observation of kind c made on event r. All of the rows in T should refer to uniquely identifiable objects or events of a single type, and the name of the table T should refer to that type
+
+When graphene is strained (lengthened by a factor of x≥ 1), it becomes stressed (carries a force in the direction of the lengthening). The following is a made-up set of data
+
+In the first table, titled ``Graphene sample", the rows refer to graphene samples, and the table is so named. Each graphene sample can be observed according to the source supplier from which it came, the strain that it was subjected to, and the stress that it carried. These observations are the columns. In the second table, the rows refer to suppliers of various things, and the table is so named. Each supplier can be observed according to its full name and its phone number; these are the columns
+
+In the left-hand table it appears either that each graphene sample was used only once, or that the person recording the data did not keep track of which samples were reused. If such details become important later, the lab may want to change the layout of the first table by adding on the appropriate column. This can be accomplished using morphisms of schemas, which will be discussed in Section
+
+Primary keys, foreign keys, and data columns
+
+There is a bit more structure in the above tables (Example ) then may first meet the eye. Each table has a primary ID column , found on the left, as well as some data columns and some foreign key columns . The primary key column is tasked with uniquely identifying different rows. Each data column houses elementary data of a certain sort. Perhaps most interesting from a structural point of view are the foreign key columns, because they link one table to another, creating a connection pattern between tables. Each foreign key column houses data that needs to be further unpacked. It thus refers us to another foreign table, in particular the primary ID column of that table. In Example the Source column was a foreign key to the Supplier table
+
+Here is another example, lifted from
+
+Consider the bookkeeping necessary to run a department store. We keep track of a set of employees and a set of departments. For each employee e, we keep track of [ E.1\;] the first name of e, which is a FirstNameString , the last name of e, which is a LastNameString , the manager of e, which is an Employee , and the department that e works in , which is a Department . For each department d, we keep track of [ D.1\;] the name of d, which is a DepartmentNameString , and the secretary of d, which is an Employee
+
+Above we can suppose that E.1, E.2, and D.1 are data columns (referring to names of various sorts), and E.3, E.4, and D.2 are foreign key columns (referring to managers, secretaries, etc.)
+
+Display ( ) shows how such a database might look at a particular moment in time
+
+Looking at the tables from Example , one may notice a few patterns. First, every employee works in the same department as his or manager. Second, every department's secretary works in that department. Perhaps the business counts on these rules for the way it structures itself. In that case the database should enforce those rules, i.e. it should check that whenever the data is updated, it conforms to the rules
+
+[ Rule 1\;] For every employee e, the manager of e works in the same department that e works in . For every department d, the secretary of d works in department d
+
+Together, the statements E.1, E.2, E.3, E.4, D.1, and D.2 from Example and Rule 1 and Rule 2, constitute what we will call the schema of the database. We will formalize this idea in Section
+
+Data columns as foreign keys
+
+To make everything consistent, we could even say that data columns are specific kinds of foreign keys. That is, each data column constitutes a foreign key to some non-branching leaf table , which has no additional data
+
+Consider again Example . Note that first names and last names had a particular type, which we all but ignored above. We could cease to ignore them by adding three tables, as follows
+
+In combination, Displays ( ) and ( ) form a collection of tables with the property that every column is either a primary key or a foreign key. The notion of data column is now subsumed under the notion of foreign key column. Everything is either a primary key (one per table, labeled ID) or a foreign key column (everything else)
+
+The above section may all seem intuitive or reasonable in some ways, but also a bit difficult to fully grasp, perhaps. It would be nice to summarize what is happening in a picture. Such a picture, which will basically be a graph, should capture the conceptual layout to which the data conforms, without yet being concerned with the individual data that may populate the tables in this instant. We proceed at first by example, giving the precise definition in Definition
+
+In Examples and , the conceptual layout for a department store was given, and some example tables were shown. We were instructed to keep track of employees, departments, and six types of data (E.1, E.2, E.3, E.4, D.1, and D.2), and we were instructed to follow two rules (Rule 1, Rule 2). All of this is summarized in the following picture
+
+The five tables from ( ) and ( ) are seen as five vertices; this is also the number of primary ID columns. The six foreign key columns from ( ) and ( ) are seen as six arrows; each points from a table to a foreign table. The two rules from ( ) are seen as statements at the top of Display ( ).We will explain path equivalences in Definition
+
+Exercise. Come up with a schema (consisting of dots and arrows) describing the conceptual layout of information presented in Example
+
+In order to define schemas, we must first define the notion of schematic equivalence relation, which is to hold on the set of paths of a graph G (see Section ). Such an equivalence relation (in addition to being reflexive, symmetric, and transitive) has two sorts of additional properties: equivalent paths must have the same source and target, and the composition of equivalent paths with other equivalent paths must yield equivalent paths. Formally we have Definition
+
+Any set of path equivalence declarations (PEDs) generates a congruence. We tend to elide the difference between a congruence and the set of PEDs that generates it
+
+The picture drawn in ( ) has the makings of a schema. Pictured is a graph with two PEDs; these generate a congruence, as discussed in Exercise
+
+A schema can be converted into a system of tables each with a primary key and some number of foreign keys referring to other tables, as discussed in Section . Definition gives a precise conceptual understanding of what a schema is, and the following rules describe how to convert such a thing into a table layout
+
+Example. [Discrete dynamical system]
+
+Imagine a quantum-time universe in which there are discrete time steps. We model it as a discrete dynamical system, i.e. a table of the form ( ). For every possible state of the universe we include a row in the table. The state in the next instant is recorded in the second column
+
+Example. [Finite hierarchy]
+
+Exercise. Let P be a chess-playing program. Given any position (including the history of the game and choice of whose turn it is), P will make a move. Is this an example of a discrete dynamical system? How do the rules for ending the game in a win or draw play out in this model? (Look up online how chess games end if you don't know.)
+
+It should be clear that a database schema is nothing but an olog in disguise. The difference is basically the readability requirements for ologs. There is an important new addition in this section, namely that we can fill out an olog with data. Conversely, we have seen that databases are not any harder to understand than ologs are
+
+We can document some instances of this relationship using the following tables
+
+Clearly, this table of instances can be updated as more moons are discovered by the author (be it by telescope, conversation, or research)
+
+Exercise. In fact, Example did not follow Rules . Strictly following those rules, copy over the data from ( ) into tables that are in accordance with schema ( )
+
+Exercise. Write down a schema, in terms of the boxes and and one additional arrow, that might help one remember where they decided to put ``random" things. What is a good label for the arrow? Fill in some rows of the corresponding set of tables for your own case
+
+Given a database schema (G,≃), an instance of it is just a bunch of tables whose data conform to the specified layout. These can be seen throughout the previous section, most explicitly in the relationship between schema ( ) and tables ( ) and ( ), and between schema ( ) and table ( ). Below is the mathematical definition
+
+Example. [Monoid action table]
+
+Exercise. Draw (as a graph) the schema for which Table is an instance
+
+Paths through a database
+
+Basic category theory
+
+`` ...We know only a very few---and, therefore, very precious---schemes whose unifying powers cross many realms. " -- Marvin Minsky
+
+Categories, or an equivalent notion, have already been secretly introduced as ologs. One can think of a category as a graph (as in Section ) in which certain paths have been declared equivalent. (Ologs demand an extra requirement that everything in sight be readable in natural language, and this cannot be part of the mathematical definition of category.) The formal definition of category is given in Definition , but it will not be obviously the same as the ``graph+path equivalences" notion; the latter was given in Definition as the definition of a schema . Once we talk about how different categories can be compared using functors (Definition ), and how different schemas can be compared using schema mappings (Definition ), we will prove that the two notions are equivalent (Theorem )
+
+Categories and Functors
+
+In this section we give the standard definition of categories and functors. These, together with natural transformations (Section ), form the backbone of category theory. We also give some examples
+
+In everyday speech we think of a category as a kind of thing. A category consists of a collection of things, all of which are related in some way. In mathematics, a category can also be construed as a collection of things and a type of relationship between pairs of such things. For this kind of thing-relationship duo to count as a category, we need to check two rules, which have the following flavor: every thing must be related to itself by simply being itself, and if one thing is related to another and the second is related to a third, then the first is related to the third. In a category, the ``things" are called objects and the ``relationships" are called morphisms
+
+In various places throughout this book so far we have discussed things of various sorts, e.g. sets, monoids, graphs. In each case we discussed how such things should be appropriately compared . In each case the ``things" will stand as the objects and the ``appropriate comparisons" will stand as the morphisms in the category. Here is the definition
+
+Example. [Non-category 1]
+
+So what's not a category? Two things can go wrong: either one fails to specify all the relevant constituents (A, B, C, D from Definition , or the constituents do not obey the laws (1, 2)
+
+Example. [Non-category 2]
+
+Example. [The category of preorders with joins]
+
+One option would be to put in no morphisms (other than identities), and to just consider this collection of objects as having no structure other than a set
+
+We defined graphs in Definition and graph homomorphisms in Definition . To see that these are sufficient to form a category is considered routine to a seasoned category-theorist, so let's see why
+
+the left-hand square commutes because f is a graph homomorphism and the right-hand square commutes because g is a graph homomorphism. Thus the whole rectangle commutes, meaning that g∘ f is a graph homomorphism, as desired
+
+When one is struggling to understand basic definitions, notation, and style, a phase which naturally occurs when learning new mathematics (or any new language), the above example will probably appear long and tiring. I'd say you've mastered the basics when the above example really does feel straightforward. Around this time, I imagine you'll begin to get a sense of the remarkable organisational potential of the categorical way of thinking
+
+In any category we have a notion of isomorphism between objects
+
+The proof of Lemma can be mimicked in this more general setting
+
+Another viewpoint on categories
+
+Here is an alternate definition of category, using the work we did in Chapter
+
+Suppose we begin our definition of category as follows
+
+Example. [Partial olog for a category]
+
+Below is an olog that captures some of the essential structures of a category
+
+Perhaps it is already clear that category theory is very interconnected. It may feel like everything relates to everything, and this feeling may intensify as you go on. However, the relationships between different notions are rigorously defined, and not random. Moreover, almost everything presented in this book can be formalized in a proof system like Coq (the most obvious exceptions being things like the readability requirement of ologs and the modeling of scientific applications)
+
+Whenever you feel cognitive vertigo, look to formal definitions as the ground of your understanding. It is good practice to make sure that the intuition you've developed actually ``touches down" on that ground, i.e. that your way of thinking can be built up solidly from the foundational definitions
+
+Example. [Monoids have underlying sets]
+
+Example. [Groups have underlying monoids]
+
+Out of all our available actions, some are reversable
+
+Suppose you're a scientist working with symmetries. But then suppose that the symmetry breaks somewhere, or you add some extra observable which is not reversible under the symmetry. You want to seamlessly relax the requirement that every action be reversible without changing anything else. You want to know where you can go, or what's allowed. The answer is to simply pass from the category of groups (or group actions) to the category of monoids (or monoid actions)
+
+The upshot is that we can use functors to compare groups and monoids
+
+Proposition. [Preorders to graphs]
+
+In the course announcement for 18-S996, I wrote the following: It is often useful to focus ones study by viewing an individual thing, or a group of things, as though it exists in isolation. However, the ability to rigorously change our point of view, seeing our object of study in a different context, often yields unexpected insights. Moreover this ability to change perspective is indispensable for effectively communicating with and learning from others. It is the relationships between things, rather than the things in and by themselves, that are responsible for generating the rich variety of phenomena we observe in the physical, informational, and mathematical worlds. This holds at many different levels. For example, one can study a group (in the sense of Definition ) in isolation, trying to understand its subgroups or its automorphisms, and this is mathematically interesting. But one can also view it as a quotient of something else, or as a subgroup of something else. One can view the group as a monoid and look at monoid homomorphisms to or from it. One can look at the group in the context of symmetries by seeing how it acts on sets. These changes of viewpoint are all clearly and formally expressible within category theory. We know how the different changes of viewpoint compose and how they fit together in a larger context
+
+Exercise. Is the above quote also true in your scientific discipline of expertise? How so? Can you imagine a way that category theory can help catalogue the kinds of relationships or changes of viewpoint that exist in your discipline? What kinds of structures that you use often really deserve to be better formalized? Keep this kind of question in mind for your final project
+
+Example. [Free monoids]
+
+Where does the (unlabeled) left-hand function in the bottom right diagram come from? Hint: use Exercise
+
+Example. [Paths-graph]
+
+Suppose you want to decide whether two graphs G and G' are isomorphic. Supposing that the graphs have thousands of vertices and thousands of arrows, this could take a long time. However, the functors above, in combination with Exercise give us some things to try
+
+All this is a bit like trying to decide if a number is prime by checking if it's even, if its digits add up to a multiple of 3, or it ends in a 5; these tests do not determine the answer, but they offer some level of discernment
+
+The category of categories
+
+Example. [Categories have underlying graphs]
+
+Example. [Free category on a graph]
+
+Exercise. Let G be the graph whose vertices are all cities in the US and whose arrows are airplane flights connecting cities. What idea is captured by the free category on G?
+
+Example. [Discrete graphs, discrete categories]
+
+Categories and functors commonly arising in mathematics
+
+Monoids, groups, preorders, and graphs
+
+Monoids as categories
+
+In Example we said that to olog a monoid, we should use only one box. And again in Example we said that a monoid action could be captured by only one table. These ideas emanated from the understanding that a monoid is perfectly modeled as a category with one object
+
+We formalize this as the following theorem
+
+This is basically the content of the preceding paragraphs. The functor i sends a monoid to the corresponding category with one object and i sends a monoid homomorphism to the corresponding functor; it is not hard to check that i preserves identities and compositions
+
+Theorem situates the theory of monoids very nicely within the world of categories. But we have other ways of thinking about monoids, namely their actions on sets. As such it would greatly strengthen the story if we could subsume monoid actions within category theory also, and we can
+
+For the curious, we proceed to sketch a proof of this fact; everyone else can skip to Exercise . To begin we need a lemma
+
+Groups as categories
+
+Monoid and group stationed at each object in a category
+
+Example. [Endomorphism monoid]
+
+Example. [Automorphism group]
+
+Preorders as categories
+
+Exercise. Every linear order is a partial order with a special property. Can you phrase this property in terms of hom-sets?
+
+A preorder is a category in which every hom-set has either 0 elements or 1 element. A preorder morphism is just a functor between such categories
+
+It is customary to draw the connections in a symmetric graph as line segments rather than arrows between vertices. However, a better heuristic is to think that each connection between vertices consists of two arrows, one pointing in each direction
+
+In a symmetric graph, every arrow has an equal and opposite arrow
+
+Database schemas present categories
+
+The difference between schemas and categories is like the difference between monoid presentations, given by generators and relations as in Definition , and the monoids themselves. The same monoid has (infinitely) many different presentations, and so it is for categories: many different schemas can present the same category. Computer scientists may think of the schema as syntax and the category it presents as the corresponding semantics . A schema is a compact form, and can be specified in finite space and time while generating something infinite
+
+A database schema is a category presentation
+
+Category theory was invented for use in algebraic topology, and in particular to discuss natural transformations between certain functors. We will get to natural transformations more formally in Section . For now, they are ways of relating functors. In the original use, Eilenberg and Mac Lane were interested in functors that connect topological spaces (shapes like spheres, etc.) to algebraic systems (groups, etc.)
+
+Example. [Continuous dynamical systems]
+
+Groupoids are like groups except a groupoid can have more than one object
+
+Alan Weinstein explains groupoids in terms of tiling patterns on a bathroom floor, see
+
+Paths in X can be composed, one after the other, and the composition is associative (up to homotopy). Moreover, for any point x∈ X there is a trivial path (that stays at x). Finally every path is invertible (by traversing it backwards) up to homotopy
+
+Logic, set theory, and computer science
+
+The category of propositions
+
+Example. We can repeat this idea for non-mathematical statements. Take all possible statements that are verifiable by experiment as objects of a category. Given two such statements, it may be that one implies the other (e.g. ``if the speed of light is fixed then there are relativistic effects"). Every statement implies itself (identity) and implication is transitive, so we have a category
+
+Categories in computer science
+
+Computer science makes heavy use of trees, graphs, orders, lists, and monoids. We have seen that all of these are naturally viewed in the context of category theory, though it seems that such facts are rarely mentioned explicitly in computer science textbooks. However, categories are also used explicitly in the theory of programming languages (PL). Researchers in that field attempt to understand the connection between what programs are supposed to do (their denotation) and what they actually cause to occur (their operation). Category theory provides a useful mathematical formalism in which to study this
+
+But category theory did not only offer a language for thinking about programs, it offered an unexpected tool called monads. The above CCC model for types allows researchers only to discuss functions, leading to the notion of functional programming languages; however, not all things that a computer does are functions. For example, reading input and output, changing internal state, etc. are operations that can be performed that ruin the functional-ness of programs. Monads were found in 19?? by Moggi to provide a powerful abstraction that opens the doors to such non-functional operations without forcing the developer to leave the category-theoretic garden of eden. We will discuss monads in Section
+
+We have also seen in Section that databases are well captured by the language of categories. We will formalize this in Section . Throughout the remainder of this book we will continue to use databases to bring clarity to concepts within standard category theory
+
+Categories applied in science
+
+Categories are being used throughout mathematics to relate various subjects, as well as to draw out the essential structures within these subjects. For example, there is an active research for ``categorifying" classical theories like that of knots, links, and braids . It is similarly applied in science, to clarify complex subjects. Here are some very brief descriptions of scientific disciplines to which category theory is applied
+
+Information theory is the study of how to ideally compress messages so that they can be sent quickly and accurately across a noisy channel. Despite what was said above, Information theory has been extremely important in a diverse array of fields, including computer science , but also in neuroscience , and physics . I'm not trying to denigrate the field; I am only frustrated with its name. Invented in 1948 by Claude Shannon, its main quantity of interest is the number of bits necessary to encode a piece of information. For example, the amount of information in an English sentence can be greatly reduced. The fact that t 's are often followed by h 's, or that e 's are much more common than z 's, implies that letters are not being used as efficiently as possible. The amount of bits necessary to encode a message is called its entropy and has been linked to the commonly used notion of the same name in physics
+
+Robert Rosen proposed in the 1970s that category theory could play a major role in biology. That story is only now starting to be fleshed out. There is a categorical account of evolution and memory, called Memory Evolutive Systems . There is also a paper by Brown and Porter with applications to neuroscience
+
+Natural transformations
+
+In this section we conclude our discussion of the Big 3 , by defining natural transformations. Category theory was originally invented to discuss natural transformations. These were sufficiently conceptually challenging that they required formalization and thus the invention of category theory. If we think of categories as domains (of discourse, interaction, comparability, etc.) and of functors as transformations between different domains, the natural transformations compare different transformations
+
+Natural transformations can seem a bit abstruse at first, but hopefully some examples and exercises will help
+
+Definition and examples
+
+Exercise. With notation as in Example , how many natural transformations are there (0,0)→ (1,1)? how many natural transformations are there (0,0)→ (0,0)? how many natural transformations are there (0,1)→ (0,0)? how many natural transformations are there (0,1)→ (1,1)?
+
+Let's call the original state machine X and the new model Y
+
+The action tables for these two machines are
+
+How are these models compatible? Looking at the table for Y, if one removes the distinction between States 1A, 1B, 1C and between States 2A and 2B, then one returns with the table for X. The table for Y is more specific, but it is fully compatible with table X. The sense in which it is compatible is precisely the sense defined by there being a natural transformation
+
+This can only be checked by going through and making sure certain things match, as specified by ( ); we spell it out in gory detail. The columns that should match are those whose entries are written in blue
+
+To recap, the notion of compatibility between Y and X is one that can be checked and agreed upon by humans, but doing so it is left implicit, and it may be difficult to explain to an outsider what exactly was agreed to, especially in more complex situations. It is quite convenient to simply claim ``there is a natural transformation from Y to X."
+
+Example. [Graph homomorphisms are natural transformations]
+
+Vertical and horizontal composition
+
+In this section we discuss two types of compositions for natural transformations. The terms vertical and horizontal are used to describe them; these terms come from the following pictures
+
+Vertical composition of natural transformations
+
+The following proposition proves that functors and natural transformations (using vertical composition) form a category
+
+Natural isomorphisms
+
+Horizontal composition of natural transformations
+
+Example. [Whiskering]
+
+The map α is what sent both State 1A and State 1B in Y to State 1 in X, and so on. We can see that ``the same α works now:" the p column of the table respects that mapping. But α was a natural transformation Y→ X where as we need a natural transformation Y∘ F→ X∘ F. This is called whiskering . It is a kind of horizontal composition of natural transformation
+
+Definition. [Whiskering]
+
+The rest of this section can safely be skipped; I include it only for my own sense of completeness
+
+Definition. [Horizontal composition of natural transformations]
+
+This is being mentioned only as a curiosity and a way for the reader to draw connections, not with any additional purpose at this time
+
+The category of instances on a database schema
+
+In Section we showed that schemas are presentations of categories, and we will show in Section that in fact the category of schemas is equivalent to the category of categories. In this section we therefore take license to blur the distinction between schemas and categories
+
+There are 343 natural transformations I→ J. Perhaps some of them make more sense than others; e.g. we could hope that the numbers in I corresponded to the numbers after the dash in J, or perhaps to what seems to be the date in January. But it could be that the rows in J correspond to batches, and all three grapes in I are part of the first batch on Jan-1. The notion of natural transformation is a mathematical one
+
+However, something is also missing from the natural transformation picture. A very important occurrence in the world of databases is the update. Everyone can understand this: a person makes a change in one of the tables, like changing your address from Cambridge, MA to Hereford, UK. Most such arbitrary changes of database instance are not ``natural", in that the new linking pattern is incompatible with the old
+
+Equivalence of categories
+
+It turns out that categories are often similar enough to be considered equivalent without being isomorphic. For this reason, the notion of isomorphism is considered ``too strong" to be useful for categories. The feeling to a category theorist might be akin to saying that two material samples are the same if there is an atom-by-atom matching, or that two words are the same if they are written in the same font, of the same size, by the same person, in the same state of mind
+
+Regardless, our purpose now is to explain this ``good notion" of sameness for categories, namely equivalences of categories , which appropriately take natural transformations into account. Instead of ``functors going both ways with round trips equal to identity", which is required in order to be an isomorphism of categories, equivalence of categories demands ``functors going both ways with round trips isomorphic to identity"
+
+Definition. [Equivalence of categories]
+
+Definition. [Skeleton]
+
+Definition. [Full and faithful functors]
+
+Perhaps it is intuitively clear that schemas are somehow equivalent to categories, and in this section we make that precise. The basic idea was already laid out in Section
+
+This says that given a function from arrows in G to paths in G', a path in G becomes a path of paths in G', which can be concatenated to a path in G'. This simply and precisely spells out our intuition
+
+Definition. [Schema morphism]
+
+A schema morphism sends vertices to vertices, arrows to paths, and path equivalences to path equivalences
+
+Proving the equivalence
+
+[From schema to category]
+
+[From category to schema]
+
+Proof. [Sketch of proof]
+
+Limits in a preorder are meets, colimits in a preorder are joins. Limits and colimits also exist for database instances and monoid actions, allowing us to discuss for example the product or union of different state machines. Limits and colimits exist for spaces, giving rise to products and unions, as well as quotients
+
+Products and coproducts in a category
+
+The product of two sets is a grid, which projects down onto each of the two sets. This is good intuition for products in general
+
+Here's a concrete example. Let I and J be as drawn below
+
+In every case above, what's most important to recognize is that there are projection maps I× J→ I and I× J→ J, and that the construction of I× J seems as straightforward as possible, subject to having these projections. It is time to give the definition
+
+Definition endows the product of two objects with something known as a universal property . It says that a product of two objects X and Y maps to those two objects, and serves as a gateway for all who do the same. ``None shall map to X and Y except through me!" This grandiose property is held by products in all the various categories we have discussed so far. It is what I meant when I said things like ``X× Y maps to both X and Y and does so as straightforwardly as possible". The grid of dots obtained as the product of two sets has such a property, as was shown in Example
+
+The coproduct of two sets is their disjoint union, which includes non-overlapping copies of each of the two sets. This is good intuition for coproducts in general
+
+Here's a real example. Let I and J be as in Example , drawn below
+
+Diagrams in a category
+
+We have been drawing diagrams since the beginning of the book. What is it that we have been drawing pictures of ? The answer is that we have been drawing functors
+
+The fact that d is a functor means it must respect composition formulas, which implies that Diagram ( ) commutes. Recall from Section that not all diagrams one can draw will commute; one must specify that a given diagram commutes if he or she wishes to communicate this fact. But then how is a non-commuting diagram to be understood as a functor?
+
+Exercise. Consider 2, the linear order category of length 2. Is 2 the appropriate indexing category for commutative triangles? If not, what is?
+
+There is an obvious inclusion of categories
+
+Limits and colimits in a category
+
+An object in a category is called universal if it is either initial or terminal, but we rarely use that term in practice, preferring to be specific about whether the object is initial or terminal. The word final is synonymous with the word terminal, but we'll try to constantly use terminal
+
+Colimits will end up being defined as initial things of a certain sort, and limits will end up being defined as terminal things of a certain sort. But we will get to that in Section
+
+a warning!misuse of the
+
+The proof for terminal objects is appropriately ``dual"
+
+It may be strange to have a category in which the objects are spans in another category. But once you admit this possibility, the notion of morphism between spans is totally sensible. Or if it isn't, then stare at ( ) for 30 seconds and say to yourself ``When in Rome..!" These are the aqueducts of category theory, and they work wonders
+
+Definition of colimit
+
+The definition of colimits is appropriately ``dual" to the definition of limits. Instead of looking at left cones, we look at right cones; instead of being interested in terminal objects, we are interested in initial objects
+
+Example. [Cone as colimit]
+
+In this section we discuss some leftover notions about categories. For example in Section we explain a kind of duality for categories, in which arrows are flipped. For example reversing the order in a preorder is an example of this duality, as is the similarity between limits and colimits. In Section we discuss the so-called Grothendieck construction which in some sense graphs functors, and we show that it is useful for transforming databases into the kind of format (RDF) used in scraping data off webpages. We define a general construction for creating categories in Section . Finally, in Section we show that precisely the same arithmetic statements that held for sets in Section hold for categories
+
+As important and common as contravariance is, people found that keeping track of which functors were covariant and which were contravariant was a big hassle. Luckily, there is a simple work-around, which simplifies everything: the notion of opposite categories
+
+This follows straightforwardly from the definitions
+
+Example. [Simplicial sets]
+
+This may seem very complicated compared to something we did earlier, namely simplicial complexes. But simplicial sets have excellent formal properties that simplicial complexes do not. We will not go further with this here, but through the work of Dan Kan, Andr\' e Joyal, Jacob Lurie, and many others, simplicial sets have allowed category theory to pierce deeply into the realm of topology and vice versa
+
+Grothendieck construction
+
+For example, one might see something like
+
+Then the category of elements of S would look like the (discrete) category at the top
+
+We also see that the category of elements construction has converted an A-indexed set into a relative set over A, as in Definition
+
+The above example does not show at all how the Grothendieck construction transforms a database instance into an RDF triple store. The reason is that our database schema was A, a discrete category that specifies no connections between data (it simply collects the data into bins). So lets examine a more interesting database schema and instance. This is taken from
+
+Consider the schema below, which we first encountered in Example
+
+Exercise. Come up with a schema and instance whose category of elements contains (at least) the data from ( )
+
+The Grothendieck construction takes structured, boxed-up data and flattens it by throwing it all into one big space. The projection functor is then tasked with remembering which box each datum originally came from
+
+Category theory includes a highly developed and interoperable catalogue of materials and production techniques. One such is the comma category
+
+Arithmetic of categories
+
+In Section , we summarized some of the properties of products, coproducts, and exponentials for sets, attempting to show that they lined up precisely with familiar arithmetic properties of natural numbers. Astoundingly, we can do the same for categories
+
+These are standard results; see
+
+We have now set up an understanding of the basic notions of category theory: categories, functors, natural transformations, and universal properties. We have discussed many sources of examples: orders, graphs, monoids, and databases. We begin this chapter with the notion of adjoint functors (also known as adjunctions ), which are like dictionaries that translate back and forth between different categories
+
+Just above, in the introduction to this chapter, I said that adjoint functors are like dictionaries that translate back and forth between different categories. How far can we take that analogy?
+
+In the common understanding of dictionaries, we assume that the two languages (say French and English) are equally expressive, and that a good dictionary will be an even exchange of ideas. But in category theory we often have two categories that are not on the same conceptual level. This is most clear in the case of so-called free-forgetful adjunctions . In Section we will explore the sense in which each adjunction provides a dictionary between two categories that are not necessarily on an equal footing, so to speak
+
+Discussion and definition
+
+Let's bring it down to earth with an analogy. A one-year-old can make repeatable noises and an adult can make repeatable noises. One might say ``after all, talking is nothing but making repeatable noises." But the adult's repeatable noises are called words, they form sentences, and these sentences can cause nuclear wars. There is something more in adult language than there is simply in repeatable sounds. In the same vein, a tennis match can be viewed as physics, but you won't see the match. So we have something analogous to two categories here: ((repeated noises)) and ((meaningful words)). We are looking for adjoint functors going back and forth, serving as the appropriate sort of dictionary
+
+To translate baby talk into adult language we would make every repeated noise a kind of word, thereby granting it meaning. We don't know what a given repeated noise should mean, but we give it a slot in our conceptual space, always pondering ``I wonder what she means by Konnen.." On the other hand, to translate from meaningful words to repeatable noises is easy. We just hear the word as a repeated noise, which is how the baby probably hears it
+
+Adjoint functors often come in the form of ``free" and ``forgetful". Here we freely add Konnen to our conceptual space without having any idea how it adheres to the rest of the child's noises or feelings. But it doesn't act like a sound to us, it acts like a word; we don't know what it means but we figure it means something. Conversely, the translation going the other way is ``forgetful", forgetting the meaning of our words and just hearing them as sounds. The baby hears our words and accepts them as mere sounds, not knowing that there is anything extra to get
+
+Back to sets and monoids, the sets are like the babies from our story: they are simple objects full of unconnected dots. The monoids are like adults, forming words and performing actions. In the monoid, each element means something and combines with other elements in some way. There are lots of different sets and lots of different monoids, just as there are many babies and many adults, but there are patterns to the behavior of each kind and we put them in different categories
+
+The analogy is complete. However, this is all just ideas. Let's give a definition, then return to our sets, monoids, sounds, and words
+
+Again, the above is simply an analogy, and almost certainly not formalizable. The next example shows mathematically the point we tried to make in the previous paragraph, that the directionality of an adjunction is not arbitrary
+
+Here are some other adjunctions
+
+The following proposition says that all adjoints to a given functor are isomorphic to each other
+
+Quantifiers as adjoints
+
+Universal concepts in terms of adjoints
+
+We will work with a generalization of colimits and limits in Section . But for now, let's bring this down to earth with a concrete example
+
+It is not hard to show that the composition of left adjoints is a left adjoint, and the composition of right adjoints is a right adjoint. In the following example we show how currying (as in Sections and ) arises out of a certain combination of data migration functors
+
+Preservation of colimits or limits
+
+One useful fact about adjunctions is that left adjoints preserve all colimits and right adjoints preserve all limits
+
+The proof is simple if one knows the Yoneda lemma (Section ). I have decided to skip it to keep the book shorter. See
+
+If I get my information from you, then your information becomes my information
+
+Write out the two tables associated to the[1]-instance _F(I) $
+
+Left pushforwards (also known as left Kan extensions) are discussed at length in ; here we begin with some examples from that paper
+
+As you can see, there was no set salary information for any data coming from table T1 nor any set SSN information for any data coming form table T2 . But the definition of adjoint, given in Definition , yielded the universal response: freely add new variables that take the place of missing information. It turns out that this idea already has a name in logic, Skolem variables , and a name in database theory, labeled nulls
+
+Right pushforwards (also known as right Kan extensions) are discussed at length in ; here we begin with some examples from that paper
+
+Looking at T1 and T2 , there were only two ways to match first and last names
+
+Categories of functors
+
+Proof. [Sketch of proof]
+
+The dual proof holds for colimits
+
+Definition. [Monomorphism, Epimorphism]
+
+Proof. [Sketch of proof]
+
+A similar argument works to show the analogous result for epimorphisms
+
+Representable functors
+
+In general, there is a representable functor for every type in an olog. The representable functor for type T simply encapsulates the most generic or abstract example of type T, by leaving a placeholder for each of its attributes
+
+One of the most powerful tools in category theory is Yoneda's lemma. It is often considered by new students to be quite abstract, but grounding it in databases may help
+
+Lemma. [Yoneda's lemma, part 1.]
+
+We saw in Section that a representable functor is a mathematically-generated database instance for an abstract thing of type T. It creates placeholders for every attribute that things of type T are supposed to have
+
+Yoneda's lemma says the following. Specifying an actual thing of type T is the same as filling in all placeholders found in the generic thing of type T
+
+Lemma. [Yoneda's lemma, part 2]
+
+As usual, we consider the matter of subobject classifiers by grounding the discussion in terms of databases
+
+But this is all very abstract. We now give an example of a subobject classifier
+
+Database instances in other categories
+
+Representations of groups
+
+One possibility is if we could somehow draw V, say if V is 1-, 2-, or 3-dimensional. If so, let P be our chosen picture of V, e.g. P is the standard drawing of a Cartesian coordinate plane. Then every column of our table would consist entirely of the picture P instead of a set of rows. Drawing a point in the ID-column picture would result in a point being drawn in each other column's picture, in accordance with the G-action. Each column would of course respect addition and scalar multiplication
+
+A third possibility is to use monads, which allow the table to have only as many rows as V has dimensions. This is a considerable savings of space. See Section
+
+Representations of quivers
+
+Other target categories
+
+A consistent system of translation formulas is called a sheaf . It does not demand a universal ``true" temperature function, but only a consistent translation system between them
+
+Below are three views of the night sky. Given a telescope position to obtain the first view, one moves the telescope right and a little down to obtain the second and one moves it down and left to obtain the third
+
+Exercise. Find an application of sheaves in your own domain of expertise
+
+We can imagine the same type of prediction systems for other domains as well, such as the energy of various parts of a material
+
+Sheaf of ologged concepts
+
+Definition defines what should be called a sheaf of sets. We can discuss sheaves of groups or even sheaves of categories. Here is an application of the latter
+
+Recall the notion of simplicial complexes discussed in Section . They look like this
+
+Whether or not this implementation of the sheaf semantics is most useful in practice is certainly debatable. But something like this could easily be useful as a semantics, i.e. a way of thinking about, the temporal nature of data
+
+Monads would probably not have been invented without category theory, but they have been quite useful in formalizing algebra, calculating invariants of topological spaces, and imbedding non-functional operations into functional programming languages. We will mainly discuss monads in terms of how they can help us make modeling contexts explicit, and in so doing allow us to simplify the language we use in the model
+
+Much of the following material on monads is taken from
+
+Monads formalize context
+
+Here we are drawing arrows as though we are talking about functions, but there is an implicit context in which we are actually talking about partial functions. Monads allow us to write things in the ``functional" way while holding the underlying context. What makes them useful is that the notion of context we are using here is made formal
+
+Example. [Partial functions]
+
+What does this mean? Every element a∈ A is sent by f to either an element b∈ B or ``no answer". If it has an answer f(a)∈ B, this is either sent by g to an element g(f(a))∈ C or to ``no answer". We get a partial function A→ C by sending a to g(f(a)) if possible or to ``no answer" if it gets stopped along the way
+
+However, it may be the case that even ascertaining someones age or income, which is done by asking that person, is subject to who in A is doing the asking, and so we again want to consider the experimenter as part of the equation. In this case, we can use a monad to hide the fact that everything in sight is assumed to be influenced by A. In other words, we want to announce once and for all our modeling context---that every observable is possibly influenced by the observer---so that it can recede into the background
+
+We will return to this in Examples and
+
+Definition and examples
+
+What aspects of Example are really about monads, and what aspects are just about partial functions in particular? It is a functor and a pair of natural transformations that showed up in ( ), ( ), and ( ). In this section we will give the definition and a few examples. We will return to our story about how monads formalize context in Section
+
+Example. [List monad]
+
+Example. [Partial functions as a monad]
+
+Kleisli category of a monad
+
+Note how this monad allows us to make explicit our assumption that all functions are partial, and then hide it away from our notation
+
+One of the most important monads in computer science is the so-called state monad . It is used when one wants to allow a program to mutate state variables (e.g. in the program if x > 4 then x = x + 1 else Print ``done") x is a state variable. The state monad is a special case of the monad discussed in Example . Given any set A, the usual state monad of type A is obtained by giving A the indiscrete preorder (see Example ). More explicitly it is a monad with functor part X↦ (A× X)^X, and it will be briefly discussed in Example
+
+Here we reconsider the image from the front cover of this book, reproduced here
+
+It looks like an olog, and all ologs are database schemas (see Section ). But how is ``analyzed by a person yields" a function from observations to hypotheses? The very name belies the fact that it is an invalid aspect in the sense of Section , because given an observation there may be more than one hypothesis yielded, corresponding to which person is doing the observing. In fact, all of the arrows in this diagram correspond to some hidden context involving people: the prediction is dependent on who analyzes the hypothesis, the specification of an experiment is dependent on who is motivated to specify it, and experiments may result in different observations by different observers
+
+Without monads, the model of science proposed by this olog would be difficult to believe in. But by choosing a monad we can make explicit (and then hide from discourse) our implicit assumption that ``of course this is all dependent on which human is doing the science". The choice of monad is an additional modeling choice. Do we want to incorporate the partial order of time? Do we want the scientist to be modified by each function (i.e. the person is changed when analyzing an observation to yield a hypothesis)? These are all interesting possibilities
+
+Reading the olog in this context might look like this
+
+A hypothesis (in the presence of a scientific model) analyzed by a person produces a prediction (in the presence of a scientific model), which motivates the specification of an experiment (in the presence of a scientific model), which when executed results in an observation (in the presence of a scientific model), which analyzed by a person yields a hypothesis (in the presence of a scientific model)
+
+The parenthetical statements can be removed if we assume them to always be around, which can be done using the monad above
+
+Relaxing functionality constraint for ologs
+
+In Section we said that every arrow in an olog has to be English-readable as a sentence, and it has to correspond to a function. For example, the arrow
+
+comprises an readable sentence, but does not correspond to a function because a person may have no children or more than one child. We'll call olog in which every arrow corresponds to a function (the only option proposed so far in the book) a functional olog . Requiring that ologs be functional as we have been doing, comes with advantages and disadvantages. The main advantage is that creating a functional olog requires more conceptual clarity about the situation, and this has benefits for the olog-creator as well as for anyone to whom he or she tries to explain the situation. The main disadvantage is that creating a functional olog takes more time, and the olog takes up more space on the page
+
+Probability distributions
+
+Monads and adjunctions
+
+Below we will show how to use the unit and counit of any adjunction to make a monad. We first walk through the process in Example

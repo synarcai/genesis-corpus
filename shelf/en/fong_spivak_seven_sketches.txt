@@ -1,0 +1,1537 @@
+Category theory is becoming a central hub for all of pure mathematics. It is unmatched in its ability to organize and layer abstractions, to find commonalities between structures of all sorts, and to facilitate communication between different mathematical communities
+
+But it has also been branching out into science, informatics, and industry. We believe that it has the potential to be a major cohesive force in the world, building rigorous bridges between disparate worlds, both theoretical and practical. The motto at MIT is mens et manus, Latin for mind and hand. We believe that category theory---and pure math in general---has stayed in the realm of mind for too long; it is ripe to be brought to hand
+
+Purpose and audience
+
+The purpose of this book is to offer a self-contained tour of applied category theory. It is an invitation to discover advanced topics in category theory through concrete real-world examples. Rather than try to give a comprehensive treatment of these topics---which include adjoint functors, enriched categories, proarrow equipments, toposes, and much more---we merely provide a taste of each. We want to give readers some insight into how it feels to work with these structures as well as some ideas about how they might show up in practice
+
+The audience for this book is quite diverse: anyone who finds the above description intriguing. This could include a motivated high school student who hasn't seen calculus yet but has loved reading a weird book on mathematical logic they found at the library. Or a machine-learning researcher who wants to understand what vector spaces, design theory, and dynamical systems could possibly have in common. Or a pure mathematician who wants to imagine what sorts of applications their work might have. Or a recently-retired programmer who's always had an eerie feeling that category theory is what they've been looking for to tie it all together, but who's found the usual books on the subject impenetrable
+
+For example, we find it something of a travesty that in 2018 there is almost no introductory material available on monoidal categories. Even beautiful modern introductions to category theory, e.g.\ by Riehl or Leinster, do not include anything on this rather central topic. The only exceptions we can think of are and , each of which has a very user-friendly introduction to monoidal categories; however, readers who are not drawn to physics may not think to look there
+
+The basic idea of monoidal categories is certainly not too abstract; modern human intuition seems to include a pre-theoretical understanding of monoidal categories that is just waiting to be formalized. Is there anyone who wouldn't correctly understand the basic idea being communicated in the following diagram? \[
+
+\] Many applied category theory topics seem to take monoidal categories as their jumping-off point. So one aim of this book is to provide a reference---even if unconventional---for this important topic
+
+We hope this book inspires both new visions and new questions. We intend it to be self-contained in the sense that it is approachable with minimal prerequisites, but not in the sense that the complete story is told here. On the contrary, we hope that readers use this as an invitation to further reading, to orient themselves in what is becoming a large literature, and to discover new applications for themselves
+
+This book is, unashamedly, our take on the subject. While the abstract structures we explore are important to any category theorist, the specific topics have simply been chosen to our personal taste. Our examples are ones that we find simple but powerful, concrete but representative, entertaining but in a way that feels important and expansive at the same time. We hope our readers will enjoy themselves and learn a lot in the process
+
+How to read this book
+
+The basic idea of category theory---which threads through every chapter---is that if one pays careful attention to structures and coherence, the resulting systems will be extremely reliable and interoperable. For example, a category involves several structures: a collection of objects, a collection of morphisms relating objects, and a formula for combining any chain of morphisms into a morphism. But these structures need to cohere or work together in a simple commonsense way: a chain of chains is itself a long chain, so combining a chain of chains should be the same as combining the long chain. That's it!
+
+We will see structures and coherence come up in pretty much every definition we give: ``here are some things and here are how they fit together.'' We ask the reader to be on the lookout for structures and coherence as they read the book, and to realize that as we layer abstraction upon abstraction, it is the coherence that makes all the parts work together harmoniously in concert
+
+Each chapter in this book is motivated by a real-world topic, such as electrical circuits, control theory, cascade failures, information integration, and hybrid systems. These motivations lead us into and through various sorts of category-theoretic concepts. We generally have one motivating idea and one category-theoretic purpose per chapter, and this forms the title of the chapter, e.g.\ Chapter 4 is ``Collaborative design: profunctors, categorification, and monoidal categories.''
+
+In many math books, the difficulty is roughly a monotonically-increasing function of the page number. In this book, this occurs in each chapter, but not so much in the book as a whole. The chapters start out fairly easy and progress in difficulty. \[
+
+\] The upshot is that if you find the end of a chapter very difficult, hope is certainly not lost: you can start on the next one and make good progress. This format lends itself to giving you a first taste now, but also leaving open the opportunity for you to come back to the book at a later date and get more deeply into it. But by all means, if you have the gumption to work through each chapter to its end, we very much encourage that!
+
+We include about 240 exercises throughout the text, with solutions in . Usually these exercises are fairly straightforward; the only thing they demand is that the reader changes their mental state from passive to active, rereads the previous paragraphs with intent, and puts the pieces together. A reader becomes a student when they work the exercises; until then they are more of a tourist, riding on a bus and listening off and on to the tour guide. Hey, there's nothing wrong with that, but we do encourage you to get off the bus and make direct contact with the native population and local architecture as often as you can
+
+Thanks to Jared Briskman, James Brock, Ronnie Brown, Thrina Burana, David Chudzicki, Jonathan Castello, Margo Crawford, Fred Eisele, David Ellerman, Cam Fulton, Bruno Gavranovi\'c, Sebastian Galkin, John Garvin, Peter Gates, Juan Manuel Gimeno, Alfredo G\'omez, Leo Gorodinski, Jason Grossman, Jason Hooper, Yuxi Liu, Jes\'us L\'opez, MTM, Nicol\`o Martini, Martin MacKerel, Pete Morcos, Nelson Niu, James Nolan, Dan Oneata, Paolo Perrone, Thomas Read, Rif A. Saurous, Dan Schmidt, Samantha Seaman, Marcello Seri, Robert Smart, Valter Sorana, Adam Theriault-Shay, Emmy Trewartha, Sergey Tselovalnikov, Andrew Turner, Joan Vazquez, Daniel Wang, Jerry Wedekind for helpful comments and conversations
+
+We also thank our sponsors at the AFOSR; this work was supported by grants FA9550--14--1--0031 and FA9550--17--1--0058
+
+Finally, we extend a very special thanks to John Baez for running an online course on this material and generating tons of great feedback
+
+Our motivations to apply category theory outside of math are, perhaps naively, grounded in the hope it can help bring humanity together to solve our big problems. But category theory is a tool for thinking, and like any tool it can be used for purposes we align with and those we don't
+
+In this personal note, we ask that readers try to use what they learn in this book to do something they would call ``good,'' in terms of contributing to the society they'd want to live in. For example, if you're planning to study this material with others, consider specifically inviting someone from an under-represented minority---a group that is more highly represented in society than in upper-level math classes---to your study group. As another example, perhaps you can use the material in this book to design software that helps people relate to and align with each other. What's the mathematics of a well-functioning society?
+
+The way we use our tools affects all our lives. Our society has seen the results---both the wonders and the waste---resulting from rampant selfishness. We would be honored if readers found ways to use category theory as part of an effort to connect people, to create common ground, to explore the cross-cutting categories in which life, society, and environment can be represented, and to end the ignorance entailed by limiting ourselves to a singular ontological perspective on anything
+
+If you do something of the sort, please let us and the community know about it
+
+Brendan Fong and David I.\ Spivak
+
+Cambridge MA, October 2018
+
+In this book, we explore a wide variety of situations---in the world of science, engineering, and commerce---where we see something we might call compositionality. These are cases in which systems or relationships can be combined to form new systems or relationships. In each case we find category-theoretic constructs---developed for their use in pure math---which beautifully describe the compositionality of the situation
+
+This chapter, being the first of the book, must serve this goal in two capacities. First, it must provide motivating examples of compositionality, as well as the relevant categorical formulations. Second, it must provide the mathematical foundation for the rest of the book. Since we are starting with minimal assumptions about the reader's background, we must begin slowly and build up throughout the book. As a result, examples in the early chapters are necessarily simplified. However, we hope the reader will already begin to see the sort of structural approach to modeling that category theory brings to the fore
+
+More than the sum of their parts
+
+We motivate this first chapter by noticing that while many real-world structures are compositional, the results of observing them are often not. The reason is that observation is inherently ``lossy'': in order to extract information from something, one must drop the details. For example, one stores a real number by rounding it to some precision. But if the details are actually relevant in a given system operation, then the observed result of that operation will not be as expected. This is clear in the case of roundoff error, but it also shows up in non-numerical domains: observing a complex system is rarely enough to predict its behavior because the observation is lossy
+
+In category theory we want to keep control over which aspects of our systems are being preserved under various observations. As we said above, the less structure is preserved by our observation of a system, the more ``surprises'' occur when we observe its operations. One might call these surprises generative effects
+
+In using category theory to explore generative effects, we follow the basic ideas from work by Adam . He goes much more deeply into the issue than we can here; see . But as mentioned above, we must also use this chapter to give an order-theoretic warm-up for the full-fledged category theory to come
+
+A first look at generative effects
+
+To explore the notion of a generative effect we need a sort of system, a sort of observation, and a system-level operation that is not preserved by the observation. Let's start with a simple example
+
+\] Connections are symmetric, so if a is connected to b, then b is connected to a. Connections are also transitive, meaning that if a is connected to b, and b is connected to c, then a is connected to c; that is, all a, b, and c are connected. Friendship is not transitive---my friend's friend is not necessarily my friend---but possible communication of a concept or a disease is
+
+Here we depict two more systems, one in which none of the points are connected, and one in which all three points are connected. \[
+
+\] There are five systems in all, and we depict them just below
+
+The last piece of setup is to give a sort of operation that Alice wants to perform on the systems themselves. It's a very common operation---one that will come up many times throughout the book---called join. If the reader has been following the story arc, the expectation here is that Alice's connectivity observation will not be compositional with respect to the operation of system joining; that is, there will be generative effects. Let's see what this means
+
+Exercise. What is the result of joining the following two systems? \[
+
+We see above in that $ ( 2ex
+
+) = : in the joined system, connected to $
+
+To begin, we note that the systems themselves are ordered in a hierarchy. Given systems A and B, we say that A ≤ B if, whenever x is connected to y in A, then x is connected to y in B. For example, \[
+
+\] This notion of ≤ leads to the following diagram
+
+where an arrow from system A to system B means A ≤ B. Such diagrams are known as Hasse diagrams
+
+Review of sets, relations, and functions
+
+Given two sets X and Y, the product X × Y of X and Y is the set of pairs (x,y), where x ∈ X and y ∈ Y
+
+Relationships between different sets---for example between the set of trees in your neighborhood and the set of your favorite fruits---are captured using subsets and product sets
+
+notation!infix|see infix
+
+We can now define partitions more formally
+
+Exercise. Consider the partition shown below: \[
+
+We will see in that there is a strong relationship between partitions and something called equivalence relations, which we define next
+
+Proposition. Let A be a set. There is a one-to-one correspondence between the ways to partition A and the equivalence relations on A
+
+Proof. We first show that every partition gives rise to an equivalence relation, and then that every equivalence relation gives rise to a partition. Our two constructions will be mutually inverse, proving the proposition
+
+The most frequently used sort of relation between sets is that of functions
+
+A function is called surjective , or a surjection, if
+
+for all t∈ T there exists s∈ S with F ( s ) = t. A function is called injective , or an injection, if
+
+for all t∈ T and s_1,s_2∈ S with F ( s_1 ) = t and F ( s_2 ) = t, we have s_1 = s_2. A function is called bijective if it is both surjective and injective
+
+\] For each relation, answer the following two questions. [resume] Is it a function? If not, why not? If so, is it injective, surjective, both (i.e.\ bijective), or neither?
+
+Exercise. Write down a surjection corresponding to each of the five partitions in
+
+In , we several times used the symbol ≤ to denote a sort of order. Here is a formal definition of what it means for a set to have an order
+
+Definition. relation!preorder|see preorder A preorder relation on a set X is a binary relation on X, here denoted with infix notation ≤, such that [label=( )] x ≤ x; and if x ≤ y and y ≤ z, then x ≤ z. The first condition is called reflexivity and the second is called transitivity . If x≤ y and y≤ x, we write x≅ y and say x and y are equivalent. We call a pair (X,≤) consisting of a set equipped with a preorder relation a preorder
+
+Remark. Observe that reflexivity and transitivity are familiar from : preorders are just equivalence relations without the symmetry condition
+
+We depict discrete preorders as simply a collection of points: \[
+
+Example. [Codiscrete preorders] From every set we may also construct its codiscrete preorder (X,≤) by equipping it with the total binary relation X× X ⊆ X × X. This is a very trivial structure: it means that for all x and y in X we have x ≤ y (and hence also y ≤ x)
+
+Remark. [Partial orders are skeletal preorders]
+
+A preorder is a partial order if we additionally have that x ≅ y implies x = y
+
+In category theory terminology, the requirement that x ≅ y implies x = y is known as skeletality, so partial orders are skeletal preorders. For short, we also use the term poset, a contraction of partially ordered set. poset|see partial order partial order|seealso preorder, skeletal
+
+The difference between preorders and partial orders is rather minor. A partial order already is a preorder, and every preorder can be made into a partial order by equating any two elements x,y for which x≅ y, i.e.\ for which x≤ y and y≤ x
+
+For example, any discrete preorder is already a partial order, while any codiscrete preorder simply becomes the unique partial order on a one element set
+
+We have already introduced a few examples of preorders using Hasse diagrams. It will be convenient to continue to do this, so let us be a bit more formal about what we mean. First, we need to define a graph
+
+By a path in G we mean any sequence of arrows such that the target of one arrow is the source of the next. This includes sequences of length 1, which are just arrows a∈ A in G, and sequences of length 0, which just start and end at the same vertex v, without traversing any arrows
+
+There is one path from 2 to 3, namely the arrow e is a path of length 1. There are no paths from 4 to 3, but there is one path from 4 to 4, namely the path of length 0. There are infinitely many paths 1→ 2 because one can loop and loop and loop through d as many times as one pleases
+
+Exercise. Fill in the table from
+
+Exercise. What preorder relation (P,≤) is depicted by the graph G in ? That is, what are the elements of P and write down every pair (p_1,p_2) for which p_1≤ p_2
+
+Exercise. Does a collection of points, like the one in , count as a Hasse diagram?
+
+Remark. In we discussed partial orders---preorders with the property that whenever two elements are equivalent, they are the same---and then said that this property is fairly inconsequential: any preorder can be converted to a partial order that's ``equivalent'' category-theoretically. A partial order is like a preorder with a fancy haircut: some mathematicians might not even notice it
+
+However, there are other types of preorders that are more special and noticeable. For example, a total order has the following additional property: for all x,y, either x≤ y or y≤ x
+
+We say two elements x,y of a preorder are comparable if either x≤ y or y≤ x, so a total order is a preorder where every two elements are comparable
+
+Exercise. Is it correct to say that a discrete preorder is one where no two elements are comparable?
+
+relation!divides|see divides relation
+
+Exercise. Write down the numbers 1,2,…,10 and draw an arrow a→ b if a divides perfectly into b. Is it a total order?
+
+Example. [Partition from preorder]
+
+Given a preorder, i.e.\ a pre-ordered set (P,≤), we defined the notion of equivalence of elements, denoted x≅ y, to mean x≤ y and y≤ x. This is an equivalence relation, so it induces a partition on P. (The phrase ``A induces B'' means that we have an automatic way to turn an A into a B. In this case, we're saying that we have an automatic way to turn equivalence relations into partitions, which we do; see .)
+
+For example, the preorder whose Hasse diagram is drawn on the left corresponds to the partition drawn on the right. \[
+
+Exercise. For any set S there is a coarsest partition, having just one part. What surjective function does it correspond to?
+
+There is also a finest partition, where everything is in its own partition. What surjective function does it correspond to?
+
+Example. [Product preorder] Given preorders (P,≤) and (Q,≤), we may define a preorder structure on the product set P× Q by setting (p,q) ≤ (p',q') if and only if p ≤ p' and q ≤ q'. We call this the product preorder. This is a basic example of a more general construction known as the product of categories
+
+Exercise. Draw the Hasse diagram for the product of the two preorders drawn below: \[ [column sep=0, ampersand replacement=\&] \&\& \& \] For bonus points, compute the upper set preorder on the result
+
+map!order-preserving|see map, monotone
+
+We have said that the categorical perspective emphasizes relationships between things. For example, a preorder is a setting---or world---in which we have one sort of relationship, ≤, and any two objects may be, or may not be, so-related. Jumping up a level, the categorical perspective emphasizes that preorders themselves---each a miniature world composed of many relationships---can be related to one another
+
+The most important sort of relationship between preorders is called a monotone map. These are functions that preserve preorder relations---in some sense mappings that respect ≤---and are hence considered the right notion of structure-preserving map for preorders
+
+A monotone map A→ B between two preorders associates to each element of preorder A an element of the preorder B. We depict this by drawing a dotted arrow from each element x∈ A to its image f(x)∈ B. Note that the order must be preserved in order to count as a valid monotone map, so if element x is above element y in the lefthand preorder A, then the image f(x) will be above the image f(y) in the righthand preorder. \[
+
+Example. [The tree of life] Consider the set of all animal classifications, for example `tiger', `mammal', `sapiens', `carnivore', etc.. These are ordered by specificity: since `tiger' is a type of `mammal', we write tiger ≤ mammal. The result is a preorder, which in fact forms a tree, often called the tree of life. At the top of the following diagram we see a small part of it: \[
+
+\] At the bottom we see the hierarchical structure as a preorder. The dashed arrows show a monotone map, call it F, from the classifications to the hierarchy. It is monotone because it preserves order: whenever there is a path x→ y upstairs, there is a path F(x)→ F(y) downstairs
+
+The following proposition, , is straightforward to check. Recall the definition of the identity function from and the definition of composition from . identity!function|seealso function, identity
+
+Proposition. For any preorder (P,≤_P), the identity function is monotone
+
+Exercise. Check the two claims made in
+
+But in fact, we have seen dagger preorders before in another guise. Indeed, if (P,≤) is a dagger preorder, then the relation ≤ is symmetric: p ≤ q if and only if q ≤ p, and it is also reflexive and transitive by definition of preorder. So in fact ≤ is an equivalence relation ( )
+
+Exercise. Recall the notion of skeletal preorders ( ) and discrete preorders ( ). Show that a skeletal dagger preorder is just a discrete preorder, and hence can be identified with a set
+
+Remark. We say that an A ``can be identified with'' a B when any A gives us a unique B and any B gives us a unique A, and both round-trips---from an A to a B and back to an A, or from a B to an A and back to a B---return us where we started. For example, any discrete preorder (P,≤) has an underlying set P, and any set P can be made into a discrete preorder (p_1≤ p_2 iff p_1 = p_2), and the round-trips return us where we started. So what's the difference? It's like the notion of object-permanence from child development jargon: we can recognize ``the same chair, just moved from one room to another.'' A chair in the room of sets can be moved to a chair in the room of preorders. The lighting is different but the chair is the same
+
+Eventually, we will be able to understand this notion in terms of equivalence of categories, which are related to isomorphisms, which we will explore next in
+
+If there is an isomorphism P→ Q, we say that P and Q are isomorphic
+
+An isomorphism between preorders is basically just a relabeling of the elements
+
+In fact Q and R are the same preorder. One may be confused by the fact that there is an arrow x→ z in the Hasse diagram for R and not one in Q, but in fact this arrow is superfluous. By the transitivity property of preorders ( ), since x≤ y and y≤ z, we must have x≤ z, whether it is drawn or not. Similarly, we could have drawn an arrow v→ y in either Q or R and it would not have changed the preorder
+
+These two constructions are mutually inverse, and hence prove the proposition
+
+As we have said, a preorder is a set P endowed with an order ≤ relating the elements. With respect to this order, certain elements of P may have distinctive characterizations, either absolutely or in relation to other elements. We have discussed joins before, but we discuss them again now that we have built up some formalism
+
+Definition and basic examples
+
+These notions will have correlates in category theory, called limits and colimits, which we will discuss in . More generally, we say these distinctive characterizations are universal properties, since, for example, a greatest lower bound is greatest among all lower bounds. For now, however, we simply want to make the definition of greatest lower bounds and least upper bounds, called meets and joins, precise
+
+This foreshadows a major theme of---as well as standard abuse of notation in---category theory, where any two things defined by the same universal property are automatically equivalent in a way known as `unique up to unique isomorphism' ; this means that we generally do not run into trouble if we pretend they are equal. We'll pick up this theme of `the' vs `a' again in
+
+\] Perhaps this justifies the terminology: the joining of two sets is their union, the meeting of two sets is their intersection
+
+Back to observations and generative effects
+
+This discussion naturally leads into Galois connections, which are pairs of monotone maps between preorders, one of which preserves all joins and the other of which preserves all meets
+
+The preservation of meets and joins, and in particular issues concerning generative effects, is tightly related to the theory of Galois connections, which is a special case of a more general theory we will discuss later, namely that of adjunctions. We will use some adjunction terminology when describing Galois connections
+
+Definition and examples of Galois connections
+
+Galois connections between preorders were first considered by \'Evariste Galois---who didn't call them by that name---in the context of a connection he found between ``field extensions'' and ``automorphism groups.'' We will not discuss this further, but the idea is that given two preorders P and Q, a Galois connection is a pair of maps back and forth---from P to Q and from Q to P---with certain properties, which make it like a relaxed version of isomorphisms. To be a bit more precise, preorder isomorphisms are examples of Galois connections, but Galois connections need not be preorder isomorphisms
+
+We say that f is the left adjoint and g is the right adjoint of the Galois connection
+
+Basic theory of Galois connections
+
+Now suppose that holds for all p∈ P and q∈ Q. We want show that f(p)≤ q iff p≤ g(q). Suppose f(p)≤ q; then since g is monotonic, g(f(p))≤ g(q), but p≤ g(f(p)) so p≤ g(q). The proof that p≤ g(q) implies f(p)≤ q is similar
+
+Exercise. Complete the proof of by showing that if f is left adjoint to g then for any q∈ Q, we have f(g(q))≤ q, and if holds, then holds p≤ g(q) iff f(p)≤ q holds, for all p∈ P and q∈ Q
+
+So take any other lower bound b for g(A); that is suppose that for all a∈ A, we have b≤ g(a) and we want to show b≤ g(m). Then by definition of g being a right adjoint ( ), we also have f(b)≤ a. This means that f(b) is a lower bound for A in Q. Since the meet m is the greatest lower bound, we have f(b)≤ m. Once again using the Galois connection, b≤ g(m), proving that g(m) is indeed the greatest lower bound for g(A), as desired
+
+The second claim is proved similarly; see
+
+Exercise. Complete the proof of by showing that left adjoints preserve joins
+
+Since left adjoints preserve joins, we know that they cannot have generative effects. In fact, we will see in that a monotone map does not have generative effects---i.e.\ it preserves joins---if and only if it is a left adjoint to some other monotone
+
+Example. Right adjoints need not preserve joins. Here is an example: \[
+
+Exercise. To be sure that g really is right adjoint to f in , there are twelve tiny things to check; do so. That is, for every p∈ P and q∈ Q, check that f(p)≤ q iff p≤ g(q)
+
+Proof. We will only prove the claim about meets; the claim about joins follows similarly
+
+The left adjoint f_ ( A ) is given by the direct image: it maps a subset A' ⊆ A to \[ f_!(A') \ b B there exists a A' such that f(a) = b\ \] This map takes a set A' of apples, and tells you all the buckets that contain at least one of those apples
+
+Example. Here is an example of closure operators from computation, very roughly presented. Imagine computation as a process of rewriting input expressions to output expressions. For example, a computer can rewrite the expression as the expression . The set of arithmetic expressions has a partial order according to whether one expression can be rewritten as another
+
+Example. [Adjunctions from closure operators] Just as every adjunction gives rise to a closure operator, from every closure operator we may construct an adjunction
+
+Example. Another example of closure operators comes from logic. This will be discussed in the final chapter of the book, in particular , but we will give a quick overview here. In essence, logic is the study of when one formal statement---or proposition---implies another. For example, if n is prime then n is not a multiple of 6, or if it is raining then the ground is getting wetter. Here ``n is prime'', ``n is not a multiple of 6'', ``it is raining'', and ``the ground is getting wetter'' are propositions, and we gave two implications
+
+If `p' is true then ``assuming Bob is in San Diego, p'' is still true. Suppose that ``assuming Bob is in San Diego it is the case that, assuming Bob is in San Diego, p' is true.'' It follows that ``assuming Bob is in San Diego, p'' is true. So we have seen, at least informally, that ``assuming Bob is in San Diego...'' is a closure operator
+
+level shift|seealso primordial ooze
+
+The last thing we want to discuss in this chapter is a phenomenon that happens often in category theory, something we might informally call ``level-shifting.'' It is easier to give an example of this than to explain it directly
+
+Summary and further reading
+
+In this first chapter, we set the stage for category theory by introducing one of the simplest interesting sorts of example: preorders. From this seemingly simple structure, a bunch of further structure emerges: monotone maps, meets, joins, and more. In terms of modeling real world phenomena, we thought of preorders as the states of a system, and monotone maps as describing a way to use one system to observe another. From this point of view, generative effects occur when observations of the whole cannot be deduced by combining observations of the parts
+
+In the final section we introduced Galois connections. A Galois connection, or adjunction, is a pair of maps that are like inverses, but allowed to be more ``relaxed'' by getting the orders involved. Perhaps surprisingly, it turns out adjunctions are closely related to joins and meets: if a preorder P has all joins, then a monotone map out of P is a left adjoint if and only if it preserves joins; similarly for meets and right adjoints
+
+But perhaps you might be interested in exploring some ideas in this chapter in other directions. While we won't return to them in this book, we learned about generative effects from Elie Adam's thesis , and a much richer treatment of generative effect can be found there. In particular, he discusses abelian categories and cohomology, providing a way to detect generative effects in quite a general setting
+
+Another important application of preorders, monotone maps, and Galois connections is to the analysis of programming languages. In this setting, preorders describe the possible states of a computer, and monotone maps describe the action of programs, or relationships between different ways of modeling computation states. Galois connections are useful for showing how different models may be closely related, and for transporting program analysis from one framework to another. For more detail on this, see Chapter 4 of the textbook
+
+You can't make an omelette without breaking an egg. To obtain the things we want requires resources, and the process of transforming what we have into what we want is often an intricate one. In this chapter, we will discuss how monoidal preorders can help us think about this matter
+
+Consider the following three questions you might ask yourself: Given what I have, is it possible to get what I want? Given what I have, what is the minimum cost to get what I want? Given what I have, what is the set of ways to get what I want? These questions are about resources---those you have and those you want---but perhaps more importantly, they are about moving from have to want: possibility of, cost of, and ways to
+
+Such questions come up not only in our lives, but also in science and industry. In chemistry, one asks whether a certain set of compounds can be transformed into another set, how much energy such a reaction will require, or what methods exist for making it happen. In manufacturing, one asks similar questions
+
+From an external point of view, both a chemist and an industrial firm might be regarded as store-houses of information on the above subjects. The chemist knows which compounds she can make given other ones, and how to do so; the firm has stored knowledge of the same sort. The research work of the chemist and the firm is to use what they know in order to derive---or discover---new knowledge
+
+This is roughly the first goal of this chapter: to discuss a formalism for expressing recipes---methods for transforming one set of resources into another---and for deriving new recipes from old. The idea here is not complicated, neither in life nor in our mathematical formalism. The value added then is to simply see how it works, so we can build on it within the book, and so others can build on it in their own work
+
+We briefly discuss the categorical approach to this idea---namely that of monoidal preorders---for building new recipes from old. The following wiring diagram shows, assuming one knows how to implement each of the interior boxes, how to implement the preparation of a lemon meringue pie
+
+The wires show resources: we start with prepared crust, lemon, butter, sugar, and egg resources, and we end up with an unbaked pie resource. We could take this whole method and combine it with others, e.g.\ baking the pie: \[
+
+\] In the above example we see that resources are not always consumed when they are used. For example, we use an oven to convert---or catalyze the transformation of---an unbaked pie into a baked pie, and we get the oven back after we are done. It's a nice feature of ovens! To use economic terms, the oven is a ``means of production'' for pies
+
+String diagrams are important mathematical objects that will come up repeatedly in this book. They were invented in the mathematical context---more specifically in the context of monoidal categories---by Joyal and Street , but they have been used less formally by engineers and scientists in various contexts for a long time
+
+Symmetric monoidal preorders
+
+preorder!monoidal|see monoidal preorder
+
+In we introduced preorders. The notation for a preorder, namely (X,≤), refers to two pieces of structure: a set called X and a relation called ≤ that is reflexive and transitive
+
+We want to add to the concept of preorders a way of combining elements in X, an operation taking two elements and adding or multiplying them together. However, the operation does not have to literally be addition or multiplication; it only needs to satisfy some of the properties one expects from them
+
+Definition and first examples
+
+We begin with a formal definition of symmetric monoidal preorders
+
+hold for all m,n,p∈ M. It is called commutative if also m * n = n * m
+
+Example. Here is a non-example for people who know the game ``standard poker.'' Let H be the set of all poker hands, where a hand means a choice of five cards from the standard 52-card deck. As an order, put h≤ h' if h' beats or equals h in poker
+
+Subsections and are dedicated to examples of symmetric monoidal preorders. Some are aligned with the notion of resource theories, others come from pure math. When discussing the former, we will use wiring diagrams, so here is a quick primer
+
+Introducing wiring diagrams
+
+Wiring diagrams are visual representations for building new relationships from old. In a preorder without a monoidal structure, the only sort of relationship between objects is ≤, and the only way you build a new ≤ relationship from old ones is by chaining them together. We denote the relationship x≤ y by We can chain some number of these ≤-relationships---say 0, 1, 2, or 3 of them---together in series as shown here
+
+If we add a symmetric monoidal structure, we can combine relationships not only in series but also in parallel. Here is an example
+
+In fact, we will see later that there are many styles of wiring diagrams. When we are dealing with preorders, the sort of wiring diagram we can draw is that with single-input, single-output boxes connected in series. When we are dealing with symmetric monoidal preorders, we can have more complex boxes and more complex wiring diagrams, including parallel composition. Later we will see that for other sorts of categorical structures, there are other styles of wiring diagrams
+
+The style of wiring diagram that makes sense in any symmetric monoidal preorder is that shown in : boxes can have multiple inputs and outputs, and they may be arranged in series and parallel. Symmetric monoidal preorders and their wiring diagrams are tightly coupled with each other. How so?
+
+\] both represent the monoidal unit I; another way of thinking of this is that the unit is the empty monoidal product. unit!monoidal|seealso monoidal unit
+
+A wiring diagram runs between a set of parallel wires on the left and a set of parallel wires on the right. We say that a wiring diagram is valid if the monoidal product of the elements on the left is less than the monoidal product of those on the right. For example, if we have the inequality x≤ y, the the diagram that is a box with a wire labeled x on the left and a wire labeled y on the right is valid; see the first box below: \[
+
+We now return to how the properties of symmetric monoidal preorders correspond to properties of this sort of wiring diagram. Let's first talk about the order structure: conditions (a)---reflexivity---and (b)---transitivity---from . Reflexivity says that x ≤ x, this means the diagram just consisting of a wire \[
+
+\] is always valid. Transitivity allows us to connect facts together: it says that if x ≤ y and y ≤ z, then x ≤ z. This means that if the diagrams \[
+
+\] are valid, we can put them together and obtain the valid diagram \[
+
+\] But this looks much harder than it is: the associative property should be thought of as saying that there is no distinction between the stuff on the very left above and the stuff on the very right, i.e.\ \[
+
+\] and indeed a diagram that moves from one to the other is valid
+
+\] One may regard the pair of crossing wires as another icon in our iconography, in addition to the boxes and wires we already have
+
+\] A wiring diagram is a bunch of interior boxes connected together inside an exterior box. It represents a graphical proof that says: if all of the interior assertions are correct, then so is the exterior assertion
+
+The inner boxes in translate into the assertions
+
+and the outer box translates into the assertion
+
+The whole wiring diagram says ``if you know that the assertions in are true, then I am a proof that the assertion in is also true.'' What exactly is the proof that diagram represents? It is the proof
+
+Indeed, each inequality here is a vertical slice of the diagram , and the transitivity of these inequalities is expressed by connecting these vertical slices together
+
+Example. Recall the lemon meringue pie wiring diagram from . It has five interior boxes, such as ``separate egg'' and ``fill crust,'' and it has one exterior box called ``prepare lemon meringue pie.'' Each box is the assertion that, given the collection of resources on the left, say an egg, you can transform it into the collection of resources on the right, say an egg white and an egg yolk. The whole string diagram is a proof that if each of the interior assertions is true---i.e.\ you really do know how to separate eggs, make lemon filling, make meringue, fill crust, and add meringue---then the exterior assertion is true: you can prepare a lemon meringue pie
+
+Exercise. The string of inequalities in is not quite a proof, because technically there is no such thing as v + w + u, for example. Instead, there is v + w + u and v + ( w + u ), and so on. Formally prove, using only the rules of symmetric monoidal preorders ( ), that given the assertions in , the conclusion in follows. Reflexivity and transitivity should show up in your proof. Make sure you are explicit about where they do. How can you look at the wiring diagram and know that the symmetry axiom ( (d)) does not need to be invoked?
+
+We next discuss some examples of symmetric monoidal preorders. We begin in with some more concrete examples, from science, commerce, and informatics. Then in we discuss some examples arising from pure math, some of which will get a good deal of use later on, e.g.\ in
+
+Resource theories are studies of how resources are exchanged in a given arena. For example, in social resource theory one studies a marketplace where combinations of goods can be traded for---as well as converted into---other combinations of goods
+
+Whereas marketplaces are very dynamic, and an apple might be tradable for an orange on Sunday but not on Monday, what we mean by resource theory in this chapter is a static notion: deciding ``what buys what,'' once and for all. Using some sort of temporal theory, e.g.\ the one presented in , one could take the notion here and have it change in time. This sort of static notion of conversion might occur in chemistry: the chemical reactions that are possible one day will quite likely be possible on a different day as well. Manufacturing may be somewhere in between: the set of production techniques---whereby a company can convert one set of resources into another---do not change much from day to day
+
+We learned about resource theories from , who go much further than we will; see for more information. In this section we will focus only on the main idea. While there are many beautiful mathematical examples of symmetric monoidal preorders, as we will see in , there are also ad hoc examples coming from life experience. In the next chapter, on databases, we will see the same theme: while there are some beautiful mathematical categories out there, database schemas are ad hoc organizational patterns of information. Describing something as ``ad hoc'' is often considered derogatory, but it just means ``formed, arranged, or done for a particular purpose only.'' There is nothing wrong with doing things for a particular purpose; it's common outside of pure math and pure art. Let's get to it
+
+Exercise. Here is an exercise for people familiar with reaction equations: check that conditions (a), (b), (c), and (d) of hold
+
+An important notion in chemistry is that of catalysis: one compound catalyzes a certain reaction. For example, one might have the following set of reactions
+
+Using the laws of monoidal preorders, we obtain the composed reaction
+
+Whether we are talking about baking pies, building smart phones, or following pharmaceutical recipes, manufacturing firms need to store basic recipes, and build new recipes by combining simpler recipes in schemes like the one shown in or
+
+The basic idea in manufacturing is exactly the same as that for chemistry, except there is an important assumption we can make in manufacturing that does not hold for chemical reactions
+
+This simple assumption has caused the world some significant problems, but it is still in effect. In our meringue pie example, we can ask: ``what happened to the egg shell, or the paper wrapping the stick of butter''? The answer is they were trashed, i.e.\ thrown in the garbage bin. It would certainly clutter our diagram and our thinking if we had to carry these resources through the diagram: \[
+
+Instead, in our daily lives and in manufacturing, we do not have to hold on to something if we don't need it; we can just discard it. In terms of wiring diagrams, this can be shown using a new icon , as follows
+
+To model this concept of waste using monoidal categories, one just adds an additional axiom to (a), (b), (c), and (d) from : [label=(e)] x≤ I for all x∈ X. It says that every x can be converted into the monoidal unit I. In the notation of the chemistry section, we would write instead x→ 0: any x yields nothing. But this is certainly not accepted in the chemistry setting. For example, \[H_2O+NaCl ^?H_2O\] is certainly not a legal chemical equation. It is easy to throw things away in manufacturing, because we assume that we have access to---the ability to grab onto and directly manipulate---each item produced. In chemistry, when you have 10 ^ 23 of substance A dissolved in something else, you cannot just simply discard A. So axiom (e) is valid in manufacturing but not in chemistry
+
+Recall that in we said that there were many different styles of wiring diagrams. Now we're saying that adding the discard axiom changes the wiring diagram style, in that it adds this new discard icon that allows wires to terminate, as shown in . In informatics, we will change the wiring diagram style yet again
+
+A major difference between information and a physical object is that information can be copied. Whereas one cup of butter never becomes two, it is easy for a single email to be sent to two different people. It is much easier to copy a music file than it is to copy a CD. Here we do not mean ``copy the information from one compact disc onto another''---of course that's easy---instead, we mean that it's quite difficult to copy the physical disc, thereby forming a second physical disc! In diagrams, the distinction is between the relation \[
+
+\] and the relation \[
+
+\] The former is possible, the latter is magic
+
+Of course material objects can sometimes be copied; cell mitosis is a case in point. But this is a remarkable biological process, certainly not something that is expected for ordinary material objects. In the physical world, we would make mitosis a box transforming one cell into two. But in (classical, not quantum) information, everything can be copied, so we add a new icon to our repertoire
+
+Namely, in wiring diagram notation, copying information appears as a new icon, , allowing us to split wires: notation|seealso icon \[
+
+\] Now with two copies of the email, we can send one to Alice and one to Bob
+
+Now that we have examples of monoidal preorders under our belts, let's discuss some nice mathematical examples
+
+In this section we discuss several mathematical examples of symmetric monoidal structures on preorders
+
+\] What must the monoidal unit be in order to satisfy the conditions of ?
+
+Does it satisfy the rest of the conditions?
+
+Does it satisfy the conditions of ?
+
+As we said above, when we enrich in monoidal preorders we see them as different ways to structure the question of ``getting from here to there.'' We will explain this in more detail in . The following monoidal preorder will eventually structure a notion of distance or cost for getting from here to there
+
+Exercise. Complete the proof of by proving that the three remaining conditions of are satisfied
+
+Monoidal monotone maps
+
+Recall from that for any preorder (X,≤), there is an induced equivalence relation ≅ on X, where x≅ x' iff both x≤ x' and x'≤ x
+
+Monoidal monotones are examples of monoidal functors , which we will see various incarnations of throughout the book; see . What we call monoidal monotones could also be called lax monoidal monotones, and there is a dual notion of oplax monoidal monotones, where the inequalities in (a) and (b) are reversed; we will not use oplaxity in this book
+
+mapping object!see hom object
+
+Our colleague Peter Gates has called category theory ``a primordial ooze,'' because so much of it can be defined in terms of other parts of it. There is nowhere to rightly call the beginning, because that beginning can be defined in terms of something else. So be it; this is part of the fun
+
+primordial ooze|seealso ooze, primordial ooze!primordial|see primordial ooze
+
+We now discuss a beautiful application of the notion of enriched categories: metric spaces
+
+Lawvere metric spaces
+
+Metric spaces offer a precise way to describe spaces of points, each pair of which is separated by some distance. Here is the usual definition
+
+The triangle inequality says that when plotting a route from x to z, the distance is always at most what you get by choosing an intermediate point y and going x→ y→ z. \[
+
+Another way to find a model that breaks the symmetry axiom is to imagine that the elements of X are not points, but whole regions such as the US, Spain, and Boston. Say that the distance from region A to region B is understood using the setup ``I will put you in an arbitrary part of A and you just have to get anywhere in B; what is the distance in the worst-case scenario?'' So d(US, Spain) is the distance from somewhere in the western US to the western tip of Spain: you just have to get into Spain, but you start in the worst possible part of the US for doing so
+
+Exercise. Which distance is bigger under the above description, d(Spain, US) or d(US, Spain)?
+
+Given a weighted graph, one forms a metric d_X on its set X of vertices by setting d(p,q) to be the length of the shortest path from p to q. For example, here is the the table of distances for Y
+
+Exercise. Fill out the following table of distances in the weighted graph X from \[
+
+Above we converted a weighted graph G, e.g.\ as shown in , into a table of distances, but this takes a bit of thinking. There is a more direct construction for taking G and getting a square matrix M_G, whose rows and columns are indexed by the vertices of G. To do so, set M_G to be 0 along the diagonal, to be ∞ wherever an edge is missing, and to be the edge weight if there is an edge
+
+For example, the matrix associated to Y in would be
+
+As soon as you see how we did this, you'll understand that it takes no thinking to turn a weighted graph G into a matrix M_G in this way. We will see later in that the more difficult ``distance matrices'' d_Y, such as , can be obtained from the easy graph matrices M_Y, such as , by repeating a certain sort of ``matrix multiplication.''
+
+Exercise. Fill out the matrix M_X associated to the graph X in : \[ M_X=
+
+Changing the base of enrichment
+
+It is easy to check that f is monotonic and that f preserves the monoidal product and monoidal unit; that is, it's easy to show that f is a monoidal monotone. (Recall .)
+
+Thus f lets us convert Lawvere metric spaces into preorders
+
+Exercise. Recall the ``regions of the world'' Lawvere metric space from and the text above it. We just learned that, using the monoidal monotone f in , we can convert it to a preorder. Draw the Hasse diagram for the preorder corresponding to the regions: US, Spain, and Boston. How could you interpret this preorder relation?
+
+functor!enriched|see enriched functor The notion of functor provides the most important type of relationship between categories
+
+\] and their product is as follows: \[
+
+Monoidal closed preorders
+
+Remark. The term `closed' refers to the fact that a hom-element can be constructed for any two elements, so the preorder can be seen as closed under the operation of ``taking homs.'' In later chapters we'll meet the closely-related concepts of compact closed categories ( ) and cartesian closed categories ( ) that make this idea more precise. See especially
+
+One can consider the hom-element vμltimap w as a kind of ``single-use v-to-w converter.'' So says that a and v are enough to get w if and only if a is enough to get a single-use v-to-w converter
+
+One might read (c) as saying ``if I have a v and a single-use v-to-w converter, I can have a w.'' One might read (d) as saying ``having a v is the same as having a single-use nothing-to-v converter.'' And one might read (e) as saying ``if I have a single-use u-to-v converter and a single-use v-to-w converter, I can get a single-use u-to-w converter
+
+To perform matrix multiplication over a monoidal preorder, we need one more thing: joins. These were first defined in
+
+Whenever we speak of quantales in this book, we mean unital commutative quantales. We will try to remind the reader of that. There are also very interesting applications of noncommutative quantales; see
+
+Remark. One can personify the notion of unital, commutative quantale as a kind of navigator. A navigator is someone who understands ``getting from one place to another.'' Different navigators may care about or understand different aspects---whether one can get from A to B, how much time it will take, what modes of travel will work, etc.---but they certainly have some commonalities. Most importantly, a navigator needs to be able to read a map: given routes A to B and B to C, they understand how to get a route A to C. And they know how to search over the space of way-points to get from A to C. These will correspond to the monoidal product and the join operations, respectively
+
+We first need to know that for any a∈ A we have m_A≤ a, but this is by definition of join: since all p∈ M_A satisfy p≤ a, so does their join m_A≤ a. We second need to know that for any m'∈ P with m'≤ a for all a∈ A, we have m'≤ m. But every such m' is actually an element of M_A and m is their join, so m'≤ m. This completes the proof
+
+In particular, a quantale has all meets and all joins, even though we only define it to have all joins
+
+Matrix multiplication in a quantale
+
+Note how similar this is to
+
+Recall the weighted graph Y from . One can read off the associated matrix M_Y, and one can calculate the associated metric d_Y: \[
+
+\] Here we fully explain how to compute d_Y using only M_Y
+
+The matrix M_Y can be thought of as recording the length of paths that traverse either 0 or 1 edges: the diagonals being 0 mean we can get from x to x without traversing any edges. When we can get from x to y in one edge we record its length in M_Y, otherwise we use ∞
+
+When we multiply M_Y by itself using the formula , the result M_Y^2 tells us the length of the shortest path traversing 2 edges or fewer. Similarly M_Y^3 tells us about the shortest path traversing 3 edges or fewer: \[ M_Y^2=
+
+\] One sees that the powers stabilize: M_Y ^ 2 = M_Y ^ 3; as soon as that happens one has the matrix of distances, d_Y. Indeed M_Y^n records the lengths of the shortest path traverse n edges or fewer, and the powers will always stabilize if the set of vertices is finite, since the shortest path from one vertex to another will never visit a given vertex more than once
+
+Exercise. Recall from the matrix M_X, for X as in . Calculate M_X^2, M_X^3, and M_X^4. Check that M_X^4 is what you got for the distance matrix in
+
+Summary and further reading
+
+Resource theories are discussed in much more detail in . The authors provide many more examples of resource theories in science, including in thermodynamics, Shannon's theory of communication channels, and quantum entanglement. They also discuss more of the numerical theory than we did, including calculating the asymptotic rate of conversion from one resource into another
+
+Enrichment is a fundamental notion in category theory, and we will we return to it in , generalizing the definition so that categories, rather than mere preorders, can serve as bases of enrichment. In this more general setting we can still perform the constructions we introduced in ---base change, functors, products---and many others; the authoratitive, but by no means easy, reference on this is the book by Kelly
+
+While preorders were familiar before category theory came along, Lawvere metric spaces are a beautiful generalization of the previous notion of (symmetric) metric space, that is due to, well, Lawvere. A deeper exploration than the taste we gave here can be found in his classic paper , where he also discusses ideas like Cauchy completeness in category-theoretic terms, and which hence generalize to other categorical settings
+
+We observed that while any symmetric monoidal preorder can serve as a base for enrichment, certain preorders---quantales---are better than others. Quantales are well known for links to other parts of mathematics too. The word quantale is in fact a portmanteau of `quantum locale', where quantum refers to quantum physics, and locale is a fundamental structure in topology. For a book-length introduction of quantales and their applications, one might check . The notion of cartesian closed categories, later generalized to monoidal closed categories, is due to Ronnie Brown
+
+Note that while we have only considered commutative quantales, the noncommutative variety also arise naturally. For example, the power set of any monoid forms a quantale that is commutative iff the monoid is. Another example is the set of all binary relations on a set X, where multiplication is relational composition; this is non-commutative. Such noncommutative quantales have application to concurrency theory, and in particular process semantics and automata; see for details
+
+Integrating data from disparate sources is a major problem in industry today. A study in 2008 showed that data integration accounts for 40\% of IT (information technology) budgets, and that the market for data integration software was \$2.5 billion in 2007 and increasing at a rate of more than 8\% per year. In other words, it is a major problem; but what is it?
+
+Data becomes information when it is stored in a given formation. That is, the numbers and letters don't mean anything until they are organized, often into a system of interlocking tables. An organized system of interlocking tables is called a database. Here is a favorite example
+
+These two tables interlock by use of a special left-hand column, demarcated by a vertical line; it is called the ID column. The ID column of the first table is called `Employee,' and the ID column of the second table is called `Department.' The entries in the ID column---e.g.\ 1, 2, 3 or 101, 102---are like row labels; they indicate a whole row of the table they're in. Thus each row label must be unique (no two rows in a table can have the same label), so that it can unambiguously specify its row
+
+Each table's ID column, and the set of unique identifiers found therein, is what allows for the interlocking mentioned above. Indeed, other entries in various tables can reference rows in a given table by use of its ID column. For example, each entry in the WorksIn column references a department for each employee; each entry in the Mngr (manager) column references an employee for each employee, and each entry in the Secr (secretary) column references an employee for each department. Managing all this cross-referencing is the purpose of databases
+
+Looking back at , one might notice that every non-ID column, found in either table, is a reference to a label of some sort. Some of these, namely WorksIn, Mngr, and Secr, are internal references, often called foreign keys; they refer to rows (keys) in the ID column of some (foreign) table. foreign key|see database, foreign key Others, namely FName and DName, are external references; they refer to strings or integers, which can also be thought of as labels, whose meaning is known more broadly. Internal reference labels can be changed as long as the change is consistent---1 could be replaced by 1001 everywhere without changing the meaning---whereas external reference labels certainly cannot! Changing Ruth to Bruce everywhere would change how people understood the data
+
+The reference structure for a given database---i.e.\ how tables interlock via foreign keys---tells us something about what information was intended to be stored in it. One may visualize the reference structure for graphically as follows
+
+This is a kind of ``Hasse diagram for a database,'' much like the Hasse diagrams for preorders in . How should you read it?
+
+The two tables from are represented in the graph by the two black nodes, which are given the same name as the ID columns: Employee and Department. There is another node---drawn white rather than black---which represents the external reference type of strings, like ``Alan,'' ``Alpha,'' and ``Sales". The arrows in the diagram represent non-ID columns of the tables; they point in the direction of reference: WorksIn refers an employee to a department
+
+Exercise. Count the number of non-ID columns in . Count the number of arrows (foreign keys) in . They should be the same number in this case; is this a coincidence?
+
+A Hasse-style diagram like the one in can be called a database schema; it represents how the information is being organized, the formation in which the data is kept. One may add rules, sometimes called `business rules' to the schema, in order to ensure the integrity of the data. If these rules are violated, one knows that data being entered does not conform to the way the database designers intended. For example, the designers may enforce rules saying every department's secretary must work in that department; every employee's manager must work in the same department as the employee. Doing so changes the schema, say from `easySchema' to `mySchema' below
+
+In other words, the difference is that easySchema plus constraints equals mySchema
+
+We have said that databases are designed to store information about something. But different people or organizations might view the same sort of thing in different ways. For example, one bank stores its financial records according to European standards and another does so according to Japanese standards. If these two banks merge into one, they will need to be able to share their data despite differences in the shape of their database schemas
+
+Such problems are huge and intricate in general, because databases often comprise hundreds or thousands of interlocking tables. Moreover, these problems occur more frequently than just when companies want to merge. It is quite common that a given company moves data between databases on a daily basis. The reason is that different ways of organizing information are convenient for different purposes. Just like we pack our clothes in a suitcase when traveling but use a closet at home, there is generally not one best way to organize anything
+
+Category theory provides a mathematical approach for translating between these different organizational forms. That is, it formalizes a sort of automated reorganizing process called data migration, which takes data that fits snugly in one schema and moves it into another
+
+Here is a simple case. Imagine an airline company has two different databases, perhaps created at different times, that hold roughly the same data
+
+Schema A has more detail than schema B---an airline seat may be in first class or economy---but they are roughly the same. We will see that they can be connected by a functor, and that data conforming to A can be migrated through this functor to schema B and vice versa
+
+The statistics at the beginning of this section show that this sort of problem---when occurring at enterprise scale---continues to prove difficult and expensive. If one attempts to move data from a source schema to a target schema, the migrated data could fail to fit into the target schema or fail to satisfy some of its constraints. This happens surprisingly often in the world of business: a night may be spent moving data, and the next morning it is found to have arrived broken and unsuitable for further use. In fact, it is believed that over half of database migration projects fail
+
+In this chapter, we will discuss a category-theoretic method for migrating data. Using categories and functors, one can prove up front that a given data migration will not fail, i.e.\ that the result is guaranteed to fit into the target schema and satisfy all its constraints
+
+We begin in with the definition of categories and a bunch of different sorts of examples. In we bring back databases, in particular their instances and the maps between them, by discussing functors and natural transformations. In we discuss data migration by way of adjunctions, which generalize the Galois connections we introduced in . Finally in we give a bonus section on limits and colimits
+
+Our next goal is to give lots of examples of categories. Our first source of examples is that of free and finitely-presented categories, which generalize the notion of Hasse diagram from
+
+In , we used graphs to depict preorders (V,≤): the vertices form the elements of the preorder, and we say that v≤ w if there is a path from v to w in G. We will now use graphs in a very similar way to depict certain categories, known as free categories. Then we will explain a strong relationship between preorders and categories in
+
+Exercise. The free category on the graph shown here
+
+has three objects and six morphisms: the three vertices and six paths in the graph
+
+Example. [Natural numbers as a free category]
+
+Consider the following graph
+
+Presenting categories via path equations
+
+So for any graph G, there is a free category on G. But we don't have to stop there: we can add equations between paths in the graph, and still get a category. We are only allowed to equate two paths p and q when they are parallel, meaning they have the same source vertex and the same target vertex
+
+Exercise. Write down the ten paths in the free square category above. Name two different paths that are parallel. Name two different paths that are not parallel
+
+Remark. We can now see that the schemas in , e.g.\ are finite presentations of categories. We will come back to this idea in
+
+Preorders and free categories: two ends of a spectrum
+
+Now that we have used graphs to depict preorders in and categories above, one may want to know the relationship between these two uses. The main idea we want to explain now is that ``A preorder is a category where every two parallel arrows are the same.'' Thus any preorder can be regarded as a category, and any category can be somehow ``crushed down'' into a preorder. Let's discuss these ideas
+
+Exercise. What equations would you need to add to the graphs below in order to present the associated preorders? \[ G_1= [ampersand replacement=\&, column sep=20pt] \& G_2= [ampersand replacement=\&] G_3= [ampersand replacement=\&, column sep=20pt] \& \& G_4= [ampersand replacement=\&, column sep=20pt] \& \& \]
+
+We have only discussed adjoint functors between preorders, but soon we will discuss adjoints in general. Here is a statement you might not understand exactly, but it's true; you can ask a category theory expert about it and they should be able to explain it to you: Considering a preorder as a category is right adjoint to turning a category into a preorder by preorder reflection
+
+Remark. [Ends of a spectrum] The main point of this subsection is that both preorders and free categories are specified by a graph without path equations, but they denote opposite ends of a spectrum. In both cases, the vertices of the graph become the objects of a category and the paths become morphisms. But in the case of free categories, there are no equations so each path becomes a different morphism. In the case of preorders, all parallel paths become the same morphism. Every category presentation, i.e.\ graph with some equations, lies somewhere in between the free category (no equations) and its preorder reflection (all possible equations)
+
+Important categories in mathematics
+
+We have been talking about category presentations, but there are categories that are best understood directly, not by way of presentations. Recall the definition of category from . The most important category in mathematics is the category of sets
+
+Here is one more source of examples: take any category you already have and reverse all its morphisms; the result is again a category
+
+Isomorphisms in a category
+
+The previous sections have all been about examples of categories: free categories, presented categories, and important categories in math. In this section, we briefly switch gears and talk about an important concept in category theory, namely the concept of isomorphism
+
+Example. In this example, we will see that it is possible for g and f to be almost---but not quite---inverses, in a certain sense
+
+Functors, natural transformations, and databases
+
+Sets and functions as databases
+
+database!schema|see database schema
+
+The first observation is that any set can be understood as a table with only one column: the ID column. \[
+
+In databases, single-column tables are often called controlled vocabularies, or master data. Now to be honest, we can only write out every single entry in a table when its set of rows is finite. A database practitioner might find the idea of our prime number table a bit unrealistic. But we're mathematicians, so since the idea makes perfect sense abstractly, we will continue to think of sets as one-column tables
+
+The above databases have schemas consisting of just one vertex: \[ [ampersand replacement=\&, column sep=50pt] [ampersand replacement=\&, column sep=50pt] [ampersand replacement=\&, column sep=50pt] \] Obviously, there's really not much difference between these schemas, other than the label of the unique vertex. So we could say ``sets are databases whose schema consists of a single vertex.'' Let's move on to functions
+
+A functor is a mapping between categories. It sends objects to objects and morphisms to morphisms, all while preserving identities and composition. Here is the formal definition
+
+All of our example functors so far have been completely determined by what they do on objects, but this is usually not the case
+
+Example. [Functors between preorders are monotone maps]
+
+Recall from that preorders are categories with at most one morphism between any two objects. A functor between preorders is exactly a monotone map
+
+Example. Consider the following category
+
+The main idea is this: a database schema is a category, and an instance on that schema---the data itself---is a set-valued functor. All the constraints, or business rules, are ensured by the rules of functors, namely that functors preserve composition. One can put more complex constraints, called embedded dependencies, on a database; these correspond category theoretically to what are called ``lifting problems'' in category theory. See for more on this
+
+Natural transformations
+
+The naturality condition can also be written as a so-called commutative diagram. A diagram in a category is drawn as a graph whose vertices and arrows are labeled by objects and morphisms in the category. For example, here is a diagram that's relevant to the naturality condition in
+
+Example. A representative picture is as follows: \[
+
+The category of instances on a schema
+
+Example. Consider the graphs G and H shown below \[ G [ampersand replacement=\&] \& \& H [ampersand replacement=\&] \& \]
+
+\] The top row is G and the bottom row is H. They are offset so you can more easily complete the following exercise
+
+Adjunctions and data migration
+
+We have talked about how set-valued functors on a schema can be understood as filling that schema with data. But there are also functors between schemas. When the two sorts of functors are composed, data is migrated. This is the simplest form of data migration; more complex ways to migrate data come from using adjoints. All of the above is the subject of this section
+
+Pulling back data along a functor
+
+\] Now that we have a graph, we can draw it. \[ [column sep=20pt, row sep=5, pos=.1, ampersand replacement=\&] \& \&\& \&\& \&\& \&[20pt] \& \] Each arrow is labeled by its source vertex, as if to say, ``What I do next is determined by what I am now.''
+
+We refer to the above procedure---basically just composing functors as in ---as ``pulling back data along a functor.'' We just now pulled back data I along functor F
+
+Note that the term pullback is also used for a certain sort of limit, for more details see
+
+Recall from that in a preorder P, a hom-set P(a,b) has one element when a ≤ b, and no elements otherwise. We can thus rephrase as an isomorphism of sets Q(f(p),q) ≅ P(p,g(q)): either both are one-element sets or both are 0-element sets. This suggests how to define adjunctions in the general case
+
+The idea of currying is that given sets A, B, and C, there is a one-to-one correspondence between functions (A× B)→ C and functions A→ C^B. Intuitively, if I have a function f of two variables a,b, I can ``put off'' entering the second variable: if you give me just a, I'll return a function B→ C that's waiting for the B input. This is the curried version of f. As one might guess, there is a formal connection between exponential objects and what we called hom-elements bμltimap c in
+
+Example. If you know some abstract algebra or topology, here are some other examples of adjunctions. Free constructions: given any set you get a free group, free monoid, free ring, free vector space, etc.; each of these is a left adjoint. The corresponding right adjoint takes a group, a monoid, a ring, a vector space etc.\ and forgets the algebraic structure to return the underlying set
+
+Similarly, given a graph you get a free preorder or a free category, as we discussed in ; each is a left adjoint. The corresponding right adjoint is the underlying graph of a preorder or of a category
+
+Discrete things: given any set you get a discrete preorder, discrete graph, discrete metric space, discrete category, discrete topological space; each of these is a left adjoint. The corresponding right adjoint is again underlying set
+
+Codiscrete things: given any set you get a codiscrete preorder, complete graph, codiscrete category, codiscrete topological space; each of these is a right adjoint. The corresponding left adjoint is the underlying set
+
+Given a group, you can quotient by its commutator subgroup to get an abelian group; this is a left adjoint. The right adjoint is the inclusion of abelian groups into groups
+
+To get the basic idea across without getting mired in technical details, here we shall instead discuss a very simple example. Recall the schemas from . We can set up a functor between them, the one sending black dots to black dots and white dots to white dots: \[
+
+\] With this functor F in hand, we can transform any B-instance into an A-instance using Δ_F. Whereas Δ was interesting in the case of turning discrete dynamical systems into graphs in , it is not very interesting in this case. Indeed, it will just copy---Δ for duplicate---the rows in Airline seat into both Economy and First Class
+
+Single set summaries of databases
+
+Consider the following schema
+
+\] This form of summary, involving identifying entries into common groups, or quotients, is typical of Σ-operations
+
+Bonus: An introduction to limits and colimits
+
+Terminal objects and products
+
+Terminal objects and products are each a sort of limit. Let's discuss them in turn
+
+The most basic limit is a terminal object
+
+top element|see terminal object
+
+Exercise. Not every category has a terminal object. Find one that doesn't
+
+Remark. [``The limit'' vs.\ ``a limit''] Not only are all terminal objects isomorphic, there is a unique isomorphism between any two. We hence say ``terminal objects are unique up to unique isomorphism.'' To a category theorist, this is very nearly the same thing as saying ``all terminal objects are equal.'' Thus we often abuse terminology and talk of `the' terminal object, rather than ``a'' terminal object. We will do the same for any sort of limit or colimit, e.g.\ speak of ``the product'' of two sets, rather than ``a product.'' We saw a similar phenomenon in
+
+Products are slightly more complicated to formalize than terminal objects, but they are familiar in practice
+
+These two constructions, terminal objects and products, are subsumed by the notion of limit
+
+We're now ready for the abstract definition. Don't worry if the details are unclear; the main point is that it is possible to unify terminal objects, maximal elements, and meets, products of sets, preorders, and categories, and many other familiar friends under the scope of a single definition. In fact, they're all just terminal objects in different categories
+
+Exercise. Show that the limit formula in works for products. See
+
+A brief note on colimits
+
+Just like upper bounds have a dual concept---namely that of lower bounds---so limits have a dual concept: colimits. To expose the reader to this concept, we provide a succinct definition of these using opposite categories and opposite functors. The point, however, is just exposure; we will return to explore colimits in detail in
+
+is like a compressed file: useful for transmitting quickly, but completely useless for working with, unless you can successfully unpack it. We will unpack it later in when we discuss electric circuits
+
+Summary and further reading
+
+Congratulations on making it through one of the longest chapters in the book! We apologize for the length, but this chapter had a lot of work to do. Namely it introduced the ``big three'' of category theory---categories, functors, and natural transformations---as well as discussed adjunctions, limits, and very briefly colimits
+
+That's really quite a bit of material. For more on all these subjects, one can consult any standard book on category theory, of which there are many. The bible (old, important, seminal, and requires a priest to explain it) is ; another thorough introduction is ; a logical perspective is given in ; a computer science perspective is given in and and ; math students should probably read or or ; a general audience might start with
+
+Before we leave this chapter, we want to emphasize two things: coherence conditions and universal constructions
+
+In the definitions of category, functor, and natural transformations, we have data (indexed by (i)) that is required to satisfy certain properties (indexed by (a)). Indeed, for categories it was about associativity and unitality of composition, for functors it was about respecting composition and identities, and for natural transformations it was the naturality condition. These conditions are often called coherence conditions: we want the various structures to cohere, to work well together, rather than to flop around unattached
+
+Understanding why these particular structures and coherence conditions are ``the right ones'' is more science than mathematics: we empirically observe that certain combinations result in ideas that are both widely applicable and also strongly compositional. That is, we become satisfied with coherence conditions when they result in beautiful mathematics down the road
+
+Universal constructions are one of the most important themes of category theory. Roughly speaking, one gives some specified shape in a category and says ``find me the best solution!'' And category theory comes back and says ``do you want me to approximate from the left or the right (colimit or limit)?'' You respond, and either there is a best solution or there is not. If there is, it's called the (co)limit; if there's not we say ``the (co)limit does not exist.''
+
+co-design|seealso feasibility
+
+When designing a large-scale system, many different fields of expertise are joined to work on a single project. Thus the whole project team is divided into multiple sub-teams, each of which is working on a sub-project. And we recurse downward: the sub-project is again factored into sub-sub-projects, each with their own team. One could refer to this sort of hierarchical design process as collaborative design, or co-design. In this chapter, we discuss a mathematical theory of co-design, due to Andrea Censi
+
+Consider just one level of this hierarchy: a project and a set of teams working on it. Each team is supposed to provide resources---sometimes called ``functionalities''---to the project, but the team also requires resources in order to do so. Different design teams must be allowed to plan and work independently from one another in order for progress to be made. Yet the design decisions made by one group affect the design decisions others can make: if A wants more space in order to provide a better radio speaker, then B must use less space. So these teams---though ostensibly working independently---are dependent on each other after all
+
+The combination of dependence and independence is crucial for progress to be made, and yet it can cause major problems. When a team requires more resources than it originally expected to require, or if it cannot provide the resources that it originally claimed it could provide, the usual response is for the team to issue a design-change notice. But these affect neighboring teams: if team A now requires more than originally claimed, team B may have to change their design, which can in turn affect team C. Thus these design-change notices can ripple through the system through feedback loops and can cause whole projects to fail
+
+As an example, consider the design problem of creating a robot to carry some load at some velocity. The top-level planner breaks the problem into three design teams: chassis team, motor team, and battery team. Each of these teams could break up into multiple parts and the process repeated, but let's remain at the top level and consider the resources produced and the resources required by each of our three teams
+
+The chassis in some sense provides all the functionality---it carries the load at the velocity---but it requires some things in order to do so. It requires money to build, of course, but more to the point it requires a source of torque and speed. These are supplied by the motor, which in turn needs voltage and current from the battery. Both the motor and the battery cost money, but more importantly they need to be carried by the chassis: they become part of the load. A feedback loop is created: the chassis must carry all the weight, even that of the parts that power the chassis. A heavier battery might provide more energy to power the chassis, but is the extra power worth the heavier load?
+
+In the following picture, each part---chassis, motor, battery, and robot---is shown as a box with ports on the left and right. The functionalities, or resources produced by the part are shown as ports on the left of the box, and the resources required by the part are shown as ports on its right
+
+The boxes marked Σ correspond to summing inputs. These boxes are not to be designed, but we will see later that they fit easily into the same conceptual framework. Note also the ≤'s on each wire; they indicate that if box A requires a resource that box B produces, then A's requirement must be less-than-or-equal-to B's production. The chassis requires torque, and the motor must produce at least that much torque
+
+Each of the boxes in a co-design diagram corresponds to what we call a feasibility relation. A feasibility relation matches resource production with requirements. For every pair (p,r)∈ P× R, where P is the preorder of resources to be produced and R is the preorder of resources to be required, the box says ``true'' or ``false''---feasible or infeasible---for that pair. In other words, ``yes I can provide p given r'' or ``no, I cannot provide p given r.''
+
+A co-design problem , represented by a co-design diagram, asks us to find the composite of some feasibility relations. It asks, for example, given these capabilities of the chassis, motor, and battery teams, can we build a robot together? Indeed, a co-design diagram factors a problem---for example, that of designing a robot---into interconnected subproblems, as in . Once the feasibility relation is worked out for each of the subproblems, i.e.\ the inner boxes in the diagram, the mathematics provides an algorithm producing the feasibility relation of the whole outer box. This process can be recursed downward, from the largest problem to tiny subproblems
+
+Enriched profunctors
+
+In this section we will understand how co-design problems form a category. Along the way we will develop some abstract machinery that will allow us to replace preorder design spaces with other enriched categories
+
+Exercise. Suppose we have the preorders \[
+
+We know that is quite abstract. But have no fear, we will take you through it in pictures
+
+The distance from a point x in city X to a point y in city Y is given by the shortest path that runs from x through X, then across one of the bridges, and then through Y to the destination y. So for example \[ (B,x)=11, (A,z)=20, (C,y)=17. \]
+
+Remark. [Computing profunctors via matrix multiplication]
+
+Your answer should agree with what you got in ; does it?
+
+Back to co-design diagrams
+
+Each box in a co-design diagram has a left-hand and a right-hand side, which in turn consist of a collection of ports, which in turn are labeled by preorders. For example, consider the chassis box below: \[
+
+We then multiply---i.e.\ we take the product preorder---of all preorders on the left, and similarly for those on the right. The box then represents a feasibility relation between the results. For example, the chassis box above represents a feasibility relation \[ ( ) ( \$ ) \]
+
+\] where T, E, and \$ are the preorders drawn below: \[
+
+\] A possible feasibility relation is then described by the profunctor \[
+
+Note the similarity and difference with the bridge interpretation of profunctors in : the arrows still indicate the possibility of moving between source and target, but in this co-design driven interpretation we understand them as indicating that it is possible to get to the source from the target
+
+Exercise. In the above diagram, the node (g/n, funny) has no dashed blue arrow emerging from it. Is this valid? If so, what does it mean?
+
+Categories of profunctors
+
+Composing profunctors
+
+But as we said in , this can be thought of as matrix multiplication. In our example, the result is \[
+
+\] and one can check that this answers the question, ``can you get from here to there'' in : you can't get from N to x but you can get from N to y
+
+\] Fill in the matrix for the composite profunctor: \[
+
+At this point perhaps you have two questions in mind. What are the identity morphisms? And why did we need to specialize to skeletal quantales? It turns out these two questions are closely related
+
+\] Obviously, composing a feasibility relation with with the unit leaves it unchanged; this is the content of
+
+Composition of profunctors is also associative; we leave the proof to you
+
+So, feasibility relations form a category. Since this is the case, we can describe feasibility relations using wiring diagrams for categories (see also ), which are very simple. Indeed, each box can only have one input and one output, and they're connected in a line: \[
+
+\] On the other hand, we have seen that feasibility relations are the building blocks of co-design problems, and we know that co-design problems can be depicted with a much richer wiring diagram, for example: \[
+
+In the next section we'll discuss categorification and introduce monoidal categories. First though, we finish this section by discussing why profunctors are called profunctors, and by formally introducing something called the collage of a profunctor
+
+Fun profunctor facts: companions, conjoints, collages
+
+profunctor!collage of|see collage
+
+Some pictures will help clarify this
+
+\] It corresponds to the following matrices \[
+
+Exercise. Draw a Hasse diagram for the collage of the profunctor shown here: \[
+
+The basic idea of categorification
+
+The general idea of categorification is that we take a thing we know and add structure to it, so that what were formerly properties become structures. We do this in such a way that we can recover the thing we categorified by forgetting this new structure. This is rather vague; let's give an example
+
+Note that in the above construction we made a number of choices; here we must beware. Choosing a good categorification---like designing a good algebraic structure such as that of preorders or quantales---is part of the art of mathematics. There is no prescribed way to categorify, and the success of a chosen categorification is often empirical: its richer structure should allow us more insights into the subject we want to model
+
+A reflection on wiring diagrams
+
+Suppose we have a preorder. We introduced a very simple sort of wiring diagram in . These allowed us to draw a box \[
+
+\] whenever x_0 ≤ x_1. Chaining these together, we could prove facts in our preorder. For example \[
+
+\] provides a proof that x_0≤ x_3 (the exterior box) using three facts (the interior boxes), x_0≤ x_1, x_1≤ x_2, and x_2≤ x_3
+
+As categorified preorders, categories have basically the same sort of wiring diagram as preorders---namely sequences of boxes inside a box. But since we have replaced the fact that x_0 ≤ x_1 with the structure of a set of morphisms, we need to be able to label our boxes with morphism names: \[
+
+\] This means you can insert or discard any identity morphism you see in a wiring diagram. From this perspective, the coherence laws of a category---that is, the associativity law and the unitality law---are precisely what are needed to ensure we can lengthen and shorten wires without ambiguity
+
+In , we also saw wiring diagrams for monoidal preorders. Here we were allowed to draw boxes which can have multiple typed inputs and outputs, but with no choice of label (always ≤): \[
+
+\] If we combine these ideas, we will obtain a categorification of symmetric monoidal preorders: symmetric monoidal categories. A symmetric monoidal category is an algebraic structure in which we have labelled boxes with multiple typed inputs and outputs: \[
+
+\] Furthermore, a symmetric monoidal category has a composition rule and a monoidal product, which permit us to combine these boxes to interpret diagrams like this: \[
+
+\] Finally, this structure must obey coherence laws, analogous to associativity and unitality in categories, that allow such diagrams to be unambiguously interpreted. In the next section we will be a bit more formal, but it is useful to keep in mind that, when we say our data must be ``well behaved,'' this is all we mean
+
+They are slightly different sets: the first contains pairs consisting of an elements in S and an element in T× U, while the second contains pairs consisting of an element in S × T and an element in U. The sets are not equal, but they are clearly isomorphic, i.e.\ the difference between them is ``just a matter of bookkeeping.'' We thus need a structure---a bookkeeping isomorphism---to keep track of the associativity: \[ _ s,t,u \ (s,(t,u)) s S, t T, u U\ \ ((s,t),u) s S, t T, u U\ . \]
+
+Instead, we will continue with our categorification of monoidal preorders, starting with a rough definition of symmetric monoidal categories. It's rough in the sense that we suppress the technical bookkeeping, hiding it under the name ``well behaved.''
+
+Remark. If the isomorphisms in (a), (b), and (c)---but not (d)---are replaced by equalities, then we say that the monoidal structure is strict, and this is a complete (non-rough) definition of symmetric strict monoidal category. In fact, symmetric strict monoidal categories are almost the same thing as symmetric monoidal categories, via a result known as Mac Lane's coherence theorem. An upshot of this theorem is that we can, when useful to us, pretend that our monoidal categories are strict: for example, we implicitly do this when we draw wiring diagrams. Ask your friendly neighborhood category theorist to explain how!
+
+Remark. For those yet to find a friendly expert category theorist, we make the following remark. A complete (non-rough) definition of symmetric monoidal category is that a symmetric monoidal category is a category equipped with an equivalence to (the underlying category of) a symmetric strict monoidal category. This can be unpacked, using and our comment about equivalence of categories in , but we don't expect you to do so. Instead, we hope this gives you more incentive to ask a friendly expert category theorist!
+
+We will see more monoidal categories throughout the remainder of this book
+
+Categories enriched in a symmetric monoidal category
+
+The precise, non-rough, definition can be found in other sources, e.g.\
+
+In the case of preorders, there is at most one morphism between any two objects, so we do not need to choose an identity element and a composition morphism. Instead, we just need to make sure that an identity element and a composition morphism exist. This is exactly what properties (a) and (b) of say
+
+Profunctors form a compact closed category
+
+It's been a while since we thought about co-design, but these were the kinds of wiring diagrams we drew, e.g.\ connecting the chassis, the motor, and the battery in . Compact closed categories are symmetric monoidal categories, with a bit more structure that allow us to formally interpret the sorts of feedback that occur in co-design problems. This same structure shows up in many other fields, including quantum mechanics and dynamical systems
+
+In we discussed various flavors of wiring diagrams, including those with icons for splitting and terminating wires. For compact-closed categories, our additional icons allow us to bend outputs into inputs, and vice versa. To keep track of this, however, we draw arrows on our wire, which can either point forwards or backwards. For example, we can draw this
+
+We then add icons---called a cap and a cup---allowing any wire to reverse direction from forwards to backwards and from backwards to forwards
+
+Thus we can draw the following \[
+
+\] and its meaning is equivalent to that of
+
+We will begin by giving the axioms for a compact closed category. Then we will look again at feasibility relations in co-design---and more generally at enriched profunctors---and show that they indeed form a compact closed category. profunctor!enriched|see profunctor
+
+Compact closed categories
+
+As we said, compact closed categories are symmetric monoidal categories (see ) with extra structure
+
+These equations are sometimes called the snake equations
+
+\] In wiring diagrams, the snake equations are then drawn as follows: \[
+
+So, for example, here is a corelation from a set A having five elements to a set B having six elements; two elements are equivalent if they are encircled by the same dashed line. \[
+
+\] Then the composite β∘α of our two corelations is given by \[
+
+\] That is, two elements are equivalent in the composite corelation if we may travel from one to the other staying within equivalence classes of either α or β
+
+Indeed, all we need to do is construct the monoidal structure and duals for objects. Let's sketch how this goes
+
+In terms of wiring diagrams, the monoidal structure looks like stacking wires or boxes on top of one another, with no new interaction. stacking|see monoidal product \[
+
+Exercise. Check these proposed units and counits do indeed obey the snake equations
+
+Summary and further reading
+
+This chapter introduced three important ideas in category theory: profunctors, categorification, and monoidal categories. Let's talk about them in turn
+
+Profunctors generalize binary relations. In particular, we saw that the idea of profunctor over a monoidal preorder gave us the additional power necessary to formalize the idea of a feasibility relation between resource preorders. The idea of a feasibility relation is due to Andrea Censi; he called them monotone codesign problems. The basic idea is explained in , where he also gives a programming language to specify and solve codesign problems. In , Censi further discusses how to use estimation to make solving codesign problems computationally efficient
+
+We have not defined symmetric monoidal bicategories, but you would be correct if you guessed this is a sort of categorification of symmetric monoidal categories. Baez and Dolan tell the subtle story of categorifying categories to get ever higher categories in . Crane and Yetter give a number of examples of categorification in
+
+Finally, we talked about monoidal categories and compact closed categories. Monoidal categories are a classic, central topic in category theory, and a quick introduction can be found in . Wiring diagrams play a huge role in this book and in applied category theory in general; while informally used for years, these were first formalized in the case of monoidal categories. You can find the details here
+
+Compact closed categories are a special type of structured monoidal category; there are many others. For a broad introduction to the different flavors of monoidal category, detailed through their various styles of wiring diagram, see
+
+Comparing systems as interacting signal processors
+
+Cyber-physical systems are systems that involve tightly interacting physical and computational parts. An example is an autonomous car: sensors inform a decision system that controls a steering unit that drives a car, whose movement changes the sensory input. While such systems involve complex interactions of many different subsystems---both physical ones, such as the driving of a wheel by a motor, or a voltage placed across a wire, and computational ones, such as a program that takes a measured velocity and returns a desired acceleration---it is often useful to model the system behavior as simply the passing around and processing of signals. For this illustrative sketch, we will just think of signals as things which we can add and multiply, such as real numbers
+
+Interaction in cyber-physical systems can often be understood as variable sharing; i.e.\ when two systems are linked, certain variables become shared. For example, when we connect two train carriages by a physical coupling, the train carriages must have the same velocity, and their positions differ by a constant. Similarly, when we connect two electrical ports, the electric potentials at these two ports now must be the same, and the current flowing into one must equal the current flowing out of the other. Of course, the way the shared variable is actually used may be very different for the different subsystems using it, but sharing the variable serves to couple those systems nonetheless
+
+Note that both the above examples involve the physical joining of two systems; more figuratively, we might express the interconnection by drawing a line connecting the boxes that represent the systems. In its simplest form, this is captured by the formalism of signal flow graphs, due to Claude Shannon in the 1940s. Here is an example of a signal flow graph
+
+A signal flow graph might describe an existing system, or it might specify a system to be built. In either case, it is important to be able to analyze these diagrams to understand how the composite system converts inputs to outputs. This is reminiscent of a co-design problem from , which asks how to evaluate the composite feasibility relation from a diagram of simpler feasibility relations. We can use this process of evaluation to determine whether two different signal flow graphs in fact specify the same composite system, and hence to validate that a system meets a given specification
+
+In this chapter, however, we introduce categorical tools---props and their presentations---for reasoning more directly with the diagrams. Recall from that symmetric monoidal preorders are a type of symmetric monoidal category where the morphisms are constrained to be very simple: there can be at most one morphism between any two objects. Here shall see that signal flow graphs represent morphisms in a different, complementary simplification of the symmetric monoidal category concept, known as a prop. A prop is a symmetric monoidal category where the objects are constrained to be very simple: they are generated, using the monoidal product, by just a single object. Just as the wiring diagrams for symmetric monoidal preorders did not require labels on the boxes, this means that wiring diagrams for props do not require labels on the wires. This makes props particularly suited for describing diagrammatic formalisms such as signal flow graphs, which only have wires of a single type
+
+Finally, many systems behave in what is called a linear way, and linear systems form a foundational part of control theory, a branch of engineering that works on cyber-physical systems. Similarly, linear algebra is a foundational part of modern mathematics, both pure and applied, which includes not only control theory, but also the practice of computing, physics, statistics, and many others. As we analyze signal flow graphs, we shall see that they are in fact a way of recasting linear algebra---more specifically, matrix operations---in graphical terms. More formally, we shall say that signal flow graphs have functorial semantics as matrices
+
+Props and presentations
+
+Signal flow graphs as in are easily seen to be wiring diagrams of some sort. However they have the property that, unlike for monoidal preorders and monoidal categories, there is no need to label the wires. This corresponds to a form of symmetric monoidal category, known as a prop, which has a very particular set of objects
+
+Props: definition and first examples
+
+Recall the definition of symmetric strict monoidal category from
+
+Exercise. Choose one of and explicitly provide the five aspects of props discussed below
+
+The prop of port graphs
+
+An important example of a prop is the one in which morphisms are open, directed, acyclic port graphs, as we next define. We will just call them port graphs
+
+This seems quite a technical construction, but it's quite intuitive once you unpack it a bit. Let's do this
+
+Example. Here is an example of a (2,3)-port graph, i.e.\ with m = 2 and n = 3
+
+\] The internal flow graph---which one can see is acyclic---is shown below: \[ [column sep = 50pt, row sep=35pt] && & \]
+
+As you might guess from , port graphs are closely related to wiring diagrams for monoidal categories, and even more closely related to wiring diagrams for props
+
+Exercise. Describe how port graph composition looks, with respect to the visual representation of , and give a nontrivial example
+
+Free constructions and universal properties
+
+Given some sort of categorical structure, such as a preorder, a category, or a prop, it is useful to be able to construct one according to your own specification. (This should not be surprising.) The minimally-constrained structure that contains all the data you specify is called the free structure on your specification: it's free from unneccessary constraints! We have already seen some examples of free structures; let's recall and explore them
+
+A higher-level justification understands freeness as a left adjoint (see ), but we will not discuss that here
+
+The free prop on a signature
+
+We now give an explicit construction of the free prop in terms of port graphs (see )
+
+Note that the generator g is used twice, while the generator f is not used at all in . This is perfectly fine
+
+Just like free preorders and free categories, the free prop is characterized by a universal property in terms of maps out. The following can be proved in a manner similar to
+
+First, we need the notion of a prop expression. Just as prop signatures are the analogue of the graphs used to present categories, prop expressions are the analogue of paths in these graphs
+
+Another way of describing when we should consider two prop expressions equal is to say that they are equal if and only if they represent the same port graph. In either case, these notions induce an equivalence relation on the set of prop expressions. To say that we consider these certain prop expressions equal is to say that the morphisms of the free prop on G are the G-generated prop expressions quotiented by this equivalence relation (see )
+
+Props via presentations
+
+In we saw that a presentation for a category, or database schema, consists of a graph together with imposed equations between paths. Similarly here, sometimes we want to construct a prop whose morphisms obey specific equations. But rather than mere paths, the things we want to equate are prop expressions as in
+
+Simplified signal flow graphs
+
+We now return to signal flow graphs, expressing them in terms of props. We will discuss a simplified form without feedback (the only sort we have discussed so far), and then extend to the usual form of signal flow graphs in . But before we can do that, we must say what we mean by signals; this gets us into the algebraic structure of ``rigs.'' We will get to signal flow graphs in
+
+Signals can be amplified, and they can be added. Adding and amplification interact via a distributive law, as follows: if we add two signals, and then amplify them by some amount a, it should be the same as amplifying the two signals separately by a, then adding the results
+
+We can think of all the possible amplifications as forming a structure called a rig, defined as follows
+
+We have already encountered many examples of rigs
+
+The following is an example for readers who are familiar with the algebraic structure known as ``rings.''
+
+The iconography of signal flow graphs
+
+A signal flow graph is supposed to keep track of the amplification, by elements of a rig R, to which signals are subjected. While not strictly necessary, we will assume the signals themselves are elements of the same rig R. We refer to elements of R as signals for the time being
+
+Amplification of a signal by some value a ∈ R is simply depicted like so: \[
+
+\] We interpret the above icon as a depicting a system where a signal enters on the left-hand wire, is multiplied by a, and is output on the right-hand wire
+
+What is more interesting than just a single signal amplification, however, is the interaction of signals. There are four other important icons in signal flow graphs. \[
+
+\] Let's go through them one by one. The first two are old friends from : copy and discard. \[
+
+\] We interpret this diagram as taking in an input signal on the left, and outputting that same value to both wires on the right. It is basically the ``copy'' operation from
+
+Next, we have the ability to discard signals. \[
+
+\] This takes in any signal, and outputs nothing. It is basically the ``waste'' operation from
+
+Next, we have the ability to add signals. \[
+
+\] This takes the two input signals and adds them, to produce a single output signal
+
+Finally, we have the zero signal. \[
+
+\] This has no inputs, but always outputs the 0 element of the rig
+
+Using these icons, we can build more complex signal flow graphs. To compute the operation performed by a signal flow graph we simply trace the paths with the above interpretations, plugging outputs of one icon into the inputs of the next icon
+
+In addition to tracing the processing of the values as they move forward through the graph, we can also calculate these values by summing over paths. More explicitly, to get the contribution of a given input wire to a given output wire, we take the sum, over all paths p joining the wires, of the total amplification along that path
+
+Exercise. The following flow graph takes in two natural numbers x and y \[
+
+\] and produces two output signals. What are they?
+
+Example. This example is for those who have some familiarity with differential equations. A linear system of differential equations provides a simple way to specify the movement of a particle. For example, consider a particle whose position (x,y,z) in 3-dimensional space is determined by the following equations
+
+Using what is known as the Laplace transform, one can convert this into a linear system involving a formal variable D, which stands for ``differentiate.'' Then the system becomes
+
+which can be represented by the signal flow graph \[
+
+We can formally define simplified signal flow graphs using props
+
+For now we'll drop the term `simplified', since these are the only sort of signal flow graph we know. We'll return to signal flow graphs in their full glory---i.e.\ including feedback---in
+
+\] because we said we would label boxes with the elements of G. But it is easier on the eye to draw remove the boxes and just look at the icons inside as in , and so we'll draw our diagrams in that fashion
+
+More importantly, props provide language to understand the semantics of signal flow graphs. Although the signal flow graphs themselves are free props, their semantics---their meaning in our model of signals flowing---will arise when we add equations to our props, as in . These equations will tell us when two signal flow graphs act the same way on signals. For example
+
+both express the same behavior: a single input signal is copied twice so that three identical copies of the input signal are output
+
+If two signal flow graphs S,T are almost the same, with the one exception being that somewhere we replace the left-hand side of with the right-hand side, then S and T have the same behavior. But there are other replacements we could make to a signal flow graph that do not change its behavior. Our next goal is to find a complete description of these replacements
+
+The prop of matrices over a rig
+
+). \] What is the direct sum matrix A + B?
+
+Turning signal flow graphs into matrices
+
+Let's now consider more carefully what we mean when we talk about the meaning, or semantics, of each signal flow graph. We'll use matrices. \[
+
+\] In the examples like the above (copied from ), the signals emanating from output wires, say a and b, are given by certain sums of amplified input values, say x and y. If we can only measure the input and output signals, and care nothing for what happens in between, then each signal flow graph may as well be reduced to a matrix of amplifications. We can represent the signal flow graph of by either the matrix on the left (for more detail) or the matrix on the right if the labels are clear from context: \[
+
+Note that both zero and discard are represented by empty matrices, but of differing dimensions. In linear algebra it is unusual to consider matrices of the form 0× n or n× 0 for various n to be different, but they can be kept distinct for bookkeeping purposes: you can multiply a 0× 3 matrix by a 3× n matrix for any n, but you can not multiply it by a 2× n matrix
+
+Since signal flow graphs are morphisms in a free prop, the table in is enough to show that we can interpret any signal flow diagram as a matrix
+
+Proof. This follows immediately from the universal property of free props
+
+We have now constructed a matrix S(g) from any signal flow graph g. But how can we produce this matrix explicitly? Both for the example signal flow graph in and for the generators in , the associated matrix has dimension m× n, where m is the number of inputs and n the number of outputs, with (i,j)th entry describing the amplification of the ith input that contributes to the jth output. This is how one would hope or expect the functor S to work in general; but does it? We have used a big hammer---the universal property of free constructions---to obtain our functor S. Our next goal is to check that it works in the expected way. Doing so is a matter of using induction over the set of prop expressions, as we now see. Mathematical induction is a formal proof technique that can be thought of like a domino rally: if you knock over all the starting dominoes, and you're sure that each domino will be knocked down if its predecessors are, then you're sure every domino will eventually fall. If you want more rigor, or you want to understand the proof of as a genuine case of induction, ask a friendly neighborhood mathematician!
+
+Proposition. Let g be a signal flow graph with m inputs and n outputs. The matrix S(g) is the (m× n)-matrix whose (i,j)-entry describes the amplification of the ith input that contributes to the jth output
+
+Exercise. What matrix does the signal flow graph \[
+
+\] represent? What about the signal flow graph \[
+
+The idea of functorial semantics
+
+Let's pause for a moment to reflect on what we have just learned. First, signal flow diagrams are the morphisms in a prop. This means we have two special operations we can do to form new signal flow diagrams from old, namely composition (combining in series) and monoidal product (combining in parallel). We might think of this as specifying a `grammar' or `syntax' for signal flow diagrams
+
+As a language, signal flow graphs have not only syntax but also semantics: each signal flow diagram can be interpreted as a matrix. Moreover, matrices have the same grammatical structure: they form a prop, and we can construct new matrices from old using composition and monoidal product. In we completed this picture by showing that semantic interpretation is a prop functor between the prop of signal flow graphs and the prop of matrices. Thus we say that matrices give functorial semantics for signal flow diagrams
+
+Functorial semantics is a key manifestation of compositionality. It says that the matrix meaning S(g) for a big signal flow graph g can be computed by: splitting g up into little pieces, computing the very simple matrices for each piece, and using matrix multiplication and direct sum to put the pieces back together to obtain the desired meaning, S(g). This functoriality is useful in practice, for example in speeding up computation of the semantics of signal flow graphs: for large signal flow graphs, composing matrices is much faster than tracing paths
+
+Graphical linear algebra
+
+In this section we will begin to develop something called graphical linear algebra, which extends the ideas above. This formalism is actually quite powerful. For example, with it we can easily and graphically prove certain conjectures from control theory that, although they were eventually solved, required fairly elaborate matrix algebra arguments
+
+Tracing paths, it is easy to see that S ( g ) = M. Note that g is the composite of four layers, each layer respectively a monoidal product of (i) copy and discard maps, (ii) scalar multiplications, (iii) swaps and identities, (iv) addition and zero maps
+
+For the general case, see
+
+Exercise. Write down a detailed proof of . Suppose M is an m × n-matrix. Follow the idea of the (2× 2)-case in , and construct the signal flow graph g---having m inputs and n outputs---as the composite of four layers, respectively comprising (i) copy and discard maps, (ii) scalars, (iii) swaps and identities, (iv) addition and zero maps. For the first layer g_1, take \[ g_1 c_n + + c_n m (m n), \] where we take the monoidal product of m copies of c_n, and \[ c_n .(1+ ).(1+1+ ). .(1+ +1+ ) 1 n \] is the signal flow diagram that makes n copies of a single input. Next, define
+
+We have the following equations for any a,b∈ R: \[ =1.5ex 2
+
+Proof. The key idea is that these equations are sufficient to rewrite any G_R-generated prop expression into a normal form---the one used in the proof of ---with all the black nodes to the left, all the white nodes to the right, and all the scalars in the middle. This is enough to show the equality of any two expressions that represent the same matrix. Details can be found in or
+
+Once you get used to it, provides an intuitive, visual way to reason about matrices. Indeed, the theorem implies two signal flow graphs represent the same matrix if and only if one can be turned into the other by local application of the above equations and the prop axioms
+
+The fact that you can prove two SFGs to be the same by using only graphical rules can be stated in the jargon of logic: we say that the graphical rules provide a sound and complete reasoning system. To be more specific, sound refers to the forward direction of the above statement: two signal flow graphs represent the same matrix if one can be turned into the other using the given rules. Complete refers to the reverse direction: if two signal flow graphs represent the same matrix, then we can convert one into the other using the equations of
+
+This means that one can be transformed into the other by using only the equations from . Indeed, here
+
+Exercise. For each matrix in , draw another signal flow graph that represents that matrix. Using the above equations and the prop axioms, prove that the two signal flow graphs represent the same matrix
+
+Exercise. Consider the signal flow graphs
+
+Aside: monoid objects in a monoidal category
+
+monoid|seealso monoidal category, monoid object in
+
+Various subsets of the equations in encode structures that are familiar from many other parts of mathematics, e.g.\ representation theory. For example one can find the axioms for (co)monoids, (co)monoid homomorphisms, Frobenius algebras, and (with a little rearranging) Hopf algebras, sitting inside this collection. The first example, the notion of monoids, is particularly familiar to us by now, so we briefly discuss it below, both in algebraic terms ( ) and in diagrammatic terms ( )
+
+Monoid objects are so-named because they are an abstraction of the usual concept of monoid
+
+Signal flow graphs: feedback and more
+
+At this point in the story, we have seen that every signal flow graph represents a matrix, and this gives us a new way of reasoning about matrices. This is just the beginning of a beautiful tale, one not only of graphical matrices, but of graphical linear algebra. We close this chapter with some brief hints at how the story continues
+
+mirror image|see transpose reverse icon|see transpose
+
+This is called the transposed relation
+
+give us formulas for interpreting signal flow graphs and their mirror images. But this would easily lead to disappointment, if we couldn't combine the two directions behaviorally; luckily we can
+
+What should the behavior be for a diagram such as the following: \[
+
+We shall use this as the general definition for composing two behaviors
+
+The following two exercises help us understand what this behavior is
+
+In we see that every matrix, or linear map, can be represented as the behavior of a signal flow graph, and in we see that solution sets of linear equations can also be represented. This includes central concepts in linear algebra, like kernels and images
+
+\] is equal to the kernel of the matrix S(g). Show that the composite of discard-reverses with g, shown here \[
+
+This is certainly doable, but for this exercise, we only ask that you prove that the composite of two linear relations is linear
+
+Although not difficult, we leave the full presentation to further reading ( ). Instead, we'll conclude our exploration of the prop of linear relations by noting that some of these `few more' equations state that relations---just like co-design problems in ---form a compact closed category
+
+Using the icons available to us for signal flow graphs, we can build morphisms that look like the `cup' and `cap' from
+
+Graphically, this means that the three signal flow graphs \[
+
+\] all represent the same relation
+
+Using these relations, it is straightforward to check the following result
+
+To make our signal flow graphs simpler, we define new icons cup and cap by the equations \[
+
+There are three factors that contribute to the actual speed v. First, there is the actual speed v. Second, there are external forces F. Third, we have our control system: this will take some linear combination a * u + b * v of the desired speed and actual speed, amplify it by some factor p to give a (possibly negative) acceleration. We can represent this system as follows, where m is the mass of the car. \[
+
+\] This can be read as the following equation, where one notes that v occurs twice: \[v= m F(t) dt + u(t) + p au(t)+bv(t) dt.\]
+
+Summary and further reading
+
+The goal of this chapter was to explain how props formalize signal flow graphs, and provide a new perspective on linear algebra. To do this, we examined the idea of free and presented structures in terms of universal properties. This allowed us to build props that exactly suited our needs
+
+Pawe \ Soboci\'nski's Graphical Linear Algebra blog is an accessible and fun exploration of the key themes of this chapter, which goes on to describe how concepts such as determinants, eigenvectors, and division by zero can be expressed using signal flow graphs . For the technical details, one could start with Baez and Erbele , or Zanasi's thesis and its related series of papers . For details about applications to control theory, see . From the control theoretic perspective, the ideas and philosophy of this chapter are heavily influenced by Willems' behavioral approach
+
+For the reader that has not studied abstract algebra, we mention that rings, monoids, and matrices are standard fare in abstract algebra, and can be found in any standard introduction, such as . Rigs, also known as semirings, are a bit less well known, but no less interesting; a comprehensive survey of the literature can be found in . semiring|see rig
+
+Perhaps the most significant idea in this chapter is the separation of structure into syntax and semantics, related by a functor. This is not only present in the running theme of studying signal flow graphs, but in our aside , where we talk, for example, about monoid objects in monoidal categories. The idea of functorial semantics is yet another due to Lawvere, first appearing in his thesis
+
+The ubiquity of network languages
+
+Electric circuits, chemical reaction networks, finite state automata, Markov processes: these are all models of physical or computational systems that are commonly described using network diagrams. Here, for example, we draw a diagram that models a flip-flop, an electric circuit---important in computer memory---that can store a bit of information: \[ int/.style= draw, fill, circle, inner sep=1pt [circuit ee IEC, set resistor graphic=var resistor IEC graphic,xscale=2,yscale=1,thick] (1) at (.8,0) ; (2) at (2,0) ; (3) at (3,0) ; (4) at (4,0) ; (5) at (5,0) ; (z) at (0,2.5) ; (a) at (0,2) ; (b) at (0,.7) ; (c) at (0,0) ; (d) at (0,-.7) ; (e) at (0,-2) ; (f) at (0,-2.5)
+
+at (a-|2) ; at (e-|2) ; at (b-|3) ; at (d-|3) ; at (b-|5) ; at (d-|5) ; (source) to (c-|1) (a-|1) to (e-|1) (a-|1) to[resistor] node[label= [label distance=0pt]90: 1KΩ ] (a-|2) (e-|1) to[resistor] node[label= [label distance=0pt]90: 1KΩ ] (e-|2) (a-|2) to[resistor] node[label= [label distance=-1pt]180: 10KΩ ] (b-|2) (e-|2) to[resistor] node[label= [label distance=-1pt]180: 10KΩ ] (d-|2) (b-|2) to (d-|3) (d-|2) to (b-|3) (b-|3) to (t1.B) (d-|3) to (t2.B) (a-|2) to (t1.C) (e-|2) to (t2.C) (t1.E) to (a-|5) to (c-|5) (t2.E) to (e-|5) to (c-|5) (b-|3) to (t3.C) (t3.E) to (b-|5) (t3.B) to (set) (d-|3) to (t4.C) (t4.E) to (d-|5) (t4.B) to (reset) (a-|2) to (out) (e-|2) to (out2) (c-|5) to (ground) ; \]
+
+Network diagrams have time-tested utility. In this chapter, we are interested in understanding the common mathematical structure that they share, for the purposes of translating between and unifying them; for example certain types of Markov processes can be simulated and hence solved using circuits of resisters. When we understand the underlying structures that are shared by network diagram languages, we can make comparisons between the corresponding mathematical models easily
+
+At first glance network diagrams appear quite different from the wiring diagrams we have seen so far. For example, the wires are undirected in the case above, whereas in a category---including monoidal categories seen in resource theories or co-design---every morphism has a domain and codomain, giving it a sense of direction. Nonetheless, we shall see how to use categorical constructions such as universal properties to create categorical models that precisely capture the above type of ``network'' compositionality, i.e.\ allowing us to effectively drop directedness when convenient
+
+In particular we'll return to the idea of a colimit, which we sketched for you at the end of , and show how to use colimits in the category of sets to formalize ideas of connection. Here's the key idea
+
+Let's say we want to install some lights: we want to create a circuit so that when we flick a switch, a light turns on or off. To start, we have a bunch of circuit components: a power source, a switch, and a lamp connected to a resistor: \[
+
+\] We want to connect them together, but there are many ways to do so. How should we describe the particular way that will form a light switch?
+
+\] Looking at this picture, it is clear what we need to do: just identify---i.e.\ merge or make equal---the ports as indicated, to get the following circuit: \[
+
+In summary, the first part of this chapter is devoted to the slogan `colimits model interconnection'. In addition to universal constructions such as colimits, however, another way to describe interconnection is to use wiring diagrams. We go full circle when we find that these wiring diagrams are strongly connected to cospans, and hence colimits
+
+In this book we have seen the utility of defining syntactic or algebraic structures that describe the sort of composition operations that make sense and can be performed in a given application area. Examples include monoidal preorders with discarding, props, and compact closed categories. Each of these has an associated sort of wiring diagram style, so that any wiring diagram of that style represents a composition operation that makes sense in the given area: the first makes sense in manufacturing, the second in signal flow, and the third in collaborative design. So our second goal is to answer the question, ``how do we describe the compositional structure of network-style wiring diagrams?''
+
+\] Two spiders can share a leg, and when they do, we can fuse them into one spider. The intuition is that spiders are connection points for a number of wires, and when two connection points are connected, they fuse to form an even more `connect-y' connection point. Here is an example: \[
+
+\] A hypergraph category may have many species of spiders with the rule that spiders of different species cannot share a leg---and hence not fuse---but two spiders of the same species can share legs and fuse. We add spider diagrams to the iconography of hypergraph categories
+
+Colimits and connection
+
+Universal constructions are central to category theory. They allow us to define objects, at least up to isomorphism, by describing their relationship with other objects. So far we have seen this theme in a number of different forms: meets and joins ( ), Galois connections and adjunctions ( ), limits ( ), and free and presented structures (Section - ). Here we turn our attention to colimits
+
+Just as the simplest limit is a terminal object (see ), the simplest colimit is an initial object. This is the case where you start with no objects and you merge them together
+
+Again, the hallmark of universality is the existence of a unique map to any other comparable object
+
+Exercise. Explain the statement ``the hallmark of universality is the existence of a unique map to any other comparable object,'' in the context of . In particular, what is being universal in , and which is the ``comparable object''?
+
+Remark. As mentioned in , we often speak of `the' object that satisfies a universal property, such as `the initial object', even though many different objects could satisfy the initial object condition. Again, the reason is that initial objects are unique up to unique isomorphism: any two initial objects will have a canonical isomorphism between them, which one finds using various applications of the universal property
+
+Coproducts generalize both joins in a preorder and disjoint unions of sets. disjoint union|see union, disjoint
+
+Exercise. Explain why, in a preorder, coproducts are the same as joins
+
+Pushouts are a way of combining sets. Like a union of subsets, a pushout can combine two sets in a non-disjoint way: elements of one set may be identified with elements of the other. The pushout construction, however, is much more general: it allows (and requires) the user to specify exactly which elements will be identified. We'll see a demonstration of this additional generality in
+
+\] Check your answer using the abstract description from
+
+Exercise. In we asked ``why?'' three times. Give a justification for ``why?^1''. Give a justification for ``why?^2''. Give a justification for ``why?^3''
+
+\] What is their pushout? Let's figure it out using the definition
+
+Proof. We will not give precise details here, but the key idea is an inductive one: one can build arbitrary finite diagrams using some basic building blocks. Full details can be found in
+
+In it we see two diagrams ready to be pushed out, and we know how to take pushouts. So suppose we do that; then we see another pushout diagram so we take the pushout again: \[ & B & Z A & Y & R X & Q & B & Z A & Y & R X & Q & S \] is the result---consisting of the object S, together with all the morphisms from the original diagram to S---the colimit of the original diagram? One can check that it indeed has the correct universal property and thus is a colimit
+
+Exercise. Check that the pushout of pushouts from satisfies the universal property of the colimit for the original diagram
+
+Let's return to the example circuit in the introduction to hint at why colimits are useful for interconnection. Consider the following picture: \[
+
+\] In the depiction on the left, we simply represent the functions f and g by drawing arrows from each a∈ A to f(a) and each b∈ B to g(b). In the depiction on the right, we make this picture resemble wires a bit more, simply drawing a wire where before we had an arrow, and removing the unnecessary center dots. We also draw a dotted line around points that are connected, to emphasize an important perspective, that cospans establish that certain ports are connected, i.e.\ part of the same equivalence class
+
+The monoidal product is given simply by the disjoint union of two cospans; in pictures it is simply combining two cospans by stacking one above another
+
+Exercise. Depicting the composite of cospans in with the wire notation gives
+
+Hypergraph categories
+
+A hypergraph category is a type of symmetric monoidal category whose wiring diagrams are networks. We will soon see that electric circuits can be organized into a hypergraph category; this is what we've been building up to. But to define hypergraph categories, it is useful to first introduce Frobenius monoids
+
+The pictures of cospans we saw above, e.g.\ in look something like icons in signal flow graphs (see ): various wires merge and split, initialize and terminate. And these follow the same rules they did for linear relations, which we briefly discussed in . There's a lot of potential for confusion, so let's start from scratch and build back up
+
+If you want to go all the way and say ``all I care about is which port is connected to which; I don't even care about left and right'', then you need a few more axioms to say how the morphisms μ and δ, the merger and the splitter, interact
+
+We refer to an object X equipped with a Frobenius structure as a special commutative Frobenius monoid, or just Frobenius monoid for short
+
+\] It can be written formally as (m-1) μ's followed by (n-1) δ's, with special cases when m = 0 or n = 0
+
+Example. As the following two morphisms both (i) have the same number of inputs and outputs, (ii) are constructed only from spiders, and (iii) are connected, immediately implies they are equal: \[
+
+Another way of understanding Frobenius monoids is to relate them to cospans. Recall the notion of prop presentation from
+
+Thus we see that ideal wires, connectivity, cospans, and objects with Frobenius structures are all intimately related. We use Frobenius structures (all that splitting, merging, initializing, and terminating stuff) as a way to capture the grammar of circuit diagrams
+
+Wiring diagrams for hypergraph categories
+
+We introduce hypergraph categories through their wiring diagrams. Just like for monoidal categories, the formal definition is just the structure required to unambiguously interpret these diagrams
+
+Indeed, our interest in hypergraph categories is best seen in their wiring diagrams. The key idea is that wiring diagrams for hypergraph categories are network diagrams. This means, in addition to drawing labeled boxes with inputs and outputs, as we can for monoidal categories, and in addition to bending these wires around as we can for compact closed categories, we are allowed to split, join, terminate, and initialize wires
+
+Here is an example of a wiring diagram that represents a composite of morphisms in a hypergraph category \[
+
+\] We have suppressed some of the object/wire labels for readability, since all types can be inferred from the labeled ones
+
+Exercise. What label should be on the input to h? What label should be on the output of g? What label should be on the fourth output wire of the composite?
+
+Thus hypergraph categories are general enough to talk about all network-style diagrammatic languages, like circuit diagrams
+
+Definition of hypergraph category
+
+We are now ready to define hypergraph categories formally. Since the wiring diagrams for hypergraph categories are just those for symmetric monoidal categories with a few additional icons, the definition is relatively straightforward: we just want a Frobenius structure on every object. The only coherence condition is that these interact nicely with the monoidal product
+
+Exercise. Using your knowledge of colimits, show that the maps defined in do indeed obey the special law (see )
+
+Example. linear relations!hypergraph category of|see hypergraph category, of linear relations The prop of linear relations, which we briefly mentioned in , is a hypergraph category. In fact, it is a hypergraph category in two ways, by choosing either the black `copy' and `discard' generators or the white `add' and `zero' generators as the Frobenius maps
+
+We can generalize the construction we gave in
+
+Proposition. Hypergraph categories are self-dual compact closed categories, if we define the cup and cap to be \[
+
+Proof. The proof is a straightforward application of the Frobenius and unitality axioms
+
+Exercise. Fill in the missing diagram in the proof of using the equations from , their opposites, and
+
+The goal of this section is to show how we can construct a hypergraph category whose morphisms are electric circuits. To do this, we first must introduce the notion of structure-preserving map for symmetric monoidal categories, a generalization of monoidal monotones known as symmetric monoidal functors. Then we introduce a general method---that of decorated cospans---for producing hypergraph categories. Doing all this will tie up lots of loose ends: colimits, cospans, circuits, and hypergraph categories
+
+Symmetric monoidal functors
+
+Now that we have briefly introduced symmetric monoidal functors, we return to the task at hand: constructing a hypergraph category of circuits. To do so, we introduce the method of decorated cospans
+
+Circuits have lots of internal structure, but they also have some external ports---also called `terminals'---by which to interconnect them with others. Decorated cospans are ways of discussing exactly that: things with external ports and internal structure
+
+To see how this works, let us start with the following example circuit
+
+We might formally consider this as a graph on the set of four ports, where each edge is labeled by a type of circuit component (for example, the top edge would be labeled as a resistor of resistance 2Ω). For this circuit to be a morphism in some category, i.e.\ in order to allow for interconnection, we must equip the circuit with some notion of interface. We do this by marking the ports in the interface using functions from finite sets
+
+Let N be the set of nodes of the circuit. Here the finite sets A, B, and N are sets consisting of one, two, and four elements respectively, drawn as points, and the values of the functions A → N and B → N are indicated by the grey arrows. This forms a cospan in the category of finite sets, for which the apex set N has been decorated by our given circuit
+
+Suppose given another such decorated cospan with input B
+
+Since the output of the first equals the input of the second (both are B), we can stick them together into a single diagram
+
+The composition is given by gluing the circuits along the identifications specified by B, resulting in the decorated cospan
+
+We've seen this sort of gluing before when we defined composition of cospans in . But now there's this whole `decoration' thing; our goal is to formalize it
+
+So, in our electrical circuit case, the decoration functor F sends a finite set N to the set of circuit diagrams---graphs whose edges are labeled by resistors, capacitors, etc.---that have N vertices
+
+That's rather compact! We'll unpack it, in a concrete case, in just a second. But let's record a theorem first
+
+In order to work with the above abstractions, we will get a bit more precise about the circuits example and then have a detailed look at how composition works in decorated cospan categories
+
+This defines a functor; let's explore it a bit in an exercise
+
+Exercise. Suppose we have circuits \[
+
+\] These white circles mark interface points of an open circuit
+
+We'll start with the cospans. The cospans we wish to compose are \[
+
+This means the composite cospan is \[
+
+\] Putting this all together, the composite circuit is \[
+
+\] The result is given by stacking them. In other words, their monoidal product is
+
+We leave you to do two compositions of your own
+
+Operads and their algebras
+
+In we described how decorating cospans builds a hypergraph category from a symmetric monoidal functor. We then explored how that works in the case that the decoration functor is somehow ``all circuit graphs on a set of nodes''
+
+In this book, we have devoted a great deal of attention to different sorts of compositional theories, from monoidal preorders to compact closed categories to hypergraph categories. Yet for an application you someday have in mind, it may be the case that none of these theories suffice. You need a different structure, customized to a particular situation. For example in the authors wanted to compose continuous dynamical systems with control-theoretic properties and realized that in order for feedback to make sense, the wiring diagrams could not involve what they called `passing wires'
+
+Operads design wiring diagrams
+
+Understanding that circuits are morphisms in a hypergraph category is useful: it means we can bring the machinery of category theory to bear on understanding electrical circuits. For example, we can build functors that express the compositionality of circuit semantics, i.e.\ how to derive the functionality of the whole from the functionality and interaction pattern of the parts. Or we can use the category-theoretic foundation to relate circuits to other sorts of network systems, such as signal flow graphs. Finally, the basic coherence theorems for monoidal categories and compact closed categories tell us that wiring diagrams give sound and complete reasoning in these settings
+
+However, one perhaps unsatisfying result is that the hypergraph category introduces artifacts like the domain and codomain of a circuit, which are not inherent to the structure of circuits or their composition. Circuits just have a single boundary interface, not `domains' and `codomains'. This is not to say the above model is not useful: in many applications, a vector space does not have a preferred basis, but it is often useful to pick one so that we may use matrices (or signal flow graphs!). But it would be worthwhile to have a category-theoretic model that more directly represents the compositional structure of circuits. In general, we want the category-theoretic model to fit our desired application like a glove. Let us quickly sketch how this can be done
+
+Let's return to wiring diagrams for a second. We saw that wiring diagrams for hypergraph categories basically look like this
+
+Note that if you had a box with A and B on the left and D on the right, you could plug the above diagram right inside it, and get a new open circuit. This is the basic move of operads
+
+But before we explain this, let's get where we said we wanted to go: to a model where there aren't ports on the left and ports on the right, there are just ports. We want a more succinct model of composition for circuit diagrams; something that looks more like this
+
+Do you see how diagrams and are actually exactly the same in terms of interconnection pattern? The only difference is that the latter does not have left/right distinction: we have lost exactly what we wanted to lose
+
+The cost is that the `boxes' f,g,h,k in no longer have a left/right distinction; they're just circles now. That wouldn't be bad except that it means they can no longer represent morphisms in a category---like they used to above, in ---because morphisms in a category by definition have a domain and codomain. Our new circles have no such distinction. So now we need a whole new way to think about `boxes' categorically: if they're no longer morphisms in a category, what are they? The answer is found in the theory of operads
+
+The types then allow us to specify the, well, types of the arguments---inputs---that each function takes. So making tea is a 2-ary operation, an operation with arity 2, because it takes in two things. To make tea you need some warm water, and you need some tea leaves
+
+Example. Context-free grammars are to operads as graphs are to categories. Let's sketch what this means. First, a context-free grammar is a way of describing a particular set of `syntactic categories' that can be formed from a set of symbols. For example, in English we have syntactic categories like nouns, determiners, adjectives, verbs, noun phrases, prepositional phrases, sentences, etc. The symbols are words, e.g.\ cat, dog, the, chases
+
+To define a context-free grammar on some alphabet, one specifies some production rules, which say how to form an entity in some syntactic category from a bunch of entities in other syntactic categories. For example, we can form a noun phrase from a determiner (the), an adjective (happy), and a noun (boy). Context free grammars are important in both linguistics and computer science. In the former, they're a basic way to talk about the structure of sentences in natural languages. In the latter, they're crucial when designing parsers for programming languages
+
+So just like graphs present free categories, context-free grammars present free operads. This idea was first noticed in
+
+Operads from symmetric monoidal categories
+
+Next we give an example that reminds us what all this operad stuff was for: wiring diagrams
+
+We can depict operations in this operad using diagrams like we drew above. For example, here's a picture of an operation
+
+\] Compute the cospan g∘_1 f. What is its arity? Draw the cospan g∘_1 f. Do you see it as substitution?
+
+We can turn any symmetric monoidal category into an operad in a way that generalizes the above two examples
+
+We can also turn any monoidal functor into what's called an operad functor
+
+The operad for hypergraph props
+
+\] and the result would be the closed circuit from the beginning of the chapter: \[
+
+In fact, operads---with the additional complexity in their definition---can be customized even more than all compositional structures defined so far. For example, we can define operads of wiring diagrams where the wiring diagrams must obey precise conditions far more specific than the constraints of a category, such as requiring that the diagram itself has no wires that pass straight through it. In fact, operads are strong enough to define themselves: roughly speaking, there is an operad for operads: the category of operads is equivalent to the category of algebras for a certain operad . While operads can, of course, be generalized again, they conclude our march through an informal hierarchy of compositional structures, from preorders to categories to monoidal categories to operads
+
+Summary and further reading
+
+This chapter began with a detailed exposition of colimits in the category of sets; as we saw, these colimits describe ways of joining or interconnecting sets. Our second way of talking about interconnection was the use of Frobenius monoids and hypergraph categories; we saw these two themes come together in the idea of a decorated cospans. The decorated cospan construction uses a certain type of structured functor to construct a certain type of structured category. More generally, we might be interested in other types of structured category, or other compositional structure. To address this, we briefly saw how these ideas fit into the theory of operads
+
+Colimits are a fundamental concept in category theory. For more on colimits, one might refer to any of the introductory category theory textbooks we mentioned in
+
+Special commutative Frobenius monoids and hypergraph categories were first defined, under the names `separable commutative Frobenius algebra' and `well-supported compact closed category', by Carboni and Walters . The use of decorated cospans to construct them is detailed in . The application to networks of passive linear systems, such as certain electrical circuits, is discussed in , while further applications, such as to Markov processes and chemistry can be found in . For another interesting application of hypergraph categories, we recommend the pixel array method for approximating solutions to nonlinear equations . The story of this chapter is fleshed out in a couple of recent, more technical papers
+
+Operads were introduced by May to describe compositional structures arising in algebraic topology ; Leinster has written a great book on the subject . More recently, with collaborators author-David has discussed using operads in applied mathematics, to model composition of structures in logic, databases, and dynamical systems
+
+How can we prove our machine is safe?
+
+Imagine you are trying to design a system of interacting components. You wouldn't be doing this if you didn't have a goal in mind: you want the system to do something, to behave in a certain way. In other words, you want to restrict its possibilities to a smaller set: you want the car to remain on the road, you want the temperature to remain in a particular range, you want the bridge to be safe for trucks to pass. Out of all the possibilities, your system should only permit some
+
+Since your system is made of components that interact in specified ways, the possible behavior of the whole---in any environment---is determined by the possible behaviors of each of its components in their local environments, together with the precise way in which they interact. The well-known concept of emergence is not about possibilities, it is about prediction. Predicting the behavior of a system given predictions of its components is notoriously hard. The behavior of a double pendulum is chaotic---meaning extremely sensitive to initial conditions---whereas those of the two component pendulums are not. However, the set of possibilities for the double pendulum is completely understood: it is the set of possible angular positions and velocities of both arms. When we speak of a machine's properties in this chapter, we always mean the guarantees on its behaviors, not the probabilities involved, though the latter would certainly be an interesting thing to contemplate. In this chapter, we will discuss a logic wherein one can describe general types of behavior that occur over time, and prove properties of a larger-scale system from the properties and interaction patterns of its components
+
+Consider the following model diagram
+
+In the diagram shown, the distance S is exposed by the exterior interface. This just means we imagine S as being a variable that other components of a larger system may want to interact with. We could have exposed no variables (making it a closed system) or we could have exposed A and/or S' as well
+
+One way to think about any of the components is to open it up and see how it is put together; with a detailed study we may be able to say what it will do. For example, just as S was exposed in the diagram above, one could imagine opening up the `sensor' component box in and seeing an interaction between subcomponents \[
+
+\] This ability to zoom in and see a single unit as being composed of others is important for design. But at the end of the day, you eventually need to stop diving down and simply use the properties of the components in front of you to prove properties of the composed system. Have no fear: everything we do in this chapter will be fully compositional, i.e.\ compatible with opening up lower-level subsystems and using the fractal-like nature of composition. However at a given time, your job is to design the system at a given level, taking the component properties of lower-level systems as given
+
+If we want to prove properties of the whole interacting system, then the relationships maintained by each component need to be written in a formal logical language, something like what we saw in . From that basis, we can use standard proof techniques to combine properties of subsystems into properties of the whole. This is our objective in the present chapter
+
+We have said how component systems, wired together in some arrangement, create larger-scale systems. We have also said that, given the wiring arrangement, the behavioral properties of the component systems dictate the behavioral properties of the whole. But what exactly are behavioral properties?
+
+In this chapter, we want to give a formal language and semantics for a very general notion of behavior. Mathematics is itself a formal language; the usual style of mathematical modeling is to use any piece of this vast language at any time and for any reason. One uses ``human understanding'' to ensure that the different models are fitting together in an appropriate way when different systems are combined
+
+The present work differs in that we want to find a domain-specific language for modeling behavior, any sort of behavior, and nothing but behavior. Unlike in the wide world of math, we want a setting where the only things that can be discussed are behaviors
+
+We discussed limits and colimits briefly in , but the basic idea is that one can make new objects from old by taking products, using equations to define subobjects, forming disjoint unions, and taking quotients. object 0. One of the most important types of limit (resp.\ colimit) is that of pullbacks (resp.\ pushouts); see
+
+For our work below, we'll need to know a touch more about pullbacks than we have discussed so far, so let's begin there
+
+Proposition. In the commutative diagram below, suppose that the (B,C,B',C') square is a pullback: \[ A &B &C A' &B' &C' \] Then the (A,B,A',B') square is a pullback iff the (A,C,A',C') rectangle is a pullback
+
+Exercise. Prove using the definition of limit from
+
+The abbreviation `epi' stands for epimorphism, and the abbreviation `mono' stands for monomorphism. Epimorphisms are maps that act like surjections, and monomorphisms are maps that act like injections. We can define them formally in terms of pushouts and pullbacks
+
+We will explain subobject classifiers in as much detail as we can; in fact, it will be our subject for the rest of
+
+The subobject classifier
+
+A predicate on Y is a morphism Y→Ω
+
+is a bit difficult to get one's mind around, partly because it is hard to imagine its consequences. It is like a superdense nugget from outer space, and through scientific explorations in the latter half of the 20th century, we have found that it brings super powers to whichever categories possess it. We will explain some of the consequences below, but very quickly, the idea is the following
+
+Let's move from stories and slogans to concrete facts
+
+Sheaves are fascinating, but highly abstract mathematical objects. They are not for the faint of mathematical heart (those who are faint of physical heart are welcome to proceed)
+
+Sheaf theory began before category theory, e.g.\ in the form of something called ``local coefficient systems for homology groups.'' However its modern formulation in terms of functors and sites is due to Grothendieck, who also invented toposes
+
+Recall the definition of functor and natural transformation from . Presheaves are just functors, but they have special terminology that leads us to think about them in a certain geometric way
+
+However one thinks of presheaves---in terms of lego assemblies or database instances---they're relatively straightforward. The difference between presheaves and sheaves is that sheaves take into account some sort of `covering information.' The trivial notion of covering is to say that every object covers itself and nothing more; if one uses this trivial covering, presheaves and sheaves are the same thing. In our behavioral context we will need a non-trivial notion of covering, so sheaves and presheaves will be slightly different. Our next goal is to understand sheaves on a topological space
+
+We said in that, rather than study spaces, we consider spaces as mere `sites' on which things happen. We also said the things that can happen on a space are called sheaves, and always form a type of category called a topos. To define a topos of sheaves, we must start with the site on which they exist
+
+Sites are very abstract mathematical objects, and we will not make them precise in this book. However, one of the easiest sorts of sites to think about are those coming from topological spaces: every topological space naturally has the structure of a site. We've talked about spaces for a while without making them precise; let's do so now
+
+At the very end of we mentioned how sheaves differ from presheaves in that they take into account `covering information.' The notion of covering an open set by a union of other open sets was defined in , and it will come into play when we define sheaves in
+
+Sheaves on topological spaces
+
+We are now ready to give the following definition, which comes in several waves: we first define matching families, then gluing, then sheaf condition, then sheaf, and finally the category of sheaves
+
+The category of sheaves on X is a topos, but we'll get to that
+
+This example is for intuition, and gives a case where the `section' and `restriction' terminology are easy to visualize
+
+Looking at the picture , do you see how we get all cross-sections of f over U?
+
+Example. A nice example of a sheaf on a space M is that of vector fields on M. If you calculate the wind velocity at every point on Earth, you will have what's called a vector field on Earth. If you know the wind velocity at every point in Afghanistan and I know the wind velocity at every point in Pakistan, and our calculations agree around the border, then we can glue our information together to get the wind velocity over the union of the two countries. All possible wind velocity fields over all possible open sets of the Earth's surface together form the sheaf of vector fields
+
+Let's say this a bit more formally. A manifold M---you can just imagine a sphere such as the Earth's surface---always has something called a tangent bundle. It is a space TM whose points are pairs (m,v), where m∈ M is a point in the manifold and v is a tangent vector emanating from it. Here's a picture of one tangent plane---all the tangent vectors emanating from some fixed point---on a sphere: \[
+
+\] The tangent bundle TM includes the whole tangent plane shown above---including the three vectors drawn on it---as well as the tangent plane at every other point on the sphere
+
+But are the sheaves on M the vector fields? That is, is there a one-to-one correspondence between sheaves on M and vector fields on M? If so, why? If not, how are sheaves on M and vector fields on M related?
+
+The subobject classifier Ω in a sheaf topos
+
+Logic in a sheaf topos
+
+In general, it is not easy to reduce further, so implication is the hardest logical connective to think about topologically
+
+In English, a predicate is the part of the sentence that comes after the subject. For example `` is even'' or `` likes the weather'' are predicates. Not every subject makes sense for a given predicate; e.g.\ the sentence ``7 is even'' may be false, but it makes sense. In contrast, the sentence ``2.7 is even'' does not really make sense, and ``2.7 likes the weather'' certainly doesn't. In computer science, they might say ``The expression `2.7 likes the weather' does not type check.''
+
+The point is that each predicate is associated to a type, namely the type of subject that makes sense for that predicate. When we apply a predicate to a subject of the appropriate type, the result has a truth value: ``7 is even'' is either true or false. Perhaps ``Bob likes the weather'' is true some days and false on others. In fact, this truth value might change by the year (bad weather this year), by the season, by the hour, etc. In English, we expect truth values of sentences to change over time, which is exactly the motivation for this chapter. We're working toward a logic where truth values change over time
+
+Quantification comes in two flavors: universal and existential, or `for all' and `there exists.' Each takes in a predicate of n + 1 variables and returns a predicate of n variables
+
+In we informally said that for any proposition p, e.g. ``Bob is in San Diego,'' there is a modal operator ``assuming p, ....'' Now we are in a position to make that formal
+
+We cannot prove here, but we give references in
+
+Type theories and semantics
+
+We have been talking about the logic of a topos in terms of open sets, but this is actually a conflation of two ideas that are really better left unconflated. The first is logic, or formal language, and the second is semantics, or meaning. The formal language looks like this
+
+To provide semantics for a logical system means to provide a compiler that converts each logical statement in the formal language into a mathematical statement about particular sheaves and their relationships. A computer can carry out logical deductions without knowing what any of them ``mean'' about sheaves. We say that semantics is sound if every formal proof is converted into a true fact about the relevant sheaves
+
+Every topos can be assigned a formal language, often called its internal language, in which to carry out constructions and formal proofs. This language has a sound semantics---a sort of logic-to-sheaf compiler---which goes under the name categorical semantics or Kripke-Joyal semantics. We gave the basic ideas in ; we give references to the literature in
+
+A topos of behavior types
+
+Now that we have discussed logic in a sheaf topos, we return to our motivating example, a topos of behavior types. We begin by discussing the topological space on which behavior types will be sheaves, a space called the interval domain
+
+Remark. Note that above, we were thinking very intuitively about time, e.g.\ when we discussed people being worried about the news. Now we will be thinking about time in a different way, but there is no need to change your answers or reconsider the intuitive thinking done above
+
+Safety proofs in temporal logic
+
+We now have at least a basic idea of what goes into a proof of safety, say for autonomous vehicles, or airplanes in the national airspace system. In fact, the underlying ideas of this chapter came out of a project between MIT, Honeywell Inc., and NASA . The background for the project was that the National Airspace System consists of many different systems interacting: interactions between airplanes, each of which is an interaction between physics, humans, sensors, and actuators, each of which is an interaction between still more basic parts. The same sort of story would hold for a fleet of autonomous vehicles, as in the introduction to this chapter
+
+The logic allows us to record axioms like that shown in and then reason from them: e.g.\ if the pilot and the airplane, and at least one of the three radars upholds its contract then safe separation will be maintained. We cannot give further details here, but these matters have been worked out in detail in ; see
+
+Summary and further reading
+
+This chapter was about modeling various sorts of behavior using sheaves on a space of time-intervals. Behavior may seem like it's something that occurs now in the present, but in fact our memory of past behavior informs what the current behavior means. In order to commit to anything, to plan or complete any sort of process, one needs to be able to reason over time-intervals. The nice thing about temporal sheaves---indeed sheaves on any site---is that they fit into a categorical structure called a topos, which has many useful formal properties. In particular, it comes equipped with a higher-order logic with which we can formally reason about how temporal sheaves work together when combined in larger systems. A much more detailed version of this story was presented in . But it would have been impossible without the extensive edifice of topos theory and domain theory that has been developed over the past six decades
+
+Sheaf toposes were invented by Grothendieck and his school in the 1960s as an approach to proving conjectures at the intersection of algebraic geometry and number theory, called the Weil conjectures. Soon after, Lawvere and Tierney recognized that toposes had all the structure necessary to do logic, and with a whole host of other category theorists, the subject was developed to an impressive extent in many directions. For a much more complete history, see
+
+There are many sorts of references on topos theory. One that starts by introducing categories and then moves to toposes, focusing on logic, is . Our favorite treatment is perhaps , where the geometric aspects play a central role. Finally, Johnstone has done the field a huge favor by collecting large amounts of the theory into a single two-volume set ; it is very dense, but an essential reference for the serious student or researcher. For just categorical (Kripke-Joyal) semantics of logic in a topos, one should see either , , or
+
+We did not mention domain theory much in this chapter, aside from referring to the interval domain. But domains, in the sense of Dana Scott, play an important role in the deeper aspects of temporal type theory. A good reference is , but for an introduction we suggest
+
+In some sense our application area has been a very general sort of dynamical system. Other categorical approaches to this subject include , , , and , though there are many others
+
+We hope you have enjoyed the seven sketches in this book. As a next step, consider running a reading course on applied category theory with some friends or colleagues. Simultaneously, we hope you begin to search out categorical ways of thinking about familiar subjects. Perhaps you'll find something you want to contribute to this growing field of applied category theory, or as we sometimes call it, the field of compositionality
+
+What is the result of joining the following two systems? \[
+
+\] Here is the join of the two systems: \[
+
+(none) -- (ab); \] Here is a picture (using text, rather than circles) for partitions of the set 1,2,3,4: \[
+
+Consider the partition shown below: \[
+
+\] Neither the second nor third is `total'. Moreover, the second one is not deterministic. The first one is a function which is not injective and not surjective. The fourth one is a function which is both injective and surjective
+
+Fill in the table from . \[ G= [ampersand replacement=\&] \& \& \&
+
+Is it correct to say that a discrete preorder is one where no two elements are comparable? The statement in the text is almost correct. It is correct to say that a discrete preorder is one where x and y are comparable if and only if x = y
+
+For any set S there is a coarsest partition, having just one part. What surjective function does it correspond to?
+
+Check the following two claims
+
+For any preorder (P,≤_P), the identity function is monotone
+
+Recall the notion of skeletal preorders ( ) and discrete preorders ( ). Show that a skeletal dagger preorder is just a discrete preorder, and hence just a set. We need to show that if (P,≤_P) is both skeletal and dagger, then it is discrete. So suppose it is skeletal, i.e.\ p_1≤ p_2 and p_2≤ p_1 implies p_1 = p_2. And suppose it is dagger, i.e.\ p_1≤ p_2 implies p_2≤ p_1. Well then p_1≤ p_2 implies p_1 = p_2, and this is exactly the definition of P being discrete
+
+\] Then the induced partitions g_ ( c_1 ), g_ ( c_2 ), g_ ( c_3 ), and g_ ( c_4 ) on T are: \[
+
+\] Let d be the partition as shown, which was chosen to be coarser than g_ ( c ). \[
+
+\] Let e be the partition as shown, which was chosen to not be coarser than g_ ( c ). \[
+
+To be sure that g really is right adjoint to f in , there are twelve tiny things to check; do so. That is, for every p∈ P and q∈ Q, check that f(p)≤ q iff p≤ g(q). We want to show that in the following picture, g is really right adjoint to f: \[
+
+\] Here g preserves labels and f rounds 3.9 to 4
+
+There are twelve tiny things to check: for each p∈ P and q∈ Q, we need to see that f(p)≤ q iff p≤ g(q). \[
+
+The string of inequalities in is not quite a proof, because technically there is no such thing as v + w + u, for example. Instead, there is v + w + u and v + ( w + u ), and so on. Formally prove, using only the rules of symmetric monoidal preorders ( ), that given the assertions in , the conclusion in follows. Reflexivity and transitivity ( ) should show up in your proof. Make sure you are explicit about where they do. How can you look at the wiring diagram and know that the symmetry axiom ( (d)) does not need to be invoked? Here is a line by line proof, where we write the reason for each step in parentheses on the right. Recall we call the properties (a) and (c) in monotonicity and associativity respectively
+
+\] What must the monoidal unit be in order to satisfy the conditions of ?
+
+Since all the inequalities regarding (a) and (b) above are in fact equalities, g is a strict monoidal monotone
+
+Which distance is bigger under the above description, d(Spain, US) or d(US, Spain)? The distance d(US,Spain) is bigger: the distance from, for example, San Diego to anywhere is Spain is bigger than the distance from anywhere in Spain to New York City
+
+Fill out the following table of distances in the weighted graph X from \[
+
+\] The table of distances for X is \[
+
+Fill out the matrix M_X associated to the graph X in : \[ M_X=
+
+\] The matrix of edge weights of X is \[ M_X=
+
+\] The matrix M with (x,y) entry equal to the maximum, taken over all paths p from x to y, of the minimum edge label in p is \[
+
+Recall the ``regions of the world'' Lawvere metric space from and the text above it. We just learned that we can convert it to a preorder. Draw the Hasse diagram for the preorder corresponding to the regions: US, Spain, and Boston. How can you interpret this preorder relation? \[
+
+Recall from the matrix M_X, for X as in . Calculate M_X^2, M_X^3, and M_X^4. Check that M_X^4 is what you got for the distance matrix in . We have the matrices \[ M_X= 0& &3& 2&0& &5 &3&0& & &6&0 M_X^2= 0&6&3& 2&0&5&5 5&3&0&8 &9&6&0 M_X^3=M_X^4= 0&6&3&11 2&0&5&5 5&3&0&8 11&9&6&0 \]
+
+Count the number of non-ID columns in . Count the number of arrows (foreign keys) in . They should be the same number in this case; is this a coincidence? There are five non-ID columns in and five arrows in . This is not a coincidence: there is always one arrow for every non-ID column
+
+The free category on the graph shown here
+
+has three objects and six morphisms: the three vertices and six paths in the graph
+
+\] in the form of a database, and then draw the graph. The results are given below. \[
+
+[column sep=15pt, row sep=5, pos=.9, ampersand replacement=\&] \& \&\& \&\& \&\& \&[20pt] \& \]
+
+\] Here it is, with names and emails shortened (e.g.\ B=Bob, 3=Em\_3): \[ [ampersand replacement=\&,row sep=1.5ex] E\& B \& G \& P\& S \& D \]
+
+Suppose we have the preorders \[
+
+Your answer should agree with what you got in ; does it?
+
+\] Fill in the matrix: \[
+
+\] A more methodical way is to use matrix multiplication. Here's one way you might do the multiplication, using a few tricks
+
+Draw a Hasse diagram for the collage of the profunctor shown here: \[
+
+\] The Hasse diagram for the collage of the given profunctor is quite simply this: \[
+
+So in both cases the data agrees. In we also require this data to satify two conditions, unitality and associativity. This is what is meant by the last sentence of
+
+\] Here is a picture of the snake equation on the left of . \[ nodelayer (1cA) at (-5, -1) ; (2cA) at (-5, -1.5) ; (3cA) at (-5, -2)
+
+(node cs:name=1aB, anchor=south west) -- (node cs:name=1aB, anchor=south east) -- (node cs:name=1aB, anchor=north east) -- (node cs:name=1aB, anchor=north west) -- (node cs:name=1outtB) -- (node cs:name=1outbB) -- (node cs:name=1bB, anchor=south west) -- (node cs:name=1bB, anchor=south east) -- (node cs:name=1bB, anchor=north east) -- (node cs:name=1bB, anchor=north west) -- (node cs:name=1inB) -- cycle; (node cs:name=2aB, anchor=south west) -- (node cs:name=2aB, anchor=south east) -- (node cs:name=2aB, anchor=north east) -- (node cs:name=2aB, anchor=north west) -- (node cs:name=2outtB) -- (node cs:name=2outbB) -- (node cs:name=2bB, anchor=south west) -- (node cs:name=2bB, anchor=south east) -- (node cs:name=2bB, anchor=north east) -- (node cs:name=2bB, anchor=north west) -- (node cs:name=2inB) -- cycle; (node cs:name=3aB, anchor=south west) -- (node cs:name=3aB, anchor=south east) -- (node cs:name=3aB, anchor=north east) -- (node cs:name=3aB, anchor=north west) -- (node cs:name=3outtB) -- (node cs:name=3outbB) -- (node cs:name=3bB, anchor=south west) -- (node cs:name=3bB, anchor=south east) -- (node cs:name=3bB, anchor=north east) -- (node cs:name=3bB, anchor=north west) -- (node cs:name=3inB) -- cycle
+
+(node cs:name=1bB, anchor=south east) -- (node cs:name=1bB, anchor=south west) -- (node cs:name=1bB, anchor=north west) -- (node cs:name=1bB, anchor=north east) -- (node cs:name=1outt) -- (node cs:name=1outb) -- (node cs:name=1cB, anchor=south east) -- (node cs:name=1cB, anchor=south west) -- (node cs:name=1cB, anchor=north west) -- (node cs:name=1cB, anchor=north east) -- (node cs:name=1in) -- cycle; (node cs:name=2bB, anchor=south east) -- (node cs:name=2bB, anchor=south west) -- (node cs:name=2bB, anchor=north west) -- (node cs:name=2bB, anchor=north east) -- (node cs:name=2outt) -- (node cs:name=2outb) -- (node cs:name=2cB, anchor=south east) -- (node cs:name=2cB, anchor=south west) -- (node cs:name=2cB, anchor=north west) -- (node cs:name=2cB, anchor=north east) -- (node cs:name=2in) -- cycle; (node cs:name=3bB, anchor=south east) -- (node cs:name=3bB, anchor=south west) -- (node cs:name=3bB, anchor=north west) -- (node cs:name=3bB, anchor=north east) -- (node cs:name=3outt) -- (node cs:name=3outb) -- (node cs:name=3cB, anchor=south east) -- (node cs:name=3cB, anchor=south west) -- (node cs:name=3cB, anchor=north west) -- (node cs:name=3cB, anchor=north east) -- (node cs:name=3in) -- cycle
+
+(node cs:name=1cA, anchor=south west) -- (node cs:name=1cB, anchor=south east) -- (node cs:name=1cB, anchor=north east) -- (node cs:name=1cA, anchor=north west) -- cycle; (node cs:name=2cA, anchor=south west) -- (node cs:name=2cB, anchor=south east) -- (node cs:name=2cB, anchor=north east) -- (node cs:name=2cA, anchor=north west) -- cycle; (node cs:name=3cA, anchor=south west) -- (node cs:name=3cB, anchor=south east) -- (node cs:name=3cB, anchor=north east) -- (node cs:name=3cA, anchor=north west) -- cycle; (node cs:name=1aB, anchor=south west) -- (node cs:name=1aC, anchor=south east) -- (node cs:name=1aC, anchor=north east) -- (node cs:name=1aB, anchor=north west) -- cycle; (node cs:name=2aB, anchor=south west) -- (node cs:name=2aC, anchor=south east) -- (node cs:name=2aC, anchor=north east) -- (node cs:name=2aB, anchor=north west) -- cycle; (node cs:name=3aB, anchor=south west) -- (node cs:name=3aC, anchor=south east) -- (node cs:name=3aC, anchor=north east) -- (node cs:name=3aB, anchor=north west) -- cycle; = nodelayer (1a) at (-2, 1) ; (2a) at (-2, 0.5) ; (3a) at (-2, 0) ; (1b) at (1, 1) ; (2b) at (1, 0.5) ; (3b) at (1, 0)
+
+edgelayer [rounded corners=5pt, densely dotted, thick] (node cs:name=1a, anchor=south west) -- (node cs:name=1b, anchor=south east) -- (node cs:name=1b, anchor=north east) -- (node cs:name=1a, anchor=north west) -- cycle; (node cs:name=2a, anchor=south west) -- (node cs:name=2b, anchor=south east) -- (node cs:name=2b, anchor=north east) -- (node cs:name=2a, anchor=north west) -- cycle; (node cs:name=3a, anchor=south west) -- (node cs:name=3b, anchor=south east) -- (node cs:name=3b, anchor=north east) -- (node cs:name=3a, anchor=north west) -- cycle; \]
+
+Check these proposed units and counits do indeed obey the snake equations . We check the first snake equation, the one on the left hand side of . The proof of the one on the right hand side is analogous
+
+\] Here is a picture of f + g \[
+
+Describe how port graph composition looks, with respect to the visual representation of , and give a nontrivial example. Composition of an (m,n)-port graph G and an (n,p)-port graph H looks visually like sticking them end to end, connecting the wires in order, removing the two outer boxes, and adding a new outer box
+
+For example, suppose we want to compose the following in the order shown: \[
+
+\] The result is: \[
+
+\] takes in two natural numbers, x and y, and produces two output signals. What are they? Semantically, if we apply the flow graph below to the input signal (x,y) \[

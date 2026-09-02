@@ -55,6 +55,14 @@ import arith_court  # noqa: E402
 РОД_ЕДИНИЦЫ = re.compile(
     r"^(?:the ([^\W\d_]+) is an? (unit|measure)"
     r"|([^\W\d_]+) — это (мера|единица))\.$")
+# ОТКАЗ ЕСТЬ ТАКОЕ ЖЕ УТВЕРЖДЕНИЕ: «ответа нет» истинно ровно тогда,
+# когда отношения между единицами и вправду НЕТ в объявленном графе.
+# Суд проходит граф сам, а не верит слову «нет».
+ОТКАЗ_РОДА = re.compile(
+    r"^(?:no answer: \d+ [^\W\d_]+, and a ([^\W\d_]+) and a "
+    r"([^\W\d_]+) measure different kinds"
+    r"|ответа нет: \d+ [^\W\d_]+, а ([^\W\d_]+) и ([^\W\d_]+) — "
+    r"меры разных родов)\.$")
 ВОПРОС = re.compile(
     r"^(?:what is an? ([^\W\d_]+)\?|что такое ([^\W\d_]+)\?)$")
 
@@ -94,6 +102,13 @@ def судить(строка):
     if если is not None:
         return если
     с = строка.strip()
+    m = ОТКАЗ_РОДА.match(с)
+    if m:
+        слева, справа = [г for г in m.groups() if г]
+        a, b = единица(слева), единица(справа)
+        if a is None or b is None:
+            return False, True
+        return True, отношение(a, b) is None
     m = РОД_ЕДИНИЦЫ.match(с)
     if m:
         слово = next(г for г in m.groups() if г)

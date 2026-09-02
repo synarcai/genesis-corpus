@@ -2290,6 +2290,28 @@
       ]
     },
     {
+      "name": "notationvar",
+      "file": "datasets/genesis_notationvar.txt",
+      "genre": "one sign, two scripts: the same record written in ASCII and in typography, and the court reduces both to one canon. The corpus knew every sign in ONE script only, and in different signs — in DIFFERENT ones: «x^2» 1702 times and «x²» ZERO, «≤» 351 and «<=» ZERO. The gap is invisible to the measure of SUBJECTS (quadratics are shown by the hundred) and was found by the BAND",
+      "act": [
+        "name",
+        "translate"
+      ],
+      "oracle": [
+        "recompute",
+        "reversibility"
+      ],
+      "boundary": [
+        "declared_pairs_only"
+      ],
+      "size": 173378,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
+    },
+    {
       "name": "chelpanov_logika_ru",
       "file": "shelf/ru/chelpanov_logika_ru.txt",
       "genre": "Г. И. Челпанов, «Учебник логики» (1897): определение логики, понятие, суждение, умозаключение, доказательство и разбор ошибок — школа рассуждения, писанная до всякой машины",
@@ -2305,7 +2327,7 @@
       "size": 480230,
       "tiers": [],
       "text": "prose",
-      "lang": "ru",
+      "язык": "ru",
       "тема": "логика",
       "плотность": "трактат",
       "издано": 1897,
@@ -2333,7 +2355,7 @@
       "size": 402215,
       "tiers": [],
       "text": "prose",
-      "lang": "ru",
+      "язык": "ru",
       "тема": "философия",
       "плотность": "трактат",
       "издано": 1925,
@@ -2361,7 +2383,7 @@
       "size": 270439,
       "tiers": [],
       "text": "prose",
-      "lang": "ru",
+      "язык": "ru",
       "тема": "философия",
       "плотность": "трактат",
       "издано": 1840,
@@ -2387,8 +2409,8 @@
       "size": 97846,
       "tiers": [],
       "text": "prose",
-      "lang": "ru",
-      "тема": "теория познания",
+      "язык": "ru",
+      "тема": "философия познания",
       "плотность": "статья",
       "издано": 1900,
       "источник": "public-domain",
@@ -2415,8 +2437,8 @@
       "size": 131420,
       "tiers": [],
       "text": "prose",
-      "lang": "ru",
-      "тема": "теория познания",
+      "язык": "ru",
+      "тема": "философия познания",
       "плотность": "статья",
       "издано": 1909,
       "источник": "public-domain",
@@ -2441,7 +2463,7 @@
       "size": 773363,
       "tiers": [],
       "text": "prose",
-      "lang": "ru",
+      "язык": "ru",
       "тема": "естествознание",
       "плотность": "трактат",
       "издано": 1846,
@@ -2469,7 +2491,7 @@
       "size": 45655,
       "tiers": [],
       "text": "prose",
-      "lang": "ru",
+      "язык": "ru",
       "тема": "естествознание",
       "плотность": "статья",
       "издано": 1909,
@@ -2495,7 +2517,7 @@
       "size": 212819,
       "tiers": [],
       "text": "prose",
-      "lang": "ru",
+      "язык": "ru",
       "тема": "математика",
       "плотность": "статья",
       "издано": 1904,
@@ -2523,7 +2545,7 @@
       "size": 180696,
       "tiers": [],
       "text": "prose",
-      "lang": "ru",
+      "язык": "ru",
       "тема": "логика",
       "плотность": "статья",
       "издано": 1904,
@@ -2534,40 +2556,440 @@
       "судится": []
     },
     {
-      "name": "school",
-      "file": "datasets/GENESIS-SCHOOL.txt",
-      "genre": "the school assembly: every world that declares «school» in its `assemblies`, in manifest order — the ladder a learner walks before the whole corpus; a consequence of the manifest, not a decision of whoever assembles it",
+      "name": "gutenberg_aristotle_categories",
+      "file": "shelf/en/aristotle_categories.txt",
+      "genre": "The Categories — Aristotle; английское издание 1928",
       "act": [
-        "assemble"
+        "expound"
       ],
       "oracle": [
         "none"
       ],
       "boundary": [
-        "assembled_only"
+        "unnamed"
       ],
-      "size": 7865806,
       "tiers": [],
-      "text": "mix",
-      "lines": 147772
+      "text": "prose",
+      "тема": "логика",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": -350,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:2412",
+      "held_out": "shelf/en/aristotle_categories.holdout.txt",
+      "судится": []
     },
     {
-      "name": "full",
-      "file": "datasets/GENESIS-FULL.txt",
-      "genre": "the full mix: every world of shows, in manifest order, welded by the same seam that welds passes inside a layer — a consequence of the manifest, not a decision of whoever assembles it",
+      "name": "gutenberg_darwin_origin",
+      "file": "shelf/en/darwin_origin.txt",
+      "genre": "On the Origin of Species (1st edition) — Charles Darwin; английское издание 1859",
       "act": [
-        "assemble"
+        "expound"
       ],
       "oracle": [
         "none"
       ],
       "boundary": [
-        "assembled_only"
+        "unnamed"
       ],
-      "size": 10414770,
       "tiers": [],
-      "text": "mix",
-      "lines": 196515
+      "text": "prose",
+      "тема": "естествознание",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1859,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:1228",
+      "held_out": "shelf/en/darwin_origin.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_descartes_method",
+      "file": "shelf/en/descartes_method.txt",
+      "genre": "Discourse on the Method — Rene Descartes; английское издание 1899",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "научный метод",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1637,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:59",
+      "held_out": "shelf/en/descartes_method.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_faraday_researches_v1",
+      "file": "shelf/en/faraday_researches_v1.txt",
+      "genre": "Experimental Researches in Electricity, Vol. 1 — Michael Faraday; английское издание 1839",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "естествознание",
+      "язык": "en",
+      "плотность": "исследование",
+      "издано": 1839,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:14986",
+      "held_out": "shelf/en/faraday_researches_v1.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_hume_enquiry",
+      "file": "shelf/en/hume_enquiry.txt",
+      "genre": "An Enquiry Concerning Human Understanding — David Hume; английское издание 1902",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "философия познания",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1748,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:9662",
+      "held_out": "shelf/en/hume_enquiry.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_jevons_principles",
+      "file": "shelf/en/jevons_principles.txt",
+      "genre": "The Principles of Science — W. Stanley Jevons; английское издание 1877",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "научный метод",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1874,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:74864",
+      "held_out": "shelf/en/jevons_principles.holdout.txt",
+      "судится": [
+        "prosetree"
+      ]
+    },
+    {
+      "name": "gutenberg_kant_critique",
+      "file": "shelf/en/kant_critique.txt",
+      "genre": "The Critique of Pure Reason — Immanuel Kant; английское издание 1855",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "метафизика",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1781,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:4280",
+      "held_out": "shelf/en/kant_critique.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_locke_essay_v1",
+      "file": "shelf/en/locke_essay_v1.txt",
+      "genre": "An Essay Concerning Humane Understanding, Vol. 1 — John Locke; английское издание 1894",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "философия познания",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1690,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:10615",
+      "held_out": "shelf/en/locke_essay_v1.holdout.txt",
+      "судится": [
+        "prosetree"
+      ]
+    },
+    {
+      "name": "gutenberg_mill_logic_v1",
+      "file": "shelf/en/mill_logic_v1.txt",
+      "genre": "A System of Logic, 7th ed., Vol. I — John Stuart Mill; английское издание 1868",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "логика",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1843,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:35420",
+      "held_out": "shelf/en/mill_logic_v1.holdout.txt",
+      "судится": [
+        "prosetree"
+      ]
+    },
+    {
+      "name": "gutenberg_poincare_foundations",
+      "file": "shelf/en/poincare_foundations.txt",
+      "genre": "The Foundations of Science (Science and Hypothesis 1902, The Value of Science 1905, Science and Method 1908) — Henri Poincare; английское издание 1913",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "основания математики",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1902,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:39713",
+      "held_out": "shelf/en/poincare_foundations.holdout.txt",
+      "судится": [
+        "prosetree"
+      ]
+    },
+    {
+      "name": "gutenberg_russell_problems",
+      "file": "shelf/en/russell_problems.txt",
+      "genre": "The Problems of Philosophy — Bertrand Russell; английское издание 1912",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "философия познания",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1912,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:5827",
+      "held_out": "shelf/en/russell_problems.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "bogdanov_tektologia_ru",
+      "file": "shelf/ru/bogdanov_tektologia_ru.txt",
+      "genre": "А. А. Богданов, «Очерки организационной науки» (1919—1921): изложение ТЕКТОЛОГИИ — всеобщей организационной науки, где подбор, ингрессия, дезингрессия и кризис объявлены общими для вещества, живого и общества. Прямой предшественник кибернетики и системного подхода, писанный за тридцать лет до Винера",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 1028001,
+      "tiers": [],
+      "text": "prose",
+      "язык": "ru",
+      "тема": "научный метод",
+      "плотность": "трактат",
+      "издано": 1921,
+      "источник": "public-domain",
+      "происхождение": "wikisource:Очерки организационной науки (Богданов)",
+      "автор": "Александр Александрович Богданов",
+      "held_out": "shelf/ru/bogdanov_tektologia_ru.holdout.txt",
+      "судится": [
+        "rugram"
+      ]
+    },
+    {
+      "name": "mendeleev_zavetnye_ru",
+      "file": "shelf/ru/mendeleev_zavetnye_ru.txt",
+      "genre": "Д. И. Менделеев, «Заветные мысли» (1903—1905), двенадцать глав с предисловием: народонаселение, внешняя торговля, промышленность, образование, наука и промышленность — методология приложения естествознания к устройству страны, писанная первым химиком",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 1352255,
+      "tiers": [],
+      "text": "prose",
+      "язык": "ru",
+      "тема": "научный метод",
+      "плотность": "трактат",
+      "издано": 1905,
+      "источник": "public-domain",
+      "происхождение": "wikisource:Заветные мысли (Д. И. Менделеев)",
+      "автор": "Дмитрий Иванович Менделеев",
+      "held_out": "shelf/ru/mendeleev_zavetnye_ru.holdout.txt",
+      "судится": [
+        "rugram"
+      ]
+    },
+    {
+      "name": "vernadsky_kant_ru",
+      "file": "shelf/ru/vernadsky_kant_ru.txt",
+      "genre": "В. И. Вернадский, «Кант и естествознание XVIII столетия» (речь 28 декабря 1904 г., издана 1905): история научной мысли и место Канта в естествознании века, разобранное натуралистом",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 89683,
+      "tiers": [],
+      "text": "prose",
+      "язык": "ru",
+      "тема": "философия",
+      "плотность": "статья",
+      "издано": 1905,
+      "источник": "public-domain",
+      "происхождение": "wikisource:Кант и естествознание XVIII столетия (Вернадский)",
+      "автор": "Владимир Иванович Вернадский",
+      "held_out": "shelf/ru/vernadsky_kant_ru.holdout.txt",
+      "судится": [
+        "rugram"
+      ]
+    },
+    {
+      "name": "tsiolkovsky_monizm_ru",
+      "file": "shelf/ru/tsiolkovsky_monizm_ru.txt",
+      "genre": "К. Э. Циолковский, «Монизм Вселенной» (1925): космологический трактат о единстве вещества и чувствительности, выведенный из физических посылок",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 91432,
+      "tiers": [],
+      "text": "prose",
+      "язык": "ru",
+      "тема": "философия",
+      "плотность": "трактат",
+      "издано": 1925,
+      "источник": "public-domain",
+      "происхождение": "wikisource:Монизм Вселенной (Циолковский)",
+      "автор": "Константин Эдуардович Циолковский",
+      "held_out": "shelf/ru/tsiolkovsky_monizm_ru.holdout.txt",
+      "судится": [
+        "rugram"
+      ]
+    },
+    {
+      "name": "litvinova_lobachevsky_ru",
+      "file": "shelf/ru/litvinova_lobachevsky_ru.txt",
+      "genre": "Е. Ф. Литвинова, «Н. И. Лобачевский. Его жизнь и научная деятельность» (1894): биографический очерк с ИЗЛОЖЕНИЕМ неевклидовой геометрии, писанный математиком — одной из первых русских женщин с учёной степенью по математике. Собственных сочинений Лобачевского в Викитеке нет, и это ближайшее к ним",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 234801,
+      "tiers": [],
+      "text": "prose",
+      "язык": "ru",
+      "тема": "математика",
+      "плотность": "исследование",
+      "издано": 1894,
+      "источник": "public-domain",
+      "происхождение": "wikisource:Н. И. Лобачевский. Его жизнь и научная деятельность (Литвинова)",
+      "автор": "Елизавета Фёдоровна Литвинова",
+      "held_out": "shelf/ru/litvinova_lobachevsky_ru.holdout.txt",
+      "судится": [
+        "rugram"
+      ]
+    },
+    {
+      "name": "gutenberg_spinoza_ethics",
+      "file": "shelf/en/spinoza_ethics.txt",
+      "genre": "Ethics — Benedictus de Spinoza; английское издание 1883",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "метафизика",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1677,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:3800",
+      "held_out": "shelf/en/spinoza_ethics.holdout.txt",
+      "судится": []
     },
     {
       "name": "gutenberg_herschel_discourse",
@@ -2665,6 +3087,139 @@
       "held_out": "shelf/en/whewell_novum_organon.holdout.txt",
       "судится": [
         "prosetree"
+      ]
+    },
+    {
+      "name": "arxiv_fong_spivak_seven_sketches",
+      "file": "shelf/en/fong_spivak_seven_sketches.txt",
+      "genre": "Seven Sketches in Compositionality: An Invitation to Applied Category Theory — Brendan Fong, David I. Spivak; препринт arXiv 2018 под CC BY 4.0",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "математика",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 2018,
+      "источник": "free-license",
+      "происхождение": "arxiv:1803.05316 (CC BY 4.0)",
+      "автор": "Brendan Fong, David I. Spivak",
+      "held_out": "shelf/en/fong_spivak_seven_sketches.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "arxiv_spivak_category_theory_for_scientists",
+      "file": "shelf/en/spivak_category_theory_for_scientists.txt",
+      "genre": "Category Theory for Scientists — David I. Spivak; препринт arXiv 2013 под CC BY 3.0",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "математика",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 2013,
+      "источник": "free-license",
+      "происхождение": "arxiv:1302.6946 (CC BY 3.0)",
+      "автор": "David I. Spivak",
+      "held_out": "shelf/en/spivak_category_theory_for_scientists.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "pmc_bich_mossio_soto_glycemia",
+      "file": "shelf/en/bich_mossio_soto_glycemia.txt",
+      "genre": "Glycemia Regulation: From Feedback Loops to Organizational Closure — Leonardo Bich, Matteo Mossio, Ana M. Soto; Frontiers in Physiology 2020 под CC BY",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "естествознание",
+      "язык": "en",
+      "плотность": "статья",
+      "издано": 2020,
+      "источник": "free-license",
+      "происхождение": "pmc:PMC7040218 (CC BY)",
+      "автор": "Leonardo Bich, Matteo Mossio, Ana M. Soto",
+      "held_out": "shelf/en/bich_mossio_soto_glycemia.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "school",
+      "file": "datasets/GENESIS-SCHOOL.txt",
+      "genre": "the school assembly: every world that declares «school» in its `assemblies`, in manifest order — the ladder a learner walks before the whole corpus; a consequence of the manifest, not a decision of whoever assembles it",
+      "act": [
+        "assemble"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "assembled_only"
+      ],
+      "size": 8401599,
+      "tiers": [],
+      "text": "mix",
+      "lines": 154373
+    },
+    {
+      "name": "full",
+      "file": "datasets/GENESIS-FULL.txt",
+      "genre": "the full mix: every world of shows, in manifest order, welded by the same seam that welds passes inside a layer — a consequence of the manifest, not a decision of whoever assembles it",
+      "act": [
+        "assemble"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "assembled_only"
+      ],
+      "size": 11242941,
+      "tiers": [],
+      "text": "mix",
+      "lines": 205510
+    },
+    {
+      "name": "selfmeasure",
+      "file": "datasets/genesis_selfmeasure.txt",
+      "genre": "the organism speaking about ITSELF, where a self-report is a DATED MEASUREMENT and never an impression (TELOS-DESIGN §4): four genera — state as a fraction bounded by exact integer multiplication, boundary named by number with its complement summing to the whole, need as the DIFFERENCE of two measurements rather than a wish, and growth as the difference of two snapshots of the same day WITH BOTH PARTS NAMED, because a rise in the numerator is not a rise in the share; every show carries the instrument that produced the number and the day it was taken, every show is stated in the PAST tense so it stays true as a historical fact when the instrument moves on, a question surface stands on each genus, and a question about tomorrow is refused on the ground that no measurement later than the named day exists; the court recomputes every relation and additionally requires the pair of numbers to stand in a snapshot declared a second time inside the court, so a corruption consistent with its own arithmetic still breaks",
+      "size": 35368,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [],
+      "act": [
+        "recount",
+        "compare",
+        "refuse"
+      ],
+      "oracle": [
+        "recompute",
+        "declared"
+      ],
+      "boundary": [
+        "whole_only",
+        "unsigned_only"
       ]
     }
   ]

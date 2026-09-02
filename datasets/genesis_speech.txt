@@ -1,51 +1,147 @@
-maria had 6 pens. she gave away 3 pens. she has 3 pens left.
-у веры было 10 книг. она отдала 1 книгу. у неё осталось 9 книг.
-peter had 6 marbles. he gave away 1 marble. he has 5 marbles left.
-у анны было 10 монет. она отдала 2 монеты. у неё осталось 8 монет.
-ivan had 6 books. he gave away 2 books. he has 4 books left.
-у марии было 10 яблок. она отдала 3 яблока. у неё осталось 7 яблок.
-yuri had 6 coins. he gave away 3 coins. he has 3 coins left.
-у петра было 7 монет. он отдал 1 монету. у него осталось 6 монет.
-vera had 10 books. she gave away 1 book. she has 9 books left.
-у ивана было 7 яблок. он отдал 2 яблока. у него осталось 5 яблок.
-anna had 10 coins. she gave away 2 coins. she has 8 coins left.
-у юрия было 7 ручек. он отдал 3 ручки. у него осталось 4 ручки.
-maria had 10 apples. she gave away 3 apples. she has 7 apples left.
-у веры было 4 яблока. она отдала 1 яблоко. у неё осталось 3 яблока.
-peter had 7 coins. he gave away 1 coin. he has 6 coins left.
-у анны было 4 ручки. она отдала 2 ручки. у неё осталось 2 ручки.
-ivan had 7 apples. he gave away 2 apples. he has 5 apples left.
-у марии было 4 шарика. она отдала 3 шарика. у неё осталось 1 шарик.
-yuri had 7 pens. he gave away 3 pens. he has 4 pens left.
-у петра было 4 книги. он отдал 1 книгу. у него осталось 3 книги.
-vera had 4 apples. she gave away 1 apple. she has 3 apples left.
-у ивана было 8 шариков. он отдал 2 шарика. у него осталось 6 шариков.
-anna had 4 pens. she gave away 2 pens. she has 2 pens left.
-у юрия было 8 книг. он отдал 3 книги. у него осталось 5 книг.
-maria had 4 marbles. she gave away 3 marbles. she has 1 marble left.
-у веры было 8 монет. она отдала 1 монету. у неё осталось 7 монет.
-peter had 4 books. he gave away 1 book. he has 3 books left.
-у анны было 5 книг. она отдала 2 книги. у неё осталось 3 книги.
-ivan had 8 marbles. he gave away 2 marbles. he has 6 marbles left.
-у марии было 5 монет. она отдала 3 монеты. у неё осталось 2 монеты.
-yuri had 8 books. he gave away 3 books. he has 5 books left.
-у петра было 5 яблок. он отдал 1 яблоко. у него осталось 4 яблока.
-vera had 8 coins. she gave away 1 coin. she has 7 coins left.
-у ивана было 5 ручек. он отдал 2 ручки. у него осталось 3 ручки.
-anna had 5 books. she gave away 2 books. she has 3 books left.
-у юрия было 9 яблок. он отдал 3 яблока. у него осталось 6 яблок.
-maria had 5 coins. she gave away 3 coins. she has 2 coins left.
-у веры было 9 ручек. она отдала 1 ручку. у неё осталось 8 ручек.
-peter had 5 apples. he gave away 1 apple. he has 4 apples left.
-у анны было 9 шариков. она отдала 2 шарика. у неё осталось 7 шариков.
-ivan had 5 pens. he gave away 2 pens. he has 3 pens left.
+vera had 4 apples. she gave away 5 apples — there is no such count: 5 is greater than 4.
 у марии было 6 ручек. она отдала 3 ручки. у неё осталось 3 ручки.
-yuri had 9 apples. he gave away 3 apples. he has 6 apples left.
+peter had 7 coins. he gave away 1 coin. he has 6 coins left.
+у ивана было 8 шариков. он отдал 2 шарика. сколько шариков у него осталось? у ивана было 8 шариков. он отдал 2 шарика. у него осталось 6 шариков.
+yuri had 9 apples. he gave away 3 apples. how many apples does he have left? yuri had 9 apples. he gave away 3 apples. he has 6 apples left.
+у веры было 10 книг. она отдала 11 книг — нет такого счёта: 11 больше 10.
+anna had 4 pens. she gave away 6 pens — there is no such count: 6 is greater than 4.
 у петра было 6 шариков. он отдал 1 шарик. у него осталось 5 шариков.
-vera had 9 pens. she gave away 1 pen. she has 8 pens left.
+ivan had 7 apples. he gave away 2 apples. he has 5 apples left.
+у юрия было 8 книг. он отдал 3 книги. сколько книг у него осталось? у юрия было 8 книг. он отдал 3 книги. у него осталось 5 книг.
+vera had 9 pens. she gave away 1 pen. how many pens does she have left? vera had 9 pens. she gave away 1 pen. she has 8 pens left.
+у анны было 10 монет. она отдала 12 монет — нет такого счёта: 12 больше 10.
+maria had 4 marbles. she gave away 7 marbles — there is no such count: 7 is greater than 4.
 у ивана было 6 книг. он отдал 2 книги. у него осталось 4 книги.
-anna had 9 marbles. she gave away 2 marbles. she has 7 marbles left.
+yuri had 7 pens. he gave away 3 pens. he has 4 pens left.
+у веры было 8 монет. она отдала 1 монету. сколько монет у неё осталось? у веры было 8 монет. она отдала 1 монету. у неё осталось 7 монет.
+anna had 9 marbles. she gave away 2 marbles. how many marbles does she have left? anna had 9 marbles. she gave away 2 marbles. she has 7 marbles left.
+у марии было 10 яблок. она отдала 13 яблок — нет такого счёта: 13 больше 10.
+peter had 4 books. he gave away 5 books — there is no such count: 5 is greater than 4.
 у юрия было 6 монет. он отдал 3 монеты. у него осталось 3 монеты.
+vera had 4 apples. she gave away 1 apple. she has 3 apples left.
+у анны было 5 книг. она отдала 2 книги. сколько книг у неё осталось? у анны было 5 книг. она отдала 2 книги. у неё осталось 3 книги.
+maria had 6 pens. she gave away 3 pens. how many pens does she have left? maria had 6 pens. she gave away 3 pens. she has 3 pens left.
+у петра было 7 монет. он отдал 8 монет — нет такого счёта: 8 больше 7.
+ivan had 8 marbles. he gave away 10 marbles — there is no such count: 10 is greater than 8.
+у веры было 10 книг. она отдала 1 книгу. у неё осталось 9 книг.
+anna had 4 pens. she gave away 2 pens. she has 2 pens left.
+у марии было 5 монет. она отдала 3 монеты. сколько монет у неё осталось? у марии было 5 монет. она отдала 3 монеты. у неё осталось 2 монеты.
+peter had 6 marbles. he gave away 1 marble. how many marbles does he have left? peter had 6 marbles. he gave away 1 marble. he has 5 marbles left.
+у ивана было 7 яблок. он отдал 9 яблок — нет такого счёта: 9 больше 7.
+yuri had 8 books. he gave away 11 books — there is no such count: 11 is greater than 8.
+у анны было 10 монет. она отдала 2 монеты. у неё осталось 8 монет.
+maria had 4 marbles. she gave away 3 marbles. she has 1 marble left.
+у петра было 5 яблок. он отдал 1 яблоко. сколько яблок у него осталось? у петра было 5 яблок. он отдал 1 яблоко. у него осталось 4 яблока.
+ivan had 6 books. he gave away 2 books. how many books does he have left? ivan had 6 books. he gave away 2 books. he has 4 books left.
+у юрия было 7 ручек. он отдал 10 ручек — нет такого счёта: 10 больше 7.
+vera had 8 coins. she gave away 9 coins — there is no such count: 9 is greater than 8.
+у марии было 10 яблок. она отдала 3 яблока. у неё осталось 7 яблок.
+peter had 4 books. he gave away 1 book. he has 3 books left.
+у ивана было 5 ручек. он отдал 2 ручки. сколько ручек у него осталось? у ивана было 5 ручек. он отдал 2 ручки. у него осталось 3 ручки.
+yuri had 6 coins. he gave away 3 coins. how many coins does he have left? yuri had 6 coins. he gave away 3 coins. he has 3 coins left.
+у веры было 4 яблока. она отдала 5 яблок — нет такого счёта: 5 больше 4.
+anna had 5 books. she gave away 7 books — there is no such count: 7 is greater than 5.
+у петра было 7 монет. он отдал 1 монету. у него осталось 6 монет.
+ivan had 8 marbles. he gave away 2 marbles. he has 6 marbles left.
+у юрия было 9 яблок. он отдал 3 яблока. сколько яблок у него осталось? у юрия было 9 яблок. он отдал 3 яблока. у него осталось 6 яблок.
+vera had 10 books. she gave away 1 book. how many books does she have left? vera had 10 books. she gave away 1 book. she has 9 books left.
+у анны было 4 ручки. она отдала 6 ручек — нет такого счёта: 6 больше 4.
+maria had 5 coins. she gave away 8 coins — there is no such count: 8 is greater than 5.
+у ивана было 7 яблок. он отдал 2 яблока. у него осталось 5 яблок.
+yuri had 8 books. he gave away 3 books. he has 5 books left.
+у веры было 9 ручек. она отдала 1 ручку. сколько ручек у неё осталось? у веры было 9 ручек. она отдала 1 ручку. у неё осталось 8 ручек.
+anna had 10 coins. she gave away 2 coins. how many coins does she have left? anna had 10 coins. she gave away 2 coins. she has 8 coins left.
+у марии было 4 шарика. она отдала 7 шариков — нет такого счёта: 7 больше 4.
+peter had 5 apples. he gave away 6 apples — there is no such count: 6 is greater than 5.
+у юрия было 7 ручек. он отдал 3 ручки. у него осталось 4 ручки.
+vera had 8 coins. she gave away 1 coin. she has 7 coins left.
+у анны было 9 шариков. она отдала 2 шарика. сколько шариков у неё осталось? у анны было 9 шариков. она отдала 2 шарика. у неё осталось 7 шариков.
+maria had 10 apples. she gave away 3 apples. how many apples does she have left? maria had 10 apples. she gave away 3 apples. she has 7 apples left.
+у петра было 4 книги. он отдал 5 книг — нет такого счёта: 5 больше 4.
+ivan had 5 pens. he gave away 7 pens — there is no such count: 7 is greater than 5.
+у веры было 4 яблока. она отдала 1 яблоко. у неё осталось 3 яблока.
+anna had 5 books. she gave away 2 books. she has 3 books left.
+у марии было 6 ручек. она отдала 3 ручки. сколько ручек у неё осталось? у марии было 6 ручек. она отдала 3 ручки. у неё осталось 3 ручки.
+peter had 7 coins. he gave away 1 coin. how many coins does he have left? peter had 7 coins. he gave away 1 coin. he has 6 coins left.
+у ивана было 8 шариков. он отдал 10 шариков — нет такого счёта: 10 больше 8.
+yuri had 9 apples. he gave away 12 apples — there is no such count: 12 is greater than 9.
+у анны было 4 ручки. она отдала 2 ручки. у неё осталось 2 ручки.
+maria had 5 coins. she gave away 3 coins. she has 2 coins left.
+у петра было 6 шариков. он отдал 1 шарик. сколько шариков у него осталось? у петра было 6 шариков. он отдал 1 шарик. у него осталось 5 шариков.
+ivan had 7 apples. he gave away 2 apples. how many apples does he have left? ivan had 7 apples. he gave away 2 apples. he has 5 apples left.
+у юрия было 8 книг. он отдал 11 книг — нет такого счёта: 11 больше 8.
+vera had 9 pens. she gave away 10 pens — there is no such count: 10 is greater than 9.
+у марии было 4 шарика. она отдала 3 шарика. у неё осталось 1 шарик.
+peter had 5 apples. he gave away 1 apple. he has 4 apples left.
+у ивана было 6 книг. он отдал 2 книги. сколько книг у него осталось? у ивана было 6 книг. он отдал 2 книги. у него осталось 4 книги.
+yuri had 7 pens. he gave away 3 pens. how many pens does he have left? yuri had 7 pens. he gave away 3 pens. he has 4 pens left.
+у веры было 8 монет. она отдала 9 монет — нет такого счёта: 9 больше 8.
+anna had 9 marbles. she gave away 11 marbles — there is no such count: 11 is greater than 9.
+у петра было 4 книги. он отдал 1 книгу. у него осталось 3 книги.
+ivan had 5 pens. he gave away 2 pens. he has 3 pens left.
+у юрия было 6 монет. он отдал 3 монеты. сколько монет у него осталось? у юрия было 6 монет. он отдал 3 монеты. у него осталось 3 монеты.
+vera had 4 apples. she gave away 1 apple. how many apples does she have left? vera had 4 apples. she gave away 1 apple. she has 3 apples left.
+у анны было 5 книг. она отдала 7 книг — нет такого счёта: 7 больше 5.
+maria had 6 pens. she gave away 9 pens — there is no such count: 9 is greater than 6.
+у ивана было 8 шариков. он отдал 2 шарика. у него осталось 6 шариков.
+yuri had 9 apples. he gave away 3 apples. he has 6 apples left.
+у веры было 10 книг. она отдала 1 книгу. сколько книг у неё осталось? у веры было 10 книг. она отдала 1 книгу. у неё осталось 9 книг.
+anna had 4 pens. she gave away 2 pens. how many pens does she have left? anna had 4 pens. she gave away 2 pens. she has 2 pens left.
+у марии было 5 монет. она отдала 8 монет — нет такого счёта: 8 больше 5.
+peter had 6 marbles. he gave away 7 marbles — there is no such count: 7 is greater than 6.
+у юрия было 8 книг. он отдал 3 книги. у него осталось 5 книг.
+vera had 9 pens. she gave away 1 pen. she has 8 pens left.
+у анны было 10 монет. она отдала 2 монеты. сколько монет у неё осталось? у анны было 10 монет. она отдала 2 монеты. у неё осталось 8 монет.
+maria had 4 marbles. she gave away 3 marbles. how many marbles does she have left? maria had 4 marbles. she gave away 3 marbles. she has 1 marble left.
+у петра было 5 яблок. он отдал 6 яблок — нет такого счёта: 6 больше 5.
+ivan had 6 books. he gave away 8 books — there is no such count: 8 is greater than 6.
+у веры было 8 монет. она отдала 1 монету. у неё осталось 7 монет.
+anna had 9 marbles. she gave away 2 marbles. she has 7 marbles left.
+у марии было 10 яблок. она отдала 3 яблока. сколько яблок у неё осталось? у марии было 10 яблок. она отдала 3 яблока. у неё осталось 7 яблок.
+peter had 4 books. he gave away 1 book. how many books does he have left? peter had 4 books. he gave away 1 book. he has 3 books left.
+у ивана было 5 ручек. он отдал 7 ручек — нет такого счёта: 7 больше 5.
+yuri had 6 coins. he gave away 9 coins — there is no such count: 9 is greater than 6.
+у анны было 5 книг. она отдала 2 книги. у неё осталось 3 книги.
+maria had 6 pens. she gave away 3 pens. she has 3 pens left.
+у петра было 7 монет. он отдал 1 монету. сколько монет у него осталось? у петра было 7 монет. он отдал 1 монету. у него осталось 6 монет.
+ivan had 8 marbles. he gave away 2 marbles. how many marbles does he have left? ivan had 8 marbles. he gave away 2 marbles. he has 6 marbles left.
+у юрия было 9 яблок. он отдал 12 яблок — нет такого счёта: 12 больше 9.
+vera had 10 books. she gave away 11 books — there is no such count: 11 is greater than 10.
+у марии было 5 монет. она отдала 3 монеты. у неё осталось 2 монеты.
+peter had 6 marbles. he gave away 1 marble. he has 5 marbles left.
+у ивана было 7 яблок. он отдал 2 яблока. сколько яблок у него осталось? у ивана было 7 яблок. он отдал 2 яблока. у него осталось 5 яблок.
+yuri had 8 books. he gave away 3 books. how many books does he have left? yuri had 8 books. he gave away 3 books. he has 5 books left.
+у веры было 9 ручек. она отдала 10 ручек — нет такого счёта: 10 больше 9.
+anna had 10 coins. she gave away 12 coins — there is no such count: 12 is greater than 10.
+у петра было 5 яблок. он отдал 1 яблоко. у него осталось 4 яблока.
+ivan had 6 books. he gave away 2 books. he has 4 books left.
+у юрия было 7 ручек. он отдал 3 ручки. сколько ручек у него осталось? у юрия было 7 ручек. он отдал 3 ручки. у него осталось 4 ручки.
+vera had 8 coins. she gave away 1 coin. how many coins does she have left? vera had 8 coins. she gave away 1 coin. she has 7 coins left.
+у анны было 9 шариков. она отдала 11 шариков — нет такого счёта: 11 больше 9.
+maria had 10 apples. she gave away 13 apples — there is no such count: 13 is greater than 10.
+у ивана было 5 ручек. он отдал 2 ручки. у него осталось 3 ручки.
+yuri had 6 coins. he gave away 3 coins. he has 3 coins left.
+у веры было 4 яблока. она отдала 1 яблоко. сколько яблок у неё осталось? у веры было 4 яблока. она отдала 1 яблоко. у неё осталось 3 яблока.
+anna had 5 books. she gave away 2 books. how many books does she have left? anna had 5 books. she gave away 2 books. she has 3 books left.
+у марии было 6 ручек. она отдала 9 ручек — нет такого счёта: 9 больше 6.
+peter had 7 coins. he gave away 8 coins — there is no such count: 8 is greater than 7.
+у юрия было 9 яблок. он отдал 3 яблока. у него осталось 6 яблок.
+vera had 10 books. she gave away 1 book. she has 9 books left.
+у анны было 4 ручки. она отдала 2 ручки. сколько ручек у неё осталось? у анны было 4 ручки. она отдала 2 ручки. у неё осталось 2 ручки.
+maria had 5 coins. she gave away 3 coins. how many coins does she have left? maria had 5 coins. she gave away 3 coins. she has 2 coins left.
+у петра было 6 шариков. он отдал 7 шариков — нет такого счёта: 7 больше 6.
+ivan had 7 apples. he gave away 9 apples — there is no such count: 9 is greater than 7.
+у веры было 9 ручек. она отдала 1 ручку. у неё осталось 8 ручек.
+anna had 10 coins. she gave away 2 coins. she has 8 coins left.
+у марии было 4 шарика. она отдала 3 шарика. сколько шариков у неё осталось? у марии было 4 шарика. она отдала 3 шарика. у неё осталось 1 шарик.
+peter had 5 apples. he gave away 1 apple. how many apples does he have left? peter had 5 apples. he gave away 1 apple. he has 4 apples left.
+у ивана было 6 книг. он отдал 8 книг — нет такого счёта: 8 больше 6.
+yuri had 7 pens. he gave away 10 pens — there is no such count: 10 is greater than 7.
+у анны было 9 шариков. она отдала 2 шарика. у неё осталось 7 шариков.
+maria had 10 apples. she gave away 3 apples. she has 7 apples left.
+у петра было 4 книги. он отдал 1 книгу. сколько книг у него осталось? у петра было 4 книги. он отдал 1 книгу. у него осталось 3 книги.
+ivan had 5 pens. he gave away 2 pens. how many pens does he have left? ivan had 5 pens. he gave away 2 pens. he has 3 pens left.
+у юрия было 6 монет. он отдал 9 монет — нет такого счёта: 9 больше 6.
 
 6 is divisible by 3. therefore 6 is a multiple of 3.
 9 делится на 3. значит 9 кратно 3.
@@ -530,54 +626,150 @@ maria has 10 pens. therefore she has an even count.
 all numbers that are divisible by 4 are even. 20 is divisible by 4. therefore 20 is even.
 может быть, что хотя бы одно из чисел 6, 7, 8 чётно: это 6.
 
-у марии было 5 ручек. она отдала 2 ручки. у неё осталось 3 ручки.
-anna had 10 pens. she gave away 1 pen. she has 9 pens left.
-у анны было 9 монет. она отдала 1 монету. у неё осталось 8 монет.
-vera had 7 coins. she gave away 3 coins. she has 4 coins left.
-у веры было 6 шариков. она отдала 3 шарика. у неё осталось 3 шарика.
-yuri had 8 apples. he gave away 2 apples. he has 6 apples left.
-у юрия было 7 книг. он отдал 2 книги. у него осталось 5 книг.
-ivan had 5 books. he gave away 1 book. he has 4 books left.
-у ивана было 4 ручки. он отдал 1 ручку. у него осталось 3 ручки.
+у анны было 4 книги. она отдала 1 книгу. сколько книг у неё осталось? у анны было 4 книги. она отдала 1 книгу. у неё осталось 3 книги.
 peter had 6 coins. he gave away 3 coins. he has 3 coins left.
-у петра было 5 шариков. он отдал 3 шарика. у него осталось 2 шарика.
-maria had 10 marbles. she gave away 2 marbles. she has 8 marbles left.
-у марии было 9 яблок. она отдала 2 яблока. у неё осталось 7 яблок.
-anna had 4 books. she gave away 1 book. she has 3 books left.
-у анны было 10 ручек. она отдала 1 ручку. у неё осталось 9 ручек.
-vera had 8 pens. she gave away 3 pens. she has 5 pens left.
-у веры было 7 монет. она отдала 3 монеты. у неё осталось 4 монеты.
-yuri had 5 coins. he gave away 2 coins. he has 3 coins left.
 у юрия было 8 яблок. он отдал 2 яблока. у него осталось 6 яблок.
-ivan had 6 apples. he gave away 1 apple. he has 5 apples left.
+vera had 9 books. she gave away 12 books — there is no such count: 12 is greater than 9.
+у марии было 4 монеты. она отдала 6 монет — нет такого счёта: 6 больше 4.
+ivan had 6 apples. he gave away 1 apple. how many apples does he have left? ivan had 6 apples. he gave away 1 apple. he has 5 apples left.
+у веры было 8 ручек. она отдала 3 ручки. сколько ручек у неё осталось? у веры было 8 ручек. она отдала 3 ручки. у неё осталось 5 ручек.
+maria had 10 marbles. she gave away 2 marbles. she has 8 marbles left.
 у ивана было 5 книг. он отдал 1 книгу. у него осталось 4 книги.
-peter had 10 books. he gave away 3 books. he has 7 books left.
+yuri had 6 pens. he gave away 8 pens — there is no such count: 8 is greater than 6.
+у анны было 8 шариков. она отдала 9 шариков — нет такого счёта: 9 больше 8.
+peter had 10 books. he gave away 3 books. how many books does he have left? peter had 10 books. he gave away 3 books. he has 7 books left.
+у юрия было 5 монет. он отдал 2 монеты. сколько монет у него осталось? у юрия было 5 монет. он отдал 2 монеты. у него осталось 3 монеты.
+anna had 4 books. she gave away 1 book. she has 3 books left.
 у петра было 6 монет. он отдал 3 монеты. у него осталось 3 монеты.
-maria had 4 coins. she gave away 2 coins. she has 2 coins left.
+ivan had 7 marbles. he gave away 8 marbles — there is no such count: 8 is greater than 7.
+у веры было 9 книг. она отдала 12 книг — нет такого счёта: 12 больше 9.
+maria had 4 coins. she gave away 2 coins. how many coins does she have left? maria had 4 coins. she gave away 2 coins. she has 2 coins left.
+у ивана было 6 яблок. он отдал 1 яблоко. сколько яблок у него осталось? у ивана было 6 яблок. он отдал 1 яблоко. у него осталось 5 яблок.
+vera had 8 pens. she gave away 3 pens. she has 5 pens left.
 у марии было 10 шариков. она отдала 2 шарика. у неё осталось 8 шариков.
-anna had 8 marbles. she gave away 1 marble. she has 7 marbles left.
+peter had 4 apples. he gave away 7 apples — there is no such count: 7 is greater than 4.
+у юрия было 6 ручек. он отдал 8 ручек — нет такого счёта: 8 больше 6.
+anna had 8 marbles. she gave away 1 marble. how many marbles does she have left? anna had 8 marbles. she gave away 1 marble. she has 7 marbles left.
+у петра было 10 книг. он отдал 3 книги. сколько книг у него осталось? у петра было 10 книг. он отдал 3 книги. у него осталось 7 книг.
+yuri had 5 coins. he gave away 2 coins. he has 3 coins left.
 у анны было 4 книги. она отдала 1 книгу. у неё осталось 3 книги.
-vera had 9 books. she gave away 3 books. she has 6 books left.
+maria had 5 pens. she gave away 7 pens — there is no such count: 7 is greater than 5.
+у ивана было 7 шариков. он отдал 8 шариков — нет такого счёта: 8 больше 7.
+vera had 9 books. she gave away 3 books. how many books does she have left? vera had 9 books. she gave away 3 books. she has 6 books left.
+у марии было 4 монеты. она отдала 2 монеты. сколько монет у неё осталось? у марии было 4 монеты. она отдала 2 монеты. у неё осталось 2 монеты.
+ivan had 6 apples. he gave away 1 apple. he has 5 apples left.
 у веры было 8 ручек. она отдала 3 ручки. у неё осталось 5 ручек.
-yuri had 6 pens. he gave away 2 pens. he has 4 pens left.
+anna had 9 coins. she gave away 10 coins — there is no such count: 10 is greater than 9.
+у петра было 4 яблока. он отдал 7 яблок — нет такого счёта: 7 больше 4.
+yuri had 6 pens. he gave away 2 pens. how many pens does he have left? yuri had 6 pens. he gave away 2 pens. he has 4 pens left.
+у анны было 8 шариков. она отдала 1 шарик. сколько шариков у неё осталось? у анны было 8 шариков. она отдала 1 шарик. у неё осталось 7 шариков.
+peter had 10 books. he gave away 3 books. he has 7 books left.
 у юрия было 5 монет. он отдал 2 монеты. у него осталось 3 монеты.
-ivan had 7 marbles. he gave away 1 marble. he has 6 marbles left.
+vera had 6 marbles. she gave away 9 marbles — there is no such count: 9 is greater than 6.
+у марии было 5 ручек. она отдала 7 ручек — нет такого счёта: 7 больше 5.
+ivan had 7 marbles. he gave away 1 marble. how many marbles does he have left? ivan had 7 marbles. he gave away 1 marble. he has 6 marbles left.
+у веры было 9 книг. она отдала 3 книги. сколько книг у неё осталось? у веры было 9 книг. она отдала 3 книги. у неё осталось 6 книг.
+maria had 4 coins. she gave away 2 coins. she has 2 coins left.
 у ивана было 6 яблок. он отдал 1 яблоко. у него осталось 5 яблок.
-peter had 4 apples. he gave away 3 apples. he has 1 apple left.
+yuri had 7 books. he gave away 9 books — there is no such count: 9 is greater than 7.
+у анны было 9 монет. она отдала 10 монет — нет такого счёта: 10 больше 9.
+peter had 4 apples. he gave away 3 apples. how many apples does he have left? peter had 4 apples. he gave away 3 apples. he has 1 apple left.
+у юрия было 6 ручек. он отдал 2 ручки. сколько ручек у него осталось? у юрия было 6 ручек. он отдал 2 ручки. у него осталось 4 ручки.
+anna had 8 marbles. she gave away 1 marble. she has 7 marbles left.
 у петра было 10 книг. он отдал 3 книги. у него осталось 7 книг.
-maria had 5 pens. she gave away 2 pens. she has 3 pens left.
+ivan had 4 pens. he gave away 5 pens — there is no such count: 5 is greater than 4.
+у веры было 6 шариков. она отдала 9 шариков — нет такого счёта: 9 больше 6.
+maria had 5 pens. she gave away 2 pens. how many pens does she have left? maria had 5 pens. she gave away 2 pens. she has 3 pens left.
+у ивана было 7 шариков. он отдал 1 шарик. сколько шариков у него осталось? у ивана было 7 шариков. он отдал 1 шарик. у него осталось 6 шариков.
+vera had 9 books. she gave away 3 books. she has 6 books left.
 у марии было 4 монеты. она отдала 2 монеты. у неё осталось 2 монеты.
-anna had 9 coins. she gave away 1 coin. she has 8 coins left.
+peter had 5 marbles. he gave away 8 marbles — there is no such count: 8 is greater than 5.
+у юрия было 7 книг. он отдал 9 книг — нет такого счёта: 9 больше 7.
+anna had 9 coins. she gave away 1 coin. how many coins does she have left? anna had 9 coins. she gave away 1 coin. she has 8 coins left.
+у петра было 4 яблока. он отдал 3 яблока. сколько яблок у него осталось? у петра было 4 яблока. он отдал 3 яблока. у него осталось 1 яблоко.
+yuri had 6 pens. he gave away 2 pens. he has 4 pens left.
 у анны было 8 шариков. она отдала 1 шарик. у неё осталось 7 шариков.
-vera had 6 marbles. she gave away 3 marbles. she has 3 marbles left.
+maria had 9 apples. she gave away 11 apples — there is no such count: 11 is greater than 9.
+у ивана было 4 ручки. он отдал 5 ручек — нет такого счёта: 5 больше 4.
+vera had 6 marbles. she gave away 3 marbles. how many marbles does she have left? vera had 6 marbles. she gave away 3 marbles. she has 3 marbles left.
+у марии было 5 ручек. она отдала 2 ручки. сколько ручек у неё осталось? у марии было 5 ручек. она отдала 2 ручки. у неё осталось 3 ручки.
+ivan had 7 marbles. he gave away 1 marble. he has 6 marbles left.
 у веры было 9 книг. она отдала 3 книги. у неё осталось 6 книг.
-yuri had 7 books. he gave away 2 books. he has 5 books left.
+anna had 10 pens. she gave away 11 pens — there is no such count: 11 is greater than 10.
+у петра было 5 шариков. он отдал 8 шариков — нет такого счёта: 8 больше 5.
+yuri had 7 books. he gave away 2 books. how many books does he have left? yuri had 7 books. he gave away 2 books. he has 5 books left.
+у анны было 9 монет. она отдала 1 монету. сколько монет у неё осталось? у анны было 9 монет. она отдала 1 монету. у неё осталось 8 монет.
+peter had 4 apples. he gave away 3 apples. he has 1 apple left.
 у юрия было 6 ручек. он отдал 2 ручки. у него осталось 4 ручки.
-ivan had 4 pens. he gave away 1 pen. he has 3 pens left.
+vera had 7 coins. she gave away 10 coins — there is no such count: 10 is greater than 7.
+у марии было 9 яблок. она отдала 11 яблок — нет такого счёта: 11 больше 9.
+ivan had 4 pens. he gave away 1 pen. how many pens does he have left? ivan had 4 pens. he gave away 1 pen. he has 3 pens left.
+у веры было 6 шариков. она отдала 3 шарика. сколько шариков у неё осталось? у веры было 6 шариков. она отдала 3 шарика. у неё осталось 3 шарика.
+maria had 5 pens. she gave away 2 pens. she has 3 pens left.
 у ивана было 7 шариков. он отдал 1 шарик. у него осталось 6 шариков.
-peter had 5 marbles. he gave away 3 marbles. he has 2 marbles left.
+yuri had 8 apples. he gave away 10 apples — there is no such count: 10 is greater than 8.
+у анны было 10 ручек. она отдала 11 ручек — нет такого счёта: 11 больше 10.
+peter had 5 marbles. he gave away 3 marbles. how many marbles does he have left? peter had 5 marbles. he gave away 3 marbles. he has 2 marbles left.
+у юрия было 7 книг. он отдал 2 книги. сколько книг у него осталось? у юрия было 7 книг. он отдал 2 книги. у него осталось 5 книг.
+anna had 9 coins. she gave away 1 coin. she has 8 coins left.
 у петра было 4 яблока. он отдал 3 яблока. у него осталось 1 яблоко.
+ivan had 5 books. he gave away 6 books — there is no such count: 6 is greater than 5.
+у веры было 7 монет. она отдала 10 монет — нет такого счёта: 10 больше 7.
+maria had 9 apples. she gave away 2 apples. how many apples does she have left? maria had 9 apples. she gave away 2 apples. she has 7 apples left.
+у ивана было 4 ручки. он отдал 1 ручку. сколько ручек у него осталось? у ивана было 4 ручки. он отдал 1 ручку. у него осталось 3 ручки.
+vera had 6 marbles. she gave away 3 marbles. she has 3 marbles left.
+у марии было 5 ручек. она отдала 2 ручки. у неё осталось 3 ручки.
+peter had 6 coins. he gave away 9 coins — there is no such count: 9 is greater than 6.
+у юрия было 8 яблок. он отдал 10 яблок — нет такого счёта: 10 больше 8.
+anna had 10 pens. she gave away 1 pen. how many pens does she have left? anna had 10 pens. she gave away 1 pen. she has 9 pens left.
+у петра было 5 шариков. он отдал 3 шарика. сколько шариков у него осталось? у петра было 5 шариков. он отдал 3 шарика. у него осталось 2 шарика.
+yuri had 7 books. he gave away 2 books. he has 5 books left.
+у анны было 9 монет. она отдала 1 монету. у неё осталось 8 монет.
+maria had 10 marbles. she gave away 12 marbles — there is no such count: 12 is greater than 10.
+у ивана было 5 книг. он отдал 6 книг — нет такого счёта: 6 больше 5.
+vera had 7 coins. she gave away 3 coins. how many coins does she have left? vera had 7 coins. she gave away 3 coins. she has 4 coins left.
+у марии было 9 яблок. она отдала 2 яблока. сколько яблок у неё осталось? у марии было 9 яблок. она отдала 2 яблока. у неё осталось 7 яблок.
+ivan had 4 pens. he gave away 1 pen. he has 3 pens left.
+у веры было 6 шариков. она отдала 3 шарика. у неё осталось 3 шарика.
+anna had 4 books. she gave away 5 books — there is no such count: 5 is greater than 4.
+у петра было 6 монет. он отдал 9 монет — нет такого счёта: 9 больше 6.
+yuri had 8 apples. he gave away 2 apples. how many apples does he have left? yuri had 8 apples. he gave away 2 apples. he has 6 apples left.
+у анны было 10 ручек. она отдала 1 ручку. сколько ручек у неё осталось? у анны было 10 ручек. она отдала 1 ручку. у неё осталось 9 ручек.
+peter had 5 marbles. he gave away 3 marbles. he has 2 marbles left.
+у юрия было 7 книг. он отдал 2 книги. у него осталось 5 книг.
+vera had 8 pens. she gave away 11 pens — there is no such count: 11 is greater than 8.
+у марии было 10 шариков. она отдала 12 шариков — нет такого счёта: 12 больше 10.
+ivan had 5 books. he gave away 1 book. how many books does he have left? ivan had 5 books. he gave away 1 book. he has 4 books left.
+у веры было 7 монет. она отдала 3 монеты. сколько монет у неё осталось? у веры было 7 монет. она отдала 3 монеты. у неё осталось 4 монеты.
 maria had 9 apples. she gave away 2 apples. she has 7 apples left.
+у ивана было 4 ручки. он отдал 1 ручку. у него осталось 3 ручки.
+yuri had 5 coins. he gave away 7 coins — there is no such count: 7 is greater than 5.
+у анны было 4 книги. она отдала 5 книг — нет такого счёта: 5 больше 4.
+peter had 6 coins. he gave away 3 coins. how many coins does he have left? peter had 6 coins. he gave away 3 coins. he has 3 coins left.
+у юрия было 8 яблок. он отдал 2 яблока. сколько яблок у него осталось? у юрия было 8 яблок. он отдал 2 яблока. у него осталось 6 яблок.
+anna had 10 pens. she gave away 1 pen. she has 9 pens left.
+у петра было 5 шариков. он отдал 3 шарика. у него осталось 2 шарика.
+ivan had 6 apples. he gave away 7 apples — there is no such count: 7 is greater than 6.
+у веры было 8 ручек. она отдала 11 ручек — нет такого счёта: 11 больше 8.
+maria had 10 marbles. she gave away 2 marbles. how many marbles does she have left? maria had 10 marbles. she gave away 2 marbles. she has 8 marbles left.
+у ивана было 5 книг. он отдал 1 книгу. сколько книг у него осталось? у ивана было 5 книг. он отдал 1 книгу. у него осталось 4 книги.
+vera had 7 coins. she gave away 3 coins. she has 4 coins left.
+у марии было 9 яблок. она отдала 2 яблока. у неё осталось 7 яблок.
+peter had 10 books. he gave away 13 books — there is no such count: 13 is greater than 10.
+у юрия было 5 монет. он отдал 7 монет — нет такого счёта: 7 больше 5.
+anna had 4 books. she gave away 1 book. how many books does she have left? anna had 4 books. she gave away 1 book. she has 3 books left.
+у петра было 6 монет. он отдал 3 монеты. сколько монет у него осталось? у петра было 6 монет. он отдал 3 монеты. у него осталось 3 монеты.
+yuri had 8 apples. he gave away 2 apples. he has 6 apples left.
+у анны было 10 ручек. она отдала 1 ручку. у неё осталось 9 ручек.
+maria had 4 coins. she gave away 6 coins — there is no such count: 6 is greater than 4.
+у ивана было 6 яблок. он отдал 7 яблок — нет такого счёта: 7 больше 6.
+vera had 8 pens. she gave away 3 pens. how many pens does she have left? vera had 8 pens. she gave away 3 pens. she has 5 pens left.
+у марии было 10 шариков. она отдала 2 шарика. сколько шариков у неё осталось? у марии было 10 шариков. она отдала 2 шарика. у неё осталось 8 шариков.
+ivan had 5 books. he gave away 1 book. he has 4 books left.
+у веры было 7 монет. она отдала 3 монеты. у неё осталось 4 монеты.
+anna had 8 marbles. she gave away 9 marbles — there is no such count: 9 is greater than 8.
+у петра было 10 книг. он отдал 13 книг — нет такого счёта: 13 больше 10.
+yuri had 5 coins. he gave away 2 coins. how many coins does he have left? yuri had 5 coins. he gave away 2 coins. he has 3 coins left.
 
 6 делится на 2. значит 6 чётно.
 10 is divisible by 2. therefore 10 is a multiple of 2.
@@ -1062,54 +1254,150 @@ not all of 8, 9, 10 are even: 9 is odd.
 24 делится на 4. значит 24 делится на 2. значит 24 чётно.
 all numbers that are divisible by 4 are even. 20 is divisible by 4. therefore 20 is even.
 
-vera had 8 books. she gave away 2 books. she has 6 books left.
-у анны было 8 монет. она отдала 3 монеты. у неё осталось 5 монет.
-anna had 7 marbles. she gave away 3 marbles. she has 4 marbles left.
-у марии было 4 ручки. она отдала 1 ручку. у неё осталось 3 ручки.
-maria had 10 coins. she gave away 1 coin. she has 9 coins left.
-у петра было 10 яблок. он отдал 2 яблока. у него осталось 8 яблок.
-peter had 9 books. he gave away 2 books. he has 7 books left.
-у ивана было 6 шариков. он отдал 3 шарика. у него осталось 3 шарика.
-ivan had 5 apples. he gave away 3 apples. he has 2 apples left.
-у юрия было 5 ручек. он отдал 1 ручку. у него осталось 4 ручки.
-yuri had 4 coins. he gave away 1 coin. he has 3 coins left.
-у веры было 8 книг. она отдала 2 книги. у неё осталось 6 книг.
-vera had 7 pens. she gave away 2 pens. she has 5 pens left.
-у анны было 7 шариков. она отдала 3 шарика. у неё осталось 4 шарика.
-anna had 6 apples. she gave away 3 apples. she has 3 apples left.
-у марии было 10 монет. она отдала 1 монету. у неё осталось 9 монет.
-maria had 9 marbles. she gave away 1 marble. she has 8 marbles left.
-у петра было 9 книг. он отдал 2 книги. у него осталось 7 книг.
-peter had 5 coins. he gave away 2 coins. he has 3 coins left.
+peter had 5 coins. he gave away 2 coins. how many coins does he have left? peter had 5 coins. he gave away 2 coins. he has 3 coins left.
+у юрия было 7 яблок. он отдал 8 яблок — нет такого счёта: 8 больше 7.
+anna had 9 pens. she gave away 12 pens — there is no such count: 12 is greater than 9.
 у ивана было 5 яблок. он отдал 3 яблока. у него осталось 2 яблока.
-ivan had 4 books. he gave away 3 books. he has 1 book left.
+vera had 7 pens. she gave away 2 pens. she has 5 pens left.
+у марии было 9 шариков. она отдала 1 шарик. сколько шариков у неё осталось? у марии было 9 шариков. она отдала 1 шарик. у неё осталось 8 шариков.
+ivan had 4 books. he gave away 3 books. how many books does he have left? ivan had 4 books. he gave away 3 books. he has 1 book left.
+у веры было 6 монет. она отдала 8 монет — нет такого счёта: 8 больше 6.
+maria had 8 apples. she gave away 9 apples — there is no such count: 9 is greater than 8.
 у юрия было 4 монеты. он отдал 1 монету. у него осталось 3 монеты.
-yuri had 7 apples. he gave away 1 apple. he has 6 apples left.
+anna had 6 apples. she gave away 3 apples. she has 3 apples left.
+у петра было 5 монет. он отдал 2 монеты. сколько монет у него осталось? у петра было 5 монет. он отдал 2 монеты. у него осталось 3 монеты.
+yuri had 7 apples. he gave away 1 apple. how many apples does he have left? yuri had 7 apples. he gave away 1 apple. he has 6 apples left.
+у анны было 9 ручек. она отдала 12 ручек — нет такого счёта: 12 больше 9.
+peter had 4 marbles. he gave away 6 marbles — there is no such count: 6 is greater than 4.
 у веры было 7 ручек. она отдала 2 ручки. у неё осталось 5 ручек.
-vera had 6 coins. she gave away 2 coins. she has 4 coins left.
+maria had 9 marbles. she gave away 1 marble. she has 8 marbles left.
+у ивана было 4 книги. он отдал 3 книги. сколько книг у него осталось? у ивана было 4 книги. он отдал 3 книги. у него осталось 1 книга.
+vera had 6 coins. she gave away 2 coins. how many coins does she have left? vera had 6 coins. she gave away 2 coins. she has 4 coins left.
+у марии было 8 яблок. она отдала 9 яблок — нет такого счёта: 9 больше 8.
+ivan had 10 pens. he gave away 13 pens — there is no such count: 13 is greater than 10.
 у анны было 6 яблок. она отдала 3 яблока. у неё осталось 3 яблока.
-anna had 9 pens. she gave away 3 pens. she has 6 pens left.
+peter had 5 coins. he gave away 2 coins. he has 3 coins left.
+у юрия было 7 яблок. он отдал 1 яблоко. сколько яблок у него осталось? у юрия было 7 яблок. он отдал 1 яблоко. у него осталось 6 яблок.
+anna had 9 pens. she gave away 3 pens. how many pens does she have left? anna had 9 pens. she gave away 3 pens. she has 6 pens left.
+у петра было 4 шарика. он отдал 6 шариков — нет такого счёта: 6 больше 4.
+yuri had 6 books. he gave away 7 books — there is no such count: 7 is greater than 6.
 у марии было 9 шариков. она отдала 1 шарик. у неё осталось 8 шариков.
-maria had 8 apples. she gave away 1 apple. she has 7 apples left.
+ivan had 4 books. he gave away 3 books. he has 1 book left.
+у веры было 6 монет. она отдала 2 монеты. сколько монет у неё осталось? у веры было 6 монет. она отдала 2 монеты. у неё осталось 4 монеты.
+maria had 8 apples. she gave away 1 apple. how many apples does she have left? maria had 8 apples. she gave away 1 apple. she has 7 apples left.
+у ивана было 10 ручек. он отдал 13 ручек — нет такого счёта: 13 больше 10.
+vera had 5 marbles. she gave away 7 marbles — there is no such count: 7 is greater than 5.
 у петра было 5 монет. он отдал 2 монеты. у него осталось 3 монеты.
-peter had 4 marbles. he gave away 2 marbles. he has 2 marbles left.
+yuri had 7 apples. he gave away 1 apple. he has 6 apples left.
+у анны было 9 ручек. она отдала 3 ручки. сколько ручек у неё осталось? у анны было 9 ручек. она отдала 3 ручки. у неё осталось 6 ручек.
+peter had 4 marbles. he gave away 2 marbles. how many marbles does he have left? peter had 4 marbles. he gave away 2 marbles. he has 2 marbles left.
+у юрия было 6 книг. он отдал 7 книг — нет такого счёта: 7 больше 6.
+anna had 8 coins. she gave away 11 coins — there is no such count: 11 is greater than 8.
 у ивана было 4 книги. он отдал 3 книги. у него осталось 1 книга.
-ivan had 10 pens. he gave away 3 pens. he has 7 pens left.
+vera had 6 coins. she gave away 2 coins. she has 4 coins left.
+у марии было 8 яблок. она отдала 1 яблоко. сколько яблок у неё осталось? у марии было 8 яблок. она отдала 1 яблоко. у неё осталось 7 яблок.
+ivan had 10 pens. he gave away 3 pens. how many pens does he have left? ivan had 10 pens. he gave away 3 pens. he has 7 pens left.
+у веры было 5 шариков. она отдала 7 шариков — нет такого счёта: 7 больше 5.
+maria had 4 pens. she gave away 5 pens — there is no such count: 5 is greater than 4.
 у юрия было 7 яблок. он отдал 1 яблоко. у него осталось 6 яблок.
-yuri had 6 books. he gave away 1 book. he has 5 books left.
+anna had 9 pens. she gave away 3 pens. she has 6 pens left.
+у петра было 4 шарика. он отдал 2 шарика. сколько шариков у него осталось? у петра было 4 шарика. он отдал 2 шарика. у него осталось 2 шарика.
+yuri had 6 books. he gave away 1 book. how many books does he have left? yuri had 6 books. he gave away 1 book. he has 5 books left.
+у анны было 8 монет. она отдала 11 монет — нет такого счёта: 11 больше 8.
+peter had 10 apples. he gave away 12 apples — there is no such count: 12 is greater than 10.
 у веры было 6 монет. она отдала 2 монеты. у неё осталось 4 монеты.
-vera had 5 marbles. she gave away 2 marbles. she has 3 marbles left.
+maria had 8 apples. she gave away 1 apple. she has 7 apples left.
+у ивана было 10 ручек. он отдал 3 ручки. сколько ручек у него осталось? у ивана было 10 ручек. он отдал 3 ручки. у него осталось 7 ручек.
+vera had 5 marbles. she gave away 2 marbles. how many marbles does she have left? vera had 5 marbles. she gave away 2 marbles. she has 3 marbles left.
+у марии было 4 ручки. она отдала 5 ручек — нет такого счёта: 5 больше 4.
+ivan had 6 marbles. he gave away 9 marbles — there is no such count: 9 is greater than 6.
 у анны было 9 ручек. она отдала 3 ручки. у неё осталось 6 ручек.
-anna had 8 coins. she gave away 3 coins. she has 5 coins left.
+peter had 4 marbles. he gave away 2 marbles. he has 2 marbles left.
+у юрия было 6 книг. он отдал 1 книгу. сколько книг у него осталось? у юрия было 6 книг. он отдал 1 книгу. у него осталось 5 книг.
+anna had 8 coins. she gave away 3 coins. how many coins does she have left? anna had 8 coins. she gave away 3 coins. she has 5 coins left.
+у петра было 10 яблок. он отдал 12 яблок — нет такого счёта: 12 больше 10.
+yuri had 5 pens. he gave away 6 pens — there is no such count: 6 is greater than 5.
 у марии было 8 яблок. она отдала 1 яблоко. у неё осталось 7 яблок.
-maria had 4 pens. she gave away 1 pen. she has 3 pens left.
+ivan had 10 pens. he gave away 3 pens. he has 7 pens left.
+у веры было 5 шариков. она отдала 2 шарика. сколько шариков у неё осталось? у веры было 5 шариков. она отдала 2 шарика. у неё осталось 3 шарика.
+maria had 4 pens. she gave away 1 pen. how many pens does she have left? maria had 4 pens. she gave away 1 pen. she has 3 pens left.
+у ивана было 6 шариков. он отдал 9 шариков — нет такого счёта: 9 больше 6.
+vera had 8 books. she gave away 10 books — there is no such count: 10 is greater than 8.
 у петра было 4 шарика. он отдал 2 шарика. у него осталось 2 шарика.
-peter had 10 apples. he gave away 2 apples. he has 8 apples left.
+yuri had 6 books. he gave away 1 book. he has 5 books left.
+у анны было 8 монет. она отдала 3 монеты. сколько монет у неё осталось? у анны было 8 монет. она отдала 3 монеты. у неё осталось 5 монет.
+peter had 10 apples. he gave away 2 apples. how many apples does he have left? peter had 10 apples. he gave away 2 apples. he has 8 apples left.
+у юрия было 5 ручек. он отдал 6 ручек — нет такого счёта: 6 больше 5.
+anna had 7 marbles. she gave away 10 marbles — there is no such count: 10 is greater than 7.
 у ивана было 10 ручек. он отдал 3 ручки. у него осталось 7 ручек.
-ivan had 6 marbles. he gave away 3 marbles. he has 3 marbles left.
+vera had 5 marbles. she gave away 2 marbles. she has 3 marbles left.
+у марии было 4 ручки. она отдала 1 ручку. сколько ручек у неё осталось? у марии было 4 ручки. она отдала 1 ручку. у неё осталось 3 ручки.
+ivan had 6 marbles. he gave away 3 marbles. how many marbles does he have left? ivan had 6 marbles. he gave away 3 marbles. he has 3 marbles left.
+у веры было 8 книг. она отдала 10 книг — нет такого счёта: 10 больше 8.
+maria had 10 coins. she gave away 11 coins — there is no such count: 11 is greater than 10.
 у юрия было 6 книг. он отдал 1 книгу. у него осталось 5 книг.
-yuri had 5 pens. he gave away 1 pen. he has 4 pens left.
+anna had 8 coins. she gave away 3 coins. she has 5 coins left.
+у петра было 10 яблок. он отдал 2 яблока. сколько яблок у него осталось? у петра было 10 яблок. он отдал 2 яблока. у него осталось 8 яблок.
+yuri had 5 pens. he gave away 1 pen. how many pens does he have left? yuri had 5 pens. he gave away 1 pen. he has 4 pens left.
+у анны было 7 шариков. она отдала 10 шариков — нет такого счёта: 10 больше 7.
+peter had 9 books. he gave away 11 books — there is no such count: 11 is greater than 9.
 у веры было 5 шариков. она отдала 2 шарика. у неё осталось 3 шарика.
+maria had 4 pens. she gave away 1 pen. she has 3 pens left.
+у ивана было 6 шариков. он отдал 3 шарика. сколько шариков у него осталось? у ивана было 6 шариков. он отдал 3 шарика. у него осталось 3 шарика.
+vera had 8 books. she gave away 2 books. how many books does she have left? vera had 8 books. she gave away 2 books. she has 6 books left.
+у марии было 10 монет. она отдала 11 монет — нет такого счёта: 11 больше 10.
+ivan had 5 apples. he gave away 8 apples — there is no such count: 8 is greater than 5.
+у анны было 8 монет. она отдала 3 монеты. у неё осталось 5 монет.
+peter had 10 apples. he gave away 2 apples. he has 8 apples left.
+у юрия было 5 ручек. он отдал 1 ручку. сколько ручек у него осталось? у юрия было 5 ручек. он отдал 1 ручку. у него осталось 4 ручки.
+anna had 7 marbles. she gave away 3 marbles. how many marbles does she have left? anna had 7 marbles. she gave away 3 marbles. she has 4 marbles left.
+у петра было 9 книг. он отдал 11 книг — нет такого счёта: 11 больше 9.
+yuri had 4 coins. he gave away 5 coins — there is no such count: 5 is greater than 4.
+у марии было 4 ручки. она отдала 1 ручку. у неё осталось 3 ручки.
+ivan had 6 marbles. he gave away 3 marbles. he has 3 marbles left.
+у веры было 8 книг. она отдала 2 книги. сколько книг у неё осталось? у веры было 8 книг. она отдала 2 книги. у неё осталось 6 книг.
+maria had 10 coins. she gave away 1 coin. how many coins does she have left? maria had 10 coins. she gave away 1 coin. she has 9 coins left.
+у ивана было 5 яблок. он отдал 8 яблок — нет такого счёта: 8 больше 5.
+vera had 7 pens. she gave away 9 pens — there is no such count: 9 is greater than 7.
+у петра было 10 яблок. он отдал 2 яблока. у него осталось 8 яблок.
+yuri had 5 pens. he gave away 1 pen. he has 4 pens left.
+у анны было 7 шариков. она отдала 3 шарика. сколько шариков у неё осталось? у анны было 7 шариков. она отдала 3 шарика. у неё осталось 4 шарика.
+peter had 9 books. he gave away 2 books. how many books does he have left? peter had 9 books. he gave away 2 books. he has 7 books left.
+у юрия было 4 монеты. он отдал 5 монет — нет такого счёта: 5 больше 4.
+anna had 6 apples. she gave away 9 apples — there is no such count: 9 is greater than 6.
+у ивана было 6 шариков. он отдал 3 шарика. у него осталось 3 шарика.
+vera had 8 books. she gave away 2 books. she has 6 books left.
+у марии было 10 монет. она отдала 1 монету. сколько монет у неё осталось? у марии было 10 монет. она отдала 1 монету. у неё осталось 9 монет.
+ivan had 5 apples. he gave away 3 apples. how many apples does he have left? ivan had 5 apples. he gave away 3 apples. he has 2 apples left.
+у веры было 7 ручек. она отдала 9 ручек — нет такого счёта: 9 больше 7.
+maria had 9 marbles. she gave away 10 marbles — there is no such count: 10 is greater than 9.
+у юрия было 5 ручек. он отдал 1 ручку. у него осталось 4 ручки.
+anna had 7 marbles. she gave away 3 marbles. she has 4 marbles left.
+у петра было 9 книг. он отдал 2 книги. сколько книг у него осталось? у петра было 9 книг. он отдал 2 книги. у него осталось 7 книг.
+yuri had 4 coins. he gave away 1 coin. how many coins does he have left? yuri had 4 coins. he gave away 1 coin. he has 3 coins left.
+у анны было 6 яблок. она отдала 9 яблок — нет такого счёта: 9 больше 6.
+peter had 5 coins. he gave away 7 coins — there is no such count: 7 is greater than 5.
+у веры было 8 книг. она отдала 2 книги. у неё осталось 6 книг.
+maria had 10 coins. she gave away 1 coin. she has 9 coins left.
+у ивана было 5 яблок. он отдал 3 яблока. сколько яблок у него осталось? у ивана было 5 яблок. он отдал 3 яблока. у него осталось 2 яблока.
+vera had 7 pens. she gave away 2 pens. how many pens does she have left? vera had 7 pens. she gave away 2 pens. she has 5 pens left.
+у марии было 9 шариков. она отдала 10 шариков — нет такого счёта: 10 больше 9.
+ivan had 4 books. he gave away 7 books — there is no such count: 7 is greater than 4.
+у анны было 7 шариков. она отдала 3 шарика. у неё осталось 4 шарика.
+peter had 9 books. he gave away 2 books. he has 7 books left.
+у юрия было 4 монеты. он отдал 1 монету. сколько монет у него осталось? у юрия было 4 монеты. он отдал 1 монету. у него осталось 3 монеты.
+anna had 6 apples. she gave away 3 apples. how many apples does she have left? anna had 6 apples. she gave away 3 apples. she has 3 apples left.
+у петра было 5 монет. он отдал 7 монет — нет такого счёта: 7 больше 5.
+yuri had 7 apples. he gave away 8 apples — there is no such count: 8 is greater than 7.
+у марии было 10 монет. она отдала 1 монету. у неё осталось 9 монет.
+ivan had 5 apples. he gave away 3 apples. he has 2 apples left.
+у веры было 7 ручек. она отдала 2 ручки. сколько ручек у неё осталось? у веры было 7 ручек. она отдала 2 ручки. у неё осталось 5 ручек.
+maria had 9 marbles. she gave away 1 marble. how many marbles does she have left? maria had 9 marbles. she gave away 1 marble. she has 8 marbles left.
+у ивана было 4 книги. он отдал 7 книг — нет такого счёта: 7 больше 4.
+vera had 6 coins. she gave away 8 coins — there is no such count: 8 is greater than 6.
+у петра было 9 книг. он отдал 2 книги. у него осталось 7 книг.
+yuri had 4 coins. he gave away 1 coin. he has 3 coins left.
+у анны было 6 яблок. она отдала 3 яблока. сколько яблок у неё осталось? у анны было 6 яблок. она отдала 3 яблока. у неё осталось 3 яблока.
 
 10 is divisible by 2. therefore 10 is even.
 14 делится на 2. значит 14 чётно.
@@ -1594,54 +1882,150 @@ all numbers that are divisible by 4 are even. 16 is divisible by 4. therefore 16
 not all of 6, 7, 8 are even: 7 is odd.
 числа 8, 10, 12 названы. они все чётны.
 
-у юрия было 6 яблок. он отдал 3 яблока. у него осталось 3 яблока.
-anna had 7 coins. she gave away 2 coins. she has 5 coins left.
-у ивана было 9 ручек. он отдал 2 ручки. у него осталось 7 ручек.
-vera had 7 books. she gave away 1 book. she has 6 books left.
-у петра было 9 яблок. он отдал 1 яблоко. у него осталось 8 яблок.
-yuri had 10 coins. he gave away 3 coins. he has 7 coins left.
-у марии было 9 монет. она отдала 3 монеты. у неё осталось 6 монет.
-ivan had 10 books. he gave away 2 books. he has 8 books left.
-у анны было 5 яблок. она отдала 2 яблока. у неё осталось 3 яблока.
-peter had 10 marbles. he gave away 1 marble. he has 9 marbles left.
-у веры было 5 монет. она отдала 1 монету. у неё осталось 4 монеты.
-maria had 6 books. she gave away 3 books. she has 3 books left.
-у юрия было 5 книг. он отдал 3 книги. у него осталось 2 книги.
-anna had 6 marbles. she gave away 2 marbles. she has 4 marbles left.
-у ивана было 5 шариков. он отдал 2 шарика. у него осталось 3 шарика.
+у петра было 4 монеты. он отдал 5 монет — нет такого счёта: 5 больше 4.
+vera had 7 books. she gave away 1 book. how many books does she have left? vera had 7 books. she gave away 1 book. she has 6 books left.
+у петра было 10 шариков. он отдал 1 шарик. сколько шариков у него осталось? у петра было 10 шариков. он отдал 1 шарик. у него осталось 9 шариков.
 vera had 6 pens. she gave away 1 pen. she has 5 pens left.
-у петра было 8 книг. он отдал 1 книгу. у него осталось 7 книг.
+у петра было 9 яблок. он отдал 1 яблоко. у него осталось 8 яблок.
+yuri had 4 pens. he gave away 7 pens — there is no such count: 7 is greater than 4.
+у марии было 7 яблок. она отдала 10 яблок — нет такого счёта: 10 больше 7.
+yuri had 10 coins. he gave away 3 coins. how many coins does he have left? yuri had 10 coins. he gave away 3 coins. he has 7 coins left.
+у марии было 6 книг. она отдала 3 книги. сколько книг у неё осталось? у марии было 6 книг. она отдала 3 книги. у неё осталось 3 книги.
 yuri had 6 apples. he gave away 3 apples. he has 3 apples left.
-у марии было 8 шариков. она отдала 3 шарика. у неё осталось 5 шариков.
+у марии было 9 монет. она отдала 3 монеты. у неё осталось 6 монет.
+ivan had 4 apples. he gave away 6 apples — there is no such count: 6 is greater than 4.
+у анны было 7 монет. она отдала 9 монет — нет такого счёта: 9 больше 7.
+ivan had 10 books. he gave away 2 books. how many books does he have left? ivan had 10 books. he gave away 2 books. he has 8 books left.
+у анны было 6 шариков. она отдала 2 шарика. сколько шариков у неё осталось? у анны было 6 шариков. она отдала 2 шарика. у неё осталось 4 шарика.
 ivan had 9 pens. he gave away 2 pens. he has 7 pens left.
-у анны было 8 ручек. она отдала 2 ручки. у неё осталось 6 ручек.
+у анны было 5 яблок. она отдала 2 яблока. у неё осталось 3 яблока.
+peter had 4 coins. he gave away 5 coins — there is no such count: 5 is greater than 4.
+у веры было 7 книг. она отдала 8 книг — нет такого счёта: 8 больше 7.
+peter had 10 marbles. he gave away 1 marble. how many marbles does he have left? peter had 10 marbles. he gave away 1 marble. he has 9 marbles left.
+у веры было 6 ручек. она отдала 1 ручку. сколько ручек у неё осталось? у веры было 6 ручек. она отдала 1 ручку. у неё осталось 5 ручек.
 peter had 9 apples. he gave away 1 apple. he has 8 apples left.
-у веры было 4 шарика. она отдала 1 шарик. у неё осталось 3 шарика.
+у веры было 5 монет. она отдала 1 монету. у неё осталось 4 монеты.
+maria had 7 apples. she gave away 10 apples — there is no such count: 10 is greater than 7.
+у юрия было 10 монет. он отдал 13 монет — нет такого счёта: 13 больше 10.
+maria had 6 books. she gave away 3 books. how many books does she have left? maria had 6 books. she gave away 3 books. she has 3 books left.
+у юрия было 6 яблок. он отдал 3 яблока. сколько яблок у него осталось? у юрия было 6 яблок. он отдал 3 яблока. у него осталось 3 яблока.
 maria had 9 coins. she gave away 3 coins. she has 6 coins left.
-у юрия было 4 ручки. он отдал 3 ручки. у него осталось 1 ручка.
+у юрия было 5 книг. он отдал 3 книги. у него осталось 2 книги.
+anna had 7 coins. she gave away 9 coins — there is no such count: 9 is greater than 7.
+у ивана было 10 книг. он отдал 12 книг — нет такого счёта: 12 больше 10.
+anna had 6 marbles. she gave away 2 marbles. how many marbles does she have left? anna had 6 marbles. she gave away 2 marbles. she has 4 marbles left.
+у ивана было 9 ручек. он отдал 2 ручки. сколько ручек у него осталось? у ивана было 9 ручек. он отдал 2 ручки. у него осталось 7 ручек.
 anna had 5 apples. she gave away 2 apples. she has 3 apples left.
-у ивана было 4 яблока. он отдал 2 яблока. у него осталось 2 яблока.
+у ивана было 5 шариков. он отдал 2 шарика. у него осталось 3 шарика.
+vera had 7 books. she gave away 8 books — there is no such count: 8 is greater than 7.
+у петра было 10 шариков. он отдал 11 шариков — нет такого счёта: 11 больше 10.
+vera had 6 pens. she gave away 1 pen. how many pens does she have left? vera had 6 pens. she gave away 1 pen. she has 5 pens left.
+у петра было 9 яблок. он отдал 1 яблоко. сколько яблок у него осталось? у петра было 9 яблок. он отдал 1 яблоко. у него осталось 8 яблок.
 vera had 5 coins. she gave away 1 coin. she has 4 coins left.
-у петра было 4 монеты. он отдал 1 монету. у него осталось 3 монеты.
+у петра было 8 книг. он отдал 1 книгу. у него осталось 7 книг.
+yuri had 10 coins. he gave away 13 coins — there is no such count: 13 is greater than 10.
+у марии было 6 книг. она отдала 9 книг — нет такого счёта: 9 больше 6.
+yuri had 6 apples. he gave away 3 apples. how many apples does he have left? yuri had 6 apples. he gave away 3 apples. he has 3 apples left.
+у марии было 9 монет. она отдала 3 монеты. сколько монет у неё осталось? у марии было 9 монет. она отдала 3 монеты. у неё осталось 6 монет.
 yuri had 5 books. he gave away 3 books. he has 2 books left.
-у марии было 7 яблок. она отдала 3 яблока. у неё осталось 4 яблока.
+у марии было 8 шариков. она отдала 3 шарика. у неё осталось 5 шариков.
+ivan had 10 books. he gave away 12 books — there is no such count: 12 is greater than 10.
+у анны было 6 шариков. она отдала 8 шариков — нет такого счёта: 8 больше 6.
+ivan had 9 pens. he gave away 2 pens. how many pens does he have left? ivan had 9 pens. he gave away 2 pens. he has 7 pens left.
+у анны было 5 яблок. она отдала 2 яблока. сколько яблок у неё осталось? у анны было 5 яблок. она отдала 2 яблока. у неё осталось 3 яблока.
 ivan had 5 marbles. he gave away 2 marbles. he has 3 marbles left.
-у анны было 7 монет. она отдала 2 монеты. у неё осталось 5 монет.
+у анны было 8 ручек. она отдала 2 ручки. у неё осталось 6 ручек.
+peter had 10 marbles. he gave away 11 marbles — there is no such count: 11 is greater than 10.
+у веры было 6 ручек. она отдала 7 ручек — нет такого счёта: 7 больше 6.
+peter had 9 apples. he gave away 1 apple. how many apples does he have left? peter had 9 apples. he gave away 1 apple. he has 8 apples left.
+у веры было 5 монет. она отдала 1 монету. сколько монет у неё осталось? у веры было 5 монет. она отдала 1 монету. у неё осталось 4 монеты.
 peter had 8 books. he gave away 1 book. he has 7 books left.
-у веры было 7 книг. она отдала 1 книгу. у неё осталось 6 книг.
+у веры было 4 шарика. она отдала 1 шарик. у неё осталось 3 шарика.
+maria had 6 books. she gave away 9 books — there is no such count: 9 is greater than 6.
+у юрия было 6 яблок. он отдал 9 яблок — нет такого счёта: 9 больше 6.
+maria had 9 coins. she gave away 3 coins. how many coins does she have left? maria had 9 coins. she gave away 3 coins. she has 6 coins left.
+у юрия было 5 книг. он отдал 3 книги. сколько книг у него осталось? у юрия было 5 книг. он отдал 3 книги. у него осталось 2 книги.
 maria had 8 marbles. she gave away 3 marbles. she has 5 marbles left.
-у юрия было 10 монет. он отдал 3 монеты. у него осталось 7 монет.
+у юрия было 4 ручки. он отдал 3 ручки. у него осталось 1 ручка.
+anna had 6 marbles. she gave away 8 marbles — there is no such count: 8 is greater than 6.
+у ивана было 9 ручек. он отдал 11 ручек — нет такого счёта: 11 больше 9.
+anna had 5 apples. she gave away 2 apples. how many apples does she have left? anna had 5 apples. she gave away 2 apples. she has 3 apples left.
+у ивана было 5 шариков. он отдал 2 шарика. сколько шариков у него осталось? у ивана было 5 шариков. он отдал 2 шарика. у него осталось 3 шарика.
 anna had 8 pens. she gave away 2 pens. she has 6 pens left.
-у ивана было 10 книг. он отдал 2 книги. у него осталось 8 книг.
+у ивана было 4 яблока. он отдал 2 яблока. у него осталось 2 яблока.
+vera had 6 pens. she gave away 7 pens — there is no such count: 7 is greater than 6.
+у петра было 9 яблок. он отдал 10 яблок — нет такого счёта: 10 больше 9.
+vera had 5 coins. she gave away 1 coin. how many coins does she have left? vera had 5 coins. she gave away 1 coin. she has 4 coins left.
+у петра было 8 книг. он отдал 1 книгу. сколько книг у него осталось? у петра было 8 книг. он отдал 1 книгу. у него осталось 7 книг.
 vera had 4 marbles. she gave away 1 marble. she has 3 marbles left.
-у петра было 10 шариков. он отдал 1 шарик. у него осталось 9 шариков.
+у петра было 4 монеты. он отдал 1 монету. у него осталось 3 монеты.
+yuri had 6 apples. he gave away 9 apples — there is no such count: 9 is greater than 6.
+у марии было 9 монет. она отдала 12 монет — нет такого счёта: 12 больше 9.
+yuri had 5 books. he gave away 3 books. how many books does he have left? yuri had 5 books. he gave away 3 books. he has 2 books left.
+у марии было 8 шариков. она отдала 3 шарика. сколько шариков у неё осталось? у марии было 8 шариков. она отдала 3 шарика. у неё осталось 5 шариков.
 yuri had 4 pens. he gave away 3 pens. he has 1 pen left.
-у марии было 6 книг. она отдала 3 книги. у неё осталось 3 книги.
+у марии было 7 яблок. она отдала 3 яблока. у неё осталось 4 яблока.
+ivan had 9 pens. he gave away 11 pens — there is no such count: 11 is greater than 9.
+у анны было 5 яблок. она отдала 7 яблок — нет такого счёта: 7 больше 5.
+ivan had 5 marbles. he gave away 2 marbles. how many marbles does he have left? ivan had 5 marbles. he gave away 2 marbles. he has 3 marbles left.
+у анны было 8 ручек. она отдала 2 ручки. сколько ручек у неё осталось? у анны было 8 ручек. она отдала 2 ручки. у неё осталось 6 ручек.
 ivan had 4 apples. he gave away 2 apples. he has 2 apples left.
-у анны было 6 шариков. она отдала 2 шарика. у неё осталось 4 шарика.
+у анны было 7 монет. она отдала 2 монеты. у неё осталось 5 монет.
+peter had 9 apples. he gave away 10 apples — there is no such count: 10 is greater than 9.
+у веры было 5 монет. она отдала 6 монет — нет такого счёта: 6 больше 5.
+peter had 8 books. he gave away 1 book. how many books does he have left? peter had 8 books. he gave away 1 book. he has 7 books left.
+у веры было 4 шарика. она отдала 1 шарик. сколько шариков у неё осталось? у веры было 4 шарика. она отдала 1 шарик. у неё осталось 3 шарика.
 peter had 4 coins. he gave away 1 coin. he has 3 coins left.
-у веры было 6 ручек. она отдала 1 ручку. у неё осталось 5 ручек.
+у веры было 7 книг. она отдала 1 книгу. у неё осталось 6 книг.
+maria had 9 coins. she gave away 12 coins — there is no such count: 12 is greater than 9.
+у юрия было 5 книг. он отдал 8 книг — нет такого счёта: 8 больше 5.
+maria had 8 marbles. she gave away 3 marbles. how many marbles does she have left? maria had 8 marbles. she gave away 3 marbles. she has 5 marbles left.
+у юрия было 4 ручки. он отдал 3 ручки. сколько ручек у него осталось? у юрия было 4 ручки. он отдал 3 ручки. у него осталось 1 ручка.
 maria had 7 apples. she gave away 3 apples. she has 4 apples left.
+у юрия было 10 монет. он отдал 3 монеты. у него осталось 7 монет.
+anna had 5 apples. she gave away 7 apples — there is no such count: 7 is greater than 5.
+у ивана было 5 шариков. он отдал 7 шариков — нет такого счёта: 7 больше 5.
+anna had 8 pens. she gave away 2 pens. how many pens does she have left? anna had 8 pens. she gave away 2 pens. she has 6 pens left.
+у ивана было 4 яблока. он отдал 2 яблока. сколько яблок у него осталось? у ивана было 4 яблока. он отдал 2 яблока. у него осталось 2 яблока.
+anna had 7 coins. she gave away 2 coins. she has 5 coins left.
+у ивана было 10 книг. он отдал 2 книги. у него осталось 8 книг.
+vera had 5 coins. she gave away 6 coins — there is no such count: 6 is greater than 5.
+у петра было 8 книг. он отдал 9 книг — нет такого счёта: 9 больше 8.
+vera had 4 marbles. she gave away 1 marble. how many marbles does she have left? vera had 4 marbles. she gave away 1 marble. she has 3 marbles left.
+у петра было 4 монеты. он отдал 1 монету. сколько монет у него осталось? у петра было 4 монеты. он отдал 1 монету. у него осталось 3 монеты.
+vera had 7 books. she gave away 1 book. she has 6 books left.
+у петра было 10 шариков. он отдал 1 шарик. у него осталось 9 шариков.
+yuri had 5 books. he gave away 8 books — there is no such count: 8 is greater than 5.
+у марии было 8 шариков. она отдала 11 шариков — нет такого счёта: 11 больше 8.
+yuri had 4 pens. he gave away 3 pens. how many pens does he have left? yuri had 4 pens. he gave away 3 pens. he has 1 pen left.
+у марии было 7 яблок. она отдала 3 яблока. сколько яблок у неё осталось? у марии было 7 яблок. она отдала 3 яблока. у неё осталось 4 яблока.
+yuri had 10 coins. he gave away 3 coins. he has 7 coins left.
+у марии было 6 книг. она отдала 3 книги. у неё осталось 3 книги.
+ivan had 5 marbles. he gave away 7 marbles — there is no such count: 7 is greater than 5.
+у анны было 8 ручек. она отдала 10 ручек — нет такого счёта: 10 больше 8.
+ivan had 4 apples. he gave away 2 apples. how many apples does he have left? ivan had 4 apples. he gave away 2 apples. he has 2 apples left.
+у анны было 7 монет. она отдала 2 монеты. сколько монет у неё осталось? у анны было 7 монет. она отдала 2 монеты. у неё осталось 5 монет.
+ivan had 10 books. he gave away 2 books. he has 8 books left.
+у анны было 6 шариков. она отдала 2 шарика. у неё осталось 4 шарика.
+peter had 8 books. he gave away 9 books — there is no such count: 9 is greater than 8.
+у веры было 4 шарика. она отдала 5 шариков — нет такого счёта: 5 больше 4.
+peter had 4 coins. he gave away 1 coin. how many coins does he have left? peter had 4 coins. he gave away 1 coin. he has 3 coins left.
+у веры было 7 книг. она отдала 1 книгу. сколько книг у неё осталось? у веры было 7 книг. она отдала 1 книгу. у неё осталось 6 книг.
+peter had 10 marbles. he gave away 1 marble. he has 9 marbles left.
+у веры было 6 ручек. она отдала 1 ручку. у неё осталось 5 ручек.
+maria had 8 marbles. she gave away 11 marbles — there is no such count: 11 is greater than 8.
+у юрия было 4 ручки. он отдал 7 ручек — нет такого счёта: 7 больше 4.
+maria had 7 apples. she gave away 3 apples. how many apples does she have left? maria had 7 apples. she gave away 3 apples. she has 4 apples left.
+у юрия было 10 монет. он отдал 3 монеты. сколько монет у него осталось? у юрия было 10 монет. он отдал 3 монеты. у него осталось 7 монет.
+maria had 6 books. she gave away 3 books. she has 3 books left.
+у юрия было 6 яблок. он отдал 3 яблока. у него осталось 3 яблока.
+anna had 8 pens. she gave away 10 pens — there is no such count: 10 is greater than 8.
+у ивана было 4 яблока. он отдал 6 яблок — нет такого счёта: 6 больше 4.
+anna had 7 coins. she gave away 2 coins. how many coins does she have left? anna had 7 coins. she gave away 2 coins. she has 5 coins left.
+у ивана было 10 книг. он отдал 2 книги. сколько книг у него осталось? у ивана было 10 книг. он отдал 2 книги. у него осталось 8 книг.
+anna had 6 marbles. she gave away 2 marbles. she has 4 marbles left.
+у ивана было 9 ручек. он отдал 2 ручки. у него осталось 7 ручек.
+vera had 4 marbles. she gave away 5 marbles — there is no such count: 5 is greater than 4.
 
 12 делится на 3. значит 12 кратно 3.
 16 is divisible by 2. therefore 16 is a multiple of 2.
@@ -2126,54 +2510,150 @@ peter has 6 coins. therefore he has an even count.
 не все числа 4, 5, 6 чётны: 5 нечётно.
 it may be that at least one of 5, 6, 7 is even: it is 6.
 
-у ивана было 10 яблок. он отдал 1 яблоко. у него осталось 9 яблок.
-anna had 5 marbles. she gave away 1 marble. she has 4 marbles left.
-у юрия было 5 яблок. он отдал 2 яблока. у него осталось 3 яблока.
-maria had 7 marbles. she gave away 2 marbles. she has 5 marbles left.
-у веры было 10 шариков. она отдала 3 шарика. у неё осталось 7 шариков.
-peter had 9 marbles. he gave away 3 marbles. he has 6 marbles left.
-у анны было 5 шариков. она отдала 1 шарик. у неё осталось 4 шарика.
-ivan had 4 marbles. he gave away 1 marble. he has 3 marbles left.
-у марии было 7 шариков. она отдала 2 шарика. у неё осталось 5 шариков.
-yuri had 9 coins. he gave away 2 coins. he has 7 coins left.
-у петра было 9 шариков. он отдал 3 шарика. у него осталось 6 шариков.
-vera had 4 coins. she gave away 3 coins. she has 1 coin left.
-у ивана было 4 шарика. он отдал 1 шарик. у него осталось 3 шарика.
-anna had 6 coins. she gave away 1 coin. she has 5 coins left.
-у юрия было 9 монет. он отдал 2 монеты. у него осталось 7 монет.
-maria had 8 coins. she gave away 2 coins. she has 6 coins left.
-у веры было 4 монеты. она отдала 3 монеты. у неё осталось 1 монета.
-peter had 6 pens. he gave away 3 pens. he has 3 pens left.
-у анны было 6 монет. она отдала 1 монету. у неё осталось 5 монет.
-ivan had 8 pens. he gave away 1 pen. he has 7 pens left.
-у марии было 8 монет. она отдала 2 монеты. у неё осталось 6 монет.
-yuri had 10 pens. he gave away 2 pens. he has 8 pens left.
-у петра было 6 ручек. он отдал 3 ручки. у него осталось 3 ручки.
-vera had 5 pens. she gave away 3 pens. she has 2 pens left.
-у ивана было 8 ручек. он отдал 1 ручку. у него осталось 7 ручек.
-anna had 7 pens. she gave away 1 pen. she has 6 pens left.
-у юрия было 10 ручек. он отдал 2 ручки. у него осталось 8 ручек.
-maria had 5 books. she gave away 2 books. she has 3 books left.
-у веры было 5 ручек. она отдала 3 ручки. у неё осталось 2 ручки.
-peter had 7 books. he gave away 3 books. he has 4 books left.
-у анны было 7 ручек. она отдала 1 ручку. у неё осталось 6 ручек.
-ivan had 9 books. he gave away 1 book. he has 8 books left.
-у марии было 5 книг. она отдала 2 книги. у неё осталось 3 книги.
-yuri had 4 books. he gave away 2 books. he has 2 books left.
-у петра было 7 книг. он отдал 3 книги. у него осталось 4 книги.
-vera had 6 books. she gave away 3 books. she has 3 books left.
-у ивана было 9 книг. он отдал 1 книгу. у него осталось 8 книг.
-anna had 4 apples. she gave away 1 apple. she has 3 apples left.
-у юрия было 4 книги. он отдал 2 книги. у него осталось 2 книги.
-maria had 6 apples. she gave away 2 apples. she has 4 apples left.
 у веры было 6 книг. она отдала 3 книги. у неё осталось 3 книги.
-peter had 8 apples. he gave away 3 apples. he has 5 apples left.
+peter had 9 marbles. he gave away 3 marbles. he has 6 marbles left.
+у веры было 5 ручек. она отдала 3 ручки. сколько ручек у неё осталось? у веры было 5 ручек. она отдала 3 ручки. у неё осталось 2 ручки.
+peter had 8 apples. he gave away 3 apples. how many apples does he have left? peter had 8 apples. he gave away 3 apples. he has 5 apples left.
+у веры было 4 монеты. она отдала 7 монет — нет такого счёта: 7 больше 4.
+peter had 7 books. he gave away 10 books — there is no such count: 10 is greater than 7.
 у анны было 4 яблока. она отдала 1 яблоко. у неё осталось 3 яблока.
-ivan had 10 apples. he gave away 1 apple. he has 9 apples left.
+ivan had 4 marbles. he gave away 1 marble. he has 3 marbles left.
+у анны было 7 ручек. она отдала 1 ручку. сколько ручек у неё осталось? у анны было 7 ручек. она отдала 1 ручку. у неё осталось 6 ручек.
+ivan had 10 apples. he gave away 1 apple. how many apples does he have left? ivan had 10 apples. he gave away 1 apple. he has 9 apples left.
+у анны было 6 монет. она отдала 7 монет — нет такого счёта: 7 больше 6.
+ivan had 9 books. he gave away 10 books — there is no such count: 10 is greater than 9.
 у марии было 6 яблок. она отдала 2 яблока. у неё осталось 4 яблока.
-yuri had 5 apples. he gave away 2 apples. he has 3 apples left.
+yuri had 9 coins. he gave away 2 coins. he has 7 coins left.
+у марии было 5 книг. она отдала 2 книги. сколько книг у неё осталось? у марии было 5 книг. она отдала 2 книги. у неё осталось 3 книги.
+yuri had 5 apples. he gave away 2 apples. how many apples does he have left? yuri had 5 apples. he gave away 2 apples. he has 3 apples left.
+у марии было 8 монет. она отдала 10 монет — нет такого счёта: 10 больше 8.
+yuri had 4 books. he gave away 6 books — there is no such count: 6 is greater than 4.
 у петра было 8 яблок. он отдал 3 яблока. у него осталось 5 яблок.
+vera had 4 coins. she gave away 3 coins. she has 1 coin left.
+у петра было 7 книг. он отдал 3 книги. сколько книг у него осталось? у петра было 7 книг. он отдал 3 книги. у него осталось 4 книги.
+vera had 10 marbles. she gave away 3 marbles. how many marbles does she have left? vera had 10 marbles. she gave away 3 marbles. she has 7 marbles left.
+у петра было 6 ручек. он отдал 9 ручек — нет такого счёта: 9 больше 6.
+vera had 6 books. she gave away 9 books — there is no such count: 9 is greater than 6.
+у ивана было 10 яблок. он отдал 1 яблоко. у него осталось 9 яблок.
+anna had 6 coins. she gave away 1 coin. she has 5 coins left.
+у ивана было 9 книг. он отдал 1 книгу. сколько книг у него осталось? у ивана было 9 книг. он отдал 1 книгу. у него осталось 8 книг.
+anna had 5 marbles. she gave away 1 marble. how many marbles does she have left? anna had 5 marbles. she gave away 1 marble. she has 4 marbles left.
+у ивана было 8 ручек. он отдал 9 ручек — нет такого счёта: 9 больше 8.
+anna had 4 apples. she gave away 5 apples — there is no such count: 5 is greater than 4.
+у юрия было 5 яблок. он отдал 2 яблока. у него осталось 3 яблока.
+maria had 8 coins. she gave away 2 coins. she has 6 coins left.
+у юрия было 4 книги. он отдал 2 книги. сколько книг у него осталось? у юрия было 4 книги. он отдал 2 книги. у него осталось 2 книги.
+maria had 7 marbles. she gave away 2 marbles. how many marbles does she have left? maria had 7 marbles. she gave away 2 marbles. she has 5 marbles left.
+у юрия было 10 ручек. он отдал 12 ручек — нет такого счёта: 12 больше 10.
+maria had 6 apples. she gave away 8 apples — there is no such count: 8 is greater than 6.
+у веры было 10 шариков. она отдала 3 шарика. у неё осталось 7 шариков.
+peter had 6 pens. he gave away 3 pens. he has 3 pens left.
+у веры было 6 книг. она отдала 3 книги. сколько книг у неё осталось? у веры было 6 книг. она отдала 3 книги. у неё осталось 3 книги.
+peter had 9 marbles. he gave away 3 marbles. how many marbles does he have left? peter had 9 marbles. he gave away 3 marbles. he has 6 marbles left.
+у веры было 5 ручек. она отдала 8 ручек — нет такого счёта: 8 больше 5.
+peter had 8 apples. he gave away 11 apples — there is no such count: 11 is greater than 8.
+у анны было 5 шариков. она отдала 1 шарик. у неё осталось 4 шарика.
+ivan had 8 pens. he gave away 1 pen. he has 7 pens left.
+у анны было 4 яблока. она отдала 1 яблоко. сколько яблок у неё осталось? у анны было 4 яблока. она отдала 1 яблоко. у неё осталось 3 яблока.
+ivan had 4 marbles. he gave away 1 marble. how many marbles does he have left? ivan had 4 marbles. he gave away 1 marble. he has 3 marbles left.
+у анны было 7 ручек. она отдала 8 ручек — нет такого счёта: 8 больше 7.
+ivan had 10 apples. he gave away 11 apples — there is no such count: 11 is greater than 10.
+у марии было 7 шариков. она отдала 2 шарика. у неё осталось 5 шариков.
+yuri had 10 pens. he gave away 2 pens. he has 8 pens left.
+у марии было 6 яблок. она отдала 2 яблока. сколько яблок у неё осталось? у марии было 6 яблок. она отдала 2 яблока. у неё осталось 4 яблока.
+yuri had 9 coins. he gave away 2 coins. how many coins does he have left? yuri had 9 coins. he gave away 2 coins. he has 7 coins left.
+у марии было 5 книг. она отдала 7 книг — нет такого счёта: 7 больше 5.
+yuri had 5 apples. he gave away 7 apples — there is no such count: 7 is greater than 5.
+у петра было 9 шариков. он отдал 3 шарика. у него осталось 6 шариков.
+vera had 5 pens. she gave away 3 pens. she has 2 pens left.
+у петра было 8 яблок. он отдал 3 яблока. сколько яблок у него осталось? у петра было 8 яблок. он отдал 3 яблока. у него осталось 5 яблок.
+vera had 4 coins. she gave away 3 coins. how many coins does she have left? vera had 4 coins. she gave away 3 coins. she has 1 coin left.
+у петра было 7 книг. он отдал 10 книг — нет такого счёта: 10 больше 7.
+vera had 10 marbles. she gave away 13 marbles — there is no such count: 13 is greater than 10.
+у ивана было 4 шарика. он отдал 1 шарик. у него осталось 3 шарика.
+anna had 7 pens. she gave away 1 pen. she has 6 pens left.
+у ивана было 10 яблок. он отдал 1 яблоко. сколько яблок у него осталось? у ивана было 10 яблок. он отдал 1 яблоко. у него осталось 9 яблок.
+anna had 6 coins. she gave away 1 coin. how many coins does she have left? anna had 6 coins. she gave away 1 coin. she has 5 coins left.
+у ивана было 9 книг. он отдал 10 книг — нет такого счёта: 10 больше 9.
+anna had 5 marbles. she gave away 6 marbles — there is no such count: 6 is greater than 5.
+у юрия было 9 монет. он отдал 2 монеты. у него осталось 7 монет.
+maria had 5 books. she gave away 2 books. she has 3 books left.
+у юрия было 5 яблок. он отдал 2 яблока. сколько яблок у него осталось? у юрия было 5 яблок. он отдал 2 яблока. у него осталось 3 яблока.
+maria had 8 coins. she gave away 2 coins. how many coins does she have left? maria had 8 coins. she gave away 2 coins. she has 6 coins left.
+у юрия было 4 книги. он отдал 6 книг — нет такого счёта: 6 больше 4.
+maria had 7 marbles. she gave away 9 marbles — there is no such count: 9 is greater than 7.
+у веры было 4 монеты. она отдала 3 монеты. у неё осталось 1 монета.
+peter had 7 books. he gave away 3 books. he has 4 books left.
+у веры было 10 шариков. она отдала 3 шарика. сколько шариков у неё осталось? у веры было 10 шариков. она отдала 3 шарика. у неё осталось 7 шариков.
+peter had 6 pens. he gave away 3 pens. how many pens does he have left? peter had 6 pens. he gave away 3 pens. he has 3 pens left.
+у веры было 6 книг. она отдала 9 книг — нет такого счёта: 9 больше 6.
+peter had 9 marbles. he gave away 12 marbles — there is no such count: 12 is greater than 9.
+у анны было 6 монет. она отдала 1 монету. у неё осталось 5 монет.
+ivan had 9 books. he gave away 1 book. he has 8 books left.
+у анны было 5 шариков. она отдала 1 шарик. сколько шариков у неё осталось? у анны было 5 шариков. она отдала 1 шарик. у неё осталось 4 шарика.
+ivan had 8 pens. he gave away 1 pen. how many pens does he have left? ivan had 8 pens. he gave away 1 pen. he has 7 pens left.
+у анны было 4 яблока. она отдала 5 яблок — нет такого счёта: 5 больше 4.
+ivan had 4 marbles. he gave away 5 marbles — there is no such count: 5 is greater than 4.
+у марии было 8 монет. она отдала 2 монеты. у неё осталось 6 монет.
+yuri had 4 books. he gave away 2 books. he has 2 books left.
+у марии было 7 шариков. она отдала 2 шарика. сколько шариков у неё осталось? у марии было 7 шариков. она отдала 2 шарика. у неё осталось 5 шариков.
+yuri had 10 pens. he gave away 2 pens. how many pens does he have left? yuri had 10 pens. he gave away 2 pens. he has 8 pens left.
+у марии было 6 яблок. она отдала 8 яблок — нет такого счёта: 8 больше 6.
+yuri had 9 coins. he gave away 11 coins — there is no such count: 11 is greater than 9.
+у петра было 6 ручек. он отдал 3 ручки. у него осталось 3 ручки.
+vera had 6 books. she gave away 3 books. she has 3 books left.
+у петра было 9 шариков. он отдал 3 шарика. сколько шариков у него осталось? у петра было 9 шариков. он отдал 3 шарика. у него осталось 6 шариков.
+vera had 5 pens. she gave away 3 pens. how many pens does she have left? vera had 5 pens. she gave away 3 pens. she has 2 pens left.
+у петра было 8 яблок. он отдал 11 яблок — нет такого счёта: 11 больше 8.
+vera had 4 coins. she gave away 7 coins — there is no such count: 7 is greater than 4.
+у ивана было 8 ручек. он отдал 1 ручку. у него осталось 7 ручек.
+anna had 4 apples. she gave away 1 apple. she has 3 apples left.
+у ивана было 4 шарика. он отдал 1 шарик. сколько шариков у него осталось? у ивана было 4 шарика. он отдал 1 шарик. у него осталось 3 шарика.
+anna had 7 pens. she gave away 1 pen. how many pens does she have left? anna had 7 pens. she gave away 1 pen. she has 6 pens left.
+у ивана было 10 яблок. он отдал 11 яблок — нет такого счёта: 11 больше 10.
+anna had 6 coins. she gave away 7 coins — there is no such count: 7 is greater than 6.
+у юрия было 10 ручек. он отдал 2 ручки. у него осталось 8 ручек.
+maria had 6 apples. she gave away 2 apples. she has 4 apples left.
+у юрия было 9 монет. он отдал 2 монеты. сколько монет у него осталось? у юрия было 9 монет. он отдал 2 монеты. у него осталось 7 монет.
+maria had 5 books. she gave away 2 books. how many books does she have left? maria had 5 books. she gave away 2 books. she has 3 books left.
+у юрия было 5 яблок. он отдал 7 яблок — нет такого счёта: 7 больше 5.
+maria had 8 coins. she gave away 10 coins — there is no such count: 10 is greater than 8.
+у веры было 5 ручек. она отдала 3 ручки. у неё осталось 2 ручки.
+peter had 8 apples. he gave away 3 apples. he has 5 apples left.
+у веры было 4 монеты. она отдала 3 монеты. сколько монет у неё осталось? у веры было 4 монеты. она отдала 3 монеты. у неё осталось 1 монета.
+peter had 7 books. he gave away 3 books. how many books does he have left? peter had 7 books. he gave away 3 books. he has 4 books left.
+у веры было 10 шариков. она отдала 13 шариков — нет такого счёта: 13 больше 10.
+peter had 6 pens. he gave away 9 pens — there is no such count: 9 is greater than 6.
+у анны было 7 ручек. она отдала 1 ручку. у неё осталось 6 ручек.
+ivan had 10 apples. he gave away 1 apple. he has 9 apples left.
+у анны было 6 монет. она отдала 1 монету. сколько монет у неё осталось? у анны было 6 монет. она отдала 1 монету. у неё осталось 5 монет.
+ivan had 9 books. he gave away 1 book. how many books does he have left? ivan had 9 books. he gave away 1 book. he has 8 books left.
+у анны было 5 шариков. она отдала 6 шариков — нет такого счёта: 6 больше 5.
+ivan had 8 pens. he gave away 9 pens — there is no such count: 9 is greater than 8.
+у марии было 5 книг. она отдала 2 книги. у неё осталось 3 книги.
+yuri had 5 apples. he gave away 2 apples. he has 3 apples left.
+у марии было 8 монет. она отдала 2 монеты. сколько монет у неё осталось? у марии было 8 монет. она отдала 2 монеты. у неё осталось 6 монет.
+yuri had 4 books. he gave away 2 books. how many books does he have left? yuri had 4 books. he gave away 2 books. he has 2 books left.
+у марии было 7 шариков. она отдала 9 шариков — нет такого счёта: 9 больше 7.
+yuri had 10 pens. he gave away 12 pens — there is no such count: 12 is greater than 10.
+у петра было 7 книг. он отдал 3 книги. у него осталось 4 книги.
 vera had 10 marbles. she gave away 3 marbles. she has 7 marbles left.
+у петра было 6 ручек. он отдал 3 ручки. сколько ручек у него осталось? у петра было 6 ручек. он отдал 3 ручки. у него осталось 3 ручки.
+vera had 6 books. she gave away 3 books. how many books does she have left? vera had 6 books. she gave away 3 books. she has 3 books left.
+у петра было 9 шариков. он отдал 12 шариков — нет такого счёта: 12 больше 9.
+vera had 5 pens. she gave away 8 pens — there is no such count: 8 is greater than 5.
+у ивана было 9 книг. он отдал 1 книгу. у него осталось 8 книг.
+anna had 5 marbles. she gave away 1 marble. she has 4 marbles left.
+у ивана было 8 ручек. он отдал 1 ручку. сколько ручек у него осталось? у ивана было 8 ручек. он отдал 1 ручку. у него осталось 7 ручек.
+anna had 4 apples. she gave away 1 apple. how many apples does she have left? anna had 4 apples. she gave away 1 apple. she has 3 apples left.
+у ивана было 4 шарика. он отдал 5 шариков — нет такого счёта: 5 больше 4.
+anna had 7 pens. she gave away 8 pens — there is no such count: 8 is greater than 7.
+у юрия было 4 книги. он отдал 2 книги. у него осталось 2 книги.
+maria had 7 marbles. she gave away 2 marbles. she has 5 marbles left.
+у юрия было 10 ручек. он отдал 2 ручки. сколько ручек у него осталось? у юрия было 10 ручек. он отдал 2 ручки. у него осталось 8 ручек.
+maria had 6 apples. she gave away 2 apples. how many apples does she have left? maria had 6 apples. she gave away 2 apples. she has 4 apples left.
+у юрия было 9 монет. он отдал 11 монет — нет такого счёта: 11 больше 9.
+maria had 5 books. she gave away 7 books — there is no such count: 7 is greater than 5.
 
 16 делится на 2. значит 16 кратно 2.
 21 is divisible by 3. therefore 21 is a multiple of 3.

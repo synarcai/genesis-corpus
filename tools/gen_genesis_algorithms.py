@@ -49,6 +49,23 @@ POWERS = [(2, 5), (3, 3), (2, 8), (5, 2), (4, 3),
 SIZES = [2, 4, 8, 16, 32, 64, 3, 5, 10, 20]
 
 
+# ИСКОМОЕ ОБЪЯВЛЯЕТ СВОЙ ВОПРОС ОДИН РАЗ, и вопрос берёт ТУ ЖЕ фразу
+# предмета, какую берёт ответ. Замер вопросной поверхности назвал этот
+# мир немым: 1800 строк, вопросов ноль.
+СПРОСИТЬ = {
+    "gives": "what does {предмет} give?",
+    "value": "what is {предмет}?",
+    "даёт": "что даёт {предмет}?",
+    "равен": "чему равен {предмет}?",
+    "равна": "чему равна {предмет}?",
+}
+
+
+def спросить(искомое, предмет, ответ):
+    """Вопрос о предмете и ответ о нём же — одной строкой."""
+    return f"{СПРОСИТЬ[искомое].format(предмет=предмет)} {ответ}"
+
+
 def spaced(xs):
     return " ".join(str(x) for x in xs)
 
@@ -63,18 +80,41 @@ def pass_shows(pass_i):
         base, exp = POWERS[(pass_i + i * 3) % len(POWERS)]
         size = SIZES[(pass_i * 5 + i) % len(SIZES)]
         # --- list operations
-        out.append(f"sorting {spaced(xs)} gives {spaced(sorted(xs))}.")
-        out.append(f"сортировка {spaced(xs)} даёт {spaced(sorted(xs))}.")
-        out.append(f"reversing {spaced(xs)} gives {spaced(xs[::-1])}.")
-        out.append(f"разворот {spaced(xs)} даёт {spaced(xs[::-1])}.")
-        out.append(f"the maximum of {spaced(xs)} is {max(xs)}.")
-        out.append(f"максимум {spaced(xs)} равен {max(xs)}.")
-        out.append(f"the minimum of {spaced(xs)} is {min(xs)}.")
-        out.append(f"минимум {spaced(xs)} равен {min(xs)}.")
-        out.append(f"the sum of {spaced(xs)} is {sum(xs)}.")
-        out.append(f"сумма {spaced(xs)} равна {sum(xs)}.")
-        out.append(f"the length of {spaced(xs)} is {len(xs)}.")
-        out.append(f"длина {spaced(xs)} равна {len(xs)}.")
+        ряд = spaced(xs)
+        for пред_en, итог_en, пред_ru, итог_ru in (
+                (f"sorting {ряд}", spaced(sorted(xs)),
+                 f"сортировка {ряд}", spaced(sorted(xs))),
+                (f"reversing {ряд}", spaced(xs[::-1]),
+                 f"разворот {ряд}", spaced(xs[::-1]))):
+            утв_en = f"{пред_en} gives {итог_en}."
+            утв_ru = f"{пред_ru} даёт {итог_ru}."
+            out.append(утв_en)
+            out.append(утв_ru)
+            out.append(спросить("gives", пред_en, утв_en))
+            out.append(спросить("даёт", пред_ru, утв_ru))
+        for имя_en, имя_ru, связка, значение in (
+                ("the maximum of", "максимум", "равен", max(xs)),
+                ("the minimum of", "минимум", "равен", min(xs)),
+                ("the sum of", "сумма", "равна", sum(xs)),
+                ("the length of", "длина", "равна", len(xs))):
+            пред_en = f"{имя_en} {ряд}"
+            пред_ru = f"{имя_ru} {ряд}"
+            утв_en = f"{пред_en} is {значение}."
+            утв_ru = f"{пред_ru} {связка} {значение}."
+            out.append(утв_en)
+            out.append(утв_ru)
+            out.append(спросить("value", пред_en, утв_en))
+            out.append(спросить(связка, пред_ru, утв_ru))
+        # ОТКАЗ С ОСНОВАНИЕМ: места за концом списка нет, и основание
+        # вычислимо — длина списка меньше названного места. Мир,
+        # умеющий только утверждать, учит соглашаться.
+        место = len(xs) + 1 + (len(xs) % 3)
+        out.append(f"what is at place {место} of {ряд}? no item at "
+                   f"place {место}: the list {ряд} has {len(xs)} "
+                   f"items.")
+        out.append(f"что стои́т на месте {место} в списке {ряд}? на "
+                   f"месте {место} нет ничего: в списке {ряд} всего "
+                   f"{len(xs)} элементов.")
         # --- number theory
         out.append(f"the gcd of {a} and {b} is {math.gcd(a, b)}.")
         out.append(f"нод {a} и {b} равен {math.gcd(a, b)}.")
