@@ -6831,58 +6831,6 @@
       "автор": "Розанов, Василий Васильевич"
     },
     {
-      "name": "herzen_dilettantism_ru",
-      "file": "shelf/ru/herzen_dilettantism_ru.txt",
-      "genre": "«Дилетантизм в науке» (1843), четыре статьи — Герцен, Александр Иванович; lib.ru/Классика",
-      "act": [
-        "expound"
-      ],
-      "oracle": [
-        "none"
-      ],
-      "boundary": [
-        "unnamed"
-      ],
-      "size": 304690,
-      "tiers": [],
-      "text": "prose",
-      "тема": "философия познания",
-      "язык": "ru",
-      "плотность": "статья",
-      "издано": 1843,
-      "источник": "public-domain",
-      "происхождение": "lib.ru:g/gercen_a_i/text_0174",
-      "held_out": "shelf/ru/herzen_dilettantism_ru.holdout.txt",
-      "судится": [],
-      "автор": "Герцен, Александр Иванович"
-    },
-    {
-      "name": "vvedensky_criticism_ru",
-      "file": "shelf/ru/vvedensky_criticism_ru.txt",
-      "genre": "«Об атеизме в философии Спинозы» (1897), «О мистицизме и критицизме в теории познания В. С. Соловьёва» (1900), «Новое и лёгкое доказательство философского критицизма» (1908) — Введенский, Александр Иванович; lib.ru/Классика",
-      "act": [
-        "expound"
-      ],
-      "oracle": [
-        "none"
-      ],
-      "boundary": [
-        "unnamed"
-      ],
-      "size": 304090,
-      "tiers": [],
-      "text": "prose",
-      "тема": "философия познания",
-      "язык": "ru",
-      "плотность": "статья",
-      "издано": 1908,
-      "источник": "public-domain",
-      "происхождение": "lib.ru:w/wwedenskij_a_i/text_1897_spinoza+text_1900_soloviev+text_1908_novoe_dokazatelstvo",
-      "held_out": "shelf/ru/vvedensky_criticism_ru.holdout.txt",
-      "судится": [],
-      "автор": "Введенский, Александр Иванович"
-    },
-    {
       "name": "berdyaev_subjectivism_ru",
       "file": "shelf/ru/berdyaev_subjectivism_ru.txt",
       "genre": "«Субъективизм и индивидуализм в общественной философии. Критический этюд о Н. К. Михайловском» (1901) — Бердяев, Николай Александрович; lib.ru/Классика",
@@ -6907,6 +6855,344 @@
       "held_out": "shelf/ru/berdyaev_subjectivism_ru.holdout.txt",
       "судится": [],
       "автор": "Бердяев, Николай Александрович"
+    },
+    {
+      "name": "gutenberg_bernard_medecine_experimentale",
+      "file": "shelf/fr/bernard_medecine_experimentale.txt",
+      "genre": "Introduction à l'étude de la médecine expérimentale — Claude Bernard; издание 1865",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "научный метод",
+      "язык": "fr",
+      "плотность": "трактат",
+      "издано": 1865,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:16234",
+      "held_out": "shelf/fr/bernard_medecine_experimentale.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_cajal_reglas_investigacion",
+      "file": "shelf/es/cajal_reglas_investigacion.txt",
+      "genre": "Reglas y consejos sobre investigación científica — Santiago Ramón y Cajal; издание 1912",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "научный метод",
+      "язык": "es",
+      "плотность": "трактат",
+      "издано": 1897,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:66373",
+      "held_out": "shelf/es/cajal_reglas_investigacion.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_comte_philosophie_positive_1",
+      "file": "shelf/fr/comte_philosophie_positive_1.txt",
+      "genre": "Cours de philosophie positive, tome 1 — Auguste Comte; издание 1830",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "научный метод",
+      "язык": "fr",
+      "плотность": "трактат",
+      "издано": 1830,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:31881",
+      "held_out": "shelf/fr/comte_philosophie_positive_1.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_freud_traumdeutung",
+      "file": "shelf/de/freud_traumdeutung.txt",
+      "genre": "Die Traumdeutung — Sigmund Freud; издание 1900",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "психология",
+      "язык": "de",
+      "плотность": "трактат",
+      "издано": 1899,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:40739",
+      "held_out": "shelf/de/freud_traumdeutung.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_lavoisier_traite_chimie_1",
+      "file": "shelf/fr/lavoisier_traite_chimie_1.txt",
+      "genre": "Traité élémentaire de chimie, tome 1 — Antoine Laurent Lavoisier; издание 1789",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "естествознание",
+      "язык": "fr",
+      "плотность": "трактат",
+      "издано": 1789,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:52487",
+      "held_out": "shelf/fr/lavoisier_traite_chimie_1.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "herzen_dilettantism_ru",
+      "file": "shelf/ru/herzen_dilettantism_ru.txt",
+      "genre": "«Дилетантизм в науке» (1843), четыре статьи — очерк, мера речью — Герцен, Александр Иванович; lib.ru/Классика",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 265538,
+      "tiers": [],
+      "text": "prose",
+      "тема": "философия познания",
+      "язык": "ru",
+      "плотность": "изложение",
+      "издано": 1843,
+      "источник": "public-domain",
+      "происхождение": "lib.ru:g/gercen_a_i/text_0174",
+      "held_out": "shelf/ru/herzen_dilettantism_ru.holdout.txt",
+      "судится": [],
+      "автор": "Герцен, Александр Иванович"
+    },
+    {
+      "name": "gutenberg_augustinus_confessiones",
+      "file": "shelf/la/augustinus_confessiones.txt",
+      "genre": "Confessiones — Aurelius Augustinus; издание 400",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "философия",
+      "язык": "la",
+      "плотность": "трактат",
+      "издано": 400,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:33849",
+      "held_out": "shelf/la/augustinus_confessiones.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_camoes_lusiadas",
+      "file": "shelf/pt/camoes_lusiadas.txt",
+      "genre": "Os Lusíadas — Luís de Camões; издание 1572",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "pt",
+      "плотность": "стих",
+      "издано": 1572,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:3333",
+      "held_out": "shelf/pt/camoes_lusiadas.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_cicero_de_officiis",
+      "file": "shelf/la/cicero_de_officiis.txt",
+      "genre": "De Officiis — Marcus Tullius Cicero; издание -44",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "философия",
+      "язык": "la",
+      "плотность": "трактат",
+      "издано": -44,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:47001",
+      "held_out": "shelf/la/cicero_de_officiis.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_couperus_eline_vere",
+      "file": "shelf/nl/couperus_eline_vere.txt",
+      "genre": "Eline Vere: een Haagsche roman — Louis Couperus; издание 1889",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "nl",
+      "плотность": "повесть",
+      "издано": 1889,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:19563",
+      "held_out": "shelf/nl/couperus_eline_vere.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_dante_commedia",
+      "file": "shelf/it/dante_commedia.txt",
+      "genre": "La Divina Commedia — Dante Alighieri; издание 1321",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "it",
+      "плотность": "стих",
+      "издано": 1320,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:1000",
+      "held_out": "shelf/it/dante_commedia.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_descartes_meditationes",
+      "file": "shelf/la/descartes_meditationes.txt",
+      "genre": "Meditationes de prima philosophia — René Descartes; издание 1641",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "философия познания",
+      "язык": "la",
+      "плотность": "трактат",
+      "издано": 1641,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:23306",
+      "held_out": "shelf/la/descartes_meditationes.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_eca_maias",
+      "file": "shelf/pt/eca_maias.txt",
+      "genre": "Os Maias: episódios da vida romântica — Eça de Queirós; издание 1888",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "pt",
+      "плотность": "повесть",
+      "издано": 1888,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:40409",
+      "held_out": "shelf/pt/eca_maias.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_kalevala_fi",
+      "file": "shelf/fi/kalevala_fi.txt",
+      "genre": "Kalevala — Elias Lönnrot (собиратель); издание 1849",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "fi",
+      "плотность": "стих",
+      "издано": 1849,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:7000",
+      "held_out": "shelf/fi/kalevala_fi.holdout.txt",
+      "судится": []
     }
   ]
 }
