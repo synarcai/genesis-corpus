@@ -46,6 +46,8 @@ from plural import by_count  # noqa: E402
     "несут": "сколько бит несут {предмет}?",
     "стоит": "сколько бит стоит {предмет}?",
     "энтропия": "чему равна энтропия {предмет}?",
+    "whole_cost": "does a sign of an alphabet of {предмет} cost a whole number of bits?",
+    "целая_цена": "стоит ли знак алфавита в {предмет} целое число бит?",
 }
 
 # ФОРМУЛЫ РОДОВ — ЗАКОН ОТВЕТА ОТ ВЕЛИЧИН ВОПРОСА, объявлен при каждом вопросе
@@ -57,6 +59,8 @@ from plural import by_count  # noqa: E402
     "несут": "бит = log2(исходов)",
     "стоит": "бит = длина × log2(алфавита)",
     "энтропия": "энтропия = log2(исходов)",
+    "whole_cost": "целость: алфавит — степень двойки?",
+    "целая_цена": "целость: алфавит — степень двойки?",
 }
 assert set(ФОРМУЛЫ) == set(СПРОСИТЬ), "формула у каждого вопроса"
 
@@ -100,20 +104,19 @@ def отказ_алфавита(шаг):
                        f"{rugram.форма('знак', n)}? знак алфавита в {n} "
                        f"{rugram.форма('знак', n)} стоит {b} "
                        f"{rugram.форма('бит', b)}: 2^{b} = {n}.")
-            вон.append(f"does a sign of an alphabet of {n} signs cost a whole number "
-                       f"of bits? yes: {n} = 2^{b}, a sign costs {b} {by_count(b, 'bits')}.")
-            вон.append(f"стоит ли знак алфавита в {n} {rugram.форма('знак', n)} целое "
-                       f"число бит? да: {n} = 2^{b}, знак стоит {b} {rugram.форма('бит', b)}.")
+            вон.append(спросить("whole_cost", f"{n} signs",
+                                f"yes: {n} = 2^{b}, a sign costs {b} {by_count(b, 'bits')}."))
+            вон.append(спросить("целая_цена", f"{n} {rugram.форма('знак', n)}",
+                                f"да: {n} = 2^{b}, знак стоит {b} {rugram.форма('бит', b)}."))
             continue
         # WHOLENESS IS A YES/NO QUESTION (holon 03.09, value-not-verdict: a
         # question for a VALUE answered by a refusal looked like a verdict
         # frame with one polarity). The value question keeps its value
         # answers; wholeness is asked as its own question, and both answers
         # lie side by side — «yes» with the whole value, «no» with the reason.
-        вон.append(f"does a sign of an alphabet of {n} signs cost a whole number "
-                   f"of bits? no: {n} is not a power of two.")
-        вон.append(f"стоит ли знак алфавита в {n} {rugram.форма('знак', n)} целое "
-                   f"число бит? нет: {n} {rugram.форма('знак', n)} — это не степень двойки.")
+        вон.append(спросить("whole_cost", f"{n} signs", f"no: {n} is not a power of two."))
+        вон.append(спросить("целая_цена", f"{n} {rugram.форма('знак', n)}",
+                            f"нет: {n} {rugram.форма('знак', n)} — это не степень двойки."))
     return вон
 
 

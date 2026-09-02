@@ -53,6 +53,8 @@ from layer import emit_grouped  # noqa: E402
     "объём": "чему равен объём {предмет}?",
     "поверхность": "чему равна поверхность {предмет}?",
     "гипотенуза": "чему равна гипотенуза {предмет}?",
+    "whole_hypotenuse": "is the hypotenuse of {предмет} a whole number?",
+    "целая_гипотенуза": "целое ли число гипотенуза {предмет}?",
 }
 
 # ФОРМУЛЫ РОДОВ — ЗАКОН ОТВЕТА ОТ ВЕЛИЧИН ВОПРОСА, объявлен при каждом вопросе
@@ -68,6 +70,8 @@ from layer import emit_grouped  # noqa: E402
     "объём": "объём = a × b × c",
     "поверхность": "поверхность = 2 × (ab + bc + ca)",
     "гипотенуза": "c = √(a² + b²)",
+    "whole_hypotenuse": "целость: a² + b² — полный квадрат?",
+    "целая_гипотенуза": "целость: a² + b² — полный квадрат?",
 }
 assert set(ФОРМУЛЫ) == set(СПРОСИТЬ), "формула у каждого вопроса"
 
@@ -211,15 +215,15 @@ def отказ_гипотенузы(шаг):
         с = a * a + b * b
         if _полный_квадрат(с):
             c = math.isqrt(с)
-            вон.append(f"is the hypotenuse of a right triangle with legs {a} and {b} "
-                       f"a whole number? yes: {a}^2 + {b}^2 = {с} = {c}^2, the hypotenuse is {c}.")
-            вон.append(f"целое ли число гипотенуза прямоугольного треугольника с катетами "
-                       f"{a} и {b}? да: {a}^2 + {b}^2 = {с} = {c}^2, гипотенуза равна {c}.")
+            вон.append(спросить("whole_hypotenuse", f"a right triangle with legs {a} and {b}",
+                                f"yes: {a}^2 + {b}^2 = {с} = {c}^2, the hypotenuse is {c}."))
+            вон.append(спросить("целая_гипотенуза", f"прямоугольного треугольника с катетами {a} и {b}",
+                                f"да: {a}^2 + {b}^2 = {с} = {c}^2, гипотенуза равна {c}."))
         else:
-            вон.append(f"is the hypotenuse of a right triangle with legs {a} and {b} "
-                       f"a whole number? no: {a}^2 + {b}^2 = {с}, and {с} is not a perfect square.")
-            вон.append(f"целое ли число гипотенуза прямоугольного треугольника с катетами "
-                       f"{a} и {b}? нет: {a}^2 + {b}^2 = {с}, а {с} не полный квадрат.")
+            вон.append(спросить("whole_hypotenuse", f"a right triangle with legs {a} and {b}",
+                                f"no: {a}^2 + {b}^2 = {с}, and {с} is not a perfect square."))
+            вон.append(спросить("целая_гипотенуза", f"прямоугольного треугольника с катетами {a} и {b}",
+                                f"нет: {a}^2 + {b}^2 = {с}, а {с} не полный квадрат."))
     return вон
 
 

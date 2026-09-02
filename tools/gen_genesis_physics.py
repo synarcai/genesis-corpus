@@ -82,6 +82,8 @@ from layer import emit  # noqa: E402
                  "за {t} {секунды}?"),
     "law": "what does {закон} give for {x} and {y}?",
     "закон": "что даёт {закон} при {x} и {y}?",
+    "whole_speed": "is the speed of a body covering {s} metres in {t} seconds a whole number?",
+    "целая_скорость": "целое ли число скорость тела, прошедшего {s} {метры} за {t} {секунды}?",
 }
 
 # ФОРМУЛЫ РОДОВ — ЗАКОН ОТВЕТА ОТ ВЕЛИЧИН ВОПРОСА, объявлен при каждом вопросе
@@ -91,6 +93,8 @@ from layer import emit  # noqa: E402
     "law": "закон: величина = произведение | частное величин",
     "закон": "закон: величина = произведение | частное величин",
     "скорость": "скорость = путь ÷ время",
+    "whole_speed": "целость: путь делится на время?",
+    "целая_скорость": "целость: путь делится на время?",
 }
 assert set(ФОРМУЛЫ) == set(СПРОСИТЬ), "формула у каждого вопроса"
 
@@ -209,18 +213,17 @@ def pass_shows(pass_i):
         один = (rugram.форма("метр", путь) == rugram.форма("метр", 1))
         if путь % срок == 0:
             v = путь // срок
-            out.append(f"is the speed of a body covering {путь} metres in {срок} "
-                       f"seconds a whole number? yes: {путь} ÷ {срок} = {v} metres per second.")
-            out.append(f"целое ли число скорость тела, прошедшего {путь} {м} за {срок} {сек}? "
-                       f"да: {путь} ÷ {срок} = {v} {rugram.форма('метр', v)} в секунду.")
+            out.append(спросить("whole_speed", f"yes: {путь} ÷ {срок} = {v} metres per second.",
+                                s=путь, t=срок))
+            out.append(спросить("целая_скорость", f"да: {путь} ÷ {срок} = {v} {rugram.форма('метр', v)} в секунду.",
+                                s=путь, t=срок, метры=м, секунды=сек))
         else:
             дают = "не даёт" if один else "не дают"
-            out.append(f"is the speed of a body covering {путь} metres in {срок} "
-                       f"seconds a whole number? no: {путь} metres in {срок} seconds "
-                       f"do not give a whole speed, {путь} is not divisible by {срок}.")
-            out.append(f"целое ли число скорость тела, прошедшего {путь} {м} за {срок} {сек}? "
-                       f"нет: {путь} {м} за {срок} {сек} {дают} целой скорости, "
-                       f"{путь} не делится на {срок} нацело.")
+            out.append(спросить("whole_speed", f"no: {путь} metres in {срок} seconds do not give "
+                                f"a whole speed, {путь} is not divisible by {срок}.", s=путь, t=срок))
+            out.append(спросить("целая_скорость", f"нет: {путь} {м} за {срок} {сек} {дают} целой "
+                                f"скорости, {путь} не делится на {срок} нацело.",
+                                s=путь, t=срок, метры=м, секунды=сек))
     return out
 
 
