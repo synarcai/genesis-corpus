@@ -32,6 +32,7 @@ import sys
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
 import rugram  # noqa: E402
 from layer import emit_grouped  # noqa: E402
+import verbthings  # noqa: E402
 from plural import by_count  # noqa: E402
 
 ЦЕЛЬ = "datasets/genesis_pronouns.txt"
@@ -98,7 +99,9 @@ def п_страница(шаг, i):
     n = 6 + (шаг * 7 + i * 3) % 30
     m = 2 + (шаг + i * 5) % (n - 3)
     знак = ТРОЙКИ_EN[т][5]
-    return dict(кто=кто, en=en, ru=ru, т=т, n=n, m=m, вещь=ВЕЩИ[(шаг + i) % len(ВЕЩИ)],
+    # A VERB TAKES ITS OWN KIND OF THINGS (tools/verbthings.py): «ate … of them» — food only
+    вещь = verbthings.подобрать(ТРОЙКИ_EN[т][:2], ВЕЩИ, шаг + i, ключ=lambda в: в[0])
+    return dict(кто=кто, en=en, ru=ru, т=т, n=n, m=m, вещь=вещь,
                 нареч=(шаг * 3 + i) % 3, тоже=((шаг + i) // 3) % 2 == 1, ответ=n + знак * m,
                 вид=((шаг + i) // 4 + шаг) % 3)
 

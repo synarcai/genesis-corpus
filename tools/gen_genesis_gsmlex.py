@@ -16,6 +16,7 @@ instances vary by pass, no glyph pairs in-layer.
 """
 
 from layer import emit
+import verbthings  # noqa: E402
 
 
 from plural import by_count
@@ -67,13 +68,12 @@ def pass_shows(pi):
             (base + i + (i // 8) * 5)
             % len(NAMES)
         ]
-        it = ITEMS[
-            (base + i * 5) % len(ITEMS)
-        ]
         a = (base + i * 7) % 9 + 4   # 4..12
         b = (base + i * 3) % 3 + 1   # 1..3
         add = (base + i) % 2 == 0
         pick = ((base + i) // 2) % 4
+        # A VERB TAKES ITS OWN KIND OF THINGS (tools/verbthings.py)
+        it = verbthings.подобрать(ADD_PAIRS[pick] if add else SUB_PAIRS[pick], ITEMS, base + i * 5)
         if add:
             (v1, v2) = ADD_PAIRS[pick]
             (ask, av) = ASK_ADD[

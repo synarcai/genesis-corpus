@@ -34,6 +34,7 @@ import sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import rugram  # noqa: E402
 from layer import emit_grouped  # noqa: E402
+import verbthings  # noqa: E402
 
 ЦЕЛЬ = "datasets/genesis_story_chain.txt"
 ПРЕДЕЛ = 50
@@ -64,7 +65,8 @@ from layer import emit_grouped  # noqa: E402
            ("Оля", "Оли"), ("Ваня", "Вани"), ("Катя", "Кати"))
 ВЕЩИ_EN = (("apple", "apples"), ("book", "books"), ("coin", "coins"),
            ("card", "cards"), ("egg", "eggs"), ("pen", "pens"))
-ВЕЩИ_RU = ("яблоко", "книга", "монета", "карта", "ручка")
+ВЕЩИ_RU = ("яблоко", "книга", "монета", "карта", "яйцо", "ручка")
+assert len(ВЕЩИ_RU) == len(ВЕЩИ_EN), "русские вещи идут парой к английским"
 
 
 def _числа(шаг, i, знак):
@@ -90,7 +92,8 @@ def цепочки_en(шаг):
                 continue
             а, б, итог = числа
             кто = ЛЮДИ_EN[(шаг + i + т) % len(ЛЮДИ_EN)]
-            вещь = ВЕЩИ_EN[(шаг * 2 + i + т) % len(ВЕЩИ_EN)]
+            # A VERB TAKES ITS OWN KIND OF THINGS (tools/verbthings.py): «ate» — food only
+            вещь = verbthings.подобрать((в1, в2), ВЕЩИ_EN, шаг * 2 + i + т, ключ=lambda в: в[1])
             вон.append(f"{кто} {в1} {а} {_мн(вещь, а)} and {в2} "
                        f"{б} {_мн(вещь, б)}; {кто} {в3} {итог} "
                        f"{_мн(вещь, итог)}.")
@@ -112,7 +115,8 @@ def цепочки_ru(шаг):
                 continue
             а, б, итог = числа
             им, род = ЛЮДИ_RU[(шаг + i + т) % len(ЛЮДИ_RU)]
-            вещь = ВЕЩИ_RU[(шаг * 2 + i + т) % len(ВЕЩИ_RU)]
+            # русская вещь — парой к английской того же рода (тройки RU идут в порядке EN)
+            вещь = ВЕЩИ_RU[verbthings.индекс(ТРОЙКИ_EN[т][:2], ВЕЩИ_EN, шаг * 2 + i + т, ключ=lambda в: в[1])]
             суф = "а" if им.endswith(("я", "а")) else ""
             вон.append(f"{им} {в1}{суф} {а} {rugram.форма(вещь, а)} и "
                        f"{в2}{суф} {б} {rugram.форма(вещь, б)}; у "

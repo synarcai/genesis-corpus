@@ -34,6 +34,7 @@ sys.path.insert(0, str(КОРЕНЬ / "tools"))
 from genesis import Unreadable, worlds  # noqa: E402
 from gsm_items import ANIMATE, ITEMS, PACKAGEABLE  # noqa: E402
 from plural import singular
+import verbthings  # noqa: E402
 from plural import by_count as _по_счёту  # noqa: E402
 import units  # noqa: E402
 
@@ -325,6 +326,7 @@ def упаковка_возможна(строка):
 # сверять числом, но вещь обязана быть ОБЪЯВЛЕННОЙ, а форма — идти за
 # числом: «anna takes 1 coins» безупречно по счёту (счёта нет) и ложно
 # о языке. Это тот же двойной род, что и в слое речи.
+ГЛАГОЛ_ВЕЩЬ = re.compile(r"\b([a-z]+) \d+ ([a-z]+)\b")
 ГОЛЫЙ_ФАКТ = re.compile(rf"^({С}) ({С}) (\d+) ({С})\.$")
 ЭХО_ВОПРОС = re.compile(
     rf"^({С}) ({С}) (\d+) ({С})\. how many ({С}) did \1 ({С})\? "
@@ -737,6 +739,11 @@ def имена_на_месте(строка, слой=None):
 
 def судить(строка, слой=None):
     с = строка.strip()
+    # ГЛАГОЛ БЕРЁТ СВОЙ РОД ВЕЩЕЙ (tools/verbthings.py, 03.09): «ate 12 books»,
+    # «wrote 8 pencils» — ложь о языке, какова бы ни была арифметика.
+    for г, в in ГЛАГОЛ_ВЕЩЬ.findall(с):
+        if not verbthings.берёт(г, в):
+            return True, False
     if not имена_на_месте(с, слой):
         return True, False
     ру = русские_рамки(строка)

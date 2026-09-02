@@ -13,6 +13,7 @@ in-layer (worlds must not mix inside one file).
 """
 
 from layer import emit
+import verbthings  # noqa: E402
 
 
 from plural import by_count
@@ -49,7 +50,6 @@ def pass_shows(pi):
     out = []
     for i in range(len(NAMES) * 6):
         nm = NAMES[(base + i) % len(NAMES)]
-        it = ITEMS[(base + i * 3) % len(ITEMS)]
         # pair choice decoupled from polarity
         # (synchronized %2 starved baked/sold)
         (av1, av2) = ADD_PAIRS[
@@ -62,6 +62,9 @@ def pass_shows(pi):
         ]
         a = (base + i * 5) % 9 + 4   # 4..12
         b = (base + i * 3) % 3 + 1   # 1..3
+        # A VERB TAKES ITS OWN KIND OF THINGS (tools/verbthings.py): the thing
+        # is drawn among those the show's verbs admit («wrote 8 pencils» no more).
+        it = verbthings.подобрать((av1, av2) if (base + i) % 2 == 0 else (sv1, sv2), ITEMS, base + i * 3)
         # both polarities per triple: the change
         # verb v2 ADDS in one genus and REMOVES
         # in another — the algebra buys each law
