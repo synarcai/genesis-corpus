@@ -88,6 +88,11 @@ def счёта_нет(строка):
     if not m:
         return None
     группы = [г for г in m.groups() if г is not None]
+    # ЛИЦО ОТКАЗА СВЕРЯЕТСЯ С ОБЪЯВЛЕННЫМ, как и лицо утверждения:
+    # «ver had 4 apples … there is no such count» проходило истиной —
+    # имя не читалось. Необъявленное лицо — чужая рамка, молчание.
+    if группы[0] not in ЛИЦА:
+        return None
     было, ушло, а, б = (int(x) for x in группы[1:])
     return ушло > было and а == ушло and б == было
 
