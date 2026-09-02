@@ -215,7 +215,7 @@
       "boundary": [
         "unnamed"
       ],
-      "size": 113355,
+      "size": 121892,
       "tiers": [],
       "text": "shows",
       "assemblies": [
@@ -1619,7 +1619,7 @@
       "boundary": [
         "unnamed"
       ],
-      "size": 399085,
+      "size": 400793,
       "tiers": [],
       "text": "shows",
       "assemblies": [
@@ -6595,6 +6595,162 @@
       "held_out": "shelf/ru/vernadsky_essays_ru.holdout.txt",
       "судится": [],
       "автор": "Вернадский, Владимир Иванович"
+    },
+    {
+      "name": "europepmc_consciousness_articles",
+      "file": "shelf/en/europepmc_consciousness_articles.txt",
+      "genre": "Neuroscience of Consciousness, all articles but reviews, 2015–2021 — authors named at each article; Europe PMC (Oxford University Press journal) 2021 под CC BY",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 2910420,
+      "tiers": [],
+      "text": "prose",
+      "тема": "нейронаука",
+      "язык": "en",
+      "плотность": "статья",
+      "издано": 2021,
+      "источник": "free-license",
+      "происхождение": "europepmc:73 articles by query (LICENSE:\"cc by\") AND (OPEN_ACCESS:y) AND (HAS_FT:y) AND (JOURNAL:\"Neurosci Conscious\") AND (FIRST_PDATE:[2015-01-01 TO 2021-12-31]) AND NOT (PUB_TYPE:\"review\") (CC BY)",
+      "held_out": "shelf/en/europepmc_consciousness_articles.holdout.txt",
+      "судится": [],
+      "автор": "authors named at each article"
+    },
+    {
+      "name": "openstax_psychologia_pl",
+      "file": "shelf/pl/openstax_psychologia_pl.txt",
+      "genre": "Psychologia (polska adaptacja Psychology 2e) — OpenStax Poland; autor rozdziału: Joanna Czarnota-Bojarska; redaktorzy i autorzy uzupełnień: Ewa Czerniawska, Agata Kudlik, Dorota Karwowska, Agnieszka Małkowska-Szkutnik; original senior authors Rose M. Spielman, William J. Jenkins, Marilyn D. Lovett; OpenStax Poland 2020 под CC BY 4.0",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 1458039,
+      "tiers": [],
+      "text": "prose",
+      "тема": "психология",
+      "язык": "pl",
+      "плотность": "трактат",
+      "издано": 2020,
+      "источник": "free-license",
+      "происхождение": "openstax-archive:728df0bb-e07f-489d-91e3-4734a5932f92@0708931, https://openstax.org/details/books/psychologia-polska (CC BY 4.0)",
+      "held_out": "shelf/pl/openstax_psychologia_pl.holdout.txt",
+      "судится": [],
+      "автор": "OpenStax Poland; autor rozdziału: Joanna Czarnota-Bojarska; redaktorzy i autorzy uzupełnień: Ewa Czerniawska, Agata Kudlik, Dorota Karwowska, Agnieszka Małkowska-Szkutnik; original senior authors Rose M. Spielman, William J. Jenkins, Marilyn D. Lovett"
+    },
+    {
+      "name": "rebus_aesthetics",
+      "file": "shelf/en/rebus_aesthetics.txt",
+      "genre": "Introduction to Philosophy: Aesthetic Theory and Practice — Alexander Westenberg, Andrew Broadey, Christina Hendricks (Series Editor), Elizabeth Burns Coleman, Elizabeth Scarbrough, Ines Kleesattel, Matteo Ravasio, Matthew Sharpe, Pierre Fasula, Richard Hudson-Miles, Ruth Sonderegger, Valery Vino (Book Editor), Xiao Ouyang, Yuriko Saito; ed. Valery Vino (Book Editor), Christina Hendricks (Series Editor); Rebus Community 2021 под CC BY 4.0",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 441546,
+      "tiers": [],
+      "text": "prose",
+      "тема": "философия",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 2021,
+      "источник": "free-license",
+      "происхождение": "pressbooks:https://press.rebus.community/intro-to-phil-aesthetics (CC BY 4.0)",
+      "held_out": "shelf/en/rebus_aesthetics.holdout.txt",
+      "судится": [],
+      "автор": "Alexander Westenberg, Andrew Broadey, Christina Hendricks (Series Editor), Elizabeth Burns Coleman, Elizabeth Scarbrough, Ines Kleesattel, Matteo Ravasio, Matthew Sharpe, Pierre Fasula, Richard Hudson-Miles, Ruth Sonderegger, Valery Vino (Book Editor), Xiao Ouyang, Yuriko Saito; ed. Valery Vino (Book Editor), Christina Hendricks (Series Editor)"
+    },
+    {
+      "name": "rebus_ethics",
+      "file": "shelf/en/rebus_ethics.txt",
+      "genre": "Introduction to Philosophy: Ethics — Christina Hendricks (Series Editor), Douglas Giles, Frank Aragbonfoh Abumere, George Matthews (Book Editor), Jeffrey Morgan, Joseph Kranak, Kathryn MacKay, Michael Klenk, Paul Rezkalla, Ya-Yun (Sherry) Kao; ed. George Matthews, Christina Hendricks; Rebus Community 2019 под CC BY 4.0",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 219137,
+      "tiers": [],
+      "text": "prose",
+      "тема": "философия",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 2019,
+      "источник": "free-license",
+      "происхождение": "pressbooks:https://press.rebus.community/intro-to-phil-ethics (CC BY 4.0)",
+      "held_out": "shelf/en/rebus_ethics.holdout.txt",
+      "судится": [],
+      "автор": "Christina Hendricks (Series Editor), Douglas Giles, Frank Aragbonfoh Abumere, George Matthews (Book Editor), Jeffrey Morgan, Joseph Kranak, Kathryn MacKay, Michael Klenk, Paul Rezkalla, Ya-Yun (Sherry) Kao; ed. George Matthews, Christina Hendricks"
+    },
+    {
+      "name": "rebus_logic",
+      "file": "shelf/en/rebus_logic.txt",
+      "genre": "Introduction to Philosophy: Logic — Bahram Assadian, Benjamin Martin (Book Editor), Cassiano Terra Rodrigues, Christina Hendricks (Series Editor), Matthew Knachel, Michael Shaffer, Nathan Smith; ed. Benjamin Martin, Christina Hendricks; Rebus Community 2020 под CC BY 4.0",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 106433,
+      "tiers": [],
+      "text": "prose",
+      "тема": "логика",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 2020,
+      "источник": "free-license",
+      "происхождение": "pressbooks:https://press.rebus.community/intro-to-phil-logic (CC BY 4.0)",
+      "held_out": "shelf/en/rebus_logic.holdout.txt",
+      "судится": [],
+      "автор": "Bahram Assadian, Benjamin Martin (Book Editor), Cassiano Terra Rodrigues, Christina Hendricks (Series Editor), Matthew Knachel, Michael Shaffer, Nathan Smith; ed. Benjamin Martin, Christina Hendricks"
+    },
+    {
+      "name": "rebus_philosophy_of_religion",
+      "file": "shelf/en/rebus_philosophy_of_religion.txt",
+      "genre": "Introduction to Philosophy: Philosophy of Religion — Beau Branson, Beau Branson (Book Editor), Christina Hendricks (Series Editor), Hans Van Eyghen, Marcus William Hunt, Robert Sloan Lee, Steven Steyl, Timothy D. Knepper; ed. Beau Branson, Christina Hendricks; Rebus Community 2020 под CC BY 4.0",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 172122,
+      "tiers": [],
+      "text": "prose",
+      "тема": "философия",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 2020,
+      "источник": "free-license",
+      "происхождение": "pressbooks:https://press.rebus.community/intro-to-phil-of-religion (CC BY 4.0)",
+      "held_out": "shelf/en/rebus_philosophy_of_religion.holdout.txt",
+      "судится": [],
+      "автор": "Beau Branson, Beau Branson (Book Editor), Christina Hendricks (Series Editor), Hans Van Eyghen, Marcus William Hunt, Robert Sloan Lee, Steven Steyl, Timothy D. Knepper; ed. Beau Branson, Christina Hendricks"
     }
   ]
 }

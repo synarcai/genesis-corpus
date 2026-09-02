@@ -47,6 +47,46 @@ from plural import by_count  # noqa: E402
           # ПАРЫ — МАССОЙ (holon 03.09: «mean of # #» шёл двумя строками,
           # ниже LAW 4, и рынок его не покупал).
           [2, 6], [5, 9], [1, 7], [3, 11], [4, 10], [6, 12], [7, 9], [2, 12]]
+
+
+def различает(набор):
+    """A set tells the mean from the median: on a progression (2 4 6) or on
+    any pair the two executors agree, and a learner that bought «the middle
+    number» passes every show — the set carries no falsifier."""
+    порядок = sorted(набор)
+    return len(набор) > 2 and sum(набор) != len(набор) * порядок[len(набор) // 2]
+
+
+def с_фальсификатором(наборы):
+    """VARIETY FROM THE FIRST SHOW (holon 03.09: at mass 3 the organism bought
+    «mean = median» because the first sets of every pass were progressions).
+    A mass slice keeps the FIRST k shows of a frame, so the order of the sets
+    is part of the corpus: distinguishing triples alternate with the tied
+    ones, opening with a distinguishing one, and the pairs (a frame of their
+    own, never distinguishable) are dealt one after every two triples."""
+    тройки_разн = [н for н in наборы if различает(н)]
+    тройки_ровн = [н for н in наборы if len(н) > 2 and not различает(н)]
+    пары = [н for н in наборы if len(н) == 2]
+    тройки = []
+    while тройки_разн or тройки_ровн:
+        if тройки_разн:
+            тройки.append(тройки_разн.pop(0))
+        if тройки_ровн:
+            тройки.append(тройки_ровн.pop(0))
+    порядок = []
+    for k, н in enumerate(тройки):
+        порядок.append(н)
+        if k % 2 == 1 and пары:
+            порядок.append(пары.pop(0))
+    порядок.extend(пары)
+    только_тройки = [н for н in порядок if len(н) > 2]
+    for k in range(1, len(только_тройки) + 1):
+        assert sum(различает(н) for н in только_тройки[:k]) * 2 >= k, \
+            f"prefix {k} of the triples carries too few falsifiers"
+    return порядок
+
+
+НАБОРЫ = с_фальсификатором(НАБОРЫ)
 # наборы нечётной длины — медиана есть средний по порядку
 НЕЧЁТНЫЕ = [[1, 3, 7], [5, 2, 9], [4, 4, 8], [10, 1, 6], [7, 3, 3],
             [2, 8, 5], [9, 9, 1], [6, 2, 4], [3, 7, 5], [8, 1, 2]]

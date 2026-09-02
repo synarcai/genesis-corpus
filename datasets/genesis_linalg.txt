@@ -288,36 +288,38 @@ the vector (9, 12) has length 15: 9 × 9 = 81, 12 × 12 = 144, 81 + 144 = 225, 1
 чему равна длина вектора (12, 9)? вектор (12, 9) имеет длину 15: 12 × 12 = 144, 9 × 9 = 81, 144 + 81 = 225, 15 × 15 = 225.
 what is the length of the vector (24, 7)? the vector (24, 7) has length 25: 24 × 24 = 576, 7 × 7 = 49, 576 + 49 = 625, 25 × 25 = 625.
 
-чему равна длина вектора (4, 7)? целого ответа нет для (4, 7): 4^2 + 7^2 = 65, а 65 не полный квадрат.
-what is the length of the vector (9, 10)? no whole answer for (9, 10): 9^2 + 10^2 = 181, and 181 is not a perfect square.
-чему равна длина вектора (3, 7)? целого ответа нет для (3, 7): 3^2 + 7^2 = 58, а 58 не полный квадрат.
-what is the length of the vector (7, 8)? no whole answer for (7, 8): 7^2 + 8^2 = 113, and 113 is not a perfect square.
-чему равна длина вектора (3, 5)? целого ответа нет для (3, 5): 3^2 + 5^2 = 34, а 34 не полный квадрат.
-what is the length of the vector (7, 13)? no whole answer for (7, 13): 7^2 + 13^2 = 218, and 218 is not a perfect square.
-чему равна длина вектора (2, 5)? целого ответа нет для (2, 5): 2^2 + 5^2 = 29, а 29 не полный квадрат.
-what is the length of the vector (6, 13)? no whole answer for (6, 13): 6^2 + 13^2 = 205, and 205 is not a perfect square.
-чему равна длина вектора (2, 3)? целого ответа нет для (2, 3): 2^2 + 3^2 = 13, а 13 не полный квадрат.
-what is the length of the vector (6, 11)? no whole answer for (6, 11): 6^2 + 11^2 = 157, and 157 is not a perfect square.
-чему равна длина вектора (10, 12)? целого ответа нет для (10, 12): 10^2 + 12^2 = 244, а 244 не полный квадрат.
-what is the length of the vector (5, 11)? no whole answer for (5, 11): 5^2 + 11^2 = 146, and 146 is not a perfect square.
-чему равна длина вектора (8, 10)? целого ответа нет для (8, 10): 8^2 + 10^2 = 164, а 164 не полный квадрат.
-what is the length of the vector (5, 9)? no whole answer for (5, 9): 5^2 + 9^2 = 106, and 106 is not a perfect square.
-чему равна длина вектора (9, 10)? целого ответа нет для (9, 10): 9^2 + 10^2 = 181, а 181 не полный квадрат.
-what is the length of the vector (4, 9)? no whole answer for (4, 9): 4^2 + 9^2 = 97, and 97 is not a perfect square.
-чему равна длина вектора (7, 8)? целого ответа нет для (7, 8): 7^2 + 8^2 = 113, а 113 не полный квадрат.
-what is the length of the vector (4, 7)? no whole answer for (4, 7): 4^2 + 7^2 = 65, and 65 is not a perfect square.
-чему равна длина вектора (7, 13)? целого ответа нет для (7, 13): 7^2 + 13^2 = 218, а 218 не полный квадрат.
-what is the length of the vector (3, 7)? no whole answer for (3, 7): 3^2 + 7^2 = 58, and 58 is not a perfect square.
-чему равна длина вектора (6, 13)? целого ответа нет для (6, 13): 6^2 + 13^2 = 205, а 205 не полный квадрат.
-what is the length of the vector (3, 5)? no whole answer for (3, 5): 3^2 + 5^2 = 34, and 34 is not a perfect square.
-чему равна длина вектора (6, 11)? целого ответа нет для (6, 11): 6^2 + 11^2 = 157, а 157 не полный квадрат.
-what is the length of the vector (2, 5)? no whole answer for (2, 5): 2^2 + 5^2 = 29, and 29 is not a perfect square.
-чему равна длина вектора (5, 11)? целого ответа нет для (5, 11): 5^2 + 11^2 = 146, а 146 не полный квадрат.
-what is the length of the vector (2, 3)? no whole answer for (2, 3): 2^2 + 3^2 = 13, and 13 is not a perfect square.
-чему равна длина вектора (5, 9)? целого ответа нет для (5, 9): 5^2 + 9^2 = 106, а 106 не полный квадрат.
-what is the length of the vector (10, 12)? no whole answer for (10, 12): 10^2 + 12^2 = 244, and 244 is not a perfect square.
-чему равна длина вектора (4, 9)? целого ответа нет для (4, 9): 4^2 + 9^2 = 97, а 97 не полный квадрат.
-what is the length of the vector (8, 10)? no whole answer for (8, 10): 8^2 + 10^2 = 164, and 164 is not a perfect square.
+целое ли число длина вектора (4, 7)? нет: 4^2 + 7^2 = 65, а 65 не полный квадрат.
+is the length of the vector (7, 24) a whole number? yes: 7^2 + 24^2 = 625 = 25^2, the length is 25.
+целое ли число длина вектора (10, 24)? да: 10^2 + 24^2 = 676 = 26^2, длина равна 26.
+is the length of the vector (6, 13) a whole number? no: 6^2 + 13^2 = 205, and 205 is not a perfect square.
+целое ли число длина вектора (3, 4)? да: 3^2 + 4^2 = 25 = 5^2, длина равна 5.
+is the length of the vector (6, 11) a whole number? no: 6^2 + 11^2 = 157, and 157 is not a perfect square.
+целое ли число длина вектора (9, 10)? нет: 9^2 + 10^2 = 181, а 181 не полный квадрат.
+is the length of the vector (4, 9) a whole number? no: 4^2 + 9^2 = 97, and 97 is not a perfect square.
+целое ли число длина вектора (7, 8)? нет: 7^2 + 8^2 = 113, а 113 не полный квадрат.
+is the length of the vector (4, 7) a whole number? no: 4^2 + 7^2 = 65, and 65 is not a perfect square.
+целое ли число длина вектора (7, 13)? нет: 7^2 + 13^2 = 218, а 218 не полный квадрат.
+is the length of the vector (10, 24) a whole number? yes: 10^2 + 24^2 = 676 = 26^2, the length is 26.
+целое ли число длина вектора (5, 12)? да: 5^2 + 12^2 = 169 = 13^2, длина равна 13.
+is the length of the vector (3, 4) a whole number? yes: 3^2 + 4^2 = 25 = 5^2, the length is 5.
+целое ли число длина вектора (8, 15)? да: 8^2 + 15^2 = 289 = 17^2, длина равна 17.
+is the length of the vector (9, 10) a whole number? no: 9^2 + 10^2 = 181, and 181 is not a perfect square.
+целое ли число длина вектора (3, 7)? нет: 3^2 + 7^2 = 58, а 58 не полный квадрат.
+is the length of the vector (7, 8) a whole number? no: 7^2 + 8^2 = 113, and 113 is not a perfect square.
+целое ли число длина вектора (3, 5)? нет: 3^2 + 5^2 = 34, а 34 не полный квадрат.
+is the length of the vector (7, 13) a whole number? no: 7^2 + 13^2 = 218, and 218 is not a perfect square.
+целое ли число длина вектора (10, 12)? нет: 10^2 + 12^2 = 244, а 244 не полный квадрат.
+is the length of the vector (5, 12) a whole number? yes: 5^2 + 12^2 = 169 = 13^2, the length is 13.
+целое ли число длина вектора (12, 16)? да: 12^2 + 16^2 = 400 = 20^2, длина равна 20.
+is the length of the vector (8, 15) a whole number? yes: 8^2 + 15^2 = 289 = 17^2, the length is 17.
+целое ли число длина вектора (7, 24)? да: 7^2 + 24^2 = 625 = 25^2, длина равна 25.
+is the length of the vector (3, 7) a whole number? no: 3^2 + 7^2 = 58, and 58 is not a perfect square.
+целое ли число длина вектора (6, 13)? нет: 6^2 + 13^2 = 205, а 205 не полный квадрат.
+is the length of the vector (3, 5) a whole number? no: 3^2 + 5^2 = 34, and 34 is not a perfect square.
+целое ли число длина вектора (6, 11)? нет: 6^2 + 11^2 = 157, а 157 не полный квадрат.
+is the length of the vector (10, 12) a whole number? no: 10^2 + 12^2 = 244, and 244 is not a perfect square.
+целое ли число длина вектора (4, 9)? нет: 4^2 + 9^2 = 97, а 97 не полный квадрат.
+is the length of the vector (12, 16) a whole number? yes: 12^2 + 16^2 = 400 = 20^2, the length is 20.
 
 чему равно скалярное произведение (1, 2) и (3, 1)? 1 × 3 = 3. значит скалярное произведение (1, 2) и (3, 1) равно 5: 1 × 3 = 3, 2 × 1 = 2, 3 + 2 = 5. скалярное произведение векторов — это сумма произведений их одноимённых компонент.
 the dot product of (3, 4) and (5, 3) is 27: 3 × 5 = 15, 4 × 3 = 12, 15 + 12 = 27.
@@ -956,34 +958,38 @@ what is the length of the vector (4, 3)? the vector (4, 3) has length 5: 4 × 4 
 the vector (15, 8) has length 17: 15 × 15 = 225, 8 × 8 = 64, 225 + 64 = 289, 17 × 17 = 289.
 чему равна длина вектора (12, 9)? вектор (12, 9) имеет длину 15: 12 × 12 = 144, 9 × 9 = 81, 144 + 81 = 225, 15 × 15 = 225.
 
-what is the length of the vector (4, 9)? no whole answer for (4, 9): 4^2 + 9^2 = 97, and 97 is not a perfect square.
-чему равна длина вектора (10, 14)? целого ответа нет для (10, 14): 10^2 + 14^2 = 296, а 296 не полный квадрат.
-what is the length of the vector (8, 12)? no whole answer for (8, 12): 8^2 + 12^2 = 208, and 208 is not a perfect square.
-чему равна длина вектора (6, 13)? целого ответа нет для (6, 13): 6^2 + 13^2 = 205, а 205 не полный квадрат.
-what is the length of the vector (4, 11)? no whole answer for (4, 11): 4^2 + 11^2 = 137, and 137 is not a perfect square.
-чему равна длина вектора (3, 7)? целого ответа нет для (3, 7): 3^2 + 7^2 = 58, а 58 не полный квадрат.
-what is the length of the vector (10, 14)? no whole answer for (10, 14): 10^2 + 14^2 = 296, and 296 is not a perfect square.
-чему равна длина вектора (7, 10)? целого ответа нет для (7, 10): 7^2 + 10^2 = 149, а 149 не полный квадрат.
-what is the length of the vector (6, 13)? no whole answer for (6, 13): 6^2 + 13^2 = 205, and 205 is not a perfect square.
-чему равна длина вектора (3, 9)? целого ответа нет для (3, 9): 3^2 + 9^2 = 90, а 90 не полный квадрат.
-what is the length of the vector (3, 7)? no whole answer for (3, 7): 3^2 + 7^2 = 58, and 58 is not a perfect square.
-чему равна длина вектора (8, 10)? целого ответа нет для (8, 10): 8^2 + 10^2 = 164, а 164 не полный квадрат.
-what is the length of the vector (7, 10)? no whole answer for (7, 10): 7^2 + 10^2 = 149, and 149 is not a perfect square.
-чему равна длина вектора (5, 11)? целого ответа нет для (5, 11): 5^2 + 11^2 = 146, а 146 не полный квадрат.
-what is the length of the vector (3, 9)? no whole answer for (3, 9): 3^2 + 9^2 = 90, and 90 is not a perfect square.
-чему равна длина вектора (9, 14)? целого ответа нет для (9, 14): 9^2 + 14^2 = 277, а 277 не полный квадрат.
-what is the length of the vector (8, 10)? no whole answer for (8, 10): 8^2 + 10^2 = 164, and 164 is not a perfect square.
-чему равна длина вектора (5, 6)? целого ответа нет для (5, 6): 5^2 + 6^2 = 61, а 61 не полный квадрат.
-what is the length of the vector (5, 11)? no whole answer for (5, 11): 5^2 + 11^2 = 146, and 146 is not a perfect square.
-чему равна длина вектора (2, 7)? целого ответа нет для (2, 7): 2^2 + 7^2 = 53, а 53 не полный квадрат.
-what is the length of the vector (9, 14)? no whole answer for (9, 14): 9^2 + 14^2 = 277, and 277 is not a perfect square.
-чему равна длина вектора (7, 8)? целого ответа нет для (7, 8): 7^2 + 8^2 = 113, а 113 не полный квадрат.
-what is the length of the vector (5, 6)? no whole answer for (5, 6): 5^2 + 6^2 = 61, and 61 is not a perfect square.
-чему равна длина вектора (4, 9)? целого ответа нет для (4, 9): 4^2 + 9^2 = 97, а 97 не полный квадрат.
-what is the length of the vector (2, 7)? no whole answer for (2, 7): 2^2 + 7^2 = 53, and 53 is not a perfect square.
-чему равна длина вектора (8, 12)? целого ответа нет для (8, 12): 8^2 + 12^2 = 208, а 208 не полный квадрат.
-what is the length of the vector (7, 8)? no whole answer for (7, 8): 7^2 + 8^2 = 113, and 113 is not a perfect square.
-чему равна длина вектора (4, 11)? целого ответа нет для (4, 11): 4^2 + 11^2 = 137, а 137 не полный квадрат.
+is the length of the vector (4, 9) a whole number? no: 4^2 + 9^2 = 97, and 97 is not a perfect square.
+целое ли число длина вектора (20, 21)? да: 20^2 + 21^2 = 841 = 29^2, длина равна 29.
+is the length of the vector (8, 15) a whole number? yes: 8^2 + 15^2 = 289 = 17^2, the length is 17.
+целое ли число длина вектора (4, 9)? нет: 4^2 + 9^2 = 97, а 97 не полный квадрат.
+is the length of the vector (10, 14) a whole number? no: 10^2 + 14^2 = 296, and 296 is not a perfect square.
+целое ли число длина вектора (8, 15)? да: 8^2 + 15^2 = 289 = 17^2, длина равна 17.
+is the length of the vector (5, 11) a whole number? no: 5^2 + 11^2 = 146, and 146 is not a perfect square.
+целое ли число длина вектора (10, 14)? нет: 10^2 + 14^2 = 296, а 296 не полный квадрат.
+is the length of the vector (7, 10) a whole number? no: 7^2 + 10^2 = 149, and 149 is not a perfect square.
+целое ли число длина вектора (5, 11)? нет: 5^2 + 11^2 = 146, а 146 не полный квадрат.
+is the length of the vector (2, 7) a whole number? no: 2^2 + 7^2 = 53, and 53 is not a perfect square.
+целое ли число длина вектора (7, 10)? нет: 7^2 + 10^2 = 149, а 149 не полный квадрат.
+is the length of the vector (9, 12) a whole number? yes: 9^2 + 12^2 = 225 = 15^2, the length is 15.
+целое ли число длина вектора (2, 7)? нет: 2^2 + 7^2 = 53, а 53 не полный квадрат.
+is the length of the vector (8, 12) a whole number? no: 8^2 + 12^2 = 208, and 208 is not a perfect square.
+целое ли число длина вектора (9, 12)? да: 9^2 + 12^2 = 225 = 15^2, длина равна 15.
+is the length of the vector (3, 4) a whole number? yes: 3^2 + 4^2 = 25 = 5^2, the length is 5.
+целое ли число длина вектора (8, 12)? нет: 8^2 + 12^2 = 208, а 208 не полный квадрат.
+is the length of the vector (7, 8) a whole number? no: 7^2 + 8^2 = 113, and 113 is not a perfect square.
+целое ли число длина вектора (3, 4)? да: 3^2 + 4^2 = 25 = 5^2, длина равна 5.
+is the length of the vector (7, 24) a whole number? yes: 7^2 + 24^2 = 625 = 25^2, the length is 25.
+целое ли число длина вектора (7, 8)? нет: 7^2 + 8^2 = 113, а 113 не полный квадрат.
+is the length of the vector (4, 11) a whole number? no: 4^2 + 11^2 = 137, and 137 is not a perfect square.
+целое ли число длина вектора (7, 24)? да: 7^2 + 24^2 = 625 = 25^2, длина равна 25.
+is the length of the vector (8, 10) a whole number? no: 8^2 + 10^2 = 164, and 164 is not a perfect square.
+целое ли число длина вектора (4, 11)? нет: 4^2 + 11^2 = 137, а 137 не полный квадрат.
+is the length of the vector (6, 8) a whole number? yes: 6^2 + 8^2 = 100 = 10^2, the length is 10.
+целое ли число длина вектора (8, 10)? нет: 8^2 + 10^2 = 164, а 164 не полный квадрат.
+is the length of the vector (5, 6) a whole number? no: 5^2 + 6^2 = 61, and 61 is not a perfect square.
+целое ли число длина вектора (6, 8)? да: 6^2 + 8^2 = 100 = 10^2, длина равна 10.
+is the length of the vector (20, 21) a whole number? yes: 20^2 + 21^2 = 841 = 29^2, the length is 29.
+целое ли число длина вектора (5, 6)? нет: 5^2 + 6^2 = 61, а 61 не полный квадрат.
 
 what is the dot product of (2, 2) and (3, 1)? the dot product of (2, 2) and (3, 1) is 8: 2 × 3 = 6, 2 × 1 = 2, 6 + 2 = 8.
 скалярное произведение (4, 4) и (5, 3) равно 32: 4 × 5 = 20, 4 × 3 = 12, 20 + 12 = 32.
@@ -1622,34 +1628,38 @@ what is the length of the vector (5, 12)? the vector (5, 12) has length 13: 5 ×
 чему равна длина вектора (15, 8)? вектор (15, 8) имеет длину 17: 15 × 15 = 225, 8 × 8 = 64, 225 + 64 = 289, 17 × 17 = 289.
 the vector (24, 7) has length 25: 24 × 24 = 576, 7 × 7 = 49, 576 + 49 = 625, 25 × 25 = 625.
 
-чему равна длина вектора (9, 14)? целого ответа нет для (9, 14): 9^2 + 14^2 = 277, а 277 не полный квадрат.
-what is the length of the vector (8, 14)? no whole answer for (8, 14): 8^2 + 14^2 = 260, and 260 is not a perfect square.
-чему равна длина вектора (8, 12)? целого ответа нет для (8, 12): 8^2 + 12^2 = 208, а 208 не полный квадрат.
-what is the length of the vector (7, 12)? no whole answer for (7, 12): 7^2 + 12^2 = 193, and 193 is not a perfect square.
-чему равна длина вектора (7, 10)? целого ответа нет для (7, 10): 7^2 + 10^2 = 149, а 149 не полный квадрат.
-what is the length of the vector (6, 10)? no whole answer for (6, 10): 6^2 + 10^2 = 136, and 136 is not a perfect square.
-чему равна длина вектора (5, 6)? целого ответа нет для (5, 6): 5^2 + 6^2 = 61, а 61 не полный квадрат.
-what is the length of the vector (5, 8)? no whole answer for (5, 8): 5^2 + 8^2 = 89, and 89 is not a perfect square.
-чему равна длина вектора (4, 11)? целого ответа нет для (4, 11): 4^2 + 11^2 = 137, а 137 не полный квадрат.
-what is the length of the vector (4, 6)? no whole answer for (4, 6): 4^2 + 6^2 = 52, and 52 is not a perfect square.
-чему равна длина вектора (10, 11)? целого ответа нет для (10, 11): 10^2 + 11^2 = 221, а 221 не полный квадрат.
-what is the length of the vector (2, 9)? no whole answer for (2, 9): 2^2 + 9^2 = 85, and 85 is not a perfect square.
-чему равна длина вектора (9, 16)? целого ответа нет для (9, 16): 9^2 + 16^2 = 337, а 337 не полный квадрат.
-what is the length of the vector (10, 16)? no whole answer for (10, 16): 10^2 + 16^2 = 356, and 356 is not a perfect square.
-чему равна длина вектора (8, 14)? целого ответа нет для (8, 14): 8^2 + 14^2 = 260, а 260 не полный квадрат.
-what is the length of the vector (9, 14)? no whole answer for (9, 14): 9^2 + 14^2 = 277, and 277 is not a perfect square.
-чему равна длина вектора (7, 12)? целого ответа нет для (7, 12): 7^2 + 12^2 = 193, а 193 не полный квадрат.
-what is the length of the vector (8, 12)? no whole answer for (8, 12): 8^2 + 12^2 = 208, and 208 is not a perfect square.
-чему равна длина вектора (6, 10)? целого ответа нет для (6, 10): 6^2 + 10^2 = 136, а 136 не полный квадрат.
-what is the length of the vector (7, 10)? no whole answer for (7, 10): 7^2 + 10^2 = 149, and 149 is not a perfect square.
-чему равна длина вектора (5, 8)? целого ответа нет для (5, 8): 5^2 + 8^2 = 89, а 89 не полный квадрат.
-what is the length of the vector (5, 6)? no whole answer for (5, 6): 5^2 + 6^2 = 61, and 61 is not a perfect square.
-чему равна длина вектора (4, 6)? целого ответа нет для (4, 6): 4^2 + 6^2 = 52, а 52 не полный квадрат.
-what is the length of the vector (4, 11)? no whole answer for (4, 11): 4^2 + 11^2 = 137, and 137 is not a perfect square.
-чему равна длина вектора (2, 9)? целого ответа нет для (2, 9): 2^2 + 9^2 = 85, а 85 не полный квадрат.
-what is the length of the vector (10, 11)? no whole answer for (10, 11): 10^2 + 11^2 = 221, and 221 is not a perfect square.
-чему равна длина вектора (10, 16)? целого ответа нет для (10, 16): 10^2 + 16^2 = 356, а 356 не полный квадрат.
-what is the length of the vector (9, 16)? no whole answer for (9, 16): 9^2 + 16^2 = 337, and 337 is not a perfect square.
+целое ли число длина вектора (8, 12)? нет: 8^2 + 12^2 = 208, а 208 не полный квадрат.
+is the length of the vector (6, 10) a whole number? no: 6^2 + 10^2 = 136, and 136 is not a perfect square.
+целое ли число длина вектора (5, 6)? нет: 5^2 + 6^2 = 61, а 61 не полный квадрат.
+is the length of the vector (3, 4) a whole number? yes: 3^2 + 4^2 = 25 = 5^2, the length is 5.
+целое ли число длина вектора (9, 16)? нет: 9^2 + 16^2 = 337, а 337 не полный квадрат.
+is the length of the vector (9, 14) a whole number? no: 9^2 + 14^2 = 277, and 277 is not a perfect square.
+целое ли число длина вектора (6, 10)? нет: 6^2 + 10^2 = 136, а 136 не полный квадрат.
+is the length of the vector (6, 8) a whole number? yes: 6^2 + 8^2 = 100 = 10^2, the length is 10.
+целое ли число длина вектора (3, 4)? да: 3^2 + 4^2 = 25 = 5^2, длина равна 5.
+is the length of the vector (20, 21) a whole number? yes: 20^2 + 21^2 = 841 = 29^2, the length is 29.
+целое ли число длина вектора (9, 14)? нет: 9^2 + 14^2 = 277, а 277 не полный квадрат.
+is the length of the vector (9, 12) a whole number? yes: 9^2 + 12^2 = 225 = 15^2, the length is 15.
+целое ли число длина вектора (6, 8)? да: 6^2 + 8^2 = 100 = 10^2, длина равна 10.
+is the length of the vector (6, 8) a whole number? yes: 6^2 + 8^2 = 100 = 10^2, the length is 10.
+целое ли число длина вектора (20, 21)? да: 20^2 + 21^2 = 841 = 29^2, длина равна 29.
+is the length of the vector (15, 20) a whole number? yes: 15^2 + 20^2 = 625 = 25^2, the length is 25.
+целое ли число длина вектора (9, 12)? да: 9^2 + 12^2 = 225 = 15^2, длина равна 15.
+is the length of the vector (12, 16) a whole number? yes: 12^2 + 16^2 = 400 = 20^2, the length is 20.
+целое ли число длина вектора (6, 8)? да: 6^2 + 8^2 = 100 = 10^2, длина равна 10.
+is the length of the vector (5, 12) a whole number? yes: 5^2 + 12^2 = 169 = 13^2, the length is 13.
+целое ли число длина вектора (15, 20)? да: 15^2 + 20^2 = 625 = 25^2, длина равна 25.
+is the length of the vector (8, 14) a whole number? no: 8^2 + 14^2 = 260, and 260 is not a perfect square.
+целое ли число длина вектора (12, 16)? да: 12^2 + 16^2 = 400 = 20^2, длина равна 20.
+is the length of the vector (5, 8) a whole number? no: 5^2 + 8^2 = 89, and 89 is not a perfect square.
+целое ли число длина вектора (5, 12)? да: 5^2 + 12^2 = 169 = 13^2, длина равна 13.
+is the length of the vector (2, 9) a whole number? no: 2^2 + 9^2 = 85, and 85 is not a perfect square.
+целое ли число длина вектора (8, 14)? нет: 8^2 + 14^2 = 260, а 260 не полный квадрат.
+is the length of the vector (8, 12) a whole number? no: 8^2 + 12^2 = 208, and 208 is not a perfect square.
+целое ли число длина вектора (5, 8)? нет: 5^2 + 8^2 = 89, а 89 не полный квадрат.
+is the length of the vector (5, 6) a whole number? no: 5^2 + 6^2 = 61, and 61 is not a perfect square.
+целое ли число длина вектора (2, 9)? нет: 2^2 + 9^2 = 85, а 85 не полный квадрат.
+is the length of the vector (9, 16) a whole number? no: 9^2 + 16^2 = 337, and 337 is not a perfect square.
 
 чему равно скалярное произведение (4, 3) и (4, 2)? скалярное произведение (4, 3) и (4, 2) равно 22: 4 × 4 = 16, 3 × 2 = 6, 16 + 6 = 22.
 why is the dot product of (6, 5) and (6, 4) equal to 56? because 6 × 6 = 36: the dot product of (6, 5) and (6, 4) is 56: 6 × 6 = 36, 5 × 4 = 20, 36 + 20 = 56. the dot product of two vectors is the sum of the products of their matching components.
@@ -2288,38 +2298,38 @@ the vector (9, 12) has length 15: 9 × 9 = 81, 12 × 12 = 144, 81 + 144 = 225, 1
 what is the length of the vector (5, 12)? the vector (5, 12) has length 13: 5 × 5 = 25, 12 × 12 = 144, 25 + 144 = 169, 13 × 13 = 169.
 чему равна длина вектора (9, 12)? вектор (9, 12) имеет длину 15: 9 × 9 = 81, 12 × 12 = 144, 81 + 144 = 225, 15 × 15 = 225.
 
-what is the length of the vector (7, 12)? no whole answer for (7, 12): 7^2 + 12^2 = 193, and 193 is not a perfect square.
-чему равна длина вектора (6, 12)? целого ответа нет для (6, 12): 6^2 + 12^2 = 180, а 180 не полный квадрат.
-what is the length of the vector (8, 14)? no whole answer for (8, 14): 8^2 + 14^2 = 260, and 260 is not a perfect square.
-чему равна длина вектора (7, 14)? целого ответа нет для (7, 14): 7^2 + 14^2 = 245, а 245 не полный квадрат.
-what is the length of the vector (9, 16)? no whole answer for (9, 16): 9^2 + 16^2 = 337, and 337 is not a perfect square.
-чему равна длина вектора (8, 9)? целого ответа нет для (8, 9): 8^2 + 9^2 = 145, а 145 не полный квадрат.
-what is the length of the vector (10, 11)? no whole answer for (10, 11): 10^2 + 11^2 = 221, and 221 is not a perfect square.
-чему равна длина вектора (9, 11)? целого ответа нет для (9, 11): 9^2 + 11^2 = 202, а 202 не полный квадрат.
-what is the length of the vector (2, 4)? no whole answer for (2, 4): 2^2 + 4^2 = 20, and 20 is not a perfect square.
-чему равна длина вектора (10, 13)? целого ответа нет для (10, 13): 10^2 + 13^2 = 269, а 269 не полный квадрат.
-what is the length of the vector (3, 6)? no whole answer for (3, 6): 3^2 + 6^2 = 45, and 45 is not a perfect square.
-чему равна длина вектора (2, 6)? целого ответа нет для (2, 6): 2^2 + 6^2 = 40, а 40 не полный квадрат.
-what is the length of the vector (4, 8)? no whole answer for (4, 8): 4^2 + 8^2 = 80, and 80 is not a perfect square.
-чему равна длина вектора (5, 8)? целого ответа нет для (5, 8): 5^2 + 8^2 = 89, а 89 не полный квадрат.
-what is the length of the vector (5, 10)? no whole answer for (5, 10): 5^2 + 10^2 = 125, and 125 is not a perfect square.
-чему равна длина вектора (6, 10)? целого ответа нет для (6, 10): 6^2 + 10^2 = 136, а 136 не полный квадрат.
-what is the length of the vector (6, 12)? no whole answer for (6, 12): 6^2 + 12^2 = 180, and 180 is not a perfect square.
-чему равна длина вектора (7, 12)? целого ответа нет для (7, 12): 7^2 + 12^2 = 193, а 193 не полный квадрат.
-what is the length of the vector (7, 14)? no whole answer for (7, 14): 7^2 + 14^2 = 245, and 245 is not a perfect square.
-чему равна длина вектора (8, 14)? целого ответа нет для (8, 14): 8^2 + 14^2 = 260, а 260 не полный квадрат.
-what is the length of the vector (8, 9)? no whole answer for (8, 9): 8^2 + 9^2 = 145, and 145 is not a perfect square.
-чему равна длина вектора (9, 16)? целого ответа нет для (9, 16): 9^2 + 16^2 = 337, а 337 не полный квадрат.
-what is the length of the vector (9, 11)? no whole answer for (9, 11): 9^2 + 11^2 = 202, and 202 is not a perfect square.
-чему равна длина вектора (10, 11)? целого ответа нет для (10, 11): 10^2 + 11^2 = 221, а 221 не полный квадрат.
-what is the length of the vector (10, 13)? no whole answer for (10, 13): 10^2 + 13^2 = 269, and 269 is not a perfect square.
-чему равна длина вектора (2, 4)? целого ответа нет для (2, 4): 2^2 + 4^2 = 20, а 20 не полный квадрат.
-what is the length of the vector (2, 6)? no whole answer for (2, 6): 2^2 + 6^2 = 40, and 40 is not a perfect square.
-чему равна длина вектора (3, 6)? целого ответа нет для (3, 6): 3^2 + 6^2 = 45, а 45 не полный квадрат.
-what is the length of the vector (5, 8)? no whole answer for (5, 8): 5^2 + 8^2 = 89, and 89 is not a perfect square.
-чему равна длина вектора (4, 8)? целого ответа нет для (4, 8): 4^2 + 8^2 = 80, а 80 не полный квадрат.
-what is the length of the vector (6, 10)? no whole answer for (6, 10): 6^2 + 10^2 = 136, and 136 is not a perfect square.
-чему равна длина вектора (5, 10)? целого ответа нет для (5, 10): 5^2 + 10^2 = 125, а 125 не полный квадрат.
+is the length of the vector (7, 12) a whole number? no: 7^2 + 12^2 = 193, and 193 is not a perfect square.
+целое ли число длина вектора (6, 12)? нет: 6^2 + 12^2 = 180, а 180 не полный квадрат.
+is the length of the vector (7, 24) a whole number? yes: 7^2 + 24^2 = 625 = 25^2, the length is 25.
+целое ли число длина вектора (7, 14)? нет: 7^2 + 14^2 = 245, а 245 не полный квадрат.
+is the length of the vector (9, 16) a whole number? no: 9^2 + 16^2 = 337, and 337 is not a perfect square.
+целое ли число длина вектора (12, 16)? да: 12^2 + 16^2 = 400 = 20^2, длина равна 20.
+is the length of the vector (10, 11) a whole number? no: 10^2 + 11^2 = 221, and 221 is not a perfect square.
+целое ли число длина вектора (9, 11)? нет: 9^2 + 11^2 = 202, а 202 не полный квадрат.
+is the length of the vector (10, 24) a whole number? yes: 10^2 + 24^2 = 676 = 26^2, the length is 26.
+целое ли число длина вектора (10, 13)? нет: 10^2 + 13^2 = 269, а 269 не полный квадрат.
+is the length of the vector (3, 6) a whole number? no: 3^2 + 6^2 = 45, and 45 is not a perfect square.
+целое ли число длина вектора (15, 20)? да: 15^2 + 20^2 = 625 = 25^2, длина равна 25.
+is the length of the vector (4, 8) a whole number? no: 4^2 + 8^2 = 80, and 80 is not a perfect square.
+целое ли число длина вектора (8, 15)? да: 8^2 + 15^2 = 289 = 17^2, длина равна 17.
+is the length of the vector (5, 12) a whole number? yes: 5^2 + 12^2 = 169 = 13^2, the length is 13.
+целое ли число длина вектора (6, 10)? нет: 6^2 + 10^2 = 136, а 136 не полный квадрат.
+is the length of the vector (6, 12) a whole number? no: 6^2 + 12^2 = 180, and 180 is not a perfect square.
+целое ли число длина вектора (7, 12)? нет: 7^2 + 12^2 = 193, а 193 не полный квадрат.
+is the length of the vector (7, 14) a whole number? no: 7^2 + 14^2 = 245, and 245 is not a perfect square.
+целое ли число длина вектора (7, 24)? да: 7^2 + 24^2 = 625 = 25^2, длина равна 25.
+is the length of the vector (12, 16) a whole number? yes: 12^2 + 16^2 = 400 = 20^2, the length is 20.
+целое ли число длина вектора (9, 16)? нет: 9^2 + 16^2 = 337, а 337 не полный квадрат.
+is the length of the vector (9, 11) a whole number? no: 9^2 + 11^2 = 202, and 202 is not a perfect square.
+целое ли число длина вектора (10, 11)? нет: 10^2 + 11^2 = 221, а 221 не полный квадрат.
+is the length of the vector (10, 13) a whole number? no: 10^2 + 13^2 = 269, and 269 is not a perfect square.
+целое ли число длина вектора (10, 24)? да: 10^2 + 24^2 = 676 = 26^2, длина равна 26.
+is the length of the vector (15, 20) a whole number? yes: 15^2 + 20^2 = 625 = 25^2, the length is 25.
+целое ли число длина вектора (3, 6)? нет: 3^2 + 6^2 = 45, а 45 не полный квадрат.
+is the length of the vector (8, 15) a whole number? yes: 8^2 + 15^2 = 289 = 17^2, the length is 17.
+целое ли число длина вектора (4, 8)? нет: 4^2 + 8^2 = 80, а 80 не полный квадрат.
+is the length of the vector (6, 10) a whole number? no: 6^2 + 10^2 = 136, and 136 is not a perfect square.
+целое ли число длина вектора (5, 12)? да: 5^2 + 12^2 = 169 = 13^2, длина равна 13.
 
 what is the dot product of (4, 2) and (3, 1)? 4 × 3 = 12. therefore the dot product of (4, 2) and (3, 1) is 14: 4 × 3 = 12, 2 × 1 = 2, 12 + 2 = 14. the dot product of two vectors is the sum of the products of their matching components.
 чему равно скалярное произведение (7, 5) и (6, 4)? скалярное произведение (7, 5) и (6, 4) равно 62: 7 × 6 = 42, 5 × 4 = 20, 42 + 20 = 62.
@@ -2958,36 +2968,38 @@ the vector (9, 12) has length 15: 9 × 9 = 81, 12 × 12 = 144, 81 + 144 = 225, 1
 what is the length of the vector (12, 5)? the vector (12, 5) has length 13: 12 × 12 = 144, 5 × 5 = 25, 144 + 25 = 169, 13 × 13 = 169.
 вектор (7, 24) имеет длину 25: 7 × 7 = 49, 24 × 24 = 576, 49 + 576 = 625, 25 × 25 = 625.
 
-what is the length of the vector (3, 8)? no whole answer for (3, 8): 3^2 + 8^2 = 73, and 73 is not a perfect square.
-чему равна длина вектора (6, 12)? целого ответа нет для (6, 12): 6^2 + 12^2 = 180, а 180 не полный квадрат.
-what is the length of the vector (8, 11)? no whole answer for (8, 11): 8^2 + 11^2 = 185, and 185 is not a perfect square.
-чему равна длина вектора (10, 13)? целого ответа нет для (10, 13): 10^2 + 13^2 = 269, а 269 не полный квадрат.
-what is the length of the vector (3, 10)? no whole answer for (3, 10): 3^2 + 10^2 = 109, and 109 is not a perfect square.
-чему равна длина вектора (6, 7)? целого ответа нет для (6, 7): 6^2 + 7^2 = 85, а 85 не полный квадрат.
-what is the length of the vector (9, 11)? no whole answer for (9, 11): 9^2 + 11^2 = 202, and 202 is not a perfect square.
-чему равна длина вектора (10, 15)? целого ответа нет для (10, 15): 10^2 + 15^2 = 325, а 325 не полный квадрат.
-what is the length of the vector (4, 10)? no whole answer for (4, 10): 4^2 + 10^2 = 116, and 116 is not a perfect square.
-чему равна длина вектора (7, 14)? целого ответа нет для (7, 14): 7^2 + 14^2 = 245, а 245 не полный квадрат.
-what is the length of the vector (9, 13)? no whole answer for (9, 13): 9^2 + 13^2 = 250, and 250 is not a perfect square.
-чему равна длина вектора (2, 6)? целого ответа нет для (2, 6): 2^2 + 6^2 = 40, а 40 не полный квадрат.
-what is the length of the vector (6, 12)? no whole answer for (6, 12): 6^2 + 12^2 = 180, and 180 is not a perfect square.
-чему равна длина вектора (7, 9)? целого ответа нет для (7, 9): 7^2 + 9^2 = 130, а 130 не полный квадрат.
-what is the length of the vector (10, 13)? no whole answer for (10, 13): 10^2 + 13^2 = 269, and 269 is not a perfect square.
-чему равна длина вектора (2, 8)? целого ответа нет для (2, 8): 2^2 + 8^2 = 68, а 68 не полный квадрат.
-what is the length of the vector (6, 7)? no whole answer for (6, 7): 6^2 + 7^2 = 85, and 85 is not a perfect square.
-чему равна длина вектора (8, 9)? целого ответа нет для (8, 9): 8^2 + 9^2 = 145, а 145 не полный квадрат.
-what is the length of the vector (10, 15)? no whole answer for (10, 15): 10^2 + 15^2 = 325, and 325 is not a perfect square.
-чему равна длина вектора (3, 8)? целого ответа нет для (3, 8): 3^2 + 8^2 = 73, а 73 не полный квадрат.
-what is the length of the vector (7, 14)? no whole answer for (7, 14): 7^2 + 14^2 = 245, and 245 is not a perfect square.
-чему равна длина вектора (8, 11)? целого ответа нет для (8, 11): 8^2 + 11^2 = 185, а 185 не полный квадрат.
-what is the length of the vector (2, 6)? no whole answer for (2, 6): 2^2 + 6^2 = 40, and 40 is not a perfect square.
-чему равна длина вектора (3, 10)? целого ответа нет для (3, 10): 3^2 + 10^2 = 109, а 109 не полный квадрат.
-what is the length of the vector (7, 9)? no whole answer for (7, 9): 7^2 + 9^2 = 130, and 130 is not a perfect square.
-чему равна длина вектора (9, 11)? целого ответа нет для (9, 11): 9^2 + 11^2 = 202, а 202 не полный квадрат.
-what is the length of the vector (2, 8)? no whole answer for (2, 8): 2^2 + 8^2 = 68, and 68 is not a perfect square.
-чему равна длина вектора (4, 10)? целого ответа нет для (4, 10): 4^2 + 10^2 = 116, а 116 не полный квадрат.
-what is the length of the vector (8, 9)? no whole answer for (8, 9): 8^2 + 9^2 = 145, and 145 is not a perfect square.
-чему равна длина вектора (9, 13)? целого ответа нет для (9, 13): 9^2 + 13^2 = 250, а 250 не полный квадрат.
+is the length of the vector (3, 4) a whole number? yes: 3^2 + 4^2 = 25 = 5^2, the length is 5.
+целое ли число длина вектора (10, 24)? да: 10^2 + 24^2 = 676 = 26^2, длина равна 26.
+is the length of the vector (8, 15) a whole number? yes: 8^2 + 15^2 = 289 = 17^2, the length is 17.
+целое ли число длина вектора (8, 9)? нет: 8^2 + 9^2 = 145, а 145 не полный квадрат.
+is the length of the vector (7, 24) a whole number? yes: 7^2 + 24^2 = 625 = 25^2, the length is 25.
+целое ли число длина вектора (2, 6)? нет: 2^2 + 6^2 = 40, а 40 не полный квадрат.
+is the length of the vector (10, 24) a whole number? yes: 10^2 + 24^2 = 676 = 26^2, the length is 26.
+целое ли число длина вектора (5, 12)? да: 5^2 + 12^2 = 169 = 13^2, длина равна 13.
+is the length of the vector (8, 9) a whole number? no: 8^2 + 9^2 = 145, and 145 is not a perfect square.
+целое ли число длина вектора (8, 11)? нет: 8^2 + 11^2 = 185, а 185 не полный квадрат.
+is the length of the vector (2, 6) a whole number? no: 2^2 + 6^2 = 40, and 40 is not a perfect square.
+целое ли число длина вектора (2, 8)? нет: 2^2 + 8^2 = 68, а 68 не полный квадрат.
+is the length of the vector (5, 12) a whole number? yes: 5^2 + 12^2 = 169 = 13^2, the length is 13.
+целое ли число длина вектора (7, 14)? нет: 7^2 + 14^2 = 245, а 245 не полный квадрат.
+is the length of the vector (8, 11) a whole number? no: 8^2 + 11^2 = 185, and 185 is not a perfect square.
+целое ли число длина вектора (10, 13)? нет: 10^2 + 13^2 = 269, а 269 не полный квадрат.
+is the length of the vector (2, 8) a whole number? no: 2^2 + 8^2 = 68, and 68 is not a perfect square.
+целое ли число длина вектора (4, 10)? нет: 4^2 + 10^2 = 116, а 116 не полный квадрат.
+is the length of the vector (7, 14) a whole number? no: 7^2 + 14^2 = 245, and 245 is not a perfect square.
+целое ли число длина вектора (7, 9)? нет: 7^2 + 9^2 = 130, а 130 не полный квадрат.
+is the length of the vector (10, 13) a whole number? no: 10^2 + 13^2 = 269, and 269 is not a perfect square.
+целое ли число длина вектора (10, 15)? нет: 10^2 + 15^2 = 325, а 325 не полный квадрат.
+is the length of the vector (4, 10) a whole number? no: 4^2 + 10^2 = 116, and 116 is not a perfect square.
+целое ли число длина вектора (9, 12)? да: 9^2 + 12^2 = 225 = 15^2, длина равна 15.
+is the length of the vector (7, 9) a whole number? no: 7^2 + 9^2 = 130, and 130 is not a perfect square.
+целое ли число длина вектора (20, 21)? да: 20^2 + 21^2 = 841 = 29^2, длина равна 29.
+is the length of the vector (10, 15) a whole number? no: 10^2 + 15^2 = 325, and 325 is not a perfect square.
+целое ли число длина вектора (3, 4)? да: 3^2 + 4^2 = 25 = 5^2, длина равна 5.
+is the length of the vector (9, 12) a whole number? yes: 9^2 + 12^2 = 225 = 15^2, the length is 15.
+целое ли число длина вектора (8, 15)? да: 8^2 + 15^2 = 289 = 17^2, длина равна 17.
+is the length of the vector (20, 21) a whole number? yes: 20^2 + 21^2 = 841 = 29^2, the length is 29.
+целое ли число длина вектора (7, 24)? да: 7^2 + 24^2 = 625 = 25^2, длина равна 25.
 
 the dot product of (7, 4) and (5, 3) is 47: 7 × 5 = 35, 4 × 3 = 12, 35 + 12 = 47.
 скалярное произведение (10, 2) и (4, 6) равно 52: 10 × 4 = 40, 2 × 6 = 12, 40 + 12 = 52.

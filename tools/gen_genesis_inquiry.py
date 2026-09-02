@@ -91,10 +91,21 @@ def сумма_цифр(n):
 ]
 
 
+def число_полярности(шаг, i):
+    """BOTH POLARITIES BY MASS (holon 03.09: 37 «yes» against 138 «no», so a
+    prefix of a frame could be all one answer): the even shows take the next
+    prime from the stream, the odd ones the next composite."""
+    n = 40 + шаг * 7 + i * 5
+    хочу = (i % 2 == 0)
+    while простое(n) != хочу:
+        n += 1
+    return n
+
+
 def исп_простота(шаг):
     вон = []
     for i in range(14):
-        n = 40 + шаг * 7 + i * 5
+        n = число_полярности(шаг, i)
         if простое(n):
             вон.append(f"is {n} a prime number? yes: the divisors of "
                        f"{n} are 1 and {n}.")
@@ -410,7 +421,7 @@ def общ_квадрат(шаг):
 def повеств_простота(шаг):
     вон = []
     for i in range(14):
-        n = 40 + шаг * 7 + i * 5
+        n = число_полярности(шаг, i)
         if простое(n):
             вон.append(f"{n} is a prime number: the divisors of {n} are "
                        f"1 and {n}.")
@@ -526,7 +537,7 @@ import discourse  # noqa: E402
 def рассужд_простота(шаг):
     вон = []
     for i in range(14):
-        n = 40 + шаг * 7 + i * 5
+        n = число_полярности(шаг, i)
         прост = простое(n)
         д = 0 if прост else наименьший_делитель(n)
         if прост:

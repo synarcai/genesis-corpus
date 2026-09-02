@@ -14,9 +14,13 @@ Pythagorean triples that make lengths whole are named, not searched.
 
 import sys
 import pathlib
+import math
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from layer import emit_grouped  # noqa: E402
+
+# exact pairs — the «yes» of the wholeness question
+ТОЧНЫЕ_КАТЕТЫ = [(3, 4), (6, 8), (5, 12), (8, 15), (9, 12), (12, 16), (7, 24), (20, 21), (15, 20), (10, 24)]
 
 # ИСКОМОЕ ОБЪЯВЛЯЕТ СВОЙ ВОПРОС ОДИН РАЗ, и вопрос берёт ТУ ЖЕ фразу
 # предмета, какую берёт ответ. Замер вопросной поверхности назвал этот
@@ -116,15 +120,25 @@ def отказ_длины(шаг):
     for i in range(16):
         a = 2 + (шаг + i) % 9
         b = a + 1 + (шаг * 3 + i) % 7
+        # WHOLENESS IS A YES/NO QUESTION (holon 03.09, value-not-verdict: a
+        # question for a VALUE answered by a refusal looked like a verdict
+        # frame with one polarity). The value question keeps its value
+        # answers; wholeness is asked as its own question, and both answers
+        # lie side by side — «yes» with the whole value, «no» with the reason.
+        if i % 3 == 0:
+            a, b = ТОЧНЫЕ_КАТЕТЫ[(шаг + i) % len(ТОЧНЫЕ_КАТЕТЫ)]
         с = a * a + b * b
         if полный_квадрат(с):
-            continue
-        вон.append(f"what is the length of the vector ({a}, {b})? no "
-                   f"whole answer for ({a}, {b}): {a}^2 + {b}^2 = {с}, "
-                   f"and {с} is not a perfect square.")
-        вон.append(f"чему равна длина вектора ({a}, {b})? целого "
-                   f"ответа нет для ({a}, {b}): {a}^2 + {b}^2 = {с}, "
-                   f"а {с} не полный квадрат.")
+            c = math.isqrt(с)
+            вон.append(f"is the length of the vector ({a}, {b}) a whole number? "
+                       f"yes: {a}^2 + {b}^2 = {с} = {c}^2, the length is {c}.")
+            вон.append(f"целое ли число длина вектора ({a}, {b})? "
+                       f"да: {a}^2 + {b}^2 = {с} = {c}^2, длина равна {c}.")
+        else:
+            вон.append(f"is the length of the vector ({a}, {b}) a whole number? "
+                       f"no: {a}^2 + {b}^2 = {с}, and {с} is not a perfect square.")
+            вон.append(f"целое ли число длина вектора ({a}, {b})? "
+                       f"нет: {a}^2 + {b}^2 = {с}, а {с} не полный квадрат.")
     return вон
 
 

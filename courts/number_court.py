@@ -34,6 +34,10 @@ from genesis import Unreadable, worlds  # noqa: E402
     r"1 (?:and|и) (\d+)\.$")
 СОСТАВНОЕ = re.compile(
     r"^(\d+) (?:is not prime|составное); \1 = (\d+) × (\d+)\.$")
+# ВЕРДИКТ С ОСНОВАНИЕМ (М-147): слово «да/нет» перед свидетельством
+# простоты; суд судит свидетельство своим ходом и требует согласия слова.
+ВЕРДИКТ_ПРОСТОТЫ = re.compile(
+    r"^(yes|no|да|нет): (\d+ (?:is prime|is not prime|простое|составное)[;].*)$")
 РАЗЛОЖЕНИЕ = re.compile(
     r"^(\d+) (?:factorises into|раскладывается в) ([\d ×]+)\.$")
 ДЕЛИТЕЛИ = re.compile(
@@ -90,6 +94,13 @@ def судить(строка):
     если = asking.судить_парой(с, судить)
     if если is not None:
         return если
+    m = ВЕРДИКТ_ПРОСТОТЫ.match(с)
+    if m:
+        слово, тело = m.group(1), m.group(2)
+        судимо, верно = судить(тело)
+        if not судимо:
+            return False, True
+        return True, верно and (слово in ("yes", "да")) == bool(ПРОСТОЕ.match(тело))
     m = ПРОСТОЕ.match(с)
     if m:
         n, названный = int(m.group(1)), int(m.group(2))

@@ -122,29 +122,31 @@ def давление(шаг):
         вон.append(спросить("law", утв_en,
                             закон="pressure = force ÷ area",
                             x=сила, y=площадь))
-        # ОТКАЗ С ОСНОВАНИЕМ: сила, не делящаяся на площадь, целого
-        # давления не даёт, и мир его не пишет — приближение, названное
-        # равенством, есть ложь того же рода, что «5 ÷ 2 = 2».
-        # СКАЗУЕМОЕ ИДЁТ ЗА ЧИСЛОМ: «21 ньютон не даёт», но «25
-        # ньютонов не дают»; единственность выводится из того же дома
-        # форм, а не из второго списка чисел.
-        косая = сила + 1
-        if косая % площадь:
-            один = (rugram.форма("ньютон", косая)
-                    == rugram.форма("ньютон", 1))
-            вон.append(f"что даёт давление = сила ÷ площадь при "
-                       f"{косая} и {площадь}? целого ответа нет: "
-                       f"{косая} {rugram.форма('ньютон', косая)} на "
-                       f"{площадь} "
-                       f"{rugram.форма('квадратный метр', площадь)} "
-                       f"{'не даёт' if один else 'не дают'} целого "
-                       f"давления, {косая} не делится на {площадь} "
-                       f"нацело.")
-            вон.append(f"what does pressure = force ÷ area give for "
-                       f"{косая} and {площадь}? no whole answer: "
-                       f"{косая} newtons over {площадь} square metres "
-                       f"do not give a whole pressure, {косая} is not "
-                       f"divisible by {площадь}.")
+        # WHOLENESS IS A YES/NO QUESTION (holon 03.09, value-not-verdict: a
+        # question for a VALUE answered by a refusal looked like a verdict
+        # frame with one polarity). The question now asks about wholeness
+        # itself, and both answers lie side by side — «yes» with the
+        # quotient, «no» with the reason; the court recomputes the remainder.
+        # СКАЗУЕМОЕ ИДЁТ ЗА ЧИСЛОМ: «21 ньютон не даёт», но «25 ньютонов не дают».
+        целая = сила + площадь if i % 2 == 0 else сила + 1
+        частное = целая // площадь
+        один = (rugram.форма("ньютон", целая) == rugram.форма("ньютон", 1))
+        if целая % площадь == 0:
+            отв_ru = (f"да: {целая} {rugram.форма('ньютон', целая)} на {площадь} "
+                      f"{rugram.форма('квадратный метр', площадь)} "
+                      f"{'даёт' if один else 'дают'} {целая} ÷ {площадь} = "
+                      f"{частное} {rugram.форма('паскаль', частное)}.")
+            отв_en = (f"yes: {целая} newtons over {площадь} square metres give "
+                      f"{целая} ÷ {площадь} = {частное} pascals.")
+        else:
+            отв_ru = (f"нет: {целая} {rugram.форма('ньютон', целая)} на {площадь} "
+                      f"{rugram.форма('квадратный метр', площадь)} "
+                      f"{'не даёт' if один else 'не дают'} целого давления, "
+                      f"{целая} не делится на {площадь} нацело.")
+            отв_en = (f"no: {целая} newtons over {площадь} square metres do not "
+                      f"give a whole pressure, {целая} is not divisible by {площадь}.")
+        вон.append(f"даёт ли давление = сила ÷ площадь целое число при {целая} и {площадь}? {отв_ru}")
+        вон.append(f"does pressure = force ÷ area give a whole number for {целая} and {площадь}? {отв_en}")
     return вон
 
 

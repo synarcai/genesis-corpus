@@ -491,7 +491,21 @@ def _объявлено(имя_файла, имя_списка):
 ВЛОЖЕННО = re.compile(
     rf"({С}) has (\d+) more than twice (?:the number of |as many )"
     rf"({С}) (?:that |as )({С})(?: has)?\.")
-ИТОГ = re.compile(rf"({С}) (?:holds|owns|keeps|saves|has) (\d+) ({С})\.\s*$")
+# ЗВЕНО ПОСЛЕ ИТОГА (compose e9, закон «леджер объясняет ответ»): «tara holds 10
+# balloons: 8 + 2 = 10.» — звено необязательно, но, если оно есть, его числа
+# суть числа строки до ответа, а итог звена — итог цепи.
+ИТОГ = re.compile(rf"({С}) (?:holds|owns|keeps|saves|has) (\d+) ({С})(?:: (\d+) ([+−]) (\d+) = (\d+))?\.\s*$")
+
+
+def _звено_верно(строка, итог_m, сколько):
+    """Звено после итога согласно с цепью: числа — из строки, итог — ответ."""
+    з1, зн, з2, з3 = итог_m.group(4), итог_m.group(5), итог_m.group(6), итог_m.group(7)
+    if з1 is None:
+        return True
+    з1, з2, з3 = int(з1), int(з2), int(з3)
+    до = [int(x) for x in re.findall(r"\d+", строка[:итог_m.start()])]
+    ожидание = з1 + з2 if зн == "+" else з1 - з2
+    return ожидание == з3 == сколько and з1 in до and з2 in до
 СТАВКА = re.compile(
     rf"^({С}) ({С}) (\d+) ({С}) (?:every|each|a) (?:day|night)\. "
     rf"how much in (\d+) ({С})\? \1 \2 (\d+) \4 in \5 \6\.$")
@@ -964,6 +978,8 @@ def судить(строка, слой=None):
         return True, итог % k == 0 if k else False
     # СРАВНЕНИЕ: части в любом порядке, итог в конце
     итог_m = ИТОГ.search(с)
+    if итог_m and not _звено_верно(с, итог_m, int(итог_m.group(2))):
+        return True, False
     if итог_m:
         база = {им: int(n) for им, n, _ in БАЗА.findall(с)}
         база.update({им: int(n) for им, n, _ in БАЗА_ПЕРФЕКТ.findall(с)})

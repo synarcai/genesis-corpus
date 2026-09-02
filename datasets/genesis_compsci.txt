@@ -1,23 +1,33 @@
-сколько бит стоит знак алфавита в 5 знаков? целого ответа нет: 5 знаков — это не степень двойки.
-how many bits does a sign of an alphabet of 9 signs cost? no whole answer for 9 signs: 9 is not a power of two.
-сколько бит стоит знак алфавита в 12 знаков? целого ответа нет: 12 знаков — это не степень двойки.
-how many bits does a sign of an alphabet of 6 signs cost? no whole answer for 6 signs: 6 is not a power of two.
-сколько бит стоит знак алфавита в 9 знаков? целого ответа нет: 9 знаков — это не степень двойки.
-how many bits does a sign of an alphabet of 3 signs cost? no whole answer for 3 signs: 3 is not a power of two.
-сколько бит стоит знак алфавита в 6 знаков? целого ответа нет: 6 знаков — это не степень двойки.
-how many bits does a sign of an alphabet of 10 signs cost? no whole answer for 10 signs: 10 is not a power of two.
-сколько бит стоит знак алфавита в 3 знака? целого ответа нет: 3 знака — это не степень двойки.
-how many bits does a sign of an alphabet of 7 signs cost? no whole answer for 7 signs: 7 is not a power of two.
-сколько бит стоит знак алфавита в 10 знаков? целого ответа нет: 10 знаков — это не степень двойки.
-how many bits does a sign of an alphabet of 4 signs cost? a sign of an alphabet of 4 signs costs 2 bits: 2^2 = 4.
-сколько бит стоит знак алфавита в 7 знаков? целого ответа нет: 7 знаков — это не степень двойки.
-how many bits does a sign of an alphabet of 11 signs cost? no whole answer for 11 signs: 11 is not a power of two.
+стоит ли знак алфавита в 5 знаков целое число бит? нет: 5 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 16 signs cost? a sign of an alphabet of 16 signs costs 4 bits: 2^4 = 16.
+сколько бит стоит знак алфавита в 32 знака? знак алфавита в 32 знака стоит 5 битов: 2^5 = 32.
+does a sign of an alphabet of 64 signs cost a whole number of bits? yes: 64 = 2^6, a sign costs 6 bits.
+стоит ли знак алфавита в 4 знака целое число бит? да: 4 = 2^2, знак стоит 2 бита.
+does a sign of an alphabet of 6 signs cost a whole number of bits? no: 6 is not a power of two.
+стоит ли знак алфавита в 9 знаков целое число бит? нет: 9 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 64 signs cost? a sign of an alphabet of 64 signs costs 6 bits: 2^6 = 64.
 сколько бит стоит знак алфавита в 4 знака? знак алфавита в 4 знака стоит 2 бита: 2^2 = 4.
+does a sign of an alphabet of 8 signs cost a whole number of bits? yes: 8 = 2^3, a sign costs 3 bits.
+стоит ли знак алфавита в 16 знаков целое число бит? да: 16 = 2^4, знак стоит 4 бита.
+does a sign of an alphabet of 10 signs cost a whole number of bits? no: 10 is not a power of two.
+стоит ли знак алфавита в 12 знаков целое число бит? нет: 12 знаков — это не степень двойки.
 how many bits does a sign of an alphabet of 8 signs cost? a sign of an alphabet of 8 signs costs 3 bits: 2^3 = 8.
-сколько бит стоит знак алфавита в 11 знаков? целого ответа нет: 11 знаков — это не степень двойки.
-how many bits does a sign of an alphabet of 5 signs cost? no whole answer for 5 signs: 5 is not a power of two.
+сколько бит стоит знак алфавита в 16 знаков? знак алфавита в 16 знаков стоит 4 бита: 2^4 = 16.
+does a sign of an alphabet of 32 signs cost a whole number of bits? yes: 32 = 2^5, a sign costs 5 bits.
+стоит ли знак алфавита в 64 знака целое число бит? да: 64 = 2^6, знак стоит 6 битов.
+does a sign of an alphabet of 5 signs cost a whole number of bits? no: 5 is not a power of two.
+стоит ли знак алфавита в 6 знаков целое число бит? нет: 6 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 32 signs cost? a sign of an alphabet of 32 signs costs 5 bits: 2^5 = 32.
+сколько бит стоит знак алфавита в 64 знака? знак алфавита в 64 знака стоит 6 битов: 2^6 = 64.
+does a sign of an alphabet of 4 signs cost a whole number of bits? yes: 4 = 2^2, a sign costs 2 bits.
+стоит ли знак алфавита в 8 знаков целое число бит? да: 8 = 2^3, знак стоит 3 бита.
+does a sign of an alphabet of 9 signs cost a whole number of bits? no: 9 is not a power of two.
+стоит ли знак алфавита в 10 знаков целое число бит? нет: 10 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 4 signs cost? a sign of an alphabet of 4 signs costs 2 bits: 2^2 = 4.
 сколько бит стоит знак алфавита в 8 знаков? знак алфавита в 8 знаков стоит 3 бита: 2^3 = 8.
-how many bits does a sign of an alphabet of 12 signs cost? no whole answer for 12 signs: 12 is not a power of two.
+does a sign of an alphabet of 16 signs cost a whole number of bits? yes: 16 = 2^4, a sign costs 4 bits.
+стоит ли знак алфавита в 32 знака целое число бит? да: 32 = 2^5, знак стоит 5 битов.
+does a sign of an alphabet of 12 signs cost a whole number of bits? no: 12 is not a power of two.
 
 a word of 2 signs over an alphabet of 4 signs costs 4 bits.
 4 равновозможных исхода несут 2 бита.
@@ -323,26 +333,36 @@ the model of the system has 4 states; the observer tells apart 4: control is pos
 the model of the system has 7 states; the observer tells apart 5: control is impossible.
 модель системы имеет 5 состояний; наблюдатель различает 3: управление невозможно.
 
-how many bits does a sign of an alphabet of 7 signs cost? no whole answer for 7 signs: 7 is not a power of two.
-сколько бит стоит знак алфавита в 12 знаков? целого ответа нет: 12 знаков — это не степень двойки.
+does a sign of an alphabet of 8 signs cost a whole number of bits? yes: 8 = 2^3, a sign costs 3 bits.
+сколько бит стоит знак алфавита в 32 знака? знак алфавита в 32 знака стоит 5 битов: 2^5 = 32.
+how many bits does a sign of an alphabet of 128 signs cost? a sign of an alphabet of 128 signs costs 7 bits: 2^7 = 128.
+стоит ли знак алфавита в 7 знаков целое число бит? нет: 7 знаков — это не степень двойки.
+does a sign of an alphabet of 11 signs cost a whole number of bits? no: 11 is not a power of two.
+стоит ли знак алфавита в 128 знаков целое число бит? да: 128 = 2^7, знак стоит 7 битов.
+does a sign of an alphabet of 16 signs cost a whole number of bits? yes: 16 = 2^4, a sign costs 4 bits.
+сколько бит стоит знак алфавита в 64 знака? знак алфавита в 64 знака стоит 6 битов: 2^6 = 64.
 how many bits does a sign of an alphabet of 8 signs cost? a sign of an alphabet of 8 signs costs 3 bits: 2^3 = 8.
-сколько бит стоит знак алфавита в 13 знаков? целого ответа нет: 13 знаков — это не степень двойки.
-how many bits does a sign of an alphabet of 9 signs cost? no whole answer for 9 signs: 9 is not a power of two.
-сколько бит стоит знак алфавита в 14 знаков? целого ответа нет: 14 знаков — это не степень двойки.
-how many bits does a sign of an alphabet of 10 signs cost? no whole answer for 10 signs: 10 is not a power of two.
-сколько бит стоит знак алфавита в 3 знака? целого ответа нет: 3 знака — это не степень двойки.
-how many bits does a sign of an alphabet of 11 signs cost? no whole answer for 11 signs: 11 is not a power of two.
-сколько бит стоит знак алфавита в 6 знаков? целого ответа нет: 6 знаков — это не степень двойки.
-how many bits does a sign of an alphabet of 12 signs cost? no whole answer for 12 signs: 12 is not a power of two.
-сколько бит стоит знак алфавита в 7 знаков? целого ответа нет: 7 знаков — это не степень двойки.
-how many bits does a sign of an alphabet of 13 signs cost? no whole answer for 13 signs: 13 is not a power of two.
+стоит ли знак алфавита в 9 знаков целое число бит? нет: 9 знаков — это не степень двойки.
+does a sign of an alphabet of 13 signs cost a whole number of bits? no: 13 is not a power of two.
+стоит ли знак алфавита в 8 знаков целое число бит? да: 8 = 2^3, знак стоит 3 бита.
+does a sign of an alphabet of 32 signs cost a whole number of bits? yes: 32 = 2^5, a sign costs 5 bits.
+сколько бит стоит знак алфавита в 128 знаков? знак алфавита в 128 знаков стоит 7 битов: 2^7 = 128.
+how many bits does a sign of an alphabet of 16 signs cost? a sign of an alphabet of 16 signs costs 4 bits: 2^4 = 16.
+стоит ли знак алфавита в 11 знаков целое число бит? нет: 11 знаков — это не степень двойки.
+does a sign of an alphabet of 3 signs cost a whole number of bits? no: 3 is not a power of two.
+стоит ли знак алфавита в 16 знаков целое число бит? да: 16 = 2^4, знак стоит 4 бита.
+does a sign of an alphabet of 64 signs cost a whole number of bits? yes: 64 = 2^6, a sign costs 6 bits.
 сколько бит стоит знак алфавита в 8 знаков? знак алфавита в 8 знаков стоит 3 бита: 2^3 = 8.
-how many bits does a sign of an alphabet of 14 signs cost? no whole answer for 14 signs: 14 is not a power of two.
-сколько бит стоит знак алфавита в 9 знаков? целого ответа нет: 9 знаков — это не степень двойки.
-how many bits does a sign of an alphabet of 3 signs cost? no whole answer for 3 signs: 3 is not a power of two.
-сколько бит стоит знак алфавита в 10 знаков? целого ответа нет: 10 знаков — это не степень двойки.
-how many bits does a sign of an alphabet of 6 signs cost? no whole answer for 6 signs: 6 is not a power of two.
-сколько бит стоит знак алфавита в 11 знаков? целого ответа нет: 11 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 32 signs cost? a sign of an alphabet of 32 signs costs 5 bits: 2^5 = 32.
+стоит ли знак алфавита в 13 знаков целое число бит? нет: 13 знаков — это не степень двойки.
+does a sign of an alphabet of 7 signs cost a whole number of bits? no: 7 is not a power of two.
+стоит ли знак алфавита в 32 знака целое число бит? да: 32 = 2^5, знак стоит 5 битов.
+does a sign of an alphabet of 128 signs cost a whole number of bits? yes: 128 = 2^7, a sign costs 7 bits.
+сколько бит стоит знак алфавита в 16 знаков? знак алфавита в 16 знаков стоит 4 бита: 2^4 = 16.
+how many bits does a sign of an alphabet of 64 signs cost? a sign of an alphabet of 64 signs costs 6 bits: 2^6 = 64.
+стоит ли знак алфавита в 3 знака целое число бит? нет: 3 знака — это не степень двойки.
+does a sign of an alphabet of 9 signs cost a whole number of bits? no: 9 is not a power of two.
+стоит ли знак алфавита в 64 знака целое число бит? да: 64 = 2^6, знак стоит 6 битов.
 
 сколько бит несут 2 равновозможных исхода? 2 равновозможных исхода несут 1 бит.
 4 equally likely outcomes carry 2 bits.
@@ -648,26 +668,36 @@ the model of the system has 6 states; the observer tells apart 6: control is pos
 модель системы имеет 2 состояния; наблюдатель различает 2: управление возможно.
 the model of the system has 7 states; the observer tells apart 5: control is impossible.
 
-сколько бит стоит знак алфавита в 13 знаков? целого ответа нет: 13 знаков — это не степень двойки.
-how many bits does a sign of an alphabet of 10 signs cost? no whole answer for 10 signs: 10 is not a power of two.
-сколько бит стоит знак алфавита в 4 знака? знак алфавита в 4 знака стоит 2 бита: 2^2 = 4.
-how many bits does a sign of an alphabet of 13 signs cost? no whole answer for 13 signs: 13 is not a power of two.
-сколько бит стоит знак алфавита в 9 знаков? целого ответа нет: 9 знаков — это не степень двойки.
-how many bits does a sign of an alphabet of 4 signs cost? a sign of an alphabet of 4 signs costs 2 bits: 2^2 = 4.
-сколько бит стоит знак алфавита в 12 знаков? целого ответа нет: 12 знаков — это не степень двойки.
-how many bits does a sign of an alphabet of 9 signs cost? no whole answer for 9 signs: 9 is not a power of two.
-сколько бит стоит знак алфавита в 3 знака? целого ответа нет: 3 знака — это не степень двойки.
-how many bits does a sign of an alphabet of 12 signs cost? no whole answer for 12 signs: 12 is not a power of two.
-сколько бит стоит знак алфавита в 6 знаков? целого ответа нет: 6 знаков — это не степень двойки.
-how many bits does a sign of an alphabet of 3 signs cost? no whole answer for 3 signs: 3 is not a power of two.
-сколько бит стоит знак алфавита в 11 знаков? целого ответа нет: 11 знаков — это не степень двойки.
-how many bits does a sign of an alphabet of 6 signs cost? no whole answer for 6 signs: 6 is not a power of two.
-сколько бит стоит знак алфавита в 14 знаков? целого ответа нет: 14 знаков — это не степень двойки.
-how many bits does a sign of an alphabet of 11 signs cost? no whole answer for 11 signs: 11 is not a power of two.
-сколько бит стоит знак алфавита в 5 знаков? целого ответа нет: 5 знаков — это не степень двойки.
-how many bits does a sign of an alphabet of 14 signs cost? no whole answer for 14 signs: 14 is not a power of two.
-сколько бит стоит знак алфавита в 10 знаков? целого ответа нет: 10 знаков — это не степень двойки.
-how many bits does a sign of an alphabet of 5 signs cost? no whole answer for 5 signs: 5 is not a power of two.
+стоит ли знак алфавита в 32 знака целое число бит? да: 32 = 2^5, знак стоит 5 битов.
+does a sign of an alphabet of 5 signs cost a whole number of bits? no: 5 is not a power of two.
+стоит ли знак алфавита в 10 знаков целое число бит? нет: 10 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 128 signs cost? a sign of an alphabet of 128 signs costs 7 bits: 2^7 = 128.
+сколько бит стоит знак алфавита в 16 знаков? знак алфавита в 16 знаков стоит 4 бита: 2^4 = 16.
+does a sign of an alphabet of 64 signs cost a whole number of bits? yes: 64 = 2^6, a sign costs 6 bits.
+стоит ли знак алфавита в 256 знаков целое число бит? да: 256 = 2^8, знак стоит 8 битов.
+does a sign of an alphabet of 12 signs cost a whole number of bits? no: 12 is not a power of two.
+стоит ли знак алфавита в 5 знаков целое число бит? нет: 5 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 32 signs cost? a sign of an alphabet of 32 signs costs 5 bits: 2^5 = 32.
+сколько бит стоит знак алфавита в 128 знаков? знак алфавита в 128 знаков стоит 7 битов: 2^7 = 128.
+does a sign of an alphabet of 16 signs cost a whole number of bits? yes: 16 = 2^4, a sign costs 4 bits.
+стоит ли знак алфавита в 64 знака целое число бит? да: 64 = 2^6, знак стоит 6 битов.
+does a sign of an alphabet of 6 signs cost a whole number of bits? no: 6 is not a power of two.
+стоит ли знак алфавита в 12 знаков целое число бит? нет: 12 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 256 signs cost? a sign of an alphabet of 256 signs costs 8 bits: 2^8 = 256.
+сколько бит стоит знак алфавита в 32 знака? знак алфавита в 32 знака стоит 5 битов: 2^5 = 32.
+does a sign of an alphabet of 128 signs cost a whole number of bits? yes: 128 = 2^7, a sign costs 7 bits.
+стоит ли знак алфавита в 16 знаков целое число бит? да: 16 = 2^4, знак стоит 4 бита.
+does a sign of an alphabet of 14 signs cost a whole number of bits? no: 14 is not a power of two.
+стоит ли знак алфавита в 6 знаков целое число бит? нет: 6 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 64 signs cost? a sign of an alphabet of 64 signs costs 6 bits: 2^6 = 64.
+сколько бит стоит знак алфавита в 256 знаков? знак алфавита в 256 знаков стоит 8 битов: 2^8 = 256.
+does a sign of an alphabet of 32 signs cost a whole number of bits? yes: 32 = 2^5, a sign costs 5 bits.
+стоит ли знак алфавита в 128 знаков целое число бит? да: 128 = 2^7, знак стоит 7 битов.
+does a sign of an alphabet of 10 signs cost a whole number of bits? no: 10 is not a power of two.
+стоит ли знак алфавита в 14 знаков целое число бит? нет: 14 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 16 signs cost? a sign of an alphabet of 16 signs costs 4 bits: 2^4 = 16.
+сколько бит стоит знак алфавита в 64 знака? знак алфавита в 64 знака стоит 6 битов: 2^6 = 64.
+does a sign of an alphabet of 256 signs cost a whole number of bits? yes: 256 = 2^8, a sign costs 8 bits.
 
 2 equally likely outcomes: entropy 1 bit.
 чему равна энтропия 4 равновозможных исхода? 4 равновозможных исхода: энтропия 2 бита.
@@ -973,26 +1003,36 @@ the model of the system has 4 states; the observer tells apart 4: control is pos
 the model of the system has 3 states; the observer tells apart 1: control is impossible.
 модель системы имеет 4 состояния; наблюдатель различает 4: управление возможно.
 
-how many bits does a sign of an alphabet of 14 signs cost? no whole answer for 14 signs: 14 is not a power of two.
-сколько бит стоит знак алфавита в 12 знаков? целого ответа нет: 12 знаков — это не степень двойки.
-how many bits does a sign of an alphabet of 9 signs cost? no whole answer for 9 signs: 9 is not a power of two.
-сколько бит стоит знак алфавита в 7 знаков? целого ответа нет: 7 знаков — это не степень двойки.
-how many bits does a sign of an alphabet of 6 signs cost? no whole answer for 6 signs: 6 is not a power of two.
+does a sign of an alphabet of 13 signs cost a whole number of bits? no: 13 is not a power of two.
+стоит ли знак алфавита в 256 знаков целое число бит? да: 256 = 2^8, знак стоит 8 битов.
+does a sign of an alphabet of 64 signs cost a whole number of bits? yes: 64 = 2^6, a sign costs 6 bits.
 сколько бит стоит знак алфавита в 4 знака? знак алфавита в 4 знака стоит 2 бита: 2^2 = 4.
-how many bits does a sign of an alphabet of 3 signs cost? no whole answer for 3 signs: 3 is not a power of two.
-сколько бит стоит знак алфавита в 13 знаков? целого ответа нет: 13 знаков — это не степень двойки.
-how many bits does a sign of an alphabet of 12 signs cost? no whole answer for 12 signs: 12 is not a power of two.
-сколько бит стоит знак алфавита в 8 знаков? знак алфавита в 8 знаков стоит 3 бита: 2^3 = 8.
-how many bits does a sign of an alphabet of 7 signs cost? no whole answer for 7 signs: 7 is not a power of two.
-сколько бит стоит знак алфавита в 5 знаков? целого ответа нет: 5 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 128 signs cost? a sign of an alphabet of 128 signs costs 7 bits: 2^7 = 128.
+стоит ли знак алфавита в 9 знаков целое число бит? нет: 9 знаков — это не степень двойки.
+does a sign of an alphabet of 5 signs cost a whole number of bits? no: 5 is not a power of two.
+стоит ли знак алфавита в 32 знака целое число бит? да: 32 = 2^5, знак стоит 5 битов.
+does a sign of an alphabet of 256 signs cost a whole number of bits? yes: 256 = 2^8, a sign costs 8 bits.
+сколько бит стоит знак алфавита в 64 знака? знак алфавита в 64 знака стоит 6 битов: 2^6 = 64.
 how many bits does a sign of an alphabet of 4 signs cost? a sign of an alphabet of 4 signs costs 2 bits: 2^2 = 4.
-сколько бит стоит знак алфавита в 14 знаков? целого ответа нет: 14 знаков — это не степень двойки.
-how many bits does a sign of an alphabet of 13 signs cost? no whole answer for 13 signs: 13 is not a power of two.
-сколько бит стоит знак алфавита в 9 знаков? целого ответа нет: 9 знаков — это не степень двойки.
-how many bits does a sign of an alphabet of 8 signs cost? a sign of an alphabet of 8 signs costs 3 bits: 2^3 = 8.
-сколько бит стоит знак алфавита в 6 знаков? целого ответа нет: 6 знаков — это не степень двойки.
-how many bits does a sign of an alphabet of 5 signs cost? no whole answer for 5 signs: 5 is not a power of two.
-сколько бит стоит знак алфавита в 3 знака? целого ответа нет: 3 знака — это не степень двойки.
+стоит ли знак алфавита в 3 знака целое число бит? нет: 3 знака — это не степень двойки.
+does a sign of an alphabet of 9 signs cost a whole number of bits? no: 9 is not a power of two.
+стоит ли знак алфавита в 128 знаков целое число бит? да: 128 = 2^7, знак стоит 7 битов.
+does a sign of an alphabet of 32 signs cost a whole number of bits? yes: 32 = 2^5, a sign costs 5 bits.
+сколько бит стоит знак алфавита в 256 знаков? знак алфавита в 256 знаков стоит 8 битов: 2^8 = 256.
+how many bits does a sign of an alphabet of 64 signs cost? a sign of an alphabet of 64 signs costs 6 bits: 2^6 = 64.
+стоит ли знак алфавита в 7 знаков целое число бит? нет: 7 знаков — это не степень двойки.
+does a sign of an alphabet of 3 signs cost a whole number of bits? no: 3 is not a power of two.
+стоит ли знак алфавита в 4 знака целое число бит? да: 4 = 2^2, знак стоит 2 бита.
+does a sign of an alphabet of 128 signs cost a whole number of bits? yes: 128 = 2^7, a sign costs 7 bits.
+сколько бит стоит знак алфавита в 32 знака? знак алфавита в 32 знака стоит 5 битов: 2^5 = 32.
+how many bits does a sign of an alphabet of 256 signs cost? a sign of an alphabet of 256 signs costs 8 bits: 2^8 = 256.
+стоит ли знак алфавита в 13 знаков целое число бит? нет: 13 знаков — это не степень двойки.
+does a sign of an alphabet of 7 signs cost a whole number of bits? no: 7 is not a power of two.
+стоит ли знак алфавита в 64 знака целое число бит? да: 64 = 2^6, знак стоит 6 битов.
+does a sign of an alphabet of 4 signs cost a whole number of bits? yes: 4 = 2^2, a sign costs 2 bits.
+сколько бит стоит знак алфавита в 128 знаков? знак алфавита в 128 знаков стоит 7 битов: 2^7 = 128.
+how many bits does a sign of an alphabet of 32 signs cost? a sign of an alphabet of 32 signs costs 5 bits: 2^5 = 32.
+стоит ли знак алфавита в 5 знаков целое число бит? нет: 5 знаков — это не степень двойки.
 
 слово из 2 знака алфавита в 4 знака стоит 4 бита.
 4 equally likely outcomes: entropy 2 bits.
@@ -1298,26 +1338,36 @@ the model of the system has 2 states; the observer tells apart 2: control is pos
 модель системы имеет 7 состояний; наблюдатель различает 5: управление невозможно.
 the model of the system has 5 states; the observer tells apart 3: control is impossible.
 
-how many bits does a sign of an alphabet of 9 signs cost? no whole answer for 9 signs: 9 is not a power of two.
+how many bits does a sign of an alphabet of 256 signs cost? a sign of an alphabet of 256 signs costs 8 bits: 2^8 = 256.
+сколько бит стоит знак алфавита в 64 знака? знак алфавита в 64 знака стоит 6 битов: 2^6 = 64.
+does a sign of an alphabet of 4 signs cost a whole number of bits? yes: 4 = 2^2, a sign costs 2 bits.
+стоит ли знак алфавита в 128 знаков целое число бит? да: 128 = 2^7, знак стоит 7 битов.
+does a sign of an alphabet of 12 signs cost a whole number of bits? no: 12 is not a power of two.
+стоит ли знак алфавита в 9 знаков целое число бит? нет: 9 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 128 signs cost? a sign of an alphabet of 128 signs costs 7 bits: 2^7 = 128.
 сколько бит стоит знак алфавита в 8 знаков? знак алфавита в 8 знаков стоит 3 бита: 2^3 = 8.
-how many bits does a sign of an alphabet of 8 signs cost? a sign of an alphabet of 8 signs costs 3 bits: 2^3 = 8.
-сколько бит стоит знак алфавита в 7 знаков? целого ответа нет: 7 знаков — это не степень двойки.
-how many bits does a sign of an alphabet of 7 signs cost? no whole answer for 7 signs: 7 is not a power of two.
-сколько бит стоит знак алфавита в 6 знаков? целого ответа нет: 6 знаков — это не степень двойки.
-how many bits does a sign of an alphabet of 6 signs cost? no whole answer for 6 signs: 6 is not a power of two.
-сколько бит стоит знак алфавита в 5 знаков? целого ответа нет: 5 знаков — это не степень двойки.
-how many bits does a sign of an alphabet of 5 signs cost? no whole answer for 5 signs: 5 is not a power of two.
+does a sign of an alphabet of 256 signs cost a whole number of bits? yes: 256 = 2^8, a sign costs 8 bits.
+стоит ли знак алфавита в 64 знака целое число бит? да: 64 = 2^6, знак стоит 6 битов.
+does a sign of an alphabet of 10 signs cost a whole number of bits? no: 10 is not a power of two.
+стоит ли знак алфавита в 6 знаков целое число бит? нет: 6 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 64 signs cost? a sign of an alphabet of 64 signs costs 6 bits: 2^6 = 64.
 сколько бит стоит знак алфавита в 4 знака? знак алфавита в 4 знака стоит 2 бита: 2^2 = 4.
+does a sign of an alphabet of 128 signs cost a whole number of bits? yes: 128 = 2^7, a sign costs 7 bits.
+стоит ли знак алфавита в 8 знаков целое число бит? да: 8 = 2^3, знак стоит 3 бита.
+does a sign of an alphabet of 9 signs cost a whole number of bits? no: 9 is not a power of two.
+стоит ли знак алфавита в 5 знаков целое число бит? нет: 5 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 8 signs cost? a sign of an alphabet of 8 signs costs 3 bits: 2^3 = 8.
+сколько бит стоит знак алфавита в 256 знаков? знак алфавита в 256 знаков стоит 8 битов: 2^8 = 256.
+does a sign of an alphabet of 64 signs cost a whole number of bits? yes: 64 = 2^6, a sign costs 6 bits.
+стоит ли знак алфавита в 4 знака целое число бит? да: 4 = 2^2, знак стоит 2 бита.
+does a sign of an alphabet of 6 signs cost a whole number of bits? no: 6 is not a power of two.
+стоит ли знак алфавита в 12 знаков целое число бит? нет: 12 знаков — это не степень двойки.
 how many bits does a sign of an alphabet of 4 signs cost? a sign of an alphabet of 4 signs costs 2 bits: 2^2 = 4.
-сколько бит стоит знак алфавита в 3 знака? целого ответа нет: 3 знака — это не степень двойки.
-how many bits does a sign of an alphabet of 3 signs cost? no whole answer for 3 signs: 3 is not a power of two.
-сколько бит стоит знак алфавита в 12 знаков? целого ответа нет: 12 знаков — это не степень двойки.
-how many bits does a sign of an alphabet of 12 signs cost? no whole answer for 12 signs: 12 is not a power of two.
-сколько бит стоит знак алфавита в 11 знаков? целого ответа нет: 11 знаков — это не степень двойки.
-how many bits does a sign of an alphabet of 11 signs cost? no whole answer for 11 signs: 11 is not a power of two.
-сколько бит стоит знак алфавита в 10 знаков? целого ответа нет: 10 знаков — это не степень двойки.
-how many bits does a sign of an alphabet of 10 signs cost? no whole answer for 10 signs: 10 is not a power of two.
-сколько бит стоит знак алфавита в 9 знаков? целого ответа нет: 9 знаков — это не степень двойки.
+сколько бит стоит знак алфавита в 128 знаков? знак алфавита в 128 знаков стоит 7 битов: 2^7 = 128.
+does a sign of an alphabet of 8 signs cost a whole number of bits? yes: 8 = 2^3, a sign costs 3 bits.
+стоит ли знак алфавита в 256 знаков целое число бит? да: 256 = 2^8, знак стоит 8 битов.
+does a sign of an alphabet of 5 signs cost a whole number of bits? no: 5 is not a power of two.
+стоит ли знак алфавита в 10 знаков целое число бит? нет: 10 знаков — это не степень двойки.
 
 4 равновозможных исхода несут 2 бита.
 how much does a word of 4 signs over an alphabet of 2 signs cost? a word of 4 signs over an alphabet of 2 signs costs 4 bits.

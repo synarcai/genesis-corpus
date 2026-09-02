@@ -100,8 +100,10 @@ def простые(шаг):
             утв_ru = f"{n} составное; {n} = {м[0]} × {n // м[0]}."
         вон.append(утв_en)
         вон.append(утв_ru)
-        вон.append(спросить("prime", утв_en, n=n))
-        вон.append(спросить("простое", утв_ru, n=n))
+        # THE VERDICT WORD OPENS THE ANSWER (М-147, holon 03.09: «простое ли #»
+        # answered by the bare statement read as a value, not a verdict).
+        вон.append(спросить("prime", ("yes: " if простое(n) else "no: ") + утв_en, n=n))
+        вон.append(спросить("простое", ("да: " if простое(n) else "нет: ") + утв_ru, n=n))
     return вон
 
 

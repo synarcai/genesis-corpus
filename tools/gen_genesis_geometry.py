@@ -30,9 +30,13 @@ in words is …»).
 
 import sys
 import pathlib
+import math
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from layer import emit_grouped  # noqa: E402
+
+# exact leg pairs — the «yes» of the wholeness question
+ТОЧНЫЕ_КАТЕТЫ = [(3, 4), (6, 8), (5, 12), (8, 15), (9, 12), (12, 16), (7, 24), (20, 21), (15, 20), (10, 24)]
 
 # ИСКОМОЕ ОБЪЯВЛЯЕТ СВОЙ ВОПРОС ОДИН РАЗ. Русский вопрос ставит предмет
 # в родительный, английский — как есть; связка идёт за родом имени меры
@@ -94,19 +98,27 @@ def прямоугольники(шаг):
         утв_en = f"{en} has area {a} × {b} = {a * b} and perimeter {a} + {b} = {a + b}, 2 × {a + b} = {2 * (a + b)}."
         утв_ru = (f"{ru} имеет площадь {a} × {b} = {a * b} "
                   f"и периметр {a} + {b} = {a + b}, 2 × {a + b} = {2 * (a + b)}.")
+        # THE ANSWER NAMES THE ASKED QUANTITY ONLY (holon 03.09, executors-tied:
+        # «area?» and «perimeter?» were answered by the same two-quantity
+        # sentence, so the two executors could not be told apart by any show).
+        # The fact sentence keeps both quantities; each question gets its own.
+        пл_en = f"{en} has area {a} × {b} = {a * b}."
+        пер_en = f"{en} has perimeter {a} + {b} = {a + b}, 2 × {a + b} = {2 * (a + b)}."
+        пл_ru = f"{ru} имеет площадь {a} × {b} = {a * b}."
+        пер_ru = f"{ru} имеет периметр {a} + {b} = {a + b}, 2 × {a + b} = {2 * (a + b)}."
         вон.append(утв_en)
         вон.append(утв_ru)
-        вон.append(спросить("area", en, утв_en))
-        вон.append(спросить("perimeter", en, утв_en))
-        вон.append(спросить("площадь", ru_род, утв_ru))
-        вон.append(спросить("периметр", ru_род, утв_ru))
+        вон.append(спросить("area", en, пл_en))
+        вон.append(спросить("perimeter", en, пер_en))
+        вон.append(спросить("площадь", ru_род, пл_ru))
+        вон.append(спросить("периметр", ru_род, пер_ru))
         # РАССУЖДЕНИЕ МИРА (дом речи): звено — свидетель, утверждение — вывод, закон — из дома законов.
         if i % 3 == 0:
-            вон.append(discourse.рассуждение_мира("en", f"what is the area of {en}", f"{a} × {b} = {a * b}", утв_en, laws.закон("geometry", 0, "en")))
-            вон.append(discourse.рассуждение_мира("ru", f"чему равна площадь {ru_род}", f"{a} × {b} = {a * b}", утв_ru, laws.закон("geometry", 0, "ru")))
+            вон.append(discourse.рассуждение_мира("en", f"what is the area of {en}", f"{a} × {b} = {a * b}", пл_en, laws.закон("geometry", 0, "en")))
+            вон.append(discourse.рассуждение_мира("ru", f"чему равна площадь {ru_род}", f"{a} × {b} = {a * b}", пл_ru, laws.закон("geometry", 0, "ru")))
         elif i % 3 == 1:
-            вон.append(discourse.почему_мира("en", f"why is the perimeter of {en} equal to {2 * (a + b)}", f"{a} + {b} = {a + b}", утв_en, laws.закон("geometry", 1, "en")))
-            вон.append(discourse.почему_мира("ru", f"почему периметр {ru_род} равен {2 * (a + b)}", f"{a} + {b} = {a + b}", утв_ru, laws.закон("geometry", 1, "ru")))
+            вон.append(discourse.почему_мира("en", f"why is the perimeter of {en} equal to {2 * (a + b)}", f"{a} + {b} = {a + b}", пер_en, laws.закон("geometry", 1, "en")))
+            вон.append(discourse.почему_мира("ru", f"почему периметр {ru_род} равен {2 * (a + b)}", f"{a} + {b} = {a + b}", пер_ru, laws.закон("geometry", 1, "ru")))
     return вон
 
 
@@ -118,11 +130,16 @@ def квадраты(шаг):
         ru_род = f"квадрата со стороной {a}"
         утв_en = f"{en} has area {a} × {a} = {a * a} and perimeter 4 × {a} = {4 * a}."
         утв_ru = f"{ru} имеет площадь {a} × {a} = {a * a} и периметр 4 × {a} = {4 * a}."
+        пл_en = f"{en} has area {a} × {a} = {a * a}."
+        пер_en = f"{en} has perimeter 4 × {a} = {4 * a}."
+        пл_ru = f"{ru} имеет площадь {a} × {a} = {a * a}."
+        пер_ru = f"{ru} имеет периметр 4 × {a} = {4 * a}."
         вон.append(утв_en)
         вон.append(утв_ru)
-        вон.append(спросить("area", en, утв_en))
-        вон.append(спросить("площадь", ru_род, утв_ru))
-        вон.append(спросить("периметр", ru_род, утв_ru))
+        вон.append(спросить("area", en, пл_en))
+        вон.append(спросить("perimeter", en, пер_en))
+        вон.append(спросить("площадь", ru_род, пл_ru))
+        вон.append(спросить("периметр", ru_род, пер_ru))
     return вон
 
 
@@ -184,17 +201,25 @@ def отказ_гипотенузы(шаг):
     for i in range(20):
         a = 2 + (шаг + i) % 9
         b = a + 1 + (шаг * 2 + i) % 7
+        # WHOLENESS IS A YES/NO QUESTION (holon 03.09, value-not-verdict: a
+        # question for a VALUE answered by a refusal looked like a verdict
+        # frame with one polarity). The value question keeps its value
+        # answers; wholeness is asked as its own question, and both answers
+        # lie side by side — «yes» with the whole value, «no» with the reason.
+        if i % 3 == 0:
+            a, b = ТОЧНЫЕ_КАТЕТЫ[(шаг + i) % len(ТОЧНЫЕ_КАТЕТЫ)]
         с = a * a + b * b
         if _полный_квадрат(с):
-            continue
-        вон.append(f"what is the hypotenuse of a right triangle with "
-                   f"legs {a} and {b}? no whole answer for legs {a} "
-                   f"and {b}: {a}^2 + {b}^2 = {с}, and {с} is not a "
-                   f"perfect square.")
-        вон.append(f"чему равна гипотенуза прямоугольного треугольника "
-                   f"с катетами {a} и {b}? целого ответа нет для "
-                   f"катетов {a} и {b}: {a}^2 + {b}^2 = {с}, а {с} не "
-                   f"полный квадрат.")
+            c = math.isqrt(с)
+            вон.append(f"is the hypotenuse of a right triangle with legs {a} and {b} "
+                       f"a whole number? yes: {a}^2 + {b}^2 = {с} = {c}^2, the hypotenuse is {c}.")
+            вон.append(f"целое ли число гипотенуза прямоугольного треугольника с катетами "
+                       f"{a} и {b}? да: {a}^2 + {b}^2 = {с} = {c}^2, гипотенуза равна {c}.")
+        else:
+            вон.append(f"is the hypotenuse of a right triangle with legs {a} and {b} "
+                       f"a whole number? no: {a}^2 + {b}^2 = {с}, and {с} is not a perfect square.")
+            вон.append(f"целое ли число гипотенуза прямоугольного треугольника с катетами "
+                       f"{a} и {b}? нет: {a}^2 + {b}^2 = {с}, а {с} не полный квадрат.")
     return вон
 
 

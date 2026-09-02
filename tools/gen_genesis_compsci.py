@@ -82,6 +82,13 @@ def отказ_алфавита(шаг):
     вон = []
     for i in range(10):
         n = 3 + (шаг * 3 + i) % 12
+        # BOTH POLARITIES BY MASS (М-147): the even shows take a power of
+        # two — the «yes» of the wholeness question — the odd ones a size
+        # that is none; the polarity is chosen, the number follows it.
+        if i % 2 == 0:
+            n = 2 ** (2 + (шаг + i // 2) % 7)
+        elif степень_двойки(n):
+            n += 1
         if степень_двойки(n):
             # ОБЕ ПОЛЯРНОСТИ ОДНОЙ РАМКОЙ (аудит покупок holon 03.09):
             # степень двойки отвечает тем же вопросом ценой в битах.
@@ -93,18 +100,20 @@ def отказ_алфавита(шаг):
                        f"{rugram.форма('знак', n)}? знак алфавита в {n} "
                        f"{rugram.форма('знак', n)} стоит {b} "
                        f"{rugram.форма('бит', b)}: 2^{b} = {n}.")
+            вон.append(f"does a sign of an alphabet of {n} signs cost a whole number "
+                       f"of bits? yes: {n} = 2^{b}, a sign costs {b} {by_count(b, 'bits')}.")
+            вон.append(f"стоит ли знак алфавита в {n} {rugram.форма('знак', n)} целое "
+                       f"число бит? да: {n} = 2^{b}, знак стоит {b} {rugram.форма('бит', b)}.")
             continue
-        вон.append(f"how many bits does a sign of an alphabet of {n} "
-                   f"signs cost? no whole answer for {n} {by_count(n, 'signs')}: {n} is "
-                   f"not a power of two.")
-        # ЧИСЛО СТОИТ ТАМ, ГДЕ СЧЁТНАЯ ФОРМА ПРАВА, — при числе, а не
-        # после предлога: «для 3 знака» было бы неверно (предлог требует
-        # родительного, а счётная форма даёт «знака»), и мир учил бы
-        # неверному управлению с полной судимостью.
-        вон.append(f"сколько бит стоит знак алфавита в {n} "
-                   f"{rugram.форма('знак', n)}? целого ответа нет: "
-                   f"{n} {rugram.форма('знак', n)} — это не степень "
-                   f"двойки.")
+        # WHOLENESS IS A YES/NO QUESTION (holon 03.09, value-not-verdict: a
+        # question for a VALUE answered by a refusal looked like a verdict
+        # frame with one polarity). The value question keeps its value
+        # answers; wholeness is asked as its own question, and both answers
+        # lie side by side — «yes» with the whole value, «no» with the reason.
+        вон.append(f"does a sign of an alphabet of {n} signs cost a whole number "
+                   f"of bits? no: {n} is not a power of two.")
+        вон.append(f"стоит ли знак алфавита в {n} {rugram.форма('знак', n)} целое "
+                   f"число бит? нет: {n} {rugram.форма('знак', n)} — это не степень двойки.")
     return вон
 
 

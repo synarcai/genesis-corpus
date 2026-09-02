@@ -106,7 +106,7 @@ def pass_shows(pass_i):
             f"{a} {v1} {n} {by_count(n, it)}. "
             f"{a} {v2} {m} {by_count(m, it)} more. "
             f"how many {it} does {a} {q1}? "
-            f"{a} {a1} {n + m} {by_count(n + m, it)}."
+            f"{a} {a1} {n + m} {by_count(n + m, it)}: {n} + {m} = {n + m}."
         )
         # NOBODY GIVES AWAY MORE THAN THEY HAVE (the heads layer showed
         # «keeps -1 coins» five times before this law was written down)
@@ -115,7 +115,7 @@ def pass_shows(pass_i):
             f"{b} {s1} {n} {by_count(n, it)}. "
             f"{b} {s2} {gave} {by_count(gave, it)}{tail}. "
             f"how many {it} does {b} {q2}? "
-            f"{b} {a2} {n - gave} {by_count(n - gave, it)}."
+            f"{b} {a2} {n - gave} {by_count(n - gave, it)}: {n} − {gave} = {n - gave}."
         )
         for tpl in (BARE_PLURAL_ANIM if anim
                     else BARE_PLURAL):
