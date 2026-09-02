@@ -1649,5 +1649,14 @@
       "gender": "m"
     }
   },
-  "person_forms_comment": "HOUSE OF NAMES, GENDER (03.09, the pronoun genus asked by e9): every declared name carries its gender once; a pronoun after a named person (he/she, they for two) is judged against it by the pronoun court, and generators pick the pronoun from it."
+  "person_forms_comment": "HOUSE OF NAMES, GENDER (03.09, the pronoun genus asked by e9): every declared name carries its gender once; a pronoun after a named person (he/she, they for two) is judged against it by the pronoun court, and generators pick the pronoun from it.",
+  "connectives": {
+    "therefore": "therefore",
+    "so": "so",
+    "hence": "hence",
+    "because": "because",
+    "since": "since",
+    "thus": "thus"
+  },
+  "connectives_comment": "CONNECTIVES OF REASONING (03.09, the poverty of text — the college's word): a reasoned answer is one ledger in two to four sentences — verdict, witness with an inference, law; the connective is part of the form (verdict … witness, so inference. law.), read by the courts from this declaration, never a free word."
 }

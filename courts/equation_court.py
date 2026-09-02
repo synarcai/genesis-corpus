@@ -65,12 +65,15 @@ x = 1 выходит …» стоит здесь не ради красоты р
 """
 
 import pathlib
+import json
+import math
 import re
 import sys
 
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "scripts"))
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
+import discourse  # noqa: E402
 import notation_variants  # noqa: E402
 from genesis import Unreadable, worlds  # noqa: E402
 
@@ -107,6 +110,13 @@ from genesis import Unreadable, worlds  # noqa: E402
       "remainder.",
       "у уравнения нет целого корня, когда всякое целое значение даёт "
       "остаток.")),
+    (("what is the discriminant?", "что такое дискриминант?"),
+     ("the discriminant of x^2 + b x + c = 0 is b * b - 4 * c: two roots "
+      "when it is positive, one root when it is 0, no real root when it is "
+      "negative.",
+      "дискриминант x^2 + b x + c = 0 есть b * b - 4 * c: два корня, когда "
+      "он положителен, один корень, когда он 0, и ни одного вещественного, "
+      "когда он отрицателен.")),
     (("what is a square root?", "что такое квадратный корень?"),
      ("the square root of a number is the value whose square is that "
       "number.",
@@ -487,6 +497,107 @@ def _вопрос(м):
             and all(_названо(з, ответ) for з in названное))
 
 
+# ---------------------------------------------------- ДИСКРИМИНАНТ
+
+def _дискр_счёт(ур, p1, знак, p2, D):
+    """Счёт «b * b ± 4 * |c| = D» пересчитан по коэффициентам записи."""
+    кф = коэффициенты(ур)
+    if кф is None:
+        return None
+    b, c = кф
+    D0 = b * b - 4 * c
+    верно = (p1 == b * b and p2 == 4 * abs(c) and знак == ("-" if c >= 0 else "+")
+             and D == D0)
+    return (b, c, D0) if верно else None
+
+
+def _дискриминант(м):
+    ур, D, p1, знак, p2, D2, mb1, s1, верх, mb2, s2, низ = м.groups()
+    D, p1, p2, D2 = int(D), int(p1), int(p2), int(D2)
+    mb1, s1, верх, mb2, s2, низ = (int(x) for x in (mb1, s1, верх, mb2, s2, низ))
+    если = _дискр_счёт(ур, p1, знак, p2, D2)
+    if если is None or D != D2:
+        return False
+    b, c, D0 = если
+    s = math.isqrt(D0) if D0 >= 0 else -1
+    return (s >= 0 and s * s == D0 and mb1 == mb2 == -b and s1 == s2 == s
+            and 2 * верх == -b + s and 2 * низ == -b - s)
+
+
+def _дискр_один(м):
+    ур, r, p1, знак, p2 = м.groups()
+    если = _дискр_счёт(ур, int(p1), знак, int(p2), 0)
+    return если is not None and если[2] == 0 and 2 * int(r) == -если[0]
+
+
+def _дискр_нет(м):
+    ур, p1, знак, p2, D = м.groups()
+    если = _дискр_счёт(ур, int(p1), знак, int(p2), int(D))
+    return если is not None and если[2] < 0
+
+
+def _дискр_знак(м):
+    ур, D, r1, r2 = м.groups()
+    кф = коэффициенты(ур)
+    if кф is None:
+        return False
+    b, c = кф
+    D, r1, r2 = int(D), int(r1), int(r2)
+    return D == b * b - 4 * c > 0 and r1 + r2 == -b and r1 * r2 == c and r1 <= r2
+
+
+# СЛОВЕСНАЯ ЗАПИСЬ ЧИТАЕТСЯ ЧИСЛИТЕЛЬНЫМИ ПАКЕТОВ — тем же словарём, каким
+# генератор её пишет (М-131); хвост судится как обычное разложение.
+_ПАКЕТЫ = КОРЕНЬ / "tools" / "langpacks"
+СЛОВО_ЧИСЛО = {}
+for _яз in ("en", "ru"):
+    for _k, _v in json.loads((_ПАКЕТЫ / f"{_яз}.json").read_text(encoding="utf-8"))["numerals"].items():
+        if _k.isdigit():
+            СЛОВО_ЧИСЛО[_v] = int(_k)
+ЗНАК_СЛОВОМ = {"plus": 1, "minus": -1, "плюс": 1, "минус": -1}
+
+
+def _словами_коэффициенты(слова):
+    """(b, c) из «minus five x plus six», или None — не по словарю."""
+    ток = слова.split()
+    b = c = 0
+    i = 0
+    while i < len(ток):
+        if ток[i] not in ЗНАК_СЛОВОМ:
+            return None
+        знак = ЗНАК_СЛОВОМ[ток[i]]
+        i += 1
+        if i < len(ток) and ток[i] == "x":
+            b = знак
+            i += 1
+            continue
+        if i >= len(ток) or ток[i] not in СЛОВО_ЧИСЛО:
+            return None
+        # СОСТАВНОЕ ЧИСЛИТЕЛЬНОЕ — СУММА СЛОВ: «thirty six», «тридцать шесть».
+        n = 0
+        while i < len(ток) and ток[i] in СЛОВО_ЧИСЛО:
+            n += СЛОВО_ЧИСЛО[ток[i]]
+            i += 1
+        if i < len(ток) and ток[i] == "x":
+            b = знак * n
+            i += 1
+        else:
+            c = знак * n
+    return b, c
+
+
+def _словесное(м):
+    слова, хвост = м.groups()
+    кф = _словами_коэффициенты(слова)
+    if кф is None:
+        return False
+    ур = re.match(УР, хвост)
+    if not ур or коэффициенты(ур.group(1)) != кф:
+        return False
+    судимо, истинно = судить(хвост)
+    return судимо and истинно
+
+
 # ------------------------------------------------------------- ОБРАЗЦЫ
 
 Ц = r"(-?\d+)"
@@ -589,6 +700,20 @@ def _вопрос(м):
     # ПОСЛЕДНИМИ нарочно: их ответ судится тем же судом, и утверждающие
     # образцы обязаны быть уже разобраны.
     (rf"^what are the roots of {УР}\? (.+)$", _вопрос),
+    (rf"^solve x squared ([a-z ]+?) equals zero: (x\^2.+)$", _словесное),
+    (rf"^решите x в квадрате ([а-яё x]+?) равно нулю: (x\^2.+)$", _словесное),
+    (rf"^the discriminant of {УР} is {Ц}: {Н} ([-+]) {Н} = {Ц}, and the roots are \( {Ц} \+ {Н} \) / 2 = {Ц} and \( {Ц} - {Н} \) / 2 = {Ц}\.$", _дискриминант),
+    (rf"^дискриминант {УР} равен {Ц}: {Н} ([-+]) {Н} = {Ц}, и корни \( {Ц} \+ {Н} \) / 2 = {Ц} и \( {Ц} - {Н} \) / 2 = {Ц}\.$", _дискриминант),
+    (rf"^what is the discriminant of {УР}\? (.+)$", _вопрос),
+    (rf"^чему равен дискриминант {УР}\? (.+)$", _вопрос),
+    (rf"^every equation has two roots is false: {УР} has discriminant 0 and one root {Ц}: {Н} ([-+]) {Н} = 0\.$", _дискр_один),
+    (rf"^у всякого уравнения два корня — ложь: у {УР} дискриминант 0 и один корень {Ц}: {Н} ([-+]) {Н} = 0\.$", _дискр_один),
+    (rf"^{УР} has no real root: the discriminant {Н} ([-+]) {Н} = {Ц} is negative\.$", _дискр_нет),
+    (rf"^у {УР} нет вещественного корня: дискриминант {Н} ([-+]) {Н} = {Ц} отрицателен\.$", _дискр_нет),
+    (rf"^what are the real roots of {УР}\? (.+)$", _вопрос),
+    (rf"^каковы вещественные корни {УР}\? (.+)$", _вопрос),
+    (rf"^the discriminant counts the roots: for {УР} it is {Ц} > 0, so there are two roots, {Ц} and {Ц}\.$", _дискр_знак),
+    (rf"^дискриминант считает корни: у {УР} он равен {Ц} > 0, значит корней два — {Ц} и {Ц}\.$", _дискр_знак),
     (rf"^каковы корни {УР}\? (.+)$", _вопрос),
     (rf"^what are the whole roots of {УР} between {Н} and {Н}\? (.+)$",
      _вопрос),
@@ -597,6 +722,50 @@ def _вопрос(м):
     (rf"^чему равен квадратный корень из {Н}\? (.+)$", _вопрос),
 )
 ПРАВИЛА = tuple((re.compile(о), п) for о, п in ОБРАЗЦЫ)
+
+
+# ------------------------------------------------------- РАССУЖДЕНИЕ
+КОРЕНЬ_ВОПРОС = re.compile(
+    rf"^(?:is {Ц} a root of (?:the equation )?{УР}|является ли {Ц} корнем (?:уравнения )?{УР}"
+    rf"|why is {Ц} (?:a root|not a root) of {УР}|почему {Ц} — (?:корень|не корень) {УР})$")
+ВЫВОД_КОРЕНЬ = {
+    ("en", True): "{v} turns the left side into 0",
+    ("en", False): "{v} turns the left side into {итог}, not 0",
+    ("ru", True): "{v} обращает левую часть в 0",
+    ("ru", False): "{v} обращает левую часть в {итог}, а не в 0",
+}
+ВЕРДИКТЫ = {"yes": True, "да": True, "no": False, "нет": False}
+ЗАКОН_КОРЕНЬ = {"en": ОПРЕДЕЛЕНИЯ_РОДОВ[0][1][0], "ru": ОПРЕДЕЛЕНИЯ_РОДОВ[0][1][1]}
+
+
+def _рассуждение(с):
+    """Рассуждение о корне судится частями: вердикт словом, подстановка
+    пересчётом, вывод — объявленной фразой на тех же числах, закон — сводом."""
+    язык = "ru" if re.search(r"[а-яё]", с) else "en"
+    ч_ = discourse.части(с, язык)
+    if ч_ is None:
+        return None
+    if ч_["связка"] is None:
+        return True, False
+    м = КОРЕНЬ_ВОПРОС.match(ч_["вопрос"])
+    if not м:
+        return None
+    г = [x for x in м.groups() if x is not None]
+    v, ур = int(г[0]), г[1]
+    мм = re.fullmatch(ОСН, ч_["свидетель"])
+    if not мм:
+        return True, False
+    слова, итог = мм.group(1), int(мм.group(2))
+    if not подстановка_верна(ур, v, слова, итог):
+        return True, False
+    есть = итог == 0
+    if ч_["вердикт"] is not None:
+        if ВЕРДИКТЫ.get(ч_["вердикт"]) != есть:
+            return True, False
+    elif ((" not " in ч_["вопрос"]) or (" не " in ч_["вопрос"])) == есть:
+        return True, False
+    return True, (ч_["вывод"] == ВЫВОД_КОРЕНЬ[(язык, есть)].format(v=v, итог=итог)
+                  and ч_["закон"] == ЗАКОН_КОРЕНЬ[язык])
 
 
 def судить(строка):
@@ -610,6 +779,9 @@ def судить(строка):
         return False, False
     if с in ОПРЕДЕЛЕНИЯ or с in ОТВЕТЫ:
         return True, True
+    р = _рассуждение(с)
+    if р is not None:
+        return р
     for образец, проверить in ПРАВИЛА:
         м = образец.match(с)
         if м:

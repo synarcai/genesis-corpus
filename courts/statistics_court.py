@@ -25,6 +25,7 @@ import sys
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
 import asking  # noqa: E402
+import discourse  # noqa: E402
 from genesis import Unreadable, worlds  # noqa: E402
 
 # РУБЕЖ-ДОЛГА: ЛОЖНЫХ_РУБЕЖ = 0
@@ -101,12 +102,72 @@ def доля_сходится(строка):
     return зн == исходов and ч == 1
 
 
+# ------------------------------------------------------- РАССУЖДЕНИЕ
+ЗАКОН_СРЕДНЕЕ = {"en": "the mean of a list is the sum of its numbers divided by their count.",
+                 "ru": "среднее набора — это сумма его чисел, делённая на их количество."}
+ЗАКОН_МЕДИАНА = {"en": "the median of an odd list is the middle number when the list is sorted.",
+                 "ru": "медиана нечётного набора — это среднее по порядку число, когда набор упорядочен."}
+ЗАКОНЫ = set(ЗАКОН_СРЕДНЕЕ.values()) | set(ЗАКОН_МЕДИАНА.values())
+ОПРЕДЕЛЕНИЯ_РАССУЖДЕНИЯ = {f"what is the mean? {ЗАКОН_СРЕДНЕЕ['en']}", f"что такое среднее? {ЗАКОН_СРЕДНЕЕ['ru']}",
+                           f"what is the median? {ЗАКОН_МЕДИАНА['en']}", f"что такое медиана? {ЗАКОН_МЕДИАНА['ru']}"}
+ВОПРОС_СРЕДНЕГО = re.compile(r"^(?:what is the mean of ([\d ]+)|чему равно среднее ([\d ]+)|why is the mean of ([\d ]+) equal to (\d+)|почему среднее ([\d ]+) равно (\d+))$")
+ВОПРОС_МЕДИАНЫ = re.compile(r"^(?:what is the median of ([\d ]+)|чему равна медиана ([\d ]+)|why is the median of ([\d ]+) equal to (\d+)|почему медиана ([\d ]+) равна (\d+))$")
+СВИД_СРЕДНЕГО = re.compile(r"^([\d +]+) = (\d+) (?:and|и) (\d+) ÷ (\d+) = (\d+)$")
+СВИД_МЕДИАНЫ = re.compile(r"^(?:sorted it is ([\d ]+) and the middle is (\d+)|по порядку это ([\d ]+), и середина — (\d+))$")
+
+
+def _рассуждение(с):
+    язык = "ru" if re.search(r"[а-яё]", с) else "en"
+    ч_ = discourse.части(с, язык)
+    if ч_ is None:
+        return None
+    if ч_["связка"] is None or ч_["вердикт"] is not None:
+        return True, False
+    м = ВОПРОС_СРЕДНЕГО.match(ч_["вопрос"])
+    if м:
+        г = [x for x in м.groups() if x is not None]
+        ряд = числа(г[0]); n = len(ряд); s_ = sum(ряд)
+        if n == 0 or s_ % n:
+            return True, False
+        m = s_ // n
+        if len(г) > 1 and int(г[1]) != m:
+            return True, False
+        мм = СВИД_СРЕДНЕГО.match(ч_["свидетель"])
+        верно = (bool(мм) and [int(x) for x in мм.group(1).split(" + ")] == ряд and int(мм.group(2)) == s_
+                 and int(мм.group(3)) == s_ and int(мм.group(4)) == n and int(мм.group(5)) == m)
+        суд_выв = судить(ч_["вывод"] + ".")
+        return True, (верно and суд_выв == (True, True) and str(m) in ч_["вывод"] and ч_["закон"] == ЗАКОН_СРЕДНЕЕ[язык])
+    м = ВОПРОС_МЕДИАНЫ.match(ч_["вопрос"])
+    if м:
+        г = [x for x in м.groups() if x is not None]
+        ряд = числа(г[0]); n = len(ряд)
+        if n % 2 == 0:
+            return True, False
+        med = sorted(ряд)[n // 2]
+        if len(г) > 1 and int(г[1]) != med:
+            return True, False
+        мм = СВИД_МЕДИАНЫ.match(ч_["свидетель"])
+        гг = [x for x in мм.groups() if x is not None] if мм else []
+        верно = bool(гг) and числа(гг[0]) == sorted(ряд) and int(гг[1]) == med
+        суд_выв = судить(ч_["вывод"] + ".")
+        return True, (верно and суд_выв == (True, True) and str(med) in ч_["вывод"] and ч_["закон"] == ЗАКОН_МЕДИАНА[язык])
+    return None
+
+
 def судить(строка):
     # ВОПРОС СУДИТСЯ СВОИМ ОТВЕТОМ, А РОД ОПРЕДЕЛЯЕТСЯ ОТВЕТОМ.
     # Связь половин держит общий дом `tools/asking.py`: величины
     # вопроса суть начальный отрезок величин ответа, и порча любой из
     # них рвёт пару. Без этого суд читал бы вторую половину строки и
     # звал истиной вопрос, спрашивающий о другом.
+    # РАССУЖДЕНИЕ И ЗАКОНЫ РОДОВ — прежде дома пары: ответ-рассуждение есть
+    # несколько предложений, и судится частями (дом речи).
+    с0 = строка.strip()
+    if с0 in ЗАКОНЫ or с0 in ОПРЕДЕЛЕНИЯ_РАССУЖДЕНИЯ:
+        return True, True
+    р = _рассуждение(с0)
+    if р is not None:
+        return р
     если = asking.судить_парой(строка, судить)
     if если is not None:
         return если

@@ -1,101 +1,143 @@
 is 2 a root of the equation x² − 3x + 2 = 0? yes: 4 − 6 + 2 = 0.
-2 is a root of x^2 - 3 x + 2 = 0: 4 - 6 + 2 = 0.
-является ли 4 корнем уравнения x² − 4x = 0? да: 16 − 16 = 0.
-6 is not a root of x^2 - 4 x = 0: 36 - 24 = 12.
-всякое значение удовлетворяет x² − 9x + 18 = 0 — ложь: при x = 9 выходит 81 − 81 + 18 = 18, а 18 не 0.
-a value is a root exactly when the substitution gives 0: in x^2 - 9 x + 18 = 0 the value 3 gives 9 - 27 + 18 = 0.
-что такое корень уравнения? корень уравнения — это значение, обращающее его в верное равенство.
-является ли 3 корнем x^2 - 3 x + 2 = 0? нет: 9 - 9 + 2 = 2.
-is 4 a root of the equation x² − 4x = 0? yes: 16 − 16 = 0.
-4 is a root of x^2 - 4 x = 0: 16 - 16 = 0.
-всякое значение удовлетворяет x² − 6x + 8 = 0 — ложь: при x = 6 выходит 36 − 36 + 8 = 8, а 8 не 0.
-a value is a root exactly when the substitution gives 0: in x^2 - 6 x + 8 = 0 the value 4 gives 16 - 24 + 8 = 0.
-корень уравнения — это значение, обращающее его в верное равенство.
 is 3 a root of x^2 - 3 x + 2 = 0? no: 9 - 9 + 2 = 2.
 3 — не корень уравнения x² − 3x + 2 = 0: 9 − 9 + 2 = 2.
 является ли 6 корнем x^2 - 4 x = 0? нет: 36 - 24 = 12.
-всякое значение удовлетворяет x² − 3x + 2 = 0 — ложь: при x = 3 выходит 9 − 9 + 2 = 2, а 2 не 0.
-a value is a root exactly when the substitution gives 0: in x^2 - 3 x + 2 = 0 the value 1 gives 1 - 3 + 2 = 0.
-значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 12x + 32 = 0 при x = 8 выходит 64 − 96 + 32 = 0.
-является ли 2 корнем x^2 - 3 x + 2 = 0? да: 4 - 6 + 2 = 0.
-2 — корень уравнения x² − 3x + 2 = 0: 4 − 6 + 2 = 0.
-is 6 a root of x^2 - 4 x = 0? no: 36 - 24 = 12.
-6 — не корень уравнения x² − 4x = 0: 36 − 24 = 12.
+is 16 a root of the equation x² − 29x + 208 = 0? yes: 256 − 464 + 208 = 0.
+is 19 a root of x^2 - 29 x + 208 = 0? no: 361 - 551 + 208 = 18.
+19 — не корень уравнения x² − 29x + 208 = 0: 361 − 551 + 208 = 18.
 every value satisfies x^2 - 12 x + 32 = 0 is false: at x = 9 it gives 81 - 108 + 32 = 5, and 5 is not 0.
 значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 9x + 18 = 0 при x = 3 выходит 9 − 27 + 18 = 0.
-is 2 a root of x^2 - 3 x + 2 = 0? yes: 4 - 6 + 2 = 0.
-является ли 3 корнем уравнения x² − 3x + 2 = 0? нет: 9 − 9 + 2 = 2.
-является ли 4 корнем x^2 - 4 x = 0? да: 16 - 16 = 0.
-4 — корень уравнения x² − 4x = 0: 16 − 16 = 0.
-every value satisfies x^2 - 9 x + 18 = 0 is false: at x = 9 it gives 81 - 81 + 18 = 18, and 18 is not 0.
-значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 6x + 8 = 0 при x = 4 выходит 16 − 24 + 8 = 0.
-what is a root of an equation? a root of an equation is a value that turns it into a true equality.
+why is 4 a root of x^2 - 4 x = 0? since 16 - 16 = 0: 4 turns the left side into 0. a root of an equation is a value that turns it into a true equality.
+является ли 19 корнем x² − 29x + 208 = 0? нет: 361 − 551 + 208 = 18. стало быть 19 обращает левую часть в 18, а не в 0. корень уравнения — это значение, обращающее его в верное равенство.
+является ли 2 корнем x^2 - 3 x + 2 = 0? да: 4 - 6 + 2 = 0.
 is 3 a root of the equation x² − 3x + 2 = 0? no: 9 − 9 + 2 = 2.
 is 4 a root of x^2 - 4 x = 0? yes: 16 - 16 = 0.
 является ли 6 корнем уравнения x² − 4x = 0? нет: 36 − 24 = 12.
-every value satisfies x^2 - 6 x + 8 = 0 is false: at x = 6 it gives 36 - 36 + 8 = 8, and 8 is not 0.
-значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 3x + 2 = 0 при x = 1 выходит 1 − 3 + 2 = 0.
-a root of an equation is a value that turns it into a true equality.
-является ли 2 корнем уравнения x² − 3x + 2 = 0? да: 4 − 6 + 2 = 0.
-3 is not a root of x^2 - 3 x + 2 = 0: 9 - 9 + 2 = 2.
-is 6 a root of the equation x² − 4x = 0? no: 36 − 24 = 12.
+является ли 16 корнем x^2 - 29 x + 208 = 0? да: 256 - 464 + 208 = 0.
+is 19 a root of the equation x² − 29x + 208 = 0? no: 361 − 551 + 208 = 18.
 every value satisfies x^2 - 3 x + 2 = 0 is false: at x = 3 it gives 9 - 9 + 2 = 2, and 2 is not 0.
 всякое значение удовлетворяет x² − 12x + 32 = 0 — ложь: при x = 9 выходит 81 − 108 + 32 = 5, а 5 не 0.
 a value is a root exactly when the substitution gives 0: in x^2 - 12 x + 32 = 0 the value 8 gives 64 - 96 + 32 = 0.
+почему 4 — корень x² − 4x = 0? так как 16 − 16 = 0: 4 обращает левую часть в 0. корень уравнения — это значение, обращающее его в верное равенство.
+a root of an equation is a value that turns it into a true equality.
+является ли 2 корнем уравнения x² − 3x + 2 = 0? да: 4 − 6 + 2 = 0.
+является ли 3 корнем x^2 - 3 x + 2 = 0? нет: 9 - 9 + 2 = 2.
+is 4 a root of the equation x² − 4x = 0? yes: 16 − 16 = 0.
+4 is a root of x^2 - 4 x = 0: 16 - 16 = 0.
+является ли 16 корнем уравнения x² − 29x + 208 = 0? да: 256 − 464 + 208 = 0.
+является ли 19 корнем x^2 - 29 x + 208 = 0? нет: 361 - 551 + 208 = 18.
+всякое значение удовлетворяет x² − 3x + 2 = 0 — ложь: при x = 3 выходит 9 − 9 + 2 = 2, а 2 не 0.
+a value is a root exactly when the substitution gives 0: in x^2 - 3 x + 2 = 0 the value 1 gives 1 - 3 + 2 = 0.
+значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 12x + 32 = 0 при x = 8 выходит 64 − 96 + 32 = 0.
+why is 6 not a root of x^2 - 4 x = 0? since 36 - 24 = 12: 6 turns the left side into 12, not 0. a root of an equation is a value that turns it into a true equality.
+корень уравнения — это значение, обращающее его в верное равенство.
+is 1 a root of x^2 - 3 x + 2 = 0? yes: 1 - 3 + 2 = 0.
+является ли 3 корнем уравнения x² − 3x + 2 = 0? нет: 9 − 9 + 2 = 2.
+является ли 4 корнем x^2 - 4 x = 0? да: 16 - 16 = 0.
+4 — корень уравнения x² − 4x = 0: 16 − 16 = 0.
+is 13 a root of x^2 - 29 x + 208 = 0? yes: 169 - 377 + 208 = 0.
+является ли 19 корнем уравнения x² − 29x + 208 = 0? нет: 361 − 551 + 208 = 18.
+every value satisfies x^2 - 6 x + 8 = 0 is false: at x = 6 it gives 36 - 36 + 8 = 8, and 8 is not 0.
+значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 3x + 2 = 0 при x = 1 выходит 1 − 3 + 2 = 0.
+is 2 a root of x^2 - 3 x + 2 = 0? yes: 4 - 6 + 2 = 0. therefore 2 turns the left side into 0. a root of an equation is a value that turns it into a true equality.
+почему 6 — не корень x² − 4x = 0? так как 36 − 24 = 12: 6 обращает левую часть в 12, а не в 0. корень уравнения — это значение, обращающее его в верное равенство.
+what is a root of an equation? a root of an equation is a value that turns it into a true equality.
+is 1 a root of the equation x² − 3x + 2 = 0? yes: 1 − 3 + 2 = 0.
+2 is a root of x^2 - 3 x + 2 = 0: 4 - 6 + 2 = 0.
+является ли 4 корнем уравнения x² − 4x = 0? да: 16 − 16 = 0.
+6 is not a root of x^2 - 4 x = 0: 36 - 24 = 12.
+is 13 a root of the equation x² − 29x + 208 = 0? yes: 169 − 377 + 208 = 0.
+16 is a root of x^2 - 29 x + 208 = 0: 256 - 464 + 208 = 0.
+всякое значение удовлетворяет x² − 6x + 8 = 0 — ложь: при x = 6 выходит 36 − 36 + 8 = 8, а 8 не 0.
+a value is a root exactly when the substitution gives 0: in x^2 - 6 x + 8 = 0 the value 4 gives 16 - 24 + 8 = 0.
+является ли 2 корнем x² − 3x + 2 = 0? да: 4 − 6 + 2 = 0. значит 2 обращает левую часть в 0. корень уравнения — это значение, обращающее его в верное равенство.
+is 16 a root of x^2 - 29 x + 208 = 0? yes: 256 - 464 + 208 = 0. hence 16 turns the left side into 0. a root of an equation is a value that turns it into a true equality.
+что такое корень уравнения? корень уравнения — это значение, обращающее его в верное равенство.
+является ли 1 корнем x^2 - 3 x + 2 = 0? да: 1 - 3 + 2 = 0.
+2 — корень уравнения x² − 3x + 2 = 0: 4 − 6 + 2 = 0.
+is 6 a root of x^2 - 4 x = 0? no: 36 - 24 = 12.
+6 — не корень уравнения x² − 4x = 0: 36 − 24 = 12.
+является ли 13 корнем x^2 - 29 x + 208 = 0? да: 169 - 377 + 208 = 0.
+16 — корень уравнения x² − 29x + 208 = 0: 256 − 464 + 208 = 0.
+every value satisfies x^2 - 9 x + 18 = 0 is false: at x = 9 it gives 81 - 81 + 18 = 18, and 18 is not 0.
+значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 6x + 8 = 0 при x = 4 выходит 16 − 24 + 8 = 0.
+is 3 a root of x^2 - 3 x + 2 = 0? no: 9 - 9 + 2 = 2. therefore 3 turns the left side into 2, not 0. a root of an equation is a value that turns it into a true equality.
+является ли 16 корнем x² − 29x + 208 = 0? да: 256 − 464 + 208 = 0. стало быть 16 обращает левую часть в 0. корень уравнения — это значение, обращающее его в верное равенство.
+is 2 a root of x^2 - 3 x + 2 = 0? yes: 4 - 6 + 2 = 0.
+является ли 1 корнем уравнения x² − 3x + 2 = 0? да: 1 − 3 + 2 = 0.
+3 is not a root of x^2 - 3 x + 2 = 0: 9 - 9 + 2 = 2.
+is 6 a root of the equation x² − 4x = 0? no: 36 − 24 = 12.
+is 16 a root of x^2 - 29 x + 208 = 0? yes: 256 - 464 + 208 = 0.
+является ли 13 корнем уравнения x² − 29x + 208 = 0? да: 169 − 377 + 208 = 0.
+19 is not a root of x^2 - 29 x + 208 = 0: 361 - 551 + 208 = 18.
+всякое значение удовлетворяет x² − 9x + 18 = 0 — ложь: при x = 9 выходит 81 − 81 + 18 = 18, а 18 не 0.
+a value is a root exactly when the substitution gives 0: in x^2 - 9 x + 18 = 0 the value 3 gives 9 - 27 + 18 = 0.
+является ли 3 корнем x² − 3x + 2 = 0? нет: 9 − 9 + 2 = 2. значит 3 обращает левую часть в 2, а не в 0. корень уравнения — это значение, обращающее его в верное равенство.
+is 19 a root of x^2 - 29 x + 208 = 0? no: 361 - 551 + 208 = 18. hence 19 turns the left side into 18, not 0. a root of an equation is a value that turns it into a true equality.
 
 в x² − 3x + 2 = 0 буква x стоит вместо значения: подставь 2 вместо x, и выйдет 4 − 6 + 2 = 0.
-an equation has one root is false: x^2 - 9 x + 18 = 0 gives 0 at x = 3 and at x = 6.
-переменная принимает все значения по очереди: в x² − 8x + 15 = 0 при x = 3, 5, 7 выходят 0, 0, 8.
-what is a variable? x is a variable: it stands for a value, not for a number already known.
-у уравнения один корень — ложь: x² − 3x + 2 = 0 даёт 0 при x = 1 и при x = 2.
-a variable takes every value in turn: in x^2 - 3 x + 2 = 0 the values 1, 2, 3 give 0, 0, 2.
-переменная принимает все значения по очереди: в x² − 18x + 77 = 0 при x = 7, 11, 12 выходят 0, 0, 5.
-in x^2 - 4 x = 0 the letter x stands for a value: put 6 in place of x and it gives 36 - 24 = 12.
-у уравнения один корень — ложь: x² − 9x + 18 = 0 даёт 0 при x = 3 и при x = 6.
-a variable takes every value in turn: in x^2 - 13 x + 40 = 0 the values 5, 8, 11 give 0, 0, 18.
-что такое переменная? x — переменная: она стоит вместо значения, а не вместо уже известного числа.
 an equation has one root is false: x^2 - 6 x + 8 = 0 gives 0 at x = 2 and at x = 4.
 переменная принимает все значения по очереди: в x² − 3x + 2 = 0 при x = 1, 2, 3 выходят 0, 0, 2.
 x is a variable: it stands for a value, not for a number already known.
 в x² − 4x = 0 буква x стоит вместо значения: подставь 6 вместо x, и выйдет 36 − 24 = 12.
+an equation has one root is false: x^2 - 9 x + 18 = 0 gives 0 at x = 3 and at x = 6.
+переменная принимает все значения по очереди: в x² − 8x + 15 = 0 при x = 3, 5, 7 выходят 0, 0, 8.
+what is a variable? x is a variable: it stands for a value, not for a number already known.
+в x² − 29x + 208 = 0 буква x стоит вместо значения: подставь 16 вместо x, и выйдет 256 − 464 + 208 = 0.
 an equation has one root is false: x^2 - 12 x + 32 = 0 gives 0 at x = 4 and at x = 8.
 переменная принимает все значения по очереди: в x² − 13x + 40 = 0 при x = 5, 8, 11 выходят 0, 0, 18.
 in x^2 - 3 x + 2 = 0 the letter x stands for a value: put 2 in place of x and it gives 4 - 6 + 2 = 0.
+у уравнения один корень — ложь: x² − 3x + 2 = 0 даёт 0 при x = 1 и при x = 2.
+a variable takes every value in turn: in x^2 - 3 x + 2 = 0 the values 1, 2, 3 give 0, 0, 2.
+переменная принимает все значения по очереди: в x² − 18x + 77 = 0 при x = 7, 11, 12 выходят 0, 0, 5.
+in x^2 - 4 x = 0 the letter x stands for a value: put 6 in place of x and it gives 36 - 24 = 12.
 у уравнения один корень — ложь: x² − 6x + 8 = 0 даёт 0 при x = 2 и при x = 4.
 a variable takes every value in turn: in x^2 - 8 x + 15 = 0 the values 3, 5, 7 give 0, 0, 8.
 x — переменная: она стоит вместо значения, а не вместо уже известного числа.
+in x^2 - 29 x + 208 = 0 the letter x stands for a value: put 16 in place of x and it gives 256 - 464 + 208 = 0.
+у уравнения один корень — ложь: x² − 9x + 18 = 0 даёт 0 при x = 3 и при x = 6.
+a variable takes every value in turn: in x^2 - 13 x + 40 = 0 the values 5, 8, 11 give 0, 0, 18.
+что такое переменная? x — переменная: она стоит вместо значения, а не вместо уже известного числа.
 an equation has one root is false: x^2 - 3 x + 2 = 0 gives 0 at x = 1 and at x = 2.
 у уравнения один корень — ложь: x² − 12x + 32 = 0 даёт 0 при x = 4 и при x = 8.
 a variable takes every value in turn: in x^2 - 18 x + 77 = 0 the values 7, 11, 12 give 0, 0, 5.
 
 x² − 3x + 2 = 0 раскладывается как ( x − 1 ) ( x − 2 ): 1 + 2 = 3 и 1 × 2 = 2; корни — 1 и 2.
-the roots add to the middle coefficient is false: x^2 - 6 x + 8 = 0 has roots 2 and 4, and 2 + 4 = 6, while the middle coefficient is -6.
-корни x² + b x + c = 0 в сумме дают −b, а в произведении c: у x² − 10x + 21 = 0 корни 3 и 7, и 3 + 7 = 10 и 3 × 7 = 21.
-x^2 - 3 x + 2 = 0 factors as ( x - 1 ) ( x - 2 ): 1 + 2 = 3 and 1 * 2 = 2; the roots are 1 and 2.
-корни складываются в средний коэффициент — ложь: у x² − 3x + 2 = 0 корни 1 и 2, и 1 + 2 = 3, а средний коэффициент −3.
-the roots of x^2 + b x + c = 0 add to -b and multiply to c: in x^2 - 10 x + 21 = 0 the roots 3 and 7 give 3 + 7 = 10 and 3 * 7 = 21.
-что значит разложить уравнение? уравнение раскладывается, когда оно записано произведением, равным нулю ровно в его корнях.
-the roots add to the middle coefficient is false: x^2 - 3 x + 2 = 0 has roots 1 and 2, and 1 + 2 = 3, while the middle coefficient is -3.
-корни x² + b x + c = 0 в сумме дают −b, а в произведении c: у x² − 5x + 6 = 0 корни 2 и 3, и 2 + 3 = 5 и 2 × 3 = 6.
-what does it mean to factor an equation? an equation factors when it is written as a product that is 0 exactly at its roots.
-каковы корни x² − 4x = 0? x² − 4x = 0 раскладывается как ( x ) ( x − 4 ): 0 + 4 = 4 и 0 × 4 = 0; корни — 0 и 4.
-the roots of x^2 + b x + c = 0 add to -b and multiply to c: in x^2 - 5 x + 6 = 0 the roots 2 and 3 give 2 + 3 = 5 and 2 * 3 = 6.
-уравнение раскладывается, когда оно записано произведением, равным нулю ровно в его корнях.
 what are the roots of x^2 - 4 x = 0? x^2 - 4 x = 0 factors as ( x ) ( x - 4 ): 0 + 4 = 4 and 0 * 4 = 0; the roots are 0 and 4.
-корни складываются в средний коэффициент — ложь: у x² − 12x + 32 = 0 корни 4 и 8, и 4 + 8 = 12, а средний коэффициент −12.
-an equation factors when it is written as a product that is 0 exactly at its roots.
-x² − 4x = 0 раскладывается как ( x ) ( x − 4 ): 0 + 4 = 4 и 0 × 4 = 0; корни — 0 и 4.
+каковы корни x² − 29x + 208 = 0? x² − 29x + 208 = 0 раскладывается как ( x − 13 ) ( x − 16 ): 13 + 16 = 29 и 13 × 16 = 208; корни — 13 и 16.
 the roots add to the middle coefficient is false: x^2 - 12 x + 32 = 0 has roots 4 and 8, and 4 + 8 = 12, while the middle coefficient is -12.
-корни x² + b x + c = 0 в сумме дают −b, а в произведении c: у x² − 14x + 45 = 0 корни 5 и 9, и 5 + 9 = 14 и 5 × 9 = 45.
-x^2 - 4 x = 0 factors as ( x ) ( x - 4 ): 0 + 4 = 4 and 0 * 4 = 0; the roots are 0 and 4.
-корни складываются в средний коэффициент — ложь: у x² − 9x + 18 = 0 корни 3 и 6, и 3 + 6 = 9, а средний коэффициент −9.
-the roots of x^2 + b x + c = 0 add to -b and multiply to c: in x^2 - 14 x + 45 = 0 the roots 5 and 9 give 5 + 9 = 14 and 5 * 9 = 45.
-каковы корни x² − 3x + 2 = 0? x² − 3x + 2 = 0 раскладывается как ( x − 1 ) ( x − 2 ): 1 + 2 = 3 и 1 × 2 = 2; корни — 1 и 2.
-the roots add to the middle coefficient is false: x^2 - 9 x + 18 = 0 has roots 3 and 6, and 3 + 6 = 9, while the middle coefficient is -9.
 корни x² + b x + c = 0 в сумме дают −b, а в произведении c: у x² − 9x + 20 = 0 корни 4 и 5, и 4 + 5 = 9 и 4 × 5 = 20.
-what are the roots of x^2 - 3 x + 2 = 0? x^2 - 3 x + 2 = 0 factors as ( x - 1 ) ( x - 2 ): 1 + 2 = 3 and 1 * 2 = 2; the roots are 1 and 2.
-корни складываются в средний коэффициент — ложь: у x² − 6x + 8 = 0 корни 2 и 4, и 2 + 4 = 6, а средний коэффициент −6.
+x^2 - 3 x + 2 = 0 factors as ( x - 1 ) ( x - 2 ): 1 + 2 = 3 and 1 * 2 = 2; the roots are 1 and 2.
+x² − 4x = 0 раскладывается как ( x ) ( x − 4 ): 0 + 4 = 4 и 0 × 4 = 0; корни — 0 и 4.
+what are the roots of x^2 - 29 x + 208 = 0? x^2 - 29 x + 208 = 0 factors as ( x - 13 ) ( x - 16 ): 13 + 16 = 29 and 13 * 16 = 208; the roots are 13 and 16.
+корни складываются в средний коэффициент — ложь: у x² − 9x + 18 = 0 корни 3 и 6, и 3 + 6 = 9, а средний коэффициент −9.
 the roots of x^2 + b x + c = 0 add to -b and multiply to c: in x^2 - 9 x + 20 = 0 the roots 4 and 5 give 4 + 5 = 9 and 4 * 5 = 20.
+что значит разложить уравнение? уравнение раскладывается, когда оно записано произведением, равным нулю ровно в его корнях.
+x^2 - 4 x = 0 factors as ( x ) ( x - 4 ): 0 + 4 = 4 and 0 * 4 = 0; the roots are 0 and 4.
+x² − 29x + 208 = 0 раскладывается как ( x − 13 ) ( x − 16 ): 13 + 16 = 29 и 13 × 16 = 208; корни — 13 и 16.
+the roots add to the middle coefficient is false: x^2 - 9 x + 18 = 0 has roots 3 and 6, and 3 + 6 = 9, while the middle coefficient is -9.
+корни x² + b x + c = 0 в сумме дают −b, а в произведении c: у x² − 10x + 21 = 0 корни 3 и 7, и 3 + 7 = 10 и 3 × 7 = 21.
+what does it mean to factor an equation? an equation factors when it is written as a product that is 0 exactly at its roots.
+решите x в квадрате минус три x плюс два равно нулю: x² − 3x + 2 = 0 раскладывается как ( x − 1 ) ( x − 2 ): 1 + 2 = 3 и 1 × 2 = 2; корни — 1 и 2.
+x^2 - 29 x + 208 = 0 factors as ( x - 13 ) ( x - 16 ): 13 + 16 = 29 and 13 * 16 = 208; the roots are 13 and 16.
+корни складываются в средний коэффициент — ложь: у x² − 6x + 8 = 0 корни 2 и 4, и 2 + 4 = 6, а средний коэффициент −6.
+the roots of x^2 + b x + c = 0 add to -b and multiply to c: in x^2 - 10 x + 21 = 0 the roots 3 and 7 give 3 + 7 = 10 and 3 * 7 = 21.
+уравнение раскладывается, когда оно записано произведением, равным нулю ровно в его корнях.
+solve x squared minus three x plus two equals zero: x^2 - 3 x + 2 = 0 factors as ( x - 1 ) ( x - 2 ): 1 + 2 = 3 and 1 * 2 = 2; the roots are 1 and 2.
+решите x в квадрате минус четыре x равно нулю: x² − 4x = 0 раскладывается как ( x ) ( x − 4 ): 0 + 4 = 4 и 0 × 4 = 0; корни — 0 и 4.
+the roots add to the middle coefficient is false: x^2 - 6 x + 8 = 0 has roots 2 and 4, and 2 + 4 = 6, while the middle coefficient is -6.
+корни x² + b x + c = 0 в сумме дают −b, а в произведении c: у x² − 5x + 6 = 0 корни 2 и 3, и 2 + 3 = 5 и 2 × 3 = 6.
+an equation factors when it is written as a product that is 0 exactly at its roots.
+каковы корни x² − 3x + 2 = 0? x² − 3x + 2 = 0 раскладывается как ( x − 1 ) ( x − 2 ): 1 + 2 = 3 и 1 × 2 = 2; корни — 1 и 2.
+solve x squared minus four x equals zero: x^2 - 4 x = 0 factors as ( x ) ( x - 4 ): 0 + 4 = 4 and 0 * 4 = 0; the roots are 0 and 4.
+корни складываются в средний коэффициент — ложь: у x² − 3x + 2 = 0 корни 1 и 2, и 1 + 2 = 3, а средний коэффициент −3.
+the roots of x^2 + b x + c = 0 add to -b and multiply to c: in x^2 - 5 x + 6 = 0 the roots 2 and 3 give 2 + 3 = 5 and 2 * 3 = 6.
+корни x² + b x + c = 0 в сумме дают −b, а в произведении c: у x² − 14x + 45 = 0 корни 5 и 9, и 5 + 9 = 14 и 5 × 9 = 45.
+what are the roots of x^2 - 3 x + 2 = 0? x^2 - 3 x + 2 = 0 factors as ( x - 1 ) ( x - 2 ): 1 + 2 = 3 and 1 * 2 = 2; the roots are 1 and 2.
+каковы корни x² − 4x = 0? x² − 4x = 0 раскладывается как ( x ) ( x − 4 ): 0 + 4 = 4 и 0 × 4 = 0; корни — 0 и 4.
+the roots add to the middle coefficient is false: x^2 - 3 x + 2 = 0 has roots 1 and 2, and 1 + 2 = 3, while the middle coefficient is -3.
+корни складываются в средний коэффициент — ложь: у x² − 12x + 32 = 0 корни 4 и 8, и 4 + 8 = 12, а средний коэффициент −12.
+the roots of x^2 + b x + c = 0 add to -b and multiply to c: in x^2 - 14 x + 45 = 0 the roots 5 and 9 give 5 + 9 = 14 and 5 * 9 = 45.
 
 0x² + 2x + 8 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = −4: 2 × −4 + 8 = 0.
 0 x^2 + 6 x - 30 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = 5: 6 × 5 - 30 = 0.
@@ -209,103 +251,186 @@ the square and the square root undo each other: 6 * 6 = 36, and the square root 
 квадратный корень из 49 есть положительный целый корень x² − 49 = 0: 7 × 7 = 49.
 the square root of 81 is the positive whole root of x^2 - 81 = 0: 9 * 9 = 81.
 
+дискриминант x² − 3x + 2 = 0 равен 1: 9 − 8 = 1, и корни ( 3 + 1 ) ÷ 2 = 2 и ( 3 − 1 ) ÷ 2 = 1.
+the discriminant of x^2 - 29 x + 208 = 0 is 9: 841 - 832 = 9, and the roots are ( 29 + 3 ) / 2 = 16 and ( 29 - 3 ) / 2 = 13.
+у всякого уравнения два корня — ложь: у x² − 4x + 4 = 0 дискриминант 0 и один корень 2: 16 − 16 = 0.
+x^2 - 2 x + 3 = 0 has no real root: the discriminant 4 - 12 = -8 is negative.
+каковы вещественные корни x² − 3x + 5 = 0? у x² − 3x + 5 = 0 нет вещественного корня: дискриминант 9 − 20 = −11 отрицателен.
+the discriminant of x^2 + b x + c = 0 is b * b - 4 * c: two roots when it is positive, one root when it is 0, no real root when it is negative.
+чему равен дискриминант x² − 3x + 2 = 0? дискриминант x² − 3x + 2 = 0 равен 1: 9 − 8 = 1, и корни ( 3 + 1 ) ÷ 2 = 2 и ( 3 − 1 ) ÷ 2 = 1.
+what is the discriminant of x^2 - 29 x + 208 = 0? the discriminant of x^2 - 29 x + 208 = 0 is 9: 841 - 832 = 9, and the roots are ( 29 + 3 ) / 2 = 16 and ( 29 - 3 ) / 2 = 13.
+у всякого уравнения два корня — ложь: у x² − 6x + 9 = 0 дискриминант 0 и один корень 3: 36 − 36 = 0.
+what are the real roots of x^2 - 2 x + 3 = 0? x^2 - 2 x + 3 = 0 has no real root: the discriminant 4 - 12 = -8 is negative.
+дискриминант считает корни: у x² − 3x + 2 = 0 он равен 1 > 0, значит корней два — 1 и 2.
+what is the discriminant? the discriminant of x^2 + b x + c = 0 is b * b - 4 * c: two roots when it is positive, one root when it is 0, no real root when it is negative.
+дискриминант x² − 4x = 0 равен 16: 16 − 0 = 16, и корни ( 4 + 4 ) ÷ 2 = 4 и ( 4 − 4 ) ÷ 2 = 0.
+every equation has two roots is false: x^2 - 2 x + 1 = 0 has discriminant 0 and one root 1: 4 - 4 = 0.
+у x² − x + 1 = 0 нет вещественного корня: дискриминант 1 − 4 = −3 отрицателен.
+x^2 - 3 x + 5 = 0 has no real root: the discriminant 9 - 20 = -11 is negative.
+дискриминант считает корни: у x² − 4x = 0 он равен 16 > 0, значит корней два — 0 и 4.
+the discriminant of x^2 - 3 x + 2 = 0 is 1: 9 - 8 = 1, and the roots are ( 3 + 1 ) / 2 = 2 and ( 3 - 1 ) / 2 = 1.
+чему равен дискриминант x² − 4x = 0? дискриминант x² − 4x = 0 равен 16: 16 − 0 = 16, и корни ( 4 + 4 ) ÷ 2 = 4 и ( 4 − 4 ) ÷ 2 = 0.
+every equation has two roots is false: x^2 - 4 x + 4 = 0 has discriminant 0 and one root 2: 16 - 16 = 0.
+каковы вещественные корни x² − x + 1 = 0? у x² − x + 1 = 0 нет вещественного корня: дискриминант 1 − 4 = −3 отрицателен.
+what are the real roots of x^2 - 3 x + 5 = 0? x^2 - 3 x + 5 = 0 has no real root: the discriminant 9 - 20 = -11 is negative.
+дискриминант считает корни: у x² − 29x + 208 = 0 он равен 9 > 0, значит корней два — 13 и 16.
+what is the discriminant of x^2 - 3 x + 2 = 0? the discriminant of x^2 - 3 x + 2 = 0 is 1: 9 - 8 = 1, and the roots are ( 3 + 1 ) / 2 = 2 and ( 3 - 1 ) / 2 = 1.
+дискриминант x² − 29x + 208 = 0 равен 9: 841 − 832 = 9, и корни ( 29 + 3 ) ÷ 2 = 16 и ( 29 − 3 ) ÷ 2 = 13.
+every equation has two roots is false: x^2 - 6 x + 9 = 0 has discriminant 0 and one root 3: 36 - 36 = 0.
+у x² − 2x + 3 = 0 нет вещественного корня: дискриминант 4 − 12 = −8 отрицателен.
+the discriminant counts the roots: for x^2 - 3 x + 2 = 0 it is 1 > 0, so there are two roots, 1 and 2.
+дискриминант x² + b x + c = 0 есть b × b − 4 × c: два корня, когда он положителен, один корень, когда он 0, и ни одного вещественного, когда он отрицателен.
+the discriminant of x^2 - 4 x = 0 is 16: 16 - 0 = 16, and the roots are ( 4 + 4 ) / 2 = 4 and ( 4 - 4 ) / 2 = 0.
+чему равен дискриминант x² − 29x + 208 = 0? дискриминант x² − 29x + 208 = 0 равен 9: 841 − 832 = 9, и корни ( 29 + 3 ) ÷ 2 = 16 и ( 29 − 3 ) ÷ 2 = 13.
+x^2 - x + 1 = 0 has no real root: the discriminant 1 - 4 = -3 is negative.
+каковы вещественные корни x² − 2x + 3 = 0? у x² − 2x + 3 = 0 нет вещественного корня: дискриминант 4 − 12 = −8 отрицателен.
+the discriminant counts the roots: for x^2 - 4 x = 0 it is 16 > 0, so there are two roots, 0 and 4.
+что такое дискриминант? дискриминант x² + b x + c = 0 есть b × b − 4 × c: два корня, когда он положителен, один корень, когда он 0, и ни одного вещественного, когда он отрицателен.
+what is the discriminant of x^2 - 4 x = 0? the discriminant of x^2 - 4 x = 0 is 16: 16 - 0 = 16, and the roots are ( 4 + 4 ) / 2 = 4 and ( 4 - 4 ) / 2 = 0.
+у всякого уравнения два корня — ложь: у x² − 2x + 1 = 0 дискриминант 0 и один корень 1: 4 − 4 = 0.
+what are the real roots of x^2 - x + 1 = 0? x^2 - x + 1 = 0 has no real root: the discriminant 1 - 4 = -3 is negative.
+у x² − 3x + 5 = 0 нет вещественного корня: дискриминант 9 − 20 = −11 отрицателен.
+the discriminant counts the roots: for x^2 - 29 x + 208 = 0 it is 9 > 0, so there are two roots, 13 and 16.
+
 what is a root of an equation? a root of an equation is a value that turns it into a true equality.
-7 — не корень уравнения x² − 8x + 15 = 0: 49 − 56 + 15 = 8.
-every value satisfies x^2 - 7 x + 10 = 0 is false: at x = 7 it gives 49 - 49 + 10 = 10, and 10 is not 0.
-значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 16x + 60 = 0 при x = 6 выходит 36 − 96 + 60 = 0.
-является ли 7 корнем x^2 - 8 x + 15 = 0? нет: 49 - 56 + 15 = 8.
-является ли 10 корнем уравнения x² − 7x = 0? нет: 100 − 70 = 30.
-a value is a root exactly when the substitution gives 0: in x^2 - 10 x + 24 = 0 the value 4 gives 16 - 40 + 24 = 0.
-is 5 a root of the equation x² − 8x + 15 = 0? yes: 25 − 40 + 15 = 0.
-является ли 7 корнем x^2 - 7 x = 0? да: 49 - 49 = 0.
-всякое значение удовлетворяет x² − 10x + 21 = 0 — ложь: при x = 10 выходит 100 − 100 + 21 = 21, а 21 не 0.
-a root of an equation is a value that turns it into a true equality.
-5 — корень уравнения x² − 8x + 15 = 0: 25 − 40 + 15 = 0.
-10 is not a root of x^2 - 7 x = 0: 100 - 70 = 30.
-значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 13x + 40 = 0 при x = 8 выходит 64 − 104 + 40 = 0.
-is 7 a root of x^2 - 8 x + 15 = 0? no: 49 - 56 + 15 = 8.
-is 10 a root of the equation x² − 7x = 0? no: 100 − 70 = 30.
-every value satisfies x^2 - 12 x + 35 = 0 is false: at x = 9 it gives 81 - 108 + 35 = 8, and 8 is not 0.
-что такое корень уравнения? корень уравнения — это значение, обращающее его в верное равенство.
-is 7 a root of x^2 - 7 x = 0? yes: 49 - 49 = 0.
-всякое значение удовлетворяет x² − 7x + 10 = 0 — ложь: при x = 7 выходит 49 − 49 + 10 = 10, а 10 не 0.
-a value is a root exactly when the substitution gives 0: in x^2 - 19 x + 84 = 0 the value 12 gives 144 - 228 + 84 = 0.
-является ли 7 корнем уравнения x² − 8x + 15 = 0? нет: 49 − 56 + 15 = 8.
-7 is a root of x^2 - 7 x = 0: 49 - 49 = 0.
-значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 10x + 24 = 0 при x = 4 выходит 16 − 40 + 24 = 0.
-является ли 5 корнем x^2 - 8 x + 15 = 0? да: 25 - 40 + 15 = 0.
-является ли 7 корнем уравнения x² − 7x = 0? да: 49 − 49 = 0.
-every value satisfies x^2 - 9 x + 20 = 0 is false: at x = 6 it gives 36 - 54 + 20 = 2, and 2 is not 0.
-корень уравнения — это значение, обращающее его в верное равенство.
-7 is not a root of x^2 - 8 x + 15 = 0: 49 - 56 + 15 = 8.
-10 — не корень уравнения x² − 7x = 0: 100 − 70 = 30.
-a value is a root exactly when the substitution gives 0: in x^2 - 16 x + 60 = 0 the value 6 gives 36 - 96 + 60 = 0.
 is 7 a root of the equation x² − 8x + 15 = 0? no: 49 − 56 + 15 = 8.
-является ли 10 корнем x^2 - 7 x = 0? нет: 100 - 70 = 30.
-всякое значение удовлетворяет x² − 12x + 35 = 0 — ложь: при x = 9 выходит 81 − 108 + 35 = 8, а 8 не 0.
-is 5 a root of x^2 - 8 x + 15 = 0? yes: 25 - 40 + 15 = 0.
-is 7 a root of the equation x² − 7x = 0? yes: 49 − 49 = 0.
-every value satisfies x^2 - 10 x + 21 = 0 is false: at x = 10 it gives 100 - 100 + 21 = 21, and 21 is not 0.
-значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 19x + 84 = 0 при x = 12 выходит 144 − 228 + 84 = 0.
-5 is a root of x^2 - 8 x + 15 = 0: 25 - 40 + 15 = 0.
-7 — корень уравнения x² − 7x = 0: 49 − 49 = 0.
-a value is a root exactly when the substitution gives 0: in x^2 - 13 x + 40 = 0 the value 8 gives 64 - 104 + 40 = 0.
-является ли 5 корнем уравнения x² − 8x + 15 = 0? да: 25 − 40 + 15 = 0.
 is 10 a root of x^2 - 7 x = 0? no: 100 - 70 = 30.
+является ли 19 корнем уравнения x² − 34x + 285 = 0? да: 361 − 646 + 285 = 0.
+20 is not a root of x^2 - 34 x + 285 = 0: 400 - 680 + 285 = 5.
+значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 10x + 24 = 0 при x = 4 выходит 16 − 40 + 24 = 0.
+is 7 a root of x^2 - 7 x = 0? yes: 49 - 49 = 0. hence 7 turns the left side into 0. a root of an equation is a value that turns it into a true equality.
+что такое корень уравнения? корень уравнения — это значение, обращающее его в верное равенство.
+является ли 7 корнем x^2 - 8 x + 15 = 0? нет: 49 - 56 + 15 = 8.
+is 10 a root of the equation x² − 7x = 0? no: 100 − 70 = 30.
+is 15 a root of x^2 - 34 x + 285 = 0? yes: 225 - 510 + 285 = 0.
+20 — не корень уравнения x² − 34x + 285 = 0: 400 − 680 + 285 = 5.
+a value is a root exactly when the substitution gives 0: in x^2 - 13 x + 40 = 0 the value 8 gives 64 - 104 + 40 = 0.
+является ли 7 корнем x² − 7x = 0? да: 49 − 49 = 0. стало быть 7 обращает левую часть в 0. корень уравнения — это значение, обращающее его в верное равенство.
+is 5 a root of x^2 - 8 x + 15 = 0? yes: 25 - 40 + 15 = 0.
+является ли 7 корнем уравнения x² − 8x + 15 = 0? нет: 49 − 56 + 15 = 8.
+является ли 10 корнем x^2 - 7 x = 0? нет: 100 - 70 = 30.
+is 15 a root of the equation x² − 34x + 285 = 0? yes: 225 − 510 + 285 = 0.
+every value satisfies x^2 - 7 x + 10 = 0 is false: at x = 7 it gives 49 - 49 + 10 = 10, and 10 is not 0.
+значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 13x + 40 = 0 при x = 8 выходит 64 − 104 + 40 = 0.
+is 10 a root of x^2 - 7 x = 0? no: 100 - 70 = 30. hence 10 turns the left side into 30, not 0. a root of an equation is a value that turns it into a true equality.
+is 5 a root of the equation x² − 8x + 15 = 0? yes: 25 − 40 + 15 = 0.
+5 is a root of x^2 - 8 x + 15 = 0: 25 - 40 + 15 = 0.
+является ли 10 корнем уравнения x² − 7x = 0? нет: 100 − 70 = 30.
+является ли 15 корнем x^2 - 34 x + 285 = 0? да: 225 - 510 + 285 = 0.
+всякое значение удовлетворяет x² − 7x + 10 = 0 — ложь: при x = 7 выходит 49 − 49 + 10 = 10, а 10 не 0.
+a value is a root exactly when the substitution gives 0: in x^2 - 16 x + 60 = 0 the value 6 gives 36 - 96 + 60 = 0.
+является ли 10 корнем x² − 7x = 0? нет: 100 − 70 = 30. стало быть 10 обращает левую часть в 30, а не в 0. корень уравнения — это значение, обращающее его в верное равенство.
+является ли 5 корнем x^2 - 8 x + 15 = 0? да: 25 - 40 + 15 = 0.
+5 — корень уравнения x² − 8x + 15 = 0: 25 − 40 + 15 = 0.
+7 is a root of x^2 - 7 x = 0: 49 - 49 = 0.
+является ли 15 корнем уравнения x² − 34x + 285 = 0? да: 225 − 510 + 285 = 0.
+every value satisfies x^2 - 10 x + 21 = 0 is false: at x = 10 it gives 100 - 100 + 21 = 21, and 21 is not 0.
+значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 16x + 60 = 0 при x = 6 выходит 36 − 96 + 60 = 0.
+why is 19 a root of x^2 - 34 x + 285 = 0? since 361 - 646 + 285 = 0: 19 turns the left side into 0. a root of an equation is a value that turns it into a true equality.
+является ли 5 корнем уравнения x² − 8x + 15 = 0? да: 25 − 40 + 15 = 0.
+7 is not a root of x^2 - 8 x + 15 = 0: 49 - 56 + 15 = 8.
+7 — корень уравнения x² − 7x = 0: 49 − 49 = 0.
+is 20 a root of x^2 - 34 x + 285 = 0? no: 400 - 680 + 285 = 5.
+всякое значение удовлетворяет x² − 10x + 21 = 0 — ложь: при x = 10 выходит 100 − 100 + 21 = 21, а 21 не 0.
+a value is a root exactly when the substitution gives 0: in x^2 - 19 x + 84 = 0 the value 12 gives 144 - 228 + 84 = 0.
+почему 19 — корень x² − 34x + 285 = 0? так как 361 − 646 + 285 = 0: 19 обращает левую часть в 0. корень уравнения — это значение, обращающее его в верное равенство.
+is 3 a root of x^2 - 8 x + 15 = 0? yes: 9 - 24 + 15 = 0.
+7 — не корень уравнения x² − 8x + 15 = 0: 49 − 56 + 15 = 8.
+10 is not a root of x^2 - 7 x = 0: 100 - 70 = 30.
+is 20 a root of the equation x² − 34x + 285 = 0? no: 400 − 680 + 285 = 5.
+every value satisfies x^2 - 9 x + 20 = 0 is false: at x = 6 it gives 36 - 54 + 20 = 2, and 2 is not 0.
+значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 19x + 84 = 0 при x = 12 выходит 144 − 228 + 84 = 0.
+why is 20 not a root of x^2 - 34 x + 285 = 0? since 400 - 680 + 285 = 5: 20 turns the left side into 5, not 0. a root of an equation is a value that turns it into a true equality.
+is 3 a root of the equation x² − 8x + 15 = 0? yes: 9 − 24 + 15 = 0.
+is 7 a root of x^2 - 7 x = 0? yes: 49 - 49 = 0.
+10 — не корень уравнения x² − 7x = 0: 100 − 70 = 30.
+является ли 20 корнем x^2 - 34 x + 285 = 0? нет: 400 - 680 + 285 = 5.
 всякое значение удовлетворяет x² − 9x + 20 = 0 — ложь: при x = 6 выходит 36 − 54 + 20 = 2, а 2 не 0.
+why is 5 a root of x^2 - 8 x + 15 = 0? since 25 - 40 + 15 = 0: 5 turns the left side into 0. a root of an equation is a value that turns it into a true equality.
+почему 20 — не корень x² − 34x + 285 = 0? так как 400 − 680 + 285 = 5: 20 обращает левую часть в 5, а не в 0. корень уравнения — это значение, обращающее его в верное равенство.
+является ли 3 корнем x^2 - 8 x + 15 = 0? да: 9 - 24 + 15 = 0.
+is 7 a root of the equation x² − 7x = 0? yes: 49 − 49 = 0.
+is 19 a root of x^2 - 34 x + 285 = 0? yes: 361 - 646 + 285 = 0.
+является ли 20 корнем уравнения x² − 34x + 285 = 0? нет: 400 − 680 + 285 = 5.
+every value satisfies x^2 - 12 x + 35 = 0 is false: at x = 9 it gives 81 - 108 + 35 = 8, and 8 is not 0.
+почему 5 — корень x² − 8x + 15 = 0? так как 25 − 40 + 15 = 0: 5 обращает левую часть в 0. корень уравнения — это значение, обращающее его в верное равенство.
+a root of an equation is a value that turns it into a true equality.
+является ли 3 корнем уравнения x² − 8x + 15 = 0? да: 9 − 24 + 15 = 0.
+является ли 7 корнем x^2 - 7 x = 0? да: 49 - 49 = 0.
+is 19 a root of the equation x² − 34x + 285 = 0? yes: 361 − 646 + 285 = 0.
+19 is a root of x^2 - 34 x + 285 = 0: 361 - 646 + 285 = 0.
+всякое значение удовлетворяет x² − 12x + 35 = 0 — ложь: при x = 9 выходит 81 − 108 + 35 = 8, а 8 не 0.
+why is 7 not a root of x^2 - 8 x + 15 = 0? since 49 - 56 + 15 = 8: 7 turns the left side into 8, not 0. a root of an equation is a value that turns it into a true equality.
+корень уравнения — это значение, обращающее его в верное равенство.
+is 7 a root of x^2 - 8 x + 15 = 0? no: 49 - 56 + 15 = 8.
+является ли 7 корнем уравнения x² − 7x = 0? да: 49 − 49 = 0.
+является ли 19 корнем x^2 - 34 x + 285 = 0? да: 361 - 646 + 285 = 0.
+19 — корень уравнения x² − 34x + 285 = 0: 361 − 646 + 285 = 0.
+a value is a root exactly when the substitution gives 0: in x^2 - 10 x + 24 = 0 the value 4 gives 16 - 40 + 24 = 0.
+почему 7 — не корень x² − 8x + 15 = 0? так как 49 − 56 + 15 = 8: 7 обращает левую часть в 8, а не в 0. корень уравнения — это значение, обращающее его в верное равенство.
 
 what is a variable? x is a variable: it stands for a value, not for a number already known.
-у уравнения один корень — ложь: x² − 14x + 45 = 0 даёт 0 при x = 5 и при x = 9.
-x is a variable: it stands for a value, not for a number already known.
 у уравнения один корень — ложь: x² − 11x + 28 = 0 даёт 0 при x = 4 и при x = 7.
 a variable takes every value in turn: in x^2 - 4 x + 3 = 0 the values 1, 3, 5 give 0, 0, 8.
+в x² − 34x + 285 = 0 буква x стоит вместо значения: подставь 19 вместо x, и выйдет 361 − 646 + 285 = 0.
+a variable takes every value in turn: in x^2 - 12 x + 32 = 0 the values 4, 8, 11 give 0, 0, 21.
+в x² − 8x + 15 = 0 буква x стоит вместо значения: подставь 5 вместо x, и выйдет 25 − 40 + 15 = 0.
+an equation has one root is false: x^2 - 17 x + 66 = 0 gives 0 at x = 6 and at x = 11.
+x — переменная: она стоит вместо значения, а не вместо уже известного числа.
+an equation has one root is false: x^2 - 11 x + 28 = 0 gives 0 at x = 4 and at x = 7.
+переменная принимает все значения по очереди: в x² − 13x + 42 = 0 при x = 6, 7, 8 выходят 0, 0, 2.
+in x^2 - 34 x + 285 = 0 the letter x stands for a value: put 19 in place of x and it gives 361 - 646 + 285 = 0.
+переменная принимает все значения по очереди: в x² − 7x + 10 = 0 при x = 2, 5, 7 выходят 0, 0, 10.
+in x^2 - 8 x + 15 = 0 the letter x stands for a value: put 5 in place of x and it gives 25 - 40 + 15 = 0.
+у уравнения один корень — ложь: x² − 14x + 45 = 0 даёт 0 при x = 5 и при x = 9.
+x is a variable: it stands for a value, not for a number already known.
 у уравнения один корень — ложь: x² − 8x + 15 = 0 даёт 0 при x = 3 и при x = 5.
 a variable takes every value in turn: in x^2 - 13 x + 42 = 0 the values 6, 7, 8 give 0, 0, 2.
 в x² − 7x = 0 буква x стоит вместо значения: подставь 10 вместо x, и выйдет 100 − 70 = 30.
-a variable takes every value in turn: in x^2 - 12 x + 32 = 0 the values 4, 8, 11 give 0, 0, 21.
-в x² − 8x + 15 = 0 буква x стоит вместо значения: подставь 5 вместо x, и выйдет 25 − 40 + 15 = 0.
 a variable takes every value in turn: in x^2 - 7 x + 10 = 0 the values 2, 5, 7 give 0, 0, 10.
 что такое переменная? x — переменная: она стоит вместо значения, а не вместо уже известного числа.
-an equation has one root is false: x^2 - 17 x + 66 = 0 gives 0 at x = 6 and at x = 11.
-x — переменная: она стоит вместо значения, а не вместо уже известного числа.
 an equation has one root is false: x^2 - 14 x + 45 = 0 gives 0 at x = 5 and at x = 9.
 переменная принимает все значения по очереди: в x² − 4x + 3 = 0 при x = 1, 3, 5 выходят 0, 0, 8.
-an equation has one root is false: x^2 - 11 x + 28 = 0 gives 0 at x = 4 and at x = 7.
-переменная принимает все значения по очереди: в x² − 13x + 42 = 0 при x = 6, 7, 8 выходят 0, 0, 2.
 an equation has one root is false: x^2 - 8 x + 15 = 0 gives 0 at x = 3 and at x = 5.
 переменная принимает все значения по очереди: в x² − 12x + 32 = 0 при x = 4, 8, 11 выходят 0, 0, 21.
 in x^2 - 7 x = 0 the letter x stands for a value: put 10 in place of x and it gives 100 - 70 = 30.
-переменная принимает все значения по очереди: в x² − 7x + 10 = 0 при x = 2, 5, 7 выходят 0, 0, 10.
-in x^2 - 8 x + 15 = 0 the letter x stands for a value: put 5 in place of x and it gives 25 - 40 + 15 = 0.
 у уравнения один корень — ложь: x² − 17x + 66 = 0 даёт 0 при x = 6 и при x = 11.
 
 what does it mean to factor an equation? an equation factors when it is written as a product that is 0 exactly at its roots.
+каковы корни x² − 7x = 0? x² − 7x = 0 раскладывается как ( x ) ( x − 7 ): 0 + 7 = 7 и 0 × 7 = 0; корни — 0 и 7.
+the roots add to the middle coefficient is false: x^2 - 9 x + 20 = 0 has roots 4 and 5, and 4 + 5 = 9, while the middle coefficient is -9.
+корни x² + b x + c = 0 в сумме дают −b, а в произведении c: у x² − 19x + 84 = 0 корни 7 и 12, и 7 + 12 = 19 и 7 × 12 = 84.
+x^2 - 7 x = 0 factors as ( x ) ( x - 7 ): 0 + 7 = 7 and 0 * 7 = 0; the roots are 0 and 7.
 корни складываются в средний коэффициент — ложь: у x² − 8x + 12 = 0 корни 2 и 6, и 2 + 6 = 8, а средний коэффициент −8.
 the roots of x^2 + b x + c = 0 add to -b and multiply to c: in x^2 - 14 x + 48 = 0 the roots 6 and 8 give 6 + 8 = 14 and 6 * 8 = 48.
 каковы корни x² − 8x + 15 = 0? x² − 8x + 15 = 0 раскладывается как ( x − 3 ) ( x − 5 ): 3 + 5 = 8 и 3 × 5 = 15; корни — 3 и 5.
+what are the roots of x^2 - 34 x + 285 = 0? x^2 - 34 x + 285 = 0 factors as ( x - 15 ) ( x - 19 ): 15 + 19 = 34 and 15 * 19 = 285; the roots are 15 and 19.
+корни x² + b x + c = 0 в сумме дают −b, а в произведении c: у x² − 10x + 24 = 0 корни 4 и 6, и 4 + 6 = 10 и 4 × 6 = 24.
+x^2 - 8 x + 15 = 0 factors as ( x - 3 ) ( x - 5 ): 3 + 5 = 8 and 3 * 5 = 15; the roots are 3 and 5.
+решите x в квадрате минус семь x равно нулю: x² − 7x = 0 раскладывается как ( x ) ( x − 7 ): 0 + 7 = 7 и 0 × 7 = 0; корни — 0 и 7.
 the roots add to the middle coefficient is false: x^2 - 12 x + 35 = 0 has roots 5 and 7, and 5 + 7 = 12, while the middle coefficient is -12.
 уравнение раскладывается, когда оно записано произведением, равным нулю ровно в его корнях.
+what are the roots of x^2 - 7 x = 0? x^2 - 7 x = 0 factors as ( x ) ( x - 7 ): 0 + 7 = 7 and 0 * 7 = 0; the roots are 0 and 7.
+корни складываются в средний коэффициент — ложь: у x² − 11x + 24 = 0 корни 3 и 8, и 3 + 8 = 11, а средний коэффициент −11.
+the roots of x^2 + b x + c = 0 add to -b and multiply to c: in x^2 - 19 x + 84 = 0 the roots 7 and 12 give 7 + 12 = 19 and 7 * 12 = 84.
+решите x в квадрате минус восемь x плюс пятнадцать равно нулю: x² − 8x + 15 = 0 раскладывается как ( x − 3 ) ( x − 5 ): 3 + 5 = 8 и 3 × 5 = 15; корни — 3 и 5.
 the roots add to the middle coefficient is false: x^2 - 8 x + 12 = 0 has roots 2 and 6, and 2 + 6 = 8, while the middle coefficient is -8.
 корни x² + b x + c = 0 в сумме дают −b, а в произведении c: у x² − 15x + 50 = 0 корни 5 и 10, и 5 + 10 = 15 и 5 × 10 = 50.
 what are the roots of x^2 - 8 x + 15 = 0? x^2 - 8 x + 15 = 0 factors as ( x - 3 ) ( x - 5 ): 3 + 5 = 8 and 3 * 5 = 15; the roots are 3 and 5.
-корни складываются в средний коэффициент — ложь: у x² − 9x + 20 = 0 корни 4 и 5, и 4 + 5 = 9, а средний коэффициент −9.
-an equation factors when it is written as a product that is 0 exactly at its roots.
-каковы корни x² − 7x = 0? x² − 7x = 0 раскладывается как ( x ) ( x − 7 ): 0 + 7 = 7 и 0 × 7 = 0; корни — 0 и 7.
-the roots of x^2 + b x + c = 0 add to -b and multiply to c: in x^2 - 15 x + 50 = 0 the roots 5 and 10 give 5 + 10 = 15 and 5 * 10 = 50.
-x² − 8x + 15 = 0 раскладывается как ( x − 3 ) ( x − 5 ): 3 + 5 = 8 и 3 × 5 = 15; корни — 3 и 5.
-the roots add to the middle coefficient is false: x^2 - 9 x + 20 = 0 has roots 4 and 5, and 4 + 5 = 9, while the middle coefficient is -9.
-корни x² + b x + c = 0 в сумме дают −b, а в произведении c: у x² − 19x + 84 = 0 корни 7 и 12, и 7 + 12 = 19 и 7 × 12 = 84.
-what are the roots of x^2 - 7 x = 0? x^2 - 7 x = 0 factors as ( x ) ( x - 7 ): 0 + 7 = 7 and 0 * 7 = 0; the roots are 0 and 7.
-корни x² + b x + c = 0 в сумме дают −b, а в произведении c: у x² − 10x + 24 = 0 корни 4 и 6, и 4 + 6 = 10 и 4 × 6 = 24.
-x^2 - 8 x + 15 = 0 factors as ( x - 3 ) ( x - 5 ): 3 + 5 = 8 and 3 * 5 = 15; the roots are 3 and 5.
-корни складываются в средний коэффициент — ложь: у x² − 11x + 24 = 0 корни 3 и 8, и 3 + 8 = 11, а средний коэффициент −11.
-the roots of x^2 + b x + c = 0 add to -b and multiply to c: in x^2 - 19 x + 84 = 0 the roots 7 and 12 give 7 + 12 = 19 and 7 * 12 = 84.
-x² − 7x = 0 раскладывается как ( x ) ( x − 7 ): 0 + 7 = 7 и 0 × 7 = 0; корни — 0 и 7.
+x² − 34x + 285 = 0 раскладывается как ( x − 15 ) ( x − 19 ): 15 + 19 = 34 и 15 × 19 = 285; корни — 15 и 19.
 the roots of x^2 + b x + c = 0 add to -b and multiply to c: in x^2 - 10 x + 24 = 0 the roots 4 and 6 give 4 + 6 = 10 and 4 * 6 = 24.
 что значит разложить уравнение? уравнение раскладывается, когда оно записано произведением, равным нулю ровно в его корнях.
+solve x squared minus seven x equals zero: x^2 - 7 x = 0 factors as ( x ) ( x - 7 ): 0 + 7 = 7 and 0 * 7 = 0; the roots are 0 and 7.
+корни складываются в средний коэффициент — ложь: у x² − 9x + 20 = 0 корни 4 и 5, и 4 + 5 = 9, а средний коэффициент −9.
+an equation factors when it is written as a product that is 0 exactly at its roots.
+x² − 7x = 0 раскладывается как ( x ) ( x − 7 ): 0 + 7 = 7 и 0 × 7 = 0; корни — 0 и 7.
 the roots add to the middle coefficient is false: x^2 - 11 x + 24 = 0 has roots 3 and 8, and 3 + 8 = 11, while the middle coefficient is -11.
 корни x² + b x + c = 0 в сумме дают −b, а в произведении c: у x² − 14x + 48 = 0 корни 6 и 8, и 6 + 8 = 14 и 6 × 8 = 48.
-x^2 - 7 x = 0 factors as ( x ) ( x - 7 ): 0 + 7 = 7 and 0 * 7 = 0; the roots are 0 and 7.
+solve x squared minus eight x plus fifteen equals zero: x^2 - 8 x + 15 = 0 factors as ( x - 3 ) ( x - 5 ): 3 + 5 = 8 and 3 * 5 = 15; the roots are 3 and 5.
+каковы корни x² − 34x + 285 = 0? x² − 34x + 285 = 0 раскладывается как ( x − 15 ) ( x − 19 ): 15 + 19 = 34 и 15 × 19 = 285; корни — 15 и 19.
+the roots of x^2 + b x + c = 0 add to -b and multiply to c: in x^2 - 15 x + 50 = 0 the roots 5 and 10 give 5 + 10 = 15 and 5 * 10 = 50.
+x² − 8x + 15 = 0 раскладывается как ( x − 3 ) ( x − 5 ): 3 + 5 = 8 и 3 × 5 = 15; корни — 3 и 5.
+x^2 - 34 x + 285 = 0 factors as ( x - 15 ) ( x - 19 ): 15 + 19 = 34 and 15 * 19 = 285; the roots are 15 and 19.
 корни складываются в средний коэффициент — ложь: у x² − 12x + 35 = 0 корни 5 и 7, и 5 + 7 = 12, а средний коэффициент −12.
 
 when does an equation have no whole root? an equation has no whole root when every whole value leaves a remainder.
@@ -420,103 +545,186 @@ what is the square root of 256? the square of 16 is 256, so the square root of 2
 every number has a whole square root is false: 54 lies between 7 * 7 = 49 and 8 * 8 = 64.
 квадратный корень из 100 есть положительный целый корень x² − 100 = 0: 10 × 10 = 100.
 
-is 11 a root of the equation x² − 13x + 40 = 0? no: 121 − 143 + 40 = 18.
-является ли 11 корнем x^2 - 10 x = 0? нет: 121 - 110 = 11.
-всякое значение удовлетворяет x² − 16x + 60 = 0 — ложь: при x = 13 выходит 169 − 208 + 60 = 21, а 21 не 0.
-is 8 a root of x^2 - 13 x + 40 = 0? yes: 64 - 104 + 40 = 0.
-is 10 a root of the equation x² − 10x = 0? yes: 100 − 100 = 0.
-every value satisfies x^2 - 10 x + 24 = 0 is false: at x = 7 it gives 49 - 70 + 24 = 3, and 3 is not 0.
-значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 3x + 2 = 0 при x = 2 выходит 4 − 6 + 2 = 0.
-8 is a root of x^2 - 13 x + 40 = 0: 64 - 104 + 40 = 0.
-10 — корень уравнения x² − 10x = 0: 100 − 100 = 0.
-a value is a root exactly when the substitution gives 0: in x^2 - 20 x + 96 = 0 the value 12 gives 144 - 240 + 96 = 0.
-является ли 8 корнем уравнения x² − 13x + 40 = 0? да: 64 − 104 + 40 = 0.
-is 11 a root of x^2 - 10 x = 0? no: 121 - 110 = 11.
-всякое значение удовлетворяет x² − 13x + 40 = 0 — ложь: при x = 10 выходит 100 − 130 + 40 = 10, а 10 не 0.
-what is a root of an equation? a root of an equation is a value that turns it into a true equality.
-11 — не корень уравнения x² − 13x + 40 = 0: 121 − 143 + 40 = 18.
+what is the discriminant? the discriminant of x^2 + b x + c = 0 is b * b - 4 * c: two roots when it is positive, one root when it is 0, no real root when it is negative.
+дискриминант x² − 34x + 285 = 0 равен 16: 1156 − 1140 = 16, и корни ( 34 + 4 ) ÷ 2 = 19 и ( 34 − 4 ) ÷ 2 = 15.
+what are the real roots of x^2 - 2 x + 5 = 0? x^2 - 2 x + 5 = 0 has no real root: the discriminant 4 - 20 = -16 is negative.
+дискриминант считает корни: у x² − 8x + 15 = 0 он равен 4 > 0, значит корней два — 3 и 5.
+what is the discriminant of x^2 - 8 x + 15 = 0? the discriminant of x^2 - 8 x + 15 = 0 is 4: 64 - 60 = 4, and the roots are ( 8 + 2 ) / 2 = 5 and ( 8 - 2 ) / 2 = 3.
+у всякого уравнения два корня — ложь: у x² − 6x + 9 = 0 дискриминант 0 и один корень 3: 36 − 36 = 0.
+what are the real roots of x^2 - 3 x + 7 = 0? x^2 - 3 x + 7 = 0 has no real root: the discriminant 9 - 28 = -19 is negative.
+дискриминант считает корни: у x² − 34x + 285 = 0 он равен 16 > 0, значит корней два — 15 и 19.
+what is the discriminant of x^2 - 7 x = 0? the discriminant of x^2 - 7 x = 0 is 49: 49 - 0 = 49, and the roots are ( 7 + 7 ) / 2 = 7 and ( 7 - 7 ) / 2 = 0.
+у всякого уравнения два корня — ложь: у x² − 10x + 25 = 0 дискриминант 0 и один корень 5: 100 − 100 = 0.
+what are the real roots of x^2 - x + 6 = 0? x^2 - x + 6 = 0 has no real root: the discriminant 1 - 24 = -23 is negative.
+что такое дискриминант? дискриминант x² + b x + c = 0 есть b × b − 4 × c: два корня, когда он положителен, один корень, когда он 0, и ни одного вещественного, когда он отрицателен.
+what is the discriminant of x^2 - 34 x + 285 = 0? the discriminant of x^2 - 34 x + 285 = 0 is 16: 1156 - 1140 = 16, and the roots are ( 34 + 4 ) / 2 = 19 and ( 34 - 4 ) / 2 = 15.
+каковы вещественные корни x² − 2x + 5 = 0? у x² − 2x + 5 = 0 нет вещественного корня: дискриминант 4 − 20 = −16 отрицателен.
+the discriminant counts the roots: for x^2 - 7 x = 0 it is 49 > 0, so there are two roots, 0 and 7.
+чему равен дискриминант x² − 8x + 15 = 0? дискриминант x² − 8x + 15 = 0 равен 4: 64 − 60 = 4, и корни ( 8 + 2 ) ÷ 2 = 5 и ( 8 − 2 ) ÷ 2 = 3.
+every equation has two roots is false: x^2 - 8 x + 16 = 0 has discriminant 0 and one root 4: 64 - 64 = 0.
+каковы вещественные корни x² − 3x + 7 = 0? у x² − 3x + 7 = 0 нет вещественного корня: дискриминант 9 − 28 = −19 отрицателен.
+the discriminant of x^2 + b x + c = 0 is b * b - 4 * c: two roots when it is positive, one root when it is 0, no real root when it is negative.
+чему равен дискриминант x² − 7x = 0? дискриминант x² − 7x = 0 равен 49: 49 − 0 = 49, и корни ( 7 + 7 ) ÷ 2 = 7 и ( 7 − 7 ) ÷ 2 = 0.
+x^2 - 2 x + 5 = 0 has no real root: the discriminant 4 - 20 = -16 is negative.
+каковы вещественные корни x² − x + 6 = 0? у x² − x + 6 = 0 нет вещественного корня: дискриминант 1 − 24 = −23 отрицателен.
+the discriminant of x^2 - 8 x + 15 = 0 is 4: 64 - 60 = 4, and the roots are ( 8 + 2 ) / 2 = 5 and ( 8 - 2 ) / 2 = 3.
+чему равен дискриминант x² − 34x + 285 = 0? дискриминант x² − 34x + 285 = 0 равен 16: 1156 − 1140 = 16, и корни ( 34 + 4 ) ÷ 2 = 19 и ( 34 − 4 ) ÷ 2 = 15.
+x^2 - 3 x + 7 = 0 has no real root: the discriminant 9 - 28 = -19 is negative.
+дискриминант считает корни: у x² − 7x = 0 он равен 49 > 0, значит корней два — 0 и 7.
+the discriminant of x^2 - 7 x = 0 is 49: 49 - 0 = 49, and the roots are ( 7 + 7 ) / 2 = 7 and ( 7 - 7 ) / 2 = 0.
+у всякого уравнения два корня — ложь: у x² − 8x + 16 = 0 дискриминант 0 и один корень 4: 64 − 64 = 0.
+x^2 - x + 6 = 0 has no real root: the discriminant 1 - 24 = -23 is negative.
+дискриминант x² + b x + c = 0 есть b × b − 4 × c: два корня, когда он положителен, один корень, когда он 0, и ни одного вещественного, когда он отрицателен.
+the discriminant of x^2 - 34 x + 285 = 0 is 16: 1156 - 1140 = 16, and the roots are ( 34 + 4 ) / 2 = 19 and ( 34 - 4 ) / 2 = 15.
+у x² − 2x + 5 = 0 нет вещественного корня: дискриминант 4 − 20 = −16 отрицателен.
+the discriminant counts the roots: for x^2 - 8 x + 15 = 0 it is 4 > 0, so there are two roots, 3 and 5.
+дискриминант x² − 8x + 15 = 0 равен 4: 64 − 60 = 4, и корни ( 8 + 2 ) ÷ 2 = 5 и ( 8 − 2 ) ÷ 2 = 3.
+every equation has two roots is false: x^2 - 6 x + 9 = 0 has discriminant 0 and one root 3: 36 - 36 = 0.
+у x² − 3x + 7 = 0 нет вещественного корня: дискриминант 9 − 28 = −19 отрицателен.
+the discriminant counts the roots: for x^2 - 34 x + 285 = 0 it is 16 > 0, so there are two roots, 15 and 19.
+дискриминант x² − 7x = 0 равен 49: 49 − 0 = 49, и корни ( 7 + 7 ) ÷ 2 = 7 и ( 7 − 7 ) ÷ 2 = 0.
+every equation has two roots is false: x^2 - 10 x + 25 = 0 has discriminant 0 and one root 5: 100 - 100 = 0.
+у x² − x + 6 = 0 нет вещественного корня: дискриминант 1 − 24 = −23 отрицателен.
+
+is 5 a root of the equation x² − 13x + 40 = 0? yes: 25 − 65 + 40 = 0.
+является ли 10 корнем x^2 - 10 x = 0? да: 100 - 100 = 0.
+является ли 22 корнем уравнения x² − 39x + 374 = 0? да: 484 − 858 + 374 = 0.
 every value satisfies x^2 - 7 x + 12 = 0 is false: at x = 7 it gives 49 - 49 + 12 = 12, and 12 is not 0.
 значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 23x + 126 = 0 при x = 9 выходит 81 − 207 + 126 = 0.
-является ли 11 корнем x^2 - 13 x + 40 = 0? нет: 121 - 143 + 40 = 18.
-является ли 11 корнем уравнения x² − 10x = 0? нет: 121 − 110 = 11.
-a value is a root exactly when the substitution gives 0: in x^2 - 17 x + 70 = 0 the value 7 gives 49 - 119 + 70 = 0.
-is 8 a root of the equation x² − 13x + 40 = 0? yes: 64 − 104 + 40 = 0.
-является ли 10 корнем x^2 - 10 x = 0? да: 100 - 100 = 0.
-всякое значение удовлетворяет x² − 10x + 24 = 0 — ложь: при x = 7 выходит 49 − 70 + 24 = 3, а 3 не 0.
+is 24 a root of x^2 - 39 x + 374 = 0? no: 576 - 936 + 374 = 14. therefore 24 turns the left side into 14, not 0. a root of an equation is a value that turns it into a true equality.
+является ли 5 корнем уравнения x² − 13x + 40 = 0? да: 25 − 65 + 40 = 0.
+is 11 a root of x^2 - 10 x = 0? no: 121 - 110 = 11.
+is 17 a root of the equation x² − 39x + 374 = 0? yes: 289 − 663 + 374 = 0.
+every value satisfies x^2 - 10 x + 24 = 0 is false: at x = 7 it gives 49 - 70 + 24 = 3, and 3 is not 0.
+значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 3x + 2 = 0 при x = 2 выходит 4 − 6 + 2 = 0.
 a root of an equation is a value that turns it into a true equality.
-8 — корень уравнения x² − 13x + 40 = 0: 64 − 104 + 40 = 0.
-11 is not a root of x^2 - 10 x = 0: 121 - 110 = 11.
-значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 20x + 96 = 0 при x = 12 выходит 144 − 240 + 96 = 0.
-is 11 a root of x^2 - 13 x + 40 = 0? no: 121 - 143 + 40 = 18.
-is 11 a root of the equation x² − 10x = 0? no: 121 − 110 = 11.
-every value satisfies x^2 - 16 x + 60 = 0 is false: at x = 13 it gives 169 - 208 + 60 = 21, and 21 is not 0.
-что такое корень уравнения? корень уравнения — это значение, обращающее его в верное равенство.
-is 10 a root of x^2 - 10 x = 0? yes: 100 - 100 = 0.
-всякое значение удовлетворяет x² − 7x + 12 = 0 — ложь: при x = 7 выходит 49 − 49 + 12 = 12, а 12 не 0.
-a value is a root exactly when the substitution gives 0: in x^2 - 3 x + 2 = 0 the value 2 gives 4 - 6 + 2 = 0.
+is 11 a root of the equation x² − 13x + 40 = 0? no: 121 − 143 + 40 = 18.
+является ли 11 корнем x^2 - 10 x = 0? нет: 121 - 110 = 11.
+является ли 17 корнем уравнения x² − 39x + 374 = 0? да: 289 − 663 + 374 = 0.
+every value satisfies x^2 - 13 x + 40 = 0 is false: at x = 10 it gives 100 - 130 + 40 = 10, and 10 is not 0.
+является ли 8 корнем x² − 13x + 40 = 0? да: 64 − 104 + 40 = 0. стало быть 8 обращает левую часть в 0. корень уравнения — это значение, обращающее его в верное равенство.
+what is a root of an equation? a root of an equation is a value that turns it into a true equality.
 является ли 11 корнем уравнения x² − 13x + 40 = 0? нет: 121 − 143 + 40 = 18.
 10 is a root of x^2 - 10 x = 0: 100 - 100 = 0.
-значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 17x + 70 = 0 при x = 7 выходит 49 − 119 + 70 = 0.
+is 24 a root of the equation x² − 39x + 374 = 0? no: 576 − 936 + 374 = 14.
+every value satisfies x^2 - 16 x + 60 = 0 is false: at x = 13 it gives 169 - 208 + 60 = 21, and 21 is not 0.
+является ли 11 корнем x² − 13x + 40 = 0? нет: 121 − 143 + 40 = 18. стало быть 11 обращает левую часть в 18, а не в 0. корень уравнения — это значение, обращающее его в верное равенство.
+is 8 a root of x^2 - 13 x + 40 = 0? yes: 64 - 104 + 40 = 0.
+8 — корень уравнения x² − 13x + 40 = 0: 64 − 104 + 40 = 0.
+11 is not a root of x^2 - 10 x = 0: 121 - 110 = 11.
+является ли 24 корнем уравнения x² − 39x + 374 = 0? нет: 576 − 936 + 374 = 14.
+a value is a root exactly when the substitution gives 0: in x^2 - 17 x + 70 = 0 the value 7 gives 49 - 119 + 70 = 0.
+почему 10 — корень x² − 10x = 0? так как 100 − 100 = 0: 10 обращает левую часть в 0. корень уравнения — это значение, обращающее его в верное равенство.
 является ли 8 корнем x^2 - 13 x + 40 = 0? да: 64 - 104 + 40 = 0.
+11 — не корень уравнения x² − 13x + 40 = 0: 121 − 143 + 40 = 18.
+is 22 a root of x^2 - 39 x + 374 = 0? yes: 484 - 858 + 374 = 0.
+22 — корень уравнения x² − 39x + 374 = 0: 484 − 858 + 374 = 0.
+a value is a root exactly when the substitution gives 0: in x^2 - 20 x + 96 = 0 the value 12 gives 144 - 240 + 96 = 0.
+почему 11 — не корень x² − 10x = 0? так как 121 − 110 = 11: 11 обращает левую часть в 11, а не в 0. корень уравнения — это значение, обращающее его в верное равенство.
+is 5 a root of x^2 - 13 x + 40 = 0? yes: 25 - 65 + 40 = 0.
+is 10 a root of the equation x² − 10x = 0? yes: 100 − 100 = 0.
+является ли 22 корнем x^2 - 39 x + 374 = 0? да: 484 - 858 + 374 = 0.
+24 — не корень уравнения x² − 39x + 374 = 0: 576 − 936 + 374 = 14.
+a value is a root exactly when the substitution gives 0: in x^2 - 23 x + 126 = 0 the value 9 gives 81 - 207 + 126 = 0.
+является ли 22 корнем x² − 39x + 374 = 0? да: 484 − 858 + 374 = 0. значит 22 обращает левую часть в 0. корень уравнения — это значение, обращающее его в верное равенство.
+является ли 5 корнем x^2 - 13 x + 40 = 0? да: 25 - 65 + 40 = 0.
 является ли 10 корнем уравнения x² − 10x = 0? да: 100 − 100 = 0.
-every value satisfies x^2 - 13 x + 40 = 0 is false: at x = 10 it gives 100 - 130 + 40 = 10, and 10 is not 0.
+is 17 a root of x^2 - 39 x + 374 = 0? yes: 289 - 663 + 374 = 0.
+всякое значение удовлетворяет x² − 7x + 12 = 0 — ложь: при x = 7 выходит 49 − 49 + 12 = 12, а 12 не 0.
+a value is a root exactly when the substitution gives 0: in x^2 - 3 x + 2 = 0 the value 2 gives 4 - 6 + 2 = 0.
+является ли 24 корнем x² − 39x + 374 = 0? нет: 576 − 936 + 374 = 14. значит 24 обращает левую часть в 14, а не в 0. корень уравнения — это значение, обращающее его в верное равенство.
+is 11 a root of x^2 - 13 x + 40 = 0? no: 121 - 143 + 40 = 18.
+is 11 a root of the equation x² − 10x = 0? no: 121 − 110 = 11.
+является ли 17 корнем x^2 - 39 x + 374 = 0? да: 289 - 663 + 374 = 0.
+всякое значение удовлетворяет x² − 10x + 24 = 0 — ложь: при x = 7 выходит 49 − 70 + 24 = 3, а 3 не 0.
+is 8 a root of x^2 - 13 x + 40 = 0? yes: 64 - 104 + 40 = 0. hence 8 turns the left side into 0. a root of an equation is a value that turns it into a true equality.
 корень уравнения — это значение, обращающее его в верное равенство.
+является ли 11 корнем x^2 - 13 x + 40 = 0? нет: 121 - 143 + 40 = 18.
+является ли 11 корнем уравнения x² − 10x = 0? нет: 121 − 110 = 11.
+is 24 a root of x^2 - 39 x + 374 = 0? no: 576 - 936 + 374 = 14.
+всякое значение удовлетворяет x² − 13x + 40 = 0 — ложь: при x = 10 выходит 100 − 130 + 40 = 10, а 10 не 0.
+is 11 a root of x^2 - 13 x + 40 = 0? no: 121 - 143 + 40 = 18. hence 11 turns the left side into 18, not 0. a root of an equation is a value that turns it into a true equality.
+что такое корень уравнения? корень уравнения — это значение, обращающее его в верное равенство.
+8 is a root of x^2 - 13 x + 40 = 0: 64 - 104 + 40 = 0.
+10 — корень уравнения x² − 10x = 0: 100 − 100 = 0.
+является ли 24 корнем x^2 - 39 x + 374 = 0? нет: 576 - 936 + 374 = 14.
+всякое значение удовлетворяет x² − 16x + 60 = 0 — ложь: при x = 13 выходит 169 − 208 + 60 = 21, а 21 не 0.
+why is 10 a root of x^2 - 10 x = 0? since 100 - 100 = 0: 10 turns the left side into 0. a root of an equation is a value that turns it into a true equality.
+is 8 a root of the equation x² − 13x + 40 = 0? yes: 64 − 104 + 40 = 0.
 11 is not a root of x^2 - 13 x + 40 = 0: 121 - 143 + 40 = 18.
 11 — не корень уравнения x² − 10x = 0: 121 − 110 = 11.
-a value is a root exactly when the substitution gives 0: in x^2 - 23 x + 126 = 0 the value 9 gives 81 - 207 + 126 = 0.
+22 is a root of x^2 - 39 x + 374 = 0: 484 - 858 + 374 = 0.
+значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 17x + 70 = 0 при x = 7 выходит 49 − 119 + 70 = 0.
+why is 11 not a root of x^2 - 10 x = 0? since 121 - 110 = 11: 11 turns the left side into 11, not 0. a root of an equation is a value that turns it into a true equality.
+является ли 8 корнем уравнения x² − 13x + 40 = 0? да: 64 − 104 + 40 = 0.
+is 10 a root of x^2 - 10 x = 0? yes: 100 - 100 = 0.
+is 22 a root of the equation x² − 39x + 374 = 0? yes: 484 − 858 + 374 = 0.
+24 is not a root of x^2 - 39 x + 374 = 0: 576 - 936 + 374 = 14.
+значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 20x + 96 = 0 при x = 12 выходит 144 − 240 + 96 = 0.
+is 22 a root of x^2 - 39 x + 374 = 0? yes: 484 - 858 + 374 = 0. therefore 22 turns the left side into 0. a root of an equation is a value that turns it into a true equality.
 
-у уравнения один корень — ложь: x² − 13x + 40 = 0 даёт 0 при x = 5 и при x = 8.
+в x² − 39x + 374 = 0 буква x стоит вместо значения: подставь 22 вместо x, и выйдет 484 − 858 + 374 = 0.
 a variable takes every value in turn: in x^2 - 8 x + 12 = 0 the values 2, 6, 9 give 0, 0, 21.
 у уравнения один корень — ложь: x² − 16x + 60 = 0 даёт 0 при x = 6 и при x = 10.
-x is a variable: it stands for a value, not for a number already known.
-у уравнения один корень — ложь: x² − 7x + 6 = 0 даёт 0 при x = 1 и при x = 6.
 what is a variable? x is a variable: it stands for a value, not for a number already known.
 у уравнения один корень — ложь: x² − 5x + 6 = 0 даёт 0 при x = 2 и при x = 3.
-in x^2 - 13 x + 40 = 0 the letter x stands for a value: put 8 in place of x and it gives 64 - 104 + 40 = 0.
-переменная принимает все значения по очереди: в x² − 7x + 12 = 0 при x = 3, 4, 7 выходят 0, 0, 12.
 in x^2 - 10 x = 0 the letter x stands for a value: put 11 in place of x and it gives 121 - 110 = 11.
 переменная принимает все значения по очереди: в x² − 12x + 35 = 0 при x = 5, 7, 8 выходят 0, 0, 3.
 an equation has one root is false: x^2 - 13 x + 40 = 0 gives 0 at x = 5 and at x = 8.
-переменная принимает все значения по очереди: в x² − 17x + 70 = 0 при x = 7, 10, 12 выходят 0, 0, 10.
-an equation has one root is false: x^2 - 16 x + 60 = 0 gives 0 at x = 6 and at x = 10.
 переменная принимает все значения по очереди: в x² − 8x + 12 = 0 при x = 2, 6, 9 выходят 0, 0, 21.
 an equation has one root is false: x^2 - 7 x + 6 = 0 gives 0 at x = 1 and at x = 6.
-x — переменная: она стоит вместо значения, а не вместо уже известного числа.
-an equation has one root is false: x^2 - 5 x + 6 = 0 gives 0 at x = 2 and at x = 3.
 что такое переменная? x — переменная: она стоит вместо значения, а не вместо уже известного числа.
 a variable takes every value in turn: in x^2 - 7 x + 12 = 0 the values 3, 4, 7 give 0, 0, 12.
-в x² − 13x + 40 = 0 буква x стоит вместо значения: подставь 8 вместо x, и выйдет 64 − 104 + 40 = 0.
-a variable takes every value in turn: in x^2 - 12 x + 35 = 0 the values 5, 7, 8 give 0, 0, 3.
 в x² − 10x = 0 буква x стоит вместо значения: подставь 11 вместо x, и выйдет 121 − 110 = 11.
 a variable takes every value in turn: in x^2 - 17 x + 70 = 0 the values 7, 10, 12 give 0, 0, 10.
+у уравнения один корень — ложь: x² − 13x + 40 = 0 даёт 0 при x = 5 и при x = 8.
+x is a variable: it stands for a value, not for a number already known.
+у уравнения один корень — ложь: x² − 7x + 6 = 0 даёт 0 при x = 1 и при x = 6.
+in x^2 - 13 x + 40 = 0 the letter x stands for a value: put 8 in place of x and it gives 64 - 104 + 40 = 0.
+переменная принимает все значения по очереди: в x² − 7x + 12 = 0 при x = 3, 4, 7 выходят 0, 0, 12.
+in x^2 - 39 x + 374 = 0 the letter x stands for a value: put 22 in place of x and it gives 484 - 858 + 374 = 0.
+переменная принимает все значения по очереди: в x² − 17x + 70 = 0 при x = 7, 10, 12 выходят 0, 0, 10.
+an equation has one root is false: x^2 - 16 x + 60 = 0 gives 0 at x = 6 and at x = 10.
+x — переменная: она стоит вместо значения, а не вместо уже известного числа.
+an equation has one root is false: x^2 - 5 x + 6 = 0 gives 0 at x = 2 and at x = 3.
+в x² − 13x + 40 = 0 буква x стоит вместо значения: подставь 8 вместо x, и выйдет 64 − 104 + 40 = 0.
+a variable takes every value in turn: in x^2 - 12 x + 35 = 0 the values 5, 7, 8 give 0, 0, 3.
 
-x² − 10x = 0 раскладывается как ( x ) ( x − 10 ): 0 + 10 = 10 и 0 × 10 = 0; корни — 0 и 10.
-the roots of x^2 + b x + c = 0 add to -b and multiply to c: in x^2 - 20 x + 91 = 0 the roots 7 and 13 give 7 + 13 = 20 and 7 * 13 = 91.
-каковы корни x² − 13x + 40 = 0? x² − 13x + 40 = 0 раскладывается как ( x − 5 ) ( x − 8 ): 5 + 8 = 13 и 5 × 8 = 40; корни — 5 и 8.
-the roots of x^2 + b x + c = 0 add to -b and multiply to c: in x^2 - 15 x + 54 = 0 the roots 6 and 9 give 6 + 9 = 15 and 6 * 9 = 54.
-x² − 13x + 40 = 0 раскладывается как ( x − 5 ) ( x − 8 ): 5 + 8 = 13 и 5 × 8 = 40; корни — 5 и 8.
-the roots add to the middle coefficient is false: x^2 - 17 x + 66 = 0 has roots 6 and 11, and 6 + 11 = 17, while the middle coefficient is -17.
-что значит разложить уравнение? уравнение раскладывается, когда оно записано произведением, равным нулю ровно в его корнях.
-the roots add to the middle coefficient is false: x^2 - 14 x + 45 = 0 has roots 5 and 9, and 5 + 9 = 14, while the middle coefficient is -14.
-уравнение раскладывается, когда оно записано произведением, равным нулю ровно в его корнях.
+решите x в квадрате минус тринадцать x плюс сорок равно нулю: x² − 13x + 40 = 0 раскладывается как ( x − 5 ) ( x − 8 ): 5 + 8 = 13 и 5 × 8 = 40; корни — 5 и 8.
 the roots add to the middle coefficient is false: x^2 - 11 x + 28 = 0 has roots 4 and 7, and 4 + 7 = 11, while the middle coefficient is -11.
 корни x² + b x + c = 0 в сумме дают −b, а в произведении c: у x² − 10x + 16 = 0 корни 2 и 8, и 2 + 8 = 10 и 2 × 8 = 16.
-the roots add to the middle coefficient is false: x^2 - 8 x + 15 = 0 has roots 3 and 5, and 3 + 5 = 8, while the middle coefficient is -8.
-корни x² + b x + c = 0 в сумме дают −b, а в произведении c: у x² − 19x + 88 = 0 корни 8 и 11, и 8 + 11 = 19 и 8 × 11 = 88.
 what are the roots of x^2 - 10 x = 0? x^2 - 10 x = 0 factors as ( x ) ( x - 10 ): 0 + 10 = 10 and 0 * 10 = 0; the roots are 0 and 10.
-корни x² + b x + c = 0 в сумме дают −b, а в произведении c: у x² − 20x + 91 = 0 корни 7 и 13, и 7 + 13 = 20 и 7 × 13 = 91.
-x^2 - 10 x = 0 factors as ( x ) ( x - 10 ): 0 + 10 = 10 and 0 * 10 = 0; the roots are 0 and 10.
-корни x² + b x + c = 0 в сумме дают −b, а в произведении c: у x² − 15x + 54 = 0 корни 6 и 9, и 6 + 9 = 15 и 6 × 9 = 54.
-what are the roots of x^2 - 13 x + 40 = 0? x^2 - 13 x + 40 = 0 factors as ( x - 5 ) ( x - 8 ): 5 + 8 = 13 and 5 * 8 = 40; the roots are 5 and 8.
-корни складываются в средний коэффициент — ложь: у x² − 17x + 66 = 0 корни 6 и 11, и 6 + 11 = 17, а средний коэффициент −17.
-x^2 - 13 x + 40 = 0 factors as ( x - 5 ) ( x - 8 ): 5 + 8 = 13 and 5 * 8 = 40; the roots are 5 and 8.
 корни складываются в средний коэффициент — ложь: у x² − 14x + 45 = 0 корни 5 и 9, и 5 + 9 = 14, а средний коэффициент −14.
 what does it mean to factor an equation? an equation factors when it is written as a product that is 0 exactly at its roots.
-корни складываются в средний коэффициент — ложь: у x² − 11x + 28 = 0 корни 4 и 7, и 4 + 7 = 11, а средний коэффициент −11.
-an equation factors when it is written as a product that is 0 exactly at its roots.
+решите x в квадрате минус десять x равно нулю: x² − 10x = 0 раскладывается как ( x ) ( x − 10 ): 0 + 10 = 10 и 0 × 10 = 0; корни — 0 и 10.
+the roots of x^2 + b x + c = 0 add to -b and multiply to c: in x^2 - 15 x + 54 = 0 the roots 6 and 9 give 6 + 9 = 15 and 6 * 9 = 54.
+x² − 13x + 40 = 0 раскладывается как ( x − 5 ) ( x − 8 ): 5 + 8 = 13 и 5 × 8 = 40; корни — 5 и 8.
+what are the roots of x^2 - 39 x + 374 = 0? x^2 - 39 x + 374 = 0 factors as ( x - 17 ) ( x - 22 ): 17 + 22 = 39 and 17 * 22 = 374; the roots are 17 and 22.
+корни x² + b x + c = 0 в сумме дают −b, а в произведении c: у x² − 20x + 91 = 0 корни 7 и 13, и 7 + 13 = 20 и 7 × 13 = 91.
+solve x squared minus thirteen x plus forty equals zero: x^2 - 13 x + 40 = 0 factors as ( x - 5 ) ( x - 8 ): 5 + 8 = 13 and 5 * 8 = 40; the roots are 5 and 8.
 корни складываются в средний коэффициент — ложь: у x² − 8x + 15 = 0 корни 3 и 5, и 3 + 5 = 8, а средний коэффициент −8.
 the roots of x^2 + b x + c = 0 add to -b and multiply to c: in x^2 - 10 x + 16 = 0 the roots 2 and 8 give 2 + 8 = 10 and 2 * 8 = 16.
+x² − 10x = 0 раскладывается как ( x ) ( x − 10 ): 0 + 10 = 10 и 0 × 10 = 0; корни — 0 и 10.
+the roots add to the middle coefficient is false: x^2 - 14 x + 45 = 0 has roots 5 and 9, and 5 + 9 = 14, while the middle coefficient is -14.
+уравнение раскладывается, когда оно записано произведением, равным нулю ровно в его корнях.
+solve x squared minus ten x equals zero: x^2 - 10 x = 0 factors as ( x ) ( x - 10 ): 0 + 10 = 10 and 0 * 10 = 0; the roots are 0 and 10.
+корни складываются в средний коэффициент — ложь: у x² − 17x + 66 = 0 корни 6 и 11, и 6 + 11 = 17, а средний коэффициент −17.
+x^2 - 13 x + 40 = 0 factors as ( x - 5 ) ( x - 8 ): 5 + 8 = 13 and 5 * 8 = 40; the roots are 5 and 8.
+x² − 39x + 374 = 0 раскладывается как ( x − 17 ) ( x − 22 ): 17 + 22 = 39 и 17 × 22 = 374; корни — 17 и 22.
+the roots of x^2 + b x + c = 0 add to -b and multiply to c: in x^2 - 20 x + 91 = 0 the roots 7 and 13 give 7 + 13 = 20 and 7 * 13 = 91.
+каковы корни x² − 13x + 40 = 0? x² − 13x + 40 = 0 раскладывается как ( x − 5 ) ( x − 8 ): 5 + 8 = 13 и 5 × 8 = 40; корни — 5 и 8.
+the roots add to the middle coefficient is false: x^2 - 8 x + 15 = 0 has roots 3 and 5, and 3 + 5 = 8, while the middle coefficient is -8.
+корни x² + b x + c = 0 в сумме дают −b, а в произведении c: у x² − 19x + 88 = 0 корни 8 и 11, и 8 + 11 = 19 и 8 × 11 = 88.
+x^2 - 10 x = 0 factors as ( x ) ( x - 10 ): 0 + 10 = 10 and 0 * 10 = 0; the roots are 0 and 10.
+корни складываются в средний коэффициент — ложь: у x² − 11x + 28 = 0 корни 4 и 7, и 4 + 7 = 11, а средний коэффициент −11.
+an equation factors when it is written as a product that is 0 exactly at its roots.
 каковы корни x² − 10x = 0? x² − 10x = 0 раскладывается как ( x ) ( x − 10 ): 0 + 10 = 10 и 0 × 10 = 0; корни — 0 и 10.
+the roots add to the middle coefficient is false: x^2 - 17 x + 66 = 0 has roots 6 and 11, and 6 + 11 = 17, while the middle coefficient is -17.
+что значит разложить уравнение? уравнение раскладывается, когда оно записано произведением, равным нулю ровно в его корнях.
+x^2 - 39 x + 374 = 0 factors as ( x - 17 ) ( x - 22 ): 17 + 22 = 39 and 17 * 22 = 374; the roots are 17 and 22.
+корни x² + b x + c = 0 в сумме дают −b, а в произведении c: у x² − 15x + 54 = 0 корни 6 и 9, и 6 + 9 = 15 и 6 × 9 = 54.
+what are the roots of x^2 - 13 x + 40 = 0? x^2 - 13 x + 40 = 0 factors as ( x - 5 ) ( x - 8 ): 5 + 8 = 13 and 5 * 8 = 40; the roots are 5 and 8.
+каковы корни x² − 39x + 374 = 0? x² − 39x + 374 = 0 раскладывается как ( x − 17 ) ( x − 22 ): 17 + 22 = 39 и 17 × 22 = 374; корни — 17 и 22.
 the roots of x^2 + b x + c = 0 add to -b and multiply to c: in x^2 - 19 x + 88 = 0 the roots 8 and 11 give 8 + 11 = 19 and 8 * 11 = 88.
 
 0x² + 6x − 24 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = 4: 6 × 4 − 24 = 0.
@@ -631,104 +839,185 @@ the square of 22 is 484, so the square root of 484 is 22.
 всякое число имеет целый квадратный корень — ложь: 55 лежит между 7 × 7 = 49 и 8 × 8 = 64.
 the square root of 196 is the positive whole root of x^2 - 196 = 0: 14 * 14 = 196.
 
+дискриминант x² − 10x = 0 равен 100: 100 − 0 = 100, и корни ( 10 + 10 ) ÷ 2 = 10 и ( 10 − 10 ) ÷ 2 = 0.
+x^2 - 3 x + 3 = 0 has no real root: the discriminant 9 - 12 = -3 is negative.
+дискриминант считает корни: у x² − 13x + 40 = 0 он равен 9 > 0, значит корней два — 5 и 8.
+the discriminant of x^2 - 10 x = 0 is 100: 100 - 0 = 100, and the roots are ( 10 + 10 ) / 2 = 10 and ( 10 - 10 ) / 2 = 0.
+у всякого уравнения два корня — ложь: у x² − 14x + 49 = 0 дискриминант 0 и один корень 7: 196 − 196 = 0.
+the discriminant counts the roots: for x^2 - 13 x + 40 = 0 it is 9 > 0, so there are two roots, 5 and 8.
+чему равен дискриминант x² − 13x + 40 = 0? дискриминант x² − 13x + 40 = 0 равен 9: 169 − 160 = 9, и корни ( 13 + 3 ) ÷ 2 = 8 и ( 13 − 3 ) ÷ 2 = 5.
+every equation has two roots is false: x^2 - 14 x + 49 = 0 has discriminant 0 and one root 7: 196 - 196 = 0.
+каковы вещественные корни x² − 2x + 4 = 0? у x² − 2x + 4 = 0 нет вещественного корня: дискриминант 4 − 16 = −12 отрицателен.
+what is the discriminant of x^2 - 13 x + 40 = 0? the discriminant of x^2 - 13 x + 40 = 0 is 9: 169 - 160 = 9, and the roots are ( 13 + 3 ) / 2 = 8 and ( 13 - 3 ) / 2 = 5.
+у всякого уравнения два корня — ложь: у x² − 12x + 36 = 0 дискриминант 0 и один корень 6: 144 − 144 = 0.
+what are the real roots of x^2 - 2 x + 4 = 0? x^2 - 2 x + 4 = 0 has no real root: the discriminant 4 - 16 = -12 is negative.
+дискриминант x² − 13x + 40 = 0 равен 9: 169 − 160 = 9, и корни ( 13 + 3 ) ÷ 2 = 8 и ( 13 − 3 ) ÷ 2 = 5.
+every equation has two roots is false: x^2 - 12 x + 36 = 0 has discriminant 0 and one root 6: 144 - 144 = 0.
+у x² − 2x + 4 = 0 нет вещественного корня: дискриминант 4 − 16 = −12 отрицателен.
+the discriminant of x^2 - 13 x + 40 = 0 is 9: 169 - 160 = 9, and the roots are ( 13 + 3 ) / 2 = 8 and ( 13 - 3 ) / 2 = 5.
+у всякого уравнения два корня — ложь: у x² − 10x + 25 = 0 дискриминант 0 и один корень 5: 100 − 100 = 0.
+x^2 - 2 x + 4 = 0 has no real root: the discriminant 4 - 16 = -12 is negative.
+что такое дискриминант? дискриминант x² + b x + c = 0 есть b × b − 4 × c: два корня, когда он положителен, один корень, когда он 0, и ни одного вещественного, когда он отрицателен.
+every equation has two roots is false: x^2 - 10 x + 25 = 0 has discriminant 0 and one root 5: 100 - 100 = 0.
+каковы вещественные корни x² − x + 2 = 0? у x² − x + 2 = 0 нет вещественного корня: дискриминант 1 − 8 = −7 отрицателен.
+what is the discriminant? the discriminant of x^2 + b x + c = 0 is b * b - 4 * c: two roots when it is positive, one root when it is 0, no real root when it is negative.
+чему равен дискриминант x² − 39x + 374 = 0? дискриминант x² − 39x + 374 = 0 равен 25: 1521 − 1496 = 25, и корни ( 39 + 5 ) ÷ 2 = 22 и ( 39 − 5 ) ÷ 2 = 17.
+what are the real roots of x^2 - x + 2 = 0? x^2 - x + 2 = 0 has no real root: the discriminant 1 - 8 = -7 is negative.
+дискриминант x² + b x + c = 0 есть b × b − 4 × c: два корня, когда он положителен, один корень, когда он 0, и ни одного вещественного, когда он отрицателен.
+what is the discriminant of x^2 - 39 x + 374 = 0? the discriminant of x^2 - 39 x + 374 = 0 is 25: 1521 - 1496 = 25, and the roots are ( 39 + 5 ) / 2 = 22 and ( 39 - 5 ) / 2 = 17.
+у x² − x + 2 = 0 нет вещественного корня: дискриминант 1 − 8 = −7 отрицателен.
+the discriminant of x^2 + b x + c = 0 is b * b - 4 * c: two roots when it is positive, one root when it is 0, no real root when it is negative.
+дискриминант x² − 39x + 374 = 0 равен 25: 1521 − 1496 = 25, и корни ( 39 + 5 ) ÷ 2 = 22 и ( 39 − 5 ) ÷ 2 = 17.
+x^2 - x + 2 = 0 has no real root: the discriminant 1 - 8 = -7 is negative.
+дискриминант считает корни: у x² − 39x + 374 = 0 он равен 25 > 0, значит корней два — 17 и 22.
+the discriminant of x^2 - 39 x + 374 = 0 is 25: 1521 - 1496 = 25, and the roots are ( 39 + 5 ) / 2 = 22 and ( 39 - 5 ) / 2 = 17.
+каковы вещественные корни x² − 3x + 3 = 0? у x² − 3x + 3 = 0 нет вещественного корня: дискриминант 9 − 12 = −3 отрицателен.
+the discriminant counts the roots: for x^2 - 39 x + 374 = 0 it is 25 > 0, so there are two roots, 17 and 22.
+чему равен дискриминант x² − 10x = 0? дискриминант x² − 10x = 0 равен 100: 100 − 0 = 100, и корни ( 10 + 10 ) ÷ 2 = 10 и ( 10 − 10 ) ÷ 2 = 0.
+what are the real roots of x^2 - 3 x + 3 = 0? x^2 - 3 x + 3 = 0 has no real root: the discriminant 9 - 12 = -3 is negative.
+дискриминант считает корни: у x² − 10x = 0 он равен 100 > 0, значит корней два — 0 и 10.
+what is the discriminant of x^2 - 10 x = 0? the discriminant of x^2 - 10 x = 0 is 100: 100 - 0 = 100, and the roots are ( 10 + 10 ) / 2 = 10 and ( 10 - 10 ) / 2 = 0.
+у x² − 3x + 3 = 0 нет вещественного корня: дискриминант 9 − 12 = −3 отрицателен.
+the discriminant counts the roots: for x^2 - 10 x = 0 it is 100 > 0, so there are two roots, 0 and 10.
+
 is 11 a root of x^2 - 18 x + 77 = 0? yes: 121 - 198 + 77 = 0.
-is 15 a root of the equation x² − 13x = 0? no: 225 − 195 = 30.
-a value is a root exactly when the substitution gives 0: in x^2 - 9 x + 14 = 0 the value 7 gives 49 - 63 + 14 = 0.
-является ли 12 корнем уравнения x² − 18x + 77 = 0? нет: 144 − 216 + 77 = 5.
-every value satisfies x^2 - 11 x + 28 = 0 is false: at x = 8 it gives 64 - 88 + 28 = 4, and 4 is not 0.
-корень уравнения — это значение, обращающее его в верное равенство.
-является ли 13 корнем x^2 - 13 x = 0? да: 169 - 169 = 0.
+is 13 a root of the equation x² − 13x = 0? yes: 169 − 169 = 0.
+является ли 11 корнем x^2 - 28 x + 187 = 0? да: 121 - 308 + 187 = 0.
 всякое значение удовлетворяет x² − 16x + 63 = 0 — ложь: при x = 10 выходит 100 − 160 + 63 = 3, а 3 не 0.
-is 12 a root of x^2 - 18 x + 77 = 0? no: 144 - 216 + 77 = 5.
-13 — корень уравнения x² − 13x = 0: 169 − 169 = 0.
-a value is a root exactly when the substitution gives 0: in x^2 - 10 x + 24 = 0 the value 6 gives 36 - 60 + 24 = 0.
-12 — не корень уравнения x² − 18x + 77 = 0: 144 − 216 + 77 = 5.
-every value satisfies x^2 - 13 x + 42 = 0 is false: at x = 10 it gives 100 - 130 + 42 = 12, and 12 is not 0.
-is 11 a root of the equation x² − 18x + 77 = 0? yes: 121 − 198 + 77 = 0.
-является ли 15 корнем x^2 - 13 x = 0? нет: 225 - 195 = 30.
-значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 9x + 14 = 0 при x = 7 выходит 49 − 63 + 14 = 0.
-11 is a root of x^2 - 18 x + 77 = 0: 121 - 198 + 77 = 0.
-всякое значение удовлетворяет x² − 11x + 28 = 0 — ложь: при x = 8 выходит 64 − 88 + 28 = 4, а 4 не 0.
-what is a root of an equation? a root of an equation is a value that turns it into a true equality.
-является ли 13 корнем уравнения x² − 13x = 0? да: 169 − 169 = 0.
-a value is a root exactly when the substitution gives 0: in x^2 - 6 x + 5 = 0 the value 1 gives 1 - 6 + 5 = 0.
+why is 17 a root of x^2 - 28 x + 187 = 0? since 289 - 476 + 187 = 0: 17 turns the left side into 0. a root of an equation is a value that turns it into a true equality.
 is 12 a root of the equation x² − 18x + 77 = 0? no: 144 − 216 + 77 = 5.
 15 is not a root of x^2 - 13 x = 0: 225 - 195 = 30.
-значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 10x + 24 = 0 при x = 6 выходит 36 − 60 + 24 = 0.
-is 13 a root of x^2 - 13 x = 0? yes: 169 - 169 = 0.
-всякое значение удовлетворяет x² − 13x + 42 = 0 — ложь: при x = 10 выходит 100 − 130 + 42 = 12, а 12 не 0.
-является ли 11 корнем x^2 - 18 x + 77 = 0? да: 121 - 198 + 77 = 0.
-является ли 15 корнем уравнения x² − 13x = 0? нет: 225 − 195 = 30.
-a value is a root exactly when the substitution gives 0: in x^2 - 7 x + 12 = 0 the value 3 gives 9 - 21 + 12 = 0.
-11 — корень уравнения x² − 18x + 77 = 0: 121 − 198 + 77 = 0.
-every value satisfies x^2 - 14 x + 45 = 0 is false: at x = 11 it gives 121 - 154 + 45 = 12, and 12 is not 0.
-что такое корень уравнения? корень уравнения — это значение, обращающее его в верное равенство.
-is 15 a root of x^2 - 13 x = 0? no: 225 - 195 = 30.
-значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 6x + 5 = 0 при x = 1 выходит 1 − 6 + 5 = 0.
+20 — не корень уравнения x² − 28x + 187 = 0: 400 − 560 + 187 = 27.
+why is 11 a root of x^2 - 18 x + 77 = 0? since 121 - 198 + 77 = 0: 11 turns the left side into 0. a root of an equation is a value that turns it into a true equality.
+is 11 a root of the equation x² − 18x + 77 = 0? yes: 121 − 198 + 77 = 0.
+является ли 13 корнем x^2 - 13 x = 0? да: 169 - 169 = 0.
+является ли 11 корнем уравнения x² − 28x + 187 = 0? да: 121 − 308 + 187 = 0.
+a value is a root exactly when the substitution gives 0: in x^2 - 6 x + 5 = 0 the value 1 gives 1 - 6 + 5 = 0.
+почему 17 — корень x² − 28x + 187 = 0? так как 289 − 476 + 187 = 0: 17 обращает левую часть в 0. корень уравнения — это значение, обращающее его в верное равенство.
 является ли 12 корнем x^2 - 18 x + 77 = 0? нет: 144 - 216 + 77 = 5.
 15 — не корень уравнения x² − 13x = 0: 225 − 195 = 30.
-a root of an equation is a value that turns it into a true equality.
-is 13 a root of the equation x² − 13x = 0? yes: 169 − 169 = 0.
-every value satisfies x^2 - 16 x + 63 = 0 is false: at x = 10 it gives 100 - 160 + 63 = 3, and 3 is not 0.
+every value satisfies x^2 - 11 x + 28 = 0 is false: at x = 8 it gives 64 - 88 + 28 = 4, and 4 is not 0.
+почему 11 — корень x² − 18x + 77 = 0? так как 121 − 198 + 77 = 0: 11 обращает левую часть в 0. корень уравнения — это значение, обращающее его в верное равенство.
+является ли 11 корнем x^2 - 18 x + 77 = 0? да: 121 - 198 + 77 = 0.
+является ли 13 корнем уравнения x² − 13x = 0? да: 169 − 169 = 0.
+is 20 a root of x^2 - 28 x + 187 = 0? no: 400 - 560 + 187 = 27.
+значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 6x + 5 = 0 при x = 1 выходит 1 − 6 + 5 = 0.
+why is 20 not a root of x^2 - 28 x + 187 = 0? since 400 - 560 + 187 = 27: 20 turns the left side into 27, not 0. a root of an equation is a value that turns it into a true equality.
+является ли 12 корнем уравнения x² − 18x + 77 = 0? нет: 144 − 216 + 77 = 5.
+is 17 a root of x^2 - 28 x + 187 = 0? yes: 289 - 476 + 187 = 0.
+всякое значение удовлетворяет x² − 11x + 28 = 0 — ложь: при x = 8 выходит 64 − 88 + 28 = 4, а 4 не 0.
+why is 12 not a root of x^2 - 18 x + 77 = 0? since 144 - 216 + 77 = 5: 12 turns the left side into 5, not 0. a root of an equation is a value that turns it into a true equality.
 является ли 11 корнем уравнения x² − 18x + 77 = 0? да: 121 − 198 + 77 = 0.
-13 is a root of x^2 - 13 x = 0: 169 - 169 = 0.
-значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 7x + 12 = 0 при x = 3 выходит 9 − 21 + 12 = 0.
-12 is not a root of x^2 - 18 x + 77 = 0: 144 - 216 + 77 = 5.
+is 15 a root of x^2 - 13 x = 0? no: 225 - 195 = 30.
+is 20 a root of the equation x² − 28x + 187 = 0? no: 400 − 560 + 187 = 27.
+a value is a root exactly when the substitution gives 0: in x^2 - 9 x + 14 = 0 the value 7 gives 49 - 63 + 14 = 0.
+почему 20 — не корень x² − 28x + 187 = 0? так как 400 − 560 + 187 = 27: 20 обращает левую часть в 27, а не в 0. корень уравнения — это значение, обращающее его в верное равенство.
+11 is a root of x^2 - 18 x + 77 = 0: 121 - 198 + 77 = 0.
+is 17 a root of the equation x² − 28x + 187 = 0? yes: 289 − 476 + 187 = 0.
+every value satisfies x^2 - 14 x + 45 = 0 is false: at x = 11 it gives 121 - 154 + 45 = 12, and 12 is not 0.
+почему 12 — не корень x² − 18x + 77 = 0? так как 144 − 216 + 77 = 5: 12 обращает левую часть в 5, а не в 0. корень уравнения — это значение, обращающее его в верное равенство.
+is 7 a root of x^2 - 18 x + 77 = 0? yes: 49 - 126 + 77 = 0.
+is 15 a root of the equation x² − 13x = 0? no: 225 − 195 = 30.
+является ли 20 корнем x^2 - 28 x + 187 = 0? нет: 400 - 560 + 187 = 27.
+значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 9x + 14 = 0 при x = 7 выходит 49 − 63 + 14 = 0.
+a root of an equation is a value that turns it into a true equality.
+11 — корень уравнения x² − 18x + 77 = 0: 121 − 198 + 77 = 0.
+является ли 17 корнем x^2 - 28 x + 187 = 0? да: 289 - 476 + 187 = 0.
 всякое значение удовлетворяет x² − 14x + 45 = 0 — ложь: при x = 11 выходит 121 − 154 + 45 = 12, а 12 не 0.
+is 13 a root of x^2 - 13 x = 0? yes: 169 - 169 = 0. therefore 13 turns the left side into 0. a root of an equation is a value that turns it into a true equality.
+is 7 a root of the equation x² − 18x + 77 = 0? yes: 49 − 126 + 77 = 0.
+является ли 15 корнем x^2 - 13 x = 0? нет: 225 - 195 = 30.
+является ли 20 корнем уравнения x² − 28x + 187 = 0? нет: 400 − 560 + 187 = 27.
+a value is a root exactly when the substitution gives 0: in x^2 - 7 x + 12 = 0 the value 3 gives 9 - 21 + 12 = 0.
+корень уравнения — это значение, обращающее его в верное равенство.
+12 is not a root of x^2 - 18 x + 77 = 0: 144 - 216 + 77 = 5.
+является ли 17 корнем уравнения x² − 28x + 187 = 0? да: 289 − 476 + 187 = 0.
+every value satisfies x^2 - 13 x + 42 = 0 is false: at x = 10 it gives 100 - 130 + 42 = 12, and 12 is not 0.
+является ли 13 корнем x² − 13x = 0? да: 169 − 169 = 0. значит 13 обращает левую часть в 0. корень уравнения — это значение, обращающее его в верное равенство.
+является ли 7 корнем x^2 - 18 x + 77 = 0? да: 49 - 126 + 77 = 0.
+является ли 15 корнем уравнения x² − 13x = 0? нет: 225 − 195 = 30.
+17 is a root of x^2 - 28 x + 187 = 0: 289 - 476 + 187 = 0.
+значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 7x + 12 = 0 при x = 3 выходит 9 − 21 + 12 = 0.
+what is a root of an equation? a root of an equation is a value that turns it into a true equality.
+12 — не корень уравнения x² − 18x + 77 = 0: 144 − 216 + 77 = 5.
+is 11 a root of x^2 - 28 x + 187 = 0? yes: 121 - 308 + 187 = 0.
+всякое значение удовлетворяет x² − 13x + 42 = 0 — ложь: при x = 10 выходит 100 − 130 + 42 = 12, а 12 не 0.
+is 15 a root of x^2 - 13 x = 0? no: 225 - 195 = 30. therefore 15 turns the left side into 30, not 0. a root of an equation is a value that turns it into a true equality.
+является ли 7 корнем уравнения x² − 18x + 77 = 0? да: 49 − 126 + 77 = 0.
+13 is a root of x^2 - 13 x = 0: 169 - 169 = 0.
+17 — корень уравнения x² − 28x + 187 = 0: 289 − 476 + 187 = 0.
+a value is a root exactly when the substitution gives 0: in x^2 - 10 x + 24 = 0 the value 6 gives 36 - 60 + 24 = 0.
+что такое корень уравнения? корень уравнения — это значение, обращающее его в верное равенство.
+is 13 a root of x^2 - 13 x = 0? yes: 169 - 169 = 0.
+is 11 a root of the equation x² − 28x + 187 = 0? yes: 121 − 308 + 187 = 0.
+every value satisfies x^2 - 16 x + 63 = 0 is false: at x = 10 it gives 100 - 160 + 63 = 3, and 3 is not 0.
+является ли 15 корнем x² − 13x = 0? нет: 225 − 195 = 30. значит 15 обращает левую часть в 30, а не в 0. корень уравнения — это значение, обращающее его в верное равенство.
+is 12 a root of x^2 - 18 x + 77 = 0? no: 144 - 216 + 77 = 5.
+13 — корень уравнения x² − 13x = 0: 169 − 169 = 0.
+20 is not a root of x^2 - 28 x + 187 = 0: 400 - 560 + 187 = 27.
+значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 10x + 24 = 0 при x = 6 выходит 36 − 60 + 24 = 0.
 
 in x^2 - 18 x + 77 = 0 the letter x stands for a value: put 11 in place of x and it gives 121 - 198 + 77 = 0.
-переменная принимает все значения по очереди: в x² − 3x + 2 = 0 при x = 1, 2, 5 выходят 0, 0, 12.
-an equation has one root is false: x^2 - 10 x + 24 = 0 gives 0 at x = 4 and at x = 6.
-в x² − 13x = 0 буква x стоит вместо значения: подставь 15 вместо x, и выйдет 225 − 195 = 30.
-x is a variable: it stands for a value, not for a number already known.
-переменная принимает все значения по очереди: в x² − 11x + 28 = 0 при x = 4, 7, 8 выходят 0, 0, 4.
+переменная принимает все значения по очереди: в x² − 16x + 60 = 0 при x = 6, 10, 12 выходят 0, 0, 12.
 an equation has one root is false: x^2 - 9 x + 14 = 0 gives 0 at x = 2 and at x = 7.
 что такое переменная? x — переменная: она стоит вместо значения, а не вместо уже известного числа.
-a variable takes every value in turn: in x^2 - 3 x + 2 = 0 the values 1, 2, 5 give 0, 0, 12.
-у уравнения один корень — ложь: x² − 7x + 12 = 0 даёт 0 при x = 3 и при x = 4.
-in x^2 - 13 x = 0 the letter x stands for a value: put 15 in place of x and it gives 225 - 195 = 30.
-переменная принимает все значения по очереди: в x² − 8x + 15 = 0 при x = 3, 5, 6 выходят 0, 0, 3.
-a variable takes every value in turn: in x^2 - 11 x + 28 = 0 the values 4, 7, 8 give 0, 0, 4.
+a variable takes every value in turn: in x^2 - 16 x + 60 = 0 the values 6, 10, 12 give 0, 0, 12.
 у уравнения один корень — ложь: x² − 6x + 5 = 0 даёт 0 при x = 1 и при x = 5.
 what is a variable? x is a variable: it stands for a value, not for a number already known.
-переменная принимает все значения по очереди: в x² − 16x + 60 = 0 при x = 6, 10, 12 выходят 0, 0, 12.
-an equation has one root is false: x^2 - 7 x + 12 = 0 gives 0 at x = 3 and at x = 4.
-в x² − 18x + 77 = 0 буква x стоит вместо значения: подставь 11 вместо x, и выйдет 121 − 198 + 77 = 0.
-a variable takes every value in turn: in x^2 - 8 x + 15 = 0 the values 3, 5, 6 give 0, 0, 3.
-у уравнения один корень — ложь: x² − 10x + 24 = 0 даёт 0 при x = 4 и при x = 6.
+переменная принимает все значения по очереди: в x² − 11x + 28 = 0 при x = 4, 7, 8 выходят 0, 0, 4.
 an equation has one root is false: x^2 - 6 x + 5 = 0 gives 0 at x = 1 and at x = 5.
 x — переменная: она стоит вместо значения, а не вместо уже известного числа.
-a variable takes every value in turn: in x^2 - 16 x + 60 = 0 the values 6, 10, 12 give 0, 0, 12.
+a variable takes every value in turn: in x^2 - 11 x + 28 = 0 the values 4, 7, 8 give 0, 0, 4.
+в x² − 28x + 187 = 0 буква x стоит вместо значения: подставь 17 вместо x, и выйдет 289 − 476 + 187 = 0.
+x is a variable: it stands for a value, not for a number already known.
+у уравнения один корень — ложь: x² − 10x + 24 = 0 даёт 0 при x = 4 и при x = 6.
+in x^2 - 28 x + 187 = 0 the letter x stands for a value: put 17 in place of x and it gives 289 - 476 + 187 = 0.
+переменная принимает все значения по очереди: в x² − 8x + 15 = 0 при x = 3, 5, 6 выходят 0, 0, 3.
+an equation has one root is false: x^2 - 10 x + 24 = 0 gives 0 at x = 4 and at x = 6.
+в x² − 13x = 0 буква x стоит вместо значения: подставь 15 вместо x, и выйдет 225 − 195 = 30.
+a variable takes every value in turn: in x^2 - 8 x + 15 = 0 the values 3, 5, 6 give 0, 0, 3.
+у уравнения один корень — ложь: x² − 7x + 12 = 0 даёт 0 при x = 3 и при x = 4.
+in x^2 - 13 x = 0 the letter x stands for a value: put 15 in place of x and it gives 225 - 195 = 30.
+переменная принимает все значения по очереди: в x² − 3x + 2 = 0 при x = 1, 2, 5 выходят 0, 0, 12.
+an equation has one root is false: x^2 - 7 x + 12 = 0 gives 0 at x = 3 and at x = 4.
+в x² − 18x + 77 = 0 буква x стоит вместо значения: подставь 11 вместо x, и выйдет 121 − 198 + 77 = 0.
+a variable takes every value in turn: in x^2 - 3 x + 2 = 0 the values 1, 2, 5 give 0, 0, 12.
 у уравнения один корень — ложь: x² − 9x + 14 = 0 даёт 0 при x = 2 и при x = 7.
 
 x^2 - 18 x + 77 = 0 factors as ( x - 7 ) ( x - 11 ): 7 + 11 = 18 and 7 * 11 = 77; the roots are 7 and 11.
-корни x² + b x + c = 0 в сумме дают −b, а в произведении c: у x² − 20x + 96 = 0 корни 8 и 12, и 8 + 12 = 20 и 8 × 12 = 96.
-what are the roots of x^2 - 13 x = 0? x^2 - 13 x = 0 factors as ( x ) ( x - 13 ): 0 + 13 = 13 and 0 * 13 = 0; the roots are 0 and 13.
-корни x² + b x + c = 0 в сумме дают −b, а в произведении c: у x² − 9x + 20 = 0 корни 4 и 5, и 4 + 5 = 9 и 4 × 5 = 20.
-the roots add to the middle coefficient is false: x^2 - 14 x + 48 = 0 has roots 6 and 8, and 6 + 8 = 14, while the middle coefficient is -14.
-x² − 18x + 77 = 0 раскладывается как ( x − 7 ) ( x − 11 ): 7 + 11 = 18 и 7 × 11 = 77; корни — 7 и 11.
-the roots of x^2 + b x + c = 0 add to -b and multiply to c: in x^2 - 5 x + 6 = 0 the roots 2 and 3 give 2 + 3 = 5 and 2 * 3 = 6.
-каковы корни x² − 13x = 0? x² − 13x = 0 раскладывается как ( x ) ( x − 13 ): 0 + 13 = 13 и 0 × 13 = 0; корни — 0 и 13.
-an equation factors when it is written as a product that is 0 exactly at its roots.
 корни складываются в средний коэффициент — ложь: у x² − 14x + 48 = 0 корни 6 и 8, и 6 + 8 = 14, а средний коэффициент −14.
-what are the roots of x^2 - 18 x + 77 = 0? x^2 - 18 x + 77 = 0 factors as ( x - 7 ) ( x - 11 ): 7 + 11 = 18 and 7 * 11 = 77; the roots are 7 and 11.
-корни x² + b x + c = 0 в сумме дают −b, а в произведении c: у x² − 5x + 6 = 0 корни 2 и 3, и 2 + 3 = 5 и 2 × 3 = 6.
-the roots add to the middle coefficient is false: x^2 - 13 x + 36 = 0 has roots 4 and 9, and 4 + 9 = 13, while the middle coefficient is -13.
-уравнение раскладывается, когда оно записано произведением, равным нулю ровно в его корнях.
-the roots add to the middle coefficient is false: x^2 - 17 x + 70 = 0 has roots 7 and 10, and 7 + 10 = 17, while the middle coefficient is -17.
-каковы корни x² − 18x + 77 = 0? x² − 18x + 77 = 0 раскладывается как ( x − 7 ) ( x − 11 ): 7 + 11 = 18 и 7 × 11 = 77; корни — 7 и 11.
-the roots of x^2 + b x + c = 0 add to -b and multiply to c: in x^2 - 10 x + 21 = 0 the roots 3 and 7 give 3 + 7 = 10 and 3 * 7 = 21.
-корни складываются в средний коэффициент — ложь: у x² − 13x + 36 = 0 корни 4 и 9, и 4 + 9 = 13, а средний коэффициент −13.
-what does it mean to factor an equation? an equation factors when it is written as a product that is 0 exactly at its roots.
-корни складываются в средний коэффициент — ложь: у x² − 17x + 70 = 0 корни 7 и 10, и 7 + 10 = 17, а средний коэффициент −17.
 x^2 - 13 x = 0 factors as ( x ) ( x - 13 ): 0 + 13 = 13 and 0 * 13 = 0; the roots are 0 and 13.
+корни x² + b x + c = 0 в сумме дают −b, а в произведении c: у x² − 20x + 96 = 0 корни 8 и 12, и 8 + 12 = 20 и 8 × 12 = 96.
+solve x squared minus thirteen x equals zero: x^2 - 13 x = 0 factors as ( x ) ( x - 13 ): 0 + 13 = 13 and 0 * 13 = 0; the roots are 0 and 13.
 корни x² + b x + c = 0 в сумме дают −b, а в произведении c: у x² − 10x + 21 = 0 корни 3 и 7, и 3 + 7 = 10 и 3 × 7 = 21.
+what are the roots of x^2 - 28 x + 187 = 0? x^2 - 28 x + 187 = 0 factors as ( x - 11 ) ( x - 17 ): 11 + 17 = 28 and 11 * 17 = 187; the roots are 11 and 17.
+уравнение раскладывается, когда оно записано произведением, равным нулю ровно в его корнях.
 the roots add to the middle coefficient is false: x^2 - 11 x + 30 = 0 has roots 5 and 6, and 5 + 6 = 11, while the middle coefficient is -11.
-что значит разложить уравнение? уравнение раскладывается, когда оно записано произведением, равным нулю ровно в его корнях.
-the roots of x^2 + b x + c = 0 add to -b and multiply to c: in x^2 - 20 x + 96 = 0 the roots 8 and 12 give 8 + 12 = 20 and 8 * 12 = 96.
+x² − 18x + 77 = 0 раскладывается как ( x − 7 ) ( x − 11 ): 7 + 11 = 18 и 7 × 11 = 77; корни — 7 и 11.
+the roots add to the middle coefficient is false: x^2 - 17 x + 70 = 0 has roots 7 and 10, and 7 + 10 = 17, while the middle coefficient is -17.
 x² − 13x = 0 раскладывается как ( x ) ( x − 13 ): 0 + 13 = 13 и 0 × 13 = 0; корни — 0 и 13.
+the roots of x^2 + b x + c = 0 add to -b and multiply to c: in x^2 - 5 x + 6 = 0 the roots 2 and 3 give 2 + 3 = 5 and 2 * 3 = 6.
+решите x в квадрате минус тринадцать x равно нулю: x² − 13x = 0 раскладывается как ( x ) ( x − 13 ): 0 + 13 = 13 и 0 × 13 = 0; корни — 0 и 13.
 the roots of x^2 + b x + c = 0 add to -b and multiply to c: in x^2 - 9 x + 20 = 0 the roots 4 and 5 give 4 + 5 = 9 and 4 * 5 = 20.
+каковы корни x² − 28x + 187 = 0? x² − 28x + 187 = 0 раскладывается как ( x − 11 ) ( x − 17 ): 11 + 17 = 28 и 11 × 17 = 187; корни — 11 и 17.
+what does it mean to factor an equation? an equation factors when it is written as a product that is 0 exactly at its roots.
 корни складываются в средний коэффициент — ложь: у x² − 11x + 30 = 0 корни 5 и 6, и 5 + 6 = 11, а средний коэффициент −11.
+what are the roots of x^2 - 18 x + 77 = 0? x^2 - 18 x + 77 = 0 factors as ( x - 7 ) ( x - 11 ): 7 + 11 = 18 and 7 * 11 = 77; the roots are 7 and 11.
+корни складываются в средний коэффициент — ложь: у x² − 17x + 70 = 0 корни 7 и 10, и 7 + 10 = 17, а средний коэффициент −17.
+what are the roots of x^2 - 13 x = 0? x^2 - 13 x = 0 factors as ( x ) ( x - 13 ): 0 + 13 = 13 and 0 * 13 = 0; the roots are 0 and 13.
+корни x² + b x + c = 0 в сумме дают −b, а в произведении c: у x² − 5x + 6 = 0 корни 2 и 3, и 2 + 3 = 5 и 2 × 3 = 6.
+x^2 - 28 x + 187 = 0 factors as ( x - 11 ) ( x - 17 ): 11 + 17 = 28 and 11 * 17 = 187; the roots are 11 and 17.
+корни x² + b x + c = 0 в сумме дают −b, а в произведении c: у x² − 9x + 20 = 0 корни 4 и 5, и 4 + 5 = 9 и 4 × 5 = 20.
+the roots add to the middle coefficient is false: x^2 - 13 x + 36 = 0 has roots 4 and 9, and 4 + 9 = 13, while the middle coefficient is -13.
+что значит разложить уравнение? уравнение раскладывается, когда оно записано произведением, равным нулю ровно в его корнях.
+the roots add to the middle coefficient is false: x^2 - 14 x + 48 = 0 has roots 6 and 8, and 6 + 8 = 14, while the middle coefficient is -14.
+каковы корни x² − 18x + 77 = 0? x² − 18x + 77 = 0 раскладывается как ( x − 7 ) ( x − 11 ): 7 + 11 = 18 и 7 × 11 = 77; корни — 7 и 11.
+the roots of x^2 + b x + c = 0 add to -b and multiply to c: in x^2 - 20 x + 96 = 0 the roots 8 and 12 give 8 + 12 = 20 and 8 * 12 = 96.
+каковы корни x² − 13x = 0? x² − 13x = 0 раскладывается как ( x ) ( x − 13 ): 0 + 13 = 13 и 0 × 13 = 0; корни — 0 и 13.
+the roots of x^2 + b x + c = 0 add to -b and multiply to c: in x^2 - 10 x + 21 = 0 the roots 3 and 7 give 3 + 7 = 10 and 3 * 7 = 21.
+x² − 28x + 187 = 0 раскладывается как ( x − 11 ) ( x − 17 ): 11 + 17 = 28 и 11 × 17 = 187; корни — 11 и 17.
+an equation factors when it is written as a product that is 0 exactly at its roots.
+корни складываются в средний коэффициент — ложь: у x² − 13x + 36 = 0 корни 4 и 9, и 4 + 9 = 13, а средний коэффициент −13.
 
 0 x^2 + 5 x + 20 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = -4: 5 × -4 + 20 = 0.
 у x² − x + 17 = 0 нет целого корня от 0 до 11: всякое значение даёт остаток.
@@ -842,103 +1131,186 @@ the square and the square root undo each other: 16 * 16 = 256, and the square ro
 what is the square root of 729? the square of 27 is 729, so the square root of 729 is 27.
 квадратный корень из 225 есть положительный целый корень x² − 225 = 0: 15 × 15 = 225.
 
-6 is a root of x^2 - 7 x + 6 = 0: 36 - 42 + 6 = 0.
-всякое значение удовлетворяет x² − 14x + 48 = 0 — ложь: при x = 11 выходит 121 − 154 + 48 = 15, а 15 не 0.
-является ли 6 корнем x^2 - 7 x + 6 = 0? да: 36 - 42 + 6 = 0.
-8 — корень уравнения x² − 8x = 0: 64 − 64 = 0.
-a root of an equation is a value that turns it into a true equality.
-является ли 8 корнем уравнения x² − 8x = 0? да: 64 − 64 = 0.
-a value is a root exactly when the substitution gives 0: in x^2 - 11 x + 30 = 0 the value 6 gives 36 - 66 + 30 = 0.
-6 — корень уравнения x² − 7x + 6 = 0: 36 − 42 + 6 = 0.
-every value satisfies x^2 - 17 x + 70 = 0 is false: at x = 11 it gives 121 - 187 + 70 = 4, and 4 is not 0.
-является ли 6 корнем уравнения x² − 7x + 6 = 0? да: 36 − 42 + 6 = 0.
-11 is not a root of x^2 - 8 x = 0: 121 - 88 = 33.
-корень уравнения — это значение, обращающее его в верное равенство.
-is 11 a root of x^2 - 8 x = 0? no: 121 - 88 = 33.
-значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 11x + 30 = 0 при x = 6 выходит 36 − 66 + 30 = 0.
-8 is not a root of x^2 - 7 x + 6 = 0: 64 - 56 + 6 = 14.
-всякое значение удовлетворяет x² − 17x + 70 = 0 — ложь: при x = 11 выходит 121 − 187 + 70 = 4, а 4 не 0.
-is 8 a root of x^2 - 7 x + 6 = 0? no: 64 - 56 + 6 = 14.
-11 — не корень уравнения x² − 8x = 0: 121 − 88 = 33.
-what is a root of an equation? a root of an equation is a value that turns it into a true equality.
-is 11 a root of the equation x² − 8x = 0? no: 121 − 88 = 33.
-a value is a root exactly when the substitution gives 0: in x^2 - 14 x + 48 = 0 the value 6 gives 36 - 84 + 48 = 0.
-8 — не корень уравнения x² − 7x + 6 = 0: 64 − 56 + 6 = 14.
-every value satisfies x^2 - 6 x + 5 = 0 is false: at x = 7 it gives 49 - 42 + 5 = 12, and 12 is not 0.
-is 8 a root of the equation x² − 7x + 6 = 0? no: 64 − 56 + 6 = 14.
-every value satisfies x^2 - 11 x + 30 = 0 is false: at x = 8 it gives 64 - 88 + 30 = 6, and 6 is not 0.
-что такое корень уравнения? корень уравнения — это значение, обращающее его в верное равенство.
-является ли 11 корнем x^2 - 8 x = 0? нет: 121 - 88 = 33.
-значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 14x + 48 = 0 при x = 6 выходит 36 − 84 + 48 = 0.
-is 8 a root of x^2 - 8 x = 0? yes: 64 - 64 = 0.
-всякое значение удовлетворяет x² − 6x + 5 = 0 — ложь: при x = 7 выходит 49 − 42 + 5 = 12, а 12 не 0.
-является ли 8 корнем x^2 - 7 x + 6 = 0? нет: 64 - 56 + 6 = 14.
-всякое значение удовлетворяет x² − 11x + 30 = 0 — ложь: при x = 8 выходит 64 − 88 + 30 = 6, а 6 не 0.
-is 6 a root of x^2 - 7 x + 6 = 0? yes: 36 - 42 + 6 = 0.
-является ли 11 корнем уравнения x² − 8x = 0? нет: 121 − 88 = 33.
-a value is a root exactly when the substitution gives 0: in x^2 - 17 x + 70 = 0 the value 10 gives 100 - 170 + 70 = 0.
-is 8 a root of the equation x² − 8x = 0? yes: 64 − 64 = 0.
-a value is a root exactly when the substitution gives 0: in x^2 - 13 x + 36 = 0 the value 4 gives 16 - 52 + 36 = 0.
-является ли 8 корнем уравнения x² − 7x + 6 = 0? нет: 64 − 56 + 6 = 14.
-every value satisfies x^2 - 14 x + 48 = 0 is false: at x = 11 it gives 121 - 154 + 48 = 15, and 15 is not 0.
-is 6 a root of the equation x² − 7x + 6 = 0? yes: 36 − 42 + 6 = 0.
-8 is a root of x^2 - 8 x = 0: 64 - 64 = 0.
-значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 17x + 70 = 0 при x = 10 выходит 100 − 170 + 70 = 0.
-является ли 8 корнем x^2 - 8 x = 0? да: 64 - 64 = 0.
-значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 13x + 36 = 0 при x = 4 выходит 16 − 52 + 36 = 0.
+the discriminant of x^2 - 18 x + 77 = 0 is 16: 324 - 308 = 16, and the roots are ( 18 + 4 ) / 2 = 11 and ( 18 - 4 ) / 2 = 7.
+у всякого уравнения два корня — ложь: у x² − 18x + 81 = 0 дискриминант 0 и один корень 9: 324 − 324 = 0.
+the discriminant counts the roots: for x^2 - 28 x + 187 = 0 it is 36 > 0, so there are two roots, 11 and 17.
+чему равен дискриминант x² − 28x + 187 = 0? дискриминант x² − 28x + 187 = 0 равен 36: 784 − 748 = 36, и корни ( 28 + 6 ) ÷ 2 = 17 и ( 28 − 6 ) ÷ 2 = 11.
+what are the real roots of x^2 - 3 x + 8 = 0? x^2 - 3 x + 8 = 0 has no real root: the discriminant 9 - 32 = -23 is negative.
+дискриминант x² − 13x = 0 равен 169: 169 − 0 = 169, и корни ( 13 + 13 ) ÷ 2 = 13 и ( 13 − 13 ) ÷ 2 = 0.
+x^2 - 2 x + 6 = 0 has no real root: the discriminant 4 - 24 = -20 is negative.
+что такое дискриминант? дискриминант x² + b x + c = 0 есть b × b − 4 × c: два корня, когда он положителен, один корень, когда он 0, и ни одного вещественного, когда он отрицателен.
+every equation has two roots is false: x^2 - 18 x + 81 = 0 has discriminant 0 and one root 9: 324 - 324 = 0.
+дискриминант считает корни: у x² − 13x = 0 он равен 169 > 0, значит корней два — 0 и 13.
+what is the discriminant of x^2 - 28 x + 187 = 0? the discriminant of x^2 - 28 x + 187 = 0 is 36: 784 - 748 = 36, and the roots are ( 28 + 6 ) / 2 = 17 and ( 28 - 6 ) / 2 = 11.
+у x² − 3x + 8 = 0 нет вещественного корня: дискриминант 9 − 32 = −23 отрицателен.
+the discriminant of x^2 - 13 x = 0 is 169: 169 - 0 = 169, and the roots are ( 13 + 13 ) / 2 = 13 and ( 13 - 13 ) / 2 = 0.
+каковы вещественные корни x² − x + 4 = 0? у x² − x + 4 = 0 нет вещественного корня: дискриминант 1 − 16 = −15 отрицателен.
+what is the discriminant? the discriminant of x^2 + b x + c = 0 is b * b - 4 * c: two roots when it is positive, one root when it is 0, no real root when it is negative.
+у всякого уравнения два корня — ложь: у x² − 16x + 64 = 0 дискриминант 0 и один корень 8: 256 − 256 = 0.
+the discriminant counts the roots: for x^2 - 13 x = 0 it is 169 > 0, so there are two roots, 0 and 13.
+дискриминант x² − 28x + 187 = 0 равен 36: 784 − 748 = 36, и корни ( 28 + 6 ) ÷ 2 = 17 и ( 28 − 6 ) ÷ 2 = 11.
+x^2 - 3 x + 8 = 0 has no real root: the discriminant 9 - 32 = -23 is negative.
+чему равен дискриминант x² − 18x + 77 = 0? дискриминант x² − 18x + 77 = 0 равен 16: 324 − 308 = 16, и корни ( 18 + 4 ) ÷ 2 = 11 и ( 18 − 4 ) ÷ 2 = 7.
+what are the real roots of x^2 - x + 4 = 0? x^2 - x + 4 = 0 has no real root: the discriminant 1 - 16 = -15 is negative.
+дискриминант x² + b x + c = 0 есть b × b − 4 × c: два корня, когда он положителен, один корень, когда он 0, и ни одного вещественного, когда он отрицателен.
+every equation has two roots is false: x^2 - 16 x + 64 = 0 has discriminant 0 and one root 8: 256 - 256 = 0.
+дискриминант считает корни: у x² − 18x + 77 = 0 он равен 16 > 0, значит корней два — 7 и 11.
+the discriminant of x^2 - 28 x + 187 = 0 is 36: 784 - 748 = 36, and the roots are ( 28 + 6 ) / 2 = 17 and ( 28 - 6 ) / 2 = 11.
+каковы вещественные корни x² − 2x + 6 = 0? у x² − 2x + 6 = 0 нет вещественного корня: дискриминант 4 − 24 = −20 отрицателен.
+what is the discriminant of x^2 - 18 x + 77 = 0? the discriminant of x^2 - 18 x + 77 = 0 is 16: 324 - 308 = 16, and the roots are ( 18 + 4 ) / 2 = 11 and ( 18 - 4 ) / 2 = 7.
+у x² − x + 4 = 0 нет вещественного корня: дискриминант 1 − 16 = −15 отрицателен.
+the discriminant of x^2 + b x + c = 0 is b * b - 4 * c: two roots when it is positive, one root when it is 0, no real root when it is negative.
+у всякого уравнения два корня — ложь: у x² − 14x + 49 = 0 дискриминант 0 и один корень 7: 196 − 196 = 0.
+the discriminant counts the roots: for x^2 - 18 x + 77 = 0 it is 16 > 0, so there are two roots, 7 and 11.
+чему равен дискриминант x² − 13x = 0? дискриминант x² − 13x = 0 равен 169: 169 − 0 = 169, и корни ( 13 + 13 ) ÷ 2 = 13 и ( 13 − 13 ) ÷ 2 = 0.
+what are the real roots of x^2 - 2 x + 6 = 0? x^2 - 2 x + 6 = 0 has no real root: the discriminant 4 - 24 = -20 is negative.
+дискриминант x² − 18x + 77 = 0 равен 16: 324 − 308 = 16, и корни ( 18 + 4 ) ÷ 2 = 11 и ( 18 − 4 ) ÷ 2 = 7.
+x^2 - x + 4 = 0 has no real root: the discriminant 1 - 16 = -15 is negative.
+дискриминант считает корни: у x² − 28x + 187 = 0 он равен 36 > 0, значит корней два — 11 и 17.
+every equation has two roots is false: x^2 - 14 x + 49 = 0 has discriminant 0 and one root 7: 196 - 196 = 0.
+каковы вещественные корни x² − 3x + 8 = 0? у x² − 3x + 8 = 0 нет вещественного корня: дискриминант 9 − 32 = −23 отрицателен.
+what is the discriminant of x^2 - 13 x = 0? the discriminant of x^2 - 13 x = 0 is 169: 169 - 0 = 169, and the roots are ( 13 + 13 ) / 2 = 13 and ( 13 - 13 ) / 2 = 0.
+у x² − 2x + 6 = 0 нет вещественного корня: дискриминант 4 − 24 = −20 отрицателен.
 
-an equation has one root is false: x^2 - 12 x + 35 = 0 gives 0 at x = 5 and at x = 7.
-в x² − 8x = 0 буква x стоит вместо значения: подставь 11 вместо x, и выйдет 121 − 88 = 33.
-what is a variable? x is a variable: it stands for a value, not for a number already known.
-переменная принимает все значения по очереди: в x² − 7x + 10 = 0 при x = 2, 5, 6 выходят 0, 0, 4.
-a variable takes every value in turn: in x^2 - 11 x + 30 = 0 the values 5, 6, 8 give 0, 0, 6.
-у уравнения один корень — ложь: x² − 9x + 20 = 0 даёт 0 при x = 4 и при x = 5.
-in x^2 - 8 x = 0 the letter x stands for a value: put 11 in place of x and it gives 121 - 88 = 33.
-x — переменная: она стоит вместо значения, а не вместо уже известного числа.
-a variable takes every value in turn: in x^2 - 7 x + 10 = 0 the values 2, 5, 6 give 0, 0, 4.
-у уравнения один корень — ложь: x² − 15x + 54 = 0 даёт 0 при x = 6 и при x = 9.
+is 8 a root of x^2 - 7 x + 6 = 0? no: 64 - 56 + 6 = 14.
+is 14 a root of the equation x² − 27x + 182 = 0? yes: 196 − 378 + 182 = 0.
+every value satisfies x^2 - 6 x + 5 = 0 is false: at x = 7 it gives 49 - 42 + 5 = 12, and 12 is not 0.
+является ли 15 корнем x² − 27x + 182 = 0? нет: 225 − 405 + 182 = 2. стало быть 15 обращает левую часть в 2, а не в 0. корень уравнения — это значение, обращающее его в верное равенство.
+is 8 a root of x^2 - 8 x = 0? yes: 64 - 64 = 0.
+is 15 a root of the equation x² − 27x + 182 = 0? no: 225 − 405 + 182 = 2.
+a value is a root exactly when the substitution gives 0: in x^2 - 17 x + 70 = 0 the value 10 gives 100 - 170 + 70 = 0.
+является ли 6 корнем уравнения x² − 7x + 6 = 0? да: 36 − 42 + 6 = 0.
+8 is a root of x^2 - 8 x = 0: 64 - 64 = 0.
+всякое значение удовлетворяет x² − 11x + 30 = 0 — ложь: при x = 8 выходит 64 − 88 + 30 = 6, а 6 не 0.
+why is 11 not a root of x^2 - 8 x = 0? since 121 - 88 = 33: 11 turns the left side into 33, not 0. a root of an equation is a value that turns it into a true equality.
+является ли 8 корнем уравнения x² − 7x + 6 = 0? нет: 64 − 56 + 6 = 14.
+is 13 a root of x^2 - 27 x + 182 = 0? yes: 169 - 351 + 182 = 0.
+значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 13x + 36 = 0 при x = 4 выходит 16 − 52 + 36 = 0.
+what is a root of an equation? a root of an equation is a value that turns it into a true equality.
+является ли 8 корнем уравнения x² − 8x = 0? да: 64 − 64 = 0.
+14 is a root of x^2 - 27 x + 182 = 0: 196 - 378 + 182 = 0.
+является ли 6 корнем x² − 7x + 6 = 0? да: 36 − 42 + 6 = 0. значит 6 обращает левую часть в 0. корень уравнения — это значение, обращающее его в верное равенство.
+является ли 1 корнем x^2 - 7 x + 6 = 0? да: 1 - 7 + 6 = 0.
+11 — не корень уравнения x² − 8x = 0: 121 − 88 = 33.
+every value satisfies x^2 - 17 x + 70 = 0 is false: at x = 11 it gives 121 - 187 + 70 = 4, and 4 is not 0.
+является ли 14 корнем x² − 27x + 182 = 0? да: 196 − 378 + 182 = 0. стало быть 14 обращает левую часть в 0. корень уравнения — это значение, обращающее его в верное равенство.
+8 is not a root of x^2 - 7 x + 6 = 0: 64 - 56 + 6 = 14.
+является ли 13 корнем уравнения x² − 27x + 182 = 0? да: 169 − 351 + 182 = 0.
+a value is a root exactly when the substitution gives 0: in x^2 - 14 x + 48 = 0 the value 6 gives 36 - 84 + 48 = 0.
+is 6 a root of the equation x² − 7x + 6 = 0? yes: 36 − 42 + 6 = 0.
+является ли 11 корнем x^2 - 8 x = 0? нет: 121 - 88 = 33.
+15 — не корень уравнения x² − 27x + 182 = 0: 225 − 405 + 182 = 2.
+why is 8 a root of x^2 - 8 x = 0? since 64 - 64 = 0: 8 turns the left side into 0. a root of an equation is a value that turns it into a true equality.
+is 8 a root of the equation x² − 7x + 6 = 0? no: 64 − 56 + 6 = 14.
+является ли 14 корнем x^2 - 27 x + 182 = 0? да: 196 - 378 + 182 = 0.
+всякое значение удовлетворяет x² − 6x + 5 = 0 — ложь: при x = 7 выходит 49 − 42 + 5 = 12, а 12 не 0.
+a root of an equation is a value that turns it into a true equality.
+is 8 a root of the equation x² − 8x = 0? yes: 64 − 64 = 0.
+является ли 15 корнем x^2 - 27 x + 182 = 0? нет: 225 - 405 + 182 = 2.
+значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 17x + 70 = 0 при x = 10 выходит 100 − 170 + 70 = 0.
+is 1 a root of x^2 - 7 x + 6 = 0? yes: 1 - 7 + 6 = 0.
+8 — корень уравнения x² − 8x = 0: 64 − 64 = 0.
+every value satisfies x^2 - 14 x + 48 = 0 is false: at x = 11 it gives 121 - 154 + 48 = 15, and 15 is not 0.
+почему 11 — не корень x² − 8x = 0? так как 121 − 88 = 33: 11 обращает левую часть в 33, а не в 0. корень уравнения — это значение, обращающее его в верное равенство.
+6 is a root of x^2 - 7 x + 6 = 0: 36 - 42 + 6 = 0.
+is 13 a root of the equation x² − 27x + 182 = 0? yes: 169 − 351 + 182 = 0.
+a value is a root exactly when the substitution gives 0: in x^2 - 11 x + 30 = 0 the value 6 gives 36 - 66 + 30 = 0.
+что такое корень уравнения? корень уравнения — это значение, обращающее его в верное равенство.
+is 11 a root of x^2 - 8 x = 0? no: 121 - 88 = 33.
+14 — корень уравнения x² − 27x + 182 = 0: 196 − 378 + 182 = 0.
+is 8 a root of x^2 - 7 x + 6 = 0? no: 64 - 56 + 6 = 14. therefore 8 turns the left side into 14, not 0. a root of an equation is a value that turns it into a true equality.
+является ли 1 корнем уравнения x² − 7x + 6 = 0? да: 1 − 7 + 6 = 0.
+is 14 a root of x^2 - 27 x + 182 = 0? yes: 196 - 378 + 182 = 0.
+всякое значение удовлетворяет x² − 17x + 70 = 0 — ложь: при x = 11 выходит 121 − 187 + 70 = 4, а 4 не 0.
+is 15 a root of x^2 - 27 x + 182 = 0? no: 225 - 405 + 182 = 2. hence 15 turns the left side into 2, not 0. a root of an equation is a value that turns it into a true equality.
+8 — не корень уравнения x² − 7x + 6 = 0: 64 − 56 + 6 = 14.
+is 15 a root of x^2 - 27 x + 182 = 0? no: 225 - 405 + 182 = 2.
+значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 14x + 48 = 0 при x = 6 выходит 36 − 84 + 48 = 0.
+является ли 6 корнем x^2 - 7 x + 6 = 0? да: 36 - 42 + 6 = 0.
+является ли 11 корнем уравнения x² − 8x = 0? нет: 121 − 88 = 33.
+every value satisfies x^2 - 11 x + 30 = 0 is false: at x = 8 it gives 64 - 88 + 30 = 6, and 6 is not 0.
+почему 8 — корень x² − 8x = 0? так как 64 − 64 = 0: 8 обращает левую часть в 0. корень уравнения — это значение, обращающее его в верное равенство.
+является ли 8 корнем x^2 - 7 x + 6 = 0? нет: 64 - 56 + 6 = 14.
+является ли 14 корнем уравнения x² − 27x + 182 = 0? да: 196 − 378 + 182 = 0.
+a value is a root exactly when the substitution gives 0: in x^2 - 13 x + 36 = 0 the value 4 gives 16 - 52 + 36 = 0.
+корень уравнения — это значение, обращающее его в верное равенство.
+является ли 8 корнем x^2 - 8 x = 0? да: 64 - 64 = 0.
+является ли 15 корнем уравнения x² − 27x + 182 = 0? нет: 225 − 405 + 182 = 2.
+is 6 a root of x^2 - 7 x + 6 = 0? yes: 36 - 42 + 6 = 0. therefore 6 turns the left side into 0. a root of an equation is a value that turns it into a true equality.
+is 1 a root of the equation x² − 7x + 6 = 0? yes: 1 − 7 + 6 = 0.
+11 is not a root of x^2 - 8 x = 0: 121 - 88 = 33.
+всякое значение удовлетворяет x² − 14x + 48 = 0 — ложь: при x = 11 выходит 121 − 154 + 48 = 15, а 15 не 0.
+is 14 a root of x^2 - 27 x + 182 = 0? yes: 196 - 378 + 182 = 0. hence 14 turns the left side into 0. a root of an equation is a value that turns it into a true equality.
+6 — корень уравнения x² − 7x + 6 = 0: 36 − 42 + 6 = 0.
+является ли 13 корнем x^2 - 27 x + 182 = 0? да: 169 - 351 + 182 = 0.
+значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 11x + 30 = 0 при x = 6 выходит 36 − 66 + 30 = 0.
+is 6 a root of x^2 - 7 x + 6 = 0? yes: 36 - 42 + 6 = 0.
+is 11 a root of the equation x² − 8x = 0? no: 121 − 88 = 33.
+15 is not a root of x^2 - 27 x + 182 = 0: 225 - 405 + 182 = 2.
+является ли 8 корнем x² − 7x + 6 = 0? нет: 64 − 56 + 6 = 14. значит 8 обращает левую часть в 14, а не в 0. корень уравнения — это значение, обращающее его в верное равенство.
+
 an equation has one root is false: x^2 - 9 x + 20 = 0 gives 0 at x = 4 and at x = 5.
 в x² − 7x + 6 = 0 буква x стоит вместо значения: подставь 6 вместо x, и выйдет 36 − 42 + 6 = 0.
-x is a variable: it stands for a value, not for a number already known.
-переменная принимает все значения по очереди: в x² − 16x + 63 = 0 при x = 7, 9, 12 выходят 0, 0, 15.
-an equation has one root is false: x^2 - 15 x + 54 = 0 gives 0 at x = 6 and at x = 9.
-у уравнения один корень — ложь: x² − 11x + 24 = 0 даёт 0 при x = 3 и при x = 8.
-in x^2 - 7 x + 6 = 0 the letter x stands for a value: put 6 in place of x and it gives 36 - 42 + 6 = 0.
-переменная принимает все значения по очереди: в x² − 12x + 32 = 0 при x = 4, 8, 10 выходят 0, 0, 12.
-a variable takes every value in turn: in x^2 - 16 x + 63 = 0 the values 7, 9, 12 give 0, 0, 15.
-у уравнения один корень — ложь: x² − 12x + 35 = 0 даёт 0 при x = 5 и при x = 7.
+a variable takes every value in turn: in x^2 - 12 x + 32 = 0 the values 4, 8, 10 give 0, 0, 12.
+у уравнения один корень — ложь: x² − 15x + 54 = 0 даёт 0 при x = 6 и при x = 9.
 an equation has one root is false: x^2 - 11 x + 24 = 0 gives 0 at x = 3 and at x = 8.
 что такое переменная? x — переменная: она стоит вместо значения, а не вместо уже известного числа.
-a variable takes every value in turn: in x^2 - 12 x + 32 = 0 the values 4, 8, 10 give 0, 0, 12.
+a variable takes every value in turn: in x^2 - 7 x + 10 = 0 the values 2, 5, 6 give 0, 0, 4.
+у уравнения один корень — ложь: x² − 12x + 35 = 0 даёт 0 при x = 5 и при x = 7.
+in x^2 - 27 x + 182 = 0 the letter x stands for a value: put 14 in place of x and it gives 196 - 378 + 182 = 0.
+x — переменная: она стоит вместо значения, а не вместо уже известного числа.
+a variable takes every value in turn: in x^2 - 16 x + 63 = 0 the values 7, 9, 12 give 0, 0, 15.
+у уравнения один корень — ложь: x² − 9x + 20 = 0 даёт 0 при x = 4 и при x = 5.
+in x^2 - 8 x = 0 the letter x stands for a value: put 11 in place of x and it gives 121 - 88 = 33.
+переменная принимает все значения по очереди: в x² − 12x + 32 = 0 при x = 4, 8, 10 выходят 0, 0, 12.
+a variable takes every value in turn: in x^2 - 11 x + 30 = 0 the values 5, 6, 8 give 0, 0, 6.
+у уравнения один корень — ложь: x² − 11x + 24 = 0 даёт 0 при x = 3 и при x = 8.
+in x^2 - 7 x + 6 = 0 the letter x stands for a value: put 6 in place of x and it gives 36 - 42 + 6 = 0.
+переменная принимает все значения по очереди: в x² − 7x + 10 = 0 при x = 2, 5, 6 выходят 0, 0, 4.
+an equation has one root is false: x^2 - 15 x + 54 = 0 gives 0 at x = 6 and at x = 9.
+в x² − 27x + 182 = 0 буква x стоит вместо значения: подставь 14 вместо x, и выйдет 196 − 378 + 182 = 0.
+what is a variable? x is a variable: it stands for a value, not for a number already known.
+переменная принимает все значения по очереди: в x² − 16x + 63 = 0 при x = 7, 9, 12 выходят 0, 0, 15.
+an equation has one root is false: x^2 - 12 x + 35 = 0 gives 0 at x = 5 and at x = 7.
+в x² − 8x = 0 буква x стоит вместо значения: подставь 11 вместо x, и выйдет 121 − 88 = 33.
+x is a variable: it stands for a value, not for a number already known.
 переменная принимает все значения по очереди: в x² − 11x + 30 = 0 при x = 5, 6, 8 выходят 0, 0, 6.
 
+what are the roots of x^2 - 8 x = 0? x^2 - 8 x = 0 factors as ( x ) ( x - 8 ): 0 + 8 = 8 and 0 * 8 = 0; the roots are 0 and 8.
+корни x² + b x + c = 0 в сумме дают −b, а в произведении c: у x² − 10x + 24 = 0 корни 4 и 6, и 4 + 6 = 10 и 4 × 6 = 24.
+solve x squared minus eight x equals zero: x^2 - 8 x = 0 factors as ( x ) ( x - 8 ): 0 + 8 = 8 and 0 * 8 = 0; the roots are 0 and 8.
+корни x² + b x + c = 0 в сумме дают −b, а в произведении c: у x² − 15x + 50 = 0 корни 5 и 10, и 5 + 10 = 15 и 5 × 10 = 50.
+x^2 - 27 x + 182 = 0 factors as ( x - 13 ) ( x - 14 ): 13 + 14 = 27 and 13 * 14 = 182; the roots are 13 and 14.
+корни x² + b x + c = 0 в сумме дают −b, а в произведении c: у x² − 14x + 48 = 0 корни 6 и 8, и 6 + 8 = 14 и 6 × 8 = 48.
+what are the roots of x^2 - 27 x + 182 = 0? x^2 - 27 x + 182 = 0 factors as ( x - 13 ) ( x - 14 ): 13 + 14 = 27 and 13 * 14 = 182; the roots are 13 and 14.
+уравнение раскладывается, когда оно записано произведением, равным нулю ровно в его корнях.
 the roots add to the middle coefficient is false: x^2 - 13 x + 40 = 0 has roots 5 and 8, and 5 + 8 = 13, while the middle coefficient is -13.
 что значит разложить уравнение? уравнение раскладывается, когда оно записано произведением, равным нулю ровно в его корнях.
-the roots of x^2 + b x + c = 0 add to -b and multiply to c: in x^2 - 10 x + 24 = 0 the roots 4 and 6 give 4 + 6 = 10 and 4 * 6 = 24.
-корни складываются в средний коэффициент — ложь: у x² − 13x + 40 = 0 корни 5 и 8, и 5 + 8 = 13, а средний коэффициент −13.
-x^2 - 7 x + 6 = 0 factors as ( x - 1 ) ( x - 6 ): 1 + 6 = 7 and 1 * 6 = 6; the roots are 1 and 6.
-корни x² + b x + c = 0 в сумме дают −b, а в произведении c: у x² − 10x + 24 = 0 корни 4 и 6, и 4 + 6 = 10 и 4 × 6 = 24.
 the roots add to the middle coefficient is false: x^2 - 16 x + 60 = 0 has roots 6 and 10, and 6 + 10 = 16, while the middle coefficient is -16.
 x² − 7x + 6 = 0 раскладывается как ( x − 1 ) ( x − 6 ): 1 + 6 = 7 и 1 × 6 = 6; корни — 1 и 6.
-the roots of x^2 + b x + c = 0 add to -b and multiply to c: in x^2 - 15 x + 50 = 0 the roots 5 and 10 give 5 + 10 = 15 and 5 * 10 = 50.
-корни складываются в средний коэффициент — ложь: у x² − 16x + 60 = 0 корни 6 и 10, и 6 + 10 = 16, а средний коэффициент −16.
-what are the roots of x^2 - 7 x + 6 = 0? x^2 - 7 x + 6 = 0 factors as ( x - 1 ) ( x - 6 ): 1 + 6 = 7 and 1 * 6 = 6; the roots are 1 and 6.
-корни x² + b x + c = 0 в сумме дают −b, а в произведении c: у x² − 15x + 50 = 0 корни 5 и 10, и 5 + 10 = 15 и 5 × 10 = 50.
 the roots add to the middle coefficient is false: x^2 - 19 x + 84 = 0 has roots 7 and 12, and 7 + 12 = 19, while the middle coefficient is -19.
 каковы корни x² − 7x + 6 = 0? x² − 7x + 6 = 0 раскладывается как ( x − 1 ) ( x − 6 ): 1 + 6 = 7 и 1 × 6 = 6; корни — 1 и 6.
-the roots of x^2 + b x + c = 0 add to -b and multiply to c: in x^2 - 14 x + 48 = 0 the roots 6 and 8 give 6 + 8 = 14 and 6 * 8 = 48.
-корни складываются в средний коэффициент — ложь: у x² − 19x + 84 = 0 корни 7 и 12, и 7 + 12 = 19, а средний коэффициент −19.
-x^2 - 8 x = 0 factors as ( x ) ( x - 8 ): 0 + 8 = 8 and 0 * 8 = 0; the roots are 0 and 8.
-корни x² + b x + c = 0 в сумме дают −b, а в произведении c: у x² − 14x + 48 = 0 корни 6 и 8, и 6 + 8 = 14 и 6 × 8 = 48.
 the roots add to the middle coefficient is false: x^2 - 17 x + 72 = 0 has roots 8 and 9, and 8 + 9 = 17, while the middle coefficient is -17.
-x² − 8x = 0 раскладывается как ( x ) ( x − 8 ): 0 + 8 = 8 и 0 × 8 = 0; корни — 0 и 8.
-an equation factors when it is written as a product that is 0 exactly at its roots.
-корни складываются в средний коэффициент — ложь: у x² − 17x + 72 = 0 корни 8 и 9, и 8 + 9 = 17, а средний коэффициент −17.
-what are the roots of x^2 - 8 x = 0? x^2 - 8 x = 0 factors as ( x ) ( x - 8 ): 0 + 8 = 8 and 0 * 8 = 0; the roots are 0 and 8.
-уравнение раскладывается, когда оно записано произведением, равным нулю ровно в его корнях.
+решите x в квадрате минус семь x плюс шесть равно нулю: x² − 7x + 6 = 0 раскладывается как ( x − 1 ) ( x − 6 ): 1 + 6 = 7 и 1 × 6 = 6; корни — 1 и 6.
 the roots of x^2 + b x + c = 0 add to -b and multiply to c: in x^2 - 11 x + 24 = 0 the roots 3 and 8 give 3 + 8 = 11 and 3 * 8 = 24.
+x² − 8x = 0 раскладывается как ( x ) ( x − 8 ): 0 + 8 = 8 и 0 × 8 = 0; корни — 0 и 8.
+the roots of x^2 + b x + c = 0 add to -b and multiply to c: in x^2 - 10 x + 24 = 0 the roots 4 and 6 give 4 + 6 = 10 and 4 * 6 = 24.
 каковы корни x² − 8x = 0? x² − 8x = 0 раскладывается как ( x ) ( x − 8 ): 0 + 8 = 8 и 0 × 8 = 0; корни — 0 и 8.
+the roots of x^2 + b x + c = 0 add to -b and multiply to c: in x^2 - 15 x + 50 = 0 the roots 5 and 10 give 5 + 10 = 15 and 5 * 10 = 50.
+решите x в квадрате минус восемь x равно нулю: x² − 8x = 0 раскладывается как ( x ) ( x − 8 ): 0 + 8 = 8 и 0 × 8 = 0; корни — 0 и 8.
+the roots of x^2 + b x + c = 0 add to -b and multiply to c: in x^2 - 14 x + 48 = 0 the roots 6 and 8 give 6 + 8 = 14 and 6 * 8 = 48.
+x² − 27x + 182 = 0 раскладывается как ( x − 13 ) ( x − 14 ): 13 + 14 = 27 и 13 × 14 = 182; корни — 13 и 14.
+an equation factors when it is written as a product that is 0 exactly at its roots.
+каковы корни x² − 27x + 182 = 0? x² − 27x + 182 = 0 раскладывается как ( x − 13 ) ( x − 14 ): 13 + 14 = 27 и 13 × 14 = 182; корни — 13 и 14.
 what does it mean to factor an equation? an equation factors when it is written as a product that is 0 exactly at its roots.
+корни складываются в средний коэффициент — ложь: у x² − 13x + 40 = 0 корни 5 и 8, и 5 + 8 = 13, а средний коэффициент −13.
+x^2 - 7 x + 6 = 0 factors as ( x - 1 ) ( x - 6 ): 1 + 6 = 7 and 1 * 6 = 6; the roots are 1 and 6.
+корни складываются в средний коэффициент — ложь: у x² − 16x + 60 = 0 корни 6 и 10, и 6 + 10 = 16, а средний коэффициент −16.
+what are the roots of x^2 - 7 x + 6 = 0? x^2 - 7 x + 6 = 0 factors as ( x - 1 ) ( x - 6 ): 1 + 6 = 7 and 1 * 6 = 6; the roots are 1 and 6.
+корни складываются в средний коэффициент — ложь: у x² − 19x + 84 = 0 корни 7 и 12, и 7 + 12 = 19, а средний коэффициент −19.
+solve x squared minus seven x plus six equals zero: x^2 - 7 x + 6 = 0 factors as ( x - 1 ) ( x - 6 ): 1 + 6 = 7 and 1 * 6 = 6; the roots are 1 and 6.
+корни складываются в средний коэффициент — ложь: у x² − 17x + 72 = 0 корни 8 и 9, и 8 + 9 = 17, а средний коэффициент −17.
+x^2 - 8 x = 0 factors as ( x ) ( x - 8 ): 0 + 8 = 8 and 0 * 8 = 0; the roots are 0 and 8.
 корни x² + b x + c = 0 в сумме дают −b, а в произведении c: у x² − 11x + 24 = 0 корни 3 и 8, и 3 + 8 = 11 и 3 × 8 = 24.
 
 0 x^2 + 3 x - 9 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = 3: 3 × 3 - 9 = 0.
@@ -1052,3 +1424,44 @@ the square and the square root undo each other: 19 * 19 = 361, and the square ro
 чему равен квадратный корень из 729? квадрат 27 есть 729, значит квадратный корень из 729 есть 27.
 what is the square root of 1024? the square of 32 is 1024, so the square root of 1024 is 32.
 квадрат и квадратный корень отменяют друг друга: 20 × 20 = 400, а квадратный корень из 400 есть 20.
+
+the discriminant of x^2 - 27 x + 182 = 0 is 1: 729 - 728 = 1, and the roots are ( 27 + 1 ) / 2 = 14 and ( 27 - 1 ) / 2 = 13.
+у x² − x + 3 = 0 нет вещественного корня: дискриминант 1 − 12 = −11 отрицателен.
+what is the discriminant of x^2 - 8 x = 0? the discriminant of x^2 - 8 x = 0 is 64: 64 - 0 = 64, and the roots are ( 8 + 8 ) / 2 = 8 and ( 8 - 8 ) / 2 = 0.
+каковы вещественные корни x² − 3x + 4 = 0? у x² − 3x + 4 = 0 нет вещественного корня: дискриминант 9 − 16 = −7 отрицателен.
+the discriminant of x^2 - 8 x = 0 is 64: 64 - 0 = 64, and the roots are ( 8 + 8 ) / 2 = 8 and ( 8 - 8 ) / 2 = 0.
+у x² − 3x + 4 = 0 нет вещественного корня: дискриминант 9 − 16 = −7 отрицателен.
+what is the discriminant of x^2 - 7 x + 6 = 0? the discriminant of x^2 - 7 x + 6 = 0 is 25: 49 - 24 = 25, and the roots are ( 7 + 5 ) / 2 = 6 and ( 7 - 5 ) / 2 = 1.
+каковы вещественные корни x² − 2x + 2 = 0? у x² − 2x + 2 = 0 нет вещественного корня: дискриминант 4 − 8 = −4 отрицателен.
+the discriminant of x^2 - 7 x + 6 = 0 is 25: 49 - 24 = 25, and the roots are ( 7 + 5 ) / 2 = 6 and ( 7 - 5 ) / 2 = 1.
+у x² − 2x + 2 = 0 нет вещественного корня: дискриминант 4 − 8 = −4 отрицателен.
+what is the discriminant? the discriminant of x^2 + b x + c = 0 is b * b - 4 * c: two roots when it is positive, one root when it is 0, no real root when it is negative.
+у всякого уравнения два корня — ложь: у x² − 4x + 4 = 0 дискриминант 0 и один корень 2: 16 − 16 = 0.
+the discriminant of x^2 + b x + c = 0 is b * b - 4 * c: two roots when it is positive, one root when it is 0, no real root when it is negative.
+у всякого уравнения два корня — ложь: у x² − 2x + 1 = 0 дискриминант 0 и один корень 1: 4 − 4 = 0.
+the discriminant counts the roots: for x^2 - 27 x + 182 = 0 it is 1 > 0, so there are two roots, 13 and 14.
+у всякого уравнения два корня — ложь: у x² − 18x + 81 = 0 дискриминант 0 и один корень 9: 324 − 324 = 0.
+the discriminant counts the roots: for x^2 - 8 x = 0 it is 64 > 0, so there are two roots, 0 and 8.
+чему равен дискриминант x² − 27x + 182 = 0? дискриминант x² − 27x + 182 = 0 равен 1: 729 − 728 = 1, и корни ( 27 + 1 ) ÷ 2 = 14 и ( 27 − 1 ) ÷ 2 = 13.
+the discriminant counts the roots: for x^2 - 7 x + 6 = 0 it is 25 > 0, so there are two roots, 1 and 6.
+дискриминант x² − 27x + 182 = 0 равен 1: 729 − 728 = 1, и корни ( 27 + 1 ) ÷ 2 = 14 и ( 27 − 1 ) ÷ 2 = 13.
+what are the real roots of x^2 - x + 3 = 0? x^2 - x + 3 = 0 has no real root: the discriminant 1 - 12 = -11 is negative.
+чему равен дискриминант x² − 8x = 0? дискриминант x² − 8x = 0 равен 64: 64 − 0 = 64, и корни ( 8 + 8 ) ÷ 2 = 8 и ( 8 − 8 ) ÷ 2 = 0.
+x^2 - x + 3 = 0 has no real root: the discriminant 1 - 12 = -11 is negative.
+дискриминант x² − 8x = 0 равен 64: 64 − 0 = 64, и корни ( 8 + 8 ) ÷ 2 = 8 и ( 8 − 8 ) ÷ 2 = 0.
+what are the real roots of x^2 - 3 x + 4 = 0? x^2 - 3 x + 4 = 0 has no real root: the discriminant 9 - 16 = -7 is negative.
+чему равен дискриминант x² − 7x + 6 = 0? дискриминант x² − 7x + 6 = 0 равен 25: 49 − 24 = 25, и корни ( 7 + 5 ) ÷ 2 = 6 и ( 7 − 5 ) ÷ 2 = 1.
+x^2 - 3 x + 4 = 0 has no real root: the discriminant 9 - 16 = -7 is negative.
+дискриминант x² − 7x + 6 = 0 равен 25: 49 − 24 = 25, и корни ( 7 + 5 ) ÷ 2 = 6 и ( 7 − 5 ) ÷ 2 = 1.
+what are the real roots of x^2 - 2 x + 2 = 0? x^2 - 2 x + 2 = 0 has no real root: the discriminant 4 - 8 = -4 is negative.
+что такое дискриминант? дискриминант x² + b x + c = 0 есть b × b − 4 × c: два корня, когда он положителен, один корень, когда он 0, и ни одного вещественного, когда он отрицателен.
+x^2 - 2 x + 2 = 0 has no real root: the discriminant 4 - 8 = -4 is negative.
+дискриминант x² + b x + c = 0 есть b × b − 4 × c: два корня, когда он положителен, один корень, когда он 0, и ни одного вещественного, когда он отрицателен.
+every equation has two roots is false: x^2 - 4 x + 4 = 0 has discriminant 0 and one root 2: 16 - 16 = 0.
+дискриминант считает корни: у x² − 27x + 182 = 0 он равен 1 > 0, значит корней два — 13 и 14.
+every equation has two roots is false: x^2 - 2 x + 1 = 0 has discriminant 0 and one root 1: 4 - 4 = 0.
+дискриминант считает корни: у x² − 8x = 0 он равен 64 > 0, значит корней два — 0 и 8.
+every equation has two roots is false: x^2 - 18 x + 81 = 0 has discriminant 0 and one root 9: 324 - 324 = 0.
+дискриминант считает корни: у x² − 7x + 6 = 0 он равен 25 > 0, значит корней два — 1 и 6.
+what is the discriminant of x^2 - 27 x + 182 = 0? the discriminant of x^2 - 27 x + 182 = 0 is 1: 729 - 728 = 1, and the roots are ( 27 + 1 ) / 2 = 14 and ( 27 - 1 ) / 2 = 13.
+каковы вещественные корни x² − x + 3 = 0? у x² − x + 3 = 0 нет вещественного корня: дискриминант 1 − 12 = −11 отрицателен.

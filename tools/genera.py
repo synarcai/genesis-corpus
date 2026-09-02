@@ -70,6 +70,13 @@ from rugram import ПО_ФОРМЕ  # noqa: E402
          "selfmeasure", "ru_conversion", "ru_compare", "ru_story", "space", "gsmforms",
          # СУД МЕСТОИМЕНИЙ пересчитывает итог страницы K = N ± M (03.09).
          "pronoun",
+         # РАССУЖДЕНИЯ (дом речи, 03.09): связка «hence» стоит в признаке
+         # счёта; суды дознания и уравнений пересчитывают свидетеля
+         # рассуждения сами («40 = 2 × 20», «4 − 6 + 2 = 0»).
+         "inquiry", "equation",
+         # СУД ПРОСТРАНСТВ пересчитывает число вершин и рёбер в вопросе
+         # «how many edges does graph … have?» (03.09).
+         "mathspaces",
          "inquiry_es_it", "arith", "episode", "algo", "number", "sequence", "geometry",
          "linalg", "statistics", "program", "compsci", "unit",
          "notation", "formula", "physlaw", "physics", "calendar",
@@ -87,7 +94,10 @@ from rugram import ПО_ФОРМЕ  # noqa: E402
          "geometry", "program", "proof", "linalg", "selfmeasure",
          # СУД ПРОСТРАНСТВ сверяет счётную форму при числе вершин и
          # рёбер с домом русского счёта (03.09, 20 строк).
-         "mathspaces"}),
+         "mathspaces",
+         # СУД ШКОЛЬНЫХ ФОРМ сверяет все пары «число слово» своих русских
+         # строк с домом счёта, включая косвенную форму под предлогом.
+         "gsmforms"}),
     Род("имя знака",
         "«читается как»: утверждение об ИМЕНИ, и его сверяют с "
         "объявлением, а не с числом",

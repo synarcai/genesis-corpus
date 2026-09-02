@@ -29,6 +29,7 @@ import sys
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "scripts"))
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
+import discourse  # noqa: E402
 from genesis import Unreadable, worlds  # noqa: E402
 
 # РУБЕЖ-ДОЛГА: ЛОЖНЫХ_РУБЕЖ = 0
@@ -70,6 +71,8 @@ from genesis import Unreadable, worlds  # noqa: E402
      ("the square of a number is the number multiplied by itself.",
       "квадрат числа — это число, умноженное на само себя.")),
 )
+ОПРЕДЕЛЕНИЯ_ПРОСТОТА = {"en": РОДЫ[0][1][0], "ru": РОДЫ[0][1][1]}
+ОПРЕДЕЛЕНИЯ_ДЕЛИМОСТЬ = {"en": РОДЫ[1][1][0], "ru": РОДЫ[1][1][1]}
 ОПРЕДЕЛЕНИЯ = frozenset(о for _в, опр in РОДЫ for о in опр)
 ОТВЕТЫ = frozenset(f"{в} {о}" for вопр, опр in РОДЫ
                    for в, о in zip(вопр, опр))
@@ -396,6 +399,74 @@ def _квадрат_повеств(м):
 ПРАВИЛА = tuple((re.compile(о), п) for о, п in ОБРАЗЦЫ)
 
 
+# ------------------------------------------------------- РАССУЖДЕНИЕ
+# Рассуждение судится ЧАСТЯМИ (дом речи): вердикт — слово полярности,
+# свидетель — счёт, пересчитанный здесь, вывод — объявленная фраза рода на
+# тех же числах, закон — определение рода из свода; связка — из пакета.
+ПРОСТОТА_ВОПРОС = re.compile(r"^(?:is (\d+) a prime number|является ли (\d+) простым числом|why is (\d+) (?:a prime number|not a prime number)|почему (\d+) — (?:простое число|не простое число))$")
+ДЕЛИМОСТЬ_ВОПРОС = re.compile(r"^(?:is (\d+) divisible by (\d+)|делится ли (\d+) на (\d+)|why is (\d+) (?:divisible|not divisible) by (\d+)|почему (\d+) (?:делится|не делится) на (\d+))$")
+ВЫВОД_ПРОСТОТА = {
+    ("en", True): "{n} has no divisor between 1 and {n}",
+    ("en", False): "{n} has the divisor {д} besides 1 and itself",
+    ("ru", True): "у {n} нет делителей между 1 и {n}",
+    ("ru", False): "у {n} есть делитель {д}, кроме 1 и его самого",
+}
+ВЫВОД_ДЕЛИМОСТЬ = {
+    ("en", True): "{a} leaves remainder 0 when divided by {b}",
+    ("en", False): "{a} leaves remainder {r} when divided by {b}",
+    ("ru", True): "{a} даёт остаток 0 при делении на {b}",
+    ("ru", False): "{a} даёт остаток {r} при делении на {b}",
+}
+ВЕРДИКТЫ = {"yes": True, "да": True, "no": False, "нет": False}
+
+
+def _рассуждение(с):
+    """(судимо, истинно) для строки-рассуждения, или None — не рассуждение."""
+    язык = "ru" if re.search(r"[а-яё]", с) else "en"
+    ч_ = discourse.части(с, язык)
+    if ч_ is None:
+        return None
+    if ч_["связка"] is None:
+        return True, False
+    вопрос = ч_["вопрос"]
+    м = ПРОСТОТА_ВОПРОС.match(вопрос)
+    if м:
+        n = int(next(x for x in м.groups() if x))
+        прост = простое(n)
+        # полярность: словом вердикта или словом вопроса «почему … не»
+        if ч_["вердикт"] is not None:
+            if ВЕРДИКТЫ.get(ч_["вердикт"]) != прост:
+                return True, False
+        elif (" not " in вопрос or " не " in вопрос) == прост:
+            return True, False
+        св = ч_["свидетель"]
+        д = 0
+        if прост:
+            верно = св in (f"the divisors of {n} are 1 and {n}", f"делители {n} — 1 и {n}")
+        else:
+            мм = re.fullmatch(rf"{n} = (\d+) × (\d+)", св)
+            верно = bool(мм) and int(мм.group(1)) * int(мм.group(2)) == n and int(мм.group(1)) > 1 and int(мм.group(2)) > 1
+            д = int(мм.group(1)) if мм else 0
+        return True, (верно and ч_["вывод"] == ВЫВОД_ПРОСТОТА[(язык, прост)].format(n=n, д=д)
+                      and ч_["закон"] == ОПРЕДЕЛЕНИЯ_ПРОСТОТА[язык])
+    м = ДЕЛИМОСТЬ_ВОПРОС.match(вопрос)
+    if м:
+        г = [int(x) for x in м.groups() if x]
+        a, b = г[0], г[1]
+        q, r = divmod(a, b)
+        да = r == 0
+        if ч_["вердикт"] is not None:
+            if ВЕРДИКТЫ.get(ч_["вердикт"]) != да:
+                return True, False
+        elif (" not " in вопрос or " не " in вопрос) == да:
+            return True, False
+        ожид = f"{a} = {b} × {q}" if да else f"{a} = {b} × {q} + {r}"
+        return True, (ч_["свидетель"] == ожид
+                      and ч_["вывод"] == ВЫВОД_ДЕЛИМОСТЬ[(язык, да)].format(a=a, b=b, r=r)
+                      and ч_["закон"] == ОПРЕДЕЛЕНИЯ_ДЕЛИМОСТЬ[язык])
+    return None
+
+
 def судить(строка):
     """(судимо, истинно) для одной строки."""
     с = строка.strip()
@@ -403,6 +474,9 @@ def судить(строка):
         return False, False
     if с in ОПРЕДЕЛЕНИЯ or с in ОТВЕТЫ:
         return True, True
+    р = _рассуждение(с)
+    if р is not None:
+        return р
     for образец, проверить in ПРАВИЛА:
         м = образец.match(с)
         if м:
