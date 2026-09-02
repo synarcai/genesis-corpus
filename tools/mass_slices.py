@@ -16,6 +16,7 @@ import argparse
 import collections
 import hashlib
 import pathlib
+import re
 import sys
 
 КОРЕНЬ = pathlib.Path(__file__).resolve().parents[1]
@@ -26,11 +27,28 @@ from form_census import скелет  # noqa: E402
 ПОЛНЫЙ = КОРЕНЬ / "datasets" / "GENESIS-FULL.txt"
 
 
+# ОСЬ — НЕ РАМКА, А ОСНОВАНИЕ (e9 04.09): цепь цифр «0 + 1 = 1 … 9 + 1 = 10 …»
+# есть показы ОДНОЙ рамки «# + # = #», и срез ≤ k показов рвал её — счётный
+# орган на MASS3/5 оставался без базы 10, и арифметика цифр шла рефлексом
+# ленты («10 − 9 = 21»). Звено оси (шаг на единицу вверх или вниз) входит в
+# срез целиком, без потолка; цепи числительными словом («zero plus one …»)
+# срезу не подвластны и так: у каждой такой строки свой скелет.
+ОСЬ = re.compile(r"^(\d+) ([+−]) 1 = (\d+)\.$")
+
+
+def звено_оси(строка):
+    м = ОСЬ.match(строка.strip())
+    if not м:
+        return False
+    a, знак, b = int(м.group(1)), м.group(2), int(м.group(3))
+    return b == (a + 1 if знак == "+" else a - 1)
+
+
 def срез(k):
     масса = collections.Counter()
     вон = []
     for строка in ПОЛНЫЙ.read_text(encoding="utf-8").splitlines():
-        if not строка.strip() or строка.startswith("\x0c"):
+        if not строка.strip() or строка.startswith("\x0c") or звено_оси(строка):
             вон.append(строка)
             continue
         ск = скелет(строка)
