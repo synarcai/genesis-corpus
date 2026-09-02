@@ -350,6 +350,19 @@ the refutation is one witness, and it refutes the statement «if a leaves remain
 контрпример: утверждение «если a даёт остаток 3 при делении на 5 и b даёт остаток 3 при делении на 5, то a * b делится на 10 без остатка» ложно, ибо при a = 3 и b = 13 выходит 3 * 13 = 39, а 39 = 10 * 3 + 9.
 контрпример опровергает утверждение «если a даёт остаток 3 при делении на 5 и b даёт остаток 3 при делении на 5, то a * b делится на 10 без остатка» одним свидетелем: 3 * 13 = 39, а 39 = 10 * 3 + 9.
 
+the statement «if a is not divisible by 2 and b is not divisible by 2, then a * b is not divisible by 2» is true, since 2 is prime: a product is not divisible by a prime unless one of its factors is.
+что значит «не делится на 2»? число не делится на 2, если при делении на 2 остаток есть 1: отрицание сказуемого называет все остатки, кроме нуля.
+what does «is not divisible by 3» mean? a number is not divisible by 3 if its remainder when divided by 3 is 1 or 2: the negation of a predicate names every remainder but zero.
+утверждение «если a не делится на 2 и b делится на 2 без остатка, то a + b не делится на 2» верно, ибо остаток a + b при делении на 2 есть остаток a, а он не нуль.
+the statement «if a is not divisible by 3 and b is divisible by 3, then a + b is not divisible by 3» is true, since the remainder of a + b when divided by 3 is the remainder of a, and it is not zero.
+утверждение «если a не делится на 2 и b не делится на 2, то a * b не делится на 2» верно, ибо 2 просто: произведение не делится на простое, пока ни один из множителей на него не делится.
+the statement «if a is not divisible by 3 and b is not divisible by 3, then a * b is not divisible by 3» is true, since 3 is prime: a product is not divisible by a prime unless one of its factors is.
+что значит «не делится на 3»? число не делится на 3, если при делении на 3 остаток есть 1 или 2: отрицание сказуемого называет все остатки, кроме нуля.
+what does «is not divisible by 2» mean? a number is not divisible by 2 if its remainder when divided by 2 is 1: the negation of a predicate names every remainder but zero.
+утверждение «если a не делится на 3 и b делится на 3 без остатка, то a + b не делится на 3» верно, ибо остаток a + b при делении на 3 есть остаток a, а он не нуль.
+the statement «if a is not divisible by 2 and b is divisible by 2, then a + b is not divisible by 2» is true, since the remainder of a + b when divided by 2 is the remainder of a, and it is not zero.
+утверждение «если a не делится на 3 и b не делится на 3, то a * b не делится на 3» верно, ибо 3 просто: произведение не делится на простое, пока ни один из множителей на него не делится.
+
 a conditional statement has a condition and a conclusion, and the assertion «if a is even and b is even, then a + b is even» is one of them: at a = 4 and b = 6 it gives 4 + 6 = 10.
 утверждение «если a чётно и b чётно, то a + b чётно» есть теорема, ибо ход от условия к заключению есть: 4 + 6 = 2 * ( 2 + 3 ) = 2 * 5 = 10.
 two theorems show that 4 + 6 = 10 and 4 * 6 = 24.
@@ -727,6 +740,19 @@ what is a counterexample? a counterexample is one witness refuting a universal s
 the strength of a counterexample is in one witness, and counterexamples refute the statement «if a leaves remainder 1 when divided by 3 and b leaves remainder 2 when divided by 3, then a * b is divisible by 6» one at a time: 1 * 8 = 8, while 8 = 6 * 1 + 2.
 контрпример опровергает утверждение «если a даёт остаток 2 при делении на 4 и b даёт остаток 3 при делении на 4, то a + b делится на 8 без остатка» одним свидетелем: 2 + 11 = 13, а 13 = 8 * 1 + 5.
 контрпример: утверждение «если a чётно и b нечётно, то a + b делится на 4 без остатка» ложно, ибо при a = 2 и b = 3 выходит 2 + 3 = 5, а 5 = 4 * 1 + 1.
+
+утверждение «если a не делится на 3 и b делится на 3 без остатка, то a + b не делится на 3» верно, ибо остаток a + b при делении на 3 есть остаток a, а он не нуль.
+what does «is not divisible by 3» mean? a number is not divisible by 3 if its remainder when divided by 3 is 1 or 2: the negation of a predicate names every remainder but zero.
+что значит «не делится на 3»? число не делится на 3, если при делении на 3 остаток есть 1 или 2: отрицание сказуемого называет все остатки, кроме нуля.
+the statement «if a is not divisible by 4 and b is not divisible by 4, then a * b is not divisible by 4» is false, since at a = 2 and b = 2 it gives 2 * 2 = 4, while 4 is divisible by 4.
+утверждение «если a не делится на 4 и b не делится на 4, то a * b не делится на 4» ложно, ибо при a = 2 и b = 2 выходит 2 * 2 = 4, а 4 делится на 4 без остатка.
+the statement «if a is not divisible by 4 and b is divisible by 4, then a + b is not divisible by 4» is true, since the remainder of a + b when divided by 4 is the remainder of a, and it is not zero.
+утверждение «если a не делится на 4 и b делится на 4 без остатка, то a + b не делится на 4» верно, ибо остаток a + b при делении на 4 есть остаток a, а он не нуль.
+what does «is not divisible by 4» mean? a number is not divisible by 4 if its remainder when divided by 4 is 1, 2 or 3: the negation of a predicate names every remainder but zero.
+что значит «не делится на 4»? число не делится на 4, если при делении на 4 остаток есть 1, 2 или 3: отрицание сказуемого называет все остатки, кроме нуля.
+the statement «if a is not divisible by 3 and b is not divisible by 3, then a * b is not divisible by 3» is true, since 3 is prime: a product is not divisible by a prime unless one of its factors is.
+утверждение «если a не делится на 3 и b не делится на 3, то a * b не делится на 3» верно, ибо 3 просто: произведение не делится на простое, пока ни один из множителей на него не делится.
+the statement «if a is not divisible by 3 and b is divisible by 3, then a + b is not divisible by 3» is true, since the remainder of a + b when divided by 3 is the remainder of a, and it is not zero.
 
 утверждение «если a даёт остаток 2 при делении на 4 и b даёт остаток 3 при делении на 4, то a + b даёт остаток 1 при делении на 4» есть теорема, ибо ход от условия к заключению есть: 26 + 43 = 4 * ( 6 + 10 + 1 ) + 1 = 4 * 17 + 1 = 69.
 the statement «2 * n + 3 is prime for every whole n» is a hypothesis and not a theorem: there is no proof, and at n = 3 it gives 9 = 3 * 3.
@@ -1116,6 +1142,19 @@ counterexample: the statement «if a leaves remainder 3 when divided by 5 and b 
 one counterexample kills a universal statement, and a confirming case does not save it: «if a is even and b is even, then a + b is divisible by 4» holds at a = 2 and b = 2, since 2 + 2 = 4 and 4 = 4 * 1, but fails at a = 2 and b = 4, since 2 + 4 = 6 and 6 = 4 * 1 + 2.
 the strength of a counterexample is in one witness, and counterexamples refute the statement «if a leaves remainder 2 when divided by 3 and b leaves remainder 1 when divided by 3, then a * b is divisible by 6» one at a time: 2 * 7 = 14, while 14 = 6 * 2 + 2.
 
+the statement «if a is not divisible by 5 and b is divisible by 5, then a + b is not divisible by 5» is true, since the remainder of a + b when divided by 5 is the remainder of a, and it is not zero.
+утверждение «если a не делится на 5 и b не делится на 5, то a * b не делится на 5» верно, ибо 5 просто: произведение не делится на простое, пока ни один из множителей на него не делится.
+the statement «if a is not divisible by 5 and b is not divisible by 5, then a * b is not divisible by 5» is true, since 5 is prime: a product is not divisible by a prime unless one of its factors is.
+что значит «не делится на 4»? число не делится на 4, если при делении на 4 остаток есть 1, 2 или 3: отрицание сказуемого называет все остатки, кроме нуля.
+what does «is not divisible by 4» mean? a number is not divisible by 4 if its remainder when divided by 4 is 1, 2 or 3: the negation of a predicate names every remainder but zero.
+утверждение «если a не делится на 4 и b делится на 4 без остатка, то a + b не делится на 4» верно, ибо остаток a + b при делении на 4 есть остаток a, а он не нуль.
+the statement «if a is not divisible by 4 and b is divisible by 4, then a + b is not divisible by 4» is true, since the remainder of a + b when divided by 4 is the remainder of a, and it is not zero.
+утверждение «если a не делится на 4 и b не делится на 4, то a * b не делится на 4» ложно, ибо при a = 2 и b = 2 выходит 2 * 2 = 4, а 4 делится на 4 без остатка.
+the statement «if a is not divisible by 4 and b is not divisible by 4, then a * b is not divisible by 4» is false, since at a = 2 and b = 2 it gives 2 * 2 = 4, while 4 is divisible by 4.
+что значит «не делится на 5»? число не делится на 5, если при делении на 5 остаток есть 1, 2, 3 или 4: отрицание сказуемого называет все остатки, кроме нуля.
+what does «is not divisible by 5» mean? a number is not divisible by 5 if its remainder when divided by 5 is 1, 2, 3 or 4: the negation of a predicate names every remainder but zero.
+утверждение «если a не делится на 5 и b делится на 5 без остатка, то a + b не делится на 5» верно, ибо остаток a + b при делении на 5 есть остаток a, а он не нуль.
+
 two theorems show that 34 + 44 = 78 and 34 * 44 = 1496.
 двумя теоремами показано, что 34 + 44 = 78 и 34 * 44 = 1496.
 of the two assertions one is proved and the other is not, and the proved one is «if a leaves remainder 2 when divided by 4 and b is divisible by 4, then a + b leaves remainder 2 when divided by 4»: at a = 34 and b = 44 it gives 34 + 44 = 78.
@@ -1499,6 +1538,19 @@ the statement «if a leaves remainder 3 when divided by 5 and b leaves remainder
 контрпример опровергает утверждение «если a даёт остаток 2 при делении на 3 и b даёт остаток 2 при делении на 3, то a * b делится на 6 без остатка» одним свидетелем: 2 * 8 = 16, а 16 = 6 * 2 + 4.
 the refutation is one witness, and it refutes the statement «if a leaves remainder 3 when divided by 5 and b leaves remainder 1 when divided by 5, then a * b is divisible by 10» alone: 3 * 11 = 33, while 33 = 10 * 3 + 3.
 the strength of a counterexample is in one witness, and counterexamples refute the statement «if a leaves remainder 2 when divided by 3 and b leaves remainder 2 when divided by 3, then a * b is divisible by 6» one at a time: 2 * 8 = 16, while 16 = 6 * 2 + 4.
+
+утверждение «если a не делится на 5 и b не делится на 5, то a * b не делится на 5» верно, ибо 5 просто: произведение не делится на простое, пока ни один из множителей на него не делится.
+the statement «if a is not divisible by 2 and b is divisible by 2, then a + b is not divisible by 2» is true, since the remainder of a + b when divided by 2 is the remainder of a, and it is not zero.
+утверждение «если a не делится на 5 и b делится на 5 без остатка, то a + b не делится на 5» верно, ибо остаток a + b при делении на 5 есть остаток a, а он не нуль.
+what does «is not divisible by 2» mean? a number is not divisible by 2 if its remainder when divided by 2 is 1: the negation of a predicate names every remainder but zero.
+что значит «не делится на 5»? число не делится на 5, если при делении на 5 остаток есть 1, 2, 3 или 4: отрицание сказуемого называет все остатки, кроме нуля.
+the statement «if a is not divisible by 5 and b is not divisible by 5, then a * b is not divisible by 5» is true, since 5 is prime: a product is not divisible by a prime unless one of its factors is.
+утверждение «если a не делится на 2 и b не делится на 2, то a * b не делится на 2» верно, ибо 2 просто: произведение не делится на простое, пока ни один из множителей на него не делится.
+the statement «if a is not divisible by 5 and b is divisible by 5, then a + b is not divisible by 5» is true, since the remainder of a + b when divided by 5 is the remainder of a, and it is not zero.
+утверждение «если a не делится на 2 и b делится на 2 без остатка, то a + b не делится на 2» верно, ибо остаток a + b при делении на 2 есть остаток a, а он не нуль.
+what does «is not divisible by 5» mean? a number is not divisible by 5 if its remainder when divided by 5 is 1, 2, 3 or 4: the negation of a predicate names every remainder but zero.
+что значит «не делится на 2»? число не делится на 2, если при делении на 2 остаток есть 1: отрицание сказуемого называет все остатки, кроме нуля.
+the statement «if a is not divisible by 2 and b is not divisible by 2, then a * b is not divisible by 2» is true, since 2 is prime: a product is not divisible by a prime unless one of its factors is.
 
 условные утверждения имеют условие и заключение, и условная часть «если a даёт остаток 3 при делении на 5 и b даёт остаток 1 при делении на 5, то a * b даёт остаток 3 при делении на 5» стоит до слова «то»: при a = 23 и b = 41 выходит 23 * 41 = 943.
 of the two assertions one is proved and the other is not, and the proved one is «if a leaves remainder 3 when divided by 5 and b leaves remainder 1 when divided by 5, then a * b leaves remainder 3 when divided by 5»: at a = 23 and b = 41 it gives 23 * 41 = 943.
@@ -1889,6 +1941,19 @@ counterexample: the statement «if a is even and b is even, then a + b is divisi
 the refutation is one witness, and it refutes the statement «if a leaves remainder 2 when divided by 5 and b leaves remainder 1 when divided by 5, then a * b is divisible by 10» alone: 2 * 11 = 22, while 22 = 10 * 2 + 2.
 what is a counterexample? a counterexample is one witness refuting a universal statement: «if a leaves remainder 2 when divided by 3 and b is divisible by 3, then a * b is divisible by 6» is refuted by a = 5 and b = 3, since 5 * 3 = 15, while 15 = 6 * 2 + 3.
 что такое контрпример? контрпример есть один свидетель, опровергающий всеобщее утверждение: «если a даёт остаток 2 при делении на 5 и b даёт остаток 1 при делении на 5, то a * b делится на 10 без остатка» опровергнуто парой a = 2 и b = 11, ибо 2 * 11 = 22, а 22 = 10 * 2 + 2.
+
+что значит «не делится на 2»? число не делится на 2, если при делении на 2 остаток есть 1: отрицание сказуемого называет все остатки, кроме нуля.
+what does «is not divisible by 3» mean? a number is not divisible by 3 if its remainder when divided by 3 is 1 or 2: the negation of a predicate names every remainder but zero.
+утверждение «если a не делится на 2 и b делится на 2 без остатка, то a + b не делится на 2» верно, ибо остаток a + b при делении на 2 есть остаток a, а он не нуль.
+the statement «if a is not divisible by 3 and b is divisible by 3, then a + b is not divisible by 3» is true, since the remainder of a + b when divided by 3 is the remainder of a, and it is not zero.
+утверждение «если a не делится на 2 и b не делится на 2, то a * b не делится на 2» верно, ибо 2 просто: произведение не делится на простое, пока ни один из множителей на него не делится.
+the statement «if a is not divisible by 3 and b is not divisible by 3, then a * b is not divisible by 3» is true, since 3 is prime: a product is not divisible by a prime unless one of its factors is.
+что значит «не делится на 3»? число не делится на 3, если при делении на 3 остаток есть 1 или 2: отрицание сказуемого называет все остатки, кроме нуля.
+what does «is not divisible by 2» mean? a number is not divisible by 2 if its remainder when divided by 2 is 1: the negation of a predicate names every remainder but zero.
+утверждение «если a не делится на 3 и b делится на 3 без остатка, то a + b не делится на 3» верно, ибо остаток a + b при делении на 3 есть остаток a, а он не нуль.
+the statement «if a is not divisible by 2 and b is divisible by 2, then a + b is not divisible by 2» is true, since the remainder of a + b when divided by 2 is the remainder of a, and it is not zero.
+утверждение «если a не делится на 3 и b не делится на 3, то a * b не делится на 3» верно, ибо 3 просто: произведение не делится на простое, пока ни один из множителей на него не делится.
+the statement «if a is not divisible by 2 and b is not divisible by 2, then a * b is not divisible by 2» is true, since 2 is prime: a product is not divisible by a prime unless one of its factors is.
 
 утверждение «2 * n + 3 просто при всяком целом n» есть гипотеза, а не теорема: доказательства нет, и при n = 3 выходит 9 = 3 * 3.
 the statement «if a leaves remainder 2 when divided by 3 and b is divisible by 3, then a * b is divisible by 3» is a theorem, since the move from the condition to the conclusion exists: 26 * 30 = 3 * ( 3 * 8 * 10 + 20 ) = 3 * 260 = 780.

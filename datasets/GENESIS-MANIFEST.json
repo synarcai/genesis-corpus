@@ -3172,10 +3172,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 8975686,
+      "size": 9002437,
       "tiers": [],
       "text": "mix",
-      "lines": 161114
+      "lines": 161274
     },
     {
       "name": "full",
@@ -3190,10 +3190,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 13096699,
+      "size": 13123450,
       "tiers": [],
       "text": "mix",
-      "lines": 230845
+      "lines": 231005
     },
     {
       "name": "selfmeasure",
@@ -3242,6 +3242,30 @@
       "судится": [
         "prosetree"
       ]
+    },
+    {
+      "name": "gutenberg_webster_1913",
+      "file": "shelf/en/webster_1913.txt",
+      "genre": "Webster's Unabridged Dictionary — Noah Webster; английское издание 1913",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "язык",
+      "язык": "en",
+      "плотность": "словарь",
+      "издано": 1913,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:29765",
+      "held_out": "shelf/en/webster_1913.holdout.txt",
+      "судится": []
     }
   ]
 }
