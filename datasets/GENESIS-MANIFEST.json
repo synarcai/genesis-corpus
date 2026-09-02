@@ -3291,6 +3291,426 @@
       "происхождение": "wikisource-scan:Толковый словарь Даля (2-е издание). Том 1 (1880).pdf; Толковый словарь Даля (2-е издание). Том 2 (1881).pdf; Толковый словарь Даля (2-е издание). Том 3 (1882).pdf; Толковый словарь Даля (2-е издание). Том 4 (1882).pdf",
       "held_out": "shelf/ru/dal_1880.holdout.txt",
       "судится": []
+    },
+    {
+      "name": "gutenberg_bacon_organum",
+      "file": "shelf/en/bacon_organum.txt",
+      "genre": "Novum Organum — Francis Bacon; английское издание 1902",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "научный метод",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1620,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:45988",
+      "held_out": "shelf/en/bacon_organum.holdout.txt",
+      "судится": [
+        "prosetree"
+      ]
+    },
+    {
+      "name": "gutenberg_carnot_heat",
+      "file": "shelf/en/carnot_heat.txt",
+      "genre": "Reflections on the Motive Power of Heat — Sadi Carnot; английское издание 1897",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "естествознание",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1824,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:78610",
+      "held_out": "shelf/en/carnot_heat.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_descartes_meditations",
+      "file": "shelf/en/descartes_meditations.txt",
+      "genre": "Six Metaphysical Meditations — Rene Descartes; английское издание 1680",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "метафизика",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1641,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:70091",
+      "held_out": "shelf/en/descartes_meditations.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_ebbinghaus_psychology",
+      "file": "shelf/en/ebbinghaus_psychology.txt",
+      "genre": "Psychology: An Elementary Text-book — Hermann Ebbinghaus; английское издание 1908",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "естествознание",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1908,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:52823",
+      "held_out": "shelf/en/ebbinghaus_psychology.holdout.txt",
+      "судится": [
+        "prosetree"
+      ]
+    },
+    {
+      "name": "gutenberg_faraday_candle",
+      "file": "shelf/en/faraday_candle.txt",
+      "genre": "The Chemical History of a Candle — Michael Faraday; английское издание 1861",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "естествознание",
+      "язык": "en",
+      "плотность": "исследование",
+      "издано": 1861,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:14474",
+      "held_out": "shelf/en/faraday_candle.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_galton_inquiries",
+      "file": "shelf/en/galton_inquiries.txt",
+      "genre": "Inquiries into Human Faculty and Its Development — Francis Galton; английское издание 1883",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "естествознание",
+      "язык": "en",
+      "плотность": "исследование",
+      "издано": 1883,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:11562",
+      "held_out": "shelf/en/galton_inquiries.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_helmholtz_lectures",
+      "file": "shelf/en/helmholtz_lectures.txt",
+      "genre": "Popular Lectures on Scientific Subjects — Hermann von Helmholtz; английское издание 1881",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "естествознание",
+      "язык": "en",
+      "плотность": "исследование",
+      "издано": 1873,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:77725",
+      "held_out": "shelf/en/helmholtz_lectures.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_huygens_light",
+      "file": "shelf/en/huygens_light.txt",
+      "genre": "Treatise on Light — Christiaan Huygens; английское издание 1912",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "естествознание",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1690,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:14725",
+      "held_out": "shelf/en/huygens_light.holdout.txt",
+      "судится": [
+        "prosetree"
+      ]
+    },
+    {
+      "name": "gutenberg_james_psychology_v1",
+      "file": "shelf/en/james_psychology_v1.txt",
+      "genre": "The Principles of Psychology, Vol. 1 — William James; английское издание 1890",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "философия познания",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1890,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:57628",
+      "held_out": "shelf/en/james_psychology_v1.holdout.txt",
+      "судится": [
+        "prosetree"
+      ]
+    },
+    {
+      "name": "gutenberg_lavoisier_chemistry",
+      "file": "shelf/en/lavoisier_chemistry.txt",
+      "genre": "Elements of Chemistry — Antoine Lavoisier; английское издание 1790",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "естествознание",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1789,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:30775",
+      "held_out": "shelf/en/lavoisier_chemistry.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_lyell_geology",
+      "file": "shelf/en/lyell_geology.txt",
+      "genre": "Principles of Geology — Charles Lyell; английское издание 1830",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "естествознание",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1830,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:33224",
+      "held_out": "shelf/en/lyell_geology.holdout.txt",
+      "судится": [
+        "prosetree"
+      ]
+    },
+    {
+      "name": "gutenberg_mach_lectures",
+      "file": "shelf/en/mach_lectures.txt",
+      "genre": "Popular Scientific Lectures — Ernst Mach; английское издание 1898",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "научный метод",
+      "язык": "en",
+      "плотность": "исследование",
+      "издано": 1894,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:39508",
+      "held_out": "shelf/en/mach_lectures.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_maxwell_papers",
+      "file": "shelf/en/maxwell_papers.txt",
+      "genre": "Five of Maxwell's Papers — James Clerk Maxwell; английское издание 1890",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "естествознание",
+      "язык": "en",
+      "плотность": "статья",
+      "издано": 1856,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:4908",
+      "held_out": "shelf/en/maxwell_papers.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_peirce_chance",
+      "file": "shelf/en/peirce_chance.txt",
+      "genre": "Chance, Love, and Logic — Charles Sanders Peirce; английское издание 1923",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "логика",
+      "язык": "en",
+      "плотность": "статья",
+      "издано": 1878,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:65274",
+      "held_out": "shelf/en/peirce_chance.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_planck_quantum",
+      "file": "shelf/en/planck_quantum.txt",
+      "genre": "The Origin and Development of the Quantum Theory — Max Planck; английское издание 1922",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "естествознание",
+      "язык": "en",
+      "плотность": "статья",
+      "издано": 1920,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:33663",
+      "held_out": "shelf/en/planck_quantum.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_whewell_history",
+      "file": "shelf/en/whewell_history.txt",
+      "genre": "History of the Inductive Sciences — William Whewell; английское издание 1857",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "научный метод",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1837,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:68693",
+      "held_out": "shelf/en/whewell_history.holdout.txt",
+      "судится": [
+        "prosetree"
+      ]
+    },
+    {
+      "name": "gutenberg_whitehead_nature",
+      "file": "shelf/en/whitehead_nature.txt",
+      "genre": "The Concept of Nature — Alfred North Whitehead; английское издание 1920",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "философия познания",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1920,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:18835",
+      "held_out": "shelf/en/whitehead_nature.holdout.txt",
+      "судится": []
     }
   ]
 }
