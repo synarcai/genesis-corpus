@@ -19,6 +19,7 @@ import sys
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
 import glyphs as G  # noqa: E402
+import spacegrid as S  # noqa: E402
 
 С = G.СЕТКА.pattern
 СС = G.СЛОВО_СЕТКА.pattern
@@ -36,12 +37,27 @@ def _рендер_слова(слово):
     return G.слово_сеткой(слово)
 
 
+ОСНОВАНИЕ = re.compile(r"no cell differs|(\d+) cells? differs?|ни одна клетка не отличается|отлича(?:ется|ются) (\d+) клет(?:ка|ки|ок)")
+
+
 def _сетка_символ(м):
-    сетка, не, имя = м.groups()
+    группы = м.groups()
+    сетка, не, имя = группы[0], группы[1], группы[2]
+    основание = группы[3] if len(группы) > 3 else None
     с = _символ(имя)
     if с is None:
         return False
-    return (G.сетка(с) == сетка) == (не is None)
+    k = S.разница(сетка.split("/"), G.ТАБЛИЦА[с])
+    if k is None:
+        return False
+    if основание is not None:
+        мм = ОСНОВАНИЕ.fullmatch(основание)
+        if not мм:
+            return False
+        названо = int(мм.group(1) or мм.group(2) or 0)
+        if названо != k:
+            return False
+    return (k == 0) == (не is None)
 
 
 def _символ_сетка(м):
@@ -61,6 +77,8 @@ def _сетка_слово(м):
 
 
 ОБРАЗЦЫ = (
+    (rf"^glyph ({С}) is (not )?{ИМЯ}: ([^.]+)\.$", _сетка_символ),
+    (rf"^глиф ({С}) — (не )?(?:это )?{ИМЯ}: ([^.]+)\.$", _сетка_символ),
     (rf"^glyph ({С}) is (not )?{ИМЯ}\.$", _сетка_символ),
     (rf"^глиф ({С}) — (не )?(?:это )?{ИМЯ}\.$", _сетка_символ),
     (rf"^{ИМЯ} as a 5×7 glyph is ({С})\.$", _символ_сетка),

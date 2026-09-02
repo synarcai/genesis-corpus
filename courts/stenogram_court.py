@@ -19,13 +19,13 @@ import spacegrid as S  # noqa: E402
 Г = S.СЕТКА.pattern
 ЗАГОЛОВОК = re.compile(rf"^(?:transcript|стенограмма) (\d+) (?:on grid|на сетке) ({Г})$")
 ШАГ = re.compile(rf"^(?:step|шаг) (\d+): (?:action|действие) «([^»]+)» → (?:response|отклик): "
-                 rf"(?:(?:grid|сетка) ({Г})|(?:refused|отказ): (.+))$")
+                 rf"(?:(?:grid|сетка) ({Г})|(?:no|нет): (.+))$")
 КОНЕЦ = re.compile(rf"^(?:end|конец): (?:grid|сетка) ({Г})$")
 ДЕЙСТВИЕ = re.compile(
     r"^(?:shift|сдвиг) (right|left|down|up|вправо|влево|вниз|вверх) (?:by|на) (\d)$"
     r"|^(?:rotate|поворот на) (90|180|270)° (?:clockwise|по часовой стрелке)$"
     r"|^(?:reflect|отражение) (left-right|top-bottom|слева направо|сверху вниз)$"
-    r"|^(?:paint|erase|закрасить|стереть) \((\d),(\d)\)$")
+    r"|^(?:paint|erase|закрасить|стереть) \((\d), ?(\d)\)$")
 КУДА = {"вправо": "right", "влево": "left", "вниз": "down", "вверх": "up"}
 ОСЬ = {"слева направо": "left-right", "сверху вниз": "top-bottom"}
 

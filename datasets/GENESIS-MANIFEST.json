@@ -3172,10 +3172,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 9017361,
+      "size": 9455068,
       "tiers": [],
       "text": "mix",
-      "lines": 161554
+      "lines": 165389
     },
     {
       "name": "full",
@@ -3190,10 +3190,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 13146128,
+      "size": 13583835,
       "tiers": [],
       "text": "mix",
-      "lines": 231405
+      "lines": 235240
     },
     {
       "name": "selfmeasure",
@@ -3215,6 +3215,73 @@
       "boundary": [
         "whole_only",
         "unsigned_only"
+      ]
+    },
+    {
+      "name": "glyphs",
+      "file": "datasets/genesis_glyphs.txt",
+      "genre": "the glyph world v0 (embodied-reasoning mandate 02.09, L5): every symbol — digits, Latin and Cyrillic letters of both cases, signs — as a 5×7 bit grid with a name (tools/glyphs.py, one font table that is also the court's law); shows «grid → symbol», «symbol → grid», negation with a foreign symbol of the same class, questions; words, numbers and TRUE expressions as rows of glyphs through an empty column; the court renders the named symbol and compares cell by cell — recognition stays with the organism (OCR by market)",
+      "act": [
+        "name",
+        "translate",
+        "decide"
+      ],
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "declared_pairs_only"
+      ],
+      "size": 167600,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
+    },
+    {
+      "name": "space",
+      "file": "datasets/genesis_space.txt",
+      "genre": "the spatial world v0 (mandate 02.09, L3): square grids 3×3..5×5 with a figure of filled cells, derived by residues, and executions over them — rotation (90/180/270 clockwise), reflection (left-right, top-bottom), shift without loss, side-neighbour count, shortest path through empty cells with a named refusal when the figure cuts it off, cell count — and questions to each; the executor house tools/spacegrid.py is shared with the court, which re-executes every line; negation takes the result of a sibling executor and is false exactly by computation",
+      "act": [
+        "recount",
+        "translate",
+        "decide",
+        "refuse"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "exact_only"
+      ],
+      "size": 184437,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
+    },
+    {
+      "name": "stenogram",
+      "file": "datasets/genesis_stenogram.txt",
+      "genre": "interaction transcripts v0 (mandate 02.09, L5: «обучать и интерактиву»): one show in several lines by the declared form declarations/STENOGRAM.md — header with the environment (a grid), steps «action → response» where the response is the environment's whole state after the action or a named refusal (cell outside the grid), and an end line repeating the last response; the court keeps a layer and re-executes each action over the previous state with the same executor house",
+      "act": [
+        "recount",
+        "refuse",
+        "translate"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "exact_only"
+      ],
+      "size": 43228,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "school"
       ]
     },
     {
@@ -3711,6 +3778,453 @@
       "происхождение": "gutenberg:18835",
       "held_out": "shelf/en/whitehead_nature.holdout.txt",
       "судится": []
+    },
+    {
+      "name": "gutenberg_archimedes_method",
+      "file": "shelf/en/archimedes_method.txt",
+      "genre": "Geometrical Solutions Derived from Mechanics — Archimedes; английское издание 1909",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "математика",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": -250,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:7825",
+      "held_out": "shelf/en/archimedes_method.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_boole_analysis",
+      "file": "shelf/en/boole_analysis.txt",
+      "genre": "The Mathematical Analysis of Logic — George Boole; английское издание 1847",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "логика",
+      "язык": "en",
+      "плотность": "статья",
+      "издано": 1847,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:36884",
+      "held_out": "shelf/en/boole_analysis.holdout.txt",
+      "судится": [
+        "prosetree"
+      ]
+    },
+    {
+      "name": "gutenberg_boole_laws",
+      "file": "shelf/en/boole_laws.txt",
+      "genre": "An Investigation of the Laws of Thought — George Boole; английское издание 1854",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "логика",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1854,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:15114",
+      "held_out": "shelf/en/boole_laws.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_dedekind_numbers",
+      "file": "shelf/en/dedekind_numbers.txt",
+      "genre": "Essays on the Theory of Numbers — Richard Dedekind; английское издание 1901",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "основания математики",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1888,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:21016",
+      "held_out": "shelf/en/dedekind_numbers.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_euclid_elements",
+      "file": "shelf/en/euclid_elements.txt",
+      "genre": "The First Six Books of the Elements — Euclid; английское издание 1885",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "математика",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": -300,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:21076",
+      "held_out": "shelf/en/euclid_elements.holdout.txt",
+      "судится": [
+        "prosetree"
+      ]
+    },
+    {
+      "name": "gutenberg_hadamard_lectures",
+      "file": "shelf/en/hadamard_lectures.txt",
+      "genre": "Four Lectures on Mathematics — Jacques Hadamard; английское издание 1911",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "математика",
+      "язык": "en",
+      "плотность": "статья",
+      "издано": 1911,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:29788",
+      "held_out": "shelf/en/hadamard_lectures.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_hilbert_geometry",
+      "file": "shelf/en/hilbert_geometry.txt",
+      "genre": "The Foundations of Geometry — David Hilbert; английское издание 1902",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "основания математики",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1899,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:17384",
+      "held_out": "shelf/en/hilbert_geometry.holdout.txt",
+      "судится": [
+        "prosetree"
+      ]
+    },
+    {
+      "name": "gutenberg_klein_evanston",
+      "file": "shelf/en/klein_evanston.txt",
+      "genre": "The Evanston Colloquium — Felix Klein; английское издание 1894",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "математика",
+      "язык": "en",
+      "плотность": "статья",
+      "издано": 1894,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:36154",
+      "held_out": "shelf/en/klein_evanston.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_lagrange_lectures",
+      "file": "shelf/en/lagrange_lectures.txt",
+      "genre": "Lectures on Elementary Mathematics — Joseph-Louis Lagrange; английское издание 1898",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "математика",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1795,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:36640",
+      "held_out": "shelf/en/lagrange_lectures.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_einstein_relativity",
+      "file": "shelf/en/einstein_relativity.txt",
+      "genre": "Relativity: The Special and General Theory — Albert Einstein; английское издание 1920",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "естествознание",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1916,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:30155",
+      "held_out": "shelf/en/einstein_relativity.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "esbe_math_ru",
+      "file": "shelf/ru/esbe_math_ru.txt",
+      "genre": "Брокгауз и Ефрон, авторы статей, «Энциклопедический словарь Брокгауза и Ефрона (1890–1907)»: статьи по категориям Викитеки Математика, Геометрия, Механика, Статистика",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 5910698,
+      "tiers": [],
+      "text": "prose",
+      "язык": "ru",
+      "тема": "математика",
+      "плотность": "словарь",
+      "издано": 1907,
+      "источник": "public-domain",
+      "происхождение": "wikisource-ru:categories:ЭСБЕ:Математика;ЭСБЕ:Геометрия;ЭСБЕ:Механика;ЭСБЕ:Статистика",
+      "held_out": "shelf/ru/esbe_math_ru.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "esbe_nature_ru",
+      "file": "shelf/ru/esbe_nature_ru.txt",
+      "genre": "Брокгауз и Ефрон, авторы статей, «Энциклопедический словарь Брокгауза и Ефрона (1890–1907)»: статьи по категориям Викитеки Физика, Оптика, Электричество, Электротехника, Электрохимия, Химия, Химические элементы, Астрономия, Астрофизика, Геология, Геофизика, Геологические ярусы, Минералы, Минералогия, Кристаллография, Метеорология, Палеонтология, Ботаника, Зоология, Биология, Анатомия, Физиология, Медицина, Естественные науки",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 38760844,
+      "tiers": [],
+      "text": "prose",
+      "язык": "ru",
+      "тема": "естествознание",
+      "плотность": "словарь",
+      "издано": 1907,
+      "источник": "public-domain",
+      "происхождение": "wikisource-ru:categories:ЭСБЕ:Физика;ЭСБЕ:Оптика;ЭСБЕ:Электричество;ЭСБЕ:Электротехника;ЭСБЕ:Электрохимия;ЭСБЕ:Химия;ЭСБЕ:Химические элементы;ЭСБЕ:Астрономия;ЭСБЕ:Астрофизика;ЭСБЕ:Геология;ЭСБЕ:Геофизика;ЭСБЕ:Геологические ярусы;ЭСБЕ:Минералы;ЭСБЕ:Минералогия;ЭСБЕ:Кристаллография;ЭСБЕ:Метеорология;ЭСБЕ:Палеонтология;ЭСБЕ:Ботаника;ЭСБЕ:Зоология;ЭСБЕ:Биология;ЭСБЕ:Анатомия;ЭСБЕ:Физиология;ЭСБЕ:Медицина;ЭСБЕ:Естественные науки",
+      "held_out": "shelf/ru/esbe_nature_ru.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "esbe_logic_ru",
+      "file": "shelf/ru/esbe_logic_ru.txt",
+      "genre": "Брокгауз и Ефрон, авторы статей, «Энциклопедический словарь Брокгауза и Ефрона (1890–1907)»: статьи по категориям Викитеки Логика, Философия, Психология",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 3861228,
+      "tiers": [],
+      "text": "prose",
+      "язык": "ru",
+      "тема": "философия",
+      "плотность": "словарь",
+      "издано": 1907,
+      "источник": "public-domain",
+      "происхождение": "wikisource-ru:categories:ЭСБЕ:Логика;ЭСБЕ:Философия;ЭСБЕ:Психология",
+      "held_out": "shelf/ru/esbe_logic_ru.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "esbe_language_ru",
+      "file": "shelf/ru/esbe_language_ru.txt",
+      "genre": "Брокгауз и Ефрон, авторы статей, «Энциклопедический словарь Брокгауза и Ефрона (1890–1907)»: статьи по категориям Викитеки Лингвистика, Языки, Грамматики, Латинский язык",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 3512105,
+      "tiers": [],
+      "text": "prose",
+      "язык": "ru",
+      "тема": "язык",
+      "плотность": "словарь",
+      "издано": 1907,
+      "источник": "public-domain",
+      "происхождение": "wikisource-ru:categories:ЭСБЕ:Лингвистика;ЭСБЕ:Языки;ЭСБЕ:Грамматики;ЭСБЕ:Латинский язык",
+      "held_out": "shelf/ru/esbe_language_ru.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "esbe_method_ru",
+      "file": "shelf/ru/esbe_method_ru.txt",
+      "genre": "Брокгауз и Ефрон, авторы статей, «Энциклопедический словарь Брокгауза и Ефрона (1890–1907)»: статьи по категориям Викитеки Наука, Метрология, Картография, Педагогика",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 1109766,
+      "tiers": [],
+      "text": "prose",
+      "язык": "ru",
+      "тема": "научный метод",
+      "плотность": "словарь",
+      "издано": 1907,
+      "источник": "public-domain",
+      "происхождение": "wikisource-ru:categories:ЭСБЕ:Наука;ЭСБЕ:Метрология;ЭСБЕ:Картография;ЭСБЕ:Педагогика",
+      "held_out": "shelf/ru/esbe_method_ru.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "esbe_technics_ru",
+      "file": "shelf/ru/esbe_technics_ru.txt",
+      "genre": "Брокгауз и Ефрон, авторы статей, «Энциклопедический словарь Брокгауза и Ефрона (1890–1907)»: статьи по категориям Викитеки Техника, Гидротехника, Осадная техника, Пиротехника",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 4531380,
+      "tiers": [],
+      "text": "prose",
+      "язык": "ru",
+      "тема": "техника",
+      "плотность": "словарь",
+      "издано": 1907,
+      "источник": "public-domain",
+      "происхождение": "wikisource-ru:categories:ЭСБЕ:Техника;ЭСБЕ:Гидротехника;ЭСБЕ:Осадная техника;ЭСБЕ:Пиротехника",
+      "held_out": "shelf/ru/esbe_technics_ru.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_gauss_surfaces",
+      "file": "shelf/en/gauss_surfaces.txt",
+      "genre": "General Investigations of Curved Surfaces — Carl Friedrich Gauss; английское издание 1902",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "математика",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1827,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:36856",
+      "held_out": "shelf/en/gauss_surfaces.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "newton_principia_ru",
+      "file": "shelf/en/newton_principia.txt",
+      "genre": "Isaac Newton, «The Mathematical Principles of Natural Philosophy (Motte's translation, 1846)» (1687): со скана Викитеки, абзацами страниц",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 1387121,
+      "tiers": [],
+      "text": "prose",
+      "язык": "en",
+      "тема": "естествознание",
+      "плотность": "трактат",
+      "издано": 1687,
+      "источник": "public-domain",
+      "происхождение": "wikisource-en-scan:Newton's Principia (1846).djvu",
+      "held_out": "shelf/en/newton_principia.holdout.txt",
+      "судится": [
+        "prosetree"
+      ]
     }
   ]
 }

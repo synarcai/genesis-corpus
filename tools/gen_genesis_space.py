@@ -50,14 +50,15 @@ def показ_поворота(г, шаг, i):
     чужой = S.записать(S.поворот(г, УГЛЫ[(шаг + i + 1) % 3]))
     форма = (шаг + i) % 4
     if форма == 0:
-        return f"grid {а} rotated {угол}° clockwise is {б}."
+        return f"grid {а} rotated {угол}° clockwise is {б}: {S.основание_en(0)}."
     if форма == 1:
-        return f"сетка {а} после поворота на {угол}° по часовой стрелке — {б}."
+        return f"сетка {а} после поворота на {угол}° по часовой стрелке — {б}: {S.основание_ru(0)}."
     if форма == 2:
         if чужой == б:
             return f"what is grid {а} rotated {угол}° clockwise? it is {б}."
-        return (f"grid {а} rotated {угол}° clockwise is not {чужой}." if i % 2 else
-                f"сетка {а} после поворота на {угол}° по часовой стрелке — не {чужой}.")
+        k = S.разница(S.поворот(г, угол), чужой.split("/"))
+        return (f"grid {а} rotated {угол}° clockwise is not {чужой}: {S.основание_en(k)}." if i % 2 else
+                f"сетка {а} после поворота на {угол}° по часовой стрелке — не {чужой}: {S.основание_ru(k)}.")
     return (f"what is grid {а} rotated {угол}° clockwise? it is {б}." if i % 2 else
             f"какой станет сетка {а} после поворота на {угол}° по часовой стрелке? она станет {б}.")
 
@@ -65,11 +66,17 @@ def показ_поворота(г, шаг, i):
 def показ_отражения(г, шаг, i):
     en, ru = ОСИ[(шаг + i) % 2]
     а, б = S.записать(г), S.записать(S.отражение(г, en))
-    форма = (шаг + i) % 3
+    форма = (шаг + i) % 4
     if форма == 0:
-        return f"grid {а} reflected {en} is {б}."
+        return f"grid {а} reflected {en} is {б}: {S.основание_en(0)}."
     if форма == 1:
-        return f"сетка {а} после отражения {ru} — {б}."
+        return f"сетка {а} после отражения {ru} — {б}: {S.основание_ru(0)}."
+    if форма == 3:
+        чужой = S.записать(S.отражение(г, ОСИ[(шаг + i + 1) % 2][0]))
+        k = S.разница(S.отражение(г, en), чужой.split("/"))
+        if k:
+            return (f"grid {а} reflected {en} is not {чужой}: {S.основание_en(k)}." if i % 2 else
+                    f"сетка {а} после отражения {ru} — не {чужой}: {S.основание_ru(k)}.")
     return (f"what is grid {а} reflected {en}? it is {б}." if i % 2 else
             f"какой станет сетка {а} после отражения {ru}? она станет {б}.")
 
@@ -101,10 +108,10 @@ def показ_соседей(г, шаг, i):
     k = S.соседи(г, r, c)
     а = S.записать(г)
     форма = (шаг + i) % 4
-    return [f"the number of filled side-neighbours of cell ({r},{c}) in grid {а} is {k}.",
-            f"число закрашенных соседей по стороне у клетки ({r},{c}) в сетке {а} — {k}.",
-            f"how many filled side-neighbours does cell ({r},{c}) in grid {а} have? it has {k}.",
-            f"сколько закрашенных соседей по стороне у клетки ({r},{c}) в сетке {а}? {k}."][форма]
+    return [f"the number of filled side-neighbours of cell ({r}, {c}) in grid {а} is {k}.",
+            f"число закрашенных соседей по стороне у клетки ({r}, {c}) в сетке {а} — {k}.",
+            f"how many filled side-neighbours does cell ({r}, {c}) in grid {а} have? it has {k}.",
+            f"сколько закрашенных соседей по стороне у клетки ({r}, {c}) в сетке {а}? {k}."][форма]
 
 
 def показ_пути(г, шаг, i):
@@ -120,14 +127,14 @@ def показ_пути(г, шаг, i):
     а = S.записать(г)
     (r1, c1), (r2, c2) = a, b
     if L is None:
-        return (f"there is no path from ({r1},{c1}) to ({r2},{c2}) through empty cells by side in grid {а}: the filled cells cut it off."
+        return (f"there is no path from ({r1}, {c1}) to ({r2}, {c2}) through empty cells by side in grid {а}: the filled cells cut it off."
                 if i % 2 else
-                f"пути от ({r1},{c1}) до ({r2},{c2}) по пустым клеткам по стороне в сетке {а} нет: закрашенные клетки его перекрывают.")
+                f"пути от ({r1}, {c1}) до ({r2}, {c2}) по пустым клеткам по стороне в сетке {а} нет: закрашенные клетки его перекрывают.")
     форма = (шаг + i) % 4
-    return [f"the length of the shortest path from ({r1},{c1}) to ({r2},{c2}) through empty cells by side in grid {а} is {L}.",
-            f"длина кратчайшего пути от ({r1},{c1}) до ({r2},{c2}) по пустым клеткам по стороне в сетке {а} — {L}.",
-            f"how long is the shortest path from ({r1},{c1}) to ({r2},{c2}) through empty cells by side in grid {а}? {L}.",
-            f"какова длина кратчайшего пути от ({r1},{c1}) до ({r2},{c2}) по пустым клеткам по стороне в сетке {а}? {L}."][форма]
+    return [f"the length of the shortest path from ({r1}, {c1}) to ({r2}, {c2}) through empty cells by side in grid {а} is {L}.",
+            f"длина кратчайшего пути от ({r1}, {c1}) до ({r2}, {c2}) по пустым клеткам по стороне в сетке {а} — {L}.",
+            f"how long is the shortest path from ({r1}, {c1}) to ({r2}, {c2}) through empty cells by side in grid {а}? {L}.",
+            f"какова длина кратчайшего пути от ({r1}, {c1}) до ({r2}, {c2}) по пустым клеткам по стороне в сетке {а}? {L}."][форма]
 
 
 def показ_счёта(г, шаг, i):

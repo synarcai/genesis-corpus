@@ -13,7 +13,7 @@
     transcript 3 on grid #../.#./..#              ← заголовок: номер шагов, среда
     step 1: action «shift right by 1» → response: grid .#./..#/...
     step 2: action «rotate 90° clockwise» → response: grid ...
-    step 3: action «paint (3,1)» → response: grid ...
+    step 3: action «paint (3, 1)» → response: grid ...
     end: grid ...                                 ← итог = отклик последнего шага
 
     стенограмма 3 на сетке #../.#./..#
@@ -26,10 +26,10 @@
   ничего скрытого, что нельзя было бы пересчитать.
 * ДЕЙСТВИЕ — из объявленного набора исполнителей дома `tools/spacegrid.py`:
   «shift right|left|down|up by k», «rotate 90°|180°|270° clockwise»,
-  «reflect left-right|top-bottom», «paint (r,c)» (закрасить клетку),
-  «erase (r,c)» (стереть); русские имена — те же исполнители.
+  «reflect left-right|top-bottom», «paint (r, c)» (закрасить клетку),
+  «erase (r, c)» (стереть); русские имена — те же исполнители.
 * ОТКЛИК — состояние среды ПОСЛЕ действия; отказ среды — тоже отклик:
-  «→ response: refused: cell (r,c) is outside the grid» — действие,
+  «→ response: no: cell (r, c) is outside the grid» (форма отказа корпуса: «no: …» / «нет: …») — действие,
   невозможное в среде, названо, а не проглочено.
 * КОНЕЦ — повторяет отклик последнего шага: стенограмма замкнута.
 
