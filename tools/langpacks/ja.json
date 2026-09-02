@@ -569,5 +569,15 @@
   },
   "segmentation": "longest-match",
   "stem_min": 1,
-  "ending_max": 4
+  "ending_max": 4,
+  "ask_words": {
+    "words": [
+      "何ですか",
+      "ですか",
+      "か",
+      "いくつ"
+    ],
+    "position": "end"
+  },
+  "ask_words_comment": "question words and their POSITION in the sentence (front/end) — derived from this pack's own layer and checkable by the same measure (М-137: the pack, not the pair-house, declares them)"
 }

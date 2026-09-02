@@ -1319,5 +1319,22 @@
     "walked": "walked",
     "took": "taken",
     "put": "put"
-  }
+  },
+  "ask_words": {
+    "words": [
+      "what",
+      "how",
+      "which",
+      "where",
+      "when",
+      "who",
+      "why",
+      "is",
+      "are",
+      "does",
+      "do"
+    ],
+    "position": "front"
+  },
+  "ask_words_comment": "question words and their POSITION in the sentence (front/end) — derived from this pack's own layer and checkable by the same measure (М-137: the pack, not the pair-house, declares them)"
 }

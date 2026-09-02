@@ -1144,5 +1144,21 @@
     "делитель": "то, на что делят",
     "сумма": "то, что вышло от сложения",
     "разность": "то, что вышло от вычитания"
-  }
+  },
+  "ask_words": {
+    "words": [
+      "что",
+      "чему",
+      "как",
+      "сколько",
+      "какой",
+      "где",
+      "когда",
+      "кто",
+      "почему",
+      "ли"
+    ],
+    "position": "front"
+  },
+  "ask_words_comment": "question words and their POSITION in the sentence (front/end) — derived from this pack's own layer and checkable by the same measure (М-137: the pack, not the pair-house, declares them)"
 }

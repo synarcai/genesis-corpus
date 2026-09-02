@@ -481,5 +481,21 @@
       "égale"
     ],
     "diacritics": "àâçéèêëîïôùû"
-  }
+  },
+  "ask_words": {
+    "words": [
+      "où",
+      "que",
+      "quel",
+      "quelle",
+      "combien",
+      "comment",
+      "pourquoi",
+      "est",
+      "qu'est-ce",
+      "est-il"
+    ],
+    "position": "front"
+  },
+  "ask_words_comment": "question words and their POSITION in the sentence (front/end) — derived from this pack's own layer and checkable by the same measure (М-137: the pack, not the pair-house, declares them)"
 }
