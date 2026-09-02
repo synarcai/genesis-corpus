@@ -93,13 +93,10 @@ def роды_спросить():
     вон = []
     for мир in МИРЫ_СПРОСИТЬ:
         м = importlib.import_module(f"gen_genesis_{мир}")
-        строки = []
-        for шаг in range(ПРОХОДОВ):
-            if hasattr(м, "pass_groups"):
-                for г in м.pass_groups(шаг):
-                    строки += list(г)
-            else:
-                строки += list(м.pass_shows(шаг))
+        # ПОКАЗЫ СЧИТАЮТСЯ В МИРЕ, КАК ОН ЛЕЖИТ (datasets/genesis_<мир>.txt):
+        # это и есть замер, а не повторное порождение; входы генераторов
+        # различны (pass_groups, pass_shows, kinds), мир — один.
+        строки = [с for с in (КОРЕНЬ / "datasets" / f"genesis_{мир}.txt").read_text(encoding="utf-8").splitlines() if с.strip()]
         for ключ, шаблон in м.СПРОСИТЬ.items():
             # ДЫРКА ШАБЛОНА ({n}, {предмет}) — ЛЮБАЯ ВЕЛИЧИНА; остальное — дословно.
             образец = re.compile("^" + re.sub(r"\\\{[^}]+\\\}", "(.+?)", re.escape(шаблон)) + " ")
