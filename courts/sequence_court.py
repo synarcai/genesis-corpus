@@ -70,9 +70,10 @@ def _пара(m, a, b):
 
 
 def дроби(текст):
+    """Члены как точные дроби; целый член — дробь со знаменателем 1."""
     try:
-        return [Fraction(int(ч), int(з)) for ч, з in
-                (к.split("/") for к in текст.split())]
+        return [Fraction(int(к.split("/")[0]), int(к.split("/")[1]) if "/" in к else 1)
+                for к in текст.split()]
     except (ValueError, ZeroDivisionError):
         return None
 
@@ -110,7 +111,14 @@ def судить(строка):
         q = члены[0].denominator
         степени = all(ч == Fraction(1, q ** (k + 1))
                       for k, ч in enumerate(члены))
-        return True, убывают and степени and int(m.group(3)) == 0
+        # ЦЕЛАЯ ЦЕПЬ С ПОСТОЯННЫМ ЦЕЛЫМ ДЕЛИТЕЛЕМ ≥ 2 убывает к нулю по
+        # построению так же, как 1/q, 1/q², …
+        целые = all(ч.denominator == 1 for ч in члены)
+        делитель = (члены[0] / члены[1]) if члены[1] else None
+        цепь = (целые and делитель is not None and делитель.denominator == 1
+                and делитель >= 2
+                and all(а == б * делитель for а, б in zip(члены, члены[1:])))
+        return True, убывают and (степени or цепь) and int(m.group(3)) == 0
     m = РЯД.match(с)
     if m:
         члены = дроби(m.group(1) or m.group(2))

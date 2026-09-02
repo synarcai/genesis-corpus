@@ -75,6 +75,10 @@ from genesis import Unreadable, worlds  # noqa: E402
     # ОТКАЗ ЕСТЬ ТАКОЕ ЖЕ УТВЕРЖДЕНИЕ: «такой цифры нет» истинно ровно
     # тогда, когда цифра и вправду выходит за основание. Суд смотрит
     # цифру, а не верит слову «нет».
+    (r"^(\d+): the digit (\d+) in binary is the number (\d+)$",
+     lambda a, d, v: a == d == v and int(d) < 2),
+    (r"^(\d+): цифра (\d+) в двоичной записи есть число (\d+)$",
+     lambda a, d, v: a == d == v and int(d) < 2),
     (r"^none: the digit (\d+) does not occur in binary$",
      lambda d: all(int(з) >= 2 for з in d)),
     (r"^такого нет: цифра (\d+) в двоичной записи не встречается$",

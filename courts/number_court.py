@@ -43,6 +43,11 @@ from genesis import Unreadable, worlds  # noqa: E402
 СРАВНИМЫ = re.compile(
     r"^(\d+) (?:and (\d+) are congruent modulo|и (\d+) сравнимы по модулю) "
     r"(\d+)\.$")
+# ВТОРАЯ ПОЛЯРНОСТЬ: «не сравнимы» истинно ровно тогда, когда остатки
+# разные, и оба остатка суд считает сам.
+НЕ_СРАВНИМЫ = re.compile(
+    r"^(\d+) (?:and (\d+) are not congruent modulo (\d+): (\d+) mod (\d+) = (\d+), (\d+) mod (\d+) = (\d+)"
+    r"|и (\d+) не сравнимы по модулю (\d+): (\d+) по модулю (\d+) равно (\d+), (\d+) по модулю (\d+) равно (\d+))\.$")
 # НИ ТО НИ ДРУГОЕ: у единицы делитель один, и она не проста и не
 # составна. Отказ истинен ровно тогда, когда делитель и вправду один.
 НИ_ТО_НИ_ДРУГОЕ = re.compile(
@@ -110,6 +115,12 @@ def судить(строка):
         b = int(m.group(2) or m.group(3))
         мод = int(m.group(4))
         return True, мод > 0 and a % мод == b % мод
+    m = НЕ_СРАВНИМЫ.match(с)
+    if m:
+        г = [int(x) for x in m.groups() if x is not None]
+        a, b, мод, a2, м2, r1, b2, м3, r2 = г
+        return True, (мод > 0 and (a2, м2, b2, м3) == (a, мод, b, мод)
+                      and r1 == a % мод and r2 == b % мод and r1 != r2)
     m = НИ_ТО_НИ_ДРУГОЕ.match(с)
     if m:
         n, единственный = int(m.group(1)), int(m.group(2))

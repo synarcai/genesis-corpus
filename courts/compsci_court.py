@@ -43,6 +43,9 @@ from genesis import Unreadable, worlds  # noqa: E402
     r"^(?:слово из (\d+) \S+ алфавита в (\d+) \S+ стоит (\d+) \S+"
     r"|a word of (\d+) signs? over an alphabet of (\d+) signs? "
     r"costs (\d+) bits)\.$")
+ЗНАК_БИТ = re.compile(
+    r"^(?:a sign of an alphabet of (\d+) signs? costs (\d+) bits?: 2\^(\d+) = (\d+)"
+    r"|знак алфавита в (\d+) \S+ стоит (\d+) \S+: 2\^(\d+) = (\d+))\.$")
 АВТОМАТ = re.compile(
     r"^(?:автомат чётности: вход ([01 ]+); состояние после — "
     r"(чётное|нечётное)"
@@ -116,6 +119,10 @@ def судить(строка):
     if m:
         исходов, бит = (int(x) for x in _г(m))
         return True, исходов == 2 ** бит
+    m = ЗНАК_БИТ.match(с)
+    if m:
+        n, b, b2, n2 = (int(x) for x in _г(m))
+        return True, n >= 2 and n == 2 ** b and (b2, n2) == (b, n)
     m = СЛОВО_БИТ.match(с)
     if m:
         длина, алфавит, цена = (int(x) for x in _г(m))

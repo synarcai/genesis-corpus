@@ -162,7 +162,7 @@ can could should has have will shall must may might would ought need
 каковы каком какую какого какими где
 когда кто чем чего кому насколько почему зачем отчего откуда куда
 чём ком кем который которая которое которые которого которой которых
-является делится простое сравнимы
+является делится простое сравнимы связен
 взаимно есть ли если во на
 wenn wie was ist sind welche welcher wo wann warum wieviel
 que quel quelle quels combien comment pourquoi est qu'est-ce est-il

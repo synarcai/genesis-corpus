@@ -71,6 +71,16 @@ def отказ_алфавита(шаг):
     for i in range(10):
         n = 3 + (шаг * 3 + i) % 12
         if степень_двойки(n):
+            # ОБЕ ПОЛЯРНОСТИ ОДНОЙ РАМКОЙ (аудит покупок holon 03.09):
+            # степень двойки отвечает тем же вопросом ценой в битах.
+            b = n.bit_length() - 1
+            вон.append(f"how many bits does a sign of an alphabet of {n} "
+                       f"signs cost? a sign of an alphabet of {n} signs "
+                       f"costs {b} bits: 2^{b} = {n}.")
+            вон.append(f"сколько бит стоит знак алфавита в {n} "
+                       f"{rugram.форма('знак', n)}? знак алфавита в {n} "
+                       f"{rugram.форма('знак', n)} стоит {b} "
+                       f"{rugram.форма('бит', b)}: 2^{b} = {n}.")
             continue
         вон.append(f"how many bits does a sign of an alphabet of {n} "
                    f"signs cost? no whole answer for {n} {by_count(n, 'signs')}: {n} is "

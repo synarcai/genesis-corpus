@@ -82,6 +82,8 @@ def квадрат(n):
     r"is even$")
 ПРЯМОЕ_RU = re.compile(
     r"^если n чётно, то n в квадрате чётно: (\d+) чётно и (\d+) чётно$")
+ПРЯМОЕ_НЕТ = re.compile(
+    r"^(?:no: (\d+) is even and (\d+) is odd|нет: (\d+) чётно, а (\d+) нечётно)$")
 
 
 # ШАГ ИНДУКЦИИ НЕСЁТ СВОЮ ЦЕПЬ, И ЦЕПЬ ОБЯЗАНА КОНЧАТЬСЯ ТАМ, КУДА
@@ -217,6 +219,10 @@ def судить(строка):
     if m:
         x, род = int(m.group(1)), m.group(2)
         return True, (x % 2 == 0) == (род == "чётно")
+    m = ПРЯМОЕ_НЕТ.match(с)
+    if m:
+        n, нечёт = (int(x) for x in m.groups() if x is not None)
+        return True, n % 2 == 0 and нечёт % 2 == 1
     m = ПРЯМОЕ_EN.match(с) or ПРЯМОЕ_RU.match(с)
     if m:
         n, квадратик = (int(x) for x in m.groups())
