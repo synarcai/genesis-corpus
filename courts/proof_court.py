@@ -30,6 +30,7 @@ import sys
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
 import asking  # noqa: E402
+import universals  # noqa: E402
 from genesis import Unreadable, worlds  # noqa: E402
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import arith_court  # noqa: E402
@@ -80,6 +81,8 @@ def квадрат(n):
 ВЫБОР_ЧЁТНОСТИ = re.compile(
     r"^(even|odd|чётно|нечётно): (\d+) = 2 × (\d+)( \+ 1)?$")
 КОНТР = re.compile(r"^(.+?) is false: (.+?)$")
+# ВОПРОС КОНТРПРИМЕРА ВЫВЕДЕН ИЗ ЕГО ОБРАЗЦА (tools/universals.py, М-149).
+ВОПРОС_КОНТР = re.compile(universals.вопрос_образца(КОНТР.pattern, ("en", "ru")))
 ПРЯМОЕ_EN = re.compile(
     r"^if n is even then n squared is even: (\d+) is even and (\d+) "
     r"is even$")
@@ -237,7 +240,7 @@ def судить(строка):
         # ПОСЫЛКА ОБЯЗАНА БЫТЬ ВЫПОЛНЕНА, иначе показ ничему не учит
         return True, (n % 2 == 0 and квадратик == n * n
                       and квадратик % 2 == 0)
-    m = КОНТР.match(с)
+    m = КОНТР.match(с) or ВОПРОС_КОНТР.match(с)
     if m:
         утверждение, свидетель = m.group(1).strip(), m.group(2).strip()
         если = СВИДЕТЕЛИ.get(свидетель)

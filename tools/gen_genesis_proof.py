@@ -36,6 +36,7 @@ import pathlib
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import universals  # noqa: E402
 from layer import emit  # noqa: E402
 
 ШАГИ = [(1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8), (2, 3)]
@@ -73,6 +74,8 @@ def pass_shows(pass_i):
                    f"{'чётно' if x % 2 == 0 else 'нечётно'}.")
         # --- контрпример: одно свидетельство убивает всеобщее
         out.append(f"{ложь} is false: {свидетель}.")
+        # A UNIVERSAL IS ASKED BY ITS OWN «IS IT TRUE THAT» (tools/universals.py, М-149).
+        out.append(universals.вопрос(f"{ложь} is false: {свидетель}.", ("en", "ru")))
         out.append("one witness kills a universal claim.")
         out.append("одно свидетельство убивает всеобщее утверждение.")
         # --- прямое доказательство: посылка ВЫПОЛНЕНА, следствие проверено
