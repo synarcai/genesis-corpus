@@ -1,0 +1,99 @@
+and we are to shew, that in solving this equation with reference to any variable $z$ by the general theorem (75), we shall obtain not only the general value of $z$ independent of $h$ and $k$, but also any subsidiary relations which may exist between $x$ and $y$ independently of $z$.
+
+If we represent the general equation [app](2) under the form $F(xyz) = 0$, its solution may by (75) be written in the form
+
+$$ z = \fracxy1 - \dfracF(111)F(110) + \fracx(1 - y)1 - \dfracF(101)F(100) + \fracy(1 - x)1 - \dfracF(011)F(010) + \frac(1 - x)(1 - y)1 - \dfracF(001)F(000); $$
+
+and we have seen, that any one of these four terms is to be equated to $0$, whose modulus, which we may represent by $M$, does not satisfy the condition $M^n = M$, or, which is here the same thing, whose modulus has any other value than $0$ or $1$.
+
+Consider the modulus (suppose $M_1$) of the first term, viz. $\dfrac11 - \dfracF(111)F(110)$, and giving to the symbol $F$ its full meaning, we have
+
+$$ M_1 = \frac11 - \dfrac\phi(111) + h\psi(111) + k\chi(111) \phi(110) + h\psi(110) + k\chi(110). $$
+
+It is evident that the condition $M_1^n = M_1$ cannot be satisfied unless the right-hand member be independent of $h$ and $k$; and in order that this may be the case, we must have the function $\dfrac\phi(111) + h\psi(111) + k\chi(111) \phi(110) + h\psi(110) + k\chi(110)$ independent of $h$ and $k$.
+
+Assume then
+
+$$ \frac\phi(111) + h\psi(111) + k\chi(111) \phi(110) + h\psi(110) + k\chi(110) = c, $$
+
+$c$ being independent of $h$ and $k$; we have, on clearing of fractions and equating coefficients,
+
+$$ \phi(111) = c\phi(110),\quad \psi(111) = c\psi(110),\quad \chi(111) = c\chi(110); $$
+
+whence, eliminating $c$,
+
+$$ \frac\phi(111)\phi(110) = \frac\psi(111)\psi(110) = \frac\chi(111)\chi(110), $$
+
+being equivalent to the triple system
+
+$$ \left.\beginalignedat3 &\phi(111)\psi(110) &&- \phi(110)\psi(111) &&= 0\Chg, \\ &\psi(111)\chi(110) &&- \psi(110)\chi(111) &&= 0\Chg, \\ &\chi(111)\phi(110) &&- \chi(110)\phi(111) &&= 0\Chg; \endalignedat \right\ \Tag[app](3) $$
+
+and it appears that if any one of these equations is not satisfied, the modulus $M_1$ will not satisfy the condition $M_1^n = M_1$, whence the first term of the value of $z$ must be equated to $0$, and we shall have
+
+$$ xy = 0, $$
+
+a relation between $x$ and $y$ independent of $z$.
+
+Now if we expand in terms of $z$ each pair of the primitive equations [app](1), we shall have
+
+3 &(xy0) &&+ (xy1) - (xy0)z &&= 0,
+
+&(xy0) &&+ (xy1) - (xy0)z &&= 0,
+
+&hi(xy0) &&+ hi(xy1) - hi(xy0)z &&= 0,
+
+and successively eliminating $z$ between each pair of these equations, we have
+
+3 &(xy1)(xy0) &&- (xy0)(xy1) &&= 0,
+
+&(xy1)hi(xy0) &&- (xy0)hi(xy1) &&= 0,
+
+&hi(xy1)(xy0) &&- hi(xy0)(xy1) &&= 0,
+
+which express all the relations between $x$ and $y$ that are formed by the elimination of $z$. Expanding these, and writing in full the first term, we have
+
+3 &(111)(110) &&- (110)(111)xy &&+ &c. = 0,
+
+&(111)hi(110) &&- (110)hi(111)xy &&+ &c. = 0,
+
+&hi(111)(110) &&- hi(110)(111)xy &&+ &c. = 0;
+
+and it appears from . that if the coefficient of $xy$ in any of these equations does not vanish, we shall have the equation
+
+$$ xy = 0; $$
+
+but the coefficients in question are the same as the first members of the system [app](3), and the two sets of conditions exactly agree. Thus, as respects the first term of the expansion, the method of indeterminate coefficients leads to the same result as ordinary elimination; and it is obvious that from their similarity of form, the same reasoning will apply to all the other terms.
+
+Suppose, in the second place, that the conditions [app](3) are satisfied so that $M_1$ is independent of $h$ and $k$. It will then indifferently assume the equivalent forms
+
+$$ M_1 = \frac11 - \dfrac\phi(111)\phi(110) = \frac11 - \dfrac\psi(111)\psi(110) = \frac11 - \dfrac\chi(111)\chi(110)\Chg. $$
+
+These are the exact forms of the first modulus in the expanded values of $z$, deduced from the solution of the three primitive equations singly. If this common value of $M_1$ is $1$ or $\frac00 = v$, the term will be retained in $z$; if any other constant value (except $0$), we have a relation $xy = 0$, not given by elimination, but deducible from the primitive equations singly, and similarly for all the other terms. Thus in every case the expression of the subsidiary relations is a necessary accompaniment of the process of solution.
+
+It is evident, upon consideration, that a similar proof will apply to the discussion of a system indefinite as to the number both of its symbols and of its equations.
+
+0Postscript. ChapNo §etRunningHeadsPostscript.
+
+MATHEMATICAL ANALYSIS OF LOGIC.
+
+Postscript.
+
+Some additional explanations and references which have occurred to me during the printing of this work are subjoined.
+
+The remarks on the connexion between Logic and Language, , are scarcely sufficiently explicit. Both the one and the other I hold to depend very materially upon our ability to form general notions by the faculty of abstraction. Language is an instrument of Logic, but not an indispensable instrument.
+
+To the remarks on Cause, , I desire to add the following: Considering Cause as an invariable antecedent in Nature, (which is Brown's view), whether associated or not with the idea of Power, as suggested by Sir John Herschel, the knowledge of its existence is a knowledge which is properly expressed by the word that (t`o <ot`i), not by why (t`o di<ot`i). It is very remarkable that the two greatest authorities in Logic, modern and ancient, agreeing in the latter interpretation, differ most widely in its application to Mathematics. Sir W. Hamilton says that Mathematics
+
+exhibit only the that (t`o <ot`i): Aristotle says, The why belongs to mathematicians, for they have the demonstrations of Causes. Anal. Post. lib. i., cap. xiv. It must be added that Aristotle's view is consistent with the sense (albeit an erroneous one) which in various parts of his writings he virtually assigns to the word Cause, viz. an antecedent in Logic, a sense according to which the premises might be said to be the cause of the conclusion. This view appears to me to give even to his physical inquiries much of their peculiar character.
+
+Upon reconsideration, I think that the view on , as to the presence or absence of a medium of comparison, would readily follow from Professor De Morgan's doctrine, and I therefore relinquish all claim to a discovery. The mode in which it appears in this treatise is, however, remarkable.
+
+I have seen reason to change the opinion expressed in
+
+. The system of equations there given for the expression of Propositions in Syllogism is always preferable to the one before employed — first, in generality — secondly, in facility of interpretation.
+
+In virtue of the principle, that a Proposition is either true or false, every elective symbol employed in the expression of hypotheticals admits only of the values $0$ and $1$, which are the only quantitative forms of an elective symbol. It is in fact possible, setting out from the theory of Probabilities (which is purely quantitative), to arrive at a system of methods and processes for the treatment of hypotheticals exactly similar to those which have been given. The two systems of elective symbols and of quantity osculate, if I may use the expression, in the points $0$ and $1$. It seems to me to be implied by this, that unconditional truth (categoricals) and probable truth meet together in the constitution of contingent truth (hypotheticals). The general doctrine of elective symbols and all the more characteristic applications are quite independent of any quantitative origin.
+
+THE END.
+
+0PG License. §etRunningHeadsLicense.

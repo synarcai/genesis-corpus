@@ -170,7 +170,9 @@ class Книга:
           1920, 1920, "The Concept of Nature", "Alfred North Whitehead"),
     Книга(65274, "peirce_chance", "логика", "статья",
           1878, 1923, "Chance, Love, and Logic", "Charles Sanders Peirce"),
-    Книга(5001, "einstein_relativity", "естествознание", "трактат",
+    # 5001 лежит лишь HTML с формулами-картинками; 30155 — то же издание
+    # 1920 года текстом.
+    Книга(30155, "einstein_relativity", "естествознание", "трактат",
           1916, 1920, "Relativity: The Special and General Theory",
           "Albert Einstein"),
     Книга(78610, "carnot_heat", "естествознание", "трактат",
@@ -213,9 +215,10 @@ class Книга:
     Книга(11562, "galton_inquiries", "естествознание", "исследование",
           1883, 1883, "Inquiries into Human Faculty and Its Development",
           "Francis Galton"),
-    Книга(76404, "newton_principia", "естествознание", "трактат",
-          1687, 1846, "Newton's Principia (Motte's translation)",
-          "Isaac Newton"),
+    # НЬЮТОН (76404) И ГИЛЬБЕРТ «Mathematical Problems» (71655) лежат на
+    # Gutenberg лишь HTML с формулами-картинками без alt — текст с дырами
+    # на месте формул на полку не кладётся; «Principia» Мотта есть на
+    # en.wikisource (1846) — дорога постатейных сводов, следующий срез.
     Книга(70091, "descartes_meditations", "метафизика", "трактат",
           1641, 1680, "Six Metaphysical Meditations", "Rene Descartes"),
     Книга(14474, "faraday_candle", "естествознание", "исследование",
