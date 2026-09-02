@@ -141,14 +141,19 @@ def pass_shows(pass_i):
 # ПОЛОЖИТЕЛЬНОСТЬ — ВЕРДИКТНАЯ РАМКА ДЛЯ РЫНКА УНИВЕРСАЛИЙ (holon 04.09: «all
 # whole numbers are positive is false» ждёт предиката «positive»): обе
 # полярности массой — «нет» у нуля и у отрицательных; формы вопроса из пакетов.
-# TWO FRAMES OF THE SIGN (holon 04.09: the organism's number reader is unsigned —
-# «−3» reads as «3» — so a frame that mixes negatives with positives contradicts
-# itself for that reader). «is # positive?» runs over NON-NEGATIVE numbers, zero
-# giving the «no» polarity; «is # above zero?» is a separate frame over signed
-# numbers whose absolute values never meet: the unsigned reader sees no clash.
-ЧИСЛА_НЕОТР = (7, 0, 12, 1, 20, 0, 5, 9, 0, 15, 3, 0)
+# TWO FRAMES OF THE SIGN, EACH WITH BOTH POLARITIES ON DISJOINT ABSOLUTE
+# VALUES (holon 04.09, twice): the organism's number reader is unsigned —
+# «−3» reads as «3» — so within one frame the absolute values of the «yes»
+# numbers and of the «no» numbers never meet, and no reader sees «3 → yes»
+# beside «3 → no»; and a «no» shown by zero alone is one number, not a
+# polarity (the law of mass wants four distinct), so «is # positive?» carries
+# zero AND five negatives whose absolute values are its own. The minus is
+# written as the sign U+2212 glued to the digits, as every signed world of
+# the corpus writes it (equation_signed, numbers, physics).
+ЧИСЛА_ПОЛОЖ = (7, 0, 12, -10, 1, 20, -13, 0, 5, -16, 9, 15, -18, 0, 3, -19)
 ЧИСЛА_ЗНАКА = (2, -3, 6, -8, 11, -1, 14, -12, 17, -4)
-assert not {abs(n) for n in ЧИСЛА_ЗНАКА if n < 0} & {n for n in ЧИСЛА_ЗНАКА if n > 0}
+for _ряд in (ЧИСЛА_ПОЛОЖ, ЧИСЛА_ЗНАКА):
+    assert not {abs(n) for n in _ряд if n < 0} & {n for n in _ряд if n > 0}
 
 
 def _формы(язык, род):
@@ -167,12 +172,12 @@ def _ответ(n):
 
 
 def положительность(pass_i):
-    """Form 0 of ask_forms.positive («is {} positive?») over the non-negative
-    numbers; form 1 («is {} above zero?») over the signed ones."""
+    """Form 0 of ask_forms.positive («is {} positive?») and form 1 («is {} above
+    zero?») — two frames, each over its own signed numbers."""
     out = []
     формы_en, формы_ru = _формы("en", "positive"), _формы("ru", "positive")
     for i in range(8):
-        n = ЧИСЛА_НЕОТР[(pass_i * 5 + i) % len(ЧИСЛА_НЕОТР)]
+        n = ЧИСЛА_ПОЛОЖ[(pass_i * 5 + i) % len(ЧИСЛА_ПОЛОЖ)]
         з, отв_en, отв_ru = _ответ(n)
         out.append(f"{формы_en[0].format(з)} {отв_en}")
         out.append(f"{формы_ru[0].format(з)} {отв_ru}")
