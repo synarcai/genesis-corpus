@@ -16,7 +16,7 @@
         "recompute"
       ],
       "boundary": [
-        "unnamed"
+        "whole_only"
       ],
       "size": 700000,
       "tiers": [
@@ -76,7 +76,7 @@
         "recompute"
       ],
       "boundary": [
-        "unnamed"
+        "whole_only"
       ],
       "size": 100000,
       "tiers": [],
@@ -111,7 +111,7 @@
         "recompute"
       ],
       "boundary": [
-        "unnamed"
+        "whole_only"
       ],
       "size": 100000,
       "tiers": [],
@@ -145,7 +145,7 @@
         "unnamed"
       ],
       "boundary": [
-        "unnamed"
+        "whole_only"
       ],
       "size": 100000,
       "tiers": [],
@@ -184,7 +184,7 @@
         "unnamed"
       ],
       "boundary": [
-        "unnamed"
+        "whole_only"
       ],
       "size": 100000,
       "tiers": [],
@@ -267,7 +267,7 @@
         "recompute"
       ],
       "boundary": [
-        "unnamed"
+        "whole_only"
       ],
       "size": 100000,
       "tiers": [],
@@ -287,7 +287,7 @@
         "unnamed"
       ],
       "boundary": [
-        "unnamed"
+        "whole_only"
       ],
       "size": 100000,
       "tiers": [],
@@ -331,7 +331,7 @@
         "recompute"
       ],
       "boundary": [
-        "unnamed"
+        "whole_only"
       ],
       "size": 100000,
       "tiers": [],
@@ -351,7 +351,7 @@
         "unnamed"
       ],
       "boundary": [
-        "unnamed"
+        "whole_only"
       ],
       "size": 100000,
       "tiers": [],
@@ -607,7 +607,7 @@
         "recompute"
       ],
       "boundary": [
-        "unnamed"
+        "whole_only"
       ],
       "size": 200000,
       "tiers": [],
@@ -625,7 +625,7 @@
         "recompute"
       ],
       "boundary": [
-        "unnamed"
+        "whole_only"
       ],
       "size": 60000,
       "tiers": [],
@@ -788,7 +788,7 @@
         "recompute"
       ],
       "boundary": [
-        "unnamed"
+        "whole_only"
       ],
       "size": 200000,
       "tiers": [],
@@ -843,7 +843,7 @@
         "recompute"
       ],
       "boundary": [
-        "unnamed"
+        "whole_only"
       ],
       "size": 100000,
       "tiers": [],
@@ -906,7 +906,7 @@
         "recompute"
       ],
       "boundary": [
-        "unnamed"
+        "whole_only"
       ],
       "size": 100000,
       "tiers": [],
@@ -927,7 +927,7 @@
         "unnamed"
       ],
       "boundary": [
-        "unnamed"
+        "whole_only"
       ],
       "size": 90000,
       "tiers": [],
@@ -948,7 +948,7 @@
         "recompute"
       ],
       "boundary": [
-        "unnamed"
+        "whole_only"
       ],
       "size": 70000,
       "tiers": [],
@@ -967,7 +967,7 @@
         "recompute"
       ],
       "boundary": [
-        "unnamed"
+        "whole_only"
       ],
       "size": 70000,
       "tiers": [],
@@ -1111,7 +1111,7 @@
         "declared"
       ],
       "boundary": [
-        "unnamed"
+        "whole_only"
       ],
       "size": 40000,
       "tiers": [],
@@ -1134,7 +1134,8 @@
         "declared"
       ],
       "boundary": [
-        "tier1_unverified"
+        "tier1_unverified",
+        "whole_only"
       ],
       "size": 40000,
       "tiers": [],
@@ -1157,7 +1158,8 @@
         "declared"
       ],
       "boundary": [
-        "tier1_unverified"
+        "tier1_unverified",
+        "whole_only"
       ],
       "size": 40000,
       "tiers": [],
@@ -1180,7 +1182,8 @@
         "declared"
       ],
       "boundary": [
-        "tier1_unverified"
+        "tier1_unverified",
+        "whole_only"
       ],
       "size": 40000,
       "tiers": [],
@@ -1240,7 +1243,8 @@
         "declared"
       ],
       "boundary": [
-        "tier1_unverified"
+        "tier1_unverified",
+        "whole_only"
       ],
       "size": 40000,
       "tiers": [],
@@ -1263,7 +1267,8 @@
         "declared"
       ],
       "boundary": [
-        "tier1_unverified"
+        "tier1_unverified",
+        "whole_only"
       ],
       "size": 40000,
       "tiers": [],
@@ -1286,7 +1291,8 @@
         "declared"
       ],
       "boundary": [
-        "tier1_unverified"
+        "tier1_unverified",
+        "whole_only"
       ],
       "size": 40000,
       "tiers": [],
@@ -1309,7 +1315,8 @@
         "declared"
       ],
       "boundary": [
-        "tier1_unverified"
+        "tier1_unverified",
+        "whole_only"
       ],
       "size": 40000,
       "tiers": [],
@@ -1332,7 +1339,8 @@
         "declared"
       ],
       "boundary": [
-        "tier1_unverified"
+        "tier1_unverified",
+        "whole_only"
       ],
       "size": 40000,
       "tiers": [],
@@ -1357,7 +1365,7 @@
         "recompute"
       ],
       "boundary": [
-        "unnamed"
+        "whole_only"
       ],
       "size": 120000,
       "tiers": [],
@@ -1438,7 +1446,7 @@
         "reversibility"
       ],
       "boundary": [
-        "unnamed"
+        "reversible_only"
       ],
       "size": 300000,
       "tiers": [],
@@ -1483,7 +1491,7 @@
         "recompute"
       ],
       "boundary": [
-        "unnamed"
+        "whole_only"
       ],
       "size": 100000,
       "tiers": [],
@@ -1507,8 +1515,7 @@
         "recompute"
       ],
       "boundary": [
-        "whole_only",
-        "unsigned_only"
+        "whole_only"
       ],
       "size": 150000,
       "tiers": [],
@@ -1682,7 +1689,8 @@
         "declared"
       ],
       "boundary": [
-        "tier1_unverified"
+        "tier1_unverified",
+        "whole_only"
       ],
       "size": 60000,
       "tiers": [],
@@ -1705,7 +1713,8 @@
         "declared"
       ],
       "boundary": [
-        "tier1_unverified"
+        "tier1_unverified",
+        "whole_only"
       ],
       "size": 60000,
       "tiers": [],
@@ -1728,7 +1737,8 @@
         "declared"
       ],
       "boundary": [
-        "tier1_unverified"
+        "tier1_unverified",
+        "whole_only"
       ],
       "size": 60000,
       "tiers": [],
@@ -1751,7 +1761,8 @@
         "declared"
       ],
       "boundary": [
-        "tier1_unverified"
+        "tier1_unverified",
+        "whole_only"
       ],
       "size": 60000,
       "tiers": [],
@@ -1774,7 +1785,8 @@
         "declared"
       ],
       "boundary": [
-        "tier1_unverified"
+        "tier1_unverified",
+        "whole_only"
       ],
       "size": 60000,
       "tiers": [],
@@ -1797,7 +1809,8 @@
         "declared"
       ],
       "boundary": [
-        "tier1_unverified"
+        "tier1_unverified",
+        "whole_only"
       ],
       "size": 60000,
       "tiers": [],
@@ -1820,7 +1833,8 @@
         "declared"
       ],
       "boundary": [
-        "tier1_unverified"
+        "tier1_unverified",
+        "whole_only"
       ],
       "size": 60000,
       "tiers": [],
@@ -1843,7 +1857,8 @@
         "declared"
       ],
       "boundary": [
-        "tier1_unverified"
+        "tier1_unverified",
+        "whole_only"
       ],
       "size": 60000,
       "tiers": [],
@@ -1866,7 +1881,8 @@
         "declared"
       ],
       "boundary": [
-        "tier1_unverified"
+        "tier1_unverified",
+        "whole_only"
       ],
       "size": 60000,
       "tiers": [],
@@ -1889,7 +1905,8 @@
         "declared"
       ],
       "boundary": [
-        "tier1_unverified"
+        "tier1_unverified",
+        "whole_only"
       ],
       "size": 60000,
       "tiers": [],
@@ -1912,7 +1929,8 @@
         "declared"
       ],
       "boundary": [
-        "tier1_unverified"
+        "tier1_unverified",
+        "whole_only"
       ],
       "size": 60000,
       "tiers": [],
@@ -1935,7 +1953,8 @@
         "declared"
       ],
       "boundary": [
-        "tier1_unverified"
+        "tier1_unverified",
+        "whole_only"
       ],
       "size": 60000,
       "tiers": [],
@@ -1958,7 +1977,8 @@
         "declared"
       ],
       "boundary": [
-        "tier1_unverified"
+        "tier1_unverified",
+        "whole_only"
       ],
       "size": 60000,
       "tiers": [],
@@ -1981,7 +2001,8 @@
         "declared"
       ],
       "boundary": [
-        "tier1_unverified"
+        "tier1_unverified",
+        "whole_only"
       ],
       "size": 60000,
       "tiers": [],
@@ -2004,7 +2025,8 @@
         "declared"
       ],
       "boundary": [
-        "tier1_unverified"
+        "tier1_unverified",
+        "whole_only"
       ],
       "size": 60000,
       "tiers": [],
@@ -2027,7 +2049,8 @@
         "declared"
       ],
       "boundary": [
-        "tier1_unverified"
+        "tier1_unverified",
+        "whole_only"
       ],
       "size": 60000,
       "tiers": [],
@@ -2052,7 +2075,7 @@
         "recompute"
       ],
       "boundary": [
-        "unnamed"
+        "whole_only"
       ],
       "size": 120000,
       "tiers": [],
@@ -2075,7 +2098,7 @@
         "recompute"
       ],
       "boundary": [
-        "unnamed"
+        "whole_only"
       ],
       "size": 120000,
       "tiers": [],
@@ -2098,7 +2121,7 @@
         "recompute"
       ],
       "boundary": [
-        "unnamed"
+        "whole_only"
       ],
       "size": 125574,
       "tiers": [],
@@ -2122,7 +2145,7 @@
         "declared"
       ],
       "boundary": [
-        "unnamed"
+        "whole_only"
       ],
       "size": 96689,
       "tiers": [],
@@ -3192,6 +3215,32 @@
       "boundary": [
         "whole_only",
         "unsigned_only"
+      ]
+    },
+    {
+      "name": "gutenberg_demorgan_paradoxes",
+      "file": "shelf/en/demorgan_paradoxes.txt",
+      "genre": "A Budget of Paradoxes, Volume I — Augustus De Morgan; английское издание 1872",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "логика",
+      "язык": "en",
+      "плотность": "исследование",
+      "издано": 1872,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:23100",
+      "held_out": "shelf/en/demorgan_paradoxes.holdout.txt",
+      "судится": [
+        "prosetree"
       ]
     }
   ]

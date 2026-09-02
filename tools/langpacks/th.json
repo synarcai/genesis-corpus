@@ -330,7 +330,7 @@
       "instances_per_pass": 22,
       "templates": [
         "{lex:noun_count:one}เป็นสิ่งของ",
-        "{lex:noun_count:one}คืออะไร? {lex:noun_count:one}เป็นสิ่งของ"
+        "อะไรคือ{lex:noun_count:one}? {lex:noun_count:one}เป็นสิ่งของ"
       ]
     },
     "refusals": {

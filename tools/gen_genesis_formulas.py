@@ -54,6 +54,25 @@ GRAPHS = [
 }
 
 
+# ИСКОМОЕ ОБЪЯВЛЯЕТ СВОЙ ВОПРОС ОДИН РАЗ, и вопрос берёт ТУ ЖЕ фразу
+# предмета, какую берёт ответ. Замер вопросной поверхности назвал этот
+# мир немым: 880 строк, вопросов ноль — он сообщал, чему равна площадь,
+# и ни разу не спрашивал.
+СПРОСИТЬ = {
+    "value": "what is {предмет}?",
+    "area": "what is the area of {предмет}?",
+    "leg": "{предмет} — what is c?",
+    "значение": "чему равно {предмет}?",
+    "площадь": "чему равна площадь {предмет}?",
+    "катет": "{предмет} — чему равно c?",
+}
+
+
+def спросить(искомое, предмет, ответ):
+    """Вопрос о предмете и ответ о нём же — одной строкой."""
+    return f"{СПРОСИТЬ[искомое].format(предмет=предмет)} {ответ}"
+
+
 def pass_shows(pass_i):
     out = []
     for i in range(8):
@@ -64,30 +83,71 @@ def pass_shows(pass_i):
         n = SUMS[(pass_i * 2 + i) % len(SUMS)]
         g, k = GEOM[(pass_i * 7 + i) % len(GEOM)]
         # --- Pythagoras
-        out.append(f"a^2 + b^2 = c^2 with a = {a} and b = {b} gives c = {c}.")
-        out.append(f"формула a^2 + b^2 = c^2 при a = {a} и b = {b} "
-                   f"даёт c = {c}.")
+        пиф_en = f"a^2 + b^2 = c^2 with a = {a} and b = {b}"
+        пиф_ru = f"формула a^2 + b^2 = c^2 при a = {a} и b = {b}"
+        утв_п_en = f"{пиф_en} gives c = {c}."
+        утв_п_ru = f"{пиф_ru} даёт c = {c}."
+        out.append(утв_п_en)
+        out.append(утв_п_ru)
+        out.append(спросить("leg", пиф_en, утв_п_en))
+        out.append(спросить("катет", пиф_ru, утв_п_ru))
         out.append(f"die formel a^2 + b^2 = c^2 mit a = {a} und b = {b} "
                    f"ergibt c = {c}.")
         # --- rectangle and triangle areas
-        out.append(f"the area of a rectangle {w} by {h} is {w * h}.")
-        out.append(f"площадь прямоугольника {w} на {h} равна {w * h}.")
-        out.append(f"the area of a triangle with base {base} and height "
-                   f"{height} is {base * height // 2}.")
-        out.append(f"площадь треугольника с основанием {base} и высотой "
-                   f"{height} равна {base * height // 2}.")
+        пр_en, пр_ru = f"a rectangle {w} by {h}", f"прямоугольника {w} на {h}"
+        утв_пр_en = f"the area of {пр_en} is {w * h}."
+        утв_пр_ru = f"площадь {пр_ru} равна {w * h}."
+        out.append(утв_пр_en)
+        out.append(утв_пр_ru)
+        out.append(спросить("area", пр_en, утв_пр_en))
+        out.append(спросить("площадь", пр_ru, утв_пр_ru))
+        тр_en = f"a triangle with base {base} and height {height}"
+        тр_ru = f"треугольника с основанием {base} и высотой {height}"
+        утв_тр_en = f"the area of {тр_en} is {base * height // 2}."
+        утв_тр_ru = f"площадь {тр_ru} равна {base * height // 2}."
+        out.append(утв_тр_en)
+        out.append(утв_тр_ru)
+        out.append(спросить("area", тр_en, утв_тр_en))
+        out.append(спросить("площадь", тр_ru, утв_тр_ru))
+        # ОТКАЗ С ОСНОВАНИЕМ: площадь треугольника есть половина
+        # произведения, и при нечётном произведении целой её нет. Мир
+        # пишет площадь только при чётном — таков его закон, — и отказ
+        # называет основание числом: само произведение и его нечётность.
+        нч = height + 1 if (base * height) % 2 == 0 else height
+        if (base * нч) % 2:
+            out.append(f"what is the area of a triangle with base "
+                       f"{base} and height {нч}? no whole answer for "
+                       f"base {base} and height {нч}: {base} × {нч} = "
+                       f"{base * нч} is odd.")
+            out.append(f"чему равна площадь треугольника с основанием "
+                       f"{base} и высотой {нч}? целого ответа нет при "
+                       f"основании {base} и высоте {нч}: {base} × {нч} "
+                       f"= {base * нч} нечётно.")
         # --- binomial identities, instantiated
         out.append(f"( {p} + {q} )^2 = {p}^2 + 2 × {p} × {q} + {q}^2 = "
                    f"{(p + q) ** 2}.")
-        out.append(f"( {p} + {q} )^2 = {(p + q) ** 2}.")
+        квадрат = f"( {p} + {q} )^2"
+        out.append(f"{квадрат} = {(p + q) ** 2}.")
+        out.append(спросить("значение", квадрат,
+                            f"{квадрат} = {(p + q) ** 2}."))
         out.append(f"{p}^2 − {q}^2 = ( {p} − {q} ) × ( {p} + {q} ) = "
                    f"{p * p - q * q}.")
         # --- the sum of the first n
-        out.append(f"the sum of the first {n} numbers is {n * (n + 1) // 2}.")
-        out.append(f"сумма первых {n} чисел равна {n * (n + 1) // 2}.")
+        сум_en = f"the sum of the first {n} numbers"
+        сум_ru = f"сумма первых {n} чисел"
+        утв_с_en = f"{сум_en} is {n * (n + 1) // 2}."
+        утв_с_ru = f"{сум_ru} равна {n * (n + 1) // 2}."
+        out.append(утв_с_en)
+        out.append(утв_с_ru)
+        out.append(спросить("value", сум_en, утв_с_en))
+        out.append(спросить("значение", сум_ru, утв_с_ru))
         # --- geometric growth
-        out.append(f"{g} to the power {k} is {g ** k}.")
-        out.append(f"{g} в степени {k} равно {g ** k}.")
+        ст_en, ст_ru = f"{g} to the power {k}", f"{g} в степени {k}"
+        утв_ст_en, утв_ст_ru = f"{ст_en} is {g ** k}.", f"{ст_ru} равно {g ** k}."
+        out.append(утв_ст_en)
+        out.append(утв_ст_ru)
+        out.append(спросить("value", ст_en, утв_ст_en))
+        out.append(спросить("значение", ст_ru, утв_ст_ru))
         # --- diagrams
         текст, узлов, рёбер, откуда, куда, шагов = GRAPHS[
             (pass_i * 3 + i) % len(GRAPHS)]

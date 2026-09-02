@@ -343,7 +343,7 @@
       "templates": [
         "{lex:noun_classifier:bare}是东西。",
         "{lex:person_plural:one}是人。",
-        "{lex:noun_classifier:bare}是什么？{lex:noun_classifier:bare}是东西。"
+        "{lex:noun_classifier:bare}是什么东西？{lex:noun_classifier:bare}是东西。"
       ]
     },
     "refusals": {

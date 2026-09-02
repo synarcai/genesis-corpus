@@ -102,6 +102,12 @@ def счёта_нет(строка):
     r"^(?:(\d+) делится на (\d+)\. значит (\d+) (кратно \d+|чётно)"
     r"|(\d+) is divisible by (\d+)\. therefore (\d+) "
     r"(is a multiple of \d+|is even))\.$")
+# ОТКАЗ ЕСТЬ ТАКОЕ ЖЕ УТВЕРЖДЕНИЕ: «не делится» истинно ровно тогда,
+# когда остаток и вправду не ноль И назван верно. Суд делит сам.
+НЕ_ДЕЛИТСЯ = re.compile(
+    r"^(?:нет: (\d+) на (\d+) не делится, остаток (\d+)"
+    r"|no: (\d+) is not divisible by (\d+), the remainder is "
+    r"(\d+))\.$")
 КОТОРЫЙ = re.compile(
     r"^(\d+) (?:есть число, которое делится на|"
     r"is a number that is divisible by) (\d+)\. (\d+) ÷ (\d+) = (\d+)\.$")
@@ -283,6 +289,10 @@ def судить(строка):
     нельзя = счёта_нет(строка)
     if нельзя is not None:
         return True, нельзя
+    м = НЕ_ДЕЛИТСЯ.match(строка.strip())
+    if м:
+        n, d, r = (int(x) for x in м.groups() if x is not None)
+        return True, d != 0 and n % d != 0 and n % d == r
     вон = связь(строка)
     if вон is not None:
         return True, вон
