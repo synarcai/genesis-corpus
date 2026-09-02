@@ -701,35 +701,39 @@ in the space of the declared graph the distance between E and F is not greater t
 the nodes of the declared graph with this distance form a space: the distance is symmetric, vanishes only between a node and itself, and never exceeds the sum through a third node.
 
 транзитивно ли отношение «не больше» на множестве {1, 2, 3, 4}? на множестве {1, 2, 3, 4} отношение «не больше» транзитивно: если a относится к b и b относится к c, то a относится к c.
-is the correspondence «square» on the set {1, 2, 3, 4} one-to-one? the correspondence «square» on the set {1, 2, 3, 4} is one-to-one: 4 elements and 4 values.
-есть ли путь из A в D в объявленном графе? в объявленном графе есть связь из A в D: путь A - B - D длины 2.
-is there a path from C to D in the declared graph? in the declared graph there is a connection from C to D: the path C - D of length 1.
-содержит ли узел thing узел body? в дереве родов узел thing содержит узел body.
 in what class modulo 3 does the number 1 stand? the number 1 stands in the class of remainder 1 modulo 3.
 сравнимы ли элементы 1 и 2 в порядке «не больше»? в порядке «не больше» на множестве {1, 2, 3, 4} элемент 1 стоит ниже элемента 2.
 how long is the shortest path from B to D in the declared graph? in the declared graph the shortest path from B to D has length 1.
-на каком уровне стоит узел thing? уровень узла thing равен 0.
-is the relation «same parity» on the set {1, 2, 3, 4} transitive? on the set {1, 2, 3, 4} the relation «same parity» is transitive: if a stands to b and b stands to c, then a stands to c.
-взаимно-однозначно ли соответствие «номер в обходе» на узлах дерева родов? соответствие «номер в обходе» на узлах дерева родов взаимно-однозначно: 18 элементов и 18 значений.
-is there a path from B to D in the declared graph? in the declared graph there is a connection from B to D: the path B - D of length 1.
-какова длина кратчайшего пути из C в D в объявленном графе? в объявленном графе кратчайший путь из C в D имеет длину 1.
+каково расстояние между A и B в пространстве объявленного графа? в пространстве объявленного графа расстояние между A и B равно 1.
 is the relation «equal» on the set {1, 2, 3, 4} transitive? on the set {1, 2, 3, 4} the relation «equal» is transitive: if a stands to b and b stands to c, then a stands to c.
-взаимно-однозначно ли соответствие «квадрат» на множестве {1, 2, 3, 4}? соответствие «квадрат» на множестве {1, 2, 3, 4} взаимно-однозначно: 4 элемента и 4 значения.
-how long is the shortest path from A to D in the declared graph? in the declared graph the shortest path from A to D has length 2.
-есть ли путь из C в D в объявленном графе? в объявленном графе есть связь из C в D: путь C - D длины 1.
-is the relation «at most» on the set {1, 2, 3, 4} transitive? on the set {1, 2, 3, 4} the relation «at most» is transitive: if a stands to b and b stands to c, then a stands to c.
 в каком классе по модулю 3 стоит число 1? число 1 стоит в классе остатка 1 по модулю 3.
 is there a path from A to D in the declared graph? in the declared graph there is a connection from A to D: the path A - B - D of length 2.
 какова длина кратчайшего пути из B в D в объявленном графе? в объявленном графе кратчайший путь из B в D имеет длину 1.
-does the node thing contain the node body? in the tree of kinds the node thing contains the node body.
-транзитивно ли отношение «та же чётность» на множестве {1, 2, 3, 4}? на множестве {1, 2, 3, 4} отношение «та же чётность» транзитивно: если a относится к b и b относится к c, то a относится к c.
-are the elements 1 and 2 comparable in the order «at most»? in the order «at most» on the set {1, 2, 3, 4} the element 1 stands below the element 2.
-есть ли путь из B в D в объявленном графе? в объявленном графе есть связь из B в D: путь B - D длины 1.
 at what level does the node thing stand? the level of the node thing is 0.
 транзитивно ли отношение «равно» на множестве {1, 2, 3, 4}? на множестве {1, 2, 3, 4} отношение «равно» транзитивно: если a относится к b и b относится к c, то a относится к c.
+is the correspondence «square» on the set {1, 2, 3, 4} one-to-one? the correspondence «square» on the set {1, 2, 3, 4} is one-to-one: 4 elements and 4 values.
+есть ли путь из A в D в объявленном графе? в объявленном графе есть связь из A в D: путь A - B - D длины 2.
+is there a path from C to D in the declared graph? in the declared graph there is a connection from C to D: the path C - D of length 1.
+на каком уровне стоит узел thing? уровень узла thing равен 0.
+is the relation «same parity» on the set {1, 2, 3, 4} transitive? on the set {1, 2, 3, 4} the relation «same parity» is transitive: if a stands to b and b stands to c, then a stands to c.
+взаимно-однозначно ли соответствие «квадрат» на множестве {1, 2, 3, 4}? соответствие «квадрат» на множестве {1, 2, 3, 4} взаимно-однозначно: 4 элемента и 4 значения.
+how long is the shortest path from A to D in the declared graph? in the declared graph the shortest path from A to D has length 2.
+есть ли путь из C в D в объявленном графе? в объявленном графе есть связь из C в D: путь C - D длины 1.
+does the node thing contain the node body? in the tree of kinds the node thing contains the node body.
+транзитивно ли отношение «та же чётность» на множестве {1, 2, 3, 4}? на множестве {1, 2, 3, 4} отношение «та же чётность» транзитивно: если a относится к b и b относится к c, то a относится к c.
 is the correspondence «walk number» on the nodes of the tree of kinds one-to-one? the correspondence «walk number» on the nodes of the tree of kinds is one-to-one: 18 elements and 18 values.
 какова длина кратчайшего пути из A в D в объявленном графе? в объявленном графе кратчайший путь из A в D имеет длину 2.
 how long is the shortest path from C to D in the declared graph? in the declared graph the shortest path from C to D has length 1.
+содержит ли узел thing узел body? в дереве родов узел thing содержит узел body.
+is the pair (1, 3) in the transitive closure of the relation «next»? the pair (1, 3) is not in the relation «next», but is in its transitive closure: the chain 1 - 2 - 3.
+взаимно-однозначно ли соответствие «номер в обходе» на узлах дерева родов? соответствие «номер в обходе» на узлах дерева родов взаимно-однозначно: 18 элементов и 18 значений.
+is there a path from B to D in the declared graph? in the declared graph there is a connection from B to D: the path B - D of length 1.
+какова длина кратчайшего пути из C в D в объявленном графе? в объявленном графе кратчайший путь из C в D имеет длину 1.
+is the relation «at most» on the set {1, 2, 3, 4} transitive? on the set {1, 2, 3, 4} the relation «at most» is transitive: if a stands to b and b stands to c, then a stands to c.
+стоит ли пара (1, 3) в транзитивном замыкании отношения «следующий»? пара (1, 3) не стоит в отношении «следующий», но стоит в его транзитивном замыкании: цепь 1 - 2 - 3.
+are the elements 1 and 2 comparable in the order «at most»? in the order «at most» on the set {1, 2, 3, 4} the element 1 stands below the element 2.
+есть ли путь из B в D в объявленном графе? в объявленном графе есть связь из B в D: путь B - D длины 1.
+what is the distance between A and B in the space of the declared graph? in the space of the declared graph the distance between A and B is 1.
 
 the node body contains 10 nodes.
 путь от корня до узла body таков: thing / body.
@@ -1434,27 +1438,31 @@ in the space of the declared graph the distance between E and F equals the dista
 в пространстве объявленного графа расстояние между G и A равно расстоянию между A и G: расстояние симметрично.
 
 does the node body contain the node liquid? in the tree of kinds the node body contains the node liquid.
-взаимно-однозначно ли соответствие «имя по-русски» на узлах дерева родов? соответствие «имя по-русски» на узлах дерева родов взаимно-однозначно: 18 элементов и 18 значений.
-is the relation «same parity» on the set {1, 2, 3, 4} transitive? on the set {1, 2, 3, 4} the relation «same parity» is transitive: if a stands to b and b stands to c, then a stands to c.
-есть ли путь из C в E в объявленном графе? в объявленном графе есть связь из C в E: путь C - E длины 1.
-in what class modulo 4 does the number 2 stand? the number 2 stands in the class of remainder 2 modulo 4.
-на каком уровне стоит узел body? уровень узла body равен 1.
-is the correspondence «name in Russian» on the nodes of the tree of kinds one-to-one? the correspondence «name in Russian» on the nodes of the tree of kinds is one-to-one: 18 elements and 18 values.
-транзитивно ли отношение «равно» на множестве {1, 2, 3, 4}? на множестве {1, 2, 3, 4} отношение «равно» транзитивно: если a относится к b и b относится к c, то a относится к c.
-is there a path from C to E in the declared graph? in the declared graph there is a connection from C to E: the path C - E of length 1.
-транзитивно ли отношение «следующий» на множестве {1, 2, 3, 4}? на множестве {1, 2, 3, 4} отношение «следующий» не транзитивно: 1 относится к 2 и 2 относится к 3, но 1 не относится к 3.
-at what level does the node body stand? the level of the node body is 1.
-взаимно-однозначно ли соответствие «номер в обходе» на узлах дерева родов? соответствие «номер в обходе» на узлах дерева родов взаимно-однозначно: 18 элементов и 18 значений.
-is the relation «equal» on the set {1, 2, 3, 4} transitive? on the set {1, 2, 3, 4} the relation «equal» is transitive: if a stands to b and b stands to c, then a stands to c.
-сравнимы ли элементы 3 и 4 в порядке «делит»? в порядке «делит» на множестве {1, 2, 3, 4, 6, 8, 12} элементы 3 и 4 несравнимы: ни один не стоит ниже другого.
-is the relation «next» on the set {1, 2, 3, 4} transitive? on the set {1, 2, 3, 4} the relation «next» is not transitive: 1 stands to 2 and 2 stands to 3, but 1 does not stand to 3.
-какова длина кратчайшего пути из C в E в объявленном графе? в объявленном графе кратчайший путь из C в E имеет длину 1.
-is the correspondence «walk number» on the nodes of the tree of kinds one-to-one? the correspondence «walk number» on the nodes of the tree of kinds is one-to-one: 18 elements and 18 values.
-содержит ли узел body узел liquid? в дереве родов узел body содержит узел liquid.
-are the elements 3 and 4 comparable in the order «divides»? in the order «divides» on the set {1, 2, 3, 4, 6, 8, 12} the elements 3 and 4 are incomparable: neither stands below the other.
-транзитивно ли отношение «та же чётность» на множестве {1, 2, 3, 4}? на множестве {1, 2, 3, 4} отношение «та же чётность» транзитивно: если a относится к b и b относится к c, то a относится к c.
-how long is the shortest path from C to E in the declared graph? in the declared graph the shortest path from C to E has length 1.
 в каком классе по модулю 4 стоит число 2? число 2 стоит в классе остатка 2 по модулю 4.
+what is the distance between B and C in the space of the declared graph? in the space of the declared graph the distance between B and C is 2.
+транзитивно ли отношение «следующий» на множестве {1, 2, 3, 4}? на множестве {1, 2, 3, 4} отношение «следующий» не транзитивно: 1 относится к 2 и 2 относится к 3, но 1 не относится к 3.
+is there a path from C to E in the declared graph? in the declared graph there is a connection from C to E: the path C - E of length 1.
+транзитивно ли отношение «равно» на множестве {1, 2, 3, 4}? на множестве {1, 2, 3, 4} отношение «равно» транзитивно: если a относится к b и b относится к c, то a относится к c.
+is the correspondence «name in Russian» on the nodes of the tree of kinds one-to-one? the correspondence «name in Russian» on the nodes of the tree of kinds is one-to-one: 18 elements and 18 values.
+на каком уровне стоит узел body? уровень узла body равен 1.
+in what class modulo 4 does the number 2 stand? the number 2 stands in the class of remainder 2 modulo 4.
+какова длина кратчайшего пути из C в E в объявленном графе? в объявленном графе кратчайший путь из C в E имеет длину 1.
+is the relation «next» on the set {1, 2, 3, 4} transitive? on the set {1, 2, 3, 4} the relation «next» is not transitive: 1 stands to 2 and 2 stands to 3, but 1 does not stand to 3.
+сравнимы ли элементы 3 и 4 в порядке «делит»? в порядке «делит» на множестве {1, 2, 3, 4, 6, 8, 12} элементы 3 и 4 несравнимы: ни один не стоит ниже другого.
+is the relation «equal» on the set {1, 2, 3, 4} transitive? on the set {1, 2, 3, 4} the relation «equal» is transitive: if a stands to b and b stands to c, then a stands to c.
+взаимно-однозначно ли соответствие «номер в обходе» на узлах дерева родов? соответствие «номер в обходе» на узлах дерева родов взаимно-однозначно: 18 элементов и 18 значений.
+at what level does the node body stand? the level of the node body is 1.
+стоит ли пара (1, 4) в транзитивном замыкании отношения «следующий»? пара (1, 4) не стоит в отношении «следующий», но стоит в его транзитивном замыкании: цепь 1 - 2 - 3 - 4.
+how long is the shortest path from C to E in the declared graph? in the declared graph the shortest path from C to E has length 1.
+транзитивно ли отношение «та же чётность» на множестве {1, 2, 3, 4}? на множестве {1, 2, 3, 4} отношение «та же чётность» транзитивно: если a относится к b и b относится к c, то a относится к c.
+are the elements 3 and 4 comparable in the order «divides»? in the order «divides» on the set {1, 2, 3, 4, 6, 8, 12} the elements 3 and 4 are incomparable: neither stands below the other.
+содержит ли узел body узел liquid? в дереве родов узел body содержит узел liquid.
+is the correspondence «walk number» on the nodes of the tree of kinds one-to-one? the correspondence «walk number» on the nodes of the tree of kinds is one-to-one: 18 elements and 18 values.
+каково расстояние между B и C в пространстве объявленного графа? в пространстве объявленного графа расстояние между B и C равно 2.
+is the pair (1, 4) in the transitive closure of the relation «next»? the pair (1, 4) is not in the relation «next», but is in its transitive closure: the chain 1 - 2 - 3 - 4.
+есть ли путь из C в E в объявленном графе? в объявленном графе есть связь из C в E: путь C - E длины 1.
+is the relation «same parity» on the set {1, 2, 3, 4} transitive? on the set {1, 2, 3, 4} the relation «same parity» is transitive: if a stands to b and b stands to c, then a stands to c.
+взаимно-однозначно ли соответствие «имя по-русски» на узлах дерева родов? соответствие «имя по-русски» на узлах дерева родов взаимно-однозначно: 18 элементов и 18 значений.
 
 уровень узла sign равен 1.
 the parent of the node measure is the node thing.
@@ -2159,35 +2167,39 @@ in the space of the declared graph the distance between E and F equals the dista
 in the space of the declared graph the distance between B and C is not greater than the distance through E: 2 against 3 plus 1.
 
 транзитивно ли отношение «сосед» на множестве {1, 2, 3, 4}? на множестве {1, 2, 3, 4} отношение «сосед» не транзитивно: 1 относится к 2 и 2 относится к 1, но 1 не относится к 1.
-is there a path from D to F in the declared graph? in the declared graph there is a connection from D to F: the path D - F of length 1.
-транзитивно ли отношение «та же чётность» на множестве {1, 2, 3, 4}? на множестве {1, 2, 3, 4} отношение «та же чётность» транзитивно: если a относится к b и b относится к c, то a относится к c.
-is there a path from C to F in the declared graph? in the declared graph there is a connection from C to F: the path C - D - F of length 2.
-на каком уровне стоит узел sign? уровень узла sign равен 1.
-is the correspondence «level» on the nodes of the tree of kinds one-to-one? the correspondence «level» on the nodes of the tree of kinds is not one-to-one: the elements body and sign go to one and the same value 1.
-есть ли путь из E в F в объявленном графе? в объявленном графе есть связь из E в F: путь E - F длины 1.
-in what class modulo 3 does the number 3 stand? the number 3 stands in the class of remainder 0 modulo 3.
-есть ли путь из D в F в объявленном графе? в объявленном графе есть связь из D в F: путь D - F длины 1.
-is the relation «next» on the set {1, 2, 3, 4} transitive? on the set {1, 2, 3, 4} the relation «next» is not transitive: 1 stands to 2 and 2 stands to 3, but 1 does not stand to 3.
-есть ли путь из C в F в объявленном графе? в объявленном графе есть связь из C в F: путь C - D - F длины 2.
-does the node sign contain the node digit? in the tree of kinds the node sign contains the node digit.
-взаимно-однозначно ли соответствие «уровень» на узлах дерева родов? соответствие «уровень» на узлах дерева родов не взаимно-однозначно: элементы body и sign переходят в одно и то же значение 1.
-how long is the shortest path from E to F in the declared graph? in the declared graph the shortest path from E to F has length 1.
-в каком классе по модулю 3 стоит число 3? число 3 стоит в классе остатка 0 по модулю 3.
-how long is the shortest path from D to F in the declared graph? in the declared graph the shortest path from D to F has length 1.
-транзитивно ли отношение «следующий» на множестве {1, 2, 3, 4}? на множестве {1, 2, 3, 4} отношение «следующий» не транзитивно: 1 относится к 2 и 2 относится к 3, но 1 не относится к 3.
 how long is the shortest path from C to F in the declared graph? in the declared graph the shortest path from C to F has length 2.
-содержит ли узел sign узел digit? в дереве родов узел sign содержит узел digit.
-are the elements 1 and 4 comparable in the order «at most»? in the order «at most» on the set {1, 2, 3, 4} the element 1 stands below the element 4.
-какова длина кратчайшего пути из E в F в объявленном графе? в объявленном графе кратчайший путь из E в F имеет длину 1.
+на каком уровне стоит узел sign? уровень узла sign равен 1.
 is the correspondence «name in Russian» on the nodes of the tree of kinds one-to-one? the correspondence «name in Russian» on the nodes of the tree of kinds is one-to-one: 18 elements and 18 values.
 какова длина кратчайшего пути из D в F в объявленном графе? в объявленном графе кратчайший путь из D в F имеет длину 1.
-is the relation «neighbour» on the set {1, 2, 3, 4} transitive? on the set {1, 2, 3, 4} the relation «neighbour» is not transitive: 1 stands to 2 and 2 stands to 1, but 1 does not stand to 1.
-какова длина кратчайшего пути из C в F в объявленном графе? в объявленном графе кратчайший путь из C в F имеет длину 2.
-is the relation «same parity» on the set {1, 2, 3, 4} transitive? on the set {1, 2, 3, 4} the relation «same parity» is transitive: if a stands to b and b stands to c, then a stands to c.
+is the relation «next» on the set {1, 2, 3, 4} transitive? on the set {1, 2, 3, 4} the relation «next» is not transitive: 1 stands to 2 and 2 stands to 3, but 1 does not stand to 3.
 сравнимы ли элементы 1 и 4 в порядке «не больше»? в порядке «не больше» на множестве {1, 2, 3, 4} элемент 1 стоит ниже элемента 4.
+what is the distance between C and D in the space of the declared graph? in the space of the declared graph the distance between C and D is 1.
+стоит ли пара (2, 4) в транзитивном замыкании отношения «следующий»? пара (2, 4) не стоит в отношении «следующий», но стоит в его транзитивном замыкании: цепь 2 - 3 - 4.
+is there a path from D to F in the declared graph? in the declared graph there is a connection from D to F: the path D - F of length 1.
+содержит ли узел sign узел digit? в дереве родов узел sign содержит узел digit.
+is the correspondence «level» on the nodes of the tree of kinds one-to-one? the correspondence «level» on the nodes of the tree of kinds is not one-to-one: the elements body and sign go to one and the same value 1.
+есть ли путь из E в F в объявленном графе? в объявленном графе есть связь из E в F: путь E - F длины 1.
+is the relation «neighbour» on the set {1, 2, 3, 4} transitive? on the set {1, 2, 3, 4} the relation «neighbour» is not transitive: 1 stands to 2 and 2 stands to 1, but 1 does not stand to 1.
+есть ли путь из C в F в объявленном графе? в объявленном графе есть связь из C в F: путь C - D - F длины 2.
 at what level does the node sign stand? the level of the node sign is 1.
+в каком классе по модулю 3 стоит число 3? число 3 стоит в классе остатка 0 по модулю 3.
+how long is the shortest path from D to F in the declared graph? in the declared graph the shortest path from D to F has length 1.
+транзитивно ли отношение «та же чётность» на множестве {1, 2, 3, 4}? на множестве {1, 2, 3, 4} отношение «та же чётность» транзитивно: если a относится к b и b относится к c, то a относится к c.
+are the elements 1 and 4 comparable in the order «at most»? in the order «at most» on the set {1, 2, 3, 4} the element 1 stands below the element 4.
+какова длина кратчайшего пути из E в F в объявленном графе? в объявленном графе кратчайший путь из E в F имеет длину 1.
+is the pair (2, 4) in the transitive closure of the relation «next»? the pair (2, 4) is not in the relation «next», but is in its transitive closure: the chain 2 - 3 - 4.
+какова длина кратчайшего пути из C в F в объявленном графе? в объявленном графе кратчайший путь из C в F имеет длину 2.
+does the node sign contain the node digit? in the tree of kinds the node sign contains the node digit.
 взаимно-однозначно ли соответствие «имя по-русски» на узлах дерева родов? соответствие «имя по-русски» на узлах дерева родов взаимно-однозначно: 18 элементов и 18 значений.
 is there a path from E to F in the declared graph? in the declared graph there is a connection from E to F: the path E - F of length 1.
+транзитивно ли отношение «следующий» на множестве {1, 2, 3, 4}? на множестве {1, 2, 3, 4} отношение «следующий» не транзитивно: 1 относится к 2 и 2 относится к 3, но 1 не относится к 3.
+is there a path from C to F in the declared graph? in the declared graph there is a connection from C to F: the path C - D - F of length 2.
+каково расстояние между C и D в пространстве объявленного графа? в пространстве объявленного графа расстояние между C и D равно 1.
+in what class modulo 3 does the number 3 stand? the number 3 stands in the class of remainder 0 modulo 3.
+есть ли путь из D в F в объявленном графе? в объявленном графе есть связь из D в F: путь D - F длины 1.
+is the relation «same parity» on the set {1, 2, 3, 4} transitive? on the set {1, 2, 3, 4} the relation «same parity» is transitive: if a stands to b and b stands to c, then a stands to c.
+взаимно-однозначно ли соответствие «уровень» на узлах дерева родов? соответствие «уровень» на узлах дерева родов не взаимно-однозначно: элементы body и sign переходят в одно и то же значение 1.
+how long is the shortest path from E to F in the declared graph? in the declared graph the shortest path from E to F has length 1.
 
 in the tree of kinds the node measure lies in the node thing.
 в дереве родов узел solid лежит в узле thing.
@@ -2892,23 +2904,27 @@ in the space of the declared graph the distance between F and G equals the dista
 в пространстве объявленного графа расстояние между B и C равно 2.
 
 is the relation «next» on the set {1, 2, 3, 4} transitive? on the set {1, 2, 3, 4} the relation «next» is not transitive: 1 stands to 2 and 2 stands to 3, but 1 does not stand to 3.
-содержит ли узел measure узел weight? в дереве родов узел measure содержит узел weight.
-does the node measure contain the node weight? in the tree of kinds the node measure contains the node weight.
-на каком уровне стоит узел measure? уровень узла measure равен 1.
-at what level does the node measure stand? the level of the node measure is 1.
-сравнимы ли элементы 4 и 6 в порядке «делит»? в порядке «делит» на множестве {1, 2, 3, 4, 6, 8, 12} элементы 4 и 6 несравнимы: ни один не стоит ниже другого.
-are the elements 4 and 6 comparable in the order «divides»? in the order «divides» on the set {1, 2, 3, 4, 6, 8, 12} the elements 4 and 6 are incomparable: neither stands below the other.
-взаимно-однозначно ли соответствие «остаток по модулю 3» на числах от 1 до 12? соответствие «остаток по модулю 3» на числах от 1 до 12 не взаимно-однозначно: элементы 1 и 4 переходят в одно и то же значение 1.
+каково расстояние между D и E в пространстве объявленного графа? в пространстве объявленного графа расстояние между D и E равно 2.
 is the correspondence «remainder modulo 3» on the numbers from 1 to 12 one-to-one? the correspondence «remainder modulo 3» on the numbers from 1 to 12 is not one-to-one: the elements 1 and 4 go to one and the same value 1.
-взаимно-однозначно ли соответствие «уровень» на узлах дерева родов? соответствие «уровень» на узлах дерева родов не взаимно-однозначно: элементы body и sign переходят в одно и то же значение 1.
-is the correspondence «level» on the nodes of the tree of kinds one-to-one? the correspondence «level» on the nodes of the tree of kinds is not one-to-one: the elements body and sign go to one and the same value 1.
-в каком классе по модулю 4 стоит число 4? число 4 стоит в классе остатка 0 по модулю 4.
-in what class modulo 4 does the number 4 stand? the number 4 stands in the class of remainder 0 modulo 4.
-транзитивно ли отношение «делит» на множестве {1, 2, 3, 4}? на множестве {1, 2, 3, 4} отношение «делит» транзитивно: если a относится к b и b относится к c, то a относится к c.
-is the relation «divides» on the set {1, 2, 3, 4} transitive? on the set {1, 2, 3, 4} the relation «divides» is transitive: if a stands to b and b stands to c, then a stands to c.
-транзитивно ли отношение «сосед» на множестве {1, 2, 3, 4}? на множестве {1, 2, 3, 4} отношение «сосед» не транзитивно: 1 относится к 2 и 2 относится к 1, но 1 не относится к 1.
+стоит ли пара (1, 3) в транзитивном замыкании отношения «следующий»? пара (1, 3) не стоит в отношении «следующий», но стоит в его транзитивном замыкании: цепь 1 - 2 - 3.
 is the relation «neighbour» on the set {1, 2, 3, 4} transitive? on the set {1, 2, 3, 4} the relation «neighbour» is not transitive: 1 stands to 2 and 2 stands to 1, but 1 does not stand to 1.
+на каком уровне стоит узел measure? уровень узла measure равен 1.
+are the elements 4 and 6 comparable in the order «divides»? in the order «divides» on the set {1, 2, 3, 4, 6, 8, 12} the elements 4 and 6 are incomparable: neither stands below the other.
+в каком классе по модулю 4 стоит число 4? число 4 стоит в классе остатка 0 по модулю 4.
+is the relation «divides» on the set {1, 2, 3, 4} transitive? on the set {1, 2, 3, 4} the relation «divides» is transitive: if a stands to b and b stands to c, then a stands to c.
+содержит ли узел measure узел weight? в дереве родов узел measure содержит узел weight.
+what is the distance between D and E in the space of the declared graph? in the space of the declared graph the distance between D and E is 2.
+взаимно-однозначно ли соответствие «уровень» на узлах дерева родов? соответствие «уровень» на узлах дерева родов не взаимно-однозначно: элементы body и sign переходят в одно и то же значение 1.
+is the pair (1, 3) in the transitive closure of the relation «next»? the pair (1, 3) is not in the relation «next», but is in its transitive closure: the chain 1 - 2 - 3.
 транзитивно ли отношение «следующий» на множестве {1, 2, 3, 4}? на множестве {1, 2, 3, 4} отношение «следующий» не транзитивно: 1 относится к 2 и 2 относится к 3, но 1 не относится к 3.
+at what level does the node measure stand? the level of the node measure is 1.
+взаимно-однозначно ли соответствие «остаток по модулю 3» на числах от 1 до 12? соответствие «остаток по модулю 3» на числах от 1 до 12 не взаимно-однозначно: элементы 1 и 4 переходят в одно и то же значение 1.
+in what class modulo 4 does the number 4 stand? the number 4 stands in the class of remainder 0 modulo 4.
+транзитивно ли отношение «сосед» на множестве {1, 2, 3, 4}? на множестве {1, 2, 3, 4} отношение «сосед» не транзитивно: 1 относится к 2 и 2 относится к 1, но 1 не относится к 1.
+does the node measure contain the node weight? in the tree of kinds the node measure contains the node weight.
+сравнимы ли элементы 4 и 6 в порядке «делит»? в порядке «делит» на множестве {1, 2, 3, 4, 6, 8, 12} элементы 4 и 6 несравнимы: ни один не стоит ниже другого.
+is the correspondence «level» on the nodes of the tree of kinds one-to-one? the correspondence «level» on the nodes of the tree of kinds is not one-to-one: the elements body and sign go to one and the same value 1.
+транзитивно ли отношение «делит» на множестве {1, 2, 3, 4}? на множестве {1, 2, 3, 4} отношение «делит» транзитивно: если a относится к b и b относится к c, то a относится к c.
 
 the path from the root to the node solid is thing / body / solid.
 в дереве родов узел liquid не содержит узел digit: узел digit лежит в узле sign.
@@ -3612,25 +3628,29 @@ in the space of the declared graph the distance between B and C is 2.
 in the space of the declared graph the distance between A and B is 1.
 в пространстве объявленного графа расстояние между D и E равно 2.
 
-is the correspondence «remainder modulo 3» on the numbers from 1 to 12 one-to-one? the correspondence «remainder modulo 3» on the numbers from 1 to 12 is not one-to-one: the elements 1 and 4 go to one and the same value 1.
-транзитивно ли отношение «различно» на множестве {1, 2, 3, 4}? на множестве {1, 2, 3, 4} отношение «различно» не транзитивно: 1 относится к 2 и 2 относится к 1, но 1 не относится к 1.
-is the relation «divides» on the set {1, 2, 3, 4} transitive? on the set {1, 2, 3, 4} the relation «divides» is transitive: if a stands to b and b stands to c, then a stands to c.
-содержит ли узел solid узел iron? в дереве родов узел solid содержит узел iron.
-at what level does the node solid stand? the level of the node solid is 2.
-есть ли путь из G в A в объявленном графе? в объявленном графе есть связь из G в A: путь G - A длины 1.
-are the elements 2 and 4 comparable in the order «at most»? in the order «at most» on the set {1, 2, 3, 4} the element 2 stands below the element 4.
-взаимно-однозначно ли соответствие «остаток по модулю 3» на числах от 1 до 12? соответствие «остаток по модулю 3» на числах от 1 до 12 не взаимно-однозначно: элементы 1 и 4 переходят в одно и то же значение 1.
 in what class modulo 3 does the number 5 stand? the number 5 stands in the class of remainder 2 modulo 3.
-транзитивно ли отношение «делит» на множестве {1, 2, 3, 4}? на множестве {1, 2, 3, 4} отношение «делит» транзитивно: если a относится к b и b относится к c, то a относится к c.
-is the relation «neighbour» on the set {1, 2, 3, 4} transitive? on the set {1, 2, 3, 4} the relation «neighbour» is not transitive: 1 stands to 2 and 2 stands to 1, but 1 does not stand to 1.
-на каком уровне стоит узел solid? уровень узла solid равен 2.
-how long is the shortest path from G to A in the declared graph? in the declared graph the shortest path from G to A has length 1.
-сравнимы ли элементы 2 и 4 в порядке «не больше»? в порядке «не больше» на множестве {1, 2, 3, 4} элемент 2 стоит ниже элемента 4.
-is the correspondence «square» on the set {1, 2, 3, 4} one-to-one? the correspondence «square» on the set {1, 2, 3, 4} is one-to-one: 4 elements and 4 values.
-в каком классе по модулю 3 стоит число 5? число 5 стоит в классе остатка 2 по модулю 3.
-is the relation «different» on the set {1, 2, 3, 4} transitive? on the set {1, 2, 3, 4} the relation «different» is not transitive: 1 stands to 2 and 2 stands to 1, but 1 does not stand to 1.
 транзитивно ли отношение «сосед» на множестве {1, 2, 3, 4}? на множестве {1, 2, 3, 4} отношение «сосед» не транзитивно: 1 относится к 2 и 2 относится к 1, но 1 не относится к 1.
-does the node solid contain the node iron? in the tree of kinds the node solid contains the node iron.
-какова длина кратчайшего пути из G в A в объявленном графе? в объявленном графе кратчайший путь из G в A имеет длину 1.
-is there a path from G to A in the declared graph? in the declared graph there is a connection from G to A: the path G - A of length 1.
+what is the distance between E and F in the space of the declared graph? in the space of the declared graph the distance between E and F is 1.
 взаимно-однозначно ли соответствие «квадрат» на множестве {1, 2, 3, 4}? соответствие «квадрат» на множестве {1, 2, 3, 4} взаимно-однозначно: 4 элемента и 4 значения.
+is the pair (2, 4) in the transitive closure of the relation «neighbour»? the pair (2, 4) is not in the relation «neighbour», but is in its transitive closure: the chain 2 - 3 - 4.
+содержит ли узел solid узел iron? в дереве родов узел solid содержит узел iron.
+how long is the shortest path from G to A in the declared graph? in the declared graph the shortest path from G to A has length 1.
+взаимно-однозначно ли соответствие «остаток по модулю 3» на числах от 1 до 12? соответствие «остаток по модулю 3» на числах от 1 до 12 не взаимно-однозначно: элементы 1 и 4 переходят в одно и то же значение 1.
+is the relation «different» on the set {1, 2, 3, 4} transitive? on the set {1, 2, 3, 4} the relation «different» is not transitive: 1 stands to 2 and 2 stands to 1, but 1 does not stand to 1.
+на каком уровне стоит узел solid? уровень узла solid равен 2.
+is there a path from G to A in the declared graph? in the declared graph there is a connection from G to A: the path G - A of length 1.
+в каком классе по модулю 3 стоит число 5? число 5 стоит в классе остатка 2 по модулю 3.
+is the relation «divides» on the set {1, 2, 3, 4} transitive? on the set {1, 2, 3, 4} the relation «divides» is transitive: if a stands to b and b stands to c, then a stands to c.
+каково расстояние между E и F в пространстве объявленного графа? в пространстве объявленного графа расстояние между E и F равно 1.
+are the elements 2 and 4 comparable in the order «at most»? in the order «at most» on the set {1, 2, 3, 4} the element 2 stands below the element 4.
+стоит ли пара (2, 4) в транзитивном замыкании отношения «сосед»? пара (2, 4) не стоит в отношении «сосед», но стоит в его транзитивном замыкании: цепь 2 - 3 - 4.
+is the relation «neighbour» on the set {1, 2, 3, 4} transitive? on the set {1, 2, 3, 4} the relation «neighbour» is not transitive: 1 stands to 2 and 2 stands to 1, but 1 does not stand to 1.
+какова длина кратчайшего пути из G в A в объявленном графе? в объявленном графе кратчайший путь из G в A имеет длину 1.
+is the correspondence «square» on the set {1, 2, 3, 4} one-to-one? the correspondence «square» on the set {1, 2, 3, 4} is one-to-one: 4 elements and 4 values.
+транзитивно ли отношение «различно» на множестве {1, 2, 3, 4}? на множестве {1, 2, 3, 4} отношение «различно» не транзитивно: 1 относится к 2 и 2 относится к 1, но 1 не относится к 1.
+does the node solid contain the node iron? in the tree of kinds the node solid contains the node iron.
+есть ли путь из G в A в объявленном графе? в объявленном графе есть связь из G в A: путь G - A длины 1.
+is the correspondence «remainder modulo 3» on the numbers from 1 to 12 one-to-one? the correspondence «remainder modulo 3» on the numbers from 1 to 12 is not one-to-one: the elements 1 and 4 go to one and the same value 1.
+транзитивно ли отношение «делит» на множестве {1, 2, 3, 4}? на множестве {1, 2, 3, 4} отношение «делит» транзитивно: если a относится к b и b относится к c, то a относится к c.
+at what level does the node solid stand? the level of the node solid is 2.
+сравнимы ли элементы 2 и 4 в порядке «не больше»? в порядке «не больше» на множестве {1, 2, 3, 4} элемент 2 стоит ниже элемента 4.

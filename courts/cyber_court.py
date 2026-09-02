@@ -27,6 +27,7 @@ import sys
 
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
+import asking  # noqa: E402
 from genesis import Unreadable, worlds  # noqa: E402
 
 # РУБЕЖ-ДОЛГА: ЛОЖНЫХ_РУБЕЖ = 0
@@ -51,6 +52,13 @@ from genesis import Unreadable, worlds  # noqa: E402
 СХОД_RU = re.compile(
     r"^начав с (\d+) при цели (\d+) и шаге (\d+), значение достигает "
     r"(\d+) за (\d+) \S+$")
+# ОТКАЗ ЕСТЬ ТАКОЕ ЖЕ УТВЕРЖДЕНИЕ: «целого нет» истинно ровно тогда,
+# когда ошибка посчитана верно И на шаг не делится. Суд считает оба.
+ОТКАЗ_ШАГОВ = re.compile(
+    r"^(?:no whole answer for (-?\d+), (-?\d+) and step (-?\d+): the "
+    r"error (-?\d+) is not divisible by (-?\d+)"
+    r"|целого ответа нет для (-?\d+), (-?\d+) и шага (-?\d+): ошибка "
+    r"(-?\d+) не делится на (-?\d+) нацело)\.$")
 ЗАМКНУТ = re.compile(
     r"^target (\d+): a closed loop stops at (\d+) because the error "
     r"is 0$")
@@ -94,6 +102,14 @@ def бит_хватает(строка):
 
 
 def судить(строка):
+    # ВОПРОС СУДИТСЯ СВОИМ ОТВЕТОМ, А РОД ОПРЕДЕЛЯЕТСЯ ОТВЕТОМ.
+    # Связь половин держит общий дом `tools/asking.py`: величины
+    # вопроса суть начальный отрезок величин ответа, и порча любой из
+    # них рвёт пару. Без этого суд читал бы вторую половину строки и
+    # звал истиной вопрос, спрашивающий о другом.
+    если = asking.судить_парой(строка, судить)
+    if если is not None:
+        return если
     биты = бит_хватает(строка)
     if биты is not None:
         return True, биты
@@ -118,6 +134,13 @@ def судить(строка):
             v += шаг
             k += 1
         return True, v == ц == дошли and k == шагов
+    m = ОТКАЗ_ШАГОВ.match(с)
+    if m:
+        г = [int(x) for x in m.groups() if x is not None]
+        нач, цель, шаг, ошибка, шаг2 = г
+        return True, (шаг == шаг2 and шаг != 0
+                      and ошибка == цель - нач
+                      and ошибка % шаг != 0)
     m = ЗАМКНУТ.match(с)
     if m:
         return True, int(m.group(1)) == int(m.group(2))

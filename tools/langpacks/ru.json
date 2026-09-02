@@ -387,7 +387,7 @@
       "instances_per_pass": 24,
       "templates": [
         "вчера маша {lex:verb_past:f} {num:n} {lex:noun_fem_a:by_n}. потом маша {lex:verb_past:f} ещё.",
-        "вчера юра {lex:verb_past:m} {num:m} {lex:noun_masc:by_n}. юра шёл домой. дальше юра был дома.",
+        "вчера юра {lex:verb_past:m} {num:n} {lex:noun_masc:by_n}. юра шёл домой. дальше юра был дома.",
         "книга есть у маши. шар есть у юры.",
         "вчера вера была дома. у веры был зонт и фонарь. цветок рос у подъезда."
       ]

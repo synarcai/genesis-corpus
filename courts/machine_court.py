@@ -25,6 +25,7 @@ import sys
 
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
+import asking  # noqa: E402
 from genesis import Unreadable, worlds  # noqa: E402
 
 # РУБЕЖ-ДОЛГА: ЛОЖНЫХ_РУБЕЖ = 0
@@ -71,11 +72,26 @@ from genesis import Unreadable, worlds  # noqa: E402
      lambda б, v: 2 ** int(б) == int(v)),
     (r"^(\w+) держит (\d+) \S+ и (\d+) \S+$",
      lambda имя, б, v: 2 ** int(б) == int(v)),
+    # ОТКАЗ ЕСТЬ ТАКОЕ ЖЕ УТВЕРЖДЕНИЕ: «такой цифры нет» истинно ровно
+    # тогда, когда цифра и вправду выходит за основание. Суд смотрит
+    # цифру, а не верит слову «нет».
+    (r"^none: the digit (\d+) does not occur in binary$",
+     lambda d: all(int(з) >= 2 for з in d)),
+    (r"^такого нет: цифра (\d+) в двоичной записи не встречается$",
+     lambda d: all(int(з) >= 2 for з in d)),
 ]
 СОБРАНО = [(re.compile(о), ф) for о, ф in ФОРМЫ]
 
 
 def судить(строка):
+    # ВОПРОС СУДИТСЯ СВОИМ ОТВЕТОМ, А РОД ОПРЕДЕЛЯЕТСЯ ОТВЕТОМ.
+    # Связь половин держит общий дом `tools/asking.py`: величины
+    # вопроса суть начальный отрезок величин ответа, и порча любой из
+    # них рвёт пару. Без этого суд читал бы вторую половину строки и
+    # звал истиной вопрос, спрашивающий о другом.
+    если = asking.судить_парой(строка, судить)
+    if если is not None:
+        return если
     с = строка.strip().rstrip(".")
     for образец, проверка in СОБРАНО:
         m = образец.match(с)

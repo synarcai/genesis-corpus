@@ -1688,6 +1688,59 @@ def _н_два_следствия(м):
      rf"не доказывает: (?P<n>\d+) = (?P<p>\d+) \+ (?P<q>\d+), и "
      rf"(?P<сp>\d+) просто, и (?P<сq>\d+) просто\.$",
      _н_пара_простых),
+    # АНГЛИЙСКИЕ ДВОЙНИКИ КОСВЕННОЙ РЕЧИ. Русская флексия даёт обороты,
+    # которых у английского нет по устройству («теоремой доказано»), но
+    # само утверждение говорится и по-английски — предлогом и порядком
+    # слов. Корпус, давший косвенную речь одному языку, обязан дать её
+    # другому: иначе равноправие языков остаётся объявлением.
+    (rf"^(?P<n>\d+) (?P<имя>{ИМ}) by definition, and (?P<m>\d+) is "
+     rf"not: (?P<зп>{ПР}), and (?P<зм>{ПР})\.$", _н_рубеж_рода),
+    (rf"^the definition names at which remainder a number "
+     rf"(?P<имя>{ИМ}): (?P<n>\d+) leaves remainder (?P<r>\d+) when "
+     rf"divided by (?P<d>\d+), and (?P<m>\d+) does not: (?P<зп>{ПР}), "
+     rf"and (?P<зм>{ПР})\.$", _н_рубеж_рода),
+    (rf"^let us define the kind of a number by the remainder, for it is "
+     rf"defined by division and not by the look of the record: "
+     rf"(?P<n>\d+) (?P<имя>{ИМ}), and (?P<m>\d+) is not: (?P<зп>{ПР}), "
+     rf"and (?P<зм>{ПР})\.$", _н_рубеж_рода),
+    (rf"^the lemma on representation proves the first step of the "
+     rf"theorem «(?P<закон>{ЗК})»: (?P<зп>{ПР})\.$", _н_лемма_теореме),
+    (rf"^without the lemma on representation there is no move to the "
+     rf"theorem «(?P<закон>{ЗК})»: (?P<зп>{ПР})\.$", _н_лемма_теореме),
+    (rf"^the theorem «(?P<закон>{ЗК})» proves that (?P<сит>\d+) "
+     rf"(?P<имяи>{ИМ}): (?P<a>\d+) (?P<знак>[+*]) (?P<b>\d+) = "
+     rf"(?P<итог>\d+)\.$", _н_случай_закона),
+    (rf"^the theorem «(?P<закон>{ЗК})» requires both conditions, and "
+     rf"without both there is no conclusion: (?P<a>\d+) (?P<имя1>{ИМ}) "
+     rf"and (?P<b>\d+) (?P<имя2>{ИМ}), and (?P<сa>\d+) "
+     rf"(?P<знак>[+*]) (?P<сb>\d+) = (?P<итог>\d+)\.$",
+     _н_случай_закона),
+    (rf"^what is to be proved\? it is to be proved that (?P<итог>\d+) "
+     rf"(?P<имяи>{ИМ}), and it is provable by the move: "
+     rf"(?P<цепь>{ЦП})\.$", _н_цепь_с_итогом),
+    (rf"^the first step of the derivation is (?P<зп>{ПР}), and the "
+     rf"second step of the derivation is (?P<цепь>{ЦП})\.$",
+     _н_цепь_с_итогом),
+    (rf"^the strength of a counterexample is in one witness, and "
+     rf"counterexamples refute the statement «(?P<закон>{ЗК})» one at a "
+     rf"time: (?P<a>\d+) (?P<знак>[+*]) (?P<b>\d+) = (?P<итог>\d+), "
+     rf"while (?P<зп>{ПР})\.$", _н_контрпример),
+    (rf"^by a hypothesis we call a statement without a proof, and a "
+     rf"case does not prove it: (?P<n>\d+) = (?P<p>\d+) \+ "
+     rf"(?P<q>\d+), and (?P<сp>\d+) is prime, and (?P<сq>\d+) is "
+     rf"prime\.$", _н_пара_простых),
+    (rf"^the two axioms of this world are division with remainder and "
+     rf"replacing an equal: by the axioms (?P<зп>{ПР}), and therefore "
+     rf"(?P<n>\d+) \+ (?P<c>\d+) = (?P<сумма>\d+)\.$",
+     _н_две_аксиомы),
+    (rf"^two theorems show that (?P<a>\d+) \+ (?P<b>\d+) = "
+     rf"(?P<сумма>\d+) and (?P<сa>\d+) \* (?P<сb>\d+) = "
+     rf"(?P<произв>\d+)\.$", _н_два_счёта),
+    (rf"^the premises of the theorem «(?P<закон>{ЗК})» are that "
+     rf"(?P<a>\d+) (?P<имя1>{ИМ}) and (?P<b>\d+) (?P<имя2>{ИМ}), and "
+     rf"the conclusion is derivable from those premises: (?P<сa>\d+) "
+     rf"(?P<знак>[+*]) (?P<сb>\d+) = (?P<итог>\d+)\.$",
+     _н_случай_закона),
 )
 
 ПРАВИЛА = tuple((re.compile(о), п) for о, п in ОБРАЗЦЫ)

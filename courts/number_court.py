@@ -21,6 +21,7 @@ from math import gcd
 
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
+import asking  # noqa: E402
 from genesis import Unreadable, worlds  # noqa: E402
 
 # РУБЕЖ-ДОЛГА: ЛОЖНЫХ_РУБЕЖ = 0
@@ -42,6 +43,11 @@ from genesis import Unreadable, worlds  # noqa: E402
 СРАВНИМЫ = re.compile(
     r"^(\d+) (?:and (\d+) are congruent modulo|и (\d+) сравнимы по модулю) "
     r"(\d+)\.$")
+# НИ ТО НИ ДРУГОЕ: у единицы делитель один, и она не проста и не
+# составна. Отказ истинен ровно тогда, когда делитель и вправду один.
+НИ_ТО_НИ_ДРУГОЕ = re.compile(
+    r"^(\d+) (?:is neither prime nor composite: its only divisor is"
+    r"|ни простое, ни составное: его единственный делитель —) (\d+)\.$")
 ВЗАИМНО = re.compile(
     r"^(\d+) (?:and|и) (\d+) (?:are (coprime|not coprime); their gcd is"
     r"|(взаимно просты|не взаимно просты); их нод равен) (\d+)\.$")
@@ -67,6 +73,12 @@ def разложить(n):
 def судить(строка):
     """(судимо, истинно) для одной строки."""
     с = строка.strip()
+    # ВОПРОС СУДИТСЯ СВОИМ ОТВЕТОМ, а связь половин — общим домом
+    # `tools/asking.py`: величины вопроса суть начальный отрезок
+    # величин ответа, и порча любой из них рвёт пару.
+    если = asking.судить_парой(с, судить)
+    if если is not None:
+        return если
     m = ПРОСТОЕ.match(с)
     if m:
         n, названный = int(m.group(1)), int(m.group(2))
@@ -98,6 +110,10 @@ def судить(строка):
         b = int(m.group(2) or m.group(3))
         мод = int(m.group(4))
         return True, мод > 0 and a % мод == b % мод
+    m = НИ_ТО_НИ_ДРУГОЕ.match(с)
+    if m:
+        n, единственный = int(m.group(1)), int(m.group(2))
+        return True, (делители_числа(n) == [n] and единственный == n)
     m = ВЗАИМНО.match(с)
     if m:
         a, b = int(m.group(1)), int(m.group(2))

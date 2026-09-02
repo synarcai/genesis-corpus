@@ -26,6 +26,7 @@ from fractions import Fraction
 
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
+import asking  # noqa: E402
 from genesis import Unreadable, worlds  # noqa: E402
 
 # РУБЕЖ-ДОЛГА: ЛОЖНЫХ_РУБЕЖ = 0
@@ -64,6 +65,11 @@ from genesis import Unreadable, worlds  # noqa: E402
     r"неразрешимый: общего алгоритма нет"
     r"|whether every program halts on every input is undecidable: "
     r"there is no general algorithm)\.$")
+# ОТКАЗ ЕСТЬ ТАКОЕ ЖЕ УТВЕРЖДЕНИЕ: «целого нет» истинно ровно тогда,
+# когда размер алфавита и вправду не степень двойки. Суд считает сам.
+ОТКАЗ_АЛФАВИТА = re.compile(
+    r"^(?:no whole answer for (\d+) signs: (\d+) is not a power of two"
+    r"|целого ответа нет: (\d+) знак\S* — это не степень двойки)\.$")
 ТИП = re.compile(
     r"^(?:тип значения (\d+) — целое; тип значения (\d+) ÷ (\d+) — "
     r"(целое|дробь)"
@@ -97,6 +103,14 @@ def _г(m):
 
 def судить(строка):
     """(судимо, истинно) для одной строки."""
+    # ВОПРОС СУДИТСЯ СВОИМ ОТВЕТОМ, А РОД ОПРЕДЕЛЯЕТСЯ ОТВЕТОМ.
+    # Связь половин держит общий дом `tools/asking.py`: величины
+    # вопроса суть начальный отрезок величин ответа, и порча любой из
+    # них рвёт пару. Без этого суд читал бы вторую половину строки и
+    # звал истиной вопрос, спрашивающий о другом.
+    если = asking.судить_парой(строка, судить)
+    if если is not None:
+        return если
     с = строка.strip()
     m = БИТЫ.match(с)
     if m:
@@ -129,6 +143,15 @@ def судить(строка):
     if НЕРАЗРЕШИМО.match(с):
         # ОБЪЯВЛЕННОЕ ЗНАНИЕ: вычислить нельзя, на то и неразрешимость.
         return True, True
+    m = ОТКАЗ_АЛФАВИТА.match(с)
+    if m:
+        числа = [int(x) for x in _г(m)]
+        # Английская запись называет размер дважды и обязана назвать
+        # его одинаково; русская — один раз.
+        if len(set(числа)) != 1:
+            return True, False
+        n = числа[0]
+        return True, not (n >= 2 and not n & (n - 1))
     m = ТИП.match(с)
     if m:
         г = _г(m)

@@ -29,6 +29,7 @@ import sys
 
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
+import asking  # noqa: E402
 from genesis import Unreadable, worlds  # noqa: E402
 
 # РУБЕЖ-ДОЛГА: ЛОЖНЫХ_РУБЕЖ = 0
@@ -90,10 +91,29 @@ from genesis import Unreadable, worlds  # noqa: E402
     r"(\d+) × (\d+) × (\d+) / (\d+) = (\d+)")
 ИЗМЕРЯЕТСЯ = re.compile(
     r"^([\w]+) (?:is measured in|измеряется в) (.+?)$")
+# ОТКАЗ ЕСТЬ ТАКОЕ ЖЕ УТВЕРЖДЕНИЕ, И ПРОВЕРЯЕТСЯ ТАК ЖЕ: «целого
+# ответа нет» истинно ровно тогда, когда путь и вправду не делится на
+# время нацело. Суд считает остаток, а не верит слову «нет».
+ОТКАЗ_СКОРОСТИ = re.compile(
+    r"^(?:no whole answer: (\d+) metres in (\d+) seconds do not give a "
+    r"whole speed, (\d+) is not divisible by (\d+)"
+    r"|целого ответа нет: (\d+) метр\S* за (\d+) секунд\S* не да[её]?т?"
+    r"ю?т? целой скорости, (\d+) не делится на (\d+) нацело)$")
 
 
 def судить(строка):
     с = строка.strip().rstrip(".")
+    # ВОПРОС СУДИТСЯ СВОИМ ОТВЕТОМ: род определяется ответом, а связь
+    # половин — общим домом `tools/asking.py`.
+    если = asking.судить_парой(с, судить)
+    if если is not None:
+        return если
+    m = ОТКАЗ_СКОРОСТИ.match(с)
+    if m:
+        г = [x for x in m.groups() if x is not None]
+        путь, срок, путь2, срок2 = (int(x) for x in г)
+        return True, (путь == путь2 and срок == срок2 and срок != 0
+                      and путь % срок != 0)
     m = СКОРОСТЬ_EN.match(с) or СКОРОСТЬ_RU.match(с)
     if m:
         s, t, v = (int(x) for x in m.groups())

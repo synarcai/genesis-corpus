@@ -67,6 +67,24 @@ from layer import emit  # noqa: E402
 ПИСЬМО = "brit"
 ОСНОВА = "metre"
 
+# ИСКОМОЕ ОБЪЯВЛЯЕТ СВОЙ ВОПРОС ОДИН РАЗ, и вопрос берёт ТЕ ЖЕ
+# величины, из которых собран ответ. Замер вопросной поверхности назвал
+# физику немой: 1150 строк, вопросов ноль — она сообщала, что тело,
+# прошедшее 60 метров за 12 секунд, имеет скорость 5, и ни разу не
+# спрашивала, какова эта скорость.
+СПРОСИТЬ = {
+    "speed": "what speed has a body covering {s} metres in {t} seconds?",
+    "скорость": ("какова скорость тела, прошедшего {s} {метры} "
+                 "за {t} {секунды}?"),
+    "law": "what does {закон} give for {x} and {y}?",
+    "закон": "что даёт {закон} при {x} и {y}?",
+}
+
+
+def спросить(искомое, ответ, **части):
+    """Вопрос и ответ одной строкой; величины у них одни и те же."""
+    return f"{СПРОСИТЬ[искомое].format(**части)} {ответ}"
+
 
 def приставочные():
     """«1 X = N Y» для каждой приставки, обоими языками."""
@@ -95,24 +113,42 @@ def pass_shows(pass_i):
         mm, v = ПЛОТНОСТЬ[(pass_i * 7 + i) % len(ПЛОТНОСТЬ)]
         cur, r = ОМ[(pass_i + i * 3) % len(ОМ)]
         km, kv = КИНЕТИКА[(pass_i * 2 + i) % len(КИНЕТИКА)]
-        out.append(f"a body covering {s} metres in {t} seconds has speed "
-                   f"{s // t} metres per second.")
-        out.append(f"тело, прошедшее {s} {rugram.форма('метр', s)} за "
-                   f"{t} {rugram.форма('секунда', t)}, имеет скорость "
-                   f"{s // t} {rugram.форма('метр', s // t)} в секунду.")
-        out.append(f"speed = distance / time; {s} / {t} = {s // t}.")
-        out.append(f"force = mass × acceleration; {m} kilograms × {a} "
-                   f"metres per second squared = {m * a} newtons.")
+        ск_en = (f"a body covering {s} metres in {t} seconds has speed "
+                 f"{s // t} metres per second.")
+        ск_ru = (f"тело, прошедшее {s} {rugram.форма('метр', s)} за "
+                 f"{t} {rugram.форма('секунда', t)}, имеет скорость "
+                 f"{s // t} {rugram.форма('метр', s // t)} в секунду.")
+        out.append(ск_en)
+        out.append(ск_ru)
+        out.append(спросить("speed", ск_en, s=s, t=t))
+        out.append(спросить("скорость", ск_ru, s=s, t=t,
+                            метры=rugram.форма("метр", s),
+                            секунды=rugram.форма("секунда", t)))
+        закон_ск = f"speed = distance / time; {s} / {t} = {s // t}."
+        out.append(закон_ск)
+        out.append(спросить("law", закон_ск, закон="speed = distance / time",
+                            x=s, y=t))
+        сил_en = (f"force = mass × acceleration; {m} kilograms × {a} "
+                  f"metres per second squared = {m * a} newtons.")
+        out.append(сил_en)
+        out.append(спросить("law", сил_en,
+                            закон="force = mass × acceleration", x=m, y=a))
         out.append(f"сила = масса × ускорение; "
                    f"{m} {rugram.форма('килограмм', m)} × "
                    f"{a} {rugram.форма('метр', a)} на секунду в квадрате = "
                    f"{m * a} {rugram.форма('ньютон', m * a)}.")
-        out.append(f"work = force × distance; {f} newtons × {d} metres = "
-                   f"{f * d} joules.")
-        out.append(f"работа = сила × путь; "
-                   f"{f} {rugram.форма('ньютон', f)} × "
-                   f"{d} {rugram.форма('метр', d)} = "
-                   f"{f * d} {rugram.форма('джоуль', f * d)}.")
+        раб_en = (f"work = force × distance; {f} newtons × {d} metres = "
+                  f"{f * d} joules.")
+        out.append(раб_en)
+        out.append(спросить("law", раб_en, закон="work = force × distance",
+                            x=f, y=d))
+        раб_ru = (f"работа = сила × путь; "
+                  f"{f} {rugram.форма('ньютон', f)} × "
+                  f"{d} {rugram.форма('метр', d)} = "
+                  f"{f * d} {rugram.форма('джоуль', f * d)}.")
+        out.append(раб_ru)
+        out.append(спросить("закон", раб_ru, закон="работа = сила × путь",
+                            x=f, y=d))
         out.append(f"power = work / time; {f * d} joules / {d} seconds = "
                    f"{f} watts.")
         out.append(f"мощность = работа / время; {f * d} "
@@ -126,8 +162,12 @@ def pass_shows(pass_i):
                    f"{v} {rugram.форма('кубометр', v)} = "
                    f"{mm // v} {rugram.форма('килограмм', mm // v)} "
                    f"на кубометр.")
-        out.append(f"voltage = current × resistance; {cur} amperes × {r} "
+        напр_en = (f"voltage = current × resistance; {cur} amperes × {r} "
                    f"ohms = {cur * r} volts.")
+        out.append(напр_en)
+        out.append(спросить("law", напр_en,
+                            закон="voltage = current × resistance",
+                            x=cur, y=r))
         out.append(f"напряжение = ток × сопротивление; {cur} "
                    f"{rugram.форма('ампер', cur)} × {r} {rugram.форма('ом', r)} = "
                    f"{cur * r} {rugram.форма('вольт', cur * r)}.")
@@ -141,6 +181,39 @@ def pass_shows(pass_i):
             (pass_i * 3 + i) % len(ИЗМЕРЯЕТСЯ)]
         out.append(f"{en_имя} is measured in {en_ед}.")
         out.append(f"{ru_имя} измеряется в {ru_ед}.")
+        # ОТКАЗ С ОСНОВАНИЕМ. Скорость при пути, не делящемся на время,
+        # существует, но целым числом не выражается, и корпус её не
+        # пишет: приближение, названное равенством, есть ложь того же
+        # рода, что «5 ÷ 2 = 2». Основание названо числом и судимо.
+        путь, срок = s + 1, t
+        if путь % срок:
+            # ВЕЛИЧИНА СТОИТ В ИМЕНИТЕЛЬНОМ, А НЕ ПОСЛЕ ПРЕДЛОГА:
+            # «для 73 метра» было бы неверно (предлог требует
+            # родительного, а счётная форма даёт «метра»), и мир учил
+            # бы неверному управлению с полной судимостью. Оборот
+            # переписан так, чтобы счётная форма стояла там, где она и
+            # права, — при числе.
+            out.append(f"what speed has a body covering {путь} metres "
+                       f"in {срок} seconds? no whole answer: {путь} "
+                       f"metres in {срок} seconds do not give a whole "
+                       f"speed, {путь} is not divisible by {срок}.")
+            # СКАЗУЕМОЕ ИДЁТ ЗА ЧИСЛОМ, А НЕ ЗА СЛОВОМ «МЕТРЫ»: «61
+            # метр не даёт», но «73 метра не дают». Единственность
+            # ВЫВОДИТСЯ из того же дома форм — если форма при этом
+            # числе совпала с формой при единице, число ведёт себя как
+            # один. Второй список чисел-исключений разошёлся бы с
+            # первым в тот же день.
+            один = (rugram.форма("метр", путь)
+                    == rugram.форма("метр", 1))
+            дают = "не даёт" if один else "не дают"
+            out.append(f"какова скорость тела, прошедшего {путь} "
+                       f"{rugram.форма('метр', путь)} за {срок} "
+                       f"{rugram.форма('секунда', срок)}? целого "
+                       f"ответа нет: {путь} "
+                       f"{rugram.форма('метр', путь)} за {срок} "
+                       f"{rugram.форма('секунда', срок)} {дают} целой "
+                       f"скорости, {путь} не делится на {срок} "
+                       f"нацело.")
     return out
 
 

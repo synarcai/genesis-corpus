@@ -23,6 +23,7 @@ from fractions import Fraction
 
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
+import asking  # noqa: E402
 from genesis import Unreadable, worlds  # noqa: E402
 
 # РУБЕЖ-ДОЛГА: ЛОЖНЫХ_РУБЕЖ = 0
@@ -55,6 +56,11 @@ from genesis import Unreadable, worlds  # noqa: E402
 ПРОИЗВОДНАЯ = re.compile(
     r"^(?:the derivative of t\^(\d) at (\d+) is"
     r"|производная t\^(\d) в точке (\d+) равна) (\d+)\.$")
+# ОТКАЗ ЕСТЬ ТАКОЕ ЖЕ УТВЕРЖДЕНИЕ: «предела нет» истинно ровно тогда,
+# когда члены и вправду растут, и суд это пересчитывает.
+ОТКАЗ_ПРЕДЕЛА = re.compile(
+    r"^(?:no limit for ([\d ]+): the terms grow, they do not shrink"
+    r"|предела нет у ([\d ]+): члены растут, а не убывают)\.$")
 
 
 def _пара(m, a, b):
@@ -74,6 +80,11 @@ def дроби(текст):
 def судить(строка):
     """(судимо, истинно) для одной строки."""
     с = строка.strip()
+    # ВОПРОС СУДИТСЯ СВОИМ ОТВЕТОМ: род определяется ответом, а связь
+    # половин — общим домом `tools/asking.py`.
+    если = asking.судить_парой(с, судить)
+    if если is not None:
+        return если
     m = АРИФМЕТИЧЕСКАЯ.match(с)
     if m:
         a, d = _пара(m, 1, 2)
@@ -120,6 +131,12 @@ def судить(строка):
         степень = int(m.group(1) or m.group(3))
         x = int(m.group(2) or m.group(4))
         return True, степень * x ** (степень - 1) == int(m.group(5))
+    m = ОТКАЗ_ПРЕДЕЛА.match(с)
+    if m:
+        члены = [int(x) for x in (m.group(1) or m.group(2)).split()]
+        if len(члены) < 2:
+            return False, True
+        return True, all(б > а for а, б in zip(члены, члены[1:]))
     m = ЧЛЕН.match(с)
     if m:
         n = int(m.group(1) or m.group(4))

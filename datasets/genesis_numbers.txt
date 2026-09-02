@@ -1,1584 +1,3159 @@
-4 составное; 4 = 2 × 2.
-9 is not prime; 9 = 3 × 3.
-13 простое; его делители — 1 и 13.
-18 is not prime; 18 = 2 × 9.
-22 составное; 22 = 2 × 11.
-27 is not prime; 27 = 3 × 9.
 3 простое; его делители — 1 и 3.
-8 is not prime; 8 = 2 × 4.
-12 составное; 12 = 2 × 6.
-17 is prime; its divisors are 1 and 17.
-21 составное; 21 = 3 × 7.
-26 is not prime; 26 = 2 × 13.
-2 простое; его делители — 1 и 2.
-7 is prime; its divisors are 1 and 7.
-11 простое; его делители — 1 и 11.
-16 is not prime; 16 = 2 × 8.
-20 составное; 20 = 2 × 10.
-25 is not prime; 25 = 5 × 5.
-29 простое; его делители — 1 и 29.
-6 is not prime; 6 = 2 × 3.
-10 составное; 10 = 2 × 5.
-15 is not prime; 15 = 3 × 5.
-19 простое; его делители — 1 и 19.
-24 is not prime; 24 = 2 × 12.
-28 составное; 28 = 2 × 14.
-5 is prime; its divisors are 1 and 5.
-9 составное; 9 = 3 × 3.
-14 is not prime; 14 = 2 × 7.
-18 составное; 18 = 2 × 9.
-23 is prime; its divisors are 1 and 23.
-27 составное; 27 = 3 × 9.
-4 is not prime; 4 = 2 × 2.
-8 составное; 8 = 2 × 4.
-13 is prime; its divisors are 1 and 13.
-17 простое; его делители — 1 и 17.
-22 is not prime; 22 = 2 × 11.
-26 составное; 26 = 2 × 13.
-3 is prime; its divisors are 1 and 3.
-7 простое; его делители — 1 и 7.
-12 is not prime; 12 = 2 × 6.
-16 составное; 16 = 2 × 8.
-21 is not prime; 21 = 3 × 7.
-25 составное; 25 = 5 × 5.
-2 is prime; its divisors are 1 and 2.
-6 составное; 6 = 2 × 3.
-11 is prime; its divisors are 1 and 11.
-15 составное; 15 = 3 × 5.
-20 is not prime; 20 = 2 × 10.
-24 составное; 24 = 2 × 12.
-29 is prime; its divisors are 1 and 29.
-5 простое; его делители — 1 и 5.
+is 5 prime? 5 is prime; its divisors are 1 and 5.
+простое ли 7? 7 простое; его делители — 1 и 7.
 10 is not prime; 10 = 2 × 5.
-14 составное; 14 = 2 × 7.
+12 составное; 12 = 2 × 6.
+is 14 prime? 14 is not prime; 14 = 2 × 7.
+простое ли 16? 16 составное; 16 = 2 × 8.
 19 is prime; its divisors are 1 and 19.
-23 простое; его делители — 1 и 23.
+21 составное; 21 = 3 × 7.
+is 23 prime? 23 is prime; its divisors are 1 and 23.
+простое ли 25? 25 составное; 25 = 5 × 5.
 28 is not prime; 28 = 2 × 14.
+2 простое; его делители — 1 и 2.
+is 4 prime? 4 is not prime; 4 = 2 × 2.
+простое ли 6? 6 составное; 6 = 2 × 3.
+9 is not prime; 9 = 3 × 3.
+11 простое; его делители — 1 и 11.
+is 13 prime? 13 is prime; its divisors are 1 and 13.
+простое ли 15? 15 составное; 15 = 3 × 5.
+18 is not prime; 18 = 2 × 9.
+20 составное; 20 = 2 × 10.
+is 22 prime? 22 is not prime; 22 = 2 × 11.
+простое ли 24? 24 составное; 24 = 2 × 12.
+27 is not prime; 27 = 3 × 9.
+29 простое; его делители — 1 и 29.
+is 3 prime? 3 is prime; its divisors are 1 and 3.
+простое ли 5? 5 простое; его делители — 1 и 5.
+8 is not prime; 8 = 2 × 4.
+10 составное; 10 = 2 × 5.
+is 12 prime? 12 is not prime; 12 = 2 × 6.
+простое ли 14? 14 составное; 14 = 2 × 7.
+17 is prime; its divisors are 1 and 17.
+19 простое; его делители — 1 и 19.
+is 21 prime? 21 is not prime; 21 = 3 × 7.
+простое ли 23? 23 простое; его делители — 1 и 23.
+26 is not prime; 26 = 2 × 13.
+28 составное; 28 = 2 × 14.
+is 2 prime? 2 is prime; its divisors are 1 and 2.
+простое ли 4? 4 составное; 4 = 2 × 2.
+7 is prime; its divisors are 1 and 7.
+9 составное; 9 = 3 × 3.
+is 11 prime? 11 is prime; its divisors are 1 and 11.
+простое ли 13? 13 простое; его делители — 1 и 13.
+16 is not prime; 16 = 2 × 8.
+18 составное; 18 = 2 × 9.
+is 20 prime? 20 is not prime; 20 = 2 × 10.
+простое ли 22? 22 составное; 22 = 2 × 11.
+25 is not prime; 25 = 5 × 5.
+27 составное; 27 = 3 × 9.
+is 29 prime? 29 is prime; its divisors are 1 and 29.
+простое ли 3? 3 простое; его делители — 1 и 3.
+6 is not prime; 6 = 2 × 3.
+8 составное; 8 = 2 × 4.
+is 10 prime? 10 is not prime; 10 = 2 × 5.
+простое ли 12? 12 составное; 12 = 2 × 6.
+15 is not prime; 15 = 3 × 5.
+17 простое; его делители — 1 и 17.
+is 19 prime? 19 is prime; its divisors are 1 and 19.
+простое ли 21? 21 составное; 21 = 3 × 7.
+24 is not prime; 24 = 2 × 12.
+26 составное; 26 = 2 × 13.
+is 28 prime? 28 is not prime; 28 = 2 × 14.
+простое ли 2? 2 простое; его делители — 1 и 2.
+5 is prime; its divisors are 1 and 5.
+7 простое; его делители — 1 и 7.
+is 9 prime? 9 is not prime; 9 = 3 × 3.
+простое ли 11? 11 простое; его делители — 1 и 11.
+14 is not prime; 14 = 2 × 7.
+16 составное; 16 = 2 × 8.
+is 18 prime? 18 is not prime; 18 = 2 × 9.
+простое ли 20? 20 составное; 20 = 2 × 10.
+23 is prime; its divisors are 1 and 23.
+25 составное; 25 = 5 × 5.
+is 27 prime? 27 is not prime; 27 = 3 × 9.
+простое ли 29? 29 простое; его делители — 1 и 29.
+4 is not prime; 4 = 2 × 2.
+6 составное; 6 = 2 × 3.
+is 8 prime? 8 is not prime; 8 = 2 × 4.
+простое ли 10? 10 составное; 10 = 2 × 5.
+13 is prime; its divisors are 1 and 13.
+15 составное; 15 = 3 × 5.
+is 17 prime? 17 is prime; its divisors are 1 and 17.
+простое ли 19? 19 простое; его делители — 1 и 19.
+22 is not prime; 22 = 2 × 11.
+24 составное; 24 = 2 × 12.
+is 26 prime? 26 is not prime; 26 = 2 × 13.
+простое ли 28? 28 составное; 28 = 2 × 14.
+3 is prime; its divisors are 1 and 3.
+5 простое; его делители — 1 и 5.
+is 7 prime? 7 is prime; its divisors are 1 and 7.
+простое ли 9? 9 составное; 9 = 3 × 3.
+12 is not prime; 12 = 2 × 6.
+14 составное; 14 = 2 × 7.
+is 16 prime? 16 is not prime; 16 = 2 × 8.
+простое ли 18? 18 составное; 18 = 2 × 9.
+21 is not prime; 21 = 3 × 7.
+23 простое; его делители — 1 и 23.
+is 25 prime? 25 is not prime; 25 = 5 × 5.
+простое ли 27? 27 составное; 27 = 3 × 9.
+2 is prime; its divisors are 1 and 2.
+4 составное; 4 = 2 × 2.
+is 6 prime? 6 is not prime; 6 = 2 × 3.
+простое ли 8? 8 составное; 8 = 2 × 4.
+11 is prime; its divisors are 1 and 11.
+13 простое; его делители — 1 и 13.
+is 15 prime? 15 is not prime; 15 = 3 × 5.
+простое ли 17? 17 простое; его делители — 1 и 17.
+20 is not prime; 20 = 2 × 10.
+22 составное; 22 = 2 × 11.
+is 24 prime? 24 is not prime; 24 = 2 × 12.
+простое ли 26? 26 составное; 26 = 2 × 13.
+29 is prime; its divisors are 1 and 29.
 
-6 раскладывается в 2 × 3.
-10 factorises into 2 × 5.
-13 раскладывается в 13.
-17 factorises into 17.
-20 раскладывается в 2 × 2 × 5.
-24 factorises into 2 × 2 × 2 × 3.
-27 раскладывается в 3 × 3 × 3.
-31 factorises into 31.
-34 раскладывается в 2 × 17.
-38 factorises into 2 × 19.
+простое ли 1? 1 ни простое, ни составное: его единственный делитель — 1.
+is 1 prime? 1 is neither prime nor composite: its only divisor is 1.
+
 5 раскладывается в 5.
-9 factorises into 3 × 3.
-12 раскладывается в 2 × 2 × 3.
-16 factorises into 2 × 2 × 2 × 2.
-19 раскладывается в 19.
-23 factorises into 23.
-26 раскладывается в 2 × 13.
-30 factorises into 2 × 3 × 5.
-33 раскладывается в 3 × 11.
-37 factorises into 37.
-4 раскладывается в 2 × 2.
-8 factorises into 2 × 2 × 2.
-11 раскладывается в 11.
-15 factorises into 3 × 5.
-18 раскладывается в 2 × 3 × 3.
-22 factorises into 2 × 11.
-25 раскладывается в 5 × 5.
-29 factorises into 29.
-32 раскладывается в 2 × 2 × 2 × 2 × 2.
-36 factorises into 2 × 2 × 3 × 3.
-39 раскладывается в 3 × 13.
 7 factorises into 7.
-10 раскладывается в 2 × 5.
+во что раскладывается 8? 8 раскладывается в 2 × 2 × 2.
+what does 10 factorise into? 10 factorises into 2 × 5.
+12 раскладывается в 2 × 2 × 3.
 14 factorises into 2 × 7.
-17 раскладывается в 17.
+во что раскладывается 15? 15 раскладывается в 3 × 5.
+what does 17 factorise into? 17 factorises into 17.
+19 раскладывается в 19.
 21 factorises into 3 × 7.
-24 раскладывается в 2 × 2 × 2 × 3.
+во что раскладывается 22? 22 раскладывается в 2 × 11.
+what does 24 factorise into? 24 factorises into 2 × 2 × 2 × 3.
+26 раскладывается в 2 × 13.
 28 factorises into 2 × 2 × 7.
-31 раскладывается в 31.
+во что раскладывается 29? 29 раскладывается в 29.
+what does 31 factorise into? 31 factorises into 31.
+33 раскладывается в 3 × 11.
 35 factorises into 5 × 7.
-38 раскладывается в 2 × 19.
+во что раскладывается 36? 36 раскладывается в 2 × 2 × 3 × 3.
+what does 38 factorise into? 38 factorises into 2 × 19.
+4 раскладывается в 2 × 2.
 6 factorises into 2 × 3.
-9 раскладывается в 3 × 3.
+во что раскладывается 7? 7 раскладывается в 7.
+what does 9 factorise into? 9 factorises into 3 × 3.
+11 раскладывается в 11.
 13 factorises into 13.
-16 раскладывается в 2 × 2 × 2 × 2.
+во что раскладывается 14? 14 раскладывается в 2 × 7.
+what does 16 factorise into? 16 factorises into 2 × 2 × 2 × 2.
+18 раскладывается в 2 × 3 × 3.
 20 factorises into 2 × 2 × 5.
-23 раскладывается в 23.
+во что раскладывается 21? 21 раскладывается в 3 × 7.
+what does 23 factorise into? 23 factorises into 23.
+25 раскладывается в 5 × 5.
 27 factorises into 3 × 3 × 3.
-30 раскладывается в 2 × 3 × 5.
+во что раскладывается 28? 28 раскладывается в 2 × 2 × 7.
+what does 30 factorise into? 30 factorises into 2 × 3 × 5.
+32 раскладывается в 2 × 2 × 2 × 2 × 2.
 34 factorises into 2 × 17.
-37 раскладывается в 37.
+во что раскладывается 35? 35 раскладывается в 5 × 7.
+what does 37 factorise into? 37 factorises into 37.
+39 раскладывается в 3 × 13.
 5 factorises into 5.
-8 раскладывается в 2 × 2 × 2.
+во что раскладывается 6? 6 раскладывается в 2 × 3.
+what does 8 factorise into? 8 factorises into 2 × 2 × 2.
+10 раскладывается в 2 × 5.
 12 factorises into 2 × 2 × 3.
-15 раскладывается в 3 × 5.
+во что раскладывается 13? 13 раскладывается в 13.
+what does 15 factorise into? 15 factorises into 3 × 5.
+17 раскладывается в 17.
 19 factorises into 19.
-22 раскладывается в 2 × 11.
+во что раскладывается 20? 20 раскладывается в 2 × 2 × 5.
+what does 22 factorise into? 22 factorises into 2 × 11.
+24 раскладывается в 2 × 2 × 2 × 3.
 26 factorises into 2 × 13.
-29 раскладывается в 29.
+во что раскладывается 27? 27 раскладывается в 3 × 3 × 3.
+what does 29 factorise into? 29 factorises into 29.
+31 раскладывается в 31.
 33 factorises into 3 × 11.
-36 раскладывается в 2 × 2 × 3 × 3.
+во что раскладывается 34? 34 раскладывается в 2 × 17.
+what does 36 factorise into? 36 factorises into 2 × 2 × 3 × 3.
+38 раскладывается в 2 × 19.
 4 factorises into 2 × 2.
-7 раскладывается в 7.
+во что раскладывается 5? 5 раскладывается в 5.
+what does 7 factorise into? 7 factorises into 7.
+9 раскладывается в 3 × 3.
 11 factorises into 11.
-14 раскладывается в 2 × 7.
+во что раскладывается 12? 12 раскладывается в 2 × 2 × 3.
+what does 14 factorise into? 14 factorises into 2 × 7.
+16 раскладывается в 2 × 2 × 2 × 2.
 18 factorises into 2 × 3 × 3.
-21 раскладывается в 3 × 7.
+во что раскладывается 19? 19 раскладывается в 19.
+what does 21 factorise into? 21 factorises into 3 × 7.
+23 раскладывается в 23.
 25 factorises into 5 × 5.
-28 раскладывается в 2 × 2 × 7.
+во что раскладывается 26? 26 раскладывается в 2 × 13.
+what does 28 factorise into? 28 factorises into 2 × 2 × 7.
+30 раскладывается в 2 × 3 × 5.
 32 factorises into 2 × 2 × 2 × 2 × 2.
-35 раскладывается в 5 × 7.
+во что раскладывается 33? 33 раскладывается в 3 × 11.
+what does 35 factorise into? 35 factorises into 5 × 7.
+37 раскладывается в 37.
 39 factorises into 3 × 13.
+во что раскладывается 4? 4 раскладывается в 2 × 2.
+what does 6 factorise into? 6 factorises into 2 × 3.
+8 раскладывается в 2 × 2 × 2.
+10 factorises into 2 × 5.
+во что раскладывается 11? 11 раскладывается в 11.
+what does 13 factorise into? 13 factorises into 13.
+15 раскладывается в 3 × 5.
+17 factorises into 17.
+во что раскладывается 18? 18 раскладывается в 2 × 3 × 3.
+what does 20 factorise into? 20 factorises into 2 × 2 × 5.
+22 раскладывается в 2 × 11.
+24 factorises into 2 × 2 × 2 × 3.
+во что раскладывается 25? 25 раскладывается в 5 × 5.
+what does 27 factorise into? 27 factorises into 3 × 3 × 3.
+29 раскладывается в 29.
+31 factorises into 31.
+во что раскладывается 32? 32 раскладывается в 2 × 2 × 2 × 2 × 2.
+what does 34 factorise into? 34 factorises into 2 × 17.
+36 раскладывается в 2 × 2 × 3 × 3.
+38 factorises into 2 × 19.
+во что раскладывается 39? 39 раскладывается в 3 × 13.
+what does 5 factorise into? 5 factorises into 5.
+7 раскладывается в 7.
+9 factorises into 3 × 3.
+во что раскладывается 10? 10 раскладывается в 2 × 5.
+what does 12 factorise into? 12 factorises into 2 × 2 × 3.
+14 раскладывается в 2 × 7.
+16 factorises into 2 × 2 × 2 × 2.
+во что раскладывается 17? 17 раскладывается в 17.
+what does 19 factorise into? 19 factorises into 19.
+21 раскладывается в 3 × 7.
+23 factorises into 23.
+во что раскладывается 24? 24 раскладывается в 2 × 2 × 2 × 3.
+what does 26 factorise into? 26 factorises into 2 × 13.
+28 раскладывается в 2 × 2 × 7.
+30 factorises into 2 × 3 × 5.
+во что раскладывается 31? 31 раскладывается в 31.
+what does 33 factorise into? 33 factorises into 3 × 11.
+35 раскладывается в 5 × 7.
+37 factorises into 37.
+во что раскладывается 38? 38 раскладывается в 2 × 19.
+what does 4 factorise into? 4 factorises into 2 × 2.
+6 раскладывается в 2 × 3.
+8 factorises into 2 × 2 × 2.
+во что раскладывается 9? 9 раскладывается в 3 × 3.
+what does 11 factorise into? 11 factorises into 11.
+13 раскладывается в 13.
+15 factorises into 3 × 5.
+во что раскладывается 16? 16 раскладывается в 2 × 2 × 2 × 2.
+what does 18 factorise into? 18 factorises into 2 × 3 × 3.
+20 раскладывается в 2 × 2 × 5.
+22 factorises into 2 × 11.
+во что раскладывается 23? 23 раскладывается в 23.
+what does 25 factorise into? 25 factorises into 5 × 5.
+27 раскладывается в 3 × 3 × 3.
+29 factorises into 29.
+во что раскладывается 30? 30 раскладывается в 2 × 3 × 5.
+what does 32 factorise into? 32 factorises into 2 × 2 × 2 × 2 × 2.
+34 раскладывается в 2 × 17.
+36 factorises into 2 × 2 × 3 × 3.
+во что раскладывается 37? 37 раскладывается в 37.
+what does 39 factorise into? 39 factorises into 3 × 13.
 
-делители 8 — это 1 2 4 8.
-the divisors of 12 are 1 2 3 4 6 12.
-делители 15 — это 1 3 5 15.
-the divisors of 19 are 1 19.
-делители 22 — это 1 2 11 22.
-the divisors of 26 are 1 2 13 26.
-делители 29 — это 1 29.
-the divisors of 9 are 1 3 9.
-делители 12 — это 1 2 3 4 6 12.
-the divisors of 16 are 1 2 4 8 16.
-делители 19 — это 1 19.
-the divisors of 23 are 1 23.
-делители 26 — это 1 2 13 26.
-the divisors of 6 are 1 2 3 6.
-делители 9 — это 1 3 9.
-the divisors of 13 are 1 13.
-делители 16 — это 1 2 4 8 16.
-the divisors of 20 are 1 2 4 5 10 20.
-делители 23 — это 1 23.
-the divisors of 27 are 1 3 9 27.
-делители 6 — это 1 2 3 6.
-the divisors of 10 are 1 2 5 10.
-делители 13 — это 1 13.
-the divisors of 17 are 1 17.
-делители 20 — это 1 2 4 5 10 20.
-the divisors of 24 are 1 2 3 4 6 8 12 24.
-делители 27 — это 1 3 9 27.
-the divisors of 7 are 1 7.
-делители 10 — это 1 2 5 10.
-the divisors of 14 are 1 2 7 14.
-делители 17 — это 1 17.
-the divisors of 21 are 1 3 7 21.
-делители 24 — это 1 2 3 4 6 8 12 24.
-the divisors of 28 are 1 2 4 7 14 28.
 делители 7 — это 1 7.
-the divisors of 11 are 1 11.
+the divisors of 9 are 1 3 9.
+каковы делители 10? делители 10 — это 1 2 5 10.
+what are the divisors of 12? the divisors of 12 are 1 2 3 4 6 12.
 делители 14 — это 1 2 7 14.
-the divisors of 18 are 1 2 3 6 9 18.
+the divisors of 16 are 1 2 4 8 16.
+каковы делители 17? делители 17 — это 1 17.
+what are the divisors of 19? the divisors of 19 are 1 19.
 делители 21 — это 1 3 7 21.
-the divisors of 25 are 1 5 25.
+the divisors of 23 are 1 23.
+каковы делители 24? делители 24 — это 1 2 3 4 6 8 12 24.
+what are the divisors of 26? the divisors of 26 are 1 2 13 26.
 делители 28 — это 1 2 4 7 14 28.
-the divisors of 8 are 1 2 4 8.
+the divisors of 6 are 1 2 3 6.
+каковы делители 7? делители 7 — это 1 7.
+what are the divisors of 9? the divisors of 9 are 1 3 9.
 делители 11 — это 1 11.
-the divisors of 15 are 1 3 5 15.
+the divisors of 13 are 1 13.
+каковы делители 14? делители 14 — это 1 2 7 14.
+what are the divisors of 16? the divisors of 16 are 1 2 4 8 16.
 делители 18 — это 1 2 3 6 9 18.
-the divisors of 22 are 1 2 11 22.
+the divisors of 20 are 1 2 4 5 10 20.
+каковы делители 21? делители 21 — это 1 3 7 21.
+what are the divisors of 23? the divisors of 23 are 1 23.
 делители 25 — это 1 5 25.
+the divisors of 27 are 1 3 9 27.
+каковы делители 28? делители 28 — это 1 2 4 7 14 28.
+what are the divisors of 6? the divisors of 6 are 1 2 3 6.
+делители 8 — это 1 2 4 8.
+the divisors of 10 are 1 2 5 10.
+каковы делители 11? делители 11 — это 1 11.
+what are the divisors of 13? the divisors of 13 are 1 13.
+делители 15 — это 1 3 5 15.
+the divisors of 17 are 1 17.
+каковы делители 18? делители 18 — это 1 2 3 6 9 18.
+what are the divisors of 20? the divisors of 20 are 1 2 4 5 10 20.
+делители 22 — это 1 2 11 22.
+the divisors of 24 are 1 2 3 4 6 8 12 24.
+каковы делители 25? делители 25 — это 1 5 25.
+what are the divisors of 27? the divisors of 27 are 1 3 9 27.
+делители 29 — это 1 29.
+the divisors of 7 are 1 7.
+каковы делители 8? делители 8 — это 1 2 4 8.
+what are the divisors of 10? the divisors of 10 are 1 2 5 10.
+делители 12 — это 1 2 3 4 6 12.
+the divisors of 14 are 1 2 7 14.
+каковы делители 15? делители 15 — это 1 3 5 15.
+what are the divisors of 17? the divisors of 17 are 1 17.
+делители 19 — это 1 19.
+the divisors of 21 are 1 3 7 21.
+каковы делители 22? делители 22 — это 1 2 11 22.
+what are the divisors of 24? the divisors of 24 are 1 2 3 4 6 8 12 24.
+делители 26 — это 1 2 13 26.
+the divisors of 28 are 1 2 4 7 14 28.
+каковы делители 29? делители 29 — это 1 29.
+what are the divisors of 7? the divisors of 7 are 1 7.
+делители 9 — это 1 3 9.
+the divisors of 11 are 1 11.
+каковы делители 12? делители 12 — это 1 2 3 4 6 12.
+what are the divisors of 14? the divisors of 14 are 1 2 7 14.
+делители 16 — это 1 2 4 8 16.
+the divisors of 18 are 1 2 3 6 9 18.
+каковы делители 19? делители 19 — это 1 19.
+what are the divisors of 21? the divisors of 21 are 1 3 7 21.
+делители 23 — это 1 23.
+the divisors of 25 are 1 5 25.
+каковы делители 26? делители 26 — это 1 2 13 26.
+what are the divisors of 28? the divisors of 28 are 1 2 4 7 14 28.
+делители 6 — это 1 2 3 6.
+the divisors of 8 are 1 2 4 8.
+каковы делители 9? делители 9 — это 1 3 9.
+what are the divisors of 11? the divisors of 11 are 1 11.
+делители 13 — это 1 13.
+the divisors of 15 are 1 3 5 15.
+каковы делители 16? делители 16 — это 1 2 4 8 16.
+what are the divisors of 18? the divisors of 18 are 1 2 3 6 9 18.
+делители 20 — это 1 2 4 5 10 20.
+the divisors of 22 are 1 2 11 22.
+каковы делители 23? делители 23 — это 1 23.
+what are the divisors of 25? the divisors of 25 are 1 5 25.
+делители 27 — это 1 3 9 27.
 the divisors of 29 are 1 29.
+каковы делители 6? делители 6 — это 1 2 3 6.
+what are the divisors of 8? the divisors of 8 are 1 2 4 8.
+делители 10 — это 1 2 5 10.
+the divisors of 12 are 1 2 3 4 6 12.
+каковы делители 13? делители 13 — это 1 13.
+what are the divisors of 15? the divisors of 15 are 1 3 5 15.
+делители 17 — это 1 17.
+the divisors of 19 are 1 19.
+каковы делители 20? делители 20 — это 1 2 4 5 10 20.
+what are the divisors of 22? the divisors of 22 are 1 2 11 22.
+делители 24 — это 1 2 3 4 6 8 12 24.
+the divisors of 26 are 1 2 13 26.
+каковы делители 27? делители 27 — это 1 3 9 27.
+what are the divisors of 29? the divisors of 29 are 1 29.
 
-10 по модулю 3 равно 1.
-16 mod 5 = 1.
-19 и 1 сравнимы по модулю 6.
-25 and 1 are congruent modulo 8.
-31 по модулю 3 равно 1.
-37 mod 5 = 2.
-40 и 4 сравнимы по модулю 6.
-46 and 6 are congruent modulo 8.
-52 по модулю 3 равно 1.
-58 mod 5 = 3.
-61 и 1 сравнимы по модулю 6.
-67 and 3 are congruent modulo 8.
-73 по модулю 3 равно 1.
-7 mod 2 = 1.
-10 и 1 сравнимы по модулю 3.
-16 and 1 are congruent modulo 5.
-22 по модулю 7 равно 1.
-28 mod 2 = 0.
-31 и 1 сравнимы по модулю 3.
-37 and 2 are congruent modulo 5.
-43 по модулю 7 равно 1.
-49 mod 2 = 1.
-52 и 1 сравнимы по модулю 3.
-58 and 3 are congruent modulo 5.
-64 по модулю 7 равно 1.
-70 mod 2 = 0.
-73 и 1 сравнимы по модулю 3.
-7 and 1 are congruent modulo 2.
-13 по модулю 4 равно 1.
-19 mod 6 = 1.
-22 и 1 сравнимы по модулю 7.
-28 and 0 are congruent modulo 2.
-34 по модулю 4 равно 2.
-40 mod 6 = 4.
-43 и 1 сравнимы по модулю 7.
-49 and 1 are congruent modulo 2.
-55 по модулю 4 равно 3.
-61 mod 6 = 1.
-64 и 1 сравнимы по модулю 7.
-70 and 0 are congruent modulo 2.
-76 по модулю 4 равно 0.
-10 mod 3 = 1.
+чему равно 7 по модулю 2? 7 по модулю 2 равно 1.
+what is 10 mod 3? 10 mod 3 = 1.
 13 и 1 сравнимы по модулю 4.
-19 and 1 are congruent modulo 6.
-25 по модулю 8 равно 1.
-31 mod 3 = 1.
-34 и 2 сравнимы по модулю 4.
-40 and 4 are congruent modulo 6.
-46 по модулю 8 равно 6.
-52 mod 3 = 1.
-55 и 3 сравнимы по модулю 4.
-61 and 1 are congruent modulo 6.
-67 по модулю 8 равно 3.
-73 mod 3 = 1.
-76 и 0 сравнимы по модулю 4.
-10 and 1 are congruent modulo 3.
-16 по модулю 5 равно 1.
-22 mod 7 = 1.
-25 и 1 сравнимы по модулю 8.
-31 and 1 are congruent modulo 3.
-37 по модулю 5 равно 2.
-43 mod 7 = 1.
-46 и 6 сравнимы по модулю 8.
-52 and 1 are congruent modulo 3.
-58 по модулю 5 равно 3.
-64 mod 7 = 1.
-67 и 3 сравнимы по модулю 8.
-73 and 1 are congruent modulo 3.
-7 по модулю 2 равно 1.
-13 mod 4 = 1.
-16 и 1 сравнимы по модулю 5.
-22 and 1 are congruent modulo 7.
-28 по модулю 2 равно 0.
-34 mod 4 = 2.
-37 и 2 сравнимы по модулю 5.
-43 and 1 are congruent modulo 7.
-49 по модулю 2 равно 1.
-55 mod 4 = 3.
-58 и 3 сравнимы по модулю 5.
-64 and 1 are congruent modulo 7.
-70 по модулю 2 равно 0.
-76 mod 4 = 0.
-7 и 1 сравнимы по модулю 2.
-13 and 1 are congruent modulo 4.
+16 and 1 are congruent modulo 5.
 19 по модулю 6 равно 1.
-25 mod 8 = 1.
-28 и 0 сравнимы по модулю 2.
-34 and 2 are congruent modulo 4.
+22 mod 7 = 1.
+сравнимы ли 22 и 1 по модулю 7? 22 и 1 сравнимы по модулю 7.
+are 25 and 1 congruent modulo 8? 25 and 1 are congruent modulo 8.
+чему равно 28 по модулю 2? 28 по модулю 2 равно 0.
+what is 31 mod 3? 31 mod 3 = 1.
+34 и 2 сравнимы по модулю 4.
+37 and 2 are congruent modulo 5.
 40 по модулю 6 равно 4.
-46 mod 8 = 6.
-49 и 1 сравнимы по модулю 2.
-55 and 3 are congruent modulo 4.
+43 mod 7 = 1.
+сравнимы ли 43 и 1 по модулю 7? 43 и 1 сравнимы по модулю 7.
+are 46 and 6 congruent modulo 8? 46 and 6 are congruent modulo 8.
+чему равно 49 по модулю 2? 49 по модулю 2 равно 1.
+what is 52 mod 3? 52 mod 3 = 1.
+55 и 3 сравнимы по модулю 4.
+58 and 3 are congruent modulo 5.
 61 по модулю 6 равно 1.
+64 mod 7 = 1.
+сравнимы ли 64 и 1 по модулю 7? 64 и 1 сравнимы по модулю 7.
+are 67 and 3 congruent modulo 8? 67 and 3 are congruent modulo 8.
+чему равно 70 по модулю 2? 70 по модулю 2 равно 0.
+what is 73 mod 3? 73 mod 3 = 1.
+76 и 0 сравнимы по модулю 4.
+7 and 1 are congruent modulo 2.
+10 по модулю 3 равно 1.
+13 mod 4 = 1.
+сравнимы ли 13 и 1 по модулю 4? 13 и 1 сравнимы по модулю 4.
+are 16 and 1 congruent modulo 5? 16 and 1 are congruent modulo 5.
+чему равно 19 по модулю 6? 19 по модулю 6 равно 1.
+what is 22 mod 7? 22 mod 7 = 1.
+25 и 1 сравнимы по модулю 8.
+28 and 0 are congruent modulo 2.
+31 по модулю 3 равно 1.
+34 mod 4 = 2.
+сравнимы ли 34 и 2 по модулю 4? 34 и 2 сравнимы по модулю 4.
+are 37 and 2 congruent modulo 5? 37 and 2 are congruent modulo 5.
+чему равно 40 по модулю 6? 40 по модулю 6 равно 4.
+what is 43 mod 7? 43 mod 7 = 1.
+46 и 6 сравнимы по модулю 8.
+49 and 1 are congruent modulo 2.
+52 по модулю 3 равно 1.
+55 mod 4 = 3.
+сравнимы ли 55 и 3 по модулю 4? 55 и 3 сравнимы по модулю 4.
+are 58 and 3 congruent modulo 5? 58 and 3 are congruent modulo 5.
+чему равно 61 по модулю 6? 61 по модулю 6 равно 1.
+what is 64 mod 7? 64 mod 7 = 1.
+67 и 3 сравнимы по модулю 8.
+70 and 0 are congruent modulo 2.
+73 по модулю 3 равно 1.
+76 mod 4 = 0.
+сравнимы ли 76 и 0 по модулю 4? 76 и 0 сравнимы по модулю 4.
+are 7 and 1 congruent modulo 2? 7 and 1 are congruent modulo 2.
+чему равно 10 по модулю 3? 10 по модулю 3 равно 1.
+what is 13 mod 4? 13 mod 4 = 1.
+16 и 1 сравнимы по модулю 5.
+19 and 1 are congruent modulo 6.
+22 по модулю 7 равно 1.
+25 mod 8 = 1.
+сравнимы ли 25 и 1 по модулю 8? 25 и 1 сравнимы по модулю 8.
+are 28 and 0 congruent modulo 2? 28 and 0 are congruent modulo 2.
+чему равно 31 по модулю 3? 31 по модулю 3 равно 1.
+what is 34 mod 4? 34 mod 4 = 2.
+37 и 2 сравнимы по модулю 5.
+40 and 4 are congruent modulo 6.
+43 по модулю 7 равно 1.
+46 mod 8 = 6.
+сравнимы ли 46 и 6 по модулю 8? 46 и 6 сравнимы по модулю 8.
+are 49 and 1 congruent modulo 2? 49 and 1 are congruent modulo 2.
+чему равно 52 по модулю 3? 52 по модулю 3 равно 1.
+what is 55 mod 4? 55 mod 4 = 3.
+58 и 3 сравнимы по модулю 5.
+61 and 1 are congruent modulo 6.
+64 по модулю 7 равно 1.
 67 mod 8 = 3.
+сравнимы ли 67 и 3 по модулю 8? 67 и 3 сравнимы по модулю 8.
+are 70 and 0 congruent modulo 2? 70 and 0 are congruent modulo 2.
+чему равно 73 по модулю 3? 73 по модулю 3 равно 1.
+what is 76 mod 4? 76 mod 4 = 0.
+7 и 1 сравнимы по модулю 2.
+10 and 1 are congruent modulo 3.
+13 по модулю 4 равно 1.
+16 mod 5 = 1.
+сравнимы ли 16 и 1 по модулю 5? 16 и 1 сравнимы по модулю 5.
+are 19 and 1 congruent modulo 6? 19 and 1 are congruent modulo 6.
+чему равно 22 по модулю 7? 22 по модулю 7 равно 1.
+what is 25 mod 8? 25 mod 8 = 1.
+28 и 0 сравнимы по модулю 2.
+31 and 1 are congruent modulo 3.
+34 по модулю 4 равно 2.
+37 mod 5 = 2.
+сравнимы ли 37 и 2 по модулю 5? 37 и 2 сравнимы по модулю 5.
+are 40 and 4 congruent modulo 6? 40 and 4 are congruent modulo 6.
+чему равно 43 по модулю 7? 43 по модулю 7 равно 1.
+what is 46 mod 8? 46 mod 8 = 6.
+49 и 1 сравнимы по модулю 2.
+52 and 1 are congruent modulo 3.
+55 по модулю 4 равно 3.
+58 mod 5 = 3.
+сравнимы ли 58 и 3 по модулю 5? 58 и 3 сравнимы по модулю 5.
+are 61 and 1 congruent modulo 6? 61 and 1 are congruent modulo 6.
+чему равно 64 по модулю 7? 64 по модулю 7 равно 1.
+what is 67 mod 8? 67 mod 8 = 3.
 70 и 0 сравнимы по модулю 2.
+73 and 1 are congruent modulo 3.
+76 по модулю 4 равно 0.
+7 mod 2 = 1.
+сравнимы ли 7 и 1 по модулю 2? 7 и 1 сравнимы по модулю 2.
+are 10 and 1 congruent modulo 3? 10 and 1 are congruent modulo 3.
+чему равно 13 по модулю 4? 13 по модулю 4 равно 1.
+what is 16 mod 5? 16 mod 5 = 1.
+19 и 1 сравнимы по модулю 6.
+22 and 1 are congruent modulo 7.
+25 по модулю 8 равно 1.
+28 mod 2 = 0.
+сравнимы ли 28 и 0 по модулю 2? 28 и 0 сравнимы по модулю 2.
+are 31 and 1 congruent modulo 3? 31 and 1 are congruent modulo 3.
+чему равно 34 по модулю 4? 34 по модулю 4 равно 2.
+what is 37 mod 5? 37 mod 5 = 2.
+40 и 4 сравнимы по модулю 6.
+43 and 1 are congruent modulo 7.
+46 по модулю 8 равно 6.
+49 mod 2 = 1.
+сравнимы ли 49 и 1 по модулю 2? 49 и 1 сравнимы по модулю 2.
+are 52 and 1 congruent modulo 3? 52 and 1 are congruent modulo 3.
+чему равно 55 по модулю 4? 55 по модулю 4 равно 3.
+what is 58 mod 5? 58 mod 5 = 3.
+61 и 1 сравнимы по модулю 6.
+64 and 1 are congruent modulo 7.
+67 по модулю 8 равно 3.
+70 mod 2 = 0.
+сравнимы ли 70 и 0 по модулю 2? 70 и 0 сравнимы по модулю 2.
+are 73 and 1 congruent modulo 3? 73 and 1 are congruent modulo 3.
+чему равно 76 по модулю 4? 76 по модулю 4 равно 0.
+what is 7 mod 2? 7 mod 2 = 1.
+10 и 1 сравнимы по модулю 3.
+13 and 1 are congruent modulo 4.
+16 по модулю 5 равно 1.
+19 mod 6 = 1.
+сравнимы ли 19 и 1 по модулю 6? 19 и 1 сравнимы по модулю 6.
+are 22 and 1 congruent modulo 7? 22 and 1 are congruent modulo 7.
+чему равно 25 по модулю 8? 25 по модулю 8 равно 1.
+what is 28 mod 2? 28 mod 2 = 0.
+31 и 1 сравнимы по модулю 3.
+34 and 2 are congruent modulo 4.
+37 по модулю 5 равно 2.
+40 mod 6 = 4.
+сравнимы ли 40 и 4 по модулю 6? 40 и 4 сравнимы по модулю 6.
+are 43 and 1 congruent modulo 7? 43 and 1 are congruent modulo 7.
+чему равно 46 по модулю 8? 46 по модулю 8 равно 6.
+what is 49 mod 2? 49 mod 2 = 1.
+52 и 1 сравнимы по модулю 3.
+55 and 3 are congruent modulo 4.
+58 по модулю 5 равно 3.
+61 mod 6 = 1.
+сравнимы ли 61 и 1 по модулю 6? 61 и 1 сравнимы по модулю 6.
+are 64 and 1 congruent modulo 7? 64 and 1 are congruent modulo 7.
+чему равно 67 по модулю 8? 67 по модулю 8 равно 3.
+what is 70 mod 2? 70 mod 2 = 0.
+73 и 1 сравнимы по модулю 3.
 76 and 0 are congruent modulo 4.
+7 по модулю 2 равно 1.
+10 mod 3 = 1.
+сравнимы ли 10 и 1 по модулю 3? 10 и 1 сравнимы по модулю 3.
+are 13 and 1 congruent modulo 4? 13 and 1 are congruent modulo 4.
+чему равно 16 по модулю 5? 16 по модулю 5 равно 1.
+what is 19 mod 6? 19 mod 6 = 1.
+22 и 1 сравнимы по модулю 7.
+25 and 1 are congruent modulo 8.
+28 по модулю 2 равно 0.
+31 mod 3 = 1.
+сравнимы ли 31 и 1 по модулю 3? 31 и 1 сравнимы по модулю 3.
+are 34 and 2 congruent modulo 4? 34 and 2 are congruent modulo 4.
+чему равно 37 по модулю 5? 37 по модулю 5 равно 2.
+what is 40 mod 6? 40 mod 6 = 4.
+43 и 1 сравнимы по модулю 7.
+46 and 6 are congruent modulo 8.
+49 по модулю 2 равно 1.
+52 mod 3 = 1.
+сравнимы ли 52 и 1 по модулю 3? 52 и 1 сравнимы по модулю 3.
+are 55 and 3 congruent modulo 4? 55 and 3 are congruent modulo 4.
+чему равно 58 по модулю 5? 58 по модулю 5 равно 3.
+what is 61 mod 6? 61 mod 6 = 1.
+64 и 1 сравнимы по модулю 7.
+67 and 3 are congruent modulo 8.
+70 по модулю 2 равно 0.
+73 mod 3 = 1.
+сравнимы ли 73 и 1 по модулю 3? 73 и 1 сравнимы по модулю 3.
+are 76 and 0 congruent modulo 4? 76 and 0 are congruent modulo 4.
 
-6 и 13 взаимно просты; их нод равен 1.
-10 and 21 are coprime; their gcd is 1.
-13 и 27 взаимно просты; их нод равен 1.
-17 and 35 are coprime; their gcd is 1.
-20 и 41 взаимно просты; их нод равен 1.
-4 and 9 are coprime; their gcd is 1.
-7 и 15 взаимно просты; их нод равен 1.
-11 and 23 are coprime; their gcd is 1.
-14 и 29 взаимно просты; их нод равен 1.
-18 and 37 are coprime; their gcd is 1.
-21 и 43 взаимно просты; их нод равен 1.
-5 and 11 are coprime; their gcd is 1.
-8 и 17 взаимно просты; их нод равен 1.
-12 and 25 are coprime; their gcd is 1.
-15 и 31 взаимно просты; их нод равен 1.
-19 and 39 are coprime; their gcd is 1.
-22 и 45 взаимно просты; их нод равен 1.
-6 and 13 are coprime; their gcd is 1.
-9 и 19 взаимно просты; их нод равен 1.
-13 and 27 are coprime; their gcd is 1.
-16 и 33 взаимно просты; их нод равен 1.
-20 and 41 are coprime; their gcd is 1.
-23 и 47 взаимно просты; их нод равен 1.
-7 and 15 are coprime; their gcd is 1.
-10 и 21 взаимно просты; их нод равен 1.
-14 and 29 are coprime; their gcd is 1.
-17 и 35 взаимно просты; их нод равен 1.
-21 and 43 are coprime; their gcd is 1.
-4 и 9 взаимно просты; их нод равен 1.
-8 and 17 are coprime; their gcd is 1.
-11 и 23 взаимно просты; их нод равен 1.
-15 and 31 are coprime; their gcd is 1.
-18 и 37 взаимно просты; их нод равен 1.
-22 and 45 are coprime; their gcd is 1.
 5 и 11 взаимно просты; их нод равен 1.
-9 and 19 are coprime; their gcd is 1.
+7 and 15 are coprime; their gcd is 1.
+взаимно ли просты 8 и 17? 8 и 17 взаимно просты; их нод равен 1.
+are 10 and 21 coprime? 10 and 21 are coprime; their gcd is 1.
 12 и 25 взаимно просты; их нод равен 1.
-16 and 33 are coprime; their gcd is 1.
+14 and 29 are coprime; their gcd is 1.
+взаимно ли просты 15 и 31? 15 и 31 взаимно просты; их нод равен 1.
+are 17 and 35 coprime? 17 and 35 are coprime; their gcd is 1.
 19 и 39 взаимно просты; их нод равен 1.
+21 and 43 are coprime; their gcd is 1.
+взаимно ли просты 22 и 45? 22 и 45 взаимно просты; их нод равен 1.
+are 4 and 9 coprime? 4 and 9 are coprime; their gcd is 1.
+6 и 13 взаимно просты; их нод равен 1.
+8 and 17 are coprime; their gcd is 1.
+взаимно ли просты 9 и 19? 9 и 19 взаимно просты; их нод равен 1.
+are 11 and 23 coprime? 11 and 23 are coprime; their gcd is 1.
+13 и 27 взаимно просты; их нод равен 1.
+15 and 31 are coprime; their gcd is 1.
+взаимно ли просты 16 и 33? 16 и 33 взаимно просты; их нод равен 1.
+are 18 and 37 coprime? 18 and 37 are coprime; their gcd is 1.
+20 и 41 взаимно просты; их нод равен 1.
+22 and 45 are coprime; their gcd is 1.
+взаимно ли просты 23 и 47? 23 и 47 взаимно просты; их нод равен 1.
+are 5 and 11 coprime? 5 and 11 are coprime; their gcd is 1.
+7 и 15 взаимно просты; их нод равен 1.
+9 and 19 are coprime; their gcd is 1.
+взаимно ли просты 10 и 21? 10 и 21 взаимно просты; их нод равен 1.
+are 12 and 25 coprime? 12 and 25 are coprime; their gcd is 1.
+14 и 29 взаимно просты; их нод равен 1.
+16 and 33 are coprime; their gcd is 1.
+взаимно ли просты 17 и 35? 17 и 35 взаимно просты; их нод равен 1.
+are 19 and 39 coprime? 19 and 39 are coprime; their gcd is 1.
+21 и 43 взаимно просты; их нод равен 1.
 23 and 47 are coprime; their gcd is 1.
+взаимно ли просты 4 и 9? 4 и 9 взаимно просты; их нод равен 1.
+are 6 and 13 coprime? 6 and 13 are coprime; their gcd is 1.
+8 и 17 взаимно просты; их нод равен 1.
+10 and 21 are coprime; their gcd is 1.
+взаимно ли просты 11 и 23? 11 и 23 взаимно просты; их нод равен 1.
+are 13 and 27 coprime? 13 and 27 are coprime; their gcd is 1.
+15 и 31 взаимно просты; их нод равен 1.
+17 and 35 are coprime; their gcd is 1.
+взаимно ли просты 18 и 37? 18 и 37 взаимно просты; их нод равен 1.
+are 20 and 41 coprime? 20 and 41 are coprime; their gcd is 1.
+22 и 45 взаимно просты; их нод равен 1.
+4 and 9 are coprime; their gcd is 1.
+взаимно ли просты 5 и 11? 5 и 11 взаимно просты; их нод равен 1.
+are 7 and 15 coprime? 7 and 15 are coprime; their gcd is 1.
+9 и 19 взаимно просты; их нод равен 1.
+11 and 23 are coprime; their gcd is 1.
+взаимно ли просты 12 и 25? 12 и 25 взаимно просты; их нод равен 1.
+are 14 and 29 coprime? 14 and 29 are coprime; their gcd is 1.
+16 и 33 взаимно просты; их нод равен 1.
+18 and 37 are coprime; their gcd is 1.
+взаимно ли просты 19 и 39? 19 и 39 взаимно просты; их нод равен 1.
+are 21 and 43 coprime? 21 and 43 are coprime; their gcd is 1.
+23 и 47 взаимно просты; их нод равен 1.
+5 and 11 are coprime; their gcd is 1.
+взаимно ли просты 6 и 13? 6 и 13 взаимно просты; их нод равен 1.
+are 8 and 17 coprime? 8 and 17 are coprime; their gcd is 1.
+10 и 21 взаимно просты; их нод равен 1.
+12 and 25 are coprime; their gcd is 1.
+взаимно ли просты 13 и 27? 13 и 27 взаимно просты; их нод равен 1.
+are 15 and 31 coprime? 15 and 31 are coprime; their gcd is 1.
+17 и 35 взаимно просты; их нод равен 1.
+19 and 39 are coprime; their gcd is 1.
+взаимно ли просты 20 и 41? 20 и 41 взаимно просты; их нод равен 1.
+are 22 and 45 coprime? 22 and 45 are coprime; their gcd is 1.
+4 и 9 взаимно просты; их нод равен 1.
+6 and 13 are coprime; their gcd is 1.
+взаимно ли просты 7 и 15? 7 и 15 взаимно просты; их нод равен 1.
+are 9 and 19 coprime? 9 and 19 are coprime; their gcd is 1.
+11 и 23 взаимно просты; их нод равен 1.
+13 and 27 are coprime; their gcd is 1.
+взаимно ли просты 14 и 29? 14 и 29 взаимно просты; их нод равен 1.
+are 16 and 33 coprime? 16 and 33 are coprime; their gcd is 1.
+18 и 37 взаимно просты; их нод равен 1.
+20 and 41 are coprime; their gcd is 1.
+взаимно ли просты 21 и 43? 21 и 43 взаимно просты; их нод равен 1.
+are 23 and 47 coprime? 23 and 47 are coprime; their gcd is 1.
 
-3 is prime; its divisors are 1 and 3.
-8 составное; 8 = 2 × 4.
-14 is not prime; 14 = 2 × 7.
-19 простое; его делители — 1 и 19.
-25 is not prime; 25 = 5 × 5.
-2 простое; его делители — 1 и 2.
-8 is not prime; 8 = 2 × 4.
-13 простое; его делители — 1 и 13.
-19 is prime; its divisors are 1 and 19.
-24 составное; 24 = 2 × 12.
-2 is prime; its divisors are 1 and 2.
-7 простое; его делители — 1 и 7.
-13 is prime; its divisors are 1 and 13.
-18 составное; 18 = 2 × 9.
-24 is not prime; 24 = 2 × 12.
-29 простое; его делители — 1 и 29.
-7 is prime; its divisors are 1 and 7.
-12 составное; 12 = 2 × 6.
-18 is not prime; 18 = 2 × 9.
-23 простое; его делители — 1 и 23.
-29 is prime; its divisors are 1 and 29.
-6 составное; 6 = 2 × 3.
-12 is not prime; 12 = 2 × 6.
-17 простое; его делители — 1 и 17.
-23 is prime; its divisors are 1 and 23.
-28 составное; 28 = 2 × 14.
-6 is not prime; 6 = 2 × 3.
-11 простое; его делители — 1 и 11.
-17 is prime; its divisors are 1 and 17.
-22 составное; 22 = 2 × 11.
-28 is not prime; 28 = 2 × 14.
+is 2 prime? 2 is prime; its divisors are 1 and 2.
 5 простое; его делители — 1 и 5.
-11 is prime; its divisors are 1 and 11.
+8 is not prime; 8 = 2 × 4.
+простое ли 10? 10 составное; 10 = 2 × 5.
+is 13 prime? 13 is prime; its divisors are 1 and 13.
 16 составное; 16 = 2 × 8.
-22 is not prime; 22 = 2 × 11.
+19 is prime; its divisors are 1 and 19.
+простое ли 21? 21 составное; 21 = 3 × 7.
+is 24 prime? 24 is not prime; 24 = 2 × 12.
 27 составное; 27 = 3 × 9.
-5 is prime; its divisors are 1 and 5.
+2 is prime; its divisors are 1 and 2.
+простое ли 4? 4 составное; 4 = 2 × 2.
+is 7 prime? 7 is prime; its divisors are 1 and 7.
 10 составное; 10 = 2 × 5.
-16 is not prime; 16 = 2 × 8.
+13 is prime; its divisors are 1 and 13.
+простое ли 15? 15 составное; 15 = 3 × 5.
+is 18 prime? 18 is not prime; 18 = 2 × 9.
 21 составное; 21 = 3 × 7.
-27 is not prime; 27 = 3 × 9.
+24 is not prime; 24 = 2 × 12.
+простое ли 26? 26 составное; 26 = 2 × 13.
+is 29 prime? 29 is prime; its divisors are 1 and 29.
 4 составное; 4 = 2 × 2.
-10 is not prime; 10 = 2 × 5.
+7 is prime; its divisors are 1 and 7.
+простое ли 9? 9 составное; 9 = 3 × 3.
+is 12 prime? 12 is not prime; 12 = 2 × 6.
 15 составное; 15 = 3 × 5.
-21 is not prime; 21 = 3 × 7.
+18 is not prime; 18 = 2 × 9.
+простое ли 20? 20 составное; 20 = 2 × 10.
+is 23 prime? 23 is prime; its divisors are 1 and 23.
 26 составное; 26 = 2 × 13.
-4 is not prime; 4 = 2 × 2.
+29 is prime; its divisors are 1 and 29.
+простое ли 3? 3 простое; его делители — 1 и 3.
+is 6 prime? 6 is not prime; 6 = 2 × 3.
 9 составное; 9 = 3 × 3.
-15 is not prime; 15 = 3 × 5.
+12 is not prime; 12 = 2 × 6.
+простое ли 14? 14 составное; 14 = 2 × 7.
+is 17 prime? 17 is prime; its divisors are 1 and 17.
 20 составное; 20 = 2 × 10.
-26 is not prime; 26 = 2 × 13.
+23 is prime; its divisors are 1 and 23.
+простое ли 25? 25 составное; 25 = 5 × 5.
+is 28 prime? 28 is not prime; 28 = 2 × 14.
 3 простое; его делители — 1 и 3.
-9 is not prime; 9 = 3 × 3.
+6 is not prime; 6 = 2 × 3.
+простое ли 8? 8 составное; 8 = 2 × 4.
+is 11 prime? 11 is prime; its divisors are 1 and 11.
 14 составное; 14 = 2 × 7.
-20 is not prime; 20 = 2 × 10.
+17 is prime; its divisors are 1 and 17.
+простое ли 19? 19 простое; его делители — 1 и 19.
+is 22 prime? 22 is not prime; 22 = 2 × 11.
 25 составное; 25 = 5 × 5.
+28 is not prime; 28 = 2 × 14.
+простое ли 2? 2 простое; его делители — 1 и 2.
+is 5 prime? 5 is prime; its divisors are 1 and 5.
+8 составное; 8 = 2 × 4.
+11 is prime; its divisors are 1 and 11.
+простое ли 13? 13 простое; его делители — 1 и 13.
+is 16 prime? 16 is not prime; 16 = 2 × 8.
+19 простое; его делители — 1 и 19.
+22 is not prime; 22 = 2 × 11.
+простое ли 24? 24 составное; 24 = 2 × 12.
+is 27 prime? 27 is not prime; 27 = 3 × 9.
+2 простое; его делители — 1 и 2.
+5 is prime; its divisors are 1 and 5.
+простое ли 7? 7 простое; его делители — 1 и 7.
+is 10 prime? 10 is not prime; 10 = 2 × 5.
+13 простое; его делители — 1 и 13.
+16 is not prime; 16 = 2 × 8.
+простое ли 18? 18 составное; 18 = 2 × 9.
+is 21 prime? 21 is not prime; 21 = 3 × 7.
+24 составное; 24 = 2 × 12.
+27 is not prime; 27 = 3 × 9.
+простое ли 29? 29 простое; его делители — 1 и 29.
+is 4 prime? 4 is not prime; 4 = 2 × 2.
+7 простое; его делители — 1 и 7.
+10 is not prime; 10 = 2 × 5.
+простое ли 12? 12 составное; 12 = 2 × 6.
+is 15 prime? 15 is not prime; 15 = 3 × 5.
+18 составное; 18 = 2 × 9.
+21 is not prime; 21 = 3 × 7.
+простое ли 23? 23 простое; его делители — 1 и 23.
+is 26 prime? 26 is not prime; 26 = 2 × 13.
+29 простое; его делители — 1 и 29.
+4 is not prime; 4 = 2 × 2.
+простое ли 6? 6 составное; 6 = 2 × 3.
+is 9 prime? 9 is not prime; 9 = 3 × 3.
+12 составное; 12 = 2 × 6.
+15 is not prime; 15 = 3 × 5.
+простое ли 17? 17 простое; его делители — 1 и 17.
+is 20 prime? 20 is not prime; 20 = 2 × 10.
+23 простое; его делители — 1 и 23.
+26 is not prime; 26 = 2 × 13.
+простое ли 28? 28 составное; 28 = 2 × 14.
+is 3 prime? 3 is prime; its divisors are 1 and 3.
+6 составное; 6 = 2 × 3.
+9 is not prime; 9 = 3 × 3.
+простое ли 11? 11 простое; его делители — 1 и 11.
+is 14 prime? 14 is not prime; 14 = 2 × 7.
+17 простое; его делители — 1 и 17.
+20 is not prime; 20 = 2 × 10.
+простое ли 22? 22 составное; 22 = 2 × 11.
+is 25 prime? 25 is not prime; 25 = 5 × 5.
+28 составное; 28 = 2 × 14.
+3 is prime; its divisors are 1 and 3.
+простое ли 5? 5 простое; его делители — 1 и 5.
+is 8 prime? 8 is not prime; 8 = 2 × 4.
+11 простое; его делители — 1 и 11.
+14 is not prime; 14 = 2 × 7.
+простое ли 16? 16 составное; 16 = 2 × 8.
+is 19 prime? 19 is prime; its divisors are 1 and 19.
+22 составное; 22 = 2 × 11.
+25 is not prime; 25 = 5 × 5.
+простое ли 27? 27 составное; 27 = 3 × 9.
 
-5 factorises into 5.
-10 раскладывается в 2 × 5.
-16 factorises into 2 × 2 × 2 × 2.
-21 раскладывается в 3 × 7.
-27 factorises into 3 × 3 × 3.
-32 раскладывается в 2 × 2 × 2 × 2 × 2.
-38 factorises into 2 × 19.
+is 1 prime? 1 is neither prime nor composite: its only divisor is 1.
+простое ли 1? 1 ни простое, ни составное: его единственный делитель — 1.
+
+what does 4 factorise into? 4 factorises into 2 × 2.
 7 раскладывается в 7.
-13 factorises into 13.
-18 раскладывается в 2 × 3 × 3.
-24 factorises into 2 × 2 × 2 × 3.
-29 раскладывается в 29.
-35 factorises into 5 × 7.
-4 раскладывается в 2 × 2.
 10 factorises into 2 × 5.
-15 раскладывается в 3 × 5.
+во что раскладывается 12? 12 раскладывается в 2 × 2 × 3.
+what does 15 factorise into? 15 factorises into 3 × 5.
+18 раскладывается в 2 × 3 × 3.
 21 factorises into 3 × 7.
-26 раскладывается в 2 × 13.
+во что раскладывается 23? 23 раскладывается в 23.
+what does 26 factorise into? 26 factorises into 2 × 13.
+29 раскладывается в 29.
 32 factorises into 2 × 2 × 2 × 2 × 2.
-37 раскладывается в 37.
+во что раскладывается 34? 34 раскладывается в 2 × 17.
+what does 37 factorise into? 37 factorises into 37.
+4 раскладывается в 2 × 2.
 7 factorises into 7.
-12 раскладывается в 2 × 2 × 3.
+во что раскладывается 9? 9 раскладывается в 3 × 3.
+what does 12 factorise into? 12 factorises into 2 × 2 × 3.
+15 раскладывается в 3 × 5.
 18 factorises into 2 × 3 × 3.
-23 раскладывается в 23.
+во что раскладывается 20? 20 раскладывается в 2 × 2 × 5.
+what does 23 factorise into? 23 factorises into 23.
+26 раскладывается в 2 × 13.
 29 factorises into 29.
-34 раскладывается в 2 × 17.
+во что раскладывается 31? 31 раскладывается в 31.
+what does 34 factorise into? 34 factorises into 2 × 17.
+37 раскладывается в 37.
 4 factorises into 2 × 2.
-9 раскладывается в 3 × 3.
+во что раскладывается 6? 6 раскладывается в 2 × 3.
+what does 9 factorise into? 9 factorises into 3 × 3.
+12 раскладывается в 2 × 2 × 3.
 15 factorises into 3 × 5.
-20 раскладывается в 2 × 2 × 5.
+во что раскладывается 17? 17 раскладывается в 17.
+what does 20 factorise into? 20 factorises into 2 × 2 × 5.
+23 раскладывается в 23.
 26 factorises into 2 × 13.
-31 раскладывается в 31.
+во что раскладывается 28? 28 раскладывается в 2 × 2 × 7.
+what does 31 factorise into? 31 factorises into 31.
+34 раскладывается в 2 × 17.
 37 factorises into 37.
-6 раскладывается в 2 × 3.
+во что раскладывается 39? 39 раскладывается в 3 × 13.
+what does 6 factorise into? 6 factorises into 2 × 3.
+9 раскладывается в 3 × 3.
 12 factorises into 2 × 2 × 3.
-17 раскладывается в 17.
+во что раскладывается 14? 14 раскладывается в 2 × 7.
+what does 17 factorise into? 17 factorises into 17.
+20 раскладывается в 2 × 2 × 5.
 23 factorises into 23.
-28 раскладывается в 2 × 2 × 7.
+во что раскладывается 25? 25 раскладывается в 5 × 5.
+what does 28 factorise into? 28 factorises into 2 × 2 × 7.
+31 раскладывается в 31.
 34 factorises into 2 × 17.
-39 раскладывается в 3 × 13.
+во что раскладывается 36? 36 раскладывается в 2 × 2 × 3 × 3.
+what does 39 factorise into? 39 factorises into 3 × 13.
+6 раскладывается в 2 × 3.
 9 factorises into 3 × 3.
-14 раскладывается в 2 × 7.
+во что раскладывается 11? 11 раскладывается в 11.
+what does 14 factorise into? 14 factorises into 2 × 7.
+17 раскладывается в 17.
 20 factorises into 2 × 2 × 5.
-25 раскладывается в 5 × 5.
+во что раскладывается 22? 22 раскладывается в 2 × 11.
+what does 25 factorise into? 25 factorises into 5 × 5.
+28 раскладывается в 2 × 2 × 7.
 31 factorises into 31.
-36 раскладывается в 2 × 2 × 3 × 3.
+во что раскладывается 33? 33 раскладывается в 3 × 11.
+what does 36 factorise into? 36 factorises into 2 × 2 × 3 × 3.
+39 раскладывается в 3 × 13.
 6 factorises into 2 × 3.
-11 раскладывается в 11.
+во что раскладывается 8? 8 раскладывается в 2 × 2 × 2.
+what does 11 factorise into? 11 factorises into 11.
+14 раскладывается в 2 × 7.
 17 factorises into 17.
-22 раскладывается в 2 × 11.
+во что раскладывается 19? 19 раскладывается в 19.
+what does 22 factorise into? 22 factorises into 2 × 11.
+25 раскладывается в 5 × 5.
 28 factorises into 2 × 2 × 7.
-33 раскладывается в 3 × 11.
+во что раскладывается 30? 30 раскладывается в 2 × 3 × 5.
+what does 33 factorise into? 33 factorises into 3 × 11.
+36 раскладывается в 2 × 2 × 3 × 3.
 39 factorises into 3 × 13.
-8 раскладывается в 2 × 2 × 2.
+во что раскладывается 5? 5 раскладывается в 5.
+what does 8 factorise into? 8 factorises into 2 × 2 × 2.
+11 раскладывается в 11.
 14 factorises into 2 × 7.
-19 раскладывается в 19.
+во что раскладывается 16? 16 раскладывается в 2 × 2 × 2 × 2.
+what does 19 factorise into? 19 factorises into 19.
+22 раскладывается в 2 × 11.
 25 factorises into 5 × 5.
-30 раскладывается в 2 × 3 × 5.
+во что раскладывается 27? 27 раскладывается в 3 × 3 × 3.
+what does 30 factorise into? 30 factorises into 2 × 3 × 5.
+33 раскладывается в 3 × 11.
 36 factorises into 2 × 2 × 3 × 3.
-5 раскладывается в 5.
+во что раскладывается 38? 38 раскладывается в 2 × 19.
+what does 5 factorise into? 5 factorises into 5.
+8 раскладывается в 2 × 2 × 2.
 11 factorises into 11.
-16 раскладывается в 2 × 2 × 2 × 2.
+во что раскладывается 13? 13 раскладывается в 13.
+what does 16 factorise into? 16 factorises into 2 × 2 × 2 × 2.
+19 раскладывается в 19.
 22 factorises into 2 × 11.
-27 раскладывается в 3 × 3 × 3.
+во что раскладывается 24? 24 раскладывается в 2 × 2 × 2 × 3.
+what does 27 factorise into? 27 factorises into 3 × 3 × 3.
+30 раскладывается в 2 × 3 × 5.
 33 factorises into 3 × 11.
-38 раскладывается в 2 × 19.
+во что раскладывается 35? 35 раскладывается в 5 × 7.
+what does 38 factorise into? 38 factorises into 2 × 19.
+5 раскладывается в 5.
 8 factorises into 2 × 2 × 2.
-13 раскладывается в 13.
+во что раскладывается 10? 10 раскладывается в 2 × 5.
+what does 13 factorise into? 13 factorises into 13.
+16 раскладывается в 2 × 2 × 2 × 2.
 19 factorises into 19.
-24 раскладывается в 2 × 2 × 2 × 3.
+во что раскладывается 21? 21 раскладывается в 3 × 7.
+what does 24 factorise into? 24 factorises into 2 × 2 × 2 × 3.
+27 раскладывается в 3 × 3 × 3.
 30 factorises into 2 × 3 × 5.
+во что раскладывается 32? 32 раскладывается в 2 × 2 × 2 × 2 × 2.
+what does 35 factorise into? 35 factorises into 5 × 7.
+38 раскладывается в 2 × 19.
+5 factorises into 5.
+во что раскладывается 7? 7 раскладывается в 7.
+what does 10 factorise into? 10 factorises into 2 × 5.
+13 раскладывается в 13.
+16 factorises into 2 × 2 × 2 × 2.
+во что раскладывается 18? 18 раскладывается в 2 × 3 × 3.
+what does 21 factorise into? 21 factorises into 3 × 7.
+24 раскладывается в 2 × 2 × 2 × 3.
+27 factorises into 3 × 3 × 3.
+во что раскладывается 29? 29 раскладывается в 29.
+what does 32 factorise into? 32 factorises into 2 × 2 × 2 × 2 × 2.
 35 раскладывается в 5 × 7.
+38 factorises into 2 × 19.
+во что раскладывается 4? 4 раскладывается в 2 × 2.
+what does 7 factorise into? 7 factorises into 7.
+10 раскладывается в 2 × 5.
+13 factorises into 13.
+во что раскладывается 15? 15 раскладывается в 3 × 5.
+what does 18 factorise into? 18 factorises into 2 × 3 × 3.
+21 раскладывается в 3 × 7.
+24 factorises into 2 × 2 × 2 × 3.
+во что раскладывается 26? 26 раскладывается в 2 × 13.
+what does 29 factorise into? 29 factorises into 29.
+32 раскладывается в 2 × 2 × 2 × 2 × 2.
+35 factorises into 5 × 7.
+во что раскладывается 37? 37 раскладывается в 37.
 
-the divisors of 7 are 1 7.
-делители 12 — это 1 2 3 4 6 12.
-the divisors of 18 are 1 2 3 6 9 18.
-делители 23 — это 1 23.
-the divisors of 29 are 1 29.
-делители 10 — это 1 2 5 10.
-the divisors of 16 are 1 2 4 8 16.
-делители 21 — это 1 3 7 21.
-the divisors of 27 are 1 3 9 27.
-делители 8 — это 1 2 4 8.
-the divisors of 14 are 1 2 7 14.
-делители 19 — это 1 19.
-the divisors of 25 are 1 5 25.
-делители 6 — это 1 2 3 6.
-the divisors of 12 are 1 2 3 4 6 12.
-делители 17 — это 1 17.
-the divisors of 23 are 1 23.
-делители 28 — это 1 2 4 7 14 28.
-the divisors of 10 are 1 2 5 10.
-делители 15 — это 1 3 5 15.
-the divisors of 21 are 1 3 7 21.
-делители 26 — это 1 2 13 26.
-the divisors of 8 are 1 2 4 8.
-делители 13 — это 1 13.
-the divisors of 19 are 1 19.
-делители 24 — это 1 2 3 4 6 8 12 24.
-the divisors of 6 are 1 2 3 6.
-делители 11 — это 1 11.
-the divisors of 17 are 1 17.
-делители 22 — это 1 2 11 22.
-the divisors of 28 are 1 2 4 7 14 28.
+what are the divisors of 6? the divisors of 6 are 1 2 3 6.
 делители 9 — это 1 3 9.
-the divisors of 15 are 1 3 5 15.
+the divisors of 12 are 1 2 3 4 6 12.
+каковы делители 14? делители 14 — это 1 2 7 14.
+what are the divisors of 17? the divisors of 17 are 1 17.
 делители 20 — это 1 2 4 5 10 20.
-the divisors of 26 are 1 2 13 26.
+the divisors of 23 are 1 23.
+каковы делители 25? делители 25 — это 1 5 25.
+what are the divisors of 28? the divisors of 28 are 1 2 4 7 14 28.
 делители 7 — это 1 7.
-the divisors of 13 are 1 13.
+the divisors of 10 are 1 2 5 10.
+каковы делители 12? делители 12 — это 1 2 3 4 6 12.
+what are the divisors of 15? the divisors of 15 are 1 3 5 15.
 делители 18 — это 1 2 3 6 9 18.
-the divisors of 24 are 1 2 3 4 6 8 12 24.
+the divisors of 21 are 1 3 7 21.
+каковы делители 23? делители 23 — это 1 23.
+what are the divisors of 26? the divisors of 26 are 1 2 13 26.
 делители 29 — это 1 29.
-the divisors of 11 are 1 11.
+the divisors of 8 are 1 2 4 8.
+каковы делители 10? делители 10 — это 1 2 5 10.
+what are the divisors of 13? the divisors of 13 are 1 13.
 делители 16 — это 1 2 4 8 16.
-the divisors of 22 are 1 2 11 22.
+the divisors of 19 are 1 19.
+каковы делители 21? делители 21 — это 1 3 7 21.
+what are the divisors of 24? the divisors of 24 are 1 2 3 4 6 8 12 24.
 делители 27 — это 1 3 9 27.
-the divisors of 9 are 1 3 9.
+the divisors of 6 are 1 2 3 6.
+каковы делители 8? делители 8 — это 1 2 4 8.
+what are the divisors of 11? the divisors of 11 are 1 11.
 делители 14 — это 1 2 7 14.
-the divisors of 20 are 1 2 4 5 10 20.
+the divisors of 17 are 1 17.
+каковы делители 19? делители 19 — это 1 19.
+what are the divisors of 22? the divisors of 22 are 1 2 11 22.
 делители 25 — это 1 5 25.
+the divisors of 28 are 1 2 4 7 14 28.
+каковы делители 6? делители 6 — это 1 2 3 6.
+what are the divisors of 9? the divisors of 9 are 1 3 9.
+делители 12 — это 1 2 3 4 6 12.
+the divisors of 15 are 1 3 5 15.
+каковы делители 17? делители 17 — это 1 17.
+what are the divisors of 20? the divisors of 20 are 1 2 4 5 10 20.
+делители 23 — это 1 23.
+the divisors of 26 are 1 2 13 26.
+каковы делители 28? делители 28 — это 1 2 4 7 14 28.
+what are the divisors of 7? the divisors of 7 are 1 7.
+делители 10 — это 1 2 5 10.
+the divisors of 13 are 1 13.
+каковы делители 15? делители 15 — это 1 3 5 15.
+what are the divisors of 18? the divisors of 18 are 1 2 3 6 9 18.
+делители 21 — это 1 3 7 21.
+the divisors of 24 are 1 2 3 4 6 8 12 24.
+каковы делители 26? делители 26 — это 1 2 13 26.
+what are the divisors of 29? the divisors of 29 are 1 29.
+делители 8 — это 1 2 4 8.
+the divisors of 11 are 1 11.
+каковы делители 13? делители 13 — это 1 13.
+what are the divisors of 16? the divisors of 16 are 1 2 4 8 16.
+делители 19 — это 1 19.
+the divisors of 22 are 1 2 11 22.
+каковы делители 24? делители 24 — это 1 2 3 4 6 8 12 24.
+what are the divisors of 27? the divisors of 27 are 1 3 9 27.
+делители 6 — это 1 2 3 6.
+the divisors of 9 are 1 3 9.
+каковы делители 11? делители 11 — это 1 11.
+what are the divisors of 14? the divisors of 14 are 1 2 7 14.
+делители 17 — это 1 17.
+the divisors of 20 are 1 2 4 5 10 20.
+каковы делители 22? делители 22 — это 1 2 11 22.
+what are the divisors of 25? the divisors of 25 are 1 5 25.
+делители 28 — это 1 2 4 7 14 28.
+the divisors of 7 are 1 7.
+каковы делители 9? делители 9 — это 1 3 9.
+what are the divisors of 12? the divisors of 12 are 1 2 3 4 6 12.
+делители 15 — это 1 3 5 15.
+the divisors of 18 are 1 2 3 6 9 18.
+каковы делители 20? делители 20 — это 1 2 4 5 10 20.
+what are the divisors of 23? the divisors of 23 are 1 23.
+делители 26 — это 1 2 13 26.
+the divisors of 29 are 1 29.
+каковы делители 7? делители 7 — это 1 7.
+what are the divisors of 10? the divisors of 10 are 1 2 5 10.
+делители 13 — это 1 13.
+the divisors of 16 are 1 2 4 8 16.
+каковы делители 18? делители 18 — это 1 2 3 6 9 18.
+what are the divisors of 21? the divisors of 21 are 1 3 7 21.
+делители 24 — это 1 2 3 4 6 8 12 24.
+the divisors of 27 are 1 3 9 27.
+каковы делители 29? делители 29 — это 1 29.
+what are the divisors of 8? the divisors of 8 are 1 2 4 8.
+делители 11 — это 1 11.
+the divisors of 14 are 1 2 7 14.
+каковы делители 16? делители 16 — это 1 2 4 8 16.
+what are the divisors of 19? the divisors of 19 are 1 19.
+делители 22 — это 1 2 11 22.
+the divisors of 25 are 1 5 25.
+каковы делители 27? делители 27 — это 1 3 9 27.
 
 8 and 0 are congruent modulo 2.
-17 по модулю 5 равно 2.
-26 mod 8 = 2.
-32 и 2 сравнимы по модулю 3.
-41 and 5 are congruent modulo 6.
-50 по модулю 2 равно 0.
-59 mod 5 = 4.
-65 и 2 сравнимы по модулю 7.
-74 and 2 are congruent modulo 3.
-11 по модулю 3 равно 2.
-20 mod 6 = 2.
-26 и 2 сравнимы по модулю 8.
-35 and 3 are congruent modulo 4.
-44 по модулю 7 равно 2.
-53 mod 3 = 2.
-59 и 4 сравнимы по модулю 5.
-68 and 4 are congruent modulo 8.
-77 по модулю 4 равно 1.
-14 mod 4 = 2.
-20 и 2 сравнимы по модулю 6.
-29 and 1 are congruent modulo 2.
-38 по модулю 5 равно 3.
-47 mod 8 = 7.
-53 и 2 сравнимы по модулю 3.
-62 and 2 are congruent modulo 6.
-71 по модулю 2 равно 1.
-8 mod 2 = 0.
-14 и 2 сравнимы по модулю 4.
-23 and 2 are congruent modulo 7.
-32 по модулю 3 равно 2.
-41 mod 6 = 5.
-47 и 7 сравнимы по модулю 8.
-56 and 0 are congruent modulo 4.
-65 по модулю 7 равно 2.
-74 mod 3 = 2.
-8 и 0 сравнимы по модулю 2.
-17 and 2 are congruent modulo 5.
-26 по модулю 8 равно 2.
-35 mod 4 = 3.
-41 и 5 сравнимы по модулю 6.
-50 and 0 are congruent modulo 2.
-59 по модулю 5 равно 4.
-68 mod 8 = 4.
-74 и 2 сравнимы по модулю 3.
-11 and 2 are congruent modulo 3.
-20 по модулю 6 равно 2.
-29 mod 2 = 1.
-35 и 3 сравнимы по модулю 4.
-44 and 2 are congruent modulo 7.
-53 по модулю 3 равно 2.
-62 mod 6 = 2.
-68 и 4 сравнимы по модулю 8.
-77 and 1 are congruent modulo 4.
-14 по модулю 4 равно 2.
-23 mod 7 = 2.
-29 и 1 сравнимы по модулю 2.
-38 and 3 are congruent modulo 5.
-47 по модулю 8 равно 7.
-56 mod 4 = 0.
-62 и 2 сравнимы по модулю 6.
-71 and 1 are congruent modulo 2.
-8 по модулю 2 равно 0.
+чему равно 11 по модулю 3? 11 по модулю 3 равно 2.
 17 mod 5 = 2.
-23 и 2 сравнимы по модулю 7.
-32 and 2 are congruent modulo 3.
-41 по модулю 6 равно 5.
-50 mod 2 = 0.
-56 и 0 сравнимы по модулю 4.
-65 and 2 are congruent modulo 7.
-74 по модулю 3 равно 2.
-11 mod 3 = 2.
-17 и 2 сравнимы по модулю 5.
-26 and 2 are congruent modulo 8.
-35 по модулю 4 равно 3.
-44 mod 7 = 2.
-50 и 0 сравнимы по модулю 2.
-59 and 4 are congruent modulo 5.
-68 по модулю 8 равно 4.
-77 mod 4 = 1.
-11 и 2 сравнимы по модулю 3.
-20 and 2 are congruent modulo 6.
+20 и 2 сравнимы по модулю 6.
+are 23 and 2 congruent modulo 7? 23 and 2 are congruent modulo 7.
 29 по модулю 2 равно 1.
-38 mod 5 = 3.
-44 и 2 сравнимы по модулю 7.
-53 and 2 are congruent modulo 3.
+what is 32 mod 3? 32 mod 3 = 2.
+сравнимы ли 35 и 3 по модулю 4? 35 и 3 сравнимы по модулю 4.
+41 and 5 are congruent modulo 6.
+чему равно 44 по модулю 7? 44 по модулю 7 равно 2.
+50 mod 2 = 0.
+53 и 2 сравнимы по модулю 3.
+are 56 and 0 congruent modulo 4? 56 and 0 are congruent modulo 4.
 62 по модулю 6 равно 2.
-71 mod 2 = 1.
-77 и 1 сравнимы по модулю 4.
-14 and 2 are congruent modulo 4.
+what is 65 mod 7? 65 mod 7 = 2.
+сравнимы ли 68 и 4 по модулю 8? 68 и 4 сравнимы по модулю 8.
+74 and 2 are congruent modulo 3.
+чему равно 77 по модулю 4? 77 по модулю 4 равно 1.
+11 mod 3 = 2.
+14 и 2 сравнимы по модулю 4.
+are 17 and 2 congruent modulo 5? 17 and 2 are congruent modulo 5.
 23 по модулю 7 равно 2.
-32 mod 3 = 2.
-38 и 3 сравнимы по модулю 5.
-47 and 7 are congruent modulo 8.
+what is 26 mod 8? 26 mod 8 = 2.
+сравнимы ли 29 и 1 по модулю 2? 29 и 1 сравнимы по модулю 2.
+35 and 3 are congruent modulo 4.
+чему равно 38 по модулю 5? 38 по модулю 5 равно 3.
+44 mod 7 = 2.
+47 и 7 сравнимы по модулю 8.
+are 50 and 0 congruent modulo 2? 50 and 0 are congruent modulo 2.
 56 по модулю 4 равно 0.
+what is 59 mod 5? 59 mod 5 = 4.
+сравнимы ли 62 и 2 по модулю 6? 62 и 2 сравнимы по модулю 6.
+68 and 4 are congruent modulo 8.
+чему равно 71 по модулю 2? 71 по модулю 2 равно 1.
+77 mod 4 = 1.
+8 и 0 сравнимы по модулю 2.
+are 11 and 2 congruent modulo 3? 11 and 2 are congruent modulo 3.
+17 по модулю 5 равно 2.
+what is 20 mod 6? 20 mod 6 = 2.
+сравнимы ли 23 и 2 по модулю 7? 23 и 2 сравнимы по модулю 7.
+29 and 1 are congruent modulo 2.
+чему равно 32 по модулю 3? 32 по модулю 3 равно 2.
+38 mod 5 = 3.
+41 и 5 сравнимы по модулю 6.
+are 44 and 2 congruent modulo 7? 44 and 2 are congruent modulo 7.
+50 по модулю 2 равно 0.
+what is 53 mod 3? 53 mod 3 = 2.
+сравнимы ли 56 и 0 по модулю 4? 56 и 0 сравнимы по модулю 4.
+62 and 2 are congruent modulo 6.
+чему равно 65 по модулю 7? 65 по модулю 7 равно 2.
+71 mod 2 = 1.
+74 и 2 сравнимы по модулю 3.
+are 77 and 1 congruent modulo 4? 77 and 1 are congruent modulo 4.
+11 по модулю 3 равно 2.
+what is 14 mod 4? 14 mod 4 = 2.
+сравнимы ли 17 и 2 по модулю 5? 17 и 2 сравнимы по модулю 5.
+23 and 2 are congruent modulo 7.
+чему равно 26 по модулю 8? 26 по модулю 8 равно 2.
+32 mod 3 = 2.
+35 и 3 сравнимы по модулю 4.
+are 38 and 3 congruent modulo 5? 38 and 3 are congruent modulo 5.
+44 по модулю 7 равно 2.
+what is 47 mod 8? 47 mod 8 = 7.
+сравнимы ли 50 и 0 по модулю 2? 50 и 0 сравнимы по модулю 2.
+56 and 0 are congruent modulo 4.
+чему равно 59 по модулю 5? 59 по модулю 5 равно 4.
 65 mod 7 = 2.
+68 и 4 сравнимы по модулю 8.
+are 71 and 1 congruent modulo 2? 71 and 1 are congruent modulo 2.
+77 по модулю 4 равно 1.
+what is 8 mod 2? 8 mod 2 = 0.
+сравнимы ли 11 и 2 по модулю 3? 11 и 2 сравнимы по модулю 3.
+17 and 2 are congruent modulo 5.
+чему равно 20 по модулю 6? 20 по модулю 6 равно 2.
+26 mod 8 = 2.
+29 и 1 сравнимы по модулю 2.
+are 32 and 2 congruent modulo 3? 32 and 2 are congruent modulo 3.
+38 по модулю 5 равно 3.
+what is 41 mod 6? 41 mod 6 = 5.
+сравнимы ли 44 и 2 по модулю 7? 44 и 2 сравнимы по модулю 7.
+50 and 0 are congruent modulo 2.
+чему равно 53 по модулю 3? 53 по модулю 3 равно 2.
+59 mod 5 = 4.
+62 и 2 сравнимы по модулю 6.
+are 65 and 2 congruent modulo 7? 65 and 2 are congruent modulo 7.
+71 по модулю 2 равно 1.
+what is 74 mod 3? 74 mod 3 = 2.
+сравнимы ли 77 и 1 по модулю 4? 77 и 1 сравнимы по модулю 4.
+11 and 2 are congruent modulo 3.
+чему равно 14 по модулю 4? 14 по модулю 4 равно 2.
+20 mod 6 = 2.
+23 и 2 сравнимы по модулю 7.
+are 26 and 2 congruent modulo 8? 26 and 2 are congruent modulo 8.
+32 по модулю 3 равно 2.
+what is 35 mod 4? 35 mod 4 = 3.
+сравнимы ли 38 и 3 по модулю 5? 38 и 3 сравнимы по модулю 5.
+44 and 2 are congruent modulo 7.
+чему равно 47 по модулю 8? 47 по модулю 8 равно 7.
+53 mod 3 = 2.
+56 и 0 сравнимы по модулю 4.
+are 59 and 4 congruent modulo 5? 59 and 4 are congruent modulo 5.
+65 по модулю 7 равно 2.
+what is 68 mod 8? 68 mod 8 = 4.
+сравнимы ли 71 и 1 по модулю 2? 71 и 1 сравнимы по модулю 2.
+77 and 1 are congruent modulo 4.
+чему равно 8 по модулю 2? 8 по модулю 2 равно 0.
+14 mod 4 = 2.
+17 и 2 сравнимы по модулю 5.
+are 20 and 2 congruent modulo 6? 20 and 2 are congruent modulo 6.
+26 по модулю 8 равно 2.
+what is 29 mod 2? 29 mod 2 = 1.
+сравнимы ли 32 и 2 по модулю 3? 32 и 2 сравнимы по модулю 3.
+38 and 3 are congruent modulo 5.
+чему равно 41 по модулю 6? 41 по модулю 6 равно 5.
+47 mod 8 = 7.
+50 и 0 сравнимы по модулю 2.
+are 53 and 2 congruent modulo 3? 53 and 2 are congruent modulo 3.
+59 по модулю 5 равно 4.
+what is 62 mod 6? 62 mod 6 = 2.
+сравнимы ли 65 и 2 по модулю 7? 65 и 2 сравнимы по модулю 7.
+71 and 1 are congruent modulo 2.
+чему равно 74 по модулю 3? 74 по модулю 3 равно 2.
+8 mod 2 = 0.
+11 и 2 сравнимы по модулю 3.
+are 14 and 2 congruent modulo 4? 14 and 2 are congruent modulo 4.
+20 по модулю 6 равно 2.
+what is 23 mod 7? 23 mod 7 = 2.
+сравнимы ли 26 и 2 по модулю 8? 26 и 2 сравнимы по модулю 8.
+32 and 2 are congruent modulo 3.
+чему равно 35 по модулю 4? 35 по модулю 4 равно 3.
+41 mod 6 = 5.
+44 и 2 сравнимы по модулю 7.
+are 47 and 7 congruent modulo 8? 47 and 7 are congruent modulo 8.
+53 по модулю 3 равно 2.
+what is 56 mod 4? 56 mod 4 = 0.
+сравнимы ли 59 и 4 по модулю 5? 59 и 4 сравнимы по модулю 5.
+65 and 2 are congruent modulo 7.
+чему равно 68 по модулю 8? 68 по модулю 8 равно 4.
+74 mod 3 = 2.
+77 и 1 сравнимы по модулю 4.
+are 8 and 0 congruent modulo 2? 8 and 0 are congruent modulo 2.
+14 по модулю 4 равно 2.
+what is 17 mod 5? 17 mod 5 = 2.
+сравнимы ли 20 и 2 по модулю 6? 20 и 2 сравнимы по модулю 6.
+26 and 2 are congruent modulo 8.
+чему равно 29 по модулю 2? 29 по модулю 2 равно 1.
+35 mod 4 = 3.
+38 и 3 сравнимы по модулю 5.
+are 41 and 5 congruent modulo 6? 41 and 5 are congruent modulo 6.
+47 по модулю 8 равно 7.
+what is 50 mod 2? 50 mod 2 = 0.
+сравнимы ли 53 и 2 по модулю 3? 53 и 2 сравнимы по модулю 3.
+59 and 4 are congruent modulo 5.
+чему равно 62 по модулю 6? 62 по модулю 6 равно 2.
+68 mod 8 = 4.
 71 и 1 сравнимы по модулю 2.
+are 74 and 2 congruent modulo 3? 74 and 2 are congruent modulo 3.
+8 по модулю 2 равно 0.
+what is 11 mod 3? 11 mod 3 = 2.
+сравнимы ли 14 и 2 по модулю 4? 14 и 2 сравнимы по модулю 4.
+20 and 2 are congruent modulo 6.
+чему равно 23 по модулю 7? 23 по модулю 7 равно 2.
+29 mod 2 = 1.
+32 и 2 сравнимы по модулю 3.
+are 35 and 3 congruent modulo 4? 35 and 3 are congruent modulo 4.
+41 по модулю 6 равно 5.
+what is 44 mod 7? 44 mod 7 = 2.
+сравнимы ли 47 и 7 по модулю 8? 47 и 7 сравнимы по модулю 8.
+53 and 2 are congruent modulo 3.
+чему равно 56 по модулю 4? 56 по модулю 4 равно 0.
+62 mod 6 = 2.
+65 и 2 сравнимы по модулю 7.
+are 68 and 4 congruent modulo 8? 68 and 4 are congruent modulo 8.
+74 по модулю 3 равно 2.
+what is 77 mod 4? 77 mod 4 = 1.
+сравнимы ли 8 и 0 по модулю 2? 8 и 0 сравнимы по модулю 2.
+14 and 2 are congruent modulo 4.
+чему равно 17 по модулю 5? 17 по модулю 5 равно 2.
+23 mod 7 = 2.
+26 и 2 сравнимы по модулю 8.
+are 29 and 1 congruent modulo 2? 29 and 1 are congruent modulo 2.
+35 по модулю 4 равно 3.
+what is 38 mod 5? 38 mod 5 = 3.
+сравнимы ли 41 и 5 по модулю 6? 41 и 5 сравнимы по модулю 6.
+47 and 7 are congruent modulo 8.
+чему равно 50 по модулю 2? 50 по модулю 2 равно 0.
+56 mod 4 = 0.
+59 и 4 сравнимы по модулю 5.
+are 62 and 2 congruent modulo 6? 62 and 2 are congruent modulo 6.
+68 по модулю 8 равно 4.
+what is 71 mod 2? 71 mod 2 = 1.
+сравнимы ли 74 и 2 по модулю 3? 74 и 2 сравнимы по модулю 3.
 
-6 and 11 are coprime; their gcd is 1.
-11 и 21 взаимно просты; их нод равен 1.
-17 and 33 are coprime; their gcd is 1.
-22 и 43 взаимно просты; их нод равен 1.
-8 and 15 are coprime; their gcd is 1.
-13 и 25 взаимно просты; их нод равен 1.
-19 and 37 are coprime; their gcd is 1.
-24 и 47 взаимно просты; их нод равен 1.
-10 and 19 are coprime; their gcd is 1.
-15 и 29 взаимно просты; их нод равен 1.
-21 and 41 are coprime; their gcd is 1.
-6 и 11 взаимно просты; их нод равен 1.
-12 and 23 are coprime; their gcd is 1.
-17 и 33 взаимно просты; их нод равен 1.
-23 and 45 are coprime; their gcd is 1.
+are 5 and 9 coprime? 5 and 9 are coprime; their gcd is 1.
 8 и 15 взаимно просты; их нод равен 1.
-14 and 27 are coprime; their gcd is 1.
-19 и 37 взаимно просты; их нод равен 1.
-5 and 9 are coprime; their gcd is 1.
-10 и 19 взаимно просты; их нод равен 1.
-16 and 31 are coprime; their gcd is 1.
-21 и 41 взаимно просты; их нод равен 1.
-7 and 13 are coprime; their gcd is 1.
-12 и 23 взаимно просты; их нод равен 1.
-18 and 35 are coprime; their gcd is 1.
-23 и 45 взаимно просты; их нод равен 1.
-9 and 17 are coprime; their gcd is 1.
-14 и 27 взаимно просты; их нод равен 1.
-20 and 39 are coprime; their gcd is 1.
-5 и 9 взаимно просты; их нод равен 1.
 11 and 21 are coprime; their gcd is 1.
-16 и 31 взаимно просты; их нод равен 1.
+взаимно ли просты 13 и 25? 13 и 25 взаимно просты; их нод равен 1.
+are 16 and 31 coprime? 16 and 31 are coprime; their gcd is 1.
+19 и 37 взаимно просты; их нод равен 1.
 22 and 43 are coprime; their gcd is 1.
-7 и 13 взаимно просты; их нод равен 1.
+взаимно ли просты 24 и 47? 24 и 47 взаимно просты; их нод равен 1.
+are 7 and 13 coprime? 7 and 13 are coprime; their gcd is 1.
+10 и 19 взаимно просты; их нод равен 1.
 13 and 25 are coprime; their gcd is 1.
-18 и 35 взаимно просты; их нод равен 1.
+взаимно ли просты 15 и 29? 15 и 29 взаимно просты; их нод равен 1.
+are 18 and 35 coprime? 18 and 35 are coprime; their gcd is 1.
+21 и 41 взаимно просты; их нод равен 1.
 24 and 47 are coprime; their gcd is 1.
-9 и 17 взаимно просты; их нод равен 1.
+взаимно ли просты 6 и 11? 6 и 11 взаимно просты; их нод равен 1.
+are 9 and 17 coprime? 9 and 17 are coprime; their gcd is 1.
+12 и 23 взаимно просты; их нод равен 1.
 15 and 29 are coprime; their gcd is 1.
+взаимно ли просты 17 и 33? 17 и 33 взаимно просты; их нод равен 1.
+are 20 and 39 coprime? 20 and 39 are coprime; their gcd is 1.
+23 и 45 взаимно просты; их нод равен 1.
+6 and 11 are coprime; their gcd is 1.
+взаимно ли просты 8 и 15? 8 и 15 взаимно просты; их нод равен 1.
+are 11 and 21 coprime? 11 and 21 are coprime; their gcd is 1.
+14 и 27 взаимно просты; их нод равен 1.
+17 and 33 are coprime; their gcd is 1.
+взаимно ли просты 19 и 37? 19 и 37 взаимно просты; их нод равен 1.
+are 22 and 43 coprime? 22 and 43 are coprime; their gcd is 1.
+5 и 9 взаимно просты; их нод равен 1.
+8 and 15 are coprime; their gcd is 1.
+взаимно ли просты 10 и 19? 10 и 19 взаимно просты; их нод равен 1.
+are 13 and 25 coprime? 13 and 25 are coprime; their gcd is 1.
+16 и 31 взаимно просты; их нод равен 1.
+19 and 37 are coprime; their gcd is 1.
+взаимно ли просты 21 и 41? 21 и 41 взаимно просты; их нод равен 1.
+are 24 and 47 coprime? 24 and 47 are coprime; their gcd is 1.
+7 и 13 взаимно просты; их нод равен 1.
+10 and 19 are coprime; their gcd is 1.
+взаимно ли просты 12 и 23? 12 и 23 взаимно просты; их нод равен 1.
+are 15 and 29 coprime? 15 and 29 are coprime; their gcd is 1.
+18 и 35 взаимно просты; их нод равен 1.
+21 and 41 are coprime; their gcd is 1.
+взаимно ли просты 23 и 45? 23 и 45 взаимно просты; их нод равен 1.
+are 6 and 11 coprime? 6 and 11 are coprime; their gcd is 1.
+9 и 17 взаимно просты; их нод равен 1.
+12 and 23 are coprime; their gcd is 1.
+взаимно ли просты 14 и 27? 14 и 27 взаимно просты; их нод равен 1.
+are 17 and 33 coprime? 17 and 33 are coprime; their gcd is 1.
 20 и 39 взаимно просты; их нод равен 1.
+23 and 45 are coprime; their gcd is 1.
+взаимно ли просты 5 и 9? 5 и 9 взаимно просты; их нод равен 1.
+are 8 and 15 coprime? 8 and 15 are coprime; their gcd is 1.
+11 и 21 взаимно просты; их нод равен 1.
+14 and 27 are coprime; their gcd is 1.
+взаимно ли просты 16 и 31? 16 и 31 взаимно просты; их нод равен 1.
+are 19 and 37 coprime? 19 and 37 are coprime; their gcd is 1.
+22 и 43 взаимно просты; их нод равен 1.
+5 and 9 are coprime; their gcd is 1.
+взаимно ли просты 7 и 13? 7 и 13 взаимно просты; их нод равен 1.
+are 10 and 19 coprime? 10 and 19 are coprime; their gcd is 1.
+13 и 25 взаимно просты; их нод равен 1.
+16 and 31 are coprime; their gcd is 1.
+взаимно ли просты 18 и 35? 18 и 35 взаимно просты; их нод равен 1.
+are 21 and 41 coprime? 21 and 41 are coprime; their gcd is 1.
+24 и 47 взаимно просты; их нод равен 1.
+7 and 13 are coprime; their gcd is 1.
+взаимно ли просты 9 и 17? 9 и 17 взаимно просты; их нод равен 1.
+are 12 and 23 coprime? 12 and 23 are coprime; their gcd is 1.
+15 и 29 взаимно просты; их нод равен 1.
+18 and 35 are coprime; their gcd is 1.
+взаимно ли просты 20 и 39? 20 и 39 взаимно просты; их нод равен 1.
+are 23 and 45 coprime? 23 and 45 are coprime; their gcd is 1.
+6 и 11 взаимно просты; их нод равен 1.
+9 and 17 are coprime; their gcd is 1.
+взаимно ли просты 11 и 21? 11 и 21 взаимно просты; их нод равен 1.
+are 14 and 27 coprime? 14 and 27 are coprime; their gcd is 1.
+17 и 33 взаимно просты; их нод равен 1.
+20 and 39 are coprime; their gcd is 1.
+взаимно ли просты 22 и 43? 22 и 43 взаимно просты; их нод равен 1.
 
-6 составное; 6 = 2 × 3.
-13 is prime; its divisors are 1 and 13.
-19 простое; его делители — 1 и 19.
-26 is not prime; 26 = 2 × 13.
 4 составное; 4 = 2 × 2.
-11 is prime; its divisors are 1 and 11.
-17 простое; его делители — 1 и 17.
-24 is not prime; 24 = 2 × 12.
-2 простое; его делители — 1 и 2.
-9 is not prime; 9 = 3 × 3.
-15 составное; 15 = 3 × 5.
-22 is not prime; 22 = 2 × 11.
-28 составное; 28 = 2 × 14.
-7 is prime; its divisors are 1 and 7.
-13 простое; его делители — 1 и 13.
-20 is not prime; 20 = 2 × 10.
-26 составное; 26 = 2 × 13.
-5 is prime; its divisors are 1 and 5.
-11 простое; его делители — 1 и 11.
-18 is not prime; 18 = 2 × 9.
-24 составное; 24 = 2 × 12.
-3 is prime; its divisors are 1 and 3.
-9 составное; 9 = 3 × 3.
-16 is not prime; 16 = 2 × 8.
-22 составное; 22 = 2 × 11.
-29 is prime; its divisors are 1 and 29.
-7 простое; его делители — 1 и 7.
+is 7 prime? 7 is prime; its divisors are 1 and 7.
+простое ли 10? 10 составное; 10 = 2 × 5.
 14 is not prime; 14 = 2 × 7.
-20 составное; 20 = 2 × 10.
+17 простое; его делители — 1 и 17.
+is 20 prime? 20 is not prime; 20 = 2 × 10.
+простое ли 23? 23 простое; его делители — 1 и 23.
 27 is not prime; 27 = 3 × 9.
-5 простое; его делители — 1 и 5.
+2 простое; его делители — 1 и 2.
+is 5 prime? 5 is prime; its divisors are 1 and 5.
+простое ли 8? 8 составное; 8 = 2 × 4.
 12 is not prime; 12 = 2 × 6.
-18 составное; 18 = 2 × 9.
+15 составное; 15 = 3 × 5.
+is 18 prime? 18 is not prime; 18 = 2 × 9.
+простое ли 21? 21 составное; 21 = 3 × 7.
 25 is not prime; 25 = 5 × 5.
-3 простое; его делители — 1 и 3.
+28 составное; 28 = 2 × 14.
+is 3 prime? 3 is prime; its divisors are 1 and 3.
+простое ли 6? 6 составное; 6 = 2 × 3.
 10 is not prime; 10 = 2 × 5.
-16 составное; 16 = 2 × 8.
+13 простое; его делители — 1 и 13.
+is 16 prime? 16 is not prime; 16 = 2 × 8.
+простое ли 19? 19 простое; его делители — 1 и 19.
 23 is prime; its divisors are 1 and 23.
-29 простое; его делители — 1 и 29.
+26 составное; 26 = 2 × 13.
+is 29 prime? 29 is prime; its divisors are 1 and 29.
+простое ли 4? 4 составное; 4 = 2 × 2.
 8 is not prime; 8 = 2 × 4.
-14 составное; 14 = 2 × 7.
+11 простое; его делители — 1 и 11.
+is 14 prime? 14 is not prime; 14 = 2 × 7.
+простое ли 17? 17 простое; его делители — 1 и 17.
 21 is not prime; 21 = 3 × 7.
-27 составное; 27 = 3 × 9.
+24 составное; 24 = 2 × 12.
+is 27 prime? 27 is not prime; 27 = 3 × 9.
+простое ли 2? 2 простое; его делители — 1 и 2.
 6 is not prime; 6 = 2 × 3.
-12 составное; 12 = 2 × 6.
+9 составное; 9 = 3 × 3.
+is 12 prime? 12 is not prime; 12 = 2 × 6.
+простое ли 15? 15 составное; 15 = 3 × 5.
 19 is prime; its divisors are 1 and 19.
-25 составное; 25 = 5 × 5.
+22 составное; 22 = 2 × 11.
+is 25 prime? 25 is not prime; 25 = 5 × 5.
+простое ли 28? 28 составное; 28 = 2 × 14.
 4 is not prime; 4 = 2 × 2.
-10 составное; 10 = 2 × 5.
+7 простое; его делители — 1 и 7.
+is 10 prime? 10 is not prime; 10 = 2 × 5.
+простое ли 13? 13 простое; его делители — 1 и 13.
 17 is prime; its divisors are 1 and 17.
-23 простое; его делители — 1 и 23.
+20 составное; 20 = 2 × 10.
+is 23 prime? 23 is prime; its divisors are 1 and 23.
+простое ли 26? 26 составное; 26 = 2 × 13.
 2 is prime; its divisors are 1 and 2.
-8 составное; 8 = 2 × 4.
+5 простое; его делители — 1 и 5.
+is 8 prime? 8 is not prime; 8 = 2 × 4.
+простое ли 11? 11 простое; его делители — 1 и 11.
 15 is not prime; 15 = 3 × 5.
-21 составное; 21 = 3 × 7.
+18 составное; 18 = 2 × 9.
+is 21 prime? 21 is not prime; 21 = 3 × 7.
+простое ли 24? 24 составное; 24 = 2 × 12.
 28 is not prime; 28 = 2 × 14.
+3 простое; его делители — 1 и 3.
+is 6 prime? 6 is not prime; 6 = 2 × 3.
+простое ли 9? 9 составное; 9 = 3 × 3.
+13 is prime; its divisors are 1 and 13.
+16 составное; 16 = 2 × 8.
+is 19 prime? 19 is prime; its divisors are 1 and 19.
+простое ли 22? 22 составное; 22 = 2 × 11.
+26 is not prime; 26 = 2 × 13.
+29 простое; его делители — 1 и 29.
+is 4 prime? 4 is not prime; 4 = 2 × 2.
+простое ли 7? 7 простое; его делители — 1 и 7.
+11 is prime; its divisors are 1 and 11.
+14 составное; 14 = 2 × 7.
+is 17 prime? 17 is prime; its divisors are 1 and 17.
+простое ли 20? 20 составное; 20 = 2 × 10.
+24 is not prime; 24 = 2 × 12.
+27 составное; 27 = 3 × 9.
+is 2 prime? 2 is prime; its divisors are 1 and 2.
+простое ли 5? 5 простое; его делители — 1 и 5.
+9 is not prime; 9 = 3 × 3.
+12 составное; 12 = 2 × 6.
+is 15 prime? 15 is not prime; 15 = 3 × 5.
+простое ли 18? 18 составное; 18 = 2 × 9.
+22 is not prime; 22 = 2 × 11.
+25 составное; 25 = 5 × 5.
+is 28 prime? 28 is not prime; 28 = 2 × 14.
+простое ли 3? 3 простое; его делители — 1 и 3.
+7 is prime; its divisors are 1 and 7.
+10 составное; 10 = 2 × 5.
+is 13 prime? 13 is prime; its divisors are 1 and 13.
+простое ли 16? 16 составное; 16 = 2 × 8.
+20 is not prime; 20 = 2 × 10.
+23 простое; его делители — 1 и 23.
+is 26 prime? 26 is not prime; 26 = 2 × 13.
+простое ли 29? 29 простое; его делители — 1 и 29.
+5 is prime; its divisors are 1 and 5.
+8 составное; 8 = 2 × 4.
+is 11 prime? 11 is prime; its divisors are 1 and 11.
+простое ли 14? 14 составное; 14 = 2 × 7.
+18 is not prime; 18 = 2 × 9.
+21 составное; 21 = 3 × 7.
+is 24 prime? 24 is not prime; 24 = 2 × 12.
+простое ли 27? 27 составное; 27 = 3 × 9.
+3 is prime; its divisors are 1 and 3.
+6 составное; 6 = 2 × 3.
+is 9 prime? 9 is not prime; 9 = 3 × 3.
+простое ли 12? 12 составное; 12 = 2 × 6.
+16 is not prime; 16 = 2 × 8.
+19 простое; его делители — 1 и 19.
+is 22 prime? 22 is not prime; 22 = 2 × 11.
+простое ли 25? 25 составное; 25 = 5 × 5.
+29 is prime; its divisors are 1 and 29.
 
-8 раскладывается в 2 × 2 × 2.
-15 factorises into 3 × 5.
-21 раскладывается в 3 × 7.
-28 factorises into 2 × 2 × 7.
-34 раскладывается в 2 × 17.
-5 factorises into 5.
-11 раскладывается в 11.
-18 factorises into 2 × 3 × 3.
-24 раскладывается в 2 × 2 × 2 × 3.
-31 factorises into 31.
-37 раскладывается в 37.
-8 factorises into 2 × 2 × 2.
-14 раскладывается в 2 × 7.
-21 factorises into 3 × 7.
-27 раскладывается в 3 × 3 × 3.
-34 factorises into 2 × 17.
-4 раскладывается в 2 × 2.
-11 factorises into 11.
-17 раскладывается в 17.
-24 factorises into 2 × 2 × 2 × 3.
-30 раскладывается в 2 × 3 × 5.
-37 factorises into 37.
-7 раскладывается в 7.
-14 factorises into 2 × 7.
-20 раскладывается в 2 × 2 × 5.
-27 factorises into 3 × 3 × 3.
-33 раскладывается в 3 × 11.
-4 factorises into 2 × 2.
-10 раскладывается в 2 × 5.
-17 factorises into 17.
-23 раскладывается в 23.
-30 factorises into 2 × 3 × 5.
-36 раскладывается в 2 × 2 × 3 × 3.
-7 factorises into 7.
-13 раскладывается в 13.
-20 factorises into 2 × 2 × 5.
-26 раскладывается в 2 × 13.
-33 factorises into 3 × 11.
-39 раскладывается в 3 × 13.
-10 factorises into 2 × 5.
-16 раскладывается в 2 × 2 × 2 × 2.
-23 factorises into 23.
-29 раскладывается в 29.
-36 factorises into 2 × 2 × 3 × 3.
+простое ли 1? 1 ни простое, ни составное: его единственный делитель — 1.
+is 1 prime? 1 is neither prime nor composite: its only divisor is 1.
+
 6 раскладывается в 2 × 3.
-13 factorises into 13.
-19 раскладывается в 19.
-26 factorises into 2 × 13.
-32 раскладывается в 2 × 2 × 2 × 2 × 2.
-39 factorises into 3 × 13.
-9 раскладывается в 3 × 3.
+what does 9 factorise into? 9 factorises into 3 × 3.
+во что раскладывается 12? 12 раскладывается в 2 × 2 × 3.
 16 factorises into 2 × 2 × 2 × 2.
-22 раскладывается в 2 × 11.
+19 раскладывается в 19.
+what does 22 factorise into? 22 factorises into 2 × 11.
+во что раскладывается 25? 25 раскладывается в 5 × 5.
 29 factorises into 29.
-35 раскладывается в 5 × 7.
+32 раскладывается в 2 × 2 × 2 × 2 × 2.
+what does 35 factorise into? 35 factorises into 5 × 7.
+во что раскладывается 38? 38 раскладывается в 2 × 19.
 6 factorises into 2 × 3.
-12 раскладывается в 2 × 2 × 3.
+9 раскладывается в 3 × 3.
+what does 12 factorise into? 12 factorises into 2 × 2 × 3.
+во что раскладывается 15? 15 раскладывается в 3 × 5.
 19 factorises into 19.
-25 раскладывается в 5 × 5.
+22 раскладывается в 2 × 11.
+what does 25 factorise into? 25 factorises into 5 × 5.
+во что раскладывается 28? 28 раскладывается в 2 × 2 × 7.
 32 factorises into 2 × 2 × 2 × 2 × 2.
-38 раскладывается в 2 × 19.
+35 раскладывается в 5 × 7.
+what does 38 factorise into? 38 factorises into 2 × 19.
+во что раскладывается 5? 5 раскладывается в 5.
 9 factorises into 3 × 3.
-15 раскладывается в 3 × 5.
+12 раскладывается в 2 × 2 × 3.
+what does 15 factorise into? 15 factorises into 3 × 5.
+во что раскладывается 18? 18 раскладывается в 2 × 3 × 3.
 22 factorises into 2 × 11.
-28 раскладывается в 2 × 2 × 7.
+25 раскладывается в 5 × 5.
+what does 28 factorise into? 28 factorises into 2 × 2 × 7.
+во что раскладывается 31? 31 раскладывается в 31.
 35 factorises into 5 × 7.
-5 раскладывается в 5.
+38 раскладывается в 2 × 19.
+what does 5 factorise into? 5 factorises into 5.
+во что раскладывается 8? 8 раскладывается в 2 × 2 × 2.
 12 factorises into 2 × 2 × 3.
-18 раскладывается в 2 × 3 × 3.
+15 раскладывается в 3 × 5.
+what does 18 factorise into? 18 factorises into 2 × 3 × 3.
+во что раскладывается 21? 21 раскладывается в 3 × 7.
 25 factorises into 5 × 5.
-31 раскладывается в 31.
+28 раскладывается в 2 × 2 × 7.
+what does 31 factorise into? 31 factorises into 31.
+во что раскладывается 34? 34 раскладывается в 2 × 17.
 38 factorises into 2 × 19.
+5 раскладывается в 5.
+what does 8 factorise into? 8 factorises into 2 × 2 × 2.
+во что раскладывается 11? 11 раскладывается в 11.
+15 factorises into 3 × 5.
+18 раскладывается в 2 × 3 × 3.
+what does 21 factorise into? 21 factorises into 3 × 7.
+во что раскладывается 24? 24 раскладывается в 2 × 2 × 2 × 3.
+28 factorises into 2 × 2 × 7.
+31 раскладывается в 31.
+what does 34 factorise into? 34 factorises into 2 × 17.
+во что раскладывается 37? 37 раскладывается в 37.
+5 factorises into 5.
+8 раскладывается в 2 × 2 × 2.
+what does 11 factorise into? 11 factorises into 11.
+во что раскладывается 14? 14 раскладывается в 2 × 7.
+18 factorises into 2 × 3 × 3.
+21 раскладывается в 3 × 7.
+what does 24 factorise into? 24 factorises into 2 × 2 × 2 × 3.
+во что раскладывается 27? 27 раскладывается в 3 × 3 × 3.
+31 factorises into 31.
+34 раскладывается в 2 × 17.
+what does 37 factorise into? 37 factorises into 37.
+во что раскладывается 4? 4 раскладывается в 2 × 2.
+8 factorises into 2 × 2 × 2.
+11 раскладывается в 11.
+what does 14 factorise into? 14 factorises into 2 × 7.
+во что раскладывается 17? 17 раскладывается в 17.
+21 factorises into 3 × 7.
+24 раскладывается в 2 × 2 × 2 × 3.
+what does 27 factorise into? 27 factorises into 3 × 3 × 3.
+во что раскладывается 30? 30 раскладывается в 2 × 3 × 5.
+34 factorises into 2 × 17.
+37 раскладывается в 37.
+what does 4 factorise into? 4 factorises into 2 × 2.
+во что раскладывается 7? 7 раскладывается в 7.
+11 factorises into 11.
+14 раскладывается в 2 × 7.
+what does 17 factorise into? 17 factorises into 17.
+во что раскладывается 20? 20 раскладывается в 2 × 2 × 5.
+24 factorises into 2 × 2 × 2 × 3.
+27 раскладывается в 3 × 3 × 3.
+what does 30 factorise into? 30 factorises into 2 × 3 × 5.
+во что раскладывается 33? 33 раскладывается в 3 × 11.
+37 factorises into 37.
+4 раскладывается в 2 × 2.
+what does 7 factorise into? 7 factorises into 7.
+во что раскладывается 10? 10 раскладывается в 2 × 5.
+14 factorises into 2 × 7.
+17 раскладывается в 17.
+what does 20 factorise into? 20 factorises into 2 × 2 × 5.
+во что раскладывается 23? 23 раскладывается в 23.
+27 factorises into 3 × 3 × 3.
+30 раскладывается в 2 × 3 × 5.
+what does 33 factorise into? 33 factorises into 3 × 11.
+во что раскладывается 36? 36 раскладывается в 2 × 2 × 3 × 3.
+4 factorises into 2 × 2.
+7 раскладывается в 7.
+what does 10 factorise into? 10 factorises into 2 × 5.
+во что раскладывается 13? 13 раскладывается в 13.
+17 factorises into 17.
+20 раскладывается в 2 × 2 × 5.
+what does 23 factorise into? 23 factorises into 23.
+во что раскладывается 26? 26 раскладывается в 2 × 13.
+30 factorises into 2 × 3 × 5.
+33 раскладывается в 3 × 11.
+what does 36 factorise into? 36 factorises into 2 × 2 × 3 × 3.
+во что раскладывается 39? 39 раскладывается в 3 × 13.
+7 factorises into 7.
+10 раскладывается в 2 × 5.
+what does 13 factorise into? 13 factorises into 13.
+во что раскладывается 16? 16 раскладывается в 2 × 2 × 2 × 2.
+20 factorises into 2 × 2 × 5.
+23 раскладывается в 23.
+what does 26 factorise into? 26 factorises into 2 × 13.
+во что раскладывается 29? 29 раскладывается в 29.
+33 factorises into 3 × 11.
+36 раскладывается в 2 × 2 × 3 × 3.
+what does 39 factorise into? 39 factorises into 3 × 13.
+во что раскладывается 6? 6 раскладывается в 2 × 3.
+10 factorises into 2 × 5.
+13 раскладывается в 13.
+what does 16 factorise into? 16 factorises into 2 × 2 × 2 × 2.
+во что раскладывается 19? 19 раскладывается в 19.
+23 factorises into 23.
+26 раскладывается в 2 × 13.
+what does 29 factorise into? 29 factorises into 29.
+во что раскладывается 32? 32 раскладывается в 2 × 2 × 2 × 2 × 2.
+36 factorises into 2 × 2 × 3 × 3.
+39 раскладывается в 3 × 13.
+what does 6 factorise into? 6 factorises into 2 × 3.
+во что раскладывается 9? 9 раскладывается в 3 × 3.
+13 factorises into 13.
+16 раскладывается в 2 × 2 × 2 × 2.
+what does 19 factorise into? 19 factorises into 19.
+во что раскладывается 22? 22 раскладывается в 2 × 11.
+26 factorises into 2 × 13.
+29 раскладывается в 29.
+what does 32 factorise into? 32 factorises into 2 × 2 × 2 × 2 × 2.
+во что раскладывается 35? 35 раскладывается в 5 × 7.
+39 factorises into 3 × 13.
 
-делители 10 — это 1 2 5 10.
-the divisors of 17 are 1 17.
-делители 23 — это 1 23.
-the divisors of 6 are 1 2 3 6.
-делители 12 — это 1 2 3 4 6 12.
-the divisors of 19 are 1 19.
-делители 25 — это 1 5 25.
-the divisors of 8 are 1 2 4 8.
-делители 14 — это 1 2 7 14.
-the divisors of 21 are 1 3 7 21.
-делители 27 — это 1 3 9 27.
-the divisors of 10 are 1 2 5 10.
-делители 16 — это 1 2 4 8 16.
-the divisors of 23 are 1 23.
-делители 29 — это 1 29.
-the divisors of 12 are 1 2 3 4 6 12.
-делители 18 — это 1 2 3 6 9 18.
-the divisors of 25 are 1 5 25.
-делители 7 — это 1 7.
-the divisors of 14 are 1 2 7 14.
-делители 20 — это 1 2 4 5 10 20.
-the divisors of 27 are 1 3 9 27.
-делители 9 — это 1 3 9.
-the divisors of 16 are 1 2 4 8 16.
-делители 22 — это 1 2 11 22.
-the divisors of 29 are 1 29.
-делители 11 — это 1 11.
-the divisors of 18 are 1 2 3 6 9 18.
-делители 24 — это 1 2 3 4 6 8 12 24.
-the divisors of 7 are 1 7.
-делители 13 — это 1 13.
-the divisors of 20 are 1 2 4 5 10 20.
-делители 26 — это 1 2 13 26.
-the divisors of 9 are 1 3 9.
-делители 15 — это 1 3 5 15.
-the divisors of 22 are 1 2 11 22.
-делители 28 — это 1 2 4 7 14 28.
-the divisors of 11 are 1 11.
-делители 17 — это 1 17.
-the divisors of 24 are 1 2 3 4 6 8 12 24.
-делители 6 — это 1 2 3 6.
-the divisors of 13 are 1 13.
-делители 19 — это 1 19.
-the divisors of 26 are 1 2 13 26.
 делители 8 — это 1 2 4 8.
-the divisors of 15 are 1 3 5 15.
+what are the divisors of 11? the divisors of 11 are 1 11.
+каковы делители 14? делители 14 — это 1 2 7 14.
+the divisors of 18 are 1 2 3 6 9 18.
 делители 21 — это 1 3 7 21.
+what are the divisors of 24? the divisors of 24 are 1 2 3 4 6 8 12 24.
+каковы делители 27? делители 27 — это 1 3 9 27.
+the divisors of 7 are 1 7.
+делители 10 — это 1 2 5 10.
+what are the divisors of 13? the divisors of 13 are 1 13.
+каковы делители 16? делители 16 — это 1 2 4 8 16.
+the divisors of 20 are 1 2 4 5 10 20.
+делители 23 — это 1 23.
+what are the divisors of 26? the divisors of 26 are 1 2 13 26.
+каковы делители 29? делители 29 — это 1 29.
+the divisors of 9 are 1 3 9.
+делители 12 — это 1 2 3 4 6 12.
+what are the divisors of 15? the divisors of 15 are 1 3 5 15.
+каковы делители 18? делители 18 — это 1 2 3 6 9 18.
+the divisors of 22 are 1 2 11 22.
+делители 25 — это 1 5 25.
+what are the divisors of 28? the divisors of 28 are 1 2 4 7 14 28.
+каковы делители 7? делители 7 — это 1 7.
+the divisors of 11 are 1 11.
+делители 14 — это 1 2 7 14.
+what are the divisors of 17? the divisors of 17 are 1 17.
+каковы делители 20? делители 20 — это 1 2 4 5 10 20.
+the divisors of 24 are 1 2 3 4 6 8 12 24.
+делители 27 — это 1 3 9 27.
+what are the divisors of 6? the divisors of 6 are 1 2 3 6.
+каковы делители 9? делители 9 — это 1 3 9.
+the divisors of 13 are 1 13.
+делители 16 — это 1 2 4 8 16.
+what are the divisors of 19? the divisors of 19 are 1 19.
+каковы делители 22? делители 22 — это 1 2 11 22.
+the divisors of 26 are 1 2 13 26.
+делители 29 — это 1 29.
+what are the divisors of 8? the divisors of 8 are 1 2 4 8.
+каковы делители 11? делители 11 — это 1 11.
+the divisors of 15 are 1 3 5 15.
+делители 18 — это 1 2 3 6 9 18.
+what are the divisors of 21? the divisors of 21 are 1 3 7 21.
+каковы делители 24? делители 24 — это 1 2 3 4 6 8 12 24.
 the divisors of 28 are 1 2 4 7 14 28.
+делители 7 — это 1 7.
+what are the divisors of 10? the divisors of 10 are 1 2 5 10.
+каковы делители 13? делители 13 — это 1 13.
+the divisors of 17 are 1 17.
+делители 20 — это 1 2 4 5 10 20.
+what are the divisors of 23? the divisors of 23 are 1 23.
+каковы делители 26? делители 26 — это 1 2 13 26.
+the divisors of 6 are 1 2 3 6.
+делители 9 — это 1 3 9.
+what are the divisors of 12? the divisors of 12 are 1 2 3 4 6 12.
+каковы делители 15? делители 15 — это 1 3 5 15.
+the divisors of 19 are 1 19.
+делители 22 — это 1 2 11 22.
+what are the divisors of 25? the divisors of 25 are 1 5 25.
+каковы делители 28? делители 28 — это 1 2 4 7 14 28.
+the divisors of 8 are 1 2 4 8.
+делители 11 — это 1 11.
+what are the divisors of 14? the divisors of 14 are 1 2 7 14.
+каковы делители 17? делители 17 — это 1 17.
+the divisors of 21 are 1 3 7 21.
+делители 24 — это 1 2 3 4 6 8 12 24.
+what are the divisors of 27? the divisors of 27 are 1 3 9 27.
+каковы делители 6? делители 6 — это 1 2 3 6.
+the divisors of 10 are 1 2 5 10.
+делители 13 — это 1 13.
+what are the divisors of 16? the divisors of 16 are 1 2 4 8 16.
+каковы делители 19? делители 19 — это 1 19.
+the divisors of 23 are 1 23.
+делители 26 — это 1 2 13 26.
+what are the divisors of 29? the divisors of 29 are 1 29.
+каковы делители 8? делители 8 — это 1 2 4 8.
+the divisors of 12 are 1 2 3 4 6 12.
+делители 15 — это 1 3 5 15.
+what are the divisors of 18? the divisors of 18 are 1 2 3 6 9 18.
+каковы делители 21? делители 21 — это 1 3 7 21.
+the divisors of 25 are 1 5 25.
+делители 28 — это 1 2 4 7 14 28.
+what are the divisors of 7? the divisors of 7 are 1 7.
+каковы делители 10? делители 10 — это 1 2 5 10.
+the divisors of 14 are 1 2 7 14.
+делители 17 — это 1 17.
+what are the divisors of 20? the divisors of 20 are 1 2 4 5 10 20.
+каковы делители 23? делители 23 — это 1 23.
+the divisors of 27 are 1 3 9 27.
+делители 6 — это 1 2 3 6.
+what are the divisors of 9? the divisors of 9 are 1 3 9.
+каковы делители 12? делители 12 — это 1 2 3 4 6 12.
+the divisors of 16 are 1 2 4 8 16.
+делители 19 — это 1 19.
+what are the divisors of 22? the divisors of 22 are 1 2 11 22.
+каковы делители 25? делители 25 — это 1 5 25.
+the divisors of 29 are 1 29.
 
-15 по модулю 4 равно 3.
-24 and 3 are congruent modulo 7.
-33 и 0 сравнимы по модулю 3.
-45 mod 7 = 3.
-54 по модулю 3 равно 0.
-63 and 3 are congruent modulo 6.
-72 и 0 сравнимы по модулю 2.
-12 mod 3 = 0.
-21 по модулю 6 равно 3.
-30 and 0 are congruent modulo 2.
-39 и 4 сравнимы по модулю 5.
-51 mod 2 = 1.
-60 по модулю 5 равно 0.
-69 and 5 are congruent modulo 8.
-78 и 2 сравнимы по модулю 4.
-18 mod 5 = 3.
-27 по модулю 8 равно 3.
-36 and 0 are congruent modulo 4.
-45 и 3 сравнимы по модулю 7.
-57 mod 4 = 1.
-66 по модулю 7 равно 3.
-75 and 0 are congruent modulo 3.
-12 и 0 сравнимы по модулю 3.
-24 mod 7 = 3.
-33 по модулю 3 равно 0.
-42 and 0 are congruent modulo 6.
-51 и 1 сравнимы по модулю 2.
-63 mod 6 = 3.
-72 по модулю 2 равно 0.
-9 and 1 are congruent modulo 2.
-18 и 3 сравнимы по модулю 5.
-30 mod 2 = 0.
-39 по модулю 5 равно 4.
-48 and 0 are congruent modulo 8.
-57 и 1 сравнимы по модулю 4.
-69 mod 8 = 5.
-78 по модулю 4 равно 2.
-15 and 3 are congruent modulo 4.
-24 и 3 сравнимы по модулю 7.
-36 mod 4 = 0.
-45 по модулю 7 равно 3.
-54 and 0 are congruent modulo 3.
-63 и 3 сравнимы по модулю 6.
-75 mod 3 = 0.
 12 по модулю 3 равно 0.
-21 and 3 are congruent modulo 6.
-30 и 0 сравнимы по модулю 2.
-42 mod 6 = 0.
-51 по модулю 2 равно 1.
-60 and 0 are congruent modulo 5.
-69 и 5 сравнимы по модулю 8.
-9 mod 2 = 1.
-18 по модулю 5 равно 3.
-27 and 3 are congruent modulo 8.
-36 и 0 сравнимы по модулю 4.
-48 mod 8 = 0.
-57 по модулю 4 равно 1.
-66 and 3 are congruent modulo 7.
-75 и 0 сравнимы по модулю 3.
-15 mod 4 = 3.
-24 по модулю 7 равно 3.
-33 and 0 are congruent modulo 3.
-42 и 0 сравнимы по модулю 6.
-54 mod 3 = 0.
-63 по модулю 6 равно 3.
-72 and 0 are congruent modulo 2.
-9 и 1 сравнимы по модулю 2.
-21 mod 6 = 3.
-30 по модулю 2 равно 0.
-39 and 4 are congruent modulo 5.
-48 и 0 сравнимы по модулю 8.
-60 mod 5 = 0.
-69 по модулю 8 равно 5.
-78 and 2 are congruent modulo 4.
-15 и 3 сравнимы по модулю 4.
-27 mod 8 = 3.
-36 по модулю 4 равно 0.
-45 and 3 are congruent modulo 7.
-54 и 0 сравнимы по модулю 3.
-66 mod 7 = 3.
-75 по модулю 3 равно 0.
-12 and 0 are congruent modulo 3.
+are 15 and 3 congruent modulo 4? 15 and 3 are congruent modulo 4.
 21 и 3 сравнимы по модулю 6.
-33 mod 3 = 0.
-42 по модулю 6 равно 0.
-51 and 1 are congruent modulo 2.
+27 mod 8 = 3.
+чему равно 30 по модулю 2? 30 по модулю 2 равно 0.
+36 and 0 are congruent modulo 4.
+сравнимы ли 39 и 4 по модулю 5? 39 и 4 сравнимы по модулю 5.
+what is 45 mod 7? 45 mod 7 = 3.
+51 по модулю 2 равно 1.
+are 54 and 0 congruent modulo 3? 54 and 0 are congruent modulo 3.
 60 и 0 сравнимы по модулю 5.
-72 mod 2 = 0.
-9 по модулю 2 равно 1.
-18 and 3 are congruent modulo 5.
+66 mod 7 = 3.
+чему равно 69 по модулю 8? 69 по модулю 8 равно 5.
+75 and 0 are congruent modulo 3.
+сравнимы ли 78 и 2 по модулю 4? 78 и 2 сравнимы по модулю 4.
+what is 12 mod 3? 12 mod 3 = 0.
+18 по модулю 5 равно 3.
+are 21 and 3 congruent modulo 6? 21 and 3 are congruent modulo 6.
 27 и 3 сравнимы по модулю 8.
-39 mod 5 = 4.
-48 по модулю 8 равно 0.
-57 and 1 are congruent modulo 4.
+33 mod 3 = 0.
+чему равно 36 по модулю 4? 36 по модулю 4 равно 0.
+42 and 0 are congruent modulo 6.
+сравнимы ли 45 и 3 по модулю 7? 45 и 3 сравнимы по модулю 7.
+what is 51 mod 2? 51 mod 2 = 1.
+57 по модулю 4 равно 1.
+are 60 and 0 congruent modulo 5? 60 and 0 are congruent modulo 5.
 66 и 3 сравнимы по модулю 7.
+72 mod 2 = 0.
+чему равно 75 по модулю 3? 75 по модулю 3 равно 0.
+9 and 1 are congruent modulo 2.
+сравнимы ли 12 и 0 по модулю 3? 12 и 0 сравнимы по модулю 3.
+what is 18 mod 5? 18 mod 5 = 3.
+24 по модулю 7 равно 3.
+are 27 and 3 congruent modulo 8? 27 and 3 are congruent modulo 8.
+33 и 0 сравнимы по модулю 3.
+39 mod 5 = 4.
+чему равно 42 по модулю 6? 42 по модулю 6 равно 0.
+48 and 0 are congruent modulo 8.
+сравнимы ли 51 и 1 по модулю 2? 51 и 1 сравнимы по модулю 2.
+what is 57 mod 4? 57 mod 4 = 1.
+63 по модулю 6 равно 3.
+are 66 and 3 congruent modulo 7? 66 and 3 are congruent modulo 7.
+72 и 0 сравнимы по модулю 2.
 78 mod 4 = 2.
+чему равно 9 по модулю 2? 9 по модулю 2 равно 1.
+15 and 3 are congruent modulo 4.
+сравнимы ли 18 и 3 по модулю 5? 18 и 3 сравнимы по модулю 5.
+what is 24 mod 7? 24 mod 7 = 3.
+30 по модулю 2 равно 0.
+are 33 and 0 congruent modulo 3? 33 and 0 are congruent modulo 3.
+39 и 4 сравнимы по модулю 5.
+45 mod 7 = 3.
+чему равно 48 по модулю 8? 48 по модулю 8 равно 0.
+54 and 0 are congruent modulo 3.
+сравнимы ли 57 и 1 по модулю 4? 57 и 1 сравнимы по модулю 4.
+what is 63 mod 6? 63 mod 6 = 3.
+69 по модулю 8 равно 5.
+are 72 and 0 congruent modulo 2? 72 and 0 are congruent modulo 2.
+78 и 2 сравнимы по модулю 4.
+12 mod 3 = 0.
+чему равно 15 по модулю 4? 15 по модулю 4 равно 3.
+21 and 3 are congruent modulo 6.
+сравнимы ли 24 и 3 по модулю 7? 24 и 3 сравнимы по модулю 7.
+what is 30 mod 2? 30 mod 2 = 0.
+36 по модулю 4 равно 0.
+are 39 and 4 congruent modulo 5? 39 and 4 are congruent modulo 5.
+45 и 3 сравнимы по модулю 7.
+51 mod 2 = 1.
+чему равно 54 по модулю 3? 54 по модулю 3 равно 0.
+60 and 0 are congruent modulo 5.
+сравнимы ли 63 и 3 по модулю 6? 63 и 3 сравнимы по модулю 6.
+what is 69 mod 8? 69 mod 8 = 5.
+75 по модулю 3 равно 0.
+are 78 and 2 congruent modulo 4? 78 and 2 are congruent modulo 4.
+12 и 0 сравнимы по модулю 3.
+18 mod 5 = 3.
+чему равно 21 по модулю 6? 21 по модулю 6 равно 3.
+27 and 3 are congruent modulo 8.
+сравнимы ли 30 и 0 по модулю 2? 30 и 0 сравнимы по модулю 2.
+what is 36 mod 4? 36 mod 4 = 0.
+42 по модулю 6 равно 0.
+are 45 and 3 congruent modulo 7? 45 and 3 are congruent modulo 7.
+51 и 1 сравнимы по модулю 2.
+57 mod 4 = 1.
+чему равно 60 по модулю 5? 60 по модулю 5 равно 0.
+66 and 3 are congruent modulo 7.
+сравнимы ли 69 и 5 по модулю 8? 69 и 5 сравнимы по модулю 8.
+what is 75 mod 3? 75 mod 3 = 0.
+9 по модулю 2 равно 1.
+are 12 and 0 congruent modulo 3? 12 and 0 are congruent modulo 3.
+18 и 3 сравнимы по модулю 5.
+24 mod 7 = 3.
+чему равно 27 по модулю 8? 27 по модулю 8 равно 3.
+33 and 0 are congruent modulo 3.
+сравнимы ли 36 и 0 по модулю 4? 36 и 0 сравнимы по модулю 4.
+what is 42 mod 6? 42 mod 6 = 0.
+48 по модулю 8 равно 0.
+are 51 and 1 congruent modulo 2? 51 and 1 are congruent modulo 2.
+57 и 1 сравнимы по модулю 4.
+63 mod 6 = 3.
+чему равно 66 по модулю 7? 66 по модулю 7 равно 3.
+72 and 0 are congruent modulo 2.
+сравнимы ли 75 и 0 по модулю 3? 75 и 0 сравнимы по модулю 3.
+what is 9 mod 2? 9 mod 2 = 1.
+15 по модулю 4 равно 3.
+are 18 and 3 congruent modulo 5? 18 and 3 are congruent modulo 5.
+24 и 3 сравнимы по модулю 7.
+30 mod 2 = 0.
+чему равно 33 по модулю 3? 33 по модулю 3 равно 0.
+39 and 4 are congruent modulo 5.
+сравнимы ли 42 и 0 по модулю 6? 42 и 0 сравнимы по модулю 6.
+what is 48 mod 8? 48 mod 8 = 0.
+54 по модулю 3 равно 0.
+are 57 and 1 congruent modulo 4? 57 and 1 are congruent modulo 4.
+63 и 3 сравнимы по модулю 6.
+69 mod 8 = 5.
+чему равно 72 по модулю 2? 72 по модулю 2 равно 0.
+78 and 2 are congruent modulo 4.
+сравнимы ли 9 и 1 по модулю 2? 9 и 1 сравнимы по модулю 2.
+what is 15 mod 4? 15 mod 4 = 3.
+21 по модулю 6 равно 3.
+are 24 and 3 congruent modulo 7? 24 and 3 are congruent modulo 7.
+30 и 0 сравнимы по модулю 2.
+36 mod 4 = 0.
+чему равно 39 по модулю 5? 39 по модулю 5 равно 4.
+45 and 3 are congruent modulo 7.
+сравнимы ли 48 и 0 по модулю 8? 48 и 0 сравнимы по модулю 8.
+what is 54 mod 3? 54 mod 3 = 0.
+60 по модулю 5 равно 0.
+are 63 and 3 congruent modulo 6? 63 and 3 are congruent modulo 6.
+69 и 5 сравнимы по модулю 8.
+75 mod 3 = 0.
+чему равно 78 по модулю 4? 78 по модулю 4 равно 2.
+12 and 0 are congruent modulo 3.
+сравнимы ли 15 и 3 по модулю 4? 15 и 3 сравнимы по модулю 4.
+what is 21 mod 6? 21 mod 6 = 3.
+27 по модулю 8 равно 3.
+are 30 and 0 congruent modulo 2? 30 and 0 are congruent modulo 2.
+36 и 0 сравнимы по модулю 4.
+42 mod 6 = 0.
+чему равно 45 по модулю 7? 45 по модулю 7 равно 3.
+51 and 1 are congruent modulo 2.
+сравнимы ли 54 и 0 по модулю 3? 54 и 0 сравнимы по модулю 3.
+what is 60 mod 5? 60 mod 5 = 0.
+66 по модулю 7 равно 3.
+are 69 and 5 congruent modulo 8? 69 and 5 are congruent modulo 8.
+75 и 0 сравнимы по модулю 3.
+9 mod 2 = 1.
+чему равно 12 по модулю 3? 12 по модулю 3 равно 0.
+18 and 3 are congruent modulo 5.
+сравнимы ли 21 и 3 по модулю 6? 21 и 3 сравнимы по модулю 6.
+what is 27 mod 8? 27 mod 8 = 3.
+33 по модулю 3 равно 0.
+are 36 and 0 congruent modulo 4? 36 and 0 are congruent modulo 4.
+42 и 0 сравнимы по модулю 6.
+48 mod 8 = 0.
+чему равно 51 по модулю 2? 51 по модулю 2 равно 1.
+57 and 1 are congruent modulo 4.
+сравнимы ли 60 и 0 по модулю 5? 60 и 0 сравнимы по модулю 5.
+what is 66 mod 7? 66 mod 7 = 3.
+72 по модулю 2 равно 0.
+are 75 and 0 congruent modulo 3? 75 and 0 are congruent modulo 3.
+9 и 1 сравнимы по модулю 2.
+15 mod 4 = 3.
+чему равно 18 по модулю 5? 18 по модулю 5 равно 3.
+24 and 3 are congruent modulo 7.
+сравнимы ли 27 и 3 по модулю 8? 27 и 3 сравнимы по модулю 8.
+what is 33 mod 3? 33 mod 3 = 0.
+39 по модулю 5 равно 4.
+are 42 and 0 congruent modulo 6? 42 and 0 are congruent modulo 6.
+48 и 0 сравнимы по модулю 8.
+54 mod 3 = 0.
+чему равно 57 по модулю 4? 57 по модулю 4 равно 1.
+63 and 3 are congruent modulo 6.
+сравнимы ли 66 и 3 по модулю 7? 66 и 3 сравнимы по модулю 7.
+what is 72 mod 2? 72 mod 2 = 0.
+78 по модулю 4 равно 2.
+are 9 and 1 congruent modulo 2? 9 and 1 are congruent modulo 2.
+15 и 3 сравнимы по модулю 4.
+21 mod 6 = 3.
+чему равно 24 по модулю 7? 24 по модулю 7 равно 3.
+30 and 0 are congruent modulo 2.
+сравнимы ли 33 и 0 по модулю 3? 33 и 0 сравнимы по модулю 3.
+what is 39 mod 5? 39 mod 5 = 4.
+45 по модулю 7 равно 3.
+are 48 and 0 congruent modulo 8? 48 and 0 are congruent modulo 8.
+54 и 0 сравнимы по модулю 3.
+60 mod 5 = 0.
+чему равно 63 по модулю 6? 63 по модулю 6 равно 3.
+69 and 5 are congruent modulo 8.
+сравнимы ли 72 и 0 по модулю 2? 72 и 0 сравнимы по модулю 2.
+what is 78 mod 4? 78 mod 4 = 2.
 
-10 и 17 взаимно просты; их нод равен 1.
-17 and 31 are coprime; their gcd is 1.
-23 и 43 взаимно просты; их нод равен 1.
-10 and 17 are coprime; their gcd is 1.
-16 и 29 взаимно просты; их нод равен 1.
-23 and 43 are coprime; their gcd is 1.
-9 и 15 не взаимно просты; их нод равен 3.
-16 and 29 are coprime; their gcd is 1.
-22 и 41 взаимно просты; их нод равен 1.
-9 and 15 are not coprime; their gcd is 3.
-15 и 27 не взаимно просты; их нод равен 3.
-22 and 41 are coprime; their gcd is 1.
 8 и 13 взаимно просты; их нод равен 1.
-15 and 27 are not coprime; their gcd is 3.
-21 и 39 не взаимно просты; их нод равен 3.
-8 and 13 are coprime; their gcd is 1.
-14 и 25 взаимно просты; их нод равен 1.
-21 and 39 are not coprime; their gcd is 3.
-7 и 11 взаимно просты; их нод равен 1.
-14 and 25 are coprime; their gcd is 1.
-20 и 37 взаимно просты; их нод равен 1.
-7 and 11 are coprime; their gcd is 1.
-13 и 23 взаимно просты; их нод равен 1.
-20 and 37 are coprime; their gcd is 1.
-6 и 9 не взаимно просты; их нод равен 3.
-13 and 23 are coprime; their gcd is 1.
-19 и 35 взаимно просты; их нод равен 1.
-6 and 9 are not coprime; their gcd is 3.
-12 и 21 не взаимно просты; их нод равен 3.
-19 and 35 are coprime; their gcd is 1.
-25 и 47 взаимно просты; их нод равен 1.
-12 and 21 are not coprime; their gcd is 3.
-18 и 33 не взаимно просты; их нод равен 3.
-25 and 47 are coprime; their gcd is 1.
-11 и 19 взаимно просты; их нод равен 1.
+are 11 and 19 coprime? 11 and 19 are coprime; their gcd is 1.
+взаимно ли просты 14 и 25? 14 и 25 взаимно просты; их нод равен 1.
 18 and 33 are not coprime; their gcd is 3.
-24 и 45 не взаимно просты; их нод равен 3.
+21 и 39 не взаимно просты; их нод равен 3.
+are 24 and 45 coprime? 24 and 45 are not coprime; their gcd is 3.
+взаимно ли просты 7 и 11? 7 и 11 взаимно просты; их нод равен 1.
 11 and 19 are coprime; their gcd is 1.
-17 и 31 взаимно просты; их нод равен 1.
+14 и 25 взаимно просты; их нод равен 1.
+are 17 and 31 coprime? 17 and 31 are coprime; their gcd is 1.
+взаимно ли просты 20 и 37? 20 и 37 взаимно просты; их нод равен 1.
 24 and 45 are not coprime; their gcd is 3.
+7 и 11 взаимно просты; их нод равен 1.
+are 10 and 17 coprime? 10 and 17 are coprime; their gcd is 1.
+взаимно ли просты 13 и 23? 13 и 23 взаимно просты; их нод равен 1.
+17 and 31 are coprime; their gcd is 1.
+20 и 37 взаимно просты; их нод равен 1.
+are 23 and 43 coprime? 23 and 43 are coprime; their gcd is 1.
+взаимно ли просты 6 и 9? 6 и 9 не взаимно просты; их нод равен 3.
+10 and 17 are coprime; their gcd is 1.
+13 и 23 взаимно просты; их нод равен 1.
+are 16 and 29 coprime? 16 and 29 are coprime; their gcd is 1.
+взаимно ли просты 19 и 35? 19 и 35 взаимно просты; их нод равен 1.
+23 and 43 are coprime; their gcd is 1.
+6 и 9 не взаимно просты; их нод равен 3.
+are 9 and 15 coprime? 9 and 15 are not coprime; their gcd is 3.
+взаимно ли просты 12 и 21? 12 и 21 не взаимно просты; их нод равен 3.
+16 and 29 are coprime; their gcd is 1.
+19 и 35 взаимно просты; их нод равен 1.
+are 22 and 41 coprime? 22 and 41 are coprime; their gcd is 1.
+взаимно ли просты 25 и 47? 25 и 47 взаимно просты; их нод равен 1.
+9 and 15 are not coprime; their gcd is 3.
+12 и 21 не взаимно просты; их нод равен 3.
+are 15 and 27 coprime? 15 and 27 are not coprime; their gcd is 3.
+взаимно ли просты 18 и 33? 18 и 33 не взаимно просты; их нод равен 3.
+22 and 41 are coprime; their gcd is 1.
+25 и 47 взаимно просты; их нод равен 1.
+are 8 and 13 coprime? 8 and 13 are coprime; their gcd is 1.
+взаимно ли просты 11 и 19? 11 и 19 взаимно просты; их нод равен 1.
+15 and 27 are not coprime; their gcd is 3.
+18 и 33 не взаимно просты; их нод равен 3.
+are 21 and 39 coprime? 21 and 39 are not coprime; their gcd is 3.
+взаимно ли просты 24 и 45? 24 и 45 не взаимно просты; их нод равен 3.
+8 and 13 are coprime; their gcd is 1.
+11 и 19 взаимно просты; их нод равен 1.
+are 14 and 25 coprime? 14 and 25 are coprime; their gcd is 1.
+взаимно ли просты 17 и 31? 17 и 31 взаимно просты; их нод равен 1.
+21 and 39 are not coprime; their gcd is 3.
+24 и 45 не взаимно просты; их нод равен 3.
+are 7 and 11 coprime? 7 and 11 are coprime; their gcd is 1.
+взаимно ли просты 10 и 17? 10 и 17 взаимно просты; их нод равен 1.
+14 and 25 are coprime; their gcd is 1.
+17 и 31 взаимно просты; их нод равен 1.
+are 20 and 37 coprime? 20 and 37 are coprime; their gcd is 1.
+взаимно ли просты 23 и 43? 23 и 43 взаимно просты; их нод равен 1.
+7 and 11 are coprime; their gcd is 1.
+10 и 17 взаимно просты; их нод равен 1.
+are 13 and 23 coprime? 13 and 23 are coprime; their gcd is 1.
+взаимно ли просты 16 и 29? 16 и 29 взаимно просты; их нод равен 1.
+20 and 37 are coprime; their gcd is 1.
+23 и 43 взаимно просты; их нод равен 1.
+are 6 and 9 coprime? 6 and 9 are not coprime; their gcd is 3.
+взаимно ли просты 9 и 15? 9 и 15 не взаимно просты; их нод равен 3.
+13 and 23 are coprime; their gcd is 1.
+16 и 29 взаимно просты; их нод равен 1.
+are 19 and 35 coprime? 19 and 35 are coprime; their gcd is 1.
+взаимно ли просты 22 и 41? 22 и 41 взаимно просты; их нод равен 1.
+6 and 9 are not coprime; their gcd is 3.
+9 и 15 не взаимно просты; их нод равен 3.
+are 12 and 21 coprime? 12 and 21 are not coprime; their gcd is 3.
+взаимно ли просты 15 и 27? 15 и 27 не взаимно просты; их нод равен 3.
+19 and 35 are coprime; their gcd is 1.
+22 и 41 взаимно просты; их нод равен 1.
+are 25 and 47 coprime? 25 and 47 are coprime; their gcd is 1.
+взаимно ли просты 8 и 13? 8 и 13 взаимно просты; их нод равен 1.
+12 and 21 are not coprime; their gcd is 3.
+15 и 27 не взаимно просты; их нод равен 3.
+are 18 and 33 coprime? 18 and 33 are not coprime; their gcd is 3.
+взаимно ли просты 21 и 39? 21 и 39 не взаимно просты; их нод равен 3.
+25 and 47 are coprime; their gcd is 1.
 
-4 is not prime; 4 = 2 × 2.
-12 составное; 12 = 2 × 6.
-21 is not prime; 21 = 3 × 7.
-29 простое; его делители — 1 и 29.
-10 is not prime; 10 = 2 × 5.
-18 составное; 18 = 2 × 9.
-27 is not prime; 27 = 3 × 9.
-7 простое; его делители — 1 и 7.
-16 is not prime; 16 = 2 × 8.
-24 составное; 24 = 2 × 12.
-5 is prime; its divisors are 1 and 5.
-13 простое; его делители — 1 и 13.
-22 is not prime; 22 = 2 × 11.
-2 простое; его делители — 1 и 2.
-11 is prime; its divisors are 1 and 11.
-19 простое; его делители — 1 и 19.
-28 is not prime; 28 = 2 × 14.
-8 составное; 8 = 2 × 4.
-17 is prime; its divisors are 1 and 17.
-25 составное; 25 = 5 × 5.
-6 is not prime; 6 = 2 × 3.
-14 составное; 14 = 2 × 7.
-23 is prime; its divisors are 1 and 23.
-3 простое; его делители — 1 и 3.
-12 is not prime; 12 = 2 × 6.
-20 составное; 20 = 2 × 10.
-29 is prime; its divisors are 1 and 29.
-9 составное; 9 = 3 × 3.
-18 is not prime; 18 = 2 × 9.
-26 составное; 26 = 2 × 13.
-7 is prime; its divisors are 1 and 7.
-15 составное; 15 = 3 × 5.
-24 is not prime; 24 = 2 × 12.
-4 составное; 4 = 2 × 2.
-13 is prime; its divisors are 1 and 13.
-21 составное; 21 = 3 × 7.
-2 is prime; its divisors are 1 and 2.
-10 составное; 10 = 2 × 5.
-19 is prime; its divisors are 1 and 19.
-27 составное; 27 = 3 × 9.
-8 is not prime; 8 = 2 × 4.
-16 составное; 16 = 2 × 8.
-25 is not prime; 25 = 5 × 5.
-5 простое; его делители — 1 и 5.
-14 is not prime; 14 = 2 × 7.
-22 составное; 22 = 2 × 11.
 3 is prime; its divisors are 1 and 3.
-11 простое; его делители — 1 и 11.
+7 простое; его делители — 1 и 7.
+is 11 prime? 11 is prime; its divisors are 1 and 11.
+простое ли 15? 15 составное; 15 = 3 × 5.
 20 is not prime; 20 = 2 × 10.
-28 составное; 28 = 2 × 14.
+24 составное; 24 = 2 × 12.
+is 28 prime? 28 is not prime; 28 = 2 × 14.
+простое ли 4? 4 составное; 4 = 2 × 2.
 9 is not prime; 9 = 3 × 3.
-17 простое; его делители — 1 и 17.
+13 простое; его делители — 1 и 13.
+is 17 prime? 17 is prime; its divisors are 1 and 17.
+простое ли 21? 21 составное; 21 = 3 × 7.
 26 is not prime; 26 = 2 × 13.
-6 составное; 6 = 2 × 3.
+2 простое; его делители — 1 и 2.
+is 6 prime? 6 is not prime; 6 = 2 × 3.
+простое ли 10? 10 составное; 10 = 2 × 5.
 15 is not prime; 15 = 3 × 5.
+19 простое; его делители — 1 и 19.
+is 23 prime? 23 is prime; its divisors are 1 and 23.
+простое ли 27? 27 составное; 27 = 3 × 9.
+4 is not prime; 4 = 2 × 2.
+8 составное; 8 = 2 × 4.
+is 12 prime? 12 is not prime; 12 = 2 × 6.
+простое ли 16? 16 составное; 16 = 2 × 8.
+21 is not prime; 21 = 3 × 7.
+25 составное; 25 = 5 × 5.
+is 29 prime? 29 is prime; its divisors are 1 and 29.
+простое ли 5? 5 простое; его делители — 1 и 5.
+10 is not prime; 10 = 2 × 5.
+14 составное; 14 = 2 × 7.
+is 18 prime? 18 is not prime; 18 = 2 × 9.
+простое ли 22? 22 составное; 22 = 2 × 11.
+27 is not prime; 27 = 3 × 9.
+3 простое; его делители — 1 и 3.
+is 7 prime? 7 is prime; its divisors are 1 and 7.
+простое ли 11? 11 простое; его делители — 1 и 11.
+16 is not prime; 16 = 2 × 8.
+20 составное; 20 = 2 × 10.
+is 24 prime? 24 is not prime; 24 = 2 × 12.
+простое ли 28? 28 составное; 28 = 2 × 14.
+5 is prime; its divisors are 1 and 5.
+9 составное; 9 = 3 × 3.
+is 13 prime? 13 is prime; its divisors are 1 and 13.
+простое ли 17? 17 простое; его делители — 1 и 17.
+22 is not prime; 22 = 2 × 11.
+26 составное; 26 = 2 × 13.
+is 2 prime? 2 is prime; its divisors are 1 and 2.
+простое ли 6? 6 составное; 6 = 2 × 3.
+11 is prime; its divisors are 1 and 11.
+15 составное; 15 = 3 × 5.
+is 19 prime? 19 is prime; its divisors are 1 and 19.
+простое ли 23? 23 простое; его делители — 1 и 23.
+28 is not prime; 28 = 2 × 14.
+4 составное; 4 = 2 × 2.
+is 8 prime? 8 is not prime; 8 = 2 × 4.
+простое ли 12? 12 составное; 12 = 2 × 6.
+17 is prime; its divisors are 1 and 17.
+21 составное; 21 = 3 × 7.
+is 25 prime? 25 is not prime; 25 = 5 × 5.
+простое ли 29? 29 простое; его делители — 1 и 29.
+6 is not prime; 6 = 2 × 3.
+10 составное; 10 = 2 × 5.
+is 14 prime? 14 is not prime; 14 = 2 × 7.
+простое ли 18? 18 составное; 18 = 2 × 9.
+23 is prime; its divisors are 1 and 23.
+27 составное; 27 = 3 × 9.
+is 3 prime? 3 is prime; its divisors are 1 and 3.
+простое ли 7? 7 простое; его делители — 1 и 7.
+12 is not prime; 12 = 2 × 6.
+16 составное; 16 = 2 × 8.
+is 20 prime? 20 is not prime; 20 = 2 × 10.
+простое ли 24? 24 составное; 24 = 2 × 12.
+29 is prime; its divisors are 1 and 29.
+5 простое; его делители — 1 и 5.
+is 9 prime? 9 is not prime; 9 = 3 × 3.
+простое ли 13? 13 простое; его делители — 1 и 13.
+18 is not prime; 18 = 2 × 9.
+22 составное; 22 = 2 × 11.
+is 26 prime? 26 is not prime; 26 = 2 × 13.
+простое ли 2? 2 простое; его делители — 1 и 2.
+7 is prime; its divisors are 1 and 7.
+11 простое; его делители — 1 и 11.
+is 15 prime? 15 is not prime; 15 = 3 × 5.
+простое ли 19? 19 простое; его делители — 1 и 19.
+24 is not prime; 24 = 2 × 12.
+28 составное; 28 = 2 × 14.
+is 4 prime? 4 is not prime; 4 = 2 × 2.
+простое ли 8? 8 составное; 8 = 2 × 4.
+13 is prime; its divisors are 1 and 13.
+17 простое; его делители — 1 и 17.
+is 21 prime? 21 is not prime; 21 = 3 × 7.
+простое ли 25? 25 составное; 25 = 5 × 5.
+2 is prime; its divisors are 1 and 2.
+6 составное; 6 = 2 × 3.
+is 10 prime? 10 is not prime; 10 = 2 × 5.
+простое ли 14? 14 составное; 14 = 2 × 7.
+19 is prime; its divisors are 1 and 19.
 23 простое; его делители — 1 и 23.
+is 27 prime? 27 is not prime; 27 = 3 × 9.
+простое ли 3? 3 простое; его делители — 1 и 3.
+8 is not prime; 8 = 2 × 4.
+12 составное; 12 = 2 × 6.
+is 16 prime? 16 is not prime; 16 = 2 × 8.
+простое ли 20? 20 составное; 20 = 2 × 10.
+25 is not prime; 25 = 5 × 5.
+29 простое; его делители — 1 и 29.
+is 5 prime? 5 is prime; its divisors are 1 and 5.
+простое ли 9? 9 составное; 9 = 3 × 3.
+14 is not prime; 14 = 2 × 7.
+18 составное; 18 = 2 × 9.
+is 22 prime? 22 is not prime; 22 = 2 × 11.
+простое ли 26? 26 составное; 26 = 2 × 13.
 
-6 factorises into 2 × 3.
-14 раскладывается в 2 × 7.
-23 factorises into 23.
-31 раскладывается в 31.
-4 factorises into 2 × 2.
-12 раскладывается в 2 × 2 × 3.
-21 factorises into 3 × 7.
-29 раскладывается в 29.
-38 factorises into 2 × 19.
-10 раскладывается в 2 × 5.
-19 factorises into 19.
-27 раскладывается в 3 × 3 × 3.
-36 factorises into 2 × 2 × 3 × 3.
-8 раскладывается в 2 × 2 × 2.
-17 factorises into 17.
-25 раскладывается в 5 × 5.
-34 factorises into 2 × 17.
-6 раскладывается в 2 × 3.
-15 factorises into 3 × 5.
-23 раскладывается в 23.
-32 factorises into 2 × 2 × 2 × 2 × 2.
-4 раскладывается в 2 × 2.
-13 factorises into 13.
-21 раскладывается в 3 × 7.
-30 factorises into 2 × 3 × 5.
-38 раскладывается в 2 × 19.
-11 factorises into 11.
-19 раскладывается в 19.
-28 factorises into 2 × 2 × 7.
-36 раскладывается в 2 × 2 × 3 × 3.
-9 factorises into 3 × 3.
-17 раскладывается в 17.
-26 factorises into 2 × 13.
-34 раскладывается в 2 × 17.
-7 factorises into 7.
-15 раскладывается в 3 × 5.
-24 factorises into 2 × 2 × 2 × 3.
-32 раскладывается в 2 × 2 × 2 × 2 × 2.
+is 1 prime? 1 is neither prime nor composite: its only divisor is 1.
+простое ли 1? 1 ни простое, ни составное: его единственный делитель — 1.
+
 5 factorises into 5.
-13 раскладывается в 13.
-22 factorises into 2 × 11.
-30 раскладывается в 2 × 3 × 5.
-39 factorises into 3 × 13.
-11 раскладывается в 11.
-20 factorises into 2 × 2 × 5.
-28 раскладывается в 2 × 2 × 7.
-37 factorises into 37.
 9 раскладывается в 3 × 3.
-18 factorises into 2 × 3 × 3.
+what does 13 factorise into? 13 factorises into 13.
+во что раскладывается 17? 17 раскладывается в 17.
+22 factorises into 2 × 11.
 26 раскладывается в 2 × 13.
-35 factorises into 5 × 7.
+what does 30 factorise into? 30 factorises into 2 × 3 × 5.
+во что раскладывается 34? 34 раскладывается в 2 × 17.
+39 factorises into 3 × 13.
 7 раскладывается в 7.
-16 factorises into 2 × 2 × 2 × 2.
+what does 11 factorise into? 11 factorises into 11.
+во что раскладывается 15? 15 раскладывается в 3 × 5.
+20 factorises into 2 × 2 × 5.
 24 раскладывается в 2 × 2 × 2 × 3.
-33 factorises into 3 × 11.
+what does 28 factorise into? 28 factorises into 2 × 2 × 7.
+во что раскладывается 32? 32 раскладывается в 2 × 2 × 2 × 2 × 2.
+37 factorises into 37.
 5 раскладывается в 5.
-14 factorises into 2 × 7.
+what does 9 factorise into? 9 factorises into 3 × 3.
+во что раскладывается 13? 13 раскладывается в 13.
+18 factorises into 2 × 3 × 3.
 22 раскладывается в 2 × 11.
-31 factorises into 31.
+what does 26 factorise into? 26 factorises into 2 × 13.
+во что раскладывается 30? 30 раскладывается в 2 × 3 × 5.
+35 factorises into 5 × 7.
 39 раскладывается в 3 × 13.
-12 factorises into 2 × 2 × 3.
+what does 7 factorise into? 7 factorises into 7.
+во что раскладывается 11? 11 раскладывается в 11.
+16 factorises into 2 × 2 × 2 × 2.
 20 раскладывается в 2 × 2 × 5.
-29 factorises into 29.
+what does 24 factorise into? 24 factorises into 2 × 2 × 2 × 3.
+во что раскладывается 28? 28 раскладывается в 2 × 2 × 7.
+33 factorises into 3 × 11.
 37 раскладывается в 37.
-10 factorises into 2 × 5.
+what does 5 factorise into? 5 factorises into 5.
+во что раскладывается 9? 9 раскладывается в 3 × 3.
+14 factorises into 2 × 7.
 18 раскладывается в 2 × 3 × 3.
-27 factorises into 3 × 3 × 3.
+what does 22 factorise into? 22 factorises into 2 × 11.
+во что раскладывается 26? 26 раскладывается в 2 × 13.
+31 factorises into 31.
 35 раскладывается в 5 × 7.
-8 factorises into 2 × 2 × 2.
+what does 39 factorise into? 39 factorises into 3 × 13.
+во что раскладывается 7? 7 раскладывается в 7.
+12 factorises into 2 × 2 × 3.
 16 раскладывается в 2 × 2 × 2 × 2.
-25 factorises into 5 × 5.
+what does 20 factorise into? 20 factorises into 2 × 2 × 5.
+во что раскладывается 24? 24 раскладывается в 2 × 2 × 2 × 3.
+29 factorises into 29.
 33 раскладывается в 3 × 11.
+what does 37 factorise into? 37 factorises into 37.
+во что раскладывается 5? 5 раскладывается в 5.
+10 factorises into 2 × 5.
+14 раскладывается в 2 × 7.
+what does 18 factorise into? 18 factorises into 2 × 3 × 3.
+во что раскладывается 22? 22 раскладывается в 2 × 11.
+27 factorises into 3 × 3 × 3.
+31 раскладывается в 31.
+what does 35 factorise into? 35 factorises into 5 × 7.
+во что раскладывается 39? 39 раскладывается в 3 × 13.
+8 factorises into 2 × 2 × 2.
+12 раскладывается в 2 × 2 × 3.
+what does 16 factorise into? 16 factorises into 2 × 2 × 2 × 2.
+во что раскладывается 20? 20 раскладывается в 2 × 2 × 5.
+25 factorises into 5 × 5.
+29 раскладывается в 29.
+what does 33 factorise into? 33 factorises into 3 × 11.
+во что раскладывается 37? 37 раскладывается в 37.
+6 factorises into 2 × 3.
+10 раскладывается в 2 × 5.
+what does 14 factorise into? 14 factorises into 2 × 7.
+во что раскладывается 18? 18 раскладывается в 2 × 3 × 3.
+23 factorises into 23.
+27 раскладывается в 3 × 3 × 3.
+what does 31 factorise into? 31 factorises into 31.
+во что раскладывается 35? 35 раскладывается в 5 × 7.
+4 factorises into 2 × 2.
+8 раскладывается в 2 × 2 × 2.
+what does 12 factorise into? 12 factorises into 2 × 2 × 3.
+во что раскладывается 16? 16 раскладывается в 2 × 2 × 2 × 2.
+21 factorises into 3 × 7.
+25 раскладывается в 5 × 5.
+what does 29 factorise into? 29 factorises into 29.
+во что раскладывается 33? 33 раскладывается в 3 × 11.
+38 factorises into 2 × 19.
+6 раскладывается в 2 × 3.
+what does 10 factorise into? 10 factorises into 2 × 5.
+во что раскладывается 14? 14 раскладывается в 2 × 7.
+19 factorises into 19.
+23 раскладывается в 23.
+what does 27 factorise into? 27 factorises into 3 × 3 × 3.
+во что раскладывается 31? 31 раскладывается в 31.
+36 factorises into 2 × 2 × 3 × 3.
+4 раскладывается в 2 × 2.
+what does 8 factorise into? 8 factorises into 2 × 2 × 2.
+во что раскладывается 12? 12 раскладывается в 2 × 2 × 3.
+17 factorises into 17.
+21 раскладывается в 3 × 7.
+what does 25 factorise into? 25 factorises into 5 × 5.
+во что раскладывается 29? 29 раскладывается в 29.
+34 factorises into 2 × 17.
+38 раскладывается в 2 × 19.
+what does 6 factorise into? 6 factorises into 2 × 3.
+во что раскладывается 10? 10 раскладывается в 2 × 5.
+15 factorises into 3 × 5.
+19 раскладывается в 19.
+what does 23 factorise into? 23 factorises into 23.
+во что раскладывается 27? 27 раскладывается в 3 × 3 × 3.
+32 factorises into 2 × 2 × 2 × 2 × 2.
+36 раскладывается в 2 × 2 × 3 × 3.
+what does 4 factorise into? 4 factorises into 2 × 2.
+во что раскладывается 8? 8 раскладывается в 2 × 2 × 2.
+13 factorises into 13.
+17 раскладывается в 17.
+what does 21 factorise into? 21 factorises into 3 × 7.
+во что раскладывается 25? 25 раскладывается в 5 × 5.
+30 factorises into 2 × 3 × 5.
+34 раскладывается в 2 × 17.
+what does 38 factorise into? 38 factorises into 2 × 19.
+во что раскладывается 6? 6 раскладывается в 2 × 3.
+11 factorises into 11.
+15 раскладывается в 3 × 5.
+what does 19 factorise into? 19 factorises into 19.
+во что раскладывается 23? 23 раскладывается в 23.
+28 factorises into 2 × 2 × 7.
+32 раскладывается в 2 × 2 × 2 × 2 × 2.
+what does 36 factorise into? 36 factorises into 2 × 2 × 3 × 3.
+во что раскладывается 4? 4 раскладывается в 2 × 2.
+9 factorises into 3 × 3.
+13 раскладывается в 13.
+what does 17 factorise into? 17 factorises into 17.
+во что раскладывается 21? 21 раскладывается в 3 × 7.
+26 factorises into 2 × 13.
+30 раскладывается в 2 × 3 × 5.
+what does 34 factorise into? 34 factorises into 2 × 17.
+во что раскладывается 38? 38 раскладывается в 2 × 19.
+7 factorises into 7.
+11 раскладывается в 11.
+what does 15 factorise into? 15 factorises into 3 × 5.
+во что раскладывается 19? 19 раскладывается в 19.
+24 factorises into 2 × 2 × 2 × 3.
+28 раскладывается в 2 × 2 × 7.
+what does 32 factorise into? 32 factorises into 2 × 2 × 2 × 2 × 2.
+во что раскладывается 36? 36 раскладывается в 2 × 2 × 3 × 3.
 
-the divisors of 8 are 1 2 4 8.
-делители 16 — это 1 2 4 8 16.
-the divisors of 25 are 1 5 25.
-делители 9 — это 1 3 9.
-the divisors of 18 are 1 2 3 6 9 18.
-делители 26 — это 1 2 13 26.
-the divisors of 11 are 1 11.
-делители 19 — это 1 19.
-the divisors of 28 are 1 2 4 7 14 28.
-делители 12 — это 1 2 3 4 6 12.
-the divisors of 21 are 1 3 7 21.
-делители 29 — это 1 29.
-the divisors of 14 are 1 2 7 14.
-делители 22 — это 1 2 11 22.
 the divisors of 7 are 1 7.
-делители 15 — это 1 3 5 15.
-the divisors of 24 are 1 2 3 4 6 8 12 24.
-делители 8 — это 1 2 4 8.
-the divisors of 17 are 1 17.
-делители 25 — это 1 5 25.
-the divisors of 10 are 1 2 5 10.
-делители 18 — это 1 2 3 6 9 18.
-the divisors of 27 are 1 3 9 27.
 делители 11 — это 1 11.
-the divisors of 20 are 1 2 4 5 10 20.
+what are the divisors of 15? the divisors of 15 are 1 3 5 15.
+каковы делители 19? делители 19 — это 1 19.
+the divisors of 24 are 1 2 3 4 6 8 12 24.
 делители 28 — это 1 2 4 7 14 28.
-the divisors of 13 are 1 13.
+what are the divisors of 8? the divisors of 8 are 1 2 4 8.
+каковы делители 12? делители 12 — это 1 2 3 4 6 12.
+the divisors of 17 are 1 17.
 делители 21 — это 1 3 7 21.
-the divisors of 6 are 1 2 3 6.
+what are the divisors of 25? the divisors of 25 are 1 5 25.
+каковы делители 29? делители 29 — это 1 29.
+the divisors of 10 are 1 2 5 10.
 делители 14 — это 1 2 7 14.
-the divisors of 23 are 1 23.
+what are the divisors of 18? the divisors of 18 are 1 2 3 6 9 18.
+каковы делители 22? делители 22 — это 1 2 11 22.
+the divisors of 27 are 1 3 9 27.
 делители 7 — это 1 7.
-the divisors of 16 are 1 2 4 8 16.
+what are the divisors of 11? the divisors of 11 are 1 11.
+каковы делители 15? делители 15 — это 1 3 5 15.
+the divisors of 20 are 1 2 4 5 10 20.
 делители 24 — это 1 2 3 4 6 8 12 24.
-the divisors of 9 are 1 3 9.
+what are the divisors of 28? the divisors of 28 are 1 2 4 7 14 28.
+каковы делители 8? делители 8 — это 1 2 4 8.
+the divisors of 13 are 1 13.
 делители 17 — это 1 17.
-the divisors of 26 are 1 2 13 26.
+what are the divisors of 21? the divisors of 21 are 1 3 7 21.
+каковы делители 25? делители 25 — это 1 5 25.
+the divisors of 6 are 1 2 3 6.
 делители 10 — это 1 2 5 10.
-the divisors of 19 are 1 19.
+what are the divisors of 14? the divisors of 14 are 1 2 7 14.
+каковы делители 18? делители 18 — это 1 2 3 6 9 18.
+the divisors of 23 are 1 23.
 делители 27 — это 1 3 9 27.
-the divisors of 12 are 1 2 3 4 6 12.
+what are the divisors of 7? the divisors of 7 are 1 7.
+каковы делители 11? делители 11 — это 1 11.
+the divisors of 16 are 1 2 4 8 16.
 делители 20 — это 1 2 4 5 10 20.
-the divisors of 29 are 1 29.
+what are the divisors of 24? the divisors of 24 are 1 2 3 4 6 8 12 24.
+каковы делители 28? делители 28 — это 1 2 4 7 14 28.
+the divisors of 9 are 1 3 9.
 делители 13 — это 1 13.
-the divisors of 22 are 1 2 11 22.
+what are the divisors of 17? the divisors of 17 are 1 17.
+каковы делители 21? делители 21 — это 1 3 7 21.
+the divisors of 26 are 1 2 13 26.
 делители 6 — это 1 2 3 6.
-the divisors of 15 are 1 3 5 15.
+what are the divisors of 10? the divisors of 10 are 1 2 5 10.
+каковы делители 14? делители 14 — это 1 2 7 14.
+the divisors of 19 are 1 19.
 делители 23 — это 1 23.
+what are the divisors of 27? the divisors of 27 are 1 3 9 27.
+каковы делители 7? делители 7 — это 1 7.
+the divisors of 12 are 1 2 3 4 6 12.
+делители 16 — это 1 2 4 8 16.
+what are the divisors of 20? the divisors of 20 are 1 2 4 5 10 20.
+каковы делители 24? делители 24 — это 1 2 3 4 6 8 12 24.
+the divisors of 29 are 1 29.
+делители 9 — это 1 3 9.
+what are the divisors of 13? the divisors of 13 are 1 13.
+каковы делители 17? делители 17 — это 1 17.
+the divisors of 22 are 1 2 11 22.
+делители 26 — это 1 2 13 26.
+what are the divisors of 6? the divisors of 6 are 1 2 3 6.
+каковы делители 10? делители 10 — это 1 2 5 10.
+the divisors of 15 are 1 3 5 15.
+делители 19 — это 1 19.
+what are the divisors of 23? the divisors of 23 are 1 23.
+каковы делители 27? делители 27 — это 1 3 9 27.
+the divisors of 8 are 1 2 4 8.
+делители 12 — это 1 2 3 4 6 12.
+what are the divisors of 16? the divisors of 16 are 1 2 4 8 16.
+каковы делители 20? делители 20 — это 1 2 4 5 10 20.
+the divisors of 25 are 1 5 25.
+делители 29 — это 1 29.
+what are the divisors of 9? the divisors of 9 are 1 3 9.
+каковы делители 13? делители 13 — это 1 13.
+the divisors of 18 are 1 2 3 6 9 18.
+делители 22 — это 1 2 11 22.
+what are the divisors of 26? the divisors of 26 are 1 2 13 26.
+каковы делители 6? делители 6 — это 1 2 3 6.
+the divisors of 11 are 1 11.
+делители 15 — это 1 3 5 15.
+what are the divisors of 19? the divisors of 19 are 1 19.
+каковы делители 23? делители 23 — это 1 23.
+the divisors of 28 are 1 2 4 7 14 28.
+делители 8 — это 1 2 4 8.
+what are the divisors of 12? the divisors of 12 are 1 2 3 4 6 12.
+каковы делители 16? делители 16 — это 1 2 4 8 16.
+the divisors of 21 are 1 3 7 21.
+делители 25 — это 1 5 25.
+what are the divisors of 29? the divisors of 29 are 1 29.
+каковы делители 9? делители 9 — это 1 3 9.
+the divisors of 14 are 1 2 7 14.
+делители 18 — это 1 2 3 6 9 18.
+what are the divisors of 22? the divisors of 22 are 1 2 11 22.
+каковы делители 26? делители 26 — это 1 2 13 26.
 
-13 mod 3 = 1.
-25 по модулю 7 равно 4.
-37 and 1 are congruent modulo 4.
-49 и 1 сравнимы по модулю 8.
-64 mod 6 = 4.
-76 по модулю 3 равно 1.
-16 and 0 are congruent modulo 4.
-28 и 4 сравнимы по модулю 8.
-43 mod 6 = 1.
-55 по модулю 3 равно 1.
-67 and 4 are congruent modulo 7.
-79 и 3 сравнимы по модулю 4.
-22 mod 6 = 4.
-34 по модулю 3 равно 1.
-46 and 4 are congruent modulo 7.
-58 и 2 сравнимы по модулю 4.
-73 mod 2 = 1.
-13 по модулю 3 равно 1.
-25 and 4 are congruent modulo 7.
-37 и 1 сравнимы по модулю 4.
-52 mod 2 = 0.
-64 по модулю 6 равно 4.
-76 and 1 are congruent modulo 3.
-16 и 0 сравнимы по модулю 4.
-31 mod 2 = 1.
-43 по модулю 6 равно 1.
-55 and 1 are congruent modulo 3.
-67 и 4 сравнимы по модулю 7.
-10 mod 2 = 0.
-22 по модулю 6 равно 4.
-34 and 1 are congruent modulo 3.
-46 и 4 сравнимы по модулю 7.
-61 mod 5 = 1.
-73 по модулю 2 равно 1.
-13 and 1 are congruent modulo 3.
-25 и 4 сравнимы по модулю 7.
-40 mod 5 = 0.
-52 по модулю 2 равно 0.
-64 and 4 are congruent modulo 6.
-76 и 1 сравнимы по модулю 3.
-19 mod 5 = 4.
-31 по модулю 2 равно 1.
-43 and 1 are congruent modulo 6.
-55 и 1 сравнимы по модулю 3.
-70 mod 8 = 6.
-10 по модулю 2 равно 0.
-22 and 4 are congruent modulo 6.
-34 и 1 сравнимы по модулю 3.
-49 mod 8 = 1.
-61 по модулю 5 равно 1.
-73 and 1 are congruent modulo 2.
-13 и 1 сравнимы по модулю 3.
-28 mod 8 = 4.
-40 по модулю 5 равно 0.
-52 and 0 are congruent modulo 2.
-64 и 4 сравнимы по модулю 6.
-79 mod 4 = 3.
-19 по модулю 5 равно 4.
-31 and 1 are congruent modulo 2.
-43 и 1 сравнимы по модулю 6.
-58 mod 4 = 2.
-70 по модулю 8 равно 6.
-10 and 0 are congruent modulo 2.
-22 и 4 сравнимы по модулю 6.
+what is 10 mod 2? 10 mod 2 = 0.
+чему равно 16 по модулю 4? 16 по модулю 4 равно 0.
+are 22 and 4 congruent modulo 6? 22 and 4 are congruent modulo 6.
+сравнимы ли 28 и 4 по модулю 8? 28 и 4 сравнимы по модулю 8.
 37 mod 4 = 1.
-49 по модулю 8 равно 1.
-61 and 1 are congruent modulo 5.
-73 и 1 сравнимы по модулю 2.
-16 mod 4 = 0.
-28 по модулю 8 равно 4.
-40 and 0 are congruent modulo 5.
-52 и 0 сравнимы по модулю 2.
-67 mod 7 = 4.
-79 по модулю 4 равно 3.
-19 and 4 are congruent modulo 5.
-31 и 1 сравнимы по модулю 2.
-46 mod 7 = 4.
-58 по модулю 4 равно 2.
-70 and 6 are congruent modulo 8.
-10 и 0 сравнимы по модулю 2.
-25 mod 7 = 4.
-37 по модулю 4 равно 1.
+43 по модулю 6 равно 1.
 49 and 1 are congruent modulo 8.
-61 и 1 сравнимы по модулю 5.
-76 mod 3 = 1.
-16 по модулю 4 равно 0.
+55 и 1 сравнимы по модулю 3.
+what is 61 mod 5? 61 mod 5 = 1.
+чему равно 67 по модулю 7? 67 по модулю 7 равно 4.
+are 73 and 1 congruent modulo 2? 73 and 1 are congruent modulo 2.
+сравнимы ли 79 и 3 по модулю 4? 79 и 3 сравнимы по модулю 4.
+16 mod 4 = 0.
+22 по модулю 6 равно 4.
 28 and 4 are congruent modulo 8.
-40 и 0 сравнимы по модулю 5.
-55 mod 3 = 1.
-67 по модулю 7 равно 4.
+34 и 1 сравнимы по модулю 3.
+what is 40 mod 5? 40 mod 5 = 0.
+чему равно 46 по модулю 7? 46 по модулю 7 равно 4.
+are 52 and 0 congruent modulo 2? 52 and 0 are congruent modulo 2.
+сравнимы ли 58 и 2 по модулю 4? 58 и 2 сравнимы по модулю 4.
+67 mod 7 = 4.
+73 по модулю 2 равно 1.
 79 and 3 are congruent modulo 4.
-19 и 4 сравнимы по модулю 5.
-34 mod 3 = 1.
-46 по модулю 7 равно 4.
+13 и 1 сравнимы по модулю 3.
+what is 19 mod 5? 19 mod 5 = 4.
+чему равно 25 по модулю 7? 25 по модулю 7 равно 4.
+are 31 and 1 congruent modulo 2? 31 and 1 are congruent modulo 2.
+сравнимы ли 37 и 1 по модулю 4? 37 и 1 сравнимы по модулю 4.
+46 mod 7 = 4.
+52 по модулю 2 равно 0.
 58 and 2 are congruent modulo 4.
+64 и 4 сравнимы по модулю 6.
+what is 70 mod 8? 70 mod 8 = 6.
+чему равно 76 по модулю 3? 76 по модулю 3 равно 1.
+are 10 and 0 congruent modulo 2? 10 and 0 are congruent modulo 2.
+сравнимы ли 16 и 0 по модулю 4? 16 и 0 сравнимы по модулю 4.
+25 mod 7 = 4.
+31 по модулю 2 равно 1.
+37 and 1 are congruent modulo 4.
+43 и 1 сравнимы по модулю 6.
+what is 49 mod 8? 49 mod 8 = 1.
+чему равно 55 по модулю 3? 55 по модулю 3 равно 1.
+are 61 and 1 congruent modulo 5? 61 and 1 are congruent modulo 5.
+сравнимы ли 67 и 4 по модулю 7? 67 и 4 сравнимы по модулю 7.
+76 mod 3 = 1.
+10 по модулю 2 равно 0.
+16 and 0 are congruent modulo 4.
+22 и 4 сравнимы по модулю 6.
+what is 28 mod 8? 28 mod 8 = 4.
+чему равно 34 по модулю 3? 34 по модулю 3 равно 1.
+are 40 and 0 congruent modulo 5? 40 and 0 are congruent modulo 5.
+сравнимы ли 46 и 4 по модулю 7? 46 и 4 сравнимы по модулю 7.
+55 mod 3 = 1.
+61 по модулю 5 равно 1.
+67 and 4 are congruent modulo 7.
+73 и 1 сравнимы по модулю 2.
+what is 79 mod 4? 79 mod 4 = 3.
+чему равно 13 по модулю 3? 13 по модулю 3 равно 1.
+are 19 and 4 congruent modulo 5? 19 and 4 are congruent modulo 5.
+сравнимы ли 25 и 4 по модулю 7? 25 и 4 сравнимы по модулю 7.
+34 mod 3 = 1.
+40 по модулю 5 равно 0.
+46 and 4 are congruent modulo 7.
+52 и 0 сравнимы по модулю 2.
+what is 58 mod 4? 58 mod 4 = 2.
+чему равно 64 по модулю 6? 64 по модулю 6 равно 4.
+are 70 and 6 congruent modulo 8? 70 and 6 are congruent modulo 8.
+сравнимы ли 76 и 1 по модулю 3? 76 и 1 сравнимы по модулю 3.
+13 mod 3 = 1.
+19 по модулю 5 равно 4.
+25 and 4 are congruent modulo 7.
+31 и 1 сравнимы по модулю 2.
+what is 37 mod 4? 37 mod 4 = 1.
+чему равно 43 по модулю 6? 43 по модулю 6 равно 1.
+are 49 and 1 congruent modulo 8? 49 and 1 are congruent modulo 8.
+сравнимы ли 55 и 1 по модулю 3? 55 и 1 сравнимы по модулю 3.
+64 mod 6 = 4.
+70 по модулю 8 равно 6.
+76 and 1 are congruent modulo 3.
+10 и 0 сравнимы по модулю 2.
+what is 16 mod 4? 16 mod 4 = 0.
+чему равно 22 по модулю 6? 22 по модулю 6 равно 4.
+are 28 and 4 congruent modulo 8? 28 and 4 are congruent modulo 8.
+сравнимы ли 34 и 1 по модулю 3? 34 и 1 сравнимы по модулю 3.
+43 mod 6 = 1.
+49 по модулю 8 равно 1.
+55 and 1 are congruent modulo 3.
+61 и 1 сравнимы по модулю 5.
+what is 67 mod 7? 67 mod 7 = 4.
+чему равно 73 по модулю 2? 73 по модулю 2 равно 1.
+are 79 and 3 congruent modulo 4? 79 and 3 are congruent modulo 4.
+сравнимы ли 13 и 1 по модулю 3? 13 и 1 сравнимы по модулю 3.
+22 mod 6 = 4.
+28 по модулю 8 равно 4.
+34 and 1 are congruent modulo 3.
+40 и 0 сравнимы по модулю 5.
+what is 46 mod 7? 46 mod 7 = 4.
+чему равно 52 по модулю 2? 52 по модулю 2 равно 0.
+are 58 and 2 congruent modulo 4? 58 and 2 are congruent modulo 4.
+сравнимы ли 64 и 4 по модулю 6? 64 и 4 сравнимы по модулю 6.
+73 mod 2 = 1.
+79 по модулю 4 равно 3.
+13 and 1 are congruent modulo 3.
+19 и 4 сравнимы по модулю 5.
+what is 25 mod 7? 25 mod 7 = 4.
+чему равно 31 по модулю 2? 31 по модулю 2 равно 1.
+are 37 and 1 congruent modulo 4? 37 and 1 are congruent modulo 4.
+сравнимы ли 43 и 1 по модулю 6? 43 и 1 сравнимы по модулю 6.
+52 mod 2 = 0.
+58 по модулю 4 равно 2.
+64 and 4 are congruent modulo 6.
 70 и 6 сравнимы по модулю 8.
+what is 76 mod 3? 76 mod 3 = 1.
+чему равно 10 по модулю 2? 10 по модулю 2 равно 0.
+are 16 and 0 congruent modulo 4? 16 and 0 are congruent modulo 4.
+сравнимы ли 22 и 4 по модулю 6? 22 и 4 сравнимы по модулю 6.
+31 mod 2 = 1.
+37 по модулю 4 равно 1.
+43 and 1 are congruent modulo 6.
+49 и 1 сравнимы по модулю 8.
+what is 55 mod 3? 55 mod 3 = 1.
+чему равно 61 по модулю 5? 61 по модулю 5 равно 1.
+are 67 and 4 congruent modulo 7? 67 and 4 are congruent modulo 7.
+сравнимы ли 73 и 1 по модулю 2? 73 и 1 сравнимы по модулю 2.
+10 mod 2 = 0.
+16 по модулю 4 равно 0.
+22 and 4 are congruent modulo 6.
+28 и 4 сравнимы по модулю 8.
+what is 34 mod 3? 34 mod 3 = 1.
+чему равно 40 по модулю 5? 40 по модулю 5 равно 0.
+are 46 and 4 congruent modulo 7? 46 and 4 are congruent modulo 7.
+сравнимы ли 52 и 0 по модулю 2? 52 и 0 сравнимы по модулю 2.
+61 mod 5 = 1.
+67 по модулю 7 равно 4.
+73 and 1 are congruent modulo 2.
+79 и 3 сравнимы по модулю 4.
+what is 13 mod 3? 13 mod 3 = 1.
+чему равно 19 по модулю 5? 19 по модулю 5 равно 4.
+are 25 and 4 congruent modulo 7? 25 and 4 are congruent modulo 7.
+сравнимы ли 31 и 1 по модулю 2? 31 и 1 сравнимы по модулю 2.
+40 mod 5 = 0.
+46 по модулю 7 равно 4.
+52 and 0 are congruent modulo 2.
+58 и 2 сравнимы по модулю 4.
+what is 64 mod 6? 64 mod 6 = 4.
+чему равно 70 по модулю 8? 70 по модулю 8 равно 6.
+are 76 and 1 congruent modulo 3? 76 and 1 are congruent modulo 3.
+сравнимы ли 10 и 0 по модулю 2? 10 и 0 сравнимы по модулю 2.
+19 mod 5 = 4.
+25 по модулю 7 равно 4.
+31 and 1 are congruent modulo 2.
+37 и 1 сравнимы по модулю 4.
+what is 43 mod 6? 43 mod 6 = 1.
+чему равно 49 по модулю 8? 49 по модулю 8 равно 1.
+are 55 and 1 congruent modulo 3? 55 and 1 are congruent modulo 3.
+сравнимы ли 61 и 1 по модулю 5? 61 и 1 сравнимы по модулю 5.
+70 mod 8 = 6.
+76 по модулю 3 равно 1.
+10 and 0 are congruent modulo 2.
+16 и 0 сравнимы по модулю 4.
+what is 22 mod 6? 22 mod 6 = 4.
+чему равно 28 по модулю 8? 28 по модулю 8 равно 4.
+are 34 and 1 congruent modulo 3? 34 and 1 are congruent modulo 3.
+сравнимы ли 40 и 0 по модулю 5? 40 и 0 сравнимы по модулю 5.
+49 mod 8 = 1.
+55 по модулю 3 равно 1.
+61 and 1 are congruent modulo 5.
+67 и 4 сравнимы по модулю 7.
+what is 73 mod 2? 73 mod 2 = 1.
+чему равно 79 по модулю 4? 79 по модулю 4 равно 3.
+are 13 and 1 congruent modulo 3? 13 and 1 are congruent modulo 3.
+сравнимы ли 19 и 4 по модулю 5? 19 и 4 сравнимы по модулю 5.
+28 mod 8 = 4.
+34 по модулю 3 равно 1.
+40 and 0 are congruent modulo 5.
+46 и 4 сравнимы по модулю 7.
+what is 52 mod 2? 52 mod 2 = 0.
+чему равно 58 по модулю 4? 58 по модулю 4 равно 2.
+are 64 and 4 congruent modulo 6? 64 and 4 are congruent modulo 6.
+сравнимы ли 70 и 6 по модулю 8? 70 и 6 сравнимы по модулю 8.
+79 mod 4 = 3.
+13 по модулю 3 равно 1.
+19 and 4 are congruent modulo 5.
+25 и 4 сравнимы по модулю 7.
+what is 31 mod 2? 31 mod 2 = 1.
+чему равно 37 по модулю 4? 37 по модулю 4 равно 1.
+are 43 and 1 congruent modulo 6? 43 and 1 are congruent modulo 6.
+сравнимы ли 49 и 1 по модулю 8? 49 и 1 сравнимы по модулю 8.
+58 mod 4 = 2.
+64 по модулю 6 равно 4.
+70 and 6 are congruent modulo 8.
+76 и 1 сравнимы по модулю 3.
 
-9 and 13 are coprime; their gcd is 1.
-17 и 29 взаимно просты; их нод равен 1.
-26 and 47 are coprime; their gcd is 1.
-14 и 23 взаимно просты; их нод равен 1.
-23 and 41 are coprime; their gcd is 1.
-11 и 17 взаимно просты; их нод равен 1.
-20 and 35 are not coprime; their gcd is 5.
-8 и 11 взаимно просты; их нод равен 1.
-17 and 29 are coprime; their gcd is 1.
-25 и 45 не взаимно просты; их нод равен 5.
-14 and 23 are coprime; their gcd is 1.
-22 и 39 взаимно просты; их нод равен 1.
-11 and 17 are coprime; their gcd is 1.
-19 и 33 взаимно просты; их нод равен 1.
 8 and 11 are coprime; their gcd is 1.
-16 и 27 взаимно просты; их нод равен 1.
-25 and 45 are not coprime; their gcd is 5.
-13 и 21 взаимно просты; их нод равен 1.
-22 and 39 are coprime; their gcd is 1.
-10 и 15 не взаимно просты; их нод равен 5.
-19 and 33 are coprime; their gcd is 1.
-7 и 9 взаимно просты; их нод равен 1.
-16 and 27 are coprime; their gcd is 1.
-24 и 43 взаимно просты; их нод равен 1.
-13 and 21 are coprime; their gcd is 1.
-21 и 37 взаимно просты; их нод равен 1.
-10 and 15 are not coprime; their gcd is 5.
-18 и 31 взаимно просты; их нод равен 1.
-7 and 9 are coprime; their gcd is 1.
-15 и 25 не взаимно просты; их нод равен 5.
-24 and 43 are coprime; their gcd is 1.
 12 и 19 взаимно просты; их нод равен 1.
-21 and 37 are coprime; their gcd is 1.
+are 16 and 27 coprime? 16 and 27 are coprime; their gcd is 1.
+взаимно ли просты 20 и 35? 20 и 35 не взаимно просты; их нод равен 5.
+25 and 45 are not coprime; their gcd is 5.
 9 и 13 взаимно просты; их нод равен 1.
-18 and 31 are coprime; their gcd is 1.
+are 13 and 21 coprime? 13 and 21 are coprime; their gcd is 1.
+взаимно ли просты 17 и 29? 17 и 29 взаимно просты; их нод равен 1.
+22 and 39 are coprime; their gcd is 1.
 26 и 47 взаимно просты; их нод равен 1.
-15 and 25 are not coprime; their gcd is 5.
+are 10 and 15 coprime? 10 and 15 are not coprime; their gcd is 5.
+взаимно ли просты 14 и 23? 14 и 23 взаимно просты; их нод равен 1.
+19 and 33 are coprime; their gcd is 1.
 23 и 41 взаимно просты; их нод равен 1.
-12 and 19 are coprime; their gcd is 1.
+are 7 and 9 coprime? 7 and 9 are coprime; their gcd is 1.
+взаимно ли просты 11 и 17? 11 и 17 взаимно просты; их нод равен 1.
+16 and 27 are coprime; their gcd is 1.
 20 и 35 не взаимно просты; их нод равен 5.
+are 24 and 43 coprime? 24 and 43 are coprime; their gcd is 1.
+взаимно ли просты 8 и 11? 8 и 11 взаимно просты; их нод равен 1.
+13 and 21 are coprime; their gcd is 1.
+17 и 29 взаимно просты; их нод равен 1.
+are 21 and 37 coprime? 21 and 37 are coprime; their gcd is 1.
+взаимно ли просты 25 и 45? 25 и 45 не взаимно просты; их нод равен 5.
+10 and 15 are not coprime; their gcd is 5.
+14 и 23 взаимно просты; их нод равен 1.
+are 18 and 31 coprime? 18 and 31 are coprime; their gcd is 1.
+взаимно ли просты 22 и 39? 22 и 39 взаимно просты; их нод равен 1.
+7 and 9 are coprime; their gcd is 1.
+11 и 17 взаимно просты; их нод равен 1.
+are 15 and 25 coprime? 15 and 25 are not coprime; their gcd is 5.
+взаимно ли просты 19 и 33? 19 и 33 взаимно просты; их нод равен 1.
+24 and 43 are coprime; their gcd is 1.
+8 и 11 взаимно просты; их нод равен 1.
+are 12 and 19 coprime? 12 and 19 are coprime; their gcd is 1.
+взаимно ли просты 16 и 27? 16 и 27 взаимно просты; их нод равен 1.
+21 and 37 are coprime; their gcd is 1.
+25 и 45 не взаимно просты; их нод равен 5.
+are 9 and 13 coprime? 9 and 13 are coprime; their gcd is 1.
+взаимно ли просты 13 и 21? 13 и 21 взаимно просты; их нод равен 1.
+18 and 31 are coprime; their gcd is 1.
+22 и 39 взаимно просты; их нод равен 1.
+are 26 and 47 coprime? 26 and 47 are coprime; their gcd is 1.
+взаимно ли просты 10 и 15? 10 и 15 не взаимно просты; их нод равен 5.
+15 and 25 are not coprime; their gcd is 5.
+19 и 33 взаимно просты; их нод равен 1.
+are 23 and 41 coprime? 23 and 41 are coprime; their gcd is 1.
+взаимно ли просты 7 и 9? 7 и 9 взаимно просты; их нод равен 1.
+12 and 19 are coprime; their gcd is 1.
+16 и 27 взаимно просты; их нод равен 1.
+are 20 and 35 coprime? 20 and 35 are not coprime; their gcd is 5.
+взаимно ли просты 24 и 43? 24 и 43 взаимно просты; их нод равен 1.
+9 and 13 are coprime; their gcd is 1.
+13 и 21 взаимно просты; их нод равен 1.
+are 17 and 29 coprime? 17 and 29 are coprime; their gcd is 1.
+взаимно ли просты 21 и 37? 21 и 37 взаимно просты; их нод равен 1.
+26 and 47 are coprime; their gcd is 1.
+10 и 15 не взаимно просты; их нод равен 5.
+are 14 and 23 coprime? 14 and 23 are coprime; their gcd is 1.
+взаимно ли просты 18 и 31? 18 и 31 взаимно просты; их нод равен 1.
+23 and 41 are coprime; their gcd is 1.
+7 и 9 взаимно просты; их нод равен 1.
+are 11 and 17 coprime? 11 and 17 are coprime; their gcd is 1.
+взаимно ли просты 15 и 25? 15 и 25 не взаимно просты; их нод равен 5.
+20 and 35 are not coprime; their gcd is 5.
+24 и 43 взаимно просты; их нод равен 1.
+are 8 and 11 coprime? 8 and 11 are coprime; their gcd is 1.
+взаимно ли просты 12 и 19? 12 и 19 взаимно просты; их нод равен 1.
+17 and 29 are coprime; their gcd is 1.
+21 и 37 взаимно просты; их нод равен 1.
+are 25 and 45 coprime? 25 and 45 are not coprime; their gcd is 5.
+взаимно ли просты 9 и 13? 9 и 13 взаимно просты; их нод равен 1.
+14 and 23 are coprime; their gcd is 1.
+18 и 31 взаимно просты; их нод равен 1.
+are 22 and 39 coprime? 22 and 39 are coprime; their gcd is 1.
+взаимно ли просты 26 и 47? 26 и 47 взаимно просты; их нод равен 1.
+11 and 17 are coprime; their gcd is 1.
+15 и 25 не взаимно просты; их нод равен 5.
+are 19 and 33 coprime? 19 and 33 are coprime; their gcd is 1.
+взаимно ли просты 23 и 41? 23 и 41 взаимно просты; их нод равен 1.
 
-8 is not prime; 8 = 2 × 4.
-17 простое; его делители — 1 и 17.
-27 is not prime; 27 = 3 × 9.
-8 составное; 8 = 2 × 4.
-18 is not prime; 18 = 2 × 9.
-27 составное; 27 = 3 × 9.
-9 is not prime; 9 = 3 × 3.
-18 составное; 18 = 2 × 9.
-28 is not prime; 28 = 2 × 14.
-9 составное; 9 = 3 × 3.
-19 is prime; its divisors are 1 and 19.
-28 составное; 28 = 2 × 14.
-10 is not prime; 10 = 2 × 5.
-19 простое; его делители — 1 и 19.
-29 is prime; its divisors are 1 and 29.
-10 составное; 10 = 2 × 5.
-20 is not prime; 20 = 2 × 10.
-29 простое; его делители — 1 и 29.
-11 is prime; its divisors are 1 and 11.
-20 составное; 20 = 2 × 10.
-2 is prime; its divisors are 1 and 2.
-11 простое; его делители — 1 и 11.
-21 is not prime; 21 = 3 × 7.
-2 простое; его делители — 1 и 2.
-12 is not prime; 12 = 2 × 6.
-21 составное; 21 = 3 × 7.
-3 is prime; its divisors are 1 and 3.
-12 составное; 12 = 2 × 6.
-22 is not prime; 22 = 2 × 11.
-3 простое; его делители — 1 и 3.
-13 is prime; its divisors are 1 and 13.
-22 составное; 22 = 2 × 11.
-4 is not prime; 4 = 2 × 2.
-13 простое; его делители — 1 и 13.
-23 is prime; its divisors are 1 and 23.
-4 составное; 4 = 2 × 2.
-14 is not prime; 14 = 2 × 7.
-23 простое; его делители — 1 и 23.
 5 is prime; its divisors are 1 and 5.
-14 составное; 14 = 2 × 7.
+простое ли 9? 9 составное; 9 = 3 × 3.
+is 14 prime? 14 is not prime; 14 = 2 × 7.
+19 простое; его делители — 1 и 19.
 24 is not prime; 24 = 2 × 12.
-5 простое; его делители — 1 и 5.
+простое ли 28? 28 составное; 28 = 2 × 14.
+is 5 prime? 5 is prime; its divisors are 1 and 5.
+10 составное; 10 = 2 × 5.
 15 is not prime; 15 = 3 × 5.
-24 составное; 24 = 2 × 12.
+простое ли 19? 19 простое; его делители — 1 и 19.
+is 24 prime? 24 is not prime; 24 = 2 × 12.
+29 простое; его делители — 1 и 29.
 6 is not prime; 6 = 2 × 3.
-15 составное; 15 = 3 × 5.
+простое ли 10? 10 составное; 10 = 2 × 5.
+is 15 prime? 15 is not prime; 15 = 3 × 5.
+20 составное; 20 = 2 × 10.
 25 is not prime; 25 = 5 × 5.
-6 составное; 6 = 2 × 3.
+простое ли 29? 29 простое; его делители — 1 и 29.
+is 6 prime? 6 is not prime; 6 = 2 × 3.
+11 простое; его делители — 1 и 11.
 16 is not prime; 16 = 2 × 8.
-25 составное; 25 = 5 × 5.
+простое ли 20? 20 составное; 20 = 2 × 10.
+is 25 prime? 25 is not prime; 25 = 5 × 5.
+2 простое; его делители — 1 и 2.
 7 is prime; its divisors are 1 and 7.
-16 составное; 16 = 2 × 8.
+простое ли 11? 11 простое; его делители — 1 и 11.
+is 16 prime? 16 is not prime; 16 = 2 × 8.
+21 составное; 21 = 3 × 7.
 26 is not prime; 26 = 2 × 13.
-7 простое; его делители — 1 и 7.
+простое ли 2? 2 простое; его делители — 1 и 2.
+is 7 prime? 7 is prime; its divisors are 1 and 7.
+12 составное; 12 = 2 × 6.
 17 is prime; its divisors are 1 and 17.
+простое ли 21? 21 составное; 21 = 3 × 7.
+is 26 prime? 26 is not prime; 26 = 2 × 13.
+3 простое; его делители — 1 и 3.
+8 is not prime; 8 = 2 × 4.
+простое ли 12? 12 составное; 12 = 2 × 6.
+is 17 prime? 17 is prime; its divisors are 1 and 17.
+22 составное; 22 = 2 × 11.
+27 is not prime; 27 = 3 × 9.
+простое ли 3? 3 простое; его делители — 1 и 3.
+is 8 prime? 8 is not prime; 8 = 2 × 4.
+13 простое; его делители — 1 и 13.
+18 is not prime; 18 = 2 × 9.
+простое ли 22? 22 составное; 22 = 2 × 11.
+is 27 prime? 27 is not prime; 27 = 3 × 9.
+4 составное; 4 = 2 × 2.
+9 is not prime; 9 = 3 × 3.
+простое ли 13? 13 простое; его делители — 1 и 13.
+is 18 prime? 18 is not prime; 18 = 2 × 9.
+23 простое; его делители — 1 и 23.
+28 is not prime; 28 = 2 × 14.
+простое ли 4? 4 составное; 4 = 2 × 2.
+is 9 prime? 9 is not prime; 9 = 3 × 3.
+14 составное; 14 = 2 × 7.
+19 is prime; its divisors are 1 and 19.
+простое ли 23? 23 простое; его делители — 1 и 23.
+is 28 prime? 28 is not prime; 28 = 2 × 14.
+5 простое; его делители — 1 и 5.
+10 is not prime; 10 = 2 × 5.
+простое ли 14? 14 составное; 14 = 2 × 7.
+is 19 prime? 19 is prime; its divisors are 1 and 19.
+24 составное; 24 = 2 × 12.
+29 is prime; its divisors are 1 and 29.
+простое ли 5? 5 простое; его делители — 1 и 5.
+is 10 prime? 10 is not prime; 10 = 2 × 5.
+15 составное; 15 = 3 × 5.
+20 is not prime; 20 = 2 × 10.
+простое ли 24? 24 составное; 24 = 2 × 12.
+is 29 prime? 29 is prime; its divisors are 1 and 29.
+6 составное; 6 = 2 × 3.
+11 is prime; its divisors are 1 and 11.
+простое ли 15? 15 составное; 15 = 3 × 5.
+is 20 prime? 20 is not prime; 20 = 2 × 10.
+25 составное; 25 = 5 × 5.
+2 is prime; its divisors are 1 and 2.
+простое ли 6? 6 составное; 6 = 2 × 3.
+is 11 prime? 11 is prime; its divisors are 1 and 11.
+16 составное; 16 = 2 × 8.
+21 is not prime; 21 = 3 × 7.
+простое ли 25? 25 составное; 25 = 5 × 5.
+is 2 prime? 2 is prime; its divisors are 1 and 2.
+7 простое; его делители — 1 и 7.
+12 is not prime; 12 = 2 × 6.
+простое ли 16? 16 составное; 16 = 2 × 8.
+is 21 prime? 21 is not prime; 21 = 3 × 7.
 26 составное; 26 = 2 × 13.
+3 is prime; its divisors are 1 and 3.
+простое ли 7? 7 простое; его делители — 1 и 7.
+is 12 prime? 12 is not prime; 12 = 2 × 6.
+17 простое; его делители — 1 и 17.
+22 is not prime; 22 = 2 × 11.
+простое ли 26? 26 составное; 26 = 2 × 13.
+is 3 prime? 3 is prime; its divisors are 1 and 3.
+8 составное; 8 = 2 × 4.
+13 is prime; its divisors are 1 and 13.
+простое ли 17? 17 простое; его делители — 1 и 17.
+is 22 prime? 22 is not prime; 22 = 2 × 11.
+27 составное; 27 = 3 × 9.
+4 is not prime; 4 = 2 × 2.
+простое ли 8? 8 составное; 8 = 2 × 4.
+is 13 prime? 13 is prime; its divisors are 1 and 13.
+18 составное; 18 = 2 × 9.
+23 is prime; its divisors are 1 and 23.
+простое ли 27? 27 составное; 27 = 3 × 9.
+is 4 prime? 4 is not prime; 4 = 2 × 2.
+9 составное; 9 = 3 × 3.
+14 is not prime; 14 = 2 × 7.
+простое ли 18? 18 составное; 18 = 2 × 9.
+is 23 prime? 23 is prime; its divisors are 1 and 23.
+28 составное; 28 = 2 × 14.
 
-10 factorises into 2 × 5.
-19 раскладывается в 19.
-29 factorises into 29.
-38 раскладывается в 2 × 19.
-12 factorises into 2 × 2 × 3.
-21 раскладывается в 3 × 7.
-31 factorises into 31.
-4 раскладывается в 2 × 2.
-14 factorises into 2 × 7.
-23 раскладывается в 23.
-33 factorises into 3 × 11.
-6 раскладывается в 2 × 3.
-16 factorises into 2 × 2 × 2 × 2.
-25 раскладывается в 5 × 5.
-35 factorises into 5 × 7.
-8 раскладывается в 2 × 2 × 2.
-18 factorises into 2 × 3 × 3.
-27 раскладывается в 3 × 3 × 3.
-37 factorises into 37.
-10 раскладывается в 2 × 5.
-20 factorises into 2 × 2 × 5.
-29 раскладывается в 29.
-39 factorises into 3 × 13.
-12 раскладывается в 2 × 2 × 3.
-22 factorises into 2 × 11.
-31 раскладывается в 31.
-5 factorises into 5.
-14 раскладывается в 2 × 7.
-24 factorises into 2 × 2 × 2 × 3.
-33 раскладывается в 3 × 11.
+is 1 prime? 1 is neither prime nor composite: its only divisor is 1.
+простое ли 1? 1 ни простое, ни составное: его единственный делитель — 1.
+
 7 factorises into 7.
-16 раскладывается в 2 × 2 × 2 × 2.
+во что раскладывается 11? 11 раскладывается в 11.
+what does 16 factorise into? 16 factorises into 2 × 2 × 2 × 2.
+21 раскладывается в 3 × 7.
 26 factorises into 2 × 13.
-35 раскладывается в 5 × 7.
+во что раскладывается 30? 30 раскладывается в 2 × 3 × 5.
+what does 35 factorise into? 35 factorises into 5 × 7.
+4 раскладывается в 2 × 2.
 9 factorises into 3 × 3.
-18 раскладывается в 2 × 3 × 3.
+во что раскладывается 13? 13 раскладывается в 13.
+what does 18 factorise into? 18 factorises into 2 × 3 × 3.
+23 раскладывается в 23.
 28 factorises into 2 × 2 × 7.
-37 раскладывается в 37.
+во что раскладывается 32? 32 раскладывается в 2 × 2 × 2 × 2 × 2.
+what does 37 factorise into? 37 factorises into 37.
+6 раскладывается в 2 × 3.
 11 factorises into 11.
-20 раскладывается в 2 × 2 × 5.
+во что раскладывается 15? 15 раскладывается в 3 × 5.
+what does 20 factorise into? 20 factorises into 2 × 2 × 5.
+25 раскладывается в 5 × 5.
 30 factorises into 2 × 3 × 5.
-39 раскладывается в 3 × 13.
+во что раскладывается 34? 34 раскладывается в 2 × 17.
+what does 39 factorise into? 39 factorises into 3 × 13.
+8 раскладывается в 2 × 2 × 2.
 13 factorises into 13.
-22 раскладывается в 2 × 11.
+во что раскладывается 17? 17 раскладывается в 17.
+what does 22 factorise into? 22 factorises into 2 × 11.
+27 раскладывается в 3 × 3 × 3.
 32 factorises into 2 × 2 × 2 × 2 × 2.
-5 раскладывается в 5.
+во что раскладывается 36? 36 раскладывается в 2 × 2 × 3 × 3.
+what does 5 factorise into? 5 factorises into 5.
+10 раскладывается в 2 × 5.
 15 factorises into 3 × 5.
-24 раскладывается в 2 × 2 × 2 × 3.
+во что раскладывается 19? 19 раскладывается в 19.
+what does 24 factorise into? 24 factorises into 2 × 2 × 2 × 3.
+29 раскладывается в 29.
 34 factorises into 2 × 17.
-7 раскладывается в 7.
+во что раскладывается 38? 38 раскладывается в 2 × 19.
+what does 7 factorise into? 7 factorises into 7.
+12 раскладывается в 2 × 2 × 3.
 17 factorises into 17.
-26 раскладывается в 2 × 13.
+во что раскладывается 21? 21 раскладывается в 3 × 7.
+what does 26 factorise into? 26 factorises into 2 × 13.
+31 раскладывается в 31.
 36 factorises into 2 × 2 × 3 × 3.
-9 раскладывается в 3 × 3.
+во что раскладывается 4? 4 раскладывается в 2 × 2.
+what does 9 factorise into? 9 factorises into 3 × 3.
+14 раскладывается в 2 × 7.
 19 factorises into 19.
-28 раскладывается в 2 × 2 × 7.
+во что раскладывается 23? 23 раскладывается в 23.
+what does 28 factorise into? 28 factorises into 2 × 2 × 7.
+33 раскладывается в 3 × 11.
 38 factorises into 2 × 19.
-11 раскладывается в 11.
+во что раскладывается 6? 6 раскладывается в 2 × 3.
+what does 11 factorise into? 11 factorises into 11.
+16 раскладывается в 2 × 2 × 2 × 2.
 21 factorises into 3 × 7.
-30 раскладывается в 2 × 3 × 5.
+во что раскладывается 25? 25 раскладывается в 5 × 5.
+what does 30 factorise into? 30 factorises into 2 × 3 × 5.
+35 раскладывается в 5 × 7.
 4 factorises into 2 × 2.
-13 раскладывается в 13.
+во что раскладывается 8? 8 раскладывается в 2 × 2 × 2.
+what does 13 factorise into? 13 factorises into 13.
+18 раскладывается в 2 × 3 × 3.
 23 factorises into 23.
-32 раскладывается в 2 × 2 × 2 × 2 × 2.
+во что раскладывается 27? 27 раскладывается в 3 × 3 × 3.
+what does 32 factorise into? 32 factorises into 2 × 2 × 2 × 2 × 2.
+37 раскладывается в 37.
 6 factorises into 2 × 3.
-15 раскладывается в 3 × 5.
+во что раскладывается 10? 10 раскладывается в 2 × 5.
+what does 15 factorise into? 15 factorises into 3 × 5.
+20 раскладывается в 2 × 2 × 5.
 25 factorises into 5 × 5.
-34 раскладывается в 2 × 17.
+во что раскладывается 29? 29 раскладывается в 29.
+what does 34 factorise into? 34 factorises into 2 × 17.
+39 раскладывается в 3 × 13.
 8 factorises into 2 × 2 × 2.
-17 раскладывается в 17.
+во что раскладывается 12? 12 раскладывается в 2 × 2 × 3.
+what does 17 factorise into? 17 factorises into 17.
+22 раскладывается в 2 × 11.
 27 factorises into 3 × 3 × 3.
+во что раскладывается 31? 31 раскладывается в 31.
+what does 36 factorise into? 36 factorises into 2 × 2 × 3 × 3.
+5 раскладывается в 5.
+10 factorises into 2 × 5.
+во что раскладывается 14? 14 раскладывается в 2 × 7.
+what does 19 factorise into? 19 factorises into 19.
+24 раскладывается в 2 × 2 × 2 × 3.
+29 factorises into 29.
+во что раскладывается 33? 33 раскладывается в 3 × 11.
+what does 38 factorise into? 38 factorises into 2 × 19.
+7 раскладывается в 7.
+12 factorises into 2 × 2 × 3.
+во что раскладывается 16? 16 раскладывается в 2 × 2 × 2 × 2.
+what does 21 factorise into? 21 factorises into 3 × 7.
+26 раскладывается в 2 × 13.
+31 factorises into 31.
+во что раскладывается 35? 35 раскладывается в 5 × 7.
+what does 4 factorise into? 4 factorises into 2 × 2.
+9 раскладывается в 3 × 3.
+14 factorises into 2 × 7.
+во что раскладывается 18? 18 раскладывается в 2 × 3 × 3.
+what does 23 factorise into? 23 factorises into 23.
+28 раскладывается в 2 × 2 × 7.
+33 factorises into 3 × 11.
+во что раскладывается 37? 37 раскладывается в 37.
+what does 6 factorise into? 6 factorises into 2 × 3.
+11 раскладывается в 11.
+16 factorises into 2 × 2 × 2 × 2.
+во что раскладывается 20? 20 раскладывается в 2 × 2 × 5.
+what does 25 factorise into? 25 factorises into 5 × 5.
+30 раскладывается в 2 × 3 × 5.
+35 factorises into 5 × 7.
+во что раскладывается 39? 39 раскладывается в 3 × 13.
+what does 8 factorise into? 8 factorises into 2 × 2 × 2.
+13 раскладывается в 13.
+18 factorises into 2 × 3 × 3.
+во что раскладывается 22? 22 раскладывается в 2 × 11.
+what does 27 factorise into? 27 factorises into 3 × 3 × 3.
+32 раскладывается в 2 × 2 × 2 × 2 × 2.
+37 factorises into 37.
+во что раскладывается 5? 5 раскладывается в 5.
+what does 10 factorise into? 10 factorises into 2 × 5.
+15 раскладывается в 3 × 5.
+20 factorises into 2 × 2 × 5.
+во что раскладывается 24? 24 раскладывается в 2 × 2 × 2 × 3.
+what does 29 factorise into? 29 factorises into 29.
+34 раскладывается в 2 × 17.
+39 factorises into 3 × 13.
+во что раскладывается 7? 7 раскладывается в 7.
+what does 12 factorise into? 12 factorises into 2 × 2 × 3.
+17 раскладывается в 17.
+22 factorises into 2 × 11.
+во что раскладывается 26? 26 раскладывается в 2 × 13.
+what does 31 factorise into? 31 factorises into 31.
 36 раскладывается в 2 × 2 × 3 × 3.
+5 factorises into 5.
+во что раскладывается 9? 9 раскладывается в 3 × 3.
+what does 14 factorise into? 14 factorises into 2 × 7.
+19 раскладывается в 19.
+24 factorises into 2 × 2 × 2 × 3.
+во что раскладывается 28? 28 раскладывается в 2 × 2 × 7.
+what does 33 factorise into? 33 factorises into 3 × 11.
+38 раскладывается в 2 × 19.
 
-the divisors of 12 are 1 2 3 4 6 12.
-делители 21 — это 1 3 7 21.
-the divisors of 7 are 1 7.
-делители 16 — это 1 2 4 8 16.
-the divisors of 26 are 1 2 13 26.
-делители 11 — это 1 11.
-the divisors of 21 are 1 3 7 21.
-делители 6 — это 1 2 3 6.
-the divisors of 16 are 1 2 4 8 16.
-делители 25 — это 1 5 25.
-the divisors of 11 are 1 11.
-делители 20 — это 1 2 4 5 10 20.
-the divisors of 6 are 1 2 3 6.
-делители 15 — это 1 3 5 15.
-the divisors of 25 are 1 5 25.
-делители 10 — это 1 2 5 10.
-the divisors of 20 are 1 2 4 5 10 20.
-делители 29 — это 1 29.
-the divisors of 15 are 1 3 5 15.
-делители 24 — это 1 2 3 4 6 8 12 24.
-the divisors of 10 are 1 2 5 10.
-делители 19 — это 1 19.
-the divisors of 29 are 1 29.
-делители 14 — это 1 2 7 14.
-the divisors of 24 are 1 2 3 4 6 8 12 24.
-делители 9 — это 1 3 9.
-the divisors of 19 are 1 19.
-делители 28 — это 1 2 4 7 14 28.
-the divisors of 14 are 1 2 7 14.
-делители 23 — это 1 23.
 the divisors of 9 are 1 3 9.
-делители 18 — это 1 2 3 6 9 18.
+каковы делители 13? делители 13 — это 1 13.
+what are the divisors of 18? the divisors of 18 are 1 2 3 6 9 18.
+делители 23 — это 1 23.
 the divisors of 28 are 1 2 4 7 14 28.
-делители 13 — это 1 13.
+каковы делители 8? делители 8 — это 1 2 4 8.
+what are the divisors of 13? the divisors of 13 are 1 13.
+делители 18 — это 1 2 3 6 9 18.
 the divisors of 23 are 1 23.
-делители 8 — это 1 2 4 8.
+каковы делители 27? делители 27 — это 1 3 9 27.
+what are the divisors of 8? the divisors of 8 are 1 2 4 8.
+делители 13 — это 1 13.
 the divisors of 18 are 1 2 3 6 9 18.
-делители 27 — это 1 3 9 27.
+каковы делители 22? делители 22 — это 1 2 11 22.
+what are the divisors of 27? the divisors of 27 are 1 3 9 27.
+делители 8 — это 1 2 4 8.
 the divisors of 13 are 1 13.
-делители 22 — это 1 2 11 22.
+каковы делители 17? делители 17 — это 1 17.
+what are the divisors of 22? the divisors of 22 are 1 2 11 22.
+делители 27 — это 1 3 9 27.
 the divisors of 8 are 1 2 4 8.
-делители 17 — это 1 17.
+каковы делители 12? делители 12 — это 1 2 3 4 6 12.
+what are the divisors of 17? the divisors of 17 are 1 17.
+делители 22 — это 1 2 11 22.
 the divisors of 27 are 1 3 9 27.
-делители 12 — это 1 2 3 4 6 12.
+каковы делители 7? делители 7 — это 1 7.
+what are the divisors of 12? the divisors of 12 are 1 2 3 4 6 12.
+делители 17 — это 1 17.
 the divisors of 22 are 1 2 11 22.
-делители 7 — это 1 7.
+каковы делители 26? делители 26 — это 1 2 13 26.
+what are the divisors of 7? the divisors of 7 are 1 7.
+делители 12 — это 1 2 3 4 6 12.
 the divisors of 17 are 1 17.
+каковы делители 21? делители 21 — это 1 3 7 21.
+what are the divisors of 26? the divisors of 26 are 1 2 13 26.
+делители 7 — это 1 7.
+the divisors of 12 are 1 2 3 4 6 12.
+каковы делители 16? делители 16 — это 1 2 4 8 16.
+what are the divisors of 21? the divisors of 21 are 1 3 7 21.
 делители 26 — это 1 2 13 26.
+the divisors of 7 are 1 7.
+каковы делители 11? делители 11 — это 1 11.
+what are the divisors of 16? the divisors of 16 are 1 2 4 8 16.
+делители 21 — это 1 3 7 21.
+the divisors of 26 are 1 2 13 26.
+каковы делители 6? делители 6 — это 1 2 3 6.
+what are the divisors of 11? the divisors of 11 are 1 11.
+делители 16 — это 1 2 4 8 16.
+the divisors of 21 are 1 3 7 21.
+каковы делители 25? делители 25 — это 1 5 25.
+what are the divisors of 6? the divisors of 6 are 1 2 3 6.
+делители 11 — это 1 11.
+the divisors of 16 are 1 2 4 8 16.
+каковы делители 20? делители 20 — это 1 2 4 5 10 20.
+what are the divisors of 25? the divisors of 25 are 1 5 25.
+делители 6 — это 1 2 3 6.
+the divisors of 11 are 1 11.
+каковы делители 15? делители 15 — это 1 3 5 15.
+what are the divisors of 20? the divisors of 20 are 1 2 4 5 10 20.
+делители 25 — это 1 5 25.
+the divisors of 6 are 1 2 3 6.
+каковы делители 10? делители 10 — это 1 2 5 10.
+what are the divisors of 15? the divisors of 15 are 1 3 5 15.
+делители 20 — это 1 2 4 5 10 20.
+the divisors of 25 are 1 5 25.
+каковы делители 29? делители 29 — это 1 29.
+what are the divisors of 10? the divisors of 10 are 1 2 5 10.
+делители 15 — это 1 3 5 15.
+the divisors of 20 are 1 2 4 5 10 20.
+каковы делители 24? делители 24 — это 1 2 3 4 6 8 12 24.
+what are the divisors of 29? the divisors of 29 are 1 29.
+делители 10 — это 1 2 5 10.
+the divisors of 15 are 1 3 5 15.
+каковы делители 19? делители 19 — это 1 19.
+what are the divisors of 24? the divisors of 24 are 1 2 3 4 6 8 12 24.
+делители 29 — это 1 29.
+the divisors of 10 are 1 2 5 10.
+каковы делители 14? делители 14 — это 1 2 7 14.
+what are the divisors of 19? the divisors of 19 are 1 19.
+делители 24 — это 1 2 3 4 6 8 12 24.
+the divisors of 29 are 1 29.
+каковы делители 9? делители 9 — это 1 3 9.
+what are the divisors of 14? the divisors of 14 are 1 2 7 14.
+делители 19 — это 1 19.
+the divisors of 24 are 1 2 3 4 6 8 12 24.
+каковы делители 28? делители 28 — это 1 2 4 7 14 28.
+what are the divisors of 9? the divisors of 9 are 1 3 9.
+делители 14 — это 1 2 7 14.
+the divisors of 19 are 1 19.
+каковы делители 23? делители 23 — это 1 23.
+what are the divisors of 28? the divisors of 28 are 1 2 4 7 14 28.
+делители 9 — это 1 3 9.
+the divisors of 14 are 1 2 7 14.
+каковы делители 18? делители 18 — это 1 2 3 6 9 18.
+what are the divisors of 23? the divisors of 23 are 1 23.
+делители 28 — это 1 2 4 7 14 28.
 
-20 mod 5 = 0.
-32 и 0 сравнимы по модулю 2.
-47 and 5 are congruent modulo 7.
-62 по модулю 5 равно 2.
-77 mod 3 = 2.
-17 и 1 сравнимы по модулю 4.
-32 and 0 are congruent modulo 2.
-47 по модулю 7 равно 5.
-62 mod 5 = 2.
-74 и 0 сравнимы по модулю 2.
-17 and 1 are congruent modulo 4.
-32 по модулю 2 равно 0.
-47 mod 7 = 5.
-59 и 3 сравнимы по модулю 4.
-74 and 0 are congruent modulo 2.
-17 по модулю 4 равно 1.
-32 mod 2 = 0.
-44 и 2 сравнимы по модулю 6.
-59 and 3 are congruent modulo 4.
-74 по модулю 2 равно 0.
-17 mod 4 = 1.
-29 и 5 сравнимы по модулю 8.
-44 and 2 are congruent modulo 6.
-59 по модулю 4 равно 3.
-74 mod 2 = 0.
-14 и 2 сравнимы по модулю 3.
+what is 14 mod 3? 14 mod 3 = 2.
+сравнимы ли 20 и 0 по модулю 5? 20 и 0 сравнимы по модулю 5.
 29 and 5 are congruent modulo 8.
-44 по модулю 6 равно 2.
-59 mod 4 = 3.
-71 и 7 сравнимы по модулю 8.
-14 and 2 are congruent modulo 3.
-29 по модулю 8 равно 5.
+чему равно 35 по модулю 3? 35 по модулю 3 равно 2.
 44 mod 6 = 2.
-56 и 2 сравнимы по модулю 3.
-71 and 7 are congruent modulo 8.
-14 по модулю 3 равно 2.
-29 mod 8 = 5.
-41 и 1 сравнимы по модулю 5.
-56 and 2 are congruent modulo 3.
-71 по модулю 8 равно 7.
-14 mod 3 = 2.
-26 и 5 сравнимы по модулю 7.
-41 and 1 are congruent modulo 5.
-56 по модулю 3 равно 2.
-71 mod 8 = 7.
-11 и 1 сравнимы по модулю 2.
-26 and 5 are congruent modulo 7.
-41 по модулю 5 равно 1.
-56 mod 3 = 2.
-68 и 5 сравнимы по модулю 7.
-11 and 1 are congruent modulo 2.
-26 по модулю 7 равно 5.
-41 mod 5 = 1.
-53 и 1 сравнимы по модулю 2.
-68 and 5 are congruent modulo 7.
-11 по модулю 2 равно 1.
-26 mod 7 = 5.
-38 и 2 сравнимы по модулю 4.
-53 and 1 are congruent modulo 2.
-68 по модулю 7 равно 5.
-11 mod 2 = 1.
-23 и 5 сравнимы по модулю 6.
-38 and 2 are congruent modulo 4.
-53 по модулю 2 равно 1.
-68 mod 7 = 5.
-80 и 0 сравнимы по модулю 4.
-23 and 5 are congruent modulo 6.
-38 по модулю 4 равно 2.
-53 mod 2 = 1.
-65 и 5 сравнимы по модулю 6.
-80 and 0 are congruent modulo 4.
-23 по модулю 6 равно 5.
-38 mod 4 = 2.
 50 и 2 сравнимы по модулю 8.
-65 and 5 are congruent modulo 6.
-80 по модулю 4 равно 0.
-23 mod 6 = 5.
-35 и 2 сравнимы по модулю 3.
-50 and 2 are congruent modulo 8.
+are 56 and 2 congruent modulo 3? 56 and 2 are congruent modulo 3.
 65 по модулю 6 равно 5.
-80 mod 4 = 0.
-20 и 0 сравнимы по модулю 5.
-35 and 2 are congruent modulo 3.
+what is 71 mod 8? 71 mod 8 = 7.
+сравнимы ли 77 и 2 по модулю 3? 77 и 2 сравнимы по модулю 3.
+14 and 2 are congruent modulo 3.
+чему равно 20 по модулю 5? 20 по модулю 5 равно 0.
+29 mod 8 = 5.
+35 и 2 сравнимы по модулю 3.
+are 41 and 1 congruent modulo 5? 41 and 1 are congruent modulo 5.
 50 по модулю 8 равно 2.
-65 mod 6 = 5.
-77 и 2 сравнимы по модулю 3.
-20 and 0 are congruent modulo 5.
+what is 56 mod 3? 56 mod 3 = 2.
+сравнимы ли 62 и 2 по модулю 5? 62 и 2 сравнимы по модулю 5.
+71 and 7 are congruent modulo 8.
+чему равно 77 по модулю 3? 77 по модулю 3 равно 2.
+14 mod 3 = 2.
+20 и 0 сравнимы по модулю 5.
+are 26 and 5 congruent modulo 7? 26 and 5 are congruent modulo 7.
 35 по модулю 3 равно 2.
-50 mod 8 = 2.
-62 и 2 сравнимы по модулю 5.
-77 and 2 are congruent modulo 3.
+what is 41 mod 5? 41 mod 5 = 1.
+сравнимы ли 47 и 5 по модулю 7? 47 и 5 сравнимы по модулю 7.
+56 and 2 are congruent modulo 3.
+чему равно 62 по модулю 5? 62 по модулю 5 равно 2.
+71 mod 8 = 7.
+77 и 2 сравнимы по модулю 3.
+are 11 and 1 congruent modulo 2? 11 and 1 are congruent modulo 2.
 20 по модулю 5 равно 0.
-35 mod 3 = 2.
-47 и 5 сравнимы по модулю 7.
-62 and 2 are congruent modulo 5.
+what is 26 mod 7? 26 mod 7 = 5.
+сравнимы ли 32 и 0 по модулю 2? 32 и 0 сравнимы по модулю 2.
+41 and 1 are congruent modulo 5.
+чему равно 47 по модулю 7? 47 по модулю 7 равно 5.
+56 mod 3 = 2.
+62 и 2 сравнимы по модулю 5.
+are 68 and 5 congruent modulo 7? 68 and 5 are congruent modulo 7.
 77 по модулю 3 равно 2.
+what is 11 mod 2? 11 mod 2 = 1.
+сравнимы ли 17 и 1 по модулю 4? 17 и 1 сравнимы по модулю 4.
+26 and 5 are congruent modulo 7.
+чему равно 32 по модулю 2? 32 по модулю 2 равно 0.
+41 mod 5 = 1.
+47 и 5 сравнимы по модулю 7.
+are 53 and 1 congruent modulo 2? 53 and 1 are congruent modulo 2.
+62 по модулю 5 равно 2.
+what is 68 mod 7? 68 mod 7 = 5.
+сравнимы ли 74 и 0 по модулю 2? 74 и 0 сравнимы по модулю 2.
+11 and 1 are congruent modulo 2.
+чему равно 17 по модулю 4? 17 по модулю 4 равно 1.
+26 mod 7 = 5.
+32 и 0 сравнимы по модулю 2.
+are 38 and 2 congruent modulo 4? 38 and 2 are congruent modulo 4.
+47 по модулю 7 равно 5.
+what is 53 mod 2? 53 mod 2 = 1.
+сравнимы ли 59 и 3 по модулю 4? 59 и 3 сравнимы по модулю 4.
+68 and 5 are congruent modulo 7.
+чему равно 74 по модулю 2? 74 по модулю 2 равно 0.
+11 mod 2 = 1.
+17 и 1 сравнимы по модулю 4.
+are 23 and 5 congruent modulo 6? 23 and 5 are congruent modulo 6.
+32 по модулю 2 равно 0.
+what is 38 mod 4? 38 mod 4 = 2.
+сравнимы ли 44 и 2 по модулю 6? 44 и 2 сравнимы по модулю 6.
+53 and 1 are congruent modulo 2.
+чему равно 59 по модулю 4? 59 по модулю 4 равно 3.
+68 mod 7 = 5.
+74 и 0 сравнимы по модулю 2.
+are 80 and 0 congruent modulo 4? 80 and 0 are congruent modulo 4.
+17 по модулю 4 равно 1.
+what is 23 mod 6? 23 mod 6 = 5.
+сравнимы ли 29 и 5 по модулю 8? 29 и 5 сравнимы по модулю 8.
+38 and 2 are congruent modulo 4.
+чему равно 44 по модулю 6? 44 по модулю 6 равно 2.
+53 mod 2 = 1.
+59 и 3 сравнимы по модулю 4.
+are 65 and 5 congruent modulo 6? 65 and 5 are congruent modulo 6.
+74 по модулю 2 равно 0.
+what is 80 mod 4? 80 mod 4 = 0.
+сравнимы ли 14 и 2 по модулю 3? 14 и 2 сравнимы по модулю 3.
+23 and 5 are congruent modulo 6.
+чему равно 29 по модулю 8? 29 по модулю 8 равно 5.
+38 mod 4 = 2.
+44 и 2 сравнимы по модулю 6.
+are 50 and 2 congruent modulo 8? 50 and 2 are congruent modulo 8.
+59 по модулю 4 равно 3.
+what is 65 mod 6? 65 mod 6 = 5.
+сравнимы ли 71 и 7 по модулю 8? 71 и 7 сравнимы по модулю 8.
+80 and 0 are congruent modulo 4.
+чему равно 14 по модулю 3? 14 по модулю 3 равно 2.
+23 mod 6 = 5.
+29 и 5 сравнимы по модулю 8.
+are 35 and 2 congruent modulo 3? 35 and 2 are congruent modulo 3.
+44 по модулю 6 равно 2.
+what is 50 mod 8? 50 mod 8 = 2.
+сравнимы ли 56 и 2 по модулю 3? 56 и 2 сравнимы по модулю 3.
+65 and 5 are congruent modulo 6.
+чему равно 71 по модулю 8? 71 по модулю 8 равно 7.
+80 mod 4 = 0.
+14 и 2 сравнимы по модулю 3.
+are 20 and 0 congruent modulo 5? 20 and 0 are congruent modulo 5.
+29 по модулю 8 равно 5.
+what is 35 mod 3? 35 mod 3 = 2.
+сравнимы ли 41 и 1 по модулю 5? 41 и 1 сравнимы по модулю 5.
+50 and 2 are congruent modulo 8.
+чему равно 56 по модулю 3? 56 по модулю 3 равно 2.
+65 mod 6 = 5.
+71 и 7 сравнимы по модулю 8.
+are 77 and 2 congruent modulo 3? 77 and 2 are congruent modulo 3.
+14 по модулю 3 равно 2.
+what is 20 mod 5? 20 mod 5 = 0.
+сравнимы ли 26 и 5 по модулю 7? 26 и 5 сравнимы по модулю 7.
+35 and 2 are congruent modulo 3.
+чему равно 41 по модулю 5? 41 по модулю 5 равно 1.
+50 mod 8 = 2.
+56 и 2 сравнимы по модулю 3.
+are 62 and 2 congruent modulo 5? 62 and 2 are congruent modulo 5.
+71 по модулю 8 равно 7.
+what is 77 mod 3? 77 mod 3 = 2.
+сравнимы ли 11 и 1 по модулю 2? 11 и 1 сравнимы по модулю 2.
+20 and 0 are congruent modulo 5.
+чему равно 26 по модулю 7? 26 по модулю 7 равно 5.
+35 mod 3 = 2.
+41 и 1 сравнимы по модулю 5.
+are 47 and 5 congruent modulo 7? 47 and 5 are congruent modulo 7.
+56 по модулю 3 равно 2.
+what is 62 mod 5? 62 mod 5 = 2.
+сравнимы ли 68 и 5 по модулю 7? 68 и 5 сравнимы по модулю 7.
+77 and 2 are congruent modulo 3.
+чему равно 11 по модулю 2? 11 по модулю 2 равно 1.
+20 mod 5 = 0.
+26 и 5 сравнимы по модулю 7.
+are 32 and 0 congruent modulo 2? 32 and 0 are congruent modulo 2.
+41 по модулю 5 равно 1.
+what is 47 mod 7? 47 mod 7 = 5.
+сравнимы ли 53 и 1 по модулю 2? 53 и 1 сравнимы по модулю 2.
+62 and 2 are congruent modulo 5.
+чему равно 68 по модулю 7? 68 по модулю 7 равно 5.
+77 mod 3 = 2.
+11 и 1 сравнимы по модулю 2.
+are 17 and 1 congruent modulo 4? 17 and 1 are congruent modulo 4.
+26 по модулю 7 равно 5.
+what is 32 mod 2? 32 mod 2 = 0.
+сравнимы ли 38 и 2 по модулю 4? 38 и 2 сравнимы по модулю 4.
+47 and 5 are congruent modulo 7.
+чему равно 53 по модулю 2? 53 по модулю 2 равно 1.
+62 mod 5 = 2.
+68 и 5 сравнимы по модулю 7.
+are 74 and 0 congruent modulo 2? 74 and 0 are congruent modulo 2.
+11 по модулю 2 равно 1.
+what is 17 mod 4? 17 mod 4 = 1.
+сравнимы ли 23 и 5 по модулю 6? 23 и 5 сравнимы по модулю 6.
+32 and 0 are congruent modulo 2.
+чему равно 38 по модулю 4? 38 по модулю 4 равно 2.
+47 mod 7 = 5.
+53 и 1 сравнимы по модулю 2.
+are 59 and 3 congruent modulo 4? 59 and 3 are congruent modulo 4.
+68 по модулю 7 равно 5.
+what is 74 mod 2? 74 mod 2 = 0.
+сравнимы ли 80 и 0 по модулю 4? 80 и 0 сравнимы по модулю 4.
+17 and 1 are congruent modulo 4.
+чему равно 23 по модулю 6? 23 по модулю 6 равно 5.
+32 mod 2 = 0.
+38 и 2 сравнимы по модулю 4.
+are 44 and 2 congruent modulo 6? 44 and 2 are congruent modulo 6.
+53 по модулю 2 равно 1.
+what is 59 mod 4? 59 mod 4 = 3.
+сравнимы ли 65 и 5 по модулю 6? 65 и 5 сравнимы по модулю 6.
+74 and 0 are congruent modulo 2.
+чему равно 80 по модулю 4? 80 по модулю 4 равно 0.
+17 mod 4 = 1.
+23 и 5 сравнимы по модулю 6.
+are 29 and 5 congruent modulo 8? 29 and 5 are congruent modulo 8.
+38 по модулю 4 равно 2.
+what is 44 mod 6? 44 mod 6 = 2.
+сравнимы ли 50 и 2 по модулю 8? 50 и 2 сравнимы по модулю 8.
+59 and 3 are congruent modulo 4.
+чему равно 65 по модулю 6? 65 по модулю 6 равно 5.
+74 mod 2 = 0.
+80 и 0 сравнимы по модулю 4.
+are 14 and 2 congruent modulo 3? 14 and 2 are congruent modulo 3.
+23 по модулю 6 равно 5.
+what is 29 mod 8? 29 mod 8 = 5.
+сравнимы ли 35 и 2 по модулю 3? 35 и 2 сравнимы по модулю 3.
+44 and 2 are congruent modulo 6.
+чему равно 50 по модулю 8? 50 по модулю 8 равно 2.
+59 mod 4 = 3.
+65 и 5 сравнимы по модулю 6.
+are 71 and 7 congruent modulo 8? 71 and 7 are congruent modulo 8.
+80 по модулю 4 равно 0.
 
-14 and 21 are not coprime; their gcd is 7.
-23 и 39 взаимно просты; их нод равен 1.
-13 and 19 are coprime; their gcd is 1.
-22 и 37 взаимно просты; их нод равен 1.
-12 and 17 are coprime; their gcd is 1.
-21 и 35 не взаимно просты; их нод равен 7.
 11 and 15 are coprime; their gcd is 1.
-20 и 33 взаимно просты; их нод равен 1.
-10 and 13 are coprime; their gcd is 1.
-19 и 31 взаимно просты; их нод равен 1.
-9 and 11 are coprime; their gcd is 1.
-18 и 29 взаимно просты; их нод равен 1.
-8 and 9 are coprime; their gcd is 1.
-17 и 27 взаимно просты; их нод равен 1.
-27 and 47 are coprime; their gcd is 1.
-16 и 25 взаимно просты; их нод равен 1.
-26 and 45 are coprime; their gcd is 1.
-15 и 23 взаимно просты; их нод равен 1.
-25 and 43 are coprime; their gcd is 1.
-14 и 21 не взаимно просты; их нод равен 7.
-24 and 41 are coprime; their gcd is 1.
-13 и 19 взаимно просты; их нод равен 1.
-23 and 39 are coprime; their gcd is 1.
-12 и 17 взаимно просты; их нод равен 1.
-22 and 37 are coprime; their gcd is 1.
-11 и 15 взаимно просты; их нод равен 1.
-21 and 35 are not coprime; their gcd is 7.
-10 и 13 взаимно просты; их нод равен 1.
-20 and 33 are coprime; their gcd is 1.
-9 и 11 взаимно просты; их нод равен 1.
-19 and 31 are coprime; their gcd is 1.
-8 и 9 взаимно просты; их нод равен 1.
-18 and 29 are coprime; their gcd is 1.
-27 и 47 взаимно просты; их нод равен 1.
-17 and 27 are coprime; their gcd is 1.
-26 и 45 взаимно просты; их нод равен 1.
-16 and 25 are coprime; their gcd is 1.
+взаимно ли просты 15 и 23? 15 и 23 взаимно просты; их нод равен 1.
+are 20 and 33 coprime? 20 and 33 are coprime; their gcd is 1.
 25 и 43 взаимно просты; их нод равен 1.
-15 and 23 are coprime; their gcd is 1.
+10 and 13 are coprime; their gcd is 1.
+взаимно ли просты 14 и 21? 14 и 21 не взаимно просты; их нод равен 7.
+are 19 and 31 coprime? 19 and 31 are coprime; their gcd is 1.
 24 и 41 взаимно просты; их нод равен 1.
+9 and 11 are coprime; their gcd is 1.
+взаимно ли просты 13 и 19? 13 и 19 взаимно просты; их нод равен 1.
+are 18 and 29 coprime? 18 and 29 are coprime; their gcd is 1.
+23 и 39 взаимно просты; их нод равен 1.
+8 and 9 are coprime; their gcd is 1.
+взаимно ли просты 12 и 17? 12 и 17 взаимно просты; их нод равен 1.
+are 17 and 27 coprime? 17 and 27 are coprime; their gcd is 1.
+22 и 37 взаимно просты; их нод равен 1.
+27 and 47 are coprime; their gcd is 1.
+взаимно ли просты 11 и 15? 11 и 15 взаимно просты; их нод равен 1.
+are 16 and 25 coprime? 16 and 25 are coprime; their gcd is 1.
+21 и 35 не взаимно просты; их нод равен 7.
+26 and 45 are coprime; their gcd is 1.
+взаимно ли просты 10 и 13? 10 и 13 взаимно просты; их нод равен 1.
+are 15 and 23 coprime? 15 and 23 are coprime; their gcd is 1.
+20 и 33 взаимно просты; их нод равен 1.
+25 and 43 are coprime; their gcd is 1.
+взаимно ли просты 9 и 11? 9 и 11 взаимно просты; их нод равен 1.
+are 14 and 21 coprime? 14 and 21 are not coprime; their gcd is 7.
+19 и 31 взаимно просты; их нод равен 1.
+24 and 41 are coprime; their gcd is 1.
+взаимно ли просты 8 и 9? 8 и 9 взаимно просты; их нод равен 1.
+are 13 and 19 coprime? 13 and 19 are coprime; their gcd is 1.
+18 и 29 взаимно просты; их нод равен 1.
+23 and 39 are coprime; their gcd is 1.
+взаимно ли просты 27 и 47? 27 и 47 взаимно просты; их нод равен 1.
+are 12 and 17 coprime? 12 and 17 are coprime; their gcd is 1.
+17 и 27 взаимно просты; их нод равен 1.
+22 and 37 are coprime; their gcd is 1.
+взаимно ли просты 26 и 45? 26 и 45 взаимно просты; их нод равен 1.
+are 11 and 15 coprime? 11 and 15 are coprime; their gcd is 1.
+16 и 25 взаимно просты; их нод равен 1.
+21 and 35 are not coprime; their gcd is 7.
+взаимно ли просты 25 и 43? 25 и 43 взаимно просты; их нод равен 1.
+are 10 and 13 coprime? 10 and 13 are coprime; their gcd is 1.
+15 и 23 взаимно просты; их нод равен 1.
+20 and 33 are coprime; their gcd is 1.
+взаимно ли просты 24 и 41? 24 и 41 взаимно просты; их нод равен 1.
+are 9 and 11 coprime? 9 and 11 are coprime; their gcd is 1.
+14 и 21 не взаимно просты; их нод равен 7.
+19 and 31 are coprime; their gcd is 1.
+взаимно ли просты 23 и 39? 23 и 39 взаимно просты; их нод равен 1.
+are 8 and 9 coprime? 8 and 9 are coprime; their gcd is 1.
+13 и 19 взаимно просты; их нод равен 1.
+18 and 29 are coprime; their gcd is 1.
+взаимно ли просты 22 и 37? 22 и 37 взаимно просты; их нод равен 1.
+are 27 and 47 coprime? 27 and 47 are coprime; their gcd is 1.
+12 и 17 взаимно просты; их нод равен 1.
+17 and 27 are coprime; their gcd is 1.
+взаимно ли просты 21 и 35? 21 и 35 не взаимно просты; их нод равен 7.
+are 26 and 45 coprime? 26 and 45 are coprime; their gcd is 1.
+11 и 15 взаимно просты; их нод равен 1.
+16 and 25 are coprime; their gcd is 1.
+взаимно ли просты 20 и 33? 20 и 33 взаимно просты; их нод равен 1.
+are 25 and 43 coprime? 25 and 43 are coprime; their gcd is 1.
+10 и 13 взаимно просты; их нод равен 1.
+15 and 23 are coprime; their gcd is 1.
+взаимно ли просты 19 и 31? 19 и 31 взаимно просты; их нод равен 1.
+are 24 and 41 coprime? 24 and 41 are coprime; their gcd is 1.
+9 и 11 взаимно просты; их нод равен 1.
+14 and 21 are not coprime; their gcd is 7.
+взаимно ли просты 18 и 29? 18 и 29 взаимно просты; их нод равен 1.
+are 23 and 39 coprime? 23 and 39 are coprime; their gcd is 1.
+8 и 9 взаимно просты; их нод равен 1.
+13 and 19 are coprime; their gcd is 1.
+взаимно ли просты 17 и 27? 17 и 27 взаимно просты; их нод равен 1.
+are 22 and 37 coprime? 22 and 37 are coprime; their gcd is 1.
+27 и 47 взаимно просты; их нод равен 1.
+12 and 17 are coprime; their gcd is 1.
+взаимно ли просты 16 и 25? 16 и 25 взаимно просты; их нод равен 1.
+are 21 and 35 coprime? 21 and 35 are not coprime; their gcd is 7.
+26 и 45 взаимно просты; их нод равен 1.

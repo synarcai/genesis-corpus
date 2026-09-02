@@ -1,51 +1,116 @@
-2 equally likely outcomes: entropy 1 bit.
-8 равновозможных исходов несут 3 бита.
-16 equally likely outcomes carry 4 bits.
-слово из 2 знака алфавита в 8 знаков стоит 6 битов.
-a word of 3 signs over an alphabet of 2 signs costs 3 bits.
-128 равновозможных исходов: энтропия 7 битов.
-256 equally likely outcomes: entropy 8 bits.
-4 равновозможных исхода несут 2 бита.
-8 equally likely outcomes carry 3 bits.
-слово из 1 знак алфавита в 4 знака стоит 2 бита.
-a word of 2 signs over an alphabet of 8 signs costs 6 bits.
-64 равновозможных исхода: энтропия 6 битов.
-128 equally likely outcomes: entropy 7 bits.
-2 равновозможных исхода несут 1 бит.
-4 equally likely outcomes carry 2 bits.
-слово из 4 знака алфавита в 2 знака стоит 4 бита.
-a word of 1 signs over an alphabet of 4 signs costs 2 bits.
-32 равновозможных исхода: энтропия 5 битов.
-64 equally likely outcomes: entropy 6 bits.
-256 равновозможных исходов несут 8 битов.
-2 equally likely outcomes carry 1 bit.
-слово из 3 знака алфавита в 8 знаков стоит 9 битов.
-a word of 4 signs over an alphabet of 2 signs costs 4 bits.
-16 равновозможных исходов: энтропия 4 бита.
-32 equally likely outcomes: entropy 5 bits.
-128 равновозможных исходов несут 7 битов.
-256 equally likely outcomes carry 8 bits.
-слово из 2 знака алфавита в 4 знака стоит 4 бита.
-a word of 3 signs over an alphabet of 8 signs costs 9 bits.
-8 равновозможных исходов: энтропия 3 бита.
-16 equally likely outcomes: entropy 4 bits.
-64 равновозможных исхода несут 6 битов.
-128 equally likely outcomes carry 7 bits.
-слово из 1 знак алфавита в 8 знаков стоит 3 бита.
+сколько бит стоит знак алфавита в 6 знаков? целого ответа нет: 6 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 11 signs cost? no whole answer for 11 signs: 11 is not a power of two.
+сколько бит стоит знак алфавита в 5 знаков? целого ответа нет: 5 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 10 signs cost? no whole answer for 10 signs: 10 is not a power of two.
+сколько бит стоит знак алфавита в 3 знака? целого ответа нет: 3 знака — это не степень двойки.
+how many bits does a sign of an alphabet of 9 signs cost? no whole answer for 9 signs: 9 is not a power of two.
+сколько бит стоит знак алфавита в 12 знаков? целого ответа нет: 12 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 7 signs cost? no whole answer for 7 signs: 7 is not a power of two.
+сколько бит стоит знак алфавита в 11 знаков? целого ответа нет: 11 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 6 signs cost? no whole answer for 6 signs: 6 is not a power of two.
+сколько бит стоит знак алфавита в 10 знаков? целого ответа нет: 10 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 5 signs cost? no whole answer for 5 signs: 5 is not a power of two.
+сколько бит стоит знак алфавита в 9 знаков? целого ответа нет: 9 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 3 signs cost? no whole answer for 3 signs: 3 is not a power of two.
+сколько бит стоит знак алфавита в 7 знаков? целого ответа нет: 7 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 12 signs cost? no whole answer for 12 signs: 12 is not a power of two.
+
 a word of 2 signs over an alphabet of 4 signs costs 4 bits.
-4 равновозможных исхода: энтропия 2 бита.
+4 равновозможных исхода несут 2 бита.
+how much does a word of 3 signs over an alphabet of 8 signs cost? a word of 3 signs over an alphabet of 8 signs costs 9 bits.
+сколько бит несут 8 равновозможных исходов? 8 равновозможных исходов несут 3 бита.
 8 equally likely outcomes: entropy 3 bits.
-32 равновозможных исхода несут 5 битов.
+слово из 1 знак алфавита в 4 знака стоит 2 бита.
+what is the entropy of 16 equally likely outcomes? 16 equally likely outcomes: entropy 4 bits.
+сколько бит стоит слово из 2 знака алфавита в 8 знаков? слово из 2 знака алфавита в 8 знаков стоит 6 битов.
 64 equally likely outcomes carry 6 bits.
-слово из 4 знака алфавита в 4 знака стоит 8 битов.
+64 равновозможных исхода: энтропия 6 битов.
+how many bits do 128 equally likely outcomes carry? 128 equally likely outcomes carry 7 bits.
+чему равна энтропия 128 равновозможных исходов? 128 равновозможных исходов: энтропия 7 битов.
 a word of 1 signs over an alphabet of 8 signs costs 3 bits.
-2 равновозможных исхода: энтропия 1 бит.
+2 равновозможных исхода несут 1 бит.
+how much does a word of 2 signs over an alphabet of 4 signs cost? a word of 2 signs over an alphabet of 4 signs costs 4 bits.
+сколько бит несут 4 равновозможных исхода? 4 равновозможных исхода несут 2 бита.
 4 equally likely outcomes: entropy 2 bits.
-16 равновозможных исходов несут 4 бита.
+слово из 4 знака алфавита в 2 знака стоит 4 бита.
+what is the entropy of 8 equally likely outcomes? 8 equally likely outcomes: entropy 3 bits.
+сколько бит стоит слово из 1 знак алфавита в 4 знака? слово из 1 знак алфавита в 4 знака стоит 2 бита.
 32 equally likely outcomes carry 5 bits.
-слово из 3 знака алфавита в 2 знака стоит 3 бита.
+32 равновозможных исхода: энтропия 5 битов.
+how many bits do 64 equally likely outcomes carry? 64 equally likely outcomes carry 6 bits.
+чему равна энтропия 64 равновозможных исхода? 64 равновозможных исхода: энтропия 6 битов.
 a word of 4 signs over an alphabet of 4 signs costs 8 bits.
+256 равновозможных исходов несут 8 битов.
+how much does a word of 1 signs over an alphabet of 8 signs cost? a word of 1 signs over an alphabet of 8 signs costs 3 bits.
+сколько бит несут 2 равновозможных исхода? 2 равновозможных исхода несут 1 бит.
+2 equally likely outcomes: entropy 1 bit.
+слово из 3 знака алфавита в 8 знаков стоит 9 битов.
+what is the entropy of 4 equally likely outcomes? 4 equally likely outcomes: entropy 2 bits.
+сколько бит стоит слово из 4 знака алфавита в 2 знака? слово из 4 знака алфавита в 2 знака стоит 4 бита.
+16 equally likely outcomes carry 4 bits.
+16 равновозможных исходов: энтропия 4 бита.
+how many bits do 32 equally likely outcomes carry? 32 equally likely outcomes carry 5 bits.
+чему равна энтропия 32 равновозможных исхода? 32 равновозможных исхода: энтропия 5 битов.
+a word of 3 signs over an alphabet of 2 signs costs 3 bits.
+128 равновозможных исходов несут 7 битов.
+how much does a word of 4 signs over an alphabet of 4 signs cost? a word of 4 signs over an alphabet of 4 signs costs 8 bits.
+сколько бит несут 256 равновозможных исходов? 256 равновозможных исходов несут 8 битов.
+256 equally likely outcomes: entropy 8 bits.
+слово из 2 знака алфавита в 4 знака стоит 4 бита.
+what is the entropy of 2 equally likely outcomes? 2 equally likely outcomes: entropy 1 bit.
+сколько бит стоит слово из 3 знака алфавита в 8 знаков? слово из 3 знака алфавита в 8 знаков стоит 9 битов.
+8 equally likely outcomes carry 3 bits.
+8 равновозможных исходов: энтропия 3 бита.
+how many bits do 16 equally likely outcomes carry? 16 equally likely outcomes carry 4 bits.
+чему равна энтропия 16 равновозможных исходов? 16 равновозможных исходов: энтропия 4 бита.
+a word of 2 signs over an alphabet of 8 signs costs 6 bits.
+64 равновозможных исхода несут 6 битов.
+how much does a word of 3 signs over an alphabet of 2 signs cost? a word of 3 signs over an alphabet of 2 signs costs 3 bits.
+сколько бит несут 128 равновозможных исходов? 128 равновозможных исходов несут 7 битов.
+128 equally likely outcomes: entropy 7 bits.
+слово из 1 знак алфавита в 8 знаков стоит 3 бита.
+what is the entropy of 256 equally likely outcomes? 256 equally likely outcomes: entropy 8 bits.
+сколько бит стоит слово из 2 знака алфавита в 4 знака? слово из 2 знака алфавита в 4 знака стоит 4 бита.
+4 equally likely outcomes carry 2 bits.
+4 равновозможных исхода: энтропия 2 бита.
+how many bits do 8 equally likely outcomes carry? 8 equally likely outcomes carry 3 bits.
+чему равна энтропия 8 равновозможных исходов? 8 равновозможных исходов: энтропия 3 бита.
+a word of 1 signs over an alphabet of 4 signs costs 2 bits.
+32 равновозможных исхода несут 5 битов.
+how much does a word of 2 signs over an alphabet of 8 signs cost? a word of 2 signs over an alphabet of 8 signs costs 6 bits.
+сколько бит несут 64 равновозможных исхода? 64 равновозможных исхода несут 6 битов.
+64 equally likely outcomes: entropy 6 bits.
+слово из 4 знака алфавита в 4 знака стоит 8 битов.
+what is the entropy of 128 equally likely outcomes? 128 equally likely outcomes: entropy 7 bits.
+сколько бит стоит слово из 1 знак алфавита в 8 знаков? слово из 1 знак алфавита в 8 знаков стоит 3 бита.
+2 equally likely outcomes carry 1 bit.
+2 равновозможных исхода: энтропия 1 бит.
+how many bits do 4 equally likely outcomes carry? 4 equally likely outcomes carry 2 bits.
+чему равна энтропия 4 равновозможных исхода? 4 равновозможных исхода: энтропия 2 бита.
+a word of 4 signs over an alphabet of 2 signs costs 4 bits.
+16 равновозможных исходов несут 4 бита.
+how much does a word of 1 signs over an alphabet of 4 signs cost? a word of 1 signs over an alphabet of 4 signs costs 2 bits.
+сколько бит несут 32 равновозможных исхода? 32 равновозможных исхода несут 5 битов.
+32 equally likely outcomes: entropy 5 bits.
+слово из 3 знака алфавита в 2 знака стоит 3 бита.
+what is the entropy of 64 equally likely outcomes? 64 equally likely outcomes: entropy 6 bits.
+сколько бит стоит слово из 4 знака алфавита в 4 знака? слово из 4 знака алфавита в 4 знака стоит 8 битов.
+256 equally likely outcomes carry 8 bits.
 256 равновозможных исходов: энтропия 8 битов.
+how many bits do 2 equally likely outcomes carry? 2 equally likely outcomes carry 1 bit.
+чему равна энтропия 2 равновозможных исхода? 2 равновозможных исхода: энтропия 1 бит.
+a word of 3 signs over an alphabet of 8 signs costs 9 bits.
+8 равновозможных исходов несут 3 бита.
+how much does a word of 4 signs over an alphabet of 2 signs cost? a word of 4 signs over an alphabet of 2 signs costs 4 bits.
+сколько бит несут 16 равновозможных исходов? 16 равновозможных исходов несут 4 бита.
+16 equally likely outcomes: entropy 4 bits.
+слово из 2 знака алфавита в 8 знаков стоит 6 битов.
+what is the entropy of 32 equally likely outcomes? 32 equally likely outcomes: entropy 5 bits.
+сколько бит стоит слово из 3 знака алфавита в 2 знака? слово из 3 знака алфавита в 2 знака стоит 3 бита.
+128 equally likely outcomes carry 7 bits.
+128 равновозможных исходов: энтропия 7 битов.
+how many bits do 256 equally likely outcomes carry? 256 equally likely outcomes carry 8 bits.
+чему равна энтропия 256 равновозможных исходов? 256 равновозможных исходов: энтропия 8 битов.
 
 parity automaton: input 0 0 1; the state after is odd.
 автомат чётности: вход 1 1 1; состояние после — нечётное.
@@ -220,54 +285,121 @@ the model of the system has 4 states; the observer tells apart 4: control is pos
 the model of the system has 7 states; the observer tells apart 5: control is impossible.
 модель системы имеет 5 состояний; наблюдатель различает 3: управление невозможно.
 
-слово из 2 знака алфавита в 4 знака стоит 4 бита.
-8 equally likely outcomes carry 3 bits.
-32 равновозможных исхода несут 5 битов.
-64 equally likely outcomes: entropy 6 bits.
-256 равновозможных исходов: энтропия 8 битов.
-a word of 3 signs over an alphabet of 8 signs costs 9 bits.
-слово из 1 знак алфавита в 4 знака стоит 2 бита.
-64 equally likely outcomes carry 6 bits.
-256 равновозможных исходов несут 8 битов.
-2 equally likely outcomes: entropy 1 bit.
-8 равновозможных исходов: энтропия 3 бита.
-a word of 2 signs over an alphabet of 8 signs costs 6 bits.
-слово из 4 знака алфавита в 4 знака стоит 8 битов.
-2 equally likely outcomes carry 1 bit.
-8 равновозможных исходов несут 3 бита.
-16 equally likely outcomes: entropy 4 bits.
-64 равновозможных исхода: энтропия 6 битов.
-a word of 1 signs over an alphabet of 8 signs costs 3 bits.
-слово из 3 знака алфавита в 8 знаков стоит 9 битов.
-16 equally likely outcomes carry 4 bits.
-64 равновозможных исхода несут 6 битов.
-128 equally likely outcomes: entropy 7 bits.
-2 равновозможных исхода: энтропия 1 бит.
-a word of 4 signs over an alphabet of 2 signs costs 4 bits.
-слово из 2 знака алфавита в 8 знаков стоит 6 битов.
-128 equally likely outcomes carry 7 bits.
-2 равновозможных исхода несут 1 бит.
-4 equally likely outcomes: entropy 2 bits.
-16 равновозможных исходов: энтропия 4 бита.
-a word of 3 signs over an alphabet of 2 signs costs 3 bits.
-слово из 1 знак алфавита в 8 знаков стоит 3 бита.
+how many bits does a sign of an alphabet of 7 signs cost? no whole answer for 7 signs: 7 is not a power of two.
+сколько бит стоит знак алфавита в 13 знаков? целого ответа нет: 13 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 10 signs cost? no whole answer for 10 signs: 10 is not a power of two.
+сколько бит стоит знак алфавита в 3 знака? целого ответа нет: 3 знака — это не степень двойки.
+how many bits does a sign of an alphabet of 12 signs cost? no whole answer for 12 signs: 12 is not a power of two.
+сколько бит стоит знак алфавита в 7 знаков? целого ответа нет: 7 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 14 signs cost? no whole answer for 14 signs: 14 is not a power of two.
+сколько бит стоит знак алфавита в 10 знаков? целого ответа нет: 10 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 6 signs cost? no whole answer for 6 signs: 6 is not a power of two.
+сколько бит стоит знак алфавита в 12 знаков? целого ответа нет: 12 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 9 signs cost? no whole answer for 9 signs: 9 is not a power of two.
+сколько бит стоит знак алфавита в 14 знаков? целого ответа нет: 14 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 11 signs cost? no whole answer for 11 signs: 11 is not a power of two.
+сколько бит стоит знак алфавита в 6 знаков? целого ответа нет: 6 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 13 signs cost? no whole answer for 13 signs: 13 is not a power of two.
+сколько бит стоит знак алфавита в 9 знаков? целого ответа нет: 9 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 3 signs cost? no whole answer for 3 signs: 3 is not a power of two.
+сколько бит стоит знак алфавита в 11 знаков? целого ответа нет: 11 знаков — это не степень двойки.
+
+сколько бит несут 2 равновозможных исхода? 2 равновозможных исхода несут 1 бит.
 4 equally likely outcomes carry 2 bits.
-16 равновозможных исходов несут 4 бита.
+8 равновозможных исходов несут 3 бита.
+what is the entropy of 8 equally likely outcomes? 8 equally likely outcomes: entropy 3 bits.
+чему равна энтропия 16 равновозможных исходов? 16 равновозможных исходов: энтропия 4 бита.
 32 equally likely outcomes: entropy 5 bits.
-128 равновозможных исходов: энтропия 7 битов.
+64 равновозможных исхода: энтропия 6 битов.
+how much does a word of 4 signs over an alphabet of 4 signs cost? a word of 4 signs over an alphabet of 4 signs costs 8 bits.
+сколько бит стоит слово из 1 знак алфавита в 8 знаков? слово из 1 знак алфавита в 8 знаков стоит 3 бита.
 a word of 2 signs over an alphabet of 4 signs costs 4 bits.
-слово из 4 знака алфавита в 2 знака стоит 4 бита.
+слово из 3 знака алфавита в 8 знаков стоит 9 битов.
+how many bits do 8 equally likely outcomes carry? 8 equally likely outcomes carry 3 bits.
+сколько бит несут 16 равновозможных исходов? 16 равновозможных исходов несут 4 бита.
 32 equally likely outcomes carry 5 bits.
-128 равновозможных исходов несут 7 битов.
+64 равновозможных исхода несут 6 битов.
+what is the entropy of 64 equally likely outcomes? 64 equally likely outcomes: entropy 6 bits.
+чему равна энтропия 128 равновозможных исходов? 128 равновозможных исходов: энтропия 7 битов.
 256 equally likely outcomes: entropy 8 bits.
-4 равновозможных исхода: энтропия 2 бита.
+2 равновозможных исхода: энтропия 1 бит.
+how much does a word of 3 signs over an alphabet of 8 signs cost? a word of 3 signs over an alphabet of 8 signs costs 9 bits.
+сколько бит стоит слово из 4 знака алфавита в 2 знака? слово из 4 знака алфавита в 2 знака стоит 4 бита.
 a word of 1 signs over an alphabet of 4 signs costs 2 bits.
-слово из 3 знака алфавита в 2 знака стоит 3 бита.
+слово из 2 знака алфавита в 8 знаков стоит 6 битов.
+how many bits do 64 equally likely outcomes carry? 64 equally likely outcomes carry 6 bits.
+сколько бит несут 128 равновозможных исходов? 128 равновозможных исходов несут 7 битов.
 256 equally likely outcomes carry 8 bits.
-4 равновозможных исхода несут 2 бита.
+2 равновозможных исхода несут 1 бит.
+what is the entropy of 2 equally likely outcomes? 2 equally likely outcomes: entropy 1 bit.
+чему равна энтропия 4 равновозможных исхода? 4 равновозможных исхода: энтропия 2 бита.
 8 equally likely outcomes: entropy 3 bits.
-32 равновозможных исхода: энтропия 5 битов.
+16 равновозможных исходов: энтропия 4 бита.
+how much does a word of 2 signs over an alphabet of 8 signs cost? a word of 2 signs over an alphabet of 8 signs costs 6 bits.
+сколько бит стоит слово из 3 знака алфавита в 2 знака? слово из 3 знака алфавита в 2 знака стоит 3 бита.
 a word of 4 signs over an alphabet of 4 signs costs 8 bits.
+слово из 1 знак алфавита в 8 знаков стоит 3 бита.
+how many bits do 2 equally likely outcomes carry? 2 equally likely outcomes carry 1 bit.
+сколько бит несут 4 равновозможных исхода? 4 равновозможных исхода несут 2 бита.
+8 equally likely outcomes carry 3 bits.
+16 равновозможных исходов несут 4 бита.
+what is the entropy of 16 equally likely outcomes? 16 equally likely outcomes: entropy 4 bits.
+чему равна энтропия 32 равновозможных исхода? 32 равновозможных исхода: энтропия 5 битов.
+64 equally likely outcomes: entropy 6 bits.
+128 равновозможных исходов: энтропия 7 битов.
+how much does a word of 1 signs over an alphabet of 8 signs cost? a word of 1 signs over an alphabet of 8 signs costs 3 bits.
+сколько бит стоит слово из 2 знака алфавита в 4 знака? слово из 2 знака алфавита в 4 знака стоит 4 бита.
+a word of 3 signs over an alphabet of 8 signs costs 9 bits.
+слово из 4 знака алфавита в 2 знака стоит 4 бита.
+how many bits do 16 equally likely outcomes carry? 16 equally likely outcomes carry 4 bits.
+сколько бит несут 32 равновозможных исхода? 32 равновозможных исхода несут 5 битов.
+64 equally likely outcomes carry 6 bits.
+128 равновозможных исходов несут 7 битов.
+what is the entropy of 128 equally likely outcomes? 128 equally likely outcomes: entropy 7 bits.
+чему равна энтропия 256 равновозможных исходов? 256 равновозможных исходов: энтропия 8 битов.
+2 equally likely outcomes: entropy 1 bit.
+4 равновозможных исхода: энтропия 2 бита.
+how much does a word of 4 signs over an alphabet of 2 signs cost? a word of 4 signs over an alphabet of 2 signs costs 4 bits.
+сколько бит стоит слово из 1 знак алфавита в 4 знака? слово из 1 знак алфавита в 4 знака стоит 2 бита.
+a word of 2 signs over an alphabet of 8 signs costs 6 bits.
+слово из 3 знака алфавита в 2 знака стоит 3 бита.
+how many bits do 128 equally likely outcomes carry? 128 equally likely outcomes carry 7 bits.
+сколько бит несут 256 равновозможных исходов? 256 равновозможных исходов несут 8 битов.
+2 equally likely outcomes carry 1 bit.
+4 равновозможных исхода несут 2 бита.
+what is the entropy of 4 equally likely outcomes? 4 equally likely outcomes: entropy 2 bits.
+чему равна энтропия 8 равновозможных исходов? 8 равновозможных исходов: энтропия 3 бита.
+16 equally likely outcomes: entropy 4 bits.
+32 равновозможных исхода: энтропия 5 битов.
+how much does a word of 3 signs over an alphabet of 2 signs cost? a word of 3 signs over an alphabet of 2 signs costs 3 bits.
+сколько бит стоит слово из 4 знака алфавита в 4 знака? слово из 4 знака алфавита в 4 знака стоит 8 битов.
+a word of 1 signs over an alphabet of 8 signs costs 3 bits.
+слово из 2 знака алфавита в 4 знака стоит 4 бита.
+how many bits do 4 equally likely outcomes carry? 4 equally likely outcomes carry 2 bits.
+сколько бит несут 8 равновозможных исходов? 8 равновозможных исходов несут 3 бита.
+16 equally likely outcomes carry 4 bits.
+32 равновозможных исхода несут 5 битов.
+what is the entropy of 32 equally likely outcomes? 32 equally likely outcomes: entropy 5 bits.
+чему равна энтропия 64 равновозможных исхода? 64 равновозможных исхода: энтропия 6 битов.
+128 equally likely outcomes: entropy 7 bits.
+256 равновозможных исходов: энтропия 8 битов.
+how much does a word of 2 signs over an alphabet of 4 signs cost? a word of 2 signs over an alphabet of 4 signs costs 4 bits.
+сколько бит стоит слово из 3 знака алфавита в 8 знаков? слово из 3 знака алфавита в 8 знаков стоит 9 битов.
+a word of 4 signs over an alphabet of 2 signs costs 4 bits.
+слово из 1 знак алфавита в 4 знака стоит 2 бита.
+how many bits do 32 equally likely outcomes carry? 32 equally likely outcomes carry 5 bits.
+сколько бит несут 64 равновозможных исхода? 64 равновозможных исхода несут 6 битов.
+128 equally likely outcomes carry 7 bits.
+256 равновозможных исходов несут 8 битов.
+what is the entropy of 256 equally likely outcomes? 256 equally likely outcomes: entropy 8 bits.
+чему равна энтропия 2 равновозможных исхода? 2 равновозможных исхода: энтропия 1 бит.
+4 equally likely outcomes: entropy 2 bits.
+8 равновозможных исходов: энтропия 3 бита.
+how much does a word of 1 signs over an alphabet of 4 signs cost? a word of 1 signs over an alphabet of 4 signs costs 2 bits.
+сколько бит стоит слово из 2 знака алфавита в 8 знаков? слово из 2 знака алфавита в 8 знаков стоит 6 битов.
+a word of 3 signs over an alphabet of 2 signs costs 3 bits.
+слово из 4 знака алфавита в 4 знака стоит 8 битов.
+how many bits do 256 equally likely outcomes carry? 256 equally likely outcomes carry 8 bits.
 
 автомат чётности: вход 1 1; состояние после — чётное.
 parity automaton: input 1 1 1; the state after is odd.
@@ -442,54 +574,121 @@ the model of the system has 6 states; the observer tells apart 6: control is pos
 модель системы имеет 2 состояния; наблюдатель различает 2: управление возможно.
 the model of the system has 7 states; the observer tells apart 5: control is impossible.
 
-a word of 3 signs over an alphabet of 8 signs costs 9 bits.
-16 равновозможных исходов: энтропия 4 бита.
-64 equally likely outcomes: entropy 6 bits.
-2 равновозможных исхода несут 1 бит.
-8 equally likely outcomes carry 3 bits.
-слово из 2 знака алфавита в 8 знаков стоит 6 битов.
-a word of 4 signs over an alphabet of 4 signs costs 8 bits.
-2 равновозможных исхода: энтропия 1 бит.
-8 equally likely outcomes: entropy 3 bits.
-64 равновозможных исхода несут 6 битов.
-256 equally likely outcomes carry 8 bits.
-слово из 3 знака алфавита в 8 знаков стоит 9 битов.
-a word of 1 signs over an alphabet of 4 signs costs 2 bits.
-64 равновозможных исхода: энтропия 6 битов.
-256 equally likely outcomes: entropy 8 bits.
-8 равновозможных исходов несут 3 бита.
-32 equally likely outcomes carry 5 bits.
-слово из 4 знака алфавита в 4 знака стоит 8 битов.
-a word of 2 signs over an alphabet of 4 signs costs 4 bits.
-8 равновозможных исходов: энтропия 3 бита.
-32 equally likely outcomes: entropy 5 bits.
-256 равновозможных исходов несут 8 битов.
-4 equally likely outcomes carry 2 bits.
-слово из 1 знак алфавита в 4 знака стоит 2 бита.
-a word of 3 signs over an alphabet of 2 signs costs 3 bits.
-256 равновозможных исходов: энтропия 8 битов.
-4 equally likely outcomes: entropy 2 bits.
-32 равновозможных исхода несут 5 битов.
-128 equally likely outcomes carry 7 bits.
-слово из 2 знака алфавита в 4 знака стоит 4 бита.
-a word of 4 signs over an alphabet of 2 signs costs 4 bits.
-32 равновозможных исхода: энтропия 5 битов.
-128 equally likely outcomes: entropy 7 bits.
-4 равновозможных исхода несут 2 бита.
-16 equally likely outcomes carry 4 bits.
-слово из 3 знака алфавита в 2 знака стоит 3 бита.
-a word of 1 signs over an alphabet of 8 signs costs 3 bits.
-4 равновозможных исхода: энтропия 2 бита.
-16 equally likely outcomes: entropy 4 bits.
-128 равновозможных исходов несут 7 битов.
-2 equally likely outcomes carry 1 bit.
-слово из 4 знака алфавита в 2 знака стоит 4 бита.
-a word of 2 signs over an alphabet of 8 signs costs 6 bits.
-128 равновозможных исходов: энтропия 7 битов.
+сколько бит стоит знак алфавита в 13 знаков? целого ответа нет: 13 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 11 signs cost? no whole answer for 11 signs: 11 is not a power of two.
+сколько бит стоит знак алфавита в 6 знаков? целого ответа нет: 6 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 3 signs cost? no whole answer for 3 signs: 3 is not a power of two.
+сколько бит стоит знак алфавита в 12 знаков? целого ответа нет: 12 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 10 signs cost? no whole answer for 10 signs: 10 is not a power of two.
+сколько бит стоит знак алфавита в 5 знаков? целого ответа нет: 5 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 14 signs cost? no whole answer for 14 signs: 14 is not a power of two.
+сколько бит стоит знак алфавита в 11 знаков? целого ответа нет: 11 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 9 signs cost? no whole answer for 9 signs: 9 is not a power of two.
+сколько бит стоит знак алфавита в 3 знака? целого ответа нет: 3 знака — это не степень двойки.
+how many bits does a sign of an alphabet of 13 signs cost? no whole answer for 13 signs: 13 is not a power of two.
+сколько бит стоит знак алфавита в 10 знаков? целого ответа нет: 10 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 6 signs cost? no whole answer for 6 signs: 6 is not a power of two.
+сколько бит стоит знак алфавита в 14 знаков? целого ответа нет: 14 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 12 signs cost? no whole answer for 12 signs: 12 is not a power of two.
+сколько бит стоит знак алфавита в 9 знаков? целого ответа нет: 9 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 5 signs cost? no whole answer for 5 signs: 5 is not a power of two.
+
 2 equally likely outcomes: entropy 1 bit.
-16 равновозможных исходов несут 4 бита.
+чему равна энтропия 4 равновозможных исхода? 4 равновозможных исхода: энтропия 2 бита.
+what is the entropy of 8 equally likely outcomes? 8 equally likely outcomes: entropy 3 bits.
+32 равновозможных исхода несут 5 битов.
 64 equally likely outcomes carry 6 bits.
+сколько бит несут 128 равновозможных исходов? 128 равновозможных исходов несут 7 битов.
+how many bits do 256 equally likely outcomes carry? 256 equally likely outcomes carry 8 bits.
+слово из 2 знака алфавита в 4 знака стоит 4 бита.
+a word of 3 signs over an alphabet of 8 signs costs 9 bits.
+сколько бит стоит слово из 4 знака алфавита в 2 знака? слово из 4 знака алфавита в 2 знака стоит 4 бита.
+how much does a word of 1 signs over an alphabet of 4 signs cost? a word of 1 signs over an alphabet of 4 signs costs 2 bits.
+32 равновозможных исхода: энтропия 5 битов.
+64 equally likely outcomes: entropy 6 bits.
+чему равна энтропия 128 равновозможных исходов? 128 равновозможных исходов: энтропия 7 битов.
+what is the entropy of 256 equally likely outcomes? 256 equally likely outcomes: entropy 8 bits.
+4 равновозможных исхода несут 2 бита.
+8 equally likely outcomes carry 3 bits.
+сколько бит несут 16 равновозможных исходов? 16 равновозможных исходов несут 4 бита.
+how many bits do 32 equally likely outcomes carry? 32 equally likely outcomes carry 5 bits.
+слово из 3 знака алфавита в 2 знака стоит 3 бита.
+a word of 4 signs over an alphabet of 4 signs costs 8 bits.
+сколько бит стоит слово из 1 знак алфавита в 8 знаков? слово из 1 знак алфавита в 8 знаков стоит 3 бита.
+how much does a word of 2 signs over an alphabet of 4 signs cost? a word of 2 signs over an alphabet of 4 signs costs 4 bits.
+4 равновозможных исхода: энтропия 2 бита.
+8 equally likely outcomes: entropy 3 bits.
+чему равна энтропия 16 равновозможных исходов? 16 равновозможных исходов: энтропия 4 бита.
+what is the entropy of 32 equally likely outcomes? 32 equally likely outcomes: entropy 5 bits.
+128 равновозможных исходов несут 7 битов.
+256 equally likely outcomes carry 8 bits.
+сколько бит несут 2 равновозможных исхода? 2 равновозможных исхода несут 1 бит.
+how many bits do 4 equally likely outcomes carry? 4 equally likely outcomes carry 2 bits.
+слово из 4 знака алфавита в 2 знака стоит 4 бита.
+a word of 1 signs over an alphabet of 4 signs costs 2 bits.
+сколько бит стоит слово из 2 знака алфавита в 8 знаков? слово из 2 знака алфавита в 8 знаков стоит 6 битов.
+how much does a word of 3 signs over an alphabet of 2 signs cost? a word of 3 signs over an alphabet of 2 signs costs 3 bits.
+128 равновозможных исходов: энтропия 7 битов.
+256 equally likely outcomes: entropy 8 bits.
+чему равна энтропия 2 равновозможных исхода? 2 равновозможных исхода: энтропия 1 бит.
+what is the entropy of 4 equally likely outcomes? 4 equally likely outcomes: entropy 2 bits.
+16 равновозможных исходов несут 4 бита.
+32 equally likely outcomes carry 5 bits.
+сколько бит несут 64 равновозможных исхода? 64 равновозможных исхода несут 6 битов.
+how many bits do 128 equally likely outcomes carry? 128 equally likely outcomes carry 7 bits.
 слово из 1 знак алфавита в 8 знаков стоит 3 бита.
+a word of 2 signs over an alphabet of 4 signs costs 4 bits.
+сколько бит стоит слово из 3 знака алфавита в 8 знаков? слово из 3 знака алфавита в 8 знаков стоит 9 битов.
+how much does a word of 4 signs over an alphabet of 2 signs cost? a word of 4 signs over an alphabet of 2 signs costs 4 bits.
+16 равновозможных исходов: энтропия 4 бита.
+32 equally likely outcomes: entropy 5 bits.
+чему равна энтропия 64 равновозможных исхода? 64 равновозможных исхода: энтропия 6 битов.
+what is the entropy of 128 equally likely outcomes? 128 equally likely outcomes: entropy 7 bits.
+2 равновозможных исхода несут 1 бит.
+4 equally likely outcomes carry 2 bits.
+сколько бит несут 8 равновозможных исходов? 8 равновозможных исходов несут 3 бита.
+how many bits do 16 equally likely outcomes carry? 16 equally likely outcomes carry 4 bits.
+слово из 2 знака алфавита в 8 знаков стоит 6 битов.
+a word of 3 signs over an alphabet of 2 signs costs 3 bits.
+сколько бит стоит слово из 4 знака алфавита в 4 знака? слово из 4 знака алфавита в 4 знака стоит 8 битов.
+how much does a word of 1 signs over an alphabet of 8 signs cost? a word of 1 signs over an alphabet of 8 signs costs 3 bits.
+2 равновозможных исхода: энтропия 1 бит.
+4 equally likely outcomes: entropy 2 bits.
+чему равна энтропия 8 равновозможных исходов? 8 равновозможных исходов: энтропия 3 бита.
+what is the entropy of 16 equally likely outcomes? 16 equally likely outcomes: entropy 4 bits.
+64 равновозможных исхода несут 6 битов.
+128 equally likely outcomes carry 7 bits.
+сколько бит несут 256 равновозможных исходов? 256 равновозможных исходов несут 8 битов.
+how many bits do 2 equally likely outcomes carry? 2 equally likely outcomes carry 1 bit.
+слово из 3 знака алфавита в 8 знаков стоит 9 битов.
+a word of 4 signs over an alphabet of 2 signs costs 4 bits.
+сколько бит стоит слово из 1 знак алфавита в 4 знака? слово из 1 знак алфавита в 4 знака стоит 2 бита.
+how much does a word of 2 signs over an alphabet of 8 signs cost? a word of 2 signs over an alphabet of 8 signs costs 6 bits.
+64 равновозможных исхода: энтропия 6 битов.
+128 equally likely outcomes: entropy 7 bits.
+чему равна энтропия 256 равновозможных исходов? 256 равновозможных исходов: энтропия 8 битов.
+what is the entropy of 2 equally likely outcomes? 2 equally likely outcomes: entropy 1 bit.
+8 равновозможных исходов несут 3 бита.
+16 equally likely outcomes carry 4 bits.
+сколько бит несут 32 равновозможных исхода? 32 равновозможных исхода несут 5 битов.
+how many bits do 64 equally likely outcomes carry? 64 equally likely outcomes carry 6 bits.
+слово из 4 знака алфавита в 4 знака стоит 8 битов.
+a word of 1 signs over an alphabet of 8 signs costs 3 bits.
+сколько бит стоит слово из 2 знака алфавита в 4 знака? слово из 2 знака алфавита в 4 знака стоит 4 бита.
+how much does a word of 3 signs over an alphabet of 8 signs cost? a word of 3 signs over an alphabet of 8 signs costs 9 bits.
+8 равновозможных исходов: энтропия 3 бита.
+16 equally likely outcomes: entropy 4 bits.
+чему равна энтропия 32 равновозможных исхода? 32 равновозможных исхода: энтропия 5 битов.
+what is the entropy of 64 equally likely outcomes? 64 equally likely outcomes: entropy 6 bits.
+256 равновозможных исходов несут 8 битов.
+2 equally likely outcomes carry 1 bit.
+сколько бит несут 4 равновозможных исхода? 4 равновозможных исхода несут 2 бита.
+how many bits do 8 equally likely outcomes carry? 8 equally likely outcomes carry 3 bits.
+слово из 1 знак алфавита в 4 знака стоит 2 бита.
+a word of 2 signs over an alphabet of 8 signs costs 6 bits.
+сколько бит стоит слово из 3 знака алфавита в 2 знака? слово из 3 знака алфавита в 2 знака стоит 3 бита.
+how much does a word of 4 signs over an alphabet of 4 signs cost? a word of 4 signs over an alphabet of 4 signs costs 8 bits.
+256 равновозможных исходов: энтропия 8 битов.
 
 parity automaton: input 1; the state after is odd.
 автомат чётности: вход 1 0 0 1 1; состояние после — нечётное.
@@ -664,54 +863,119 @@ the model of the system has 4 states; the observer tells apart 4: control is pos
 the model of the system has 3 states; the observer tells apart 1: control is impossible.
 модель системы имеет 4 состояния; наблюдатель различает 4: управление возможно.
 
-2 равновозможных исхода: энтропия 1 бит.
-a word of 1 signs over an alphabet of 4 signs costs 2 bits.
-слово из 4 знака алфавита в 4 знака стоит 8 битов.
-4 equally likely outcomes carry 2 bits.
-32 равновозможных исхода несут 5 битов.
-128 equally likely outcomes: entropy 7 bits.
-4 равновозможных исхода: энтропия 2 бита.
-a word of 2 signs over an alphabet of 8 signs costs 6 bits.
-слово из 1 знак алфавита в 8 знаков стоит 3 бита.
-8 equally likely outcomes carry 3 bits.
-64 равновозможных исхода несут 6 битов.
-256 equally likely outcomes: entropy 8 bits.
-8 равновозможных исходов: энтропия 3 бита.
-a word of 3 signs over an alphabet of 2 signs costs 3 bits.
+how many bits does a sign of an alphabet of 14 signs cost? no whole answer for 14 signs: 14 is not a power of two.
+сколько бит стоит знак алфавита в 14 знаков? целого ответа нет: 14 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 3 signs cost? no whole answer for 3 signs: 3 is not a power of two.
+сколько бит стоит знак алфавита в 3 знака? целого ответа нет: 3 знака — это не степень двойки.
+how many bits does a sign of an alphabet of 5 signs cost? no whole answer for 5 signs: 5 is not a power of two.
+сколько бит стоит знак алфавита в 5 знаков? целого ответа нет: 5 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 6 signs cost? no whole answer for 6 signs: 6 is not a power of two.
+сколько бит стоит знак алфавита в 6 знаков? целого ответа нет: 6 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 7 signs cost? no whole answer for 7 signs: 7 is not a power of two.
+сколько бит стоит знак алфавита в 7 знаков? целого ответа нет: 7 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 9 signs cost? no whole answer for 9 signs: 9 is not a power of two.
+сколько бит стоит знак алфавита в 9 знаков? целого ответа нет: 9 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 12 signs cost? no whole answer for 12 signs: 12 is not a power of two.
+сколько бит стоит знак алфавита в 12 знаков? целого ответа нет: 12 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 13 signs cost? no whole answer for 13 signs: 13 is not a power of two.
+сколько бит стоит знак алфавита в 13 знаков? целого ответа нет: 13 знаков — это не степень двойки.
+
 слово из 2 знака алфавита в 4 знака стоит 4 бита.
-16 equally likely outcomes carry 4 bits.
-128 равновозможных исходов несут 7 битов.
-2 equally likely outcomes: entropy 1 bit.
-16 равновозможных исходов: энтропия 4 бита.
-a word of 4 signs over an alphabet of 4 signs costs 8 bits.
-слово из 3 знака алфавита в 8 знаков стоит 9 битов.
-32 equally likely outcomes carry 5 bits.
-256 равновозможных исходов несут 8 битов.
 4 equally likely outcomes: entropy 2 bits.
-32 равновозможных исхода: энтропия 5 битов.
+сколько бит несут 16 равновозможных исходов? 16 равновозможных исходов несут 4 бита.
+how much does a word of 2 signs over an alphabet of 8 signs cost? a word of 2 signs over an alphabet of 8 signs costs 6 bits.
+128 равновозможных исходов несут 7 битов.
 a word of 1 signs over an alphabet of 8 signs costs 3 bits.
-слово из 4 знака алфавита в 2 знака стоит 4 бита.
+чему равна энтропия 2 равновозможных исхода? 2 равновозможных исхода: энтропия 1 бит.
+how many bits do 8 equally likely outcomes carry? 8 equally likely outcomes carry 3 bits.
+16 равновозможных исходов: энтропия 4 бита.
 64 equally likely outcomes carry 6 bits.
-2 равновозможных исхода несут 1 бит.
+сколько бит стоит слово из 4 знака алфавита в 4 знака? слово из 4 знака алфавита в 4 знака стоит 8 битов.
+what is the entropy of 256 equally likely outcomes? 256 equally likely outcomes: entropy 8 bits.
+слово из 3 знака алфавита в 8 знаков стоит 9 битов.
 8 equally likely outcomes: entropy 3 bits.
-64 равновозможных исхода: энтропия 6 битов.
+сколько бит несут 32 равновозможных исхода? 32 равновозможных исхода несут 5 битов.
+how much does a word of 3 signs over an alphabet of 2 signs cost? a word of 3 signs over an alphabet of 2 signs costs 3 bits.
+256 равновозможных исходов несут 8 битов.
 a word of 2 signs over an alphabet of 4 signs costs 4 bits.
-слово из 1 знак алфавита в 4 знака стоит 2 бита.
+чему равна энтропия 4 равновозможных исхода? 4 равновозможных исхода: энтропия 2 бита.
+how many bits do 16 equally likely outcomes carry? 16 equally likely outcomes carry 4 bits.
+32 равновозможных исхода: энтропия 5 битов.
 128 equally likely outcomes carry 7 bits.
-4 равновозможных исхода несут 2 бита.
+сколько бит стоит слово из 1 знак алфавита в 8 знаков? слово из 1 знак алфавита в 8 знаков стоит 3 бита.
+what is the entropy of 2 equally likely outcomes? 2 equally likely outcomes: entropy 1 bit.
+слово из 4 знака алфавита в 2 знака стоит 4 бита.
 16 equally likely outcomes: entropy 4 bits.
-128 равновозможных исходов: энтропия 7 битов.
+сколько бит несут 64 равновозможных исхода? 64 равновозможных исхода несут 6 битов.
+how much does a word of 4 signs over an alphabet of 4 signs cost? a word of 4 signs over an alphabet of 4 signs costs 8 bits.
+2 равновозможных исхода несут 1 бит.
 a word of 3 signs over an alphabet of 8 signs costs 9 bits.
-слово из 2 знака алфавита в 8 знаков стоит 6 битов.
+чему равна энтропия 8 равновозможных исходов? 8 равновозможных исходов: энтропия 3 бита.
+how many bits do 32 equally likely outcomes carry? 32 equally likely outcomes carry 5 bits.
+64 равновозможных исхода: энтропия 6 битов.
 256 equally likely outcomes carry 8 bits.
-8 равновозможных исходов несут 3 бита.
+сколько бит стоит слово из 2 знака алфавита в 4 знака? слово из 2 знака алфавита в 4 знака стоит 4 бита.
+what is the entropy of 4 equally likely outcomes? 4 equally likely outcomes: entropy 2 bits.
+слово из 1 знак алфавита в 4 знака стоит 2 бита.
 32 equally likely outcomes: entropy 5 bits.
-256 равновозможных исходов: энтропия 8 битов.
+сколько бит несут 128 равновозможных исходов? 128 равновозможных исходов несут 7 битов.
+how much does a word of 1 signs over an alphabet of 8 signs cost? a word of 1 signs over an alphabet of 8 signs costs 3 bits.
+4 равновозможных исхода несут 2 бита.
 a word of 4 signs over an alphabet of 2 signs costs 4 bits.
-слово из 3 знака алфавита в 2 знака стоит 3 бита.
+чему равна энтропия 16 равновозможных исходов? 16 равновозможных исходов: энтропия 4 бита.
+how many bits do 64 equally likely outcomes carry? 64 equally likely outcomes carry 6 bits.
+128 равновозможных исходов: энтропия 7 битов.
 2 equally likely outcomes carry 1 bit.
-16 равновозможных исходов несут 4 бита.
+сколько бит стоит слово из 3 знака алфавита в 8 знаков? слово из 3 знака алфавита в 8 знаков стоит 9 битов.
+what is the entropy of 8 equally likely outcomes? 8 equally likely outcomes: entropy 3 bits.
+слово из 2 знака алфавита в 8 знаков стоит 6 битов.
 64 equally likely outcomes: entropy 6 bits.
+сколько бит несут 256 равновозможных исходов? 256 равновозможных исходов несут 8 битов.
+how much does a word of 2 signs over an alphabet of 4 signs cost? a word of 2 signs over an alphabet of 4 signs costs 4 bits.
+8 равновозможных исходов несут 3 бита.
+a word of 1 signs over an alphabet of 4 signs costs 2 bits.
+чему равна энтропия 32 равновозможных исхода? 32 равновозможных исхода: энтропия 5 битов.
+how many bits do 128 equally likely outcomes carry? 128 equally likely outcomes carry 7 bits.
+256 равновозможных исходов: энтропия 8 битов.
+4 equally likely outcomes carry 2 bits.
+сколько бит стоит слово из 4 знака алфавита в 2 знака? слово из 4 знака алфавита в 2 знака стоит 4 бита.
+what is the entropy of 16 equally likely outcomes? 16 equally likely outcomes: entropy 4 bits.
+слово из 3 знака алфавита в 2 знака стоит 3 бита.
+128 equally likely outcomes: entropy 7 bits.
+сколько бит несут 2 равновозможных исхода? 2 равновозможных исхода несут 1 бит.
+how much does a word of 3 signs over an alphabet of 8 signs cost? a word of 3 signs over an alphabet of 8 signs costs 9 bits.
+16 равновозможных исходов несут 4 бита.
+a word of 2 signs over an alphabet of 8 signs costs 6 bits.
+чему равна энтропия 64 равновозможных исхода? 64 равновозможных исхода: энтропия 6 битов.
+how many bits do 256 equally likely outcomes carry? 256 equally likely outcomes carry 8 bits.
+2 равновозможных исхода: энтропия 1 бит.
+8 equally likely outcomes carry 3 bits.
+сколько бит стоит слово из 1 знак алфавита в 4 знака? слово из 1 знак алфавита в 4 знака стоит 2 бита.
+what is the entropy of 32 equally likely outcomes? 32 equally likely outcomes: entropy 5 bits.
+слово из 4 знака алфавита в 4 знака стоит 8 битов.
+256 equally likely outcomes: entropy 8 bits.
+сколько бит несут 4 равновозможных исхода? 4 равновозможных исхода несут 2 бита.
+how much does a word of 4 signs over an alphabet of 2 signs cost? a word of 4 signs over an alphabet of 2 signs costs 4 bits.
+32 равновозможных исхода несут 5 битов.
+a word of 3 signs over an alphabet of 2 signs costs 3 bits.
+чему равна энтропия 128 равновозможных исходов? 128 равновозможных исходов: энтропия 7 битов.
+how many bits do 2 equally likely outcomes carry? 2 equally likely outcomes carry 1 bit.
+4 равновозможных исхода: энтропия 2 бита.
+16 equally likely outcomes carry 4 bits.
+сколько бит стоит слово из 2 знака алфавита в 8 знаков? слово из 2 знака алфавита в 8 знаков стоит 6 битов.
+what is the entropy of 64 equally likely outcomes? 64 equally likely outcomes: entropy 6 bits.
+слово из 1 знак алфавита в 8 знаков стоит 3 бита.
+2 equally likely outcomes: entropy 1 bit.
+сколько бит несут 8 равновозможных исходов? 8 равновозможных исходов несут 3 бита.
+how much does a word of 1 signs over an alphabet of 4 signs cost? a word of 1 signs over an alphabet of 4 signs costs 2 bits.
+64 равновозможных исхода несут 6 битов.
+a word of 4 signs over an alphabet of 4 signs costs 8 bits.
+чему равна энтропия 256 равновозможных исходов? 256 равновозможных исходов: энтропия 8 битов.
+how many bits do 4 equally likely outcomes carry? 4 equally likely outcomes carry 2 bits.
+8 равновозможных исходов: энтропия 3 бита.
+32 equally likely outcomes carry 5 bits.
+сколько бит стоит слово из 3 знака алфавита в 2 знака? слово из 3 знака алфавита в 2 знака стоит 3 бита.
+what is the entropy of 128 equally likely outcomes? 128 equally likely outcomes: entropy 7 bits.
 
 автомат чётности: вход 0 0 1; состояние после — нечётное.
 parity automaton: input 0 0 1; the state after is odd.
@@ -886,54 +1150,119 @@ the model of the system has 2 states; the observer tells apart 2: control is pos
 модель системы имеет 7 состояний; наблюдатель различает 5: управление невозможно.
 the model of the system has 5 states; the observer tells apart 3: control is impossible.
 
-8 равновозможных исходов несут 3 бита.
-64 equally likely outcomes carry 6 bits.
-слово из 2 знака алфавита в 4 знака стоит 4 бита.
-a word of 1 signs over an alphabet of 4 signs costs 2 bits.
-128 равновозможных исходов: энтропия 7 битов.
-4 equally likely outcomes: entropy 2 bits.
-64 равновозможных исхода несут 6 битов.
-2 equally likely outcomes carry 1 bit.
-слово из 1 знак алфавита в 4 знака стоит 2 бита.
-a word of 4 signs over an alphabet of 4 signs costs 8 bits.
-4 равновозможных исхода: энтропия 2 бита.
-32 equally likely outcomes: entropy 5 bits.
-2 равновозможных исхода несут 1 бит.
-16 equally likely outcomes carry 4 bits.
-слово из 4 знака алфавита в 4 знака стоит 8 битов.
-a word of 3 signs over an alphabet of 8 signs costs 9 bits.
-32 равновозможных исхода: энтропия 5 битов.
-256 equally likely outcomes: entropy 8 bits.
-16 равновозможных исходов несут 4 бита.
-128 equally likely outcomes carry 7 bits.
-слово из 3 знака алфавита в 8 знаков стоит 9 битов.
-a word of 2 signs over an alphabet of 8 signs costs 6 bits.
-256 равновозможных исходов: энтропия 8 битов.
-8 equally likely outcomes: entropy 3 bits.
-128 равновозможных исходов несут 7 битов.
-4 equally likely outcomes carry 2 bits.
-слово из 2 знака алфавита в 8 знаков стоит 6 битов.
-a word of 1 signs over an alphabet of 8 signs costs 3 bits.
-8 равновозможных исходов: энтропия 3 бита.
-64 equally likely outcomes: entropy 6 bits.
+how many bits does a sign of an alphabet of 11 signs cost? no whole answer for 11 signs: 11 is not a power of two.
+сколько бит стоит знак алфавита в 12 знаков? целого ответа нет: 12 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 5 signs cost? no whole answer for 5 signs: 5 is not a power of two.
+сколько бит стоит знак алфавита в 6 знаков? целого ответа нет: 6 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 9 signs cost? no whole answer for 9 signs: 9 is not a power of two.
+сколько бит стоит знак алфавита в 10 знаков? целого ответа нет: 10 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 12 signs cost? no whole answer for 12 signs: 12 is not a power of two.
+сколько бит стоит знак алфавита в 3 знака? целого ответа нет: 3 знака — это не степень двойки.
+how many bits does a sign of an alphabet of 6 signs cost? no whole answer for 6 signs: 6 is not a power of two.
+сколько бит стоит знак алфавита в 7 знаков? целого ответа нет: 7 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 10 signs cost? no whole answer for 10 signs: 10 is not a power of two.
+сколько бит стоит знак алфавита в 11 знаков? целого ответа нет: 11 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 3 signs cost? no whole answer for 3 signs: 3 is not a power of two.
+сколько бит стоит знак алфавита в 5 знаков? целого ответа нет: 5 знаков — это не степень двойки.
+how many bits does a sign of an alphabet of 7 signs cost? no whole answer for 7 signs: 7 is not a power of two.
+сколько бит стоит знак алфавита в 9 знаков? целого ответа нет: 9 знаков — это не степень двойки.
+
 4 равновозможных исхода несут 2 бита.
-32 equally likely outcomes carry 5 bits.
+how much does a word of 4 signs over an alphabet of 2 signs cost? a word of 4 signs over an alphabet of 2 signs costs 4 bits.
+сколько бит несут 32 равновозможных исхода? 32 равновозможных исхода несут 5 битов.
+64 equally likely outcomes: entropy 6 bits.
 слово из 1 знак алфавита в 8 знаков стоит 3 бита.
-a word of 4 signs over an alphabet of 2 signs costs 4 bits.
+what is the entropy of 2 equally likely outcomes? 2 equally likely outcomes: entropy 1 bit.
+сколько бит стоит слово из 4 знака алфавита в 2 знака? слово из 4 знака алфавита в 2 знака стоит 4 бита.
+32 equally likely outcomes carry 5 bits.
 64 равновозможных исхода: энтропия 6 битов.
-2 equally likely outcomes: entropy 1 bit.
+how many bits do 256 equally likely outcomes carry? 256 equally likely outcomes carry 8 bits.
+чему равна энтропия 2 равновозможных исхода? 2 равновозможных исхода: энтропия 1 бит.
+a word of 4 signs over an alphabet of 2 signs costs 4 bits.
 32 равновозможных исхода несут 5 битов.
-256 equally likely outcomes carry 8 bits.
+how much does a word of 3 signs over an alphabet of 2 signs cost? a word of 3 signs over an alphabet of 2 signs costs 3 bits.
+сколько бит несут 256 равновозможных исходов? 256 равновозможных исходов несут 8 битов.
+2 equally likely outcomes: entropy 1 bit.
 слово из 4 знака алфавита в 2 знака стоит 4 бита.
-a word of 3 signs over an alphabet of 2 signs costs 3 bits.
+what is the entropy of 16 equally likely outcomes? 16 equally likely outcomes: entropy 4 bits.
+сколько бит стоит слово из 3 знака алфавита в 2 знака? слово из 3 знака алфавита в 2 знака стоит 3 бита.
+256 equally likely outcomes carry 8 bits.
 2 равновозможных исхода: энтропия 1 бит.
-16 equally likely outcomes: entropy 4 bits.
+how many bits do 8 equally likely outcomes carry? 8 equally likely outcomes carry 3 bits.
+чему равна энтропия 16 равновозможных исходов? 16 равновозможных исходов: энтропия 4 бита.
+a word of 3 signs over an alphabet of 2 signs costs 3 bits.
 256 равновозможных исходов несут 8 битов.
-8 equally likely outcomes carry 3 bits.
+how much does a word of 2 signs over an alphabet of 4 signs cost? a word of 2 signs over an alphabet of 4 signs costs 4 bits.
+сколько бит несут 8 равновозможных исходов? 8 равновозможных исходов несут 3 бита.
+16 equally likely outcomes: entropy 4 bits.
 слово из 3 знака алфавита в 2 знака стоит 3 бита.
-a word of 2 signs over an alphabet of 4 signs costs 4 bits.
+what is the entropy of 128 equally likely outcomes? 128 equally likely outcomes: entropy 7 bits.
+сколько бит стоит слово из 2 знака алфавита в 4 знака? слово из 2 знака алфавита в 4 знака стоит 4 бита.
+8 equally likely outcomes carry 3 bits.
 16 равновозможных исходов: энтропия 4 бита.
+how many bits do 64 equally likely outcomes carry? 64 equally likely outcomes carry 6 bits.
+чему равна энтропия 128 равновозможных исходов? 128 равновозможных исходов: энтропия 7 битов.
+a word of 2 signs over an alphabet of 4 signs costs 4 bits.
+8 равновозможных исходов несут 3 бита.
+how much does a word of 1 signs over an alphabet of 4 signs cost? a word of 1 signs over an alphabet of 4 signs costs 2 bits.
+сколько бит несут 64 равновозможных исхода? 64 равновозможных исхода несут 6 битов.
 128 equally likely outcomes: entropy 7 bits.
+слово из 2 знака алфавита в 4 знака стоит 4 бита.
+what is the entropy of 4 equally likely outcomes? 4 equally likely outcomes: entropy 2 bits.
+сколько бит стоит слово из 1 знак алфавита в 4 знака? слово из 1 знак алфавита в 4 знака стоит 2 бита.
+64 equally likely outcomes carry 6 bits.
+128 равновозможных исходов: энтропия 7 битов.
+how many bits do 2 equally likely outcomes carry? 2 equally likely outcomes carry 1 bit.
+чему равна энтропия 4 равновозможных исхода? 4 равновозможных исхода: энтропия 2 бита.
+a word of 1 signs over an alphabet of 4 signs costs 2 bits.
+64 равновозможных исхода несут 6 битов.
+how much does a word of 4 signs over an alphabet of 4 signs cost? a word of 4 signs over an alphabet of 4 signs costs 8 bits.
+сколько бит несут 2 равновозможных исхода? 2 равновозможных исхода несут 1 бит.
+4 equally likely outcomes: entropy 2 bits.
+слово из 1 знак алфавита в 4 знака стоит 2 бита.
+what is the entropy of 32 equally likely outcomes? 32 equally likely outcomes: entropy 5 bits.
+сколько бит стоит слово из 4 знака алфавита в 4 знака? слово из 4 знака алфавита в 4 знака стоит 8 битов.
+2 equally likely outcomes carry 1 bit.
+4 равновозможных исхода: энтропия 2 бита.
+how many bits do 16 equally likely outcomes carry? 16 equally likely outcomes carry 4 bits.
+чему равна энтропия 32 равновозможных исхода? 32 равновозможных исхода: энтропия 5 битов.
+a word of 4 signs over an alphabet of 4 signs costs 8 bits.
+2 равновозможных исхода несут 1 бит.
+how much does a word of 3 signs over an alphabet of 8 signs cost? a word of 3 signs over an alphabet of 8 signs costs 9 bits.
+сколько бит несут 16 равновозможных исходов? 16 равновозможных исходов несут 4 бита.
+32 equally likely outcomes: entropy 5 bits.
+слово из 4 знака алфавита в 4 знака стоит 8 битов.
+what is the entropy of 256 equally likely outcomes? 256 equally likely outcomes: entropy 8 bits.
+сколько бит стоит слово из 3 знака алфавита в 8 знаков? слово из 3 знака алфавита в 8 знаков стоит 9 битов.
+16 equally likely outcomes carry 4 bits.
+32 равновозможных исхода: энтропия 5 битов.
+how many bits do 128 equally likely outcomes carry? 128 equally likely outcomes carry 7 bits.
+чему равна энтропия 256 равновозможных исходов? 256 равновозможных исходов: энтропия 8 битов.
+a word of 3 signs over an alphabet of 8 signs costs 9 bits.
+16 равновозможных исходов несут 4 бита.
+how much does a word of 2 signs over an alphabet of 8 signs cost? a word of 2 signs over an alphabet of 8 signs costs 6 bits.
+сколько бит несут 128 равновозможных исходов? 128 равновозможных исходов несут 7 битов.
+256 equally likely outcomes: entropy 8 bits.
+слово из 3 знака алфавита в 8 знаков стоит 9 битов.
+what is the entropy of 8 equally likely outcomes? 8 equally likely outcomes: entropy 3 bits.
+сколько бит стоит слово из 2 знака алфавита в 8 знаков? слово из 2 знака алфавита в 8 знаков стоит 6 битов.
+128 equally likely outcomes carry 7 bits.
+256 равновозможных исходов: энтропия 8 битов.
+how many bits do 4 equally likely outcomes carry? 4 equally likely outcomes carry 2 bits.
+чему равна энтропия 8 равновозможных исходов? 8 равновозможных исходов: энтропия 3 бита.
+a word of 2 signs over an alphabet of 8 signs costs 6 bits.
+128 равновозможных исходов несут 7 битов.
+how much does a word of 1 signs over an alphabet of 8 signs cost? a word of 1 signs over an alphabet of 8 signs costs 3 bits.
+сколько бит несут 4 равновозможных исхода? 4 равновозможных исхода несут 2 бита.
+8 equally likely outcomes: entropy 3 bits.
+слово из 2 знака алфавита в 8 знаков стоит 6 битов.
+what is the entropy of 64 equally likely outcomes? 64 equally likely outcomes: entropy 6 bits.
+сколько бит стоит слово из 1 знак алфавита в 8 знаков? слово из 1 знак алфавита в 8 знаков стоит 3 бита.
+4 equally likely outcomes carry 2 bits.
+8 равновозможных исходов: энтропия 3 бита.
+how many bits do 32 equally likely outcomes carry? 32 equally likely outcomes carry 5 bits.
+чему равна энтропия 64 равновозможных исхода? 64 равновозможных исхода: энтропия 6 битов.
+a word of 1 signs over an alphabet of 8 signs costs 3 bits.
 
 автомат чётности: вход 1 1 1; состояние после — нечётное.
 parity automaton: input 0 1 0 1; the state after is even.

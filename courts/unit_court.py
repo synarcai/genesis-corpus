@@ -29,6 +29,7 @@ from fractions import Fraction
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import asking  # noqa: E402
 from genesis import Unreadable, worlds  # noqa: E402
 from gsm_items import ITEMS  # noqa: E402
 from plural import singular  # noqa: E402
@@ -84,6 +85,14 @@ def величина(слово):
 
 def судить(строка):
     """(судимо, истинно) для одной строки."""
+    # ВОПРОС СУДИТСЯ СВОИМ ОТВЕТОМ, А РОД ОПРЕДЕЛЯЕТСЯ ОТВЕТОМ.
+    # Связь половин держит общий дом `tools/asking.py`: величины
+    # вопроса суть начальный отрезок величин ответа, и порча любой из
+    # них рвёт пару. Без этого суд читал бы вторую половину строки и
+    # звал истиной вопрос, спрашивающий о другом.
+    если = asking.судить_парой(строка, судить)
+    if если is not None:
+        return если
     с = строка.strip()
     m = РОД_ЕДИНИЦЫ.match(с)
     if m:

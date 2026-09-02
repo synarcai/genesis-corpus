@@ -2191,278 +2191,6 @@
       ]
     },
     {
-      "name": "gutenberg_aristotle_categories",
-      "file": "shelf/en/aristotle_categories.txt",
-      "genre": "The Categories — Aristotle; английское издание 1928",
-      "act": [
-        "expound"
-      ],
-      "oracle": [
-        "none"
-      ],
-      "boundary": [
-        "unnamed"
-      ],
-      "tiers": [],
-      "text": "prose",
-      "тема": "логика",
-      "язык": "en",
-      "плотность": "трактат",
-      "издано": -350,
-      "источник": "public-domain",
-      "происхождение": "gutenberg:2412",
-      "held_out": "shelf/en/aristotle_categories.holdout.txt",
-      "судится": []
-    },
-    {
-      "name": "gutenberg_darwin_origin",
-      "file": "shelf/en/darwin_origin.txt",
-      "genre": "On the Origin of Species (1st edition) — Charles Darwin; английское издание 1859",
-      "act": [
-        "expound"
-      ],
-      "oracle": [
-        "none"
-      ],
-      "boundary": [
-        "unnamed"
-      ],
-      "tiers": [],
-      "text": "prose",
-      "тема": "естествознание",
-      "язык": "en",
-      "плотность": "трактат",
-      "издано": 1859,
-      "источник": "public-domain",
-      "происхождение": "gutenberg:1228",
-      "held_out": "shelf/en/darwin_origin.holdout.txt",
-      "судится": []
-    },
-    {
-      "name": "gutenberg_descartes_method",
-      "file": "shelf/en/descartes_method.txt",
-      "genre": "Discourse on the Method — Rene Descartes; английское издание 1899",
-      "act": [
-        "expound"
-      ],
-      "oracle": [
-        "none"
-      ],
-      "boundary": [
-        "unnamed"
-      ],
-      "tiers": [],
-      "text": "prose",
-      "тема": "научный метод",
-      "язык": "en",
-      "плотность": "трактат",
-      "издано": 1637,
-      "источник": "public-domain",
-      "происхождение": "gutenberg:59",
-      "held_out": "shelf/en/descartes_method.holdout.txt",
-      "судится": []
-    },
-    {
-      "name": "gutenberg_faraday_researches_v1",
-      "file": "shelf/en/faraday_researches_v1.txt",
-      "genre": "Experimental Researches in Electricity, Vol. 1 — Michael Faraday; английское издание 1839",
-      "act": [
-        "expound"
-      ],
-      "oracle": [
-        "none"
-      ],
-      "boundary": [
-        "unnamed"
-      ],
-      "tiers": [],
-      "text": "prose",
-      "тема": "естествознание",
-      "язык": "en",
-      "плотность": "исследование",
-      "издано": 1839,
-      "источник": "public-domain",
-      "происхождение": "gutenberg:14986",
-      "held_out": "shelf/en/faraday_researches_v1.holdout.txt",
-      "судится": []
-    },
-    {
-      "name": "gutenberg_hume_enquiry",
-      "file": "shelf/en/hume_enquiry.txt",
-      "genre": "An Enquiry Concerning Human Understanding — David Hume; английское издание 1902",
-      "act": [
-        "expound"
-      ],
-      "oracle": [
-        "none"
-      ],
-      "boundary": [
-        "unnamed"
-      ],
-      "tiers": [],
-      "text": "prose",
-      "тема": "философия познания",
-      "язык": "en",
-      "плотность": "трактат",
-      "издано": 1748,
-      "источник": "public-domain",
-      "происхождение": "gutenberg:9662",
-      "held_out": "shelf/en/hume_enquiry.holdout.txt",
-      "судится": []
-    },
-    {
-      "name": "gutenberg_jevons_principles",
-      "file": "shelf/en/jevons_principles.txt",
-      "genre": "The Principles of Science — W. Stanley Jevons; английское издание 1877",
-      "act": [
-        "expound"
-      ],
-      "oracle": [
-        "none"
-      ],
-      "boundary": [
-        "unnamed"
-      ],
-      "tiers": [],
-      "text": "prose",
-      "тема": "научный метод",
-      "язык": "en",
-      "плотность": "трактат",
-      "издано": 1874,
-      "источник": "public-domain",
-      "происхождение": "gutenberg:74864",
-      "held_out": "shelf/en/jevons_principles.holdout.txt",
-      "судится": [
-        "prosetree"
-      ]
-    },
-    {
-      "name": "gutenberg_kant_critique",
-      "file": "shelf/en/kant_critique.txt",
-      "genre": "The Critique of Pure Reason — Immanuel Kant; английское издание 1855",
-      "act": [
-        "expound"
-      ],
-      "oracle": [
-        "none"
-      ],
-      "boundary": [
-        "unnamed"
-      ],
-      "tiers": [],
-      "text": "prose",
-      "тема": "метафизика",
-      "язык": "en",
-      "плотность": "трактат",
-      "издано": 1781,
-      "источник": "public-domain",
-      "происхождение": "gutenberg:4280",
-      "held_out": "shelf/en/kant_critique.holdout.txt",
-      "судится": []
-    },
-    {
-      "name": "gutenberg_locke_essay_v1",
-      "file": "shelf/en/locke_essay_v1.txt",
-      "genre": "An Essay Concerning Humane Understanding, Vol. 1 — John Locke; английское издание 1894",
-      "act": [
-        "expound"
-      ],
-      "oracle": [
-        "none"
-      ],
-      "boundary": [
-        "unnamed"
-      ],
-      "tiers": [],
-      "text": "prose",
-      "тема": "философия познания",
-      "язык": "en",
-      "плотность": "трактат",
-      "издано": 1690,
-      "источник": "public-domain",
-      "происхождение": "gutenberg:10615",
-      "held_out": "shelf/en/locke_essay_v1.holdout.txt",
-      "судится": [
-        "prosetree"
-      ]
-    },
-    {
-      "name": "gutenberg_mill_logic_v1",
-      "file": "shelf/en/mill_logic_v1.txt",
-      "genre": "A System of Logic, 7th ed., Vol. I — John Stuart Mill; английское издание 1868",
-      "act": [
-        "expound"
-      ],
-      "oracle": [
-        "none"
-      ],
-      "boundary": [
-        "unnamed"
-      ],
-      "tiers": [],
-      "text": "prose",
-      "тема": "логика",
-      "язык": "en",
-      "плотность": "трактат",
-      "издано": 1843,
-      "источник": "public-domain",
-      "происхождение": "gutenberg:35420",
-      "held_out": "shelf/en/mill_logic_v1.holdout.txt",
-      "судится": [
-        "prosetree"
-      ]
-    },
-    {
-      "name": "gutenberg_poincare_foundations",
-      "file": "shelf/en/poincare_foundations.txt",
-      "genre": "The Foundations of Science (Science and Hypothesis 1902, The Value of Science 1905, Science and Method 1908) — Henri Poincare; английское издание 1913",
-      "act": [
-        "expound"
-      ],
-      "oracle": [
-        "none"
-      ],
-      "boundary": [
-        "unnamed"
-      ],
-      "tiers": [],
-      "text": "prose",
-      "тема": "основания математики",
-      "язык": "en",
-      "плотность": "трактат",
-      "издано": 1902,
-      "источник": "public-domain",
-      "происхождение": "gutenberg:39713",
-      "held_out": "shelf/en/poincare_foundations.holdout.txt",
-      "судится": [
-        "prosetree"
-      ]
-    },
-    {
-      "name": "gutenberg_russell_problems",
-      "file": "shelf/en/russell_problems.txt",
-      "genre": "The Problems of Philosophy — Bertrand Russell; английское издание 1912",
-      "act": [
-        "expound"
-      ],
-      "oracle": [
-        "none"
-      ],
-      "boundary": [
-        "unnamed"
-      ],
-      "tiers": [],
-      "text": "prose",
-      "тема": "философия познания",
-      "язык": "en",
-      "плотность": "трактат",
-      "издано": 1912,
-      "источник": "public-domain",
-      "происхождение": "gutenberg:5827",
-      "held_out": "shelf/en/russell_problems.holdout.txt",
-      "судится": []
-    },
-    {
       "name": "longdiv",
       "file": "datasets/genesis_longdiv.txt",
       "genre": "LONG DIVISION AS A WALK, NOT A NUMBER — ordered by the band, not by us: `band_reach` found that atlas asks «391 ÷ 17 =» and «5236 ÷ 17 =» while neither number stood once in 194392 lines of shows. Every step of the division is its own checkable equality (take 39; 17 × 2 = 34; 39 − 34 = 5; bring down 1 — 51; 17 × 3 = 51; remainder 0), the ZERO in the middle of a quotient is shown rather than skipped (5236 ÷ 17 = 308), the INVERSE ROAD is a built-in oracle (23 × 17 = 391, and quotient × divisor + remainder = dividend), the refusal is BRACKETED BY TWO COMPUTED MULTIPLES («391 ÷ 19 gives no whole: 19 × 20 = 380, and 19 × 21 = 399 is more than 391»), and column multiplication names its partial products. Divisor and quotient come by range, the dividend is DERIVED as their product; both glyphs of division are written, since two different bands recognise the genus by different ones",
@@ -2487,30 +2215,6 @@
       "assemblies": [
         "school"
       ]
-    },
-    {
-      "name": "gutenberg_spinoza_ethics",
-      "file": "shelf/en/spinoza_ethics.txt",
-      "genre": "Ethics — Benedictus de Spinoza; английское издание 1883",
-      "act": [
-        "expound"
-      ],
-      "oracle": [
-        "none"
-      ],
-      "boundary": [
-        "unnamed"
-      ],
-      "tiers": [],
-      "text": "prose",
-      "тема": "метафизика",
-      "язык": "en",
-      "плотность": "трактат",
-      "издано": 1677,
-      "источник": "public-domain",
-      "происхождение": "gutenberg:3800",
-      "held_out": "shelf/en/spinoza_ethics.holdout.txt",
-      "судится": []
     },
     {
       "name": "ru_conversions",
@@ -2864,6 +2568,104 @@
       "tiers": [],
       "text": "mix",
       "lines": 196515
+    },
+    {
+      "name": "gutenberg_herschel_discourse",
+      "file": "shelf/en/herschel_discourse.txt",
+      "genre": "A Preliminary Discourse on the Study of Natural Philosophy — John F. W. Herschel; английское издание 1831",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "научный метод",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1830,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:54897",
+      "held_out": "shelf/en/herschel_discourse.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_laplace_probabilities",
+      "file": "shelf/en/laplace_probabilities.txt",
+      "genre": "A Philosophical Essay on Probabilities — Pierre Simon de Laplace; английское издание 1902",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "основания математики",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1814,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:58881",
+      "held_out": "shelf/en/laplace_probabilities.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_whewell_discovery",
+      "file": "shelf/en/whewell_discovery.txt",
+      "genre": "On the Philosophy of Discovery, Chapters Historical and Critical — William Whewell; английское издание 1860",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "научный метод",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1860,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:51555",
+      "held_out": "shelf/en/whewell_discovery.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_whewell_novum_organon",
+      "file": "shelf/en/whewell_novum_organon.txt",
+      "genre": "Novum Organon Renovatum — William Whewell; английское издание 1858",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "научный метод",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 1858,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:69764",
+      "held_out": "shelf/en/whewell_novum_organon.holdout.txt",
+      "судится": [
+        "prosetree"
+      ]
     }
   ]
 }

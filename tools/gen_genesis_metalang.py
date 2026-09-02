@@ -323,6 +323,17 @@ def показ_определение(шаг):
         вон.append(f"определим род числа остатком, и он определяется "
                    f"делением, а не видом записи: {n} {п}, а {m} нет: "
                    f"{представление(n, d)}, а {представление(m, d)}.")
+        вон.append(f"{n} {а} by definition, and {m} is not: "
+                   f"{представление(n, d)}, and {представление(m, d)}.")
+        вон.append(f"the definition names at which remainder a number "
+                   f"{а}: {n} leaves remainder {r} when divided by {d}, "
+                   f"and {m} does not: {представление(n, d)}, and "
+                   f"{представление(m, d)}.")
+        вон.append(f"let us define the kind of a number by the "
+                   f"remainder, for it is defined by division and not "
+                   f"by the look of the record: {n} {а}, and {m} is "
+                   f"not: {представление(n, d)}, and "
+                   f"{представление(m, d)}.")
     return вон
 
 
@@ -390,6 +401,10 @@ def показ_аксиома(шаг):
                    f"замена равного: по аксиомам выходит "
                    f"{представление(n, d)}, и потому {n} + {c} = "
                    f"{n + c}.")
+        вон.append(f"the two axioms of this world are division with "
+                   f"remainder and replacing an equal: by the axioms "
+                   f"{представление(n, d)}, and therefore {n} + {c} = "
+                   f"{n + c}.")
         # АКСИОМАТИКА ЕСТЬ СВОД АКСИОМ, А НЕ ИМЯ ДЛЯ ВАЖНОСТИ. Свод
         # этого мира короток и назван целиком: две аксиомы, и обе
         # работают в каждом выводе. Слово, при котором стоит счёт,
@@ -454,6 +469,11 @@ def показ_лемма(шаг):
                    f"теоремы «{рус}»: {представление(a, d)}.")
         вон.append(f"без леммы о представлении хода к теореме «{рус}» "
                    f"нет: {представление(a, d)}.")
+        вон.append(f"the lemma on representation proves the first step "
+                   f"of the theorem «{англ}»: {представление(a, d)}.")
+        вон.append(f"without the lemma on representation there is no "
+                   f"move to the theorem «{англ}»: "
+                   f"{представление(a, d)}.")
     return вон
 
 
@@ -511,6 +531,14 @@ def показ_теорема(шаг):
         вон.append(f"обоих условий требует теорема «{рус}», и без обоих "
                    f"заключения нет: {a} {п1} и {b} {п2}, и "
                    f"{a} {знак} {b} = {итог}.")
+        вон.append(f"the theorem «{англ}» proves that {итог} {аи}: "
+                   f"{a} {знак} {b} = {итог}.")
+        вон.append(f"the theorem «{англ}» requires both conditions, and "
+                   f"without both there is no conclusion: {a} {а1} and "
+                   f"{b} {а2}, and {a} {знак} {b} = {итог}.")
+        вон.append(f"the premises of the theorem «{англ}» are that {a} "
+                   f"{а1} and {b} {а2}, and the conclusion is derivable "
+                   f"from those premises: {a} {знак} {b} = {итог}.")
     return вон
 
 
@@ -594,6 +622,12 @@ def показ_доказательство(шаг):
                    f"доказуемо ходом: {цепь}.")
         вон.append(f"первый шаг вывода есть {представление(a, d)}, а "
                    f"второй шаг вывода есть {цепь}.")
+        вон.append(f"what is to be proved? it is to be proved that "
+                   f"{итог} {аи}, and it is provable by the move: "
+                   f"{цепь}.")
+        вон.append(f"the first step of the derivation is "
+                   f"{представление(a, d)}, and the second step of the "
+                   f"derivation is {цепь}.")
         вон.append(f"the conclusion is derived from the condition, and "
                    f"the proof derives {итог} from {a} and {b}: "
                    f"{цепь}.")
@@ -772,6 +806,10 @@ def показ_контрпример(шаг):
                    f"опровергают утверждение «{рус}» поодиночке, и "
                    f"первый же довольно: {a} {знак} {b} = {итог}, а "
                    f"{представление(итог, dл)}.")
+        вон.append(f"the strength of a counterexample is in one "
+                   f"witness, and counterexamples refute the statement "
+                   f"«{англ}» one at a time: {a} {знак} {b} = {итог}, "
+                   f"while {представление(итог, dл)}.")
         вон.append(f"the refutation is one witness, and it refutes the "
                    f"statement «{англ}» alone: {a} {знак} {b} = {итог}, "
                    f"while {представление(итог, dл)}.")
@@ -933,6 +971,9 @@ def показ_гипотеза_жива(шаг):
         вон.append(f"гипотезой зовётся утверждение без доказательства, "
                    f"и случай его не доказывает: {n} = {p} + {q}, и "
                    f"{p} просто, и {q} просто.")
+        вон.append(f"by a hypothesis we call a statement without a "
+                   f"proof, and a case does not prove it: {n} = {p} + "
+                   f"{q}, and {p} is prime, and {q} is prime.")
     return вон
 
 
@@ -980,6 +1021,8 @@ def показ_утверждение(шаг):
                    f"and b = {b} it gives {a} {знак} {b} = {итог}.")
         вон.append(f"двумя теоремами показано, что {a} + {b} = {a + b} "
                    f"и {a} * {b} = {a * b}.")
+        вон.append(f"two theorems show that {a} + {b} = {a + b} and "
+                   f"{a} * {b} = {a * b}.")
     for i in range(2):
         формула, счёт, начало = ПРИТВОРЩИЦЫ[
             (шаг + i) % len(ПРИТВОРЩИЦЫ)]
@@ -1045,15 +1088,15 @@ def показ_связь(шаг):
                    f"at a = {a} and b = {b} there are two conclusions: "
                    f"{a} + {b} = {a + b}, and {a + b} {ас}; {a} * {b} = "
                    f"{a * b}, and {a * b} {ап}.")
+        п1, а1 = сказуемое(d, r1)
+        п2, а2 = сказуемое(d, r2)
         вон.append(f"два условия одной теоремы проверяются порознь: в "
-                   f"«{сум_ру}» первое условие есть {a} {сказуемое(d, r1)[0]}, "
-                   f"второе есть {b} {сказуемое(d, r2)[0]}, и оба "
-                   f"выполнены: {представление(a, d)} и "
-                   f"{представление(b, d)}.")
+                   f"«{сум_ру}» первое условие есть {a} {п1}, второе "
+                   f"есть {b} {п2}, и оба выполнены: "
+                   f"{представление(a, d)} и {представление(b, d)}.")
         вон.append(f"the two conditions of one theorem are checked "
                    f"apart: in «{сум_ан}» the first condition is {a} "
-                   f"{сказуемое(d, r1)[1]}, the second is {b} "
-                   f"{сказуемое(d, r2)[1]}, and both hold: "
+                   f"{а1}, the second is {b} {а2}, and both hold: "
                    f"{представление(a, d)} and {представление(b, d)}.")
     # ДВА ОПРЕДЕЛЕНИЯ, ДЕЛЯЩИЕ ЧИСЛА НАДВОЕ: что принято одним,
     # отвергнуто другим, и обе стороны показаны на одном числе.

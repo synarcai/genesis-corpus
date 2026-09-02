@@ -74,6 +74,24 @@ def ру(слово, k):
 ]
 
 
+# ИСКОМОЕ ОБЪЯВЛЯЕТ СВОЙ ВОПРОС ОДИН РАЗ, и вопрос берёт ТУ ЖЕ фразу
+# предмета, какую берёт ответ. Замер вопросной поверхности назвал этот
+# мир немым: 700 строк, вопросов ноль.
+СПРОСИТЬ = {
+    "steps": "how many steps does {предмет} take?",
+    "distinguish": "how many disturbances can {предмет} distinguish?",
+    "bits": "how many bits does {предмет} need?",
+    "шаги": "за сколько шагов {предмет} достигает цели?",
+    "различает": "сколько возмущений различает {предмет}?",
+    "биты": "сколько бит нужно, чтобы {предмет}?",
+}
+
+
+def спросить(искомое, предмет, ответ):
+    """Вопрос о предмете и ответ о нём же — одной строкой."""
+    return f"{СПРОСИТЬ[искомое].format(предмет=предмет)} {ответ}"
+
+
 def pass_shows(pass_i):
     out = []
     for i in range(10):
@@ -95,10 +113,30 @@ def pass_shows(pass_i):
         # --- сходимость: счёт шагов
         шагов = ошибка // шаг
         if ошибка % шаг == 0:
-            out.append(f"starting at {нач} with target {цель} and step "
-                       f"{шаг} the value reaches {цель} in {шагов} steps.")
-            out.append(f"начав с {нач} при цели {цель} и шаге {шаг}, "
-                       f"значение достигает {цель} за {шагов} {ру('шаг', шагов)}.")
+            пред_en = (f"starting at {нач} with target {цель} and "
+                       f"step {шаг}")
+            пред_ru = f"начав с {нач} при цели {цель} и шаге {шаг}"
+            утв_en = f"{пред_en} the value reaches {цель} in {шагов} steps."
+            утв_ru = (f"{пред_ru}, значение достигает {цель} за "
+                      f"{шагов} {ру('шаг', шагов)}.")
+            out.append(утв_en)
+            out.append(утв_ru)
+            out.append(спросить("steps", пред_en, утв_en))
+            out.append(спросить("шаги", пред_ru, утв_ru))
+        else:
+            # ОТКАЗ С ОСНОВАНИЕМ: цель, до которой шаг не доводит
+            # ровно, целым числом шагов не берётся. Мир пишет счёт
+            # шагов только при делящейся ошибке — таков его закон, — и
+            # отказ называет основание числом: саму ошибку и то, что
+            # она на шаг не делится.
+            out.append(f"how many steps does starting at {нач} with "
+                       f"target {цель} and step {шаг} take? no whole "
+                       f"answer for {нач}, {цель} and step {шаг}: the "
+                       f"error {ошибка} is not divisible by {шаг}.")
+            out.append(f"за сколько шагов начав с {нач} при цели "
+                       f"{цель} и шаге {шаг} достигает цели? целого "
+                       f"ответа нет для {нач}, {цель} и шага {шаг}: "
+                       f"ошибка {ошибка} не делится на {шаг} нацело.")
             out.append(f"target {цель}: a closed loop stops at {цель} "
                        f"because the error is 0.")
             out.append(f"target {цель}: an open loop takes one step more "
@@ -112,12 +150,19 @@ def pass_shows(pass_i):
                    f"transitions.")
         # --- закон необходимого разнообразия
         бит = math.ceil(math.log2(n)) if n > 1 else 1
-        out.append(f"a regulator with {n} states can distinguish {n} "
-                   f"disturbances.")
-        out.append(f"регулятор с {n} состояниями различает {n} "
-                   f"{ру('возмущение', n)}.")
-        out.append(f"to distinguish {n} disturbances a regulator needs "
-                   f"{бит} {by_count(бит, 'bits')}.")
+        рег_en = f"a regulator with {n} states"
+        рег_ru = f"регулятор с {n} состояниями"
+        утв_р_en = f"{рег_en} can distinguish {n} disturbances."
+        утв_р_ru = f"{рег_ru} различает {n} {ру('возмущение', n)}."
+        out.append(утв_р_en)
+        out.append(утв_р_ru)
+        out.append(спросить("distinguish", рег_en, утв_р_en))
+        out.append(спросить("различает", рег_ru, утв_р_ru))
+        бит_en = f"to distinguish {n} disturbances a regulator"
+        утв_б_en = (f"{бит_en} needs {бит} "
+                    f"{by_count(бит, 'bits')}.")
+        out.append(утв_б_en)
+        out.append(спросить("bits", бит_en, утв_б_en))
         out.append(f"чтобы различить {n} {ру('возмущение', n)}, регулятору нужно "
                    f"{бит} {ру('бит', бит)}.")
     return out
