@@ -424,6 +424,11 @@ def _рамка(закон):
 ДЕЯТЕЛЬ_E = r"((?:the )?[a-z]+)"
 ГЛ_E, ГЛ_E0, ВЕЩЬ_E = r"(jumped|brought|did|won)", r"(jump|bring|do|win)", r"(inches|feet|balloons|push-ups|metres|games)"
 ВЕЩЬ_C, ГДЕ = r"(storks|birds|red flowers|white flowers)", r"(on the fence|in the garden)"
+# 22П глаголы полос точками: деятель — имя, зверь или группа
+ДЕЯТЕЛЬ_П = r"((?:the )?[a-z]+)"
+ГЛ_П = r"(jumped|did|completed|watched|won|sent|lost|removed|raised|threw away)"
+ГЛ_П0 = r"(jump|do|complete|watch|win|send|lose|remove|raise|throw away)"
+ВЕЩЬ_П = r"(inches|feet|push-ups|crunches|pages|laps|movies|episodes|games|medals|letters|cards|coins|marbles|books|stickers|dollars|caps|bottles)"
 НА, НА_RU = r"(on the shirt|on the hat|on books|on pens)", r"(на рубашку|на шляпу|на книги|на ручки)"
 ГЛ_O, ГЛ_O0, ВЕЩЬ_O = r"(received|sold|cut|found|played with)", r"(receive|sell|cut|find|play with)", r"(emails|books|roses|bottle caps|kids)"
 СРОК, СРОК_RU = r"(in the morning|in the afternoon|in the evening)", r"(утром|днём|вечером)"
@@ -628,6 +633,15 @@ def _части_дом(всего, кр, дом, ов, k1, ол, ол2, k, од)
      _рамка(lambda d1, g1, x, v1, d2, g2, y, v2, v3, d3, g0, d4, ox, oy, d: d1 != d2 and (d3, d4) == (d1, d2) and g1 == g2 and ОСНОВА[g1] == g0 and v1 == v2 == v3 and (ox, oy) == (x, y) and d == x - y > 0)),
     (rf"^if {ДЕЯТЕЛЬ_E} {ГЛ_E} {Ч} {ВЕЩЬ_E} and {ДЕЯТЕЛЬ_E} {ГЛ_E} {Ч} {ВЕЩЬ_E}, how many fewer {ВЕЩЬ_E} did {ДЕЯТЕЛЬ_E} {ГЛ_E0} than {ДЕЯТЕЛЬ_E}\? {Ч} − {Ч} = {Ч}\.$",
      _рамка(lambda d1, g1, x, v1, d2, g2, y, v2, v3, d3, g0, d4, ox, oy, d: d1 != d2 and (d3, d4) == (d2, d1) and g1 == g2 and ОСНОВА[g1] == g0 and v1 == v2 == v3 and (ox, oy) == (x, y) and d == x - y > 0)),
+    # 22П глаголы полос точками (e9 04.09: рынок глаголов историй голосует только по утверждениям)
+    (rf"^{ДЕЯТЕЛЬ_П} {ГЛ_П} {Ч} {ВЕЩЬ_П}\. {ДЕЯТЕЛЬ_П} {ГЛ_П} {Ч} {ВЕЩЬ_П}\. {ДЕЯТЕЛЬ_П} {ГЛ_П} {Ч} more {ВЕЩЬ_П} than {ДЕЯТЕЛЬ_П}: {Ч} − {Ч} = {Ч}\.$",
+     _рамка(lambda d1, g1, x, v1, d2, g2, y, v2, d3, g3, d, v3, d4, ox, oy, od: d1 != d2 and (d3, d4) == (d1, d2) and g1 == g2 == g3 and v1 == v2 == v3 and d == x - y > 0 and (ox, oy, od) == (x, y, d))),
+    (rf"^{ДЕЯТЕЛЬ_П} {ГЛ_П} {Ч} {ВЕЩЬ_П}\. {ДЕЯТЕЛЬ_П} {ГЛ_П} {Ч} {ВЕЩЬ_П}\. {ДЕЯТЕЛЬ_П} {ГЛ_П} {Ч} fewer {ВЕЩЬ_П} than {ДЕЯТЕЛЬ_П}: {Ч} − {Ч} = {Ч}\.$",
+     _рамка(lambda d1, g1, x, v1, d2, g2, y, v2, d3, g3, d, v3, d4, ox, oy, od: d1 != d2 and (d3, d4) == (d2, d1) and g1 == g2 == g3 and v1 == v2 == v3 and d == x - y > 0 and (ox, oy, od) == (x, y, d))),
+    (rf"^{ДЕЯТЕЛЬ_П} {ГЛ_П} {Ч} {ВЕЩЬ_П}\. {ДЕЯТЕЛЬ_П} {ГЛ_П} {Ч} {ВЕЩЬ_П}\. together they {ГЛ_П} {Ч} {ВЕЩЬ_П}: {Ч} \+ {Ч} = {Ч}\.$",
+     _рамка(lambda d1, g1, x, v1, d2, g2, y, v2, g3, s, v3, ox, oy, os: d1 != d2 and g1 == g2 == g3 and v1 == v2 == v3 and s == x + y and (ox, oy, os) == (x, y, s))),
+    (rf"^{ДЕЯТЕЛЬ_П} {ГЛ_П} {Ч} {ВЕЩЬ_П}\. {ДЕЯТЕЛЬ_П} {ГЛ_П} {Ч} {ВЕЩЬ_П}\. how many more {ВЕЩЬ_П} did {ДЕЯТЕЛЬ_П} {ГЛ_П0} than {ДЕЯТЕЛЬ_П}\? {Ч} − {Ч} = {Ч}\.$",
+     _рамка(lambda d1, g1, x, v1, d2, g2, y, v2, v3, d3, g0, d4, ox, oy, d: d1 != d2 and (d3, d4) == (d1, d2) and g1 == g2 and ОСНОВА[g1] == g0 and v1 == v2 == v3 and (ox, oy) == (x, y) and d == x - y > 0)),
 )
 # СЕМЕЙСТВО ЕСТЬ РОД, А ФОРМА — ЕГО ПОВЕРХНОСТЬ (ширина вопроса 03.09):
 # прибор считал каждый образец родом и звал повествование без вопроса
@@ -670,6 +684,7 @@ _СЕМЕЙСТВА_ОСНОВА = (
     ("половина", ОБРАЗЦЫ_3[57:61]),
     ("части", ОБРАЗЦЫ_3[61:66]),
     ("больше_E", ОБРАЗЦЫ_3[66:70]),
+    ("полосы", ОБРАЗЦЫ_3[70:74]),
 )
 # RU QA-ФОРМЫ СЕМЕЙСТВ (М-146: вопросная поверхность на каждом языке рамки).
 СРОК_RU2 = r"(утром|днём|вечером)"
