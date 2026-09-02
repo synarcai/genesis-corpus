@@ -40,7 +40,8 @@ the wrong kind (an unknown verb or an unknown thing is not judged here).
 
 ГЛАГОЛ_БЕРЁТ = {
     "jumped": ПРЫЖОК, "jumps": ПРЫЖОК, "jump": ПРЫЖОК,
-    "did": УПРАЖНЕНИЯ | ВЫПОЛНЕНИЕ, "does": УПРАЖНЕНИЯ | ВЫПОЛНЕНИЕ, "do": УПРАЖНЕНИЯ | ВЫПОЛНЕНИЕ,
+    # «do/does/did» — лёгкий глагол и вспомогательный разом («how many minutes
+    # do 2 hours equal?»): дом о нём молчит; как дело он судится рамкой семейства.
     "completed": ВЫПОЛНЕНИЕ, "completes": ВЫПОЛНЕНИЕ, "complete": ВЫПОЛНЕНИЕ,
     "watched": ПРОСМОТР, "watches": ПРОСМОТР, "watch": ПРОСМОТР,
     "won": ВЫИГРЫШ, "wins": ВЫИГРЫШ, "win": ВЫИГРЫШ,
