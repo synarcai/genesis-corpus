@@ -29,6 +29,13 @@ from plural import by_count
 
 NAMES = ["ava", "ben", "carla", "dan",
          "elena", "felix", "grace", "hugo"]
+# ИМЯ ОБЪЯВЛЕНО ПАКЕТОМ (дом имён, М-131): суд читает имя группой и сверяет
+# с пакетом; имя, которого пакет не знает, не вправе войти в показ.
+import json as _json
+import pathlib as _pathlib
+_ИМЕНА_ПАКЕТА = set(_json.loads((_pathlib.Path(__file__).resolve().parent / "langpacks"
+                                  / "en.json").read_text(encoding="utf-8"))["person_names"])
+assert set(NAMES) <= _ИМЕНА_ПАКЕТА, "имя не объявлено пакетом en"
 ITEMS = ["apples", "cookies", "coins", "books",
          "eggs", "pages", "points", "cards"]
 # (tail-before-item?, surface builder)

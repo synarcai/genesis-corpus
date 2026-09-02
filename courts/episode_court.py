@@ -671,8 +671,77 @@ def впитать_ставки(путь):
 ДЕРЖИТ = re.compile(rf"^a ({С}) (?:holds|has) (\d+) ({С})\.$")
 
 
-def судить(строка):
+# ДОМ ИМЁН (М-131): деятель читается группой и сверяется с пакетом. Замер по
+# восьми английским мирам историй (17 650 предложений): предложение
+# начинается именем либо одним из трёх зачинов (how, the, they); после
+# «does», «did», «and» всегда стоит имя; после «than» — имя или слово
+# кратности (twice). Слово на месте деятеля, которого пакет не знает
+# («elen» вместо «elena»), есть ложь записи, а не молчание суда —
+# прежде порченое имя роняло рамку, и строку судил один лишь суд числа.
+_ПАКЕТ_EN = json.loads((КОРЕНЬ / "tools" / "langpacks" / "en.json")
+                       .read_text(encoding="utf-8"))
+ИМЕНА_EN = frozenset(_ПАКЕТ_EN.get("person_names", ()))
+ЗАЧИНЫ_EN = frozenset(_ПАКЕТ_EN.get("sentence_openers", ()))
+КРАТНОСТИ_EN = frozenset(_ПАКЕТ_EN.get("compare_words", ()))
+_МЕСТО_ИМЕНИ = re.compile(r"(?:^|(?<=[.?!] ))([a-z]+)|\b(?:does|did|and)\s+([a-z]+)|\bthan\s+([a-z]+)")
+
+
+ЧИСЛИТЕЛЬНЫЕ_EN = frozenset(
+    (_ПАКЕТ_EN.get("numerals") or {}).keys() if isinstance(_ПАКЕТ_EN.get("numerals"), dict)
+    else _ПАКЕТ_EN.get("numerals") or ())
+_ЗАЧИН = re.compile(r"(?:^|(?<=[.?!] ))([a-z]+)")
+_ПОСЛЕ = re.compile(r"\b(?:does|than)\s+([a-z]+)")
+
+
+class Слой:
+    """Объявление мира: чьи в нём деятели. Мир, объявивший в манифесте
+    `actors: person_names:en`, подсуден дому имён; прочие — нет."""
+
+    def __init__(self):
+        self.деятели = None
+
+    def впитать(self, путь):
+        try:
+            м = json.loads((КОРЕНЬ / "datasets" / "GENESIS-MANIFEST.json")
+                           .read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            return
+        имя = pathlib.Path(путь).name
+        for мир in м.get("worlds", ()):
+            if pathlib.Path(мир.get("file", "")).name == имя:
+                self.деятели = мир.get("actors")
+                return
+
+
+def имена_на_месте(строка, слой=None):
+    """False — на месте деятеля стоит слово, которого дом имён не знает.
+
+    Закон действует в мирах, ОБЪЯВИВШИХ деятелей лицами пакета (манифест
+    `actors: person_names:en`): предложение начинается именем, зачином
+    пакета или числительным; после «does» и «than» стоит имя или слово
+    сравнения. Так порченое имя («elen», «pi») ловится и тогда, когда оно
+    сломало рамку и строку читал один лишь суд числа.
+    """
+    if слой is None or слой.деятели != "person_names:en" or not ИМЕНА_EN:
+        return True
+    низ = строка.strip().lower()
+    if re.search(r"[а-яё]", низ):
+        return True
+    for м in _ЗАЧИН.finditer(низ):
+        w = м.group(1)
+        if w not in ИМЕНА_EN and w not in ЗАЧИНЫ_EN and w not in ЧИСЛИТЕЛЬНЫЕ_EN:
+            return False
+    for м in _ПОСЛЕ.finditer(низ):
+        w = м.group(1)
+        if w not in ИМЕНА_EN and w not in КРАТНОСТИ_EN and w not in ЧИСЛИТЕЛЬНЫЕ_EN:
+            return False
+    return True
+
+
+def судить(строка, слой=None):
     с = строка.strip()
+    if not имена_на_месте(с, слой):
+        return True, False
     ру = русские_рамки(строка)
     if ру is not None:
         return True, ру

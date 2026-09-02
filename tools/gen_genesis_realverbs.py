@@ -20,6 +20,13 @@ from plural import by_count
 
 NAMES = ["cynthia", "james", "sara", "tom",
          "wanda", "carlos", "nina", "raj"]
+# ИМЯ ОБЪЯВЛЕНО ПАКЕТОМ (дом имён, М-131): суд читает имя группой и сверяет
+# с пакетом; имя, которого пакет не знает, не вправе войти в показ.
+import json as _json
+import pathlib as _pathlib
+_ИМЕНА_ПАКЕТА = set(_json.loads((_pathlib.Path(__file__).resolve().parent / "langpacks"
+                                  / "en.json").read_text(encoding="utf-8"))["person_names"])
+assert set(NAMES) <= _ИМЕНА_ПАКЕТА, "имя не объявлено пакетом en"
 ITEMS = ["cookies", "pages", "miles", "eggs",
          "cards", "shells", "pencils", "seeds"]
 # (start, change, end) verb triples per genus:

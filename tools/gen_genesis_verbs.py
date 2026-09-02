@@ -34,6 +34,13 @@ from layer import emit  # noqa: E402
 from plural import by_count  # noqa: E402
 
 NAMES = ["ida", "omar", "pia", "rosa", "sven", "tara", "umar", "vera"]
+# ИМЯ ОБЪЯВЛЕНО ПАКЕТОМ (дом имён, М-131): суд читает имя группой и сверяет
+# с пакетом; имя, которого пакет не знает, не вправе войти в показ.
+import json as _json
+import pathlib as _pathlib
+_ИМЕНА_ПАКЕТА = set(_json.loads((_pathlib.Path(__file__).resolve().parent / "langpacks"
+                                  / "en.json").read_text(encoding="utf-8"))["person_names"])
+assert set(NAMES) <= _ИМЕНА_ПАКЕТА, "имя не объявлено пакетом en"
 THINGS = [w for w in ITEMS if w not in ANIMATE]
 # (base, third person, past, participle, items it truly takes)
 #
