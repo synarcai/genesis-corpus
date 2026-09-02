@@ -150,6 +150,18 @@ def _произведение(м):
     return n > 1 and ц == n and all(простое(x) for x in множители)
 
 
+def _делится_повеств(м):
+    """Повествование делимости: полярность слова судится остатком, не
+    совпадением с образцом — снятое «не» есть ложь по счёту."""
+    a, не, b, a2, b2, q, r, rest = м.groups()
+    a, b, a2, b2, q = int(a), int(b), int(a2), int(b2), int(q)
+    r = int(r) if r is not None else 0
+    rest = int(rest)
+    отрицание = не is not None and не.strip() not in ("", "est")
+    return (a == a2 and b == b2 and a == b * q + r and 0 <= r < b
+            and rest == r and (not отрицание) == (r == 0))
+
+
 def _делится_да(м):
     a, b, a2, b2, q = ч(м, 1, 2, 3, 4, 5)
     return a % b == 0 and a2 == a and b2 == b and b * q == a
@@ -268,6 +280,10 @@ def _общ_квадрат(м):
     (rf"^tout nombre entier supérieur à 1 est un produit de nombres "
      rf"premiers : {Ч} = " r"([\d ×]+)\.$", _произведение),
 
+    (rf"^{Ч} ist (nicht )?durch {Ч} teilbar: {Ч} = {Ч} × {Ч}(?: \+ {Ч})?, "
+     rf"Rest {Ч}\.$", _делится_повеств),
+    (rf"^{Ч} (n'est pas |est )divisible par {Ч} : {Ч} = {Ч} × {Ч}"
+     rf"(?: \+ {Ч})?, reste {Ч}\.$", _делится_повеств),
     (rf"^ist {Ч} durch {Ч} teilbar\? ja: {Ч} = {Ч} × {Ч}, Rest 0\.$",
      _делится_да),
     (rf"^{Ч} est-il divisible par {Ч} \? oui : {Ч} = {Ч} × {Ч}, "

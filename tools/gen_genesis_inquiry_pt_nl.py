@@ -210,11 +210,20 @@ def исп_делимость(шаг):
                        f"{q}, resto 0.")
             вон.append(f"is {a} deelbaar door {b}? ja: {a} = {b} × "
                        f"{q}, rest 0.")
+            # ПОВЕСТВОВАНИЕ С ПОЛЯРНОСТЬЮ — учитель формы для органа
+            # обращения того же языка (holon: пара «вопрос ↔ повествование»
+            # одного предиката покупает закон инверсии).
+            вон.append(f"{a} é divisível por {b}: {a} = {b} × {q}, resto 0.")
+            вон.append(f"{a} is deelbaar door {b}: {a} = {b} × {q}, rest 0.")
         else:
             вон.append(f"{a} é divisível por {b}? não: {a} = {b} × "
                        f"{q} + {r}, resto {r}.")
             вон.append(f"is {a} deelbaar door {b}? nee: {a} = {b} × "
                        f"{q} + {r}, rest {r}.")
+            вон.append(f"{a} não é divisível por {b}: {a} = {b} × {q} + {r}, "
+                       f"resto {r}.")
+            вон.append(f"{a} is niet deelbaar door {b}: {a} = {b} × {q} + "
+                       f"{r}, rest {r}.")
     return вон
 
 

@@ -210,11 +210,19 @@ def исп_делимость(шаг):
                        f"{q}, Rest 0.")
             вон.append(f"{a} est-il divisible par {b} ? oui : {a} = "
                        f"{b} × {q}, reste 0.")
+            вон.append(f"{a} ist durch {b} teilbar: {a} = {b} × {q}, Rest 0.")
+            вон.append(f"{a} est divisible par {b} : {a} = {b} × {q}, "
+                       f"reste 0.")
         else:
             вон.append(f"ist {a} durch {b} teilbar? nein: {a} = {b} × "
                        f"{q} + {r}, Rest {r}.")
             вон.append(f"{a} est-il divisible par {b} ? non : {a} = "
                        f"{b} × {q} + {r}, reste {r}.")
+        if r:
+            вон.append(f"{a} ist nicht durch {b} teilbar: {a} = {b} × {q} + "
+                       f"{r}, Rest {r}.")
+            вон.append(f"{a} n'est pas divisible par {b} : {a} = {b} × {q} "
+                       f"+ {r}, reste {r}.")
     return вон
 
 

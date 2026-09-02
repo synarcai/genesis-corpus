@@ -158,6 +158,17 @@ def _произведение(м):
     return n > 1 and ц == n and all(простое(x) for x in множители)
 
 
+def _делится_повеств(м):
+    """Повествование делимости: полярность слова судится остатком, не
+    совпадением с образцом — снятое «не» есть ложь по счёту."""
+    a, не, b, a2, b2, q, r, rest = м.groups()
+    a, b, a2, b2, q = int(a), int(b), int(a2), int(b2), int(q)
+    r = int(r) if r is not None else 0
+    rest = int(rest)
+    return (a == a2 and b == b2 and a == b * q + r and 0 <= r < b
+            and rest == r and (не is None) == (r == 0))
+
+
 def _делится_да(м):
     a, b, a2, b2, q = ч(м, 1, 2, 3, 4, 5)
     return a % b == 0 and a2 == a and b2 == b and b * q == a
@@ -276,6 +287,10 @@ def _общ_квадрат(м):
     (rf"^elk geheel getal groter dan 1 is een product van "
      rf"priemgetallen: {Ч} = " r"([\d ×]+)\.$", _произведение),
 
+    (rf"^{Ч} (não )?é divisível por {Ч}: {Ч} = {Ч} × {Ч}(?: \+ {Ч})?, "
+     rf"resto {Ч}\.$", _делится_повеств),
+    (rf"^{Ч} is (niet )?deelbaar door {Ч}: {Ч} = {Ч} × {Ч}(?: \+ {Ч})?, "
+     rf"rest {Ч}\.$", _делится_повеств),
     (rf"^{Ч} é divisível por {Ч}\? sim: {Ч} = {Ч} × {Ч}, resto 0\.$",
      _делится_да),
     (rf"^is {Ч} deelbaar door {Ч}\? ja: {Ч} = {Ч} × {Ч}, rest 0\.$",
