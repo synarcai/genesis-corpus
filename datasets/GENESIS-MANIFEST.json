@@ -4264,6 +4264,31 @@
       "происхождение": "wikisource-pl-scan:PL Aleksander Brückner-Słownik etymologiczny języka polskiego",
       "held_out": "shelf/pl/bruckner_1927_pl.holdout.txt",
       "судится": []
+    },
+    {
+      "name": "arct_1916_pl",
+      "file": "shelf/pl/arct_1916_pl.txt",
+      "genre": "Michał Arct, «M. Arcta Słownik ilustrowany języka polskiego» (1916): словарь гнёздами — заголовок капсом, толкование, пословицы и говоры при нём; орфография переведена правилом (tools/oldspell.py)",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 7448781,
+      "tiers": [],
+      "text": "prose",
+      "язык": "pl",
+      "тема": "язык",
+      "плотность": "словарь",
+      "издано": 1916,
+      "источник": "public-domain",
+      "происхождение": "wikisource-pl-scan:M. Arcta słownik ilustrowany języka polskiego - Tom 1.djvu; M. Arcta słownik ilustrowany języka polskiego - Tom 2.djvu; M. Arcta słownik ilustrowany języka polskiego - Tom 3.djvu",
+      "held_out": "shelf/pl/arct_1916_pl.holdout.txt",
+      "судится": []
     }
   ]
 }
