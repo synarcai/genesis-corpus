@@ -100,7 +100,7 @@ def _сетка_слово(м):
 def судить(строка):
     """(судимо, истинно) для одной строки."""
     с = строка.strip()
-    if "#" not in с or "/" not in с:
+    if "/" not in с or ("#" not in с and "_" not in с):
         return False, False
     for образец, проверить in ПРАВИЛА:
         м = образец.match(с)

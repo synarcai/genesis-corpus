@@ -41,7 +41,7 @@ import inverting  # noqa: E402
 from layer import PASSES, emit  # noqa: E402
 
 СЕМЯ = КОРЕНЬ / "tools" / "seeds" / "school_biling_v2c.txt"
-ВЫХОД = "datasets/school_biling_v2c.txt"
+ЦЕЛЬ = "datasets/school_biling_v2c.txt"
 
 # ОБРАЩЕНИЕ ЖИВЁТ В ОБЩЕМ ДОМЕ (tools/inverting.py); здесь лишь
 # ОБЪЯВЛЯЕТСЯ, какие его образцы касаются этого мира.
@@ -77,7 +77,7 @@ def main():
     if семя() is None:
         print(f"ШКОЛА ОТКАЗ: семени {СЕМЯ.relative_to(КОРЕНЬ)} нет")
         return 2
-    emit(ВЫХОД, показы)
+    emit(ЦЕЛЬ, показы)
     return 0
 
 

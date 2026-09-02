@@ -35,7 +35,7 @@ sys.path.insert(0, str(КОРЕНЬ / "courts"))
 import notation_variants as НВ  # noqa: E402
 from layer import PASSES, emit  # noqa: E402
 
-ВЫХОД = "datasets/genesis_notationvar.txt"
+ЦЕЛЬ = "datasets/genesis_notationvar.txt"
 
 # Диапазон свободных членов: полные квадраты, чтобы корень был целым и
 # показ нёс проверяемое содержание, а не одну лишь запись.
@@ -117,7 +117,7 @@ def main():
     # поймана утром у школьного мира (М-126) и прожита здесь второй раз,
     # ибо была допущена раньше, чем записан закон.
     все = показы()
-    emit(ВЫХОД, lambda i: [п for k, п in enumerate(все) if k % len(PASSES) == i])
+    emit(ЦЕЛЬ, lambda i: [п for k, п in enumerate(все) if k % len(PASSES) == i])
 
 
 if __name__ == "__main__":

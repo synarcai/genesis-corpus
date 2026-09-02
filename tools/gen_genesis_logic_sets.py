@@ -17,7 +17,7 @@ import inverting  # noqa: E402
 from layer import PASSES, emit  # noqa: E402
 
 СЕМЯ = КОРЕНЬ / "tools" / "seeds" / "genesis_l1_logic_sets.txt"
-ВЫХОД = "datasets/genesis_l1_logic_sets.txt"
+ЦЕЛЬ = "datasets/genesis_l1_logic_sets.txt"
 ОБРАЩЕНИЯ = ('подмножество', 'sign read',)
 
 
@@ -30,7 +30,7 @@ def main():
     if not СЕМЯ.exists():
         print(f"ОТКАЗ: семени {СЕМЯ.name} нет")
         return 2
-    emit(ВЫХОД, показы)
+    emit(ЦЕЛЬ, показы)
     return 0
 
 
