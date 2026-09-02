@@ -53,6 +53,10 @@ NAMES = ["ida", "omar", "pia", "rosa", "sven",
 # >= LAW times AND inside a number-free «how many/much X» frame, then
 # certified by the `plural` organ. 66 items.
 # (add-verb pair, ask, answer-verb) — real GSM8K prose verbs
+# places of holding without a holder; the question of the decrease in three forms
+МЕСТА_ВЕЩЕЙ = ("on the shelf", "in the box", "on the table", "in the basket", "in the bag")
+МЕСТА_ЛЮДЕЙ = ("in the yard", "in the room", "at the party", "on the bus")
+ВОПРОСЫ_ДЕРЖАНИЯ = ("how many {it} are left?", "how many {it} are there now?", "how many {it} remain?")
 ADD_PAIRS = [("counted", "found"), ("bought", "got")]
 SUB_PAIRS = [("packed", "used"), ("picked", "gave")]
 # A THING IS BOUGHT AND PACKED; A PERSON IS NOT. «ida bought 3 friends»
@@ -136,6 +140,18 @@ def pass_shows(pass_i):
                 f"how many more {it} did {a} make than sell? "
                 f"{n} + {m} = {n + m}, {n + m} − {sold} = {n + m - sold}."
             )
+        # HOLDING WITHOUT A HOLDER (e9 04.09, SVAMP: «there are/were N … »
+        # opens 44 of 726 problems): the page opens with the place, not with
+        # an actor; the three question forms of the decrease alternate.
+        if n - m >= 2 and m >= 2:
+            if anim:
+                место = МЕСТА_ЛЮДЕЙ[seed % len(МЕСТА_ЛЮДЕЙ)]
+                вопрос = ВОПРОСЫ_ДЕРЖАНИЯ[seed % len(ВОПРОСЫ_ДЕРЖАНИЯ)].format(it=it)
+                out.append(f"there were {n} {it} {место}. {m} {it} left. {вопрос} {n} − {m} = {n - m}.")
+            else:
+                место = МЕСТА_ВЕЩЕЙ[seed % len(МЕСТА_ВЕЩЕЙ)]
+                вопрос = ВОПРОСЫ_ДЕРЖАНИЯ[seed % len(ВОПРОСЫ_ДЕРЖАНИЯ)].format(it=it)
+                out.append(f"there are {n} {it} {место}. {a} took {m} {it}. {вопрос} {n} − {m} = {n - m}.")
         for tpl in (BARE_PLURAL_ANIM if anim
                     else BARE_PLURAL):
             out.append(tpl.format(a=a, it=it))

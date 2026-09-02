@@ -35,6 +35,7 @@ from genesis import Unreadable, worlds  # noqa: E402
 from gsm_items import ANIMATE, ITEMS, PACKAGEABLE  # noqa: E402
 from plural import singular
 import verbthings  # noqa: E402
+import rugram  # noqa: E402
 from plural import by_count as _по_счёту  # noqa: E402
 import units  # noqa: E402
 
@@ -508,6 +509,35 @@ def _звено_верно(строка, итог_m, сколько):
     до = [int(x) for x in re.findall(r"\d+", строка[:итог_m.start()])]
     ожидание = з1 + з2 if зн == "+" else з1 - з2
     return ожидание == з3 == сколько and з1 in до and з2 in до
+# ДЕРЖАНИЕ БЕЗ НОСИТЕЛЯ (e9 04.09, SVAMP «there are N … »): страница
+# открывается местом, а не деятелем; убыль — взятием или уходом; вопрос —
+# любой из трёх форм; суд считает разность и требует ту же вещь всюду.
+ДЕРЖАНИЕ = re.compile(
+    rf"^there (?:are|were) (\d+) ({С}) (?:on|in|at) the {С}\. (?:({С}) took (\d+) \2|(\d+) \2 left)\. "
+    rf"how many \2 (?:are left|are there now|remain)\? (\d+) − (\d+) = (\d+)\.$")
+# русское держание: «на полке 20 книг. петя взял 5 книг. сколько книг осталось?
+# 20 − 5 = 15.» / «сколько книг теперь на полке? …» — формы вещи по дому форм.
+РУ_ДЕРЖАНИЕ = re.compile(
+    r"^(на|в) (\S+) (\d+) (\S+)\. (\S+) взял[а]? (\d+) (\S+)\. "
+    r"сколько (\S+) (?:осталось|теперь \1 \2)\? (\d+) − (\d+) = (\d+)\.$")
+
+
+def _держание(м):
+    n, вещь, взял_кто, взял, ушло, з1, з2, з3 = (м.group(i) for i in (1, 2, 3, 4, 5, 6, 7, 8))
+    n, m, з1, з2, з3 = int(n), int(взял or ушло), int(з1), int(з2), int(з3)
+    if взял_кто is not None and взял_кто not in ИМЕНА_EN:
+        return False
+    return (з1, з2) == (n, m) and з3 == n - m >= 0 and m >= 1
+
+
+def _ру_держание(м):
+    n, вещь_n, кто, m, вещь_m, вещь_q, з1, з2, з3 = (м.group(i) for i in (3, 4, 5, 6, 7, 8, 9, 10, 11))
+    n, m, з1, з2, з3 = int(n), int(m), int(з1), int(з2), int(з3)
+    основа = next((к for к, ф in rugram.СЧЁТНЫЕ.items()
+                   if rugram.форма(к, n) == вещь_n and rugram.форма(к, m) == вещь_m and rugram.форма(к, 5) == вещь_q), None)
+    return основа is not None and (з1, з2) == (n, m) and з3 == n - m >= 0
+
+
 # НАКОПЛЕНИЕ ПОВТОРЁННОГО АКТА (e9 04.09, SVAMP «made … sold … then made N
 # more … how many more did he make than sell?»): один глагол у одного
 # носителя дважды — величины складываются, потом сравниваются; оба звена
@@ -860,6 +890,12 @@ def судить(строка, слой=None):
         # поправлен. Незнакомое слово уходит в СЧЁТ, а не в приговор.
         НЕЗНАКОМЫЕ.append(слово)
         return False, True
+    m = ДЕРЖАНИЕ.match(с)
+    if m:
+        return True, _держание(m)
+    m = РУ_ДЕРЖАНИЕ.match(с)
+    if m:
+        return True, _ру_держание(m)
     m = НАКОПЛЕНИЕ.match(с)
     if m:
         n, k, m2, n2, m3, t, t2, k2, d = (int(m.group(i)) for i in (2, 4, 5, 6, 7, 8, 9, 10, 11))
