@@ -1,0 +1,548 @@
+{
+  "lang": "hu",
+  "script": "latin",
+  "script_range": "A-Za-zÁÉÍÓÖŐÚÜŰáéíóöőúüű",
+  "graphemes": "AEIOabcdefghijklmnoprstuvyzáéíöúüő",
+  "tier": 1,
+  "comment": "TWENTY-FIRST PACK. Hungarian: DEFINITE AND INDEFINITE CONJUGATION — the verb inflects for the DEFINITENESS OF ITS OBJECT (látok valamit / látom azt), a category no other pack carries and no field holds: the present tense has TWELVE cells and the engine's cell names stop at six, so the second conjugation rides in the adjective slot with honestly named cells; THREE-WAY VOWEL HARMONY (-ok / -ek / -ök) split by roundedness, shown as six rule classes with a sibilant sub-rule (olvasol, főzöl); POSSESSIVE SUFFIXES instead of pronouns (házam = my house) with no fourth class slot to hold their paradigm, so they are shown as constants only. Multiplication governs the instrumental and could not be written. TIER 1.",
+  "lexeme_source": {
+    "law": "every morph class must carry >= LAW distinct lexemes; a class below its declared need is judged poor by the engine",
+    "need_per_class": 5
+  },
+  "numerals": {
+    "0": "nulla",
+    "1": "egy",
+    "2": "kettő",
+    "3": "három",
+    "4": "négy",
+    "5": "öt",
+    "6": "hat",
+    "7": "hét",
+    "8": "nyolc",
+    "9": "kilenc",
+    "10": "tíz",
+    "11": "tizenegy",
+    "12": "tizenkettő",
+    "13": "tizenhárom",
+    "14": "tizennégy",
+    "15": "tizenöt",
+    "16": "tizenhat",
+    "17": "tizenhét",
+    "18": "tizennyolc",
+    "19": "tizenkilenc",
+    "20": "húsz",
+    "21": "huszonegy",
+    "24": "huszonnégy",
+    "25": "huszonöt",
+    "27": "huszonhét",
+    "28": "huszonnyolc",
+    "30": "harminc",
+    "32": "harminckettő",
+    "35": "harmincöt",
+    "36": "harminchat",
+    "40": "negyven",
+    "45": "negyvenöt",
+    "50": "ötven",
+    "60": "hatvan",
+    "70": "hetven",
+    "80": "nyolcvan",
+    "90": "kilencven",
+    "100": "száz"
+  },
+  "count_agreement": [
+    {
+      "form": "one"
+    }
+  ],
+  "morph_classes": {
+    "verb_pres": {
+      "forms": [
+        "s1",
+        "s2",
+        "s3",
+        "p1",
+        "p2",
+        "p3"
+      ],
+      "paradigm_cells": 6,
+      "need": 5,
+      "lexemes": {
+        "lát": [
+          "látok",
+          "látsz",
+          "lát",
+          "látunk",
+          "láttok",
+          "látnak"
+        ],
+        "ír": [
+          "írok",
+          "írsz",
+          "ír",
+          "írunk",
+          "írtok",
+          "írnak"
+        ],
+        "tanul": [
+          "tanulok",
+          "tanulsz",
+          "tanul",
+          "tanulunk",
+          "tanultok",
+          "tanulnak"
+        ],
+        "olvas": [
+          "olvasok",
+          "olvasol",
+          "olvas",
+          "olvasunk",
+          "olvastok",
+          "olvasnak"
+        ],
+        "kér": [
+          "kérek",
+          "kérsz",
+          "kér",
+          "kérünk",
+          "kértek",
+          "kérnek"
+        ],
+        "néz": [
+          "nézek",
+          "nézel",
+          "néz",
+          "nézünk",
+          "néztek",
+          "néznek"
+        ],
+        "köszön": [
+          "köszönök",
+          "köszönsz",
+          "köszön",
+          "köszönünk",
+          "köszöntök",
+          "köszönnek"
+        ],
+        "főz": [
+          "főzök",
+          "főzöl",
+          "főz",
+          "főzünk",
+          "főztök",
+          "főznek"
+        ]
+      },
+      "rule": {
+        "classes": {
+          "back": {
+            "strip": "",
+            "endings": [
+              "ok",
+              "sz",
+              "",
+              "unk",
+              "tok",
+              "nak"
+            ]
+          },
+          "back-sibilant": {
+            "strip": "",
+            "endings": [
+              "ok",
+              "ol",
+              "",
+              "unk",
+              "tok",
+              "nak"
+            ]
+          },
+          "front": {
+            "strip": "",
+            "endings": [
+              "ek",
+              "sz",
+              "",
+              "ünk",
+              "tek",
+              "nek"
+            ]
+          },
+          "front-sibilant": {
+            "strip": "",
+            "endings": [
+              "ek",
+              "el",
+              "",
+              "ünk",
+              "tek",
+              "nek"
+            ]
+          },
+          "front-round": {
+            "strip": "",
+            "endings": [
+              "ök",
+              "sz",
+              "",
+              "ünk",
+              "tök",
+              "nek"
+            ]
+          },
+          "front-round-sibilant": {
+            "strip": "",
+            "endings": [
+              "ök",
+              "öl",
+              "",
+              "ünk",
+              "tök",
+              "nek"
+            ]
+          }
+        },
+        "of": {
+          "lát": "back",
+          "ír": "back",
+          "tanul": "back",
+          "olvas": "back-sibilant",
+          "kér": "front",
+          "néz": "front-sibilant",
+          "köszön": "front-round",
+          "főz": "front-round-sibilant"
+        }
+      }
+    },
+    "noun_count": {
+      "forms": [
+        "one",
+        "many"
+      ],
+      "paradigm_cells": 2,
+      "need": 5,
+      "lexemes": {
+        "ház": [
+          "ház",
+          "házak"
+        ],
+        "ablak": [
+          "ablak",
+          "ablakok"
+        ],
+        "asztal": [
+          "asztal",
+          "asztalok"
+        ],
+        "virág": [
+          "virág",
+          "virágok"
+        ],
+        "város": [
+          "város",
+          "városok"
+        ],
+        "kert": [
+          "kert",
+          "kertek"
+        ],
+        "könyv": [
+          "könyv",
+          "könyvek"
+        ],
+        "gyerek": [
+          "gyerek",
+          "gyerekek"
+        ],
+        "szék": [
+          "szék",
+          "székek"
+        ],
+        "kép": [
+          "kép",
+          "képek"
+        ],
+        "kutya": [
+          "kutya",
+          "kutyák"
+        ],
+        "alma": [
+          "alma",
+          "almák"
+        ]
+      }
+    },
+    "adj_forms": {
+      "forms": [
+        "def_s1",
+        "def_s2",
+        "def_s3",
+        "def_p1",
+        "def_p2",
+        "def_p3"
+      ],
+      "paradigm_cells": 6,
+      "need": 5,
+      "lexemes": {
+        "lát": [
+          "látom",
+          "látod",
+          "látja",
+          "látjuk",
+          "látjátok",
+          "látják"
+        ],
+        "ír": [
+          "írom",
+          "írod",
+          "írja",
+          "írjuk",
+          "írjátok",
+          "írják"
+        ],
+        "tanul": [
+          "tanulom",
+          "tanulod",
+          "tanulja",
+          "tanuljuk",
+          "tanuljátok",
+          "tanulják"
+        ],
+        "olvas": [
+          "olvasom",
+          "olvasod",
+          "olvassa",
+          "olvassuk",
+          "olvassátok",
+          "olvassák"
+        ],
+        "kér": [
+          "kérem",
+          "kéred",
+          "kéri",
+          "kérjük",
+          "kéritek",
+          "kérik"
+        ],
+        "néz": [
+          "nézem",
+          "nézed",
+          "nézi",
+          "nézzük",
+          "nézitek",
+          "nézik"
+        ],
+        "köszön": [
+          "köszönöm",
+          "köszönöd",
+          "köszöni",
+          "köszönjük",
+          "köszönitek",
+          "köszönik"
+        ],
+        "főz": [
+          "főzöm",
+          "főzöd",
+          "főzi",
+          "főzzük",
+          "főzitek",
+          "főzik"
+        ]
+      }
+    }
+  },
+  "show_kinds": {
+    "arithmetic": {
+      "lexicon": [
+        "meg",
+        "mínusz",
+        "×",
+        "÷",
+        "egyenlő"
+      ],
+      "ops": {
+        "meg": "+",
+        "mínusz": "-",
+        "×": "*",
+        "÷": "/",
+        "egyenlő": "="
+      },
+      "instances_per_pass": 14,
+      "templates": [
+        "{num:n} meg {num:m} egyenlő {num:sum}.",
+        "{n} + {m} = {sum}.",
+        "{num:sum} mínusz {num:m} egyenlő {num:n}.",
+        "{num:n} × {num:m} egyenlő {num:prod}.",
+        "{num:prod} ÷ {num:m} egyenlő {num:n}."
+      ]
+    },
+    "conjugation": {
+      "lexicon": [
+        "én",
+        "te",
+        "ő",
+        "mi",
+        "ti",
+        "ők"
+      ],
+      "instances_per_pass": 16,
+      "templates": [
+        "én {lex:verb_pres:s1}.",
+        "te {lex:verb_pres:s2}.",
+        "ő {lex:verb_pres:s3}.",
+        "mi {lex:verb_pres:p1}.",
+        "ti {lex:verb_pres:p2}.",
+        "ők {lex:verb_pres:p3}."
+      ]
+    },
+    "counting": {
+      "lexicon": [
+        "Itt",
+        "Ott",
+        "van"
+      ],
+      "instances_per_pass": 24,
+      "templates": [
+        "Itt van egy {lex:noun_count:one}.",
+        "Itt vannak a {lex:noun_count:many}.",
+        "Ott van egy {lex:noun_count:one}."
+      ]
+    },
+    "definition": {
+      "lexicon": [
+        "Ez",
+        "Az",
+        "egy"
+      ],
+      "instances_per_pass": 24,
+      "templates": [
+        "Ez egy {lex:noun_count:one}.",
+        "Az egy {lex:noun_count:one}.",
+        "Ez a házam.",
+        "Ez a kertem.",
+        "Ez a könyvem.",
+        "Ez a székem.",
+        "Ez az ablakom.",
+        "Ez az almám."
+      ]
+    },
+    "refusals": {
+      "refusal": true,
+      "marker": "¬ ",
+      "lexicon": [
+        "¬"
+      ],
+      "pairs": [
+        {
+          "bad": "én látom valamit.",
+          "good": "én látok valamit.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "én látok azt.",
+          "good": "én látom azt.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "két házak vannak itt.",
+          "good": "két ház van itt.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "a házek szépek.",
+          "good": "a házak szépek.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "mi a hét színe?",
+          "good": "mi ez?",
+          "reason": "unanswerable"
+        },
+        {
+          "bad": "könyv meg kutya egyenlő?",
+          "good": "huszonegy mínusz egy egyenlő húsz.",
+          "reason": "type_mismatch"
+        }
+      ]
+    },
+    "agreement": {
+      "lexicon": [
+        "valamit",
+        "azt",
+        "és"
+      ],
+      "instances_per_pass": 12,
+      "templates": [
+        "{lex:verb_pres:s1} valamit, és {lex:adj_forms:def_s1} azt.",
+        "{lex:verb_pres:s2} valamit, és {lex:adj_forms:def_s2} azt.",
+        "{lex:verb_pres:s3} valamit, és {lex:adj_forms:def_s3} azt.",
+        "{lex:verb_pres:p1} valamit, és {lex:adj_forms:def_p1} azt.",
+        "{lex:verb_pres:p2} valamit, és {lex:adj_forms:def_p2} azt.",
+        "{lex:verb_pres:p3} valamit, és {lex:adj_forms:def_p3} azt."
+      ]
+    }
+  },
+  "core_pairing": [
+    {
+      "lang_word": "meg",
+      "core": "+",
+      "core_form": "+",
+      "lang_form": "meg"
+    },
+    {
+      "lang_word": "mínusz",
+      "core": "-",
+      "core_form": "-",
+      "lang_form": "mínusz"
+    },
+    {
+      "lang_word": "×",
+      "core": "×",
+      "core_form": "×",
+      "lang_form": "×"
+    },
+    {
+      "lang_word": "÷",
+      "core": "÷",
+      "core_form": "÷",
+      "lang_form": "÷"
+    },
+    {
+      "lang_word": "egyenlő",
+      "core": "=",
+      "core_form": "=",
+      "lang_form": "egyenlő"
+    }
+  ],
+  "cross_kind_share": 0.3,
+  "irregulars": [
+    "házam",
+    "kertem",
+    "könyvem",
+    "székem",
+    "almám"
+  ],
+  "probe": {
+    "words": [
+      "Az",
+      "Ez",
+      "Itt",
+      "azt",
+      "egy",
+      "egyenlő",
+      "ház",
+      "könyv",
+      "meg",
+      "mi",
+      "mínusz",
+      "per",
+      "te",
+      "ti",
+      "valamit",
+      "van",
+      "én",
+      "ő",
+      "ők"
+    ],
+    "diacritics": "áéíóöőúüű"
+  }
+}

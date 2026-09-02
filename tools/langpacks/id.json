@@ -1,0 +1,576 @@
+{
+  "lang": "id",
+  "script": "latin",
+  "script_range": "A-Za-z",
+  "graphemes": "abcdefghijklmnoprstuvwy",
+  "tier": 1,
+  "comment": "Indonesian: the simplest morphology of any pack — NO tense, NO gender, NO case, NO person, NO agreement at all. The verb is one form for every subject, the noun one form for every numeral. Plural is REDUPLICATION with a hyphen (buku-buku), which is neither prefix nor suffix, and which a numeral forbids. A probe on EMPTINESS: fields built for a language that has forms. TIER 1.",
+  "lexeme_source": {
+    "law": "every morph class must carry >= LAW distinct lexemes; a class below its declared need is judged poor by the engine",
+    "need_per_class": 5
+  },
+  "numerals": {
+    "0": "nol",
+    "1": "satu",
+    "2": "dua",
+    "3": "tiga",
+    "4": "empat",
+    "5": "lima",
+    "6": "enam",
+    "7": "tujuh",
+    "8": "delapan",
+    "9": "sembilan",
+    "10": "sepuluh",
+    "11": "sebelas",
+    "12": "dua belas",
+    "13": "tiga belas",
+    "14": "empat belas",
+    "15": "lima belas",
+    "16": "enam belas",
+    "17": "tujuh belas",
+    "18": "delapan belas",
+    "19": "sembilan belas",
+    "20": "dua puluh",
+    "30": "tiga puluh",
+    "40": "empat puluh",
+    "50": "lima puluh",
+    "60": "enam puluh",
+    "70": "tujuh puluh",
+    "80": "delapan puluh",
+    "90": "sembilan puluh",
+    "100": "seratus"
+  },
+  "count_agreement": [
+    {
+      "form": "one"
+    }
+  ],
+  "morph_classes": {
+    "verb_pres": {
+      "forms": [
+        "s1",
+        "s2",
+        "s3",
+        "p1",
+        "p2",
+        "p3"
+      ],
+      "paradigm_cells": 6,
+      "need": 5,
+      "lexemes": {
+        "membaca": [
+          "membaca",
+          "membaca",
+          "membaca",
+          "membaca",
+          "membaca",
+          "membaca"
+        ],
+        "menulis": [
+          "menulis",
+          "menulis",
+          "menulis",
+          "menulis",
+          "menulis",
+          "menulis"
+        ],
+        "berbicara": [
+          "berbicara",
+          "berbicara",
+          "berbicara",
+          "berbicara",
+          "berbicara",
+          "berbicara"
+        ],
+        "berjalan": [
+          "berjalan",
+          "berjalan",
+          "berjalan",
+          "berjalan",
+          "berjalan",
+          "berjalan"
+        ],
+        "melihat": [
+          "melihat",
+          "melihat",
+          "melihat",
+          "melihat",
+          "melihat",
+          "melihat"
+        ],
+        "mendengar": [
+          "mendengar",
+          "mendengar",
+          "mendengar",
+          "mendengar",
+          "mendengar",
+          "mendengar"
+        ],
+        "makan": [
+          "makan",
+          "makan",
+          "makan",
+          "makan",
+          "makan",
+          "makan"
+        ],
+        "minum": [
+          "minum",
+          "minum",
+          "minum",
+          "minum",
+          "minum",
+          "minum"
+        ],
+        "tahu": [
+          "tahu",
+          "tahu",
+          "tahu",
+          "tahu",
+          "tahu",
+          "tahu"
+        ],
+        "membeli": [
+          "membeli",
+          "membeli",
+          "membeli",
+          "membeli",
+          "membeli",
+          "membeli"
+        ],
+        "belajar": [
+          "belajar",
+          "belajar",
+          "belajar",
+          "belajar",
+          "belajar",
+          "belajar"
+        ],
+        "bekerja": [
+          "bekerja",
+          "bekerja",
+          "bekerja",
+          "bekerja",
+          "bekerja",
+          "bekerja"
+        ],
+        "datang": [
+          "datang",
+          "datang",
+          "datang",
+          "datang",
+          "datang",
+          "datang"
+        ],
+        "pergi": [
+          "pergi",
+          "pergi",
+          "pergi",
+          "pergi",
+          "pergi",
+          "pergi"
+        ],
+        "duduk": [
+          "duduk",
+          "duduk",
+          "duduk",
+          "duduk",
+          "duduk",
+          "duduk"
+        ],
+        "tidur": [
+          "tidur",
+          "tidur",
+          "tidur",
+          "tidur",
+          "tidur",
+          "tidur"
+        ]
+      },
+      "rule": {
+        "classes": {
+          "нуль": {
+            "strip": "",
+            "endings": [
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          }
+        },
+        "of": {
+          "membaca": "нуль",
+          "menulis": "нуль",
+          "berbicara": "нуль",
+          "berjalan": "нуль",
+          "melihat": "нуль",
+          "mendengar": "нуль",
+          "makan": "нуль",
+          "minum": "нуль",
+          "tahu": "нуль",
+          "membeli": "нуль",
+          "belajar": "нуль",
+          "bekerja": "нуль",
+          "datang": "нуль",
+          "pergi": "нуль",
+          "duduk": "нуль",
+          "tidur": "нуль"
+        }
+      }
+    },
+    "noun_count": {
+      "forms": [
+        "one",
+        "many"
+      ],
+      "paradigm_cells": 2,
+      "need": 5,
+      "lexemes": {
+        "buku": [
+          "buku",
+          "buku-buku"
+        ],
+        "rumah": [
+          "rumah",
+          "rumah-rumah"
+        ],
+        "meja": [
+          "meja",
+          "meja-meja"
+        ],
+        "kursi": [
+          "kursi",
+          "kursi-kursi"
+        ],
+        "pintu": [
+          "pintu",
+          "pintu-pintu"
+        ],
+        "jendela": [
+          "jendela",
+          "jendela-jendela"
+        ],
+        "bunga": [
+          "bunga",
+          "bunga-bunga"
+        ],
+        "kota": [
+          "kota",
+          "kota-kota"
+        ],
+        "kertas": [
+          "kertas",
+          "kertas-kertas"
+        ],
+        "kucing": [
+          "kucing",
+          "kucing-kucing"
+        ],
+        "anjing": [
+          "anjing",
+          "anjing-anjing"
+        ],
+        "pohon": [
+          "pohon",
+          "pohon-pohon"
+        ],
+        "gunung": [
+          "gunung",
+          "gunung-gunung"
+        ],
+        "sungai": [
+          "sungai",
+          "sungai-sungai"
+        ],
+        "sekolah": [
+          "sekolah",
+          "sekolah-sekolah"
+        ],
+        "pasar": [
+          "pasar",
+          "pasar-pasar"
+        ],
+        "toko": [
+          "toko",
+          "toko-toko"
+        ],
+        "koran": [
+          "koran",
+          "koran-koran"
+        ],
+        "mobil": [
+          "mobil",
+          "mobil-mobil"
+        ],
+        "apel": [
+          "apel",
+          "apel-apel"
+        ],
+        "roti": [
+          "roti",
+          "roti-roti"
+        ],
+        "kunci": [
+          "kunci",
+          "kunci-kunci"
+        ],
+        "tiket": [
+          "tiket",
+          "tiket-tiket"
+        ],
+        "bola": [
+          "bola",
+          "bola-bola"
+        ],
+        "topi": [
+          "topi",
+          "topi-topi"
+        ],
+        "baju": [
+          "baju",
+          "baju-baju"
+        ],
+        "gelas": [
+          "gelas",
+          "gelas-gelas"
+        ],
+        "piring": [
+          "piring",
+          "piring-piring"
+        ],
+        "kotak": [
+          "kotak",
+          "kotak-kotak"
+        ],
+        "tas": [
+          "tas",
+          "tas-tas"
+        ],
+        "lampu": [
+          "lampu",
+          "lampu-lampu"
+        ],
+        "surat": [
+          "surat",
+          "surat-surat"
+        ],
+        "kata": [
+          "kata",
+          "kata-kata"
+        ],
+        "hari": [
+          "hari",
+          "hari-hari"
+        ],
+        "orang": [
+          "orang",
+          "orang-orang"
+        ],
+        "anak": [
+          "anak",
+          "anak-anak"
+        ],
+        "teman": [
+          "teman",
+          "teman-teman"
+        ],
+        "guru": [
+          "guru",
+          "guru-guru"
+        ],
+        "foto": [
+          "foto",
+          "foto-foto"
+        ],
+        "televisi": [
+          "televisi",
+          "televisi-televisi"
+        ],
+        "warna": [
+          "warna",
+          "warna-warna"
+        ],
+        "ayam": [
+          "ayam",
+          "ayam-ayam"
+        ]
+      }
+    }
+  },
+  "show_kinds": {
+    "arithmetic": {
+      "lexicon": [
+        "tambah",
+        "kurang",
+        "kali",
+        "bagi",
+        "sama dengan"
+      ],
+      "ops": {
+        "tambah": "+",
+        "kurang": "-",
+        "kali": "*",
+        "bagi": "/",
+        "sama dengan": "="
+      },
+      "instances_per_pass": 14,
+      "templates": [
+        "{num:n} tambah {num:m} sama dengan {num:sum}.",
+        "{n} + {m} = {sum}.",
+        "{num:sum} kurang {num:m} sama dengan {num:n}.",
+        "{num:n} kali {num:m} sama dengan {num:prod}.",
+        "{num:prod} bagi {num:m} sama dengan {num:n}."
+      ]
+    },
+    "conjugation": {
+      "lexicon": [
+        "saya",
+        "kamu",
+        "dia",
+        "kami",
+        "kalian",
+        "mereka"
+      ],
+      "instances_per_pass": 32,
+      "templates": [
+        "saya {lex:verb_pres:s1}.",
+        "kamu {lex:verb_pres:s2}.",
+        "dia {lex:verb_pres:s3}.",
+        "kami {lex:verb_pres:p1}.",
+        "kalian {lex:verb_pres:p2}.",
+        "mereka {lex:verb_pres:p3}."
+      ]
+    },
+    "counting": {
+      "lexicon": [
+        "ini",
+        "itu",
+        "ada",
+        "di",
+        "sini"
+      ],
+      "instances_per_pass": 84,
+      "templates": [
+        "ini {lex:noun_count:one}.",
+        "itu {lex:noun_count:many}.",
+        "ada {lex:noun_count:many} di sini."
+      ]
+    },
+    "definition": {
+      "lexicon": [
+        "adalah",
+        "benda",
+        "sebuah",
+        "apa"
+      ],
+      "instances_per_pass": 84,
+      "templates": [
+        "{lex:noun_count:one} adalah benda.",
+        "{lex:noun_count:one} adalah sebuah benda.",
+        "apa itu {lex:noun_count:one}?"
+      ]
+    },
+    "refusals": {
+      "refusal": true,
+      "marker": "¬ ",
+      "lexicon": [
+        "¬"
+      ],
+      "pairs": [
+        {
+          "bad": "dua buku-buku.",
+          "good": "dua buku.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "lima kucing-kucing.",
+          "good": "lima kucing.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "tiga rumah-rumah.",
+          "good": "tiga rumah.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "tujuh warna apa?",
+          "good": "apa itu benda?",
+          "reason": "unanswerable"
+        },
+        {
+          "bad": "rumah tambah kucing sama dengan?",
+          "good": "seratus kurang satu sama dengan sembilan puluh sembilan.",
+          "reason": "type_mismatch"
+        }
+      ]
+    }
+  },
+  "core_pairing": [
+    {
+      "lang_word": "tambah",
+      "core": "+",
+      "core_form": "+",
+      "lang_form": "tambah"
+    },
+    {
+      "lang_word": "kurang",
+      "core": "-",
+      "core_form": "-",
+      "lang_form": "kurang"
+    },
+    {
+      "lang_word": "kali",
+      "core": "×",
+      "core_form": "×",
+      "lang_form": "kali"
+    },
+    {
+      "lang_word": "bagi",
+      "core": "÷",
+      "core_form": "÷",
+      "lang_form": "bagi"
+    },
+    {
+      "lang_word": "sama dengan",
+      "core": "=",
+      "core_form": "=",
+      "lang_form": "sama dengan"
+    }
+  ],
+  "cross_kind_share": 0.3,
+  "irregulars": [
+    "sepuluh",
+    "sebelas",
+    "membaca",
+    "menulis",
+    "mendengar"
+  ],
+  "probe": {
+    "words": [
+      "ada",
+      "adalah",
+      "apa",
+      "bagi",
+      "benda",
+      "buku",
+      "dia",
+      "dua",
+      "ini",
+      "itu",
+      "kali",
+      "kalian",
+      "kami",
+      "kamu",
+      "kurang",
+      "mereka",
+      "rumah",
+      "satu",
+      "saya",
+      "tambah"
+    ],
+    "diacritics": ""
+  }
+}

@@ -1,0 +1,407 @@
+{
+  "lang": "am",
+  "script": "ethiopic",
+  "script_range": "ሀ-፼",
+  "graphemes": "ሁሃሄህለሉላልሐመማምረራርሮሰሱሲሳስሶሽቀቁቅበባቤብተታትቶቸችነናኔንኛኝአእኩኪካኮወውዎዕዘዚዛዜያይዮደዲዳድጃጅገጋጠጣጴጽፈፋፍፎ",
+  "tier": 1,
+  "comment": "EIGHTEENTH PACK, AND THE CORPUS'S FIRST SYLLABARY. Ethiopic (Geʽez) writes a CONSONANT AND ITS VOWEL AS ONE SIGN — ሀ ሁ ሂ ሃ ሄ ህ ሆ is one consonant in seven vowels, seven code points and not a single combining mark. So the mark-as-letter law bought for Devanagari is not needed here at all, while `graphemes` meets its limit from the other side: some 270 signs exist and only those alive in the shows are declared. Amharic is SOV and says its copula LAST; the forge's arithmetic template puts the equality word BEFORE the result, and that word order is the forge's, not the language's. Six person cells of eight: the second and third person split by gender (አንተ/አንቺ, እሱ/እሷ) and the forge holds six. TIER 1.",
+  "lexeme_source": {
+    "law": "every morph class must carry >= LAW distinct lexemes; a class below its declared need is judged poor by the engine",
+    "need_per_class": 5
+  },
+  "numerals": {
+    "0": "ዜሮ",
+    "1": "አንድ",
+    "2": "ሁለት",
+    "3": "ሶስት",
+    "4": "አራት",
+    "5": "አምስት",
+    "6": "ስድስት",
+    "7": "ሰባት",
+    "8": "ስምንት",
+    "9": "ዘጠኝ",
+    "10": "አስር",
+    "11": "አስራ አንድ",
+    "12": "አስራ ሁለት",
+    "13": "አስራ ሶስት",
+    "14": "አስራ አራት",
+    "15": "አስራ አምስት",
+    "16": "አስራ ስድስት",
+    "17": "አስራ ሰባት",
+    "18": "አስራ ስምንት",
+    "19": "አስራ ዘጠኝ",
+    "20": "ሃያ",
+    "21": "ሃያ አንድ",
+    "24": "ሃያ አራት",
+    "25": "ሃያ አምስት",
+    "27": "ሃያ ሰባት",
+    "28": "ሃያ ስምንት",
+    "30": "ሰላሳ",
+    "32": "ሰላሳ ሁለት",
+    "35": "ሰላሳ አምስት",
+    "36": "ሰላሳ ስድስት",
+    "40": "አርባ",
+    "45": "አርባ አምስት",
+    "50": "ሃምሳ",
+    "60": "ስልሳ",
+    "70": "ሰባ",
+    "80": "ሰማንያ",
+    "90": "ዘጠና",
+    "100": "መቶ"
+  },
+  "count_agreement": [
+    {
+      "form": "one"
+    }
+  ],
+  "morph_classes": {
+    "verb_pres": {
+      "forms": [
+        "s1",
+        "s2",
+        "s3",
+        "p1",
+        "p2",
+        "p3"
+      ],
+      "paradigm_cells": 6,
+      "need": 5,
+      "lexemes": {
+        "መጻፍ": [
+          "እጽፋለሁ",
+          "ትጽፋለህ",
+          "ይጽፋል",
+          "እንጽፋለን",
+          "ትጽፋላችሁ",
+          "ይጽፋሉ"
+        ],
+        "ማንበብ": [
+          "አነባለሁ",
+          "ታነባለህ",
+          "ያነባል",
+          "እናነባለን",
+          "ታነባላችሁ",
+          "ያነባሉ"
+        ],
+        "መብላት": [
+          "እበላለሁ",
+          "ትበላለህ",
+          "ይበላል",
+          "እንበላለን",
+          "ትበላላችሁ",
+          "ይበላሉ"
+        ],
+        "መጠጣት": [
+          "እጠጣለሁ",
+          "ትጠጣለህ",
+          "ይጠጣል",
+          "እንጠጣለን",
+          "ትጠጣላችሁ",
+          "ይጠጣሉ"
+        ],
+        "መሄድ": [
+          "እሄዳለሁ",
+          "ትሄዳለህ",
+          "ይሄዳል",
+          "እንሄዳለን",
+          "ትሄዳላችሁ",
+          "ይሄዳሉ"
+        ],
+        "መምጣት": [
+          "እመጣለሁ",
+          "ትመጣለህ",
+          "ይመጣል",
+          "እንመጣለን",
+          "ትመጣላችሁ",
+          "ይመጣሉ"
+        ],
+        "ማየት": [
+          "አያለሁ",
+          "ታያለህ",
+          "ያያል",
+          "እናያለን",
+          "ታያላችሁ",
+          "ያያሉ"
+        ],
+        "መስራት": [
+          "እሰራለሁ",
+          "ትሰራለህ",
+          "ይሰራል",
+          "እንሰራለን",
+          "ትሰራላችሁ",
+          "ይሰራሉ"
+        ]
+      }
+    },
+    "noun_count": {
+      "forms": [
+        "one",
+        "many"
+      ],
+      "paradigm_cells": 2,
+      "need": 5,
+      "lexemes": {
+        "ቤት": [
+          "ቤት",
+          "ቤቶች"
+        ],
+        "ወንበር": [
+          "ወንበር",
+          "ወንበሮች"
+        ],
+        "ጠረጴዛ": [
+          "ጠረጴዛ",
+          "ጠረጴዛዎች"
+        ],
+        "መኪና": [
+          "መኪና",
+          "መኪናዎች"
+        ],
+        "በር": [
+          "በር",
+          "በሮች"
+        ],
+        "ወረቀት": [
+          "ወረቀት",
+          "ወረቀቶች"
+        ],
+        "ዛፍ": [
+          "ዛፍ",
+          "ዛፎች"
+        ],
+        "አበባ": [
+          "አበባ",
+          "አበባዎች"
+        ],
+        "ቁልፍ": [
+          "ቁልፍ",
+          "ቁልፎች"
+        ],
+        "መስኮት": [
+          "መስኮት",
+          "መስኮቶች"
+        ],
+        "መጽሐፍ": [
+          "መጽሐፍ",
+          "መጽሐፍት"
+        ],
+        "ብዕር": [
+          "ብዕር",
+          "ብዕሮች"
+        ],
+        "ድንጋይ": [
+          "ድንጋይ",
+          "ድንጋዮች"
+        ]
+      }
+    },
+    "adj_forms": {
+      "forms": [
+        "one",
+        "many"
+      ],
+      "paradigm_cells": 2,
+      "need": 5,
+      "lexemes": {
+        "ትልቅ": [
+          "ትልቅ",
+          "ትላልቅ"
+        ],
+        "ትንሽ": [
+          "ትንሽ",
+          "ትናንሽ"
+        ],
+        "አዲስ": [
+          "አዲስ",
+          "አዳዲስ"
+        ],
+        "ረጅም": [
+          "ረጅም",
+          "ረጃጅም"
+        ],
+        "ቀይ": [
+          "ቀይ",
+          "ቀያይ"
+        ]
+      }
+    }
+  },
+  "show_kinds": {
+    "arithmetic": {
+      "lexicon": [
+        "ሲደመር",
+        "ሲቀነስ",
+        "ሲባዛ",
+        "ሲካፈል",
+        "እኩል"
+      ],
+      "ops": {
+        "ሲደመር": "+",
+        "ሲቀነስ": "-",
+        "ሲባዛ": "*",
+        "ሲካፈል": "/",
+        "እኩል": "="
+      },
+      "instances_per_pass": 14,
+      "templates": [
+        "{num:n} ሲደመር {num:m} እኩል {num:sum}.",
+        "{n} + {m} = {sum}.",
+        "{num:sum} ሲቀነስ {num:m} እኩል {num:n}.",
+        "{num:n} ሲባዛ {num:m} እኩል {num:prod}.",
+        "{num:prod} ሲካፈል {num:m} እኩል {num:n}."
+      ]
+    },
+    "conjugation": {
+      "lexicon": [
+        "እኔ",
+        "አንተ",
+        "እሱ",
+        "እኛ",
+        "እናንተ",
+        "እነሱ"
+      ],
+      "instances_per_pass": 16,
+      "templates": [
+        "እኔ {lex:verb_pres:s1}.",
+        "አንተ {lex:verb_pres:s2}.",
+        "እሱ {lex:verb_pres:s3}.",
+        "እኛ {lex:verb_pres:p1}.",
+        "እናንተ {lex:verb_pres:p2}.",
+        "እነሱ {lex:verb_pres:p3}."
+      ]
+    },
+    "counting": {
+      "lexicon": [
+        "እዚህ",
+        "አለ",
+        "አሉ"
+      ],
+      "instances_per_pass": 26,
+      "templates": [
+        "እዚህ {lex:noun_count:one} አለ።",
+        "እዚህ {lex:noun_count:many} አሉ።",
+        "እዚህ {num:prod} መጽሐፍ አለ።"
+      ]
+    },
+    "definition": {
+      "lexicon": [
+        "ነገር",
+        "ነው",
+        "ምን"
+      ],
+      "instances_per_pass": 26,
+      "templates": [
+        "{lex:noun_count:one} ነገር ነው።"
+      ]
+    },
+    "refusals": {
+      "refusal": true,
+      "marker": "¬ ",
+      "lexicon": [
+        "¬"
+      ],
+      "pairs": [
+        {
+          "bad": "እኔ መጽሐፍ ያነባል",
+          "good": "እኔ መጽሐፍ አነባለሁ",
+          "reason": "agreement"
+        },
+        {
+          "bad": "እነሱ መጽሐፍ ያነባል",
+          "good": "እነሱ መጽሐፍ ያነባሉ",
+          "reason": "agreement"
+        },
+        {
+          "bad": "ተራሮች ትልቅ ናቸው",
+          "good": "ተራሮች ትላልቅ ናቸው",
+          "reason": "agreement"
+        },
+        {
+          "bad": "ሰባት ምን ቀለም ነው",
+          "good": "ተራራ ነገር ነው",
+          "reason": "unanswerable"
+        },
+        {
+          "bad": "አስር ሲካፈል ዜሮ እኩል",
+          "good": "መቶ ሲካፈል አስር እኩል አስር",
+          "reason": "unanswerable"
+        },
+        {
+          "bad": "መጽሐፍ ሲደመር ዛፍ እኩል",
+          "good": "ሰማንያ ሲቀነስ ሃያ እኩል ስልሳ",
+          "reason": "type_mismatch"
+        }
+      ]
+    },
+    "agreement": {
+      "lexicon": [
+        "ናቸው"
+      ],
+      "instances_per_pass": 12,
+      "templates": [
+        "{lex:noun_count:one} {lex:adj_forms:one} ነው።",
+        "{lex:noun_count:many} {lex:adj_forms:many} ናቸው።"
+      ]
+    }
+  },
+  "core_pairing": [
+    {
+      "lang_word": "ሲደመር",
+      "core": "+",
+      "core_form": "+",
+      "lang_form": "ሲደመር"
+    },
+    {
+      "lang_word": "ሲቀነስ",
+      "core": "-",
+      "core_form": "-",
+      "lang_form": "ሲቀነስ"
+    },
+    {
+      "lang_word": "ሲባዛ",
+      "core": "×",
+      "core_form": "×",
+      "lang_form": "ሲባዛ"
+    },
+    {
+      "lang_word": "ሲካፈል",
+      "core": "÷",
+      "core_form": "÷",
+      "lang_form": "ሲካፈል"
+    },
+    {
+      "lang_word": "እኩል",
+      "core": "=",
+      "core_form": "=",
+      "lang_form": "እኩል"
+    }
+  ],
+  "cross_kind_share": 0.3,
+  "irregulars": [
+    "መጽሐፍት",
+    "ትላልቅ",
+    "ትናንሽ",
+    "አዳዲስ"
+  ],
+  "probe": {
+    "words": [
+      "ሁለት",
+      "ሲቀነስ",
+      "ሲደመር",
+      "ሶስት",
+      "ቤት",
+      "ነው",
+      "ነገር",
+      "አንተ",
+      "አንድ",
+      "እሱ",
+      "እነሱ",
+      "እናንተ",
+      "እኔ",
+      "እኛ",
+      "እኩል",
+      "እዚህ"
+    ],
+    "diacritics": ""
+  }
+}

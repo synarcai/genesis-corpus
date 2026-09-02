@@ -1,0 +1,731 @@
+{
+  "lang": "fi",
+  "script": "latin",
+  "script_range": "A-Za-zÄÖÅäöå",
+  "graphemes": "MSTadehijklmnoprstuvyäö",
+  "tier": 1,
+  "comment": "TWENTIETH PACK. Finnish: FIFTEEN CASES (twelve declared — the three I would not guess are left out), all suffixed, none prepositional; CONSONANT GRADATION (kukka/kukan, katu/kadun, kauppa/kaupan) which changes the STEM, not the ending — and which the rule oracle CAN express once the class is keyed on the alternation and the whole alternating chunk is stripped; a numeral takes the PARTITIVE SINGULAR, never the plural. The equality word is the copula «on», the commonest word in the language, and the arithmetic judge goes half-blind on ordinary sentences because of it. TIER 1.",
+  "lexeme_source": {
+    "law": "every morph class must carry >= LAW distinct lexemes; a class below its declared need is judged poor by the engine",
+    "need_per_class": 5
+  },
+  "numerals": {
+    "0": "nolla",
+    "1": "yksi",
+    "2": "kaksi",
+    "3": "kolme",
+    "4": "neljä",
+    "5": "viisi",
+    "6": "kuusi",
+    "7": "seitsemän",
+    "8": "kahdeksan",
+    "9": "yhdeksän",
+    "10": "kymmenen",
+    "11": "yksitoista",
+    "12": "kaksitoista",
+    "13": "kolmetoista",
+    "14": "neljätoista",
+    "15": "viisitoista",
+    "16": "kuusitoista",
+    "17": "seitsemäntoista",
+    "18": "kahdeksantoista",
+    "19": "yhdeksäntoista",
+    "20": "kaksikymmentä",
+    "21": "kaksikymmentäyksi",
+    "24": "kaksikymmentäneljä",
+    "25": "kaksikymmentäviisi",
+    "27": "kaksikymmentäseitsemän",
+    "28": "kaksikymmentäkahdeksan",
+    "30": "kolmekymmentä",
+    "32": "kolmekymmentäkaksi",
+    "35": "kolmekymmentäviisi",
+    "36": "kolmekymmentäkuusi",
+    "40": "neljäkymmentä",
+    "45": "neljäkymmentäviisi",
+    "50": "viisikymmentä",
+    "60": "kuusikymmentä",
+    "70": "seitsemänkymmentä",
+    "80": "kahdeksankymmentä",
+    "90": "yhdeksänkymmentä",
+    "100": "sata"
+  },
+  "count_agreement": [
+    {
+      "form": "one"
+    }
+  ],
+  "morph_classes": {
+    "verb_pres": {
+      "forms": [
+        "s1",
+        "s2",
+        "s3",
+        "p1",
+        "p2",
+        "p3"
+      ],
+      "paradigm_cells": 6,
+      "need": 5,
+      "lexemes": {
+        "puhua": [
+          "puhun",
+          "puhut",
+          "puhuu",
+          "puhumme",
+          "puhutte",
+          "puhuvat"
+        ],
+        "asua": [
+          "asun",
+          "asut",
+          "asuu",
+          "asumme",
+          "asutte",
+          "asuvat"
+        ],
+        "sanoa": [
+          "sanon",
+          "sanot",
+          "sanoo",
+          "sanomme",
+          "sanotte",
+          "sanovat"
+        ],
+        "katsoa": [
+          "katson",
+          "katsot",
+          "katsoo",
+          "katsomme",
+          "katsotte",
+          "katsovat"
+        ],
+        "ostaa": [
+          "ostan",
+          "ostat",
+          "ostaa",
+          "ostamme",
+          "ostatte",
+          "ostavat"
+        ],
+        "lukea": [
+          "luen",
+          "luet",
+          "lukee",
+          "luemme",
+          "luette",
+          "lukevat"
+        ],
+        "kirjoittaa": [
+          "kirjoitan",
+          "kirjoitat",
+          "kirjoittaa",
+          "kirjoitamme",
+          "kirjoitatte",
+          "kirjoittavat"
+        ],
+        "antaa": [
+          "annan",
+          "annat",
+          "antaa",
+          "annamme",
+          "annatte",
+          "antavat"
+        ],
+        "tietää": [
+          "tiedän",
+          "tiedät",
+          "tietää",
+          "tiedämme",
+          "tiedätte",
+          "tietävät"
+        ],
+        "oppia": [
+          "opin",
+          "opit",
+          "oppii",
+          "opimme",
+          "opitte",
+          "oppivat"
+        ],
+        "syödä": [
+          "syön",
+          "syöt",
+          "syö",
+          "syömme",
+          "syötte",
+          "syövät"
+        ],
+        "juoda": [
+          "juon",
+          "juot",
+          "juo",
+          "juomme",
+          "juotte",
+          "juovat"
+        ],
+        "tulla": [
+          "tulen",
+          "tulet",
+          "tulee",
+          "tulemme",
+          "tulette",
+          "tulevat"
+        ],
+        "mennä": [
+          "menen",
+          "menet",
+          "menee",
+          "menemme",
+          "menette",
+          "menevät"
+        ],
+        "nähdä": [
+          "näen",
+          "näet",
+          "näkee",
+          "näemme",
+          "näette",
+          "näkevät"
+        ],
+        "olla": [
+          "olen",
+          "olet",
+          "on",
+          "olemme",
+          "olette",
+          "ovat"
+        ]
+      },
+      "rule": {
+        "classes": {
+          "ua": {
+            "strip": "ua",
+            "endings": [
+              "un",
+              "ut",
+              "uu",
+              "umme",
+              "utte",
+              "uvat"
+            ]
+          },
+          "oa": {
+            "strip": "oa",
+            "endings": [
+              "on",
+              "ot",
+              "oo",
+              "omme",
+              "otte",
+              "ovat"
+            ]
+          },
+          "aa": {
+            "strip": "aa",
+            "endings": [
+              "an",
+              "at",
+              "aa",
+              "amme",
+              "atte",
+              "avat"
+            ]
+          },
+          "kea": {
+            "strip": "kea",
+            "endings": [
+              "en",
+              "et",
+              "kee",
+              "emme",
+              "ette",
+              "kevat"
+            ]
+          },
+          "ttaa": {
+            "strip": "ttaa",
+            "endings": [
+              "tan",
+              "tat",
+              "ttaa",
+              "tamme",
+              "tatte",
+              "ttavat"
+            ]
+          },
+          "ntaa": {
+            "strip": "ntaa",
+            "endings": [
+              "nnan",
+              "nnat",
+              "ntaa",
+              "nnamme",
+              "nnatte",
+              "ntavat"
+            ]
+          },
+          "tää": {
+            "strip": "tää",
+            "endings": [
+              "dän",
+              "dät",
+              "tää",
+              "dämme",
+              "dätte",
+              "tävät"
+            ]
+          },
+          "ppia": {
+            "strip": "ppia",
+            "endings": [
+              "pin",
+              "pit",
+              "ppii",
+              "pimme",
+              "pitte",
+              "ppivat"
+            ]
+          },
+          "dä": {
+            "strip": "dä",
+            "endings": [
+              "n",
+              "t",
+              "",
+              "mme",
+              "tte",
+              "vät"
+            ]
+          },
+          "da": {
+            "strip": "da",
+            "endings": [
+              "n",
+              "t",
+              "",
+              "mme",
+              "tte",
+              "vat"
+            ]
+          },
+          "lla": {
+            "strip": "lla",
+            "endings": [
+              "len",
+              "let",
+              "lee",
+              "lemme",
+              "lette",
+              "levat"
+            ]
+          },
+          "nnä": {
+            "strip": "nnä",
+            "endings": [
+              "nen",
+              "net",
+              "nee",
+              "nemme",
+              "nette",
+              "nevät"
+            ]
+          },
+          "hdä": {
+            "strip": "hdä",
+            "endings": [
+              "en",
+              "et",
+              "kee",
+              "emme",
+              "ette",
+              "kevät"
+            ]
+          }
+        },
+        "of": {
+          "puhua": "ua",
+          "asua": "ua",
+          "sanoa": "oa",
+          "katsoa": "oa",
+          "ostaa": "aa",
+          "lukea": "kea",
+          "kirjoittaa": "ttaa",
+          "antaa": "ntaa",
+          "tietää": "tää",
+          "oppia": "ppia",
+          "syödä": "dä",
+          "juoda": "da",
+          "tulla": "lla",
+          "mennä": "nnä",
+          "nähdä": "hdä",
+          "olla": "*"
+        }
+      }
+    },
+    "noun_count": {
+      "forms": [
+        "one",
+        "many"
+      ],
+      "paradigm_cells": 2,
+      "need": 5,
+      "lexemes": {
+        "talo": [
+          "talo",
+          "talot"
+        ],
+        "auto": [
+          "auto",
+          "autot"
+        ],
+        "koulu": [
+          "koulu",
+          "koulut"
+        ],
+        "kirja": [
+          "kirja",
+          "kirjat"
+        ],
+        "kukka": [
+          "kukka",
+          "kukat"
+        ],
+        "katu": [
+          "katu",
+          "kadut"
+        ],
+        "kauppa": [
+          "kauppa",
+          "kaupat"
+        ],
+        "pöytä": [
+          "pöytä",
+          "pöydät"
+        ]
+      }
+    },
+    "adj_forms": {
+      "forms": [
+        "nominative",
+        "genitive",
+        "partitive",
+        "inessive",
+        "elative",
+        "illative",
+        "adessive",
+        "ablative",
+        "allative",
+        "essive",
+        "translative",
+        "abessive"
+      ],
+      "paradigm_cells": 12,
+      "need": 5,
+      "lexemes": {
+        "talo": [
+          "talo",
+          "talon",
+          "taloa",
+          "talossa",
+          "talosta",
+          "taloon",
+          "talolla",
+          "talolta",
+          "talolle",
+          "talona",
+          "taloksi",
+          "talotta"
+        ],
+        "auto": [
+          "auto",
+          "auton",
+          "autoa",
+          "autossa",
+          "autosta",
+          "autoon",
+          "autolla",
+          "autolta",
+          "autolle",
+          "autona",
+          "autoksi",
+          "autotta"
+        ],
+        "koulu": [
+          "koulu",
+          "koulun",
+          "koulua",
+          "koulussa",
+          "koulusta",
+          "kouluun",
+          "koululla",
+          "koululta",
+          "koululle",
+          "kouluna",
+          "kouluksi",
+          "koulutta"
+        ],
+        "kirja": [
+          "kirja",
+          "kirjan",
+          "kirjaa",
+          "kirjassa",
+          "kirjasta",
+          "kirjaan",
+          "kirjalla",
+          "kirjalta",
+          "kirjalle",
+          "kirjana",
+          "kirjaksi",
+          "kirjatta"
+        ],
+        "kukka": [
+          "kukka",
+          "kukan",
+          "kukkaa",
+          "kukassa",
+          "kukasta",
+          "kukkaan",
+          "kukalla",
+          "kukalta",
+          "kukalle",
+          "kukkana",
+          "kukaksi",
+          "kukatta"
+        ],
+        "katu": [
+          "katu",
+          "kadun",
+          "katua",
+          "kadussa",
+          "kadusta",
+          "katuun",
+          "kadulla",
+          "kadulta",
+          "kadulle",
+          "katuna",
+          "kaduksi",
+          "kadutta"
+        ],
+        "kauppa": [
+          "kauppa",
+          "kaupan",
+          "kauppaa",
+          "kaupassa",
+          "kaupasta",
+          "kauppaan",
+          "kaupalla",
+          "kaupalta",
+          "kaupalle",
+          "kauppana",
+          "kaupaksi",
+          "kaupatta"
+        ],
+        "pöytä": [
+          "pöytä",
+          "pöydän",
+          "pöytää",
+          "pöydässä",
+          "pöydästä",
+          "pöytään",
+          "pöydällä",
+          "pöydältä",
+          "pöydälle",
+          "pöytänä",
+          "pöydäksi",
+          "pöydättä"
+        ]
+      }
+    }
+  },
+  "show_kinds": {
+    "arithmetic": {
+      "lexicon": [
+        "plus",
+        "miinus",
+        "kertaa",
+        "÷",
+        "on"
+      ],
+      "ops": {
+        "plus": "+",
+        "miinus": "-",
+        "kertaa": "*",
+        "÷": "/",
+        "on": "="
+      },
+      "instances_per_pass": 14,
+      "templates": [
+        "{num:n} plus {num:m} on {num:sum}.",
+        "{n} + {m} = {sum}.",
+        "{num:sum} miinus {num:m} on {num:n}.",
+        "{num:n} kertaa {num:m} on {num:prod}.",
+        "{num:prod} ÷ {num:m} on {num:n}."
+      ]
+    },
+    "conjugation": {
+      "lexicon": [
+        "minä",
+        "sinä",
+        "hän",
+        "me",
+        "te",
+        "he"
+      ],
+      "instances_per_pass": 32,
+      "templates": [
+        "minä {lex:verb_pres:s1}.",
+        "sinä {lex:verb_pres:s2}.",
+        "hän {lex:verb_pres:s3}.",
+        "me {lex:verb_pres:p1}.",
+        "te {lex:verb_pres:p2}.",
+        "he {lex:verb_pres:p3}."
+      ]
+    },
+    "counting": {
+      "lexicon": [
+        "Tässä",
+        "yksi",
+        "kaksi"
+      ],
+      "instances_per_pass": 16,
+      "templates": [
+        "Tässä on yksi {lex:noun_count:one}.",
+        "Tässä ovat {lex:noun_count:many}.",
+        "Tässä on kaksi {lex:adj_forms:partitive}.",
+        "Tässä on {num:sum} {lex:adj_forms:partitive}."
+      ]
+    },
+    "definition": {
+      "lexicon": [
+        "suomen",
+        "sana",
+        "sanoja"
+      ],
+      "instances_per_pass": 16,
+      "templates": [
+        "{lex:noun_count:one} on suomen sana.",
+        "{many} ovat suomen sanoja."
+      ]
+    },
+    "refusals": {
+      "refusal": true,
+      "marker": "¬ ",
+      "lexicon": [
+        "¬"
+      ],
+      "pairs": [
+        {
+          "bad": "Minä näen kaksi talo.",
+          "good": "Minä näen kaksi taloa.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "minä puhut suomea.",
+          "good": "minä puhun suomea.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "hän on kirjastoon.",
+          "good": "hän on kirjastossa.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "mikä on seitsemän väri?",
+          "good": "mikä on talo?",
+          "reason": "unanswerable"
+        },
+        {
+          "bad": "kirja plus kukka on ?",
+          "good": "kaksikymmentäyksi miinus yksi on kaksikymmentä.",
+          "reason": "type_mismatch"
+        }
+      ]
+    },
+    "agreement": {
+      "lexicon": [
+        "Tämä",
+        "Minä",
+        "Se",
+        "hyvä"
+      ],
+      "instances_per_pass": 12,
+      "templates": [
+        "{lex:adj_forms:nominative} on tässä.",
+        "Tämä on {lex:adj_forms:genitive} väri.",
+        "Minä katson {lex:adj_forms:partitive}.",
+        "Minä olen {lex:adj_forms:inessive}.",
+        "Minä tulen {lex:adj_forms:elative}.",
+        "Minä menen {lex:adj_forms:illative}.",
+        "Se on {lex:adj_forms:adessive}.",
+        "Minä otan sen {lex:adj_forms:ablative}.",
+        "Minä menen {lex:adj_forms:allative}.",
+        "Se on hyvä {lex:adj_forms:essive}.",
+        "Se muuttui {lex:adj_forms:translative}.",
+        "Minä olen {lex:adj_forms:abessive}."
+      ]
+    }
+  },
+  "core_pairing": [
+    {
+      "lang_word": "plus",
+      "core": "+",
+      "core_form": "+",
+      "lang_form": "plus"
+    },
+    {
+      "lang_word": "miinus",
+      "core": "-",
+      "core_form": "-",
+      "lang_form": "miinus"
+    },
+    {
+      "lang_word": "kertaa",
+      "core": "×",
+      "core_form": "×",
+      "lang_form": "kertaa"
+    },
+    {
+      "lang_word": "÷",
+      "core": "÷",
+      "core_form": "÷",
+      "lang_form": "÷"
+    },
+    {
+      "lang_word": "on",
+      "core": "=",
+      "core_form": "=",
+      "lang_form": "on"
+    }
+  ],
+  "cross_kind_share": 0.3,
+  "irregulars": [
+    "olen",
+    "olet",
+    "on",
+    "olemme",
+    "ovat"
+  ],
+  "probe": {
+    "words": [
+      "Tämä",
+      "Tässä",
+      "he",
+      "hän",
+      "kaksi",
+      "kertaa",
+      "kirja",
+      "me",
+      "miinus",
+      "minä",
+      "on",
+      "per",
+      "plus",
+      "sana",
+      "sinä",
+      "talo",
+      "te",
+      "yksi"
+    ],
+    "diacritics": "äöå"
+  }
+}

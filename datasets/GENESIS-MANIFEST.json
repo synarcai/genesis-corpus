@@ -215,7 +215,7 @@
     },
     {
       "name": "diakrisis_ru",
-      "file": "ozar/corpus/build/diakrisis_en.txt",
+      "file": "ozar/corpus/build/diakrisis_ru.txt",
       "genre": "Diakrisis: различение как операция (ru; имя файла обещает en и лжёт)",
       "size": 1810997,
       "tiers": [],
@@ -242,7 +242,7 @@
     },
     {
       "name": "mf_ru",
-      "file": "ozar/corpus/build/mf_en.txt",
+      "file": "ozar/corpus/build/mf_ru.txt",
       "genre": "математические основания (ru; имя файла обещает en и лжёт)",
       "size": 8073132,
       "tiers": [],
@@ -963,22 +963,126 @@
       ]
     },
     {
+      "name": "lang_fa",
+      "file": "datasets/genesis_lang_fa.txt",
+      "genre": "persian: the ARABIC SCRIPT on an INDO-EUROPEAN language — the probe that asks whether we tied a language to its writing; no dual, no arabic 3–10 agreement, four letters of its own (tier 1: structure green, forms agree with the pack's own rules)",
+      "size": 60000,
+      "tiers": [],
+      "text": "shows",
+      "script": "arabic",
+      "segmentation": "spaced",
+      "assemblies": [
+        "school"
+      ]
+    },
+    {
+      "name": "lang_he",
+      "file": "datasets/genesis_lang_he.txt",
+      "genre": "hebrew: written right to left and WITHOUT VOWELS in ordinary writing — the opposite pole of the abugida, where a vowel is a mark ON the consonant; a dual on some words and gender on the numerals (tier 1: structure green, forms agree with the pack's own rules)",
+      "size": 60000,
+      "tiers": [],
+      "text": "shows",
+      "script": "hebrew",
+      "segmentation": "spaced",
+      "assemblies": [
+        "school"
+      ]
+    },
+    {
+      "name": "lang_fi",
+      "file": "datasets/genesis_lang_fi.txt",
+      "genre": "finnish: FIFTEEN CASES said by ENDING, not by preposition, and CONSONANT GRADATION that changes the STEM (kukka → kukan) rather than the suffix (tier 1: structure green, forms agree with the pack's own rules)",
+      "size": 60000,
+      "tiers": [],
+      "text": "shows",
+      "script": "latin",
+      "segmentation": "spaced",
+      "assemblies": [
+        "school"
+      ]
+    },
+    {
+      "name": "lang_hu",
+      "file": "datasets/genesis_lang_hu.txt",
+      "genre": "hungarian: vowel harmony in three sets, possessive suffixes instead of possessive pronouns, and DEFINITE VS INDEFINITE CONJUGATION — the verb changes by the DEFINITENESS OF ITS OBJECT, which no other tongue of the corpus has (tier 1: structure green, forms agree with the pack's own rules)",
+      "size": 60000,
+      "tiers": [],
+      "text": "shows",
+      "script": "latin",
+      "segmentation": "spaced",
+      "assemblies": [
+        "school"
+      ]
+    },
+    {
+      "name": "lang_id",
+      "file": "datasets/genesis_lang_id.txt",
+      "genre": "indonesian: the SIMPLEST of them all, and that is its value — no tense, no gender, no case, no agreement at all; the plural is the word said TWICE (buku-buku). The probe on EMPTINESS: an engine that demands some agreement finds none here (tier 1: structure green, forms agree with the pack's own rules)",
+      "size": 60000,
+      "tiers": [],
+      "text": "shows",
+      "script": "latin",
+      "segmentation": "spaced",
+      "assemblies": [
+        "school"
+      ]
+    },
+    {
+      "name": "lang_ka",
+      "file": "datasets/genesis_lang_ka.txt",
+      "genre": "georgian: the corpus's fifth script (mkhedruli), WITH NO CAPITAL LETTERS AT ALL — a probe on every place we lower a case or compare one — and a verb carrying BOTH subject and object in one form (tier 1: structure green, forms agree with the pack's own rules)",
+      "size": 60000,
+      "tiers": [],
+      "text": "shows",
+      "script": "georgian",
+      "segmentation": "spaced",
+      "assemblies": [
+        "school"
+      ]
+    },
+    {
+      "name": "lang_am",
+      "file": "datasets/genesis_lang_am.txt",
+      "genre": "amharic: the sixth script, ethiopic, where a sign carries the consonant TOGETHER WITH its vowel — not a mark beside it but part of the sign itself, and there are some 270 of them (tier 1: structure green, forms agree with the pack's own rules)",
+      "size": 60000,
+      "tiers": [],
+      "text": "shows",
+      "script": "ethiopic",
+      "segmentation": "spaced",
+      "assemblies": [
+        "school"
+      ]
+    },
+    {
+      "name": "lang_ta",
+      "file": "datasets/genesis_lang_ta.txt",
+      "genre": "tamil: an abugida like hindi but with its OWN marks — the direct second test of the law that a combining mark is a letter by office; it passed with plain spaced cutting and NO change to the instrument. Also an INCLUSIVE and an EXCLUSIVE «we», a seventh person (tier 1: structure green, forms agree with the pack's own rules)",
+      "size": 60000,
+      "tiers": [],
+      "text": "shows",
+      "script": "tamil",
+      "segmentation": "spaced",
+      "assemblies": [
+        "school"
+      ]
+    },
+    {
       "name": "school",
       "file": "datasets/GENESIS-SCHOOL.txt",
       "genre": "the school assembly: every world that declares «school» in its `assemblies`, in manifest order — the ladder a learner walks before the whole corpus; a consequence of the manifest, not a decision of whoever assembles it",
-      "size": 5252217,
+      "size": 5885672,
       "tiers": [],
       "text": "mix",
-      "lines": 108974
+      "lines": 129964
     },
     {
       "name": "full",
       "file": "datasets/GENESIS-FULL.txt",
       "genre": "the full mix: every world of shows, in manifest order, welded by the same seam that welds passes inside a layer — a consequence of the manifest, not a decision of whoever assembles it",
-      "size": 7791960,
+      "size": 8425415,
       "tiers": [],
       "text": "mix",
-      "lines": 157612
+      "lines": 178602
     }
   ]
 }
