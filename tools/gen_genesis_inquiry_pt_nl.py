@@ -81,6 +81,8 @@ import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from layer import emit_grouped  # noqa: E402
+import universals  # noqa: E402
+import paraphrase  # noqa: E402
 
 ЦЕЛЬ = "datasets/genesis_inquiry_pt_nl.txt"
 
@@ -154,7 +156,13 @@ def исп_простота(шаг):
                        f"{n // д}.")
             вон.append(f"is {n} een priemgetal? nee: {n} = {д} × "
                        f"{n // д}.")
-    return вон
+    return paraphrase.перефразы(вон, ЯЗЫКИ_МИРА, ("prime", "divisible"))
+
+
+# A UNIVERSAL IS ASKED BY ITS OWN «IS IT TRUE THAT» (tools/universals.py):
+# the question of every counterexample and generalization is derived from
+# its statement by the one law of the house, in both languages of the world.
+ЯЗЫКИ_МИРА = ('pt', 'nl')
 
 
 def контр_простота(шаг):
@@ -168,7 +176,7 @@ def контр_простота(шаг):
                    f"é ímpar e {n} = {д} × {n // д}.")
         вон.append(f"alle oneven getallen zijn priemgetallen is "
                    f"onwaar: {n} is oneven en {n} = {д} × {n // д}.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 def общ_простота(шаг):
@@ -180,7 +188,7 @@ def общ_простота(шаг):
                    f"números primos: {n} = {ряд}.")
         вон.append(f"elk geheel getal groter dan 1 is een product van "
                    f"priemgetallen: {n} = {ряд}.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 # ----------------------------------------------------------- ДЕЛИМОСТЬ
@@ -224,7 +232,7 @@ def исп_делимость(шаг):
                        f"resto {r}.")
             вон.append(f"{a} is niet deelbaar door {b}: {a} = {b} × {q} + "
                        f"{r}, rest {r}.")
-    return вон
+    return paraphrase.перефразы(вон, ЯЗЫКИ_МИРА, ("prime", "divisible"))
 
 
 def контр_делимость(шаг):
@@ -238,7 +246,7 @@ def контр_делимость(шаг):
                    f"par e {n} = 4 × {q} + {r}.")
         вон.append(f"elk even getal is deelbaar door 4 is onwaar: {n} "
                    f"is even en {n} = 4 × {q} + {r}.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 def общ_делимость(шаг):
@@ -252,7 +260,7 @@ def общ_делимость(шаг):
         вон.append(f"een getal is deelbaar door 3 wanneer zijn "
                    f"cijfersom deelbaar is door 3: de cijfersom van "
                    f"{n} is {с}, en {с} = 3 × {с // 3}.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 # ------------------------------------------------------ СУММА НЕЧЁТНЫХ
@@ -288,7 +296,7 @@ def контр_нечётные(шаг):
         вон.append(f"de som van de eerste k oneven getallen is 2 × k "
                    f"is onwaar: bij k = {k} is de som {k * k}, en "
                    f"2 × {k} = {2 * k}.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 def общ_нечётные(шаг):
@@ -299,7 +307,7 @@ def общ_нечётные(шаг):
                    f"para k = {k} isso é {k} × {k} = {k * k}.")
         вон.append(f"de som van de eerste k oneven getallen is k × k: "
                    f"bij k = {k} is het {k} × {k} = {k * k}.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 # ------------------------------------------------------ УСЛОВНЫЙ ВЫВОД
@@ -344,7 +352,7 @@ def контр_условное(шаг):
                    f"par, e {e} + {m} = {s}, que é ímpar.")
         вон.append(f"als n even is, dan is n + {m} even is onwaar: "
                    f"{e} is even, en {e} + {m} = {s}, wat oneven is.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 def общ_условное(шаг):
@@ -359,7 +367,7 @@ def общ_условное(шаг):
         вон.append(f"als n even is, dan is n + m even precies wanneer "
                    f"m even is: {m} is even en {e} + {m} = {e + m}, "
                    f"wat even is.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 # ------------------------------------------------------- ИНЪЕКТИВНОСТЬ
@@ -400,7 +408,7 @@ def контр_инъекция(шаг):
                    f"leva {a} e {b} ambos a 0.")
         вон.append(f"elke functie is injectief is onwaar: "
                    f"f(x) = x × 0 stuurt {a} en {b} beide naar 0.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 def общ_инъекция(шаг):
@@ -413,7 +421,7 @@ def общ_инъекция(шаг):
         вон.append(f"f(x) = x × k is injectief precies wanneer k niet "
                    f"0 is: bij k = {k} geven de invoeren 1 en 2 de "
                    f"waarden {k} en {2 * k}.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 # ------------------------------------------------------------- КВАДРАТ
@@ -445,7 +453,7 @@ def контр_квадрат(шаг):
                    f"{n} × {n} = {n * n}, que é ímpar.")
         вон.append(f"elk kwadraat is even is onwaar: {n} is oneven en "
                    f"{n} × {n} = {n * n}, wat oneven is.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 def общ_квадрат(шаг):
@@ -459,7 +467,7 @@ def общ_квадрат(шаг):
                    f"{n} × {n} = {n * n}.")
         вон.append(f"het kwadraat van een {нид} getal is {нид}: "
                    f"{n} × {n} = {n * n}.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 # ---------------------------------------------------------------- РОДЫ

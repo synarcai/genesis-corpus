@@ -215,7 +215,7 @@
       "boundary": [
         "unnamed"
       ],
-      "size": 113355,
+      "size": 121892,
       "tiers": [],
       "text": "shows",
       "assemblies": [
@@ -1619,7 +1619,7 @@
       "boundary": [
         "unnamed"
       ],
-      "size": 399085,
+      "size": 400793,
       "tiers": [],
       "text": "shows",
       "assemblies": [
@@ -3357,6 +3357,7 @@
       "tiers": [],
       "text": "shows",
       "assemblies": [
+        "full",
         "school"
       ],
       "actors": [
@@ -6595,6 +6596,604 @@
       "held_out": "shelf/ru/vernadsky_essays_ru.holdout.txt",
       "судится": [],
       "автор": "Вернадский, Владимир Иванович"
+    },
+    {
+      "name": "europepmc_consciousness_articles",
+      "file": "shelf/en/europepmc_consciousness_articles.txt",
+      "genre": "Neuroscience of Consciousness, all articles but reviews, 2015–2021 — authors named at each article; Europe PMC (Oxford University Press journal) 2021 под CC BY",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 2910420,
+      "tiers": [],
+      "text": "prose",
+      "тема": "нейронаука",
+      "язык": "en",
+      "плотность": "статья",
+      "издано": 2021,
+      "источник": "free-license",
+      "происхождение": "europepmc:73 articles by query (LICENSE:\"cc by\") AND (OPEN_ACCESS:y) AND (HAS_FT:y) AND (JOURNAL:\"Neurosci Conscious\") AND (FIRST_PDATE:[2015-01-01 TO 2021-12-31]) AND NOT (PUB_TYPE:\"review\") (CC BY)",
+      "held_out": "shelf/en/europepmc_consciousness_articles.holdout.txt",
+      "судится": [],
+      "автор": "authors named at each article"
+    },
+    {
+      "name": "openstax_psychologia_pl",
+      "file": "shelf/pl/openstax_psychologia_pl.txt",
+      "genre": "Psychologia (polska adaptacja Psychology 2e) — OpenStax Poland; autor rozdziału: Joanna Czarnota-Bojarska; redaktorzy i autorzy uzupełnień: Ewa Czerniawska, Agata Kudlik, Dorota Karwowska, Agnieszka Małkowska-Szkutnik; original senior authors Rose M. Spielman, William J. Jenkins, Marilyn D. Lovett; OpenStax Poland 2020 под CC BY 4.0",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 1458039,
+      "tiers": [],
+      "text": "prose",
+      "тема": "психология",
+      "язык": "pl",
+      "плотность": "трактат",
+      "издано": 2020,
+      "источник": "free-license",
+      "происхождение": "openstax-archive:728df0bb-e07f-489d-91e3-4734a5932f92@0708931, https://openstax.org/details/books/psychologia-polska (CC BY 4.0)",
+      "held_out": "shelf/pl/openstax_psychologia_pl.holdout.txt",
+      "судится": [],
+      "автор": "OpenStax Poland; autor rozdziału: Joanna Czarnota-Bojarska; redaktorzy i autorzy uzupełnień: Ewa Czerniawska, Agata Kudlik, Dorota Karwowska, Agnieszka Małkowska-Szkutnik; original senior authors Rose M. Spielman, William J. Jenkins, Marilyn D. Lovett"
+    },
+    {
+      "name": "rebus_aesthetics",
+      "file": "shelf/en/rebus_aesthetics.txt",
+      "genre": "Introduction to Philosophy: Aesthetic Theory and Practice — Alexander Westenberg, Andrew Broadey, Christina Hendricks (Series Editor), Elizabeth Burns Coleman, Elizabeth Scarbrough, Ines Kleesattel, Matteo Ravasio, Matthew Sharpe, Pierre Fasula, Richard Hudson-Miles, Ruth Sonderegger, Valery Vino (Book Editor), Xiao Ouyang, Yuriko Saito; ed. Valery Vino (Book Editor), Christina Hendricks (Series Editor); Rebus Community 2021 под CC BY 4.0",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 441546,
+      "tiers": [],
+      "text": "prose",
+      "тема": "философия",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 2021,
+      "источник": "free-license",
+      "происхождение": "pressbooks:https://press.rebus.community/intro-to-phil-aesthetics (CC BY 4.0)",
+      "held_out": "shelf/en/rebus_aesthetics.holdout.txt",
+      "судится": [],
+      "автор": "Alexander Westenberg, Andrew Broadey, Christina Hendricks (Series Editor), Elizabeth Burns Coleman, Elizabeth Scarbrough, Ines Kleesattel, Matteo Ravasio, Matthew Sharpe, Pierre Fasula, Richard Hudson-Miles, Ruth Sonderegger, Valery Vino (Book Editor), Xiao Ouyang, Yuriko Saito; ed. Valery Vino (Book Editor), Christina Hendricks (Series Editor)"
+    },
+    {
+      "name": "rebus_ethics",
+      "file": "shelf/en/rebus_ethics.txt",
+      "genre": "Introduction to Philosophy: Ethics — Christina Hendricks (Series Editor), Douglas Giles, Frank Aragbonfoh Abumere, George Matthews (Book Editor), Jeffrey Morgan, Joseph Kranak, Kathryn MacKay, Michael Klenk, Paul Rezkalla, Ya-Yun (Sherry) Kao; ed. George Matthews, Christina Hendricks; Rebus Community 2019 под CC BY 4.0",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 219137,
+      "tiers": [],
+      "text": "prose",
+      "тема": "философия",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 2019,
+      "источник": "free-license",
+      "происхождение": "pressbooks:https://press.rebus.community/intro-to-phil-ethics (CC BY 4.0)",
+      "held_out": "shelf/en/rebus_ethics.holdout.txt",
+      "судится": [],
+      "автор": "Christina Hendricks (Series Editor), Douglas Giles, Frank Aragbonfoh Abumere, George Matthews (Book Editor), Jeffrey Morgan, Joseph Kranak, Kathryn MacKay, Michael Klenk, Paul Rezkalla, Ya-Yun (Sherry) Kao; ed. George Matthews, Christina Hendricks"
+    },
+    {
+      "name": "rebus_logic",
+      "file": "shelf/en/rebus_logic.txt",
+      "genre": "Introduction to Philosophy: Logic — Bahram Assadian, Benjamin Martin (Book Editor), Cassiano Terra Rodrigues, Christina Hendricks (Series Editor), Matthew Knachel, Michael Shaffer, Nathan Smith; ed. Benjamin Martin, Christina Hendricks; Rebus Community 2020 под CC BY 4.0",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 106433,
+      "tiers": [],
+      "text": "prose",
+      "тема": "логика",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 2020,
+      "источник": "free-license",
+      "происхождение": "pressbooks:https://press.rebus.community/intro-to-phil-logic (CC BY 4.0)",
+      "held_out": "shelf/en/rebus_logic.holdout.txt",
+      "судится": [],
+      "автор": "Bahram Assadian, Benjamin Martin (Book Editor), Cassiano Terra Rodrigues, Christina Hendricks (Series Editor), Matthew Knachel, Michael Shaffer, Nathan Smith; ed. Benjamin Martin, Christina Hendricks"
+    },
+    {
+      "name": "rebus_philosophy_of_religion",
+      "file": "shelf/en/rebus_philosophy_of_religion.txt",
+      "genre": "Introduction to Philosophy: Philosophy of Religion — Beau Branson, Beau Branson (Book Editor), Christina Hendricks (Series Editor), Hans Van Eyghen, Marcus William Hunt, Robert Sloan Lee, Steven Steyl, Timothy D. Knepper; ed. Beau Branson, Christina Hendricks; Rebus Community 2020 под CC BY 4.0",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 172122,
+      "tiers": [],
+      "text": "prose",
+      "тема": "философия",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 2020,
+      "источник": "free-license",
+      "происхождение": "pressbooks:https://press.rebus.community/intro-to-phil-of-religion (CC BY 4.0)",
+      "held_out": "shelf/en/rebus_philosophy_of_religion.holdout.txt",
+      "судится": [],
+      "автор": "Beau Branson, Beau Branson (Book Editor), Christina Hendricks (Series Editor), Hans Van Eyghen, Marcus William Hunt, Robert Sloan Lee, Steven Steyl, Timothy D. Knepper; ed. Beau Branson, Christina Hendricks"
+    },
+    {
+      "name": "fedorov_essays_ru",
+      "file": "shelf/ru/fedorov_essays_ru.txt",
+      "genre": "Статьи из «Философии общего дела» (1880-е — 1903): «Что такое добро?», «Аксиомы Канта», «Агатодицея Соловьёва и теодицея Лейбница», «В чем заключается всеобщий категорический императив?», «В чем свобода?», «Возможно ли братство?», «Где начало истории?», «Два исторических типа мировоззрений», «К вопросу о двух разумах», «Живое и мертвенное восприятие истории» — Фёдоров, Николай Фёдорович; lib.ru/Классика",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 71301,
+      "tiers": [],
+      "text": "prose",
+      "тема": "философия",
+      "язык": "ru",
+      "плотность": "трактат",
+      "издано": 1906,
+      "источник": "public-domain",
+      "происхождение": "lib.ru:f/fedorow_n_f/text_0010+text_0050+text_0080+text_0110+text_0120+text_0150+text_0170+text_0180+text_0195+text_0230",
+      "held_out": "shelf/ru/fedorov_essays_ru.holdout.txt",
+      "судится": [],
+      "автор": "Фёдоров, Николай Фёдорович"
+    },
+    {
+      "name": "timiryazev_essays_ru",
+      "file": "shelf/ru/timiryazev_essays_ru.txt",
+      "genre": "«Опровергнут ли дарвинизм?», «Бессильная злоба антидарвиниста», «Факторы органической эволюции», «Петербург и Москва» (1887–1918) — Тимирязев, Климент Аркадьевич; lib.ru/Классика",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 744485,
+      "tiers": [],
+      "text": "prose",
+      "тема": "естествознание",
+      "язык": "ru",
+      "плотность": "статья",
+      "издано": 1918,
+      "источник": "public-domain",
+      "происхождение": "lib.ru:t/timirjazew_k_a/text_1887_oprovergnut_li_darvinist+text_1889_bessilnaya_zloba+text_1890_faktory_evolutzii+text_1918_peterburg_i_moskva",
+      "held_out": "shelf/ru/timiryazev_essays_ru.holdout.txt",
+      "судится": [],
+      "автор": "Тимирязев, Климент Аркадьевич"
+    },
+    {
+      "name": "rozanov_understanding_ru",
+      "file": "shelf/ru/rozanov_understanding_ru.txt",
+      "genre": "«О понимании. Опыт исследования природы, границ и внутреннего строения науки как цельного знания» (1886), «Философские влияния в русском обществе» (1890), «Две философии» (1897) — Розанов, Василий Васильевич; lib.ru/Классика",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 2535247,
+      "tiers": [],
+      "text": "prose",
+      "тема": "философия познания",
+      "язык": "ru",
+      "плотность": "трактат",
+      "издано": 1897,
+      "источник": "public-domain",
+      "происхождение": "lib.ru:r/rozanow_w_w/text_1886_o_ponimanii+text_1890_vliyaniya+text_1897_dve_filosofii",
+      "held_out": "shelf/ru/rozanov_understanding_ru.holdout.txt",
+      "судится": [],
+      "автор": "Розанов, Василий Васильевич"
+    },
+    {
+      "name": "berdyaev_subjectivism_ru",
+      "file": "shelf/ru/berdyaev_subjectivism_ru.txt",
+      "genre": "«Субъективизм и индивидуализм в общественной философии. Критический этюд о Н. К. Михайловском» (1901) — Бердяев, Николай Александрович; lib.ru/Классика",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 1261247,
+      "tiers": [],
+      "text": "prose",
+      "тема": "философия",
+      "язык": "ru",
+      "плотность": "трактат",
+      "издано": 1901,
+      "источник": "public-domain",
+      "происхождение": "lib.ru:b/berdjaew_n_a/text_1901_subektivizm",
+      "held_out": "shelf/ru/berdyaev_subjectivism_ru.holdout.txt",
+      "судится": [],
+      "автор": "Бердяев, Николай Александрович"
+    },
+    {
+      "name": "gutenberg_bernard_medecine_experimentale",
+      "file": "shelf/fr/bernard_medecine_experimentale.txt",
+      "genre": "Introduction à l'étude de la médecine expérimentale — Claude Bernard; издание 1865",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "научный метод",
+      "язык": "fr",
+      "плотность": "трактат",
+      "издано": 1865,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:16234",
+      "held_out": "shelf/fr/bernard_medecine_experimentale.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_cajal_reglas_investigacion",
+      "file": "shelf/es/cajal_reglas_investigacion.txt",
+      "genre": "Reglas y consejos sobre investigación científica — Santiago Ramón y Cajal; издание 1912",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "научный метод",
+      "язык": "es",
+      "плотность": "трактат",
+      "издано": 1897,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:66373",
+      "held_out": "shelf/es/cajal_reglas_investigacion.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_comte_philosophie_positive_1",
+      "file": "shelf/fr/comte_philosophie_positive_1.txt",
+      "genre": "Cours de philosophie positive, tome 1 — Auguste Comte; издание 1830",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "научный метод",
+      "язык": "fr",
+      "плотность": "трактат",
+      "издано": 1830,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:31881",
+      "held_out": "shelf/fr/comte_philosophie_positive_1.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_freud_traumdeutung",
+      "file": "shelf/de/freud_traumdeutung.txt",
+      "genre": "Die Traumdeutung — Sigmund Freud; издание 1900",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "психология",
+      "язык": "de",
+      "плотность": "трактат",
+      "издано": 1899,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:40739",
+      "held_out": "shelf/de/freud_traumdeutung.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_lavoisier_traite_chimie_1",
+      "file": "shelf/fr/lavoisier_traite_chimie_1.txt",
+      "genre": "Traité élémentaire de chimie, tome 1 — Antoine Laurent Lavoisier; издание 1789",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "естествознание",
+      "язык": "fr",
+      "плотность": "трактат",
+      "издано": 1789,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:52487",
+      "held_out": "shelf/fr/lavoisier_traite_chimie_1.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "herzen_dilettantism_ru",
+      "file": "shelf/ru/herzen_dilettantism_ru.txt",
+      "genre": "«Дилетантизм в науке» (1843), четыре статьи — очерк, мера речью — Герцен, Александр Иванович; lib.ru/Классика",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 265538,
+      "tiers": [],
+      "text": "prose",
+      "тема": "философия познания",
+      "язык": "ru",
+      "плотность": "изложение",
+      "издано": 1843,
+      "источник": "public-domain",
+      "происхождение": "lib.ru:g/gercen_a_i/text_0174",
+      "held_out": "shelf/ru/herzen_dilettantism_ru.holdout.txt",
+      "судится": [],
+      "автор": "Герцен, Александр Иванович"
+    },
+    {
+      "name": "gutenberg_augustinus_confessiones",
+      "file": "shelf/la/augustinus_confessiones.txt",
+      "genre": "Confessiones — Aurelius Augustinus; издание 400",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "философия",
+      "язык": "la",
+      "плотность": "трактат",
+      "издано": 400,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:33849",
+      "held_out": "shelf/la/augustinus_confessiones.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_camoes_lusiadas",
+      "file": "shelf/pt/camoes_lusiadas.txt",
+      "genre": "Os Lusíadas — Luís de Camões; издание 1572",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "pt",
+      "плотность": "стих",
+      "издано": 1572,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:3333",
+      "held_out": "shelf/pt/camoes_lusiadas.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_cicero_de_officiis",
+      "file": "shelf/la/cicero_de_officiis.txt",
+      "genre": "De Officiis — Marcus Tullius Cicero; издание -44",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "философия",
+      "язык": "la",
+      "плотность": "трактат",
+      "издано": -44,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:47001",
+      "held_out": "shelf/la/cicero_de_officiis.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_couperus_eline_vere",
+      "file": "shelf/nl/couperus_eline_vere.txt",
+      "genre": "Eline Vere: een Haagsche roman — Louis Couperus; издание 1889",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "nl",
+      "плотность": "повесть",
+      "издано": 1889,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:19563",
+      "held_out": "shelf/nl/couperus_eline_vere.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_dante_commedia",
+      "file": "shelf/it/dante_commedia.txt",
+      "genre": "La Divina Commedia — Dante Alighieri; издание 1321",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "it",
+      "плотность": "стих",
+      "издано": 1320,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:1000",
+      "held_out": "shelf/it/dante_commedia.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_descartes_meditationes",
+      "file": "shelf/la/descartes_meditationes.txt",
+      "genre": "Meditationes de prima philosophia — René Descartes; издание 1641",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "философия познания",
+      "язык": "la",
+      "плотность": "трактат",
+      "издано": 1641,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:23306",
+      "held_out": "shelf/la/descartes_meditationes.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_eca_maias",
+      "file": "shelf/pt/eca_maias.txt",
+      "genre": "Os Maias: episódios da vida romântica — Eça de Queirós; издание 1888",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "pt",
+      "плотность": "повесть",
+      "издано": 1888,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:40409",
+      "held_out": "shelf/pt/eca_maias.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_kalevala_fi",
+      "file": "shelf/fi/kalevala_fi.txt",
+      "genre": "Kalevala — Elias Lönnrot (собиратель); издание 1849",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "fi",
+      "плотность": "стих",
+      "издано": 1849,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:7000",
+      "held_out": "shelf/fi/kalevala_fi.holdout.txt",
+      "судится": []
     }
   ]
 }

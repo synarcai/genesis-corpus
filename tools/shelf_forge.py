@@ -399,6 +399,25 @@ class Книга:
     Книга(9186, "lessing_nathan", "словесность", "стих", 1779, 1779, "Nathan der Weise", "Gotthold Ephraim Lessing", язык="de"),
     Книга(47804, "schiller_raeuber", "словесность", "повесть", 1781, 1781, "Die Räuber", "Friedrich Schiller", язык="de"),
     Книга(13846, "descartes_discours", "философия познания", "трактат", 1637, 1637, "Discours de la méthode", "René Descartes", язык="fr"),
+    # НАУЧНЫЙ МЕТОД В ПОДЛИННИКЕ (03.09, слово владельца: все языки с избытком):
+    # Бернар — экспериментальный метод, Конт — позитивная философия наук
+    # (том 1: математика и метод), Кахаль — правила исследования.
+    Книга(16234, "bernard_medecine_experimentale", "научный метод", "трактат", 1865, 1865, "Introduction à l'étude de la médecine expérimentale", "Claude Bernard", язык="fr"),
+    Книга(31881, "comte_philosophie_positive_1", "научный метод", "трактат", 1830, 1830, "Cours de philosophie positive, tome 1", "Auguste Comte", язык="fr"),
+    Книга(66373, "cajal_reglas_investigacion", "научный метод", "трактат", 1897, 1912, "Reglas y consejos sobre investigación científica", "Santiago Ramón y Cajal", язык="es"),
+    Книга(52487, "lavoisier_traite_chimie_1", "естествознание", "трактат", 1789, 1789, "Traité élémentaire de chimie, tome 1", "Antoine Laurent Lavoisier", язык="fr"),
+    Книга(40739, "freud_traumdeutung", "психология", "трактат", 1899, 1900, "Die Traumdeutung", "Sigmund Freud", язык="de"),
+    # ЯЗЫКИ С ОДНОЙ КНИГОЙ ПОЛУЧАЮТ ВТОРУЮ И ТРЕТЬЮ (03.09, слово владельца:
+    # все языки с избытком): итальянский, португальский, нидерландский,
+    # финский, латынь — словесность и философия в подлиннике.
+    Книга(1000, "dante_commedia", "словесность", "стих", 1320, 1321, "La Divina Commedia", "Dante Alighieri", язык="it"),
+    Книга(3333, "camoes_lusiadas", "словесность", "стих", 1572, 1572, "Os Lusíadas", "Luís de Camões", язык="pt"),
+    Книга(40409, "eca_maias", "словесность", "повесть", 1888, 1888, "Os Maias: episódios da vida romântica", "Eça de Queirós", язык="pt"),
+    Книга(19563, "couperus_eline_vere", "словесность", "повесть", 1889, 1889, "Eline Vere: een Haagsche roman", "Louis Couperus", язык="nl"),
+    Книга(7000, "kalevala_fi", "словесность", "стих", 1849, 1849, "Kalevala", "Elias Lönnrot (собиратель)", язык="fi"),
+    Книга(47001, "cicero_de_officiis", "философия", "трактат", -44, -44, "De Officiis", "Marcus Tullius Cicero", язык="la"),
+    Книга(33849, "augustinus_confessiones", "философия", "трактат", 400, 400, "Confessiones", "Aurelius Augustinus", язык="la"),
+    Книга(23306, "descartes_meditationes", "философия познания", "трактат", 1641, 1641, "Meditationes de prima philosophia", "René Descartes", язык="la"),
     Книга(4650, "voltaire_candide", "словесность", "повесть", 1759, 1759, "Candide, ou l'optimisme", "Voltaire", язык="fr"),
     Книга(48529, "montaigne_essais_1", "философия", "исследование", 1580, 1580, "Essais, volume I", "Michel de Montaigne", язык="fr"),
     Книга(17489, "hugo_miserables_1", "словесность", "повесть", 1862, 1862, "Les misérables, tome I: Fantine", "Victor Hugo", язык="fr"),
@@ -577,8 +596,14 @@ def ширина(строки):
     return порядок[-1]
 
 
-def абзацы(строки, ш):
-    """Строки источника — в абзацы, по правилу переноса, обращённому."""
+def абзацы(строки, ш, стих=False):
+    """Строки источника — в абзацы, по правилу переноса, обращённому.
+
+    СТИХ НЕ ПЕРЕНОСИТСЯ: строка стиха коротка по замыслу, а не по ширине
+    набора (Калевала 03.09: правило переноса сложило руны в абзацы по 500
+    слов, и мера стиха дала 12 %) — у книги, объявленной стихом, строка
+    источника остаётся строкой.
+    """
     вон, блок = [], []
     for сырая in строки + [""]:
         с = сырая.rstrip()
@@ -588,6 +613,8 @@ def абзацы(строки, ш):
                 блок = []
             continue
         блок.append(с)
+    if стих:
+        return [[с.strip() for с in блок if с.strip()] for блок in вон if блок]
     сложенное = []
     for блок in вон:
         куски, текущий = [], блок[0]
@@ -617,7 +644,7 @@ def знаки_наклона(текст):
     return вон
 
 
-def очистить(сырое):
+def очистить(сырое, стих=False):
     """(абзацы, ширина, снято служебных строк) — книга без служебного.
 
     СНЯТОЕ СЧИТАЕТСЯ ВСЛУХ. Удаление по признаку — единственное место,
@@ -630,7 +657,7 @@ def очистить(сырое):
     было = len([с for с in строки if с.strip()])
     строки = без_благодарности(строки, ш_шапка.get("Credits", ""))
     ш = ширина(строки)
-    блоки = абзацы(строки, ш)
+    блоки = абзацы(строки, ш, стих)
     блоки = [[с for с in б if not ИМЯ_ИСТОЧНИКА.search(с)] for б in блоки]
     блоки = [б for б in блоки if б]
     снято = было - len([с for с in строки if с.strip()])
@@ -816,7 +843,7 @@ def main():
     for книга in книги:
         try:
             сырое, свежее = добыть(книга, кэш)
-            блоки, ш, снято = очистить(сырое)
+            блоки, ш, снято = очистить(сырое, стих=(книга.плотность == "стих"))
         except (OSError, ValueError) as беда:
             print(f"  ОТКАЗ {книга.имя}: {беда}")
             continue

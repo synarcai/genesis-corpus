@@ -57,6 +57,8 @@ import sys
 sys.path.insert(0, str(КОРЕНЬ / "scripts"))
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
 from genesis import Unreadable, worlds  # noqa: E402
+import universals  # noqa: E402
+import paraphrase  # noqa: E402
 
 # РУБЕЖ-ДОЛГА: ЛОЖНЫХ_РУБЕЖ = 0
 ЛОЖНЫХ_РУБЕЖ = 0
@@ -365,7 +367,13 @@ def _общ_квадрат(м):
     (r"^het kwadraat van een (even|oneven) getal is (even|oneven): "
      rf"{Ч} × {Ч} = {Ч}\.$", _общ_квадрат),
 )
-ПРАВИЛА = tuple((re.compile(о), п) for о, п in ОБРАЗЦЫ)
+# УНИВЕРСАЛИЯ СПРАШИВАЕТСЯ СВОИМ «ВЕРНО ЛИ, ЧТО» (tools/universals.py): образец
+# контрпримера или обобщения сварен с выведенным из него вопросом в ОДНО
+# семейство (М-146); остальные образцы — как есть.
+ЯЗЫКИ_МИРА = ('pt', 'nl')
+# ПЕРЕФРАЗА — ФОРМА ПАКЕТА (tools/paraphrase.py, Т-4): образцы других форм
+# простоты и делимости выведены из образцов первой формы с теми же судьями.
+ПРАВИЛА = universals.правила(list(ОБРАЗЦЫ) + paraphrase.образцы(ОБРАЗЦЫ, ЯЗЫКИ_МИРА, ("prime", "divisible")), ЯЗЫКИ_МИРА)
 
 
 def судить(строка):

@@ -39,6 +39,7 @@ sys.path.insert(0, str(ЗДЕСЬ))
 from gsm_items import PACKAGEABLE  # noqa: E402
 from langpack import count_form_index  # noqa: E402
 from layer import emit  # noqa: E402
+import mass  # noqa: E402
 
 RU_PACK = json.loads((ЗДЕСЬ / "langpacks/ru.json").read_text(encoding="utf-8"))
 RU_RULE = {"forms": ["one", "few", "many"],
@@ -69,8 +70,11 @@ NAMES = ["ida", "omar", "pia", "rosa", "sven", "tara", "umar", "vera"]
     ("марка", ("марка", "марки", "марок"), "марок"),
 ]
 ИМЕНА_RU = ["иды", "омара", "пии", "розы", "свена", "тары"]
-ЧАСТИ = [(50, 20), (30, 10), (24, 12), (40, 20), (18, 6),
-         (45, 15), (28, 8), (60, 20), (35, 25), (16, 8)]
+# МАССА ОТ ПРАВИЛА (tools/mass.py, М-148): части — из двух взаимно простых
+# циклов шагом k, различных показов на рамку до 77 (было 10).
+БОЛЬШИЕ = [50, 30, 24, 40, 18, 45, 28, 60, 35, 16, 21]
+МАЛЫЕ = [20, 10, 12, 6, 8, 25, 15]
+ШИРИНА = 10
 
 
 def ру(формы, k):
@@ -79,13 +83,14 @@ def ру(формы, k):
 
 def pass_shows(pass_i):
     out = []
-    for i in range(10):
-        a, b = ЧАСТИ[(pass_i + i) % len(ЧАСТИ)]
-        зн, доля_en, доля_ru = ДОЛИ[(pass_i * 3 + i) % len(ДОЛИ)]
-        ушёл, остался, только = УБЫЛЬ[(pass_i * 5 + i) % len(УБЫЛЬ)]
-        кто = NAMES[(pass_i + i * 3) % len(NAMES)]
+    for i in range(ШИРИНА):
+        k0 = mass.шаг(pass_i, i, ШИРИНА)
+        a, b = mass.пара(k0, БОЛЬШИЕ, МАЛЫЕ)
+        зн, доля_en, доля_ru = ДОЛИ[k0 % len(ДОЛИ)]
+        ушёл, остался, только = УБЫЛЬ[k0 % len(УБЫЛЬ)]
+        кто = NAMES[k0 % len(NAMES)]
         пул = list(только) if только else ТОВАРЫ
-        вещь = пул[(pass_i * 7 + i) % len(пул)]
+        вещь = пул[k0 % len(пул)]
         всего = (a + b) - (a + b) % зн
         b = всего - a
         if всего <= зн or b <= 0:

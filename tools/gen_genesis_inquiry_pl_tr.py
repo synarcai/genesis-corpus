@@ -64,6 +64,8 @@ import sys
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
 from layer import emit_grouped  # noqa: E402
+import universals  # noqa: E402
+import paraphrase  # noqa: E402
 
 ЦЕЛЬ = "datasets/genesis_inquiry_pl_tr.txt"
 
@@ -217,7 +219,13 @@ def исп_простота(шаг):
                        f"× {n // д}.")
             вон.append(f"{n} asal sayı {для_имени}? hayır: {n} = {д} × "
                        f"{n // д}.")
-    return вон
+    return paraphrase.перефразы(вон, ЯЗЫКИ_МИРА, ("prime", "divisible"))
+
+
+# A UNIVERSAL IS ASKED BY ITS OWN «IS IT TRUE THAT» (tools/universals.py):
+# the question of every counterexample and generalization is derived from
+# its statement by the one law of the house, in both languages of the world.
+ЯЗЫКИ_МИРА = ('pl', 'tr')
 
 
 def контр_простота(шаг):
@@ -235,7 +243,7 @@ def контр_простота(шаг):
                    f"{n // д}.")
         вон.append(f"tüm tek sayılar asaldır demek yanlıştır: {n} "
                    f"tektir ve {n} = {д} × {n // д}.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 def общ_простота(шаг):
@@ -247,7 +255,7 @@ def общ_простота(шаг):
                    f"iloczynem liczb pierwszych: {n} = {ряд}.")
         вон.append(f"1'den büyük her tam sayı asal sayıların "
                    f"çarpımıdır: {n} = {ряд}.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 # --------------------------------------------------------- ДЕЛИМОСТЬ
@@ -304,7 +312,7 @@ def исп_делимость(шаг):
                        f"{основание}.")
             вон.append(f"{a} sayısı {дат} tam bölünüyor {длительное}? "
                        f"hayır: {основание}.")
-    return вон
+    return paraphrase.перефразы(вон, ЯЗЫКИ_МИРА, ("prime", "divisible"))
 
 
 def контр_делимость(шаг):
@@ -321,7 +329,7 @@ def контр_делимость(шаг):
                    f"fałsz: {n} jest parzyste i {n} = 4 × {q} + {r}.")
         вон.append(f"tüm çift sayılar {дательный(4)} bölünür demek "
                    f"yanlıştır: {n} çifttir ve {n} = 4 × {q} + {r}.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 def общ_делимость(шаг):
@@ -335,7 +343,7 @@ def общ_делимость(шаг):
         вон.append(f"bir sayı, rakamları toplamı {дательный(3)} "
                    f"bölünüyorsa {дательный(3)} bölünür: {n} sayısında "
                    f"rakamlar toplamı {с} olur ve {с} = 3 × {с // 3}.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 # ---------------------------------------------------- СУММА НЕЧЁТНЫХ
@@ -381,7 +389,7 @@ def контр_нечётные(шаг):
         вон.append(f"ilk k tek sayının toplamı 2 × k demek yanlıştır: "
                    f"k = {k} için toplam {k * k} ve 2 × {k} = "
                    f"{2 * k}.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 def общ_нечётные(шаг):
@@ -392,7 +400,7 @@ def общ_нечётные(шаг):
                    f"k × k: dla k = {k} jest to {k} × {k} = {k * k}.")
         вон.append(f"ilk k tek sayının toplamı k × k olur: k = {k} "
                    f"için {k} × {k} = {k * k}.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 # --------------------------------------------------- УСЛОВНЫЙ ВЫВОД
@@ -440,7 +448,7 @@ def контр_условное(шаг):
                    f"jest nieparzyste.")
         вон.append(f"n çift ise n + {m} çifttir demek yanlıştır: {e} "
                    f"çifttir ve {e} + {m} = {s}, bu da tektir.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 def общ_условное(шаг):
@@ -455,7 +463,7 @@ def общ_условное(шаг):
         вон.append(f"n çift ise n + m çifttir ancak ve ancak m "
                    f"çifttir: {m} çifttir ve {e} + {m} = {s}, bu da "
                    f"çifttir.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 # ---------------------------------------------------- ИНЪЕКТИВНОСТЬ
@@ -499,7 +507,7 @@ def контр_инъекция(шаг):
                    f"f(x) = x × 0 prowadzi {a} i {b} do 0.")
         вон.append(f"tüm fonksiyonlar birebirdir demek yanlıştır: "
                    f"f(x) = x × 0 hem {a} hem {b} sayısını 0 yapar.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 def общ_инъекция(шаг):
@@ -512,7 +520,7 @@ def общ_инъекция(шаг):
         вон.append(f"f(x) = x × k birebirdir ancak ve ancak k 0 "
                    f"değildir: k = {k} için 1 ve 2 girdileri {k} ve "
                    f"{2 * k} verir.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 # ----------------------------------------------------------- КВАДРАТ
@@ -546,7 +554,7 @@ def контр_квадрат(шаг):
                    f"nieparzyste.")
         вон.append(f"tüm kareler çifttir demek yanlıştır: {n} tektir "
                    f"ve {n} × {n} = {n * n}, bu da tektir.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 def общ_квадрат(шаг):
@@ -560,7 +568,7 @@ def общ_квадрат(шаг):
         вон.append(f"kwadrat liczby {pl_род} jest {pl_сказ}: {n} × {n} "
                    f"= {n * n}.")
         вон.append(f"{tr} sayının karesi {tr}tir: {n} × {n} = {n * n}.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 # -------------------------------------------------------------- РОДЫ

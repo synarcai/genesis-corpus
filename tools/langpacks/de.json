@@ -961,5 +961,16 @@
     ],
     "position": "front"
   },
-  "ask_words_comment": "question words and their POSITION in the sentence (front/end) — derived from this pack's own layer and checkable by the same measure (М-137: the pack, not the pair-house, declares them)"
+  "ask_words_comment": "question words and their POSITION in the sentence (front/end) — derived from this pack's own layer and checkable by the same measure (М-137: the pack, not the pair-house, declares them)",
+  "ask_forms": {
+    "prime": [
+      "ist {} eine Primzahl?",
+      "ist {} nur durch 1 und sich selbst teilbar?"
+    ],
+    "divisible": [
+      "ist {} durch {} teilbar?",
+      "ist {} ein Vielfaches von {}?"
+    ]
+  },
+  "ask_forms_comment": "second declared question form of each genus (Т-4 of the expressiveness college, 03.09): a paraphrase is a form of the pack, never a synonym list of a generator; every form carries the whole pair; the opening word is a declared question word (courts/script_court.py reads it)"
 }

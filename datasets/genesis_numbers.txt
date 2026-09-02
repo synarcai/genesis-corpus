@@ -1,114 +1,170 @@
-3 простое; его делители — 1 и 3.
-is 5 prime? 5 is prime; its divisors are 1 and 5.
-простое ли 7? 7 простое; его делители — 1 и 7.
-10 is not prime; 10 = 2 × 5.
-12 составное; 12 = 2 × 6.
-is 14 prime? 14 is not prime; 14 = 2 × 7.
-простое ли 16? 16 составное; 16 = 2 × 8.
-19 is prime; its divisors are 1 and 19.
-21 составное; 21 = 3 × 7.
-is 23 prime? 23 is prime; its divisors are 1 and 23.
-простое ли 25? 25 составное; 25 = 5 × 5.
-28 is not prime; 28 = 2 × 14.
-2 простое; его делители — 1 и 2.
-is 4 prime? 4 is not prime; 4 = 2 × 2.
-простое ли 6? 6 составное; 6 = 2 × 3.
-9 is not prime; 9 = 3 × 3.
-11 простое; его делители — 1 и 11.
-is 13 prime? 13 is prime; its divisors are 1 and 13.
-простое ли 15? 15 составное; 15 = 3 × 5.
-18 is not prime; 18 = 2 × 9.
-20 составное; 20 = 2 × 10.
-is 22 prime? 22 is not prime; 22 = 2 × 11.
-простое ли 24? 24 составное; 24 = 2 × 12.
-27 is not prime; 27 = 3 × 9.
-29 простое; его делители — 1 и 29.
-is 3 prime? 3 is prime; its divisors are 1 and 3.
-простое ли 5? 5 простое; его делители — 1 и 5.
-8 is not prime; 8 = 2 × 4.
+простое ли число 2? да: 2 простое; его делители — 1 и 2.
+является ли 4 простым числом? нет: 4 составное; 4 = 2 × 2.
+does 6 have exactly two divisors? no: 6 is not prime; 6 = 2 × 3.
+is 8 a prime number? no: 8 is not prime; 8 = 2 × 4.
 10 составное; 10 = 2 × 5.
-is 12 prime? 12 is not prime; 12 = 2 × 6.
-простое ли 14? 14 составное; 14 = 2 × 7.
-17 is prime; its divisors are 1 and 17.
-19 простое; его делители — 1 и 19.
-is 21 prime? 21 is not prime; 21 = 3 × 7.
-простое ли 23? 23 простое; его делители — 1 и 23.
-26 is not prime; 26 = 2 × 13.
-28 составное; 28 = 2 × 14.
-is 2 prime? 2 is prime; its divisors are 1 and 2.
-простое ли 4? 4 составное; 4 = 2 × 2.
-7 is prime; its divisors are 1 and 7.
-9 составное; 9 = 3 × 3.
-is 11 prime? 11 is prime; its divisors are 1 and 11.
-простое ли 13? 13 простое; его делители — 1 и 13.
-16 is not prime; 16 = 2 × 8.
-18 составное; 18 = 2 × 9.
-is 20 prime? 20 is not prime; 20 = 2 × 10.
-простое ли 22? 22 составное; 22 = 2 × 11.
-25 is not prime; 25 = 5 × 5.
-27 составное; 27 = 3 × 9.
-is 29 prime? 29 is prime; its divisors are 1 and 29.
-простое ли 3? 3 простое; его делители — 1 и 3.
-6 is not prime; 6 = 2 × 3.
-8 составное; 8 = 2 × 4.
-is 10 prime? 10 is not prime; 10 = 2 × 5.
-простое ли 12? 12 составное; 12 = 2 × 6.
-15 is not prime; 15 = 3 × 5.
-17 простое; его делители — 1 и 17.
-is 19 prime? 19 is prime; its divisors are 1 and 19.
-простое ли 21? 21 составное; 21 = 3 × 7.
-24 is not prime; 24 = 2 × 12.
-26 составное; 26 = 2 × 13.
-is 28 prime? 28 is not prime; 28 = 2 × 14.
-простое ли 2? 2 простое; его делители — 1 и 2.
-5 is prime; its divisors are 1 and 5.
-7 простое; его делители — 1 и 7.
-is 9 prime? 9 is not prime; 9 = 3 × 3.
-простое ли 11? 11 простое; его делители — 1 и 11.
-14 is not prime; 14 = 2 × 7.
-16 составное; 16 = 2 × 8.
-is 18 prime? 18 is not prime; 18 = 2 × 9.
-простое ли 20? 20 составное; 20 = 2 × 10.
-23 is prime; its divisors are 1 and 23.
-25 составное; 25 = 5 × 5.
-is 27 prime? 27 is not prime; 27 = 3 × 9.
-простое ли 29? 29 простое; его делители — 1 и 29.
-4 is not prime; 4 = 2 × 2.
-6 составное; 6 = 2 × 3.
-is 8 prime? 8 is not prime; 8 = 2 × 4.
-простое ли 10? 10 составное; 10 = 2 × 5.
-13 is prime; its divisors are 1 and 13.
-15 составное; 15 = 3 × 5.
-is 17 prime? 17 is prime; its divisors are 1 and 17.
-простое ли 19? 19 простое; его делители — 1 и 19.
-22 is not prime; 22 = 2 × 11.
-24 составное; 24 = 2 × 12.
-is 26 prime? 26 is not prime; 26 = 2 × 13.
-простое ли 28? 28 составное; 28 = 2 × 14.
-3 is prime; its divisors are 1 and 3.
-5 простое; его делители — 1 и 5.
-is 7 prime? 7 is prime; its divisors are 1 and 7.
-простое ли 9? 9 составное; 9 = 3 × 3.
 12 is not prime; 12 = 2 × 6.
-14 составное; 14 = 2 × 7.
-is 16 prime? 16 is not prime; 16 = 2 × 8.
-простое ли 18? 18 составное; 18 = 2 × 9.
-21 is not prime; 21 = 3 × 7.
-23 простое; его делители — 1 и 23.
-is 25 prime? 25 is not prime; 25 = 5 × 5.
-простое ли 27? 27 составное; 27 = 3 × 9.
-2 is prime; its divisors are 1 and 2.
+простое ли число 13? да: 13 простое; его делители — 1 и 13.
+является ли 15 простым числом? нет: 15 составное; 15 = 3 × 5.
+does 17 have exactly two divisors? yes: 17 is prime; its divisors are 1 and 17.
+is 19 a prime number? yes: 19 is prime; its divisors are 1 and 19.
+21 составное; 21 = 3 × 7.
+23 is prime; its divisors are 1 and 23.
+простое ли число 24? нет: 24 составное; 24 = 2 × 12.
+является ли 26 простым числом? нет: 26 составное; 26 = 2 × 13.
+does 28 have exactly two divisors? no: 28 is not prime; 28 = 2 × 14.
+is 2 a prime number? yes: 2 is prime; its divisors are 1 and 2.
 4 составное; 4 = 2 × 2.
-is 6 prime? 6 is not prime; 6 = 2 × 3.
-простое ли 8? 8 составное; 8 = 2 × 4.
+6 is not prime; 6 = 2 × 3.
+простое ли число 7? да: 7 простое; его делители — 1 и 7.
+является ли 9 простым числом? нет: 9 составное; 9 = 3 × 3.
+does 11 have exactly two divisors? yes: 11 is prime; its divisors are 1 and 11.
+is 13 a prime number? yes: 13 is prime; its divisors are 1 and 13.
+15 составное; 15 = 3 × 5.
+17 is prime; its divisors are 1 and 17.
+простое ли число 18? нет: 18 составное; 18 = 2 × 9.
+является ли 20 простым числом? нет: 20 составное; 20 = 2 × 10.
+does 22 have exactly two divisors? no: 22 is not prime; 22 = 2 × 11.
+is 24 a prime number? no: 24 is not prime; 24 = 2 × 12.
+26 составное; 26 = 2 × 13.
+28 is not prime; 28 = 2 × 14.
+простое ли число 29? да: 29 простое; его делители — 1 и 29.
+является ли 3 простым числом? да: 3 простое; его делители — 1 и 3.
+does 5 have exactly two divisors? yes: 5 is prime; its divisors are 1 and 5.
+is 7 a prime number? yes: 7 is prime; its divisors are 1 and 7.
+9 составное; 9 = 3 × 3.
 11 is prime; its divisors are 1 and 11.
+простое ли число 12? нет: 12 составное; 12 = 2 × 6.
+является ли 14 простым числом? нет: 14 составное; 14 = 2 × 7.
+does 16 have exactly two divisors? no: 16 is not prime; 16 = 2 × 8.
+is 18 a prime number? no: 18 is not prime; 18 = 2 × 9.
+20 составное; 20 = 2 × 10.
+22 is not prime; 22 = 2 × 11.
+простое ли число 23? да: 23 простое; его делители — 1 и 23.
+является ли 25 простым числом? нет: 25 составное; 25 = 5 × 5.
+does 27 have exactly two divisors? no: 27 is not prime; 27 = 3 × 9.
+is 29 a prime number? yes: 29 is prime; its divisors are 1 and 29.
+3 простое; его делители — 1 и 3.
+5 is prime; its divisors are 1 and 5.
+простое ли число 6? нет: 6 составное; 6 = 2 × 3.
+является ли 8 простым числом? нет: 8 составное; 8 = 2 × 4.
+does 10 have exactly two divisors? no: 10 is not prime; 10 = 2 × 5.
+is 12 a prime number? no: 12 is not prime; 12 = 2 × 6.
+14 составное; 14 = 2 × 7.
+16 is not prime; 16 = 2 × 8.
+простое ли число 17? да: 17 простое; его делители — 1 и 17.
+является ли 19 простым числом? да: 19 простое; его делители — 1 и 19.
+does 21 have exactly two divisors? no: 21 is not prime; 21 = 3 × 7.
+is 23 a prime number? yes: 23 is prime; its divisors are 1 and 23.
+25 составное; 25 = 5 × 5.
+27 is not prime; 27 = 3 × 9.
+простое ли число 28? нет: 28 составное; 28 = 2 × 14.
+является ли 2 простым числом? да: 2 простое; его делители — 1 и 2.
+does 4 have exactly two divisors? no: 4 is not prime; 4 = 2 × 2.
+is 6 a prime number? no: 6 is not prime; 6 = 2 × 3.
+8 составное; 8 = 2 × 4.
+10 is not prime; 10 = 2 × 5.
+простое ли число 11? да: 11 простое; его делители — 1 и 11.
+является ли 13 простым числом? да: 13 простое; его делители — 1 и 13.
+does 15 have exactly two divisors? no: 15 is not prime; 15 = 3 × 5.
+is 17 a prime number? yes: 17 is prime; its divisors are 1 and 17.
+19 простое; его делители — 1 и 19.
+21 is not prime; 21 = 3 × 7.
+простое ли число 22? нет: 22 составное; 22 = 2 × 11.
+является ли 24 простым числом? нет: 24 составное; 24 = 2 × 12.
+does 26 have exactly two divisors? no: 26 is not prime; 26 = 2 × 13.
+is 28 a prime number? no: 28 is not prime; 28 = 2 × 14.
+2 простое; его делители — 1 и 2.
+4 is not prime; 4 = 2 × 2.
+простое ли число 5? да: 5 простое; его делители — 1 и 5.
+является ли 7 простым числом? да: 7 простое; его делители — 1 и 7.
+does 9 have exactly two divisors? no: 9 is not prime; 9 = 3 × 3.
+is 11 a prime number? yes: 11 is prime; its divisors are 1 and 11.
 13 простое; его делители — 1 и 13.
-is 15 prime? 15 is not prime; 15 = 3 × 5.
-простое ли 17? 17 простое; его делители — 1 и 17.
+15 is not prime; 15 = 3 × 5.
+простое ли число 16? нет: 16 составное; 16 = 2 × 8.
+является ли 18 простым числом? нет: 18 составное; 18 = 2 × 9.
+does 20 have exactly two divisors? no: 20 is not prime; 20 = 2 × 10.
+is 22 a prime number? no: 22 is not prime; 22 = 2 × 11.
+24 составное; 24 = 2 × 12.
+26 is not prime; 26 = 2 × 13.
+простое ли число 27? нет: 27 составное; 27 = 3 × 9.
+является ли 29 простым числом? да: 29 простое; его делители — 1 и 29.
+does 3 have exactly two divisors? yes: 3 is prime; its divisors are 1 and 3.
+is 5 a prime number? yes: 5 is prime; its divisors are 1 and 5.
+7 простое; его делители — 1 и 7.
+9 is not prime; 9 = 3 × 3.
+простое ли число 10? нет: 10 составное; 10 = 2 × 5.
+является ли 12 простым числом? нет: 12 составное; 12 = 2 × 6.
+does 14 have exactly two divisors? no: 14 is not prime; 14 = 2 × 7.
+is 16 a prime number? no: 16 is not prime; 16 = 2 × 8.
+18 составное; 18 = 2 × 9.
 20 is not prime; 20 = 2 × 10.
+простое ли число 21? нет: 21 составное; 21 = 3 × 7.
+является ли 23 простым числом? да: 23 простое; его делители — 1 и 23.
+does 25 have exactly two divisors? no: 25 is not prime; 25 = 5 × 5.
+is 27 a prime number? no: 27 is not prime; 27 = 3 × 9.
+29 простое; его делители — 1 и 29.
+3 is prime; its divisors are 1 and 3.
+простое ли число 4? нет: 4 составное; 4 = 2 × 2.
+является ли 6 простым числом? нет: 6 составное; 6 = 2 × 3.
+does 8 have exactly two divisors? no: 8 is not prime; 8 = 2 × 4.
+is 10 a prime number? no: 10 is not prime; 10 = 2 × 5.
+12 составное; 12 = 2 × 6.
+14 is not prime; 14 = 2 × 7.
+простое ли число 15? нет: 15 составное; 15 = 3 × 5.
+является ли 17 простым числом? да: 17 простое; его делители — 1 и 17.
+does 19 have exactly two divisors? yes: 19 is prime; its divisors are 1 and 19.
+is 21 a prime number? no: 21 is not prime; 21 = 3 × 7.
+23 простое; его делители — 1 и 23.
+25 is not prime; 25 = 5 × 5.
+простое ли число 26? нет: 26 составное; 26 = 2 × 13.
+является ли 28 простым числом? нет: 28 составное; 28 = 2 × 14.
+does 2 have exactly two divisors? yes: 2 is prime; its divisors are 1 and 2.
+is 4 a prime number? no: 4 is not prime; 4 = 2 × 2.
+6 составное; 6 = 2 × 3.
+8 is not prime; 8 = 2 × 4.
+простое ли число 9? нет: 9 составное; 9 = 3 × 3.
+является ли 11 простым числом? да: 11 простое; его делители — 1 и 11.
+does 13 have exactly two divisors? yes: 13 is prime; its divisors are 1 and 13.
+is 15 a prime number? no: 15 is not prime; 15 = 3 × 5.
+17 простое; его делители — 1 и 17.
+19 is prime; its divisors are 1 and 19.
+простое ли число 20? нет: 20 составное; 20 = 2 × 10.
+является ли 22 простым числом? нет: 22 составное; 22 = 2 × 11.
+does 24 have exactly two divisors? no: 24 is not prime; 24 = 2 × 12.
+is 26 a prime number? no: 26 is not prime; 26 = 2 × 13.
+28 составное; 28 = 2 × 14.
+2 is prime; its divisors are 1 and 2.
+простое ли число 3? да: 3 простое; его делители — 1 и 3.
+является ли 5 простым числом? да: 5 простое; его делители — 1 и 5.
+does 7 have exactly two divisors? yes: 7 is prime; its divisors are 1 and 7.
+is 9 a prime number? no: 9 is not prime; 9 = 3 × 3.
+11 простое; его делители — 1 и 11.
+13 is prime; its divisors are 1 and 13.
+простое ли число 14? нет: 14 составное; 14 = 2 × 7.
+является ли 16 простым числом? нет: 16 составное; 16 = 2 × 8.
+does 18 have exactly two divisors? no: 18 is not prime; 18 = 2 × 9.
+is 20 a prime number? no: 20 is not prime; 20 = 2 × 10.
 22 составное; 22 = 2 × 11.
-is 24 prime? 24 is not prime; 24 = 2 × 12.
-простое ли 26? 26 составное; 26 = 2 × 13.
+24 is not prime; 24 = 2 × 12.
+простое ли число 25? нет: 25 составное; 25 = 5 × 5.
+является ли 27 простым числом? нет: 27 составное; 27 = 3 × 9.
+does 29 have exactly two divisors? yes: 29 is prime; its divisors are 1 and 29.
+is 3 a prime number? yes: 3 is prime; its divisors are 1 and 3.
+5 простое; его делители — 1 и 5.
+7 is prime; its divisors are 1 and 7.
+простое ли число 8? нет: 8 составное; 8 = 2 × 4.
+является ли 10 простым числом? нет: 10 составное; 10 = 2 × 5.
+does 12 have exactly two divisors? no: 12 is not prime; 12 = 2 × 6.
+is 14 a prime number? no: 14 is not prime; 14 = 2 × 7.
+16 составное; 16 = 2 × 8.
+18 is not prime; 18 = 2 × 9.
+простое ли число 19? да: 19 простое; его делители — 1 и 19.
+является ли 21 простым числом? нет: 21 составное; 21 = 3 × 7.
+does 23 have exactly two divisors? yes: 23 is prime; its divisors are 1 and 23.
+is 25 a prime number? no: 25 is not prime; 25 = 5 × 5.
+27 составное; 27 = 3 × 9.
 29 is prime; its divisors are 1 and 29.
 
 простое ли 1? 1 ни простое, ни составное: его единственный делитель — 1.
@@ -751,363 +807,419 @@ a multiple of a number is the product of that number and a whole number.
 когда два числа сравнимы по модулю m? два числа сравнимы по модулю m, когда дают одинаковый остаток при делении на m.
 what is an even number? an even number is a whole number that is divisible by 2.
 
-is 2 prime? 2 is prime; its divisors are 1 and 2.
-5 простое; его делители — 1 и 5.
-8 is not prime; 8 = 2 × 4.
-простое ли 10? 10 составное; 10 = 2 × 5.
-is 13 prime? 13 is prime; its divisors are 1 and 13.
-16 составное; 16 = 2 × 8.
-19 is prime; its divisors are 1 and 19.
-простое ли 21? 21 составное; 21 = 3 × 7.
-is 24 prime? 24 is not prime; 24 = 2 × 12.
-27 составное; 27 = 3 × 9.
-2 is prime; its divisors are 1 and 2.
-простое ли 4? 4 составное; 4 = 2 × 2.
-is 7 prime? 7 is prime; its divisors are 1 and 7.
-10 составное; 10 = 2 × 5.
-13 is prime; its divisors are 1 and 13.
-простое ли 15? 15 составное; 15 = 3 × 5.
-is 18 prime? 18 is not prime; 18 = 2 × 9.
-21 составное; 21 = 3 × 7.
-24 is not prime; 24 = 2 × 12.
-простое ли 26? 26 составное; 26 = 2 × 13.
-is 29 prime? 29 is prime; its divisors are 1 and 29.
-4 составное; 4 = 2 × 2.
-7 is prime; its divisors are 1 and 7.
-простое ли 9? 9 составное; 9 = 3 × 3.
-is 12 prime? 12 is not prime; 12 = 2 × 6.
-15 составное; 15 = 3 × 5.
-18 is not prime; 18 = 2 × 9.
-простое ли 20? 20 составное; 20 = 2 × 10.
-is 23 prime? 23 is prime; its divisors are 1 and 23.
-26 составное; 26 = 2 × 13.
-29 is prime; its divisors are 1 and 29.
-простое ли 3? 3 простое; его делители — 1 и 3.
-is 6 prime? 6 is not prime; 6 = 2 × 3.
-9 составное; 9 = 3 × 3.
-12 is not prime; 12 = 2 × 6.
-простое ли 14? 14 составное; 14 = 2 × 7.
-is 17 prime? 17 is prime; its divisors are 1 and 17.
-20 составное; 20 = 2 × 10.
-23 is prime; its divisors are 1 and 23.
-простое ли 25? 25 составное; 25 = 5 × 5.
-is 28 prime? 28 is not prime; 28 = 2 × 14.
-3 простое; его делители — 1 и 3.
-6 is not prime; 6 = 2 × 3.
-простое ли 8? 8 составное; 8 = 2 × 4.
-is 11 prime? 11 is prime; its divisors are 1 and 11.
-14 составное; 14 = 2 × 7.
-17 is prime; its divisors are 1 and 17.
-простое ли 19? 19 простое; его делители — 1 и 19.
-is 22 prime? 22 is not prime; 22 = 2 × 11.
-25 составное; 25 = 5 × 5.
-28 is not prime; 28 = 2 × 14.
-простое ли 2? 2 простое; его делители — 1 и 2.
-is 5 prime? 5 is prime; its divisors are 1 and 5.
-8 составное; 8 = 2 × 4.
-11 is prime; its divisors are 1 and 11.
-простое ли 13? 13 простое; его делители — 1 и 13.
-is 16 prime? 16 is not prime; 16 = 2 × 8.
-19 простое; его делители — 1 и 19.
-22 is not prime; 22 = 2 × 11.
-простое ли 24? 24 составное; 24 = 2 × 12.
-is 27 prime? 27 is not prime; 27 = 3 × 9.
-2 простое; его делители — 1 и 2.
-5 is prime; its divisors are 1 and 5.
-простое ли 7? 7 простое; его делители — 1 и 7.
-is 10 prime? 10 is not prime; 10 = 2 × 5.
-13 простое; его делители — 1 и 13.
-16 is not prime; 16 = 2 × 8.
-простое ли 18? 18 составное; 18 = 2 × 9.
-is 21 prime? 21 is not prime; 21 = 3 × 7.
-24 составное; 24 = 2 × 12.
-27 is not prime; 27 = 3 × 9.
-простое ли 29? 29 простое; его делители — 1 и 29.
-is 4 prime? 4 is not prime; 4 = 2 × 2.
-7 простое; его делители — 1 и 7.
-10 is not prime; 10 = 2 × 5.
-простое ли 12? 12 составное; 12 = 2 × 6.
-is 15 prime? 15 is not prime; 15 = 3 × 5.
-18 составное; 18 = 2 × 9.
-21 is not prime; 21 = 3 × 7.
-простое ли 23? 23 простое; его делители — 1 и 23.
-is 26 prime? 26 is not prime; 26 = 2 × 13.
-29 простое; его делители — 1 и 29.
-4 is not prime; 4 = 2 × 2.
-простое ли 6? 6 составное; 6 = 2 × 3.
-is 9 prime? 9 is not prime; 9 = 3 × 3.
-12 составное; 12 = 2 × 6.
-15 is not prime; 15 = 3 × 5.
-простое ли 17? 17 простое; его делители — 1 и 17.
-is 20 prime? 20 is not prime; 20 = 2 × 10.
-23 простое; его делители — 1 и 23.
-26 is not prime; 26 = 2 × 13.
-простое ли 28? 28 составное; 28 = 2 × 14.
-is 3 prime? 3 is prime; its divisors are 1 and 3.
-6 составное; 6 = 2 × 3.
-9 is not prime; 9 = 3 × 3.
-простое ли 11? 11 простое; его делители — 1 и 11.
-is 14 prime? 14 is not prime; 14 = 2 × 7.
-17 простое; его делители — 1 и 17.
-20 is not prime; 20 = 2 × 10.
-простое ли 22? 22 составное; 22 = 2 × 11.
-is 25 prime? 25 is not prime; 25 = 5 × 5.
-28 составное; 28 = 2 × 14.
-3 is prime; its divisors are 1 and 3.
-простое ли 5? 5 простое; его делители — 1 и 5.
-is 8 prime? 8 is not prime; 8 = 2 × 4.
-11 простое; его делители — 1 и 11.
-14 is not prime; 14 = 2 × 7.
-простое ли 16? 16 составное; 16 = 2 × 8.
-is 19 prime? 19 is prime; its divisors are 1 and 19.
-22 составное; 22 = 2 × 11.
-25 is not prime; 25 = 5 × 5.
-простое ли 27? 27 составное; 27 = 3 × 9.
+is 30 a prime number? no: 30 is not prime; 30 = 2 × 15.
+32 составное; 32 = 2 × 16.
+34 is not prime; 34 = 2 × 17.
+простое ли число 35? нет: 35 составное; 35 = 5 × 7.
+является ли 37 простым числом? да: 37 простое; его делители — 1 и 37.
+does 39 have exactly two divisors? no: 39 is not prime; 39 = 3 × 13.
+is 41 a prime number? yes: 41 is prime; its divisors are 1 and 41.
+43 простое; его делители — 1 и 43.
+45 is not prime; 45 = 3 × 15.
+простое ли число 46? нет: 46 составное; 46 = 2 × 23.
+является ли 48 простым числом? нет: 48 составное; 48 = 2 × 24.
+does 50 have exactly two divisors? no: 50 is not prime; 50 = 2 × 25.
+is 52 a prime number? no: 52 is not prime; 52 = 2 × 26.
+54 составное; 54 = 2 × 27.
+56 is not prime; 56 = 2 × 28.
+простое ли число 57? нет: 57 составное; 57 = 3 × 19.
+является ли 31 простым числом? да: 31 простое; его делители — 1 и 31.
+does 33 have exactly two divisors? no: 33 is not prime; 33 = 3 × 11.
+is 35 a prime number? no: 35 is not prime; 35 = 5 × 7.
+37 простое; его делители — 1 и 37.
+39 is not prime; 39 = 3 × 13.
+простое ли число 40? нет: 40 составное; 40 = 2 × 20.
+является ли 42 простым числом? нет: 42 составное; 42 = 2 × 21.
+does 44 have exactly two divisors? no: 44 is not prime; 44 = 2 × 22.
+is 46 a prime number? no: 46 is not prime; 46 = 2 × 23.
+48 составное; 48 = 2 × 24.
+50 is not prime; 50 = 2 × 25.
+простое ли число 51? нет: 51 составное; 51 = 3 × 17.
+является ли 53 простым числом? да: 53 простое; его делители — 1 и 53.
+does 55 have exactly two divisors? no: 55 is not prime; 55 = 5 × 11.
+is 57 a prime number? no: 57 is not prime; 57 = 3 × 19.
+31 простое; его делители — 1 и 31.
+33 is not prime; 33 = 3 × 11.
+простое ли число 34? нет: 34 составное; 34 = 2 × 17.
+является ли 36 простым числом? нет: 36 составное; 36 = 2 × 18.
+does 38 have exactly two divisors? no: 38 is not prime; 38 = 2 × 19.
+is 40 a prime number? no: 40 is not prime; 40 = 2 × 20.
+42 составное; 42 = 2 × 21.
+44 is not prime; 44 = 2 × 22.
+простое ли число 45? нет: 45 составное; 45 = 3 × 15.
+является ли 47 простым числом? да: 47 простое; его делители — 1 и 47.
+does 49 have exactly two divisors? no: 49 is not prime; 49 = 7 × 7.
+is 51 a prime number? no: 51 is not prime; 51 = 3 × 17.
+53 простое; его делители — 1 и 53.
+55 is not prime; 55 = 5 × 11.
+простое ли число 56? нет: 56 составное; 56 = 2 × 28.
+является ли 30 простым числом? нет: 30 составное; 30 = 2 × 15.
+does 32 have exactly two divisors? no: 32 is not prime; 32 = 2 × 16.
+is 34 a prime number? no: 34 is not prime; 34 = 2 × 17.
+36 составное; 36 = 2 × 18.
+38 is not prime; 38 = 2 × 19.
+простое ли число 39? нет: 39 составное; 39 = 3 × 13.
+является ли 41 простым числом? да: 41 простое; его делители — 1 и 41.
+does 43 have exactly two divisors? yes: 43 is prime; its divisors are 1 and 43.
+is 45 a prime number? no: 45 is not prime; 45 = 3 × 15.
+47 простое; его делители — 1 и 47.
+49 is not prime; 49 = 7 × 7.
+простое ли число 50? нет: 50 составное; 50 = 2 × 25.
+является ли 52 простым числом? нет: 52 составное; 52 = 2 × 26.
+does 54 have exactly two divisors? no: 54 is not prime; 54 = 2 × 27.
+is 56 a prime number? no: 56 is not prime; 56 = 2 × 28.
+30 составное; 30 = 2 × 15.
+32 is not prime; 32 = 2 × 16.
+простое ли число 33? нет: 33 составное; 33 = 3 × 11.
+является ли 35 простым числом? нет: 35 составное; 35 = 5 × 7.
+does 37 have exactly two divisors? yes: 37 is prime; its divisors are 1 and 37.
+is 39 a prime number? no: 39 is not prime; 39 = 3 × 13.
+41 простое; его делители — 1 и 41.
+43 is prime; its divisors are 1 and 43.
+простое ли число 44? нет: 44 составное; 44 = 2 × 22.
+является ли 46 простым числом? нет: 46 составное; 46 = 2 × 23.
+does 48 have exactly two divisors? no: 48 is not prime; 48 = 2 × 24.
+is 50 a prime number? no: 50 is not prime; 50 = 2 × 25.
+52 составное; 52 = 2 × 26.
+54 is not prime; 54 = 2 × 27.
+простое ли число 55? нет: 55 составное; 55 = 5 × 11.
+является ли 57 простым числом? нет: 57 составное; 57 = 3 × 19.
+does 31 have exactly two divisors? yes: 31 is prime; its divisors are 1 and 31.
+is 33 a prime number? no: 33 is not prime; 33 = 3 × 11.
+35 составное; 35 = 5 × 7.
+37 is prime; its divisors are 1 and 37.
+простое ли число 38? нет: 38 составное; 38 = 2 × 19.
+является ли 40 простым числом? нет: 40 составное; 40 = 2 × 20.
+does 42 have exactly two divisors? no: 42 is not prime; 42 = 2 × 21.
+is 44 a prime number? no: 44 is not prime; 44 = 2 × 22.
+46 составное; 46 = 2 × 23.
+48 is not prime; 48 = 2 × 24.
+простое ли число 49? нет: 49 составное; 49 = 7 × 7.
+является ли 51 простым числом? нет: 51 составное; 51 = 3 × 17.
+does 53 have exactly two divisors? yes: 53 is prime; its divisors are 1 and 53.
+is 55 a prime number? no: 55 is not prime; 55 = 5 × 11.
+57 составное; 57 = 3 × 19.
+31 is prime; its divisors are 1 and 31.
+простое ли число 32? нет: 32 составное; 32 = 2 × 16.
+является ли 34 простым числом? нет: 34 составное; 34 = 2 × 17.
+does 36 have exactly two divisors? no: 36 is not prime; 36 = 2 × 18.
+is 38 a prime number? no: 38 is not prime; 38 = 2 × 19.
+40 составное; 40 = 2 × 20.
+42 is not prime; 42 = 2 × 21.
+простое ли число 43? да: 43 простое; его делители — 1 и 43.
+является ли 45 простым числом? нет: 45 составное; 45 = 3 × 15.
+does 47 have exactly two divisors? yes: 47 is prime; its divisors are 1 and 47.
+is 49 a prime number? no: 49 is not prime; 49 = 7 × 7.
+51 составное; 51 = 3 × 17.
+53 is prime; its divisors are 1 and 53.
+простое ли число 54? нет: 54 составное; 54 = 2 × 27.
+является ли 56 простым числом? нет: 56 составное; 56 = 2 × 28.
+does 30 have exactly two divisors? no: 30 is not prime; 30 = 2 × 15.
+is 32 a prime number? no: 32 is not prime; 32 = 2 × 16.
+34 составное; 34 = 2 × 17.
+36 is not prime; 36 = 2 × 18.
+простое ли число 37? да: 37 простое; его делители — 1 и 37.
+является ли 39 простым числом? нет: 39 составное; 39 = 3 × 13.
+does 41 have exactly two divisors? yes: 41 is prime; its divisors are 1 and 41.
+is 43 a prime number? yes: 43 is prime; its divisors are 1 and 43.
+45 составное; 45 = 3 × 15.
+47 is prime; its divisors are 1 and 47.
+простое ли число 48? нет: 48 составное; 48 = 2 × 24.
+является ли 50 простым числом? нет: 50 составное; 50 = 2 × 25.
+does 52 have exactly two divisors? no: 52 is not prime; 52 = 2 × 26.
+is 54 a prime number? no: 54 is not prime; 54 = 2 × 27.
+56 составное; 56 = 2 × 28.
+30 is not prime; 30 = 2 × 15.
+простое ли число 31? да: 31 простое; его делители — 1 и 31.
+является ли 33 простым числом? нет: 33 составное; 33 = 3 × 11.
+does 35 have exactly two divisors? no: 35 is not prime; 35 = 5 × 7.
+is 37 a prime number? yes: 37 is prime; its divisors are 1 and 37.
+39 составное; 39 = 3 × 13.
+41 is prime; its divisors are 1 and 41.
+простое ли число 42? нет: 42 составное; 42 = 2 × 21.
+является ли 44 простым числом? нет: 44 составное; 44 = 2 × 22.
+does 46 have exactly two divisors? no: 46 is not prime; 46 = 2 × 23.
+is 48 a prime number? no: 48 is not prime; 48 = 2 × 24.
+50 составное; 50 = 2 × 25.
+52 is not prime; 52 = 2 × 26.
+простое ли число 53? да: 53 простое; его делители — 1 и 53.
+является ли 55 простым числом? нет: 55 составное; 55 = 5 × 11.
+does 57 have exactly two divisors? no: 57 is not prime; 57 = 3 × 19.
+is 31 a prime number? yes: 31 is prime; its divisors are 1 and 31.
+33 составное; 33 = 3 × 11.
+35 is not prime; 35 = 5 × 7.
+простое ли число 36? нет: 36 составное; 36 = 2 × 18.
+является ли 38 простым числом? нет: 38 составное; 38 = 2 × 19.
+does 40 have exactly two divisors? no: 40 is not prime; 40 = 2 × 20.
+is 42 a prime number? no: 42 is not prime; 42 = 2 × 21.
+44 составное; 44 = 2 × 22.
+46 is not prime; 46 = 2 × 23.
+простое ли число 47? да: 47 простое; его делители — 1 и 47.
+является ли 49 простым числом? нет: 49 составное; 49 = 7 × 7.
+does 51 have exactly two divisors? no: 51 is not prime; 51 = 3 × 17.
+is 53 a prime number? yes: 53 is prime; its divisors are 1 and 53.
+55 составное; 55 = 5 × 11.
+57 is not prime; 57 = 3 × 19.
+простое ли число 30? нет: 30 составное; 30 = 2 × 15.
+является ли 32 простым числом? нет: 32 составное; 32 = 2 × 16.
+does 34 have exactly two divisors? no: 34 is not prime; 34 = 2 × 17.
+is 36 a prime number? no: 36 is not prime; 36 = 2 × 18.
+38 составное; 38 = 2 × 19.
+40 is not prime; 40 = 2 × 20.
+простое ли число 41? да: 41 простое; его делители — 1 и 41.
+является ли 43 простым числом? да: 43 простое; его делители — 1 и 43.
+does 45 have exactly two divisors? no: 45 is not prime; 45 = 3 × 15.
+is 47 a prime number? yes: 47 is prime; its divisors are 1 and 47.
+49 составное; 49 = 7 × 7.
+51 is not prime; 51 = 3 × 17.
+простое ли число 52? нет: 52 составное; 52 = 2 × 26.
+является ли 54 простым числом? нет: 54 составное; 54 = 2 × 27.
+does 56 have exactly two divisors? no: 56 is not prime; 56 = 2 × 28.
 
 is 1 prime? 1 is neither prime nor composite: its only divisor is 1.
 простое ли 1? 1 ни простое, ни составное: его единственный делитель — 1.
 
-what does 4 factorise into? 4 factorises into 2 × 2.
-7 раскладывается в 7.
-10 factorises into 2 × 5.
-во что раскладывается 12? 12 раскладывается в 2 × 2 × 3.
-what does 15 factorise into? 15 factorises into 3 × 5.
-18 раскладывается в 2 × 3 × 3.
-21 factorises into 3 × 7.
-во что раскладывается 23? 23 раскладывается в 23.
-what does 26 factorise into? 26 factorises into 2 × 13.
-29 раскладывается в 29.
-32 factorises into 2 × 2 × 2 × 2 × 2.
-во что раскладывается 34? 34 раскладывается в 2 × 17.
-what does 37 factorise into? 37 factorises into 37.
-4 раскладывается в 2 × 2.
-7 factorises into 7.
-во что раскладывается 9? 9 раскладывается в 3 × 3.
-what does 12 factorise into? 12 factorises into 2 × 2 × 3.
-15 раскладывается в 3 × 5.
-18 factorises into 2 × 3 × 3.
-во что раскладывается 20? 20 раскладывается в 2 × 2 × 5.
-what does 23 factorise into? 23 factorises into 23.
-26 раскладывается в 2 × 13.
-29 factorises into 29.
-во что раскладывается 31? 31 раскладывается в 31.
-what does 34 factorise into? 34 factorises into 2 × 17.
-37 раскладывается в 37.
-4 factorises into 2 × 2.
-во что раскладывается 6? 6 раскладывается в 2 × 3.
-what does 9 factorise into? 9 factorises into 3 × 3.
-12 раскладывается в 2 × 2 × 3.
-15 factorises into 3 × 5.
-во что раскладывается 17? 17 раскладывается в 17.
-what does 20 factorise into? 20 factorises into 2 × 2 × 5.
-23 раскладывается в 23.
-26 factorises into 2 × 13.
-во что раскладывается 28? 28 раскладывается в 2 × 2 × 7.
-what does 31 factorise into? 31 factorises into 31.
-34 раскладывается в 2 × 17.
-37 factorises into 37.
-во что раскладывается 39? 39 раскладывается в 3 × 13.
-what does 6 factorise into? 6 factorises into 2 × 3.
-9 раскладывается в 3 × 3.
-12 factorises into 2 × 2 × 3.
-во что раскладывается 14? 14 раскладывается в 2 × 7.
-what does 17 factorise into? 17 factorises into 17.
-20 раскладывается в 2 × 2 × 5.
-23 factorises into 23.
-во что раскладывается 25? 25 раскладывается в 5 × 5.
-what does 28 factorise into? 28 factorises into 2 × 2 × 7.
-31 раскладывается в 31.
-34 factorises into 2 × 17.
-во что раскладывается 36? 36 раскладывается в 2 × 2 × 3 × 3.
-what does 39 factorise into? 39 factorises into 3 × 13.
-6 раскладывается в 2 × 3.
-9 factorises into 3 × 3.
-во что раскладывается 11? 11 раскладывается в 11.
-what does 14 factorise into? 14 factorises into 2 × 7.
-17 раскладывается в 17.
-20 factorises into 2 × 2 × 5.
-во что раскладывается 22? 22 раскладывается в 2 × 11.
-what does 25 factorise into? 25 factorises into 5 × 5.
-28 раскладывается в 2 × 2 × 7.
-31 factorises into 31.
-во что раскладывается 33? 33 раскладывается в 3 × 11.
-what does 36 factorise into? 36 factorises into 2 × 2 × 3 × 3.
-39 раскладывается в 3 × 13.
-6 factorises into 2 × 3.
-во что раскладывается 8? 8 раскладывается в 2 × 2 × 2.
-what does 11 factorise into? 11 factorises into 11.
-14 раскладывается в 2 × 7.
-17 factorises into 17.
-во что раскладывается 19? 19 раскладывается в 19.
-what does 22 factorise into? 22 factorises into 2 × 11.
-25 раскладывается в 5 × 5.
-28 factorises into 2 × 2 × 7.
-во что раскладывается 30? 30 раскладывается в 2 × 3 × 5.
-what does 33 factorise into? 33 factorises into 3 × 11.
-36 раскладывается в 2 × 2 × 3 × 3.
-39 factorises into 3 × 13.
-во что раскладывается 5? 5 раскладывается в 5.
-what does 8 factorise into? 8 factorises into 2 × 2 × 2.
-11 раскладывается в 11.
-14 factorises into 2 × 7.
-во что раскладывается 16? 16 раскладывается в 2 × 2 × 2 × 2.
-what does 19 factorise into? 19 factorises into 19.
-22 раскладывается в 2 × 11.
-25 factorises into 5 × 5.
-во что раскладывается 27? 27 раскладывается в 3 × 3 × 3.
-what does 30 factorise into? 30 factorises into 2 × 3 × 5.
-33 раскладывается в 3 × 11.
-36 factorises into 2 × 2 × 3 × 3.
-во что раскладывается 38? 38 раскладывается в 2 × 19.
-what does 5 factorise into? 5 factorises into 5.
-8 раскладывается в 2 × 2 × 2.
-11 factorises into 11.
-во что раскладывается 13? 13 раскладывается в 13.
-what does 16 factorise into? 16 factorises into 2 × 2 × 2 × 2.
-19 раскладывается в 19.
-22 factorises into 2 × 11.
-во что раскладывается 24? 24 раскладывается в 2 × 2 × 2 × 3.
-what does 27 factorise into? 27 factorises into 3 × 3 × 3.
-30 раскладывается в 2 × 3 × 5.
-33 factorises into 3 × 11.
-во что раскладывается 35? 35 раскладывается в 5 × 7.
-what does 38 factorise into? 38 factorises into 2 × 19.
-5 раскладывается в 5.
-8 factorises into 2 × 2 × 2.
-во что раскладывается 10? 10 раскладывается в 2 × 5.
-what does 13 factorise into? 13 factorises into 13.
-16 раскладывается в 2 × 2 × 2 × 2.
-19 factorises into 19.
-во что раскладывается 21? 21 раскладывается в 3 × 7.
-what does 24 factorise into? 24 factorises into 2 × 2 × 2 × 3.
-27 раскладывается в 3 × 3 × 3.
-30 factorises into 2 × 3 × 5.
-во что раскладывается 32? 32 раскладывается в 2 × 2 × 2 × 2 × 2.
-what does 35 factorise into? 35 factorises into 5 × 7.
-38 раскладывается в 2 × 19.
-5 factorises into 5.
-во что раскладывается 7? 7 раскладывается в 7.
-what does 10 factorise into? 10 factorises into 2 × 5.
-13 раскладывается в 13.
-16 factorises into 2 × 2 × 2 × 2.
-во что раскладывается 18? 18 раскладывается в 2 × 3 × 3.
-what does 21 factorise into? 21 factorises into 3 × 7.
-24 раскладывается в 2 × 2 × 2 × 3.
-27 factorises into 3 × 3 × 3.
-во что раскладывается 29? 29 раскладывается в 29.
-what does 32 factorise into? 32 factorises into 2 × 2 × 2 × 2 × 2.
-35 раскладывается в 5 × 7.
-38 factorises into 2 × 19.
-во что раскладывается 4? 4 раскладывается в 2 × 2.
-what does 7 factorise into? 7 factorises into 7.
-10 раскладывается в 2 × 5.
-13 factorises into 13.
-во что раскладывается 15? 15 раскладывается в 3 × 5.
-what does 18 factorise into? 18 factorises into 2 × 3 × 3.
-21 раскладывается в 3 × 7.
-24 factorises into 2 × 2 × 2 × 3.
-во что раскладывается 26? 26 раскладывается в 2 × 13.
-what does 29 factorise into? 29 factorises into 29.
-32 раскладывается в 2 × 2 × 2 × 2 × 2.
-35 factorises into 5 × 7.
-во что раскладывается 37? 37 раскладывается в 37.
+what does 40 factorise into? 40 factorises into 2 × 2 × 2 × 5.
+43 раскладывается в 43.
+46 factorises into 2 × 23.
+во что раскладывается 48? 48 раскладывается в 2 × 2 × 2 × 2 × 3.
+what does 51 factorise into? 51 factorises into 3 × 17.
+54 раскладывается в 2 × 3 × 3 × 3.
+57 factorises into 3 × 19.
+во что раскладывается 59? 59 раскладывается в 59.
+what does 62 factorise into? 62 factorises into 2 × 31.
+65 раскладывается в 5 × 13.
+68 factorises into 2 × 2 × 17.
+во что раскладывается 70? 70 раскладывается в 2 × 5 × 7.
+what does 73 factorise into? 73 factorises into 73.
+40 раскладывается в 2 × 2 × 2 × 5.
+43 factorises into 43.
+во что раскладывается 45? 45 раскладывается в 3 × 3 × 5.
+what does 48 factorise into? 48 factorises into 2 × 2 × 2 × 2 × 3.
+51 раскладывается в 3 × 17.
+54 factorises into 2 × 3 × 3 × 3.
+во что раскладывается 56? 56 раскладывается в 2 × 2 × 2 × 7.
+what does 59 factorise into? 59 factorises into 59.
+62 раскладывается в 2 × 31.
+65 factorises into 5 × 13.
+во что раскладывается 67? 67 раскладывается в 67.
+what does 70 factorise into? 70 factorises into 2 × 5 × 7.
+73 раскладывается в 73.
+40 factorises into 2 × 2 × 2 × 5.
+во что раскладывается 42? 42 раскладывается в 2 × 3 × 7.
+what does 45 factorise into? 45 factorises into 3 × 3 × 5.
+48 раскладывается в 2 × 2 × 2 × 2 × 3.
+51 factorises into 3 × 17.
+во что раскладывается 53? 53 раскладывается в 53.
+what does 56 factorise into? 56 factorises into 2 × 2 × 2 × 7.
+59 раскладывается в 59.
+62 factorises into 2 × 31.
+во что раскладывается 64? 64 раскладывается в 2 × 2 × 2 × 2 × 2 × 2.
+what does 67 factorise into? 67 factorises into 67.
+70 раскладывается в 2 × 5 × 7.
+73 factorises into 73.
+во что раскладывается 75? 75 раскладывается в 3 × 5 × 5.
+what does 42 factorise into? 42 factorises into 2 × 3 × 7.
+45 раскладывается в 3 × 3 × 5.
+48 factorises into 2 × 2 × 2 × 2 × 3.
+во что раскладывается 50? 50 раскладывается в 2 × 5 × 5.
+what does 53 factorise into? 53 factorises into 53.
+56 раскладывается в 2 × 2 × 2 × 7.
+59 factorises into 59.
+во что раскладывается 61? 61 раскладывается в 61.
+what does 64 factorise into? 64 factorises into 2 × 2 × 2 × 2 × 2 × 2.
+67 раскладывается в 67.
+70 factorises into 2 × 5 × 7.
+во что раскладывается 72? 72 раскладывается в 2 × 2 × 2 × 3 × 3.
+what does 75 factorise into? 75 factorises into 3 × 5 × 5.
+42 раскладывается в 2 × 3 × 7.
+45 factorises into 3 × 3 × 5.
+во что раскладывается 47? 47 раскладывается в 47.
+what does 50 factorise into? 50 factorises into 2 × 5 × 5.
+53 раскладывается в 53.
+56 factorises into 2 × 2 × 2 × 7.
+во что раскладывается 58? 58 раскладывается в 2 × 29.
+what does 61 factorise into? 61 factorises into 61.
+64 раскладывается в 2 × 2 × 2 × 2 × 2 × 2.
+67 factorises into 67.
+во что раскладывается 69? 69 раскладывается в 3 × 23.
+what does 72 factorise into? 72 factorises into 2 × 2 × 2 × 3 × 3.
+75 раскладывается в 3 × 5 × 5.
+42 factorises into 2 × 3 × 7.
+во что раскладывается 44? 44 раскладывается в 2 × 2 × 11.
+what does 47 factorise into? 47 factorises into 47.
+50 раскладывается в 2 × 5 × 5.
+53 factorises into 53.
+во что раскладывается 55? 55 раскладывается в 5 × 11.
+what does 58 factorise into? 58 factorises into 2 × 29.
+61 раскладывается в 61.
+64 factorises into 2 × 2 × 2 × 2 × 2 × 2.
+во что раскладывается 66? 66 раскладывается в 2 × 3 × 11.
+what does 69 factorise into? 69 factorises into 3 × 23.
+72 раскладывается в 2 × 2 × 2 × 3 × 3.
+75 factorises into 3 × 5 × 5.
+во что раскладывается 41? 41 раскладывается в 41.
+what does 44 factorise into? 44 factorises into 2 × 2 × 11.
+47 раскладывается в 47.
+50 factorises into 2 × 5 × 5.
+во что раскладывается 52? 52 раскладывается в 2 × 2 × 13.
+what does 55 factorise into? 55 factorises into 5 × 11.
+58 раскладывается в 2 × 29.
+61 factorises into 61.
+во что раскладывается 63? 63 раскладывается в 3 × 3 × 7.
+what does 66 factorise into? 66 factorises into 2 × 3 × 11.
+69 раскладывается в 3 × 23.
+72 factorises into 2 × 2 × 2 × 3 × 3.
+во что раскладывается 74? 74 раскладывается в 2 × 37.
+what does 41 factorise into? 41 factorises into 41.
+44 раскладывается в 2 × 2 × 11.
+47 factorises into 47.
+во что раскладывается 49? 49 раскладывается в 7 × 7.
+what does 52 factorise into? 52 factorises into 2 × 2 × 13.
+55 раскладывается в 5 × 11.
+58 factorises into 2 × 29.
+во что раскладывается 60? 60 раскладывается в 2 × 2 × 3 × 5.
+what does 63 factorise into? 63 factorises into 3 × 3 × 7.
+66 раскладывается в 2 × 3 × 11.
+69 factorises into 3 × 23.
+во что раскладывается 71? 71 раскладывается в 71.
+what does 74 factorise into? 74 factorises into 2 × 37.
+41 раскладывается в 41.
+44 factorises into 2 × 2 × 11.
+во что раскладывается 46? 46 раскладывается в 2 × 23.
+what does 49 factorise into? 49 factorises into 7 × 7.
+52 раскладывается в 2 × 2 × 13.
+55 factorises into 5 × 11.
+во что раскладывается 57? 57 раскладывается в 3 × 19.
+what does 60 factorise into? 60 factorises into 2 × 2 × 3 × 5.
+63 раскладывается в 3 × 3 × 7.
+66 factorises into 2 × 3 × 11.
+во что раскладывается 68? 68 раскладывается в 2 × 2 × 17.
+what does 71 factorise into? 71 factorises into 71.
+74 раскладывается в 2 × 37.
+41 factorises into 41.
+во что раскладывается 43? 43 раскладывается в 43.
+what does 46 factorise into? 46 factorises into 2 × 23.
+49 раскладывается в 7 × 7.
+52 factorises into 2 × 2 × 13.
+во что раскладывается 54? 54 раскладывается в 2 × 3 × 3 × 3.
+what does 57 factorise into? 57 factorises into 3 × 19.
+60 раскладывается в 2 × 2 × 3 × 5.
+63 factorises into 3 × 3 × 7.
+во что раскладывается 65? 65 раскладывается в 5 × 13.
+what does 68 factorise into? 68 factorises into 2 × 2 × 17.
+71 раскладывается в 71.
+74 factorises into 2 × 37.
+во что раскладывается 40? 40 раскладывается в 2 × 2 × 2 × 5.
+what does 43 factorise into? 43 factorises into 43.
+46 раскладывается в 2 × 23.
+49 factorises into 7 × 7.
+во что раскладывается 51? 51 раскладывается в 3 × 17.
+what does 54 factorise into? 54 factorises into 2 × 3 × 3 × 3.
+57 раскладывается в 3 × 19.
+60 factorises into 2 × 2 × 3 × 5.
+во что раскладывается 62? 62 раскладывается в 2 × 31.
+what does 65 factorise into? 65 factorises into 5 × 13.
+68 раскладывается в 2 × 2 × 17.
+71 factorises into 71.
+во что раскладывается 73? 73 раскладывается в 73.
 
-what are the divisors of 6? the divisors of 6 are 1 2 3 6.
-делители 9 — это 1 3 9.
-the divisors of 12 are 1 2 3 4 6 12.
-каковы делители 14? делители 14 — это 1 2 7 14.
-what are the divisors of 17? the divisors of 17 are 1 17.
-делители 20 — это 1 2 4 5 10 20.
-the divisors of 23 are 1 23.
-каковы делители 25? делители 25 — это 1 5 25.
-what are the divisors of 28? the divisors of 28 are 1 2 4 7 14 28.
-делители 7 — это 1 7.
-the divisors of 10 are 1 2 5 10.
-каковы делители 12? делители 12 — это 1 2 3 4 6 12.
-what are the divisors of 15? the divisors of 15 are 1 3 5 15.
-делители 18 — это 1 2 3 6 9 18.
-the divisors of 21 are 1 3 7 21.
-каковы делители 23? делители 23 — это 1 23.
-what are the divisors of 26? the divisors of 26 are 1 2 13 26.
-делители 29 — это 1 29.
-the divisors of 8 are 1 2 4 8.
-каковы делители 10? делители 10 — это 1 2 5 10.
-what are the divisors of 13? the divisors of 13 are 1 13.
-делители 16 — это 1 2 4 8 16.
-the divisors of 19 are 1 19.
-каковы делители 21? делители 21 — это 1 3 7 21.
-what are the divisors of 24? the divisors of 24 are 1 2 3 4 6 8 12 24.
-делители 27 — это 1 3 9 27.
-the divisors of 6 are 1 2 3 6.
-каковы делители 8? делители 8 — это 1 2 4 8.
-what are the divisors of 11? the divisors of 11 are 1 11.
-делители 14 — это 1 2 7 14.
-the divisors of 17 are 1 17.
-каковы делители 19? делители 19 — это 1 19.
-what are the divisors of 22? the divisors of 22 are 1 2 11 22.
-делители 25 — это 1 5 25.
-the divisors of 28 are 1 2 4 7 14 28.
-каковы делители 6? делители 6 — это 1 2 3 6.
-what are the divisors of 9? the divisors of 9 are 1 3 9.
-делители 12 — это 1 2 3 4 6 12.
-the divisors of 15 are 1 3 5 15.
-каковы делители 17? делители 17 — это 1 17.
-what are the divisors of 20? the divisors of 20 are 1 2 4 5 10 20.
-делители 23 — это 1 23.
-the divisors of 26 are 1 2 13 26.
-каковы делители 28? делители 28 — это 1 2 4 7 14 28.
-what are the divisors of 7? the divisors of 7 are 1 7.
-делители 10 — это 1 2 5 10.
-the divisors of 13 are 1 13.
-каковы делители 15? делители 15 — это 1 3 5 15.
-what are the divisors of 18? the divisors of 18 are 1 2 3 6 9 18.
-делители 21 — это 1 3 7 21.
-the divisors of 24 are 1 2 3 4 6 8 12 24.
-каковы делители 26? делители 26 — это 1 2 13 26.
-what are the divisors of 29? the divisors of 29 are 1 29.
-делители 8 — это 1 2 4 8.
-the divisors of 11 are 1 11.
-каковы делители 13? делители 13 — это 1 13.
-what are the divisors of 16? the divisors of 16 are 1 2 4 8 16.
-делители 19 — это 1 19.
-the divisors of 22 are 1 2 11 22.
-каковы делители 24? делители 24 — это 1 2 3 4 6 8 12 24.
-what are the divisors of 27? the divisors of 27 are 1 3 9 27.
-делители 6 — это 1 2 3 6.
-the divisors of 9 are 1 3 9.
-каковы делители 11? делители 11 — это 1 11.
-what are the divisors of 14? the divisors of 14 are 1 2 7 14.
-делители 17 — это 1 17.
-the divisors of 20 are 1 2 4 5 10 20.
-каковы делители 22? делители 22 — это 1 2 11 22.
-what are the divisors of 25? the divisors of 25 are 1 5 25.
-делители 28 — это 1 2 4 7 14 28.
-the divisors of 7 are 1 7.
-каковы делители 9? делители 9 — это 1 3 9.
-what are the divisors of 12? the divisors of 12 are 1 2 3 4 6 12.
-делители 15 — это 1 3 5 15.
-the divisors of 18 are 1 2 3 6 9 18.
-каковы делители 20? делители 20 — это 1 2 4 5 10 20.
-what are the divisors of 23? the divisors of 23 are 1 23.
-делители 26 — это 1 2 13 26.
-the divisors of 29 are 1 29.
-каковы делители 7? делители 7 — это 1 7.
-what are the divisors of 10? the divisors of 10 are 1 2 5 10.
-делители 13 — это 1 13.
-the divisors of 16 are 1 2 4 8 16.
-каковы делители 18? делители 18 — это 1 2 3 6 9 18.
-what are the divisors of 21? the divisors of 21 are 1 3 7 21.
-делители 24 — это 1 2 3 4 6 8 12 24.
-the divisors of 27 are 1 3 9 27.
-каковы делители 29? делители 29 — это 1 29.
-what are the divisors of 8? the divisors of 8 are 1 2 4 8.
-делители 11 — это 1 11.
-the divisors of 14 are 1 2 7 14.
-каковы делители 16? делители 16 — это 1 2 4 8 16.
-what are the divisors of 19? the divisors of 19 are 1 19.
-делители 22 — это 1 2 11 22.
-the divisors of 25 are 1 5 25.
-каковы делители 27? делители 27 — это 1 3 9 27.
+what are the divisors of 30? the divisors of 30 are 1 2 3 5 6 10 15 30.
+делители 33 — это 1 3 11 33.
+the divisors of 36 are 1 2 3 4 6 9 12 18 36.
+каковы делители 38? делители 38 — это 1 2 19 38.
+what are the divisors of 41? the divisors of 41 are 1 41.
+делители 44 — это 1 2 4 11 22 44.
+the divisors of 47 are 1 47.
+каковы делители 49? делители 49 — это 1 7 49.
+what are the divisors of 52? the divisors of 52 are 1 2 4 13 26 52.
+делители 31 — это 1 31.
+the divisors of 34 are 1 2 17 34.
+каковы делители 36? делители 36 — это 1 2 3 4 6 9 12 18 36.
+what are the divisors of 39? the divisors of 39 are 1 3 13 39.
+делители 42 — это 1 2 3 6 7 14 21 42.
+the divisors of 45 are 1 3 5 9 15 45.
+каковы делители 47? делители 47 — это 1 47.
+what are the divisors of 50? the divisors of 50 are 1 2 5 10 25 50.
+делители 53 — это 1 53.
+the divisors of 32 are 1 2 4 8 16 32.
+каковы делители 34? делители 34 — это 1 2 17 34.
+what are the divisors of 37? the divisors of 37 are 1 37.
+делители 40 — это 1 2 4 5 8 10 20 40.
+the divisors of 43 are 1 43.
+каковы делители 45? делители 45 — это 1 3 5 9 15 45.
+what are the divisors of 48? the divisors of 48 are 1 2 3 4 6 8 12 16 24 48.
+делители 51 — это 1 3 17 51.
+the divisors of 30 are 1 2 3 5 6 10 15 30.
+каковы делители 32? делители 32 — это 1 2 4 8 16 32.
+what are the divisors of 35? the divisors of 35 are 1 5 7 35.
+делители 38 — это 1 2 19 38.
+the divisors of 41 are 1 41.
+каковы делители 43? делители 43 — это 1 43.
+what are the divisors of 46? the divisors of 46 are 1 2 23 46.
+делители 49 — это 1 7 49.
+the divisors of 52 are 1 2 4 13 26 52.
+каковы делители 30? делители 30 — это 1 2 3 5 6 10 15 30.
+what are the divisors of 33? the divisors of 33 are 1 3 11 33.
+делители 36 — это 1 2 3 4 6 9 12 18 36.
+the divisors of 39 are 1 3 13 39.
+каковы делители 41? делители 41 — это 1 41.
+what are the divisors of 44? the divisors of 44 are 1 2 4 11 22 44.
+делители 47 — это 1 47.
+the divisors of 50 are 1 2 5 10 25 50.
+каковы делители 52? делители 52 — это 1 2 4 13 26 52.
+what are the divisors of 31? the divisors of 31 are 1 31.
+делители 34 — это 1 2 17 34.
+the divisors of 37 are 1 37.
+каковы делители 39? делители 39 — это 1 3 13 39.
+what are the divisors of 42? the divisors of 42 are 1 2 3 6 7 14 21 42.
+делители 45 — это 1 3 5 9 15 45.
+the divisors of 48 are 1 2 3 4 6 8 12 16 24 48.
+каковы делители 50? делители 50 — это 1 2 5 10 25 50.
+what are the divisors of 53? the divisors of 53 are 1 53.
+делители 32 — это 1 2 4 8 16 32.
+the divisors of 35 are 1 5 7 35.
+каковы делители 37? делители 37 — это 1 37.
+what are the divisors of 40? the divisors of 40 are 1 2 4 5 8 10 20 40.
+делители 43 — это 1 43.
+the divisors of 46 are 1 2 23 46.
+каковы делители 48? делители 48 — это 1 2 3 4 6 8 12 16 24 48.
+what are the divisors of 51? the divisors of 51 are 1 3 17 51.
+делители 30 — это 1 2 3 5 6 10 15 30.
+the divisors of 33 are 1 3 11 33.
+каковы делители 35? делители 35 — это 1 5 7 35.
+what are the divisors of 38? the divisors of 38 are 1 2 19 38.
+делители 41 — это 1 41.
+the divisors of 44 are 1 2 4 11 22 44.
+каковы делители 46? делители 46 — это 1 2 23 46.
+what are the divisors of 49? the divisors of 49 are 1 7 49.
+делители 52 — это 1 2 4 13 26 52.
+the divisors of 31 are 1 31.
+каковы делители 33? делители 33 — это 1 3 11 33.
+what are the divisors of 36? the divisors of 36 are 1 2 3 4 6 9 12 18 36.
+делители 39 — это 1 3 13 39.
+the divisors of 42 are 1 2 3 6 7 14 21 42.
+каковы делители 44? делители 44 — это 1 2 4 11 22 44.
+what are the divisors of 47? the divisors of 47 are 1 47.
+делители 50 — это 1 2 5 10 25 50.
+the divisors of 53 are 1 53.
+каковы делители 31? делители 31 — это 1 31.
+what are the divisors of 34? the divisors of 34 are 1 2 17 34.
+делители 37 — это 1 37.
+the divisors of 40 are 1 2 4 5 8 10 20 40.
+каковы делители 42? делители 42 — это 1 2 3 6 7 14 21 42.
+what are the divisors of 45? the divisors of 45 are 1 3 5 9 15 45.
+делители 48 — это 1 2 3 4 6 8 12 16 24 48.
+the divisors of 51 are 1 3 17 51.
+каковы делители 53? делители 53 — это 1 53.
+what are the divisors of 32? the divisors of 32 are 1 2 4 8 16 32.
+делители 35 — это 1 5 7 35.
+the divisors of 38 are 1 2 19 38.
+каковы делители 40? делители 40 — это 1 2 4 5 8 10 20 40.
+what are the divisors of 43? the divisors of 43 are 1 43.
+делители 46 — это 1 2 23 46.
+the divisors of 49 are 1 7 49.
+каковы делители 51? делители 51 — это 1 3 17 51.
 
 8 and 0 are congruent modulo 2.
 11 по модулю 3 равно 2.
@@ -1504,363 +1616,419 @@ what is the remainder of a division? the remainder of a division is what is left
 the remainder of a division is what is left of the dividend after the largest whole multiple of the divisor is taken away.
 когда два числа сравнимы по модулю m? два числа сравнимы по модулю m, когда дают одинаковый остаток при делении на m.
 
-4 составное; 4 = 2 × 2.
-is 7 prime? 7 is prime; its divisors are 1 and 7.
-простое ли 10? 10 составное; 10 = 2 × 5.
-14 is not prime; 14 = 2 × 7.
-17 простое; его делители — 1 и 17.
-is 20 prime? 20 is not prime; 20 = 2 × 10.
-простое ли 23? 23 простое; его делители — 1 и 23.
-27 is not prime; 27 = 3 × 9.
-2 простое; его делители — 1 и 2.
-is 5 prime? 5 is prime; its divisors are 1 and 5.
-простое ли 8? 8 составное; 8 = 2 × 4.
-12 is not prime; 12 = 2 × 6.
-15 составное; 15 = 3 × 5.
-is 18 prime? 18 is not prime; 18 = 2 × 9.
-простое ли 21? 21 составное; 21 = 3 × 7.
-25 is not prime; 25 = 5 × 5.
-28 составное; 28 = 2 × 14.
-is 3 prime? 3 is prime; its divisors are 1 and 3.
-простое ли 6? 6 составное; 6 = 2 × 3.
-10 is not prime; 10 = 2 × 5.
-13 простое; его делители — 1 и 13.
-is 16 prime? 16 is not prime; 16 = 2 × 8.
-простое ли 19? 19 простое; его делители — 1 и 19.
-23 is prime; its divisors are 1 and 23.
-26 составное; 26 = 2 × 13.
-is 29 prime? 29 is prime; its divisors are 1 and 29.
-простое ли 4? 4 составное; 4 = 2 × 2.
-8 is not prime; 8 = 2 × 4.
-11 простое; его делители — 1 и 11.
-is 14 prime? 14 is not prime; 14 = 2 × 7.
-простое ли 17? 17 простое; его делители — 1 и 17.
-21 is not prime; 21 = 3 × 7.
-24 составное; 24 = 2 × 12.
-is 27 prime? 27 is not prime; 27 = 3 × 9.
-простое ли 2? 2 простое; его делители — 1 и 2.
-6 is not prime; 6 = 2 × 3.
-9 составное; 9 = 3 × 3.
-is 12 prime? 12 is not prime; 12 = 2 × 6.
-простое ли 15? 15 составное; 15 = 3 × 5.
-19 is prime; its divisors are 1 and 19.
-22 составное; 22 = 2 × 11.
-is 25 prime? 25 is not prime; 25 = 5 × 5.
-простое ли 28? 28 составное; 28 = 2 × 14.
-4 is not prime; 4 = 2 × 2.
-7 простое; его делители — 1 и 7.
-is 10 prime? 10 is not prime; 10 = 2 × 5.
-простое ли 13? 13 простое; его делители — 1 и 13.
-17 is prime; its divisors are 1 and 17.
-20 составное; 20 = 2 × 10.
-is 23 prime? 23 is prime; its divisors are 1 and 23.
-простое ли 26? 26 составное; 26 = 2 × 13.
-2 is prime; its divisors are 1 and 2.
-5 простое; его делители — 1 и 5.
-is 8 prime? 8 is not prime; 8 = 2 × 4.
-простое ли 11? 11 простое; его делители — 1 и 11.
-15 is not prime; 15 = 3 × 5.
-18 составное; 18 = 2 × 9.
-is 21 prime? 21 is not prime; 21 = 3 × 7.
-простое ли 24? 24 составное; 24 = 2 × 12.
-28 is not prime; 28 = 2 × 14.
-3 простое; его делители — 1 и 3.
-is 6 prime? 6 is not prime; 6 = 2 × 3.
-простое ли 9? 9 составное; 9 = 3 × 3.
-13 is prime; its divisors are 1 and 13.
-16 составное; 16 = 2 × 8.
-is 19 prime? 19 is prime; its divisors are 1 and 19.
-простое ли 22? 22 составное; 22 = 2 × 11.
-26 is not prime; 26 = 2 × 13.
-29 простое; его делители — 1 и 29.
-is 4 prime? 4 is not prime; 4 = 2 × 2.
-простое ли 7? 7 простое; его делители — 1 и 7.
-11 is prime; its divisors are 1 and 11.
-14 составное; 14 = 2 × 7.
-is 17 prime? 17 is prime; its divisors are 1 and 17.
-простое ли 20? 20 составное; 20 = 2 × 10.
-24 is not prime; 24 = 2 × 12.
-27 составное; 27 = 3 × 9.
-is 2 prime? 2 is prime; its divisors are 1 and 2.
-простое ли 5? 5 простое; его делители — 1 и 5.
-9 is not prime; 9 = 3 × 3.
-12 составное; 12 = 2 × 6.
-is 15 prime? 15 is not prime; 15 = 3 × 5.
-простое ли 18? 18 составное; 18 = 2 × 9.
-22 is not prime; 22 = 2 × 11.
-25 составное; 25 = 5 × 5.
-is 28 prime? 28 is not prime; 28 = 2 × 14.
-простое ли 3? 3 простое; его делители — 1 и 3.
-7 is prime; its divisors are 1 and 7.
-10 составное; 10 = 2 × 5.
-is 13 prime? 13 is prime; its divisors are 1 and 13.
-простое ли 16? 16 составное; 16 = 2 × 8.
-20 is not prime; 20 = 2 × 10.
-23 простое; его делители — 1 и 23.
-is 26 prime? 26 is not prime; 26 = 2 × 13.
-простое ли 29? 29 простое; его делители — 1 и 29.
-5 is prime; its divisors are 1 and 5.
-8 составное; 8 = 2 × 4.
-is 11 prime? 11 is prime; its divisors are 1 and 11.
-простое ли 14? 14 составное; 14 = 2 × 7.
-18 is not prime; 18 = 2 × 9.
-21 составное; 21 = 3 × 7.
-is 24 prime? 24 is not prime; 24 = 2 × 12.
-простое ли 27? 27 составное; 27 = 3 × 9.
-3 is prime; its divisors are 1 and 3.
-6 составное; 6 = 2 × 3.
-is 9 prime? 9 is not prime; 9 = 3 × 3.
-простое ли 12? 12 составное; 12 = 2 × 6.
-16 is not prime; 16 = 2 × 8.
-19 простое; его делители — 1 и 19.
-is 22 prime? 22 is not prime; 22 = 2 × 11.
-простое ли 25? 25 составное; 25 = 5 × 5.
-29 is prime; its divisors are 1 and 29.
+does 59 have exactly two divisors? yes: 59 is prime; its divisors are 1 and 59.
+является ли 61 простым числом? да: 61 простое; его делители — 1 и 61.
+простое ли число 63? нет: 63 составное; 63 = 3 × 21.
+66 is not prime; 66 = 2 × 33.
+68 составное; 68 = 2 × 34.
+is 70 a prime number? no: 70 is not prime; 70 = 2 × 35.
+does 72 have exactly two divisors? no: 72 is not prime; 72 = 2 × 36.
+является ли 74 простым числом? нет: 74 составное; 74 = 2 × 37.
+простое ли число 76? нет: 76 составное; 76 = 2 × 38.
+79 is prime; its divisors are 1 and 79.
+81 составное; 81 = 3 × 27.
+is 83 a prime number? yes: 83 is prime; its divisors are 1 and 83.
+does 85 have exactly two divisors? no: 85 is not prime; 85 = 5 × 17.
+является ли 59 простым числом? да: 59 простое; его делители — 1 и 59.
+простое ли число 61? да: 61 простое; его делители — 1 и 61.
+64 is not prime; 64 = 2 × 32.
+66 составное; 66 = 2 × 33.
+is 68 a prime number? no: 68 is not prime; 68 = 2 × 34.
+does 70 have exactly two divisors? no: 70 is not prime; 70 = 2 × 35.
+является ли 72 простым числом? нет: 72 составное; 72 = 2 × 36.
+простое ли число 74? нет: 74 составное; 74 = 2 × 37.
+77 is not prime; 77 = 7 × 11.
+79 простое; его делители — 1 и 79.
+is 81 a prime number? no: 81 is not prime; 81 = 3 × 27.
+does 83 have exactly two divisors? yes: 83 is prime; its divisors are 1 and 83.
+является ли 85 простым числом? нет: 85 составное; 85 = 5 × 17.
+простое ли число 59? да: 59 простое; его делители — 1 и 59.
+62 is not prime; 62 = 2 × 31.
+64 составное; 64 = 2 × 32.
+is 66 a prime number? no: 66 is not prime; 66 = 2 × 33.
+does 68 have exactly two divisors? no: 68 is not prime; 68 = 2 × 34.
+является ли 70 простым числом? нет: 70 составное; 70 = 2 × 35.
+простое ли число 72? нет: 72 составное; 72 = 2 × 36.
+75 is not prime; 75 = 3 × 25.
+77 составное; 77 = 7 × 11.
+is 79 a prime number? yes: 79 is prime; its divisors are 1 and 79.
+does 81 have exactly two divisors? no: 81 is not prime; 81 = 3 × 27.
+является ли 83 простым числом? да: 83 простое; его делители — 1 и 83.
+простое ли число 85? нет: 85 составное; 85 = 5 × 17.
+60 is not prime; 60 = 2 × 30.
+62 составное; 62 = 2 × 31.
+is 64 a prime number? no: 64 is not prime; 64 = 2 × 32.
+does 66 have exactly two divisors? no: 66 is not prime; 66 = 2 × 33.
+является ли 68 простым числом? нет: 68 составное; 68 = 2 × 34.
+простое ли число 70? нет: 70 составное; 70 = 2 × 35.
+73 is prime; its divisors are 1 and 73.
+75 составное; 75 = 3 × 25.
+is 77 a prime number? no: 77 is not prime; 77 = 7 × 11.
+does 79 have exactly two divisors? yes: 79 is prime; its divisors are 1 and 79.
+является ли 81 простым числом? нет: 81 составное; 81 = 3 × 27.
+простое ли число 83? да: 83 простое; его делители — 1 и 83.
+58 is not prime; 58 = 2 × 29.
+60 составное; 60 = 2 × 30.
+is 62 a prime number? no: 62 is not prime; 62 = 2 × 31.
+does 64 have exactly two divisors? no: 64 is not prime; 64 = 2 × 32.
+является ли 66 простым числом? нет: 66 составное; 66 = 2 × 33.
+простое ли число 68? нет: 68 составное; 68 = 2 × 34.
+71 is prime; its divisors are 1 and 71.
+73 простое; его делители — 1 и 73.
+is 75 a prime number? no: 75 is not prime; 75 = 3 × 25.
+does 77 have exactly two divisors? no: 77 is not prime; 77 = 7 × 11.
+является ли 79 простым числом? да: 79 простое; его делители — 1 и 79.
+простое ли число 81? нет: 81 составное; 81 = 3 × 27.
+84 is not prime; 84 = 2 × 42.
+58 составное; 58 = 2 × 29.
+is 60 a prime number? no: 60 is not prime; 60 = 2 × 30.
+does 62 have exactly two divisors? no: 62 is not prime; 62 = 2 × 31.
+является ли 64 простым числом? нет: 64 составное; 64 = 2 × 32.
+простое ли число 66? нет: 66 составное; 66 = 2 × 33.
+69 is not prime; 69 = 3 × 23.
+71 простое; его делители — 1 и 71.
+is 73 a prime number? yes: 73 is prime; its divisors are 1 and 73.
+does 75 have exactly two divisors? no: 75 is not prime; 75 = 3 × 25.
+является ли 77 простым числом? нет: 77 составное; 77 = 7 × 11.
+простое ли число 79? да: 79 простое; его делители — 1 и 79.
+82 is not prime; 82 = 2 × 41.
+84 составное; 84 = 2 × 42.
+is 58 a prime number? no: 58 is not prime; 58 = 2 × 29.
+does 60 have exactly two divisors? no: 60 is not prime; 60 = 2 × 30.
+является ли 62 простым числом? нет: 62 составное; 62 = 2 × 31.
+простое ли число 64? нет: 64 составное; 64 = 2 × 32.
+67 is prime; its divisors are 1 and 67.
+69 составное; 69 = 3 × 23.
+is 71 a prime number? yes: 71 is prime; its divisors are 1 and 71.
+does 73 have exactly two divisors? yes: 73 is prime; its divisors are 1 and 73.
+является ли 75 простым числом? нет: 75 составное; 75 = 3 × 25.
+простое ли число 77? нет: 77 составное; 77 = 7 × 11.
+80 is not prime; 80 = 2 × 40.
+82 составное; 82 = 2 × 41.
+is 84 a prime number? no: 84 is not prime; 84 = 2 × 42.
+does 58 have exactly two divisors? no: 58 is not prime; 58 = 2 × 29.
+является ли 60 простым числом? нет: 60 составное; 60 = 2 × 30.
+простое ли число 62? нет: 62 составное; 62 = 2 × 31.
+65 is not prime; 65 = 5 × 13.
+67 простое; его делители — 1 и 67.
+is 69 a prime number? no: 69 is not prime; 69 = 3 × 23.
+does 71 have exactly two divisors? yes: 71 is prime; its divisors are 1 and 71.
+является ли 73 простым числом? да: 73 простое; его делители — 1 и 73.
+простое ли число 75? нет: 75 составное; 75 = 3 × 25.
+78 is not prime; 78 = 2 × 39.
+80 составное; 80 = 2 × 40.
+is 82 a prime number? no: 82 is not prime; 82 = 2 × 41.
+does 84 have exactly two divisors? no: 84 is not prime; 84 = 2 × 42.
+является ли 58 простым числом? нет: 58 составное; 58 = 2 × 29.
+простое ли число 60? нет: 60 составное; 60 = 2 × 30.
+63 is not prime; 63 = 3 × 21.
+65 составное; 65 = 5 × 13.
+is 67 a prime number? yes: 67 is prime; its divisors are 1 and 67.
+does 69 have exactly two divisors? no: 69 is not prime; 69 = 3 × 23.
+является ли 71 простым числом? да: 71 простое; его делители — 1 и 71.
+простое ли число 73? да: 73 простое; его делители — 1 и 73.
+76 is not prime; 76 = 2 × 38.
+78 составное; 78 = 2 × 39.
+is 80 a prime number? no: 80 is not prime; 80 = 2 × 40.
+does 82 have exactly two divisors? no: 82 is not prime; 82 = 2 × 41.
+является ли 84 простым числом? нет: 84 составное; 84 = 2 × 42.
+простое ли число 58? нет: 58 составное; 58 = 2 × 29.
+61 is prime; its divisors are 1 and 61.
+63 составное; 63 = 3 × 21.
+is 65 a prime number? no: 65 is not prime; 65 = 5 × 13.
+does 67 have exactly two divisors? yes: 67 is prime; its divisors are 1 and 67.
+является ли 69 простым числом? нет: 69 составное; 69 = 3 × 23.
+простое ли число 71? да: 71 простое; его делители — 1 и 71.
+74 is not prime; 74 = 2 × 37.
+76 составное; 76 = 2 × 38.
+is 78 a prime number? no: 78 is not prime; 78 = 2 × 39.
+does 80 have exactly two divisors? no: 80 is not prime; 80 = 2 × 40.
+является ли 82 простым числом? нет: 82 составное; 82 = 2 × 41.
+простое ли число 84? нет: 84 составное; 84 = 2 × 42.
+59 is prime; its divisors are 1 and 59.
+61 простое; его делители — 1 и 61.
+is 63 a prime number? no: 63 is not prime; 63 = 3 × 21.
+does 65 have exactly two divisors? no: 65 is not prime; 65 = 5 × 13.
+является ли 67 простым числом? да: 67 простое; его делители — 1 и 67.
+простое ли число 69? нет: 69 составное; 69 = 3 × 23.
+72 is not prime; 72 = 2 × 36.
+74 составное; 74 = 2 × 37.
+is 76 a prime number? no: 76 is not prime; 76 = 2 × 38.
+does 78 have exactly two divisors? no: 78 is not prime; 78 = 2 × 39.
+является ли 80 простым числом? нет: 80 составное; 80 = 2 × 40.
+простое ли число 82? нет: 82 составное; 82 = 2 × 41.
+85 is not prime; 85 = 5 × 17.
+59 простое; его делители — 1 и 59.
+is 61 a prime number? yes: 61 is prime; its divisors are 1 and 61.
+does 63 have exactly two divisors? no: 63 is not prime; 63 = 3 × 21.
+является ли 65 простым числом? нет: 65 составное; 65 = 5 × 13.
+простое ли число 67? да: 67 простое; его делители — 1 и 67.
+70 is not prime; 70 = 2 × 35.
+72 составное; 72 = 2 × 36.
+is 74 a prime number? no: 74 is not prime; 74 = 2 × 37.
+does 76 have exactly two divisors? no: 76 is not prime; 76 = 2 × 38.
+является ли 78 простым числом? нет: 78 составное; 78 = 2 × 39.
+простое ли число 80? нет: 80 составное; 80 = 2 × 40.
+83 is prime; its divisors are 1 and 83.
+85 составное; 85 = 5 × 17.
+is 59 a prime number? yes: 59 is prime; its divisors are 1 and 59.
+does 61 have exactly two divisors? yes: 61 is prime; its divisors are 1 and 61.
+является ли 63 простым числом? нет: 63 составное; 63 = 3 × 21.
+простое ли число 65? нет: 65 составное; 65 = 5 × 13.
+68 is not prime; 68 = 2 × 34.
+70 составное; 70 = 2 × 35.
+is 72 a prime number? no: 72 is not prime; 72 = 2 × 36.
+does 74 have exactly two divisors? no: 74 is not prime; 74 = 2 × 37.
+является ли 76 простым числом? нет: 76 составное; 76 = 2 × 38.
+простое ли число 78? нет: 78 составное; 78 = 2 × 39.
+81 is not prime; 81 = 3 × 27.
+83 простое; его делители — 1 и 83.
+is 85 a prime number? no: 85 is not prime; 85 = 5 × 17.
 
 простое ли 1? 1 ни простое, ни составное: его единственный делитель — 1.
 is 1 prime? 1 is neither prime nor composite: its only divisor is 1.
 
-6 раскладывается в 2 × 3.
-what does 9 factorise into? 9 factorises into 3 × 3.
-во что раскладывается 12? 12 раскладывается в 2 × 2 × 3.
-16 factorises into 2 × 2 × 2 × 2.
-19 раскладывается в 19.
-what does 22 factorise into? 22 factorises into 2 × 11.
-во что раскладывается 25? 25 раскладывается в 5 × 5.
-29 factorises into 29.
-32 раскладывается в 2 × 2 × 2 × 2 × 2.
-what does 35 factorise into? 35 factorises into 5 × 7.
-во что раскладывается 38? 38 раскладывается в 2 × 19.
-6 factorises into 2 × 3.
-9 раскладывается в 3 × 3.
-what does 12 factorise into? 12 factorises into 2 × 2 × 3.
-во что раскладывается 15? 15 раскладывается в 3 × 5.
-19 factorises into 19.
-22 раскладывается в 2 × 11.
-what does 25 factorise into? 25 factorises into 5 × 5.
-во что раскладывается 28? 28 раскладывается в 2 × 2 × 7.
-32 factorises into 2 × 2 × 2 × 2 × 2.
-35 раскладывается в 5 × 7.
-what does 38 factorise into? 38 factorises into 2 × 19.
-во что раскладывается 5? 5 раскладывается в 5.
-9 factorises into 3 × 3.
-12 раскладывается в 2 × 2 × 3.
-what does 15 factorise into? 15 factorises into 3 × 5.
-во что раскладывается 18? 18 раскладывается в 2 × 3 × 3.
-22 factorises into 2 × 11.
-25 раскладывается в 5 × 5.
-what does 28 factorise into? 28 factorises into 2 × 2 × 7.
-во что раскладывается 31? 31 раскладывается в 31.
-35 factorises into 5 × 7.
-38 раскладывается в 2 × 19.
-what does 5 factorise into? 5 factorises into 5.
-во что раскладывается 8? 8 раскладывается в 2 × 2 × 2.
-12 factorises into 2 × 2 × 3.
-15 раскладывается в 3 × 5.
-what does 18 factorise into? 18 factorises into 2 × 3 × 3.
-во что раскладывается 21? 21 раскладывается в 3 × 7.
-25 factorises into 5 × 5.
-28 раскладывается в 2 × 2 × 7.
-what does 31 factorise into? 31 factorises into 31.
-во что раскладывается 34? 34 раскладывается в 2 × 17.
-38 factorises into 2 × 19.
-5 раскладывается в 5.
-what does 8 factorise into? 8 factorises into 2 × 2 × 2.
-во что раскладывается 11? 11 раскладывается в 11.
-15 factorises into 3 × 5.
-18 раскладывается в 2 × 3 × 3.
-what does 21 factorise into? 21 factorises into 3 × 7.
-во что раскладывается 24? 24 раскладывается в 2 × 2 × 2 × 3.
-28 factorises into 2 × 2 × 7.
-31 раскладывается в 31.
-what does 34 factorise into? 34 factorises into 2 × 17.
-во что раскладывается 37? 37 раскладывается в 37.
-5 factorises into 5.
-8 раскладывается в 2 × 2 × 2.
-what does 11 factorise into? 11 factorises into 11.
-во что раскладывается 14? 14 раскладывается в 2 × 7.
-18 factorises into 2 × 3 × 3.
-21 раскладывается в 3 × 7.
-what does 24 factorise into? 24 factorises into 2 × 2 × 2 × 3.
-во что раскладывается 27? 27 раскладывается в 3 × 3 × 3.
-31 factorises into 31.
-34 раскладывается в 2 × 17.
-what does 37 factorise into? 37 factorises into 37.
-во что раскладывается 4? 4 раскладывается в 2 × 2.
-8 factorises into 2 × 2 × 2.
-11 раскладывается в 11.
-what does 14 factorise into? 14 factorises into 2 × 7.
-во что раскладывается 17? 17 раскладывается в 17.
-21 factorises into 3 × 7.
-24 раскладывается в 2 × 2 × 2 × 3.
-what does 27 factorise into? 27 factorises into 3 × 3 × 3.
-во что раскладывается 30? 30 раскладывается в 2 × 3 × 5.
-34 factorises into 2 × 17.
-37 раскладывается в 37.
-what does 4 factorise into? 4 factorises into 2 × 2.
-во что раскладывается 7? 7 раскладывается в 7.
-11 factorises into 11.
-14 раскладывается в 2 × 7.
-what does 17 factorise into? 17 factorises into 17.
-во что раскладывается 20? 20 раскладывается в 2 × 2 × 5.
-24 factorises into 2 × 2 × 2 × 3.
-27 раскладывается в 3 × 3 × 3.
-what does 30 factorise into? 30 factorises into 2 × 3 × 5.
-во что раскладывается 33? 33 раскладывается в 3 × 11.
-37 factorises into 37.
-4 раскладывается в 2 × 2.
-what does 7 factorise into? 7 factorises into 7.
-во что раскладывается 10? 10 раскладывается в 2 × 5.
-14 factorises into 2 × 7.
-17 раскладывается в 17.
-what does 20 factorise into? 20 factorises into 2 × 2 × 5.
-во что раскладывается 23? 23 раскладывается в 23.
-27 factorises into 3 × 3 × 3.
-30 раскладывается в 2 × 3 × 5.
-what does 33 factorise into? 33 factorises into 3 × 11.
-во что раскладывается 36? 36 раскладывается в 2 × 2 × 3 × 3.
-4 factorises into 2 × 2.
-7 раскладывается в 7.
-what does 10 factorise into? 10 factorises into 2 × 5.
-во что раскладывается 13? 13 раскладывается в 13.
-17 factorises into 17.
-20 раскладывается в 2 × 2 × 5.
-what does 23 factorise into? 23 factorises into 23.
-во что раскладывается 26? 26 раскладывается в 2 × 13.
-30 factorises into 2 × 3 × 5.
-33 раскладывается в 3 × 11.
-what does 36 factorise into? 36 factorises into 2 × 2 × 3 × 3.
-во что раскладывается 39? 39 раскладывается в 3 × 13.
-7 factorises into 7.
-10 раскладывается в 2 × 5.
-what does 13 factorise into? 13 factorises into 13.
-во что раскладывается 16? 16 раскладывается в 2 × 2 × 2 × 2.
-20 factorises into 2 × 2 × 5.
-23 раскладывается в 23.
-what does 26 factorise into? 26 factorises into 2 × 13.
-во что раскладывается 29? 29 раскладывается в 29.
-33 factorises into 3 × 11.
-36 раскладывается в 2 × 2 × 3 × 3.
-what does 39 factorise into? 39 factorises into 3 × 13.
-во что раскладывается 6? 6 раскладывается в 2 × 3.
-10 factorises into 2 × 5.
-13 раскладывается в 13.
-what does 16 factorise into? 16 factorises into 2 × 2 × 2 × 2.
-во что раскладывается 19? 19 раскладывается в 19.
-23 factorises into 23.
-26 раскладывается в 2 × 13.
-what does 29 factorise into? 29 factorises into 29.
-во что раскладывается 32? 32 раскладывается в 2 × 2 × 2 × 2 × 2.
-36 factorises into 2 × 2 × 3 × 3.
-39 раскладывается в 3 × 13.
-what does 6 factorise into? 6 factorises into 2 × 3.
-во что раскладывается 9? 9 раскладывается в 3 × 3.
-13 factorises into 13.
-16 раскладывается в 2 × 2 × 2 × 2.
-what does 19 factorise into? 19 factorises into 19.
-во что раскладывается 22? 22 раскладывается в 2 × 11.
-26 factorises into 2 × 13.
-29 раскладывается в 29.
-what does 32 factorise into? 32 factorises into 2 × 2 × 2 × 2 × 2.
-во что раскладывается 35? 35 раскладывается в 5 × 7.
-39 factorises into 3 × 13.
+78 раскладывается в 2 × 3 × 13.
+what does 81 factorise into? 81 factorises into 3 × 3 × 3 × 3.
+во что раскладывается 84? 84 раскладывается в 2 × 2 × 3 × 7.
+88 factorises into 2 × 2 × 2 × 11.
+91 раскладывается в 7 × 13.
+what does 94 factorise into? 94 factorises into 2 × 47.
+во что раскладывается 97? 97 раскладывается в 97.
+101 factorises into 101.
+104 раскладывается в 2 × 2 × 2 × 13.
+what does 107 factorise into? 107 factorises into 107.
+во что раскладывается 110? 110 раскладывается в 2 × 5 × 11.
+78 factorises into 2 × 3 × 13.
+81 раскладывается в 3 × 3 × 3 × 3.
+what does 84 factorise into? 84 factorises into 2 × 2 × 3 × 7.
+во что раскладывается 87? 87 раскладывается в 3 × 29.
+91 factorises into 7 × 13.
+94 раскладывается в 2 × 47.
+what does 97 factorise into? 97 factorises into 97.
+во что раскладывается 100? 100 раскладывается в 2 × 2 × 5 × 5.
+104 factorises into 2 × 2 × 2 × 13.
+107 раскладывается в 107.
+what does 110 factorise into? 110 factorises into 2 × 5 × 11.
+во что раскладывается 77? 77 раскладывается в 7 × 11.
+81 factorises into 3 × 3 × 3 × 3.
+84 раскладывается в 2 × 2 × 3 × 7.
+what does 87 factorise into? 87 factorises into 3 × 29.
+во что раскладывается 90? 90 раскладывается в 2 × 3 × 3 × 5.
+94 factorises into 2 × 47.
+97 раскладывается в 97.
+what does 100 factorise into? 100 factorises into 2 × 2 × 5 × 5.
+во что раскладывается 103? 103 раскладывается в 103.
+107 factorises into 107.
+110 раскладывается в 2 × 5 × 11.
+what does 77 factorise into? 77 factorises into 7 × 11.
+во что раскладывается 80? 80 раскладывается в 2 × 2 × 2 × 2 × 5.
+84 factorises into 2 × 2 × 3 × 7.
+87 раскладывается в 3 × 29.
+what does 90 factorise into? 90 factorises into 2 × 3 × 3 × 5.
+во что раскладывается 93? 93 раскладывается в 3 × 31.
+97 factorises into 97.
+100 раскладывается в 2 × 2 × 5 × 5.
+what does 103 factorise into? 103 factorises into 103.
+во что раскладывается 106? 106 раскладывается в 2 × 53.
+110 factorises into 2 × 5 × 11.
+77 раскладывается в 7 × 11.
+what does 80 factorise into? 80 factorises into 2 × 2 × 2 × 2 × 5.
+во что раскладывается 83? 83 раскладывается в 83.
+87 factorises into 3 × 29.
+90 раскладывается в 2 × 3 × 3 × 5.
+what does 93 factorise into? 93 factorises into 3 × 31.
+во что раскладывается 96? 96 раскладывается в 2 × 2 × 2 × 2 × 2 × 3.
+100 factorises into 2 × 2 × 5 × 5.
+103 раскладывается в 103.
+what does 106 factorise into? 106 factorises into 2 × 53.
+во что раскладывается 109? 109 раскладывается в 109.
+77 factorises into 7 × 11.
+80 раскладывается в 2 × 2 × 2 × 2 × 5.
+what does 83 factorise into? 83 factorises into 83.
+во что раскладывается 86? 86 раскладывается в 2 × 43.
+90 factorises into 2 × 3 × 3 × 5.
+93 раскладывается в 3 × 31.
+what does 96 factorise into? 96 factorises into 2 × 2 × 2 × 2 × 2 × 3.
+во что раскладывается 99? 99 раскладывается в 3 × 3 × 11.
+103 factorises into 103.
+106 раскладывается в 2 × 53.
+what does 109 factorise into? 109 factorises into 109.
+во что раскладывается 76? 76 раскладывается в 2 × 2 × 19.
+80 factorises into 2 × 2 × 2 × 2 × 5.
+83 раскладывается в 83.
+what does 86 factorise into? 86 factorises into 2 × 43.
+во что раскладывается 89? 89 раскладывается в 89.
+93 factorises into 3 × 31.
+96 раскладывается в 2 × 2 × 2 × 2 × 2 × 3.
+what does 99 factorise into? 99 factorises into 3 × 3 × 11.
+во что раскладывается 102? 102 раскладывается в 2 × 3 × 17.
+106 factorises into 2 × 53.
+109 раскладывается в 109.
+what does 76 factorise into? 76 factorises into 2 × 2 × 19.
+во что раскладывается 79? 79 раскладывается в 79.
+83 factorises into 83.
+86 раскладывается в 2 × 43.
+what does 89 factorise into? 89 factorises into 89.
+во что раскладывается 92? 92 раскладывается в 2 × 2 × 23.
+96 factorises into 2 × 2 × 2 × 2 × 2 × 3.
+99 раскладывается в 3 × 3 × 11.
+what does 102 factorise into? 102 factorises into 2 × 3 × 17.
+во что раскладывается 105? 105 раскладывается в 3 × 5 × 7.
+109 factorises into 109.
+76 раскладывается в 2 × 2 × 19.
+what does 79 factorise into? 79 factorises into 79.
+во что раскладывается 82? 82 раскладывается в 2 × 41.
+86 factorises into 2 × 43.
+89 раскладывается в 89.
+what does 92 factorise into? 92 factorises into 2 × 2 × 23.
+во что раскладывается 95? 95 раскладывается в 5 × 19.
+99 factorises into 3 × 3 × 11.
+102 раскладывается в 2 × 3 × 17.
+what does 105 factorise into? 105 factorises into 3 × 5 × 7.
+во что раскладывается 108? 108 раскладывается в 2 × 2 × 3 × 3 × 3.
+76 factorises into 2 × 2 × 19.
+79 раскладывается в 79.
+what does 82 factorise into? 82 factorises into 2 × 41.
+во что раскладывается 85? 85 раскладывается в 5 × 17.
+89 factorises into 89.
+92 раскладывается в 2 × 2 × 23.
+what does 95 factorise into? 95 factorises into 5 × 19.
+во что раскладывается 98? 98 раскладывается в 2 × 7 × 7.
+102 factorises into 2 × 3 × 17.
+105 раскладывается в 3 × 5 × 7.
+what does 108 factorise into? 108 factorises into 2 × 2 × 3 × 3 × 3.
+во что раскладывается 111? 111 раскладывается в 3 × 37.
+79 factorises into 79.
+82 раскладывается в 2 × 41.
+what does 85 factorise into? 85 factorises into 5 × 17.
+во что раскладывается 88? 88 раскладывается в 2 × 2 × 2 × 11.
+92 factorises into 2 × 2 × 23.
+95 раскладывается в 5 × 19.
+what does 98 factorise into? 98 factorises into 2 × 7 × 7.
+во что раскладывается 101? 101 раскладывается в 101.
+105 factorises into 3 × 5 × 7.
+108 раскладывается в 2 × 2 × 3 × 3 × 3.
+what does 111 factorise into? 111 factorises into 3 × 37.
+во что раскладывается 78? 78 раскладывается в 2 × 3 × 13.
+82 factorises into 2 × 41.
+85 раскладывается в 5 × 17.
+what does 88 factorise into? 88 factorises into 2 × 2 × 2 × 11.
+во что раскладывается 91? 91 раскладывается в 7 × 13.
+95 factorises into 5 × 19.
+98 раскладывается в 2 × 7 × 7.
+what does 101 factorise into? 101 factorises into 101.
+во что раскладывается 104? 104 раскладывается в 2 × 2 × 2 × 13.
+108 factorises into 2 × 2 × 3 × 3 × 3.
+111 раскладывается в 3 × 37.
+what does 78 factorise into? 78 factorises into 2 × 3 × 13.
+во что раскладывается 81? 81 раскладывается в 3 × 3 × 3 × 3.
+85 factorises into 5 × 17.
+88 раскладывается в 2 × 2 × 2 × 11.
+what does 91 factorise into? 91 factorises into 7 × 13.
+во что раскладывается 94? 94 раскладывается в 2 × 47.
+98 factorises into 2 × 7 × 7.
+101 раскладывается в 101.
+what does 104 factorise into? 104 factorises into 2 × 2 × 2 × 13.
+во что раскладывается 107? 107 раскладывается в 107.
+111 factorises into 3 × 37.
 
-делители 8 — это 1 2 4 8.
-what are the divisors of 11? the divisors of 11 are 1 11.
-каковы делители 14? делители 14 — это 1 2 7 14.
-the divisors of 18 are 1 2 3 6 9 18.
-делители 21 — это 1 3 7 21.
-what are the divisors of 24? the divisors of 24 are 1 2 3 4 6 8 12 24.
-каковы делители 27? делители 27 — это 1 3 9 27.
-the divisors of 7 are 1 7.
-делители 10 — это 1 2 5 10.
-what are the divisors of 13? the divisors of 13 are 1 13.
-каковы делители 16? делители 16 — это 1 2 4 8 16.
-the divisors of 20 are 1 2 4 5 10 20.
-делители 23 — это 1 23.
-what are the divisors of 26? the divisors of 26 are 1 2 13 26.
-каковы делители 29? делители 29 — это 1 29.
-the divisors of 9 are 1 3 9.
-делители 12 — это 1 2 3 4 6 12.
-what are the divisors of 15? the divisors of 15 are 1 3 5 15.
-каковы делители 18? делители 18 — это 1 2 3 6 9 18.
-the divisors of 22 are 1 2 11 22.
-делители 25 — это 1 5 25.
-what are the divisors of 28? the divisors of 28 are 1 2 4 7 14 28.
-каковы делители 7? делители 7 — это 1 7.
-the divisors of 11 are 1 11.
-делители 14 — это 1 2 7 14.
-what are the divisors of 17? the divisors of 17 are 1 17.
-каковы делители 20? делители 20 — это 1 2 4 5 10 20.
-the divisors of 24 are 1 2 3 4 6 8 12 24.
-делители 27 — это 1 3 9 27.
-what are the divisors of 6? the divisors of 6 are 1 2 3 6.
-каковы делители 9? делители 9 — это 1 3 9.
-the divisors of 13 are 1 13.
-делители 16 — это 1 2 4 8 16.
-what are the divisors of 19? the divisors of 19 are 1 19.
-каковы делители 22? делители 22 — это 1 2 11 22.
-the divisors of 26 are 1 2 13 26.
-делители 29 — это 1 29.
-what are the divisors of 8? the divisors of 8 are 1 2 4 8.
-каковы делители 11? делители 11 — это 1 11.
-the divisors of 15 are 1 3 5 15.
-делители 18 — это 1 2 3 6 9 18.
-what are the divisors of 21? the divisors of 21 are 1 3 7 21.
-каковы делители 24? делители 24 — это 1 2 3 4 6 8 12 24.
-the divisors of 28 are 1 2 4 7 14 28.
-делители 7 — это 1 7.
-what are the divisors of 10? the divisors of 10 are 1 2 5 10.
-каковы делители 13? делители 13 — это 1 13.
-the divisors of 17 are 1 17.
-делители 20 — это 1 2 4 5 10 20.
-what are the divisors of 23? the divisors of 23 are 1 23.
-каковы делители 26? делители 26 — это 1 2 13 26.
-the divisors of 6 are 1 2 3 6.
-делители 9 — это 1 3 9.
-what are the divisors of 12? the divisors of 12 are 1 2 3 4 6 12.
-каковы делители 15? делители 15 — это 1 3 5 15.
-the divisors of 19 are 1 19.
-делители 22 — это 1 2 11 22.
-what are the divisors of 25? the divisors of 25 are 1 5 25.
-каковы делители 28? делители 28 — это 1 2 4 7 14 28.
-the divisors of 8 are 1 2 4 8.
-делители 11 — это 1 11.
-what are the divisors of 14? the divisors of 14 are 1 2 7 14.
-каковы делители 17? делители 17 — это 1 17.
-the divisors of 21 are 1 3 7 21.
-делители 24 — это 1 2 3 4 6 8 12 24.
-what are the divisors of 27? the divisors of 27 are 1 3 9 27.
-каковы делители 6? делители 6 — это 1 2 3 6.
-the divisors of 10 are 1 2 5 10.
-делители 13 — это 1 13.
-what are the divisors of 16? the divisors of 16 are 1 2 4 8 16.
-каковы делители 19? делители 19 — это 1 19.
-the divisors of 23 are 1 23.
-делители 26 — это 1 2 13 26.
-what are the divisors of 29? the divisors of 29 are 1 29.
-каковы делители 8? делители 8 — это 1 2 4 8.
-the divisors of 12 are 1 2 3 4 6 12.
-делители 15 — это 1 3 5 15.
-what are the divisors of 18? the divisors of 18 are 1 2 3 6 9 18.
-каковы делители 21? делители 21 — это 1 3 7 21.
-the divisors of 25 are 1 5 25.
-делители 28 — это 1 2 4 7 14 28.
-what are the divisors of 7? the divisors of 7 are 1 7.
-каковы делители 10? делители 10 — это 1 2 5 10.
-the divisors of 14 are 1 2 7 14.
-делители 17 — это 1 17.
-what are the divisors of 20? the divisors of 20 are 1 2 4 5 10 20.
-каковы делители 23? делители 23 — это 1 23.
-the divisors of 27 are 1 3 9 27.
-делители 6 — это 1 2 3 6.
-what are the divisors of 9? the divisors of 9 are 1 3 9.
-каковы делители 12? делители 12 — это 1 2 3 4 6 12.
-the divisors of 16 are 1 2 4 8 16.
-делители 19 — это 1 19.
-what are the divisors of 22? the divisors of 22 are 1 2 11 22.
-каковы делители 25? делители 25 — это 1 5 25.
-the divisors of 29 are 1 29.
+делители 56 — это 1 2 4 7 8 14 28 56.
+what are the divisors of 59? the divisors of 59 are 1 59.
+каковы делители 62? делители 62 — это 1 2 31 62.
+the divisors of 66 are 1 2 3 6 11 22 33 66.
+делители 69 — это 1 3 23 69.
+what are the divisors of 72? the divisors of 72 are 1 2 3 4 6 8 9 12 18 24 36 72.
+каковы делители 75? делители 75 — это 1 3 5 15 25 75.
+the divisors of 55 are 1 5 11 55.
+делители 58 — это 1 2 29 58.
+what are the divisors of 61? the divisors of 61 are 1 61.
+каковы делители 64? делители 64 — это 1 2 4 8 16 32 64.
+the divisors of 68 are 1 2 4 17 34 68.
+делители 71 — это 1 71.
+what are the divisors of 74? the divisors of 74 are 1 2 37 74.
+каковы делители 77? делители 77 — это 1 7 11 77.
+the divisors of 57 are 1 3 19 57.
+делители 60 — это 1 2 3 4 5 6 10 12 15 20 30 60.
+what are the divisors of 63? the divisors of 63 are 1 3 7 9 21 63.
+каковы делители 66? делители 66 — это 1 2 3 6 11 22 33 66.
+the divisors of 70 are 1 2 5 7 10 14 35 70.
+делители 73 — это 1 73.
+what are the divisors of 76? the divisors of 76 are 1 2 4 19 38 76.
+каковы делители 55? делители 55 — это 1 5 11 55.
+the divisors of 59 are 1 59.
+делители 62 — это 1 2 31 62.
+what are the divisors of 65? the divisors of 65 are 1 5 13 65.
+каковы делители 68? делители 68 — это 1 2 4 17 34 68.
+the divisors of 72 are 1 2 3 4 6 8 9 12 18 24 36 72.
+делители 75 — это 1 3 5 15 25 75.
+what are the divisors of 54? the divisors of 54 are 1 2 3 6 9 18 27 54.
+каковы делители 57? делители 57 — это 1 3 19 57.
+the divisors of 61 are 1 61.
+делители 64 — это 1 2 4 8 16 32 64.
+what are the divisors of 67? the divisors of 67 are 1 67.
+каковы делители 70? делители 70 — это 1 2 5 7 10 14 35 70.
+the divisors of 74 are 1 2 37 74.
+делители 77 — это 1 7 11 77.
+what are the divisors of 56? the divisors of 56 are 1 2 4 7 8 14 28 56.
+каковы делители 59? делители 59 — это 1 59.
+the divisors of 63 are 1 3 7 9 21 63.
+делители 66 — это 1 2 3 6 11 22 33 66.
+what are the divisors of 69? the divisors of 69 are 1 3 23 69.
+каковы делители 72? делители 72 — это 1 2 3 4 6 8 9 12 18 24 36 72.
+the divisors of 76 are 1 2 4 19 38 76.
+делители 55 — это 1 5 11 55.
+what are the divisors of 58? the divisors of 58 are 1 2 29 58.
+каковы делители 61? делители 61 — это 1 61.
+the divisors of 65 are 1 5 13 65.
+делители 68 — это 1 2 4 17 34 68.
+what are the divisors of 71? the divisors of 71 are 1 71.
+каковы делители 74? делители 74 — это 1 2 37 74.
+the divisors of 54 are 1 2 3 6 9 18 27 54.
+делители 57 — это 1 3 19 57.
+what are the divisors of 60? the divisors of 60 are 1 2 3 4 5 6 10 12 15 20 30 60.
+каковы делители 63? делители 63 — это 1 3 7 9 21 63.
+the divisors of 67 are 1 67.
+делители 70 — это 1 2 5 7 10 14 35 70.
+what are the divisors of 73? the divisors of 73 are 1 73.
+каковы делители 76? делители 76 — это 1 2 4 19 38 76.
+the divisors of 56 are 1 2 4 7 8 14 28 56.
+делители 59 — это 1 59.
+what are the divisors of 62? the divisors of 62 are 1 2 31 62.
+каковы делители 65? делители 65 — это 1 5 13 65.
+the divisors of 69 are 1 3 23 69.
+делители 72 — это 1 2 3 4 6 8 9 12 18 24 36 72.
+what are the divisors of 75? the divisors of 75 are 1 3 5 15 25 75.
+каковы делители 54? делители 54 — это 1 2 3 6 9 18 27 54.
+the divisors of 58 are 1 2 29 58.
+делители 61 — это 1 61.
+what are the divisors of 64? the divisors of 64 are 1 2 4 8 16 32 64.
+каковы делители 67? делители 67 — это 1 67.
+the divisors of 71 are 1 71.
+делители 74 — это 1 2 37 74.
+what are the divisors of 77? the divisors of 77 are 1 7 11 77.
+каковы делители 56? делители 56 — это 1 2 4 7 8 14 28 56.
+the divisors of 60 are 1 2 3 4 5 6 10 12 15 20 30 60.
+делители 63 — это 1 3 7 9 21 63.
+what are the divisors of 66? the divisors of 66 are 1 2 3 6 11 22 33 66.
+каковы делители 69? делители 69 — это 1 3 23 69.
+the divisors of 73 are 1 73.
+делители 76 — это 1 2 4 19 38 76.
+what are the divisors of 55? the divisors of 55 are 1 5 11 55.
+каковы делители 58? делители 58 — это 1 2 29 58.
+the divisors of 62 are 1 2 31 62.
+делители 65 — это 1 5 13 65.
+what are the divisors of 68? the divisors of 68 are 1 2 4 17 34 68.
+каковы делители 71? делители 71 — это 1 71.
+the divisors of 75 are 1 3 5 15 25 75.
+делители 54 — это 1 2 3 6 9 18 27 54.
+what are the divisors of 57? the divisors of 57 are 1 3 19 57.
+каковы делители 60? делители 60 — это 1 2 3 4 5 6 10 12 15 20 30 60.
+the divisors of 64 are 1 2 4 8 16 32 64.
+делители 67 — это 1 67.
+what are the divisors of 70? the divisors of 70 are 1 2 5 7 10 14 35 70.
+каковы делители 73? делители 73 — это 1 73.
+the divisors of 77 are 1 7 11 77.
 
 9 и 0 не сравнимы по модулю 2: 9 по модулю 2 равно 1, 0 по модулю 2 равно 0.
 are 12 and 1 congruent modulo 3? 12 and 1 are not congruent modulo 3: 12 mod 3 = 0, 1 mod 3 = 1.
@@ -2257,363 +2425,419 @@ what is a coprime pair? a coprime pair is two numbers whose greatest common divi
 что такое остаток от деления? остаток от деления — это то, что остаётся от делимого после вычитания наибольшего целого кратного делителя.
 an even number is a whole number that is divisible by 2.
 
-3 is prime; its divisors are 1 and 3.
-7 простое; его делители — 1 и 7.
-is 11 prime? 11 is prime; its divisors are 1 and 11.
-простое ли 15? 15 составное; 15 = 3 × 5.
-20 is not prime; 20 = 2 × 10.
-24 составное; 24 = 2 × 12.
-is 28 prime? 28 is not prime; 28 = 2 × 14.
-простое ли 4? 4 составное; 4 = 2 × 2.
-9 is not prime; 9 = 3 × 3.
-13 простое; его делители — 1 и 13.
-is 17 prime? 17 is prime; its divisors are 1 and 17.
-простое ли 21? 21 составное; 21 = 3 × 7.
-26 is not prime; 26 = 2 × 13.
-2 простое; его делители — 1 и 2.
-is 6 prime? 6 is not prime; 6 = 2 × 3.
-простое ли 10? 10 составное; 10 = 2 × 5.
-15 is not prime; 15 = 3 × 5.
-19 простое; его делители — 1 и 19.
-is 23 prime? 23 is prime; its divisors are 1 and 23.
-простое ли 27? 27 составное; 27 = 3 × 9.
-4 is not prime; 4 = 2 × 2.
-8 составное; 8 = 2 × 4.
-is 12 prime? 12 is not prime; 12 = 2 × 6.
-простое ли 16? 16 составное; 16 = 2 × 8.
-21 is not prime; 21 = 3 × 7.
-25 составное; 25 = 5 × 5.
-is 29 prime? 29 is prime; its divisors are 1 and 29.
-простое ли 5? 5 простое; его делители — 1 и 5.
-10 is not prime; 10 = 2 × 5.
-14 составное; 14 = 2 × 7.
-is 18 prime? 18 is not prime; 18 = 2 × 9.
-простое ли 22? 22 составное; 22 = 2 × 11.
-27 is not prime; 27 = 3 × 9.
-3 простое; его делители — 1 и 3.
-is 7 prime? 7 is prime; its divisors are 1 and 7.
-простое ли 11? 11 простое; его делители — 1 и 11.
-16 is not prime; 16 = 2 × 8.
-20 составное; 20 = 2 × 10.
-is 24 prime? 24 is not prime; 24 = 2 × 12.
-простое ли 28? 28 составное; 28 = 2 × 14.
-5 is prime; its divisors are 1 and 5.
-9 составное; 9 = 3 × 3.
-is 13 prime? 13 is prime; its divisors are 1 and 13.
-простое ли 17? 17 простое; его делители — 1 и 17.
-22 is not prime; 22 = 2 × 11.
-26 составное; 26 = 2 × 13.
-is 2 prime? 2 is prime; its divisors are 1 and 2.
-простое ли 6? 6 составное; 6 = 2 × 3.
-11 is prime; its divisors are 1 and 11.
-15 составное; 15 = 3 × 5.
-is 19 prime? 19 is prime; its divisors are 1 and 19.
-простое ли 23? 23 простое; его делители — 1 и 23.
-28 is not prime; 28 = 2 × 14.
-4 составное; 4 = 2 × 2.
-is 8 prime? 8 is not prime; 8 = 2 × 4.
-простое ли 12? 12 составное; 12 = 2 × 6.
-17 is prime; its divisors are 1 and 17.
-21 составное; 21 = 3 × 7.
-is 25 prime? 25 is not prime; 25 = 5 × 5.
-простое ли 29? 29 простое; его делители — 1 и 29.
-6 is not prime; 6 = 2 × 3.
-10 составное; 10 = 2 × 5.
-is 14 prime? 14 is not prime; 14 = 2 × 7.
-простое ли 18? 18 составное; 18 = 2 × 9.
-23 is prime; its divisors are 1 and 23.
-27 составное; 27 = 3 × 9.
-is 3 prime? 3 is prime; its divisors are 1 and 3.
-простое ли 7? 7 простое; его делители — 1 и 7.
-12 is not prime; 12 = 2 × 6.
-16 составное; 16 = 2 × 8.
-is 20 prime? 20 is not prime; 20 = 2 × 10.
-простое ли 24? 24 составное; 24 = 2 × 12.
-29 is prime; its divisors are 1 and 29.
-5 простое; его делители — 1 и 5.
-is 9 prime? 9 is not prime; 9 = 3 × 3.
-простое ли 13? 13 простое; его делители — 1 и 13.
-18 is not prime; 18 = 2 × 9.
-22 составное; 22 = 2 × 11.
-is 26 prime? 26 is not prime; 26 = 2 × 13.
-простое ли 2? 2 простое; его делители — 1 и 2.
-7 is prime; its divisors are 1 and 7.
-11 простое; его делители — 1 и 11.
-is 15 prime? 15 is not prime; 15 = 3 × 5.
-простое ли 19? 19 простое; его делители — 1 и 19.
-24 is not prime; 24 = 2 × 12.
-28 составное; 28 = 2 × 14.
-is 4 prime? 4 is not prime; 4 = 2 × 2.
-простое ли 8? 8 составное; 8 = 2 × 4.
-13 is prime; its divisors are 1 and 13.
-17 простое; его делители — 1 и 17.
-is 21 prime? 21 is not prime; 21 = 3 × 7.
-простое ли 25? 25 составное; 25 = 5 × 5.
-2 is prime; its divisors are 1 and 2.
-6 составное; 6 = 2 × 3.
-is 10 prime? 10 is not prime; 10 = 2 × 5.
-простое ли 14? 14 составное; 14 = 2 × 7.
-19 is prime; its divisors are 1 and 19.
-23 простое; его делители — 1 и 23.
-is 27 prime? 27 is not prime; 27 = 3 × 9.
-простое ли 3? 3 простое; его делители — 1 и 3.
-8 is not prime; 8 = 2 × 4.
-12 составное; 12 = 2 × 6.
-is 16 prime? 16 is not prime; 16 = 2 × 8.
-простое ли 20? 20 составное; 20 = 2 × 10.
-25 is not prime; 25 = 5 × 5.
-29 простое; его делители — 1 и 29.
-is 5 prime? 5 is prime; its divisors are 1 and 5.
-простое ли 9? 9 составное; 9 = 3 × 3.
-14 is not prime; 14 = 2 × 7.
-18 составное; 18 = 2 × 9.
-is 22 prime? 22 is not prime; 22 = 2 × 11.
-простое ли 26? 26 составное; 26 = 2 × 13.
+является ли 86 простым числом? нет: 86 составное; 86 = 2 × 43.
+does 89 have exactly two divisors? yes: 89 is prime; its divisors are 1 and 89.
+is 92 a prime number? no: 92 is not prime; 92 = 2 × 46.
+95 составное; 95 = 5 × 19.
+98 is not prime; 98 = 2 × 49.
+простое ли число 100? нет: 100 составное; 100 = 2 × 50.
+является ли 103 простым числом? да: 103 простое; его делители — 1 и 103.
+does 106 have exactly two divisors? no: 106 is not prime; 106 = 2 × 53.
+is 109 a prime number? yes: 109 is prime; its divisors are 1 and 109.
+112 составное; 112 = 2 × 56.
+87 is not prime; 87 = 3 × 29.
+простое ли число 89? да: 89 простое; его делители — 1 и 89.
+является ли 92 простым числом? нет: 92 составное; 92 = 2 × 46.
+does 95 have exactly two divisors? no: 95 is not prime; 95 = 5 × 19.
+is 98 a prime number? no: 98 is not prime; 98 = 2 × 49.
+101 простое; его делители — 1 и 101.
+104 is not prime; 104 = 2 × 52.
+простое ли число 106? нет: 106 составное; 106 = 2 × 53.
+является ли 109 простым числом? да: 109 простое; его делители — 1 и 109.
+does 112 have exactly two divisors? no: 112 is not prime; 112 = 2 × 56.
+is 87 a prime number? no: 87 is not prime; 87 = 3 × 29.
+90 составное; 90 = 2 × 45.
+93 is not prime; 93 = 3 × 31.
+простое ли число 95? нет: 95 составное; 95 = 5 × 19.
+является ли 98 простым числом? нет: 98 составное; 98 = 2 × 49.
+does 101 have exactly two divisors? yes: 101 is prime; its divisors are 1 and 101.
+is 104 a prime number? no: 104 is not prime; 104 = 2 × 52.
+107 простое; его делители — 1 и 107.
+110 is not prime; 110 = 2 × 55.
+простое ли число 112? нет: 112 составное; 112 = 2 × 56.
+является ли 87 простым числом? нет: 87 составное; 87 = 3 × 29.
+does 90 have exactly two divisors? no: 90 is not prime; 90 = 2 × 45.
+is 93 a prime number? no: 93 is not prime; 93 = 3 × 31.
+96 составное; 96 = 2 × 48.
+99 is not prime; 99 = 3 × 33.
+простое ли число 101? да: 101 простое; его делители — 1 и 101.
+является ли 104 простым числом? нет: 104 составное; 104 = 2 × 52.
+does 107 have exactly two divisors? yes: 107 is prime; its divisors are 1 and 107.
+is 110 a prime number? no: 110 is not prime; 110 = 2 × 55.
+113 простое; его делители — 1 и 113.
+88 is not prime; 88 = 2 × 44.
+простое ли число 90? нет: 90 составное; 90 = 2 × 45.
+является ли 93 простым числом? нет: 93 составное; 93 = 3 × 31.
+does 96 have exactly two divisors? no: 96 is not prime; 96 = 2 × 48.
+is 99 a prime number? no: 99 is not prime; 99 = 3 × 33.
+102 составное; 102 = 2 × 51.
+105 is not prime; 105 = 3 × 35.
+простое ли число 107? да: 107 простое; его делители — 1 и 107.
+является ли 110 простым числом? нет: 110 составное; 110 = 2 × 55.
+does 113 have exactly two divisors? yes: 113 is prime; its divisors are 1 and 113.
+is 88 a prime number? no: 88 is not prime; 88 = 2 × 44.
+91 составное; 91 = 7 × 13.
+94 is not prime; 94 = 2 × 47.
+простое ли число 96? нет: 96 составное; 96 = 2 × 48.
+является ли 99 простым числом? нет: 99 составное; 99 = 3 × 33.
+does 102 have exactly two divisors? no: 102 is not prime; 102 = 2 × 51.
+is 105 a prime number? no: 105 is not prime; 105 = 3 × 35.
+108 составное; 108 = 2 × 54.
+111 is not prime; 111 = 3 × 37.
+простое ли число 113? да: 113 простое; его делители — 1 и 113.
+является ли 88 простым числом? нет: 88 составное; 88 = 2 × 44.
+does 91 have exactly two divisors? no: 91 is not prime; 91 = 7 × 13.
+is 94 a prime number? no: 94 is not prime; 94 = 2 × 47.
+97 простое; его делители — 1 и 97.
+100 is not prime; 100 = 2 × 50.
+простое ли число 102? нет: 102 составное; 102 = 2 × 51.
+является ли 105 простым числом? нет: 105 составное; 105 = 3 × 35.
+does 108 have exactly two divisors? no: 108 is not prime; 108 = 2 × 54.
+is 111 a prime number? no: 111 is not prime; 111 = 3 × 37.
+86 составное; 86 = 2 × 43.
+89 is prime; its divisors are 1 and 89.
+простое ли число 91? нет: 91 составное; 91 = 7 × 13.
+является ли 94 простым числом? нет: 94 составное; 94 = 2 × 47.
+does 97 have exactly two divisors? yes: 97 is prime; its divisors are 1 and 97.
+is 100 a prime number? no: 100 is not prime; 100 = 2 × 50.
+103 простое; его делители — 1 и 103.
+106 is not prime; 106 = 2 × 53.
+простое ли число 108? нет: 108 составное; 108 = 2 × 54.
+является ли 111 простым числом? нет: 111 составное; 111 = 3 × 37.
+does 86 have exactly two divisors? no: 86 is not prime; 86 = 2 × 43.
+is 89 a prime number? yes: 89 is prime; its divisors are 1 and 89.
+92 составное; 92 = 2 × 46.
+95 is not prime; 95 = 5 × 19.
+простое ли число 97? да: 97 простое; его делители — 1 и 97.
+является ли 100 простым числом? нет: 100 составное; 100 = 2 × 50.
+does 103 have exactly two divisors? yes: 103 is prime; its divisors are 1 and 103.
+is 106 a prime number? no: 106 is not prime; 106 = 2 × 53.
+109 простое; его делители — 1 и 109.
+112 is not prime; 112 = 2 × 56.
+простое ли число 86? нет: 86 составное; 86 = 2 × 43.
+является ли 89 простым числом? да: 89 простое; его делители — 1 и 89.
+does 92 have exactly two divisors? no: 92 is not prime; 92 = 2 × 46.
+is 95 a prime number? no: 95 is not prime; 95 = 5 × 19.
+98 составное; 98 = 2 × 49.
+101 is prime; its divisors are 1 and 101.
+простое ли число 103? да: 103 простое; его делители — 1 и 103.
+является ли 106 простым числом? нет: 106 составное; 106 = 2 × 53.
+does 109 have exactly two divisors? yes: 109 is prime; its divisors are 1 and 109.
+is 112 a prime number? no: 112 is not prime; 112 = 2 × 56.
+87 составное; 87 = 3 × 29.
+90 is not prime; 90 = 2 × 45.
+простое ли число 92? нет: 92 составное; 92 = 2 × 46.
+является ли 95 простым числом? нет: 95 составное; 95 = 5 × 19.
+does 98 have exactly two divisors? no: 98 is not prime; 98 = 2 × 49.
+is 101 a prime number? yes: 101 is prime; its divisors are 1 and 101.
+104 составное; 104 = 2 × 52.
+107 is prime; its divisors are 1 and 107.
+простое ли число 109? да: 109 простое; его делители — 1 и 109.
+является ли 112 простым числом? нет: 112 составное; 112 = 2 × 56.
+does 87 have exactly two divisors? no: 87 is not prime; 87 = 3 × 29.
+is 90 a prime number? no: 90 is not prime; 90 = 2 × 45.
+93 составное; 93 = 3 × 31.
+96 is not prime; 96 = 2 × 48.
+простое ли число 98? нет: 98 составное; 98 = 2 × 49.
+является ли 101 простым числом? да: 101 простое; его делители — 1 и 101.
+does 104 have exactly two divisors? no: 104 is not prime; 104 = 2 × 52.
+is 107 a prime number? yes: 107 is prime; its divisors are 1 and 107.
+110 составное; 110 = 2 × 55.
+113 is prime; its divisors are 1 and 113.
+простое ли число 87? нет: 87 составное; 87 = 3 × 29.
+является ли 90 простым числом? нет: 90 составное; 90 = 2 × 45.
+does 93 have exactly two divisors? no: 93 is not prime; 93 = 3 × 31.
+is 96 a prime number? no: 96 is not prime; 96 = 2 × 48.
+99 составное; 99 = 3 × 33.
+102 is not prime; 102 = 2 × 51.
+простое ли число 104? нет: 104 составное; 104 = 2 × 52.
+является ли 107 простым числом? да: 107 простое; его делители — 1 и 107.
+does 110 have exactly two divisors? no: 110 is not prime; 110 = 2 × 55.
+is 113 a prime number? yes: 113 is prime; its divisors are 1 and 113.
+88 составное; 88 = 2 × 44.
+91 is not prime; 91 = 7 × 13.
+простое ли число 93? нет: 93 составное; 93 = 3 × 31.
+является ли 96 простым числом? нет: 96 составное; 96 = 2 × 48.
+does 99 have exactly two divisors? no: 99 is not prime; 99 = 3 × 33.
+is 102 a prime number? no: 102 is not prime; 102 = 2 × 51.
+105 составное; 105 = 3 × 35.
+108 is not prime; 108 = 2 × 54.
+простое ли число 110? нет: 110 составное; 110 = 2 × 55.
+является ли 113 простым числом? да: 113 простое; его делители — 1 и 113.
+does 88 have exactly two divisors? no: 88 is not prime; 88 = 2 × 44.
+is 91 a prime number? no: 91 is not prime; 91 = 7 × 13.
+94 составное; 94 = 2 × 47.
+97 is prime; its divisors are 1 and 97.
+простое ли число 99? нет: 99 составное; 99 = 3 × 33.
+является ли 102 простым числом? нет: 102 составное; 102 = 2 × 51.
+does 105 have exactly two divisors? no: 105 is not prime; 105 = 3 × 35.
+is 108 a prime number? no: 108 is not prime; 108 = 2 × 54.
+111 составное; 111 = 3 × 37.
+86 is not prime; 86 = 2 × 43.
+простое ли число 88? нет: 88 составное; 88 = 2 × 44.
+является ли 91 простым числом? нет: 91 составное; 91 = 7 × 13.
+does 94 have exactly two divisors? no: 94 is not prime; 94 = 2 × 47.
+is 97 a prime number? yes: 97 is prime; its divisors are 1 and 97.
+100 составное; 100 = 2 × 50.
+103 is prime; its divisors are 1 and 103.
+простое ли число 105? нет: 105 составное; 105 = 3 × 35.
+является ли 108 простым числом? нет: 108 составное; 108 = 2 × 54.
+does 111 have exactly two divisors? no: 111 is not prime; 111 = 3 × 37.
+is 86 a prime number? no: 86 is not prime; 86 = 2 × 43.
+89 простое; его делители — 1 и 89.
+92 is not prime; 92 = 2 × 46.
+простое ли число 94? нет: 94 составное; 94 = 2 × 47.
+является ли 97 простым числом? да: 97 простое; его делители — 1 и 97.
+does 100 have exactly two divisors? no: 100 is not prime; 100 = 2 × 50.
+is 103 a prime number? yes: 103 is prime; its divisors are 1 and 103.
+106 составное; 106 = 2 × 53.
+109 is prime; its divisors are 1 and 109.
+простое ли число 111? нет: 111 составное; 111 = 3 × 37.
 
 is 1 prime? 1 is neither prime nor composite: its only divisor is 1.
 простое ли 1? 1 ни простое, ни составное: его единственный делитель — 1.
 
-5 factorises into 5.
-9 раскладывается в 3 × 3.
-what does 13 factorise into? 13 factorises into 13.
-во что раскладывается 17? 17 раскладывается в 17.
-22 factorises into 2 × 11.
-26 раскладывается в 2 × 13.
-what does 30 factorise into? 30 factorises into 2 × 3 × 5.
-во что раскладывается 34? 34 раскладывается в 2 × 17.
-39 factorises into 3 × 13.
-7 раскладывается в 7.
-what does 11 factorise into? 11 factorises into 11.
-во что раскладывается 15? 15 раскладывается в 3 × 5.
-20 factorises into 2 × 2 × 5.
-24 раскладывается в 2 × 2 × 2 × 3.
-what does 28 factorise into? 28 factorises into 2 × 2 × 7.
-во что раскладывается 32? 32 раскладывается в 2 × 2 × 2 × 2 × 2.
-37 factorises into 37.
-5 раскладывается в 5.
-what does 9 factorise into? 9 factorises into 3 × 3.
-во что раскладывается 13? 13 раскладывается в 13.
-18 factorises into 2 × 3 × 3.
-22 раскладывается в 2 × 11.
-what does 26 factorise into? 26 factorises into 2 × 13.
-во что раскладывается 30? 30 раскладывается в 2 × 3 × 5.
-35 factorises into 5 × 7.
-39 раскладывается в 3 × 13.
-what does 7 factorise into? 7 factorises into 7.
-во что раскладывается 11? 11 раскладывается в 11.
-16 factorises into 2 × 2 × 2 × 2.
-20 раскладывается в 2 × 2 × 5.
-what does 24 factorise into? 24 factorises into 2 × 2 × 2 × 3.
-во что раскладывается 28? 28 раскладывается в 2 × 2 × 7.
-33 factorises into 3 × 11.
-37 раскладывается в 37.
-what does 5 factorise into? 5 factorises into 5.
-во что раскладывается 9? 9 раскладывается в 3 × 3.
-14 factorises into 2 × 7.
-18 раскладывается в 2 × 3 × 3.
-what does 22 factorise into? 22 factorises into 2 × 11.
-во что раскладывается 26? 26 раскладывается в 2 × 13.
-31 factorises into 31.
-35 раскладывается в 5 × 7.
-what does 39 factorise into? 39 factorises into 3 × 13.
-во что раскладывается 7? 7 раскладывается в 7.
-12 factorises into 2 × 2 × 3.
-16 раскладывается в 2 × 2 × 2 × 2.
-what does 20 factorise into? 20 factorises into 2 × 2 × 5.
-во что раскладывается 24? 24 раскладывается в 2 × 2 × 2 × 3.
-29 factorises into 29.
-33 раскладывается в 3 × 11.
-what does 37 factorise into? 37 factorises into 37.
-во что раскладывается 5? 5 раскладывается в 5.
-10 factorises into 2 × 5.
-14 раскладывается в 2 × 7.
-what does 18 factorise into? 18 factorises into 2 × 3 × 3.
-во что раскладывается 22? 22 раскладывается в 2 × 11.
-27 factorises into 3 × 3 × 3.
-31 раскладывается в 31.
-what does 35 factorise into? 35 factorises into 5 × 7.
-во что раскладывается 39? 39 раскладывается в 3 × 13.
-8 factorises into 2 × 2 × 2.
-12 раскладывается в 2 × 2 × 3.
-what does 16 factorise into? 16 factorises into 2 × 2 × 2 × 2.
-во что раскладывается 20? 20 раскладывается в 2 × 2 × 5.
-25 factorises into 5 × 5.
-29 раскладывается в 29.
-what does 33 factorise into? 33 factorises into 3 × 11.
-во что раскладывается 37? 37 раскладывается в 37.
-6 factorises into 2 × 3.
-10 раскладывается в 2 × 5.
-what does 14 factorise into? 14 factorises into 2 × 7.
-во что раскладывается 18? 18 раскладывается в 2 × 3 × 3.
-23 factorises into 23.
-27 раскладывается в 3 × 3 × 3.
-what does 31 factorise into? 31 factorises into 31.
-во что раскладывается 35? 35 раскладывается в 5 × 7.
-4 factorises into 2 × 2.
-8 раскладывается в 2 × 2 × 2.
-what does 12 factorise into? 12 factorises into 2 × 2 × 3.
-во что раскладывается 16? 16 раскладывается в 2 × 2 × 2 × 2.
-21 factorises into 3 × 7.
-25 раскладывается в 5 × 5.
-what does 29 factorise into? 29 factorises into 29.
-во что раскладывается 33? 33 раскладывается в 3 × 11.
-38 factorises into 2 × 19.
-6 раскладывается в 2 × 3.
-what does 10 factorise into? 10 factorises into 2 × 5.
-во что раскладывается 14? 14 раскладывается в 2 × 7.
-19 factorises into 19.
-23 раскладывается в 23.
-what does 27 factorise into? 27 factorises into 3 × 3 × 3.
-во что раскладывается 31? 31 раскладывается в 31.
-36 factorises into 2 × 2 × 3 × 3.
-4 раскладывается в 2 × 2.
-what does 8 factorise into? 8 factorises into 2 × 2 × 2.
-во что раскладывается 12? 12 раскладывается в 2 × 2 × 3.
-17 factorises into 17.
-21 раскладывается в 3 × 7.
-what does 25 factorise into? 25 factorises into 5 × 5.
-во что раскладывается 29? 29 раскладывается в 29.
-34 factorises into 2 × 17.
-38 раскладывается в 2 × 19.
-what does 6 factorise into? 6 factorises into 2 × 3.
-во что раскладывается 10? 10 раскладывается в 2 × 5.
-15 factorises into 3 × 5.
-19 раскладывается в 19.
-what does 23 factorise into? 23 factorises into 23.
-во что раскладывается 27? 27 раскладывается в 3 × 3 × 3.
-32 factorises into 2 × 2 × 2 × 2 × 2.
-36 раскладывается в 2 × 2 × 3 × 3.
-what does 4 factorise into? 4 factorises into 2 × 2.
-во что раскладывается 8? 8 раскладывается в 2 × 2 × 2.
-13 factorises into 13.
-17 раскладывается в 17.
-what does 21 factorise into? 21 factorises into 3 × 7.
-во что раскладывается 25? 25 раскладывается в 5 × 5.
-30 factorises into 2 × 3 × 5.
-34 раскладывается в 2 × 17.
-what does 38 factorise into? 38 factorises into 2 × 19.
-во что раскладывается 6? 6 раскладывается в 2 × 3.
-11 factorises into 11.
-15 раскладывается в 3 × 5.
-what does 19 factorise into? 19 factorises into 19.
-во что раскладывается 23? 23 раскладывается в 23.
-28 factorises into 2 × 2 × 7.
-32 раскладывается в 2 × 2 × 2 × 2 × 2.
-what does 36 factorise into? 36 factorises into 2 × 2 × 3 × 3.
-во что раскладывается 4? 4 раскладывается в 2 × 2.
-9 factorises into 3 × 3.
-13 раскладывается в 13.
-what does 17 factorise into? 17 factorises into 17.
-во что раскладывается 21? 21 раскладывается в 3 × 7.
-26 factorises into 2 × 13.
-30 раскладывается в 2 × 3 × 5.
-what does 34 factorise into? 34 factorises into 2 × 17.
-во что раскладывается 38? 38 раскладывается в 2 × 19.
-7 factorises into 7.
-11 раскладывается в 11.
-what does 15 factorise into? 15 factorises into 3 × 5.
-во что раскладывается 19? 19 раскладывается в 19.
-24 factorises into 2 × 2 × 2 × 3.
-28 раскладывается в 2 × 2 × 7.
-what does 32 factorise into? 32 factorises into 2 × 2 × 2 × 2 × 2.
-во что раскладывается 36? 36 раскладывается в 2 × 2 × 3 × 3.
+113 factorises into 113.
+117 раскладывается в 3 × 3 × 13.
+what does 121 factorise into? 121 factorises into 11 × 11.
+во что раскладывается 125? 125 раскладывается в 5 × 5 × 5.
+130 factorises into 2 × 5 × 13.
+134 раскладывается в 2 × 67.
+what does 138 factorise into? 138 factorises into 2 × 3 × 23.
+во что раскладывается 142? 142 раскладывается в 2 × 71.
+147 factorises into 3 × 7 × 7.
+115 раскладывается в 5 × 23.
+what does 119 factorise into? 119 factorises into 7 × 17.
+во что раскладывается 123? 123 раскладывается в 3 × 41.
+128 factorises into 2 × 2 × 2 × 2 × 2 × 2 × 2.
+132 раскладывается в 2 × 2 × 3 × 11.
+what does 136 factorise into? 136 factorises into 2 × 2 × 2 × 17.
+во что раскладывается 140? 140 раскладывается в 2 × 2 × 5 × 7.
+145 factorises into 5 × 29.
+113 раскладывается в 113.
+what does 117 factorise into? 117 factorises into 3 × 3 × 13.
+во что раскладывается 121? 121 раскладывается в 11 × 11.
+126 factorises into 2 × 3 × 3 × 7.
+130 раскладывается в 2 × 5 × 13.
+what does 134 factorise into? 134 factorises into 2 × 67.
+во что раскладывается 138? 138 раскладывается в 2 × 3 × 23.
+143 factorises into 11 × 13.
+147 раскладывается в 3 × 7 × 7.
+what does 115 factorise into? 115 factorises into 5 × 23.
+во что раскладывается 119? 119 раскладывается в 7 × 17.
+124 factorises into 2 × 2 × 31.
+128 раскладывается в 2 × 2 × 2 × 2 × 2 × 2 × 2.
+what does 132 factorise into? 132 factorises into 2 × 2 × 3 × 11.
+во что раскладывается 136? 136 раскладывается в 2 × 2 × 2 × 17.
+141 factorises into 3 × 47.
+145 раскладывается в 5 × 29.
+what does 113 factorise into? 113 factorises into 113.
+во что раскладывается 117? 117 раскладывается в 3 × 3 × 13.
+122 factorises into 2 × 61.
+126 раскладывается в 2 × 3 × 3 × 7.
+what does 130 factorise into? 130 factorises into 2 × 5 × 13.
+во что раскладывается 134? 134 раскладывается в 2 × 67.
+139 factorises into 139.
+143 раскладывается в 11 × 13.
+what does 147 factorise into? 147 factorises into 3 × 7 × 7.
+во что раскладывается 115? 115 раскладывается в 5 × 23.
+120 factorises into 2 × 2 × 2 × 3 × 5.
+124 раскладывается в 2 × 2 × 31.
+what does 128 factorise into? 128 factorises into 2 × 2 × 2 × 2 × 2 × 2 × 2.
+во что раскладывается 132? 132 раскладывается в 2 × 2 × 3 × 11.
+137 factorises into 137.
+141 раскладывается в 3 × 47.
+what does 145 factorise into? 145 factorises into 5 × 29.
+во что раскладывается 113? 113 раскладывается в 113.
+118 factorises into 2 × 59.
+122 раскладывается в 2 × 61.
+what does 126 factorise into? 126 factorises into 2 × 3 × 3 × 7.
+во что раскладывается 130? 130 раскладывается в 2 × 5 × 13.
+135 factorises into 3 × 3 × 3 × 5.
+139 раскладывается в 139.
+what does 143 factorise into? 143 factorises into 11 × 13.
+во что раскладывается 147? 147 раскладывается в 3 × 7 × 7.
+116 factorises into 2 × 2 × 29.
+120 раскладывается в 2 × 2 × 2 × 3 × 5.
+what does 124 factorise into? 124 factorises into 2 × 2 × 31.
+во что раскладывается 128? 128 раскладывается в 2 × 2 × 2 × 2 × 2 × 2 × 2.
+133 factorises into 7 × 19.
+137 раскладывается в 137.
+what does 141 factorise into? 141 factorises into 3 × 47.
+во что раскладывается 145? 145 раскладывается в 5 × 29.
+114 factorises into 2 × 3 × 19.
+118 раскладывается в 2 × 59.
+what does 122 factorise into? 122 factorises into 2 × 61.
+во что раскладывается 126? 126 раскладывается в 2 × 3 × 3 × 7.
+131 factorises into 131.
+135 раскладывается в 3 × 3 × 3 × 5.
+what does 139 factorise into? 139 factorises into 139.
+во что раскладывается 143? 143 раскладывается в 11 × 13.
+112 factorises into 2 × 2 × 2 × 2 × 7.
+116 раскладывается в 2 × 2 × 29.
+what does 120 factorise into? 120 factorises into 2 × 2 × 2 × 3 × 5.
+во что раскладывается 124? 124 раскладывается в 2 × 2 × 31.
+129 factorises into 3 × 43.
+133 раскладывается в 7 × 19.
+what does 137 factorise into? 137 factorises into 137.
+во что раскладывается 141? 141 раскладывается в 3 × 47.
+146 factorises into 2 × 73.
+114 раскладывается в 2 × 3 × 19.
+what does 118 factorise into? 118 factorises into 2 × 59.
+во что раскладывается 122? 122 раскладывается в 2 × 61.
+127 factorises into 127.
+131 раскладывается в 131.
+what does 135 factorise into? 135 factorises into 3 × 3 × 3 × 5.
+во что раскладывается 139? 139 раскладывается в 139.
+144 factorises into 2 × 2 × 2 × 2 × 3 × 3.
+112 раскладывается в 2 × 2 × 2 × 2 × 7.
+what does 116 factorise into? 116 factorises into 2 × 2 × 29.
+во что раскладывается 120? 120 раскладывается в 2 × 2 × 2 × 3 × 5.
+125 factorises into 5 × 5 × 5.
+129 раскладывается в 3 × 43.
+what does 133 factorise into? 133 factorises into 7 × 19.
+во что раскладывается 137? 137 раскладывается в 137.
+142 factorises into 2 × 71.
+146 раскладывается в 2 × 73.
+what does 114 factorise into? 114 factorises into 2 × 3 × 19.
+во что раскладывается 118? 118 раскладывается в 2 × 59.
+123 factorises into 3 × 41.
+127 раскладывается в 127.
+what does 131 factorise into? 131 factorises into 131.
+во что раскладывается 135? 135 раскладывается в 3 × 3 × 3 × 5.
+140 factorises into 2 × 2 × 5 × 7.
+144 раскладывается в 2 × 2 × 2 × 2 × 3 × 3.
+what does 112 factorise into? 112 factorises into 2 × 2 × 2 × 2 × 7.
+во что раскладывается 116? 116 раскладывается в 2 × 2 × 29.
+121 factorises into 11 × 11.
+125 раскладывается в 5 × 5 × 5.
+what does 129 factorise into? 129 factorises into 3 × 43.
+во что раскладывается 133? 133 раскладывается в 7 × 19.
+138 factorises into 2 × 3 × 23.
+142 раскладывается в 2 × 71.
+what does 146 factorise into? 146 factorises into 2 × 73.
+во что раскладывается 114? 114 раскладывается в 2 × 3 × 19.
+119 factorises into 7 × 17.
+123 раскладывается в 3 × 41.
+what does 127 factorise into? 127 factorises into 127.
+во что раскладывается 131? 131 раскладывается в 131.
+136 factorises into 2 × 2 × 2 × 17.
+140 раскладывается в 2 × 2 × 5 × 7.
+what does 144 factorise into? 144 factorises into 2 × 2 × 2 × 2 × 3 × 3.
+во что раскладывается 112? 112 раскладывается в 2 × 2 × 2 × 2 × 7.
+117 factorises into 3 × 3 × 13.
+121 раскладывается в 11 × 11.
+what does 125 factorise into? 125 factorises into 5 × 5 × 5.
+во что раскладывается 129? 129 раскладывается в 3 × 43.
+134 factorises into 2 × 67.
+138 раскладывается в 2 × 3 × 23.
+what does 142 factorise into? 142 factorises into 2 × 71.
+во что раскладывается 146? 146 раскладывается в 2 × 73.
+115 factorises into 5 × 23.
+119 раскладывается в 7 × 17.
+what does 123 factorise into? 123 factorises into 3 × 41.
+во что раскладывается 127? 127 раскладывается в 127.
+132 factorises into 2 × 2 × 3 × 11.
+136 раскладывается в 2 × 2 × 2 × 17.
+what does 140 factorise into? 140 factorises into 2 × 2 × 5 × 7.
+во что раскладывается 144? 144 раскладывается в 2 × 2 × 2 × 2 × 3 × 3.
 
-the divisors of 7 are 1 7.
-делители 11 — это 1 11.
-what are the divisors of 15? the divisors of 15 are 1 3 5 15.
-каковы делители 19? делители 19 — это 1 19.
-the divisors of 24 are 1 2 3 4 6 8 12 24.
-делители 28 — это 1 2 4 7 14 28.
-what are the divisors of 8? the divisors of 8 are 1 2 4 8.
-каковы делители 12? делители 12 — это 1 2 3 4 6 12.
-the divisors of 17 are 1 17.
-делители 21 — это 1 3 7 21.
-what are the divisors of 25? the divisors of 25 are 1 5 25.
-каковы делители 29? делители 29 — это 1 29.
-the divisors of 10 are 1 2 5 10.
-делители 14 — это 1 2 7 14.
-what are the divisors of 18? the divisors of 18 are 1 2 3 6 9 18.
-каковы делители 22? делители 22 — это 1 2 11 22.
-the divisors of 27 are 1 3 9 27.
-делители 7 — это 1 7.
-what are the divisors of 11? the divisors of 11 are 1 11.
-каковы делители 15? делители 15 — это 1 3 5 15.
-the divisors of 20 are 1 2 4 5 10 20.
-делители 24 — это 1 2 3 4 6 8 12 24.
-what are the divisors of 28? the divisors of 28 are 1 2 4 7 14 28.
-каковы делители 8? делители 8 — это 1 2 4 8.
-the divisors of 13 are 1 13.
-делители 17 — это 1 17.
-what are the divisors of 21? the divisors of 21 are 1 3 7 21.
-каковы делители 25? делители 25 — это 1 5 25.
-the divisors of 6 are 1 2 3 6.
-делители 10 — это 1 2 5 10.
-what are the divisors of 14? the divisors of 14 are 1 2 7 14.
-каковы делители 18? делители 18 — это 1 2 3 6 9 18.
-the divisors of 23 are 1 23.
-делители 27 — это 1 3 9 27.
-what are the divisors of 7? the divisors of 7 are 1 7.
-каковы делители 11? делители 11 — это 1 11.
-the divisors of 16 are 1 2 4 8 16.
-делители 20 — это 1 2 4 5 10 20.
-what are the divisors of 24? the divisors of 24 are 1 2 3 4 6 8 12 24.
-каковы делители 28? делители 28 — это 1 2 4 7 14 28.
-the divisors of 9 are 1 3 9.
-делители 13 — это 1 13.
-what are the divisors of 17? the divisors of 17 are 1 17.
-каковы делители 21? делители 21 — это 1 3 7 21.
-the divisors of 26 are 1 2 13 26.
-делители 6 — это 1 2 3 6.
-what are the divisors of 10? the divisors of 10 are 1 2 5 10.
-каковы делители 14? делители 14 — это 1 2 7 14.
-the divisors of 19 are 1 19.
-делители 23 — это 1 23.
-what are the divisors of 27? the divisors of 27 are 1 3 9 27.
-каковы делители 7? делители 7 — это 1 7.
-the divisors of 12 are 1 2 3 4 6 12.
-делители 16 — это 1 2 4 8 16.
-what are the divisors of 20? the divisors of 20 are 1 2 4 5 10 20.
-каковы делители 24? делители 24 — это 1 2 3 4 6 8 12 24.
-the divisors of 29 are 1 29.
-делители 9 — это 1 3 9.
-what are the divisors of 13? the divisors of 13 are 1 13.
-каковы делители 17? делители 17 — это 1 17.
-the divisors of 22 are 1 2 11 22.
-делители 26 — это 1 2 13 26.
-what are the divisors of 6? the divisors of 6 are 1 2 3 6.
-каковы делители 10? делители 10 — это 1 2 5 10.
-the divisors of 15 are 1 3 5 15.
-делители 19 — это 1 19.
-what are the divisors of 23? the divisors of 23 are 1 23.
-каковы делители 27? делители 27 — это 1 3 9 27.
-the divisors of 8 are 1 2 4 8.
-делители 12 — это 1 2 3 4 6 12.
-what are the divisors of 16? the divisors of 16 are 1 2 4 8 16.
-каковы делители 20? делители 20 — это 1 2 4 5 10 20.
-the divisors of 25 are 1 5 25.
-делители 29 — это 1 29.
-what are the divisors of 9? the divisors of 9 are 1 3 9.
-каковы делители 13? делители 13 — это 1 13.
-the divisors of 18 are 1 2 3 6 9 18.
-делители 22 — это 1 2 11 22.
-what are the divisors of 26? the divisors of 26 are 1 2 13 26.
-каковы делители 6? делители 6 — это 1 2 3 6.
-the divisors of 11 are 1 11.
-делители 15 — это 1 3 5 15.
-what are the divisors of 19? the divisors of 19 are 1 19.
-каковы делители 23? делители 23 — это 1 23.
-the divisors of 28 are 1 2 4 7 14 28.
-делители 8 — это 1 2 4 8.
-what are the divisors of 12? the divisors of 12 are 1 2 3 4 6 12.
-каковы делители 16? делители 16 — это 1 2 4 8 16.
-the divisors of 21 are 1 3 7 21.
-делители 25 — это 1 5 25.
-what are the divisors of 29? the divisors of 29 are 1 29.
-каковы делители 9? делители 9 — это 1 3 9.
-the divisors of 14 are 1 2 7 14.
-делители 18 — это 1 2 3 6 9 18.
-what are the divisors of 22? the divisors of 22 are 1 2 11 22.
-каковы делители 26? делители 26 — это 1 2 13 26.
+the divisors of 79 are 1 79.
+делители 83 — это 1 83.
+what are the divisors of 87? the divisors of 87 are 1 3 29 87.
+каковы делители 91? делители 91 — это 1 7 13 91.
+the divisors of 96 are 1 2 3 4 6 8 12 16 24 32 48 96.
+делители 100 — это 1 2 4 5 10 20 25 50 100.
+what are the divisors of 80? the divisors of 80 are 1 2 4 5 8 10 16 20 40 80.
+каковы делители 84? делители 84 — это 1 2 3 4 6 7 12 14 21 28 42 84.
+the divisors of 89 are 1 89.
+делители 93 — это 1 3 31 93.
+what are the divisors of 97? the divisors of 97 are 1 97.
+каковы делители 101? делители 101 — это 1 101.
+the divisors of 82 are 1 2 41 82.
+делители 86 — это 1 2 43 86.
+what are the divisors of 90? the divisors of 90 are 1 2 3 5 6 9 10 15 18 30 45 90.
+каковы делители 94? делители 94 — это 1 2 47 94.
+the divisors of 99 are 1 3 9 11 33 99.
+делители 79 — это 1 79.
+what are the divisors of 83? the divisors of 83 are 1 83.
+каковы делители 87? делители 87 — это 1 3 29 87.
+the divisors of 92 are 1 2 4 23 46 92.
+делители 96 — это 1 2 3 4 6 8 12 16 24 32 48 96.
+what are the divisors of 100? the divisors of 100 are 1 2 4 5 10 20 25 50 100.
+каковы делители 80? делители 80 — это 1 2 4 5 8 10 16 20 40 80.
+the divisors of 85 are 1 5 17 85.
+делители 89 — это 1 89.
+what are the divisors of 93? the divisors of 93 are 1 3 31 93.
+каковы делители 97? делители 97 — это 1 97.
+the divisors of 78 are 1 2 3 6 13 26 39 78.
+делители 82 — это 1 2 41 82.
+what are the divisors of 86? the divisors of 86 are 1 2 43 86.
+каковы делители 90? делители 90 — это 1 2 3 5 6 9 10 15 18 30 45 90.
+the divisors of 95 are 1 5 19 95.
+делители 99 — это 1 3 9 11 33 99.
+what are the divisors of 79? the divisors of 79 are 1 79.
+каковы делители 83? делители 83 — это 1 83.
+the divisors of 88 are 1 2 4 8 11 22 44 88.
+делители 92 — это 1 2 4 23 46 92.
+what are the divisors of 96? the divisors of 96 are 1 2 3 4 6 8 12 16 24 32 48 96.
+каковы делители 100? делители 100 — это 1 2 4 5 10 20 25 50 100.
+the divisors of 81 are 1 3 9 27 81.
+делители 85 — это 1 5 17 85.
+what are the divisors of 89? the divisors of 89 are 1 89.
+каковы делители 93? делители 93 — это 1 3 31 93.
+the divisors of 98 are 1 2 7 14 49 98.
+делители 78 — это 1 2 3 6 13 26 39 78.
+what are the divisors of 82? the divisors of 82 are 1 2 41 82.
+каковы делители 86? делители 86 — это 1 2 43 86.
+the divisors of 91 are 1 7 13 91.
+делители 95 — это 1 5 19 95.
+what are the divisors of 99? the divisors of 99 are 1 3 9 11 33 99.
+каковы делители 79? делители 79 — это 1 79.
+the divisors of 84 are 1 2 3 4 6 7 12 14 21 28 42 84.
+делители 88 — это 1 2 4 8 11 22 44 88.
+what are the divisors of 92? the divisors of 92 are 1 2 4 23 46 92.
+каковы делители 96? делители 96 — это 1 2 3 4 6 8 12 16 24 32 48 96.
+the divisors of 101 are 1 101.
+делители 81 — это 1 3 9 27 81.
+what are the divisors of 85? the divisors of 85 are 1 5 17 85.
+каковы делители 89? делители 89 — это 1 89.
+the divisors of 94 are 1 2 47 94.
+делители 98 — это 1 2 7 14 49 98.
+what are the divisors of 78? the divisors of 78 are 1 2 3 6 13 26 39 78.
+каковы делители 82? делители 82 — это 1 2 41 82.
+the divisors of 87 are 1 3 29 87.
+делители 91 — это 1 7 13 91.
+what are the divisors of 95? the divisors of 95 are 1 5 19 95.
+каковы делители 99? делители 99 — это 1 3 9 11 33 99.
+the divisors of 80 are 1 2 4 5 8 10 16 20 40 80.
+делители 84 — это 1 2 3 4 6 7 12 14 21 28 42 84.
+what are the divisors of 88? the divisors of 88 are 1 2 4 8 11 22 44 88.
+каковы делители 92? делители 92 — это 1 2 4 23 46 92.
+the divisors of 97 are 1 97.
+делители 101 — это 1 101.
+what are the divisors of 81? the divisors of 81 are 1 3 9 27 81.
+каковы делители 85? делители 85 — это 1 5 17 85.
+the divisors of 90 are 1 2 3 5 6 9 10 15 18 30 45 90.
+делители 94 — это 1 2 47 94.
+what are the divisors of 98? the divisors of 98 are 1 2 7 14 49 98.
+каковы делители 78? делители 78 — это 1 2 3 6 13 26 39 78.
+the divisors of 83 are 1 83.
+делители 87 — это 1 3 29 87.
+what are the divisors of 91? the divisors of 91 are 1 7 13 91.
+каковы делители 95? делители 95 — это 1 5 19 95.
+the divisors of 100 are 1 2 4 5 10 20 25 50 100.
+делители 80 — это 1 2 4 5 8 10 16 20 40 80.
+what are the divisors of 84? the divisors of 84 are 1 2 3 4 6 7 12 14 21 28 42 84.
+каковы делители 88? делители 88 — это 1 2 4 8 11 22 44 88.
+the divisors of 93 are 1 3 31 93.
+делители 97 — это 1 97.
+what are the divisors of 101? the divisors of 101 are 1 101.
+каковы делители 81? делители 81 — это 1 3 9 27 81.
+the divisors of 86 are 1 2 43 86.
+делители 90 — это 1 2 3 5 6 9 10 15 18 30 45 90.
+what are the divisors of 94? the divisors of 94 are 1 2 47 94.
+каковы делители 98? делители 98 — это 1 2 7 14 49 98.
 
 what is 10 mod 2? 10 mod 2 = 0.
 13 и 2 не сравнимы по модулю 3: 13 по модулю 3 равно 1, 2 по модулю 3 равно 2.
@@ -3010,363 +3234,419 @@ a multiple of a number is the product of that number and a whole number.
 what is a coprime pair? a coprime pair is two numbers whose greatest common divisor is 1.
 что такое кратное числа? кратное числа — это произведение этого числа и целого числа.
 
-5 is prime; its divisors are 1 and 5.
-простое ли 9? 9 составное; 9 = 3 × 3.
-is 14 prime? 14 is not prime; 14 = 2 × 7.
-19 простое; его делители — 1 и 19.
-24 is not prime; 24 = 2 × 12.
-простое ли 28? 28 составное; 28 = 2 × 14.
-is 5 prime? 5 is prime; its divisors are 1 and 5.
-10 составное; 10 = 2 × 5.
-15 is not prime; 15 = 3 × 5.
-простое ли 19? 19 простое; его делители — 1 и 19.
-is 24 prime? 24 is not prime; 24 = 2 × 12.
-29 простое; его делители — 1 и 29.
-6 is not prime; 6 = 2 × 3.
-простое ли 10? 10 составное; 10 = 2 × 5.
-is 15 prime? 15 is not prime; 15 = 3 × 5.
-20 составное; 20 = 2 × 10.
-25 is not prime; 25 = 5 × 5.
-простое ли 29? 29 простое; его делители — 1 и 29.
-is 6 prime? 6 is not prime; 6 = 2 × 3.
-11 простое; его делители — 1 и 11.
-16 is not prime; 16 = 2 × 8.
-простое ли 20? 20 составное; 20 = 2 × 10.
-is 25 prime? 25 is not prime; 25 = 5 × 5.
-2 простое; его делители — 1 и 2.
-7 is prime; its divisors are 1 and 7.
-простое ли 11? 11 простое; его делители — 1 и 11.
-is 16 prime? 16 is not prime; 16 = 2 × 8.
-21 составное; 21 = 3 × 7.
-26 is not prime; 26 = 2 × 13.
-простое ли 2? 2 простое; его делители — 1 и 2.
-is 7 prime? 7 is prime; its divisors are 1 and 7.
-12 составное; 12 = 2 × 6.
-17 is prime; its divisors are 1 and 17.
-простое ли 21? 21 составное; 21 = 3 × 7.
-is 26 prime? 26 is not prime; 26 = 2 × 13.
-3 простое; его делители — 1 и 3.
-8 is not prime; 8 = 2 × 4.
-простое ли 12? 12 составное; 12 = 2 × 6.
-is 17 prime? 17 is prime; its divisors are 1 and 17.
-22 составное; 22 = 2 × 11.
-27 is not prime; 27 = 3 × 9.
-простое ли 3? 3 простое; его делители — 1 и 3.
-is 8 prime? 8 is not prime; 8 = 2 × 4.
-13 простое; его делители — 1 и 13.
-18 is not prime; 18 = 2 × 9.
-простое ли 22? 22 составное; 22 = 2 × 11.
-is 27 prime? 27 is not prime; 27 = 3 × 9.
-4 составное; 4 = 2 × 2.
-9 is not prime; 9 = 3 × 3.
-простое ли 13? 13 простое; его делители — 1 и 13.
-is 18 prime? 18 is not prime; 18 = 2 × 9.
-23 простое; его делители — 1 и 23.
-28 is not prime; 28 = 2 × 14.
-простое ли 4? 4 составное; 4 = 2 × 2.
-is 9 prime? 9 is not prime; 9 = 3 × 3.
-14 составное; 14 = 2 × 7.
-19 is prime; its divisors are 1 and 19.
-простое ли 23? 23 простое; его делители — 1 и 23.
-is 28 prime? 28 is not prime; 28 = 2 × 14.
-5 простое; его делители — 1 и 5.
-10 is not prime; 10 = 2 × 5.
-простое ли 14? 14 составное; 14 = 2 × 7.
-is 19 prime? 19 is prime; its divisors are 1 and 19.
-24 составное; 24 = 2 × 12.
-29 is prime; its divisors are 1 and 29.
-простое ли 5? 5 простое; его делители — 1 и 5.
-is 10 prime? 10 is not prime; 10 = 2 × 5.
-15 составное; 15 = 3 × 5.
-20 is not prime; 20 = 2 × 10.
-простое ли 24? 24 составное; 24 = 2 × 12.
-is 29 prime? 29 is prime; its divisors are 1 and 29.
-6 составное; 6 = 2 × 3.
-11 is prime; its divisors are 1 and 11.
-простое ли 15? 15 составное; 15 = 3 × 5.
-is 20 prime? 20 is not prime; 20 = 2 × 10.
-25 составное; 25 = 5 × 5.
-2 is prime; its divisors are 1 and 2.
-простое ли 6? 6 составное; 6 = 2 × 3.
-is 11 prime? 11 is prime; its divisors are 1 and 11.
-16 составное; 16 = 2 × 8.
-21 is not prime; 21 = 3 × 7.
-простое ли 25? 25 составное; 25 = 5 × 5.
-is 2 prime? 2 is prime; its divisors are 1 and 2.
-7 простое; его делители — 1 и 7.
-12 is not prime; 12 = 2 × 6.
-простое ли 16? 16 составное; 16 = 2 × 8.
-is 21 prime? 21 is not prime; 21 = 3 × 7.
-26 составное; 26 = 2 × 13.
-3 is prime; its divisors are 1 and 3.
-простое ли 7? 7 простое; его делители — 1 и 7.
-is 12 prime? 12 is not prime; 12 = 2 × 6.
-17 простое; его делители — 1 и 17.
-22 is not prime; 22 = 2 × 11.
-простое ли 26? 26 составное; 26 = 2 × 13.
-is 3 prime? 3 is prime; its divisors are 1 and 3.
-8 составное; 8 = 2 × 4.
-13 is prime; its divisors are 1 and 13.
-простое ли 17? 17 простое; его делители — 1 и 17.
-is 22 prime? 22 is not prime; 22 = 2 × 11.
-27 составное; 27 = 3 × 9.
-4 is not prime; 4 = 2 × 2.
-простое ли 8? 8 составное; 8 = 2 × 4.
-is 13 prime? 13 is prime; its divisors are 1 and 13.
-18 составное; 18 = 2 × 9.
-23 is prime; its divisors are 1 and 23.
-простое ли 27? 27 составное; 27 = 3 × 9.
-is 4 prime? 4 is not prime; 4 = 2 × 2.
-9 составное; 9 = 3 × 3.
-14 is not prime; 14 = 2 × 7.
-простое ли 18? 18 составное; 18 = 2 × 9.
-is 23 prime? 23 is prime; its divisors are 1 and 23.
-28 составное; 28 = 2 × 14.
+116 is not prime; 116 = 2 × 58.
+119 составное; 119 = 7 × 17.
+is 122 a prime number? no: 122 is not prime; 122 = 2 × 61.
+does 125 have exactly two divisors? no: 125 is not prime; 125 = 5 × 25.
+является ли 128 простым числом? нет: 128 составное; 128 = 2 × 64.
+простое ли число 131? да: 131 простое; его делители — 1 и 131.
+135 is not prime; 135 = 3 × 45.
+138 составное; 138 = 2 × 69.
+is 141 a prime number? no: 141 is not prime; 141 = 3 × 47.
+does 116 have exactly two divisors? no: 116 is not prime; 116 = 2 × 58.
+является ли 119 простым числом? нет: 119 составное; 119 = 7 × 17.
+простое ли число 122? нет: 122 составное; 122 = 2 × 61.
+126 is not prime; 126 = 2 × 63.
+129 составное; 129 = 3 × 43.
+is 132 a prime number? no: 132 is not prime; 132 = 2 × 66.
+does 135 have exactly two divisors? no: 135 is not prime; 135 = 3 × 45.
+является ли 138 простым числом? нет: 138 составное; 138 = 2 × 69.
+простое ли число 141? нет: 141 составное; 141 = 3 × 47.
+117 is not prime; 117 = 3 × 39.
+120 составное; 120 = 2 × 60.
+is 123 a prime number? no: 123 is not prime; 123 = 3 × 41.
+does 126 have exactly two divisors? no: 126 is not prime; 126 = 2 × 63.
+является ли 129 простым числом? нет: 129 составное; 129 = 3 × 43.
+простое ли число 132? нет: 132 составное; 132 = 2 × 66.
+136 is not prime; 136 = 2 × 68.
+139 простое; его делители — 1 и 139.
+is 114 a prime number? no: 114 is not prime; 114 = 2 × 57.
+does 117 have exactly two divisors? no: 117 is not prime; 117 = 3 × 39.
+является ли 120 простым числом? нет: 120 составное; 120 = 2 × 60.
+простое ли число 123? нет: 123 составное; 123 = 3 × 41.
+127 is prime; its divisors are 1 and 127.
+130 составное; 130 = 2 × 65.
+is 133 a prime number? no: 133 is not prime; 133 = 7 × 19.
+does 136 have exactly two divisors? no: 136 is not prime; 136 = 2 × 68.
+является ли 139 простым числом? да: 139 простое; его делители — 1 и 139.
+простое ли число 114? нет: 114 составное; 114 = 2 × 57.
+118 is not prime; 118 = 2 × 59.
+121 составное; 121 = 11 × 11.
+is 124 a prime number? no: 124 is not prime; 124 = 2 × 62.
+does 127 have exactly two divisors? yes: 127 is prime; its divisors are 1 and 127.
+является ли 130 простым числом? нет: 130 составное; 130 = 2 × 65.
+простое ли число 133? нет: 133 составное; 133 = 7 × 19.
+137 is prime; its divisors are 1 and 137.
+140 составное; 140 = 2 × 70.
+is 115 a prime number? no: 115 is not prime; 115 = 5 × 23.
+does 118 have exactly two divisors? no: 118 is not prime; 118 = 2 × 59.
+является ли 121 простым числом? нет: 121 составное; 121 = 11 × 11.
+простое ли число 124? нет: 124 составное; 124 = 2 × 62.
+128 is not prime; 128 = 2 × 64.
+131 простое; его делители — 1 и 131.
+is 134 a prime number? no: 134 is not prime; 134 = 2 × 67.
+does 137 have exactly two divisors? yes: 137 is prime; its divisors are 1 and 137.
+является ли 140 простым числом? нет: 140 составное; 140 = 2 × 70.
+простое ли число 115? нет: 115 составное; 115 = 5 × 23.
+119 is not prime; 119 = 7 × 17.
+122 составное; 122 = 2 × 61.
+is 125 a prime number? no: 125 is not prime; 125 = 5 × 25.
+does 128 have exactly two divisors? no: 128 is not prime; 128 = 2 × 64.
+является ли 131 простым числом? да: 131 простое; его делители — 1 и 131.
+простое ли число 134? нет: 134 составное; 134 = 2 × 67.
+138 is not prime; 138 = 2 × 69.
+141 составное; 141 = 3 × 47.
+is 116 a prime number? no: 116 is not prime; 116 = 2 × 58.
+does 119 have exactly two divisors? no: 119 is not prime; 119 = 7 × 17.
+является ли 122 простым числом? нет: 122 составное; 122 = 2 × 61.
+простое ли число 125? нет: 125 составное; 125 = 5 × 25.
+129 is not prime; 129 = 3 × 43.
+132 составное; 132 = 2 × 66.
+is 135 a prime number? no: 135 is not prime; 135 = 3 × 45.
+does 138 have exactly two divisors? no: 138 is not prime; 138 = 2 × 69.
+является ли 141 простым числом? нет: 141 составное; 141 = 3 × 47.
+простое ли число 116? нет: 116 составное; 116 = 2 × 58.
+120 is not prime; 120 = 2 × 60.
+123 составное; 123 = 3 × 41.
+is 126 a prime number? no: 126 is not prime; 126 = 2 × 63.
+does 129 have exactly two divisors? no: 129 is not prime; 129 = 3 × 43.
+является ли 132 простым числом? нет: 132 составное; 132 = 2 × 66.
+простое ли число 135? нет: 135 составное; 135 = 3 × 45.
+139 is prime; its divisors are 1 and 139.
+114 составное; 114 = 2 × 57.
+is 117 a prime number? no: 117 is not prime; 117 = 3 × 39.
+does 120 have exactly two divisors? no: 120 is not prime; 120 = 2 × 60.
+является ли 123 простым числом? нет: 123 составное; 123 = 3 × 41.
+простое ли число 126? нет: 126 составное; 126 = 2 × 63.
+130 is not prime; 130 = 2 × 65.
+133 составное; 133 = 7 × 19.
+is 136 a prime number? no: 136 is not prime; 136 = 2 × 68.
+does 139 have exactly two divisors? yes: 139 is prime; its divisors are 1 and 139.
+является ли 114 простым числом? нет: 114 составное; 114 = 2 × 57.
+простое ли число 117? нет: 117 составное; 117 = 3 × 39.
+121 is not prime; 121 = 11 × 11.
+124 составное; 124 = 2 × 62.
+is 127 a prime number? yes: 127 is prime; its divisors are 1 and 127.
+does 130 have exactly two divisors? no: 130 is not prime; 130 = 2 × 65.
+является ли 133 простым числом? нет: 133 составное; 133 = 7 × 19.
+простое ли число 136? нет: 136 составное; 136 = 2 × 68.
+140 is not prime; 140 = 2 × 70.
+115 составное; 115 = 5 × 23.
+is 118 a prime number? no: 118 is not prime; 118 = 2 × 59.
+does 121 have exactly two divisors? no: 121 is not prime; 121 = 11 × 11.
+является ли 124 простым числом? нет: 124 составное; 124 = 2 × 62.
+простое ли число 127? да: 127 простое; его делители — 1 и 127.
+131 is prime; its divisors are 1 and 131.
+134 составное; 134 = 2 × 67.
+is 137 a prime number? yes: 137 is prime; its divisors are 1 and 137.
+does 140 have exactly two divisors? no: 140 is not prime; 140 = 2 × 70.
+является ли 115 простым числом? нет: 115 составное; 115 = 5 × 23.
+простое ли число 118? нет: 118 составное; 118 = 2 × 59.
+122 is not prime; 122 = 2 × 61.
+125 составное; 125 = 5 × 25.
+is 128 a prime number? no: 128 is not prime; 128 = 2 × 64.
+does 131 have exactly two divisors? yes: 131 is prime; its divisors are 1 and 131.
+является ли 134 простым числом? нет: 134 составное; 134 = 2 × 67.
+простое ли число 137? да: 137 простое; его делители — 1 и 137.
+141 is not prime; 141 = 3 × 47.
+116 составное; 116 = 2 × 58.
+is 119 a prime number? no: 119 is not prime; 119 = 7 × 17.
+does 122 have exactly two divisors? no: 122 is not prime; 122 = 2 × 61.
+является ли 125 простым числом? нет: 125 составное; 125 = 5 × 25.
+простое ли число 128? нет: 128 составное; 128 = 2 × 64.
+132 is not prime; 132 = 2 × 66.
+135 составное; 135 = 3 × 45.
+is 138 a prime number? no: 138 is not prime; 138 = 2 × 69.
+does 141 have exactly two divisors? no: 141 is not prime; 141 = 3 × 47.
+является ли 116 простым числом? нет: 116 составное; 116 = 2 × 58.
+простое ли число 119? нет: 119 составное; 119 = 7 × 17.
+123 is not prime; 123 = 3 × 41.
+126 составное; 126 = 2 × 63.
+is 129 a prime number? no: 129 is not prime; 129 = 3 × 43.
+does 132 have exactly two divisors? no: 132 is not prime; 132 = 2 × 66.
+является ли 135 простым числом? нет: 135 составное; 135 = 3 × 45.
+простое ли число 138? нет: 138 составное; 138 = 2 × 69.
+114 is not prime; 114 = 2 × 57.
+117 составное; 117 = 3 × 39.
+is 120 a prime number? no: 120 is not prime; 120 = 2 × 60.
+does 123 have exactly two divisors? no: 123 is not prime; 123 = 3 × 41.
+является ли 126 простым числом? нет: 126 составное; 126 = 2 × 63.
+простое ли число 129? нет: 129 составное; 129 = 3 × 43.
+133 is not prime; 133 = 7 × 19.
+136 составное; 136 = 2 × 68.
+is 139 a prime number? yes: 139 is prime; its divisors are 1 and 139.
+does 114 have exactly two divisors? no: 114 is not prime; 114 = 2 × 57.
+является ли 117 простым числом? нет: 117 составное; 117 = 3 × 39.
+простое ли число 120? нет: 120 составное; 120 = 2 × 60.
+124 is not prime; 124 = 2 × 62.
+127 простое; его делители — 1 и 127.
+is 130 a prime number? no: 130 is not prime; 130 = 2 × 65.
+does 133 have exactly two divisors? no: 133 is not prime; 133 = 7 × 19.
+является ли 136 простым числом? нет: 136 составное; 136 = 2 × 68.
+простое ли число 139? да: 139 простое; его делители — 1 и 139.
+115 is not prime; 115 = 5 × 23.
+118 составное; 118 = 2 × 59.
+is 121 a prime number? no: 121 is not prime; 121 = 11 × 11.
+does 124 have exactly two divisors? no: 124 is not prime; 124 = 2 × 62.
+является ли 127 простым числом? да: 127 простое; его делители — 1 и 127.
+простое ли число 130? нет: 130 составное; 130 = 2 × 65.
+134 is not prime; 134 = 2 × 67.
+137 простое; его делители — 1 и 137.
+is 140 a prime number? no: 140 is not prime; 140 = 2 × 70.
+does 115 have exactly two divisors? no: 115 is not prime; 115 = 5 × 23.
+является ли 118 простым числом? нет: 118 составное; 118 = 2 × 59.
+простое ли число 121? нет: 121 составное; 121 = 11 × 11.
+125 is not prime; 125 = 5 × 25.
+128 составное; 128 = 2 × 64.
+is 131 a prime number? yes: 131 is prime; its divisors are 1 and 131.
+does 134 have exactly two divisors? no: 134 is not prime; 134 = 2 × 67.
+является ли 137 простым числом? да: 137 простое; его делители — 1 и 137.
+простое ли число 140? нет: 140 составное; 140 = 2 × 70.
 
 is 1 prime? 1 is neither prime nor composite: its only divisor is 1.
 простое ли 1? 1 ни простое, ни составное: его единственный делитель — 1.
 
-7 factorises into 7.
-во что раскладывается 11? 11 раскладывается в 11.
-what does 16 factorise into? 16 factorises into 2 × 2 × 2 × 2.
-21 раскладывается в 3 × 7.
-26 factorises into 2 × 13.
-во что раскладывается 30? 30 раскладывается в 2 × 3 × 5.
-what does 35 factorise into? 35 factorises into 5 × 7.
-4 раскладывается в 2 × 2.
-9 factorises into 3 × 3.
-во что раскладывается 13? 13 раскладывается в 13.
-what does 18 factorise into? 18 factorises into 2 × 3 × 3.
-23 раскладывается в 23.
-28 factorises into 2 × 2 × 7.
-во что раскладывается 32? 32 раскладывается в 2 × 2 × 2 × 2 × 2.
-what does 37 factorise into? 37 factorises into 37.
-6 раскладывается в 2 × 3.
-11 factorises into 11.
-во что раскладывается 15? 15 раскладывается в 3 × 5.
-what does 20 factorise into? 20 factorises into 2 × 2 × 5.
-25 раскладывается в 5 × 5.
-30 factorises into 2 × 3 × 5.
-во что раскладывается 34? 34 раскладывается в 2 × 17.
-what does 39 factorise into? 39 factorises into 3 × 13.
-8 раскладывается в 2 × 2 × 2.
-13 factorises into 13.
-во что раскладывается 17? 17 раскладывается в 17.
-what does 22 factorise into? 22 factorises into 2 × 11.
-27 раскладывается в 3 × 3 × 3.
-32 factorises into 2 × 2 × 2 × 2 × 2.
-во что раскладывается 36? 36 раскладывается в 2 × 2 × 3 × 3.
-what does 5 factorise into? 5 factorises into 5.
-10 раскладывается в 2 × 5.
-15 factorises into 3 × 5.
-во что раскладывается 19? 19 раскладывается в 19.
-what does 24 factorise into? 24 factorises into 2 × 2 × 2 × 3.
-29 раскладывается в 29.
-34 factorises into 2 × 17.
-во что раскладывается 38? 38 раскладывается в 2 × 19.
-what does 7 factorise into? 7 factorises into 7.
-12 раскладывается в 2 × 2 × 3.
-17 factorises into 17.
-во что раскладывается 21? 21 раскладывается в 3 × 7.
-what does 26 factorise into? 26 factorises into 2 × 13.
-31 раскладывается в 31.
-36 factorises into 2 × 2 × 3 × 3.
-во что раскладывается 4? 4 раскладывается в 2 × 2.
-what does 9 factorise into? 9 factorises into 3 × 3.
-14 раскладывается в 2 × 7.
-19 factorises into 19.
-во что раскладывается 23? 23 раскладывается в 23.
-what does 28 factorise into? 28 factorises into 2 × 2 × 7.
-33 раскладывается в 3 × 11.
-38 factorises into 2 × 19.
-во что раскладывается 6? 6 раскладывается в 2 × 3.
-what does 11 factorise into? 11 factorises into 11.
-16 раскладывается в 2 × 2 × 2 × 2.
-21 factorises into 3 × 7.
-во что раскладывается 25? 25 раскладывается в 5 × 5.
-what does 30 factorise into? 30 factorises into 2 × 3 × 5.
-35 раскладывается в 5 × 7.
-4 factorises into 2 × 2.
-во что раскладывается 8? 8 раскладывается в 2 × 2 × 2.
-what does 13 factorise into? 13 factorises into 13.
-18 раскладывается в 2 × 3 × 3.
-23 factorises into 23.
-во что раскладывается 27? 27 раскладывается в 3 × 3 × 3.
-what does 32 factorise into? 32 factorises into 2 × 2 × 2 × 2 × 2.
-37 раскладывается в 37.
-6 factorises into 2 × 3.
-во что раскладывается 10? 10 раскладывается в 2 × 5.
-what does 15 factorise into? 15 factorises into 3 × 5.
-20 раскладывается в 2 × 2 × 5.
-25 factorises into 5 × 5.
-во что раскладывается 29? 29 раскладывается в 29.
-what does 34 factorise into? 34 factorises into 2 × 17.
-39 раскладывается в 3 × 13.
-8 factorises into 2 × 2 × 2.
-во что раскладывается 12? 12 раскладывается в 2 × 2 × 3.
-what does 17 factorise into? 17 factorises into 17.
-22 раскладывается в 2 × 11.
-27 factorises into 3 × 3 × 3.
-во что раскладывается 31? 31 раскладывается в 31.
-what does 36 factorise into? 36 factorises into 2 × 2 × 3 × 3.
-5 раскладывается в 5.
-10 factorises into 2 × 5.
-во что раскладывается 14? 14 раскладывается в 2 × 7.
-what does 19 factorise into? 19 factorises into 19.
-24 раскладывается в 2 × 2 × 2 × 3.
-29 factorises into 29.
-во что раскладывается 33? 33 раскладывается в 3 × 11.
-what does 38 factorise into? 38 factorises into 2 × 19.
-7 раскладывается в 7.
-12 factorises into 2 × 2 × 3.
-во что раскладывается 16? 16 раскладывается в 2 × 2 × 2 × 2.
-what does 21 factorise into? 21 factorises into 3 × 7.
-26 раскладывается в 2 × 13.
-31 factorises into 31.
-во что раскладывается 35? 35 раскладывается в 5 × 7.
-what does 4 factorise into? 4 factorises into 2 × 2.
-9 раскладывается в 3 × 3.
-14 factorises into 2 × 7.
-во что раскладывается 18? 18 раскладывается в 2 × 3 × 3.
-what does 23 factorise into? 23 factorises into 23.
-28 раскладывается в 2 × 2 × 7.
-33 factorises into 3 × 11.
-во что раскладывается 37? 37 раскладывается в 37.
-what does 6 factorise into? 6 factorises into 2 × 3.
-11 раскладывается в 11.
-16 factorises into 2 × 2 × 2 × 2.
-во что раскладывается 20? 20 раскладывается в 2 × 2 × 5.
-what does 25 factorise into? 25 factorises into 5 × 5.
-30 раскладывается в 2 × 3 × 5.
-35 factorises into 5 × 7.
-во что раскладывается 39? 39 раскладывается в 3 × 13.
-what does 8 factorise into? 8 factorises into 2 × 2 × 2.
-13 раскладывается в 13.
-18 factorises into 2 × 3 × 3.
-во что раскладывается 22? 22 раскладывается в 2 × 11.
-what does 27 factorise into? 27 factorises into 3 × 3 × 3.
-32 раскладывается в 2 × 2 × 2 × 2 × 2.
-37 factorises into 37.
-во что раскладывается 5? 5 раскладывается в 5.
-what does 10 factorise into? 10 factorises into 2 × 5.
-15 раскладывается в 3 × 5.
-20 factorises into 2 × 2 × 5.
-во что раскладывается 24? 24 раскладывается в 2 × 2 × 2 × 3.
-what does 29 factorise into? 29 factorises into 29.
-34 раскладывается в 2 × 17.
-39 factorises into 3 × 13.
-во что раскладывается 7? 7 раскладывается в 7.
-what does 12 factorise into? 12 factorises into 2 × 2 × 3.
-17 раскладывается в 17.
-22 factorises into 2 × 11.
-во что раскладывается 26? 26 раскладывается в 2 × 13.
-what does 31 factorise into? 31 factorises into 31.
-36 раскладывается в 2 × 2 × 3 × 3.
-5 factorises into 5.
-во что раскладывается 9? 9 раскладывается в 3 × 3.
-what does 14 factorise into? 14 factorises into 2 × 7.
-19 раскладывается в 19.
-24 factorises into 2 × 2 × 2 × 3.
-во что раскладывается 28? 28 раскладывается в 2 × 2 × 7.
-what does 33 factorise into? 33 factorises into 3 × 11.
-38 раскладывается в 2 × 19.
+151 factorises into 151.
+во что раскладывается 155? 155 раскладывается в 5 × 31.
+what does 160 factorise into? 160 factorises into 2 × 2 × 2 × 2 × 2 × 5.
+165 раскладывается в 3 × 5 × 11.
+170 factorises into 2 × 5 × 17.
+во что раскладывается 174? 174 раскладывается в 2 × 3 × 29.
+what does 179 factorise into? 179 factorises into 179.
+148 раскладывается в 2 × 2 × 37.
+153 factorises into 3 × 3 × 17.
+во что раскладывается 157? 157 раскладывается в 157.
+what does 162 factorise into? 162 factorises into 2 × 3 × 3 × 3 × 3.
+167 раскладывается в 167.
+172 factorises into 2 × 2 × 43.
+во что раскладывается 176? 176 раскладывается в 2 × 2 × 2 × 2 × 11.
+what does 181 factorise into? 181 factorises into 181.
+150 раскладывается в 2 × 3 × 5 × 5.
+155 factorises into 5 × 31.
+во что раскладывается 159? 159 раскладывается в 3 × 53.
+what does 164 factorise into? 164 factorises into 2 × 2 × 41.
+169 раскладывается в 13 × 13.
+174 factorises into 2 × 3 × 29.
+во что раскладывается 178? 178 раскладывается в 2 × 89.
+what does 183 factorise into? 183 factorises into 3 × 61.
+152 раскладывается в 2 × 2 × 2 × 19.
+157 factorises into 157.
+во что раскладывается 161? 161 раскладывается в 7 × 23.
+what does 166 factorise into? 166 factorises into 2 × 83.
+171 раскладывается в 3 × 3 × 19.
+176 factorises into 2 × 2 × 2 × 2 × 11.
+во что раскладывается 180? 180 раскладывается в 2 × 2 × 3 × 3 × 5.
+what does 149 factorise into? 149 factorises into 149.
+154 раскладывается в 2 × 7 × 11.
+159 factorises into 3 × 53.
+во что раскладывается 163? 163 раскладывается в 163.
+what does 168 factorise into? 168 factorises into 2 × 2 × 2 × 3 × 7.
+173 раскладывается в 173.
+178 factorises into 2 × 89.
+во что раскладывается 182? 182 раскладывается в 2 × 7 × 13.
+what does 151 factorise into? 151 factorises into 151.
+156 раскладывается в 2 × 2 × 3 × 13.
+161 factorises into 7 × 23.
+во что раскладывается 165? 165 раскладывается в 3 × 5 × 11.
+what does 170 factorise into? 170 factorises into 2 × 5 × 17.
+175 раскладывается в 5 × 5 × 7.
+180 factorises into 2 × 2 × 3 × 3 × 5.
+во что раскладывается 148? 148 раскладывается в 2 × 2 × 37.
+what does 153 factorise into? 153 factorises into 3 × 3 × 17.
+158 раскладывается в 2 × 79.
+163 factorises into 163.
+во что раскладывается 167? 167 раскладывается в 167.
+what does 172 factorise into? 172 factorises into 2 × 2 × 43.
+177 раскладывается в 3 × 59.
+182 factorises into 2 × 7 × 13.
+во что раскладывается 150? 150 раскладывается в 2 × 3 × 5 × 5.
+what does 155 factorise into? 155 factorises into 5 × 31.
+160 раскладывается в 2 × 2 × 2 × 2 × 2 × 5.
+165 factorises into 3 × 5 × 11.
+во что раскладывается 169? 169 раскладывается в 13 × 13.
+what does 174 factorise into? 174 factorises into 2 × 3 × 29.
+179 раскладывается в 179.
+148 factorises into 2 × 2 × 37.
+во что раскладывается 152? 152 раскладывается в 2 × 2 × 2 × 19.
+what does 157 factorise into? 157 factorises into 157.
+162 раскладывается в 2 × 3 × 3 × 3 × 3.
+167 factorises into 167.
+во что раскладывается 171? 171 раскладывается в 3 × 3 × 19.
+what does 176 factorise into? 176 factorises into 2 × 2 × 2 × 2 × 11.
+181 раскладывается в 181.
+150 factorises into 2 × 3 × 5 × 5.
+во что раскладывается 154? 154 раскладывается в 2 × 7 × 11.
+what does 159 factorise into? 159 factorises into 3 × 53.
+164 раскладывается в 2 × 2 × 41.
+169 factorises into 13 × 13.
+во что раскладывается 173? 173 раскладывается в 173.
+what does 178 factorise into? 178 factorises into 2 × 89.
+183 раскладывается в 3 × 61.
+152 factorises into 2 × 2 × 2 × 19.
+во что раскладывается 156? 156 раскладывается в 2 × 2 × 3 × 13.
+what does 161 factorise into? 161 factorises into 7 × 23.
+166 раскладывается в 2 × 83.
+171 factorises into 3 × 3 × 19.
+во что раскладывается 175? 175 раскладывается в 5 × 5 × 7.
+what does 180 factorise into? 180 factorises into 2 × 2 × 3 × 3 × 5.
+149 раскладывается в 149.
+154 factorises into 2 × 7 × 11.
+во что раскладывается 158? 158 раскладывается в 2 × 79.
+what does 163 factorise into? 163 factorises into 163.
+168 раскладывается в 2 × 2 × 2 × 3 × 7.
+173 factorises into 173.
+во что раскладывается 177? 177 раскладывается в 3 × 59.
+what does 182 factorise into? 182 factorises into 2 × 7 × 13.
+151 раскладывается в 151.
+156 factorises into 2 × 2 × 3 × 13.
+во что раскладывается 160? 160 раскладывается в 2 × 2 × 2 × 2 × 2 × 5.
+what does 165 factorise into? 165 factorises into 3 × 5 × 11.
+170 раскладывается в 2 × 5 × 17.
+175 factorises into 5 × 5 × 7.
+во что раскладывается 179? 179 раскладывается в 179.
+what does 148 factorise into? 148 factorises into 2 × 2 × 37.
+153 раскладывается в 3 × 3 × 17.
+158 factorises into 2 × 79.
+во что раскладывается 162? 162 раскладывается в 2 × 3 × 3 × 3 × 3.
+what does 167 factorise into? 167 factorises into 167.
+172 раскладывается в 2 × 2 × 43.
+177 factorises into 3 × 59.
+во что раскладывается 181? 181 раскладывается в 181.
+what does 150 factorise into? 150 factorises into 2 × 3 × 5 × 5.
+155 раскладывается в 5 × 31.
+160 factorises into 2 × 2 × 2 × 2 × 2 × 5.
+во что раскладывается 164? 164 раскладывается в 2 × 2 × 41.
+what does 169 factorise into? 169 factorises into 13 × 13.
+174 раскладывается в 2 × 3 × 29.
+179 factorises into 179.
+во что раскладывается 183? 183 раскладывается в 3 × 61.
+what does 152 factorise into? 152 factorises into 2 × 2 × 2 × 19.
+157 раскладывается в 157.
+162 factorises into 2 × 3 × 3 × 3 × 3.
+во что раскладывается 166? 166 раскладывается в 2 × 83.
+what does 171 factorise into? 171 factorises into 3 × 3 × 19.
+176 раскладывается в 2 × 2 × 2 × 2 × 11.
+181 factorises into 181.
+во что раскладывается 149? 149 раскладывается в 149.
+what does 154 factorise into? 154 factorises into 2 × 7 × 11.
+159 раскладывается в 3 × 53.
+164 factorises into 2 × 2 × 41.
+во что раскладывается 168? 168 раскладывается в 2 × 2 × 2 × 3 × 7.
+what does 173 factorise into? 173 factorises into 173.
+178 раскладывается в 2 × 89.
+183 factorises into 3 × 61.
+во что раскладывается 151? 151 раскладывается в 151.
+what does 156 factorise into? 156 factorises into 2 × 2 × 3 × 13.
+161 раскладывается в 7 × 23.
+166 factorises into 2 × 83.
+во что раскладывается 170? 170 раскладывается в 2 × 5 × 17.
+what does 175 factorise into? 175 factorises into 5 × 5 × 7.
+180 раскладывается в 2 × 2 × 3 × 3 × 5.
+149 factorises into 149.
+во что раскладывается 153? 153 раскладывается в 3 × 3 × 17.
+what does 158 factorise into? 158 factorises into 2 × 79.
+163 раскладывается в 163.
+168 factorises into 2 × 2 × 2 × 3 × 7.
+во что раскладывается 172? 172 раскладывается в 2 × 2 × 43.
+what does 177 factorise into? 177 factorises into 3 × 59.
+182 раскладывается в 2 × 7 × 13.
 
-the divisors of 9 are 1 3 9.
-каковы делители 13? делители 13 — это 1 13.
-what are the divisors of 18? the divisors of 18 are 1 2 3 6 9 18.
-делители 23 — это 1 23.
-the divisors of 28 are 1 2 4 7 14 28.
-каковы делители 8? делители 8 — это 1 2 4 8.
-what are the divisors of 13? the divisors of 13 are 1 13.
-делители 18 — это 1 2 3 6 9 18.
-the divisors of 23 are 1 23.
-каковы делители 27? делители 27 — это 1 3 9 27.
-what are the divisors of 8? the divisors of 8 are 1 2 4 8.
-делители 13 — это 1 13.
-the divisors of 18 are 1 2 3 6 9 18.
-каковы делители 22? делители 22 — это 1 2 11 22.
-what are the divisors of 27? the divisors of 27 are 1 3 9 27.
-делители 8 — это 1 2 4 8.
-the divisors of 13 are 1 13.
-каковы делители 17? делители 17 — это 1 17.
-what are the divisors of 22? the divisors of 22 are 1 2 11 22.
-делители 27 — это 1 3 9 27.
-the divisors of 8 are 1 2 4 8.
-каковы делители 12? делители 12 — это 1 2 3 4 6 12.
-what are the divisors of 17? the divisors of 17 are 1 17.
-делители 22 — это 1 2 11 22.
-the divisors of 27 are 1 3 9 27.
-каковы делители 7? делители 7 — это 1 7.
-what are the divisors of 12? the divisors of 12 are 1 2 3 4 6 12.
-делители 17 — это 1 17.
-the divisors of 22 are 1 2 11 22.
-каковы делители 26? делители 26 — это 1 2 13 26.
-what are the divisors of 7? the divisors of 7 are 1 7.
-делители 12 — это 1 2 3 4 6 12.
-the divisors of 17 are 1 17.
-каковы делители 21? делители 21 — это 1 3 7 21.
-what are the divisors of 26? the divisors of 26 are 1 2 13 26.
-делители 7 — это 1 7.
-the divisors of 12 are 1 2 3 4 6 12.
-каковы делители 16? делители 16 — это 1 2 4 8 16.
-what are the divisors of 21? the divisors of 21 are 1 3 7 21.
-делители 26 — это 1 2 13 26.
-the divisors of 7 are 1 7.
-каковы делители 11? делители 11 — это 1 11.
-what are the divisors of 16? the divisors of 16 are 1 2 4 8 16.
-делители 21 — это 1 3 7 21.
-the divisors of 26 are 1 2 13 26.
-каковы делители 6? делители 6 — это 1 2 3 6.
-what are the divisors of 11? the divisors of 11 are 1 11.
-делители 16 — это 1 2 4 8 16.
-the divisors of 21 are 1 3 7 21.
-каковы делители 25? делители 25 — это 1 5 25.
-what are the divisors of 6? the divisors of 6 are 1 2 3 6.
-делители 11 — это 1 11.
-the divisors of 16 are 1 2 4 8 16.
-каковы делители 20? делители 20 — это 1 2 4 5 10 20.
-what are the divisors of 25? the divisors of 25 are 1 5 25.
-делители 6 — это 1 2 3 6.
-the divisors of 11 are 1 11.
-каковы делители 15? делители 15 — это 1 3 5 15.
-what are the divisors of 20? the divisors of 20 are 1 2 4 5 10 20.
-делители 25 — это 1 5 25.
-the divisors of 6 are 1 2 3 6.
-каковы делители 10? делители 10 — это 1 2 5 10.
-what are the divisors of 15? the divisors of 15 are 1 3 5 15.
-делители 20 — это 1 2 4 5 10 20.
-the divisors of 25 are 1 5 25.
-каковы делители 29? делители 29 — это 1 29.
-what are the divisors of 10? the divisors of 10 are 1 2 5 10.
-делители 15 — это 1 3 5 15.
-the divisors of 20 are 1 2 4 5 10 20.
-каковы делители 24? делители 24 — это 1 2 3 4 6 8 12 24.
-what are the divisors of 29? the divisors of 29 are 1 29.
-делители 10 — это 1 2 5 10.
-the divisors of 15 are 1 3 5 15.
-каковы делители 19? делители 19 — это 1 19.
-what are the divisors of 24? the divisors of 24 are 1 2 3 4 6 8 12 24.
-делители 29 — это 1 29.
-the divisors of 10 are 1 2 5 10.
-каковы делители 14? делители 14 — это 1 2 7 14.
-what are the divisors of 19? the divisors of 19 are 1 19.
-делители 24 — это 1 2 3 4 6 8 12 24.
-the divisors of 29 are 1 29.
-каковы делители 9? делители 9 — это 1 3 9.
-what are the divisors of 14? the divisors of 14 are 1 2 7 14.
-делители 19 — это 1 19.
-the divisors of 24 are 1 2 3 4 6 8 12 24.
-каковы делители 28? делители 28 — это 1 2 4 7 14 28.
-what are the divisors of 9? the divisors of 9 are 1 3 9.
-делители 14 — это 1 2 7 14.
-the divisors of 19 are 1 19.
-каковы делители 23? делители 23 — это 1 23.
-what are the divisors of 28? the divisors of 28 are 1 2 4 7 14 28.
-делители 9 — это 1 3 9.
-the divisors of 14 are 1 2 7 14.
-каковы делители 18? делители 18 — это 1 2 3 6 9 18.
-what are the divisors of 23? the divisors of 23 are 1 23.
-делители 28 — это 1 2 4 7 14 28.
+the divisors of 105 are 1 3 5 7 15 21 35 105.
+каковы делители 109? делители 109 — это 1 109.
+what are the divisors of 114? the divisors of 114 are 1 2 3 6 19 38 57 114.
+делители 119 — это 1 7 17 119.
+the divisors of 124 are 1 2 4 31 62 124.
+каковы делители 104? делители 104 — это 1 2 4 8 13 26 52 104.
+what are the divisors of 109? the divisors of 109 are 1 109.
+делители 114 — это 1 2 3 6 19 38 57 114.
+the divisors of 119 are 1 7 17 119.
+каковы делители 123? делители 123 — это 1 3 41 123.
+what are the divisors of 104? the divisors of 104 are 1 2 4 8 13 26 52 104.
+делители 109 — это 1 109.
+the divisors of 114 are 1 2 3 6 19 38 57 114.
+каковы делители 118? делители 118 — это 1 2 59 118.
+what are the divisors of 123? the divisors of 123 are 1 3 41 123.
+делители 104 — это 1 2 4 8 13 26 52 104.
+the divisors of 109 are 1 109.
+каковы делители 113? делители 113 — это 1 113.
+what are the divisors of 118? the divisors of 118 are 1 2 59 118.
+делители 123 — это 1 3 41 123.
+the divisors of 104 are 1 2 4 8 13 26 52 104.
+каковы делители 108? делители 108 — это 1 2 3 4 6 9 12 18 27 36 54 108.
+what are the divisors of 113? the divisors of 113 are 1 113.
+делители 118 — это 1 2 59 118.
+the divisors of 123 are 1 3 41 123.
+каковы делители 103? делители 103 — это 1 103.
+what are the divisors of 108? the divisors of 108 are 1 2 3 4 6 9 12 18 27 36 54 108.
+делители 113 — это 1 113.
+the divisors of 118 are 1 2 59 118.
+каковы делители 122? делители 122 — это 1 2 61 122.
+what are the divisors of 103? the divisors of 103 are 1 103.
+делители 108 — это 1 2 3 4 6 9 12 18 27 36 54 108.
+the divisors of 113 are 1 113.
+каковы делители 117? делители 117 — это 1 3 9 13 39 117.
+what are the divisors of 122? the divisors of 122 are 1 2 61 122.
+делители 103 — это 1 103.
+the divisors of 108 are 1 2 3 4 6 9 12 18 27 36 54 108.
+каковы делители 112? делители 112 — это 1 2 4 7 8 14 16 28 56 112.
+what are the divisors of 117? the divisors of 117 are 1 3 9 13 39 117.
+делители 122 — это 1 2 61 122.
+the divisors of 103 are 1 103.
+каковы делители 107? делители 107 — это 1 107.
+what are the divisors of 112? the divisors of 112 are 1 2 4 7 8 14 16 28 56 112.
+делители 117 — это 1 3 9 13 39 117.
+the divisors of 122 are 1 2 61 122.
+каковы делители 102? делители 102 — это 1 2 3 6 17 34 51 102.
+what are the divisors of 107? the divisors of 107 are 1 107.
+делители 112 — это 1 2 4 7 8 14 16 28 56 112.
+the divisors of 117 are 1 3 9 13 39 117.
+каковы делители 121? делители 121 — это 1 11 121.
+what are the divisors of 102? the divisors of 102 are 1 2 3 6 17 34 51 102.
+делители 107 — это 1 107.
+the divisors of 112 are 1 2 4 7 8 14 16 28 56 112.
+каковы делители 116? делители 116 — это 1 2 4 29 58 116.
+what are the divisors of 121? the divisors of 121 are 1 11 121.
+делители 102 — это 1 2 3 6 17 34 51 102.
+the divisors of 107 are 1 107.
+каковы делители 111? делители 111 — это 1 3 37 111.
+what are the divisors of 116? the divisors of 116 are 1 2 4 29 58 116.
+делители 121 — это 1 11 121.
+the divisors of 102 are 1 2 3 6 17 34 51 102.
+каковы делители 106? делители 106 — это 1 2 53 106.
+what are the divisors of 111? the divisors of 111 are 1 3 37 111.
+делители 116 — это 1 2 4 29 58 116.
+the divisors of 121 are 1 11 121.
+каковы делители 125? делители 125 — это 1 5 25 125.
+what are the divisors of 106? the divisors of 106 are 1 2 53 106.
+делители 111 — это 1 3 37 111.
+the divisors of 116 are 1 2 4 29 58 116.
+каковы делители 120? делители 120 — это 1 2 3 4 5 6 8 10 12 15 20 24 30 40 60 120.
+what are the divisors of 125? the divisors of 125 are 1 5 25 125.
+делители 106 — это 1 2 53 106.
+the divisors of 111 are 1 3 37 111.
+каковы делители 115? делители 115 — это 1 5 23 115.
+what are the divisors of 120? the divisors of 120 are 1 2 3 4 5 6 8 10 12 15 20 24 30 40 60 120.
+делители 125 — это 1 5 25 125.
+the divisors of 106 are 1 2 53 106.
+каковы делители 110? делители 110 — это 1 2 5 10 11 22 55 110.
+what are the divisors of 115? the divisors of 115 are 1 5 23 115.
+делители 120 — это 1 2 3 4 5 6 8 10 12 15 20 24 30 40 60 120.
+the divisors of 125 are 1 5 25 125.
+каковы делители 105? делители 105 — это 1 3 5 7 15 21 35 105.
+what are the divisors of 110? the divisors of 110 are 1 2 5 10 11 22 55 110.
+делители 115 — это 1 5 23 115.
+the divisors of 120 are 1 2 3 4 5 6 8 10 12 15 20 24 30 40 60 120.
+каковы делители 124? делители 124 — это 1 2 4 31 62 124.
+what are the divisors of 105? the divisors of 105 are 1 3 5 7 15 21 35 105.
+делители 110 — это 1 2 5 10 11 22 55 110.
+the divisors of 115 are 1 5 23 115.
+каковы делители 119? делители 119 — это 1 7 17 119.
+what are the divisors of 124? the divisors of 124 are 1 2 4 31 62 124.
+делители 105 — это 1 3 5 7 15 21 35 105.
+the divisors of 110 are 1 2 5 10 11 22 55 110.
+каковы делители 114? делители 114 — это 1 2 3 6 19 38 57 114.
+what are the divisors of 119? the divisors of 119 are 1 7 17 119.
+делители 124 — это 1 2 4 31 62 124.
 
 14 mod 3 = 2.
 сравнимы ли 17 и 1 по модулю 4? 17 и 1 сравнимы по модулю 4.

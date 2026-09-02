@@ -94,11 +94,13 @@ from genesis import Unreadable, worlds  # noqa: E402
 # ОТКАЗ ЕСТЬ ТАКОЕ ЖЕ УТВЕРЖДЕНИЕ, И ПРОВЕРЯЕТСЯ ТАК ЖЕ: «целого
 # ответа нет» истинно ровно тогда, когда путь и вправду не делится на
 # время нацело. Суд считает остаток, а не верит слову «нет».
-ОТКАЗ_СКОРОСТИ = re.compile(
-    r"^(?:no whole answer: (\d+) metres in (\d+) seconds do not give a "
-    r"whole speed, (\d+) is not divisible by (\d+)"
-    r"|целого ответа нет: (\d+) метр\S* за (\d+) секунд\S* не да[её]?т?"
-    r"ю?т? целой скорости, (\d+) не делится на (\d+) нацело)$")
+ЦЕЛОСТЬ_СКОРОСТИ = re.compile(
+    r"^(?:yes: (\d+) ÷ (\d+) = (\d+) metres per second"
+    r"|no: (\d+) metres in (\d+) seconds do not give a whole speed, "
+    r"(\d+) is not divisible by (\d+)"
+    r"|да: (\d+) ÷ (\d+) = (\d+) метр\S* в секунду"
+    r"|нет: (\d+) метр\S* за (\d+) секунд\S* не да[её]?т?ю?т? целой скорости, "
+    r"(\d+) не делится на (\d+) нацело)$")
 
 
 def судить(строка):
@@ -108,10 +110,13 @@ def судить(строка):
     если = asking.судить_парой(с, судить)
     if если is not None:
         return если
-    m = ОТКАЗ_СКОРОСТИ.match(с)
+    m = ЦЕЛОСТЬ_СКОРОСТИ.match(с)
     if m:
-        г = [x for x in m.groups() if x is not None]
-        путь, срок, путь2, срок2 = (int(x) for x in г)
+        г = [int(x) for x in m.groups() if x is not None]
+        if len(г) == 3:
+            путь, срок, v = г
+            return True, срок != 0 and путь == v * срок
+        путь, срок, путь2, срок2 = г
         return True, (путь == путь2 and срок == срок2 and срок != 0
                       and путь % срок != 0)
     m = СКОРОСТЬ_EN.match(с) or СКОРОСТЬ_RU.match(с)

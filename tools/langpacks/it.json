@@ -475,5 +475,16 @@
     ],
     "position": "front"
   },
-  "ask_words_comment": "question words and their POSITION (front/end/any) — derived from this pack's own layer, checkable by the same measure (М-137)"
+  "ask_words_comment": "question words and their POSITION (front/end/any) — derived from this pack's own layer, checkable by the same measure (М-137)",
+  "ask_forms": {
+    "prime": [
+      "{} è un numero primo?",
+      "{} è divisibile solo per 1 e per se stesso?"
+    ],
+    "divisible": [
+      "{} è divisibile per {}?",
+      "{} è un multiplo di {}?"
+    ]
+  },
+  "ask_forms_comment": "second declared question form of each genus (Т-4 of the expressiveness college, 03.09): a paraphrase is a form of the pack, never a synonym list of a generator; every form carries the whole pair; the opening word is a declared question word (courts/script_court.py reads it)"
 }

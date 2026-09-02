@@ -34,6 +34,7 @@ import sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import rugram
 from layer import emit  # noqa: E402
+import mass  # noqa: E402
 from plural import by_count  # noqa: E402
 
 # наборы, чья сумма делится на длину — среднее целое
@@ -47,17 +48,67 @@ from plural import by_count  # noqa: E402
           # ПАРЫ — МАССОЙ (holon 03.09: «mean of # #» шёл двумя строками,
           # ниже LAW 4, и рынок его не покупал).
           [2, 6], [5, 9], [1, 7], [3, 11], [4, 10], [6, 12], [7, 9], [2, 12]]
+
+
+def различает(набор):
+    """A set tells the mean from the median: on a progression (2 4 6) or on
+    any pair the two executors agree, and a learner that bought «the middle
+    number» passes every show — the set carries no falsifier."""
+    порядок = sorted(набор)
+    return len(набор) > 2 and sum(набор) != len(набор) * порядок[len(набор) // 2]
+
+
+def с_фальсификатором(наборы):
+    """VARIETY FROM THE FIRST SHOW (holon 03.09: at mass 3 the organism bought
+    «mean = median» because the first sets of every pass were progressions).
+    A mass slice keeps the FIRST k shows of a frame, so the order of the sets
+    is part of the corpus: distinguishing triples alternate with the tied
+    ones, opening with a distinguishing one, and the pairs (a frame of their
+    own, never distinguishable) are dealt one after every two triples."""
+    тройки_разн = [н for н in наборы if различает(н)]
+    тройки_ровн = [н for н in наборы if len(н) > 2 and not различает(н)]
+    пары = [н for н in наборы if len(н) == 2]
+    тройки = []
+    while тройки_разн or тройки_ровн:
+        if тройки_разн:
+            тройки.append(тройки_разн.pop(0))
+        if тройки_ровн:
+            тройки.append(тройки_ровн.pop(0))
+    порядок = []
+    for k, н in enumerate(тройки):
+        порядок.append(н)
+        if k % 2 == 1 and пары:
+            порядок.append(пары.pop(0))
+    порядок.extend(пары)
+    только_тройки = [н for н in порядок if len(н) > 2]
+    for k in range(1, len(только_тройки) + 1):
+        assert sum(различает(н) for н in только_тройки[:k]) * 2 >= k, \
+            f"prefix {k} of the triples carries too few falsifiers"
+    return порядок
+
+
+НАБОРЫ = с_фальсификатором(НАБОРЫ)
 # наборы нечётной длины — медиана есть средний по порядку
+# МАССА ОТ ПРАВИЛА (tools/mass.py, М-148): шаг k идёт по проходам и показам
+# без возврата, таблицы длиннее ширины прохода — различных показов на рамку
+# до 23 (было 8–12: каждый проход начинал таблицу почти с начала).
 НЕЧЁТНЫЕ = [[1, 3, 7], [5, 2, 9], [4, 4, 8], [10, 1, 6], [7, 3, 3],
-            [2, 8, 5], [9, 9, 1], [6, 2, 4], [3, 7, 5], [8, 1, 2]]
-ВЫБОР = [(5, 2), (6, 3), (4, 2), (7, 2), (6, 2), (5, 3), (8, 2), (7, 3)]
-ПЕРЕСТАНОВКИ = [3, 4, 5, 3, 4, 6, 5, 4]
+            [2, 8, 5], [9, 9, 1], [6, 2, 4], [3, 7, 5], [8, 1, 2],
+            [11, 4, 7], [2, 10, 6], [12, 3, 9], [5, 5, 1], [8, 6, 10],
+            [1, 9, 4], [7, 12, 2], [3, 11, 8], [10, 5, 5], [6, 1, 12],
+            [9, 2, 11], [4, 8, 3], [12, 7, 1]]
+# все пары «k из n» при 2 ≤ k < n ≤ 9 — правилом, не списком
+ВЫБОР = [(n, k) for n in range(3, 10) for k in range(2, n)][:23]
+# 12! = 479 001 600 — последний факториал числовой оси u32
+ПЕРЕСТАНОВКИ = list(range(3, 13))
 # (число исходов, число благоприятных, чему благоприятны)
 ИСХОДЫ = [(6, 3, "an even number"), (6, 2, "a number above four"),
           (6, 1, "a six"), (2, 1, "heads"), (4, 1, "one chosen side"),
           (6, 4, "a number below five"), (8, 4, "an even number"),
-          (10, 5, "an even number")]
-МОНЕТЫ = [2, 3, 4, 2, 3, 4, 5, 3]
+          (10, 5, "an even number"), (6, 5, "a number above one"),
+          (10, 3, "a number below four"), (12, 6, "an even number")]
+МОНЕТЫ = list(range(2, 11))
+ШИРИНА = 8
 
 
 # ИСКОМОЕ ОБЪЯВЛЯЕТ СВОЙ ВОПРОС ОДИН РАЗ, и вопрос берёт ТУ ЖЕ фразу
@@ -140,13 +191,14 @@ def spaced(xs):
 
 def pass_shows(pass_i):
     out = []
-    for i in range(8):
-        набор = НАБОРЫ[(pass_i + i) % len(НАБОРЫ)]
-        нечёт = НЕЧЁТНЫЕ[(pass_i * 3 + i) % len(НЕЧЁТНЫЕ)]
-        n, k = ВЫБОР[(pass_i + i * 3) % len(ВЫБОР)]
-        p = ПЕРЕСТАНОВКИ[(pass_i * 5 + i) % len(ПЕРЕСТАНОВКИ)]
-        всего, благо, чему = ИСХОДЫ[(pass_i * 2 + i) % len(ИСХОДЫ)]
-        монет = МОНЕТЫ[(pass_i + i) % len(МОНЕТЫ)]
+    for i in range(ШИРИНА):
+        k0 = mass.шаг(pass_i, i, ШИРИНА)
+        набор = НАБОРЫ[k0 % len(НАБОРЫ)]
+        нечёт = НЕЧЁТНЫЕ[k0 % len(НЕЧЁТНЫЕ)]
+        n, k = ВЫБОР[k0 % len(ВЫБОР)]
+        p = ПЕРЕСТАНОВКИ[k0 % len(ПЕРЕСТАНОВКИ)]
+        всего, благо, чему = ИСХОДЫ[k0 % len(ИСХОДЫ)]
+        монет = МОНЕТЫ[k0 % len(МОНЕТЫ)]
         среднее = sum(набор) // len(набор)
         медиана = sorted(нечёт)[len(нечёт) // 2]
         размах = max(нечёт) - min(нечёт)

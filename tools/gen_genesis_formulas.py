@@ -30,16 +30,26 @@ import sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import rugram
 from layer import emit  # noqa: E402
+import mass  # noqa: E402
 
 # (a, b, c) with a² + b² = c² — whole triples only
+# MASS FROM THE RULE (tools/mass.py, М-148): every pair is composed from
+# two coprime cycles of factors by the step k — up to 77 distinct shows per
+# frame (the tables of eight pairs repeated with every pass).
 TRIPLES = [(3, 4, 5), (5, 12, 13), (8, 15, 17), (7, 24, 25),
-           (20, 21, 29), (9, 40, 41), (12, 35, 37), (28, 45, 53)]
-RECTS = [(3, 4), (5, 6), (7, 2), (8, 9), (4, 11), (6, 6), (10, 3), (12, 5)]
-# triangles with an even product, so half of it is whole
-TRIS = [(6, 4), (8, 5), (10, 3), (12, 7), (4, 9), (14, 5), (6, 11), (16, 3)]
-BINOMS = [(2, 3), (4, 1), (5, 2), (3, 7), (6, 4), (9, 2), (7, 5), (10, 3)]
-SUMS = [4, 5, 6, 7, 8, 9, 10, 12]
-GEOM = [(2, 3), (3, 2), (2, 4), (5, 2), (2, 5), (4, 2), (3, 3), (2, 6)]
+           (20, 21, 29), (9, 40, 41), (12, 35, 37), (28, 45, 53),
+           (11, 60, 61), (13, 84, 85), (16, 63, 65), (33, 56, 65), (36, 77, 85)]
+WIDTHS = [3, 5, 7, 8, 4, 6, 10, 12, 9, 11, 2]
+HEIGHTS = [4, 6, 2, 9, 11, 5, 3]
+# even bases, so half of the product is whole
+BASES = [6, 8, 10, 12, 4, 14, 16]
+TRI_HEIGHTS = [4, 5, 3, 7, 9, 11, 2, 6, 8, 10, 13]
+FIRSTS = [2, 4, 5, 3, 6, 9, 7]
+SECONDS = [3, 1, 2, 7, 4, 5, 8, 6, 9, 10, 11]
+SUMS = list(range(4, 27))
+BASES_G = [2, 3, 5, 4, 6, 7, 10]
+EXPONENTS = [3, 2, 4, 5, 6]
+WIDTH = 8
 GRAPHS = [
     ("graph TD; A-->B; B-->C;", 3, 2, "A", "C", 2),
     ("graph TD; A-->B; A-->C;", 3, 2, "A", "C", 1),
@@ -65,6 +75,8 @@ GRAPHS = [
     "значение": "чему равно {предмет}?",
     "площадь": "чему равна площадь {предмет}?",
     "катет": "{предмет} — чему равно c?",
+    "whole_area": "is the area of {предмет} a whole number?",
+    "целая_площадь": "целое ли число площадь {предмет}?",
 }
 
 
@@ -75,13 +87,14 @@ def спросить(искомое, предмет, ответ):
 
 def pass_shows(pass_i):
     out = []
-    for i in range(8):
-        a, b, c = TRIPLES[(pass_i + i) % len(TRIPLES)]
-        w, h = RECTS[(pass_i * 3 + i) % len(RECTS)]
-        base, height = TRIS[(pass_i * 5 + i) % len(TRIS)]
-        p, q = BINOMS[(pass_i + i * 3) % len(BINOMS)]
-        n = SUMS[(pass_i * 2 + i) % len(SUMS)]
-        g, k = GEOM[(pass_i * 7 + i) % len(GEOM)]
+    for i in range(WIDTH):
+        k0 = mass.шаг(pass_i, i, WIDTH)
+        a, b, c = TRIPLES[k0 % len(TRIPLES)]
+        w, h = mass.пара(k0, WIDTHS, HEIGHTS)
+        base, height = mass.пара(k0, BASES, TRI_HEIGHTS)
+        p, q = mass.пара(k0, FIRSTS, SECONDS)
+        n = SUMS[k0 % len(SUMS)]
+        g, k = mass.пара(k0, BASES_G, EXPONENTS)
         # --- Pythagoras
         пиф_en = f"a^2 + b^2 = c^2 with a = {a} and b = {b}"
         пиф_ru = f"формула a^2 + b^2 = c^2 при a = {a} и b = {b}"
@@ -109,20 +122,23 @@ def pass_shows(pass_i):
         out.append(утв_тр_ru)
         out.append(спросить("area", тр_en, утв_тр_en))
         out.append(спросить("площадь", тр_ru, утв_тр_ru))
-        # ОТКАЗ С ОСНОВАНИЕМ: площадь треугольника есть половина
-        # произведения, и при нечётном произведении целой её нет. Мир
-        # пишет площадь только при чётном — таков его закон, — и отказ
-        # называет основание числом: само произведение и его нечётность.
-        нч = height + 1 if (base * height) % 2 == 0 else height
-        if (base * нч) % 2:
-            out.append(f"what is the area of a triangle with base "
-                       f"{base} and height {нч}? no whole answer for "
-                       f"base {base} and height {нч}: {base} × {нч} = "
-                       f"{base * нч} is odd.")
-            out.append(f"чему равна площадь треугольника с основанием "
-                       f"{base} и высотой {нч}? целого ответа нет при "
-                       f"основании {base} и высоте {нч}: {base} × {нч} "
-                       f"= {base * нч} нечётно.")
+        # WHOLENESS IS A YES/NO QUESTION (М-147): the value question keeps
+        # its value answers; whether the area is whole is its own question,
+        # and both answers lie side by side — every second show takes an odd
+        # base with an odd height for the «no».
+        if i % 2:
+            нб, нв = base + 1, height if height % 2 else height + 1
+        else:
+            нб, нв = base, height
+        произв = нб * нв
+        if произв % 2:
+            отв_en = f"no: {нб} × {нв} = {произв} is odd."
+            отв_ru = f"нет: {нб} × {нв} = {произв} нечётно."
+        else:
+            отв_en = f"yes: {нб} × {нв} = {произв}, {произв} ÷ 2 = {произв // 2}."
+            отв_ru = f"да: {нб} × {нв} = {произв}, {произв} ÷ 2 = {произв // 2}."
+        out.append(спросить("whole_area", f"a triangle with base {нб} and height {нв}", отв_en))
+        out.append(спросить("целая_площадь", f"треугольника с основанием {нб} и высотой {нв}", отв_ru))
         # --- binomial identities, instantiated
         out.append(f"( {p} + {q} )^2 = {p}^2 + 2 × {p} × {q} + {q}^2 = "
                    f"{(p + q) ** 2}.")

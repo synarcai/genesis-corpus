@@ -22,43 +22,43 @@ binary 111 is 7 in decimal.
 what is 7 in hex? 7 in hex is 7.
 60 and 15 is 12.
 чему равно 60 и 15 побитово? 60 и 15 побитово это 12.
-what is 36 shifted right by 2? 36 shifted right by 2 is 9.
+what is 288 shifted right by 5? 288 shifted right by 5 is 9.
 what is 100 in binary? 100 in binary is 1100100.
 100 in hex is 64.
 чему равно 100 в шестнадцатеричной записи? 100 в шестнадцатеричной записи это 64.
-14 и 7 побитово это 6.
-88 shifted right by 3 is 11.
+8 и 7 побитово это 0.
+44 shifted right by 2 is 11.
 31 in binary is 11111.
 what is octal 37 in decimal? octal 37 is 31 in decimal.
 31 в шестнадцатеричной записи это 1f.
 what is 31 xor 16? 31 xor 16 is 15.
-6 × 4 = 24.
+6 × 8 = 48.
 halfword держит 16 бит и 65536 значений.
 octal 100 is 64 in decimal.
 чему равно 64 в двоичной записи? 64 в двоичной записи это 1000000.
-100 xor 36 is 64.
+70 xor 6 is 64.
 what is 25 shifted left by 1? 25 shifted left by 1 is 50.
 with 32 bits you can write 4294967296 numbers.
 what is 18 in octal? 18 in octal is 22.
 18 в двоичной записи это 10010.
-what is 9 or 5? 9 or 5 is 13.
-2 shifted left by 5 is 64.
+what is 20 or 10? 20 or 10 is 30.
+2 shifted left by 4 is 32.
 a nibble holds 4 bits and 16 values.
 255 in octal is 377.
 255 в двоичной записи это 11111111.
-what is 21 or 12? 21 or 12 is 29.
-17 shifted left by 2 is 68.
+what is 45 or 3? 45 or 3 is 47.
+17 shifted left by 5 is 544.
 a byte holds 8 bits and 256 values.
 12 in octal is 14.
 12 в двоичной записи это 1100.
-what is 63 or 21? 63 or 21 is 63.
-13 shifted left by 2 is 52.
+what is 14 or 9? 14 or 9 is 15.
+4 shifted left by 2 is 16.
 a halfword holds 16 bits and 65536 values.
 9 in octal is 11.
 what is hex 9 in decimal? hex 9 is 9 in decimal.
-40 or 24 is 56.
-чему равно 40 или 24 побитово? 40 или 24 побитово это 56.
-чему равно 5 сдвинутое влево на 3? 5 сдвинутое влево на 3 это 40.
+22 or 15 is 31.
+чему равно 22 или 15 побитово? 22 или 15 побитово это 31.
+чему равно 13 сдвинутое влево на 3? 13 сдвинутое влево на 3 это 104.
 какое число записано цифрой 1 в двоичной? 1: цифра 1 в двоичной записи есть число 1.
 what number is written 5 in binary? none: the digit 5 does not occur in binary.
 какое число записано цифрой 8 в двоичной? такого нет: цифра 8 в двоичной записи не встречается.
@@ -86,43 +86,43 @@ what is 7 in binary? 7 in binary is 111.
 7 in hex is 7.
 чему равно 7 в шестнадцатеричной записи? 7 в шестнадцатеричной записи это 7.
 60 и 15 побитово это 12.
-36 shifted right by 2 is 9.
+288 shifted right by 5 is 9.
 100 in binary is 1100100.
 what is octal 144 in decimal? octal 144 is 100 in decimal.
 100 в шестнадцатеричной записи это 64.
-what is 14 xor 7? 14 xor 7 is 9.
-11 × 8 = 88.
+what is 8 xor 7? 8 xor 7 is 15.
+11 × 4 = 44.
 byte держит 8 бит и 256 значений.
 octal 37 is 31 in decimal.
 чему равно 31 в двоичной записи? 31 в двоичной записи это 11111.
 31 xor 16 is 15.
-what is 6 shifted left by 2? 6 shifted left by 2 is 24.
+what is 6 shifted left by 3? 6 shifted left by 3 is 48.
 with 16 bits you can write 65536 numbers.
 what is 64 in octal? 64 in octal is 100.
 64 в двоичной записи это 1000000.
-what is 100 or 36? 100 or 36 is 100.
+what is 70 or 6? 70 or 6 is 70.
 25 shifted left by 1 is 50.
 a word holds 32 bits and 4294967296 values.
 18 in octal is 22.
 what is hex 12 in decimal? hex 12 is 18 in decimal.
-9 or 5 is 13.
-чему равно 9 или 5 побитово? 9 или 5 побитово это 13.
-чему равно 2 сдвинутое влево на 5? 2 сдвинутое влево на 5 это 64.
+20 or 10 is 30.
+чему равно 20 или 10 побитово? 20 или 10 побитово это 30.
+чему равно 2 сдвинутое влево на 4? 2 сдвинутое влево на 4 это 32.
 what is binary 11111111 in decimal? binary 11111111 is 255 in decimal.
 hex ff is 255 in decimal.
-21 or 12 is 29.
-чему равно 21 или 12 побитово? 21 или 12 побитово это 29.
-чему равно 17 сдвинутое влево на 2? 17 сдвинутое влево на 2 это 68.
+45 or 3 is 47.
+чему равно 45 или 3 побитово? 45 или 3 побитово это 47.
+чему равно 17 сдвинутое влево на 5? 17 сдвинутое влево на 5 это 544.
 what is binary 1100 in decimal? binary 1100 is 12 in decimal.
 hex c is 12 in decimal.
-63 or 21 is 63.
-чему равно 63 или 21 побитово? 63 или 21 побитово это 63.
-чему равно 13 сдвинутое влево на 2? 13 сдвинутое влево на 2 это 52.
+14 or 9 is 15.
+чему равно 14 или 9 побитово? 14 или 9 побитово это 15.
+чему равно 4 сдвинутое влево на 2? 4 сдвинутое влево на 2 это 16.
 what is binary 1001 in decimal? binary 1001 is 9 in decimal.
 hex 9 is 9 in decimal.
-what is 40 and 24? 40 and 24 is 8.
-40 или 24 побитово это 56.
-5 сдвинутое влево на 3 это 40.
+what is 22 and 15? 22 and 15 is 6.
+22 или 15 побитово это 31.
+13 сдвинутое влево на 3 это 104.
 what number is written 1 in binary? 1: the digit 1 in binary is the number 1.
 какое число записано цифрой 4 в двоичной? такого нет: цифра 4 в двоичной записи не встречается.
 what number is written 8 in binary? none: the digit 8 does not occur in binary.
@@ -150,43 +150,43 @@ what is 40 in binary? 40 in binary is 101000.
 what is octal 7 in decimal? octal 7 is 7 in decimal.
 7 в шестнадцатеричной записи это 7.
 what is 60 xor 15? 60 xor 15 is 51.
-9 × 4 = 36.
+9 × 32 = 288.
 nibble держит 4 бита и 16 значений.
 octal 144 is 100 in decimal.
 чему равно 100 в двоичной записи? 100 в двоичной записи это 1100100.
-14 xor 7 is 9.
-what is 11 shifted left by 3? 11 shifted left by 3 is 88.
+8 xor 7 is 15.
+what is 11 shifted left by 2? 11 shifted left by 2 is 44.
 with 8 bits you can write 256 numbers.
 what is 31 in octal? 31 in octal is 37.
 31 в двоичной записи это 11111.
 what is 31 or 16? 31 or 16 is 31.
-6 shifted left by 2 is 24.
+6 shifted left by 3 is 48.
 a halfword holds 16 bits and 65536 values.
 64 in octal is 100.
 what is hex 40 in decimal? hex 40 is 64 in decimal.
-100 or 36 is 100.
-чему равно 100 или 36 побитово? 100 или 36 побитово это 100.
+70 or 6 is 70.
+чему равно 70 или 6 побитово? 70 или 6 побитово это 70.
 чему равно 25 сдвинутое влево на 1? 25 сдвинутое влево на 1 это 50.
 what is binary 10010 in decimal? binary 10010 is 18 in decimal.
 hex 12 is 18 in decimal.
-what is 9 and 5? 9 and 5 is 1.
-9 или 5 побитово это 13.
-2 сдвинутое влево на 5 это 64.
+what is 20 and 10? 20 and 10 is 0.
+20 или 10 побитово это 30.
+2 сдвинутое влево на 4 это 32.
 binary 11111111 is 255 in decimal.
 what is 255 in hex? 255 in hex is ff.
-what is 21 and 12? 21 and 12 is 4.
-21 или 12 побитово это 29.
-17 сдвинутое влево на 2 это 68.
+what is 45 and 3? 45 and 3 is 1.
+45 или 3 побитово это 47.
+17 сдвинутое влево на 5 это 544.
 binary 1100 is 12 in decimal.
 what is 12 in hex? 12 in hex is c.
-what is 63 and 21? 63 and 21 is 21.
-63 или 21 побитово это 63.
-13 сдвинутое влево на 2 это 52.
+what is 14 and 9? 14 and 9 is 8.
+14 или 9 побитово это 15.
+4 сдвинутое влево на 2 это 16.
 binary 1001 is 9 in decimal.
 what is 9 in hex? 9 in hex is 9.
-40 and 24 is 8.
-чему равно 40 и 24 побитово? 40 и 24 побитово это 8.
-what is 40 shifted right by 3? 40 shifted right by 3 is 5.
+22 and 15 is 6.
+чему равно 22 и 15 побитово? 22 и 15 побитово это 6.
+what is 104 shifted right by 3? 104 shifted right by 3 is 13.
 какое число записано цифрой 0 в двоичной? 0: цифра 0 в двоичной записи есть число 0.
 what number is written 4 in binary? none: the digit 4 does not occur in binary.
 какое число записано цифрой 7 в двоичной? такого нет: цифра 7 в двоичной записи не встречается.
@@ -214,43 +214,43 @@ word держит 32 бита и 4294967296 значений.
 octal 7 is 7 in decimal.
 чему равно 7 в двоичной записи? 7 в двоичной записи это 111.
 60 xor 15 is 51.
-what is 9 shifted left by 2? 9 shifted left by 2 is 36.
+what is 9 shifted left by 5? 9 shifted left by 5 is 288.
 with 4 bits you can write 16 numbers.
 what is 100 in octal? 100 in octal is 144.
 100 в двоичной записи это 1100100.
-what is 14 or 7? 14 or 7 is 15.
-11 shifted left by 3 is 88.
+what is 8 or 7? 8 or 7 is 15.
+11 shifted left by 2 is 44.
 a byte holds 8 bits and 256 values.
 31 in octal is 37.
 what is hex 1f in decimal? hex 1f is 31 in decimal.
 31 or 16 is 31.
 чему равно 31 или 16 побитово? 31 или 16 побитово это 31.
-чему равно 6 сдвинутое влево на 2? 6 сдвинутое влево на 2 это 24.
+чему равно 6 сдвинутое влево на 3? 6 сдвинутое влево на 3 это 48.
 what is binary 1000000 in decimal? binary 1000000 is 64 in decimal.
 hex 40 is 64 in decimal.
-what is 100 and 36? 100 and 36 is 36.
-100 или 36 побитово это 100.
+what is 70 and 6? 70 and 6 is 6.
+70 или 6 побитово это 70.
 25 сдвинутое влево на 1 это 50.
 binary 10010 is 18 in decimal.
 what is 18 in hex? 18 in hex is 12.
-9 and 5 is 1.
-чему равно 9 и 5 побитово? 9 и 5 побитово это 1.
-what is 64 shifted right by 5? 64 shifted right by 5 is 2.
+20 and 10 is 0.
+чему равно 20 и 10 побитово? 20 и 10 побитово это 0.
+what is 32 shifted right by 4? 32 shifted right by 4 is 2.
 what is 255 in binary? 255 in binary is 11111111.
 255 in hex is ff.
-21 and 12 is 4.
-чему равно 21 и 12 побитово? 21 и 12 побитово это 4.
-what is 68 shifted right by 2? 68 shifted right by 2 is 17.
+45 and 3 is 1.
+чему равно 45 и 3 побитово? 45 и 3 побитово это 1.
+what is 544 shifted right by 5? 544 shifted right by 5 is 17.
 what is 12 in binary? 12 in binary is 1100.
 12 in hex is c.
-63 and 21 is 21.
-чему равно 63 и 21 побитово? 63 и 21 побитово это 21.
-what is 52 shifted right by 2? 52 shifted right by 2 is 13.
+14 and 9 is 8.
+чему равно 14 и 9 побитово? 14 и 9 побитово это 8.
+what is 16 shifted right by 2? 16 shifted right by 2 is 4.
 what is 9 in binary? 9 in binary is 1001.
 9 in hex is 9.
 чему равно 9 в шестнадцатеричной записи? 9 в шестнадцатеричной записи это 9.
-40 и 24 побитово это 8.
-40 shifted right by 3 is 5.
+22 и 15 побитово это 6.
+104 shifted right by 3 is 13.
 what number is written 0 in binary? 0: the digit 0 in binary is the number 0.
 какое число записано цифрой 3 в двоичной? такого нет: цифра 3 в двоичной записи не встречается.
 what number is written 7 in binary? none: the digit 7 does not occur in binary.
@@ -278,43 +278,43 @@ with 32 bits you can write 4294967296 numbers.
 what is 7 in octal? 7 in octal is 7.
 7 в двоичной записи это 111.
 what is 60 or 15? 60 or 15 is 63.
-9 shifted left by 2 is 36.
+9 shifted left by 5 is 288.
 a nibble holds 4 bits and 16 values.
 100 in octal is 144.
 what is hex 64 in decimal? hex 64 is 100 in decimal.
-14 or 7 is 15.
-чему равно 14 или 7 побитово? 14 или 7 побитово это 15.
-чему равно 11 сдвинутое влево на 3? 11 сдвинутое влево на 3 это 88.
+8 or 7 is 15.
+чему равно 8 или 7 побитово? 8 или 7 побитово это 15.
+чему равно 11 сдвинутое влево на 2? 11 сдвинутое влево на 2 это 44.
 what is binary 11111 in decimal? binary 11111 is 31 in decimal.
 hex 1f is 31 in decimal.
 what is 31 and 16? 31 and 16 is 16.
 31 или 16 побитово это 31.
-6 сдвинутое влево на 2 это 24.
+6 сдвинутое влево на 3 это 48.
 binary 1000000 is 64 in decimal.
 what is 64 in hex? 64 in hex is 40.
-100 and 36 is 36.
-чему равно 100 и 36 побитово? 100 и 36 побитово это 36.
+70 and 6 is 6.
+чему равно 70 и 6 побитово? 70 и 6 побитово это 6.
 what is 50 shifted right by 1? 50 shifted right by 1 is 25.
 what is 18 in binary? 18 in binary is 10010.
 18 in hex is 12.
 чему равно 18 в шестнадцатеричной записи? 18 в шестнадцатеричной записи это 12.
-9 и 5 побитово это 1.
-64 shifted right by 5 is 2.
+20 и 10 побитово это 0.
+32 shifted right by 4 is 2.
 255 in binary is 11111111.
 what is octal 377 in decimal? octal 377 is 255 in decimal.
 чему равно 255 в шестнадцатеричной записи? 255 в шестнадцатеричной записи это ff.
-21 и 12 побитово это 4.
-68 shifted right by 2 is 17.
+45 и 3 побитово это 1.
+544 shifted right by 5 is 17.
 12 in binary is 1100.
 what is octal 14 in decimal? octal 14 is 12 in decimal.
 чему равно 12 в шестнадцатеричной записи? 12 в шестнадцатеричной записи это c.
-63 и 21 побитово это 21.
-52 shifted right by 2 is 13.
+14 и 9 побитово это 8.
+16 shifted right by 2 is 4.
 9 in binary is 1001.
 what is octal 11 in decimal? octal 11 is 9 in decimal.
 9 в шестнадцатеричной записи это 9.
-what is 40 xor 24? 40 xor 24 is 48.
-5 × 8 = 40.
+what is 22 xor 15? 22 xor 15 is 25.
+13 × 8 = 104.
 word держит 32 бита и 4294967296 значений.
 what number is written 3 in binary? none: the digit 3 does not occur in binary.
 какое число записано цифрой 6 в двоичной? такого нет: цифра 6 в двоичной записи не встречается.
@@ -343,42 +343,42 @@ a word holds 32 bits and 4294967296 values.
 what is hex 7 in decimal? hex 7 is 7 in decimal.
 60 or 15 is 63.
 чему равно 60 или 15 побитово? 60 или 15 побитово это 63.
-чему равно 9 сдвинутое влево на 2? 9 сдвинутое влево на 2 это 36.
+чему равно 9 сдвинутое влево на 5? 9 сдвинутое влево на 5 это 288.
 what is binary 1100100 in decimal? binary 1100100 is 100 in decimal.
 hex 64 is 100 in decimal.
-what is 14 and 7? 14 and 7 is 6.
-14 или 7 побитово это 15.
-11 сдвинутое влево на 3 это 88.
+what is 8 and 7? 8 and 7 is 0.
+8 или 7 побитово это 15.
+11 сдвинутое влево на 2 это 44.
 binary 11111 is 31 in decimal.
 what is 31 in hex? 31 in hex is 1f.
 31 and 16 is 16.
 чему равно 31 и 16 побитово? 31 и 16 побитово это 16.
-what is 24 shifted right by 2? 24 shifted right by 2 is 6.
+what is 48 shifted right by 3? 48 shifted right by 3 is 6.
 what is 64 in binary? 64 in binary is 1000000.
 64 in hex is 40.
 чему равно 64 в шестнадцатеричной записи? 64 в шестнадцатеричной записи это 40.
-100 и 36 побитово это 36.
+70 и 6 побитово это 6.
 50 shifted right by 1 is 25.
 18 in binary is 10010.
 what is octal 22 in decimal? octal 22 is 18 in decimal.
 18 в шестнадцатеричной записи это 12.
-what is 9 xor 5? 9 xor 5 is 12.
-2 × 32 = 64.
+what is 20 xor 10? 20 xor 10 is 30.
+2 × 16 = 32.
 nibble держит 4 бита и 16 значений.
 octal 377 is 255 in decimal.
 255 в шестнадцатеричной записи это ff.
-what is 21 xor 12? 21 xor 12 is 25.
-17 × 4 = 68.
+what is 45 xor 3? 45 xor 3 is 46.
+17 × 32 = 544.
 byte держит 8 бит и 256 значений.
 octal 14 is 12 in decimal.
 12 в шестнадцатеричной записи это c.
-what is 63 xor 21? 63 xor 21 is 42.
-13 × 4 = 52.
+what is 14 xor 9? 14 xor 9 is 7.
+4 × 4 = 16.
 halfword держит 16 бит и 65536 значений.
 octal 11 is 9 in decimal.
 чему равно 9 в двоичной записи? 9 в двоичной записи это 1001.
-40 xor 24 is 48.
-what is 5 shifted left by 3? 5 shifted left by 3 is 40.
+22 xor 15 is 25.
+what is 13 shifted left by 3? 13 shifted left by 3 is 104.
 with 32 bits you can write 4294967296 numbers.
 какое число записано цифрой 2 в двоичной? такого нет: цифра 2 в двоичной записи не встречается.
 what number is written 6 in binary? none: the digit 6 does not occur in binary.
@@ -407,1846 +407,1849 @@ what is binary 111 in decimal? binary 111 is 7 in decimal.
 hex 7 is 7 in decimal.
 what is 60 and 15? 60 and 15 is 12.
 60 или 15 побитово это 63.
-9 сдвинутое влево на 2 это 36.
+9 сдвинутое влево на 5 это 288.
 binary 1100100 is 100 in decimal.
 what is 100 in hex? 100 in hex is 64.
-14 and 7 is 6.
-чему равно 14 и 7 побитово? 14 и 7 побитово это 6.
-what is 88 shifted right by 3? 88 shifted right by 3 is 11.
+8 and 7 is 0.
+чему равно 8 и 7 побитово? 8 и 7 побитово это 0.
+what is 44 shifted right by 2? 44 shifted right by 2 is 11.
 what is 31 in binary? 31 in binary is 11111.
 31 in hex is 1f.
 чему равно 31 в шестнадцатеричной записи? 31 в шестнадцатеричной записи это 1f.
 31 и 16 побитово это 16.
-24 shifted right by 2 is 6.
+48 shifted right by 3 is 6.
 64 in binary is 1000000.
 what is octal 100 in decimal? octal 100 is 64 in decimal.
 64 в шестнадцатеричной записи это 40.
-what is 100 xor 36? 100 xor 36 is 64.
+what is 70 xor 6? 70 xor 6 is 64.
 25 × 2 = 50.
 word держит 32 бита и 4294967296 значений.
 octal 22 is 18 in decimal.
 чему равно 18 в двоичной записи? 18 в двоичной записи это 10010.
-9 xor 5 is 12.
-what is 2 shifted left by 5? 2 shifted left by 5 is 64.
+20 xor 10 is 30.
+what is 2 shifted left by 4? 2 shifted left by 4 is 32.
 with 4 bits you can write 16 numbers.
 what is 255 in octal? 255 in octal is 377.
 чему равно 255 в двоичной записи? 255 в двоичной записи это 11111111.
-21 xor 12 is 25.
-what is 17 shifted left by 2? 17 shifted left by 2 is 68.
+45 xor 3 is 46.
+what is 17 shifted left by 5? 17 shifted left by 5 is 544.
 with 8 bits you can write 256 numbers.
 what is 12 in octal? 12 in octal is 14.
 чему равно 12 в двоичной записи? 12 в двоичной записи это 1100.
-63 xor 21 is 42.
-what is 13 shifted left by 2? 13 shifted left by 2 is 52.
+14 xor 9 is 7.
+what is 4 shifted left by 2? 4 shifted left by 2 is 16.
 with 16 bits you can write 65536 numbers.
 what is 9 in octal? 9 in octal is 11.
 9 в двоичной записи это 1001.
-what is 40 or 24? 40 or 24 is 56.
-5 shifted left by 3 is 40.
+what is 22 or 15? 22 or 15 is 31.
+13 shifted left by 3 is 104.
 a word holds 32 bits and 4294967296 values.
 what number is written 2 in binary? none: the digit 2 does not occur in binary.
 какое число записано цифрой 5 в двоичной? такого нет: цифра 5 в двоичной записи не встречается.
 what number is written 9 in binary? none: the digit 9 does not occur in binary.
 
-binary 101000 is 40 in decimal.
-чему равно 40 в двоичной записи? 40 в двоичной записи это 101000.
-12 или 10 побитово это 14.
-byte держит 8 бит и 256 значений.
-hex 7 is 7 in decimal.
-what is 7 xor 3? 7 xor 3 is 4.
-чему равно 6 сдвинутое влево на 2? 6 сдвинутое влево на 2 это 24.
-what is octal 144 in decimal? octal 144 is 100 in decimal.
-25 or 9 is 25.
-50 shifted right by 1 is 25.
-31 in octal is 37.
-чему равно 31 в шестнадцатеричной записи? 31 в шестнадцатеричной записи это 1f.
-2 shifted left by 5 is 64.
-what is 64 in binary? 64 in binary is 1000000.
-64 в двоичной записи это 1000000.
-чему равно 14 и 7 побитово? 14 и 7 побитово это 6.
-with 8 bits you can write 256 numbers.
-what is 18 in hex? 18 in hex is 12.
-31 xor 16 is 15.
-13 сдвинутое влево на 2 это 52.
-octal 377 is 255 in decimal.
-100 or 36 is 100.
-40 shifted right by 3 is 5.
-12 in octal is 14.
-9 and 5 is 1.
-what is 7 shifted left by 1? 7 shifted left by 1 is 14.
-binary 1001 is 9 in decimal.
-чему равно 9 в двоичной записи? 9 в двоичной записи это 1001.
-21 или 12 побитово это 29.
-byte держит 8 бит и 256 значений.
-hex c8 is 200 in decimal.
-what is 63 xor 21? 63 xor 21 is 42.
-чему равно 9 сдвинутое влево на 2? 9 сдвинутое влево на 2 это 36.
-what is octal 41 in decimal? octal 41 is 33 in decimal.
-40 or 24 is 56.
-88 shifted right by 3 is 11.
-17 in octal is 21.
-чему равно 17 в шестнадцатеричной записи? 17 в шестнадцатеричной записи это 11.
-6 shifted left by 2 is 24.
-какое число записано цифрой 0 в двоичной? 0: цифра 0 в двоичной записи есть число 0.
-what number is written 6 in binary? none: the digit 6 does not occur in binary.
-what is binary 101000 in decimal? binary 101000 is 40 in decimal.
-40 в шестнадцатеричной записи это 28.
-чему равно 12 или 10 побитово? 12 или 10 побитово это 14.
-7 in binary is 111.
-what is hex 7 in decimal? hex 7 is 7 in decimal.
-7 и 3 побитово это 3.
-a halfword holds 16 bits and 65536 values.
-100 in hex is 64.
-what is 25 or 9? 25 or 9 is 25.
-what is 50 shifted right by 1? 50 shifted right by 1 is 25.
-what is 31 in octal? 31 in octal is 37.
-60 and 15 is 12.
-what is 2 shifted left by 5? 2 shifted left by 5 is 64.
-binary 1000000 is 64 in decimal.
-чему равно 64 в двоичной записи? 64 в двоичной записи это 1000000.
-14 или 7 побитово это 15.
-byte держит 8 бит и 256 значений.
-hex 12 is 18 in decimal.
-what is 31 xor 16? 31 xor 16 is 15.
-чему равно 13 сдвинутое влево на 2? 13 сдвинутое влево на 2 это 52.
-what is octal 377 in decimal? octal 377 is 255 in decimal.
-what is 100 or 36? 100 or 36 is 100.
-what is 40 shifted right by 3? 40 shifted right by 3 is 5.
-what is 12 in octal? 12 in octal is 14.
-what is 9 and 5? 9 and 5 is 1.
-7 × 2 = 14.
-what is binary 1001 in decimal? binary 1001 is 9 in decimal.
-9 в шестнадцатеричной записи это 9.
-чему равно 21 или 12 побитово? 21 или 12 побитово это 29.
-200 in binary is 11001000.
-what is hex c8 in decimal? hex c8 is 200 in decimal.
-63 и 21 побитово это 21.
-a halfword holds 16 bits and 65536 values.
-33 in hex is 21.
-what is 40 or 24? 40 or 24 is 56.
-what is 88 shifted right by 3? 88 shifted right by 3 is 11.
-what is 17 in octal? 17 in octal is 21.
-13 and 6 is 4.
-what is 6 shifted left by 2? 6 shifted left by 2 is 24.
-what number is written 1 in binary? 1: the digit 1 in binary is the number 1.
-какое число записано цифрой 6 в двоичной? такого нет: цифра 6 в двоичной записи не встречается.
-40 in octal is 50.
-чему равно 40 в шестнадцатеричной записи? 40 в шестнадцатеричной записи это 28.
-11 shifted left by 3 is 88.
-what is 7 in binary? 7 in binary is 111.
-7 в двоичной записи это 111.
-чему равно 7 и 3 побитово? 7 и 3 побитово это 3.
-with 16 bits you can write 65536 numbers.
-what is 100 in hex? 100 in hex is 64.
-25 xor 9 is 16.
-25 сдвинутое влево на 1 это 50.
-octal 37 is 31 in decimal.
-what is 60 and 15? 60 and 15 is 12.
-2 × 32 = 64.
-what is binary 1000000 in decimal? binary 1000000 is 64 in decimal.
-64 в шестнадцатеричной записи это 40.
-чему равно 14 или 7 побитово? 14 или 7 побитово это 15.
-18 in binary is 10010.
-what is hex 12 in decimal? hex 12 is 18 in decimal.
-31 и 16 побитово это 16.
-a halfword holds 16 bits and 65536 values.
-255 in hex is ff.
-100 xor 36 is 64.
-5 сдвинутое влево на 3 это 40.
-octal 14 is 12 in decimal.
-9 or 5 is 13.
-14 shifted right by 1 is 7.
-9 in octal is 11.
-чему равно 9 в шестнадцатеричной записи? 9 в шестнадцатеричной записи это 9.
-3 shifted left by 4 is 48.
-what is 200 in binary? 200 in binary is 11001000.
-200 в двоичной записи это 11001000.
-чему равно 63 и 21 побитово? 63 и 21 побитово это 21.
-with 16 bits you can write 65536 numbers.
-what is 33 in hex? 33 in hex is 21.
-40 xor 24 is 48.
-11 сдвинутое влево на 3 это 88.
-octal 21 is 17 in decimal.
-what is 13 and 6? 13 and 6 is 4.
-6 × 4 = 24.
-какое число записано цифрой 1 в двоичной? 1: цифра 1 в двоичной записи есть число 1.
-what number is written 7 in binary? none: the digit 7 does not occur in binary.
-what is 40 in octal? 40 in octal is 50.
-12 and 10 is 8.
-what is 11 shifted left by 3? 11 shifted left by 3 is 88.
-binary 111 is 7 in decimal.
-чему равно 7 в двоичной записи? 7 в двоичной записи это 111.
-7 или 3 побитово это 7.
-halfword держит 16 бит и 65536 значений.
-hex 64 is 100 in decimal.
-what is 25 xor 9? 25 xor 9 is 16.
-чему равно 25 сдвинутое влево на 1? 25 сдвинутое влево на 1 это 50.
-what is octal 37 in decimal? octal 37 is 31 in decimal.
-60 or 15 is 63.
-64 shifted right by 5 is 2.
-64 in octal is 100.
-чему равно 64 в шестнадцатеричной записи? 64 в шестнадцатеричной записи это 40.
-17 shifted left by 2 is 68.
-what is 18 in binary? 18 in binary is 10010.
-18 в двоичной записи это 10010.
-чему равно 31 и 16 побитово? 31 и 16 побитово это 16.
-with 16 bits you can write 65536 numbers.
-what is 255 in hex? 255 in hex is ff.
-what is 100 xor 36? 100 xor 36 is 64.
-чему равно 5 сдвинутое влево на 3? 5 сдвинутое влево на 3 это 40.
-what is octal 14 in decimal? octal 14 is 12 in decimal.
-what is 9 or 5? 9 or 5 is 13.
-what is 14 shifted right by 1? 14 shifted right by 1 is 7.
-what is 9 in octal? 9 in octal is 11.
-21 and 12 is 4.
-what is 3 shifted left by 4? 3 shifted left by 4 is 48.
 binary 11001000 is 200 in decimal.
-чему равно 200 в двоичной записи? 200 в двоичной записи это 11001000.
-63 или 21 побитово это 63.
-halfword держит 16 бит и 65536 значений.
-hex 21 is 33 in decimal.
-what is 40 xor 24? 40 xor 24 is 48.
-чему равно 11 сдвинутое влево на 3? 11 сдвинутое влево на 3 это 88.
-what is octal 21 in decimal? octal 21 is 17 in decimal.
-13 or 6 is 15.
-24 shifted right by 2 is 6.
-what number is written 2 in binary? none: the digit 2 does not occur in binary.
-какое число записано цифрой 7 в двоичной? такого нет: цифра 7 в двоичной записи не встречается.
-octal 50 is 40 in decimal.
-what is 12 and 10? 12 and 10 is 8.
-11 × 8 = 88.
-what is binary 111 in decimal? binary 111 is 7 in decimal.
-7 в шестнадцатеричной записи это 7.
-чему равно 7 или 3 побитово? 7 или 3 побитово это 7.
-100 in binary is 1100100.
-what is hex 64 in decimal? hex 64 is 100 in decimal.
-25 и 9 побитово это 9.
-a word holds 32 bits and 4294967296 values.
-31 in hex is 1f.
-what is 60 or 15? 60 or 15 is 63.
-what is 64 shifted right by 5? 64 shifted right by 5 is 2.
-what is 64 in octal? 64 in octal is 100.
-14 and 7 is 6.
-what is 17 shifted left by 2? 17 shifted left by 2 is 68.
-binary 10010 is 18 in decimal.
-чему равно 18 в двоичной записи? 18 в двоичной записи это 10010.
-31 или 16 побитово это 31.
-halfword держит 16 бит и 65536 значений.
-hex ff is 255 in decimal.
-100 и 36 побитово это 36.
-a word holds 32 bits and 4294967296 values.
-12 in hex is c.
-9 xor 5 is 12.
-7 сдвинутое влево на 1 это 14.
-octal 11 is 9 in decimal.
-what is 21 and 12? 21 and 12 is 4.
-3 × 16 = 48.
-what is binary 11001000 in decimal? binary 11001000 is 200 in decimal.
 200 в шестнадцатеричной записи это c8.
-чему равно 63 или 21 побитово? 63 или 21 побитово это 63.
-33 in binary is 100001.
-what is hex 21 in decimal? hex 21 is 33 in decimal.
-40 и 24 побитово это 8.
-a word holds 32 bits and 4294967296 values.
-17 in hex is 11.
-what is 13 or 6? 13 or 6 is 15.
-what is 24 shifted right by 2? 24 shifted right by 2 is 6.
-какое число записано цифрой 2 в двоичной? такого нет: цифра 2 в двоичной записи не встречается.
-what number is written 8 in binary? none: the digit 8 does not occur in binary.
-what is octal 50 in decimal? octal 50 is 40 in decimal.
-12 or 10 is 14.
-88 shifted right by 3 is 11.
-7 in octal is 7.
-чему равно 7 в шестнадцатеричной записи? 7 в шестнадцатеричной записи это 7.
-6 shifted left by 2 is 24.
-what is 100 in binary? 100 in binary is 1100100.
-100 в двоичной записи это 1100100.
-чему равно 25 и 9 побитово? 25 и 9 побитово это 9.
-with 32 bits you can write 4294967296 numbers.
-what is 31 in hex? 31 in hex is 1f.
-60 xor 15 is 51.
-2 сдвинутое влево на 5 это 64.
-octal 100 is 64 in decimal.
-what is 14 and 7? 14 and 7 is 6.
-17 × 4 = 68.
-what is binary 10010 in decimal? binary 10010 is 18 in decimal.
-18 в шестнадцатеричной записи это 12.
-чему равно 31 или 16 побитово? 31 или 16 побитово это 31.
-255 in binary is 11111111.
-255 в двоичной записи это 11111111.
-чему равно 100 и 36 побитово? 100 и 36 побитово это 36.
-with 32 bits you can write 4294967296 numbers.
-what is 12 in hex? 12 in hex is c.
-what is 9 xor 5? 9 xor 5 is 12.
-чему равно 7 сдвинутое влево на 1? 7 сдвинутое влево на 1 это 14.
-what is octal 11 in decimal? octal 11 is 9 in decimal.
-21 or 12 is 29.
-48 shifted right by 4 is 3.
-200 in octal is 310.
-чему равно 200 в шестнадцатеричной записи? 200 в шестнадцатеричной записи это c8.
-9 shifted left by 2 is 36.
-what is 33 in binary? 33 in binary is 100001.
-33 в двоичной записи это 100001.
-чему равно 40 и 24 побитово? 40 и 24 побитово это 8.
-with 32 bits you can write 4294967296 numbers.
-what is 17 in hex? 17 in hex is 11.
-13 xor 6 is 11.
-6 сдвинутое влево на 2 это 24.
-what number is written 3 in binary? none: the digit 3 does not occur in binary.
-какое число записано цифрой 8 в двоичной? такого нет: цифра 8 в двоичной записи не встречается.
-40 in hex is 28.
-what is 12 or 10? 12 or 10 is 14.
-what is 88 shifted right by 3? 88 shifted right by 3 is 11.
-what is 7 in octal? 7 in octal is 7.
-7 and 3 is 3.
-what is 6 shifted left by 2? 6 shifted left by 2 is 24.
-binary 1100100 is 100 in decimal.
-чему равно 100 в двоичной записи? 100 в двоичной записи это 1100100.
-25 или 9 побитово это 25.
-word держит 32 бита и 4294967296 значений.
-hex 1f is 31 in decimal.
-what is 60 xor 15? 60 xor 15 is 51.
-чему равно 2 сдвинутое влево на 5? 2 сдвинутое влево на 5 это 64.
-what is octal 100 in decimal? octal 100 is 64 in decimal.
-14 or 7 is 15.
-68 shifted right by 2 is 17.
-18 in octal is 22.
-чему равно 18 в шестнадцатеричной записи? 18 в шестнадцатеричной записи это 12.
-13 shifted left by 2 is 52.
-what is 255 in binary? 255 in binary is 11111111.
-чему равно 255 в двоичной записи? 255 в двоичной записи это 11111111.
-100 или 36 побитово это 100.
-word держит 32 бита и 4294967296 значений.
-hex c is 12 in decimal.
-9 и 5 побитово это 1.
-a nibble holds 4 bits and 16 values.
-9 in hex is 9.
-what is 21 or 12? 21 or 12 is 29.
-what is 48 shifted right by 4? 48 shifted right by 4 is 3.
-what is 200 in octal? 200 in octal is 310.
-63 and 21 is 21.
-what is 9 shifted left by 2? 9 shifted left by 2 is 36.
+5 shifted left by 1 is 10.
 binary 100001 is 33 in decimal.
-чему равно 33 в двоичной записи? 33 в двоичной записи это 100001.
-40 или 24 побитово это 56.
-word держит 32 бита и 4294967296 значений.
-hex 11 is 17 in decimal.
-what is 13 xor 6? 13 xor 6 is 11.
-чему равно 6 сдвинутое влево на 2? 6 сдвинутое влево на 2 это 24.
-какое число записано цифрой 3 в двоичной? такого нет: цифра 3 в двоичной записи не встречается.
-what number is written 9 in binary? none: the digit 9 does not occur in binary.
-what is 40 in hex? 40 in hex is 28.
-12 xor 10 is 6.
-11 сдвинутое влево на 3 это 88.
-octal 7 is 7 in decimal.
-what is 7 and 3? 7 and 3 is 3.
-6 × 4 = 24.
-what is binary 1100100 in decimal? binary 1100100 is 100 in decimal.
-100 в шестнадцатеричной записи это 64.
-чему равно 25 или 9 побитово? 25 или 9 побитово это 25.
-31 in binary is 11111.
-what is hex 1f in decimal? hex 1f is 31 in decimal.
-60 и 15 побитово это 12.
-a nibble holds 4 bits and 16 values.
-64 in hex is 40.
-what is 14 or 7? 14 or 7 is 15.
-what is 68 shifted right by 2? 68 shifted right by 2 is 17.
-what is 18 in octal? 18 in octal is 22.
-31 and 16 is 16.
-what is 13 shifted left by 2? 13 shifted left by 2 is 52.
-binary 11111111 is 255 in decimal.
-255 в шестнадцатеричной записи это ff.
-чему равно 100 или 36 побитово? 100 или 36 побитово это 100.
-12 in binary is 1100.
-12 в двоичной записи это 1100.
-чему равно 9 и 5 побитово? 9 и 5 побитово это 1.
-with 4 bits you can write 16 numbers.
-what is 9 in hex? 9 in hex is 9.
-21 xor 12 is 25.
-3 сдвинутое влево на 4 это 48.
-octal 310 is 200 in decimal.
-what is 63 and 21? 63 and 21 is 21.
-9 × 4 = 36.
-what is binary 100001 in decimal? binary 100001 is 33 in decimal.
 33 в шестнадцатеричной записи это 21.
-чему равно 40 или 24 побитово? 40 или 24 побитово это 56.
-17 in binary is 10001.
-what is hex 11 in decimal? hex 11 is 17 in decimal.
-13 и 6 побитово это 4.
-a nibble holds 4 bits and 16 values.
-what number is written 4 in binary? none: the digit 4 does not occur in binary.
-какое число записано цифрой 9 в двоичной? такого нет: цифра 9 в двоичной записи не встречается.
-hex 28 is 40 in decimal.
-what is 12 xor 10? 12 xor 10 is 6.
-чему равно 11 сдвинутое влево на 3? 11 сдвинутое влево на 3 это 88.
-what is octal 7 in decimal? octal 7 is 7 in decimal.
-7 or 3 is 7.
-24 shifted right by 2 is 6.
-100 in octal is 144.
-чему равно 100 в шестнадцатеричной записи? 100 в шестнадцатеричной записи это 64.
-25 shifted left by 1 is 50.
-what is 31 in binary? 31 in binary is 11111.
-31 в двоичной записи это 11111.
-чему равно 60 и 15 побитово? 60 и 15 побитово это 12.
-with 4 bits you can write 16 numbers.
-what is 64 in hex? 64 in hex is 40.
-14 xor 7 is 9.
-17 сдвинутое влево на 2 это 68.
-octal 22 is 18 in decimal.
-what is 31 and 16? 31 and 16 is 16.
-13 × 4 = 52.
-what is binary 11111111 in decimal? binary 11111111 is 255 in decimal.
-чему равно 255 в шестнадцатеричной записи? 255 в шестнадцатеричной записи это ff.
-5 shifted left by 3 is 40.
-what is 12 in binary? 12 in binary is 1100.
-чему равно 12 в двоичной записи? 12 в двоичной записи это 1100.
-9 или 5 побитово это 13.
-nibble держит 4 бита и 16 значений.
-hex 9 is 9 in decimal.
-what is 21 xor 12? 21 xor 12 is 25.
-чему равно 3 сдвинутое влево на 4? 3 сдвинутое влево на 4 это 48.
-what is octal 310 in decimal? octal 310 is 200 in decimal.
-63 or 21 is 63.
-36 shifted right by 2 is 9.
-33 in octal is 41.
-чему равно 33 в шестнадцатеричной записи? 33 в шестнадцатеричной записи это 21.
-11 shifted left by 3 is 88.
-what is 17 in binary? 17 in binary is 10001.
-17 в двоичной записи это 10001.
-чему равно 13 и 6 побитово? 13 и 6 побитово это 4.
-with 4 bits you can write 16 numbers.
-какое число записано цифрой 4 в двоичной? такого нет: цифра 4 в двоичной записи не встречается.
-40 in binary is 101000.
-what is hex 28 in decimal? hex 28 is 40 in decimal.
-12 и 10 побитово это 8.
-a byte holds 8 bits and 256 values.
-7 in hex is 7.
-what is 7 or 3? 7 or 3 is 7.
-what is 24 shifted right by 2? 24 shifted right by 2 is 6.
-what is 100 in octal? 100 in octal is 144.
-25 and 9 is 9.
-what is 25 shifted left by 1? 25 shifted left by 1 is 50.
-binary 11111 is 31 in decimal.
-чему равно 31 в двоичной записи? 31 в двоичной записи это 11111.
-60 или 15 побитово это 63.
-nibble держит 4 бита и 16 значений.
-hex 40 is 64 in decimal.
-what is 14 xor 7? 14 xor 7 is 9.
-чему равно 17 сдвинутое влево на 2? 17 сдвинутое влево на 2 это 68.
-what is octal 22 in decimal? octal 22 is 18 in decimal.
-31 or 16 is 31.
-52 shifted right by 2 is 13.
-255 in octal is 377.
-100 and 36 is 36.
-what is 5 shifted left by 3? 5 shifted left by 3 is 40.
-binary 1100 is 12 in decimal.
-12 в шестнадцатеричной записи это c.
-чему равно 9 или 5 побитово? 9 или 5 побитово это 13.
-9 in binary is 1001.
-what is hex 9 in decimal? hex 9 is 9 in decimal.
-21 и 12 побитово это 4.
-a byte holds 8 bits and 256 values.
-200 in hex is c8.
-what is 63 or 21? 63 or 21 is 63.
-what is 36 shifted right by 2? 36 shifted right by 2 is 9.
-what is 33 in octal? 33 in octal is 41.
-40 and 24 is 8.
-what is 11 shifted left by 3? 11 shifted left by 3 is 88.
+7 shifted left by 4 is 112.
 binary 10001 is 17 in decimal.
-чему равно 17 в двоичной записи? 17 в двоичной записи это 10001.
-13 или 6 побитово это 15.
-nibble держит 4 бита и 16 значений.
-what number is written 5 in binary? none: the digit 5 does not occur in binary.
-what is 40 in binary? 40 in binary is 101000.
-40 в двоичной записи это 101000.
-чему равно 12 и 10 побитово? 12 и 10 побитово это 8.
-with 8 bits you can write 256 numbers.
-what is 7 in hex? 7 in hex is 7.
-7 xor 3 is 4.
-6 сдвинутое влево на 2 это 24.
-octal 144 is 100 in decimal.
-what is 25 and 9? 25 and 9 is 9.
-25 × 2 = 50.
-what is binary 11111 in decimal? binary 11111 is 31 in decimal.
-31 в шестнадцатеричной записи это 1f.
-чему равно 60 или 15 побитово? 60 или 15 побитово это 63.
-64 in binary is 1000000.
-what is hex 40 in decimal? hex 40 is 64 in decimal.
-14 и 7 побитово это 6.
-a byte holds 8 bits and 256 values.
-18 in hex is 12.
-what is 31 or 16? 31 or 16 is 31.
-what is 52 shifted right by 2? 52 shifted right by 2 is 13.
-what is 255 in octal? 255 in octal is 377.
-what is 100 and 36? 100 and 36 is 36.
-5 × 8 = 40.
-what is binary 1100 in decimal? binary 1100 is 12 in decimal.
-чему равно 12 в шестнадцатеричной записи? 12 в шестнадцатеричной записи это c.
-7 shifted left by 1 is 14.
-what is 9 in binary? 9 in binary is 1001.
-9 в двоичной записи это 1001.
-чему равно 21 и 12 побитово? 21 и 12 побитово это 4.
-with 8 bits you can write 256 numbers.
-what is 200 in hex? 200 in hex is c8.
-63 xor 21 is 42.
-9 сдвинутое влево на 2 это 36.
-octal 41 is 33 in decimal.
-what is 40 and 24? 40 and 24 is 8.
-11 × 8 = 88.
-what is binary 10001 in decimal? binary 10001 is 17 in decimal.
 17 в шестнадцатеричной записи это 11.
-чему равно 13 или 6 побитово? 13 или 6 побитово это 15.
-what number is written 0 in binary? 0: the digit 0 in binary is the number 0.
-какое число записано цифрой 5 в двоичной? такого нет: цифра 5 в двоичной записи не встречается.
-
-what is 31 in hex? 31 in hex is 1f.
-7 и 3 побитово это 3.
-halfword держит 16 бит и 65536 значений.
-64 в двоичной записи это 1000000.
-чему равно 25 или 9 побитово? 25 или 9 побитово это 25.
-binary 10010 is 18 in decimal.
-чему равно 18 в шестнадцатеричной записи? 18 в шестнадцатеричной записи это 12.
-7 × 2 = 14.
-what is 255 in octal? 255 in octal is 377.
-what is 14 or 7? 14 or 7 is 15.
-чему равно 3 сдвинутое влево на 4? 3 сдвинутое влево на 4 это 48.
-what is 12 in hex? 12 in hex is c.
-чему равно 31 и 16 побитово? 31 и 16 побитово это 16.
-9 in binary is 1001.
-чему равно 9 в двоичной записи? 9 в двоичной записи это 1001.
-11 shifted left by 3 is 88.
-what is binary 11001000 in decimal? binary 11001000 is 200 in decimal.
-9 and 5 is 1.
-24 shifted right by 2 is 6.
-octal 41 is 33 in decimal.
-what is 21 or 12? 21 or 12 is 29.
-чему равно 25 сдвинутое влево на 1? 25 сдвинутое влево на 1 это 50.
-what is 17 in hex? 17 in hex is 11.
-63 и 21 побитово это 21.
-halfword держит 16 бит и 65536 значений.
-48 в двоичной записи это 110000.
-чему равно 40 или 24 побитово? 40 или 24 побитово это 56.
-binary 1101 is 13 in decimal.
-13 and 6 is 4.
-52 shifted right by 2 is 13.
-octal 6 is 6 in decimal.
-what is 12 or 10? 12 or 10 is 14.
-чему равно 5 сдвинутое влево на 3? 5 сдвинутое влево на 3 это 40.
-какое число записано цифрой 4 в двоичной? такого нет: цифра 4 в двоичной записи не встречается.
-binary 11111 is 31 in decimal.
-чему равно 31 в шестнадцатеричной записи? 31 в шестнадцатеричной записи это 1f.
-13 × 4 = 52.
-what is 64 in octal? 64 in octal is 100.
-25 or 9 is 25.
-5 сдвинутое влево на 3 это 40.
-18 in hex is 12.
-what is 60 xor 15? 60 xor 15 is 51.
-with 4 bits you can write 16 numbers.
-255 в двоичной записи это 11111111.
-чему равно 14 или 7 побитово? 14 или 7 побитово это 15.
-binary 1100 is 12 in decimal.
-31 and 16 is 16.
-36 shifted right by 2 is 9.
-octal 11 is 9 in decimal.
-what is 100 or 36? 100 or 36 is 100.
-чему равно 11 сдвинутое влево на 3? 11 сдвинутое влево на 3 это 88.
-what is 200 in hex? 200 in hex is c8.
-9 и 5 побитово это 1.
-nibble держит 4 бита и 16 значений.
-33 в двоичной записи это 100001.
-чему равно 21 или 12 побитово? 21 или 12 побитово это 29.
-binary 10001 is 17 in decimal.
-чему равно 17 в шестнадцатеричной записи? 17 в шестнадцатеричной записи это 11.
-2 × 32 = 64.
-what is 48 in octal? 48 in octal is 60.
-40 or 24 is 56.
-17 сдвинутое влево на 2 это 68.
-13 in hex is d.
-13 и 6 побитово это 4.
-nibble держит 4 бита и 16 значений.
-6 в двоичной записи это 110.
-чему равно 12 или 10 побитово? 12 или 10 побитово это 14.
-what number is written 1 in binary? 1: the digit 1 in binary is the number 1.
-какое число записано цифрой 7 в двоичной? такого нет: цифра 7 в двоичной записи не встречается.
-31 in hex is 1f.
-what is 7 xor 3? 7 xor 3 is 4.
-with 16 bits you can write 65536 numbers.
-what is hex 40 in decimal? hex 40 is 64 in decimal.
-25 или 9 побитово это 25.
-what is 18 in binary? 18 in binary is 10010.
-18 в шестнадцатеричной записи это 12.
-what is 7 shifted left by 1? 7 shifted left by 1 is 14.
-255 in octal is 377.
-14 or 7 is 15.
-3 сдвинутое влево на 4 это 48.
-12 in hex is c.
-31 и 16 побитово это 16.
-halfword держит 16 бит и 65536 значений.
-9 в двоичной записи это 1001.
-чему равно 100 или 36 побитово? 100 или 36 побитово это 100.
-binary 11001000 is 200 in decimal.
-чему равно 200 в шестнадцатеричной записи? 200 в шестнадцатеричной записи это c8.
-6 × 4 = 24.
-what is 33 in octal? 33 in octal is 41.
-21 or 12 is 29.
-25 сдвинутое влево на 1 это 50.
-17 in hex is 11.
-what is 63 xor 21? 63 xor 21 is 42.
-with 16 bits you can write 65536 numbers.
-what is hex 30 in decimal? hex 30 is 48 in decimal.
-40 или 24 побитово это 56.
-what is 13 in binary? 13 in binary is 1101.
-чему равно 13 в шестнадцатеричной записи? 13 в шестнадцатеричной записи это d.
-13 × 4 = 52.
-what is 6 in octal? 6 in octal is 6.
-12 or 10 is 14.
-5 сдвинутое влево на 3 это 40.
-what number is written 4 in binary? none: the digit 4 does not occur in binary.
-what is 31 in binary? 31 in binary is 11111.
-31 в шестнадцатеричной записи это 1f.
-what is 13 shifted left by 2? 13 shifted left by 2 is 52.
-64 in octal is 100.
-what is 25 and 9? 25 and 9 is 9.
-what is 40 shifted right by 3? 40 shifted right by 3 is 5.
-what is octal 22 in decimal? octal 22 is 18 in decimal.
-60 xor 15 is 51.
-a nibble holds 4 bits and 16 values.
-hex ff is 255 in decimal.
-14 или 7 побитово это 15.
-what is 12 in binary? 12 in binary is 1100.
-чему равно 12 в шестнадцатеричной записи? 12 в шестнадцатеричной записи это c.
-9 × 4 = 36.
-what is 9 in octal? 9 in octal is 11.
-100 or 36 is 100.
-11 сдвинутое влево на 3 это 88.
-200 in hex is c8.
-what is 9 xor 5? 9 xor 5 is 12.
-with 4 bits you can write 16 numbers.
-what is hex 21 in decimal? hex 21 is 33 in decimal.
-21 или 12 побитово это 29.
-what is 17 in binary? 17 in binary is 10001.
-17 в шестнадцатеричной записи это 11.
-what is 2 shifted left by 5? 2 shifted left by 5 is 64.
-48 in octal is 60.
-what is 40 and 24? 40 and 24 is 8.
-what is 68 shifted right by 2? 68 shifted right by 2 is 17.
-what is octal 15 in decimal? octal 15 is 13 in decimal.
-what is 13 xor 6? 13 xor 6 is 11.
-with 4 bits you can write 16 numbers.
-what is hex 6 in decimal? hex 6 is 6 in decimal.
-12 или 10 побитово это 14.
-какое число записано цифрой 0 в двоичной? 0: цифра 0 в двоичной записи есть число 0.
-what number is written 7 in binary? none: the digit 7 does not occur in binary.
-what is octal 37 in decimal? octal 37 is 31 in decimal.
-7 xor 3 is 4.
-a halfword holds 16 bits and 65536 values.
-hex 40 is 64 in decimal.
-чему равно 25 и 9 побитово? 25 и 9 побитово это 9.
-18 in binary is 10010.
-чему равно 18 в двоичной записи? 18 в двоичной записи это 10010.
-7 shifted left by 1 is 14.
-what is binary 11111111 in decimal? binary 11111111 is 255 in decimal.
-what is 14 and 7? 14 and 7 is 6.
-what is 48 shifted right by 4? 48 shifted right by 4 is 3.
-what is octal 14 in decimal? octal 14 is 12 in decimal.
-what is 31 xor 16? 31 xor 16 is 15.
-with 16 bits you can write 65536 numbers.
-what is hex 9 in decimal? hex 9 is 9 in decimal.
-100 или 36 побитово это 100.
-what is 200 in binary? 200 in binary is 11001000.
-200 в шестнадцатеричной записи это c8.
-what is 6 shifted left by 2? 6 shifted left by 2 is 24.
-33 in octal is 41.
-what is 21 and 12? 21 and 12 is 4.
-what is 50 shifted right by 1? 50 shifted right by 1 is 25.
-what is octal 21 in decimal? octal 21 is 17 in decimal.
-63 xor 21 is 42.
-a halfword holds 16 bits and 65536 values.
-hex 30 is 48 in decimal.
-чему равно 40 и 24 побитово? 40 и 24 побитово это 8.
-13 in binary is 1101.
-13 в шестнадцатеричной записи это d.
-what is 13 shifted left by 2? 13 shifted left by 2 is 52.
-6 in octal is 6.
-what is 12 and 10? 12 and 10 is 8.
-what is 40 shifted right by 3? 40 shifted right by 3 is 5.
-какое число записано цифрой 3 в двоичной? такого нет: цифра 3 в двоичной записи не встречается.
-31 in binary is 11111.
-чему равно 31 в двоичной записи? 31 в двоичной записи это 11111.
-13 shifted left by 2 is 52.
-what is binary 1000000 in decimal? binary 1000000 is 64 in decimal.
-25 and 9 is 9.
-40 shifted right by 3 is 5.
-octal 22 is 18 in decimal.
-what is 60 or 15? 60 or 15 is 63.
-чему равно 7 сдвинутое влево на 1? 7 сдвинутое влево на 1 это 14.
-what is 255 in hex? 255 in hex is ff.
-чему равно 14 и 7 побитово? 14 и 7 побитово это 6.
-12 in binary is 1100.
-12 в шестнадцатеричной записи это c.
-what is 9 shifted left by 2? 9 shifted left by 2 is 36.
-9 in octal is 11.
-what is 100 and 36? 100 and 36 is 36.
-what is 88 shifted right by 3? 88 shifted right by 3 is 11.
-what is octal 310 in decimal? octal 310 is 200 in decimal.
-9 xor 5 is 12.
-a nibble holds 4 bits and 16 values.
-hex 21 is 33 in decimal.
-чему равно 21 и 12 побитово? 21 и 12 побитово это 4.
-17 in binary is 10001.
-чему равно 17 в двоичной записи? 17 в двоичной записи это 10001.
-2 shifted left by 5 is 64.
-what is binary 110000 in decimal? binary 110000 is 48 in decimal.
-40 and 24 is 8.
-68 shifted right by 2 is 17.
-octal 15 is 13 in decimal.
-13 xor 6 is 11.
-a nibble holds 4 bits and 16 values.
-hex 6 is 6 in decimal.
-чему равно 12 и 10 побитово? 12 и 10 побитово это 8.
-what number is written 0 in binary? 0: the digit 0 in binary is the number 0.
-какое число записано цифрой 6 в двоичной? такого нет: цифра 6 в двоичной записи не встречается.
-octal 37 is 31 in decimal.
-what is 7 or 3? 7 or 3 is 7.
-чему равно 13 сдвинутое влево на 2? 13 сдвинутое влево на 2 это 52.
-what is 64 in hex? 64 in hex is 40.
-25 и 9 побитово это 9.
-word держит 32 бита и 4294967296 значений.
-18 в двоичной записи это 10010.
-чему равно 60 или 15 побитово? 60 или 15 побитово это 63.
-binary 11111111 is 255 in decimal.
-14 and 7 is 6.
-48 shifted right by 4 is 3.
-octal 14 is 12 in decimal.
-31 xor 16 is 15.
-a halfword holds 16 bits and 65536 values.
-hex 9 is 9 in decimal.
-чему равно 100 и 36 побитово? 100 и 36 побитово это 36.
-200 in binary is 11001000.
-чему равно 200 в двоичной записи? 200 в двоичной записи это 11001000.
-6 shifted left by 2 is 24.
-what is binary 100001 in decimal? binary 100001 is 33 in decimal.
-21 and 12 is 4.
-50 shifted right by 1 is 25.
-octal 21 is 17 in decimal.
-what is 63 or 21? 63 or 21 is 63.
-чему равно 2 сдвинутое влево на 5? 2 сдвинутое влево на 5 это 64.
-what is 48 in hex? 48 in hex is 30.
-40 и 24 побитово это 8.
-word держит 32 бита и 4294967296 значений.
-чему равно 13 в двоичной записи? 13 в двоичной записи это 1101.
-13 shifted left by 2 is 52.
-what is binary 110 in decimal? binary 110 is 6 in decimal.
-12 and 10 is 8.
-40 shifted right by 3 is 5.
-what number is written 3 in binary? none: the digit 3 does not occur in binary.
-какое число записано цифрой 9 в двоичной? такого нет: цифра 9 в двоичной записи не встречается.
-31 в двоичной записи это 11111.
-чему равно 7 или 3 побитово? 7 или 3 побитово это 7.
-binary 1000000 is 64 in decimal.
-чему равно 64 в шестнадцатеричной записи? 64 в шестнадцатеричной записи это 40.
-5 × 8 = 40.
-what is 18 in octal? 18 in octal is 22.
-60 or 15 is 63.
-7 сдвинутое влево на 1 это 14.
-255 in hex is ff.
-14 и 7 побитово это 6.
-byte держит 8 бит и 256 значений.
-чему равно 12 в двоичной записи? 12 в двоичной записи это 1100.
-9 shifted left by 2 is 36.
-what is binary 1001 in decimal? binary 1001 is 9 in decimal.
-100 and 36 is 36.
-88 shifted right by 3 is 11.
-octal 310 is 200 in decimal.
-what is 9 or 5? 9 or 5 is 13.
-чему равно 6 сдвинутое влево на 2? 6 сдвинутое влево на 2 это 24.
-what is 33 in hex? 33 in hex is 21.
-21 и 12 побитово это 4.
-byte держит 8 бит и 256 значений.
-17 в двоичной записи это 10001.
-чему равно 63 или 21 побитово? 63 или 21 побитово это 63.
+3 shifted left by 5 is 96.
 binary 110000 is 48 in decimal.
-чему равно 48 в шестнадцатеричной записи? 48 в шестнадцатеричной записи это 30.
-17 × 4 = 68.
-what is 13 in octal? 13 in octal is 15.
-what is 13 or 6? 13 or 6 is 15.
-чему равно 13 сдвинутое влево на 2? 13 сдвинутое влево на 2 это 52.
-what is 6 in hex? 6 in hex is 6.
-12 и 10 побитово это 8.
-byte держит 8 бит и 256 значений.
-what number is written 6 in binary? none: the digit 6 does not occur in binary.
-what is 31 in octal? 31 in octal is 37.
-7 or 3 is 7.
-13 сдвинутое влево на 2 это 52.
-64 in hex is 40.
-what is 25 xor 9? 25 xor 9 is 16.
-with 32 bits you can write 4294967296 numbers.
-what is hex 12 in decimal? hex 12 is 18 in decimal.
-60 или 15 побитово это 63.
-what is 255 in binary? 255 in binary is 11111111.
-чему равно 255 в шестнадцатеричной записи? 255 в шестнадцатеричной записи это ff.
-3 × 16 = 48.
-what is 12 in octal? 12 in octal is 14.
-what is 31 or 16? 31 or 16 is 31.
-чему равно 9 сдвинутое влево на 2? 9 сдвинутое влево на 2 это 36.
-what is 9 in hex? 9 in hex is 9.
-100 и 36 побитово это 36.
-word держит 32 бита и 4294967296 значений.
-200 в двоичной записи это 11001000.
-чему равно 9 или 5 побитово? 9 или 5 побитово это 13.
-binary 100001 is 33 in decimal.
-чему равно 33 в шестнадцатеричной записи? 33 в шестнадцатеричной записи это 21.
-25 × 2 = 50.
-what is 17 in octal? 17 in octal is 21.
-63 or 21 is 63.
+48 в шестнадцатеричной записи это 30.
+9 shifted left by 2 is 36.
+binary 101 is 5 in decimal.
+5 в шестнадцатеричной записи это 5.
+11 shifted left by 3 is 88.
+binary 1001101 is 77 in decimal.
+77 в шестнадцатеричной записи это 4d.
+6 shifted left by 1 is 12.
+binary 10000000 is 128 in decimal.
+128 в шестнадцатеричной записи это 80.
+25 shifted left by 4 is 400.
+binary 11 is 3 in decimal.
+3 в шестнадцатеричной записи это 3.
+2 shifted left by 5 is 64.
+binary 10010110 is 150 in decimal.
+150 в шестнадцатеричной записи это 96.
+17 shifted left by 2 is 68.
+binary 101010 is 42 in decimal.
+42 в шестнадцатеричной записи это 2a.
+4 shifted left by 3 is 32.
+binary 1100011 is 99 in decimal.
+99 в шестнадцатеричной записи это 63.
+13 shifted left by 1 is 26.
+binary 1101 is 13 in decimal.
+чему равно 13 в шестнадцатеричной записи? 13 в шестнадцатеричной записи это d.
+what is 5 shifted left by 4? 5 shifted left by 4 is 80.
+какое число записано цифрой 1 в двоичной? 1: цифра 1 в двоичной записи есть число 1.
+какое число записано цифрой 7 в двоичной? такого нет: цифра 7 в двоичной записи не встречается.
+what is octal 310 in decimal? octal 310 is 200 in decimal.
+what is 9 or 7? 9 or 7 is 15.
+5 сдвинутое влево на 1 это 10.
+what is octal 41 in decimal? octal 41 is 33 in decimal.
+what is 20 or 16? 20 or 16 is 20.
+7 сдвинутое влево на 4 это 112.
+what is octal 21 in decimal? octal 21 is 17 in decimal.
+what is 22 or 6? 22 or 6 is 22.
+3 сдвинутое влево на 5 это 96.
+what is octal 60 in decimal? octal 60 is 48 in decimal.
+what is 55 or 10? 55 or 10 is 63.
+9 сдвинутое влево на 2 это 36.
+what is octal 5 in decimal? octal 5 is 5 in decimal.
+what is 4 or 3? 4 or 3 is 7.
+11 сдвинутое влево на 3 это 88.
+what is octal 115 in decimal? octal 115 is 77 in decimal.
+what is 24 or 9? 24 or 9 is 25.
+6 сдвинутое влево на 1 это 12.
+what is octal 200 in decimal? octal 200 is 128 in decimal.
+what is 79 or 15? 79 or 15 is 79.
+25 сдвинутое влево на 4 это 400.
+what is octal 3 in decimal? octal 3 is 3 in decimal.
+what is 17 or 7? 17 or 7 is 23.
 2 сдвинутое влево на 5 это 64.
-48 in hex is 30.
-what is 40 xor 24? 40 xor 24 is 48.
-with 32 bits you can write 4294967296 numbers.
-13 в двоичной записи это 1101.
-чему равно 13 или 6 побитово? 13 или 6 побитово это 15.
-binary 110 is 6 in decimal.
-чему равно 6 в шестнадцатеричной записи? 6 в шестнадцатеричной записи это 6.
-5 × 8 = 40.
-какое число записано цифрой 2 в двоичной? такого нет: цифра 2 в двоичной записи не встречается.
+what is octal 226 in decimal? octal 226 is 150 in decimal.
+what is 58 or 16? 58 or 16 is 58.
+17 сдвинутое влево на 2 это 68.
+what is octal 52 in decimal? octal 52 is 42 in decimal.
+what is 11 or 6? 11 or 6 is 15.
+4 сдвинутое влево на 3 это 32.
+what is octal 143 in decimal? octal 143 is 99 in decimal.
+what is 17 or 10? 17 or 10 is 27.
+13 сдвинутое влево на 1 это 26.
+what is octal 15 in decimal? octal 15 is 13 in decimal.
+5 xor 3 is 6.
+чему равно 5 сдвинутое влево на 4? 5 сдвинутое влево на 4 это 80.
+what number is written 4 in binary? none: the digit 4 does not occur in binary.
+200 in binary is 11001000.
+200 в двоичной записи это 11001000.
+9 или 7 побитово это 15.
+33 in binary is 100001.
+33 в двоичной записи это 100001.
+20 или 16 побитово это 20.
+17 in binary is 10001.
+17 в двоичной записи это 10001.
+22 или 6 побитово это 22.
+48 in binary is 110000.
+48 в двоичной записи это 110000.
+55 или 10 побитово это 63.
+5 in binary is 101.
+5 в двоичной записи это 101.
+4 или 3 побитово это 7.
+77 in binary is 1001101.
+77 в двоичной записи это 1001101.
+24 или 9 побитово это 25.
+128 in binary is 10000000.
+128 в двоичной записи это 10000000.
+79 или 15 побитово это 79.
+3 in binary is 11.
+3 в двоичной записи это 11.
+17 или 7 побитово это 23.
+150 in binary is 10010110.
+150 в двоичной записи это 10010110.
+58 или 16 побитово это 58.
+42 in binary is 101010.
+42 в двоичной записи это 101010.
+11 или 6 побитово это 15.
+99 in binary is 1100011.
+99 в двоичной записи это 1100011.
+17 или 10 побитово это 27.
+13 in binary is 1101.
+чему равно 13 в двоичной записи? 13 в двоичной записи это 1101.
+чему равно 5 или 3 побитово? 5 или 3 побитово это 7.
+какое число записано цифрой 0 в двоичной? 0: цифра 0 в двоичной записи есть число 0.
+какое число записано цифрой 6 в двоичной? такого нет: цифра 6 в двоичной записи не встречается.
+what is 200 in octal? 200 in octal is 310.
+what is 9 and 7? 9 and 7 is 1.
+10 shifted right by 1 is 5.
+what is 33 in octal? 33 in octal is 41.
+what is 20 and 16? 20 and 16 is 16.
+112 shifted right by 4 is 7.
+what is 17 in octal? 17 in octal is 21.
+what is 22 and 6? 22 and 6 is 6.
+96 shifted right by 5 is 3.
+what is 48 in octal? 48 in octal is 60.
+what is 55 and 10? 55 and 10 is 2.
+36 shifted right by 2 is 9.
+what is 5 in octal? 5 in octal is 5.
+what is 4 and 3? 4 and 3 is 0.
+88 shifted right by 3 is 11.
+what is 77 in octal? 77 in octal is 115.
+what is 24 and 9? 24 and 9 is 8.
+12 shifted right by 1 is 6.
+what is 128 in octal? 128 in octal is 200.
+what is 79 and 15? 79 and 15 is 15.
+400 shifted right by 4 is 25.
+what is 3 in octal? 3 in octal is 3.
+what is 17 and 7? 17 and 7 is 1.
+64 shifted right by 5 is 2.
+what is 150 in octal? 150 in octal is 226.
+what is 58 and 16? 58 and 16 is 16.
+68 shifted right by 2 is 17.
+what is 42 in octal? 42 in octal is 52.
+what is 11 and 6? 11 and 6 is 2.
+32 shifted right by 3 is 4.
+what is 99 in octal? 99 in octal is 143.
+what is 17 and 10? 17 and 10 is 0.
+26 shifted right by 1 is 13.
+what is 13 in octal? 13 in octal is 15.
+5 or 3 is 7.
+what is 80 shifted right by 4? 80 shifted right by 4 is 5.
+what number is written 3 in binary? none: the digit 3 does not occur in binary.
 what number is written 9 in binary? none: the digit 9 does not occur in binary.
+hex c8 is 200 in decimal.
+9 и 7 побитово это 1.
+with 4 bits you can write 16 numbers.
+hex 21 is 33 in decimal.
+20 и 16 побитово это 16.
+with 8 bits you can write 256 numbers.
+hex 11 is 17 in decimal.
+22 и 6 побитово это 6.
+with 16 bits you can write 65536 numbers.
+hex 30 is 48 in decimal.
+55 и 10 побитово это 2.
+with 32 bits you can write 4294967296 numbers.
+hex 5 is 5 in decimal.
+4 и 3 побитово это 0.
+with 4 bits you can write 16 numbers.
+hex 4d is 77 in decimal.
+24 и 9 побитово это 8.
+with 8 bits you can write 256 numbers.
+hex 80 is 128 in decimal.
+79 и 15 побитово это 15.
+with 16 bits you can write 65536 numbers.
+hex 3 is 3 in decimal.
+17 и 7 побитово это 1.
+with 32 bits you can write 4294967296 numbers.
+hex 96 is 150 in decimal.
+58 и 16 побитово это 16.
+with 4 bits you can write 16 numbers.
+hex 2a is 42 in decimal.
+11 и 6 побитово это 2.
+with 8 bits you can write 256 numbers.
+hex 63 is 99 in decimal.
+17 и 10 побитово это 0.
+with 16 bits you can write 65536 numbers.
+hex d is 13 in decimal.
+чему равно 5 и 3 побитово? 5 и 3 побитово это 1.
+word держит 32 бита и 4294967296 значений.
+какое число записано цифрой 5 в двоичной? такого нет: цифра 5 в двоичной записи не встречается.
+what is binary 11001000 in decimal? binary 11001000 is 200 in decimal.
+чему равно 200 в шестнадцатеричной записи? 200 в шестнадцатеричной записи это c8.
+what is 5 shifted left by 1? 5 shifted left by 1 is 10.
+what is binary 100001 in decimal? binary 100001 is 33 in decimal.
+чему равно 33 в шестнадцатеричной записи? 33 в шестнадцатеричной записи это 21.
+what is 7 shifted left by 4? 7 shifted left by 4 is 112.
+what is binary 10001 in decimal? binary 10001 is 17 in decimal.
+чему равно 17 в шестнадцатеричной записи? 17 в шестнадцатеричной записи это 11.
+what is 3 shifted left by 5? 3 shifted left by 5 is 96.
+what is binary 110000 in decimal? binary 110000 is 48 in decimal.
+чему равно 48 в шестнадцатеричной записи? 48 в шестнадцатеричной записи это 30.
+what is 9 shifted left by 2? 9 shifted left by 2 is 36.
+what is binary 101 in decimal? binary 101 is 5 in decimal.
+чему равно 5 в шестнадцатеричной записи? 5 в шестнадцатеричной записи это 5.
+what is 11 shifted left by 3? 11 shifted left by 3 is 88.
+what is binary 1001101 in decimal? binary 1001101 is 77 in decimal.
+чему равно 77 в шестнадцатеричной записи? 77 в шестнадцатеричной записи это 4d.
+what is 6 shifted left by 1? 6 shifted left by 1 is 12.
+what is binary 10000000 in decimal? binary 10000000 is 128 in decimal.
+чему равно 128 в шестнадцатеричной записи? 128 в шестнадцатеричной записи это 80.
+what is 25 shifted left by 4? 25 shifted left by 4 is 400.
+what is binary 11 in decimal? binary 11 is 3 in decimal.
+чему равно 3 в шестнадцатеричной записи? 3 в шестнадцатеричной записи это 3.
+what is 2 shifted left by 5? 2 shifted left by 5 is 64.
+what is binary 10010110 in decimal? binary 10010110 is 150 in decimal.
+чему равно 150 в шестнадцатеричной записи? 150 в шестнадцатеричной записи это 96.
+what is 17 shifted left by 2? 17 shifted left by 2 is 68.
+what is binary 101010 in decimal? binary 101010 is 42 in decimal.
+чему равно 42 в шестнадцатеричной записи? 42 в шестнадцатеричной записи это 2a.
+what is 4 shifted left by 3? 4 shifted left by 3 is 32.
+what is binary 1100011 in decimal? binary 1100011 is 99 in decimal.
+чему равно 99 в шестнадцатеричной записи? 99 в шестнадцатеричной записи это 63.
+what is 13 shifted left by 1? 13 shifted left by 1 is 26.
+what is binary 1101 in decimal? binary 1101 is 13 in decimal.
+5 and 3 is 1.
+5 × 16 = 80.
+what number is written 2 in binary? none: the digit 2 does not occur in binary.
+what number is written 8 in binary? none: the digit 8 does not occur in binary.
+200 in hex is c8.
+9 xor 7 is 14.
+чему равно 5 сдвинутое влево на 1? 5 сдвинутое влево на 1 это 10.
+33 in hex is 21.
+20 xor 16 is 4.
+чему равно 7 сдвинутое влево на 4? 7 сдвинутое влево на 4 это 112.
+17 in hex is 11.
+22 xor 6 is 16.
+чему равно 3 сдвинутое влево на 5? 3 сдвинутое влево на 5 это 96.
+48 in hex is 30.
+55 xor 10 is 61.
+чему равно 9 сдвинутое влево на 2? 9 сдвинутое влево на 2 это 36.
+5 in hex is 5.
+4 xor 3 is 7.
+чему равно 11 сдвинутое влево на 3? 11 сдвинутое влево на 3 это 88.
+77 in hex is 4d.
+24 xor 9 is 17.
+чему равно 6 сдвинутое влево на 1? 6 сдвинутое влево на 1 это 12.
+128 in hex is 80.
+79 xor 15 is 64.
+чему равно 25 сдвинутое влево на 4? 25 сдвинутое влево на 4 это 400.
+3 in hex is 3.
+17 xor 7 is 22.
+чему равно 2 сдвинутое влево на 5? 2 сдвинутое влево на 5 это 64.
+150 in hex is 96.
+58 xor 16 is 42.
+чему равно 17 сдвинутое влево на 2? 17 сдвинутое влево на 2 это 68.
+42 in hex is 2a.
+11 xor 6 is 13.
+чему равно 4 сдвинутое влево на 3? 4 сдвинутое влево на 3 это 32.
+99 in hex is 63.
+17 xor 10 is 27.
+чему равно 13 сдвинутое влево на 1? 13 сдвинутое влево на 1 это 26.
+13 in hex is d.
+what is 5 xor 3? 5 xor 3 is 6.
+a word holds 32 bits and 4294967296 values.
+какое число записано цифрой 4 в двоичной? такого нет: цифра 4 в двоичной записи не встречается.
+what is 200 in binary? 200 in binary is 11001000.
+чему равно 200 в двоичной записи? 200 в двоичной записи это 11001000.
+чему равно 9 или 7 побитово? 9 или 7 побитово это 15.
+what is 33 in binary? 33 in binary is 100001.
+чему равно 33 в двоичной записи? 33 в двоичной записи это 100001.
+чему равно 20 или 16 побитово? 20 или 16 побитово это 20.
+what is 17 in binary? 17 in binary is 10001.
+чему равно 17 в двоичной записи? 17 в двоичной записи это 10001.
+чему равно 22 или 6 побитово? 22 или 6 побитово это 22.
+what is 48 in binary? 48 in binary is 110000.
+чему равно 48 в двоичной записи? 48 в двоичной записи это 110000.
+чему равно 55 или 10 побитово? 55 или 10 побитово это 63.
+what is 5 in binary? 5 in binary is 101.
+чему равно 5 в двоичной записи? 5 в двоичной записи это 101.
+чему равно 4 или 3 побитово? 4 или 3 побитово это 7.
+what is 77 in binary? 77 in binary is 1001101.
+чему равно 77 в двоичной записи? 77 в двоичной записи это 1001101.
+чему равно 24 или 9 побитово? 24 или 9 побитово это 25.
+what is 128 in binary? 128 in binary is 10000000.
+чему равно 128 в двоичной записи? 128 в двоичной записи это 10000000.
+чему равно 79 или 15 побитово? 79 или 15 побитово это 79.
+what is 3 in binary? 3 in binary is 11.
+чему равно 3 в двоичной записи? 3 в двоичной записи это 11.
+чему равно 17 или 7 побитово? 17 или 7 побитово это 23.
+what is 150 in binary? 150 in binary is 10010110.
+чему равно 150 в двоичной записи? 150 в двоичной записи это 10010110.
+чему равно 58 или 16 побитово? 58 или 16 побитово это 58.
+what is 42 in binary? 42 in binary is 101010.
+чему равно 42 в двоичной записи? 42 в двоичной записи это 101010.
+чему равно 11 или 6 побитово? 11 или 6 побитово это 15.
+what is 99 in binary? 99 in binary is 1100011.
+чему равно 99 в двоичной записи? 99 в двоичной записи это 1100011.
+чему равно 17 или 10 побитово? 17 или 10 побитово это 27.
+what is 13 in binary? 13 in binary is 1101.
+13 в шестнадцатеричной записи это d.
+5 shifted left by 4 is 80.
+what number is written 1 in binary? 1: the digit 1 in binary is the number 1.
+what number is written 7 in binary? none: the digit 7 does not occur in binary.
+octal 310 is 200 in decimal.
+9 or 7 is 15.
+what is 10 shifted right by 1? 10 shifted right by 1 is 5.
+octal 41 is 33 in decimal.
+20 or 16 is 20.
+what is 112 shifted right by 4? 112 shifted right by 4 is 7.
+octal 21 is 17 in decimal.
+22 or 6 is 22.
+what is 96 shifted right by 5? 96 shifted right by 5 is 3.
+octal 60 is 48 in decimal.
+55 or 10 is 63.
+what is 36 shifted right by 2? 36 shifted right by 2 is 9.
+octal 5 is 5 in decimal.
+4 or 3 is 7.
+what is 88 shifted right by 3? 88 shifted right by 3 is 11.
+octal 115 is 77 in decimal.
+24 or 9 is 25.
+what is 12 shifted right by 1? 12 shifted right by 1 is 6.
+octal 200 is 128 in decimal.
+79 or 15 is 79.
+what is 400 shifted right by 4? 400 shifted right by 4 is 25.
+octal 3 is 3 in decimal.
+17 or 7 is 23.
+what is 64 shifted right by 5? 64 shifted right by 5 is 2.
+octal 226 is 150 in decimal.
+58 or 16 is 58.
+what is 68 shifted right by 2? 68 shifted right by 2 is 17.
+octal 52 is 42 in decimal.
+11 or 6 is 15.
+what is 32 shifted right by 3? 32 shifted right by 3 is 4.
+octal 143 is 99 in decimal.
+17 or 10 is 27.
+what is 26 shifted right by 1? 26 shifted right by 1 is 13.
+octal 15 is 13 in decimal.
+what is 5 or 3? 5 or 3 is 7.
+5 сдвинутое влево на 4 это 80.
+какое число записано цифрой 3 в двоичной? такого нет: цифра 3 в двоичной записи не встречается.
+какое число записано цифрой 9 в двоичной? такого нет: цифра 9 в двоичной записи не встречается.
+what is hex c8 in decimal? hex c8 is 200 in decimal.
+чему равно 9 и 7 побитово? 9 и 7 побитово это 1.
+nibble держит 4 бита и 16 значений.
+what is hex 21 in decimal? hex 21 is 33 in decimal.
+чему равно 20 и 16 побитово? 20 и 16 побитово это 16.
+byte держит 8 бит и 256 значений.
+what is hex 11 in decimal? hex 11 is 17 in decimal.
+чему равно 22 и 6 побитово? 22 и 6 побитово это 6.
+halfword держит 16 бит и 65536 значений.
+what is hex 30 in decimal? hex 30 is 48 in decimal.
+чему равно 55 и 10 побитово? 55 и 10 побитово это 2.
+word держит 32 бита и 4294967296 значений.
+what is hex 5 in decimal? hex 5 is 5 in decimal.
+чему равно 4 и 3 побитово? 4 и 3 побитово это 0.
+nibble держит 4 бита и 16 значений.
+what is hex 4d in decimal? hex 4d is 77 in decimal.
+чему равно 24 и 9 побитово? 24 и 9 побитово это 8.
+byte держит 8 бит и 256 значений.
+what is hex 80 in decimal? hex 80 is 128 in decimal.
+чему равно 79 и 15 побитово? 79 и 15 побитово это 15.
+halfword держит 16 бит и 65536 значений.
+what is hex 3 in decimal? hex 3 is 3 in decimal.
+чему равно 17 и 7 побитово? 17 и 7 побитово это 1.
+word держит 32 бита и 4294967296 значений.
+what is hex 96 in decimal? hex 96 is 150 in decimal.
+чему равно 58 и 16 побитово? 58 и 16 побитово это 16.
+nibble держит 4 бита и 16 значений.
+what is hex 2a in decimal? hex 2a is 42 in decimal.
+чему равно 11 и 6 побитово? 11 и 6 побитово это 2.
+byte держит 8 бит и 256 значений.
+what is hex 63 in decimal? hex 63 is 99 in decimal.
+чему равно 17 и 10 побитово? 17 и 10 побитово это 0.
+halfword держит 16 бит и 65536 значений.
+13 в двоичной записи это 1101.
+5 или 3 побитово это 7.
+what number is written 0 in binary? 0: the digit 0 in binary is the number 0.
+what number is written 6 in binary? none: the digit 6 does not occur in binary.
+200 in octal is 310.
+9 and 7 is 1.
+5 × 2 = 10.
+33 in octal is 41.
+20 and 16 is 16.
+7 × 16 = 112.
+17 in octal is 21.
+22 and 6 is 6.
+3 × 32 = 96.
+48 in octal is 60.
+55 and 10 is 2.
+9 × 4 = 36.
+5 in octal is 5.
+4 and 3 is 0.
+11 × 8 = 88.
+77 in octal is 115.
+24 and 9 is 8.
+6 × 2 = 12.
+128 in octal is 200.
+79 and 15 is 15.
+25 × 16 = 400.
+3 in octal is 3.
+17 and 7 is 1.
+2 × 32 = 64.
+150 in octal is 226.
+58 and 16 is 16.
+17 × 4 = 68.
+42 in octal is 52.
+11 and 6 is 2.
+4 × 8 = 32.
+99 in octal is 143.
+17 and 10 is 0.
+13 × 2 = 26.
+13 in octal is 15.
+what is 5 and 3? 5 and 3 is 1.
+80 shifted right by 4 is 5.
+какое число записано цифрой 2 в двоичной? такого нет: цифра 2 в двоичной записи не встречается.
+какое число записано цифрой 8 в двоичной? такого нет: цифра 8 в двоичной записи не встречается.
+what is 200 in hex? 200 in hex is c8.
+what is 9 xor 7? 9 xor 7 is 14.
+a nibble holds 4 bits and 16 values.
+what is 33 in hex? 33 in hex is 21.
+what is 20 xor 16? 20 xor 16 is 4.
+a byte holds 8 bits and 256 values.
+what is 17 in hex? 17 in hex is 11.
+what is 22 xor 6? 22 xor 6 is 16.
+a halfword holds 16 bits and 65536 values.
+what is 48 in hex? 48 in hex is 30.
+what is 55 xor 10? 55 xor 10 is 61.
+a word holds 32 bits and 4294967296 values.
+what is 5 in hex? 5 in hex is 5.
+what is 4 xor 3? 4 xor 3 is 7.
+a nibble holds 4 bits and 16 values.
+what is 77 in hex? 77 in hex is 4d.
+what is 24 xor 9? 24 xor 9 is 17.
+a byte holds 8 bits and 256 values.
+what is 128 in hex? 128 in hex is 80.
+what is 79 xor 15? 79 xor 15 is 64.
+a halfword holds 16 bits and 65536 values.
+what is 3 in hex? 3 in hex is 3.
+what is 17 xor 7? 17 xor 7 is 22.
+a word holds 32 bits and 4294967296 values.
+what is 150 in hex? 150 in hex is 96.
+what is 58 xor 16? 58 xor 16 is 42.
+a nibble holds 4 bits and 16 values.
+what is 42 in hex? 42 in hex is 2a.
+what is 11 xor 6? 11 xor 6 is 13.
+a byte holds 8 bits and 256 values.
+what is 99 in hex? 99 in hex is 63.
+what is 17 xor 10? 17 xor 10 is 27.
+a halfword holds 16 bits and 65536 values.
+what is 13 in hex? 13 in hex is d.
+5 и 3 побитово это 1.
+with 32 bits you can write 4294967296 numbers.
+what number is written 5 in binary? none: the digit 5 does not occur in binary.
+
+what is 6 in hex? 6 in hex is 6.
+13 и 9 побитово это 9.
+nibble держит 4 бита и 16 значений.
+25 в двоичной записи это 11001.
+чему равно 31 или 15 побитово? 31 или 15 побитово это 31.
+binary 101000 is 40 in decimal.
+чему равно 40 в шестнадцатеричной записи? 40 в шестнадцатеричной записи это 28.
+9 × 8 = 72.
+what is 7 in octal? 7 in octal is 7.
+17 or 16 is 17.
+11 сдвинутое влево на 1 это 22.
+100 in hex is 64.
+what is 21 xor 6? 21 xor 6 is 19.
+with 4 bits you can write 16 numbers.
 what is hex 1f in decimal? hex 1f is 31 in decimal.
-7 или 3 побитово это 7.
+74 или 10 побитово это 74.
 what is 64 in binary? 64 in binary is 1000000.
 64 в шестнадцатеричной записи это 40.
-what is 5 shifted left by 3? 5 shifted left by 3 is 40.
+what is 2 shifted left by 2? 2 shifted left by 2 is 8.
 18 in octal is 22.
-what is 60 and 15? 60 and 15 is 12.
-what is 14 shifted right by 1? 14 shifted right by 1 is 7.
+what is 51 and 9? 51 and 9 is 1.
+what is 136 shifted right by 3? 136 shifted right by 3 is 17.
 what is octal 377 in decimal? octal 377 is 255 in decimal.
-what is 14 xor 7? 14 xor 7 is 9.
-with 8 bits you can write 256 numbers.
-12 в двоичной записи это 1100.
-чему равно 31 или 16 побитово? 31 или 16 побитово это 31.
-binary 1001 is 9 in decimal.
-чему равно 9 в шестнадцатеричной записи? 9 в шестнадцатеричной записи это 9.
-11 × 8 = 88.
-what is 200 in octal? 200 in octal is 310.
-9 or 5 is 13.
-6 сдвинутое влево на 2 это 24.
-33 in hex is 21.
-what is 21 xor 12? 21 xor 12 is 25.
-with 8 bits you can write 256 numbers.
-what is hex 11 in decimal? hex 11 is 17 in decimal.
-63 или 21 побитово это 63.
-what is 48 in binary? 48 in binary is 110000.
-48 в шестнадцатеричной записи это 30.
-what is 17 shifted left by 2? 17 shifted left by 2 is 68.
-13 in octal is 15.
-13 or 6 is 15.
-13 сдвинутое влево на 2 это 52.
-6 in hex is 6.
-what is 12 xor 10? 12 xor 10 is 6.
-with 8 bits you can write 256 numbers.
-какое число записано цифрой 5 в двоичной? такого нет: цифра 5 в двоичной записи не встречается.
-31 in octal is 37.
-what is 7 and 3? 7 and 3 is 3.
-what is 52 shifted right by 2? 52 shifted right by 2 is 13.
-what is octal 100 in decimal? octal 100 is 64 in decimal.
-25 xor 9 is 16.
-a word holds 32 bits and 4294967296 values.
-hex 12 is 18 in decimal.
-чему равно 60 и 15 побитово? 60 и 15 побитово это 12.
-255 in binary is 11111111.
-255 в шестнадцатеричной записи это ff.
-what is 3 shifted left by 4? 3 shifted left by 4 is 48.
-12 in octal is 14.
-31 or 16 is 31.
-9 сдвинутое влево на 2 это 36.
-9 in hex is 9.
-what is 100 xor 36? 100 xor 36 is 64.
-with 32 bits you can write 4294967296 numbers.
-what is hex c8 in decimal? hex c8 is 200 in decimal.
-9 или 5 побитово это 13.
-what is 33 in binary? 33 in binary is 100001.
-33 в шестнадцатеричной записи это 21.
-what is 25 shifted left by 1? 25 shifted left by 1 is 50.
-17 in octal is 21.
-what is 63 and 21? 63 and 21 is 21.
-what is 64 shifted right by 5? 64 shifted right by 5 is 2.
-what is octal 60 in decimal? octal 60 is 48 in decimal.
-40 xor 24 is 48.
-a word holds 32 bits and 4294967296 values.
-hex d is 13 in decimal.
-13 или 6 побитово это 15.
-what is 6 in binary? 6 in binary is 110.
-6 в шестнадцатеричной записи это 6.
-what is 5 shifted left by 3? 5 shifted left by 3 is 40.
-what number is written 2 in binary? none: the digit 2 does not occur in binary.
-какое число записано цифрой 8 в двоичной? такого нет: цифра 8 в двоичной записи не встречается.
-hex 1f is 31 in decimal.
-чему равно 7 и 3 побитово? 7 и 3 побитово это 3.
-64 in binary is 1000000.
-чему равно 64 в двоичной записи? 64 в двоичной записи это 1000000.
-5 shifted left by 3 is 40.
-what is binary 10010 in decimal? binary 10010 is 18 in decimal.
-60 and 15 is 12.
-14 shifted right by 1 is 7.
-octal 377 is 255 in decimal.
-14 xor 7 is 9.
-a byte holds 8 bits and 256 values.
-hex c is 12 in decimal.
-31 или 16 побитово это 31.
-what is 9 in binary? 9 in binary is 1001.
-9 в шестнадцатеричной записи это 9.
-what is 11 shifted left by 3? 11 shifted left by 3 is 88.
-200 in octal is 310.
-what is 9 and 5? 9 and 5 is 1.
-what is 24 shifted right by 2? 24 shifted right by 2 is 6.
-what is octal 41 in decimal? octal 41 is 33 in decimal.
-21 xor 12 is 25.
-a byte holds 8 bits and 256 values.
-hex 11 is 17 in decimal.
-чему равно 63 и 21 побитово? 63 и 21 побитово это 21.
-48 in binary is 110000.
-чему равно 48 в двоичной записи? 48 в двоичной записи это 110000.
-17 shifted left by 2 is 68.
-what is binary 1101 in decimal? binary 1101 is 13 in decimal.
-what is 13 and 6? 13 and 6 is 4.
-what is 52 shifted right by 2? 52 shifted right by 2 is 13.
-what is octal 6 in decimal? octal 6 is 6 in decimal.
-12 xor 10 is 6.
-a byte holds 8 bits and 256 values.
-what number is written 5 in binary? none: the digit 5 does not occur in binary.
-what is binary 11111 in decimal? binary 11111 is 31 in decimal.
-7 and 3 is 3.
-52 shifted right by 2 is 13.
-octal 100 is 64 in decimal.
-what is 25 or 9? 25 or 9 is 25.
-чему равно 5 сдвинутое влево на 3? 5 сдвинутое влево на 3 это 40.
-what is 18 in hex? 18 in hex is 12.
-60 и 15 побитово это 12.
-nibble держит 4 бита и 16 значений.
-чему равно 255 в двоичной записи? 255 в двоичной записи это 11111111.
-3 shifted left by 4 is 48.
-what is binary 1100 in decimal? binary 1100 is 12 in decimal.
-what is 31 and 16? 31 and 16 is 16.
-what is 36 shifted right by 2? 36 shifted right by 2 is 9.
-what is octal 11 in decimal? octal 11 is 9 in decimal.
-100 xor 36 is 64.
-a word holds 32 bits and 4294967296 values.
-hex c8 is 200 in decimal.
-чему равно 9 и 5 побитово? 9 и 5 побитово это 1.
-33 in binary is 100001.
-чему равно 33 в двоичной записи? 33 в двоичной записи это 100001.
-25 shifted left by 1 is 50.
-what is binary 10001 in decimal? binary 10001 is 17 in decimal.
-63 and 21 is 21.
-64 shifted right by 5 is 2.
-octal 60 is 48 in decimal.
-what is 40 or 24? 40 or 24 is 56.
-чему равно 17 сдвинутое влево на 2? 17 сдвинутое влево на 2 это 68.
-what is 13 in hex? 13 in hex is d.
-чему равно 13 и 6 побитово? 13 и 6 побитово это 4.
-6 in binary is 110.
-чему равно 6 в двоичной записи? 6 в двоичной записи это 110.
-5 shifted left by 3 is 40.
-какое число записано цифрой 1 в двоичной? 1: цифра 1 в двоичной записи есть число 1.
-what number is written 8 in binary? none: the digit 8 does not occur in binary.
-
-255 in octal is 377.
-25 и 9 побитово это 9.
-what is binary 1100 in decimal? binary 1100 is 12 in decimal.
-what is 60 xor 15? 60 xor 15 is 51.
-binary 1001 is 9 in decimal.
-what is 14 or 7? 14 or 7 is 15.
-200 in binary is 11001000.
-what is 31 and 16? 31 and 16 is 16.
-with 16 bits you can write 65536 numbers.
-чему равно 33 в шестнадцатеричной записи? 33 в шестнадцатеричной записи это 21.
-чему равно 17 сдвинутое влево на 2? 17 сдвинутое влево на 2 это 68.
-чему равно 17 в двоичной записи? 17 в двоичной записи это 10001.
-what is 52 shifted right by 2? 52 shifted right by 2 is 13.
-what is hex 30 in decimal? hex 30 is 48 in decimal.
-5 × 8 = 40.
-what is 13 in hex? 13 in hex is d.
-what is 7 shifted left by 1? 7 shifted left by 1 is 14.
-6 in hex is 6.
-чему равно 40 или 24 побитово? 40 или 24 побитово это 56.
-octal 31 is 25 in decimal.
-чему равно 13 и 6 побитово? 13 и 6 побитово это 4.
-40 in octal is 50.
-what is 12 xor 10? 12 xor 10 is 6.
-binary 111 is 7 in decimal.
-what is 7 or 3? 7 or 3 is 7.
-what number is written 0 in binary? 0: the digit 0 in binary is the number 0.
-какое число записано цифрой 8 в двоичной? такого нет: цифра 8 в двоичной записи не встречается.
-чему равно 255 в шестнадцатеричной записи? 255 в шестнадцатеричной записи это ff.
-чему равно 11 сдвинутое влево на 3? 11 сдвинутое влево на 3 это 88.
-12 в шестнадцатеричной записи это c.
-6 сдвинутое влево на 2 это 24.
-9 в двоичной записи это 1001.
-50 shifted right by 1 is 25.
-hex c8 is 200 in decimal.
-what is 2 shifted left by 5? 2 shifted left by 5 is 64.
-33 in hex is 21.
-чему равно 100 или 36 побитово? 100 или 36 побитово это 100.
-octal 21 is 17 in decimal.
-чему равно 9 и 5 побитово? 9 и 5 побитово это 1.
-48 in octal is 60.
-what is 21 xor 12? 21 xor 12 is 25.
-binary 1101 is 13 in decimal.
-63 xor 21 is 42.
-what is 6 in binary? 6 in binary is 110.
-40 or 24 is 56.
-word держит 32 бита и 4294967296 значений.
-13 and 6 is 4.
-a nibble holds 4 bits and 16 values.
-40 в шестнадцатеричной записи это 28.
-11 сдвинутое влево на 3 это 88.
-7 в двоичной записи это 111.
-24 shifted right by 2 is 6.
-what number is written 5 in binary? none: the digit 5 does not occur in binary.
-what is octal 377 in decimal? octal 377 is 255 in decimal.
-чему равно 25 или 9 побитово? 25 или 9 побитово это 25.
-octal 14 is 12 in decimal.
-60 или 15 побитово это 63.
-what is 9 in octal? 9 in octal is 11.
-14 и 7 побитово это 6.
-what is binary 11001000 in decimal? binary 11001000 is 200 in decimal.
-31 xor 16 is 15.
-what is 33 in binary? 33 in binary is 100001.
-100 or 36 is 100.
-word держит 32 бита и 4294967296 значений.
-9 and 5 is 1.
-a nibble holds 4 bits and 16 values.
-48 в шестнадцатеричной записи это 30.
-5 сдвинутое влево на 3 это 40.
-чему равно 13 в двоичной записи? 13 в двоичной записи это 1101.
-what is 14 shifted right by 1? 14 shifted right by 1 is 7.
-what is hex 6 in decimal? hex 6 is 6 in decimal.
-3 × 16 = 48.
-what is 25 in hex? 25 in hex is 19.
-9 shifted left by 2 is 36.
-what is octal 50 in decimal? octal 50 is 40 in decimal.
-12 или 10 побитово это 14.
-what is 7 in octal? 7 in octal is 7.
-7 и 3 побитово это 3.
-какое число записано цифрой 1 в двоичной? 1: цифра 1 в двоичной записи есть число 1.
-255 in binary is 11111111.
-25 or 9 is 25.
-word держит 32 бита и 4294967296 значений.
-what is 60 and 15? 60 and 15 is 12.
+what is 20 xor 15? 20 xor 15 is 27.
 with 4 bits you can write 16 numbers.
-чему равно 9 в шестнадцатеричной записи? 9 в шестнадцатеричной записи это 9.
-чему равно 25 сдвинутое влево на 1? 25 сдвинутое влево на 1 это 50.
-чему равно 200 в двоичной записи? 200 в двоичной записи это 11001000.
-what is 64 shifted right by 5? 64 shifted right by 5 is 2.
-what is hex 21 in decimal? hex 21 is 33 in decimal.
-17 × 4 = 68.
-what is 17 in hex? 17 in hex is 11.
-13 shifted left by 2 is 52.
-what is octal 60 in decimal? octal 60 is 48 in decimal.
-21 или 12 побитово это 29.
-what is 13 in octal? 13 in octal is 15.
-чему равно 63 и 21 побитово? 63 и 21 побитово это 21.
-6 in octal is 6.
-what is 40 xor 24? 40 xor 24 is 48.
-binary 11001 is 25 in decimal.
-what is 13 or 6? 13 or 6 is 15.
-40 in binary is 101000.
-what is 12 and 10? 12 and 10 is 8.
-with 8 bits you can write 256 numbers.
-чему равно 7 в шестнадцатеричной записи? 7 в шестнадцатеричной записи это 7.
-чему равно 6 сдвинутое влево на 2? 6 сдвинутое влево на 2 это 24.
-какое число записано цифрой 6 в двоичной? такого нет: цифра 6 в двоичной записи не встречается.
-hex ff is 255 in decimal.
-11 × 8 = 88.
-what is 12 in hex? 12 in hex is c.
-what is 6 shifted left by 2? 6 shifted left by 2 is 24.
-9 in hex is 9.
+12 в двоичной записи это 1100.
 чему равно 14 или 7 побитово? 14 или 7 побитово это 15.
-octal 310 is 200 in decimal.
-чему равно 31 и 16 побитово? 31 и 16 побитово это 16.
-33 in octal is 41.
-what is 100 xor 36? 100 xor 36 is 64.
-binary 10001 is 17 in decimal.
-what is 9 or 5? 9 or 5 is 13.
-48 in binary is 110000.
-what is 21 and 12? 21 and 12 is 4.
-with 8 bits you can write 256 numbers.
-63 and 21 is 21.
-a halfword holds 16 bits and 65536 values.
-6 в шестнадцатеричной записи это 6.
-3 сдвинутое влево на 4 это 48.
-25 в двоичной записи это 11001.
-36 shifted right by 2 is 9.
-hex 28 is 40 in decimal.
-what is 11 shifted left by 3? 11 shifted left by 3 is 88.
-7 in hex is 7.
-чему равно 7 или 3 побитово? 7 или 3 побитово это 7.
-what number is written 3 in binary? none: the digit 3 does not occur in binary.
-what is binary 11111111 in decimal? binary 11111111 is 255 in decimal.
-what is 25 xor 9? 25 xor 9 is 16.
-binary 1100 is 12 in decimal.
-60 xor 15 is 51.
-what is 9 in binary? 9 in binary is 1001.
-14 or 7 is 15.
-byte держит 8 бит и 256 значений.
-31 and 16 is 16.
-a halfword holds 16 bits and 65536 values.
-33 в шестнадцатеричной записи это 21.
-17 сдвинутое влево на 2 это 68.
-17 в двоичной записи это 10001.
-52 shifted right by 2 is 13.
-hex 30 is 48 in decimal.
-what is 5 shifted left by 3? 5 shifted left by 3 is 40.
-13 in hex is d.
-7 shifted left by 1 is 14.
-what is octal 6 in decimal? octal 6 is 6 in decimal.
-40 или 24 побитово это 56.
-what is 25 in octal? 25 in octal is 31.
-13 и 6 побитово это 4.
-what is binary 101000 in decimal? binary 101000 is 40 in decimal.
-12 xor 10 is 6.
-what is 7 in binary? 7 in binary is 111.
-7 or 3 is 7.
-halfword держит 16 бит и 65536 значений.
-what number is written 8 in binary? none: the digit 8 does not occur in binary.
-255 в шестнадцатеричной записи это ff.
-11 сдвинутое влево на 3 это 88.
-чему равно 12 в двоичной записи? 12 в двоичной записи это 1100.
-what is 24 shifted right by 2? 24 shifted right by 2 is 6.
-what is hex 9 in decimal? hex 9 is 9 in decimal.
-25 × 2 = 50.
-what is 200 in hex? 200 in hex is c8.
-2 shifted left by 5 is 64.
-what is octal 41 in decimal? octal 41 is 33 in decimal.
-100 или 36 побитово это 100.
-what is 17 in octal? 17 in octal is 21.
-9 и 5 побитово это 1.
-what is binary 110000 in decimal? binary 110000 is 48 in decimal.
-21 xor 12 is 25.
-what is 13 in binary? 13 in binary is 1101.
-what is 63 or 21? 63 or 21 is 63.
-6 in binary is 110.
-what is 40 and 24? 40 and 24 is 8.
-with 32 bits you can write 4294967296 numbers.
-чему равно 25 в шестнадцатеричной записи? 25 в шестнадцатеричной записи это 19.
-чему равно 9 сдвинутое влево на 2? 9 сдвинутое влево на 2 это 36.
-чему равно 40 в двоичной записи? 40 в двоичной записи это 101000.
-what is 88 shifted right by 3? 88 shifted right by 3 is 11.
-what is hex 7 in decimal? hex 7 is 7 in decimal.
-6 × 4 = 24.
-какое число записано цифрой 4 в двоичной? такого нет: цифра 4 в двоичной записи не встречается.
-octal 377 is 255 in decimal.
-25 или 9 побитово это 25.
-what is 12 in octal? 12 in octal is 14.
-чему равно 60 и 15 побитово? 60 и 15 побитово это 12.
-9 in octal is 11.
-what is 14 xor 7? 14 xor 7 is 9.
-binary 11001000 is 200 in decimal.
-what is 31 or 16? 31 or 16 is 31.
-33 in binary is 100001.
-what is 100 and 36? 100 and 36 is 36.
-with 32 bits you can write 4294967296 numbers.
-чему равно 17 в шестнадцатеричной записи? 17 в шестнадцатеричной записи это 11.
-чему равно 13 сдвинутое влево на 2? 13 сдвинутое влево на 2 это 52.
-чему равно 48 в двоичной записи? 48 в двоичной записи это 110000.
-what is 40 shifted right by 3? 40 shifted right by 3 is 5.
-13 в двоичной записи это 1101.
-14 shifted right by 1 is 7.
-hex 6 is 6 in decimal.
-what is 3 shifted left by 4? 3 shifted left by 4 is 48.
-25 in hex is 19.
-чему равно 13 или 6 побитово? 13 или 6 побитово это 15.
-octal 50 is 40 in decimal.
-чему равно 12 и 10 побитово? 12 и 10 побитово это 8.
-7 in octal is 7.
-what is 7 xor 3? 7 xor 3 is 4.
-what number is written 1 in binary? 1: the digit 1 in binary is the number 1.
-какое число записано цифрой 9 в двоичной? такого нет: цифра 9 в двоичной записи не встречается.
-what is 25 and 9? 25 and 9 is 9.
-with 32 bits you can write 4294967296 numbers.
-60 and 15 is 12.
-a nibble holds 4 bits and 16 values.
-9 в шестнадцатеричной записи это 9.
-25 сдвинутое влево на 1 это 50.
-200 в двоичной записи это 11001000.
-64 shifted right by 5 is 2.
-hex 21 is 33 in decimal.
-what is 17 shifted left by 2? 17 shifted left by 2 is 68.
-17 in hex is 11.
-чему равно 9 или 5 побитово? 9 или 5 побитово это 13.
-octal 60 is 48 in decimal.
-чему равно 21 и 12 побитово? 21 и 12 побитово это 4.
-13 in octal is 15.
-63 и 21 побитово это 21.
-what is binary 110 in decimal? binary 110 is 6 in decimal.
-40 xor 24 is 48.
-what is 25 in binary? 25 in binary is 11001.
-13 or 6 is 15.
-nibble держит 4 бита и 16 значений.
-12 and 10 is 8.
-a byte holds 8 bits and 256 values.
-7 в шестнадцатеричной записи это 7.
-6 сдвинутое влево на 2 это 24.
-what number is written 6 in binary? none: the digit 6 does not occur in binary.
-what is 255 in hex? 255 in hex is ff.
-what is 11 shifted left by 3? 11 shifted left by 3 is 88.
-12 in hex is c.
-6 shifted left by 2 is 24.
-what is octal 11 in decimal? octal 11 is 9 in decimal.
-14 или 7 побитово это 15.
+binary 1001 is 9 in decimal.
+чему равно 9 в шестнадцатеричной записи? 9 в шестнадцатеричной записи это 9.
+5 × 32 = 160.
 what is 200 in octal? 200 in octal is 310.
-31 и 16 побитово это 16.
-what is binary 100001 in decimal? binary 100001 is 33 in decimal.
-100 xor 36 is 64.
-what is 17 in binary? 17 in binary is 10001.
-9 or 5 is 13.
-nibble держит 4 бита и 16 значений.
-21 and 12 is 4.
-a byte holds 8 bits and 256 values.
-чему равно 13 в шестнадцатеричной записи? 13 в шестнадцатеричной записи это d.
-чему равно 7 сдвинутое влево на 1? 7 сдвинутое влево на 1 это 14.
-чему равно 6 в двоичной записи? 6 в двоичной записи это 110.
-what is 48 shifted right by 4? 48 shifted right by 4 is 3.
-what is hex 19 in decimal? hex 19 is 25 in decimal.
-9 × 4 = 36.
-what is 40 in hex? 40 in hex is 28.
-11 shifted left by 3 is 88.
-what is octal 7 in decimal? octal 7 is 7 in decimal.
-7 или 3 побитово это 7.
-какое число записано цифрой 2 в двоичной? такого нет: цифра 2 в двоичной записи не встречается.
-binary 11111111 is 255 in decimal.
-25 xor 9 is 16.
-what is 12 in binary? 12 in binary is 1100.
-what is 60 or 15? 60 or 15 is 63.
-9 in binary is 1001.
-what is 14 and 7? 14 and 7 is 6.
-with 8 bits you can write 256 numbers.
-чему равно 200 в шестнадцатеричной записи? 200 в шестнадцатеричной записи это c8.
-чему равно 2 сдвинутое влево на 5? 2 сдвинутое влево на 5 это 64.
-чему равно 33 в двоичной записи? 33 в двоичной записи это 100001.
-what is 68 shifted right by 2? 68 shifted right by 2 is 17.
-what is hex 11 in decimal? hex 11 is 17 in decimal.
-13 × 4 = 52.
-what is 48 in hex? 48 in hex is 30.
-5 shifted left by 3 is 40.
-what is octal 15 in decimal? octal 15 is 13 in decimal.
-чему равно 63 или 21 побитово? 63 или 21 побитово это 63.
-octal 6 is 6 in decimal.
-чему равно 40 и 24 побитово? 40 и 24 побитово это 8.
+10 or 6 is 14.
+7 сдвинутое влево на 2 это 28.
+what number is written 4 in binary? none: the digit 4 does not occur in binary.
+what is 6 in binary? 6 in binary is 110.
+6 в шестнадцатеричной записи это 6.
+what is 7 shifted left by 5? 7 shifted left by 5 is 224.
 25 in octal is 31.
-what is 13 xor 6? 13 xor 6 is 11.
-binary 101000 is 40 in decimal.
-what is 12 or 10? 12 or 10 is 14.
-7 in binary is 111.
-what is 7 and 3? 7 and 3 is 3.
-with 16 bits you can write 65536 numbers.
-какое число записано цифрой 7 в двоичной? такого нет: цифра 7 в двоичной записи не встречается.
-чему равно 255 в двоичной записи? 255 в двоичной записи это 11111111.
-what is 88 shifted right by 3? 88 shifted right by 3 is 11.
-12 в двоичной записи это 1100.
-24 shifted right by 2 is 6.
-hex 9 is 9 in decimal.
-what is 25 shifted left by 1? 25 shifted left by 1 is 50.
-200 in hex is c8.
-чему равно 31 или 16 побитово? 31 или 16 побитово это 31.
-octal 41 is 33 in decimal.
-чему равно 100 и 36 побитово? 100 и 36 побитово это 36.
-17 in octal is 21.
-what is 9 xor 5? 9 xor 5 is 12.
-binary 110000 is 48 in decimal.
-what is 21 or 12? 21 or 12 is 29.
-13 in binary is 1101.
-63 or 21 is 63.
-halfword держит 16 бит и 65536 значений.
-40 and 24 is 8.
-a word holds 32 bits and 4294967296 values.
-25 в шестнадцатеричной записи это 19.
-9 сдвинутое влево на 2 это 36.
-40 в двоичной записи это 101000.
-88 shifted right by 3 is 11.
-hex 7 is 7 in decimal.
-what is 6 shifted left by 2? 6 shifted left by 2 is 24.
-what number is written 4 in binary? none: the digit 4 does not occur in binary.
-what is 255 in octal? 255 in octal is 377.
-чему равно 25 и 9 побитово? 25 и 9 побитово это 9.
-12 in octal is 14.
-60 и 15 побитово это 12.
-what is binary 1001 in decimal? binary 1001 is 9 in decimal.
-14 xor 7 is 9.
-what is 200 in binary? 200 in binary is 11001000.
-31 or 16 is 31.
-halfword держит 16 бит и 65536 значений.
-100 and 36 is 36.
-a word holds 32 bits and 4294967296 values.
-17 в шестнадцатеричной записи это 11.
-13 сдвинутое влево на 2 это 52.
-48 в двоичной записи это 110000.
-40 shifted right by 3 is 5.
-hex d is 13 in decimal.
-7 × 2 = 14.
-what is 6 in hex? 6 in hex is 6.
-3 shifted left by 4 is 48.
-what is octal 31 in decimal? octal 31 is 25 in decimal.
-13 или 6 побитово это 15.
-what is 40 in octal? 40 in octal is 50.
-12 и 10 побитово это 8.
-what is binary 111 in decimal? binary 111 is 7 in decimal.
-7 xor 3 is 4.
-какое число записано цифрой 0 в двоичной? 0: цифра 0 в двоичной записи есть число 0.
-what number is written 9 in binary? none: the digit 9 does not occur in binary.
-25 and 9 is 9.
-a word holds 32 bits and 4294967296 values.
-чему равно 12 в шестнадцатеричной записи? 12 в шестнадцатеричной записи это c.
-чему равно 6 сдвинутое влево на 2? 6 сдвинутое влево на 2 это 24.
-чему равно 9 в двоичной записи? 9 в двоичной записи это 1001.
-what is 50 shifted right by 1? 50 shifted right by 1 is 25.
-what is hex c8 in decimal? hex c8 is 200 in decimal.
-2 × 32 = 64.
-what is 33 in hex? 33 in hex is 21.
-17 shifted left by 2 is 68.
-what is octal 21 in decimal? octal 21 is 17 in decimal.
-9 или 5 побитово это 13.
-what is 48 in octal? 48 in octal is 60.
-21 и 12 побитово это 4.
-what is binary 1101 in decimal? binary 1101 is 13 in decimal.
-what is 63 xor 21? 63 xor 21 is 42.
-binary 110 is 6 in decimal.
-what is 40 or 24? 40 or 24 is 56.
-25 in binary is 11001.
-what is 13 and 6? 13 and 6 is 4.
-with 4 bits you can write 16 numbers.
-чему равно 40 в шестнадцатеричной записи? 40 в шестнадцатеричной записи это 28.
-чему равно 11 сдвинутое влево на 3? 11 сдвинутое влево на 3 это 88.
-чему равно 7 в двоичной записи? 7 в двоичной записи это 111.
-what is 24 shifted right by 2? 24 shifted right by 2 is 6.
-какое число записано цифрой 5 в двоичной? такого нет: цифра 5 в двоичной записи не встречается.
-255 in hex is ff.
-11 shifted left by 3 is 88.
-what is octal 14 in decimal? octal 14 is 12 in decimal.
-чему равно 60 или 15 побитово? 60 или 15 побитово это 63.
-octal 11 is 9 in decimal.
-чему равно 14 и 7 побитово? 14 и 7 побитово это 6.
-200 in octal is 310.
-what is 31 xor 16? 31 xor 16 is 15.
-binary 100001 is 33 in decimal.
-what is 100 or 36? 100 or 36 is 100.
-17 in binary is 10001.
-what is 9 and 5? 9 and 5 is 1.
-with 4 bits you can write 16 numbers.
-чему равно 48 в шестнадцатеричной записи? 48 в шестнадцатеричной записи это 30.
-чему равно 5 сдвинутое влево на 3? 5 сдвинутое влево на 3 это 40.
-13 в шестнадцатеричной записи это d.
-7 сдвинутое влево на 1 это 14.
-6 в двоичной записи это 110.
-48 shifted right by 4 is 3.
-hex 19 is 25 in decimal.
-what is 9 shifted left by 2? 9 shifted left by 2 is 36.
-40 in hex is 28.
-чему равно 12 или 10 побитово? 12 или 10 побитово это 14.
-octal 7 is 7 in decimal.
-чему равно 7 и 3 побитово? 7 и 3 побитово это 3.
-what number is written 2 in binary? none: the digit 2 does not occur in binary.
-what is 255 in binary? 255 in binary is 11111111.
-what is 25 or 9? 25 or 9 is 25.
-12 in binary is 1100.
-60 or 15 is 63.
-nibble держит 4 бита и 16 значений.
-14 and 7 is 6.
-a byte holds 8 bits and 256 values.
-200 в шестнадцатеричной записи это c8.
-2 сдвинутое влево на 5 это 64.
-33 в двоичной записи это 100001.
-68 shifted right by 2 is 17.
-hex 11 is 17 in decimal.
-what is 13 shifted left by 2? 13 shifted left by 2 is 52.
-48 in hex is 30.
-чему равно 21 или 12 побитово? 21 или 12 побитово это 29.
-octal 15 is 13 in decimal.
-63 или 21 побитово это 63.
-what is 6 in octal? 6 in octal is 6.
-40 и 24 побитово это 8.
-what is binary 11001 in decimal? binary 11001 is 25 in decimal.
-13 xor 6 is 11.
-what is 40 in binary? 40 in binary is 101000.
-12 or 10 is 14.
-byte держит 8 бит и 256 значений.
-7 and 3 is 3.
+what is 31 and 15? 31 and 15 is 15.
+what is 12 shifted right by 2? 12 shifted right by 2 is 3.
+what is octal 50 in decimal? octal 50 is 40 in decimal.
+52 xor 7 is 51.
 a halfword holds 16 bits and 65536 values.
-what number is written 7 in binary? none: the digit 7 does not occur in binary.
-255 в двоичной записи это 11111111.
-88 shifted right by 3 is 11.
-hex c is 12 in decimal.
-6 × 4 = 24.
-what is 9 in hex? 9 in hex is 9.
-25 shifted left by 1 is 50.
-what is octal 310 in decimal? octal 310 is 200 in decimal.
-31 или 16 побитово это 31.
-what is 33 in octal? 33 in octal is 41.
-100 и 36 побитово это 36.
-what is binary 10001 in decimal? binary 10001 is 17 in decimal.
-9 xor 5 is 12.
-what is 48 in binary? 48 in binary is 110000.
-21 or 12 is 29.
+hex 7 is 7 in decimal.
+чему равно 17 и 16 побитово? 17 и 16 побитово это 16.
+100 in binary is 1100100.
+чему равно 100 в двоичной записи? 100 в двоичной записи это 1100100.
+6 shifted left by 4 is 96.
+what is binary 11111 in decimal? binary 11111 is 31 in decimal.
+74 and 10 is 10.
+800 shifted right by 5 is 25.
+octal 100 is 64 in decimal.
+what is 13 or 3? 13 or 3 is 15.
+чему равно 2 сдвинутое влево на 2? 2 сдвинутое влево на 2 это 8.
+what is 18 in hex? 18 in hex is 12.
+51 и 9 побитово это 1.
+word держит 32 бита и 4294967296 значений.
+чему равно 255 в двоичной записи? 255 в двоичной записи это 11111111.
+4 shifted left by 1 is 8.
+what is binary 1100 in decimal? binary 1100 is 12 in decimal.
+what is 14 and 7? 14 and 7 is 6.
+what is 208 shifted right by 4? 208 shifted right by 4 is 13.
+what is octal 11 in decimal? octal 11 is 9 in decimal.
+18 xor 16 is 2.
+a halfword holds 16 bits and 65536 values.
+hex c8 is 200 in decimal.
+чему равно 10 и 6 побитово? 10 и 6 побитово это 2.
+what number is written 0 in binary? 0: the digit 0 in binary is the number 0.
+какое число записано цифрой 6 в двоичной? такого нет: цифра 6 в двоичной записи не встречается.
+octal 6 is 6 in decimal.
+what is 13 or 9? 13 or 9 is 13.
+чему равно 7 сдвинутое влево на 5? 7 сдвинутое влево на 5 это 224.
+what is 25 in hex? 25 in hex is 19.
+31 и 15 побитово это 15.
 byte держит 8 бит и 256 значений.
-what is 63 and 21? 63 and 21 is 21.
+40 в двоичной записи это 101000.
+чему равно 52 или 7 побитово? 52 или 7 побитово это 55.
+binary 111 is 7 in decimal.
+чему равно 7 в шестнадцатеричной записи? 7 в шестнадцатеричной записи это 7.
+11 × 2 = 22.
+what is 100 in octal? 100 in octal is 144.
+21 or 6 is 23.
+6 сдвинутое влево на 4 это 96.
+31 in hex is 1f.
+what is 74 xor 10? 74 xor 10 is 64.
+with 8 bits you can write 256 numbers.
+what is hex 40 in decimal? hex 40 is 64 in decimal.
+13 или 3 побитово это 15.
+what is 18 in binary? 18 in binary is 10010.
+18 в шестнадцатеричной записи это 12.
+what is 17 shifted left by 3? 17 shifted left by 3 is 136.
+255 in octal is 377.
+20 or 15 is 31.
+4 сдвинутое влево на 1 это 8.
+12 in hex is c.
+14 и 7 побитово это 6.
+byte держит 8 бит и 256 значений.
+9 в двоичной записи это 1001.
+чему равно 18 или 16 побитово? 18 или 16 побитово это 18.
+binary 11001000 is 200 in decimal.
+чему равно 200 в шестнадцатеричной записи? 200 в шестнадцатеричной записи это c8.
+7 × 4 = 28.
+какое число записано цифрой 2 в двоичной? такого нет: цифра 2 в двоичной записи не встречается.
+what number is written 9 in binary? none: the digit 9 does not occur in binary.
+what is hex 6 in decimal? hex 6 is 6 in decimal.
+13 или 9 побитово это 13.
+what is 25 in binary? 25 in binary is 11001.
+25 в шестнадцатеричной записи это 19.
+what is 3 shifted left by 2? 3 shifted left by 2 is 12.
+40 in octal is 50.
+what is 52 and 7? 52 and 7 is 4.
+what is 72 shifted right by 3? 72 shifted right by 3 is 9.
+what is octal 7 in decimal? octal 7 is 7 in decimal.
+17 xor 16 is 1.
+a word holds 32 bits and 4294967296 values.
+hex 64 is 100 in decimal.
+чему равно 21 и 6 побитово? 21 и 6 побитово это 4.
+31 in binary is 11111.
+чему равно 31 в двоичной записи? 31 в двоичной записи это 11111.
+25 shifted left by 5 is 800.
+what is binary 1000000 in decimal? binary 1000000 is 64 in decimal.
+13 and 3 is 1.
+8 shifted right by 2 is 2.
+octal 22 is 18 in decimal.
+what is 51 or 9? 51 or 9 is 59.
+чему равно 17 сдвинутое влево на 3? 17 сдвинутое влево на 3 это 136.
+what is 255 in hex? 255 in hex is ff.
+чему равно 20 и 15 побитово? 20 и 15 побитово это 4.
+12 in binary is 1100.
+12 в шестнадцатеричной записи это c.
+what is 13 shifted left by 4? 13 shifted left by 4 is 208.
+9 in octal is 11.
+what is 18 and 16? 18 and 16 is 16.
+what is 160 shifted right by 5? 160 shifted right by 5 is 5.
+what is octal 310 in decimal? octal 310 is 200 in decimal.
+10 xor 6 is 12.
+a word holds 32 bits and 4294967296 values.
+what number is written 5 in binary? none: the digit 5 does not occur in binary.
+what is binary 110 in decimal? binary 110 is 6 in decimal.
+13 and 9 is 9.
+224 shifted right by 5 is 7.
+octal 31 is 25 in decimal.
+what is 31 or 15? 31 or 15 is 31.
+чему равно 3 сдвинутое влево на 2? 3 сдвинутое влево на 2 это 12.
+what is 40 in hex? 40 in hex is 28.
+52 и 7 побитово это 4.
+halfword держит 16 бит и 65536 значений.
+7 в двоичной записи это 111.
+чему равно 17 или 16 побитово? 17 или 16 побитово это 17.
+binary 1100100 is 100 in decimal.
+чему равно 100 в шестнадцатеричной записи? 100 в шестнадцатеричной записи это 64.
+6 × 16 = 96.
+what is 31 in octal? 31 in octal is 37.
+74 or 10 is 74.
+25 сдвинутое влево на 5 это 800.
+64 in hex is 40.
+what is 13 xor 3? 13 xor 3 is 14.
+with 16 bits you can write 65536 numbers.
+what is hex 12 in decimal? hex 12 is 18 in decimal.
+51 или 9 побитово это 59.
+what is 255 in binary? 255 in binary is 11111111.
+чему равно 255 в шестнадцатеричной записи? 255 в шестнадцатеричной записи это ff.
+4 × 2 = 8.
+what is 12 in octal? 12 in octal is 14.
+what is 14 or 7? 14 or 7 is 15.
+чему равно 13 сдвинутое влево на 4? 13 сдвинутое влево на 4 это 208.
+what is 9 in hex? 9 in hex is 9.
+18 и 16 побитово это 16.
+halfword держит 16 бит и 65536 значений.
+200 в двоичной записи это 11001000.
+чему равно 10 или 6 побитово? 10 или 6 побитово это 14.
+what number is written 1 in binary? 1: the digit 1 in binary is the number 1.
+какое число записано цифрой 7 в двоичной? такого нет: цифра 7 в двоичной записи не встречается.
+6 in hex is 6.
+what is 13 xor 9? 13 xor 9 is 4.
+with 4 bits you can write 16 numbers.
+what is hex 19 in decimal? hex 19 is 25 in decimal.
+31 или 15 побитово это 31.
+what is 40 in binary? 40 in binary is 101000.
+40 в шестнадцатеричной записи это 28.
+what is 9 shifted left by 3? 9 shifted left by 3 is 72.
+7 in octal is 7.
+what is 17 and 16? 17 and 16 is 16.
+what is 22 shifted right by 1? 22 shifted right by 1 is 11.
+what is octal 144 in decimal? octal 144 is 100 in decimal.
+21 xor 6 is 19.
+a nibble holds 4 bits and 16 values.
+hex 1f is 31 in decimal.
+чему равно 74 и 10 побитово? 74 и 10 побитово это 10.
+64 in binary is 1000000.
+чему равно 64 в двоичной записи? 64 в двоичной записи это 1000000.
+2 shifted left by 2 is 8.
+what is binary 10010 in decimal? binary 10010 is 18 in decimal.
+51 and 9 is 1.
+136 shifted right by 3 is 17.
+octal 377 is 255 in decimal.
+20 xor 15 is 27.
+a nibble holds 4 bits and 16 values.
+hex c is 12 in decimal.
+14 или 7 побитово это 15.
+what is 9 in binary? 9 in binary is 1001.
+9 в шестнадцатеричной записи это 9.
+what is 5 shifted left by 5? 5 shifted left by 5 is 160.
+200 in octal is 310.
+what is 10 and 6? 10 and 6 is 2.
+what is 28 shifted right by 2? 28 shifted right by 2 is 7.
+какое число записано цифрой 3 в двоичной? такого нет: цифра 3 в двоичной записи не встречается.
+6 in binary is 110.
+чему равно 6 в двоичной записи? 6 в двоичной записи это 110.
+7 shifted left by 5 is 224.
+what is binary 11001 in decimal? binary 11001 is 25 in decimal.
+31 and 15 is 15.
+12 shifted right by 2 is 3.
+octal 50 is 40 in decimal.
+what is 52 or 7? 52 or 7 is 55.
+чему равно 9 сдвинутое влево на 3? 9 сдвинутое влево на 3 это 72.
+what is 7 in hex? 7 in hex is 7.
+17 и 16 побитово это 16.
+word держит 32 бита и 4294967296 значений.
+100 в двоичной записи это 1100100.
+чему равно 21 или 6 побитово? 21 или 6 побитово это 23.
+binary 11111 is 31 in decimal.
+чему равно 31 в шестнадцатеричной записи? 31 в шестнадцатеричной записи это 1f.
+25 × 32 = 800.
+what is 64 in octal? 64 in octal is 100.
+13 or 3 is 15.
+2 сдвинутое влево на 2 это 8.
+18 in hex is 12.
+what is 51 xor 9? 51 xor 9 is 58.
+with 32 bits you can write 4294967296 numbers.
+255 в двоичной записи это 11111111.
+чему равно 20 или 15 побитово? 20 или 15 побитово это 31.
+binary 1100 is 12 in decimal.
+14 and 7 is 6.
+208 shifted right by 4 is 13.
+octal 11 is 9 in decimal.
+what is 18 or 16? 18 or 16 is 18.
+чему равно 5 сдвинутое влево на 5? 5 сдвинутое влево на 5 это 160.
+what is 200 in hex? 200 in hex is c8.
+10 и 6 побитово это 2.
+word держит 32 бита и 4294967296 значений.
+what number is written 6 in binary? none: the digit 6 does not occur in binary.
+what is 6 in octal? 6 in octal is 6.
+13 or 9 is 13.
+7 сдвинутое влево на 5 это 224.
+25 in hex is 19.
+what is 31 xor 15? 31 xor 15 is 16.
+with 8 bits you can write 256 numbers.
+what is hex 28 in decimal? hex 28 is 40 in decimal.
+52 или 7 побитово это 55.
+what is 7 in binary? 7 in binary is 111.
+7 в шестнадцатеричной записи это 7.
+what is 11 shifted left by 1? 11 shifted left by 1 is 22.
+100 in octal is 144.
+what is 21 and 6? 21 and 6 is 4.
+what is 96 shifted right by 4? 96 shifted right by 4 is 6.
+what is octal 37 in decimal? octal 37 is 31 in decimal.
+74 xor 10 is 64.
+a byte holds 8 bits and 256 values.
+hex 40 is 64 in decimal.
+чему равно 13 и 3 побитово? 13 и 3 побитово это 1.
+18 in binary is 10010.
+чему равно 18 в двоичной записи? 18 в двоичной записи это 10010.
+17 shifted left by 3 is 136.
+what is binary 11111111 in decimal? binary 11111111 is 255 in decimal.
+what is 20 and 15? 20 and 15 is 4.
+what is 8 shifted right by 1? 8 shifted right by 1 is 4.
+what is octal 14 in decimal? octal 14 is 12 in decimal.
+what is 14 xor 7? 14 xor 7 is 9.
+with 8 bits you can write 256 numbers.
+what is hex 9 in decimal? hex 9 is 9 in decimal.
+18 или 16 побитово это 18.
+what is 200 in binary? 200 in binary is 11001000.
+200 в шестнадцатеричной записи это c8.
+what is 7 shifted left by 2? 7 shifted left by 2 is 28.
+what number is written 2 in binary? none: the digit 2 does not occur in binary.
+какое число записано цифрой 8 в двоичной? такого нет: цифра 8 в двоичной записи не встречается.
+hex 6 is 6 in decimal.
+чему равно 13 и 9 побитово? 13 и 9 побитово это 9.
+25 in binary is 11001.
+чему равно 25 в двоичной записи? 25 в двоичной записи это 11001.
+3 shifted left by 2 is 12.
+what is binary 101000 in decimal? binary 101000 is 40 in decimal.
+52 and 7 is 4.
+72 shifted right by 3 is 9.
+octal 7 is 7 in decimal.
+what is 17 or 16? 17 or 16 is 17.
+чему равно 11 сдвинутое влево на 1? 11 сдвинутое влево на 1 это 22.
+what is 100 in hex? 100 in hex is 64.
+21 и 6 побитово это 4.
+nibble держит 4 бита и 16 значений.
+31 в двоичной записи это 11111.
+чему равно 74 или 10 побитово? 74 или 10 побитово это 74.
+binary 1000000 is 64 in decimal.
+чему равно 64 в шестнадцатеричной записи? 64 в шестнадцатеричной записи это 40.
+2 × 4 = 8.
+what is 18 in octal? 18 in octal is 22.
+51 or 9 is 59.
+17 сдвинутое влево на 3 это 136.
+255 in hex is ff.
+20 и 15 побитово это 4.
+nibble держит 4 бита и 16 значений.
+чему равно 12 в двоичной записи? 12 в двоичной записи это 1100.
+13 shifted left by 4 is 208.
+what is binary 1001 in decimal? binary 1001 is 9 in decimal.
+18 and 16 is 16.
+160 shifted right by 5 is 5.
+octal 310 is 200 in decimal.
+what is 10 or 6? 10 or 6 is 14.
+чему равно 7 сдвинутое влево на 2? 7 сдвинутое влево на 2 это 28.
+какое число записано цифрой 4 в двоичной? такого нет: цифра 4 в двоичной записи не встречается.
+binary 110 is 6 in decimal.
+чему равно 6 в шестнадцатеричной записи? 6 в шестнадцатеричной записи это 6.
+7 × 32 = 224.
+what is 25 in octal? 25 in octal is 31.
+31 or 15 is 31.
+3 сдвинутое влево на 2 это 12.
+40 in hex is 28.
+what is 52 xor 7? 52 xor 7 is 51.
+with 16 bits you can write 65536 numbers.
+what is hex 7 in decimal? hex 7 is 7 in decimal.
+17 или 16 побитово это 17.
+what is 100 in binary? 100 in binary is 1100100.
+100 в шестнадцатеричной записи это 64.
+what is 6 shifted left by 4? 6 shifted left by 4 is 96.
+31 in octal is 37.
+what is 74 and 10? 74 and 10 is 10.
+what is 800 shifted right by 5? 800 shifted right by 5 is 25.
+what is octal 100 in decimal? octal 100 is 64 in decimal.
+13 xor 3 is 14.
+a halfword holds 16 bits and 65536 values.
+hex 12 is 18 in decimal.
+чему равно 51 и 9 побитово? 51 и 9 побитово это 1.
+255 in binary is 11111111.
+255 в шестнадцатеричной записи это ff.
+what is 4 shifted left by 1? 4 shifted left by 1 is 8.
+12 in octal is 14.
+14 or 7 is 15.
+13 сдвинутое влево на 4 это 208.
+9 in hex is 9.
+what is 18 xor 16? 18 xor 16 is 2.
+with 16 bits you can write 65536 numbers.
+what is hex c8 in decimal? hex c8 is 200 in decimal.
+10 или 6 побитово это 14.
+какое число записано цифрой 0 в двоичной? 0: цифра 0 в двоичной записи есть число 0.
+what number is written 7 in binary? none: the digit 7 does not occur in binary.
+what is octal 6 in decimal? octal 6 is 6 in decimal.
+13 xor 9 is 4.
+a nibble holds 4 bits and 16 values.
+hex 19 is 25 in decimal.
+чему равно 31 и 15 побитово? 31 и 15 побитово это 15.
+40 in binary is 101000.
+чему равно 40 в двоичной записи? 40 в двоичной записи это 101000.
+9 shifted left by 3 is 72.
+what is binary 111 in decimal? binary 111 is 7 in decimal.
+17 and 16 is 16.
+22 shifted right by 1 is 11.
+octal 144 is 100 in decimal.
+what is 21 or 6? 21 or 6 is 23.
+чему равно 6 сдвинутое влево на 4? 6 сдвинутое влево на 4 это 96.
+what is 31 in hex? 31 in hex is 1f.
+74 и 10 побитово это 10.
+byte держит 8 бит и 256 значений.
+64 в двоичной записи это 1000000.
+чему равно 13 или 3 побитово? 13 или 3 побитово это 15.
+binary 10010 is 18 in decimal.
+чему равно 18 в шестнадцатеричной записи? 18 в шестнадцатеричной записи это 12.
+17 × 8 = 136.
+what is 255 in octal? 255 in octal is 377.
+what is 20 or 15? 20 or 15 is 31.
+чему равно 4 сдвинутое влево на 1? 4 сдвинутое влево на 1 это 8.
+what is 12 in hex? 12 in hex is c.
+чему равно 14 и 7 побитово? 14 и 7 побитово это 6.
+9 in binary is 1001.
+чему равно 9 в двоичной записи? 9 в двоичной записи это 1001.
+5 shifted left by 5 is 160.
+what is binary 11001000 in decimal? binary 11001000 is 200 in decimal.
+10 and 6 is 2.
+28 shifted right by 2 is 7.
+what number is written 3 in binary? none: the digit 3 does not occur in binary.
+какое число записано цифрой 9 в двоичной? такого нет: цифра 9 в двоичной записи не встречается.
+6 в двоичной записи это 110.
+чему равно 13 или 9 побитово? 13 или 9 побитово это 13.
+binary 11001 is 25 in decimal.
+чему равно 25 в шестнадцатеричной записи? 25 в шестнадцатеричной записи это 19.
+3 × 4 = 12.
+what is 40 in octal? 40 in octal is 50.
+52 or 7 is 55.
+9 сдвинутое влево на 3 это 72.
+7 in hex is 7.
+what is 17 xor 16? 17 xor 16 is 1.
+with 32 bits you can write 4294967296 numbers.
+what is hex 64 in decimal? hex 64 is 100 in decimal.
+21 или 6 побитово это 23.
+what is 31 in binary? 31 in binary is 11111.
+31 в шестнадцатеричной записи это 1f.
+what is 25 shifted left by 5? 25 shifted left by 5 is 800.
+64 in octal is 100.
+what is 13 and 3? 13 and 3 is 1.
+what is 8 shifted right by 2? 8 shifted right by 2 is 2.
+what is octal 22 in decimal? octal 22 is 18 in decimal.
+51 xor 9 is 58.
+a word holds 32 bits and 4294967296 values.
+hex ff is 255 in decimal.
+20 или 15 побитово это 31.
+what is 12 in binary? 12 in binary is 1100.
+чему равно 12 в шестнадцатеричной записи? 12 в шестнадцатеричной записи это c.
+13 × 16 = 208.
+what is 9 in octal? 9 in octal is 11.
+18 or 16 is 18.
+5 сдвинутое влево на 5 это 160.
+200 in hex is c8.
+what is 10 xor 6? 10 xor 6 is 12.
+with 32 bits you can write 4294967296 numbers.
+какое число записано цифрой 5 в двоичной? такого нет: цифра 5 в двоичной записи не встречается.
+6 in octal is 6.
+what is 13 and 9? 13 and 9 is 9.
+what is 224 shifted right by 5? 224 shifted right by 5 is 7.
+what is octal 31 in decimal? octal 31 is 25 in decimal.
+31 xor 15 is 16.
+a byte holds 8 bits and 256 values.
+hex 28 is 40 in decimal.
+чему равно 52 и 7 побитово? 52 и 7 побитово это 4.
+7 in binary is 111.
+чему равно 7 в двоичной записи? 7 в двоичной записи это 111.
+11 shifted left by 1 is 22.
+what is binary 1100100 in decimal? binary 1100100 is 100 in decimal.
+21 and 6 is 4.
+96 shifted right by 4 is 6.
+octal 37 is 31 in decimal.
+what is 74 or 10? 74 or 10 is 74.
+чему равно 25 сдвинутое влево на 5? 25 сдвинутое влево на 5 это 800.
+what is 64 in hex? 64 in hex is 40.
+13 и 3 побитово это 1.
+halfword держит 16 бит и 65536 значений.
+18 в двоичной записи это 10010.
+чему равно 51 или 9 побитово? 51 или 9 побитово это 59.
+binary 11111111 is 255 in decimal.
+20 and 15 is 4.
+8 shifted right by 1 is 4.
+octal 14 is 12 in decimal.
+14 xor 7 is 9.
+a byte holds 8 bits and 256 values.
+hex 9 is 9 in decimal.
+чему равно 18 и 16 побитово? 18 и 16 побитово это 16.
+200 in binary is 11001000.
+чему равно 200 в двоичной записи? 200 в двоичной записи это 11001000.
+7 shifted left by 2 is 28.
+какое число записано цифрой 1 в двоичной? 1: цифра 1 в двоичной записи есть число 1.
+what number is written 8 in binary? none: the digit 8 does not occur in binary.
+
+33 in octal is 41.
+what is 26 xor 10? 26 xor 10 is 16.
+binary 10001 is 17 in decimal.
+what is 48 or 3? 48 or 3 is 51.
+48 in binary is 110000.
+what is 10 and 9? 10 and 9 is 8.
+with 16 bits you can write 65536 numbers.
+чему равно 5 в шестнадцатеричной записи? 5 в шестнадцатеричной записи это 5.
+чему равно 6 сдвинутое влево на 5? 6 сдвинутое влево на 5 это 192.
+чему равно 77 в двоичной записи? 77 в двоичной записи это 1001101.
+what is 100 shifted right by 2? 100 shifted right by 2 is 25.
+what is hex 80 in decimal? hex 80 is 128 in decimal.
+2 × 8 = 16.
+what is 3 in hex? 3 in hex is 3.
+17 shifted left by 1 is 34.
+what is octal 226 in decimal? octal 226 is 150 in decimal.
+15 или 10 побитово это 15.
+what is 42 in octal? 42 in octal is 52.
+10 и 3 побитово это 2.
+what is binary 1100011 in decimal? binary 1100011 is 99 in decimal.
+11 xor 9 is 2.
+what is 13 in binary? 13 in binary is 1101.
+what is 19 or 15? 19 or 15 is 31.
+6 in binary is 110.
+what is 23 and 7? 23 and 7 is 7.
+with 32 bits you can write 4294967296 numbers.
+какое число записано цифрой 7 в двоичной? такого нет: цифра 7 в двоичной записи не встречается.
+33 в двоичной записи это 100001.
+24 shifted right by 3 is 3.
+hex 11 is 17 in decimal.
+what is 9 shifted left by 1? 9 shifted left by 1 is 18.
+48 in hex is 30.
+чему равно 10 или 9 побитово? 10 или 9 побитово это 11.
+octal 5 is 5 in decimal.
+чему равно 30 и 15 побитово? 30 и 15 побитово это 14.
+77 in octal is 115.
+what is 71 xor 7? 71 xor 7 is 64.
+binary 10000000 is 128 in decimal.
+what is 26 or 16? 26 or 16 is 26.
+3 in binary is 11.
+what is 48 and 6? 48 and 6 is 0.
+with 16 bits you can write 65536 numbers.
+чему равно 150 в шестнадцатеричной записи? 150 в шестнадцатеричной записи это 96.
+чему равно 4 сдвинутое влево на 4? 4 сдвинутое влево на 4 это 64.
+чему равно 42 в двоичной записи? 42 в двоичной записи это 101010.
+what is 416 shifted right by 5? 416 shifted right by 5 is 13.
+what is hex 63 in decimal? hex 63 is 99 in decimal.
+5 × 4 = 20.
+what is 13 in hex? 13 in hex is d.
+what is 7 shifted left by 3? 7 shifted left by 3 is 56.
+6 in hex is 6.
+чему равно 23 или 7 побитово? 23 или 7 побитово это 23.
+what number is written 3 in binary? none: the digit 3 does not occur in binary.
+what is binary 100001 in decimal? binary 100001 is 33 in decimal.
+26 xor 10 is 16.
+what is 17 in binary? 17 in binary is 10001.
+48 or 3 is 51.
+byte держит 8 бит и 256 значений.
+10 and 9 is 8.
+a halfword holds 16 bits and 65536 values.
+5 в шестнадцатеричной записи это 5.
+6 сдвинутое влево на 5 это 192.
+77 в двоичной записи это 1001101.
+100 shifted right by 2 is 25.
+hex 80 is 128 in decimal.
+what is 2 shifted left by 3? 2 shifted left by 3 is 16.
+3 in hex is 3.
+чему равно 48 или 6 побитово? 48 или 6 побитово это 54.
+octal 226 is 150 in decimal.
+чему равно 15 и 10 побитово? 15 и 10 побитово это 10.
+42 in octal is 52.
+what is 10 xor 3? 10 xor 3 is 9.
+binary 1100011 is 99 in decimal.
+what is 11 or 9? 11 or 9 is 11.
+13 in binary is 1101.
+19 or 15 is 31.
+halfword держит 16 бит и 65536 значений.
+23 and 7 is 7.
+a word holds 32 bits and 4294967296 values.
+what number is written 7 in binary? none: the digit 7 does not occur in binary.
+what is hex 21 in decimal? hex 21 is 33 in decimal.
+3 × 8 = 24.
+what is 17 in hex? 17 in hex is 11.
+9 shifted left by 1 is 18.
+what is octal 60 in decimal? octal 60 is 48 in decimal.
+10 или 9 побитово это 11.
+what is 5 in octal? 5 in octal is 5.
+30 и 15 побитово это 14.
+what is binary 1001101 in decimal? binary 1001101 is 77 in decimal.
+71 xor 7 is 64.
+what is 128 in binary? 128 in binary is 10000000.
+26 or 16 is 26.
+byte держит 8 бит и 256 значений.
+48 and 6 is 0.
+a halfword holds 16 bits and 65536 values.
+150 в шестнадцатеричной записи это 96.
+4 сдвинутое влево на 4 это 64.
+42 в двоичной записи это 101010.
+416 shifted right by 5 is 13.
+hex 63 is 99 in decimal.
+what is 5 shifted left by 2? 5 shifted left by 2 is 20.
+13 in hex is d.
+7 shifted left by 3 is 56.
+what is octal 6 in decimal? octal 6 is 6 in decimal.
+23 или 7 побитово это 23.
+какое число записано цифрой 2 в двоичной? такого нет: цифра 2 в двоичной записи не встречается.
+binary 100001 is 33 in decimal.
+what is 26 or 10? 26 or 10 is 26.
+17 in binary is 10001.
+what is 48 and 3? 48 and 3 is 0.
+with 8 bits you can write 256 numbers.
+чему равно 48 в шестнадцатеричной записи? 48 в шестнадцатеричной записи это 30.
+чему равно 11 сдвинутое влево на 4? 11 сдвинутое влево на 4 это 176.
+чему равно 5 в двоичной записи? 5 в двоичной записи это 101.
+what is 192 shifted right by 5? 192 shifted right by 5 is 6.
+what is hex 4d in decimal? hex 4d is 77 in decimal.
+25 × 4 = 100.
+what is 128 in hex? 128 in hex is 80.
+2 shifted left by 3 is 16.
+what is octal 3 in decimal? octal 3 is 3 in decimal.
+48 или 6 побитово это 54.
+what is 150 in octal? 150 in octal is 226.
+15 и 10 побитово это 10.
+what is binary 101010 in decimal? binary 101010 is 42 in decimal.
+10 xor 3 is 9.
+what is 99 in binary? 99 in binary is 1100011.
+11 or 9 is 11.
+byte держит 8 бит и 256 значений.
+what is 19 and 15? 19 and 15 is 3.
 with 16 bits you can write 65536 numbers.
 чему равно 6 в шестнадцатеричной записи? 6 в шестнадцатеричной записи это 6.
-чему равно 3 сдвинутое влево на 4? 3 сдвинутое влево на 4 это 48.
-чему равно 25 в двоичной записи? 25 в двоичной записи это 11001.
-what is 36 shifted right by 2? 36 shifted right by 2 is 9.
-what is hex 28 in decimal? hex 28 is 40 in decimal.
-11 × 8 = 88.
-what is 7 in hex? 7 in hex is 7.
-6 shifted left by 2 is 24.
+чему равно 3 сдвинутое влево на 1? 3 сдвинутое влево на 1 это 6.
+какое число записано цифрой 6 в двоичной? такого нет: цифра 6 в двоичной записи не встречается.
+hex 21 is 33 in decimal.
+what is 3 shifted left by 3? 3 shifted left by 3 is 24.
+17 in hex is 11.
+чему равно 48 или 3 побитово? 48 или 3 побитово это 51.
+octal 60 is 48 in decimal.
+чему равно 10 и 9 побитово? 10 и 9 побитово это 8.
+5 in octal is 5.
+what is 30 xor 15? 30 xor 15 is 17.
+binary 1001101 is 77 in decimal.
+what is 71 or 7? 71 or 7 is 71.
+128 in binary is 10000000.
+what is 26 and 16? 26 and 16 is 16.
+with 8 bits you can write 256 numbers.
+чему равно 3 в шестнадцатеричной записи? 3 в шестнадцатеричной записи это 3.
+чему равно 17 сдвинутое влево на 1? 17 сдвинутое влево на 1 это 34.
+чему равно 150 в двоичной записи? 150 в двоичной записи это 10010110.
+what is 64 shifted right by 4? 64 shifted right by 4 is 4.
+what is hex 2a in decimal? hex 2a is 42 in decimal.
+13 × 32 = 416.
+what is 99 in hex? 99 in hex is 63.
+5 shifted left by 2 is 20.
+what is octal 15 in decimal? octal 15 is 13 in decimal.
+чему равно 19 или 15 побитово? 19 или 15 побитово это 31.
+octal 6 is 6 in decimal.
+чему равно 23 и 7 побитово? 23 и 7 побитово это 7.
+what number is written 2 in binary? none: the digit 2 does not occur in binary.
+what is 33 in binary? 33 in binary is 100001.
+26 or 10 is 26.
+nibble держит 4 бита и 16 значений.
+48 and 3 is 0.
+a byte holds 8 bits and 256 values.
+48 в шестнадцатеричной записи это 30.
+11 сдвинутое влево на 4 это 176.
+5 в двоичной записи это 101.
+192 shifted right by 5 is 6.
+hex 4d is 77 in decimal.
+what is 25 shifted left by 2? 25 shifted left by 2 is 100.
+128 in hex is 80.
+чему равно 26 или 16 побитово? 26 или 16 побитово это 26.
+octal 3 is 3 in decimal.
+чему равно 48 и 6 побитово? 48 и 6 побитово это 0.
+150 in octal is 226.
+what is 15 xor 10? 15 xor 10 is 5.
+binary 101010 is 42 in decimal.
+what is 10 or 3? 10 or 3 is 11.
+99 in binary is 1100011.
+what is 11 and 9? 11 and 9 is 9.
+with 8 bits you can write 256 numbers.
+19 and 15 is 3.
+a halfword holds 16 bits and 65536 values.
+6 в шестнадцатеричной записи это 6.
+3 сдвинутое влево на 1 это 6.
+what number is written 6 in binary? none: the digit 6 does not occur in binary.
+what is 33 in hex? 33 in hex is 21.
+3 shifted left by 3 is 24.
+what is octal 21 in decimal? octal 21 is 17 in decimal.
+48 или 3 побитово это 51.
+what is 48 in octal? 48 in octal is 60.
+10 и 9 побитово это 8.
+what is binary 101 in decimal? binary 101 is 5 in decimal.
+30 xor 15 is 17.
+what is 77 in binary? 77 in binary is 1001101.
+71 or 7 is 71.
+nibble держит 4 бита и 16 значений.
+26 and 16 is 16.
+a byte holds 8 bits and 256 values.
+3 в шестнадцатеричной записи это 3.
+17 сдвинутое влево на 1 это 34.
+150 в двоичной записи это 10010110.
+64 shifted right by 4 is 4.
+hex 2a is 42 in decimal.
+what is 13 shifted left by 5? 13 shifted left by 5 is 416.
+99 in hex is 63.
+чему равно 11 или 9 побитово? 11 или 9 побитово это 11.
+octal 15 is 13 in decimal.
+19 или 15 побитово это 31.
+what is 6 in octal? 6 in octal is 6.
+23 и 7 побитово это 7.
+какое число записано цифрой 1 в двоичной? 1: цифра 1 в двоичной записи есть число 1.
+33 in binary is 100001.
+what is 26 and 10? 26 and 10 is 10.
+with 4 bits you can write 16 numbers.
+чему равно 17 в шестнадцатеричной записи? 17 в шестнадцатеричной записи это 11.
+чему равно 9 сдвинутое влево на 1? 9 сдвинутое влево на 1 это 18.
+чему равно 48 в двоичной записи? 48 в двоичной записи это 110000.
+what is 176 shifted right by 4? 176 shifted right by 4 is 11.
+what is hex 5 in decimal? hex 5 is 5 in decimal.
+6 × 32 = 192.
+what is 77 in hex? 77 in hex is 4d.
+25 shifted left by 2 is 100.
+what is octal 200 in decimal? octal 200 is 128 in decimal.
+26 или 16 побитово это 26.
+what is 3 in octal? 3 in octal is 3.
+48 и 6 побитово это 0.
+what is binary 10010110 in decimal? binary 10010110 is 150 in decimal.
+15 xor 10 is 5.
+what is 42 in binary? 42 in binary is 101010.
+10 or 3 is 11.
+nibble держит 4 бита и 16 значений.
+11 and 9 is 9.
+a byte holds 8 bits and 256 values.
+чему равно 13 в шестнадцатеричной записи? 13 в шестнадцатеричной записи это d.
+чему равно 7 сдвинутое влево на 3? 7 сдвинутое влево на 3 это 56.
+чему равно 6 в двоичной записи? 6 в двоичной записи это 110.
+what is 6 shifted right by 1? 6 shifted right by 1 is 3.
+какое число записано цифрой 5 в двоичной? такого нет: цифра 5 в двоичной записи не встречается.
+33 in hex is 21.
+чему равно 26 или 10 побитово? 26 или 10 побитово это 26.
+octal 21 is 17 in decimal.
+чему равно 48 и 3 побитово? 48 и 3 побитово это 0.
+48 in octal is 60.
+what is 10 xor 9? 10 xor 9 is 3.
+binary 101 is 5 in decimal.
+what is 30 or 15? 30 or 15 is 31.
+77 in binary is 1001101.
+what is 71 and 7? 71 and 7 is 7.
+with 4 bits you can write 16 numbers.
+чему равно 128 в шестнадцатеричной записи? 128 в шестнадцатеричной записи это 80.
+чему равно 2 сдвинутое влево на 3? 2 сдвинутое влево на 3 это 16.
+чему равно 3 в двоичной записи? 3 в двоичной записи это 11.
+what is 34 shifted right by 1? 34 shifted right by 1 is 17.
+what is hex 96 in decimal? hex 96 is 150 in decimal.
+4 × 16 = 64.
+what is 42 in hex? 42 in hex is 2a.
+13 shifted left by 5 is 416.
+what is octal 143 in decimal? octal 143 is 99 in decimal.
+11 или 9 побитово это 11.
+what is 13 in octal? 13 in octal is 15.
+чему равно 19 и 15 побитово? 19 и 15 побитово это 3.
+6 in octal is 6.
+what is 23 xor 7? 23 xor 7 is 16.
+what number is written 1 in binary? 1: the digit 1 in binary is the number 1.
+какое число записано цифрой 9 в двоичной? такого нет: цифра 9 в двоичной записи не встречается.
+26 and 10 is 10.
+a nibble holds 4 bits and 16 values.
+17 в шестнадцатеричной записи это 11.
+9 сдвинутое влево на 1 это 18.
+48 в двоичной записи это 110000.
+176 shifted right by 4 is 11.
+hex 5 is 5 in decimal.
+what is 6 shifted left by 5? 6 shifted left by 5 is 192.
+77 in hex is 4d.
+чему равно 71 или 7 побитово? 71 или 7 побитово это 71.
+octal 200 is 128 in decimal.
+чему равно 26 и 16 побитово? 26 и 16 побитово это 16.
+3 in octal is 3.
+what is 48 xor 6? 48 xor 6 is 54.
+binary 10010110 is 150 in decimal.
+what is 15 or 10? 15 or 10 is 15.
+42 in binary is 101010.
+what is 10 and 3? 10 and 3 is 2.
+with 4 bits you can write 16 numbers.
+чему равно 99 в шестнадцатеричной записи? 99 в шестнадцатеричной записи это 63.
+чему равно 5 сдвинутое влево на 2? 5 сдвинутое влево на 2 это 20.
+13 в шестнадцатеричной записи это d.
+7 сдвинутое влево на 3 это 56.
+6 в двоичной записи это 110.
+6 shifted right by 1 is 3.
+what number is written 5 in binary? none: the digit 5 does not occur in binary.
+what is octal 41 in decimal? octal 41 is 33 in decimal.
+26 или 10 побитово это 26.
+what is 17 in octal? 17 in octal is 21.
+48 и 3 побитово это 0.
+what is binary 110000 in decimal? binary 110000 is 48 in decimal.
+10 xor 9 is 3.
+what is 5 in binary? 5 in binary is 101.
+30 or 15 is 31.
+word держит 32 бита и 4294967296 значений.
+71 and 7 is 7.
+a nibble holds 4 bits and 16 values.
+128 в шестнадцатеричной записи это 80.
+2 сдвинутое влево на 3 это 16.
+3 в двоичной записи это 11.
+34 shifted right by 1 is 17.
+hex 96 is 150 in decimal.
+what is 4 shifted left by 4? 4 shifted left by 4 is 64.
+42 in hex is 2a.
+чему равно 10 или 3 побитово? 10 или 3 побитово это 11.
+octal 143 is 99 in decimal.
+чему равно 11 и 9 побитово? 11 и 9 побитово это 9.
+13 in octal is 15.
+19 и 15 побитово это 3.
+what is binary 110 in decimal? binary 110 is 6 in decimal.
+23 xor 7 is 16.
+какое число записано цифрой 0 в двоичной? 0: цифра 0 в двоичной записи есть число 0.
+what number is written 9 in binary? none: the digit 9 does not occur in binary.
+чему равно 33 в шестнадцатеричной записи? 33 в шестнадцатеричной записи это 21.
+чему равно 3 сдвинутое влево на 3? 3 сдвинутое влево на 3 это 24.
+чему равно 17 в двоичной записи? 17 в двоичной записи это 10001.
+what is 18 shifted right by 1? 18 shifted right by 1 is 9.
+what is hex 30 in decimal? hex 30 is 48 in decimal.
+11 × 16 = 176.
+what is 5 in hex? 5 in hex is 5.
+6 shifted left by 5 is 192.
+what is octal 115 in decimal? octal 115 is 77 in decimal.
+71 или 7 побитово это 71.
+what is 128 in octal? 128 in octal is 200.
+26 и 16 побитово это 16.
+what is binary 11 in decimal? binary 11 is 3 in decimal.
+48 xor 6 is 54.
+what is 150 in binary? 150 in binary is 10010110.
+15 or 10 is 15.
+word держит 32 бита и 4294967296 значений.
+10 and 3 is 2.
+a nibble holds 4 bits and 16 values.
+99 в шестнадцатеричной записи это 63.
+5 сдвинутое влево на 2 это 20.
+чему равно 13 в двоичной записи? 13 в двоичной записи это 1101.
+what is 56 shifted right by 3? 56 shifted right by 3 is 7.
+what is hex 6 in decimal? hex 6 is 6 in decimal.
+3 × 2 = 6.
+какое число записано цифрой 4 в двоичной? такого нет: цифра 4 в двоичной записи не встречается.
+octal 41 is 33 in decimal.
+чему равно 26 и 10 побитово? 26 и 10 побитово это 10.
+17 in octal is 21.
+what is 48 xor 3? 48 xor 3 is 51.
+binary 110000 is 48 in decimal.
+what is 10 or 9? 10 or 9 is 11.
+5 in binary is 101.
+what is 30 and 15? 30 and 15 is 14.
+with 32 bits you can write 4294967296 numbers.
+чему равно 77 в шестнадцатеричной записи? 77 в шестнадцатеричной записи это 4d.
+чему равно 25 сдвинутое влево на 2? 25 сдвинутое влево на 2 это 100.
+чему равно 128 в двоичной записи? 128 в двоичной записи это 10000000.
+what is 16 shifted right by 3? 16 shifted right by 3 is 2.
+what is hex 3 in decimal? hex 3 is 3 in decimal.
+17 × 2 = 34.
+what is 150 in hex? 150 in hex is 96.
+4 shifted left by 4 is 64.
+what is octal 52 in decimal? octal 52 is 42 in decimal.
+10 или 3 побитово это 11.
+what is 99 in octal? 99 in octal is 143.
+11 и 9 побитово это 9.
+what is binary 1101 in decimal? binary 1101 is 13 in decimal.
+what is 19 xor 15? 19 xor 15 is 28.
+binary 110 is 6 in decimal.
+what is 23 or 7? 23 or 7 is 23.
+what number is written 0 in binary? 0: the digit 0 in binary is the number 0.
+какое число записано цифрой 8 в двоичной? такого нет: цифра 8 в двоичной записи не встречается.
+33 в шестнадцатеричной записи это 21.
+3 сдвинутое влево на 3 это 24.
+17 в двоичной записи это 10001.
+18 shifted right by 1 is 9.
+hex 30 is 48 in decimal.
+what is 11 shifted left by 4? 11 shifted left by 4 is 176.
+5 in hex is 5.
+чему равно 30 или 15 побитово? 30 или 15 побитово это 31.
+octal 115 is 77 in decimal.
+чему равно 71 и 7 побитово? 71 и 7 побитово это 7.
+128 in octal is 200.
+what is 26 xor 16? 26 xor 16 is 10.
+binary 11 is 3 in decimal.
+what is 48 or 6? 48 or 6 is 54.
+150 in binary is 10010110.
+what is 15 and 10? 15 and 10 is 10.
+with 32 bits you can write 4294967296 numbers.
+чему равно 42 в шестнадцатеричной записи? 42 в шестнадцатеричной записи это 2a.
+чему равно 13 сдвинутое влево на 5? 13 сдвинутое влево на 5 это 416.
+чему равно 99 в двоичной записи? 99 в двоичной записи это 1100011.
+what is 20 shifted right by 2? 20 shifted right by 2 is 5.
+13 в двоичной записи это 1101.
+56 shifted right by 3 is 7.
+hex 6 is 6 in decimal.
+what is 3 shifted left by 1? 3 shifted left by 1 is 6.
+what number is written 4 in binary? none: the digit 4 does not occur in binary.
+what is 33 in octal? 33 in octal is 41.
+26 и 10 побитово это 10.
+what is binary 10001 in decimal? binary 10001 is 17 in decimal.
+48 xor 3 is 51.
+what is 48 in binary? 48 in binary is 110000.
+10 or 9 is 11.
+halfword держит 16 бит и 65536 значений.
+30 and 15 is 14.
+a word holds 32 bits and 4294967296 values.
+77 в шестнадцатеричной записи это 4d.
+25 сдвинутое влево на 2 это 100.
+128 в двоичной записи это 10000000.
+16 shifted right by 3 is 2.
+hex 3 is 3 in decimal.
+what is 17 shifted left by 1? 17 shifted left by 1 is 34.
+150 in hex is 96.
+чему равно 15 или 10 побитово? 15 или 10 побитово это 15.
+octal 52 is 42 in decimal.
+чему равно 10 и 3 побитово? 10 и 3 побитово это 2.
+99 in octal is 143.
+what is 11 xor 9? 11 xor 9 is 2.
+binary 1101 is 13 in decimal.
+19 xor 15 is 28.
+what is 6 in binary? 6 in binary is 110.
+23 or 7 is 23.
+word держит 32 бита и 4294967296 значений.
+what number is written 8 in binary? none: the digit 8 does not occur in binary.
+чему равно 33 в двоичной записи? 33 в двоичной записи это 100001.
+what is 24 shifted right by 3? 24 shifted right by 3 is 3.
+what is hex 11 in decimal? hex 11 is 17 in decimal.
+9 × 2 = 18.
+what is 48 in hex? 48 in hex is 30.
+11 shifted left by 4 is 176.
+what is octal 5 in decimal? octal 5 is 5 in decimal.
+30 или 15 побитово это 31.
+what is 77 in octal? 77 in octal is 115.
+71 и 7 побитово это 7.
+what is binary 10000000 in decimal? binary 10000000 is 128 in decimal.
+26 xor 16 is 10.
+what is 3 in binary? 3 in binary is 11.
+48 or 6 is 54.
+halfword держит 16 бит и 65536 значений.
+15 and 10 is 10.
+a word holds 32 bits and 4294967296 values.
+42 в шестнадцатеричной записи это 2a.
+13 сдвинутое влево на 5 это 416.
+99 в двоичной записи это 1100011.
+20 shifted right by 2 is 5.
+hex d is 13 in decimal.
+7 × 8 = 56.
+what is 6 in hex? 6 in hex is 6.
+3 shifted left by 1 is 6.
 какое число записано цифрой 3 в двоичной? такого нет: цифра 3 в двоичной записи не встречается.
 
-200 в двоичной записи это 11001000.
-13 сдвинутое влево на 2 это 52.
-33 в шестнадцатеричной записи это 21.
+25 в двоичной записи это 11001.
+9 сдвинутое влево на 4 это 144.
+40 в шестнадцатеричной записи это 28.
 a byte holds 8 bits and 256 values.
-31 and 16 is 16.
+25 and 10 is 8.
 halfword держит 16 бит и 65536 значений.
-100 or 36 is 100.
-what is 13 in binary? 13 in binary is 1101.
-what is 9 xor 5? 9 xor 5 is 12.
-6 in octal is 6.
-чему равно 21 и 12 побитово? 21 и 12 побитово это 4.
-octal 31 is 25 in decimal.
-чему равно 63 или 21 побитово? 63 или 21 побитово это 63.
-40 in hex is 28.
-what is 25 shifted left by 1? 25 shifted left by 1 is 50.
-hex 7 is 7 in decimal.
-64 shifted right by 5 is 2.
-100 в двоичной записи это 1100100.
-17 сдвинутое влево на 2 это 68.
-31 в шестнадцатеричной записи это 1f.
-a halfword holds 16 bits and 65536 values.
-25 and 9 is 9.
-word держит 32 бита и 4294967296 значений.
-what number is written 9 in binary? none: the digit 9 does not occur in binary.
-what is 60 and 15? 60 and 15 is 12.
-33 in binary is 100001.
-what is 14 or 7? 14 or 7 is 15.
-binary 10001 is 17 in decimal.
-what is 31 xor 16? 31 xor 16 is 15.
-48 in octal is 60.
-чему равно 100 и 36 побитово? 100 и 36 побитово это 36.
-octal 15 is 13 in decimal.
-9 shifted left by 2 is 36.
-what is 6 in hex? 6 in hex is 6.
-11 × 8 = 88.
-what is hex 19 in decimal? hex 19 is 25 in decimal.
-what is 24 shifted right by 2? 24 shifted right by 2 is 6.
-чему равно 40 в двоичной записи? 40 в двоичной записи это 101000.
-чему равно 25 сдвинутое влево на 1? 25 сдвинутое влево на 1 это 50.
-чему равно 7 в шестнадцатеричной записи? 7 в шестнадцатеричной записи это 7.
-with 4 bits you can write 16 numbers.
-what is 12 and 10? 12 and 10 is 8.
-31 in binary is 11111.
-what is 7 or 3? 7 or 3 is 7.
-binary 1000000 is 64 in decimal.
-what is 25 xor 9? 25 xor 9 is 16.
-what number is written 2 in binary? none: the digit 2 does not occur in binary.
-what is binary 11001000 in decimal? binary 11001000 is 200 in decimal.
-60 и 15 побитово это 12.
-what is 33 in octal? 33 in octal is 41.
-14 или 7 побитово это 15.
-what is octal 21 in decimal? octal 21 is 17 in decimal.
-7 shifted left by 1 is 14.
-what is 48 in hex? 48 in hex is 30.
-3 × 16 = 48.
-13 в двоичной записи это 1101.
-9 сдвинутое влево на 2 это 36.
-6 в шестнадцатеричной записи это 6.
-a byte holds 8 bits and 256 values.
-63 and 21 is 21.
-halfword держит 16 бит и 65536 значений.
-40 or 24 is 56.
-what is 7 in binary? 7 in binary is 111.
-13 xor 6 is 11.
-what is binary 1100100 in decimal? binary 1100100 is 100 in decimal.
-12 и 10 побитово это 8.
-what is 31 in octal? 31 in octal is 37.
-7 или 3 побитово это 7.
-what is octal 100 in decimal? octal 100 is 64 in decimal.
-5 shifted left by 3 is 40.
-какое число записано цифрой 4 в двоичной? такого нет: цифра 4 в двоичной записи не встречается.
-200 in hex is c8.
+67 or 3 is 67.
+what is 31 in binary? 31 in binary is 11111.
+19 xor 9 is 26.
+what is binary 1000000 in decimal? binary 1000000 is 64 in decimal.
+57 и 15 побитово это 9.
+what is 18 in octal? 18 in octal is 22.
+12 или 7 побитово это 15.
+what is octal 377 in decimal? octal 377 is 255 in decimal.
 what is 13 shifted left by 2? 13 shifted left by 2 is 52.
-hex 21 is 33 in decimal.
-40 shifted right by 3 is 5.
-17 в двоичной записи это 10001.
-7 сдвинутое влево на 1 это 14.
-48 в шестнадцатеричной записи это 30.
-a word holds 32 bits and 4294967296 values.
-what is 9 and 5? 9 and 5 is 1.
-6 in binary is 110.
-what is 21 or 12? 21 or 12 is 29.
-binary 11001 is 25 in decimal.
-what is 63 xor 21? 63 xor 21 is 42.
-40 in octal is 50.
-чему равно 40 и 24 побитово? 40 и 24 побитово это 8.
-octal 7 is 7 in decimal.
-чему равно 13 или 6 побитово? 13 или 6 побитово это 15.
-100 in hex is 64.
-what is 17 shifted left by 2? 17 shifted left by 2 is 68.
-hex 1f is 31 in decimal.
-52 shifted right by 2 is 13.
-64 в двоичной записи это 1000000.
-5 сдвинутое влево на 3 это 40.
-what number is written 7 in binary? none: the digit 7 does not occur in binary.
-чему равно 200 в двоичной записи? 200 в двоичной записи это 11001000.
-чему равно 13 сдвинутое влево на 2? 13 сдвинутое влево на 2 это 52.
-чему равно 33 в шестнадцатеричной записи? 33 в шестнадцатеричной записи это 21.
-with 8 bits you can write 256 numbers.
-what is 31 and 16? 31 and 16 is 16.
-48 in binary is 110000.
-what is 100 or 36? 100 or 36 is 100.
-binary 1101 is 13 in decimal.
-9 и 5 побитово это 1.
-what is 6 in octal? 6 in octal is 6.
-21 или 12 побитово это 29.
-what is octal 31 in decimal? octal 31 is 25 in decimal.
-6 shifted left by 2 is 24.
-what is 40 in hex? 40 in hex is 28.
-25 × 2 = 50.
-what is hex 7 in decimal? hex 7 is 7 in decimal.
-what is 64 shifted right by 5? 64 shifted right by 5 is 2.
-чему равно 100 в двоичной записи? 100 в двоичной записи это 1100100.
-чему равно 17 сдвинутое влево на 2? 17 сдвинутое влево на 2 это 68.
-чему равно 31 в шестнадцатеричной записи? 31 в шестнадцатеричной записи это 1f.
+hex c is 12 in decimal.
+what is 40 shifted right by 3? 40 shifted right by 3 is 5.
+чему равно 9 в двоичной записи? 9 в двоичной записи это 1001.
+чему равно 7 сдвинутое влево на 1? 7 сдвинутое влево на 1 это 14.
+чему равно 200 в шестнадцатеричной записи? 200 в шестнадцатеричной записи это c8.
 with 16 bits you can write 65536 numbers.
-what is 25 and 9? 25 and 9 is 9.
+what is 54 and 9? 54 and 9 is 0.
 what number is written 0 in binary? 0: the digit 0 in binary is the number 0.
 какое число записано цифрой 9 в двоичной? такого нет: цифра 9 в двоичной записи не встречается.
-60 or 15 is 63.
-what is 33 in binary? 33 in binary is 100001.
-14 xor 7 is 9.
-what is binary 10001 in decimal? binary 10001 is 17 in decimal.
-31 и 16 побитово это 16.
-what is 48 in octal? 48 in octal is 60.
-100 или 36 побитово это 100.
-what is octal 15 in decimal? octal 15 is 13 in decimal.
-what is 9 shifted left by 2? 9 shifted left by 2 is 36.
-hex 6 is 6 in decimal.
-88 shifted right by 3 is 11.
-25 в двоичной записи это 11001.
-6 сдвинутое влево на 2 это 24.
-40 в шестнадцатеричной записи это 28.
-a word holds 32 bits and 4294967296 values.
-13 and 6 is 4.
-nibble держит 4 бита и 16 значений.
-12 or 10 is 14.
-what is 31 in binary? 31 in binary is 11111.
-7 xor 3 is 4.
-what is binary 1000000 in decimal? binary 1000000 is 64 in decimal.
-25 и 9 побитово это 9.
-какое число записано цифрой 2 в двоичной? такого нет: цифра 2 в двоичной записи не встречается.
-200 in octal is 310.
-чему равно 60 и 15 побитово? 60 и 15 побитово это 12.
-octal 41 is 33 in decimal.
-чему равно 14 или 7 побитово? 14 или 7 побитово это 15.
-17 in hex is 11.
-what is 7 shifted left by 1? 7 shifted left by 1 is 14.
-hex 30 is 48 in decimal.
-48 shifted right by 4 is 3.
-чему равно 13 в двоичной записи? 13 в двоичной записи это 1101.
-чему равно 9 сдвинутое влево на 2? 9 сдвинутое влево на 2 это 36.
-чему равно 6 в шестнадцатеричной записи? 6 в шестнадцатеричной записи это 6.
-with 8 bits you can write 256 numbers.
-what is 63 and 21? 63 and 21 is 21.
-40 in binary is 101000.
-what is 40 or 24? 40 or 24 is 56.
-binary 111 is 7 in decimal.
-what is 13 xor 6? 13 xor 6 is 11.
-100 in octal is 144.
-чему равно 12 и 10 побитово? 12 и 10 побитово это 8.
-octal 37 is 31 in decimal.
-чему равно 7 или 3 побитово? 7 или 3 побитово это 7.
-64 in hex is 40.
-what is 5 shifted left by 3? 5 shifted left by 3 is 40.
-what number is written 5 in binary? none: the digit 5 does not occur in binary.
-what is 200 in hex? 200 in hex is c8.
-13 × 4 = 52.
-what is hex 21 in decimal? hex 21 is 33 in decimal.
-what is 40 shifted right by 3? 40 shifted right by 3 is 5.
-чему равно 17 в двоичной записи? 17 в двоичной записи это 10001.
-чему равно 7 сдвинутое влево на 1? 7 сдвинутое влево на 1 это 14.
-чему равно 48 в шестнадцатеричной записи? 48 в шестнадцатеричной записи это 30.
-with 32 bits you can write 4294967296 numbers.
-9 or 5 is 13.
-what is 6 in binary? 6 in binary is 110.
-21 xor 12 is 25.
-what is binary 11001 in decimal? binary 11001 is 25 in decimal.
-63 и 21 побитово это 21.
-what is 40 in octal? 40 in octal is 50.
-40 или 24 побитово это 56.
-what is octal 7 in decimal? octal 7 is 7 in decimal.
-2 shifted left by 5 is 64.
-what is 100 in hex? 100 in hex is 64.
-17 × 4 = 68.
-what is hex 1f in decimal? hex 1f is 31 in decimal.
-what is 52 shifted right by 2? 52 shifted right by 2 is 13.
-чему равно 64 в двоичной записи? 64 в двоичной записи это 1000000.
-чему равно 5 сдвинутое влево на 3? 5 сдвинутое влево на 3 это 40.
-какое число записано цифрой 7 в двоичной? такого нет: цифра 7 в двоичной записи не встречается.
-200 в шестнадцатеричной записи это c8.
-a nibble holds 4 bits and 16 values.
-14 and 7 is 6.
-byte держит 8 бит и 256 значений.
-31 or 16 is 31.
-what is 48 in binary? 48 in binary is 110000.
-100 xor 36 is 64.
-what is binary 1101 in decimal? binary 1101 is 13 in decimal.
-чему равно 9 и 5 побитово? 9 и 5 побитово это 1.
-octal 6 is 6 in decimal.
-чему равно 21 или 12 побитово? 21 или 12 побитово это 29.
-25 in hex is 19.
-what is 6 shifted left by 2? 6 shifted left by 2 is 24.
-hex 28 is 40 in decimal.
-50 shifted right by 1 is 25.
-7 в двоичной записи это 111.
-2 сдвинутое влево на 5 это 64.
-100 в шестнадцатеричной записи это 64.
-a byte holds 8 bits and 256 values.
-7 and 3 is 3.
-halfword держит 16 бит и 65536 значений.
-25 or 9 is 25.
-какое число записано цифрой 0 в двоичной? 0: цифра 0 в двоичной записи есть число 0.
-200 in binary is 11001000.
-what is 60 or 15? 60 or 15 is 63.
-binary 100001 is 33 in decimal.
-what is 14 xor 7? 14 xor 7 is 9.
-17 in octal is 21.
-чему равно 31 и 16 побитово? 31 и 16 побитово это 16.
-octal 60 is 48 in decimal.
-чему равно 100 или 36 побитово? 100 или 36 побитово это 100.
-13 in hex is d.
-9 × 4 = 36.
-what is hex 6 in decimal? hex 6 is 6 in decimal.
-what is 88 shifted right by 3? 88 shifted right by 3 is 11.
-чему равно 25 в двоичной записи? 25 в двоичной записи это 11001.
-чему равно 6 сдвинутое влево на 2? 6 сдвинутое влево на 2 это 24.
-чему равно 40 в шестнадцатеричной записи? 40 в шестнадцатеричной записи это 28.
-with 32 bits you can write 4294967296 numbers.
-what is 13 and 6? 13 and 6 is 4.
-100 in binary is 1100100.
-what is 12 or 10? 12 or 10 is 14.
-binary 11111 is 31 in decimal.
-what is 7 xor 3? 7 xor 3 is 4.
-64 in octal is 100.
-чему равно 25 и 9 побитово? 25 и 9 побитово это 9.
-what number is written 3 in binary? none: the digit 3 does not occur in binary.
-what is 200 in octal? 200 in octal is 310.
-60 или 15 побитово это 63.
-what is octal 41 in decimal? octal 41 is 33 in decimal.
-5 shifted left by 3 is 40.
-what is 17 in hex? 17 in hex is 11.
-7 × 2 = 14.
-what is hex 30 in decimal? hex 30 is 48 in decimal.
-what is 48 shifted right by 4? 48 shifted right by 4 is 3.
-13 в шестнадцатеричной записи это d.
-a nibble holds 4 bits and 16 values.
-21 and 12 is 4.
-byte держит 8 бит и 256 значений.
-63 or 21 is 63.
+61 or 16 is 61.
 what is 40 in binary? 40 in binary is 101000.
-40 xor 24 is 48.
+7 xor 6 is 1.
 what is binary 111 in decimal? binary 111 is 7 in decimal.
-13 и 6 побитово это 4.
+25 и 10 побитово это 8.
 what is 100 in octal? 100 in octal is 144.
-12 или 10 побитово это 14.
+67 или 3 побитово это 67.
 what is octal 37 in decimal? octal 37 is 31 in decimal.
-13 shifted left by 2 is 52.
+2 shifted left by 1 is 4.
 what is 64 in hex? 64 in hex is 40.
-5 × 8 = 40.
-какое число записано цифрой 5 в двоичной? такого нет: цифра 5 в двоичной записи не встречается.
-hex c8 is 200 in decimal.
-52 shifted right by 2 is 13.
-33 в двоичной записи это 100001.
-5 сдвинутое влево на 3 это 40.
-17 в шестнадцатеричной записи это 11.
-a halfword holds 16 bits and 65536 values.
-100 and 36 is 36.
-word держит 32 бита и 4294967296 значений.
-what is 9 or 5? 9 or 5 is 13.
-binary 110 is 6 in decimal.
-what is 21 xor 12? 21 xor 12 is 25.
-25 in octal is 31.
-чему равно 63 и 21 побитово? 63 и 21 побитово это 21.
-octal 50 is 40 in decimal.
-чему равно 40 или 24 побитово? 40 или 24 побитово это 56.
-7 in hex is 7.
-what is 2 shifted left by 5? 2 shifted left by 5 is 64.
-hex 64 is 100 in decimal.
-68 shifted right by 2 is 17.
-31 в двоичной записи это 11111.
-13 сдвинутое влево на 2 это 52.
-64 в шестнадцатеричной записи это 40.
+17 × 16 = 272.
+what is hex 12 in decimal? hex 12 is 18 in decimal.
+what is 128 shifted right by 5? 128 shifted right by 5 is 4.
+255 в шестнадцатеричной записи это ff.
 a word holds 32 bits and 4294967296 values.
-what number is written 8 in binary? none: the digit 8 does not occur in binary.
-чему равно 200 в шестнадцатеричной записи? 200 в шестнадцатеричной записи это c8.
-with 4 bits you can write 16 numbers.
-what is 14 and 7? 14 and 7 is 6.
-17 in binary is 10001.
-what is 31 or 16? 31 or 16 is 31.
-binary 110000 is 48 in decimal.
-what is 100 xor 36? 100 xor 36 is 64.
-13 in octal is 15.
-9 или 5 побитово это 13.
-what is octal 6 in decimal? octal 6 is 6 in decimal.
-11 shifted left by 3 is 88.
-what is 25 in hex? 25 in hex is 19.
-6 × 4 = 24.
-what is hex 28 in decimal? hex 28 is 40 in decimal.
-what is 50 shifted right by 1? 50 shifted right by 1 is 25.
-чему равно 7 в двоичной записи? 7 в двоичной записи это 111.
-чему равно 2 сдвинутое влево на 5? 2 сдвинутое влево на 5 это 64.
-чему равно 100 в шестнадцатеричной записи? 100 в шестнадцатеричной записи это 64.
-with 8 bits you can write 256 numbers.
-what is 7 and 3? 7 and 3 is 3.
-64 in binary is 1000000.
-what is 25 or 9? 25 or 9 is 25.
-what number is written 1 in binary? 1: the digit 1 in binary is the number 1.
-what is 200 in binary? 200 in binary is 11001000.
-60 xor 15 is 51.
-what is binary 100001 in decimal? binary 100001 is 33 in decimal.
-14 и 7 побитово это 6.
-what is 17 in octal? 17 in octal is 21.
-31 или 16 побитово это 31.
-what is octal 60 in decimal? octal 60 is 48 in decimal.
-3 shifted left by 4 is 48.
-what is 13 in hex? 13 in hex is d.
-36 shifted right by 2 is 9.
-6 в двоичной записи это 110.
-11 сдвинутое влево на 3 это 88.
-25 в шестнадцатеричной записи это 19.
-a halfword holds 16 bits and 65536 values.
-40 and 24 is 8.
-word держит 32 бита и 4294967296 значений.
-13 or 6 is 15.
-what is 100 in binary? 100 in binary is 1100100.
-12 xor 10 is 6.
-what is binary 11111 in decimal? binary 11111 is 31 in decimal.
-7 и 3 побитово это 3.
-what is 64 in octal? 64 in octal is 100.
-25 или 9 побитово это 25.
-какое число записано цифрой 3 в двоичной? такого нет: цифра 3 в двоичной записи не встречается.
-octal 310 is 200 in decimal.
-чему равно 60 или 15 побитово? 60 или 15 побитово это 63.
-33 in hex is 21.
-what is 5 shifted left by 3? 5 shifted left by 3 is 40.
-hex 11 is 17 in decimal.
-14 shifted right by 1 is 7.
-48 в двоичной записи это 110000.
-3 сдвинутое влево на 4 это 48.
-чему равно 13 в шестнадцатеричной записи? 13 в шестнадцатеричной записи это d.
-with 4 bits you can write 16 numbers.
-what is 21 and 12? 21 and 12 is 4.
-25 in binary is 11001.
-what is 63 or 21? 63 or 21 is 63.
-binary 101000 is 40 in decimal.
-what is 40 xor 24? 40 xor 24 is 48.
-7 in octal is 7.
-чему равно 13 и 6 побитово? 13 и 6 побитово это 4.
-octal 144 is 100 in decimal.
-чему равно 12 или 10 побитово? 12 или 10 побитово это 14.
-31 in hex is 1f.
-what is 13 shifted left by 2? 13 shifted left by 2 is 52.
-hex 40 is 64 in decimal.
-40 shifted right by 3 is 5.
-what number is written 6 in binary? none: the digit 6 does not occur in binary.
-what is hex c8 in decimal? hex c8 is 200 in decimal.
-what is 52 shifted right by 2? 52 shifted right by 2 is 13.
-чему равно 33 в двоичной записи? 33 в двоичной записи это 100001.
-чему равно 5 сдвинутое влево на 3? 5 сдвинутое влево на 3 это 40.
-чему равно 17 в шестнадцатеричной записи? 17 в шестнадцатеричной записи это 11.
-with 16 bits you can write 65536 numbers.
-what is 100 and 36? 100 and 36 is 36.
-13 in binary is 1101.
-9 xor 5 is 12.
-what is binary 110 in decimal? binary 110 is 6 in decimal.
-21 и 12 побитово это 4.
+what is 8 and 6? 8 and 6 is 0.
+9 in binary is 1001.
+what is 14 or 10? 14 or 10 is 14.
+binary 11001000 is 200 in decimal.
+what is 19 xor 3? 19 xor 3 is 16.
+33 in octal is 41.
+чему равно 54 и 9 побитово? 54 и 9 побитово это 0.
+what number is written 3 in binary? none: the digit 3 does not occur in binary.
 what is 25 in octal? 25 in octal is 31.
-63 или 21 побитово это 63.
+61 или 16 побитово это 61.
 what is octal 50 in decimal? octal 50 is 40 in decimal.
-25 shifted left by 1 is 50.
+11 shifted left by 5 is 352.
 what is 7 in hex? 7 in hex is 7.
-2 × 32 = 64.
+6 × 4 = 24.
 what is hex 64 in decimal? hex 64 is 100 in decimal.
-what is 68 shifted right by 2? 68 shifted right by 2 is 17.
+what is 200 shifted right by 3? 200 shifted right by 3 is 25.
 чему равно 31 в двоичной записи? 31 в двоичной записи это 11111.
-чему равно 13 сдвинутое влево на 2? 13 сдвинутое влево на 2 это 52.
+чему равно 2 сдвинутое влево на 1? 2 сдвинутое влево на 1 это 4.
 чему равно 64 в шестнадцатеричной записи? 64 в шестнадцатеричной записи это 40.
+with 8 bits you can write 256 numbers.
+what is 12 and 7? 12 and 7 is 4.
+255 in binary is 11111111.
+23 xor 16 is 7.
+what is binary 1100 in decimal? binary 1100 is 12 in decimal.
+чему равно 8 и 6 побитово? 8 и 6 побитово это 0.
+octal 11 is 9 in decimal.
+чему равно 14 или 10 побитово? 14 или 10 побитово это 14.
+200 in hex is c8.
+what is 3 shifted left by 4? 3 shifted left by 4 is 48.
+hex 21 is 33 in decimal.
+288 shifted right by 5 is 9.
+what number is written 6 in binary? none: the digit 6 does not occur in binary.
+what is hex 19 in decimal? hex 19 is 25 in decimal.
+what is 144 shifted right by 4? 144 shifted right by 4 is 9.
+чему равно 40 в двоичной записи? 40 в двоичной записи это 101000.
+чему равно 11 сдвинутое влево на 5? 11 сдвинутое влево на 5 это 352.
+чему равно 7 в шестнадцатеричной записи? 7 в шестнадцатеричной записи это 7.
+with 16 bits you can write 65536 numbers.
+what is 67 and 3? 67 and 3 is 3.
+31 in binary is 11111.
+what is 19 or 9? 19 or 9 is 27.
+binary 1000000 is 64 in decimal.
+what is 57 xor 15? 57 xor 15 is 54.
+18 in octal is 22.
+чему равно 12 и 7 побитово? 12 и 7 побитово это 4.
+octal 377 is 255 in decimal.
+13 shifted left by 2 is 52.
+what is 12 in hex? 12 in hex is c.
+40 shifted right by 3 is 5.
+9 в двоичной записи это 1001.
+7 сдвинутое влево на 1 это 14.
+200 в шестнадцатеричной записи это c8.
+a halfword holds 16 bits and 65536 values.
+54 and 9 is 0.
+word держит 32 бита и 4294967296 значений.
+what number is written 9 in binary? none: the digit 9 does not occur in binary.
+what is 61 and 16? 61 and 16 is 16.
+40 in binary is 101000.
+what is 7 or 6? 7 or 6 is 7.
+binary 111 is 7 in decimal.
+what is 25 xor 10? 25 xor 10 is 19.
+100 in octal is 144.
+чему равно 67 и 3 побитово? 67 и 3 побитово это 3.
+octal 37 is 31 in decimal.
+чему равно 19 или 9 побитово? 19 или 9 побитово это 27.
+64 in hex is 40.
+what is 17 shifted left by 4? 17 shifted left by 4 is 272.
+hex 12 is 18 in decimal.
+128 shifted right by 5 is 4.
+чему равно 255 в двоичной записи? 255 в двоичной записи это 11111111.
+чему равно 13 сдвинутое влево на 2? 13 сдвинутое влево на 2 это 52.
+8 and 6 is 0.
+nibble держит 4 бита и 16 значений.
+14 or 10 is 14.
+what is 200 in binary? 200 in binary is 11001000.
+19 xor 3 is 16.
+what is binary 100001 in decimal? binary 100001 is 33 in decimal.
+54 и 9 побитово это 0.
+какое число записано цифрой 2 в двоичной? такого нет: цифра 2 в двоичной записи не встречается.
+25 in octal is 31.
+чему равно 61 и 16 побитово? 61 и 16 побитово это 16.
+octal 50 is 40 in decimal.
+чему равно 7 или 6 побитово? 7 или 6 побитово это 7.
+7 in hex is 7.
+what is 6 shifted left by 2? 6 shifted left by 2 is 24.
+hex 64 is 100 in decimal.
+200 shifted right by 3 is 25.
+31 в двоичной записи это 11111.
+2 сдвинутое влево на 1 это 4.
+64 в шестнадцатеричной записи это 40.
+a byte holds 8 bits and 256 values.
+12 and 7 is 4.
+halfword держит 16 бит и 65536 значений.
+what is 23 or 16? 23 or 16 is 23.
+binary 1100 is 12 in decimal.
+8 и 6 побитово это 0.
+what is 9 in octal? 9 in octal is 11.
+14 или 10 побитово это 14.
+what is octal 310 in decimal? octal 310 is 200 in decimal.
+3 shifted left by 4 is 48.
+what is 33 in hex? 33 in hex is 21.
+9 × 32 = 288.
+какое число записано цифрой 5 в двоичной? такого нет: цифра 5 в двоичной записи не встречается.
+hex 19 is 25 in decimal.
+144 shifted right by 4 is 9.
+40 в двоичной записи это 101000.
+11 сдвинутое влево на 5 это 352.
+7 в шестнадцатеричной записи это 7.
+a halfword holds 16 bits and 65536 values.
+67 and 3 is 3.
+word держит 32 бита и 4294967296 значений.
+19 or 9 is 27.
+what is 64 in binary? 64 in binary is 1000000.
+57 xor 15 is 54.
+what is binary 10010 in decimal? binary 10010 is 18 in decimal.
+12 и 7 побитово это 4.
+what is 255 in octal? 255 in octal is 377.
+чему равно 23 или 16 побитово? 23 или 16 побитово это 23.
+12 in hex is c.
+5 × 8 = 40.
+what is hex 9 in decimal? hex 9 is 9 in decimal.
+what is 14 shifted right by 1? 14 shifted right by 1 is 7.
+чему равно 200 в двоичной записи? 200 в двоичной записи это 11001000.
+чему равно 3 сдвинутое влево на 4? 3 сдвинутое влево на 4 это 48.
+чему равно 33 в шестнадцатеричной записи? 33 в шестнадцатеричной записи это 21.
 with 32 bits you can write 4294967296 numbers.
 какое число записано цифрой 8 в двоичной? такого нет: цифра 8 в двоичной записи не встречается.
-60 and 15 is 12.
+61 and 16 is 16.
 nibble держит 4 бита и 16 значений.
-14 or 7 is 15.
-what is 17 in binary? 17 in binary is 10001.
-31 xor 16 is 15.
-what is binary 110000 in decimal? binary 110000 is 48 in decimal.
-100 и 36 побитово это 36.
-what is 13 in octal? 13 in octal is 15.
-чему равно 9 или 5 побитово? 9 или 5 побитово это 13.
-6 in hex is 6.
-what is 11 shifted left by 3? 11 shifted left by 3 is 88.
-hex 19 is 25 in decimal.
-24 shifted right by 2 is 6.
-40 в двоичной записи это 101000.
-25 сдвинутое влево на 1 это 50.
-7 в шестнадцатеричной записи это 7.
-a nibble holds 4 bits and 16 values.
-12 and 10 is 8.
-byte держит 8 бит и 256 значений.
-7 or 3 is 7.
-what is 64 in binary? 64 in binary is 1000000.
-25 xor 9 is 16.
-какое число записано цифрой 1 в двоичной? 1: цифра 1 в двоичной записи есть число 1.
-binary 11001000 is 200 in decimal.
-what is 60 xor 15? 60 xor 15 is 51.
-33 in octal is 41.
-чему равно 14 и 7 побитово? 14 и 7 побитово это 6.
-octal 21 is 17 in decimal.
-чему равно 31 или 16 побитово? 31 или 16 побитово это 31.
-48 in hex is 30.
-what is 3 shifted left by 4? 3 shifted left by 4 is 48.
-hex d is 13 in decimal.
-what is 36 shifted right by 2? 36 shifted right by 2 is 9.
-чему равно 6 в двоичной записи? 6 в двоичной записи это 110.
-чему равно 11 сдвинутое влево на 3? 11 сдвинутое влево на 3 это 88.
-чему равно 25 в шестнадцатеричной записи? 25 в шестнадцатеричной записи это 19.
+7 or 6 is 7.
+what is 7 in binary? 7 in binary is 111.
+25 xor 10 is 19.
+what is binary 1100100 in decimal? binary 1100100 is 100 in decimal.
+67 и 3 побитово это 3.
+what is 31 in octal? 31 in octal is 37.
+19 или 9 побитово это 27.
+what is octal 100 in decimal? octal 100 is 64 in decimal.
+17 shifted left by 4 is 272.
+what is 18 in hex? 18 in hex is 12.
+4 × 32 = 128.
+255 в двоичной записи это 11111111.
+13 сдвинутое влево на 2 это 52.
+чему равно 12 в шестнадцатеричной записи? 12 в шестнадцатеричной записи это c.
+with 4 bits you can write 16 numbers.
+what is 14 and 10? 14 and 10 is 10.
+200 in binary is 11001000.
+what is 19 or 3? 19 or 3 is 19.
+binary 100001 is 33 in decimal.
+what is 54 xor 9? 54 xor 9 is 63.
+what number is written 2 in binary? none: the digit 2 does not occur in binary.
+what is binary 11001 in decimal? binary 11001 is 25 in decimal.
+61 и 16 побитово это 16.
+what is 40 in octal? 40 in octal is 50.
+7 или 6 побитово это 7.
+what is octal 7 in decimal? octal 7 is 7 in decimal.
+6 shifted left by 2 is 24.
+what is 100 in hex? 100 in hex is 64.
+25 × 8 = 200.
+what is hex 1f in decimal? hex 1f is 31 in decimal.
+what is 4 shifted right by 1? 4 shifted right by 1 is 2.
+чему равно 64 в двоичной записи? 64 в двоичной записи это 1000000.
+чему равно 17 сдвинутое влево на 4? 17 сдвинутое влево на 4 это 272.
+чему равно 18 в шестнадцатеричной записи? 18 в шестнадцатеричной записи это 12.
 with 16 bits you can write 65536 numbers.
-what is 40 and 24? 40 and 24 is 8.
+23 or 16 is 23.
+what is 12 in binary? 12 in binary is 1100.
+what is 8 xor 6? 8 xor 6 is 14.
+9 in octal is 11.
+чему равно 14 и 10 побитово? 14 и 10 побитово это 10.
+octal 310 is 200 in decimal.
+чему равно 19 или 3 побитово? 19 или 3 побитово это 19.
+33 in hex is 21.
+what is 9 shifted left by 5? 9 shifted left by 5 is 288.
+what number is written 5 in binary? none: the digit 5 does not occur in binary.
+what is 25 in hex? 25 in hex is 19.
+9 × 16 = 144.
+what is hex 28 in decimal? hex 28 is 40 in decimal.
+what is 352 shifted right by 5? 352 shifted right by 5 is 11.
+чему равно 7 в двоичной записи? 7 в двоичной записи это 111.
+чему равно 6 сдвинутое влево на 2? 6 сдвинутое влево на 2 это 24.
+чему равно 100 в шестнадцатеричной записи? 100 в шестнадцатеричной записи это 64.
+with 32 bits you can write 4294967296 numbers.
+what is 19 and 9? 19 and 9 is 1.
+64 in binary is 1000000.
+what is 57 or 15? 57 or 15 is 63.
+binary 10010 is 18 in decimal.
+what is 12 xor 7? 12 xor 7 is 11.
+255 in octal is 377.
+23 или 16 побитово это 23.
+what is octal 14 in decimal? octal 14 is 12 in decimal.
+what is 5 shifted left by 3? 5 shifted left by 3 is 40.
+hex 9 is 9 in decimal.
+14 shifted right by 1 is 7.
+200 в двоичной записи это 11001000.
+3 сдвинутое влево на 4 это 48.
+33 в шестнадцатеричной записи это 21.
+a word holds 32 bits and 4294967296 values.
+what number is written 8 in binary? none: the digit 8 does not occur in binary.
+чему равно 25 в шестнадцатеричной записи? 25 в шестнадцатеричной записи это 19.
+with 4 bits you can write 16 numbers.
+what is 7 and 6? 7 and 6 is 6.
 7 in binary is 111.
-what is 13 or 6? 13 or 6 is 15.
+what is 25 or 10? 25 or 10 is 27.
 binary 1100100 is 100 in decimal.
-what is 12 xor 10? 12 xor 10 is 6.
+what is 67 xor 3? 67 xor 3 is 64.
 31 in octal is 37.
-чему равно 7 и 3 побитово? 7 и 3 побитово это 3.
+чему равно 19 и 9 побитово? 19 и 9 побитово это 1.
 octal 100 is 64 in decimal.
-чему равно 25 или 9 побитово? 25 или 9 побитово это 25.
-what number is written 4 in binary? none: the digit 4 does not occur in binary.
-what is octal 310 in decimal? octal 310 is 200 in decimal.
-13 shifted left by 2 is 52.
-what is 33 in hex? 33 in hex is 21.
-5 × 8 = 40.
-what is hex 11 in decimal? hex 11 is 17 in decimal.
-what is 14 shifted right by 1? 14 shifted right by 1 is 7.
-чему равно 48 в двоичной записи? 48 в двоичной записи это 110000.
-чему равно 3 сдвинутое влево на 4? 3 сдвинутое влево на 4 это 48.
-9 and 5 is 1.
+чему равно 57 или 15 побитово? 57 или 15 побитово это 63.
+18 in hex is 12.
+what is 4 shifted left by 5? 4 shifted left by 5 is 128.
+hex ff is 255 in decimal.
+what is 52 shifted right by 2? 52 shifted right by 2 is 13.
+12 в шестнадцатеричной записи это c.
+a nibble holds 4 bits and 16 values.
+14 and 10 is 10.
+byte держит 8 бит и 256 значений.
+19 or 3 is 19.
+what is 33 in binary? 33 in binary is 100001.
+54 xor 9 is 63.
+какое число записано цифрой 1 в двоичной? 1: цифра 1 в двоичной записи есть число 1.
+binary 11001 is 25 in decimal.
+what is 61 xor 16? 61 xor 16 is 45.
+40 in octal is 50.
+чему равно 7 и 6 побитово? 7 и 6 побитово это 6.
+octal 7 is 7 in decimal.
+чему равно 25 или 10 побитово? 25 или 10 побитово это 27.
+100 in hex is 64.
+what is 25 shifted left by 3? 25 shifted left by 3 is 200.
+hex 1f is 31 in decimal.
+4 shifted right by 1 is 2.
+64 в двоичной записи это 1000000.
+17 сдвинутое влево на 4 это 272.
+18 в шестнадцатеричной записи это 12.
+a halfword holds 16 bits and 65536 values.
+what is 23 and 16? 23 and 16 is 16.
+12 in binary is 1100.
+8 xor 6 is 14.
+what is binary 1001 in decimal? binary 1001 is 9 in decimal.
+14 и 10 побитово это 10.
+what is 200 in octal? 200 in octal is 310.
+19 или 3 побитово это 19.
+what is octal 41 in decimal? octal 41 is 33 in decimal.
+9 shifted left by 5 is 288.
+какое число записано цифрой 4 в двоичной? такого нет: цифра 4 в двоичной записи не встречается.
+25 in hex is 19.
+what is 9 shifted left by 4? 9 shifted left by 4 is 144.
+hex 28 is 40 in decimal.
+352 shifted right by 5 is 11.
+7 в двоичной записи это 111.
+6 сдвинутое влево на 2 это 24.
+100 в шестнадцатеричной записи это 64.
+a word holds 32 bits and 4294967296 values.
+19 and 9 is 1.
 nibble держит 4 бита и 16 значений.
-21 or 12 is 29.
+57 or 15 is 63.
+what is 18 in binary? 18 in binary is 10010.
+12 xor 7 is 11.
+what is binary 11111111 in decimal? binary 11111111 is 255 in decimal.
+чему равно 23 и 16 побитово? 23 и 16 побитово это 16.
+octal 14 is 12 in decimal.
+5 shifted left by 3 is 40.
+what is 9 in hex? 9 in hex is 9.
+7 × 2 = 14.
+what is hex c8 in decimal? hex c8 is 200 in decimal.
+what is 48 shifted right by 4? 48 shifted right by 4 is 3.
+чему равно 33 в двоичной записи? 33 в двоичной записи это 100001.
+чему равно 9 сдвинутое влево на 5? 9 сдвинутое влево на 5 это 288.
+какое число записано цифрой 7 в двоичной? такого нет: цифра 7 в двоичной записи не встречается.
+25 в шестнадцатеричной записи это 19.
+a nibble holds 4 bits and 16 values.
+7 and 6 is 6.
+byte держит 8 бит и 256 значений.
+25 or 10 is 27.
+what is 100 in binary? 100 in binary is 1100100.
+67 xor 3 is 64.
+what is binary 11111 in decimal? binary 11111 is 31 in decimal.
+19 и 9 побитово это 1.
+what is 64 in octal? 64 in octal is 100.
+57 или 15 побитово это 63.
+what is octal 22 in decimal? octal 22 is 18 in decimal.
+4 shifted left by 5 is 128.
+what is 255 in hex? 255 in hex is ff.
+52 shifted right by 2 is 13.
+чему равно 12 в двоичной записи? 12 в двоичной записи это 1100.
+чему равно 5 сдвинутое влево на 3? 5 сдвинутое влево на 3 это 40.
+чему равно 9 в шестнадцатеричной записи? 9 в шестнадцатеричной записи это 9.
+with 8 bits you can write 256 numbers.
+what is 19 and 3? 19 and 3 is 3.
+33 in binary is 100001.
+what is 54 or 9? 54 or 9 is 63.
+what number is written 1 in binary? 1: the digit 1 in binary is the number 1.
 what is 25 in binary? 25 in binary is 11001.
-63 xor 21 is 42.
+61 xor 16 is 45.
 what is binary 101000 in decimal? binary 101000 is 40 in decimal.
-40 и 24 побитово это 8.
+7 и 6 побитово это 6.
 what is 7 in octal? 7 in octal is 7.
-13 или 6 побитово это 15.
+25 или 10 побитово это 27.
 what is octal 144 in decimal? octal 144 is 100 in decimal.
-17 shifted left by 2 is 68.
+25 shifted left by 3 is 200.
 what is 31 in hex? 31 in hex is 1f.
-13 × 4 = 52.
+2 × 2 = 4.
 what is hex 40 in decimal? hex 40 is 64 in decimal.
-what is 40 shifted right by 3? 40 shifted right by 3 is 5.
+what is 272 shifted right by 4? 272 shifted right by 4 is 17.
+чему равно 18 в двоичной записи? 18 в двоичной записи это 10010.
+чему равно 4 сдвинутое влево на 5? 4 сдвинутое влево на 5 это 128.
+23 and 16 is 16.
+word держит 32 бита и 4294967296 значений.
+what is 8 or 6? 8 or 6 is 14.
+binary 1001 is 9 in decimal.
+what is 14 xor 10? 14 xor 10 is 4.
+200 in octal is 310.
+чему равно 19 и 3 побитово? 19 и 3 побитово это 3.
+octal 41 is 33 in decimal.
+чему равно 54 или 9 побитово? 54 или 9 побитово это 63.
+what number is written 4 in binary? none: the digit 4 does not occur in binary.
+what is octal 31 in decimal? octal 31 is 25 in decimal.
+9 shifted left by 4 is 144.
+what is 40 in hex? 40 in hex is 28.
+11 × 32 = 352.
+what is hex 7 in decimal? hex 7 is 7 in decimal.
+what is 24 shifted right by 2? 24 shifted right by 2 is 6.
+чему равно 100 в двоичной записи? 100 в двоичной записи это 1100100.
+чему равно 25 сдвинутое влево на 3? 25 сдвинутое влево на 3 это 200.
+чему равно 31 в шестнадцатеричной записи? 31 в шестнадцатеричной записи это 1f.
+with 4 bits you can write 16 numbers.
+what is 57 and 15? 57 and 15 is 9.
+18 in binary is 10010.
+what is 12 or 7? 12 or 7 is 15.
+binary 11111111 is 255 in decimal.
+23 и 16 побитово это 16.
+what is 12 in octal? 12 in octal is 14.
+чему равно 8 или 6 побитово? 8 или 6 побитово это 14.
+9 in hex is 9.
+what is 7 shifted left by 1? 7 shifted left by 1 is 14.
+hex c8 is 200 in decimal.
+48 shifted right by 4 is 3.
+33 в двоичной записи это 100001.
+9 сдвинутое влево на 5 это 288.
+what number is written 7 in binary? none: the digit 7 does not occur in binary.
+чему равно 25 в двоичной записи? 25 в двоичной записи это 11001.
+чему равно 9 сдвинутое влево на 4? 9 сдвинутое влево на 4 это 144.
+чему равно 40 в шестнадцатеричной записи? 40 в шестнадцатеричной записи это 28.
+with 8 bits you can write 256 numbers.
+what is 25 and 10? 25 and 10 is 8.
+100 in binary is 1100100.
+what is 67 or 3? 67 or 3 is 67.
+binary 11111 is 31 in decimal.
+what is 19 xor 9? 19 xor 9 is 26.
+64 in octal is 100.
+чему равно 57 и 15 побитово? 57 и 15 побитово это 9.
+octal 22 is 18 in decimal.
+чему равно 12 или 7 побитово? 12 или 7 побитово это 15.
+255 in hex is ff.
+13 × 4 = 52.
+12 в двоичной записи это 1100.
+5 сдвинутое влево на 3 это 40.
+9 в шестнадцатеричной записи это 9.
+a byte holds 8 bits and 256 values.
+19 and 3 is 3.
+halfword держит 16 бит и 65536 значений.
+54 or 9 is 63.
+какое число записано цифрой 0 в двоичной? 0: цифра 0 в двоичной записи есть число 0.
+25 in binary is 11001.
+what is 61 or 16? 61 or 16 is 61.
+binary 101000 is 40 in decimal.
+what is 7 xor 6? 7 xor 6 is 1.
+7 in octal is 7.
+чему равно 25 и 10 побитово? 25 и 10 побитово это 8.
+octal 144 is 100 in decimal.
+чему равно 67 или 3 побитово? 67 или 3 побитово это 67.
+31 in hex is 1f.
+what is 2 shifted left by 1? 2 shifted left by 1 is 4.
+hex 40 is 64 in decimal.
+272 shifted right by 4 is 17.
+18 в двоичной записи это 10010.
+4 сдвинутое влево на 5 это 128.
+чему равно 255 в шестнадцатеричной записи? 255 в шестнадцатеричной записи это ff.
+with 32 bits you can write 4294967296 numbers.
+8 or 6 is 14.
+what is 9 in binary? 9 in binary is 1001.
+14 xor 10 is 4.
+what is binary 11001000 in decimal? binary 11001000 is 200 in decimal.
+19 и 3 побитово это 3.
+what is 33 in octal? 33 in octal is 41.
+54 или 9 побитово это 63.
+какое число записано цифрой 3 в двоичной? такого нет: цифра 3 в двоичной записи не встречается.
+octal 31 is 25 in decimal.
+чему равно 61 или 16 побитово? 61 или 16 побитово это 61.
+40 in hex is 28.
+what is 11 shifted left by 5? 11 shifted left by 5 is 352.
+hex 7 is 7 in decimal.
+24 shifted right by 2 is 6.
+100 в двоичной записи это 1100100.
+25 сдвинутое влево на 3 это 200.
+31 в шестнадцатеричной записи это 1f.
+a nibble holds 4 bits and 16 values.
+57 and 15 is 9.
+byte держит 8 бит и 256 значений.
+12 or 7 is 15.
+what is 255 in binary? 255 in binary is 11111111.
+what is 23 xor 16? 23 xor 16 is 7.
+12 in octal is 14.
+8 или 6 побитово это 14.
+what is octal 11 in decimal? octal 11 is 9 in decimal.
+7 shifted left by 1 is 14.
+what is 200 in hex? 200 in hex is c8.
+3 × 16 = 48.
+what is hex 21 in decimal? hex 21 is 33 in decimal.
+what is 288 shifted right by 5? 288 shifted right by 5 is 9.
 какое число записано цифрой 6 в двоичной? такого нет: цифра 6 в двоичной записи не встречается.

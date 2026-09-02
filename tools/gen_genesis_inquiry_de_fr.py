@@ -65,6 +65,8 @@ import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from layer import emit_grouped  # noqa: E402
+import universals  # noqa: E402
+import paraphrase  # noqa: E402
 
 ЦЕЛЬ = "datasets/genesis_inquiry_de_fr.txt"
 
@@ -151,7 +153,13 @@ def исп_простота(шаг):
                        f"{n // д}.")
             вон.append(f"{n} est-il un nombre premier ? non : {n} = "
                        f"{д} × {n // д}.")
-    return вон
+    return paraphrase.перефразы(вон, ЯЗЫКИ_МИРА, ("prime", "divisible"))
+
+
+# A UNIVERSAL IS ASKED BY ITS OWN «IS IT TRUE THAT» (tools/universals.py):
+# the question of every counterexample and generalization is derived from
+# its statement by the one law of the house, in both languages of the world.
+ЯЗЫКИ_МИРА = ('de', 'fr')
 
 
 def контр_простота(шаг):
@@ -165,7 +173,7 @@ def контр_простота(шаг):
                    f"{n} ist ungerade und {n} = {д} × {n // д}.")
         вон.append(f"tous les nombres impairs sont premiers est faux : "
                    f"{n} est impair et {n} = {д} × {n // д}.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 def общ_простота(шаг):
@@ -177,7 +185,7 @@ def общ_простота(шаг):
                    f"Primzahlen: {n} = {ряд}.")
         вон.append(f"tout nombre entier supérieur à 1 est un produit "
                    f"de nombres premiers : {n} = {ряд}.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 # ----------------------------------------------------------- ДЕЛИМОСТЬ
@@ -223,7 +231,7 @@ def исп_делимость(шаг):
                        f"{r}, Rest {r}.")
             вон.append(f"{a} n'est pas divisible par {b} : {a} = {b} × {q} "
                        f"+ {r}, reste {r}.")
-    return вон
+    return paraphrase.перефразы(вон, ЯЗЫКИ_МИРА, ("prime", "divisible"))
 
 
 def контр_делимость(шаг):
@@ -237,7 +245,7 @@ def контр_делимость(шаг):
                    f"{n} ist gerade und {n} = 4 × {q} + {r}.")
         вон.append(f"tout nombre pair est divisible par 4 est faux : "
                    f"{n} est pair et {n} = 4 × {q} + {r}.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 def общ_делимость(шаг):
@@ -251,7 +259,7 @@ def общ_делимость(шаг):
         вон.append(f"un nombre est divisible par 3 quand la somme de "
                    f"ses chiffres l'est : la somme des chiffres de {n} "
                    f"est {с}, et {с} = 3 × {с // 3}.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 # ------------------------------------------------------ СУММА НЕЧЁТНЫХ
@@ -288,7 +296,7 @@ def контр_нечётные(шаг):
         вон.append(f"la somme des k premiers nombres impairs est "
                    f"2 × k est faux : pour k = {k} la somme est "
                    f"{k * k}, et 2 × {k} = {2 * k}.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 def общ_нечётные(шаг):
@@ -299,7 +307,7 @@ def общ_нечётные(шаг):
                    f"k × k: bei k = {k} ist es {k} × {k} = {k * k}.")
         вон.append(f"la somme des k premiers nombres impairs est "
                    f"k × k : pour k = {k} c'est {k} × {k} = {k * k}.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 # ------------------------------------------------------ УСЛОВНЫЙ ВЫВОД
@@ -345,7 +353,7 @@ def контр_условное(шаг):
                    f"ungerade ist.")
         вон.append(f"si n est pair alors n + {m} est pair est faux : "
                    f"{e} est pair, et {e} + {m} = {s}, qui est impair.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 def общ_условное(шаг):
@@ -360,7 +368,7 @@ def общ_условное(шаг):
         вон.append(f"si n est pair alors n + m est pair exactement "
                    f"quand m est pair : {m} est pair et {e} + {m} = "
                    f"{e + m}, qui est pair.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 # ------------------------------------------------------- ИНЪЕКТИВНОСТЬ
@@ -401,7 +409,7 @@ def контр_инъекция(шаг):
                    f"f(x) = x × 0 schickt {a} und {b} beide auf 0.")
         вон.append(f"toute fonction est injective est faux : "
                    f"f(x) = x × 0 envoie {a} et {b} tous deux sur 0.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 def общ_инъекция(шаг):
@@ -414,7 +422,7 @@ def общ_инъекция(шаг):
         вон.append(f"f(x) = x × k est injective exactement quand k "
                    f"n'est pas 0 : pour k = {k} les entrées 1 et 2 "
                    f"donnent {k} et {2 * k}.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 # ------------------------------------------------------------- КВАДРАТ
@@ -447,7 +455,7 @@ def контр_квадрат(шаг):
                    f"ist.")
         вон.append(f"tout carré est pair est faux : {n} est impair et "
                    f"{n} × {n} = {n * n}, qui est impair.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 def общ_квадрат(шаг):
@@ -462,7 +470,7 @@ def общ_квадрат(шаг):
                    f"{n} × {n} = {n * n}.")
         вон.append(f"le carré d'un nombre {фр} est {фр} : "
                    f"{n} × {n} = {n * n}.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 # ---------------------------------------------------------------- РОДЫ

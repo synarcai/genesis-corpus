@@ -23,6 +23,7 @@ import pathlib
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from layer import emit_grouped  # noqa: E402
+import paraphrase  # noqa: E402
 
 # ИСКОМОЕ ОБЪЯВЛЯЕТ СВОЙ ВОПРОС ОДИН РАЗ, и вопрос берёт те же
 # величины, из которых собран ответ. Замер вопросной поверхности назвал
@@ -90,7 +91,9 @@ def разложение(n):
 def простые(шаг):
     """Простое и составное — каждое со своим свидетельством."""
     вон = []
-    for n in range(2, 30):
+    # МАССА ОТ ПРАВИЛА (М-148): ряд чисел сдвигается проходом — одни и те
+    # же 28 чисел пятью проходами были весом, не массой.
+    for n in range(2 + 28 * шаг, 30 + 28 * шаг):
         if простое(n):
             утв_en = f"{n} is prime; its divisors are 1 and {n}."
             утв_ru = f"{n} простое; его делители — 1 и {n}."
@@ -100,8 +103,14 @@ def простые(шаг):
             утв_ru = f"{n} составное; {n} = {м[0]} × {n // м[0]}."
         вон.append(утв_en)
         вон.append(утв_ru)
-        вон.append(спросить("prime", утв_en, n=n))
-        вон.append(спросить("простое", утв_ru, n=n))
+        # THE VERDICT WORD OPENS THE ANSWER (М-147, holon 03.09: «простое ли #»
+        # answered by the bare statement read as a value, not a verdict).
+        # ПЕРЕФРАЗА — ФОРМА ПАКЕТА (Т-4): вопрос о простоте всеми формами
+        # пакета, ответ один; масса пары ×2.
+        for форма in paraphrase.формы("en", "prime"):
+            вон.append(f"{форма.format(n)} {'yes: ' if простое(n) else 'no: '}{утв_en}")
+        for форма in paraphrase.формы("ru", "prime"):
+            вон.append(f"{форма.format(n)} {'да: ' if простое(n) else 'нет: '}{утв_ru}")
     return вон
 
 
@@ -126,7 +135,7 @@ def ни_то_ни_другое(шаг):
 def разложения(шаг):
     """Всякое число есть произведение простых — и произведение сходится."""
     вон = []
-    for n in range(4, 40):
+    for n in range(4 + 36 * шаг, 40 + 36 * шаг):
         м = разложение(n)
         если = " × ".join(str(x) for x in м)
         утв_en = f"{n} factorises into {если}."
@@ -141,7 +150,7 @@ def разложения(шаг):
 def делители_числа(шаг):
     """Список делителей назван целиком и проверяем целиком."""
     вон = []
-    for n in range(6, 30):
+    for n in range(6 + 24 * шаг, 30 + 24 * шаг):
         если = " ".join(str(d) for d in делители(n))
         утв_en = f"the divisors of {n} are {если}."
         утв_ru = f"делители {n} — это {если}."
