@@ -643,11 +643,11 @@ def общ_отказ(шаг):
 
 # ------------------------------------------------------ ДИСКРИМИНАНТ
 
-ВОПР_ДИСКР = ["what is the discriminant?", "что такое дискриминант?"]
+ВОПР_ДИСКР = ["what is the discriminant of a quadratic?", "что такое дискриминант квадратного уравнения?"]
 ОПР_ДИСКР = [
-    "the discriminant of x^2 + b x + c = 0 is b * b - 4 * c: two roots when "
+    "the discriminant of a quadratic x^2 + b x + c = 0 is b * b - 4 * c: two roots when "
     "it is positive, one root when it is 0, no real root when it is negative.",
-    "дискриминант x^2 + b x + c = 0 есть b * b - 4 * c: два корня, когда он "
+    "дискриминант квадратного уравнения x^2 + b x + c = 0 есть b * b - 4 * c: два корня, когда он "
     "положителен, один корень, когда он 0, и ни одного вещественного, когда "
     "он отрицателен.",
 ]

@@ -426,9 +426,11 @@ def _рассуждение(с):
     ч_ = discourse.части(с, язык)
     if ч_ is None:
         return None
+    вопрос = ч_["вопрос"]
+    if not (ПРОСТОТА_ВОПРОС.match(вопрос) or ДЕЛИМОСТЬ_ВОПРОС.match(вопрос)):
+        return None
     if ч_["связка"] is None:
         return True, False
-    вопрос = ч_["вопрос"]
     м = ПРОСТОТА_ВОПРОС.match(вопрос)
     if м:
         n = int(next(x for x in м.groups() if x))

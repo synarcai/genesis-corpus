@@ -342,11 +342,17 @@ def _семейства():
 ПРАВИЛА = families.правила(СЕМЕЙСТВА_СУДА)
 
 
+import laws  # noqa: E402
+ЗАКОНЫ = laws.свод("mathspaces")
+
+
 def судить(строка):
     """(судимо, истинно) для одной строки."""
     # ВОПРОС СУДИТСЯ СВОИМ ОТВЕТОМ (дом пары): «what is the distance
     # between (1, 2) and (4, 6)? the distance between … is 5: …» — ответ
     # есть то же утверждение, и его судит тот же образец.
+    if строка.strip() in ЗАКОНЫ:
+        return True, True
     если = asking.судить_парой(строка, судить)
     if если is not None:
         return если

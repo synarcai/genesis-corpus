@@ -110,11 +110,11 @@ from genesis import Unreadable, worlds  # noqa: E402
       "remainder.",
       "у уравнения нет целого корня, когда всякое целое значение даёт "
       "остаток.")),
-    (("what is the discriminant?", "что такое дискриминант?"),
-     ("the discriminant of x^2 + b x + c = 0 is b * b - 4 * c: two roots "
+    (("what is the discriminant of a quadratic?", "что такое дискриминант квадратного уравнения?"),
+     ("the discriminant of a quadratic x^2 + b x + c = 0 is b * b - 4 * c: two roots "
       "when it is positive, one root when it is 0, no real root when it is "
       "negative.",
-      "дискриминант x^2 + b x + c = 0 есть b * b - 4 * c: два корня, когда "
+      "дискриминант квадратного уравнения x^2 + b x + c = 0 есть b * b - 4 * c: два корня, когда "
       "он положителен, один корень, когда он 0, и ни одного вещественного, "
       "когда он отрицателен.")),
     (("what is a square root?", "что такое квадратный корень?"),
@@ -745,11 +745,11 @@ def _рассуждение(с):
     ч_ = discourse.части(с, язык)
     if ч_ is None:
         return None
-    if ч_["связка"] is None:
-        return True, False
     м = КОРЕНЬ_ВОПРОС.match(ч_["вопрос"])
     if not м:
         return None
+    if ч_["связка"] is None:
+        return True, False
     г = [x for x in м.groups() if x is not None]
     v, ур = int(г[0]), г[1]
     мм = re.fullmatch(ОСН, ч_["свидетель"])

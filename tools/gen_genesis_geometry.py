@@ -201,8 +201,11 @@ def тела(шаг):
           отказ_гипотенузы, тела)
 
 
+import laws  # noqa: E402
+
+
 def pass_groups(pass_i):
-    return [сделать(pass_i) for сделать in ГРУППЫ]
+    return [сделать(pass_i) for сделать in ГРУППЫ] + [laws.ступень("geometry")]
 
 
 def main():

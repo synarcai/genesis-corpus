@@ -172,6 +172,47 @@ the trace of [3 0 / 0 1] is 4: 3 + 1 = 4.
 matrix [2 0 / 2 1] transposed is not [2 0 / 2 1]: it is [2 2 / 0 1].
 строка 2 матрицы [2 1 / 2 2] — (2, 2).
 
+ребро графа — это пара вершин, которые оно соединяет.
+a path in a graph is a chain of vertices in which each vertex is joined to the next by an edge.
+когда граф связен? граф связен, когда каждая вершина достижима из каждой другой по пути.
+what is the midpoint of a segment? the midpoint of a segment is the point at equal distance from both its ends.
+определитель матрицы 2 на 2 — это произведение её главной диагонали минус произведение другой диагонали.
+a vertex of a graph is one of its points.
+что такое ребро графа? ребро графа — это пара вершин, которые оно соединяет.
+what is a path in a graph? a path in a graph is a chain of vertices in which each vertex is joined to the next by an edge.
+расстояние между двумя точками — это длина отрезка, который их соединяет.
+the trace of a matrix is the sum of its diagonal entries.
+что такое определитель матрицы? определитель матрицы 2 на 2 — это произведение её главной диагонали минус произведение другой диагонали.
+what is a vertex of a graph? a vertex of a graph is one of its points.
+степень вершины — это число рёбер при ней.
+a graph is connected when every vertex is reached from every other vertex by a path.
+что такое расстояние между двумя точками? расстояние между двумя точками — это длина отрезка, который их соединяет.
+what is the trace of a matrix? the trace of a matrix is the sum of its diagonal entries.
+линия плоскости Фано — это тройка её семи точек, и любые две точки лежат ровно на одной линии.
+an edge of a graph is a pair of vertices that it joins.
+что такое степень вершины? степень вершины — это число рёбер при ней.
+when is a graph connected? a graph is connected when every vertex is reached from every other vertex by a path.
+середина отрезка — это точка на равном расстоянии от обоих его концов.
+the determinant of a matrix 2 by 2 is the product of its main diagonal minus the product of its other diagonal.
+что такое линия плоскости Фано? линия плоскости Фано — это тройка её семи точек, и любые две точки лежат ровно на одной линии.
+what is an edge of a graph? an edge of a graph is a pair of vertices that it joins.
+путь в графе — это цепь вершин, в которой каждая вершина соединена ребром со следующей.
+the distance between two points is the length of the segment that joins them.
+что такое середина отрезка? середина отрезка — это точка на равном расстоянии от обоих его концов.
+what is the determinant of a matrix? the determinant of a matrix 2 by 2 is the product of its main diagonal minus the product of its other diagonal.
+вершина графа — это одна из его точек.
+the degree of a vertex is the number of edges at it.
+что такое путь в графе? путь в графе — это цепь вершин, в которой каждая вершина соединена ребром со следующей.
+what is the distance between two points? the distance between two points is the length of the segment that joins them.
+след матрицы — это сумма её диагональных элементов.
+a line of the Fano plane is a triple of its seven points, and any two points lie on exactly one line.
+что такое вершина графа? вершина графа — это одна из его точек.
+what is the degree of a vertex? the degree of a vertex is the number of edges at it.
+граф связен, когда каждая вершина достижима из каждой другой по пути.
+the midpoint of a segment is the point at equal distance from both its ends.
+что такое след матрицы? след матрицы — это сумма её диагональных элементов.
+what is a line of the Fano plane? a line of the Fano plane is a triple of its seven points, and any two points lie on exactly one line.
+
 the midpoint of (0, 3) and (0, 3) is (0, 3): (0 + 0) ÷ 2 = 0 and (3 + 3) ÷ 2 = 3.
 the distance between (4, 2) and (1, −2) is 5: 3² + 4² = 5².
 (−1, 1) shifted by (−2, −1) is not (−2, 0): it is (−3, 0).
@@ -340,6 +381,47 @@ what is row 2 of [3 3 / −2 1]? row 2 of [3 3 / −2 1] is (−2, 1).
 matrix [2 1 / 0 3] transposed is [2 0 / 1 3]: rows become columns.
 матрица [0 2 / −1 4] транспонированная — [0 −1 / 2 4]: строки становятся столбцами.
 матрица [3 2 / −2 4] транспонированная — не [3 2 / −2 4]: это [3 −2 / 2 4].
+
+what is a vertex of a graph? a vertex of a graph is one of its points.
+путь в графе — это цепь вершин, в которой каждая вершина соединена ребром со следующей.
+the midpoint of a segment is the point at equal distance from both its ends.
+что такое определитель матрицы? определитель матрицы 2 на 2 — это произведение её главной диагонали минус произведение другой диагонали.
+what is an edge of a graph? an edge of a graph is a pair of vertices that it joins.
+граф связен, когда каждая вершина достижима из каждой другой по пути.
+the trace of a matrix is the sum of its diagonal entries.
+что такое линия плоскости Фано? линия плоскости Фано — это тройка её семи точек, и любые две точки лежат ровно на одной линии.
+what is the degree of a vertex? the degree of a vertex is the number of edges at it.
+расстояние между двумя точками — это длина отрезка, который их соединяет.
+the determinant of a matrix 2 by 2 is the product of its main diagonal minus the product of its other diagonal.
+что такое вершина графа? вершина графа — это одна из его точек.
+what is a path in a graph? a path in a graph is a chain of vertices in which each vertex is joined to the next by an edge.
+середина отрезка — это точка на равном расстоянии от обоих его концов.
+a line of the Fano plane is a triple of its seven points, and any two points lie on exactly one line.
+что такое ребро графа? ребро графа — это пара вершин, которые оно соединяет.
+when is a graph connected? a graph is connected when every vertex is reached from every other vertex by a path.
+след матрицы — это сумма её диагональных элементов.
+a vertex of a graph is one of its points.
+что такое степень вершины? степень вершины — это число рёбер при ней.
+what is the distance between two points? the distance between two points is the length of the segment that joins them.
+определитель матрицы 2 на 2 — это произведение её главной диагонали минус произведение другой диагонали.
+an edge of a graph is a pair of vertices that it joins.
+что такое путь в графе? путь в графе — это цепь вершин, в которой каждая вершина соединена ребром со следующей.
+what is the midpoint of a segment? the midpoint of a segment is the point at equal distance from both its ends.
+линия плоскости Фано — это тройка её семи точек, и любые две точки лежат ровно на одной линии.
+the degree of a vertex is the number of edges at it.
+когда граф связен? граф связен, когда каждая вершина достижима из каждой другой по пути.
+what is the trace of a matrix? the trace of a matrix is the sum of its diagonal entries.
+вершина графа — это одна из его точек.
+a path in a graph is a chain of vertices in which each vertex is joined to the next by an edge.
+что такое расстояние между двумя точками? расстояние между двумя точками — это длина отрезка, который их соединяет.
+what is the determinant of a matrix? the determinant of a matrix 2 by 2 is the product of its main diagonal minus the product of its other diagonal.
+ребро графа — это пара вершин, которые оно соединяет.
+a graph is connected when every vertex is reached from every other vertex by a path.
+что такое середина отрезка? середина отрезка — это точка на равном расстоянии от обоих его концов.
+what is a line of the Fano plane? a line of the Fano plane is a triple of its seven points, and any two points lie on exactly one line.
+степень вершины — это число рёбер при ней.
+the distance between two points is the length of the segment that joins them.
+что такое след матрицы? след матрицы — это сумма её диагональных элементов.
 
 куда переходит (−4, 3) после поворота на 270° против часовой стрелки вокруг начала координат? (−4, 3) после поворота на 270° против часовой стрелки вокруг начала координат — (3, 4): (x, y) переходит в (y, −x).
 (2, −3) после сдвига на (−1, 1) — не (2, −2): это (1, −2).
@@ -514,6 +596,47 @@ row 1 of [2 2 / −2 1] is (2, 2).
 матрица [2 1 / −2 4] транспонированная — не [2 1 / −2 4]: это [2 −2 / 1 4].
 след матрицы [2 3 / −2 2] — 4: 2 + 2 = 4.
 
+степень вершины — это число рёбер при ней.
+what is the distance between two points? the distance between two points is the length of the segment that joins them.
+что такое определитель матрицы? определитель матрицы 2 на 2 — это произведение её главной диагонали минус произведение другой диагонали.
+the degree of a vertex is the number of edges at it.
+расстояние между двумя точками — это длина отрезка, который их соединяет.
+what is the determinant of a matrix? the determinant of a matrix 2 by 2 is the product of its main diagonal minus the product of its other diagonal.
+что такое ребро графа? ребро графа — это пара вершин, которые оно соединяет.
+the distance between two points is the length of the segment that joins them.
+определитель матрицы 2 на 2 — это произведение её главной диагонали минус произведение другой диагонали.
+what is an edge of a graph? an edge of a graph is a pair of vertices that it joins.
+когда граф связен? граф связен, когда каждая вершина достижима из каждой другой по пути.
+the determinant of a matrix 2 by 2 is the product of its main diagonal minus the product of its other diagonal.
+ребро графа — это пара вершин, которые оно соединяет.
+when is a graph connected? a graph is connected when every vertex is reached from every other vertex by a path.
+что такое след матрицы? след матрицы — это сумма её диагональных элементов.
+an edge of a graph is a pair of vertices that it joins.
+граф связен, когда каждая вершина достижима из каждой другой по пути.
+what is the trace of a matrix? the trace of a matrix is the sum of its diagonal entries.
+что такое вершина графа? вершина графа — это одна из его точек.
+a graph is connected when every vertex is reached from every other vertex by a path.
+след матрицы — это сумма её диагональных элементов.
+what is a vertex of a graph? a vertex of a graph is one of its points.
+что такое путь в графе? путь в графе — это цепь вершин, в которой каждая вершина соединена ребром со следующей.
+the trace of a matrix is the sum of its diagonal entries.
+вершина графа — это одна из его точек.
+what is a path in a graph? a path in a graph is a chain of vertices in which each vertex is joined to the next by an edge.
+что такое середина отрезка? середина отрезка — это точка на равном расстоянии от обоих его концов.
+a vertex of a graph is one of its points.
+путь в графе — это цепь вершин, в которой каждая вершина соединена ребром со следующей.
+what is the midpoint of a segment? the midpoint of a segment is the point at equal distance from both its ends.
+что такое линия плоскости Фано? линия плоскости Фано — это тройка её семи точек, и любые две точки лежат ровно на одной линии.
+a path in a graph is a chain of vertices in which each vertex is joined to the next by an edge.
+середина отрезка — это точка на равном расстоянии от обоих его концов.
+what is a line of the Fano plane? a line of the Fano plane is a triple of its seven points, and any two points lie on exactly one line.
+что такое степень вершины? степень вершины — это число рёбер при ней.
+the midpoint of a segment is the point at equal distance from both its ends.
+линия плоскости Фано — это тройка её семи точек, и любые две точки лежат ровно на одной линии.
+what is the degree of a vertex? the degree of a vertex is the number of edges at it.
+что такое расстояние между двумя точками? расстояние между двумя точками — это длина отрезка, который их соединяет.
+a line of the Fano plane is a triple of its seven points, and any two points lie on exactly one line.
+
 (−3, 4) shifted by (2, 0) is not (0, 4): it is (−1, 4).
 (4, 0) после сдвига на (−1, 2) — (3, 2): (4 + −1, 0 + 2).
 the distance between (−3, 4) and (6, −8) is not 17: it is 15.
@@ -679,6 +802,47 @@ what is column 2 of [0 3 / 0 3]? column 2 of [0 3 / 0 3] is (3, 3).
 [1 3 / −2 3] + [1 2 / 0 −1] = [2 5 / −2 2].
 столбец 1 матрицы [3 0 / −1 4] — (3, −1).
 the determinant of [2 3 / 1 3] is 3: 2 × 3 − 3 × 1 = 3.
+
+an edge of a graph is a pair of vertices that it joins.
+расстояние между двумя точками — это длина отрезка, который их соединяет.
+what is a line of the Fano plane? a line of the Fano plane is a triple of its seven points, and any two points lie on exactly one line.
+что такое путь в графе? путь в графе — это цепь вершин, в которой каждая вершина соединена ребром со следующей.
+the determinant of a matrix 2 by 2 is the product of its main diagonal minus the product of its other diagonal.
+степень вершины — это число рёбер при ней.
+what is the midpoint of a segment? the midpoint of a segment is the point at equal distance from both its ends.
+что такое вершина графа? вершина графа — это одна из его точек.
+the distance between two points is the length of the segment that joins them.
+линия плоскости Фано — это тройка её семи точек, и любые две точки лежат ровно на одной линии.
+what is a path in a graph? a path in a graph is a chain of vertices in which each vertex is joined to the next by an edge.
+что такое след матрицы? след матрицы — это сумма её диагональных элементов.
+the degree of a vertex is the number of edges at it.
+середина отрезка — это точка на равном расстоянии от обоих его концов.
+what is a vertex of a graph? a vertex of a graph is one of its points.
+когда граф связен? граф связен, когда каждая вершина достижима из каждой другой по пути.
+a line of the Fano plane is a triple of its seven points, and any two points lie on exactly one line.
+путь в графе — это цепь вершин, в которой каждая вершина соединена ребром со следующей.
+what is the trace of a matrix? the trace of a matrix is the sum of its diagonal entries.
+что такое ребро графа? ребро графа — это пара вершин, которые оно соединяет.
+the midpoint of a segment is the point at equal distance from both its ends.
+вершина графа — это одна из его точек.
+when is a graph connected? a graph is connected when every vertex is reached from every other vertex by a path.
+что такое определитель матрицы? определитель матрицы 2 на 2 — это произведение её главной диагонали минус произведение другой диагонали.
+a path in a graph is a chain of vertices in which each vertex is joined to the next by an edge.
+след матрицы — это сумма её диагональных элементов.
+what is an edge of a graph? an edge of a graph is a pair of vertices that it joins.
+что такое расстояние между двумя точками? расстояние между двумя точками — это длина отрезка, который их соединяет.
+a vertex of a graph is one of its points.
+граф связен, когда каждая вершина достижима из каждой другой по пути.
+what is the determinant of a matrix? the determinant of a matrix 2 by 2 is the product of its main diagonal minus the product of its other diagonal.
+что такое степень вершины? степень вершины — это число рёбер при ней.
+the trace of a matrix is the sum of its diagonal entries.
+ребро графа — это пара вершин, которые оно соединяет.
+what is the distance between two points? the distance between two points is the length of the segment that joins them.
+что такое линия плоскости Фано? линия плоскости Фано — это тройка её семи точек, и любые две точки лежат ровно на одной линии.
+a graph is connected when every vertex is reached from every other vertex by a path.
+определитель матрицы 2 на 2 — это произведение её главной диагонали минус произведение другой диагонали.
+what is the degree of a vertex? the degree of a vertex is the number of edges at it.
+что такое середина отрезка? середина отрезка — это точка на равном расстоянии от обоих его концов.
 
 (3, −3) shifted by (1, 0) is (4, −3): (3 + 1, −3 + 0).
 (2, 4) shifted by (−1, −2) is (1, 2): (2 + −1, 4 + −2).
@@ -853,3 +1017,44 @@ what is [0 2 / −2 3] + [0 0 / 2 −1]? [0 2 / −2 3] + [0 0 / 2 −1] = [0 2 
 строка 2 матрицы [1 1 / 1 2] — (1, 2).
 след матрицы [−1 3 / 0 4] — не 4: он 3.
 [3 2 / 2 3] · (2, 1) = (8, 7): 3 × 2 + 2 × 1 = 8 and 2 × 2 + 3 × 1 = 7.
+
+a path in a graph is a chain of vertices in which each vertex is joined to the next by an edge.
+что такое след матрицы? след матрицы — это сумма её диагональных элементов.
+what is the degree of a vertex? the degree of a vertex is the number of edges at it.
+след матрицы — это сумма её диагональных элементов.
+the degree of a vertex is the number of edges at it.
+что такое середина отрезка? середина отрезка — это точка на равном расстоянии от обоих его концов.
+what is an edge of a graph? an edge of a graph is a pair of vertices that it joins.
+середина отрезка — это точка на равном расстоянии от обоих его концов.
+an edge of a graph is a pair of vertices that it joins.
+что такое расстояние между двумя точками? расстояние между двумя точками — это длина отрезка, который их соединяет.
+what is a vertex of a graph? a vertex of a graph is one of its points.
+расстояние между двумя точками — это длина отрезка, который их соединяет.
+a vertex of a graph is one of its points.
+когда граф связен? граф связен, когда каждая вершина достижима из каждой другой по пути.
+what is a line of the Fano plane? a line of the Fano plane is a triple of its seven points, and any two points lie on exactly one line.
+граф связен, когда каждая вершина достижима из каждой другой по пути.
+a line of the Fano plane is a triple of its seven points, and any two points lie on exactly one line.
+что такое путь в графе? путь в графе — это цепь вершин, в которой каждая вершина соединена ребром со следующей.
+what is the determinant of a matrix? the determinant of a matrix 2 by 2 is the product of its main diagonal minus the product of its other diagonal.
+путь в графе — это цепь вершин, в которой каждая вершина соединена ребром со следующей.
+the determinant of a matrix 2 by 2 is the product of its main diagonal minus the product of its other diagonal.
+что такое степень вершины? степень вершины — это число рёбер при ней.
+what is the trace of a matrix? the trace of a matrix is the sum of its diagonal entries.
+степень вершины — это число рёбер при ней.
+the trace of a matrix is the sum of its diagonal entries.
+что такое ребро графа? ребро графа — это пара вершин, которые оно соединяет.
+what is the midpoint of a segment? the midpoint of a segment is the point at equal distance from both its ends.
+ребро графа — это пара вершин, которые оно соединяет.
+the midpoint of a segment is the point at equal distance from both its ends.
+что такое вершина графа? вершина графа — это одна из его точек.
+what is the distance between two points? the distance between two points is the length of the segment that joins them.
+вершина графа — это одна из его точек.
+the distance between two points is the length of the segment that joins them.
+что такое линия плоскости Фано? линия плоскости Фано — это тройка её семи точек, и любые две точки лежат ровно на одной линии.
+when is a graph connected? a graph is connected when every vertex is reached from every other vertex by a path.
+линия плоскости Фано — это тройка её семи точек, и любые две точки лежат ровно на одной линии.
+a graph is connected when every vertex is reached from every other vertex by a path.
+что такое определитель матрицы? определитель матрицы 2 на 2 — это произведение её главной диагонали минус произведение другой диагонали.
+what is a path in a graph? a path in a graph is a chain of vertices in which each vertex is joined to the next by an edge.
+определитель матрицы 2 на 2 — это произведение её главной диагонали минус произведение другой диагонали.

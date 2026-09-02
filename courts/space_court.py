@@ -193,9 +193,15 @@ class _М:
     обёртка=lambda мм: _М(tuple(None if г == "" else г for г in мм.groups())))
 
 
+import laws  # noqa: E402
+ЗАКОНЫ = laws.свод("space")
+
+
 def судить(строка):
     """(судимо, истинно) для одной строки."""
     с = строка.strip()
+    if с in ЗАКОНЫ:
+        return True, True
     if "/" not in с or ("#" not in с and "_" not in с):
         return False, False
     for образец, проверить in ПРАВИЛА:

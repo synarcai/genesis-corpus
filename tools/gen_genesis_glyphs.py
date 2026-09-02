@@ -106,8 +106,11 @@ def выражение(шаг, i):
     return [f"{a}+{b}={a + b}", f"{a}×{b}={a * b}", f"{a + b}−{b}={a}"][i % 3]
 
 
+import laws  # noqa: E402
+
+
 def pass_shows(шаг):
-    вон = []
+    вон = list(laws.ступень("glyphs"))
     for k, символ in enumerate(СИМВОЛЫ):
         форма = (шаг + k) % 4
         пара = показ_символа(символ, форма, шаг + k)

@@ -150,9 +150,15 @@ assert sum(len(ф) for _, ф in СЕМЕЙСТВА_СУДА) == len(ОБРАЗЦ
     обёртка=lambda мм: type("М", (), {"groups": lambda self, г=tuple(None if г == "" else г for г in мм.groups()): г})())
 
 
+import laws  # noqa: E402
+ЗАКОНЫ = laws.свод("glyphs")
+
+
 def судить(строка):
     """(судимо, истинно) для одной строки."""
     с = строка.strip()
+    if с in ЗАКОНЫ:
+        return True, True
     if "/" not in с or ("#" not in с and "_" not in с):
         return False, False
     for образец, проверить in ПРАВИЛА:

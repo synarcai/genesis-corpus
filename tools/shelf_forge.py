@@ -111,8 +111,11 @@ class Книга:
     """Объявление одной книги полки — и ничего сверх объявленного."""
 
     def __init__(self, ид, имя, тема, плотность, издано, английский,
-                 заглавие, автор):
+                 заглавие, автор, язык="en"):
         self.ид = ид
+        # ЯЗЫК КНИГИ — ПОЛЕ ОБЪЯВЛЕНИЯ, А НЕ ДОГАДКА ПО ДОРОГЕ: кузница
+        # родилась английской, но Gutenberg отдаёт и немецкий, и латынь.
+        self.язык = язык
         self.имя = имя
         self.тема = тема
         self.плотность = плотность
@@ -386,6 +389,33 @@ class Книга:
     Книга(23100, "demorgan_paradoxes", "логика", "исследование",
           1872, 1872, "A Budget of Paradoxes, Volume I",
           "Augustus De Morgan"),
+    # ПОЛКА НА ЯЗЫКАХ (слово владельца 03.09: все языки с избытком). Год —
+    # год сочинения; «издание» — год текста Gutenberg. Проза и мысль до 1929.
+    Книга(6343, "kant_kritik", "философия познания", "трактат", 1781, 1878, "Kritik der reinen Vernunft", "Immanuel Kant", язык="de"),
+    Книга(6698, "hegel_phaenomenologie", "метафизика", "трактат", 1807, 1907, "Phänomenologie des Geistes", "G. W. F. Hegel", язык="de"),
+    Книга(7205, "nietzsche_zarathustra", "философия", "трактат", 1885, 1904, "Also sprach Zarathustra", "Friedrich Nietzsche", язык="de"),
+    Книга(22367, "kafka_verwandlung", "словесность", "повесть", 1915, 1915, "Die Verwandlung", "Franz Kafka", язык="de"),
+    Книга(5323, "fontane_effi", "словесность", "повесть", 1895, 1895, "Effi Briest", "Theodor Fontane", язык="de"),
+    Книга(9186, "lessing_nathan", "словесность", "стих", 1779, 1779, "Nathan der Weise", "Gotthold Ephraim Lessing", язык="de"),
+    Книга(47804, "schiller_raeuber", "словесность", "повесть", 1781, 1781, "Die Räuber", "Friedrich Schiller", язык="de"),
+    Книга(13846, "descartes_discours", "философия познания", "трактат", 1637, 1637, "Discours de la méthode", "René Descartes", язык="fr"),
+    Книга(4650, "voltaire_candide", "словесность", "повесть", 1759, 1759, "Candide, ou l'optimisme", "Voltaire", язык="fr"),
+    Книга(48529, "montaigne_essais_1", "философия", "исследование", 1580, 1580, "Essais, volume I", "Michel de Montaigne", язык="fr"),
+    Книга(17489, "hugo_miserables_1", "словесность", "повесть", 1862, 1862, "Les misérables, tome I: Fantine", "Victor Hugo", язык="fr"),
+    Книга(14155, "flaubert_bovary", "словесность", "повесть", 1857, 1857, "Madame Bovary", "Gustave Flaubert", язык="fr"),
+    Книга(5711, "zola_germinal", "словесность", "повесть", 1885, 1885, "Germinal", "Émile Zola", язык="fr"),
+    Книга(5097, "verne_vingt_mille", "словесность", "повесть", 1870, 1870, "Vingt mille lieues sous les mers", "Jules Verne", язык="fr"),
+    Книга(2000, "cervantes_quijote", "словесность", "повесть", 1615, 1615, "Don Quijote", "Miguel de Cervantes Saavedra", язык="es"),
+    Книга(17013, "galdos_fortunata", "словесность", "повесть", 1887, 1887, "Fortunata y Jacinta", "Benito Pérez Galdós", язык="es"),
+    Книга(49836, "unamuno_niebla", "словесность", "повесть", 1914, 1914, "Niebla", "Miguel de Unamuno", язык="es"),
+    Книга(45334, "manzoni_promessi", "словесность", "повесть", 1827, 1827, "I promessi sposi", "Alessandro Manzoni", язык="it"),
+    Книга(218, "caesar_gallico_1_4", "история", "исследование", -50, 1914, "De bello Gallico, I–IV", "Gaius Iulius Caesar", язык="la"),
+    Книга(28233, "newton_principia_la", "естествознание", "трактат", 1687, 1687, "Philosophiae Naturalis Principia Mathematica", "Isaac Newton", язык="la"),
+    Книга(55752, "machado_casmurro", "словесность", "повесть", 1899, 1899, "Dom Casmurro", "Machado de Assis", язык="pt"),
+    Книга(11024, "multatuli_havelaar", "словесность", "повесть", 1860, 1860, "Max Havelaar", "Multatuli", язык="nl"),
+    Книга(57052, "strindberg_roda_rummet", "словесность", "повесть", 1879, 1879, "Röda rummet", "August Strindberg", язык="sv"),
+    Книга(11940, "kivi_seitseman", "словесность", "повесть", 1870, 1870, "Seitsemän veljestä", "Aleksis Kivi", язык="fi"),
+    Книга(39476, "plato_politeia_1_el", "философия", "трактат", -375, 1911, "Πολιτεία, τόμος 1", "Πλάτων", язык="el"),
 )
 
 
@@ -687,10 +717,10 @@ def объявление(книга, сдал):
     """Узел манифеста книги Gutenberg — договором полки (shelf_kinds)."""
     return shelf_kinds.объявление_мира(
         имя=ПРИСТАВКА + книга.имя,
-        файл=f"shelf/en/{книга.имя}.txt",
+        файл=f"shelf/{книга.язык}/{книга.имя}.txt",
         жанр=(f"{книга.заглавие} — {книга.автор}; "
-              f"английское издание {книга.английский}"),
-        язык="en", тема=книга.тема, плотность=книга.плотность,
+              f"{'английское издание' if книга.язык == 'en' else 'издание'} {книга.английский}"),
+        язык=книга.язык, тема=книга.тема, плотность=книга.плотность,
         издано=книга.издано, происхождение=f"gutenberg:{книга.ид}",
         судится=сдал)
 
@@ -702,7 +732,7 @@ def вписать_в_манифест(книги):
     м = json.loads(путь.read_text(encoding="utf-8"))
     свои = {}
     for к in книги:
-        файл = КОРЕНЬ / "shelf" / "en" / f"{к.имя}.txt"
+        файл = КОРЕНЬ / "shelf" / к.язык / f"{к.имя}.txt"
         свои[ПРИСТАВКА + к.имя] = объявление(к, читающие(файл))
     # СНЯТИЕ СУДИТСЯ ОБЪЯВЛЕНИЕМ ПОЛКИ, А НЕ ТЕКУЩИМ ОБХОДОМ — И ЭТОТ
     # ШРАМ КУПЛЕН ДОРОГО. Прежде уходил всякий мир полки, не оказавшийся
@@ -791,8 +821,12 @@ def main():
             print(f"  ОТКАЗ {книга.имя}: {беда}")
             continue
         мир, хвост = разрезать(блоки)
-        строк = записать(выход / f"{книга.имя}.txt", мир)
-        отложено = записать(выход / f"{книга.имя}.holdout.txt", хвост)
+        # КАТАЛОГ КНИГИ — ПО ЕЁ ЯЗЫКУ (shelf/<язык>/), если выход не назван.
+        выход_книги = (КОРЕНЬ / "shelf" / книга.язык
+                       if доводы.выход == "shelf/en" else выход)
+        выход_книги.mkdir(parents=True, exist_ok=True)
+        строк = записать(выход_книги / f"{книга.имя}.txt", мир)
+        отложено = записать(выход_книги / f"{книга.имя}.holdout.txt", хвост)
         текст = "\n".join("\n".join(б) for б in мир).lower()
         слов = len(текст.split())
         свои = set(СЛОВО.findall(текст))

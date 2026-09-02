@@ -204,8 +204,11 @@ def производные(шаг):
           отказ_предела, производные)
 
 
+import laws  # noqa: E402
+
+
 def pass_groups(pass_i):
-    return [сделать(pass_i) for сделать in ГРУППЫ]
+    return [сделать(pass_i) for сделать in ГРУППЫ] + [laws.ступень("sequences")]
 
 
 def main():

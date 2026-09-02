@@ -158,8 +158,11 @@ def матрицы(шаг):
 ГРУППЫ = (сложение, длины, отказ_длины, произведения, матрицы)
 
 
+import laws  # noqa: E402
+
+
 def pass_groups(pass_i):
-    return [сделать(pass_i) for сделать in ГРУППЫ]
+    return [сделать(pass_i) for сделать in ГРУППЫ] + [laws.ступень("linalg")]
 
 
 def main():

@@ -643,7 +643,7 @@
       "boundary": [
         "whole_only"
       ],
-      "size": 222856,
+      "size": 238371,
       "tiers": [],
       "text": "shows",
       "assemblies": [
@@ -684,7 +684,7 @@
       "boundary": [
         "unnamed"
       ],
-      "size": 371894,
+      "size": 385969,
       "tiers": [],
       "text": "shows",
       "assemblies": [
@@ -704,7 +704,7 @@
       "boundary": [
         "exact_only"
       ],
-      "size": 318959,
+      "size": 327904,
       "tiers": [],
       "text": "shows",
       "assemblies": [
@@ -724,7 +724,7 @@
       "boundary": [
         "exact_only"
       ],
-      "size": 215601,
+      "size": 221416,
       "tiers": [],
       "text": "shows",
       "assemblies": [
@@ -861,7 +861,7 @@
       "boundary": [
         "whole_only"
       ],
-      "size": 108796,
+      "size": 110116,
       "tiers": [],
       "text": "shows",
       "assemblies": [
@@ -1404,7 +1404,7 @@
       "boundary": [
         "whole_only"
       ],
-      "size": 276567,
+      "size": 276770,
       "tiers": [],
       "text": "shows",
       "assemblies": [
@@ -1554,7 +1554,7 @@
       "boundary": [
         "whole_only"
       ],
-      "size": 186737,
+      "size": 187650,
       "tiers": [],
       "text": "shows",
       "assemblies": [
@@ -1578,7 +1578,7 @@
       "boundary": [
         "whole_only"
       ],
-      "size": 260671,
+      "size": 261714,
       "tiers": [],
       "text": "shows"
     },
@@ -3179,10 +3179,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 10847088,
+      "size": 10953989,
       "tiers": [],
       "text": "mix",
-      "lines": 173588
+      "lines": 174250
     },
     {
       "name": "full",
@@ -3197,10 +3197,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 15077488,
+      "size": 15185432,
       "tiers": [],
       "text": "mix",
-      "lines": 244118
+      "lines": 244780
     },
     {
       "name": "selfmeasure",
@@ -3239,7 +3239,7 @@
       "boundary": [
         "declared_pairs_only"
       ],
-      "size": 214048,
+      "size": 218083,
       "tiers": [],
       "text": "shows",
       "assemblies": [
@@ -3262,7 +3262,7 @@
       "boundary": [
         "exact_only"
       ],
-      "size": 210611,
+      "size": 231786,
       "tiers": [],
       "text": "shows",
       "assemblies": [
@@ -3307,7 +3307,7 @@
       "boundary": [
         "exact_only"
       ],
-      "size": 82283,
+      "size": 106573,
       "tiers": [],
       "text": "shows",
       "assemblies": [
@@ -3328,7 +3328,7 @@
       "boundary": [
         "exact_only"
       ],
-      "size": 319236,
+      "size": 329181,
       "tiers": [],
       "text": "shows",
       "assemblies": [
@@ -3378,7 +3378,7 @@
       "boundary": [
         "unnamed"
       ],
-      "size": 638076,
+      "size": 638746,
       "tiers": [
         "t5_definitions"
       ],
@@ -4976,6 +4976,1417 @@
       "происхождение": "wikisource-ru:categories:ЭСБЕ:Физиология;ЭСБЕ:Психиатрия",
       "held_out": "shelf/ru/esbe_physiology_ru.holdout.txt",
       "судится": []
+    },
+    {
+      "name": "gutenberg_caesar_gallico_1_4",
+      "file": "shelf/la/caesar_gallico_1_4.txt",
+      "genre": "De bello Gallico, I–IV — Gaius Iulius Caesar; издание 1914",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "история",
+      "язык": "la",
+      "плотность": "исследование",
+      "издано": -50,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:218",
+      "held_out": "shelf/la/caesar_gallico_1_4.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_cervantes_quijote",
+      "file": "shelf/es/cervantes_quijote.txt",
+      "genre": "Don Quijote — Miguel de Cervantes Saavedra; издание 1615",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "es",
+      "плотность": "повесть",
+      "издано": 1615,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:2000",
+      "held_out": "shelf/es/cervantes_quijote.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_descartes_discours",
+      "file": "shelf/fr/descartes_discours.txt",
+      "genre": "Discours de la méthode — René Descartes; издание 1637",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "философия познания",
+      "язык": "fr",
+      "плотность": "трактат",
+      "издано": 1637,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:13846",
+      "held_out": "shelf/fr/descartes_discours.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_flaubert_bovary",
+      "file": "shelf/fr/flaubert_bovary.txt",
+      "genre": "Madame Bovary — Gustave Flaubert; издание 1857",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "fr",
+      "плотность": "повесть",
+      "издано": 1857,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:14155",
+      "held_out": "shelf/fr/flaubert_bovary.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_fontane_effi",
+      "file": "shelf/de/fontane_effi.txt",
+      "genre": "Effi Briest — Theodor Fontane; издание 1895",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "de",
+      "плотность": "повесть",
+      "издано": 1895,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:5323",
+      "held_out": "shelf/de/fontane_effi.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_galdos_fortunata",
+      "file": "shelf/es/galdos_fortunata.txt",
+      "genre": "Fortunata y Jacinta — Benito Pérez Galdós; издание 1887",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "es",
+      "плотность": "повесть",
+      "издано": 1887,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:17013",
+      "held_out": "shelf/es/galdos_fortunata.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_hegel_phaenomenologie",
+      "file": "shelf/de/hegel_phaenomenologie.txt",
+      "genre": "Phänomenologie des Geistes — G. W. F. Hegel; издание 1907",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "метафизика",
+      "язык": "de",
+      "плотность": "трактат",
+      "издано": 1807,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:6698",
+      "held_out": "shelf/de/hegel_phaenomenologie.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_hugo_miserables_1",
+      "file": "shelf/fr/hugo_miserables_1.txt",
+      "genre": "Les misérables, tome I: Fantine — Victor Hugo; издание 1862",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "fr",
+      "плотность": "повесть",
+      "издано": 1862,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:17489",
+      "held_out": "shelf/fr/hugo_miserables_1.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_kafka_verwandlung",
+      "file": "shelf/de/kafka_verwandlung.txt",
+      "genre": "Die Verwandlung — Franz Kafka; издание 1915",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "de",
+      "плотность": "повесть",
+      "издано": 1915,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:22367",
+      "held_out": "shelf/de/kafka_verwandlung.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_kant_kritik",
+      "file": "shelf/de/kant_kritik.txt",
+      "genre": "Kritik der reinen Vernunft — Immanuel Kant; издание 1878",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "философия познания",
+      "язык": "de",
+      "плотность": "трактат",
+      "издано": 1781,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:6343",
+      "held_out": "shelf/de/kant_kritik.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_kivi_seitseman",
+      "file": "shelf/fi/kivi_seitseman.txt",
+      "genre": "Seitsemän veljestä — Aleksis Kivi; издание 1870",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "fi",
+      "плотность": "повесть",
+      "издано": 1870,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:11940",
+      "held_out": "shelf/fi/kivi_seitseman.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_lessing_nathan",
+      "file": "shelf/de/lessing_nathan.txt",
+      "genre": "Nathan der Weise — Gotthold Ephraim Lessing; издание 1779",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "de",
+      "плотность": "стих",
+      "издано": 1779,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:9186",
+      "held_out": "shelf/de/lessing_nathan.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_machado_casmurro",
+      "file": "shelf/pt/machado_casmurro.txt",
+      "genre": "Dom Casmurro — Machado de Assis; издание 1899",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "pt",
+      "плотность": "повесть",
+      "издано": 1899,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:55752",
+      "held_out": "shelf/pt/machado_casmurro.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_manzoni_promessi",
+      "file": "shelf/it/manzoni_promessi.txt",
+      "genre": "I promessi sposi — Alessandro Manzoni; издание 1827",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "it",
+      "плотность": "повесть",
+      "издано": 1827,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:45334",
+      "held_out": "shelf/it/manzoni_promessi.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_montaigne_essais_1",
+      "file": "shelf/fr/montaigne_essais_1.txt",
+      "genre": "Essais, volume I — Michel de Montaigne; издание 1580",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "философия",
+      "язык": "fr",
+      "плотность": "исследование",
+      "издано": 1580,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:48529",
+      "held_out": "shelf/fr/montaigne_essais_1.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_multatuli_havelaar",
+      "file": "shelf/nl/multatuli_havelaar.txt",
+      "genre": "Max Havelaar — Multatuli; издание 1860",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "nl",
+      "плотность": "повесть",
+      "издано": 1860,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:11024",
+      "held_out": "shelf/nl/multatuli_havelaar.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_newton_principia_la",
+      "file": "shelf/la/newton_principia_la.txt",
+      "genre": "Philosophiae Naturalis Principia Mathematica — Isaac Newton; издание 1687",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "естествознание",
+      "язык": "la",
+      "плотность": "трактат",
+      "издано": 1687,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:28233",
+      "held_out": "shelf/la/newton_principia_la.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_nietzsche_zarathustra",
+      "file": "shelf/de/nietzsche_zarathustra.txt",
+      "genre": "Also sprach Zarathustra — Friedrich Nietzsche; издание 1904",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "философия",
+      "язык": "de",
+      "плотность": "трактат",
+      "издано": 1885,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:7205",
+      "held_out": "shelf/de/nietzsche_zarathustra.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_plato_politeia_1_el",
+      "file": "shelf/el/plato_politeia_1_el.txt",
+      "genre": "Πολιτεία, τόμος 1 — Πλάτων; издание 1911",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "философия",
+      "язык": "el",
+      "плотность": "трактат",
+      "издано": -375,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:39476",
+      "held_out": "shelf/el/plato_politeia_1_el.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_schiller_raeuber",
+      "file": "shelf/de/schiller_raeuber.txt",
+      "genre": "Die Räuber — Friedrich Schiller; издание 1781",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "de",
+      "плотность": "повесть",
+      "издано": 1781,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:47804",
+      "held_out": "shelf/de/schiller_raeuber.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_strindberg_roda_rummet",
+      "file": "shelf/sv/strindberg_roda_rummet.txt",
+      "genre": "Röda rummet — August Strindberg; издание 1879",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "sv",
+      "плотность": "повесть",
+      "издано": 1879,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:57052",
+      "held_out": "shelf/sv/strindberg_roda_rummet.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_unamuno_niebla",
+      "file": "shelf/es/unamuno_niebla.txt",
+      "genre": "Niebla — Miguel de Unamuno; издание 1914",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "es",
+      "плотность": "повесть",
+      "издано": 1914,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:49836",
+      "held_out": "shelf/es/unamuno_niebla.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_verne_vingt_mille",
+      "file": "shelf/fr/verne_vingt_mille.txt",
+      "genre": "Vingt mille lieues sous les mers — Jules Verne; издание 1870",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "fr",
+      "плотность": "повесть",
+      "издано": 1870,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:5097",
+      "held_out": "shelf/fr/verne_vingt_mille.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_voltaire_candide",
+      "file": "shelf/fr/voltaire_candide.txt",
+      "genre": "Candide, ou l'optimisme — Voltaire; издание 1759",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "fr",
+      "плотность": "повесть",
+      "издано": 1759,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:4650",
+      "held_out": "shelf/fr/voltaire_candide.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_zola_germinal",
+      "file": "shelf/fr/zola_germinal.txt",
+      "genre": "Germinal — Émile Zola; издание 1885",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "fr",
+      "плотность": "повесть",
+      "издано": 1885,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:5711",
+      "held_out": "shelf/fr/zola_germinal.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "pushkin_pikovaya_ru",
+      "file": "shelf/ru/pushkin_pikovaya_ru.txt",
+      "genre": "Пушкин, Александр Сергеевич, «Пиковая дама (1834)» (1834): словарь постатейно с Викитеки",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 79131,
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "ru",
+      "плотность": "повесть",
+      "издано": 1834,
+      "источник": "public-domain",
+      "происхождение": "wikisource-ru:prefix:",
+      "held_out": "shelf/ru/pushkin_pikovaya_ru.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "pushkin_kapitanskaya_ru",
+      "file": "shelf/ru/pushkin_kapitanskaya_ru.txt",
+      "genre": "Пушкин, Александр Сергеевич, «Капитанская дочка (1836)» (1836): словарь постатейно с Викитеки",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 757125,
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "ru",
+      "плотность": "повесть",
+      "издано": 1836,
+      "источник": "public-domain",
+      "происхождение": "wikisource-ru:prefix:Капитанская дочка (Пушкин)/",
+      "held_out": "shelf/ru/pushkin_kapitanskaya_ru.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "pushkin_belkin_ru",
+      "file": "shelf/ru/pushkin_belkin_ru.txt",
+      "genre": "Пушкин, Александр Сергеевич, «Повести Белкина (1831)» (1831): словарь постатейно с Викитеки",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 220596,
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "ru",
+      "плотность": "повесть",
+      "издано": 1831,
+      "источник": "public-domain",
+      "происхождение": "wikisource-ru:prefix:Повести покойного Ивана Петровича Белкина (Пушкин)/",
+      "held_out": "shelf/ru/pushkin_belkin_ru.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gogol_dushi_ru",
+      "file": "shelf/ru/gogol_dushi_ru.txt",
+      "genre": "Гоголь, Николай Васильевич, «Мёртвые души (1842)» (1842): словарь постатейно с Викитеки",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 1265398,
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "ru",
+      "плотность": "повесть",
+      "издано": 1842,
+      "источник": "public-domain",
+      "происхождение": "wikisource-ru:prefix:Мёртвые души (Гоголь)/",
+      "held_out": "shelf/ru/gogol_dushi_ru.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gogol_shinel_ru",
+      "file": "shelf/ru/gogol_shinel_ru.txt",
+      "genre": "Гоголь, Николай Васильевич, «Шинель (1842)» (1842): словарь постатейно с Викитеки",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 219664,
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "ru",
+      "плотность": "повесть",
+      "издано": 1842,
+      "источник": "public-domain",
+      "происхождение": "wikisource-ru:prefix:Шинель (Гоголь)/",
+      "held_out": "shelf/ru/gogol_shinel_ru.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "lermontov_geroy_ru",
+      "file": "shelf/ru/lermontov_geroy_ru.txt",
+      "genre": "Лермонтов, Михаил Юрьевич, «Герой нашего времени (1840)» (1840): словарь постатейно с Викитеки",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 910910,
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "ru",
+      "плотность": "повесть",
+      "издано": 1840,
+      "источник": "public-domain",
+      "происхождение": "wikisource-ru:prefix:Герой нашего времени (Лермонтов)/",
+      "held_out": "shelf/ru/lermontov_geroy_ru.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "turgenev_otcy_ru",
+      "file": "shelf/ru/turgenev_otcy_ru.txt",
+      "genre": "Тургенев, Иван Сергеевич, «Отцы и дети (1862)» (1862): словарь постатейно с Викитеки",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 1223662,
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "ru",
+      "плотность": "повесть",
+      "издано": 1862,
+      "источник": "public-domain",
+      "происхождение": "wikisource-ru:prefix:Отцы и дети (Тургенев)/",
+      "held_out": "shelf/ru/turgenev_otcy_ru.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "dostoevsky_karamazovy_ru",
+      "file": "shelf/ru/dostoevsky_karamazovy_ru.txt",
+      "genre": "Достоевский, Фёдор Михайлович, «Братья Карамазовы (1880)» (1880): словарь постатейно с Викитеки",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 3203716,
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "ru",
+      "плотность": "повесть",
+      "издано": 1880,
+      "источник": "public-domain",
+      "происхождение": "wikisource-ru:prefix:Братья Карамазовы (Достоевский)/",
+      "held_out": "shelf/ru/dostoevsky_karamazovy_ru.holdout.txt",
+      "судится": [
+        "prosetree"
+      ]
+    },
+    {
+      "name": "dostoevsky_idiot_ru",
+      "file": "shelf/ru/dostoevsky_idiot_ru.txt",
+      "genre": "Достоевский, Фёдор Михайлович, «Идиот (1869)» (1869): словарь постатейно с Викитеки",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 2240880,
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "ru",
+      "плотность": "повесть",
+      "издано": 1869,
+      "источник": "public-domain",
+      "происхождение": "wikisource-ru:prefix:Идиот (Достоевский)/",
+      "held_out": "shelf/ru/dostoevsky_idiot_ru.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "dostoevsky_besy_ru",
+      "file": "shelf/ru/dostoevsky_besy_ru.txt",
+      "genre": "Достоевский, Фёдор Михайлович, «Бесы (1872)» (1872): словарь постатейно с Викитеки",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 2281487,
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "ru",
+      "плотность": "повесть",
+      "издано": 1872,
+      "источник": "public-domain",
+      "происхождение": "wikisource-ru:prefix:Бесы (Достоевский)/",
+      "held_out": "shelf/ru/dostoevsky_besy_ru.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "goncharov_oblomov_ru",
+      "file": "shelf/ru/goncharov_oblomov_ru.txt",
+      "genre": "Гончаров, Иван Александрович, «Обломов (1859)» (1859): словарь постатейно с Викитеки",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 3806657,
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "ru",
+      "плотность": "повесть",
+      "издано": 1859,
+      "источник": "public-domain",
+      "происхождение": "wikisource-ru:prefix:Обломов (Гончаров)/",
+      "held_out": "shelf/ru/goncharov_oblomov_ru.holdout.txt",
+      "судится": [
+        "prosetree"
+      ]
+    },
+    {
+      "name": "saltykov_golovlevy_ru",
+      "file": "shelf/ru/saltykov_golovlevy_ru.txt",
+      "genre": "Салтыков-Щедрин, Михаил Евграфович, «Господа Головлёвы (1880)» (1880): словарь постатейно с Викитеки",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 1005640,
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "ru",
+      "плотность": "повесть",
+      "издано": 1880,
+      "источник": "public-domain",
+      "происхождение": "wikisource-ru:prefix:Господа Головлёвы (Салтыков-Щедрин)/",
+      "held_out": "shelf/ru/saltykov_golovlevy_ru.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "saltykov_gorod_ru",
+      "file": "shelf/ru/saltykov_gorod_ru.txt",
+      "genre": "Салтыков-Щедрин, Михаил Евграфович, «История одного города (1870)» (1870): словарь постатейно с Викитеки",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 1708169,
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "ru",
+      "плотность": "повесть",
+      "издано": 1870,
+      "источник": "public-domain",
+      "происхождение": "wikisource-ru:prefix:История одного города (Салтыков-Щедрин)/",
+      "held_out": "shelf/ru/saltykov_gorod_ru.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "leskov_levsha_ru",
+      "file": "shelf/ru/leskov_levsha_ru.txt",
+      "genre": "Лесков, Николай Семёнович, «Левша (1881)» (1881): словарь постатейно с Викитеки",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 97212,
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "ru",
+      "плотность": "повесть",
+      "издано": 1881,
+      "источник": "public-domain",
+      "происхождение": "wikisource-ru:prefix:Левша (Лесков)/",
+      "held_out": "shelf/ru/leskov_levsha_ru.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "chekhov_dama_ru",
+      "file": "shelf/ru/chekhov_dama_ru.txt",
+      "genre": "Чехов, Антон Павлович, «Дама с собачкой (1899)» (1899): словарь постатейно с Викитеки",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 53028,
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "ru",
+      "плотность": "повесть",
+      "издано": 1899,
+      "источник": "public-domain",
+      "происхождение": "wikisource-ru:prefix:",
+      "held_out": "shelf/ru/chekhov_dama_ru.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "chekhov_vishnevy_ru",
+      "file": "shelf/ru/chekhov_vishnevy_ru.txt",
+      "genre": "Чехов, Антон Павлович, «Вишнёвый сад (1904)» (1904): словарь постатейно с Викитеки",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 102073,
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "ru",
+      "плотность": "повесть",
+      "издано": 1904,
+      "источник": "public-domain",
+      "происхождение": "wikisource-ru:prefix:Вишнёвый сад (Чехов)/",
+      "held_out": "shelf/ru/chekhov_vishnevy_ru.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "karamzin_liza_ru",
+      "file": "shelf/ru/karamzin_liza_ru.txt",
+      "genre": "Карамзин, Николай Михайлович, «Бедная Лиза (1792)» (1792): словарь постатейно с Викитеки",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 53652,
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "ru",
+      "плотность": "повесть",
+      "издано": 1792,
+      "источник": "public-domain",
+      "происхождение": "wikisource-ru:prefix:",
+      "held_out": "shelf/ru/karamzin_liza_ru.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "bunin_sanfrancisco_ru",
+      "file": "shelf/ru/bunin_sanfrancisco_ru.txt",
+      "genre": "Бунин, Иван Алексеевич, «Господин из Сан-Франциско (1915)» (1915): словарь постатейно с Викитеки",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 73483,
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "ru",
+      "плотность": "повесть",
+      "издано": 1915,
+      "источник": "public-domain",
+      "происхождение": "wikisource-ru:prefix:",
+      "held_out": "shelf/ru/bunin_sanfrancisco_ru.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "kuprin_braslet_ru",
+      "file": "shelf/ru/kuprin_braslet_ru.txt",
+      "genre": "Куприн, Александр Иванович, «Гранатовый браслет (1911)» (1911): словарь постатейно с Викитеки",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 315120,
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "ru",
+      "плотность": "повесть",
+      "издано": 1911,
+      "источник": "public-domain",
+      "происхождение": "wikisource-ru:prefix:Гранатовый браслет (Куприн)/",
+      "held_out": "shelf/ru/kuprin_braslet_ru.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "kuprin_poedinok_ru",
+      "file": "shelf/ru/kuprin_poedinok_ru.txt",
+      "genre": "Куприн, Александр Иванович, «Поединок (1905)» (1905): словарь постатейно с Викитеки",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 1506595,
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "ru",
+      "плотность": "повесть",
+      "издано": 1905,
+      "источник": "public-domain",
+      "происхождение": "wikisource-ru:prefix:Поединок (Куприн)/",
+      "held_out": "shelf/ru/kuprin_poedinok_ru.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gorky_detstvo_ru",
+      "file": "shelf/ru/gorky_detstvo_ru.txt",
+      "genre": "Горький, Максим, «Детство (1913)» (1913): словарь постатейно с Викитеки",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 1156071,
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "ru",
+      "плотность": "повесть",
+      "издано": 1913,
+      "источник": "public-domain",
+      "происхождение": "wikisource-ru:prefix:Детство (Горький)/",
+      "held_out": "shelf/ru/gorky_detstvo_ru.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "chaadaev_pisma_ru",
+      "file": "shelf/ru/chaadaev_pisma_ru.txt",
+      "genre": "Чаадаев, Пётр Яковлевич, «Философические письма (1836)» (1836): словарь постатейно с Викитеки",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 548382,
+      "tiers": [],
+      "text": "prose",
+      "тема": "философия",
+      "язык": "ru",
+      "плотность": "трактат",
+      "издано": 1836,
+      "источник": "public-domain",
+      "происхождение": "wikisource-ru:prefix:",
+      "held_out": "shelf/ru/chaadaev_pisma_ru.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "berdyaev_tvorchestvo_ru",
+      "file": "shelf/ru/berdyaev_tvorchestvo_ru.txt",
+      "genre": "Бердяев, Николай Александрович, «Смысл творчества (1916)» (1916): словарь постатейно с Викитеки",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 1271535,
+      "tiers": [],
+      "text": "prose",
+      "тема": "философия",
+      "язык": "ru",
+      "плотность": "трактат",
+      "издано": 1916,
+      "источник": "public-domain",
+      "происхождение": "wikisource-ru:prefix:",
+      "held_out": "shelf/ru/berdyaev_tvorchestvo_ru.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "berdyaev_svoboda_ru",
+      "file": "shelf/ru/berdyaev_svoboda_ru.txt",
+      "genre": "Бердяев, Николай Александрович, «Философия свободы (1911)» (1911): словарь постатейно с Викитеки",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 764041,
+      "tiers": [],
+      "text": "prose",
+      "тема": "философия",
+      "язык": "ru",
+      "плотность": "трактат",
+      "издано": 1911,
+      "источник": "public-domain",
+      "происхождение": "wikisource-ru:prefix:",
+      "held_out": "shelf/ru/berdyaev_svoboda_ru.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "rozanov_listya_ru",
+      "file": "shelf/ru/rozanov_listya_ru.txt",
+      "genre": "Розанов, Василий Васильевич, «Опавшие листья (1915)» (1915): словарь постатейно с Викитеки",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 442934,
+      "tiers": [],
+      "text": "prose",
+      "тема": "философия",
+      "язык": "ru",
+      "плотность": "исследование",
+      "издано": 1915,
+      "источник": "public-domain",
+      "происхождение": "wikisource-ru:prefix:",
+      "held_out": "shelf/ru/rozanov_listya_ru.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "ecampus_ju_neuroscience",
+      "file": "shelf/en/ecampus_ju_neuroscience.txt",
+      "genre": "Neuroscience: Canadian 1st Edition Open Textbook, units 2–4: Neurodegeneration; Fundamental Neuroscience Techniques; Emergent Topics in Neuroscience — Dr William Ju; ed. Georgia Bains, Ingrid Barany, Maksym Shcherbina, Summer Lee; eCampusOntario 2018 под CC BY 4.0",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 93133,
+      "tiers": [],
+      "text": "prose",
+      "тема": "нейронаука",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 2018,
+      "источник": "free-license",
+      "происхождение": "pressbooks:https://ecampusontario.pressbooks.pub/neuroscience (CC BY 4.0)",
+      "held_out": "shelf/en/ecampus_ju_neuroscience.holdout.txt",
+      "судится": [],
+      "автор": "Dr William Ju; ed. Georgia Bains, Ingrid Barany, Maksym Shcherbina, Summer Lee"
+    },
+    {
+      "name": "europepmc_cognition_reviews",
+      "file": "shelf/en/europepmc_cognition_reviews.txt",
+      "genre": "Reviews in cognitive neuroscience and consciousness science, 2010–2021 — authors named at each article; Europe PMC (journals named in the query) 2021 под CC BY",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 7372581,
+      "tiers": [],
+      "text": "prose",
+      "тема": "нейронаука",
+      "язык": "en",
+      "плотность": "статья",
+      "издано": 2021,
+      "источник": "free-license",
+      "происхождение": "europepmc:182 articles by query (LICENSE:\"cc by\") AND (OPEN_ACCESS:y) AND (HAS_FT:y) AND (PUB_TYPE:\"review\") AND (FIRST_PDATE:[2010-01-01 TO 2021-12-31]) AND (JOURNAL:\"PLoS Biol\" OR JOURNAL:\"Elife\" OR JOURNAL:\"Philos Trans R Soc Lond B Biol Sci\" OR JOURNAL:\"Neurosci Conscious\" OR JOURNAL:\"Trends Cogn Sci\" OR JOURNAL:\"Neuron\" OR JOURNAL:\"Nat Commun\" OR JOURNAL:\"PLoS Comput Biol\" OR JOURNAL:\"Cortex\" OR JOURNAL:\"Neuroimage\" OR JOURNAL:\"Cognition\" OR JOURNAL:\"Behav Brain Sci\") AND (TITLE:\"consciousness\" OR TITLE:\"conscious\" OR TITLE:\"awareness\" OR TITLE:\"mind\" OR TITLE:\"cognition\" OR TITLE:\"cognitive\" OR TITLE:\"memory\" OR TITLE:\"attention\" OR TITLE:\"perception\" OR TITLE:\"learning\" OR TITLE:\"language\" OR TITLE:\"decision\" OR TITLE:\"representation\" OR TITLE:\"inference\" OR TITLE:\"prediction\" OR TITLE:\"predictive\" OR TITLE:\"brain\" OR TITLE:\"neural\" OR TITLE:\"neuron\") (CC BY)",
+      "held_out": "shelf/en/europepmc_cognition_reviews.holdout.txt",
+      "судится": [],
+      "автор": "authors named at each article"
+    },
+    {
+      "name": "openstax_anatomy_nervous",
+      "file": "shelf/en/openstax_anatomy_nervous.txt",
+      "genre": "Anatomy and Physiology (1st edition, retired), chapters 12–16: The Nervous System and Nervous Tissue; Anatomy of the Nervous System; The Somatic Nervous System; The Autonomic Nervous System; The Neurological Exam — OpenStax, Rice University; senior contributing authors J. Gordon Betts, Peter Desaix, Eddie Johnson, Jody E. Johnson, Oksana Korol, Dean Kruse, Brandon Poe, James A. Wise, Mark Womble, Kelly A. Young; OpenStax 2013 под CC BY 4.0",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 388432,
+      "tiers": [],
+      "text": "prose",
+      "тема": "нейронаука",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 2013,
+      "источник": "free-license",
+      "происхождение": "openstax-archive:14fb4ad7-39a1-4eee-ab6e-3ef2482e3e22@ccce780, https://openstax.org/details/books/anatomy-and-physiology (CC BY 4.0)",
+      "held_out": "shelf/en/openstax_anatomy_nervous.holdout.txt",
+      "судится": [],
+      "автор": "OpenStax, Rice University; senior contributing authors J. Gordon Betts, Peter Desaix, Eddie Johnson, Jody E. Johnson, Oksana Korol, Dean Kruse, Brandon Poe, James A. Wise, Mark Womble, Kelly A. Young"
+    },
+    {
+      "name": "openstax_biology_nervous",
+      "file": "shelf/en/openstax_biology_nervous.txt",
+      "genre": "Biology (1st edition, retired), chapters 35–36: The Nervous System; Sensory Systems — OpenStax, Rice University; senior contributing authors Yael Avissar, Jung Choi, Jean DeSaix, Vladimir Jurukovski, Robert Wise, Connie Rye; OpenStax 2016 под CC BY 4.0",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 125938,
+      "tiers": [],
+      "text": "prose",
+      "тема": "нейронаука",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 2016,
+      "источник": "free-license",
+      "происхождение": "openstax-archive:185cbf87-c72e-48f5-b51e-f14f21b5eabd@e989ec3, https://openstax.org/details/books/biology (CC BY 4.0)",
+      "held_out": "shelf/en/openstax_biology_nervous.holdout.txt",
+      "судится": [],
+      "автор": "OpenStax, Rice University; senior contributing authors Yael Avissar, Jung Choi, Jean DeSaix, Vladimir Jurukovski, Robert Wise, Connie Rye"
+    },
+    {
+      "name": "openstax_psychology",
+      "file": "shelf/en/openstax_psychology.txt",
+      "genre": "Psychology (1st edition, retired) — OpenStax, Rice University; senior contributing authors Rose M. Spielman (content lead), Kathryn Dumper, William Jenkins, Arlene Lacombe, Marilyn Lovett, Marion Perlmutter; OpenStax 2014 под CC BY 4.0",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 1237481,
+      "tiers": [],
+      "text": "prose",
+      "тема": "психология",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 2014,
+      "источник": "free-license",
+      "происхождение": "openstax-archive:4abf04bf-93a0-45c3-9cbc-2cefd46e68cc@8993bfc, https://openstax.org/details/books/psychology (CC BY 4.0)",
+      "held_out": "shelf/en/openstax_psychology.holdout.txt",
+      "судится": [],
+      "автор": "OpenStax, Rice University; senior contributing authors Rose M. Spielman (content lead), Kathryn Dumper, William Jenkins, Arlene Lacombe, Marilyn Lovett, Marion Perlmutter"
+    },
+    {
+      "name": "rebus_epistemology",
+      "file": "shelf/en/rebus_epistemology.txt",
+      "genre": "Introduction to Philosophy: Epistemology — Brian C. Barnett, Brian C. Barnett (Book Editor), Christina Hendricks (Series Editor), Daniel Massey, Guy Axtell, Jonathan Lopez, K. S. Sangeetha, Monica C. Poole, Todd R. Long, William D. Rowley; ed. Brian C. Barnett, Christina Hendricks; Rebus Community 2021 под CC BY 4.0",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 245332,
+      "tiers": [],
+      "text": "prose",
+      "тема": "философия познания",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 2021,
+      "источник": "free-license",
+      "происхождение": "pressbooks:https://press.rebus.community/intro-to-phil-epistemology (CC BY 4.0)",
+      "held_out": "shelf/en/rebus_epistemology.holdout.txt",
+      "судится": [],
+      "автор": "Brian C. Barnett, Brian C. Barnett (Book Editor), Christina Hendricks (Series Editor), Daniel Massey, Guy Axtell, Jonathan Lopez, K. S. Sangeetha, Monica C. Poole, Todd R. Long, William D. Rowley; ed. Brian C. Barnett, Christina Hendricks"
+    },
+    {
+      "name": "rebus_philosophy_of_mind",
+      "file": "shelf/en/rebus_philosophy_of_mind.txt",
+      "genre": "Introduction to Philosophy: Philosophy of Mind — Christina Hendricks (Series Editor), Daniel Haas, Elly Vintiadis, Eran Asoulin, Heather Salazar (Editor), Henry Shevlin, Jason Newman, Paul Richard Blum, Tony Cheng; ed. Heather Salazar, Christina Hendricks; Rebus Community 2019 под CC BY 4.0",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 173578,
+      "tiers": [],
+      "text": "prose",
+      "тема": "философия",
+      "язык": "en",
+      "плотность": "трактат",
+      "издано": 2019,
+      "источник": "free-license",
+      "происхождение": "pressbooks:https://press.rebus.community/intro-to-phil-of-mind (CC BY 4.0)",
+      "held_out": "shelf/en/rebus_philosophy_of_mind.holdout.txt",
+      "судится": [],
+      "автор": "Christina Hendricks (Series Editor), Daniel Haas, Elly Vintiadis, Eran Asoulin, Heather Salazar (Editor), Henry Shevlin, Jason Newman, Paul Richard Blum, Tony Cheng; ed. Heather Salazar, Christina Hendricks"
     }
   ]
 }
