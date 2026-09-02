@@ -79,12 +79,12 @@ def показ_поворота(г, шаг, i):
         return f"сетка {а} после поворота на {угол}° по часовой стрелке — {б}: {S.основание_ru(0)}."
     if форма == 2:
         if чужой == б:
-            return f"what is grid {а} rotated {угол}° clockwise? it is {б}."
+            return f"what is grid {а} rotated {угол}° clockwise? grid {а} rotated {угол}° clockwise is {б}."
         k = S.разница(S.поворот(г, угол), чужой.split("/"))
         return (f"grid {а} rotated {угол}° clockwise is not {чужой}: {S.основание_en(k)}." if i % 2 else
                 f"сетка {а} после поворота на {угол}° по часовой стрелке — не {чужой}: {S.основание_ru(k)}.")
-    return (f"what is grid {а} rotated {угол}° clockwise? it is {б}." if i % 2 else
-            f"какой станет сетка {а} после поворота на {угол}° по часовой стрелке? она станет {б}.")
+    return (f"what is grid {а} rotated {угол}° clockwise? grid {а} rotated {угол}° clockwise is {б}." if i % 2 else
+            f"какой станет сетка {а} после поворота на {угол}° по часовой стрелке? сетка {а} после поворота на {угол}° по часовой стрелке — {б}.")
 
 
 def показ_отражения(г, шаг, i):
@@ -106,8 +106,8 @@ def показ_отражения(г, шаг, i):
         if k:
             return (f"grid {а} reflected {en} is not {чужой}: {S.основание_en(k)}." if i % 2 else
                     f"сетка {а} после отражения {ru} — не {чужой}: {S.основание_ru(k)}.")
-    return (f"what is grid {а} reflected {en}? it is {б}." if i % 2 else
-            f"какой станет сетка {а} после отражения {ru}? она станет {б}.")
+    return (f"what is grid {а} reflected {en}? grid {а} reflected {en} is {б}." if i % 2 else
+            f"какой станет сетка {а} после отражения {ru}? сетка {а} после отражения {ru} — {б}.")
 
 
 def показ_сдвига(г, шаг, i):
@@ -127,8 +127,8 @@ def показ_сдвига(г, шаг, i):
         return f"grid {а} shifted {en} by {k} is {б}."
     if форма == 1:
         return f"сетка {а} после сдвига {ru} на {k} — {б}."
-    return (f"what is grid {а} shifted {en} by {k}? it is {б}." if i % 2 else
-            f"какой станет сетка {а} после сдвига {ru} на {k}? она станет {б}.")
+    return (f"what is grid {а} shifted {en} by {k}? grid {а} shifted {en} by {k} is {б}." if i % 2 else
+            f"какой станет сетка {а} после сдвига {ru} на {k}? сетка {а} после сдвига {ru} на {k} — {б}.")
 
 
 def показ_соседей(г, шаг, i):
@@ -168,8 +168,12 @@ def показ_пути(г, шаг, i):
 
 def показ_счёта(г, шаг, i):
     а, k = S.записать(г), S.закрашено(г)
-    return (f"the number of filled cells in grid {а} is {k}." if (шаг + i) % 2 else
-            f"число закрашенных клеток в сетке {а} — {k}.")
+    # ВОПРОСНАЯ ПОВЕРХНОСТЬ СЧЁТА: ответ — само утверждение.
+    форма = (шаг + i) % 4
+    return [f"the number of filled cells in grid {а} is {k}.",
+            f"число закрашенных клеток в сетке {а} — {k}.",
+            f"how many filled cells does grid {а} have? the number of filled cells in grid {а} is {k}.",
+            f"сколько закрашенных клеток в сетке {а}? число закрашенных клеток в сетке {а} — {k}."][форма]
 
 
 def pass_shows(шаг):
