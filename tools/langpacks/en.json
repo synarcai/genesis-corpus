@@ -1483,5 +1483,22 @@
     "he",
     "she",
     "the"
-  ]
+  ],
+  "quantity_words": {
+    "twice": 2,
+    "double": 2,
+    "doubled": 2,
+    "two times": 2,
+    "thrice": 3,
+    "triple": 3,
+    "tripled": 3,
+    "three times": 3,
+    "quadruple": 4,
+    "quadrupled": 4,
+    "four times": 4,
+    "five times": 5,
+    "six times": 6,
+    "ten times": 10
+  },
+  "quantity_words_comment": "QUANTITY WORDS (03.09, second layer of g1 forms): a multiplicative word names a number and the pair house reads it as that number, in text order with the digits — «was tripled and then reduced by 4» is answered by «7 × 3 − 4 = 17», and the 3 between the question's quantities is the question's own. Shares (half, a quarter) are NOT here: a share is a part, not a count, and its number in the answer is a divisor the word does not name."
 }

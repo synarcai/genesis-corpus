@@ -17,6 +17,7 @@ import sys
 КОРЕНЬ = pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
 import mathspaces as M  # noqa: E402
+import rugram  # noqa: E402
 from layer import emit_grouped  # noqa: E402
 
 ЦЕЛЬ = "datasets/genesis_mathspaces.txt"
@@ -124,8 +125,10 @@ def показы_графов(шаг):
             вон.append(f"степень вершины {v} в графе {текст} — не {d + 1}: она {d}." if ru else
                        f"the degree of {v} in graph {текст} is not {d + 1}: it is {d}.")
         else:
-            вон.append(f"в графе {текст} {len(верш)} вершин." if ru else f"graph {текст} has {len(верш)} vertices.")
-            вон.append(f"в графе {текст} {len(M.рёбра(г))} рёбер." if ru else f"graph {текст} has {len(M.рёбра(г))} edges.")
+            # СЧЁТНАЯ ФОРМА — ДОМА РУССКОГО СЧЁТА (суд родов 03.09: «3 рёбер»
+            # шло мимо суда согласования, ибо форму писал генератор сам).
+            вон.append(f"в графе {текст} {len(верш)} {rugram.форма('вершина', len(верш))}." if ru else f"graph {текст} has {len(верш)} vertices.")
+            вон.append(f"в графе {текст} {len(M.рёбра(г))} {rugram.форма('ребро', len(M.рёбра(г)))}." if ru else f"graph {текст} has {len(M.рёбра(г))} edges.")
         a, b = верш[0], верш[-1]
         п = M.путь(г, a, b)
         if п is None:

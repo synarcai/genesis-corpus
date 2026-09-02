@@ -99,6 +99,12 @@ def main():
         # СЕМЕНА СИРОТ (tools/seeds/, М-126) — тоже сырьё генераторов: без
         # них шесть генераторов во дворе падали, и мера звала это
         # расхождением, хотя пересборка в доме была побайтовой.
+        # ОБЪЯВЛЕНИЯ И ПОЛКА — ТОЖЕ СЫРЬЁ: мир определений читает список
+        # понятий (declarations/CONCEPTS.txt) и словари полки (shelf/);
+        # полка велика и потому не копируется, а зеркалится ссылкой.
+        shutil.copytree(КОРЕНЬ / "declarations", двор / "declarations")
+        if (КОРЕНЬ / "shelf").is_dir():
+            (двор / "shelf").symlink_to(КОРЕНЬ / "shelf", target_is_directory=True)
         for имя in ("langpacks", "langseeds", "seeds"):
             if (КОРЕНЬ / "tools" / имя).is_dir():
                 shutil.copytree(КОРЕНЬ / "tools" / имя,

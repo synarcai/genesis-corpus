@@ -15,6 +15,7 @@
 
   python3 scripts/crystal.py            # лист на экран
   python3 scripts/crystal.py --снимок   # + reports/CRYSTAL-<дата>.md (история не редактируется)
+  python3 scripts/crystal.py --внешнее holon-heldout "HOLDOUT-3: 60/60 wrong=0"   # чужое число с именем прибора
 """
 import collections
 import datetime
@@ -54,6 +55,12 @@ import sys
      "род без вопросной поверхности — диагностика (орган, не корпус)"),
     ("ширина вопроса", "ask_width.py",
      "доля родов с вопросной поверхностью — диагностика"),
+    # ВНЕШНИЕ ЧИСЛА — прибор не наш, число чужое, но с датой и именем
+    # прибора: суд органа обращения (holon) на held-out и рынке поверхностей.
+    ("орган: held-out", "external:holon-heldout",
+     "третья группа held-out при wrong=0 — немота есть свойство организма"),
+    ("орган: поверхности", "external:holon-surfaces",
+     "рынок поверхностей покупает рамки нотаций (глифы, сетки) при wrong=0"),
 )
 ЧИСЛО = re.compile(r"\d[\d ]*")
 
@@ -102,7 +109,21 @@ def лист(записи):
     return строки, итог
 
 
+def внешнее(имя, вердикт):
+    """Вписать чужое число: прибор назван «external:<имя>», дата — сейчас.
+    Так число органа стоит в леджере рядом с нашими, а не в письмах."""
+    ЛЕДЖЕР.parent.mkdir(exist_ok=True)
+    rc = "0" if "PASS" in вердикт or "wrong=0" in вердикт or "wrong 0" in вердикт else "1"
+    with ЛЕДЖЕР.open("a", encoding="utf-8") as поток:
+        поток.write("\t".join([datetime.datetime.now(datetime.timezone.utc)
+                               .strftime("%Y-%m-%dT%H:%M:%SZ"),
+                               f"external:{имя}", rc, вердикт]) + "\n")
+
+
 def main():
+    if "--внешнее" in sys.argv:
+        i = sys.argv.index("--внешнее")
+        внешнее(sys.argv[i + 1], sys.argv[i + 2])
     записи = леджер()
     строки, итог = лист(записи)
     сегодня = datetime.date.today().isoformat()

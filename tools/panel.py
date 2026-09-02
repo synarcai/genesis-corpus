@@ -61,6 +61,12 @@ for _где in (КОРЕНЬ / "courts", КОРЕНЬ / "tools", КОРЕНЬ / 
            "physlaw_court", "compsci_court", "case_court",
            "valence_court", "inquiry_court", "surfaces_court",
            "markdown_court", "doctree_court",
+           # МАНДАТ О ВОПЛОЩЁННОМ ВОСПРИЯТИИ (02–03.09) И ШКОЛЬНЫЕ ФОРМЫ:
+           # суды объявлены здесь, а не только обходом (суд состава
+           # 03.09: семь живых судов без объявления).
+           "glyph_court", "space_court", "stenogram_court",
+           "mathspaces_court", "gsmforms_court", "engram_court",
+           "definitions_court",
            "rates_court", "formula_lang_court",
            "percent_court", "average_court",
            "equation_court", "dataformat_court", "everyday_court",

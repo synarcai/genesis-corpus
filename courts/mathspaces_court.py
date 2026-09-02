@@ -13,7 +13,9 @@ import sys
 
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
+import asking  # noqa: E402
 import mathspaces as M  # noqa: E402
+import rugram  # noqa: E402
 
 Т = M.ТОЧКА.pattern
 Ч = r"(−?\d+)"
@@ -118,7 +120,22 @@ def _счёт_графа(м):
     г, что, k = M.граф(м.group(1)), м.group(2), int(м.group(3))
     if г is None:
         return False
-    ист = len(г) if что in ("vertices", "вершин") else len(M.рёбра(г))
+    # СЛОВО ЧИТАЕТСЯ ФОРМАМИ ДОМА РУССКОГО СЧЁТА, И ФОРМА ПРИ ЧИСЛЕ
+    # СВЕРЯЕТСЯ ТЕМ ЖЕ ДОМОМ (суд родов 03.09: рамку графа суд счёта не
+    # читает, и согласование здесь судит суд пространств сам — он
+    # хозяин рода по делу, а не по имени).
+    if что == "vertices":
+        ист = len(г)
+    elif что == "edges":
+        ист = len(M.рёбра(г))
+    elif что in rugram.СЧЁТНЫЕ["вершина"]:
+        ист = len(г)
+        if что != rugram.форма("вершина", k):
+            return False
+    else:
+        ист = len(M.рёбра(г))
+        if что != rugram.форма("ребро", k):
+            return False
     return ист == k
 
 
@@ -265,7 +282,7 @@ def _строка_столбец(м):
     (rf"^the degree of (\d+) in graph {ГР} is (not )?(\d+): (.+)\.$", _степень),
     (rf"^степень вершины (\d+) в графе {ГР} — (не )?(\d+): (.+)\.$", _степень),
     (rf"^graph {ГР} has (\d+) (vertices|edges)\.$", lambda м: _счёт_графа(type("М", (), {"group": lambda self, i: (м.group(1), м.group(3), м.group(2))[i - 1]})())),
-    (rf"^в графе {ГР} (\d+) (вершин|рёбер)\.$", lambda м: _счёт_графа(type("М", (), {"group": lambda self, i: (м.group(1), м.group(3), м.group(2))[i - 1]})())),
+    (rf"^в графе {ГР} (\d+) (вершин[аы]?|р[её]б(?:ро|ра|ер))\.$", lambda м: _счёт_графа(type("М", (), {"group": lambda self, i: (м.group(1), м.group(3), м.group(2))[i - 1]})())),
     (rf"^graph {ГР} has a path from (\d+) to (\d+) of length (\d+): ([\d-]+)\.$", _путь),
     (rf"^в графе {ГР} есть путь от (\d+) до (\d+) длины (\d+): ([\d-]+)\.$", _путь),
     (rf"^there is no path from (\d+) to (\d+) in graph {ГР}: the edges do not join them\.$",
@@ -300,6 +317,12 @@ def _строка_столбец(м):
 
 def судить(строка):
     """(судимо, истинно) для одной строки."""
+    # ВОПРОС СУДИТСЯ СВОИМ ОТВЕТОМ (дом пары): «what is the distance
+    # between (1, 2) and (4, 6)? the distance between … is 5: …» — ответ
+    # есть то же утверждение, и его судит тот же образец.
+    если = asking.судить_парой(строка, судить)
+    if если is not None:
+        return если
     с = строка.strip()
     if not any(з in с for з in ("(", "graph ", "граф", "Fano", "Фано", "[")):
         return False, False
