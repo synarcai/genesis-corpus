@@ -44,7 +44,11 @@ _RU = json.loads((КОРЕНЬ / "tools" / "langpacks" / "ru.json").read_text(en
 ЖЕН_RU = [n.capitalize() for n, ф in _RU["person_forms"].items() if ф["gender"] == "f"]
 РОД_П = {n.capitalize(): ф["gen"].capitalize() for n, ф in _RU["person_forms"].items()}
 
-ВЕЩИ = (("cookies", "печенье"), ("apples", "яблоко"), ("coins", "монета"), ("stamps", "марка"), ("books", "книга"), ("pens", "ручка"))
+# ≥ 2 ВЕЩИ НА КАЖДЫЙ ГЛАГОЛ (e9 03.09: суд историй требует ≥ 2 актёров и
+# ≥ 2 вещей на глагол): у еды — печенье, яблоки, орехи, конфеты; у денег —
+# монеты, доллары; в руке — марки, книги, ручки, карандаши.
+ВЕЩИ = (("cookies", "печенье"), ("apples", "яблоко"), ("coins", "монета"), ("stamps", "марка"), ("books", "книга"), ("pens", "ручка"),
+        ("nuts", "орех"), ("dollars", "доллар"), ("candies", "конфета"), ("pencils", "карандаш"))
 # THE VERBS OF SVAMP THAT THE SCHOOL LACKED (e9 03.09: «used», «remained»,
 # «spent», «received», «lost», «sold»): every triple is a frame (v1, v2) → v3
 # with its sign; the decrease frames answer both «how many … does X have
