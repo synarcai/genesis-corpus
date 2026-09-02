@@ -2132,6 +2132,65 @@
       ]
     },
     {
+      "name": "relation",
+      "file": "datasets/genesis_relation.txt",
+      "genre": "metalanguage of structure in both languages: hierarchy (a declared tree of 18 nodes — containment, level, path from the root), relations on a finite set with reflexivity, symmetry and transitivity each shown WITH a confirming case and WITH a named witness of violation, transitive closure, equivalence and classes (remainders modulo 3 and 4 on 1..12), correspondence one-to-one and not, order with incomparable elements and no greatest element, connection and path in a directed graph with refusals grounded, and distance as a space; every claim is WALKED by the court, and the oracle of each kind is two opposite walks (level up against depth down, witness against set algebra, remainder buckets against connected pieces, the order rule against reachability over covers, a walk forward against a walk backward)",
+      "size": 354598,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ],
+      "act": [
+        "recount",
+        "name",
+        "decide",
+        "refuse",
+        "invert",
+        "compare",
+        "generalize",
+        "refute"
+      ],
+      "oracle": [
+        "recompute",
+        "declared",
+        "reversibility"
+      ],
+      "boundary": [
+        "whole_only",
+        "exact_only",
+        "unsigned_only"
+      ]
+    },
+    {
+      "name": "metalang",
+      "file": "datasets/genesis_metalang.txt",
+      "genre": "the METALANGUAGE OF PROOF in both tongues, where every word stands at content the court recomputes: a THEOREM with its CONDITION and CONCLUSION named at numbers, a DEFINITION with a case under it and a case refused, an AXIOM taken without proof, a LEMMA shown at work inside the proof it serves, a PROOF as a chain whose every link is recounted, a COROLLARY by reapplying the theorem and by its special case, a HYPOTHESIS with its fate (Euler's n*n+n+41 prime for forty values and dead at the forty-first; Goldbach confirmed by a case and proved by none), and a COUNTEREXAMPLE with the law that a confirming case does not save. The whole world is derived from one pair: a number's kind is (divisor, remainder)",
+      "size": 394239,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ],
+      "act": [
+        "name",
+        "recount",
+        "decide",
+        "refuse",
+        "generalize",
+        "refute"
+      ],
+      "oracle": [
+        "recompute",
+        "declared"
+      ],
+      "boundary": [
+        "whole_only",
+        "exact_only",
+        "unsigned_only"
+      ]
+    },
+    {
       "name": "school",
       "file": "datasets/GENESIS-SCHOOL.txt",
       "genre": "the school assembly: every world that declares «school» in its `assemblies`, in manifest order — the ladder a learner walks before the whole corpus; a consequence of the manifest, not a decision of whoever assembles it",
@@ -2144,10 +2203,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 6349958,
+      "size": 7766415,
       "tiers": [],
       "text": "mix",
-      "lines": 135755
+      "lines": 146738
     },
     {
       "name": "full",
@@ -2162,10 +2221,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 8889701,
+      "size": 10315379,
       "tiers": [],
       "text": "mix",
-      "lines": 184393
+      "lines": 195481
     }
   ]
 }
