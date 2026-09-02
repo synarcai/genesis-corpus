@@ -17,6 +17,7 @@ import sys
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
 import asking  # noqa: E402
+import families  # noqa: E402
 import rugram  # noqa: E402
 
 # РУБЕЖ-ДОЛГА: ЛОЖНЫХ_РУБЕЖ = 0
@@ -77,26 +78,45 @@ def _мост(d, c, всего, d2, s100, s100b, c2, всего2):
     (rf"^how much is {Д} dollars \+ {Д} dollars\? {Д} \+ {Д} = {Д} dollars: {Ч} \+ {Ч} = {Ч} cents\.$",
      lambda a, ac, b, bc, a2, ac2, b2, bc2, s, sc, A, B, S: (a2, ac2, b2, bc2) == (a, ac, b, bc) and A == a * 100 + ac and B == b * 100 + bc and S == A + B == s * 100 + sc),
 )
-ПРАВИЛА = tuple((re.compile(о), п) for о, п in ОБРАЗЦЫ)
 
 
 def _г(m):
     return [int(x) if re.fullmatch(r"\d+", x) else x for x in m.groups() if x is not None]
 
 
+def _судья(закон):
+    def судить_(м):
+        try:
+            return bool(закон(*_г(м)))
+        except (TypeError, ValueError):
+            return False
+    return судить_
+
+
+# СЕМЕЙСТВО ЕСТЬ РОД (М-146): утверждение и вопрос одного рода — один якорный
+# образец на язык; вердикт даёт совпавшая форма.
+_Ф = [(о, _судья(п)) for о, п in ОБРАЗЦЫ]
+СЕМЕЙСТВА = (
+    ("мост", _Ф[0:5]),
+    ("цены", _Ф[5:9]),
+    ("кратные", _Ф[9:11]),
+    ("сдача", _Ф[11:15]),
+    ("суммы", _Ф[15:17]),
+)
+ПРАВИЛА = families.правила(СЕМЕЙСТВА)
+
+
 def судить(строка):
     """(судимо, истинно) для одной строки."""
     с = строка.strip()
-    for образец, закон in ПРАВИЛА:
+    for образец, судья in ПРАВИЛА:
         m = образец.match(с)
         if m:
+            # ПАРА О ТОМ ЖЕ (дом пары, М-145): ответ открывается первой величиной вопроса
             пара = asking.пара(с)
             if пара and not asking.о_том_же(пара[0], пара[1]):
                 return True, False
-            try:
-                return True, bool(закон(*_г(m)))
-            except (TypeError, ValueError):
-                return True, False
+            return True, bool(судья(m))
     return False, False
 
 
