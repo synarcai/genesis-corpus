@@ -65,6 +65,7 @@ import sys
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
 from layer import emit_grouped  # noqa: E402
 import universals  # noqa: E402
+import paraphrase  # noqa: E402
 
 ЦЕЛЬ = "datasets/genesis_inquiry_es_it.txt"
 
@@ -194,7 +195,7 @@ def исп_простота(шаг):
                        f"{n // д}.")
             вон.append(f"{n} è un numero primo? no: {n} = {д} × "
                        f"{n // д}.")
-    return вон
+    return paraphrase.перефразы(вон, ЯЗЫКИ_МИРА, ("prime", "divisible"))
 
 
 # A UNIVERSAL IS ASKED BY ITS OWN «IS IT TRUE THAT» (tools/universals.py):
@@ -271,7 +272,7 @@ def исп_делимость(шаг):
                        f"{q} + {r}, resto {r}.")
             вон.append(f"{a} è divisibile per {b}? no: {a} = {b} × "
                        f"{q} + {r}, resto {r}.")
-    return вон
+    return paraphrase.перефразы(вон, ЯЗЫКИ_МИРА, ("prime", "divisible"))
 
 
 def контр_делимость(шаг):
