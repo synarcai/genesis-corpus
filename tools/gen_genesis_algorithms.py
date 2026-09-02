@@ -35,18 +35,28 @@ import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from layer import emit  # noqa: E402
+import mass  # noqa: E402
 from plural import by_count  # noqa: E402
 
 LISTS = [
     [3, 1, 2], [5, 4], [7, 2, 9, 1], [6, 6, 2], [8, 3, 5, 1, 9],
     [4, 10, 7], [2, 8], [9, 5, 3, 7], [1, 4, 2, 6], [10, 3, 8],
+    [11, 2, 7], [5, 9, 1, 3], [12, 4], [6, 8, 2, 10, 4], [3, 3, 9],
+    [14, 1, 7, 2], [9, 12, 6], [2, 5, 8, 11], [7, 7], [10, 6, 1, 4, 8],
+    [13, 3, 5], [4, 2, 9, 6], [8, 1, 12, 5, 3],
 ]
-PAIRS = [(12, 18), (8, 12), (9, 6), (14, 21), (10, 15),
-         (16, 24), (5, 15), (18, 27), (7, 14), (20, 30)]
-SMALL = [5, 6, 7, 8, 9, 10, 11, 12, 13, 15]
-POWERS = [(2, 5), (3, 3), (2, 8), (5, 2), (4, 3),
-          (2, 6), (3, 4), (10, 2), (2, 10), (6, 2)]
-SIZES = [2, 4, 8, 16, 32, 64, 3, 5, 10, 20]
+# МАССА ОТ ПРАВИЛА (tools/mass.py, М-148): пара для нод — g × (m, n) при
+# взаимно простых m и n; степень — основание и показатель из двух циклов;
+# различных показов на рамку до 77 (было 10: таблицы повторялись проходами).
+GCDS = [6, 4, 3, 7, 5, 8, 9]
+COPRIME = [(2, 3), (3, 4), (1, 2), (3, 5), (2, 5), (4, 5), (1, 3), (5, 6),
+           (2, 7), (3, 7), (4, 7)]
+SMALL = list(range(5, 28))
+BASES = [2, 3, 5, 4, 10, 6, 7]
+EXPONENTS = [5, 3, 8, 2, 4]
+SIZES = [2, 4, 8, 16, 32, 64, 3, 5, 10, 20, 128, 256, 6, 7, 9, 12, 24, 48,
+         100, 1000, 15, 50, 30]
+WIDTH = 10
 
 
 # ИСКОМОЕ ОБЪЯВЛЯЕТ СВОЙ ВОПРОС ОДИН РАЗ, и вопрос берёт ТУ ЖЕ фразу
@@ -72,13 +82,14 @@ def spaced(xs):
 
 def pass_shows(pass_i):
     out = []
-    k = len(LISTS)
-    for i in range(k):
-        xs = LISTS[(pass_i + i) % k]
-        a, b = PAIRS[(pass_i * 3 + i) % len(PAIRS)]
-        n = SMALL[(pass_i * 2 + i) % len(SMALL)]
-        base, exp = POWERS[(pass_i + i * 3) % len(POWERS)]
-        size = SIZES[(pass_i * 5 + i) % len(SIZES)]
+    for i in range(WIDTH):
+        k0 = mass.шаг(pass_i, i, WIDTH)
+        xs = LISTS[k0 % len(LISTS)]
+        g, (m, n_) = mass.пара(k0, GCDS, COPRIME)
+        a, b = g * m, g * n_
+        n = SMALL[k0 % len(SMALL)]
+        base, exp = mass.пара(k0, BASES, EXPONENTS)
+        size = SIZES[k0 % len(SIZES)]
         # --- list operations
         ряд = spaced(xs)
         for пред_en, итог_en, пред_ru, итог_ru in (

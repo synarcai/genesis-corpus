@@ -30,28 +30,28 @@ adding 6 6 2 to a queue and taking gives 6.
 the maximum of 8 3 5 1 9 is 9.
 чему равен минимум 8 3 5 1 9? минимум 8 3 5 1 9 равен 1.
 what is the length of 8 3 5 1 9? the length of 8 3 5 1 9 is 5.
-нок 10 и 15 равен 30.
+нок 10 и 25 равен 50.
 fibonacci number 9 is 34.
 положив 8 3 5 1 9 в стек и сняв, получаем 9.
 sorting 4 10 7 gives 4 7 10.
 что даёт разворот 4 10 7? разворот 4 10 7 даёт 7 10 4.
 what is the minimum of 4 10 7? the minimum of 4 10 7 is 4.
 длина 4 10 7 равна 3.
-the lcm of 16 and 24 is 48.
-2 в степени 6 равно 64.
+the lcm of 32 and 40 is 160.
+6 в степени 5 равно 7776.
 pushing 4 10 7 on a stack and popping gives 7.
-деление 24 на 16 даёт частное 1 и остаток 8.
+деление 40 на 32 даёт частное 1 и остаток 8.
 what does reversing 2 8 give? reversing 2 8 gives 8 2.
 минимум 2 8 равен 2.
 the length of 2 8 is 2.
-нод 5 и 15 равен 5.
-2 to the power 10 is 1024.
+нод 9 и 27 равен 9.
+7 to the power 3 is 343.
 двоичный поиск по 3 элементам требует не более 2 шагов.
-dividing 15 by 5 gives quotient 3 and remainder 0.
+dividing 27 by 9 gives quotient 3 and remainder 0.
 разворот 9 5 3 7 даёт 7 3 5 9.
 the minimum of 9 5 3 7 is 3.
 чему равна сумма 9 5 3 7? сумма 9 5 3 7 равна 24.
-the gcd of 18 and 27 is 9.
+the gcd of 30 and 36 is 6.
 факториал 8 равен 40320.
 binary search on 5 items takes at most 3 steps.
 12 в двоичной записи это 1100.
@@ -66,7 +66,7 @@ the factorial of 8 is 40320.
 what is the maximum of 10 3 8? the maximum of 10 3 8 is 10.
 сумма 10 3 8 равна 21.
 what is at place 4 of 10 3 8? no item at place 4: the list 10 3 8 has 3 items.
-15 не простое.
+14 не простое.
 linear search on 20 items takes at most 20 steps.
 добавив 10 3 8 в очередь и взяв, получаем 10.
 what does sorting 3 1 2 give? sorting 3 1 2 gives 1 2 3.
@@ -80,28 +80,28 @@ adding 3 1 2 to a queue and taking gives 3.
 the maximum of 5 4 is 5.
 чему равен минимум 5 4? минимум 5 4 равен 4.
 what is the length of 5 4? the length of 5 4 is 2.
-нок 8 и 12 равен 24.
+нок 12 и 16 равен 48.
 fibonacci number 6 is 8.
 положив 5 4 в стек и сняв, получаем 4.
 sorting 7 2 9 1 gives 1 2 7 9.
 что даёт разворот 7 2 9 1? разворот 7 2 9 1 даёт 1 9 2 7.
 what is the minimum of 7 2 9 1? the minimum of 7 2 9 1 is 1.
 длина 7 2 9 1 равна 4.
-the lcm of 9 and 6 is 18.
-3 в степени 4 равно 81.
+the lcm of 3 and 6 is 6.
+5 в степени 8 равно 390625.
 pushing 7 2 9 1 on a stack and popping gives 1.
-деление 9 на 6 даёт частное 1 и остаток 3.
+деление 6 на 3 даёт частное 2 и остаток 0.
 what does reversing 6 6 2 give? reversing 6 6 2 gives 2 6 6.
 минимум 6 6 2 равен 2.
 the length of 6 6 2 is 3.
-нод 14 и 21 равен 7.
-6 to the power 2 is 36.
+нод 21 и 35 равен 7.
+4 to the power 2 is 16.
 двоичный поиск по 16 элементам требует не более 4 шагов.
-dividing 21 by 14 gives quotient 1 and remainder 7.
+dividing 35 by 21 gives quotient 1 and remainder 14.
 разворот 8 3 5 1 9 даёт 9 1 5 3 8.
 the minimum of 8 3 5 1 9 is 1.
 чему равна сумма 8 3 5 1 9? сумма 8 3 5 1 9 равна 26.
-the gcd of 10 and 15 is 5.
+the gcd of 10 and 25 is 5.
 факториал 8 равен 40320.
 binary search on 32 items takes at most 5 steps.
 9 в двоичной записи это 1001.
@@ -130,17 +130,17 @@ adding 9 5 3 7 to a queue and taking gives 9.
 the maximum of 1 4 2 6 is 6.
 чему равен минимум 1 4 2 6? минимум 1 4 2 6 равен 1.
 what is the length of 1 4 2 6? the length of 1 4 2 6 is 4.
-нок 7 и 14 равен 14.
+нок 8 и 28 равен 56.
 fibonacci number 13 is 233.
 положив 1 4 2 6 в стек и сняв, получаем 6.
 sorting 10 3 8 gives 3 8 10.
 что даёт разворот 10 3 8? разворот 10 3 8 даёт 8 3 10.
 what is the minimum of 10 3 8? the minimum of 10 3 8 is 3.
 длина 10 3 8 равна 3.
-the lcm of 20 and 30 is 60.
-10 в степени 2 равно 100.
+the lcm of 9 and 21 is 63.
+5 в степени 4 равно 625.
 pushing 10 3 8 on a stack and popping gives 8.
-деление 30 на 20 даёт частное 1 и остаток 10.
+деление 21 на 9 даёт частное 2 и остаток 3.
 what does reversing 3 1 2 give? reversing 3 1 2 gives 2 1 3.
 минимум 3 1 2 равен 1.
 the length of 3 1 2 is 3.
@@ -151,7 +151,7 @@ dividing 18 by 12 gives quotient 1 and remainder 6.
 разворот 5 4 даёт 4 5.
 the minimum of 5 4 is 4.
 чему равна сумма 5 4? сумма 5 4 равна 9.
-the gcd of 8 and 12 is 4.
+the gcd of 12 and 16 is 4.
 факториал 6 равен 720.
 binary search on 4 items takes at most 2 steps.
 6 в двоичной записи это 110.
@@ -180,28 +180,28 @@ adding 8 3 5 1 9 to a queue and taking gives 8.
 the maximum of 4 10 7 is 10.
 чему равен минимум 4 10 7? минимум 4 10 7 равен 4.
 what is the length of 4 10 7? the length of 4 10 7 is 3.
-нок 16 и 24 равен 48.
+нок 32 и 40 равен 160.
 fibonacci number 10 is 55.
 положив 4 10 7 в стек и сняв, получаем 7.
 sorting 2 8 gives 2 8.
 что даёт разворот 2 8? разворот 2 8 даёт 8 2.
 what is the minimum of 2 8? the minimum of 2 8 is 2.
 длина 2 8 равна 2.
-the lcm of 5 and 15 is 15.
-2 в степени 10 равно 1024.
+the lcm of 9 and 27 is 27.
+7 в степени 3 равно 343.
 pushing 2 8 on a stack and popping gives 8.
-деление 15 на 5 даёт частное 3 и остаток 0.
+деление 27 на 9 даёт частное 3 и остаток 0.
 what does reversing 9 5 3 7 give? reversing 9 5 3 7 gives 7 3 5 9.
 минимум 9 5 3 7 равен 3.
 the length of 9 5 3 7 is 4.
-нод 18 и 27 равен 9.
-3 to the power 3 is 27.
+нод 30 и 36 равен 6.
+2 to the power 8 is 256.
 двоичный поиск по 5 элементам требует не более 3 шагов.
-dividing 27 by 18 gives quotient 1 and remainder 9.
+dividing 36 by 30 gives quotient 1 and remainder 6.
 разворот 1 4 2 6 даёт 6 2 4 1.
 the minimum of 1 4 2 6 is 1.
 чему равна сумма 1 4 2 6? сумма 1 4 2 6 равна 13.
-the gcd of 7 and 14 is 7.
+the gcd of 8 and 28 is 4.
 факториал 8 равен 40320.
 binary search on 10 items takes at most 4 steps.
 13 в двоичной записи это 1101.
@@ -211,7 +211,7 @@ what is the sum of 10 3 8? the sum of 10 3 8 is 21.
 что стои́т на месте 4 в списке 10 3 8? на месте 4 нет ничего: в списке 10 3 8 всего 3 элементов.
 the factorial of 8 is 40320.
 линейный поиск по 20 элементам требует не более 20 шагов.
-15 in binary is 1111.
+14 in binary is 1110.
 что даёт сортировка 3 1 2? сортировка 3 1 2 даёт 1 2 3.
 what is the maximum of 3 1 2? the maximum of 3 1 2 is 3.
 сумма 3 1 2 равна 6.
@@ -230,28 +230,28 @@ adding 5 4 to a queue and taking gives 5.
 the maximum of 7 2 9 1 is 9.
 чему равен минимум 7 2 9 1? минимум 7 2 9 1 равен 1.
 what is the length of 7 2 9 1? the length of 7 2 9 1 is 4.
-нок 9 и 6 равен 18.
+нок 3 и 6 равен 6.
 fibonacci number 7 is 13.
 положив 7 2 9 1 в стек и сняв, получаем 1.
 sorting 6 6 2 gives 2 6 6.
 что даёт разворот 6 6 2? разворот 6 6 2 даёт 2 6 6.
 what is the minimum of 6 6 2? the minimum of 6 6 2 is 2.
 длина 6 6 2 равна 3.
-the lcm of 14 and 21 is 42.
-6 в степени 2 равно 36.
+the lcm of 21 and 35 is 105.
+4 в степени 2 равно 16.
 pushing 6 6 2 on a stack and popping gives 2.
-деление 21 на 14 даёт частное 1 и остаток 7.
+деление 35 на 21 даёт частное 1 и остаток 14.
 what does reversing 8 3 5 1 9 give? reversing 8 3 5 1 9 gives 9 1 5 3 8.
 минимум 8 3 5 1 9 равен 1.
 the length of 8 3 5 1 9 is 5.
-нод 10 и 15 равен 5.
-2 to the power 8 is 256.
+нод 10 и 25 равен 5.
+10 to the power 4 is 10000.
 двоичный поиск по 32 элементам требует не более 5 шагов.
-dividing 15 by 10 gives quotient 1 and remainder 5.
+dividing 25 by 10 gives quotient 2 and remainder 5.
 разворот 4 10 7 даёт 7 10 4.
 the minimum of 4 10 7 is 4.
 чему равна сумма 4 10 7? сумма 4 10 7 равна 21.
-the gcd of 16 and 24 is 8.
+the gcd of 32 and 40 is 8.
 факториал 8 равен 40320.
 binary search on 64 items takes at most 6 steps.
 10 в двоичной записи это 1010.
@@ -280,8 +280,8 @@ adding 1 4 2 6 to a queue and taking gives 1.
 the maximum of 10 3 8 is 10.
 чему равен минимум 10 3 8? минимум 10 3 8 равен 3.
 what is the length of 10 3 8? the length of 10 3 8 is 3.
-нок 20 и 30 равен 60.
-fibonacci number 15 is 610.
+нок 9 и 21 равен 63.
+fibonacci number 14 is 377.
 положив 10 3 8 в стек и сняв, получаем 8.
 sorting 3 1 2 gives 1 2 3.
 что даёт разворот 3 1 2? разворот 3 1 2 даёт 2 1 3.
@@ -294,14 +294,14 @@ pushing 3 1 2 on a stack and popping gives 2.
 what does reversing 5 4 give? reversing 5 4 gives 4 5.
 минимум 5 4 равен 4.
 the length of 5 4 is 2.
-нод 8 и 12 равен 4.
-5 to the power 2 is 25.
+нод 12 и 16 равен 4.
+3 to the power 3 is 27.
 двоичный поиск по 4 элементам требует не более 2 шагов.
-dividing 12 by 8 gives quotient 1 and remainder 4.
+dividing 16 by 12 gives quotient 1 and remainder 4.
 разворот 7 2 9 1 даёт 1 9 2 7.
 the minimum of 7 2 9 1 is 1.
 чему равна сумма 7 2 9 1? сумма 7 2 9 1 равна 19.
-the gcd of 9 and 6 is 3.
+the gcd of 3 and 6 is 3.
 факториал 7 равен 5040.
 binary search on 8 items takes at most 3 steps.
 7 в двоичной записи это 111.
@@ -330,31 +330,31 @@ adding 4 10 7 to a queue and taking gives 4.
 the maximum of 2 8 is 8.
 чему равен минимум 2 8? минимум 2 8 равен 2.
 what is the length of 2 8? the length of 2 8 is 2.
-нок 5 и 15 равен 15.
+нок 9 и 27 равен 27.
 fibonacci number 11 is 89.
 положив 2 8 в стек и сняв, получаем 8.
 sorting 9 5 3 7 gives 3 5 7 9.
 что даёт разворот 9 5 3 7? разворот 9 5 3 7 даёт 7 3 5 9.
 what is the minimum of 9 5 3 7? the minimum of 9 5 3 7 is 3.
 длина 9 5 3 7 равна 4.
-the lcm of 18 and 27 is 54.
-3 в степени 3 равно 27.
+the lcm of 30 and 36 is 180.
+2 в степени 8 равно 256.
 pushing 9 5 3 7 on a stack and popping gives 7.
-деление 27 на 18 даёт частное 1 и остаток 9.
+деление 36 на 30 даёт частное 1 и остаток 6.
 what does reversing 1 4 2 6 give? reversing 1 4 2 6 gives 6 2 4 1.
 минимум 1 4 2 6 равен 1.
 the length of 1 4 2 6 is 4.
-нод 7 и 14 равен 7.
-4 to the power 3 is 64.
+нод 8 и 28 равен 4.
+3 to the power 2 is 9.
 двоичный поиск по 10 элементам требует не более 4 шагов.
-dividing 14 by 7 gives quotient 2 and remainder 0.
+dividing 28 by 8 gives quotient 3 and remainder 4.
 разворот 10 3 8 даёт 8 3 10.
 the minimum of 10 3 8 is 3.
 чему равна сумма 10 3 8? сумма 10 3 8 равна 21.
-the gcd of 20 and 30 is 10.
+the gcd of 9 and 21 is 3.
 факториал 8 равен 40320.
 binary search on 20 items takes at most 5 steps.
-15 в двоичной записи это 1111.
+14 в двоичной записи это 1110.
 reversing 3 1 2 gives 2 1 3.
 чему равен максимум 3 1 2? максимум 3 1 2 равен 3.
 what is the sum of 3 1 2? the sum of 3 1 2 is 6.
@@ -380,28 +380,28 @@ adding 7 2 9 1 to a queue and taking gives 7.
 the maximum of 6 6 2 is 6.
 чему равен минимум 6 6 2? минимум 6 6 2 равен 2.
 what is the length of 6 6 2? the length of 6 6 2 is 3.
-нок 14 и 21 равен 42.
+нок 21 и 35 равен 105.
 fibonacci number 8 is 21.
 положив 6 6 2 в стек и сняв, получаем 2.
 sorting 8 3 5 1 9 gives 1 3 5 8 9.
 что даёт разворот 8 3 5 1 9? разворот 8 3 5 1 9 даёт 9 1 5 3 8.
 what is the minimum of 8 3 5 1 9? the minimum of 8 3 5 1 9 is 1.
 длина 8 3 5 1 9 равна 5.
-the lcm of 10 and 15 is 30.
-2 в степени 8 равно 256.
+the lcm of 10 and 25 is 50.
+10 в степени 4 равно 10000.
 pushing 8 3 5 1 9 on a stack and popping gives 9.
-деление 15 на 10 даёт частное 1 и остаток 5.
+деление 25 на 10 даёт частное 2 и остаток 5.
 what does reversing 4 10 7 give? reversing 4 10 7 gives 7 10 4.
 минимум 4 10 7 равен 4.
 the length of 4 10 7 is 3.
-нод 16 и 24 равен 8.
-2 to the power 6 is 64.
+нод 32 и 40 равен 8.
+6 to the power 5 is 7776.
 двоичный поиск по 64 элементам требует не более 6 шагов.
-dividing 24 by 16 gives quotient 1 and remainder 8.
+dividing 40 by 32 gives quotient 1 and remainder 8.
 разворот 2 8 даёт 8 2.
 the minimum of 2 8 is 2.
 чему равна сумма 2 8? сумма 2 8 равна 10.
-the gcd of 5 and 15 is 5.
+the gcd of 9 and 27 is 9.
 факториал 8 равен 40320.
 binary search on 3 items takes at most 2 steps.
 11 в двоичной записи это 1011.
@@ -423,8 +423,8 @@ what does sorting 10 3 8 give? sorting 10 3 8 gives 3 8 10.
 максимум 10 3 8 равен 10.
 the sum of 10 3 8 is 21.
 чему равна длина 10 3 8? длина 10 3 8 равна 3.
-15 is not prime.
-число фибоначчи номер 15 равно 610.
+14 is not prime.
+число фибоначчи номер 14 равно 377.
 adding 10 3 8 to a queue and taking gives 10.
 сортировка 3 1 2 даёт 1 2 3.
 the maximum of 3 1 2 is 3.
@@ -437,21 +437,21 @@ sorting 5 4 gives 4 5.
 что даёт разворот 5 4? разворот 5 4 даёт 4 5.
 what is the minimum of 5 4? the minimum of 5 4 is 4.
 длина 5 4 равна 2.
-the lcm of 8 and 12 is 24.
-5 в степени 2 равно 25.
+the lcm of 12 and 16 is 48.
+3 в степени 3 равно 27.
 pushing 5 4 on a stack and popping gives 4.
-деление 12 на 8 даёт частное 1 и остаток 4.
+деление 16 на 12 даёт частное 1 и остаток 4.
 what does reversing 7 2 9 1 give? reversing 7 2 9 1 gives 1 9 2 7.
 минимум 7 2 9 1 равен 1.
 the length of 7 2 9 1 is 4.
-нод 9 и 6 равен 3.
-3 to the power 4 is 81.
+нод 3 и 6 равен 3.
+5 to the power 8 is 390625.
 двоичный поиск по 8 элементам требует не более 3 шагов.
-dividing 9 by 6 gives quotient 1 and remainder 3.
+dividing 6 by 3 gives quotient 2 and remainder 0.
 разворот 6 6 2 даёт 2 6 6.
 the minimum of 6 6 2 is 2.
 чему равна сумма 6 6 2? сумма 6 6 2 равна 14.
-the gcd of 14 and 21 is 7.
+the gcd of 21 and 35 is 7.
 факториал 8 равен 40320.
 binary search on 16 items takes at most 4 steps.
 8 в двоичной записи это 1000.
@@ -480,644 +480,894 @@ adding 2 8 to a queue and taking gives 2.
 the maximum of 9 5 3 7 is 9.
 чему равен минимум 9 5 3 7? минимум 9 5 3 7 равен 3.
 what is the length of 9 5 3 7? the length of 9 5 3 7 is 4.
-нок 18 и 27 равен 54.
+нок 30 и 36 равен 180.
 fibonacci number 12 is 144.
 положив 9 5 3 7 в стек и сняв, получаем 7.
 sorting 1 4 2 6 gives 1 2 4 6.
 что даёт разворот 1 4 2 6? разворот 1 4 2 6 даёт 6 2 4 1.
 what is the minimum of 1 4 2 6? the minimum of 1 4 2 6 is 1.
 длина 1 4 2 6 равна 4.
-the lcm of 7 and 14 is 14.
-4 в степени 3 равно 64.
+the lcm of 8 and 28 is 56.
+3 в степени 2 равно 9.
 pushing 1 4 2 6 on a stack and popping gives 6.
-деление 14 на 7 даёт частное 2 и остаток 0.
+деление 28 на 8 даёт частное 3 и остаток 4.
 what does reversing 10 3 8 give? reversing 10 3 8 gives 8 3 10.
 минимум 10 3 8 равен 3.
 the length of 10 3 8 is 3.
-нод 20 и 30 равен 10.
-10 to the power 2 is 100.
+нод 9 и 21 равен 3.
+5 to the power 4 is 625.
 двоичный поиск по 20 элементам требует не более 5 шагов.
-dividing 30 by 20 gives quotient 1 and remainder 10.
+dividing 21 by 9 gives quotient 2 and remainder 3.
 
-what does sorting 5 4 give? sorting 5 4 gives 4 5.
-минимум 5 4 равен 4.
-what is at place 5 of 5 4? no item at place 5: the list 5 4 has 2 items.
-3 в степени 3 равно 27.
-7 in binary is 111.
-что даёт разворот 7 2 9 1? разворот 7 2 9 1 даёт 1 9 2 7.
-what is the sum of 7 2 9 1? the sum of 7 2 9 1 is 19.
+what does sorting 11 2 7 give? sorting 11 2 7 gives 2 7 11.
+минимум 11 2 7 равен 2.
+what is at place 4 of 11 2 7? no item at place 4: the list 11 2 7 has 3 items.
+4 в степени 5 равно 1024.
+15 in binary is 1111.
+что даёт разворот 5 9 1 3? разворот 5 9 1 3 даёт 3 1 9 5.
+what is the sum of 5 9 1 3? the sum of 5 9 1 3 is 18.
 нок 10 и 15 равен 30.
-binary search on 3 items takes at most 2 steps.
-сортировка 6 6 2 даёт 2 6 6.
-the minimum of 6 6 2 is 2.
-чему равна длина 6 6 2? длина 6 6 2 равна 3.
-10 to the power 2 is 100.
-добавив 6 6 2 в очередь и взяв, получаем 6.
-what does reversing 8 3 5 1 9 give? reversing 8 3 5 1 9 gives 9 1 5 3 8.
-сумма 8 3 5 1 9 равна 26.
-the lcm of 5 and 15 is 15.
-линейный поиск по 10 элементам требует не более 10 шагов.
-sorting 4 10 7 gives 4 7 10.
-чему равен максимум 4 10 7? максимум 4 10 7 равен 10.
-what is the length of 4 10 7? the length of 4 10 7 is 3.
+binary search on 256 items takes at most 8 steps.
+сортировка 12 4 даёт 4 12.
+the minimum of 12 4 is 4.
+чему равна длина 12 4? длина 12 4 равна 2.
+6 to the power 8 is 1679616.
+добавив 12 4 в очередь и взяв, получаем 12.
+what does reversing 6 8 2 10 4 give? reversing 6 8 2 10 4 gives 4 10 2 8 6.
+сумма 6 8 2 10 4 равна 30.
+the lcm of 9 and 18 is 18.
+линейный поиск по 7 элементам требует не более 7 шагов.
+sorting 3 3 9 gives 3 3 9.
+чему равен максимум 3 3 9? максимум 3 3 9 равен 9.
+what is the length of 3 3 9? the length of 3 3 9 is 3.
 факториал 8 равен 40320.
-adding 4 10 7 to a queue and taking gives 4.
-разворот 2 8 даёт 8 2.
-the sum of 2 8 is 10.
-нод 7 и 14 равен 7.
-linear search on 2 items takes at most 2 steps.
-деление 14 на 7 даёт частное 2 и остаток 0.
-what is the maximum of 9 5 3 7? the maximum of 9 5 3 7 is 9.
-длина 9 5 3 7 равна 4.
+adding 3 3 9 to a queue and taking gives 3.
+разворот 14 1 7 2 даёт 2 7 1 14.
+the sum of 14 1 7 2 is 24.
+нод 8 и 20 равен 4.
+linear search on 12 items takes at most 12 steps.
+деление 20 на 8 даёт частное 2 и остаток 4.
+what is the maximum of 9 12 6? the maximum of 9 12 6 is 12.
+длина 9 12 6 равна 3.
 the factorial of 8 is 40320.
-положив 9 5 3 7 в стек и сняв, получаем 7.
-reversing 1 4 2 6 gives 6 2 4 1.
-чему равен минимум 1 4 2 6? минимум 1 4 2 6 равен 1.
-the gcd of 12 and 18 is 6.
+положив 9 12 6 в стек и сняв, получаем 6.
+reversing 2 5 8 11 gives 11 8 5 2.
+чему равен минимум 2 5 8 11? минимум 2 5 8 11 равен 2.
+the gcd of 7 and 21 is 7.
+число фибоначчи номер 22 равно 17711.
+dividing 21 by 7 gives quotient 3 and remainder 0.
+максимум 7 7 равен 7.
+the length of 7 7 is 2.
+23 простое.
+pushing 7 7 on a stack and popping gives 7.
+что даёт сортировка 10 6 1 4 8? сортировка 10 6 1 4 8 даёт 1 4 6 8 10.
+what is the minimum of 10 6 1 4 8? the minimum of 10 6 1 4 8 is 1.
+что стои́т на месте 8 в списке 10 6 1 4 8? на месте 8 нет ничего: в списке 10 6 1 4 8 всего 5 элементов.
+fibonacci number 24 is 46368.
+24 в двоичной записи это 11000.
+the maximum of 11 2 7 is 11.
+чему равна сумма 11 2 7? сумма 11 2 7 равна 20.
+15 is not prime.
+двоичный поиск по 128 элементам требует не более 7 шагов.
+what does sorting 5 9 1 3 give? sorting 5 9 1 3 gives 1 3 5 9.
+минимум 5 9 1 3 равен 1.
+what is at place 6 of 5 9 1 3? no item at place 6: the list 5 9 1 3 has 4 items.
+10 в степени 3 равно 1000.
+16 in binary is 10000.
+что даёт разворот 12 4? разворот 12 4 даёт 4 12.
+what is the sum of 12 4? the sum of 12 4 is 16.
+нок 24 и 32 равен 96.
+binary search on 6 items takes at most 3 steps.
+сортировка 6 8 2 10 4 даёт 2 4 6 8 10.
+the minimum of 6 8 2 10 4 is 2.
+чему равна длина 6 8 2 10 4? длина 6 8 2 10 4 равна 5.
+7 to the power 2 is 49.
+добавив 6 8 2 10 4 в очередь и взяв, получаем 6.
+what does reversing 3 3 9 give? reversing 3 3 9 gives 9 3 3.
+сумма 3 3 9 равна 15.
+the lcm of 18 and 30 is 90.
+линейный поиск по 9 элементам требует не более 9 шагов.
+sorting 14 1 7 2 gives 1 2 7 14.
+чему равен максимум 14 1 7 2? максимум 14 1 7 2 равен 14.
+what is the length of 14 1 7 2? the length of 14 1 7 2 is 4.
+факториал 8 равен 40320.
+adding 14 1 7 2 to a queue and taking gives 14.
+разворот 9 12 6 даёт 6 12 9.
+the sum of 9 12 6 is 27.
+нод 12 и 15 равен 3.
+linear search on 24 items takes at most 24 steps.
+деление 15 на 12 даёт частное 1 и остаток 3.
+what is the maximum of 2 5 8 11? the maximum of 2 5 8 11 is 11.
+длина 2 5 8 11 равна 4.
+the factorial of 8 is 40320.
+положив 2 5 8 11 в стек и сняв, получаем 11.
+reversing 7 7 gives 7 7.
+чему равен минимум 7 7? минимум 7 7 равен 7.
+the gcd of 25 and 30 is 5.
+число фибоначчи номер 23 равно 28657.
+dividing 30 by 25 gives quotient 1 and remainder 5.
+максимум 10 6 1 4 8 равен 10.
+the length of 10 6 1 4 8 is 5.
+24 не простое.
+pushing 10 6 1 4 8 on a stack and popping gives 8.
+что даёт сортировка 11 2 7? сортировка 11 2 7 даёт 2 7 11.
+what is the minimum of 11 2 7? the minimum of 11 2 7 is 2.
+что стои́т на месте 4 в списке 11 2 7? на месте 4 нет ничего: в списке 11 2 7 всего 3 элементов.
+fibonacci number 15 is 610.
+15 в двоичной записи это 1111.
+the maximum of 5 9 1 3 is 9.
+чему равна сумма 5 9 1 3? сумма 5 9 1 3 равна 18.
+16 is not prime.
+двоичный поиск по 256 элементам требует не более 8 шагов.
+what does sorting 12 4 give? sorting 12 4 gives 4 12.
+минимум 12 4 равен 4.
+what is at place 5 of 12 4? no item at place 5: the list 12 4 has 2 items.
+6 в степени 8 равно 1679616.
+17 in binary is 10001.
+что даёт разворот 6 8 2 10 4? разворот 6 8 2 10 4 даёт 4 10 2 8 6.
+what is the sum of 6 8 2 10 4? the sum of 6 8 2 10 4 is 30.
+нок 9 и 18 равен 18.
+binary search on 7 items takes at most 3 steps.
+сортировка 3 3 9 даёт 3 3 9.
+the minimum of 3 3 9 is 3.
+чему равна длина 3 3 9? длина 3 3 9 равна 3.
+2 to the power 4 is 16.
+добавив 3 3 9 в очередь и взяв, получаем 3.
+what does reversing 14 1 7 2 give? reversing 14 1 7 2 gives 2 7 1 14.
+сумма 14 1 7 2 равна 24.
+the lcm of 8 and 20 is 40.
+линейный поиск по 12 элементам требует не более 12 шагов.
+sorting 9 12 6 gives 6 9 12.
+чему равен максимум 9 12 6? максимум 9 12 6 равен 12.
+what is the length of 9 12 6? the length of 9 12 6 is 3.
+факториал 8 равен 40320.
+adding 9 12 6 to a queue and taking gives 9.
+разворот 2 5 8 11 даёт 11 8 5 2.
+the sum of 2 5 8 11 is 26.
+нод 7 и 21 равен 7.
+linear search on 48 items takes at most 48 steps.
+деление 21 на 7 даёт частное 3 и остаток 0.
+what is the maximum of 7 7? the maximum of 7 7 is 7.
+длина 7 7 равна 2.
+the factorial of 8 is 40320.
+положив 7 7 в стек и сняв, получаем 7.
+reversing 10 6 1 4 8 gives 8 4 1 6 10.
+чему равен минимум 10 6 1 4 8? минимум 10 6 1 4 8 равен 1.
+the gcd of 16 and 56 is 8.
+число фибоначчи номер 24 равно 46368.
+dividing 56 by 16 gives quotient 3 and remainder 8.
+максимум 11 2 7 равен 11.
+the length of 11 2 7 is 3.
+15 не простое.
+pushing 11 2 7 on a stack and popping gives 7.
+что даёт сортировка 5 9 1 3? сортировка 5 9 1 3 даёт 1 3 5 9.
+what is the minimum of 5 9 1 3? the minimum of 5 9 1 3 is 1.
+что стои́т на месте 6 в списке 5 9 1 3? на месте 6 нет ничего: в списке 5 9 1 3 всего 4 элементов.
+fibonacci number 16 is 987.
+16 в двоичной записи это 10000.
+the maximum of 12 4 is 12.
+чему равна сумма 12 4? сумма 12 4 равна 16.
+17 is prime.
+двоичный поиск по 6 элементам требует не более 3 шагов.
+what does sorting 6 8 2 10 4 give? sorting 6 8 2 10 4 gives 2 4 6 8 10.
+минимум 6 8 2 10 4 равен 2.
+what is at place 8 of 6 8 2 10 4? no item at place 8: the list 6 8 2 10 4 has 5 items.
+7 в степени 2 равно 49.
+18 in binary is 10010.
+что даёт разворот 3 3 9? разворот 3 3 9 даёт 9 3 3.
+what is the sum of 3 3 9? the sum of 3 3 9 is 15.
+нок 18 и 30 равен 90.
+binary search on 9 items takes at most 4 steps.
+сортировка 14 1 7 2 даёт 1 2 7 14.
+the minimum of 14 1 7 2 is 1.
+чему равна длина 14 1 7 2? длина 14 1 7 2 равна 4.
+3 to the power 5 is 243.
+добавив 14 1 7 2 в очередь и взяв, получаем 14.
+what does reversing 9 12 6 give? reversing 9 12 6 gives 6 12 9.
+сумма 9 12 6 равна 27.
+the lcm of 12 and 15 is 60.
+линейный поиск по 24 элементам требует не более 24 шагов.
+sorting 2 5 8 11 gives 2 5 8 11.
+чему равен максимум 2 5 8 11? максимум 2 5 8 11 равен 11.
+what is the length of 2 5 8 11? the length of 2 5 8 11 is 4.
+факториал 8 равен 40320.
+adding 2 5 8 11 to a queue and taking gives 2.
+разворот 7 7 даёт 7 7.
+the sum of 7 7 is 14.
+нод 25 и 30 равен 5.
+linear search on 100 items takes at most 100 steps.
+деление 30 на 25 даёт частное 1 и остаток 5.
+what is the maximum of 10 6 1 4 8? the maximum of 10 6 1 4 8 is 10.
+длина 10 6 1 4 8 равна 5.
+the factorial of 8 is 40320.
+положив 10 6 1 4 8 в стек и сняв, получаем 8.
+reversing 11 2 7 gives 7 2 11.
+чему равен минимум 11 2 7? минимум 11 2 7 равен 2.
+the gcd of 28 and 49 is 7.
 число фибоначчи номер 15 равно 610.
-dividing 18 by 12 gives quotient 1 and remainder 6.
-максимум 10 3 8 равен 10.
-the length of 10 3 8 is 3.
-5 простое.
-pushing 10 3 8 on a stack and popping gives 8.
-что даёт сортировка 3 1 2? сортировка 3 1 2 даёт 1 2 3.
-what is the minimum of 3 1 2? the minimum of 3 1 2 is 1.
-что стои́т на месте 4 в списке 3 1 2? на месте 4 нет ничего: в списке 3 1 2 всего 3 элементов.
-fibonacci number 6 is 8.
-6 в двоичной записи это 110.
-the maximum of 5 4 is 5.
-чему равна сумма 5 4? сумма 5 4 равна 9.
-7 is prime.
-двоичный поиск по 64 элементам требует не более 6 шагов.
-what does sorting 7 2 9 1 give? sorting 7 2 9 1 gives 1 2 7 9.
-минимум 7 2 9 1 равен 1.
-what is at place 6 of 7 2 9 1? no item at place 6: the list 7 2 9 1 has 4 items.
-4 в степени 3 равно 64.
-8 in binary is 1000.
-что даёт разворот 6 6 2? разворот 6 6 2 даёт 2 6 6.
-what is the sum of 6 6 2? the sum of 6 6 2 is 14.
-нок 16 и 24 равен 48.
-binary search on 5 items takes at most 3 steps.
-сортировка 8 3 5 1 9 даёт 1 3 5 8 9.
-the minimum of 8 3 5 1 9 is 1.
-чему равна длина 8 3 5 1 9? длина 8 3 5 1 9 равна 5.
-2 to the power 5 is 32.
-добавив 8 3 5 1 9 в очередь и взяв, получаем 8.
-what does reversing 4 10 7 give? reversing 4 10 7 gives 7 10 4.
-сумма 4 10 7 равна 21.
-the lcm of 18 and 27 is 54.
-линейный поиск по 20 элементам требует не более 20 шагов.
-sorting 2 8 gives 2 8.
-чему равен максимум 2 8? максимум 2 8 равен 8.
-what is the length of 2 8? the length of 2 8 is 2.
+dividing 49 by 28 gives quotient 1 and remainder 21.
+максимум 5 9 1 3 равен 9.
+the length of 5 9 1 3 is 4.
+16 не простое.
+pushing 5 9 1 3 on a stack and popping gives 3.
+что даёт сортировка 12 4? сортировка 12 4 даёт 4 12.
+what is the minimum of 12 4? the minimum of 12 4 is 4.
+что стои́т на месте 5 в списке 12 4? на месте 5 нет ничего: в списке 12 4 всего 2 элементов.
+fibonacci number 17 is 1597.
+17 в двоичной записи это 10001.
+the maximum of 6 8 2 10 4 is 10.
+чему равна сумма 6 8 2 10 4? сумма 6 8 2 10 4 равна 30.
+18 is not prime.
+двоичный поиск по 7 элементам требует не более 3 шагов.
+what does sorting 3 3 9 give? sorting 3 3 9 gives 3 3 9.
+минимум 3 3 9 равен 3.
+what is at place 4 of 3 3 9? no item at place 4: the list 3 3 9 has 3 items.
+2 в степени 4 равно 16.
+19 in binary is 10011.
+что даёт разворот 14 1 7 2? разворот 14 1 7 2 даёт 2 7 1 14.
+what is the sum of 14 1 7 2? the sum of 14 1 7 2 is 24.
+нок 8 и 20 равен 40.
+binary search on 12 items takes at most 4 steps.
+сортировка 9 12 6 даёт 6 9 12.
+the minimum of 9 12 6 is 6.
+чему равна длина 9 12 6? длина 9 12 6 равна 3.
+5 to the power 3 is 125.
+добавив 9 12 6 в очередь и взяв, получаем 9.
+what does reversing 2 5 8 11 give? reversing 2 5 8 11 gives 11 8 5 2.
+сумма 2 5 8 11 равна 26.
+the lcm of 7 and 21 is 21.
+линейный поиск по 48 элементам требует не более 48 шагов.
+sorting 7 7 gives 7 7.
+чему равен максимум 7 7? максимум 7 7 равен 7.
+what is the length of 7 7? the length of 7 7 is 2.
 факториал 8 равен 40320.
-adding 2 8 to a queue and taking gives 2.
-разворот 9 5 3 7 даёт 7 3 5 9.
-the sum of 9 5 3 7 is 24.
-нод 20 и 30 равен 10.
-linear search on 4 items takes at most 4 steps.
-деление 30 на 20 даёт частное 1 и остаток 10.
-what is the maximum of 1 4 2 6? the maximum of 1 4 2 6 is 6.
-длина 1 4 2 6 равна 4.
+adding 7 7 to a queue and taking gives 7.
+разворот 10 6 1 4 8 даёт 8 4 1 6 10.
+the sum of 10 6 1 4 8 is 29.
+нод 16 и 56 равен 8.
+linear search on 1000 items takes at most 1000 steps.
+деление 56 на 16 даёт частное 3 и остаток 8.
+what is the maximum of 11 2 7? the maximum of 11 2 7 is 11.
+длина 11 2 7 равна 3.
 the factorial of 8 is 40320.
-положив 1 4 2 6 в стек и сняв, получаем 6.
-reversing 10 3 8 gives 8 3 10.
-чему равен минимум 10 3 8? минимум 10 3 8 равен 3.
+положив 11 2 7 в стек и сняв, получаем 7.
+reversing 5 9 1 3 gives 3 1 9 5.
+чему равен минимум 5 9 1 3? минимум 5 9 1 3 равен 1.
+the gcd of 10 and 15 is 5.
+число фибоначчи номер 16 равно 987.
+dividing 15 by 10 gives quotient 1 and remainder 5.
+максимум 12 4 равен 12.
+the length of 12 4 is 2.
+17 простое.
+pushing 12 4 on a stack and popping gives 4.
+что даёт сортировка 6 8 2 10 4? сортировка 6 8 2 10 4 даёт 2 4 6 8 10.
+what is the minimum of 6 8 2 10 4? the minimum of 6 8 2 10 4 is 2.
+что стои́т на месте 8 в списке 6 8 2 10 4? на месте 8 нет ничего: в списке 6 8 2 10 4 всего 5 элементов.
+fibonacci number 18 is 2584.
+18 в двоичной записи это 10010.
+the maximum of 3 3 9 is 9.
+чему равна сумма 3 3 9? сумма 3 3 9 равна 15.
+19 is prime.
+двоичный поиск по 9 элементам требует не более 4 шагов.
+what does sorting 14 1 7 2 give? sorting 14 1 7 2 gives 1 2 7 14.
+минимум 14 1 7 2 равен 1.
+what is at place 6 of 14 1 7 2? no item at place 6: the list 14 1 7 2 has 4 items.
+3 в степени 5 равно 243.
+20 in binary is 10100.
+что даёт разворот 9 12 6? разворот 9 12 6 даёт 6 12 9.
+what is the sum of 9 12 6? the sum of 9 12 6 is 27.
+нок 12 и 15 равен 60.
+binary search on 24 items takes at most 5 steps.
+сортировка 2 5 8 11 даёт 2 5 8 11.
+the minimum of 2 5 8 11 is 2.
+чему равна длина 2 5 8 11? длина 2 5 8 11 равна 4.
+4 to the power 8 is 65536.
+добавив 2 5 8 11 в очередь и взяв, получаем 2.
+what does reversing 7 7 give? reversing 7 7 gives 7 7.
+сумма 7 7 равна 14.
+the lcm of 25 and 30 is 150.
+линейный поиск по 100 элементам требует не более 100 шагов.
+sorting 10 6 1 4 8 gives 1 4 6 8 10.
+чему равен максимум 10 6 1 4 8? максимум 10 6 1 4 8 равен 10.
+what is the length of 10 6 1 4 8? the length of 10 6 1 4 8 is 5.
+факториал 8 равен 40320.
+adding 10 6 1 4 8 to a queue and taking gives 10.
+разворот 11 2 7 даёт 7 2 11.
+the sum of 11 2 7 is 20.
+нод 28 и 49 равен 7.
+linear search on 128 items takes at most 128 steps.
+деление 49 на 28 даёт частное 1 и остаток 21.
+what is the maximum of 5 9 1 3? the maximum of 5 9 1 3 is 9.
+длина 5 9 1 3 равна 4.
+the factorial of 8 is 40320.
+положив 5 9 1 3 в стек и сняв, получаем 3.
+reversing 12 4 gives 4 12.
+чему равен минимум 12 4? минимум 12 4 равен 4.
+the gcd of 24 and 32 is 8.
+число фибоначчи номер 17 равно 1597.
+dividing 32 by 24 gives quotient 1 and remainder 8.
+максимум 6 8 2 10 4 равен 10.
+the length of 6 8 2 10 4 is 5.
+18 не простое.
+pushing 6 8 2 10 4 on a stack and popping gives 4.
+что даёт сортировка 3 3 9? сортировка 3 3 9 даёт 3 3 9.
+what is the minimum of 3 3 9? the minimum of 3 3 9 is 3.
+что стои́т на месте 4 в списке 3 3 9? на месте 4 нет ничего: в списке 3 3 9 всего 3 элементов.
+fibonacci number 19 is 4181.
+19 в двоичной записи это 10011.
+the maximum of 14 1 7 2 is 14.
+чему равна сумма 14 1 7 2? сумма 14 1 7 2 равна 24.
+20 is not prime.
+двоичный поиск по 12 элементам требует не более 4 шагов.
+what does sorting 9 12 6 give? sorting 9 12 6 gives 6 9 12.
+минимум 9 12 6 равен 6.
+what is at place 4 of 9 12 6? no item at place 4: the list 9 12 6 has 3 items.
+5 в степени 3 равно 125.
+21 in binary is 10101.
+что даёт разворот 2 5 8 11? разворот 2 5 8 11 даёт 11 8 5 2.
+what is the sum of 2 5 8 11? the sum of 2 5 8 11 is 26.
+нок 7 и 21 равен 21.
+binary search on 48 items takes at most 6 steps.
+сортировка 7 7 даёт 7 7.
+the minimum of 7 7 is 7.
+чему равна длина 7 7? длина 7 7 равна 2.
+10 to the power 2 is 100.
+добавив 7 7 в очередь и взяв, получаем 7.
+what does reversing 10 6 1 4 8 give? reversing 10 6 1 4 8 gives 8 4 1 6 10.
+сумма 10 6 1 4 8 равна 29.
+the lcm of 16 and 56 is 112.
+линейный поиск по 1000 элементам требует не более 1000 шагов.
+sorting 11 2 7 gives 2 7 11.
+чему равен максимум 11 2 7? максимум 11 2 7 равен 11.
+what is the length of 11 2 7? the length of 11 2 7 is 3.
+факториал 8 равен 40320.
+adding 11 2 7 to a queue and taking gives 11.
+разворот 5 9 1 3 даёт 3 1 9 5.
+the sum of 5 9 1 3 is 18.
+нод 10 и 15 равен 5.
+linear search on 256 items takes at most 256 steps.
+деление 15 на 10 даёт частное 1 и остаток 5.
+what is the maximum of 12 4? the maximum of 12 4 is 12.
+длина 12 4 равна 2.
+the factorial of 8 is 40320.
+положив 12 4 в стек и сняв, получаем 4.
+reversing 6 8 2 10 4 gives 4 10 2 8 6.
+чему равен минимум 6 8 2 10 4? минимум 6 8 2 10 4 равен 2.
+the gcd of 9 and 18 is 9.
+число фибоначчи номер 18 равно 2584.
+dividing 18 by 9 gives quotient 2 and remainder 0.
+максимум 3 3 9 равен 9.
+the length of 3 3 9 is 3.
+19 простое.
+pushing 3 3 9 on a stack and popping gives 9.
+что даёт сортировка 14 1 7 2? сортировка 14 1 7 2 даёт 1 2 7 14.
+what is the minimum of 14 1 7 2? the minimum of 14 1 7 2 is 1.
+что стои́т на месте 6 в списке 14 1 7 2? на месте 6 нет ничего: в списке 14 1 7 2 всего 4 элементов.
+fibonacci number 20 is 6765.
+20 в двоичной записи это 10100.
+the maximum of 9 12 6 is 12.
+чему равна сумма 9 12 6? сумма 9 12 6 равна 27.
+21 is not prime.
+двоичный поиск по 24 элементам требует не более 5 шагов.
+what does sorting 2 5 8 11 give? sorting 2 5 8 11 gives 2 5 8 11.
+минимум 2 5 8 11 равен 2.
+what is at place 6 of 2 5 8 11? no item at place 6: the list 2 5 8 11 has 4 items.
+4 в степени 8 равно 65536.
+22 in binary is 10110.
+что даёт разворот 7 7? разворот 7 7 даёт 7 7.
+what is the sum of 7 7? the sum of 7 7 is 14.
+нок 25 и 30 равен 150.
+binary search on 100 items takes at most 7 steps.
+сортировка 10 6 1 4 8 даёт 1 4 6 8 10.
+the minimum of 10 6 1 4 8 is 1.
+чему равна длина 10 6 1 4 8? длина 10 6 1 4 8 равна 5.
+6 to the power 4 is 1296.
+добавив 10 6 1 4 8 в очередь и взяв, получаем 10.
+what does reversing 11 2 7 give? reversing 11 2 7 gives 7 2 11.
+сумма 11 2 7 равна 20.
+the lcm of 28 and 49 is 196.
+линейный поиск по 128 элементам требует не более 128 шагов.
+sorting 5 9 1 3 gives 1 3 5 9.
+чему равен максимум 5 9 1 3? максимум 5 9 1 3 равен 9.
+what is the length of 5 9 1 3? the length of 5 9 1 3 is 4.
+факториал 8 равен 40320.
+adding 5 9 1 3 to a queue and taking gives 5.
+разворот 12 4 даёт 4 12.
+the sum of 12 4 is 16.
+нод 24 и 32 равен 8.
+linear search on 6 items takes at most 6 steps.
+деление 32 на 24 даёт частное 1 и остаток 8.
+what is the maximum of 6 8 2 10 4? the maximum of 6 8 2 10 4 is 10.
+длина 6 8 2 10 4 равна 5.
+the factorial of 8 is 40320.
+положив 6 8 2 10 4 в стек и сняв, получаем 4.
+reversing 3 3 9 gives 9 3 3.
+чему равен минимум 3 3 9? минимум 3 3 9 равен 3.
+the gcd of 18 and 30 is 6.
+число фибоначчи номер 19 равно 4181.
+dividing 30 by 18 gives quotient 1 and remainder 12.
+максимум 14 1 7 2 равен 14.
+the length of 14 1 7 2 is 4.
+20 не простое.
+pushing 14 1 7 2 on a stack and popping gives 2.
+что даёт сортировка 9 12 6? сортировка 9 12 6 даёт 6 9 12.
+what is the minimum of 9 12 6? the minimum of 9 12 6 is 6.
+что стои́т на месте 4 в списке 9 12 6? на месте 4 нет ничего: в списке 9 12 6 всего 3 элементов.
+fibonacci number 21 is 10946.
+21 в двоичной записи это 10101.
+the maximum of 2 5 8 11 is 11.
+чему равна сумма 2 5 8 11? сумма 2 5 8 11 равна 26.
+22 is not prime.
+двоичный поиск по 48 элементам требует не более 6 шагов.
+what does sorting 7 7 give? sorting 7 7 gives 7 7.
+минимум 7 7 равен 7.
+what is at place 5 of 7 7? no item at place 5: the list 7 7 has 2 items.
+10 в степени 2 равно 100.
+23 in binary is 10111.
+что даёт разворот 10 6 1 4 8? разворот 10 6 1 4 8 даёт 8 4 1 6 10.
+what is the sum of 10 6 1 4 8? the sum of 10 6 1 4 8 is 29.
+нок 16 и 56 равен 112.
+binary search on 1000 items takes at most 10 steps.
+сортировка 11 2 7 даёт 2 7 11.
+the minimum of 11 2 7 is 2.
+чему равна длина 11 2 7? длина 11 2 7 равна 3.
+4 to the power 5 is 1024.
+добавив 11 2 7 в очередь и взяв, получаем 11.
+what does reversing 5 9 1 3 give? reversing 5 9 1 3 gives 3 1 9 5.
+сумма 5 9 1 3 равна 18.
+the lcm of 10 and 15 is 30.
+линейный поиск по 256 элементам требует не более 256 шагов.
+sorting 12 4 gives 4 12.
+чему равен максимум 12 4? максимум 12 4 равен 12.
+what is the length of 12 4? the length of 12 4 is 2.
+факториал 8 равен 40320.
+adding 12 4 to a queue and taking gives 12.
+разворот 6 8 2 10 4 даёт 4 10 2 8 6.
+the sum of 6 8 2 10 4 is 30.
+нод 9 и 18 равен 9.
+linear search on 7 items takes at most 7 steps.
+деление 18 на 9 даёт частное 2 и остаток 0.
+what is the maximum of 3 3 9? the maximum of 3 3 9 is 9.
+длина 3 3 9 равна 3.
+the factorial of 8 is 40320.
+положив 3 3 9 в стек и сняв, получаем 9.
+reversing 14 1 7 2 gives 2 7 1 14.
+чему равен минимум 14 1 7 2? минимум 14 1 7 2 равен 1.
+the gcd of 8 and 20 is 4.
+число фибоначчи номер 20 равно 6765.
+dividing 20 by 8 gives quotient 2 and remainder 4.
+максимум 9 12 6 равен 12.
+the length of 9 12 6 is 3.
+21 не простое.
+pushing 9 12 6 on a stack and popping gives 6.
+что даёт сортировка 2 5 8 11? сортировка 2 5 8 11 даёт 2 5 8 11.
+what is the minimum of 2 5 8 11? the minimum of 2 5 8 11 is 2.
+что стои́т на месте 6 в списке 2 5 8 11? на месте 6 нет ничего: в списке 2 5 8 11 всего 4 элементов.
+fibonacci number 22 is 17711.
+22 в двоичной записи это 10110.
+the maximum of 7 7 is 7.
+чему равна сумма 7 7? сумма 7 7 равна 14.
+23 is prime.
+двоичный поиск по 100 элементам требует не более 7 шагов.
+what does sorting 10 6 1 4 8 give? sorting 10 6 1 4 8 gives 1 4 6 8 10.
+минимум 10 6 1 4 8 равен 1.
+what is at place 8 of 10 6 1 4 8? no item at place 8: the list 10 6 1 4 8 has 5 items.
+6 в степени 4 равно 1296.
+24 in binary is 11000.
+что даёт разворот 11 2 7? разворот 11 2 7 даёт 7 2 11.
+what is the sum of 11 2 7? the sum of 11 2 7 is 20.
+нок 28 и 49 равен 196.
+binary search on 128 items takes at most 7 steps.
+сортировка 5 9 1 3 даёт 1 3 5 9.
+the minimum of 5 9 1 3 is 1.
+чему равна длина 5 9 1 3? длина 5 9 1 3 равна 4.
+10 to the power 3 is 1000.
+добавив 5 9 1 3 в очередь и взяв, получаем 5.
+what does reversing 12 4 give? reversing 12 4 gives 4 12.
+сумма 12 4 равна 16.
+the lcm of 24 and 32 is 96.
+линейный поиск по 6 элементам требует не более 6 шагов.
+sorting 6 8 2 10 4 gives 2 4 6 8 10.
+чему равен максимум 6 8 2 10 4? максимум 6 8 2 10 4 равен 10.
+what is the length of 6 8 2 10 4? the length of 6 8 2 10 4 is 5.
+факториал 8 равен 40320.
+adding 6 8 2 10 4 to a queue and taking gives 6.
+разворот 3 3 9 даёт 9 3 3.
+the sum of 3 3 9 is 15.
+нод 18 и 30 равен 6.
+linear search on 9 items takes at most 9 steps.
+деление 30 на 18 даёт частное 1 и остаток 12.
+what is the maximum of 14 1 7 2? the maximum of 14 1 7 2 is 14.
+длина 14 1 7 2 равна 4.
+the factorial of 8 is 40320.
+положив 14 1 7 2 в стек и сняв, получаем 2.
+reversing 9 12 6 gives 6 12 9.
+чему равен минимум 9 12 6? минимум 9 12 6 равен 6.
+the gcd of 12 and 15 is 3.
+число фибоначчи номер 21 равно 10946.
+dividing 15 by 12 gives quotient 1 and remainder 3.
+максимум 2 5 8 11 равен 11.
+the length of 2 5 8 11 is 4.
+22 не простое.
+pushing 2 5 8 11 on a stack and popping gives 11.
+что даёт сортировка 7 7? сортировка 7 7 даёт 7 7.
+what is the minimum of 7 7? the minimum of 7 7 is 7.
+что стои́т на месте 5 в списке 7 7? на месте 5 нет ничего: в списке 7 7 всего 2 элементов.
+fibonacci number 23 is 28657.
+23 в двоичной записи это 10111.
+the maximum of 10 6 1 4 8 is 10.
+чему равна сумма 10 6 1 4 8? сумма 10 6 1 4 8 равна 29.
+24 is not prime.
+двоичный поиск по 1000 элементам требует не более 10 шагов.
+
+максимум 13 3 5 равен 13.
+what is the length of 13 3 5? the length of 13 3 5 is 3.
+7 в степени 5 равно 16807.
+dividing 63 by 27 gives quotient 2 and remainder 9.
+чему равен максимум 4 2 9 6? максимум 4 2 9 6 равен 9.
+what is at place 6 of 4 2 9 6? no item at place 6: the list 4 2 9 6 has 4 items.
+число фибоначчи номер 26 равно 121393.
+sorting 8 1 12 5 3 gives 1 3 5 8 12.
+минимум 8 1 12 5 3 равен 1.
 the gcd of 8 and 12 is 4.
-число фибоначчи номер 5 равно 5.
-dividing 12 by 8 gives quotient 1 and remainder 4.
-максимум 3 1 2 равен 3.
-the length of 3 1 2 is 3.
-6 не простое.
-pushing 3 1 2 on a stack and popping gives 2.
-что даёт сортировка 5 4? сортировка 5 4 даёт 4 5.
-what is the minimum of 5 4? the minimum of 5 4 is 4.
-что стои́т на месте 5 в списке 5 4? на месте 5 нет ничего: в списке 5 4 всего 2 элементов.
-fibonacci number 7 is 13.
-7 в двоичной записи это 111.
-the maximum of 7 2 9 1 is 9.
+линейный поиск по 30 элементам требует не более 30 шагов.
+what does sorting 3 1 2 give? sorting 3 1 2 gives 1 2 3.
+чему равен минимум 3 1 2? минимум 3 1 2 равен 1.
+the lcm of 9 and 12 is 36.
+двоичный поиск по 2 элементам требует не более 1 шагов.
+reversing 5 4 gives 4 5.
+сумма 5 4 равна 9.
+6 is not prime.
+положив 5 4 в стек и сняв, получаем 4.
+what does reversing 7 2 9 1 give? reversing 7 2 9 1 gives 1 9 2 7.
 чему равна сумма 7 2 9 1? сумма 7 2 9 1 равна 19.
-8 is not prime.
-двоичный поиск по 3 элементам требует не более 2 шагов.
+the factorial of 7 is 5040.
+добавив 7 2 9 1 в очередь и взяв, получаем 7.
+the maximum of 6 6 2 is 6.
+длина 6 6 2 равна 3.
+6 to the power 3 is 216.
+8 в двоичной записи это 1000.
+what is the maximum of 8 3 5 1 9? the maximum of 8 3 5 1 9 is 9.
+чему равна длина 8 3 5 1 9? длина 8 3 5 1 9 равна 5.
+fibonacci number 9 is 34.
+деление 45 на 36 даёт частное 1 и остаток 9.
+the minimum of 4 10 7 is 4.
+что стои́т на месте 4 в списке 4 10 7? на месте 4 нет ничего: в списке 4 10 7 всего 3 элементов.
+linear search on 64 items takes at most 64 steps.
+сортировка 2 8 даёт 2 8.
+what is the minimum of 2 8? the minimum of 2 8 is 2.
+нод 20 и 24 равен 4.
+binary search on 3 items takes at most 2 steps.
+что даёт сортировка 13 3 5? сортировка 13 3 5 даёт 3 5 13.
+the sum of 13 3 5 is 21.
+нок 27 и 63 равен 189.
+pushing 13 3 5 on a stack and popping gives 5.
+разворот 4 2 9 6 даёт 6 9 2 4.
+what is the sum of 4 2 9 6? the sum of 4 2 9 6 is 21.
+26 не простое.
+adding 4 2 9 6 to a queue and taking gives 4.
+что даёт разворот 8 1 12 5 3? разворот 8 1 12 5 3 даёт 3 5 12 1 8.
+the length of 8 1 12 5 3 is 5.
+факториал 8 равен 40320.
+27 in binary is 11011.
+максимум 3 1 2 равен 3.
+what is the length of 3 1 2? the length of 3 1 2 is 3.
+5 в степени 2 равно 25.
+dividing 12 by 9 gives quotient 1 and remainder 3.
+чему равен максимум 5 4? максимум 5 4 равен 5.
+what is at place 5 of 5 4? no item at place 5: the list 5 4 has 2 items.
+число фибоначчи номер 6 равно 8.
+sorting 7 2 9 1 gives 1 2 7 9.
+минимум 7 2 9 1 равен 1.
+the gcd of 15 and 25 is 5.
+линейный поиск по 8 элементам требует не более 8 шагов.
 what does sorting 6 6 2 give? sorting 6 6 2 gives 2 6 6.
-минимум 6 6 2 равен 2.
+чему равен минимум 6 6 2? минимум 6 6 2 равен 2.
+the lcm of 16 and 40 is 80.
+двоичный поиск по 16 элементам требует не более 4 шагов.
+reversing 8 3 5 1 9 gives 9 1 5 3 8.
+сумма 8 3 5 1 9 равна 26.
+9 is not prime.
+положив 8 3 5 1 9 в стек и сняв, получаем 9.
+what does reversing 4 10 7 give? reversing 4 10 7 gives 7 10 4.
+чему равна сумма 4 10 7? сумма 4 10 7 равна 21.
+the factorial of 8 is 40320.
+добавив 4 10 7 в очередь и взяв, получаем 4.
+the maximum of 2 8 is 8.
+длина 2 8 равна 2.
+3 to the power 4 is 81.
+11 в двоичной записи это 1011.
+what is the maximum of 13 3 5? the maximum of 13 3 5 is 13.
+чему равна длина 13 3 5? длина 13 3 5 равна 3.
+fibonacci number 25 is 75025.
+деление 63 на 27 даёт частное 2 и остаток 9.
+the minimum of 4 2 9 6 is 2.
+что стои́т на месте 6 в списке 4 2 9 6? на месте 6 нет ничего: в списке 4 2 9 6 всего 4 элементов.
+linear search on 50 items takes at most 50 steps.
+сортировка 8 1 12 5 3 даёт 1 3 5 8 12.
+what is the minimum of 8 1 12 5 3? the minimum of 8 1 12 5 3 is 1.
+нод 8 и 12 равен 4.
+binary search on 30 items takes at most 5 steps.
+что даёт сортировка 3 1 2? сортировка 3 1 2 даёт 1 2 3.
+the sum of 3 1 2 is 6.
+нок 9 и 12 равен 36.
+pushing 3 1 2 on a stack and popping gives 2.
+разворот 5 4 даёт 4 5.
+what is the sum of 5 4? the sum of 5 4 is 9.
+6 не простое.
+adding 5 4 to a queue and taking gives 5.
+что даёт разворот 7 2 9 1? разворот 7 2 9 1 даёт 1 9 2 7.
+the length of 7 2 9 1 is 4.
+факториал 7 равен 5040.
+7 in binary is 111.
+максимум 6 6 2 равен 6.
+what is the length of 6 6 2? the length of 6 6 2 is 3.
+6 в степени 3 равно 216.
+dividing 40 by 16 gives quotient 2 and remainder 8.
+чему равен максимум 8 3 5 1 9? максимум 8 3 5 1 9 равен 9.
+what is at place 8 of 8 3 5 1 9? no item at place 8: the list 8 3 5 1 9 has 5 items.
+число фибоначчи номер 9 равно 34.
+sorting 4 10 7 gives 4 7 10.
+минимум 4 10 7 равен 4.
+the gcd of 6 and 18 is 6.
+линейный поиск по 64 элементам требует не более 64 шагов.
+what does sorting 2 8 give? sorting 2 8 gives 2 8.
+чему равен минимум 2 8? минимум 2 8 равен 2.
+the lcm of 20 and 24 is 120.
+двоичный поиск по 3 элементам требует не более 2 шагов.
+reversing 13 3 5 gives 5 3 13.
+сумма 13 3 5 равна 21.
+25 is not prime.
+положив 13 3 5 в стек и сняв, получаем 5.
+what does reversing 4 2 9 6 give? reversing 4 2 9 6 gives 6 9 2 4.
+чему равна сумма 4 2 9 6? сумма 4 2 9 6 равна 21.
+the factorial of 8 is 40320.
+добавив 4 2 9 6 в очередь и взяв, получаем 4.
+the maximum of 8 1 12 5 3 is 12.
+длина 8 1 12 5 3 равна 5.
+3 to the power 8 is 6561.
+27 в двоичной записи это 11011.
+what is the maximum of 3 1 2? the maximum of 3 1 2 is 3.
+чему равна длина 3 1 2? длина 3 1 2 равна 3.
+fibonacci number 5 is 5.
+деление 12 на 9 даёт частное 1 и остаток 3.
+the minimum of 5 4 is 4.
+что стои́т на месте 5 в списке 5 4? на месте 5 нет ничего: в списке 5 4 всего 2 элементов.
+linear search on 4 items takes at most 4 steps.
+сортировка 7 2 9 1 даёт 1 2 7 9.
+what is the minimum of 7 2 9 1? the minimum of 7 2 9 1 is 1.
+нод 15 и 25 равен 5.
+binary search on 8 items takes at most 3 steps.
+что даёт сортировка 6 6 2? сортировка 6 6 2 даёт 2 6 6.
+the sum of 6 6 2 is 14.
+нок 16 и 40 равен 80.
+pushing 6 6 2 on a stack and popping gives 2.
+разворот 8 3 5 1 9 даёт 9 1 5 3 8.
+what is the sum of 8 3 5 1 9? the sum of 8 3 5 1 9 is 26.
+9 не простое.
+adding 8 3 5 1 9 to a queue and taking gives 8.
+что даёт разворот 4 10 7? разворот 4 10 7 даёт 7 10 4.
+the length of 4 10 7 is 3.
+факториал 8 равен 40320.
+10 in binary is 1010.
+максимум 2 8 равен 8.
+what is the length of 2 8? the length of 2 8 is 2.
+3 в степени 4 равно 81.
+dividing 24 by 20 gives quotient 1 and remainder 4.
+чему равен максимум 13 3 5? максимум 13 3 5 равен 13.
+what is at place 4 of 13 3 5? no item at place 4: the list 13 3 5 has 3 items.
+число фибоначчи номер 25 равно 75025.
+sorting 4 2 9 6 gives 2 4 6 9.
+минимум 4 2 9 6 равен 2.
+the gcd of 24 and 42 is 6.
+линейный поиск по 50 элементам требует не более 50 шагов.
+what does sorting 8 1 12 5 3 give? sorting 8 1 12 5 3 gives 1 3 5 8 12.
+чему равен минимум 8 1 12 5 3? минимум 8 1 12 5 3 равен 1.
+the lcm of 8 and 12 is 24.
+двоичный поиск по 30 элементам требует не более 5 шагов.
+reversing 3 1 2 gives 2 1 3.
+сумма 3 1 2 равна 6.
+5 is prime.
+положив 3 1 2 в стек и сняв, получаем 2.
+what does reversing 5 4 give? reversing 5 4 gives 4 5.
+чему равна сумма 5 4? сумма 5 4 равна 9.
+the factorial of 6 is 720.
+добавив 5 4 в очередь и взяв, получаем 5.
+the maximum of 7 2 9 1 is 9.
+длина 7 2 9 1 равна 4.
+10 to the power 5 is 100000.
+7 в двоичной записи это 111.
+what is the maximum of 6 6 2? the maximum of 6 6 2 is 6.
+чему равна длина 6 6 2? длина 6 6 2 равна 3.
+fibonacci number 8 is 21.
+деление 40 на 16 даёт частное 2 и остаток 8.
+the minimum of 8 3 5 1 9 is 1.
+что стои́т на месте 8 в списке 8 3 5 1 9? на месте 8 нет ничего: в списке 8 3 5 1 9 всего 5 элементов.
+linear search on 32 items takes at most 32 steps.
+сортировка 4 10 7 даёт 4 7 10.
+what is the minimum of 4 10 7? the minimum of 4 10 7 is 4.
+нод 6 и 18 равен 6.
+binary search on 64 items takes at most 6 steps.
+что даёт сортировка 2 8? сортировка 2 8 даёт 2 8.
+the sum of 2 8 is 10.
+нок 20 и 24 равен 120.
+pushing 2 8 on a stack and popping gives 8.
+разворот 13 3 5 даёт 5 3 13.
+what is the sum of 13 3 5? the sum of 13 3 5 is 21.
+25 не простое.
+adding 13 3 5 to a queue and taking gives 13.
+что даёт разворот 4 2 9 6? разворот 4 2 9 6 даёт 6 9 2 4.
+the length of 4 2 9 6 is 4.
+факториал 8 равен 40320.
+26 in binary is 11010.
+максимум 8 1 12 5 3 равен 12.
+what is the length of 8 1 12 5 3? the length of 8 1 12 5 3 is 5.
+3 в степени 8 равно 6561.
+dividing 12 by 8 gives quotient 1 and remainder 4.
+чему равен максимум 3 1 2? максимум 3 1 2 равен 3.
+what is at place 4 of 3 1 2? no item at place 4: the list 3 1 2 has 3 items.
+число фибоначчи номер 5 равно 5.
+sorting 5 4 gives 4 5.
+минимум 5 4 равен 4.
+the gcd of 7 and 14 is 7.
+линейный поиск по 4 элементам требует не более 4 шагов.
+what does sorting 7 2 9 1 give? sorting 7 2 9 1 gives 1 2 7 9.
+чему равен минимум 7 2 9 1? минимум 7 2 9 1 равен 1.
+the lcm of 15 and 25 is 75.
+двоичный поиск по 8 элементам требует не более 3 шагов.
+reversing 6 6 2 gives 2 6 6.
+сумма 6 6 2 равна 14.
+8 is not prime.
+положив 6 6 2 в стек и сняв, получаем 2.
+what does reversing 8 3 5 1 9 give? reversing 8 3 5 1 9 gives 9 1 5 3 8.
+чему равна сумма 8 3 5 1 9? сумма 8 3 5 1 9 равна 26.
+the factorial of 8 is 40320.
+добавив 8 3 5 1 9 в очередь и взяв, получаем 8.
+the maximum of 4 10 7 is 10.
+длина 4 10 7 равна 3.
+2 to the power 2 is 4.
+10 в двоичной записи это 1010.
+what is the maximum of 2 8? the maximum of 2 8 is 8.
+чему равна длина 2 8? длина 2 8 равна 2.
+fibonacci number 11 is 89.
+деление 24 на 20 даёт частное 1 и остаток 4.
+the minimum of 13 3 5 is 3.
+что стои́т на месте 4 в списке 13 3 5? на месте 4 нет ничего: в списке 13 3 5 всего 3 элементов.
+linear search on 15 items takes at most 15 steps.
+сортировка 4 2 9 6 даёт 2 4 6 9.
+what is the minimum of 4 2 9 6? the minimum of 4 2 9 6 is 2.
+нод 24 и 42 равен 6.
+binary search on 50 items takes at most 6 steps.
+что даёт сортировка 8 1 12 5 3? сортировка 8 1 12 5 3 даёт 1 3 5 8 12.
+the sum of 8 1 12 5 3 is 29.
+нок 8 и 12 равен 24.
+pushing 8 1 12 5 3 on a stack and popping gives 3.
+разворот 3 1 2 даёт 2 1 3.
+what is the sum of 3 1 2? the sum of 3 1 2 is 6.
+5 простое.
+adding 3 1 2 to a queue and taking gives 3.
+что даёт разворот 5 4? разворот 5 4 даёт 4 5.
+the length of 5 4 is 2.
+факториал 6 равен 720.
+6 in binary is 110.
+максимум 7 2 9 1 равен 9.
+what is the length of 7 2 9 1? the length of 7 2 9 1 is 4.
+10 в степени 5 равно 100000.
+dividing 25 by 15 gives quotient 1 and remainder 10.
+чему равен максимум 6 6 2? максимум 6 6 2 равен 6.
 what is at place 4 of 6 6 2? no item at place 4: the list 6 6 2 has 3 items.
-10 в степени 2 равно 100.
-9 in binary is 1001.
-что даёт разворот 8 3 5 1 9? разворот 8 3 5 1 9 даёт 9 1 5 3 8.
-what is the sum of 8 3 5 1 9? the sum of 8 3 5 1 9 is 26.
-нок 5 и 15 равен 15.
-binary search on 10 items takes at most 4 steps.
-сортировка 4 10 7 даёт 4 7 10.
-the minimum of 4 10 7 is 4.
-чему равна длина 4 10 7? длина 4 10 7 равна 3.
-5 to the power 2 is 25.
-добавив 4 10 7 в очередь и взяв, получаем 4.
-what does reversing 2 8 give? reversing 2 8 gives 8 2.
-сумма 2 8 равна 10.
-the lcm of 7 and 14 is 14.
-линейный поиск по 2 элементам требует не более 2 шагов.
-sorting 9 5 3 7 gives 3 5 7 9.
-чему равен максимум 9 5 3 7? максимум 9 5 3 7 равен 9.
-what is the length of 9 5 3 7? the length of 9 5 3 7 is 4.
-факториал 8 равен 40320.
-adding 9 5 3 7 to a queue and taking gives 9.
-разворот 1 4 2 6 даёт 6 2 4 1.
-the sum of 1 4 2 6 is 13.
-нод 12 и 18 равен 6.
-linear search on 8 items takes at most 8 steps.
-деление 18 на 12 даёт частное 1 и остаток 6.
-what is the maximum of 10 3 8? the maximum of 10 3 8 is 10.
-длина 10 3 8 равна 3.
-the factorial of 5 is 120.
-положив 10 3 8 в стек и сняв, получаем 8.
-reversing 3 1 2 gives 2 1 3.
-чему равен минимум 3 1 2? минимум 3 1 2 равен 1.
-the gcd of 9 and 6 is 3.
-число фибоначчи номер 6 равно 8.
-dividing 9 by 6 gives quotient 1 and remainder 3.
-максимум 5 4 равен 5.
-the length of 5 4 is 2.
-7 простое.
-pushing 5 4 on a stack and popping gives 4.
-что даёт сортировка 7 2 9 1? сортировка 7 2 9 1 даёт 1 2 7 9.
-what is the minimum of 7 2 9 1? the minimum of 7 2 9 1 is 1.
-что стои́т на месте 6 в списке 7 2 9 1? на месте 6 нет ничего: в списке 7 2 9 1 всего 4 элементов.
-fibonacci number 8 is 21.
-8 в двоичной записи это 1000.
-the maximum of 6 6 2 is 6.
-чему равна сумма 6 6 2? сумма 6 6 2 равна 14.
-9 is not prime.
-двоичный поиск по 5 элементам требует не более 3 шагов.
-what does sorting 8 3 5 1 9 give? sorting 8 3 5 1 9 gives 1 3 5 8 9.
-минимум 8 3 5 1 9 равен 1.
-what is at place 8 of 8 3 5 1 9? no item at place 8: the list 8 3 5 1 9 has 5 items.
-2 в степени 5 равно 32.
-10 in binary is 1010.
-что даёт разворот 4 10 7? разворот 4 10 7 даёт 7 10 4.
-what is the sum of 4 10 7? the sum of 4 10 7 is 21.
-нок 18 и 27 равен 54.
-binary search on 20 items takes at most 5 steps.
-сортировка 2 8 даёт 2 8.
-the minimum of 2 8 is 2.
-чему равна длина 2 8? длина 2 8 равна 2.
-3 to the power 4 is 81.
-добавив 2 8 в очередь и взяв, получаем 2.
-what does reversing 9 5 3 7 give? reversing 9 5 3 7 gives 7 3 5 9.
-сумма 9 5 3 7 равна 24.
-the lcm of 20 and 30 is 60.
-линейный поиск по 4 элементам требует не более 4 шагов.
-sorting 1 4 2 6 gives 1 2 4 6.
-чему равен максимум 1 4 2 6? максимум 1 4 2 6 равен 6.
-what is the length of 1 4 2 6? the length of 1 4 2 6 is 4.
-факториал 8 равен 40320.
-adding 1 4 2 6 to a queue and taking gives 1.
-разворот 10 3 8 даёт 8 3 10.
-the sum of 10 3 8 is 21.
-нод 8 и 12 равен 4.
-linear search on 16 items takes at most 16 steps.
-деление 12 на 8 даёт частное 1 и остаток 4.
-what is the maximum of 3 1 2? the maximum of 3 1 2 is 3.
-длина 3 1 2 равна 3.
-the factorial of 6 is 720.
-положив 3 1 2 в стек и сняв, получаем 2.
-reversing 5 4 gives 4 5.
-чему равен минимум 5 4? минимум 5 4 равен 4.
-the gcd of 14 and 21 is 7.
-число фибоначчи номер 7 равно 13.
-dividing 21 by 14 gives quotient 1 and remainder 7.
-максимум 7 2 9 1 равен 9.
-the length of 7 2 9 1 is 4.
-8 не простое.
-pushing 7 2 9 1 on a stack and popping gives 1.
-что даёт сортировка 6 6 2? сортировка 6 6 2 даёт 2 6 6.
-what is the minimum of 6 6 2? the minimum of 6 6 2 is 2.
-что стои́т на месте 4 в списке 6 6 2? на месте 4 нет ничего: в списке 6 6 2 всего 3 элементов.
-fibonacci number 9 is 34.
-9 в двоичной записи это 1001.
-the maximum of 8 3 5 1 9 is 9.
-чему равна сумма 8 3 5 1 9? сумма 8 3 5 1 9 равна 26.
-10 is not prime.
-двоичный поиск по 10 элементам требует не более 4 шагов.
-what does sorting 4 10 7 give? sorting 4 10 7 gives 4 7 10.
-минимум 4 10 7 равен 4.
-what is at place 4 of 4 10 7? no item at place 4: the list 4 10 7 has 3 items.
-5 в степени 2 равно 25.
-11 in binary is 1011.
-что даёт разворот 2 8? разворот 2 8 даёт 8 2.
-what is the sum of 2 8? the sum of 2 8 is 10.
-нок 7 и 14 равен 14.
-binary search on 2 items takes at most 1 step.
-сортировка 9 5 3 7 даёт 3 5 7 9.
-the minimum of 9 5 3 7 is 3.
-чему равна длина 9 5 3 7? длина 9 5 3 7 равна 4.
-6 to the power 2 is 36.
-добавив 9 5 3 7 в очередь и взяв, получаем 9.
-what does reversing 1 4 2 6 give? reversing 1 4 2 6 gives 6 2 4 1.
-сумма 1 4 2 6 равна 13.
-the lcm of 12 and 18 is 36.
-линейный поиск по 8 элементам требует не более 8 шагов.
-sorting 10 3 8 gives 3 8 10.
-чему равен максимум 10 3 8? максимум 10 3 8 равен 10.
-what is the length of 10 3 8? the length of 10 3 8 is 3.
-факториал 5 равен 120.
-adding 10 3 8 to a queue and taking gives 10.
-разворот 3 1 2 даёт 2 1 3.
-the sum of 3 1 2 is 6.
-нод 9 и 6 равен 3.
-linear search on 32 items takes at most 32 steps.
-деление 9 на 6 даёт частное 1 и остаток 3.
-what is the maximum of 5 4? the maximum of 5 4 is 5.
-длина 5 4 равна 2.
-the factorial of 7 is 5040.
-положив 5 4 в стек и сняв, получаем 4.
-reversing 7 2 9 1 gives 1 9 2 7.
-чему равен минимум 7 2 9 1? минимум 7 2 9 1 равен 1.
-the gcd of 10 and 15 is 5.
 число фибоначчи номер 8 равно 21.
-dividing 15 by 10 gives quotient 1 and remainder 5.
-максимум 6 6 2 равен 6.
-the length of 6 6 2 is 3.
-9 не простое.
-pushing 6 6 2 on a stack and popping gives 2.
-что даёт сортировка 8 3 5 1 9? сортировка 8 3 5 1 9 даёт 1 3 5 8 9.
-what is the minimum of 8 3 5 1 9? the minimum of 8 3 5 1 9 is 1.
-что стои́т на месте 8 в списке 8 3 5 1 9? на месте 8 нет ничего: в списке 8 3 5 1 9 всего 5 элементов.
-fibonacci number 10 is 55.
-10 в двоичной записи это 1010.
-the maximum of 4 10 7 is 10.
-чему равна сумма 4 10 7? сумма 4 10 7 равна 21.
-11 is prime.
-двоичный поиск по 20 элементам требует не более 5 шагов.
-what does sorting 2 8 give? sorting 2 8 gives 2 8.
-минимум 2 8 равен 2.
-what is at place 5 of 2 8? no item at place 5: the list 2 8 has 2 items.
-3 в степени 4 равно 81.
-12 in binary is 1100.
-что даёт разворот 9 5 3 7? разворот 9 5 3 7 даёт 7 3 5 9.
-what is the sum of 9 5 3 7? the sum of 9 5 3 7 is 24.
-нок 20 и 30 равен 60.
-binary search on 4 items takes at most 2 steps.
-сортировка 1 4 2 6 даёт 1 2 4 6.
-the minimum of 1 4 2 6 is 1.
-чему равна длина 1 4 2 6? длина 1 4 2 6 равна 4.
-2 to the power 8 is 256.
-добавив 1 4 2 6 в очередь и взяв, получаем 1.
-what does reversing 10 3 8 give? reversing 10 3 8 gives 8 3 10.
-сумма 10 3 8 равна 21.
-the lcm of 8 and 12 is 24.
-линейный поиск по 16 элементам требует не более 16 шагов.
-sorting 3 1 2 gives 1 2 3.
-чему равен максимум 3 1 2? максимум 3 1 2 равен 3.
-what is the length of 3 1 2? the length of 3 1 2 is 3.
-факториал 6 равен 720.
-adding 3 1 2 to a queue and taking gives 3.
-разворот 5 4 даёт 4 5.
-the sum of 5 4 is 9.
-нод 14 и 21 равен 7.
-linear search on 64 items takes at most 64 steps.
-деление 21 на 14 даёт частное 1 и остаток 7.
-what is the maximum of 7 2 9 1? the maximum of 7 2 9 1 is 9.
-длина 7 2 9 1 равна 4.
-the factorial of 8 is 40320.
-положив 7 2 9 1 в стек и сняв, получаем 1.
-reversing 6 6 2 gives 2 6 6.
-чему равен минимум 6 6 2? минимум 6 6 2 равен 2.
-the gcd of 16 and 24 is 8.
-число фибоначчи номер 9 равно 34.
-dividing 24 by 16 gives quotient 1 and remainder 8.
-максимум 8 3 5 1 9 равен 9.
-the length of 8 3 5 1 9 is 5.
-10 не простое.
-pushing 8 3 5 1 9 on a stack and popping gives 9.
-что даёт сортировка 4 10 7? сортировка 4 10 7 даёт 4 7 10.
-what is the minimum of 4 10 7? the minimum of 4 10 7 is 4.
-что стои́т на месте 4 в списке 4 10 7? на месте 4 нет ничего: в списке 4 10 7 всего 3 элементов.
-fibonacci number 11 is 89.
-11 в двоичной записи это 1011.
-the maximum of 2 8 is 8.
-чему равна сумма 2 8? сумма 2 8 равна 10.
-12 is not prime.
-двоичный поиск по 2 элементам требует не более 1 шагов.
-what does sorting 9 5 3 7 give? sorting 9 5 3 7 gives 3 5 7 9.
-минимум 9 5 3 7 равен 3.
-what is at place 6 of 9 5 3 7? no item at place 6: the list 9 5 3 7 has 4 items.
-6 в степени 2 равно 36.
-13 in binary is 1101.
-что даёт разворот 1 4 2 6? разворот 1 4 2 6 даёт 6 2 4 1.
-what is the sum of 1 4 2 6? the sum of 1 4 2 6 is 13.
-нок 12 и 18 равен 36.
-binary search on 8 items takes at most 3 steps.
-сортировка 10 3 8 даёт 3 8 10.
-the minimum of 10 3 8 is 3.
-чему равна длина 10 3 8? длина 10 3 8 равна 3.
-2 to the power 6 is 64.
-добавив 10 3 8 в очередь и взяв, получаем 10.
-what does reversing 3 1 2 give? reversing 3 1 2 gives 2 1 3.
-сумма 3 1 2 равна 6.
-the lcm of 9 and 6 is 18.
-линейный поиск по 32 элементам требует не более 32 шагов.
-sorting 5 4 gives 4 5.
-чему равен максимум 5 4? максимум 5 4 равен 5.
-what is the length of 5 4? the length of 5 4 is 2.
-факториал 7 равен 5040.
-adding 5 4 to a queue and taking gives 5.
-разворот 7 2 9 1 даёт 1 9 2 7.
-the sum of 7 2 9 1 is 19.
-нод 10 и 15 равен 5.
-linear search on 3 items takes at most 3 steps.
-деление 15 на 10 даёт частное 1 и остаток 5.
-what is the maximum of 6 6 2? the maximum of 6 6 2 is 6.
-длина 6 6 2 равна 3.
-the factorial of 8 is 40320.
-положив 6 6 2 в стек и сняв, получаем 2.
-reversing 8 3 5 1 9 gives 9 1 5 3 8.
-чему равен минимум 8 3 5 1 9? минимум 8 3 5 1 9 равен 1.
-the gcd of 5 and 15 is 5.
-число фибоначчи номер 10 равно 55.
-dividing 15 by 5 gives quotient 3 and remainder 0.
-максимум 4 10 7 равен 10.
-the length of 4 10 7 is 3.
-11 простое.
-pushing 4 10 7 on a stack and popping gives 7.
-что даёт сортировка 2 8? сортировка 2 8 даёт 2 8.
-what is the minimum of 2 8? the minimum of 2 8 is 2.
-что стои́т на месте 5 в списке 2 8? на месте 5 нет ничего: в списке 2 8 всего 2 элементов.
-fibonacci number 12 is 144.
-12 в двоичной записи это 1100.
-the maximum of 9 5 3 7 is 9.
-чему равна сумма 9 5 3 7? сумма 9 5 3 7 равна 24.
-13 is prime.
-двоичный поиск по 4 элементам требует не более 2 шагов.
-what does sorting 1 4 2 6 give? sorting 1 4 2 6 gives 1 2 4 6.
-минимум 1 4 2 6 равен 1.
-what is at place 6 of 1 4 2 6? no item at place 6: the list 1 4 2 6 has 4 items.
-2 в степени 8 равно 256.
-15 in binary is 1111.
-что даёт разворот 10 3 8? разворот 10 3 8 даёт 8 3 10.
-what is the sum of 10 3 8? the sum of 10 3 8 is 21.
-нок 8 и 12 равен 24.
-binary search on 16 items takes at most 4 steps.
-сортировка 3 1 2 даёт 1 2 3.
-the minimum of 3 1 2 is 1.
-чему равна длина 3 1 2? длина 3 1 2 равна 3.
-2 to the power 10 is 1024.
-добавив 3 1 2 в очередь и взяв, получаем 3.
-what does reversing 5 4 give? reversing 5 4 gives 4 5.
-сумма 5 4 равна 9.
-the lcm of 14 and 21 is 42.
-линейный поиск по 64 элементам требует не более 64 шагов.
-sorting 7 2 9 1 gives 1 2 7 9.
-чему равен максимум 7 2 9 1? максимум 7 2 9 1 равен 9.
-what is the length of 7 2 9 1? the length of 7 2 9 1 is 4.
-факториал 8 равен 40320.
-adding 7 2 9 1 to a queue and taking gives 7.
-разворот 6 6 2 даёт 2 6 6.
-the sum of 6 6 2 is 14.
-нод 16 и 24 равен 8.
-linear search on 5 items takes at most 5 steps.
-деление 24 на 16 даёт частное 1 и остаток 8.
-what is the maximum of 8 3 5 1 9? the maximum of 8 3 5 1 9 is 9.
-длина 8 3 5 1 9 равна 5.
-the factorial of 8 is 40320.
-положив 8 3 5 1 9 в стек и сняв, получаем 9.
-reversing 4 10 7 gives 7 10 4.
-чему равен минимум 4 10 7? минимум 4 10 7 равен 4.
-the gcd of 18 and 27 is 9.
-число фибоначчи номер 11 равно 89.
-dividing 27 by 18 gives quotient 1 and remainder 9.
-максимум 2 8 равен 8.
-the length of 2 8 is 2.
-12 не простое.
-pushing 2 8 on a stack and popping gives 8.
-что даёт сортировка 9 5 3 7? сортировка 9 5 3 7 даёт 3 5 7 9.
-what is the minimum of 9 5 3 7? the minimum of 9 5 3 7 is 3.
-что стои́т на месте 6 в списке 9 5 3 7? на месте 6 нет ничего: в списке 9 5 3 7 всего 4 элементов.
-fibonacci number 13 is 233.
-13 в двоичной записи это 1101.
-the maximum of 1 4 2 6 is 6.
-чему равна сумма 1 4 2 6? сумма 1 4 2 6 равна 13.
-15 is not prime.
-двоичный поиск по 8 элементам требует не более 3 шагов.
-what does sorting 10 3 8 give? sorting 10 3 8 gives 3 8 10.
-минимум 10 3 8 равен 3.
-what is at place 4 of 10 3 8? no item at place 4: the list 10 3 8 has 3 items.
-2 в степени 6 равно 64.
-5 in binary is 101.
-что даёт разворот 3 1 2? разворот 3 1 2 даёт 2 1 3.
-what is the sum of 3 1 2? the sum of 3 1 2 is 6.
-нок 9 и 6 равен 18.
-binary search on 32 items takes at most 5 steps.
-сортировка 5 4 даёт 4 5.
-the minimum of 5 4 is 4.
-чему равна длина 5 4? длина 5 4 равна 2.
-3 to the power 3 is 27.
-добавив 5 4 в очередь и взяв, получаем 5.
-what does reversing 7 2 9 1 give? reversing 7 2 9 1 gives 1 9 2 7.
-сумма 7 2 9 1 равна 19.
-the lcm of 10 and 15 is 30.
-линейный поиск по 3 элементам требует не более 3 шагов.
-sorting 6 6 2 gives 2 6 6.
-чему равен максимум 6 6 2? максимум 6 6 2 равен 6.
-what is the length of 6 6 2? the length of 6 6 2 is 3.
-факториал 8 равен 40320.
-adding 6 6 2 to a queue and taking gives 6.
-разворот 8 3 5 1 9 даёт 9 1 5 3 8.
-the sum of 8 3 5 1 9 is 26.
-нод 5 и 15 равен 5.
-linear search on 10 items takes at most 10 steps.
-деление 15 на 5 даёт частное 3 и остаток 0.
-what is the maximum of 4 10 7? the maximum of 4 10 7 is 10.
-длина 4 10 7 равна 3.
-the factorial of 8 is 40320.
-положив 4 10 7 в стек и сняв, получаем 7.
-reversing 2 8 gives 8 2.
-чему равен минимум 2 8? минимум 2 8 равен 2.
-the gcd of 7 and 14 is 7.
-число фибоначчи номер 12 равно 144.
-dividing 14 by 7 gives quotient 2 and remainder 0.
-максимум 9 5 3 7 равен 9.
-the length of 9 5 3 7 is 4.
-13 простое.
-pushing 9 5 3 7 on a stack and popping gives 7.
-что даёт сортировка 1 4 2 6? сортировка 1 4 2 6 даёт 1 2 4 6.
-what is the minimum of 1 4 2 6? the minimum of 1 4 2 6 is 1.
-что стои́т на месте 6 в списке 1 4 2 6? на месте 6 нет ничего: в списке 1 4 2 6 всего 4 элементов.
-fibonacci number 15 is 610.
-15 в двоичной записи это 1111.
-the maximum of 10 3 8 is 10.
-чему равна сумма 10 3 8? сумма 10 3 8 равна 21.
-5 is prime.
-двоичный поиск по 16 элементам требует не более 4 шагов.
-what does sorting 3 1 2 give? sorting 3 1 2 gives 1 2 3.
-минимум 3 1 2 равен 1.
-what is at place 4 of 3 1 2? no item at place 4: the list 3 1 2 has 3 items.
-2 в степени 10 равно 1024.
-6 in binary is 110.
-что даёт разворот 5 4? разворот 5 4 даёт 4 5.
-what is the sum of 5 4? the sum of 5 4 is 9.
-нок 14 и 21 равен 42.
-binary search on 64 items takes at most 6 steps.
-сортировка 7 2 9 1 даёт 1 2 7 9.
-the minimum of 7 2 9 1 is 1.
-чему равна длина 7 2 9 1? длина 7 2 9 1 равна 4.
-4 to the power 3 is 64.
-добавив 7 2 9 1 в очередь и взяв, получаем 7.
-what does reversing 6 6 2 give? reversing 6 6 2 gives 2 6 6.
-сумма 6 6 2 равна 14.
-the lcm of 16 and 24 is 48.
-линейный поиск по 5 элементам требует не более 5 шагов.
-sorting 8 3 5 1 9 gives 1 3 5 8 9.
-чему равен максимум 8 3 5 1 9? максимум 8 3 5 1 9 равен 9.
-what is the length of 8 3 5 1 9? the length of 8 3 5 1 9 is 5.
-факториал 8 равен 40320.
-adding 8 3 5 1 9 to a queue and taking gives 8.
-разворот 4 10 7 даёт 7 10 4.
-the sum of 4 10 7 is 21.
-нод 18 и 27 равен 9.
-linear search on 20 items takes at most 20 steps.
-деление 27 на 18 даёт частное 1 и остаток 9.
-what is the maximum of 2 8? the maximum of 2 8 is 8.
-длина 2 8 равна 2.
-the factorial of 8 is 40320.
-положив 2 8 в стек и сняв, получаем 8.
-reversing 9 5 3 7 gives 7 3 5 9.
-чему равен минимум 9 5 3 7? минимум 9 5 3 7 равен 3.
-the gcd of 20 and 30 is 10.
-число фибоначчи номер 13 равно 233.
-dividing 30 by 20 gives quotient 1 and remainder 10.
-максимум 1 4 2 6 равен 6.
-the length of 1 4 2 6 is 4.
-15 не простое.
-pushing 1 4 2 6 on a stack and popping gives 6.
-что даёт сортировка 10 3 8? сортировка 10 3 8 даёт 3 8 10.
-what is the minimum of 10 3 8? the minimum of 10 3 8 is 3.
-что стои́т на месте 4 в списке 10 3 8? на месте 4 нет ничего: в списке 10 3 8 всего 3 элементов.
-fibonacci number 5 is 5.
-5 в двоичной записи это 101.
-the maximum of 3 1 2 is 3.
-чему равна сумма 3 1 2? сумма 3 1 2 равна 6.
-6 is not prime.
-двоичный поиск по 32 элементам требует не более 5 шагов.
-
-максимум 7 2 9 1 равен 9.
-what is the length of 7 2 9 1? the length of 7 2 9 1 is 4.
-2 в степени 8 равно 256.
-dividing 15 by 5 gives quotient 3 and remainder 0.
-чему равен максимум 6 6 2? максимум 6 6 2 равен 6.
-what is at place 4 of 6 6 2? no item at place 4: the list 6 6 2 has 3 items.
-число фибоначчи номер 10 равно 55.
 sorting 8 3 5 1 9 gives 1 3 5 8 9.
 минимум 8 3 5 1 9 равен 1.
-the gcd of 7 and 14 is 7.
-линейный поиск по 8 элементам требует не более 8 шагов.
+the gcd of 36 and 45 is 9.
+линейный поиск по 32 элементам требует не более 32 шагов.
 what does sorting 4 10 7 give? sorting 4 10 7 gives 4 7 10.
 чему равен минимум 4 10 7? минимум 4 10 7 равен 4.
-the lcm of 20 and 30 is 60.
-двоичный поиск по 16 элементам требует не более 4 шагов.
+the lcm of 6 and 18 is 18.
+двоичный поиск по 64 элементам требует не более 6 шагов.
 reversing 2 8 gives 8 2.
 сумма 2 8 равна 10.
-13 is prime.
+11 is prime.
 положив 2 8 в стек и сняв, получаем 8.
-what does reversing 9 5 3 7 give? reversing 9 5 3 7 gives 7 3 5 9.
-чему равна сумма 9 5 3 7? сумма 9 5 3 7 равна 24.
+what does reversing 13 3 5 give? reversing 13 3 5 gives 5 3 13.
+чему равна сумма 13 3 5? сумма 13 3 5 равна 21.
 the factorial of 8 is 40320.
-добавив 9 5 3 7 в очередь и взяв, получаем 9.
-the maximum of 1 4 2 6 is 6.
-длина 1 4 2 6 равна 4.
-2 to the power 5 is 32.
-5 в двоичной записи это 101.
-what is the maximum of 10 3 8? the maximum of 10 3 8 is 10.
-чему равна длина 10 3 8? длина 10 3 8 равна 3.
-fibonacci number 6 is 8.
-деление 21 на 14 даёт частное 1 и остаток 7.
+добавив 13 3 5 в очередь и взяв, получаем 13.
+the maximum of 4 2 9 6 is 9.
+длина 4 2 9 6 равна 4.
+2 to the power 3 is 8.
+26 в двоичной записи это 11010.
+what is the maximum of 8 1 12 5 3? the maximum of 8 1 12 5 3 is 12.
+чему равна длина 8 1 12 5 3? длина 8 1 12 5 3 равна 5.
+fibonacci number 27 is 196418.
+деление 12 на 8 даёт частное 1 и остаток 4.
 the minimum of 3 1 2 is 1.
 что стои́т на месте 4 в списке 3 1 2? на месте 4 нет ничего: в списке 3 1 2 всего 3 элементов.
-linear search on 10 items takes at most 10 steps.
+linear search on 2 items takes at most 2 steps.
 сортировка 5 4 даёт 4 5.
 what is the minimum of 5 4? the minimum of 5 4 is 4.
-нод 16 и 24 равен 8.
-binary search on 20 items takes at most 5 steps.
+нод 7 и 14 равен 7.
+binary search on 4 items takes at most 2 steps.
 что даёт сортировка 7 2 9 1? сортировка 7 2 9 1 даёт 1 2 7 9.
 the sum of 7 2 9 1 is 19.
-нок 5 и 15 равен 15.
+нок 15 и 25 равен 75.
 pushing 7 2 9 1 on a stack and popping gives 1.
 разворот 6 6 2 даёт 2 6 6.
 what is the sum of 6 6 2? the sum of 6 6 2 is 14.
-10 не простое.
+8 не простое.
 adding 6 6 2 to a queue and taking gives 6.
 что даёт разворот 8 3 5 1 9? разворот 8 3 5 1 9 даёт 9 1 5 3 8.
 the length of 8 3 5 1 9 is 5.
 факториал 8 равен 40320.
-11 in binary is 1011.
+9 in binary is 1001.
 максимум 4 10 7 равен 10.
 what is the length of 4 10 7? the length of 4 10 7 is 3.
-3 в степени 3 равно 27.
-dividing 30 by 20 gives quotient 1 and remainder 10.
+2 в степени 2 равно 4.
+dividing 18 by 6 gives quotient 3 and remainder 0.
 чему равен максимум 2 8? максимум 2 8 равен 8.
 what is at place 5 of 2 8? no item at place 5: the list 2 8 has 2 items.
-число фибоначчи номер 13 равно 233.
-sorting 9 5 3 7 gives 3 5 7 9.
-минимум 9 5 3 7 равен 3.
-the gcd of 8 and 12 is 4.
-линейный поиск по 64 элементам требует не более 64 шагов.
-what does sorting 1 4 2 6 give? sorting 1 4 2 6 gives 1 2 4 6.
-чему равен минимум 1 4 2 6? минимум 1 4 2 6 равен 1.
-the lcm of 9 and 6 is 18.
-двоичный поиск по 3 элементам требует не более 2 шагов.
-reversing 10 3 8 gives 8 3 10.
-сумма 10 3 8 равна 21.
-6 is not prime.
-положив 10 3 8 в стек и сняв, получаем 8.
+число фибоначчи номер 11 равно 89.
+sorting 13 3 5 gives 3 5 13.
+минимум 13 3 5 равен 3.
+the gcd of 27 and 63 is 9.
+линейный поиск по 15 элементам требует не более 15 шагов.
+what does sorting 4 2 9 6 give? sorting 4 2 9 6 gives 2 4 6 9.
+чему равен минимум 4 2 9 6? минимум 4 2 9 6 равен 2.
+the lcm of 24 and 42 is 168.
+двоичный поиск по 50 элементам требует не более 6 шагов.
+reversing 8 1 12 5 3 gives 3 5 12 1 8.
+сумма 8 1 12 5 3 равна 29.
+27 is not prime.
+положив 8 1 12 5 3 в стек и сняв, получаем 3.
 what does reversing 3 1 2 give? reversing 3 1 2 gives 2 1 3.
 чему равна сумма 3 1 2? сумма 3 1 2 равна 6.
-the factorial of 7 is 5040.
+the factorial of 5 is 120.
 добавив 3 1 2 в очередь и взяв, получаем 3.
 the maximum of 5 4 is 5.
 длина 5 4 равна 2.
-6 to the power 2 is 36.
-8 в двоичной записи это 1000.
+4 to the power 4 is 256.
+6 в двоичной записи это 110.
 what is the maximum of 7 2 9 1? the maximum of 7 2 9 1 is 9.
 чему равна длина 7 2 9 1? длина 7 2 9 1 равна 4.
-fibonacci number 9 is 34.
-деление 15 на 5 даёт частное 3 и остаток 0.
+fibonacci number 7 is 13.
+деление 25 на 15 даёт частное 1 и остаток 10.
 the minimum of 6 6 2 is 2.
 что стои́т на месте 4 в списке 6 6 2? на месте 4 нет ничего: в списке 6 6 2 всего 3 элементов.
-linear search on 4 items takes at most 4 steps.
+linear search on 16 items takes at most 16 steps.
 сортировка 8 3 5 1 9 даёт 1 3 5 8 9.
 what is the minimum of 8 3 5 1 9? the minimum of 8 3 5 1 9 is 1.
-нод 7 и 14 равен 7.
-binary search on 8 items takes at most 3 steps.
+нод 36 и 45 равен 9.
+binary search on 32 items takes at most 5 steps.
 что даёт сортировка 4 10 7? сортировка 4 10 7 даёт 4 7 10.
 the sum of 4 10 7 is 21.
-нок 20 и 30 равен 60.
+нок 6 и 18 равен 18.
 pushing 4 10 7 on a stack and popping gives 7.
 разворот 2 8 даёт 8 2.
 what is the sum of 2 8? the sum of 2 8 is 10.
-13 простое.
+11 простое.
 adding 2 8 to a queue and taking gives 2.
-что даёт разворот 9 5 3 7? разворот 9 5 3 7 даёт 7 3 5 9.
-the length of 9 5 3 7 is 4.
+что даёт разворот 13 3 5? разворот 13 3 5 даёт 5 3 13.
+the length of 13 3 5 is 3.
 факториал 8 равен 40320.
-15 in binary is 1111.
-максимум 1 4 2 6 равен 6.
-what is the length of 1 4 2 6? the length of 1 4 2 6 is 4.
-2 в степени 5 равно 32.
-dividing 9 by 6 gives quotient 1 and remainder 3.
-чему равен максимум 10 3 8? максимум 10 3 8 равен 10.
-what is at place 4 of 10 3 8? no item at place 4: the list 10 3 8 has 3 items.
-число фибоначчи номер 6 равно 8.
+25 in binary is 11001.
+максимум 4 2 9 6 равен 9.
+what is the length of 4 2 9 6? the length of 4 2 9 6 is 4.
+2 в степени 3 равно 8.
+dividing 42 by 24 gives quotient 1 and remainder 18.
+чему равен максимум 8 1 12 5 3? максимум 8 1 12 5 3 равен 12.
+what is at place 8 of 8 1 12 5 3? no item at place 8: the list 8 1 12 5 3 has 5 items.
+число фибоначчи номер 27 равно 196418.
 sorting 3 1 2 gives 1 2 3.
 минимум 3 1 2 равен 1.
-the gcd of 10 and 15 is 5.
-линейный поиск по 10 элементам требует не более 10 шагов.
+the gcd of 9 and 12 is 3.
+линейный поиск по 2 элементам требует не более 2 шагов.
 what does sorting 5 4 give? sorting 5 4 gives 4 5.
 чему равен минимум 5 4? минимум 5 4 равен 4.
-the lcm of 16 and 24 is 48.
-двоичный поиск по 20 элементам требует не более 5 шагов.
+the lcm of 7 and 14 is 14.
+двоичный поиск по 4 элементам требует не более 2 шагов.
 reversing 7 2 9 1 gives 1 9 2 7.
 сумма 7 2 9 1 равна 19.
-9 is not prime.
+7 is prime.
 положив 7 2 9 1 в стек и сняв, получаем 1.
 what does reversing 6 6 2 give? reversing 6 6 2 gives 2 6 6.
 чему равна сумма 6 6 2? сумма 6 6 2 равна 14.
@@ -1125,1380 +1375,1130 @@ the factorial of 8 is 40320.
 добавив 6 6 2 в очередь и взяв, получаем 6.
 the maximum of 8 3 5 1 9 is 9.
 длина 8 3 5 1 9 равна 5.
-2 to the power 10 is 1024.
-11 в двоичной записи это 1011.
+7 to the power 8 is 5764801.
+9 в двоичной записи это 1001.
 what is the maximum of 4 10 7? the maximum of 4 10 7 is 10.
 чему равна длина 4 10 7? длина 4 10 7 равна 3.
-fibonacci number 12 is 144.
-деление 30 на 20 даёт частное 1 и остаток 10.
+fibonacci number 10 is 55.
+деление 18 на 6 даёт частное 3 и остаток 0.
 the minimum of 2 8 is 2.
 что стои́т на месте 5 в списке 2 8? на месте 5 нет ничего: в списке 2 8 всего 2 элементов.
-linear search on 32 items takes at most 32 steps.
-сортировка 9 5 3 7 даёт 3 5 7 9.
-what is the minimum of 9 5 3 7? the minimum of 9 5 3 7 is 3.
-нод 8 и 12 равен 4.
-binary search on 64 items takes at most 6 steps.
-что даёт сортировка 1 4 2 6? сортировка 1 4 2 6 даёт 1 2 4 6.
-the sum of 1 4 2 6 is 13.
-нок 9 и 6 равен 18.
-pushing 1 4 2 6 on a stack and popping gives 6.
-разворот 10 3 8 даёт 8 3 10.
-what is the sum of 10 3 8? the sum of 10 3 8 is 21.
-6 не простое.
-adding 10 3 8 to a queue and taking gives 10.
+linear search on 3 items takes at most 3 steps.
+сортировка 13 3 5 даёт 3 5 13.
+what is the minimum of 13 3 5? the minimum of 13 3 5 is 3.
+нод 27 и 63 равен 9.
+binary search on 15 items takes at most 4 steps.
+что даёт сортировка 4 2 9 6? сортировка 4 2 9 6 даёт 2 4 6 9.
+the sum of 4 2 9 6 is 21.
+нок 24 и 42 равен 168.
+pushing 4 2 9 6 on a stack and popping gives 6.
+разворот 8 1 12 5 3 даёт 3 5 12 1 8.
+what is the sum of 8 1 12 5 3? the sum of 8 1 12 5 3 is 29.
+27 не простое.
+adding 8 1 12 5 3 to a queue and taking gives 8.
 что даёт разворот 3 1 2? разворот 3 1 2 даёт 2 1 3.
 the length of 3 1 2 is 3.
-факториал 7 равен 5040.
-7 in binary is 111.
+факториал 5 равен 120.
+5 in binary is 101.
 максимум 5 4 равен 5.
 what is the length of 5 4? the length of 5 4 is 2.
-6 в степени 2 равно 36.
-dividing 24 by 16 gives quotient 1 and remainder 8.
+4 в степени 4 равно 256.
+dividing 14 by 7 gives quotient 2 and remainder 0.
 чему равен максимум 7 2 9 1? максимум 7 2 9 1 равен 9.
 what is at place 6 of 7 2 9 1? no item at place 6: the list 7 2 9 1 has 4 items.
-число фибоначчи номер 9 равно 34.
+число фибоначчи номер 7 равно 13.
 sorting 6 6 2 gives 2 6 6.
 минимум 6 6 2 равен 2.
-the gcd of 18 and 27 is 9.
-линейный поиск по 4 элементам требует не более 4 шагов.
+the gcd of 16 and 40 is 8.
+линейный поиск по 16 элементам требует не более 16 шагов.
 what does sorting 8 3 5 1 9 give? sorting 8 3 5 1 9 gives 1 3 5 8 9.
 чему равен минимум 8 3 5 1 9? минимум 8 3 5 1 9 равен 1.
-the lcm of 7 and 14 is 14.
-двоичный поиск по 8 элементам требует не более 3 шагов.
+the lcm of 36 and 45 is 180.
+двоичный поиск по 32 элементам требует не более 5 шагов.
 reversing 4 10 7 gives 7 10 4.
 сумма 4 10 7 равна 21.
-12 is not prime.
+10 is not prime.
 положив 4 10 7 в стек и сняв, получаем 7.
 what does reversing 2 8 give? reversing 2 8 gives 8 2.
 чему равна сумма 2 8? сумма 2 8 равна 10.
 the factorial of 8 is 40320.
 добавив 2 8 в очередь и взяв, получаем 2.
-the maximum of 9 5 3 7 is 9.
-длина 9 5 3 7 равна 4.
-10 to the power 2 is 100.
-15 в двоичной записи это 1111.
-what is the maximum of 1 4 2 6? the maximum of 1 4 2 6 is 6.
-чему равна длина 1 4 2 6? длина 1 4 2 6 равна 4.
-fibonacci number 5 is 5.
-деление 9 на 6 даёт частное 1 и остаток 3.
-the minimum of 10 3 8 is 3.
-что стои́т на месте 4 в списке 10 3 8? на месте 4 нет ничего: в списке 10 3 8 всего 3 элементов.
-linear search on 5 items takes at most 5 steps.
+the maximum of 13 3 5 is 13.
+длина 13 3 5 равна 3.
+7 to the power 5 is 16807.
+25 в двоичной записи это 11001.
+what is the maximum of 4 2 9 6? the maximum of 4 2 9 6 is 9.
+чему равна длина 4 2 9 6? длина 4 2 9 6 равна 4.
+fibonacci number 26 is 121393.
+деление 42 на 24 даёт частное 1 и остаток 18.
+the minimum of 8 1 12 5 3 is 1.
+что стои́т на месте 8 в списке 8 1 12 5 3? на месте 8 нет ничего: в списке 8 1 12 5 3 всего 5 элементов.
+linear search on 30 items takes at most 30 steps.
 сортировка 3 1 2 даёт 1 2 3.
 what is the minimum of 3 1 2? the minimum of 3 1 2 is 1.
-нод 10 и 15 равен 5.
-binary search on 10 items takes at most 4 steps.
+нод 9 и 12 равен 3.
+binary search on 2 items takes at most 1 step.
 что даёт сортировка 5 4? сортировка 5 4 даёт 4 5.
 the sum of 5 4 is 9.
-нок 16 и 24 равен 48.
+нок 7 и 14 равен 14.
 pushing 5 4 on a stack and popping gives 4.
 разворот 7 2 9 1 даёт 1 9 2 7.
 what is the sum of 7 2 9 1? the sum of 7 2 9 1 is 19.
-9 не простое.
+7 простое.
 adding 7 2 9 1 to a queue and taking gives 7.
 что даёт разворот 6 6 2? разворот 6 6 2 даёт 2 6 6.
 the length of 6 6 2 is 3.
 факториал 8 равен 40320.
-10 in binary is 1010.
+8 in binary is 1000.
 максимум 8 3 5 1 9 равен 9.
 what is the length of 8 3 5 1 9? the length of 8 3 5 1 9 is 5.
-2 в степени 10 равно 1024.
-dividing 14 by 7 gives quotient 2 and remainder 0.
+7 в степени 8 равно 5764801.
+dividing 45 by 36 gives quotient 1 and remainder 9.
 чему равен максимум 4 10 7? максимум 4 10 7 равен 10.
 what is at place 4 of 4 10 7? no item at place 4: the list 4 10 7 has 3 items.
-число фибоначчи номер 12 равно 144.
+число фибоначчи номер 10 равно 55.
 sorting 2 8 gives 2 8.
 минимум 2 8 равен 2.
-the gcd of 12 and 18 is 6.
-линейный поиск по 32 элементам требует не более 32 шагов.
-what does sorting 9 5 3 7 give? sorting 9 5 3 7 gives 3 5 7 9.
-чему равен минимум 9 5 3 7? минимум 9 5 3 7 равен 3.
-the lcm of 8 and 12 is 24.
-двоичный поиск по 64 элементам требует не более 6 шагов.
-reversing 1 4 2 6 gives 6 2 4 1.
-сумма 1 4 2 6 равна 13.
-5 is prime.
-положив 1 4 2 6 в стек и сняв, получаем 6.
-what does reversing 10 3 8 give? reversing 10 3 8 gives 8 3 10.
-чему равна сумма 10 3 8? сумма 10 3 8 равна 21.
-the factorial of 6 is 720.
-добавив 10 3 8 в очередь и взяв, получаем 10.
+the gcd of 20 and 24 is 4.
+линейный поиск по 3 элементам требует не более 3 шагов.
+what does sorting 13 3 5 give? sorting 13 3 5 gives 3 5 13.
+чему равен минимум 13 3 5? минимум 13 3 5 равен 3.
+the lcm of 27 and 63 is 189.
+двоичный поиск по 15 элементам требует не более 4 шагов.
+reversing 4 2 9 6 gives 6 9 2 4.
+сумма 4 2 9 6 равна 21.
+26 is not prime.
+положив 4 2 9 6 в стек и сняв, получаем 6.
+what does reversing 8 1 12 5 3 give? reversing 8 1 12 5 3 gives 3 5 12 1 8.
+чему равна сумма 8 1 12 5 3? сумма 8 1 12 5 3 равна 29.
+the factorial of 8 is 40320.
+добавив 8 1 12 5 3 в очередь и взяв, получаем 8.
 the maximum of 3 1 2 is 3.
 длина 3 1 2 равна 3.
-3 to the power 4 is 81.
-7 в двоичной записи это 111.
+5 to the power 2 is 25.
+5 в двоичной записи это 101.
 what is the maximum of 5 4? the maximum of 5 4 is 5.
 чему равна длина 5 4? длина 5 4 равна 2.
-fibonacci number 8 is 21.
-деление 24 на 16 даёт частное 1 и остаток 8.
+fibonacci number 6 is 8.
+деление 14 на 7 даёт частное 2 и остаток 0.
 the minimum of 7 2 9 1 is 1.
 что стои́т на месте 6 в списке 7 2 9 1? на месте 6 нет ничего: в списке 7 2 9 1 всего 4 элементов.
-linear search on 2 items takes at most 2 steps.
+linear search on 8 items takes at most 8 steps.
 сортировка 6 6 2 даёт 2 6 6.
 what is the minimum of 6 6 2? the minimum of 6 6 2 is 2.
-нод 18 и 27 равен 9.
-binary search on 4 items takes at most 2 steps.
+нод 16 и 40 равен 8.
+binary search on 16 items takes at most 4 steps.
 что даёт сортировка 8 3 5 1 9? сортировка 8 3 5 1 9 даёт 1 3 5 8 9.
 the sum of 8 3 5 1 9 is 26.
-нок 7 и 14 равен 14.
+нок 36 и 45 равен 180.
 pushing 8 3 5 1 9 on a stack and popping gives 9.
 разворот 4 10 7 даёт 7 10 4.
 what is the sum of 4 10 7? the sum of 4 10 7 is 21.
-12 не простое.
+10 не простое.
 adding 4 10 7 to a queue and taking gives 4.
 что даёт разворот 2 8? разворот 2 8 даёт 8 2.
 the length of 2 8 is 2.
 факториал 8 равен 40320.
-13 in binary is 1101.
-максимум 9 5 3 7 равен 9.
-what is the length of 9 5 3 7? the length of 9 5 3 7 is 4.
-10 в степени 2 равно 100.
-dividing 12 by 8 gives quotient 1 and remainder 4.
-чему равен максимум 1 4 2 6? максимум 1 4 2 6 равен 6.
-what is at place 6 of 1 4 2 6? no item at place 6: the list 1 4 2 6 has 4 items.
-число фибоначчи номер 5 равно 5.
-sorting 10 3 8 gives 3 8 10.
-минимум 10 3 8 равен 3.
-the gcd of 14 and 21 is 7.
-линейный поиск по 5 элементам требует не более 5 шагов.
-what does sorting 3 1 2 give? sorting 3 1 2 gives 1 2 3.
-чему равен минимум 3 1 2? минимум 3 1 2 равен 1.
-the lcm of 10 and 15 is 30.
-двоичный поиск по 10 элементам требует не более 4 шагов.
-reversing 5 4 gives 4 5.
-сумма 5 4 равна 9.
-8 is not prime.
-положив 5 4 в стек и сняв, получаем 4.
-what does reversing 7 2 9 1 give? reversing 7 2 9 1 gives 1 9 2 7.
-чему равна сумма 7 2 9 1? сумма 7 2 9 1 равна 19.
-the factorial of 8 is 40320.
-добавив 7 2 9 1 в очередь и взяв, получаем 7.
-the maximum of 6 6 2 is 6.
-длина 6 6 2 равна 3.
-2 to the power 6 is 64.
-10 в двоичной записи это 1010.
-what is the maximum of 8 3 5 1 9? the maximum of 8 3 5 1 9 is 9.
-чему равна длина 8 3 5 1 9? длина 8 3 5 1 9 равна 5.
-fibonacci number 11 is 89.
-деление 14 на 7 даёт частное 2 и остаток 0.
-the minimum of 4 10 7 is 4.
-что стои́т на месте 4 в списке 4 10 7? на месте 4 нет ничего: в списке 4 10 7 всего 3 элементов.
-linear search on 16 items takes at most 16 steps.
-сортировка 2 8 даёт 2 8.
-what is the minimum of 2 8? the minimum of 2 8 is 2.
-нод 12 и 18 равен 6.
-binary search on 32 items takes at most 5 steps.
-что даёт сортировка 9 5 3 7? сортировка 9 5 3 7 даёт 3 5 7 9.
-the sum of 9 5 3 7 is 24.
-нок 8 и 12 равен 24.
-pushing 9 5 3 7 on a stack and popping gives 7.
-разворот 1 4 2 6 даёт 6 2 4 1.
-what is the sum of 1 4 2 6? the sum of 1 4 2 6 is 13.
-5 простое.
-adding 1 4 2 6 to a queue and taking gives 1.
-что даёт разворот 10 3 8? разворот 10 3 8 даёт 8 3 10.
-the length of 10 3 8 is 3.
-факториал 6 равен 720.
-6 in binary is 110.
-максимум 3 1 2 равен 3.
-what is the length of 3 1 2? the length of 3 1 2 is 3.
-3 в степени 4 равно 81.
-dividing 15 by 10 gives quotient 1 and remainder 5.
-чему равен максимум 5 4? максимум 5 4 равен 5.
-what is at place 5 of 5 4? no item at place 5: the list 5 4 has 2 items.
-число фибоначчи номер 8 равно 21.
-sorting 7 2 9 1 gives 1 2 7 9.
-минимум 7 2 9 1 равен 1.
-the gcd of 5 and 15 is 5.
-линейный поиск по 2 элементам требует не более 2 шагов.
-what does sorting 6 6 2 give? sorting 6 6 2 gives 2 6 6.
-чему равен минимум 6 6 2? минимум 6 6 2 равен 2.
-the lcm of 18 and 27 is 54.
-двоичный поиск по 4 элементам требует не более 2 шагов.
-reversing 8 3 5 1 9 gives 9 1 5 3 8.
-сумма 8 3 5 1 9 равна 26.
-11 is prime.
-положив 8 3 5 1 9 в стек и сняв, получаем 9.
-what does reversing 4 10 7 give? reversing 4 10 7 gives 7 10 4.
-чему равна сумма 4 10 7? сумма 4 10 7 равна 21.
-the factorial of 8 is 40320.
-добавив 4 10 7 в очередь и взяв, получаем 4.
-the maximum of 2 8 is 8.
-длина 2 8 равна 2.
-4 to the power 3 is 64.
-13 в двоичной записи это 1101.
-what is the maximum of 9 5 3 7? the maximum of 9 5 3 7 is 9.
-чему равна длина 9 5 3 7? длина 9 5 3 7 равна 4.
-fibonacci number 15 is 610.
-деление 12 на 8 даёт частное 1 и остаток 4.
-the minimum of 1 4 2 6 is 1.
-что стои́т на месте 6 в списке 1 4 2 6? на месте 6 нет ничего: в списке 1 4 2 6 всего 4 элементов.
-linear search on 3 items takes at most 3 steps.
-сортировка 10 3 8 даёт 3 8 10.
-what is the minimum of 10 3 8? the minimum of 10 3 8 is 3.
-нод 14 и 21 равен 7.
-binary search on 5 items takes at most 3 steps.
-что даёт сортировка 3 1 2? сортировка 3 1 2 даёт 1 2 3.
-the sum of 3 1 2 is 6.
-нок 10 и 15 равен 30.
-pushing 3 1 2 on a stack and popping gives 2.
-разворот 5 4 даёт 4 5.
-what is the sum of 5 4? the sum of 5 4 is 9.
-8 не простое.
-adding 5 4 to a queue and taking gives 5.
-что даёт разворот 7 2 9 1? разворот 7 2 9 1 даёт 1 9 2 7.
-the length of 7 2 9 1 is 4.
-факториал 8 равен 40320.
-9 in binary is 1001.
-максимум 6 6 2 равен 6.
-what is the length of 6 6 2? the length of 6 6 2 is 3.
-2 в степени 6 равно 64.
-dividing 27 by 18 gives quotient 1 and remainder 9.
-чему равен максимум 8 3 5 1 9? максимум 8 3 5 1 9 равен 9.
-what is at place 8 of 8 3 5 1 9? no item at place 8: the list 8 3 5 1 9 has 5 items.
-число фибоначчи номер 11 равно 89.
-sorting 4 10 7 gives 4 7 10.
-минимум 4 10 7 равен 4.
-the gcd of 20 and 30 is 10.
-линейный поиск по 16 элементам требует не более 16 шагов.
-what does sorting 2 8 give? sorting 2 8 gives 2 8.
-чему равен минимум 2 8? минимум 2 8 равен 2.
-the lcm of 12 and 18 is 36.
-двоичный поиск по 32 элементам требует не более 5 шагов.
-reversing 9 5 3 7 gives 7 3 5 9.
-сумма 9 5 3 7 равна 24.
-15 is not prime.
-положив 9 5 3 7 в стек и сняв, получаем 7.
-what does reversing 1 4 2 6 give? reversing 1 4 2 6 gives 6 2 4 1.
-чему равна сумма 1 4 2 6? сумма 1 4 2 6 равна 13.
-the factorial of 5 is 120.
-добавив 1 4 2 6 в очередь и взяв, получаем 1.
-the maximum of 10 3 8 is 10.
-длина 10 3 8 равна 3.
-5 to the power 2 is 25.
-6 в двоичной записи это 110.
-what is the maximum of 3 1 2? the maximum of 3 1 2 is 3.
-чему равна длина 3 1 2? длина 3 1 2 равна 3.
-fibonacci number 7 is 13.
-деление 15 на 10 даёт частное 1 и остаток 5.
-the minimum of 5 4 is 4.
-что стои́т на месте 5 в списке 5 4? на месте 5 нет ничего: в списке 5 4 всего 2 элементов.
-linear search on 20 items takes at most 20 steps.
-сортировка 7 2 9 1 даёт 1 2 7 9.
-what is the minimum of 7 2 9 1? the minimum of 7 2 9 1 is 1.
-нод 5 и 15 равен 5.
-binary search on 2 items takes at most 1 step.
-что даёт сортировка 6 6 2? сортировка 6 6 2 даёт 2 6 6.
-the sum of 6 6 2 is 14.
-нок 18 и 27 равен 54.
-pushing 6 6 2 on a stack and popping gives 2.
-разворот 8 3 5 1 9 даёт 9 1 5 3 8.
-what is the sum of 8 3 5 1 9? the sum of 8 3 5 1 9 is 26.
-11 простое.
-adding 8 3 5 1 9 to a queue and taking gives 8.
-что даёт разворот 4 10 7? разворот 4 10 7 даёт 7 10 4.
-the length of 4 10 7 is 3.
-факториал 8 равен 40320.
-12 in binary is 1100.
-максимум 2 8 равен 8.
-what is the length of 2 8? the length of 2 8 is 2.
-4 в степени 3 равно 64.
-dividing 18 by 12 gives quotient 1 and remainder 6.
-чему равен максимум 9 5 3 7? максимум 9 5 3 7 равен 9.
-what is at place 6 of 9 5 3 7? no item at place 6: the list 9 5 3 7 has 4 items.
-число фибоначчи номер 15 равно 610.
-sorting 1 4 2 6 gives 1 2 4 6.
-минимум 1 4 2 6 равен 1.
-the gcd of 9 and 6 is 3.
-линейный поиск по 3 элементам требует не более 3 шагов.
-what does sorting 10 3 8 give? sorting 10 3 8 gives 3 8 10.
-чему равен минимум 10 3 8? минимум 10 3 8 равен 3.
-the lcm of 14 and 21 is 42.
-двоичный поиск по 5 элементам требует не более 3 шагов.
-reversing 3 1 2 gives 2 1 3.
-сумма 3 1 2 равна 6.
-7 is prime.
-положив 3 1 2 в стек и сняв, получаем 2.
-what does reversing 5 4 give? reversing 5 4 gives 4 5.
-чему равна сумма 5 4? сумма 5 4 равна 9.
-the factorial of 8 is 40320.
-добавив 5 4 в очередь и взяв, получаем 5.
-the maximum of 7 2 9 1 is 9.
-длина 7 2 9 1 равна 4.
-2 to the power 8 is 256.
-9 в двоичной записи это 1001.
-what is the maximum of 6 6 2? the maximum of 6 6 2 is 6.
-чему равна длина 6 6 2? длина 6 6 2 равна 3.
-fibonacci number 10 is 55.
-деление 27 на 18 даёт частное 1 и остаток 9.
-the minimum of 8 3 5 1 9 is 1.
-что стои́т на месте 8 в списке 8 3 5 1 9? на месте 8 нет ничего: в списке 8 3 5 1 9 всего 5 элементов.
-linear search on 8 items takes at most 8 steps.
-сортировка 4 10 7 даёт 4 7 10.
-what is the minimum of 4 10 7? the minimum of 4 10 7 is 4.
-нод 20 и 30 равен 10.
-binary search on 16 items takes at most 4 steps.
-что даёт сортировка 2 8? сортировка 2 8 даёт 2 8.
-the sum of 2 8 is 10.
-нок 12 и 18 равен 36.
-pushing 2 8 on a stack and popping gives 8.
-разворот 9 5 3 7 даёт 7 3 5 9.
-what is the sum of 9 5 3 7? the sum of 9 5 3 7 is 24.
-15 не простое.
-adding 9 5 3 7 to a queue and taking gives 9.
-что даёт разворот 1 4 2 6? разворот 1 4 2 6 даёт 6 2 4 1.
-the length of 1 4 2 6 is 4.
-факториал 5 равен 120.
-5 in binary is 101.
-максимум 10 3 8 равен 10.
-what is the length of 10 3 8? the length of 10 3 8 is 3.
-5 в степени 2 равно 25.
-dividing 21 by 14 gives quotient 1 and remainder 7.
-чему равен максимум 3 1 2? максимум 3 1 2 равен 3.
-what is at place 4 of 3 1 2? no item at place 4: the list 3 1 2 has 3 items.
-число фибоначчи номер 7 равно 13.
-sorting 5 4 gives 4 5.
-минимум 5 4 равен 4.
-the gcd of 16 and 24 is 8.
-линейный поиск по 20 элементам требует не более 20 шагов.
-what does sorting 7 2 9 1 give? sorting 7 2 9 1 gives 1 2 7 9.
-чему равен минимум 7 2 9 1? минимум 7 2 9 1 равен 1.
-the lcm of 5 and 15 is 15.
-двоичный поиск по 2 элементам требует не более 1 шагов.
-reversing 6 6 2 gives 2 6 6.
-сумма 6 6 2 равна 14.
-10 is not prime.
-положив 6 6 2 в стек и сняв, получаем 2.
-what does reversing 8 3 5 1 9 give? reversing 8 3 5 1 9 gives 9 1 5 3 8.
-чему равна сумма 8 3 5 1 9? сумма 8 3 5 1 9 равна 26.
-the factorial of 8 is 40320.
-добавив 8 3 5 1 9 в очередь и взяв, получаем 8.
-the maximum of 4 10 7 is 10.
-длина 4 10 7 равна 3.
-3 to the power 3 is 27.
-12 в двоичной записи это 1100.
-what is the maximum of 2 8? the maximum of 2 8 is 8.
-чему равна длина 2 8? длина 2 8 равна 2.
-fibonacci number 13 is 233.
-деление 18 на 12 даёт частное 1 и остаток 6.
-the minimum of 9 5 3 7 is 3.
-что стои́т на месте 6 в списке 9 5 3 7? на месте 6 нет ничего: в списке 9 5 3 7 всего 4 элементов.
-linear search on 64 items takes at most 64 steps.
-сортировка 1 4 2 6 даёт 1 2 4 6.
-what is the minimum of 1 4 2 6? the minimum of 1 4 2 6 is 1.
-нод 9 и 6 равен 3.
-binary search on 3 items takes at most 2 steps.
-что даёт сортировка 10 3 8? сортировка 10 3 8 даёт 3 8 10.
-the sum of 10 3 8 is 21.
-нок 14 и 21 равен 42.
-pushing 10 3 8 on a stack and popping gives 8.
-разворот 3 1 2 даёт 2 1 3.
-what is the sum of 3 1 2? the sum of 3 1 2 is 6.
-7 простое.
-adding 3 1 2 to a queue and taking gives 3.
-что даёт разворот 5 4? разворот 5 4 даёт 4 5.
-the length of 5 4 is 2.
-факториал 8 равен 40320.
-8 in binary is 1000.
+11 in binary is 1011.
 
-reversing 6 6 2 gives 2 6 6.
-длина 6 6 2 равна 3.
-linear search on 64 items takes at most 64 steps.
-разворот 8 3 5 1 9 даёт 9 1 5 3 8.
-what is the length of 8 3 5 1 9? the length of 8 3 5 1 9 is 5.
-линейный поиск по 3 элементам требует не более 3 шагов.
-what does reversing 4 10 7 give? reversing 4 10 7 gives 7 10 4.
-чему равна длина 4 10 7? длина 4 10 7 равна 3.
-binary search on 5 items takes at most 3 steps.
-что даёт разворот 2 8? разворот 2 8 даёт 8 2.
-what is at place 5 of 2 8? no item at place 5: the list 2 8 has 2 items.
-двоичный поиск по 10 элементам требует не более 4 шагов.
-the maximum of 9 5 3 7 is 9.
-что стои́т на месте 6 в списке 9 5 3 7? на месте 6 нет ничего: в списке 9 5 3 7 всего 4 элементов.
-pushing 9 5 3 7 on a stack and popping gives 7.
-максимум 1 4 2 6 равен 6.
-the gcd of 10 and 15 is 5.
-положив 1 4 2 6 в стек и сняв, получаем 6.
-what is the maximum of 10 3 8? the maximum of 10 3 8 is 10.
-нод 16 и 24 равен 8.
-adding 10 3 8 to a queue and taking gives 10.
-чему равен максимум 3 1 2? максимум 3 1 2 равен 3.
-the lcm of 5 and 15 is 15.
-добавив 3 1 2 в очередь и взяв, получаем 3.
-the minimum of 5 4 is 4.
-нок 18 и 27 равен 54.
-9 in binary is 1001.
-минимум 7 2 9 1 равен 1.
-10 is not prime.
-10 в двоичной записи это 1010.
-what is the minimum of 6 6 2? the minimum of 6 6 2 is 2.
-11 простое.
-dividing 30 by 20 gives quotient 1 and remainder 10.
-чему равен минимум 8 3 5 1 9? минимум 8 3 5 1 9 равен 1.
-the factorial of 8 is 40320.
-деление 18 на 12 даёт частное 1 и остаток 6.
-the sum of 4 10 7 is 21.
-факториал 8 равен 40320.
-sorting 2 8 gives 2 8.
-сумма 2 8 равна 10.
-2 to the power 8 is 256.
-сортировка 9 5 3 7 даёт 3 5 7 9.
-what is the sum of 9 5 3 7? the sum of 9 5 3 7 is 24.
-2 в степени 6 равно 64.
-what does sorting 1 4 2 6 give? sorting 1 4 2 6 gives 1 2 4 6.
-чему равна сумма 1 4 2 6? сумма 1 4 2 6 равна 13.
-fibonacci number 6 is 8.
-что даёт сортировка 10 3 8? сортировка 10 3 8 даёт 3 8 10.
-the length of 10 3 8 is 3.
-число фибоначчи номер 7 равно 13.
-reversing 3 1 2 gives 2 1 3.
-длина 3 1 2 равна 3.
-linear search on 8 items takes at most 8 steps.
-разворот 5 4 даёт 4 5.
-what is the length of 5 4? the length of 5 4 is 2.
-линейный поиск по 16 элементам требует не более 16 шагов.
-what does reversing 7 2 9 1 give? reversing 7 2 9 1 gives 1 9 2 7.
-чему равна длина 7 2 9 1? длина 7 2 9 1 равна 4.
-binary search on 32 items takes at most 5 steps.
-что даёт разворот 6 6 2? разворот 6 6 2 даёт 2 6 6.
-what is at place 4 of 6 6 2? no item at place 4: the list 6 6 2 has 3 items.
-двоичный поиск по 64 элементам требует не более 6 шагов.
-the maximum of 8 3 5 1 9 is 9.
-что стои́т на месте 8 в списке 8 3 5 1 9? на месте 8 нет ничего: в списке 8 3 5 1 9 всего 5 элементов.
-pushing 8 3 5 1 9 on a stack and popping gives 9.
-максимум 4 10 7 равен 10.
-the gcd of 8 and 12 is 4.
-положив 4 10 7 в стек и сняв, получаем 7.
-what is the maximum of 2 8? the maximum of 2 8 is 8.
-нод 9 и 6 равен 3.
-adding 2 8 to a queue and taking gives 2.
-чему равен максимум 9 5 3 7? максимум 9 5 3 7 равен 9.
-the lcm of 14 and 21 is 42.
-добавив 9 5 3 7 в очередь и взяв, получаем 9.
-the minimum of 1 4 2 6 is 1.
-нок 10 и 15 равен 30.
-6 in binary is 110.
-минимум 10 3 8 равен 3.
-7 is prime.
-7 в двоичной записи это 111.
-what is the minimum of 3 1 2? the minimum of 3 1 2 is 1.
-8 не простое.
-dividing 15 by 5 gives quotient 3 and remainder 0.
-чему равен минимум 5 4? минимум 5 4 равен 4.
-the factorial of 8 is 40320.
-деление 27 на 18 даёт частное 1 и остаток 9.
-the sum of 7 2 9 1 is 19.
-факториал 8 равен 40320.
-sorting 6 6 2 gives 2 6 6.
-сумма 6 6 2 равна 14.
-5 to the power 2 is 25.
-сортировка 8 3 5 1 9 даёт 1 3 5 8 9.
-what is the sum of 8 3 5 1 9? the sum of 8 3 5 1 9 is 26.
-3 в степени 4 равно 81.
-what does sorting 4 10 7 give? sorting 4 10 7 gives 4 7 10.
-чему равна сумма 4 10 7? сумма 4 10 7 равна 21.
-fibonacci number 13 is 233.
-что даёт сортировка 2 8? сортировка 2 8 даёт 2 8.
-the length of 2 8 is 2.
-число фибоначчи номер 15 равно 610.
 reversing 9 5 3 7 gives 7 3 5 9.
 длина 9 5 3 7 равна 4.
-linear search on 20 items takes at most 20 steps.
+linear search on 5 items takes at most 5 steps.
 разворот 1 4 2 6 даёт 6 2 4 1.
 what is the length of 1 4 2 6? the length of 1 4 2 6 is 4.
-линейный поиск по 2 элементам требует не более 2 шагов.
+линейный поиск по 10 элементам требует не более 10 шагов.
 what does reversing 10 3 8 give? reversing 10 3 8 gives 8 3 10.
 чему равна длина 10 3 8? длина 10 3 8 равна 3.
-binary search on 4 items takes at most 2 steps.
-что даёт разворот 3 1 2? разворот 3 1 2 даёт 2 1 3.
-what is at place 4 of 3 1 2? no item at place 4: the list 3 1 2 has 3 items.
-двоичный поиск по 8 элементам требует не более 3 шагов.
-the maximum of 5 4 is 5.
-что стои́т на месте 5 в списке 5 4? на месте 5 нет ничего: в списке 5 4 всего 2 элементов.
-pushing 5 4 on a stack and popping gives 4.
-максимум 7 2 9 1 равен 9.
-the gcd of 7 and 14 is 7.
-положив 7 2 9 1 в стек и сняв, получаем 1.
-what is the maximum of 6 6 2? the maximum of 6 6 2 is 6.
-нод 20 и 30 равен 10.
-adding 6 6 2 to a queue and taking gives 6.
-чему равен максимум 8 3 5 1 9? максимум 8 3 5 1 9 равен 9.
-the lcm of 12 and 18 is 36.
-добавив 8 3 5 1 9 в очередь и взяв, получаем 8.
-the minimum of 4 10 7 is 4.
-нок 8 и 12 равен 24.
-13 in binary is 1101.
-минимум 2 8 равен 2.
-15 is not prime.
-15 в двоичной записи это 1111.
+binary search on 20 items takes at most 5 steps.
+что даёт разворот 11 2 7? разворот 11 2 7 даёт 7 2 11.
+what is at place 4 of 11 2 7? no item at place 4: the list 11 2 7 has 3 items.
+двоичный поиск по 128 элементам требует не более 7 шагов.
+the maximum of 5 9 1 3 is 9.
+что стои́т на месте 6 в списке 5 9 1 3? на месте 6 нет ничего: в списке 5 9 1 3 всего 4 элементов.
+pushing 5 9 1 3 on a stack and popping gives 3.
+максимум 12 4 равен 12.
+the gcd of 6 and 12 is 6.
+положив 12 4 в стек и сняв, получаем 4.
+what is the maximum of 6 8 2 10 4? the maximum of 6 8 2 10 4 is 10.
+нод 12 и 20 равен 4.
+adding 6 8 2 10 4 to a queue and taking gives 6.
+чему равен максимум 3 3 9? максимум 3 3 9 равен 9.
+the lcm of 6 and 15 is 30.
+добавив 3 3 9 в очередь и взяв, получаем 3.
+the minimum of 14 1 7 2 is 1.
+нок 28 и 35 равен 140.
+20 in binary is 10100.
+минимум 9 12 6 равен 6.
+21 is not prime.
+21 в двоичной записи это 10101.
 what is the minimum of 9 5 3 7? the minimum of 9 5 3 7 is 3.
-5 простое.
-dividing 21 by 14 gives quotient 1 and remainder 7.
+12 не простое.
+dividing 21 by 6 gives quotient 3 and remainder 3.
 чему равен минимум 1 4 2 6? минимум 1 4 2 6 равен 1.
-the factorial of 6 is 720.
-деление 15 на 10 даёт частное 1 и остаток 5.
+the factorial of 8 is 40320.
+деление 49 на 21 даёт частное 2 и остаток 7.
 the sum of 10 3 8 is 21.
-факториал 7 равен 5040.
-sorting 3 1 2 gives 1 2 3.
-сумма 3 1 2 равна 6.
-4 to the power 3 is 64.
-сортировка 5 4 даёт 4 5.
-what is the sum of 5 4? the sum of 5 4 is 9.
-10 в степени 2 равно 100.
-what does sorting 7 2 9 1 give? sorting 7 2 9 1 gives 1 2 7 9.
-чему равна сумма 7 2 9 1? сумма 7 2 9 1 равна 19.
-fibonacci number 10 is 55.
-что даёт сортировка 6 6 2? сортировка 6 6 2 даёт 2 6 6.
-the length of 6 6 2 is 3.
-число фибоначчи номер 11 равно 89.
-reversing 8 3 5 1 9 gives 9 1 5 3 8.
-длина 8 3 5 1 9 равна 5.
-linear search on 3 items takes at most 3 steps.
-разворот 4 10 7 даёт 7 10 4.
-what is the length of 4 10 7? the length of 4 10 7 is 3.
-линейный поиск по 5 элементам требует не более 5 шагов.
-what does reversing 2 8 give? reversing 2 8 gives 8 2.
-чему равна длина 2 8? длина 2 8 равна 2.
-binary search on 10 items takes at most 4 steps.
+факториал 8 равен 40320.
+sorting 11 2 7 gives 2 7 11.
+сумма 11 2 7 равна 20.
+6 to the power 2 is 36.
+сортировка 5 9 1 3 даёт 1 3 5 9.
+what is the sum of 5 9 1 3? the sum of 5 9 1 3 is 18.
+7 в степени 4 равно 2401.
+what does sorting 12 4 give? sorting 12 4 gives 4 12.
+чему равна сумма 12 4? сумма 12 4 равна 16.
+fibonacci number 17 is 1597.
+что даёт сортировка 6 8 2 10 4? сортировка 6 8 2 10 4 даёт 2 4 6 8 10.
+the length of 6 8 2 10 4 is 5.
+число фибоначчи номер 18 равно 2584.
+reversing 3 3 9 gives 9 3 3.
+длина 3 3 9 равна 3.
+linear search on 9 items takes at most 9 steps.
+разворот 14 1 7 2 даёт 2 7 1 14.
+what is the length of 14 1 7 2? the length of 14 1 7 2 is 4.
+линейный поиск по 12 элементам требует не более 12 шагов.
+what does reversing 9 12 6 give? reversing 9 12 6 gives 6 12 9.
+чему равна длина 9 12 6? длина 9 12 6 равна 3.
+binary search on 24 items takes at most 5 steps.
 что даёт разворот 9 5 3 7? разворот 9 5 3 7 даёт 7 3 5 9.
 what is at place 6 of 9 5 3 7? no item at place 6: the list 9 5 3 7 has 4 items.
-двоичный поиск по 20 элементам требует не более 5 шагов.
+двоичный поиск по 5 элементам требует не более 3 шагов.
 the maximum of 1 4 2 6 is 6.
 что стои́т на месте 6 в списке 1 4 2 6? на месте 6 нет ничего: в списке 1 4 2 6 всего 4 элементов.
 pushing 1 4 2 6 on a stack and popping gives 6.
 максимум 10 3 8 равен 10.
-the gcd of 16 and 24 is 8.
+the gcd of 20 and 35 is 5.
 положив 10 3 8 в стек и сняв, получаем 8.
-what is the maximum of 3 1 2? the maximum of 3 1 2 is 3.
-нод 5 и 15 равен 5.
-adding 3 1 2 to a queue and taking gives 3.
-чему равен максимум 5 4? максимум 5 4 равен 5.
-the lcm of 18 and 27 is 54.
-добавив 5 4 в очередь и взяв, получаем 5.
-the minimum of 7 2 9 1 is 1.
-нок 7 и 14 равен 14.
-10 in binary is 1010.
-минимум 6 6 2 равен 2.
-11 is prime.
-11 в двоичной записи это 1011.
-what is the minimum of 8 3 5 1 9? the minimum of 8 3 5 1 9 is 1.
-12 не простое.
-dividing 18 by 12 gives quotient 1 and remainder 6.
-чему равен минимум 4 10 7? минимум 4 10 7 равен 4.
+what is the maximum of 11 2 7? the maximum of 11 2 7 is 11.
+нод 16 и 24 равен 8.
+adding 11 2 7 to a queue and taking gives 11.
+чему равен максимум 5 9 1 3? максимум 5 9 1 3 равен 9.
+the lcm of 27 and 36 is 108.
+добавив 5 9 1 3 в очередь и взяв, получаем 5.
+the minimum of 12 4 is 4.
+нок 6 и 12 равен 12.
+17 in binary is 10001.
+минимум 6 8 2 10 4 равен 2.
+18 is not prime.
+18 в двоичной записи это 10010.
+what is the minimum of 3 3 9? the minimum of 3 3 9 is 3.
+19 простое.
+dividing 15 by 6 gives quotient 2 and remainder 3.
+чему равен минимум 14 1 7 2? минимум 14 1 7 2 равен 1.
 the factorial of 8 is 40320.
-деление 12 на 8 даёт частное 1 и остаток 4.
-the sum of 2 8 is 10.
+деление 35 на 28 даёт частное 1 и остаток 7.
+the sum of 9 12 6 is 27.
 факториал 8 равен 40320.
 sorting 9 5 3 7 gives 3 5 7 9.
 сумма 9 5 3 7 равна 24.
-2 to the power 6 is 64.
+5 to the power 5 is 3125.
 сортировка 1 4 2 6 даёт 1 2 4 6.
 what is the sum of 1 4 2 6? the sum of 1 4 2 6 is 13.
-2 в степени 10 равно 1024.
+4 в степени 3 равно 64.
 what does sorting 10 3 8 give? sorting 10 3 8 gives 3 8 10.
 чему равна сумма 10 3 8? сумма 10 3 8 равна 21.
-fibonacci number 7 is 13.
-что даёт сортировка 3 1 2? сортировка 3 1 2 даёт 1 2 3.
-the length of 3 1 2 is 3.
-число фибоначчи номер 8 равно 21.
-reversing 5 4 gives 4 5.
-длина 5 4 равна 2.
-linear search on 16 items takes at most 16 steps.
-разворот 7 2 9 1 даёт 1 9 2 7.
-what is the length of 7 2 9 1? the length of 7 2 9 1 is 4.
-линейный поиск по 32 элементам требует не более 32 шагов.
-what does reversing 6 6 2 give? reversing 6 6 2 gives 2 6 6.
-чему равна длина 6 6 2? длина 6 6 2 равна 3.
-binary search on 64 items takes at most 6 steps.
-что даёт разворот 8 3 5 1 9? разворот 8 3 5 1 9 даёт 9 1 5 3 8.
-what is at place 8 of 8 3 5 1 9? no item at place 8: the list 8 3 5 1 9 has 5 items.
-двоичный поиск по 3 элементам требует не более 2 шагов.
-the maximum of 4 10 7 is 10.
-что стои́т на месте 4 в списке 4 10 7? на месте 4 нет ничего: в списке 4 10 7 всего 3 элементов.
-pushing 4 10 7 on a stack and popping gives 7.
-максимум 2 8 равен 8.
-the gcd of 9 and 6 is 3.
-положив 2 8 в стек и сняв, получаем 8.
+fibonacci number 14 is 377.
+что даёт сортировка 11 2 7? сортировка 11 2 7 даёт 2 7 11.
+the length of 11 2 7 is 3.
+число фибоначчи номер 15 равно 610.
+reversing 5 9 1 3 gives 3 1 9 5.
+длина 5 9 1 3 равна 4.
+linear search on 256 items takes at most 256 steps.
+разворот 12 4 даёт 4 12.
+what is the length of 12 4? the length of 12 4 is 2.
+линейный поиск по 6 элементам требует не более 6 шагов.
+what does reversing 6 8 2 10 4 give? reversing 6 8 2 10 4 gives 4 10 2 8 6.
+чему равна длина 6 8 2 10 4? длина 6 8 2 10 4 равна 5.
+binary search on 7 items takes at most 3 steps.
+что даёт разворот 3 3 9? разворот 3 3 9 даёт 9 3 3.
+what is at place 4 of 3 3 9? no item at place 4: the list 3 3 9 has 3 items.
+двоичный поиск по 9 элементам требует не более 4 шагов.
+the maximum of 14 1 7 2 is 14.
+что стои́т на месте 6 в списке 14 1 7 2? на месте 6 нет ничего: в списке 14 1 7 2 всего 4 элементов.
+pushing 14 1 7 2 on a stack and popping gives 2.
+максимум 9 12 6 равен 12.
+the gcd of 5 and 15 is 5.
+положив 9 12 6 в стек и сняв, получаем 6.
 what is the maximum of 9 5 3 7? the maximum of 9 5 3 7 is 9.
-нод 14 и 21 равен 7.
+нод 6 и 21 равен 3.
 adding 9 5 3 7 to a queue and taking gives 9.
 чему равен максимум 1 4 2 6? максимум 1 4 2 6 равен 6.
-the lcm of 10 and 15 is 30.
+the lcm of 21 and 49 is 147.
 добавив 1 4 2 6 в очередь и взяв, получаем 1.
 the minimum of 10 3 8 is 3.
-нок 16 и 24 равен 48.
-7 in binary is 111.
-минимум 3 1 2 равен 1.
-8 is not prime.
-8 в двоичной записи это 1000.
-what is the minimum of 5 4? the minimum of 5 4 is 4.
-9 не простое.
-dividing 27 by 18 gives quotient 1 and remainder 9.
-чему равен минимум 7 2 9 1? минимум 7 2 9 1 равен 1.
+нок 20 и 35 равен 140.
+14 in binary is 1110.
+минимум 11 2 7 равен 2.
+15 is not prime.
+15 в двоичной записи это 1111.
+what is the minimum of 5 9 1 3? the minimum of 5 9 1 3 is 1.
+16 не простое.
+dividing 36 by 27 gives quotient 1 and remainder 9.
+чему равен минимум 12 4? минимум 12 4 равен 4.
 the factorial of 8 is 40320.
-деление 14 на 7 даёт частное 2 и остаток 0.
-the sum of 6 6 2 is 14.
+деление 12 на 6 даёт частное 2 и остаток 0.
+the sum of 6 8 2 10 4 is 30.
 факториал 8 равен 40320.
-sorting 8 3 5 1 9 gives 1 3 5 8 9.
-сумма 8 3 5 1 9 равна 26.
-3 to the power 4 is 81.
-сортировка 4 10 7 даёт 4 7 10.
-what is the sum of 4 10 7? the sum of 4 10 7 is 21.
-6 в степени 2 равно 36.
-what does sorting 2 8 give? sorting 2 8 gives 2 8.
-чему равна сумма 2 8? сумма 2 8 равна 10.
-fibonacci number 15 is 610.
+sorting 3 3 9 gives 3 3 9.
+сумма 3 3 9 равна 15.
+5 to the power 8 is 390625.
+сортировка 14 1 7 2 даёт 1 2 7 14.
+what is the sum of 14 1 7 2? the sum of 14 1 7 2 is 24.
+4 в степени 2 равно 16.
+what does sorting 9 12 6 give? sorting 9 12 6 gives 6 9 12.
+чему равна сумма 9 12 6? сумма 9 12 6 равна 27.
+fibonacci number 21 is 10946.
 что даёт сортировка 9 5 3 7? сортировка 9 5 3 7 даёт 3 5 7 9.
 the length of 9 5 3 7 is 4.
-число фибоначчи номер 5 равно 5.
+число фибоначчи номер 12 равно 144.
 reversing 1 4 2 6 gives 6 2 4 1.
 длина 1 4 2 6 равна 4.
-linear search on 2 items takes at most 2 steps.
+linear search on 10 items takes at most 10 steps.
 разворот 10 3 8 даёт 8 3 10.
 what is the length of 10 3 8? the length of 10 3 8 is 3.
-линейный поиск по 4 элементам требует не более 4 шагов.
-what does reversing 3 1 2 give? reversing 3 1 2 gives 2 1 3.
-чему равна длина 3 1 2? длина 3 1 2 равна 3.
-binary search on 8 items takes at most 3 steps.
-что даёт разворот 5 4? разворот 5 4 даёт 4 5.
-what is at place 5 of 5 4? no item at place 5: the list 5 4 has 2 items.
-двоичный поиск по 16 элементам требует не более 4 шагов.
-the maximum of 7 2 9 1 is 9.
-что стои́т на месте 6 в списке 7 2 9 1? на месте 6 нет ничего: в списке 7 2 9 1 всего 4 элементов.
-pushing 7 2 9 1 on a stack and popping gives 1.
-максимум 6 6 2 равен 6.
-the gcd of 20 and 30 is 10.
-положив 6 6 2 в стек и сняв, получаем 2.
-what is the maximum of 8 3 5 1 9? the maximum of 8 3 5 1 9 is 9.
-нод 12 и 18 равен 6.
-adding 8 3 5 1 9 to a queue and taking gives 8.
-чему равен максимум 4 10 7? максимум 4 10 7 равен 10.
-the lcm of 8 and 12 is 24.
-добавив 4 10 7 в очередь и взяв, получаем 4.
-the minimum of 2 8 is 2.
-нок 9 и 6 равен 18.
-15 in binary is 1111.
+линейный поиск по 20 элементам требует не более 20 шагов.
+what does reversing 11 2 7 give? reversing 11 2 7 gives 7 2 11.
+чему равна длина 11 2 7? длина 11 2 7 равна 3.
+binary search on 128 items takes at most 7 steps.
+что даёт разворот 5 9 1 3? разворот 5 9 1 3 даёт 3 1 9 5.
+what is at place 6 of 5 9 1 3? no item at place 6: the list 5 9 1 3 has 4 items.
+двоичный поиск по 256 элементам требует не более 8 шагов.
+the maximum of 12 4 is 12.
+что стои́т на месте 5 в списке 12 4? на месте 5 нет ничего: в списке 12 4 всего 2 элементов.
+pushing 12 4 on a stack and popping gives 4.
+максимум 6 8 2 10 4 равен 10.
+the gcd of 12 and 20 is 4.
+положив 6 8 2 10 4 в стек и сняв, получаем 4.
+what is the maximum of 3 3 9? the maximum of 3 3 9 is 9.
+нод 6 и 15 равен 3.
+adding 3 3 9 to a queue and taking gives 3.
+чему равен максимум 14 1 7 2? максимум 14 1 7 2 равен 14.
+the lcm of 28 and 35 is 140.
+добавив 14 1 7 2 в очередь и взяв, получаем 14.
+the minimum of 9 12 6 is 6.
+нок 5 и 15 равен 15.
+21 in binary is 10101.
 минимум 9 5 3 7 равен 3.
-5 is prime.
-5 в двоичной записи это 101.
+12 is not prime.
+12 в двоичной записи это 1100.
 what is the minimum of 1 4 2 6? the minimum of 1 4 2 6 is 1.
-6 не простое.
-dividing 15 by 10 gives quotient 1 and remainder 5.
+13 простое.
+dividing 49 by 21 gives quotient 2 and remainder 7.
 чему равен минимум 10 3 8? минимум 10 3 8 равен 3.
-the factorial of 7 is 5040.
-деление 24 на 16 даёт частное 1 и остаток 8.
-the sum of 3 1 2 is 6.
+the factorial of 8 is 40320.
+деление 35 на 20 даёт частное 1 и остаток 15.
+the sum of 11 2 7 is 20.
 факториал 8 равен 40320.
-sorting 5 4 gives 4 5.
-сумма 5 4 равна 9.
-10 to the power 2 is 100.
-сортировка 7 2 9 1 даёт 1 2 7 9.
-what is the sum of 7 2 9 1? the sum of 7 2 9 1 is 19.
+sorting 5 9 1 3 gives 1 3 5 9.
+сумма 5 9 1 3 равна 18.
+7 to the power 4 is 2401.
+сортировка 12 4 даёт 4 12.
+what is the sum of 12 4? the sum of 12 4 is 16.
 2 в степени 5 равно 32.
-what does sorting 6 6 2 give? sorting 6 6 2 gives 2 6 6.
-чему равна сумма 6 6 2? сумма 6 6 2 равна 14.
-fibonacci number 11 is 89.
-что даёт сортировка 8 3 5 1 9? сортировка 8 3 5 1 9 даёт 1 3 5 8 9.
-the length of 8 3 5 1 9 is 5.
-число фибоначчи номер 12 равно 144.
-reversing 4 10 7 gives 7 10 4.
-длина 4 10 7 равна 3.
-linear search on 5 items takes at most 5 steps.
-разворот 2 8 даёт 8 2.
-what is the length of 2 8? the length of 2 8 is 2.
-линейный поиск по 10 элементам требует не более 10 шагов.
+what does sorting 6 8 2 10 4 give? sorting 6 8 2 10 4 gives 2 4 6 8 10.
+чему равна сумма 6 8 2 10 4? сумма 6 8 2 10 4 равна 30.
+fibonacci number 18 is 2584.
+что даёт сортировка 3 3 9? сортировка 3 3 9 даёт 3 3 9.
+the length of 3 3 9 is 3.
+число фибоначчи номер 19 равно 4181.
+reversing 14 1 7 2 gives 2 7 1 14.
+длина 14 1 7 2 равна 4.
+linear search on 12 items takes at most 12 steps.
+разворот 9 12 6 даёт 6 12 9.
+what is the length of 9 12 6? the length of 9 12 6 is 3.
+линейный поиск по 24 элементам требует не более 24 шагов.
 what does reversing 9 5 3 7 give? reversing 9 5 3 7 gives 7 3 5 9.
 чему равна длина 9 5 3 7? длина 9 5 3 7 равна 4.
-binary search on 20 items takes at most 5 steps.
+binary search on 5 items takes at most 3 steps.
 что даёт разворот 1 4 2 6? разворот 1 4 2 6 даёт 6 2 4 1.
 what is at place 6 of 1 4 2 6? no item at place 6: the list 1 4 2 6 has 4 items.
-двоичный поиск по 2 элементам требует не более 1 шагов.
+двоичный поиск по 10 элементам требует не более 4 шагов.
 the maximum of 10 3 8 is 10.
 что стои́т на месте 4 в списке 10 3 8? на месте 4 нет ничего: в списке 10 3 8 всего 3 элементов.
 pushing 10 3 8 on a stack and popping gives 8.
-максимум 3 1 2 равен 3.
-the gcd of 5 and 15 is 5.
-положив 3 1 2 в стек и сняв, получаем 2.
-what is the maximum of 5 4? the maximum of 5 4 is 5.
-нод 18 и 27 равен 9.
-adding 5 4 to a queue and taking gives 5.
-чему равен максимум 7 2 9 1? максимум 7 2 9 1 равен 9.
-the lcm of 7 and 14 is 14.
-добавив 7 2 9 1 в очередь и взяв, получаем 7.
-the minimum of 6 6 2 is 2.
-нок 20 и 30 равен 60.
-11 in binary is 1011.
-минимум 8 3 5 1 9 равен 1.
-12 is not prime.
-12 в двоичной записи это 1100.
-what is the minimum of 4 10 7? the minimum of 4 10 7 is 4.
-13 простое.
-dividing 12 by 8 gives quotient 1 and remainder 4.
-чему равен минимум 2 8? минимум 2 8 равен 2.
-the factorial of 8 is 40320.
-деление 9 на 6 даёт частное 1 и остаток 3.
-the sum of 9 5 3 7 is 24.
-факториал 5 равен 120.
-sorting 1 4 2 6 gives 1 2 4 6.
-сумма 1 4 2 6 равна 13.
-2 to the power 10 is 1024.
-сортировка 10 3 8 даёт 3 8 10.
-what is the sum of 10 3 8? the sum of 10 3 8 is 21.
-3 в степени 3 равно 27.
-what does sorting 3 1 2 give? sorting 3 1 2 gives 1 2 3.
-чему равна сумма 3 1 2? сумма 3 1 2 равна 6.
-fibonacci number 8 is 21.
-что даёт сортировка 5 4? сортировка 5 4 даёт 4 5.
-the length of 5 4 is 2.
-число фибоначчи номер 9 равно 34.
-reversing 7 2 9 1 gives 1 9 2 7.
-длина 7 2 9 1 равна 4.
-linear search on 32 items takes at most 32 steps.
-разворот 6 6 2 даёт 2 6 6.
-what is the length of 6 6 2? the length of 6 6 2 is 3.
-линейный поиск по 64 элементам требует не более 64 шагов.
-what does reversing 8 3 5 1 9 give? reversing 8 3 5 1 9 gives 9 1 5 3 8.
-чему равна длина 8 3 5 1 9? длина 8 3 5 1 9 равна 5.
-binary search on 3 items takes at most 2 steps.
-что даёт разворот 4 10 7? разворот 4 10 7 даёт 7 10 4.
-what is at place 4 of 4 10 7? no item at place 4: the list 4 10 7 has 3 items.
-двоичный поиск по 5 элементам требует не более 3 шагов.
-the maximum of 2 8 is 8.
-что стои́т на месте 5 в списке 2 8? на месте 5 нет ничего: в списке 2 8 всего 2 элементов.
-pushing 2 8 on a stack and popping gives 8.
-максимум 9 5 3 7 равен 9.
-the gcd of 14 and 21 is 7.
-положив 9 5 3 7 в стек и сняв, получаем 7.
-what is the maximum of 1 4 2 6? the maximum of 1 4 2 6 is 6.
-нод 10 и 15 равен 5.
-adding 1 4 2 6 to a queue and taking gives 1.
-чему равен максимум 10 3 8? максимум 10 3 8 равен 10.
-the lcm of 16 and 24 is 48.
-добавив 10 3 8 в очередь и взяв, получаем 10.
-the minimum of 3 1 2 is 1.
-нок 5 и 15 равен 15.
-8 in binary is 1000.
-минимум 5 4 равен 4.
-9 is not prime.
-9 в двоичной записи это 1001.
-what is the minimum of 7 2 9 1? the minimum of 7 2 9 1 is 1.
-10 не простое.
-dividing 14 by 7 gives quotient 2 and remainder 0.
-чему равен минимум 6 6 2? минимум 6 6 2 равен 2.
-the factorial of 8 is 40320.
-деление 30 на 20 даёт частное 1 и остаток 10.
-the sum of 8 3 5 1 9 is 26.
-факториал 8 равен 40320.
-sorting 4 10 7 gives 4 7 10.
-сумма 4 10 7 равна 21.
-6 to the power 2 is 36.
-сортировка 2 8 даёт 2 8.
-what is the sum of 2 8? the sum of 2 8 is 10.
-2 в степени 8 равно 256.
-what does sorting 9 5 3 7 give? sorting 9 5 3 7 gives 3 5 7 9.
-чему равна сумма 9 5 3 7? сумма 9 5 3 7 равна 24.
-fibonacci number 5 is 5.
-что даёт сортировка 1 4 2 6? сортировка 1 4 2 6 даёт 1 2 4 6.
-the length of 1 4 2 6 is 4.
-число фибоначчи номер 6 равно 8.
-reversing 10 3 8 gives 8 3 10.
-длина 10 3 8 равна 3.
-linear search on 4 items takes at most 4 steps.
-разворот 3 1 2 даёт 2 1 3.
-what is the length of 3 1 2? the length of 3 1 2 is 3.
-линейный поиск по 8 элементам требует не более 8 шагов.
-what does reversing 5 4 give? reversing 5 4 gives 4 5.
-чему равна длина 5 4? длина 5 4 равна 2.
-binary search on 16 items takes at most 4 steps.
-что даёт разворот 7 2 9 1? разворот 7 2 9 1 даёт 1 9 2 7.
-what is at place 6 of 7 2 9 1? no item at place 6: the list 7 2 9 1 has 4 items.
-двоичный поиск по 32 элементам требует не более 5 шагов.
-the maximum of 6 6 2 is 6.
-что стои́т на месте 4 в списке 6 6 2? на месте 4 нет ничего: в списке 6 6 2 всего 3 элементов.
-pushing 6 6 2 on a stack and popping gives 2.
-максимум 8 3 5 1 9 равен 9.
-the gcd of 12 and 18 is 6.
-положив 8 3 5 1 9 в стек и сняв, получаем 9.
-what is the maximum of 4 10 7? the maximum of 4 10 7 is 10.
-нод 8 и 12 равен 4.
-adding 4 10 7 to a queue and taking gives 4.
-чему равен максимум 2 8? максимум 2 8 равен 8.
-the lcm of 9 and 6 is 18.
-добавив 2 8 в очередь и взяв, получаем 2.
-the minimum of 9 5 3 7 is 3.
-нок 14 и 21 равен 42.
-5 in binary is 101.
-минимум 1 4 2 6 равен 1.
-6 is not prime.
-6 в двоичной записи это 110.
-what is the minimum of 10 3 8? the minimum of 10 3 8 is 3.
-7 простое.
-dividing 24 by 16 gives quotient 1 and remainder 8.
-чему равен минимум 3 1 2? минимум 3 1 2 равен 1.
+максимум 11 2 7 равен 11.
+the gcd of 16 and 24 is 8.
+положив 11 2 7 в стек и сняв, получаем 7.
+what is the maximum of 5 9 1 3? the maximum of 5 9 1 3 is 9.
+нод 27 и 36 равен 9.
+adding 5 9 1 3 to a queue and taking gives 5.
+чему равен максимум 12 4? максимум 12 4 равен 12.
+the lcm of 6 and 12 is 12.
+добавив 12 4 в очередь и взяв, получаем 12.
+the minimum of 6 8 2 10 4 is 2.
+нок 12 и 20 равен 60.
+18 in binary is 10010.
+минимум 3 3 9 равен 3.
+19 is prime.
+19 в двоичной записи это 10011.
+what is the minimum of 14 1 7 2? the minimum of 14 1 7 2 is 1.
+20 не простое.
+dividing 35 by 28 gives quotient 1 and remainder 7.
+чему равен минимум 9 12 6? минимум 9 12 6 равен 6.
 the factorial of 8 is 40320.
 деление 15 на 5 даёт частное 3 и остаток 0.
-the sum of 5 4 is 9.
+the sum of 9 5 3 7 is 24.
 факториал 8 равен 40320.
-sorting 7 2 9 1 gives 1 2 7 9.
-сумма 7 2 9 1 равна 19.
-2 to the power 5 is 32.
-сортировка 6 6 2 даёт 2 6 6.
-what is the sum of 6 6 2? the sum of 6 6 2 is 14.
-5 в степени 2 равно 25.
-what does sorting 8 3 5 1 9 give? sorting 8 3 5 1 9 gives 1 3 5 8 9.
-чему равна сумма 8 3 5 1 9? сумма 8 3 5 1 9 равна 26.
+sorting 1 4 2 6 gives 1 2 4 6.
+сумма 1 4 2 6 равна 13.
+4 to the power 3 is 64.
+сортировка 10 3 8 даёт 3 8 10.
+what is the sum of 10 3 8? the sum of 10 3 8 is 21.
+10 в степени 8 равно 100000000.
+what does sorting 11 2 7 give? sorting 11 2 7 gives 2 7 11.
+чему равна сумма 11 2 7? сумма 11 2 7 равна 20.
+fibonacci number 15 is 610.
+что даёт сортировка 5 9 1 3? сортировка 5 9 1 3 даёт 1 3 5 9.
+the length of 5 9 1 3 is 4.
+число фибоначчи номер 16 равно 987.
+reversing 12 4 gives 4 12.
+длина 12 4 равна 2.
+linear search on 6 items takes at most 6 steps.
+разворот 6 8 2 10 4 даёт 4 10 2 8 6.
+what is the length of 6 8 2 10 4? the length of 6 8 2 10 4 is 5.
+линейный поиск по 7 элементам требует не более 7 шагов.
+what does reversing 3 3 9 give? reversing 3 3 9 gives 9 3 3.
+чему равна длина 3 3 9? длина 3 3 9 равна 3.
+binary search on 9 items takes at most 4 steps.
+что даёт разворот 14 1 7 2? разворот 14 1 7 2 даёт 2 7 1 14.
+what is at place 6 of 14 1 7 2? no item at place 6: the list 14 1 7 2 has 4 items.
+двоичный поиск по 12 элементам требует не более 4 шагов.
+the maximum of 9 12 6 is 12.
+что стои́т на месте 4 в списке 9 12 6? на месте 4 нет ничего: в списке 9 12 6 всего 3 элементов.
+pushing 9 12 6 on a stack and popping gives 6.
+максимум 9 5 3 7 равен 9.
+the gcd of 6 and 21 is 3.
+положив 9 5 3 7 в стек и сняв, получаем 7.
+what is the maximum of 1 4 2 6? the maximum of 1 4 2 6 is 6.
+нод 21 и 49 равен 7.
+adding 1 4 2 6 to a queue and taking gives 1.
+чему равен максимум 10 3 8? максимум 10 3 8 равен 10.
+the lcm of 20 and 35 is 140.
+добавив 10 3 8 в очередь и взяв, получаем 10.
+the minimum of 11 2 7 is 2.
+нок 16 и 24 равен 48.
+15 in binary is 1111.
+минимум 5 9 1 3 равен 1.
+16 is not prime.
+16 в двоичной записи это 10000.
+what is the minimum of 12 4? the minimum of 12 4 is 4.
+17 простое.
+dividing 12 by 6 gives quotient 2 and remainder 0.
+чему равен минимум 6 8 2 10 4? минимум 6 8 2 10 4 равен 2.
+the factorial of 8 is 40320.
+деление 20 на 12 даёт частное 1 и остаток 8.
+the sum of 3 3 9 is 15.
+факториал 8 равен 40320.
+sorting 14 1 7 2 gives 1 2 7 14.
+сумма 14 1 7 2 равна 24.
+4 to the power 2 is 16.
+сортировка 9 12 6 даёт 6 9 12.
+what is the sum of 9 12 6? the sum of 9 12 6 is 27.
+10 в степени 4 равно 10000.
+what does sorting 9 5 3 7 give? sorting 9 5 3 7 gives 3 5 7 9.
+чему равна сумма 9 5 3 7? сумма 9 5 3 7 равна 24.
 fibonacci number 12 is 144.
-что даёт сортировка 4 10 7? сортировка 4 10 7 даёт 4 7 10.
-the length of 4 10 7 is 3.
+что даёт сортировка 1 4 2 6? сортировка 1 4 2 6 даёт 1 2 4 6.
+the length of 1 4 2 6 is 4.
 число фибоначчи номер 13 равно 233.
-reversing 2 8 gives 8 2.
-длина 2 8 равна 2.
-linear search on 10 items takes at most 10 steps.
-разворот 9 5 3 7 даёт 7 3 5 9.
-what is the length of 9 5 3 7? the length of 9 5 3 7 is 4.
-линейный поиск по 20 элементам требует не более 20 шагов.
-what does reversing 1 4 2 6 give? reversing 1 4 2 6 gives 6 2 4 1.
-чему равна длина 1 4 2 6? длина 1 4 2 6 равна 4.
-binary search on 2 items takes at most 1 step.
-что даёт разворот 10 3 8? разворот 10 3 8 даёт 8 3 10.
-what is at place 4 of 10 3 8? no item at place 4: the list 10 3 8 has 3 items.
-двоичный поиск по 4 элементам требует не более 2 шагов.
-the maximum of 3 1 2 is 3.
-что стои́т на месте 4 в списке 3 1 2? на месте 4 нет ничего: в списке 3 1 2 всего 3 элементов.
-pushing 3 1 2 on a stack and popping gives 2.
-максимум 5 4 равен 5.
-the gcd of 18 and 27 is 9.
-положив 5 4 в стек и сняв, получаем 4.
-what is the maximum of 7 2 9 1? the maximum of 7 2 9 1 is 9.
-нод 7 и 14 равен 7.
-adding 7 2 9 1 to a queue and taking gives 7.
-чему равен максимум 6 6 2? максимум 6 6 2 равен 6.
-the lcm of 20 and 30 is 60.
-добавив 6 6 2 в очередь и взяв, получаем 6.
-the minimum of 8 3 5 1 9 is 1.
-нок 12 и 18 равен 36.
+reversing 10 3 8 gives 8 3 10.
+длина 10 3 8 равна 3.
+linear search on 20 items takes at most 20 steps.
+разворот 11 2 7 даёт 7 2 11.
+what is the length of 11 2 7? the length of 11 2 7 is 3.
+линейный поиск по 128 элементам требует не более 128 шагов.
+what does reversing 5 9 1 3 give? reversing 5 9 1 3 gives 3 1 9 5.
+чему равна длина 5 9 1 3? длина 5 9 1 3 равна 4.
+binary search on 256 items takes at most 8 steps.
+что даёт разворот 12 4? разворот 12 4 даёт 4 12.
+what is at place 5 of 12 4? no item at place 5: the list 12 4 has 2 items.
+двоичный поиск по 6 элементам требует не более 3 шагов.
+the maximum of 6 8 2 10 4 is 10.
+что стои́т на месте 8 в списке 6 8 2 10 4? на месте 8 нет ничего: в списке 6 8 2 10 4 всего 5 элементов.
+pushing 6 8 2 10 4 on a stack and popping gives 4.
+максимум 3 3 9 равен 9.
+the gcd of 6 and 15 is 3.
+положив 3 3 9 в стек и сняв, получаем 9.
+what is the maximum of 14 1 7 2? the maximum of 14 1 7 2 is 14.
+нод 28 и 35 равен 7.
+adding 14 1 7 2 to a queue and taking gives 14.
+чему равен максимум 9 12 6? максимум 9 12 6 равен 12.
+the lcm of 5 and 15 is 15.
+добавив 9 12 6 в очередь и взяв, получаем 9.
+the minimum of 9 5 3 7 is 3.
+нок 6 и 21 равен 42.
 12 in binary is 1100.
-минимум 4 10 7 равен 4.
+минимум 1 4 2 6 равен 1.
 13 is prime.
 13 в двоичной записи это 1101.
-what is the minimum of 2 8? the minimum of 2 8 is 2.
-15 не простое.
-dividing 9 by 6 gives quotient 1 and remainder 3.
+what is the minimum of 10 3 8? the minimum of 10 3 8 is 3.
+14 не простое.
+dividing 35 by 20 gives quotient 1 and remainder 15.
+чему равен минимум 11 2 7? минимум 11 2 7 равен 2.
+the factorial of 8 is 40320.
+деление 24 на 16 даёт частное 1 и остаток 8.
+the sum of 5 9 1 3 is 18.
+факториал 8 равен 40320.
+sorting 12 4 gives 4 12.
+сумма 12 4 равна 16.
+2 to the power 5 is 32.
+сортировка 6 8 2 10 4 даёт 2 4 6 8 10.
+what is the sum of 6 8 2 10 4? the sum of 6 8 2 10 4 is 30.
+3 в степени 3 равно 27.
+what does sorting 3 3 9 give? sorting 3 3 9 gives 3 3 9.
+чему равна сумма 3 3 9? сумма 3 3 9 равна 15.
+fibonacci number 19 is 4181.
+что даёт сортировка 14 1 7 2? сортировка 14 1 7 2 даёт 1 2 7 14.
+the length of 14 1 7 2 is 4.
+число фибоначчи номер 20 равно 6765.
+reversing 9 12 6 gives 6 12 9.
+длина 9 12 6 равна 3.
+linear search on 24 items takes at most 24 steps.
+разворот 9 5 3 7 даёт 7 3 5 9.
+what is the length of 9 5 3 7? the length of 9 5 3 7 is 4.
+линейный поиск по 5 элементам требует не более 5 шагов.
+what does reversing 1 4 2 6 give? reversing 1 4 2 6 gives 6 2 4 1.
+чему равна длина 1 4 2 6? длина 1 4 2 6 равна 4.
+binary search on 10 items takes at most 4 steps.
+что даёт разворот 10 3 8? разворот 10 3 8 даёт 8 3 10.
+what is at place 4 of 10 3 8? no item at place 4: the list 10 3 8 has 3 items.
+двоичный поиск по 20 элементам требует не более 5 шагов.
+the maximum of 11 2 7 is 11.
+что стои́т на месте 4 в списке 11 2 7? на месте 4 нет ничего: в списке 11 2 7 всего 3 элементов.
+pushing 11 2 7 on a stack and popping gives 7.
+максимум 5 9 1 3 равен 9.
+the gcd of 27 and 36 is 9.
+положив 5 9 1 3 в стек и сняв, получаем 3.
+what is the maximum of 12 4? the maximum of 12 4 is 12.
+нод 6 и 12 равен 6.
+adding 12 4 to a queue and taking gives 12.
+чему равен максимум 6 8 2 10 4? максимум 6 8 2 10 4 равен 10.
+the lcm of 12 and 20 is 60.
+добавив 6 8 2 10 4 в очередь и взяв, получаем 6.
+the minimum of 3 3 9 is 3.
+нок 6 и 15 равен 30.
+19 in binary is 10011.
+минимум 14 1 7 2 равен 1.
+20 is not prime.
+20 в двоичной записи это 10100.
+what is the minimum of 9 12 6? the minimum of 9 12 6 is 6.
+21 не простое.
+dividing 15 by 5 gives quotient 3 and remainder 0.
 чему равен минимум 9 5 3 7? минимум 9 5 3 7 равен 3.
-the factorial of 5 is 120.
-деление 21 на 14 даёт частное 1 и остаток 7.
+the factorial of 8 is 40320.
+деление 21 на 6 даёт частное 3 и остаток 3.
 the sum of 1 4 2 6 is 13.
-факториал 6 равен 720.
+факториал 8 равен 40320.
 sorting 10 3 8 gives 3 8 10.
 сумма 10 3 8 равна 21.
-3 to the power 3 is 27.
-сортировка 3 1 2 даёт 1 2 3.
-what is the sum of 3 1 2? the sum of 3 1 2 is 6.
-4 в степени 3 равно 64.
-what does sorting 5 4 give? sorting 5 4 gives 4 5.
-чему равна сумма 5 4? сумма 5 4 равна 9.
-fibonacci number 9 is 34.
-что даёт сортировка 7 2 9 1? сортировка 7 2 9 1 даёт 1 2 7 9.
-the length of 7 2 9 1 is 4.
-число фибоначчи номер 10 равно 55.
-
-the minimum of 8 3 5 1 9 is 1.
-13 простое.
-sorting 4 10 7 gives 4 7 10.
-чему равна сумма 4 10 7? сумма 4 10 7 равна 21.
-linear search on 4 items takes at most 4 steps.
-что даёт разворот 2 8? разворот 2 8 даёт 8 2.
-the gcd of 10 and 15 is 5.
-добавив 2 8 в очередь и взяв, получаем 2.
-what is the minimum of 9 5 3 7? the minimum of 9 5 3 7 is 3.
-факториал 6 равен 720.
+10 to the power 8 is 100000000.
+сортировка 11 2 7 даёт 2 7 11.
+what is the sum of 11 2 7? the sum of 11 2 7 is 20.
+6 в степени 2 равно 36.
+what does sorting 5 9 1 3 give? sorting 5 9 1 3 gives 1 3 5 9.
+чему равна сумма 5 9 1 3? сумма 5 9 1 3 равна 18.
+fibonacci number 16 is 987.
+что даёт сортировка 12 4? сортировка 12 4 даёт 4 12.
+the length of 12 4 is 2.
+число фибоначчи номер 17 равно 1597.
+reversing 6 8 2 10 4 gives 4 10 2 8 6.
+длина 6 8 2 10 4 равна 5.
+linear search on 7 items takes at most 7 steps.
+разворот 3 3 9 даёт 9 3 3.
+what is the length of 3 3 9? the length of 3 3 9 is 3.
+линейный поиск по 9 элементам требует не более 9 шагов.
+what does reversing 14 1 7 2 give? reversing 14 1 7 2 gives 2 7 1 14.
+чему равна длина 14 1 7 2? длина 14 1 7 2 равна 4.
+binary search on 12 items takes at most 4 steps.
+что даёт разворот 9 12 6? разворот 9 12 6 даёт 6 12 9.
+what is at place 4 of 9 12 6? no item at place 4: the list 9 12 6 has 3 items.
+двоичный поиск по 24 элементам требует не более 5 шагов.
+the maximum of 9 5 3 7 is 9.
+что стои́т на месте 6 в списке 9 5 3 7? на месте 6 нет ничего: в списке 9 5 3 7 всего 4 элементов.
+pushing 9 5 3 7 on a stack and popping gives 7.
+максимум 1 4 2 6 равен 6.
+the gcd of 21 and 49 is 7.
+положив 1 4 2 6 в стек и сняв, получаем 6.
+what is the maximum of 10 3 8? the maximum of 10 3 8 is 10.
+нод 20 и 35 равен 5.
+adding 10 3 8 to a queue and taking gives 10.
+чему равен максимум 11 2 7? максимум 11 2 7 равен 11.
+the lcm of 16 and 24 is 48.
+добавив 11 2 7 в очередь и взяв, получаем 11.
+the minimum of 5 9 1 3 is 1.
+нок 27 и 36 равен 108.
+16 in binary is 10000.
+минимум 12 4 равен 4.
+17 is prime.
+17 в двоичной записи это 10001.
+what is the minimum of 6 8 2 10 4? the minimum of 6 8 2 10 4 is 2.
+18 не простое.
+dividing 20 by 12 gives quotient 1 and remainder 8.
+чему равен минимум 3 3 9? минимум 3 3 9 равен 3.
+the factorial of 8 is 40320.
+деление 15 на 6 даёт частное 2 и остаток 3.
+the sum of 14 1 7 2 is 24.
+факториал 8 равен 40320.
+sorting 9 12 6 gives 6 9 12.
+сумма 9 12 6 равна 27.
+10 to the power 4 is 10000.
+сортировка 9 5 3 7 даёт 3 5 7 9.
+what is the sum of 9 5 3 7? the sum of 9 5 3 7 is 24.
+5 в степени 5 равно 3125.
 what does sorting 1 4 2 6 give? sorting 1 4 2 6 gives 1 2 4 6.
-длина 1 4 2 6 равна 4.
-binary search on 32 items takes at most 5 steps.
-максимум 10 3 8 равен 10.
-the lcm of 18 and 27 is 54.
-8 в двоичной записи это 1000.
+чему равна сумма 1 4 2 6? сумма 1 4 2 6 равна 13.
+fibonacci number 13 is 233.
+что даёт сортировка 10 3 8? сортировка 10 3 8 даёт 3 8 10.
+the length of 10 3 8 is 3.
+число фибоначчи номер 14 равно 377.
+reversing 11 2 7 gives 7 2 11.
+длина 11 2 7 равна 3.
+linear search on 128 items takes at most 128 steps.
+разворот 5 9 1 3 даёт 3 1 9 5.
+what is the length of 5 9 1 3? the length of 5 9 1 3 is 4.
+линейный поиск по 256 элементам требует не более 256 шагов.
+what does reversing 12 4 give? reversing 12 4 gives 4 12.
+чему равна длина 12 4? длина 12 4 равна 2.
+binary search on 6 items takes at most 3 steps.
+что даёт разворот 6 8 2 10 4? разворот 6 8 2 10 4 даёт 4 10 2 8 6.
+what is at place 8 of 6 8 2 10 4? no item at place 8: the list 6 8 2 10 4 has 5 items.
+двоичный поиск по 7 элементам требует не более 3 шагов.
+the maximum of 3 3 9 is 9.
+что стои́т на месте 4 в списке 3 3 9? на месте 4 нет ничего: в списке 3 3 9 всего 3 элементов.
+pushing 3 3 9 on a stack and popping gives 9.
+максимум 14 1 7 2 равен 14.
+the gcd of 28 and 35 is 7.
+положив 14 1 7 2 в стек и сняв, получаем 2.
+what is the maximum of 9 12 6? the maximum of 9 12 6 is 12.
+нод 5 и 15 равен 5.
+adding 9 12 6 to a queue and taking gives 9.
+чему равен максимум 9 5 3 7? максимум 9 5 3 7 равен 9.
+the lcm of 6 and 21 is 42.
+добавив 9 5 3 7 в очередь и взяв, получаем 9.
+the minimum of 1 4 2 6 is 1.
+нок 21 и 49 равен 147.
+13 in binary is 1101.
+минимум 10 3 8 равен 3.
+14 is not prime.
+14 в двоичной записи это 1110.
+what is the minimum of 11 2 7? the minimum of 11 2 7 is 2.
+15 не простое.
+dividing 24 by 16 gives quotient 1 and remainder 8.
+чему равен минимум 5 9 1 3? минимум 5 9 1 3 равен 1.
+the factorial of 8 is 40320.
+деление 36 на 27 даёт частное 1 и остаток 9.
+the sum of 12 4 is 16.
+факториал 8 равен 40320.
+sorting 6 8 2 10 4 gives 2 4 6 8 10.
+сумма 6 8 2 10 4 равна 30.
+3 to the power 3 is 27.
+сортировка 3 3 9 даёт 3 3 9.
+what is the sum of 3 3 9? the sum of 3 3 9 is 15.
+5 в степени 8 равно 390625.
+what does sorting 14 1 7 2 give? sorting 14 1 7 2 gives 1 2 7 14.
+чему равна сумма 14 1 7 2? сумма 14 1 7 2 равна 24.
+fibonacci number 20 is 6765.
+что даёт сортировка 9 12 6? сортировка 9 12 6 даёт 6 9 12.
+the length of 9 12 6 is 3.
+число фибоначчи номер 21 равно 10946.
+
+the minimum of 2 5 8 11 is 2.
+22 не простое.
+sorting 7 7 gives 7 7.
+чему равна сумма 7 7? сумма 7 7 равна 14.
+linear search on 100 items takes at most 100 steps.
+что даёт разворот 10 6 1 4 8? разворот 10 6 1 4 8 даёт 8 4 1 6 10.
+the gcd of 18 and 42 is 6.
+добавив 10 6 1 4 8 в очередь и взяв, получаем 10.
+what is the minimum of 13 3 5? the minimum of 13 3 5 is 3.
+факториал 8 равен 40320.
+what does sorting 4 2 9 6 give? sorting 4 2 9 6 gives 2 4 6 9.
+длина 4 2 9 6 равна 4.
+binary search on 50 items takes at most 6 steps.
+максимум 8 1 12 5 3 равен 12.
+the lcm of 21 and 28 is 84.
+27 в двоичной записи это 11011.
 the sum of 3 1 2 is 6.
-2 в степени 8 равно 256.
+10 в степени 3 равно 1000.
 reversing 5 4 gives 4 5.
 чему равна длина 5 4? длина 5 4 равна 2.
 pushing 5 4 on a stack and popping gives 4.
 чему равен максимум 7 2 9 1? максимум 7 2 9 1 равен 9.
-11 is prime.
-деление 18 на 12 даёт частное 1 и остаток 6.
+7 is prime.
+деление 45 на 18 даёт частное 2 и остаток 9.
 what is the sum of 6 6 2? the sum of 6 6 2 is 14.
-число фибоначчи номер 12 равно 144.
-what does reversing 8 3 5 1 9 give? reversing 8 3 5 1 9 gives 9 1 5 3 8.
-что стои́т на месте 8 в списке 8 3 5 1 9? на месте 8 нет ничего: в списке 8 3 5 1 9 всего 5 элементов.
-adding 8 3 5 1 9 to a queue and taking gives 8.
-минимум 4 10 7 равен 4.
+число фибоначчи номер 8 равно 21.
+what does reversing 2 5 8 11 give? reversing 2 5 8 11 gives 11 8 5 2.
+что стои́т на месте 6 в списке 2 5 8 11? на месте 6 нет ничего: в списке 2 5 8 11 всего 4 элементов.
+adding 2 5 8 11 to a queue and taking gives 2.
+минимум 7 7 равен 7.
 the factorial of 8 is 40320.
-сортировка 2 8 даёт 2 8.
-the length of 2 8 is 2.
-линейный поиск по 8 элементам требует не более 8 шагов.
-the maximum of 9 5 3 7 is 9.
-нод 16 и 24 равен 8.
-6 in binary is 110.
-чему равен минимум 1 4 2 6? минимум 1 4 2 6 равен 1.
-3 to the power 4 is 81.
-что даёт сортировка 10 3 8? сортировка 10 3 8 даёт 3 8 10.
-what is the length of 10 3 8? the length of 10 3 8 is 3.
-двоичный поиск по 64 элементам требует не более 6 шагов.
+сортировка 10 6 1 4 8 даёт 1 4 6 8 10.
+the length of 10 6 1 4 8 is 5.
+линейный поиск по 1000 элементам требует не более 1000 шагов.
+the maximum of 13 3 5 is 13.
+нод 16 и 28 равен 4.
+25 in binary is 11001.
+чему равен минимум 4 2 9 6? минимум 4 2 9 6 равен 2.
+5 to the power 4 is 625.
+что даёт сортировка 8 1 12 5 3? сортировка 8 1 12 5 3 даёт 1 3 5 8 12.
+what is the length of 8 1 12 5 3? the length of 8 1 12 5 3 is 5.
+двоичный поиск по 30 элементам требует не более 5 шагов.
 what is the maximum of 3 1 2? the maximum of 3 1 2 is 3.
-нок 7 и 14 равен 14.
-dividing 14 by 7 gives quotient 2 and remainder 0.
+нок 5 и 10 равен 10.
+dividing 10 by 5 gives quotient 2 and remainder 0.
 сумма 5 4 равна 9.
-fibonacci number 10 is 55.
+fibonacci number 6 is 8.
 разворот 7 2 9 1 даёт 1 9 2 7.
 what is at place 6 of 7 2 9 1? no item at place 6: the list 7 2 9 1 has 4 items.
 положив 7 2 9 1 в стек и сняв, получаем 1.
 the minimum of 6 6 2 is 2.
-12 не простое.
-sorting 8 3 5 1 9 gives 1 3 5 8 9.
-чему равна сумма 8 3 5 1 9? сумма 8 3 5 1 9 равна 26.
-linear search on 2 items takes at most 2 steps.
-что даёт разворот 4 10 7? разворот 4 10 7 даёт 7 10 4.
-the gcd of 14 and 21 is 7.
-добавив 4 10 7 в очередь и взяв, получаем 4.
-what is the minimum of 2 8? the minimum of 2 8 is 2.
-факториал 5 равен 120.
-what does sorting 9 5 3 7 give? sorting 9 5 3 7 gives 3 5 7 9.
-длина 9 5 3 7 равна 4.
-binary search on 16 items takes at most 4 steps.
-максимум 1 4 2 6 равен 6.
-the lcm of 5 and 15 is 15.
-7 в двоичной записи это 111.
-the sum of 10 3 8 is 21.
-6 в степени 2 равно 36.
+8 не простое.
+sorting 2 5 8 11 gives 2 5 8 11.
+чему равна сумма 2 5 8 11? сумма 2 5 8 11 равна 26.
+linear search on 48 items takes at most 48 steps.
+что даёт разворот 7 7? разворот 7 7 даёт 7 7.
+the gcd of 18 and 63 is 9.
+добавив 7 7 в очередь и взяв, получаем 7.
+what is the minimum of 10 6 1 4 8? the minimum of 10 6 1 4 8 is 1.
+факториал 8 равен 40320.
+what does sorting 13 3 5 give? sorting 13 3 5 gives 3 5 13.
+длина 13 3 5 равна 3.
+binary search on 15 items takes at most 4 steps.
+максимум 4 2 9 6 равен 9.
+the lcm of 6 and 9 is 18.
+26 в двоичной записи это 11010.
+the sum of 8 1 12 5 3 is 29.
+4 в степени 5 равно 1024.
 reversing 3 1 2 gives 2 1 3.
 чему равна длина 3 1 2? длина 3 1 2 равна 3.
 pushing 3 1 2 on a stack and popping gives 2.
 чему равен максимум 5 4? максимум 5 4 равен 5.
-10 is not prime.
-деление 30 на 20 даёт частное 1 и остаток 10.
+6 is not prime.
+деление 40 на 24 даёт частное 1 и остаток 16.
 what is the sum of 7 2 9 1? the sum of 7 2 9 1 is 19.
-число фибоначчи номер 11 равно 89.
+число фибоначчи номер 7 равно 13.
 what does reversing 6 6 2 give? reversing 6 6 2 gives 2 6 6.
 что стои́т на месте 4 в списке 6 6 2? на месте 4 нет ничего: в списке 6 6 2 всего 3 элементов.
 adding 6 6 2 to a queue and taking gives 6.
-минимум 8 3 5 1 9 равен 1.
+минимум 2 5 8 11 равен 2.
 the factorial of 8 is 40320.
-сортировка 4 10 7 даёт 4 7 10.
-the length of 4 10 7 is 3.
-линейный поиск по 4 элементам требует не более 4 шагов.
-the maximum of 2 8 is 8.
-нод 10 и 15 равен 5.
-5 in binary is 101.
-чему равен минимум 9 5 3 7? минимум 9 5 3 7 равен 3.
-5 to the power 2 is 25.
-что даёт сортировка 1 4 2 6? сортировка 1 4 2 6 даёт 1 2 4 6.
-what is the length of 1 4 2 6? the length of 1 4 2 6 is 4.
-двоичный поиск по 32 элементам требует не более 5 шагов.
-what is the maximum of 10 3 8? the maximum of 10 3 8 is 10.
-нок 18 и 27 равен 54.
-dividing 27 by 18 gives quotient 1 and remainder 9.
+сортировка 7 7 даёт 7 7.
+the length of 7 7 is 2.
+линейный поиск по 100 элементам требует не более 100 шагов.
+the maximum of 10 6 1 4 8 is 10.
+нод 18 и 42 равен 6.
+24 in binary is 11000.
+чему равен минимум 13 3 5? минимум 13 3 5 равен 3.
+3 to the power 2 is 9.
+что даёт сортировка 4 2 9 6? сортировка 4 2 9 6 даёт 2 4 6 9.
+what is the length of 4 2 9 6? the length of 4 2 9 6 is 4.
+двоичный поиск по 50 элементам требует не более 6 шагов.
+what is the maximum of 8 1 12 5 3? the maximum of 8 1 12 5 3 is 12.
+нок 21 и 28 равен 84.
+dividing 28 by 21 gives quotient 1 and remainder 7.
 сумма 3 1 2 равна 6.
-fibonacci number 9 is 34.
+fibonacci number 5 is 5.
 разворот 5 4 даёт 4 5.
 what is at place 5 of 5 4? no item at place 5: the list 5 4 has 2 items.
 положив 5 4 в стек и сняв, получаем 4.
 the minimum of 7 2 9 1 is 1.
-11 простое.
+7 простое.
 sorting 6 6 2 gives 2 6 6.
 чему равна сумма 6 6 2? сумма 6 6 2 равна 14.
-linear search on 20 items takes at most 20 steps.
-что даёт разворот 8 3 5 1 9? разворот 8 3 5 1 9 даёт 9 1 5 3 8.
-the gcd of 9 and 6 is 3.
-добавив 8 3 5 1 9 в очередь и взяв, получаем 8.
-what is the minimum of 4 10 7? the minimum of 4 10 7 is 4.
+linear search on 16 items takes at most 16 steps.
+что даёт разворот 2 5 8 11? разворот 2 5 8 11 даёт 11 8 5 2.
+the gcd of 40 and 48 is 8.
+добавив 2 5 8 11 в очередь и взяв, получаем 2.
+what is the minimum of 7 7? the minimum of 7 7 is 7.
 факториал 8 равен 40320.
-what does sorting 2 8 give? sorting 2 8 gives 2 8.
-длина 2 8 равна 2.
-binary search on 8 items takes at most 3 steps.
-максимум 9 5 3 7 равен 9.
-the lcm of 16 and 24 is 48.
-6 в двоичной записи это 110.
-the sum of 1 4 2 6 is 13.
-3 в степени 4 равно 81.
-reversing 10 3 8 gives 8 3 10.
-чему равна длина 10 3 8? длина 10 3 8 равна 3.
-pushing 10 3 8 on a stack and popping gives 8.
+what does sorting 10 6 1 4 8 give? sorting 10 6 1 4 8 gives 1 4 6 8 10.
+длина 10 6 1 4 8 равна 5.
+binary search on 1000 items takes at most 10 steps.
+максимум 13 3 5 равен 13.
+the lcm of 16 and 28 is 112.
+25 в двоичной записи это 11001.
+the sum of 4 2 9 6 is 21.
+5 в степени 4 равно 625.
+reversing 8 1 12 5 3 gives 3 5 12 1 8.
+чему равна длина 8 1 12 5 3? длина 8 1 12 5 3 равна 5.
+pushing 8 1 12 5 3 on a stack and popping gives 3.
 чему равен максимум 3 1 2? максимум 3 1 2 равен 3.
-9 is not prime.
-деление 14 на 7 даёт частное 2 и остаток 0.
+5 is prime.
+деление 10 на 5 даёт частное 2 и остаток 0.
 what is the sum of 5 4? the sum of 5 4 is 9.
-число фибоначчи номер 10 равно 55.
+число фибоначчи номер 6 равно 8.
 what does reversing 7 2 9 1 give? reversing 7 2 9 1 gives 1 9 2 7.
 что стои́т на месте 6 в списке 7 2 9 1? на месте 6 нет ничего: в списке 7 2 9 1 всего 4 элементов.
 adding 7 2 9 1 to a queue and taking gives 7.
 минимум 6 6 2 равен 2.
 the factorial of 8 is 40320.
-сортировка 8 3 5 1 9 даёт 1 3 5 8 9.
-the length of 8 3 5 1 9 is 5.
-линейный поиск по 2 элементам требует не более 2 шагов.
-the maximum of 4 10 7 is 10.
-нод 14 и 21 равен 7.
-15 in binary is 1111.
-чему равен минимум 2 8? минимум 2 8 равен 2.
-2 to the power 5 is 32.
-что даёт сортировка 9 5 3 7? сортировка 9 5 3 7 даёт 3 5 7 9.
-what is the length of 9 5 3 7? the length of 9 5 3 7 is 4.
-двоичный поиск по 16 элементам требует не более 4 шагов.
-what is the maximum of 1 4 2 6? the maximum of 1 4 2 6 is 6.
-нок 5 и 15 равен 15.
-dividing 15 by 5 gives quotient 3 and remainder 0.
-сумма 10 3 8 равна 21.
-fibonacci number 8 is 21.
+сортировка 2 5 8 11 даёт 2 5 8 11.
+the length of 2 5 8 11 is 4.
+линейный поиск по 48 элементам требует не более 48 шагов.
+the maximum of 7 7 is 7.
+нод 18 и 63 равен 9.
+23 in binary is 10111.
+чему равен минимум 10 6 1 4 8? минимум 10 6 1 4 8 равен 1.
+2 to the power 8 is 256.
+что даёт сортировка 13 3 5? сортировка 13 3 5 даёт 3 5 13.
+what is the length of 13 3 5? the length of 13 3 5 is 3.
+двоичный поиск по 15 элементам требует не более 4 шагов.
+what is the maximum of 4 2 9 6? the maximum of 4 2 9 6 is 9.
+нок 6 и 9 равен 18.
+dividing 9 by 6 gives quotient 1 and remainder 3.
+сумма 8 1 12 5 3 равна 29.
+fibonacci number 27 is 196418.
 разворот 3 1 2 даёт 2 1 3.
 what is at place 4 of 3 1 2? no item at place 4: the list 3 1 2 has 3 items.
 положив 3 1 2 в стек и сняв, получаем 2.
 the minimum of 5 4 is 4.
-10 не простое.
+6 не простое.
 sorting 7 2 9 1 gives 1 2 7 9.
 чему равна сумма 7 2 9 1? сумма 7 2 9 1 равна 19.
-linear search on 10 items takes at most 10 steps.
+linear search on 8 items takes at most 8 steps.
 что даёт разворот 6 6 2? разворот 6 6 2 даёт 2 6 6.
-the gcd of 8 and 12 is 4.
+the gcd of 24 and 30 is 6.
 добавив 6 6 2 в очередь и взяв, получаем 6.
-what is the minimum of 8 3 5 1 9? the minimum of 8 3 5 1 9 is 1.
+what is the minimum of 2 5 8 11? the minimum of 2 5 8 11 is 2.
 факториал 8 равен 40320.
-what does sorting 4 10 7 give? sorting 4 10 7 gives 4 7 10.
-длина 4 10 7 равна 3.
-binary search on 4 items takes at most 2 steps.
-максимум 2 8 равен 8.
-the lcm of 10 and 15 is 30.
-5 в двоичной записи это 101.
-the sum of 9 5 3 7 is 24.
-5 в степени 2 равно 25.
-reversing 1 4 2 6 gives 6 2 4 1.
-чему равна длина 1 4 2 6? длина 1 4 2 6 равна 4.
-pushing 1 4 2 6 on a stack and popping gives 6.
-чему равен максимум 10 3 8? максимум 10 3 8 равен 10.
-8 is not prime.
-деление 27 на 18 даёт частное 1 и остаток 9.
+what does sorting 7 7 give? sorting 7 7 gives 7 7.
+длина 7 7 равна 2.
+binary search on 100 items takes at most 7 steps.
+максимум 10 6 1 4 8 равен 10.
+the lcm of 18 and 42 is 126.
+24 в двоичной записи это 11000.
+the sum of 13 3 5 is 21.
+3 в степени 2 равно 9.
+reversing 4 2 9 6 gives 6 9 2 4.
+чему равна длина 4 2 9 6? длина 4 2 9 6 равна 4.
+pushing 4 2 9 6 on a stack and popping gives 6.
+чему равен максимум 8 1 12 5 3? максимум 8 1 12 5 3 равен 12.
+27 is not prime.
+деление 28 на 21 даёт частное 1 и остаток 7.
 what is the sum of 3 1 2? the sum of 3 1 2 is 6.
-число фибоначчи номер 9 равно 34.
+число фибоначчи номер 5 равно 5.
 what does reversing 5 4 give? reversing 5 4 gives 4 5.
 что стои́т на месте 5 в списке 5 4? на месте 5 нет ничего: в списке 5 4 всего 2 элементов.
 adding 5 4 to a queue and taking gives 5.
 минимум 7 2 9 1 равен 1.
-the factorial of 8 is 40320.
+the factorial of 7 is 5040.
 сортировка 6 6 2 даёт 2 6 6.
 the length of 6 6 2 is 3.
-линейный поиск по 20 элементам требует не более 20 шагов.
-the maximum of 8 3 5 1 9 is 9.
-нод 9 и 6 равен 3.
-13 in binary is 1101.
-чему равен минимум 4 10 7? минимум 4 10 7 равен 4.
-10 to the power 2 is 100.
-что даёт сортировка 2 8? сортировка 2 8 даёт 2 8.
-what is the length of 2 8? the length of 2 8 is 2.
-двоичный поиск по 8 элементам требует не более 3 шагов.
-what is the maximum of 9 5 3 7? the maximum of 9 5 3 7 is 9.
-нок 16 и 24 равен 48.
-dividing 24 by 16 gives quotient 1 and remainder 8.
-сумма 1 4 2 6 равна 13.
-fibonacci number 7 is 13.
-разворот 10 3 8 даёт 8 3 10.
-what is at place 4 of 10 3 8? no item at place 4: the list 10 3 8 has 3 items.
-положив 10 3 8 в стек и сняв, получаем 8.
+линейный поиск по 16 элементам требует не более 16 шагов.
+the maximum of 2 5 8 11 is 11.
+нод 40 и 48 равен 8.
+22 in binary is 10110.
+чему равен минимум 7 7? минимум 7 7 равен 7.
+7 to the power 3 is 343.
+что даёт сортировка 10 6 1 4 8? сортировка 10 6 1 4 8 даёт 1 4 6 8 10.
+what is the length of 10 6 1 4 8? the length of 10 6 1 4 8 is 5.
+двоичный поиск по 1000 элементам требует не более 10 шагов.
+what is the maximum of 13 3 5? the maximum of 13 3 5 is 13.
+нок 16 и 28 равен 112.
+dividing 28 by 16 gives quotient 1 and remainder 12.
+сумма 4 2 9 6 равна 21.
+fibonacci number 26 is 121393.
+разворот 8 1 12 5 3 даёт 3 5 12 1 8.
+what is at place 8 of 8 1 12 5 3? no item at place 8: the list 8 1 12 5 3 has 5 items.
+положив 8 1 12 5 3 в стек и сняв, получаем 3.
 the minimum of 3 1 2 is 1.
-9 не простое.
+5 простое.
 sorting 5 4 gives 4 5.
 чему равна сумма 5 4? сумма 5 4 равна 9.
-linear search on 5 items takes at most 5 steps.
+linear search on 4 items takes at most 4 steps.
 что даёт разворот 7 2 9 1? разворот 7 2 9 1 даёт 1 9 2 7.
-the gcd of 12 and 18 is 6.
+the gcd of 18 and 45 is 9.
 добавив 7 2 9 1 в очередь и взяв, получаем 7.
 what is the minimum of 6 6 2? the minimum of 6 6 2 is 2.
 факториал 8 равен 40320.
-what does sorting 8 3 5 1 9 give? sorting 8 3 5 1 9 gives 1 3 5 8 9.
-длина 8 3 5 1 9 равна 5.
-binary search on 2 items takes at most 1 step.
-максимум 4 10 7 равен 10.
-the lcm of 14 and 21 is 42.
-15 в двоичной записи это 1111.
-the sum of 2 8 is 10.
-2 в степени 5 равно 32.
-reversing 9 5 3 7 gives 7 3 5 9.
-чему равна длина 9 5 3 7? длина 9 5 3 7 равна 4.
-pushing 9 5 3 7 on a stack and popping gives 7.
-чему равен максимум 1 4 2 6? максимум 1 4 2 6 равен 6.
-7 is prime.
-деление 15 на 5 даёт частное 3 и остаток 0.
-what is the sum of 10 3 8? the sum of 10 3 8 is 21.
-число фибоначчи номер 8 равно 21.
+what does sorting 2 5 8 11 give? sorting 2 5 8 11 gives 2 5 8 11.
+длина 2 5 8 11 равна 4.
+binary search on 48 items takes at most 6 steps.
+максимум 7 7 равен 7.
+the lcm of 18 and 63 is 126.
+23 в двоичной записи это 10111.
+the sum of 10 6 1 4 8 is 29.
+2 в степени 8 равно 256.
+reversing 13 3 5 gives 5 3 13.
+чему равна длина 13 3 5? длина 13 3 5 равна 3.
+pushing 13 3 5 on a stack and popping gives 5.
+чему равен максимум 4 2 9 6? максимум 4 2 9 6 равен 9.
+26 is not prime.
+деление 9 на 6 даёт частное 1 и остаток 3.
+what is the sum of 8 1 12 5 3? the sum of 8 1 12 5 3 is 29.
+число фибоначчи номер 27 равно 196418.
 what does reversing 3 1 2 give? reversing 3 1 2 gives 2 1 3.
 что стои́т на месте 4 в списке 3 1 2? на месте 4 нет ничего: в списке 3 1 2 всего 3 элементов.
 adding 3 1 2 to a queue and taking gives 3.
 минимум 5 4 равен 4.
-the factorial of 8 is 40320.
+the factorial of 6 is 720.
 сортировка 7 2 9 1 даёт 1 2 7 9.
 the length of 7 2 9 1 is 4.
-линейный поиск по 10 элементам требует не более 10 шагов.
+линейный поиск по 8 элементам требует не более 8 шагов.
 the maximum of 6 6 2 is 6.
-нод 8 и 12 равен 4.
-12 in binary is 1100.
-чему равен минимум 8 3 5 1 9? минимум 8 3 5 1 9 равен 1.
-4 to the power 3 is 64.
-что даёт сортировка 4 10 7? сортировка 4 10 7 даёт 4 7 10.
-what is the length of 4 10 7? the length of 4 10 7 is 3.
-двоичный поиск по 4 элементам требует не более 2 шагов.
-what is the maximum of 2 8? the maximum of 2 8 is 8.
-нок 10 и 15 равен 30.
-dividing 15 by 10 gives quotient 1 and remainder 5.
-сумма 9 5 3 7 равна 24.
-fibonacci number 6 is 8.
-разворот 1 4 2 6 даёт 6 2 4 1.
-what is at place 6 of 1 4 2 6? no item at place 6: the list 1 4 2 6 has 4 items.
-положив 1 4 2 6 в стек и сняв, получаем 6.
-the minimum of 10 3 8 is 3.
-8 не простое.
+нод 24 и 30 равен 6.
+8 in binary is 1000.
+чему равен минимум 2 5 8 11? минимум 2 5 8 11 равен 2.
+6 to the power 5 is 7776.
+что даёт сортировка 7 7? сортировка 7 7 даёт 7 7.
+what is the length of 7 7? the length of 7 7 is 2.
+двоичный поиск по 100 элементам требует не более 7 шагов.
+what is the maximum of 10 6 1 4 8? the maximum of 10 6 1 4 8 is 10.
+нок 18 и 42 равен 126.
+dividing 42 by 18 gives quotient 2 and remainder 6.
+сумма 13 3 5 равна 21.
+fibonacci number 25 is 75025.
+разворот 4 2 9 6 даёт 6 9 2 4.
+what is at place 6 of 4 2 9 6? no item at place 6: the list 4 2 9 6 has 4 items.
+положив 4 2 9 6 в стек и сняв, получаем 6.
+the minimum of 8 1 12 5 3 is 1.
+27 не простое.
 sorting 3 1 2 gives 1 2 3.
 чему равна сумма 3 1 2? сумма 3 1 2 равна 6.
-linear search on 3 items takes at most 3 steps.
+linear search on 2 items takes at most 2 steps.
 что даёт разворот 5 4? разворот 5 4 даёт 4 5.
-the gcd of 20 and 30 is 10.
+the gcd of 24 and 40 is 8.
 добавив 5 4 в очередь и взяв, получаем 5.
 what is the minimum of 7 2 9 1? the minimum of 7 2 9 1 is 1.
-факториал 8 равен 40320.
+факториал 7 равен 5040.
 what does sorting 6 6 2 give? sorting 6 6 2 gives 2 6 6.
 длина 6 6 2 равна 3.
-binary search on 20 items takes at most 5 steps.
-максимум 8 3 5 1 9 равен 9.
-the lcm of 9 and 6 is 18.
-13 в двоичной записи это 1101.
-the sum of 4 10 7 is 21.
-10 в степени 2 равно 100.
-reversing 2 8 gives 8 2.
-чему равна длина 2 8? длина 2 8 равна 2.
-pushing 2 8 on a stack and popping gives 8.
-чему равен максимум 9 5 3 7? максимум 9 5 3 7 равен 9.
-6 is not prime.
-деление 24 на 16 даёт частное 1 и остаток 8.
-what is the sum of 1 4 2 6? the sum of 1 4 2 6 is 13.
-число фибоначчи номер 7 равно 13.
-what does reversing 10 3 8 give? reversing 10 3 8 gives 8 3 10.
-что стои́т на месте 4 в списке 10 3 8? на месте 4 нет ничего: в списке 10 3 8 всего 3 элементов.
-adding 10 3 8 to a queue and taking gives 10.
+binary search on 16 items takes at most 4 steps.
+максимум 2 5 8 11 равен 11.
+the lcm of 40 and 48 is 240.
+22 в двоичной записи это 10110.
+the sum of 7 7 is 14.
+7 в степени 3 равно 343.
+reversing 10 6 1 4 8 gives 8 4 1 6 10.
+чему равна длина 10 6 1 4 8? длина 10 6 1 4 8 равна 5.
+pushing 10 6 1 4 8 on a stack and popping gives 8.
+чему равен максимум 13 3 5? максимум 13 3 5 равен 13.
+25 is not prime.
+деление 28 на 16 даёт частное 1 и остаток 12.
+what is the sum of 4 2 9 6? the sum of 4 2 9 6 is 21.
+число фибоначчи номер 26 равно 121393.
+what does reversing 8 1 12 5 3 give? reversing 8 1 12 5 3 gives 3 5 12 1 8.
+что стои́т на месте 8 в списке 8 1 12 5 3? на месте 8 нет ничего: в списке 8 1 12 5 3 всего 5 элементов.
+adding 8 1 12 5 3 to a queue and taking gives 8.
 минимум 3 1 2 равен 1.
-the factorial of 8 is 40320.
+the factorial of 5 is 120.
 сортировка 5 4 даёт 4 5.
 the length of 5 4 is 2.
-линейный поиск по 5 элементам требует не более 5 шагов.
+линейный поиск по 4 элементам требует не более 4 шагов.
 the maximum of 7 2 9 1 is 9.
-нод 12 и 18 равен 6.
-11 in binary is 1011.
+нод 18 и 45 равен 9.
+7 in binary is 111.
 чему равен минимум 6 6 2? минимум 6 6 2 равен 2.
-3 to the power 3 is 27.
-что даёт сортировка 8 3 5 1 9? сортировка 8 3 5 1 9 даёт 1 3 5 8 9.
-what is the length of 8 3 5 1 9? the length of 8 3 5 1 9 is 5.
-двоичный поиск по 2 элементам требует не более 1 шагов.
-what is the maximum of 4 10 7? the maximum of 4 10 7 is 10.
-нок 14 и 21 равен 42.
-dividing 21 by 14 gives quotient 1 and remainder 7.
-сумма 2 8 равна 10.
-fibonacci number 5 is 5.
-разворот 9 5 3 7 даёт 7 3 5 9.
-what is at place 6 of 9 5 3 7? no item at place 6: the list 9 5 3 7 has 4 items.
-положив 9 5 3 7 в стек и сняв, получаем 7.
-the minimum of 1 4 2 6 is 1.
-7 простое.
-sorting 10 3 8 gives 3 8 10.
-чему равна сумма 10 3 8? сумма 10 3 8 равна 21.
-linear search on 64 items takes at most 64 steps.
+2 to the power 4 is 16.
+что даёт сортировка 2 5 8 11? сортировка 2 5 8 11 даёт 2 5 8 11.
+what is the length of 2 5 8 11? the length of 2 5 8 11 is 4.
+двоичный поиск по 48 элементам требует не более 6 шагов.
+what is the maximum of 7 7? the maximum of 7 7 is 7.
+нок 18 и 63 равен 126.
+dividing 63 by 18 gives quotient 3 and remainder 9.
+сумма 10 6 1 4 8 равна 29.
+fibonacci number 24 is 46368.
+разворот 13 3 5 даёт 5 3 13.
+what is at place 4 of 13 3 5? no item at place 4: the list 13 3 5 has 3 items.
+положив 13 3 5 в стек и сняв, получаем 5.
+the minimum of 4 2 9 6 is 2.
+26 не простое.
+sorting 8 1 12 5 3 gives 1 3 5 8 12.
+чему равна сумма 8 1 12 5 3? сумма 8 1 12 5 3 равна 29.
+linear search on 30 items takes at most 30 steps.
 что даёт разворот 3 1 2? разворот 3 1 2 даёт 2 1 3.
-the gcd of 7 and 14 is 7.
+the gcd of 5 and 10 is 5.
 добавив 3 1 2 в очередь и взяв, получаем 3.
 what is the minimum of 5 4? the minimum of 5 4 is 4.
-факториал 8 равен 40320.
+факториал 6 равен 720.
 what does sorting 7 2 9 1 give? sorting 7 2 9 1 gives 1 2 7 9.
 длина 7 2 9 1 равна 4.
-binary search on 10 items takes at most 4 steps.
+binary search on 8 items takes at most 3 steps.
 максимум 6 6 2 равен 6.
-the lcm of 8 and 12 is 24.
-12 в двоичной записи это 1100.
-the sum of 8 3 5 1 9 is 26.
-4 в степени 3 равно 64.
-reversing 4 10 7 gives 7 10 4.
-чему равна длина 4 10 7? длина 4 10 7 равна 3.
-pushing 4 10 7 on a stack and popping gives 7.
-чему равен максимум 2 8? максимум 2 8 равен 8.
-5 is prime.
-деление 15 на 10 даёт частное 1 и остаток 5.
-what is the sum of 9 5 3 7? the sum of 9 5 3 7 is 24.
-число фибоначчи номер 6 равно 8.
-what does reversing 1 4 2 6 give? reversing 1 4 2 6 gives 6 2 4 1.
-что стои́т на месте 6 в списке 1 4 2 6? на месте 6 нет ничего: в списке 1 4 2 6 всего 4 элементов.
-adding 1 4 2 6 to a queue and taking gives 1.
-минимум 10 3 8 равен 3.
+the lcm of 24 and 30 is 120.
+8 в двоичной записи это 1000.
+the sum of 2 5 8 11 is 26.
+6 в степени 5 равно 7776.
+reversing 7 7 gives 7 7.
+чему равна длина 7 7? длина 7 7 равна 2.
+pushing 7 7 on a stack and popping gives 7.
+чему равен максимум 10 6 1 4 8? максимум 10 6 1 4 8 равен 10.
+24 is not prime.
+деление 42 на 18 даёт частное 2 и остаток 6.
+what is the sum of 13 3 5? the sum of 13 3 5 is 21.
+число фибоначчи номер 25 равно 75025.
+what does reversing 4 2 9 6 give? reversing 4 2 9 6 gives 6 9 2 4.
+что стои́т на месте 6 в списке 4 2 9 6? на месте 6 нет ничего: в списке 4 2 9 6 всего 4 элементов.
+adding 4 2 9 6 to a queue and taking gives 4.
+минимум 8 1 12 5 3 равен 1.
 the factorial of 8 is 40320.
 сортировка 3 1 2 даёт 1 2 3.
 the length of 3 1 2 is 3.
-линейный поиск по 3 элементам требует не более 3 шагов.
+линейный поиск по 2 элементам требует не более 2 шагов.
 the maximum of 5 4 is 5.
-нод 20 и 30 равен 10.
-10 in binary is 1010.
+нод 24 и 40 равен 8.
+6 in binary is 110.
 чему равен минимум 7 2 9 1? минимум 7 2 9 1 равен 1.
-2 to the power 10 is 1024.
+7 to the power 2 is 49.
 что даёт сортировка 6 6 2? сортировка 6 6 2 даёт 2 6 6.
 what is the length of 6 6 2? the length of 6 6 2 is 3.
-двоичный поиск по 20 элементам требует не более 5 шагов.
-what is the maximum of 8 3 5 1 9? the maximum of 8 3 5 1 9 is 9.
-нок 9 и 6 равен 18.
-dividing 9 by 6 gives quotient 1 and remainder 3.
-сумма 4 10 7 равна 21.
-fibonacci number 15 is 610.
-разворот 2 8 даёт 8 2.
-what is at place 5 of 2 8? no item at place 5: the list 2 8 has 2 items.
-положив 2 8 в стек и сняв, получаем 8.
-the minimum of 9 5 3 7 is 3.
-6 не простое.
-sorting 1 4 2 6 gives 1 2 4 6.
-чему равна сумма 1 4 2 6? сумма 1 4 2 6 равна 13.
-linear search on 32 items takes at most 32 steps.
-что даёт разворот 10 3 8? разворот 10 3 8 даёт 8 3 10.
-the gcd of 18 and 27 is 9.
-добавив 10 3 8 в очередь и взяв, получаем 10.
+двоичный поиск по 16 элементам требует не более 4 шагов.
+what is the maximum of 2 5 8 11? the maximum of 2 5 8 11 is 11.
+нок 40 и 48 равен 240.
+dividing 48 by 40 gives quotient 1 and remainder 8.
+сумма 7 7 равна 14.
+fibonacci number 23 is 28657.
+разворот 10 6 1 4 8 даёт 8 4 1 6 10.
+what is at place 8 of 10 6 1 4 8? no item at place 8: the list 10 6 1 4 8 has 5 items.
+положив 10 6 1 4 8 в стек и сняв, получаем 8.
+the minimum of 13 3 5 is 3.
+25 не простое.
+sorting 4 2 9 6 gives 2 4 6 9.
+чему равна сумма 4 2 9 6? сумма 4 2 9 6 равна 21.
+linear search on 50 items takes at most 50 steps.
+что даёт разворот 8 1 12 5 3? разворот 8 1 12 5 3 даёт 3 5 12 1 8.
+the gcd of 21 and 28 is 7.
+добавив 8 1 12 5 3 в очередь и взяв, получаем 8.
 what is the minimum of 3 1 2? the minimum of 3 1 2 is 1.
-факториал 8 равен 40320.
+факториал 5 равен 120.
 what does sorting 5 4 give? sorting 5 4 gives 4 5.
 длина 5 4 равна 2.
-binary search on 5 items takes at most 3 steps.
+binary search on 4 items takes at most 2 steps.
 максимум 7 2 9 1 равен 9.
-the lcm of 12 and 18 is 36.
-11 в двоичной записи это 1011.
+the lcm of 18 and 45 is 90.
+7 в двоичной записи это 111.
 the sum of 6 6 2 is 14.
-3 в степени 3 равно 27.
-reversing 8 3 5 1 9 gives 9 1 5 3 8.
-чему равна длина 8 3 5 1 9? длина 8 3 5 1 9 равна 5.
-pushing 8 3 5 1 9 on a stack and popping gives 9.
-чему равен максимум 4 10 7? максимум 4 10 7 равен 10.
-15 is not prime.
-деление 21 на 14 даёт частное 1 и остаток 7.
-what is the sum of 2 8? the sum of 2 8 is 10.
-число фибоначчи номер 5 равно 5.
-what does reversing 9 5 3 7 give? reversing 9 5 3 7 gives 7 3 5 9.
-что стои́т на месте 6 в списке 9 5 3 7? на месте 6 нет ничего: в списке 9 5 3 7 всего 4 элементов.
-adding 9 5 3 7 to a queue and taking gives 9.
-минимум 1 4 2 6 равен 1.
-the factorial of 7 is 5040.
-сортировка 10 3 8 даёт 3 8 10.
-the length of 10 3 8 is 3.
-линейный поиск по 64 элементам требует не более 64 шагов.
+2 в степени 4 равно 16.
+reversing 2 5 8 11 gives 11 8 5 2.
+чему равна длина 2 5 8 11? длина 2 5 8 11 равна 4.
+pushing 2 5 8 11 on a stack and popping gives 11.
+чему равен максимум 7 7? максимум 7 7 равен 7.
+23 is prime.
+деление 63 на 18 даёт частное 3 и остаток 9.
+what is the sum of 10 6 1 4 8? the sum of 10 6 1 4 8 is 29.
+число фибоначчи номер 24 равно 46368.
+what does reversing 13 3 5 give? reversing 13 3 5 gives 5 3 13.
+что стои́т на месте 4 в списке 13 3 5? на месте 4 нет ничего: в списке 13 3 5 всего 3 элементов.
+adding 13 3 5 to a queue and taking gives 13.
+минимум 4 2 9 6 равен 2.
+the factorial of 8 is 40320.
+сортировка 8 1 12 5 3 даёт 1 3 5 8 12.
+the length of 8 1 12 5 3 is 5.
+линейный поиск по 30 элементам требует не более 30 шагов.
 the maximum of 3 1 2 is 3.
-нод 7 и 14 равен 7.
-9 in binary is 1001.
+нод 5 и 10 равен 5.
+5 in binary is 101.
 чему равен минимум 5 4? минимум 5 4 равен 4.
-2 to the power 6 is 64.
+6 to the power 8 is 1679616.
 что даёт сортировка 7 2 9 1? сортировка 7 2 9 1 даёт 1 2 7 9.
 what is the length of 7 2 9 1? the length of 7 2 9 1 is 4.
-двоичный поиск по 10 элементам требует не более 4 шагов.
+двоичный поиск по 8 элементам требует не более 3 шагов.
 what is the maximum of 6 6 2? the maximum of 6 6 2 is 6.
-нок 8 и 12 равен 24.
-dividing 12 by 8 gives quotient 1 and remainder 4.
-сумма 8 3 5 1 9 равна 26.
-fibonacci number 13 is 233.
-разворот 4 10 7 даёт 7 10 4.
-what is at place 4 of 4 10 7? no item at place 4: the list 4 10 7 has 3 items.
-положив 4 10 7 в стек и сняв, получаем 7.
-the minimum of 2 8 is 2.
-5 простое.
-sorting 9 5 3 7 gives 3 5 7 9.
-чему равна сумма 9 5 3 7? сумма 9 5 3 7 равна 24.
-linear search on 16 items takes at most 16 steps.
-что даёт разворот 1 4 2 6? разворот 1 4 2 6 даёт 6 2 4 1.
-the gcd of 5 and 15 is 5.
-добавив 1 4 2 6 в очередь и взяв, получаем 1.
-what is the minimum of 10 3 8? the minimum of 10 3 8 is 3.
+нок 24 и 30 равен 120.
+dividing 30 by 24 gives quotient 1 and remainder 6.
+сумма 2 5 8 11 равна 26.
+fibonacci number 22 is 17711.
+разворот 7 7 даёт 7 7.
+what is at place 5 of 7 7? no item at place 5: the list 7 7 has 2 items.
+положив 7 7 в стек и сняв, получаем 7.
+the minimum of 10 6 1 4 8 is 1.
+24 не простое.
+sorting 13 3 5 gives 3 5 13.
+чему равна сумма 13 3 5? сумма 13 3 5 равна 21.
+linear search on 15 items takes at most 15 steps.
+что даёт разворот 4 2 9 6? разворот 4 2 9 6 даёт 6 9 2 4.
+the gcd of 6 and 9 is 3.
+добавив 4 2 9 6 в очередь и взяв, получаем 4.
+what is the minimum of 8 1 12 5 3? the minimum of 8 1 12 5 3 is 1.
 факториал 8 равен 40320.
 what does sorting 3 1 2 give? sorting 3 1 2 gives 1 2 3.
 длина 3 1 2 равна 3.
-binary search on 3 items takes at most 2 steps.
+binary search on 2 items takes at most 1 step.
 максимум 5 4 равен 5.
-the lcm of 20 and 30 is 60.
-10 в двоичной записи это 1010.
+the lcm of 24 and 40 is 120.
+6 в двоичной записи это 110.
 the sum of 7 2 9 1 is 19.
-2 в степени 10 равно 1024.
+7 в степени 2 равно 49.
 reversing 6 6 2 gives 2 6 6.
 чему равна длина 6 6 2? длина 6 6 2 равна 3.
 pushing 6 6 2 on a stack and popping gives 2.
-чему равен максимум 8 3 5 1 9? максимум 8 3 5 1 9 равен 9.
-13 is prime.
-деление 9 на 6 даёт частное 1 и остаток 3.
-what is the sum of 4 10 7? the sum of 4 10 7 is 21.
-число фибоначчи номер 15 равно 610.
-what does reversing 2 8 give? reversing 2 8 gives 8 2.
-что стои́т на месте 5 в списке 2 8? на месте 5 нет ничего: в списке 2 8 всего 2 элементов.
-adding 2 8 to a queue and taking gives 2.
-минимум 9 5 3 7 равен 3.
-the factorial of 6 is 720.
-сортировка 1 4 2 6 даёт 1 2 4 6.
-the length of 1 4 2 6 is 4.
-линейный поиск по 32 элементам требует не более 32 шагов.
-the maximum of 10 3 8 is 10.
-нод 18 и 27 равен 9.
-8 in binary is 1000.
+чему равен максимум 2 5 8 11? максимум 2 5 8 11 равен 11.
+22 is not prime.
+деление 48 на 40 даёт частное 1 и остаток 8.
+what is the sum of 7 7? the sum of 7 7 is 14.
+число фибоначчи номер 23 равно 28657.
+what does reversing 10 6 1 4 8 give? reversing 10 6 1 4 8 gives 8 4 1 6 10.
+что стои́т на месте 8 в списке 10 6 1 4 8? на месте 8 нет ничего: в списке 10 6 1 4 8 всего 5 элементов.
+adding 10 6 1 4 8 to a queue and taking gives 10.
+минимум 13 3 5 равен 3.
+the factorial of 8 is 40320.
+сортировка 4 2 9 6 даёт 2 4 6 9.
+the length of 4 2 9 6 is 4.
+линейный поиск по 50 элементам требует не более 50 шагов.
+the maximum of 8 1 12 5 3 is 12.
+нод 21 и 28 равен 7.
+27 in binary is 11011.
 чему равен минимум 3 1 2? минимум 3 1 2 равен 1.
-2 to the power 8 is 256.
+10 to the power 3 is 1000.
 что даёт сортировка 5 4? сортировка 5 4 даёт 4 5.
 what is the length of 5 4? the length of 5 4 is 2.
-двоичный поиск по 5 элементам требует не более 3 шагов.
+двоичный поиск по 4 элементам требует не более 2 шагов.
 what is the maximum of 7 2 9 1? the maximum of 7 2 9 1 is 9.
-нок 12 и 18 равен 36.
-dividing 18 by 12 gives quotient 1 and remainder 6.
+нок 18 и 45 равен 90.
+dividing 45 by 18 gives quotient 2 and remainder 9.
 сумма 6 6 2 равна 14.
-fibonacci number 12 is 144.
-разворот 8 3 5 1 9 даёт 9 1 5 3 8.
-what is at place 8 of 8 3 5 1 9? no item at place 8: the list 8 3 5 1 9 has 5 items.
-положив 8 3 5 1 9 в стек и сняв, получаем 9.
-the minimum of 4 10 7 is 4.
-15 не простое.
-sorting 2 8 gives 2 8.
-чему равна сумма 2 8? сумма 2 8 равна 10.
-linear search on 8 items takes at most 8 steps.
-что даёт разворот 9 5 3 7? разворот 9 5 3 7 даёт 7 3 5 9.
-the gcd of 16 and 24 is 8.
-добавив 9 5 3 7 в очередь и взяв, получаем 9.
-what is the minimum of 1 4 2 6? the minimum of 1 4 2 6 is 1.
-факториал 7 равен 5040.
-what does sorting 10 3 8 give? sorting 10 3 8 gives 3 8 10.
-длина 10 3 8 равна 3.
-binary search on 64 items takes at most 6 steps.
+fibonacci number 8 is 21.
+разворот 2 5 8 11 даёт 11 8 5 2.
+what is at place 6 of 2 5 8 11? no item at place 6: the list 2 5 8 11 has 4 items.
+положив 2 5 8 11 в стек и сняв, получаем 11.
+the minimum of 7 7 is 7.
+23 простое.
+sorting 10 6 1 4 8 gives 1 4 6 8 10.
+чему равна сумма 10 6 1 4 8? сумма 10 6 1 4 8 равна 29.
+linear search on 1000 items takes at most 1000 steps.
+что даёт разворот 13 3 5? разворот 13 3 5 даёт 5 3 13.
+the gcd of 16 and 28 is 4.
+добавив 13 3 5 в очередь и взяв, получаем 13.
+what is the minimum of 4 2 9 6? the minimum of 4 2 9 6 is 2.
+факториал 8 равен 40320.
+what does sorting 8 1 12 5 3 give? sorting 8 1 12 5 3 gives 1 3 5 8 12.
+длина 8 1 12 5 3 равна 5.
+binary search on 30 items takes at most 5 steps.
 максимум 3 1 2 равен 3.
-the lcm of 7 and 14 is 14.
-9 в двоичной записи это 1001.
+the lcm of 5 and 10 is 10.
+5 в двоичной записи это 101.
 the sum of 5 4 is 9.
-2 в степени 6 равно 64.
+6 в степени 8 равно 1679616.
 reversing 7 2 9 1 gives 1 9 2 7.
 чему равна длина 7 2 9 1? длина 7 2 9 1 равна 4.
 pushing 7 2 9 1 on a stack and popping gives 1.
 чему равен максимум 6 6 2? максимум 6 6 2 равен 6.
-12 is not prime.
-деление 12 на 8 даёт частное 1 и остаток 4.
-what is the sum of 8 3 5 1 9? the sum of 8 3 5 1 9 is 26.
-число фибоначчи номер 13 равно 233.
-what does reversing 4 10 7 give? reversing 4 10 7 gives 7 10 4.
-что стои́т на месте 4 в списке 4 10 7? на месте 4 нет ничего: в списке 4 10 7 всего 3 элементов.
-adding 4 10 7 to a queue and taking gives 4.
-минимум 2 8 равен 2.
-the factorial of 5 is 120.
-сортировка 9 5 3 7 даёт 3 5 7 9.
-the length of 9 5 3 7 is 4.
-линейный поиск по 16 элементам требует не более 16 шагов.
-the maximum of 1 4 2 6 is 6.
-нод 5 и 15 равен 5.
-7 in binary is 111.
-чему равен минимум 10 3 8? минимум 10 3 8 равен 3.
-6 to the power 2 is 36.
+8 is not prime.
+деление 30 на 24 даёт частное 1 и остаток 6.
+what is the sum of 2 5 8 11? the sum of 2 5 8 11 is 26.
+число фибоначчи номер 22 равно 17711.
+what does reversing 7 7 give? reversing 7 7 gives 7 7.
+что стои́т на месте 5 в списке 7 7? на месте 5 нет ничего: в списке 7 7 всего 2 элементов.
+adding 7 7 to a queue and taking gives 7.
+минимум 10 6 1 4 8 равен 1.
+the factorial of 8 is 40320.
+сортировка 13 3 5 даёт 3 5 13.
+the length of 13 3 5 is 3.
+линейный поиск по 15 элементам требует не более 15 шагов.
+the maximum of 4 2 9 6 is 9.
+нод 6 и 9 равен 3.
+26 in binary is 11010.
+чему равен минимум 8 1 12 5 3? минимум 8 1 12 5 3 равен 1.
+4 to the power 5 is 1024.
 что даёт сортировка 3 1 2? сортировка 3 1 2 даёт 1 2 3.
 what is the length of 3 1 2? the length of 3 1 2 is 3.
-двоичный поиск по 3 элементам требует не более 2 шагов.
+двоичный поиск по 2 элементам требует не более 1 шагов.
 what is the maximum of 5 4? the maximum of 5 4 is 5.
-нок 20 и 30 равен 60.
-dividing 30 by 20 gives quotient 1 and remainder 10.
+нок 24 и 40 равен 120.
+dividing 40 by 24 gives quotient 1 and remainder 16.
 сумма 7 2 9 1 равна 19.
-fibonacci number 11 is 89.
+fibonacci number 7 is 13.
 разворот 6 6 2 даёт 2 6 6.
 what is at place 4 of 6 6 2? no item at place 4: the list 6 6 2 has 3 items.
 положив 6 6 2 в стек и сняв, получаем 2.
