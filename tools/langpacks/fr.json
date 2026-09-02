@@ -509,6 +509,11 @@
     "divisible": [
       "{} est-il divisible par {} ?",
       "{} est-il un multiple de {} ?"
+    ],
+    "value": [
+      "combien font {} ?",
+      "que vaut {} ?",
+      "calcule {}."
     ]
   },
   "ask_forms_comment": "second declared question form of each genus (Т-4 of the expressiveness college, 03.09): a paraphrase is a form of the pack, never a synonym list of a generator; every form carries the whole pair; the opening word is a declared question word (courts/script_court.py reads it)",
@@ -547,5 +552,11 @@
     "Jules": {
       "gender": "m"
     }
+  },
+  "task_words": {
+    "words": [
+      "calcule",
+      "calculez"
+    ]
   }
 }

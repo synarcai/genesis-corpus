@@ -284,6 +284,28 @@
       ]
     },
     {
+      "name": "arith_langs",
+      "file": "datasets/genesis_arith_langs.txt",
+      "genre": "the VALUE ASKED IN EIGHT LANGUAGES (the owner's word: every language in surplus; the svod asked the value of an expression only in en/ru): «was ist 3 + 4? 3 + 4 = 7.», «wie viel ist 12 − 5? …», «berechne 6 × 7. 6 × 7 = 42.» (de); «combien font 3 + 4 ? …», «que vaut … ?», «calcule ….» (fr); «¿cuánto es …?», «¿cuánto da …?», «calcula ….» (es); «quanto fa …?», «quanto è …?», «calcola ….» (it); «ile to …?», «ile wynosi …?», «oblicz ….» (pl); «quanto é …?», «quanto dá …?», «calcule ….» (pt); «hoeveel is …?», «wat is …?», «bereken ….» (nl); «… kaç eder?», «… kaçtır?» (tr — the question word at the end); the forms are the packs' ask_forms.value and task_words, the answer is the corpus's one telling of a value — the equation, recomputed by the court of arithmetic; the house of the pair binds question and answer by the form of value (М-156)",
+      "act": [
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unsigned_only"
+      ],
+      "size": 21170,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "aggregate",
       "file": "datasets/genesis_aggregate.txt",
       "genre": "aggregate genus: a fact of a plural bearer",

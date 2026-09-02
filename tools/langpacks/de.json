@@ -972,6 +972,11 @@
     "divisible": [
       "ist {} durch {} teilbar?",
       "ist {} ein Vielfaches von {}?"
+    ],
+    "value": [
+      "was ist {}?",
+      "wie viel ist {}?",
+      "berechne {}."
     ]
   },
   "ask_forms_comment": "second declared question form of each genus (Т-4 of the expressiveness college, 03.09): a paraphrase is a form of the pack, never a synonym list of a generator; every form carries the whole pair; the opening word is a declared question word (courts/script_court.py reads it)",
@@ -1010,5 +1015,11 @@
     "Max": {
       "gender": "m"
     }
+  },
+  "task_words": {
+    "words": [
+      "berechne",
+      "rechne aus"
+    ]
   }
 }

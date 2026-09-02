@@ -531,6 +531,7 @@
       "¿cuándo",
       "cuándo",
       "¿dónde",
+      "¿cuánto",
       "¬"
     ],
     "position": "front"
@@ -544,6 +545,11 @@
     "divisible": [
       "¿es {} divisible por {}?",
       "¿es {} un múltiplo de {}?"
+    ],
+    "value": [
+      "¿cuánto es {}?",
+      "¿cuánto da {}?",
+      "calcula {}."
     ]
   },
   "ask_forms_comment": "second declared question form of each genus (Т-4 of the expressiveness college, 03.09): a paraphrase is a form of the pack, never a synonym list of a generator; every form carries the whole pair; the opening word is a declared question word (courts/script_court.py reads it)",
@@ -582,5 +588,11 @@
     "Carlos": {
       "gender": "m"
     }
+  },
+  "task_words": {
+    "words": [
+      "calcula",
+      "calcule"
+    ]
   }
 }

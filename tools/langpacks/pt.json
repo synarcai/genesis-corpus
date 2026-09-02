@@ -500,7 +500,18 @@
     "divisible": [
       "{} é divisível por {}?",
       "{} é um múltiplo de {}?"
+    ],
+    "value": [
+      "quanto é {}?",
+      "quanto dá {}?",
+      "calcule {}."
     ]
   },
-  "ask_forms_comment": "second declared question form of each genus (Т-4 of the expressiveness college, 03.09): a paraphrase is a form of the pack, never a synonym list of a generator; every form carries the whole pair; the opening word is a declared question word (courts/script_court.py reads it)"
+  "ask_forms_comment": "second declared question form of each genus (Т-4 of the expressiveness college, 03.09): a paraphrase is a form of the pack, never a synonym list of a generator; every form carries the whole pair; the opening word is a declared question word (courts/script_court.py reads it)",
+  "task_words": {
+    "words": [
+      "calcule",
+      "calcula"
+    ]
+  }
 }
