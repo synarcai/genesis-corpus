@@ -145,38 +145,62 @@ the roots add to the middle coefficient is false: x^2 - 3 x + 2 = 0 has roots 1 
 корни складываются в средний коэффициент — ложь: у x² − 12x + 32 = 0 корни 4 и 8, и 4 + 8 = 12, а средний коэффициент −12.
 the roots of x^2 + b x + c = 0 add to -b and multiply to c: in x^2 - 14 x + 45 = 0 the roots 5 and 9 give 5 + 9 = 14 and 5 * 9 = 45.
 
-у x² − x + 7 = 0 нет целого корня от 0 до 10: всякое значение даёт остаток.
-x^2 - 3 x + 9 = 0 has no whole root between 0 and 12: every value leaves a remainder.
-каковы целые корни x² − 4x + 10 = 0 от 0 до 10? у x² − 4x + 10 = 0 нет целого корня от 0 до 10: всякое значение даёт остаток.
-every equation has a whole root is false: x^2 - 4 x + 10 = 0 is never 0 from 0 to 10, and at x = 2 it is 6, the smallest it gets there.
-целый корень был бы нулём среди значений: x² − 3x + 9 = 0 даёт 9, 7, 7, 9, 13, 19, 27, 37, 49, 63, 79, 97, 117 от x = 0 до x = 12, и нуля среди них нет.
-what are the whole roots of x^2 - x + 7 = 0 between 0 and 10? x^2 - x + 7 = 0 has no whole root between 0 and 10: every value leaves a remainder.
-у x² − 3x + 9 = 0 нет целого корня от 0 до 12: всякое значение даёт остаток.
-every equation has a whole root is false: x^2 - x + 7 = 0 is never 0 from 0 to 10, and at x = 0 it is 7, the smallest it gets there.
-всякое уравнение имеет целый корень — ложь: x² − 4x + 10 = 0 не даёт 0 от 0 до 10, а при x = 2 оно равно 6, и это наименьшее.
-an equation has no whole root when every whole value leaves a remainder.
+0x² + 2x + 8 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = −4: 2 × −4 + 8 = 0.
+0 x^2 + 6 x - 30 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = 5: 6 × 5 - 30 = 0.
 каковы целые корни x² − x + 7 = 0 от 0 до 10? у x² − x + 7 = 0 нет целого корня от 0 до 10: всякое значение даёт остаток.
 what are the whole roots of x^2 - 3 x + 9 = 0 between 0 and 12? x^2 - 3 x + 9 = 0 has no whole root between 0 and 12: every value leaves a remainder.
-всякое уравнение имеет целый корень — ложь: x² − x + 7 = 0 не даёт 0 от 0 до 10, а при x = 0 оно равно 7, и это наименьшее.
-a whole root would show as a 0 among the values: x^2 - x + 7 = 0 gives 7, 7, 9, 13, 19, 27, 37, 49, 63, 79, 97 from x = 0 to x = 10, and 0 is not among them.
-у уравнения нет целого корня, когда всякое целое значение даёт остаток.
-x^2 - 2 x + 8 = 0 has no whole root between 0 and 11: every value leaves a remainder.
-каковы целые корни x² − 3x + 9 = 0 от 0 до 12? у x² − 3x + 9 = 0 нет целого корня от 0 до 12: всякое значение даёт остаток.
-every equation has a whole root is false: x^2 - 2 x + 8 = 0 is never 0 from 0 to 11, and at x = 1 it is 7, the smallest it gets there.
-целый корень был бы нулём среди значений: x² − x + 7 = 0 даёт 7, 7, 9, 13, 19, 27, 37, 49, 63, 79, 97 от x = 0 до x = 10, и нуля среди них нет.
-when does an equation have no whole root? an equation has no whole root when every whole value leaves a remainder.
-у x² − 2x + 8 = 0 нет целого корня от 0 до 11: всякое значение даёт остаток.
-x^2 - 4 x + 10 = 0 has no whole root between 0 and 10: every value leaves a remainder.
+0x² + 2x + 8 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = −4: 2 × −4 + 8 = 0.
+0 x^2 + 6 x - 30 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = 5: 6 × 5 - 30 = 0.
 всякое уравнение имеет целый корень — ложь: x² − 2x + 8 = 0 не даёт 0 от 0 до 11, а при x = 1 оно равно 7, и это наименьшее.
 a whole root would show as a 0 among the values: x^2 - 2 x + 8 = 0 gives 8, 7, 8, 11, 16, 23, 32, 43, 56, 71, 88, 107 from x = 0 to x = 11, and 0 is not among them.
 когда у уравнения нет целого корня? у уравнения нет целого корня, когда всякое целое значение даёт остаток.
+0 x^2 + 5 x + 5 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = -1: 5 × -1 + 5 = 0.
+у x² − x + 7 = 0 нет целого корня от 0 до 10: всякое значение даёт остаток.
+x^2 - 3 x + 9 = 0 has no whole root between 0 and 12: every value leaves a remainder.
+каковы целые корни x² − 4x + 10 = 0 от 0 до 10? у x² − 4x + 10 = 0 нет целого корня от 0 до 10: всякое значение даёт остаток.
+0 x^2 + 5 x + 5 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = -1: 5 × -1 + 5 = 0.
+всякое уравнение имеет целый корень — ложь: x² − x + 7 = 0 не даёт 0 от 0 до 10, а при x = 0 оно равно 7, и это наименьшее.
+a whole root would show as a 0 among the values: x^2 - x + 7 = 0 gives 7, 7, 9, 13, 19, 27, 37, 49, 63, 79, 97 from x = 0 to x = 10, and 0 is not among them.
+у уравнения нет целого корня, когда всякое целое значение даёт остаток.
+0 x^2 + 4 x + 8 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = -2: 4 × -2 + 8 = 0.
+0x² + 7x − 7 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = 1: 7 × 1 − 7 = 0.
 what are the whole roots of x^2 - 2 x + 8 = 0 between 0 and 11? x^2 - 2 x + 8 = 0 has no whole root between 0 and 11: every value leaves a remainder.
 у x² − 4x + 10 = 0 нет целого корня от 0 до 10: всякое значение даёт остаток.
+0 x^2 + 4 x + 8 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = -2: 4 × -2 + 8 = 0.
+0x² + 7x − 7 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = 1: 7 × 1 − 7 = 0.
+every equation has a whole root is false: x^2 - 4 x + 10 = 0 is never 0 from 0 to 10, and at x = 2 it is 6, the smallest it gets there.
+целый корень был бы нулём среди значений: x² − 3x + 9 = 0 даёт 9, 7, 7, 9, 13, 19, 27, 37, 49, 63, 79, 97, 117 от x = 0 до x = 12, и нуля среди них нет.
+0 x^2 + 3 x + 9 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = -3: 3 × -3 + 9 = 0.
+0x² + 6x − 30 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = 5: 6 × 5 − 30 = 0.
+x^2 - 2 x + 8 = 0 has no whole root between 0 and 11: every value leaves a remainder.
+каковы целые корни x² − 3x + 9 = 0 от 0 до 12? у x² − 3x + 9 = 0 нет целого корня от 0 до 12: всякое значение даёт остаток.
+0 x^2 + 3 x + 9 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = -3: 3 × -3 + 9 = 0.
+0x² + 6x − 30 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = 5: 6 × 5 − 30 = 0.
 every equation has a whole root is false: x^2 - 3 x + 9 = 0 is never 0 from 0 to 12, and at x = 1 it is 7, the smallest it gets there.
 целый корень был бы нулём среди значений: x² − 2x + 8 = 0 даёт 8, 7, 8, 11, 16, 23, 32, 43, 56, 71, 88, 107 от x = 0 до x = 11, и нуля среди них нет.
+0 x^2 + 2 x + 8 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = -4: 2 × -4 + 8 = 0.
+0x² + 5x + 5 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = −1: 5 × −1 + 5 = 0.
+what are the whole roots of x^2 - x + 7 = 0 between 0 and 10? x^2 - x + 7 = 0 has no whole root between 0 and 10: every value leaves a remainder.
+у x² − 3x + 9 = 0 нет целого корня от 0 до 12: всякое значение даёт остаток.
+0 x^2 + 2 x + 8 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = -4: 2 × -4 + 8 = 0.
+0x² + 5x + 5 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = −1: 5 × −1 + 5 = 0.
+every equation has a whole root is false: x^2 - 2 x + 8 = 0 is never 0 from 0 to 11, and at x = 1 it is 7, the smallest it gets there.
+целый корень был бы нулём среди значений: x² − x + 7 = 0 даёт 7, 7, 9, 13, 19, 27, 37, 49, 63, 79, 97 от x = 0 до x = 10, и нуля среди них нет.
+when does an equation have no whole root? an equation has no whole root when every whole value leaves a remainder.
+0x² + 4x + 8 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = −2: 4 × −2 + 8 = 0.
 x^2 - x + 7 = 0 has no whole root between 0 and 10: every value leaves a remainder.
 каковы целые корни x² − 2x + 8 = 0 от 0 до 11? у x² − 2x + 8 = 0 нет целого корня от 0 до 11: всякое значение даёт остаток.
 what are the whole roots of x^2 - 4 x + 10 = 0 between 0 and 10? x^2 - 4 x + 10 = 0 has no whole root between 0 and 10: every value leaves a remainder.
+0x² + 4x + 8 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = −2: 4 × −2 + 8 = 0.
+every equation has a whole root is false: x^2 - x + 7 = 0 is never 0 from 0 to 10, and at x = 0 it is 7, the smallest it gets there.
+всякое уравнение имеет целый корень — ложь: x² − 4x + 10 = 0 не даёт 0 от 0 до 10, а при x = 2 оно равно 6, и это наименьшее.
+an equation has no whole root when every whole value leaves a remainder.
+0x² + 3x + 9 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = −3: 3 × −3 + 9 = 0.
+0 x^2 + 7 x - 7 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = 1: 7 × 1 - 7 = 0.
+у x² − 2x + 8 = 0 нет целого корня от 0 до 11: всякое значение даёт остаток.
+x^2 - 4 x + 10 = 0 has no whole root between 0 and 10: every value leaves a remainder.
+0x² + 3x + 9 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = −3: 3 × −3 + 9 = 0.
+0 x^2 + 7 x - 7 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = 1: 7 × 1 - 7 = 0.
 всякое уравнение имеет целый корень — ложь: x² − 3x + 9 = 0 не даёт 0 от 0 до 12, а при x = 1 оно равно 7, и это наименьшее.
 a whole root would show as a 0 among the values: x^2 - 3 x + 9 = 0 gives 9, 7, 7, 9, 13, 19, 27, 37, 49, 63, 79, 97, 117 from x = 0 to x = 12, and 0 is not among them.
 
@@ -381,38 +405,62 @@ x^2 + 13 x = 0 factors as ( x + 13 ) ( x ): -13 + 0 = -13 and -13 * 0 = 0; the r
 корни складываются в средний коэффициент — ложь: у x² − 9x + 20 = 0 корни 4 и 5, и 4 + 5 = 9, а средний коэффициент −9.
 
 when does an equation have no whole root? an equation has no whole root when every whole value leaves a remainder.
-у x² − 4x + 12 = 0 нет целого корня от 0 до 10: всякое значение даёт остаток.
-every equation has a whole root is false: x^2 - 4 x + 12 = 0 is never 0 from 0 to 10, and at x = 2 it is 8, the smallest it gets there.
-у уравнения нет целого корня, когда всякое целое значение даёт остаток.
+0x² + 7x − 21 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = 3: 7 × 3 − 21 = 0.
 x^2 - 4 x + 12 = 0 has no whole root between 0 and 10: every value leaves a remainder.
-всякое уравнение имеет целый корень — ложь: x² − 3x + 11 = 0 не даёт 0 от 0 до 12, а при x = 1 оно равно 9, и это наименьшее.
-an equation has no whole root when every whole value leaves a remainder.
-каковы целые корни x² − 3x + 11 = 0 от 0 до 12? у x² − 3x + 11 = 0 нет целого корня от 0 до 12: всякое значение даёт остаток.
+0x² + 4x − 20 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = 5: 4 × 5 − 20 = 0.
 every equation has a whole root is false: x^2 - 3 x + 11 = 0 is never 0 from 0 to 12, and at x = 1 it is 9, the smallest it gets there.
 целый корень был бы нулём среди значений: x² − 4x + 12 = 0 даёт 12, 9, 8, 9, 12, 17, 24, 33, 44, 57, 72 от x = 0 до x = 10, и нуля среди них нет.
-what are the whole roots of x^2 - 3 x + 11 = 0 between 0 and 12? x^2 - 3 x + 11 = 0 has no whole root between 0 and 12: every value leaves a remainder.
-всякое уравнение имеет целый корень — ложь: x² − 2x + 10 = 0 не даёт 0 от 0 до 11, а при x = 1 оно равно 9, и это наименьшее.
-a whole root would show as a 0 among the values: x^2 - 4 x + 12 = 0 gives 12, 9, 8, 9, 12, 17, 24, 33, 44, 57, 72 from x = 0 to x = 10, and 0 is not among them.
+0 x^2 + 6 x - 12 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = 2: 6 × 2 - 12 = 0.
 у x² − 3x + 11 = 0 нет целого корня от 0 до 12: всякое значение даёт остаток.
-every equation has a whole root is false: x^2 - 2 x + 10 = 0 is never 0 from 0 to 11, and at x = 1 it is 9, the smallest it gets there.
-целый корень был бы нулём среди значений: x² − 3x + 11 = 0 даёт 11, 9, 9, 11, 15, 21, 29, 39, 51, 65, 81, 99, 119 от x = 0 до x = 12, и нуля среди них нет.
-x^2 - 3 x + 11 = 0 has no whole root between 0 and 12: every value leaves a remainder.
-каковы целые корни x² − x + 13 = 0 от 0 до 11? у x² − x + 13 = 0 нет целого корня от 0 до 11: всякое значение даёт остаток.
+0 x^2 + 3 x + 3 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = -1: 3 × -1 + 3 = 0.
+0x² + 8x − 32 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = 4: 8 × 4 − 32 = 0.
 a whole root would show as a 0 among the values: x^2 - 3 x + 11 = 0 gives 11, 9, 9, 11, 15, 21, 29, 39, 51, 65, 81, 99, 119 from x = 0 to x = 12, and 0 is not among them.
-каковы целые корни x² − 2x + 10 = 0 от 0 до 11? у x² − 2x + 10 = 0 нет целого корня от 0 до 11: всякое значение даёт остаток.
-what are the whole roots of x^2 - x + 13 = 0 between 0 and 11? x^2 - x + 13 = 0 has no whole root between 0 and 11: every value leaves a remainder.
-целый корень был бы нулём среди значений: x² − 2x + 10 = 0 даёт 10, 9, 10, 13, 18, 25, 34, 45, 58, 73, 90, 109 от x = 0 до x = 11, и нуля среди них нет.
+0x² + 4x − 20 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = 5: 4 × 5 − 20 = 0.
 what are the whole roots of x^2 - 2 x + 10 = 0 between 0 and 11? x^2 - 2 x + 10 = 0 has no whole root between 0 and 11: every value leaves a remainder.
 у x² − x + 13 = 0 нет целого корня от 0 до 11: всякое значение даёт остаток.
-a whole root would show as a 0 among the values: x^2 - 2 x + 10 = 0 gives 10, 9, 10, 13, 18, 25, 34, 45, 58, 73, 90, 109 from x = 0 to x = 11, and 0 is not among them.
+0 x^2 + 7 x - 21 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = 3: 7 × 3 - 21 = 0.
+всякое уравнение имеет целый корень — ложь: x² − x + 13 = 0 не даёт 0 от 0 до 11, а при x = 0 оно равно 13, и это наименьшее.
+0 x^2 + 3 x + 3 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = -1: 3 × -1 + 3 = 0.
+0x² + 8x − 32 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = 4: 8 × 4 − 32 = 0.
+what are the whole roots of x^2 - 4 x + 12 = 0 between 0 and 10? x^2 - 4 x + 12 = 0 has no whole root between 0 and 10: every value leaves a remainder.
+0x² + 5x − 5 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = 1: 5 × 1 − 5 = 0.
+every equation has a whole root is false: x^2 - 4 x + 12 = 0 is never 0 from 0 to 10, and at x = 2 it is 8, the smallest it gets there.
+у уравнения нет целого корня, когда всякое целое значение даёт остаток.
+0 x^2 + 7 x - 21 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = 3: 7 × 3 - 21 = 0.
+каковы целые корни x² − 3x + 11 = 0 от 0 до 12? у x² − 3x + 11 = 0 нет целого корня от 0 до 12: всякое значение даёт остаток.
+0 x^2 + 4 x - 20 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = 5: 4 × 5 - 20 = 0.
+всякое уравнение имеет целый корень — ложь: x² − 2x + 10 = 0 не даёт 0 от 0 до 11, а при x = 1 оно равно 9, и это наименьшее.
+a whole root would show as a 0 among the values: x^2 - 4 x + 12 = 0 gives 12, 9, 8, 9, 12, 17, 24, 33, 44, 57, 72 from x = 0 to x = 10, and 0 is not among them.
+0x² + 5x − 5 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = 1: 5 × 1 − 5 = 0.
+x^2 - 3 x + 11 = 0 has no whole root between 0 and 12: every value leaves a remainder.
+каковы целые корни x² − x + 13 = 0 от 0 до 11? у x² − x + 13 = 0 нет целого корня от 0 до 11: всякое значение даёт остаток.
+0 x^2 + 8 x - 32 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = 4: 8 × 4 - 32 = 0.
+целый корень был бы нулём среди значений: x² − 2x + 10 = 0 даёт 10, 9, 10, 13, 18, 25, 34, 45, 58, 73, 90, 109 от x = 0 до x = 11, и нуля среди них нет.
+0 x^2 + 4 x - 20 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = 5: 4 × 5 - 20 = 0.
 у x² − 2x + 10 = 0 нет целого корня от 0 до 11: всякое значение даёт остаток.
 x^2 - x + 13 = 0 has no whole root between 0 and 11: every value leaves a remainder.
-всякое уравнение имеет целый корень — ложь: x² − x + 13 = 0 не даёт 0 от 0 до 11, а при x = 0 оно равно 13, и это наименьшее.
-x^2 - 2 x + 10 = 0 has no whole root between 0 and 11: every value leaves a remainder.
-каковы целые корни x² − 4x + 12 = 0 от 0 до 10? у x² − 4x + 12 = 0 нет целого корня от 0 до 10: всякое значение даёт остаток.
+0x² + 6x − 12 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = 2: 6 × 2 − 12 = 0.
 every equation has a whole root is false: x^2 - x + 13 = 0 is never 0 from 0 to 11, and at x = 0 it is 13, the smallest it gets there.
 когда у уравнения нет целого корня? у уравнения нет целого корня, когда всякое целое значение даёт остаток.
-what are the whole roots of x^2 - 4 x + 12 = 0 between 0 and 10? x^2 - 4 x + 12 = 0 has no whole root between 0 and 10: every value leaves a remainder.
+0 x^2 + 8 x - 32 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = 4: 8 × 4 - 32 = 0.
+у x² − 4x + 12 = 0 нет целого корня от 0 до 10: всякое значение даёт остаток.
+0 x^2 + 5 x - 5 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = 1: 5 × 1 - 5 = 0.
+всякое уравнение имеет целый корень — ложь: x² − 3x + 11 = 0 не даёт 0 от 0 до 12, а при x = 1 оно равно 9, и это наименьшее.
+an equation has no whole root when every whole value leaves a remainder.
+0x² + 6x − 12 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = 2: 6 × 2 − 12 = 0.
+what are the whole roots of x^2 - 3 x + 11 = 0 between 0 and 12? x^2 - 3 x + 11 = 0 has no whole root between 0 and 12: every value leaves a remainder.
+0x² + 3x + 3 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = −1: 3 × −1 + 3 = 0.
+every equation has a whole root is false: x^2 - 2 x + 10 = 0 is never 0 from 0 to 11, and at x = 1 it is 9, the smallest it gets there.
+целый корень был бы нулём среди значений: x² − 3x + 11 = 0 даёт 11, 9, 9, 11, 15, 21, 29, 39, 51, 65, 81, 99, 119 от x = 0 до x = 12, и нуля среди них нет.
+0 x^2 + 5 x - 5 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = 1: 5 × 1 - 5 = 0.
+каковы целые корни x² − 2x + 10 = 0 от 0 до 11? у x² − 2x + 10 = 0 нет целого корня от 0 до 11: всякое значение даёт остаток.
+what are the whole roots of x^2 - x + 13 = 0 between 0 and 11? x^2 - x + 13 = 0 has no whole root between 0 and 11: every value leaves a remainder.
+0x² + 7x − 21 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = 3: 7 × 3 − 21 = 0.
+a whole root would show as a 0 among the values: x^2 - 2 x + 10 = 0 gives 10, 9, 10, 13, 18, 25, 34, 45, 58, 73, 90, 109 from x = 0 to x = 11, and 0 is not among them.
+0x² + 3x + 3 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = −1: 3 × −1 + 3 = 0.
+x^2 - 2 x + 10 = 0 has no whole root between 0 and 11: every value leaves a remainder.
+каковы целые корни x² − 4x + 12 = 0 от 0 до 10? у x² − 4x + 12 = 0 нет целого корня от 0 до 10: всякое значение даёт остаток.
+0 x^2 + 6 x - 12 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = 2: 6 × 2 - 12 = 0.
 всякое уравнение имеет целый корень — ложь: x² − 4x + 12 = 0 не даёт 0 от 0 до 10, а при x = 2 оно равно 8, и это наименьшее.
 
 what is a square root? the square root of a number is the value whose square is that number.
@@ -615,39 +663,63 @@ what are the roots of x^2 - 144 = 0? x^2 - 144 = 0 factors as ( x + 12 ) ( x - 1
 каковы корни x² − 3x − 10 = 0? x² − 3x − 10 = 0 раскладывается как ( x + 2 ) ( x − 5 ): −2 + 5 = 3 и −2 × 5 = −10; корни — −2 и 5.
 the roots of x^2 + b x + c = 0 add to -b and multiply to c: in x^2 - 19 x + 88 = 0 the roots 8 and 11 give 8 + 11 = 19 and 8 * 11 = 88.
 
-у x² − 4x + 14 = 0 нет целого корня от 0 до 10: всякое значение даёт остаток.
-every equation has a whole root is false: x^2 - 4 x + 14 = 0 is never 0 from 0 to 10, and at x = 2 it is 10, the smallest it gets there.
-у уравнения нет целого корня, когда всякое целое значение даёт остаток.
-what are the whole roots of x^2 - x + 15 = 0 between 0 and 11? x^2 - x + 15 = 0 has no whole root between 0 and 11: every value leaves a remainder.
-всякое уравнение имеет целый корень — ложь: x² − 2x + 16 = 0 не даёт 0 от 0 до 12, а при x = 1 оно равно 15, и это наименьшее.
-what are the whole roots of x^2 - 3 x + 13 = 0 between 0 and 12? x^2 - 3 x + 13 = 0 has no whole root between 0 and 12: every value leaves a remainder.
-каковы целые корни x² − 2x + 16 = 0 от 0 до 12? у x² − 2x + 16 = 0 нет целого корня от 0 до 12: всякое значение даёт остаток.
-a whole root would show as a 0 among the values: x^2 - x + 15 = 0 gives 15, 15, 17, 21, 27, 35, 45, 57, 71, 87, 105, 125 from x = 0 to x = 11, and 0 is not among them.
-каковы целые корни x² − 4x + 14 = 0 от 0 до 10? у x² − 4x + 14 = 0 нет целого корня от 0 до 10: всякое значение даёт остаток.
+0x² + 6x − 24 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = 4: 6 × 4 − 24 = 0.
+what are the whole roots of x^2 - 4 x + 14 = 0 between 0 and 10? x^2 - 4 x + 14 = 0 has no whole root between 0 and 10: every value leaves a remainder.
+0x² + 5x − 15 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = 3: 5 × 3 − 15 = 0.
 every equation has a whole root is false: x^2 - x + 15 = 0 is never 0 from 0 to 11, and at x = 0 it is 15, the smallest it gets there.
 когда у уравнения нет целого корня? у уравнения нет целого корня, когда всякое целое значение даёт остаток.
-x^2 - 2 x + 16 = 0 has no whole root between 0 and 12: every value leaves a remainder.
-целый корень был бы нулём среди значений: x² − 3x + 13 = 0 даёт 13, 11, 11, 13, 17, 23, 31, 41, 53, 67, 83, 101, 121 от x = 0 до x = 12, и нуля среди них нет.
-x^2 - 4 x + 14 = 0 has no whole root between 0 and 10: every value leaves a remainder.
-всякое уравнение имеет целый корень — ложь: x² − 3x + 13 = 0 не даёт 0 от 0 до 12, а при x = 1 оно равно 11, и это наименьшее.
-an equation has no whole root when every whole value leaves a remainder.
-у x² − x + 15 = 0 нет целого корня от 0 до 11: всякое значение даёт остаток.
-every equation has a whole root is false: x^2 - 2 x + 16 = 0 is never 0 from 0 to 12, and at x = 1 it is 15, the smallest it gets there.
-у x² − 3x + 13 = 0 нет целого корня от 0 до 12: всякое значение даёт остаток.
-what are the whole roots of x^2 - 2 x + 16 = 0 between 0 and 12? x^2 - 2 x + 16 = 0 has no whole root between 0 and 12: every value leaves a remainder.
-целый корень был бы нулём среди значений: x² − 4x + 14 = 0 даёт 14, 11, 10, 11, 14, 19, 26, 35, 46, 59, 74 от x = 0 до x = 10, и нуля среди них нет.
-what are the whole roots of x^2 - 4 x + 14 = 0 between 0 and 10? x^2 - 4 x + 14 = 0 has no whole root between 0 and 10: every value leaves a remainder.
-всякое уравнение имеет целый корень — ложь: x² − 4x + 14 = 0 не даёт 0 от 0 до 10, а при x = 2 оно равно 10, и это наименьшее.
-when does an equation have no whole root? an equation has no whole root when every whole value leaves a remainder.
-каковы целые корни x² − x + 15 = 0 от 0 до 11? у x² − x + 15 = 0 нет целого корня от 0 до 11: всякое значение даёт остаток.
-a whole root would show as a 0 among the values: x^2 - 3 x + 13 = 0 gives 13, 11, 11, 13, 17, 23, 31, 41, 53, 67, 83, 101, 121 from x = 0 to x = 12, and 0 is not among them.
-каковы целые корни x² − 3x + 13 = 0 от 0 до 12? у x² − 3x + 13 = 0 нет целого корня от 0 до 12: всякое значение даёт остаток.
-every equation has a whole root is false: x^2 - 3 x + 13 = 0 is never 0 from 0 to 12, and at x = 1 it is 11, the smallest it gets there.
-целый корень был бы нулём среди значений: x² − x + 15 = 0 даёт 15, 15, 17, 21, 27, 35, 45, 57, 71, 87, 105, 125 от x = 0 до x = 11, и нуля среди них нет.
-x^2 - x + 15 = 0 has no whole root between 0 and 11: every value leaves a remainder.
-всякое уравнение имеет целый корень — ложь: x² − x + 15 = 0 не даёт 0 от 0 до 11, а при x = 0 оно равно 15, и это наименьшее.
 x^2 - 3 x + 13 = 0 has no whole root between 0 and 12: every value leaves a remainder.
 у x² − 2x + 16 = 0 нет целого корня от 0 до 12: всякое значение даёт остаток.
+0 x^2 + 2 x + 4 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = -2: 2 × -2 + 4 = 0.
+целый корень был бы нулём среди значений: x² − 4x + 14 = 0 даёт 14, 11, 10, 11, 14, 19, 26, 35, 46, 59, 74 от x = 0 до x = 10, и нуля среди них нет.
+0 x^2 + 7 x + 28 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = -4: 7 × -4 + 28 = 0.
+каковы целые корни x² − 4x + 14 = 0 от 0 до 10? у x² − 4x + 14 = 0 нет целого корня от 0 до 10: всякое значение даёт остаток.
+0 x^2 + 6 x - 24 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = 4: 6 × 4 - 24 = 0.
+всякое уравнение имеет целый корень — ложь: x² − x + 15 = 0 не даёт 0 от 0 до 11, а при x = 0 оно равно 15, и это наименьшее.
+0 x^2 + 4 x - 8 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = 2: 4 × 2 - 8 = 0.
+у x² − 3x + 13 = 0 нет целого корня от 0 до 12: всякое значение даёт остаток.
+what are the whole roots of x^2 - 2 x + 16 = 0 between 0 and 12? x^2 - 2 x + 16 = 0 has no whole root between 0 and 12: every value leaves a remainder.
+0x² + 2x + 4 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = −2: 2 × −2 + 4 = 0.
+a whole root would show as a 0 among the values: x^2 - x + 15 = 0 gives 15, 15, 17, 21, 27, 35, 45, 57, 71, 87, 105, 125 from x = 0 to x = 11, and 0 is not among them.
+0x² + 7x + 28 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = −4: 7 × −4 + 28 = 0.
+x^2 - x + 15 = 0 has no whole root between 0 and 11: every value leaves a remainder.
+0x² + 6x − 24 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = 4: 6 × 4 − 24 = 0.
+every equation has a whole root is false: x^2 - 2 x + 16 = 0 is never 0 from 0 to 12, and at x = 1 it is 15, the smallest it gets there.
+0x² + 4x − 8 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = 2: 4 × 2 − 8 = 0.
+what are the whole roots of x^2 - 3 x + 13 = 0 between 0 and 12? x^2 - 3 x + 13 = 0 has no whole root between 0 and 12: every value leaves a remainder.
+каковы целые корни x² − 2x + 16 = 0 от 0 до 12? у x² − 2x + 16 = 0 нет целого корня от 0 до 12: всякое значение даёт остаток.
+every equation has a whole root is false: x^2 - 3 x + 13 = 0 is never 0 from 0 to 12, and at x = 1 it is 11, the smallest it gets there.
+целый корень был бы нулём среди значений: x² − x + 15 = 0 даёт 15, 15, 17, 21, 27, 35, 45, 57, 71, 87, 105, 125 от x = 0 до x = 11, и нуля среди них нет.
+0 x^2 + 8 x + 24 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = -3: 8 × -3 + 24 = 0.
+у x² − x + 15 = 0 нет целого корня от 0 до 11: всякое значение даёт остаток.
+0 x^2 + 7 x + 28 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = -4: 7 × -4 + 28 = 0.
+всякое уравнение имеет целый корень — ложь: x² − 2x + 16 = 0 не даёт 0 от 0 до 12, а при x = 1 оно равно 15, и это наименьшее.
+0 x^2 + 5 x - 15 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = 3: 5 × 3 - 15 = 0.
+каковы целые корни x² − 3x + 13 = 0 от 0 до 12? у x² − 3x + 13 = 0 нет целого корня от 0 до 12: всякое значение даёт остаток.
+0 x^2 + 4 x - 8 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = 2: 4 × 2 - 8 = 0.
+всякое уравнение имеет целый корень — ложь: x² − 3x + 13 = 0 не даёт 0 от 0 до 12, а при x = 1 оно равно 11, и это наименьшее.
+an equation has no whole root when every whole value leaves a remainder.
+0x² + 8x + 24 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = −3: 8 × −3 + 24 = 0.
+what are the whole roots of x^2 - x + 15 = 0 between 0 and 11? x^2 - x + 15 = 0 has no whole root between 0 and 11: every value leaves a remainder.
+0x² + 7x + 28 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = −4: 7 × −4 + 28 = 0.
+a whole root would show as a 0 among the values: x^2 - 3 x + 13 = 0 gives 13, 11, 11, 13, 17, 23, 31, 41, 53, 67, 83, 101, 121 from x = 0 to x = 12, and 0 is not among them.
+0x² + 5x − 15 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = 3: 5 × 3 − 15 = 0.
+x^2 - 4 x + 14 = 0 has no whole root between 0 and 10: every value leaves a remainder.
+0x² + 4x − 8 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = 2: 4 × 2 − 8 = 0.
+every equation has a whole root is false: x^2 - 4 x + 14 = 0 is never 0 from 0 to 10, and at x = 2 it is 10, the smallest it gets there.
+у уравнения нет целого корня, когда всякое целое значение даёт остаток.
+0 x^2 + 2 x + 4 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = -2: 2 × -2 + 4 = 0.
+каковы целые корни x² − x + 15 = 0 от 0 до 11? у x² − x + 15 = 0 нет целого корня от 0 до 11: всякое значение даёт остаток.
+0 x^2 + 8 x + 24 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = -3: 8 × -3 + 24 = 0.
+целый корень был бы нулём среди значений: x² − 3x + 13 = 0 даёт 13, 11, 11, 13, 17, 23, 31, 41, 53, 67, 83, 101, 121 от x = 0 до x = 12, и нуля среди них нет.
+0 x^2 + 6 x - 24 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = 4: 6 × 4 - 24 = 0.
+у x² − 4x + 14 = 0 нет целого корня от 0 до 10: всякое значение даёт остаток.
+0 x^2 + 5 x - 15 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = 3: 5 × 3 - 15 = 0.
+всякое уравнение имеет целый корень — ложь: x² − 4x + 14 = 0 не даёт 0 от 0 до 10, а при x = 2 оно равно 10, и это наименьшее.
+when does an equation have no whole root? an equation has no whole root when every whole value leaves a remainder.
+0x² + 2x + 4 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = −2: 2 × −2 + 4 = 0.
+x^2 - 2 x + 16 = 0 has no whole root between 0 and 12: every value leaves a remainder.
+0x² + 8x + 24 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = −3: 8 × −3 + 24 = 0.
 a whole root would show as a 0 among the values: x^2 - 4 x + 14 = 0 gives 14, 11, 10, 11, 14, 19, 26, 35, 46, 59, 74 from x = 0 to x = 10, and 0 is not among them.
 
 квадрат 20 есть 400, значит квадратный корень из 400 есть 20.
@@ -850,40 +922,64 @@ x^2 - 4 x - 32 = 0 factors as ( x + 4 ) ( x - 8 ): -4 + 8 = 4 and -4 * 8 = -32; 
 what are the roots of x^2 - 49 = 0? x^2 - 49 = 0 factors as ( x + 7 ) ( x - 7 ): -7 + 7 = 0 and -7 * 7 = -49; the roots are -7 and 7.
 корни складываются в средний коэффициент — ложь: у x² − 11x + 30 = 0 корни 5 и 6, и 5 + 6 = 11, а средний коэффициент −11.
 
-x^2 - 4 x + 16 = 0 has no whole root between 0 and 10: every value leaves a remainder.
-всякое уравнение имеет целый корень — ложь: x² − x + 17 = 0 не даёт 0 от 0 до 11, а при x = 0 оно равно 17, и это наименьшее.
-x^2 - x + 17 = 0 has no whole root between 0 and 11: every value leaves a remainder.
-всякое уравнение имеет целый корень — ложь: x² − 3x + 8 = 0 не даёт 0 от 0 до 10, а при x = 1 оно равно 6, и это наименьшее.
-x^2 - 2 x + 7 = 0 has no whole root between 0 and 12: every value leaves a remainder.
-целый корень был бы нулём среди значений: x² − x + 17 = 0 даёт 17, 17, 19, 23, 29, 37, 47, 59, 73, 89, 107, 127 от x = 0 до x = 11, и нуля среди них нет.
-x^2 - 3 x + 8 = 0 has no whole root between 0 and 10: every value leaves a remainder.
-у уравнения нет целого корня, когда всякое целое значение даёт остаток.
-every equation has a whole root is false: x^2 - 4 x + 16 = 0 is never 0 from 0 to 10, and at x = 2 it is 12, the smallest it gets there.
-у x² − 4x + 16 = 0 нет целого корня от 0 до 10: всякое значение даёт остаток.
-every equation has a whole root is false: x^2 - 2 x + 7 = 0 is never 0 from 0 to 12, and at x = 1 it is 6, the smallest it gets there.
+0 x^2 + 5 x + 20 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = -4: 5 × -4 + 20 = 0.
 у x² − x + 17 = 0 нет целого корня от 0 до 11: всякое значение даёт остаток.
-a whole root would show as a 0 among the values: x^2 - 4 x + 16 = 0 gives 16, 13, 12, 13, 16, 21, 28, 37, 48, 61, 76 from x = 0 to x = 10, and 0 is not among them.
-у x² − 2x + 7 = 0 нет целого корня от 0 до 12: всякое значение даёт остаток.
-a whole root would show as a 0 among the values: x^2 - 2 x + 7 = 0 gives 7, 6, 7, 10, 15, 22, 31, 42, 55, 70, 87, 106, 127 from x = 0 to x = 12, and 0 is not among them.
-у x² − 3x + 8 = 0 нет целого корня от 0 до 10: всякое значение даёт остаток.
-when does an equation have no whole root? an equation has no whole root when every whole value leaves a remainder.
-всякое уравнение имеет целый корень — ложь: x² − 4x + 16 = 0 не даёт 0 от 0 до 10, а при x = 2 оно равно 12, и это наименьшее.
-what are the whole roots of x^2 - 4 x + 16 = 0 between 0 and 10? x^2 - 4 x + 16 = 0 has no whole root between 0 and 10: every value leaves a remainder.
-всякое уравнение имеет целый корень — ложь: x² − 2x + 7 = 0 не даёт 0 от 0 до 12, а при x = 1 оно равно 6, и это наименьшее.
-what are the whole roots of x^2 - x + 17 = 0 between 0 and 11? x^2 - x + 17 = 0 has no whole root between 0 and 11: every value leaves a remainder.
-целый корень был бы нулём среди значений: x² − 4x + 16 = 0 даёт 16, 13, 12, 13, 16, 21, 28, 37, 48, 61, 76 от x = 0 до x = 10, и нуля среди них нет.
-what are the whole roots of x^2 - 2 x + 7 = 0 between 0 and 12? x^2 - 2 x + 7 = 0 has no whole root between 0 and 12: every value leaves a remainder.
-целый корень был бы нулём среди значений: x² − 2x + 7 = 0 даёт 7, 6, 7, 10, 15, 22, 31, 42, 55, 70, 87, 106, 127 от x = 0 до x = 12, и нуля среди них нет.
-what are the whole roots of x^2 - 3 x + 8 = 0 between 0 and 10? x^2 - 3 x + 8 = 0 has no whole root between 0 and 10: every value leaves a remainder.
-когда у уравнения нет целого корня? у уравнения нет целого корня, когда всякое целое значение даёт остаток.
-every equation has a whole root is false: x^2 - x + 17 = 0 is never 0 from 0 to 11, and at x = 0 it is 17, the smallest it gets there.
-каковы целые корни x² − 4x + 16 = 0 от 0 до 10? у x² − 4x + 16 = 0 нет целого корня от 0 до 10: всякое значение даёт остаток.
-every equation has a whole root is false: x^2 - 3 x + 8 = 0 is never 0 from 0 to 10, and at x = 1 it is 6, the smallest it gets there.
-каковы целые корни x² − x + 17 = 0 от 0 до 11? у x² − x + 17 = 0 нет целого корня от 0 до 11: всякое значение даёт остаток.
-a whole root would show as a 0 among the values: x^2 - x + 17 = 0 gives 17, 17, 19, 23, 29, 37, 47, 59, 73, 89, 107, 127 from x = 0 to x = 11, and 0 is not among them.
-каковы целые корни x² − 2x + 7 = 0 от 0 до 12? у x² − 2x + 7 = 0 нет целого корня от 0 до 12: всякое значение даёт остаток.
-an equation has no whole root when every whole value leaves a remainder.
+0 x^2 + 8 x + 8 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = -1: 8 × -1 + 8 = 0.
+целый корень был бы нулём среди значений: x² − x + 17 = 0 даёт 17, 17, 19, 23, 29, 37, 47, 59, 73, 89, 107, 127 от x = 0 до x = 11, и нуля среди них нет.
+0 x^2 + 3 x - 3 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = 1: 3 × 1 - 3 = 0.
 каковы целые корни x² − 3x + 8 = 0 от 0 до 10? у x² − 3x + 8 = 0 нет целого корня от 0 до 10: всякое значение даёт остаток.
+every equation has a whole root is false: x^2 - 2 x + 7 = 0 is never 0 from 0 to 12, and at x = 1 it is 6, the smallest it gets there.
+0x² + 6x + 18 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = −3: 6 × −3 + 18 = 0.
+x^2 - 2 x + 7 = 0 has no whole root between 0 and 12: every value leaves a remainder.
+0x² + 2x − 10 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = 5: 2 × 5 − 10 = 0.
+an equation has no whole root when every whole value leaves a remainder.
+у x² − 4x + 16 = 0 нет целого корня от 0 до 10: всякое значение даёт остаток.
+0 x^2 + 6 x + 18 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = -3: 6 × -3 + 18 = 0.
+всякое уравнение имеет целый корень — ложь: x² − 3x + 8 = 0 не даёт 0 от 0 до 10, а при x = 1 оно равно 6, и это наименьшее.
+0 x^2 + 8 x + 8 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = -1: 8 × -1 + 8 = 0.
+каковы целые корни x² − 2x + 7 = 0 от 0 до 12? у x² − 2x + 7 = 0 нет целого корня от 0 до 12: всякое значение даёт остаток.
+every equation has a whole root is false: x^2 - 4 x + 16 = 0 is never 0 from 0 to 10, and at x = 2 it is 12, the smallest it gets there.
+когда у уравнения нет целого корня? у уравнения нет целого корня, когда всякое целое значение даёт остаток.
+x^2 - x + 17 = 0 has no whole root between 0 and 11: every value leaves a remainder.
+0x² + 7x + 14 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = −2: 7 × −2 + 14 = 0.
+a whole root would show as a 0 among the values: x^2 - x + 17 = 0 gives 17, 17, 19, 23, 29, 37, 47, 59, 73, 89, 107, 127 from x = 0 to x = 11, and 0 is not among them.
+0x² + 2x − 10 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = 5: 2 × 5 − 10 = 0.
+what are the whole roots of x^2 - 3 x + 8 = 0 between 0 and 10? x^2 - 3 x + 8 = 0 has no whole root between 0 and 10: every value leaves a remainder.
+всякое уравнение имеет целый корень — ложь: x² − x + 17 = 0 не даёт 0 от 0 до 11, а при x = 0 оно равно 17, и это наименьшее.
+0 x^2 + 6 x + 18 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = -3: 6 × -3 + 18 = 0.
+каковы целые корни x² − x + 17 = 0 от 0 до 11? у x² − x + 17 = 0 нет целого корня от 0 до 11: всякое значение даёт остаток.
+0 x^2 + 2 x - 10 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = 5: 2 × 5 - 10 = 0.
+целый корень был бы нулём среди значений: x² − 2x + 7 = 0 даёт 7, 6, 7, 10, 15, 22, 31, 42, 55, 70, 87, 106, 127 от x = 0 до x = 12, и нуля среди них нет.
+x^2 - 4 x + 16 = 0 has no whole root between 0 and 10: every value leaves a remainder.
+0x² + 5x + 20 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = −4: 5 × −4 + 20 = 0.
+every equation has a whole root is false: x^2 - 3 x + 8 = 0 is never 0 from 0 to 10, and at x = 1 it is 6, the smallest it gets there.
+0x² + 7x + 14 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = −2: 7 × −2 + 14 = 0.
+what are the whole roots of x^2 - 2 x + 7 = 0 between 0 and 12? x^2 - 2 x + 7 = 0 has no whole root between 0 and 12: every value leaves a remainder.
+0x² + 3x − 3 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = 1: 3 × 1 − 3 = 0.
+when does an equation have no whole root? an equation has no whole root when every whole value leaves a remainder.
+каковы целые корни x² − 4x + 16 = 0 от 0 до 10? у x² − 4x + 16 = 0 нет целого корня от 0 до 10: всякое значение даёт остаток.
+0 x^2 + 7 x + 14 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = -2: 7 × -2 + 14 = 0.
+целый корень был бы нулём среди значений: x² − 4x + 16 = 0 даёт 16, 13, 12, 13, 16, 21, 28, 37, 48, 61, 76 от x = 0 до x = 10, и нуля среди них нет.
+0 x^2 + 2 x - 10 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = 5: 2 × 5 - 10 = 0.
+у x² − 3x + 8 = 0 нет целого корня от 0 до 10: всякое значение даёт остаток.
+every equation has a whole root is false: x^2 - x + 17 = 0 is never 0 from 0 to 11, and at x = 0 it is 17, the smallest it gets there.
+0x² + 5x + 20 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = −4: 5 × −4 + 20 = 0.
+what are the whole roots of x^2 - x + 17 = 0 between 0 and 11? x^2 - x + 17 = 0 has no whole root between 0 and 11: every value leaves a remainder.
+0x² + 8x + 8 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = −1: 8 × −1 + 8 = 0.
+a whole root would show as a 0 among the values: x^2 - 2 x + 7 = 0 gives 7, 6, 7, 10, 15, 22, 31, 42, 55, 70, 87, 106, 127 from x = 0 to x = 12, and 0 is not among them.
+0x² + 3x − 3 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = 1: 3 × 1 − 3 = 0.
+0 x^2 + 5 x + 20 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = -4: 5 × -4 + 20 = 0.
+всякое уравнение имеет целый корень — ложь: x² − 2x + 7 = 0 не даёт 0 от 0 до 12, а при x = 1 оно равно 6, и это наименьшее.
+0 x^2 + 7 x + 14 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = -2: 7 × -2 + 14 = 0.
+у x² − 2x + 7 = 0 нет целого корня от 0 до 12: всякое значение даёт остаток.
+0 x^2 + 3 x - 3 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = 1: 3 × 1 - 3 = 0.
+у уравнения нет целого корня, когда всякое целое значение даёт остаток.
+what are the whole roots of x^2 - 4 x + 16 = 0 between 0 and 10? x^2 - 4 x + 16 = 0 has no whole root between 0 and 10: every value leaves a remainder.
+0x² + 6x + 18 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = −3: 6 × −3 + 18 = 0.
+a whole root would show as a 0 among the values: x^2 - 4 x + 16 = 0 gives 16, 13, 12, 13, 16, 21, 28, 37, 48, 61, 76 from x = 0 to x = 10, and 0 is not among them.
+0x² + 8x + 8 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = −1: 8 × −1 + 8 = 0.
+x^2 - 3 x + 8 = 0 has no whole root between 0 and 10: every value leaves a remainder.
+всякое уравнение имеет целый корень — ложь: x² − 4x + 16 = 0 не даёт 0 от 0 до 10, а при x = 2 оно равно 12, и это наименьшее.
 
 the square of 23 is 529, so the square root of 529 is 23.
 квадрат 27 есть 729, значит квадратный корень из 729 есть 27.
@@ -1085,39 +1181,63 @@ x^2 - 5 x - 66 = 0 factors as ( x + 6 ) ( x - 11 ): -6 + 11 = 5 and -6 * 11 = -6
 what are the roots of x^2 - 6 x = 0? x^2 - 6 x = 0 factors as ( x ) ( x - 6 ): 0 + 6 = 6 and 0 * 6 = 0; the roots are 0 and 6.
 корни x² + b x + c = 0 в сумме дают −b, а в произведении c: у x² − 11x + 24 = 0 корни 3 и 8, и 3 + 8 = 11 и 3 × 8 = 24.
 
-x^2 - 3 x + 10 = 0 has no whole root between 0 and 10: every value leaves a remainder.
-целый корень был бы нулём среди значений: x² − 2x + 9 = 0 даёт 9, 8, 9, 12, 17, 24, 33, 44, 57, 72, 89, 108, 129 от x = 0 до x = 12, и нуля среди них нет.
-x^2 - 4 x + 11 = 0 has no whole root between 0 and 11: every value leaves a remainder.
-у уравнения нет целого корня, когда всякое целое значение даёт остаток.
-every equation has a whole root is false: x^2 - x + 8 = 0 is never 0 from 0 to 11, and at x = 0 it is 8, the smallest it gets there.
-у x² − x + 8 = 0 нет целого корня от 0 до 11: всякое значение даёт остаток.
-every equation has a whole root is false: x^2 - 3 x + 10 = 0 is never 0 from 0 to 10, and at x = 1 it is 8, the smallest it gets there.
-у x² − 2x + 9 = 0 нет целого корня от 0 до 12: всякое значение даёт остаток.
-a whole root would show as a 0 among the values: x^2 - x + 8 = 0 gives 8, 8, 10, 14, 20, 28, 38, 50, 64, 80, 98, 118 from x = 0 to x = 11, and 0 is not among them.
-у x² − 3x + 10 = 0 нет целого корня от 0 до 10: всякое значение даёт остаток.
-a whole root would show as a 0 among the values: x^2 - 3 x + 10 = 0 gives 10, 8, 8, 10, 14, 20, 28, 38, 50, 64, 80 from x = 0 to x = 10, and 0 is not among them.
-у x² − 4x + 11 = 0 нет целого корня от 0 до 11: всякое значение даёт остаток.
-when does an equation have no whole root? an equation has no whole root when every whole value leaves a remainder.
-всякое уравнение имеет целый корень — ложь: x² − x + 8 = 0 не даёт 0 от 0 до 11, а при x = 0 оно равно 8, и это наименьшее.
-what are the whole roots of x^2 - x + 8 = 0 between 0 and 11? x^2 - x + 8 = 0 has no whole root between 0 and 11: every value leaves a remainder.
-всякое уравнение имеет целый корень — ложь: x² − 3x + 10 = 0 не даёт 0 от 0 до 10, а при x = 1 оно равно 8, и это наименьшее.
-what are the whole roots of x^2 - 2 x + 9 = 0 between 0 and 12? x^2 - 2 x + 9 = 0 has no whole root between 0 and 12: every value leaves a remainder.
-целый корень был бы нулём среди значений: x² − x + 8 = 0 даёт 8, 8, 10, 14, 20, 28, 38, 50, 64, 80, 98, 118 от x = 0 до x = 11, и нуля среди них нет.
-what are the whole roots of x^2 - 3 x + 10 = 0 between 0 and 10? x^2 - 3 x + 10 = 0 has no whole root between 0 and 10: every value leaves a remainder.
-целый корень был бы нулём среди значений: x² − 3x + 10 = 0 даёт 10, 8, 8, 10, 14, 20, 28, 38, 50, 64, 80 от x = 0 до x = 10, и нуля среди них нет.
-what are the whole roots of x^2 - 4 x + 11 = 0 between 0 and 11? x^2 - 4 x + 11 = 0 has no whole root between 0 and 11: every value leaves a remainder.
-когда у уравнения нет целого корня? у уравнения нет целого корня, когда всякое целое значение даёт остаток.
-every equation has a whole root is false: x^2 - 2 x + 9 = 0 is never 0 from 0 to 12, and at x = 1 it is 8, the smallest it gets there.
-каковы целые корни x² − x + 8 = 0 от 0 до 11? у x² − x + 8 = 0 нет целого корня от 0 до 11: всякое значение даёт остаток.
-every equation has a whole root is false: x^2 - 4 x + 11 = 0 is never 0 from 0 to 11, and at x = 2 it is 7, the smallest it gets there.
-каковы целые корни x² − 2x + 9 = 0 от 0 до 12? у x² − 2x + 9 = 0 нет целого корня от 0 до 12: всякое значение даёт остаток.
-a whole root would show as a 0 among the values: x^2 - 2 x + 9 = 0 gives 9, 8, 9, 12, 17, 24, 33, 44, 57, 72, 89, 108, 129 from x = 0 to x = 12, and 0 is not among them.
-каковы целые корни x² − 3x + 10 = 0 от 0 до 10? у x² − 3x + 10 = 0 нет целого корня от 0 до 10: всякое значение даёт остаток.
-an equation has no whole root when every whole value leaves a remainder.
+0 x^2 + 3 x - 9 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = 3: 3 × 3 - 9 = 0.
 каковы целые корни x² − 4x + 11 = 0 от 0 до 11? у x² − 4x + 11 = 0 нет целого корня от 0 до 11: всякое значение даёт остаток.
-x^2 - x + 8 = 0 has no whole root between 0 and 11: every value leaves a remainder.
+every equation has a whole root is false: x^2 - 4 x + 11 = 0 is never 0 from 0 to 11, and at x = 2 it is 7, the smallest it gets there.
+0x² + 2x − 4 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = 2: 2 × 2 − 4 = 0.
+what are the whole roots of x^2 - 4 x + 11 = 0 between 0 and 11? x^2 - 4 x + 11 = 0 has no whole root between 0 and 11: every value leaves a remainder.
+всякое уравнение имеет целый корень — ложь: x² − 3x + 10 = 0 не даёт 0 от 0 до 10, а при x = 1 оно равно 8, и это наименьшее.
+0 x^2 + 2 x - 4 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = 2: 2 × 2 - 4 = 0.
+у x² − 4x + 11 = 0 нет целого корня от 0 до 11: всякое значение даёт остаток.
+every equation has a whole root is false: x^2 - 3 x + 10 = 0 is never 0 from 0 to 10, and at x = 1 it is 8, the smallest it gets there.
+0x² + 8x − 8 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = 1: 8 × 1 − 8 = 0.
+x^2 - 4 x + 11 = 0 has no whole root between 0 and 11: every value leaves a remainder.
 всякое уравнение имеет целый корень — ложь: x² − 2x + 9 = 0 не даёт 0 от 0 до 12, а при x = 1 оно равно 8, и это наименьшее.
+0 x^2 + 8 x - 8 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = 1: 8 × 1 - 8 = 0.
+каковы целые корни x² − 3x + 10 = 0 от 0 до 10? у x² − 3x + 10 = 0 нет целого корня от 0 до 10: всякое значение даёт остаток.
+every equation has a whole root is false: x^2 - 2 x + 9 = 0 is never 0 from 0 to 12, and at x = 1 it is 8, the smallest it gets there.
+0x² + 7x − 35 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = 5: 7 × 5 − 35 = 0.
+what are the whole roots of x^2 - 3 x + 10 = 0 between 0 and 10? x^2 - 3 x + 10 = 0 has no whole root between 0 and 10: every value leaves a remainder.
+всякое уравнение имеет целый корень — ложь: x² − x + 8 = 0 не даёт 0 от 0 до 11, а при x = 0 оно равно 8, и это наименьшее.
+0 x^2 + 7 x - 35 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = 5: 7 × 5 - 35 = 0.
+у x² − 3x + 10 = 0 нет целого корня от 0 до 10: всякое значение даёт остаток.
+every equation has a whole root is false: x^2 - x + 8 = 0 is never 0 from 0 to 11, and at x = 0 it is 8, the smallest it gets there.
+0x² + 6x + 6 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = −1: 6 × −1 + 6 = 0.
+x^2 - 3 x + 10 = 0 has no whole root between 0 and 10: every value leaves a remainder.
+0x² + 4x − 16 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = 4: 4 × 4 − 16 = 0.
+0 x^2 + 6 x + 6 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = -1: 6 × -1 + 6 = 0.
+каковы целые корни x² − 2x + 9 = 0 от 0 до 12? у x² − 2x + 9 = 0 нет целого корня от 0 до 12: всякое значение даёт остаток.
+0 x^2 + 4 x - 16 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = 4: 4 × 4 - 16 = 0.
+когда у уравнения нет целого корня? у уравнения нет целого корня, когда всякое целое значение даёт остаток.
+what are the whole roots of x^2 - 2 x + 9 = 0 between 0 and 12? x^2 - 2 x + 9 = 0 has no whole root between 0 and 12: every value leaves a remainder.
+0x² + 3x − 9 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = 3: 3 × 3 − 9 = 0.
+when does an equation have no whole root? an equation has no whole root when every whole value leaves a remainder.
+у x² − 2x + 9 = 0 нет целого корня от 0 до 12: всякое значение даёт остаток.
+0 x^2 + 3 x - 9 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = 3: 3 × 3 - 9 = 0.
+у уравнения нет целого корня, когда всякое целое значение даёт остаток.
 x^2 - 2 x + 9 = 0 has no whole root between 0 and 12: every value leaves a remainder.
+0x² + 2x − 4 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = 2: 2 × 2 − 4 = 0.
+an equation has no whole root when every whole value leaves a remainder.
+каковы целые корни x² − x + 8 = 0 от 0 до 11? у x² − x + 8 = 0 нет целого корня от 0 до 11: всякое значение даёт остаток.
+0 x^2 + 2 x - 4 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = 2: 2 × 2 - 4 = 0.
+целый корень был бы нулём среди значений: x² − 3x + 10 = 0 даёт 10, 8, 8, 10, 14, 20, 28, 38, 50, 64, 80 от x = 0 до x = 10, и нуля среди них нет.
+what are the whole roots of x^2 - x + 8 = 0 between 0 and 11? x^2 - x + 8 = 0 has no whole root between 0 and 11: every value leaves a remainder.
+0x² + 8x − 8 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = 1: 8 × 1 − 8 = 0.
+a whole root would show as a 0 among the values: x^2 - 3 x + 10 = 0 gives 10, 8, 8, 10, 14, 20, 28, 38, 50, 64, 80 from x = 0 to x = 10, and 0 is not among them.
+у x² − x + 8 = 0 нет целого корня от 0 до 11: всякое значение даёт остаток.
+0 x^2 + 8 x - 8 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = 1: 8 × 1 - 8 = 0.
+целый корень был бы нулём среди значений: x² − 2x + 9 = 0 даёт 9, 8, 9, 12, 17, 24, 33, 44, 57, 72, 89, 108, 129 от x = 0 до x = 12, и нуля среди них нет.
+x^2 - x + 8 = 0 has no whole root between 0 and 11: every value leaves a remainder.
+0x² + 7x − 35 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = 5: 7 × 5 − 35 = 0.
+a whole root would show as a 0 among the values: x^2 - 2 x + 9 = 0 gives 9, 8, 9, 12, 17, 24, 33, 44, 57, 72, 89, 108, 129 from x = 0 to x = 12, and 0 is not among them.
+0x² + 4x − 16 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = 4: 4 × 4 − 16 = 0.
+0 x^2 + 7 x - 35 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = 5: 7 × 5 - 35 = 0.
+целый корень был бы нулём среди значений: x² − x + 8 = 0 даёт 8, 8, 10, 14, 20, 28, 38, 50, 64, 80, 98, 118 от x = 0 до x = 11, и нуля среди них нет.
+0 x^2 + 4 x - 16 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = 4: 4 × 4 - 16 = 0.
+0x² + 6x + 6 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = −1: 6 × −1 + 6 = 0.
+a whole root would show as a 0 among the values: x^2 - x + 8 = 0 gives 8, 8, 10, 14, 20, 28, 38, 50, 64, 80, 98, 118 from x = 0 to x = 11, and 0 is not among them.
+0x² + 3x − 9 = 0 — не квадратное: старший коэффициент 0, оно линейное, и x = 3: 3 × 3 − 9 = 0.
+0 x^2 + 6 x + 6 = 0 is not quadratic: the leading coefficient is 0, so it is linear, and x = -1: 6 × -1 + 6 = 0.
 всякое уравнение имеет целый корень — ложь: x² − 4x + 11 = 0 не даёт 0 от 0 до 11, а при x = 2 оно равно 7, и это наименьшее.
 
 the square of 29 is 841, so the square root of 841 is 29.
