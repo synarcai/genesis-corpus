@@ -44,13 +44,16 @@ from genesis import Unreadable, worlds  # noqa: E402
     r"^(?:the divisors of (\d+) are|делители (\d+) — это) ([\d ]+)\.$")
 ОСТАТОК = re.compile(
     r"^(\d+) (?:mod (\d+) =|по модулю (\d+) равно) (\d+)\.$")
+# ВЕРДИКТ И ОСНОВАНИЕ НЕОБЯЗАТЕЛЬНЫ У ПОВЕСТВОВАНИЯ, ОБЯЗАТЕЛЬНЫ У ОТВЕТА
+# (М-147): «да: 12 и 5 сравнимы по модулю 7: 12 по модулю 7 равно 5, 5 по
+# модулю 7 равно 5.» — суд считает оба остатка.
 СРАВНИМЫ = re.compile(
-    r"^(\d+) (?:and (\d+) are congruent modulo|и (\d+) сравнимы по модулю) "
-    r"(\d+)\.$")
+    r"^(?:да: |yes: )?(\d+) (?:and (\d+) are congruent modulo|и (\d+) сравнимы по модулю) "
+    r"(\d+)(?:: (\d+) (?:mod|по модулю) (\d+) (?:=|равно) (\d+), (\d+) (?:mod|по модулю) (\d+) (?:=|равно) (\d+))?\.$")
 # ВТОРАЯ ПОЛЯРНОСТЬ: «не сравнимы» истинно ровно тогда, когда остатки
 # разные, и оба остатка суд считает сам.
 НЕ_СРАВНИМЫ = re.compile(
-    r"^(\d+) (?:and (\d+) are not congruent modulo (\d+): (\d+) mod (\d+) = (\d+), (\d+) mod (\d+) = (\d+)"
+    r"^(?:нет: |no: )?(\d+) (?:and (\d+) are not congruent modulo (\d+): (\d+) mod (\d+) = (\d+), (\d+) mod (\d+) = (\d+)"
     r"|и (\d+) не сравнимы по модулю (\d+): (\d+) по модулю (\d+) равно (\d+), (\d+) по модулю (\d+) равно (\d+))\.$")
 # НИ ТО НИ ДРУГОЕ: у единицы делитель один, и она не проста и не
 # составна. Отказ истинен ровно тогда, когда делитель и вправду один.
@@ -58,7 +61,7 @@ from genesis import Unreadable, worlds  # noqa: E402
     r"^(\d+) (?:is neither prime nor composite: its only divisor is"
     r"|ни простое, ни составное: его единственный делитель —) (\d+)\.$")
 ВЗАИМНО = re.compile(
-    r"^(\d+) (?:and|и) (\d+) (?:are (coprime|not coprime); their gcd is"
+    r"^(?:(да|нет|yes|no): )?(\d+) (?:and|и) (\d+) (?:are (coprime|not coprime); their gcd is"
     r"|(взаимно просты|не взаимно просты); их нод равен) (\d+)\.$")
 
 
@@ -124,7 +127,11 @@ def судить(строка):
         a = int(m.group(1))
         b = int(m.group(2) or m.group(3))
         мод = int(m.group(4))
-        return True, мод > 0 and a % мод == b % мод
+        верно = мод > 0 and a % мод == b % мод
+        if m.group(5) is not None:
+            a2, м2, r1, b2, м3, r2 = (int(m.group(k)) for k in range(5, 11))
+            верно = верно and (a2, м2, b2, м3) == (a, мод, b, мод) and r1 == a % мод and r2 == b % мод
+        return True, верно
     m = НЕ_СРАВНИМЫ.match(с)
     if m:
         г = [int(x) for x in m.groups() if x is not None]
@@ -137,11 +144,13 @@ def судить(строка):
         return True, (делители_числа(n) == [n] and единственный == n)
     m = ВЗАИМНО.match(с)
     if m:
-        a, b = int(m.group(1)), int(m.group(2))
-        сказано = m.group(3) or m.group(4)
-        нод = int(m.group(5))
+        слово = m.group(1)
+        a, b = int(m.group(2)), int(m.group(3))
+        сказано = m.group(4) or m.group(5)
+        нод = int(m.group(6))
         взаимно = сказано in ("coprime", "взаимно просты")
-        return True, нод == gcd(a, b) and взаимно == (gcd(a, b) == 1)
+        согласно = слово is None or (слово in ("да", "yes")) == взаимно
+        return True, согласно and нод == gcd(a, b) and взаимно == (gcd(a, b) == 1)
     return False, True
 
 
