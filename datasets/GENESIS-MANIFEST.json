@@ -6751,6 +6751,58 @@
       "held_out": "shelf/en/rebus_philosophy_of_religion.holdout.txt",
       "судится": [],
       "автор": "Beau Branson, Beau Branson (Book Editor), Christina Hendricks (Series Editor), Hans Van Eyghen, Marcus William Hunt, Robert Sloan Lee, Steven Steyl, Timothy D. Knepper; ed. Beau Branson, Christina Hendricks"
+    },
+    {
+      "name": "fedorov_essays_ru",
+      "file": "shelf/ru/fedorov_essays_ru.txt",
+      "genre": "Статьи из «Философии общего дела» (1880-е — 1903): «Что такое добро?», «Аксиомы Канта», «Агатодицея Соловьёва и теодицея Лейбница», «В чем заключается всеобщий категорический императив?», «В чем свобода?», «Возможно ли братство?», «Где начало истории?», «Два исторических типа мировоззрений», «К вопросу о двух разумах», «Живое и мертвенное восприятие истории» — Фёдоров, Николай Фёдорович; lib.ru/Классика",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 71301,
+      "tiers": [],
+      "text": "prose",
+      "тема": "философия",
+      "язык": "ru",
+      "плотность": "трактат",
+      "издано": 1906,
+      "источник": "public-domain",
+      "происхождение": "lib.ru:f/fedorow_n_f/text_0010+text_0050+text_0080+text_0110+text_0120+text_0150+text_0170+text_0180+text_0195+text_0230",
+      "held_out": "shelf/ru/fedorov_essays_ru.holdout.txt",
+      "судится": [],
+      "автор": "Фёдоров, Николай Фёдорович"
+    },
+    {
+      "name": "timiryazev_essays_ru",
+      "file": "shelf/ru/timiryazev_essays_ru.txt",
+      "genre": "«Опровергнут ли дарвинизм?», «Бессильная злоба антидарвиниста», «Факторы органической эволюции», «Петербург и Москва» (1887–1918) — Тимирязев, Климент Аркадьевич; lib.ru/Классика",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 744485,
+      "tiers": [],
+      "text": "prose",
+      "тема": "естествознание",
+      "язык": "ru",
+      "плотность": "статья",
+      "издано": 1918,
+      "источник": "public-domain",
+      "происхождение": "lib.ru:t/timirjazew_k_a/text_1887_oprovergnut_li_darvinist+text_1889_bessilnaya_zloba+text_1890_faktory_evolutzii+text_1918_peterburg_i_moskva",
+      "held_out": "shelf/ru/timiryazev_essays_ru.holdout.txt",
+      "судится": [],
+      "автор": "Тимирязев, Климент Аркадьевич"
     }
   ]
 }

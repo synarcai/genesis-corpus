@@ -43,6 +43,7 @@ behind the other.
 """
 
 import pathlib
+import re
 import sys
 from math import gcd  # noqa: F401  (родня для будущих родов)
 
@@ -120,6 +121,38 @@ def исп_простота(шаг):
     return вон
 
 
+# A UNIVERSAL IS ASKED BY ITS OWN «IS IT TRUE THAT» (М-146: every frame has a
+# question surface per language; М-147: the verdict word opens the answer,
+# both polarities side by side — the false universal answers «no» with its
+# counterexample, the true one «yes» with its instance). The question is
+# derived from the statement by one law, never written a second time.
+ЛОЖЬ_EN, ЛОЖЬ_RU = " is false: ", " — ложь: "
+
+
+def вопрос_универсалии(строка):
+    """«HEAD is false: TAIL.» → «is it true that HEAD? no: TAIL.»;
+    «HEAD: TAIL.» → «is it true that HEAD? yes: TAIL.» (and the Russian twin)."""
+    if ЛОЖЬ_EN in строка:
+        голова, хвост = строка.split(ЛОЖЬ_EN, 1)
+        return f"is it true that {голова}? no: {хвост}"
+    if ЛОЖЬ_RU in строка:
+        голова, хвост = строка.split(ЛОЖЬ_RU, 1)
+        return f"верно ли, что {голова}? нет: {хвост}"
+    голова, хвост = строка.split(": ", 1)
+    if re.search(r"[а-яё]", голова):
+        return f"верно ли, что {голова}? да: {хвост}"
+    return f"is it true that {голова}? yes: {хвост}"
+
+
+def с_вопросами(строки):
+    """The statements of a universal, each followed by its question."""
+    вон = []
+    for с in строки:
+        вон.append(с)
+        вон.append(вопрос_универсалии(с))
+    return вон
+
+
 def контр_простота(шаг):
     вон = []
     for i in range(6):
@@ -131,7 +164,7 @@ def контр_простота(шаг):
                    f"and {n} = {д} × {n // д}.")
         вон.append(f"все нечётные числа просты — ложь: {n} нечётно и "
                    f"{n} = {д} × {n // д}.")
-    return вон
+    return с_вопросами(вон)
 
 
 def общ_простота(шаг):
@@ -143,7 +176,7 @@ def общ_простота(шаг):
                    f"primes: {n} = {ряд}.")
         вон.append(f"всякое целое больше 1 есть произведение простых: "
                    f"{n} = {ряд}.")
-    return вон
+    return с_вопросами(вон)
 
 
 # ----------------------------------------------------------- ДЕЛИМОСТЬ
@@ -185,7 +218,7 @@ def контр_делимость(шаг):
                    f"{n} is even and {n} = 4 × {q} + {r}.")
         вон.append(f"всякое чётное делится на 4 — ложь: {n} чётно и "
                    f"{n} = 4 × {q} + {r}.")
-    return вон
+    return с_вопросами(вон)
 
 
 def общ_делимость(шаг):
@@ -198,7 +231,7 @@ def общ_делимость(шаг):
                    f"{с // 3}.")
         вон.append(f"число делится на 3, когда делится сумма его цифр: "
                    f"у {n} сумма цифр {с}, и {с} = 3 × {с // 3}.")
-    return вон
+    return с_вопросами(вон)
 
 
 # ----------------------------------------------------- СУММА НЕЧЁТНЫХ
@@ -234,7 +267,7 @@ def контр_нечётные(шаг):
         вон.append(f"сумма первых k нечётных равна 2 × k — ложь: при "
                    f"k = {k} сумма равна {k * k}, а 2 × {k} = "
                    f"{2 * k}.")
-    return вон
+    return с_вопросами(вон)
 
 
 def общ_нечётные(шаг):
@@ -245,7 +278,7 @@ def общ_нечётные(шаг):
                    f"k = {k} it is {k} × {k} = {k * k}.")
         вон.append(f"сумма первых k нечётных равна k × k: при k = {k} "
                    f"это {k} × {k} = {k * k}.")
-    return вон
+    return с_вопросами(вон)
 
 
 # ------------------------------------------------------ УСЛОВНЫЙ ВЫВОД
@@ -287,7 +320,7 @@ def контр_условное(шаг):
                    f"is even and {e} + {m} = {s}, which is odd.")
         вон.append(f"если n чётно, то n + {m} чётно — ложь: {e} чётно, "
                    f"а {e} + {m} = {s}, что нечётно.")
-    return вон
+    return с_вопросами(вон)
 
 
 def общ_условное(шаг):
@@ -301,7 +334,7 @@ def общ_условное(шаг):
         вон.append(f"если n чётно, то n + m чётно ровно тогда, когда m "
                    f"чётно: {m} чётно и {e} + {m} = {e + m}, что "
                    f"чётно.")
-    return вон
+    return с_вопросами(вон)
 
 
 # ------------------------------------------------------ ИНЪЕКТИВНОСТЬ
@@ -337,7 +370,7 @@ def контр_инъекция(шаг):
                    f"0 sends {a} and {b} both to 0.")
         вон.append(f"всякая функция инъективна — ложь: f(x) = x × 0 "
                    f"отправляет {a} и {b} в 0.")
-    return вон
+    return с_вопросами(вон)
 
 
 def общ_инъекция(шаг):
@@ -349,7 +382,7 @@ def общ_инъекция(шаг):
                    f"{2 * k}.")
         вон.append(f"f(x) = x × k инъективна ровно тогда, когда k не "
                    f"0: при k = {k} входы 1 и 2 дают {k} и {2 * k}.")
-    return вон
+    return с_вопросами(вон)
 
 
 # ------------------------------------------------------------ КВАДРАТ
@@ -378,7 +411,7 @@ def контр_квадрат(шаг):
                    f"{n} × {n} = {n * n}, which is odd.")
         вон.append(f"всякий квадрат чётен — ложь: {n} нечётно и {n} × "
                    f"{n} = {n * n}, что нечётно.")
-    return вон
+    return с_вопросами(вон)
 
 
 def общ_квадрат(шаг):
@@ -391,7 +424,7 @@ def общ_квадрат(шаг):
         вон.append(f"the square of an {чёт} number is {чёт}: "
                    f"{n} × {n} = {n * n}.")
         вон.append(f"квадрат {ру} числа {рук}: {n} × {n} = {n * n}.")
-    return вон
+    return с_вопросами(вон)
 
 
 
