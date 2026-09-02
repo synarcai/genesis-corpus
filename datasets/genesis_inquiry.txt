@@ -712,24 +712,12 @@ every square is even is false: 13 is odd and 13 × 13 = 169, which is odd.
 is it true that the square of an even number is even? yes: no counterexample among 1..1000; example: 6 × 6 = 36.
 the square of an even number is even: 8 × 8 = 64.
 верно ли, что квадрат нечётного числа нечётен? да: контрпримера среди 1..1000 нет; пример: 9 × 9 = 81.
-чему равен квадрат 2? 2 × 2 = 4.
-what is the square of the number 4? 4 × 4 = 16.
-what is the square of 6? 6 × 6 = 36.
-чему равен квадрат числа 7? 7 × 7 = 49.
-чему равен квадрат 9? 9 × 9 = 81.
-what is the square of the number 11? 11 × 11 = 121.
-what is the square of 13? 13 × 13 = 169.
-квадрат 3 равен 9: 3 × 3 = 9.
-the square of 7 is 49: 7 × 7 = 49.
-квадрат 10 равен 100: 10 × 10 = 100.
-every square is even is false: 3 is odd and 3 × 3 = 9, which is odd.
-верно ли, что всякий квадрат чётен? нет: 5 нечётно и 5 × 5 = 25, что нечётно.
-всякий квадрат чётен — ложь: 9 нечётно и 9 × 9 = 81, что нечётно.
-is it true that every square is even? no: 13 is odd and 13 × 13 = 169, which is odd.
-the square of an odd number is odd: 3 × 3 = 9.
-верно ли, что квадрат чётного числа чётен? да: контрпримера среди 1..1000 нет; пример: 4 × 4 = 16.
-квадрат чётного числа чётен: 6 × 6 = 36.
-is it true that the square of an even number is even? yes: no counterexample among 1..1000; example: 8 × 8 = 64.
+является ли 6 полным квадратом? нет: 6 лежит между 2 × 2 = 4 и 3 × 3 = 9.
+is 13 a perfect square? no: 13 lies between 3 × 3 = 9 and 4 × 4 = 16.
+is 22 a square number? no: 22 lies between 4 × 4 = 16 and 5 × 5 = 25.
+есть ли целое число, квадрат которого равен 25? да: 25 = 5 × 5.
+является ли 36 полным квадратом? да: 36 = 6 × 6.
+is 49 a perfect square? yes: 49 = 7 × 7.
 the square of a number is the number multiplied by itself.
 чему равен квадрат числа 2? 2 × 2 = 4.
 чему равен квадрат 4? 4 × 4 = 16.
@@ -749,25 +737,13 @@ is it true that the square of an odd number is odd? yes: no counterexample among
 the square of an odd number is odd: 5 × 5 = 25.
 верно ли, что квадрат чётного числа чётен? да: контрпримера среди 1..1000 нет; пример: 6 × 6 = 36.
 квадрат чётного числа чётен: 8 × 8 = 64.
-квадрат числа — это число, умноженное на само себя.
-what is the square of 3? 3 × 3 = 9.
-чему равен квадрат числа 4? 4 × 4 = 16.
-чему равен квадрат 6? 6 × 6 = 36.
-what is the square of the number 8? 8 × 8 = 64.
-what is the square of 10? 10 × 10 = 100.
-чему равен квадрат числа 11? 11 × 11 = 121.
-чему равен квадрат 13? 13 × 13 = 169.
-квадрат 4 равен 16: 4 × 4 = 16.
-the square of 8 is 64: 8 × 8 = 64.
-квадрат 11 равен 121: 11 × 11 = 121.
-всякий квадрат чётен — ложь: 3 нечётно и 3 × 3 = 9, что нечётно.
-is it true that every square is even? no: 7 is odd and 7 × 7 = 49, which is odd.
-every square is even is false: 11 is odd and 11 × 11 = 121, which is odd.
-верно ли, что всякий квадрат чётен? нет: 13 нечётно и 13 × 13 = 169, что нечётно.
-квадрат нечётного числа нечётен: 3 × 3 = 9.
-is it true that the square of an odd number is odd? yes: no counterexample among 1..1000; example: 5 × 5 = 25.
-the square of an odd number is odd: 7 × 7 = 49.
-верно ли, что квадрат чётного числа чётен? да: контрпримера среди 1..1000 нет; пример: 8 × 8 = 64.
+is 4 a perfect square? yes: 4 = 2 × 2.
+is 9 a square number? yes: 9 = 3 × 3.
+есть ли целое число, квадрат которого равен 13? нет: 13 лежит между 3 × 3 = 9 и 4 × 4 = 16.
+является ли 22 полным квадратом? нет: 22 лежит между 4 × 4 = 16 и 5 × 5 = 25.
+is 33 a perfect square? no: 33 lies between 5 × 5 = 25 and 6 × 6 = 36.
+is 46 a square number? no: 46 lies between 6 × 6 = 36 and 7 × 7 = 49.
+есть ли целое число, квадрат которого равен 49? да: 49 = 7 × 7.
 what is the square of a number? the square of a number is the number multiplied by itself.
 what is the square of the number 3? 3 × 3 = 9.
 what is the square of 5? 5 × 5 = 25.
@@ -787,25 +763,13 @@ the square of an even number is even: 2 × 2 = 4.
 квадрат нечётного числа нечётен: 5 × 5 = 25.
 is it true that the square of an odd number is odd? yes: no counterexample among 1..1000; example: 7 × 7 = 49.
 the square of an odd number is odd: 9 × 9 = 81.
-что такое квадрат числа? квадрат числа — это число, умноженное на само себя.
-чему равен квадрат 3? 3 × 3 = 9.
-what is the square of the number 5? 5 × 5 = 25.
-what is the square of 7? 7 × 7 = 49.
-чему равен квадрат числа 8? 8 × 8 = 64.
-чему равен квадрат 10? 10 × 10 = 100.
-what is the square of the number 12? 12 × 12 = 144.
-the square of 2 is 4: 2 × 2 = 4.
-квадрат 5 равен 25: 5 × 5 = 25.
-the square of 9 is 81: 9 × 9 = 81.
-квадрат 12 равен 144: 12 × 12 = 144.
-every square is even is false: 5 is odd and 5 × 5 = 25, which is odd.
-верно ли, что всякий квадрат чётен? нет: 7 нечётно и 7 × 7 = 49, что нечётно.
-всякий квадрат чётен — ложь: 11 нечётно и 11 × 11 = 121, что нечётно.
-is it true that the square of an even number is even? yes: no counterexample among 1..1000; example: 2 × 2 = 4.
-the square of an even number is even: 4 × 4 = 16.
-верно ли, что квадрат нечётного числа нечётен? да: контрпримера среди 1..1000 нет; пример: 5 × 5 = 25.
-квадрат нечётного числа нечётен: 7 × 7 = 49.
-is it true that the square of an odd number is odd? yes: no counterexample among 1..1000; example: 9 × 9 = 81.
+есть ли целое число, квадрат которого равен 4? да: 4 = 2 × 2.
+является ли 9 полным квадратом? да: 9 = 3 × 3.
+is 16 a perfect square? yes: 16 = 4 × 4.
+is 25 a square number? yes: 25 = 5 × 5.
+есть ли целое число, квадрат которого равен 33? нет: 33 лежит между 5 × 5 = 25 и 6 × 6 = 36.
+является ли 46 полным квадратом? нет: 46 лежит между 6 × 6 = 36 и 7 × 7 = 49.
+is 61 a perfect square? no: 61 lies between 7 × 7 = 49 and 8 × 8 = 64.
 what is the square of 2? 2 × 2 = 4.
 чему равен квадрат числа 3? 3 × 3 = 9.
 чему равен квадрат 5? 5 × 5 = 25.
@@ -825,6 +789,90 @@ is it true that the square of an even number is even? yes: no counterexample amo
 the square of an even number is even: 6 × 6 = 36.
 верно ли, что квадрат нечётного числа нечётен? да: контрпримера среди 1..1000 нет; пример: 7 × 7 = 49.
 квадрат нечётного числа нечётен: 9 × 9 = 81.
+is 6 a perfect square? no: 6 lies between 2 × 2 = 4 and 3 × 3 = 9.
+is 13 a square number? no: 13 lies between 3 × 3 = 9 and 4 × 4 = 16.
+есть ли целое число, квадрат которого равен 16? да: 16 = 4 × 4.
+является ли 25 полным квадратом? да: 25 = 5 × 5.
+is 36 a perfect square? yes: 36 = 6 × 6.
+is 49 a square number? yes: 49 = 7 × 7.
+есть ли целое число, квадрат которого равен 61? нет: 61 лежит между 7 × 7 = 49 и 8 × 8 = 64.
+чему равен квадрат 2? 2 × 2 = 4.
+what is the square of the number 4? 4 × 4 = 16.
+what is the square of 6? 6 × 6 = 36.
+чему равен квадрат числа 7? 7 × 7 = 49.
+чему равен квадрат 9? 9 × 9 = 81.
+what is the square of the number 11? 11 × 11 = 121.
+what is the square of 13? 13 × 13 = 169.
+квадрат 3 равен 9: 3 × 3 = 9.
+the square of 7 is 49: 7 × 7 = 49.
+квадрат 10 равен 100: 10 × 10 = 100.
+every square is even is false: 3 is odd and 3 × 3 = 9, which is odd.
+верно ли, что всякий квадрат чётен? нет: 5 нечётно и 5 × 5 = 25, что нечётно.
+всякий квадрат чётен — ложь: 9 нечётно и 9 × 9 = 81, что нечётно.
+is it true that every square is even? no: 13 is odd and 13 × 13 = 169, which is odd.
+the square of an odd number is odd: 3 × 3 = 9.
+верно ли, что квадрат чётного числа чётен? да: контрпримера среди 1..1000 нет; пример: 4 × 4 = 16.
+квадрат чётного числа чётен: 6 × 6 = 36.
+is it true that the square of an even number is even? yes: no counterexample among 1..1000; example: 8 × 8 = 64.
+is 4 a square number? yes: 4 = 2 × 2.
+есть ли целое число, квадрат которого равен 6? нет: 6 лежит между 2 × 2 = 4 и 3 × 3 = 9.
+является ли 13 полным квадратом? нет: 13 лежит между 3 × 3 = 9 и 4 × 4 = 16.
+is 22 a perfect square? no: 22 lies between 4 × 4 = 16 and 5 × 5 = 25.
+is 33 a square number? no: 33 lies between 5 × 5 = 25 and 6 × 6 = 36.
+есть ли целое число, квадрат которого равен 36? да: 36 = 6 × 6.
+является ли 49 полным квадратом? да: 49 = 7 × 7.
+квадрат числа — это число, умноженное на само себя.
+what is the square of 3? 3 × 3 = 9.
+чему равен квадрат числа 4? 4 × 4 = 16.
+чему равен квадрат 6? 6 × 6 = 36.
+what is the square of the number 8? 8 × 8 = 64.
+what is the square of 10? 10 × 10 = 100.
+чему равен квадрат числа 11? 11 × 11 = 121.
+чему равен квадрат 13? 13 × 13 = 169.
+квадрат 4 равен 16: 4 × 4 = 16.
+the square of 8 is 64: 8 × 8 = 64.
+квадрат 11 равен 121: 11 × 11 = 121.
+всякий квадрат чётен — ложь: 3 нечётно и 3 × 3 = 9, что нечётно.
+is it true that every square is even? no: 7 is odd and 7 × 7 = 49, which is odd.
+every square is even is false: 11 is odd and 11 × 11 = 121, which is odd.
+верно ли, что всякий квадрат чётен? нет: 13 нечётно и 13 × 13 = 169, что нечётно.
+квадрат нечётного числа нечётен: 3 × 3 = 9.
+is it true that the square of an odd number is odd? yes: no counterexample among 1..1000; example: 5 × 5 = 25.
+the square of an odd number is odd: 7 × 7 = 49.
+верно ли, что квадрат чётного числа чётен? да: контрпримера среди 1..1000 нет; пример: 8 × 8 = 64.
+является ли 4 полным квадратом? да: 4 = 2 × 2.
+is 9 a perfect square? yes: 9 = 3 × 3.
+is 16 a square number? yes: 16 = 4 × 4.
+есть ли целое число, квадрат которого равен 22? нет: 22 лежит между 4 × 4 = 16 и 5 × 5 = 25.
+является ли 33 полным квадратом? нет: 33 лежит между 5 × 5 = 25 и 6 × 6 = 36.
+is 46 a perfect square? no: 46 lies between 6 × 6 = 36 and 7 × 7 = 49.
+is 61 a square number? no: 61 lies between 7 × 7 = 49 and 8 × 8 = 64.
+что такое квадрат числа? квадрат числа — это число, умноженное на само себя.
+чему равен квадрат 3? 3 × 3 = 9.
+what is the square of the number 5? 5 × 5 = 25.
+what is the square of 7? 7 × 7 = 49.
+чему равен квадрат числа 8? 8 × 8 = 64.
+чему равен квадрат 10? 10 × 10 = 100.
+what is the square of the number 12? 12 × 12 = 144.
+the square of 2 is 4: 2 × 2 = 4.
+квадрат 5 равен 25: 5 × 5 = 25.
+the square of 9 is 81: 9 × 9 = 81.
+квадрат 12 равен 144: 12 × 12 = 144.
+every square is even is false: 5 is odd and 5 × 5 = 25, which is odd.
+верно ли, что всякий квадрат чётен? нет: 7 нечётно и 7 × 7 = 49, что нечётно.
+всякий квадрат чётен — ложь: 11 нечётно и 11 × 11 = 121, что нечётно.
+is it true that the square of an even number is even? yes: no counterexample among 1..1000; example: 2 × 2 = 4.
+the square of an even number is even: 4 × 4 = 16.
+верно ли, что квадрат нечётного числа нечётен? да: контрпримера среди 1..1000 нет; пример: 5 × 5 = 25.
+квадрат нечётного числа нечётен: 7 × 7 = 49.
+is it true that the square of an odd number is odd? yes: no counterexample among 1..1000; example: 9 × 9 = 81.
+is 6 a square number? no: 6 lies between 2 × 2 = 4 and 3 × 3 = 9.
+есть ли целое число, квадрат которого равен 9? да: 9 = 3 × 3.
+является ли 16 полным квадратом? да: 16 = 4 × 4.
+is 25 a perfect square? yes: 25 = 5 × 5.
+is 36 a square number? yes: 36 = 6 × 6.
+есть ли целое число, квадрат которого равен 46? нет: 46 лежит между 6 × 6 = 36 и 7 × 7 = 49.
+является ли 61 полным квадратом? нет: 61 лежит между 7 × 7 = 49 и 8 × 8 = 64.
 
 what is a prime number? a prime number is a whole number above 1 whose only divisors are 1 and itself.
 является ли 52 простым числом? нет: 52 = 2 × 26.
@@ -1522,137 +1570,185 @@ f(x) = x × k is injective exactly when k is not 0: at k = 3 the inputs 1 and 2 
 верно ли, что f(x) = x × k инъективна ровно тогда, когда k не 0? да: контрпримера среди 1..1000 нет; пример: при k = 5 входы 1 и 2 дают 5 и 10.
 
 what is the square of a number? the square of a number is the number multiplied by itself.
-чему равен квадрат числа 7? 7 × 7 = 49.
-what is the square of 11? 11 × 11 = 121.
-what is the square of the number 14? 14 × 14 = 196.
-the square of 6 is 36: 6 × 6 = 36.
-квадрат 12 равен 144: 12 × 12 = 144.
-every square is even is false: 7 is odd and 7 × 7 = 49, which is odd.
-is it true that every square is even? no: 13 is odd and 13 × 13 = 169, which is odd.
-квадрат чётного числа чётен: 4 × 4 = 16.
-верно ли, что квадрат нечётного числа нечётен? да: контрпримера среди 1..1000 нет; пример: 7 × 7 = 49.
-the square of a number is the number multiplied by itself.
 what is the square of the number 7? 7 × 7 = 49.
-чему равен квадрат 10? 10 × 10 = 100.
-чему равен квадрат числа 13? 13 × 13 = 169.
-the square of 5 is 25: 5 × 5 = 25.
-квадрат 11 равен 121: 11 × 11 = 121.
-всякий квадрат чётен — ложь: 5 нечётно и 5 × 5 = 25, что нечётно.
-верно ли, что всякий квадрат чётен? нет: 11 нечётно и 11 × 11 = 121, что нечётно.
-the square of an even number is even: 4 × 4 = 16.
-is it true that the square of an odd number is odd? yes: no counterexample among 1..1000; example: 7 × 7 = 49.
-квадрат чётного числа чётен: 10 × 10 = 100.
-чему равен квадрат числа 6? 6 × 6 = 36.
 what is the square of 10? 10 × 10 = 100.
-what is the square of the number 13? 13 × 13 = 169.
-чему равен квадрат 16? 16 × 16 = 256.
-квадрат 10 равен 100: 10 × 10 = 100.
-every square is even is false: 5 is odd and 5 × 5 = 25, which is odd.
-is it true that every square is even? no: 11 is odd and 11 × 11 = 121, which is odd.
-квадрат нечётного числа нечётен: 3 × 3 = 9.
-верно ли, что квадрат чётного числа чётен? да: контрпримера среди 1..1000 нет; пример: 6 × 6 = 36.
-the square of an even number is even: 10 × 10 = 100.
-what is the square of the number 6? 6 × 6 = 36.
-чему равен квадрат 9? 9 × 9 = 81.
 чему равен квадрат числа 12? 12 × 12 = 144.
-what is the square of 16? 16 × 16 = 256.
-квадрат 9 равен 81: 9 × 9 = 81.
-the square of 16 is 256: 16 × 16 = 256.
-верно ли, что всякий квадрат чётен? нет: 9 нечётно и 9 × 9 = 81, что нечётно.
-the square of an odd number is odd: 3 × 3 = 9.
-is it true that the square of an even number is even? yes: no counterexample among 1..1000; example: 6 × 6 = 36.
-квадрат нечётного числа нечётен: 9 × 9 = 81.
-чему равен квадрат числа 5? 5 × 5 = 25.
-what is the square of 9? 9 × 9 = 81.
-what is the square of the number 12? 12 × 12 = 144.
 чему равен квадрат 15? 15 × 15 = 225.
-квадрат 8 равен 64: 8 × 8 = 64.
-the square of 15 is 225: 15 × 15 = 225.
-is it true that every square is even? no: 9 is odd and 9 × 9 = 81, which is odd.
-всякий квадрат чётен — ложь: 15 нечётно и 15 × 15 = 225, что нечётно.
-верно ли, что квадрат нечётного числа нечётен? да: контрпримера среди 1..1000 нет; пример: 5 × 5 = 25.
-the square of an odd number is odd: 9 × 9 = 81.
-what is the square of the number 5? 5 × 5 = 25.
-чему равен квадрат 8? 8 × 8 = 64.
-чему равен квадрат числа 11? 11 × 11 = 121.
-what is the square of 15? 15 × 15 = 225.
 квадрат 7 равен 49: 7 × 7 = 49.
-the square of 14 is 196: 14 × 14 = 196.
-верно ли, что всякий квадрат чётен? нет: 7 нечётно и 7 × 7 = 49, что нечётно.
-every square is even is false: 15 is odd and 15 × 15 = 225, which is odd.
-is it true that the square of an odd number is odd? yes: no counterexample among 1..1000; example: 5 × 5 = 25.
-квадрат чётного числа чётен: 8 × 8 = 64.
-что такое квадрат числа? квадрат числа — это число, умноженное на само себя.
-what is the square of 8? 8 × 8 = 64.
-what is the square of the number 11? 11 × 11 = 121.
-чему равен квадрат 14? 14 × 14 = 196.
-квадрат 6 равен 36: 6 × 6 = 36.
 the square of 13 is 169: 13 × 13 = 169.
-is it true that every square is even? no: 7 is odd and 7 × 7 = 49, which is odd.
-всякий квадрат чётен — ложь: 13 нечётно и 13 × 13 = 169, что нечётно.
-верно ли, что квадрат чётного числа чётен? да: контрпримера среди 1..1000 нет; пример: 4 × 4 = 16.
-the square of an even number is even: 8 × 8 = 64.
-квадрат числа — это число, умноженное на само себя.
-чему равен квадрат 7? 7 × 7 = 49.
-чему равен квадрат числа 10? 10 × 10 = 100.
-what is the square of 14? 14 × 14 = 196.
-квадрат 5 равен 25: 5 × 5 = 25.
-the square of 12 is 144: 12 × 12 = 144.
 верно ли, что всякий квадрат чётен? нет: 5 нечётно и 5 × 5 = 25, что нечётно.
-every square is even is false: 13 is odd and 13 × 13 = 169, which is odd.
-is it true that the square of an even number is even? yes: no counterexample among 1..1000; example: 4 × 4 = 16.
-квадрат нечётного числа нечётен: 7 × 7 = 49.
-верно ли, что квадрат чётного числа чётен? да: контрпримера среди 1..1000 нет; пример: 10 × 10 = 100.
-what is the square of 7? 7 × 7 = 49.
-what is the square of the number 10? 10 × 10 = 100.
-чему равен квадрат 13? 13 × 13 = 169.
-чему равен квадрат числа 16? 16 × 16 = 256.
-the square of 11 is 121: 11 × 11 = 121.
-is it true that every square is even? no: 5 is odd and 5 × 5 = 25, which is odd.
 всякий квадрат чётен — ложь: 11 нечётно и 11 × 11 = 121, что нечётно.
-верно ли, что квадрат нечётного числа нечётен? да: контрпримера среди 1..1000 нет; пример: 3 × 3 = 9.
-the square of an odd number is odd: 7 × 7 = 49.
-is it true that the square of an even number is even? yes: no counterexample among 1..1000; example: 10 × 10 = 100.
-чему равен квадрат 6? 6 × 6 = 36.
-чему равен квадрат числа 9? 9 × 9 = 81.
-what is the square of 13? 13 × 13 = 169.
-what is the square of the number 16? 16 × 16 = 256.
-the square of 10 is 100: 10 × 10 = 100.
-квадрат 16 равен 256: 16 × 16 = 256.
-every square is even is false: 11 is odd and 11 × 11 = 121, which is odd.
 is it true that the square of an odd number is odd? yes: no counterexample among 1..1000; example: 3 × 3 = 9.
-квадрат чётного числа чётен: 6 × 6 = 36.
-верно ли, что квадрат нечётного числа нечётен? да: контрпримера среди 1..1000 нет; пример: 9 × 9 = 81.
-what is the square of 6? 6 × 6 = 36.
-what is the square of the number 9? 9 × 9 = 81.
-чему равен квадрат 12? 12 × 12 = 144.
-чему равен квадрат числа 15? 15 × 15 = 225.
-the square of 9 is 81: 9 × 9 = 81.
-квадрат 15 равен 225: 15 × 15 = 225.
-всякий квадрат чётен — ложь: 9 нечётно и 9 × 9 = 81, что нечётно.
-верно ли, что всякий квадрат чётен? нет: 15 нечётно и 15 × 15 = 225, что нечётно.
 the square of an even number is even: 6 × 6 = 36.
-is it true that the square of an odd number is odd? yes: no counterexample among 1..1000; example: 9 × 9 = 81.
-чему равен квадрат 5? 5 × 5 = 25.
-чему равен квадрат числа 8? 8 × 8 = 64.
-what is the square of 12? 12 × 12 = 144.
-what is the square of the number 15? 15 × 15 = 225.
-the square of 8 is 64: 8 × 8 = 64.
-квадрат 14 равен 196: 14 × 14 = 196.
-every square is even is false: 9 is odd and 9 × 9 = 81, which is odd.
-is it true that every square is even? no: 15 is odd and 15 × 15 = 225, which is odd.
-квадрат нечётного числа нечётен: 5 × 5 = 25.
 верно ли, что квадрат чётного числа чётен? да: контрпримера среди 1..1000 нет; пример: 8 × 8 = 64.
-what is the square of 5? 5 × 5 = 25.
-what is the square of the number 8? 8 × 8 = 64.
-чему равен квадрат 11? 11 × 11 = 121.
-чему равен квадрат числа 14? 14 × 14 = 196.
-the square of 7 is 49: 7 × 7 = 49.
-квадрат 13 равен 169: 13 × 13 = 169.
-всякий квадрат чётен — ложь: 7 нечётно и 7 × 7 = 49, что нечётно.
-верно ли, что всякий квадрат чётен? нет: 13 нечётно и 13 × 13 = 169, что нечётно.
+является ли 25 полным квадратом? да: 25 = 5 × 5.
+is 41 a perfect square? no: 41 lies between 6 × 6 = 36 and 7 × 7 = 49.
+is 64 a square number? yes: 64 = 8 × 8.
+есть ли целое число, квадрат которого равен 81? да: 81 = 9 × 9.
+является ли 113 полным квадратом? нет: 113 лежит между 10 × 10 = 100 и 11 × 11 = 121.
+what is the square of the number 6? 6 × 6 = 36.
+what is the square of 9? 9 × 9 = 81.
+чему равен квадрат числа 11? 11 × 11 = 121.
+чему равен квадрат 14? 14 × 14 = 196.
+квадрат 5 равен 25: 5 × 5 = 25.
+the square of 11 is 121: 11 × 11 = 121.
+квадрат 16 равен 256: 16 × 16 = 256.
+всякий квадрат чётен — ложь: 9 нечётно и 9 × 9 = 81, что нечётно.
+is it true that every square is even? no: 15 is odd and 15 × 15 = 225, which is odd.
 the square of an odd number is odd: 5 × 5 = 25.
+верно ли, что квадрат нечётного числа нечётен? да: контрпримера среди 1..1000 нет; пример: 7 × 7 = 49.
+квадрат чётного числа чётен: 10 × 10 = 100.
+is 36 a perfect square? yes: 36 = 6 × 6.
+is 56 a square number? no: 56 lies between 7 × 7 = 49 and 8 × 8 = 64.
+есть ли целое число, квадрат которого равен 73? нет: 73 лежит между 8 × 8 = 64 и 9 × 9 = 81.
+является ли 100 полным квадратом? да: 100 = 10 × 10.
+what is the square of the number 5? 5 × 5 = 25.
+what is the square of 8? 8 × 8 = 64.
+чему равен квадрат числа 10? 10 × 10 = 100.
+чему равен квадрат 13? 13 × 13 = 169.
+what is the square of the number 16? 16 × 16 = 256.
+the square of 9 is 81: 9 × 9 = 81.
+квадрат 14 равен 196: 14 × 14 = 196.
+всякий квадрат чётен — ложь: 7 нечётно и 7 × 7 = 49, что нечётно.
+is it true that every square is even? no: 13 is odd and 13 × 13 = 169, which is odd.
+the square of an even number is even: 4 × 4 = 16.
+верно ли, что квадрат чётного числа чётен? да: контрпримера среди 1..1000 нет; пример: 6 × 6 = 36.
+квадрат нечётного числа нечётен: 9 × 9 = 81.
+is 28 a perfect square? no: 28 lies between 5 × 5 = 25 and 6 × 6 = 36.
+is 49 a square number? yes: 49 = 7 × 7.
+есть ли целое число, квадрат которого равен 64? да: 64 = 8 × 8.
+является ли 92 полным квадратом? нет: 92 лежит между 9 × 9 = 81 и 10 × 10 = 100.
+квадрат числа — это число, умноженное на само себя.
+what is the square of 7? 7 × 7 = 49.
+чему равен квадрат числа 9? 9 × 9 = 81.
+чему равен квадрат 12? 12 × 12 = 144.
+what is the square of the number 15? 15 × 15 = 225.
+the square of 7 is 49: 7 × 7 = 49.
+квадрат 12 равен 144: 12 × 12 = 144.
+всякий квадрат чётен — ложь: 5 нечётно и 5 × 5 = 25, что нечётно.
+is it true that every square is even? no: 11 is odd and 11 × 11 = 121, which is odd.
+the square of an odd number is odd: 3 × 3 = 9.
+верно ли, что квадрат нечётного числа нечётен? да: контрпримера среди 1..1000 нет; пример: 5 × 5 = 25.
+квадрат чётного числа чётен: 8 × 8 = 64.
+is 25 a perfect square? yes: 25 = 5 × 5.
+is 41 a square number? no: 41 lies between 6 × 6 = 36 and 7 × 7 = 49.
+есть ли целое число, квадрат которого равен 56? нет: 56 лежит между 7 × 7 = 49 и 8 × 8 = 64.
+является ли 81 полным квадратом? да: 81 = 9 × 9.
+is 113 a perfect square? no: 113 lies between 10 × 10 = 100 and 11 × 11 = 121.
+what is the square of 6? 6 × 6 = 36.
+чему равен квадрат числа 8? 8 × 8 = 64.
+чему равен квадрат 11? 11 × 11 = 121.
+what is the square of the number 14? 14 × 14 = 196.
+the square of 5 is 25: 5 × 5 = 25.
+квадрат 10 равен 100: 10 × 10 = 100.
+the square of 16 is 256: 16 × 16 = 256.
+is it true that every square is even? no: 9 is odd and 9 × 9 = 81, which is odd.
+every square is even is false: 15 is odd and 15 × 15 = 225, which is odd.
+верно ли, что квадрат чётного числа чётен? да: контрпримера среди 1..1000 нет; пример: 4 × 4 = 16.
+квадрат нечётного числа нечётен: 7 × 7 = 49.
+is it true that the square of an even number is even? yes: no counterexample among 1..1000; example: 10 × 10 = 100.
+is 36 a square number? yes: 36 = 6 × 6.
+есть ли целое число, квадрат которого равен 49? да: 49 = 7 × 7.
+является ли 73 полным квадратом? нет: 73 лежит между 8 × 8 = 64 и 9 × 9 = 81.
+is 100 a perfect square? yes: 100 = 10 × 10.
+what is the square of 5? 5 × 5 = 25.
+чему равен квадрат числа 7? 7 × 7 = 49.
+чему равен квадрат 10? 10 × 10 = 100.
+what is the square of the number 13? 13 × 13 = 169.
+what is the square of 16? 16 × 16 = 256.
+квадрат 8 равен 64: 8 × 8 = 64.
+the square of 14 is 196: 14 × 14 = 196.
+is it true that every square is even? no: 7 is odd and 7 × 7 = 49, which is odd.
+every square is even is false: 13 is odd and 13 × 13 = 169, which is odd.
+верно ли, что квадрат нечётного числа нечётен? да: контрпримера среди 1..1000 нет; пример: 3 × 3 = 9.
+квадрат чётного числа чётен: 6 × 6 = 36.
+is it true that the square of an odd number is odd? yes: no counterexample among 1..1000; example: 9 × 9 = 81.
+is 28 a square number? no: 28 lies between 5 × 5 = 25 and 6 × 6 = 36.
+есть ли целое число, квадрат которого равен 41? нет: 41 лежит между 6 × 6 = 36 и 7 × 7 = 49.
+является ли 64 полным квадратом? да: 64 = 8 × 8.
+is 92 a perfect square? no: 92 lies between 9 × 9 = 81 and 10 × 10 = 100.
+the square of a number is the number multiplied by itself.
+чему равен квадрат числа 6? 6 × 6 = 36.
+чему равен квадрат 9? 9 × 9 = 81.
+what is the square of the number 12? 12 × 12 = 144.
+what is the square of 15? 15 × 15 = 225.
+квадрат 6 равен 36: 6 × 6 = 36.
+the square of 12 is 144: 12 × 12 = 144.
+is it true that every square is even? no: 5 is odd and 5 × 5 = 25, which is odd.
+every square is even is false: 11 is odd and 11 × 11 = 121, which is odd.
+верно ли, что всякий квадрат чётен? нет: 15 нечётно и 15 × 15 = 225, что нечётно.
+квадрат нечётного числа нечётен: 5 × 5 = 25.
 is it true that the square of an even number is even? yes: no counterexample among 1..1000; example: 8 × 8 = 64.
+is 25 a square number? yes: 25 = 5 × 5.
+есть ли целое число, квадрат которого равен 36? да: 36 = 6 × 6.
+является ли 56 полным квадратом? нет: 56 лежит между 7 × 7 = 49 и 8 × 8 = 64.
+is 81 a perfect square? yes: 81 = 9 × 9.
+is 113 a square number? no: 113 lies between 10 × 10 = 100 and 11 × 11 = 121.
+чему равен квадрат числа 5? 5 × 5 = 25.
+чему равен квадрат 8? 8 × 8 = 64.
+what is the square of the number 11? 11 × 11 = 121.
+what is the square of 14? 14 × 14 = 196.
+чему равен квадрат числа 16? 16 × 16 = 256.
+the square of 10 is 100: 10 × 10 = 100.
+квадрат 15 равен 225: 15 × 15 = 225.
+every square is even is false: 9 is odd and 9 × 9 = 81, which is odd.
+верно ли, что всякий квадрат чётен? нет: 13 нечётно и 13 × 13 = 169, что нечётно.
+квадрат чётного числа чётен: 4 × 4 = 16.
+is it true that the square of an odd number is odd? yes: no counterexample among 1..1000; example: 7 × 7 = 49.
+the square of an even number is even: 10 × 10 = 100.
+есть ли целое число, квадрат которого равен 28? нет: 28 лежит между 5 × 5 = 25 и 6 × 6 = 36.
+является ли 49 полным квадратом? да: 49 = 7 × 7.
+is 73 a perfect square? no: 73 lies between 8 × 8 = 64 and 9 × 9 = 81.
+is 100 a square number? yes: 100 = 10 × 10.
+что такое квадрат числа? квадрат числа — это число, умноженное на само себя.
+чему равен квадрат 7? 7 × 7 = 49.
+what is the square of the number 10? 10 × 10 = 100.
+what is the square of 13? 13 × 13 = 169.
+чему равен квадрат числа 15? 15 × 15 = 225.
+the square of 8 is 64: 8 × 8 = 64.
+квадрат 13 равен 169: 13 × 13 = 169.
+every square is even is false: 7 is odd and 7 × 7 = 49, which is odd.
+верно ли, что всякий квадрат чётен? нет: 11 нечётно и 11 × 11 = 121, что нечётно.
+квадрат нечётного числа нечётен: 3 × 3 = 9.
+is it true that the square of an even number is even? yes: no counterexample among 1..1000; example: 6 × 6 = 36.
+the square of an odd number is odd: 9 × 9 = 81.
+есть ли целое число, квадрат которого равен 25? да: 25 = 5 × 5.
+является ли 41 полным квадратом? нет: 41 лежит между 6 × 6 = 36 и 7 × 7 = 49.
+is 64 a perfect square? yes: 64 = 8 × 8.
+is 92 a square number? no: 92 lies between 9 × 9 = 81 and 10 × 10 = 100.
+есть ли целое число, квадрат которого равен 113? нет: 113 лежит между 10 × 10 = 100 и 11 × 11 = 121.
+чему равен квадрат 6? 6 × 6 = 36.
+what is the square of the number 9? 9 × 9 = 81.
+what is the square of 12? 12 × 12 = 144.
+чему равен квадрат числа 14? 14 × 14 = 196.
+the square of 6 is 36: 6 × 6 = 36.
+квадрат 11 равен 121: 11 × 11 = 121.
+every square is even is false: 5 is odd and 5 × 5 = 25, which is odd.
+верно ли, что всякий квадрат чётен? нет: 9 нечётно и 9 × 9 = 81, что нечётно.
+всякий квадрат чётен — ложь: 15 нечётно и 15 × 15 = 225, что нечётно.
+is it true that the square of an odd number is odd? yes: no counterexample among 1..1000; example: 5 × 5 = 25.
+the square of an even number is even: 8 × 8 = 64.
+верно ли, что квадрат чётного числа чётен? да: контрпримера среди 1..1000 нет; пример: 10 × 10 = 100.
+является ли 36 полным квадратом? да: 36 = 6 × 6.
+is 56 a perfect square? no: 56 lies between 7 × 7 = 49 and 8 × 8 = 64.
+is 81 a square number? yes: 81 = 9 × 9.
+есть ли целое число, квадрат которого равен 100? да: 100 = 10 × 10.
+чему равен квадрат 5? 5 × 5 = 25.
+what is the square of the number 8? 8 × 8 = 64.
+what is the square of 11? 11 × 11 = 121.
+чему равен квадрат числа 13? 13 × 13 = 169.
+чему равен квадрат 16? 16 × 16 = 256.
+квадрат 9 равен 81: 9 × 9 = 81.
+the square of 15 is 225: 15 × 15 = 225.
+верно ли, что всякий квадрат чётен? нет: 7 нечётно и 7 × 7 = 49, что нечётно.
+всякий квадрат чётен — ложь: 13 нечётно и 13 × 13 = 169, что нечётно.
+is it true that the square of an even number is even? yes: no counterexample among 1..1000; example: 4 × 4 = 16.
+the square of an odd number is odd: 7 × 7 = 49.
+верно ли, что квадрат нечётного числа нечётен? да: контрпримера среди 1..1000 нет; пример: 9 × 9 = 81.
+является ли 28 полным квадратом? нет: 28 лежит между 5 × 5 = 25 и 6 × 6 = 36.
+is 49 a perfect square? yes: 49 = 7 × 7.
+is 73 a square number? no: 73 lies between 8 × 8 = 64 and 9 × 9 = 81.
+есть ли целое число, квадрат которого равен 92? нет: 92 лежит между 9 × 9 = 81 и 10 × 10 = 100.
 
 простое ли число 59? да: делители 59 — 1 и 59.
 is 69 a prime number? no: 69 = 3 × 23.
@@ -2359,107 +2455,23 @@ the square of 19 is 361: 19 × 19 = 361.
 the square of an even number is even: 4 × 4 = 16.
 is it true that the square of an odd number is odd? yes: no counterexample among 1..1000; example: 7 × 7 = 49.
 квадрат чётного числа чётен: 10 × 10 = 100.
-чему равен квадрат числа 8? 8 × 8 = 64.
-what is the square of 12? 12 × 12 = 144.
-what is the square of the number 15? 15 × 15 = 225.
-чему равен квадрат 18? 18 × 18 = 324.
-квадрат 11 равен 121: 11 × 11 = 121.
-the square of 18 is 324: 18 × 18 = 324.
-is it true that every square is even? no: 11 is odd and 11 × 11 = 121, which is odd.
-всякий квадрат чётен — ложь: 17 нечётно и 17 × 17 = 289, что нечётно.
-верно ли, что квадрат чётного числа чётен? да: контрпримера среди 1..1000 нет; пример: 6 × 6 = 36.
-the square of an even number is even: 10 × 10 = 100.
-what is the square of the number 8? 8 × 8 = 64.
-чему равен квадрат 11? 11 × 11 = 121.
-чему равен квадрат числа 14? 14 × 14 = 196.
-what is the square of 18? 18 × 18 = 324.
-квадрат 10 равен 100: 10 × 10 = 100.
-the square of 17 is 289: 17 × 17 = 289.
-верно ли, что всякий квадрат чётен? нет: 9 нечётно и 9 × 9 = 81, что нечётно.
-every square is even is false: 17 is odd and 17 × 17 = 289, which is odd.
-is it true that the square of an even number is even? yes: no counterexample among 1..1000; example: 6 × 6 = 36.
-квадрат нечётного числа нечётен: 9 × 9 = 81.
-что такое квадрат числа? квадрат числа — это число, умноженное на само себя.
-what is the square of 11? 11 × 11 = 121.
-what is the square of the number 14? 14 × 14 = 196.
-чему равен квадрат 17? 17 × 17 = 289.
-квадрат 9 равен 81: 9 × 9 = 81.
-the square of 16 is 256: 16 × 16 = 256.
-is it true that every square is even? no: 9 is odd and 9 × 9 = 81, which is odd.
-всякий квадрат чётен — ложь: 15 нечётно и 15 × 15 = 225, что нечётно.
-верно ли, что квадрат нечётного числа нечётен? да: контрпримера среди 1..1000 нет; пример: 5 × 5 = 25.
-the square of an odd number is odd: 9 × 9 = 81.
-квадрат числа — это число, умноженное на само себя.
-чему равен квадрат 10? 10 × 10 = 100.
-чему равен квадрат числа 13? 13 × 13 = 169.
-what is the square of 17? 17 × 17 = 289.
-квадрат 8 равен 64: 8 × 8 = 64.
-the square of 15 is 225: 15 × 15 = 225.
-верно ли, что всякий квадрат чётен? нет: 7 нечётно и 7 × 7 = 49, что нечётно.
-every square is even is false: 15 is odd and 15 × 15 = 225, which is odd.
-is it true that the square of an odd number is odd? yes: no counterexample among 1..1000; example: 5 × 5 = 25.
-квадрат чётного числа чётен: 8 × 8 = 64.
-верно ли, что квадрат нечётного числа нечётен? да: контрпримера среди 1..1000 нет; пример: 11 × 11 = 121.
-what is the square of 10? 10 × 10 = 100.
-what is the square of the number 13? 13 × 13 = 169.
-чему равен квадрат 16? 16 × 16 = 256.
-чему равен квадрат числа 19? 19 × 19 = 361.
-the square of 14 is 196: 14 × 14 = 196.
-is it true that every square is even? no: 7 is odd and 7 × 7 = 49, which is odd.
-всякий квадрат чётен — ложь: 13 нечётно и 13 × 13 = 169, что нечётно.
-верно ли, что квадрат чётного числа чётен? да: контрпримера среди 1..1000 нет; пример: 4 × 4 = 16.
-the square of an even number is even: 8 × 8 = 64.
-is it true that the square of an odd number is odd? yes: no counterexample among 1..1000; example: 11 × 11 = 121.
-чему равен квадрат 9? 9 × 9 = 81.
-чему равен квадрат числа 12? 12 × 12 = 144.
-what is the square of 16? 16 × 16 = 256.
-what is the square of the number 19? 19 × 19 = 361.
-the square of 13 is 169: 13 × 13 = 169.
-квадрат 19 равен 361: 19 × 19 = 361.
-every square is even is false: 13 is odd and 13 × 13 = 169, which is odd.
-is it true that the square of an even number is even? yes: no counterexample among 1..1000; example: 4 × 4 = 16.
-квадрат нечётного числа нечётен: 7 × 7 = 49.
-верно ли, что квадрат чётного числа чётен? да: контрпримера среди 1..1000 нет; пример: 10 × 10 = 100.
-what is the square of 9? 9 × 9 = 81.
-what is the square of the number 12? 12 × 12 = 144.
-чему равен квадрат 15? 15 × 15 = 225.
-чему равен квадрат числа 18? 18 × 18 = 324.
-the square of 12 is 144: 12 × 12 = 144.
-квадрат 18 равен 324: 18 × 18 = 324.
-всякий квадрат чётен — ложь: 11 нечётно и 11 × 11 = 121, что нечётно.
-верно ли, что всякий квадрат чётен? нет: 17 нечётно и 17 × 17 = 289, что нечётно.
-the square of an odd number is odd: 7 × 7 = 49.
-is it true that the square of an even number is even? yes: no counterexample among 1..1000; example: 10 × 10 = 100.
-чему равен квадрат 8? 8 × 8 = 64.
-чему равен квадрат числа 11? 11 × 11 = 121.
-what is the square of 15? 15 × 15 = 225.
-what is the square of the number 18? 18 × 18 = 324.
-the square of 11 is 121: 11 × 11 = 121.
-квадрат 17 равен 289: 17 × 17 = 289.
-every square is even is false: 11 is odd and 11 × 11 = 121, which is odd.
-is it true that every square is even? no: 17 is odd and 17 × 17 = 289, which is odd.
-квадрат чётного числа чётен: 6 × 6 = 36.
-верно ли, что квадрат нечётного числа нечётен? да: контрпримера среди 1..1000 нет; пример: 9 × 9 = 81.
-what is the square of 8? 8 × 8 = 64.
-what is the square of the number 11? 11 × 11 = 121.
-чему равен квадрат 14? 14 × 14 = 196.
-чему равен квадрат числа 17? 17 × 17 = 289.
-the square of 10 is 100: 10 × 10 = 100.
-квадрат 16 равен 256: 16 × 16 = 256.
-всякий квадрат чётен — ложь: 9 нечётно и 9 × 9 = 81, что нечётно.
-верно ли, что всякий квадрат чётен? нет: 15 нечётно и 15 × 15 = 225, что нечётно.
-the square of an even number is even: 6 × 6 = 36.
-is it true that the square of an odd number is odd? yes: no counterexample among 1..1000; example: 9 × 9 = 81.
-what is the square of a number? the square of a number is the number multiplied by itself.
-чему равен квадрат числа 10? 10 × 10 = 100.
-what is the square of 14? 14 × 14 = 196.
-what is the square of the number 17? 17 × 17 = 289.
-the square of 9 is 81: 9 × 9 = 81.
-квадрат 15 равен 225: 15 × 15 = 225.
-every square is even is false: 9 is odd and 9 × 9 = 81, which is odd.
-is it true that every square is even? no: 15 is odd and 15 × 15 = 225, which is odd.
-квадрат нечётного числа нечётен: 5 × 5 = 25.
-верно ли, что квадрат чётного числа чётен? да: контрпримера среди 1..1000 нет; пример: 8 × 8 = 64.
+есть ли целое число, квадрат которого равен 68? нет: 68 лежит между 8 × 8 = 64 и 9 × 9 = 81.
+is 108 a square number? no: 108 lies between 10 × 10 = 100 and 11 × 11 = 121.
+is 144 a perfect square? yes: 144 = 12 × 12.
+является ли 183 полным квадратом? нет: 183 лежит между 13 × 13 = 169 и 14 × 14 = 196.
+чему равен квадрат числа 9? 9 × 9 = 81.
+what is the square of 13? 13 × 13 = 169.
+what is the square of the number 16? 16 × 16 = 256.
+чему равен квадрат 19? 19 × 19 = 361.
+квадрат 13 равен 169: 13 × 13 = 169.
+every square is even is false: 7 is odd and 7 × 7 = 49, which is odd.
+is it true that every square is even? no: 13 is odd and 13 × 13 = 169, which is odd.
+квадрат чётного числа чётен: 4 × 4 = 16.
+верно ли, что квадрат нечётного числа нечётен? да: контрпримера среди 1..1000 нет; пример: 7 × 7 = 49.
+the square of an odd number is odd: 11 × 11 = 121.
+is 81 a perfect square? yes: 81 = 9 × 9.
+является ли 108 полным квадратом? нет: 108 лежит между 10 × 10 = 100 и 11 × 11 = 121.
+есть ли целое число, квадрат которого равен 144? да: 144 = 12 × 12.
 the square of a number is the number multiplied by itself.
 what is the square of the number 10? 10 × 10 = 100.
 чему равен квадрат 13? 13 × 13 = 169.
@@ -2471,16 +2483,148 @@ the square of 8 is 64: 8 × 8 = 64.
 the square of an odd number is odd: 5 × 5 = 25.
 is it true that the square of an even number is even? yes: no counterexample among 1..1000; example: 8 × 8 = 64.
 квадрат нечётного числа нечётен: 11 × 11 = 121.
-чему равен квадрат числа 9? 9 × 9 = 81.
-what is the square of 13? 13 × 13 = 169.
-what is the square of the number 16? 16 × 16 = 256.
-чему равен квадрат 19? 19 × 19 = 361.
-квадрат 13 равен 169: 13 × 13 = 169.
-every square is even is false: 7 is odd and 7 × 7 = 49, which is odd.
-is it true that every square is even? no: 13 is odd and 13 × 13 = 169, which is odd.
-квадрат чётного числа чётен: 4 × 4 = 16.
-верно ли, что квадрат нечётного числа нечётен? да: контрпримера среди 1..1000 нет; пример: 7 × 7 = 49.
-the square of an odd number is odd: 11 × 11 = 121.
+есть ли целое число, квадрат которого равен 81? да: 81 = 9 × 9.
+is 121 a square number? yes: 121 = 11 × 11.
+is 156 a perfect square? no: 156 lies between 12 × 12 = 144 and 13 × 13 = 169.
+what is the square of a number? the square of a number is the number multiplied by itself.
+чему равен квадрат числа 10? 10 × 10 = 100.
+what is the square of 14? 14 × 14 = 196.
+what is the square of the number 17? 17 × 17 = 289.
+the square of 9 is 81: 9 × 9 = 81.
+квадрат 15 равен 225: 15 × 15 = 225.
+every square is even is false: 9 is odd and 9 × 9 = 81, which is odd.
+is it true that every square is even? no: 15 is odd and 15 × 15 = 225, which is odd.
+квадрат нечётного числа нечётен: 5 × 5 = 25.
+верно ли, что квадрат чётного числа чётен? да: контрпримера среди 1..1000 нет; пример: 8 × 8 = 64.
+is 64 a square number? yes: 64 = 8 × 8.
+is 87 a perfect square? no: 87 lies between 9 × 9 = 81 and 10 × 10 = 100.
+является ли 121 полным квадратом? да: 121 = 11 × 11.
+есть ли целое число, квадрат которого равен 156? нет: 156 лежит между 12 × 12 = 144 и 13 × 13 = 169.
+what is the square of 8? 8 × 8 = 64.
+what is the square of the number 11? 11 × 11 = 121.
+чему равен квадрат 14? 14 × 14 = 196.
+чему равен квадрат числа 17? 17 × 17 = 289.
+the square of 10 is 100: 10 × 10 = 100.
+квадрат 16 равен 256: 16 × 16 = 256.
+всякий квадрат чётен — ложь: 9 нечётно и 9 × 9 = 81, что нечётно.
+верно ли, что всякий квадрат чётен? нет: 15 нечётно и 15 × 15 = 225, что нечётно.
+the square of an even number is even: 6 × 6 = 36.
+is it true that the square of an odd number is odd? yes: no counterexample among 1..1000; example: 9 × 9 = 81.
+является ли 64 полным квадратом? да: 64 = 8 × 8.
+есть ли целое число, квадрат которого равен 87? нет: 87 лежит между 9 × 9 = 81 и 10 × 10 = 100.
+is 131 a square number? no: 131 lies between 11 × 11 = 121 and 12 × 12 = 144.
+is 169 a perfect square? yes: 169 = 13 × 13.
+чему равен квадрат 8? 8 × 8 = 64.
+чему равен квадрат числа 11? 11 × 11 = 121.
+what is the square of 15? 15 × 15 = 225.
+what is the square of the number 18? 18 × 18 = 324.
+the square of 11 is 121: 11 × 11 = 121.
+квадрат 17 равен 289: 17 × 17 = 289.
+every square is even is false: 11 is odd and 11 × 11 = 121, which is odd.
+is it true that every square is even? no: 17 is odd and 17 × 17 = 289, which is odd.
+квадрат чётного числа чётен: 6 × 6 = 36.
+верно ли, что квадрат нечётного числа нечётен? да: контрпримера среди 1..1000 нет; пример: 9 × 9 = 81.
+is 68 a square number? no: 68 lies between 8 × 8 = 64 and 9 × 9 = 81.
+is 100 a perfect square? yes: 100 = 10 × 10.
+является ли 131 полным квадратом? нет: 131 лежит между 11 × 11 = 121 и 12 × 12 = 144.
+есть ли целое число, квадрат которого равен 169? да: 169 = 13 × 13.
+what is the square of 9? 9 × 9 = 81.
+what is the square of the number 12? 12 × 12 = 144.
+чему равен квадрат 15? 15 × 15 = 225.
+чему равен квадрат числа 18? 18 × 18 = 324.
+the square of 12 is 144: 12 × 12 = 144.
+квадрат 18 равен 324: 18 × 18 = 324.
+всякий квадрат чётен — ложь: 11 нечётно и 11 × 11 = 121, что нечётно.
+верно ли, что всякий квадрат чётен? нет: 17 нечётно и 17 × 17 = 289, что нечётно.
+the square of an odd number is odd: 7 × 7 = 49.
+is it true that the square of an even number is even? yes: no counterexample among 1..1000; example: 10 × 10 = 100.
+является ли 68 полным квадратом? нет: 68 лежит между 8 × 8 = 64 и 9 × 9 = 81.
+есть ли целое число, квадрат которого равен 100? да: 100 = 10 × 10.
+is 144 a square number? yes: 144 = 12 × 12.
+is 183 a perfect square? no: 183 lies between 13 × 13 = 169 and 14 × 14 = 196.
+чему равен квадрат 9? 9 × 9 = 81.
+чему равен квадрат числа 12? 12 × 12 = 144.
+what is the square of 16? 16 × 16 = 256.
+what is the square of the number 19? 19 × 19 = 361.
+the square of 13 is 169: 13 × 13 = 169.
+квадрат 19 равен 361: 19 × 19 = 361.
+every square is even is false: 13 is odd and 13 × 13 = 169, which is odd.
+is it true that the square of an even number is even? yes: no counterexample among 1..1000; example: 4 × 4 = 16.
+квадрат нечётного числа нечётен: 7 × 7 = 49.
+верно ли, что квадрат чётного числа чётен? да: контрпримера среди 1..1000 нет; пример: 10 × 10 = 100.
+is 81 a square number? yes: 81 = 9 × 9.
+is 108 a perfect square? no: 108 lies between 10 × 10 = 100 and 11 × 11 = 121.
+является ли 144 полным квадратом? да: 144 = 12 × 12.
+есть ли целое число, квадрат которого равен 183? нет: 183 лежит между 13 × 13 = 169 и 14 × 14 = 196.
+what is the square of 10? 10 × 10 = 100.
+what is the square of the number 13? 13 × 13 = 169.
+чему равен квадрат 16? 16 × 16 = 256.
+чему равен квадрат числа 19? 19 × 19 = 361.
+the square of 14 is 196: 14 × 14 = 196.
+is it true that every square is even? no: 7 is odd and 7 × 7 = 49, which is odd.
+всякий квадрат чётен — ложь: 13 нечётно и 13 × 13 = 169, что нечётно.
+верно ли, что квадрат чётного числа чётен? да: контрпримера среди 1..1000 нет; пример: 4 × 4 = 16.
+the square of an even number is even: 8 × 8 = 64.
+is it true that the square of an odd number is odd? yes: no counterexample among 1..1000; example: 11 × 11 = 121.
+является ли 81 полным квадратом? да: 81 = 9 × 9.
+есть ли целое число, квадрат которого равен 108? нет: 108 лежит между 10 × 10 = 100 и 11 × 11 = 121.
+is 156 a square number? no: 156 lies between 12 × 12 = 144 and 13 × 13 = 169.
+квадрат числа — это число, умноженное на само себя.
+чему равен квадрат 10? 10 × 10 = 100.
+чему равен квадрат числа 13? 13 × 13 = 169.
+what is the square of 17? 17 × 17 = 289.
+квадрат 8 равен 64: 8 × 8 = 64.
+the square of 15 is 225: 15 × 15 = 225.
+верно ли, что всякий квадрат чётен? нет: 7 нечётно и 7 × 7 = 49, что нечётно.
+every square is even is false: 15 is odd and 15 × 15 = 225, which is odd.
+is it true that the square of an odd number is odd? yes: no counterexample among 1..1000; example: 5 × 5 = 25.
+квадрат чётного числа чётен: 8 × 8 = 64.
+верно ли, что квадрат нечётного числа нечётен? да: контрпримера среди 1..1000 нет; пример: 11 × 11 = 121.
+is 87 a square number? no: 87 lies between 9 × 9 = 81 and 10 × 10 = 100.
+is 121 a perfect square? yes: 121 = 11 × 11.
+является ли 156 полным квадратом? нет: 156 лежит между 12 × 12 = 144 и 13 × 13 = 169.
+что такое квадрат числа? квадрат числа — это число, умноженное на само себя.
+what is the square of 11? 11 × 11 = 121.
+what is the square of the number 14? 14 × 14 = 196.
+чему равен квадрат 17? 17 × 17 = 289.
+квадрат 9 равен 81: 9 × 9 = 81.
+the square of 16 is 256: 16 × 16 = 256.
+is it true that every square is even? no: 9 is odd and 9 × 9 = 81, which is odd.
+всякий квадрат чётен — ложь: 15 нечётно и 15 × 15 = 225, что нечётно.
+верно ли, что квадрат нечётного числа нечётен? да: контрпримера среди 1..1000 нет; пример: 5 × 5 = 25.
+the square of an odd number is odd: 9 × 9 = 81.
+is 64 a perfect square? yes: 64 = 8 × 8.
+является ли 87 полным квадратом? нет: 87 лежит между 9 × 9 = 81 и 10 × 10 = 100.
+есть ли целое число, квадрат которого равен 121? да: 121 = 11 × 11.
+is 169 a square number? yes: 169 = 13 × 13.
+what is the square of the number 8? 8 × 8 = 64.
+чему равен квадрат 11? 11 × 11 = 121.
+чему равен квадрат числа 14? 14 × 14 = 196.
+what is the square of 18? 18 × 18 = 324.
+квадрат 10 равен 100: 10 × 10 = 100.
+the square of 17 is 289: 17 × 17 = 289.
+верно ли, что всякий квадрат чётен? нет: 9 нечётно и 9 × 9 = 81, что нечётно.
+every square is even is false: 17 is odd and 17 × 17 = 289, which is odd.
+is it true that the square of an even number is even? yes: no counterexample among 1..1000; example: 6 × 6 = 36.
+квадрат нечётного числа нечётен: 9 × 9 = 81.
+есть ли целое число, квадрат которого равен 64? да: 64 = 8 × 8.
+is 100 a square number? yes: 100 = 10 × 10.
+is 131 a perfect square? no: 131 lies between 11 × 11 = 121 and 12 × 12 = 144.
+является ли 169 полным квадратом? да: 169 = 13 × 13.
+чему равен квадрат числа 8? 8 × 8 = 64.
+what is the square of 12? 12 × 12 = 144.
+what is the square of the number 15? 15 × 15 = 225.
+чему равен квадрат 18? 18 × 18 = 324.
+квадрат 11 равен 121: 11 × 11 = 121.
+the square of 18 is 324: 18 × 18 = 324.
+is it true that every square is even? no: 11 is odd and 11 × 11 = 121, which is odd.
+всякий квадрат чётен — ложь: 17 нечётно и 17 × 17 = 289, что нечётно.
+верно ли, что квадрат чётного числа чётен? да: контрпримера среди 1..1000 нет; пример: 6 × 6 = 36.
+the square of an even number is even: 10 × 10 = 100.
+is 68 a perfect square? no: 68 lies between 8 × 8 = 64 and 9 × 9 = 81.
+является ли 100 полным квадратом? да: 100 = 10 × 10.
+есть ли целое число, квадрат которого равен 131? нет: 131 лежит между 11 × 11 = 121 и 12 × 12 = 144.
+is 183 a square number? no: 183 lies between 13 × 13 = 169 and 14 × 14 = 196.
 
 is 61 a prime number? yes: the divisors of 61 are 1 and 61.
 простое ли число 71? да: делители 71 — 1 и 71.
@@ -3185,45 +3329,9 @@ the square of 21 is 441: 21 × 21 = 441.
 is it true that every square is even? no: 15 is odd and 15 × 15 = 225, which is odd.
 квадрат чётного числа чётен: 6 × 6 = 36.
 верно ли, что квадрат чётного числа чётен? да: контрпримера среди 1..1000 нет; пример: 10 × 10 = 100.
-what is the square of 12? 12 × 12 = 144.
-what is the square of the number 16? 16 × 16 = 256.
-чему равен квадрат 20? 20 × 20 = 400.
-квадрат 14 равен 196: 14 × 14 = 196.
-every square is even is false: 9 is odd and 9 × 9 = 81, which is odd.
-is it true that every square is even? no: 17 is odd and 17 × 17 = 289, which is odd.
-квадрат нечётного числа нечётен: 7 × 7 = 49.
-верно ли, что квадрат нечётного числа нечётен? да: контрпримера среди 1..1000 нет; пример: 11 × 11 = 121.
-what is the square of 13? 13 × 13 = 169.
-what is the square of the number 17? 17 × 17 = 289.
-чему равен квадрат 21? 21 × 21 = 441.
-квадрат 16 равен 256: 16 × 16 = 256.
-every square is even is false: 11 is odd and 11 × 11 = 121, which is odd.
-is it true that every square is even? no: 19 is odd and 19 × 19 = 361, which is odd.
-квадрат чётного числа чётен: 8 × 8 = 64.
-верно ли, что квадрат чётного числа чётен? да: контрпримера среди 1..1000 нет; пример: 12 × 12 = 144.
-what is the square of 14? 14 × 14 = 196.
-what is the square of the number 18? 18 × 18 = 324.
-чему равен квадрат 22? 22 × 22 = 484.
-квадрат 18 равен 324: 18 × 18 = 324.
-every square is even is false: 13 is odd and 13 × 13 = 169, which is odd.
-is it true that the square of an odd number is odd? yes: no counterexample among 1..1000; example: 5 × 5 = 25.
-квадрат нечётного числа нечётен: 9 × 9 = 81.
-что такое квадрат числа? квадрат числа — это число, умноженное на само себя.
-what is the square of 15? 15 × 15 = 225.
-what is the square of the number 19? 19 × 19 = 361.
-the square of 12 is 144: 12 × 12 = 144.
-квадрат 20 равен 400: 20 × 20 = 400.
-every square is even is false: 15 is odd and 15 × 15 = 225, which is odd.
-is it true that the square of an even number is even? yes: no counterexample among 1..1000; example: 6 × 6 = 36.
-квадрат чётного числа чётен: 10 × 10 = 100.
-чему равен квадрат числа 11? 11 × 11 = 121.
-what is the square of 16? 16 × 16 = 256.
-what is the square of the number 20? 20 × 20 = 400.
-the square of 14 is 196: 14 × 14 = 196.
-квадрат 22 равен 484: 22 × 22 = 484.
-every square is even is false: 17 is odd and 17 × 17 = 289, which is odd.
-is it true that the square of an odd number is odd? yes: no counterexample among 1..1000; example: 7 × 7 = 49.
-квадрат нечётного числа нечётен: 11 × 11 = 121.
+is 144 a square number? yes: 144 = 12 × 12.
+is 196 a perfect square? yes: 196 = 14 × 14.
+является ли 256 полным квадратом? да: 256 = 16 × 16.
 чему равен квадрат числа 12? 12 × 12 = 144.
 what is the square of 17? 17 × 17 = 289.
 what is the square of the number 21? 21 × 21 = 441.
@@ -3232,44 +3340,8 @@ the square of 16 is 256: 16 × 16 = 256.
 every square is even is false: 19 is odd and 19 × 19 = 361, which is odd.
 is it true that the square of an even number is even? yes: no counterexample among 1..1000; example: 8 × 8 = 64.
 квадрат чётного числа чётен: 12 × 12 = 144.
-чему равен квадрат числа 13? 13 × 13 = 169.
-what is the square of 18? 18 × 18 = 324.
-what is the square of the number 22? 22 × 22 = 484.
-the square of 18 is 324: 18 × 18 = 324.
-верно ли, что всякий квадрат чётен? нет: 11 нечётно и 11 × 11 = 121, что нечётно.
-the square of an odd number is odd: 5 × 5 = 25.
-is it true that the square of an odd number is odd? yes: no counterexample among 1..1000; example: 9 × 9 = 81.
-what is the square of a number? the square of a number is the number multiplied by itself.
-чему равен квадрат числа 14? 14 × 14 = 196.
-what is the square of 19? 19 × 19 = 361.
-квадрат 11 равен 121: 11 × 11 = 121.
-the square of 20 is 400: 20 × 20 = 400.
-верно ли, что всякий квадрат чётен? нет: 13 нечётно и 13 × 13 = 169, что нечётно.
-the square of an even number is even: 6 × 6 = 36.
-is it true that the square of an even number is even? yes: no counterexample among 1..1000; example: 10 × 10 = 100.
-чему равен квадрат 11? 11 × 11 = 121.
-чему равен квадрат числа 15? 15 × 15 = 225.
-what is the square of 20? 20 × 20 = 400.
-квадрат 13 равен 169: 13 × 13 = 169.
-the square of 22 is 484: 22 × 22 = 484.
-верно ли, что всякий квадрат чётен? нет: 15 нечётно и 15 × 15 = 225, что нечётно.
-the square of an odd number is odd: 7 × 7 = 49.
-is it true that the square of an odd number is odd? yes: no counterexample among 1..1000; example: 11 × 11 = 121.
-чему равен квадрат 12? 12 × 12 = 144.
-чему равен квадрат числа 16? 16 × 16 = 256.
-what is the square of 21? 21 × 21 = 441.
-квадрат 15 равен 225: 15 × 15 = 225.
-всякий квадрат чётен — ложь: 9 нечётно и 9 × 9 = 81, что нечётно.
-верно ли, что всякий квадрат чётен? нет: 17 нечётно и 17 × 17 = 289, что нечётно.
-the square of an even number is even: 8 × 8 = 64.
-is it true that the square of an even number is even? yes: no counterexample among 1..1000; example: 12 × 12 = 144.
-чему равен квадрат 13? 13 × 13 = 169.
-чему равен квадрат числа 17? 17 × 17 = 289.
-what is the square of 22? 22 × 22 = 484.
-квадрат 17 равен 289: 17 × 17 = 289.
-всякий квадрат чётен — ложь: 11 нечётно и 11 × 11 = 121, что нечётно.
-верно ли, что всякий квадрат чётен? нет: 19 нечётно и 19 × 19 = 361, что нечётно.
-the square of an odd number is odd: 9 × 9 = 81.
+есть ли целое число, квадрат которого равен 151? нет: 151 лежит между 12 × 12 = 144 и 13 × 13 = 169.
+is 225 a square number? yes: 225 = 15 × 15.
 квадрат числа — это число, умноженное на само себя.
 чему равен квадрат 14? 14 × 14 = 196.
 чему равен квадрат числа 18? 18 × 18 = 324.
@@ -3278,6 +3350,30 @@ the square of 11 is 121: 11 × 11 = 121.
 всякий квадрат чётен — ложь: 13 нечётно и 13 × 13 = 169, что нечётно.
 верно ли, что квадрат нечётного числа нечётен? да: контрпримера среди 1..1000 нет; пример: 5 × 5 = 25.
 the square of an even number is even: 10 × 10 = 100.
+is 126 a perfect square? no: 126 lies between 11 × 11 = 121 and 12 × 12 = 144.
+является ли 178 полным квадратом? нет: 178 лежит между 13 × 13 = 169 и 14 × 14 = 196.
+есть ли целое число, квадрат которого равен 238? нет: 238 лежит между 15 × 15 = 225 и 16 × 16 = 256.
+what is the square of 12? 12 × 12 = 144.
+what is the square of the number 16? 16 × 16 = 256.
+чему равен квадрат 20? 20 × 20 = 400.
+квадрат 14 равен 196: 14 × 14 = 196.
+every square is even is false: 9 is odd and 9 × 9 = 81, which is odd.
+is it true that every square is even? no: 17 is odd and 17 × 17 = 289, which is odd.
+квадрат нечётного числа нечётен: 7 × 7 = 49.
+верно ли, что квадрат нечётного числа нечётен? да: контрпримера среди 1..1000 нет; пример: 11 × 11 = 121.
+is 151 a square number? no: 151 lies between 12 × 12 = 144 and 13 × 13 = 169.
+is 207 a perfect square? no: 207 lies between 14 × 14 = 196 and 15 × 15 = 225.
+является ли 271 полным квадратом? нет: 271 лежит между 16 × 16 = 256 и 17 × 17 = 289.
+чему равен квадрат числа 13? 13 × 13 = 169.
+what is the square of 18? 18 × 18 = 324.
+what is the square of the number 22? 22 × 22 = 484.
+the square of 18 is 324: 18 × 18 = 324.
+верно ли, что всякий квадрат чётен? нет: 11 нечётно и 11 × 11 = 121, что нечётно.
+the square of an odd number is odd: 5 × 5 = 25.
+is it true that the square of an odd number is odd? yes: no counterexample among 1..1000; example: 9 × 9 = 81.
+является ли 121 полным квадратом? да: 121 = 11 × 11.
+есть ли целое число, квадрат которого равен 169? да: 169 = 13 × 13.
+is 238 a square number? no: 238 lies between 15 × 15 = 225 and 16 × 16 = 256.
 what is the square of the number 11? 11 × 11 = 121.
 чему равен квадрат 15? 15 × 15 = 225.
 чему равен квадрат числа 19? 19 × 19 = 361.
@@ -3286,6 +3382,30 @@ the square of 13 is 169: 13 × 13 = 169.
 всякий квадрат чётен — ложь: 15 нечётно и 15 × 15 = 225, что нечётно.
 верно ли, что квадрат чётного числа чётен? да: контрпримера среди 1..1000 нет; пример: 6 × 6 = 36.
 the square of an odd number is odd: 11 × 11 = 121.
+is 144 a perfect square? yes: 144 = 12 × 12.
+является ли 196 полным квадратом? да: 196 = 14 × 14.
+есть ли целое число, квадрат которого равен 256? да: 256 = 16 × 16.
+what is the square of 13? 13 × 13 = 169.
+what is the square of the number 17? 17 × 17 = 289.
+чему равен квадрат 21? 21 × 21 = 441.
+квадрат 16 равен 256: 16 × 16 = 256.
+every square is even is false: 11 is odd and 11 × 11 = 121, which is odd.
+is it true that every square is even? no: 19 is odd and 19 × 19 = 361, which is odd.
+квадрат чётного числа чётен: 8 × 8 = 64.
+верно ли, что квадрат чётного числа чётен? да: контрпримера среди 1..1000 нет; пример: 12 × 12 = 144.
+is 169 a square number? yes: 169 = 13 × 13.
+is 225 a perfect square? yes: 225 = 15 × 15.
+what is the square of a number? the square of a number is the number multiplied by itself.
+чему равен квадрат числа 14? 14 × 14 = 196.
+what is the square of 19? 19 × 19 = 361.
+квадрат 11 равен 121: 11 × 11 = 121.
+the square of 20 is 400: 20 × 20 = 400.
+верно ли, что всякий квадрат чётен? нет: 13 нечётно и 13 × 13 = 169, что нечётно.
+the square of an even number is even: 6 × 6 = 36.
+is it true that the square of an even number is even? yes: no counterexample among 1..1000; example: 10 × 10 = 100.
+является ли 126 полным квадратом? нет: 126 лежит между 11 × 11 = 121 и 12 × 12 = 144.
+есть ли целое число, квадрат которого равен 178? нет: 178 лежит между 13 × 13 = 169 и 14 × 14 = 196.
+is 256 a square number? yes: 256 = 16 × 16.
 what is the square of the number 12? 12 × 12 = 144.
 чему равен квадрат 16? 16 × 16 = 256.
 чему равен квадрат числа 20? 20 × 20 = 400.
@@ -3294,6 +3414,30 @@ is it true that every square is even? no: 9 is odd and 9 × 9 = 81, which is odd
 всякий квадрат чётен — ложь: 17 нечётно и 17 × 17 = 289, что нечётно.
 верно ли, что квадрат нечётного числа нечётен? да: контрпримера среди 1..1000 нет; пример: 7 × 7 = 49.
 the square of an even number is even: 12 × 12 = 144.
+is 151 a perfect square? no: 151 lies between 12 × 12 = 144 and 13 × 13 = 169.
+является ли 207 полным квадратом? нет: 207 лежит между 14 × 14 = 196 и 15 × 15 = 225.
+есть ли целое число, квадрат которого равен 271? нет: 271 лежит между 16 × 16 = 256 и 17 × 17 = 289.
+what is the square of 14? 14 × 14 = 196.
+what is the square of the number 18? 18 × 18 = 324.
+чему равен квадрат 22? 22 × 22 = 484.
+квадрат 18 равен 324: 18 × 18 = 324.
+every square is even is false: 13 is odd and 13 × 13 = 169, which is odd.
+is it true that the square of an odd number is odd? yes: no counterexample among 1..1000; example: 5 × 5 = 25.
+квадрат нечётного числа нечётен: 9 × 9 = 81.
+есть ли целое число, квадрат которого равен 121? да: 121 = 11 × 11.
+is 178 a square number? no: 178 lies between 13 × 13 = 169 and 14 × 14 = 196.
+is 238 a perfect square? no: 238 lies between 15 × 15 = 225 and 16 × 16 = 256.
+чему равен квадрат 11? 11 × 11 = 121.
+чему равен квадрат числа 15? 15 × 15 = 225.
+what is the square of 20? 20 × 20 = 400.
+квадрат 13 равен 169: 13 × 13 = 169.
+the square of 22 is 484: 22 × 22 = 484.
+верно ли, что всякий квадрат чётен? нет: 15 нечётно и 15 × 15 = 225, что нечётно.
+the square of an odd number is odd: 7 × 7 = 49.
+is it true that the square of an odd number is odd? yes: no counterexample among 1..1000; example: 11 × 11 = 121.
+является ли 144 полным квадратом? да: 144 = 12 × 12.
+есть ли целое число, квадрат которого равен 196? да: 196 = 14 × 14.
+is 271 a square number? no: 271 lies between 16 × 16 = 256 and 17 × 17 = 289.
 what is the square of the number 13? 13 × 13 = 169.
 чему равен квадрат 17? 17 × 17 = 289.
 чему равен квадрат числа 21? 21 × 21 = 441.
@@ -3301,6 +3445,30 @@ the square of 17 is 289: 17 × 17 = 289.
 is it true that every square is even? no: 11 is odd and 11 × 11 = 121, which is odd.
 всякий квадрат чётен — ложь: 19 нечётно и 19 × 19 = 361, что нечётно.
 верно ли, что квадрат чётного числа чётен? да: контрпримера среди 1..1000 нет; пример: 8 × 8 = 64.
+is 121 a square number? yes: 121 = 11 × 11.
+is 169 a perfect square? yes: 169 = 13 × 13.
+является ли 225 полным квадратом? да: 225 = 15 × 15.
+что такое квадрат числа? квадрат числа — это число, умноженное на само себя.
+what is the square of 15? 15 × 15 = 225.
+what is the square of the number 19? 19 × 19 = 361.
+the square of 12 is 144: 12 × 12 = 144.
+квадрат 20 равен 400: 20 × 20 = 400.
+every square is even is false: 15 is odd and 15 × 15 = 225, which is odd.
+is it true that the square of an even number is even? yes: no counterexample among 1..1000; example: 6 × 6 = 36.
+квадрат чётного числа чётен: 10 × 10 = 100.
+есть ли целое число, квадрат которого равен 126? нет: 126 лежит между 11 × 11 = 121 и 12 × 12 = 144.
+is 196 a square number? yes: 196 = 14 × 14.
+is 256 a perfect square? yes: 256 = 16 × 16.
+чему равен квадрат 12? 12 × 12 = 144.
+чему равен квадрат числа 16? 16 × 16 = 256.
+what is the square of 21? 21 × 21 = 441.
+квадрат 15 равен 225: 15 × 15 = 225.
+всякий квадрат чётен — ложь: 9 нечётно и 9 × 9 = 81, что нечётно.
+верно ли, что всякий квадрат чётен? нет: 17 нечётно и 17 × 17 = 289, что нечётно.
+the square of an even number is even: 8 × 8 = 64.
+is it true that the square of an even number is even? yes: no counterexample among 1..1000; example: 12 × 12 = 144.
+является ли 151 полным квадратом? нет: 151 лежит между 12 × 12 = 144 и 13 × 13 = 169.
+есть ли целое число, квадрат которого равен 207? нет: 207 лежит между 14 × 14 = 196 и 15 × 15 = 225.
 the square of a number is the number multiplied by itself.
 what is the square of the number 14? 14 × 14 = 196.
 чему равен квадрат 18? 18 × 18 = 324.
@@ -3309,6 +3477,30 @@ the square of 19 is 361: 19 × 19 = 361.
 is it true that every square is even? no: 13 is odd and 13 × 13 = 169, which is odd.
 квадрат нечётного числа нечётен: 5 × 5 = 25.
 верно ли, что квадрат нечётного числа нечётен? да: контрпримера среди 1..1000 нет; пример: 9 × 9 = 81.
+is 126 a square number? no: 126 lies between 11 × 11 = 121 and 12 × 12 = 144.
+is 178 a perfect square? no: 178 lies between 13 × 13 = 169 and 14 × 14 = 196.
+является ли 238 полным квадратом? нет: 238 лежит между 15 × 15 = 225 и 16 × 16 = 256.
+чему равен квадрат числа 11? 11 × 11 = 121.
+what is the square of 16? 16 × 16 = 256.
+what is the square of the number 20? 20 × 20 = 400.
+the square of 14 is 196: 14 × 14 = 196.
+квадрат 22 равен 484: 22 × 22 = 484.
+every square is even is false: 17 is odd and 17 × 17 = 289, which is odd.
+is it true that the square of an odd number is odd? yes: no counterexample among 1..1000; example: 7 × 7 = 49.
+квадрат нечётного числа нечётен: 11 × 11 = 121.
+есть ли целое число, квадрат которого равен 144? да: 144 = 12 × 12.
+is 207 a square number? no: 207 lies between 14 × 14 = 196 and 15 × 15 = 225.
+is 271 a perfect square? no: 271 lies between 16 × 16 = 256 and 17 × 17 = 289.
+чему равен квадрат 13? 13 × 13 = 169.
+чему равен квадрат числа 17? 17 × 17 = 289.
+what is the square of 22? 22 × 22 = 484.
+квадрат 17 равен 289: 17 × 17 = 289.
+всякий квадрат чётен — ложь: 11 нечётно и 11 × 11 = 121, что нечётно.
+верно ли, что всякий квадрат чётен? нет: 19 нечётно и 19 × 19 = 361, что нечётно.
+the square of an odd number is odd: 9 × 9 = 81.
+is 121 a perfect square? yes: 121 = 11 × 11.
+является ли 169 полным квадратом? да: 169 = 13 × 13.
+есть ли целое число, квадрат которого равен 225? да: 225 = 15 × 15.
 
 does 74 have exactly two divisors? no: 74 = 2 × 37.
 является ли 89 простым числом? да: делители 89 — 1 и 89.
@@ -4012,68 +4204,8 @@ what is the square of 16? 16 × 16 = 256.
 every square is even is false: 17 is odd and 17 × 17 = 289, which is odd.
 верно ли, что квадрат нечётного числа нечётен? да: контрпримера среди 1..1000 нет; пример: 7 × 7 = 49.
 квадрат чётного числа чётен: 12 × 12 = 144.
-what is the square of the number 16? 16 × 16 = 256.
-what is the square of 21? 21 × 21 = 441.
-чему равен квадрат числа 25? 25 × 25 = 625.
-the square of 23 is 529: 23 × 23 = 529.
-is it true that every square is even? no: 17 is odd and 17 × 17 = 289, which is odd.
-the square of an even number is even: 8 × 8 = 64.
-верно ли, что квадрат чётного числа чётен? да: контрпримера среди 1..1000 нет; пример: 12 × 12 = 144.
-чему равен квадрат 16? 16 × 16 = 256.
-what is the square of the number 21? 21 × 21 = 441.
-the square of 14 is 196: 14 × 14 = 196.
-квадрат 23 равен 529: 23 × 23 = 529.
-всякий квадрат чётен — ложь: 17 нечётно и 17 × 17 = 289, что нечётно.
-is it true that the square of an even number is even? yes: no counterexample among 1..1000; example: 8 × 8 = 64.
-the square of an odd number is odd: 13 × 13 = 169.
-чему равен квадрат числа 16? 16 × 16 = 256.
-чему равен квадрат 21? 21 × 21 = 441.
-квадрат 14 равен 196: 14 × 14 = 196.
-the square of 24 is 576: 24 × 24 = 576.
-верно ли, что всякий квадрат чётен? нет: 17 нечётно и 17 × 17 = 289, что нечётно.
-квадрат чётного числа чётен: 8 × 8 = 64.
-is it true that the square of an odd number is odd? yes: no counterexample among 1..1000; example: 13 × 13 = 169.
-what is the square of 17? 17 × 17 = 289.
-чему равен квадрат числа 21? 21 × 21 = 441.
-the square of 15 is 225: 15 × 15 = 225.
-квадрат 24 равен 576: 24 × 24 = 576.
-every square is even is false: 19 is odd and 19 × 19 = 361, which is odd.
-верно ли, что квадрат чётного числа чётен? да: контрпримера среди 1..1000 нет; пример: 8 × 8 = 64.
-квадрат нечётного числа нечётен: 13 × 13 = 169.
-what is the square of the number 17? 17 × 17 = 289.
-what is the square of 22? 22 × 22 = 484.
-квадрат 15 равен 225: 15 × 15 = 225.
-the square of 25 is 625: 25 × 25 = 625.
-is it true that every square is even? no: 19 is odd and 19 × 19 = 361, which is odd.
-the square of an odd number is odd: 9 × 9 = 81.
-верно ли, что квадрат нечётного числа нечётен? да: контрпримера среди 1..1000 нет; пример: 13 × 13 = 169.
-чему равен квадрат 17? 17 × 17 = 289.
-what is the square of the number 22? 22 × 22 = 484.
-the square of 16 is 256: 16 × 16 = 256.
-квадрат 25 равен 625: 25 × 25 = 625.
-всякий квадрат чётен — ложь: 19 нечётно и 19 × 19 = 361, что нечётно.
-is it true that the square of an odd number is odd? yes: no counterexample among 1..1000; example: 9 × 9 = 81.
-the square of a number is the number multiplied by itself.
-чему равен квадрат числа 17? 17 × 17 = 289.
-чему равен квадрат 22? 22 × 22 = 484.
-квадрат 16 равен 256: 16 × 16 = 256.
-every square is even is false: 11 is odd and 11 × 11 = 121, which is odd.
-верно ли, что всякий квадрат чётен? нет: 19 нечётно и 19 × 19 = 361, что нечётно.
-квадрат нечётного числа нечётен: 9 × 9 = 81.
-квадрат числа — это число, умноженное на само себя.
-what is the square of 18? 18 × 18 = 324.
-чему равен квадрат числа 22? 22 × 22 = 484.
-the square of 17 is 289: 17 × 17 = 289.
-is it true that every square is even? no: 11 is odd and 11 × 11 = 121, which is odd.
-every square is even is false: 3 is odd and 3 × 3 = 9, which is odd.
-верно ли, что квадрат нечётного числа нечётен? да: контрпримера среди 1..1000 нет; пример: 9 × 9 = 81.
-what is the square of a number? the square of a number is the number multiplied by itself.
-what is the square of the number 18? 18 × 18 = 324.
-what is the square of 23? 23 × 23 = 529.
-квадрат 17 равен 289: 17 × 17 = 289.
-всякий квадрат чётен — ложь: 11 нечётно и 11 × 11 = 121, что нечётно.
-is it true that every square is even? no: 3 is odd and 3 × 3 = 9, which is odd.
-the square of an even number is even: 10 × 10 = 100.
+is 233 a perfect square? no: 233 lies between 15 × 15 = 225 and 16 × 16 = 256.
+is 324 a square number? yes: 324 = 18 × 18.
 что такое квадрат числа? квадрат числа — это число, умноженное на само себя.
 чему равен квадрат 18? 18 × 18 = 324.
 what is the square of the number 23? 23 × 23 = 529.
@@ -4081,6 +4213,18 @@ the square of 18 is 324: 18 × 18 = 324.
 верно ли, что всякий квадрат чётен? нет: 11 нечётно и 11 × 11 = 121, что нечётно.
 всякий квадрат чётен — ложь: 3 нечётно и 3 × 3 = 9, что нечётно.
 is it true that the square of an even number is even? yes: no counterexample among 1..1000; example: 10 × 10 = 100.
+is 202 a square number? no: 202 lies between 14 × 14 = 196 and 15 × 15 = 225.
+есть ли целое число, квадрат которого равен 266? нет: 266 лежит между 16 × 16 = 256 и 17 × 17 = 289.
+является ли 361 полным квадратом? да: 361 = 19 × 19.
+what is the square of the number 16? 16 × 16 = 256.
+what is the square of 21? 21 × 21 = 441.
+чему равен квадрат числа 25? 25 × 25 = 625.
+the square of 23 is 529: 23 × 23 = 529.
+is it true that every square is even? no: 17 is odd and 17 × 17 = 289, which is odd.
+the square of an even number is even: 8 × 8 = 64.
+верно ли, что квадрат чётного числа чётен? да: контрпримера среди 1..1000 нет; пример: 12 × 12 = 144.
+является ли 233 полным квадратом? нет: 233 лежит между 15 × 15 = 225 и 16 × 16 = 256.
+is 324 a perfect square? yes: 324 = 18 × 18.
 what is the square of 14? 14 × 14 = 196.
 чему равен квадрат числа 18? 18 × 18 = 324.
 чему равен квадрат 23? 23 × 23 = 529.
@@ -4088,6 +4232,18 @@ what is the square of 14? 14 × 14 = 196.
 every square is even is false: 13 is odd and 13 × 13 = 169, which is odd.
 верно ли, что всякий квадрат чётен? нет: 3 нечётно и 3 × 3 = 9, что нечётно.
 квадрат чётного числа чётен: 10 × 10 = 100.
+is 202 a perfect square? no: 202 lies between 14 × 14 = 196 and 15 × 15 = 225.
+is 289 a square number? yes: 289 = 17 × 17.
+есть ли целое число, квадрат которого равен 361? да: 361 = 19 × 19.
+чему равен квадрат 16? 16 × 16 = 256.
+what is the square of the number 21? 21 × 21 = 441.
+the square of 14 is 196: 14 × 14 = 196.
+квадрат 23 равен 529: 23 × 23 = 529.
+всякий квадрат чётен — ложь: 17 нечётно и 17 × 17 = 289, что нечётно.
+is it true that the square of an even number is even? yes: no counterexample among 1..1000; example: 8 × 8 = 64.
+the square of an odd number is odd: 13 × 13 = 169.
+есть ли целое число, квадрат которого равен 233? нет: 233 лежит между 15 × 15 = 225 и 16 × 16 = 256.
+является ли 324 полным квадратом? да: 324 = 18 × 18.
 what is the square of the number 14? 14 × 14 = 196.
 what is the square of 19? 19 × 19 = 361.
 чему равен квадрат числа 23? 23 × 23 = 529.
@@ -4095,6 +4251,18 @@ the square of 19 is 361: 19 × 19 = 361.
 is it true that every square is even? no: 13 is odd and 13 × 13 = 169, which is odd.
 the square of an even number is even: 6 × 6 = 36.
 верно ли, что квадрат чётного числа чётен? да: контрпримера среди 1..1000 нет; пример: 10 × 10 = 100.
+является ли 202 полным квадратом? нет: 202 лежит между 14 × 14 = 196 и 15 × 15 = 225.
+is 289 a perfect square? yes: 289 = 17 × 17.
+is 377 a square number? no: 377 lies between 19 × 19 = 361 and 20 × 20 = 400.
+чему равен квадрат числа 16? 16 × 16 = 256.
+чему равен квадрат 21? 21 × 21 = 441.
+квадрат 14 равен 196: 14 × 14 = 196.
+the square of 24 is 576: 24 × 24 = 576.
+верно ли, что всякий квадрат чётен? нет: 17 нечётно и 17 × 17 = 289, что нечётно.
+квадрат чётного числа чётен: 8 × 8 = 64.
+is it true that the square of an odd number is odd? yes: no counterexample among 1..1000; example: 13 × 13 = 169.
+is 256 a square number? yes: 256 = 16 × 16.
+есть ли целое число, квадрат которого равен 324? да: 324 = 18 × 18.
 чему равен квадрат 14? 14 × 14 = 196.
 what is the square of the number 19? 19 × 19 = 361.
 what is the square of 24? 24 × 24 = 576.
@@ -4102,6 +4270,18 @@ what is the square of 24? 24 × 24 = 576.
 всякий квадрат чётен — ложь: 13 нечётно и 13 × 13 = 169, что нечётно.
 is it true that the square of an even number is even? yes: no counterexample among 1..1000; example: 6 × 6 = 36.
 the square of an odd number is odd: 11 × 11 = 121.
+есть ли целое число, квадрат которого равен 202? нет: 202 лежит между 14 × 14 = 196 и 15 × 15 = 225.
+является ли 289 полным квадратом? да: 289 = 17 × 17.
+is 377 a perfect square? no: 377 lies between 19 × 19 = 361 and 20 × 20 = 400.
+what is the square of 17? 17 × 17 = 289.
+чему равен квадрат числа 21? 21 × 21 = 441.
+the square of 15 is 225: 15 × 15 = 225.
+квадрат 24 равен 576: 24 × 24 = 576.
+every square is even is false: 19 is odd and 19 × 19 = 361, which is odd.
+верно ли, что квадрат чётного числа чётен? да: контрпримера среди 1..1000 нет; пример: 8 × 8 = 64.
+квадрат нечётного числа нечётен: 13 × 13 = 169.
+is 256 a perfect square? yes: 256 = 16 × 16.
+is 338 a square number? no: 338 lies between 18 × 18 = 324 and 19 × 19 = 361.
 чему равен квадрат числа 14? 14 × 14 = 196.
 чему равен квадрат 19? 19 × 19 = 361.
 what is the square of the number 24? 24 × 24 = 576.
@@ -4109,6 +4289,18 @@ the square of 20 is 400: 20 × 20 = 400.
 верно ли, что всякий квадрат чётен? нет: 13 нечётно и 13 × 13 = 169, что нечётно.
 квадрат чётного числа чётен: 6 × 6 = 36.
 is it true that the square of an odd number is odd? yes: no counterexample among 1..1000; example: 11 × 11 = 121.
+is 225 a square number? yes: 225 = 15 × 15.
+есть ли целое число, квадрат которого равен 289? да: 289 = 17 × 17.
+является ли 377 полным квадратом? нет: 377 лежит между 19 × 19 = 361 и 20 × 20 = 400.
+what is the square of the number 17? 17 × 17 = 289.
+what is the square of 22? 22 × 22 = 484.
+квадрат 15 равен 225: 15 × 15 = 225.
+the square of 25 is 625: 25 × 25 = 625.
+is it true that every square is even? no: 19 is odd and 19 × 19 = 361, which is odd.
+the square of an odd number is odd: 9 × 9 = 81.
+верно ли, что квадрат нечётного числа нечётен? да: контрпримера среди 1..1000 нет; пример: 13 × 13 = 169.
+является ли 256 полным квадратом? да: 256 = 16 × 16.
+is 338 a perfect square? no: 338 lies between 18 × 18 = 324 and 19 × 19 = 361.
 what is the square of 15? 15 × 15 = 225.
 чему равен квадрат числа 19? 19 × 19 = 361.
 чему равен квадрат 24? 24 × 24 = 576.
@@ -4116,6 +4308,18 @@ what is the square of 15? 15 × 15 = 225.
 every square is even is false: 15 is odd and 15 × 15 = 225, which is odd.
 верно ли, что квадрат чётного числа чётен? да: контрпримера среди 1..1000 нет; пример: 6 × 6 = 36.
 квадрат нечётного числа нечётен: 11 × 11 = 121.
+is 225 a perfect square? yes: 225 = 15 × 15.
+is 301 a square number? no: 301 lies between 17 × 17 = 289 and 18 × 18 = 324.
+есть ли целое число, квадрат которого равен 377? нет: 377 лежит между 19 × 19 = 361 и 20 × 20 = 400.
+чему равен квадрат 17? 17 × 17 = 289.
+what is the square of the number 22? 22 × 22 = 484.
+the square of 16 is 256: 16 × 16 = 256.
+квадрат 25 равен 625: 25 × 25 = 625.
+всякий квадрат чётен — ложь: 19 нечётно и 19 × 19 = 361, что нечётно.
+is it true that the square of an odd number is odd? yes: no counterexample among 1..1000; example: 9 × 9 = 81.
+is 196 a square number? yes: 196 = 14 × 14.
+есть ли целое число, квадрат которого равен 256? да: 256 = 16 × 16.
+является ли 338 полным квадратом? нет: 338 лежит между 18 × 18 = 324 и 19 × 19 = 361.
 what is the square of the number 15? 15 × 15 = 225.
 what is the square of 20? 20 × 20 = 400.
 чему равен квадрат числа 24? 24 × 24 = 576.
@@ -4123,6 +4327,18 @@ the square of 21 is 441: 21 × 21 = 441.
 is it true that every square is even? no: 15 is odd and 15 × 15 = 225, which is odd.
 the square of an odd number is odd: 7 × 7 = 49.
 верно ли, что квадрат нечётного числа нечётен? да: контрпримера среди 1..1000 нет; пример: 11 × 11 = 121.
+является ли 225 полным квадратом? да: 225 = 15 × 15.
+is 301 a perfect square? no: 301 lies between 17 × 17 = 289 and 18 × 18 = 324.
+the square of a number is the number multiplied by itself.
+чему равен квадрат числа 17? 17 × 17 = 289.
+чему равен квадрат 22? 22 × 22 = 484.
+квадрат 16 равен 256: 16 × 16 = 256.
+every square is even is false: 11 is odd and 11 × 11 = 121, which is odd.
+верно ли, что всякий квадрат чётен? нет: 19 нечётно и 19 × 19 = 361, что нечётно.
+квадрат нечётного числа нечётен: 9 × 9 = 81.
+is 196 a perfect square? yes: 196 = 14 × 14.
+is 266 a square number? no: 266 lies between 16 × 16 = 256 and 17 × 17 = 289.
+есть ли целое число, квадрат которого равен 338? нет: 338 лежит между 18 × 18 = 324 и 19 × 19 = 361.
 чему равен квадрат 15? 15 × 15 = 225.
 what is the square of the number 20? 20 × 20 = 400.
 what is the square of 25? 25 × 25 = 625.
@@ -4130,6 +4346,18 @@ what is the square of 25? 25 × 25 = 625.
 всякий квадрат чётен — ложь: 15 нечётно и 15 × 15 = 225, что нечётно.
 is it true that the square of an odd number is odd? yes: no counterexample among 1..1000; example: 7 × 7 = 49.
 the square of an even number is even: 12 × 12 = 144.
+есть ли целое число, квадрат которого равен 225? да: 225 = 15 × 15.
+является ли 301 полным квадратом? нет: 301 лежит между 17 × 17 = 289 и 18 × 18 = 324.
+квадрат числа — это число, умноженное на само себя.
+what is the square of 18? 18 × 18 = 324.
+чему равен квадрат числа 22? 22 × 22 = 484.
+the square of 17 is 289: 17 × 17 = 289.
+is it true that every square is even? no: 11 is odd and 11 × 11 = 121, which is odd.
+every square is even is false: 3 is odd and 3 × 3 = 9, which is odd.
+верно ли, что квадрат нечётного числа нечётен? да: контрпримера среди 1..1000 нет; пример: 9 × 9 = 81.
+является ли 196 полным квадратом? да: 196 = 14 × 14.
+is 266 a perfect square? no: 266 lies between 16 × 16 = 256 and 17 × 17 = 289.
+is 361 a square number? yes: 361 = 19 × 19.
 чему равен квадрат числа 15? 15 × 15 = 225.
 чему равен квадрат 20? 20 × 20 = 400.
 what is the square of the number 25? 25 × 25 = 625.
@@ -4137,3 +4365,15 @@ the square of 22 is 484: 22 × 22 = 484.
 верно ли, что всякий квадрат чётен? нет: 15 нечётно и 15 × 15 = 225, что нечётно.
 квадрат нечётного числа нечётен: 7 × 7 = 49.
 is it true that the square of an even number is even? yes: no counterexample among 1..1000; example: 12 × 12 = 144.
+is 233 a square number? no: 233 lies between 15 × 15 = 225 and 16 × 16 = 256.
+есть ли целое число, квадрат которого равен 301? нет: 301 лежит между 17 × 17 = 289 и 18 × 18 = 324.
+what is the square of a number? the square of a number is the number multiplied by itself.
+what is the square of the number 18? 18 × 18 = 324.
+what is the square of 23? 23 × 23 = 529.
+квадрат 17 равен 289: 17 × 17 = 289.
+всякий квадрат чётен — ложь: 11 нечётно и 11 × 11 = 121, что нечётно.
+is it true that every square is even? no: 3 is odd and 3 × 3 = 9, which is odd.
+the square of an even number is even: 10 × 10 = 100.
+есть ли целое число, квадрат которого равен 196? да: 196 = 14 × 14.
+является ли 266 полным квадратом? нет: 266 лежит между 16 × 16 = 256 и 17 × 17 = 289.
+is 361 a perfect square? yes: 361 = 19 × 19.
