@@ -31,6 +31,7 @@ sys.path.insert(0, str(КОРЕНЬ / "scripts"))
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
 import discourse  # noqa: E402
 import families  # noqa: E402
+import universals  # noqa: E402
 from genesis import Unreadable, worlds  # noqa: E402
 
 # РУБЕЖ-ДОЛГА: ЛОЖНЫХ_РУБЕЖ = 0
@@ -291,22 +292,11 @@ def _квадрат_повеств(м):
 # ВЫВОДИТСЯ из её утверждения тем же законом, что и в генераторе
 # («HEAD is false: TAIL» → «is it true that HEAD? no: TAIL»), а не пишется
 # второй раз.
-ЛОЖЬ_EN, ЛОЖЬ_RU = " is false: ", " — ложь: "
+ЯЗЫКИ_МИРА = ("en", "ru")
 
 
 def вопрос_универсалии(образец):
-    """Образец вопроса «верно ли, что …?» из образца утверждения универсалии."""
-    тело = образец[1:-1]                       # без ^ и $
-    if ЛОЖЬ_EN in тело:
-        голова, хвост = тело.split(ЛОЖЬ_EN, 1)
-        return rf"^is it true that {голова}\? no: {хвост}$"
-    if ЛОЖЬ_RU in тело:
-        голова, хвост = тело.split(ЛОЖЬ_RU, 1)
-        return rf"^верно ли, что {голова}\? нет: {хвост}$"
-    голова, хвост = тело.split(": ", 1)
-    if families.язык_формы(голова) == "ru":
-        return rf"^верно ли, что {голова}\? да: {хвост}$"
-    return rf"^is it true that {голова}\? yes: {хвост}$"
+    return universals.вопрос_образца(образец, ЯЗЫКИ_МИРА)
 
 
 def _универсалии(*формы):

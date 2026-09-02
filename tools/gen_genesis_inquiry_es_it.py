@@ -64,6 +64,7 @@ import sys
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
 from layer import emit_grouped  # noqa: E402
+import universals  # noqa: E402
 
 ЦЕЛЬ = "datasets/genesis_inquiry_es_it.txt"
 
@@ -196,6 +197,12 @@ def исп_простота(шаг):
     return вон
 
 
+# A UNIVERSAL IS ASKED BY ITS OWN «IS IT TRUE THAT» (tools/universals.py):
+# the question of every counterexample and generalization is derived from
+# its statement by the one law of the house, in both languages of the world.
+ЯЗЫКИ_МИРА = ('es', 'it')
+
+
 def контр_простота(шаг):
     """Свидетель назван И СЛОВОМ, И ЦИФРОЙ — две поверхности числа."""
     вон = []
@@ -220,7 +227,7 @@ def контр_простота(шаг):
         вон.append(f"tutti i numeri dispari sono primi è falso: "
                    f"{по_итальянски(n)} è dispari e {n} = {д} × "
                    f"{n // д}.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 def общ_простота(шаг):
@@ -232,7 +239,7 @@ def общ_простота(шаг):
                    f"primos: {n} = {ряд}.")
         вон.append(f"ogni numero intero maggiore di 1 è un prodotto di "
                    f"primi: {n} = {ряд}.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 # --------------------------------------------------------- ДЕЛИМОСТЬ
@@ -281,7 +288,7 @@ def контр_делимость(шаг):
                    f"falso: {n} es par y {n} = 4 × {q} + {r}.")
         вон.append(f"tutti i numeri pari sono divisibili per 4 è "
                    f"falso: {n} è pari e {n} = 4 × {q} + {r}.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 def общ_делимость(шаг):
@@ -295,7 +302,7 @@ def общ_делимость(шаг):
         вон.append(f"un numero è divisibile per 3 quando lo è la somma "
                    f"delle sue cifre: la somma delle cifre di {n} è "
                    f"{с}, e {с} = 3 × {с // 3}.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 # ---------------------------------------------------- СУММА НЕЧЁТНЫХ
@@ -340,7 +347,7 @@ def контр_нечётные(шаг):
         вон.append(f"la somma dei primi k numeri dispari è 2 × k è "
                    f"falso: con k = {k} la somma è {k * k} e 2 × {k} = "
                    f"{2 * k}.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 def общ_нечётные(шаг):
@@ -351,7 +358,7 @@ def общ_нечётные(шаг):
                    f"k × k: con k = {k} es {k} × {k} = {k * k}.")
         вон.append(f"la somma dei primi k numeri dispari è k × k: con "
                    f"k = {k} è {k} × {k} = {k * k}.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 # --------------------------------------------------- УСЛОВНЫЙ ВЫВОД
@@ -401,7 +408,7 @@ def контр_условное(шаг):
                    f"{e} es par y {e} + {m} = {s}, que es impar.")
         вон.append(f"se n è pari allora n + {m} è pari è falso: {e} è "
                    f"pari e {e} + {m} = {s}, che è dispari.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 def общ_условное(шаг):
@@ -416,7 +423,7 @@ def общ_условное(шаг):
         вон.append(f"se n è pari allora n + m è pari esattamente "
                    f"quando m è pari: {m} è pari e {e} + {m} = {s}, "
                    f"che è pari.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 # ---------------------------------------------------- ИНЪЕКТИВНОСТЬ
@@ -458,7 +465,7 @@ def контр_инъекция(шаг):
                    f"f(x) = x × 0 lleva {a} y {b} a 0.")
         вон.append(f"tutte le funzioni sono iniettive è falso: "
                    f"f(x) = x × 0 porta {a} e {b} a 0.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 def общ_инъекция(шаг):
@@ -471,7 +478,7 @@ def общ_инъекция(шаг):
         вон.append(f"f(x) = x × k è iniettiva esattamente quando k non "
                    f"è 0: con k = {k} gli ingressi 1 e 2 danno {k} e "
                    f"{2 * k}.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 # ----------------------------------------------------------- КВАДРАТ
@@ -505,7 +512,7 @@ def контр_квадрат(шаг):
                    f"impar y {n} × {n} = {n * n}, que es impar.")
         вон.append(f"tutti i quadrati sono pari è falso: {n} è dispari "
                    f"e {n} × {n} = {n * n}, che è dispari.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 def общ_квадрат(шаг):
@@ -519,7 +526,7 @@ def общ_квадрат(шаг):
                    f"= {n * n}.")
         вон.append(f"il quadrato di un numero {it} è {it}: {n} × {n} = "
                    f"{n * n}.")
-    return вон
+    return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
 # -------------------------------------------------------------- РОДЫ

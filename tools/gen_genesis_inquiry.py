@@ -121,37 +121,14 @@ def исп_простота(шаг):
     return вон
 
 
-# A UNIVERSAL IS ASKED BY ITS OWN «IS IT TRUE THAT» (М-146: every frame has a
-# question surface per language; М-147: the verdict word opens the answer,
-# both polarities side by side — the false universal answers «no» with its
-# counterexample, the true one «yes» with its instance). The question is
-# derived from the statement by one law, never written a second time.
-ЛОЖЬ_EN, ЛОЖЬ_RU = " is false: ", " — ложь: "
-
-
-def вопрос_универсалии(строка):
-    """«HEAD is false: TAIL.» → «is it true that HEAD? no: TAIL.»;
-    «HEAD: TAIL.» → «is it true that HEAD? yes: TAIL.» (and the Russian twin)."""
-    if ЛОЖЬ_EN in строка:
-        голова, хвост = строка.split(ЛОЖЬ_EN, 1)
-        return f"is it true that {голова}? no: {хвост}"
-    if ЛОЖЬ_RU in строка:
-        голова, хвост = строка.split(ЛОЖЬ_RU, 1)
-        return f"верно ли, что {голова}? нет: {хвост}"
-    голова, хвост = строка.split(": ", 1)
-    if re.search(r"[а-яё]", голова):
-        return f"верно ли, что {голова}? да: {хвост}"
-    return f"is it true that {голова}? yes: {хвост}"
+# A UNIVERSAL IS ASKED BY ITS OWN «IS IT TRUE THAT» — the law lives in
+# tools/universals.py, one house for the generators and the courts of ten
+# languages; here only the languages of this world are named.
+ЯЗЫКИ_МИРА = ("en", "ru")
 
 
 def с_вопросами(строки):
-    """The statements of a universal, each followed by its question."""
-    вон = []
-    for с in строки:
-        вон.append(с)
-        вон.append(вопрос_универсалии(с))
-    return вон
-
+    return universals.с_вопросами(строки, ЯЗЫКИ_МИРА)
 
 def контр_простота(шаг):
     вон = []
@@ -552,6 +529,7 @@ def повеств_квадрат(шаг):
 # вердикт, свидетель со связкой и выводом, закон рода — тот же счёт, что у
 # вердикта, развёрнутый в речь; «почему»-пара — второй зачин той же формы.
 import discourse  # noqa: E402
+import universals  # noqa: E402
 
 ВЫВОД_ПРОСТОТА = {
     ("en", True): "{n} has no divisor between 1 and {n}",

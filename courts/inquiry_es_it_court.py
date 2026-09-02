@@ -52,6 +52,7 @@ import sys
 sys.path.insert(0, str(КОРЕНЬ / "scripts"))
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
 from genesis import Unreadable, worlds  # noqa: E402
+import universals  # noqa: E402
 
 # РУБЕЖ-ДОЛГА: ЛОЖНЫХ_РУБЕЖ = 0
 ЛОЖНЫХ_РУБЕЖ = 0
@@ -469,7 +470,11 @@ def _общ_квадрат_it(м):
     (r"^il quadrato di un numero (pari|dispari) è (pari|dispari): "
      rf"{Ч} × {Ч} = {Ч}\.$", _общ_квадрат_it),
 )
-ПРАВИЛА = tuple((re.compile(о), п) for о, п in ОБРАЗЦЫ)
+# УНИВЕРСАЛИЯ СПРАШИВАЕТСЯ СВОИМ «ВЕРНО ЛИ, ЧТО» (tools/universals.py): образец
+# контрпримера или обобщения сварен с выведенным из него вопросом в ОДНО
+# семейство (М-146); остальные образцы — как есть.
+ЯЗЫКИ_МИРА = ('es', 'it')
+ПРАВИЛА = universals.правила(ОБРАЗЦЫ, ЯЗЫКИ_МИРА)
 
 
 def судить(строка):

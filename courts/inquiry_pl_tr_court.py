@@ -57,6 +57,7 @@ import sys
 sys.path.insert(0, str(КОРЕНЬ / "scripts"))
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
 from genesis import Unreadable, worlds  # noqa: E402
+import universals  # noqa: E402
 
 # РУБЕЖ-ДОЛГА: ЛОЖНЫХ_РУБЕЖ = 0
 ЛОЖНЫХ_РУБЕЖ = 0
@@ -536,7 +537,11 @@ def _общ_квадрат_tr(м):
     (r"^(çift|tek) sayının karesi (çifttir|tektir): "
      rf"{Ч} × {Ч} = {Ч}\.$", _общ_квадрат_tr),
 )
-ПРАВИЛА = tuple((re.compile(о), п) for о, п in ОБРАЗЦЫ)
+# УНИВЕРСАЛИЯ СПРАШИВАЕТСЯ СВОИМ «ВЕРНО ЛИ, ЧТО» (tools/universals.py): образец
+# контрпримера или обобщения сварен с выведенным из него вопросом в ОДНО
+# семейство (М-146); остальные образцы — как есть.
+ЯЗЫКИ_МИРА = ('pl', 'tr')
+ПРАВИЛА = universals.правила(ОБРАЗЦЫ, ЯЗЫКИ_МИРА)
 
 
 def судить(строка):
