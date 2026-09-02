@@ -41,7 +41,7 @@ from genesis import Unreadable, worlds  # noqa: E402
     r"|(\d+) equally likely outcomes: entropy (\d+) bits?)\.$")
 СЛОВО_БИТ = re.compile(
     r"^(?:слово из (\d+) \S+ алфавита в (\d+) \S+ стоит (\d+) \S+"
-    r"|a word of (\d+) signs over an alphabet of (\d+) signs "
+    r"|a word of (\d+) signs? over an alphabet of (\d+) signs? "
     r"costs (\d+) bits)\.$")
 АВТОМАТ = re.compile(
     r"^(?:автомат чётности: вход ([01 ]+); состояние после — "
@@ -68,7 +68,7 @@ from genesis import Unreadable, worlds  # noqa: E402
 # ОТКАЗ ЕСТЬ ТАКОЕ ЖЕ УТВЕРЖДЕНИЕ: «целого нет» истинно ровно тогда,
 # когда размер алфавита и вправду не степень двойки. Суд считает сам.
 ОТКАЗ_АЛФАВИТА = re.compile(
-    r"^(?:no whole answer for (\d+) signs: (\d+) is not a power of two"
+    r"^(?:no whole answer for (\d+) signs?: (\d+) is not a power of two"
     r"|целого ответа нет: (\d+) знак\S* — это не степень двойки)\.$")
 ТИП = re.compile(
     r"^(?:тип значения (\d+) — целое; тип значения (\d+) ÷ (\d+) — "

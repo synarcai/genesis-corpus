@@ -32,7 +32,8 @@ import pathlib
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import rugram  # noqa: E402
-from layer import emit_grouped  # noqa: E402
+from layer import emit_grouped
+from plural import by_count  # noqa: E402
 
 
 # ИСКОМОЕ ОБЪЯВЛЯЕТ СВОЙ ВОПРОС ОДИН РАЗ, и вопрос берёт ТУ ЖЕ фразу
@@ -72,7 +73,7 @@ def отказ_алфавита(шаг):
         if степень_двойки(n):
             continue
         вон.append(f"how many bits does a sign of an alphabet of {n} "
-                   f"signs cost? no whole answer for {n} signs: {n} is "
+                   f"signs cost? no whole answer for {n} {by_count(n, 'signs')}: {n} is "
                    f"not a power of two.")
         # ЧИСЛО СТОИТ ТАМ, ГДЕ СЧЁТНАЯ ФОРМА ПРАВА, — при числе, а не
         # после предлога: «для 3 знака» было бы неверно (предлог требует
@@ -106,8 +107,10 @@ def энтропия(шаг):
         сл_ru = (f"слово из {длина} {rugram.форма('знак', длина)} "
                  f"алфавита в {алфавит} "
                  f"{rugram.форма('знак', алфавит)}")
-        сл_en = (f"a word of {длина} signs over an alphabet of "
-                 f"{алфавит} signs")
+        # СЧЁТ ПРАВИТ ФОРМОЙ: «a word of 1 sign», «of 8 signs» — суд
+        # английского числа нашёл здесь «1 signs» (20 строк).
+        сл_en = (f"a word of {длина} {by_count(длина, 'signs')} over an "
+                 f"alphabet of {алфавит} {by_count(алфавит, 'signs')}")
         утв_сл_ru = f"{сл_ru} стоит {цена} {rugram.форма('бит', цена)}."
         утв_сл_en = f"{сл_en} costs {цена} bits."
         вон.append(утв_сл_ru)
