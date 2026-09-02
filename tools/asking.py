@@ -192,6 +192,29 @@ def _зачины_пакетов():
 
 
 ЗАЧИНЫ = frozenset(ЗАЧИНЫ | _зачины_пакетов())
+
+
+def _концевые_пакетов():
+    """The question words of the packs that put them AT THE END (Turkish
+    «kaç fincan koydu?», «kim koydu?»): such a question is recognised by the
+    word standing anywhere in it, not by its first word."""
+    вон = set()
+    for путь in sorted(ПАКЕТЫ.glob("*.json")):
+        try:
+            пакет = json.loads(путь.read_text(encoding="utf-8"))
+        except ValueError:
+            continue
+        слова = пакет.get("ask_words") or {}
+        if _в_конце(слова):
+            вон.update(w.lower() for w in слова.get("words", ()) if w != "¬")
+    return вон
+
+
+def _в_конце(слова):
+    return (слова.get("position") == "end") if isinstance(слова, dict) else False
+
+
+КОНЦЕВЫЕ = frozenset(_концевые_пакетов())
 # ВОПРОСНОЕ СЛОВО СТОИТ ТАМ, ГДЕ ЕГО СТАВИТ ЯЗЫК. Турецкий («bir sayının
 # karesi nedir?»), суахили («ndizi ni nini?»), японский ставят его В
 # КОНЦЕ; зачин первого слова для них ложен по устройству. Дом судит
@@ -252,7 +275,14 @@ def зачин_объявлен(вопрос):
     начала = [н for н in начала if н and СЛОВО_ЗАЧИНА.fullmatch(н)]
     if not начала:
         return None  # только числа, формулы, знаки — предмет, не зачин
-    return any(н in ЗАЧИНЫ for н in начала)
+    if any(н in ЗАЧИНЫ for н in начала):
+        return True
+    # ВОПРОСНОЕ СЛОВО СТОИТ ТАМ, ГДЕ ЕГО СТАВИТ ЯЗЫК: пакет с position «end»
+    # объявляет слова, которые стоят внутри вопроса перед глаголом («Ayşe
+    # pazartesi rafa kaç fincan koydu?»); такой вопрос узнаётся словом в
+    # любом месте, а не первым.
+    слова_вопроса = {w.strip(_КРАЙ).lower() for w in вопрос.split()}
+    return bool(слова_вопроса & КОНЦЕВЫЕ)
 
 
 def вопросное_слово_есть(вопрос):

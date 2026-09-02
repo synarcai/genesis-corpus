@@ -456,6 +456,7 @@
       "jakie",
       "gdzie",
       "kiedy",
+      "kto",
       "¬"
     ],
     "position": "front"
@@ -482,5 +483,41 @@
       "oblicz",
       "policz"
     ]
+  },
+  "person_names": [
+    "Anna",
+    "Jan",
+    "Maria",
+    "Piotr",
+    "Zofia",
+    "Paweł",
+    "Ewa",
+    "Marek"
+  ],
+  "person_forms": {
+    "Anna": {
+      "gender": "f"
+    },
+    "Jan": {
+      "gender": "m"
+    },
+    "Maria": {
+      "gender": "f"
+    },
+    "Piotr": {
+      "gender": "m"
+    },
+    "Zofia": {
+      "gender": "f"
+    },
+    "Paweł": {
+      "gender": "m"
+    },
+    "Ewa": {
+      "gender": "f"
+    },
+    "Marek": {
+      "gender": "m"
+    }
   }
 }
