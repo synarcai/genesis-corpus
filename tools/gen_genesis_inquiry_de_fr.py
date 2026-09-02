@@ -67,6 +67,7 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from layer import emit_grouped  # noqa: E402
 import universals  # noqa: E402
 import parity  # noqa: E402
+import coprime  # noqa: E402
 import paraphrase  # noqa: E402
 
 ЦЕЛЬ = "datasets/genesis_inquiry_de_fr.txt"
@@ -518,6 +519,9 @@ def pass_groups(шаг):
     # ЧЁТНОСТЬ КАК ВОПРОС ВЫБОРА (tools/parity.py, holon 03.09): предикат
     # «чётно/нечётно» рынку универсалий на языках мира.
     вон.append(parity.показы(ЯЗЫКИ_МИРА, шаг))
+    # ВЗАИМНАЯ ПРОСТОТА (tools/coprime.py, holon 04.09): предикат исполнителю
+    # coprime и связка «sind/zijn» рынку копул.
+    вон.append(coprime.показы(ЯЗЫКИ_МИРА, шаг))
     return вон
 
 

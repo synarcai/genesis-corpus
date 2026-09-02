@@ -389,6 +389,31 @@ il quadrato di un numero pari è pari: 4 × 4 = 16.
 18 è pari o dispari? pari: 18 = 2 × 9.
 ¿es 14 par o impar? par: 14 = 2 × 7.
 
+sono 8 e 15 coprimi? sì: il mcd di 8 e 15 è 1.
+¿son 9 y 16 primos entre sí? sí: el mcd de 9 y 16 es 1.
+sono 14 e 21 coprimi? no: il mcd di 14 e 21 è 7.
+¿son 6 y 9 primos entre sí? no: el mcd de 6 y 9 es 3.
+sono 7 e 12 coprimi? sì: il mcd di 7 e 12 è 1.
+¿son 5 y 14 primos entre sí? sí: el mcd de 5 y 14 es 1.
+sono 15 e 25 coprimi? no: il mcd di 15 e 25 è 5.
+¿son 6 y 8 primos entre sí? no: el mcd de 6 y 8 es 2.
+sono 9 e 16 coprimi? sì: il mcd di 9 e 16 è 1.
+¿son 11 y 20 primos entre sí? sí: el mcd de 11 y 20 es 1.
+sono 6 e 9 coprimi? no: il mcd di 6 e 9 è 3.
+¿son 10 y 15 primos entre sí? no: el mcd de 10 y 15 es 5.
+sono 5 e 14 coprimi? sì: il mcd di 5 e 14 è 1.
+¿son 4 y 9 primos entre sí? sí: el mcd de 4 y 9 es 1.
+sono 6 e 8 coprimi? no: il mcd di 6 e 8 è 2.
+¿son 12 y 18 primos entre sí? no: el mcd de 12 y 18 es 6.
+sono 11 e 20 coprimi? sì: il mcd di 11 e 20 è 1.
+¿son 8 y 15 primos entre sí? sí: el mcd de 8 y 15 es 1.
+sono 10 e 15 coprimi? no: il mcd di 10 e 15 è 5.
+¿son 14 y 21 primos entre sí? no: el mcd de 14 y 21 es 7.
+sono 4 e 9 coprimi? sì: il mcd di 4 e 9 è 1.
+¿son 7 y 12 primos entre sí? sí: el mcd de 7 y 12 es 1.
+sono 12 e 18 coprimi? no: il mcd di 12 e 18 è 6.
+¿son 15 y 25 primos entre sí? no: el mcd de 15 y 25 es 5.
+
 ¿qué es un número primo? un número primo es un número entero mayor que 1 divisible solo por 1 y por sí mismo.
 ¿es 51 divisible solo por 1 y por sí mismo? no: 51 = 3 × 17.
 ¿es 57 un número primo? no: 57 = 3 × 19.
@@ -789,6 +814,31 @@ todos los cuadrados son pares es falso: 11 es impar y 11 × 11 = 121, que es imp
 13 è pari o dispari? dispari: 13 = 2 × 6 + 1.
 ¿es 18 par o impar? par: 18 = 2 × 9.
 35 è pari o dispari? dispari: 35 = 2 × 17 + 1.
+
+¿son 5 y 14 primos entre sí? sí: el mcd de 5 y 14 es 1.
+sono 16 e 24 coprimi? no: il mcd di 16 e 24 è 8.
+¿son 12 y 18 primos entre sí? no: el mcd de 12 y 18 es 6.
+sono 13 e 21 coprimi? sì: il mcd di 13 e 21 è 1.
+¿son 21 y 32 primos entre sí? sí: el mcd de 21 y 32 es 1.
+sono 15 e 25 coprimi? no: il mcd di 15 e 25 è 5.
+¿son 20 y 35 primos entre sí? no: el mcd de 20 y 35 es 5.
+sono 11 e 20 coprimi? sì: il mcd di 11 e 20 è 1.
+¿son 19 y 22 primos entre sí? sí: el mcd de 19 y 22 es 1.
+sono 14 e 21 coprimi? no: il mcd di 14 e 21 è 7.
+¿son 18 y 27 primos entre sí? no: el mcd de 18 y 27 es 9.
+sono 5 e 14 coprimi? sì: il mcd di 5 e 14 è 1.
+¿son 17 y 30 primos entre sí? sí: el mcd de 17 y 30 es 1.
+sono 12 e 18 coprimi? no: il mcd di 12 e 18 è 6.
+¿son 16 y 24 primos entre sí? no: el mcd de 16 y 24 es 8.
+sono 21 e 32 coprimi? sì: il mcd di 21 e 32 è 1.
+¿son 13 y 21 primos entre sí? sí: el mcd de 13 y 21 es 1.
+sono 20 e 35 coprimi? no: il mcd di 20 e 35 è 5.
+¿son 15 y 25 primos entre sí? no: el mcd de 15 y 25 es 5.
+sono 19 e 22 coprimi? sì: il mcd di 19 e 22 è 1.
+¿son 11 y 20 primos entre sí? sí: el mcd de 11 y 20 es 1.
+sono 18 e 27 coprimi? no: il mcd di 18 e 27 è 9.
+¿son 14 y 21 primos entre sí? no: el mcd de 14 y 21 es 7.
+sono 17 e 30 coprimi? sì: il mcd di 17 e 30 è 1.
 
 ¿es 97 divisible solo por 1 y por sí mismo? sí: los divisores de 97 son 1 y 97.
 59 è un numero primo? sì: i divisori di 59 sono 1 e 59.
@@ -1228,6 +1278,31 @@ el cuadrado de un número impar es impar: 9 × 9 = 81.
 ¿es 17 par o impar? impar: 17 = 2 × 8 + 1.
 13 è pari o dispari? dispari: 13 = 2 × 6 + 1.
 ¿es 9 par o impar? impar: 9 = 2 × 4 + 1.
+
+sono 21 e 32 coprimi? sì: il mcd di 21 e 32 è 1.
+¿son 10 y 15 primos entre sí? no: el mcd de 10 y 15 es 5.
+sono 22 e 33 coprimi? no: il mcd di 22 e 33 è 11.
+¿son 17 y 30 primos entre sí? sí: el mcd de 17 y 30 es 1.
+sono 4 e 9 coprimi? sì: il mcd di 4 e 9 è 1.
+¿son 18 y 27 primos entre sí? no: el mcd de 18 y 27 es 9.
+sono 6 e 9 coprimi? no: il mcd di 6 e 9 è 3.
+¿son 19 y 22 primos entre sí? sí: el mcd de 19 y 22 es 1.
+sono 8 e 15 coprimi? sì: il mcd di 8 e 15 è 1.
+¿son 20 y 35 primos entre sí? no: el mcd de 20 y 35 es 5.
+sono 6 e 8 coprimi? no: il mcd di 6 e 8 è 2.
+¿son 21 y 32 primos entre sí? sí: el mcd de 21 y 32 es 1.
+sono 7 e 12 coprimi? sì: il mcd di 7 e 12 è 1.
+¿son 22 y 33 primos entre sí? no: el mcd de 22 y 33 es 11.
+sono 10 e 15 coprimi? no: il mcd di 10 e 15 è 5.
+¿son 4 y 9 primos entre sí? sí: el mcd de 4 y 9 es 1.
+sono 17 e 30 coprimi? sì: il mcd di 17 e 30 è 1.
+¿son 6 y 9 primos entre sí? no: el mcd de 6 y 9 es 3.
+sono 18 e 27 coprimi? no: il mcd di 18 e 27 è 9.
+¿son 8 y 15 primos entre sí? sí: el mcd de 8 y 15 es 1.
+sono 19 e 22 coprimi? sì: il mcd di 19 e 22 è 1.
+¿son 6 y 8 primos entre sí? no: el mcd de 6 y 8 es 2.
+sono 20 e 35 coprimi? no: il mcd di 20 e 35 è 5.
+¿son 7 y 12 primos entre sí? sí: el mcd de 7 y 12 es 1.
 
 ¿es 91 un número primo? no: 91 = 7 × 13.
 ¿es 66 divisible solo por 1 y por sí mismo? no: 66 = 2 × 33.
@@ -1694,6 +1769,31 @@ tutti i quadrati sono pari è falso: 17 è dispari e 17 × 17 = 289, che è disp
 ¿es 21 par o impar? impar: 21 = 2 × 10 + 1.
 9 è pari o dispari? dispari: 9 = 2 × 4 + 1.
 
+¿son 6 y 8 primos entre sí? no: el mcd de 6 y 8 es 2.
+sono 15 e 25 coprimi? no: il mcd di 15 e 25 è 5.
+¿son 5 y 14 primos entre sí? sí: el mcd de 5 y 14 es 1.
+sono 7 e 12 coprimi? sì: il mcd di 7 e 12 è 1.
+¿son 6 y 9 primos entre sí? no: el mcd de 6 y 9 es 3.
+sono 14 e 21 coprimi? no: il mcd di 14 e 21 è 7.
+¿son 9 y 16 primos entre sí? sí: el mcd de 9 y 16 es 1.
+sono 8 e 15 coprimi? sì: il mcd di 8 e 15 è 1.
+¿son 15 y 25 primos entre sí? no: el mcd de 15 y 25 es 5.
+sono 12 e 18 coprimi? no: il mcd di 12 e 18 è 6.
+¿son 7 y 12 primos entre sí? sí: el mcd de 7 y 12 es 1.
+sono 13 e 21 coprimi? sì: il mcd di 13 e 21 è 1.
+¿son 14 y 21 primos entre sí? no: el mcd de 14 y 21 es 7.
+sono 10 e 15 coprimi? no: il mcd di 10 e 15 è 5.
+¿son 8 y 15 primos entre sí? sí: el mcd de 8 y 15 es 1.
+sono 11 e 20 coprimi? sì: il mcd di 11 e 20 è 1.
+¿son 12 y 18 primos entre sí? no: el mcd de 12 y 18 es 6.
+sono 6 e 8 coprimi? no: il mcd di 6 e 8 è 2.
+¿son 13 y 21 primos entre sí? sí: el mcd de 13 y 21 es 1.
+sono 5 e 14 coprimi? sì: il mcd di 5 e 14 è 1.
+¿son 10 y 15 primos entre sí? no: el mcd de 10 y 15 es 5.
+sono 6 e 9 coprimi? no: il mcd di 6 e 9 è 3.
+¿son 11 y 20 primos entre sí? sí: el mcd de 11 y 20 es 1.
+sono 9 e 16 coprimi? sì: il mcd di 9 e 16 è 1.
+
 ¿es 51 un número primo? no: 51 = 3 × 17.
 83 è divisibile solo per 1 e per se stesso? sì: i divisori di 83 sono 1 e 83.
 tutti i numeri dispari sono primi è falso: 33 è dispari e 33 = 3 × 11.
@@ -2144,3 +2244,28 @@ tutti i quadrati sono pari è falso: 5 è dispari e 5 × 5 = 25, che è dispari.
 20 è pari o dispari? pari: 20 = 2 × 10.
 ¿es 14 par o impar? par: 14 = 2 × 7.
 27 è pari o dispari? dispari: 27 = 2 × 13 + 1.
+
+¿son 17 y 30 primos entre sí? sí: el mcd de 17 y 30 es 1.
+sono 15 e 25 coprimi? no: il mcd di 15 e 25 è 5.
+¿son 14 y 21 primos entre sí? no: el mcd de 14 y 21 es 7.
+sono 21 e 32 coprimi? sì: il mcd di 21 e 32 è 1.
+¿son 19 y 22 primos entre sí? sí: el mcd de 19 y 22 es 1.
+sono 16 e 24 coprimi? no: il mcd di 16 e 24 è 8.
+¿son 15 y 25 primos entre sí? no: el mcd de 15 y 25 es 5.
+sono 5 e 14 coprimi? sì: il mcd di 5 e 14 è 1.
+¿son 21 y 32 primos entre sí? sí: el mcd de 21 y 32 es 1.
+sono 18 e 27 coprimi? no: il mcd di 18 e 27 è 9.
+¿son 16 y 24 primos entre sí? no: el mcd de 16 y 24 es 8.
+sono 11 e 20 coprimi? sì: il mcd di 11 e 20 è 1.
+¿son 5 y 14 primos entre sí? sí: el mcd de 5 y 14 es 1.
+sono 20 e 35 coprimi? no: il mcd di 20 e 35 è 5.
+¿son 18 y 27 primos entre sí? no: el mcd de 18 y 27 es 9.
+sono 13 e 21 coprimi? sì: il mcd di 13 e 21 è 1.
+¿son 11 y 20 primos entre sí? sí: el mcd de 11 y 20 es 1.
+sono 22 e 33 coprimi? no: il mcd di 22 e 33 è 11.
+¿son 20 y 35 primos entre sí? no: el mcd de 20 y 35 es 5.
+sono 17 e 30 coprimi? sì: il mcd di 17 e 30 è 1.
+¿son 13 y 21 primos entre sí? sí: el mcd de 13 y 21 es 1.
+sono 14 e 21 coprimi? no: il mcd di 14 e 21 è 7.
+¿son 22 y 33 primos entre sí? no: el mcd de 22 y 33 es 11.
+sono 19 e 22 coprimi? sì: il mcd di 19 e 22 è 1.

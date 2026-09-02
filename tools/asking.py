@@ -174,6 +174,24 @@ czy ile co jaki jaka jakie gdzie kiedy
 wat hoe hoeveel welke waar
 ¬ apa cái
 """.split())
+
+
+# ЗАЙМ ГАСИТСЯ ПАКЕТАМИ (М-137; 04.09): зачины, объявленные пакетами языков
+# (ask_words), входят в множество наравне с займом — «zijn 4 en 9 onderling
+# ondeelbaar?», «sono 4 e 9 coprimi?» открываются множественной связкой,
+# которой займ не знал, и суд письма звал их ложью.
+def _зачины_пакетов():
+    вон = set()
+    for путь in sorted(ПАКЕТЫ.glob("*.json")):
+        try:
+            пакет = json.loads(путь.read_text(encoding="utf-8"))
+        except ValueError:
+            continue
+        вон.update(w.lower() for w in (пакет.get("ask_words") or {}).get("words", ()) if w != "¬")
+    return вон
+
+
+ЗАЧИНЫ = frozenset(ЗАЧИНЫ | _зачины_пакетов())
 # ВОПРОСНОЕ СЛОВО СТОИТ ТАМ, ГДЕ ЕГО СТАВИТ ЯЗЫК. Турецкий («bir sayının
 # karesi nedir?»), суахили («ndizi ni nini?»), японский ставят его В
 # КОНЦЕ; зачин первого слова для них ложен по устройству. Дом судит

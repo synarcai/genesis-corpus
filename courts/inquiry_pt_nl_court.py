@@ -59,6 +59,7 @@ sys.path.insert(0, str(КОРЕНЬ / "tools"))
 from genesis import Unreadable, worlds  # noqa: E402
 import universals  # noqa: E402
 import parity  # noqa: E402
+import coprime  # noqa: E402
 import paraphrase  # noqa: E402
 
 # РУБЕЖ-ДОЛГА: ЛОЖНЫХ_РУБЕЖ = 0
@@ -374,7 +375,7 @@ def _общ_квадрат(м):
 ЯЗЫКИ_МИРА = ('pt', 'nl')
 # ПЕРЕФРАЗА — ФОРМА ПАКЕТА (tools/paraphrase.py, Т-4): образцы других форм
 # простоты и делимости выведены из образцов первой формы с теми же судьями.
-ПРАВИЛА = universals.правила(list(ОБРАЗЦЫ) + paraphrase.образцы(ОБРАЗЦЫ, ЯЗЫКИ_МИРА, ("prime", "divisible")), ЯЗЫКИ_МИРА) + tuple((re.compile(о), п) for о, п in parity.образцы(ЯЗЫКИ_МИРА))
+ПРАВИЛА = universals.правила(list(ОБРАЗЦЫ) + paraphrase.образцы(ОБРАЗЦЫ, ЯЗЫКИ_МИРА, ("prime", "divisible")), ЯЗЫКИ_МИРА) + tuple((re.compile(о), п) for о, п in parity.образцы(ЯЗЫКИ_МИРА) + coprime.образцы(ЯЗЫКИ_МИРА))
 
 
 def судить(строка):

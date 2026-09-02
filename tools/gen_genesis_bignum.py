@@ -61,9 +61,7 @@ def with_asks(pi):
     out = []
     for i, show in enumerate(kinds_for_pass(pi)):
         out.append(show)
-        ask = inverting.обратить(show, ("глиф",), i)
-        if ask:
-            out.append(ask)
+        out.extend(inverting.обращения(show, ("глиф",), i))
     return out
 
 
