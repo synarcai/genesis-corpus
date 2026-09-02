@@ -71,6 +71,7 @@ import sys
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "scripts"))
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
+import notation_variants  # noqa: E402
 from genesis import Unreadable, worlds  # noqa: E402
 
 # РУБЕЖ-ДОЛГА: ЛОЖНЫХ_РУБЕЖ = 0
@@ -565,7 +566,11 @@ def _вопрос(м):
 
 def судить(строка):
     """(судимо, истинно) для одной строки."""
-    с = строка.strip()
+    # ЗАПИСЬ ПРИВОДИТСЯ К КАНОНУ ДО РАЗБОРА. Суд читал «x^2 - 5 x + 6» и
+    # не читал «x² − 5x + 6» — ту же запись типографским начертанием, в
+    # котором её спрашивает полоса. Дом начертаний один на корпус и
+    # служит не только показу, но и разбору (ср. арифметику).
+    с = notation_variants.канон(строка.strip())
     if not с:
         return False, False
     if с in ОПРЕДЕЛЕНИЯ or с in ОТВЕТЫ:
