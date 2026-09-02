@@ -96,7 +96,10 @@ def main():
                 shutil.copy(ф, двор / "tools" / ф.name)
         for ф in sorted((КОРЕНЬ / "courts").glob("*.py")):
             shutil.copy(ф, двор / "courts" / ф.name)
-        for имя in ("langpacks", "langseeds"):
+        # СЕМЕНА СИРОТ (tools/seeds/, М-126) — тоже сырьё генераторов: без
+        # них шесть генераторов во дворе падали, и мера звала это
+        # расхождением, хотя пересборка в доме была побайтовой.
+        for имя in ("langpacks", "langseeds", "seeds"):
             if (КОРЕНЬ / "tools" / имя).is_dir():
                 shutil.copytree(КОРЕНЬ / "tools" / имя,
                                 двор / "tools" / имя)
