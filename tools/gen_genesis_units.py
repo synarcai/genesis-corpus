@@ -99,8 +99,18 @@ EN_NUM = ["zero", "one", "two", "three", "four",
           "ten"]
 
 
-def conversion_shows():
+# МАССА ОТ ПРАВИЛА (М-148, tools/mass.py): показ есть функция прохода —
+# одни и те же строки, повторённые пятью проходами, были весом, а не
+# массой (различных показов на рамку 1). Множители, ряды долей, делимые и
+# цены сдвигаются проходом; факт «one hour equals 60 minutes» стоит в
+# каждом проходе как закон.
+МНОЖИТЕЛИ = [(2, 3, 5), (4, 6, 7), (8, 9, 10), (11, 12, 15), (13, 14, 20)]
+ЦЕНЫ = [(2, 3, 5), (4, 6, 7), (8, 9, 10), (12, 15, 20), (25, 30, 50)]
+
+
+def conversion_shows(шаг=0):
     out = []
+    множители = МНОЖИТЕЛИ[шаг % len(МНОЖИТЕЛИ)]
     for (ruf, en, enp, rus, ens, f) in conversions():
         # ЧАСТЬ СОГЛАСУЕТСЯ СО СВОИМ ЧИСЛОМ, а не берётся одной
         # формой на все счёты: «3 недели равно 21 дней» стояло в
@@ -110,7 +120,7 @@ def conversion_shows():
             f"один {ruf[0]} равно {f} {units.ру_форма(части, f)}."
         )
         out.append(f"one {en} equals {f} {ens}.")
-        for k in (2, 3, 5):
+        for k in множители:
             # ЗВЕНО ЦЕПИ (compose, e9): отношение единиц — число леджера
             # («one hour equals 60 minutes» стоит рядом), k × f — звено.
             утв_ru = (f"{k} {units.ру_форма(ruf, k)} равно "
@@ -127,7 +137,7 @@ def conversion_shows():
     пара = несоизмеримые()
     if пара is not None:
         a, b = пара
-        for k in (2, 3, 5):
+        for k in множители:
             # ОТВЕТ ПОВТОРЯЕТ ВЕЛИЧИНУ ВОПРОСА, И ЭТО НЕ УКРАШЕНИЕ:
             # связь половин пары держится числами (общий дом
             # `tools/asking.py`), и отказ без числа не связать с
@@ -149,23 +159,23 @@ def conversion_shows():
     return out
 
 
-def fraction_shows():
+def fraction_shows(шаг=0):
     out = []
-    for n in range(2, 11):
+    for n in range(2 + 9 * шаг, 11 + 9 * шаг):
         d = 2 * n
         out.append(
             f"половина от {d} равно {n}."
         )
         out.append(f"half of {d} equals {n}.")
         out.append(f"{d} ÷ 2 = {n}.")
-    for n in range(1, 7):
+    for n in range(1 + 6 * шаг, 7 + 6 * шаг):
         d = 3 * n
         out.append(f"треть от {d} равно {n}.")
         out.append(
             f"a third of {d} equals {n}."
         )
         out.append(f"{d} ÷ 3 = {n}.")
-    for n in range(1, 6):
+    for n in range(1 + 5 * шаг, 6 + 5 * шаг):
         d = 4 * n
         out.append(
             f"четверть от {d} равно {n}."
@@ -177,9 +187,9 @@ def fraction_shows():
     return out
 
 
-def remainder_shows():
+def remainder_shows(шаг=0):
     out = []
-    for a in range(5, 20):
+    for a in range(5 + 15 * шаг, 20 + 15 * шаг):
         for b in (2, 3, 4):
             q, r = divmod(a, b)
             if r == 0:
@@ -195,13 +205,14 @@ def remainder_shows():
     return out
 
 
-def rate_shows():
+def rate_shows(шаг=0):
     out = []
+    цены = ЦЕНЫ[шаг % len(ЦЕНЫ)]
     # ФОРМЫ РУБЛЯ ЧИТАЮТСЯ ИЗ ДОМА ЕДИНИЦ, а не пишутся здесь
     # вторым списком: рубль объявлен там вместе с копейкой.
     rub = units.ФОРМЫ_ВСЕХ["rouble"][1]
-    for k in range(2, 7):
-        for p in (2, 3, 5):
+    for k in range(2 + 5 * шаг, 7 + 5 * шаг):
+        for p in цены:
             out.append(
                 f"{k} по {p} {units.ру_форма(rub, p)} "
                 f"равно {k * p} "
@@ -215,11 +226,10 @@ def rate_shows():
 
 
 def main():
-    kinds = [
-        conversion_shows(), fraction_shows(),
-        remainder_shows(), rate_shows(),
-    ]
-    emit_grouped("datasets/genesis_units.txt", lambda _pi: kinds)
+    def kinds(pi):
+        return [conversion_shows(pi), fraction_shows(pi),
+                remainder_shows(pi), rate_shows(pi)]
+    emit_grouped("datasets/genesis_units.txt", kinds)
 
 
 if __name__ == "__main__":

@@ -48,17 +48,17 @@ from genesis import Unreadable, worlds  # noqa: E402
     r"(\d+), а ошибка равна (\d+)$")
 СХОД_EN = re.compile(
     r"^starting at (\d+) with target (\d+) and step (\d+) the value "
-    r"reaches (\d+) in (\d+) steps$")
+    r"reaches (\d+) in (\d+) steps?$")
 СХОД_RU = re.compile(
     r"^начав с (\d+) при цели (\d+) и шаге (\d+), значение достигает "
     r"(\d+) за (\d+) \S+$")
-# ОТКАЗ ЕСТЬ ТАКОЕ ЖЕ УТВЕРЖДЕНИЕ: «целого нет» истинно ровно тогда,
-# когда ошибка посчитана верно И на шаг не делится. Суд считает оба.
-ОТКАЗ_ШАГОВ = re.compile(
-    r"^(?:no whole answer for (-?\d+), (-?\d+) and step (-?\d+): the "
-    r"error (-?\d+) is not divisible by (-?\d+)"
-    r"|целого ответа нет для (-?\d+), (-?\d+) и шага (-?\d+): ошибка "
-    r"(-?\d+) не делится на (-?\d+) нацело)\.$")
+# ТОЧНОСТЬ — ВЕРДИКТ С ОСНОВАНИЕМ (М-147): «да» несёт число шагов,
+# «нет» — ошибку, не делящуюся на шаг; суд считает вычитание и деление.
+ТОЧНОСТЬ_ШАГОВ = re.compile(
+    r"^(?:yes: (\d+) − (\d+) = (\d+), (\d+) ÷ (\d+) = (\d+)"
+    r"|no: (\d+) − (\d+) = (\d+), (\d+) is not divisible by (\d+)"
+    r"|да: (\d+) − (\d+) = (\d+), (\d+) ÷ (\d+) = (\d+)"
+    r"|нет: (\d+) − (\d+) = (\d+), (\d+) не делится на (\d+) нацело)$")
 ЗАМКНУТ = re.compile(
     r"^target (\d+): a closed loop stops at (\d+) because the error "
     r"is 0$")
@@ -108,11 +108,11 @@ import laws  # noqa: E402
 ВОПРОС_ШАГОВ = re.compile(
     r"^(?:how many steps does starting at (\d+) with target (\d+) and step (\d+) take"
     r"|за сколько шагов начав с (\d+) при цели (\d+) и шаге (\d+) достигает цели"
-    r"|why does starting at (\d+) with target (\d+) and step (\d+) take (\d+) steps"
+    r"|why does starting at (\d+) with target (\d+) and step (\d+) take (\d+) steps?"
     r"|почему начав с (\d+) при цели (\d+) и шаге (\d+), значение достигает цели за (\d+) \S+)$")
 СВИД_ШАГОВ = re.compile(r"^(\d+) \+ (\d+) × (\d+) = (\d+)$")
 ВЫВОД_ШАГОВ = re.compile(
-    r"^(?:starting at (\d+) with target (\d+) and step (\d+) the value reaches (\d+) in (\d+) steps"
+    r"^(?:starting at (\d+) with target (\d+) and step (\d+) the value reaches (\d+) in (\d+) steps?"
     r"|начав с (\d+) при цели (\d+) и шаге (\d+), значение достигает (\d+) за (\d+) \S+)$")
 
 
@@ -179,13 +179,14 @@ def судить(строка):
             v += шаг
             k += 1
         return True, v == ц == дошли and k == шагов
-    m = ОТКАЗ_ШАГОВ.match(с)
+    m = ТОЧНОСТЬ_ШАГОВ.match(с)
     if m:
         г = [int(x) for x in m.groups() if x is not None]
-        нач, цель, шаг, ошибка, шаг2 = г
-        return True, (шаг == шаг2 and шаг != 0
-                      and ошибка == цель - нач
-                      and ошибка % шаг != 0)
+        if len(г) == 6:
+            ц, нач, о, о2, шаг, шагов = г
+            return True, (о == ц - нач and о2 == о and шаг != 0 and о == шагов * шаг)
+        ц, нач, о, о2, шаг = г
+        return True, (о == ц - нач and о2 == о and шаг != 0 and о % шаг != 0)
     m = ЗАМКНУТ.match(с)
     if m:
         return True, int(m.group(1)) == int(m.group(2))
