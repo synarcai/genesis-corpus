@@ -18,6 +18,26 @@ import re
 
 import families
 
+# THE «YES» OF A UNIVERSAL IS A BOUNDED CHECK, NEVER AN EXAMPLE ALONE (Т-3 of
+# the expressiveness college, holon + omega-f2 03.09): «yes: 84 = 2 × 2 × 3 × 7»
+# would teach proving by example; the corpus says what an executor can honestly
+# do — «yes: no counterexample among 1..1000; example: 84 = 2 × 2 × 3 × 7» — and
+# the court recomputes the bound by the universal's predicate (ПРЕДИКАТЫ), it
+# does not believe the word. The bound is one declared number of the house.
+ГРАНИЦА = 1000
+ОСНОВАНИЕ = {
+    "en": "no counterexample among 1..{N}; example: ",
+    "ru": "контрпримера среди 1..{N} нет; пример: ",
+    "de": "kein Gegenbeispiel unter 1..{N}; Beispiel: ",
+    "fr": "aucun contre-exemple parmi 1..{N} ; exemple : ",
+    "es": "ningún contraejemplo entre 1..{N}; ejemplo: ",
+    "it": "nessun controesempio tra 1..{N}; esempio: ",
+    "pl": "brak kontrprzykładu wśród 1..{N}; przykład: ",
+    "tr": "1..{N} arasında karşı örnek yok; örnek: ",
+    "pt": "nenhum contraexemplo entre 1..{N}; exemplo: ",
+    "nl": "geen tegenvoorbeeld onder 1..{N}; voorbeeld: ",
+}
+
 ЯЗЫКИ = {
     #        marker of falsity      colon   question wrapper (prefix, suffix)   yes      no       sign of the language
     "en": (" is false: ",           ": ",   ("is it true that ", "?"),         "yes",   "no",    r" is "),
@@ -61,11 +81,17 @@ def разобрать(строка, кандидаты):
     return я, голова, хвост, False
 
 
+def основание(я):
+    return ОСНОВАНИЕ[я].format(N=ГРАНИЦА)
+
+
 def вопрос(строка, кандидаты):
     """The question of a universal from its statement (a show of the corpus)."""
     я, голова, хвост, ложь = разобрать(строка, кандидаты)
     _, двоеточие, (пред, суф), да, нет = ЯЗЫКИ[я][:5]
-    return f"{пред}{голова}{суф} {нет if ложь else да}{двоеточие}{хвост}"
+    if ложь:
+        return f"{пред}{голова}{суф} {нет}{двоеточие}{хвост}"
+    return f"{пред}{голова}{суф} {да}{двоеточие}{основание(я)}{хвост}"
 
 
 def вопрос_образца(образец, кандидаты):
@@ -74,7 +100,68 @@ def вопрос_образца(образец, кандидаты):
     assert образец.startswith("^") and образец.endswith("$"), образец[:40]
     я, голова, хвост, ложь = разобрать(образец[1:-1], кандидаты)
     _, двоеточие, (пред, суф), да, нет = ЯЗЫКИ[я][:5]
-    return "^" + re.escape(пред) + голова + re.escape(f"{суф} {нет if ложь else да}{двоеточие}") + хвост + "$"
+    if ложь:
+        return "^" + re.escape(пред) + голова + re.escape(f"{суф} {нет}{двоеточие}") + хвост + "$"
+    return "^" + re.escape(пред) + голова + re.escape(f"{суф} {да}{двоеточие}{основание(я)}") + хвост + "$"
+
+
+# THE COURT RECOMPUTES THE BOUND: one predicate per universal, keyed by the
+# court's judge name (the same names across the ten languages' courts).
+def _простое(n):
+    return n > 1 and all(n % d for d in range(2, int(n ** 0.5) + 1))
+
+
+def _разложение_верно(n):
+    m, p, произв = n, 2, 1
+    while m > 1:
+        while m % p == 0:
+            произв *= p; m //= p
+        p += 1
+    return произв == n
+
+
+def _сумма_цифр(n):
+    return sum(int(c) for c in str(n))
+
+
+ПРЕДИКАТЫ = {
+    "_произведение": lambda N: all(_разложение_верно(n) for n in range(2, N + 1)),
+    "_цифры_на_три": lambda N: all((n % 3 == 0) == (_сумма_цифр(n) % 3 == 0) for n in range(1, N + 1)),
+    "_общ_сумма": lambda N: all(sum(2 * i - 1 for i in range(1, k + 1)) == k * k for k in range(1, N + 1)),
+    "_общ_условное": lambda N: all(((e + m) % 2 == 0) == (m % 2 == 0) for e in range(0, N + 1, 2) for m in range(1, N + 1)),
+    "_общ_инъекция": lambda N: all(k * 1 != k * 2 for k in range(1, N + 1)),
+    "_общ_квадрат": lambda N: all((n * n) % 2 == n % 2 for n in range(1, N + 1)),
+}
+_ПРОВЕРЕНО = {}
+
+
+def граница_верна(судья):
+    """«No counterexample among 1..N» holds for this universal — computed once
+    by its predicate; a universal without a predicate cannot claim it."""
+    for имя, предикат in ПРЕДИКАТЫ.items():
+        if судья.__name__.startswith(имя):
+            if имя not in _ПРОВЕРЕНО:
+                _ПРОВЕРЕНО[имя] = bool(предикат(ГРАНИЦА))
+            return _ПРОВЕРЕНО[имя]
+    raise KeyError(f"no predicate for the universal judged by {судья.__name__}")
+
+
+def с_границей(судья):
+    """The judge of the «yes» question: the instance as before AND the bound."""
+    def судить(м):
+        return bool(судья(м)) and граница_верна(судья)
+    судить.__name__ = судья.__name__
+    return судить
+
+
+def вопросные_формы(формы, кандидаты):
+    """[(question pattern, judge)] derived from the statement forms of a
+    universal: the «no» keeps its judge, the «yes» gets the bound."""
+    вон = []
+    for о, п in формы:
+        ложь = any(ЯЗЫКИ[я][0] in о for я in кандидаты)
+        вон.append((вопрос_образца(о, кандидаты), п if ложь else с_границей(п)))
+    return вон
 
 
 def с_вопросами(строки, кандидаты):
@@ -103,7 +190,7 @@ def правила(образцы, кандидаты):
     вон = []
     for о, п in образцы:
         if универсалия(п):
-            вон.append(families.слить([(о, п), (вопрос_образца(о, кандидаты), п)]))
+            вон.append(families.слить([(о, п)] + вопросные_формы([(о, п)], кандидаты)))
         else:
             вон.append((re.compile(о), п))
     return tuple(вон)
