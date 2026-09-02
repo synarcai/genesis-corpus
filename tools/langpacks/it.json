@@ -472,6 +472,9 @@
       "quale",
       "è",
       "sono",
+      "chi",
+      "quante",
+      "quando",
       "¬"
     ],
     "position": "front"
@@ -487,5 +490,41 @@
       "{} è un multiplo di {}?"
     ]
   },
-  "ask_forms_comment": "second declared question form of each genus (Т-4 of the expressiveness college, 03.09): a paraphrase is a form of the pack, never a synonym list of a generator; every form carries the whole pair; the opening word is a declared question word (courts/script_court.py reads it)"
+  "ask_forms_comment": "second declared question form of each genus (Т-4 of the expressiveness college, 03.09): a paraphrase is a form of the pack, never a synonym list of a generator; every form carries the whole pair; the opening word is a declared question word (courts/script_court.py reads it)",
+  "person_names": [
+    "Anna",
+    "Marco",
+    "Giulia",
+    "Luca",
+    "Sara",
+    "Paolo",
+    "Chiara",
+    "Matteo"
+  ],
+  "person_forms": {
+    "Anna": {
+      "gender": "f"
+    },
+    "Marco": {
+      "gender": "m"
+    },
+    "Giulia": {
+      "gender": "f"
+    },
+    "Luca": {
+      "gender": "m"
+    },
+    "Sara": {
+      "gender": "f"
+    },
+    "Paolo": {
+      "gender": "m"
+    },
+    "Chiara": {
+      "gender": "f"
+    },
+    "Matteo": {
+      "gender": "m"
+    }
+  }
 }

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""GENESIS layer: THE HOLE MARKET — one fact, every role of it asked.
+"""GENESIS layer: THE HOLE MARKET — one fact, every role of it asked, six languages.
 
 holon's Д-1 (REVISION 02.09): a question in the organism is a per-genus
 surface, not an operation over a bought fact frame, so the organism cannot
@@ -16,7 +16,6 @@ hole). The house of holes (tools/holes.py) holds the frame and the
 operation; the court recomputes the question from the fact and the answer
 from the hole by the same house.
 """
-import json
 import pathlib
 import sys
 
@@ -25,26 +24,20 @@ import holes  # noqa: E402
 from layer import emit_grouped  # noqa: E402
 
 ЦЕЛЬ = "datasets/genesis_holes.txt"
-КОРЕНЬ = pathlib.Path(__file__).resolve().parents[1]
-_EN = json.loads((КОРЕНЬ / "tools" / "langpacks" / "en.json").read_text(encoding="utf-8"))
-_RU = json.loads((КОРЕНЬ / "tools" / "langpacks" / "ru.json").read_text(encoding="utf-8"))
-ИМЕНА_EN = tuple(_EN["person_names"][:16])
-ИМЕНА_RU = tuple((n.capitalize(), ф["gender"]) for n, ф in list(_RU["person_forms"].items())[:16])
 ЧИСЛА = (5, 3, 8, 2, 7, 4, 9, 6, 12, 10, 11)   # counts ≥ 2: the frame's thing is plural
 ШИРИНА = 12   # 5 passes × 12 instances → 12 shows per (verb, hole, language): above the knee of 9
 
 
 def _роли(шаг, i, язык):
-    р = holes.РАМКИ[(шаг + i) % len(holes.РАМКИ)]
-    место = р[5][(шаг * 2 + i) % len(р[5])]
-    вещь = р[6][(шаг * 3 + i) % len(р[6])]
+    k = (шаг + i) % len(holes.РАМКИ[язык])
+    р = holes.РАМКИ[язык][k]
+    место = р["места"][(шаг * 2 + i) % len(р["места"])]
+    вещь = р["вещи"][(шаг * 3 + i) % len(р["вещи"])]
     n = ЧИСЛА[(шаг * 7 + i) % len(ЧИСЛА)]
     день = holes.ДНИ[язык][(шаг * 3 + i) % 7]
-    k = шаг * 5 + i * 3
-    if язык == "en":
-        return день, ИМЕНА_EN[k % len(ИМЕНА_EN)], "m", р, n, вещь, место
-    имя, род = ИМЕНА_RU[k % len(ИМЕНА_RU)]
-    return день, имя, род, р, n, вещь, место
+    имена = holes.ИМЕНА[язык]
+    имя, род = имена[(шаг * 5 + i * 3) % len(имена)]
+    return день, имя, род, k, n, вещь, место
 
 
 def язык_группа(шаг, язык):
@@ -61,7 +54,7 @@ def язык_группа(шаг, язык):
 
 
 def pass_groups(шаг):
-    return [язык_группа(шаг, "en"), язык_группа(шаг, "ru")]
+    return [язык_группа(шаг, язык) for язык in holes.ЯЗЫКИ]
 
 
 def main():

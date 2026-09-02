@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""THE HOUSE OF HOLES — one fact frame, every role of it asked.
+"""THE HOUSE OF HOLES — one fact frame, every role of it asked, in six languages.
 
 holon's Д-1 (REVISION 02.09): in the organism a question is a per-genus
 SURFACE bought from that genus' shows, not an OPERATION over a bought fact
@@ -11,69 +11,223 @@ names the hole's TYPE (who → actor, how many → number, what → thing, where
 is exactly the filler the question took out. The generator draws lines from
 here; the court parses a fact by the same frame and recomputes every lawful
 question with its answer — nothing in the court is looked up from the line.
+
+Six languages (the owner's word: every language in surplus): en, ru, de,
+es, it, fr. What differs is declared per language — the word order of the
+fact (German verb-second, the Romance languages subject-first), the count
+forms (Russian by the house of forms), the gender agreement of the
+question word (Spanish cuántos/cuántas, Italian quanti/quante), the French
+past participle agreeing with the fronted object («combien de tasses
+Anne a-t-elle mises»), the case-bearing place («на полку» vs «на полке»,
+«auf das Regal» vs «auf dem Markt») and the «whither» word where the
+language has one (куда, wohin). Names and their gender come from the packs.
 """
+import json
+import pathlib
 import re
 import sys
-import pathlib
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import rugram  # noqa: E402
 
+КОРЕНЬ = pathlib.Path(__file__).resolve().parents[1]
+ЯЗЫКИ = ("en", "ru", "de", "es", "it", "fr")
+
 ДНИ = {
     "en": ("on monday", "on tuesday", "on wednesday", "on thursday", "on friday", "on saturday", "on sunday"),
     "ru": ("в понедельник", "во вторник", "в среду", "в четверг", "в пятницу", "в субботу", "в воскресенье"),
+    "de": ("am Montag", "am Dienstag", "am Mittwoch", "am Donnerstag", "am Freitag", "am Samstag", "am Sonntag"),
+    "es": ("el lunes", "el martes", "el miércoles", "el jueves", "el viernes", "el sábado", "el domingo"),
+    "it": ("lunedì", "martedì", "mercoledì", "giovedì", "venerdì", "sabato", "domenica"),
+    "fr": ("lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"),
 }
-# A frame: the verb (en past, en base, ru masculine, ru feminine), the RU
-# question word of its place (куда for putting, где for the rest), its
-# places (en, ru in the case the verb governs) and its things (en singular,
-# en plural, ru lemma — the count form comes from the house of forms).
-РАМКИ = (
-    ("put", "put", "положил", "положила", "куда",
-     (("on the shelf", "на полку"), ("in the box", "в коробку"), ("on the table", "на стол"), ("in the bag", "в сумку")),
-     (("cup", "cups", "чашка"), ("book", "books", "книга"), ("pen", "pens", "ручка"), ("plate", "plates", "тарелка"))),
-    ("bought", "buy", "купил", "купила", "где",
-     (("at the market", "на рынке"), ("in the shop", "в магазине"), ("at the fair", "на ярмарке")),
-     (("apple", "apples", "яблоко"), ("pear", "pears", "груша"), ("pen", "pens", "ручка"), ("book", "books", "книга"))),
-    ("found", "find", "нашёл", "нашла", "где",
-     (("in the park", "в парке"), ("in the garden", "в саду"), ("on the road", "на дороге"), ("on the beach", "на пляже")),
-     (("coin", "coins", "монета"), ("shell", "shells", "ракушка"), ("stone", "stones", "камень"), ("key", "keys", "ключ"))),
-    ("ate", "eat", "съел", "съела", "где",
-     (("in the kitchen", "на кухне"), ("at school", "в школе"), ("in the garden", "в саду")),
-     (("apple", "apples", "яблоко"), ("pear", "pears", "груша"), ("cookie", "cookies", "печенье"), ("plum", "plums", "слива"))),
-    ("read", "read", "прочитал", "прочитала", "где",
-     (("in the library", "в библиотеке"), ("at school", "в школе"), ("at home", "дома")),
-     (("book", "books", "книга"), ("story", "stories", "рассказ"), ("letter", "letters", "письмо"))),
-)
+
+# FRAMES BY INDEX — 0 put, 1 bought, 2 found, 3 ate, 4 read. Per language: the
+# verb forms, the «whither» word where the language has one, the places in
+# the case the verb governs, the things (en: singular and plural; ru: the
+# lemma, the count form comes from the house of forms; de: the plural,
+# capitalised as German writes nouns; es/it/fr: the plural and its gender).
+РАМКИ = {
+    "en": (
+        dict(прош="put", осн="put", места=("on the shelf", "in the box", "on the table", "in the bag"),
+             вещи=(("cup", "cups"), ("book", "books"), ("pen", "pens"), ("plate", "plates"))),
+        dict(прош="bought", осн="buy", места=("at the market", "in the shop", "at the fair"),
+             вещи=(("apple", "apples"), ("pear", "pears"), ("pen", "pens"), ("book", "books"))),
+        dict(прош="found", осн="find", места=("in the park", "in the garden", "on the road", "on the beach"),
+             вещи=(("coin", "coins"), ("shell", "shells"), ("stone", "stones"), ("key", "keys"))),
+        dict(прош="ate", осн="eat", места=("in the kitchen", "at school", "in the garden"),
+             вещи=(("apple", "apples"), ("pear", "pears"), ("cookie", "cookies"), ("plum", "plums"))),
+        dict(прош="read", осн="read", места=("in the library", "at school", "at home"),
+             вещи=(("book", "books"), ("story", "stories"), ("letter", "letters"))),
+    ),
+    "ru": (
+        dict(м="положил", ж="положила", куда="куда", места=("на полку", "в коробку", "на стол", "в сумку"),
+             вещи=("чашка", "книга", "ручка", "тарелка")),
+        dict(м="купил", ж="купила", куда="где", места=("на рынке", "в магазине", "на ярмарке"),
+             вещи=("яблоко", "груша", "ручка", "книга")),
+        dict(м="нашёл", ж="нашла", куда="где", места=("в парке", "в саду", "на дороге", "на пляже"),
+             вещи=("монета", "ракушка", "камень", "ключ")),
+        dict(м="съел", ж="съела", куда="где", места=("на кухне", "в школе", "в саду"),
+             вещи=("яблоко", "груша", "печенье", "слива")),
+        dict(м="прочитал", ж="прочитала", куда="где", места=("в библиотеке", "в школе", "дома"),
+             вещи=("книга", "рассказ", "письмо")),
+    ),
+    "de": (
+        dict(гл="legte", куда="wohin", места=("auf das Regal", "in die Kiste", "auf den Tisch", "in die Tasche"),
+             вещи=("Tassen", "Bücher", "Stifte", "Teller")),
+        dict(гл="kaufte", куда="wo", места=("auf dem Markt", "im Laden", "auf dem Jahrmarkt"),
+             вещи=("Äpfel", "Birnen", "Stifte", "Bücher")),
+        dict(гл="fand", куда="wo", места=("im Park", "im Garten", "auf der Straße", "am Strand"),
+             вещи=("Münzen", "Muscheln", "Steine", "Schlüssel")),
+        dict(гл="aß", куда="wo", места=("in der Küche", "in der Schule", "im Garten"),
+             вещи=("Äpfel", "Birnen", "Kekse", "Pflaumen")),
+        dict(гл="las", куда="wo", места=("in der Bibliothek", "in der Schule", "zu Hause"),
+             вещи=("Bücher", "Geschichten", "Briefe")),
+    ),
+    "es": (
+        dict(гл="puso", места=("en el estante", "en la caja", "en la mesa", "en la bolsa"),
+             вещи=(("tazas", "f"), ("libros", "m"), ("bolígrafos", "m"), ("platos", "m"))),
+        dict(гл="compró", места=("en el mercado", "en la tienda", "en la feria"),
+             вещи=(("manzanas", "f"), ("peras", "f"), ("bolígrafos", "m"), ("libros", "m"))),
+        dict(гл="encontró", места=("en el parque", "en el jardín", "en el camino", "en la playa"),
+             вещи=(("monedas", "f"), ("conchas", "f"), ("piedras", "f"), ("llaves", "f"))),
+        dict(гл="comió", места=("en la cocina", "en la escuela", "en el jardín"),
+             вещи=(("manzanas", "f"), ("peras", "f"), ("galletas", "f"), ("ciruelas", "f"))),
+        dict(гл="leyó", места=("en la biblioteca", "en la escuela", "en casa"),
+             вещи=(("libros", "m"), ("cuentos", "m"), ("cartas", "f"))),
+    ),
+    "it": (
+        dict(гл="ha messo", места=("sullo scaffale", "nella scatola", "sul tavolo", "nella borsa"),
+             вещи=(("tazze", "f"), ("libri", "m"), ("penne", "f"), ("piatti", "m"))),
+        dict(гл="ha comprato", места=("al mercato", "nel negozio", "alla fiera"),
+             вещи=(("mele", "f"), ("pere", "f"), ("penne", "f"), ("libri", "m"))),
+        dict(гл="ha trovato", места=("nel parco", "nel giardino", "sulla strada", "sulla spiaggia"),
+             вещи=(("monete", "f"), ("conchiglie", "f"), ("pietre", "f"), ("chiavi", "f"))),
+        dict(гл="ha mangiato", места=("in cucina", "a scuola", "nel giardino"),
+             вещи=(("mele", "f"), ("pere", "f"), ("biscotti", "m"), ("prugne", "f"))),
+        dict(гл="ha letto", места=("in biblioteca", "a scuola", "a casa"),
+             вещи=(("libri", "m"), ("racconti", "m"), ("lettere", "f"))),
+    ),
+    "fr": (  # прич: the participle agreed with a fronted plural object (m, f)
+        dict(гл="a mis", прич=("mis", "mises"), места=("sur l'étagère", "dans la boîte", "sur la table", "dans le sac"),
+             вещи=(("tasses", "f"), ("livres", "m"), ("stylos", "m"), ("assiettes", "f"))),
+        dict(гл="a acheté", прич=("achetés", "achetées"), места=("au marché", "au magasin", "à la foire"),
+             вещи=(("pommes", "f"), ("poires", "f"), ("stylos", "m"), ("livres", "m"))),
+        dict(гл="a trouvé", прич=("trouvés", "trouvées"), места=("dans le parc", "dans le jardin", "sur la route", "sur la plage"),
+             вещи=(("pièces", "f"), ("coquillages", "m"), ("pierres", "f"), ("clés", "f"))),
+        dict(гл="a mangé", прич=("mangés", "mangées"), места=("dans la cuisine", "à l'école", "dans le jardin"),
+             вещи=(("pommes", "f"), ("poires", "f"), ("biscuits", "m"), ("prunes", "f"))),
+        dict(гл="a lu", прич=("lus", "lues"), места=("à la bibliothèque", "à l'école", "à la maison"),
+             вещи=(("livres", "m"), ("histoires", "f"), ("lettres", "f"))),
+    ),
+}
 
 
-def факт(язык, день, имя, род, р, n, вещь, место):
-    """The frame with no hole. `род` is the RU gender of the actor."""
+def _имена():
+    """(name, gender) per language from the packs — the actors of the frame.
+    English names are written lowercase as the English worlds write them."""
+    вон = {}
+    for язык in ЯЗЫКИ:
+        п = json.loads((КОРЕНЬ / "tools" / "langpacks" / f"{язык}.json").read_text(encoding="utf-8"))
+        формы = п.get("person_forms") or {}
+        if язык == "en":
+            вон[язык] = tuple((n, "m") for n in п["person_names"][:16])
+        else:
+            вон[язык] = tuple((n if язык != "ru" else n.capitalize(), ф["gender"]) for n, ф in list(формы.items())[:16])
+    return вон
+
+
+ИМЕНА = _имена()
+РОД = {язык: dict(ИМЕНА[язык]) for язык in ЯЗЫКИ}
+
+
+def _вещь(язык, вещь, n):
+    """The thing as the frame writes it beside the number n."""
     if язык == "en":
-        return f"{день} {имя} {р[0]} {n} {вещь[1]} {место[0]}."
-    гл = р[3] if род == "f" else р[2]
-    return f"{день} {имя} {гл} {n} {rugram.форма(вещь[2], n)} {место[1]}."
+        return вещь[1]
+    if язык == "ru":
+        return rugram.форма(вещь, n)
+    if язык == "de":
+        return вещь
+    return вещь[0]
 
 
-def дыры(язык, день, имя, род, р, n, вещь, место):
+def факт(язык, день, имя, род, k, n, вещь, место):
+    """The frame with no hole; `род` is the actor's gender (ru, fr)."""
+    р = РАМКИ[язык][k]
+    в = _вещь(язык, вещь, n)
+    if язык == "en":
+        return f"{день} {имя} {р['прош']} {n} {в} {место}."
+    if язык == "ru":
+        return f"{день} {имя} {р['ж'] if род == 'f' else р['м']} {n} {в} {место}."
+    if язык == "de":
+        return f"{день} {р['гл']} {имя} {n} {в} {место}."
+    return f"{день} {имя} {р['гл']} {n} {в} {место}."
+
+
+def дыры(язык, день, имя, род, k, n, вещь, место):
     """Every role asked in turn: (question, answer) pairs, the answer being
-    the filler the question removed; «who» takes the masculine in RU."""
+    the filler the question removed. The question word names the role."""
+    р = РАМКИ[язык][k]
+    в = _вещь(язык, вещь, n)
     if язык == "en":
-        прош, осн = р[0], р[1]
+        прош, осн = р["прош"], р["осн"]
         return (
-            (f"who {прош} {n} {вещь[1]} {место[0]} {день}?", f"{имя}."),
-            (f"how many {вещь[1]} did {имя} {осн} {место[0]} {день}?", f"{n}."),
-            (f"what did {имя} {осн} {место[0]} {день}?", f"{n} {вещь[1]}."),
-            (f"where did {имя} {осн} {n} {вещь[1]} {день}?", f"{место[0]}."),
-            (f"when did {имя} {осн} {n} {вещь[1]} {место[0]}?", f"{день}."),
+            (f"who {прош} {n} {в} {место} {день}?", f"{имя}."),
+            (f"how many {в} did {имя} {осн} {место} {день}?", f"{n}."),
+            (f"what did {имя} {осн} {место} {день}?", f"{n} {в}."),
+            (f"where did {имя} {осн} {n} {в} {день}?", f"{место}."),
+            (f"when did {имя} {осн} {n} {в} {место}?", f"{день}."),
         )
-    гл = р[3] if род == "f" else р[2]
-    вещи = rugram.форма(вещь[2], n)
+    if язык == "ru":
+        гл = р["ж"] if род == "f" else р["м"]
+        return (
+            (f"кто {р['м']} {n} {в} {место} {день}?", f"{имя}."),
+            (f"сколько {rugram.форма(вещь, 5)} {гл} {имя} {место} {день}?", f"{n}."),
+            (f"что {гл} {имя} {место} {день}?", f"{n} {в}."),
+            (f"{р['куда']} {гл} {имя} {n} {в} {день}?", f"{место}."),
+            (f"когда {гл} {имя} {n} {в} {место}?", f"{день}."),
+        )
+    if язык == "de":
+        гл = р["гл"]
+        return (
+            (f"wer {гл} {день} {n} {в} {место}?", f"{имя}."),
+            (f"wie viele {в} {гл} {имя} {день} {место}?", f"{n}."),
+            (f"was {гл} {имя} {день} {место}?", f"{n} {в}."),
+            (f"{р['куда']} {гл} {имя} {день} {n} {в}?", f"{место}."),
+            (f"wann {гл} {имя} {n} {в} {место}?", f"{день}."),
+        )
+    if язык == "es":
+        гл = р["гл"]
+        ск = "cuántas" if вещь[1] == "f" else "cuántos"
+        return (
+            (f"¿quién {гл} {n} {в} {место} {день}?", f"{имя}."),
+            (f"¿{ск} {в} {гл} {имя} {место} {день}?", f"{n}."),
+            (f"¿qué {гл} {имя} {место} {день}?", f"{n} {в}."),
+            (f"¿dónde {гл} {имя} {n} {в} {день}?", f"{место}."),
+            (f"¿cuándo {гл} {имя} {n} {в} {место}?", f"{день}."),
+        )
+    if язык == "it":
+        гл = р["гл"]
+        ск = "quante" if вещь[1] == "f" else "quanti"
+        return (
+            (f"chi {гл} {n} {в} {место} {день}?", f"{имя}."),
+            (f"{ск} {в} {гл} {имя} {место} {день}?", f"{n}."),
+            (f"che cosa {гл} {имя} {место} {день}?", f"{n} {в}."),
+            (f"dove {гл} {имя} {n} {в} {день}?", f"{место}."),
+            (f"quando {гл} {имя} {n} {в} {место}?", f"{день}."),
+        )
+    гл = р["гл"]
+    осн = гл.split(" ", 1)[1]                       # the participle unagreed
+    прич = р["прич"][1 if вещь[1] == "f" else 0]    # agreed with the fronted object
+    он = "elle" if род == "f" else "il"
+    что = "qu'est-ce qu'" if имя[0].lower() in "aeiouhéè" else "qu'est-ce que "
     return (
-        (f"кто {р[2]} {n} {вещи} {место[1]} {день}?", f"{имя}."),
-        (f"сколько {rugram.форма(вещь[2], 5)} {гл} {имя} {место[1]} {день}?", f"{n}."),
-        (f"что {гл} {имя} {место[1]} {день}?", f"{n} {вещи}."),
-        (f"{р[4]} {гл} {имя} {n} {вещи} {день}?", f"{место[1]}."),
-        (f"когда {гл} {имя} {n} {вещи} {место[1]}?", f"{день}."),
+        (f"qui {гл} {n} {в} {место} {день} ?", f"{имя}."),
+        (f"combien de {в} {имя} a-t-{он} {прич} {место} {день} ?", f"{n}."),
+        (f"{что}{имя} {гл} {место} {день} ?", f"{n} {в}."),
+        (f"où {имя} a-t-{он} {осн} {n} {в} {день} ?", f"{место}."),
+        (f"quand {имя} a-t-{он} {осн} {n} {в} {место} ?", f"{день}."),
     )
 
 
@@ -81,20 +235,50 @@ def _alt(слова):
     return "|".join(re.escape(с) for с in sorted(set(слова), key=len, reverse=True))
 
 
+def _глаголы(язык):
+    if язык == "en":
+        return [р["прош"] for р in РАМКИ[язык]]
+    if язык == "ru":
+        return [г for р in РАМКИ[язык] for г in (р["м"], р["ж"])]
+    return [р["гл"] for р in РАМКИ[язык]]
+
+
+_ЛАТ = "[A-ZÀ-Ý][a-zà-ÿß]+"
+_ЛАТ_СЛОВО = "[a-zà-ÿß]+"
 ФАКТ = {
-    "en": re.compile(rf"^(?P<день>{_alt(ДНИ['en'])}) (?P<имя>[a-z]+) (?P<гл>{_alt(р[0] for р in РАМКИ)}) (?P<n>\d+) "
-                     rf"(?P<вещь>[a-z]+) (?P<место>{_alt(м[0] for р in РАМКИ for м in р[5])})\.$"),
-    "ru": re.compile(rf"^(?P<день>{_alt(ДНИ['ru'])}) (?P<имя>[А-ЯЁ][а-яё]+) (?P<гл>{_alt(г for р in РАМКИ for г in р[2:4])}) (?P<n>\d+) "
-                     rf"(?P<вещь>[а-яё]+) (?P<место>{_alt(м[1] for р in РАМКИ for м in р[5])})\.$"),
+    "en": re.compile(rf"^(?P<день>{_alt(ДНИ['en'])}) (?P<имя>[a-z]+) (?P<гл>{_alt(_глаголы('en'))}) (?P<n>\d+) "
+                     rf"(?P<вещь>[a-z]+) (?P<место>{_alt(м for р in РАМКИ['en'] for м in р['места'])})\.$"),
+    "ru": re.compile(rf"^(?P<день>{_alt(ДНИ['ru'])}) (?P<имя>[А-ЯЁ][а-яё]+) (?P<гл>{_alt(_глаголы('ru'))}) (?P<n>\d+) "
+                     rf"(?P<вещь>[а-яё]+) (?P<место>{_alt(м for р in РАМКИ['ru'] for м in р['места'])})\.$"),
+    "de": re.compile(rf"^(?P<день>{_alt(ДНИ['de'])}) (?P<гл>{_alt(_глаголы('de'))}) (?P<имя>{_ЛАТ}) (?P<n>\d+) "
+                     rf"(?P<вещь>{_ЛАТ}) (?P<место>{_alt(м for р in РАМКИ['de'] for м in р['места'])})\.$"),
 }
-СТРОКА = re.compile(r"^(?P<факт>[^.?]+\.)(?: (?P<вопрос>[^?]+)\? (?P<ответ>[^.?]+)\.)?$")
+for _я in ("es", "it", "fr"):
+    ФАКТ[_я] = re.compile(rf"^(?P<день>{_alt(ДНИ[_я])}) (?P<имя>{_ЛАТ}) (?P<гл>{_alt(_глаголы(_я))}) (?P<n>\d+) "
+                          rf"(?P<вещь>{_ЛАТ_СЛОВО}) (?P<место>{_alt(м for р in РАМКИ[_я] for м in р['места'])})\.$")
+СТРОКА = re.compile(r"^(?P<факт>[^.?]+\.)(?: (?P<вопрос>[^?]+?) ?\? (?P<ответ>[^.?]+)\.)?$")
+
+
+def _рамка(язык, глагол):
+    for k, р in enumerate(РАМКИ[язык]):
+        формы = (р["прош"],) if язык == "en" else (р["м"], р["ж"]) if язык == "ru" else (р["гл"],)
+        if глагол in формы:
+            return k, р
+    return None, None
+
+
+def _та_вещь(язык, р, слово, n):
+    for в in р["вещи"]:
+        if _вещь(язык, в, n) == слово:
+            return в
+    return None
 
 
 def разобрать(строка):
-    """(язык, roles, question, answer) of a line of the hole market, or
-    None when the line's fact is not a frame of this house. The roles are
-    the generator's arguments, recovered: the verb names the frame, the
-    thing and place are looked up in it, the RU count form must agree."""
+    """(язык, roles, question, answer) of a line of the hole market, or None
+    when the line's fact is not a frame of this house. roles is None when the
+    frame's own verb, day and place stand beside a thing the frame does not
+    carry, a count form that disagrees, or an undeclared name (fr, ru)."""
     м = СТРОКА.match(строка)
     if not м:
         return None
@@ -103,25 +287,20 @@ def разобрать(строка):
         if not ф:
             continue
         n = int(ф["n"])
-        for р in РАМКИ:
-            if язык == "en" and ф["гл"] != р[0]:
-                continue
-            if язык == "ru" and ф["гл"] not in р[2:4]:
-                continue
-            места = [м_ for м_ in р[5] if м_[0 if язык == "en" else 1] == ф["место"]]
-            if язык == "en":
-                вещи = [в for в in р[6] if в[1] == ф["вещь"]]
-                род = "m"
-            else:
-                вещи = [в for в in р[6] if rugram.форма(в[2], n) == ф["вещь"]]
-                род = "f" if ф["гл"] == р[3] else "m"
-            if not места or not вещи:
-                # the frame's own verb, day and place, but a thing this
-                # frame does not carry, or a count form that disagrees
-                return язык, None, м["вопрос"], м["ответ"]
-            роли = (ф["день"], ф["имя"], род, р, n, вещи[0], места[0])
-            return язык, роли, м["вопрос"], м["ответ"]
-        return None
+        k, р = _рамка(язык, ф["гл"])
+        if р is None:
+            return None
+        вещь = _та_вещь(язык, р, ф["вещь"], n)
+        место = ф["место"] if ф["место"] in р["места"] else None
+        if язык == "ru":
+            род = "f" if ф["гл"] == р["ж"] else "m"
+        elif язык == "fr":
+            род = РОД["fr"].get(ф["имя"])
+        else:
+            род = "m"
+        if вещь is None or место is None or род is None:
+            return язык, None, м["вопрос"], м["ответ"]
+        return язык, (ф["день"], ф["имя"], род, k, n, вещь, место), м["вопрос"], м["ответ"]
     return None
 
 
@@ -136,4 +315,5 @@ def судить(строка):
         return (True, False)
     if вопрос is None:
         return (True, True)
-    return (True, (f"{вопрос}?", f"{ответ}.") in дыры(язык, *роли))
+    пары = {(в.rstrip(" ?"), о) for в, о in дыры(язык, *роли)}
+    return (True, (вопрос.rstrip(" ?"), f"{ответ}.") in пары)
