@@ -21,6 +21,10 @@ the wrong kind (an unknown verb or an unknown thing is not judged here).
 ДЕНЬГИ = {"dollars", "coins", "cents", "rubles", "euros"}
 ПОСЕВ = {"seeds", "flowers", "trees", "bulbs"}
 СБОР = {"shells", "stones", "stamps", "coins", "cards", "seeds", "flowers", "mushrooms", "berries", "nuts", "eggs", "apples", "pears", "plums", "cherries"}
+ВРЕМЯ = {"minutes", "hours", "seconds", "days", "weeks", "months", "years"}
+# what a hand picks: small countable things (not distances, not money, not points)
+В_РУКЕ = {"books", "cards", "pens", "pencils", "balls", "marbles", "stamps", "coins", "shells", "stones", "flowers", "toys", "blocks",
+          "buttons", "stickers", "balloons", "cups", "boxes", "bottles", "hats", "shirts", "keys", "rings", "pieces", "sticks", "leaves"}
 
 ГЛАГОЛ_БЕРЁТ = {
     "ate": ЕДА, "eats": ЕДА, "eat": ЕДА, "eaten": ЕДА,
@@ -32,9 +36,11 @@ the wrong kind (an unknown verb or an unknown thing is not judged here).
     "drove": РАССТОЯНИЕ_ВРЕМЯ, "drives": РАССТОЯНИЕ_ВРЕМЯ, "swam": РАССТОЯНИЕ_ВРЕМЯ, "swims": РАССТОЯНИЕ_ВРЕМЯ,
     "weighs": ВЕС, "weighed": ВЕС, "lifts": ВЕС, "lifted": ВЕС,
     "scored": ОЧКИ, "scores": ОЧКИ,
-    "earns": ДЕНЬГИ, "earned": ДЕНЬГИ, "spends": ДЕНЬГИ, "spent": ДЕНЬГИ, "paid": ДЕНЬГИ, "pays": ДЕНЬГИ,
+    "earns": ДЕНЬГИ, "earned": ДЕНЬГИ, "paid": ДЕНЬГИ, "pays": ДЕНЬГИ,
+    # money is spent, and so is time
+    "spends": ДЕНЬГИ | ВРЕМЯ, "spent": ДЕНЬГИ | ВРЕМЯ,
     "planted": ПОСЕВ, "plants": ПОСЕВ,
-    "collected": СБОР, "collects": СБОР, "picked": СБОР | ЕДА,
+    "collected": СБОР | В_РУКЕ, "collects": СБОР | В_РУКЕ, "picked": СБОР | ЕДА | В_РУКЕ, "picks": СБОР | ЕДА | В_РУКЕ,
 }
 ВСЕ_ВЕЩИ = set().union(*ГЛАГОЛ_БЕРЁТ.values())
 

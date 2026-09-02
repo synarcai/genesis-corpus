@@ -32,9 +32,9 @@ ITEMS = ["apples", "balls", "books", "coins",
          "nuts", "stamps", "cookies", "pieces"]
 UNITS = ["hours", "miles", "days", "pounds",
          "minutes"]
-# a rate's verb and the unit it takes: hours are read, minutes run, miles
+# a rate's verb and the unit it takes: hours are slept, minutes run, miles
 # walked, pounds lifted; «days every day» is no rate — pages are read instead
-СТАВКА_ГЛАГОЛ = {"hours": ("reads", "hours"), "minutes": ("runs", "minutes"), "miles": ("walks", "miles"),
+СТАВКА_ГЛАГОЛ = {"hours": ("sleeps", "hours"), "minutes": ("runs", "minutes"), "miles": ("walks", "miles"),
                  "pounds": ("lifts", "pounds"), "days": ("reads", "pages")}
 
 

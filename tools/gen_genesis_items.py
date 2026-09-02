@@ -41,6 +41,7 @@ from layer import emit
 
 
 from gsm_items import ANIMATE, ITEMS
+import verbthings  # noqa: E402
 from plural import by_count, singular
 
 # ИМЕНА, ЧУЖИЕ БЕНЧМАРКУ: агенты не должны совпадать с носителями
@@ -100,6 +101,10 @@ def pass_shows(pass_i):
         sub = SUB_ANIM if anim else SUB_PAIRS
         q1, a1, tail, q2, a2 = (
             ASK_ANIM if anim else ASK_THING)
+        # A VERB TAKES ITS OWN KIND OF THINGS (tools/verbthings.py): the page
+        # is per thing, so the PAIR follows the thing — «picked 4 miles» no more.
+        add = [п for п in add if all(verbthings.берёт(г, it) for г in п)] or add
+        sub = [п for п in sub if all(verbthings.берёт(г, it) for г in п)] or sub
         v1, v2 = add[seed % len(add)]
         s1, s2 = sub[seed % len(sub)]
         out.append(
