@@ -130,6 +130,12 @@ class Книга:
 
 
 ПОЛКА = (
+    # СЛОВАРЬ — ПЕРВЫЙ НА ПОЛКЕ ПО СЛОВУ ВЛАДЕЛЬЦА. Webster 1913 — public
+    # domain, полное издание, сто с лишним тысяч статей; шедевр
+    # английского языка того же ряда, что Даль для русского.
+    Книга(29765, "webster_1913", "язык", "словарь",
+          1913, 1913, "Webster's Unabridged Dictionary",
+          "Noah Webster"),
     Книга(9662, "hume_enquiry", "философия познания", "трактат",
           1748, 1902, "An Enquiry Concerning Human Understanding",
           "David Hume"),

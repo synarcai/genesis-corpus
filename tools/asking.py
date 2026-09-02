@@ -95,10 +95,12 @@ _КРАЙ = "«»\"'()[],.;:!"
 # которых дом молчит, а не лжёт.
 ЗАЧИНЫ = frozenset("""
 what how which where when who whom whose why is are was were does do did
-can could should has have will
+whence whither wherefore wherein whereby whereof
+can could should has have will shall must may might would ought need
 чему как сколько что какой какая какое какие каков какова каково
 каковы каком какую какого какими где
 когда кто чем чего кому насколько почему зачем отчего откуда куда
+чём ком кем который которая которое которые которого которой которых
 является делится простое сравнимы
 взаимно есть ли если во на
 wenn wie was ist sind welche welcher wo wann warum wieviel
