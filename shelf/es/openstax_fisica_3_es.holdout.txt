@@ -1,0 +1,370 @@
+Cuando un electrón y un positrón colisionan, se aniquilan mutuamente para producir un fotón, que existe durante un tiempo demasiado corto para ser detectado. El fotón produce un par de leptones (por ejemplo, un electrón y una posición, un muon o un antimuon, o un tau y un antitau) o un par de cuarks. Si se producen cuarks, se forman mesones, como $c\overset{\text{−}}{c}$ y $b\overset{\text{−}}{b}.$ Estos mesones se crean casi en reposo ya que el momento total inicial del sistema electrón-positrón es cero. Observe que los mesones no pueden crearse a cualquier energía de colisión, sino solo a las energías "resonantes" que corresponden a las masas únicas de los mesones. Los mesones creados de este modo son muy inestables y decaen rápidamente en partículas más ligeras, como electrones, protones y fotones. Los "fragmentos" de las colisiones proporcionan una valiosa información sobre las interacciones de las partículas.
+
+A medida que avanza el campo de la física de partículas, las máquinas de haces de partículas colisionantes son cada vez más potentes. El Gran Colisionador de Hadrones (Large Hadron Collider, LHC), actualmente el mayor acelerador del mundo colisiona protones a energías de haz superiores a 6 TeV. La energía del centro de masa (W) se refiere a la energía total disponible para crear nuevas partículas en una máquina de colisión, o la energía total de las partículas entrantes en el marco del centro de masa. (El concepto de marco de referencia del centro de masa se trata en Momento lineal y colisiones). Por lo tanto, el LHC es capaz de producir una o más partículas con una masa total superior a 12 TeV. La energía del centro de masa está dada por:
+
+$$ {W}^{2} = 2 [{E}_{1}{E}_{2} + ({p}_{1}c) ({p}_{2}c)] + { ({m}_{1}{c}^{2}) }^{2} + { ({m}_{2}{c}^{2}) }^{2}, $$
+
+donde ${E}_{1}$ y ${E}_{2}$ son las energías totales de las partículas entrantes (1 y 2), ${p}_{1}$ y ${p}_{2}$ son las magnitudes de sus momentos, y ${m}_{1}$ y ${m}_{2}$ son sus masas en reposo.
+
+
+Ejemplo 11.7
+
+
+Creación de una nueva partícula
+
+La masa del mesón upsilon $(ϒ)$ ($b\overset{\text{−}}{b}$) se crea en un colisionador simétrico de electrones y positrones. ¿Qué energía del haz se necesita?
+
+
+Estrategia
+
+El Grupo de Datos de Partículas (Particle Data Group) ha declarado que la energía de la masa en reposo de este mesón es de aproximadamente 10,58 GeV. La expresión anterior para la energía del centro de masa puede simplificarse porque un colisionador simétrico implica ${\vec{\text{p}}}_{1} = \text{−}{\vec{\text{p}}}_{2}.$ Además, las masas en reposo de los electrones y positrones que colisionan son idénticas $({m}_{e}{c}^{2} = 0,511 \text{MeV})$ y mucho menores que la masa de la partícula de energía creada. Así, la energía del centro de la masa (W) puede expresarse completamente en términos de la energía del haz, ${E}_{\text{haz}} = {E}_{1} = {E}_{2}.$
+
+
+Solución
+
+Con base en las suposiciones anteriores, tenemos
+
+$$ {W}^{2} \approx 2 [{E}_{1}{E}_{2} + {E}_{1}{E}_{2}] = 4{E}_{1}{E}_{2} = 4{E}_{1}^{2}. $$
+
+Por lo tanto, la energía del haz es
+
+$$ {E}_{\text{haz}} \approx {E}_{1} = \frac{W}{2}. $$
+
+La energía de la masa en reposo de la partícula creada en la colisión es igual a la energía del centro de masa, por lo que
+
+$$ {E}_{\text{haz}} \approx \frac{10,58 \text{GeV}}{2} = 5,29 \text{GeV}. $$
+
+
+Importancia
+
+Dada la escala de energía de este problema, la energía de masa en reposo del mesón upsilon $(ϒ)$ se debe casi por completo a las energías cinéticas iniciales del electrón y los positrones. Este mesón es muy inestable y decae rápidamente en partículas más ligeras y estables. La existencia de la partícula upsilon $(ϒ)$ aparece como un aumento dramático de tales eventos a 5,29 GeV.
+
+Las energías de los haces más altas requieren aceleradores más grandes, por lo que las máquinas modernas de haces de colisión son muy grandes. El LHC, por ejemplo, tiene 17 millas de circunferencia. (¡En los años 40, Enrico Fermi imaginó un acelerador que rodeara toda la Tierra!) Un importante reto científico del siglo XXI es reducir el tamaño de los aceleradores de partículas.
+
+
+Detectores de partículas
+
+El objetivo de un detector de partículas es medir con precisión el resultado de las colisiones creadas por un acelerador de partículas. Los detectores son multipropósito. En otras palabras, el detector está dividido en muchos subdetectores, cada uno de ellos diseñado para medir un aspecto diferente del evento de colisión. Por ejemplo, un detector puede estar diseñado para medir fotones y otro para medir muones. Para ilustrar cómo los subdetectores contribuyen a la comprensión de un evento de colisión completo, describimos los subdetectores del Solenoide Compacto de Muones (Compact Muon Solenoid, CMS), que fue utilizado para descubrir el Bosón de Higgs en el LHC.
+
+El tubo del haz del detector está fuera (y dentro) de la página de la izquierda. Las partículas producidas por las colisiones pp (los "fragmentos de colisión") salen del detector en todas las direcciones. Estas partículas se encuentran con múltiples capas de subdetectores. Un subdetector es un detector de partículas dentro de un sistema mayor de detectores diseñado para medir ciertos tipos de partículas. Hay varios tipos principales de subdetectores. Los dispositivos de seguimiento determinan la trayectoria y por tanto, el momento de una partícula; los calorímetros miden la energía de una partícula; y los detectores de identificación de partículas determinan la identidad de una partícula (su masa).
+
+El primer conjunto de subdetectores que encuentran las partículas es el sistema de seguimiento de silicio. Este sistema está diseñado para medir el momento de las partículas cargadas (como los electrones y los protones). El detector está inmerso en un campo magnético uniforme, por lo que las partículas cargadas se doblan en una trayectoria circular por una fuerza de Lorentz (como en el caso del ciclotrón). Si el momento de la partícula es grande, el radio de la trayectoria es grande y la trayectoria es casi recta. Pero si el momento es pequeño, el radio de la trayectoria es pequeño, y la trayectoria está muy curvada. A medida que las partículas pasan por el detector, interactúan con los detectores de microbandas (microstrips) de silicio en múltiples puntos. Estos detectores producen pequeñas señales eléctricas cuando las partículas cargadas pasan cerca de los elementos detectores. A continuación, las señales se amplifican y se registran. Una serie de "golpes" eléctricos se utiliza para determinar la trayectoria de la partícula en el sistema de seguimiento. Un "mejor ajuste" generado por computadora para esta trayectoria da el radio de la pista y en consecuencia, el momento de la partícula. En el LHC, se registra un gran número de pistas para el mismo evento de colisión. Las líneas azules y verdes de la Figura 11.10 muestran los ajustes de las pistas.
+
+Más allá de las capas de seguimiento está el calorímetro electromagnético. Este detector está fabricado con cristales transparentes a base de plomo. Cuando los electrones interactúan con los cristales, irradian fotones de alta energía. Los fotones interactúan con el cristal para producir pares electrón-positrón. Luego, estas partículas irradian más fotones. El proceso se repite, produciendo una lluvia de partículas (el cristal "brilla"). Un modelo simplificado de este proceso es el siguiente.
+
+Un electrón con energía ${E}_{0}$ golpea el cristal y pierde la mitad de su energía en forma de fotón. El fotón produce un par electrón-positrón, y cada partícula se aleja con la mitad de la energía del fotón. Mientras tanto, el electrón original vuelve a irradiar. Así, nos quedan cuatro partículas: dos electrones, un positrón y un fotón, cada uno con una energía ${E}_{0}\text{/}4.$ El número de partículas en la lluvia aumenta geométricamente. Después de n eventos de radiación, hay partículas $N = {2}^{n}$. Por lo tanto, la energía total por partícula después de n eventos de radiación es
+
+$$ E (t) = \frac{{E}_{0}}{{2}^{n}}, $$
+
+donde ${E}_{0}$ es la energía incidente y E(t) es la cantidad de energía por partícula después de n eventos. Un fotón entrante desencadena una cadena de acontecimientos similar. Si la energía por partícula cae por debajo de un determinado valor umbral, otros tipos de procesos radioactivos adquieren importancia y la lluvia de partículas cesa. Finalmente, la energía total de la partícula entrante se absorbe y se convierte en una señal eléctrica.
+
+Más allá del calorímetro de cristal está el calorímetro de hadrones. Como su nombre indica, este subdetector mide hadrones como protones y piones. El calorímetro de hadrones está formado por capas de latón y acero separadas por centelleadores de plástico. Su objetivo es absorber la energía de las partículas y convertirla en una señal electrónica. Más allá de este detector hay una gran bobina magnética que se utiliza para producir un campo uniforme para el seguimiento.
+
+El último subdetector es el detector de muones, que consiste en placas de hierro que solo pueden atravesar los muones (y los neutrinos). Entre las placas de hierro hay varios tipos de elementos de seguimiento de muones que miden con precisión el momento del muon. Los detectores de muones son importantes porque el bosón de Higgs (del que hablaremos en breve) puede detectarse a través de sus desintegraciones en cuatro muones, de ahí el nombre del detector.
+
+Una vez recogidos los datos de cada uno de los subdetectores de partículas, se puede evaluar el evento de colisión completo. La energía de la i-ésima partícula se escribe
+
+$$ {E}_{i} = \sqrt{{ ({p}_{i}c) }^{2} + { ({m}_{i}{c}^{2}) }^{2}}, $$
+
+donde ${p}_{i}$ es la magnitud absoluta del momento de la i-ésima partícula, y ${m}_{i}$ es su masa en reposo.
+
+Por lo tanto, la energía total de todas las partículas es
+
+$$ {E}_{\text{total}} = \sum_{i}{E}_{i}. $$
+
+Si se detectan todas las partículas, la energía total debe ser igual a la energía del centro de masa de la máquina del haz que colisiona (W). En la práctica, no se identifican todas las partículas, ya sea porque son demasiado difíciles de detectar (neutrinos) o porque estas partículas "se escapan". En muchos casos, se pueden "reconstruir" cadenas enteras de decaimiento, como si se recompusiera un reloj que se ha hecho pedazos. La información sobre estas cadenas de decaimiento es fundamental para la evaluación de los modelos de interacciones de las partículas.
+
+
+11.5 El modelo estándar
+
+La principal actividad intelectual de cualquier científico es el desarrollo y la revisión de modelos científicos. Un físico de partículas busca desarrollar modelos de interacciones de partículas. Este trabajo se basa directamente en los trabajos realizados sobre la gravedad y el electromagnetismo en los siglos XVII, XVIII y XIX. El objetivo final de la física es una "teoría del todo" unificada que describa todas las interacciones de las partículas en términos de una única ecuación elegante y una imagen. La ecuación en sí puede ser compleja, pero muchos científicos sospechan que la idea que hay detrás de la ecuación nos hará exclamar: "¿Cómo se nos pudo escapar? ¡Era tan obvio!"
+
+En esta sección, presentamos el modelo estándar, que es el mejor modelo actual de las interacciones de las partículas. Describimos el modelo estándar en detalle en términos de fuerzas electromagnéticas y nucleares débiles y fuertes. Al final de esta sección, revisaremos las teorías de unificación en la física de partículas.
+
+
+Introducción al modelo estándar
+
+El modelo estándar de las interacciones entre partículas contiene dos ideas: la teoría electrodébil y la cromodinámica cuántica (QCD) (la fuerza que actúa entre las cargas de color). La teoría electrodébil unifica la teoría de la electrodinámica cuántica (QED), el equivalente moderno del electromagnetismo clásico, y la teoría de las interacciones nucleares débiles. El modelo estándar combina la teoría de la relatividad y la mecánica cuántica.
+
+En el modelo estándar, las interacciones de las partículas se producen mediante el intercambio de bosones, los "portadores de fuerza". Por ejemplo, la fuerza electrostática se comunica entre dos partículas con carga positiva enviando y recibiendo fotones sin masa. Esto puede ocurrir en un rango teórico infinito. El resultado de estas interacciones es la repulsión (o atracción) de Coulomb. Del mismo modo, los cuarks se unen mediante el intercambio de gluones sin masa. Los leptones se desprenden de otros leptones (o decaen en partículas más ligeras) mediante el intercambio de bosones masivos W y Z. Un resumen de las fuerzas descritas por el modelo estándar se encuentra en la Tabla 11.6. La fuerza gravitacional, mediada por el intercambio de gravitaciones sin masa, se añade en esta tabla para completarla, pero no forma parte del modelo estándar.
+
+El modelo estándar puede expresarse en términos de ecuaciones y diagramas. Las ecuaciones son complejas y suelen tratarse en un curso más avanzado de física moderna. Sin embargo, la esencia del modelo estándar puede captarse mediante los diagramas de Feynman. El diagrama de Feynman, inventado por el físico estadounidense Richard Feynman (1918 a 1988), es un diagrama espacio-tiempo que describe cómo se mueven e interactúan las partículas. Se utilizan diferentes símbolos para diferentes partículas. Las interacciones de las partículas en una dimensión se muestran como un gráfico tiempo-posición (no un gráfico posición-tiempo). Como ejemplo, considere la dispersión de un electrón y un neutrino electrónico. El electrón se mueve hacia valores positivos de la x (hacia la derecha) y colisiona con un neutrino electrónico que se mueve hacia la izquierda. El electrón intercambia un bosón Z (carga cero). El electrón se dispersa hacia la izquierda y el neutrino se dispersa hacia la derecha. Este intercambio no es instantáneo. El bosón Z viaja de una partícula a otra en un corto periodo de tiempo. Se dice que la interacción del electrón y el neutrino se produce a través de la fuerza nuclear débil. Esta fuerza no puede ser explicada por el electromagnetismo clásico porque la carga del neutrino es cero. La fuerza nuclear débil se analiza de nuevo más adelante en esta sección.
+
+
+Fuerza electromagnética
+
+Según la QED, la fuerza electromagnética se transmite entre las partículas cargadas mediante el intercambio de fotones. La teoría se basa en tres procesos básicos: Un electrón viaja de un lugar a otro, emite o absorbe un fotón y vuelve a viajar de un lugar a otro. Cuando dos electrones interactúan, uno de ellos emite el fotón y el otro lo recibe. Los fotones transfieren energía y momento de un electrón a otro. El resultado neto en este caso es una fuerza de repulsión. Los fotones intercambiados son virtuales. Una partícula virtual es una partícula que existe durante un tiempo demasiado corto para ser observable. Dado que el tiempo de tránsito de los fotones $\text{Δ}t$ es extremadamente pequeño, el principio de incertidumbre de Heisenberg establece que la incertidumbre en la energía del fotón, $\Delta E,$ puede ser muy grande.
+
+Para estimar el alcance de la interacción electromagnética, supongamos que la incertidumbre sobre la energía es comparable a la energía del propio fotón, escrita como
+
+$$ \text{Δ}E \approx E. $$
+
+El principio de incertidumbre de Heisenberg establece que
+
+$$ \text{Δ}E \approx \frac{h}{\text{Δ}t}. $$
+
+Combinando estas ecuaciones, tenemos
+
+$$ \text{Δ}t \approx \frac{h}{E}. $$
+
+La energía de un fotón está dada por $E = hf$, así que
+
+$$ \text{Δ}t \approx \frac{h}{hf} \approx \frac{1}{f} = \frac{\lambda }{c}. $$
+
+La distancia d que el fotón puede desplazarse en este tiempo es, por tanto
+
+$$ d = c \text{Δ}t \approx c (\frac{\lambda }{c}) = \lambda. $$
+
+La energía del fotón virtual puede ser arbitrariamente pequeña, por lo que su longitud de onda puede ser arbitrariamente grande; en principio, incluso infinitamente grande. La fuerza electromagnética es, por tanto, una fuerza de largo alcance.
+
+
+Fuerza nuclear débil
+
+La fuerza nuclear débil es la responsable del decaimiento radiactivo. El alcance de la fuerza nuclear débil es muy corto (solo alrededor de ${10}^{−18}$ m) y al igual que las otras fuerzas del modelo estándar, puede describirse en términos de intercambio de partículas. (No existe una función simple como la fuerza de Coulomb para describir estas interacciones). La partícula intercambiada es uno de los tres bosones: ${\text{W}}^{ + }, {\text{W}}^{\text{−}},$ y ${\text{Z}}^{0}$. El modelo estándar predice la existencia de estas partículas de espín 1 y también predice sus masas específicas. En combinación con experimentos anteriores, se predijo que la masa de los bosones W cargados era $81 \text{GeV/}{c}^{2}$ y la de los bosones ${\text{Z}}^{0}$ se preveía como $90 \text{GeV/}{c}^{2}$. Un experimento de la Organización Europea para la Investigación Nuclear (Conseil Européen pour la Recherche Nucléaire, CERN) descubrió en la década de 1980 partículas con exactamente estas masas, una victoria impresionante para el modelo.
+
+La fuerza nuclear débil se asocia con mayor frecuencia a la dispersión y decaimiento de partículas inestables en partículas ligeras. Por ejemplo, los neutrones decaen en protones a través de la fuerza nuclear débil. Esta reacción se escribe
+
+$$ \text{n} \to \text{p} + {\text{e}}^{\text{−}} + {\nu }_{\text{e}}, $$
+
+donde n es un neutrón, p es un protón, ${\text{e}}^{\text{−}}$ es un electrón, y ${\nu }_{\text{e}}$ es un neutrino electrónico casi sin masa. Este proceso, llamado decaimiento beta, es importante en muchos procesos físicos. Un diagrama de Feynman del decaimiento beta se muestra en la Figura 11.14(a). El neutrón emite un ${\text{W}}^{\text{−}}$ y se convierte en un protón, y luego el ${\text{W}}^{\text{−}}$ produce un electrón y un antineutrino. Este proceso es similar al evento de dispersión
+
+$$ {\text{e}}^{\text{−}} + \text{p} \to \text{n} + {v}_{\text{e}}\text{,} $$
+
+En este proceso, el protón emite un ${\text{W}}^{ + }$ y se convierte en un neutrón (b). El ${\text{W}}^{ + }$ se combina entonces con el electrón, formando un neutrino. En los ejercicios se analizan otras interacciones electrodébiles.
+
+El alcance de la fuerza nuclear débil puede estimarse con un argumento similar al anterior. Suponiendo que la incertidumbre sobre la energía es comparable a la energía de la partícula de intercambio por $(E \approx m{c}^{2}),$ tenemos
+
+$$ \text{Δ}t \approx \frac{h}{m{c}^{2}}\text{.} $$
+
+La distancia máxima d que puede recorrer la partícula de intercambio (suponiendo que se desplaza a una velocidad cercana a c) es, por lo tanto
+
+$$ d \approx c\text{Δ}t = \frac{h}{mc}\text{.} $$
+
+Para uno de los bosones vectoriales cargados con $m{c}^{2} \approx 80 \text{GeV} = 1,28 \times {10}^{−8} \text{J},$ obtenemos $mc = 4,27 \times {10}^{−17} \text{J} \cdot \text{s}\text{/}\text{m}.$ Por lo tanto, el rango de la fuerza mediada por este bosón es
+
+$$ d \approx \frac{1,05 \times {10}^{−34} \text{J} \cdot \text{s}}{4,27 \times {10}^{−17} \text{J} \cdot \text{s/m}} \approx 2 \times {10}^{−18} \text{m}\text{.} $$
+
+
+Fuerza nuclear fuerte
+
+Las interacciones nucleares fuertes describen las interacciones entre los cuarks. Los detalles de estas interacciones son descritos por la QCD. Según esta teoría, los cuarks se unen enviando y recibiendo gluones. Al igual que los cuarks llevan carga eléctrica [ya sea $(+ 2\text{/}3) e$ o $(−1\text{/}3) e]$ que determina la fuerza de las interacciones electromagnéticas entre los cuarks, estos también llevan "carga de color" (ya sea rojo, azul o verde) que determina la fuerza de las interacciones nucleares fuertes. Como ya se ha comentado, los cuarks se unen en grupos en combinaciones de color neutro (o "blanco"), como el rojo-azul-verde y el rojo-antirrojo.
+
+Curiosamente, los propios gluones llevan carga de color. Existen ocho gluones conocidos: seis que llevan un color y un anticolor, y dos que son de color neutro (Figura 11.15(a)). Para ilustrar la interacción entre cuarks mediante el intercambio de gluones cargados, considere el diagrama de Feynman en la parte (b). A medida que aumenta el tiempo, un cuark rojo abajo se desplaza hacia la derecha y un cuark verde extraño se desplaza hacia la izquierda. (Estos aparecen en el borde inferior del gráfico). El cuark arriba intercambia un gluón rojo-antiverde con el cuark extraño. (Los anticolores se muestran como colores secundarios. Por ejemplo, el antirrojo se representa con el cian porque el cian se mezcla con el rojo para formar la luz blanca). Según la QCD, todas las interacciones en este proceso (identificadas con los vértices) deben ser de color neutro. Por lo tanto, el cuark abajo se transforma de rojo a verde, y el cuark extraño se transforma de verde a rojo.
+
+Como sugiere este ejemplo, la interacción entre cuarks en un núcleo atómico puede ser muy complicada. La Figura 11.16 muestra la interacción entre un protón y un neutrón. Observe que el protón se convierte en neutrón y el neutrón se convierte en protón durante la interacción. La presencia de pares cuark-anticuark en el intercambio sugiere que la unión entre nucleones puede modelarse como un intercambio de piones.
+
+En la práctica, las predicciones de la QCD son difíciles de producir. Esta dificultad se debe a la fuerza inherente de la fuerza y a la imposibilidad de ignorar términos en las ecuaciones. Por ello, los cálculos de la QCD se realizan a menudo con la ayuda de supercomputadoras. La existencia de los gluones está respaldada por los experimentos de dispersión electrón-nucleón. Los momentos estimados de los cuarks implicados en estos eventos de dispersión son mucho más pequeños de lo que esperaríamos sin gluones porque estos se llevan parte del momento de cada colisión.
+
+
+Teorías de la unificación
+
+Los físicos saben desde hace tiempo que la fuerza de una interacción entre partículas depende de la distancia de la interacción. Por ejemplo, dos partículas con carga positiva experimentan una fuerza de repulsión mayor a corta distancia que a larga. En los experimentos de dispersión, la fuerza de una interacción depende de la energía de la partícula que interactúa, ya que una mayor energía implica interacciones más cercanas y más fuertes.
+
+Los físicos de partículas sospechan ahora que la fuerza de todas las interacciones de las partículas (las cuatro fuerzas) se fusionan en altas energías, y los detalles de las interacciones de las partículas a estas energías pueden describirse en términos de una sola fuerza. Una teoría unificada describe estas interacciones y explica por qué esta descripción se rompe a escalas de baja energía. La teoría de la gran unificación intenta describir la interacción fuerte y electrodébil en términos de una sola fuerza. Una teoría del todo (theory of everything, TOE) lleva el concepto de unificación un paso más allá. Una TOE combina las cuatro fuerzas fundamentales (incluida la gravedad) en una sola teoría.
+
+
+11.6 El Big Bang
+
+Hemos hablado de las partículas elementales, que son algunas de las cosas más pequeñas que podemos estudiar. Ahora examinaremos lo que sabemos sobre el universo, que es lo más grande que podemos estudiar. El vínculo entre estos dos temas es de alta energía: El estudio de las interacciones de las partículas requiere energías muy altas, y las energías más altas que conocemos existieron durante la evolución temprana del universo. Algunos físicos piensan que las teorías de la fuerza unificada que hemos descrito en la sección anterior pueden haber gobernado realmente el comportamiento del universo en sus primeros momentos.
+
+
+Ley de Hubble
+
+En 1929, Edwin Hubble publicó uno de los descubrimientos más importantes de la astronomía moderna. Hubble descubrió que (1) las galaxias parecen alejarse de la Tierra y (2) la velocidad de recesión (v) es proporcional a la distancia (d) de la galaxia a la Tierra. Tanto v como d pueden determinarse utilizando los espectros de luz estelar. El mejor ajuste a los datos ilustrativos de la muestra se ofrece en la Figura 11.18. (El gráfico original de Hubble presentaba una considerable dispersión, pero la tendencia general seguía siendo evidente).
+
+La tendencia de los datos sugiere la relación proporcional simple:
+
+$$ v = {H}_{0}d, $$
+
+donde ${H}_{0} = 70 \text{km} \text{/} \text{s} \text{/} \text{Mpc}$ se conoce como la constante de Hubble. (Nota: 1 Mpc es un megaparsec o un millón de parsecs, donde un parsec son 3,26 años luz). Esta relación, denominada ley de Hubble, establece que las estrellas y galaxias lejanas se alejan de nosotros a una velocidad de 70 km/s por cada megaparsec de distancia. La constante de Hubble corresponde a la pendiente de la línea en la Figura 11.18. La constante de Hubble es un poco errónea, porque varía con el tiempo. El valor que se da aquí es solo su valor actual.
+
+La ley de Hubble describe un comportamiento regular de todas las galaxias, excepto las más cercanas. Por ejemplo, una galaxia situada a 100 Mpc de distancia (según su tamaño y brillo) suele alejarse de nosotros a una velocidad de
+
+$$ v = ((70\frac{\text{km}}{\text{s}}) \text{/}\text{Mpc}) (100 \text{Mpc}) = 7.000 \text{km}\text{/}\text{s}. $$
+
+Esta velocidad puede variar debido a las interacciones con las galaxias vecinas. Por el contrario, si se comprueba que una galaxia se aleja de nosotros a una velocidad de 100.000 km/s con base en su corrimiento al rojo, se encuentra a una distancia
+
+$$ d = v\text{/}{H}_{0} = (10.000 \text{km}\text{/}\text{s}) \text{/} ((70\frac{\text{km}}{\text{s}}) \text{/}\text{Mpc}) = 143 \text{Mpc}. $$
+
+Este último cálculo es aproximado porque supone que el ritmo de expansión era el mismo hace 5.000 millones de años que ahora.
+
+
+Modelo del Big Bang
+
+Los científicos que estudian el origen, la evolución y el destino final del universo (cosmología) creen que el universo comenzó en una explosión, llamada Big Bang, hace aproximadamente 13.700 millones de años. Esta explosión no fue una explosión de partículas a través del espacio, como los fuegos artificiales, sino una rápida expansión del propio espacio. Las distancias y velocidades de las estrellas y galaxias que se expanden hacia al exterior nos permiten estimar cuándo estuvo toda la materia del universo estuvo unida en el principio de los tiempos.
+
+Los científicos suelen explicar la expansión del Big Bang mediante un modelo de globo inflado. Los puntos marcados en la superficie del globo representan galaxias, y la piel del globo representa el espacio-tiempo cuadrimensional (Relatividad). A medida que el globo se infla, cada punto "ve" a los otros puntos alejarse. Este modelo arroja dos perspectivas. En primer lugar, la expansión es observada por todos los observadores del universo, independientemente de su ubicación. El "centro de expansión" no existe, por lo que la Tierra no reside en el centro "privilegiado" de la expansión (vea el Ejercicio 11.24).
+
+En segundo lugar, como ya se ha mencionado, la expansión del Big Bang se debe a la expansión del espacio, no al aumento de la separación de las galaxias en el espacio tridimensional ordinario (estático). Esta expansión cosmológica afecta a todas las cosas: polvo, estrellas, planetas e incluso la luz. Así, la longitud de onda de la luz $(\lambda)$ emitida por galaxias lejanas se "estira". Esto hace que la luz parezca más "roja" (de menor energía) para el observador, un fenómeno llamado corrimiento al rojo cosmológico. El corrimiento al rojo cosmológico solo se puede medir en las galaxias que se encuentran a más de 50 millones de años luz.
+
+
+Ejemplo 11.8
+
+
+Cálculo de velocidades y distancias galácticas
+
+Se observa que una galaxia tiene un corrimiento al rojo:
+
+$$ z = \frac{{\lambda }_{\text{obs}} - {\lambda }_{\text{emit}}}{{\lambda }_{\text{emit}}} = 4,5. $$
+
+Este valor indica una galaxia que se mueve casi a la velocidad de la luz. Utilizando la fórmula relativista del corrimiento al rojo (dada en Relatividad), determine (a) ¿A qué velocidad se aleja la galaxia con respecto a la Tierra? (b) ¿A qué distancia está la galaxia?
+
+
+Estrategia
+
+Tenemos que utilizar la fórmula relativista de Doppler para determinar la velocidad a partir del corrimiento al rojo y luego utilizar la ley de Hubble para hallar la distancia a partir de la velocidad.
+
+
+Solución
+
+donde $\text{los rayos}\beta = v\text{/}c.$ Sustituyendo el valor de z y resolviendo para $\text{los rayos}\beta$, obtenemos $\text{los rayos}\beta = 0,93.$ Este valor implica que la velocidad de la galaxia es de $2,8 \times {10}^{8} \text{m/s}$.
+
+Utilizando la ley de Hubble, podemos calcular la distancia hasta la galaxia si conocemos su velocidad de recesión:
+
+$$ d = \frac{v}{{H}_{0}} = \frac{2,8 \times {10}^{8} \text{m}\text{/}\text{s}}{73,8 \times {10}^{3} \text{m}\text{/}\text{s} \text{por Mpc}} = 3,8 \times {10}^{3} \text{Mpc}. $$
+
+
+Importancia
+
+Las galaxias lejanas parecen alejarse muy rápidamente de la Tierra. El corrimiento al rojo de la luz estelar de estas galaxias puede utilizarse para determinar la velocidad precisa de recesión, sobre un $90\text{%}$ de la velocidad de la luz en este caso. Este movimiento no se debe al movimiento de la galaxia a través del espacio, sino a la expansión del propio espacio.
+
+
+Estructura y dinámica del universo
+
+A gran escala, se cree que el universo es isotrópico y homogéneo. Se cree que el universo es isotrópico porque parece ser igual en todas las direcciones, y homogéneo porque parece ser igual en todos los lugares. Un universo que es isotrópico y homogéneo se dice que es liso. La suposición de un universo liso está respaldada por la Investigación sobre Galaxias por Medición Automática de Placas (Automated Plate Measurement Galaxy Survey) realizada en la década de 1980 y 1990. Sin embargo, incluso antes de que se recopilaran estos datos, los teóricos utilizaban la hipótesis de un universo liso para simplificar los modelos de expansión del universo. Esta suposición de un universo liso en ocasiones se denomina el principio cosmológico.
+
+El destino de este universo liso y en expansión es una incógnita. Según la teoría general de la relatividad, una forma importante de caracterizar el estado del universo es a través de la métrica del espacio-tiempo:
+
+$$ d{s}^{2} = {c}^{2}d{t}^{2} - a{ (t) }^{2}d{\text{Σ}}^{2}, $$
+
+donde c es la velocidad de la luz, a es un factor de escala (una función del tiempo), y $d\text{Σ}$ es el elemento de longitud del espacio. En coordenadas esféricas ($r, \theta, \varphi)$, este elemento de longitud puede escribirse
+
+$$ d{\text{Σ}}^{2} = \frac{{dr}^{2}}{1 - k{r}^{2}} + {r}^{2} (d{\theta }^{2} + {\text{sen}}^{2}\theta d{\phi }^{2}), $$
+
+donde k es una constante con unidades de área inversa que describe la curvatura del espacio. Esta constante distingue entre universos abiertos, cerrados y planos:
+
+En términos del factor de escala a, esta métrica también distingue entre universos estáticos, en expansión y en contracción:
+
+El factor de escala a y la curvatura k se determinan a partir de la teoría general de la relatividad de Einstein. Si tratamos el universo como un gas de galaxias de densidad $\rho$ y la presión p, y se supone que $k = 0$ (un universo plano), entonces el factor de escala a está dado por
+
+$$ \frac{{d}^{2}a}{d{t}^{2}} = - \frac{4\pi G}{3} (\rho + 3p) a, $$
+
+donde G es la constante gravitacional universal. (En la materia ordinaria, esperamos que la cantidad $\rho + 3p$ sea mayor que cero). Si el factor de escala es positivo ($a > 0$), el valor del factor de escala se "desacelera" (${d}^{2}a\text{/}d{t}^{2} < 0$), y la expansión del universo se ralentiza con el tiempo. Si el numerador es menor que cero (de alguna manera, la presión del universo es negativa), el valor del factor de escala se "acelera", y la expansión del universo se acelera con el tiempo. Según datos cosmológicos recientes, el universo parece estar en expansión. Muchos científicos explican el estado actual del universo en términos de una expansión muy rápida en el universo primitivo. Esta expansión se llama inflación.
+
+
+11.7 Evolución del universo primigenio
+
+En la sección anterior hablamos de la estructura y la dinámica del universo. En particular, el universo parece estar expandiéndose e incluso acelerándose. Pero, ¿cómo era el universo al principio de los tiempos? En esta sección, analizaremos las pruebas que los científicos han podido reunir sobre el universo primitivo y su evolución hasta la actualidad.
+
+
+El universo primitivo
+
+Antes del breve período de inflación cósmica, los cosmólogos creen que toda la materia del universo estaba comprimida en un espacio mucho más pequeño que un átomo. Los cosmólogos creen además que el universo era extremadamente denso y caliente, y que una sola fuerza regía las interacciones entre las partículas. En otras palabras, las cuatro fuerzas fundamentales (nuclear fuerte, electromagnética, nuclear débil y gravitacional) se fusionan en una en estas energías. Cómo y por qué se rompe esta "unidad" a bajas energías es un importante problema sin resolver en la física.
+
+Los modelos científicos del universo primitivo son muy especulativos. La Figura 11.22 muestra un esbozo de una posible línea temporal de los acontecimientos.
+
+Big Bang $(t < 1{0}^{\text{−}43}\text{s}):$ Las leyes actuales de la física se quebrantan. Al final del evento inicial del Big Bang, la temperatura del universo es aproximadamente $T = 1{0}^{32}\text{K}.$
+
+Fase inflacionaria $(t = 1{0}^{\text{−}43}\text{a 1}{0}^{\text{−}35}\text{s}):$ El universo se expande exponencialmente y la gravedad se separa de las demás fuerzas. El universo se enfría hasta aproximadamente $T = 1{0}^{27}\text{K}.$
+
+Edad de los leptones $(t = 1{0}^{\text{−}35}\text{a 1}{0}^{\text{−}6}\text{s}):$ A medida que el universo sigue expandiéndose, la fuerza nuclear fuerte se separa de las fuerzas electromagnética y nuclear débil (o fuerza electrodébil). Poco después, la fuerza nuclear débil se separa de la fuerza electromagnética. El universo es una sopa caliente de cuarks, leptones, fotones y otras partículas.
+
+Edad de los nucleones $(t = 1{0}^{\text{−}6}\text{a 225 s}):$ El universo está formado por leptones y hadrones (como protones, neutrones y mesones) en equilibrio térmico. La producción de pares y la aniquilación de pares se producen con la misma facilidad, por lo que los fotones permanecen en equilibrio térmico:
+
+$$ \begin{matrix} \\ \\ \gamma + \gamma \leftrightarrow {\text{e}}^{\text{−}} + {\text{e}}^{ + } \\ \gamma + \gamma \leftrightarrow \text{p} + \overset{\text{−}}{\text{p}} \\ \gamma + \gamma \leftrightarrow \text{n} + \overset{\text{−}}{\text{n}}. \end{matrix} $$
+
+El número de protones es aproximadamente igual al número de neutrones a través de las interacciones con los neutrinos:
+
+$$ \begin{matrix} \\ \\ {\nu }_{e} + \text{n} \leftrightarrow {\text{e}}^{\text{−}} + \text{p} \\ {\overset{\text{−}}{\nu }}_{e} + \text{p} \leftrightarrow {\text{e}}^{ + } + \text{n.} \end{matrix} $$
+
+La temperatura del universo se asienta en aproximadamente $1{0}^{11}\text{K}$ (demasiado frío para la producción continuada de pares nucleón-antinucleón). Los números de protones y neutrones comienzan a dominar sobre sus antipartículas, por lo que las aniquilaciones protón-antiprotón $(\text{p}\overset{\text{−}}{\text{p}})$ y neutrón-antineutrón ($\text{n}\overset{\text{−}}{\text{n}}$) disminuyen. Comienzan a formarse deuterones (pares protón-neutrón).
+
+Edad de la nucleosíntesis ($t = {225}^{}\text{s}$ a 1.000 años): A medida que el universo continúa expandiéndose, los deuterones reaccionan con protones y neutrones para formar núcleos más grandes; estos núcleos más grandes reaccionan con protones y neutrones para formar núcleos aún más grandes. Al final de este período, aproximadamente 1/4 de la masa del universo es helio. (Esto explica la cantidad actual de helio en el universo). Los fotones carecen de la energía necesaria para continuar la producción de electrones y positrones, por lo que los electrones y los positrones se aniquilan mutuamente hasta convertirse en fotones.
+
+Edad de los iones ($t = 1.000$ a 3.000 años): El universo está lo suficientemente caliente como para ionizar cualquier átomo formado. El universo está formado por electrones, positrones, protones, núcleos ligeros y fotones.
+
+Edad de los átomos ($t = 3.000$ a 300.000 años): El universo se enfría por debajo de ${10}^{5}\text{K}$ y se forman los átomos. Los fotones no interactúan fuertemente con los átomos neutros, por lo que se "desacoplan" (separan) de los átomos. Estos fotones constituyen la radiación de fondo de microondas de la que hablaremos más adelante.
+
+Edad de las estrellas y galaxias ($t = 300.000$ años hasta el presente): Los átomos y las partículas se juntan por la gravedad y forman grandes masas. Los átomos y partículas de las estrellas sufren una reacción de fusión nuclear.
+
+Para describir cuantitativamente las condiciones del universo primitivo, recordemos la relación entre la energía térmica promedio de las partículas (E) en un sistema de partículas que interactúan y la temperatura de equilibrio (T) de dicho sistema:
+
+$$ E = {k}_{B}T, $$
+
+donde ${k}_{\text{B}}$ es la constante de Boltzmann. En las condiciones de calor del universo primigenio, las energías de las partículas eran inimaginablemente grandes.
+
+
+Ejemplo 11.9
+
+
+Estrategia
+
+La energía térmica media de una partícula en un sistema de partículas que interactúan depende de la temperatura de equilibrio de dicho sistema. En la línea de tiempo anterior se nos da esta temperatura aproximada.
+
+
+Solución
+
+Los cosmólogos creen que la temperatura del universo justo después del Big Bang era aproximadamente $T = 1{0}^{32}\text{K}.$ Por lo tanto, la energía térmica promedio de una partícula habría sido
+
+$$ {k}_{\text{B}}T \approx ({10}^{−4} \text{eV/K}) ({10}^{32}\text{K}) = {10}^{28}{ \text{eV = 10}}^{19} \text{GeV}\text{.} $$
+
+
+Importancia
+
+Esta energía es por muchos órdenes de magnitud mayor que las energías de las partículas producidas por los aceleradores de partículas de fabricación humana. En la actualidad, estos aceleradores funcionan a energías inferiores a $1{0}^{4} \text{GeV}.$
+
+Los nucleones se forman a energías aproximadamente iguales a la masa en reposo de un protón, o sea 1.000 MeV. Por lo tanto, la temperatura correspondiente a esta energía es
+
+$$ T = \frac{1.000 \text{MeV}}{8,62 \times {10}^{11} \text{MeV} \cdot {\text{K}}^{−1}} = 1,2 \times {10}^{13} \text{K}\text{.} $$
+
+En el primer segundo del universo primitivo existían temperaturas de este valor o superiores. Un análisis similar puede hacerse para los átomos. Los átomos se forman a una energía igual a la energía de ionización del hidrógeno en estado básico (13 eV). Por lo tanto, la temperatura efectiva para la formación de los átomos es
+
+$$ T = \frac{13 \text{eV}}{8,62 \times {10}^{5} \text{eV} \cdot {\text{K}}^{−1}} = 1,6 \times {10}^{5} \text{K}\text{.} $$
+
+Esto ocurre mucho después de que las cuatro fuerzas fundamentales se hayan separado, incluyendo las fuerzas necesarias para unir los protones y los neutrones en el núcleo (fuerza nuclear fuerte), y para unir los electrones al núcleo (fuerza electromagnética).
+
+
+La nucleosíntesis de los elementos ligeros
+
+Las abundancias relativas de los elementos ligeros hidrógeno, helio, litio y berilio en el universo proporcionan una prueba clave del Big Bang. Los datos sugieren que gran parte del helio del universo es primordial. Por ejemplo, resulta que el 25% de la materia del universo es helio, lo cual es una abundancia demasiado alta y no puede explicarse en base a la producción de helio en las estrellas.
+
+¿Cuántos elementos del universo se crearon en el Big Bang? Si hacemos andar el reloj hacia atrás, el universo se comprime cada vez más, y se calienta cada vez más. Finalmente, se alcanzan temperaturas que permiten la nucleosíntesis, el periodo de formación de núcleos, similar a lo que ocurre en el núcleo del Sol. Se cree que la nucleosíntesis del Big Bang se produjo a los pocos cientos de segundos del mismo.
+
+¿Cómo se produjo la nucleosíntesis del Big Bang? Al principio, los protones y los neutrones se combinaron para formar deuterones, ${}^{2}\text{H}$. El deuterón capturó un neutrón para formar el tritón, ${}^{3}\text{H}$, que es el núcleo del hidrógeno radiactivo llamado tritio. Los deuterones también capturaron protones para hacer helio ${}^{3}\text{He}$. Cuando ${}^{3}\text{H}$ captura un protón o ${}^{3}\text{He}$ captura un neutrón, da como resultado el helio ${}^{4}\text{He}$. En esta etapa del Big Bang, la proporción de protones y neutrones era de aproximadamente 7:1. Por lo tanto, el proceso de conversión a ${}^{4}\text{He}$ utilizó casi todos los neutrones. El proceso duró unos 3 minutos y casi $25\text{%}$ de toda la materia se convirtió en ${}^{4}\text{He}$, junto con pequeños porcentajes de ${}^{2}\text{H}$, ${}^{3}\text{H}$, y ${}^{3}\text{He}$. También se formaron pequeñas cantidades de ${}^{7}\text{Li}$ y ${}^{7}\text{Be}$. La expansión durante este tiempo enfrió el universo lo suficiente como para que las reacciones nucleares se detuvieran. La abundancia de los núcleos ligeros ${}^{2}\text{H}$, ${}^{4}\text{He}$, y ${}^{7}\text{Li}$ creados después del Big Bang son muy dependientes de la densidad de la materia.
+
+Las abundancias predichas de los elementos en el universo proporcionan una prueba rigurosa del Big Bang y de la nucleosíntesis del Big Bang. Las recientes estimaciones experimentales de la densidad de materia de la Sonda de Anisotropía de Microondas Wilkinson (Wilkinson Microwave Anisotropy Probe, WMAP) coinciden con las predicciones del modelo. Esta concordancia proporciona una prueba convincente del modelo del Big Bang.
+
+
+Radiación de fondo de microondas
+
+Según los modelos cosmológicos, el Big Bang debería haber dejado tras de sí una radiación térmica denominada radiación de fondo de microondas (Cosmic Microwave Background Radiation, CMBR). La intensidad de esta radiación debe seguir la curva de radiación de cuerpo negro (Fotones y ondas de materia). La ley de Wien establece que la longitud de onda de la radiación en su intensidad máxima es
+
+$$ {\lambda }_{\text{max}} = \frac{2. 898 \times 1{0}^{\text{−}3} \text{m-K}}{T}, $$
+
+donde T es la temperatura en kelvins. Los científicos esperaban que la expansión del universo "estirara la luz" y que la temperatura fuera muy baja, por lo que la radiación cósmica de fondo debería ser de gran longitud de onda y baja energía.
+
+En la década de 1960, Arno Penzias y Robert Wilson, de los Laboratorios Bell se dieron cuenta de que sin importar lo que hicieran, no podían eliminar un débil ruido de fondo en su sistema de comunicación por satélite. El ruido se debía a la radiación con longitudes de onda en el rango de los centímetros (la región de las microondas). Posteriormente, este ruido se asoció a la radiación cósmica de fondo. Un mapa de intensidad de la radiación cósmica de fondo aparece en la Figura 11.23. El espectro térmico se modela bien mediante una curva de cuerpo negro que corresponde a una temperatura $T = 2,7\text{K}$.
+
+La formación de átomos en el universo primitivo hace que estos átomos tengan menos posibilidades de interactuar con la luz. Por tanto, los fotones que pertenecen a la radiación cósmica de fondo deben haberse separado de la materia a una temperatura T asociada a 1 eV (la energía de ionización aproximada de un átomo). La temperatura del universo en este punto era
+
+$$ {\text{k}}_{\text{B}}\text{T} \sim \text{1 eV} \Rightarrow T = \frac{\text{1 eV}}{8. 617 \times 1{0}^{5} \text{eV}\text{/}\text{K}} \sim {10}^{4} \text{K}. $$
+
+Según los modelos cosmológicos, el momento en que los fotones dispersaron por última vez las partículas cargadas fue aproximadamente 380.000 años después del Big Bang. Antes de ese momento, la materia del universo estaba en forma de plasma y los fotones estaban "termalizados".
+
+
+Antimateria y materia
+
+Sabemos por observación directa que la antimateria es rara. La Tierra y el sistema solar son casi pura materia, y la mayor parte del universo también parece dominada por la materia. Esto se demuestra por la falta de radiación de aniquilación que nos llega del espacio, en particular la ausencia relativa de rayos $\gamma$ de 0,511-MeV creados por la aniquilación mutua de electrones y positrones. (La antimateria en la naturaleza se crea en las colisiones de partículas y en los decaimientos ${los rayos \beta }^{ + }$, pero solo en pequeñas cantidades que se aniquilan rápidamente, dejando que sobreviva la materia casi pura).
+
+A pesar del predominio observado de la materia sobre la antimateria en el universo, el modelo estándar de las interacciones de las partículas y las mediciones experimentales sugieren solo pequeñas diferencias en las formas en que interactúan la materia y la antimateria. Por ejemplo, los decaimientos de kaones neutros producen solo un poco más de materia que de antimateria. Sin embargo, si a través de ese decaimiento se produjo algo más de materia que de antimateria en el universo primitivo, el resto podría aniquilarse par a par, dejando en su mayoría materia ordinaria para formar las estrellas y las galaxias. De este modo, la gran cantidad de estrellas que observamos puede ser solo un diminuto remanente de la materia original creada en el Big Bang.
+
+
+Materia oscura y energía oscura
+
+En las dos últimas décadas, nuevas y más potentes técnicas han revelado que el universo está lleno de materia oscura. Este tipo de materia es interesante e importante porque en la actualidad los científicos no saben qué es. Sin embargo, podemos inferir su existencia por la desviación de la luz estelar lejana. Por ejemplo, si la luz de una galaxia lejana es desviada por el campo gravitacional de un cúmulo de materia oscura entre nosotros y la galaxia, es posible que se produzcan dos imágenes de la misma galaxia. La curvatura de la luz por el campo gravitacional de la materia se denomina lente gravitacional. En algunos casos, la luz de las estrellas viaja hasta un observador por múltiples vías alrededor de la galaxia, produciendo un anillo.
+
+Según las investigaciones actuales, los científicos solo saben que la materia oscura es fría, se mueve lentamente e interactúa débilmente con la materia ordinaria. Entre los candidatos a materia oscura se encuentran los neutralinos (contrapartes de los bosones Z, los fotones y los bosones de Higgs en la "teoría de la supersimetría") y las partículas que circulan en diminutos anillos creados por dimensiones espaciales adicionales.
+
+Las mediciones astronómicas cada vez más precisas del universo en expansión también revelan la presencia de una nueva forma de energía llamada energía oscura. Se cree que esta energía explica los valores mayores de lo esperado de los desplazamientos galácticos observados en las galaxias lejanas. Estos corrimientos al rojo sugieren que el universo no solo se está expandiendo, sino que lo hace a un ritmo creciente. No se sabe prácticamente nada sobre la naturaleza y las propiedades de la energía oscura. Juntos, la energía y la materia oscuras representan dos de los enigmas más interesantes y sin resolver de la física moderna. Los científicos atribuyen $68,3\text{%}$ de la energía del universo a la energía oscura, $26,8\text{%}$ a la materia oscura, y solo $4,9\text{%}$ a la masa-energía de las partículas ordinarias. Dado el gran misterio actual sobre la naturaleza de la materia y la energía oscuras, las humildes palabras de Isaac Newton son tan ciertas ahora como hace siglos:
+
+"No sé lo que pueda parecerle al mundo, pero a mí mismo me parece que solo he sido como un niño jugando en la orilla del mar, y entreteniéndome de vez en cuando encontrando un guijarro más liso o una concha más bonita que la ordinaria, mientras que el gran océano de la verdad yace sin descubrir ante mí".

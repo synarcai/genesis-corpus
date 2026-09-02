@@ -3179,10 +3179,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 12059918,
+      "size": 12102719,
       "tiers": [],
       "text": "mix",
-      "lines": 181161
+      "lines": 181466
     },
     {
       "name": "full",
@@ -3197,10 +3197,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 16468422,
+      "size": 16511223,
       "tiers": [],
       "text": "mix",
-      "lines": 252451
+      "lines": 252756
     },
     {
       "name": "selfmeasure",
@@ -7193,6 +7193,222 @@
       "источник": "public-domain",
       "происхождение": "gutenberg:7000",
       "held_out": "shelf/fi/kalevala_fi.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_kanteletar_fi",
+      "file": "shelf/fi/kanteletar_fi.txt",
+      "genre": "Kanteletar: Suomen kansan wanhoja lauluja ja wirsiä — Elias Lönnrot (собиратель); издание 1840",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "fi",
+      "плотность": "стих",
+      "издано": 1840,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:7078",
+      "held_out": "shelf/fi/kanteletar_fi.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_mickiewicz_pan_tadeusz",
+      "file": "shelf/pl/mickiewicz_pan_tadeusz.txt",
+      "genre": "Pan Tadeusz — Adam Mickiewicz; издание 1834",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "pl",
+      "плотность": "стих",
+      "издано": 1834,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:31536",
+      "held_out": "shelf/pl/mickiewicz_pan_tadeusz.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_papadiamantis_fonissa",
+      "file": "shelf/el/papadiamantis_fonissa.txt",
+      "genre": "Η Φόνισσα — Αλέξανδρος Παπαδιαμάντης; издание 1903",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "el",
+      "плотность": "повесть",
+      "издано": 1903,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:36205",
+      "held_out": "shelf/el/papadiamantis_fonissa.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_papadiamantis_pasxalines",
+      "file": "shelf/el/papadiamantis_pasxalines.txt",
+      "genre": "Πασχαλινές ιστορίες — Αλέξανδρος Παπαδιαμάντης; издание 1890",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "el",
+      "плотность": "повесть",
+      "издано": 1890,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:31653",
+      "held_out": "shelf/el/papadiamantis_pasxalines.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_almqvist_det_gar_an",
+      "file": "shelf/sv/almqvist_det_gar_an.txt",
+      "genre": "Det går an — Carl Jonas Love Almqvist; издание 1839",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "sv",
+      "плотность": "повесть",
+      "издано": 1839,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:14670",
+      "held_out": "shelf/sv/almqvist_det_gar_an.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_canth_anna_liisa",
+      "file": "shelf/fi/canth_anna_liisa.txt",
+      "genre": "Anna Liisa; Kotoa pois — Minna Canth; издание 1895",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "fi",
+      "плотность": "повесть",
+      "издано": 1895,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:13173",
+      "held_out": "shelf/fi/canth_anna_liisa.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_linnankoski_laulu",
+      "file": "shelf/fi/linnankoski_laulu.txt",
+      "genre": "Laulu tulipunaisesta kukasta — Johannes Linnankoski; издание 1905",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "fi",
+      "плотность": "повесть",
+      "издано": 1905,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:12780",
+      "held_out": "shelf/fi/linnankoski_laulu.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_strindberg_hemsoborna",
+      "file": "shelf/sv/strindberg_hemsoborna.txt",
+      "genre": "Hemsöborna — August Strindberg; издание 1887",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "sv",
+      "плотность": "повесть",
+      "издано": 1887,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:30078",
+      "held_out": "shelf/sv/strindberg_hemsoborna.holdout.txt",
+      "судится": []
+    },
+    {
+      "name": "gutenberg_aho_rautatie",
+      "file": "shelf/fi/aho_rautatie.txt",
+      "genre": "Rautatie — Juhani Aho; издание 1884",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "tiers": [],
+      "text": "prose",
+      "тема": "словесность",
+      "язык": "fi",
+      "плотность": "повесть",
+      "издано": 1884,
+      "источник": "public-domain",
+      "происхождение": "gutenberg:10481",
+      "held_out": "shelf/fi/aho_rautatie.holdout.txt",
       "судится": []
     }
   ]

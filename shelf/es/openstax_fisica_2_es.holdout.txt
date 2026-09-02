@@ -1,0 +1,518 @@
+Un tratamiento general de la física de las ondas electromagnéticas está fuera del alcance de este libro de texto. Sin embargo, podemos investigar el caso especial de una onda electromagnética que se propaga por el espacio libre a lo largo del eje x de un sistema de coordenadas dado.
+
+
+Ondas electromagnéticas en una dirección
+
+Una onda electromagnética está formada por un campo eléctrico, definido como es habitual en términos de la fuerza por carga sobre una carga estacionaria, y un campo magnético, definido en términos de la fuerza por carga sobre una carga en movimiento. Se supone que el campo electromagnético es una función solo de la coordenada x y del tiempo. La componente y del campo eléctrico se escribe entonces como ${E}_{y} (x, t),$ la componente z del campo magnético como ${B}_{z} (x, t)$, etc. Como estamos suponiendo un espacio libre, no hay cargas ni corrientes libres, por lo que podemos establecer ${Q}_{\text{en}} = 0$ y $I = 0$ en las ecuaciones de Maxwell.
+
+
+La naturaleza transversal de las ondas electromagnéticas
+
+Examinamos primero lo que implica la ley de Gauss para los campos eléctricos sobre las direcciones relativas del campo eléctrico y la dirección de propagación en una onda electromagnética. Supongamos que la superficie gaussiana es la superficie de una caja rectangular cuya sección transversal es un cuadrado de lado l y cuyo tercer lado tiene longitud $\text{Δ}x$, como se muestra en la Figura 16.6. Como el campo eléctrico es una función solo de x y t, la componente y del campo eléctrico es la misma tanto en la parte superior (marcada como lado 2) como en la inferior (marcada como lado 1) de la caja, de modo que estas dos contribuciones al flujo se cancelan. El argumento correspondiente también es válido para el flujo neto de la componente z del campo eléctrico a través de los lados 3 y 4. Por lo tanto, cualquier flujo neto a través de la superficie proviene enteramente de la componente x del campo eléctrico. Dado que el campo eléctrico no depende de la yni de la z, ${E}_{x} (x, t)$ es constante sobre la cara de la caja con área A y tiene un valor posiblemente diferente ${E}_{x} (x + \text{Δ}x, t)$ que es constante sobre la cara opuesta de la caja. Aplicando la ley de Gauss se obtiene
+
+$$ \text{Flujo neto} = \text{−}{E}_{x} (x, t) A + {E}_{x} (x + \text{Δ}x, t) A = \frac{{Q}_{\text{en}}}{{\epsilon }_{0}} $$
+
+donde $A = l \times l$ es el área de las caras frontal y posterior de la superficie rectangular. Pero la carga encerrada es ${Q}_{\text{en}} = 0$, por lo que el flujo neto de esta componente también es cero, y la Ecuación 16.13 implica ${E}_{x} (x, t) = {E}_{x} (x + \text{Δ}x, t)$ para cualquier $\text{Δ}x$. Por lo tanto, si existe un componente x del campo eléctrico, este no puede variar con x. Un campo uniforme de este tipo solo se superpondría artificialmente a la onda viajera, por ejemplo, teniendo un par de placas cargadas en paralelo. Dicho componente ${E}_{x} (x, t)$ no formaría parte de una onda electromagnética que se propaga a lo largo del eje x; por tanto ${E}_{x} (x, t) = 0$ para esta onda. Por lo tanto, las únicas componentes que no son cero del campo eléctrico son ${E}_{y} (x, t)$ y ${E}_{z} (x, t),$ perpendicular a la dirección de propagación de la onda.
+
+Un argumento similar es válido sustituyendo E por B y utilizando la ley de Gauss para el magnetismo en lugar de la ley de Gauss para los campos eléctricos. Esto demuestra que el campo B también es perpendicular a la dirección de propagación de la onda. La onda electromagnética es por tanto una onda transversal, con sus campos eléctricos y magnéticos oscilantes perpendiculares a su dirección de propagación.
+
+
+La velocidad de propagación de las ondas electromagnéticas
+
+A continuación podemos aplicar las ecuaciones de Maxwell a la descripción dada en relación con la Figura 16.4 en la sección anterior para obtener una ecuación para el campo E a partir del campo B cambiante, y para el campo B a partir de un campo E cambiante. A continuación, combinamos las dos ecuaciones para mostrar cómo los campos E y B cambiantes se propagan por el espacio a una velocidad precisamente igual a la de la luz.
+
+En primer lugar, aplicamos la ley de Faraday sobre el lado 3 de la superficie gaussiana, utilizando la trayectoria mostrada en Figura 16.7. Porque ${E}_{x} (x, t) = 0,$ tenemos
+
+$$ \oint \vec{E} \cdot d\vec{s} = \text{−}{E}_{y} (x, t) l + {E}_{y} (x + \text{Δ}x, t) l. $$
+
+Suponiendo que $\text{Δ}x$ es pequeño y se aproxima ${E}_{y} (x + \text{Δ}x, t)$ por
+
+$$ {E}_{y} (x + \text{Δ}x, t) = {E}_{y} (x, t) + \frac{ \partial {E}_{y} (x, t) }{ \partial x}\text{Δ}x, $$
+
+obtenemos
+
+$$ \oint \vec{E} \cdot d\vec{s} = \frac{ \partial {E}_{y} (x, t) }{ \partial x} (l\text{Δ}x). $$
+
+Porque $\text{Δ}x$ es pequeño, el flujo magnético que atraviesa la cara puede aproximarse por su valor en el centro del área atravesada, a saber ${B}_{z} (x + \frac{\text{Δ}x}{2}, t)$. El flujo del campo B a través de la cara 3 es entonces el campo B por el área,
+
+$$ { \oint }_{S}\vec{B} \cdot \vec{n}dA = {B}_{z} (x + \frac{\text{Δ}x}{2}, t) (l\text{Δ}x). $$
+
+De la ley de Faraday,
+
+$$ \oint \vec{E} \cdot d\vec{s} = - \frac{d}{dt}{ \int }_{S}\vec{B} \cdot \vec{n}dA. $$
+
+Por lo tanto, utilizando la Ecuación 16.13 y la Ecuación 16.14,
+
+$$ \frac{ \partial {E}_{y} (x, t) }{ \partial x} (l\text{Δ}x) = - \frac{ \partial }{ \partial t} [{B}_{z} (x + \frac{\text{Δ}x}{2}, t)] (l\text{Δ}x). $$
+
+Cancelando $l\text{Δ}x$ y tomando el límite como $\text{Δ}x = 0$, nos quedamos con
+
+$$ \frac{ \partial {E}_{y} (x, t) }{ \partial x} = - \frac{ \partial {B}_{z} (x, t) }{ \partial t}. $$
+
+En cambio, podríamos haber aplicado la ley de Faraday a la superficie superior (numerada 2) en la Figura 16.7, para obtener la ecuación resultante
+
+$$ \frac{ \partial {E}_{z} (x, t) }{ \partial x} = - \frac{ \partial {B}_{y} (x, t) }{ \partial t}. $$
+
+Esta es la ecuación que describe el campo E dependiente del espacio producido por el campo B dependiente del tiempo.
+
+A continuación aplicamos la ley de Ampère-Maxwell (con $I = 0$) sobre las mismas dos caras (superficie 3 y luego superficie 2) de la caja rectangular de Figura 16.7. Aplicando la Ecuación 16.10,
+
+$$ \oint \vec{B} \cdot d\vec{s} = {\mu }_{0}{\epsilon }_{0} (d\text{/}dt) \int_{S}\vec{E} \cdot n da $$
+
+a la superficie 3, y luego a la superficie 2, produce las dos ecuaciones
+
+$$ \frac{ \partial {B}_{y} (x, t) }{ \partial x} = \text{−}{\epsilon }_{0}{\mu }_{0}\frac{ \partial {E}_{z} (x, t) }{ \partial t}, \text{y} $$
+
+$$ \frac{ \partial {B}_{z} (x, t) }{ \partial x} = \text{−}{\epsilon }_{0}{\mu }_{0}\frac{ \partial {E}_{y} (x, t) }{ \partial t}. $$
+
+Estas ecuaciones describen el campo B dependiente del espacio producido por el campo E dependiente del tiempo.
+
+A continuación combinamos las ecuaciones que muestran que el campo B cambiante produce un campo E con la ecuación que muestra que el campo E cambiante produce un campo B. Tomando la derivada de la Ecuación 16.16 con respecto a x y utilizando la Ecuación 16.26 se obtiene
+
+$$ \begin{matrix} \frac{{ \partial }^{2}{E}_{y}}{ \partial {x}^{2}} = \frac{ \partial }{ \partial x} (\frac{ \partial {E}_{y}}{ \partial x}) = - \frac{ \partial }{ \partial x} (\frac{ \partial {B}_{z}}{ \partial t}) = - \frac{ \partial }{ \partial t} (\frac{ \partial {B}_{z}}{ \partial x}) = \frac{ \partial }{ \partial t} ({\epsilon }_{0}{\mu }_{0}\frac{ \partial {E}_{y}}{ \partial t}) \\ \text{o} \end{matrix} $$
+
+$$ \frac{{ \partial }^{2}{E}_{y}}{ \partial {x}^{2}} = {\epsilon }_{0}{\mu }_{0}\frac{{ \partial }^{2}{E}_{y}}{ \partial {t}^{2}}. $$
+
+Esta es la forma que adopta la ecuación de onda general para nuestra onda plana. Dado que las ecuaciones describen una onda que viaja a una velocidad aún no especificada c, podemos suponer que las componentes del campo son cada una funciones de x – ct para la onda que viaja en la dirección +x, es decir,
+
+$$ {E}_{y} (x, t) = f (\xi) \text{donde} \xi = x - ct. $$
+
+Se deja como ejercicio matemático demostrar, utilizando la regla de la cadena para la diferenciación, que la Ecuación 16.17 y la Ecuación 16.18 implican
+
+$$ 1 = {\epsilon }_{0}{\mu }_{0}{c}^{2}. $$
+
+La velocidad de la onda electromagnética en el espacio libre viene dada, por tanto, en función de la permeabilidad y permeabilidad del espacio libre por
+
+$$ c = \frac{1}{\sqrt{{\epsilon }_{0}{\mu }_{0}}}. $$
+
+También podríamos haber supuesto una onda electromagnética con componentes de campo ${E}_{z} (x, t)$ y ${B}_{y} (x, t)$. El mismo tipo de análisis con la Ecuación 16.25 y la Ecuación 16.24 también mostraría que la velocidad de una onda electromagnética es $c = 1\text{/}\sqrt{{\epsilon }_{0}{\mu }_{0}}$.
+
+En 1873 Maxwell formuló la física de los campos electromagnéticos viajeros. Demostró de forma más general que nuestra derivación que las ondas electromagnéticas siempre viajan en el espacio libre con una velocidad dada por la Ecuación 16.18. Si evaluamos la velocidad $c = \frac{1}{\sqrt{{\epsilon }_{0}{\mu }_{0}}},$ hallamos que
+
+$$ c = \frac{1}{\sqrt{ (8,85 \times {10}^{−12}\frac{{\text{C}}^{2}}{\text{N} \cdot {\text{m}}^{2}}) (4\text{π} \times {10}^{−7}\frac{\text{T} \cdot \text{m}}{\text{A}}) }} = 3,00 \times {10}^{8} \text{m/s}, $$
+
+que es la velocidad de la luz. ¡Imagine la emoción que debió sentir Maxwell cuando descubrió esta ecuación! Había encontrado una conexión fundamental entre dos fenómenos aparentemente no relacionados: los campos electromagnéticos y la luz.
+
+
+Cómo se relacionan los campos E y B
+
+Hasta ahora, hemos visto que las tasas de cambio de los diferentes componentes de los campos E y B están relacionadas, que la onda electromagnética es transversal y que la onda se propaga a la velocidad c. A continuación mostramos lo que las ecuaciones de Maxwell implican sobre la relación de las magnitudes de los campos E y B y las direcciones relativas de los campos E y B.
+
+Consideramos ahora las soluciones para la Ecuación 16.16 en forma de ondas planas para el campo eléctrico:
+
+$$ {E}_{y} (x, t) = {E}_{0} \text{cos} (kx - \omega t). $$
+
+Hemos tomado arbitrariamente que la onda viaja en la dirección +x y hemos elegido su fase de forma que la máxima intensidad de campo se produce en el origen en el tiempo $t = 0$. Está justificado que consideremos solo los senos y cosenos de esta manera, y que generalicemos los resultados, ya que el teorema de Fourier implica que podemos expresar cualquier onda, incluso funciones escalonadas cuadradas, como una superposición de senos y cosenos.
+
+En un punto concreto del espacio, el campo E oscila sinusoidalmente con una frecuencia angular $\omega$ entre $+ {E}_{0}$ y $\text{−}{E}_{0},$ y, del mismo modo, el campo B oscila entre $+ {B}_{0}$ y $\text{−}{B}_{0}.$ La amplitud de la onda es el valor máximo de ${E}_{y} (x, t).$ El periodo de oscilación T es el tiempo necesario para una oscilación completa. La frecuencia f es el número de oscilaciones completas por unidad de tiempo, y está relacionada con la frecuencia angular $\omega$ por $\omega = 2\pi f$. La longitud de onda $\lambda$ es la distancia recorrida por un ciclo completo de la onda, y el número de onda k es el número de longitudes de onda que caben en una distancia de $2\text{π}$ en las unidades utilizadas. Estas magnitudes están relacionadas de la misma manera que para una onda mecánica:
+
+$$ \omega = 2\pi f, f = \frac{1}{T}, k = \frac{2\pi }{\lambda }, \text{y} c = f\lambda = \omega \text{/}k. $$
+
+Dado que la solución de ${E}_{y}$ tiene la forma mostrada en la Ecuación 16.20, necesitamos determinar el campo B que lo acompaña. A partir de la Ecuación 16.24, la componente del campo magnético ${B}_{z}$ debe obedecer
+
+$$ \begin{matrix} \frac{ \partial {B}_{Z}}{ \partial t} = - \frac{ \partial {E}_{y}}{ \partial x} \\ \frac{ \partial {B}_{Z}}{ \partial t} = - \frac{ \partial }{ \partial x} {E}_{0} \text{cos} (k x - \omega t) = k {E}_{0} \text{sen} (k x - \omega t). \end{matrix} $$
+
+Como la solución para el patrón de campo B de la onda se propaga en la dirección +x a la misma velocidad c que el patrón de campo E, debe ser una función de $k (x - ct) = kx - \omega t$. Por lo tanto, concluimos de la Ecuación 16.21 que ${B}_{z}$ es
+
+$$ {B}_{z} (x, t) = \frac{k}{\omega }{E}_{0} \text{cos} (kx - \omega t) = \frac{1}{c}{E}_{0} \text{cos} (kx - \omega t). $$
+
+Estos resultados pueden escribirse como
+
+$$ \begin{matrix} {E}_{y} (x, t) = {E}_{0} \text{cos} (kx - \omega t) \\ {B}_{z} (x, t) = {B}_{0} \text{cos} (kx - \omega t) \end{matrix} $$
+
+$$ \frac{{E}_{y}}{{B}_{z}} = \frac{{E}_{0}}{{B}_{0}} = c. $$
+
+Por lo tanto, los picos de los campos E y B coinciden, al igual que los valles de la onda, y en cada punto, los campos E y B están en la misma proporción igual a la velocidad de la luz c. La onda plana tiene la forma mostrada en la Figura 16.8.
+
+
+Ejemplo 16.2
+
+
+Calcular la intensidad del campo B en una onda electromagnética
+
+¿Cuál es la intensidad máxima del campo B en una onda electromagnética que tiene una intensidad de campo Emáxima de 1.000 V/m?
+
+
+Estrategia
+
+Para calcular la intensidad del campo B, reordenamos la Ecuación 16.23 para resolver B, y se obtiene
+
+$$ B = \frac{E}{c}. $$
+
+
+Solución
+
+Nos dan E, y c es la velocidad de la luz. Introduciendo estos datos en la expresión de B se obtiene
+
+$$ B = \frac{1.000 \text{V/m}}{3,00 \times {10}^{8} \text{m/s}} = 3,33 \times {10}^{−6} \text{T}. $$
+
+
+Importancia
+
+La intensidad del campo B es menos de una décima parte del campo magnético de la Tierra, que es ciertamente débil. Esto significa que un campo eléctrico relativamente fuerte de 1.000 V/m va acompañado de un campo magnético relativamente débil.
+
+Los campos eléctricos cambiantes crean campos magnéticos relativamente débiles. Sin embargo, los campos eléctricos y magnéticos combinados pueden detectarse en las ondas electromagnéticas, aprovechando el fenómeno de la resonancia, como hizo Hertz. Un sistema con la misma frecuencia natural que la onda electromagnética puede hacerse oscilar. Todos los receptores de radio y televisión utilizan este principio para captar y luego amplificar las ondas electromagnéticas débiles, al tiempo que rechazan todas las demás que no están en su frecuencia de resonancia.
+
+
+Producción y detección de ondas electromagnéticas
+
+Una corriente eléctrica constante produce un campo magnético que es constante en el tiempo y que no se propaga como una onda. Sin embargo, las cargas que se aceleran producen ondas electromagnéticas. Una carga eléctrica que oscila hacia arriba y hacia abajo, o una corriente o flujo de carga alterna en un conductor, emiten radiación en las frecuencias de sus oscilaciones. El campo electromagnético de una antena dipolar se muestra en la Figura 16.9. Las cargas positivas y negativas de los dos conductores se hacen invertir a la frecuencia deseada mediante la salida de un transmisor como fuente de energía. La corriente, que cambia continuamente, acelera la carga en la antena, lo que da lugar a un campo eléctrico oscilante que se aleja de la antena. Los campos eléctricos cambiantes producen campos magnéticos cambiantes que, a su vez, producen campos eléctricos cambiantes, que se propagan como ondas electromagnéticas. La frecuencia de esta radiación es la misma que la de la fuente deac que acelera los electrones en la antena. Los dos elementos conductores de la antena dipolar suelen ser alambres rectos. La longitud total de los dos alambres suele ser aproximadamente la mitad de la longitud de onda deseada (de ahí el nombre alternativo antena de media onda), ya que esto permite establecer ondas estacionarias y mejora la eficacia de la radiación.
+
+Se muestran las líneas de campo eléctrico en un plano. El campo magnético es perpendicular a este plano. Este campo de radiación tiene una simetría cilíndrica alrededor del eje del dipolo. No se muestran las líneas de campo cercanas al dipolo. El patrón no es en absoluto uniforme en todas las direcciones. La señal más fuerte se produce en direcciones perpendiculares al eje de la antena, que sería horizontal si la antena está montada verticalmente. La intensidad es cero a lo largo del eje de la antena. Los campos detectados lejos de la antena proceden de los campos eléctricos y magnéticos cambiantes que se inducen mutuamente y viajan como ondas electromagnéticas. Lejos de la antena, los frentes de onda, o superficies de igual fase para la onda electromagnética, son casi esféricos. Incluso más lejos de la antena, la radiación se propaga como ondas electromagnéticas planas.
+
+Las ondas electromagnéticas transportan energía alejándose de su fuente, de forma similar a como una onda de sonido se aleja de una onda estacionaria en una cuerda de guitarra. Una antena de recepción de señales electromagnéticas funciona a la inversa. Las ondas electromagnéticas entrantes inducen corrientes oscilantes en la antena, cada una a su propia frecuencia. El receptor de radio incluye un circuito sintonizador, cuya frecuencia de resonancia puede ajustarse. El sintonizador reacciona intensamente a la frecuencia deseada pero no a otras, lo que permite al usuario sintonizar la emisora deseada. Los componentes eléctricos amplifican la señal formada por los electrones en movimiento. A continuación, la señal se convierte en un formato de audio o video.
+
+
+16.3 Energía transportada por las ondas electromagnéticas
+
+Cualquiera que haya utilizado un horno microondas sabe que hay energía en las ondas electromagnéticas. A veces esta energía es evidente, como en el calor del Sol de verano. Otras veces, es sutil, como la energía no percibida de los rayos gamma, que puede destruir células vivas.
+
+Las ondas electromagnéticas aportan energía a un sistema en virtud de sus campos eléctricos y magnéticos. Estos campos pueden ejercer fuerzas y mover cargas en el sistema y, por tanto, realizar un trabajo sobre ellas. Sin embargo, hay energía en una onda electromagnética en sí misma, tanto si es absorbida o no. Una vez creados, los campos transportan energía que se aleja de una fuente. Si posteriormente se absorbe algo de energía, las intensidades de campo disminuyen y todo lo que queda se desplaza.
+
+Evidentemente, cuanto mayor sea la fuerza de los campos eléctricos y magnéticos, más trabajo podrán realizar y mayor será la energía que transporte la onda electromagnética. En las ondas electromagnéticas, la amplitud es la intensidad máxima de los campos eléctrico y magnético. La energía de las ondas viene determinada por su amplitud.
+
+Para una onda plana que viaja en la dirección del eje x positivo con la fase de la onda elegida para que el máximo de la onda esté en el origen en $t = 0$, los campos eléctricos y magnéticos obedecen a las ecuaciones
+
+$$ \begin{matrix} {E}_{y} (x, t) = {E}_{0} \text{cos} (kx - \omega t) \\ {B}_{z} (x, t) = {B}_{0} \text{cos} (kx - \omega t). \end{matrix} $$
+
+La energía de cualquier parte de la onda electromagnética es la suma de las energías de los campos eléctrico y magnético. Esta energía por unidad de volumen, o densidad de energía u, es la suma de la densidad de energía del campo eléctrico y la densidad de energía del campo magnético. Las expresiones para ambas densidades de energía de campo se discutieron anteriormente (${u}_{E}$ en la sección Capacitancia y ${u}_{B}$ en la sección Inductancia). Combinando estas contribuciones, obtenemos
+
+$$ u (x, t) = {u}_{E} + {u}_{B} = \frac{1}{2}{\epsilon }_{0}{E}^{2} + \frac{1}{2{\mu }_{0}}{B}^{2}. $$
+
+La expresión $E = cB = \frac{1}{\sqrt{{\epsilon }_{0}{\mu }_{0}}}B$ muestra entonces que la densidad de energía magnética ${u}_{B}$ y la densidad de energía eléctrica ${u}_{E}$ son iguales, a pesar de que los campos eléctricos cambiantes generalmente solo producen pequeños campos magnéticos. La igualdad de las densidades de energía eléctrica y magnética conduce a
+
+$$ u (x, t) = {\epsilon }_{0}{E}^{2} = \frac{{B}^{2}}{{\mu }_{0}}. $$
+
+La densidad de energía se mueve con los campos eléctricos y magnéticos de forma similar a las propias ondas.
+
+Podemos calcular la tasa de transporte de energía considerando un pequeño intervalo de tiempo $\text{Δ}t$. Como se muestra en la Figura 16.11, la energía contenida en un cilindro de longitud $c\text{Δ}t$ y la sección transversal A pasa por el plano de la sección transversal en el intervalo $\text{Δ}t.$
+
+La energía que pasa por el área A en el tiempo $\text{Δ}t$ es
+
+$$ u \times \text{volumen} = uAc\text{Δ}t. $$
+
+La energía por unidad de superficie y por unidad de tiempo que pasa por un plano perpendicular a la onda, llamada flujo de energía y denotada con una S, puede calcularse dividiendo la energía por la superficie A y el intervalo de tiempo $\text{Δ}t$.
+
+$$ S = \frac{\text{Zona de paso de la energía} A \text{en el tiempo} \text{Δ}t}{A\text{Δ}t} = uc = {\epsilon }_{0}c{E}^{2} = \frac{1}{{\mu }_{0}}EB. $$
+
+De forma más general, el flujo de energía atraviesa cualquier superficie también depende de la orientación de la misma. Para tener en cuenta la dirección, introducimos un vector $\vec{S}$, llamado vector de Poynting, con la siguiente definición:
+
+$$ \vec{S} = \frac{1}{{\mu }_{0}}\vec{E} \times \vec{B}. $$
+
+El producto cruzado de $\vec{E}$ y $\vec{B}$ apunta en la dirección perpendicular a ambos vectores. Para confirmar que la dirección de $\vec{S}$ es la de la propagación de las ondas, y no su negativo, vuelva a la Figura 16.7. Tenga en cuenta que las leyes de Lenz y Faraday implican que cuando el campo magnético mostrado es creciente en el tiempo, el campo eléctrico es mayor en x que en $x + \text{Δ}x$. El campo eléctrico disminuye con el aumento de x en un momento y lugar determinados. La proporcionalidad entre los campos eléctricos y magnéticos requiere que el campo eléctrico aumente en el tiempo junto con el campo magnético. Esto solo es posible si la onda se propaga hacia la derecha en el diagrama, en cuyo caso, las orientaciones relativas muestran que $\vec{S} = \frac{1}{{\mu }_{0}}\vec{E} \times \vec{B}$ es específicamente en la dirección de propagación de la onda electromagnética.
+
+El flujo de energía en cualquier lugar también varía en el tiempo, como puede verse sustituyendo la Ecuación 16.23 en la Ecuación 16.27para obtener la u
+
+$$ S (x, t) = c{\epsilon }_{0}{E}_{0}^{2}{\text{cos}}^{2} (kx - \omega t) $$
+
+Como la frecuencia de la luz visible es muy alta, del orden de ${10}^{14} \text{Hz,}$ el flujo de energía de la luz visible a través de cualquier área es una cantidad que varía muy rápidamente. La mayoría de los dispositivos de medición, incluidos nuestros ojos, solo detectan una media de muchos ciclos. El promedio temporal del flujo de energía es la intensidad I de la onda electromagnética y es la potencia por unidad de superficie. Se puede expresar promediando la función coseno en la Ecuación 16.29 a lo largo de un ciclo completo, que es lo mismo que promediar el tiempo a lo largo de muchos ciclos (aquí, T es un periodo):
+
+$$ I = {S}_{\text{avg}} = c{\epsilon }_{0}{E}_{0}^{2}\frac{1}{T}\int_{0}^{T}{\text{cos}}^{2} (2\pi \frac{t}{T}) dt. $$
+
+Podemos evaluar la integral, o bien observar que como el seno y el coseno difieren simplemente en la fase, la media sobre un ciclo completo para ${\text{cos}}^{2} (\xi)$ es el mismo que para ${\text{sen}}^{2} (\xi)$, para obtener
+
+$$ 〈 {\text{cos}}^{2}\xi 〉 = \frac{1}{2} [〈 {\text{cos}}^{2}\xi 〉 + 〈 {\text{sen}}^{2}\xi 〉] = \frac{1}{2} 〈 1 〉 = \frac{1}{2}. $$
+
+donde los paréntesis angulares $〈 \text{⋯} 〉$ representan la operación de promediación del tiempo. La intensidad de la luz que se mueve a la velocidad c en el vacío es entonces
+
+$$ I = {S}_{\text{avg}} = \frac{1}{2}c{\epsilon }_{0}{E}_{0}^{2} $$
+
+en función de la intensidad máxima del campo eléctrico ${E}_{0},$ que es también la amplitud del campo eléctrico. La manipulación algebraica produce la relación
+
+$$ I = \frac{c{B}_{0}^{2}}{2{\mu }_{0}} $$
+
+donde ${B}_{0}$ es la amplitud del campo magnético, que es igual a la intensidad máxima del campo magnético. Una expresión más para ${I}_{\text{avg}}$ en términos de intensidad de campo eléctrico y magnético es útil. Sustituyendo el hecho de que $c{B}_{0} = {E}_{0},$ la expresión anterior se convierte en
+
+$$ I = \frac{{E}_{0}{B}_{0}}{2{\mu }_{0}}. $$
+
+Podemos utilizar cualquiera de las tres ecuaciones anteriores que nos resulte más conveniente, porque las tres ecuaciones son en realidad diferentes versiones del mismo resultado: La energía de una onda está relacionada con la amplitud al cuadrado. Además, como estas ecuaciones se basan en la suposición de que las ondas electromagnéticas son sinusoidales, la intensidad máxima es el doble de la intensidad media; es decir, ${I}_{0} = 2I.$
+
+
+Ejemplo 16.3
+
+
+Un rayo láser
+
+El haz de un pequeño láser de laboratorio suele tener una intensidad de aproximadamente $1,0 \times {10}^{−3}{ \text{W/m}}^{2}$. Suponiendo que el haz está compuesto por ondas planas, calcule las amplitudes de los campos eléctrico y magnético en el haz.
+
+
+Estrategia
+
+Utilice la ecuación que expresa la intensidad en términos de campo eléctrico para calcular el campo eléctrico a partir de la intensidad.
+
+
+Solución
+
+A partir de la Ecuación 16.31, la intensidad del rayo láser es
+
+$$ I = \frac{1}{2}c{\epsilon }_{0}{E}_{0}^{2}. $$
+
+Por lo tanto, la amplitud del campo eléctrico es
+
+$$ {E}_{0} = \sqrt{\frac{2}{c{\epsilon }_{0}}I} = \sqrt{\frac{2}{ (3,00 \times {10}^{8} \text{m/s}) (8,85 \times {10}^{−12} \text{F/m}) } (1,0 \times {10}^{−3}{ \text{W/m}}^{2}) } = 0,87 \text{V/m}. $$
+
+La amplitud del campo magnético puede obtenerse a partir de la Ecuación 16.20:
+
+$$ {B}_{0} = \frac{{E}_{0}}{c} = 2,9 \times {10}^{−9} \text{T}. $$
+
+
+Ejemplo 16.4
+
+
+Campos de bombillas
+
+Una bombilla emite 5,00 W de potencia como luz visible. ¿Cuáles son los campos eléctricos y magnéticos medios de la luz a una distancia de 3,0 m?
+
+
+Estrategia
+
+Supongamos que la potencia disipada P de la bombilla, que se encuentra en el interior de una esfera de radio 3,0 m, se distribuye uniformemente, calcule la intensidad de la potencia en la superficie y, a partir de estos datos, calcule el campo eléctrico.
+
+
+Solución
+
+La potencia radiada como luz visible es entonces
+
+$$ \begin{matrix} I & = & \frac{P}{4\pi {r}^{2}} = \frac{c{\epsilon }_{0}{E}_{0}^{2}}{2}, \\ {E}_{0} & = & \sqrt{2\frac{P}{4\pi {r}^{2}c{\epsilon }_{0}}} = \sqrt{2\frac{5,00 \text{W}}{4\pi { (3,0 \text{m}) }^{2} (3,00 \times {10}^{8} \text{m/s}) (8,85 \times {10}^{−12}{ \text{C}}^{2}\text{/N} \cdot {\text{m}}^{2}) }} = 5,77 \text{N/C,} \\ {B}_{0} & = & {E}_{0} \text{/} c = 1,92 \times {10}^{−8} \text{T}. \end{matrix} $$
+
+
+Importancia
+
+La intensidad I disminuye con la distancia al cuadrado si la radiación se dispersa uniformemente en todas las direcciones.
+
+
+Ejemplo 16.5
+
+
+Alcance de la radio
+
+Un transmisor de radio de 60 kW en la Tierra envía su señal a un satélite situado a 100 km. ¿A qué distancia en la misma dirección la señal tendría la misma intensidad de campo máxima si la potencia de salida del transmisor se aumentara a 90 kW?
+
+
+Estrategia
+
+El área sobre la que se dispersa la potencia en una dirección determinada aumenta con la distancia al cuadrado, como se ilustra en la figura. Cambie la potencia de salida P por un factor de (90 kW/60 kW) y cambie el área por el mismo factor para mantener $I = \frac{P}{A} = \frac{c{\epsilon }_{0}{E}_{0}^{2}}{2}$ son iguales. A continuación, utilice la proporción entre el área A del diagrama y la distancia al cuadrado para calcular la distancia que produce el cambio calculado en el área.
+
+
+Solución
+
+Utilizando la proporcionalidad de las áreas a los cuadrados de las distancias, y resolviendo, obtenemos del diagrama
+
+$$ \begin{matrix} \frac{{r}_{2}^{2}}{{r}_{1}^{2}} & = & \frac{{A}_{2}}{{A}_{1}} = \frac{90 \text{W}}{60 \text{W}}, \\ {r}_{2} & = & \sqrt{\frac{90}{60}} (100 \text{km}) = 122 \text{km}. \end{matrix} $$
+
+
+Importancia
+
+El alcance de una señal de radio es la distancia máxima entre el emisor y el receptor que permite un funcionamiento normal. En ausencia de complicaciones como las reflexiones de los obstáculos, la intensidad sigue una ley del cuadrado inverso, y para duplicar el alcance habría que multiplicar la potencia por cuatro.
+
+
+16.4 Momento y presión de radiación
+
+Los objetos materiales están formados por partículas cargadas. Una onda electromagnética que incide sobre el objeto ejerce fuerzas sobre las partículas cargadas, de acuerdo con la fuerza de Lorentz, la Ecuación 16.11. Estas fuerzas realizan un trabajo sobre las partículas del objeto, aumentando su energía, como se comentó en el apartado anterior. La energía que transporta la luz del sol es una parte familiar de cada día cálido y soleado. Una característica mucho menos conocida de la radiación electromagnética es la presión extremadamente débil que esta produce al ejercer una fuerza en la dirección de la onda. Esta fuerza se produce porque las ondas electromagnéticas contienen y transportan el momento.
+
+Para entender la dirección de la fuerza para un caso muy concreto, consideremos una onda electromagnética plana que incide sobre un metal en el que el movimiento de los electrones, como parte de una corriente, está amortiguado por la resistencia del metal, de modo que el movimiento medio de los electrones está en fase con la fuerza que lo provoca. Esto es comparable a un objeto que se mueve en contra de la fricción y se detiene tan pronto como la fuerza que lo empuja se detiene. Cuando el campo eléctrico está en la dirección del eje y positivo, los electrones se mueven en la dirección y negativa, con el campo magnético en la dirección del eje z positivo. Aplicando la regla de la mano derecha, y teniendo en cuenta la carga negativa del electrón, podemos ver que la fuerza que ejerce el campo magnético sobre el electrón está en la dirección del eje x positivo, que es la dirección de propagación de la onda. Cuando el campo E se invierte, el campo B también lo hace, y la fuerza vuelve a ser en la misma dirección. Sin embargo, las ecuaciones de Maxwell junto con la ecuación de fuerza de Lorentz implican la existencia de la presión de radiación de forma mucho más general que este ejemplo concreto.
+
+Maxwell predijo que una onda electromagnética lleva momento. Un objeto que absorbe una onda electromagnética experimentaría una fuerza en la dirección de propagación de la onda. La fuerza corresponde a la presión de radiación que la onda ejerce sobre el objeto. La fuerza sería el doble de grande si la radiación se reflejara en lugar de ser absorbida.
+
+En 1903, Nichols y Hull confirmaron la predicción de Maxwell al medir con precisión las presiones de radiación con una balanza de torsión. En la Figura 16.14 se muestra la disposición esquemática. Se colocaron espejos suspendidos de una fibra dentro de un contenedor de vidrio. Nichols y Hull pudieron obtener una pequeña desviación medible de los espejos al iluminar uno de ellos. A partir de la desviación medida, pudieron calcular la fuerza desequilibrada sobre el espejo y obtuvieron un valor acorde con la fuerza prevista.
+
+La presión de radiación ${p}_{\text{rad}}$ aplicada por una onda electromagnética sobre una superficie perfectamente absorbente resulta ser igual a la densidad de energía de la onda:
+
+$$ {p}_{\text{rad}} = u (\text{Un absorbente perfecto}). $$
+
+Si el material es perfectamente reflectante, como una superficie metálica, y si la incidencia es a lo largo de la normal a la superficie, entonces la presión ejercida es el doble porque la dirección del momento se invierte en la reflexión:
+
+$$ {p}_{\text{rad}} = 2u (\text{Un reflector perfecto}). $$
+
+Podemos confirmar que las unidades son correctas:
+
+$$ [u] = \frac{\text{J}}{{\text{m}}^{3}} = \frac{\text{N} \cdot \text{m}}{{\text{m}}^{3}} = \frac{\text{N}}{{\text{m}}^{2}} = \text{unidades de presión}. $$
+
+La Ecuación 16.34 y la Ecuación 16.35 dan la presión instantánea, pero como la densidad de energía oscila rápidamente, normalmente nos interesa la presión de radiación promediada en el tiempo, que puede escribirse en términos de intensidad:
+
+$$ p = 〈 {p}_{\text{rad}} 〉 = \{ \begin{matrix} I \text{/} c & & & \text{Un absorbente perfecto} \\ 2I \text{/} c & & & \text{Un reflector perfecto}. \end{matrix} $$
+
+La presión de la radiación desempeña un papel en la explicación de muchos fenómenos astronómicos observados, incluida la aparición de los cometas. Los cometas son básicamente trozos de material helado en los que se incrustan gases congelados y partículas de roca y polvo. Cuando un cometa se acerca al Sol, se calienta y su superficie comienza a evaporarse. La coma del cometa es la zona nebulosa que lo rodea por los gases y el polvo. Algunos de los gases y el polvo forman colas cuando salen del cometa. Observe en la Figura 16.15 que un cometa tiene dos colas. La cola de iones (o cola de gas en la Figura 16.15) está compuesta principalmente por gases ionizados. Estos iones interactúan electromagnéticamente con el viento solar, que es una corriente continua de partículas cargadas emitidas por el Sol. La fuerza del viento solar sobre los gases ionizados es lo suficientemente fuerte como para que la cola de iones apunte casi siempre a una dirección que se aleja del Sol.. La segunda cola está compuesta por partículas de polvo. Como la cola de polvo es eléctricamente neutra, no interactúa con el viento solar. Sin embargo, esta cola se ve afectada por la presión de radiación producida por la luz del Sol. Aunque es bastante pequeña, esta presión es lo suficientemente fuerte como para que la cola de polvo se desplace de la trayectoria del cometa.
+
+
+Ejemplo 16.6
+
+
+El cometa Halley
+
+El 9 de febrero de 1986, el cometa Halley se encontraba en su punto más cercano al Sol, cerca de $9,0 \times {10}^{10} \text{m}$ del centro del Sol. La potencia media irradiada del Sol es $3,8 \times {10}^{26} \text{W}.$
+
+(a) Calcule la presión de radiación sobre el cometa en este punto de su órbita. Supongamos que el cometa refleja toda la luz incidente.
+
+(b) Supongamos que un trozo de material de 10 kg de área transversal $4,0 \times {10}^{−2}{ \text{m}}^{2}$ se desprende del cometa. Calcule la fuerza sobre este trozo debida a la radiación solar. Compare esta fuerza con la fuerza gravitatoria del Sol.
+
+
+Estrategia
+
+Calcule la intensidad de la radiación solar a la distancia dada del Sol y utilícela para calcular la presión de radiación. A partir de la presión y el área, calcule la fuerza.
+
+
+Solución
+
+La intensidad de la radiación solar es la potencia solar media por unidad de superficie. Por lo tanto, en $9,0 \times {10}^{10} \text{m}$ desde el centro del Sol, tenemos
+
+$$ I = {S}_{\text{avg}} = \frac{3,8 \times {10}^{26} \text{W}}{4\pi { (9,0 \times {10}^{10} \text{m}) }^{2}} = 3,7 \times {10}^{3}{ \text{W/m}}^{2}. $$
+
+Suponiendo que el cometa refleja toda la radiación incidente, obtenemos de la Ecuación 16.36
+
+$$ p = \frac{2I}{c} = \frac{2 (3,7 \times {10}^{3}{ \text{W/m}}^{2}) }{3,00 \times {10}^{8} \text{m/s}} = 2,5 \times {10}^{−5}{ \text{N/m}}^{2}. $$
+
+La fuerza que ejerce la radiación sobre el trozo de cometa es
+
+$$ \begin{matrix} F & = p A = (2,5 \times {10}^{−5}{ \text{N/m}}^{2}) (4,0 \times {10}^{−2}{ \text{m}}^{2}) \\ & = 1,0 \times {10}^{−6} \text{N}, \end{matrix} $$
+
+$$ {F}_{\text{g}} = \frac{GMm}{{r}^{2}} = \frac{ (6,67 \times {10}^{−11} \text{N} \cdot {\text{m}}^{2}{\text{/kg}}^{2}) (2,0 \times {10}^{30} \text{kg}) (10 \text{kg}) }{{ (9,0 \times {10}^{10} \text{m}) }^{2}} = 0,16 \text{N}. $$
+
+
+Importancia
+
+Por lo tanto, la fuerza gravitatoria del Sol sobre el trozo es mucho mayor que la fuerza de la radiación.
+
+Después de que Maxwell demostrara que la luz transportaba tanto el momento como la energía, surgió una idea novedosa, al principio solo como ciencia ficción. Tal vez una nave espacial con una gran vela solar reflectante podría utilizar la presión de la radiación para la propulsión. Un vehículo de este tipo no tendría que llevar combustible. Experimentaría una fuerza constante pero pequeña de la radiación solar, en lugar de las breves ráfagas de la propulsión de los cohetes. Se aceleraría lentamente, pero al ser acelerado continuamente, acabaría alcanzando grandes velocidades. Se necesitaría una nave con una masa total pequeña y una vela con una gran superficie para obtener una aceleración utilizable.
+
+Cuando se inició el programa espacial en la década de 1960, la idea empezó a recibir una atención seria por parte de la NASA. El desarrollo más reciente en materia de naves espaciales de propulsión ligera procede de la Sociedad Planetaria, un grupo financiado por particulares. Actualmente está probando el uso de velas ligeras para propulsar un pequeño vehículo construido a partir de CubeSats, que son diminutos satélites que la NASA pone en órbita para diversos proyectos de investigación durante lanzamientos espaciales destinados principalmente a otros fines.
+
+La nave espacial LightSail que se muestra a continuación está formada por tres CubeSats agrupados. Tiene una masa total de solo unos 5 kg y es del tamaño de una barra de pan. Sus velas son de Mylar muy fino y se abren tras el despegue para tener una superficie de ${32 \text{m}}^{2}.$
+
+
+Ejemplo 16.7
+
+
+Aceleración de LightSail
+
+La intensidad de la energía de la luz solar a una distancia de 1 UA del Sol es ${1370 \text{W/m}}^{2}$. La nave espacial LightSail tiene velas con una superficie total de ${32 \text{m}}^{2}$ y una masa total de 5,0 kg. Calcule la máxima aceleración que podría alcanzar la nave espacial LightSail por la presión de la radiación cuando se encuentre a aproximadamente 1 UA del Sol.
+
+
+Estrategia
+
+La máxima aceleración puede esperarse cuando la vela se abre directamente hacia el Sol. Utilice la intensidad de la luz para calcular la presión de radiación y, a partir de ella, la fuerza sobre las velas. A continuación, utilice la segunda ley de Newton para calcular la aceleración.
+
+
+Solución
+
+La presión de radiación es
+
+$$ F = pA = 2uA = \frac{2I}{c}A = \frac{2 (1370{ \text{W/m}}^{2}) (32{ \text{m}}^{2}) }{ (3,00 \times {10}^{8} \text{m/s}) } = 2,92 \times {10}^{−4} \text{N}. $$
+
+La aceleración resultante es
+
+$$ a = \frac{F}{m} = \frac{2,92 \times {10}^{−4} \text{N}}{5,0 \text{kg}} = 5,8 \times {10}^{−5}{ \text{m/s}}^{2}. $$
+
+
+Importancia
+
+Si esta pequeña aceleración se mantuviera durante un año, la nave alcanzaría una velocidad de 1829 m/s, es decir, 6.600 km/h.
+
+
+16.5 El espectro electromagnético
+
+Las ondas electromagnéticas tienen una amplia gama de aplicaciones prácticas cotidianas que incluyen usos tan diversos como la comunicación por teléfono móvil y la radiodifusión, el WiFi, la cocina, la visión, las imágenes médicas y el tratamiento del cáncer. En este módulo, discutimos cómo las ondas electromagnéticas se clasifican en categorías como de radio, infrarroja, ultravioleta, etc. También resumimos algunas de las principales aplicaciones de cada gama.
+
+Las distintas categorías de ondas electromagnéticas se diferencian en su rango de longitudes de onda, o lo que es lo mismo, en sus correspondientes rangos de frecuencia. Sus propiedades cambian suavemente de una gama de frecuencias a la siguiente, con diferentes aplicaciones en cada gama. Un breve resumen de la producción y utilización de las ondas electromagnéticas se encuentra en la Tabla 16.1.
+
+La relación $c = f\lambda$ entre la frecuencia f y la longitud de onda $\lambda$ se aplica a todas las ondas y asegura que a mayor frecuencia menor longitud de onda. La Figura 16.17 muestra cómo se clasifican los distintos tipos de ondas electromagnéticas según sus longitudes de onda y frecuencias, es decir, muestra el espectro electromagnético.
+
+
+Ondas de radio
+
+El término ondas de radio se refiere a la radiación electromagnética con longitudes de onda superiores a unos 0,1 m. Las ondas de radio se utilizan habitualmente para las comunicaciones de audio (es decir, para las radios), pero el término se utiliza para las ondas electromagnéticas de esta gama independientemente de su aplicación. Las ondas de radio suelen ser el resultado de una corriente alterna en los cables de una antena de radiodifusión. Cubren una gama de longitudes de onda muy amplia y se dividen en muchos subrangos, como las microondas, las ondas electromagnéticas utilizadas para la radio AM y FM, los teléfonos móviles y las señales de televisión.
+
+No existe la frecuencia más baja de las ondas de radio, pero las ondas ELF, o de "frecuencia extremadamente baja", están entre las frecuencias más bajas que se encuentran habitualmente, de 3 Hz a 3 kHz. La carga acelerada de las corrientes alternas de las líneas eléctricas produce ondas electromagnéticas en este rango. Las ondas ELF son capaces de penetrar en el agua del mar, que absorbe fuertemente las ondas electromagnéticas de mayor frecuencia, por lo que son útiles para las comunicaciones submarinas.
+
+Para utilizar una onda electromagnética para transmitir información, se modula la amplitud, la frecuencia o la fase de la onda, o se varía de forma controlada para codificar la información deseada en la onda. En la transmisión de radio AM, la amplitud de la onda se modula para imitar las vibraciones del sonido que se transmite. El teorema de Fourier implica que la onda AM modulada equivale a una superposición de ondas que cubren un estrecho rango de frecuencias. A cada estación de AM se le asigna una frecuencia portadora específica que, por acuerdo internacional, puede variar en $\text{±5 kHz}$. En la transmisión de radio FM, la frecuencia de la onda se modula para transportar esta información, como se ilustra en la Figura 16.18, y la frecuencia de cada emisora puede utilizar 100 kHz a cada lado de su frecuencia portadora. La onda electromagnética produce una corriente en una antena receptora y la radio o la televisión procesan la señal para producir el sonido y cualquier imagen. Mientras más alta sea la frecuencia de la onda de radio utilizada para transportar los datos, mayor será la variación detallada de la onda que se puede transportar modulándola en cada unidad de tiempo, y más datos se podrán transmitir por unidad de tiempo. Las frecuencias asignadas para la radiodifusión AM son de 540 a 1600 kHz, y para la FM son de 88 MHz a108 MHz.
+
+Las conversaciones por teléfono móvil y las voces e imágenes de video de la televisión se transmiten habitualmente como datos digitales mediante la conversión de la señal en una secuencia de unos y ceros binarios. Esto permite una transmisión de datos más clara cuando la señal es débil, y permite utilizar algoritmos informáticos para comprimir los datos digitales y transmitir más datos en cada rango de frecuencia. Los datos informáticos también se transmiten como una secuencia de unos y ceros binarios, cada uno de los cuales constituye un bit de datos.
+
+
+Microondas
+
+Las microondas son las ondas electromagnéticas de más alta frecuencia que pueden ser producidas por corrientes en circuitos y dispositivos macroscópicos. Las frecuencias de las microondas oscilan entre ${10}^{9}\text{Hz}$ a casi ${10}^{12}\text{Hz}$. Sus altas frecuencias corresponden a longitudes de onda cortas en comparación con otras ondas de radio, de ahí el nombre de "microondas" Las microondas también se producen de forma natural como la radiación cósmica de fondo que queda desde el origen del universo. Junto con otras gamas de ondas electromagnéticas, forman parte de la radiación que emite y absorbe cualquier objeto por encima del cero absoluto a causa de la agitación térmica, es decir, del movimiento térmico de sus átomos y moléculas.
+
+La mayor parte de la información transmitida por satélite se transmite por microondas. El radar es una aplicación común de las microondas. Al detectar y cronometrar los ecos de microondas, los sistemas de radar pueden determinar la distancia a objetos tan diversos como nubes, aviones o incluso la superficie de Venus.
+
+Las microondas de 2,45 GHz se utilizan habitualmente en los hornos de microondas. Los electrones de una molécula de agua tienden a permanecer más cerca del núcleo de oxígeno que de los núcleos de hidrógeno. Esto crea dos centros separados de cargas iguales y opuestas, lo que da a la molécula un momento dipolar (vea Campo eléctrico). El campo eléctrico oscilante de las microondas en el interior del horno ejercen un torque que tiende a alinear cada molécula primero en una dirección y luego en la otra, con el movimiento de cada molécula acoplado a otras a su alrededor. Esto bombea energía al movimiento térmico continuo del agua para calentar los alimentos. La placa que se encuentra debajo de los alimentos no contiene agua y permanece relativamente sin calentar.
+
+Las microondas de un horno microondas se reflejan en las paredes del horno, de modo que la superposición de ondas produce ondas estacionarias, similares a las ondas estacionarias de una guitarra o una cuerda de violín que vibra (vea Modos normales de una onda sonora estacionaria). Un ventilador giratorio actúa como agitador al reflejar las microondas en diferentes direcciones, y las placas giratorias para alimentos, ayudan a repartir los puntos calientes.
+
+
+Ejemplo 16.8
+
+
+Por qué los hornos microondas se calientan de forma desigual
+
+¿Qué distancia hay entre los puntos calientes de un horno microondas de 2,45 GHz?
+
+
+Estrategia
+
+Considere las ondas a lo largo de una dirección en el horno, siendo reflejadas en la pared opuesta de donde se generan.
+
+
+Solución
+
+Los antinodos, donde se produce la máxima intensidad, están separados por la mitad de la longitud de onda, con una separación
+
+$$ d = \frac{1}{2}\lambda = \frac{1}{2} \frac{c}{f} = \frac{3,00 \times {10}^{8} \text{m/s}}{2 (2,45 \times {10}^{9} \text{Hz}) } = 6,02 \text{cm}. $$
+
+
+Importancia
+
+La distancia entre los puntos calientes de un horno microondas viene determinada por la longitud de onda de las microondas.
+
+Un teléfono móvil tiene un receptor de radio y un transmisor de radio débil, ambos pueden sintonizar rápidamente cientos de frecuencias de microondas específicamente asignadas. La baja intensidad de la señal transmitida le confiere un alcance intencionadamente limitado. Un sistema terrestre (torre celular) se enlaza con el teléfono únicamente con la torre de transmisión asignada a una pequeña área específica, llamada célula, y realiza una transición fácil de conexión a la próxima célula cuando la recepción de la señal allí es la de mayor potencia Esto permite utilizar un teléfono móvil mientras se cambia de ubicación.
+
+Las microondas también proporcionan el WiFi que permite a los propietarios de teléfonos móviles, computadoras portátiles y dispositivos similares conectarse de forma inalámbrica a Internet en casa y en cafeterías y aeropuertos. Un rúter WiFi inalámbrico es un dispositivo que intercambia datos por internet a través del cable u otra conexión, y utiliza microondas para intercambiar los datos de forma inalámbrica con dispositivos como teléfonos móviles y computadoras. El propio término WiFi hace referencia a las normas que se siguen para modular y analizar las microondas de forma que los rúteres y dispositivos inalámbricos de distintos fabricantes funcionen de forma compatible entre sí. Los datos de la computadora en cada dirección consisten en secuencias de ceros y unos binarios, cada uno de los cuales corresponde a un bit binario. Las microondas están en el rango de 2,4 GHz a 5,0 GHz.
+
+Otras tecnologías inalámbricas también utilizan las microondas para las comunicaciones cotidianas entre dispositivos. Bluetooth se desarrolló junto a WiFi como un estándar para la comunicación por radio en el rango de 2,4 GHz entre dispositivos cercanos, por ejemplo, para enlazar con auriculares y audífonos a dispositivos como radios, o el teléfono móvil de un conductor a un dispositivo de manos libres para poder responder a las llamadas telefónicas sin tener que manipular directamente el móvil.
+
+Las microondas también se utilizan en el etiquetado por radio, mediante la tecnología de identificación por radiofrecuencia (radio frequency identification, RFID). Algunos ejemplos son las etiquetas de RFID adheridas a la mercancía de las tiendas, el transpondedor para el uso de las cabinas de peaje adherido al parabrisas de un automóvil o incluso un chip incrustado en la piel de una mascota. El dispositivo responde a una señal de microondas emitiendo una señal propia con información codificada, lo que permite a las tiendas registrar rápidamente los artículos en sus cajas registradoras, a los conductores cargar los peajes en su cuenta sin detenerse y a las mascotas perdidas reunirse con sus dueños. La comunicación de campo cercano (near field communication, NFC) funciona de forma similar, salvo que tiene un alcance mucho menor. Su mecanismo de interacción es el campo magnético inducido a frecuencias de microondas entre dos bobinas. Los teléfonos móviles con capacidad de NFC y el software adecuado pueden suministrar información para hacer compras mediante el teléfono móvil en vez de una tarjeta de crédito real. El corto alcance de la transferencia de datos es una característica de seguridad deseada en este caso.
+
+
+Radiación infrarroja
+
+El límite entre las regiones de microondas e infrarrojos del espectro electromagnético no está bien definido. La radiación infrarroja se produce generalmente por el movimiento térmico y la vibración y la rotación de átomos y moléculas. Las transiciones electrónicas en los átomos y las moléculas también pueden producir radiación infrarroja. Aproximadamente la mitad de la energía solar que llega a la Tierra se encuentra en la región infrarroja y la mayor parte del resto en la parte visible del espectro. Aproximadamente el 23% de la energía solar se absorbe en la atmósfera, cerca del 48% se absorbe en la superficie de la Tierra y cerca del 29% se refleja en el espacio.1
+
+La gama de frecuencias infrarrojas se extiende hasta el límite inferior de la luz visible, justo por debajo del rojo. De hecho, infrarrojo significa "por debajo del rojo" Las moléculas de agua giran y vibran especialmente bien en las frecuencias infrarrojas. Los satélites de reconocimiento pueden detectar edificios, vehículos e incluso personas por sus emisiones infrarrojas, cuya potencia de radiación es proporcional a la cuarta potencia de la temperatura absoluta. De forma más mundana, utilizamos las lámparas de infrarrojos, incluidas las llamadas calefactores de cuarzo, para calentarnos preferentemente porque absorbemos los infrarrojos mejor que nuestro entorno.
+
+Los conocidos “controles remoto" para cambiar los canales y los ajustes de los televisores suelen transmitir su señal modulando un haz de infrarrojos. Si intenta utilizar el control remoto del televisor sin que el emisor de infrarrojos esté en línea de visión directa con el detector de infrarrojos, es posible que el televisor no responda. Algunos controles remoto utilizan Bluetooth en su lugar y reducen esta molestia.
+
+
+Luz visible
+
+La luz visible es el estrecho segmento del espectro electromagnético comprendido entre unos 400 nm y unos 750 nm al que responde el ojo humano normal. La luz visible se produce por las vibraciones y rotaciones de los átomos y las moléculas, así como por las transiciones electrónicas dentro de los átomos y las moléculas. Los receptores o detectores de luz utilizan en gran medida las transiciones electrónicas.
+
+La luz roja tiene las frecuencias más bajas y las longitudes de onda más largas, mientras que la violeta tiene las frecuencias más altas y las longitudes de onda más cortas. La radiación de cuerpo negro del Sol alcanza su punto máximo en la parte visible del espectro, pero es más intensa en el rojo que en el violeta, lo que hace que el sol tenga un aspecto amarillento.
+
+Los seres vivos —plantas y animales— han evolucionado para utilizar y responder a partes del espectro electromagnético en el que están inmersos. Disfrutamos de la belleza de la naturaleza a través de la luz visible. Las plantas son más selectivas. La fotosíntesis utiliza partes del espectro visible para producir azúcares.
+
+
+Radiación ultravioleta
+
+Ultravioleta significa "por encima del violeta" Las frecuencias electromagnéticas de la radiación ultravioleta (UV) se extienden hacia arriba desde el violeta, la luz visible de mayor frecuencia. El ultravioleta de mayor frecuencia se superpone con los rayos X de menor frecuencia. Las longitudes de onda del ultravioleta se extienden desde 400 nm hasta unos 10 nm en sus frecuencias más altas. El ultravioleta se produce por los movimientos atómicos y moleculares y las transiciones electrónicas.
+
+La radiación ultravioleta del Sol se subdivide a grandes rasgos en tres rangos de longitud de onda: La UV-A (320-400 nm) es la frecuencia más baja, luego la UV-B (290-320 nm) y la UV-C (220-290 nm). La mayoría de los rayos UV-B y todos los UV-C son absorbidos por el ozono (${\text{O}}_{3}$) en la atmósfera superior. En consecuencia, el 99% de la radiación UV solar que llega a la superficie de la Tierra es UV-A.
+
+Las quemaduras solares son causadas por grandes exposiciones a los rayos UV-B y UV-C, y la exposición repetida puede aumentar la probabilidad de cáncer de piel. La respuesta del bronceado es un mecanismo de defensa en el que el cuerpo produce pigmentos en las capas inertes de la piel para reducir la exposición de las células vivas que hay debajo.
+
+Como se examinará en un capítulo posterior, cuanto más corta es la longitud de onda de la luz, mayor es el cambio de energía de un átomo o molécula que absorbe la luz en una transición electrónica. Esto hace que la luz ultravioleta de corta longitud de onda sea perjudicial para las células vivas. También explica por qué la radiación ultravioleta es más capaz que la luz visible de provocar el brillo o la fluorescencia de algunos materiales.
+
+Además de los efectos adversos de la radiación ultravioleta, también hay beneficios de la exposición en la naturaleza y usos en la tecnología. La producción de vitamina D en la piel es el resultado de la exposición a la radiación UV-B, generalmente de la luz solar. Varios estudios sugieren que la deficiencia de vitamina D está asociada al desarrollo de una serie de cánceres (próstata, mama, colon), así como a la osteoporosis. El ultravioleta de baja intensidad tiene aplicaciones como la de proporcionar la energía necesaria para que ciertos tintes sean fluorescentes y emitan luz visible, por ejemplo, en el dinero impreso para mostrar marcas de agua ocultas como protección contra la falsificación.
+
+
+Rayos X
+
+Los rayos X tienen longitudes de onda de aproximadamente ${10}^{\text{−}8}{\text{m a} 10}^{\text{−}12}\text{m}$. Tienen longitudes de onda más cortas, y frecuencias más altas, que el ultravioleta, por lo que la energía que transfieren a nivel atómico es mayor. En consecuencia, los rayos X tienen efectos adversos sobre las células vivas similares a los de la radiación ultravioleta, pero son más penetrantes. Los rayos X pueden provocar cáncer y defectos genéticos. Debido a su efecto sobre las células que se dividen rápidamente, los rayos X también pueden utilizarse para tratar e incluso curar el cáncer.
+
+El uso más amplio de los rayos X es para obtener imágenes de objetos opacos a la luz visible, como el cuerpo humano o las piezas de los aviones. En los seres humanos, el riesgo de daño celular se sopesa cuidadosamente frente al beneficio de la información diagnóstica obtenida.
+
+
+Rayos gamma
+
+Poco después de que se detectara la radiactividad nuclear por primera vez en 1896, se descubrió que se emitían al menos tres tipos distintos de radiación, que se designaron como rayos alfa, beta y gamma. Luego se descubrió que la radiación nuclear más penetrante, los rayos gamma ($\mathrm{rayos}$ γ), eran una onda electromagnética de alta frecuencia extrema.
+
+El extremo inferior del rango de los rayos $\gamma \text{-}$ se superpone con el extremo superior de la gama de los rayos X. Los rayos gamma tienen características idénticas a las de los rayos X de la misma frecuencia; solo se diferencian en la fuente. El nombre "rayos gamma" se utiliza generalmente para la radiación electromagnética emitida por un núcleo, mientras que los rayos X se producen generalmente al bombardear un objetivo con electrones energéticos en un tubo de rayos X. En frecuencias más altas, los rayos $\gamma$ son más penetrantes y más dañinos para los tejidos vivos. Tienen muchos de los mismos usos que los rayos X, incluida la terapia del cáncer. La radiación gamma de los materiales radiactivos se utiliza en la medicina nuclear.

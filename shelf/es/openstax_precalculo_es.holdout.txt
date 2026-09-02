@@ -1,0 +1,713 @@
+$$ \begin{matrix} f (x) = \frac{ (x - 7) (x + 1) }{x - 7} & \text{Anule los factores similares en el numerador y el denominador.} \\ f (x) = x + 1, x \ne 7 & \text{Simplifique.} \end{matrix} $$
+
+Observe que $x$ no puede ser 7, o estaríamos dividiendo entre 0, por lo que 7 no está en el dominio de la función original. Para no cambiar la función cuando simplificamos, ponemos la misma condición, $x \ne 7,$ para la función simplificada. Podemos representar la función gráficamente como se muestra en la Figura 2.
+
+Lo que sucede en $x = 7$ es completamente diferente de lo que ocurre en los puntos cercanos a $x = 7$ a cada lado. La notación
+
+$$ \underset{x \to 7}{lím}f (x) = 8 $$
+
+indica que a medida que la entrada $x$ se acerca a 7 desde la izquierda o desde la derecha, la salida se acerca a 8. La salida puede acercarse tanto a 8 como queramos si la entrada está lo suficientemente cerca de 7.
+
+¿Qué sucede en $x = 7?$ Cuando $x = 7,$ no hay ninguna salida correspondiente. Lo escribimos como
+
+$$ f (7) \text{no existe.} $$
+
+Esta notación indica que 7 no está en el dominio de la función. Ya lo habíamos indicado cuando escribimos la función como
+
+$$ f (x) = x + 1, x \ne 7. $$
+
+Observe que el límite de una función puede existir incluso cuando $f (x)$ no está definida en $x = a.$ Gran parte de nuestro trabajo posterior consistirá en determinar límites de funciones a medida que $x$ se acerca a $a,$ aunque la salida en $x = a$ no existe.
+
+
+El límite de una función
+
+Una cantidad $L$ es el límite de una función $f (x)$ cuando $x$ se acerca a $a$ si, a medida que los valores de entrada de $x$ se acercan a $a$ (pero no son iguales a $a),$ los valores de salida correspondientes de $f (x)$ se acercan a $L.$ Observe que el valor del límite no se ve afectado por el valor de salida de $f (x)$ en $a.$ Ambos $a$ y $L$ deben ser números reales. Lo escribimos como
+
+$$ \underset{x \to a}{lím}f (x) = L $$
+
+
+Inténtelo #1
+
+
+Comprender los límites izquierdo y derecho
+
+Podemos acercarnos a la entrada de una función desde cualquier lado de un valor, desde la izquierda o la derecha. La Figura 3 muestra los valores de
+
+$$ f (x) = x + 1, x \ne 7 $$
+
+como se han descrito anteriormente y se han representado en la Figura 2.
+
+Los valores descritos como "desde la izquierda" son menores que el valor de entrada 7 y, por lo tanto, aparecerían a la izquierda del valor en una línea numérica. Los valores de entrada que se acercan a 7 desde la izquierda en la Figura 3 son $6,9,$ $6,99,$ y $6,999.$ Las salidas correspondientes son $7,9, 7,99,$ y $7,999.$ Estos valores se acercan a 8. El límite de los valores de $f (x)$ cuando $x$ se acerca por la izquierda se conoce como el límite izquierdo. Para esta función, 8 es el límite izquierdo de la función $f (x) = x + 1, x \ne 7$ a medida que $x$ se acerca a 7.
+
+Los valores descritos como "desde la derecha" son mayores que el valor de entrada 7 y, por tanto, aparecerían a la derecha del valor en una línea numérica. Los valores de entrada que se acercan a 7 desde la derecha en la Figura 3 son $7,1,$ $7,01,$ y $7,001.$ Las salidas correspondientes son $8,1,$ $8,01,$ y $8,001.$ Estos valores se acercan a 8. El límite de los valores de $f (x)$ cuando $x$ se acerca por la derecha se conoce como el límite derecho. Para esta función, 8 es también el límite derecho de la función $f (x) = x + 1, x \ne 7$ a medida que $x$ se acerca a 7.
+
+La Figura 3 muestra que podemos obtener la salida de la función a una distancia de 0,1 de 8 utilizando una entrada a una distancia de 0,1 de 7. En otras palabras, necesitamos una entrada de $x$ dentro del intervalo $6,9 < x < 7,1$ para producir un valor de salida de $f (x)$ dentro del intervalo $7,9 < f (x) < 8,1.$
+
+También vemos que podemos obtener valores de salida de $f (x)$ sucesivamente más cerca de 8 al seleccionar valores de entrada más cercanos a 7. De hecho, podemos obtener valores de salida dentro de cualquier intervalo especificado si elegimos los valores de entrada adecuados.
+
+La Figura 4 proporciona una representación visual de los límites izquierdo y derecho de la función. A partir del gráfico de $f (x),$ observamos que la salida puede acercarse infinitesimalmente a $L = 8$ a medida que $x$ se acerca a 7 por la izquierda y a medida que $x$ se acerca a 7 por la derecha.
+
+Para indicar el límite izquierdo, escribimos
+
+$$ \underset{x \to {7}^{ - }}{lím}f (x) = 8. $$
+
+Para indicar el límite derecho, escribimos
+
+$$ \underset{x \to {7}^{ + }}{lím}f (x) = 8. $$
+
+
+Límites izquierdo y derecho
+
+El límite izquierdo de una función $f (x)$ cuando $x$ se acerca a $a$ desde la izquierda es igual a $L,$ denotado por
+
+$$ \underset{x \to {a}^{ - }}{lím}f (x) = L. $$
+
+Los valores de $f (x)$ pueden acercarse al límite $L$ tanto como queramos tomando valores de $x$ lo suficientemente cerca de $a$ de manera que $x < a$ y $x \ne a.$
+
+El límite derecho de una función $f (x),$ a medida que $x$ se acerca a $a$ desde la derecha, es igual a $L,$ denotado por
+
+$$ \underset{x \to {a}^{ + }}{lím}f (x) = L. $$
+
+Los valores de $f (x)$ pueden acercarse al límite $L$ tanto como queramos tomando valores de $x$ lo suficientemente cerca de $a$ pero mayores que $a.$ Ambos $a$ y $L$ son números reales.
+
+
+Comprender los límites laterales
+
+En el ejemplo anterior, los límites izquierdo y derecho a medida que $x$ se acerca a $a$ son iguales. Si los límites izquierdo y derecho son iguales, decimos que la función $f (x)$ tiene un límites laterales a medida que $x$ se acerca a $a.$ Más comúnmente, nos referimos a un límite lateral simplemente como un límite. Si el límite izquierdo no es igual al límite derecho, o si uno de ellos no existe, decimos que el límite no existe.
+
+
+Los límites laterales de la función a medida que x se acerca a a
+
+El límite de una función $f (x),$ a medida que $x$ se acerca a $a,$ es igual a $L,$ es decir,
+
+$$ \underset{x \to a }{lím}f (x) = L $$
+
+si y solo si
+
+$$ \underset{x \to {a}^{ - }}{lím}f (x) = \underset{x \to {a}^{ + }}{lím}f (x). $$
+
+En otras palabras, el límite izquierdo de una función $f (x)$ cuando $x$ se acerca a $a$ es igual al límite derecho de la misma función a medida que $x$ se acerca a $a.$ Si existe tal límite, nos referimos al límite como límites laterales. En caso contrario, diremos que el límite no existe.
+
+
+Hallar un límite utilizando un gráfico
+
+Para determinar visualmente si existe un límite a medida que $x$ se acerca a $a,$ observamos el gráfico de la función cuando $x$ está muy cerca de $x = a.$ En la Figura 5 observamos el comportamiento del gráfico a ambos lados de $a.$
+
+Para determinar si existe un límite izquierdo, observamos la rama del gráfico a la izquierda de $x = a,$ pero cerca de $x = a.$ Aquí es donde $x < a.$ Vemos que las salidas se acercan a algún número real $L$ por lo que hay un límite izquierdo.
+
+Para determinar si existe un límite derecho, observe la rama del gráfico a la derecha de $x = a,$ pero cerca de $x = a.$ Aquí es donde $x > a.$ Vemos que las salidas se acercan a algún número real $L,$ por lo que hay un límite derecho.
+
+Si el límite izquierdo y el límite derecho son iguales, como ocurre en la Figura 5, entonces sabemos que la función tiene límites laterales. Normalmente, cuando nos referimos a un "límite", nos referimos a límites laterales, a menos que lo llamemos límite de un lado.
+
+Por último, podemos buscar un valor de salida para la función $f (x)$ cuando el valor de entrada $x$ es igual a $a.$ El par de coordenadas del punto sería $(a, f (a)).$ Si ese punto existe, entonces $f (a)$ tiene un valor. Si el punto no existe, como en la Figura 5, entonces decimos que $f (a)$ no existe.
+
+
+Cómo
+
+Dada una función $f (x),$ utilice un gráfico para hallar los límites y el valor de una función a medida que $x$ se acerca a $a.$
+
+Examine el gráfico para determinar si existe un límite izquierdo.
+
+Examine el gráfico para determinar si existe un límite derecho.
+
+Si los dos límites de un lado existen y son iguales, entonces hay límites laterales, lo que normalmente llamamos "límite".
+
+Si hay un punto en $x = a,$ entonces $f (a)$ es el valor de la función correspondiente.
+
+
+Hallar un límite utilizando una tabla
+
+La creación de una tabla es una forma de determinar límites mediante información numérica. Creamos una tabla de valores en la que los valores de entrada de $x$ se acercan a $a$ de ambos lados. Luego determinamos si los valores de salida se acercan cada vez más a algún valor real, el límite $L.$
+
+Veamos un ejemplo con la siguiente función:
+
+$$ \underset{x \to 5}{lím} (\frac{{x}^{3} - 125}{x - 5}) $$
+
+Para crear la tabla, evaluamos la función en valores cercanos a $x = 5.$ Utilizamos algunos valores de entrada menores que 5 y otros mayores que 5 como en la Figura 9. Los valores de la tabla muestran que cuando $x > 5$ pero acercándose a 5, la salida correspondiente se acerca a 75. Cuando $x > 5$ pero acercándose a 5, la salida correspondiente también se acerca a 75.
+
+Dado que
+
+$$ \underset{x \to {5}^{ - }}{lím}f (x) = 75 = \underset{x \to {5}^{ + }}{lím}f (x), $$
+
+entonces
+
+$$ \underset{x \to 5}{lím}f (x) = 75. $$
+
+Recuerde que $f (5)$ no existe.
+
+
+Cómo
+
+Dada una función $f,$ utilice una tabla para hallar el límite a medida que $x$ se acerca a $a$ y el valor de $f (a),$ si existe.
+
+Elija varios valores de entrada que se acerquen a $a$ tanto desde la izquierda como desde la derecha. Anótelos en una tabla.
+
+Evalúe la función en cada valor de entrada. Anótelos en la tabla.
+
+Determine si los valores de la tabla indican un límite izquierdo y un límite derecho.
+
+Si los límites izquierdo y derecho existen y son iguales, hay límites laterales.
+
+Sustituya $x$ con la $a$ para calcular el valor de $f (a).$
+
+
+Inténtelo #4
+
+
+Gráficos
+
+En los siguientes ejercicios, estime los valores funcionales y los límites a partir del gráfico de la función $f$ proporcionado en la Figura 14.
+
+En los siguientes ejercicios, dibuje el gráfico de una función a partir de los valores funcionales y los límites proporcionados.
+
+En los siguientes ejercicios, utilice una calculadora gráfica para determinar el límite con 5 decimales a medida que $x$ se acerca a 0.
+
+En los siguientes ejercicios, utilice una herramienta gráfica para hallar pruebas gráficas para determinar los límites izquierdo y derecho de la función dada a medida que $x$ se acerca a $a.$ Si la función tiene un límite a medida que $x$ se acerca a $a,$ indíquelo. Si no es así, discuta por qué no hay límite.
+
+
+Numéricos
+
+En los siguientes ejercicios, utilice evidencias numéricas para determinar si el límite existe en $x = a.$ En caso contrario, describa el comportamiento del gráfico de la función cerca de $x = a.$ Redondee las respuestas a dos decimales.
+
+En los siguientes ejercicios, utilice una calculadora para estimar el límite preparando una tabla de valores. Si no hay límite, describa el comportamiento de la función a medida que $x$ se acerca al valor dado.
+
+En los siguientes ejercicios, utilice una herramienta gráfica para hallar pruebas numéricas o gráficas para determinar los límites izquierdo y derecho de la función dada a medida que $x$ se acerca a $a.$ Si la función tiene un límite a medida que $x$ se acerca a $a,$ indíquelo. Si no es así, discuta por qué no hay límite.
+
+
+12.2 Hallar los límites: propiedades de los límites
+
+Considere la función racional
+
+$$ f (x) = \frac{{x}^{2} - 6x - 7}{x - 7} $$
+
+La función se puede factorizar de la siguiente manera:
+
+$$ f (x) = \frac{ (x - 7) (x + 1) }{x - 7}, \text{que nos da}f (x) = x + 1, x \ne 7. $$
+
+¿Esto significa que la función $f$ es lo mismo que la función $g (x) = x + 1?$
+
+La respuesta es no. La función $f$ no tiene $x = 7$ en su dominio, pero $g$ sí lo tiene. Gráficamente, observamos que hay un agujero en el gráfico de $f (x)$ en $x = 7,$ como se muestra en la Figura 1 y no hay tal agujero en el gráfico de $g (x),$ como se muestra en la Figura 2.
+
+Entonces, ¿estas dos funciones diferentes también tienen límites diferentes a medida que $x$ se acerca a 7?
+
+No necesariamente. Recuerde que al determinar el límite de una función a medida que $x$ se acerca a $a,$ lo que importa es si la salida se acerca a un número real a medida que nos acercamos a $x = a.$ La existencia de un límite no depende de lo que ocurra cuando $x$ es igual a $a.$
+
+Mire de nuevo la Figura 1 y la Figura 2. Observe que en ambos gráficos, a medida que $x$ se acerca a 7, los valores de salida se acercan a 8. Esto significa que
+
+$$ \underset{x \to 7}{lím}f (x) = \underset{x \to 7}{lím}g (x). $$
+
+Recuerde que cuando se determina un límite, la preocupación es lo que ocurre cerca de $x = a,$ no en $x = a.$ En esta sección utilizaremos una variedad de métodos, como reescribir funciones por factorización, para evaluar el límite. Estos métodos nos permitirán verificar formalmente lo que antes conseguíamos por intuición.
+
+
+Hallar el límite de una suma, una diferencia y un producto
+
+Graficar una función o explorar una tabla de valores para determinar un límite puede ser engorroso y llevar mucho tiempo. Cuando es posible, es más eficiente utilizar las propiedades de los límites, lo cual es una colección de teoremas para hallar límites.
+
+Conocer las propiedades de los límites nos permite calcularlos directamente. Podemos sumar, restar, multiplicar y dividir los límites de las funciones como si estuviéramos realizando las operaciones sobre las propias funciones para hallar el límite del resultado. Del mismo modo, podemos hallar el límite de una función elevada a una potencia llevando el límite a esa potencia. También podemos hallar el límite de la raíz de una función tomando la raíz del límite. Utilizando estas operaciones sobre los límites, podemos hallar los límites de funciones más complejas hallando los límites de sus funciones componentes más simples.
+
+
+Propiedades de los límites
+
+Supongamos que $a, k, A,$ y $B$ representan números reales, y $f$ y $g$ son funciones, de manera que $\underset{x \to a}{lím}f (x) = A$ y $\underset{x \to a}{lím}g (x) = B.$ Para los límites que existen y son finitos, las propiedades de los límites se resumen en la Tabla 1
+
+
+Hallar el límite de un polinomio
+
+No todas las funciones o sus límites implican una simple suma, resta o multiplicación. Algunos pueden incluir polinomios. Recordemos que un polinomio es una expresión que consiste en la suma de dos o más términos, cada uno de los cuales está formado por una constante y una variable elevada a una potencia entera no negativa. Para hallar el límite de una función polinómica, podemos encontrar los límites de cada uno de los términos de la función y luego sumarlos. Además, el límite de una función polinómica a medida que $x$ se acerca a $a$ equivale a evaluar simplemente la función para $a$.
+
+
+Cómo
+
+Dada una función que contiene un polinomio, halle su límite.
+
+Utilice las propiedades de los límites para descomponer el polinomio en términos individuales.
+
+Halle los límites de los términos individuales.
+
+Sume los límites.
+
+Alternativamente, evalúe la función para $a$.
+
+
+Hallar el límite de una potencia o una raíz
+
+Cuando un límite incluye una potencia o una raíz, necesitamos otra propiedad que nos permita evaluarlo. El cuadrado del límite de una función es igual al límite del cuadrado de la función; lo mismo ocurre con las potencias superiores. Asimismo, la raíz cuadrada del límite de una función es igual al límite de la raíz cuadrada de la función; lo mismo ocurre con las raíces superiores.
+
+
+Hallar el límite de un cociente
+
+Hallar el límite de una función expresada como cociente puede ser más complicado. A menudo, tenemos que reescribir la función algebraicamente antes de aplicar las propiedades de un límite. Si el denominador se evalúa a 0 cuando aplicamos las propiedades de un límite directamente, debemos reescribir el cociente en una forma diferente. Un enfoque es escribir el cociente en forma factorizada y simplificar.
+
+
+Cómo
+
+Dado el límite de una función en forma de cociente, utilice la factorización para evaluarla.
+
+Factorice completamente el numerador y el denominador.
+
+Simplifique dividiendo los factores comunes al numerador y al denominador.
+
+Evalúe el límite resultante, y recuerde utilizar el dominio correcto.
+
+
+Cómo
+
+Dado un límite de una función que contiene una raíz, utilice un conjugado para evaluar.
+
+Si el cociente dado no está en forma indeterminada $(\frac{0}{0})$ evalúe directamente.
+
+En caso contrario, reescriba la suma (o diferencia) de dos cocientes como un único cociente, utilizando el mínimo común denominador.
+
+Si el numerador incluye una raíz, racionalice el numerador; multiplique el numerador y el denominador por el conjugado del numerador. Recordemos que $a \pm \sqrt{b}$ son conjugados.
+
+Simplifique.
+
+Evalúe el límite resultante.
+
+
+Cómo
+
+Dado un cociente con valores absolutos, evalúe su límite.
+
+Intente factorizar o calcular el mínimo común denominador.
+
+Si no se puede hallar el límite, elija varios valores cercanos y a ambos lados de la entrada donde la función es indefinida.
+
+Utilice las pruebas numéricas para calcular los límites de ambos lados.
+
+
+Inténtelo #9
+
+
+Algebraicos
+
+En los siguientes ejercicios, evalúe los límites algebraicamente.
+
+Para el siguiente ejercicio, utilice la información dada para evaluar los límites: $\underset{x \to c}{lím}f (x) = 3,$ $\underset{x \to c}{lím}g (x) = 5$.
+
+En los siguientes ejercicios, evalúe los siguientes límites.
+
+En los siguientes ejercicios, calcule la tasa media de cambio $\frac{f (x + h) - f (x) }{h}.$
+
+
+Gráficos
+
+En los siguientes ejercicios, consulte la Figura 5.
+
+
+12.3 Continuidad
+
+Arizona es conocida por su calor seco. En un día determinado, la temperatura puede subir hasta ${118}^{ \circ }\text{F}$ y bajar solo rápidamente a ${95}^{ \circ }\text{F}\text{.}$ La Figura 1 muestra la función $T,$ donde la salida de $T (x)$ es la temperatura en grados Fahrenheit y la entrada $x$ es la hora del día, utilizando un reloj de 24 horas en un día determinado de verano.
+
+Al analizar este gráfico, observamos una característica específica. No hay interrupciones en el gráfico. Podríamos trazar el gráfico sin levantar el lápiz. Esta única observación nos dice mucho sobre la función. En esta sección investigaremos funciones con y sin interrupciones.
+
+
+Determinar si una función es continua en un número
+
+Consideremos un ejemplo específico de temperatura en términos de fecha y ubicación, como el 27 de junio de 2013, en Phoenix, AZ. El gráfico en la Figura 1 indica que a las 2 a. m. la temperatura era ${96}^{\text{∘}}\text{F}$. A las 2 p. m., la temperatura había subido a ${116}^{\text{∘}}\text{F,}$ y para las 4 p. m. era de ${118}^{\text{∘}}\text{F}\text{.}$ En algún momento entre las 2 a. m. y las 4 p. m., la temperatura exterior debió ser exactamente ${110,5}^{\text{∘}}\text{F}\text{.}$ De hecho, cualquier temperatura entre ${96}^{\text{∘}}\text{F}$ y ${118}^{\text{∘}}\text{F}$ se produjo en algún momento de ese día. Esto significa que todos los números reales en la salida entre ${96}^{\text{∘}}\text{F}$ y ${118}^{\text{∘}}\text{F}$ se generan en algún momento por la función según el teorema del valor intermedio,
+
+Mire de nuevo la Figura 1. No hay interrupciones en el gráfico de la función para este periodo de 24 horas. En ningún momento la temperatura dejó de existir, ni hubo un punto en el que la temperatura saltara instantáneamente varios grados. Una función que no tiene agujeros ni interrupciones en su gráfico se conoce como función continua. La temperatura en función del tiempo es un ejemplo de función continua.
+
+Si la temperatura representa una función continua, ¿qué tipo de función no sería continua? Consideremos un ejemplo de dólares expresados como función de horas de estacionamiento. Vamos a crear la función $D,$ donde $D (x)$ es el resultado que representa el costo en dólares del estacionamiento por $x$ número de horas. Vea la Figura 2.
+
+Supongamos que un estacionamiento tiene una tarifa de 4,00 dólares por hora o fracción de hora, con una tarifa máxima de 25 dólares por día. Si se estaciona durante dos horas y cinco minutos, la tarifa es de 12 dólares. Si se aparca una hora más, la tarifa es de 16 dólares. Nunca nos pueden cobrar 13, 14 o 15 dólares. Hay números reales entre el 12 y el 16 que la función nunca produce. En este periodo de 24 horas, el gráfico de la función presenta interrupciones, puntos en los cuales el precio del estacionamiento salta instantáneamente en varios dólares.
+
+Una función que permanece nivelada durante un intervalo y luego salta instantáneamente a un valor superior se llama función escalonada. Esta función es un ejemplo.
+
+Una función que tiene algún agujero o interrupción en su gráfico se conoce como función discontinua. La función escalonada, como las tarifas de estacionamiento en función de las horas utilizadas, es un ejemplo de función discontinua.
+
+Entonces, ¿cómo podemos decidir si una función es continua en un número determinado? Podemos comprobar tres condiciones diferentes. Utilicemos la función $y = f (x)$ representada en la Figura 3 como ejemplo.
+
+Condición 1 Según la condición 1, la función $f (a)$ definida en $x = a$ debe existir. En otras palabras, hay una coordenada y en $x = a$ como en la Figura 4.
+
+Condición 2 Según la condición 2, en $x = a$ el límite, escrito $\underset{x \to a}{lím}f (x),$ debe existir. Esto significa que en $x = a$ el límite izquierdo debe ser igual al límite derecho. Observe como el gráfico de $f$ en la Figura 3 se acerca a $x = a$ desde la izquierda y la derecha, se acerca a la misma coordenada y. Por lo tanto, se cumple la condición 2. Sin embargo, todavía podría existir un agujero en el gráfico en $x = a$.
+
+Condición 3 Según la condición 3, la coordenada $y$ coordenadas en $x = a$ rellena el agujero en el gráfico de $f.$ Esto se escribe $\underset{x \to a}{lím}f (x) = f (a).$
+
+El cumplimiento de las tres condiciones significa que la función es continua. Las tres condiciones se cumplen para la función representada en la Figura 5, por lo que la función es continua, ya que $x = a.$
+
+De la Figura 6 a la Figura 9 se ofrecen varios ejemplos de gráficos de funciones que no son continuas en $x = a$ y la condición o condiciones que fallan.
+
+
+Definición de continuidad
+
+Una función $f (x)$ es continua en $x = a$ siempre que se cumplan las tres condiciones siguientes:
+
+Condición 1: $f (a)$.
+
+Condición 2: $\underset{x \to a}{lím}f (x)$ existe en $x = a$.
+
+Condición 3: $\underset{x \to a}{lím}f (x) = f (a)$
+
+Si una función $f (x)$ no es continua en $x = a,$ la función es discontinua en $x = a$.
+
+
+Identificar una discontinuidad de salto
+
+La discontinuidad se genera de diferentes maneras. Hemos visto en la sección anterior que una función puede tener un límite izquierdo y un límite derecho aunque no sean iguales. Si los límites por la izquierda y por la derecha existen pero son diferentes, el gráfico "salta" en $x = a$. Se dice que la función tiene una discontinuidad de salto.
+
+Como ejemplo, mire el gráfico de la función $y = f (x)$ en la Figura 10. Observe como $x$ se acerca a $a$ cómo la salida se acerca a diferentes valores desde la izquierda y desde la derecha.
+
+
+Discontinuidad de salto
+
+Una función $f (x)$ tiene una discontinuidad de salto en $x = a$ si los límites izquierdo y derecho existen pero no son iguales: $\underset{x \to {a}^{ - }}{lím}f (x) \ne \underset{x \to {a}^{ + }}{lím}f (x)$.
+
+
+Identificar discontinuidad removible
+
+Algunas funciones tienen una discontinuidad, pero es posible redefinir la función en ese punto para hacerla continua. Se dice que este tipo de función tiene una discontinuidad removible. Veamos la función $y = f (x)$ representada por el gráfico en la Figura 11. La función tiene un límite. Sin embargo, hay un agujero en $x = a$. El agujero se puede rellenar si se amplía el dominio para incluir la entrada $x = a$ y se define la salida correspondiente de la función en ese valor como el límite de la función en $x = a$.
+
+
+Discontinuidad removible
+
+Una función $f (x)$ tiene una discontinuidad removible en $x = a$ si el límite, $\underset{x \to a}{lím}f (x),$ existe, pero ya sea que
+
+$f (a),$ el valor de la función en $x = a$ no es igual al límite, $f (a) \ne \underset{x \to a}{lím}f (x).$
+
+
+Reconocer funciones continuas y discontinuas de números reales
+
+Muchas de las funciones que hemos encontrado en capítulos anteriores son continuas en todas partes. Nunca tienen un agujero y nunca saltan de un valor a otro. Para todas estas funciones, el límite de $f (x)$ cuando $x$ se acerca a $a$ es el mismo que el valor de $f (x)$ cuando $x = a.$ Así que $\underset{x \to a}{lím}f (x) = f (a).$ Hay algunas funciones que son continuas en todas partes y otras que solo son continuas donde están definidas en su dominio porque no están definidas para todos los números reales.
+
+
+Ejemplos de funciones continuas
+
+Las siguientes funciones son continuas en todas partes:
+
+Las siguientes funciones son continuas en todos los lugares en los que están definidas en su dominio:
+
+
+Cómo
+
+Dada una función $f (x),$ determine si la función es continua en $x = a.$
+
+Compruebe la condición 1: $f (a)$.
+
+Compruebe la condición 2: $\underset{x \to a}{lím}f (x)$ existe en $x = a.$
+
+Compruebe la condición 3: $\underset{x \to a}{lím}f (x) = f (a).$
+
+Si se cumplen las tres condiciones, la función es continua en $x = a.$ Si no se cumple alguna de las condiciones, la función no es continua en $x = a.$
+
+
+Determinar los valores de entrada para los cuales una función es discontinua
+
+Ahora que podemos identificar funciones continuas, discontinuidades de salto y discontinuidades removibles veremos funciones más complejas para hallar discontinuidades. Aquí analizaremos una función definida por partes para determinar si existe algún número real en el que la función no sea continua. Una función definida por partes puede tener discontinuidades en los puntos límite de la función, así como dentro de las funciones que la componen.
+
+Para determinar los números reales para los que una función definida por partes compuesta por funciones polinómicas no es continua, recordemos que las propias funciones polinómicas son continuas en el conjunto de los números reales. Cualquier discontinuidad estaría en los puntos límite. Por lo tanto, tenemos que explorar las tres condiciones de continuidad en los puntos límite de la función definida por partes.
+
+
+Cómo
+
+Dada una función definida por partes, determinar si es continua en los puntos límite.
+
+Para cada punto límite $a$ de la función definida por partes, determine los límites izquierdo y derecho cuando $x$ se acerca a $a,$ así como el valor de la función en $a.$
+
+Compruebe cada condición para cada valor para determinar si se cumplen las tres condiciones.
+
+Determine si cada valor satisface la condición 1: $f (a)$.
+
+Determine si cada valor satisface la condición 2: $\underset{x \to a}{lím}f (x)$.
+
+Determine si cada valor satisface la condición 3: $\underset{x \to a}{lím}f (x) = f (a).$
+
+Si se cumplen las tres condiciones, la función es continua en $x = a.$ Si falla alguna de las condiciones, la función no es continua en $x = a.$
+
+
+Cómo determinar si una función es continua
+
+Para determinar si una función definida por partes es continua o discontinua, además de comprobar los puntos límite, debemos comprobar si cada una de las funciones que componen la función definida por partes es continua.
+
+
+Cómo
+
+Dada una función definida por partes, determine si es continua.
+
+Determine si cada función componente de la función definida por partes es continua. Si hay discontinuidades, ¿se producen dentro del dominio donde se aplica esa función componente?
+
+Para cada punto límite $x = a$ de la función definida por partes, determine si se cumple cada una de las tres condiciones.
+
+
+Ejemplo 5
+
+
+Algebraicos
+
+En los siguientes ejercicios, determine por qué la función $f$ es discontinua en un punto determinado $a$ en el gráfico. Indique cuál condición falla.
+
+En los siguientes ejercicios, determine si la función dada $f$ es continua en todas partes. Si es continua en todos los lugares en los que está definida, indique para qué rango es continua. Si es discontinua, indique dónde lo es.
+
+
+Gráficos
+
+En los siguientes ejercicios, consulte la Figura 15. Cada cuadrado representa una unidad cuadrada. Para cada valor de $a,$ determine cuáles de las tres condiciones de continuidad se cumplen en $x = a$ y cuáles no.
+
+En los siguientes ejercicios, utilice una herramienta gráfica para graficar la función $f (x) = \sin (\frac{12\pi }{x})$ como en la Figura 16. Coloque el eje x a una corta distancia antes y después de 0 para ilustrar el punto de discontinuidad.
+
+En los siguientes ejercicios, considere la función mostrada en la Figura 17.
+
+
+12.4 Derivadas
+
+El uso de los dispositivos y los medios de comunicación cambia a ritmos diferentes según los grupos de personas. Las empresas de comunicación y tecnología, los comercializadores, los educadores y sus defensores mantienen una estrecha vigilancia sobre las tendencias y preferencias. Según datos del Pew Research Center, la posesión de teléfonos inteligentes por parte de los millennials solo aumentó un 1% de 2018 a 2019 (del 92% al 93%). No obstante, en el caso de los mayores de 74 años, el número pasó del 30% al 40% en el mismo periodo.
+
+Las tendencias de propiedad y uso de otros dispositivos pueden ir en direcciones diferentes según la generación. De 2018 a 2019, la posesión de tabletas por parte de los millennials cayó del 64% al 52%. Sin embargo, durante el mismo periodo, la generación de los baby boom se mantuvo exactamente igual, con un 52% de propietarios de tabletas. Además, el grupo de mayores de 74 años ha aumentado la posesión de tabletas del 25% al 33%.2
+
+¿Qué tienen en común estas situaciones? Las funciones que los representan han cambiado con el tiempo. En esta sección consideraremos métodos para calcular dichos cambios a lo largo del tiempo.
+
+
+Hallar la tasa media de cambio de una función
+
+Las funciones que describen los ejemplos anteriores implican un cambio en el tiempo. El cambio dividido entre el tiempo es un ejemplo de tasa. Las tasas de cambio en los ejemplos anteriores son diferentes. En otras palabras, algunos cambiaron más rápido que otros. Si hiciéramos un gráfico de las funciones, podríamos comparar las tasas determinando las pendientes de los gráficos.
+
+Una línea tangente a una curva es una línea que interseca la curva en un solo punto pero no la cruza en él (La línea tangente puede intersecar la curva en otro punto alejado del punto de interés). Si acercamos la curva en ese punto, la curva parece lineal, y la pendiente de la curva en ese punto es cercana a la pendiente de la línea tangente en ese punto.
+
+Figura 1 representa la función $f (x) = {x}^{3} - 4x.$ Podemos ver la pendiente en varios puntos de la curva.
+
+Imaginemos un punto en la curva de la función $f$ en $x = a$ como se muestra en la Figura 2. Las coordenadas del punto son $(a, f (a)).$ Conecte este punto con un segundo punto de la curva un poco a la derecha de $x = a,$ con un valor x incrementado en algún pequeño número real $h.$ Las coordenadas de este segundo punto son $(a + h, f (a + h))$ para algún valor positivo $h.$
+
+Podemos calcular la pendiente de la línea que conecta los dos puntos $(a, f (a))$ y $(a + h, f (a + h)),$ llamada una línea secante, si aplicamos la fórmula de la pendiente,
+
+$$ \text{pendiente =}\frac{\text{cambio en}y}{\text{cambio en}x} $$
+
+Utilizamos la notación ${m}_{\sec }$ para representar la pendiente de la línea secante que une dos puntos.
+
+$$ \begin{matrix} {m}_{\sec } = \frac{f (a + h) - f (a) }{ (a + h) - (a) } \\ = \frac{f (a + h) - f (a) }{a + h - a} \end{matrix} $$
+
+La pendiente ${m}_{\sec }$ es igual a la tasa media de cambio entre dos puntos $(a, f (a))$ y $(a + h, f (a + h)).$
+
+$$ {m}_{\sec } = \frac{f (a + h) - f (a) }{h} $$
+
+
+La tasa promedio de cambio entre dos puntos en una curva
+
+La tasa media de cambio (Average Rate of Change, AROC) entre dos puntos $(a, f (a))$ y $(a + h, f (a + h))$ en la curva de $f$ es la pendiente de la línea que conecta los dos puntos y está dada por
+
+$$ \text{AROC} = \frac{f (a + h) - f (a) }{h} $$
+
+
+Comprender la tasa instantánea de cambio
+
+Ahora que podemos hallar la tasa media de cambio, supongamos que hacemos $h$ en la Figura 2 cada vez más pequeño. Luego $a + h$ se acercarán a $a$ a medida que $h$ se hace más pequeño, acercándose cada vez más a 0. Asimismo, el segundo punto $(a + h, f (a + h))$ se acercará al primer punto, $(a, f (a)).$ Como consecuencia, la línea de conexión entre los dos puntos, llamada línea secante, se acercará cada vez más a ser una tangente a la función en $x = a,$ y la pendiente de la línea secante se acercará cada vez más a la pendiente de la tangente en $x = a.$ Vea la Figura 3.
+
+Dado que estamos buscando la pendiente de la tangente en $x = a,$ podemos pensar en la medida de la pendiente de la curva de una función $f$ en un punto determinado como la tasa de cambio en un instante específico. Llamamos a esta pendiente la tasa instantánea de cambio, o la derivada de la función en $x = a.$ Ambas se pueden hallar calculando el límite de la pendiente de una línea que conecta el punto en $x = a$ con un segundo punto infinitesimalmente cercano a lo largo de la curva. Para una función $f$ tanto la tasa instantánea de cambio de la función como la derivada de la función en $x = a$ se escriben como $f ' (a),$ y podemos definirlas como límites laterales que tienen el mismo valor tanto si se acercan desde la izquierda como desde la derecha.
+
+$$ {f}^{ ' } (a) = \underset{h \to 0}{lím}\frac{f (a + h) - f (a) }{h} $$
+
+La expresión por la que se halla el límite se conoce como cociente de diferencia.
+
+
+Definición de tasa instantánea de cambio y derivada
+
+La derivada, o tasa instantánea de cambio, de una función $f$ en $x = a,$ viene dada por
+
+$$ f ' (a) = \underset{h \to 0}{lím}\frac{f (a + h) - f (a) }{h} $$
+
+La expresión $\frac{f (a + h) - f (a) }{h}$ se denomina cociente de diferencia.
+
+Utilizamos el cociente de diferencia para evaluar el límite de la tasa de cambio de la función a medida que $h$ se acerca a 0.
+
+
+Derivadas: interpretaciones y notación
+
+La derivada de una función se puede interpretar de diferentes maneras. Se observa como el comportamiento de un gráfico de la función o se calcula como una tasa de cambio numérica de la función.
+
+La derivada de una función $f (x)$ en un punto $x = a$ es la pendiente de la línea tangente a la curva $f (x)$ en $x = a.$ La derivada de $f (x)$ en $x = a$ se escribe ${f}^{ ' } (a).$
+
+La derivada ${f}^{ ' } (a)$ mide cómo cambia la curva en el punto $(a, f (a)).$
+
+La derivada ${f}^{ ' } (a)$ se puede considerar como la tasa instantánea de cambio de la función $f (x)$ en $x = a.$
+
+Si una función mide la distancia como una función de tiempo, la derivada mide la velocidad instantánea en el tiempo $t = a.$
+
+
+Notaciones para la derivada
+
+La ecuación de la derivada de una función $f (x)$ se escribe como ${y}^{ ' } = {f}^{ ' } (x),$ donde $y = f (x).$ La notación ${f}^{ ' } (x)$ se lee como " $f\text{primo de}x.$ ". Las notaciones alternativas para la derivada son las siguientes:
+
+$$ {f}^{ ' } (x) = {y}^{ ' } = \frac{dy}{dx} = \frac{df}{dx} = \frac{d}{dx}f (x) = Df (x) $$
+
+La expresión ${f}^{ ' } (x)$ es ahora una función de $x$; esta función da la pendiente de la curva $y = f (x)$ a cualquier valor de $x.$ La derivada de una función $f (x)$ en un punto $x = a$ se denota ${f}^{ ' } (a).$
+
+
+Cómo
+
+Dada una función $f,$ halle la derivada aplicando la definición de la derivada.
+
+Sustituya y simplifique $\frac{f (a + h) - f (a) }{h}.$
+
+Evalúe el límite si existe: ${f}^{ ' } (a) = \underset{h \to 0}{lím}\frac{f (a + h) - f (a) }{h}.$
+
+
+Inténtelo #2
+
+
+Hallar derivadas de funciones racionales
+
+Para hallar la derivada de una función racional, a veces, simplificaremos la expresión utilizando técnicas algebraicas que ya hemos aprendido.
+
+
+Inténtelo #3
+
+
+Hallar derivadas de funciones con raíces
+
+Para hallar derivadas de funciones con raíces utilizamos los métodos que hemos aprendido para hallar límites de funciones con raíces, lo que incluye multiplicación por un conjugado.
+
+
+Hallar tasas instantáneas de cambio
+
+Muchas aplicaciones de la derivada implican la determinación de la tasa de cambio en un instante dado de una función con la variable independiente tiempo, por lo que se utiliza el término instantánea. Consideremos la altura de una pelota lanzada hacia arriba con una velocidad inicial de 64 pies por segundo, dada por $s (t) = –16{t}^{2} + 64t + 6,$ donde $t$ se mide en segundos y $s (t)$ se mide en pies. Sabemos que la trayectoria es la de una parábola. La derivada nos dirá cómo está cambiando la altura en cualquier punto dado en el tiempo. La altura de la pelota se muestra en la Figura 4 como una función de tiempo. En física, lo llamamos "gráfico s-t".
+
+
+Inténtelo #5
+
+
+Usar gráficos para hallar tasas instantáneas de cambio
+
+Podemos estimar una tasa instantánea de cambio en $x = a$ al observar la pendiente de la curva de la función $f (x)$ en $x = a.$ Lo hacemos trazando una línea tangente a la función en $x = a$ y al calcular su pendiente.
+
+
+Cómo
+
+Dado un gráfico de una función $f (x),$ halle la tasa instantánea de cambio de la función en $x = a.$
+
+Localice $x = a$ en el gráfico de la función $f (x).$
+
+Dibuje una línea tangente, una línea que pasa por $x = a$ a las $a$ y en ningún otro punto de esa sección de la curva. Extienda la línea lo suficiente para calcular su pendiente a medida que
+
+
+Inténtelo #6
+
+
+Usar tasas instantáneas de cambio para resolver problemas del mundo real
+
+Otra forma de interpretar una tasa instantánea de cambio en $x = a$ es observar la función en un contexto del mundo real. La unidad de la derivada de una función $f (x)$ es
+
+$$ \frac{\text{unidades de salida}}{\text{unidad de entrada}} $$
+
+Esta unidad muestra en cuántas unidades cambia la salida por cada cambio de una unidad de entrada. La tasa instantánea de cambio en un instante dado muestra lo mismo: las unidades de cambio de salida por una unidad de cambio de entrada.
+
+Un ejemplo de tasa instantánea de cambio es el costo marginal. Por ejemplo, supongamos que el costo de producción de una compañía para producir $x$ artículos viene dado por $C (x),$ en miles de dólares. La función derivada nos dice cómo cambia el costo para cualquier valor de $x$ en el dominio de la función. En otras palabras, ${C}^{ ' } (x)$ se interpreta como un costo marginal, el costo adicional en miles de dólares de producir un artículo más cuando $x$ artículos se han producido. Por ejemplo, ${C}^{ ' } (11)$ es el costo adicional aproximado, en miles de dólares, de producir el 12.º artículo después de producir 11 artículos. ${C}^{ ' } (11) = 2,50$ significa que cuando se han producido 11 artículos, la producción del 12.º artículo aumentaría el costo total en aproximadamente $ 2.500,00 dólares.
+
+
+Inténtelo #7
+
+
+Hallar puntos en los que no existe la derivada de una función
+
+Para entender dónde no existe la derivada de una función, tenemos que recordar lo que ocurre normalmente cuando una función $f (x)$ tiene una derivada en $x = a$. Supongamos que utilizamos una herramienta gráfica para ampliar en $x = a$. Si se grafica la función $f (x)$ es diferenciable, es decir, si se trata de una función que puede ser diferenciada, cuanto más amplíe uno, más se acercará el gráfico a una línea recta. Esta característica se llama linealidad.
+
+Mire el gráfico en la Figura 8. Cuanto más ampliamos en el punto, más lineal parece la curva.
+
+Podríamos suponer que lo mismo ocurriría con cualquier función continua, pero no es así. La función $f (x) = | x |,$ por ejemplo, es continua en $x = 0,$ pero no diferenciable en $x = 0.$ A medida que ampliamos en el 0 en la Figura 9, el gráfico no se acerca a una línea recta. Por mucho que lo ampliemos, el gráfico mantiene su ángulo agudo.
+
+Ampliamos más al estrechar el rango para producir la Figura 10 y seguimos observando la misma forma. Este gráfico no parece lineal en $x = 0.$
+
+¿Cuáles son las características de un gráfico que no es diferenciable en un punto? Estos son algunos ejemplos en los que la función $f (x)$ no es diferenciable en $x = a.$
+
+En la Figura 11, vemos el gráfico de
+
+$$ f (x) = \{ \begin{matrix} {x}^{2}, & x \le 2 \\ 8 - x, & x > 2 \end{matrix}. $$
+
+Observe que, a medida que $x$ se acerca a 2 desde la izquierda, se puede observar que el límite izquierdo es 4, mientras que a medida que $x$ se acerca a 2 desde la derecha, se puede observar que el límite derecho es 6. Vemos que tiene una discontinuidad en $x = 2.$
+
+En la Figura 12, vemos el gráfico de $f (x) = | x |.$ Vemos que el gráfico tiene un vértice en $x = 0.$
+
+En la Figura 13, vemos que el gráfico de $f (x) = {x}^{\frac{2}{3}}$ tiene una cúspide en $x = 0.$ Una cúspide tiene una característica única. Al alejarse de la cúspide, tanto el límite izquierdo como el derecho se acercan al infinito o al infinito negativo. Observe las líneas tangentes a medida que $x$ se acerca a 0 tanto desde la izquierda como desde la derecha parece que se hacen cada vez más pronunciadas, pero una tiene una pendiente negativa, la otra tiene una pendiente positiva.
+
+En la Figura 14, vemos que el gráfico de $f (x) = {x}^{\frac{1}{3}}$ tiene una tangente vertical en $x = 0.$ Recordemos que las tangentes verticales son líneas verticales, por lo que cuando existe una tangente vertical, la pendiente de la línea es indefinida. Por eso la derivada, que mide la pendiente, no existe allí.
+
+
+Diferenciabilidad
+
+Una función $f (x)$ es diferenciable en $x = a$ si la derivada existe en $x = a,$ lo que significa que ${f}^{ ' } (a)$.
+
+Hay cuatro casos en los que una función $f (x)$ no es diferenciable en un punto $x = a.$
+
+En cualquier otro momento en que haya una tangente vertical en $x = a.$
+
+
+Hallar la ecuación de una línea tangente al gráfico de una función
+
+La ecuación de una línea tangente a una curva de la función $f (x)$ en $x = a$ se deriva de la forma punto-pendiente de una línea, $y = m (x - {x}_{1}) + {y}_{1}.$ La pendiente de la línea es la pendiente de la curva en $x = a$ y por lo tanto es igual a ${f}^{ ' } (a),$ la derivada de $f (x)$ en $x = a.$ El par de coordenadas del punto de la línea en $x = a$ es $(a, f (a)).$
+
+Si sustituimos en la forma punto-pendiente, tenemos
+
+La ecuación de la línea tangente es
+
+$$ y = f ' (a) (x - a) + f (a) $$
+
+
+La ecuación de una línea tangente a una curva de la función f
+
+La ecuación de una línea tangente a la curva de una función $f$ en un punto $x = a$ es
+
+$$ y = f ' (a) (x - a) + f (a) $$
+
+
+Cómo
+
+Dada una función $f,$ halle la ecuación de una línea tangente a la función en $x = a.$
+
+Calcule la derivada de $f (x)$ en $x = a$ utilizando ${f}^{ ' } (a) = \underset{h \to 0}{lím}\frac{f (a + h) - f (a) }{h}.$
+
+Sustituya $(a, f (a))$ y ${f}^{ ' } (a)$ en $y = f ' (a) (x - a) + f (a).$
+
+Escriba la ecuación de la línea tangente en la forma $y = mx + b.$
+
+
+Hallar la velocidad instantánea de una partícula
+
+Si una función mide la posición en función del tiempo, la derivada mide el desplazamiento en función del tiempo, o la velocidad del objeto. Un cambio en la velocidad o la dirección en relación con un cambio en el tiempo se conoce como velocidad. La velocidad en un instante determinado se conoce como velocidad instantánea.
+
+Al tratar de calcular la velocidad de un objeto en un instante dado, parece que nos encontramos con una contradicción. Normalmente definimos la velocidad como la distancia recorrida dividida entre el tiempo transcurrido. Pero en un instante, no se recorre ninguna distancia ni transcurre ningún tiempo. ¿Cómo vamos a dividir cero entre cero? El uso de una derivada resuelve este problema. Una derivada nos permite decir que, aunque la velocidad del objeto cambia constantemente, tiene una velocidad determinada en un instante dado. Esto significa que si el objeto viajara a esa velocidad exacta durante una unidad de tiempo, recorrería la distancia especificada.
+
+
+Velocidad instantánea
+
+Supongamos que la función $s (t)$ representa la posición de un objeto en el tiempo $t.$ La velocidad instantánea o velocidad del objeto en el tiempo $t = a$ viene dada por
+
+$$ {s}^{ ' } (a) = \underset{h \to 0}{lím}\frac{s (a + h) - s (a) }{h} $$
+
+
+Inténtelo #10
+
+
+Algebraicos
+
+En los siguientes ejercicios, utilice la definición de derivada $\underset{h \to 0}{lím}\frac{f (x + h) - f (x) }{h}$ para calcular la derivada de cada función.
+
+En los siguientes ejercicios, halle la tasa media de cambio entre los dos puntos.
+
+En las siguientes funciones polinómicas, halle las derivadas.
+
+En las siguientes funciones, halle la ecuación de la línea tangente a la curva en el punto dado $x$ en la curva.
+
+En el siguiente ejercicio, halle $k$ de tal manera que la línea dada sea tangente al gráfico de la función.
+
+
+Gráficos
+
+En los siguientes ejercicios, considere el gráfico de la función $f$ y determine en qué parte la función es continua/discontinua y diferenciable/no diferenciable.
+
+En los siguientes ejercicios, utilice la Figura 20 para estimar la función en un valor dado de $x$ o la derivada a un valor determinado de $x,$ según se indique.
+
+
+Aplicaciones en el mundo real
+
+En los siguientes ejercicios, explique la notación con palabras. El volumen $f (t)$ de un tanque de gasolina, en galones, $t$ minutos después del mediodía.
+
+En los siguientes ejercicios, explique las funciones con palabras. La altura, $s,$ de un proyectil después de $t$ segundos viene dada por $s (t) = - 16{t}^{2} + 80t.$
+
+En los siguientes ejercicios, el volumen $V$ de una esfera con respecto a su radio $r$ viene dado por $V = \frac{4}{3}\pi {r}^{3}.$
+
+En los siguientes ejercicios, los ingresos generados por la venta de $x$ artículos vienen dados por $R (x) = 2{x}^{2} + 10x.$
+
+En los siguientes ejercicios, el costo de producción de $x$ teléfonos móviles se describe mediante la función $C (x) = {x}^{2} - 4x + 1.000.$
+
+
+Extensión
+
+En los siguientes ejercicios, utilice la definición de la derivada en un punto $x = a,$ $\underset{x \to a}{lím}\frac{f (x) - f (a) }{x - a},$ para hallar la derivada de las funciones.

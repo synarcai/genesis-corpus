@@ -418,6 +418,19 @@ class Книга:
     Книга(47001, "cicero_de_officiis", "философия", "трактат", -44, -44, "De Officiis", "Marcus Tullius Cicero", язык="la"),
     Книга(33849, "augustinus_confessiones", "философия", "трактат", 400, 400, "Confessiones", "Aurelius Augustinus", язык="la"),
     Книга(23306, "descartes_meditationes", "философия познания", "трактат", 1641, 1641, "Meditationes de prima philosophia", "René Descartes", язык="la"),
+    # ГРЕЧЕСКИЙ, ФИНСКИЙ, ПОЛЬСКИЙ — ПОДЛИННИКИ (04.09): Пападиамантис — новогреческая
+    # проза, Кантелетар и Ахо — финская словесность, «Пан Тадеуш» — польский стих.
+    Книга(36205, "papadiamantis_fonissa", "словесность", "повесть", 1903, 1903, "Η Φόνισσα", "Αλέξανδρος Παπαδιαμάντης", язык="el"),
+    Книга(31653, "papadiamantis_pasxalines", "словесность", "повесть", 1890, 1890, "Πασχαλινές ιστορίες", "Αλέξανδρος Παπαδιαμάντης", язык="el"),
+    Книга(7078, "kanteletar_fi", "словесность", "стих", 1840, 1840, "Kanteletar: Suomen kansan wanhoja lauluja ja wirsiä", "Elias Lönnrot (собиратель)", язык="fi"),
+    Книга(10481, "aho_rautatie", "словесность", "повесть", 1884, 1884, "Rautatie", "Juhani Aho", язык="fi"),
+    Книга(31536, "mickiewicz_pan_tadeusz", "словесность", "стих", 1834, 1834, "Pan Tadeusz", "Adam Mickiewicz", язык="pl"),
+    # ШВЕДСКИЙ И ФИНСКИЙ ПОДЛИННИКИ (04.09): Стриндберг и Альмквист — шведская
+    # проза; Линнанкоски и Кант — финская проза и драма.
+    Книга(30078, "strindberg_hemsoborna", "словесность", "повесть", 1887, 1887, "Hemsöborna", "August Strindberg", язык="sv"),
+    Книга(14670, "almqvist_det_gar_an", "словесность", "повесть", 1839, 1839, "Det går an", "Carl Jonas Love Almqvist", язык="sv"),
+    Книга(12780, "linnankoski_laulu", "словесность", "повесть", 1905, 1905, "Laulu tulipunaisesta kukasta", "Johannes Linnankoski", язык="fi"),
+    Книга(13173, "canth_anna_liisa", "словесность", "повесть", 1895, 1895, "Anna Liisa; Kotoa pois", "Minna Canth", язык="fi"),
     Книга(4650, "voltaire_candide", "словесность", "повесть", 1759, 1759, "Candide, ou l'optimisme", "Voltaire", язык="fr"),
     Книга(48529, "montaigne_essais_1", "философия", "исследование", 1580, 1580, "Essais, volume I", "Michel de Montaigne", язык="fr"),
     Книга(17489, "hugo_miserables_1", "словесность", "повесть", 1862, 1862, "Les misérables, tome I: Fantine", "Victor Hugo", язык="fr"),

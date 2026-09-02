@@ -1,0 +1,657 @@
+$$ \frac{dm}{dt} = \frac{d}{dt} (\rho V) = \frac{d}{dt} (\rho Ax) = \rho A\frac{dx}{dt} = \rho Av. $$
+
+La ecuación de continuidad de la sección Mecánica de fluidos establece que la tasa de flujo de masa que entra en un volumen tiene que ser igual a la tasa de flujo de masa que sale del volumen, ${\rho }_{\text{entra}}{A}_{\text{entra}}{v}_{\text{entra}} = {\rho }_{\text{sale}}{A}_{\text{sale}}{v}_{\text{sale}}.$
+
+Considere ahora una onda sonora que se mueve a través de una parcela de aire. Una parcela de aire es un pequeño volumen de aire con fronteras imaginarias. La densidad, la temperatura y la velocidad en un lado del volumen del fluido están dadas como $\rho, T, v,$ y en el otro lado están $\rho + d\rho, T + dT, v + dv.$
+
+La ecuación de continuidad establece que la tasa de flujo de masa que entra en el volumen es igual a la tasa de flujo de masa que sale del volumen, por lo que
+
+$$ \rho Av = (\rho + d\rho) A (v + dv). $$
+
+Esta ecuación se puede simplificar, al notar que el área se cancela y considerar que la multiplicación de dos infinitesimales es aproximadamente igual a cero: $d\rho (dv) \approx 0,$
+
+$$ \begin{matrix} \rho v & = & (\rho + d\rho) (v + dv) \\ \rho v & = & \rho v + \rho (dv) + (d\rho) v + (d\rho) (dv) \\ 0 & = & \rho (dv) + (d\rho) v \\ \rho d v & = & \text{–} v d \rho. \end{matrix} $$
+
+La fuerza neta sobre el volumen de fluido es igual a la suma de las fuerzas sobre el lado izquierdo y el lado derecho:
+
+$$ \begin{matrix} {F}_{\text{neto}} & = & p d y d z - (p + dp) d y d z \\ & = & p d y d z - p d y d z - d p d y d z \\ & = & \text{–} d p d y d z \\ m a & = & \text{–} d p d y d z. \end{matrix} $$
+
+La aceleración es la fuerza dividida entre la masa, y la masa es igual a la densidad por el volumen, $m = \rho V = \rho dx dy dz.$ Tenemos
+
+$$ \begin{matrix} m a & = & \text{–} d p d y d z \\ a & = & - \frac{dp dy dz}{m} = - \frac{dp dy dz}{\rho dx dy dz} = - \frac{dp}{ (\rho dx) } \\ \frac{dv}{dt} & = & - \frac{dp}{ (\rho dx) } \\ d v & = & - \frac{dp}{ (\rho dx) } d t = - \frac{dp}{\rho } \frac{1}{v} \\ \rho v d v & = & \text{–} d p. \end{matrix} $$
+
+A partir de la ecuación de continuidad $\rho dv = \text{–}vd\rho$, obtenemos
+
+$$ \begin{matrix} \rho v d v & = & \text{–} d p \\ (\text{–}vd\rho) v & = & \text{–} d p \\ v & = & \sqrt{\frac{dp}{d\rho }}. \end{matrix} $$
+
+Considere una onda sonora que se mueve en el aire. Durante el proceso de compresión y expansión del gas, no se añade ni se elimina calor del sistema. Un proceso en el que no se añade ni se elimina calor del sistema se conoce como sistema adiabático. Los procesos adiabáticos se tratan con detalle en el capítulo La primera ley de termodinámica, pero por ahora basta con decir que para un proceso adiabático, $p{V}^{\gamma } = \text{constante,}$ donde p es la presión, V es el volumen y gamma $(\gamma)$ es una constante que depende del gas. Para el aire, $\gamma = 1,40$. La densidad es igual al número de moles por la masa molar dividida entre el volumen, por lo que el volumen es igual a $V = \frac{nM}{\rho }.$ El número de moles y la masa molar son constantes y se pueden absorber en la constante $p{ (\frac{1}{\rho }) }^{\gamma } = \text{constante}\text{.}$ Tomando el logaritmo natural de ambos lados se obtiene $\text{ln} p - \gamma \text{ln} \rho = \text{constante}\text{.}$ Al diferenciar con respecto a la densidad, la ecuación se convierte en
+
+$$ \begin{matrix} \text{ln} p - \gamma \text{ln} \rho & = & \text{constante} \\ \frac{d}{d\rho } (\text{ln} p - \gamma \text{ln} \rho) & = & \frac{d}{d\rho } (\text{constante}) \\ \frac{1}{p} \frac{dp}{d\rho } - \frac{\gamma }{\rho } & = & 0 \\ \frac{dp}{d\rho } & = & \frac{\gamma p}{\rho }. \end{matrix} $$
+
+Si el aire puede considerarse un gas ideal, podemos utilizar la ley de los gases ideales:
+
+$$ \begin{matrix} p V & = & n R T = \frac{m}{M} R T \\ p & = & \frac{m}{V} \frac{RT}{M} = \rho \frac{RT}{M}. \end{matrix} $$
+
+Aquí M es la masa molar del aire:
+
+$$ \frac{dp}{d\rho } = \frac{\gamma p}{\rho } = \frac{\gamma (\rho \frac{RT}{M}) }{\rho } = \frac{\gamma RT}{M}. $$
+
+Como la velocidad del sonido es igual a $v = \sqrt{\frac{dp}{d\rho }}$, la velocidad es igual a
+
+$$ v = \sqrt{\frac{\gamma RT}{M}}. $$
+
+Observe que la velocidad es más rápida a temperaturas más altas y más lenta para gases más pesados. Para el aire, $\gamma = 1,4,$ $M = 0,02897\frac{\text{kg}}{\text{mol}},$ y $R = 8,31\frac{\text{J}}{\text{mol} \cdot \text{K}}.$ Si la temperatura es ${T}_{\text{C}} = 20\text{°}\text{C} (T = 293 \text{K}),$ la velocidad del sonido es $v = 343 \text{m/s}\text{.}$
+
+La ecuación de la velocidad del sonido en el aire $v = \sqrt{\frac{\gamma RT}{M}}$ se puede simplificar para obtener la ecuación de la velocidad del sonido en el aire como una función de temperatura absoluta:
+
+$$ \begin{matrix} v & = \sqrt{\frac{\gamma RT}{M}} \\ & = \sqrt{\frac{\gamma RT}{M} (\frac{273 \text{K}}{273 \text{K}}) } = \sqrt{\frac{ (273 \text{K}) \gamma R}{M}} \sqrt{\frac{T}{273 \text{K}}} \\ & \approx 331 \frac{\text{m}}{\text{s}} \sqrt{\frac{T}{273 \text{K}}. } \end{matrix} $$
+
+Una de las propiedades más importantes del sonido es que su velocidad es casi independiente de la frecuencia. Esta independencia es definitivamente cierta al aire libre para sonidos en el rango audible. Si esta independencia no fuera cierta, sin duda lo notaría en la música interpretada por una banda de música en un estadio de fútbol, por ejemplo. Suponga que los sonidos de alta frecuencia se desplazan más rápido; entonces, cuanto más lejos esté de la banda, el sonido de los instrumentos de tono grave irá más retrasado que el de los de tono agudo. Pero la música de todos los instrumentos llega en cadencia independiente de la distancia, por lo que todas las frecuencias deben desplazarse casi a la misma velocidad. Recuerde que
+
+$$ v = f\lambda. $$
+
+En un medio determinado en condiciones fijas, v es constante, por lo que existe una relación entre f y $\lambda;$ cuanto mayor sea la frecuencia, menor será la longitud de onda.
+
+
+Ejemplo 17.1
+
+
+Calcular longitudes de onda
+
+Calcule las longitudes de onda de los sonidos en los extremos del rango audible, 20 y 20.000 Hz, en aire a $30,0\text{°C}$ (suponga que los valores de frecuencia tienen una precisión de dos cifras significativas).
+
+
+Estrategia
+
+Para calcular la longitud de onda a partir de la frecuencia, podemos usar $v = f\lambda.$
+
+
+Solución
+
+Identifique aspectos conocidos. El valor de v viene dado por
+
+$$ v = (331 \text{m/s}) \sqrt{\frac{T}{273 \text{K}}}. $$
+
+Convierta la temperatura en kelvin y luego introduzca la temperatura en la ecuación
+
+$$ v = (331 \text{m/s}) \sqrt{\frac{303 \text{K}}{273 \text{K}}} = 348,7 \text{m/s}\text{.} $$
+
+Resuelva la relación entre la velocidad y la longitud de onda para λ:
+
+Introduzca la velocidad y la frecuencia mínima para obtener la longitud de onda máxima:
+
+$$ {\lambda }_{\text{máx.}} = \text{​}\frac{348,7 \text{m/s}}{20 \text{Hz}} = 17 \text{m}\text{.} $$
+
+Introduzca la velocidad y la frecuencia máxima para obtener la longitud de onda mínima:
+
+$$ {\lambda }_{\text{min}} = \frac{348,7 \text{m/s}}{20.000 \text{Hz}} = 0,017 \text{m} = 1,7 \text{cm}\text{.} $$
+
+
+Importancia
+
+Porque el producto de f multiplicado por $\lambda$ es igual a una constante, cuanto menor sea f, mayor será $\lambda$, y viceversa.
+
+La velocidad del sonido puede cambiar cuando el sonido se desplaza de un medio a otro, pero la frecuencia suele ser la misma. Esto es similar a la frecuencia de una onda en una cuerda que es igual a la frecuencia de la fuerza que oscila la cuerda. Si v cambia y f permanece igual, entonces la longitud de onda $\lambda$ debe cambiar. Es decir, porque $v = f\lambda$, cuanto mayor sea la velocidad de un sonido, mayor será su longitud de onda para una frecuencia determinada.
+
+Aunque las ondas sonoras en un fluido son longitudinales, en un sólido se desplazan tanto como ondas longitudinales como transversales. Las ondas sísmicas, que son esencialmente ondas sonoras en la corteza terrestre producidas por terremotos, son un ejemplo interesante de cómo la velocidad del sonido depende de la rigidez del medio. Los terremotos producen ondas longitudinales y transversales, y estas se desplazan a diferentes velocidades. El módulo de compresibilidad del granito es mayor que su módulo de corte. Por ello, la rapidez de ondas longitudinales o de presión (ondas P) en terremotos en granito es significativamente mayor que la rapidez de ondas transversales o de corte (ondas S). Ambos tipos de ondas sísmicas se desplazan más lentamente en materiales menos rígidos, como los sedimentos. Las ondas P tienen una velocidad de 4 a 7 km/s, y las ondas S oscilan entre 2 y 5 km/s, siendo ambas más rápidas en materiales más rígidos. La onda P se adelanta progresivamente a la onda S a medida que se desplazan por la corteza terrestre. El tiempo entre las ondas P y S se utiliza habitualmente para determinar la distancia a su fuente, el epicentro del terremoto. Como las ondas S no atraviesan el núcleo líquido, se producen dos regiones de sombra.
+
+A medida que las ondas sonoras se alejan de un altavoz, o del epicentro de un terremoto, su potencia por unidad de área disminuye. Por eso el sonido es muy fuerte cerca de un altavoz y se vuelve menos fuerte a medida que se aleja de él. Esto también explica por qué puede haber una cantidad extrema de daños en el epicentro de un terremoto pero solo se sienten los temblores en áreas alejadas del epicentro. La potencia por unidad de área se conoce como intensidad, y en la siguiente sección estudiaremos cómo la intensidad depende de la distancia de la fuente.
+
+
+17.3 Intensidad del sonido
+
+En un bosque tranquilo, a veces, se puede oír cómo cae una hoja al suelo. Pero cuando un automovilista que pasa tiene su equipo de música a todo volumen, usted no podrá escuchar lo que dice la persona que está a su lado en su automóvil. Todos estamos muy familiarizados con el volumen de los sonidos y somos conscientes de que el volumen está relacionado con la forma en que la fuente vibra energéticamente. La exposición a altos niveles de ruido es peligrosa para la audición, por lo que es importante que las personas que trabajan en entornos industriales utilicen protección auditiva. La cantidad física relevante es la intensidad del sonido, un concepto que es válido para todos los sonidos, estén o no en el rango audible.
+
+En la sección Ondas definimos la intensidad como la potencia por unidad de área transportada por una onda. La potencia es la tasa a la que la energía se transfiere por la onda. En forma de ecuación, la intensidad I es
+
+$$ I = \frac{P}{A}, $$
+
+donde P es la potencia que atraviesa un área A. La unidad del SI para I es ${\text{W/m}}^{2}.$ Si suponemos que la onda sonora es esférica, y que no se pierde energía en los procesos térmicos, la energía de la onda sonora se propaga en un área mayor a medida que aumenta la distancia, por lo que la intensidad disminuye. El área de una esfera es $A = 4\pi {r}^{2}.$ A medida que la onda se propaga desde ${r}_{1}$ a ${r}_{2},$ la energía también se propaga en un más amplia:
+
+$$ \begin{matrix} {P}_{1} & = & {P}_{2} \\ {I}_{1} 4 \pi {r}_{1}^{2} & = & {I}_{2} 4 \pi {r}_{2}^{2}; \end{matrix} $$
+
+$$ {I}_{2} = {I}_{1}{ (\frac{{r}_{1}}{{r}_{2}}) }^{2}. $$
+
+La intensidad disminuye a medida que la onda se aleja de la fuente. En una relación inversa al cuadrado, como la intensidad, cuando usted duplica la distancia, la intensidad disminuye a una cuarta parte,
+
+$$ {I}_{2} = {I}_{1}{ (\frac{{r}_{1}}{{r}_{2}}) }^{2} = {I}_{1}{ (\frac{{r}_{1}}{2{r}_{1}}) }^{2} = \frac{1}{4}{I}_{1}. $$
+
+Generalmente, cuando se considera la intensidad de una onda sonora se toma la intensidad como el valor promediado en el tiempo de la potencia, denotado por $〈 P 〉,$ dividido entre el área,
+
+$$ I = \frac{ 〈 P 〉 }{A}. $$
+
+La intensidad de una onda sonora es proporcional al cambio de presión al cuadrado e inversamente proporcional a la densidad y a la velocidad. Considere una parcela de un medio inicialmente sin alteraciones y luego influenciado por una onda sonora en el tiempo t, como se muestra en la Figura 17.13.
+
+A medida que la onda sonora se mueve a través de la parcela, esta se desplaza y puede expandirse o contraerse. Si ${s}_{2} > {s}_{1}$, el volumen ha aumentado y la presión disminuye. Si ${s}_{2} < {s}_{1},$ el volumen ha disminuido y la presión aumenta. El cambio de volumen es
+
+$$ \text{Δ}V = A\text{Δ}s = A ({s}_{2} - {s}_{1}) = A (s (x + \text{Δ}x, t) - s (x, t)). $$
+
+El cambio fraccionario del volumen es el cambio de volumen dividido entre el volumen original:
+
+$$ \frac{dV}{V} = \underset{\text{Δ}x \to 0}{\text{lim}}\frac{A [s (x + \text{Δ}x, t) - s (x, t)] }{A\text{Δ}x} = \frac{ \partial s (x, t) }{ \partial x}. $$
+
+El cambio fraccionario de volumen está relacionado con la fluctuación de la presión por el módulo de compresibilidad $\beta = - \frac{\text{Δ}p (x, t) }{dV\text{/}V}.$ Recuerde que el signo menos es necesario porque el volumen está inversamente relacionado con la presión (usamos la p minúscula para la presión para distinguirla de la potencia, denotada por P). Por lo tanto, el cambio de presión es $\text{Δ}p (x, t) = \text{–}\beta \frac{dV}{V} = \text{–}\beta \frac{ \partial s (x, t) }{ \partial x}.$ Si la onda sonora es sinusoidal, entonces el desplazamiento como se muestra en la Ecuación 17.2 es $s (x, t) = {s}_{\text{máx.}}\text{cos} (kx \mp \omega t + \varphi)$ y la presión se calcula con
+
+$$ \text{Δ}p (x, t) = \text{–}\beta \frac{dV}{V} = \text{–}\beta \frac{ \partial s (x, t) }{ \partial x} = \beta k{s}_{\text{máx.}}\text{sen} (kx - \omega t + \varphi) = \text{Δ}{p}_{\text{máx.}}\text{sen} (kx - \omega t + \varphi). $$
+
+La intensidad de la onda sonora es la potencia por unidad de área, y la potencia es la fuerza por la velocidad, $I = \frac{P}{A} = \frac{Fv}{A} = pv.$ Aquí, la velocidad es la velocidad de las oscilaciones del medio, y no la velocidad de la onda sonora. La velocidad del medio es la tasa de tiempo del cambio en el desplazamiento:
+
+$$ v (x, t) = \frac{ \partial }{ \partial y}s (x, t) = \frac{ \partial }{ \partial y} ({s}_{\text{máx.}}\text{cos} (kx - \omega t + \varphi)) = {s}_{\text{máx.}}\omega \text{sen} (kx - \omega t + \varphi). $$
+
+Así, la intensidad se convierte en
+
+$$ \begin{matrix} I & = \text{Δ} p (x, t) v (x, t) \\ & = \beta k {s}_{\text{máx.}} \text{sen} (kx - \omega t + \varphi) [{s}_{\text{máx.}}\omega \text{sen} (kx - \omega t + \varphi)] \\ & = \beta k \omega {s}_{\text{máx.}}^{2} {\text{sen}}^{2} (kx - \omega t + \varphi). \end{matrix} $$
+
+Para hallar la intensidad promediada en el tiempo durante un periodo $T = \frac{2\pi }{\omega }$ para una posición x, integramos sobre el periodo, $I = \frac{\beta k\omega {s}_{\text{máx.}}^{2}}{2}.$ Al usar $\text{Δ}{p}_{\text{máx.}} = \beta k{s}_{\text{máx.}},$ $v = \sqrt{\frac{\beta }{\rho }},$ y $v = \frac{\omega }{k},$ obtenemos
+
+$$ I = \frac{\beta k\omega {s}_{\text{máx.}}^{2}}{2} = \frac{{\beta }^{2}{k}^{2}\omega {s}_{\text{máx.}}^{2}}{2\beta k} = \frac{\omega { (\text{Δ}{p}_{\text{máx.}}) }^{2}}{2 (\rho {v}^{2}) k} = \frac{v{ (\text{Δ}{p}_{\text{máx.}}) }^{2}}{2 (\rho {v}^{2}) } = \frac{{ (\text{Δ}{p}_{\text{máx.}}) }^{2}}{2\rho v}. $$
+
+Es decir, la intensidad de una onda sonora está relacionada con su amplitud al cuadrado por
+
+$$ I = \frac{{ (\text{Δ}{p}_{\text{máx.}}) }^{2}}{2\rho v}. $$
+
+Aquí, $\text{Δ}{p}_{\text{máx.}}$ es la variación de presión o la amplitud de presión en unidades de pascales (Pa) o ${\text{N/m}}^{2}$. La energía (como energía cinética $\frac{1}{2}m{v}^{2}$) de un elemento oscilante de aire debido a una onda sonora en desplazamiento es proporcional a su amplitud al cuadrado. En esta ecuación, $\rho$ es la densidad del material en el que se desplaza la onda sonora, en unidades de ${\text{kg/m}}^{3},$ y v es la velocidad del sonido en el medio, en unidades de m/s. La variación de la presión es proporcional a la amplitud de la oscilación, por lo que I varía como ${ (\text{Δ}p) }^{2}.$ Esta relación es coherente con el hecho de que la onda sonora la produce alguna vibración; cuanto mayor es su amplitud de presión, más se comprime el aire en el sonido que crea.
+
+
+Audición humana y niveles de intensidad del sonido
+
+Como ya se ha dicho en este capítulo, la audición es la percepción del sonido. El mecanismo de la audición implica una física interesante. La onda sonora que incide en nuestro oído es una onda de presión. El oído es un transductor que convierte las ondas sonoras en impulsos nerviosos eléctricos de una manera mucho más sofisticada que un micrófono, pero análoga a este. La Figura 17.14 muestra la anatomía del oído.
+
+El oído externo, o canal auditivo, lleva el sonido hasta la cavidad timpánica, el tímpano protegido. La columna de aire del canal auditivo resuena y es parcialmente responsable de la sensibilidad del oído a los sonidos en el rango entre 2.000 y 5.000 Hz. El oído medio convierte el sonido en vibraciones mecánicas y aplica estas vibraciones a la cóclea.
+
+El rango de intensidades que el oído humano puede escuchar será según la frecuencia del sonido, pero, en general, el rango es bastante amplio. La intensidad mínima del umbral que se puede escuchar es ${I}_{0} = {10}^{−12} {\text{W/m}}^{2}.$ El dolor se experimenta con intensidades de ${I}_{\text{dolor}} = 1 {\text{W/m}}^{2}.$ Las mediciones de la intensidad del sonido (en unidades de ${\text{W/m}}^{2}$) son muy engorrosas debido a este gran rango de valores. Por este motivo, así como por otros, se propuso el concepto de nivel de intensidad del sonido.
+
+El nivel de intensidad del sonido $\beta$ de un sonido, medido en decibeles, con una intensidad I en vatios por metro cuadrado, se define como
+
+$$ \beta (\text{dB}) = 10 {\text{log}}_{10} (\frac{I}{{I}_{0}}), $$
+
+donde ${I}_{0} = {10}^{−12} {\text{W/m}}^{2}$ es una intensidad de referencia, que corresponde a la intensidad umbral del sonido que una persona con audición normal puede percibir a una frecuencia de 1,00 kHz. Es más común considerar los niveles de intensidad del sonido en dB que en ${\text{W/m}}^{2}.$ La forma en que el oído humano percibe el sonido se puede describir con mayor precisión mediante el logaritmo de la intensidad que directamente por la intensidad. Porque $\beta$ se define en términos de relación, es una cantidad sin unidad, lo que indica el nivel del sonido en relación con un estándar fijo (${10}^{\text{−12}} {\text{W/m}}^{2}$). Las unidades de decibeles (dB) se utilizan para indicar que esta relación se multiplica por 10 en su definición. El bel, en el que se basa el decibelio, lleva el nombre de Alexander Graham Bell, el inventor del teléfono.
+
+El nivel de decibeles de un sonido que tiene la intensidad umbral de ${10}^{−12} {\text{W/m}}^{2}$ es $\beta = 0 \text{dB,}$ porque ${\text{log}}_{10}1 = 0.$ La Tabla 17.2 ofrece niveles en decibeles e intensidades en vatios por metro cuadrado para algunos sonidos conocidos. El oído es sensible a algo tan pequeño como una trillonésima parte de un vatio por metro cuadrado, lo que resulta aún más impresionante si tiene en cuenta que el área del tímpano es únicamente de, aproximadamente, $1 {\text{cm}}^{2},$ por lo que solo ${10}^{−16} \text{W}$ cae sobre ella en el umbral de la audición. Las moléculas de aire en una onda sonora de esta intensidad vibran a una distancia inferior a un diámetro molecular, y las presiones manométricas involucradas son inferiores a ${10}^{−9} \text{atm}\text{.}$
+
+Una observación que se puede comprobar fácilmente al examinar la Tabla 17.2 o mediante la Ecuación 17.12 es que cada factor de 10 en la intensidad corresponde a 10 dB. Por ejemplo, un sonido de 90 dB comparado con uno de 60 dB es 30 dB mayor, o tres factores de 10 (es decir, ${10}^{3}$ veces) como intenso. Otro ejemplo es que si un sonido es ${10}^{7}$ tan intenso como otro, es 70 dB más alto.
+
+
+Ejemplo 17.2
+
+
+Cálculo de niveles de intensidad del sonido
+
+Calcule el nivel de intensidad del sonido en decibeles para una onda sonora que se desplaza en el aire a $0\text{°C}$ y con una amplitud de presión de 0,656 Pa.
+
+
+Estrategia
+
+Nos dan $\Delta p$, por lo que podemos calcular I mediante la ecuación $I = \frac{{ (\text{Δ}p) }^{2}}{2\rho {v}_{\text{w}}}.$ Al usar I, podemos calcular $\beta$ directamente de su definición en $\beta (dB) = 10 {\text{log}}_{10} (\frac{I}{{I}_{0}}).$
+
+
+Solución
+
+Identifique aspectos conocidos: El sonido se desplaza a 331 m/s en el aire a $0\text{°C}\text{.}$ El aire tiene una densidad de $1,29 {\text{kg/m}}^{3}$ en presión atmosférica y $0\text{°C}\text{.}$
+
+Introduzca estos valores y la amplitud de la presión en $I = \frac{{ (\text{Δ}p) }^{2}}{2\rho v}.$
+
+$$ I = \frac{{ (\text{Δ}p) }^{2}}{2\rho v} = \frac{{ (0,656 \text{Pa}) }^{2}}{2 (1,29 {\text{kg/m}}^{3}) (331 \text{m/s}) } = 5,04 \times {10}^{−4} {\text{W/m}}^{2}. $$
+
+Introduzca el valor de I y el valor conocido de ${I}_{0}$ en $\beta (\text{dB}) = 10 {\text{log}}_{10} (I\text{/}{I}_{0}).$ Calcule para hallar el nivel de intensidad del sonido en decibeles:
+
+$$ 10 {\text{log}}_{10} (5,04 \times {10}^{8}) = 10 (8,70) \text{dB} = 87 \text{dB}\text{.} $$
+
+
+Importancia
+
+Este sonido de 87 dB tiene una intensidad cinco veces mayor que un sonido de 80 dB. Así, un factor de cinco en la intensidad corresponde a una diferencia de 7 dB en el nivel de intensidad del sonido. Este valor es cierto para cualquier intensidad que difiera en un factor de cinco.
+
+
+Ejemplo 17.3
+
+
+Cambiar niveles de intensidad de un sonido
+
+Demuestre que si un sonido es dos veces más intenso que otro, tiene un nivel de sonido de unos 3 dB más alto.
+
+
+Estrategia
+
+Nos dan que la relación de dos intensidades es de 2 a 1 y luego nos piden que hallemos la diferencia de sus niveles de sonido en decibeles. Podemos resolver este problema mediante las propiedades de los logaritmos.
+
+
+Solución
+
+Identifique aspectos conocidos: La relación de las dos intensidades es de 2 a 1, o lo que es lo mismo,
+
+Queremos demostrar que la diferencia de niveles de sonido es de unos 3 dB. Es decir, queremos demostrar:
+
+$$ {\text{log}}_{10}b - {\text{log}}_{10}a = {\text{log}}_{10} (\frac{b}{a}). $$
+
+$$ {\beta }_{2} - {\beta }_{1} = 10 {\text{log}}_{10} (\frac{{I}_{2}}{{I}_{1}}) = 10 {\text{log}}_{10}2,00 = 10 (0,301) \text{dB}\text{.} $$
+
+$$ {\beta }_{2} - {\beta }_{1} = 3,01 \text{dB}\text{.} $$
+
+
+Importancia
+
+Esto significa que los dos niveles de intensidad del sonido difieren en 3,01 dB, es decir, unos 3 dB, según lo anunciado. Observe que, debido a que solamente dan la relación ${I}_{2}\text{/}{I}_{1}$ (y no las intensidades reales), este resultado es cierto para cualquier intensidad que difiera en un factor de dos. Por ejemplo, un sonido de 56,0 dB es dos veces más intenso que uno de 53,0 dB, un sonido de 97,0 dB es la mitad de intenso que uno de 100 dB y así sucesivamente.
+
+También se utiliza otra escala de decibeles, denominada nivel de presión del sonido, que se basa en la relación entre la amplitud de la presión y una presión de referencia. Esta escala se utiliza sobre todo en aplicaciones en las que el sonido se desplaza por el agua. Queda fuera del alcance de este texto tratar esta escala porque no se utiliza habitualmente para los sonidos en el aire, pero es importante señalar que se pueden encontrar niveles de decibeles muy diferentes cuando se citan los niveles de presión del sonido.
+
+
+Audición y tono
+
+El oído humano tiene un alcance y una sensibilidad enormes. Puede darnos una gran cantidad de información sencilla, como el tono, el volumen y la dirección.
+
+La percepción de la frecuencia se llama tono. Normalmente, los seres humanos tienen un tono relativo excelente y pueden discriminar entre dos sonidos si sus frecuencias difieren en un 0,3% o más. Por ejemplo, 500,0 y 501,5 Hz son notablemente diferentes. Las notas musicales son sonidos de una frecuencia determinada que pueden ser producidos por la mayoría de los instrumentos y que en la música occidental tienen nombres particulares, como la sostenido, do o mi bemol.
+
+La percepción de la intensidad se denomina volumen. A una frecuencia determinada, es posible discernir diferencias de 1 dB, aproximadamente, y un cambio de 3 dB se nota fácilmente. Pero el volumen no está relacionado únicamente con la intensidad. La frecuencia tiene un efecto importante en el volumen de un sonido. Los sonidos cercanos a los extremos de alta y baja frecuencia del rango de audición parecen aún menos fuertes, ya que el oído es menos sensible en esas frecuencias. Cuando un violín toca el do medio, no se puede confundir con un piano que toca la misma nota. Esto se debe a que cada instrumento produce un conjunto distintivo de frecuencias e intensidades. A nuestra percepción de estas combinaciones de frecuencias e intensidades la llamamos calidad del tono o, más comúnmente, timbre del sonido. El timbre es la forma de la onda que surge de las numerosas reflexiones, resonancias y superposiciones de un instrumento.
+
+Para expresar el volumen numéricamente se utiliza una unidad llamada fonio. Los fonios se diferencian de los decibeles porque el fonio es una unidad de percepción del volumen, mientras que el decibelio es una unidad de intensidad física. La Figura 17.15 muestra la relación de volumen e intensidad (o nivel de intensidad) y frecuencia para personas con audición normal. Las líneas curvas representan igualdad de volumen. Cada curva está identificada con su volumen en fonios. Cualquier sonido a lo largo de una curva determinada se percibe como igualmente fuerte por la persona promedio. Las curvas se determinaron haciendo que un gran número de personas compararan el volumen de los sonidos a diferentes frecuencias y niveles de intensidad del sonido. A una frecuencia de 1,000 Hz, los fonios se consideran numéricamente iguales a los decibeles.
+
+
+Ejemplo 17.4
+
+
+Medición del volumen
+
+(a) ¿Cuál es el volumen en fonios de un sonido de 100 Hz que tiene un nivel de intensidad de 80 dB? (b) ¿Cuál es el nivel de intensidad en decibeles de un sonido de 4.000 Hz que tiene un volumen de 70 fonios? (c) ¿A qué nivel de intensidad un sonido de 8.000 Hz tendrá el mismo volumen que un sonido de 200 Hz a 60 dB?
+
+
+Estrategia
+
+Para resolver este ejemplo hay que consultar el gráfico de la Figura 17.15. Para calcular el volumen de un determinado sonido, debe conocer su frecuencia y su nivel de intensidad, localizar ese punto en la cuadrícula y, seguidamente, interpolar entre las curvas de volumen para obtener el volumen en fonios. Una vez localizado ese punto, se puede determinar el nivel de intensidad a partir del eje vertical.
+
+
+Solución
+
+Identifique aspectos conocidos: la cuadrícula del gráfico que relaciona fonios y decibeles es un trazado del nivel de intensidad versus la frecuencia, ambas cantidades físicas: 100 Hz a 80 dB se encuentra a medio camino entre las curvas marcadas con 70 y 80 fonios. Calcule el volumen: 75 fonios.
+
+Identifique aspectos conocidos: los valores indicados son de 4.000 Hz a 70 fonios. Siga la curva de los 70 fonios hasta llegar a los 4.000 Hz. En ese punto, está por debajo de la línea de 70 dB, a unos 67 dB. Calcule el nivel de intensidad: 67 dB.
+
+Localice el punto para un sonido de 200 Hz y 60 dB. Calcule el volumen: este punto se encuentra ligeramente por encima de la curva de 50 fonios, por lo que su volumen es de 51 fonios. El nivel de los 51 fonios se encuentra a 8.000 Hz: 63 dB.
+
+
+Importancia
+
+Estas respuestas, como toda la información extraída de la Figura 17.15, tienen incertidumbres de varios fonios o varios decibeles, en parte debido a dificultades de interpolación, pero sobre todo relacionadas con imprecisiones en las curvas de igual volumen.
+
+En esta sección hemos hablado de las características del sonido y de cómo oímos, pero ¿cómo se producen los sonidos que oímos? Las fuentes de sonido más interesantes son los instrumentos musicales y la voz humana, y hablaremos sobre ellas. Pero antes de entender cómo los instrumentos musicales producen sonido, debemos revisar los mecanismos básicos que los sustentan. Las teorías que sustentan los mecanismos utilizados por los instrumentos musicales incluyen interferencia, superposición y ondas estacionarias, de lo que hablaremos en la siguiente sección.
+
+
+17.4 Modos normales de una onda sonora estacionaria
+
+La interferencia es el sello distintivo de las ondas, todas las cuales presentan una interferencia constructiva y una destructiva exactamente análogas a la que se observa en las ondas acuáticas. De hecho, una forma de demostrar que algo “es una onda” es observar efectos de interferencia. Como el sonido es una onda, es de esperar que presente interferencias.
+
+
+Interferencia de las ondas sonoras
+
+En la sección Ondas hablamos de la interferencia de funciones de onda que solo difieren en un deslizamiento de fase. Hallamos que la función de onda resultante de la superposición de ${y}_{1} (x, t) = A \text{sen} (kx - \omega t + \varphi)$ y ${y}_{2} (x, t) = A \text{sen} (kx - \omega t)$ es
+
+$$ y (x, t) = [2A \text{cos} (\frac{\varphi }{2})] \text{sen} (kx - \omega t + \frac{\varphi }{2}). $$
+
+Una forma de que dos ondas idénticas que inicialmente están en fase se desfasen entre sí es que las ondas recorran distancias diferentes; es decir, que tengan longitudes del trayecto diferentes. Las ondas sonoras constituyen un excelente ejemplo de deslizamiento de fase debido a una diferencia de trayectoria. Como hemos comentado, las ondas sonoras se pueden modelar básicamente como ondas longitudinales, en las que las moléculas del medio oscilan alrededor de una posición de equilibrio, o como ondas de presión.
+
+Cuando las ondas salen de los altavoces, lo hacen en forma de ondas esféricas. Las ondas interfieren; la inferencia constructiva se produce por la combinación de dos crestas o dos depresiones, como se muestra. La interferencia destructiva se produce por la combinación de una depresión y una cresta.
+
+La diferencia de fase en cada punto se debe a las diferentes longitudes del trayecto recorridas por cada onda. Cuando la diferencia de longitudes del trayecto es un múltiplo entero de una longitud de onda,
+
+$$ \text{Δ}r = | {r}_{2} - {r}_{1} | = n\lambda, \text{donde} n = 0, 1, 2, 3\text{,…,} $$
+
+las ondas están en fase y hay interferencia constructiva. Cuando la diferencia de longitudes del trayecto es un múltiplo impar de media longitud de onda,
+
+$$ \text{Δ}r = | {r}_{2} - {r}_{1} | = n\frac{\lambda }{2}, \text{donde} n = 1, 3, 5\text{,…,} $$
+
+las ondas están $180\text{°} (\pi \text{rad})$ fuera de fase y el resultado es una interferencia destructiva. Estos puntos se pueden localizar con un medidor de intensidad del sonido.
+
+
+Ejemplo 17.5
+
+
+Interferencia de las ondas sonoras
+
+Dos altavoces tienen una separación de 5,00 m y son accionados por un generador de señales a una frecuencia desconocida. Un estudiante con un medidor de sonido recorre 6,00 m y baja 2,00 m y halla la primera intensidad mínima, como se muestra a continuación. ¿Cuál es la frecuencia suministrada por el generador de señales? Suponga que la rapidez de onda del sonido es $v = 343,00 \text{m/s}\text{.}$
+
+
+Estrategia
+
+La velocidad de la onda es igual a $v = \frac{\lambda }{T} = \lambda f.$ La frecuencia es entonces $f = \frac{v}{\lambda }.$ Una intensidad mínima indica una interferencia destructiva, y el primer punto de este tipo se produce cuando hay una diferencia de trayectoria de $\text{Δ}r = \lambda \text{/}2,$ lo cual se puede calcular a partir de la geometría.
+
+
+Solución
+
+Calcule la longitud del trayecto hasta el punto mínimo desde cada altavoz
+
+$$ {r}_{1} = \sqrt{{ (6,00 \text{m}) }^{2} + { (2,00 \text{m}) }^{2}} = 6,32 \text{m,} {r}_{2} = \sqrt{{ (6,00 \text{m}) }^{2} + { (3,00 \text{m}) }^{2}} = 6,71 \text{m} $$
+
+Use la diferencia en la longitud del trayecto para calcular la longitud de onda.
+
+$$ \text{Δ}r = | {r}_{2} - {r}_{1} | = | 6,71 \text{m} - 6,32 \text{m} | = 0,39 \text{m} $$
+
+$$ \lambda = 2\text{Δ}r = 2 (0,39 \text{m}) = 0,78 \text{m} $$
+
+Calcule la frecuencia.
+
+$$ f = \frac{v}{\lambda } = \frac{343,00 \text{m/s}}{0,78 \text{m}} = 439,74 \text{Hz} $$
+
+
+Importancia
+
+Si el punto P fuera un punto de máxima intensidad, entonces la longitud del trayecto sería un múltiplo entero de la longitud de onda.
+
+El concepto de deslizamiento de fase debido a una diferencia en la longitud del trayecto es muy importante. Este concepto lo volverá a usar en las secciones Interferencia y Fotones y ondas de materia, en las cuales se analiza cómo Thomas Young puso en práctica este método en su famoso experimento de la doble rendija para demostrar que la luz tiene propiedades ondulatorias.
+
+
+Reducción de ruido mediante interferencia destructiva
+
+La Figura 17.18 muestra un uso inteligente de la interferencia de sonido para anular el ruido. Se han propuesto aplicaciones a mayor escala de reducción de ruido activa por interferencia destructiva para compartimentos enteros de pasajeros en aviones comerciales. Para obtener interferencia destructiva, se hace un análisis electrónico rápido y se introduce un segundo sonido $180\text{°}$ fuera de fase con el sonido original, con sus máximos y mínimos exactamente invertidos con respecto al ruido entrante. Las ondas sonoras en los fluidos son ondas de presión y son coherentes con el principio de Pascal; es decir, las presiones de dos fuentes diferentes se suman y restan como números simples. Por lo tanto, las presiones manométricas positivas y negativas se suman a una presión mucho menor, lo que produce un sonido de menor intensidad. Aunque la interferencia destructiva por completo solo es posible en las condiciones más sencillas, es posible reducir los niveles de ruido en 30 dB o más a través de esta técnica.
+
+¿Dónde más podemos observar interferencias de sonido? Todas las resonancias de sonido, como las de los instrumentos musicales, se deben a interferencias constructivas y destructivas. Solo las frecuencias de resonancia interfieren constructivamente para formar ondas estacionarias, mientras que otras interfieren destructivamente y están ausentes.
+
+
+Resonancia en un tubo cerrado en un extremo
+
+Como ya comentamos en la sección Ondas, las ondas estacionarias están formadas por dos ondas que se mueven en direcciones opuestas. Cuando dos ondas sinusoidales idénticas se mueven en direcciones opuestas, las ondas se pueden modelar como
+
+$$ {y}_{1} (x, t) = A \text{sen} (kx - \omega t) \text{y} {y}_{2} (x, t) = A \text{sen} (kx + \omega t). $$
+
+Cuando estas dos ondas interfieren, la onda resultante es una onda estacionaria:
+
+$$ {y}_{\text{R}} (x, t) = [2A \text{sen} (kx)] \text{cos} (\omega t). $$
+
+La resonancia se puede producir debido a las condiciones de frontera impuestas a una onda. En la sección Ondas, demostramos que la resonancia se podía producir en una cuerda en tensión que tenía condiciones de frontera simétricas, concretamente, un nodo en cada extremo. Definimos un nodo como un punto fijo en el que la cuerda no se ha movido. Descubrimos que las condiciones de frontera simétricas hacían que algunas frecuencias resonaran y produjeran ondas estacionarias, mientras que otras frecuencias interferían destructivamente. Las ondas sonoras pueden resonar en un tubo hueco, y las frecuencias de las ondas sonoras que resuenan dependen de las condiciones de frontera.
+
+Suponga que tenemos un tubo cerrado en un extremo y abierto en el otro. Si sostenemos un diapasón vibrante cerca del extremo abierto del tubo, una onda sonora incidente se desplaza a través del tubo y se refleja en el extremo cerrado. El sonido reflejado tiene la misma frecuencia y la misma longitud de onda que la onda sonora incidente, pero se desplaza en dirección opuesta. En el extremo cerrado del tubo, las moléculas de aire tienen muy poca libertad para oscilar y se produce un nodo. En el extremo abierto, las moléculas son libres de moverse y, a la frecuencia adecuada, se produce un antinodo. A diferencia de las condiciones de frontera simétricas para las ondas estacionarias en la cuerda, las condiciones de frontera para un tubo abierto en un extremo y cerrado en el otro son antisimétricas: un nodo en el extremo cerrado y un antinodo en el extremo abierto.
+
+Si el diapasón tiene la frecuencia adecuada, la columna de aire del tubo resuena con fuerza, pero en la mayoría de las frecuencias vibra muy poco. Esta observación solo significa que la columna de aire tiene ciertas frecuencias naturales únicamente. Considere la frecuencia más baja que hará que el tubo resuene y produzca un sonido fuerte. Habrá un nodo en el extremo cerrado y un antinodo en el extremo abierto, como se muestra en la Figura 17.19.
+
+La onda estacionaria formada en el tubo tiene un antinodo en el extremo abierto y un nodo en el extremo cerrado. La distancia de un nodo a un antinodo es un cuarto de la longitud de onda, y esta es igual a la longitud del tubo; por lo tanto, ${\lambda }_{1} = 4L.$ Esta misma resonancia la puede producir una vibración introducida en o cerca del extremo cerrado del tubo. Lo mejor es considerar que se trata de una vibración natural de la columna de aire, independientemente de cómo se introduzca.
+
+Dado que los desplazamientos máximos de aire son posibles en el extremo abierto y ninguno en el cerrado, pueden resonar en el tubo otras longitudes de onda más cortas, como la que se muestra en la Figura 17.21. Aquí la onda estacionaria tiene tres cuartas partes de su longitud de onda en el tubo, o $\frac{3}{4}{\lambda }_{3} = L,$ por lo que ${\lambda }_{3} = \frac{4}{3}L.$ Continuando con este proceso, se obtiene toda una serie de sonidos de menor longitud de onda y mayor frecuencia que resuenan en el tubo. Utilizamos términos específicos para las resonancias de cualquier sistema. La frecuencia de resonancia más baja se llama fundamental, mientras que todas las frecuencias de resonancia más altas se llaman sobretonos. Las frecuencias de resonancia que son múltiplos integrales de la fundamental se denominan colectivamente armónicos. La fundamental es el primer armónico, el segundo armónico es el doble de la frecuencia del primer armónico y así sucesivamente. Es posible que algunos de estos armónicos no existan para un escenario determinado. La Figura 17.22 muestra la fundamental y los tres primeros sobretonos (o los armónicos primero, tercero, quinto y séptimo) en un tubo cerrado en un extremo.
+
+La relación para las longitudes de onda resonantes de un tubo cerrado en un extremo es
+
+$$ {\lambda }_{n} = \frac{4}{n}L n = 1, 3, 5,... $$
+
+Ahora, busquemos un patrón en las frecuencias de resonancia para un tubo simple que está cerrado en un extremo. La fundamental tiene $\lambda = 4L,$ y la frecuencia se relaciona con la longitud de onda y la velocidad del sonido según
+
+$v = f\lambda.$
+
+Si se resuelve f en esta ecuación se obtiene
+
+$$ f = \frac{v}{\lambda } = \frac{v}{4L}, $$
+
+donde v es la velocidad del sonido en el aire. Del mismo modo, el primer sobretono tiene $\lambda = 4L\text{/}3$, por lo que
+
+$$ {f}_{3} = 3\frac{v}{4L} = 3{f}_{1}. $$
+
+Porque ${f}_{3} = 3{f}_{1},$ llamamos al primer sobretono el tercer armónico. Siguiendo este proceso, vemos un patrón que puede generalizarse en una expresión única. Las frecuencias de resonancia de un tubo cerrado en un extremo son
+
+$$ {f}_{n} = n\frac{v}{4L}, n = 1, 3, 5,..., $$
+
+donde ${f}_{1}$ es la fundamental, ${f}_{3}$ es el primer sobretono y así sucesivamente. Es interesante que las frecuencias de resonancia dependan de la velocidad del sonido y, por tanto, de la temperatura. Esta relación supone un problema notable para los órganos de las antiguas catedrales sin calefacción, y es también lo que justifica que los músicos suelen poner sus instrumentos de viento a temperatura ambiente antes de tocarlos.
+
+
+Resonancia en un tubo abierto en ambos extremos
+
+Otra fuente de ondas estacionarias es un tubo abierto en ambos extremos. En este caso, las condiciones de frontera son simétricas: un antinodo en cada extremo. Las resonancias de los tubos abiertos en ambos extremos se pueden analizar de forma muy similar a las de los tubos cerrados en un extremo. Las columnas de aire en tubos abiertos en ambos extremos tienen desplazamientos máximos de aire en ambos extremos. Las ondas estacionarias se forman como se muestra.
+
+La relación para las longitudes de onda resonantes de un tubo abierto en ambos extremos es
+
+$$ {\lambda }_{n} = \frac{2}{n}L, n = 1, 2, 3\text{,...}. $$
+
+Basándonos en el hecho de que un tubo abierto en ambos extremos tiene desplazamientos máximos de aire en ambos extremos, y al usar la Figura 17.23 como guía podemos ver que las frecuencias de resonancia de un tubo abierto en ambos extremos son
+
+$$ {f}_{n} = n\frac{v}{2L}, n = 1, 2, 3..., $$
+
+donde ${f}_{1}$ es la fundamental, ${f}_{2}$ es el primer sobretono, ${f}_{3}$ es el segundo sobretono y así sucesivamente. Observe que un tubo abierto en ambos extremos tiene una frecuencia fundamental doble de la que tendría si estuviera cerrado en un extremo. También tiene un espectro de sobretonos diferente al de un tubo cerrado en un extremo.
+
+Observe que un tubo abierto en ambos extremos tiene condiciones de frontera simétricas, similares a las de la cuerda fijada en ambos extremos de la que hablamos en la sección Ondas. Las relaciones para las longitudes de onda y las frecuencias de un instrumento de cuerda son las mismas que se dan en la Ecuación 17.15 y la Ecuación 17.16. La velocidad de la onda en la cuerda (de la sección Ondas) es $v = \sqrt{\frac{{F}_{T}}{\mu }}.$ El aire que rodea la cuerda vibra a la misma frecuencia que esta, lo que produce un sonido de la misma frecuencia. La onda sonora se mueve a la velocidad del sonido y la longitud de onda se puede calcular mediante $v = \lambda f.$
+
+
+17.5 Fuentes de sonido musical
+
+Algunos instrumentos musicales, como los de viento de madera, los metales y los órganos de tubos, se pueden modelar como tubos con condiciones de frontera simétricas, es decir, abiertos en ambos extremos o cerrados en ambos extremos. Otros instrumentos se pueden modelar como tubos con condiciones de frontera antisimétricas, como un tubo con un extremo abierto y el otro cerrado.
+
+Las frecuencias de resonancia son producidas por ondas longitudinales que se desplazan por los tubos e interfieren con las ondas reflejadas que se desplazan en la dirección opuesta. Un órgano de tubos se fabrica con varios tubos de longitudes fijas para producir diferentes frecuencias. Las ondas son el resultado del aire comprimido que se expande en los tubos. Incluso en tubos abiertos se produce cierta reflexión debido a las limitaciones de los lados de los tubos y a la presión atmosférica fuera del tubo abierto.
+
+Los antinodos no se producen en la apertura del tubo, sino que dependen de su radio. Las ondas no se expanden del todo hasta que están fuera del extremo abierto de un tubo, y para un tubo de paredes finas hay que añadir una corrección en el extremo. Esta corrección en el extremo es 0,6 veces el radio del tubo, aproximadamente, y se debe añadir a su longitud.
+
+Los intérpretes de instrumentos como la flauta o el oboe varían la longitud del tubo abriendo y cerrando los agujeros de los dedos. En un trombón, usted cambia la longitud del tubo mediante un tubo deslizante. Las cornetas tienen una longitud fija y solo pueden producir un rango limitado de frecuencias.
+
+La fundamental y los sobretonos pueden estar presentes simultáneamente en una variedad de combinaciones. Por ejemplo, el do medio de una trompeta suena de forma distinta al do medio de un clarinete, aunque ambos instrumentos son versiones modificadas de un tubo cerrado en un extremo. La frecuencia fundamental es la misma (y suele ser la más intensa), pero los sobretonos y su mezcla de intensidades son diferentes y están sujetos al matiz del músico. Esta mezcla es la que confiere a los distintos instrumentos musicales (y a las voces humanas) sus características distintivas, ya sean columnas de aire, cuerdas, cajas de resonancia o parches de batería. De hecho, gran parte de nuestra forma de hablar viene determinada por el modelado de la cavidad formada por la garganta y la boca y la colocación de la lengua para ajustar la fundamental y la combinación de sobretonos. Por ejemplo, se puede hacer que las cavidades resonantes simples resuenen con el sonido de las vocales. Cuando los niños pasan por la pubertad la laringe crece y la forma de la cavidad resonante cambia, lo que genera la diferencia de frecuencias predominantes en el habla entre hombres y mujeres.
+
+
+Ejemplo 17.6
+
+
+Calcular la longitud de un tubo con una fundamental de 128 Hz
+
+(a) ¿Qué longitud debe tener un tubo cerrado en un extremo un día en el que la temperatura del aire es
+
+$22,0\text{°C}$ si su frecuencia fundamental debe ser de 128 Hz (do por debajo del do medio)?
+
+(b) ¿Cuál es la frecuencia de su cuarto sobretono?
+
+
+Estrategia
+
+La longitud L se puede hallar a partir de la relación ${f}_{n} = n\frac{v}{4L}$, pero primero tenemos que hallar la velocidad del sonido v.
+
+
+Solución
+
+Identifique aspectos conocidos: la frecuencia fundamental es de 128 Hz y la temperatura del aire es de $22,0\text{°C}$. Use ${f}_{n} = n\frac{v}{4L}$ para calcular la frecuencia fundamental ($n = 1$),
+
+Calcule la velocidad del sonido mediante $v = (331 \text{m/s}) \sqrt{\frac{T}{273 \text{K}}}$,
+
+$$ v = (331 \text{m/s}) \sqrt{\frac{\text{295 K}}{273 \text{K}}} = 344 \text{m/s}\text{.} $$
+
+Introduzca los valores de la velocidad del sonido y la frecuencia en la expresión de L.
+
+$$ L = \frac{v}{4{f}_{1}} = \frac{344 \text{m/s}}{4 (128 \text{Hz}) } = 0,672 \text{m} $$
+
+Identifique aspectos conocidos: el primer sobretono tiene $n = 3$, el segundo sobretono tiene $n = 5$, el tercer sobretono tiene $n = 7$ y el cuarto sobretono tiene $n = 9$. Introduzca el valor del cuarto sobretono en ${f}_{n} = n\frac{v}{4L},$
+
+$$ {f}_{9} = 9\frac{v}{4L} = 9{f}_{1} = 1,15 \text{kHz}\text{.} $$
+
+
+Importancia
+
+Muchos instrumentos de viento son tubos modificados que tienen agujeros para los dedos, válvulas y otros dispositivos para cambiar la longitud de la columna de aire resonante y, por lo tanto, la frecuencia de la nota tocada. Las bocinas que producen frecuencias muy bajas requieren tubos tan largos que se enrollan en bucles. Un ejemplo es la tuba. El hecho de que se produzca un sobretono en un tubo simple o en un instrumento musical depende de cómo se estimule su vibración y de los detalles de su forma. El trombón, por ejemplo, no produce su frecuencia fundamental y solo hace sobretonos.
+
+Si tiene dos tubos con la misma frecuencia fundamental, pero uno está abierto en ambos extremos y el otro está cerrado en uno de ellos, sonarían diferente al tocarlos porque tienen sobretonos diferentes. El do medio, por ejemplo, sonaría más rico tocado en un tubo abierto, ya que tiene múltiplos pares de la fundamental además de impares. Un tubo cerrado solo tiene múltiplos impares.
+
+
+Resonancia
+
+La resonancia se produce en muchos sistemas diferentes como cuerdas, columnas de aire y átomos. Como ya hemos comentado en capítulos anteriores, la resonancia es la oscilación impulsada o forzada de un sistema a su frecuencia natural. En la resonancia, la energía se transfiere rápidamente al sistema oscilante y la amplitud de sus oscilaciones crece hasta que el sistema ya no se puede describir por la ley de Hooke. Un ejemplo de ello es el sonido distorsionado que se produce intencionadamente en ciertos tipos de música rock.
+
+Los instrumentos de viento utilizan la resonancia de las columnas de aire para amplificar los tonos producidos por los labios o las lengüetas que vibran. Otros instrumentos también utilizan la resonancia del aire de forma inteligente para amplificar el sonido. La Figura 17.27 muestra un violín y una guitarra, ambos con cajas de resonancia pero con formas diferentes, lo que genera estructuras de sobretono distintas. La cuerda que vibra crea un sonido que resuena en la caja de resonancia, amplifica enormemente el sonido y crea sobretonos que dan al instrumento su timbre característico. Cuanto más compleja sea la forma de la caja de resonancia, mayor será su capacidad para resonar en un amplio rango de frecuencias. La marimba, como la que se muestra en la Figura 17.28, utiliza macetas de barro o vasijas en forma de calabaza debajo de los listones de madera para amplificar sus tonos. La resonancia de la maceta se puede ajustar al añadir agua.
+
+Hemos hecho hincapié en las aplicaciones del sonido en nuestros análisis sobre resonancia y ondas estacionarias, pero estas ideas se aplican a cualquier sistema que tenga características ondulatorias. Las cuerdas que vibran, por ejemplo, son realmente resonantes y tienen fundamentales y sobretonos similares a los de las columnas de aire. Más sutiles son las resonancias en los átomos debido al carácter ondulatorio de sus electrones. Sus orbitales pueden verse como ondas estacionarias, que tienen una fundamental (estado fundamental) y sobretonos (estados excitados). Es fascinante que las características de las ondas se apliquen a un rango tan amplio de sistemas físicos.
+
+
+17.6 Batimientos
+
+El estudio de la música ofrece muchos ejemplos de la superposición de ondas y de las interferencias constructivas y destructivas que se producen. Muy pocos ejemplos de música interpretada consisten en que una sola fuente reproduzca una sola frecuencia durante un periodo prolongado. Probablemente estará de acuerdo en que una sola frecuencia de sonido durante un periodo prolongado puede resultar aburrida hasta el punto de irritar, similar al zumbido no deseado de un motor de avión o a un ventilador ruidoso. La música es agradable e interesante gracias a la mezcla de las frecuencias cambiantes de varios instrumentos y voces.
+
+Un fenómeno interesante que se produce debido a la interferencia constructiva y la destructiva de dos o más frecuencias de sonido es el fenómeno de batimientos. Si dos sonidos difieren en frecuencia, las ondas sonoras se pueden modelar como
+
+$$ {y}_{1} = A \text{cos} ({k}_{1}x - 2\pi {f}_{1}t) \text{y} {y}_{2} = A \text{cos} ({k}_{2}x - 2\pi {f}_{2}t). $$
+
+Al usar la identidad trigonométrica $\text{cos} u + \text{cos} v = 2 \text{cos} (\frac{u + v}{2}) \text{cos} (\frac{u - v}{2})$ y considerar el punto en el espacio como $x = 0,0 \text{m,}$ hallamos que el sonido resultante en un punto del espacio, a partir de la superposición de las dos ondas sonoras, es igual a la Figura 17.29:
+
+$$ y (t) = 2A \text{cos} (2\pi {f}_{avg}t) \text{cos} (2\pi (\frac{ | {f}_{2} - {f}_{1} | }{2}) t), $$
+
+donde la frecuencia de batimiento es
+
+$$ {f}_{\text{bat}} = | {f}_{2} - {f}_{1} |. $$
+
+Los afinadores de pianos pueden utilizar estos batimientos para afinar un piano. Se golpea un diapasón y se toca una nota en el piano. A medida que el afinador del piano afina la cuerda, los batimientos tienen una frecuencia más baja a medida que la frecuencia de la nota tocada se acerca a la frecuencia del diapasón.
+
+
+Ejemplo 17.7
+
+
+Calcular la frecuencia de batimiento entre dos diapasones
+
+¿Cuál es la frecuencia de batimiento producida cuando se golpean simultáneamente un diapasón de una frecuencia de 256 Hz y otro de una frecuencia de 512 Hz?
+
+
+Estrategia
+
+La frecuencia de batimiento es la diferencia de las dos frecuencias.
+
+
+Solución
+
+Usamos ${f}_{\text{bat}} = | {f}_{2} - {f}_{1} |:$
+
+$$ | {f}_{2} - {f}_{1} | = (512 - 256) \text{Hz} = 256 \text{Hz}\text{.} $$
+
+
+Importancia
+
+La frecuencia de batimiento es el valor absoluto de la diferencia entre las dos frecuencias. Una frecuencia negativa no tendría sentido.
+
+El estudio de la superposición de varias ondas tiene muchas aplicaciones interesantes más allá del estudio del sonido. En capítulos posteriores hablaremos de las propiedades ondulatorias de las partículas. Las partículas se pueden modelar como un “paquete de ondas” que se genera de la superposición de varias ondas, donde la partícula se mueve a la “velocidad de grupo” del paquete de ondas.
+
+
+17.7 El Efecto Doppler
+
+El sonido característico de una motocicleta que pasa zumbando es un ejemplo del Efecto Doppler. En concreto, si usted está parado en una esquina de una calle y observa una ambulancia con la sirena encendida que pasa a una velocidad constante, notará dos cambios característicos en el sonido de la sirena. Primero, el sonido aumenta su volumen a medida que la ambulancia se acerca y disminuye el volumen a medida que se aleja, lo que es de esperar. Pero además, la sirena aguda cambia drásticamente a un sonido más grave. A medida que pasa la ambulancia, la frecuencia del sonido que escucha un observador estacionario cambia de una frecuencia alta constante a una frecuencia baja constante, aunque la sirena esté produciendo una fuente de frecuencia constante. Cuanto más cerca pase la ambulancia, más brusco será el cambio. Además, cuanto más rápido se mueva la ambulancia, mayor será el cambio. También oímos este cambio de frecuencia característico cuando pasan automóviles, aviones y trenes.
+
+El Efecto Doppler es una alteración de la frecuencia observada de un sonido debido al movimiento de la fuente o del observador. Aunque es menos conocido, este efecto es fácilmente perceptible para una fuente estacionaria y un observador en movimiento. Por ejemplo, si pasa por delante de un tren con una bocina de advertencia estacionaria, oirá que la frecuencia de la bocina cambia de alta a baja cuando usted pasa. El cambio real en la frecuencia debido al movimiento relativo de la fuente y el observador se denomina corrimiento Doppler. El Efecto Doppler y el corrimiento Doppler deben su nombre al físico y matemático austriaco Christian Johann Doppler (1803-1853), quien hizo experimentos con fuentes y observadores en movimiento. Doppler, por ejemplo, hizo que los músicos tocaran en un vagón de tren abierto en movimiento y que también lo hicieran parados junto a las vías del tren mientras este pasaba. Se observó su música tanto dentro como fuera del tren, y se midieron los cambios de frecuencia.
+
+¿Qué causa el corrimiento Doppler? La Figura 17.30 ilustra ondas sonoras emitidas por fuentes estacionarias y en movimiento en una masa de aire estacionaria. Cada alteración se propaga esféricamente desde el punto en el que se emite el sonido. Si la fuente es estacionaria, entonces todas las esferas que representan las compresiones de aire en la onda sonora están centradas en el mismo punto y los observadores estacionarios a ambos lados oyen la misma longitud de onda y frecuencia que emite la fuente (caso a). Si la fuente se mueve, la situación es diferente. Cada compresión del aire se desplaza en una esfera desde el punto en el que se emitió, pero el punto de emisión se desplaza. Este punto de emisión en movimiento hace que las compresiones de aire estén más juntas en un lado y más separadas en el otro. Así, la longitud de onda es más corta en la dirección en que se mueve la fuente (a la derecha en el caso b) y más larga en la dirección opuesta (a la izquierda en el caso b). Por último, si los observadores se mueven, como en el caso (c), la frecuencia con la que reciben las compresiones cambia. El observador que se acerca a la fuente las recibe a una frecuencia más alta, y la persona que se aleja de la fuente las recibe a una frecuencia más baja.
+
+Sabemos que la longitud de onda y la frecuencia están relacionadas por $v = f\lambda,$ donde v es la velocidad fija del sonido. El sonido se mueve en un medio y tiene la misma velocidad v en ese medio tanto si la fuente se mueve como si no. Así, f multiplicado por $\lambda$ es una constante. Como el observador de la derecha en el caso (b) recibe una longitud de onda más corta, la frecuencia que recibe debe ser mayor. Del mismo modo, el observador de la izquierda recibe una longitud de onda más larga y, por tanto, escucha una frecuencia más baja. Lo mismo ocurre en el caso (c). El observador que se acerca a la fuente recibe una frecuencia más alta y el que se aleja de la fuente recibe una frecuencia más baja. Por tanto, en general, el movimiento relativo de la fuente y el observador entre sí aumenta la frecuencia recibida. El movimiento relativo de separación disminuye la frecuencia. Cuanto mayor sea la velocidad relativa, mayor será el efecto.
+
+El Efecto Doppler se produce no solo para el sonido, sino para cualquier onda cuando hay un movimiento relativo entre el observador y la fuente. Los corrimientos Doppler se producen en la frecuencia de ondas sonoras, de luz y de agua, por ejemplo. Los corrimientos Doppler se pueden usar para determinar velocidad, como cuando los ultrasonidos se reflejan en la sangre en un diagnóstico médico. Las velocidades relativas de estrellas y galaxias están determinadas por el desplazamiento de las frecuencias de la luz que reciben de ellas y han implicado mucho sobre los orígenes del universo. La física moderna se ha visto profundamente afectada por las observaciones de los corrimientos Doppler.
+
+
+Derivación de la frecuencia observada debido al corrimiento Doppler
+
+Considere dos observadores estacionarios X y Y en la Figura 17.31, situados a ambos lados de una fuente estacionaria. Cada observador oye la misma frecuencia, y esa frecuencia es la que produce la fuente estacionaria.
+
+Considere ahora un observador estacionario X con una fuente que se aleja del observador con una velocidad constante ${v}_{\text{s}} < v$. En el tiempo $t = 0$ la fuente envía una onda sonora, indicada en negro. Esta onda se desplaza a la velocidad del sonido v. La posición de la onda sonora en cada intervalo de tiempo del periodo ${T}_{\text{s}}$ se muestra como líneas punteadas. Después de un periodo, la fuente se ha movido $\text{Δ}x = {v}_{\text{s}}{T}_{\text{s}}$ y emite una segunda onda sonora, que se desplaza a la velocidad del sonido. La fuente sigue moviéndose y produciendo ondas sonoras, como indican los círculos numerados 3 y 4. Observe que a medida que las ondas se desplazan hacia afuera permanecen centradas en su respectivo punto de origen.
+
+Mediante el hecho de que la longitud de onda es igual a la velocidad por el periodo y el periodo es el inverso de la frecuencia podemos derivar la frecuencia observada:
+
+$$ \begin{matrix} {\lambda }_{\text{o}} & = & {\lambda }_{\text{s}} + \text{Δ} x \\ v {T}_{\text{o}} & = & v {T}_{\text{s}} + {v}_{\text{s}} {T}_{\text{s}} \\ \frac{v}{{f}_{\text{o}}} & = & \frac{v}{{f}_{\text{s}}} = \frac{{v}_{\text{s}}}{{f}_{\text{s}}} = \frac{v + {v}_{\text{s}}}{{f}_{\text{s}}} \\ {f}_{\text{o}} & = & {f}_{\text{s}} (\frac{v}{v + {v}_{\text{s}}}). \end{matrix} $$
+
+A medida que la fuente se aleja del observador, la frecuencia notada es menor que la de la fuente.
+
+Considere ahora una fuente que se mueve a velocidad constante ${v}_{s},$ moviéndose hacia un observador estacionario Y, también mostrado en la Figura 17.32. La longitud de onda es observada por Y como ${\lambda }_{\text{o}} = {\lambda }_{\text{s}} - \text{Δ}x = {\lambda }_{\text{s}} - {v}_{\text{s}}{T}_{\text{s}}.$ Una vez más, mediante el hecho de que la longitud de onda es igual a la velocidad por el periodo y el periodo es el inverso de la frecuencia podemos derivar la frecuencia observada:
+
+$$ \begin{matrix} {\lambda }_{\text{o}} & = & {\lambda }_{\text{s}} - \text{Δ} x \\ v {T}_{\text{o}} & = & v {T}_{\text{s}} - {v}_{\text{s}} {T}_{\text{s}} \\ \frac{v}{{f}_{\text{o}}} & = & \frac{v}{{f}_{\text{s}}} - \frac{{v}_{\text{s}}}{{f}_{\text{s}}} = \frac{v - {v}_{\text{s}}}{{f}_{\text{s}}} \\ {f}_{\text{o}} & = & {f}_{\text{s}} (\frac{v}{v - {v}_{\text{s}}}). \end{matrix} $$
+
+Cuando una fuente está en movimiento y el observador es estacionario, la frecuencia notada es
+
+$$ {f}_{\text{o}} = {f}_{\text{s}} (\frac{v}{v \mp {v}_{\text{s}}}) ' $$
+
+donde ${f}_{\text{o}}$ es la frecuencia notada por el observador estacionario, ${f}_{\text{s}}$ es la frecuencia producida por la fuente en movimiento, v es la velocidad del sonido, ${v}_{\text{s}}$ es la velocidad constante de la fuente, el signo superior es para la fuente que se acerca al observador y el signo inferior es para la fuente que se aleja del observador.
+
+¿Qué ocurre si el observador se mueve y la fuente es estacionaria? Si el observador se mueve hacia la fuente estacionaria, la frecuencia notada es mayor que la de la fuente. Si el observador se aleja de la fuente estacionaria, la frecuencia notada es inferior a la de la fuente. Considere el observador X en la Figura 17.33 mientras el observador se mueve hacia una fuente estacionaria con una velocidad ${v}_{\text{o}}$. La fuente emite un tono con una frecuencia constante ${f}_{\text{s}}$ y periodo constante ${T}_{\text{s}}.$ El observador escucha la primera onda emitida por la fuente. Si el observador fuera estacionario, el tiempo de paso de una longitud de onda del sonido debería ser igual al periodo de la fuente ${T}_{\text{s}}.$ Como el observador se mueve hacia la fuente, el tiempo de paso de una longitud de onda es inferior a ${T}_{\text{s}}$ y es igual al periodo observado ${T}_{\text{o}} = {T}_{\text{s}} - \text{Δ}t.$ En el tiempo $t = 0,$ el observador comienza en el principio de una longitud de onda y se desplaza hacia la segunda longitud de onda a medida que esta se aleja de la fuente. La longitud de onda es igual a la distancia que recorrió el observador más la distancia que recorrió la onda sonora hasta encontrarse con el observador:
+
+$$ \begin{matrix} {\lambda }_{\text{s}} & = & v {T}_{\text{o}} + {v}_{\text{o}} {T}_{\text{o}} \\ v {T}_{\text{s}} & = & (v + {v}_{\text{o}}) {T}_{\text{o}} \\ v (\frac{1}{{f}_{\text{s}}}) & = & (v + {v}_{\text{o}}) (\frac{1}{{f}_{\text{o}}}) \\ {f}_{\text{o}} & = & {f}_{\text{s}} (\frac{v + {v}_{\text{o}}}{v}). \end{matrix} $$
+
+Si el observador se aleja de la fuente, se puede calcular la frecuencia observada:
+
+$$ \begin{matrix} {\lambda }_{\text{s}} & = & v {T}_{\text{o}} - {v}_{\text{o}} {T}_{\text{o}} \\ v {T}_{\text{s}} & = & (v - {v}_{\text{o}}) {T}_{\text{o}} \\ v (\frac{1}{{f}_{\text{s}}}) & = & (v - {v}_{\text{o}}) (\frac{1}{{f}_{\text{o}}}) \\ {f}_{\text{o}} & = & {f}_{\text{s}} (\frac{v - {v}_{\text{o}}}{v}). \end{matrix} $$
+
+Las ecuaciones para un observador que se acerca o se aleja de una fuente estacionaria pueden combinarse en una sola ecuación:
+
+$$ {f}_{\text{o}} = {f}_{\text{s}} (\frac{v \pm {v}_{\text{o}}}{v}), $$
+
+donde ${f}_{\text{o}}$ es la frecuencia observada, ${f}_{\text{s}}$ es la frecuencia de la fuente, $v$ es la velocidad del sonido, ${v}_{\text{o}}$ es la velocidad del observador, el signo superior es para el observador que se acerca a la fuente y el signo inferior es para el observador que se aleja de la fuente.
+
+La Ecuación 17.18 y la Ecuación 17.19 se pueden resumir en una ecuación (el signo superior es de aproximación) y se ilustra con más detalle en la Tabla 17.4:
+
+$$ {f}_{\text{o}} = {f}_{\text{s}} (\frac{v \pm {v}_{\text{o}}}{v \mp {v}_{\text{s}}}), $$
+
+donde ${f}_{o}$ es la frecuencia observada, ${f}_{s}$ es la frecuencia de la fuente, $v$ es la velocidad del sonido, ${v}_{o}$ es la velocidad del observador, ${v}_{s}$ es la velocidad de la fuente, el signo superior es para la aproximación y el inferior para la salida.
+
+
+Ejemplo 17.8
+
+
+Cálculo de un corrimiento Doppler
+
+Suponga que un tren con una bocina de 150 Hz se desplaza a 35,0 m/s en aire quieto un día en que la velocidad del sonido es de 340 m/s.
+
+(a) ¿Qué frecuencias observa una persona en estado estacionario al lado de las vías cuando el tren se acerca y después de que pasa?
+
+(b) ¿Qué frecuencia observa el maquinista que va en el tren?
+
+
+Estrategia
+
+Para calcular la frecuencia observada en (a), debemos usar ${f}_{\text{obs}} = {f}_{\text{s}} (\frac{v}{v \mp {v}_{\text{s}}})$ porque la fuente está en movimiento. El signo menos se utiliza para el tren que se acerca y el signo más para el que se aleja. En (b), hay dos corrimientos Doppler: uno para una fuente en movimiento y otro para un observador en movimiento.
+
+
+Solución
+
+Introduzca los valores conocidos en ${f}_{\text{o}} = {f}_{\text{s}} (\frac{v}{v - {v}_{\text{s}}}):$
+
+$$ {f}_{\text{o}} = {f}_{\text{s}} (\frac{v}{v - {v}_{\text{s}}}) = (150 \text{Hz}) (\frac{340 \text{m/s}}{340 \text{m/s} - 35,0 \text{m/s}}). $$
+
+Calcule la frecuencia observada por una persona en estado estacionario cuando el tren se acerca:
+
+$$ {f}_{\text{o}} = (150 \text{Hz}) (1,11) = 167 \text{Hz}\text{.} $$
+
+Use la misma ecuación con el signo más para calcular la frecuencia que oye una persona parada cuando el tren se aleja:
+
+$$ {f}_{\text{o}} = {f}_{\text{s}} (\frac{v}{v + {v}_{\text{s}}}) = (150 \text{Hz}) (\frac{340 \text{m/s}}{340 \text{m/s} + 35,0 \text{m/s}}). $$
+
+$$ {f}_{\text{o}} = (150 \text{Hz}) (0,907) = 136 \text{Hz}\text{.} $$
+
+Parece razonable que el maquinista reciba la misma frecuencia que emite la bocina, porque la velocidad relativa entre ellos es cero.
+
+En relación con el medio (aire), las velocidades son ${v}_{\text{s}} = {v}_{\text{o}} = 35,0 \text{m/s}\text{.}$
+
+El primer corrimiento Doppler es para el observador en movimiento; el segundo es para la fuente en movimiento.
+
+$$ {f}_{\text{o}} = [{f}_{\text{s}} (\frac{v \pm {v}_{\text{o}}}{v})] (\frac{v}{v \mp {v}_{\text{s}}}). $$
+
+La cantidad entre corchetes es la frecuencia del corrimiento Doppler debido a un observador en movimiento. El factor de la derecha es el efecto de la fuente en movimiento. Como el maquinista del tren se mueve en dirección a la bocina, debemos utilizar el signo más para ${v}_{\text{obs}};$ sin embargo, como la bocina también se mueve en dirección contraria al maquinista, también usamos el signo más para ${v}_{\text{s}}.$ Pero el tren lleva tanto al maquinista como a la bocina a la misma velocidad, por lo que ${v}_{\text{s}} = {v}_{\text{o}}.$ Como consecuencia, todo menos ${f}_{\text{s}}$ se cancela, lo que ocasiona
+
+
+Importancia
+
+Para el caso en que la fuente y el observador no se mueven juntos, los números calculados son válidos cuando la fuente (en este caso, el tren) está lo suficientemente lejos como para que el movimiento sea casi a lo largo de la línea que une a la fuente y al observador. En ambos casos, el desplazamiento es significativo y fácilmente perceptible. Observe que el desplazamiento es de 17,0 Hz para el movimiento de aproximación y de 14,0 Hz para el de alejamiento. Los desplazamientos no son simétricos.
+
+Para el maquinista que va en el tren podemos esperar que no haya ningún cambio de frecuencia porque la fuente y el observador se mueven juntos. Esto coincide con su experiencia. Por ejemplo, no hay corrimiento Doppler en la frecuencia de las conversaciones entre el conductor y el pasajero en una motocicleta. Las personas que hablan cuando un viento mueve el aire entre ellas tampoco observan ningún corrimiento Doppler en su conversación. El punto crucial es que la fuente y el observador no se mueven uno respecto al otro.
+
+El Efecto Doppler y el corrimiento Doppler tienen muchas aplicaciones importantes en la ciencia y la ingeniería. Por ejemplo, el corrimiento Doppler de los ultrasonidos se puede usar para medir la velocidad de la sangre, y la policía utiliza el corrimiento Doppler de un radar (una microonda) para medir la velocidad de los automóviles. En meteorología, el corrimiento Doppler se utiliza para seguir el movimiento de nubes de tormenta; este “radar Doppler” puede dar la velocidad y la dirección de la lluvia o la nieve en los frentes meteorológicos. En astronomía, podemos examinar la luz emitida por galaxias lejanas y determinar su velocidad en relación con la nuestra. Cuando las galaxias se alejan de nosotros, su luz se desplaza a una frecuencia más baja y, por tanto, a una longitud de onda más larga, lo que se conoce como corrimiento al rojo. Esta información procedente de galaxias muy muy lejanas ha permitido estimar la edad del universo (desde el Big Bang) en unos 14.000 millones de años.
+
+
+17.8 Ondas expansivas
+
+Cuando hablamos del Efecto Doppler de una fuente en movimiento y un observador estacionario, los únicos casos que consideramos fueron aquellos en los que la fuente se movía a velocidades inferiores a la del sonido. Recuerde que la frecuencia observada para una fuente en movimiento que se acerca a un observador estacionario es ${f}_{\text{o}} = {f}_{\text{s}} (\frac{v}{v - {v}_{\text{s}}}).$ A medida que la fuente se acerca a la velocidad del sonido, la frecuencia observada aumenta. Según la ecuación, si la fuente se mueve a la velocidad del sonido, el denominador es igual a cero, lo que implica que la frecuencia observada es infinita. Si la fuente se mueve a velocidades superiores a la del sonido, la frecuencia observada es negativa.
+
+¿Qué puede significar esto? ¿Qué ocurre cuando una fuente se acerca a la velocidad del sonido? Algunos científicos argumentaron alguna vez que la interferencia constructiva de las ondas sonoras ocasionaría una onda de presión tan grande que sería imposible que un avión superara la velocidad del sonido porque las presiones serían lo suficientemente grandes como para destruir el avión. Pero ahora los aviones vuelan rutinariamente más rápido que la velocidad del sonido. El 28 de julio de 1976, el capitán Eldon W. Joersz y el mayor George T. Morgan volaron un Lockheed SR-71 Blackbird #61-7958 a 3529,60 km/h (2193,20 mi/h), es decir, a Mach 2,85. El número Mach es la velocidad de la fuente dividida entre la velocidad del sonido:
+
+$$ M = \frac{{v}_{\text{s}}}{v}. $$
+
+Verá que se producen fenómenos interesantes cuando una fuente se acerca a la velocidad del sonido y la supera.
+
+
+Efecto Doppler y alta velocidad
+
+¿Qué ocurre con el sonido producido por una fuente en movimiento, como un avión a reacción, que se acerca a la velocidad del sonido o incluso la supera? La respuesta a esta pregunta se aplica no solo al sonido, sino también a todas las demás ondas. Suponga que un avión a reacción viene casi en línea recta hacia usted y emite un sonido de frecuencia ${f}_{\text{s}}.$ Cuanto mayor sea la velocidad del avión ${v}_{\text{s}},$ mayor será el corrimiento Doppler y mayor será el valor observado para ${f}_{\text{o}}$.
+
+Ahora, como ${v}_{\text{s}}$ se acerca a la velocidad del sonido, ${f}_{\text{o}}$ se acerca al infinito, ya que el denominador en ${f}_{\text{o}} = {f}_{\text{s}} (\frac{v}{v \mp {v}_{\text{s}}})$ se acerca a cero. A la velocidad del sonido este resultado significa que delante de la fuente cada onda sucesiva interfiere con la anterior porque la fuente avanza a la velocidad del sonido. El observador las recibe todas en el mismo instante, por lo que la frecuencia es infinita (parte (c) de la figura).
+
+
+Ondas expansivas y explosiones sónicas
+
+Si la fuente supera la velocidad del sonido, el observador no recibe ningún sonido hasta que la fuente haya pasado, por lo que los sonidos de la fuente que se acerca se mezclan con los de esta cuando se aleja. Esta mezcla parece desordenada, pero ocurre algo interesante: se crea una onda expansiva.
+
+Interferencia constructiva a lo largo de las líneas mostradas (un cono en tres dimensiones) a partir de ondas sonoras similares que llegan allí simultáneamente. Esta superposición forma una alteración llamada onda expansiva, una interferencia constructiva del sonido creada por un objeto que se mueve más rápido que el sonido. En el interior del cono, la interferencia es mayoritariamente destructiva, por lo que la intensidad del sonido allí es mucho menor que en la onda expansiva. El ángulo de la onda expansiva se puede calcular a partir de la geometría. En el tiempo t la fuente se ha desplazado ${v}_{\text{s}}t$, la onda sonora se ha desplazado una distancia vt y el ángulo se puede calcular mediante $\text{sen} \theta = \frac{vt}{{v}_{\text{s}}t} = \frac{v}{{v}_{\text{s}}}.$ Tenga en cuenta que el número Mach se define como $\frac{{v}_{\text{s}}}{v}$, por lo que el seno del ángulo es igual a la inversa del número Mach,
+
+$$ \text{sen} \theta = \frac{v}{{w}_{\text{s}}} = \frac{1}{M}. $$
+
+Es posible que haya oído hablar del término común “explosión sónica”. Un error de concepto común es que la explosión sónica se produce cuando el avión rompe la barrera del sonido, es decir, acelera a una velocidad superior a la del sonido. En realidad, la explosión sónica se produce cuando la onda expansiva hace un barrido por el suelo.
+
+Un avión crea dos ondas expansivas, una desde la nariz y otra desde la cola. Durante la cobertura televisiva de aterrizajes de transbordadores espaciales, a menudo, se oyen dos pitidos distintos. Estos estaban separados por el tiempo exacto que tardaría el transbordador en pasar por un punto. Los observadores en tierra, a menudo, no ven la aeronave que crea la explosión sónica, ya que ha pasado antes de que la onda expansiva los alcance, como se ve en la figura. Si el avión vuela cerca a baja altura, las presiones de la explosión sónica pueden ser destructivas y romper ventanas, además de hacer saltar los nervios. Debido a lo destructivas que pueden ser las explosiones sónicas, los vuelos supersónicos están prohibidos sobre áreas pobladas.
+
+Las ondas expansivas son un ejemplo de un fenómeno más amplio llamado estela de proa. Una estela de proa, como la que aparece en la Figura 17.38, se crea cuando la fuente de la onda se mueve más rápido que la velocidad de propagación de la onda. Las ondas acuáticas se extienden en círculos desde el punto en que se crean, y la estela de proa es la conocida estela en forma de V, que sigue a la fuente. Una estela de proa más exótica se crea cuando una partícula subatómica se desplaza a través de un medio más rápido que el desplazamiento de la velocidad de la luz en ese medio (en el vacío, la velocidad de la luz máxima es $c = 3,00 \times {10}^{8} \text{m/s;}$ en el medio de agua, la velocidad de la luz está más cerca de 0,75c). Si la partícula crea luz a su paso, esa luz se propaga en un cono con un ángulo indicativo de la velocidad de la partícula, como se ilustra en la Figura 17.39. Dicha estela de proa se denomina radiación de Cerenkov y se observa habitualmente en la física de partículas.

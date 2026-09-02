@@ -1,0 +1,568 @@
+Pueden hacerse varias observaciones sobre la relación entre la estabilidad de un núcleo y su estructura. Los núcleos con un número par de protones, neutrones o ambos tienen más probabilidades de ser estables. Los núcleos con cierto número de nucleones, conocidos como números mágicos, son estables frente al decaimiento nuclear. Estos números de protones o neutrones (2, 8, 20, 28, 50, 82 y 126) conforman las capas completas del núcleo. Su concepto es similar al de las capas estables de electrones que se observan en los gases nobles. Los núcleos que tienen números mágicos de protones y neutrones, como ${}_{2}^{4}\text{He},$ ${}_{ 8}^{16}\text{O},$ ${}_{20}^{40}\text{Ca},$ y ${}_{ 82}^{208}\text{Pb},$ se denominan "magia doble" y son especialmente estables. Estas tendencias en la estabilidad nuclear se pueden racionalizar tras considerar un modelo mecánico cuántico de estados de energía nuclear análogo al utilizado para describir los estados electrónicos anteriormente en este libro de texto. Los detalles de este modelo quedan fuera del alcance de este capítulo.
+
+Isótopos nucleares estables
+
+La estabilidad relativa de un núcleo está relacionada con su energía de enlace por nucleón: la energía total de enlace para el núcleo, dividida entre el número de nucleones en el núcleo. Vimos en el Ejemplo 21.2 que la energía de enlace para un núcleo de ${}_{2}^{4}\text{He}$ es de 28,4 MeV. La energía de enlace por nucleón para un núcleo de ${}_{2}^{4}\text{He}$ es, por lo tanto:
+
+$$ \frac{\text{28,4 MeV}}{\text{4 nucleones}} = \text{7,10 MeV/nucleón} $$
+
+En el Ejemplo 21.3, aprendemos a calcular la energía de enlace por nucleón de un nucleido en la curva que se indica en la Figura 21.3.
+
+
+Ejemplo 21.3
+
+
+Cálculo de la energía de enlace por nucleón
+
+El nucleido de hierro ${}_{26}^{56}\text{Fe}$ se encuentra cerca de la parte superior de la curva de energía de enlace y es uno de los más estables. ¿Cuál es la energía de enlace por nucleón (en MeV) para el nucleido ${}_{26}^{56}\text{Fe}$ (masa atómica de 55,9349 u)?
+
+
+Solución
+
+Al igual que en el Ejemplo 21.2, primero determinamos el defecto de masa del nucleido, que es la diferencia entre la masa de 26 protones, 30 neutrones y 26 electrones, y la masa observada de un átomo de ${}_{26}^{56}\text{Fe}$:
+
+$$ \begin{matrix} \text{Defecto de masa} = [(26 \times \text{1,0073 u}) + (30 \times \text{1,0087 u}) + (26 \times \text{0,00055 u})] - \text{55,9349 u} \\ = \text{56,4651 u} - \text{55,9349 u} \\ = \text{0,5302 u} \end{matrix} $$
+
+A continuación, calculamos la energía de enlace para un núcleo a partir del defecto de masa mediante la ecuación de equivalencia entre masa y energía:
+
+$$ \begin{matrix} \\ \\ E = m {c}^{2} = \text{0,5302 u} \times \frac{1,6605 \times {10}^{-27} \text{kg}}{\text{1 u}} \times { (2,998 \times {10}^{8} \text{m/s}) }^{2} \\ = 7,913 \times {10}^{-11} \text{kg} \text{⋅} {\text{m/s}}^{2} \\ = 7,913 \times {10}^{-11} \text{J} \end{matrix} $$
+
+Acto seguido, convertimos la energía de enlace en julios por núcleo en unidades de MeV por nucleido:
+
+$$ 7,913 \times {10}^{-11} \text{J} \times \frac{\text{1 MeV}}{1,602 \times {10}^{-13} \text{J}} = \text{493,9 MeV} $$
+
+Por último, determinamos la energía de enlace por nucleón al dividir la energía total de enlace nuclear entre el número de nucleones del átomo:
+
+$$ \text{Energía de enlace por nucleón} = \frac{\text{493,9 MeV}}{56} = \text{8,820 MeV/nucleón} $$
+
+Observe que esto es casi un 25% más que la energía de enlace por nucleón para ${}_{2}^{4}\text{He}?$
+
+(Observe también que se trata del mismo proceso que en el Ejemplo 21.1, pero con el paso adicional de dividir la energía total de enlace nuclear entre el número de nucleones).
+
+
+21.2 Ecuaciones nucleares
+
+Las modificaciones de los núcleos que dan lugar a cambios en sus números atómicos, números de masa o estados energéticos son reacciones nucleares. Para describir una reacción nuclear, utilizamos una ecuación que identifica los nucleidos que intervienen en la reacción, sus números de masa y números atómicos, y las demás partículas que intervienen en la reacción.
+
+
+Tipos de partículas en las reacciones nucleares
+
+En las reacciones nucleares intervienen muchas entidades. Las más comunes son los protones, los neutrones, las partículas alfa, las partículas beta, los positrones y los rayos gama, como se muestra en la Figura 21.4. Los protones $({}_{1}^{1}\text{p},$ que también se representan con el símbolo ${}_{1}^{1}\text{H})$ y los neutrones $({}_{0}^{1}\text{n})$ son los constituyentes de los núcleos atómicos, y se han descrito anteriormente. Las partículas alfa $({}_{2}^{4}\text{He},$ que también se representan con el símbolo ${}_{2}^{4}\text{α})$ son núcleos de helio de alta energía. Las partículas beta $({}_{-1}^{ 0}\text{β},$ que también se representan con el símbolo ${}_{-1}^{ 0}\text{e})$ son electrones de alta energía, y los rayos gama son fotones de radiación electromagnética con energía extremadamente elevada. Los positrones $({}_{+1}^{ 0}\text{e},$ que también se representan con el símbolo ${}_{+1}^{ 0}\text{β})$ son electrones con carga positiva ("antielectrones"). Los subíndices y superíndices son necesarios para equilibrar las ecuaciones nucleares, aunque son opcionales en otras circunstancias. Por ejemplo, una partícula alfa es un núcleo de helio (He) con una carga de +2 y un número de masa de 4, por lo que se simboliza ${}_{2}^{4}\text{He}.$ Esto funciona porque, en general, la carga del ion no es importante en el equilibrio de las ecuaciones nucleares.
+
+Observe que los positrones son exactamente como los electrones, salvo que tienen la carga opuesta. Son el ejemplo más común de antimateria: partículas con la misma masa, pero con el estado opuesto de otra propiedad (por ejemplo, la carga) que la materia ordinaria. Cuando la antimateria se encuentra con la materia ordinaria, ambas se aniquilan y su masa se convierte en energía en forma de rayos gama (γ) (y otras partículas subnucleares mucho más pequeñas, que están fuera del alcance de este capítulo), según la ecuación de equivalencia entre masa y energía E = mc2, vista en la sección anterior. Por ejemplo, cuando un positrón y un electrón colisionan, ambos se aniquilan y se crean dos fotones de rayos gama:
+
+$$ {}_{-1}^{ 0}\text{e} + {}_{+1}^{ 0}\text{e} ⟶ \text{γ} + \text{γ} $$
+
+Como se ha visto en el capítulo dedicado a la luz y la radiación electromagnética, los rayos gama componen una radiación electromagnética de corta longitud de onda y alta energía y son (mucho) más energéticos que los más conocidos rayos X, que se comportan como partículas en el sentido de la dualidad onda-partícula. Los rayos gama son un tipo de radiación electromagnética de alta energía que se produce cuando un núcleo experimenta una transición de un estado energético superior a otro inferior, de forma similar a como se produce un fotón por una transición electrónica de un nivel energético superior a otro inferior. Debido a las diferencias energéticas mucho mayores entre las capas de energía nuclear, los rayos gama que emanan de un núcleo tienen energías millones de veces mayores que la radiación electromagnética que emana de las transiciones electrónicas.
+
+
+Equilibrio de las reacciones nucleares
+
+La ecuación de reacción química balanceada refleja el hecho de que, durante la reacción química, se rompen y se forman enlaces y se reordenan los átomos, pero el número total de átomos de cada elemento se conserva y no cambia. Una ecuación de reacción nuclear balanceada indica que hay un reordenamiento durante una reacción nuclear, pero de nucleones (partículas subatómicas dentro de los núcleos de los átomos) en lugar de átomos. Las reacciones nucleares también siguen las leyes de conservación, y se equilibran de dos maneras:
+
+La suma de los números de masa de los reactivos es igual a la suma de los números de masa de los productos.
+
+La suma de las cargas de los reactivos es igual a la suma de las cargas de los productos.
+
+Si se conoce el número atómico y el número de masa de todas las partículas de una reacción nuclear menos una, podemos identificar la partícula al equilibrar la reacción. Por ejemplo, podríamos determinar que ${}_{ 8}^{17}\text{O}$ es un producto de la reacción nuclear de ${}_{ 7}^{14}\text{N}$ y ${}_{2}^{4}\text{He}$ si supiéramos que un protón, ${}_{1}^{1}\text{H},$ era uno de los dos productos. La Ejemplo 21.4 muestra cómo podemos identificar un nucleido al equilibrar la reacción nuclear.
+
+
+Ejemplo 21.4
+
+
+Ecuaciones de equilibrio en las reacciones nucleares
+
+La reacción de una partícula α con el magnesio-25 $({}_{12}^{25}\text{Mg})$ produce un protón y un nucleido de otro elemento. Identifique el nuevo nucleido producido.
+
+
+Solución
+
+La reacción nuclear se escribe como:
+
+$$ {}_{12}^{25}\text{Mg} + {}_{2}^{4}\text{He} ⟶ {}_{1}^{1}\text{H} + {}_{\text{Z}}^{\text{A}}\text{X} $$
+
+donde A es el número de masa y Z es el número atómico del nuevo nucleido, X. Ya que la suma de los números de masa de los reactivos deberá ser igual a la suma de los números de masa de los productos:
+
+$$ 25 + 4 = \text{A} + 1, \text{o A} = 28 $$
+
+Del mismo modo, las cargas deberán equilibrarse, por lo que:
+
+$$ 12 + 2 = \text{Z} + 1, \text{y Z} = 13 $$
+
+Consulte la tabla periódica: el elemento con carga nuclear = +13 es el aluminio. Por lo tanto, el producto es ${}_{13}^{28}\text{Al}.$
+
+
+21.3 Decaimiento radiactivo
+
+Tras el descubrimiento un tanto fortuito de la radiactividad por parte de Becquerel, muchos científicos destacados comenzaron a investigar este nuevo e intrigante fenómeno. Entre ellos se encuentran Marie Curie (la primera mujer en ganar un premio Nobel y la única persona que ha ganado dos premios Nobel en ciencias diferentes: química y física), quien fue la primera en acuñar el término "radiactividad", y Ernest Rutherford (de la fama del experimento de la lámina de oro), quien investigó y bautizó a tres de los tipos más comunes de radiación. A principios del siglo XX se descubrieron muchas sustancias radiactivas, se investigaron y cuantificaron las propiedades de la radiación y se formó una sólida comprensión de la radiación y el decaimiento nuclear.
+
+El cambio espontáneo de un nucleido inestable en otro es el decaimiento radiactivo. El nucleido inestable se denomina nucleido padre; el nucleido resultante del decaimiento se conoce como nucleido hija. El nucleido hija puede ser estable o decaer. La radiación que se emite durante el decaimiento radiactivo es tal que el nucleido hija se encuentra más cerca de la banda de estabilidad que el nucleido padre, por lo que la ubicación de un nucleido con respecto a la banda de estabilidad sirve de guía para el tipo de decaimiento que sufrirá.
+
+
+Tipos de decaimiento radiactivo
+
+Los experimentos de Ernest Rutherford sobre la interacción de la radiación con un campo magnético o eléctrico le permitieron determinar que un tipo de radiación consistía en partículas α cargadas positivamente y relativamente masivas; un segundo tipo estaba formado por partículas β cargadas negativamente y mucho menos masivas, y un tercero eran ondas electromagnéticas sin carga, los rayos γ. Ahora sabemos que las partículas α son núcleos de helio de alta energía, las partículas β son electrones de alta energía y la radiación γ compone la radiación electromagnética de alta energía. Clasificamos los diferentes tipos de decaimiento radiactivo según la radiación producida.
+
+El decaimiento alfa (α) es la emisión de una partícula α desde el núcleo. Por ejemplo, el polonio 210 sufre un decaimiento α:
+
+$$ {}_{ 84}^{210}\text{Po} ⟶ {}_{2}^{4}\text{He} + {}_{ 82}^{206}\text{Pb} \text{o} {}_{ 84}^{210}\text{Po} ⟶ {}_{2}^{4}\text{α} + {}_{ 82}^{206}\text{Pb} $$
+
+El decaimiento alfa se produce principalmente en los núcleos pesados (A > 200, Z > 83). Dado que la pérdida de una partícula α da lugar a un nucleido hija con un número de masa cuatro unidades menor y un número atómico dos unidades menor que los del nucleido padre, el nucleido hija tiene un cociente n:p mayor que el nucleido padre. Si el nucleido padre que sufre el decaimiento α se encuentra por debajo de la banda de estabilidad, el nucleido hija se encontrará más cerca de la banda.
+
+El decaimiento beta (β) es la emisión de un electrón desde un núcleo. El yodo-131 es un ejemplo de nucleido que sufre un decaimiento β:
+
+$$ {}_{ 53}^{131}\text{I} ⟶ {}_{-1}^{ 0}\text{e} + {}_{ 54}^{131}\text{Xe} \text{o} {}_{ 53}^{131}\text{I} ⟶ {}_{-1}^{ 0}\text{β} + {}_{ 54}^{131}\text{Xe} $$
+
+El decaimiento beta, que puede considerarse como la conversión de un neutrón en un protón y una partícula β, se observa en los nucleidos con un gran cociente n:p. La partícula beta (electrón) emitida procede del núcleo atómico y no es ninguno de los electrones que rodean el núcleo. Estos núcleos se encuentran por encima de la banda de estabilidad. La emisión de un electrón no cambia el número de masa del nucleido, pero sí aumenta el número de sus protones y disminuye el de sus neutrones. En consecuencia, el cociente n:p disminuye, y el nucleido hija se encuentra más cerca de la banda de estabilidad que el nucleido padre.
+
+La emisión gama (emisión γ) se observa cuando un nucleido se forma en un estado estimulado y luego decae a su estado básico con la emisión de un rayo γ, un quantum de radiación electromagnética de alta energía. La presencia de un núcleo en estado excitado se indica con un asterisco (*). El cobalto 60 emite radiación γ y se utiliza en muchas aplicaciones, incluido el tratamiento del cáncer:
+
+$$ {}_{27}^{60}\text{Co*} ⟶ {}_{0}^{0}\text{γ} + {}_{27}^{60}\text{Co} $$
+
+No hay ningún cambio en el número de masa ni en el número atómico durante la emisión de un rayo γ, a menos que la emisión γ acompañe a uno de los otros modos de decaimiento.
+
+La emisión de positrones (decaimiento β+) es la de un positrón desde el núcleo. El oxígeno-15 es un ejemplo de nucleido que sufre la emisión de positrones:
+
+$$ {}_{ 8}^{15}\text{O} ⟶ {}_{+1}^{ 0}\text{e} + {}_{ 7}^{15}\text{N} \text{o} {}_{ 8}^{15}\text{O} ⟶ {}_{+1}^{ 0}\text{β} + {}_{ 7}^{15}\text{N} $$
+
+La emisión de positrones se observa en los nucleidos en los que el cociente n:p es bajo. Estos nucleidos se encuentran por debajo de la banda de estabilidad. El decaimiento de positrones es la conversión de un protón en un neutrón con la emisión de un positrón. El cociente n:p aumenta, y el nucleido hija se encuentra más cerca de la banda de estabilidad que el nucleido padre.
+
+La captura de electrones tiene lugar cuando el núcleo de un átomo captura uno de sus electrones internos. Por ejemplo, el potasio-40 sufre la captura de electrones:
+
+$$ {}_{19}^{40}\text{K} + {}_{-1}^{ 0}\text{e} ⟶ {}_{18}^{40}\text{Ar} $$
+
+La captura de electrones tiene lugar cuando un electrón de la capa interna se combina con un protón y se convierte en neutrón. La pérdida de un electrón de la capa interna deja una vacante que ocupará uno de los electrones externos. Al caer el electrón exterior en la vacante, emitirá energía. En la mayoría de los casos, la energía emitida será en forma de rayos X. Al igual que la emisión de positrones, la captura de electrones tiene lugar para los núcleos "ricos en protones" que se encuentran por debajo de la banda de estabilidad. La captura de electrones tiene el mismo efecto sobre el núcleo que la emisión de positrones: el número atómico disminuye en uno y el número de masa no cambia. Esto aumenta el cociente n:p, y el nucleido hija se encuentra más cerca de la banda de estabilidad que el nucleido padre. Difícilmente se puede predecir si hay captura de electrones o emisión de positrones. La elección se debe principalmente a factores cinéticos, por lo que sería el más probable aquel que requiere la menor energía de activación.
+
+La Figura 21.7 resume estos tipos de decaimiento, junto con sus ecuaciones y cambios en los números atómicos y de masa.
+
+
+La química en la vida cotidiana
+
+
+Tomografía por emisión de positrones (PET)
+
+La tomografía por emisión de positrones (Positron Emission Tomography, PET) utiliza la radiación para diagnosticar y hacer seguimiento de las enfermedades, además de supervisar los tratamientos médicos, al revelar cómo funcionan las partes del organismo del paciente. Para realizar una PET, se produce un radioisótopo emisor de positrones en un ciclotrón y luego se une a una sustancia que utiliza la parte del cuerpo que se investiga. Este compuesto "marcado", o radiotrazador, se introduce en el paciente (se inyecta por vía intravenosa o se respira en forma de gas), y la forma en que lo utiliza el tejido revela cómo funciona ese órgano u otra zona del cuerpo.
+
+Por ejemplo, el F-18 se produce por bombardeo de protones de 18O $({}_{ 8}^{18}\text{O} + {}_{1}^{1}\text{p} ⟶ {}_{ 9}^{18}\text{F} + {}_{0}^{1}\text{n})$ e incorporada a un análogo de la glucosa, denominado fludeoxiglucosa (FDG). La forma en que el organismo utiliza la FDG suministra información de diagnóstico fundamental; por ejemplo, dado que las neoplasias utilizan la glucosa de manera distinta a los tejidos normales, la FDG puede revelar estas neoplasias. El 18F emite positrones que interactúan con los electrones cercanos, lo que genera una ráfaga de radiación gama. El tomógrafo detecta esta energía y la convierte en una imagen detallada, tridimensional y a colores que muestra el funcionamiento de esa parte del organismo del paciente. Distintos niveles de radiación gama emiten diferentes cantidades de brillo y colores en la imagen, lo que el radiólogo puede interpretar para revelar lo que sucede. Los tomógrafos de emisión de positrones son capaces de detectar cardiopatías, diagnosticar la enfermedad de Alzheimer, indicar la parte del cerebro afectada por la epilepsia, revelar el cáncer, mostrar en qué fase se encuentra y cuánto se ha extendido, y si los tratamientos son eficaces. A diferencia de la imagen de resonancia magnética y los rayos X, que muestran únicamente el aspecto de algo, la gran ventaja de la PET es que muestra cómo funciona algo. En la actualidad, la PET se realiza junto con la tomografía computarizada.
+
+
+Serie de decaimiento radiactivo
+
+Los isótopos radiactivos naturales de los elementos más pesados se dividen en cadenas de desintegraciones sucesivas, o decaimientos, y todas las especies de una cadena constituyen una familia radiactiva o serie de decaimiento radiactivo. Tres de estas series abarcan la mayoría de los elementos naturalmente radiactivos de la tabla periódica. Son las series del uranio, de los actínidos y del torio. La del neptunio sería la cuarta serie, que ya no es significativa en la Tierra debido a la corta semivida de las especies implicadas. Cada serie se caracteriza por un nucleido padre (primer miembro), con una semivida prolongada, y una serie de nucleidos hijas que, en última instancia, conducen a un producto final estable, es decir, un nucleido en la banda de estabilidad. En las tres series, el producto final es un isótopo estable del plomo. La serie del neptunio, que anteriormente se creía que terminaba con el bismuto-209, termina con el talio-205.
+
+
+Semividas radiactivas
+
+El decaimiento radiactivo sigue una cinética de primer orden. Dado que las reacciones de primer orden ya se han tratado en detalle en el capítulo de cinética, ahora aplicaremos esos conceptos a las reacciones de decaimiento nuclear. Cada nucleido radiactivo tiene una semivida (t1/2) constante y característica: el tiempo necesario para que la mitad de los átomos de una muestra decaiga. La semivida de un isótopo nos permite determinar cuánto tiempo estará disponible una muestra de un isótopo útil, y cuánto tiempo deberá almacenarse una muestra de un isótopo indeseable o peligroso antes de que decaiga hasta un nivel de radiación lo suficientemente bajo como para que deje de ser un problema.
+
+Por ejemplo, el cobalto-60, un isótopo que emite rayos gama y que se utiliza para tratar el cáncer, tiene una semivida de 5,27 años. En una determinada fuente de cobalto-60, dado que la mitad de la ${}_{27}^{60}\text{Co}$ los núcleos decaen cada 5,27 años, tanto la cantidad de material como la intensidad de la radiación emitida se reducen a la mitad cada 5,27 años. (Observe que, para una sustancia determinada, la intensidad de la radiación que produce es directamente proporcional a la tasa de decaimiento y a la cantidad de la sustancia). Esto es lo que se prevé en un proceso que sigue una cinética de primer orden. Por lo tanto, una fuente de cobalto 60 que se utiliza para el tratamiento del cáncer deberá reemplazarse regularmente para seguir siendo eficaz.
+
+Dado que el decaimiento nuclear sigue una cinética de primer orden, podemos adaptar las relaciones matemáticas que se utilizan en las reacciones químicas de primer orden. Generalmente sustituimos el número de núcleos, N, por la concentración. Si la tasa se expresa en decaimientos nucleares por segundo, nos referimos a esta como la actividad de la muestra radiactiva. La tasa de decaimiento radiactivo es:
+
+tasa de decaimiento = λN con λ = la constante de decaimiento del radioisótopo en cuestión.
+
+La constante de decaimiento, λ, que es la misma que la constante de velocidad que se analiza en el capítulo de cinética. Es posible expresar la constante de decaimiento en términos de semivida, t1/2:
+
+$$ \lambda = \frac{\text{ln 2}}{{t}_{1\text{/}2}} = \frac{0,693}{{t}_{1\text{/}2}} \text{o} {t}_{1\text{/}2} = \frac{\text{ln 2}}{\lambda } = \frac{0,693}{\lambda } $$
+
+Las ecuaciones de primer orden que relacionan cantidad, N y tiempo son:
+
+$$ {N}_{t} = {N}_{0}{e}^{ - \lambda t} \text{o} t = - \frac{1}{\lambda } \text{ln} (\frac{{N}_{t}}{{N}_{0}}) $$
+
+donde N0 es el número inicial de núcleos o moles del isótopo, y Nt es el número de núcleos/moles que quedan en el tiempo t. La Ejemplo 21.5 aplica estos cálculos para hallar las tasas de decaimiento radiactivo de determinados nucleidos.
+
+
+Ejemplo 21.5
+
+
+Tasas de decaimiento radiactivo
+
+${}_{27}^{60}\text{Co}$ decae con una semivida de 5,27 años para generar ${}_{28}^{60}\text{Ni}.$
+
+(a) ¿Cuál es la constante de decaimiento radiactivo del cobalto 60?
+
+(b) Calcule la fracción de una muestra del isótopo ${}_{27}^{60}\text{Co}$ que permanecerá después de 15 años.
+
+c) ¿Cuánto tiempo tarda una muestra de ${}_{27}^{60}\text{Co}$ en desintegrarse hasta el punto de que solo quede un 2,0% de la cantidad original?
+
+
+Solución
+
+(a) El valor de la constante de velocidad está dado por:
+
+$$ \lambda = \frac{\text{ln 2}}{{t}_{1\text{/}2}} = \frac{0,693}{5,27 \text{y}} = 0,132 {\text{y}}^{-1} $$
+
+(b) La fracción de ${}_{27}^{60}\text{Co}$ que queda después del tiempo t está dada por $\frac{{N}_{t}}{{N}_{0}}.$ Reordenando la relación de primer orden Nt = N0e-λt para resolver este cociente, produce:
+
+$$ \frac{{N}_{t}}{{N}_{0}} = {e}^{ - \lambda t} = {e}^{ - (0,132\text{/y}) (15 \times \text{y}) } = 0,138 $$
+
+La fracción de ${}_{27}^{60}\text{Co}$ que quedará después de 15,0 años es de 0,138. Dicho de otro modo, el 13,8% del ${}_{27}^{60}\text{Co}$ presente originalmente permanecerá después de 15 años.
+
+(c) 2,00% de la cantidad original de ${}_{27}^{60}\text{Co}$ es igual a 0,0200 $\times$ N0. Al sustituir esto en la ecuación del tiempo para la cinética de primer orden, tenemos:
+
+$$ t = - \frac{1}{\lambda } \text{ln} (\frac{{N}_{t}}{{N}_{0}}) = - \frac{1}{0,132 {\text{y}}^{-1}} \text{ln} (\frac{0,0200 \times {N}_{0}}{{N}_{0}}) = 29,6 \text{y} $$
+
+
+Datación radiométrica
+
+Varios radioisótopos tienen semividas y otras propiedades que sirven para "datar" el origen de objetos como artefactos arqueológicos, antiguos organismos vivos o formaciones geológicas. Este proceso es la datación radiométrica y ha sido la causa de muchos descubrimientos científicos revolucionarios sobre la historia geológica de la Tierra, la evolución de la vida y la historia de la civilización humana. Exploraremos algunos de los tipos más comunes de datación radiactiva y cómo funcionan los isótopos particulares de cada tipo.
+
+
+Datación radiactiva con carbono 14
+
+La radiactividad del carbono 14 proporciona un método para datar objetos que formaron parte de un organismo vivo. Este método de datación radiométrica, que también se denomina datación por radiocarbono o por carbono 14, es exacto para datar sustancias que contienen carbono de hasta unos 30.000 años de antigüedad, y puede proporcionar fechas bastante precisas, hasta un máximo de unos 50.000 años.
+
+El carbono natural consta de tres isótopos: ${}_{ 6}^{12}\text{C}\text{,}$ que constituye aproximadamente el 99% del carbono de la Tierra; ${}_{ 6}^{13}\text{C}\text{,}$ alrededor del 1% del total, y trazas de ${}_{ 6}^{14}\text{C}.$ El carbono 14 se forma en la atmósfera superior por la reacción de los átomos de nitrógeno con los neutrones de los rayos cósmicos en el espacio:
+
+$$ {}_{ 7}^{14}\text{N} + {}_{0}^{1}\text{n} ⟶ {}_{ 6}^{14}\text{C} + {}_{1}^{1}\text{H} $$
+
+Todos los isótopos del carbono reaccionan con el oxígeno para producir moléculas de CO2. El cociente de ${}_{ 6}^{14}\text{C}{\text{O}}_{2}$ a ${}_{ 6}^{12}\text{C}{\text{O}}_{2}$ depende del cociente de ${}_{ 6}^{14}\text{C}\text{O}$ a ${}_{ 6}^{12}\text{C}\text{O}$ en la atmósfera. La abundancia natural de ${}_{ 6}^{14}\text{C}\text{O}$ en la atmósfera es de aproximadamente 1 parte por trillón. Hasta ahora esto ha sido generalmente constante a lo largo del tiempo, como se evidencia en las muestras encontradas de gas atrapadas en el hielo. La incorporación de ${}_{ 6}^{14}\text{C}{}_{ 6}^{14}\text{C}{\text{O}}_{2}$ y ${}_{ 6}^{12}\text{C}{\text{O}}_{2}$ en las plantas es una parte regular del proceso de fotosíntesis, lo que significa que el cociente ${}_{ 6}^{14}\text{C}\text{:} {}_{ 6}^{12}\text{C}$ que se encuentra en una planta viva es igual al cociente ${}_{ 6}^{14}\text{C}\text{:} {}_{ 6}^{12}\text{C}$ en la atmósfera. No obstante, cuando la planta muere, ya no atrapa carbono a través de la fotosíntesis. Dado que ${}_{ 6}^{12}\text{C}$ es un isótopo estable y no sufre decaimiento radiactivo, su concentración en la planta no cambia. Sin embargo, el carbono-14 decae por emisión β con una semivida de 5730 años:
+
+$$ {}_{ 6}^{14}\text{C} ⟶ {}_{ 7}^{14}\text{N} + {}_{-1}^{ 0}\text{e} $$
+
+Por lo tanto, el cociente ${}_{ 6}^{14}\text{C}\text{:} {}_{ 6}^{12}\text{C}$ disminuye gradualmente después de la muerte de la planta. La disminución del cociente con el tiempo aporta una medida del tiempo que ha transcurrido desde la muerte de la planta (o de otro organismo que se comió la planta). La Figura 21.11 representa visualmente este proceso.
+
+Por ejemplo, con la semivida de ${}_{ 6}^{14}\text{C}$ en 5730 años, si el cociente ${}_{ 6}^{14}\text{C}\text{:} {}_{ 6}^{12}\text{C}$ en un objeto de madera encontrado en una excavación arqueológica es la mitad que en un árbol vivo, esto indica que el objeto de madera tiene 5730 años. Pueden obtenerse determinaciones muy exactas de cocientes ${}_{ 6}^{14}\text{C}\text{:} {}_{ 6}^{12}\text{C}$ a partir de muestras ínfimas (de hasta un miligramo) con un espectrómetro de masas.
+
+
+Ejemplo 21.6
+
+
+Datación por radiocarbono
+
+Un pequeño trozo de papel (producido a partir de materia vegetal antiguamente viva), extraído de los Manuscritos del Mar Muerto, tiene una actividad de 10,8 desintegraciones por minuto por gramo de carbono. Si la actividad inicial de C-14 era de 13,6 desintegraciones/min/g de C, calcule la edad de los Manuscritos.
+
+
+Solución
+
+La tasa de decaimiento (número de desintegraciones/minuto/gramo de carbono) es proporcional a la cantidad de C-14 radiactivo que queda en el pergamino, por lo que podemos sustituir las tasas por las cantidades, N, en la relación:
+
+$$ t = - \frac{1}{\lambda } \text{ln} (\frac{{N}_{t}}{{N}_{0}}) ⟶ t = - \frac{1}{\lambda } \text{ln} (\frac{{\text{Tasa}}_{t}}{{\text{Tasa}}_{0}}) $$
+
+donde el subíndice 0 representa el momento en que se cortaron las plantas para hacer el papel, y el subíndice t representa el momento actual.
+
+La constante de decaimiento se determina a partir de la semivida del C-14 en 5730 años:
+
+$$ \lambda = \frac{\text{ln 2}}{{t}_{1\text{/}2}} = \frac{0,693}{\text{5730 a}} = 1,21 \times {10}^{-4} {\text{y}}^{-1} $$
+
+Sustituyendo y resolviendo, tenemos:
+
+$$ t = - \frac{1}{\lambda } \text{ln} (\frac{{\text{Tasa}}_{t}}{{\text{Tasa}}_{0}}) = - \frac{1}{1,21 \times {10}^{-4} {\text{y}}^{-1}} \text{ln} (\frac{10,8 \text{dis/min/g C}}{13,6 \text{dis/min/g C}}) = \text{1910 a} $$
+
+Por lo tanto, los Manuscritos del Mar Muerto tienen aproximadamente 1900 años de antigüedad.
+
+
+Datación radiactiva con nucleidos distintos del carbono 14
+
+En la datación radiactiva también se utilizan otros nucleidos radiactivos con semividas más prolongadas para datar acontecimientos más antiguos. Por ejemplo, el uranio-238 (que decae en una serie de pasos hasta convertirse en plomo-206) se utiliza para establecer la edad de las rocas (y la edad aproximada de las rocas más antiguas de la Tierra). Dado que el U-238 tiene una semivida de 4.500 millones de años, la mitad del U-238 original tarda ese tiempo en decaer en Pb-206. En una muestra de roca que no contiene cantidades apreciables de Pb-208, el isótopo más abundante del plomo, supondríamos que el plomo no estaba presente cuando se formó la roca. Por consiguiente, al medir y analizar el cociente de U-238:Pb-206, determinamos la edad de la roca. Esto supone que todo el plomo-206 presente proviene del decaimiento del uranio-238. Si hay presencia adicional de plomo-206, lo que se indica por la presencia de otros isótopos de plomo en la muestra, es necesario hacer un ajuste. En la datación por argón potásico se utiliza un método parecido. El K-40 decae por emisión de positrones y capta electrones para formar Ar-40 con una semivida de 1.250 millones de años. Si se tritura una muestra de roca y se mide la cantidad de gas Ar-40 que escapa, la determinación del cociente Ar-40:K-40 arroja la edad de la roca. Otros métodos, como la datación por rubidio-estroncio (el Rb-87 decae en Sr-87, con una semivida de 48.800 millones de años), funcionan según el mismo principio. Para calcular el límite inferior de la edad de la Tierra, los científicos determinan la edad de diversas rocas y minerales, partiendo del supuesto de que la Tierra es más antigua que las rocas y minerales más antiguos de su corteza. Desde 2014, las rocas más antiguas que se conocen en la Tierra son los circones de Jack Hills, en Australia, que, según la datación con uranio y plomo, tienen casi 4.400 millones de años.
+
+
+Ejemplo 21.7
+
+
+Datación radiactiva de rocas
+
+Una roca ígnea contiene 9,58 $\times$ 10-5 g de U-238 y 2,51 $\times$ 10-5 g de Pb-206, y cantidades mucho, mucho más pequeñas de Pb-208. Determine el tiempo aproximado en que se formó la roca.
+
+
+Solución
+
+La muestra de roca contiene muy poco Pb-208, el isótopo más común del plomo, por lo que podemos suponer con seguridad que todo el Pb-206 de la roca se produjo por el decaimiento radiactivo del U-238. Cuando se formó la roca, contenía todo el U-238 que hay en la actualidad, además de algo de U-238 que ha sufrido desde entonces un decaimiento radiactivo.
+
+La cantidad actual de U-238 en la roca es:
+
+$$ 9,58 \times {10}^{-5} \text{g U} \times (\frac{\text{1 mol U}}{238 \text{g U}}) = 4,03 \times {10}^{-7} \text{mol U} $$
+
+Dado que, cuando un mol de U-238 decae, produce un mol de Pb-206, la cantidad de U-238 que ha sufrido decaimiento radiactivo desde que se formó la roca es:
+
+$$ 2,51 \times {10}^{-5} \text{g Pb} \times (\frac{1 \text{mol de Pb}}{206 \text{g Pb}}) \times (\frac{\text{1 mol U}}{1 \text{mol de Pb}}) = 1,22 \times {10}^{-7} \text{mol U} $$
+
+Por lo tanto, la cantidad total de U-238 presente originalmente en la roca es:
+
+$$ 4,03 \times {10}^{-7} \text{mol} + 1,22 \times {10}^{-7} \text{mol} = 5,25 \times {10}^{-7} \text{mol U} $$
+
+El tiempo que ha transcurrido desde que se formó la roca está dado por:
+
+$$ t = - \frac{1}{\lambda } \text{ln} (\frac{{N}_{t}}{{N}_{0}}) $$
+
+donde N0 representa la cantidad original de U-238 y Nt representa la cantidad actual de U-238.
+
+El U-238 decae en Pb-206 con una semivida de 4,5 $\times$ 109 años, por lo que la constante de decaimiento λ es:
+
+$$ \lambda = \frac{\text{ln 2}}{{t}_{1\text{/}2}} = \frac{0,693}{4,5 \times {10}^{9} \text{y}} = 1,54 \times {10}^{-10} {\text{y}}^{-1} $$
+
+Sustituyendo y resolviendo, tenemos:
+
+$$ t = - \frac{1}{1,54 \times {10}^{-10} {\text{y}}^{-1}} \text{ln} (\frac{4,03 \times {10}^{-7} \text{mol U}}{5,25 \times {10}^{-7} \text{mol U}}) = 1,7 \times {10}^{9} \text{y} $$
+
+En consecuencia, la roca tiene aproximadamente 1.700 millones de años.
+
+
+21.4 Transmutación y energía nuclear
+
+Tras el descubrimiento de la radiactividad, se creó el campo de la química nuclear, que se desarrolló rápidamente a principios del siglo XX. Una serie de nuevos descubrimientos en las décadas de 1930 y 1940, junto con la Segunda Guerra Mundial, se combinaron para dar paso a la Era Nuclear a mediados del siglo XX. Los científicos aprendieron a crear nuevas sustancias y se descubrió que ciertos isótopos de determinados elementos poseían la capacidad de producir cantidades de energía sin precedentes, con el potencial de causar enormes daños durante la guerra, así como de producir enormes cantidades de energía para las necesidades de la sociedad durante la paz.
+
+
+Síntesis de nucleidos
+
+La transmutación nuclear es la conversión de un nucleido en otro. Se produce por el decaimiento radiactivo de un núcleo o por la reacción de un núcleo con otra partícula. El primer núcleo artificial se produjo en el laboratorio de Ernest Rutherford en 1919 mediante una reacción de transmutación: el bombardeo de un tipo de núcleo con otros núcleos o con neutrones. Rutherford bombardeó átomos de nitrógeno con partículas α de alta velocidad procedentes de un isótopo radiactivo natural de radio y observó los protones resultantes de la reacción:
+
+$$ {}_{ 7}^{14}\text{N} + {}_{2}^{4}\text{He} ⟶ {}_{ 8}^{17}\text{O} + {}_{1}^{1}\text{H} $$
+
+Los núcleos ${}_{ 8}^{17}\text{O}$ y ${}_{1}^{1}\text{H}$ que se producen son estables, por lo que no ocurren más cambios (nucleares).
+
+Para alcanzar las energías cinéticas necesarias para generar reacciones de transmutación, se utilizan dispositivos llamados aceleradores de partículas. Estos dispositivos utilizan campos magnéticos y eléctricos para aumentar la velocidad de las partículas nucleares. En todos los aceleradores, las partículas se mueven en el vacío para no colisionar con las moléculas de gas. Cuando se necesitan neutrones para las reacciones de transmutación, se obtienen de reacciones de decaimiento radiactivo o de diversas reacciones nucleares que se producen en los reactores nucleares. El siguiente artículo de "La química en la vida cotidiana” trata de un famoso acelerador de partículas que fue noticia en todo el mundo.
+
+
+La química en la vida cotidiana
+
+
+Acelerador de partículas del CERN
+
+El laboratorio del CERN ("Conseil Européen pour la Recherche Nucléaire", o Consejo Europeo de Investigación Nuclear), situado cerca de Ginebra, es el principal centro del mundo para la investigación de las partículas fundamentales que componen la materia. Contiene el Gran Colisionador de Hadrones (Large Hadron Collider, LHC), de 27 kilómetros (17 millas) de longitud y forma circular, el mayor acelerador de partículas del mundo. En el LHC, las partículas se elevan a altas energías y luego se hacen colisionar entre sí o con objetivos estacionarios a casi la velocidad de la luz. Se utilizan electroimanes superconductores para producir un fuerte campo magnético que guía las partículas alrededor del anillo. Detectores especializados y construidos a propósito observan y registran los resultados de estas colisiones, que luego son analizados por los científicos del CERN mediante potentes computadoras.
+
+En 2012, el CERN anunció que los experimentos del LHC mostraban las primeras observaciones del bosón de Higgs: una partícula elemental que ayuda a explicar el origen de la masa en las partículas fundamentales. Este esperado descubrimiento fue noticia en todo el mundo y dio lugar a la concesión del Premio Nobel de Física 2013 a François Englert y Peter Higgs, que habían predicho la existencia de esta partícula casi 50 años antes.
+
+Antes de 1940, el elemento más pesado conocido era el uranio, cuyo número atómico es 92. Ahora, se han sintetizado y aislado muchos elementos artificiales, entre ellos varios a tan gran escala que han tenido un profundo efecto en la sociedad. Uno de ellos [el elemento 93, el neptunio (Np)] fue fabricado por primera vez en 1940 por McMillan y Abelson al bombardear uranio-238 con neutrones. La reacción crea uranio-239 inestable, con una semivida de 23,5 minutos, que luego decae en neptunio-239. El neptunio-239 también es radiactivo, con una semivida de 2,36 días, y decae en plutonio-239. Las reacciones nucleares son:
+
+$$ \begin{matrix} {}_{ 92}^{238} \text{U} + {}_{0}^{1} \text{n} ⟶ {}_{ 92}^{239} \text{U} \\ \\ \\ {}_{ 92}^{239} \text{U} ⟶ {}_{ 93}^{239} \text{Np} + {}_{-1}^{ 0} \text{e} \text{semivida} = \text{23,5 min} \\ {}_{ 93}^{239} \text{Np} ⟶ {}_{ 94}^{239} \text{Pu} + {}_{-1}^{ 0} \text{e} \text{semivida} = \text{2,36 días} \end{matrix} $$
+
+En la actualidad, el plutonio se forma principalmente en los reactores nucleares como subproducto durante la fisión del U-235. Durante este proceso de fisión se liberan neutrones adicionales (vea la siguiente sección), algunos de los cuales se combinan con núcleos de U-238 para formar uranio-239; este se somete a decaimiento β para formar neptunio-239, que a su vez se somete a decaimiento β para formar plutonio-239, como se ilustra en las tres ecuaciones anteriores. Estos procesos se resumen en la ecuación:
+
+$$ {}_{ 92}^{238}\text{U} + {}_{0}^{1}\text{n} ⟶ {}_{ 92}^{239}\text{U} \overset{ {\text{β}}^{\text{–}} }{ \to } {}_{ 93}^{239}\text{Np} \overset{ {\text{β}}^{\text{–}} }{ \to } {}_{ 94}^{239}\text{Pu} $$
+
+Los isótopos más pesados del plutonio (Pu-240, Pu-241 y Pu-242) también se producen cuando los núcleos más ligeros de plutonio capturan neutrones. Una parte de este plutonio altamente radiactivo se utiliza para fabricar armas militares; el resto representa un grave problema de almacenamiento porque tiene semividas de miles a cientos de miles de años.
+
+Aunque no se han preparado en la misma cantidad que el plutonio, se han producido muchos otros núcleos sintéticos. La medicina nuclear se ha desarrollado a partir de la capacidad de convertir átomos de un tipo en otros tipos de átomos. Actualmente se utilizan isótopos radiactivos de varias docenas de elementos para aplicaciones médicas. La radiación producida por su decaimiento se utiliza para obtener imágenes o tratar diversos órganos o partes del cuerpo, entre otros usos.
+
+Los elementos más allá del elemento 92 (uranio) se denominan elementos transuránicos. Al momento de redactar este artículo se han producido 22 elementos transuránicos, reconocidos oficialmente por la IUPAC). Otros elementos tienen reivindicaciones de formación que están a la espera de aprobación. Algunos de estos elementos se muestran en la Tabla 21.3.
+
+Preparación de algunos elementos transuránicos
+
+
+Fisión nuclear
+
+Muchos elementos más pesados con energías de enlace más pequeñas por nucleón pueden descomponerse en elementos más estables que tienen números de masa intermedios y energías de enlace más grandes por nucleón, es decir, números de masa y energías de enlace por nucleón que están más cerca del "pico" del gráfico de energía de enlace cerca de 56. A veces también se producen neutrones. Esta descomposición se denomina fisión, es decir, la ruptura de un núcleo grande en trozos más pequeños. La ruptura es más bien aleatoria con la formación de un gran número de productos diferentes. La fisión no se produce de forma natural, sino que se induce mediante el bombardeo con neutrones. La primera fisión nuclear de la que se tiene constancia se produjo en 1939, cuando tres científicos alemanes, Lise Meitner, Otto Hahn y Fritz Strassman, bombardearon átomos de uranio-235 con neutrones de movimiento lento que dividieron los núcleos de U-238 en fragmentos más pequeños, formados por varios neutrones y elementos cercanos a la mitad de la tabla periódica. Desde entonces, se ha observado la fisión en muchos otros isótopos, incluso la mayoría de los isótopos de actínidos que tienen un número impar de neutrones. En la Figura 21.14 se observa una reacción de fisión nuclear.
+
+Entre los productos de la reacción de fisión de Meitner, Hahn y Strassman se encontraban el bario, el criptón, el lantano y el cerio, todos ellos con núcleos más estables que el uranio-235. Desde entonces, se han observado cientos de isótopos diferentes entre los productos de las sustancias fisionables. Algunas de las muchas reacciones que se producen para el U-235, y un gráfico que muestra la distribución de sus productos de fisión y sus rendimientos, se muestran en la Figura 21.15. Se han observado reacciones de fisión similares con otros isótopos del uranio, así como con una variedad de otros isótopos como los del plutonio.
+
+La fisión de elementos pesados produce una enorme cantidad de energía. Por ejemplo, cuando un mol de U-235 sufre una fisión, los productos pesan unos 0,2 gramos menos que los reactivos; esta masa "perdida" se convierte en una cantidad muy grande de energía, unos 1,8 $\times$ 1010 kJ por mol de U-235. Las reacciones de fisión nuclear producen ingentes cantidades de energía en comparación con las reacciones químicas. La fisión de 1 kilogramo de uranio-235, por ejemplo, produce aproximadamente 2,5 millones de veces más energía que la producida por la combustión de 1 kilogramo de carbón.
+
+Como se ha descrito anteriormente, al someterse a la fisión el U-235 produce dos núcleos "de tamaño medio" y dos o tres neutrones. Estos neutrones pueden provocar la fisión de otros átomos de uranio-235, que a su vez proporcionan más neutrones que pueden provocar la fisión de aún más núcleos, y así sucesivamente. Si esto ocurre, tenemos una reacción en cadena. Por otro lado, si demasiados neutrones escapan del material en bruto sin interactuar con un núcleo, no se producirá ninguna reacción en cadena.
+
+Se dice que el material que puede mantener una reacción nuclear en cadena de fisión es fisionable o fisible. (Técnicamente, el material fisible puede sufrir fisión con neutrones de cualquier energía, mientras que el material fisible requiere neutrones de alta energía). La fisión nuclear se convierte en autosostenible cuando el número de neutrones producidos por la fisión es igual o superior al número de neutrones absorbidos por los núcleos en división más el número que escapa a los alrededores. La cantidad de un material fisible que soportará una reacción en cadena autosostenida es una masa crítica. La cantidad de material fisible que no puede mantener una reacción en cadena es una masa subcrítica. La cantidad de material en la que hay una tasa de fisión creciente se conoce como masa supercrítica. La masa crítica depende del tipo de material: su pureza, la temperatura, la forma de la muestra y cómo se controlan las reacciones neutrónicas.
+
+Una bomba atómica contiene varios kilos de material fisible, ${}_{ 92}^{235}\text{U}$ o ${}_{ 94}^{239}\text{Pu},$ una fuente de neutrones, y un dispositivo explosivo para comprimirla rápidamente en un pequeño volumen. Cuando el material fisible está en trozos pequeños, la proporción de neutrones que escapan a través de la superficie relativamente grande es grande, y no se produce ninguna reacción en cadena. Cuando los pequeños trozos de material fisible se juntan rápidamente para formar un cuerpo con una masa mayor que la masa crítica, el número relativo de neutrones que escapan disminuye, y se produce una reacción en cadena y una explosión.
+
+
+Reactores de fisión
+
+Las reacciones en cadena de materiales fisibles pueden controlarse y sostenerse sin ninguna explosión en un reactor nuclear. Todo reactor nuclear que produzca energía mediante la fisión de uranio o plutonio por bombardeo de neutrones deberá tener al menos cinco componentes: combustible nuclear formado por material fisionable, un moderador nuclear, refrigerante del reactor, varillas de control y un sistema de blindaje y contención. Más adelante hablaremos de estos componentes con más detalle. El reactor funciona al separar el material nuclear fisible de forma que no se pueda formar una masa crítica, controlando tanto el flujo como la absorción de neutrones para permitir el cierre de las reacciones de fisión. En un reactor nuclear utilizado para la producción de electricidad, la energía liberada por las reacciones de fisión queda atrapada como energía térmica y se utiliza para hervir agua y producir vapor. El vapor se utiliza para hacer girar una turbina, que acciona un generador para la producción de electricidad.
+
+
+Combustibles nucleares
+
+El combustible nuclear consiste en un isótopo fisible, como el uranio-235, que deberá estar presente en cantidad suficiente para proporcionar una reacción en cadena autosostenible. En los Estados Unidos, los minerales de uranio contienen entre un 0,05 y un 0,3% del óxido de uranio U3O8; el uranio del mineral es aproximadamente un 99,3% de U-238 no fisible y solo un 0,7% de U-235 fisible. Los reactores nucleares requieren un combustible con una concentración de U-235 superior a la que se encuentra en la naturaleza; normalmente se enriquece para que tenga alrededor del 5% de la masa de uranio como U-235. Con esta concentración, no es posible alcanzar la masa supercrítica necesaria para una explosión nuclear. El uranio puede enriquecerse por difusión gaseosa (el único método que se utiliza actualmente en los EE. UU.), mediante una centrifugadora de gas o por separación láser.
+
+En la planta de enriquecimiento por difusión gaseosa donde se prepara el combustible U-235, el gas UF6 (hexafluoruro de uranio) a baja presión se mueve a través de barreras que tienen agujeros apenas lo suficientemente grandes para que el UF6 pase. Las moléculas de 235UF6, un poco más ligeras, se difunden a través de la barrera con mayor rapidez que las moléculas de 238UF6, más pesadas. Este proceso se repite a través de cientos de barreras, aumentando gradualmente la concentración de 235UF6 hasta el nivel que necesita el reactor nuclear. La base de este proceso, la ley de Graham, se describe en el capítulo sobre los gases. El gas UF6 enriquecido se recoge, se enfría hasta que se solidifica y se lleva a una instalación de fabricación donde se convierte en elementos combustibles. Cada elemento combustible está formado por varillas de combustible que contienen muchos gránulos de combustible de uranio enriquecido (normalmente UO2) del tamaño de un dedal. Los reactores nucleares modernos pueden contener hasta 10 millones de gránulos de combustible. La cantidad de energía de cada uno de estos gránulos equivale a la de casi una tonelada de carbón o 150 galones de petróleo.
+
+
+Moderadores nucleares
+
+Los neutrones que producen las reacciones nucleares se mueven demasiado rápido para provocar la fisión. Primero deberán frenarse para que los absorba el combustible y así producir reacciones nucleares adicionales. El moderador nuclear es una sustancia que ralentiza los neutrones hasta una velocidad lo suficientemente baja como para provocar la fisión. Los primeros reactores utilizaban grafito de gran pureza como moderador. Los reactores modernos de los EE. UU. utilizan exclusivamente agua pesada $({{}_{1}^{2}\text{H}}_{2}\text{O})$ o agua ligera (H2O ordinario), mientras que algunos reactores de otros países utilizan otros materiales, como dióxido de carbono, berilio o grafito.
+
+
+Refrigerantes del reactor
+
+El refrigerante del reactor nuclear se utiliza para transportar el calor producido por la reacción de fisión a una caldera y una turbina externas, donde se transforma en electricidad. A menudo se utilizan dos bucles de refrigerante superpuestos; esto contrarresta la transferencia de radiactividad del reactor al bucle de refrigerante primario. Todas las centrales nucleares de los EE. UU. utilizan agua como refrigerante. Otros refrigerantes son el sodio fundido, el plomo, una mezcla de plomo y bismuto o las sales fundidas.
+
+
+Varillas de control
+
+Los reactores nucleares utilizan varillas de control para controlar la tasa de fisión del combustible nuclear al ajustar el número de neutrones lentos presentes para mantener la tasa de la reacción en cadena en un nivel seguro. Las varillas de control están hechas de boro, cadmio, hafnio u otros elementos capaces de absorber neutrones. El boro-10, por ejemplo, absorbe neutrones mediante una reacción que produce litio-7 y partículas alfa:
+
+$$ {}_{ 5}^{10}\text{B} + {}_{0}^{1}\text{n} ⟶ {}_{3}^{7}\text{Li} + {}_{2}^{4}\text{He} $$
+
+Cuando los conjuntos de varillas de control se insertan en el elemento de combustible del núcleo del reactor, absorben una mayor fracción de los neutrones lentos, con lo que se ralentiza el ritmo de la reacción de fisión y se reduce la potencia producida. Por el contrario, si se retiran las varillas de control, se absorben menos neutrones y aumentan la tasa de fisión y la producción de energía. En caso de emergencia, la reacción en cadena se corta al introducir completamente todas las varillas de control en el núcleo nuclear entre las varillas de combustible.
+
+
+Sistema de blindaje y contención
+
+Un reactor nuclear en funcionamiento genera neutrones y otras radiaciones. Incluso cuando está apagado, los productos de decaimiento son radiactivos. Además, un reactor en funcionamiento está térmicamente muy caliente, y las altas presiones resultan de la circulación de agua u otro refrigerante a través de este. Por lo tanto, el reactor deberá soportar altas temperaturas y presiones, así como proteger a los operarios de la radiación. Los reactores están equipados con un sistema de contención (o escudo) que consta de tres partes:
+
+El recipiente del reactor, una carcasa de acero de entre 3 y 20 centímetros de espesor que, junto con el moderador, absorbe gran parte de la radiación producida por el reactor.
+
+Un escudo principal de 1 a 3 metros de hormigón de alta densidad.
+
+Un escudo para el personal, hecho de un material más ligero, que protege a los operarios de los rayos γ, así como de los rayos X.
+
+Además, los reactores suelen estar cubiertos por una cúpula de acero u hormigón, diseñada para contener cualquier material radiactivo que pueda liberarse por un accidente del reactor.
+
+Las centrales nucleares están diseñadas de tal manera que no puedan formar ninguna masa supercrítica de material fisionable y, por ende, no puedan crear ninguna explosión nuclear. No obstante, como lo ha demostrado la historia, las fallas en los sistemas y las salvaguardias pueden provocar accidentes catastróficos, como explosiones químicas y fusiones nucleares (daños en el núcleo del reactor por recalentamiento). El siguiente artículo de “La química en la vida cotidiana” explora tres incidentes infames de fusión.
+
+
+La química en la vida cotidiana
+
+
+Accidentes nucleares
+
+La importancia de la refrigeración y la contención se pone de manifiesto en los tres grandes accidentes ocurridos con los reactores de las centrales nucleares de los Estados Unidos (Three Mile Island), la antigua Unión Soviética (Chernóbil) y Japón (Fukushima).
+
+En marzo de 1979, el sistema de refrigeración del reactor de la Unidad 2 de la central nuclear de Three Mile Island, en Pensilvania, falló y el agua de refrigeración se derramó del reactor al suelo del edificio de contención. Después de que las bombas se detuvieran, los reactores se recalentaron debido al elevado calor de decaimiento radiactivo producido en los primeros días después de la parada del reactor nuclear. La temperatura del núcleo subió hasta al menos 2200 °C, y la parte superior comenzó a derretirse. Además, el revestimiento de aleación de circonio de las varillas de combustible comenzó a reaccionar con el vapor y produjo hidrógeno:
+
+$$ \text{Zr} (s) + {\text{2H}}_{2}\text{O} (g) ⟶ {\text{ZrO}}_{2} (s) + {\text{2H}}_{2} (g) $$
+
+El hidrógeno se acumuló en el edificio de confinamiento y se temió que hubiera peligro de explosión de la mezcla de hidrógeno y aire en el edificio. En consecuencia, se expulsó del edificio gas hidrógeno y gases radiactivos (principalmente criptón y xenón). En una semana se restableció la circulación del agua de refrigeración y el núcleo comenzó a enfriarse. La planta estuvo cerrada durante casi 10 años durante el proceso de limpieza.
+
+Aunque el vertido cero de material radiactivo es deseable, el vertido de criptón y xenón radiactivos, como ocurrió en la central de Three Mile Island, es uno de los más tolerables. Estos gases se dispersan fácilmente en la atmósfera y, por ende, no producen zonas altamente radiactivas. Además, son gases nobles y no se incorporan a la materia vegetal y animal en la cadena alimentaria. Efectivamente, ninguno de los elementos pesados del núcleo del reactor se liberó al medio ambiente, y no fue necesaria la limpieza de la zona fuera del edificio de contención.
+
+Otro gran accidente nuclear en el que se vio implicado un reactor ocurrió en abril de 1986, en la central nuclear de Chernóbil, en Ucrania, que aún formaba parte de la antigua Unión Soviética. Mientras funcionaba a baja potencia durante un experimento no autorizado con algunos de sus dispositivos de seguridad apagados, uno de los reactores de la central se desestabilizó. La reacción en cadena se volvió incontrolable y aumentó hasta un nivel muy superior al que el reactor estaba diseñado. La presión del vapor en el reactor se elevó entre 100 y 500 veces la presión de plena potencia y rompió el reactor. Debido a que el reactor no estaba encerrado en un edificio de contención, se expulsó una gran cantidad de material radiactivo. Adicionalmente, se liberaron más productos de fisión, ya que el moderador de grafito (carbono) del núcleo se encendió y ardió. El incendio fue controlado, pero más de 200 trabajadores de la planta y bomberos experimentaron una enfermedad aguda por radiación y al menos 32 murieron pronto por los efectos de la radiación. Se prevé que se produzcan unas 4.000 muertes más entre los trabajadores de emergencias y los antiguos residentes de Chernóbil por cáncer y leucemia inducidos por la radiación. Desde entonces, el reactor ha sido encapsulado en acero y hormigón: una estructura ahora en ruinas, conocida como el sarcófago. Casi 30 años después, aún persisten importantes problemas de radiación en la zona, y Chernóbil sigue siendo en gran medida un terreno baldío.
+
+En 2011, un terremoto de 9,0 grados de magnitud y el consiguiente tsunami dañaron ostensiblemente la central nuclear de Fukushima Daiichi, en Japón. Los tres reactores que estaban en funcionamiento en ese momento se apagaron automáticamente, y los generadores de emergencia entraron en funcionamiento para alimentar los sistemas electrónicos y de refrigeración. Sin embargo, el tsunami inundó rápidamente los generadores de emergencia y cortó la alimentación de las bombas que hacían circular el agua de refrigeración a través de los reactores. El vapor a alta temperatura de los reactores reaccionó con la aleación de circonio para producir gas hidrógeno. El gas se escapó al edificio de contención y la mezcla de hidrógeno y aire explotó. Se liberó material radiactivo de los recipientes de contención como resultado de la ventilación deliberada para reducir la presión del hidrógeno, la descarga deliberada de agua refrigerante en el mar y eventos accidentales o descontrolados.
+
+Una zona de evacuación alrededor de la planta dañada se extendía a más de 12,4 millas de distancia, y se estima que 200.000 personas fueron evacuadas de la zona. Las 48 centrales nucleares de Japón se cerraron posteriormente, y permanecían cerradas en diciembre de 2014. Desde la catástrofe, la opinión pública ha pasado de estar mayoritariamente a favor a estar mayoritariamente en contra de aumentar el uso de las centrales nucleares, mientras que la reanudación del programa de energía atómica de Japón sigue estancada.
+
+La energía que genera un reactor alimentado con uranio enriquecido es el resultado de la fisión del uranio, así como de la fisión del plutonio que se produce durante el funcionamiento del reactor. Como se ha comentado anteriormente, el plutonio se forma a partir de la combinación de neutrones y el uranio del combustible. En cualquier reactor nuclear, apenas el 0,1% de la masa del combustible se convierte en energía. El otro 99,9% permanece en las varillas de combustible como productos de fisión y combustible no utilizado. Todos los productos de fisión absorben neutrones y, tras un periodo que se prolonga desde varios meses hasta varios años, según el reactor, los productos de fisión deberán eliminarse al cambiar las varillas de combustible. De lo contrario, la concentración de estos productos de fisión aumentaría y absorbería más neutrones hasta que el reactor no pudiera seguir funcionando.
+
+Las varillas de combustible gastadas contienen una variedad de productos, que consisten en núcleos inestables cuyo número atómico oscila entre 25 y 60, algunos elementos transuránicos, incluidos el plutonio y el americio, e isótopos de uranio sin reaccionar. Los núcleos inestables y los isótopos transuránicos confieren al combustible gastado un nivel de radiactividad peligrosamente alto. Los isótopos de larga vida necesitan miles de años para decaer hasta un nivel seguro. El destino final del reactor nuclear como fuente importante de energía en los Estados Unidos depende probablemente de que se pueda desarrollar una técnica política y científicamente satisfactoria para procesar y almacenar los elementos de las varillas de combustible gastado.
+
+
+Fusión nuclear y reactores de fusión
+
+El proceso de conversión de núcleos muy ligeros en núcleos más pesados también va acompañado de la conversión de masa en grandes cantidades de energía. Dicho proceso recibe el nombre de fusión. La principal fuente de energía del sol es una reacción de fusión neta en la que cuatro núcleos de hidrógeno se fusionan y producen un núcleo de helio y dos positrones. Se trata de una reacción neta de una serie de acontecimientos más complicados:
+
+$$ 4{}_{1}^{1}\text{H} ⟶ {}_{2}^{4}\text{He} + 2{}_{+1}^{ 0}{\text{e}}^{ + } $$
+
+Un núcleo de helio tiene una masa que es un 0,7% menor que la de cuatro núcleos de hidrógeno; esta masa perdida se convierte en energía durante la fusión. Esta reacción produce alrededor de 3,6 $\times$ 1011 kJ de energía por mol de ${}_{2}^{4}\text{He}$ producido. Esto es algo mayor que la energía producida por la fisión nuclear de un mol de U-235 (1,8 $\times$ 1010 kJ), y más de 3 millones de veces mayor que la energía producida por la combustión (química) de un mol de octano (5471 kJ).
+
+Se ha determinado que los núcleos de los isótopos pesados del hidrógeno, un deuterón, ${}_{1}^{2}\text{H}$ y un tritón, ${}_{1}^{3}\text{H},$ se fusionan a temperaturas extremadamente altas (fusión termonuclear). Forman un núcleo de helio y un neutrón:
+
+$$ {}_{1}^{2}\text{H} + {}_{1}^{3}\text{H} ⟶ {}_{2}^{4}\text{He} + {}_{0}^{1}\text{n} $$
+
+Este cambio procede con una pérdida de masa de 0,0188 u, que corresponde a la liberación de 1,69 $\times$ 109 kilojulios por mol de ${}_{2}^{4}\text{He}$ formado. La altísima temperatura es necesaria para que los núcleos tengan la suficiente energía cinética para superar las fortísimas fuerzas de repulsión resultantes de las cargas positivas de sus núcleos y puedan colisionar.
+
+Las reacciones de fusión útiles requieren temperaturas muy elevadas para su iniciación: unos 15.000.000 K o más. A estas temperaturas, todas las moléculas se disocian en átomos y estos se ionizan, formando el plasma. Estas condiciones se dan en un número extremadamente grande de lugares en todo el universo: las estrellas se alimentan de la fusión. Los seres humanos ya han descubierto cómo crear temperaturas lo suficientemente altas como para lograr la fusión a gran escala en las armas termonucleares. Un arma termonuclear, como una bomba de hidrógeno, contiene una bomba de fisión nuclear que, al explotar, desprende suficiente energía para producir las altísimas temperaturas necesarias para que se produzca la fusión.
+
+Otra forma mucho más beneficiosa de crear reacciones de fusión es en un reactor de fusión, un reactor nuclear en el que se controlan las reacciones de fusión de núcleos ligeros. Dado que ningún material sólido es estable a tan altas temperaturas, los dispositivos mecánicos no pueden contener el plasma en el que se producen las reacciones de fusión. Dos técnicas para contener el plasma a la densidad y temperatura necesarias para una reacción de fusión son actualmente objeto de intensos esfuerzos de investigación: la contención mediante un campo magnético y el uso de rayos láser enfocados. Varios proyectos de gran envergadura trabajan para alcanzar uno de los mayores objetivos de la ciencia: conseguir que el combustible de hidrógeno se encienda y produzca más energía que la suministrada para alcanzar las altísimas temperaturas y presiones que se requieren para la fusión. Al momento de redactar este artículo, no hay reactores de fusión autosostenibles en funcionamiento en el mundo, aunque se han llevado a cabo reacciones de fusión controladas a pequeña escala durante periodos muy breves.
+
+
+21.5 Usos de los radioisótopos
+
+Los isótopos radiactivos tienen las mismas propiedades químicas que los isótopos estables del mismo elemento, pero emiten radiaciones que pueden detectarse. Si sustituimos uno o más átomos por radioisótopos en un compuesto, podemos rastrearlos por sus emisiones radiactivas. Este tipo de compuesto se denomina trazador radiactivo (o etiqueta radiactiva). Los radioisótopos se utilizan para seguir las rutas de las reacciones bioquímicas o para determinar la distribución de una sustancia en un organismo. Asimismo, los trazadores radiactivos se utilizan en muchas aplicaciones médicas, tanto en el diagnóstico como en el tratamiento. Se emplean para medir el desgaste de los motores, analizar la formación geológica alrededor de los pozos de petróleo y mucho más.
+
+Los radioinmunoensayos (RIA), por ejemplo, se basan en radioisótopos para detectar la presencia o la concentración de determinados antígenos. Esta técnica, desarrollada por Rosalyn Sussman Yalow y Solomon Berson en la década de 1950, es conocida por su extrema sensibilidad, lo que significa que puede detectar y medir cantidades muy pequeñas de una sustancia. Antes de su descubrimiento, la mayoría de las detecciones similares se basaban en cantidades suficientemente grandes para producir resultados visibles. Los RIA revolucionaron y ampliaron campos enteros de estudio, sobre todo la endocrinología, y se utilizan habitualmente en la detección de narcóticos, la detección en bancos de sangre, la detección precoz del cáncer, la medición de hormonas y el diagnóstico de alergias. Gracias a su importante contribución a la medicina, Yalow recibió el Premio Nobel, lo que la convirtió en la segunda mujer galardonada con este premio en el área de medicina.
+
+Los radioisótopos han revolucionado la práctica médica (vea el Apéndice M), donde se utilizan ampliamente. En los Estados Unidos se realizan anualmente más de 10 millones de procedimientos y más de 100 millones de pruebas de medicina nuclear. Cuatro ejemplos típicos de trazadores radiactivos utilizados en medicina son el tecnecio-99 $({}_{43}^{99}\text{Tc})$, el talio-201 $({}_{ 81}^{201}\text{Tl})$, el yodo-131 $({}_{ 53}^{131}\text{I})$ y el sodio-24 $({}_{11}^{24}\text{Na})$. Los tejidos dañados del corazón, del hígado y de los pulmones absorben preferentemente ciertos compuestos de tecnecio-99. Tras su inyección, la localización del compuesto de tecnecio, y por tanto del tejido dañado, se determina con la detección de los rayos γ emitidos por el isótopo Tc-99. El talio-201 se concentra en el tejido cardíaco sano, por lo que los dos isótopos, Tc-99 y Tl-201, se utilizan juntos para estudiar el tejido cardíaco. El yodo-131 se concentra en la glándula tiroides, el hígado y algunas partes del cerebro. Por consiguiente, se utiliza para controlar el bocio y tratar las afecciones tiroideas, como la enfermedad de Grave, así como los tumores hepáticos y cerebrales. Las soluciones salinas que contienen compuestos de sodio-24 se inyectan en el torrente sanguíneo para localizar las obstrucciones del flujo sanguíneo.
+
+Los radioisótopos utilizados en medicina tienen semividas cortas; por ejemplo, el omnipresente Tc-99m tiene una semivida de 6,01 horas. Esto hace que el Tc-99m sea esencialmente imposible de almacenar y prohibitivamente caro de transportar, por lo que se fabrica in situ. Los hospitales y otras instalaciones médicas utilizan el Mo-99 (que se extrae principalmente de los productos de fisión del U-235) para generar Tc-99. El Mo-99 sufre un decaimiento β con una semivida de 66 horas, y el Tc-99 se extrae entonces químicamente. El nucleido padre Mo-99 forma parte de un ion de molibdato, ${\text{MoO}}_{4}{}^{2−};$ cuando decae, forma el ion de pertecnetato, ${\text{TcO}}_{4}{}^{\text{–}}.$ Estos dos iones solubles en agua se separan por cromatografía en columna, en la que el ion de molibdato de mayor carga se adsorbe en la alúmina de la columna, y el ion de pertecnetato de menor carga pasa por la columna en la solución. Unos cuantos microgramos de Mo-99 producen suficiente Tc-99 para realizar hasta 10.000 pruebas.
+
+Los radioisótopos también se utilizan como tratamiento, normalmente en dosis más altas que como trazador. La radioterapia es el uso de radiación potente para dañar el ADN de las células cancerosas, lo que las mata o impide que se dividan. Un paciente con cáncer puede recibir radioterapia de haz externo administrada por una máquina fuera del cuerpo, o radioterapia interna (braquiterapia) a partir de una sustancia radiactiva que se introduce en el organismo. Tenga en cuenta que la quimioterapia es semejante a la radioterapia interna en el sentido de que el tratamiento oncológico se inyecta en el organismo, pero difiere en que la quimioterapia utiliza sustancias químicas en lugar de radiactivas para eliminar las células cancerosas.
+
+El cobalto-60 es un radioisótopo sintético que se produce por la activación neutrónica del Co-59, que luego sufre un decaimiento β para formar Ni-60, junto con la emisión de radiación γ. El proceso general es:
+
+$$ {}_{27}^{59}\text{Co} + {}_{0}^{1}\text{n} ⟶ {}_{27}^{60}\text{Co} ⟶ {}_{28}^{60}\text{Ni} + {}_{-1}^{0}\text{β} + 2{}_{0}^{0}\text{γ} $$
+
+El esquema general de decaimiento de esto se muestra gráficamente en la Figura 21.27.
+
+Los radioisótopos se utilizan de diversas maneras para estudiar los mecanismos de las reacciones químicas en plantas y animales. Entre ellos se encuentran el etiquetado de los fertilizantes en los estudios sobre la absorción de nutrientes por parte de las plantas y el crecimiento de los cultivos, las investigaciones sobre los procesos digestivos y de producción de leche en las vacas, y los estudios sobre el crecimiento y el metabolismo de los animales y de las plantas.
+
+Por ejemplo, el radioisótopo C-14 se utilizó para dilucidar los detalles de la fotosíntesis. La reacción general es:
+
+$$ {\text{6CO}}_{2} (g) + {\text{6H}}_{2}\text{O} (l) ⟶ {\text{C}}_{6}{\text{H}}_{12}{\text{O}}_{6} (s) + {\text{6O}}_{2} (g), $$
+
+pero el proceso es mucho más complejo, ya que pasa por una serie de pasos en los que se producen diversos compuestos orgánicos. En los estudios sobre la vía de esta reacción, las plantas fueron expuestas a CO2 con alta concentración de ${}_{ 6}^{14}\text{C}$. A intervalos regulares se analizaron las plantas para determinar qué compuestos orgánicos contenían carbono-14 y qué cantidad de cada compuesto estaba presente. A partir de la secuencia temporal en la que aparecieron los compuestos y la cantidad de cada uno de estos en determinados intervalos, los científicos aprendieron más sobre la vía de la reacción.
+
+Las aplicaciones comerciales de los materiales radiactivos son igualmente diversas. Entre estas se encuentra la determinación del grosor de las películas y de las láminas metálicas delgadas aprovechando el poder de penetración de variados tipos de radiación. Los defectos en los metales que se emplean con fines estructurales se detectan con potentes rayos gama, provenientes del cobalto 60, parecido a la forma en que se utilizan los rayos X para examinar el cuerpo humano. En una forma de control de plagas, las moscas se controlan esterilizando a los machos con radiación γ para que las hembras que se reproduzcan con ellos no produzcan descendencia. Muchos alimentos se conservan mediante radiaciones que matan los microorganismos causantes de la descomposición de los alimentos.
+
+El americio-241, un emisor α con semivida de 458 años, se utiliza en cantidades ínfimas en los detectores de humo de tipo ionizante. Las emisiones α de Am-241 ionizan el aire entre dos placas de electrodos en la cámara de ionización. Una batería suministra un potencial que provoca el movimiento de los iones, para generar una pequeña corriente eléctrica. Cuando el humo entra en la cámara, se impide el movimiento de los iones, lo que reduce la conductividad del aire. Esto provoca una caída ostensible en la corriente y acciona una alarma.
+
+
+21.6 Efectos biológicos de la radiación
+
+El aumento del uso de radioisótopos ha dado lugar a una mayor preocupación por los efectos de estos materiales en los organismos biológicos (como en el caso del cuerpo humano). Todos los nucleidos radiactivos emiten partículas de alta energía u ondas electromagnéticas. Cuando esta radiación entra en contacto con las células vivas, puede causar calentamiento, romper los enlaces químicos o ionizar las moléculas. Los daños biológicos más graves se producen cuando estas emisiones radiactivas fragmentan o ionizan las moléculas. Por ejemplo, las partículas alfa y beta, emitidas en las reacciones de decaimiento nuclear, poseen energías mucho más altas que las energías de los enlaces químicos ordinarios. Cuando estas partículas golpean y penetran en la materia, producen iones y fragmentos moleculares que son extremadamente reactivos. El daño que esto provoca en las biomoléculas de los organismos vivos puede causar graves disfunciones en los procesos celulares normales, lo que pone a prueba los mecanismos de reparación del organismo y puede causar enfermedades y hasta la muerte.
+
+
+Radiación ionizante y no ionizante
+
+Existe una gran diferencia en la magnitud de los efectos biológicos de la radiación no ionizante (por ejemplo, la luz y las microondas) y de la radiación ionizante, emisiones lo suficientemente energéticas como para desprender electrones de las moléculas (por ejemplo, las partículas α y β, los rayos γ, los rayos X y la radiación ultravioleta de alta energía).
+
+La energía que absorbe la radiación no ionizante acelera el movimiento de los átomos y las moléculas, lo que equivale a calentar la muestra. Aunque los organismos biológicos son sensibles al calor (como podemos saber por haber tocado una estufa caliente o haber pasado un día de playa al sol), es necesaria una gran cantidad de radiación no ionizante antes de que se alcancen niveles peligrosos. Sin embargo, la radiación ionizante puede causar daños mucho más graves al romper los enlaces o eliminar los electrones de las moléculas biológicas, ya que altera su estructura y función. El daño también puede producirse de forma indirecta, al ionizar primero el H2O (la molécula más abundante en los organismos vivos), que forma un ion de H2O+ que reacciona con el agua, para formar un ion hidronio y un radical hidroxilo.
+
+Debido a que el radical hidroxilo tiene un electrón desapareado, es muy reactivo. (Este es el caso en cualquier sustancia con electrones desapareados, conocida como radical libre). Este radical hidroxilo puede reaccionar con todo tipo de moléculas biológicas (ADN, proteínas, enzimas, etc.), y causar daños a las moléculas y alterar los procesos fisiológicos. En la Figura 21.32 se muestran ejemplos de daños directos e indirectos.
+
+
+Efectos biológicos de la exposición a la radiación
+
+La radiación puede dañar todo el cuerpo (daño somático) o los óvulos y el esperma (daño genético). Sus efectos son más pronunciados en las células que se reproducen rápidamente, como el revestimiento del estómago, los folículos pilosos, la médula ósea y los embriones. Por ello, las pacientes sometidas a radioterapia suelen sentir náuseas o malestar estomacal, perder el cabello, tener dolores en los huesos, etc., y por ello hay que tener especial cuidado al someterse a la radioterapia durante el embarazo.
+
+Los diferentes tipos de radiación tienen diferentes capacidades para atravesar el material. Una barrera muy fina, como una o dos hojas de papel, o la capa superior de las células de la piel, suele detener las partículas alfa. Por este motivo, las fuentes de partículas alfa no son peligrosas si se encuentran fuera del cuerpo, pero son bastante peligrosas si se ingieren o inhalan (vea el artículo de Química en la vida cotidiana sobre la exposición al radón). Las partículas beta atraviesan una mano, o una fina capa de material como el papel o la madera, pero las detiene una fina capa de metal. La radiación gama es muy penetrante y puede atravesar una capa gruesa de la mayoría de los materiales. Algunas radiaciones gama de alta energía son capaces de atravesar algunos pies de hormigón. Algunos elementos densos y de alto número atómico (como el plomo) pueden atenuar eficazmente la radiación gama con material más fino y se utilizan para el blindaje. La capacidad de los distintos tipos de emisiones para provocar la ionización varía mucho, y algunas partículas casi no tienen tendencia a producir ionización. Las partículas alfa tienen aproximadamente el doble de poder ionizante que los neutrones rápidos, unas 10 veces más que las partículas β y unas 20 veces más que los rayos γ y los rayos X.
+
+
+La química en la vida cotidiana
+
+
+Exposición al radón
+
+Para muchas personas, una de las mayores fuentes de exposición a la radiación es el gas radón (Rn-222). El radón-222 es un emisor α con una vida media de 3,82 días. Es uno de los productos de la serie de decaimiento radiactivo del U-238, que se encuentra en cantidades mínimas en el suelo y las rocas. El gas radón que se produce escapa lentamente del suelo y se filtra poco a poco en las casas y otras estructuras situadas por encima. Dado que es unas ocho veces más denso que el aire, el gas radón se acumula en los sótanos y los pisos inferiores, y se difunde lentamente por los edificios.
+
+El radón se encuentra en edificios de todo el país, en cantidades que dependen del lugar donde se viva. La concentración media de radón en el interior de las casas en los EE. UU. (1,25 pCi/L) es aproximadamente tres veces superior a los niveles encontrados en el aire exterior, y aproximadamente una de cada seis casas tiene niveles de radón lo suficientemente altos como para que se recomienden esfuerzos de remediación para reducir la concentración de radón. La exposición al radón aumenta el riesgo de contraer cáncer (especialmente de pulmón), y los niveles elevados de radón pueden ser tan perjudiciales para la salud como fumar un cartón de cigarrillos al día. El radón es la primera causa de cáncer de pulmón en los no fumadores y la segunda causa de cáncer de pulmón en general. Se cree que la exposición al radón causa más de 20.000 muertes al año en los EE. UU.
+
+
+Medición de la exposición a la radiación
+
+Para detectar y medir las radiaciones se utilizan diferentes dispositivos, como los contadores Geiger, los contadores de centelleo (centelladores) y los dosímetros de radiación. Probablemente el instrumento de radiación más conocido, el contador Geiger (también llamado contador Geiger-Müller) detecta y mide la radiación. La radiación provoca la ionización del gas en un tubo Geiger-Müller. La tasa de ionización es proporcional a la cantidad de radiación. El contador de centelleo contiene un centellador. Este consiste en un material que emite luz (luminiscencia) con el estímulo de la radiación ionizante y un sensor que convierte la luz en una señal eléctrica. Los dosímetros de radiación también miden la radiación ionizante y se utilizan para determinar la exposición personal a la radiación. Los tipos más utilizados son los dosímetros electrónicos, de lámina, termoluminiscentes y de fibra de cuarzo.
+
+Se utiliza una variedad de unidades para medir diversos aspectos de la radiación. La unidad del sistema internacional (SI) para la tasa de decaimiento radiactivo es el becquerel (Bq), donde 1 Bq = 1 decaimiento por segundo. El curio (Ci) y el milicurio (mCi) son unidades mucho mayores y se utilizan con frecuencia en medicina (1 curio = 1 Ci = 3,7 $\times$ 1010 decaimientos por segundo). La unidad del SI para medir la dosis de radiación es el gray (Gy), donde 1 Gy = 1 J de energía absorbida por kilogramo de tejido. En las aplicaciones médicas, se utiliza más a menudo la dosis de radiación absorbida (rad) (1 rad = 0,01 Gy; 1 rad da lugar a la absorción de 0,01 J/kg de tejido). La unidad del SI que mide el daño tisular causado por la radiación es el sievert (Sv). Esto tiene en cuenta tanto la energía como los efectos biológicos del tipo de radiación implicado en la dosis de radiación. El equivalente en roentgen para el hombre (rem) es la unidad de daño por radiación que más se utiliza en medicina (100 rem = 1 Sv). Observe que las unidades de daño tisular (rem o Sv) incluyen la energía de la dosis de radiación (rad o Gy) junto con un factor biológico denominado RBE (de eficacia biológica relativa [relative biological effectiveness]) que es una medida aproximada del daño relativo que causa la radiación. Estos están relacionados por:
+
+$$ \text{número de rems} = \text{RBE} \times \text{número de rads} $$
+
+donde RBE es aproximadamente 10 para la radiación α, 2(+) para protones y neutrones, y 1 para la radiación β y la radiación γ.
+
+
+Unidades de medida de la radiación
+
+La Tabla 21.4 reseña las unidades que se utilizan para medir la radiación.
+
+Unidades utilizadas para medir la radiación
+
+
+Ejemplo 21.8
+
+
+Cantidad de radiación
+
+El cobalto 60 (t1/2 = 5,26 años [years, y]) se utiliza en la terapia contra el cáncer, ya que los rayos γ que emite pueden concentrarse en las zonas pequeñas donde se encuentra el cáncer. Se dispone de una muestra de 5,00 g de Co-60 para el tratamiento del cáncer.
+
+(a) ¿Cuál es su actividad en Bq?
+
+(b) ¿Cuál es su actividad en Ci?
+
+
+Solución
+
+La actividad viene dada por:
+
+$$ \text{Actividad} = \lambda N = (\frac{\text{ln 2}}{{t}_{1\text{/}2}}) N = (\frac{\text{ln 2}}{\text{5,26 y}}) \times \text{5,00 g} = 0,659 \frac{\text{g}}{\text{y}} \text{de Co-60 que decae} $$
+
+Y para convertir esto en decaimientos por segundo:
+
+$$ \begin{matrix} \\ \\ 0,659 \frac{\text{g}}{\text{y}} \times \frac{\text{1 y}}{\text{365 d}} \times \frac{\text{1 d}}{\text{24 h}} \times \frac{\text{1 h}}{\text{3.600 s}} \times \frac{\text{1 mol}}{\text{59,9 g}} \times \frac{6,02 \times {10}^{23} \text{átomos}}{\text{1 mol}} \times \frac{\text{1 decaimiento}}{\text{1 átomo}} \\ \\ = 2,10 \times {10}^{14} \frac{\text{decaimiento}}{\text{s}} \end{matrix} $$
+
+(a) Dado que 1 Bq = $\frac{\text{1 decaimiento}}{\text{s}},$ la actividad en becquerel (Bq) es:
+
+$$ 2,10 \times {10}^{14} \frac{\text{decaimiento}}{\text{s}} \times (\frac{\text{1 Bq}}{1 \frac{\text{decaimiento}}{\text{s}}}) = 2,10 \times {10}^{14} \text{Bq} $$
+
+(b) Dado que 1 Ci = $\frac{3,7 \times {10}^{11} \text{decaimiento}}{\text{s}},$ la actividad en curios (Ci) es:
+
+$$ 2,10 \times {10}^{14} \frac{\text{decaimiento}}{\text{s}} \times (\frac{\text{1 Ci}}{\frac{3,7 \times {10}^{11} \text{decaimiento}}{\text{s}}}) = 5,7 \times {10}^{2} \text{Ci} $$
+
+
+Efectos en el cuerpo humano de la exposición prolongada a la radiación
+
+Los efectos de la radiación dependen del tipo, la energía y la ubicación de la fuente de radiación, así como de la duración de la exposición. Como se muestra en la Figura 21.37, la persona media está expuesta a la radiación de fondo, incluidos los rayos cósmicos del sol y el radón del uranio en el suelo (vea el artículo de Química en la vida cotidiana sobre la exposición al radón), la radiación de la exposición médica, incluidos la exploración por TAC, las pruebas de radioisótopos, los rayos X, etc., y pequeñas cantidades de radiación de otras actividades humanas, como los vuelos de aviones (que son bombardeados por un mayor número de rayos cósmicos en la atmósfera superior), la radiactividad de los productos de consumo y una variedad de radionúclidos que entran en nuestro cuerpo cuando respiramos (por ejemplo, el carbono-14) o a través de la cadena alimentaria (por ejemplo, el potasio-40, el estroncio-90 y el yodo-131).
+
+Una dosis repentina y de corta duración de una gran cantidad de radiación puede causar una amplia gama de efectos sobre la salud, desde cambios en la química de la sangre hasta la muerte. La exposición a corto plazo a decenas de rems de radiación probablemente causará síntomas o enfermedades muy notables; se estima que una dosis de unos 500 rems tiene una probabilidad del 50% de causar la muerte de la víctima en los 30 días siguientes a la exposición. La exposición a las emisiones radiactivas tiene un efecto acumulativo en el organismo a lo largo de la vida de una persona, lo que constituye otra razón por la que es importante evitar cualquier exposición innecesaria a la radiación. Los efectos sobre la salud de la exposición a corto plazo a la radiación se muestran en la Tabla 21.5.
+
+Efectos de la radiación en la salud2
+
+Es imposible evitar cierta exposición a las radiaciones ionizantes. Estamos expuestos constantemente a la radiación espontánea de diversas fuentes naturales, como la radiación cósmica, las rocas, los procedimientos médicos, los bienes de consumo e incluso nuestros propios átomos. Podemos minimizar nuestra exposición al bloquear o protegernos de la radiación, alejarnos de la fuente y limitar el tiempo de exposición.
