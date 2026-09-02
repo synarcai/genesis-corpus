@@ -82,6 +82,8 @@ def дроби(текст):
 
 import laws  # noqa: E402
 ЗАКОНЫ = laws.свод("sequences")
+ЗАКОНЫ_ЯЗЫКА = laws.по_языкам("sequences")
+import discourse  # noqa: E402
 
 
 def судить(строка):
@@ -91,6 +93,9 @@ def судить(строка):
     с = строка.strip()
     # ВОПРОС СУДИТСЯ СВОИМ ОТВЕТОМ: род определяется ответом, а связь
     # половин — общим домом `tools/asking.py`.
+    р = discourse.судить_рассуждение_мира(строка, судить, ЗАКОНЫ_ЯЗЫКА)
+    if р is not None:
+        return р
     если = asking.судить_парой(с, судить)
     if если is not None:
         return если

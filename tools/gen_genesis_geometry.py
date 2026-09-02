@@ -91,15 +91,22 @@ def прямоугольники(шаг):
         ru_род = f"прямоугольника {a} на {b}"
         # ПРОМЕЖУТОЧНЫЕ ВЕЛИЧИНЫ В ОТВЕТЕ (коллегия 03.09, П-1): без «7 × 8 = 56» и
         # «2 × (7 + 8) = 30» композиция глубины два невыводима из показов.
-        утв_en = f"{en} has area {a} × {b} = {a * b} and perimeter 2 × ({a} + {b}) = {2 * (a + b)}."
+        утв_en = f"{en} has area {a} × {b} = {a * b} and perimeter {a} + {b} = {a + b}, 2 × {a + b} = {2 * (a + b)}."
         утв_ru = (f"{ru} имеет площадь {a} × {b} = {a * b} "
-                  f"и периметр 2 × ({a} + {b}) = {2 * (a + b)}.")
+                  f"и периметр {a} + {b} = {a + b}, 2 × {a + b} = {2 * (a + b)}.")
         вон.append(утв_en)
         вон.append(утв_ru)
         вон.append(спросить("area", en, утв_en))
         вон.append(спросить("perimeter", en, утв_en))
         вон.append(спросить("площадь", ru_род, утв_ru))
         вон.append(спросить("периметр", ru_род, утв_ru))
+        # РАССУЖДЕНИЕ МИРА (дом речи): звено — свидетель, утверждение — вывод, закон — из дома законов.
+        if i % 3 == 0:
+            вон.append(discourse.рассуждение_мира("en", f"what is the area of {en}", f"{a} × {b} = {a * b}", утв_en, laws.закон("geometry", 0, "en")))
+            вон.append(discourse.рассуждение_мира("ru", f"чему равна площадь {ru_род}", f"{a} × {b} = {a * b}", утв_ru, laws.закон("geometry", 0, "ru")))
+        elif i % 3 == 1:
+            вон.append(discourse.почему_мира("en", f"why is the perimeter of {en} equal to {2 * (a + b)}", f"{a} + {b} = {a + b}", утв_en, laws.закон("geometry", 1, "en")))
+            вон.append(discourse.почему_мира("ru", f"почему периметр {ru_род} равен {2 * (a + b)}", f"{a} + {b} = {a + b}", утв_ru, laws.закон("geometry", 1, "ru")))
     return вон
 
 
@@ -144,13 +151,16 @@ def пифагор(шаг):
         en = f"a right triangle with legs {a} and {b}"
         ru = f"прямоугольный треугольник с катетами {a} и {b}"
         ru_род = f"прямоугольного треугольника с катетами {a} и {b}"
-        утв_en = f"{en} has hypotenuse {c}: {a}^2 + {b}^2 = {a * a + b * b} and {c}^2 = {c * c}."
-        утв_ru = f"{ru} имеет гипотенузу {c}: {a}^2 + {b}^2 = {a * a + b * b} и {c}^2 = {c * c}."
+        цепь = f"{a} × {a} = {a * a}, {b} × {b} = {b * b}, {a * a} + {b * b} = {a * a + b * b}, {c} × {c} = {c * c}"
+        утв_en = f"{en} has hypotenuse {c}: {цепь}."
+        утв_ru = f"{ru} имеет гипотенузу {c}: {цепь}."
         вон.append(утв_en)
         вон.append(утв_ru)
         вон.append(f"{a}^2 + {b}^2 = {c}^2.")
         вон.append(спросить("hypotenuse", en, утв_en))
         вон.append(спросить("гипотенуза", ru_род, утв_ru))
+        вон.append(discourse.почему_мира("en", f"why is the hypotenuse of {en} equal to {c}", f"{a} × {a} = {a * a}", утв_en, laws.закон("geometry", 2, "en")))
+        вон.append(discourse.почему_мира("ru", f"почему гипотенуза {ru_род} равна {c}", f"{a} × {a} = {a * a}", утв_ru, laws.закон("geometry", 2, "ru")))
     return вон
 
 
@@ -194,14 +204,13 @@ def тела(шаг):
         a, b, c = 2 + (i % 5) + шаг, 3 + (i % 4), 2 + (i % 6)
         en_к, ru_к = f"a box {a} by {b} by {c}", f"коробка {a} на {b} на {c}"
         ru_к_род = f"коробки {a} на {b} на {c}"
-        утв_к_en = (f"{en_к} has volume {a} × {b} × {c} = {a * b * c} and surface "
-                    f"2 × ({a} × {b} + {b} × {c} + {a} × {c}) = {2 * (a * b + b * c + a * c)}.")
-        утв_к_ru = (f"{ru_к} имеет объём {a} × {b} × {c} = {a * b * c} и поверхность "
-                    f"2 × ({a} × {b} + {b} × {c} + {a} × {c}) = {2 * (a * b + b * c + a * c)}.")
+        пов = f"{a} × {b} = {a * b}, {b} × {c} = {b * c}, {a} × {c} = {a * c}, {a * b} + {b * c} + {a * c} = {a * b + b * c + a * c}, 2 × {a * b + b * c + a * c} = {2 * (a * b + b * c + a * c)}"
+        утв_к_en = (f"{en_к} has volume {a} × {b} = {a * b}, {a * b} × {c} = {a * b * c} and surface {пов}.")
+        утв_к_ru = (f"{ru_к} имеет объём {a} × {b} = {a * b}, {a * b} × {c} = {a * b * c} и поверхность {пов}.")
         en_куб, ru_куб = f"a cube with edge {a}", f"куб с ребром {a}"
         ru_куб_род = f"куба с ребром {a}"
-        утв_куб_en = f"{en_куб} has volume {a} × {a} × {a} = {a ** 3}."
-        утв_куб_ru = f"{ru_куб} имеет объём {a} × {a} × {a} = {a ** 3}."
+        утв_куб_en = f"{en_куб} has volume {a} × {a} = {a * a}, {a * a} × {a} = {a ** 3}."
+        утв_куб_ru = f"{ru_куб} имеет объём {a} × {a} = {a * a}, {a * a} × {a} = {a ** 3}."
         вон.append(утв_к_en)
         вон.append(утв_к_ru)
         вон.append(утв_куб_en)
@@ -219,6 +228,7 @@ def тела(шаг):
           отказ_гипотенузы, тела)
 
 
+import discourse  # noqa: E402
 import laws  # noqa: E402
 
 

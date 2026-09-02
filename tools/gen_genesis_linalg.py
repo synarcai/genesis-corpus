@@ -143,6 +143,13 @@ def произведения(шаг):
         вон.append(утв_ru)
         вон.append(спросить("dot", пред_en, утв_en))
         вон.append(спросить("скалярное", пред_ru, утв_ru))
+        # РАССУЖДЕНИЕ МИРА (дом речи): звено суммы — свидетель, закон скалярного — из дома законов.
+        if i % 2 == 0:
+            вон.append(discourse.рассуждение_мира("en", f"what is the dot product of {пред_en}", f"{a} × {c} = {a * c}", утв_en, laws.закон("linalg", 0, "en")))
+            вон.append(discourse.рассуждение_мира("ru", f"чему равно скалярное произведение {пред_ru}", f"{a} × {c} = {a * c}", утв_ru, laws.закон("linalg", 0, "ru")))
+        else:
+            вон.append(discourse.почему_мира("en", f"why is the dot product of {пред_en} equal to {a * c + b * d}", f"{a} × {c} = {a * c}", утв_en, laws.закон("linalg", 0, "en")))
+            вон.append(discourse.почему_мира("ru", f"почему скалярное произведение {пред_ru} равно {a * c + b * d}", f"{a} × {c} = {a * c}", утв_ru, laws.закон("linalg", 0, "ru")))
     return вон
 
 
@@ -178,6 +185,7 @@ def матрицы(шаг):
 ГРУППЫ = (сложение, длины, отказ_длины, произведения, матрицы)
 
 
+import discourse  # noqa: E402
 import laws  # noqa: E402
 
 
