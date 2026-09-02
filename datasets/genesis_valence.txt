@@ -1,13 +1,13 @@
-жизнеспособность была 5 из 7, стала 4 из 7 — рост или убыль? жизнеспособность была 5 из 7, стала 4 из 7: убыль, стало хуже.
-жизнеспособность была 4 из 7, стала 5 из 7 — рост или убыль? жизнеспособность была 4 из 7, стала 5 из 7: рост, стало лучше.
+жизнеспособность была 5 из 7, стала 4 из 7 — рост или убыль? убыль: жизнеспособность была 5 из 7, стала 4 из 7, стало хуже.
+жизнеспособность была 4 из 7, стала 5 из 7 — рост или убыль? рост: жизнеспособность была 4 из 7, стала 5 из 7, стало лучше.
 viability was 5 of 7 and is 4 of 7: a fall, worse.
 viability was 3 of 7 and is 4 of 7: a rise, better.
 жизнеспособность 5 из 7 при пороге 2 из 7, убыль 3 из 7: запас 3 из 7, сила страха 3 к 3 — страшно.
 жизнеспособность была 6 из 7, стала 7 из 7: рост, стало лучше.
 viability 4 of 7 with the threshold 2 of 7 and a fall of 3 of 7: the reserve is 2 of 7, the strength of fear is 3 to 2 — afraid.
-viability was 3 of 7 and is 4 of 7 — a rise or a fall? viability was 3 of 7 and is 4 of 7: a rise, better.
+viability was 3 of 7 and is 4 of 7 — a rise or a fall? a rise: viability was 3 of 7 and is 4 of 7, better.
 жизнеспособность 4 из 7 при пороге 2 из 7, убыль 1 из 7: запас 2 из 7, сила страха 1 к 2 — страшно.
-жизнеспособность была 6 из 7, стала 7 из 7 — рост или убыль? жизнеспособность была 6 из 7, стала 7 из 7: рост, стало лучше.
+жизнеспособность была 6 из 7, стала 7 из 7 — рост или убыль? рост: жизнеспособность была 6 из 7, стала 7 из 7, стало лучше.
 the error 3 became 8, the reserve 9 became 5: the quantities part. the projection is declared onto the error. therefore worse.
 viability 7 of 7 with the threshold 2 of 7 and no change: the reserve is 5 of 7 and it is still — calm.
 ошибка 1 стала 12, запас 13 стал 9: величины разошлись. проекция объявлена на ошибку. значит стало хуже.
@@ -20,10 +20,10 @@ the error 10 became 2 and the reserve 7 became 12, but viability 3 of 7 fell to 
 viability was 3 of 7 and is 4 of 7: a rise, better.
 жизнеспособность была 5 из 7, стала 4 из 7: убыль, стало хуже.
 жизнеспособность была 6 из 7, стала 7 из 7: рост, стало лучше.
-viability was 5 of 7 and is 4 of 7 — a rise or a fall? viability was 5 of 7 and is 4 of 7: a fall, worse.
-viability was 3 of 7 and is 4 of 7 — a rise or a fall? viability was 3 of 7 and is 4 of 7: a rise, better.
+viability was 5 of 7 and is 4 of 7 — a rise or a fall? a fall: viability was 5 of 7 and is 4 of 7, worse.
+viability was 3 of 7 and is 4 of 7 — a rise or a fall? a rise: viability was 3 of 7 and is 4 of 7, better.
 жизнеспособность 6 из 7 при пороге 2 из 7, убыль 1 из 7: запас 4 из 7, сила страха 1 к 4 — страшно.
-жизнеспособность была 6 из 7, стала 7 из 7 — рост или убыль? жизнеспособность была 6 из 7, стала 7 из 7: рост, стало лучше.
+жизнеспособность была 6 из 7, стала 7 из 7 — рост или убыль? рост: жизнеспособность была 6 из 7, стала 7 из 7, стало лучше.
 viability 5 of 7 with the threshold 2 of 7 and a fall of 1 of 7: the reserve is 3 of 7, the strength of fear is 1 to 3 — afraid.
 viability was 4 of 7 and is 5 of 7: a rise, better.
 ошибка 1 стала 6, запас 7 стал 3: величины разошлись. проекция объявлена на ошибку. значит стало хуже.
@@ -37,15 +37,15 @@ goal 8, was 4, now 7: the error 4 became 1. the projection is declared: a fallin
 ошибка 8 стала 3 и запас 5 стал 10, но жизнеспособность 3 из 7 упала до 1 из 7: порог 2 пройден — шаг необратим, страшно.
 цель 12, было 7, стало 10: ошибка 5 стала 2. проекция объявлена: убыль ошибки есть рост жизнеспособности. значит стало лучше.
 the error 11 became 3 and the reserve 8 became 13, but viability 3 of 7 fell to 1 of 7: the threshold 2 is crossed — the step is irreversible, afraid.
-viability was 3 of 7 and is 4 of 7 — a rise or a fall? viability was 3 of 7 and is 4 of 7: a rise, better.
-жизнеспособность была 5 из 7, стала 4 из 7 — рост или убыль? жизнеспособность была 5 из 7, стала 4 из 7: убыль, стало хуже.
-жизнеспособность была 6 из 7, стала 7 из 7 — рост или убыль? жизнеспособность была 6 из 7, стала 7 из 7: рост, стало лучше.
+viability was 3 of 7 and is 4 of 7 — a rise or a fall? a rise: viability was 3 of 7 and is 4 of 7, better.
+жизнеспособность была 5 из 7, стала 4 из 7 — рост или убыль? убыль: жизнеспособность была 5 из 7, стала 4 из 7, стало хуже.
+жизнеспособность была 6 из 7, стала 7 из 7 — рост или убыль? рост: жизнеспособность была 6 из 7, стала 7 из 7, стало лучше.
 viability 3 of 7 with the threshold 2 of 7 and a fall of 1 of 7: the reserve is 1 of 7, the strength of fear is 1 to 1 — afraid.
 viability was 4 of 7 and is 5 of 7: a rise, better.
 жизнеспособность 3 из 7 при пороге 2 из 7, убыль 2 из 7: запас 1 из 7, сила страха 2 к 1 — страшно.
 жизнеспособность была 3 из 7, стала 4 из 7: рост, стало лучше.
 viability 6 of 7 with the threshold 2 of 7 and a fall of 2 of 7: the reserve is 4 of 7, the strength of fear is 2 to 4 — afraid.
-viability was 4 of 7 and is 5 of 7 — a rise or a fall? viability was 4 of 7 and is 5 of 7: a rise, better.
+viability was 4 of 7 and is 5 of 7 — a rise or a fall? a rise: viability was 4 of 7 and is 5 of 7, better.
 ошибка 2 стала 7, запас 8 стал 4: величины разошлись. проекция объявлена на ошибку. значит стало хуже.
 жизнеспособность 6 из 7 при пороге 2 из 7, изменение 0: запас 4 из 7 и покой — спокойно.
 the error 2 became 10, the reserve 11 became 7: the quantities part. the projection is declared onto the error. therefore worse.
@@ -61,9 +61,9 @@ viability was 4 of 7 and is 5 of 7: a rise, better.
 жизнеспособность была 5 из 7, стала 4 из 7: убыль, стало хуже.
 жизнеспособность была 3 из 7, стала 4 из 7: рост, стало лучше.
 viability 4 of 7 with the threshold 2 of 7 and a fall of 2 of 7: the reserve is 2 of 7, the strength of fear is 2 to 2 — afraid.
-viability was 4 of 7 and is 5 of 7 — a rise or a fall? viability was 4 of 7 and is 5 of 7: a rise, better.
+viability was 4 of 7 and is 5 of 7 — a rise or a fall? a rise: viability was 4 of 7 and is 5 of 7, better.
 жизнеспособность 4 из 7 при пороге 2 из 7, убыль 3 из 7: запас 2 из 7, сила страха 3 к 2 — страшно.
-жизнеспособность была 3 из 7, стала 4 из 7 — рост или убыль? жизнеспособность была 3 из 7, стала 4 из 7: рост, стало лучше.
+жизнеспособность была 3 из 7, стала 4 из 7 — рост или убыль? рост: жизнеспособность была 3 из 7, стала 4 из 7, стало лучше.
 viability 3 of 7 with the threshold 2 of 7 and a fall of 3 of 7: the reserve is 1 of 7, the strength of fear is 3 to 1 — afraid.
 viability was 6 of 7 and is 7 of 7: a rise, better.
 ошибка 3 стала 8, запас 9 стал 5: величины разошлись. проекция объявлена на ошибку. значит стало хуже.
@@ -76,16 +76,16 @@ the error 6 became 1 and the reserve 3 became 8, but viability 3 of 7 fell to 1 
 goal 10, was 4, now 7: the error 6 became 3. the projection is declared: a falling error is a rising viability. therefore better.
 ошибка 10 стала 2 и запас 7 стал 12, но жизнеспособность 3 из 7 упала до 1 из 7: порог 2 пройден — шаг необратим, страшно.
 жизнеспособность была 3 из 7, стала 4 из 7: рост, стало лучше.
-viability was 5 of 7 and is 4 of 7 — a rise or a fall? viability was 5 of 7 and is 4 of 7: a fall, worse.
-viability was 4 of 7 and is 5 of 7 — a rise or a fall? viability was 4 of 7 and is 5 of 7: a rise, better.
-жизнеспособность была 5 из 7, стала 4 из 7 — рост или убыль? жизнеспособность была 5 из 7, стала 4 из 7: убыль, стало хуже.
-жизнеспособность была 3 из 7, стала 4 из 7 — рост или убыль? жизнеспособность была 3 из 7, стала 4 из 7: рост, стало лучше.
+viability was 5 of 7 and is 4 of 7 — a rise or a fall? a fall: viability was 5 of 7 and is 4 of 7, worse.
+viability was 4 of 7 and is 5 of 7 — a rise or a fall? a rise: viability was 4 of 7 and is 5 of 7, better.
+жизнеспособность была 5 из 7, стала 4 из 7 — рост или убыль? убыль: жизнеспособность была 5 из 7, стала 4 из 7, стало хуже.
+жизнеспособность была 3 из 7, стала 4 из 7 — рост или убыль? рост: жизнеспособность была 3 из 7, стала 4 из 7, стало лучше.
 viability 5 of 7 with the threshold 2 of 7 and a fall of 3 of 7: the reserve is 3 of 7, the strength of fear is 3 to 3 — afraid.
 viability was 6 of 7 and is 7 of 7: a rise, better.
 жизнеспособность 5 из 7 при пороге 2 из 7, убыль 1 из 7: запас 3 из 7, сила страха 1 к 3 — страшно.
 жизнеспособность была 4 из 7, стала 5 из 7: рост, стало лучше.
 viability 4 of 7 with the threshold 2 of 7 and a fall of 1 of 7: the reserve is 2 of 7, the strength of fear is 1 to 2 — afraid.
-viability was 6 of 7 and is 7 of 7 — a rise or a fall? viability was 6 of 7 and is 7 of 7: a rise, better.
+viability was 6 of 7 and is 7 of 7 — a rise or a fall? a rise: viability was 6 of 7 and is 7 of 7, better.
 ошибка 1 стала 9, запас 10 стал 6: величины разошлись. проекция объявлена на ошибку. значит стало хуже.
 жизнеспособность 5 из 7 при пороге 2 из 7, изменение 0: запас 3 из 7 и покой — спокойно.
 the error 1 became 12, the reserve 13 became 9: the quantities part. the projection is declared onto the error. therefore worse.
@@ -95,15 +95,15 @@ viability 5 of 7 with the threshold 2 of 7 and no change: the reserve is 3 of 7 
 the error 7 became 2 and the reserve 4 became 9, but viability 3 of 7 fell to 1 of 7: the threshold 2 is crossed — the step is irreversible, afraid.
 goal 11, was 7, now 10: the error 4 became 1. the projection is declared: a falling error is a rising viability. therefore better.
 ошибка 11 стала 3 и запас 8 стал 13, но жизнеспособность 3 из 7 упала до 1 из 7: порог 2 пройден — шаг необратим, страшно.
-жизнеспособность была 3 из 7, стала 4 из 7 — рост или убыль? жизнеспособность была 3 из 7, стала 4 из 7: рост, стало лучше.
+жизнеспособность была 3 из 7, стала 4 из 7 — рост или убыль? рост: жизнеспособность была 3 из 7, стала 4 из 7, стало лучше.
 viability was 5 of 7 and is 4 of 7: a fall, worse.
 viability was 6 of 7 and is 7 of 7: a rise, better.
 жизнеспособность 3 из 7 при пороге 2 из 7, убыль 1 из 7: запас 1 из 7, сила страха 1 к 1 — страшно.
 жизнеспособность была 4 из 7, стала 5 из 7: рост, стало лучше.
 viability 6 of 7 with the threshold 2 of 7 and a fall of 1 of 7: the reserve is 4 of 7, the strength of fear is 1 to 4 — afraid.
-viability was 6 of 7 and is 7 of 7 — a rise or a fall? viability was 6 of 7 and is 7 of 7: a rise, better.
+viability was 6 of 7 and is 7 of 7 — a rise or a fall? a rise: viability was 6 of 7 and is 7 of 7, better.
 жизнеспособность 6 из 7 при пороге 2 из 7, убыль 2 из 7: запас 4 из 7, сила страха 2 к 4 — страшно.
-жизнеспособность была 4 из 7, стала 5 из 7 — рост или убыль? жизнеспособность была 4 из 7, стала 5 из 7: рост, стало лучше.
+жизнеспособность была 4 из 7, стала 5 из 7 — рост или убыль? рост: жизнеспособность была 4 из 7, стала 5 из 7, стало лучше.
 the error 1 became 6, the reserve 7 became 3: the quantities part. the projection is declared onto the error. therefore worse.
 viability 5 of 7 with the threshold 2 of 7 and no change: the reserve is 3 of 7 and it is still — calm.
 ошибка 2 стала 10, запас 11 стал 7: величины разошлись. проекция объявлена на ошибку. значит стало хуже.
@@ -116,10 +116,10 @@ the error 8 became 3 and the reserve 5 became 10, but viability 3 of 7 fell to 1
 goal 12, was 7, now 10: the error 5 became 2. the projection is declared: a falling error is a rising viability. therefore better.
 жизнеспособность была 5 из 7, стала 4 из 7: убыль, стало хуже.
 жизнеспособность была 4 из 7, стала 5 из 7: рост, стало лучше.
-viability was 5 of 7 and is 4 of 7 — a rise or a fall? viability was 5 of 7 and is 4 of 7: a fall, worse.
-viability was 6 of 7 and is 7 of 7 — a rise or a fall? viability was 6 of 7 and is 7 of 7: a rise, better.
+viability was 5 of 7 and is 4 of 7 — a rise or a fall? a fall: viability was 5 of 7 and is 4 of 7, worse.
+viability was 6 of 7 and is 7 of 7 — a rise or a fall? a rise: viability was 6 of 7 and is 7 of 7, better.
 жизнеспособность 4 из 7 при пороге 2 из 7, убыль 2 из 7: запас 2 из 7, сила страха 2 к 2 — страшно.
-жизнеспособность была 4 из 7, стала 5 из 7 — рост или убыль? жизнеспособность была 4 из 7, стала 5 из 7: рост, стало лучше.
+жизнеспособность была 4 из 7, стала 5 из 7 — рост или убыль? рост: жизнеспособность была 4 из 7, стала 5 из 7, стало лучше.
 viability 3 of 7 with the threshold 2 of 7 and a fall of 2 of 7: the reserve is 1 of 7, the strength of fear is 2 to 1 — afraid.
 viability was 3 of 7 and is 4 of 7: a rise, better.
 жизнеспособность 3 из 7 при пороге 2 из 7, убыль 3 из 7: запас 1 из 7, сила страха 3 к 1 — страшно.
@@ -271,10 +271,10 @@ viability 5 of 7, the step fell by 1: now 4 of 7, the threshold 2 is not crossed
 жизнеспособность 6 из 7, шаг убыл на 1: стало 5 из 7, порог 2 не пройден — шаг обратим, не страшно.
 
 viability was 5 of 14 and is 6 of 14: a rise, better.
-жизнеспособность была 9 из 14, стала 8 из 14 — рост или убыль? жизнеспособность была 9 из 14, стала 8 из 14: убыль, стало хуже.
+жизнеспособность была 9 из 14, стала 8 из 14 — рост или убыль? убыль: жизнеспособность была 9 из 14, стала 8 из 14, стало хуже.
 жизнеспособность была 10 из 14, стала 11 из 14: рост, стало лучше.
 viability was 6 of 14 and is 5 of 14: a fall, worse.
-viability was 5 of 14 and is 6 of 14 — a rise or a fall? viability was 5 of 14 and is 6 of 14: a rise, better.
+viability was 5 of 14 and is 6 of 14 — a rise or a fall? a rise: viability was 5 of 14 and is 6 of 14, better.
 жизнеспособность 9 из 14 при пороге 4 из 14, убыль 2 из 14: запас 5 из 14, сила страха 2 к 5 — страшно.
 жизнеспособность 12 из 14 при пороге 4 из 14, изменение 0: запас 8 из 14 и покой — спокойно.
 viability 5 of 14 with the threshold 4 of 14 and a fall of 1 of 14: the reserve is 1 of 14, the strength of fear is 1 to 1 — afraid.
@@ -284,8 +284,8 @@ viability 11 of 14 with the threshold 4 of 14 and no change: the reserve is 7 of
 the error 13 became 1 and the reserve 8 became 17, but viability 5 of 14 fell to 3 of 14: the threshold 4 is crossed — the step is irreversible, afraid.
 goal 30, was 26, now 29: the error 4 became 1. the projection is declared: a falling error is a rising viability. therefore better.
 жизнеспособность была 7 из 14, стала 6 из 14: убыль, стало хуже.
-жизнеспособность была 6 из 14, стала 7 из 14 — рост или убыль? жизнеспособность была 6 из 14, стала 7 из 14: рост, стало лучше.
-viability was 11 of 14 and is 10 of 14 — a rise or a fall? viability was 11 of 14 and is 10 of 14: a fall, worse.
+жизнеспособность была 6 из 14, стала 7 из 14 — рост или убыль? рост: жизнеспособность была 6 из 14, стала 7 из 14, стало лучше.
+viability was 11 of 14 and is 10 of 14 — a rise or a fall? a fall: viability was 11 of 14 and is 10 of 14, worse.
 viability was 12 of 14 and is 13 of 14: a rise, better.
 жизнеспособность 6 из 14 при пороге 4 из 14, убыль 2 из 14: запас 2 из 14, сила страха 2 к 2 — страшно.
 жизнеспособность 9 из 14 при пороге 4 из 14, изменение 0: запас 5 из 14 и покой — спокойно.
@@ -298,9 +298,9 @@ goal 27, was 23, now 26: the error 4 became 1. the projection is declared: a fal
 ошибка 16 стала 1 и запас 11 стал 20, но жизнеспособность 5 из 14 упала до 3 из 14: порог 4 пройден — шаг необратим, страшно.
 жизнеспособность была 5 из 14, стала 6 из 14: рост, стало лучше.
 viability was 9 of 14 and is 8 of 14: a fall, worse.
-viability was 8 of 14 and is 9 of 14 — a rise or a fall? viability was 8 of 14 and is 9 of 14: a rise, better.
+viability was 8 of 14 and is 9 of 14 — a rise or a fall? a rise: viability was 8 of 14 and is 9 of 14, better.
 жизнеспособность была 6 из 14, стала 5 из 14: убыль, стало хуже.
-жизнеспособность была 5 из 14, стала 6 из 14 — рост или убыль? жизнеспособность была 5 из 14, стала 6 из 14: рост, стало лучше.
+жизнеспособность была 5 из 14, стала 6 из 14 — рост или убыль? рост: жизнеспособность была 5 из 14, стала 6 из 14, стало лучше.
 viability 8 of 14 with the threshold 4 of 14 and a fall of 1 of 14: the reserve is 4 of 14, the strength of fear is 1 to 4 — afraid.
 viability 11 of 14 with the threshold 4 of 14 and no change: the reserve is 7 of 14 and it is still — calm.
 жизнеспособность 5 из 14 при пороге 4 из 14, убыль 1 из 14: запас 1 из 14, сила страха 1 к 1 — страшно.
@@ -311,10 +311,10 @@ goal 24, was 20, now 23: the error 4 became 1. the projection is declared: a fal
 цель 30, было 26, стало 29: ошибка 4 стала 1. проекция объявлена: убыль ошибки есть рост жизнеспособности. значит стало лучше.
 the error 18 became 3 and the reserve 13 became 22, but viability 5 of 14 fell to 3 of 14: the threshold 4 is crossed — the step is irreversible, afraid.
 viability was 6 of 14 and is 7 of 14: a rise, better.
-жизнеспособность была 11 из 14, стала 10 из 14 — рост или убыль? жизнеспособность была 11 из 14, стала 10 из 14: убыль, стало хуже.
+жизнеспособность была 11 из 14, стала 10 из 14 — рост или убыль? убыль: жизнеспособность была 11 из 14, стала 10 из 14, стало хуже.
 жизнеспособность была 12 из 14, стала 13 из 14: рост, стало лучше.
 viability 5 of 14 with the threshold 4 of 14 and a fall of 1 of 14: the reserve is 1 of 14, the strength of fear is 1 to 1 — afraid.
-viability was 7 of 14 and is 8 of 14 — a rise or a fall? viability was 7 of 14 and is 8 of 14: a rise, better.
+viability was 7 of 14 and is 8 of 14 — a rise or a fall? a rise: viability was 7 of 14 and is 8 of 14, better.
 жизнеспособность 11 из 14 при пороге 4 из 14, убыль 1 из 14: запас 7 из 14, сила страха 1 к 7 — страшно.
 жизнеспособность 14 из 14 при пороге 4 из 14, изменение 0: запас 10 из 14 и покой — спокойно.
 the error 4 became 18, the reserve 16 became 11: the quantities part. the projection is declared onto the error. therefore worse.
@@ -324,8 +324,8 @@ goal 21, was 17, now 20: the error 4 became 1. the projection is declared: a fal
 the error 15 became 3 and the reserve 10 became 19, but viability 5 of 14 fell to 3 of 14: the threshold 4 is crossed — the step is irreversible, afraid.
 goal 32, was 26, now 29: the error 6 became 3. the projection is declared: a falling error is a rising viability. therefore better.
 жизнеспособность была 9 из 14, стала 8 из 14: убыль, стало хуже.
-жизнеспособность была 8 из 14, стала 9 из 14 — рост или убыль? жизнеспособность была 8 из 14, стала 9 из 14: рост, стало лучше.
-viability was 13 of 14 and is 12 of 14 — a rise or a fall? viability was 13 of 14 and is 12 of 14: a fall, worse.
+жизнеспособность была 8 из 14, стала 9 из 14 — рост или убыль? рост: жизнеспособность была 8 из 14, стала 9 из 14, стало лучше.
+viability was 13 of 14 and is 12 of 14 — a rise or a fall? a fall: viability was 13 of 14 and is 12 of 14, worse.
 viability was 5 of 14 and is 6 of 14: a rise, better.
 жизнеспособность 8 из 14 при пороге 4 из 14, убыль 1 из 14: запас 4 из 14, сила страха 1 к 4 — страшно.
 жизнеспособность 11 из 14 при пороге 4 из 14, изменение 0: запас 7 из 14 и покой — спокойно.
@@ -338,9 +338,9 @@ goal 29, was 23, now 26: the error 6 became 3. the projection is declared: a fal
 ошибка 18 стала 3 и запас 13 стал 22, но жизнеспособность 5 из 14 упала до 3 из 14: порог 4 пройден — шаг необратим, страшно.
 жизнеспособность была 6 из 14, стала 7 из 14: рост, стало лучше.
 viability was 11 of 14 and is 10 of 14: a fall, worse.
-viability was 10 of 14 and is 11 of 14 — a rise or a fall? viability was 10 of 14 and is 11 of 14: a rise, better.
+viability was 10 of 14 and is 11 of 14 — a rise or a fall? a rise: viability was 10 of 14 and is 11 of 14, better.
 жизнеспособность 5 из 14 при пороге 4 из 14, убыль 1 из 14: запас 1 из 14, сила страха 1 к 1 — страшно.
-жизнеспособность была 7 из 14, стала 8 из 14 — рост или убыль? жизнеспособность была 7 из 14, стала 8 из 14: рост, стало лучше.
+жизнеспособность была 7 из 14, стала 8 из 14 — рост или убыль? рост: жизнеспособность была 7 из 14, стала 8 из 14, стало лучше.
 viability 10 of 14 with the threshold 4 of 14 and a fall of 3 of 14: the reserve is 6 of 14, the strength of fear is 3 to 6 — afraid.
 viability 13 of 14 with the threshold 4 of 14 and no change: the reserve is 9 of 14 and it is still — calm.
 ошибка 4 стала 18, запас 16 стал 11: величины разошлись. проекция объявлена на ошибку. значит стало хуже.
@@ -349,9 +349,9 @@ the error 3 became 23, the reserve 21 became 16: the quantities part. the projec
 goal 26, was 20, now 23: the error 6 became 3. the projection is declared: a falling error is a rising viability. therefore better.
 ошибка 15 стала 3 и запас 10 стал 19, но жизнеспособность 5 из 14 упала до 3 из 14: порог 4 пройден — шаг необратим, страшно.
 цель 32, было 26, стало 29: ошибка 6 стала 3. проекция объявлена: убыль ошибки есть рост жизнеспособности. значит стало лучше.
-viability was 7 of 14 and is 6 of 14 — a rise or a fall? viability was 7 of 14 and is 6 of 14: a fall, worse.
+viability was 7 of 14 and is 6 of 14 — a rise or a fall? a fall: viability was 7 of 14 and is 6 of 14, worse.
 viability was 8 of 14 and is 9 of 14: a rise, better.
-жизнеспособность была 13 из 14, стала 12 из 14 — рост или убыль? жизнеспособность была 13 из 14, стала 12 из 14: убыль, стало хуже.
+жизнеспособность была 13 из 14, стала 12 из 14 — рост или убыль? убыль: жизнеспособность была 13 из 14, стала 12 из 14, стало хуже.
 жизнеспособность была 5 из 14, стала 6 из 14: рост, стало лучше.
 viability 7 of 14 with the threshold 4 of 14 and a fall of 3 of 14: the reserve is 3 of 14, the strength of fear is 3 to 3 — afraid.
 viability 10 of 14 with the threshold 4 of 14 and no change: the reserve is 6 of 14 and it is still — calm.
@@ -362,10 +362,10 @@ goal 23, was 17, now 20: the error 6 became 3. the projection is declared: a fal
 ошибка 3 стала 26, запас 24 стал 19: величины разошлись. проекция объявлена на ошибку. значит стало хуже.
 цель 29, было 23, стало 26: ошибка 6 стала 3. проекция объявлена: убыль ошибки есть рост жизнеспособности. значит стало лучше.
 the error 17 became 2 and the reserve 12 became 21, but viability 5 of 14 fell to 3 of 14: the threshold 4 is crossed — the step is irreversible, afraid.
-viability was 5 of 14 and is 6 of 14 — a rise or a fall? viability was 5 of 14 and is 6 of 14: a rise, better.
+viability was 5 of 14 and is 6 of 14 — a rise or a fall? a rise: viability was 5 of 14 and is 6 of 14, better.
 жизнеспособность была 11 из 14, стала 10 из 14: убыль, стало хуже.
-жизнеспособность была 10 из 14, стала 11 из 14 — рост или убыль? жизнеспособность была 10 из 14, стала 11 из 14: рост, стало лучше.
-viability was 6 of 14 and is 5 of 14 — a rise or a fall? viability was 6 of 14 and is 5 of 14: a fall, worse.
+жизнеспособность была 10 из 14, стала 11 из 14 — рост или убыль? рост: жизнеспособность была 10 из 14, стала 11 из 14, стало лучше.
+viability was 6 of 14 and is 5 of 14 — a rise or a fall? a fall: viability was 6 of 14 and is 5 of 14, worse.
 viability was 7 of 14 and is 8 of 14: a rise, better.
 жизнеспособность 10 из 14 при пороге 4 из 14, убыль 3 из 14: запас 6 из 14, сила страха 3 к 6 — страшно.
 жизнеспособность 13 из 14 при пороге 4 из 14, изменение 0: запас 9 из 14 и покой — спокойно.
@@ -375,10 +375,10 @@ viability 12 of 14 with the threshold 4 of 14 and no change: the reserve is 8 of
 цель 26, было 20, стало 23: ошибка 6 стала 3. проекция объявлена: убыль ошибки есть рост жизнеспособности. значит стало лучше.
 the error 14 became 2 and the reserve 9 became 18, but viability 5 of 14 fell to 3 of 14: the threshold 4 is crossed — the step is irreversible, afraid.
 goal 31, was 26, now 29: the error 5 became 2. the projection is declared: a falling error is a rising viability. therefore better.
-жизнеспособность была 7 из 14, стала 6 из 14 — рост или убыль? жизнеспособность была 7 из 14, стала 6 из 14: убыль, стало хуже.
+жизнеспособность была 7 из 14, стала 6 из 14 — рост или убыль? убыль: жизнеспособность была 7 из 14, стала 6 из 14, стало хуже.
 жизнеспособность была 8 из 14, стала 9 из 14: рост, стало лучше.
 viability was 13 of 14 and is 12 of 14: a fall, worse.
-viability was 12 of 14 and is 13 of 14 — a rise or a fall? viability was 12 of 14 and is 13 of 14: a rise, better.
+viability was 12 of 14 and is 13 of 14 — a rise or a fall? a rise: viability was 12 of 14 and is 13 of 14, better.
 жизнеспособность 7 из 14 при пороге 4 из 14, убыль 3 из 14: запас 3 из 14, сила страха 3 к 3 — страшно.
 жизнеспособность 10 из 14 при пороге 4 из 14, изменение 0: запас 6 из 14 и покой — спокойно.
 viability 12 of 14 with the threshold 4 of 14 and a fall of 2 of 14: the reserve is 8 of 14, the strength of fear is 2 to 8 — afraid.
@@ -388,10 +388,10 @@ viability 9 of 14 with the threshold 4 of 14 and no change: the reserve is 5 of 
 the error 5 became 25, the reserve 23 became 18: the quantities part. the projection is declared onto the error. therefore worse.
 goal 28, was 23, now 26: the error 5 became 2. the projection is declared: a falling error is a rising viability. therefore better.
 ошибка 17 стала 2 и запас 12 стал 21, но жизнеспособность 5 из 14 упала до 3 из 14: порог 4 пройден — шаг необратим, страшно.
-жизнеспособность была 5 из 14, стала 6 из 14 — рост или убыль? жизнеспособность была 5 из 14, стала 6 из 14: рост, стало лучше.
-viability was 9 of 14 and is 8 of 14 — a rise or a fall? viability was 9 of 14 and is 8 of 14: a fall, worse.
+жизнеспособность была 5 из 14, стала 6 из 14 — рост или убыль? рост: жизнеспособность была 5 из 14, стала 6 из 14, стало лучше.
+viability was 9 of 14 and is 8 of 14 — a rise or a fall? a fall: viability was 9 of 14 and is 8 of 14, worse.
 viability was 10 of 14 and is 11 of 14: a rise, better.
-жизнеспособность была 6 из 14, стала 5 из 14 — рост или убыль? жизнеспособность была 6 из 14, стала 5 из 14: убыль, стало хуже.
+жизнеспособность была 6 из 14, стала 5 из 14 — рост или убыль? убыль: жизнеспособность была 6 из 14, стала 5 из 14, стало хуже.
 жизнеспособность была 7 из 14, стала 8 из 14: рост, стало лучше.
 viability 9 of 14 with the threshold 4 of 14 and a fall of 2 of 14: the reserve is 5 of 14, the strength of fear is 2 to 5 — afraid.
 viability 12 of 14 with the threshold 4 of 14 and no change: the reserve is 8 of 14 and it is still — calm.
@@ -402,9 +402,9 @@ goal 25, was 20, now 23: the error 5 became 2. the projection is declared: a fal
 ошибка 14 стала 2 и запас 9 стал 18, но жизнеспособность 5 из 14 упала до 3 из 14: порог 4 пройден — шаг необратим, страшно.
 цель 31, было 26, стало 29: ошибка 5 стала 2. проекция объявлена: убыль ошибки есть рост жизнеспособности. значит стало лучше.
 viability was 7 of 14 and is 6 of 14: a fall, worse.
-viability was 6 of 14 and is 7 of 14 — a rise or a fall? viability was 6 of 14 and is 7 of 14: a rise, better.
+viability was 6 of 14 and is 7 of 14 — a rise or a fall? a rise: viability was 6 of 14 and is 7 of 14, better.
 жизнеспособность была 13 из 14, стала 12 из 14: убыль, стало хуже.
-жизнеспособность была 12 из 14, стала 13 из 14 — рост или убыль? жизнеспособность была 12 из 14, стала 13 из 14: рост, стало лучше.
+жизнеспособность была 12 из 14, стала 13 из 14 — рост или убыль? рост: жизнеспособность была 12 из 14, стала 13 из 14, стало лучше.
 viability 6 of 14 with the threshold 4 of 14 and a fall of 2 of 14: the reserve is 2 of 14, the strength of fear is 2 to 2 — afraid.
 viability 9 of 14 with the threshold 4 of 14 and no change: the reserve is 5 of 14 and it is still — calm.
 жизнеспособность 12 из 14 при пороге 4 из 14, убыль 2 из 14: запас 8 из 14, сила страха 2 к 8 — страшно.
@@ -543,7 +543,7 @@ the error 21 became 4, the reserve 14 became 19: the quantities part. the projec
 viability 11 of 14, the step fell by 2: now 9 of 14, the threshold 4 is not crossed — the step is reversible, not afraid.
 
 жизнеспособность была 11 из 21, стала 10 из 21: убыль, стало хуже.
-viability was 10 of 21 and is 11 of 21 — a rise or a fall? viability was 10 of 21 and is 11 of 21: a rise, better.
+viability was 10 of 21 and is 11 of 21 — a rise or a fall? a rise: viability was 10 of 21 and is 11 of 21, better.
 viability was 17 of 21 and is 16 of 21: a fall, worse.
 жизнеспособность была 18 из 21, стала 19 из 21: рост, стало лучше.
 жизнеспособность 12 из 21 при пороге 6 из 21, убыль 3 из 21: запас 6 из 21, сила страха 3 к 6 — страшно.
@@ -554,7 +554,7 @@ the error 6 became 29, the reserve 24 became 18: the quantities part. the projec
 goal 41, was 36, now 39: the error 5 became 2. the projection is declared: a falling error is a rising viability. therefore better.
 the error 24 became 2 and the reserve 17 became 30, but viability 7 of 21 fell to 5 of 21: the threshold 6 is crossed — the step is irreversible, afraid.
 жизнеспособность была 8 из 21, стала 9 из 21: рост, стало лучше.
-жизнеспособность была 13 из 21, стала 12 из 21 — рост или убыль? жизнеспособность была 13 из 21, стала 12 из 21: убыль, стало хуже.
+жизнеспособность была 13 из 21, стала 12 из 21 — рост или убыль? убыль: жизнеспособность была 13 из 21, стала 12 из 21, стало хуже.
 viability was 14 of 21 and is 15 of 21: a rise, better.
 viability 8 of 21 with the threshold 6 of 21 and a fall of 2 of 21: the reserve is 2 of 21, the strength of fear is 2 to 2 — afraid.
 жизнеспособность 14 из 21 при пороге 6 из 21, изменение 0: запас 8 из 21 и покой — спокойно.
@@ -564,10 +564,10 @@ the error 6 became 32, the reserve 27 became 21: the quantities part. the projec
 цель 38, было 33, стало 36: ошибка 5 стала 2. проекция объявлена: убыль ошибки есть рост жизнеспособности. значит стало лучше.
 ошибка 21 стала 2 и запас 14 стал 27, но жизнеспособность 7 из 21 упала до 5 из 21: порог 6 пройден — шаг необратим, страшно.
 goal 44, was 39, now 42: the error 5 became 2. the projection is declared: a falling error is a rising viability. therefore better.
-viability was 9 of 21 and is 8 of 21 — a rise or a fall? viability was 9 of 21 and is 8 of 21: a fall, worse.
-жизнеспособность была 10 из 21, стала 11 из 21 — рост или убыль? жизнеспособность была 10 из 21, стала 11 из 21: рост, стало лучше.
+viability was 9 of 21 and is 8 of 21 — a rise or a fall? a fall: viability was 9 of 21 and is 8 of 21, worse.
+жизнеспособность была 10 из 21, стала 11 из 21 — рост или убыль? рост: жизнеспособность была 10 из 21, стала 11 из 21, стало лучше.
 жизнеспособность была 17 из 21, стала 16 из 21: убыль, стало хуже.
-viability was 16 of 21 and is 17 of 21 — a rise or a fall? viability was 16 of 21 and is 17 of 21: a rise, better.
+viability was 16 of 21 and is 17 of 21 — a rise or a fall? a rise: viability was 16 of 21 and is 17 of 21, better.
 viability 11 of 21 with the threshold 6 of 21 and a fall of 2 of 21: the reserve is 5 of 21, the strength of fear is 2 to 5 — afraid.
 жизнеспособность 17 из 21 при пороге 6 из 21, изменение 0: запас 11 из 21 и покой — спокойно.
 ошибка 6 стала 29, запас 24 стал 18: величины разошлись. проекция объявлена на ошибку. значит стало хуже.
@@ -575,7 +575,7 @@ goal 34, was 30, now 33: the error 4 became 1. the projection is declared: a fal
 the error 6 became 35, the reserve 30 became 24: the quantities part. the projection is declared onto the error. therefore worse.
 цель 41, было 36, стало 39: ошибка 5 стала 2. проекция объявлена: убыль ошибки есть рост жизнеспособности. значит стало лучше.
 ошибка 24 стала 2 и запас 17 стал 30, но жизнеспособность 7 из 21 упала до 5 из 21: порог 6 пройден — шаг необратим, страшно.
-viability was 7 of 21 and is 8 of 21 — a rise or a fall? viability was 7 of 21 and is 8 of 21: a rise, better.
+viability was 7 of 21 and is 8 of 21 — a rise or a fall? a rise: viability was 7 of 21 and is 8 of 21, better.
 viability was 13 of 21 and is 12 of 21: a fall, worse.
 жизнеспособность была 14 из 21, стала 15 из 21: рост, стало лучше.
 жизнеспособность 8 из 21 при пороге 6 из 21, убыль 2 из 21: запас 2 из 21, сила страха 2 к 2 — страшно.
@@ -586,10 +586,10 @@ viability 14 of 21 with the threshold 6 of 21 and a fall of 2 of 21: the reserve
 goal 37, was 33, now 36: the error 4 became 1. the projection is declared: a falling error is a rising viability. therefore better.
 the error 20 became 1 and the reserve 13 became 26, but viability 7 of 21 fell to 5 of 21: the threshold 6 is crossed — the step is irreversible, afraid.
 цель 44, было 39, стало 42: ошибка 5 стала 2. проекция объявлена: убыль ошибки есть рост жизнеспособности. значит стало лучше.
-жизнеспособность была 9 из 21, стала 8 из 21 — рост или убыль? жизнеспособность была 9 из 21, стала 8 из 21: убыль, стало хуже.
+жизнеспособность была 9 из 21, стала 8 из 21 — рост или убыль? убыль: жизнеспособность была 9 из 21, стала 8 из 21, стало хуже.
 viability was 10 of 21 and is 11 of 21: a rise, better.
-viability was 15 of 21 and is 14 of 21 — a rise or a fall? viability was 15 of 21 and is 14 of 21: a fall, worse.
-жизнеспособность была 16 из 21, стала 17 из 21 — рост или убыль? жизнеспособность была 16 из 21, стала 17 из 21: рост, стало лучше.
+viability was 15 of 21 and is 14 of 21 — a rise or a fall? a fall: viability was 15 of 21 and is 14 of 21, worse.
+жизнеспособность была 16 из 21, стала 17 из 21 — рост или убыль? рост: жизнеспособность была 16 из 21, стала 17 из 21, стало лучше.
 жизнеспособность 11 из 21 при пороге 6 из 21, убыль 2 из 21: запас 5 из 21, сила страха 2 к 5 — страшно.
 viability 16 of 21 with the threshold 6 of 21 and no change: the reserve is 10 of 21 and it is still — calm.
 the error 5 became 28, the reserve 23 became 17: the quantities part. the projection is declared onto the error. therefore worse.
@@ -597,9 +597,9 @@ the error 5 became 28, the reserve 23 became 17: the quantities part. the projec
 ошибка 6 стала 35, запас 30 стал 24: величины разошлись. проекция объявлена на ошибку. значит стало хуже.
 goal 40, was 36, now 39: the error 4 became 1. the projection is declared: a falling error is a rising viability. therefore better.
 the error 23 became 1 and the reserve 16 became 29, but viability 7 of 21 fell to 5 of 21: the threshold 6 is crossed — the step is irreversible, afraid.
-жизнеспособность была 7 из 21, стала 8 из 21 — рост или убыль? жизнеспособность была 7 из 21, стала 8 из 21: рост, стало лучше.
+жизнеспособность была 7 из 21, стала 8 из 21 — рост или убыль? рост: жизнеспособность была 7 из 21, стала 8 из 21, стало лучше.
 жизнеспособность была 13 из 21, стала 12 из 21: убыль, стало хуже.
-viability was 12 of 21 and is 13 of 21 — a rise or a fall? viability was 12 of 21 and is 13 of 21: a rise, better.
+viability was 12 of 21 and is 13 of 21 — a rise or a fall? a rise: viability was 12 of 21 and is 13 of 21, better.
 viability 7 of 21 with the threshold 6 of 21 and a fall of 1 of 21: the reserve is 1 of 21, the strength of fear is 1 to 1 — afraid.
 жизнеспособность 13 из 21 при пороге 6 из 21, изменение 0: запас 7 из 21 и покой — спокойно.
 жизнеспособность 14 из 21 при пороге 6 из 21, убыль 2 из 21: запас 8 из 21, сила страха 2 к 8 — страшно.
@@ -610,7 +610,7 @@ the error 5 became 31, the reserve 26 became 20: the quantities part. the projec
 goal 43, was 39, now 42: the error 4 became 1. the projection is declared: a falling error is a rising viability. therefore better.
 viability was 9 of 21 and is 8 of 21: a fall, worse.
 жизнеспособность была 10 из 21, стала 11 из 21: рост, стало лучше.
-жизнеспособность была 15 из 21, стала 14 из 21 — рост или убыль? жизнеспособность была 15 из 21, стала 14 из 21: убыль, стало хуже.
+жизнеспособность была 15 из 21, стала 14 из 21 — рост или убыль? убыль: жизнеспособность была 15 из 21, стала 14 из 21, стало хуже.
 viability was 16 of 21 and is 17 of 21: a rise, better.
 viability 10 of 21 with the threshold 6 of 21 and a fall of 1 of 21: the reserve is 4 of 21, the strength of fear is 1 to 4 — afraid.
 жизнеспособность 16 из 21 при пороге 6 из 21, изменение 0: запас 10 из 21 и покой — спокойно.
@@ -620,10 +620,10 @@ the error 5 became 34, the reserve 29 became 23: the quantities part. the projec
 цель 40, было 36, стало 39: ошибка 4 стала 1. проекция объявлена: убыль ошибки есть рост жизнеспособности. значит стало лучше.
 ошибка 23 стала 1 и запас 16 стал 29, но жизнеспособность 7 из 21 упала до 5 из 21: порог 6 пройден — шаг необратим, страшно.
 viability was 7 of 21 and is 8 of 21: a rise, better.
-viability was 11 of 21 and is 10 of 21 — a rise or a fall? viability was 11 of 21 and is 10 of 21: a fall, worse.
-жизнеспособность была 12 из 21, стала 13 из 21 — рост или убыль? жизнеспособность была 12 из 21, стала 13 из 21: рост, стало лучше.
+viability was 11 of 21 and is 10 of 21 — a rise or a fall? a fall: viability was 11 of 21 and is 10 of 21, worse.
+жизнеспособность была 12 из 21, стала 13 из 21 — рост или убыль? рост: жизнеспособность была 12 из 21, стала 13 из 21, стало лучше.
 жизнеспособность 7 из 21 при пороге 6 из 21, убыль 1 из 21: запас 1 из 21, сила страха 1 к 1 — страшно.
-viability was 18 of 21 and is 19 of 21 — a rise or a fall? viability was 18 of 21 and is 19 of 21: a rise, better.
+viability was 18 of 21 and is 19 of 21 — a rise or a fall? a rise: viability was 18 of 21 and is 19 of 21, better.
 viability 13 of 21 with the threshold 6 of 21 and a fall of 1 of 21: the reserve is 7 of 21, the strength of fear is 1 to 7 — afraid.
 жизнеспособность 19 из 21 при пороге 6 из 21, изменение 0: запас 13 из 21 и покой — спокойно.
 ошибка 5 стала 31, запас 26 стал 20: величины разошлись. проекция объявлена на ошибку. значит стало хуже.
@@ -631,7 +631,7 @@ goal 36, was 30, now 33: the error 6 became 3. the projection is declared: a fal
 the error 5 became 37, the reserve 32 became 26: the quantities part. the projection is declared onto the error. therefore worse.
 цель 43, было 39, стало 42: ошибка 4 стала 1. проекция объявлена: убыль ошибки есть рост жизнеспособности. значит стало лучше.
 жизнеспособность была 9 из 21, стала 8 из 21: убыль, стало хуже.
-viability was 8 of 21 and is 9 of 21 — a rise or a fall? viability was 8 of 21 and is 9 of 21: a rise, better.
+viability was 8 of 21 and is 9 of 21 — a rise or a fall? a rise: viability was 8 of 21 and is 9 of 21, better.
 viability was 15 of 21 and is 14 of 21: a fall, worse.
 жизнеспособность была 16 из 21, стала 17 из 21: рост, стало лучше.
 жизнеспособность 10 из 21 при пороге 6 из 21, убыль 1 из 21: запас 4 из 21, сила страха 1 к 4 — страшно.
@@ -642,10 +642,10 @@ viability 16 of 21 with the threshold 6 of 21 and a fall of 1 of 21: the reserve
 goal 39, was 33, now 36: the error 6 became 3. the projection is declared: a falling error is a rising viability. therefore better.
 the error 22 became 3 and the reserve 15 became 28, but viability 7 of 21 fell to 5 of 21: the threshold 6 is crossed — the step is irreversible, afraid.
 жизнеспособность была 7 из 21, стала 8 из 21: рост, стало лучше.
-жизнеспособность была 11 из 21, стала 10 из 21 — рост или убыль? жизнеспособность была 11 из 21, стала 10 из 21: убыль, стало хуже.
+жизнеспособность была 11 из 21, стала 10 из 21 — рост или убыль? убыль: жизнеспособность была 11 из 21, стала 10 из 21, стало хуже.
 viability was 12 of 21 and is 13 of 21: a rise, better.
-viability was 17 of 21 and is 16 of 21 — a rise or a fall? viability was 17 of 21 and is 16 of 21: a fall, worse.
-жизнеспособность была 18 из 21, стала 19 из 21 — рост или убыль? жизнеспособность была 18 из 21, стала 19 из 21: рост, стало лучше.
+viability was 17 of 21 and is 16 of 21 — a rise or a fall? a fall: viability was 17 of 21 and is 16 of 21, worse.
+жизнеспособность была 18 из 21, стала 19 из 21 — рост или убыль? рост: жизнеспособность была 18 из 21, стала 19 из 21, стало лучше.
 жизнеспособность 13 из 21 при пороге 6 из 21, убыль 1 из 21: запас 7 из 21, сила страха 1 к 7 — страшно.
 viability 18 of 21 with the threshold 6 of 21 and no change: the reserve is 12 of 21 and it is still — calm.
 the error 7 became 30, the reserve 25 became 19: the quantities part. the projection is declared onto the error. therefore worse.
@@ -653,9 +653,9 @@ the error 7 became 30, the reserve 25 became 19: the quantities part. the projec
 ошибка 5 стала 37, запас 32 стал 26: величины разошлись. проекция объявлена на ошибку. значит стало хуже.
 goal 42, was 36, now 39: the error 6 became 3. the projection is declared: a falling error is a rising viability. therefore better.
 the error 25 became 3 and the reserve 18 became 31, but viability 7 of 21 fell to 5 of 21: the threshold 6 is crossed — the step is irreversible, afraid.
-жизнеспособность была 8 из 21, стала 9 из 21 — рост или убыль? жизнеспособность была 8 из 21, стала 9 из 21: рост, стало лучше.
+жизнеспособность была 8 из 21, стала 9 из 21 — рост или убыль? рост: жизнеспособность была 8 из 21, стала 9 из 21, стало лучше.
 жизнеспособность была 15 из 21, стала 14 из 21: убыль, стало хуже.
-viability was 14 of 21 and is 15 of 21 — a rise or a fall? viability was 14 of 21 and is 15 of 21: a rise, better.
+viability was 14 of 21 and is 15 of 21 — a rise or a fall? a rise: viability was 14 of 21 and is 15 of 21, better.
 viability 9 of 21 with the threshold 6 of 21 and a fall of 3 of 21: the reserve is 3 of 21, the strength of fear is 3 to 3 — afraid.
 жизнеспособность 15 из 21 при пороге 6 из 21, изменение 0: запас 9 из 21 и покой — спокойно.
 жизнеспособность 16 из 21 при пороге 6 из 21, убыль 1 из 21: запас 10 из 21, сила страха 1 к 10 — страшно.
@@ -666,7 +666,7 @@ the error 7 became 33, the reserve 28 became 22: the quantities part. the projec
 goal 45, was 39, now 42: the error 6 became 3. the projection is declared: a falling error is a rising viability. therefore better.
 viability was 11 of 21 and is 10 of 21: a fall, worse.
 жизнеспособность была 12 из 21, стала 13 из 21: рост, стало лучше.
-жизнеспособность была 17 из 21, стала 16 из 21 — рост или убыль? жизнеспособность была 17 из 21, стала 16 из 21: убыль, стало хуже.
+жизнеспособность была 17 из 21, стала 16 из 21 — рост или убыль? убыль: жизнеспособность была 17 из 21, стала 16 из 21, стало хуже.
 viability was 18 of 21 and is 19 of 21: a rise, better.
 viability 12 of 21 with the threshold 6 of 21 and a fall of 3 of 21: the reserve is 6 of 21, the strength of fear is 3 to 6 — afraid.
 жизнеспособность 18 из 21 при пороге 6 из 21, изменение 0: запас 12 из 21 и покой — спокойно.
@@ -676,8 +676,8 @@ the error 7 became 36, the reserve 31 became 25: the quantities part. the projec
 цель 42, было 36, стало 39: ошибка 6 стала 3. проекция объявлена: убыль ошибки есть рост жизнеспособности. значит стало лучше.
 ошибка 25 стала 3 и запас 18 стал 31, но жизнеспособность 7 из 21 упала до 5 из 21: порог 6 пройден — шаг необратим, страшно.
 viability was 8 of 21 and is 9 of 21: a rise, better.
-viability was 13 of 21 and is 12 of 21 — a rise or a fall? viability was 13 of 21 and is 12 of 21: a fall, worse.
-жизнеспособность была 14 из 21, стала 15 из 21 — рост или убыль? жизнеспособность была 14 из 21, стала 15 из 21: рост, стало лучше.
+viability was 13 of 21 and is 12 of 21 — a rise or a fall? a fall: viability was 13 of 21 and is 12 of 21, worse.
+жизнеспособность была 14 из 21, стала 15 из 21 — рост или убыль? рост: жизнеспособность была 14 из 21, стала 15 из 21, стало лучше.
 жизнеспособность 9 из 21 при пороге 6 из 21, убыль 3 из 21: запас 3 из 21, сила страха 3 к 3 — страшно.
 viability 14 of 21 with the threshold 6 of 21 and no change: the reserve is 8 of 21 and it is still — calm.
 viability 15 of 21 with the threshold 6 of 21 and a fall of 3 of 21: the reserve is 9 of 21, the strength of fear is 3 to 9 — afraid.
@@ -814,42 +814,42 @@ the coherence of articulation and feeling is called apperception.
 viability 9 of 21, the step fell by 2: now 7 of 21, the threshold 6 is not crossed — the step is reversible, not afraid.
 жизнеспособность 16 из 21, шаг убыл на 3: стало 13 из 21, порог 6 не пройден — шаг обратим, не страшно.
 
-жизнеспособность была 9 из 28, стала 10 из 28 — рост или убыль? жизнеспособность была 9 из 28, стала 10 из 28: рост, стало лучше.
-жизнеспособность была 15 из 28, стала 14 из 28 — рост или убыль? жизнеспособность была 15 из 28, стала 14 из 28: убыль, стало хуже.
-viability was 16 of 28 and is 17 of 28 — a rise or a fall? viability was 16 of 28 and is 17 of 28: a rise, better.
+жизнеспособность была 9 из 28, стала 10 из 28 — рост или убыль? рост: жизнеспособность была 9 из 28, стала 10 из 28, стало лучше.
+жизнеспособность была 15 из 28, стала 14 из 28 — рост или убыль? убыль: жизнеспособность была 15 из 28, стала 14 из 28, стало хуже.
+viability was 16 of 28 and is 17 of 28 — a rise or a fall? a rise: viability was 16 of 28 and is 17 of 28, better.
 viability 12 of 28 with the threshold 8 of 28 and a fall of 1 of 28: the reserve is 4 of 28, the strength of fear is 1 to 4 — afraid.
 жизнеспособность 21 из 28 при пороге 8 из 28, изменение 0: запас 13 из 28 и покой — спокойно.
 ошибка 9 стала 41, запас 33 стал 26: величины разошлись. проекция объявлена на ошибку. значит стало хуже.
 goal 49, was 43, now 46: the error 6 became 3. the projection is declared: a falling error is a rising viability. therefore better.
 the error 27 became 1 and the reserve 18 became 35, but viability 9 of 28 fell to 7 of 28: the threshold 8 is crossed — the step is irreversible, afraid.
 цель 58, было 52, стало 55: ошибка 6 стала 3. проекция объявлена: убыль ошибки есть рост жизнеспособности. значит стало лучше.
-жизнеспособность была 13 из 28, стала 12 из 28 — рост или убыль? жизнеспособность была 13 из 28, стала 12 из 28: убыль, стало хуже.
-viability was 14 of 28 and is 15 of 28 — a rise or a fall? viability was 14 of 28 and is 15 of 28: a rise, better.
+жизнеспособность была 13 из 28, стала 12 из 28 — рост или убыль? убыль: жизнеспособность была 13 из 28, стала 12 из 28, стало хуже.
+viability was 14 of 28 and is 15 of 28 — a rise or a fall? a rise: viability was 14 of 28 and is 15 of 28, better.
 viability 10 of 28 with the threshold 8 of 28 and a fall of 2 of 28: the reserve is 2 of 28, the strength of fear is 2 to 2 — afraid.
 жизнеспособность 19 из 28 при пороге 8 из 28, изменение 0: запас 11 из 28 и покой — спокойно.
 ошибка 7 стала 39, запас 31 стал 24: величины разошлись. проекция объявлена на ошибку. значит стало хуже.
 goal 47, was 43, now 46: the error 4 became 1. the projection is declared: a falling error is a rising viability. therefore better.
 the error 9 became 47, the reserve 39 became 32: the quantities part. the projection is declared onto the error. therefore worse.
 цель 56, было 52, стало 55: ошибка 4 стала 1. проекция объявлена: убыль ошибки есть рост жизнеспособности. значит стало лучше.
-жизнеспособность была 11 из 28, стала 10 из 28 — рост или убыль? жизнеспособность была 11 из 28, стала 10 из 28: убыль, стало хуже.
-viability was 12 of 28 and is 13 of 28 — a rise or a fall? viability was 12 of 28 and is 13 of 28: a rise, better.
-viability was 19 of 28 and is 18 of 28 — a rise or a fall? viability was 19 of 28 and is 18 of 28: a fall, worse.
+жизнеспособность была 11 из 28, стала 10 из 28 — рост или убыль? убыль: жизнеспособность была 11 из 28, стала 10 из 28, стало хуже.
+viability was 12 of 28 and is 13 of 28 — a rise or a fall? a rise: viability was 12 of 28 and is 13 of 28, better.
+viability was 19 of 28 and is 18 of 28 — a rise or a fall? a fall: viability was 19 of 28 and is 18 of 28, worse.
 жизнеспособность 17 из 28 при пороге 8 из 28, изменение 0: запас 9 из 28 и покой — спокойно.
 жизнеспособность 17 из 28 при пороге 8 из 28, убыль 3 из 28: запас 9 из 28, сила страха 3 к 9 — страшно.
 viability 25 of 28 with the threshold 8 of 28 and no change: the reserve is 17 of 28 and it is still — calm.
 the error 7 became 45, the reserve 37 became 30: the quantities part. the projection is declared onto the error. therefore worse.
 цель 54, было 49, стало 52: ошибка 5 стала 2. проекция объявлена: убыль ошибки есть рост жизнеспособности. значит стало лучше.
 ошибка 32 стала 3 и запас 23 стал 40, но жизнеспособность 9 из 28 упала до 7 из 28: порог 8 пройден — шаг необратим, страшно.
-viability was 10 of 28 and is 11 of 28 — a rise or a fall? viability was 10 of 28 and is 11 of 28: a rise, better.
-viability was 17 of 28 and is 16 of 28 — a rise or a fall? viability was 17 of 28 and is 16 of 28: a fall, worse.
+viability was 10 of 28 and is 11 of 28 — a rise or a fall? a rise: viability was 10 of 28 and is 11 of 28, better.
+viability was 17 of 28 and is 16 of 28 — a rise or a fall? a fall: viability was 17 of 28 and is 16 of 28, worse.
 жизнеспособность была 20 из 28, стала 21 из 28: рост, стало лучше.
 жизнеспособность 15 из 28 при пороге 8 из 28, убыль 1 из 28: запас 7 из 28, сила страха 1 к 7 — страшно.
 viability 23 of 28 with the threshold 8 of 28 and no change: the reserve is 15 of 28 and it is still — calm.
 the error 8 became 43, the reserve 35 became 28: the quantities part. the projection is declared onto the error. therefore worse.
 цель 52, было 46, стало 49: ошибка 6 стала 3. проекция объявлена: убыль ошибки есть рост жизнеспособности. значит стало лучше.
 ошибка 30 стала 1 и запас 21 стал 38, но жизнеспособность 9 из 28 упала до 7 из 28: порог 8 пройден — шаг необратим, страшно.
-viability was 9 of 28 and is 10 of 28 — a rise or a fall? viability was 9 of 28 and is 10 of 28: a rise, better.
-viability was 15 of 28 and is 14 of 28 — a rise or a fall? viability was 15 of 28 and is 14 of 28: a fall, worse.
+viability was 9 of 28 and is 10 of 28 — a rise or a fall? a rise: viability was 9 of 28 and is 10 of 28, better.
+viability was 15 of 28 and is 14 of 28 — a rise or a fall? a fall: viability was 15 of 28 and is 14 of 28, worse.
 жизнеспособность была 18 из 28, стала 19 из 28: рост, стало лучше.
 жизнеспособность 13 из 28 при пороге 8 из 28, убыль 2 из 28: запас 5 из 28, сила страха 2 к 5 — страшно.
 viability 21 of 28 with the threshold 8 of 28 and no change: the reserve is 13 of 28 and it is still — calm.
@@ -857,7 +857,7 @@ the error 9 became 41, the reserve 33 became 26: the quantities part. the projec
 цель 50, было 46, стало 49: ошибка 4 стала 1. проекция объявлена: убыль ошибки есть рост жизнеспособности. значит стало лучше.
 ошибка 28 стала 2 и запас 19 стал 36, но жизнеспособность 9 из 28 упала до 7 из 28: порог 8 пройден — шаг необратим, страшно.
 goal 58, was 52, now 55: the error 6 became 3. the projection is declared: a falling error is a rising viability. therefore better.
-viability was 13 of 28 and is 12 of 28 — a rise or a fall? viability was 13 of 28 and is 12 of 28: a fall, worse.
+viability was 13 of 28 and is 12 of 28 — a rise or a fall? a fall: viability was 13 of 28 and is 12 of 28, worse.
 жизнеспособность была 16 из 28, стала 17 из 28: рост, стало лучше.
 жизнеспособность 11 из 28 при пороге 8 из 28, убыль 3 из 28: запас 3 из 28, сила страха 3 к 3 — страшно.
 viability 19 of 28 with the threshold 8 of 28 and no change: the reserve is 11 of 28 and it is still — calm.
@@ -865,7 +865,7 @@ the error 7 became 39, the reserve 31 became 24: the quantities part. the projec
 цель 48, было 43, стало 46: ошибка 5 стала 2. проекция объявлена: убыль ошибки есть рост жизнеспособности. значит стало лучше.
 ошибка 7 стала 48, запас 40 стал 33: величины разошлись. проекция объявлена на ошибку. значит стало хуже.
 goal 56, was 52, now 55: the error 4 became 1. the projection is declared: a falling error is a rising viability. therefore better.
-viability was 11 of 28 and is 10 of 28 — a rise or a fall? viability was 11 of 28 and is 10 of 28: a fall, worse.
+viability was 11 of 28 and is 10 of 28 — a rise or a fall? a fall: viability was 11 of 28 and is 10 of 28, worse.
 жизнеспособность была 14 из 28, стала 15 из 28: рост, стало лучше.
 жизнеспособность 9 из 28 при пороге 8 из 28, убыль 1 из 28: запас 1 из 28, сила страха 1 к 1 — страшно.
 viability 17 of 28 with the threshold 8 of 28 and no change: the reserve is 9 of 28 and it is still — calm.
@@ -910,7 +910,7 @@ the error 8 became 46, the reserve 38 became 31: the quantities part. the projec
 жизнеспособность была 11 из 28, стала 10 из 28: убыль, стало хуже.
 viability was 12 of 28 and is 13 of 28: a rise, better.
 viability was 19 of 28 and is 18 of 28: a fall, worse.
-жизнеспособность была 20 из 28, стала 21 из 28 — рост или убыль? жизнеспособность была 20 из 28, стала 21 из 28: рост, стало лучше.
+жизнеспособность была 20 из 28, стала 21 из 28 — рост или убыль? рост: жизнеспособность была 20 из 28, стала 21 из 28, стало лучше.
 жизнеспособность 16 из 28 при пороге 8 из 28, убыль 2 из 28: запас 8 из 28, сила страха 2 к 8 — страшно.
 viability 24 of 28 with the threshold 8 of 28 and no change: the reserve is 16 of 28 and it is still — calm.
 the error 9 became 44, the reserve 36 became 29: the quantities part. the projection is declared onto the error. therefore worse.
@@ -918,7 +918,7 @@ the error 9 became 44, the reserve 36 became 29: the quantities part. the projec
 ошибка 31 стала 2 и запас 22 стал 39, но жизнеспособность 9 из 28 упала до 7 из 28: порог 8 пройден — шаг необратим, страшно.
 viability was 10 of 28 and is 11 of 28: a rise, better.
 viability was 17 of 28 and is 16 of 28: a fall, worse.
-жизнеспособность была 18 из 28, стала 19 из 28 — рост или убыль? жизнеспособность была 18 из 28, стала 19 из 28: рост, стало лучше.
+жизнеспособность была 18 из 28, стала 19 из 28 — рост или убыль? рост: жизнеспособность была 18 из 28, стала 19 из 28, стало лучше.
 жизнеспособность 14 из 28 при пороге 8 из 28, убыль 3 из 28: запас 6 из 28, сила страха 3 к 6 — страшно.
 viability 22 of 28 with the threshold 8 of 28 and no change: the reserve is 14 of 28 and it is still — calm.
 the error 7 became 42, the reserve 34 became 27: the quantities part. the projection is declared onto the error. therefore worse.
@@ -926,7 +926,7 @@ the error 7 became 42, the reserve 34 became 27: the quantities part. the projec
 ошибка 29 стала 3 и запас 20 стал 37, но жизнеспособность 9 из 28 упала до 7 из 28: порог 8 пройден — шаг необратим, страшно.
 viability was 9 of 28 and is 10 of 28: a rise, better.
 viability was 15 of 28 and is 14 of 28: a fall, worse.
-жизнеспособность была 16 из 28, стала 17 из 28 — рост или убыль? жизнеспособность была 16 из 28, стала 17 из 28: рост, стало лучше.
+жизнеспособность была 16 из 28, стала 17 из 28 — рост или убыль? рост: жизнеспособность была 16 из 28, стала 17 из 28, стало лучше.
 жизнеспособность 12 из 28 при пороге 8 из 28, убыль 1 из 28: запас 4 из 28, сила страха 1 к 4 — страшно.
 viability 20 of 28 with the threshold 8 of 28 and no change: the reserve is 12 of 28 and it is still — calm.
 the error 8 became 40, the reserve 32 became 25: the quantities part. the projection is declared onto the error. therefore worse.
@@ -934,7 +934,7 @@ the error 8 became 40, the reserve 32 became 25: the quantities part. the projec
 ошибка 27 стала 1 и запас 18 стал 35, но жизнеспособность 9 из 28 упала до 7 из 28: порог 8 пройден — шаг необратим, страшно.
 goal 57, was 52, now 55: the error 5 became 2. the projection is declared: a falling error is a rising viability. therefore better.
 viability was 13 of 28 and is 12 of 28: a fall, worse.
-жизнеспособность была 14 из 28, стала 15 из 28 — рост или убыль? жизнеспособность была 14 из 28, стала 15 из 28: рост, стало лучше.
+жизнеспособность была 14 из 28, стала 15 из 28 — рост или убыль? рост: жизнеспособность была 14 из 28, стала 15 из 28, стало лучше.
 жизнеспособность 10 из 28 при пороге 8 из 28, убыль 2 из 28: запас 2 из 28, сила страха 2 к 2 — страшно.
 viability 18 of 28 with the threshold 8 of 28 and no change: the reserve is 10 of 28 and it is still — calm.
 viability 18 of 28 with the threshold 8 of 28 and a fall of 1 of 28: the reserve is 10 of 28, the strength of fear is 1 to 10 — afraid.
@@ -942,17 +942,17 @@ viability 18 of 28 with the threshold 8 of 28 and a fall of 1 of 28: the reserve
 ошибка 9 стала 47, запас 39 стал 32: величины разошлись. проекция объявлена на ошибку. значит стало хуже.
 goal 55, was 49, now 52: the error 6 became 3. the projection is declared: a falling error is a rising viability. therefore better.
 viability was 11 of 28 and is 10 of 28: a fall, worse.
-жизнеспособность была 12 из 28, стала 13 из 28 — рост или убыль? жизнеспособность была 12 из 28, стала 13 из 28: рост, стало лучше.
-жизнеспособность была 19 из 28, стала 18 из 28 — рост или убыль? жизнеспособность была 19 из 28, стала 18 из 28: убыль, стало хуже.
-viability was 20 of 28 and is 21 of 28 — a rise or a fall? viability was 20 of 28 and is 21 of 28: a rise, better.
+жизнеспособность была 12 из 28, стала 13 из 28 — рост или убыль? рост: жизнеспособность была 12 из 28, стала 13 из 28, стало лучше.
+жизнеспособность была 19 из 28, стала 18 из 28 — рост или убыль? убыль: жизнеспособность была 19 из 28, стала 18 из 28, стало хуже.
+viability was 20 of 28 and is 21 of 28 — a rise or a fall? a rise: viability was 20 of 28 and is 21 of 28, better.
 viability 16 of 28 with the threshold 8 of 28 and a fall of 2 of 28: the reserve is 8 of 28, the strength of fear is 2 to 8 — afraid.
 жизнеспособность 25 из 28 при пороге 8 из 28, изменение 0: запас 17 из 28 и покой — спокойно.
 ошибка 7 стала 45, запас 37 стал 30: величины разошлись. проекция объявлена на ошибку. значит стало хуже.
 goal 53, was 49, now 52: the error 4 became 1. the projection is declared: a falling error is a rising viability. therefore better.
 the error 31 became 2 and the reserve 22 became 39, but viability 9 of 28 fell to 7 of 28: the threshold 8 is crossed — the step is irreversible, afraid.
-жизнеспособность была 10 из 28, стала 11 из 28 — рост или убыль? жизнеспособность была 10 из 28, стала 11 из 28: рост, стало лучше.
-жизнеспособность была 17 из 28, стала 16 из 28 — рост или убыль? жизнеспособность была 17 из 28, стала 16 из 28: убыль, стало хуже.
-viability was 18 of 28 and is 19 of 28 — a rise or a fall? viability was 18 of 28 and is 19 of 28: a rise, better.
+жизнеспособность была 10 из 28, стала 11 из 28 — рост или убыль? рост: жизнеспособность была 10 из 28, стала 11 из 28, стало лучше.
+жизнеспособность была 17 из 28, стала 16 из 28 — рост или убыль? убыль: жизнеспособность была 17 из 28, стала 16 из 28, стало хуже.
+viability was 18 of 28 and is 19 of 28 — a rise or a fall? a rise: viability was 18 of 28 and is 19 of 28, better.
 viability 14 of 28 with the threshold 8 of 28 and a fall of 3 of 28: the reserve is 6 of 28, the strength of fear is 3 to 6 — afraid.
 жизнеспособность 23 из 28 при пороге 8 из 28, изменение 0: запас 15 из 28 и покой — спокойно.
 ошибка 8 стала 43, запас 35 стал 28: величины разошлись. проекция объявлена на ошибку. значит стало хуже.
@@ -1086,23 +1086,23 @@ reflection 4 of 6 with the threshold 1 of 3, coherence 3 with the threshold 1: t
 ошибка 44 стала 9, запас 29 стал 36: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
 viability 13 of 28, the step fell by 4: now 9 of 28, the threshold 8 is not crossed — the step is reversible, not afraid.
 
-жизнеспособность была 12 из 35, стала 13 из 35 — рост или убыль? жизнеспособность была 12 из 35, стала 13 из 35: рост, стало лучше.
-viability was 19 of 35 and is 18 of 35 — a rise or a fall? viability was 19 of 35 and is 18 of 35: a fall, worse.
+жизнеспособность была 12 из 35, стала 13 из 35 — рост или убыль? рост: жизнеспособность была 12 из 35, стала 13 из 35, стало лучше.
+viability was 19 of 35 and is 18 of 35 — a rise or a fall? a fall: viability was 19 of 35 and is 18 of 35, worse.
 viability was 22 of 35 and is 23 of 35: a rise, better.
 жизнеспособность 18 из 35 при пороге 10 из 35, убыль 2 из 35: запас 8 из 35, сила страха 2 к 8 — страшно.
 жизнеспособность 29 из 35 при пороге 10 из 35, изменение 0: запас 19 из 35 и покой — спокойно.
 the error 9 became 56, the reserve 45 became 37: the quantities part. the projection is declared onto the error. therefore worse.
 goal 67, was 62, now 65: the error 5 became 2. the projection is declared: a falling error is a rising viability. therefore better.
 жизнеспособность была 13 из 35, стала 12 из 35: убыль, стало хуже.
-жизнеспособность была 14 из 35, стала 15 из 35 — рост или убыль? жизнеспособность была 14 из 35, стала 15 из 35: рост, стало лучше.
-viability was 21 of 35 and is 20 of 35 — a rise or a fall? viability was 21 of 35 and is 20 of 35: a fall, worse.
+жизнеспособность была 14 из 35, стала 15 из 35 — рост или убыль? рост: жизнеспособность была 14 из 35, стала 15 из 35, стало лучше.
+viability was 21 of 35 and is 20 of 35 — a rise or a fall? a fall: viability was 21 of 35 and is 20 of 35, worse.
 viability 21 of 35 with the threshold 10 of 35 and no change: the reserve is 11 of 35 and it is still — calm.
 жизнеспособность 20 из 35 при пороге 10 из 35, убыль 1 из 35: запас 10 из 35, сила страха 1 к 10 — страшно.
 цель 60, было 56, стало 59: ошибка 4 стала 1. проекция объявлена: убыль ошибки есть рост жизнеспособности. значит стало лучше.
 the error 11 became 58, the reserve 47 became 39: the quantities part. the projection is declared onto the error. therefore worse.
 goal 69, was 65, now 68: the error 4 became 1. the projection is declared: a falling error is a rising viability. therefore better.
 жизнеспособность была 15 из 35, стала 14 из 35: убыль, стало хуже.
-жизнеспособность была 16 из 35, стала 17 из 35 — рост или убыль? жизнеспособность была 16 из 35, стала 17 из 35: рост, стало лучше.
+жизнеспособность была 16 из 35, стала 17 из 35 — рост или убыль? рост: жизнеспособность была 16 из 35, стала 17 из 35, стало лучше.
 viability 12 of 35 with the threshold 10 of 35 and a fall of 2 of 35: the reserve is 2 of 35, the strength of fear is 2 to 2 — afraid.
 viability 23 of 35 with the threshold 10 of 35 and no change: the reserve is 13 of 35 and it is still — calm.
 ошибка 10 стала 51, запас 40 стал 32: величины разошлись. проекция объявлена на ошибку. значит стало хуже.
@@ -1110,29 +1110,29 @@ viability 23 of 35 with the threshold 10 of 35 and no change: the reserve is 13 
 the error 34 became 1 and the reserve 23 became 44, but viability 11 of 35 fell to 9 of 35: the threshold 10 is crossed — the step is irreversible, afraid.
 goal 71, was 65, now 68: the error 6 became 3. the projection is declared: a falling error is a rising viability. therefore better.
 жизнеспособность была 17 из 35, стала 16 из 35: убыль, стало хуже.
-жизнеспособность была 18 из 35, стала 19 из 35 — рост или убыль? жизнеспособность была 18 из 35, стала 19 из 35: рост, стало лучше.
+жизнеспособность была 18 из 35, стала 19 из 35 — рост или убыль? рост: жизнеспособность была 18 из 35, стала 19 из 35, стало лучше.
 viability 14 of 35 with the threshold 10 of 35 and a fall of 1 of 35: the reserve is 4 of 35, the strength of fear is 1 to 4 — afraid.
 viability 25 of 35 with the threshold 10 of 35 and no change: the reserve is 15 of 35 and it is still — calm.
 ошибка 9 стала 53, запас 42 стал 34: величины разошлись. проекция объявлена на ошибку. значит стало хуже.
 цель 64, было 59, стало 62: ошибка 5 стала 2. проекция объявлена: убыль ошибки есть рост жизнеспособности. значит стало лучше.
 the error 36 became 3 and the reserve 25 became 46, but viability 11 of 35 fell to 9 of 35: the threshold 10 is crossed — the step is irreversible, afraid.
-viability was 11 of 35 and is 12 of 35 — a rise or a fall? viability was 11 of 35 and is 12 of 35: a rise, better.
+viability was 11 of 35 and is 12 of 35 — a rise or a fall? a rise: viability was 11 of 35 and is 12 of 35, better.
 жизнеспособность была 19 из 35, стала 18 из 35: убыль, стало хуже.
-жизнеспособность была 20 из 35, стала 21 из 35 — рост или убыль? жизнеспособность была 20 из 35, стала 21 из 35: рост, стало лучше.
+жизнеспособность была 20 из 35, стала 21 из 35 — рост или убыль? рост: жизнеспособность была 20 из 35, стала 21 из 35, стало лучше.
 viability 16 of 35 with the threshold 10 of 35 and a fall of 3 of 35: the reserve is 6 of 35, the strength of fear is 3 to 6 — afraid.
 viability 27 of 35 with the threshold 10 of 35 and no change: the reserve is 17 of 35 and it is still — calm.
 ошибка 11 стала 55, запас 44 стал 36: величины разошлись. проекция объявлена на ошибку. значит стало хуже.
 цель 66, было 62, стало 65: ошибка 4 стала 1. проекция объявлена: убыль ошибки есть рост жизнеспособности. значит стало лучше.
 the error 38 became 2 and the reserve 27 became 48, but viability 11 of 35 fell to 9 of 35: the threshold 10 is crossed — the step is irreversible, afraid.
-viability was 12 of 35 and is 13 of 35 — a rise or a fall? viability was 12 of 35 and is 13 of 35: a rise, better.
+viability was 12 of 35 and is 13 of 35 — a rise or a fall? a rise: viability was 12 of 35 and is 13 of 35, better.
 жизнеспособность была 21 из 35, стала 20 из 35: убыль, стало хуже.
-жизнеспособность была 22 из 35, стала 23 из 35 — рост или убыль? жизнеспособность была 22 из 35, стала 23 из 35: рост, стало лучше.
+жизнеспособность была 22 из 35, стала 23 из 35 — рост или убыль? рост: жизнеспособность была 22 из 35, стала 23 из 35, стало лучше.
 viability 18 of 35 with the threshold 10 of 35 and a fall of 2 of 35: the reserve is 8 of 35, the strength of fear is 2 to 8 — afraid.
 viability 29 of 35 with the threshold 10 of 35 and no change: the reserve is 19 of 35 and it is still — calm.
 ошибка 10 стала 57, запас 46 стал 38: величины разошлись. проекция объявлена на ошибку. значит стало хуже.
 цель 68, было 62, стало 65: ошибка 6 стала 3. проекция объявлена: убыль ошибки есть рост жизнеспособности. значит стало лучше.
 viability was 13 of 35 and is 12 of 35: a fall, worse.
-viability was 14 of 35 and is 15 of 35 — a rise or a fall? viability was 14 of 35 and is 15 of 35: a rise, better.
+viability was 14 of 35 and is 15 of 35 — a rise or a fall? a rise: viability was 14 of 35 and is 15 of 35, better.
 жизнеспособность 11 из 35 при пороге 10 из 35, убыль 1 из 35: запас 1 из 35, сила страха 1 к 1 — страшно.
 жизнеспособность 22 из 35 при пороге 10 из 35, изменение 0: запас 12 из 35 и покой — спокойно.
 viability 20 of 35 with the threshold 10 of 35 and a fall of 1 of 35: the reserve is 10 of 35, the strength of fear is 1 to 10 — afraid.
@@ -1140,7 +1140,7 @@ goal 60, was 56, now 59: the error 4 became 1. the projection is declared: a fal
 ошибка 9 стала 59, запас 48 стал 40: величины разошлись. проекция объявлена на ошибку. значит стало хуже.
 цель 70, было 65, стало 68: ошибка 5 стала 2. проекция объявлена: убыль ошибки есть рост жизнеспособности. значит стало лучше.
 viability was 15 of 35 and is 14 of 35: a fall, worse.
-viability was 16 of 35 and is 17 of 35 — a rise or a fall? viability was 16 of 35 and is 17 of 35: a rise, better.
+viability was 16 of 35 and is 17 of 35 — a rise or a fall? a rise: viability was 16 of 35 and is 17 of 35, better.
 жизнеспособность 13 из 35 при пороге 10 из 35, убыль 3 из 35: запас 3 из 35, сила страха 3 к 3 — страшно.
 жизнеспособность 24 из 35 при пороге 10 из 35, изменение 0: запас 14 из 35 и покой — спокойно.
 the error 10 became 51, the reserve 40 became 32: the quantities part. the projection is declared onto the error. therefore worse.
@@ -1148,7 +1148,7 @@ goal 62, was 56, now 59: the error 6 became 3. the projection is declared: a fal
 ошибка 35 стала 2 и запас 24 стал 45, но жизнеспособность 11 из 35 упала до 9 из 35: порог 10 пройден — шаг необратим, страшно.
 жизнеспособность была 11 из 35, стала 12 из 35: рост, стало лучше.
 viability was 17 of 35 and is 16 of 35: a fall, worse.
-viability was 18 of 35 and is 19 of 35 — a rise or a fall? viability was 18 of 35 and is 19 of 35: a rise, better.
+viability was 18 of 35 and is 19 of 35 — a rise or a fall? a rise: viability was 18 of 35 and is 19 of 35, better.
 жизнеспособность 15 из 35 при пороге 10 из 35, убыль 2 из 35: запас 5 из 35, сила страха 2 к 5 — страшно.
 жизнеспособность 26 из 35 при пороге 10 из 35, изменение 0: запас 16 из 35 и покой — спокойно.
 the error 9 became 53, the reserve 42 became 34: the quantities part. the projection is declared onto the error. therefore worse.
@@ -1156,7 +1156,7 @@ goal 64, was 59, now 62: the error 5 became 2. the projection is declared: a fal
 ошибка 37 стала 1 и запас 26 стал 47, но жизнеспособность 11 из 35 упала до 9 из 35: порог 10 пройден — шаг необратим, страшно.
 жизнеспособность была 12 из 35, стала 13 из 35: рост, стало лучше.
 viability was 19 of 35 and is 18 of 35: a fall, worse.
-viability was 20 of 35 and is 21 of 35 — a rise or a fall? viability was 20 of 35 and is 21 of 35: a rise, better.
+viability was 20 of 35 and is 21 of 35 — a rise or a fall? a rise: viability was 20 of 35 and is 21 of 35, better.
 жизнеспособность 17 из 35 при пороге 10 из 35, убыль 1 из 35: запас 7 из 35, сила страха 1 к 7 — страшно.
 жизнеспособность 28 из 35 при пороге 10 из 35, изменение 0: запас 18 из 35 и покой — спокойно.
 the error 11 became 55, the reserve 44 became 36: the quantities part. the projection is declared onto the error. therefore worse.
@@ -1164,12 +1164,12 @@ goal 66, was 62, now 65: the error 4 became 1. the projection is declared: a fal
 ошибка 39 стала 3 и запас 28 стал 49, но жизнеспособность 11 из 35 упала до 9 из 35: порог 10 пройден — шаг необратим, страшно.
 жизнеспособность была 14 из 35, стала 15 из 35: рост, стало лучше.
 viability was 21 of 35 and is 20 of 35: a fall, worse.
-viability was 22 of 35 and is 23 of 35 — a rise or a fall? viability was 22 of 35 and is 23 of 35: a rise, better.
+viability was 22 of 35 and is 23 of 35 — a rise or a fall? a rise: viability was 22 of 35 and is 23 of 35, better.
 жизнеспособность 19 из 35 при пороге 10 из 35, убыль 3 из 35: запас 9 из 35, сила страха 3 к 9 — страшно.
 жизнеспособность 30 из 35 при пороге 10 из 35, изменение 0: запас 20 из 35 и покой — спокойно.
 the error 10 became 57, the reserve 46 became 38: the quantities part. the projection is declared onto the error. therefore worse.
 goal 68, was 62, now 65: the error 6 became 3. the projection is declared: a falling error is a rising viability. therefore better.
-жизнеспособность была 13 из 35, стала 12 из 35 — рост или убыль? жизнеспособность была 13 из 35, стала 12 из 35: убыль, стало хуже.
+жизнеспособность была 13 из 35, стала 12 из 35 — рост или убыль? убыль: жизнеспособность была 13 из 35, стала 12 из 35, стало хуже.
 жизнеспособность была 16 из 35, стала 17 из 35: рост, стало лучше.
 viability 11 of 35 with the threshold 10 of 35 and a fall of 1 of 35: the reserve is 1 of 35, the strength of fear is 1 to 1 — afraid.
 viability 22 of 35 with the threshold 10 of 35 and no change: the reserve is 12 of 35 and it is still — calm.
@@ -1177,7 +1177,7 @@ viability 22 of 35 with the threshold 10 of 35 and no change: the reserve is 12 
 цель 61, было 56, стало 59: ошибка 5 стала 2. проекция объявлена: убыль ошибки есть рост жизнеспособности. значит стало лучше.
 the error 9 became 59, the reserve 48 became 40: the quantities part. the projection is declared onto the error. therefore worse.
 goal 70, was 65, now 68: the error 5 became 2. the projection is declared: a falling error is a rising viability. therefore better.
-жизнеспособность была 15 из 35, стала 14 из 35 — рост или убыль? жизнеспособность была 15 из 35, стала 14 из 35: убыль, стало хуже.
+жизнеспособность была 15 из 35, стала 14 из 35 — рост или убыль? убыль: жизнеспособность была 15 из 35, стала 14 из 35, стало хуже.
 жизнеспособность была 18 из 35, стала 19 из 35: рост, стало лучше.
 viability 13 of 35 with the threshold 10 of 35 and a fall of 3 of 35: the reserve is 3 of 35, the strength of fear is 3 to 3 — afraid.
 viability 24 of 35 with the threshold 10 of 35 and no change: the reserve is 14 of 35 and it is still — calm.
@@ -1185,7 +1185,7 @@ viability 24 of 35 with the threshold 10 of 35 and no change: the reserve is 14 
 цель 63, было 59, стало 62: ошибка 4 стала 1. проекция объявлена: убыль ошибки есть рост жизнеспособности. значит стало лучше.
 the error 35 became 2 and the reserve 24 became 45, but viability 11 of 35 fell to 9 of 35: the threshold 10 is crossed — the step is irreversible, afraid.
 viability was 11 of 35 and is 12 of 35: a rise, better.
-жизнеспособность была 17 из 35, стала 16 из 35 — рост или убыль? жизнеспособность была 17 из 35, стала 16 из 35: убыль, стало хуже.
+жизнеспособность была 17 из 35, стала 16 из 35 — рост или убыль? убыль: жизнеспособность была 17 из 35, стала 16 из 35, стало хуже.
 жизнеспособность была 20 из 35, стала 21 из 35: рост, стало лучше.
 viability 15 of 35 with the threshold 10 of 35 and a fall of 2 of 35: the reserve is 5 of 35, the strength of fear is 2 to 5 — afraid.
 viability 26 of 35 with the threshold 10 of 35 and no change: the reserve is 16 of 35 and it is still — calm.
@@ -1193,7 +1193,7 @@ viability 26 of 35 with the threshold 10 of 35 and no change: the reserve is 16 
 цель 65, было 59, стало 62: ошибка 6 стала 3. проекция объявлена: убыль ошибки есть рост жизнеспособности. значит стало лучше.
 the error 37 became 1 and the reserve 26 became 47, but viability 11 of 35 fell to 9 of 35: the threshold 10 is crossed — the step is irreversible, afraid.
 viability was 12 of 35 and is 13 of 35: a rise, better.
-жизнеспособность была 19 из 35, стала 18 из 35 — рост или убыль? жизнеспособность была 19 из 35, стала 18 из 35: убыль, стало хуже.
+жизнеспособность была 19 из 35, стала 18 из 35 — рост или убыль? убыль: жизнеспособность была 19 из 35, стала 18 из 35, стало хуже.
 жизнеспособность была 22 из 35, стала 23 из 35: рост, стало лучше.
 viability 17 of 35 with the threshold 10 of 35 and a fall of 1 of 35: the reserve is 7 of 35, the strength of fear is 1 to 7 — afraid.
 viability 28 of 35 with the threshold 10 of 35 and no change: the reserve is 18 of 35 and it is still — calm.
@@ -1201,13 +1201,13 @@ viability 28 of 35 with the threshold 10 of 35 and no change: the reserve is 18 
 цель 67, было 62, стало 65: ошибка 5 стала 2. проекция объявлена: убыль ошибки есть рост жизнеспособности. значит стало лучше.
 the error 39 became 3 and the reserve 28 became 49, but viability 11 of 35 fell to 9 of 35: the threshold 10 is crossed — the step is irreversible, afraid.
 viability was 14 of 35 and is 15 of 35: a rise, better.
-жизнеспособность была 21 из 35, стала 20 из 35 — рост или убыль? жизнеспособность была 21 из 35, стала 20 из 35: убыль, стало хуже.
+жизнеспособность была 21 из 35, стала 20 из 35 — рост или убыль? убыль: жизнеспособность была 21 из 35, стала 20 из 35, стало хуже.
 жизнеспособность 21 из 35 при пороге 10 из 35, изменение 0: запас 11 из 35 и покой — спокойно.
 viability 19 of 35 with the threshold 10 of 35 and a fall of 3 of 35: the reserve is 9 of 35, the strength of fear is 3 to 9 — afraid.
 viability 30 of 35 with the threshold 10 of 35 and no change: the reserve is 20 of 35 and it is still — calm.
 ошибка 11 стала 58, запас 47 стал 39: величины разошлись. проекция объявлена на ошибку. значит стало хуже.
 цель 69, было 65, стало 68: ошибка 4 стала 1. проекция объявлена: убыль ошибки есть рост жизнеспособности. значит стало лучше.
-viability was 13 of 35 and is 12 of 35 — a rise or a fall? viability was 13 of 35 and is 12 of 35: a fall, worse.
+viability was 13 of 35 and is 12 of 35 — a rise or a fall? a fall: viability was 13 of 35 and is 12 of 35, worse.
 viability was 16 of 35 and is 17 of 35: a rise, better.
 жизнеспособность 12 из 35 при пороге 10 из 35, убыль 2 из 35: запас 2 из 35, сила страха 2 к 2 — страшно.
 жизнеспособность 23 из 35 при пороге 10 из 35, изменение 0: запас 13 из 35 и покой — спокойно.
@@ -1215,15 +1215,15 @@ the error 9 became 50, the reserve 39 became 31: the quantities part. the projec
 goal 61, was 56, now 59: the error 5 became 2. the projection is declared: a falling error is a rising viability. therefore better.
 ошибка 34 стала 1 и запас 23 стал 44, но жизнеспособность 11 из 35 упала до 9 из 35: порог 10 пройден — шаг необратим, страшно.
 цель 71, было 65, стало 68: ошибка 6 стала 3. проекция объявлена: убыль ошибки есть рост жизнеспособности. значит стало лучше.
-viability was 15 of 35 and is 14 of 35 — a rise or a fall? viability was 15 of 35 and is 14 of 35: a fall, worse.
+viability was 15 of 35 and is 14 of 35 — a rise or a fall? a fall: viability was 15 of 35 and is 14 of 35, worse.
 viability was 18 of 35 and is 19 of 35: a rise, better.
 жизнеспособность 14 из 35 при пороге 10 из 35, убыль 1 из 35: запас 4 из 35, сила страха 1 к 4 — страшно.
 жизнеспособность 25 из 35 при пороге 10 из 35, изменение 0: запас 15 из 35 и покой — спокойно.
 the error 11 became 52, the reserve 41 became 33: the quantities part. the projection is declared onto the error. therefore worse.
 goal 63, was 59, now 62: the error 4 became 1. the projection is declared: a falling error is a rising viability. therefore better.
 ошибка 36 стала 3 и запас 25 стал 46, но жизнеспособность 11 из 35 упала до 9 из 35: порог 10 пройден — шаг необратим, страшно.
-жизнеспособность была 11 из 35, стала 12 из 35 — рост или убыль? жизнеспособность была 11 из 35, стала 12 из 35: рост, стало лучше.
-viability was 17 of 35 and is 16 of 35 — a rise or a fall? viability was 17 of 35 and is 16 of 35: a fall, worse.
+жизнеспособность была 11 из 35, стала 12 из 35 — рост или убыль? рост: жизнеспособность была 11 из 35, стала 12 из 35, стало лучше.
+viability was 17 of 35 and is 16 of 35 — a rise or a fall? a fall: viability was 17 of 35 and is 16 of 35, worse.
 viability was 20 of 35 and is 21 of 35: a rise, better.
 жизнеспособность 16 из 35 при пороге 10 из 35, убыль 3 из 35: запас 6 из 35, сила страха 3 к 6 — страшно.
 жизнеспособность 27 из 35 при пороге 10 из 35, изменение 0: запас 17 из 35 и покой — спокойно.

@@ -1662,11 +1662,16 @@
   "ask_forms": {
     "value": [
       "what is {}?",
-      "how much is {}?"
+      "how much is {}?",
+      "compute {}.",
+      "find {}.",
+      "what's {}?",
+      "what is the result of {}?"
     ],
     "prime": [
       "is {} a prime number?",
-      "does {} have exactly two divisors?"
+      "does {} have exactly two divisors?",
+      "tell me whether {} is prime."
     ],
     "divisible": [
       "is {} divisible by {}?",
@@ -1677,5 +1682,18 @@
       "is {} a perfect square?"
     ]
   },
-  "ask_forms_comment": "second declared question form of the value genus (Т-4 of the expressiveness college, 03.09): a paraphrase is a form of the pack, never a synonym list of a generator; every form carries its own mass (≥ LAW² distinct shows)"
+  "ask_forms_comment": "second declared question form of the value genus (Т-4 of the expressiveness college, 03.09): a paraphrase is a form of the pack, never a synonym list of a generator; every form carries its own mass (≥ LAW² distinct shows)",
+  "task_words": {
+    "words": [
+      "compute",
+      "calculate",
+      "find",
+      "work out",
+      "determine",
+      "tell me whether",
+      "say whether"
+    ],
+    "position": "front"
+  },
+  "task_words_comment": "imperative openers of a TASK (04.09, Т-4 of the expressiveness college): «compute 47 + 38.», «tell me whether 91 is prime.» — a task has no question mark; the pair house (tools/asking.py) cuts «{task}. {answer}» at the first full stop when the task opens with one of these, and the answer is judged by the world's court as any answer"
 }

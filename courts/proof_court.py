@@ -84,10 +84,10 @@ def квадрат(n):
 # ВОПРОС КОНТРПРИМЕРА ВЫВЕДЕН ИЗ ЕГО ОБРАЗЦА (tools/universals.py, М-149).
 ВОПРОС_КОНТР = re.compile(universals.вопрос_образца(КОНТР.pattern, ("en", "ru")))
 ПРЯМОЕ_EN = re.compile(
-    r"^if n is even then n squared is even: (\d+) is even and (\d+) "
+    r"^(?:yes: )?if n is even then n squared is even: (\d+) is even and (\d+) "
     r"is even$")
 ПРЯМОЕ_RU = re.compile(
-    r"^если n чётно, то n в квадрате чётно: (\d+) чётно и (\d+) чётно$")
+    r"^(?:да: )?если n чётно, то n в квадрате чётно: (\d+) чётно и (\d+) чётно$")
 ПРЯМОЕ_НЕТ = re.compile(
     r"^(?:no: (\d+) is even and (\d+) is odd|нет: (\d+) чётно, а (\d+) нечётно)$")
 

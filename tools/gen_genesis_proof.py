@@ -115,8 +115,8 @@ def pass_shows(pass_i):
                      f"and {e * e} is even.")
         прямое_ru = (f"если n чётно, то n в квадрате чётно: {e} чётно и "
                      f"{e * e} чётно.")
-        out.append(f"if {e} is even, is {e * e} even? {прямое_en}")
-        out.append(f"если {e} чётно, чётно ли {e * e}? {прямое_ru}")
+        out.append(f"if {e} is even, is {e * e} even? yes: {прямое_en}")
+        out.append(f"если {e} чётно, чётно ли {e * e}? да: {прямое_ru}")
         # ВТОРАЯ ПОЛЯРНОСТЬ ТОЙ ЖЕ РАМКОЙ (аудит покупок holon 03.09):
         # одни пары (n, n²) учили «ответ всегда да».
         нечёт = e * e + 1
