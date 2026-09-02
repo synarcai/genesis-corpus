@@ -111,9 +111,11 @@ def conversion_shows():
         )
         out.append(f"one {en} equals {f} {ens}.")
         for k in (2, 3, 5):
+            # ЗВЕНО ЦЕПИ (compose, e9): отношение единиц — число леджера
+            # («one hour equals 60 minutes» стоит рядом), k × f — звено.
             утв_ru = (f"{k} {units.ру_форма(ruf, k)} равно "
-                      f"{k * f} {units.ру_форма(части, k * f)}.")
-            утв_en = f"{k} {enp} equal {k * f} {ens}."
+                      f"{k * f} {units.ру_форма(части, k * f)}: {k} × {f} = {k * f}.")
+            утв_en = f"{k} {enp} equal {k * f} {ens}: {k} × {f} = {k * f}."
             out.append(утв_ru)
             out.append(утв_en)
             out.append(спросить("равно", утв_ru,
