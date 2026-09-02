@@ -19,6 +19,7 @@
 смешанного слова. Строка без такого слова ему не подсудна — он молчит,
 и вердикт остаётся за судами родов.
 """
+import json
 import pathlib
 import re
 import sys
@@ -63,10 +64,27 @@ class Слой:
 
     def __init__(self):
         self.пласт = False
+        self.объявление = None  # ask_words пакета: {"words", "position"}
 
     def впитать(self, путь):
-        """Протокол палаты: слой создаётся пустым и впитывает файл."""
-        self.пласт = "_lang_" in pathlib.Path(путь).stem
+        """Протокол палаты: слой создаётся пустым и впитывает файл.
+
+        ПЛАСТ СУДИТСЯ ОБЪЯВЛЕНИЕМ СВОЕГО ПАКЕТА, А НЕ ЗАЧИНАМИ ДОМА.
+        Пакет объявляет вопросные слова и их ПОЗИЦИЮ — впереди
+        (русский, английский) или в конце (турецкий «nedir», суахили
+        «nini», японский «ですか»). Пласт без объявления — молчание.
+        """
+        основа = pathlib.Path(путь).stem
+        self.пласт = "_lang_" in основа
+        if self.пласт:
+            язык = основа.rsplit("_", 1)[-1]
+            пакет = КОРЕНЬ / "tools" / "langpacks" / f"{язык}.json"
+            if пакет.exists():
+                try:
+                    self.объявление = json.loads(
+                        пакет.read_text(encoding="utf-8")).get("ask_words")
+                except ValueError:
+                    self.объявление = None
 
 
 def судить(строка, слой=None):
@@ -80,8 +98,28 @@ def судить(строка, слой=None):
     # смесь письма: множество вопросных слов объявлено в доме пары и
     # замерено по своду (96,6 % честных вопросов; остаток — «¬» и «или»,
     # объявленные там же). Письмо без пробелов дому не подсудно.
-    if "?" in строка and not (слой is not None and слой.пласт):
-        вопрос = строка.split("?")[0]
+    if "?" in строка or "？" in строка or "؟" in строка:
+        вопрос = re.split(r"[?？؟]", строка)[0]
+        if слой is not None and слой.пласт:
+            объ = слой.объявление
+            if not объ:
+                return False, True  # пакет не объявил — молчим
+            слова = [w.strip(asking._КРАЙ).lower() for w in вопрос.split()]
+            слова = [w for w in слова if w]
+            if not слова:
+                return False, True
+            words = {w.lower() for w in объ.get("words", ())}
+            # ЗНАК ОТКАЗА «¬» СТОИТ ВПЕРЕДИ В ЛЮБОМ ЯЗЫКЕ: вопрос-отказ
+            # пласта («¬ yedi ne renktedir ?») объявлен им самим.
+            if слова[0] == "¬" and "¬" in words:
+                return True, True
+            if объ.get("position") == "end":
+                # письмо без пробелов: вопросное слово — хвост строки
+                хвост = слова[-1]
+                ок = хвост in words or any(хвост.endswith(w) for w in words)
+            else:
+                ок = слова[0] in words or (len(слова) > 1 and слова[1] in words)
+            return True, ок
         if asking.зачин_объявлен(вопрос) is False:
             return True, False
     return False, True
