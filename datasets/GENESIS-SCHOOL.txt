@@ -26638,7 +26638,7 @@ the month after december is january.
 первые 3 месяца обычного года дают 90 дней всего.
 the first 7 months of a common year have 212 days in all.
 первые 10 месяцев обычного года дают 304 дня всего.
-the first 1 months of a common year have 31 days in all.
+the first month of a common year has 31 days in all.
 первые 4 месяца обычного года дают 120 дней всего.
 the first 8 months of a common year have 243 days in all.
 первые 11 месяцев обычного года дают 334 дня всего.
@@ -27015,7 +27015,7 @@ the first 5 months of a common year have 151 days in all.
 первые 10 месяцев обычного года дают 304 дня всего.
 the first 3 months of a common year have 90 days in all.
 первые 8 месяцев обычного года дают 243 дня всего.
-the first 1 months of a common year have 31 days in all.
+the first month of a common year has 31 days in all.
 первые 6 месяцев обычного года дают 181 день всего.
 the first 12 months of a common year have 365 days in all.
 первые 4 месяца обычного года дают 120 дней всего.
@@ -27382,7 +27382,7 @@ the first 10 months of a common year have 304 days in all.
 первые 4 месяца обычного года дают 120 дней всего.
 the first 12 months of a common year have 365 days in all.
 первые 6 месяцев обычного года дают 181 день всего.
-the first 1 months of a common year have 31 days in all.
+the first month of a common year has 31 days in all.
 первые 8 месяцев обычного года дают 243 дня всего.
 the first 3 months of a common year have 90 days in all.
 первые 10 месяцев обычного года дают 304 дня всего.
@@ -27745,7 +27745,7 @@ the first 6 months of a common year have 181 days in all.
 первый 1 месяц обычного года дают 31 день всего.
 the first 10 months of a common year have 304 days in all.
 первые 5 месяцев обычного года дают 151 день всего.
-the first 1 months of a common year have 31 days in all.
+the first month of a common year has 31 days in all.
 первые 9 месяцев обычного года дают 273 дня всего.
 the first 5 months of a common year have 151 days in all.
 обычный год имеет 365 дней и 52 полных недели.
@@ -28123,7 +28123,7 @@ the first 2 months of a common year have 59 days in all.
 первые 11 месяцев обычного года дают 334 дня всего.
 the first 8 months of a common year have 243 days in all.
 первые 4 месяца обычного года дают 120 дней всего.
-the first 1 months of a common year have 31 days in all.
+the first month of a common year has 31 days in all.
 первые 10 месяцев обычного года дают 304 дня всего.
 
 сегодня четверг. после четверга — пятница.
@@ -86689,38 +86689,46 @@ the average is always one of the numbers is false: the average of 19, 23, 32, 36
 среднее всегда есть одно из чисел — ложь: среднее чисел 19, 25, 28, 16 — это 22, а 22 среди них нет.
 
 is 2 a root of the equation x² − 3x + 2 = 0? yes: 4 − 6 + 2 = 0.
-is 4 a root of x^2 - 4 x = 0? yes: 16 - 16 = 0.
-является ли 6 корнем уравнения x² − 4x = 0? нет: 36 − 24 = 12.
-every value satisfies x^2 - 12 x + 32 = 0 is false: at x = 9 it gives 81 - 108 + 32 = 5, and 5 is not 0.
-значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 9x + 18 = 0 при x = 3 выходит 9 − 27 + 18 = 0.
-is 2 a root of x^2 - 3 x + 2 = 0? yes: 4 - 6 + 2 = 0.
-является ли 3 корнем уравнения x² − 3x + 2 = 0? нет: 9 − 9 + 2 = 2.
-является ли 6 корнем x^2 - 4 x = 0? нет: 36 - 24 = 12.
+2 is a root of x^2 - 3 x + 2 = 0: 4 - 6 + 2 = 0.
+является ли 4 корнем уравнения x² − 4x = 0? да: 16 − 16 = 0.
+6 is not a root of x^2 - 4 x = 0: 36 - 24 = 12.
 всякое значение удовлетворяет x² − 9x + 18 = 0 — ложь: при x = 9 выходит 81 − 81 + 18 = 18, а 18 не 0.
 a value is a root exactly when the substitution gives 0: in x^2 - 9 x + 18 = 0 the value 3 gives 9 - 27 + 18 = 0.
 что такое корень уравнения? корень уравнения — это значение, обращающее его в верное равенство.
 является ли 3 корнем x^2 - 3 x + 2 = 0? нет: 9 - 9 + 2 = 2.
-is 6 a root of the equation x² − 4x = 0? no: 36 − 24 = 12.
-every value satisfies x^2 - 9 x + 18 = 0 is false: at x = 9 it gives 81 - 81 + 18 = 18, and 18 is not 0.
-значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 6x + 8 = 0 при x = 4 выходит 16 − 24 + 8 = 0.
-what is a root of an equation? a root of an equation is a value that turns it into a true equality.
-is 3 a root of the equation x² − 3x + 2 = 0? no: 9 − 9 + 2 = 2.
-is 6 a root of x^2 - 4 x = 0? no: 36 - 24 = 12.
+is 4 a root of the equation x² − 4x = 0? yes: 16 − 16 = 0.
+4 is a root of x^2 - 4 x = 0: 16 - 16 = 0.
 всякое значение удовлетворяет x² − 6x + 8 = 0 — ложь: при x = 6 выходит 36 − 36 + 8 = 8, а 8 не 0.
 a value is a root exactly when the substitution gives 0: in x^2 - 6 x + 8 = 0 the value 4 gives 16 - 24 + 8 = 0.
 корень уравнения — это значение, обращающее его в верное равенство.
 is 3 a root of x^2 - 3 x + 2 = 0? no: 9 - 9 + 2 = 2.
-является ли 4 корнем уравнения x² − 4x = 0? да: 16 − 16 = 0.
-every value satisfies x^2 - 6 x + 8 = 0 is false: at x = 6 it gives 36 - 36 + 8 = 8, and 8 is not 0.
-значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 3x + 2 = 0 при x = 1 выходит 1 − 3 + 2 = 0.
-a root of an equation is a value that turns it into a true equality.
-является ли 2 корнем уравнения x² − 3x + 2 = 0? да: 4 − 6 + 2 = 0.
-является ли 4 корнем x^2 - 4 x = 0? да: 16 - 16 = 0.
+3 — не корень уравнения x² − 3x + 2 = 0: 9 − 9 + 2 = 2.
+является ли 6 корнем x^2 - 4 x = 0? нет: 36 - 24 = 12.
 всякое значение удовлетворяет x² − 3x + 2 = 0 — ложь: при x = 3 выходит 9 − 9 + 2 = 2, а 2 не 0.
 a value is a root exactly when the substitution gives 0: in x^2 - 3 x + 2 = 0 the value 1 gives 1 - 3 + 2 = 0.
 значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 12x + 32 = 0 при x = 8 выходит 64 − 96 + 32 = 0.
 является ли 2 корнем x^2 - 3 x + 2 = 0? да: 4 - 6 + 2 = 0.
-is 4 a root of the equation x² − 4x = 0? yes: 16 − 16 = 0.
+2 — корень уравнения x² − 3x + 2 = 0: 4 − 6 + 2 = 0.
+is 6 a root of x^2 - 4 x = 0? no: 36 - 24 = 12.
+6 — не корень уравнения x² − 4x = 0: 36 − 24 = 12.
+every value satisfies x^2 - 12 x + 32 = 0 is false: at x = 9 it gives 81 - 108 + 32 = 5, and 5 is not 0.
+значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 9x + 18 = 0 при x = 3 выходит 9 − 27 + 18 = 0.
+is 2 a root of x^2 - 3 x + 2 = 0? yes: 4 - 6 + 2 = 0.
+является ли 3 корнем уравнения x² − 3x + 2 = 0? нет: 9 − 9 + 2 = 2.
+является ли 4 корнем x^2 - 4 x = 0? да: 16 - 16 = 0.
+4 — корень уравнения x² − 4x = 0: 16 − 16 = 0.
+every value satisfies x^2 - 9 x + 18 = 0 is false: at x = 9 it gives 81 - 81 + 18 = 18, and 18 is not 0.
+значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 6x + 8 = 0 при x = 4 выходит 16 − 24 + 8 = 0.
+what is a root of an equation? a root of an equation is a value that turns it into a true equality.
+is 3 a root of the equation x² − 3x + 2 = 0? no: 9 − 9 + 2 = 2.
+is 4 a root of x^2 - 4 x = 0? yes: 16 - 16 = 0.
+является ли 6 корнем уравнения x² − 4x = 0? нет: 36 − 24 = 12.
+every value satisfies x^2 - 6 x + 8 = 0 is false: at x = 6 it gives 36 - 36 + 8 = 8, and 8 is not 0.
+значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 3x + 2 = 0 при x = 1 выходит 1 − 3 + 2 = 0.
+a root of an equation is a value that turns it into a true equality.
+является ли 2 корнем уравнения x² − 3x + 2 = 0? да: 4 − 6 + 2 = 0.
+3 is not a root of x^2 - 3 x + 2 = 0: 9 - 9 + 2 = 2.
+is 6 a root of the equation x² − 4x = 0? no: 36 − 24 = 12.
 every value satisfies x^2 - 3 x + 2 = 0 is false: at x = 3 it gives 9 - 9 + 2 = 2, and 2 is not 0.
 всякое значение удовлетворяет x² − 12x + 32 = 0 — ложь: при x = 9 выходит 81 − 108 + 32 = 5, а 5 не 0.
 a value is a root exactly when the substitution gives 0: in x^2 - 12 x + 32 = 0 the value 8 gives 64 - 96 + 32 = 0.
@@ -86892,41 +86900,49 @@ the square and the square root undo each other: 6 * 6 = 36, and the square root 
 the square root of 81 is the positive whole root of x^2 - 81 = 0: 9 * 9 = 81.
 
 what is a root of an equation? a root of an equation is a value that turns it into a true equality.
-is 7 a root of the equation x² − 7x = 0? yes: 49 − 49 = 0.
-every value satisfies x^2 - 9 x + 20 = 0 is false: at x = 6 it gives 36 - 54 + 20 = 2, and 2 is not 0.
-значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 19x + 84 = 0 при x = 12 выходит 144 − 228 + 84 = 0.
-является ли 7 корнем x^2 - 8 x + 15 = 0? нет: 49 - 56 + 15 = 8.
-всякое значение удовлетворяет x² − 7x + 10 = 0 — ложь: при x = 7 выходит 49 − 49 + 10 = 10, а 10 не 0.
-a value is a root exactly when the substitution gives 0: in x^2 - 16 x + 60 = 0 the value 6 gives 36 - 96 + 60 = 0.
-является ли 5 корнем уравнения x² − 8x + 15 = 0? да: 25 − 40 + 15 = 0.
-является ли 10 корнем x^2 - 7 x = 0? нет: 100 - 70 = 30.
-значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 10x + 24 = 0 при x = 4 выходит 16 − 40 + 24 = 0.
-is 5 a root of x^2 - 8 x + 15 = 0? yes: 25 - 40 + 15 = 0.
-является ли 7 корнем уравнения x² − 7x = 0? да: 49 − 49 = 0.
-every value satisfies x^2 - 12 x + 35 = 0 is false: at x = 9 it gives 81 - 108 + 35 = 8, and 8 is not 0.
-корень уравнения — это значение, обращающее его в верное равенство.
-is 7 a root of x^2 - 7 x = 0? yes: 49 - 49 = 0.
-всякое значение удовлетворяет x² − 10x + 21 = 0 — ложь: при x = 10 выходит 100 − 100 + 21 = 21, а 21 не 0.
-a value is a root exactly when the substitution gives 0: in x^2 - 19 x + 84 = 0 the value 12 gives 144 - 228 + 84 = 0.
-is 7 a root of the equation x² − 8x + 15 = 0? no: 49 − 56 + 15 = 8.
+7 — не корень уравнения x² − 8x + 15 = 0: 49 − 56 + 15 = 8.
 every value satisfies x^2 - 7 x + 10 = 0 is false: at x = 7 it gives 49 - 49 + 10 = 10, and 10 is not 0.
-значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 13x + 40 = 0 при x = 8 выходит 64 − 104 + 40 = 0.
-является ли 5 корнем x^2 - 8 x + 15 = 0? да: 25 - 40 + 15 = 0.
-is 10 a root of the equation x² − 7x = 0? no: 100 − 70 = 30.
-a value is a root exactly when the substitution gives 0: in x^2 - 10 x + 24 = 0 the value 4 gives 16 - 40 + 24 = 0.
-что такое корень уравнения? корень уравнения — это значение, обращающее его в верное равенство.
-является ли 7 корнем x^2 - 7 x = 0? да: 49 - 49 = 0.
-всякое значение удовлетворяет x² − 9x + 20 = 0 — ложь: при x = 6 выходит 36 − 54 + 20 = 2, а 2 не 0.
-a root of an equation is a value that turns it into a true equality.
-является ли 7 корнем уравнения x² − 8x + 15 = 0? нет: 49 − 56 + 15 = 8.
-every value satisfies x^2 - 10 x + 21 = 0 is false: at x = 10 it gives 100 - 100 + 21 = 21, and 21 is not 0.
 значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 16x + 60 = 0 при x = 6 выходит 36 − 96 + 60 = 0.
-is 7 a root of x^2 - 8 x + 15 = 0? no: 49 - 56 + 15 = 8.
+является ли 7 корнем x^2 - 8 x + 15 = 0? нет: 49 - 56 + 15 = 8.
 является ли 10 корнем уравнения x² − 7x = 0? нет: 100 − 70 = 30.
-a value is a root exactly when the substitution gives 0: in x^2 - 13 x + 40 = 0 the value 8 gives 64 - 104 + 40 = 0.
+a value is a root exactly when the substitution gives 0: in x^2 - 10 x + 24 = 0 the value 4 gives 16 - 40 + 24 = 0.
 is 5 a root of the equation x² − 8x + 15 = 0? yes: 25 − 40 + 15 = 0.
-is 10 a root of x^2 - 7 x = 0? no: 100 - 70 = 30.
+является ли 7 корнем x^2 - 7 x = 0? да: 49 - 49 = 0.
+всякое значение удовлетворяет x² − 10x + 21 = 0 — ложь: при x = 10 выходит 100 − 100 + 21 = 21, а 21 не 0.
+a root of an equation is a value that turns it into a true equality.
+5 — корень уравнения x² − 8x + 15 = 0: 25 − 40 + 15 = 0.
+10 is not a root of x^2 - 7 x = 0: 100 - 70 = 30.
+значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 13x + 40 = 0 при x = 8 выходит 64 − 104 + 40 = 0.
+is 7 a root of x^2 - 8 x + 15 = 0? no: 49 - 56 + 15 = 8.
+is 10 a root of the equation x² − 7x = 0? no: 100 − 70 = 30.
+every value satisfies x^2 - 12 x + 35 = 0 is false: at x = 9 it gives 81 - 108 + 35 = 8, and 8 is not 0.
+что такое корень уравнения? корень уравнения — это значение, обращающее его в верное равенство.
+is 7 a root of x^2 - 7 x = 0? yes: 49 - 49 = 0.
+всякое значение удовлетворяет x² − 7x + 10 = 0 — ложь: при x = 7 выходит 49 − 49 + 10 = 10, а 10 не 0.
+a value is a root exactly when the substitution gives 0: in x^2 - 19 x + 84 = 0 the value 12 gives 144 - 228 + 84 = 0.
+является ли 7 корнем уравнения x² − 8x + 15 = 0? нет: 49 − 56 + 15 = 8.
+7 is a root of x^2 - 7 x = 0: 49 - 49 = 0.
+значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 10x + 24 = 0 при x = 4 выходит 16 − 40 + 24 = 0.
+является ли 5 корнем x^2 - 8 x + 15 = 0? да: 25 - 40 + 15 = 0.
+является ли 7 корнем уравнения x² − 7x = 0? да: 49 − 49 = 0.
+every value satisfies x^2 - 9 x + 20 = 0 is false: at x = 6 it gives 36 - 54 + 20 = 2, and 2 is not 0.
+корень уравнения — это значение, обращающее его в верное равенство.
+7 is not a root of x^2 - 8 x + 15 = 0: 49 - 56 + 15 = 8.
+10 — не корень уравнения x² − 7x = 0: 100 − 70 = 30.
+a value is a root exactly when the substitution gives 0: in x^2 - 16 x + 60 = 0 the value 6 gives 36 - 96 + 60 = 0.
+is 7 a root of the equation x² − 8x + 15 = 0? no: 49 − 56 + 15 = 8.
+является ли 10 корнем x^2 - 7 x = 0? нет: 100 - 70 = 30.
 всякое значение удовлетворяет x² − 12x + 35 = 0 — ложь: при x = 9 выходит 81 − 108 + 35 = 8, а 8 не 0.
+is 5 a root of x^2 - 8 x + 15 = 0? yes: 25 - 40 + 15 = 0.
+is 7 a root of the equation x² − 7x = 0? yes: 49 − 49 = 0.
+every value satisfies x^2 - 10 x + 21 = 0 is false: at x = 10 it gives 100 - 100 + 21 = 21, and 21 is not 0.
+значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 19x + 84 = 0 при x = 12 выходит 144 − 228 + 84 = 0.
+5 is a root of x^2 - 8 x + 15 = 0: 25 - 40 + 15 = 0.
+7 — корень уравнения x² − 7x = 0: 49 − 49 = 0.
+a value is a root exactly when the substitution gives 0: in x^2 - 13 x + 40 = 0 the value 8 gives 64 - 104 + 40 = 0.
+является ли 5 корнем уравнения x² − 8x + 15 = 0? да: 25 − 40 + 15 = 0.
+is 10 a root of x^2 - 7 x = 0? no: 100 - 70 = 30.
+всякое значение удовлетворяет x² − 9x + 20 = 0 — ложь: при x = 6 выходит 36 − 54 + 20 = 2, а 2 не 0.
 
 what is a variable? x is a variable: it stands for a value, not for a number already known.
 у уравнения один корень — ложь: x² − 14x + 45 = 0 даёт 0 при x = 5 и при x = 9.
@@ -87095,40 +87111,48 @@ every number has a whole square root is false: 54 lies between 7 * 7 = 49 and 8 
 квадратный корень из 100 есть положительный целый корень x² − 100 = 0: 10 × 10 = 100.
 
 is 11 a root of the equation x² − 13x + 40 = 0? no: 121 − 143 + 40 = 18.
-every value satisfies x^2 - 10 x + 24 = 0 is false: at x = 7 it gives 49 - 70 + 24 = 3, and 3 is not 0.
-значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 3x + 2 = 0 при x = 2 выходит 4 − 6 + 2 = 0.
-is 10 a root of x^2 - 10 x = 0? yes: 100 - 100 = 0.
-всякое значение удовлетворяет x² − 13x + 40 = 0 — ложь: при x = 10 выходит 100 − 130 + 40 = 10, а 10 не 0.
-what is a root of an equation? a root of an equation is a value that turns it into a true equality.
-является ли 10 корнем уравнения x² − 10x = 0? да: 100 − 100 = 0.
-a value is a root exactly when the substitution gives 0: in x^2 - 17 x + 70 = 0 the value 7 gives 49 - 119 + 70 = 0.
-is 8 a root of the equation x² − 13x + 40 = 0? yes: 64 − 104 + 40 = 0.
 является ли 11 корнем x^2 - 10 x = 0? нет: 121 - 110 = 11.
-значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 20x + 96 = 0 при x = 12 выходит 144 − 240 + 96 = 0.
-is 11 a root of x^2 - 13 x + 40 = 0? no: 121 - 143 + 40 = 18.
-всякое значение удовлетворяет x² − 7x + 12 = 0 — ложь: при x = 7 выходит 49 − 49 + 12 = 12, а 12 не 0.
-a value is a root exactly when the substitution gives 0: in x^2 - 3 x + 2 = 0 the value 2 gives 4 - 6 + 2 = 0.
-является ли 11 корнем уравнения x² − 13x + 40 = 0? нет: 121 − 143 + 40 = 18.
-every value satisfies x^2 - 13 x + 40 = 0 is false: at x = 10 it gives 100 - 130 + 40 = 10, and 10 is not 0.
-корень уравнения — это значение, обращающее его в верное равенство.
-является ли 10 корнем x^2 - 10 x = 0? да: 100 - 100 = 0.
 всякое значение удовлетворяет x² − 16x + 60 = 0 — ложь: при x = 13 выходит 169 − 208 + 60 = 21, а 21 не 0.
 is 8 a root of x^2 - 13 x + 40 = 0? yes: 64 - 104 + 40 = 0.
-is 11 a root of the equation x² − 10x = 0? no: 121 − 110 = 11.
+is 10 a root of the equation x² − 10x = 0? yes: 100 − 100 = 0.
+every value satisfies x^2 - 10 x + 24 = 0 is false: at x = 7 it gives 49 - 70 + 24 = 3, and 3 is not 0.
+значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 3x + 2 = 0 при x = 2 выходит 4 − 6 + 2 = 0.
+8 is a root of x^2 - 13 x + 40 = 0: 64 - 104 + 40 = 0.
+10 — корень уравнения x² − 10x = 0: 100 − 100 = 0.
 a value is a root exactly when the substitution gives 0: in x^2 - 20 x + 96 = 0 the value 12 gives 144 - 240 + 96 = 0.
 является ли 8 корнем уравнения x² − 13x + 40 = 0? да: 64 − 104 + 40 = 0.
+is 11 a root of x^2 - 10 x = 0? no: 121 - 110 = 11.
+всякое значение удовлетворяет x² − 13x + 40 = 0 — ложь: при x = 10 выходит 100 − 130 + 40 = 10, а 10 не 0.
+what is a root of an equation? a root of an equation is a value that turns it into a true equality.
+11 — не корень уравнения x² − 13x + 40 = 0: 121 − 143 + 40 = 18.
 every value satisfies x^2 - 7 x + 12 = 0 is false: at x = 7 it gives 49 - 49 + 12 = 12, and 12 is not 0.
 значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 23x + 126 = 0 при x = 9 выходит 81 − 207 + 126 = 0.
 является ли 11 корнем x^2 - 13 x + 40 = 0? нет: 121 - 143 + 40 = 18.
+является ли 11 корнем уравнения x² − 10x = 0? нет: 121 − 110 = 11.
+a value is a root exactly when the substitution gives 0: in x^2 - 17 x + 70 = 0 the value 7 gives 49 - 119 + 70 = 0.
+is 8 a root of the equation x² − 13x + 40 = 0? yes: 64 − 104 + 40 = 0.
+является ли 10 корнем x^2 - 10 x = 0? да: 100 - 100 = 0.
 всякое значение удовлетворяет x² − 10x + 24 = 0 — ложь: при x = 7 выходит 49 − 70 + 24 = 3, а 3 не 0.
 a root of an equation is a value that turns it into a true equality.
-is 10 a root of the equation x² − 10x = 0? yes: 100 − 100 = 0.
+8 — корень уравнения x² − 13x + 40 = 0: 64 − 104 + 40 = 0.
+11 is not a root of x^2 - 10 x = 0: 121 - 110 = 11.
+значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 20x + 96 = 0 при x = 12 выходит 144 − 240 + 96 = 0.
+is 11 a root of x^2 - 13 x + 40 = 0? no: 121 - 143 + 40 = 18.
+is 11 a root of the equation x² − 10x = 0? no: 121 − 110 = 11.
 every value satisfies x^2 - 16 x + 60 = 0 is false: at x = 13 it gives 169 - 208 + 60 = 21, and 21 is not 0.
 что такое корень уравнения? корень уравнения — это значение, обращающее его в верное равенство.
-is 11 a root of x^2 - 10 x = 0? no: 121 - 110 = 11.
+is 10 a root of x^2 - 10 x = 0? yes: 100 - 100 = 0.
+всякое значение удовлетворяет x² − 7x + 12 = 0 — ложь: при x = 7 выходит 49 − 49 + 12 = 12, а 12 не 0.
+a value is a root exactly when the substitution gives 0: in x^2 - 3 x + 2 = 0 the value 2 gives 4 - 6 + 2 = 0.
+является ли 11 корнем уравнения x² − 13x + 40 = 0? нет: 121 − 143 + 40 = 18.
+10 is a root of x^2 - 10 x = 0: 100 - 100 = 0.
 значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 17x + 70 = 0 при x = 7 выходит 49 − 119 + 70 = 0.
 является ли 8 корнем x^2 - 13 x + 40 = 0? да: 64 - 104 + 40 = 0.
-является ли 11 корнем уравнения x² − 10x = 0? нет: 121 − 110 = 11.
+является ли 10 корнем уравнения x² − 10x = 0? да: 100 − 100 = 0.
+every value satisfies x^2 - 13 x + 40 = 0 is false: at x = 10 it gives 100 - 130 + 40 = 10, and 10 is not 0.
+корень уравнения — это значение, обращающее его в верное равенство.
+11 is not a root of x^2 - 13 x + 40 = 0: 121 - 143 + 40 = 18.
+11 — не корень уравнения x² − 10x = 0: 121 − 110 = 11.
 a value is a root exactly when the substitution gives 0: in x^2 - 23 x + 126 = 0 the value 9 gives 81 - 207 + 126 = 0.
 
 у уравнения один корень — ложь: x² − 13x + 40 = 0 даёт 0 при x = 5 и при x = 8.
@@ -87298,40 +87322,48 @@ the square of 22 is 484, so the square root of 484 is 22.
 the square root of 196 is the positive whole root of x^2 - 196 = 0: 14 * 14 = 196.
 
 is 11 a root of x^2 - 18 x + 77 = 0? yes: 121 - 198 + 77 = 0.
-всякое значение удовлетворяет x² − 11x + 28 = 0 — ложь: при x = 8 выходит 64 − 88 + 28 = 4, а 4 не 0.
-what is a root of an equation? a root of an equation is a value that turns it into a true equality.
-является ли 15 корнем уравнения x² − 13x = 0? нет: 225 − 195 = 30.
-a root of an equation is a value that turns it into a true equality.
 is 15 a root of the equation x² − 13x = 0? no: 225 − 195 = 30.
-a value is a root exactly when the substitution gives 0: in x^2 - 10 x + 24 = 0 the value 6 gives 36 - 60 + 24 = 0.
-является ли 13 корнем уравнения x² − 13x = 0? да: 169 − 169 = 0.
-a value is a root exactly when the substitution gives 0: in x^2 - 7 x + 12 = 0 the value 3 gives 9 - 21 + 12 = 0.
-is 13 a root of the equation x² − 13x = 0? yes: 169 − 169 = 0.
 a value is a root exactly when the substitution gives 0: in x^2 - 9 x + 14 = 0 the value 7 gives 49 - 63 + 14 = 0.
 является ли 12 корнем уравнения x² − 18x + 77 = 0? нет: 144 − 216 + 77 = 5.
-a value is a root exactly when the substitution gives 0: in x^2 - 6 x + 5 = 0 the value 1 gives 1 - 6 + 5 = 0.
-is 12 a root of the equation x² − 18x + 77 = 0? no: 144 − 216 + 77 = 5.
-every value satisfies x^2 - 16 x + 63 = 0 is false: at x = 10 it gives 100 - 160 + 63 = 3, and 3 is not 0.
-является ли 11 корнем уравнения x² − 18x + 77 = 0? да: 121 − 198 + 77 = 0.
-every value satisfies x^2 - 13 x + 42 = 0 is false: at x = 10 it gives 100 - 130 + 42 = 12, and 12 is not 0.
-is 11 a root of the equation x² − 18x + 77 = 0? yes: 121 − 198 + 77 = 0.
-every value satisfies x^2 - 14 x + 45 = 0 is false: at x = 11 it gives 121 - 154 + 45 = 12, and 12 is not 0.
-что такое корень уравнения? корень уравнения — это значение, обращающее его в верное равенство.
 every value satisfies x^2 - 11 x + 28 = 0 is false: at x = 8 it gives 64 - 88 + 28 = 4, and 4 is not 0.
 корень уравнения — это значение, обращающее его в верное равенство.
-является ли 15 корнем x^2 - 13 x = 0? нет: 225 - 195 = 30.
-значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 10x + 24 = 0 при x = 6 выходит 36 − 60 + 24 = 0.
-is 15 a root of x^2 - 13 x = 0? no: 225 - 195 = 30.
-значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 7x + 12 = 0 при x = 3 выходит 9 − 21 + 12 = 0.
 является ли 13 корнем x^2 - 13 x = 0? да: 169 - 169 = 0.
-значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 9x + 14 = 0 при x = 7 выходит 49 − 63 + 14 = 0.
-is 13 a root of x^2 - 13 x = 0? yes: 169 - 169 = 0.
-значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 6x + 5 = 0 при x = 1 выходит 1 − 6 + 5 = 0.
-является ли 12 корнем x^2 - 18 x + 77 = 0? нет: 144 - 216 + 77 = 5.
 всякое значение удовлетворяет x² − 16x + 63 = 0 — ложь: при x = 10 выходит 100 − 160 + 63 = 3, а 3 не 0.
 is 12 a root of x^2 - 18 x + 77 = 0? no: 144 - 216 + 77 = 5.
+13 — корень уравнения x² − 13x = 0: 169 − 169 = 0.
+a value is a root exactly when the substitution gives 0: in x^2 - 10 x + 24 = 0 the value 6 gives 36 - 60 + 24 = 0.
+12 — не корень уравнения x² − 18x + 77 = 0: 144 − 216 + 77 = 5.
+every value satisfies x^2 - 13 x + 42 = 0 is false: at x = 10 it gives 100 - 130 + 42 = 12, and 12 is not 0.
+is 11 a root of the equation x² − 18x + 77 = 0? yes: 121 − 198 + 77 = 0.
+является ли 15 корнем x^2 - 13 x = 0? нет: 225 - 195 = 30.
+значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 9x + 14 = 0 при x = 7 выходит 49 − 63 + 14 = 0.
+11 is a root of x^2 - 18 x + 77 = 0: 121 - 198 + 77 = 0.
+всякое значение удовлетворяет x² − 11x + 28 = 0 — ложь: при x = 8 выходит 64 − 88 + 28 = 4, а 4 не 0.
+what is a root of an equation? a root of an equation is a value that turns it into a true equality.
+является ли 13 корнем уравнения x² − 13x = 0? да: 169 − 169 = 0.
+a value is a root exactly when the substitution gives 0: in x^2 - 6 x + 5 = 0 the value 1 gives 1 - 6 + 5 = 0.
+is 12 a root of the equation x² − 18x + 77 = 0? no: 144 − 216 + 77 = 5.
+15 is not a root of x^2 - 13 x = 0: 225 - 195 = 30.
+значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 10x + 24 = 0 при x = 6 выходит 36 − 60 + 24 = 0.
+is 13 a root of x^2 - 13 x = 0? yes: 169 - 169 = 0.
 всякое значение удовлетворяет x² − 13x + 42 = 0 — ложь: при x = 10 выходит 100 − 130 + 42 = 12, а 12 не 0.
 является ли 11 корнем x^2 - 18 x + 77 = 0? да: 121 - 198 + 77 = 0.
+является ли 15 корнем уравнения x² − 13x = 0? нет: 225 − 195 = 30.
+a value is a root exactly when the substitution gives 0: in x^2 - 7 x + 12 = 0 the value 3 gives 9 - 21 + 12 = 0.
+11 — корень уравнения x² − 18x + 77 = 0: 121 − 198 + 77 = 0.
+every value satisfies x^2 - 14 x + 45 = 0 is false: at x = 11 it gives 121 - 154 + 45 = 12, and 12 is not 0.
+что такое корень уравнения? корень уравнения — это значение, обращающее его в верное равенство.
+is 15 a root of x^2 - 13 x = 0? no: 225 - 195 = 30.
+значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 6x + 5 = 0 при x = 1 выходит 1 − 6 + 5 = 0.
+является ли 12 корнем x^2 - 18 x + 77 = 0? нет: 144 - 216 + 77 = 5.
+15 — не корень уравнения x² − 13x = 0: 225 − 195 = 30.
+a root of an equation is a value that turns it into a true equality.
+is 13 a root of the equation x² − 13x = 0? yes: 169 − 169 = 0.
+every value satisfies x^2 - 16 x + 63 = 0 is false: at x = 10 it gives 100 - 160 + 63 = 3, and 3 is not 0.
+является ли 11 корнем уравнения x² − 18x + 77 = 0? да: 121 − 198 + 77 = 0.
+13 is a root of x^2 - 13 x = 0: 169 - 169 = 0.
+значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 7x + 12 = 0 при x = 3 выходит 9 − 21 + 12 = 0.
+12 is not a root of x^2 - 18 x + 77 = 0: 144 - 216 + 77 = 5.
 всякое значение удовлетворяет x² − 14x + 45 = 0 — ложь: при x = 11 выходит 121 − 154 + 45 = 12, а 12 не 0.
 
 in x^2 - 18 x + 77 = 0 the letter x stands for a value: put 11 in place of x and it gives 121 - 198 + 77 = 0.
@@ -87500,41 +87532,49 @@ the square and the square root undo each other: 16 * 16 = 256, and the square ro
 what is the square root of 729? the square of 27 is 729, so the square root of 729 is 27.
 квадратный корень из 225 есть положительный целый корень x² − 225 = 0: 15 × 15 = 225.
 
-is 8 a root of x^2 - 8 x = 0? yes: 64 - 64 = 0.
-значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 11x + 30 = 0 при x = 6 выходит 36 − 66 + 30 = 0.
-является ли 8 корнем x^2 - 8 x = 0? да: 64 - 64 = 0.
-значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 14x + 48 = 0 при x = 6 выходит 36 − 84 + 48 = 0.
-is 11 a root of x^2 - 8 x = 0? no: 121 - 88 = 33.
-значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 17x + 70 = 0 при x = 10 выходит 100 − 170 + 70 = 0.
-является ли 11 корнем x^2 - 8 x = 0? нет: 121 - 88 = 33.
-корень уравнения — это значение, обращающее его в верное равенство.
-every value satisfies x^2 - 11 x + 30 = 0 is false: at x = 8 it gives 64 - 88 + 30 = 6, and 6 is not 0.
-что такое корень уравнения? корень уравнения — это значение, обращающее его в верное равенство.
-every value satisfies x^2 - 14 x + 48 = 0 is false: at x = 11 it gives 121 - 154 + 48 = 15, and 15 is not 0.
-is 6 a root of the equation x² − 7x + 6 = 0? yes: 36 − 42 + 6 = 0.
-every value satisfies x^2 - 17 x + 70 = 0 is false: at x = 11 it gives 121 - 187 + 70 = 4, and 4 is not 0.
-является ли 6 корнем уравнения x² − 7x + 6 = 0? да: 36 − 42 + 6 = 0.
-every value satisfies x^2 - 6 x + 5 = 0 is false: at x = 7 it gives 49 - 42 + 5 = 12, and 12 is not 0.
-is 8 a root of the equation x² − 7x + 6 = 0? no: 64 − 56 + 6 = 14.
-a value is a root exactly when the substitution gives 0: in x^2 - 13 x + 36 = 0 the value 4 gives 16 - 52 + 36 = 0.
-является ли 8 корнем уравнения x² − 7x + 6 = 0? нет: 64 − 56 + 6 = 14.
-a value is a root exactly when the substitution gives 0: in x^2 - 11 x + 30 = 0 the value 6 gives 36 - 66 + 30 = 0.
-is 8 a root of the equation x² − 8x = 0? yes: 64 − 64 = 0.
-a value is a root exactly when the substitution gives 0: in x^2 - 14 x + 48 = 0 the value 6 gives 36 - 84 + 48 = 0.
-является ли 8 корнем уравнения x² − 8x = 0? да: 64 − 64 = 0.
-a value is a root exactly when the substitution gives 0: in x^2 - 17 x + 70 = 0 the value 10 gives 100 - 170 + 70 = 0.
-is 11 a root of the equation x² − 8x = 0? no: 121 − 88 = 33.
-a root of an equation is a value that turns it into a true equality.
-является ли 11 корнем уравнения x² − 8x = 0? нет: 121 − 88 = 33.
-what is a root of an equation? a root of an equation is a value that turns it into a true equality.
-всякое значение удовлетворяет x² − 11x + 30 = 0 — ложь: при x = 8 выходит 64 − 88 + 30 = 6, а 6 не 0.
-is 6 a root of x^2 - 7 x + 6 = 0? yes: 36 - 42 + 6 = 0.
+6 is a root of x^2 - 7 x + 6 = 0: 36 - 42 + 6 = 0.
 всякое значение удовлетворяет x² − 14x + 48 = 0 — ложь: при x = 11 выходит 121 − 154 + 48 = 15, а 15 не 0.
 является ли 6 корнем x^2 - 7 x + 6 = 0? да: 36 - 42 + 6 = 0.
+8 — корень уравнения x² − 8x = 0: 64 − 64 = 0.
+a root of an equation is a value that turns it into a true equality.
+является ли 8 корнем уравнения x² − 8x = 0? да: 64 − 64 = 0.
+a value is a root exactly when the substitution gives 0: in x^2 - 11 x + 30 = 0 the value 6 gives 36 - 66 + 30 = 0.
+6 — корень уравнения x² − 7x + 6 = 0: 36 − 42 + 6 = 0.
+every value satisfies x^2 - 17 x + 70 = 0 is false: at x = 11 it gives 121 - 187 + 70 = 4, and 4 is not 0.
+является ли 6 корнем уравнения x² − 7x + 6 = 0? да: 36 − 42 + 6 = 0.
+11 is not a root of x^2 - 8 x = 0: 121 - 88 = 33.
+корень уравнения — это значение, обращающее его в верное равенство.
+is 11 a root of x^2 - 8 x = 0? no: 121 - 88 = 33.
+значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 11x + 30 = 0 при x = 6 выходит 36 − 66 + 30 = 0.
+8 is not a root of x^2 - 7 x + 6 = 0: 64 - 56 + 6 = 14.
 всякое значение удовлетворяет x² − 17x + 70 = 0 — ложь: при x = 11 выходит 121 − 187 + 70 = 4, а 4 не 0.
 is 8 a root of x^2 - 7 x + 6 = 0? no: 64 - 56 + 6 = 14.
+11 — не корень уравнения x² − 8x = 0: 121 − 88 = 33.
+what is a root of an equation? a root of an equation is a value that turns it into a true equality.
+is 11 a root of the equation x² − 8x = 0? no: 121 − 88 = 33.
+a value is a root exactly when the substitution gives 0: in x^2 - 14 x + 48 = 0 the value 6 gives 36 - 84 + 48 = 0.
+8 — не корень уравнения x² − 7x + 6 = 0: 64 − 56 + 6 = 14.
+every value satisfies x^2 - 6 x + 5 = 0 is false: at x = 7 it gives 49 - 42 + 5 = 12, and 12 is not 0.
+is 8 a root of the equation x² − 7x + 6 = 0? no: 64 − 56 + 6 = 14.
+every value satisfies x^2 - 11 x + 30 = 0 is false: at x = 8 it gives 64 - 88 + 30 = 6, and 6 is not 0.
+что такое корень уравнения? корень уравнения — это значение, обращающее его в верное равенство.
+является ли 11 корнем x^2 - 8 x = 0? нет: 121 - 88 = 33.
+значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 14x + 48 = 0 при x = 6 выходит 36 − 84 + 48 = 0.
+is 8 a root of x^2 - 8 x = 0? yes: 64 - 64 = 0.
 всякое значение удовлетворяет x² − 6x + 5 = 0 — ложь: при x = 7 выходит 49 − 42 + 5 = 12, а 12 не 0.
 является ли 8 корнем x^2 - 7 x + 6 = 0? нет: 64 - 56 + 6 = 14.
+всякое значение удовлетворяет x² − 11x + 30 = 0 — ложь: при x = 8 выходит 64 − 88 + 30 = 6, а 6 не 0.
+is 6 a root of x^2 - 7 x + 6 = 0? yes: 36 - 42 + 6 = 0.
+является ли 11 корнем уравнения x² − 8x = 0? нет: 121 − 88 = 33.
+a value is a root exactly when the substitution gives 0: in x^2 - 17 x + 70 = 0 the value 10 gives 100 - 170 + 70 = 0.
+is 8 a root of the equation x² − 8x = 0? yes: 64 − 64 = 0.
+a value is a root exactly when the substitution gives 0: in x^2 - 13 x + 36 = 0 the value 4 gives 16 - 52 + 36 = 0.
+является ли 8 корнем уравнения x² − 7x + 6 = 0? нет: 64 − 56 + 6 = 14.
+every value satisfies x^2 - 14 x + 48 = 0 is false: at x = 11 it gives 121 - 154 + 48 = 15, and 15 is not 0.
+is 6 a root of the equation x² − 7x + 6 = 0? yes: 36 − 42 + 6 = 0.
+8 is a root of x^2 - 8 x = 0: 64 - 64 = 0.
+значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 17x + 70 = 0 при x = 10 выходит 100 − 170 + 70 = 0.
+является ли 8 корнем x^2 - 8 x = 0? да: 64 - 64 = 0.
 значение есть корень ровно тогда, когда подстановка даёт 0: в x² − 13x + 36 = 0 при x = 4 выходит 16 − 52 + 36 = 0.
 
 an equation has one root is false: x^2 - 12 x + 35 = 0 gives 0 at x = 5 and at x = 7.
@@ -145018,61 +145058,85 @@ tout nombre entier supérieur à 1 est un produit de nombres premiers : 85 = 5 �
 jede ganze Zahl größer als 1 ist ein Produkt von Primzahlen: 90 = 2 × 3 × 3 × 5.
 
 21 est-il divisible par 3 ? oui : 21 = 3 × 7, reste 0.
-ist 102 durch 8 teilbar? nein: 102 = 8 × 12 + 6, Rest 6.
-65 est-il divisible par 4 ? non : 65 = 4 × 16 + 1, reste 1.
-jede gerade Zahl ist durch 4 teilbar ist falsch: 10 ist gerade und 10 = 4 × 2 + 2.
-un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 111 est 3, et 3 = 3 × 1.
-eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 126 ist 9, und 9 = 3 × 3.
-que signifie divisible ? un nombre est divisible par un autre quand le reste est 0.
-ist 77 durch 7 teilbar? ja: 77 = 7 × 11, Rest 0.
-45 est-il divisible par 3 ? oui : 45 = 3 × 15, reste 0.
-jede gerade Zahl ist durch 4 teilbar ist falsch: 10 ist gerade und 10 = 4 × 2 + 2.
-tout nombre pair est divisible par 4 est faux : 18 est pair et 18 = 4 × 4 + 2.
-eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 123 ist 6, und 6 = 3 × 2.
-un nombre est divisible par un autre quand le reste est 0.
-ist 64 durch 6 teilbar? nein: 64 = 6 × 10 + 4, Rest 4.
-148 est-il divisible par 10 ? non : 148 = 10 × 14 + 8, reste 8.
-jede gerade Zahl ist durch 4 teilbar ist falsch: 6 ist gerade und 6 = 4 × 1 + 2.
-tout nombre pair est divisible par 4 est faux : 14 est pair et 14 = 4 × 3 + 2.
-eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 120 ist 3, und 3 = 3 × 1.
-un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 132 est 6, et 6 = 3 × 2.
 ist 45 durch 5 teilbar? ja: 45 = 5 × 9, Rest 0.
-117 est-il divisible par 9 ? oui : 117 = 9 × 13, reste 0.
-ist 110 durch 6 teilbar? nein: 110 = 6 × 18 + 2, Rest 2.
+64 n'est pas divisible par 6 : 64 = 6 × 10 + 4, reste 4.
+102 ist nicht durch 8 teilbar: 102 = 8 × 12 + 6, Rest 6.
+148 est-il divisible par 10 ? non : 148 = 10 × 14 + 8, reste 8.
+ist 65 durch 4 teilbar? nein: 65 = 4 × 16 + 1, Rest 1.
+85 est divisible par 5 : 85 = 5 × 17, reste 0.
+jede gerade Zahl ist durch 4 teilbar ist falsch: 10 ist gerade und 10 = 4 × 2 + 2.
 tout nombre pair est divisible par 4 est faux : 14 est pair et 14 = 4 × 3 + 2.
 eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 117 ist 9, und 9 = 3 × 3.
-un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 129 est 12, et 12 = 3 × 4.
-ist 34 durch 4 teilbar? nein: 34 = 4 × 8 + 2, Rest 2.
-102 est-il divisible par 8 ? non : 102 = 8 × 12 + 6, reste 6.
-ist 85 durch 5 teilbar? ja: 85 = 5 × 17, Rest 0.
-tout nombre pair est divisible par 4 est faux : 10 est pair et 10 = 4 × 2 + 2.
-eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 114 ist 6, und 6 = 3 × 2.
 un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 126 est 9, et 9 = 3 × 3.
-ist 21 durch 3 teilbar? ja: 21 = 3 × 7, Rest 0.
-77 est-il divisible par 7 ? oui : 77 = 7 × 11, reste 0.
-ist 65 durch 4 teilbar? nein: 65 = 4 × 16 + 1, Rest 1.
-tout nombre pair est divisible par 4 est faux : 10 est pair et 10 = 4 × 2 + 2.
-eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 111 ist 3, und 3 = 3 × 1.
-un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 123 est 6, et 6 = 3 × 2.
 was bedeutet teilbar? eine Zahl ist durch eine andere teilbar, wenn der Rest 0 ist.
-64 est-il divisible par 6 ? non : 64 = 6 × 10 + 4, reste 4.
-ist 45 durch 3 teilbar? ja: 45 = 3 × 15, Rest 0.
-tout nombre pair est divisible par 4 est faux : 6 est pair et 6 = 4 × 1 + 2.
-jede gerade Zahl ist durch 4 teilbar ist falsch: 18 ist gerade und 18 = 4 × 4 + 2.
-un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 120 est 3, et 3 = 3 × 1.
-eine Zahl ist durch eine andere teilbar, wenn der Rest 0 ist.
-45 est-il divisible par 5 ? oui : 45 = 5 × 9, reste 0.
-ist 148 durch 10 teilbar? nein: 148 = 10 × 14 + 8, Rest 8.
-110 est-il divisible par 6 ? non : 110 = 6 × 18 + 2, reste 2.
-jede gerade Zahl ist durch 4 teilbar ist falsch: 14 ist gerade und 14 = 4 × 3 + 2.
-un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 117 est 9, et 9 = 3 × 3.
-eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 132 ist 6, und 6 = 3 × 2.
 34 est-il divisible par 4 ? non : 34 = 4 × 8 + 2, reste 2.
-ist 117 durch 9 teilbar? ja: 117 = 9 × 13, Rest 0.
+ist 64 durch 6 teilbar? nein: 64 = 6 × 10 + 4, Rest 4.
+77 est divisible par 7 : 77 = 7 × 11, reste 0.
+117 ist durch 9 teilbar: 117 = 9 × 13, Rest 0.
+45 est-il divisible par 3 ? oui : 45 = 3 × 15, reste 0.
+ist 85 durch 5 teilbar? ja: 85 = 5 × 17, Rest 0.
+110 n'est pas divisible par 6 : 110 = 6 × 18 + 2, reste 2.
+jede gerade Zahl ist durch 4 teilbar ist falsch: 14 ist gerade und 14 = 4 × 3 + 2.
+un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 111 est 3, et 3 = 3 × 1.
+eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 123 ist 6, und 6 = 3 × 2.
+un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 132 est 6, et 6 = 3 × 2.
+21 ist durch 3 teilbar: 21 = 3 × 7, Rest 0.
+45 est-il divisible par 5 ? oui : 45 = 5 × 9, reste 0.
+ist 77 durch 7 teilbar? ja: 77 = 7 × 11, Rest 0.
+102 n'est pas divisible par 8 : 102 = 8 × 12 + 6, reste 6.
+148 ist nicht durch 10 teilbar: 148 = 10 × 14 + 8, Rest 8.
+65 est-il divisible par 4 ? non : 65 = 4 × 16 + 1, reste 1.
+ist 110 durch 6 teilbar? nein: 110 = 6 × 18 + 2, Rest 2.
+tout nombre pair est divisible par 4 est faux : 10 est pair et 10 = 4 × 2 + 2.
+jede gerade Zahl ist durch 4 teilbar ist falsch: 18 ist gerade und 18 = 4 × 4 + 2.
+un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 117 est 9, et 9 = 3 × 3.
+eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 129 ist 12, und 12 = 3 × 4.
+que signifie divisible ? un nombre est divisible par un autre quand le reste est 0.
+34 ist nicht durch 4 teilbar: 34 = 4 × 8 + 2, Rest 2.
+64 est-il divisible par 6 ? non : 64 = 6 × 10 + 4, reste 4.
+ist 102 durch 8 teilbar? nein: 102 = 8 × 12 + 6, Rest 6.
+117 est divisible par 9 : 117 = 9 × 13, reste 0.
+45 ist durch 3 teilbar: 45 = 3 × 15, Rest 0.
 85 est-il divisible par 5 ? oui : 85 = 5 × 17, reste 0.
+jede gerade Zahl ist durch 4 teilbar ist falsch: 6 ist gerade und 6 = 4 × 1 + 2.
+tout nombre pair est divisible par 4 est faux : 14 est pair et 14 = 4 × 3 + 2.
+eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 114 ist 6, und 6 = 3 × 2.
+un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 123 est 6, et 6 = 3 × 2.
+eine Zahl ist durch eine andere teilbar, wenn der Rest 0 ist.
+21 est divisible par 3 : 21 = 3 × 7, reste 0.
+45 ist durch 5 teilbar: 45 = 5 × 9, Rest 0.
+77 est-il divisible par 7 ? oui : 77 = 7 × 11, reste 0.
+ist 117 durch 9 teilbar? ja: 117 = 9 × 13, Rest 0.
+148 n'est pas divisible par 10 : 148 = 10 × 14 + 8, reste 8.
+65 ist nicht durch 4 teilbar: 65 = 4 × 16 + 1, Rest 1.
+110 est-il divisible par 6 ? non : 110 = 6 × 18 + 2, reste 2.
+jede gerade Zahl ist durch 4 teilbar ist falsch: 10 ist gerade und 10 = 4 × 2 + 2.
+tout nombre pair est divisible par 4 est faux : 18 est pair et 18 = 4 × 4 + 2.
+eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 120 ist 3, und 3 = 3 × 1.
+un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 129 est 12, et 12 = 3 × 4.
+ist 21 durch 3 teilbar? ja: 21 = 3 × 7, Rest 0.
+34 n'est pas divisible par 4 : 34 = 4 × 8 + 2, reste 2.
+64 ist nicht durch 6 teilbar: 64 = 6 × 10 + 4, Rest 4.
+102 est-il divisible par 8 ? non : 102 = 8 × 12 + 6, reste 6.
+ist 148 durch 10 teilbar? nein: 148 = 10 × 14 + 8, Rest 8.
+45 est divisible par 3 : 45 = 3 × 15, reste 0.
+85 ist durch 5 teilbar: 85 = 5 × 17, Rest 0.
+tout nombre pair est divisible par 4 est faux : 6 est pair et 6 = 4 × 1 + 2.
 jede gerade Zahl ist durch 4 teilbar ist falsch: 14 ist gerade und 14 = 4 × 3 + 2.
 un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 114 est 6, et 6 = 3 × 2.
-eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 129 ist 12, und 12 = 3 × 4.
+eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 126 ist 9, und 9 = 3 × 3.
+un nombre est divisible par un autre quand le reste est 0.
+ist 34 durch 4 teilbar? nein: 34 = 4 × 8 + 2, Rest 2.
+45 est divisible par 5 : 45 = 5 × 9, reste 0.
+77 ist durch 7 teilbar: 77 = 7 × 11, Rest 0.
+117 est-il divisible par 9 ? oui : 117 = 9 × 13, reste 0.
+ist 45 durch 3 teilbar? ja: 45 = 3 × 15, Rest 0.
+65 n'est pas divisible par 4 : 65 = 4 × 16 + 1, reste 1.
+110 ist nicht durch 6 teilbar: 110 = 6 × 18 + 2, Rest 2.
+tout nombre pair est divisible par 4 est faux : 10 est pair et 10 = 4 × 2 + 2.
+eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 111 ist 3, und 3 = 3 × 1.
+un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 120 est 3, et 3 = 3 × 1.
+eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 132 ist 6, und 6 = 3 × 2.
 
 quelle est la somme des 2 premiers nombres impairs ? 1 + 3 = 4.
 was ist die Summe der ersten 7 ungeraden Zahlen? 1 + 3 + 5 + 7 + 9 + 11 + 13 = 49.
@@ -145360,59 +145424,83 @@ alle ungeraden Zahlen sind Primzahlen ist falsch: 45 ist ungerade und 45 = 3 × 
 tout nombre entier supérieur à 1 est un produit de nombres premiers : 100 = 2 × 2 × 5 × 5.
 
 was bedeutet teilbar? eine Zahl ist durch eine andere teilbar, wenn der Rest 0 ist.
-47 est-il divisible par 4 ? non : 47 = 4 × 11 + 3, reste 3.
-ist 176 durch 10 teilbar? nein: 176 = 10 × 17 + 6, Rest 6.
-tout nombre pair est divisible par 4 est faux : 38 est pair et 38 = 4 × 9 + 2.
-eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 159 ist 15, und 15 = 3 × 5.
-un nombre est divisible par un autre quand le reste est 0.
-ist 47 durch 4 teilbar? nein: 47 = 4 × 11 + 3, Rest 3.
-144 est-il divisible par 9 ? oui : 144 = 9 × 16, reste 0.
-jede gerade Zahl ist durch 4 teilbar ist falsch: 38 ist gerade und 38 = 4 × 9 + 2.
-un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 117 est 9, et 9 = 3 × 3.
-eine Zahl ist durch eine andere teilbar, wenn der Rest 0 ist.
-30 est-il divisible par 3 ? oui : 30 = 3 × 10, reste 0.
-ist 144 durch 9 teilbar? ja: 144 = 9 × 16, Rest 0.
+45 est-il divisible par 5 ? oui : 45 = 5 × 9, reste 0.
+ist 60 durch 5 teilbar? ja: 60 = 5 × 12, Rest 0.
+98 est divisible par 7 : 98 = 7 × 14, reste 0.
+176 ist nicht durch 10 teilbar: 176 = 10 × 17 + 6, Rest 6.
 tout nombre pair est divisible par 4 est faux : 10 est pair et 10 = 4 × 2 + 2.
 eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 117 ist 9, und 9 = 3 × 3.
 un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 171 est 9, et 9 = 3 × 3.
-ist 30 durch 3 teilbar? ja: 30 = 3 × 10, Rest 0.
-121 est-il divisible par 8 ? non : 121 = 8 × 15 + 1, reste 1.
-jede gerade Zahl ist durch 4 teilbar ist falsch: 10 ist gerade und 10 = 4 × 2 + 2.
-un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 114 est 6, et 6 = 3 × 2.
-eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 171 ist 9, und 9 = 3 × 3.
-45 est-il divisible par 5 ? oui : 45 = 5 × 9, reste 0.
-ist 121 durch 8 teilbar? nein: 121 = 8 × 15 + 1, Rest 1.
-tout nombre pair est divisible par 4 est faux : 10 est pair et 10 = 4 × 2 + 2.
-eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 114 ist 6, und 6 = 3 × 2.
-un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 168 est 15, et 15 = 3 × 5.
-ist 45 durch 5 teilbar? ja: 45 = 5 × 9, Rest 0.
-98 est-il divisible par 7 ? oui : 98 = 7 × 14, reste 0.
+34 ist nicht durch 4 teilbar: 34 = 4 × 8 + 2, Rest 2.
+47 est-il divisible par 4 ? non : 47 = 4 × 11 + 3, reste 3.
+ist 98 durch 7 teilbar? ja: 98 = 7 × 14, Rest 0.
+144 est divisible par 9 : 144 = 9 × 16, reste 0.
 jede gerade Zahl ist durch 4 teilbar ist falsch: 10 ist gerade und 10 = 4 × 2 + 2.
 un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 111 est 3, et 3 = 3 × 1.
 eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 168 ist 15, und 15 = 3 × 5.
+21 est divisible par 3 : 21 = 3 × 7, reste 0.
+30 ist durch 3 teilbar: 30 = 3 × 10, Rest 0.
+83 est-il divisible par 6 ? non : 83 = 6 × 13 + 5, reste 5.
+ist 144 durch 9 teilbar? ja: 144 = 9 × 16, Rest 0.
+54 est divisible par 3 : 54 = 3 × 18, reste 0.
+jede gerade Zahl ist durch 4 teilbar ist falsch: 42 ist gerade und 42 = 4 × 10 + 2.
+un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 162 est 9, et 9 = 3 × 3.
+ist 21 durch 3 teilbar? ja: 21 = 3 × 7, Rest 0.
+45 est divisible par 5 : 45 = 5 × 9, reste 0.
+60 ist durch 5 teilbar: 60 = 5 × 12, Rest 0.
+121 est-il divisible par 8 ? non : 121 = 8 × 15 + 1, reste 1.
+ist 54 durch 3 teilbar? ja: 54 = 3 × 18, Rest 0.
+tout nombre pair est divisible par 4 est faux : 38 est pair et 38 = 4 × 9 + 2.
+eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 159 ist 15, und 15 = 3 × 5.
+un nombre est divisible par un autre quand le reste est 0.
+ist 45 durch 5 teilbar? ja: 45 = 5 × 9, Rest 0.
+47 n'est pas divisible par 4 : 47 = 4 × 11 + 3, reste 3.
+98 ist durch 7 teilbar: 98 = 7 × 14, Rest 0.
+176 est-il divisible par 10 ? non : 176 = 10 × 17 + 6, reste 6.
+jede gerade Zahl ist durch 4 teilbar ist falsch: 10 ist gerade und 10 = 4 × 2 + 2.
+un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 114 est 6, et 6 = 3 × 2.
+eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 171 ist 9, und 9 = 3 × 3.
 34 est-il divisible par 4 ? non : 34 = 4 × 8 + 2, reste 2.
-ist 98 durch 7 teilbar? ja: 98 = 7 × 14, Rest 0.
+ist 47 durch 4 teilbar? nein: 47 = 4 × 11 + 3, Rest 3.
+83 n'est pas divisible par 6 : 83 = 6 × 13 + 5, reste 5.
+144 ist durch 9 teilbar: 144 = 9 × 16, Rest 0.
 tout nombre pair est divisible par 4 est faux : 6 est pair et 6 = 4 × 1 + 2.
 eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 111 ist 3, und 3 = 3 × 1.
 un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 165 est 12, et 12 = 3 × 4.
+21 ist durch 3 teilbar: 21 = 3 × 7, Rest 0.
+30 est-il divisible par 3 ? oui : 30 = 3 × 10, reste 0.
+ist 83 durch 6 teilbar? nein: 83 = 6 × 13 + 5, Rest 5.
+121 n'est pas divisible par 8 : 121 = 8 × 15 + 1, reste 1.
+54 ist durch 3 teilbar: 54 = 3 × 18, Rest 0.
+tout nombre pair est divisible par 4 est faux : 42 est pair et 42 = 4 × 10 + 2.
+eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 162 ist 9, und 9 = 3 × 3.
+que signifie divisible ? un nombre est divisible par un autre quand le reste est 0.
+45 ist durch 5 teilbar: 45 = 5 × 9, Rest 0.
+60 est-il divisible par 5 ? oui : 60 = 5 × 12, reste 0.
+ist 121 durch 8 teilbar? nein: 121 = 8 × 15 + 1, Rest 1.
+176 n'est pas divisible par 10 : 176 = 10 × 17 + 6, reste 6.
+jede gerade Zahl ist durch 4 teilbar ist falsch: 38 ist gerade und 38 = 4 × 9 + 2.
+un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 117 est 9, et 9 = 3 × 3.
+eine Zahl ist durch eine andere teilbar, wenn der Rest 0 ist.
+34 n'est pas divisible par 4 : 34 = 4 × 8 + 2, reste 2.
+47 ist nicht durch 4 teilbar: 47 = 4 × 11 + 3, Rest 3.
+98 est-il divisible par 7 ? oui : 98 = 7 × 14, reste 0.
+ist 176 durch 10 teilbar? nein: 176 = 10 × 17 + 6, Rest 6.
+tout nombre pair est divisible par 4 est faux : 10 est pair et 10 = 4 × 2 + 2.
+eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 114 ist 6, und 6 = 3 × 2.
+un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 168 est 15, et 15 = 3 × 5.
 ist 34 durch 4 teilbar? nein: 34 = 4 × 8 + 2, Rest 2.
-83 est-il divisible par 6 ? non : 83 = 6 × 13 + 5, reste 5.
+30 est divisible par 3 : 30 = 3 × 10, reste 0.
+83 ist nicht durch 6 teilbar: 83 = 6 × 13 + 5, Rest 5.
+144 est-il divisible par 9 ? oui : 144 = 9 × 16, reste 0.
 jede gerade Zahl ist durch 4 teilbar ist falsch: 6 ist gerade und 6 = 4 × 1 + 2.
 tout nombre pair est divisible par 4 est faux : 42 est pair et 42 = 4 × 10 + 2.
 eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 165 ist 12, und 12 = 3 × 4.
 21 est-il divisible par 3 ? oui : 21 = 3 × 7, reste 0.
-ist 83 durch 6 teilbar? nein: 83 = 6 × 13 + 5, Rest 5.
+ist 30 durch 3 teilbar? ja: 30 = 3 × 10, Rest 0.
+60 est divisible par 5 : 60 = 5 × 12, reste 0.
+121 ist nicht durch 8 teilbar: 121 = 8 × 15 + 1, Rest 1.
 54 est-il divisible par 3 ? oui : 54 = 3 × 18, reste 0.
-jede gerade Zahl ist durch 4 teilbar ist falsch: 42 ist gerade und 42 = 4 × 10 + 2.
-un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 162 est 9, et 9 = 3 × 3.
-ist 21 durch 3 teilbar? ja: 21 = 3 × 7, Rest 0.
-60 est-il divisible par 5 ? oui : 60 = 5 × 12, reste 0.
-ist 54 durch 3 teilbar? ja: 54 = 3 × 18, Rest 0.
-tout nombre pair est divisible par 4 est faux : 42 est pair et 42 = 4 × 10 + 2.
-eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 162 ist 9, und 9 = 3 × 3.
-que signifie divisible ? un nombre est divisible par un autre quand le reste est 0.
-ist 60 durch 5 teilbar? ja: 60 = 5 × 12, Rest 0.
-176 est-il divisible par 10 ? non : 176 = 10 × 17 + 6, reste 6.
 jede gerade Zahl ist durch 4 teilbar ist falsch: 42 ist gerade und 42 = 4 × 10 + 2.
 un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 159 est 15, et 15 = 3 × 5.
 
@@ -145701,60 +145789,84 @@ ist 152 eine Primzahl? nein: 152 = 2 × 76.
 tous les nombres impairs sont premiers est faux : 75 est impair et 75 = 3 × 25.
 jede ganze Zahl größer als 1 ist ein Produkt von Primzahlen: 116 = 2 × 2 × 29.
 
-45 est-il divisible par 5 ? oui : 45 = 5 × 9, reste 0.
-ist 97 durch 6 teilbar? nein: 97 = 6 × 16 + 1, Rest 1.
+34 est-il divisible par 4 ? non : 34 = 4 × 8 + 2, reste 2.
+99 ist durch 9 teilbar: 99 = 9 × 11, Rest 0.
+57 n'est pas divisible par 4 : 57 = 4 × 14 + 1, reste 1.
+ist 147 durch 8 teilbar? nein: 147 = 8 × 18 + 3, Rest 3.
+tout nombre pair est divisible par 4 est faux : 66 est pair et 66 = 4 × 16 + 2.
+eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 204 ist 6, und 6 = 3 × 2.
+21 est divisible par 3 : 21 = 3 × 7, reste 0.
+ist 99 durch 9 teilbar? ja: 99 = 9 × 11, Rest 0.
+57 est-il divisible par 4 ? non : 57 = 4 × 14 + 1, reste 1.
+119 ist durch 7 teilbar: 119 = 7 × 17, Rest 0.
 tout nombre pair est divisible par 4 est faux : 66 est pair et 66 = 4 × 16 + 2.
 eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 201 ist 3, und 3 = 3 × 1.
 21 est-il divisible par 3 ? oui : 21 = 3 × 7, reste 0.
-ist 57 durch 4 teilbar? nein: 57 = 4 × 14 + 1, Rest 1.
-tout nombre pair est divisible par 4 est faux : 10 est pair et 10 = 4 × 2 + 2.
-eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 117 ist 9, und 9 = 3 × 3.
-un nombre est divisible par un autre quand le reste est 0.
-ist 125 durch 10 teilbar? nein: 125 = 10 × 12 + 5, Rest 5.
-147 est-il divisible par 8 ? non : 147 = 8 × 18 + 3, reste 3.
-eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 111 ist 3, und 3 = 3 × 1.
-un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 207 est 9, et 9 = 3 × 3.
-ist 82 durch 8 teilbar? nein: 82 = 8 × 10 + 2, Rest 2.
-97 est-il divisible par 6 ? non : 97 = 6 × 16 + 1, reste 1.
-jede gerade Zahl ist durch 4 teilbar ist falsch: 66 ist gerade und 66 = 4 × 16 + 2.
-un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 201 est 3, et 3 = 3 × 1.
-ist 34 durch 4 teilbar? nein: 34 = 4 × 8 + 2, Rest 2.
-57 est-il divisible par 4 ? non : 57 = 4 × 14 + 1, reste 1.
-jede gerade Zahl ist durch 4 teilbar ist falsch: 10 ist gerade und 10 = 4 × 2 + 2.
-un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 117 est 9, et 9 = 3 × 3.
-was bedeutet teilbar? eine Zahl ist durch eine andere teilbar, wenn der Rest 0 ist.
-125 est-il divisible par 10 ? non : 125 = 10 × 12 + 5, reste 5.
-jede gerade Zahl ist durch 4 teilbar ist falsch: 6 ist gerade und 6 = 4 × 1 + 2.
-un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 111 est 3, et 3 = 3 × 1.
-eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 210 ist 3, und 3 = 3 × 1.
-82 est-il divisible par 8 ? non : 82 = 8 × 10 + 2, reste 2.
+82 ist nicht durch 8 teilbar: 82 = 8 × 10 + 2, Rest 2.
+39 est divisible par 3 : 39 = 3 × 13, reste 0.
 ist 119 durch 7 teilbar? ja: 119 = 7 × 17, Rest 0.
-tout nombre pair est divisible par 4 est faux : 66 est pair et 66 = 4 × 16 + 2.
-eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 204 ist 6, und 6 = 3 × 2.
-34 est-il divisible par 4 ? non : 34 = 4 × 8 + 2, reste 2.
-ist 75 durch 5 teilbar? ja: 75 = 5 × 15, Rest 0.
 tout nombre pair est divisible par 4 est faux : 10 est pair et 10 = 4 × 2 + 2.
 eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 198 ist 18, und 18 = 3 × 6.
 que signifie divisible ? un nombre est divisible par un autre quand le reste est 0.
-ist 39 durch 3 teilbar? ja: 39 = 3 × 13, Rest 0.
+ist 82 durch 8 teilbar? nein: 82 = 8 × 10 + 2, Rest 2.
+39 est-il divisible par 3 ? oui : 39 = 3 × 13, reste 0.
+97 ist nicht durch 6 teilbar: 97 = 6 × 16 + 1, Rest 1.
+tout nombre pair est divisible par 4 est faux : 10 est pair et 10 = 4 × 2 + 2.
+eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 117 ist 9, und 9 = 3 × 3.
+un nombre est divisible par un autre quand le reste est 0.
+45 ist durch 5 teilbar: 45 = 5 × 9, Rest 0.
+125 n'est pas divisible par 10 : 125 = 10 × 12 + 5, reste 5.
+ist 97 durch 6 teilbar? nein: 97 = 6 × 16 + 1, Rest 1.
 tout nombre pair est divisible par 4 est faux : 6 est pair et 6 = 4 × 1 + 2.
 eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 114 ist 6, und 6 = 3 × 2.
 un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 210 est 3, et 3 = 3 × 1.
-ist 99 durch 9 teilbar? ja: 99 = 9 × 11, Rest 0.
-119 est-il divisible par 7 ? oui : 119 = 7 × 17, reste 0.
+ist 45 durch 5 teilbar? ja: 45 = 5 × 9, Rest 0.
+125 est-il divisible par 10 ? non : 125 = 10 × 12 + 5, reste 5.
+75 ist durch 5 teilbar: 75 = 5 × 15, Rest 0.
+147 n'est pas divisible par 8 : 147 = 8 × 18 + 3, reste 3.
+eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 111 ist 3, und 3 = 3 × 1.
+un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 207 est 9, et 9 = 3 × 3.
+34 ist nicht durch 4 teilbar: 34 = 4 × 8 + 2, Rest 2.
+99 est divisible par 9 : 99 = 9 × 11, reste 0.
+ist 75 durch 5 teilbar? ja: 75 = 5 × 15, Rest 0.
+147 est-il divisible par 8 ? non : 147 = 8 × 18 + 3, reste 3.
 jede gerade Zahl ist durch 4 teilbar ist falsch: 70 ist gerade und 70 = 4 × 17 + 2.
 un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 204 est 6, et 6 = 3 × 2.
-ist 45 durch 5 teilbar? ja: 45 = 5 × 9, Rest 0.
-75 est-il divisible par 5 ? oui : 75 = 5 × 15, reste 0.
+ist 34 durch 4 teilbar? nein: 34 = 4 × 8 + 2, Rest 2.
+99 est-il divisible par 9 ? oui : 99 = 9 × 11, reste 0.
+57 ist nicht durch 4 teilbar: 57 = 4 × 14 + 1, Rest 1.
+119 est divisible par 7 : 119 = 7 × 17, reste 0.
+jede gerade Zahl ist durch 4 teilbar ist falsch: 66 ist gerade und 66 = 4 × 16 + 2.
+un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 201 est 3, et 3 = 3 × 1.
+21 ist durch 3 teilbar: 21 = 3 × 7, Rest 0.
+82 n'est pas divisible par 8 : 82 = 8 × 10 + 2, reste 2.
+ist 57 durch 4 teilbar? nein: 57 = 4 × 14 + 1, Rest 1.
+119 est-il divisible par 7 ? oui : 119 = 7 × 17, reste 0.
 jede gerade Zahl ist durch 4 teilbar ist falsch: 66 ist gerade und 66 = 4 × 16 + 2.
 un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 198 est 18, et 18 = 3 × 6.
 ist 21 durch 3 teilbar? ja: 21 = 3 × 7, Rest 0.
-39 est-il divisible par 3 ? oui : 39 = 3 × 13, reste 0.
+82 est-il divisible par 8 ? non : 82 = 8 × 10 + 2, reste 2.
+39 ist durch 3 teilbar: 39 = 3 × 13, Rest 0.
+97 n'est pas divisible par 6 : 97 = 6 × 16 + 1, reste 1.
+jede gerade Zahl ist durch 4 teilbar ist falsch: 10 ist gerade und 10 = 4 × 2 + 2.
+un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 117 est 9, et 9 = 3 × 3.
+was bedeutet teilbar? eine Zahl ist durch eine andere teilbar, wenn der Rest 0 ist.
+45 est divisible par 5 : 45 = 5 × 9, reste 0.
+ist 39 durch 3 teilbar? ja: 39 = 3 × 13, Rest 0.
+97 est-il divisible par 6 ? non : 97 = 6 × 16 + 1, reste 1.
 jede gerade Zahl ist durch 4 teilbar ist falsch: 10 ist gerade und 10 = 4 × 2 + 2.
 un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 114 est 6, et 6 = 3 × 2.
 eine Zahl ist durch eine andere teilbar, wenn der Rest 0 ist.
-99 est-il divisible par 9 ? oui : 99 = 9 × 11, reste 0.
-ist 147 durch 8 teilbar? nein: 147 = 8 × 18 + 3, Rest 3.
+45 est-il divisible par 5 ? oui : 45 = 5 × 9, reste 0.
+125 ist nicht durch 10 teilbar: 125 = 10 × 12 + 5, Rest 5.
+75 est divisible par 5 : 75 = 5 × 15, reste 0.
+jede gerade Zahl ist durch 4 teilbar ist falsch: 6 ist gerade und 6 = 4 × 1 + 2.
+un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 111 est 3, et 3 = 3 × 1.
+eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 210 ist 3, und 3 = 3 × 1.
+34 n'est pas divisible par 4 : 34 = 4 × 8 + 2, reste 2.
+ist 125 durch 10 teilbar? nein: 125 = 10 × 12 + 5, Rest 5.
+75 est-il divisible par 5 ? oui : 75 = 5 × 15, reste 0.
+147 ist nicht durch 8 teilbar: 147 = 8 × 18 + 3, Rest 3.
 tout nombre pair est divisible par 4 est faux : 70 est pair et 70 = 4 × 17 + 2.
 eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 207 ist 9, und 9 = 3 × 3.
 
@@ -146044,60 +146156,84 @@ ist 191 eine Primzahl? ja: die Teiler von 191 sind 1 und 191.
 tout nombre entier supérieur à 1 est un produit de nombres premiers : 85 = 5 × 17.
 
 ist 21 durch 3 teilbar? ja: 21 = 3 × 7, Rest 0.
-153 est-il divisible par 10 ? non : 153 = 10 × 15 + 3, reste 3.
-jede gerade Zahl ist durch 4 teilbar ist falsch: 94 ist gerade und 94 = 4 × 23 + 2.
-un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 249 est 15, et 15 = 3 × 5.
-ist 108 durch 8 teilbar? nein: 108 = 8 × 13 + 4, Rest 4.
-tout nombre pair est divisible par 4 est faux : 10 est pair et 10 = 4 × 2 + 2.
-eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 243 ist 9, und 9 = 3 × 3.
-50 est-il divisible par 5 ? oui : 50 = 5 × 10, reste 0.
-jede gerade Zahl ist durch 4 teilbar ist falsch: 6 ist gerade und 6 = 4 × 1 + 2.
-un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 117 est 9, et 9 = 3 × 3.
-ist 34 durch 4 teilbar? nein: 34 = 4 × 8 + 2, Rest 2.
-48 est-il divisible par 3 ? oui : 48 = 3 × 16, reste 0.
-eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 111 ist 3, und 3 = 3 × 1.
-un nombre est divisible par un autre quand le reste est 0.
-ist 126 durch 9 teilbar? ja: 126 = 9 × 14, Rest 0.
-tout nombre pair est divisible par 4 est faux : 90 est pair et 90 = 4 × 22 + 2.
-eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 246 ist 12, und 12 = 3 × 4.
 70 est-il divisible par 6 ? non : 70 = 6 × 11 + 4, reste 4.
-jede gerade Zahl ist durch 4 teilbar ist falsch: 10 ist gerade und 10 = 4 × 2 + 2.
-un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 237 est 12, et 12 = 3 × 4.
-ist 45 durch 5 teilbar? ja: 45 = 5 × 9, Rest 0.
-70 est-il divisible par 4 ? non : 70 = 4 × 17 + 2, reste 2.
-eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 114 ist 6, und 6 = 3 × 2.
-que signifie divisible ? un nombre est divisible par un autre quand le reste est 0.
-ist 153 durch 10 teilbar? nein: 153 = 10 × 15 + 3, Rest 3.
-tout nombre pair est divisible par 4 est faux : 94 est pair et 94 = 4 × 23 + 2.
-eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 249 ist 15, und 15 = 3 × 5.
-84 est-il divisible par 7 ? oui : 84 = 7 × 12, reste 0.
-jede gerade Zahl ist durch 4 teilbar ist falsch: 10 ist gerade und 10 = 4 × 2 + 2.
-un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 240 est 6, et 6 = 3 × 2.
-ist 50 durch 5 teilbar? ja: 50 = 5 × 10, Rest 0.
-90 est-il divisible par 5 ? oui : 90 = 5 × 18, reste 0.
-eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 117 ist 9, und 9 = 3 × 3.
-21 est-il divisible par 3 ? oui : 21 = 3 × 7, reste 0.
-ist 48 durch 3 teilbar? ja: 48 = 3 × 16, Rest 0.
-tout nombre pair est divisible par 4 est faux : 94 est pair et 94 = 4 × 23 + 2.
-eine Zahl ist durch eine andere teilbar, wenn der Rest 0 ist.
-108 est-il divisible par 8 ? non : 108 = 8 × 13 + 4, reste 4.
-jede gerade Zahl ist durch 4 teilbar ist falsch: 90 ist gerade und 90 = 4 × 22 + 2.
-un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 243 est 9, et 9 = 3 × 3.
-ist 70 durch 6 teilbar? nein: 70 = 6 × 11 + 4, Rest 4.
-tout nombre pair est divisible par 4 est faux : 6 est pair et 6 = 4 × 1 + 2.
-eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 237 ist 12, und 12 = 3 × 4.
-34 est-il divisible par 4 ? non : 34 = 4 × 8 + 2, reste 2.
-ist 70 durch 4 teilbar? nein: 70 = 4 × 17 + 2, Rest 2.
-un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 111 est 3, et 3 = 3 × 1.
-was bedeutet teilbar? eine Zahl ist durch eine andere teilbar, wenn der Rest 0 ist.
-126 est-il divisible par 9 ? oui : 126 = 9 × 14, reste 0.
-jede gerade Zahl ist durch 4 teilbar ist falsch: 94 ist gerade und 94 = 4 × 23 + 2.
-un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 246 est 12, et 12 = 3 × 4.
-ist 84 durch 7 teilbar? ja: 84 = 7 × 12, Rest 0.
+153 ist nicht durch 10 teilbar: 153 = 10 × 15 + 3, Rest 3.
 tout nombre pair est divisible par 4 est faux : 10 est pair et 10 = 4 × 2 + 2.
 eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 240 ist 6, und 6 = 3 × 2.
-45 est-il divisible par 5 ? oui : 45 = 5 × 9, reste 0.
+34 est-il divisible par 4 ? non : 34 = 4 × 8 + 2, reste 2.
+84 ist durch 7 teilbar: 84 = 7 × 12, Rest 0.
+48 est divisible par 3 : 48 = 3 × 16, reste 0.
+jede gerade Zahl ist durch 4 teilbar ist falsch: 94 ist gerade und 94 = 4 × 23 + 2.
+un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 246 est 12, et 12 = 3 × 4.
+45 ist durch 5 teilbar: 45 = 5 × 9, Rest 0.
+108 n'est pas divisible par 8 : 108 = 8 × 13 + 4, reste 4.
 ist 90 durch 5 teilbar? ja: 90 = 5 × 18, Rest 0.
+un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 111 est 3, et 3 = 3 × 1.
+was bedeutet teilbar? eine Zahl ist durch eine andere teilbar, wenn der Rest 0 ist.
+50 est divisible par 5 : 50 = 5 × 10, reste 0.
+ist 153 durch 10 teilbar? nein: 153 = 10 × 15 + 3, Rest 3.
+tout nombre pair est divisible par 4 est faux : 6 est pair et 6 = 4 × 1 + 2.
+eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 237 ist 12, und 12 = 3 × 4.
+21 est divisible par 3 : 21 = 3 × 7, reste 0.
+ist 84 durch 7 teilbar? ja: 84 = 7 × 12, Rest 0.
+48 est-il divisible par 3 ? oui : 48 = 3 × 16, reste 0.
+jede gerade Zahl ist durch 4 teilbar ist falsch: 90 ist gerade und 90 = 4 × 22 + 2.
+un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 243 est 9, et 9 = 3 × 3.
+ist 45 durch 5 teilbar? ja: 45 = 5 × 9, Rest 0.
+108 est-il divisible par 8 ? non : 108 = 8 × 13 + 4, reste 4.
+70 ist nicht durch 4 teilbar: 70 = 4 × 17 + 2, Rest 2.
+tout nombre pair est divisible par 4 est faux : 94 est pair et 94 = 4 × 23 + 2.
+eine Zahl ist durch eine andere teilbar, wenn der Rest 0 ist.
+50 est-il divisible par 5 ? oui : 50 = 5 × 10, reste 0.
+126 ist durch 9 teilbar: 126 = 9 × 14, Rest 0.
+90 est divisible par 5 : 90 = 5 × 18, reste 0.
+eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 117 ist 9, und 9 = 3 × 3.
+21 est-il divisible par 3 ? oui : 21 = 3 × 7, reste 0.
+70 ist nicht durch 6 teilbar: 70 = 6 × 11 + 4, Rest 4.
+153 n'est pas divisible par 10 : 153 = 10 × 15 + 3, reste 3.
+jede gerade Zahl ist durch 4 teilbar ist falsch: 10 ist gerade und 10 = 4 × 2 + 2.
+un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 240 est 6, et 6 = 3 × 2.
+34 ist nicht durch 4 teilbar: 34 = 4 × 8 + 2, Rest 2.
+84 est divisible par 7 : 84 = 7 × 12, reste 0.
+ist 70 durch 4 teilbar? nein: 70 = 4 × 17 + 2, Rest 2.
+tout nombre pair est divisible par 4 est faux : 94 est pair et 94 = 4 × 23 + 2.
+eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 249 ist 15, und 15 = 3 × 5.
+45 est divisible par 5 : 45 = 5 × 9, reste 0.
+ist 126 durch 9 teilbar? ja: 126 = 9 × 14, Rest 0.
+90 est-il divisible par 5 ? oui : 90 = 5 × 18, reste 0.
+eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 114 ist 6, und 6 = 3 × 2.
+que signifie divisible ? un nombre est divisible par un autre quand le reste est 0.
+ist 70 durch 6 teilbar? nein: 70 = 6 × 11 + 4, Rest 4.
+153 est-il divisible par 10 ? non : 153 = 10 × 15 + 3, reste 3.
+jede gerade Zahl ist durch 4 teilbar ist falsch: 10 ist gerade und 10 = 4 × 2 + 2.
+un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 237 est 12, et 12 = 3 × 4.
+ist 34 durch 4 teilbar? nein: 34 = 4 × 8 + 2, Rest 2.
+84 est-il divisible par 7 ? oui : 84 = 7 × 12, reste 0.
+48 ist durch 3 teilbar: 48 = 3 × 16, Rest 0.
+tout nombre pair est divisible par 4 est faux : 90 est pair et 90 = 4 × 22 + 2.
+eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 246 ist 12, und 12 = 3 × 4.
+45 est-il divisible par 5 ? oui : 45 = 5 × 9, reste 0.
+108 ist nicht durch 8 teilbar: 108 = 8 × 13 + 4, Rest 4.
+70 n'est pas divisible par 4 : 70 = 4 × 17 + 2, reste 2.
+eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 111 ist 3, und 3 = 3 × 1.
+un nombre est divisible par un autre quand le reste est 0.
+50 ist durch 5 teilbar: 50 = 5 × 10, Rest 0.
+126 est divisible par 9 : 126 = 9 × 14, reste 0.
+jede gerade Zahl ist durch 4 teilbar ist falsch: 6 ist gerade und 6 = 4 × 1 + 2.
+un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 117 est 9, et 9 = 3 × 3.
+21 ist durch 3 teilbar: 21 = 3 × 7, Rest 0.
+70 n'est pas divisible par 6 : 70 = 6 × 11 + 4, reste 4.
+ist 48 durch 3 teilbar? ja: 48 = 3 × 16, Rest 0.
+tout nombre pair est divisible par 4 est faux : 10 est pair et 10 = 4 × 2 + 2.
+eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 243 ist 9, und 9 = 3 × 3.
+34 n'est pas divisible par 4 : 34 = 4 × 8 + 2, reste 2.
+ist 108 durch 8 teilbar? nein: 108 = 8 × 13 + 4, Rest 4.
+70 est-il divisible par 4 ? non : 70 = 4 × 17 + 2, reste 2.
+jede gerade Zahl ist durch 4 teilbar ist falsch: 94 ist gerade und 94 = 4 × 23 + 2.
+un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 249 est 15, et 15 = 3 × 5.
+ist 50 durch 5 teilbar? ja: 50 = 5 × 10, Rest 0.
+126 est-il divisible par 9 ? oui : 126 = 9 × 14, reste 0.
+90 ist durch 5 teilbar: 90 = 5 × 18, Rest 0.
 un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 114 est 6, et 6 = 3 × 2.
 
 was ist die Summe der ersten 2 ungeraden Zahlen? 1 + 3 = 4.
@@ -146385,60 +146521,84 @@ jede ganze Zahl größer als 1 ist ein Produkt von Primzahlen: 140 = 2 × 2 × 5
 alle ungeraden Zahlen sind Primzahlen ist falsch: 15 ist ungerade und 15 = 3 × 5.
 tout nombre entier supérieur à 1 est un produit de nombres premiers : 140 = 2 × 2 × 5 × 7.
 
-ist 33 durch 3 teilbar? ja: 33 = 3 × 11, Rest 0.
-tout nombre pair est divisible par 4 est faux : 10 est pair et 10 = 4 × 2 + 2.
-eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 282 ist 12, und 12 = 3 × 4.
-33 est-il divisible par 3 ? oui : 33 = 3 × 11, reste 0.
-jede gerade Zahl ist durch 4 teilbar ist falsch: 10 ist gerade und 10 = 4 × 2 + 2.
-un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 282 est 12, et 12 = 3 × 4.
-ist 49 durch 4 teilbar? nein: 49 = 4 × 12 + 1, Rest 1.
-tout nombre pair est divisible par 4 est faux : 10 est pair et 10 = 4 × 2 + 2.
-eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 285 ist 15, und 15 = 3 × 5.
-49 est-il divisible par 4 ? non : 49 = 4 × 12 + 1, reste 1.
-jede gerade Zahl ist durch 4 teilbar ist falsch: 118 ist gerade und 118 = 4 × 29 + 2.
-un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 285 est 15, et 15 = 3 × 5.
-ist 65 durch 5 teilbar? ja: 65 = 5 × 13, Rest 0.
-tout nombre pair est divisible par 4 est faux : 118 est pair et 118 = 4 × 29 + 2.
-eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 288 ist 18, und 18 = 3 × 6.
-65 est-il divisible par 5 ? oui : 65 = 5 × 13, reste 0.
-jede gerade Zahl ist durch 4 teilbar ist falsch: 118 ist gerade und 118 = 4 × 29 + 2.
-un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 288 est 18, et 18 = 3 × 6.
-ist 89 durch 6 teilbar? nein: 89 = 6 × 14 + 5, Rest 5.
-tout nombre pair est divisible par 4 est faux : 118 est pair et 118 = 4 × 29 + 2.
-eine Zahl ist durch eine andere teilbar, wenn der Rest 0 ist.
-89 est-il divisible par 6 ? non : 89 = 6 × 14 + 5, reste 5.
-jede gerade Zahl ist durch 4 teilbar ist falsch: 122 ist gerade und 122 = 4 × 30 + 2.
-un nombre est divisible par un autre quand le reste est 0.
-ist 105 durch 7 teilbar? ja: 105 = 7 × 15, Rest 0.
-tout nombre pair est divisible par 4 est faux : 122 est pair et 122 = 4 × 30 + 2.
-was bedeutet teilbar? eine Zahl ist durch eine andere teilbar, wenn der Rest 0 ist.
-105 est-il divisible par 7 ? oui : 105 = 7 × 15, reste 0.
-eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 111 ist 3, und 3 = 3 × 1.
-que signifie divisible ? un nombre est divisible par un autre quand le reste est 0.
-ist 134 durch 8 teilbar? nein: 134 = 8 × 16 + 6, Rest 6.
+ist 45 durch 5 teilbar? ja: 45 = 5 × 9, Rest 0.
+65 est divisible par 5 : 65 = 5 × 13, reste 0.
+181 ist nicht durch 10 teilbar: 181 = 10 × 18 + 1, Rest 1.
+un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 117 est 9, et 9 = 3 × 3.
+ist 34 durch 4 teilbar? nein: 34 = 4 × 8 + 2, Rest 2.
+49 n'est pas divisible par 4 : 49 = 4 × 12 + 1, reste 1.
+153 ist durch 9 teilbar: 153 = 9 × 17, Rest 0.
 un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 111 est 3, et 3 = 3 × 1.
 ist 21 durch 3 teilbar? ja: 21 = 3 × 7, Rest 0.
-134 est-il divisible par 8 ? non : 134 = 8 × 16 + 6, reste 6.
-eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 114 ist 6, und 6 = 3 × 2.
-21 est-il divisible par 3 ? oui : 21 = 3 × 7, reste 0.
-ist 153 durch 9 teilbar? ja: 153 = 9 × 17, Rest 0.
-un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 114 est 6, et 6 = 3 × 2.
-ist 34 durch 4 teilbar? nein: 34 = 4 × 8 + 2, Rest 2.
-153 est-il divisible par 9 ? oui : 153 = 9 × 17, reste 0.
-eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 117 ist 9, und 9 = 3 × 3.
-34 est-il divisible par 4 ? non : 34 = 4 × 8 + 2, reste 2.
-ist 181 durch 10 teilbar? nein: 181 = 10 × 18 + 1, Rest 1.
-un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 117 est 9, et 9 = 3 × 3.
-ist 45 durch 5 teilbar? ja: 45 = 5 × 9, Rest 0.
-181 est-il divisible par 10 ? non : 181 = 10 × 18 + 1, reste 1.
-eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 276 ist 15, und 15 = 3 × 5.
-45 est-il divisible par 5 ? oui : 45 = 5 × 9, reste 0.
-jede gerade Zahl ist durch 4 teilbar ist falsch: 6 ist gerade und 6 = 4 × 1 + 2.
-un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 276 est 15, et 15 = 3 × 5.
-ist 102 durch 10 teilbar? nein: 102 = 10 × 10 + 2, Rest 2.
+33 est divisible par 3 : 33 = 3 × 11, reste 0.
+134 ist nicht durch 8 teilbar: 134 = 8 × 16 + 6, Rest 6.
+tout nombre pair est divisible par 4 est faux : 118 est pair et 118 = 4 × 29 + 2.
+eine Zahl ist durch eine andere teilbar, wenn der Rest 0 ist.
+102 n'est pas divisible par 10 : 102 = 10 × 10 + 2, reste 2.
+105 ist durch 7 teilbar: 105 = 7 × 15, Rest 0.
+tout nombre pair est divisible par 4 est faux : 10 est pair et 10 = 4 × 2 + 2.
+eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 285 ist 15, und 15 = 3 × 5.
+45 est divisible par 5 : 45 = 5 × 9, reste 0.
+89 ist nicht durch 6 teilbar: 89 = 6 × 14 + 5, Rest 5.
 tout nombre pair est divisible par 4 est faux : 6 est pair et 6 = 4 × 1 + 2.
 eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 279 ist 18, und 18 = 3 × 6.
+34 n'est pas divisible par 4 : 34 = 4 × 8 + 2, reste 2.
+65 ist durch 5 teilbar: 65 = 5 × 13, Rest 0.
+181 est-il divisible par 10 ? non : 181 = 10 × 18 + 1, reste 1.
+eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 117 ist 9, und 9 = 3 × 3.
+21 est divisible par 3 : 21 = 3 × 7, reste 0.
+49 ist nicht durch 4 teilbar: 49 = 4 × 12 + 1, Rest 1.
+153 est-il divisible par 9 ? oui : 153 = 9 × 17, reste 0.
+eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 111 ist 3, und 3 = 3 × 1.
+que signifie divisible ? un nombre est divisible par un autre quand le reste est 0.
+33 ist durch 3 teilbar: 33 = 3 × 11, Rest 0.
+134 est-il divisible par 8 ? non : 134 = 8 × 16 + 6, reste 6.
+jede gerade Zahl ist durch 4 teilbar ist falsch: 118 ist gerade und 118 = 4 × 29 + 2.
+un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 288 est 18, et 18 = 3 × 6.
+102 ist nicht durch 10 teilbar: 102 = 10 × 10 + 2, Rest 2.
+105 est-il divisible par 7 ? oui : 105 = 7 × 15, reste 0.
+jede gerade Zahl ist durch 4 teilbar ist falsch: 10 ist gerade und 10 = 4 × 2 + 2.
+un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 282 est 12, et 12 = 3 × 4.
+45 ist durch 5 teilbar: 45 = 5 × 9, Rest 0.
+89 est-il divisible par 6 ? non : 89 = 6 × 14 + 5, reste 5.
+jede gerade Zahl ist durch 4 teilbar ist falsch: 6 ist gerade und 6 = 4 × 1 + 2.
+un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 276 est 15, et 15 = 3 × 5.
+34 ist nicht durch 4 teilbar: 34 = 4 × 8 + 2, Rest 2.
+65 est-il divisible par 5 ? oui : 65 = 5 × 13, reste 0.
+ist 181 durch 10 teilbar? nein: 181 = 10 × 18 + 1, Rest 1.
+un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 114 est 6, et 6 = 3 × 2.
+21 ist durch 3 teilbar: 21 = 3 × 7, Rest 0.
+49 est-il divisible par 4 ? non : 49 = 4 × 12 + 1, reste 1.
+ist 153 durch 9 teilbar? ja: 153 = 9 × 17, Rest 0.
+tout nombre pair est divisible par 4 est faux : 122 est pair et 122 = 4 × 30 + 2.
+was bedeutet teilbar? eine Zahl ist durch eine andere teilbar, wenn der Rest 0 ist.
+33 est-il divisible par 3 ? oui : 33 = 3 × 11, reste 0.
+ist 134 durch 8 teilbar? nein: 134 = 8 × 16 + 6, Rest 6.
+tout nombre pair est divisible par 4 est faux : 118 est pair et 118 = 4 × 29 + 2.
+eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 288 ist 18, und 18 = 3 × 6.
 102 est-il divisible par 10 ? non : 102 = 10 × 10 + 2, reste 2.
+ist 105 durch 7 teilbar? ja: 105 = 7 × 15, Rest 0.
+tout nombre pair est divisible par 4 est faux : 10 est pair et 10 = 4 × 2 + 2.
+eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 282 ist 12, und 12 = 3 × 4.
+45 est-il divisible par 5 ? oui : 45 = 5 × 9, reste 0.
+ist 89 durch 6 teilbar? nein: 89 = 6 × 14 + 5, Rest 5.
+181 n'est pas divisible par 10 : 181 = 10 × 18 + 1, reste 1.
+eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 276 ist 15, und 15 = 3 × 5.
+34 est-il divisible par 4 ? non : 34 = 4 × 8 + 2, reste 2.
+ist 65 durch 5 teilbar? ja: 65 = 5 × 13, Rest 0.
+153 est divisible par 9 : 153 = 9 × 17, reste 0.
+eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 114 ist 6, und 6 = 3 × 2.
+21 est-il divisible par 3 ? oui : 21 = 3 × 7, reste 0.
+ist 49 durch 4 teilbar? nein: 49 = 4 × 12 + 1, Rest 1.
+134 n'est pas divisible par 8 : 134 = 8 × 16 + 6, reste 6.
+jede gerade Zahl ist durch 4 teilbar ist falsch: 122 ist gerade und 122 = 4 × 30 + 2.
+un nombre est divisible par un autre quand le reste est 0.
+ist 33 durch 3 teilbar? ja: 33 = 3 × 11, Rest 0.
+105 est divisible par 7 : 105 = 7 × 15, reste 0.
+jede gerade Zahl ist durch 4 teilbar ist falsch: 118 ist gerade und 118 = 4 × 29 + 2.
+un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 285 est 15, et 15 = 3 × 5.
+ist 102 durch 10 teilbar? nein: 102 = 10 × 10 + 2, Rest 2.
+89 n'est pas divisible par 6 : 89 = 6 × 14 + 5, reste 5.
 jede gerade Zahl ist durch 4 teilbar ist falsch: 10 ist gerade und 10 = 4 × 2 + 2.
 un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme des chiffres de 279 est 18, et 18 = 3 × 6.
 
@@ -147954,61 +148114,85 @@ elk geheel getal groter dan 1 is een product van priemgetallen: 85 = 5 × 17.
 todo número inteiro maior que 1 é um produto de números primos: 90 = 2 × 3 × 3 × 5.
 
 is 21 deelbaar door 3? ja: 21 = 3 × 7, rest 0.
-102 é divisível por 8? não: 102 = 8 × 12 + 6, resto 6.
-is 65 deelbaar door 4? nee: 65 = 4 × 16 + 1, rest 1.
-todo número par é divisível por 4 é falso: 10 é par e 10 = 4 × 2 + 2.
-een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 111 is 3, en 3 = 3 × 1.
-um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 126 é 9, e 9 = 3 × 3.
-wat betekent deelbaar? een getal is deelbaar door een ander getal wanneer de rest 0 is.
-77 é divisível por 7? sim: 77 = 7 × 11, resto 0.
-is 45 deelbaar door 3? ja: 45 = 3 × 15, rest 0.
-todo número par é divisível por 4 é falso: 10 é par e 10 = 4 × 2 + 2.
-elk even getal is deelbaar door 4 is onwaar: 18 is even en 18 = 4 × 4 + 2.
-um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 123 é 6, e 6 = 3 × 2.
-een getal is deelbaar door een ander getal wanneer de rest 0 is.
-64 é divisível por 6? não: 64 = 6 × 10 + 4, resto 4.
-is 148 deelbaar door 10? nee: 148 = 10 × 14 + 8, rest 8.
-todo número par é divisível por 4 é falso: 6 é par e 6 = 4 × 1 + 2.
-elk even getal is deelbaar door 4 is onwaar: 14 is even en 14 = 4 × 3 + 2.
-um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 120 é 3, e 3 = 3 × 1.
-een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 132 is 6, en 6 = 3 × 2.
 45 é divisível por 5? sim: 45 = 5 × 9, resto 0.
-is 117 deelbaar door 9? ja: 117 = 9 × 13, rest 0.
-110 é divisível por 6? não: 110 = 6 × 18 + 2, resto 2.
+64 is niet deelbaar door 6: 64 = 6 × 10 + 4, rest 4.
+102 não é divisível por 8: 102 = 8 × 12 + 6, resto 6.
+is 148 deelbaar door 10? nee: 148 = 10 × 14 + 8, rest 8.
+65 é divisível por 4? não: 65 = 4 × 16 + 1, resto 1.
+85 is deelbaar door 5: 85 = 5 × 17, rest 0.
+todo número par é divisível por 4 é falso: 10 é par e 10 = 4 × 2 + 2.
 elk even getal is deelbaar door 4 is onwaar: 14 is even en 14 = 4 × 3 + 2.
 um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 117 é 9, e 9 = 3 × 3.
-een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 129 is 12, en 12 = 3 × 4.
-34 é divisível por 4? não: 34 = 4 × 8 + 2, resto 2.
-is 102 deelbaar door 8? nee: 102 = 8 × 12 + 6, rest 6.
-85 é divisível por 5? sim: 85 = 5 × 17, resto 0.
-elk even getal is deelbaar door 4 is onwaar: 10 is even en 10 = 4 × 2 + 2.
-um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 114 é 6, e 6 = 3 × 2.
 een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 126 is 9, en 9 = 3 × 3.
-21 é divisível por 3? sim: 21 = 3 × 7, resto 0.
-is 77 deelbaar door 7? ja: 77 = 7 × 11, rest 0.
-65 é divisível por 4? não: 65 = 4 × 16 + 1, resto 1.
-elk even getal is deelbaar door 4 is onwaar: 10 is even en 10 = 4 × 2 + 2.
-um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 111 é 3, e 3 = 3 × 1.
-een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 123 is 6, en 6 = 3 × 2.
 o que significa divisível? um número é divisível por outro quando o resto é 0.
-is 64 deelbaar door 6? nee: 64 = 6 × 10 + 4, rest 4.
-45 é divisível por 3? sim: 45 = 3 × 15, resto 0.
-elk even getal is deelbaar door 4 is onwaar: 6 is even en 6 = 4 × 1 + 2.
-todo número par é divisível por 4 é falso: 18 é par e 18 = 4 × 4 + 2.
-een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 120 is 3, en 3 = 3 × 1.
-um número é divisível por outro quando o resto é 0.
-is 45 deelbaar door 5? ja: 45 = 5 × 9, rest 0.
-148 é divisível por 10? não: 148 = 10 × 14 + 8, resto 8.
-is 110 deelbaar door 6? nee: 110 = 6 × 18 + 2, rest 2.
-todo número par é divisível por 4 é falso: 14 é par e 14 = 4 × 3 + 2.
-een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 117 is 9, en 9 = 3 × 3.
-um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 132 é 6, e 6 = 3 × 2.
 is 34 deelbaar door 4? nee: 34 = 4 × 8 + 2, rest 2.
-117 é divisível por 9? sim: 117 = 9 × 13, resto 0.
+64 é divisível por 6? não: 64 = 6 × 10 + 4, resto 4.
+77 is deelbaar door 7: 77 = 7 × 11, rest 0.
+117 é divisível por 9: 117 = 9 × 13, resto 0.
+is 45 deelbaar door 3? ja: 45 = 3 × 15, rest 0.
+85 é divisível por 5? sim: 85 = 5 × 17, resto 0.
+110 is niet deelbaar door 6: 110 = 6 × 18 + 2, rest 2.
+todo número par é divisível por 4 é falso: 14 é par e 14 = 4 × 3 + 2.
+een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 111 is 3, en 3 = 3 × 1.
+um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 123 é 6, e 6 = 3 × 2.
+een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 132 is 6, en 6 = 3 × 2.
+21 é divisível por 3: 21 = 3 × 7, resto 0.
+is 45 deelbaar door 5? ja: 45 = 5 × 9, rest 0.
+77 é divisível por 7? sim: 77 = 7 × 11, resto 0.
+102 is niet deelbaar door 8: 102 = 8 × 12 + 6, rest 6.
+148 não é divisível por 10: 148 = 10 × 14 + 8, resto 8.
+is 65 deelbaar door 4? nee: 65 = 4 × 16 + 1, rest 1.
+110 é divisível por 6? não: 110 = 6 × 18 + 2, resto 2.
+elk even getal is deelbaar door 4 is onwaar: 10 is even en 10 = 4 × 2 + 2.
+todo número par é divisível por 4 é falso: 18 é par e 18 = 4 × 4 + 2.
+een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 117 is 9, en 9 = 3 × 3.
+um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 129 é 12, e 12 = 3 × 4.
+wat betekent deelbaar? een getal is deelbaar door een ander getal wanneer de rest 0 is.
+34 não é divisível por 4: 34 = 4 × 8 + 2, resto 2.
+is 64 deelbaar door 6? nee: 64 = 6 × 10 + 4, rest 4.
+102 é divisível por 8? não: 102 = 8 × 12 + 6, resto 6.
+117 is deelbaar door 9: 117 = 9 × 13, rest 0.
+45 é divisível por 3: 45 = 3 × 15, resto 0.
 is 85 deelbaar door 5? ja: 85 = 5 × 17, rest 0.
+todo número par é divisível por 4 é falso: 6 é par e 6 = 4 × 1 + 2.
+elk even getal is deelbaar door 4 is onwaar: 14 is even en 14 = 4 × 3 + 2.
+um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 114 é 6, e 6 = 3 × 2.
+een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 123 is 6, en 6 = 3 × 2.
+um número é divisível por outro quando o resto é 0.
+21 is deelbaar door 3: 21 = 3 × 7, rest 0.
+45 é divisível por 5: 45 = 5 × 9, resto 0.
+is 77 deelbaar door 7? ja: 77 = 7 × 11, rest 0.
+117 é divisível por 9? sim: 117 = 9 × 13, resto 0.
+148 is niet deelbaar door 10: 148 = 10 × 14 + 8, rest 8.
+65 não é divisível por 4: 65 = 4 × 16 + 1, resto 1.
+is 110 deelbaar door 6? nee: 110 = 6 × 18 + 2, rest 2.
+todo número par é divisível por 4 é falso: 10 é par e 10 = 4 × 2 + 2.
+elk even getal is deelbaar door 4 is onwaar: 18 is even en 18 = 4 × 4 + 2.
+um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 120 é 3, e 3 = 3 × 1.
+een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 129 is 12, en 12 = 3 × 4.
+21 é divisível por 3? sim: 21 = 3 × 7, resto 0.
+34 is niet deelbaar door 4: 34 = 4 × 8 + 2, rest 2.
+64 não é divisível por 6: 64 = 6 × 10 + 4, resto 4.
+is 102 deelbaar door 8? nee: 102 = 8 × 12 + 6, rest 6.
+148 é divisível por 10? não: 148 = 10 × 14 + 8, resto 8.
+45 is deelbaar door 3: 45 = 3 × 15, rest 0.
+85 é divisível por 5: 85 = 5 × 17, resto 0.
+elk even getal is deelbaar door 4 is onwaar: 6 is even en 6 = 4 × 1 + 2.
 todo número par é divisível por 4 é falso: 14 é par e 14 = 4 × 3 + 2.
 een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 114 is 6, en 6 = 3 × 2.
-um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 129 é 12, e 12 = 3 × 4.
+um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 126 é 9, e 9 = 3 × 3.
+een getal is deelbaar door een ander getal wanneer de rest 0 is.
+34 é divisível por 4? não: 34 = 4 × 8 + 2, resto 2.
+45 is deelbaar door 5: 45 = 5 × 9, rest 0.
+77 é divisível por 7: 77 = 7 × 11, resto 0.
+is 117 deelbaar door 9? ja: 117 = 9 × 13, rest 0.
+45 é divisível por 3? sim: 45 = 3 × 15, resto 0.
+65 is niet deelbaar door 4: 65 = 4 × 16 + 1, rest 1.
+110 não é divisível por 6: 110 = 6 × 18 + 2, resto 2.
+elk even getal is deelbaar door 4 is onwaar: 10 is even en 10 = 4 × 2 + 2.
+um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 111 é 3, e 3 = 3 × 1.
+een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 120 is 3, en 3 = 3 × 1.
+um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 132 é 6, e 6 = 3 × 2.
 
 wat is de som van de eerste 2 oneven getallen? 1 + 3 = 4.
 qual é a soma dos 7 primeiros números ímpares? 1 + 3 + 5 + 7 + 9 + 11 + 13 = 49.
@@ -148296,59 +148480,83 @@ todos os números ímpares são primos é falso: 45 é ímpar e 45 = 3 × 15.
 elk geheel getal groter dan 1 is een product van priemgetallen: 100 = 2 × 2 × 5 × 5.
 
 o que significa divisível? um número é divisível por outro quando o resto é 0.
-is 47 deelbaar door 4? nee: 47 = 4 × 11 + 3, rest 3.
-176 é divisível por 10? não: 176 = 10 × 17 + 6, resto 6.
-elk even getal is deelbaar door 4 is onwaar: 38 is even en 38 = 4 × 9 + 2.
-um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 159 é 15, e 15 = 3 × 5.
-een getal is deelbaar door een ander getal wanneer de rest 0 is.
-47 é divisível por 4? não: 47 = 4 × 11 + 3, resto 3.
-is 144 deelbaar door 9? ja: 144 = 9 × 16, rest 0.
-todo número par é divisível por 4 é falso: 38 é par e 38 = 4 × 9 + 2.
-een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 117 is 9, en 9 = 3 × 3.
-um número é divisível por outro quando o resto é 0.
-is 30 deelbaar door 3? ja: 30 = 3 × 10, rest 0.
-144 é divisível por 9? sim: 144 = 9 × 16, resto 0.
+is 45 deelbaar door 5? ja: 45 = 5 × 9, rest 0.
+60 é divisível por 5? sim: 60 = 5 × 12, resto 0.
+98 is deelbaar door 7: 98 = 7 × 14, rest 0.
+176 não é divisível por 10: 176 = 10 × 17 + 6, resto 6.
 elk even getal is deelbaar door 4 is onwaar: 10 is even en 10 = 4 × 2 + 2.
 um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 117 é 9, e 9 = 3 × 3.
 een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 171 is 9, en 9 = 3 × 3.
-30 é divisível por 3? sim: 30 = 3 × 10, resto 0.
-is 121 deelbaar door 8? nee: 121 = 8 × 15 + 1, rest 1.
-todo número par é divisível por 4 é falso: 10 é par e 10 = 4 × 2 + 2.
-een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 114 is 6, en 6 = 3 × 2.
-um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 171 é 9, e 9 = 3 × 3.
-is 45 deelbaar door 5? ja: 45 = 5 × 9, rest 0.
-121 é divisível por 8? não: 121 = 8 × 15 + 1, resto 1.
-elk even getal is deelbaar door 4 is onwaar: 10 is even en 10 = 4 × 2 + 2.
-um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 114 é 6, e 6 = 3 × 2.
-een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 168 is 15, en 15 = 3 × 5.
-45 é divisível por 5? sim: 45 = 5 × 9, resto 0.
-is 98 deelbaar door 7? ja: 98 = 7 × 14, rest 0.
+34 não é divisível por 4: 34 = 4 × 8 + 2, resto 2.
+is 47 deelbaar door 4? nee: 47 = 4 × 11 + 3, rest 3.
+98 é divisível por 7? sim: 98 = 7 × 14, resto 0.
+144 is deelbaar door 9: 144 = 9 × 16, rest 0.
 todo número par é divisível por 4 é falso: 10 é par e 10 = 4 × 2 + 2.
 een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 111 is 3, en 3 = 3 × 1.
 um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 168 é 15, e 15 = 3 × 5.
+21 is deelbaar door 3: 21 = 3 × 7, rest 0.
+30 é divisível por 3: 30 = 3 × 10, resto 0.
+is 83 deelbaar door 6? nee: 83 = 6 × 13 + 5, rest 5.
+144 é divisível por 9? sim: 144 = 9 × 16, resto 0.
+54 is deelbaar door 3: 54 = 3 × 18, rest 0.
+todo número par é divisível por 4 é falso: 42 é par e 42 = 4 × 10 + 2.
+een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 162 is 9, en 9 = 3 × 3.
+21 é divisível por 3? sim: 21 = 3 × 7, resto 0.
+45 is deelbaar door 5: 45 = 5 × 9, rest 0.
+60 é divisível por 5: 60 = 5 × 12, resto 0.
+is 121 deelbaar door 8? nee: 121 = 8 × 15 + 1, rest 1.
+54 é divisível por 3? sim: 54 = 3 × 18, resto 0.
+elk even getal is deelbaar door 4 is onwaar: 38 is even en 38 = 4 × 9 + 2.
+um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 159 é 15, e 15 = 3 × 5.
+een getal is deelbaar door een ander getal wanneer de rest 0 is.
+45 é divisível por 5? sim: 45 = 5 × 9, resto 0.
+47 is niet deelbaar door 4: 47 = 4 × 11 + 3, rest 3.
+98 é divisível por 7: 98 = 7 × 14, resto 0.
+is 176 deelbaar door 10? nee: 176 = 10 × 17 + 6, rest 6.
+todo número par é divisível por 4 é falso: 10 é par e 10 = 4 × 2 + 2.
+een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 114 is 6, en 6 = 3 × 2.
+um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 171 é 9, e 9 = 3 × 3.
 is 34 deelbaar door 4? nee: 34 = 4 × 8 + 2, rest 2.
-98 é divisível por 7? sim: 98 = 7 × 14, resto 0.
+47 é divisível por 4? não: 47 = 4 × 11 + 3, resto 3.
+83 is niet deelbaar door 6: 83 = 6 × 13 + 5, rest 5.
+144 é divisível por 9: 144 = 9 × 16, resto 0.
 elk even getal is deelbaar door 4 is onwaar: 6 is even en 6 = 4 × 1 + 2.
 um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 111 é 3, e 3 = 3 × 1.
 een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 165 is 12, en 12 = 3 × 4.
+21 é divisível por 3: 21 = 3 × 7, resto 0.
+is 30 deelbaar door 3? ja: 30 = 3 × 10, rest 0.
+83 é divisível por 6? não: 83 = 6 × 13 + 5, resto 5.
+121 is niet deelbaar door 8: 121 = 8 × 15 + 1, rest 1.
+54 é divisível por 3: 54 = 3 × 18, resto 0.
+elk even getal is deelbaar door 4 is onwaar: 42 is even en 42 = 4 × 10 + 2.
+um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 162 é 9, e 9 = 3 × 3.
+wat betekent deelbaar? een getal is deelbaar door een ander getal wanneer de rest 0 is.
+45 é divisível por 5: 45 = 5 × 9, resto 0.
+is 60 deelbaar door 5? ja: 60 = 5 × 12, rest 0.
+121 é divisível por 8? não: 121 = 8 × 15 + 1, resto 1.
+176 is niet deelbaar door 10: 176 = 10 × 17 + 6, rest 6.
+todo número par é divisível por 4 é falso: 38 é par e 38 = 4 × 9 + 2.
+een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 117 is 9, en 9 = 3 × 3.
+um número é divisível por outro quando o resto é 0.
+34 is niet deelbaar door 4: 34 = 4 × 8 + 2, rest 2.
+47 não é divisível por 4: 47 = 4 × 11 + 3, resto 3.
+is 98 deelbaar door 7? ja: 98 = 7 × 14, rest 0.
+176 é divisível por 10? não: 176 = 10 × 17 + 6, resto 6.
+elk even getal is deelbaar door 4 is onwaar: 10 is even en 10 = 4 × 2 + 2.
+um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 114 é 6, e 6 = 3 × 2.
+een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 168 is 15, en 15 = 3 × 5.
 34 é divisível por 4? não: 34 = 4 × 8 + 2, resto 2.
-is 83 deelbaar door 6? nee: 83 = 6 × 13 + 5, rest 5.
+30 is deelbaar door 3: 30 = 3 × 10, rest 0.
+83 não é divisível por 6: 83 = 6 × 13 + 5, resto 5.
+is 144 deelbaar door 9? ja: 144 = 9 × 16, rest 0.
 todo número par é divisível por 4 é falso: 6 é par e 6 = 4 × 1 + 2.
 elk even getal is deelbaar door 4 is onwaar: 42 is even en 42 = 4 × 10 + 2.
 um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 165 é 12, e 12 = 3 × 4.
 is 21 deelbaar door 3? ja: 21 = 3 × 7, rest 0.
-83 é divisível por 6? não: 83 = 6 × 13 + 5, resto 5.
+30 é divisível por 3? sim: 30 = 3 × 10, resto 0.
+60 is deelbaar door 5: 60 = 5 × 12, rest 0.
+121 não é divisível por 8: 121 = 8 × 15 + 1, resto 1.
 is 54 deelbaar door 3? ja: 54 = 3 × 18, rest 0.
-todo número par é divisível por 4 é falso: 42 é par e 42 = 4 × 10 + 2.
-een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 162 is 9, en 9 = 3 × 3.
-21 é divisível por 3? sim: 21 = 3 × 7, resto 0.
-is 60 deelbaar door 5? ja: 60 = 5 × 12, rest 0.
-54 é divisível por 3? sim: 54 = 3 × 18, resto 0.
-elk even getal is deelbaar door 4 is onwaar: 42 is even en 42 = 4 × 10 + 2.
-um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 162 é 9, e 9 = 3 × 3.
-wat betekent deelbaar? een getal is deelbaar door een ander getal wanneer de rest 0 is.
-60 é divisível por 5? sim: 60 = 5 × 12, resto 0.
-is 176 deelbaar door 10? nee: 176 = 10 × 17 + 6, rest 6.
 todo número par é divisível por 4 é falso: 42 é par e 42 = 4 × 10 + 2.
 een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 159 is 15, en 15 = 3 × 5.
 
@@ -148637,60 +148845,84 @@ is 131 een priemgetal? ja: de delers van 131 zijn 1 en 131.
 alle oneven getallen zijn priemgetallen is onwaar: 75 is oneven en 75 = 3 × 25.
 todo número inteiro maior que 1 é um produto de números primos: 116 = 2 × 2 × 29.
 
-is 45 deelbaar door 5? ja: 45 = 5 × 9, rest 0.
-97 é divisível por 6? não: 97 = 6 × 16 + 1, resto 1.
+is 34 deelbaar door 4? nee: 34 = 4 × 8 + 2, rest 2.
+99 é divisível por 9: 99 = 9 × 11, resto 0.
+57 is niet deelbaar door 4: 57 = 4 × 14 + 1, rest 1.
+147 é divisível por 8? não: 147 = 8 × 18 + 3, resto 3.
+elk even getal is deelbaar door 4 is onwaar: 66 is even en 66 = 4 × 16 + 2.
+um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 204 é 6, e 6 = 3 × 2.
+21 is deelbaar door 3: 21 = 3 × 7, rest 0.
+99 é divisível por 9? sim: 99 = 9 × 11, resto 0.
+is 57 deelbaar door 4? nee: 57 = 4 × 14 + 1, rest 1.
+119 é divisível por 7: 119 = 7 × 17, resto 0.
 elk even getal is deelbaar door 4 is onwaar: 66 is even en 66 = 4 × 16 + 2.
 um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 201 é 3, e 3 = 3 × 1.
 is 21 deelbaar door 3? ja: 21 = 3 × 7, rest 0.
-57 é divisível por 4? não: 57 = 4 × 14 + 1, resto 1.
-elk even getal is deelbaar door 4 is onwaar: 10 is even en 10 = 4 × 2 + 2.
-um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 117 é 9, e 9 = 3 × 3.
-een getal is deelbaar door een ander getal wanneer de rest 0 is.
-125 é divisível por 10? não: 125 = 10 × 12 + 5, resto 5.
-is 147 deelbaar door 8? nee: 147 = 8 × 18 + 3, rest 3.
-um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 111 é 3, e 3 = 3 × 1.
-een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 207 is 9, en 9 = 3 × 3.
-82 é divisível por 8? não: 82 = 8 × 10 + 2, resto 2.
-is 97 deelbaar door 6? nee: 97 = 6 × 16 + 1, rest 1.
-todo número par é divisível por 4 é falso: 66 é par e 66 = 4 × 16 + 2.
-een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 201 is 3, en 3 = 3 × 1.
-34 é divisível por 4? não: 34 = 4 × 8 + 2, resto 2.
-is 57 deelbaar door 4? nee: 57 = 4 × 14 + 1, rest 1.
-todo número par é divisível por 4 é falso: 10 é par e 10 = 4 × 2 + 2.
-een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 117 is 9, en 9 = 3 × 3.
-o que significa divisível? um número é divisível por outro quando o resto é 0.
-is 125 deelbaar door 10? nee: 125 = 10 × 12 + 5, rest 5.
-todo número par é divisível por 4 é falso: 6 é par e 6 = 4 × 1 + 2.
-een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 111 is 3, en 3 = 3 × 1.
-um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 210 é 3, e 3 = 3 × 1.
-is 82 deelbaar door 8? nee: 82 = 8 × 10 + 2, rest 2.
+82 não é divisível por 8: 82 = 8 × 10 + 2, resto 2.
+39 is deelbaar door 3: 39 = 3 × 13, rest 0.
 119 é divisível por 7? sim: 119 = 7 × 17, resto 0.
-elk even getal is deelbaar door 4 is onwaar: 66 is even en 66 = 4 × 16 + 2.
-um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 204 é 6, e 6 = 3 × 2.
-is 34 deelbaar door 4? nee: 34 = 4 × 8 + 2, rest 2.
-75 é divisível por 5? sim: 75 = 5 × 15, resto 0.
 elk even getal is deelbaar door 4 is onwaar: 10 is even en 10 = 4 × 2 + 2.
 um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 198 é 18, e 18 = 3 × 6.
 wat betekent deelbaar? een getal is deelbaar door een ander getal wanneer de rest 0 is.
-39 é divisível por 3? sim: 39 = 3 × 13, resto 0.
+82 é divisível por 8? não: 82 = 8 × 10 + 2, resto 2.
+is 39 deelbaar door 3? ja: 39 = 3 × 13, rest 0.
+97 não é divisível por 6: 97 = 6 × 16 + 1, resto 1.
+elk even getal is deelbaar door 4 is onwaar: 10 is even en 10 = 4 × 2 + 2.
+um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 117 é 9, e 9 = 3 × 3.
+een getal is deelbaar door een ander getal wanneer de rest 0 is.
+45 é divisível por 5: 45 = 5 × 9, resto 0.
+125 is niet deelbaar door 10: 125 = 10 × 12 + 5, rest 5.
+97 é divisível por 6? não: 97 = 6 × 16 + 1, resto 1.
 elk even getal is deelbaar door 4 is onwaar: 6 is even en 6 = 4 × 1 + 2.
 um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 114 é 6, e 6 = 3 × 2.
 een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 210 is 3, en 3 = 3 × 1.
-99 é divisível por 9? sim: 99 = 9 × 11, resto 0.
-is 119 deelbaar door 7? ja: 119 = 7 × 17, rest 0.
+45 é divisível por 5? sim: 45 = 5 × 9, resto 0.
+is 125 deelbaar door 10? nee: 125 = 10 × 12 + 5, rest 5.
+75 é divisível por 5: 75 = 5 × 15, resto 0.
+147 is niet deelbaar door 8: 147 = 8 × 18 + 3, rest 3.
+um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 111 é 3, e 3 = 3 × 1.
+een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 207 is 9, en 9 = 3 × 3.
+34 não é divisível por 4: 34 = 4 × 8 + 2, resto 2.
+99 is deelbaar door 9: 99 = 9 × 11, rest 0.
+75 é divisível por 5? sim: 75 = 5 × 15, resto 0.
+is 147 deelbaar door 8? nee: 147 = 8 × 18 + 3, rest 3.
 todo número par é divisível por 4 é falso: 70 é par e 70 = 4 × 17 + 2.
 een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 204 is 6, en 6 = 3 × 2.
-45 é divisível por 5? sim: 45 = 5 × 9, resto 0.
-is 75 deelbaar door 5? ja: 75 = 5 × 15, rest 0.
+34 é divisível por 4? não: 34 = 4 × 8 + 2, resto 2.
+is 99 deelbaar door 9? ja: 99 = 9 × 11, rest 0.
+57 não é divisível por 4: 57 = 4 × 14 + 1, resto 1.
+119 is deelbaar door 7: 119 = 7 × 17, rest 0.
+todo número par é divisível por 4 é falso: 66 é par e 66 = 4 × 16 + 2.
+een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 201 is 3, en 3 = 3 × 1.
+21 é divisível por 3: 21 = 3 × 7, resto 0.
+82 is niet deelbaar door 8: 82 = 8 × 10 + 2, rest 2.
+57 é divisível por 4? não: 57 = 4 × 14 + 1, resto 1.
+is 119 deelbaar door 7? ja: 119 = 7 × 17, rest 0.
 todo número par é divisível por 4 é falso: 66 é par e 66 = 4 × 16 + 2.
 een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 198 is 18, en 18 = 3 × 6.
 21 é divisível por 3? sim: 21 = 3 × 7, resto 0.
-is 39 deelbaar door 3? ja: 39 = 3 × 13, rest 0.
+is 82 deelbaar door 8? nee: 82 = 8 × 10 + 2, rest 2.
+39 é divisível por 3: 39 = 3 × 13, resto 0.
+97 is niet deelbaar door 6: 97 = 6 × 16 + 1, rest 1.
+todo número par é divisível por 4 é falso: 10 é par e 10 = 4 × 2 + 2.
+een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 117 is 9, en 9 = 3 × 3.
+o que significa divisível? um número é divisível por outro quando o resto é 0.
+45 is deelbaar door 5: 45 = 5 × 9, rest 0.
+39 é divisível por 3? sim: 39 = 3 × 13, resto 0.
+is 97 deelbaar door 6? nee: 97 = 6 × 16 + 1, rest 1.
 todo número par é divisível por 4 é falso: 10 é par e 10 = 4 × 2 + 2.
 een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 114 is 6, en 6 = 3 × 2.
 um número é divisível por outro quando o resto é 0.
-is 99 deelbaar door 9? ja: 99 = 9 × 11, rest 0.
-147 é divisível por 8? não: 147 = 8 × 18 + 3, resto 3.
+is 45 deelbaar door 5? ja: 45 = 5 × 9, rest 0.
+125 não é divisível por 10: 125 = 10 × 12 + 5, resto 5.
+75 is deelbaar door 5: 75 = 5 × 15, rest 0.
+todo número par é divisível por 4 é falso: 6 é par e 6 = 4 × 1 + 2.
+een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 111 is 3, en 3 = 3 × 1.
+um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 210 é 3, e 3 = 3 × 1.
+34 is niet deelbaar door 4: 34 = 4 × 8 + 2, rest 2.
+125 é divisível por 10? não: 125 = 10 × 12 + 5, resto 5.
+is 75 deelbaar door 5? ja: 75 = 5 × 15, rest 0.
+147 não é divisível por 8: 147 = 8 × 18 + 3, resto 3.
 elk even getal is deelbaar door 4 is onwaar: 70 is even en 70 = 4 × 17 + 2.
 um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 207 é 9, e 9 = 3 × 3.
 
@@ -148980,60 +149212,84 @@ is 47 een priemgetal? ja: de delers van 47 zijn 1 en 47.
 elk geheel getal groter dan 1 is een product van priemgetallen: 85 = 5 × 17.
 
 21 é divisível por 3? sim: 21 = 3 × 7, resto 0.
-is 153 deelbaar door 10? nee: 153 = 10 × 15 + 3, rest 3.
-todo número par é divisível por 4 é falso: 94 é par e 94 = 4 × 23 + 2.
-een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 249 is 15, en 15 = 3 × 5.
-108 é divisível por 8? não: 108 = 8 × 13 + 4, resto 4.
-elk even getal is deelbaar door 4 is onwaar: 10 is even en 10 = 4 × 2 + 2.
-um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 243 é 9, e 9 = 3 × 3.
-is 50 deelbaar door 5? ja: 50 = 5 × 10, rest 0.
-todo número par é divisível por 4 é falso: 6 é par e 6 = 4 × 1 + 2.
-een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 117 is 9, en 9 = 3 × 3.
-34 é divisível por 4? não: 34 = 4 × 8 + 2, resto 2.
-is 48 deelbaar door 3? ja: 48 = 3 × 16, rest 0.
-um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 111 é 3, e 3 = 3 × 1.
-een getal is deelbaar door een ander getal wanneer de rest 0 is.
-126 é divisível por 9? sim: 126 = 9 × 14, resto 0.
-elk even getal is deelbaar door 4 is onwaar: 90 is even en 90 = 4 × 22 + 2.
-um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 246 é 12, e 12 = 3 × 4.
 is 70 deelbaar door 6? nee: 70 = 6 × 11 + 4, rest 4.
-todo número par é divisível por 4 é falso: 10 é par e 10 = 4 × 2 + 2.
-een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 237 is 12, en 12 = 3 × 4.
-45 é divisível por 5? sim: 45 = 5 × 9, resto 0.
-is 70 deelbaar door 4? nee: 70 = 4 × 17 + 2, rest 2.
-um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 114 é 6, e 6 = 3 × 2.
-wat betekent deelbaar? een getal is deelbaar door een ander getal wanneer de rest 0 is.
-153 é divisível por 10? não: 153 = 10 × 15 + 3, resto 3.
-elk even getal is deelbaar door 4 is onwaar: 94 is even en 94 = 4 × 23 + 2.
-um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 249 é 15, e 15 = 3 × 5.
-is 84 deelbaar door 7? ja: 84 = 7 × 12, rest 0.
-todo número par é divisível por 4 é falso: 10 é par e 10 = 4 × 2 + 2.
-een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 240 is 6, en 6 = 3 × 2.
-50 é divisível por 5? sim: 50 = 5 × 10, resto 0.
-is 90 deelbaar door 5? ja: 90 = 5 × 18, rest 0.
-um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 117 é 9, e 9 = 3 × 3.
-is 21 deelbaar door 3? ja: 21 = 3 × 7, rest 0.
-48 é divisível por 3? sim: 48 = 3 × 16, resto 0.
-elk even getal is deelbaar door 4 is onwaar: 94 is even en 94 = 4 × 23 + 2.
-um número é divisível por outro quando o resto é 0.
-is 108 deelbaar door 8? nee: 108 = 8 × 13 + 4, rest 4.
-todo número par é divisível por 4 é falso: 90 é par e 90 = 4 × 22 + 2.
-een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 243 is 9, en 9 = 3 × 3.
-70 é divisível por 6? não: 70 = 6 × 11 + 4, resto 4.
-elk even getal is deelbaar door 4 is onwaar: 6 is even en 6 = 4 × 1 + 2.
-um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 237 é 12, e 12 = 3 × 4.
-is 34 deelbaar door 4? nee: 34 = 4 × 8 + 2, rest 2.
-70 é divisível por 4? não: 70 = 4 × 17 + 2, resto 2.
-een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 111 is 3, en 3 = 3 × 1.
-o que significa divisível? um número é divisível por outro quando o resto é 0.
-is 126 deelbaar door 9? ja: 126 = 9 × 14, rest 0.
-todo número par é divisível por 4 é falso: 94 é par e 94 = 4 × 23 + 2.
-een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 246 is 12, en 12 = 3 × 4.
-84 é divisível por 7? sim: 84 = 7 × 12, resto 0.
+153 não é divisível por 10: 153 = 10 × 15 + 3, resto 3.
 elk even getal is deelbaar door 4 is onwaar: 10 is even en 10 = 4 × 2 + 2.
 um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 240 é 6, e 6 = 3 × 2.
-is 45 deelbaar door 5? ja: 45 = 5 × 9, rest 0.
+is 34 deelbaar door 4? nee: 34 = 4 × 8 + 2, rest 2.
+84 é divisível por 7: 84 = 7 × 12, resto 0.
+48 is deelbaar door 3: 48 = 3 × 16, rest 0.
+todo número par é divisível por 4 é falso: 94 é par e 94 = 4 × 23 + 2.
+een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 246 is 12, en 12 = 3 × 4.
+45 é divisível por 5: 45 = 5 × 9, resto 0.
+108 is niet deelbaar door 8: 108 = 8 × 13 + 4, rest 4.
 90 é divisível por 5? sim: 90 = 5 × 18, resto 0.
+een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 111 is 3, en 3 = 3 × 1.
+o que significa divisível? um número é divisível por outro quando o resto é 0.
+50 is deelbaar door 5: 50 = 5 × 10, rest 0.
+153 é divisível por 10? não: 153 = 10 × 15 + 3, resto 3.
+elk even getal is deelbaar door 4 is onwaar: 6 is even en 6 = 4 × 1 + 2.
+um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 237 é 12, e 12 = 3 × 4.
+21 is deelbaar door 3: 21 = 3 × 7, rest 0.
+84 é divisível por 7? sim: 84 = 7 × 12, resto 0.
+is 48 deelbaar door 3? ja: 48 = 3 × 16, rest 0.
+todo número par é divisível por 4 é falso: 90 é par e 90 = 4 × 22 + 2.
+een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 243 is 9, en 9 = 3 × 3.
+45 é divisível por 5? sim: 45 = 5 × 9, resto 0.
+is 108 deelbaar door 8? nee: 108 = 8 × 13 + 4, rest 4.
+70 não é divisível por 4: 70 = 4 × 17 + 2, resto 2.
+elk even getal is deelbaar door 4 is onwaar: 94 is even en 94 = 4 × 23 + 2.
+um número é divisível por outro quando o resto é 0.
+is 50 deelbaar door 5? ja: 50 = 5 × 10, rest 0.
+126 é divisível por 9: 126 = 9 × 14, resto 0.
+90 is deelbaar door 5: 90 = 5 × 18, rest 0.
+um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 117 é 9, e 9 = 3 × 3.
+is 21 deelbaar door 3? ja: 21 = 3 × 7, rest 0.
+70 não é divisível por 6: 70 = 6 × 11 + 4, resto 4.
+153 is niet deelbaar door 10: 153 = 10 × 15 + 3, rest 3.
+todo número par é divisível por 4 é falso: 10 é par e 10 = 4 × 2 + 2.
+een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 240 is 6, en 6 = 3 × 2.
+34 não é divisível por 4: 34 = 4 × 8 + 2, resto 2.
+84 is deelbaar door 7: 84 = 7 × 12, rest 0.
+70 é divisível por 4? não: 70 = 4 × 17 + 2, resto 2.
+elk even getal is deelbaar door 4 is onwaar: 94 is even en 94 = 4 × 23 + 2.
+um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 249 é 15, e 15 = 3 × 5.
+45 is deelbaar door 5: 45 = 5 × 9, rest 0.
+126 é divisível por 9? sim: 126 = 9 × 14, resto 0.
+is 90 deelbaar door 5? ja: 90 = 5 × 18, rest 0.
+um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 114 é 6, e 6 = 3 × 2.
+wat betekent deelbaar? een getal is deelbaar door een ander getal wanneer de rest 0 is.
+70 é divisível por 6? não: 70 = 6 × 11 + 4, resto 4.
+is 153 deelbaar door 10? nee: 153 = 10 × 15 + 3, rest 3.
+todo número par é divisível por 4 é falso: 10 é par e 10 = 4 × 2 + 2.
+een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 237 is 12, en 12 = 3 × 4.
+34 é divisível por 4? não: 34 = 4 × 8 + 2, resto 2.
+is 84 deelbaar door 7? ja: 84 = 7 × 12, rest 0.
+48 é divisível por 3: 48 = 3 × 16, resto 0.
+elk even getal is deelbaar door 4 is onwaar: 90 is even en 90 = 4 × 22 + 2.
+um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 246 é 12, e 12 = 3 × 4.
+is 45 deelbaar door 5? ja: 45 = 5 × 9, rest 0.
+108 não é divisível por 8: 108 = 8 × 13 + 4, resto 4.
+70 is niet deelbaar door 4: 70 = 4 × 17 + 2, rest 2.
+um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 111 é 3, e 3 = 3 × 1.
+een getal is deelbaar door een ander getal wanneer de rest 0 is.
+50 é divisível por 5: 50 = 5 × 10, resto 0.
+126 is deelbaar door 9: 126 = 9 × 14, rest 0.
+todo número par é divisível por 4 é falso: 6 é par e 6 = 4 × 1 + 2.
+een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 117 is 9, en 9 = 3 × 3.
+21 é divisível por 3: 21 = 3 × 7, resto 0.
+70 is niet deelbaar door 6: 70 = 6 × 11 + 4, rest 4.
+48 é divisível por 3? sim: 48 = 3 × 16, resto 0.
+elk even getal is deelbaar door 4 is onwaar: 10 is even en 10 = 4 × 2 + 2.
+um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 243 é 9, e 9 = 3 × 3.
+34 is niet deelbaar door 4: 34 = 4 × 8 + 2, rest 2.
+108 é divisível por 8? não: 108 = 8 × 13 + 4, resto 4.
+is 70 deelbaar door 4? nee: 70 = 4 × 17 + 2, rest 2.
+todo número par é divisível por 4 é falso: 94 é par e 94 = 4 × 23 + 2.
+een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 249 is 15, en 15 = 3 × 5.
+50 é divisível por 5? sim: 50 = 5 × 10, resto 0.
+is 126 deelbaar door 9? ja: 126 = 9 × 14, rest 0.
+90 é divisível por 5: 90 = 5 × 18, resto 0.
 een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 114 is 6, en 6 = 3 × 2.
 
 qual é a soma dos 2 primeiros números ímpares? 1 + 3 = 4.
@@ -149321,60 +149577,84 @@ is 206 een priemgetal? nee: 206 = 2 × 103.
 todos os números ímpares são primos é falso: 15 é ímpar e 15 = 3 × 5.
 elk geheel getal groter dan 1 is een product van priemgetallen: 140 = 2 × 2 × 5 × 7.
 
-33 é divisível por 3? sim: 33 = 3 × 11, resto 0.
-elk even getal is deelbaar door 4 is onwaar: 10 is even en 10 = 4 × 2 + 2.
-um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 282 é 12, e 12 = 3 × 4.
-is 33 deelbaar door 3? ja: 33 = 3 × 11, rest 0.
-todo número par é divisível por 4 é falso: 10 é par e 10 = 4 × 2 + 2.
-een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 282 is 12, en 12 = 3 × 4.
-49 é divisível por 4? não: 49 = 4 × 12 + 1, resto 1.
-elk even getal is deelbaar door 4 is onwaar: 10 is even en 10 = 4 × 2 + 2.
-um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 285 é 15, e 15 = 3 × 5.
-is 49 deelbaar door 4? nee: 49 = 4 × 12 + 1, rest 1.
-todo número par é divisível por 4 é falso: 118 é par e 118 = 4 × 29 + 2.
-een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 285 is 15, en 15 = 3 × 5.
-65 é divisível por 5? sim: 65 = 5 × 13, resto 0.
-elk even getal is deelbaar door 4 is onwaar: 118 is even en 118 = 4 × 29 + 2.
-um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 288 é 18, e 18 = 3 × 6.
-is 65 deelbaar door 5? ja: 65 = 5 × 13, rest 0.
-todo número par é divisível por 4 é falso: 118 é par e 118 = 4 × 29 + 2.
-een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 288 is 18, en 18 = 3 × 6.
-89 é divisível por 6? não: 89 = 6 × 14 + 5, resto 5.
-elk even getal is deelbaar door 4 is onwaar: 118 is even en 118 = 4 × 29 + 2.
-um número é divisível por outro quando o resto é 0.
-is 89 deelbaar door 6? nee: 89 = 6 × 14 + 5, rest 5.
-todo número par é divisível por 4 é falso: 122 é par e 122 = 4 × 30 + 2.
-een getal is deelbaar door een ander getal wanneer de rest 0 is.
-105 é divisível por 7? sim: 105 = 7 × 15, resto 0.
-elk even getal is deelbaar door 4 is onwaar: 122 is even en 122 = 4 × 30 + 2.
-o que significa divisível? um número é divisível por outro quando o resto é 0.
-is 105 deelbaar door 7? ja: 105 = 7 × 15, rest 0.
-um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 111 é 3, e 3 = 3 × 1.
-wat betekent deelbaar? een getal is deelbaar door een ander getal wanneer de rest 0 is.
-134 é divisível por 8? não: 134 = 8 × 16 + 6, resto 6.
+45 é divisível por 5? sim: 45 = 5 × 9, resto 0.
+65 is deelbaar door 5: 65 = 5 × 13, rest 0.
+181 não é divisível por 10: 181 = 10 × 18 + 1, resto 1.
+een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 117 is 9, en 9 = 3 × 3.
+34 é divisível por 4? não: 34 = 4 × 8 + 2, resto 2.
+49 is niet deelbaar door 4: 49 = 4 × 12 + 1, rest 1.
+153 é divisível por 9: 153 = 9 × 17, resto 0.
 een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 111 is 3, en 3 = 3 × 1.
 21 é divisível por 3? sim: 21 = 3 × 7, resto 0.
-is 134 deelbaar door 8? nee: 134 = 8 × 16 + 6, rest 6.
-um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 114 é 6, e 6 = 3 × 2.
-is 21 deelbaar door 3? ja: 21 = 3 × 7, rest 0.
-153 é divisível por 9? sim: 153 = 9 × 17, resto 0.
-een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 114 is 6, en 6 = 3 × 2.
-34 é divisível por 4? não: 34 = 4 × 8 + 2, resto 2.
-is 153 deelbaar door 9? ja: 153 = 9 × 17, rest 0.
-um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 117 é 9, e 9 = 3 × 3.
-is 34 deelbaar door 4? nee: 34 = 4 × 8 + 2, rest 2.
-181 é divisível por 10? não: 181 = 10 × 18 + 1, resto 1.
-een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 117 is 9, en 9 = 3 × 3.
-45 é divisível por 5? sim: 45 = 5 × 9, resto 0.
-is 181 deelbaar door 10? nee: 181 = 10 × 18 + 1, rest 1.
-um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 276 é 15, e 15 = 3 × 5.
-is 45 deelbaar door 5? ja: 45 = 5 × 9, rest 0.
-todo número par é divisível por 4 é falso: 6 é par e 6 = 4 × 1 + 2.
-een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 276 is 15, en 15 = 3 × 5.
-102 é divisível por 10? não: 102 = 10 × 10 + 2, resto 2.
+33 is deelbaar door 3: 33 = 3 × 11, rest 0.
+134 não é divisível por 8: 134 = 8 × 16 + 6, resto 6.
+elk even getal is deelbaar door 4 is onwaar: 118 is even en 118 = 4 × 29 + 2.
+um número é divisível por outro quando o resto é 0.
+102 is niet deelbaar door 10: 102 = 10 × 10 + 2, rest 2.
+105 é divisível por 7: 105 = 7 × 15, resto 0.
+elk even getal is deelbaar door 4 is onwaar: 10 is even en 10 = 4 × 2 + 2.
+um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 285 é 15, e 15 = 3 × 5.
+45 is deelbaar door 5: 45 = 5 × 9, rest 0.
+89 não é divisível por 6: 89 = 6 × 14 + 5, resto 5.
 elk even getal is deelbaar door 4 is onwaar: 6 is even en 6 = 4 × 1 + 2.
 um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 279 é 18, e 18 = 3 × 6.
+34 is niet deelbaar door 4: 34 = 4 × 8 + 2, rest 2.
+65 é divisível por 5: 65 = 5 × 13, resto 0.
+is 181 deelbaar door 10? nee: 181 = 10 × 18 + 1, rest 1.
+um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 117 é 9, e 9 = 3 × 3.
+21 is deelbaar door 3: 21 = 3 × 7, rest 0.
+49 não é divisível por 4: 49 = 4 × 12 + 1, resto 1.
+is 153 deelbaar door 9? ja: 153 = 9 × 17, rest 0.
+um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 111 é 3, e 3 = 3 × 1.
+wat betekent deelbaar? een getal is deelbaar door een ander getal wanneer de rest 0 is.
+33 é divisível por 3: 33 = 3 × 11, resto 0.
+is 134 deelbaar door 8? nee: 134 = 8 × 16 + 6, rest 6.
+todo número par é divisível por 4 é falso: 118 é par e 118 = 4 × 29 + 2.
+een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 288 is 18, en 18 = 3 × 6.
+102 não é divisível por 10: 102 = 10 × 10 + 2, resto 2.
+is 105 deelbaar door 7? ja: 105 = 7 × 15, rest 0.
+todo número par é divisível por 4 é falso: 10 é par e 10 = 4 × 2 + 2.
+een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 282 is 12, en 12 = 3 × 4.
+45 é divisível por 5: 45 = 5 × 9, resto 0.
+is 89 deelbaar door 6? nee: 89 = 6 × 14 + 5, rest 5.
+todo número par é divisível por 4 é falso: 6 é par e 6 = 4 × 1 + 2.
+een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 276 is 15, en 15 = 3 × 5.
+34 não é divisível por 4: 34 = 4 × 8 + 2, resto 2.
+is 65 deelbaar door 5? ja: 65 = 5 × 13, rest 0.
+181 é divisível por 10? não: 181 = 10 × 18 + 1, resto 1.
+een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 114 is 6, en 6 = 3 × 2.
+21 é divisível por 3: 21 = 3 × 7, resto 0.
+is 49 deelbaar door 4? nee: 49 = 4 × 12 + 1, rest 1.
+153 é divisível por 9? sim: 153 = 9 × 17, resto 0.
+elk even getal is deelbaar door 4 is onwaar: 122 is even en 122 = 4 × 30 + 2.
+o que significa divisível? um número é divisível por outro quando o resto é 0.
+is 33 deelbaar door 3? ja: 33 = 3 × 11, rest 0.
+134 é divisível por 8? não: 134 = 8 × 16 + 6, resto 6.
+elk even getal is deelbaar door 4 is onwaar: 118 is even en 118 = 4 × 29 + 2.
+um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 288 é 18, e 18 = 3 × 6.
 is 102 deelbaar door 10? nee: 102 = 10 × 10 + 2, rest 2.
+105 é divisível por 7? sim: 105 = 7 × 15, resto 0.
+elk even getal is deelbaar door 4 is onwaar: 10 is even en 10 = 4 × 2 + 2.
+um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 282 é 12, e 12 = 3 × 4.
+is 45 deelbaar door 5? ja: 45 = 5 × 9, rest 0.
+89 é divisível por 6? não: 89 = 6 × 14 + 5, resto 5.
+181 is niet deelbaar door 10: 181 = 10 × 18 + 1, rest 1.
+um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 276 é 15, e 15 = 3 × 5.
+is 34 deelbaar door 4? nee: 34 = 4 × 8 + 2, rest 2.
+65 é divisível por 5? sim: 65 = 5 × 13, resto 0.
+153 is deelbaar door 9: 153 = 9 × 17, rest 0.
+um número é divisível por 3 quando a soma dos seus algarismos é divisível por 3: a soma dos algarismos de 114 é 6, e 6 = 3 × 2.
+is 21 deelbaar door 3? ja: 21 = 3 × 7, rest 0.
+49 é divisível por 4? não: 49 = 4 × 12 + 1, resto 1.
+134 is niet deelbaar door 8: 134 = 8 × 16 + 6, rest 6.
+todo número par é divisível por 4 é falso: 122 é par e 122 = 4 × 30 + 2.
+een getal is deelbaar door een ander getal wanneer de rest 0 is.
+33 é divisível por 3? sim: 33 = 3 × 11, resto 0.
+105 is deelbaar door 7: 105 = 7 × 15, rest 0.
+todo número par é divisível por 4 é falso: 118 é par e 118 = 4 × 29 + 2.
+een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 285 is 15, en 15 = 3 × 5.
+102 é divisível por 10? não: 102 = 10 × 10 + 2, resto 2.
+89 is niet deelbaar door 6: 89 = 6 × 14 + 5, rest 5.
 todo número par é divisível por 4 é falso: 10 é par e 10 = 4 × 2 + 2.
 een getal is deelbaar door 3 wanneer zijn cijfersom deelbaar is door 3: de cijfersom van 279 is 18, en 18 = 3 × 6.
 
