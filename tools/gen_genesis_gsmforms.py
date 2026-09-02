@@ -659,6 +659,20 @@ def группы(шаг, i):
     ("received", "receive", "emails", "письмо", "получил"),
     ("ate", "eat", "cookies", "печенье", "съел"),
     ("played with", "play with", "kids", None, None),
+    # ГЛАГОЛЫ ПОЛОС (e9 04.09: перепись SVAMP + g1 — слова перед числом, которых
+    # школа не показывала): jumped, did, completed, watched, won, sent, lost,
+    # removed, raised, grew, threw away — вещи по дому глагол–вещь.
+    ("jumped", "jump", "inches", None, None),
+    ("did", "do", "push-ups", None, None),
+    ("completed", "complete", "pages", "страница", "выполнил"),
+    ("watched", "watch", "movies", "фильм", "посмотрел"),
+    ("won", "win", "games", "игра", "выиграл"),
+    ("sent", "send", "letters", "письмо", "отправил"),
+    ("lost", "lose", "coins", "монета", "потерял"),
+    ("removed", "remove", "books", "книга", "убрал"),
+    ("raised", "raise", "dollars", "доллар", "собрал"),
+    ("grew", "grow", "flowers", "цветок", "вырастил"),
+    ("threw away", "throw away", "caps", None, None),
 )
 КОГДА = (("in the morning", "in the afternoon", "утром", "днём"),
          ("on monday", "on tuesday", "в понедельник", "во вторник"))
@@ -667,6 +681,21 @@ def группы(шаг, i):
     ("made", "make", "cakes", "pastries", "испёк", ("торт", ""), ("булочка", "")),
     ("read", "read", "pages of math", "pages of reading", "прочитал", ("страница", " математики"), ("страница", " чтения")),
     ("bought", "buy", "bottles of regular soda", "bottles of diet soda", None, None, None),
+    ("did", "do", "push-ups", "crunches", None, None, None),
+    ("completed", "complete", "pages of reading homework", "pages of math homework", None, None, None),
+    ("watched", "watch", "movies", "episodes", None, None, None),
+    ("removed", "remove", "figures", "books", None, None, None),
+)
+# ДВА ДЕЯТЕЛЯ, ОДНО ДЕЛО (e9: «the grasshopper jumped 9 inches, the mouse jumped
+# 3 inches» — сравнение прыжков; «ann brought 5 balloons and jake brought 3»):
+# (деятель 1, деятель 2, глагол прош., основа, вещь)
+БОЛЬШЕ_E = (
+    ("the grasshopper", "the mouse", "jumped", "jump", "inches"),
+    ("the frog", "the rabbit", "jumped", "jump", "feet"),
+    ("ann", "dan", "brought", "bring", "balloons"),
+    ("ida", "omar", "did", "do", "push-ups"),
+    ("the kangaroo", "the cat", "jumped", "jump", "metres"),
+    ("vera", "tom", "won", "win", "games"),
 )
 БОЛЬШЕ_C = (  # «there were A and B где»: (A, B, где, A RU, B RU, где RU)
     ("storks", "birds", "on the fence", "аист", "воробей", "на заборе"),
@@ -681,9 +710,9 @@ def группы(шаг, i):
 def п_больше(шаг, i):
     x = 4 + (шаг * 3 + i) % 12
     y = 2 + (шаг + i * 5) % (x - 3)  # y ≤ x − 2: разность не меньше двух
-    очертание = (шаг + i) % 4
-    k = (шаг * 3 + i) // 4
-    ряд = (БОЛЬШЕ_A, БОЛЬШЕ_B, БОЛЬШЕ_C, БОЛЬШЕ_D)[очертание]
+    очертание = (шаг + i) % 5
+    k = (шаг * 3 + i) // 5
+    ряд = (БОЛЬШЕ_A, БОЛЬШЕ_B, БОЛЬШЕ_C, БОЛЬШЕ_D, БОЛЬШЕ_E)[очертание]
     return dict(x=x, y=y, очертание=очертание, слова=ряд[k % len(ряд)], ответ=x - y)
 
 
@@ -733,6 +762,15 @@ def больше(шаг, i):
         if ф == 2:
             return f"there were {x} {a} and {y} {b} {где}; there were not {d + 1} more {a} than {b}: {d} more."
         return f"if there were {x} {a} and {y} {b} {где}, how many more {a} than {b} were there? {x} − {y} = {d}."
+    if оч == 4:
+        д1, д2, г, г0, в = п["слова"]
+        if ф == 0:
+            return f"{д1} {г} {x} {в} and {д2} {г} {y} {в}; {д1} {г} {d} more {в} than {д2}: {x} − {y} = {d}."
+        if ф == 1:
+            return f"if {д1} {г} {x} {в} and {д2} {г} {y} {в}, how many fewer {в} did {д2} {г0} than {д1}? {x} − {y} = {d}."
+        if ф == 2:
+            return f"{д1} {г} {x} {в} and {д2} {г} {y} {в}; {д1} did not {г0} {d + 1} more {в} than {д2}: {d} more."
+        return f"if {д1} {г} {x} {в} and {д2} {г} {y} {в}, how many more {в} did {д1} {г0} than {д2}? {x} − {y} = {d}."
     на1, на2, р1, р2 = п["слова"]
     if ф == 0:
         return f"{имя} spent {x} dollars {на1} and {y} dollars {на2}; {имя} spent {d} {by_count(d, 'dollars')} more {на1} than {на2}: {x} − {y} = {d}."
@@ -993,6 +1031,37 @@ def половина(шаг, i):
     return f"if there were {n} ants and {слово} bugs as ants in the garden, how many insects were there in all? {осн}."
 
 
+# ---------- 31. part and its multiple give the whole (e9 04.09, g1 ~15 problems) ----------
+def п_части(шаг, i):
+    k = (2, 3, 4)[(шаг + i) % 3]
+    лот = 10 * (2 + (шаг * 7 + i * 3) % 12)
+    # the multiplier by word on even shows, by number on odd (SVAMP writes both)
+    слово = ("twice", "three times", "four times")[k - 2] if i % 2 == 0 else f"{k} times"
+    return dict(k=k, лот=лот, дом=лот * k, всего=лот * (k + 1), слово=слово,
+                ру_слово=("вдвое", "втрое", "вчетверо")[k - 2], ответ=лот)
+
+
+def части(шаг, i):
+    п = п_части(шаг, i)
+    k, лот, дом, всего, слово, ру_ = п["k"], п["лот"], п["дом"], п["всего"], п["слово"], п["ру_слово"]
+    # the whole opens the ledger (М-145: the answer opens with the question's
+    # first quantity); the link «k + 1» that made the divisor stands after it
+    лот_осн = f"{всего} ÷ {k + 1} = {лот}, {k} + 1 = {k + 1}"
+    дом_осн = f"{всего} ÷ {k + 1} = {лот}, {лот} × {k} = {дом}"
+    ф = (шаг + i) % 4
+    if ф == 0:
+        return f"a house and a lot cost {всего} dollars and the house cost {слово} as much as the lot; the lot cost {лот} dollars: {лот_осн}."
+    if ф == 1 and _ру_вопрос(шаг, i):
+        return f"если дом и участок стоили {всего} {ру('доллар', всего)}, а дом стоил {ру_} дороже участка, сколько стоил участок? {лот} {ру('доллар', лот)}: {лот_осн}."
+    if ф == 1:
+        return f"дом и участок стоили {всего} {ру('доллар', всего)}, а дом стоил {ру_} дороже участка; участок стоил {лот} {ру('доллар', лот)}: {лот_осн}."
+    if ф == 2:
+        return f"a house and a lot cost {всего} dollars and the house cost {слово} as much as the lot; the house cost {дом} dollars: {дом_осн}."
+    if ((шаг + i) // 4) % 2 == 0:
+        return f"if a house and a lot cost {всего} dollars and the house cost {слово} as much as the lot, how much did the lot cost? {лот_осн} dollars."
+    return f"if a house and a lot cost {всего} dollars and the house cost {слово} as much as the lot, how much did the house cost? {дом_осн} dollars."
+
+
 # ФОРМУЛЫ СЕМЕЙСТВ — ЗАКОН ОТВЕТА ОТ ВЕЛИЧИН ВОПРОСА (заказ holon 03.09: таблица
 # родов с формулами как эталон суда охвата — какие рамки ДОЛЖНЫ купиться, и
 # ложь есть купленная рамка с чужой формулой). Имена величин — имена полей
@@ -1008,12 +1077,13 @@ def половина(шаг, i):
     "больше": "ответ = x − y", "отбор": "ответ = величина названного срока (a | b | c)", "остаток": "ответ = n − k (проданы торты) | n (проданы булочки)",
     "класс": "ответ = g + b | s − g", "деньги": "ответ = n × p | a − b", "сдача": "ответ = n × b − p",
     "прибыль": "ответ = p × a ÷ b − p", "завышение": "ответ = n × 100 ÷ (100 + q)", "половина": "ответ = n + n ÷ k (половина) | n + n × k (кратно)",
+    "части": "ответ = всего ÷ (k + 1) (участок) | всего ÷ (k + 1) × k (дом)",
 }
 
 СЕМЕЙСТВА = (сумма, температура, процент, фунты, глубина, вероятность, четверти, дополнение,
              население, команда, кратно, проект, окружность, верёвки, трое, ставка, листки,
              разница, скидка, всего, группы,
-             больше, отбор, остаток, класс, деньги, сдача, прибыль, завышение, половина)
+             больше, отбор, остаток, класс, деньги, сдача, прибыль, завышение, половина, части)
 
 
 # РЕШЕНИЕ СЛОВАМИ (коллегия 03.09, бедность текста): к каждому второму

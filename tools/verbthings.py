@@ -26,7 +26,29 @@ the wrong kind (an unknown verb or an unknown thing is not judged here).
 В_РУКЕ = {"books", "cards", "pens", "pencils", "balls", "marbles", "stamps", "coins", "shells", "stones", "flowers", "toys", "blocks",
           "buttons", "stickers", "balloons", "cups", "boxes", "bottles", "hats", "shirts", "keys", "rings", "pieces", "sticks", "leaves"}
 
+# the verbs of the SVAMP/g1 bands the school lacked (e9 04.09): what they take
+ПРЫЖОК = {"inches", "feet", "centimetres", "centimeters", "metres", "meters", "times"}
+УПРАЖНЕНИЯ = {"push-ups", "crunches", "laps", "sit-ups", "jumps", "squats"}
+ВЫПОЛНЕНИЕ = {"pages", "problems", "laps", "tasks", "exercises", "chapters", "levels"}
+ПРОСМОТР = {"movies", "episodes", "films", "shows", "videos", "games"}
+ВЫИГРЫШ = {"games", "tickets", "medals", "prizes", "rounds", "matches"}
+ПОСЫЛКА = {"letters", "emails", "cards", "messages", "parcels", "postcards"}
+УБОРКА = {"figures", "books", "stones", "boxes", "toys", "stickers", "weeds", "leaves"}
+СБОР_ДЕНЕГ = {"dollars", "euros", "rubles", "coins"}
+РОСТ = {"inches", "centimetres", "centimeters", "flowers", "plants", "trees", "tomatoes"}
+ВЫБРОС = {"caps", "boxes", "cans", "bottles", "papers", "toys", "cards"}
+
 ГЛАГОЛ_БЕРЁТ = {
+    "jumped": ПРЫЖОК, "jumps": ПРЫЖОК, "jump": ПРЫЖОК,
+    "did": УПРАЖНЕНИЯ | ВЫПОЛНЕНИЕ, "does": УПРАЖНЕНИЯ | ВЫПОЛНЕНИЕ, "do": УПРАЖНЕНИЯ | ВЫПОЛНЕНИЕ,
+    "completed": ВЫПОЛНЕНИЕ, "completes": ВЫПОЛНЕНИЕ, "complete": ВЫПОЛНЕНИЕ,
+    "watched": ПРОСМОТР, "watches": ПРОСМОТР, "watch": ПРОСМОТР,
+    "won": ВЫИГРЫШ, "wins": ВЫИГРЫШ, "win": ВЫИГРЫШ,
+    "sent": ПОСЫЛКА, "sends": ПОСЫЛКА, "send": ПОСЫЛКА,
+    "removed": УБОРКА, "removes": УБОРКА, "remove": УБОРКА,
+    "raised": СБОР_ДЕНЕГ | РОСТ, "raises": СБОР_ДЕНЕГ | РОСТ, "raise": СБОР_ДЕНЕГ | РОСТ,
+    "grew": РОСТ, "grown": РОСТ, "grows": РОСТ, "grow": РОСТ,
+    "threw": ВЫБРОС, "throws": ВЫБРОС, "throw": ВЫБРОС,
     "ate": ЕДА, "eats": ЕДА, "eat": ЕДА, "eaten": ЕДА,
     "drank": ПИТЬЁ, "drinks": ПИТЬЁ, "drink": ПИТЬЁ, "drunk": ПИТЬЁ,
     "baked": ВЫПЕЧКА, "bakes": ВЫПЕЧКА, "bake": ВЫПЕЧКА,

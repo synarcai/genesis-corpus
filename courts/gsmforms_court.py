@@ -411,13 +411,18 @@ def _рамка(закон):
 # замкнутые множества суда (своё чтение таблиц генератора); закон — над числами.
 СЛ = r"([а-яё]+)"
 СЛОВА = r"([а-яё ]+?)"
-ГЛ_A, ГЛ_A0, ВЕЩЬ_A = r"(received|ate|played with)", r"(receive|eat|play with)", r"(emails|cookies|kids)"
+ГЛ_A = r"(received|ate|played with|jumped|did|completed|watched|won|sent|lost|removed|raised|grew|threw away)"
+ГЛ_A0 = r"(receive|eat|play with|jump|do|complete|watch|win|send|lose|remove|raise|grow|throw away)"
+ВЕЩЬ_A = r"(emails|cookies|kids|inches|push-ups|pages|movies|games|letters|coins|books|dollars|flowers|caps)"
 КОГДА_EN = r"(in the morning|in the afternoon|on monday|on tuesday)"
 КОГДА_RU = r"(утром|днём|в понедельник|во вторник)"
 ОСНОВА = {"received": "receive", "ate": "eat", "played with": "play with", "used": "use", "made": "make",
-          "read": "read", "bought": "buy", "sold": "sell", "cut": "cut", "found": "find"}
-ГЛ_B, ГЛ_B0 = r"(used|made|read|bought)", r"(use|make|read|buy)"
-ВЕЩЬ_B = r"(cups of flour|cups of sugar|cakes|pastries|pages of math|pages of reading|bottles of regular soda|bottles of diet soda)"
+          "read": "read", "bought": "buy", "sold": "sell", "cut": "cut", "found": "find", "jumped": "jump", "did": "do", "completed": "complete", "watched": "watch", "won": "win", "sent": "send", "lost": "lose", "removed": "remove", "raised": "raise", "grew": "grow", "threw away": "throw away", "brought": "bring"}
+ГЛ_B, ГЛ_B0 = r"(used|made|read|bought|did|completed|watched|removed)", r"(use|make|read|buy|do|complete|watch|remove)"
+ВЕЩЬ_B = r"(cups of flour|cups of sugar|cakes|pastries|pages of math|pages of reading|bottles of regular soda|bottles of diet soda|push-ups|crunches|pages of reading homework|pages of math homework|movies|episodes|figures|books)"
+# 22E два деятеля, одно дело (e9 04.09: «the grasshopper jumped 9 inches and the mouse jumped 3 inches»)
+ДЕЯТЕЛЬ_E = r"((?:the )?[a-z]+)"
+ГЛ_E, ГЛ_E0, ВЕЩЬ_E = r"(jumped|brought|did|won)", r"(jump|bring|do|win)", r"(inches|feet|balloons|push-ups|metres|games)"
 ВЕЩЬ_C, ГДЕ = r"(storks|birds|red flowers|white flowers)", r"(on the fence|in the garden)"
 НА, НА_RU = r"(on the shirt|on the hat|on books|on pens)", r"(на рубашку|на шляпу|на книги|на ручки)"
 ГЛ_O, ГЛ_O0, ВЕЩЬ_O = r"(received|sold|cut|found|played with)", r"(receive|sell|cut|find|play with)", r"(emails|books|roses|bottle caps|kids)"
@@ -443,6 +448,29 @@ def _всего_насекомых(n, кр, t, on, on2, знак, k, ot):
     if k != k_ or знак != ("÷" if делить else "×") or (делить and n % k):
         return False
     return on == on2 == n and ot == t == n + (n // k if делить else n * k)
+
+
+# 31 части: множитель словом или числом («three times» / «3 times»)
+КРАТ_Ч = r"(twice|three times|four times|2 times|3 times|4 times|вдвое|втрое|вчетверо)"
+
+
+def _k_кратности(кр):
+    if isinstance(кр, int):
+        return кр
+    м = re.fullmatch(r"(\d+) times", str(кр))
+    return int(м.group(1)) if м else None
+
+
+def _части_лот(всего, кр, лот, ов, k1, ол, k, k1b):
+    k0 = _k_кратности(кр)
+    return (k0 is not None and k == k0 and k1 == k1b == k0 + 1 and ов == всего
+            and ол == лот and лот * (k0 + 1) == всего)
+
+
+def _части_дом(всего, кр, дом, ов, k1, ол, ол2, k, од):
+    k0 = _k_кратности(кр)
+    return (k0 is not None and k == k0 and k1 == k0 + 1 and ов == всего and ол2 == ол
+            and ол * (k0 + 1) == всего and од == дом == ол * k0)
 
 
 ОБРАЗЦЫ_3 = (
@@ -580,6 +608,26 @@ def _всего_насекомых(n, кр, t, on, on2, знак, k, ot):
      _рамка(lambda n, кр, ч, и: и == n + (n // КР_К[кр][0] if КР_К[кр][1] else n * КР_К[кр][0]) and (not КР_К[кр][1] or n % КР_К[кр][0] == 0) and ч != и)),
     (rf"^if there were {Ч} ants and {КР} bugs as ants in the garden, how many insects were there in all\? {Ч} \+ {Ч} (÷|×) {Ч} = {Ч}\.$",
      _рамка(lambda n, кр, on, on2, знак, k, t: _всего_насекомых(n, кр, t, on, on2, знак, k, t))),
+    # 31 части: часть и её кратное дают целое
+    (rf"^a house and a lot cost {Ч} dollars and the house cost {КРАТ_Ч} as much as the lot; the lot cost {Ч} dollars: {Ч} ÷ {Ч} = {Ч}, {Ч} \+ 1 = {Ч}\.$",
+     _рамка(lambda всего, кр, лот, ов, k1, ол, k, k1b: _части_лот(всего, кр, лот, ов, k1, ол, k, k1b))),
+    (rf"^дом и участок стоили {Ч} {СЛ}, а дом стоил {КРАТ_Ч} дороже участка; участок стоил {Ч} {СЛ}: {Ч} ÷ {Ч} = {Ч}, {Ч} \+ 1 = {Ч}\.$",
+     _рамка(lambda всего, с1, кр, лот, с2, ов, k1, ол, k, k1b: _части_лот(всего, кр, лот, ов, k1, ол, k, k1b))),
+    (rf"^a house and a lot cost {Ч} dollars and the house cost {КРАТ_Ч} as much as the lot; the house cost {Ч} dollars: {Ч} ÷ {Ч} = {Ч}, {Ч} × {Ч} = {Ч}\.$",
+     _рамка(lambda всего, кр, дом, ов, k1, ол, ол2, k, од: _части_дом(всего, кр, дом, ов, k1, ол, ол2, k, од))),
+    (rf"^if a house and a lot cost {Ч} dollars and the house cost {КРАТ_Ч} as much as the lot, how much did the lot cost\? {Ч} ÷ {Ч} = {Ч}, {Ч} \+ 1 = {Ч} dollars\.$",
+     _рамка(lambda всего, кр, ов, k1, ол, k, k1b: _части_лот(всего, кр, ол, ов, k1, ол, k, k1b))),
+    (rf"^if a house and a lot cost {Ч} dollars and the house cost {КРАТ_Ч} as much as the lot, how much did the house cost\? {Ч} ÷ {Ч} = {Ч}, {Ч} × {Ч} = {Ч} dollars\.$",
+     _рамка(lambda всего, кр, ов, k1, ол, ол2, k, од: _части_дом(всего, кр, од, ов, k1, ол, ол2, k, од))),
+    # 22E два деятеля, одно дело
+    (rf"^{ДЕЯТЕЛЬ_E} {ГЛ_E} {Ч} {ВЕЩЬ_E} and {ДЕЯТЕЛЬ_E} {ГЛ_E} {Ч} {ВЕЩЬ_E}; {ДЕЯТЕЛЬ_E} {ГЛ_E} {Ч} more {ВЕЩЬ_E} than {ДЕЯТЕЛЬ_E}: {Ч} − {Ч} = {Ч}\.$",
+     _рамка(lambda d1, g1, x, v1, d2, g2, y, v2, d3, g3, d, v3, d4, ox, oy, od: d1 != d2 and (d3, d4) == (d1, d2) and g1 == g2 == g3 and v1 == v2 == v3 and d == x - y > 0 and (ox, oy, od) == (x, y, d))),
+    (rf"^{ДЕЯТЕЛЬ_E} {ГЛ_E} {Ч} {ВЕЩЬ_E} and {ДЕЯТЕЛЬ_E} {ГЛ_E} {Ч} {ВЕЩЬ_E}; {ДЕЯТЕЛЬ_E} did not {ГЛ_E0} {Ч} more {ВЕЩЬ_E} than {ДЕЯТЕЛЬ_E}: {Ч} more\.$",
+     _рамка(lambda d1, g1, x, v1, d2, g2, y, v2, d3, g0, ч, v3, d4, и: d1 != d2 and (d3, d4) == (d1, d2) and g1 == g2 and ОСНОВА[g1] == g0 and v1 == v2 == v3 and и == x - y > 0 and ч != и)),
+    (rf"^if {ДЕЯТЕЛЬ_E} {ГЛ_E} {Ч} {ВЕЩЬ_E} and {ДЕЯТЕЛЬ_E} {ГЛ_E} {Ч} {ВЕЩЬ_E}, how many more {ВЕЩЬ_E} did {ДЕЯТЕЛЬ_E} {ГЛ_E0} than {ДЕЯТЕЛЬ_E}\? {Ч} − {Ч} = {Ч}\.$",
+     _рамка(lambda d1, g1, x, v1, d2, g2, y, v2, v3, d3, g0, d4, ox, oy, d: d1 != d2 and (d3, d4) == (d1, d2) and g1 == g2 and ОСНОВА[g1] == g0 and v1 == v2 == v3 and (ox, oy) == (x, y) and d == x - y > 0)),
+    (rf"^if {ДЕЯТЕЛЬ_E} {ГЛ_E} {Ч} {ВЕЩЬ_E} and {ДЕЯТЕЛЬ_E} {ГЛ_E} {Ч} {ВЕЩЬ_E}, how many fewer {ВЕЩЬ_E} did {ДЕЯТЕЛЬ_E} {ГЛ_E0} than {ДЕЯТЕЛЬ_E}\? {Ч} − {Ч} = {Ч}\.$",
+     _рамка(lambda d1, g1, x, v1, d2, g2, y, v2, v3, d3, g0, d4, ox, oy, d: d1 != d2 and (d3, d4) == (d2, d1) and g1 == g2 and ОСНОВА[g1] == g0 and v1 == v2 == v3 and (ox, oy) == (x, y) and d == x - y > 0)),
 )
 # СЕМЕЙСТВО ЕСТЬ РОД, А ФОРМА — ЕГО ПОВЕРХНОСТЬ (ширина вопроса 03.09):
 # прибор считал каждый образец родом и звал повествование без вопроса
@@ -620,6 +668,8 @@ _СЕМЕЙСТВА_ОСНОВА = (
     ("прибыль", ОБРАЗЦЫ_3[49:53]),
     ("завышение", ОБРАЗЦЫ_3[53:57]),
     ("половина", ОБРАЗЦЫ_3[57:61]),
+    ("части", ОБРАЗЦЫ_3[61:66]),
+    ("больше_E", ОБРАЗЦЫ_3[66:70]),
 )
 # RU QA-ФОРМЫ СЕМЕЙСТВ (М-146: вопросная поверхность на каждом языке рамки).
 СРОК_RU2 = r"(утром|днём|вечером)"
@@ -709,6 +759,8 @@ def _четверти_ru(часть, слово, oч, k, целое):
                    _рамка(lambda n1, g, n, s1, q, s2, on, oq, r: (on, oq) == (n, q) and r * (100 + q) == n * 100))],
     "половина": [(rf"^если в саду было {Ч} {СЛ} и {КР_RU} жуков, сколько всего муравьёв и жуков\? {Ч} \+ {Ч} (÷|×) {Ч} = {Ч}\.$",
                   _рамка(lambda n, s, кр, on, on2, знак, k, t: _всего_насекомых(n, кр, t, on, on2, знак, k, t)))],
+    "части": [(rf"^если дом и участок стоили {Ч} {СЛ}, а дом стоил {КРАТ_Ч} дороже участка, сколько стоил участок\? {Ч} {СЛ}: {Ч} ÷ {Ч} = {Ч}, {Ч} \+ 1 = {Ч}\.$",
+               _рамка(lambda всего, с1, кр, лот, с2, ов, k1, ол, k, k1b: _части_лот(всего, кр, лот, ов, k1, ол, k, k1b)))],
 }
 # ОДНО ИМЯ — ОДНО ОПРЕДЕЛЕНИЕ (суд затенения): основа семейств + RU-вопросы.
 СЕМЕЙСТВА_СУДА = tuple((имя, list(формы) + РУ_ВОПРОСЫ.get(имя, [])) for имя, формы in _СЕМЕЙСТВА_ОСНОВА)
