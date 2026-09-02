@@ -3118,10 +3118,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 9455068,
+      "size": 9522203,
       "tiers": [],
       "text": "mix",
-      "lines": 165389
+      "lines": 166041
     },
     {
       "name": "full",
@@ -3136,10 +3136,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 13583835,
+      "size": 13650970,
       "tiers": [],
       "text": "mix",
-      "lines": 235240
+      "lines": 235892
     },
     {
       "name": "selfmeasure",
@@ -3228,8 +3228,30 @@
       "text": "shows",
       "assemblies": [
         "school"
+      ]
+    },
+    {
+      "name": "mathspaces",
+      "file": "datasets/genesis_mathspaces.txt",
+      "genre": "mathematical spaces v0 (mandate 02.09, L3; notations agreed with holon): four spans, four groups per pass — Euclidean points «(3, 4)» (exact distance by Pythagorean triples, integer midpoint, shift, reflection, rotation about the origin), graphs «graph 1-2, 2-3, 3-1» (degree with its edges as the ground, vertex and edge counts, shortest path with its vertices, connectivity, a cycle present or absent with the missing edge named, a refusal when no path joins two vertices), the Fano plane «124, 235, 346, 457, 561, 672, 713» (two points on exactly one line, two lines meeting at exactly one point, three lines through a point, a pair not on a line), matrices «[1 2 / 3 4]» (transpose, sum, product with a vector, trace, determinant, row and column); the executor house tools/mathspaces.py is shared with the court, which recomputes every ground after the colon; both polarities on every kind",
+      "act": [
+        "recount",
+        "translate",
+        "decide",
+        "refuse"
       ],
-      "episode": "seam"
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "exact_only"
+      ],
+      "size": 55323,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
     },
     {
       "name": "gutenberg_demorgan_paradoxes",
