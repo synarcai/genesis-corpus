@@ -43,6 +43,7 @@ behind the other.
 """
 
 import pathlib
+import json
 import re
 import sys
 from math import gcd  # noqa: F401  (родня для будущих родов)
@@ -103,21 +104,28 @@ def число_полярности(шаг, i):
     return n
 
 
+# ПЕРЕФРАЗА — ВТОРАЯ ОБЪЯВЛЕННАЯ ФОРМА РОДА (Т-4 коллегии выразительности,
+# 03.09): формы вопроса о простоте и делимости читаются из пакетов языка
+# (ask_forms.prime, ask_forms.divisible), и каждая пара (числа → ответ)
+# показана ВСЕМИ формами — масса формы не делится, а прибавляется.
+def формы_пакета(язык, род):
+    пакет = json.loads((pathlib.Path(__file__).resolve().parent / "langpacks" / f"{язык}.json").read_text(encoding="utf-8"))
+    return пакет["ask_forms"][род]
+
+
 def исп_простота(шаг):
     вон = []
     for i in range(14):
         n = число_полярности(шаг, i)
         if простое(n):
-            вон.append(f"is {n} a prime number? yes: the divisors of "
-                       f"{n} are 1 and {n}.")
-            вон.append(f"является ли {n} простым числом? да: делители "
-                       f"{n} — 1 и {n}.")
+            отв_en, отв_ru = f"yes: the divisors of {n} are 1 and {n}.", f"да: делители {n} — 1 и {n}."
         else:
             д = наименьший_делитель(n)
-            вон.append(f"is {n} a prime number? no: {n} = {д} × "
-                       f"{n // д}.")
-            вон.append(f"является ли {n} простым числом? нет: {n} = "
-                       f"{д} × {n // д}.")
+            отв_en, отв_ru = f"no: {n} = {д} × {n // д}.", f"нет: {n} = {д} × {n // д}."
+        for форма in формы_пакета("en", "prime"):
+            вон.append(f"{форма.format(n)} {отв_en}")
+        for форма in формы_пакета("ru", "prime"):
+            вон.append(f"{форма.format(n)} {отв_ru}")
     return вон
 
 
@@ -172,15 +180,13 @@ def исп_делимость(шаг):
         b = 3 + (шаг + i) % 8
         q, r = divmod(a, b)
         if r == 0:
-            вон.append(f"is {a} divisible by {b}? yes: {a} = {b} × "
-                       f"{q}, remainder 0.")
-            вон.append(f"делится ли {a} на {b}? да: {a} = {b} × {q}, "
-                       f"остаток 0.")
+            отв_en, отв_ru = f"yes: {a} = {b} × {q}, remainder 0.", f"да: {a} = {b} × {q}, остаток 0."
         else:
-            вон.append(f"is {a} divisible by {b}? no: {a} = {b} × "
-                       f"{q} + {r}, remainder {r}.")
-            вон.append(f"делится ли {a} на {b}? нет: {a} = {b} × {q} "
-                       f"+ {r}, остаток {r}.")
+            отв_en, отв_ru = f"no: {a} = {b} × {q} + {r}, remainder {r}.", f"нет: {a} = {b} × {q} + {r}, остаток {r}."
+        for форма in формы_пакета("en", "divisible"):
+            вон.append(f"{форма.format(a, b)} {отв_en}")
+        for форма in формы_пакета("ru", "divisible"):
+            вон.append(f"{форма.format(a, b)} {отв_ru}")
     return вон
 
 
