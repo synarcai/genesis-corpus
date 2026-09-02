@@ -44,7 +44,7 @@ COURTS=("courts/arith_court.py" "courts/algo_court.py"
         "scripts/concept_reach.py"
         "scripts/ask_reach.py" "scripts/band_reach.py" "scripts/biblio_reach.py" "courts/ruverbs_court.py" "courts/script_court.py" "scripts/word_mutants.py" "scripts/shelf_court.py" "scripts/ask_width.py" "courts/notationvar_court.py"
         "courts/prosetree_court.py" "courts/longdiv_court.py"
-        "scripts/form_census.py"
+        "scripts/form_census.py" "scripts/verbthings_court.py"
         "scripts/coverage.py")
 FELL=0
 for entry in "${COURTS[@]}"; do
