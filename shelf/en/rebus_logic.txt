@@ -1,0 +1,742 @@
+Introduction to the Book
+
+Benjamin Martin
+
+While philosophy is often thought to be defined by the kinds of questions it attempts to answer, in reality the subject area is defined just as much by its methodology. In this sense, it is no different to other research areas. Each has norms with regard to both the types of questions it attempts to answer, and how it goes about answering those questions. While other parts of this Introduction to Philosophy series are primarily interested in providing you with a background to the questions philosophers are interested in answering, this part on logic will provide you with an introduction to the tools philosophers use to answer these questions.
+
+As with any area of academic research, philosophers are expected to give reasons for their proposals, and within philosophy these reasons predominantly take the form of arguments. To engage in philosophy, then, is to engage in argumentation. And in order to become effective philosophical practitioners it’s paramount that we understand what arguments are, how to recognise them, and how to evaluate them effectively. It is hardly surprising, therefore, that we have a whole branch of philosophy dedicated to answering just these questions, called logic. The goal of this part on logic is to provide you with both the concepts necessary to identify and evaluate arguments, and to start you on the never-ending journey of becoming excellent philosophical practitioners.
+
+Further, the concepts and tools highlighted throughout this part should prove useful in other areas of your life, as arguments play just as much of a role in public life as in intellectual life. Others will propose arguments in an attempt to persuade us that what they say is true, and it is our responsibility to evaluate whether these arguments do indeed give us good reason to endorse their claims. Learning how to evaluate arguments appropriately, therefore, is a fundamental skill, and thus in gaining logical skills, one gains important life skills. These skills can stop us from becoming misled by the claims of others, including politicians and the media, and allow us to become clearer about the reasons we have for our own beliefs. They are some of the best tools we have available to safeguard our own beliefs from the persuasion techniques of others.
+
+This book is made up of five chapters, each of which introduces new fundamental concepts you will need to engage with arguments. The first, What is Logic?, outlines in more detail the goals of logic and its role within philosophy as a whole. You will be introduced to the concept of an argument, how to recognise when something is an argument, and how to go about identifying its content. The second chapter, Evaluating Arguments, builds from the first. Once we have identified an argument, we need to get on to the business of working out if it’s any good. However, it turns out we cannot judge all arguments using the same criteria, for different types of arguments attempt to support their conclusions in different ways. This second chapter then outlines the different types of arguments found within both philosophy and elsewhere, provides you with some tricks on how to spot which type a particular argument is, and criteria for how to evaluate each type.
+
+While Chapters 1 and 2 give you the concepts necessary to identify and evaluate arguments, Chapters 3 and 4 provide you with some of the practical skills necessary to recognise whether an argument is good or not. Chapter 3, Formal Logic in Philosophy, explains how recognising the underlying form of an argument can help us to evaluate an important type of argument found within philosophy, known as deductive arguments. This quest to identify the underlying forms that some arguments share is one of the fundamental goals of a prominent area of research within logic, known as formal logic. As such, Chapter 3 acts as much as an introduction to what formal logicians aim to provide, and an explanation of why your philosophical education would benefit from further study of formal logic.
+
+Systematic mistakes within arguments are known as fallacies, and the aim of Chapter 4 is to provide you with prominent examples of these mistakes. If we recognise that an argument is bad, it is not enough simply to say so; we wish, also, to say why it is bad. This chapter will allow you to do just that, to categorise and identify particular mistakes made within arguments. By being aware of these common mistakes, the aim is not only to be able to recognise when they are made in the arguments of others, but to ensure we are not drawn into making these mistakes ourselves.
+
+The final chapter, Necessary and Sufficient Conditions, has two aims. First, it explains the philosophically important concepts of necessary and sufficient conditions, which play a prominent role within arguments. Becoming comfortable with these concepts is not only important in understanding many philosophical claims made within the other books of this Introduction series, but also claims made within other academic disciplines, such as mathematics and the sciences, and everyday life. Second, the chapter outlines a traditional and common account of what philosophers aim to do when they consider concepts such as knowledge, justice, and morality. According to this account, philosophers are simply engaged in a process of providing the necessary and sufficient conditions for the correct use of a concept. Whether we ultimately agree with this account of philosophical methodology or not, it is important we understand it if we are going to properly engage with the philosophical theories presented throughout this Introduction to Philosophy series.
+
+Included at the end of this book are also a glossary, providing you with definitions of important concepts mentioned within the chapters. If you are reading the book on the web, you will find glossary terms in the text with hyperlinks to their definitions. Click on the terms and the definition should pop up on the screen. If you are reading the book in another form you may only see the glossary terms in bold, and you will need to go to the glossary at the end of the book to find the definitions of those terms. The book also includes a list of suggestions for further reading, which cover important topics within logic in greater detail than we have been able to do here.
+
+As with every book in the Introduction to Philosophy series, this logic book has been written with the philosophical novice in mind. We hope then that you find its language and content accessible. We ultimately hope for more than that though. Our aspiration is that through reading this book you will come to recognise the importance of gaining these logical skills, and become even more motivated to continue your philosophical education.
+
+
+What is Logic?
+
+Matthew Knachel
+
+There’s an ancient view, still widely held, that what makes human beings special—what distinguishes us from the “beasts of the field”—is that we are rational. What does rationality consist in? That’s a vexed question, but one possible response goes roughly like this: we manifest our rationality by engaging in activities that involve reasoning—making claims and backing them up with reasons, acting in accord with reasons and beliefs, drawing inferences from available evidence, and so on.
+
+This reasoning activity can be done well and it can be done badly; it can be done correctly or incorrectly. Logic is the discipline that aims to distinguish good reasoning from bad.
+
+Good reasoning is not necessarily effective reasoning. In fact, as we shall see in a subsequent chapter on logical fallacies, bad reasoning is pervasive and often extremely effective—in the sense that people are often persuaded by it. In logic, the standard of goodness is not effectiveness in the sense of persuasiveness, but rather correctness according to logical rules.
+
+For example, consider Hitler. He persuaded an entire nation to go along with a variety of proposals that were not only false but downright evil. You won’t be surprised to hear that if you examine it critically, his reasoning does not pass logical muster. Hitler’s arguments were effective, but not logically correct. Moreover, his persuasive techniques go beyond reasoning in the sense of backing up claims with reasons. Hitler relied on threats, emotional manipulation, unsupported assertions, etc. There are many rhetorical tricks one can use to persuade.
+
+In logic, we study the rules and techniques that allow us to distinguish good, correct reasoning from bad, incorrect reasoning.
+
+Since there are a variety of different types of reasoning and methods with which to evaluate each of these types, plus various diverging views on what constitutes correct reasoning, there are many approaches to the logical enterprise. We talk of logic, but also of logics. A logic is just a set of rules and techniques for distinguishing good reasoning from bad. A logic must formulate precise standards for evaluating reasoning and develop methods for applying those standards to particular instances.
+
+
+Basic Notions
+
+Reasoning involves claims or statements—making them and backing them up with reasons, drawing out their consequences. Propositions are the things we claim, state, assert.
+
+Propositions are the kinds of things that can be true or false. They are expressed by declarative sentences. We use such sentences to make all sorts of assertions, from routine matters of fact (“the Earth revolves around the Sun”), to grand metaphysical theses (“reality is an unchanging, featureless, unified Absolute”), to claims about morality (“it is wrong to eat meat”).
+
+It is important to distinguish sentences in the declarative mood, which express propositions, from sentences in other moods, which do not. Interrogative sentences, for example, ask questions (“Is it raining?”), and imperative sentences issue commands (“Don’t drink kerosene.”). It makes no sense to ask whether these kinds of sentences express truths or falsehoods, so they do not express propositions.
+
+We also distinguish propositions from the sentences that express them, because a single proposition can be expressed by different sentences. “It’s raining” and “es regnet” both express the proposition that it’s raining; one sentence does it in English, the other in German. Also, “John loves Mary” and “Mary is loved by John” both express the same proposition.
+
+The fundamental unit of reasoning is the argument. In logic, by “argument” we don’t mean a disagreement, a shouting match; rather, we define the term precisely:
+
+Argument = a set of propositions, one of which, the conclusion, is (supposed to be) supported by the others, the premises.
+
+If we’re reasoning by making claims and backing them up with reasons, then the claim that’s being backed up is the conclusion of an argument; the reasons given to support it are the argument’s premises. If we’re reasoning by drawing an inference from a set of statements, then the inference we draw is the conclusion of an argument, and the statements from which it’s drawn are the premises.
+
+We include the parenthetical hedge—“supposed to be”—in the definition to make room for bad arguments. A bad argument, very roughly speaking, is one where the premises fail to support the conclusion; a good argument’s premises actually do support the conclusion.
+
+
+Analysis of Arguments
+
+The following passage expresses an argument:
+
+You shouldn’t eat at McDonald’s. Why? First of all, because they pay their workers very low wages. Second, the animals that provide their meat are raised in deplorable conditions. Finally, the food is extremely unhealthy.
+
+So does this passage:
+
+The universe is vast and complex. And yet does it not also display an astonishing degree of order? The planets orbit the sun according to regular laws, and animals’ minutest parts are arranged precisely to serve their purposes. Such order and complexity cannot arise at random. The universe must therefore be the product of a Designer of enormous power and intellect, whom we call God.
+
+Again, the ultimate purpose of logic is to evaluate arguments—to distinguish the good from the bad. To do so requires distinctions, definitions, principles, and techniques that will be outlined in subsequent chapters. For now, we will focus on identifying and reconstructing arguments.
+
+The first task is to explicate arguments—to state explicitly their premises and conclusions. A perspicuous way to do this is simply to list declarative sentences expressing the relevant propositions, with a line separating the premises from the conclusion, thus:
+
+McDonald’s pays their workers very low wages.
+
+The animals that provide McDonald’s meat are raised in deplorable conditions.
+
+McDonald’s food is very unhealthy.
+
+$/ \therefore$ You shouldn’t eat at McDonald’s.
+
+This is an explication of the first argumentative passage above. To identify the conclusion of an argument, it is helpful to ask oneself, “What is this person trying to convince me to believe by saying these things? What is the ultimate point of this passage?” The answer is pretty clear in this case. Another clue as to what’s going on in the passage is provided by the word “because” in the third sentence. Along with other words, like “since” and “for,” it indicates the presence of a premise. We can call such words premise markers. The symbol “/∴” can be read as shorthand for “therefore.” Along with expressions like “consequently,” “thus,” “it follows that” and “which implies that,” “therefore” is an indicator that the argument’s conclusion is about to follow. We call such locutions conclusion markers. Such a marker is not present in the first argument, but we do see one in the second, which may be explicated thus:
+
+The universe is vast and complex.
+
+The universe displays an astonishing degree of order.
+
+The planets orbit the sun according to regular laws.
+
+Animals’ minutest parts are arranged precisely to serve their purposes.
+
+Such order and complexity cannot arise at random.
+
+$/ \therefore$ The universe must be the product of a designer of enormous power and intellect: God.
+
+Several points of comparison to our first explication are worthy of note here. First, as mentioned, we were alerted of the conclusion by the word “therefore.” Second, this passage required much more paraphrase than the first. The second sentence is interrogative, not declarative, and so it does not express a proposition. Since arguments are, by definition, collections of propositions, we must restrict ourselves to declarative sentences when explicating them. Since the answer to the second sentence’s rhetorical question is clearly “yes,” we paraphrase as shown. The third sentence expresses two propositions, so in our explication we separate them; each one is a premise.
+
+So sometimes, when we explicate an argument, we have to take what’s present in the argumentative passage and change it slightly, so that all of the sentences we write down express the propositions present in the argument. This is paraphrasing. At other times, we have to do even more. For example, we may have to introduce propositions which are not explicitly mentioned within the argumentative passage, but are undoubtedly used within the argument’s reasoning.
+
+There’s a Greek word for argumentative passages that leave certain propositions unstated: enthymemes. Here’s an example:
+
+There cannot be an all-loving God, because so many innocent people all over the world are suffering.
+
+There’s an implicit premise lurking in the background here—something that hasn’t been said, but which needs to be true for the argument to go through. We need a claim that connects the premise to the conclusion—that bridges the gap between them. Something like this: An all-loving God would not allow innocent people to suffer. Or maybe: widespread suffering is incompatible with the idea of an all-loving deity. The premise points to suffering, while the conclusion is about God; these propositions connect those two claims. A complete explication of the argumentative passage would make a proposition like this explicit:
+
+Many innocent people all over the world are suffering.
+
+An all-loving God would not allow innocent people to suffer.
+
+$/ \therefore$ There cannot be an all-loving God.
+
+This is the mark of the kinds of tacit premises we want to uncover: if they’re false, they undermine the argument. Often, premises like this are unstated for a reason: they’re controversial claims on their own, requiring evidence to support them; so the arguer leaves them out, preferring not to get bogged down. When we draw them out, however, we can force a more robust dialectical exchange, focusing the argument on the heart of the matter. In this case, a discussion about the compatibility of God’s goodness and evil in the world would be in order. There’s a lot to be said on that topic. Philosophers and theologians have developed elaborate arguments over the centuries to defend the idea that God’s goodness and human suffering are in fact compatible.
+
+So far, our analysis of arguments has not been particularly deep. We have noted the importance of identifying the conclusion and clearly stating the premises, but we have not looked into the ways in which sets of premises can support their conclusions. We have merely noted that, collectively, premises provide support for conclusions. We have not looked at how they do so, what kinds of relationships they have with one another. This requires deeper analysis.
+
+Often, different premises will support a conclusion—or another premise—individually, without help from any others. Consider this simple argument:
+
+① America’s invasion of Iraq was an act of aggression, not self-defense. In addition, ② it was unreasonable to expect that the benefits of the war would outweigh the inevitable horrors it would unleash. Therefore, ③ the Iraq War was not a just war.
+
+Propositions 1 and 2 support the conclusion, proposition 3—and they do so independently. Each gives us a reason for believing that the war was unjust, and each stands as a reason even if we were to suppose that the other were not true; this is the mark of independent premises.
+
+It can be helpful, especially when arguments are more complex, to draw diagrams that depict the relationships among premises and conclusion. We could depict the argument above as follows:
+
+In such a diagram, the circled numbers represent the propositions and the arrows represent the relationship of support from one proposition to another. Since propositions 1 and 2 each support 3 independently, they get their own arrows.
+
+Other relationships among premises are possible. Sometimes, premises provide support for conclusions only indirectly, by giving us a reason to believe some other premise, which is intermediate between the two claims. Consider the following argument:
+
+① Poets are mere “imitators” whose works obscure the truth; hence, ② they have a corrupting influence on the souls of citizens. ③ Poets should therefore be banned from the ideal city-state.
+
+In this example, proposition 1 provides support for proposition 2 (the word “hence” is a clue), while proposition 2 directly supports the conclusion in 3. We would depict the relationships among these propositions thus:
+
+Sometimes premises must work together to provide support for another claim, not because one of them provides reason for believing the other, but because neither provides the support needed on its own; we call such propositions joint premises. Consider the following:
+
+① If true artificial intelligence is possible, then one must be able to program a computer to be conscious. ② But it’s impossible to program consciousness. Therefore, ③ true artificial intelligence is impossible.
+
+In this argument, neither premise 1 nor premise 2 supports the conclusion on its own; rather, the second premise, as it were, provides a key that unlocks the conclusion from the conditional premise 1. We can indicate such interdependence diagrammatically with brackets, thus:
+
+Diagramming arguments in this way can be helpful both in understanding how they work and informing any attempt to critically engage with them. One can see clearly in the first argument that any considerations put forward contrary to one of the independent premises will not completely undermine support for the conclusion, as there is still another premise providing it with some degree of support. In the second argument, though, reasons telling against the second premise would cut off support for the conclusion at its root; and anything contrary to the first premise will leave the second in need of support. And in the third argument, considerations contrary to either of the joint premises will undermine support for the conclusion. Especially when arguments are more complex, such visual aids can help us recognize all of the inferences contained within the argument.
+
+Perhaps it will be useful to conclude by considering a slightly more complex argument. Let’s consider the nature of numbers:
+
+① Numbers are either abstract or concrete objects. ② They cannot be concrete objects because ③ they don’t have a location in space and ④ they don’t interact causally with other objects. Therefore, ⑤ numbers are abstract objects.
+
+The conclusion of this argument is the last proposition, that numbers are abstract objects. Notice that the first premise gives us a choice between this claim and an alternative—that they are concrete. The second premise denies that alternative, and so premises 1 and 2 are working together to support the conclusion:
+
+Now we need to make room in our diagram for propositions 3 and 4. They are there to give us reasons for believing that numbers are not concrete objects. First, by asserting that numbers aren’t located in space like concrete objects are, and second by asserting that numbers don’t interact with other objects, like concrete objects do. These are separate, independent reasons for believing they aren’t concrete, so we end up with this diagram:
+
+
+Logic and Philosophy
+
+At the heart of the logical enterprise is a philosophical question: What makes a good argument? That is, what is it for a set of claims to provide support for some other claim? Or maybe: When are we justified in drawing inferences? To answer these questions, logicians have developed a wide variety of logical systems, covering different types of arguments, and applying different principles and techniques. Many of the tools developed in logic can be applied beyond the confines of philosophy. The mathematician proving a theorem, the computer scientist programming a computer, the linguist modeling the structure of language—all these are using logical methods. Because logic has such wide application, and because of the formal/mathematical sophistication of many logical systems, it occupies a unique place in the philosophical curriculum. A class in logic is typically unlike other philosophy classes in that very little time is spent directly engaging with and attempting to answer the “big questions”; rather, one very quickly gets down to the business of learning logical formalisms. The questions logic is trying to answer are important philosophical questions, but the techniques developed to answer them are worthy of study on their own.
+
+This does not mean, however, that we should think of logic and philosophy as merely tangentially related; on the contrary, they are deeply intertwined. For all the formal bells and whistles featured in the latest high-end logical system, at bottom it is part of an effort to answer the fundamental question of what follows from what. Moreover, logic is useful to the practicing philosopher in at least three other ways.
+
+Philosophers attempt to answer deep, vexing questions—about the nature of reality, what constitutes a good life, how to create a just society, and so on. They give their answers to these questions, and they back those answers up with reasons. Then other philosophers consider their arguments and reply with elaborations and criticisms—arguments of their own. Philosophy is conducted and makes progress by way of exchanging arguments. Since they are the primary tool of their trade, philosophers better know a little something about what makes for good arguments! Logic, therefore, is essential to the practice of philosophy.
+
+But logic is not merely a tool for evaluating philosophical arguments; it has altered the course of the ongoing philosophical conversation. As logicians developed formal systems to model the structure of an ever-wider range of discursive practices, philosophers have been able to apply their insights directly to traditional philosophical problems and recognize previously hidden avenues of inquiry. Since the turn of the 20th century especially, the proliferation of novel approaches in logic has sparked a revolution in the practice of philosophy. It is not too much of an exaggeration to say that much of the history of philosophy in the 20th century constituted an ongoing attempt to grapple with new developments in logic, and the philosophical focus on language that they seemed to demand. No philosophical topic—from metaphysics to ethics to epistemology and beyond—was untouched by this revolution.
+
+Finally, logic itself is the source of fascinating philosophical questions. The basic question at its heart—what is it for a claim to follow from others?—ramifies out in myriad directions, providing fertile ground for philosophical speculation. There is logic, and then there is philosophy of logic. Logic is said to be “formal,” for example. What does that mean? It’s a surprisingly difficult question to answer. Our simplest logical formulations of conditional sentences (those involving “if”), lead to apparent paradoxes. How should those be resolved? Should our formalisms be altered to better capture the natural-language meanings of conditionals? What is the proper relationship between logical systems and natural languages, anyway?
+
+Traditionally, most logicians have accepted that logic should be “bivalent”: every proposition is either true or false. But natural languages contain vague terms whose boundaries of applicability are not always clear. For example, “bald”: for certain subjects, we might be inclined to say that they’re well on their way to full-on baldness, but not quite there yet; on the other hand, we would be reluctant to say that they’re not-bald. There are in-between cases. For such cases, we might want to say, for example, that the proposition that Fredo is bald is neither true nor false. Some logicians have developed logics that are not bivalent, to deal with this sort of linguistic phenomenon. Some add a third truth-value: “neither” or “undetermined,” for instance. Others introduce infinite degrees of truth (this is called “fuzzy logic”). These logics deviate from traditional approaches. Are they therefore wrong in some sense? Or are they right, and the traditionalists wrong? Or are we even asking a sensible question when we ask whether a particular logical system is right or wrong? Can we be so-called logical “pluralists,” accepting a variety of incompatible logics, depending, for example, on whether they’re useful?
+
+These sorts of questions are beyond the scope of this introductory text, of course. They’re included to give you a sense of just how far one can take the study of logic. The task for now, though, is to begin that study.
+
+
+Evaluating Arguments
+
+Nathan Smith
+
+One particularly relevant application of logic is assessing the relative strength of philosophical claims. While the topics covered by philosophers are fascinating, it is often difficult to determine which positions on these topics are the right ones. Many students are led to think that philosophy is just a matter of opinion. After all, who could claim to know the final answer to philosophical questions?
+
+It’s not likely that anyone will ever know the final answer to deep philosophical questions. Yet there are clearly better and worse answers; and philosophy can help us distinguish them. This chapter will give you some tools to begin to distinguish which positions on philosophical topics are well-founded and which are not. When a person makes a claim about a philosophical subject, you should ask, “What are the arguments to support that claim?” Once you have identified an argument, you can use these tools to assess whether it’s a good or bad one, whether the evidence and reasoning really support the claim or not.
+
+In broad terms, there are two features of arguments that make them good: (1) the structure of the argument and (2) the truth of the evidence provided by the argument. Logic deals more directly with the structure of arguments. When we examine the logic of arguments, we are interested in whether the arguments have the right architecture, whether the evidence provided is the right sort of evidence to support the conclusion drawn. However, once we try to evaluate the truth of the conclusion, we need to know whether the evidence is true. We’ll look at both of these considerations in what follows.
+
+
+Inference and Implication: Why Conclusions Follow from Premises
+
+An argument is a connected series of propositions, some of which are called premises and at least one of which is a conclusion. The premises provide the reasons or evidence that supports the conclusion. From the point of view of the reader, an argument is meant to persuade the reader that, once the premises are accepted as true, the conclusion follows from them. If the reader accepts the premises, then she ought to accept the conclusion. The act of reasoning that connects the premises to the conclusion is called an inference. A good argument supports a rational inference to the conclusion, a bad argument supports no rational inference to the conclusion.
+
+Consider the following example:
+
+All human beings are mortal.
+
+Socrates is a human being.
+
+$/ \therefore$ Socrates is mortal.
+
+This argument asserts that Socrates is mortal. It does so by appealing to the fact that Socrates is a human being, together with the idea that all human beings are mortal. There is clearly a strong connection between the premises and conclusion. Imagine a reader who accepts both premises but denies the conclusion. This person would have to believe that Socrates is a human being and that all human beings are mortal, but still deny that Socrates is mortal. How could such a person maintain that belief? It just doesn’t seem rational to believe the premises but deny the conclusion!
+
+Now consider the following argument:
+
+I saw a black cat today.
+
+My knee is aching.
+
+$/ \therefore$ It is going to rain.
+
+Suppose that it does, in fact, rain and the person who advances this argument believes that it is going to rain. Is that person justified in their belief that it will rain? Not based on the argument presented here! In this argument, there is a very weak connection between the premises and the conclusion. So, even if the conclusion turns out to be true, there is no reason why a reader ought to accept the conclusion given these premises (there may be other reasons for thinking it is going to rain that are not provided here, of course). The point is that these premises do not provide the right sort of evidence to justify the conclusion.
+
+So far, I have described the connection between premises and conclusion in terms of the psychological demand placed on a reader of the argument. However, we can describe this connection from another perspective. We can say that the premises of an argument logically imply a conclusion. Either way of speaking is correct. What they assert is that good arguments present a strong connection between the truth of the premises and the truth of the conclusion. In the next few sections, we will examine three different types of logical connection, each with its own rules for evaluation. Sometimes logical implication is guaranteed (as in the case of deductive arguments), sometimes the logical connection only ensures the conclusion is probable (as with inductive and abductive arguments).
+
+
+Deductive Arguments
+
+Deductive arguments are the most common type of argument in philosophy, and for good reason. Deductive arguments attempt to demonstrate that the conclusion follows necessarily from the premises. As long as the premises of a good deductive argument are true, the conclusion is true as a matter of logic. This means that if I know the premises are true, I know with one-hundred percent certainty that the conclusion is also true! This may be hard to believe; after all, how can we be absolutely certain about anything? But notice what I am saying: I am not saying that we know the conclusion is true with one-hundred percent certainty. I am saying that we can be one-hundred percent certain the conclusion is true, on the condition that the premises are true. If one of the premises is false, then the conclusion is not guaranteed.
+
+Here are two examples of good deductive arguments. They are both valid and have true premises. A valid argument is an argument whose premises guarantee the truth of the conclusion. That is, if the premises are true, then it is impossible for the conclusion to be false. A valid deductive argument whose premises are all true is called a sound argument.
+
+If it rained outside, then the streets will be wet.
+
+It rained outside.
+
+$/ \therefore$ The streets are wet.
+
+Either the world ended on December 12, 2012 or it continues today.
+
+The world did not end on December 12, 2012.
+
+$/ \therefore$ The world continues today.
+
+Hopefully, you can see that these arguments present a close connection between the premises and conclusion. It seems impossible to deny the conclusion while accepting that the premises are all true. This is what makes them valid deductive arguments. To show what happens when similar arguments employ false premises, consider the following examples:
+
+If Russia wins the 2018 FIFA World Cup, then Russia is the reigning FIFA world champion [in 2019].
+
+Russia won the 2018 FIFA World Cup.
+
+$/ \therefore$ Russia is the reigning FIFA world champion [in 2019].
+
+Either snow is cold or snow is dry.
+
+Snow is not cold.
+
+$/ \therefore$ Snow is dry.
+
+You may recognize that these arguments have the same structure as the previous two arguments. That is, each expresses the same connection between the premises and conclusion, and they are all deductively valid. However, these latter two arguments have at least one false premise and this false premise is the reason why these otherwise valid arguments reach a false conclusion. In the case of these arguments, the structure is good, but the evidence is bad.
+
+Deductive arguments are either valid or invalid because of the form or structure of the argument. They are sound or unsound based on the form, plus the content. You might become familiar with some of the common forms of arguments (many of them have names) and once you do, you will be able to tell when a deductive argument is invalid.
+
+Now let’s look at some invalid deductive arguments. These are arguments that have the wrong structure or form. Perhaps you have heard a playful argument like the following:
+
+Grass is green.
+
+Money is green.
+
+$/ \therefore$ Grass is money.
+
+Here is another example of the same argument:
+
+All tigers are felines.
+
+All lions are felines.
+
+$/ \therefore$ All tigers are lions.
+
+These arguments are examples of the fallacy of the undistributed middle term. The name is not important, but you may recognize what is going on here. The two types of objects in each conclusion are each a member of some third type, but they are not members of each other. So, the premises are all true, but the conclusions are false. If you encounter an argument with this structure, you will know that it is invalid.
+
+But what do you do if you cannot immediately recognize when an argument is invalid? Philosophers look for counterexamples. A counterexample is a scenario in which the premises of the argument are true while the conclusion is clearly false. This automatically shows that it is possible for the argument’s premises to be true and the conclusion false. So, a counterexample demonstrates that the argument is invalid. After all, validity requires that if the premises are all true, the conclusion cannot possibly be false. Consider the following argument, which is an example of a fallacy called affirming the consequent:
+
+If it rained outside, then the streets will be wet.
+
+The streets are wet.
+
+$/ \therefore$ It rained outside.
+
+Can you imagine a scenario where the premises are true, but the conclusion is false?
+
+What if a water main broke and flooded the streets? Then the streets would be wet, but it may not have rained. It would still remain true that if it had rained, the streets would be wet, but in this scenario even if it didn’t rain, the streets would still be wet. So, the scenario where a water main breaks demonstrates this argument is invalid.
+
+The counterexample method can also be applied to arguments where there is no clear scenario that makes the premises true and the conclusion false, but we will have to apply it a little differently. In these cases, we need to imagine another argument that has exactly the same structure as the argument in question but uses propositions that more easily produce a counterexample. Suppose I made the following argument:
+
+Most people who live near the coast know how to swim.
+
+Mary lives near the coast.
+
+$/ \therefore$ Mary knows how to swim.
+
+I don’t know if Mary knows how to swim, but I do know that this argument does not provide sufficient reasons for us to know that Mary knows how to swim. I can demonstrate this by imagining another argument with the same structure as this argument, but the premises of this argument are clearly true while its conclusion is false:
+
+Most months in the calendar year have at least 30 days.
+
+February is a month in the calendar year.
+
+$/ \therefore$ February has at least 30 days.
+
+To review, deductive arguments purport to lead to a conclusion that must be true if all the premises are true. But there are many ways a deductive argument can go wrong. In order to evaluate a deductive argument, we must answer the following questions:
+
+Are the premises true? If the premises are not true, then even if the argument is valid, the conclusion is not guaranteed to be true.
+
+Is the form of the argument a valid form? Does this argument have the exact same structure as one of the invalid arguments noted in this chapter or elsewhere in this book?
+
+Can you come up with a counterexample for the argument? If you can imagine a case in which the premises are true but the conclusion is false, then you have demonstrated that the argument is invalid.
+
+
+Inductive Arguments
+
+Almost all of the formal logic taught to philosophy students is deductive. This is because we have a very well-established formal system, called first-order logic, that explains deductive validity. Conversely, most of the inferences we make on a daily basis are inductive or abductive. The problem is that the logic governing inductive and abductive inferences is significantly more complex and more difficult to formalize than deductive inferences.
+
+The chief difference between deductive arguments and inductive or abductive arguments is that while the former arguments aim to guarantee the truth of the conclusion, the latter arguments only aim to ensure that the conclusion is more probable. Even the conclusions of the best inductive and abductive arguments may still turn out to be false. Consequently, we do not refer to these arguments as valid or invalid. Instead, arguments with good inductive and abductive inferences are strong; bad ones are weak. Similarly, strong inductive or abductive arguments with true premises are called cogent.
+
+Here’s a table to help you remember these distinctions:
+
+Inductive inferences typically involve an appeal to past experience in order to infer some further claim directly related to that experience. In its classic formulation, inductive inferences move from observed instances to unobserved instances, reasoning that what is not yet observed will resemble what has been observed before. Generalizations, statistical inferences, and forecasts about the future are all examples of inductive inference. A classic example is the following:
+
+The Sun rose today.
+
+The Sun rose yesterday.
+
+The Sun has risen every day of human history.
+
+$/ \therefore$ The Sun will rise tomorrow.
+
+You might wonder why this conclusion is merely probable. Is there anything more certain than the fact that the Sun will rise tomorrow? Well, not much. But at some point in the future, the Sun, like all other stars, will die out and its light will become so faint that there will be no sunrise on the Earth. More radically, imagine an asteroid disrupting the Earth’s rotation so that it fails to spin in coordination with our 24-hour clocks—in this case, the Sun would also fail to rise tomorrow. Finally, any inference about the future must always contain a degree of uncertainty because we cannot be certain that the future will resemble the past. So, even though the inference is very strong, it does not provide us with one-hundred percent certainty.
+
+Consider the following, very similar inference, from the perspective of a chicken:
+
+When the farmer came to the coop yesterday, he brought us food.
+
+When the farmer came to the coop the day before, he brought us food.
+
+Every day that I can remember, the farmer has come to the coop to bring us food.
+
+$/ \therefore$ When the farmer comes today, he will bring food.
+
+From a chicken’s perspective, this inference looks equally as strong as the previous one. But this chicken will be surprised on that fateful day when the farmer comes to the coop with a hatchet to butcher her! From the chicken’s perspective, the inference may appear strong, but from the farmer’s perspective, it’s fatally flawed. The chicken’s inference shares some similarities with the following example:
+
+A recent poll of over 5,000 people in the USA found that 85% of them are members of the National Rifle Association.
+
+The poll found that 98% of respondents were strongly or very strongly opposed to any firearms regulation.
+
+$/ \therefore$ Support of gun rights is very strong in the USA.
+
+While the conclusion of this argument may be true and certainly appears to be supported by the premises, there is a key weakness that undermines the argument. You may suspect that these polling numbers present unusually high support for guns, even in the USA. So, you may suspect that something is wrong with the data. But if I tell you that this poll was taken outside of a gun show, then you should realize that data may be correct, but the sample is clearly flawed. This reveals something important about inductive inferences. Inductive inferences depend on whether the sample set of experiences from which the conclusion is inferred are representative of the whole population described in the conclusion. In the cases of the chicken and gun rights, we are provided with a sample of experiences that are not representative of the populations in the conclusion. If we want to generalize about chicken farmer behavior, we need to sample the range of behaviors a farmer engages in. One chicken may not have enough data points to make a generalization about farmer behavior. Similarly, if we want to make a claim about the gun control preferences in the USA, we need to have a sample that represents all Americans, not just those who attend gun shows. The sample of experiences in a strong inductive argument must be representative of the conclusion that is drawn from it.
+
+To review, strong inductive inferences lead to conclusions that are made more likely by the premises, but not guaranteed to be true. They are typically used to make generalizations, infer statistical probabilities, and make forecasts about the future. To evaluate an inductive inference, you should use the following guidelines:
+
+Are the premises true? Just like deductive arguments, inductive arguments require true premises to infer that the conclusion is likely to be true.
+
+Are the examples cited in the premises a large enough sample? The larger the sample, the greater the likelihood it is representative of the population as a whole, and thus the more likely inductive inferences made on the basis of it will be strong.
+
+
+Abductive Arguments
+
+Abductive arguments produce conclusions that attempt to explain the phenomena found in the premises. From a commonsense point of view, we can think of abductive inferences as “reading between the lines,” “using context clues,” or “putting two and two together.” We typically use these phrases to describe an inference to an explanation that is not explicitly provided. This is why abductive arguments are often called an “inference to the best explanation.” From a scientific perspective, abduction is a critical part of hypothesis formation. Whereas the classic “scientific method” teaches that science is deductive and that the purpose of experimentation is to test a hypothesis (by confirming or disconfirming the hypothesis), it is not always clear how scientists arrive at a hypothesis. Abduction provides an explanation for how scientists generate likely hypotheses for experimental testing.
+
+Even though Sherlock Holmes is famous for declaring, in the course of his investigations, “Deduction, my dear Watson,” he probably should have said “Abduction”! Consider the following inference:
+
+The victim’s body has multiple stab wounds on its right side.
+
+There was evidence of a struggle between the murderer and the victim.
+
+$/ \therefore$ The murderer was left-handed.
+
+You should recognize that the conclusion is not guaranteed by the premises, and so it is not a deductive argument. Additionally, the argument is not inductive, because the conclusion isn’t simply an extension from past experiences. This argument attempts to provide the best explanation for the evidence in the premises. In a struggle, two people are most likely to be standing face to face. Also, the killer probably attacked with his or her dominant hand. It would be unnatural for a right-handed person to stab with their left hand or to stab a person facing them on that person’s right side. So, the fact that the murderer is left-handed provides the most likely explanation for the stab wounds.
+
+You use these sorts of inferences regularly. For instance, suppose that when you come home from work, you notice that the door to your apartment is unlocked and various items from the refrigerator are out on the counter. You might infer that your roommate is home. Of course, this explanation is not guaranteed to be true. For instance, you may have forgotten to lock the door and put away your food in your haste to get out the door. Abductive inferences attempt to reason to the most likely conclusion, not one that is guaranteed to be true.
+
+What makes an abductive inference strong or weak? Good explanations ought to take account of all the available evidence. If the conclusion leaves some evidence unexplained, then it is probably not a strong argument. Additionally, extraordinary claims require extraordinary evidence. If an explanation requires belief in some entirely novel or supernatural entity, or generally requires us to revise deeply held beliefs, then we ought to demand that the evidence for this explanation is very solid. Finally, when assessing alternative explanations, we should heed the advice of “Ockham’s Razor.” William of Ockham argued that given any two explanations, the simpler one is more likely to be true. In other words, we should be skeptical of explanations that require complex mechanics, extensive caveats and exceptions, or an extremely precise set of circumstances, in order to be true.
+
+Consider the following arguments with identical premises:
+
+There have been hundreds of stories about strange objects in the night sky.
+
+There is some video evidence of these strange objects.
+
+Some people have recalled encounters with extraterrestrial life forms.
+
+There are no peer-reviewed scientific accounts of extraterrestrial life forms visiting earth.
+
+$/ \therefore$ There must be a vast conspiracy denying the existence of aliens.
+
+There have been hundreds of stories about strange objects in the night sky.
+
+There is some video evidence of these strange objects.
+
+Some people have recalled encounters with extraterrestrial life forms.
+
+There are no peer-reviewed scientific accounts of extraterrestrial life forms visiting earth.
+
+$/ \therefore$ The stories, videos, and recollections are probably the result of confusion, confabulation or exaggeration, or are outright falsifications.
+
+Which is the more likely explanation?
+
+To review, abductive inferences assert a conclusion that the premises do not guarantee, but which aims to provide the most likely explanation for the phenomena detailed in the premises. To assess the strength of an abductive inference, use the following guidelines:
+
+Is all the relevant evidence provided? If critical pieces of information are missing, then it may not be possible to know what the right explanation is.
+
+Does the conclusion explain all of the evidence provided? If the conclusion fails to account for some of the evidence, then it may not be the best explanation.
+
+Extraordinary claims require extraordinary evidence! If the conclusion asserts something novel, surprising, or contrary to standard explanations, then the evidence should be equally compelling.
+
+Use Ockham’s Razor; recognize that the simpler of two explanations is likely the correct one.
+
+
+Formal Logic in Philosophy
+
+Bahram Assadian
+
+This chapter discusses some philosophical issues concerning the nature of formal logic. Particular attention will be given to the concept of logical form, the goal of formal logic in capturing logical form, and the explanation of validity in terms of logical form. We shall see how this understanding of the notion of validity allows us to identify what we call formal fallacies, which are mistakes in an argument due to its logical form. We shall also discuss some philosophical problems about the nature of logical forms. For the sake of simplicity, our focus will be on propositional logic. But many of the results to be discussed do not depend on this choice, and are applicable to more advanced logical systems.
+
+
+Logic, Validity, and Logical Forms
+
+Different sciences have different subject matters: physics tries to discover the properties of matter, history aims to discover what happened in the past, biology studies the development and evolution of living organisms, mathematics is, or at least seems to be, about numbers, sets, geometrical spaces, and the like. But what is it that logic investigates? What, indeed, is logic?
+
+This is an essentially philosophical question, but its answer requires reflection on the status and behavior of logical rules and inferences. Textbooks typically present logic as the science of the relation of consequence that holds between the premises and the conclusion of a valid argument, where an argument is valid if it is not possible for its premises to be true and the conclusion false. If logic is the science of the relation of consequence that holds between the premises and the conclusion of a valid argument, we can say that logicians will be concerned with whether a conclusion of an argument is or is not a consequence of its premises.
+
+Let us examine the notion of validity with more care. For example, consider the following argument:
+
+If Alex is a sea bream, then Alex is not a rose.
+
+Alex is a rose.
+
+$/ \therefore$ Alex is not a sea bream.
+
+It can be shown that it is not possible for (1) and (2) to be true yet (3) false. Hence, the whole argument is valid. For convenience, let us represent each sentence of the argument into the standard propositional logic, which aims to analyze the structure and meaning of various propositions. To do this, we must first introduce the language of our logic.
+
+The alphabet of propositional logic contains letters standing for sentences: A, B, C, and so on. For example, we can translate “Alex is a rose” by just using B. Similarly, we can use S to translate “I would love to smell it.” The alphabet of propositional logic contains other symbols known as logical connectives. One is a symbol for “not” or negation $(\neg)$. When we say that Alex is not a rose, we, in effect, say that it is not the case that Alex is a rose. If we translate “Alex is a rose” by B, we translate “Alex is not a rose” as “ $\neg B$.” Another is a symbol $(\rightarrow)$ for conditional sentences of the form “if … then ….” For example, we can translate “If Alex is a rose, then I would love to smell it” as “ $B \rightarrow A$.” When we say that if Alex is a rose, then I would love to smell it, we say something conditional: on the condition that Alex is a rose, I would love to smell it. In general, a conditional sentence has two components. We call the first component the antecedent, the second component the consequent, and the whole proposition a conditional. The language of our logic also includes “and” $(\wedge)$, otherwise known as conjunction, and “or” $(\vee)$, otherwise known as disjunction. But in this chapter, we shall only deal with negation and conditional.
+
+Thus, if we use A for “Alex is a sea bream,” we can represent (1) with $A \rightarrow \neg B$, and represent our above argument (1)-(3) as follows:
+
+But, recall, our aim was to examine why this argument, if at all, is valid. The mere representation of “not” by “ $\neg$ ” and “if … then” by “ $\rightarrow$ ” will not be sufficient to verify the validity or invalidity of a given argument: we also need to know what these symbols and the propositions they express mean. But how can we specify the meaning of “ $\neg$ ” and “ $\rightarrow$ ”?
+
+It is plausible to say that if A is true, then its negation is false, and vice versa. For example, if “Alex is a rose” is true, then “Alex is not a rose” is false. This gives us the meaning of “ $\neg$ ”. We can represent this information about the meaning of negation in terms of a truth-table in the following way (with T symbolising true, and F false):
+
+Here, we can read each row of the truth-table as a way the world could be. That is, in situations or possible worlds where A is true (for example, where Alex is indeed a sea bream), $\neg \textit{A}$ is false (it is false that Alex is a sea bream); and vice versa. Thus construed, a truth-table gives us the situations in which a proposition such as A is true, and those in which it is false. In addition, it tells us in what situations $\neg \textit{A}$ is true, and in what situations it is false.
+
+In a similar way, we can specify the meaning of “ $\rightarrow$ ” by specifying the situations in which conditional propositions of the form “ $\textit{A} \rightarrow \textit{B}$ ” are true or false. Here is the standard truth-table for “ $\rightarrow$ ”:
+
+As can be seen, there is only one row in which $\textit{A} \rightarrow \textit{B}$ is false; i.e. the second row in which the consequent is false, but the antecedent is true. As the first row tells us, if both A and B are true, then so is $\textit{A} \rightarrow \textit{B}$. Further, the third and fourth rows tell us that if the antecedent is false, then the whole conditional is true, regardless of whether the consequent is true or false. Hence, all conditionals with false antecedents are true.
+
+But how is it possible for a conditional to be true if its antecedent is false? Here is one suggestion to answer this question: if your assumption is false, then you can legitimately conclude whatever you would like to. For example, if you assume that Amsterdam is the capital of England, you can legitimately conclude anything whatsoever; it does not matter whether it’s true or false. Thus, from the assumption that Amsterdam is the capital of England, you can conclude that Paris is the capital of France. You can also conclude that Paris is the capital of Brazil.
+
+We can see that one important piece of information that truth-tables convey concerns how the truth or falsity of complex sentences such as $\textit{A} \rightarrow \textit{B}$ and $\neg \textit{A}$ depends on the truth or falsity of the propositional letters they contain: the truth or falsity of $\textit{A} \rightarrow \textit{B}$ depends solely on the truth or falsity of A and of B. Similarly, the truth or falsity of $\neg \textit{A}$ depends solely on that of A.
+
+Now we are in a position to verify whether our argument (1)-(3) is valid or not. And, as we shall see in a moment, the validity or invalidity of an argument depends on the meaning of the logical connectives (such as “ $\rightarrow$ ” and “ $\neg$ ”) which is specified by the corresponding truth-tables. In other words, if the truth-tables of these connectives were different to what they actually are, we would have a different collection of valid arguments.
+
+We defined an argument as valid if it is not possible for its premises to be true and the conclusion false. By designing a truth-table, we can see under what conditions the premises $(\textit{A} \rightarrow \neg \textit{B}, \textit{B})$ and the conclusion $(\neg \textit{A})$ of our argument (1)-(3) are true or false:
+
+Since in the above truth-table, there is no row in which the premises $(\textit{A} \rightarrow \neg \textit{B}, \textit{B})$ are true and the conclusion $(\neg A)$ false, the argument is valid. The only row in which the premises are both true is the third row, and in that row the conclusion is also true. In other words, there is no world or situation in which (1) and (2) are true, but (3) is not. This just means that the argument is valid.
+
+Now, consider the following argument:
+
+If Alex is a tiger, then Alex is an animal.
+
+Alex is not a tiger.
+
+$/ \therefore$ Alex is not an animal.
+
+There are situations in which the argument works perfectly well. For example, suppose that Alex is not a tiger but is, in fact, a table. In this case, Alex would not be an animal, either. And thus, the sentences (4), (5), and (6) would be true. But this is not always the case, for we can imagine a situation in which the premises are true but the conclusion false, such as where Alex is not a tiger but is, in fact, a dog. Thus, by imagining the situation just described, we would have produced a counterexample: in this situation, (6) would be false, and hence it would not be a consequence of (4) and (5). The argument is invalid.
+
+That the argument is invalid can also be verified by the method of truth-tables. For we can find a situation in which (4) and (5) are both true and yet (6) false. That is, in the truth-table, if we represent (4) as $\textit{C} \rightarrow \textit{D}$, (5) as $\neg \textit{C}$, and (6) as $\neg \textit{D}$, there will be at least one row in which the premises are true and the conclusion false (which row is that?):
+
+We said that logicians are concerned with validity or invalidity of arguments, and we proposed the method of truth-tables for undertaking this task. But which arguments are valid, and which are not? It is here that the notion of logical form emerges. Suppose that a logician embarks on the ridiculous task of recording each and every valid argument. In this case, she would surely record that (1)-(3) is valid. Now, suppose she faces the following argument:
+
+If Alice is reading Hegel, she is not frustrated.
+
+Alice is frustrated.
+
+$/ \therefore$ Alice is not reading Hegel.
+
+To see whether this argument is valid or not, she can rewrite each sentence of the argument in her logical language: Alice is reading Hegel $(\textit{P})$; Alice is frustrated $(\textit{Q})$; and, if Alice is reading Hegel, then Alice is not frustrated) $(\textit{P} \rightarrow \neg \textit{Q})$. She can then design a suitable truth-table, and check whether there is any row or situation in which the premises are both true and the conclusion false. Since there is no such row (why?), she will correctly announce that the argument is valid.
+
+But it is obvious that in order to check the validity of (7)-(9), our logician did not need to go to this effort. It would suffice if she just noted that the two arguments (1)-(3) and (7)-(9), and their respective truth-tables, are to a great extent similar; they have the same form. In fact, their only difference is that in the first, the letters A and B have been used, and in the second they have been substituted for P and Q, respectively. The logical connectives $\rightarrow$ and $\neg$ have not changed.
+
+To see the point, let us translate each argument into the language of propositional logic we introduced above:
+
+The two arguments have something in common. Let us say that what they have in common is their logical form. As you can see, the logical connectives of the arguments have not changed. Since the two arguments have the same form, if one is valid, then the other must be valid, too. More generally, all arguments of this same form are valid. The liberating news is that our logician does not need to embark on the exasperating task of checking the validity of each and every argument separately. For if she already knows that a given argument is valid, and if she can also show that another argument has the same form as the first one, then she can be sure that the second argument is valid without having to design its truth-table.
+
+We said that an argument is valid if it is not possible for the premises to be true and the conclusion false. Now, we can say that every argument which shares its form with a valid argument is also valid, and consequently, every argument which shares its form with an invalid argument is also invalid. It is in this sense that the idea of logical form can be used to establish thevalidity of arguments. For example, suppose that we want to check the validity of the following argument:
+
+If Alice is reading Russell, then Alice is thinking of logic.
+
+Alice is not reading Russell.
+
+$/ \therefore$ Alice is not thinking of logic.
+
+As soon as we see that (10)-(12) has the same form as (4)-(6), which we already know to be invalid, we can be assured that the former is also invalid without having to construct its truth-table.
+
+Thus, we can see that understanding the notion of validity in terms of logical form allows us to identify various formal fallacies. For example, the argument (10)-(12) is an instance of the fallacy of denying the antecedent. Thus, every argument which shares its form with (10)-(12) is also invalid.
+
+There are three further questions we may ask about logical forms: (i) How can we “extract” the logical form from arguments which they share? That is, how can we show that various arguments are instances of a common logical form? (ii) What is the nature of a logical form? Is a logical form a thing, and if so, what sort of thing is it? (iii) Does each argument have only one logical form? In the following three sections, we shall talk about these three questions, respectively.
+
+
+Extracting Logical Forms
+
+Let us, again, consider the arguments (1)-(3) and (7)-(9) which seem to share one and the same logical form. How can we show that they have a common logical form? First, we should represent them in logical symbols:
+
+To see what these two arguments have in common, we must abstract away from (or ignore or leave aside) the specific contents of their particular premises and conclusions, and thereby reveal a general form that is common to these arguments. For example, we must ignore whether Alex is or is not a rose; all that matters is to replace “Alex is a rose” with B. In this sense, to obtain or extract the logical form of an argument, we must abstract from the content of the premises and the conclusion by regarding them as mere place-holders in the form that the argument exhibits. As you may have noted, we do not extract away the content of the logical connectives. It is an important question as to why we do not abstract away from the logical connectives. The basic thought is that their meaning constitutes an important part of the logical form of an argument, and thereby in determining itsvalidity.
+
+To talk about logical forms, we shall use the lowercase Greek letters such as $\alpha, \beta, \gamma,$ and $\delta$. For example, we can represent the logical form that (1)-(3) and (7)-(9) share as follows:
+
+An analogy may help here: In mathematics, we think about particular arithmetical propositions such as “ $1 + 2 = 2 + 1$ ” and “ $0 + 2 = 2 + 0$.” But when we want to generalize, we use formulas that contain variables, and not specific numbers. For example, “ $x + y = y + x$ ” expresses something general about the behaviour of the natural numbers. Whatever natural numbers x and y stand for, “ $x + y = y + x$ ” remains true. The same goes with the variables $\alpha, \beta, \gamma,$ and $\delta$, which enable us to talk in a general way about the premises and conclusion of arguments. Whatever meaning $\alpha$ and $\beta$ are given, that is, whatever propositions they express, (i)-(iii) remains valid, and so do all of its instances, such as (1)-(3) and (7)-(9).
+
+As mentioned above, extracting a certain logical form allows us to talk, in a general way, about premises and conclusions of arguments. It does not matter what specific objects and properties—what specific subject matter—they talk about. And this leads us, again, to our initial concern about the real subject matter of logic:
+
+Form can thus be studied independently of subject-matter, and it is mainly in virtue of their form, as it turns out, rather than their subject-matter that arguments are valid or invalid. Hence it is the forms of argument, rather than actual arguments themselves, that logic investigates. (Lemmon 1971, 4)
+
+According to this conception of logic, logicians are in a position to evaluate the validity of an argument, even if they do not strictly understand the content of the claims within the argument, nor under what conditions they would be true. Whether or not the claims within arguments are true, therefore, is not a matter for logic. Instead, what logic does is to explore the logical forms of arguments, and thereby establish theirvalidity.
+
+
+The Nature of Logical Forms
+
+In this and the next section, we will look into more philosophical matters. In this section, we shall discuss our second question: what is the nature of a logical form? The question about the nature of logical form is reminiscent of the ancient question about the nature of universals. All red roses have something in common; they all share or instantiate something. But what is that thing, if it is a thing at all? Is the property of being red akin to a Platonic universal that exists independently of the red roses that instantiate it? Or is it like an Aristotelian universal whose existence depends on the existence of the particular roses? Perhaps, it does not have any existence at all; it is nothing more than a name or a label that we use to talk about red roses. We can ask exactly the parallel questions about logical forms: What is it that all valid arguments of the same form share or instantiate? Is it an entity in the world, or a symbol in language, or a mental construction formed and created by us?
+
+Assuming that logical forms exist, what are they? There are, generally speaking, two lines of thought here. According to the first, logical forms are schemata, and hence, are linguistic entities. According to the second, logical forms are properties: they are extra-linguistic entities, akin to universals. They are what schemata express or represent. (An analogy may help here: The expression “is happy” is a predicate; it is a linguistic item. But it expresses an extra-linguistic entity, such as the property of being happy.)
+
+Identifying logical forms with schemata appears to be quite intuitive. But it leads to a fallacy. As Timothy Smiley points out, the fallacy lies in “treating the medium as the message” (Smiley 1982, 3). Consider the logical form of (1)-(3):
+
+You may like, with equal right, to identify the logical form of (1)-(3) with:
+
+And yet another logician may prefer to capture its logical form with a distinct set of variables:
+
+Which of these are the logical form of (1)-(3)? There are many different ways to capture its logical form. Which one of them has the right to be qualified as the logical form of (1)-(3)? This question is pressing if logical forms are taken to be schemata, and hence to be linguistic entities. If a logical form is just a string of symbols, then it varies by using a distinct set of variables. There will be no non-arbitrary way to choose one as opposed to any other as the logical form of a given argument. In other words, there will be nothing to choose between these linguistically distinct entities and, hence, none of them could be identified with the logical form of the original argument.
+
+This may encourage us to identify logical forms as language-independent or language-invariant entities. On this view, logical forms are identified not with schemata, but with what schemata express or represent. They are worldly, rather than linguistic, entities. This view does not succumb to the above problem. Since, on this view, logical forms are worldly entities, none of the above candidates–i.e. (i)-(iii), (iv)-(vi), and (vii)-(ix)–is the logical form of (1)-(3). Rather, each of them expresses or represents its logical form.
+
+
+One Logical Form or Many?
+
+It seems then that we will be in a better position if we assume that logical forms are worldly entities. But this does not leave us completely home and dry, either. So far, we have assumed that logical forms are unique entities. That is, we assumed that arguments such as (1)-(3) and (7)-(9) have one and the same logical form. But is that the case?
+
+In general, objects can take many forms. For example, a particular sonnet can be both Petrarchan and Miltonic, and a vase can be both a cuboid and a cube. Also, it seems that a single sentence can take many (at least, more than one) forms. Consider $\neg(\textit{P} \rightarrow \neg \textit{Q})$. What is its logical form? It seems that each of the following options works perfectly well as an answer to our question: it is a negation; it is a negation of a conditional; and it is a negation of a conditional whose consequent is a negation.
+
+Now, suppose that each of these logical forms is a logical form of a given argument. In virtue of what is each of them a logical form of one and the same argument? That is, what explains the fact that different logical forms are forms of one and the same argument? What unifies them in this respect? One answer is to say that all of these forms have a common logical form. But then you can ask the same question about this common logical form, since this very form has further different forms. In virtue of what are these logical forms forms of one and the same form? And this process can go endlessly. You have a logical form which itself has other logical forms, and so on. But this is not compatible with the thesis that logical forms are unique entities.
+
+
+Informal Fallacies
+
+Cassiano Terra Rodrigues
+
+As we have seen in previous chapters, one important feature of an argument is whether it is valid or not (in the case of deductive arguments), or if it’s strong or weak (in the case of inductive and abductive arguments). This chapter outlines some of the important mistakes that can be made within arguments, ensuring they are either invalid, unsound, or weak within a determined context. Within philosophy, such mistakes are called fallacies. Particular focus here will be concentrated upon informal fallacies; that is, mistakes not exclusively related to the logical form of the argument, but including also its content. This means even deductively valid arguments can still be interpreted as fallacious if their premises are deemed unjustified for whatever reasons, including rhetorical reasons (Walton 1995).
+
+Committing flaws in reasoning is in fact very common. Sometimes fallacies just pass unnoticed. But sometimes they are intended, whether because the arguer is uninterested in being reasonable or wishes to induce someone else to make a rational error. The importance of studying fallacies then appears: without being able to identify flaws in reasonings, we would accept—or refuse to accept—any conclusions without good reasons to do so, and would have to base our beliefs purely on the trust of others. A common practice of course, but is it reliable?
+
+More than just identifying flaws, the primary purpose of studying fallacies is to avoid falling foul of them. By showing why and when a certain way of reasoning does not support the truth of the conclusion, that is, does not offer enough convincing evidence for it, the study of fallacies becomes inescapable. Further, identifying these fallacies requires more than relying upon formal logic, it also involves a good deal of discourse analysis. That is, we are required to ask key questions related to the content of the relevant arguments: Who speaks? To whom? From which perspective? With what purpose? For this reason, the study of fallacies must take into account not only failures in logic, but misuses of argumentative techniques. What is argumentatively appropriate in one context may not be in another. The appropriateness will depend on, among other things, the purpose of the argument and the intended audience.
+
+None of this means, however, that we cannot develop general standards for when we ought to recognise good reasoning and bad reasoning. Indeed, as has been noted in previous chapters, it’s of paramount importance that we can provide understandable and publicly accessible standards for evaluating all manner of arguments and reasoning. Let us pay attention to three basic characteristics of good reasoning:
+
+A good argument is logically well-framed. This is the minimum requirement: the premises of a good argument offer reasons for the conclusion. However, different individuals can have different ideas about what counts as a good reason or not—good reasons for one person can be inadequate for another. So, while necessary, this requirement isn’t sufficient.
+
+As there may be disagreement about the premises, a good argument starts from acceptable premises, or premises that are warranted, and not only for the reasoner, but mainly for the audience. Of course, even though not true or plausible at all, certain premises may be acceptable, depending on the audience or even on the function of the argument in a given context. Considerations of form and content necessarily have to be taken together then.
+
+The premises must contain relevant information for the conclusion—if not all that is relevant, at least enough to make the conclusion acceptable. Concealing relevant information is a well-known form of deceiving people, just as taking certain information for granted when it has been widely contested is a mistake.
+
+Fallacies contain errors in one or more of the senses given above. Of course, there are uncountable reasons for accepting a conclusion, such as social, cultural, and psychological reasons. However, the criteria for identifying good arguments are nevertheless logical criteria—that is, they are rational criteria, publicly open to evaluation. So, anyone could identify fallacies by paying attention to the following:
+
+Do the premises support the conclusion, or only offer very weak support for the conclusion?
+
+Are the premises well-supported?
+
+Do the argument’s premises include all the important relevant information?
+
+To avoid being fallacious, an argument must be able to answer all of these questions in the positive. Bearing this in mind, we do not need to attempt to provide an exhaustive list of each and every possible fallacy. All we must do is learn how to identify when and how those criteria are not met, so we can understand when and how arguments fail to be good. So, let us examine a taxonomy of fallacies, that is, how they are classified, and then a list of some common fallacies.
+
+
+Taxonomy of Fallacies
+
+Our taxonomy of fallacies aims to categorise fallacies into distinct groups, highlighting the distinctive problems that members of each group possess. Our most general division is the above mentioned distinction between formal and informal fallacies. As mistakes in the form of deductive arguments have already been covered in Chapter 3, in this chapter we focus on mistakes of the second kind: informal fallacies.
+
+Informal fallacies are so called because their errors lie not in their logical form. Instead, to appreciate what is wrong with them, we must look at the argument’s content, and thus we must examine if the reasoning within the argument meets our other criteria presented above—relevant information and acceptable premises. Such informal fallacies are normally divided into the following three general categories (Kahane and Tidman 2002, 349):
+
+Relevance fallacies: Fallacies of this kind do not present relevant information, or present irrelevant information for the conclusion.
+
+Ambiguity fallacies: Such fallacies employ unclear or equivocal terms or propositions, so that it becomes impossible to grasp a precise sense of what is being argued for. One may be led to think there may even be no sense at all, due to the indeterminacy of meaning.
+
+Fallacies of presumption: In such flawed reasoning, the conclusion rests upon certain assumptions not explicitly stated in the premises. Such assumptions are false, or at least uncertain, implausible or unjustified, so that the premises do not strictly support the conclusion. Explicating the lurking assumption usually suffices to demonstrate the argument’s insufficiency, either due to a lack of relevant information or unacceptable premises.
+
+
+Common Informal Fallacies
+
+The following list is not exhaustive and presents only some of the more common fallacies, for the sake of illustration. They are intentionally not classified according to the classification above—this is a task for you to accomplish after reading this chapter, as an exercise (there is another one at the end of the chapter, and few questions you should answer here and there). Tradition dictates the names are presented in Latin, some of which are more famous than the vernacular.
+
+
+Argument directed to the person (Argumentum ad hominem)
+
+This fallacy consists in attacking the person instead of treating the argument that the person is proposing. Consequently, the character or the personal circumstances of the speaker is raised to invalidate his or her arguments, rather than any fault identified with the argument itself. This is a very common fallacy, of which there are various forms. It will be useful to highlight two of them:
+
+Offensive ad hominem. This form of ad hominem consists in calling into question the moral character of the speaker, thus attempting to dismiss the trustworthiness of the person rather than showing the actual mistakes in their arguments. The offensive ad hominem dismisses a certain opinion on the grounds that those who sustain it are to be dismissed, whatever the independent qualities of the opinion.
+
+Circumstantial ad hominem. The personal circumstances of one who makes or rejects a claim are irrelevant to the truth of what is claimed. This fallacy ignores this important fact by attempting to undermine someone’s argument on the basis of their background, or current circumstances. For example, one might try to argue that we ought not listen to another’s argument as they will benefit from the conclusion’s truth. Such an appeal would obviously be unjustified.
+
+
+The Straw Man fallacy
+
+This is a very common fallacy. According to the principle of charity in argumentation analysis, the strongest interpretation of an argument should always be preferred. The straw man fallacy is the direct refusal to adhere to this principle, and consists in reducing an argument to some weaker version of it simply in order to strike it down. The original strength of the argument is thereby missed and, reduced to a caricature, can be easily refuted. The fallacy’s name comes from the fact that a straw man is easier to beat down than a real man. Some vegan activists claim their opponents often commit this fallacy by stating that if vegans have so much respect for animal life, they should accord the same respect to plant life as well. Vegans may justifiably claim this as a misrepresentation of their own position, and thus does not diminish its legitimacy. The straw man fallacy differs from the ad hominem fallacy in that it does not attempt to undermine the argument by directly attacking the person.
+
+
+Appeal to power or threat of force (Argumentum ad baculum)
+
+In Latin, “baculum” means a cudgel, bat or stick for hitting. An argument with a cudgel is then an appeal to brute force, or a threat of using force instead of reasoning in order to ensure one’s conclusion is accepted. The ad baculum is a sort of intimidation, either literally by physical power or any other kind of threat, so someone feels constrained to accept the conclusion independently of its truth. When someone threatens to use force or power, or any other kind of intimidation instead of reasoning and arguing, one indeed abandons logic. This can then be taken as the utmost fallacy, the most radical way of trying to impose a conclusion without reasoning in favor of it.
+
+Think, for instance, of when someone raises their voice as a form of intimidation to force the acceptance of a conclusion, without giving reasons. A historical example of this fallacy comes from the El Salvador guerrillas’ use of a slogan in the 1980s, in order to prevent people from voting: “vote in the morning; die in the afternoon” (Manwarring and Prisk 1988, 186). The threat, of course, need not be overtly stated. In cinema, one of the most famous lines of Don Corleone, the Mafia character played by Marlon Brando in Francis F. Coppola’s The Godfather (1972), is: “I’m gonna make him an offer he cannot refuse.” One has to watch the movie to see why this is an ad baculum.
+
+
+Begging the question (Petitio principii)
+
+This fallacy arises when the argument’s premises assume the truth of the very conclusion they are supposed to be providing evidence for, so that in order to accept the premises one has first to accept the conclusion. As in such cases the conclusion acts as a support for itself, the Latin name “petition of the principles” is thereby explained. Such arguments are fallacious because they are useless in establishing the truth of the conclusion, even if ultimately the argument’s premises are true and the argument is definitely valid. Why then is this type of argument fallacious? Well, we desire independent evidence for our conclusions. After all, if we already knew the conclusion was true, we wouldn’t require an argument to prove it. Arguments that beg the question, however, provide no such independent evidence. Would you justify your statements just by rephrasing them?
+
+Arguments that beg the question, then, are troublesome because they pretend to be providing independent evidence for the conclusion when in reality they are simply restating the conclusion, or assuming its truth, within the premises. For instance, when someone argues men are better than women in logical reasoning because men are more rational than women, this is to beg the question. Now, if being logical just means being rational, then what has been said is just that men are more logical because they are more logical. Thus the argument simply assumes the very point it is attempting to demonstrate.
+
+
+Appeal to popular opinion (Argumentum ad populum)
+
+The Latin means more precisely “appeal to the populace.” This fallacy consists in the mistake of assuming an idea is true just because it’s popular. Such arguments are fallacious because collective enthusiasm or popular sentiment are not good reasons to support a conclusion. This is a very common fallacy in demagogic discourses, propaganda, movies, and TV shows. Think, for instance, of marketing campaigns that say “products of brand x are better because they are good sellers.” Or when someone says: “everyone agrees with this, why don’t you?” But the “this” can be false even if everyone thinks it is true. The image below illustrates nicely this fallacy:
+
+
+Appeal to pity (Argumentum ad misericordiam)
+
+This happens when someone appeals to the audience’s sentiments to compel support for a conclusion without giving reasons for its truth. A clear example of this fallacy is provided by Patricia Velasco: “[I]t is not uncommon to find students who appeal to the teacher’s sentiments in order to obtain, for instance, a grade review, by reciting an unending roll of personal problems: dogs are sacrificed, marital engagements are broken, grandmothers are hospitalized” (Velasco 2010, 123).
+
+In courts, this kind of fallacy is common, as when the humanitarian sentiments of the jury are appealed to without discussing the facts of the case. There is a very famous and peculiar case of a youth who murdered his mother and father, and then had his attorney plead for a lighter penalty claiming the youth had become an orphan (Copi, Cohen & McMahon 2014, 115).
+
+Sometimes the evocation of sentiments is not fallacious. It can be perfectly reasonable, for example, to combine reasons for a conclusion with an appeal to outrage or anger towards a certain action. This fallacy occurs when appealing to emotions absolutely replaces giving reasons—aiming at persuasion through eliciting emotions solely, without attempting to rationally support the conclusion—so that sentimentalism is used to produce the acceptance of the conclusion, no matter what is true.
+
+
+Appeal to ignorance (Argumentum ad ignorantiam)
+
+This fallacy consists in assuming that the lack of evidence for a position is enough to demonstrate its falsity and, inversely, the lack of evidence for its falsity is enough to entail its truth. This is a very simple fallacy, for we cannot assert the truth of a proposition based on the lack of proof of its falsity, and vice versa. Lack of evidence is a flaw in our knowledge, and not a property of the claim itself. For instance, to say extraterrestrials exist because there is no proof of their non-existence would be to neglect the fact there may be no independent positive evidence for their existence either. The rational attitude to have when we have no evidence for either position is to suspend judgement on the matter.
+
+
+Appeal to authority (Argumentum ad verecundiam)
+
+These are arguments based upon the appeal to some authority, rather than independent reasons. We identify it when the speaker starts to cite famous “authorities,” dropping names instead of giving his or her own reasons, thus recognizing his or her own incapacity to establish the conclusion of the matter at hand, as if saying: “I acknowledge my ignorance, there are others who know better than me on this subject.” This explains its Latin name: “argumentum ad verecundiam,” which is more properly translated as argument based on modesty, or coyness, referring to the speaker, who invokes an authority to support their case.
+
+Notice that an appeal to authority can be legitimate if the authority invoked really is an authority on the subject. If you think of citing Hegel in discussing matters of philosophy, or Marie Curie in chemistry or physics, then the appeal could be reasonable. But invoking Marie Curie’s ideas when talking about football, for instance, would in all likelihood be irrelevant. In other words, an appeal to authority becomes illegitimate when instead of giving reasons and constructing an independent inference for the conclusion, someone seeks to base a conclusion on the say-so of a putative authority, even though this someone is not a competent authority on the subject under discussion. The appeal then is fallacious. But even the highest authority’s opinion on some subject is not enough by itself to establish a conclusion. No conclusion is true or false just because some specialist has said so. Rather, one’s appeal to the word of the authority is merely a shorthand for, “they will be able to provide you with independent support for my conclusion.” If they cannot, then the conclusion is not supported by your appeal to their authority, whatever you say.
+
+This fallacy may seem awkward, but it is in fact very common. For instance, the ideas of Charles Darwin—a renowned biologist—are not rarely invoked in discussions about matters of morals, politics or religion, without biology being really relevant to the case.
+
+
+Hasty generalization
+
+This fallacy is committed whenever one holds a conclusion without sufficient data to support it. In other words, the information used as a basis for the conclusion may well be true, but nonetheless unrepresentative of the majority. Some widely known generalizations are unjustified for just this reason, such as “all Brazilians are football lovers,” “atheists are immoral people,” and “the ends justify the means.” Such generalizations are based on an insufficient set of cases, and cannot be justified with only a few confirming instances.
+
+Our beliefs about the world are commonly based on such generalizations. In fact, it is a hard task not to do so! But that does not mean we should accept such generalizations without examination, and before seeking enough evidence to support them.
+
+
+Equivocation
+
+This is one of the most common fallacies. Whenever a term or expression appears with different meanings in the premises and in the conclusion, the fallacy of equivocation occurs. In these cases, the speaker relies upon the ambiguity of elements of language and shifts their meaning throughout the argument, forcing the audience to accept more than is entailed by the argument when any one fixed meaning is given to the relevant terms. A classical example is:
+
+The end of a thing is its perfection.
+
+Death is the end of life.
+
+$/ \therefore$ Death is the perfection of life.
+
+Here, “end” can mean “goal” or “termination,” so the conclusion could be that the goal of life is perfection, or that life is perfected only when it is terminated. Apart from metaphysical considerations, the argument is only apparently valid, since the change in meaning and context make at least one of the premises or conclusion false (or, implausible).
+
+
+Necessary and Sufficient Conditions
+
+Michael Shaffer
+
+The concepts of necessary and sufficient conditions play central and vital roles in analytic philosophy. For example, being an unmarried male is a necessary condition for being a bachelor and being a bachelor is a sufficient condition for being an unmarried male. That these concepts are vital to philosophy is beyond question, and it is primarily because the orthodox account of the methodology of analytic philosophy involves the contention that philosophy aims to yield accurate specifications of sets of necessary and sufficient conditions, such as the claim that all bachelors are unmarried men. It is, then, obviously and deeply important to philosophy that we have an adequate logical grasp of these concepts. In terms of both propositional and first-order logic the concepts of necessary and sufficient conditions are intimately related to the concept of the conditional (i.e. a statement of the form “if p, then q”) as the following canonical account makes clear. Where S(p, q) means “p is a sufficient condition for q” and N(q, p) means “q is a necessary condition for p”, $p \rightarrow q$ means “if p, then q,” and $p \equiv q$ means “p and q are logically equivalent,” the following two definitions are supposed to represent these two important ideas:
+
+(D1) $\mathrm{S}(p, q) \equiv (p \rightarrow q)$
+
+(D2) $\mathrm{N}(q, p) \equiv (p \rightarrow q)$
+
+In effect, D1 and D2 are then intended to be the standard logical interpretations of our ordinary language concepts of necessary and sufficient conditions framed in terms of classical propositional logic. They are based on the idea that necessary and sufficient conditions can be exhaustively defined in terms of the conditional understood as material implication and represented by the “→” of classical propositional logic with the following familiar truth conditions:
+
+Of course, material implication plays an important role in reasoning in general, particularly with respect to the following valid inferential forms in classical propositional logic, as we saw in Chapter 3.
+
+Affirming the Antecedent (Modus Ponens)
+
+Denying the Consequent (Modus Tollens)
+
+These inference forms have important connections to the concepts of necessary and sufficient conditions, and to how we reason using them. In the case of affirming the antecedent, the first premise can be understood to be the claim that A is sufficient for B, and the second premise the claim that the condition A obtains. So, from these claims it validly follows that B obtains. In the case of denying the consequent, the first premise can be read as the claim that B is a necessary condition for A and the second premise as the claim that B does not obtain. From these premises it validly follows that A does not obtain.
+
+However, the following inferential forms involving material implication are invalid in classical propositional logic:
+
+Affirming the Consequent
+
+Denying the Antecedent
+
+These invalid inference forms also are importantly related to the concepts of necessary and sufficient conditions. In the case of affirming the consequent, the first premise can be read as the claim that A is a necessary condition for B and the second premise as the claim that B is true. But, from these premises it does not validly follow that A is also true. The fact that B is necessary for A does not ensure it is also sufficient for A. In the case of denying the antecedent, the first premise can be read as the claim that A is a sufficient condition for B and the second premise as the claim that A is not true. From these premises it does not validly follow that B is not true, as some other condition that suffices for B might, in fact, obtain.
+
+Moreover, where NS(p, q) means “p is necessary and sufficient for q, and q is necessary and sufficient for p,” such jointly necessary and sufficient conditions take the following form:
+
+(D3) $\mathrm{NS}(p, q) \equiv [(p \rightarrow q) \,\& \,(q \rightarrow p)]$
+
+However, since the formula $(p \rightarrow q) \,\&\, (q \rightarrow p)$ is equivalent to the formula $(p \equiv q)$ in classical propositional logic, sets of such necessary and sufficient conditions can be more compactly defined in terms of logical equivalence as follows:
+
+(D4) $\mathrm{NS}(p, q) \equiv (p \equiv q)$
+
+This concept is just the idea that the truth values of p and q are always the same, and the notion of logical equivalence has the following truth conditions:
+
+Sets of jointly necessary and sufficient conditions are, then, just definitions regimented as sentences of this sort. For example, it turns out that being a bachelor and being an unmarried male are jointly necessary and sufficient conditions for one another. Now why, specifically, are the concepts of necessary and sufficient conditions, so understood, of such central significance in contemporary analytic philosophy?
+
+
+Conceptual Analysis and Necessary and Sufficient Conditions
+
+The central account of the methods of contemporary analytic philosophy is predicated on the claim that philosophical methodology is intuition-driven conceptual analysis that aims to determine true sets of necessary and sufficient conditions. In fact, according to a significant number of philosophers, such conceptual analysis is the only method of philosophy. For the purposes at hand, this account of the methods of philosophy will be referred to as the standard philosophical method (SPM). Conceptual analyses take the form of specifications of the content of a pre-theoretical concept (the analysans) through the articulation of a set of necessary and sufficient conditions (the analysandum or analysanda), and here we find the locus of the connection between the concepts of necessary and sufficient conditions and philosophical methodology. This methodological account of philosophy can be more completely characterized as follows:
+
+(1) Conceptual analyses take the form of proposed definitions (i.e. sets of necessary and sufficient conditions) of analysanda.
+
+(2) The adequacy of any analysandum can be tested against concrete and/or imagined cases.
+
+(3) Whether or not a proposed analysandum is adequate with respect to a given case can be determined by the use of a priori intuition, with a priori intuition being a distinct, reliable and fallible non-sensory mental faculty.
+
+(4) Intuition allows us to reliably access knowledge about concepts.
+
+(5) The method of reflective equilibrium is the particular method by which intuitions can be used to confirm/disconfirm analysanda.
+
+According to the defenders of SPM, this is essentially the orthodox methodology of analytic philosophy, and it has been assumed to be adequate for the solution of philosophical problems by a significant number of both practicing and prominent philosophers throughout the recent history of philosophy. For example, this is the contention made by Colin McGinn in a recent book. McGinn is not in the least bit tentative in his blanket defense of SPM as the one and only method of philosophy. With this aim in mind, early in his 2012 book he makes the following extended declaration about philosophy:
+
+… it is not a species of empirical enquiry, and it is not methodologically comparable to the natural sciences (though it is comparable to the formal sciences). It seeks the discovery of essences. It operates “from the armchair”: that is, by unaided (usually solitary) contemplation. Its only experiments are thought-experiments, and its data are possibilities (or “intuitions” about possibilities). Thus philosophy seeks a priori knowledge of objective being—of non-linguistic and non-conceptual reality. We are investigating being as such, but we do so using only a priori methods. (McGinn 2012, 4)
+
+As should be immediately apparent, this is a clear, straightforward, and ringing endorsement of SPM as it has been understood here. To buttress this contention we need only take note of his other claims that “…the proper method for uncovering the essence of things is precisely conceptual analysis,” (McGinn 2012, 4) and that “philosophy, correctly conceived, simply is conceptual analysis” (McGinn 2012, 11). In effect, he believes then that we arrive at such analyses by considering possible cases and asking ourselves whether the concept applies or not in those cases—that is by consulting our “intuitions” about such cases (McGinn 2012, 5). What is also important for the purposes at hand is his acknowledgment that this account of philosophical methodology “was really the standard conception for most of the history of the subject, in one form or another” (McGinn 2012, 7). So, not only does McGinn endorse SPM as the sole methodology of contemporary philosophy, but he also claims that it is the enduring methodology of philosophical inquiry throughout its history.
+
+One important clarification regarding McGinn’s version of SPM concerns the nature of the object of analysis (the analysans) and, more importantly, the nature of the analysandum itself as they are typically understood (i.e. as definitions of a particular sort framed as sets of necessary and sufficient conditions). Carl Hempel usefully makes a crucial distinction in this regard, which we can use to illuminate the standard view of such definitions:
+
+The word “definition” has come to be used in several different senses….A real definition is conceived of as a statement of the “essential characteristics” of some entity, as when man is defined as a rational animal or a chair as a separate moveable seat for one person. A nominal definition, on the other hand, is a convention which merely introduces an alternative—and usually abbreviated—notation for a given linguistic expression, in the manner of a stipulation. (Hempel 1952, 2)
+
+Moreover, he tells us further that some real definitions are to be understood as meaning analyses, or as analytic definitions, of the term in question. The validation of such claims requires only that we know the meanings of the constituent expressions, and no empirical investigation is necessary to determine the correctness of the analysandum (Hempel 1952, 8).
+
+This is, of course, precisely what McGinn has in mind with respect to conceptual analysis. It is, then, worth making the obvious point that conceptual analysis is the operation of analyzing concepts via proposing definitions, but to point that out is not enough to fully grasp the view. It is true that SPM is a method that takes as inputs our concepts, but it involves the clear recognition that the definitions involved are to be understood as meaning analyses rather than as nominal or stipulative (i.e. “dictionary”) definitions. So, for example, the question of whether knowledge is justified true belief is just the question of the analysis of the concept of knowledge in terms of definitions constituted by sets of necessary and sufficient conditions understood as a meaning analysis. Conceptual analysis is then a method of doing something with concepts that we already possess—wherever they have ultimately come from. It is defining a pre-theoretical concept by offering a synonymous expression. It then appears to be the case that the defenders of SPM must believe that concepts have the form of sets of necessary and sufficient conditions, that such analyses are meaning analyses, and that analyses of our pre-analytic concepts are informative. Typical analysanda are thus kinds of decompositions of pre-analytic concepts. They are conceptual truths with the form of analytic definitions.
+
+So, for McGinn and other like-minded thinkers, analysanda have a very simple logical form, and we can see this via the example of the analysis of the concept of knowledge. Where Kx is “x is knowledge”, Jx is “x is justified”, Tx is “x is true” and Bx is “x is believed”, the standard analysis of knowledge looks like this:
+
+x is Kx $\equiv$ x is Jx & x is Tx & x is Bx
+
+This analysis is supposed to tell us the true nature, or essence, of the concept of knowledge in terms of a finite set of defining essential features, with the logical form of a set of jointly necessary and sufficient conditions. So, providing such an analysis involves decomposing the analysans into a list of features, thus exposing in some important sense the content of the concept.
+
+
+A Problem with the Orthodox View and SPM
+
+Many recent critics have attacked SPM in terms of (2)-(5) by challenging the reliability of the faculty of intuition. This is the main line of criticism against SPM offered by many defenders of what is called experimental philosophy, and it is an interesting criticism of orthodox philosophy indeed. However, some critics have alternatively attacked SPM by challenging (1) on the basis of the theory of concepts it assumes; specifically, the idea that concepts can be adequately captured by sets of necessary and sufficient conditions. One version of this latter form of criticism is particularly relevant to this chapter. This criticism is based on the contention that SPM wrongly assumes that concepts take the form of necessary and sufficient conditions at all. Call this the potential vacuity problem.
+
+
+The Potential Vacuity Problem
+
+The problem of potential vacuity arises as follows, and is based on Ludwig Wittgenstein’s infamous remarks about the theory of concepts assumed in SPM. He addressed the matter of the reliability of SPM in his Philosophical Investigations and The Blue and Brown Books, and therein Wittgenstein attacks the foundation of the project of conceptual analysis by attempting to undermine (1) via examination of the claim that concepts have the form of sets of necessary and sufficient conditions. First, Wittgenstein rejected the notion that most, or even perhaps any, concepts can be defined precisely via the specification of sets of necessary and sufficient conditions, and that this is a problem central to orthodox philosophy. This important revelation was made by noting that philosophical attempts at conceptual analysis have systematically failed to produce the goods. He tells us explicitly that,
+
+We are unable to clearly circumscribe the concepts we use; not because we don’t know their real definition, but because there is no real “definition” to them. (Wittgenstein 1958, 25)
+
+Second, he sought to replace the notion of concepts understood as sets of necessary and sufficient conditions with an alternative theory of concepts. This alternative account of concepts is based on the notion of a “family resemblance relation.”
+
+To see the first point more clearly, let us look at Wittgenstein’s favorite example from his Philosophical Investigations. Wittgenstein specifically argued that the concept of a game cannot be correctly analyzed in terms of a set of necessary and sufficient conditions. This is because games do not share some set of defining features in common. Rather, the members of the set of games are only similar to one another in some respects, and it is these relations of similarity that constitute the family of games. As we have seen, SPM assumes the following principle:
+
+(CON) For any concept C, there exists a set of necessary and sufficient conditions that constitutes the content of C.

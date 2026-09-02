@@ -170,6 +170,20 @@ def запрос_обзоров():
             + " OR ".join(f'TITLE:"{с}"' for с in СЛОВА) + ")")
 
 
+# NEUROSCIENCE OF CONSCIOUSNESS — ВЕСЬ ЖУРНАЛ, КРОМЕ ОБЗОРОВ: обзоры его уже
+# лежат в своде обзоров, и второй запрос дополняет первый по построению
+# (NOT review), а не по списку — вторая копия статьи невозможна.
+ЖУРНАЛ_СОЗНАНИЯ = "Neurosci Conscious"
+НАЧАЛО_ЖУРНАЛА_СОЗНАНИЯ = 2015
+
+
+def запрос_журнала_сознания():
+    return ('(LICENSE:"cc by") AND (OPEN_ACCESS:y) AND (HAS_FT:y) AND '
+            f'(JOURNAL:"{ЖУРНАЛ_СОЗНАНИЯ}") AND (FIRST_PDATE:'
+            f'[{НАЧАЛО_ЖУРНАЛА_СОЗНАНИЯ}-01-01 TO {ОКНО[1]}-12-31]) '
+            'AND NOT (PUB_TYPE:"review")')
+
+
 OPENSTAX_АВТОРЫ = "OpenStax, Rice University; senior contributing authors "
 ПОЛКА = (
     # OPENSTAX — ОТСТАВЛЕННЫЕ ПЕРВЫЕ ИЗДАНИЯ ПОД CC BY 4.0 (см. шапку).
@@ -236,6 +250,48 @@ OPENSTAX_АВТОРЫ = "OpenStax, Rice University; senior contributing authors 
           f"{ОКНО[0]}–{ОКНО[1]}", "authors named at each article",
           "Europe PMC (journals named in the query)", "CC BY",
           "https://europepmc.org/", "europepmc", запрос=запрос_обзоров()),
+    # ВТОРОЙ ЗАКАЗ (02.09, слово лида): остальные тома серии Rebus — той же
+    # дорогой, по строке объявления на том.
+    Книга("rebus_logic", "логика", "трактат", 2020,
+          "Introduction to Philosophy: Logic",
+          "authors named at each chapter", "Rebus Community", "CC BY 4.0",
+          "https://press.rebus.community/intro-to-phil-logic/",
+          "pressbooks", сайт="https://press.rebus.community/intro-to-phil-logic"),
+    Книга("rebus_ethics", "философия", "трактат", 2019,
+          "Introduction to Philosophy: Ethics",
+          "authors named at each chapter", "Rebus Community", "CC BY 4.0",
+          "https://press.rebus.community/intro-to-phil-ethics/",
+          "pressbooks", сайт="https://press.rebus.community/intro-to-phil-ethics"),
+    Книга("rebus_philosophy_of_religion", "философия", "трактат", 2020,
+          "Introduction to Philosophy: Philosophy of Religion",
+          "authors named at each chapter", "Rebus Community", "CC BY 4.0",
+          "https://press.rebus.community/intro-to-phil-of-religion/",
+          "pressbooks", сайт="https://press.rebus.community/intro-to-phil-of-religion"),
+    Книга("rebus_aesthetics", "философия", "трактат", 2021,
+          "Introduction to Philosophy: Aesthetic Theory and Practice",
+          "authors named at each chapter", "Rebus Community", "CC BY 4.0",
+          "https://press.rebus.community/intro-to-phil-aesthetics/",
+          "pressbooks", сайт="https://press.rebus.community/intro-to-phil-aesthetics"),
+    # OPENSTAX POLAND «PSYCHOLOGIA» — польская адаптация Psychology 2e (2020).
+    # Лицензия CC BY 4.0 держится по всем свидетельствам издателя на
+    # 02.09.2026: CMS openstax.org, JSON книги в архиве (deed.pl), предисловие
+    # («Creative Commons Uznanie autorstwa 4.0 Międzynarodowe»), LICENSE
+    # репозитория osbooks-psychologia (не перелицензирован). Год — publish_date
+    # издателя. Твёрцы польского издания — из предисловия («Twórcy Psychologii
+    # wydanej przez OpenStax Poland»); первый мир прозы на польском.
+    Книга("openstax_psychologia_pl", "психология", "трактат", 2020,
+          "Psychologia (polska adaptacja Psychology 2e)",
+          "OpenStax Poland; autor rozdziału: Joanna Czarnota-Bojarska; redaktorzy "
+          "i autorzy uzupełnień: Ewa Czerniawska, Agata Kudlik, Dorota Karwowska, "
+          "Agnieszka Małkowska-Szkutnik; original senior authors Rose M. Spielman, "
+          "William J. Jenkins, Marilyn D. Lovett", "OpenStax Poland", "CC BY 4.0",
+          f"{OPENSTAX}/details/books/psychologia-polska", "openstax", язык="pl",
+          uuid="728df0bb-e07f-489d-91e3-4734a5932f92", версия="0708931"),
+    Книга("europepmc_consciousness_articles", "нейронаука", "статья", ОКНО[1],
+          f"Neuroscience of Consciousness, all articles but reviews, "
+          f"{НАЧАЛО_ЖУРНАЛА_СОЗНАНИЯ}–{ОКНО[1]}", "authors named at each article",
+          "Europe PMC (Oxford University Press journal)", "CC BY",
+          "https://europepmc.org/", "europepmc", запрос=запрос_журнала_сознания()),
     # ОТВЕРГНУТЫЕ, И ПОЧЕМУ (замер 02.09.2026):
     # * OpenStax «Psychology 2e», «Biology 2e», «Anatomy and Physiology
     #   2e», «Introduction to Philosophy», «Introduction to Behavioral
@@ -476,16 +532,21 @@ def разобрать(страница):
     r"conflicts? of interest", r"author contributions", r"data availability",
     r"ethics statement", r"abbreviations", r"declarations?", r"index", r"preface",
     r"free response", r"multiple choice",
+    # OpenStax Poland: ключевые понятия, итоги, проверь знания, тренируй
+    # критическое мышление, развивайся; библиография, указатели, предисловие.
+    r"kluczowe pojęcia", r"podsumowanie", r"sprawdź wiedzę", r"ćwicz myślenie krytyczne",
+    r"rozwijaj się", r"bibliografia", r"skorowidz(?: \w+)*", r"przedmowa", r"literatura",
 )
 РУБРИКА = re.compile(
-    r"^(?:(?:chapter|unit|part|section)\s+[\dIVX]+[:.]?\s*|\d+(?:\.\d+)*\.?\s+|[ivx]+\.\s+)?"
+    r"^(?:(?:chapter|unit|part|section|rozdział)\s+[\dIVX]+[:.]?\s*|\d+(?:\.\d+)*\.?\s+|[ivx]+\.\s+)?"
     r"(?:" + "|".join(РУБРИКИ) + r")\s*[:.]?$", re.I)
 # ОТСЫЛКА К РИСУНКУ В СКОБКАХ снимается вместе со скобками; предложение
 # «Figure 1.2 shows…» — текст, и оно остаётся.
 ОТСЫЛКА = re.compile(
-    r"\s*\(\s*(?:see\s+|cf\.\s+|also\s+)?(?:figures?|figs?\.?|tables?|boxes?|"
-    r"videos?|equations?|eqs?\.?|panels?)\s*[\dA-Za-z][\dA-Za-z.\-–]*"
-    r"(?:\s*(?:and|,|;|–|-|&|to)\s*(?:figures?|figs?\.?|tables?)?\s*"
+    r"\s*\(\s*(?:see\s+|cf\.\s+|also\s+|zob\.\s+|patrz\s+)?(?:figures?|figs?\.?|tables?|boxes?|"
+    r"videos?|equations?|eqs?\.?|panels?|ilustracj\w*|rysun\w*|tabel\w*|ramk\w*)"
+    r"\s*[\dA-Za-z][\dA-Za-z.\-–]*"
+    r"(?:\s*(?:and|,|;|–|-|&|to|i|oraz)\s*(?:figures?|figs?\.?|tables?|ilustracj\w*|tabel\w*)?\s*"
     r"[\dA-Za-z][\dA-Za-z.\-–]*)*\s*\)", re.I)
 # ОПУСТЕВШИЕ СКОБКИ: после снятия ссылки на рисунок или номера цитаты в
 # них остаются лишь служебные слова — «(see and )», «[ ]», «( )».
@@ -628,7 +689,12 @@ def pressbooks_единицы(книга, кэш):
             куски.append((часть, 1, "заголовок"))
         куски.append((заглавие, 2 if часть else 1, "заголовок"))
         # АВТОР ГЛАВЫ — строкой под заголовком: атрибуция CC BY.
-        свои = [имена.get(с) or с for с in (узел.get("meta") or {}).get("pb_authors", [])]
+        # SLUG ГЛАВЫ КОРОЧЕ SLUG'А МЕТАДАННЫХ, когда имя несёт роль в скобках
+        # («valery-vino» против «valery-vino-book-editor»): берётся лицо,
+        # чей slug начинается с названного; иначе slug остаётся как есть.
+        свои = [имена.get(с) or next((н for сл, н in имена.items()
+                                       if сл and н and сл.startswith(с)), с)
+                for с in (узел.get("meta") or {}).get("pb_authors", [])]
         if свои:
             куски.append((", ".join(свои), 0, "абзац"))
         куски += разобрать(узел.get("content", {}).get("rendered", ""))
@@ -672,7 +738,7 @@ def openstax_json(книга, кэш, архив, ссылка, файл):
     return json.loads(тело)
 
 
-ГЛАВА = re.compile(r"Chapter\s+(\d+)\s*(.*)")
+ГЛАВА = re.compile(r"(?:Chapter|Rozdział)\s+(\d+)\s*(.*)")
 
 
 def openstax_единицы(книга, кэш):
@@ -950,7 +1016,9 @@ def ковать(книга, кэш):
            if отложенное else (0, 0))
     текст = "\n".join(тело)
     слов = len(re.findall(r"\w+", текст))
-    доля, предложений, счёт = shelf_kinds.плотность(текст)
+    # МЕРА БЕРЁТ ПРИЗНАКИ ЯЗЫКА МИРА (shelf_kinds.ПРИЗНАКИ_ЯЗЫКА): польская
+    # книга меряется польскими словами определения и вывода.
+    доля, предложений, счёт = shelf_kinds.плотность(текст, книга.язык)
     плотность = плотность_по_мере(книга.плотность, доля)
     остаток = {"[link]": текст.count(ПУСТАЯ_ССЫЛКА),
                "<>": текст.count("<") + текст.count(">"),
@@ -968,11 +1036,21 @@ def ковать(книга, кэш):
     return объявление(книга, плотность, издано, автор, лиц, происхождение, байт)
 
 
+МАНИФЕСТ = КОРЕНЬ / "datasets" / "GENESIS-MANIFEST.json"
+
+
 def сложить_узлы(узлы, путь):
+    """Файл ожидания несёт лишь узлы, которых В МАНИФЕСТЕ ЕЩЁ НЕТ: вписанный
+    хозяином манифеста узел из ожидания уходит сам, и файл не растёт
+    ложью о невписанном. Манифест здесь только читается."""
     было = json.loads(путь.read_text(encoding="utf-8")) if путь.is_file() else []
     по_имени = {у["name"]: у for у in было}
     for у in узлы:
         по_имени[у["name"]] = у
+    if МАНИФЕСТ.is_file():
+        вписаны = {м.get("name") for м in
+                   json.loads(МАНИФЕСТ.read_text(encoding="utf-8")).get("worlds", [])}
+        по_имени = {и: у for и, у in по_имени.items() if и not in вписаны}
     путь.parent.mkdir(parents=True, exist_ok=True)
     путь.write_text(json.dumps([по_имени[и] for и in sorted(по_имени)],
                                ensure_ascii=False, indent=2) + "\n",
