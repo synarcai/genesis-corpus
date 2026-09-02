@@ -373,14 +373,14 @@ def исп_инъекция(шаг):
         k = семя(шаг, i) % 6
         a, b, c = 1 * k, 2 * k, 3 * k
         да = k != 0
+        разн_de = "alle verschieden" if да else "nicht alle verschieden"
+        разн_fr = "toutes différentes" if да else "pas toutes différentes"
         вон.append(f"ist f(x) = x × {k} auf 1, 2, 3 injektiv? "
                    f"{'ja' if да else 'nein'}: sie liefert {a}, {b}, "
-                   f"{c}, "
-                   f"{'alle verschieden' if да else 'nicht alle verschieden'}.")
+                   f"{c}, {разн_de}.")
         вон.append(f"f(x) = x × {k} est-elle injective sur 1, 2, 3 ? "
                    f"{'oui' if да else 'non'} : elle donne {a}, {b}, "
-                   f"{c}, "
-                   f"{'toutes différentes' if да else 'pas toutes différentes'}.")
+                   f"{c}, {разн_fr}.")
     return вон
 
 

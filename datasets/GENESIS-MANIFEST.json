@@ -8,6 +8,16 @@
       "name": "school_biling_v2c",
       "file": "datasets/school_biling_v2c.txt",
       "genre": "arithmetic school (3 surfaces)",
+      "act": [
+        "recount",
+        "translate"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 700000,
       "tiers": [
         "t0_glyph_arith",
@@ -23,6 +33,15 @@
       "name": "ruler_dense",
       "file": "datasets/school_ruler_dense.txt",
       "genre": "dense ±1 rulers",
+      "act": [
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 100000,
       "tiers": [],
       "text": "shows"
@@ -31,6 +50,15 @@
       "name": "genesis_l4",
       "file": "datasets/genesis_l4.txt",
       "genre": "copula/science links",
+      "act": [
+        "name"
+      ],
+      "oracle": [
+        "unnamed"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 100000,
       "tiers": [
         "t5_definitions"
@@ -41,6 +69,15 @@
       "name": "genesis_units",
       "file": "datasets/genesis_units.txt",
       "genre": "quantities, units, fractions",
+      "act": [
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 100000,
       "tiers": [],
       "text": "shows"
@@ -49,6 +86,16 @@
       "name": "genesis_story",
       "file": "datasets/genesis_story.txt",
       "genre": "story as third surface (verb algebra)",
+      "act": [
+        "recount",
+        "translate"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 300000,
       "tiers": [],
       "text": "shows"
@@ -57,6 +104,15 @@
       "name": "genesis_bignum",
       "file": "datasets/genesis_bignum.txt",
       "genre": "large numbers, place rulers",
+      "act": [
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 100000,
       "tiers": [],
       "text": "shows"
@@ -65,6 +121,15 @@
       "name": "md_structures",
       "file": "datasets/genesis_md_structures.txt",
       "genre": "markdown/mermaid structures",
+      "act": [
+        "unnamed"
+      ],
+      "oracle": [
+        "unnamed"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 100000,
       "tiers": [],
       "text": "shows"
@@ -73,6 +138,15 @@
       "name": "lang_ru",
       "file": "datasets/genesis_lang_ru.txt",
       "genre": "russian as a LANGUAGE: paradigms, graphemes, irregulars",
+      "act": [
+        "inflect"
+      ],
+      "oracle": [
+        "unnamed"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 100000,
       "tiers": [],
       "text": "shows",
@@ -86,6 +160,15 @@
       "name": "genesis_compare",
       "file": "datasets/genesis_compare.txt",
       "genre": "comparative genus (times-as / more-than / fewer-than)",
+      "act": [
+        "compare"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 100000,
       "tiers": [],
       "text": "shows"
@@ -94,6 +177,15 @@
       "name": "lang_de",
       "file": "datasets/genesis_lang_de.txt",
       "genre": "german as a LANGUAGE: four cases on the article, six persons",
+      "act": [
+        "inflect"
+      ],
+      "oracle": [
+        "unnamed"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 100000,
       "tiers": [],
       "text": "shows",
@@ -107,6 +199,15 @@
       "name": "items",
       "file": "datasets/genesis_items.txt",
       "genre": "living item lexicon of GSM8K: item role and number-free life",
+      "act": [
+        "name"
+      ],
+      "oracle": [
+        "unnamed"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 200000,
       "tiers": [],
       "text": "shows",
@@ -118,6 +219,15 @@
       "name": "aggregate",
       "file": "datasets/genesis_aggregate.txt",
       "genre": "aggregate genus: a fact of a plural bearer",
+      "act": [
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 100000,
       "tiers": [],
       "text": "shows",
@@ -129,6 +239,15 @@
       "name": "rates",
       "file": "datasets/genesis_rates.txt",
       "genre": "temporal unfoldings: rate over a period (genus 8)",
+      "act": [
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 100000,
       "tiers": [],
       "text": "shows",
@@ -140,6 +259,16 @@
       "name": "fractions",
       "file": "datasets/genesis_fractions.txt",
       "genre": "parts of a whole: half/third/quarter on three surfaces",
+      "act": [
+        "recount",
+        "translate"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 100000,
       "tiers": [],
       "text": "shows",
@@ -151,6 +280,15 @@
       "name": "lang_en",
       "file": "datasets/genesis_lang_en.txt",
       "genre": "english as a LANGUAGE: the third-person -s and the plurals that obey nothing",
+      "act": [
+        "inflect"
+      ],
+      "oracle": [
+        "unnamed"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 100000,
       "tiers": [],
       "text": "shows",
@@ -164,6 +302,16 @@
       "name": "conversions",
       "file": "datasets/genesis_conversions.txt",
       "genre": "conversions (genus 10): one unit told in another, three surfaces",
+      "act": [
+        "translate",
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 100000,
       "tiers": [],
       "text": "shows",
@@ -175,6 +323,16 @@
       "name": "remainders",
       "file": "datasets/genesis_remainders.txt",
       "genre": "division with a remainder (genus 9): four surfaces, self-judging weld",
+      "act": [
+        "recount",
+        "translate"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 100000,
       "tiers": [],
       "text": "shows",
@@ -186,6 +344,15 @@
       "name": "lang_zh",
       "file": "datasets/genesis_lang_zh.txt",
       "genre": "chinese as a LANGUAGE: aspect particles and measure words, no alphabet",
+      "act": [
+        "inflect"
+      ],
+      "oracle": [
+        "unnamed"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 100000,
       "tiers": [],
       "text": "shows",
@@ -199,6 +366,15 @@
       "name": "msfs_en",
       "file": "ozar/corpus/build/msfs_en.txt",
       "genre": "MSFS: the moduli space of formal systems (en)",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 90060,
       "tiers": [],
       "text": "prose",
@@ -208,6 +384,15 @@
       "name": "msfs_ru",
       "file": "ozar/corpus/build/msfs_ru.txt",
       "genre": "MSFS: пространство модулей формальных систем (ru; английские вкрапления — термины и формулы)",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 161108,
       "tiers": [],
       "text": "prose",
@@ -217,6 +402,15 @@
       "name": "diakrisis_ru",
       "file": "ozar/corpus/build/diakrisis_ru.txt",
       "genre": "Diakrisis: различение как операция (ru; имя файла обещает en и лжёт)",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 1810997,
       "tiers": [],
       "text": "prose",
@@ -226,6 +420,15 @@
       "name": "uhm_en",
       "file": "ozar/corpus/build/uhm_en.txt",
       "genre": "UHM: the universal holonomic model (en)",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 4944932,
       "tiers": [],
       "text": "prose",
@@ -235,6 +438,15 @@
       "name": "uhm_ru",
       "file": "ozar/corpus/build/uhm_ru.txt",
       "genre": "УГМ: универсальная голономная модель (ru)",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 8973603,
       "tiers": [],
       "text": "prose",
@@ -244,6 +456,15 @@
       "name": "mf_ru",
       "file": "ozar/corpus/build/mf_ru.txt",
       "genre": "математические основания (ru; имя файла обещает en и лжёт)",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 8073132,
       "tiers": [],
       "text": "prose",
@@ -253,6 +474,15 @@
       "name": "verum_en",
       "file": "ozar/corpus/build/verum_en.txt",
       "genre": "Verum: proof discipline and gates (en)",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 2437920,
       "tiers": [],
       "text": "prose",
@@ -262,6 +492,15 @@
       "name": "verbs",
       "file": "datasets/genesis_verbs.txt",
       "genre": "benchmark verbs and the perfect shown beside its past",
+      "act": [
+        "inflect"
+      ],
+      "oracle": [
+        "unnamed"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 100000,
       "tiers": [],
       "text": "shows",
@@ -273,6 +512,16 @@
       "name": "logic_sets",
       "file": "datasets/genesis_l1_logic_sets.txt",
       "genre": "foundations: sets, boolean connectives, membership, modus ponens",
+      "act": [
+        "name",
+        "decide"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 200000,
       "tiers": [],
       "text": "shows"
@@ -281,6 +530,16 @@
       "name": "algebra_units",
       "file": "datasets/genesis_l2_algebra_units.txt",
       "genre": "foundations: linear equations, fractions, unit conversion",
+      "act": [
+        "recount",
+        "translate"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 200000,
       "tiers": [],
       "text": "shows"
@@ -289,6 +548,15 @@
       "name": "prog",
       "file": "datasets/genesis_l3_prog.txt",
       "genre": "foundations: bindings, sorting, list operations",
+      "act": [
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 200000,
       "tiers": [],
       "text": "shows"
@@ -297,6 +565,15 @@
       "name": "eng_proof",
       "file": "datasets/genesis_l3_eng_proof.txt",
       "genre": "foundations: functions, flowcharts, probability shares",
+      "act": [
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 200000,
       "tiers": [],
       "text": "shows"
@@ -305,6 +582,15 @@
       "name": "md_latex",
       "file": "datasets/genesis_md_latex.txt",
       "genre": "structures: markdown, links, code blocks, latex",
+      "act": [
+        "unnamed"
+      ],
+      "oracle": [
+        "unnamed"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 200000,
       "tiers": [],
       "text": "shows"
@@ -313,6 +599,16 @@
       "name": "algorithms",
       "file": "datasets/genesis_algorithms.txt",
       "genre": "foundations of algorithms: order, number theory, complexity, structures, notation",
+      "act": [
+        "recount",
+        "decide"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 200000,
       "tiers": [],
       "text": "shows"
@@ -321,6 +617,16 @@
       "name": "numbers",
       "file": "datasets/genesis_numbers.txt",
       "genre": "number theory: primes, unique factorisation, divisors, congruence modulo n, coprimality",
+      "act": [
+        "recount",
+        "decide"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 60000,
       "tiers": [],
       "text": "shows",
@@ -332,6 +638,15 @@
       "name": "calendar",
       "file": "datasets/genesis_calendar.txt",
       "genre": "calendar: the week as congruence modulo 7, month order and length, the year as a sum of months",
+      "act": [
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 50000,
       "tiers": [],
       "text": "shows",
@@ -343,6 +658,16 @@
       "name": "sequences",
       "file": "datasets/genesis_sequences.txt",
       "genre": "sequences: arithmetic and geometric progression, limit of a series, rate of change and the power rule",
+      "act": [
+        "recount",
+        "generalize"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 100000,
       "tiers": [],
       "text": "shows",
@@ -354,6 +679,15 @@
       "name": "geometry",
       "file": "datasets/genesis_geometry.txt",
       "genre": "geometry: area and perimeter, volume and surface, the Pythagorean theorem on exact triples",
+      "act": [
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "exact_only"
+      ],
       "size": 70000,
       "tiers": [],
       "text": "shows",
@@ -365,6 +699,15 @@
       "name": "linalg",
       "file": "datasets/genesis_linalg.txt",
       "genre": "linear algebra: vector sum and scale, exact length, dot product, determinant and the action of a matrix",
+      "act": [
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "exact_only"
+      ],
       "size": 60000,
       "tiers": [],
       "text": "shows",
@@ -376,6 +719,15 @@
       "name": "formulas",
       "file": "datasets/genesis_formulas.txt",
       "genre": "formulas and mermaid diagrams, described in four languages",
+      "act": [
+        "translate"
+      ],
+      "oracle": [
+        "unnamed"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 200000,
       "tiers": [],
       "text": "shows",
@@ -387,6 +739,16 @@
       "name": "algebra",
       "file": "datasets/genesis_algebra.txt",
       "genre": "signs of mathematics, identities and simplification, checked by substitution",
+      "act": [
+        "name",
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 200000,
       "tiers": [],
       "text": "shows",
@@ -398,6 +760,16 @@
       "name": "physics",
       "file": "datasets/genesis_physics.txt",
       "genre": "foundations of physics: seven integer laws, prefixes, dimensions",
+      "act": [
+        "recount",
+        "generalize"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
       "size": 200000,
       "tiers": [],
       "text": "shows",
@@ -409,6 +781,15 @@
       "name": "cybernetics",
       "file": "datasets/genesis_cybernetics.txt",
       "genre": "foundations of cybernetics: error, convergence, machines, requisite variety",
+      "act": [
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 200000,
       "tiers": [],
       "text": "shows"
@@ -417,6 +798,16 @@
       "name": "notation",
       "file": "datasets/genesis_notation.txt",
       "genre": "how a number is written: per cent, money, mixed numbers, ascii signs",
+      "act": [
+        "translate",
+        "name"
+      ],
+      "oracle": [
+        "unnamed"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 100000,
       "tiers": [],
       "text": "shows",
@@ -428,6 +819,15 @@
       "name": "programs",
       "file": "datasets/genesis_programs.txt",
       "genre": "semantics of a program: binding, branch, bounded loop, function, recursion",
+      "act": [
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 100000,
       "tiers": [],
       "text": "shows"
@@ -436,6 +836,15 @@
       "name": "statistics",
       "file": "datasets/genesis_statistics.txt",
       "genre": "counting, chance and the middle of a set",
+      "act": [
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 100000,
       "tiers": [],
       "text": "shows",
@@ -447,6 +856,17 @@
       "name": "proof",
       "file": "datasets/genesis_proof.txt",
       "genre": "the forms of a proof: induction, cases, counterexample, direct",
+      "act": [
+        "decide",
+        "refute",
+        "generalize"
+      ],
+      "oracle": [
+        "unnamed"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 100000,
       "tiers": [],
       "text": "shows",
@@ -458,6 +878,16 @@
       "name": "machine",
       "file": "datasets/genesis_machine.txt",
       "genre": "how a machine holds a number: bases, bitwise operations, shifts, width",
+      "act": [
+        "recount",
+        "translate"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 100000,
       "tiers": [],
       "text": "shows",
@@ -469,6 +899,15 @@
       "name": "depletion",
       "file": "datasets/genesis_depletion.txt",
       "genre": "a fraction of a total goes and a part remains (g1.36 shape)",
+      "act": [
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 100000,
       "tiers": [],
       "text": "shows",
@@ -480,6 +919,16 @@
       "name": "speech",
       "file": "datasets/genesis_speech.txt",
       "genre": "connected speech: anaphora across a sentence, the inference connective, the relative clause, quantifier with domain, nominalisation, sufficient and necessary",
+      "act": [
+        "translate",
+        "decide"
+      ],
+      "oracle": [
+        "unnamed"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 90000,
       "tiers": [],
       "text": "shows",
@@ -491,6 +940,16 @@
       "name": "physlaws",
       "file": "datasets/genesis_physlaws.txt",
       "genre": "physical laws: dimension of a quantity, conservation of momentum and energy, pressure as force over area, period and frequency",
+      "act": [
+        "recount",
+        "generalize"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 70000,
       "tiers": [],
       "text": "shows"
@@ -499,6 +958,17 @@
       "name": "compsci",
       "file": "datasets/genesis_compsci.txt",
       "genre": "foundations of informatics and control: entropy in bits, finite automaton, formal grammar, decidability, type of a value, loop invariant, homeostasis, model and observer",
+      "act": [
+        "recount",
+        "decide",
+        "name"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 70000,
       "tiers": [],
       "text": "shows"
@@ -507,6 +977,19 @@
       "name": "mathfound",
       "file": "datasets/genesis_mathfound.txt",
       "genre": "foundations of mathematics and the named case: function as one object, injection by witness, cardinality and countability, proof by contradiction, induction, the six Russian cases named",
+      "act": [
+        "name",
+        "decide",
+        "refute",
+        "generalize",
+        "inflect"
+      ],
+      "oracle": [
+        "unnamed"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 60000,
       "tiers": [],
       "text": "shows",
@@ -518,6 +1001,15 @@
       "name": "gsmlex",
       "file": "datasets/genesis_gsmlex.txt",
       "genre": "GSM lexicon drill: possession verbs over the item lexicon (working layer of the band stand)",
+      "act": [
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 45000,
       "tiers": [],
       "text": "shows",
@@ -529,6 +1021,15 @@
       "name": "gsmwide",
       "file": "datasets/genesis_gsmwide.txt",
       "genre": "GSM wide frames: possessive bearers and herd subjects (working layer of the band stand)",
+      "act": [
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 100000,
       "tiers": [],
       "text": "shows",
@@ -540,6 +1041,15 @@
       "name": "heads",
       "file": "datasets/genesis_heads.txt",
       "genre": "GSM question heads: left-over, have-now, price-each, rate-per-day (working layer of the band stand)",
+      "act": [
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 60000,
       "tiers": [],
       "text": "shows",
@@ -551,6 +1061,15 @@
       "name": "realverbs",
       "file": "datasets/genesis_realverbs.txt",
       "genre": "real verbs of the benchmark in their canonical frames (working layer of the band stand)",
+      "act": [
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 30000,
       "tiers": [],
       "text": "shows",
@@ -562,6 +1081,17 @@
       "name": "verbal",
       "file": "datasets/genesis_verbal.txt",
       "genre": "verbal equality with the copula «is» beside «equals», and the past tense in the market's own frame",
+      "act": [
+        "translate",
+        "inflect",
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 40000,
       "tiers": [],
       "text": "shows",
@@ -573,6 +1103,16 @@
       "name": "lang_es",
       "file": "datasets/genesis_lang_es.txt",
       "genre": "es as a LANGUAGE: numerals, six-person present, noun with article in two numbers, refusal pairs (tier 1: structure green, forms agree with the pack's own rules)",
+      "act": [
+        "inflect",
+        "refuse"
+      ],
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 40000,
       "tiers": [],
       "text": "shows",
@@ -586,6 +1126,16 @@
       "name": "lang_fr",
       "file": "datasets/genesis_lang_fr.txt",
       "genre": "fr as a LANGUAGE: numerals, six-person present, noun with article in two numbers, refusal pairs (tier 1: structure green, forms agree with the pack's own rules)",
+      "act": [
+        "inflect",
+        "refuse"
+      ],
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "tier1_unverified"
+      ],
       "size": 40000,
       "tiers": [],
       "text": "shows",
@@ -599,6 +1149,16 @@
       "name": "lang_it",
       "file": "datasets/genesis_lang_it.txt",
       "genre": "it as a LANGUAGE: numerals, six-person present, noun with article in two numbers, refusal pairs (tier 1: structure green, forms agree with the pack's own rules)",
+      "act": [
+        "inflect",
+        "refuse"
+      ],
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "tier1_unverified"
+      ],
       "size": 40000,
       "tiers": [],
       "text": "shows",
@@ -612,6 +1172,16 @@
       "name": "lang_pt",
       "file": "datasets/genesis_lang_pt.txt",
       "genre": "pt as a LANGUAGE: numerals, six-person present, noun with article in two numbers, refusal pairs (tier 1: structure green, forms agree with the pack's own rules)",
+      "act": [
+        "inflect",
+        "refuse"
+      ],
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "tier1_unverified"
+      ],
       "size": 40000,
       "tiers": [],
       "text": "shows",
@@ -625,6 +1195,17 @@
       "name": "valence",
       "file": "datasets/genesis_valence.txt",
       "genre": "valence with its ground: sign of dP/dtau, strength of feeling, fear at the irreversible threshold P_crit=2/7, calm, the computable triple of emotion, awareness gated by R and Phi, arena proxies with a DECLARED projection onto P, and the canonical names of coherences",
+      "act": [
+        "recount",
+        "name"
+      ],
+      "oracle": [
+        "recompute",
+        "declared"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 60000,
       "tiers": [],
       "text": "shows"
@@ -633,6 +1214,16 @@
       "name": "ruverbs",
       "file": "datasets/genesis_ruverbs.txt",
       "genre": "russian verb frames at the mass of the english ones: present, past with the actor's gender, echo question, sum frame, and anaphora — the missing link of ru-anaphora named by measurement",
+      "act": [
+        "inflect",
+        "recount"
+      ],
+      "oracle": [
+        "unnamed"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 60000,
       "tiers": [],
       "text": "shows"
@@ -641,6 +1232,16 @@
       "name": "lang_nl",
       "file": "datasets/genesis_lang_nl.txt",
       "genre": "dutch: three distinct present cells, not six (tier 1: structure green, forms agree with the pack's own rules)",
+      "act": [
+        "inflect",
+        "refuse"
+      ],
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "tier1_unverified"
+      ],
       "size": 40000,
       "tiers": [],
       "text": "shows",
@@ -654,6 +1255,16 @@
       "name": "lang_sv",
       "file": "datasets/genesis_lang_sv.txt",
       "genre": "swedish: NO person agreement at all — the paradigm is tense (tier 1: structure green, forms agree with the pack's own rules)",
+      "act": [
+        "inflect",
+        "refuse"
+      ],
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "tier1_unverified"
+      ],
       "size": 40000,
       "tiers": [],
       "text": "shows",
@@ -667,6 +1278,16 @@
       "name": "lang_pl",
       "file": "datasets/genesis_lang_pl.txt",
       "genre": "polish: the slavic count law on a latin alphabet, nine diacritics (tier 1: structure green, forms agree with the pack's own rules)",
+      "act": [
+        "inflect",
+        "refuse"
+      ],
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "tier1_unverified"
+      ],
       "size": 40000,
       "tiers": [],
       "text": "shows",
@@ -680,6 +1301,16 @@
       "name": "lang_uk",
       "file": "datasets/genesis_lang_uk.txt",
       "genre": "ukrainian: cyrillic with four letters russian lacks, apostrophe inside the word (tier 1: structure green, forms agree with the pack's own rules)",
+      "act": [
+        "inflect",
+        "refuse"
+      ],
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "tier1_unverified"
+      ],
       "size": 40000,
       "tiers": [],
       "text": "shows",
@@ -693,6 +1324,16 @@
       "name": "lang_tr",
       "file": "datasets/genesis_lang_tr.txt",
       "genre": "turkish: agglutination, vowel harmony in four classes, teens as two words, and NO count agreement — the noun stays singular after a numeral (tier 1: structure green, forms agree with the pack's own rules)",
+      "act": [
+        "inflect",
+        "refuse"
+      ],
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "tier1_unverified"
+      ],
       "size": 40000,
       "tiers": [],
       "text": "shows",
@@ -706,6 +1347,18 @@
       "name": "inquiry",
       "file": "datasets/genesis_inquiry.txt",
       "genre": "the ladder of inquiry: for six genera — primality, divisibility, the sum of odd numbers, the conditional, injectivity, the square — four rungs are shown, definition then a decided case with its ground then a counterexample then the law; both tongues, every ground recomputed by the court",
+      "act": [
+        "name",
+        "decide",
+        "refute",
+        "generalize"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 120000,
       "tiers": [],
       "text": "shows",
@@ -717,6 +1370,16 @@
       "name": "surfaces",
       "file": "datasets/genesis_surfaces.txt",
       "genre": "the surfaces of an act: the same arithmetic fact said as a nominalisation («сложение 7 и 6 даёт 13», «the addition of 7 and 6 gives 13»), as a named result («сумма … равна», «произведение … равно» — the copula agrees with gender), as a question to each, and with numerals SPOKEN in words («сорок два минус пять будет тридцать семь»); government is declared once and the question is derived from the same phrase it answers",
+      "act": [
+        "translate",
+        "recount"
+      ],
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 120000,
       "tiers": [],
       "text": "shows",
@@ -728,6 +1391,16 @@
       "name": "markdown",
       "file": "datasets/genesis_markdown.txt",
       "genre": "markdown in full: thirty-two constructs of CommonMark, GFM and MDX/Docusaurus, each on four surfaces — the record itself, its meaning in English and in Russian, and the question that asks for it; the oracle is REVERSIBILITY (a construct declares how to write it and how to read it, and a construct whose reading does not return what was written never reaches the corpus)",
+      "act": [
+        "translate",
+        "invert"
+      ],
+      "oracle": [
+        "reversibility"
+      ],
+      "boundary": [
+        "reversible_only"
+      ],
       "size": 200000,
       "tiers": [],
       "text": "shows"
@@ -736,6 +1409,18 @@
       "name": "doctree",
       "file": "datasets/genesis_doctree.txt",
       "genre": "document structure: a link is an EDGE and is judged by RESOLUTION against a declared tree — relative paths counted from the document's own folder, anchors into a document, slugification of a heading into an anchor, order by sidebar_position, and links that lead NOWHERE with the ground of the refusal named; the oracle is two opposite walks (build the link text from a pair, resolve the link text back to a pair)",
+      "act": [
+        "decide",
+        "refuse",
+        "invert"
+      ],
+      "oracle": [
+        "declared",
+        "reversibility"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 150000,
       "tiers": [],
       "text": "shows"
@@ -744,6 +1429,17 @@
       "name": "formula_lang",
       "file": "datasets/genesis_formula_lang.txt",
       "genre": "formula and speech, converted both ways at any depth: ONE expression TREE with four surfaces (LaTeX, glyphs, English words, Russian words) and four inverse walks written apart; a compound argument is always spoken in brackets, which is what makes speech parsable at any depth; the court parses BOTH sides of a conversion and requires the SAME TREE, and the home's oracle proves all eight walks agree on six thousand trees to depth five",
+      "act": [
+        "translate",
+        "invert"
+      ],
+      "oracle": [
+        "same_object",
+        "reversibility"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 300000,
       "tiers": [],
       "text": "shows",
@@ -755,6 +1451,17 @@
       "name": "percent",
       "file": "datasets/genesis_percent.txt",
       "genre": "percent on three surfaces (glyph, word, both tongues): «20% of 80 is 16», the conversion percent<->hundredths, the inverse question «16 is 20% of 80», and growth and cut by a percent; only whole results are uttered — a percent that does not come out whole is not shown at all",
+      "act": [
+        "recount",
+        "translate",
+        "invert"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
       "size": 100000,
       "tiers": [],
       "text": "shows",
@@ -766,6 +1473,18 @@
       "name": "average",
       "file": "datasets/genesis_average.txt",
       "genre": "the summary of a row: average with its GROUND beside it (the sum and the count named separately), largest and smallest, the law that the average lies between them, and the counterexample that the average need not be one of the numbers",
+      "act": [
+        "recount",
+        "compare",
+        "generalize",
+        "refute"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 100000,
       "tiers": [],
       "text": "shows",
@@ -777,6 +1496,20 @@
       "name": "equation",
       "file": "datasets/genesis_equation.txt",
       "genre": "the ladder of inquiry on equations: what a root IS, a case DECIDED by substitution with the arithmetic beside the verdict, Vieta shown as sum and product of the roots rather than a formula recited, a refusal with its ground («no whole root between 0 and 10: every value leaves a remainder»), and the square root as the INVERSE surface of the square; coefficients derived from the roots, numbers by range and not by case",
+      "act": [
+        "name",
+        "decide",
+        "refuse",
+        "invert",
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only",
+        "unsigned_only"
+      ],
       "size": 150000,
       "tiers": [],
       "text": "shows",
@@ -788,6 +1521,19 @@
       "name": "equation_signed",
       "file": "datasets/genesis_equation_signed.txt",
       "genre": "the same ladder of equations where roots may be NEGATIVE or zero — kept a world apart, not because the mathematics differs but because a frame is bought only when ONE performer speaks on EVERY show of it: a solver living in the unsigned world cannot reproduce «is -6 a root», and one such show kills the purchase of the whole frame",
+      "act": [
+        "name",
+        "decide",
+        "refuse",
+        "invert",
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
       "size": 150000,
       "tiers": [],
       "text": "shows"
@@ -796,6 +1542,15 @@
       "name": "dataformat",
       "file": "datasets/genesis_dataformat.txt",
       "genre": "data formats: ONE flat record written in JSON, YAML, TOML and CSV and said in two tongues, with the conversion between them as the show; the court parses both sides with its own readers and requires the SAME RECORD, not the same string — two writings differ in every character and mean one thing, which is what a format IS; the boundary is declared: flat records only, because nesting is held differently by every format and not at all by CSV",
+      "act": [
+        "translate"
+      ],
+      "oracle": [
+        "same_object"
+      ],
+      "boundary": [
+        "flat_only"
+      ],
       "size": 200000,
       "tiers": [],
       "text": "shows",
@@ -807,6 +1562,19 @@
       "name": "everyday",
       "file": "datasets/genesis_everyday.txt",
       "genre": "everyday life, and every line of it CARRIES A COMPUTABLE GROUND: things counted, containment walked through a declared tree, time ordered by a declared row, the past of a verb by rule with irregulars named, comparison by subtraction, and what remains after spending — the world that pays the debt named by the reach measure, where the corpus was rich in structure and poor in words",
+      "act": [
+        "recount",
+        "compare",
+        "inflect",
+        "decide"
+      ],
+      "oracle": [
+        "recompute",
+        "declared"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 400000,
       "tiers": [],
       "text": "shows",
@@ -818,6 +1586,16 @@
       "name": "story_chain",
       "file": "datasets/genesis_story_chain.txt",
       "genre": "the three-part chain: one bearer, one thing, THREE different verbs in ONE show — «Tom picked 12 apples and gave away 5; Tom keeps 7 apples». A market law is bought only inside one episode, so the law lives in the show or it does not live; the third fact carries its bearer explicitly, both polarities are shown, and the polarity is declared BY THE VERBS, not read off the numbers",
+      "act": [
+        "recount"
+      ],
+      "oracle": [
+        "recompute",
+        "declared"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 100000,
       "tiers": [],
       "text": "shows",
@@ -829,6 +1607,18 @@
       "name": "age",
       "file": "datasets/genesis_age.txt",
       "genre": "age and the shift of time: the difference between two ages does NOT change when both move forward or back — the law a corpus of single facts cannot teach; ages now, the shift in both directions, the multiple relation with its ground, the multiple in the future built so it is true by construction, and a refusal when nothing is said about the person asked",
+      "act": [
+        "recount",
+        "compare",
+        "refuse",
+        "generalize"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 100000,
       "tiers": [],
       "text": "shows",
@@ -840,6 +1630,17 @@
       "name": "share",
       "file": "datasets/genesis_share.txt",
       "genre": "shares said in WORDS: «two thirds», «три четверти», the share of a quantity with its ground («12 divided by 3 is 4, and 4 times 2 is 8»), the share in comparison («half as many»), mixed numbers («one and a half»), and shares that add to one whole; only whole results are uttered",
+      "act": [
+        "recount",
+        "translate",
+        "compare"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
       "size": 100000,
       "tiers": [],
       "text": "shows",
@@ -851,6 +1652,17 @@
       "name": "compare_mult",
       "file": "datasets/genesis_compare_mult.txt",
       "genre": "multiple comparison, and the two frames English keeps apart standing SIDE BY SIDE ON THE SAME NUMBERS: «as many as» for the countable and «as much as» for the uncountable — the organism had bought one and not the other because they never stood together; plus worded multipliers (twice, thrice) beside the numeric ones, «N times more than» with its ground, and the difference comparison next to the multiple one so the two are told apart",
+      "act": [
+        "compare",
+        "recount",
+        "translate"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
       "size": 100000,
       "tiers": [],
       "text": "shows",
@@ -862,6 +1674,16 @@
       "name": "lang_el",
       "file": "datasets/genesis_lang_el.txt",
       "genre": "greek: the corpus's third alphabet, three genders, and the accent as an OBLIGATORY sign — a word without it is a different word (tier 1: structure green, forms agree with the pack's own rules)",
+      "act": [
+        "inflect",
+        "refuse"
+      ],
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "tier1_unverified"
+      ],
       "size": 60000,
       "tiers": [],
       "text": "shows",
@@ -875,6 +1697,16 @@
       "name": "lang_ar",
       "file": "datasets/genesis_lang_ar.txt",
       "genre": "arabic: written RIGHT TO LEFT, with a DUAL number — a third count form beside singular and plural — and teens said as two words (tier 1: structure green, forms agree with the pack's own rules)",
+      "act": [
+        "inflect",
+        "refuse"
+      ],
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "tier1_unverified"
+      ],
       "size": 60000,
       "tiers": [],
       "text": "shows",
@@ -888,6 +1720,16 @@
       "name": "lang_hi",
       "file": "datasets/genesis_lang_hi.txt",
       "genre": "hindi: devanagari, the corpus's first ABUGIDA — a vowel is a MARK ON the consonant, not a letter beside it; the pack is declared SPACED, which is the truth about the language, and the instrument was taught to read a combining mark as a letter by office (tier 1: structure green, forms agree with the pack's own rules)",
+      "act": [
+        "inflect",
+        "refuse"
+      ],
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "tier1_unverified"
+      ],
       "size": 60000,
       "tiers": [],
       "text": "shows",
@@ -901,6 +1743,16 @@
       "name": "lang_ja",
       "file": "datasets/genesis_lang_ja.txt",
       "genre": "japanese: three scripts in one line, counters instead of number agreement, and NO plural at all (tier 1: structure green, forms agree with the pack's own rules)",
+      "act": [
+        "inflect",
+        "refuse"
+      ],
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "tier1_unverified"
+      ],
       "size": 60000,
       "tiers": [],
       "text": "shows",
@@ -914,6 +1766,16 @@
       "name": "lang_ko",
       "file": "datasets/genesis_lang_ko.txt",
       "genre": "korean: hangul, where a sign is BUILT from letters; particles instead of cases, chosen by whether the word ends in a consonant (tier 1: structure green, forms agree with the pack's own rules)",
+      "act": [
+        "inflect",
+        "refuse"
+      ],
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "tier1_unverified"
+      ],
       "size": 60000,
       "tiers": [],
       "text": "shows",
@@ -927,6 +1789,16 @@
       "name": "lang_sw",
       "file": "datasets/genesis_lang_sw.txt",
       "genre": "swahili: NOUN CLASSES, where the class of the noun governs the PREFIX of verb, adjective and numeral alike — agreement that changes the BEGINNING of a word, not its end (tier 1: structure green, forms agree with the pack's own rules)",
+      "act": [
+        "inflect",
+        "refuse"
+      ],
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "tier1_unverified"
+      ],
       "size": 60000,
       "tiers": [],
       "text": "shows",
@@ -940,6 +1812,16 @@
       "name": "lang_th",
       "file": "datasets/genesis_lang_th.txt",
       "genre": "thai: written without spaces between words but WITH spaces between sentences — a third case the segmenter did not have; tone marks above the consonant and vowels written before it (tier 1: structure green, forms agree with the pack's own rules)",
+      "act": [
+        "inflect",
+        "refuse"
+      ],
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "tier1_unverified"
+      ],
       "size": 60000,
       "tiers": [],
       "text": "shows",
@@ -953,6 +1835,16 @@
       "name": "lang_vi",
       "file": "datasets/genesis_lang_vi.txt",
       "genre": "vietnamese: six tones by diacritic, where ma, mà, má, mả, mã, mạ are six different words; a word written in syllables separated by spaces (tier 1: structure green, forms agree with the pack's own rules)",
+      "act": [
+        "inflect",
+        "refuse"
+      ],
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "tier1_unverified"
+      ],
       "size": 60000,
       "tiers": [],
       "text": "shows",
@@ -966,6 +1858,16 @@
       "name": "lang_fa",
       "file": "datasets/genesis_lang_fa.txt",
       "genre": "persian: the ARABIC SCRIPT on an INDO-EUROPEAN language — the probe that asks whether we tied a language to its writing; no dual, no arabic 3–10 agreement, four letters of its own (tier 1: structure green, forms agree with the pack's own rules)",
+      "act": [
+        "inflect",
+        "refuse"
+      ],
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "tier1_unverified"
+      ],
       "size": 60000,
       "tiers": [],
       "text": "shows",
@@ -979,6 +1881,16 @@
       "name": "lang_he",
       "file": "datasets/genesis_lang_he.txt",
       "genre": "hebrew: written right to left and WITHOUT VOWELS in ordinary writing — the opposite pole of the abugida, where a vowel is a mark ON the consonant; a dual on some words and gender on the numerals (tier 1: structure green, forms agree with the pack's own rules)",
+      "act": [
+        "inflect",
+        "refuse"
+      ],
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "tier1_unverified"
+      ],
       "size": 60000,
       "tiers": [],
       "text": "shows",
@@ -992,6 +1904,16 @@
       "name": "lang_fi",
       "file": "datasets/genesis_lang_fi.txt",
       "genre": "finnish: FIFTEEN CASES said by ENDING, not by preposition, and CONSONANT GRADATION that changes the STEM (kukka → kukan) rather than the suffix (tier 1: structure green, forms agree with the pack's own rules)",
+      "act": [
+        "inflect",
+        "refuse"
+      ],
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "tier1_unverified"
+      ],
       "size": 60000,
       "tiers": [],
       "text": "shows",
@@ -1005,6 +1927,16 @@
       "name": "lang_hu",
       "file": "datasets/genesis_lang_hu.txt",
       "genre": "hungarian: vowel harmony in three sets, possessive suffixes instead of possessive pronouns, and DEFINITE VS INDEFINITE CONJUGATION — the verb changes by the DEFINITENESS OF ITS OBJECT, which no other tongue of the corpus has (tier 1: structure green, forms agree with the pack's own rules)",
+      "act": [
+        "inflect",
+        "refuse"
+      ],
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "tier1_unverified"
+      ],
       "size": 60000,
       "tiers": [],
       "text": "shows",
@@ -1018,6 +1950,16 @@
       "name": "lang_id",
       "file": "datasets/genesis_lang_id.txt",
       "genre": "indonesian: the SIMPLEST of them all, and that is its value — no tense, no gender, no case, no agreement at all; the plural is the word said TWICE (buku-buku). The probe on EMPTINESS: an engine that demands some agreement finds none here (tier 1: structure green, forms agree with the pack's own rules)",
+      "act": [
+        "inflect",
+        "refuse"
+      ],
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "tier1_unverified"
+      ],
       "size": 60000,
       "tiers": [],
       "text": "shows",
@@ -1031,6 +1973,16 @@
       "name": "lang_ka",
       "file": "datasets/genesis_lang_ka.txt",
       "genre": "georgian: the corpus's fifth script (mkhedruli), WITH NO CAPITAL LETTERS AT ALL — a probe on every place we lower a case or compare one — and a verb carrying BOTH subject and object in one form (tier 1: structure green, forms agree with the pack's own rules)",
+      "act": [
+        "inflect",
+        "refuse"
+      ],
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "tier1_unverified"
+      ],
       "size": 60000,
       "tiers": [],
       "text": "shows",
@@ -1044,6 +1996,16 @@
       "name": "lang_am",
       "file": "datasets/genesis_lang_am.txt",
       "genre": "amharic: the sixth script, ethiopic, where a sign carries the consonant TOGETHER WITH its vowel — not a mark beside it but part of the sign itself, and there are some 270 of them (tier 1: structure green, forms agree with the pack's own rules)",
+      "act": [
+        "inflect",
+        "refuse"
+      ],
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "tier1_unverified"
+      ],
       "size": 60000,
       "tiers": [],
       "text": "shows",
@@ -1057,6 +2019,16 @@
       "name": "lang_ta",
       "file": "datasets/genesis_lang_ta.txt",
       "genre": "tamil: an abugida like hindi but with its OWN marks — the direct second test of the law that a combining mark is a letter by office; it passed with plain spaced cutting and NO change to the instrument. Also an INCLUSIVE and an EXCLUSIVE «we», a seventh person (tier 1: structure green, forms agree with the pack's own rules)",
+      "act": [
+        "inflect",
+        "refuse"
+      ],
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "tier1_unverified"
+      ],
       "size": 60000,
       "tiers": [],
       "text": "shows",
@@ -1067,22 +2039,133 @@
       ]
     },
     {
+      "name": "inquiry_de_fr",
+      "file": "datasets/genesis_inquiry_de_fr.txt",
+      "genre": "the ladder of inquiry in GERMAN and FRENCH: the same four rungs — definition, a case decided with its ground beside the verdict, a counterexample, the law — carried into tongues that until now could only count and decline. Twenty-nine languages could COUNT; two could REASON, and that gap was wider than eight more packs",
+      "act": [
+        "name",
+        "decide",
+        "refute",
+        "generalize"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 120000,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
+    },
+    {
+      "name": "inquiry_es_it",
+      "file": "datasets/genesis_inquiry_es_it.txt",
+      "genre": "the ladder of inquiry in SPANISH and ITALIAN, with the marks those tongues require and no others: the inverted question mark that opens a Spanish question, and the accent that separates «sí» from «si»",
+      "act": [
+        "name",
+        "decide",
+        "refute",
+        "generalize"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 120000,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
+    },
+    {
+      "name": "inquiry_pt_nl",
+      "file": "datasets/genesis_inquiry_pt_nl.txt",
+      "genre": "the ladder of inquiry in PORTUGUESE and DUTCH: the same four rungs — definition, a case decided with its ground beside the verdict, a counterexample, the law — carried into a Romance tongue that marks the question by INTONATION ALONE (no inverted mark, unlike Spanish) and a Germanic one that inverts the verb; the ladder mechanism is unchanged, which is what makes a new tongue cost a line and not a layer",
+      "act": [
+        "name",
+        "decide",
+        "refute",
+        "generalize"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 125574,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
+    },
+    {
+      "name": "inquiry_pl_tr",
+      "file": "datasets/genesis_inquiry_pl_tr.txt",
+      "genre": "the ladder of inquiry in POLISH and TURKISH, where the QUESTION ITSELF STOPS BEING PUNCTUATION: Polish asks with a WORD («czy»), Turkish with a SEPARATE PARTICLE at the end that AGREES BY VOWEL HARMONY with the word before it — four written forms of one particle, and the court DERIVES the form from the word rather than checking it against a list",
+      "act": [
+        "name",
+        "decide",
+        "refute",
+        "generalize"
+      ],
+      "oracle": [
+        "recompute",
+        "declared"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 96689,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
+    },
+    {
       "name": "school",
       "file": "datasets/GENESIS-SCHOOL.txt",
       "genre": "the school assembly: every world that declares «school» in its `assemblies`, in manifest order — the ladder a learner walks before the whole corpus; a consequence of the manifest, not a decision of whoever assembles it",
-      "size": 5885672,
+      "act": [
+        "assemble"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "assembled_only"
+      ],
+      "size": 6349958,
       "tiers": [],
       "text": "mix",
-      "lines": 129964
+      "lines": 135755
     },
     {
       "name": "full",
       "file": "datasets/GENESIS-FULL.txt",
       "genre": "the full mix: every world of shows, in manifest order, welded by the same seam that welds passes inside a layer — a consequence of the manifest, not a decision of whoever assembles it",
-      "size": 8425415,
+      "act": [
+        "assemble"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "assembled_only"
+      ],
+      "size": 8889701,
       "tiers": [],
       "text": "mix",
-      "lines": 178602
+      "lines": 184393
     }
   ]
 }

@@ -51,7 +51,8 @@ from rugram import ПО_ФОРМЕ  # noqa: E402
         # МИР СТАВОК СЧИТАЕТ ПО СУЩЕСТВУ: «сколько минут в двух часах»
         # есть его собственный род, и он пересчитывает отношение по
         # объявленному графу единиц, а не догадывается.
-        {"rates", "percent", "average", "equation", "everyday", "story_chain", "age", "share", "compare_mult", "arith", "episode", "algo", "number", "sequence", "geometry",
+        {"rates", "percent", "average", "equation", "everyday", "story_chain", "age", "share", "compare_mult", "inquiry_de_fr",
+         "inquiry_es_it", "arith", "episode", "algo", "number", "sequence", "geometry",
          "linalg", "statistics", "program", "compsci", "unit",
          "notation", "formula", "physlaw", "physics", "calendar",
          "speech", "case", "valence", "cyber", "machine", "proof"}),
