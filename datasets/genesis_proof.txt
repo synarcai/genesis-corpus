@@ -24,11 +24,11 @@ there is no even prime between 3 and 256: every even number there has the diviso
 every whole number is even or odd; 18 is even.
 если n чётно, то n в квадрате чётно: 20 чётно и 400 чётно.
 if 20 is even, is 401 even? no: 20 is even and 401 is odd.
-больше ли 7 нуля? да: 7 > 0.
-положительно ли 12? да: 12 > 0.
-is 1 above zero? yes: 1 > 0.
-is 20 positive? yes: 20 > 0.
-больше ли 0 нуля? нет: 0 не больше 0.
+больше ли 2 нуля? да: 2 > 0.
+is 6 above zero? yes: 6 > 0.
+положительно ли 20? да: 20 > 0.
+is 5 positive? yes: 5 > 0.
+больше ли −12 нуля? нет: −12 < 0.
 всякое целое чётно или нечётно; 9 нечётно.
 if it holds for n = 1, does it hold for n = 2? if it holds for n = 1 then it holds for n = 2: 1 + 2 = 3.
 если 4 чётно, чётно ли 17? нет: 4 чётно, а 17 нечётно.
@@ -56,9 +56,9 @@ is 25 even or odd? odd: 25 = 2 × 12 + 1.
 if it holds for n = 2, does it hold for n = 3? if it holds for n = 2 then it holds for n = 3: 3 + 3 = 6.
 если 20 чётно, чётно ли 401? нет: 20 чётно, а 401 нечётно.
 is 0 positive? no: 0 is not above 0.
-больше ли 12 нуля? да: 12 > 0.
-положительно ли 1? да: 1 > 0.
-is 20 above zero? yes: 20 > 0.
+больше ли 6 нуля? да: 6 > 0.
+is 11 above zero? yes: 11 > 0.
+положительно ли 5? да: 5 > 0.
 the sum of the first n numbers is n × ( n + 1 ) / 2.
 all primes are odd is false: 2 is prime and 2 is even.
 если верно для n = 1, верно ли для n = 2? если верно для n = 1, то верно и для n = 2: 1 + 2 = 3.
@@ -86,10 +86,10 @@ the sum of the first n numbers is n × ( n + 1 ) / 2.
 all multiples of 3 are odd is false: 6 is a multiple of 3 and 6 is even.
 если верно для n = 2, верно ли для n = 3? если верно для n = 2, то верно и для n = 3: 3 + 3 = 6.
 there is no even prime between 3 and 400: every even number there has the divisor 2 besides 1 and itself.
-is 0 above zero? no: 0 is not above 0.
-is −3 positive? no: −3 < 0.
-больше ли 1 нуля? да: 1 > 0.
-положительно ли 20? да: 20 > 0.
+положительно ли 0? нет: 0 не больше 0.
+is 1 positive? yes: 1 > 0.
+больше ли 11 нуля? да: 11 > 0.
+is 14 above zero? yes: 14 > 0.
 it holds for n = 1: 1 = 1.
 is it true that all primes are odd? no: 2 is prime and 2 is even.
 is 9 even or odd? odd: 9 = 2 × 4 + 1.
@@ -117,10 +117,10 @@ it holds for n = 1: 1 = 1.
 is it true that all multiples of 3 are odd? no: 6 is a multiple of 3 and 6 is even.
 is 18 even or odd? even: 18 = 2 × 9.
 чётного простого между 3 и 400 нет: у всякого чётного там есть делитель 2, кроме 1 и самого себя.
-положительно ли 0? нет: 0 не больше 0.
 is −3 above zero? no: −3 < 0.
-is −8 positive? no: −8 < 0.
-больше ли 20 нуля? да: 20 > 0.
+положительно ли 1? да: 1 > 0.
+is 0 positive? no: 0 is not above 0.
+больше ли 14 нуля? да: 14 > 0.
 if it holds for n = 1 then it holds for n = 2: 1 + 2 = 3.
 one witness kills a universal claim.
 чётно или нечётно 9? нечётно: 9 = 2 × 4 + 1.
@@ -148,10 +148,10 @@ if it holds for n = 2 then it holds for n = 3: 3 + 3 = 6.
 one witness kills a universal claim.
 чётно или нечётно 18? чётно: 18 = 2 × 9.
 is 7 positive? yes: 7 > 0.
-больше ли 0 нуля? нет: 0 не больше 0.
-положительно ли −3? нет: −3 < 0.
+больше ли −3 нуля? нет: −3 < 0.
 is −8 above zero? no: −8 < 0.
-is 0 positive? no: 0 is not above 0.
+положительно ли 0? нет: 0 не больше 0.
+is 9 positive? yes: 9 > 0.
 если верно для n = 1, то верно и для n = 2: 1 + 2 = 3.
 одно свидетельство убивает всеобщее утверждение.
 if 4 is even, is 16 even? yes: if n is even then n squared is even: 4 is even and 16 is even.
@@ -178,11 +178,11 @@ if 16 is even, is 257 even? no: 16 is even and 257 is odd.
 если верно для n = 2, то верно и для n = 3: 3 + 3 = 6.
 одно свидетельство убивает всеобщее утверждение.
 if 20 is even, is 400 even? yes: if n is even then n squared is even: 20 is even and 400 is even.
-is 7 above zero? yes: 7 > 0.
+положительно ли 7? да: 7 > 0.
 is 12 positive? yes: 12 > 0.
-больше ли −3 нуля? нет: −3 < 0.
-положительно ли −8? нет: −8 < 0.
-is 0 above zero? no: 0 is not above 0.
+больше ли −8 нуля? нет: −8 < 0.
+is −1 above zero? no: −1 < 0.
+положительно ли 9? да: 9 > 0.
 основание и шаг вместе дают всё натуральное.
 if n is even then n squared is even: 4 is even and 16 is even.
 если 4 чётно, чётно ли 16? да: если n чётно, то n в квадрате чётно: 4 чётно и 16 чётно.
@@ -209,11 +209,11 @@ if it holds for n = 7, does it hold for n = 8? if it holds for n = 7 then it hol
 основание и шаг вместе дают всё натуральное.
 if n is even then n squared is even: 20 is even and 400 is even.
 если 20 чётно, чётно ли 400? да: если n чётно, то n в квадрате чётно: 20 чётно и 400 чётно.
-положительно ли 7? да: 7 > 0.
-is 12 above zero? yes: 12 > 0.
-is 1 positive? yes: 1 > 0.
-больше ли −8 нуля? нет: −8 < 0.
-положительно ли 0? нет: 0 не больше 0.
+is 2 above zero? yes: 2 > 0.
+положительно ли 12? да: 12 > 0.
+is 20 positive? yes: 20 > 0.
+больше ли −1 нуля? нет: −1 < 0.
+is −12 above zero? no: −12 < 0.
 
 if it holds for n = 2 then it holds for n = 3: 3 + 3 = 6.
 if it holds for n = 2, does it hold for n = 3? if it holds for n = 2 then it holds for n = 3: 3 + 3 = 6.
@@ -232,9 +232,9 @@ all multiples of 3 are odd is false: 6 is a multiple of 3 and 6 is even.
 если 10 чётно, чётно ли 100? да: если n чётно, то n в квадрате чётно: 10 чётно и 100 чётно.
 всякое целое чётно или нечётно; 33 нечётно.
 if 12 is even, is 144 even? yes: if n is even then n squared is even: 12 is even and 144 is even.
-is 20 above zero? yes: 20 > 0.
-is −1 positive? no: −1 < 0.
-больше ли −12 нуля? нет: −12 < 0.
+положительно ли 5? да: 5 > 0.
+is 15 positive? yes: 15 > 0.
+больше ли −4 нуля? нет: −4 < 0.
 всякое целое чётно или нечётно; 12 чётно.
 if 14 is even, is 196 even? yes: if n is even then n squared is even: 14 is even and 196 is even.
 every whole number is even or odd; 21 is odd.
@@ -252,9 +252,9 @@ if n is even then n squared is even: 10 is even and 100 is even.
 чётного простого между 3 и 100 нет: у всякого чётного там есть делитель 2, кроме 1 и самого себя.
 одно свидетельство убивает всеобщее утверждение.
 there is no even prime between 3 and 144: every even number there has the divisor 2 besides 1 and itself.
-is 0 above zero? no: 0 is not above 0.
-is 9 positive? yes: 9 > 0.
-больше ли 15 нуля? да: 15 > 0.
+положительно ли 9? да: 9 > 0.
+is 3 positive? yes: 3 > 0.
+больше ли 2 нуля? да: 2 > 0.
 одно свидетельство убивает всеобщее утверждение.
 there is no even prime between 3 and 196: every even number there has the divisor 2 besides 1 and itself.
 one witness kills a universal claim.
@@ -271,9 +271,9 @@ every whole number is even or odd; 27 is odd.
 is 11 even or odd? odd: 11 = 2 × 5 + 1.
 если верно для n = 1, то верно и для n = 2: 1 + 2 = 3.
 если верно для n = 1, верно ли для n = 2? если верно для n = 1, то верно и для n = 2: 1 + 2 = 3.
-положительно ли −8? нет: −8 < 0.
-is 5 above zero? yes: 5 > 0.
-is −12 positive? no: −12 < 0.
+is −8 above zero? no: −8 < 0.
+положительно ли 0? нет: 0 не больше 0.
+is 0 positive? no: 0 is not above 0.
 если верно для n = 2, то верно и для n = 3: 3 + 3 = 6.
 если верно для n = 2, верно ли для n = 3? если верно для n = 2, то верно и для n = 3: 3 + 3 = 6.
 if it holds for n = 3 then it holds for n = 4: 6 + 4 = 10.
@@ -291,9 +291,9 @@ is it true that all multiples of 3 are odd? no: 6 is a multiple of 3 and 6 is ev
 if 10 is even, is 101 even? no: 10 is even and 101 is odd.
 all primes are odd is false: 2 is prime and 2 is even.
 если 12 чётно, чётно ли 144? да: если n чётно, то n в квадрате чётно: 12 чётно и 144 чётно.
-положительно ли 20? да: 20 > 0.
-is −1 above zero? no: −1 < 0.
-is 15 positive? yes: 15 > 0.
+is 11 above zero? yes: 11 > 0.
+положительно ли 15? да: 15 > 0.
+is 7 positive? yes: 7 > 0.
 all whole numbers are positive is false: 0 is whole and 0 is not positive.
 если 14 чётно, чётно ли 196? да: если n чётно, то n в квадрате чётно: 14 чётно и 196 чётно.
 всякое целое чётно или нечётно; 21 нечётно.
@@ -311,8 +311,8 @@ it holds for n = 1: 1 = 1.
 the sum of the first n numbers is n × ( n + 1 ) / 2.
 if n is even then n squared is even: 12 is even and 144 is even.
 чётного простого между 3 и 144 нет: у всякого чётного там есть делитель 2, кроме 1 и самого себя.
-положительно ли 0? нет: 0 не больше 0.
-is 9 above zero? yes: 9 > 0.
+is −1 above zero? no: −1 < 0.
+положительно ли 3? да: 3 > 0.
 the sum of the first n numbers is n × ( n + 1 ) / 2.
 if n is even then n squared is even: 14 is even and 196 is even.
 чётного простого между 3 и 196 нет: у всякого чётного там есть делитель 2, кроме 1 и самого себя.
@@ -331,8 +331,8 @@ every whole number is even or odd; 11 is odd.
 основание и шаг вместе дают всё натуральное.
 is 33 even or odd? odd: 33 = 2 × 16 + 1.
 больше ли −8 нуля? нет: −8 < 0.
-положительно ли 5? да: 5 > 0.
-is −12 above zero? no: −12 < 0.
+is 14 above zero? yes: 14 > 0.
+положительно ли 0? нет: 0 не больше 0.
 основание и шаг вместе дают всё натуральное.
 is 12 even or odd? even: 12 = 2 × 6.
 если верно для n = 3, то верно и для n = 4: 6 + 4 = 10.
@@ -350,9 +350,9 @@ one witness kills a universal claim.
 если 10 чётно, чётно ли 101? нет: 10 чётно, а 101 нечётно.
 is it true that all primes are odd? no: 2 is prime and 2 is even.
 if 12 is even, is 145 even? no: 12 is even and 145 is odd.
-больше ли 20 нуля? да: 20 > 0.
-положительно ли −1? нет: −1 < 0.
-is 15 above zero? yes: 15 > 0.
+больше ли 11 нуля? да: 11 > 0.
+is −12 above zero? no: −12 < 0.
+положительно ли 7? да: 7 > 0.
 is it true that all whole numbers are positive? no: 0 is whole and 0 is not positive.
 if 14 is even, is 197 even? no: 14 is even and 197 is odd.
 every square is even is false: 9 is a square and 9 is odd.
@@ -369,9 +369,9 @@ if it holds for n = 2 then it holds for n = 3: 3 + 3 = 6.
 if it holds for n = 2, does it hold for n = 3? if it holds for n = 2 then it holds for n = 3: 3 + 3 = 6.
 it holds for n = 1: 1 = 1.
 если n чётно, то n в квадрате чётно: 12 чётно и 144 чётно.
-is −8 positive? no: −8 < 0.
-больше ли 0 нуля? нет: 0 не больше 0.
-положительно ли 9? да: 9 > 0.
+is 0 positive? no: 0 is not above 0.
+больше ли −1 нуля? нет: −1 < 0.
+is 17 above zero? yes: 17 > 0.
 it holds for n = 1: 1 = 1.
 если n чётно, то n в квадрате чётно: 14 чётно и 196 чётно.
 the sum of the first n numbers is n × ( n + 1 ) / 2.
@@ -389,9 +389,9 @@ every square is even is false: 9 is a square and 9 is odd.
 if 10 is even, is 100 even? yes: if n is even then n squared is even: 10 is even and 100 is even.
 every whole number is even or odd; 33 is odd.
 чётно или нечётно 33? нечётно: 33 = 2 × 16 + 1.
-is 20 positive? yes: 20 > 0.
-больше ли 5 нуля? да: 5 > 0.
-положительно ли −12? нет: −12 < 0.
+is 5 positive? yes: 5 > 0.
+больше ли 14 нуля? да: 14 > 0.
+is −4 above zero? no: −4 < 0.
 every whole number is even or odd; 12 is even.
 чётно или нечётно 12? чётно: 12 = 2 × 6.
 основание и шаг вместе дают всё натуральное.
@@ -409,9 +409,9 @@ if n is even then n squared is even: 8 is even and 64 is even.
 there is no even prime between 3 and 100: every even number there has the divisor 2 besides 1 and itself.
 one witness kills a universal claim.
 если 12 чётно, чётно ли 145? нет: 12 чётно, а 145 нечётно.
-is 0 positive? no: 0 is not above 0.
-больше ли −1 нуля? нет: −1 < 0.
-положительно ли 15? да: 15 > 0.
+is 9 positive? yes: 9 > 0.
+больше ли −12 нуля? нет: −12 < 0.
+is 2 above zero? yes: 2 > 0.
 one witness kills a universal claim.
 если 14 чётно, чётно ли 197? нет: 14 чётно, а 197 нечётно.
 is it true that every square is even? no: 9 is a square and 9 is odd.
@@ -428,9 +428,9 @@ is 27 even or odd? odd: 27 = 2 × 13 + 1.
 если верно для n = 2, верно ли для n = 3? если верно для n = 2, то верно и для n = 3: 3 + 3 = 6.
 if it holds for n = 1 then it holds for n = 2: 1 + 2 = 3.
 if it holds for n = 1, does it hold for n = 2? if it holds for n = 1 then it holds for n = 2: 1 + 2 = 3.
-is −8 above zero? no: −8 < 0.
-is 5 positive? yes: 5 > 0.
-больше ли 9 нуля? да: 9 > 0.
+положительно ли 0? нет: 0 не больше 0.
+is 0 positive? no: 0 is not above 0.
+больше ли 17 нуля? да: 17 > 0.
 
 one witness kills a universal claim.
 чётного простого между 3 и 64 нет: у всякого чётного там есть делитель 2, кроме 1 и самого себя.
@@ -447,7 +447,7 @@ it holds for n = 1: 1 = 1.
 основание и шаг вместе дают всё натуральное.
 if 6 is even, is 36 even? yes: if n is even then n squared is even: 6 is even and 36 is even.
 больше ли −12 нуля? нет: −12 < 0.
-is 0 positive? no: 0 is not above 0.
+is 1 positive? yes: 1 > 0.
 it holds for n = 1: 1 = 1.
 если верно для n = 3, верно ли для n = 4? если верно для n = 3, то верно и для n = 4: 6 + 4 = 10.
 основание и шаг вместе дают всё натуральное.
@@ -463,8 +463,8 @@ if it holds for n = 7, does it hold for n = 8? if it holds for n = 7 then it hol
 if 4 is even, is 17 even? no: 4 is even and 17 is odd.
 one witness kills a universal claim.
 чётного простого между 3 и 36 нет: у всякого чётного там есть делитель 2, кроме 1 и самого себя.
-is −4 positive? no: −4 < 0.
-is 7 above zero? yes: 7 > 0.
+is 0 positive? no: 0 is not above 0.
+положительно ли 20? да: 20 > 0.
 всякое целое чётно или нечётно; 25 нечётно.
 if 8 is even, is 65 even? no: 8 is even and 65 is odd.
 one witness kills a universal claim.
@@ -479,9 +479,9 @@ there is no even prime between 3 and 400: every even number there has the diviso
 if n is even then n squared is even: 4 is even and 16 is even.
 it holds for n = 1: 1 = 1.
 если верно для n = 2, верно ли для n = 3? если верно для n = 2, то верно и для n = 3: 3 + 3 = 6.
-is −12 positive? no: −12 < 0.
-is 3 above zero? yes: 3 > 0.
-положительно ли 0? нет: 0 не больше 0.
+is 0 positive? no: 0 is not above 0.
+положительно ли 12? да: 12 > 0.
+is −8 above zero? no: −8 < 0.
 if n is even then n squared is even: 8 is even and 64 is even.
 it holds for n = 1: 1 = 1.
 если верно для n = 4, верно ли для n = 5? если верно для n = 4, то верно и для n = 5: 10 + 5 = 15.
@@ -496,8 +496,8 @@ if it holds for n = 2, does it hold for n = 3? if it holds for n = 2 then it hol
 чётно или нечётно 35? нечётно: 35 = 2 × 17 + 1.
 всякое целое чётно или нечётно; 13 нечётно.
 if 6 is even, is 37 even? no: 6 is even and 37 is odd.
-is 15 above zero? yes: 15 > 0.
-положительно ли 0? нет: 0 не больше 0.
+положительно ли 7? да: 7 > 0.
+is −3 above zero? no: −3 < 0.
 если верно для n = 3, то верно и для n = 4: 6 + 4 = 10.
 чётно или нечётно 25? нечётно: 25 = 2 × 12 + 1.
 всякое целое чётно или нечётно; 18 чётно.
@@ -512,9 +512,9 @@ every whole number is even or odd; 14 is even.
 is it true that all primes are odd? no: 2 is prime and 2 is even.
 there is no even prime between 3 and 16: every even number there has the divisor 2 besides 1 and itself.
 if n is even then n squared is even: 6 is even and 36 is even.
-is 9 above zero? yes: 9 > 0.
-положительно ли −4? нет: −4 < 0.
-больше ли 7 нуля? да: 7 > 0.
+положительно ли 3? да: 3 > 0.
+is −4 above zero? no: −4 < 0.
+больше ли 6 нуля? да: 6 > 0.
 is it true that every square is even? no: 9 is a square and 9 is odd.
 there is no even prime between 3 and 64: every even number there has the divisor 2 besides 1 and itself.
 if n is even then n squared is even: 10 is even and 100 is even.
@@ -529,8 +529,8 @@ the sum of the first n numbers is n × ( n + 1 ) / 2.
 if it holds for n = 1, does it hold for n = 2? if it holds for n = 1 then it holds for n = 2: 1 + 2 = 3.
 если верно для n = 2, то верно и для n = 3: 3 + 3 = 6.
 чётно или нечётно 13? нечётно: 13 = 2 × 6 + 1.
-положительно ли −12? нет: −12 < 0.
-больше ли 3 нуля? да: 3 > 0.
+is −12 above zero? no: −12 < 0.
+больше ли 2 нуля? да: 2 > 0.
 the sum of the first n numbers is n × ( n + 1 ) / 2.
 if it holds for n = 3, does it hold for n = 4? if it holds for n = 3 then it holds for n = 4: 6 + 4 = 10.
 если верно для n = 4, то верно и для n = 5: 10 + 5 = 15.
@@ -546,8 +546,8 @@ every whole number is even or odd; 35 is odd.
 если 4 чётно, чётно ли 16? да: если n чётно, то n в квадрате чётно: 4 чётно и 16 чётно.
 is it true that all whole numbers are positive? no: 0 is whole and 0 is not positive.
 there is no even prime between 3 and 36: every even number there has the divisor 2 besides 1 and itself.
-больше ли 15 нуля? да: 15 > 0.
-is 7 positive? yes: 7 > 0.
+больше ли 17 нуля? да: 17 > 0.
+is 20 positive? yes: 20 > 0.
 every whole number is even or odd; 25 is odd.
 если 8 чётно, чётно ли 64? да: если n чётно, то n в квадрате чётно: 8 чётно и 64 чётно.
 is it true that all multiples of 3 are odd? no: 6 is a multiple of 3 and 6 is even.
@@ -562,9 +562,9 @@ all multiples of 3 are odd is false: 6 is a multiple of 3 and 6 is even.
 одно свидетельство убивает всеобщее утверждение.
 the sum of the first n numbers is n × ( n + 1 ) / 2.
 if it holds for n = 2, does it hold for n = 3? if it holds for n = 2 then it holds for n = 3: 3 + 3 = 6.
-больше ли 9 нуля? да: 9 > 0.
-is 3 positive? yes: 3 > 0.
-is 0 above zero? no: 0 is not above 0.
+больше ли 14 нуля? да: 14 > 0.
+is 12 positive? yes: 12 > 0.
+положительно ли 0? нет: 0 не больше 0.
 одно свидетельство убивает всеобщее утверждение.
 the sum of the first n numbers is n × ( n + 1 ) / 2.
 if it holds for n = 4, does it hold for n = 5? if it holds for n = 4 then it holds for n = 5: 10 + 5 = 15.
@@ -579,8 +579,8 @@ if it holds for n = 1 then it holds for n = 2: 1 + 2 = 3.
 is 35 even or odd? odd: 35 = 2 × 17 + 1.
 every whole number is even or odd; 13 is odd.
 если 6 чётно, чётно ли 36? да: если n чётно, то n в квадрате чётно: 6 чётно и 36 чётно.
-is 15 positive? yes: 15 > 0.
-is 0 above zero? no: 0 is not above 0.
+is 7 positive? yes: 7 > 0.
+положительно ли 1? да: 1 > 0.
 if it holds for n = 3 then it holds for n = 4: 6 + 4 = 10.
 is 25 even or odd? odd: 25 = 2 × 12 + 1.
 every whole number is even or odd; 18 is even.
@@ -595,9 +595,9 @@ if 20 is even, is 400 even? yes: if n is even then n squared is even: 20 is even
 all primes are odd is false: 2 is prime and 2 is even.
 если 4 чётно, чётно ли 17? нет: 4 чётно, а 17 нечётно.
 одно свидетельство убивает всеобщее утверждение.
-is 9 positive? yes: 9 > 0.
-is −4 above zero? no: −4 < 0.
-положительно ли 7? да: 7 > 0.
+is 3 positive? yes: 3 > 0.
+положительно ли 0? нет: 0 не больше 0.
+is 6 above zero? yes: 6 > 0.
 every square is even is false: 9 is a square and 9 is odd.
 если 8 чётно, чётно ли 65? нет: 8 чётно, а 65 нечётно.
 одно свидетельство убивает всеобщее утверждение.
@@ -612,9 +612,9 @@ one witness kills a universal claim.
 если n чётно, то n в квадрате чётно: 4 чётно и 16 чётно.
 if it holds for n = 2 then it holds for n = 3: 3 + 3 = 6.
 is 13 even or odd? odd: 13 = 2 × 6 + 1.
-is −12 above zero? no: −12 < 0.
-положительно ли 3? да: 3 > 0.
-больше ли 0 нуля? нет: 0 не больше 0.
+положительно ли 0? нет: 0 не больше 0.
+is 2 above zero? yes: 2 > 0.
+больше ли −8 нуля? нет: −8 < 0.
 если n чётно, то n в квадрате чётно: 8 чётно и 64 чётно.
 if it holds for n = 4 then it holds for n = 5: 10 + 5 = 15.
 is 18 even or odd? even: 18 = 2 × 9.
@@ -629,8 +629,8 @@ it holds for n = 1: 1 = 1.
 if 4 is even, is 16 even? yes: if n is even then n squared is even: 4 is even and 16 is even.
 all whole numbers are positive is false: 0 is whole and 0 is not positive.
 если 6 чётно, чётно ли 37? нет: 6 чётно, а 37 нечётно.
-положительно ли 15? да: 15 > 0.
-больше ли 0 нуля? нет: 0 не больше 0.
+is 17 above zero? yes: 17 > 0.
+больше ли −3 нуля? нет: −3 < 0.
 основание и шаг вместе дают всё натуральное.
 if 8 is even, is 64 even? yes: if n is even then n squared is even: 8 is even and 64 is even.
 all multiples of 3 are odd is false: 6 is a multiple of 3 and 6 is even.
@@ -645,7 +645,7 @@ if 20 is even, is 401 even? no: 20 is even and 401 is odd.
 one witness kills a universal claim.
 чётного простого между 3 и 16 нет: у всякого чётного там есть делитель 2, кроме 1 и самого себя.
 если n чётно, то n в квадрате чётно: 6 чётно и 36 чётно.
-положительно ли 9? да: 9 > 0.
+is 14 above zero? yes: 14 > 0.
 больше ли −4 нуля? нет: −4 < 0.
 is 0 positive? no: 0 is not above 0.
 
@@ -660,8 +660,8 @@ is it true that all primes are odd? no: 2 is prime and 2 is even.
 if it holds for n = 2 then it holds for n = 3: 3 + 3 = 6.
 if 14 is even, is 197 even? no: 14 is even and 197 is odd.
 if it holds for n = 3, does it hold for n = 4? if it holds for n = 3 then it holds for n = 4: 6 + 4 = 10.
-больше ли 7 нуля? да: 7 > 0.
-is −8 positive? no: −8 < 0.
+больше ли 2 нуля? да: 2 > 0.
+is 15 positive? yes: 15 > 0.
 one witness kills a universal claim.
 если верно для n = 5, то верно и для n = 6: 15 + 6 = 21.
 если 4 чётно, чётно ли 17? нет: 4 чётно, а 17 нечётно.
@@ -673,8 +673,8 @@ if it holds for n = 1, does it hold for n = 2? if it holds for n = 1 then it hol
 all whole numbers are positive is false: 0 is whole and 0 is not positive.
 it holds for n = 1: 1 = 1.
 если 16 чётно, чётно ли 256? да: если n чётно, то n в квадрате чётно: 16 чётно и 256 чётно.
-is 12 positive? yes: 12 > 0.
-is 20 above zero? yes: 20 > 0.
+is 5 positive? yes: 5 > 0.
+положительно ли 3? да: 3 > 0.
 если верно для n = 4, верно ли для n = 5? если верно для n = 4, то верно и для n = 5: 10 + 5 = 15.
 is it true that all primes are odd? no: 2 is prime and 2 is even.
 if it holds for n = 6 then it holds for n = 7: 21 + 7 = 28.
@@ -685,8 +685,8 @@ it holds for n = 1: 1 = 1.
 если 12 чётно, чётно ли 144? да: если n чётно, то n в квадрате чётно: 12 чётно и 144 чётно.
 если n чётно, то n в квадрате чётно: 14 чётно и 196 чётно.
 всякое целое чётно или нечётно; 45 нечётно.
-is 0 positive? no: 0 is not above 0.
-is −3 above zero? no: −3 < 0.
+is 1 positive? yes: 1 > 0.
+положительно ли 9? да: 9 > 0.
 if it holds for n = 4 then it holds for n = 5: 10 + 5 = 15.
 if 20 is even, is 401 even? no: 20 is even and 401 is odd.
 if it holds for n = 5, does it hold for n = 6? if it holds for n = 5 then it holds for n = 6: 15 + 6 = 21.
@@ -698,8 +698,8 @@ it holds for n = 1: 1 = 1.
 the sum of the first n numbers is n × ( n + 1 ) / 2.
 if 14 is even, is 196 even? yes: if n is even then n squared is even: 14 is even and 196 is even.
 if n is even then n squared is even: 16 is even and 256 is even.
-is 7 above zero? yes: 7 > 0.
-положительно ли 1? да: 1 > 0.
+положительно ли 20? да: 20 > 0.
+is 11 above zero? yes: 11 > 0.
 all multiples of 3 are odd is false: 6 is a multiple of 3 and 6 is even.
 it holds for n = 1: 1 = 1.
 если 4 чётно, чётно ли 16? да: если n чётно, то n в квадрате чётно: 4 чётно и 16 чётно.
@@ -711,8 +711,8 @@ if n is even then n squared is even: 12 is even and 144 is even.
 every whole number is even or odd; 16 is even.
 чётного простого между 3 и 196 нет: у всякого чётного там есть делитель 2, кроме 1 и самого себя.
 чётно или нечётно 45? нечётно: 45 = 2 × 22 + 1.
-положительно ли 0? нет: 0 не больше 0.
-больше ли −8 нуля? нет: −8 < 0.
+is −3 above zero? no: −3 < 0.
+больше ли −1 нуля? нет: −1 < 0.
 если n чётно, то n в квадрате чётно: 20 чётно и 400 чётно.
 всякое целое чётно или нечётно; 33 нечётно.
 the sum of the first n numbers is n × ( n + 1 ) / 2.
@@ -724,7 +724,7 @@ every whole number is even or odd; 13 is odd.
 одно свидетельство убивает всеобщее утверждение.
 основание и шаг вместе дают всё натуральное.
 there is no even prime between 3 and 256: every even number there has the divisor 2 besides 1 and itself.
-больше ли 12 нуля? да: 12 > 0.
+больше ли 6 нуля? да: 6 > 0.
 the sum of the first n numbers is n × ( n + 1 ) / 2.
 if 20 is even, is 400 even? yes: if n is even then n squared is even: 20 is even and 400 is even.
 if n is even then n squared is even: 4 is even and 16 is even.
@@ -736,8 +736,8 @@ every whole number is even or odd; 14 is even.
 there is no even prime between 3 and 144: every even number there has the divisor 2 besides 1 and itself.
 is 16 even or odd? even: 16 = 2 × 8.
 one witness kills a universal claim.
-больше ли 0 нуля? нет: 0 не больше 0.
-is 1 positive? yes: 1 > 0.
+больше ли −4 нуля? нет: −4 < 0.
+is 0 positive? no: 0 is not above 0.
 every whole number is even or odd; 11 is odd.
 чётного простого между 3 и 400 нет: у всякого чётного там есть делитель 2, кроме 1 и самого себя.
 чётно или нечётно 33? нечётно: 33 = 2 × 16 + 1.
@@ -750,7 +750,7 @@ one witness kills a universal claim.
 если 14 чётно, чётно ли 197? нет: 14 чётно, а 197 нечётно.
 если верно для n = 3, верно ли для n = 4? если верно для n = 3, то верно и для n = 4: 6 + 4 = 10.
 is 0 positive? no: 0 is not above 0.
-is −8 above zero? no: −8 < 0.
+положительно ли 15? да: 15 > 0.
 одно свидетельство убивает всеобщее утверждение.
 основание и шаг вместе дают всё натуральное.
 there is no even prime between 3 and 16: every even number there has the divisor 2 besides 1 and itself.
@@ -762,8 +762,8 @@ one witness kills a universal claim.
 is it true that all whole numbers are positive? no: 0 is whole and 0 is not positive.
 if it holds for n = 3 then it holds for n = 4: 6 + 4 = 10.
 if 16 is even, is 257 even? no: 16 is even and 257 is odd.
-is 12 above zero? yes: 12 > 0.
-положительно ли 20? да: 20 > 0.
+положительно ли 5? да: 5 > 0.
+is 14 above zero? yes: 14 > 0.
 is 11 even or odd? odd: 11 = 2 × 5 + 1.
 one witness kills a universal claim.
 если верно для n = 6, то верно и для n = 7: 21 + 7 = 28.
@@ -774,8 +774,8 @@ if it holds for n = 1 then it holds for n = 2: 1 + 2 = 3.
 if 12 is even, is 145 even? no: 12 is even and 145 is odd.
 if it holds for n = 2, does it hold for n = 3? if it holds for n = 2 then it holds for n = 3: 3 + 3 = 6.
 every square is even is false: 9 is a square and 9 is odd.
-is 0 above zero? no: 0 is not above 0.
-положительно ли −3? нет: −3 < 0.
+положительно ли 1? да: 1 > 0.
+is −8 above zero? no: −8 < 0.
 если верно для n = 4, то верно и для n = 5: 10 + 5 = 15.
 если 20 чётно, чётно ли 401? нет: 20 чётно, а 401 нечётно.
 если верно для n = 5, верно ли для n = 6? если верно для n = 5, то верно и для n = 6: 15 + 6 = 21.
@@ -787,8 +787,8 @@ all primes are odd is false: 2 is prime and 2 is even.
 it holds for n = 1: 1 = 1.
 если 14 чётно, чётно ли 196? да: если n чётно, то n в квадрате чётно: 14 чётно и 196 чётно.
 если n чётно, то n в квадрате чётно: 16 чётно и 256 чётно.
-положительно ли 7? да: 7 > 0.
-больше ли 1 нуля? да: 1 > 0.
+is 2 above zero? yes: 2 > 0.
+больше ли 11 нуля? да: 11 > 0.
 is it true that all multiples of 3 are odd? no: 6 is a multiple of 3 and 6 is even.
 if it holds for n = 5 then it holds for n = 6: 15 + 6 = 21.
 if 4 is even, is 17 even? no: 4 is even and 17 is odd.
@@ -800,8 +800,8 @@ it holds for n = 1: 1 = 1.
 всякое целое чётно или нечётно; 16 чётно.
 the sum of the first n numbers is n × ( n + 1 ) / 2.
 if 16 is even, is 256 even? yes: if n is even then n squared is even: 16 is even and 256 is even.
-больше ли 0 нуля? нет: 0 не больше 0.
-is 20 positive? yes: 20 > 0.
+больше ли −3 нуля? нет: −3 < 0.
+is 3 positive? yes: 3 > 0.
 if it holds for n = 4, does it hold for n = 5? if it holds for n = 4 then it holds for n = 5: 10 + 5 = 15.
 all primes are odd is false: 2 is prime and 2 is even.
 it holds for n = 1: 1 = 1.
@@ -813,7 +813,7 @@ if 12 is even, is 144 even? yes: if n is even then n squared is even: 12 is even
 if n is even then n squared is even: 14 is even and 196 is even.
 every whole number is even or odd; 45 is odd.
 чётного простого между 3 и 256 нет: у всякого чётного там есть делитель 2, кроме 1 и самого себя.
-is −3 positive? no: −3 < 0.
+is 9 positive? yes: 9 > 0.
 it holds for n = 1: 1 = 1.
 если 20 чётно, чётно ли 400? да: если n чётно, то n в квадрате чётно: 20 чётно и 400 чётно.
 если n чётно, то n в квадрате чётно: 4 чётно и 16 чётно.
@@ -825,8 +825,8 @@ every whole number is even or odd; 39 is odd.
 чётного простого между 3 и 144 нет: у всякого чётного там есть делитель 2, кроме 1 и самого себя.
 чётно или нечётно 16? чётно: 16 = 2 × 8.
 одно свидетельство убивает всеобщее утверждение.
-is 7 positive? yes: 7 > 0.
-is 1 above zero? yes: 1 > 0.
+is 20 positive? yes: 20 > 0.
+положительно ли 0? нет: 0 не больше 0.
 всякое целое чётно или нечётно; 11 нечётно.
 the sum of the first n numbers is n × ( n + 1 ) / 2.
 if 4 is even, is 16 even? yes: if n is even then n squared is even: 4 is even and 16 is even.
@@ -838,8 +838,8 @@ every whole number is even or odd; 35 is odd.
 основание и шаг вместе дают всё натуральное.
 there is no even prime between 3 and 196: every even number there has the divisor 2 besides 1 and itself.
 is 45 even or odd? odd: 45 = 2 × 22 + 1.
-is 0 above zero? no: 0 is not above 0.
-положительно ли −8? нет: −8 < 0.
+положительно ли 0? нет: 0 не больше 0.
+is −1 above zero? no: −1 < 0.
 if n is even then n squared is even: 20 is even and 400 is even.
 every whole number is even or odd; 33 is odd.
 чётного простого между 3 и 16 нет: у всякого чётного там есть делитель 2, кроме 1 и самого себя.
@@ -851,8 +851,8 @@ is 39 even or odd? odd: 39 = 2 × 19 + 1.
 one witness kills a universal claim.
 если верно для n = 3, то верно и для n = 4: 6 + 4 = 10.
 если 16 чётно, чётно ли 257? нет: 16 чётно, а 257 нечётно.
-положительно ли 12? да: 12 > 0.
-больше ли 20 нуля? да: 20 > 0.
+is 6 above zero? yes: 6 > 0.
+больше ли 14 нуля? да: 14 > 0.
 чётно или нечётно 11? нечётно: 11 = 2 × 5 + 1.
 одно свидетельство убивает всеобщее утверждение.
 основание и шаг вместе дают всё натуральное.
@@ -863,8 +863,8 @@ one witness kills a universal claim.
 если 12 чётно, чётно ли 145? нет: 12 чётно, а 145 нечётно.
 если верно для n = 2, верно ли для n = 3? если верно для n = 2, то верно и для n = 3: 3 + 3 = 6.
 is it true that every square is even? no: 9 is a square and 9 is odd.
-положительно ли 0? нет: 0 не больше 0.
-больше ли −3 нуля? нет: −3 < 0.
+is −4 above zero? no: −4 < 0.
+больше ли −8 нуля? нет: −8 < 0.
 
 если n чётно, то n в квадрате чётно: 12 чётно и 144 чётно.
 is it true that all whole numbers are positive? no: 0 is whole and 0 is not positive.
@@ -876,7 +876,7 @@ if n is even then n squared is even: 6 is even and 36 is even.
 every square is even is false: 9 is a square and 9 is odd.
 если верно для n = 4, то верно и для n = 5: 10 + 5 = 15.
 чётного простого между 3 и 100 нет: у всякого чётного там есть делитель 2, кроме 1 и самого себя.
-положительно ли 5? да: 5 > 0.
+is 14 above zero? yes: 14 > 0.
 every whole number is even or odd; 35 is odd.
 it holds for n = 1: 1 = 1.
 если 14 чётно, чётно ли 197? нет: 14 чётно, а 197 нечётно.
@@ -887,8 +887,8 @@ is it true that all primes are odd? no: 2 is prime and 2 is even.
 the sum of the first n numbers is n × ( n + 1 ) / 2.
 if 8 is even, is 65 even? no: 8 is even and 65 is odd.
 is 17 even or odd? odd: 17 = 2 × 8 + 1.
-больше ли 20 нуля? да: 20 > 0.
-положительно ли −12? нет: −12 < 0.
+больше ли 11 нуля? да: 11 > 0.
+is −4 above zero? no: −4 < 0.
 if 12 is even, is 144 even? yes: if n is even then n squared is even: 12 is even and 144 is even.
 if it holds for n = 6, does it hold for n = 7? if it holds for n = 6 then it holds for n = 7: 21 + 7 = 28.
 one witness kills a universal claim.
@@ -898,8 +898,8 @@ it holds for n = 1: 1 = 1.
 чётно или нечётно 22? чётно: 22 = 2 × 11.
 если n чётно, то n в квадрате чётно: 8 чётно и 64 чётно.
 is it true that all multiples of 3 are odd? no: 6 is a multiple of 3 and 6 is even.
-is −8 positive? no: −8 < 0.
-больше ли −1 нуля? нет: −1 < 0.
+is 15 positive? yes: 15 > 0.
+больше ли −12 нуля? нет: −12 < 0.
 одно свидетельство убивает всеобщее утверждение.
 всякое целое чётно или нечётно; 13 нечётно.
 if it holds for n = 7 then it holds for n = 8: 28 + 8 = 36.
@@ -910,7 +910,7 @@ one witness kills a universal claim.
 every whole number is even or odd; 49 is odd.
 it holds for n = 1: 1 = 1.
 если 10 чётно, чётно ли 101? нет: 10 чётно, а 101 нечётно.
-is 5 positive? yes: 5 > 0.
+is 7 positive? yes: 7 > 0.
 если верно для n = 5, то верно и для n = 6: 15 + 6 = 21.
 чётного простого между 3 и 144 нет: у всякого чётного там есть делитель 2, кроме 1 и самого себя.
 если 14 чётно, чётно ли 196? да: если n чётно, то n в квадрате чётно: 14 чётно и 196 чётно.
@@ -921,8 +921,8 @@ if it holds for n = 2 then it holds for n = 3: 3 + 3 = 6.
 there is no even prime between 3 and 36: every even number there has the divisor 2 besides 1 and itself.
 if 8 is even, is 64 even? yes: if n is even then n squared is even: 8 is even and 64 is even.
 if it holds for n = 4, does it hold for n = 5? if it holds for n = 4 then it holds for n = 5: 10 + 5 = 15.
-is 20 above zero? yes: 20 > 0.
-is −12 positive? no: −12 < 0.
+положительно ли 3? да: 3 > 0.
+is 1 positive? yes: 1 > 0.
 is 35 even or odd? odd: 35 = 2 × 17 + 1.
 if n is even then n squared is even: 14 is even and 196 is even.
 every square is even is false: 9 is a square and 9 is odd.
@@ -932,8 +932,8 @@ every square is even is false: 9 is a square and 9 is odd.
 если верно для n = 2, верно ли для n = 3? если верно для n = 2, то верно и для n = 3: 3 + 3 = 6.
 одно свидетельство убивает всеобщее утверждение.
 всякое целое чётно или нечётно; 17 нечётно.
-положительно ли 1? да: 1 > 0.
-is −1 above zero? no: −1 < 0.
+is 6 above zero? yes: 6 > 0.
+положительно ли 0? нет: 0 не больше 0.
 is it true that all primes are odd? no: 2 is prime and 2 is even.
 основание и шаг вместе дают всё натуральное.
 the sum of the first n numbers is n × ( n + 1 ) / 2.
@@ -944,7 +944,7 @@ all whole numbers are positive is false: 0 is whole and 0 is not positive.
 если верно для n = 3, то верно и для n = 4: 6 + 4 = 10.
 чётного простого между 3 и 64 нет: у всякого чётного там есть делитель 2, кроме 1 и самого себя.
 если 10 чётно, чётно ли 100? да: если n чётно, то n в квадрате чётно: 10 чётно и 100 чётно.
-положительно ли 0? нет: 0 не больше 0.
+is −1 above zero? no: −1 < 0.
 it holds for n = 1: 1 = 1.
 если 12 чётно, чётно ли 145? нет: 12 чётно, а 145 нечётно.
 чётно или нечётно 13? нечётно: 13 = 2 × 6 + 1.
@@ -956,7 +956,7 @@ if 6 is even, is 37 even? no: 6 is even and 37 is odd.
 is 49 even or odd? odd: 49 = 2 × 24 + 1.
 if n is even then n squared is even: 10 is even and 100 is even.
 больше ли −8 нуля? нет: −8 < 0.
-положительно ли 9? да: 9 > 0.
+is 17 above zero? yes: 17 > 0.
 if it holds for n = 5, does it hold for n = 6? if it holds for n = 5 then it holds for n = 6: 15 + 6 = 21.
 one witness kills a universal claim.
 every whole number is even or odd; 39 is odd.
@@ -966,8 +966,8 @@ it holds for n = 1: 1 = 1.
 если n чётно, то n в квадрате чётно: 6 чётно и 36 чётно.
 is it true that every square is even? no: 9 is a square and 9 is odd.
 основание и шаг вместе дают всё натуральное.
-is 1 positive? yes: 1 > 0.
-больше ли 5 нуля? да: 5 > 0.
+is 0 positive? no: 0 is not above 0.
+больше ли 14 нуля? да: 14 > 0.
 всякое целое чётно или нечётно; 35 нечётно.
 if it holds for n = 6 then it holds for n = 7: 21 + 7 = 28.
 there is no even prime between 3 and 196: every even number there has the divisor 2 besides 1 and itself.
@@ -979,7 +979,7 @@ it holds for n = 1: 1 = 1.
 если 8 чётно, чётно ли 65? нет: 8 чётно, а 65 нечётно.
 чётно или нечётно 17? нечётно: 17 = 2 × 8 + 1.
 is 0 positive? no: 0 is not above 0.
-больше ли −12 нуля? нет: −12 < 0.
+больше ли −4 нуля? нет: −4 < 0.
 если 12 чётно, чётно ли 144? да: если n чётно, то n в квадрате чётно: 12 чётно и 144 чётно.
 если верно для n = 6, верно ли для n = 7? если верно для n = 6, то верно и для n = 7: 21 + 7 = 28.
 одно свидетельство убивает всеобщее утверждение.
@@ -989,8 +989,8 @@ there is no even prime between 3 and 16: every even number there has the divisor
 if 6 is even, is 36 even? yes: if n is even then n squared is even: 6 is even and 36 is even.
 if it holds for n = 3, does it hold for n = 4? if it holds for n = 3 then it holds for n = 4: 6 + 4 = 10.
 one witness kills a universal claim.
-is −8 above zero? no: −8 < 0.
-is 9 positive? yes: 9 > 0.
+положительно ли 15? да: 15 > 0.
+is 12 positive? yes: 12 > 0.
 if n is even then n squared is even: 12 is even and 144 is even.
 all whole numbers are positive is false: 0 is whole and 0 is not positive.
 если верно для n = 7, то верно и для n = 8: 28 + 8 = 36.
@@ -1001,7 +1001,7 @@ all whole numbers are positive is false: 0 is whole and 0 is not positive.
 всякое целое чётно или нечётно; 49 нечётно.
 if it holds for n = 4 then it holds for n = 5: 10 + 5 = 15.
 there is no even prime between 3 and 100: every even number there has the divisor 2 besides 1 and itself.
-is 5 above zero? yes: 5 > 0.
+положительно ли 7? да: 7 > 0.
 основание и шаг вместе дают всё натуральное.
 the sum of the first n numbers is n × ( n + 1 ) / 2.
 if 14 is even, is 197 even? no: 14 is even and 197 is odd.
@@ -1012,8 +1012,8 @@ all primes are odd is false: 2 is prime and 2 is even.
 чётного простого между 3 и 36 нет: у всякого чётного там есть делитель 2, кроме 1 и самого себя.
 если 8 чётно, чётно ли 64? да: если n чётно, то n в квадрате чётно: 8 чётно и 64 чётно.
 если верно для n = 4, верно ли для n = 5? если верно для n = 4, то верно и для n = 5: 10 + 5 = 15.
-положительно ли 20? да: 20 > 0.
-is −12 above zero? no: −12 < 0.
+is 11 above zero? yes: 11 > 0.
+положительно ли 1? да: 1 > 0.
 чётно или нечётно 35? нечётно: 35 = 2 × 17 + 1.
 если n чётно, то n в квадрате чётно: 14 чётно и 196 чётно.
 is it true that every square is even? no: 9 is a square and 9 is odd.
@@ -1023,8 +1023,8 @@ if 4 is even, is 17 even? no: 4 is even and 17 is odd.
 is 22 even or odd? even: 22 = 2 × 11.
 if n is even then n squared is even: 8 is even and 64 is even.
 all multiples of 3 are odd is false: 6 is a multiple of 3 and 6 is even.
-больше ли 1 нуля? да: 1 > 0.
-положительно ли −1? нет: −1 < 0.
+больше ли 6 нуля? да: 6 > 0.
+is −12 above zero? no: −12 < 0.
 one witness kills a universal claim.
 every whole number is even or odd; 13 is odd.
 it holds for n = 1: 1 = 1.
@@ -1035,7 +1035,7 @@ is it true that all whole numbers are positive? no: 0 is whole and 0 is not posi
 основание и шаг вместе дают всё натуральное.
 the sum of the first n numbers is n × ( n + 1 ) / 2.
 if 10 is even, is 101 even? no: 10 is even and 101 is odd.
-больше ли 0 нуля? нет: 0 не больше 0.
+больше ли −1 нуля? нет: −1 < 0.
 if it holds for n = 5 then it holds for n = 6: 15 + 6 = 21.
 there is no even prime between 3 and 144: every even number there has the divisor 2 besides 1 and itself.
 if 14 is even, is 196 even? yes: if n is even then n squared is even: 14 is even and 196 is even.
@@ -1046,8 +1046,8 @@ it holds for n = 1: 1 = 1.
 если 6 чётно, чётно ли 37? нет: 6 чётно, а 37 нечётно.
 чётно или нечётно 49? нечётно: 49 = 2 × 24 + 1.
 если n чётно, то n в квадрате чётно: 10 чётно и 100 чётно.
-is 20 positive? yes: 20 > 0.
-больше ли 9 нуля? да: 9 > 0.
+is 3 positive? yes: 3 > 0.
+больше ли 17 нуля? да: 17 > 0.
 если верно для n = 5, верно ли для n = 6? если верно для n = 5, то верно и для n = 6: 15 + 6 = 21.
 одно свидетельство убивает всеобщее утверждение.
 всякое целое чётно или нечётно; 39 нечётно.
@@ -1057,8 +1057,8 @@ if 4 is even, is 16 even? yes: if n is even then n squared is even: 4 is even an
 if it holds for n = 2, does it hold for n = 3? if it holds for n = 2 then it holds for n = 3: 3 + 3 = 6.
 one witness kills a universal claim.
 every whole number is even or odd; 17 is odd.
-is 1 above zero? yes: 1 > 0.
-is −1 positive? no: −1 < 0.
+положительно ли 0? нет: 0 не больше 0.
+is 0 positive? no: 0 is not above 0.
 all primes are odd is false: 2 is prime and 2 is even.
 если верно для n = 6, то верно и для n = 7: 21 + 7 = 28.
 чётного простого между 3 и 196 нет: у всякого чётного там есть делитель 2, кроме 1 и самого себя.
@@ -1069,7 +1069,7 @@ all primes are odd is false: 2 is prime and 2 is even.
 if it holds for n = 3 then it holds for n = 4: 6 + 4 = 10.
 there is no even prime between 3 and 64: every even number there has the divisor 2 besides 1 and itself.
 if 10 is even, is 100 even? yes: if n is even then n squared is even: 10 is even and 100 is even.
-is 0 above zero? no: 0 is not above 0.
+положительно ли 0? нет: 0 не больше 0.
 the sum of the first n numbers is n × ( n + 1 ) / 2.
 if 12 is even, is 145 even? no: 12 is even and 145 is odd.
 is 13 even or odd? odd: 13 = 2 × 6 + 1.
@@ -1080,5 +1080,5 @@ all multiples of 3 are odd is false: 6 is a multiple of 3 and 6 is even.
 если 6 чётно, чётно ли 36? да: если n чётно, то n в квадрате чётно: 6 чётно и 36 чётно.
 если верно для n = 3, верно ли для n = 4? если верно для n = 3, то верно и для n = 4: 6 + 4 = 10.
 одно свидетельство убивает всеобщее утверждение.
-положительно ли −8? нет: −8 < 0.
-is 9 above zero? yes: 9 > 0.
+is −8 above zero? no: −8 < 0.
+положительно ли 12? да: 12 > 0.
