@@ -513,7 +513,7 @@ def _звено_верно(строка, итог_m, сколько):
 # носителя дважды — величины складываются, потом сравниваются; оба звена
 # стоят в ответе, и суд считает оба.
 НАКОПЛЕНИЕ = re.compile(
-    rf"^({С}) made (\d+) ({С})\. \1 sold (\d+) of them\. then \1 made (\d+) more \3\. "
+    rf"^({С}) made (\d+) ({С})\. \1 sold (\d+) of them\. then \1 made (\d+)(?: more)? \3\. "
     rf"how many more \3 did \1 make than sell\? (\d+) \+ (\d+) = (\d+), (\d+) − (\d+) = (\d+)\.$")
 СТАВКА = re.compile(
     rf"^({С}) ({С}) (\d+) ({С}) (?:every|each|a) (?:day|night)\. "

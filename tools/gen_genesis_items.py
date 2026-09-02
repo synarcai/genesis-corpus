@@ -127,9 +127,12 @@ def pass_shows(pass_i):
         # звена цепью; вещи только неодушевлённые.
         if not anim:
             sold = min(n, m)
+            # с «more» и без него поровну (e9): иначе «more» купится как
+            # условие суммы, а SVAMP пишет обе формы
+            ещё = " more" if seed % 2 == 0 else ""
             out.append(
                 f"{a} made {n} {by_count(n, it)}. {a} sold {sold} of them. "
-                f"then {a} made {m} more {it}. "
+                f"then {a} made {m}{ещё} {it}. "
                 f"how many more {it} did {a} make than sell? "
                 f"{n} + {m} = {n + m}, {n + m} − {sold} = {n + m - sold}."
             )
