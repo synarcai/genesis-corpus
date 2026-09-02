@@ -544,5 +544,19 @@
       "ők"
     ],
     "diacritics": "áéíóöőúüű"
-  }
+  },
+  "ask_words": {
+    "words": [
+      "mi",
+      "mit",
+      "mennyi",
+      "hány",
+      "hol",
+      "mikor",
+      "ki",
+      "¬"
+    ],
+    "position": "front"
+  },
+  "ask_words_comment": "question words and their POSITION (front/end/any) — derived from this pack's own layer, checkable by the same measure (М-137)"
 }

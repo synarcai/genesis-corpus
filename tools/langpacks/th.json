@@ -450,5 +450,18 @@
   },
   "segmentation": "longest-match",
   "stem_min": 1,
-  "ending_max": 0
+  "ending_max": 0,
+  "ask_words": {
+    "words": [
+      "อะไร",
+      "กี่",
+      "ที่ไหน",
+      "เมื่อไร",
+      "ใคร",
+      "ไหม",
+      "¬"
+    ],
+    "position": "any"
+  },
+  "ask_words_comment": "question words and their POSITION (front/end/any) — derived from this pack's own layer, checkable by the same measure (М-137)"
 }

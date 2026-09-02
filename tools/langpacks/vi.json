@@ -475,5 +475,18 @@
       "đồ"
     ],
     "diacritics": "àáâèéêìíòóôùúăđưạảấậắằếọốồộờừửữ"
-  }
+  },
+  "ask_words": {
+    "words": [
+      "gì",
+      "bao",
+      "nhiêu",
+      "đâu",
+      "ai",
+      "không",
+      "¬"
+    ],
+    "position": "end"
+  },
+  "ask_words_comment": "question words and their POSITION (front/end/any) — derived from this pack's own layer, checkable by the same measure (М-137)"
 }

@@ -432,5 +432,17 @@
       "மூன்று"
     ],
     "diacritics": "ாிீுூெேைொோ்"
-  }
+  },
+  "ask_words": {
+    "words": [
+      "என்ன",
+      "எத்தனை",
+      "எங்கே",
+      "எப்போது",
+      "யார்",
+      "¬"
+    ],
+    "position": "end"
+  },
+  "ask_words_comment": "question words and their POSITION (front/end/any) — derived from this pack's own layer, checkable by the same measure (М-137)"
 }

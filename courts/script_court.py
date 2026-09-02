@@ -113,12 +113,20 @@ def судить(строка, слой=None):
             # пласта («¬ yedi ne renktedir ?») объявлен им самим.
             if слова[0] == "¬" and "¬" in words:
                 return True, True
-            if объ.get("position") == "end":
+            позиция = объ.get("position")
+            if позиция == "end":
                 # письмо без пробелов: вопросное слово — хвост строки
                 хвост = слова[-1]
                 ок = хвост in words or any(хвост.endswith(w) for w in words)
+            elif позиция == "any":
+                # хинди ставит «क्या» перед связкой, амхарский — «ምን» в
+                # середине: слово ищется где-либо, в письме без пробелов —
+                # подстрокой
+                ок = any(w in words or any(x in w for x in words) for w in слова)
             else:
-                ок = слова[0] in words or (len(слова) > 1 and слова[1] in words)
+                голова = слова[0]
+                ок = (голова in words or any(голова.startswith(w) for w in words)
+                      or (len(слова) > 1 and слова[1] in words))
             return True, ок
         if asking.зачин_объявлен(вопрос) is False:
             return True, False

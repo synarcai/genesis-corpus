@@ -511,5 +511,19 @@
   },
   "numeral_connectors": [
     "y"
-  ]
+  ],
+  "ask_words": {
+    "words": [
+      "¿qué",
+      "qué",
+      "cuál",
+      "cuánto",
+      "cuántos",
+      "dónde",
+      "es",
+      "¬"
+    ],
+    "position": "front"
+  },
+  "ask_words_comment": "question words and their POSITION (front/end/any) — derived from this pack's own layer, checkable by the same measure (М-137)"
 }

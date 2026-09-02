@@ -452,5 +452,19 @@
       "يساوي"
     ],
     "diacritics": "أإآؤئىة"
-  }
+  },
+  "ask_words": {
+    "words": [
+      "ما",
+      "ماذا",
+      "كم",
+      "هل",
+      "أين",
+      "متى",
+      "من",
+      "¬"
+    ],
+    "position": "front"
+  },
+  "ask_words_comment": "question words and their POSITION (front/end/any) — derived from this pack's own layer, checkable by the same measure (М-137)"
 }

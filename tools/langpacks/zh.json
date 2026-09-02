@@ -481,5 +481,18 @@
   "graphemes": "一七三上东个么乘九书了二于五人什他以们你做八六写减加十友只吃听喝四在大她子学小山座张很我房扇支新是最有朋本朵来杯桌水狗猫用百的盒看着笔等箱纸色花袋西说走车辆过这那里长门除颜高",
   "stem_min": 1,
   "ending_max": 2,
-  "list_separator": "、"
+  "list_separator": "、",
+  "ask_words": {
+    "words": [
+      "什么",
+      "多少",
+      "吗",
+      "哪里",
+      "谁",
+      "几",
+      "¬"
+    ],
+    "position": "any"
+  },
+  "ask_words_comment": "question words and their POSITION (front/end/any) — derived from this pack's own layer, checkable by the same measure (М-137)"
 }

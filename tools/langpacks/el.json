@@ -464,5 +464,19 @@
   },
   "question": [
     "τι"
-  ]
+  ],
+  "ask_words": {
+    "words": [
+      "τι",
+      "πόσο",
+      "πόσα",
+      "ποιο",
+      "ποια",
+      "πού",
+      "πότε",
+      "¬"
+    ],
+    "position": "front"
+  },
+  "ask_words_comment": "question words and their POSITION (front/end/any) — derived from this pack's own layer, checkable by the same measure (М-137)"
 }

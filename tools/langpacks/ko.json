@@ -498,5 +498,17 @@
     "diacritics": ""
   },
   "stem_min": 1,
-  "ending_max": 4
+  "ending_max": 4,
+  "ask_words": {
+    "words": [
+      "무엇이에요",
+      "이에요",
+      "에요",
+      "예요",
+      "까",
+      "¬"
+    ],
+    "position": "end"
+  },
+  "ask_words_comment": "question words and their POSITION (front/end/any) — derived from this pack's own layer, checkable by the same measure (М-137)"
 }
