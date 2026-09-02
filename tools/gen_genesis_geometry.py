@@ -244,10 +244,16 @@ def тела(шаг):
         вон.append(утв_к_ru)
         вон.append(утв_куб_en)
         вон.append(утв_куб_ru)
-        вон.append(спросить("volume", en_к, утв_к_en))
-        вон.append(спросить("surface", en_к, утв_к_en))
-        вон.append(спросить("объём", ru_к_род, утв_к_ru))
-        вон.append(спросить("поверхность", ru_к_род, утв_к_ru))
+        # THE ANSWER NAMES THE ASKED QUANTITY ONLY (М-148; the box as the
+        # rectangle): the fact keeps both, each question gets its own.
+        об_en = f"{en_к} has volume {a} × {b} = {a * b}, {a * b} × {c} = {a * b * c}."
+        пов_en = f"{en_к} has surface {пов}."
+        об_ru = f"{ru_к} имеет объём {a} × {b} = {a * b}, {a * b} × {c} = {a * b * c}."
+        пов_ru = f"{ru_к} имеет поверхность {пов}."
+        вон.append(спросить("volume", en_к, об_en))
+        вон.append(спросить("surface", en_к, пов_en))
+        вон.append(спросить("объём", ru_к_род, об_ru))
+        вон.append(спросить("поверхность", ru_к_род, пов_ru))
         вон.append(спросить("volume", en_куб, утв_куб_en))
         вон.append(спросить("объём", ru_куб_род, утв_куб_ru))
     return вон
