@@ -33,115 +33,115 @@ a word of 2 signs over an alphabet of 8 signs costs 6 bits.
 4 равновозможных исхода несут 2 бита.
 how much does a word of 3 signs over an alphabet of 2 signs cost? a word of 3 signs over an alphabet of 2 signs costs 3 bits.
 сколько бит несут 8 равновозможных исходов? 8 равновозможных исходов несут 3 бита.
-8 equally likely outcomes: entropy 3 bits.
+8 equally likely outcomes — entropy 3 bits.
 слово из 5 знаков алфавита в 2 знака стоит 5 битов.
-what is the entropy of 16 equally likely outcomes? 16 equally likely outcomes: entropy 4 bits.
+what is the entropy of 16 equally likely outcomes? 16 equally likely outcomes — entropy 4 bits.
 сколько бит стоит слово из 6 знаков алфавита в 8 знаков? слово из 6 знаков алфавита в 8 знаков стоит 18 битов.
 64 equally likely outcomes carry 6 bits.
-64 равновозможных исхода: энтропия 6 битов.
+64 равновозможных исхода — энтропия 6 битов.
 how many bits do 128 equally likely outcomes carry? 128 equally likely outcomes carry 7 bits.
-чему равна энтропия 128 равновозможных исходов? 128 равновозможных исходов: энтропия 7 битов.
+чему равна энтропия 128 равновозможных исходов? 128 равновозможных исходов — энтропия 7 битов.
 a word of 3 signs over an alphabet of 2 signs costs 3 bits.
 2 равновозможных исхода несут 1 бит.
 how much does a word of 2 signs over an alphabet of 8 signs cost? a word of 2 signs over an alphabet of 8 signs costs 6 bits.
 сколько бит несут 4 равновозможных исхода? 4 равновозможных исхода несут 2 бита.
-4 equally likely outcomes: entropy 2 bits.
+4 equally likely outcomes — entropy 2 bits.
 слово из 4 знака алфавита в 8 знаков стоит 12 битов.
-what is the entropy of 8 equally likely outcomes? 8 equally likely outcomes: entropy 3 bits.
+what is the entropy of 8 equally likely outcomes? 8 equally likely outcomes — entropy 3 bits.
 сколько бит стоит слово из 5 знаков алфавита в 2 знака? слово из 5 знаков алфавита в 2 знака стоит 5 битов.
 32 equally likely outcomes carry 5 bits.
-32 равновозможных исхода: энтропия 5 битов.
+32 равновозможных исхода — энтропия 5 битов.
 how many bits do 64 equally likely outcomes carry? 64 equally likely outcomes carry 6 bits.
-чему равна энтропия 64 равновозможных исхода? 64 равновозможных исхода: энтропия 6 битов.
+чему равна энтропия 64 равновозможных исхода? 64 равновозможных исхода — энтропия 6 битов.
 a word of 2 signs over an alphabet of 8 signs costs 6 bits.
 256 равновозможных исходов несут 8 битов.
 how much does a word of 3 signs over an alphabet of 2 signs cost? a word of 3 signs over an alphabet of 2 signs costs 3 bits.
 сколько бит несут 2 равновозможных исхода? 2 равновозможных исхода несут 1 бит.
-2 equally likely outcomes: entropy 1 bit.
+2 equally likely outcomes — entropy 1 bit.
 слово из 3 знака алфавита в 2 знака стоит 3 бита.
-what is the entropy of 4 equally likely outcomes? 4 equally likely outcomes: entropy 2 bits.
+what is the entropy of 4 equally likely outcomes? 4 equally likely outcomes — entropy 2 bits.
 сколько бит стоит слово из 4 знака алфавита в 8 знаков? слово из 4 знака алфавита в 8 знаков стоит 12 битов.
 16 equally likely outcomes carry 4 bits.
-16 равновозможных исходов: энтропия 4 бита.
+16 равновозможных исходов — энтропия 4 бита.
 how many bits do 32 equally likely outcomes carry? 32 equally likely outcomes carry 5 bits.
-чему равна энтропия 32 равновозможных исхода? 32 равновозможных исхода: энтропия 5 битов.
+чему равна энтропия 32 равновозможных исхода? 32 равновозможных исхода — энтропия 5 битов.
 a word of 1 sign over an alphabet of 2 signs costs 1 bit.
 128 равновозможных исходов несут 7 битов.
 how much does a word of 2 signs over an alphabet of 8 signs cost? a word of 2 signs over an alphabet of 8 signs costs 6 bits.
 сколько бит несут 256 равновозможных исходов? 256 равновозможных исходов несут 8 битов.
-256 equally likely outcomes: entropy 8 bits.
+256 equally likely outcomes — entropy 8 bits.
 слово из 2 знака алфавита в 8 знаков стоит 6 битов.
-what is the entropy of 2 equally likely outcomes? 2 equally likely outcomes: entropy 1 bit.
+what is the entropy of 2 equally likely outcomes? 2 equally likely outcomes — entropy 1 bit.
 сколько бит стоит слово из 3 знака алфавита в 2 знака? слово из 3 знака алфавита в 2 знака стоит 3 бита.
 8 equally likely outcomes carry 3 bits.
-8 равновозможных исходов: энтропия 3 бита.
+8 равновозможных исходов — энтропия 3 бита.
 how many bits do 16 equally likely outcomes carry? 16 equally likely outcomes carry 4 bits.
-чему равна энтропия 16 равновозможных исходов? 16 равновозможных исходов: энтропия 4 бита.
+чему равна энтропия 16 равновозможных исходов? 16 равновозможных исходов — энтропия 4 бита.
 a word of 6 signs over an alphabet of 8 signs costs 18 bits.
 64 равновозможных исхода несут 6 битов.
 how much does a word of 1 sign over an alphabet of 2 signs cost? a word of 1 sign over an alphabet of 2 signs costs 1 bit.
 сколько бит несут 128 равновозможных исходов? 128 равновозможных исходов несут 7 битов.
-128 equally likely outcomes: entropy 7 bits.
+128 equally likely outcomes — entropy 7 bits.
 слово из 3 знака алфавита в 2 знака стоит 3 бита.
-what is the entropy of 256 equally likely outcomes? 256 equally likely outcomes: entropy 8 bits.
+what is the entropy of 256 equally likely outcomes? 256 equally likely outcomes — entropy 8 bits.
 сколько бит стоит слово из 2 знака алфавита в 8 знаков? слово из 2 знака алфавита в 8 знаков стоит 6 битов.
 4 equally likely outcomes carry 2 bits.
-4 равновозможных исхода: энтропия 2 бита.
+4 равновозможных исхода — энтропия 2 бита.
 how many bits do 8 equally likely outcomes carry? 8 equally likely outcomes carry 3 bits.
-чему равна энтропия 8 равновозможных исходов? 8 равновозможных исходов: энтропия 3 бита.
+чему равна энтропия 8 равновозможных исходов? 8 равновозможных исходов — энтропия 3 бита.
 a word of 5 signs over an alphabet of 2 signs costs 5 bits.
 32 равновозможных исхода несут 5 битов.
 how much does a word of 6 signs over an alphabet of 8 signs cost? a word of 6 signs over an alphabet of 8 signs costs 18 bits.
 сколько бит несут 64 равновозможных исхода? 64 равновозможных исхода несут 6 битов.
-64 equally likely outcomes: entropy 6 bits.
+64 equally likely outcomes — entropy 6 bits.
 слово из 2 знака алфавита в 8 знаков стоит 6 битов.
-what is the entropy of 128 equally likely outcomes? 128 equally likely outcomes: entropy 7 bits.
+what is the entropy of 128 equally likely outcomes? 128 equally likely outcomes — entropy 7 bits.
 сколько бит стоит слово из 3 знака алфавита в 2 знака? слово из 3 знака алфавита в 2 знака стоит 3 бита.
 2 equally likely outcomes carry 1 bit.
-2 равновозможных исхода: энтропия 1 бит.
+2 равновозможных исхода — энтропия 1 бит.
 how many bits do 4 equally likely outcomes carry? 4 equally likely outcomes carry 2 bits.
-чему равна энтропия 4 равновозможных исхода? 4 равновозможных исхода: энтропия 2 бита.
+чему равна энтропия 4 равновозможных исхода? 4 равновозможных исхода — энтропия 2 бита.
 a word of 4 signs over an alphabet of 8 signs costs 12 bits.
 16 равновозможных исходов несут 4 бита.
 how much does a word of 5 signs over an alphabet of 2 signs cost? a word of 5 signs over an alphabet of 2 signs costs 5 bits.
 сколько бит несут 32 равновозможных исхода? 32 равновозможных исхода несут 5 битов.
-32 equally likely outcomes: entropy 5 bits.
+32 equally likely outcomes — entropy 5 bits.
 слово из 1 знак алфавита в 2 знака стоит 1 бит.
-what is the entropy of 64 equally likely outcomes? 64 equally likely outcomes: entropy 6 bits.
+what is the entropy of 64 equally likely outcomes? 64 equally likely outcomes — entropy 6 bits.
 сколько бит стоит слово из 2 знака алфавита в 8 знаков? слово из 2 знака алфавита в 8 знаков стоит 6 битов.
 256 equally likely outcomes carry 8 bits.
-256 равновозможных исходов: энтропия 8 битов.
+256 равновозможных исходов — энтропия 8 битов.
 how many bits do 2 equally likely outcomes carry? 2 equally likely outcomes carry 1 bit.
-чему равна энтропия 2 равновозможных исхода? 2 равновозможных исхода: энтропия 1 бит.
+чему равна энтропия 2 равновозможных исхода? 2 равновозможных исхода — энтропия 1 бит.
 a word of 3 signs over an alphabet of 2 signs costs 3 bits.
 8 равновозможных исходов несут 3 бита.
 how much does a word of 4 signs over an alphabet of 8 signs cost? a word of 4 signs over an alphabet of 8 signs costs 12 bits.
 сколько бит несут 16 равновозможных исходов? 16 равновозможных исходов несут 4 бита.
-16 equally likely outcomes: entropy 4 bits.
+16 equally likely outcomes — entropy 4 bits.
 слово из 6 знаков алфавита в 8 знаков стоит 18 битов.
-what is the entropy of 32 equally likely outcomes? 32 equally likely outcomes: entropy 5 bits.
+what is the entropy of 32 equally likely outcomes? 32 equally likely outcomes — entropy 5 bits.
 сколько бит стоит слово из 1 знак алфавита в 2 знака? слово из 1 знак алфавита в 2 знака стоит 1 бит.
 128 equally likely outcomes carry 7 bits.
-128 равновозможных исходов: энтропия 7 битов.
+128 равновозможных исходов — энтропия 7 битов.
 how many bits do 256 equally likely outcomes carry? 256 equally likely outcomes carry 8 bits.
-чему равна энтропия 256 равновозможных исходов? 256 равновозможных исходов: энтропия 8 битов.
+чему равна энтропия 256 равновозможных исходов? 256 равновозможных исходов — энтропия 8 битов.
 
-почему энтропия 8 равновозможных исходов равна 3 бита? потому что 2^3 = 8: 8 равновозможных исходов: энтропия 3 бита. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
-why is the entropy of 128 equally likely outcomes 7 bits? because 2^7 = 128: 128 equally likely outcomes: entropy 7 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
-чему равна энтропия 4 равновозможных исхода? 2^2 = 4. значит 4 равновозможных исхода: энтропия 2 бита. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
-what is the entropy of 64 equally likely outcomes? 2^6 = 64. therefore 64 equally likely outcomes: entropy 6 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
-почему энтропия 2 равновозможных исхода равна 1 бит? потому что 2^1 = 2: 2 равновозможных исхода: энтропия 1 бит. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
-why is the entropy of 32 equally likely outcomes 5 bits? because 2^5 = 32: 32 equally likely outcomes: entropy 5 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
-чему равна энтропия 256 равновозможных исходов? 2^8 = 256. значит 256 равновозможных исходов: энтропия 8 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
-what is the entropy of 16 equally likely outcomes? 2^4 = 16. therefore 16 equally likely outcomes: entropy 4 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
-почему энтропия 128 равновозможных исходов равна 7 битов? потому что 2^7 = 128: 128 равновозможных исходов: энтропия 7 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
-why is the entropy of 8 equally likely outcomes 3 bits? because 2^3 = 8: 8 equally likely outcomes: entropy 3 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
-чему равна энтропия 64 равновозможных исхода? 2^6 = 64. значит 64 равновозможных исхода: энтропия 6 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
-what is the entropy of 4 equally likely outcomes? 2^2 = 4. therefore 4 equally likely outcomes: entropy 2 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
-почему энтропия 32 равновозможных исхода равна 5 битов? потому что 2^5 = 32: 32 равновозможных исхода: энтропия 5 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
-why is the entropy of 2 equally likely outcomes 1 bit? because 2^1 = 2: 2 equally likely outcomes: entropy 1 bit. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
-чему равна энтропия 16 равновозможных исходов? 2^4 = 16. значит 16 равновозможных исходов: энтропия 4 бита. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
-what is the entropy of 256 equally likely outcomes? 2^8 = 256. therefore 256 equally likely outcomes: entropy 8 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+почему энтропия 8 равновозможных исходов равна 3 бита? потому что 2^3 = 8: 8 равновозможных исходов — энтропия 3 бита. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+why is the entropy of 128 equally likely outcomes 7 bits? because 2^7 = 128: 128 equally likely outcomes — entropy 7 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+чему равна энтропия 4 равновозможных исхода? 4 равновозможных исхода — энтропия 2 бита: 2^2 = 4. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+what is the entropy of 64 equally likely outcomes? 64 equally likely outcomes — entropy 6 bits: 2^6 = 64. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+почему энтропия 2 равновозможных исхода равна 1 бит? потому что 2^1 = 2: 2 равновозможных исхода — энтропия 1 бит. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+why is the entropy of 32 equally likely outcomes 5 bits? because 2^5 = 32: 32 equally likely outcomes — entropy 5 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+чему равна энтропия 256 равновозможных исходов? 256 равновозможных исходов — энтропия 8 битов: 2^8 = 256. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+what is the entropy of 16 equally likely outcomes? 16 equally likely outcomes — entropy 4 bits: 2^4 = 16. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+почему энтропия 128 равновозможных исходов равна 7 битов? потому что 2^7 = 128: 128 равновозможных исходов — энтропия 7 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+why is the entropy of 8 equally likely outcomes 3 bits? because 2^3 = 8: 8 equally likely outcomes — entropy 3 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+чему равна энтропия 64 равновозможных исхода? 64 равновозможных исхода — энтропия 6 битов: 2^6 = 64. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+what is the entropy of 4 equally likely outcomes? 4 equally likely outcomes — entropy 2 bits: 2^2 = 4. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+почему энтропия 32 равновозможных исхода равна 5 битов? потому что 2^5 = 32: 32 равновозможных исхода — энтропия 5 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+why is the entropy of 2 equally likely outcomes 1 bit? because 2^1 = 2: 2 equally likely outcomes — entropy 1 bit. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+чему равна энтропия 16 равновозможных исходов? 16 равновозможных исходов — энтропия 4 бита: 2^4 = 16. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+what is the entropy of 256 equally likely outcomes? 256 equally likely outcomes — entropy 8 bits: 2^8 = 256. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
 
 бит — это информация, различающая два равновозможных исхода.
 a decidable question is a question that a procedure answers yes or no in finitely many steps.
@@ -367,10 +367,10 @@ does a sign of an alphabet of 9 signs cost a whole number of bits? no: 9 is not 
 сколько бит несут 32 равновозможных исхода? 32 равновозможных исхода несут 5 битов.
 64 equally likely outcomes carry 6 bits.
 128 равновозможных исходов несут 7 битов.
-what is the entropy of 128 equally likely outcomes? 128 equally likely outcomes: entropy 7 bits.
-чему равна энтропия 256 равновозможных исходов? 256 равновозможных исходов: энтропия 8 битов.
-512 equally likely outcomes: entropy 9 bits.
-1024 равновозможных исхода: энтропия 10 битов.
+what is the entropy of 128 equally likely outcomes? 128 equally likely outcomes — entropy 7 bits.
+чему равна энтропия 256 равновозможных исходов? 256 равновозможных исходов — энтропия 8 битов.
+512 equally likely outcomes — entropy 9 bits.
+1024 равновозможных исхода — энтропия 10 битов.
 how much does a word of 1 sign over an alphabet of 16 signs cost? a word of 1 sign over an alphabet of 16 signs costs 4 bits.
 сколько бит стоит слово из 2 знака алфавита в 4 знака? слово из 2 знака алфавита в 4 знака стоит 4 бита.
 a word of 1 sign over an alphabet of 16 signs costs 4 bits.
@@ -379,10 +379,10 @@ how many bits do 128 equally likely outcomes carry? 128 equally likely outcomes 
 сколько бит несут 256 равновозможных исходов? 256 равновозможных исходов несут 8 битов.
 512 equally likely outcomes carry 9 bits.
 1024 равновозможных исхода несут 10 битов.
-what is the entropy of 1024 equally likely outcomes? 1024 equally likely outcomes: entropy 10 bits.
-чему равна энтропия 2048 равновозможных исходов? 2048 равновозможных исходов: энтропия 11 битов.
-4096 equally likely outcomes: entropy 12 bits.
-32 равновозможных исхода: энтропия 5 битов.
+what is the entropy of 1024 equally likely outcomes? 1024 equally likely outcomes — entropy 10 bits.
+чему равна энтропия 2048 равновозможных исходов? 2048 равновозможных исходов — энтропия 11 битов.
+4096 equally likely outcomes — entropy 12 bits.
+32 равновозможных исхода — энтропия 5 битов.
 how much does a word of 2 signs over an alphabet of 4 signs cost? a word of 2 signs over an alphabet of 4 signs costs 4 bits.
 сколько бит стоит слово из 3 знака алфавита в 16 знаков? слово из 3 знака алфавита в 16 знаков стоит 12 битов.
 a word of 4 signs over an alphabet of 4 signs costs 8 bits.
@@ -391,10 +391,10 @@ how many bits do 1024 equally likely outcomes carry? 1024 equally likely outcome
 сколько бит несут 2048 равновозможных исходов? 2048 равновозможных исходов несут 11 битов.
 4096 equally likely outcomes carry 12 bits.
 32 равновозможных исхода несут 5 битов.
-what is the entropy of 32 equally likely outcomes? 32 equally likely outcomes: entropy 5 bits.
-чему равна энтропия 64 равновозможных исхода? 64 равновозможных исхода: энтропия 6 битов.
-128 equally likely outcomes: entropy 7 bits.
-256 равновозможных исходов: энтропия 8 битов.
+what is the entropy of 32 equally likely outcomes? 32 equally likely outcomes — entropy 5 bits.
+чему равна энтропия 64 равновозможных исхода? 64 равновозможных исхода — энтропия 6 битов.
+128 equally likely outcomes — entropy 7 bits.
+256 равновозможных исходов — энтропия 8 битов.
 how much does a word of 5 signs over an alphabet of 16 signs cost? a word of 5 signs over an alphabet of 16 signs costs 20 bits.
 сколько бит стоит слово из 6 знаков алфавита в 4 знака? слово из 6 знаков алфавита в 4 знака стоит 12 битов.
 a word of 1 sign over an alphabet of 16 signs costs 4 bits.
@@ -403,10 +403,10 @@ how many bits do 32 equally likely outcomes carry? 32 equally likely outcomes ca
 сколько бит несут 64 равновозможных исхода? 64 равновозможных исхода несут 6 битов.
 128 equally likely outcomes carry 7 bits.
 256 равновозможных исходов несут 8 битов.
-what is the entropy of 256 equally likely outcomes? 256 equally likely outcomes: entropy 8 bits.
-чему равна энтропия 512 равновозможных исходов? 512 равновозможных исходов: энтропия 9 битов.
-1024 equally likely outcomes: entropy 10 bits.
-2048 равновозможных исходов: энтропия 11 битов.
+what is the entropy of 256 equally likely outcomes? 256 equally likely outcomes — entropy 8 bits.
+чему равна энтропия 512 равновозможных исходов? 512 равновозможных исходов — энтропия 9 битов.
+1024 equally likely outcomes — entropy 10 bits.
+2048 равновозможных исходов — энтропия 11 битов.
 how much does a word of 2 signs over an alphabet of 4 signs cost? a word of 2 signs over an alphabet of 4 signs costs 4 bits.
 сколько бит стоит слово из 1 знак алфавита в 16 знаков? слово из 1 знак алфавита в 16 знаков стоит 4 бита.
 a word of 2 signs over an alphabet of 4 signs costs 4 bits.
@@ -415,10 +415,10 @@ how many bits do 256 equally likely outcomes carry? 256 equally likely outcomes 
 сколько бит несут 512 равновозможных исходов? 512 равновозможных исходов несут 9 битов.
 1024 equally likely outcomes carry 10 bits.
 2048 равновозможных исходов несут 11 битов.
-what is the entropy of 2048 equally likely outcomes? 2048 equally likely outcomes: entropy 11 bits.
-чему равна энтропия 4096 равновозможных исходов? 4096 равновозможных исходов: энтропия 12 битов.
-32 equally likely outcomes: entropy 5 bits.
-64 равновозможных исхода: энтропия 6 битов.
+what is the entropy of 2048 equally likely outcomes? 2048 equally likely outcomes — entropy 11 bits.
+чему равна энтропия 4096 равновозможных исходов? 4096 равновозможных исходов — энтропия 12 битов.
+32 equally likely outcomes — entropy 5 bits.
+64 равновозможных исхода — энтропия 6 битов.
 how much does a word of 3 signs over an alphabet of 16 signs cost? a word of 3 signs over an alphabet of 16 signs costs 12 bits.
 сколько бит стоит слово из 4 знака алфавита в 4 знака? слово из 4 знака алфавита в 4 знака стоит 8 битов.
 a word of 5 signs over an alphabet of 16 signs costs 20 bits.
@@ -427,10 +427,10 @@ how many bits do 2048 equally likely outcomes carry? 2048 equally likely outcome
 сколько бит несут 4096 равновозможных исходов? 4096 равновозможных исходов несут 12 битов.
 32 equally likely outcomes carry 5 bits.
 64 равновозможных исхода несут 6 битов.
-what is the entropy of 64 equally likely outcomes? 64 equally likely outcomes: entropy 6 bits.
-чему равна энтропия 128 равновозможных исходов? 128 равновозможных исходов: энтропия 7 битов.
-256 equally likely outcomes: entropy 8 bits.
-512 равновозможных исходов: энтропия 9 битов.
+what is the entropy of 64 equally likely outcomes? 64 equally likely outcomes — entropy 6 bits.
+чему равна энтропия 128 равновозможных исходов? 128 равновозможных исходов — энтропия 7 битов.
+256 equally likely outcomes — entropy 8 bits.
+512 равновозможных исходов — энтропия 9 битов.
 how much does a word of 6 signs over an alphabet of 4 signs cost? a word of 6 signs over an alphabet of 4 signs costs 12 bits.
 сколько бит стоит слово из 1 знак алфавита в 16 знаков? слово из 1 знак алфавита в 16 знаков стоит 4 бита.
 a word of 2 signs over an alphabet of 4 signs costs 4 bits.
@@ -439,10 +439,10 @@ how many bits do 64 equally likely outcomes carry? 64 equally likely outcomes ca
 сколько бит несут 128 равновозможных исходов? 128 равновозможных исходов несут 7 битов.
 256 equally likely outcomes carry 8 bits.
 512 равновозможных исходов несут 9 битов.
-what is the entropy of 512 equally likely outcomes? 512 equally likely outcomes: entropy 9 bits.
-чему равна энтропия 1024 равновозможных исхода? 1024 равновозможных исхода: энтропия 10 битов.
-2048 equally likely outcomes: entropy 11 bits.
-4096 равновозможных исходов: энтропия 12 битов.
+what is the entropy of 512 equally likely outcomes? 512 equally likely outcomes — entropy 9 bits.
+чему равна энтропия 1024 равновозможных исхода? 1024 равновозможных исхода — энтропия 10 битов.
+2048 equally likely outcomes — entropy 11 bits.
+4096 равновозможных исходов — энтропия 12 битов.
 how much does a word of 1 sign over an alphabet of 16 signs cost? a word of 1 sign over an alphabet of 16 signs costs 4 bits.
 сколько бит стоит слово из 2 знака алфавита в 4 знака? слово из 2 знака алфавита в 4 знака стоит 4 бита.
 a word of 3 signs over an alphabet of 16 signs costs 12 bits.
@@ -451,32 +451,32 @@ how many bits do 512 equally likely outcomes carry? 512 equally likely outcomes 
 сколько бит несут 1024 равновозможных исхода? 1024 равновозможных исхода несут 10 битов.
 2048 equally likely outcomes carry 11 bits.
 4096 равновозможных исходов несут 12 битов.
-what is the entropy of 4096 equally likely outcomes? 4096 equally likely outcomes: entropy 12 bits.
-чему равна энтропия 32 равновозможных исхода? 32 равновозможных исхода: энтропия 5 битов.
-64 equally likely outcomes: entropy 6 bits.
-128 равновозможных исходов: энтропия 7 битов.
+what is the entropy of 4096 equally likely outcomes? 4096 equally likely outcomes — entropy 12 bits.
+чему равна энтропия 32 равновозможных исхода? 32 равновозможных исхода — энтропия 5 битов.
+64 equally likely outcomes — entropy 6 bits.
+128 равновозможных исходов — энтропия 7 битов.
 how much does a word of 4 signs over an alphabet of 4 signs cost? a word of 4 signs over an alphabet of 4 signs costs 8 bits.
 сколько бит стоит слово из 5 знаков алфавита в 16 знаков? слово из 5 знаков алфавита в 16 знаков стоит 20 битов.
 a word of 6 signs over an alphabet of 4 signs costs 12 bits.
 слово из 1 знак алфавита в 16 знаков стоит 4 бита.
 how many bits do 4096 equally likely outcomes carry? 4096 equally likely outcomes carry 12 bits.
 
-why is the entropy of 64 equally likely outcomes 6 bits? because 2^6 = 64: 64 equally likely outcomes: entropy 6 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
-чему равна энтропия 2048 равновозможных исходов? 2^11 = 2048. значит 2048 равновозможных исходов: энтропия 11 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
-what is the entropy of 512 equally likely outcomes? 2^9 = 512. therefore 512 equally likely outcomes: entropy 9 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
-почему энтропия 64 равновозможных исхода равна 6 битов? потому что 2^6 = 64: 64 равновозможных исхода: энтропия 6 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
-why is the entropy of 4096 equally likely outcomes 12 bits? because 2^12 = 4096: 4096 equally likely outcomes: entropy 12 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
-чему равна энтропия 512 равновозможных исходов? 2^9 = 512. значит 512 равновозможных исходов: энтропия 9 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
-what is the entropy of 128 equally likely outcomes? 2^7 = 128. therefore 128 equally likely outcomes: entropy 7 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
-почему энтропия 4096 равновозможных исходов равна 12 битов? потому что 2^12 = 4096: 4096 равновозможных исходов: энтропия 12 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
-why is the entropy of 1024 equally likely outcomes 10 bits? because 2^10 = 1024: 1024 equally likely outcomes: entropy 10 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
-чему равна энтропия 128 равновозможных исходов? 2^7 = 128. значит 128 равновозможных исходов: энтропия 7 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
-what is the entropy of 32 equally likely outcomes? 2^5 = 32. therefore 32 equally likely outcomes: entropy 5 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
-почему энтропия 1024 равновозможных исхода равна 10 битов? потому что 2^10 = 1024: 1024 равновозможных исхода: энтропия 10 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
-why is the entropy of 256 equally likely outcomes 8 bits? because 2^8 = 256: 256 equally likely outcomes: entropy 8 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
-чему равна энтропия 32 равновозможных исхода? 2^5 = 32. значит 32 равновозможных исхода: энтропия 5 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
-what is the entropy of 2048 equally likely outcomes? 2^11 = 2048. therefore 2048 equally likely outcomes: entropy 11 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
-почему энтропия 256 равновозможных исходов равна 8 битов? потому что 2^8 = 256: 256 равновозможных исходов: энтропия 8 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+why is the entropy of 64 equally likely outcomes 6 bits? because 2^6 = 64: 64 equally likely outcomes — entropy 6 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+чему равна энтропия 2048 равновозможных исходов? 2048 равновозможных исходов — энтропия 11 битов: 2^11 = 2048. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+what is the entropy of 512 equally likely outcomes? 512 equally likely outcomes — entropy 9 bits: 2^9 = 512. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+почему энтропия 64 равновозможных исхода равна 6 битов? потому что 2^6 = 64: 64 равновозможных исхода — энтропия 6 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+why is the entropy of 4096 equally likely outcomes 12 bits? because 2^12 = 4096: 4096 equally likely outcomes — entropy 12 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+чему равна энтропия 512 равновозможных исходов? 512 равновозможных исходов — энтропия 9 битов: 2^9 = 512. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+what is the entropy of 128 equally likely outcomes? 128 equally likely outcomes — entropy 7 bits: 2^7 = 128. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+почему энтропия 4096 равновозможных исходов равна 12 битов? потому что 2^12 = 4096: 4096 равновозможных исходов — энтропия 12 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+why is the entropy of 1024 equally likely outcomes 10 bits? because 2^10 = 1024: 1024 equally likely outcomes — entropy 10 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+чему равна энтропия 128 равновозможных исходов? 128 равновозможных исходов — энтропия 7 битов: 2^7 = 128. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+what is the entropy of 32 equally likely outcomes? 32 equally likely outcomes — entropy 5 bits: 2^5 = 32. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+почему энтропия 1024 равновозможных исхода равна 10 битов? потому что 2^10 = 1024: 1024 равновозможных исхода — энтропия 10 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+why is the entropy of 256 equally likely outcomes 8 bits? because 2^8 = 256: 256 equally likely outcomes — entropy 8 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+чему равна энтропия 32 равновозможных исхода? 32 равновозможных исхода — энтропия 5 битов: 2^5 = 32. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+what is the entropy of 2048 equally likely outcomes? 2048 equally likely outcomes — entropy 11 bits: 2^11 = 2048. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+почему энтропия 256 равновозможных исходов равна 8 битов? потому что 2^8 = 256: 256 равновозможных исходов — энтропия 8 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
 
 what is the entropy of equally likely outcomes? the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
 разрешимый вопрос — это вопрос, на который процедура отвечает да или нет за конечное число шагов.
@@ -699,9 +699,9 @@ how many bits does a sign of an alphabet of 16 signs cost? a sign of an alphabet
 сколько бит стоит знак алфавита в 64 знака? знак алфавита в 64 знака стоит 6 битов: 2^6 = 64.
 does a sign of an alphabet of 256 signs cost a whole number of bits? yes: 256 = 2^8, a sign costs 8 bits.
 
-512 equally likely outcomes: entropy 9 bits.
-чему равна энтропия 1024 равновозможных исхода? 1024 равновозможных исхода: энтропия 10 битов.
-what is the entropy of 2048 equally likely outcomes? 2048 equally likely outcomes: entropy 11 bits.
+512 equally likely outcomes — entropy 9 bits.
+чему равна энтропия 1024 равновозможных исхода? 1024 равновозможных исхода — энтропия 10 битов.
+what is the entropy of 2048 equally likely outcomes? 2048 equally likely outcomes — entropy 11 bits.
 8192 равновозможных исхода несут 13 битов.
 16384 equally likely outcomes carry 14 bits.
 сколько бит несут 32768 равновозможных исходов? 32768 равновозможных исходов несут 15 битов.
@@ -710,10 +710,10 @@ how many bits do 65536 equally likely outcomes carry? 65536 equally likely outco
 a word of 1 sign over an alphabet of 8 signs costs 3 bits.
 сколько бит стоит слово из 2 знака алфавита в 2 знака? слово из 2 знака алфавита в 2 знака стоит 2 бита.
 how much does a word of 3 signs over an alphabet of 8 signs cost? a word of 3 signs over an alphabet of 8 signs costs 9 bits.
-8192 равновозможных исхода: энтропия 13 битов.
-16384 equally likely outcomes: entropy 14 bits.
-чему равна энтропия 32768 равновозможных исходов? 32768 равновозможных исходов: энтропия 15 битов.
-what is the entropy of 65536 equally likely outcomes? 65536 equally likely outcomes: entropy 16 bits.
+8192 равновозможных исхода — энтропия 13 битов.
+16384 equally likely outcomes — entropy 14 bits.
+чему равна энтропия 32768 равновозможных исходов? 32768 равновозможных исходов — энтропия 15 битов.
+what is the entropy of 65536 equally likely outcomes? 65536 equally likely outcomes — entropy 16 bits.
 1024 равновозможных исхода несут 10 битов.
 2048 equally likely outcomes carry 11 bits.
 сколько бит несут 4096 равновозможных исходов? 4096 равновозможных исходов несут 12 битов.
@@ -722,10 +722,10 @@ how many bits do 8192 equally likely outcomes carry? 8192 equally likely outcome
 a word of 6 signs over an alphabet of 2 signs costs 6 bits.
 сколько бит стоит слово из 1 знак алфавита в 8 знаков? слово из 1 знак алфавита в 8 знаков стоит 3 бита.
 how much does a word of 6 signs over an alphabet of 2 signs cost? a word of 6 signs over an alphabet of 2 signs costs 6 bits.
-1024 равновозможных исхода: энтропия 10 битов.
-2048 equally likely outcomes: entropy 11 bits.
-чему равна энтропия 4096 равновозможных исходов? 4096 равновозможных исходов: энтропия 12 битов.
-what is the entropy of 8192 equally likely outcomes? 8192 equally likely outcomes: entropy 13 bits.
+1024 равновозможных исхода — энтропия 10 битов.
+2048 equally likely outcomes — entropy 11 bits.
+чему равна энтропия 4096 равновозможных исходов? 4096 равновозможных исходов — энтропия 12 битов.
+what is the entropy of 8192 equally likely outcomes? 8192 equally likely outcomes — entropy 13 bits.
 32768 равновозможных исходов несут 15 битов.
 65536 equally likely outcomes carry 16 bits.
 сколько бит несут 512 равновозможных исходов? 512 равновозможных исходов несут 9 битов.
@@ -734,10 +734,10 @@ how many bits do 1024 equally likely outcomes carry? 1024 equally likely outcome
 a word of 3 signs over an alphabet of 8 signs costs 9 bits.
 сколько бит стоит слово из 4 знака алфавита в 2 знака? слово из 4 знака алфавита в 2 знака стоит 4 бита.
 how much does a word of 5 signs over an alphabet of 8 signs cost? a word of 5 signs over an alphabet of 8 signs costs 15 bits.
-32768 равновозможных исходов: энтропия 15 битов.
-65536 equally likely outcomes: entropy 16 bits.
-чему равна энтропия 512 равновозможных исходов? 512 равновозможных исходов: энтропия 9 битов.
-what is the entropy of 1024 equally likely outcomes? 1024 equally likely outcomes: entropy 10 bits.
+32768 равновозможных исходов — энтропия 15 битов.
+65536 equally likely outcomes — entropy 16 bits.
+чему равна энтропия 512 равновозможных исходов? 512 равновозможных исходов — энтропия 9 битов.
+what is the entropy of 1024 equally likely outcomes? 1024 equally likely outcomes — entropy 10 bits.
 4096 равновозможных исходов несут 12 битов.
 8192 equally likely outcomes carry 13 bits.
 сколько бит несут 16384 равновозможных исхода? 16384 равновозможных исхода несут 14 битов.
@@ -746,10 +746,10 @@ how many bits do 32768 equally likely outcomes carry? 32768 equally likely outco
 a word of 6 signs over an alphabet of 2 signs costs 6 bits.
 сколько бит стоит слово из 1 знак алфавита в 8 знаков? слово из 1 знак алфавита в 8 знаков стоит 3 бита.
 how much does a word of 2 signs over an alphabet of 2 signs cost? a word of 2 signs over an alphabet of 2 signs costs 2 bits.
-4096 равновозможных исходов: энтропия 12 битов.
-8192 equally likely outcomes: entropy 13 bits.
-чему равна энтропия 16384 равновозможных исхода? 16384 равновозможных исхода: энтропия 14 битов.
-what is the entropy of 32768 equally likely outcomes? 32768 equally likely outcomes: entropy 15 bits.
+4096 равновозможных исходов — энтропия 12 битов.
+8192 equally likely outcomes — entropy 13 bits.
+чему равна энтропия 16384 равновозможных исхода? 16384 равновозможных исхода — энтропия 14 битов.
+what is the entropy of 32768 equally likely outcomes? 32768 equally likely outcomes — entropy 15 bits.
 512 равновозможных исходов несут 9 битов.
 1024 equally likely outcomes carry 10 bits.
 сколько бит несут 2048 равновозможных исходов? 2048 равновозможных исходов несут 11 битов.
@@ -758,10 +758,10 @@ how many bits do 4096 equally likely outcomes carry? 4096 equally likely outcome
 a word of 5 signs over an alphabet of 8 signs costs 15 bits.
 сколько бит стоит слово из 6 знаков алфавита в 2 знака? слово из 6 знаков алфавита в 2 знака стоит 6 битов.
 how much does a word of 1 sign over an alphabet of 8 signs cost? a word of 1 sign over an alphabet of 8 signs costs 3 bits.
-512 равновозможных исходов: энтропия 9 битов.
-1024 equally likely outcomes: entropy 10 bits.
-чему равна энтропия 2048 равновозможных исходов? 2048 равновозможных исходов: энтропия 11 битов.
-what is the entropy of 4096 equally likely outcomes? 4096 equally likely outcomes: entropy 12 bits.
+512 равновозможных исходов — энтропия 9 битов.
+1024 equally likely outcomes — entropy 10 bits.
+чему равна энтропия 2048 равновозможных исходов? 2048 равновозможных исходов — энтропия 11 битов.
+what is the entropy of 4096 equally likely outcomes? 4096 equally likely outcomes — entropy 12 bits.
 16384 равновозможных исхода несут 14 битов.
 32768 equally likely outcomes carry 15 bits.
 сколько бит несут 65536 равновозможных исходов? 65536 равновозможных исходов несут 16 битов.
@@ -770,10 +770,10 @@ how many bits do 512 equally likely outcomes carry? 512 equally likely outcomes 
 a word of 2 signs over an alphabet of 2 signs costs 2 bits.
 сколько бит стоит слово из 3 знака алфавита в 8 знаков? слово из 3 знака алфавита в 8 знаков стоит 9 битов.
 how much does a word of 4 signs over an alphabet of 2 signs cost? a word of 4 signs over an alphabet of 2 signs costs 4 bits.
-16384 равновозможных исхода: энтропия 14 битов.
-32768 equally likely outcomes: entropy 15 bits.
-чему равна энтропия 65536 равновозможных исходов? 65536 равновозможных исходов: энтропия 16 битов.
-what is the entropy of 512 equally likely outcomes? 512 equally likely outcomes: entropy 9 bits.
+16384 равновозможных исхода — энтропия 14 битов.
+32768 equally likely outcomes — entropy 15 bits.
+чему равна энтропия 65536 равновозможных исходов? 65536 равновозможных исходов — энтропия 16 битов.
+what is the entropy of 512 equally likely outcomes? 512 equally likely outcomes — entropy 9 bits.
 2048 равновозможных исходов несут 11 битов.
 4096 equally likely outcomes carry 12 bits.
 сколько бит несут 8192 равновозможных исхода? 8192 равновозможных исхода несут 13 битов.
@@ -782,10 +782,10 @@ how many bits do 16384 equally likely outcomes carry? 16384 equally likely outco
 a word of 1 sign over an alphabet of 8 signs costs 3 bits.
 сколько бит стоит слово из 6 знаков алфавита в 2 знака? слово из 6 знаков алфавита в 2 знака стоит 6 битов.
 how much does a word of 1 sign over an alphabet of 8 signs cost? a word of 1 sign over an alphabet of 8 signs costs 3 bits.
-2048 равновозможных исходов: энтропия 11 битов.
-4096 equally likely outcomes: entropy 12 bits.
-чему равна энтропия 8192 равновозможных исхода? 8192 равновозможных исхода: энтропия 13 битов.
-what is the entropy of 16384 equally likely outcomes? 16384 equally likely outcomes: entropy 14 bits.
+2048 равновозможных исходов — энтропия 11 битов.
+4096 equally likely outcomes — entropy 12 bits.
+чему равна энтропия 8192 равновозможных исхода? 8192 равновозможных исхода — энтропия 13 битов.
+what is the entropy of 16384 equally likely outcomes? 16384 equally likely outcomes — entropy 14 bits.
 65536 равновозможных исходов несут 16 битов.
 512 equally likely outcomes carry 9 bits.
 сколько бит несут 1024 равновозможных исхода? 1024 равновозможных исхода несут 10 битов.
@@ -794,24 +794,24 @@ how many bits do 2048 equally likely outcomes carry? 2048 equally likely outcome
 a word of 4 signs over an alphabet of 2 signs costs 4 bits.
 сколько бит стоит слово из 5 знаков алфавита в 8 знаков? слово из 5 знаков алфавита в 8 знаков стоит 15 битов.
 how much does a word of 6 signs over an alphabet of 2 signs cost? a word of 6 signs over an alphabet of 2 signs costs 6 bits.
-65536 равновозможных исходов: энтропия 16 битов.
+65536 равновозможных исходов — энтропия 16 битов.
 
-почему энтропия 8192 равновозможных исхода равна 13 битов? потому что 2^13 = 8192: 8192 равновозможных исхода: энтропия 13 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
-what is the entropy of 4096 equally likely outcomes? 2^12 = 4096. therefore 4096 equally likely outcomes: entropy 12 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
-чему равна энтропия 1024 равновозможных исхода? 2^10 = 1024. значит 1024 равновозможных исхода: энтропия 10 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
-why is the entropy of 512 equally likely outcomes 9 bits? because 2^9 = 512: 512 equally likely outcomes: entropy 9 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
-почему энтропия 32768 равновозможных исходов равна 15 битов? потому что 2^15 = 32768: 32768 равновозможных исходов: энтропия 15 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
-what is the entropy of 16384 equally likely outcomes? 2^14 = 16384. therefore 16384 equally likely outcomes: entropy 14 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
-чему равна энтропия 4096 равновозможных исходов? 2^12 = 4096. значит 4096 равновозможных исходов: энтропия 12 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
-why is the entropy of 2048 equally likely outcomes 11 bits? because 2^11 = 2048: 2048 equally likely outcomes: entropy 11 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
-почему энтропия 512 равновозможных исходов равна 9 битов? потому что 2^9 = 512: 512 равновозможных исходов: энтропия 9 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
-what is the entropy of 65536 equally likely outcomes? 2^16 = 65536. therefore 65536 equally likely outcomes: entropy 16 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
-чему равна энтропия 16384 равновозможных исхода? 2^14 = 16384. значит 16384 равновозможных исхода: энтропия 14 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
-why is the entropy of 8192 equally likely outcomes 13 bits? because 2^13 = 8192: 8192 equally likely outcomes: entropy 13 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
-почему энтропия 2048 равновозможных исходов равна 11 битов? потому что 2^11 = 2048: 2048 равновозможных исходов: энтропия 11 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
-what is the entropy of 1024 equally likely outcomes? 2^10 = 1024. therefore 1024 equally likely outcomes: entropy 10 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
-чему равна энтропия 65536 равновозможных исходов? 2^16 = 65536. значит 65536 равновозможных исходов: энтропия 16 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
-why is the entropy of 32768 equally likely outcomes 15 bits? because 2^15 = 32768: 32768 equally likely outcomes: entropy 15 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+почему энтропия 8192 равновозможных исхода равна 13 битов? потому что 2^13 = 8192: 8192 равновозможных исхода — энтропия 13 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+what is the entropy of 4096 equally likely outcomes? 4096 equally likely outcomes — entropy 12 bits: 2^12 = 4096. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+чему равна энтропия 1024 равновозможных исхода? 1024 равновозможных исхода — энтропия 10 битов: 2^10 = 1024. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+why is the entropy of 512 equally likely outcomes 9 bits? because 2^9 = 512: 512 equally likely outcomes — entropy 9 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+почему энтропия 32768 равновозможных исходов равна 15 битов? потому что 2^15 = 32768: 32768 равновозможных исходов — энтропия 15 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+what is the entropy of 16384 equally likely outcomes? 16384 equally likely outcomes — entropy 14 bits: 2^14 = 16384. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+чему равна энтропия 4096 равновозможных исходов? 4096 равновозможных исходов — энтропия 12 битов: 2^12 = 4096. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+why is the entropy of 2048 equally likely outcomes 11 bits? because 2^11 = 2048: 2048 equally likely outcomes — entropy 11 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+почему энтропия 512 равновозможных исходов равна 9 битов? потому что 2^9 = 512: 512 равновозможных исходов — энтропия 9 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+what is the entropy of 65536 equally likely outcomes? 65536 equally likely outcomes — entropy 16 bits: 2^16 = 65536. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+чему равна энтропия 16384 равновозможных исхода? 16384 равновозможных исхода — энтропия 14 битов: 2^14 = 16384. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+why is the entropy of 8192 equally likely outcomes 13 bits? because 2^13 = 8192: 8192 equally likely outcomes — entropy 13 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+почему энтропия 2048 равновозможных исходов равна 11 битов? потому что 2^11 = 2048: 2048 равновозможных исходов — энтропия 11 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+what is the entropy of 1024 equally likely outcomes? 1024 equally likely outcomes — entropy 10 bits: 2^10 = 1024. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+чему равна энтропия 65536 равновозможных исходов? 65536 равновозможных исходов — энтропия 16 битов: 2^16 = 65536. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+why is the entropy of 32768 equally likely outcomes 15 bits? because 2^15 = 32768: 32768 equally likely outcomes — entropy 15 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
 
 конечный автомат — это множество состояний с переходами, и вход ведёт от состояния к состоянию по ним.
 what is a bit? a bit is the information that tells apart two equally likely outcomes.
@@ -1035,118 +1035,118 @@ how many bits does a sign of an alphabet of 32 signs cost? a sign of an alphabet
 стоит ли знак алфавита в 5 знаков целое число бит? нет: 5 знаков — это не степень двойки.
 
 слово из 5 знаков алфавита в 4 знака стоит 10 битов.
-16384 equally likely outcomes: entropy 14 bits.
+16384 equally likely outcomes — entropy 14 bits.
 сколько бит несут 65536 равновозможных исходов? 65536 равновозможных исходов несут 16 битов.
 how much does a word of 3 signs over an alphabet of 4 signs cost? a word of 3 signs over an alphabet of 4 signs costs 6 bits.
 524288 равновозможных исходов несут 19 битов.
 a word of 6 signs over an alphabet of 16 signs costs 24 bits.
-чему равна энтропия 8192 равновозможных исхода? 8192 равновозможных исхода: энтропия 13 битов.
+чему равна энтропия 8192 равновозможных исхода? 8192 равновозможных исхода — энтропия 13 битов.
 how many bits do 32768 equally likely outcomes carry? 32768 equally likely outcomes carry 15 bits.
-65536 равновозможных исходов: энтропия 16 битов.
+65536 равновозможных исходов — энтропия 16 битов.
 262144 equally likely outcomes carry 18 bits.
 сколько бит стоит слово из 5 знаков алфавита в 4 знака? слово из 5 знаков алфавита в 4 знака стоит 10 битов.
-what is the entropy of 1048576 equally likely outcomes? 1048576 equally likely outcomes: entropy 20 bits.
+what is the entropy of 1048576 equally likely outcomes? 1048576 equally likely outcomes — entropy 20 bits.
 слово из 6 знаков алфавита в 16 знаков стоит 24 бита.
-32768 equally likely outcomes: entropy 15 bits.
+32768 equally likely outcomes — entropy 15 bits.
 сколько бит несут 131072 равновозможных исхода? 131072 равновозможных исхода несут 17 битов.
 how much does a word of 4 signs over an alphabet of 16 signs cost? a word of 4 signs over an alphabet of 16 signs costs 16 bits.
 1048576 равновозможных исходов несут 20 битов.
 a word of 5 signs over an alphabet of 4 signs costs 10 bits.
-чему равна энтропия 16384 равновозможных исхода? 16384 равновозможных исхода: энтропия 14 битов.
+чему равна энтропия 16384 равновозможных исхода? 16384 равновозможных исхода — энтропия 14 битов.
 how many bits do 65536 equally likely outcomes carry? 65536 equally likely outcomes carry 16 bits.
-131072 равновозможных исхода: энтропия 17 битов.
+131072 равновозможных исхода — энтропия 17 битов.
 524288 equally likely outcomes carry 19 bits.
 сколько бит стоит слово из 6 знаков алфавита в 16 знаков? слово из 6 знаков алфавита в 16 знаков стоит 24 бита.
-what is the entropy of 8192 equally likely outcomes? 8192 equally likely outcomes: entropy 13 bits.
+what is the entropy of 8192 equally likely outcomes? 8192 equally likely outcomes — entropy 13 bits.
 слово из 1 знак алфавита в 4 знака стоит 2 бита.
-65536 equally likely outcomes: entropy 16 bits.
+65536 equally likely outcomes — entropy 16 bits.
 сколько бит несут 262144 равновозможных исхода? 262144 равновозможных исхода несут 18 битов.
 how much does a word of 5 signs over an alphabet of 4 signs cost? a word of 5 signs over an alphabet of 4 signs costs 10 bits.
 8192 равновозможных исхода несут 13 битов.
 a word of 6 signs over an alphabet of 16 signs costs 24 bits.
-чему равна энтропия 32768 равновозможных исходов? 32768 равновозможных исходов: энтропия 15 битов.
+чему равна энтропия 32768 равновозможных исходов? 32768 равновозможных исходов — энтропия 15 битов.
 how many bits do 131072 equally likely outcomes carry? 131072 equally likely outcomes carry 17 bits.
-262144 равновозможных исхода: энтропия 18 битов.
+262144 равновозможных исхода — энтропия 18 битов.
 1048576 equally likely outcomes carry 20 bits.
 сколько бит стоит слово из 5 знаков алфавита в 4 знака? слово из 5 знаков алфавита в 4 знака стоит 10 битов.
-what is the entropy of 16384 equally likely outcomes? 16384 equally likely outcomes: entropy 14 bits.
+what is the entropy of 16384 equally likely outcomes? 16384 equally likely outcomes — entropy 14 bits.
 слово из 2 знака алфавита в 16 знаков стоит 8 битов.
-131072 equally likely outcomes: entropy 17 bits.
+131072 equally likely outcomes — entropy 17 bits.
 сколько бит несут 524288 равновозможных исходов? 524288 равновозможных исходов несут 19 битов.
 how much does a word of 6 signs over an alphabet of 16 signs cost? a word of 6 signs over an alphabet of 16 signs costs 24 bits.
 16384 равновозможных исхода несут 14 битов.
 a word of 1 sign over an alphabet of 4 signs costs 2 bits.
-чему равна энтропия 65536 равновозможных исходов? 65536 равновозможных исходов: энтропия 16 битов.
+чему равна энтропия 65536 равновозможных исходов? 65536 равновозможных исходов — энтропия 16 битов.
 how many bits do 262144 equally likely outcomes carry? 262144 equally likely outcomes carry 18 bits.
-524288 равновозможных исходов: энтропия 19 битов.
+524288 равновозможных исходов — энтропия 19 битов.
 8192 equally likely outcomes carry 13 bits.
 сколько бит стоит слово из 6 знаков алфавита в 16 знаков? слово из 6 знаков алфавита в 16 знаков стоит 24 бита.
-what is the entropy of 32768 equally likely outcomes? 32768 equally likely outcomes: entropy 15 bits.
+what is the entropy of 32768 equally likely outcomes? 32768 equally likely outcomes — entropy 15 bits.
 слово из 3 знака алфавита в 4 знака стоит 6 битов.
-262144 equally likely outcomes: entropy 18 bits.
+262144 equally likely outcomes — entropy 18 bits.
 сколько бит несут 1048576 равновозможных исходов? 1048576 равновозможных исходов несут 20 битов.
 how much does a word of 5 signs over an alphabet of 4 signs cost? a word of 5 signs over an alphabet of 4 signs costs 10 bits.
 32768 равновозможных исходов несут 15 битов.
 a word of 2 signs over an alphabet of 16 signs costs 8 bits.
-чему равна энтропия 131072 равновозможных исхода? 131072 равновозможных исхода: энтропия 17 битов.
+чему равна энтропия 131072 равновозможных исхода? 131072 равновозможных исхода — энтропия 17 битов.
 how many bits do 524288 equally likely outcomes carry? 524288 equally likely outcomes carry 19 bits.
-1048576 равновозможных исходов: энтропия 20 битов.
+1048576 равновозможных исходов — энтропия 20 битов.
 16384 equally likely outcomes carry 14 bits.
 сколько бит стоит слово из 1 знак алфавита в 4 знака? слово из 1 знак алфавита в 4 знака стоит 2 бита.
-what is the entropy of 65536 equally likely outcomes? 65536 equally likely outcomes: entropy 16 bits.
+what is the entropy of 65536 equally likely outcomes? 65536 equally likely outcomes — entropy 16 bits.
 слово из 4 знака алфавита в 16 знаков стоит 16 битов.
-524288 equally likely outcomes: entropy 19 bits.
+524288 equally likely outcomes — entropy 19 bits.
 сколько бит несут 8192 равновозможных исхода? 8192 равновозможных исхода несут 13 битов.
 how much does a word of 6 signs over an alphabet of 16 signs cost? a word of 6 signs over an alphabet of 16 signs costs 24 bits.
 65536 равновозможных исходов несут 16 битов.
 a word of 3 signs over an alphabet of 4 signs costs 6 bits.
-чему равна энтропия 262144 равновозможных исхода? 262144 равновозможных исхода: энтропия 18 битов.
+чему равна энтропия 262144 равновозможных исхода? 262144 равновозможных исхода — энтропия 18 битов.
 how many bits do 1048576 equally likely outcomes carry? 1048576 equally likely outcomes carry 20 bits.
-8192 равновозможных исхода: энтропия 13 битов.
+8192 равновозможных исхода — энтропия 13 битов.
 32768 equally likely outcomes carry 15 bits.
 сколько бит стоит слово из 2 знака алфавита в 16 знаков? слово из 2 знака алфавита в 16 знаков стоит 8 битов.
-what is the entropy of 131072 equally likely outcomes? 131072 equally likely outcomes: entropy 17 bits.
+what is the entropy of 131072 equally likely outcomes? 131072 equally likely outcomes — entropy 17 bits.
 слово из 5 знаков алфавита в 4 знака стоит 10 битов.
-1048576 equally likely outcomes: entropy 20 bits.
+1048576 equally likely outcomes — entropy 20 bits.
 сколько бит несут 16384 равновозможных исхода? 16384 равновозможных исхода несут 14 битов.
 how much does a word of 1 sign over an alphabet of 4 signs cost? a word of 1 sign over an alphabet of 4 signs costs 2 bits.
 131072 равновозможных исхода несут 17 битов.
 a word of 4 signs over an alphabet of 16 signs costs 16 bits.
-чему равна энтропия 524288 равновозможных исходов? 524288 равновозможных исходов: энтропия 19 битов.
+чему равна энтропия 524288 равновозможных исходов? 524288 равновозможных исходов — энтропия 19 битов.
 how many bits do 8192 equally likely outcomes carry? 8192 equally likely outcomes carry 13 bits.
-16384 равновозможных исхода: энтропия 14 битов.
+16384 равновозможных исхода — энтропия 14 битов.
 65536 equally likely outcomes carry 16 bits.
 сколько бит стоит слово из 3 знака алфавита в 4 знака? слово из 3 знака алфавита в 4 знака стоит 6 битов.
-what is the entropy of 262144 equally likely outcomes? 262144 equally likely outcomes: entropy 18 bits.
+what is the entropy of 262144 equally likely outcomes? 262144 equally likely outcomes — entropy 18 bits.
 слово из 6 знаков алфавита в 16 знаков стоит 24 бита.
-8192 equally likely outcomes: entropy 13 bits.
+8192 equally likely outcomes — entropy 13 bits.
 сколько бит несут 32768 равновозможных исходов? 32768 равновозможных исходов несут 15 битов.
 how much does a word of 2 signs over an alphabet of 16 signs cost? a word of 2 signs over an alphabet of 16 signs costs 8 bits.
 262144 равновозможных исхода несут 18 битов.
 a word of 5 signs over an alphabet of 4 signs costs 10 bits.
-чему равна энтропия 1048576 равновозможных исходов? 1048576 равновозможных исходов: энтропия 20 битов.
+чему равна энтропия 1048576 равновозможных исходов? 1048576 равновозможных исходов — энтропия 20 битов.
 how many bits do 16384 equally likely outcomes carry? 16384 equally likely outcomes carry 14 bits.
-32768 равновозможных исходов: энтропия 15 битов.
+32768 равновозможных исходов — энтропия 15 битов.
 131072 equally likely outcomes carry 17 bits.
 сколько бит стоит слово из 4 знака алфавита в 16 знаков? слово из 4 знака алфавита в 16 знаков стоит 16 битов.
-what is the entropy of 524288 equally likely outcomes? 524288 equally likely outcomes: entropy 19 bits.
+what is the entropy of 524288 equally likely outcomes? 524288 equally likely outcomes — entropy 19 bits.
 
-what is the entropy of 32768 equally likely outcomes? 2^15 = 32768. therefore 32768 equally likely outcomes: entropy 15 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
-чему равна энтропия 32768 равновозможных исходов? 2^15 = 32768. значит 32768 равновозможных исходов: энтропия 15 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
-why is the entropy of 65536 equally likely outcomes 16 bits? because 2^16 = 65536: 65536 equally likely outcomes: entropy 16 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
-почему энтропия 65536 равновозможных исходов равна 16 битов? потому что 2^16 = 65536: 65536 равновозможных исходов: энтропия 16 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
-what is the entropy of 131072 equally likely outcomes? 2^17 = 131072. therefore 131072 equally likely outcomes: entropy 17 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
-чему равна энтропия 131072 равновозможных исхода? 2^17 = 131072. значит 131072 равновозможных исхода: энтропия 17 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
-why is the entropy of 262144 equally likely outcomes 18 bits? because 2^18 = 262144: 262144 equally likely outcomes: entropy 18 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
-почему энтропия 262144 равновозможных исхода равна 18 битов? потому что 2^18 = 262144: 262144 равновозможных исхода: энтропия 18 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
-what is the entropy of 524288 equally likely outcomes? 2^19 = 524288. therefore 524288 equally likely outcomes: entropy 19 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
-чему равна энтропия 524288 равновозможных исходов? 2^19 = 524288. значит 524288 равновозможных исходов: энтропия 19 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
-why is the entropy of 1048576 equally likely outcomes 20 bits? because 2^20 = 1048576: 1048576 equally likely outcomes: entropy 20 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
-почему энтропия 1048576 равновозможных исходов равна 20 битов? потому что 2^20 = 1048576: 1048576 равновозможных исходов: энтропия 20 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
-what is the entropy of 8192 equally likely outcomes? 2^13 = 8192. therefore 8192 equally likely outcomes: entropy 13 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
-чему равна энтропия 8192 равновозможных исхода? 2^13 = 8192. значит 8192 равновозможных исхода: энтропия 13 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
-why is the entropy of 16384 equally likely outcomes 14 bits? because 2^14 = 16384: 16384 equally likely outcomes: entropy 14 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
-почему энтропия 16384 равновозможных исхода равна 14 битов? потому что 2^14 = 16384: 16384 равновозможных исхода: энтропия 14 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+what is the entropy of 32768 equally likely outcomes? 32768 equally likely outcomes — entropy 15 bits: 2^15 = 32768. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+чему равна энтропия 32768 равновозможных исходов? 32768 равновозможных исходов — энтропия 15 битов: 2^15 = 32768. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+why is the entropy of 65536 equally likely outcomes 16 bits? because 2^16 = 65536: 65536 equally likely outcomes — entropy 16 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+почему энтропия 65536 равновозможных исходов равна 16 битов? потому что 2^16 = 65536: 65536 равновозможных исходов — энтропия 16 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+what is the entropy of 131072 equally likely outcomes? 131072 equally likely outcomes — entropy 17 bits: 2^17 = 131072. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+чему равна энтропия 131072 равновозможных исхода? 131072 равновозможных исхода — энтропия 17 битов: 2^17 = 131072. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+why is the entropy of 262144 equally likely outcomes 18 bits? because 2^18 = 262144: 262144 equally likely outcomes — entropy 18 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+почему энтропия 262144 равновозможных исхода равна 18 битов? потому что 2^18 = 262144: 262144 равновозможных исхода — энтропия 18 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+what is the entropy of 524288 equally likely outcomes? 524288 equally likely outcomes — entropy 19 bits: 2^19 = 524288. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+чему равна энтропия 524288 равновозможных исходов? 524288 равновозможных исходов — энтропия 19 битов: 2^19 = 524288. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+why is the entropy of 1048576 equally likely outcomes 20 bits? because 2^20 = 1048576: 1048576 equally likely outcomes — entropy 20 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+почему энтропия 1048576 равновозможных исходов равна 20 битов? потому что 2^20 = 1048576: 1048576 равновозможных исходов — энтропия 20 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+what is the entropy of 8192 equally likely outcomes? 8192 equally likely outcomes — entropy 13 bits: 2^13 = 8192. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+чему равна энтропия 8192 равновозможных исхода? 8192 равновозможных исхода — энтропия 13 битов: 2^13 = 8192. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+why is the entropy of 16384 equally likely outcomes 14 bits? because 2^14 = 16384: 16384 equally likely outcomes — entropy 14 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+почему энтропия 16384 равновозможных исхода равна 14 битов? потому что 2^14 = 16384: 16384 равновозможных исхода — энтропия 14 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
 
 a bit is the information that tells apart two equally likely outcomes.
 бит — это информация, различающая два равновозможных исхода.
@@ -1372,116 +1372,116 @@ does a sign of an alphabet of 5 signs cost a whole number of bits? no: 5 is not 
 262144 равновозможных исхода несут 18 битов.
 how much does a word of 6 signs over an alphabet of 8 signs cost? a word of 6 signs over an alphabet of 8 signs costs 18 bits.
 сколько бит несут 2097152 равновозможных исхода? 2097152 равновозможных исхода несут 21 бит.
-4194304 equally likely outcomes: entropy 22 bits.
+4194304 equally likely outcomes — entropy 22 bits.
 слово из 5 знаков алфавита в 2 знака стоит 5 битов.
-what is the entropy of 131072 equally likely outcomes? 131072 equally likely outcomes: entropy 17 bits.
+what is the entropy of 131072 equally likely outcomes? 131072 equally likely outcomes — entropy 17 bits.
 сколько бит стоит слово из 6 знаков алфавита в 8 знаков? слово из 6 знаков алфавита в 8 знаков стоит 18 битов.
 2097152 equally likely outcomes carry 21 bits.
-4194304 равновозможных исхода: энтропия 22 бита.
+4194304 равновозможных исхода — энтропия 22 бита.
 how many bits do 16777216 equally likely outcomes carry? 16777216 equally likely outcomes carry 24 bits.
-чему равна энтропия 131072 равновозможных исхода? 131072 равновозможных исхода: энтропия 17 битов.
+чему равна энтропия 131072 равновозможных исхода? 131072 равновозможных исхода — энтропия 17 битов.
 a word of 6 signs over an alphabet of 8 signs costs 18 bits.
 2097152 равновозможных исхода несут 21 бит.
 how much does a word of 3 signs over an alphabet of 2 signs cost? a word of 3 signs over an alphabet of 2 signs costs 3 bits.
 сколько бит несут 16777216 равновозможных исходов? 16777216 равновозможных исходов несут 24 бита.
-131072 equally likely outcomes: entropy 17 bits.
+131072 equally likely outcomes — entropy 17 bits.
 слово из 6 знаков алфавита в 8 знаков стоит 18 битов.
-what is the entropy of 1048576 equally likely outcomes? 1048576 equally likely outcomes: entropy 20 bits.
+what is the entropy of 1048576 equally likely outcomes? 1048576 equally likely outcomes — entropy 20 bits.
 сколько бит стоит слово из 3 знака алфавита в 2 знака? слово из 3 знака алфавита в 2 знака стоит 3 бита.
 16777216 equally likely outcomes carry 24 bits.
-131072 равновозможных исхода: энтропия 17 битов.
+131072 равновозможных исхода — энтропия 17 битов.
 how many bits do 524288 equally likely outcomes carry? 524288 equally likely outcomes carry 19 bits.
-чему равна энтропия 1048576 равновозможных исходов? 1048576 равновозможных исходов: энтропия 20 битов.
+чему равна энтропия 1048576 равновозможных исходов? 1048576 равновозможных исходов — энтропия 20 битов.
 a word of 3 signs over an alphabet of 2 signs costs 3 bits.
 16777216 равновозможных исходов несут 24 бита.
 how much does a word of 4 signs over an alphabet of 8 signs cost? a word of 4 signs over an alphabet of 8 signs costs 12 bits.
 сколько бит несут 524288 равновозможных исходов? 524288 равновозможных исходов несут 19 битов.
-1048576 equally likely outcomes: entropy 20 bits.
+1048576 equally likely outcomes — entropy 20 bits.
 слово из 3 знака алфавита в 2 знака стоит 3 бита.
-what is the entropy of 8388608 equally likely outcomes? 8388608 equally likely outcomes: entropy 23 bits.
+what is the entropy of 8388608 equally likely outcomes? 8388608 equally likely outcomes — entropy 23 bits.
 сколько бит стоит слово из 4 знака алфавита в 8 знаков? слово из 4 знака алфавита в 8 знаков стоит 12 битов.
 524288 equally likely outcomes carry 19 bits.
-1048576 равновозможных исходов: энтропия 20 битов.
+1048576 равновозможных исходов — энтропия 20 битов.
 how many bits do 4194304 equally likely outcomes carry? 4194304 equally likely outcomes carry 22 bits.
-чему равна энтропия 8388608 равновозможных исходов? 8388608 равновозможных исходов: энтропия 23 бита.
+чему равна энтропия 8388608 равновозможных исходов? 8388608 равновозможных исходов — энтропия 23 бита.
 a word of 4 signs over an alphabet of 8 signs costs 12 bits.
 524288 равновозможных исходов несут 19 битов.
 how much does a word of 1 sign over an alphabet of 2 signs cost? a word of 1 sign over an alphabet of 2 signs costs 1 bit.
 сколько бит несут 4194304 равновозможных исхода? 4194304 равновозможных исхода несут 22 бита.
-8388608 equally likely outcomes: entropy 23 bits.
+8388608 equally likely outcomes — entropy 23 bits.
 слово из 4 знака алфавита в 8 знаков стоит 12 битов.
-what is the entropy of 262144 equally likely outcomes? 262144 equally likely outcomes: entropy 18 bits.
+what is the entropy of 262144 equally likely outcomes? 262144 equally likely outcomes — entropy 18 bits.
 сколько бит стоит слово из 1 знак алфавита в 2 знака? слово из 1 знак алфавита в 2 знака стоит 1 бит.
 4194304 equally likely outcomes carry 22 bits.
-8388608 равновозможных исходов: энтропия 23 бита.
+8388608 равновозможных исходов — энтропия 23 бита.
 how many bits do 131072 equally likely outcomes carry? 131072 equally likely outcomes carry 17 bits.
-чему равна энтропия 262144 равновозможных исхода? 262144 равновозможных исхода: энтропия 18 битов.
+чему равна энтропия 262144 равновозможных исхода? 262144 равновозможных исхода — энтропия 18 битов.
 a word of 1 sign over an alphabet of 2 signs costs 1 bit.
 4194304 равновозможных исхода несут 22 бита.
 how much does a word of 4 signs over an alphabet of 8 signs cost? a word of 4 signs over an alphabet of 8 signs costs 12 bits.
 сколько бит несут 131072 равновозможных исхода? 131072 равновозможных исхода несут 17 битов.
-262144 equally likely outcomes: entropy 18 bits.
+262144 equally likely outcomes — entropy 18 bits.
 слово из 1 знак алфавита в 2 знака стоит 1 бит.
-what is the entropy of 2097152 equally likely outcomes? 2097152 equally likely outcomes: entropy 21 bits.
+what is the entropy of 2097152 equally likely outcomes? 2097152 equally likely outcomes — entropy 21 bits.
 сколько бит стоит слово из 4 знака алфавита в 8 знаков? слово из 4 знака алфавита в 8 знаков стоит 12 битов.
 131072 equally likely outcomes carry 17 bits.
-262144 равновозможных исхода: энтропия 18 битов.
+262144 равновозможных исхода — энтропия 18 битов.
 how many bits do 1048576 equally likely outcomes carry? 1048576 equally likely outcomes carry 20 bits.
-чему равна энтропия 2097152 равновозможных исхода? 2097152 равновозможных исхода: энтропия 21 бит.
+чему равна энтропия 2097152 равновозможных исхода? 2097152 равновозможных исхода — энтропия 21 бит.
 a word of 4 signs over an alphabet of 8 signs costs 12 bits.
 131072 равновозможных исхода несут 17 битов.
 how much does a word of 5 signs over an alphabet of 2 signs cost? a word of 5 signs over an alphabet of 2 signs costs 5 bits.
 сколько бит несут 1048576 равновозможных исходов? 1048576 равновозможных исходов несут 20 битов.
-2097152 equally likely outcomes: entropy 21 bits.
+2097152 equally likely outcomes — entropy 21 bits.
 слово из 4 знака алфавита в 8 знаков стоит 12 битов.
-what is the entropy of 16777216 equally likely outcomes? 16777216 equally likely outcomes: entropy 24 bits.
+what is the entropy of 16777216 equally likely outcomes? 16777216 equally likely outcomes — entropy 24 bits.
 сколько бит стоит слово из 5 знаков алфавита в 2 знака? слово из 5 знаков алфавита в 2 знака стоит 5 битов.
 1048576 equally likely outcomes carry 20 bits.
-2097152 равновозможных исхода: энтропия 21 бит.
+2097152 равновозможных исхода — энтропия 21 бит.
 how many bits do 8388608 equally likely outcomes carry? 8388608 equally likely outcomes carry 23 bits.
-чему равна энтропия 16777216 равновозможных исходов? 16777216 равновозможных исходов: энтропия 24 бита.
+чему равна энтропия 16777216 равновозможных исходов? 16777216 равновозможных исходов — энтропия 24 бита.
 a word of 5 signs over an alphabet of 2 signs costs 5 bits.
 1048576 равновозможных исходов несут 20 битов.
 how much does a word of 2 signs over an alphabet of 8 signs cost? a word of 2 signs over an alphabet of 8 signs costs 6 bits.
 сколько бит несут 8388608 равновозможных исходов? 8388608 равновозможных исходов несут 23 бита.
-16777216 equally likely outcomes: entropy 24 bits.
+16777216 equally likely outcomes — entropy 24 bits.
 слово из 5 знаков алфавита в 2 знака стоит 5 битов.
-what is the entropy of 524288 equally likely outcomes? 524288 equally likely outcomes: entropy 19 bits.
+what is the entropy of 524288 equally likely outcomes? 524288 equally likely outcomes — entropy 19 bits.
 сколько бит стоит слово из 2 знака алфавита в 8 знаков? слово из 2 знака алфавита в 8 знаков стоит 6 битов.
 8388608 equally likely outcomes carry 23 bits.
-16777216 равновозможных исходов: энтропия 24 бита.
+16777216 равновозможных исходов — энтропия 24 бита.
 how many bits do 262144 equally likely outcomes carry? 262144 equally likely outcomes carry 18 bits.
-чему равна энтропия 524288 равновозможных исходов? 524288 равновозможных исходов: энтропия 19 битов.
+чему равна энтропия 524288 равновозможных исходов? 524288 равновозможных исходов — энтропия 19 битов.
 a word of 2 signs over an alphabet of 8 signs costs 6 bits.
 8388608 равновозможных исходов несут 23 бита.
 how much does a word of 5 signs over an alphabet of 2 signs cost? a word of 5 signs over an alphabet of 2 signs costs 5 bits.
 сколько бит несут 262144 равновозможных исхода? 262144 равновозможных исхода несут 18 битов.
-524288 equally likely outcomes: entropy 19 bits.
+524288 equally likely outcomes — entropy 19 bits.
 слово из 2 знака алфавита в 8 знаков стоит 6 битов.
-what is the entropy of 4194304 equally likely outcomes? 4194304 equally likely outcomes: entropy 22 bits.
+what is the entropy of 4194304 equally likely outcomes? 4194304 equally likely outcomes — entropy 22 bits.
 сколько бит стоит слово из 5 знаков алфавита в 2 знака? слово из 5 знаков алфавита в 2 знака стоит 5 битов.
 262144 equally likely outcomes carry 18 bits.
-524288 равновозможных исходов: энтропия 19 битов.
+524288 равновозможных исходов — энтропия 19 битов.
 how many bits do 2097152 equally likely outcomes carry? 2097152 equally likely outcomes carry 21 bits.
-чему равна энтропия 4194304 равновозможных исхода? 4194304 равновозможных исхода: энтропия 22 бита.
+чему равна энтропия 4194304 равновозможных исхода? 4194304 равновозможных исхода — энтропия 22 бита.
 a word of 5 signs over an alphabet of 2 signs costs 5 bits.
 
-why is the entropy of 8388608 equally likely outcomes 23 bits? because 2^23 = 8388608: 8388608 equally likely outcomes: entropy 23 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
-чему равна энтропия 16777216 равновозможных исходов? 2^24 = 16777216. значит 16777216 равновозможных исходов: энтропия 24 бита. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
-what is the entropy of 262144 equally likely outcomes? 2^18 = 262144. therefore 262144 equally likely outcomes: entropy 18 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
-почему энтропия 524288 равновозможных исходов равна 19 битов? потому что 2^19 = 524288: 524288 равновозможных исходов: энтропия 19 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
-why is the entropy of 2097152 equally likely outcomes 21 bits? because 2^21 = 2097152: 2097152 equally likely outcomes: entropy 21 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
-чему равна энтропия 4194304 равновозможных исхода? 2^22 = 4194304. значит 4194304 равновозможных исхода: энтропия 22 бита. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
-what is the entropy of 16777216 equally likely outcomes? 2^24 = 16777216. therefore 16777216 equally likely outcomes: entropy 24 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
-почему энтропия 131072 равновозможных исхода равна 17 битов? потому что 2^17 = 131072: 131072 равновозможных исхода: энтропия 17 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
-why is the entropy of 524288 equally likely outcomes 19 bits? because 2^19 = 524288: 524288 equally likely outcomes: entropy 19 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
-чему равна энтропия 1048576 равновозможных исходов? 2^20 = 1048576. значит 1048576 равновозможных исходов: энтропия 20 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
-what is the entropy of 4194304 equally likely outcomes? 2^22 = 4194304. therefore 4194304 equally likely outcomes: entropy 22 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
-почему энтропия 8388608 равновозможных исходов равна 23 бита? потому что 2^23 = 8388608: 8388608 равновозможных исходов: энтропия 23 бита. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
-why is the entropy of 131072 equally likely outcomes 17 bits? because 2^17 = 131072: 131072 equally likely outcomes: entropy 17 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
-чему равна энтропия 262144 равновозможных исхода? 2^18 = 262144. значит 262144 равновозможных исхода: энтропия 18 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
-what is the entropy of 1048576 equally likely outcomes? 2^20 = 1048576. therefore 1048576 equally likely outcomes: entropy 20 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
-почему энтропия 2097152 равновозможных исхода равна 21 бит? потому что 2^21 = 2097152: 2097152 равновозможных исхода: энтропия 21 бит. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+why is the entropy of 8388608 equally likely outcomes 23 bits? because 2^23 = 8388608: 8388608 equally likely outcomes — entropy 23 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+чему равна энтропия 16777216 равновозможных исходов? 16777216 равновозможных исходов — энтропия 24 бита: 2^24 = 16777216. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+what is the entropy of 262144 equally likely outcomes? 262144 equally likely outcomes — entropy 18 bits: 2^18 = 262144. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+почему энтропия 524288 равновозможных исходов равна 19 битов? потому что 2^19 = 524288: 524288 равновозможных исходов — энтропия 19 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+why is the entropy of 2097152 equally likely outcomes 21 bits? because 2^21 = 2097152: 2097152 equally likely outcomes — entropy 21 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+чему равна энтропия 4194304 равновозможных исхода? 4194304 равновозможных исхода — энтропия 22 бита: 2^22 = 4194304. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+what is the entropy of 16777216 equally likely outcomes? 16777216 equally likely outcomes — entropy 24 bits: 2^24 = 16777216. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+почему энтропия 131072 равновозможных исхода равна 17 битов? потому что 2^17 = 131072: 131072 равновозможных исхода — энтропия 17 битов. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+why is the entropy of 524288 equally likely outcomes 19 bits? because 2^19 = 524288: 524288 equally likely outcomes — entropy 19 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+чему равна энтропия 1048576 равновозможных исходов? 1048576 равновозможных исходов — энтропия 20 битов: 2^20 = 1048576. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+what is the entropy of 4194304 equally likely outcomes? 4194304 equally likely outcomes — entropy 22 bits: 2^22 = 4194304. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+почему энтропия 8388608 равновозможных исходов равна 23 бита? потому что 2^23 = 8388608: 8388608 равновозможных исходов — энтропия 23 бита. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+why is the entropy of 131072 equally likely outcomes 17 bits? because 2^17 = 131072: 131072 equally likely outcomes — entropy 17 bits. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+чему равна энтропия 262144 равновозможных исхода? 262144 равновозможных исхода — энтропия 18 битов: 2^18 = 262144. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
+what is the entropy of 1048576 equally likely outcomes? 1048576 equally likely outcomes — entropy 20 bits: 2^20 = 1048576. the entropy of equally likely outcomes is the number of bits needed to name one of them: log2 of their number.
+почему энтропия 2097152 равновозможных исхода равна 21 бит? потому что 2^21 = 2097152: 2097152 равновозможных исхода — энтропия 21 бит. энтропия равновозможных исходов — это число бит, нужное, чтобы назвать один из них: log2 их числа.
 
 a decidable question is a question that a procedure answers yes or no in finitely many steps.
 что такое разрешимый вопрос? разрешимый вопрос — это вопрос, на который процедура отвечает да или нет за конечное число шагов.

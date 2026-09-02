@@ -123,7 +123,7 @@ def _рассуждение(с):
     м = ВОПРОС_ДАВЛЕНИЯ.match(ч_["вопрос"])
     if not м:
         return None
-    if ч_["связка"] is None or ч_["вердикт"] is not None:
+    if not discourse.форма_верна(ч_, язык) or ч_["вердикт"] is not None:
         return True, False
     г = [int(x) for x in м.groups() if x is not None]
     сила, площадь = г[0], г[1]

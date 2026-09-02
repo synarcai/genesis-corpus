@@ -2,7 +2,7 @@
 requisite variety is the law that a regulator can distinguish no more disturbances than it has states.
 почему начав с 3 при цели 9 и шаге 3, значение достигает цели за 2 шага? потому что 3 + 2 × 3 = 9: начав с 3 при цели 9 и шаге 3, значение достигает 9 за 2 шага. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
 why does starting at 2 with target 4 and step 2 take 1 step? because 2 + 1 × 2 = 4: starting at 2 with target 4 and step 2 the value reaches 4 in 1 step. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
-за сколько шагов начав с 9 при цели 19 и шаге 5 достигает цели? 9 + 2 × 5 = 19. значит начав с 9 при цели 19 и шаге 5, значение достигает 19 за 2 шага. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
+за сколько шагов начав с 9 при цели 19 и шаге 5 достигает цели? начав с 9 при цели 19 и шаге 5, значение достигает 19 за 2 шага: 9 + 2 × 5 = 19. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
 starting at 4 with target 10 and step 2 the value reaches 10 in 3 steps.
 target 10: an open loop takes one step more and reaches 12, overshooting by 2.
 to distinguish 2 disturbances a regulator needs 1 bit.
@@ -36,8 +36,8 @@ to distinguish 12 disturbances a regulator needs 4 bits.
 a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
 что такое разомкнутый контур? разомкнутый контур — это контур управления, который повторяет шаг независимо от ошибки и может проскочить цель.
 why does starting at 3 with target 9 and step 3 take 2 steps? because 3 + 2 × 3 = 9: starting at 3 with target 9 and step 3 the value reaches 9 in 2 steps. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
-за сколько шагов начав с 6 при цели 42 и шаге 6 достигает цели? 6 + 6 × 6 = 42. значит начав с 6 при цели 42 и шаге 6, значение достигает 42 за 6 шагов. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
-how many steps does starting at 9 with target 19 and step 5 take? 9 + 2 × 5 = 19. therefore starting at 9 with target 19 and step 5 the value reaches 19 in 2 steps. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
+за сколько шагов начав с 6 при цели 42 и шаге 6 достигает цели? начав с 6 при цели 42 и шаге 6, значение достигает 42 за 6 шагов: 6 + 6 × 6 = 42. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
+how many steps does starting at 9 with target 19 and step 5 take? starting at 9 with target 19 and step 5 the value reaches 19 in 2 steps: 9 + 2 × 5 = 19. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
 цель 10, значение 4: после шага 2 значение равно 6, а ошибка равна 4.
 target 10: a closed loop stops at 10 because the error is 0.
 сколько возмущений различает регулятор с 2 состояниями? регулятор с 2 состояниями различает 2 возмущения.
@@ -70,8 +70,8 @@ target 40: a closed loop stops at 40 because the error is 0.
 сколько возмущений различает регулятор с 12 состояниями? регулятор с 12 состояниями различает 12 возмущений.
 что такое ошибка контура управления? ошибка контура управления — это цель минус текущее значение.
 what is an open loop? an open loop is a control loop that repeats its step regardless of the error and can overshoot the target.
-за сколько шагов начав с 4 при цели 10 и шаге 2 достигает цели? 4 + 3 × 2 = 10. значит начав с 4 при цели 10 и шаге 2, значение достигает 10 за 3 шага. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
-how many steps does starting at 6 with target 42 and step 6 take? 6 + 6 × 6 = 42. therefore starting at 6 with target 42 and step 6 the value reaches 42 in 6 steps. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
+за сколько шагов начав с 4 при цели 10 и шаге 2 достигает цели? начав с 4 при цели 10 и шаге 2, значение достигает 10 за 3 шага: 4 + 3 × 2 = 10. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
+how many steps does starting at 6 with target 42 and step 6 take? starting at 6 with target 42 and step 6 the value reaches 42 in 6 steps: 6 + 6 × 6 = 42. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
 почему начав с 7 при цели 19 и шаге 4, значение достигает цели за 3 шага? потому что 7 + 3 × 4 = 19: начав с 7 при цели 19 и шаге 4, значение достигает 19 за 3 шага. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
 target 10, value 4: after a step of 2 the value is 6 and the error is 4.
 попадает ли контур с целью 10, начав с 4 при шаге 2 точно в цель? да: 10 − 4 = 6, 6 ÷ 2 = 3.
@@ -105,7 +105,7 @@ target 40, value 10: after a step of 6 the value is 16 and the error is 24.
 how many disturbances can a regulator with 12 states distinguish? a regulator with 12 states can distinguish 12 disturbances.
 what is the error of a control loop? the error of a control loop is the target minus the current value.
 разомкнутый контур — это контур управления, который повторяет шаг независимо от ошибки и может проскочить цель.
-how many steps does starting at 4 with target 10 and step 2 take? 4 + 3 × 2 = 10. therefore starting at 4 with target 10 and step 2 the value reaches 10 in 3 steps. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
+how many steps does starting at 4 with target 10 and step 2 take? starting at 4 with target 10 and step 2 the value reaches 10 in 3 steps: 4 + 3 × 2 = 10. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
 почему начав с 1 при цели 21 и шаге 5, значение достигает цели за 4 шага? потому что 1 + 4 × 5 = 21: начав с 1 при цели 21 и шаге 5, значение достигает 21 за 4 шага. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
 why does starting at 7 with target 19 and step 4 take 3 steps? because 7 + 3 × 4 = 19: starting at 7 with target 19 and step 4 the value reaches 19 in 3 steps. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
 цель 10, значение 4, ошибка 6.
@@ -142,7 +142,7 @@ does a loop with target 41 starting at 10 with step 6 land exactly on the target
 an open loop is a control loop that repeats its step regardless of the error and can overshoot the target.
 что такое необходимое разнообразие? необходимое разнообразие — это закон, по которому регулятор различает не больше возмущений, чем у него состояний.
 why does starting at 1 with target 21 and step 5 take 4 steps? because 1 + 4 × 5 = 21: starting at 1 with target 21 and step 5 the value reaches 21 in 4 steps. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
-за сколько шагов начав с 8 при цели 29 и шаге 3 достигает цели? 8 + 7 × 3 = 29. значит начав с 8 при цели 29 и шаге 3, значение достигает 29 за 7 шагов. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
+за сколько шагов начав с 8 при цели 29 и шаге 3 достигает цели? начав с 8 при цели 29 и шаге 3, значение достигает 29 за 7 шагов: 8 + 7 × 3 = 29. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
 target 10, value 4, error 6.
 за сколько шагов начав с 4 при цели 10 и шаге 2 достигает цели? начав с 4 при цели 10 и шаге 2, значение достигает 10 за 3 шага.
 a regulator with 2 states can distinguish 2 disturbances.
@@ -176,8 +176,8 @@ a regulator with 12 states can distinguish 12 disturbances.
 the error of a control loop is the target minus the current value.
 что такое замкнутый контур? замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
 what is requisite variety? requisite variety is the law that a regulator can distinguish no more disturbances than it has states.
-за сколько шагов начав с 5 при цели 25 и шаге 4 достигает цели? 5 + 5 × 4 = 25. значит начав с 5 при цели 25 и шаге 4, значение достигает 25 за 5 шагов. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
-how many steps does starting at 8 with target 29 and step 3 take? 8 + 7 × 3 = 29. therefore starting at 8 with target 29 and step 3 the value reaches 29 in 7 steps. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
+за сколько шагов начав с 5 при цели 25 и шаге 4 достигает цели? начав с 5 при цели 25 и шаге 4, значение достигает 25 за 5 шагов: 5 + 5 × 4 = 25. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
+how many steps does starting at 8 with target 29 and step 3 take? starting at 8 with target 29 and step 3 the value reaches 29 in 7 steps: 8 + 7 × 3 = 29. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
 почему начав с 10 при цели 40 и шаге 6, значение достигает цели за 5 шагов? потому что 10 + 5 × 6 = 40: начав с 10 при цели 40 и шаге 6, значение достигает 40 за 5 шагов. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
 how many steps does starting at 4 with target 10 and step 2 take? starting at 4 with target 10 and step 2 the value reaches 10 in 3 steps.
 machine A B C; on 1 A goes to B; on 1 B goes to C; this machine has 3 states and 2 transitions.
@@ -211,7 +211,7 @@ machine A B; on 1 A goes to B; on 1 B goes to A; this machine has 2 states and 2
 чтобы различить 12 возмущений, регулятору нужно 4 бита.
 what is a closed loop? a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
 необходимое разнообразие — это закон, по которому регулятор различает не больше возмущений, чем у него состояний.
-how many steps does starting at 5 with target 25 and step 4 take? 5 + 5 × 4 = 25. therefore starting at 5 with target 25 and step 4 the value reaches 25 in 5 steps. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
+how many steps does starting at 5 with target 25 and step 4 take? starting at 5 with target 25 and step 4 the value reaches 25 in 5 steps: 5 + 5 × 4 = 25. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
 почему начав с 2 при цели 4 и шаге 2, значение достигает цели за 1 шаг? потому что 2 + 1 × 2 = 4: начав с 2 при цели 4 и шаге 2, значение достигает 4 за 1 шаг. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
 why does starting at 10 with target 40 and step 6 take 5 steps? because 10 + 5 × 6 = 40: starting at 10 with target 40 and step 6 the value reaches 40 in 5 steps. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
 начав с 4 при цели 10 и шаге 2, значение достигает 10 за 3 шага.
@@ -247,7 +247,7 @@ how many bits does to distinguish 12 disturbances a regulator need? to distingui
 
 what is the error of a control loop? the error of a control loop is the target minus the current value.
 необходимое разнообразие — это закон, по которому регулятор различает не больше возмущений, чем у него состояний.
-how many steps does starting at 1 with target 19 and step 6 take? 1 + 3 × 6 = 19. therefore starting at 1 with target 19 and step 6 the value reaches 19 in 3 steps. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
+how many steps does starting at 1 with target 19 and step 6 take? starting at 1 with target 19 and step 6 the value reaches 19 in 3 steps: 1 + 3 × 6 = 19. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
 почему начав с 9 при цели 15 и шаге 6, значение достигает цели за 1 шаг? потому что 9 + 1 × 6 = 15: начав с 9 при цели 15 и шаге 6, значение достигает 15 за 1 шаг. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
 target 19: a closed loop stops at 19 because the error is 0.
 target 22, value 4, error 18.
@@ -269,7 +269,7 @@ to distinguish 20 disturbances a regulator needs 5 bits.
 does a loop with target 16 starting at 9 with step 6 land exactly on the target? no: 16 − 9 = 7, 7 is not divisible by 6.
 how many bits does to distinguish 24 disturbances a regulator need? to distinguish 24 disturbances a regulator needs 5 bits.
 разомкнутый контур — это контур управления, который повторяет шаг независимо от ошибки и может проскочить цель.
-how many steps does starting at 3 with target 7 and step 4 take? 3 + 1 × 4 = 7. therefore starting at 3 with target 7 and step 4 the value reaches 7 in 1 step. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
+how many steps does starting at 3 with target 7 and step 4 take? starting at 3 with target 7 and step 4 the value reaches 7 in 1 step: 3 + 1 × 4 = 7. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
 почему начав с 8 при цели 24 и шаге 4, значение достигает цели за 4 шага? потому что 8 + 4 × 4 = 24: начав с 8 при цели 24 и шаге 4, значение достигает 24 за 4 шага. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
 how many steps does starting at 11 with target 19 and step 2 take? starting at 11 with target 19 and step 2 the value reaches 19 in 4 steps.
 сколько возмущений различает регулятор с 7 состояниями? регулятор с 7 состояниями различает 7 возмущений.
@@ -291,7 +291,7 @@ a regulator with 20 states can distinguish 20 disturbances.
 starting at 9 with target 15 and step 6 the value reaches 15 in 1 step.
 регулятор с 24 состояниями различает 24 возмущения.
 замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
-how many steps does starting at 11 with target 19 and step 2 take? 11 + 4 × 2 = 19. therefore starting at 11 with target 19 and step 2 the value reaches 19 in 4 steps. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
+how many steps does starting at 11 with target 19 and step 2 take? starting at 11 with target 19 and step 2 the value reaches 19 in 4 steps: 11 + 4 × 2 = 19. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
 почему начав с 6 при цели 10 и шаге 2, значение достигает цели за 2 шага? потому что 6 + 2 × 2 = 10: начав с 6 при цели 10 и шаге 2, значение достигает 10 за 2 шага. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
 target 19, value 11: after a step of 2 the value is 13 and the error is 6.
 machine A B C; on 0 A goes to C; on 1 C goes to B; this machine has 3 states and 2 transitions.
@@ -382,7 +382,7 @@ target 15: a closed loop stops at 15 because the error is 0.
 the error of a control loop is the target minus the current value.
 что такое разомкнутый контур? разомкнутый контур — это контур управления, который повторяет шаг независимо от ошибки и может проскочить цель.
 why does starting at 5 with target 40 and step 5 take 7 steps? because 5 + 7 × 5 = 40: starting at 5 with target 40 and step 5 the value reaches 40 in 7 steps. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
-за сколько шагов начав с 7 при цели 37 и шаге 5 достигает цели? 7 + 6 × 5 = 37. значит начав с 7 при цели 37 и шаге 5, значение достигает 37 за 6 шагов. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
+за сколько шагов начав с 7 при цели 37 и шаге 5 достигает цели? начав с 7 при цели 37 и шаге 5, значение достигает 37 за 6 шагов: 7 + 6 × 5 = 37. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
 does a loop with target 19 starting at 11 with step 2 land exactly on the target? yes: 19 − 11 = 8, 8 ÷ 2 = 4.
 how many bits does to distinguish 7 disturbances a regulator need? to distinguish 7 disturbances a regulator needs 3 bits.
 попадает ли контур с целью 23, начав с 4 при шаге 3 точно в цель? нет: 23 − 4 = 19, 19 не делится на 3 нацело.
@@ -404,7 +404,7 @@ how many steps does starting at 9 with target 15 and step 6 take? starting at 9 
 сколько возмущений различает регулятор с 24 состояниями? регулятор с 24 состояниями различает 24 возмущения.
 что такое замкнутый контур? замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
 why does starting at 4 with target 22 and step 3 take 6 steps? because 4 + 6 × 3 = 22: starting at 4 with target 22 and step 3 the value reaches 22 in 6 steps. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
-за сколько шагов начав с 2 при цели 17 и шаге 3 достигает цели? 2 + 5 × 3 = 17. значит начав с 2 при цели 17 и шаге 3, значение достигает 17 за 5 шагов. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
+за сколько шагов начав с 2 при цели 17 и шаге 3 достигает цели? начав с 2 при цели 17 и шаге 3, значение достигает 17 за 5 шагов: 2 + 5 × 3 = 17. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
 starting at 11 with target 19 and step 2 the value reaches 19 in 4 steps.
 регулятор с 7 состояниями различает 7 возмущений.
 начав с 4 при цели 22 и шаге 3, значение достигает 22 за 6 шагов.
@@ -426,7 +426,7 @@ target 15, value 9: after a step of 6 the value is 15 and the error is 0.
 machine A B C; on 1 A goes to B; on 0 B goes to A; this machine has 3 states and 2 transitions.
 что такое ошибка контура управления? ошибка контура управления — это цель минус текущее значение.
 what is requisite variety? requisite variety is the law that a regulator can distinguish no more disturbances than it has states.
-за сколько шагов начав с 1 при цели 19 и шаге 6 достигает цели? 1 + 3 × 6 = 19. значит начав с 1 при цели 19 и шаге 6, значение достигает 19 за 3 шага. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
+за сколько шагов начав с 1 при цели 19 и шаге 6 достигает цели? начав с 1 при цели 19 и шаге 6, значение достигает 19 за 3 шага: 1 + 3 × 6 = 19. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
 target 19, value 11, error 8.
 target 19: an open loop takes one step more and reaches 21, overshooting by 2.
 цель 22, значение 4, ошибка 18.
@@ -448,8 +448,8 @@ how many bits does to distinguish 20 disturbances a regulator need? to distingui
 попадает ли контур с целью 16, начав с 9 при шаге 6 точно в цель? нет: 16 − 9 = 7, 7 не делится на 6 нацело.
 чтобы различить 24 возмущения, регулятору нужно 5 бит.
 what is an open loop? an open loop is a control loop that repeats its step regardless of the error and can overshoot the target.
-за сколько шагов начав с 3 при цели 7 и шаге 4 достигает цели? 3 + 1 × 4 = 7. значит начав с 3 при цели 7 и шаге 4, значение достигает 7 за 1 шаг. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
-how many steps does starting at 7 with target 37 and step 5 take? 7 + 6 × 5 = 37. therefore starting at 7 with target 37 and step 5 the value reaches 37 in 6 steps. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
+за сколько шагов начав с 3 при цели 7 и шаге 4 достигает цели? начав с 3 при цели 7 и шаге 4, значение достигает 7 за 1 шаг: 3 + 1 × 4 = 7. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
+how many steps does starting at 7 with target 37 and step 5 take? starting at 7 with target 37 and step 5 the value reaches 37 in 6 steps: 7 + 6 × 5 = 37. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
 за сколько шагов начав с 11 при цели 19 и шаге 2 достигает цели? начав с 11 при цели 19 и шаге 2, значение достигает 19 за 4 шага.
 to distinguish 7 disturbances a regulator needs 3 bits.
 does a loop with target 23 starting at 4 with step 3 land exactly on the target? no: 23 − 4 = 19, 19 is not divisible by 3.
@@ -470,8 +470,8 @@ starting at 7 with target 37 and step 5 the value reaches 37 in 6 steps.
 начав с 9 при цели 15 и шаге 6, значение достигает 15 за 1 шаг.
 how many disturbances can a regulator with 24 states distinguish? a regulator with 24 states can distinguish 24 disturbances.
 what is a closed loop? a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
-за сколько шагов начав с 11 при цели 19 и шаге 2 достигает цели? 11 + 4 × 2 = 19. значит начав с 11 при цели 19 и шаге 2, значение достигает 19 за 4 шага. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
-how many steps does starting at 2 with target 17 and step 3 take? 2 + 5 × 3 = 17. therefore starting at 2 with target 17 and step 3 the value reaches 17 in 5 steps. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
+за сколько шагов начав с 11 при цели 19 и шаге 2 достигает цели? начав с 11 при цели 19 и шаге 2, значение достигает 19 за 4 шага: 11 + 4 × 2 = 19. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
+how many steps does starting at 2 with target 17 and step 3 take? starting at 2 with target 17 and step 3 the value reaches 17 in 5 steps: 2 + 5 × 3 = 17. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
 цель 19, значение 11: после шага 2 значение равно 13, а ошибка равна 6.
 a regulator with 7 states can distinguish 7 disturbances.
 starting at 4 with target 22 and step 3 the value reaches 22 in 6 steps.
@@ -531,7 +531,7 @@ a regulator with 5 states can distinguish 5 disturbances.
 how many steps does starting at 7 with target 19 and step 6 take? starting at 7 with target 19 and step 6 the value reaches 19 in 2 steps.
 how many bits does to distinguish 6 disturbances a regulator need? to distinguish 6 disturbances a regulator needs 3 bits.
 что такое разомкнутый контур? разомкнутый контур — это контур управления, который повторяет шаг независимо от ошибки и может проскочить цель.
-how many steps does starting at 5 with target 29 and step 6 take? 5 + 4 × 6 = 29. therefore starting at 5 with target 29 and step 6 the value reaches 29 in 4 steps. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
+how many steps does starting at 5 with target 29 and step 6 take? starting at 5 with target 29 and step 6 the value reaches 29 in 4 steps: 5 + 4 × 6 = 29. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
 цель 24, значение 10, ошибка 14.
 a regulator with 64 states can distinguish 64 disturbances.
 how many steps does starting at 11 with target 20 and step 3 take? starting at 11 with target 20 and step 3 the value reaches 20 in 3 steps.
@@ -550,7 +550,7 @@ target 23, value 8: after a step of 5 the value is 13 and the error is 10.
 за сколько шагов начав с 7 при цели 19 и шаге 6 достигает цели? начав с 7 при цели 19 и шаге 6, значение достигает 19 за 2 шага.
 чтобы различить 6 возмущений, регулятору нужно 3 бита.
 requisite variety is the law that a regulator can distinguish no more disturbances than it has states.
-за сколько шагов начав с 5 при цели 29 и шаге 6 достигает цели? 5 + 4 × 6 = 29. значит начав с 5 при цели 29 и шаге 6, значение достигает 29 за 4 шага. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
+за сколько шагов начав с 5 при цели 29 и шаге 6 достигает цели? начав с 5 при цели 29 и шаге 6, значение достигает 29 за 4 шага: 5 + 4 × 6 = 29. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
 target 24, value 10: after a step of 2 the value is 12 and the error is 12.
 регулятор с 64 состояниями различает 64 возмущения.
 за сколько шагов начав с 11 при цели 20 и шаге 3 достигает цели? начав с 11 при цели 20 и шаге 3, значение достигает 20 за 3 шага.
@@ -607,7 +607,7 @@ to distinguish 5 disturbances a regulator needs 3 bits.
 target 19: a closed loop stops at 19 because the error is 0.
 what is the error of a control loop? the error of a control loop is the target minus the current value.
 что такое необходимое разнообразие? необходимое разнообразие — это закон, по которому регулятор различает не больше возмущений, чем у него состояний.
-how many steps does starting at 6 with target 9 and step 3 take? 6 + 1 × 3 = 9. therefore starting at 6 with target 9 and step 3 the value reaches 9 in 1 step. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
+how many steps does starting at 6 with target 9 and step 3 take? starting at 6 with target 9 and step 3 the value reaches 9 in 1 step: 6 + 1 × 3 = 9. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
 начав с 10 при цели 24 и шаге 2, значение достигает 24 за 7 шагов.
 to distinguish 64 disturbances a regulator needs 6 bits.
 target 20: a closed loop stops at 20 because the error is 0.
@@ -625,8 +625,8 @@ how many steps does starting at 8 with target 23 and step 5 take? starting at 8 
 how many bits does to distinguish 5 disturbances a regulator need? to distinguish 5 disturbances a regulator needs 3 bits.
 target 19: an open loop takes one step more and reaches 25, overshooting by 6.
 что такое ошибка контура управления? ошибка контура управления — это цель минус текущее значение.
-how many steps does starting at 10 with target 24 and step 2 take? 10 + 7 × 2 = 24. therefore starting at 10 with target 24 and step 2 the value reaches 24 in 7 steps. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
-за сколько шагов начав с 6 при цели 9 и шаге 3 достигает цели? 6 + 1 × 3 = 9. значит начав с 6 при цели 9 и шаге 3, значение достигает 9 за 1 шаг. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
+how many steps does starting at 10 with target 24 and step 2 take? starting at 10 with target 24 and step 2 the value reaches 24 in 7 steps: 10 + 7 × 2 = 24. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
+за сколько шагов начав с 6 при цели 9 и шаге 3 достигает цели? начав с 6 при цели 9 и шаге 3, значение достигает 9 за 1 шаг: 6 + 1 × 3 = 9. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
 how many steps does starting at 10 with target 24 and step 2 take? starting at 10 with target 24 and step 2 the value reaches 24 in 7 steps.
 how many bits does to distinguish 64 disturbances a regulator need? to distinguish 64 disturbances a regulator needs 6 bits.
 target 20: an open loop takes one step more and reaches 23, overshooting by 3.
@@ -644,7 +644,7 @@ target 30, value 2: after a step of 4 the value is 6 and the error is 24.
 чтобы различить 5 возмущений, регулятору нужно 3 бита.
 machine A B C D; on 1 A goes to B; on 0 B goes to C; on 1 C goes to D; from A the input 1 0 1 leads to D.
 a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
-за сколько шагов начав с 10 при цели 24 и шаге 2 достигает цели? 10 + 7 × 2 = 24. значит начав с 10 при цели 24 и шаге 2, значение достигает 24 за 7 шагов. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
+за сколько шагов начав с 10 при цели 24 и шаге 2 достигает цели? начав с 10 при цели 24 и шаге 2, значение достигает 24 за 7 шагов: 10 + 7 × 2 = 24. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
 why does starting at 2 with target 30 and step 4 take 7 steps? because 2 + 7 × 4 = 30: starting at 2 with target 30 and step 4 the value reaches 30 in 7 steps. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
 за сколько шагов начав с 10 при цели 24 и шаге 2 достигает цели? начав с 10 при цели 24 и шаге 2, значение достигает 24 за 7 шагов.
 чтобы различить 64 возмущения, регулятору нужно 6 бит.
@@ -683,7 +683,7 @@ starting at 2 with target 30 and step 4 the value reaches 30 in 7 steps.
 a regulator with 6 states can distinguish 6 disturbances.
 what is a closed loop? a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
 почему начав с 11 при цели 20 и шаге 3, значение достигает цели за 3 шага? потому что 11 + 3 × 3 = 20: начав с 11 при цели 20 и шаге 3, значение достигает 20 за 3 шага. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
-how many steps does starting at 8 with target 23 and step 5 take? 8 + 3 × 5 = 23. therefore starting at 8 with target 23 and step 5 the value reaches 23 in 3 steps. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
+how many steps does starting at 8 with target 23 and step 5 take? starting at 8 with target 23 and step 5 the value reaches 23 in 3 steps: 8 + 3 × 5 = 23. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
 попадает ли контур с целью 24, начав с 10 при шаге 2 точно в цель? да: 24 − 10 = 14, 14 ÷ 2 = 7.
 цель 20, значение 11, ошибка 9.
 a regulator with 25 states can distinguish 25 disturbances.
@@ -701,8 +701,8 @@ target 23: a closed loop stops at 23 because the error is 0.
 target 19, value 7: after a step of 6 the value is 13 and the error is 6.
 регулятор с 6 состояниями различает 6 возмущений.
 что такое замкнутый контур? замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
-how many steps does starting at 4 with target 12 and step 4 take? 4 + 2 × 4 = 12. therefore starting at 4 with target 12 and step 4 the value reaches 12 in 2 steps. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
-за сколько шагов начав с 8 при цели 23 и шаге 5 достигает цели? 8 + 3 × 5 = 23. значит начав с 8 при цели 23 и шаге 5, значение достигает 23 за 3 шага. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
+how many steps does starting at 4 with target 12 and step 4 take? starting at 4 with target 12 and step 4 the value reaches 12 in 2 steps: 4 + 2 × 4 = 12. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
+за сколько шагов начав с 8 при цели 23 и шаге 5 достигает цели? начав с 8 при цели 23 и шаге 5, значение достигает 23 за 3 шага: 8 + 3 × 5 = 23. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
 target 24: a closed loop stops at 24 because the error is 0.
 target 20, value 11: after a step of 3 the value is 14 and the error is 6.
 регулятор с 25 состояниями различает 25 возмущений.
@@ -720,7 +720,7 @@ target 23: an open loop takes one step more and reaches 28, overshooting by 5.
 цель 19, значение 7: после шага 6 значение равно 13, а ошибка равна 6.
 how many disturbances can a regulator with 6 states distinguish? a regulator with 6 states can distinguish 6 disturbances.
 an open loop is a control loop that repeats its step regardless of the error and can overshoot the target.
-за сколько шагов начав с 4 при цели 12 и шаге 4 достигает цели? 4 + 2 × 4 = 12. значит начав с 4 при цели 12 и шаге 4, значение достигает 12 за 2 шага. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
+за сколько шагов начав с 4 при цели 12 и шаге 4 достигает цели? начав с 4 при цели 12 и шаге 4, значение достигает 12 за 2 шага: 4 + 2 × 4 = 12. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
 why does starting at 7 with target 19 and step 6 take 2 steps? because 7 + 2 × 6 = 19: starting at 7 with target 19 and step 6 the value reaches 19 in 2 steps. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
 target 24: an open loop takes one step more and reaches 26, overshooting by 2.
 цель 20, значение 11: после шага 3 значение равно 14, а ошибка равна 6.
@@ -740,7 +740,7 @@ starting at 7 with target 19 and step 6 the value reaches 19 in 2 steps.
 сколько возмущений различает регулятор с 6 состояниями? регулятор с 6 состояниями различает 6 возмущений.
 
 a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
-за сколько шагов начав с 11 при цели 35 и шаге 4 достигает цели? 11 + 6 × 4 = 35. значит начав с 11 при цели 35 и шаге 4, значение достигает 35 за 6 шагов. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
+за сколько шагов начав с 11 при цели 35 и шаге 4 достигает цели? начав с 11 при цели 35 и шаге 4, значение достигает 35 за 6 шагов: 11 + 6 × 4 = 35. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
 target 19, value 9: after a step of 2 the value is 11 and the error is 8.
 how many bits does to distinguish 10 disturbances a regulator need? to distinguish 10 disturbances a regulator needs 4 bits.
 регулятор с 32 состояниями различает 32 возмущения.
@@ -813,7 +813,7 @@ how many steps does starting at 2 with target 22 and step 5 take? starting at 2 
 target 44, value 8: after a step of 6 the value is 14 and the error is 30.
 how many bits does to distinguish 17 disturbances a regulator need? to distinguish 17 disturbances a regulator needs 5 bits.
 что такое необходимое разнообразие? необходимое разнообразие — это закон, по которому регулятор различает не больше возмущений, чем у него состояний.
-how many steps does starting at 2 with target 22 and step 5 take? 2 + 4 × 5 = 22. therefore starting at 2 with target 22 and step 5 the value reaches 22 in 4 steps. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
+how many steps does starting at 2 with target 22 and step 5 take? starting at 2 with target 22 and step 5 the value reaches 22 in 4 steps: 2 + 4 × 5 = 22. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
 machine A B C; on 1 A goes to B; on 1 B goes to C; this machine has 3 states and 2 transitions.
 попадает ли контур с целью 23, начав с 10 при шаге 3 точно в цель? нет: 23 − 10 = 13, 13 не делится на 3 нацело.
 начав с 11 при цели 35 и шаге 4, значение достигает 35 за 6 шагов.
@@ -827,7 +827,7 @@ how many bits does to distinguish 14 disturbances a regulator need? to distingui
 регулятор с 15 состояниями различает 15 возмущений.
 target 44: an open loop takes one step more and reaches 50, overshooting by 6.
 что такое замкнутый контур? замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
-how many steps does starting at 3 with target 45 and step 6 take? 3 + 7 × 6 = 45. therefore starting at 3 with target 45 and step 6 the value reaches 45 in 7 steps. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
+how many steps does starting at 3 with target 45 and step 6 take? starting at 3 with target 45 and step 6 the value reaches 45 in 7 steps: 3 + 7 × 6 = 45. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
 начав с 9 при цели 19 и шаге 2, значение достигает 19 за 5 шагов.
 цель 22, значение 10, ошибка 12.
 to distinguish 32 disturbances a regulator needs 5 bits.
@@ -841,8 +841,8 @@ target 26: an open loop takes one step more and reaches 30, overshooting by 4.
 за сколько шагов начав с 2 при цели 22 и шаге 5 достигает цели? начав с 2 при цели 22 и шаге 5, значение достигает 22 за 4 шага.
 цель 44, значение 8: после шага 6 значение равно 14, а ошибка равна 30.
 чтобы различить 17 возмущений, регулятору нужно 5 бит.
-how many steps does starting at 9 with target 19 and step 2 take? 9 + 5 × 2 = 19. therefore starting at 9 with target 19 and step 2 the value reaches 19 in 5 steps. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
-за сколько шагов начав с 2 при цели 22 и шаге 5 достигает цели? 2 + 4 × 5 = 22. значит начав с 2 при цели 22 и шаге 5, значение достигает 22 за 4 шага. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
+how many steps does starting at 9 with target 19 and step 2 take? starting at 9 with target 19 and step 2 the value reaches 19 in 5 steps: 9 + 5 × 2 = 19. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
+за сколько шагов начав с 2 при цели 22 и шаге 5 достигает цели? начав с 2 при цели 22 и шаге 5, значение достигает 22 за 4 шага: 2 + 4 × 5 = 22. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
 a regulator with 10 states can distinguish 10 disturbances.
 target 22: a closed loop stops at 22 because the error is 0.
 how many steps does starting at 11 with target 35 and step 4 take? starting at 11 with target 35 and step 4 the value reaches 35 in 6 steps.
@@ -856,7 +856,7 @@ target 11: an open loop takes one step more and reaches 13, overshooting by 2.
 how many disturbances can a regulator with 15 states distinguish? a regulator with 15 states can distinguish 15 disturbances.
 machine A B; on 1 A goes to B; on 1 B goes to A; from A the input 1 1 leads to A.
 an open loop is a control loop that repeats its step regardless of the error and can overshoot the target.
-за сколько шагов начав с 3 при цели 45 и шаге 6 достигает цели? 3 + 7 × 6 = 45. значит начав с 3 при цели 45 и шаге 6, значение достигает 45 за 7 шагов. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
+за сколько шагов начав с 3 при цели 45 и шаге 6 достигает цели? начав с 3 при цели 45 и шаге 6, значение достигает 45 за 7 шагов: 3 + 7 × 6 = 45. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
 how many steps does starting at 9 with target 19 and step 2 take? starting at 9 with target 19 and step 2 the value reaches 19 in 5 steps.
 target 22, value 10: after a step of 3 the value is 13 and the error is 9.
 how many bits does to distinguish 32 disturbances a regulator need? to distinguish 32 disturbances a regulator needs 5 bits.
@@ -870,7 +870,7 @@ machine A B C; on 1 A goes to B; on 0 B goes to A; from A the input 1 0 leads to
 does a loop with target 22 starting at 2 with step 5 land exactly on the target? yes: 22 − 2 = 20, 20 ÷ 5 = 4.
 starting at 8 with target 44 and step 6 the value reaches 44 in 6 steps.
 the error of a control loop is the target minus the current value.
-за сколько шагов начав с 9 при цели 19 и шаге 2 достигает цели? 9 + 5 × 2 = 19. значит начав с 9 при цели 19 и шаге 2, значение достигает 19 за 5 шагов. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
+за сколько шагов начав с 9 при цели 19 и шаге 2 достигает цели? начав с 9 при цели 19 и шаге 2, значение достигает 19 за 5 шагов: 9 + 5 × 2 = 19. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
 why does starting at 8 with target 44 and step 6 take 6 steps? because 8 + 6 × 6 = 44: starting at 8 with target 44 and step 6 the value reaches 44 in 6 steps. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
 регулятор с 10 состояниями различает 10 возмущений.
 target 22: an open loop takes one step more and reaches 25, overshooting by 3.
@@ -943,7 +943,7 @@ target 22, value 2: after a step of 5 the value is 7 and the error is 15.
 how many bits does to distinguish 15 disturbances a regulator need? to distinguish 15 disturbances a regulator needs 4 bits.
 регулятор с 17 состояниями различает 17 возмущений.
 что такое разомкнутый контур? разомкнутый контур — это контур управления, который повторяет шаг независимо от ошибки и может проскочить цель.
-how many steps does starting at 1 with target 7 and step 3 take? 1 + 2 × 3 = 7. therefore starting at 1 with target 7 and step 3 the value reaches 7 in 2 steps. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
+how many steps does starting at 1 with target 7 and step 3 take? starting at 1 with target 7 and step 3 the value reaches 7 in 2 steps: 1 + 2 × 3 = 7. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
 попадает ли контур с целью 19, начав с 9 при шаге 2 точно в цель? да: 19 − 9 = 10, 10 ÷ 2 = 5.
 начав с 10 при цели 22 и шаге 3, значение достигает 22 за 4 шага.
 цель 35, значение 11, ошибка 24.
@@ -957,7 +957,7 @@ how many bits does to distinguish 13 disturbances a regulator need? to distingui
 target 22: an open loop takes one step more and reaches 27, overshooting by 5.
 за сколько шагов начав с 8 при цели 44 и шаге 6 достигает цели? начав с 8 при цели 44 и шаге 6, значение достигает 44 за 6 шагов.
 что такое ошибка контура управления? ошибка контура управления — это цель минус текущее значение.
-how many steps does starting at 11 with target 35 and step 4 take? 11 + 6 × 4 = 35. therefore starting at 11 with target 35 and step 4 the value reaches 35 in 6 steps. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
+how many steps does starting at 11 with target 35 and step 4 take? starting at 11 with target 35 and step 4 the value reaches 35 in 6 steps: 11 + 6 × 4 = 35. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
 цель 19, значение 9, ошибка 10.
 to distinguish 10 disturbances a regulator needs 4 bits.
 a regulator with 32 states can distinguish 32 disturbances.
@@ -972,7 +972,7 @@ target 7: an open loop takes one step more and reaches 10, overshooting by 3.
 чтобы различить 15 возмущений, регулятору нужно 4 бита.
 how many disturbances can a regulator with 17 states distinguish? a regulator with 17 states can distinguish 17 disturbances.
 requisite variety is the law that a regulator can distinguish no more disturbances than it has states.
-за сколько шагов начав с 1 при цели 7 и шаге 3 достигает цели? 1 + 2 × 3 = 7. значит начав с 1 при цели 7 и шаге 3, значение достигает 7 за 2 шага. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
+за сколько шагов начав с 1 при цели 7 и шаге 3 достигает цели? начав с 1 при цели 7 и шаге 3, значение достигает 7 за 2 шага: 1 + 2 × 3 = 7. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
 target 19: a closed loop stops at 19 because the error is 0.
 how many steps does starting at 10 with target 22 and step 3 take? starting at 10 with target 22 and step 3 the value reaches 22 in 4 steps.
 target 35, value 11: after a step of 4 the value is 15 and the error is 20.
@@ -1000,7 +1000,7 @@ how many bits does to distinguish 4 disturbances a regulator need? to distinguis
 сколько возмущений различает регулятор с 8 состояниями? регулятор с 8 состояниями различает 8 возмущений.
 регулятор с 16 состояниями различает 16 возмущений.
 необходимое разнообразие — это закон, по которому регулятор различает не больше возмущений, чем у него состояний.
-how many steps does starting at 6 with target 41 and step 5 take? 6 + 7 × 5 = 41. therefore starting at 6 with target 41 and step 5 the value reaches 41 in 7 steps. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
+how many steps does starting at 6 with target 41 and step 5 take? starting at 6 with target 41 and step 5 the value reaches 41 in 7 steps: 6 + 7 × 5 = 41. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
 регулятор с 18 состояниями различает 18 возмущений.
 machine A B C D; on 1 A goes to B; on 0 B goes to C; on 1 C goes to D; this machine has 4 states and 3 transitions.
 target 22: an open loop takes one step more and reaches 26, overshooting by 4.
@@ -1013,7 +1013,7 @@ target 22: an open loop takes one step more and reaches 26, overshooting by 4.
 to distinguish 8 disturbances a regulator needs 3 bits.
 how many disturbances can a regulator with 16 states distinguish? a regulator with 16 states can distinguish 16 disturbances.
 what is requisite variety? requisite variety is the law that a regulator can distinguish no more disturbances than it has states.
-за сколько шагов начав с 6 при цели 41 и шаге 5 достигает цели? 6 + 7 × 5 = 41. значит начав с 6 при цели 41 и шаге 5, значение достигает 41 за 7 шагов. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
+за сколько шагов начав с 6 при цели 41 и шаге 5 достигает цели? начав с 6 при цели 41 и шаге 5, значение достигает 41 за 7 шагов: 6 + 7 × 5 = 41. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
 how many disturbances can a regulator with 18 states distinguish? a regulator with 18 states can distinguish 18 disturbances.
 a regulator with 20 states can distinguish 20 disturbances.
 machine A B C; on 1 A goes to B; on 1 B goes to C; from A the input 1 1 leads to C.
@@ -1038,7 +1038,7 @@ target 21: an open loop takes one step more and reaches 26, overshooting by 5.
 цель 41, значение 6, ошибка 35.
 чтобы различить 8 возмущений, регулятору нужно 3 бита.
 to distinguish 16 disturbances a regulator needs 4 bits.
-how many steps does starting at 7 with target 9 and step 2 take? 7 + 1 × 2 = 9. therefore starting at 7 with target 9 and step 2 the value reaches 9 in 1 step. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
+how many steps does starting at 7 with target 9 and step 2 take? starting at 7 with target 9 and step 2 the value reaches 9 in 1 step: 7 + 1 × 2 = 9. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
 почему начав с 2 при цели 20 и шаге 6, значение достигает цели за 3 шага? потому что 2 + 3 × 6 = 20: начав с 2 при цели 20 и шаге 6, значение достигает 20 за 3 шага. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
 to distinguish 18 disturbances a regulator needs 5 bits.
 how many disturbances can a regulator with 20 states distinguish? a regulator with 20 states can distinguish 20 disturbances.
@@ -1051,7 +1051,7 @@ starting at 1 with target 5 and step 4 the value reaches 5 in 1 step.
 target 41, value 6: after a step of 5 the value is 11 and the error is 30.
 target 20, value 2, error 18.
 how many bits does to distinguish 16 disturbances a regulator need? to distinguish 16 disturbances a regulator needs 4 bits.
-за сколько шагов начав с 7 при цели 9 и шаге 2 достигает цели? 7 + 1 × 2 = 9. значит начав с 7 при цели 9 и шаге 2, значение достигает 9 за 1 шаг. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
+за сколько шагов начав с 7 при цели 9 и шаге 2 достигает цели? начав с 7 при цели 9 и шаге 2, значение достигает 9 за 1 шаг: 7 + 1 × 2 = 9. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
 target 9, value 7, error 2.
 how many bits does to distinguish 18 disturbances a regulator need? to distinguish 18 disturbances a regulator needs 5 bits.
 сколько возмущений различает регулятор с 20 состояниями? регулятор с 20 состояниями различает 20 возмущений.
@@ -1090,7 +1090,7 @@ target 11: an open loop takes one step more and reaches 13, overshooting by 2.
 начав с 6 при цели 41 и шаге 5, значение достигает 41 за 7 шагов.
 цель 20, значение 2: после шага 6 значение равно 8, а ошибка равна 12.
 ошибка контура управления — это цель минус текущее значение.
-how many steps does starting at 10 with target 22 and step 4 take? 10 + 3 × 4 = 22. therefore starting at 10 with target 22 and step 4 the value reaches 22 in 3 steps. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
+how many steps does starting at 10 with target 22 and step 4 take? starting at 10 with target 22 and step 4 the value reaches 22 in 3 steps: 10 + 3 × 4 = 22. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
 цель 9, значение 7: после шага 2 значение равно 9, а ошибка равна 0.
 цель 30, значение 9, ошибка 21.
 чтобы различить 20 возмущений, регулятору нужно 5 бит.
@@ -1103,7 +1103,7 @@ does a loop with target 6 starting at 1 with step 4 land exactly on the target? 
 how many steps does starting at 6 with target 41 and step 5 take? starting at 6 with target 41 and step 5 the value reaches 41 in 7 steps.
 starting at 2 with target 20 and step 6 the value reaches 20 in 3 steps.
 what is the error of a control loop? the error of a control loop is the target minus the current value.
-за сколько шагов начав с 10 при цели 22 и шаге 4 достигает цели? 10 + 3 × 4 = 22. значит начав с 10 при цели 22 и шаге 4, значение достигает 22 за 3 шага. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
+за сколько шагов начав с 10 при цели 22 и шаге 4 достигает цели? начав с 10 при цели 22 и шаге 4, значение достигает 22 за 3 шага: 10 + 3 × 4 = 22. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
 starting at 7 with target 9 and step 2 the value reaches 9 in 1 step.
 target 30, value 9: after a step of 3 the value is 12 and the error is 18.
 target 22, value 10, error 12.
@@ -1142,7 +1142,7 @@ target 5: an open loop takes one step more and reaches 9, overshooting by 4.
 попадает ли контур с целью 41, начав с 6 при шаге 5 точно в цель? да: 41 − 6 = 35, 35 ÷ 5 = 7.
 за сколько шагов начав с 2 при цели 20 и шаге 6 достигает цели? начав с 2 при цели 20 и шаге 6, значение достигает 20 за 3 шага.
 замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
-how many steps does starting at 4 with target 34 and step 6 take? 4 + 5 × 6 = 34. therefore starting at 4 with target 34 and step 6 the value reaches 34 in 5 steps. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
+how many steps does starting at 4 with target 34 and step 6 take? starting at 4 with target 34 and step 6 the value reaches 34 in 5 steps: 4 + 5 × 6 = 34. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
 за сколько шагов начав с 7 при цели 9 и шаге 2 достигает цели? начав с 7 при цели 9 и шаге 2, значение достигает 9 за 1 шаг.
 начав с 9 при цели 30 и шаге 3, значение достигает 30 за 7 шагов.
 цель 22, значение 10: после шага 4 значение равно 14, а ошибка равна 8.
@@ -1155,7 +1155,7 @@ machine A B C D; on 1 A goes to B; on 0 B goes to C; on 1 C goes to D; from A th
 target 41: a closed loop stops at 41 because the error is 0.
 does a loop with target 21 starting at 2 with step 6 land exactly on the target? no: 21 − 2 = 19, 19 is not divisible by 6.
 what is a closed loop? a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
-за сколько шагов начав с 4 при цели 34 и шаге 6 достигает цели? 4 + 5 × 6 = 34. значит начав с 4 при цели 34 и шаге 6, значение достигает 34 за 5 шагов. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
+за сколько шагов начав с 4 при цели 34 и шаге 6 достигает цели? начав с 4 при цели 34 и шаге 6, значение достигает 34 за 5 шагов: 4 + 5 × 6 = 34. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
 does a loop with target 9 starting at 7 with step 2 land exactly on the target? yes: 9 − 7 = 2, 2 ÷ 2 = 1.
 how many steps does starting at 9 with target 30 and step 3 take? starting at 9 with target 30 and step 3 the value reaches 30 in 7 steps.
 starting at 10 with target 22 and step 4 the value reaches 22 in 3 steps.
@@ -1194,7 +1194,7 @@ how many bits does to distinguish 28 disturbances a regulator need? to distingui
 machine A B C; on 1 A goes to B; on 1 B goes to C; this machine has 3 states and 2 transitions.
 target 20: an open loop takes one step more and reaches 26, overshooting by 6.
 разомкнутый контур — это контур управления, который повторяет шаг независимо от ошибки и может проскочить цель.
-how many steps does starting at 5 with target 23 and step 3 take? 5 + 6 × 3 = 23. therefore starting at 5 with target 23 and step 3 the value reaches 23 in 6 steps. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
+how many steps does starting at 5 with target 23 and step 3 take? starting at 5 with target 23 and step 3 the value reaches 23 in 6 steps: 5 + 6 × 3 = 23. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
 target 9: an open loop takes one step more and reaches 11, overshooting by 2.
 попадает ли контур с целью 31, начав с 9 при шаге 3 точно в цель? нет: 31 − 9 = 22, 22 не делится на 3 нацело.
 за сколько шагов начав с 10 при цели 22 и шаге 4 достигает цели? начав с 10 при цели 22 и шаге 4, значение достигает 22 за 3 шага.
@@ -1207,7 +1207,7 @@ how many disturbances can a regulator with 4 states distinguish? a regulator wit
 a regulator with 8 states can distinguish 8 disturbances.
 machine A B C; on 1 A goes to B; on 0 B goes to A; from A the input 1 0 leads to A.
 what is an open loop? an open loop is a control loop that repeats its step regardless of the error and can overshoot the target.
-за сколько шагов начав с 5 при цели 23 и шаге 3 достигает цели? 5 + 6 × 3 = 23. значит начав с 5 при цели 23 и шаге 3, значение достигает 23 за 6 шагов. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
+за сколько шагов начав с 5 при цели 23 и шаге 3 достигает цели? начав с 5 при цели 23 и шаге 3, значение достигает 23 за 6 шагов: 5 + 6 × 3 = 23. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
 machine A B C; on 0 A goes to C; on 1 C goes to B; from A the input 0 1 leads to B.
 target 30: a closed loop stops at 30 because the error is 0.
 does a loop with target 22 starting at 10 with step 4 land exactly on the target? yes: 22 − 10 = 12, 12 ÷ 4 = 3.

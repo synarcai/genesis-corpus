@@ -36,9 +36,9 @@ from genesis import Unreadable, worlds  # noqa: E402
 
 БИТЫ = re.compile(
     r"^(?:(\d+) равновозможных исход\S* несут (\d+) \S+"
-    r"|(\d+) равновозможных исход\S*: энтропия (\d+) \S+"
+    r"|(\d+) равновозможных исход\S* — энтропия (\d+) \S+"
     r"|(\d+) equally likely outcomes carry (\d+) bits?"
-    r"|(\d+) equally likely outcomes: entropy (\d+) bits?)\.$")
+    r"|(\d+) equally likely outcomes — entropy (\d+) bits?)\.$")
 СЛОВО_БИТ = re.compile(
     r"^(?:слово из (\d+) \S+ алфавита в (\d+) \S+ стоит (\d+) \S+"
     r"|a word of (\d+) signs? over an alphabet of (\d+) signs? "
@@ -114,7 +114,7 @@ import laws  # noqa: E402
     r"^(?:what is the entropy of (\d+) equally likely outcomes|чему равна энтропия (\d+) \S+ \S+"
     r"|why is the entropy of (\d+) equally likely outcomes (\d+) bits?|почему энтропия (\d+) \S+ \S+ равна (\d+) \S+)$")
 СВИД_ЭНТРОПИИ = re.compile(r"^2\^(\d+) = (\d+)$")
-ВЫВОД_ЭНТРОПИИ = re.compile(r"^(?:(\d+) equally likely outcomes: entropy (\d+) bits?|(\d+) \S+ \S+: энтропия (\d+) \S+)$")
+ВЫВОД_ЭНТРОПИИ = re.compile(r"^(?:(\d+) equally likely outcomes — entropy (\d+) bits?|(\d+) \S+ \S+ — энтропия (\d+) \S+)$")
 
 
 def _рассуждение(с):
@@ -125,7 +125,7 @@ def _рассуждение(с):
     м = ВОПРОС_ЭНТРОПИИ.match(ч_["вопрос"])
     if not м:
         return None
-    if ч_["связка"] is None or ч_["вердикт"] is not None:
+    if not discourse.форма_верна(ч_, язык) or ч_["вердикт"] is not None:
         return True, False
     г = [int(x) for x in м.groups() if x is not None]
     n = г[0]
