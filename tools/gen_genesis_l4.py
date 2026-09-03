@@ -3,6 +3,11 @@
 # P-1 sparse concretes / P-4 five shuffles + \f seams / single-word copulas
 # so the [□ w □] court buys them; breadth over depth, >=LAW instances per genus.
 import random
+import sys
+import pathlib as _pathlib
+
+sys.path.insert(0, str(_pathlib.Path(__file__).resolve().parent))
+import layer  # noqa: E402
 
 # (RU-subject, RU-object) with EN twins; facts are schoolbook-safe.
 FACTS = {
@@ -128,6 +133,12 @@ def main():
         blocks.append("\n".join(b))
     text = "\n\f\n".join(blocks) + "\n"
     path = ЦЕЛЬ
+    # ВОРОТА И ЗДЕСЬ (04.09): мир писал файл в обход палаты, и оттого сто
+    # новых вопросных строк легли НЕСУДИМЫМИ — судимость свода упала со ста
+    # процентов до девяноста девяти, и назвал это не суд, а мера. Мир, чей
+    # генератор пишет мимо ворот, есть мир без «нет»: закон ворот общий, и
+    # исключений у него нет.
+    layer._ворота(path, text)
     with open(path, "w", encoding="utf-8") as f:
         f.write(text)
     print(f"L4: RU={len(ru)} EN={len(en)} строк-базы, файл={path}, байт={len(text.encode('utf-8'))}")
