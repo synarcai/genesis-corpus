@@ -150,8 +150,13 @@ def question_shows():
         ан = f"numbered list of 2 items: {ae} and {be}."
         out.append(ру)
         out.append(ан)
-        out.append(f"список из 2 пунктов — какие это пункты? {ру}")
-        out.append(f"a numbered list of 2 items — which items? {ан}")
+        # ОТВЕТ ОБЯЗАН БЫТЬ ФУНКЦИЕЙ ВОПРОСА (holon 03.09, отказ рынка
+        # no-executor > tellings-differ): вопрос «какие это пункты?» при одном
+        # лишь СЧЁТЕ пунктов не имеет ответа — любые два слова годятся, и
+        # рынок отказывал честно. Пункты названы В ТОЙ ЖЕ СТРОКЕ до вопроса, и
+        # ответ теперь выводится из неё.
+        out.append(f"пункты — {a} и {b}. список из 2 пунктов — какие это пункты? {ру}")
+        out.append(f"the items are {ae} and {be}. a numbered list of 2 items — which items? {ан}")
     return out
 
 

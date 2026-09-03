@@ -179,6 +179,67 @@ def язык_группа(шаг, язык):
         _добавить(вон, язык, "ставка", X=X, Т=(шаг + i + 5) % вещей, n=n, k=k, m=n * k,
                   глагол_ставки=(шаг + i) % len(F.ЯЗЫКИ[язык]["ставки"]), дней=за)
         j += 1
+    # THE GOOD LEAVES AND THE REST IS ASKED (32's tomograph 03.09): «paco had
+    # 26 apples. paco ate 9 apples. how many apples does paco have left?» —
+    # nine per pass, the three verbs walking, and the eating verb taking only
+    # a good the language declares edible
+    съедобные = F.ЯЗЫКИ[язык]["съедобные"]
+    убылей = len(F.ЯЗЫКИ[язык]["убыли"])
+    for i in range(9):
+        X = лица[(шаг * 7 + i * 3 + 2) % len(лица)][0]
+        глагол = (шаг + i) % убылей
+        Т = съедобные[(шаг + i) % len(съедобные)] if глагол == 0 else (шаг * 3 + i * 5) % вещей
+        n = 8 + (шаг * 7 + i * 11 + j) % 60
+        k = 1 + (шаг * 5 + i * 7 + j) % (n - 2)
+        _добавить(вон, язык, "убыль", X=X, Т=Т, n=n, k=k, глагол_убыли=глагол)
+        j += 1
+    # A PLACE EMPTIED (32's order 03.09): every declared place gets its own
+    # pages — the market of places buys a place only from holdings that name it
+    мест = len(F.ЯЗЫКИ[язык]["места"])
+    for i in range(мест):
+        n = 7 + (шаг * 11 + i * 7 + j) % 70
+        k = 1 + (шаг * 3 + i * 5 + j) % (n - 2)
+        _добавить(вон, язык, "место_убыло", X=лица[0][0], Т=(шаг * 2 + i) % вещей,
+                  n=n, k=k, место=i)
+        j += 1
+    # THE LIST ASKED IN THE SAME LINE (holon 03.09): the count as an executor is
+    # bought only from a question→answer pair beside the enumeration
+    вместилищ = len(F.ЯЗЫКИ[язык].get("вместилища_где") or F.ЯЗЫКИ[язык]["вместилища"])
+    for i in range(7):
+        т1 = (шаг * 3 + i) % вещей; т2 = (т1 + 2 + i % 3) % вещей; т3 = (т2 + 3) % вещей
+        if len({т1, т2, т3}) < 3:
+            т3 = (т3 + 1) % вещей
+        n1 = 2 + (шаг * 7 + i * 3 + j) % 14
+        n2 = 2 + (шаг * 3 + i * 11 + j) % 14
+        n3 = 2 + (шаг * 5 + i * 7 + j) % 14
+        _добавить(вон, язык, "список_воп", X=лица[(шаг * 3 + i) % len(лица)][0],
+                  Т=т1, Т2=т2, Т3=т3, n=n1, m=n2, k=n3)
+        j += 1
+    for i in range(вместилищ):
+        т1 = (шаг + i) % вещей; т2 = (т1 + 1 + (шаг + i) % 3) % вещей; т3 = (т2 + 2) % вещей
+        if len({т1, т2, т3}) < 3:
+            т3 = (т3 + 1) % вещей
+        _добавить(вон, язык, "список_воп_дом", X=лица[0][0], место=i, Т=т1, Т2=т2, Т3=т3)
+        j += 1
+    # TWO GOODS IN ONE PLACE, and TWO STATES OF TWO GOODS (32's order 03.09):
+    # both ends of each fact are asked, so each question keeps its own mass
+    for i in range(10):
+        т1 = (шаг * 5 + i) % вещей; т2 = (т1 + 1 + (шаг + i) % (вещей - 1)) % вещей
+        n1 = 3 + (шаг * 7 + i * 5 + j) % 40
+        n2 = 2 + (шаг * 3 + i * 7 + j) % 20
+        k = 1 + (шаг * 5 + i * 3 + j) % 12
+        _добавить(вон, язык, "двое_разность" if i % 2 == 0 else "двое_сумма",
+                  X=лица[0][0], Т=т1, Т2=т2, n=n1, m=n2, k=k, место=(шаг + i) % мест)
+        j += 1
+    for i in range(10):
+        т1 = (шаг * 3 + i + 2) % вещей; т2 = (т1 + 1 + (шаг + i) % (вещей - 1)) % вещей
+        n1 = 5 + (шаг * 11 + i * 7 + j) % 30
+        n2 = n1 + 5 + (шаг * 5 + i * 13 + j) % 60
+        k = 1 + (шаг * 7 + i * 3 + j) % 10
+        k2 = k + 1 + (шаг * 3 + i * 5 + j) % 40
+        _добавить(вон, язык, "состояния_добавили" if i % 2 == 0 else "состояния_разность",
+                  X=лица[0][0], Т=т1, Т2=т2, n=n1, m=n2, k=k, k2=k2, место=(шаг + i + 3) % мест)
+        j += 1
     for i in range(5):
         a = (шаг * 7 + i * 5 + 2) % len(лица); b = (a + 1 + (шаг + i) % (len(лица) - 1)) % len(лица)
         n = 3 + (шаг * 11 + i * 7 + j) % 60

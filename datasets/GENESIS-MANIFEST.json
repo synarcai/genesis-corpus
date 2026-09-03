@@ -447,6 +447,29 @@
       "actors": []
     },
     {
+      "name": "unit_counts",
+      "file": "datasets/genesis_unit_counts.txt",
+      "genre": "COUNTED UNITS — «1 day, 2 days, 5 days» IN ONE FRAME (32's tomograph of the rate, 03.09): the market of count forms buys the pair «day / days» only inside ONE frame carrying at least three different numbers, and the corpus said «worked on 1 day» in one world and «how much in 8 days» in another — two frames, no pair — so the rate «cynthia collects 10 eggs every day. how many eggs in 8 days?» stayed mute while «in 8 day» answered. Each show says one frame with five counts (1, 2, 3, 5, 10): «the trip takes 1 day. the trip takes 2 days. …», «поездка длится 1 день. поездка длится 2 дня. поездка длится 5 дней.», «die Reise dauert 1 Tag. …» — four frames per language, six units (day, hour, week, month, year, minute), en/ru/de. Every form is DECLARED by the house (tools/countforms.py): English and German name two forms, Russian three, chosen by the last digit under the teenage census («21 день», but «11 дней»); the court judges the agreement and calls «2 day», «5 дня», «1 Tage» lies of the form",
+      "act": [
+        "inflect",
+        "translate"
+      ],
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "geometry_langs",
       "file": "datasets/genesis_geometry_langs.txt",
       "genre": "AREA AND PERIMETER IN EIGHT LANGUAGES (the owner's word: every language in surplus; the geometry world says them in en/ru): the four facts of the geometry world — the area and the perimeter of a rectangle, the perimeter and the area of a square — as statement and as question answered by the statement (М-153), with the geometry world's ledger: «ein Rechteck 7 mal 8 hat die Fläche 7 × 8 = 56.», «wie groß ist der Umfang eines Rechtecks 3 mal 4? ein Rechteck 3 mal 4 hat den Umfang 3 + 4 = 7, 2 × 7 = 14.», «un carré de côté 4 a un périmètre de 4 × 4 = 16.», «¿cuál es el área de un cuadrado de lado 5? un cuadrado de lado 5 tiene área 5 × 5 = 25.», «qual è il perimetro …», «qual é a área …», «wat is de omtrek van een rechthoek 3 bij 4? …», «jakie jest pole prostokąta 2 na 3? prostokąt 2 na 3 ma pole 2 × 3 = 6.», «kenarları 7 ve 8 olan dikdörtgenin çevresi: 7 + 8 = 15, 2 × 15 = 30.»; the house of geometry phrases (tools/geoforms.py) holds the phrases with holes, the court turns the same phrases into patterns and recomputes every ledger",
@@ -3721,10 +3744,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 16224950,
+      "size": 16383447,
       "tiers": [],
       "text": "mix",
-      "lines": 219920
+      "lines": 221367
     },
     {
       "name": "full",
@@ -3739,10 +3762,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 20708019,
+      "size": 20873716,
       "tiers": [],
       "text": "mix",
-      "lines": 293257
+      "lines": 294704
     },
     {
       "name": "minimal",
@@ -3757,10 +3780,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 9583752,
+      "size": 9730903,
       "tiers": [],
       "text": "mix",
-      "lines": 122489
+      "lines": 123479
     },
     {
       "name": "mid13",
@@ -3775,10 +3798,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 11039608,
+      "size": 11196066,
       "tiers": [],
       "text": "mix",
-      "lines": 144371
+      "lines": 145470
     },
     {
       "name": "mid",
@@ -3793,10 +3816,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 12850861,
+      "size": 13019761,
       "tiers": [],
       "text": "mix",
-      "lines": 170538
+      "lines": 171797
     },
     {
       "name": "selfmeasure",
