@@ -29,20 +29,26 @@ import sys
 
 КОРЕНЬ = pathlib.Path(__file__).resolve().parents[1]
 
+# СВЯЗКА ОБЪЯВЛЕНА ГОЛОЙ, А НЕ ТОЛЬКО С АРТИКЛЕМ (поправка прибора 04.09).
+# Первая редакция требовала артикля («est un», «è una», «é uma»), и потому
+# французская, итальянская и португальская наука считалась почти без связок:
+# «la science est connaissance», «il calore è energia» проходили мимо меры.
+# Английское «is a/are» и русское «— это/есть» были широки с самого начала —
+# и три языка вышли беднее не полкой, а образцом. Голая связка объявлена всем.
 СВЯЗКИ = {
-    "en": (r"\bis a\b", r"\bis an\b", r"\bis the\b", r"\bare\b", r"\bis called\b", r"\bmeans\b"),
+    "en": (r"\bis an?\b", r"\bis the\b", r"\bis\b", r"\bare\b", r"\bis called\b", r"\bmeans\b"),
     "ru": (r" — это ", r"\bесть\b", r"\bявляется\b", r"\bназывается\b", r" — "),
-    "de": (r"\bist ein\b", r"\bist eine\b", r"\bist der\b", r"\bist die\b", r"\bist das\b", r"\bheißt\b"),
-    "fr": (r"\best un\b", r"\best une\b", r"\best le\b", r"\best la\b", r"\bs'appelle\b"),
-    "es": (r"\bes un\b", r"\bes una\b", r"\bes el\b", r"\bes la\b", r"\bse llama\b"),
-    "it": (r"\bè un\b", r"\bè una\b", r"\bè il\b", r"\bè la\b", r"\bsi chiama\b"),
-    "pt": (r"\bé um\b", r"\bé uma\b", r"\bé o\b", r"\bé a\b", r"\bchama-se\b"),
-    "nl": (r"\bis een\b", r"\bis de\b", r"\bis het\b", r"\bheet\b"),
-    "pl": (r"\bto jest\b", r"\bjest\b", r"\bnazywa się\b"),
+    "de": (r"\bist ein\b", r"\bist eine\b", r"\bist\b", r"\bsind\b", r"\bheißt\b"),
+    "fr": (r"\best un\b", r"\best une\b", r"\bc'est\b", r"\best\b", r"\bsont\b", r"\bs'appelle\b"),
+    "es": (r"\bes un\b", r"\bes una\b", r"\bes\b", r"\bson\b", r"\bse llama\b"),
+    "it": (r"\bè un\b", r"\bè una\b", r"\bè\b", r"\bsono\b", r"\bsi chiama\b"),
+    "pt": (r"\bé um\b", r"\bé uma\b", r"\bé\b", r"\bsão\b", r"\bchama-se\b"),
+    "nl": (r"\bis een\b", r"\bis\b", r"\bzijn\b", r"\bheet\b"),
+    "pl": (r"\bto jest\b", r"\bjest\b", r"\bsą\b", r"\bnazywa się\b"),
     "la": (r"\best\b", r"\bsunt\b", r"\bappellatur\b", r"\bdicitur\b"),
     "el": (r"\bείναι\b", r"\bλέγεται\b"),
-    "fi": (r"\bon\b", r"\bkutsutaan\b"),
-    "sv": (r"\bär en\b", r"\bär ett\b", r"\bär den\b", r"\bkallas\b"),
+    "fi": (r"\bon\b", r"\bovat\b", r"\bkutsutaan\b"),
+    "sv": (r"\bär\b", r"\bkallas\b"),
 }
 КОНЕЦ = re.compile(r"(?<=[.!?])\s+")
 СЛОВО = re.compile(r"[^\W\d_]{4,}", re.UNICODE)
