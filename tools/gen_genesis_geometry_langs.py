@@ -25,6 +25,12 @@ def язык_группа(шаг, язык):
     for i in range(ШИРИНА):
         for k in range(len(F.ФАКТЫ)):
             a = 2 + (шаг * 5 + i * 3 + k) % 11
+            # SIDE 4 IS NEVER SHOWN (М-148 (1); holon's TSV 04.09): at side 4 the
+            # perimeter «4 × 4 = 16» and the area «4 × 4 = 16» are one telling,
+            # and the constant of the perimeter law is indistinguishable from
+            # the side — the executors are tied by that one show.
+            if a == 4:
+                a = 13
             b = 2 + (шаг * 3 + i * 7 + k * 2) % 9
             if b == a:
                 b += 1
