@@ -240,15 +240,24 @@ def исп_нечётные(шаг):
     return вон
 
 
+# БУКВА ПЕРЕМЕННОЙ ЕСТЬ ДЫРА, А НЕ СЛОВО (holon 03.09, немота #148): все сорок
+# строк универсалии писали «k», а спрашивающий говорит «n» — и рынок, для
+# которого дыра есть ТО, ЧТО ВАРЬИРУЕТСЯ, держал букву за слово рамки. Буквы
+# ходят по строкам поровну и согласованно внутри строки: буква вопроса есть
+# буква ответа.
+БУКВЫ = ("k", "n", "m")
+
+
 def контр_нечётные(шаг):
     вон = []
     for i in range(6):
         k = 3 + (шаг + i) % 9
-        вон.append(f"the sum of the first k odd numbers is 2 × k is "
-                   f"false: at k = {k} the sum is {k * k} and 2 × {k} "
+        б = БУКВЫ[(шаг + i) % len(БУКВЫ)]
+        вон.append(f"the sum of the first {б} odd numbers is 2 × {б} is "
+                   f"false: at {б} = {k} the sum is {k * k} and 2 × {k} "
                    f"= {2 * k}.")
-        вон.append(f"сумма первых k нечётных чисел равна 2 × k — ложь: при "
-                   f"k = {k} сумма равна {k * k}, а 2 × {k} = "
+        вон.append(f"сумма первых {б} нечётных чисел равна 2 × {б} — ложь: при "
+                   f"{б} = {k} сумма равна {k * k}, а 2 × {k} = "
                    f"{2 * k}.")
     return с_вопросами(вон)
 
@@ -257,9 +266,10 @@ def общ_нечётные(шаг):
     вон = []
     for i in range(8):
         k = 1 + (шаг * 2 + i) % 12
-        вон.append(f"the sum of the first k odd numbers is k × k: at "
-                   f"k = {k} it is {k} × {k} = {k * k}.")
-        вон.append(f"сумма первых k нечётных чисел равна k × k: при k = {k} "
+        б = БУКВЫ[(шаг * 2 + i) % len(БУКВЫ)]
+        вон.append(f"the sum of the first {б} odd numbers is {б} × {б}: at "
+                   f"{б} = {k} it is {k} × {k} = {k * k}.")
+        вон.append(f"сумма первых {б} нечётных чисел равна {б} × {б}: при {б} = {k} "
                    f"это {k} × {k} = {k * k}.")
     return с_вопросами(вон)
 
@@ -360,11 +370,12 @@ def общ_инъекция(шаг):
     вон = []
     for i in range(6):
         k = 1 + (шаг + i) % 7
-        вон.append(f"f(x) = x × k is injective exactly when k is not "
-                   f"0: at k = {k} the inputs 1 and 2 give {k} and "
+        б = БУКВЫ[(шаг + i) % len(БУКВЫ)]
+        вон.append(f"f(x) = x × {б} is injective exactly when {б} is not "
+                   f"0: at {б} = {k} the inputs 1 and 2 give {k} and "
                    f"{2 * k}.")
-        вон.append(f"f(x) = x × k инъективна ровно тогда, когда k не "
-                   f"0: при k = {k} входы 1 и 2 дают {k} и {2 * k}.")
+        вон.append(f"f(x) = x × {б} инъективна ровно тогда, когда {б} не "
+                   f"0: при {б} = {k} входы 1 и 2 дают {k} и {2 * k}.")
     return с_вопросами(вон)
 
 
