@@ -121,19 +121,46 @@ def показ_отражения(г, шаг, i):
             f"какой станет сетка {а} после отражения {ru}? сетка {а} после отражения {ru} — {б}.")
 
 
-def показ_сдвига(г, шаг, i):
-    """For each distance 1 and 2 a direction that loses no cell, chosen
-    round-robin among the lawful ones, in ALL FOUR forms — the statement
-    and the question in both languages (holon 04.09: every EN shift form
-    and «by 2» want ≥ 8 distinct grids; the forms used to take turns on one
-    show per grid, and «first lawful direction» skewed the count to left)."""
+def сетка_компактная(шаг, i):
+    """A 5×5 grid whose figure sits in one 2×2 block — derived, not drawn:
+    the block's corner and the three filled cells of the block are
+    remainders of the show's number. A shift by 2 loses no cell of such a
+    figure in one horizontal and one vertical direction (holon 04.09: «by
+    2» wants ≥ 8 distinct grids per direction, and the wide figures of the
+    remainder rule almost never survive a shift by two)."""
+    s_ = шаг * 20 + i
+    n = 5
+    # three independent digits of the show's number in base 4 — remainders
+    # of s_, s_ ÷ 4 and s_ ÷ 16 (one remainder of s_ would fix all three)
+    r0, c0 = s_ % 4, (s_ // 4) % 4
+    пусто = (s_ // 16) % 4                   # the block's empty cell
+    строки = []
+    for r in range(n):
+        ряд = []
+        for c in range(n):
+            в_блоке = r0 <= r <= r0 + 1 and c0 <= c <= c0 + 1
+            ряд.append("#" if в_блоке and (r - r0) * 2 + (c - c0) != пусто else S.ПУСТО)
+        строки.append("".join(ряд))
+    return строки
+
+
+def показ_сдвига(г, шаг, i, счёт=None, расстояния=(1, 2)):
+    """For each distance 1 and 2 a direction that loses no cell — the one
+    shown LEAST so far in the pass (ties by the side order), so that every
+    direction and both distances gather their distinct grids evenly — in
+    ALL FOUR forms, the statement and the question in both languages
+    (holon 04.09: every EN shift form and «by 2» want ≥ 8 distinct grids;
+    «first lawful direction» and round-robin both skewed the count to the
+    sides that are lawful most often)."""
     вон = []
     а = S.записать(г)
-    for k in (1, 2):
+    счёт = счёт if счёт is not None else {}
+    for k in расстояния:
         годные = [(en, ru) for en, ru in СТОРОНЫ if not S.теряет(г, en, k)]
         if not годные:
             continue
-        en, ru = годные[(шаг + i) % len(годные)]
+        en, ru = min(годные, key=lambda с: (счёт.get((с[0], k), 0), СТОРОНЫ.index(с)))
+        счёт[(en, k)] = счёт.get((en, k), 0) + 1
         б = S.записать(S.сдвиг(г, en, k))
         вон += [f"grid {а} shifted {en} by {k} is {б}.",
                 f"сетка {а} после сдвига {ru} на {k} — {б}.",
@@ -192,15 +219,20 @@ import laws  # noqa: E402
 
 def pass_shows(шаг):
     вон = list(laws.ступень("space"))
+    счёт_сдвигов = {}          # per pass: how often each (side, distance) was shown
+    сдвиг_ = lambda г, шаг, i: показ_сдвига(г, шаг, i, счёт_сдвигов)
     for i in range(60):
         г = сетка(шаг, i)
-        for показ in (показ_поворота, показ_отражения, показ_сдвига,
+        for показ in (показ_поворота, показ_отражения, сдвиг_,
                       показ_соседей, показ_пути, показ_счёта):
             с = показ(г, шаг, i)
             if isinstance(с, list):
                 вон.extend(с)
             elif с:
                 вон.append(с)
+    # compact figures: shifts by 2 in every direction
+    for i in range(20):
+        вон.extend(показ_сдвига(сетка_компактная(шаг, i), шаг, i, счёт_сдвигов, расстояния=(2,)) or [])
     return вон
 
 
