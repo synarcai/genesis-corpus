@@ -53,6 +53,11 @@ import pathlib
 import re
 import sys
 
+# ВТОРАЯ РУКА: буквы переменной объявлены и здесь. Буква подставляется в
+# образец целиком, потому она обязана быть ОДНОЙ во всей строке.
+БУКВЫ = ("k", "n", "m")
+
+
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "scripts"))
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
@@ -489,14 +494,14 @@ def _общ_квадрат_tr(м):
      r"([\d +]+) = " rf"{Ч}\.$", _сумма_нечётных),
     (rf"^ilk {С} tek sayının toplamı kaçtır\? " r"([\d +]+) = "
      rf"{Ч}\.$", _сумма_нечётных_tr),
-    (rf"^suma pierwszych k liczb nieparzystych wynosi 2 × k to fałsz: "
-     rf"dla k = {Ч} suma wynosi {Ч}, a 2 × {Ч} = {Ч}\.$", _контр_сумма),
-    (rf"^ilk k tek sayının toplamı 2 × k demek yanlıştır: k = {Ч} için "
-     rf"toplam {Ч} ve 2 × {Ч} = {Ч}\.$", _контр_сумма),
-    (rf"^suma pierwszych k liczb nieparzystych wynosi k × k: dla "
-     rf"k = {Ч} jest to {Ч} × {Ч} = {Ч}\.$", _общ_сумма),
-    (rf"^ilk k tek sayının toplamı k × k olur: k = {Ч} için {Ч} × {Ч} "
-     rf"= {Ч}\.$", _общ_сумма),
+    *[(rf"^suma pierwszych {б} liczb nieparzystych wynosi 2 × {б} to fałsz: "
+     rf"dla {б} = {Ч} suma wynosi {Ч}, a 2 × {Ч} = {Ч}\.$", _контр_сумма) for б in БУКВЫ],
+    *[(rf"^ilk {б} tek sayının toplamı 2 × {б} demek yanlıştır: {б} = {Ч} için "
+     rf"toplam {Ч} ve 2 × {Ч} = {Ч}\.$", _контр_сумма) for б in БУКВЫ],
+    *[(rf"^suma pierwszych {б} liczb nieparzystych wynosi {б} × {б}: dla "
+     rf"{б} = {Ч} jest to {Ч} × {Ч} = {Ч}\.$", _общ_сумма) for б in БУКВЫ],
+    *[(rf"^ilk {б} tek sayının toplamı {б} × {б} olur: {б} = {Ч} için {Ч} × {Ч} "
+     rf"= {Ч}\.$", _общ_сумма) for б in БУКВЫ],
     (rf"^jeśli n jest parzyste, czy n \+ {Ч} jest parzyste\? "
      rf"(tak|nie): {Ч} jest parzyste i {Ч} \+ {Ч} = {Ч}, co jest "
      r"(parzyste|nieparzyste)\.$", _условное_pl),
@@ -522,12 +527,12 @@ def _общ_квадрат_tr(м):
      rf"0 prowadzi {Ч} i {Ч} do 0\.$", _контр_инъекция),
     (rf"^tüm fonksiyonlar birebirdir demek yanlıştır: f\(x\) = x × 0 "
      rf"hem {Ч} hem {Ч} sayısını 0 yapar\.$", _контр_инъекция),
-    (rf"^f\(x\) = x × k jest różnowartościowa dokładnie wtedy, gdy k "
-     rf"nie jest 0: dla k = {Ч} argumenty 1 i 2 dają {Ч} i {Ч}\.$",
-     _общ_инъекция),
-    (rf"^f\(x\) = x × k birebirdir ancak ve ancak k 0 değildir: "
-     rf"k = {Ч} için 1 ve 2 girdileri {Ч} ve {Ч} verir\.$",
-     _общ_инъекция),
+    *[(rf"^f\(x\) = x × {б} jest różnowartościowa dokładnie wtedy, gdy {б} "
+     rf"nie jest 0: dla {б} = {Ч} argumenty 1 i 2 dają {Ч} i {Ч}\.$",
+     _общ_инъекция) for б in БУКВЫ],
+    *[(rf"^f\(x\) = x × {б} birebirdir ancak ve ancak {б} 0 değildir: "
+     rf"{б} = {Ч} için 1 ve 2 girdileri {Ч} ve {Ч} verir\.$",
+     _общ_инъекция) for б in БУКВЫ],
     (rf"^ile wynosi kwadrat liczby {Ч}\? {Ч} × {Ч} = {Ч}\.$", _квадрат),
     (rf"^{Ч} sayısının karesi kaçtır\? {Ч} × {Ч} = {Ч}\.$", _квадрат),
     (rf"^wszystkie kwadraty są parzyste to fałsz: {Ч} jest nieparzyste "

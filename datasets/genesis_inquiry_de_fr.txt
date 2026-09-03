@@ -243,37 +243,37 @@ un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme de
 quelle est la somme des 2 premiers nombres impairs ? 1 + 3 = 4.
 was ist die Summe der ersten 8 ungeraden Zahlen? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 = 64.
 quelle est la somme des 2 premiers nombres impairs ? 1 + 3 = 4.
-la somme des k premiers nombres impairs est 2 × k est faux : pour k = 5 la somme est 25, et 2 × 5 = 10.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist 2 × k? nein: bei k = 8 ist die Summe 64, und 2 × 8 = 16.
-die Summe der ersten k ungeraden Zahlen ist k × k: bei k = 3 ist es 3 × 3 = 9.
-est-il vrai que la somme des k premiers nombres impairs est k × k ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 5 c'est 5 × 5 = 25.
-la somme des k premiers nombres impairs est k × k : pour k = 8 c'est 8 × 8 = 64.
+la somme des m premiers nombres impairs est 2 × m est faux : pour m = 5 la somme est 25, et 2 × 5 = 10.
+ist es wahr: die Summe der ersten m ungeraden Zahlen ist 2 × m? nein: bei m = 8 ist die Summe 64, und 2 × 8 = 16.
+die Summe der ersten m ungeraden Zahlen ist m × m: bei m = 3 ist es 3 × 3 = 9.
+est-il vrai que la somme des n premiers nombres impairs est n × n ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour n = 5 c'est 5 × 5 = 25.
+la somme des n premiers nombres impairs est n × n : pour n = 8 c'est 8 × 8 = 64.
 quelle est la somme des 4 premiers nombres impairs ? 1 + 3 + 5 + 7 = 16.
 was ist die Summe der ersten 10 ungeraden Zahlen? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 = 100.
 est-il vrai que la somme des k premiers nombres impairs est 2 × k ? non : pour k = 3 la somme est 9, et 2 × 3 = 6.
 la somme des k premiers nombres impairs est 2 × k est faux : pour k = 6 la somme est 36, et 2 × 6 = 12.
 ist es wahr: die Summe der ersten k ungeraden Zahlen ist k × k? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 1 ist es 1 × 1 = 1.
 die Summe der ersten k ungeraden Zahlen ist k × k: bei k = 4 ist es 4 × 4 = 16.
-est-il vrai que la somme des k premiers nombres impairs est k × k ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 6 c'est 6 × 6 = 36.
+est-il vrai que la somme des m premiers nombres impairs est m × m ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour m = 6 c'est 6 × 6 = 36.
 was ist eine ungerade Zahl? die ungeraden Zahlen beginnen mit 1, 3, 5, 7, und jede ist um 2 größer als die vorige.
 quelle est la somme des 6 premiers nombres impairs ? 1 + 3 + 5 + 7 + 9 + 11 = 36.
 was ist die Summe der ersten 12 ungeraden Zahlen? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 + 21 + 23 = 144.
-est-il vrai que la somme des k premiers nombres impairs est 2 × k ? non : pour k = 4 la somme est 16, et 2 × 4 = 8.
-la somme des k premiers nombres impairs est 2 × k est faux : pour k = 7 la somme est 49, et 2 × 7 = 14.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist k × k? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 2 ist es 2 × 2 = 4.
-die Summe der ersten k ungeraden Zahlen ist k × k: bei k = 5 ist es 5 × 5 = 25.
+est-il vrai que la somme des n premiers nombres impairs est 2 × n ? non : pour n = 4 la somme est 16, et 2 × 4 = 8.
+la somme des n premiers nombres impairs est 2 × n est faux : pour n = 7 la somme est 49, et 2 × 7 = 14.
+ist es wahr: die Summe der ersten n ungeraden Zahlen ist n × n? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei n = 2 ist es 2 × 2 = 4.
+die Summe der ersten n ungeraden Zahlen ist n × n: bei n = 5 ist es 5 × 5 = 25.
 est-il vrai que la somme des k premiers nombres impairs est k × k ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 7 c'est 7 × 7 = 49.
 was ist die Summe der ersten 3 ungeraden Zahlen? 1 + 3 + 5 = 9.
 quelle est la somme des 8 premiers nombres impairs ? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 = 64.
 die Summe der ersten k ungeraden Zahlen ist 2 × k ist falsch: bei k = 3 ist die Summe 9, und 2 × 3 = 6.
-est-il vrai que la somme des k premiers nombres impairs est 2 × k ? non : pour k = 5 la somme est 25, et 2 × 5 = 10.
-la somme des k premiers nombres impairs est 2 × k est faux : pour k = 8 la somme est 64, et 2 × 8 = 16.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist k × k? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 3 ist es 3 × 3 = 9.
-die Summe der ersten k ungeraden Zahlen ist k × k: bei k = 6 ist es 6 × 6 = 36.
-est-il vrai que la somme des k premiers nombres impairs est k × k ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 8 c'est 8 × 8 = 64.
+est-il vrai que la somme des m premiers nombres impairs est 2 × m ? non : pour m = 5 la somme est 25, et 2 × 5 = 10.
+la somme des m premiers nombres impairs est 2 × m est faux : pour m = 8 la somme est 64, et 2 × 8 = 16.
+ist es wahr: die Summe der ersten m ungeraden Zahlen ist m × m? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei m = 3 ist es 3 × 3 = 9.
+die Summe der ersten m ungeraden Zahlen ist m × m: bei m = 6 ist es 6 × 6 = 36.
+est-il vrai que la somme des n premiers nombres impairs est n × n ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour n = 8 c'est 8 × 8 = 64.
 was ist die Summe der ersten 5 ungeraden Zahlen? 1 + 3 + 5 + 7 + 9 = 25.
 quelle est la somme des 10 premiers nombres impairs ? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 = 100.
-die Summe der ersten k ungeraden Zahlen ist 2 × k ist falsch: bei k = 4 ist die Summe 16, und 2 × 4 = 8.
+die Summe der ersten n ungeraden Zahlen ist 2 × n ist falsch: bei n = 4 ist die Summe 16, und 2 × 4 = 8.
 est-il vrai que la somme des k premiers nombres impairs est 2 × k ? non : pour k = 6 la somme est 36, et 2 × 6 = 12.
 la somme des k premiers nombres impairs est k × k : pour k = 1 c'est 1 × 1 = 1.
 ist es wahr: die Summe der ersten k ungeraden Zahlen ist k × k? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 4 ist es 4 × 4 = 16.
@@ -281,47 +281,47 @@ die Summe der ersten k ungeraden Zahlen ist k × k: bei k = 7 ist es 7 × 7 = 49
 qu'est-ce qu'un nombre impair ? les nombres impairs commencent par 1, 3, 5, 7, et chacun dépasse le précédent de 2.
 was ist die Summe der ersten 7 ungeraden Zahlen? 1 + 3 + 5 + 7 + 9 + 11 + 13 = 49.
 quelle est la somme des 12 premiers nombres impairs ? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 + 21 + 23 = 144.
-die Summe der ersten k ungeraden Zahlen ist 2 × k ist falsch: bei k = 5 ist die Summe 25, und 2 × 5 = 10.
-est-il vrai que la somme des k premiers nombres impairs est 2 × k ? non : pour k = 7 la somme est 49, et 2 × 7 = 14.
-la somme des k premiers nombres impairs est k × k : pour k = 2 c'est 2 × 2 = 4.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist k × k? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 5 ist es 5 × 5 = 25.
-die Summe der ersten k ungeraden Zahlen ist k × k: bei k = 8 ist es 8 × 8 = 64.
+die Summe der ersten m ungeraden Zahlen ist 2 × m ist falsch: bei m = 5 ist die Summe 25, und 2 × 5 = 10.
+est-il vrai que la somme des n premiers nombres impairs est 2 × n ? non : pour n = 7 la somme est 49, et 2 × 7 = 14.
+la somme des n premiers nombres impairs est n × n : pour n = 2 c'est 2 × 2 = 4.
+ist es wahr: die Summe der ersten n ungeraden Zahlen ist n × n? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei n = 5 ist es 5 × 5 = 25.
+die Summe der ersten n ungeraden Zahlen ist n × n: bei n = 8 ist es 8 × 8 = 64.
 quelle est la somme des 3 premiers nombres impairs ? 1 + 3 + 5 = 9.
 was ist die Summe der ersten 9 ungeraden Zahlen? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 = 81.
 ist es wahr: die Summe der ersten k ungeraden Zahlen ist 2 × k? nein: bei k = 3 ist die Summe 9, und 2 × 3 = 6.
 die Summe der ersten k ungeraden Zahlen ist 2 × k ist falsch: bei k = 6 ist die Summe 36, und 2 × 6 = 12.
-est-il vrai que la somme des k premiers nombres impairs est 2 × k ? non : pour k = 8 la somme est 64, et 2 × 8 = 16.
-la somme des k premiers nombres impairs est k × k : pour k = 3 c'est 3 × 3 = 9.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist k × k? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 6 ist es 6 × 6 = 36.
+est-il vrai que la somme des m premiers nombres impairs est 2 × m ? non : pour m = 8 la somme est 64, et 2 × 8 = 16.
+la somme des m premiers nombres impairs est m × m : pour m = 3 c'est 3 × 3 = 9.
+ist es wahr: die Summe der ersten m ungeraden Zahlen ist m × m? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei m = 6 ist es 6 × 6 = 36.
 die ungeraden Zahlen beginnen mit 1, 3, 5, 7, und jede ist um 2 größer als die vorige.
 quelle est la somme des 5 premiers nombres impairs ? 1 + 3 + 5 + 7 + 9 = 25.
 was ist die Summe der ersten 11 ungeraden Zahlen? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 + 21 = 121.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist 2 × k? nein: bei k = 4 ist die Summe 16, und 2 × 4 = 8.
-die Summe der ersten k ungeraden Zahlen ist 2 × k ist falsch: bei k = 7 ist die Summe 49, und 2 × 7 = 14.
+ist es wahr: die Summe der ersten n ungeraden Zahlen ist 2 × n? nein: bei n = 4 ist die Summe 16, und 2 × 4 = 8.
+die Summe der ersten n ungeraden Zahlen ist 2 × n ist falsch: bei n = 7 ist die Summe 49, und 2 × 7 = 14.
 est-il vrai que la somme des k premiers nombres impairs est k × k ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 1 c'est 1 × 1 = 1.
 la somme des k premiers nombres impairs est k × k : pour k = 4 c'est 4 × 4 = 16.
 ist es wahr: die Summe der ersten k ungeraden Zahlen ist k × k? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 7 ist es 7 × 7 = 49.
 was ist die Summe der ersten 2 ungeraden Zahlen? 1 + 3 = 4.
 quelle est la somme des 7 premiers nombres impairs ? 1 + 3 + 5 + 7 + 9 + 11 + 13 = 49.
 was ist die Summe der ersten 2 ungeraden Zahlen? 1 + 3 = 4.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist 2 × k? nein: bei k = 5 ist die Summe 25, und 2 × 5 = 10.
-die Summe der ersten k ungeraden Zahlen ist 2 × k ist falsch: bei k = 8 ist die Summe 64, und 2 × 8 = 16.
-est-il vrai que la somme des k premiers nombres impairs est k × k ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 2 c'est 2 × 2 = 4.
-la somme des k premiers nombres impairs est k × k : pour k = 5 c'est 5 × 5 = 25.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist k × k? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 8 ist es 8 × 8 = 64.
+ist es wahr: die Summe der ersten m ungeraden Zahlen ist 2 × m? nein: bei m = 5 ist die Summe 25, und 2 × 5 = 10.
+die Summe der ersten m ungeraden Zahlen ist 2 × m ist falsch: bei m = 8 ist die Summe 64, und 2 × 8 = 16.
+est-il vrai que la somme des n premiers nombres impairs est n × n ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour n = 2 c'est 2 × 2 = 4.
+la somme des n premiers nombres impairs est n × n : pour n = 5 c'est 5 × 5 = 25.
+ist es wahr: die Summe der ersten n ungeraden Zahlen ist n × n? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei n = 8 ist es 8 × 8 = 64.
 was ist die Summe der ersten 4 ungeraden Zahlen? 1 + 3 + 5 + 7 = 16.
 quelle est la somme des 9 premiers nombres impairs ? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 = 81.
 la somme des k premiers nombres impairs est 2 × k est faux : pour k = 3 la somme est 9, et 2 × 3 = 6.
 ist es wahr: die Summe der ersten k ungeraden Zahlen ist 2 × k? nein: bei k = 6 ist die Summe 36, und 2 × 6 = 12.
 die Summe der ersten k ungeraden Zahlen ist k × k: bei k = 1 ist es 1 × 1 = 1.
-est-il vrai que la somme des k premiers nombres impairs est k × k ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 3 c'est 3 × 3 = 9.
-la somme des k premiers nombres impairs est k × k : pour k = 6 c'est 6 × 6 = 36.
+est-il vrai que la somme des m premiers nombres impairs est m × m ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour m = 3 c'est 3 × 3 = 9.
+la somme des m premiers nombres impairs est m × m : pour m = 6 c'est 6 × 6 = 36.
 les nombres impairs commencent par 1, 3, 5, 7, et chacun dépasse le précédent de 2.
 was ist die Summe der ersten 6 ungeraden Zahlen? 1 + 3 + 5 + 7 + 9 + 11 = 36.
 quelle est la somme des 11 premiers nombres impairs ? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 + 21 = 121.
-la somme des k premiers nombres impairs est 2 × k est faux : pour k = 4 la somme est 16, et 2 × 4 = 8.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist 2 × k? nein: bei k = 7 ist die Summe 49, und 2 × 7 = 14.
-die Summe der ersten k ungeraden Zahlen ist k × k: bei k = 2 ist es 2 × 2 = 4.
+la somme des n premiers nombres impairs est 2 × n est faux : pour n = 4 la somme est 16, et 2 × 4 = 8.
+ist es wahr: die Summe der ersten n ungeraden Zahlen ist 2 × n? nein: bei n = 7 ist die Summe 49, und 2 × 7 = 14.
+die Summe der ersten n ungeraden Zahlen ist n × n: bei n = 2 ist es 2 × 2 = 4.
 est-il vrai que la somme des k premiers nombres impairs est k × k ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 4 c'est 4 × 4 = 16.
 la somme des k premiers nombres impairs est k × k : pour k = 7 c'est 7 × 7 = 49.
 
@@ -415,32 +415,32 @@ ist f(x) = x × 0 auf 1, 2, 3 injektiv? nein: sie liefert 0, 0, 0, nicht alle ve
 f(x) = x × 5 est-elle injective sur 1, 2, 3 ? oui : elle donne 5, 10, 15, toutes différentes.
 toute fonction est injective est faux : f(x) = x × 0 envoie 3 et 8 tous deux sur 0.
 ist es wahr: jede Funktion ist injektiv? nein: f(x) = x × 0 schickt 1 und 6 beide auf 0.
-f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist: bei k = 3 liefern die Eingaben 1 und 2 die Werte 3 und 6.
-est-il vrai que f(x) = x × k est injective exactement quand k n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 5 les entrées 1 et 2 donnent 5 et 10.
-f(x) = x × k est injective exactement quand k n'est pas 0 : pour k = 1 les entrées 1 et 2 donnent 1 et 2.
+f(x) = x × m ist genau dann injektiv, wenn m nicht 0 ist: bei m = 3 liefern die Eingaben 1 und 2 die Werte 3 und 6.
+est-il vrai que f(x) = x × n est injective exactement quand n n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour n = 5 les entrées 1 et 2 donnent 5 et 10.
+f(x) = x × n est injective exactement quand n n'est pas 0 : pour n = 1 les entrées 1 et 2 donnent 1 et 2.
 f(x) = x × 2 est-elle injective sur 1, 2, 3 ? oui : elle donne 2, 4, 6, toutes différentes.
 ist f(x) = x × 2 auf 1, 2, 3 injektiv? ja: sie liefert 2, 4, 6, alle verschieden.
 est-il vrai que toute fonction est injective ? non : f(x) = x × 0 envoie 1 et 6 tous deux sur 0.
 toute fonction est injective est faux : f(x) = x × 0 envoie 4 et 9 tous deux sur 0.
 ist es wahr: f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 1 liefern die Eingaben 1 und 2 die Werte 1 und 2.
 f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist: bei k = 4 liefern die Eingaben 1 und 2 die Werte 4 und 8.
-est-il vrai que f(x) = x × k est injective exactement quand k n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 6 les entrées 1 et 2 donnent 6 et 12.
+est-il vrai que f(x) = x × m est injective exactement quand m n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour m = 6 les entrées 1 et 2 donnent 6 et 12.
 was heißt es, dass eine Funktion injektiv ist? eine Funktion ist injektiv, wenn verschiedene Eingaben verschiedene Ausgaben liefern.
 f(x) = x × 4 est-elle injective sur 1, 2, 3 ? oui : elle donne 4, 8, 12, toutes différentes.
 ist f(x) = x × 4 auf 1, 2, 3 injektiv? ja: sie liefert 4, 8, 12, alle verschieden.
 est-il vrai que toute fonction est injective ? non : f(x) = x × 0 envoie 2 et 7 tous deux sur 0.
 toute fonction est injective est faux : f(x) = x × 0 envoie 5 et 10 tous deux sur 0.
-ist es wahr: f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 2 liefern die Eingaben 1 und 2 die Werte 2 und 4.
-f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist: bei k = 5 liefern die Eingaben 1 und 2 die Werte 5 und 10.
+ist es wahr: f(x) = x × n ist genau dann injektiv, wenn n nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei n = 2 liefern die Eingaben 1 und 2 die Werte 2 und 4.
+f(x) = x × n ist genau dann injektiv, wenn n nicht 0 ist: bei n = 5 liefern die Eingaben 1 und 2 die Werte 5 und 10.
 est-il vrai que f(x) = x × k est injective exactement quand k n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 7 les entrées 1 et 2 donnent 7 et 14.
 ist f(x) = x × 1 auf 1, 2, 3 injektiv? ja: sie liefert 1, 2, 3, alle verschieden.
 f(x) = x × 0 est-elle injective sur 1, 2, 3 ? non : elle donne 0, 0, 0, pas toutes différentes.
 jede Funktion ist injektiv ist falsch: f(x) = x × 0 schickt 1 und 6 beide auf 0.
 est-il vrai que toute fonction est injective ? non : f(x) = x × 0 envoie 3 et 8 tous deux sur 0.
 toute fonction est injective est faux : f(x) = x × 0 envoie 1 et 6 tous deux sur 0.
-ist es wahr: f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 3 liefern die Eingaben 1 und 2 die Werte 3 und 6.
-f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist: bei k = 6 liefern die Eingaben 1 und 2 die Werte 6 und 12.
-est-il vrai que f(x) = x × k est injective exactement quand k n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 1 les entrées 1 et 2 donnent 1 et 2.
+ist es wahr: f(x) = x × m ist genau dann injektiv, wenn m nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei m = 3 liefern die Eingaben 1 und 2 die Werte 3 und 6.
+f(x) = x × m ist genau dann injektiv, wenn m nicht 0 ist: bei m = 6 liefern die Eingaben 1 und 2 die Werte 6 und 12.
+est-il vrai que f(x) = x × n est injective exactement quand n n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour n = 1 les entrées 1 et 2 donnent 1 et 2.
 ist f(x) = x × 3 auf 1, 2, 3 injektiv? ja: sie liefert 3, 6, 9, alle verschieden.
 f(x) = x × 2 est-elle injective sur 1, 2, 3 ? oui : elle donne 2, 4, 6, toutes différentes.
 jede Funktion ist injektiv ist falsch: f(x) = x × 0 schickt 2 und 7 beide auf 0.
@@ -453,16 +453,16 @@ ist f(x) = x × 5 auf 1, 2, 3 injektiv? ja: sie liefert 5, 10, 15, alle verschie
 f(x) = x × 4 est-elle injective sur 1, 2, 3 ? oui : elle donne 4, 8, 12, toutes différentes.
 jede Funktion ist injektiv ist falsch: f(x) = x × 0 schickt 3 und 8 beide auf 0.
 est-il vrai que toute fonction est injective ? non : f(x) = x × 0 envoie 5 et 10 tous deux sur 0.
-f(x) = x × k est injective exactement quand k n'est pas 0 : pour k = 2 les entrées 1 et 2 donnent 2 et 4.
-ist es wahr: f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 5 liefern die Eingaben 1 und 2 die Werte 5 und 10.
-f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist: bei k = 1 liefern die Eingaben 1 und 2 die Werte 1 und 2.
+f(x) = x × n est injective exactement quand n n'est pas 0 : pour n = 2 les entrées 1 et 2 donnent 2 et 4.
+ist es wahr: f(x) = x × n ist genau dann injektiv, wenn n nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei n = 5 liefern die Eingaben 1 und 2 die Werte 5 und 10.
+f(x) = x × n ist genau dann injektiv, wenn n nicht 0 ist: bei n = 1 liefern die Eingaben 1 und 2 die Werte 1 und 2.
 f(x) = x × 1 est-elle injective sur 1, 2, 3 ? oui : elle donne 1, 2, 3, toutes différentes.
 ist f(x) = x × 1 auf 1, 2, 3 injektiv? ja: sie liefert 1, 2, 3, alle verschieden.
 ist es wahr: jede Funktion ist injektiv? nein: f(x) = x × 0 schickt 1 und 6 beide auf 0.
 jede Funktion ist injektiv ist falsch: f(x) = x × 0 schickt 4 und 9 beide auf 0.
 est-il vrai que toute fonction est injective ? non : f(x) = x × 0 envoie 1 et 6 tous deux sur 0.
-f(x) = x × k est injective exactement quand k n'est pas 0 : pour k = 3 les entrées 1 et 2 donnent 3 et 6.
-ist es wahr: f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 6 liefern die Eingaben 1 und 2 die Werte 6 und 12.
+f(x) = x × m est injective exactement quand m n'est pas 0 : pour m = 3 les entrées 1 et 2 donnent 3 et 6.
+ist es wahr: f(x) = x × m ist genau dann injektiv, wenn m nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei m = 6 liefern die Eingaben 1 und 2 die Werte 6 und 12.
 eine Funktion ist injektiv, wenn verschiedene Eingaben verschiedene Ausgaben liefern.
 f(x) = x × 3 est-elle injective sur 1, 2, 3 ? oui : elle donne 3, 6, 9, toutes différentes.
 ist f(x) = x × 3 auf 1, 2, 3 injektiv? ja: sie liefert 3, 6, 9, alle verschieden.
@@ -476,22 +476,22 @@ f(x) = x × 5 est-elle injective sur 1, 2, 3 ? oui : elle donne 5, 10, 15, toute
 ist f(x) = x × 5 auf 1, 2, 3 injektiv? ja: sie liefert 5, 10, 15, alle verschieden.
 ist es wahr: jede Funktion ist injektiv? nein: f(x) = x × 0 schickt 3 und 8 beide auf 0.
 jede Funktion ist injektiv ist falsch: f(x) = x × 0 schickt 1 und 6 beide auf 0.
-est-il vrai que f(x) = x × k est injective exactement quand k n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 2 les entrées 1 et 2 donnent 2 et 4.
-f(x) = x × k est injective exactement quand k n'est pas 0 : pour k = 5 les entrées 1 et 2 donnent 5 et 10.
-ist es wahr: f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 1 liefern die Eingaben 1 und 2 die Werte 1 und 2.
+est-il vrai que f(x) = x × n est injective exactement quand n n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour n = 2 les entrées 1 et 2 donnent 2 et 4.
+f(x) = x × n est injective exactement quand n n'est pas 0 : pour n = 5 les entrées 1 et 2 donnent 5 et 10.
+ist es wahr: f(x) = x × n ist genau dann injektiv, wenn n nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei n = 1 liefern die Eingaben 1 und 2 die Werte 1 und 2.
 ist f(x) = x × 2 auf 1, 2, 3 injektiv? ja: sie liefert 2, 4, 6, alle verschieden.
 f(x) = x × 1 est-elle injective sur 1, 2, 3 ? oui : elle donne 1, 2, 3, toutes différentes.
 toute fonction est injective est faux : f(x) = x × 0 envoie 1 et 6 tous deux sur 0.
 ist es wahr: jede Funktion ist injektiv? nein: f(x) = x × 0 schickt 4 und 9 beide auf 0.
 f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist: bei k = 1 liefern die Eingaben 1 und 2 die Werte 1 und 2.
-est-il vrai que f(x) = x × k est injective exactement quand k n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 3 les entrées 1 et 2 donnent 3 et 6.
-f(x) = x × k est injective exactement quand k n'est pas 0 : pour k = 6 les entrées 1 et 2 donnent 6 et 12.
+est-il vrai que f(x) = x × m est injective exactement quand m n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour m = 3 les entrées 1 et 2 donnent 3 et 6.
+f(x) = x × m est injective exactement quand m n'est pas 0 : pour m = 6 les entrées 1 et 2 donnent 6 et 12.
 une fonction est injective quand des entrées différentes donnent des sorties différentes.
 ist f(x) = x × 4 auf 1, 2, 3 injektiv? ja: sie liefert 4, 8, 12, alle verschieden.
 f(x) = x × 3 est-elle injective sur 1, 2, 3 ? oui : elle donne 3, 6, 9, toutes différentes.
 toute fonction est injective est faux : f(x) = x × 0 envoie 2 et 7 tous deux sur 0.
 ist es wahr: jede Funktion ist injektiv? nein: f(x) = x × 0 schickt 5 und 10 beide auf 0.
-f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist: bei k = 2 liefern die Eingaben 1 und 2 die Werte 2 und 4.
+f(x) = x × n ist genau dann injektiv, wenn n nicht 0 ist: bei n = 2 liefern die Eingaben 1 und 2 die Werte 2 und 4.
 est-il vrai que f(x) = x × k est injective exactement quand k n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 4 les entrées 1 et 2 donnent 4 et 8.
 f(x) = x × k est injective exactement quand k n'est pas 0 : pour k = 7 les entrées 1 et 2 donnent 7 et 14.
 
@@ -875,86 +875,86 @@ ist es wahr: eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist? ja: kein
 was ist eine ungerade Zahl? die ungeraden Zahlen beginnen mit 1, 3, 5, 7, und jede ist um 2 größer als die vorige.
 quelle est la somme des 8 premiers nombres impairs ? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 = 64.
 was ist die Summe der ersten 3 ungeraden Zahlen? 1 + 3 + 5 = 9.
-est-il vrai que la somme des k premiers nombres impairs est 2 × k ? non : pour k = 4 la somme est 16, et 2 × 4 = 8.
-la somme des k premiers nombres impairs est 2 × k est faux : pour k = 11 la somme est 121, et 2 × 11 = 22.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist k × k? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 2 ist es 2 × 2 = 4.
-die Summe der ersten k ungeraden Zahlen ist k × k: bei k = 6 ist es 6 × 6 = 36.
-est-il vrai que la somme des k premiers nombres impairs est k × k ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 8 c'est 8 × 8 = 64.
+est-il vrai que la somme des m premiers nombres impairs est 2 × m ? non : pour m = 4 la somme est 16, et 2 × 4 = 8.
+la somme des m premiers nombres impairs est 2 × m est faux : pour m = 11 la somme est 121, et 2 × 11 = 22.
+ist es wahr: die Summe der ersten m ungeraden Zahlen ist m × m? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei m = 2 ist es 2 × 2 = 4.
+die Summe der ersten m ungeraden Zahlen ist m × m: bei m = 6 ist es 6 × 6 = 36.
+est-il vrai que la somme des n premiers nombres impairs est n × n ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour n = 8 c'est 8 × 8 = 64.
 was ist die Summe der ersten 3 ungeraden Zahlen? 1 + 3 + 5 = 9.
 quelle est la somme des 10 premiers nombres impairs ? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 = 100.
-die Summe der ersten k ungeraden Zahlen ist 2 × k ist falsch: bei k = 3 ist die Summe 9, und 2 × 3 = 6.
+die Summe der ersten n ungeraden Zahlen ist 2 × n ist falsch: bei n = 3 ist die Summe 9, und 2 × 3 = 6.
 est-il vrai que la somme des k premiers nombres impairs est 2 × k ? non : pour k = 5 la somme est 25, et 2 × 5 = 10.
 la somme des k premiers nombres impairs est 2 × k est faux : pour k = 3 la somme est 9, et 2 × 3 = 6.
 ist es wahr: die Summe der ersten k ungeraden Zahlen ist k × k? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 3 ist es 3 × 3 = 9.
 die Summe der ersten k ungeraden Zahlen ist k × k: bei k = 7 ist es 7 × 7 = 49.
-est-il vrai que la somme des k premiers nombres impairs est k × k ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 9 c'est 9 × 9 = 81.
+est-il vrai que la somme des m premiers nombres impairs est m × m ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour m = 9 c'est 9 × 9 = 81.
 was ist die Summe der ersten 7 ungeraden Zahlen? 1 + 3 + 5 + 7 + 9 + 11 + 13 = 49.
 quelle est la somme des 12 premiers nombres impairs ? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 + 21 + 23 = 144.
-die Summe der ersten k ungeraden Zahlen ist 2 × k ist falsch: bei k = 4 ist die Summe 16, und 2 × 4 = 8.
-est-il vrai que la somme des k premiers nombres impairs est 2 × k ? non : pour k = 10 la somme est 100, et 2 × 10 = 20.
-la somme des k premiers nombres impairs est k × k : pour k = 1 c'est 1 × 1 = 1.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist k × k? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 5 ist es 5 × 5 = 25.
-die Summe der ersten k ungeraden Zahlen ist k × k: bei k = 8 ist es 8 × 8 = 64.
+die Summe der ersten m ungeraden Zahlen ist 2 × m ist falsch: bei m = 4 ist die Summe 16, und 2 × 4 = 8.
+est-il vrai que la somme des n premiers nombres impairs est 2 × n ? non : pour n = 10 la somme est 100, et 2 × 10 = 20.
+la somme des n premiers nombres impairs est n × n : pour n = 1 c'est 1 × 1 = 1.
+ist es wahr: die Summe der ersten n ungeraden Zahlen ist n × n? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei n = 5 ist es 5 × 5 = 25.
+die Summe der ersten n ungeraden Zahlen ist n × n: bei n = 8 ist es 8 × 8 = 64.
 qu'est-ce qu'un nombre impair ? les nombres impairs commencent par 1, 3, 5, 7, et chacun dépasse le précédent de 2.
 was ist die Summe der ersten 9 ungeraden Zahlen? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 = 81.
 quelle est la somme des 3 premiers nombres impairs ? 1 + 3 + 5 = 9.
 die Summe der ersten k ungeraden Zahlen ist 2 × k ist falsch: bei k = 5 ist die Summe 25, und 2 × 5 = 10.
-est-il vrai que la somme des k premiers nombres impairs est 2 × k ? non : pour k = 11 la somme est 121, et 2 × 11 = 22.
-la somme des k premiers nombres impairs est k × k : pour k = 2 c'est 2 × 2 = 4.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist k × k? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 6 ist es 6 × 6 = 36.
-die Summe der ersten k ungeraden Zahlen ist k × k: bei k = 9 ist es 9 × 9 = 81.
+est-il vrai que la somme des m premiers nombres impairs est 2 × m ? non : pour m = 11 la somme est 121, et 2 × 11 = 22.
+la somme des m premiers nombres impairs est m × m : pour m = 2 c'est 2 × 2 = 4.
+ist es wahr: die Summe der ersten m ungeraden Zahlen ist m × m? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei m = 6 ist es 6 × 6 = 36.
+die Summe der ersten m ungeraden Zahlen ist m × m: bei m = 9 ist es 9 × 9 = 81.
 quelle est la somme des 3 premiers nombres impairs ? 1 + 3 + 5 = 9.
 was ist die Summe der ersten 11 ungeraden Zahlen? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 + 21 = 121.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist 2 × k? nein: bei k = 3 ist die Summe 9, und 2 × 3 = 6.
-die Summe der ersten k ungeraden Zahlen ist 2 × k ist falsch: bei k = 10 ist die Summe 100, und 2 × 10 = 20.
+ist es wahr: die Summe der ersten n ungeraden Zahlen ist 2 × n? nein: bei n = 3 ist die Summe 9, und 2 × 3 = 6.
+die Summe der ersten n ungeraden Zahlen ist 2 × n ist falsch: bei n = 10 ist die Summe 100, und 2 × 10 = 20.
 est-il vrai que la somme des k premiers nombres impairs est 2 × k ? non : pour k = 3 la somme est 9, et 2 × 3 = 6.
 la somme des k premiers nombres impairs est k × k : pour k = 3 c'est 3 × 3 = 9.
 ist es wahr: die Summe der ersten k ungeraden Zahlen ist k × k? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 7 ist es 7 × 7 = 49.
 die ungeraden Zahlen beginnen mit 1, 3, 5, 7, und jede ist um 2 größer als die vorige.
 quelle est la somme des 7 premiers nombres impairs ? 1 + 3 + 5 + 7 + 9 + 11 + 13 = 49.
 was ist die Summe der ersten 2 ungeraden Zahlen? 1 + 3 = 4.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist 2 × k? nein: bei k = 4 ist die Summe 16, und 2 × 4 = 8.
-die Summe der ersten k ungeraden Zahlen ist 2 × k ist falsch: bei k = 11 ist die Summe 121, und 2 × 11 = 22.
-est-il vrai que la somme des k premiers nombres impairs est k × k ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 1 c'est 1 × 1 = 1.
-la somme des k premiers nombres impairs est k × k : pour k = 5 c'est 5 × 5 = 25.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist k × k? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 8 ist es 8 × 8 = 64.
+ist es wahr: die Summe der ersten m ungeraden Zahlen ist 2 × m? nein: bei m = 4 ist die Summe 16, und 2 × 4 = 8.
+die Summe der ersten m ungeraden Zahlen ist 2 × m ist falsch: bei m = 11 ist die Summe 121, und 2 × 11 = 22.
+est-il vrai que la somme des n premiers nombres impairs est n × n ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour n = 1 c'est 1 × 1 = 1.
+la somme des n premiers nombres impairs est n × n : pour n = 5 c'est 5 × 5 = 25.
+ist es wahr: die Summe der ersten n ungeraden Zahlen ist n × n? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei n = 8 ist es 8 × 8 = 64.
 was ist die Summe der ersten 2 ungeraden Zahlen? 1 + 3 = 4.
 quelle est la somme des 9 premiers nombres impairs ? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 = 81.
 was ist die Summe der ersten 4 ungeraden Zahlen? 1 + 3 + 5 + 7 = 16.
 ist es wahr: die Summe der ersten k ungeraden Zahlen ist 2 × k? nein: bei k = 5 ist die Summe 25, und 2 × 5 = 10.
 die Summe der ersten k ungeraden Zahlen ist 2 × k ist falsch: bei k = 3 ist die Summe 9, und 2 × 3 = 6.
-est-il vrai que la somme des k premiers nombres impairs est k × k ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 2 c'est 2 × 2 = 4.
-la somme des k premiers nombres impairs est k × k : pour k = 6 c'est 6 × 6 = 36.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist k × k? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 9 ist es 9 × 9 = 81.
+est-il vrai que la somme des m premiers nombres impairs est m × m ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour m = 2 c'est 2 × 2 = 4.
+la somme des m premiers nombres impairs est m × m : pour m = 6 c'est 6 × 6 = 36.
+ist es wahr: die Summe der ersten m ungeraden Zahlen ist m × m? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei m = 9 ist es 9 × 9 = 81.
 was ist die Summe der ersten 4 ungeraden Zahlen? 1 + 3 + 5 + 7 = 16.
 quelle est la somme des 11 premiers nombres impairs ? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 + 21 = 121.
-la somme des k premiers nombres impairs est 2 × k est faux : pour k = 3 la somme est 9, et 2 × 3 = 6.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist 2 × k? nein: bei k = 10 ist die Summe 100, und 2 × 10 = 20.
-die Summe der ersten k ungeraden Zahlen ist k × k: bei k = 1 ist es 1 × 1 = 1.
+la somme des n premiers nombres impairs est 2 × n est faux : pour n = 3 la somme est 9, et 2 × 3 = 6.
+ist es wahr: die Summe der ersten n ungeraden Zahlen ist 2 × n? nein: bei n = 10 ist die Summe 100, und 2 × 10 = 20.
+die Summe der ersten n ungeraden Zahlen ist n × n: bei n = 1 ist es 1 × 1 = 1.
 est-il vrai que la somme des k premiers nombres impairs est k × k ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 3 c'est 3 × 3 = 9.
 la somme des k premiers nombres impairs est k × k : pour k = 7 c'est 7 × 7 = 49.
 les nombres impairs commencent par 1, 3, 5, 7, et chacun dépasse le précédent de 2.
 was ist die Summe der ersten 8 ungeraden Zahlen? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 = 64.
 quelle est la somme des 2 premiers nombres impairs ? 1 + 3 = 4.
-la somme des k premiers nombres impairs est 2 × k est faux : pour k = 4 la somme est 16, et 2 × 4 = 8.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist 2 × k? nein: bei k = 11 ist die Summe 121, und 2 × 11 = 22.
-die Summe der ersten k ungeraden Zahlen ist k × k: bei k = 2 ist es 2 × 2 = 4.
-est-il vrai que la somme des k premiers nombres impairs est k × k ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 5 c'est 5 × 5 = 25.
-la somme des k premiers nombres impairs est k × k : pour k = 8 c'est 8 × 8 = 64.
+la somme des m premiers nombres impairs est 2 × m est faux : pour m = 4 la somme est 16, et 2 × 4 = 8.
+ist es wahr: die Summe der ersten m ungeraden Zahlen ist 2 × m? nein: bei m = 11 ist die Summe 121, und 2 × 11 = 22.
+die Summe der ersten m ungeraden Zahlen ist m × m: bei m = 2 ist es 2 × 2 = 4.
+est-il vrai que la somme des n premiers nombres impairs est n × n ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour n = 5 c'est 5 × 5 = 25.
+la somme des n premiers nombres impairs est n × n : pour n = 8 c'est 8 × 8 = 64.
 quelle est la somme des 2 premiers nombres impairs ? 1 + 3 = 4.
 was ist die Summe der ersten 10 ungeraden Zahlen? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 = 100.
 quelle est la somme des 4 premiers nombres impairs ? 1 + 3 + 5 + 7 = 16.
 la somme des k premiers nombres impairs est 2 × k est faux : pour k = 5 la somme est 25, et 2 × 5 = 10.
 ist es wahr: die Summe der ersten k ungeraden Zahlen ist 2 × k? nein: bei k = 3 ist die Summe 9, und 2 × 3 = 6.
 die Summe der ersten k ungeraden Zahlen ist k × k: bei k = 3 ist es 3 × 3 = 9.
-est-il vrai que la somme des k premiers nombres impairs est k × k ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 6 c'est 6 × 6 = 36.
-la somme des k premiers nombres impairs est k × k : pour k = 9 c'est 9 × 9 = 81.
+est-il vrai que la somme des m premiers nombres impairs est m × m ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour m = 6 c'est 6 × 6 = 36.
+la somme des m premiers nombres impairs est m × m : pour m = 9 c'est 9 × 9 = 81.
 quelle est la somme des 4 premiers nombres impairs ? 1 + 3 + 5 + 7 = 16.
 was ist die Summe der ersten 12 ungeraden Zahlen? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 + 21 + 23 = 144.
-est-il vrai que la somme des k premiers nombres impairs est 2 × k ? non : pour k = 3 la somme est 9, et 2 × 3 = 6.
-la somme des k premiers nombres impairs est 2 × k est faux : pour k = 10 la somme est 100, et 2 × 10 = 20.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist k × k? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 1 ist es 1 × 1 = 1.
-die Summe der ersten k ungeraden Zahlen ist k × k: bei k = 5 ist es 5 × 5 = 25.
+est-il vrai que la somme des n premiers nombres impairs est 2 × n ? non : pour n = 3 la somme est 9, et 2 × 3 = 6.
+la somme des n premiers nombres impairs est 2 × n est faux : pour n = 10 la somme est 100, et 2 × 10 = 20.
+ist es wahr: die Summe der ersten n ungeraden Zahlen ist n × n? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei n = 1 ist es 1 × 1 = 1.
+die Summe der ersten n ungeraden Zahlen ist n × n: bei n = 5 ist es 5 × 5 = 25.
 est-il vrai que la somme des k premiers nombres impairs est k × k ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 7 c'est 7 × 7 = 49.
 
 was ist eine bedingte Aussage? eine bedingte Aussage gilt, wenn die Folgerung in jedem Fall gilt, in dem die Voraussetzung gilt.
@@ -1047,9 +1047,9 @@ f(x) = x × 5 est-elle injective sur 1, 2, 3 ? oui : elle donne 5, 10, 15, toute
 ist f(x) = x × 5 auf 1, 2, 3 injektiv? ja: sie liefert 5, 10, 15, alle verschieden.
 est-il vrai que toute fonction est injective ? non : f(x) = x × 0 envoie 2 et 7 tous deux sur 0.
 toute fonction est injective est faux : f(x) = x × 0 envoie 3 et 8 tous deux sur 0.
-ist es wahr: f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 2 liefern die Eingaben 1 und 2 die Werte 2 und 4.
-f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist: bei k = 4 liefern die Eingaben 1 und 2 die Werte 4 und 8.
-est-il vrai que f(x) = x × k est injective exactement quand k n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 6 les entrées 1 et 2 donnent 6 et 12.
+ist es wahr: f(x) = x × m ist genau dann injektiv, wenn m nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei m = 2 liefern die Eingaben 1 und 2 die Werte 2 und 4.
+f(x) = x × m ist genau dann injektiv, wenn m nicht 0 ist: bei m = 4 liefern die Eingaben 1 und 2 die Werte 4 und 8.
+est-il vrai que f(x) = x × n est injective exactement quand n n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour n = 6 les entrées 1 et 2 donnent 6 et 12.
 ist f(x) = x × 1 auf 1, 2, 3 injektiv? ja: sie liefert 1, 2, 3, alle verschieden.
 f(x) = x × 1 est-elle injective sur 1, 2, 3 ? oui : elle donne 1, 2, 3, toutes différentes.
 jede Funktion ist injektiv ist falsch: f(x) = x × 0 schickt 1 und 6 beide auf 0.
@@ -1057,22 +1057,22 @@ est-il vrai que toute fonction est injective ? non : f(x) = x × 0 envoie 3 et 8
 toute fonction est injective est faux : f(x) = x × 0 envoie 4 et 9 tous deux sur 0.
 ist es wahr: f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 3 liefern die Eingaben 1 und 2 die Werte 3 und 6.
 f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist: bei k = 5 liefern die Eingaben 1 und 2 die Werte 5 und 10.
-est-il vrai que f(x) = x × k est injective exactement quand k n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 7 les entrées 1 et 2 donnent 7 et 14.
+est-il vrai que f(x) = x × m est injective exactement quand m n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour m = 7 les entrées 1 et 2 donnent 7 et 14.
 ist f(x) = x × 4 auf 1, 2, 3 injektiv? ja: sie liefert 4, 8, 12, alle verschieden.
 f(x) = x × 3 est-elle injective sur 1, 2, 3 ? oui : elle donne 3, 6, 9, toutes différentes.
 jede Funktion ist injektiv ist falsch: f(x) = x × 0 schickt 2 und 7 beide auf 0.
 est-il vrai que toute fonction est injective ? non : f(x) = x × 0 envoie 2 et 7 tous deux sur 0.
-f(x) = x × k est injective exactement quand k n'est pas 0 : pour k = 1 les entrées 1 et 2 donnent 1 et 2.
-ist es wahr: f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 3 liefern die Eingaben 1 und 2 die Werte 3 und 6.
-f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist: bei k = 6 liefern die Eingaben 1 und 2 die Werte 6 und 12.
+f(x) = x × n est injective exactement quand n n'est pas 0 : pour n = 1 les entrées 1 et 2 donnent 1 et 2.
+ist es wahr: f(x) = x × n ist genau dann injektiv, wenn n nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei n = 3 liefern die Eingaben 1 und 2 die Werte 3 und 6.
+f(x) = x × n ist genau dann injektiv, wenn n nicht 0 ist: bei n = 6 liefern die Eingaben 1 und 2 die Werte 6 und 12.
 que signifie qu'une fonction est injective ? une fonction est injective quand des entrées différentes donnent des sorties différentes.
 ist f(x) = x × 0 auf 1, 2, 3 injektiv? nein: sie liefert 0, 0, 0, nicht alle verschieden.
 f(x) = x × 5 est-elle injective sur 1, 2, 3 ? oui : elle donne 5, 10, 15, toutes différentes.
 jede Funktion ist injektiv ist falsch: f(x) = x × 0 schickt 3 und 8 beide auf 0.
 est-il vrai que toute fonction est injective ? non : f(x) = x × 0 envoie 3 et 8 tous deux sur 0.
-f(x) = x × k est injective exactement quand k n'est pas 0 : pour k = 2 les entrées 1 et 2 donnent 2 et 4.
-ist es wahr: f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 4 liefern die Eingaben 1 und 2 die Werte 4 und 8.
-f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist: bei k = 7 liefern die Eingaben 1 und 2 die Werte 7 und 14.
+f(x) = x × m est injective exactement quand m n'est pas 0 : pour m = 2 les entrées 1 et 2 donnent 2 et 4.
+ist es wahr: f(x) = x × m ist genau dann injektiv, wenn m nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei m = 4 liefern die Eingaben 1 und 2 die Werte 4 und 8.
+f(x) = x × m ist genau dann injektiv, wenn m nicht 0 ist: bei m = 7 liefern die Eingaben 1 und 2 die Werte 7 und 14.
 f(x) = x × 1 est-elle injective sur 1, 2, 3 ? oui : elle donne 1, 2, 3, toutes différentes.
 ist f(x) = x × 2 auf 1, 2, 3 injektiv? ja: sie liefert 2, 4, 6, alle verschieden.
 ist es wahr: jede Funktion ist injektiv? nein: f(x) = x × 0 schickt 1 und 6 beide auf 0.
@@ -1085,22 +1085,22 @@ f(x) = x × 4 est-elle injective sur 1, 2, 3 ? oui : elle donne 4, 8, 12, toutes
 ist f(x) = x × 4 auf 1, 2, 3 injektiv? ja: sie liefert 4, 8, 12, alle verschieden.
 ist es wahr: jede Funktion ist injektiv? nein: f(x) = x × 0 schickt 2 und 7 beide auf 0.
 jede Funktion ist injektiv ist falsch: f(x) = x × 0 schickt 3 und 8 beide auf 0.
-est-il vrai que f(x) = x × k est injective exactement quand k n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 1 les entrées 1 et 2 donnent 1 et 2.
-f(x) = x × k est injective exactement quand k n'est pas 0 : pour k = 3 les entrées 1 et 2 donnent 3 et 6.
-ist es wahr: f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 6 liefern die Eingaben 1 und 2 die Werte 6 und 12.
+est-il vrai que f(x) = x × n est injective exactement quand n n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour n = 1 les entrées 1 et 2 donnent 1 et 2.
+f(x) = x × n est injective exactement quand n n'est pas 0 : pour n = 3 les entrées 1 et 2 donnent 3 et 6.
+ist es wahr: f(x) = x × n ist genau dann injektiv, wenn n nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei n = 6 liefern die Eingaben 1 und 2 die Werte 6 und 12.
 ist f(x) = x × 0 auf 1, 2, 3 injektiv? nein: sie liefert 0, 0, 0, nicht alle verschieden.
 f(x) = x × 0 est-elle injective sur 1, 2, 3 ? non : elle donne 0, 0, 0, pas toutes différentes.
 ist f(x) = x × 0 auf 1, 2, 3 injektiv? nein: sie liefert 0, 0, 0, nicht alle verschieden.
 ist es wahr: jede Funktion ist injektiv? nein: f(x) = x × 0 schickt 3 und 8 beide auf 0.
 jede Funktion ist injektiv ist falsch: f(x) = x × 0 schickt 4 und 9 beide auf 0.
-est-il vrai que f(x) = x × k est injective exactement quand k n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 2 les entrées 1 et 2 donnent 2 et 4.
-f(x) = x × k est injective exactement quand k n'est pas 0 : pour k = 4 les entrées 1 et 2 donnent 4 et 8.
-ist es wahr: f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 7 liefern die Eingaben 1 und 2 die Werte 7 und 14.
+est-il vrai que f(x) = x × m est injective exactement quand m n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour m = 2 les entrées 1 et 2 donnent 2 et 4.
+f(x) = x × m est injective exactement quand m n'est pas 0 : pour m = 4 les entrées 1 et 2 donnent 4 et 8.
+ist es wahr: f(x) = x × m ist genau dann injektiv, wenn m nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei m = 7 liefern die Eingaben 1 und 2 die Werte 7 und 14.
 ist f(x) = x × 2 auf 1, 2, 3 injektiv? ja: sie liefert 2, 4, 6, alle verschieden.
 f(x) = x × 2 est-elle injective sur 1, 2, 3 ? oui : elle donne 2, 4, 6, toutes différentes.
 toute fonction est injective est faux : f(x) = x × 0 envoie 1 et 6 tous deux sur 0.
 ist es wahr: jede Funktion ist injektiv? nein: f(x) = x × 0 schickt 2 und 7 beide auf 0.
-f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist: bei k = 1 liefern die Eingaben 1 und 2 die Werte 1 und 2.
+f(x) = x × n ist genau dann injektiv, wenn n nicht 0 ist: bei n = 1 liefern die Eingaben 1 und 2 die Werte 1 und 2.
 est-il vrai que f(x) = x × k est injective exactement quand k n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 3 les entrées 1 et 2 donnent 3 et 6.
 f(x) = x × k est injective exactement quand k n'est pas 0 : pour k = 5 les entrées 1 et 2 donnent 5 et 10.
 une fonction est injective quand des entrées différentes donnent des sorties différentes.
@@ -1108,23 +1108,23 @@ ist f(x) = x × 5 auf 1, 2, 3 injektiv? ja: sie liefert 5, 10, 15, alle verschie
 f(x) = x × 4 est-elle injective sur 1, 2, 3 ? oui : elle donne 4, 8, 12, toutes différentes.
 toute fonction est injective est faux : f(x) = x × 0 envoie 2 et 7 tous deux sur 0.
 ist es wahr: jede Funktion ist injektiv? nein: f(x) = x × 0 schickt 3 und 8 beide auf 0.
-f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist: bei k = 2 liefern die Eingaben 1 und 2 die Werte 2 und 4.
-est-il vrai que f(x) = x × k est injective exactement quand k n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 3 les entrées 1 et 2 donnent 3 et 6.
-f(x) = x × k est injective exactement quand k n'est pas 0 : pour k = 6 les entrées 1 et 2 donnent 6 et 12.
+f(x) = x × m ist genau dann injektiv, wenn m nicht 0 ist: bei m = 2 liefern die Eingaben 1 und 2 die Werte 2 und 4.
+est-il vrai que f(x) = x × n est injective exactement quand n n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour n = 3 les entrées 1 et 2 donnent 3 et 6.
+f(x) = x × n est injective exactement quand n n'est pas 0 : pour n = 6 les entrées 1 et 2 donnent 6 et 12.
 f(x) = x × 0 est-elle injective sur 1, 2, 3 ? non : elle donne 0, 0, 0, pas toutes différentes.
 ist f(x) = x × 1 auf 1, 2, 3 injektiv? ja: sie liefert 1, 2, 3, alle verschieden.
 f(x) = x × 0 est-elle injective sur 1, 2, 3 ? non : elle donne 0, 0, 0, pas toutes différentes.
 toute fonction est injective est faux : f(x) = x × 0 envoie 3 et 8 tous deux sur 0.
 ist es wahr: jede Funktion ist injektiv? nein: f(x) = x × 0 schickt 4 und 9 beide auf 0.
 f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist: bei k = 3 liefern die Eingaben 1 und 2 die Werte 3 und 6.
-est-il vrai que f(x) = x × k est injective exactement quand k n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 4 les entrées 1 et 2 donnent 4 et 8.
-f(x) = x × k est injective exactement quand k n'est pas 0 : pour k = 7 les entrées 1 et 2 donnent 7 et 14.
+est-il vrai que f(x) = x × m est injective exactement quand m n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour m = 4 les entrées 1 et 2 donnent 4 et 8.
+f(x) = x × m est injective exactement quand m n'est pas 0 : pour m = 7 les entrées 1 et 2 donnent 7 et 14.
 f(x) = x × 2 est-elle injective sur 1, 2, 3 ? oui : elle donne 2, 4, 6, toutes différentes.
 ist f(x) = x × 3 auf 1, 2, 3 injektiv? ja: sie liefert 3, 6, 9, alle verschieden.
 est-il vrai que toute fonction est injective ? non : f(x) = x × 0 envoie 1 et 6 tous deux sur 0.
 toute fonction est injective est faux : f(x) = x × 0 envoie 2 et 7 tous deux sur 0.
-ist es wahr: f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 1 liefern die Eingaben 1 und 2 die Werte 1 und 2.
-f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist: bei k = 3 liefern die Eingaben 1 und 2 die Werte 3 und 6.
+ist es wahr: f(x) = x × n ist genau dann injektiv, wenn n nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei n = 1 liefern die Eingaben 1 und 2 die Werte 1 und 2.
+f(x) = x × n ist genau dann injektiv, wenn n nicht 0 ist: bei n = 3 liefern die Eingaben 1 und 2 die Werte 3 und 6.
 est-il vrai que f(x) = x × k est injective exactement quand k n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 5 les entrées 1 et 2 donnent 5 et 10.
 
 was ist das Quadrat einer Zahl? das Quadrat einer Zahl ist die Zahl mit sich selbst multipliziert.
@@ -1507,48 +1507,48 @@ eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist: die Quersumme von 210
 quelle est la somme des 4 premiers nombres impairs ? 1 + 3 + 5 + 7 = 16.
 was ist die Summe der ersten 4 ungeraden Zahlen? 1 + 3 + 5 + 7 = 16.
 est-il vrai que la somme des k premiers nombres impairs est 2 × k ? non : pour k = 4 la somme est 16, et 2 × 4 = 8.
-die Summe der ersten k ungeraden Zahlen ist 2 × k ist falsch: bei k = 7 ist die Summe 49, und 2 × 7 = 14.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist k × k? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 3 ist es 3 × 3 = 9.
-la somme des k premiers nombres impairs est k × k : pour k = 8 c'est 8 × 8 = 64.
+die Summe der ersten n ungeraden Zahlen ist 2 × n ist falsch: bei n = 7 ist die Summe 49, und 2 × 7 = 14.
+ist es wahr: die Summe der ersten n ungeraden Zahlen ist n × n? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei n = 3 ist es 3 × 3 = 9.
+la somme des n premiers nombres impairs est n × n : pour n = 8 c'est 8 × 8 = 64.
 qu'est-ce qu'un nombre impair ? les nombres impairs commencent par 1, 3, 5, 7, et chacun dépasse le précédent de 2.
 was ist die Summe der ersten 12 ungeraden Zahlen? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 + 21 + 23 = 144.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist 2 × k? nein: bei k = 3 ist die Summe 9, und 2 × 3 = 6.
-la somme des k premiers nombres impairs est 2 × k est faux : pour k = 5 la somme est 25, et 2 × 5 = 10.
-est-il vrai que la somme des k premiers nombres impairs est k × k ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 1 c'est 1 × 1 = 1.
+ist es wahr: die Summe der ersten m ungeraden Zahlen ist 2 × m? nein: bei m = 3 ist die Summe 9, und 2 × 3 = 6.
+la somme des m premiers nombres impairs est 2 × m est faux : pour m = 5 la somme est 25, et 2 × 5 = 10.
+est-il vrai que la somme des m premiers nombres impairs est m × m ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour m = 1 c'est 1 × 1 = 1.
 die Summe der ersten k ungeraden Zahlen ist k × k: bei k = 7 ist es 7 × 7 = 49.
 ist es wahr: die Summe der ersten k ungeraden Zahlen ist k × k? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 10 ist es 10 × 10 = 100.
 was ist die Summe der ersten 9 ungeraden Zahlen? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 = 81.
 quelle est la somme des 4 premiers nombres impairs ? 1 + 3 + 5 + 7 = 16.
-die Summe der ersten k ungeraden Zahlen ist 2 × k ist falsch: bei k = 5 ist die Summe 25, und 2 × 5 = 10.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist 2 × k? nein: bei k = 7 ist die Summe 49, und 2 × 7 = 14.
-la somme des k premiers nombres impairs est k × k : pour k = 3 c'est 3 × 3 = 9.
-est-il vrai que la somme des k premiers nombres impairs est k × k ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 8 c'est 8 × 8 = 64.
+die Summe der ersten n ungeraden Zahlen ist 2 × n ist falsch: bei n = 5 ist die Summe 25, und 2 × 5 = 10.
+ist es wahr: die Summe der ersten n ungeraden Zahlen ist 2 × n? nein: bei n = 7 ist die Summe 49, und 2 × 7 = 14.
+la somme des n premiers nombres impairs est n × n : pour n = 3 c'est 3 × 3 = 9.
+est-il vrai que la somme des n premiers nombres impairs est n × n ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour n = 8 c'est 8 × 8 = 64.
 was ist die Summe der ersten 2 ungeraden Zahlen? 1 + 3 = 4.
 quelle est la somme des 12 premiers nombres impairs ? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 + 21 + 23 = 144.
-la somme des k premiers nombres impairs est 2 × k est faux : pour k = 3 la somme est 9, et 2 × 3 = 6.
-est-il vrai que la somme des k premiers nombres impairs est 2 × k ? non : pour k = 5 la somme est 25, et 2 × 5 = 10.
+la somme des m premiers nombres impairs est 2 × m est faux : pour m = 3 la somme est 9, et 2 × 3 = 6.
+est-il vrai que la somme des m premiers nombres impairs est 2 × m ? non : pour m = 5 la somme est 25, et 2 × 5 = 10.
 die Summe der ersten k ungeraden Zahlen ist k × k: bei k = 2 ist es 2 × 2 = 4.
 ist es wahr: die Summe der ersten k ungeraden Zahlen ist k × k? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 7 ist es 7 × 7 = 49.
 la somme des k premiers nombres impairs est k × k : pour k = 10 c'est 10 × 10 = 100.
 quelle est la somme des 9 premiers nombres impairs ? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 = 81.
 was ist die Summe der ersten 5 ungeraden Zahlen? 1 + 3 + 5 + 7 + 9 = 25.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist 2 × k? nein: bei k = 5 ist die Summe 25, und 2 × 5 = 10.
-la somme des k premiers nombres impairs est 2 × k est faux : pour k = 7 la somme est 49, et 2 × 7 = 14.
-est-il vrai que la somme des k premiers nombres impairs est k × k ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 3 c'est 3 × 3 = 9.
-die Summe der ersten k ungeraden Zahlen ist k × k: bei k = 9 ist es 9 × 9 = 81.
+ist es wahr: die Summe der ersten n ungeraden Zahlen ist 2 × n? nein: bei n = 5 ist die Summe 25, und 2 × 5 = 10.
+la somme des n premiers nombres impairs est 2 × n est faux : pour n = 7 la somme est 49, et 2 × 7 = 14.
+est-il vrai que la somme des n premiers nombres impairs est n × n ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour n = 3 c'est 3 × 3 = 9.
+die Summe der ersten m ungeraden Zahlen ist m × m: bei m = 9 ist es 9 × 9 = 81.
 quelle est la somme des 2 premiers nombres impairs ? 1 + 3 = 4.
 was ist die Summe der ersten 2 ungeraden Zahlen? 1 + 3 = 4.
-est-il vrai que la somme des k premiers nombres impairs est 2 × k ? non : pour k = 3 la somme est 9, et 2 × 3 = 6.
+est-il vrai que la somme des m premiers nombres impairs est 2 × m ? non : pour m = 3 la somme est 9, et 2 × 3 = 6.
 die Summe der ersten k ungeraden Zahlen ist 2 × k ist falsch: bei k = 6 ist die Summe 36, und 2 × 6 = 12.
 ist es wahr: die Summe der ersten k ungeraden Zahlen ist k × k? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 2 ist es 2 × 2 = 4.
 la somme des k premiers nombres impairs est k × k : pour k = 7 c'est 7 × 7 = 49.
 est-il vrai que la somme des k premiers nombres impairs est k × k ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 10 c'est 10 × 10 = 100.
 was ist die Summe der ersten 10 ungeraden Zahlen? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 = 100.
 quelle est la somme des 5 premiers nombres impairs ? 1 + 3 + 5 + 7 + 9 = 25.
-la somme des k premiers nombres impairs est 2 × k est faux : pour k = 5 la somme est 25, et 2 × 5 = 10.
-est-il vrai que la somme des k premiers nombres impairs est 2 × k ? non : pour k = 7 la somme est 49, et 2 × 7 = 14.
-die Summe der ersten k ungeraden Zahlen ist k × k: bei k = 6 ist es 6 × 6 = 36.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist k × k? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 9 ist es 9 × 9 = 81.
+la somme des n premiers nombres impairs est 2 × n est faux : pour n = 5 la somme est 25, et 2 × 5 = 10.
+est-il vrai que la somme des n premiers nombres impairs est 2 × n ? non : pour n = 7 la somme est 49, et 2 × 7 = 14.
+die Summe der ersten m ungeraden Zahlen ist m × m: bei m = 6 ist es 6 × 6 = 36.
+ist es wahr: die Summe der ersten m ungeraden Zahlen ist m × m? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei m = 9 ist es 9 × 9 = 81.
 was ist die Summe der ersten 3 ungeraden Zahlen? 1 + 3 + 5 = 9.
 quelle est la somme des 2 premiers nombres impairs ? 1 + 3 = 4.
 die Summe der ersten k ungeraden Zahlen ist 2 × k ist falsch: bei k = 4 ist die Summe 16, und 2 × 4 = 8.
@@ -1558,35 +1558,35 @@ est-il vrai que la somme des k premiers nombres impairs est k × k ? oui : aucun
 die ungeraden Zahlen beginnen mit 1, 3, 5, 7, und jede ist um 2 größer als die vorige.
 quelle est la somme des 10 premiers nombres impairs ? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 = 100.
 was ist die Summe der ersten 6 ungeraden Zahlen? 1 + 3 + 5 + 7 + 9 + 11 = 36.
-est-il vrai que la somme des k premiers nombres impairs est 2 × k ? non : pour k = 5 la somme est 25, et 2 × 5 = 10.
-die Summe der ersten k ungeraden Zahlen ist k × k: bei k = 1 ist es 1 × 1 = 1.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist k × k? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 6 ist es 6 × 6 = 36.
-la somme des k premiers nombres impairs est k × k : pour k = 9 c'est 9 × 9 = 81.
+est-il vrai que la somme des n premiers nombres impairs est 2 × n ? non : pour n = 5 la somme est 25, et 2 × 5 = 10.
+die Summe der ersten m ungeraden Zahlen ist m × m: bei m = 1 ist es 1 × 1 = 1.
+ist es wahr: die Summe der ersten m ungeraden Zahlen ist m × m? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei m = 6 ist es 6 × 6 = 36.
+la somme des m premiers nombres impairs est m × m : pour m = 9 c'est 9 × 9 = 81.
 quelle est la somme des 3 premiers nombres impairs ? 1 + 3 + 5 = 9.
 was ist die Summe der ersten 3 ungeraden Zahlen? 1 + 3 + 5 = 9.
 ist es wahr: die Summe der ersten k ungeraden Zahlen ist 2 × k? nein: bei k = 4 ist die Summe 16, und 2 × 4 = 8.
 la somme des k premiers nombres impairs est 2 × k est faux : pour k = 6 la somme est 36, et 2 × 6 = 12.
 est-il vrai que la somme des k premiers nombres impairs est k × k ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 2 c'est 2 × 2 = 4.
-die Summe der ersten k ungeraden Zahlen ist k × k: bei k = 8 ist es 8 × 8 = 64.
+die Summe der ersten n ungeraden Zahlen ist n × n: bei n = 8 ist es 8 × 8 = 64.
 les nombres impairs commencent par 1, 3, 5, 7, et chacun dépasse le précédent de 2.
 was ist die Summe der ersten 11 ungeraden Zahlen? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 + 21 = 121.
 quelle est la somme des 6 premiers nombres impairs ? 1 + 3 + 5 + 7 + 9 + 11 = 36.
-die Summe der ersten k ungeraden Zahlen ist 2 × k ist falsch: bei k = 5 ist die Summe 25, und 2 × 5 = 10.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist k × k? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 1 ist es 1 × 1 = 1.
-la somme des k premiers nombres impairs est k × k : pour k = 6 c'est 6 × 6 = 36.
-est-il vrai que la somme des k premiers nombres impairs est k × k ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 9 c'est 9 × 9 = 81.
+die Summe der ersten m ungeraden Zahlen ist 2 × m ist falsch: bei m = 5 ist die Summe 25, und 2 × 5 = 10.
+ist es wahr: die Summe der ersten m ungeraden Zahlen ist m × m? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei m = 1 ist es 1 × 1 = 1.
+la somme des m premiers nombres impairs est m × m : pour m = 6 c'est 6 × 6 = 36.
+est-il vrai que la somme des m premiers nombres impairs est m × m ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour m = 9 c'est 9 × 9 = 81.
 was ist die Summe der ersten 4 ungeraden Zahlen? 1 + 3 + 5 + 7 = 16.
 quelle est la somme des 3 premiers nombres impairs ? 1 + 3 + 5 = 9.
 la somme des k premiers nombres impairs est 2 × k est faux : pour k = 4 la somme est 16, et 2 × 4 = 8.
 est-il vrai que la somme des k premiers nombres impairs est 2 × k ? non : pour k = 6 la somme est 36, et 2 × 6 = 12.
-die Summe der ersten k ungeraden Zahlen ist k × k: bei k = 3 ist es 3 × 3 = 9.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist k × k? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 8 ist es 8 × 8 = 64.
+die Summe der ersten n ungeraden Zahlen ist n × n: bei n = 3 ist es 3 × 3 = 9.
+ist es wahr: die Summe der ersten n ungeraden Zahlen ist n × n? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei n = 8 ist es 8 × 8 = 64.
 was ist eine ungerade Zahl? die ungeraden Zahlen beginnen mit 1, 3, 5, 7, und jede ist um 2 größer als die vorige.
 quelle est la somme des 11 premiers nombres impairs ? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 + 21 = 121.
-die Summe der ersten k ungeraden Zahlen ist 2 × k ist falsch: bei k = 3 ist die Summe 9, und 2 × 3 = 6.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist 2 × k? nein: bei k = 5 ist die Summe 25, und 2 × 5 = 10.
-la somme des k premiers nombres impairs est k × k : pour k = 1 c'est 1 × 1 = 1.
-est-il vrai que la somme des k premiers nombres impairs est k × k ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 6 c'est 6 × 6 = 36.
+die Summe der ersten m ungeraden Zahlen ist 2 × m ist falsch: bei m = 3 ist die Summe 9, und 2 × 3 = 6.
+ist es wahr: die Summe der ersten m ungeraden Zahlen ist 2 × m? nein: bei m = 5 ist die Summe 25, und 2 × 5 = 10.
+la somme des m premiers nombres impairs est m × m : pour m = 1 c'est 1 × 1 = 1.
+est-il vrai que la somme des m premiers nombres impairs est m × m ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour m = 6 c'est 6 × 6 = 36.
 die Summe der ersten k ungeraden Zahlen ist k × k: bei k = 10 ist es 10 × 10 = 100.
 
 si n est pair, n + 3 est-il pair ? non : 8 est pair, et 8 + 3 = 11, qui est impair.
@@ -1678,21 +1678,21 @@ f(x) = x × 2 est-elle injective sur 1, 2, 3 ? oui : elle donne 2, 4, 6, toutes 
 ist f(x) = x × 5 auf 1, 2, 3 injektiv? ja: sie liefert 5, 10, 15, alle verschieden.
 est-il vrai que toute fonction est injective ? non : f(x) = x × 0 envoie 2 et 7 tous deux sur 0.
 jede Funktion ist injektiv ist falsch: f(x) = x × 0 schickt 2 und 7 beide auf 0.
-ist es wahr: f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 3 liefern die Eingaben 1 und 2 die Werte 3 und 6.
-f(x) = x × k est injective exactement quand k n'est pas 0 : pour k = 4 les entrées 1 et 2 donnent 4 et 8.
+ist es wahr: f(x) = x × n ist genau dann injektiv, wenn n nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei n = 3 liefern die Eingaben 1 und 2 die Werte 3 und 6.
+f(x) = x × n est injective exactement quand n n'est pas 0 : pour n = 4 les entrées 1 et 2 donnent 4 et 8.
 que signifie qu'une fonction est injective ? une fonction est injective quand des entrées différentes donnent des sorties différentes.
 ist f(x) = x × 2 auf 1, 2, 3 injektiv? ja: sie liefert 2, 4, 6, alle verschieden.
 ist es wahr: jede Funktion ist injektiv? nein: f(x) = x × 0 schickt 1 und 6 beide auf 0.
 toute fonction est injective est faux : f(x) = x × 0 envoie 5 et 10 tous deux sur 0.
-est-il vrai que f(x) = x × k est injective exactement quand k n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 1 les entrées 1 et 2 donnent 1 et 2.
+est-il vrai que f(x) = x × m est injective exactement quand m n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour m = 1 les entrées 1 et 2 donnent 1 et 2.
 f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist: bei k = 3 liefern die Eingaben 1 und 2 die Werte 3 und 6.
 ist es wahr: f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 6 liefern die Eingaben 1 und 2 die Werte 6 und 12.
 ist f(x) = x × 5 auf 1, 2, 3 injektiv? ja: sie liefert 5, 10, 15, alle verschieden.
 f(x) = x × 5 est-elle injective sur 1, 2, 3 ? oui : elle donne 5, 10, 15, toutes différentes.
 jede Funktion ist injektiv ist falsch: f(x) = x × 0 schickt 3 und 8 beide auf 0.
 ist es wahr: jede Funktion ist injektiv? nein: f(x) = x × 0 schickt 2 und 7 beide auf 0.
-f(x) = x × k est injective exactement quand k n'est pas 0 : pour k = 3 les entrées 1 et 2 donnent 3 et 6.
-est-il vrai que f(x) = x × k est injective exactement quand k n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 4 les entrées 1 et 2 donnent 4 et 8.
+f(x) = x × n est injective exactement quand n n'est pas 0 : pour n = 3 les entrées 1 et 2 donnent 3 et 6.
+est-il vrai que f(x) = x × n est injective exactement quand n n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour n = 4 les entrées 1 et 2 donnent 4 et 8.
 ist f(x) = x × 0 auf 1, 2, 3 injektiv? nein: sie liefert 0, 0, 0, nicht alle verschieden.
 f(x) = x × 2 est-elle injective sur 1, 2, 3 ? oui : elle donne 2, 4, 6, toutes différentes.
 toute fonction est injective est faux : f(x) = x × 0 envoie 1 et 6 tous deux sur 0.
@@ -1704,8 +1704,8 @@ f(x) = x × 5 est-elle injective sur 1, 2, 3 ? oui : elle donne 5, 10, 15, toute
 ist f(x) = x × 0 auf 1, 2, 3 injektiv? nein: sie liefert 0, 0, 0, nicht alle verschieden.
 ist es wahr: jede Funktion ist injektiv? nein: f(x) = x × 0 schickt 3 und 8 beide auf 0.
 toute fonction est injective est faux : f(x) = x × 0 envoie 2 et 7 tous deux sur 0.
-est-il vrai que f(x) = x × k est injective exactement quand k n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 3 les entrées 1 et 2 donnent 3 et 6.
-f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist: bei k = 5 liefern die Eingaben 1 und 2 die Werte 5 und 10.
+est-il vrai que f(x) = x × n est injective exactement quand n n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour n = 3 les entrées 1 et 2 donnent 3 et 6.
+f(x) = x × m ist genau dann injektiv, wenn m nicht 0 ist: bei m = 5 liefern die Eingaben 1 und 2 die Werte 5 und 10.
 f(x) = x × 0 est-elle injective sur 1, 2, 3 ? non : elle donne 0, 0, 0, pas toutes différentes.
 ist f(x) = x × 3 auf 1, 2, 3 injektiv? ja: sie liefert 3, 6, 9, alle verschieden.
 est-il vrai que toute fonction est injective ? non : f(x) = x × 0 envoie 1 et 6 tous deux sur 0.
@@ -1717,8 +1717,8 @@ ist f(x) = x × 0 auf 1, 2, 3 injektiv? nein: sie liefert 0, 0, 0, nicht alle ve
 f(x) = x × 0 est-elle injective sur 1, 2, 3 ? non : elle donne 0, 0, 0, pas toutes différentes.
 toute fonction est injective est faux : f(x) = x × 0 envoie 3 et 8 tous deux sur 0.
 est-il vrai que toute fonction est injective ? non : f(x) = x × 0 envoie 2 et 7 tous deux sur 0.
-f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist: bei k = 2 liefern die Eingaben 1 und 2 die Werte 2 und 4.
-ist es wahr: f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 5 liefern die Eingaben 1 und 2 die Werte 5 und 10.
+f(x) = x × m ist genau dann injektiv, wenn m nicht 0 ist: bei m = 2 liefern die Eingaben 1 und 2 die Werte 2 und 4.
+ist es wahr: f(x) = x × m ist genau dann injektiv, wenn m nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei m = 5 liefern die Eingaben 1 und 2 die Werte 5 und 10.
 ist f(x) = x × 1 auf 1, 2, 3 injektiv? ja: sie liefert 1, 2, 3, alle verschieden.
 f(x) = x × 3 est-elle injective sur 1, 2, 3 ? oui : elle donne 3, 6, 9, toutes différentes.
 jede Funktion ist injektiv ist falsch: f(x) = x × 0 schickt 2 und 7 beide auf 0.
@@ -1729,34 +1729,34 @@ eine Funktion ist injektiv, wenn verschiedene Eingaben verschiedene Ausgaben lie
 f(x) = x × 0 est-elle injective sur 1, 2, 3 ? non : elle donne 0, 0, 0, pas toutes différentes.
 ist f(x) = x × 1 auf 1, 2, 3 injektiv? ja: sie liefert 1, 2, 3, alle verschieden.
 est-il vrai que toute fonction est injective ? non : f(x) = x × 0 envoie 3 et 8 tous deux sur 0.
-f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist: bei k = 1 liefern die Eingaben 1 und 2 die Werte 1 und 2.
-ist es wahr: f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 2 liefern die Eingaben 1 und 2 die Werte 2 und 4.
-f(x) = x × k est injective exactement quand k n'est pas 0 : pour k = 5 les entrées 1 et 2 donnent 5 et 10.
+f(x) = x × m ist genau dann injektiv, wenn m nicht 0 ist: bei m = 1 liefern die Eingaben 1 und 2 die Werte 1 und 2.
+ist es wahr: f(x) = x × m ist genau dann injektiv, wenn m nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei m = 2 liefern die Eingaben 1 und 2 die Werte 2 und 4.
+f(x) = x × m est injective exactement quand m n'est pas 0 : pour m = 5 les entrées 1 et 2 donnent 5 et 10.
 f(x) = x × 1 est-elle injective sur 1, 2, 3 ? oui : elle donne 1, 2, 3, toutes différentes.
 ist f(x) = x × 4 auf 1, 2, 3 injektiv? ja: sie liefert 4, 8, 12, alle verschieden.
 ist es wahr: jede Funktion ist injektiv? nein: f(x) = x × 0 schickt 2 und 7 beide auf 0.
 toute fonction est injective est faux : f(x) = x × 0 envoie 1 et 6 tous deux sur 0.
 est-il vrai que f(x) = x × k est injective exactement quand k n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 2 les entrées 1 et 2 donnent 2 et 4.
-f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist: bei k = 4 liefern die Eingaben 1 und 2 die Werte 4 und 8.
+f(x) = x × n ist genau dann injektiv, wenn n nicht 0 ist: bei n = 4 liefern die Eingaben 1 und 2 die Werte 4 und 8.
 une fonction est injective quand des entrées différentes donnent des sorties différentes.
 ist f(x) = x × 1 auf 1, 2, 3 injektiv? ja: sie liefert 1, 2, 3, alle verschieden.
 f(x) = x × 1 est-elle injective sur 1, 2, 3 ? oui : elle donne 1, 2, 3, toutes différentes.
 jede Funktion ist injektiv ist falsch: f(x) = x × 0 schickt 5 und 10 beide auf 0.
-ist es wahr: f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 1 liefern die Eingaben 1 und 2 die Werte 1 und 2.
-f(x) = x × k est injective exactement quand k n'est pas 0 : pour k = 2 les entrées 1 et 2 donnent 2 et 4.
-est-il vrai que f(x) = x × k est injective exactement quand k n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 5 les entrées 1 et 2 donnent 5 et 10.
+ist es wahr: f(x) = x × m ist genau dann injektiv, wenn m nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei m = 1 liefern die Eingaben 1 und 2 die Werte 1 und 2.
+f(x) = x × m est injective exactement quand m n'est pas 0 : pour m = 2 les entrées 1 et 2 donnent 2 et 4.
+est-il vrai que f(x) = x × m est injective exactement quand m n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour m = 5 les entrées 1 et 2 donnent 5 et 10.
 ist f(x) = x × 2 auf 1, 2, 3 injektiv? ja: sie liefert 2, 4, 6, alle verschieden.
 f(x) = x × 4 est-elle injective sur 1, 2, 3 ? oui : elle donne 4, 8, 12, toutes différentes.
 toute fonction est injective est faux : f(x) = x × 0 envoie 2 et 7 tous deux sur 0.
 est-il vrai que toute fonction est injective ? non : f(x) = x × 0 envoie 1 et 6 tous deux sur 0.
-f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist: bei k = 3 liefern die Eingaben 1 und 2 die Werte 3 und 6.
-ist es wahr: f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 4 liefern die Eingaben 1 und 2 die Werte 4 und 8.
+f(x) = x × n ist genau dann injektiv, wenn n nicht 0 ist: bei n = 3 liefern die Eingaben 1 und 2 die Werte 3 und 6.
+ist es wahr: f(x) = x × n ist genau dann injektiv, wenn n nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei n = 4 liefern die Eingaben 1 und 2 die Werte 4 und 8.
 was heißt es, dass eine Funktion injektiv ist? eine Funktion ist injektiv, wenn verschiedene Eingaben verschiedene Ausgaben liefern.
 f(x) = x × 1 est-elle injective sur 1, 2, 3 ? oui : elle donne 1, 2, 3, toutes différentes.
 jede Funktion ist injektiv ist falsch: f(x) = x × 0 schickt 1 und 6 beide auf 0.
 ist es wahr: jede Funktion ist injektiv? nein: f(x) = x × 0 schickt 5 und 10 beide auf 0.
-f(x) = x × k est injective exactement quand k n'est pas 0 : pour k = 1 les entrées 1 et 2 donnent 1 et 2.
-est-il vrai que f(x) = x × k est injective exactement quand k n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 2 les entrées 1 et 2 donnent 2 et 4.
+f(x) = x × m est injective exactement quand m n'est pas 0 : pour m = 1 les entrées 1 et 2 donnent 1 et 2.
+est-il vrai que f(x) = x × m est injective exactement quand m n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour m = 2 les entrées 1 et 2 donnent 2 et 4.
 f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist: bei k = 6 liefern die Eingaben 1 und 2 die Werte 6 und 12.
 
 quel est le carré de 4 ? 4 × 4 = 16.
@@ -2138,88 +2138,88 @@ est-il vrai que un nombre est divisible par 3 quand la somme de ses chiffres l'e
 
 was ist die Summe der ersten 2 ungeraden Zahlen? 1 + 3 = 4.
 quelle est la somme des 5 premiers nombres impairs ? 1 + 3 + 5 + 7 + 9 = 25.
-la somme des k premiers nombres impairs est 2 × k est faux : pour k = 5 la somme est 25, et 2 × 5 = 10.
+la somme des m premiers nombres impairs est 2 × m est faux : pour m = 5 la somme est 25, et 2 × 5 = 10.
 est-il vrai que la somme des k premiers nombres impairs est k × k ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 1 c'est 1 × 1 = 1.
-die Summe der ersten k ungeraden Zahlen ist k × k: bei k = 9 ist es 9 × 9 = 81.
+die Summe der ersten m ungeraden Zahlen ist m × m: bei m = 9 ist es 9 × 9 = 81.
 quelle est la somme des 2 premiers nombres impairs ? 1 + 3 = 4.
 was ist die Summe der ersten 6 ungeraden Zahlen? 1 + 3 + 5 + 7 + 9 + 11 = 36.
-est-il vrai que la somme des k premiers nombres impairs est 2 × k ? non : pour k = 5 la somme est 25, et 2 × 5 = 10.
-die Summe der ersten k ungeraden Zahlen ist k × k: bei k = 2 ist es 2 × 2 = 4.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist k × k? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 9 ist es 9 × 9 = 81.
+est-il vrai que la somme des m premiers nombres impairs est 2 × m ? non : pour m = 5 la somme est 25, et 2 × 5 = 10.
+die Summe der ersten n ungeraden Zahlen ist n × n: bei n = 2 ist es 2 × 2 = 4.
+ist es wahr: die Summe der ersten m ungeraden Zahlen ist m × m? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei m = 9 ist es 9 × 9 = 81.
 was ist die Summe der ersten 3 ungeraden Zahlen? 1 + 3 + 5 = 9.
 quelle est la somme des 6 premiers nombres impairs ? 1 + 3 + 5 + 7 + 9 + 11 = 36.
 die Summe der ersten k ungeraden Zahlen ist 2 × k ist falsch: bei k = 9 ist die Summe 81, und 2 × 9 = 18.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist k × k? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 2 ist es 2 × 2 = 4.
-la somme des k premiers nombres impairs est k × k : pour k = 9 c'est 9 × 9 = 81.
+ist es wahr: die Summe der ersten n ungeraden Zahlen ist n × n? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei n = 2 ist es 2 × 2 = 4.
+la somme des m premiers nombres impairs est m × m : pour m = 9 c'est 9 × 9 = 81.
 quelle est la somme des 3 premiers nombres impairs ? 1 + 3 + 5 = 9.
 was ist die Summe der ersten 7 ungeraden Zahlen? 1 + 3 + 5 + 7 + 9 + 11 + 13 = 49.
 ist es wahr: die Summe der ersten k ungeraden Zahlen ist 2 × k? nein: bei k = 9 ist die Summe 81, und 2 × 9 = 18.
-la somme des k premiers nombres impairs est k × k : pour k = 2 c'est 2 × 2 = 4.
-est-il vrai que la somme des k premiers nombres impairs est k × k ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 9 c'est 9 × 9 = 81.
+la somme des n premiers nombres impairs est n × n : pour n = 2 c'est 2 × 2 = 4.
+est-il vrai que la somme des m premiers nombres impairs est m × m ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour m = 9 c'est 9 × 9 = 81.
 was ist die Summe der ersten 4 ungeraden Zahlen? 1 + 3 + 5 + 7 = 16.
 quelle est la somme des 7 premiers nombres impairs ? 1 + 3 + 5 + 7 + 9 + 11 + 13 = 49.
 la somme des k premiers nombres impairs est 2 × k est faux : pour k = 9 la somme est 81, et 2 × 9 = 18.
-est-il vrai que la somme des k premiers nombres impairs est k × k ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 2 c'est 2 × 2 = 4.
+est-il vrai que la somme des n premiers nombres impairs est n × n ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour n = 2 c'est 2 × 2 = 4.
 die Summe der ersten k ungeraden Zahlen ist k × k: bei k = 10 ist es 10 × 10 = 100.
 quelle est la somme des 4 premiers nombres impairs ? 1 + 3 + 5 + 7 = 16.
 was ist die Summe der ersten 8 ungeraden Zahlen? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 = 64.
 est-il vrai que la somme des k premiers nombres impairs est 2 × k ? non : pour k = 9 la somme est 81, et 2 × 9 = 18.
-die Summe der ersten k ungeraden Zahlen ist k × k: bei k = 3 ist es 3 × 3 = 9.
+die Summe der ersten m ungeraden Zahlen ist m × m: bei m = 3 ist es 3 × 3 = 9.
 ist es wahr: die Summe der ersten k ungeraden Zahlen ist k × k? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 10 ist es 10 × 10 = 100.
 was ist die Summe der ersten 11 ungeraden Zahlen? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 + 21 = 121.
 quelle est la somme des 8 premiers nombres impairs ? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 = 64.
-die Summe der ersten k ungeraden Zahlen ist 2 × k ist falsch: bei k = 10 ist die Summe 100, und 2 × 10 = 20.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist k × k? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 3 ist es 3 × 3 = 9.
+die Summe der ersten n ungeraden Zahlen ist 2 × n ist falsch: bei n = 10 ist die Summe 100, und 2 × 10 = 20.
+ist es wahr: die Summe der ersten m ungeraden Zahlen ist m × m? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei m = 3 ist es 3 × 3 = 9.
 la somme des k premiers nombres impairs est k × k : pour k = 10 c'est 10 × 10 = 100.
 quelle est la somme des 11 premiers nombres impairs ? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 + 21 = 121.
 die Summe der ersten k ungeraden Zahlen ist 2 × k ist falsch: bei k = 3 ist die Summe 9, und 2 × 3 = 6.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist 2 × k? nein: bei k = 10 ist die Summe 100, und 2 × 10 = 20.
-la somme des k premiers nombres impairs est k × k : pour k = 3 c'est 3 × 3 = 9.
+ist es wahr: die Summe der ersten n ungeraden Zahlen ist 2 × n? nein: bei n = 10 ist die Summe 100, und 2 × 10 = 20.
+la somme des m premiers nombres impairs est m × m : pour m = 3 c'est 3 × 3 = 9.
 est-il vrai que la somme des k premiers nombres impairs est k × k ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 10 c'est 10 × 10 = 100.
 was ist die Summe der ersten 12 ungeraden Zahlen? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 + 21 + 23 = 144.
 ist es wahr: die Summe der ersten k ungeraden Zahlen ist 2 × k? nein: bei k = 3 ist die Summe 9, und 2 × 3 = 6.
-la somme des k premiers nombres impairs est 2 × k est faux : pour k = 10 la somme est 100, et 2 × 10 = 20.
-est-il vrai que la somme des k premiers nombres impairs est k × k ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 3 c'est 3 × 3 = 9.
-die Summe der ersten k ungeraden Zahlen ist k × k: bei k = 11 ist es 11 × 11 = 121.
+la somme des n premiers nombres impairs est 2 × n est faux : pour n = 10 la somme est 100, et 2 × 10 = 20.
+est-il vrai que la somme des m premiers nombres impairs est m × m ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour m = 3 c'est 3 × 3 = 9.
+die Summe der ersten n ungeraden Zahlen ist n × n: bei n = 11 ist es 11 × 11 = 121.
 quelle est la somme des 12 premiers nombres impairs ? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 + 21 + 23 = 144.
 la somme des k premiers nombres impairs est 2 × k est faux : pour k = 3 la somme est 9, et 2 × 3 = 6.
-est-il vrai que la somme des k premiers nombres impairs est 2 × k ? non : pour k = 10 la somme est 100, et 2 × 10 = 20.
+est-il vrai que la somme des n premiers nombres impairs est 2 × n ? non : pour n = 10 la somme est 100, et 2 × 10 = 20.
 die Summe der ersten k ungeraden Zahlen ist k × k: bei k = 7 ist es 7 × 7 = 49.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist k × k? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 11 ist es 11 × 11 = 121.
+ist es wahr: die Summe der ersten n ungeraden Zahlen ist n × n? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei n = 11 ist es 11 × 11 = 121.
 was ist die Summe der ersten 2 ungeraden Zahlen? 1 + 3 = 4.
 est-il vrai que la somme des k premiers nombres impairs est 2 × k ? non : pour k = 3 la somme est 9, et 2 × 3 = 6.
-die Summe der ersten k ungeraden Zahlen ist 2 × k ist falsch: bei k = 11 ist die Summe 121, und 2 × 11 = 22.
+die Summe der ersten m ungeraden Zahlen ist 2 × m ist falsch: bei m = 11 ist die Summe 121, und 2 × 11 = 22.
 ist es wahr: die Summe der ersten k ungeraden Zahlen ist k × k? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 7 ist es 7 × 7 = 49.
-la somme des k premiers nombres impairs est k × k : pour k = 11 c'est 11 × 11 = 121.
+la somme des n premiers nombres impairs est n × n : pour n = 11 c'est 11 × 11 = 121.
 quelle est la somme des 2 premiers nombres impairs ? 1 + 3 = 4.
-die Summe der ersten k ungeraden Zahlen ist 2 × k ist falsch: bei k = 4 ist die Summe 16, und 2 × 4 = 8.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist 2 × k? nein: bei k = 11 ist die Summe 121, und 2 × 11 = 22.
+die Summe der ersten n ungeraden Zahlen ist 2 × n ist falsch: bei n = 4 ist die Summe 16, und 2 × 4 = 8.
+ist es wahr: die Summe der ersten m ungeraden Zahlen ist 2 × m? nein: bei m = 11 ist die Summe 121, und 2 × 11 = 22.
 la somme des k premiers nombres impairs est k × k : pour k = 7 c'est 7 × 7 = 49.
-est-il vrai que la somme des k premiers nombres impairs est k × k ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 11 c'est 11 × 11 = 121.
+est-il vrai que la somme des n premiers nombres impairs est n × n ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour n = 11 c'est 11 × 11 = 121.
 was ist die Summe der ersten 3 ungeraden Zahlen? 1 + 3 + 5 = 9.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist 2 × k? nein: bei k = 4 ist die Summe 16, und 2 × 4 = 8.
-la somme des k premiers nombres impairs est 2 × k est faux : pour k = 11 la somme est 121, et 2 × 11 = 22.
+ist es wahr: die Summe der ersten n ungeraden Zahlen ist 2 × n? nein: bei n = 4 ist die Summe 16, und 2 × 4 = 8.
+la somme des m premiers nombres impairs est 2 × m est faux : pour m = 11 la somme est 121, et 2 × 11 = 22.
 est-il vrai que la somme des k premiers nombres impairs est k × k ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 7 c'est 7 × 7 = 49.
 die ungeraden Zahlen beginnen mit 1, 3, 5, 7, und jede ist um 2 größer als die vorige.
 quelle est la somme des 3 premiers nombres impairs ? 1 + 3 + 5 = 9.
-la somme des k premiers nombres impairs est 2 × k est faux : pour k = 4 la somme est 16, et 2 × 4 = 8.
-est-il vrai que la somme des k premiers nombres impairs est 2 × k ? non : pour k = 11 la somme est 121, et 2 × 11 = 22.
-die Summe der ersten k ungeraden Zahlen ist k × k: bei k = 8 ist es 8 × 8 = 64.
+la somme des n premiers nombres impairs est 2 × n est faux : pour n = 4 la somme est 16, et 2 × 4 = 8.
+est-il vrai que la somme des m premiers nombres impairs est 2 × m ? non : pour m = 11 la somme est 121, et 2 × 11 = 22.
+die Summe der ersten n ungeraden Zahlen ist n × n: bei n = 8 ist es 8 × 8 = 64.
 les nombres impairs commencent par 1, 3, 5, 7, et chacun dépasse le précédent de 2.
 was ist die Summe der ersten 4 ungeraden Zahlen? 1 + 3 + 5 + 7 = 16.
-est-il vrai que la somme des k premiers nombres impairs est 2 × k ? non : pour k = 4 la somme est 16, et 2 × 4 = 8.
+est-il vrai que la somme des n premiers nombres impairs est 2 × n ? non : pour n = 4 la somme est 16, et 2 × 4 = 8.
 die Summe der ersten k ungeraden Zahlen ist k × k: bei k = 1 ist es 1 × 1 = 1.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist k × k? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 8 ist es 8 × 8 = 64.
+ist es wahr: die Summe der ersten n ungeraden Zahlen ist n × n? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei n = 8 ist es 8 × 8 = 64.
 was ist eine ungerade Zahl? die ungeraden Zahlen beginnen mit 1, 3, 5, 7, und jede ist um 2 größer als die vorige.
 quelle est la somme des 4 premiers nombres impairs ? 1 + 3 + 5 + 7 = 16.
-die Summe der ersten k ungeraden Zahlen ist 2 × k ist falsch: bei k = 5 ist die Summe 25, und 2 × 5 = 10.
+die Summe der ersten m ungeraden Zahlen ist 2 × m ist falsch: bei m = 5 ist die Summe 25, und 2 × 5 = 10.
 ist es wahr: die Summe der ersten k ungeraden Zahlen ist k × k? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 1 ist es 1 × 1 = 1.
-la somme des k premiers nombres impairs est k × k : pour k = 8 c'est 8 × 8 = 64.
+la somme des n premiers nombres impairs est n × n : pour n = 8 c'est 8 × 8 = 64.
 qu'est-ce qu'un nombre impair ? les nombres impairs commencent par 1, 3, 5, 7, et chacun dépasse le précédent de 2.
 was ist die Summe der ersten 5 ungeraden Zahlen? 1 + 3 + 5 + 7 + 9 = 25.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist 2 × k? nein: bei k = 5 ist die Summe 25, und 2 × 5 = 10.
+ist es wahr: die Summe der ersten m ungeraden Zahlen ist 2 × m? nein: bei m = 5 ist die Summe 25, und 2 × 5 = 10.
 la somme des k premiers nombres impairs est k × k : pour k = 1 c'est 1 × 1 = 1.
-est-il vrai que la somme des k premiers nombres impairs est k × k ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 8 c'est 8 × 8 = 64.
+est-il vrai que la somme des n premiers nombres impairs est n × n ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour n = 8 c'est 8 × 8 = 64.
 
 wenn n gerade ist, ist n + 1 gerade? nein: 4 ist gerade, und 4 + 1 = 5, was ungerade ist.
 si n est pair, n + 3 est-il pair ? non : 18 est pair, et 18 + 3 = 21, qui est impair.
@@ -2310,62 +2310,62 @@ ist f(x) = x × 0 auf 1, 2, 3 injektiv? nein: sie liefert 0, 0, 0, nicht alle ve
 f(x) = x × 5 est-elle injective sur 1, 2, 3 ? oui : elle donne 5, 10, 15, toutes différentes.
 toute fonction est injective est faux : f(x) = x × 0 envoie 3 et 8 tous deux sur 0.
 est-il vrai que f(x) = x × k est injective exactement quand k n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 1 les entrées 1 et 2 donnent 1 et 2.
-f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist: bei k = 3 liefern die Eingaben 1 und 2 die Werte 3 und 6.
+f(x) = x × m ist genau dann injektiv, wenn m nicht 0 ist: bei m = 3 liefern die Eingaben 1 und 2 die Werte 3 und 6.
 f(x) = x × 0 est-elle injective sur 1, 2, 3 ? non : elle donne 0, 0, 0, pas toutes différentes.
 ist f(x) = x × 0 auf 1, 2, 3 injektiv? nein: sie liefert 0, 0, 0, nicht alle verschieden.
 est-il vrai que toute fonction est injective ? non : f(x) = x × 0 envoie 3 et 8 tous deux sur 0.
-f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist: bei k = 2 liefern die Eingaben 1 und 2 die Werte 2 und 4.
-ist es wahr: f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 3 liefern die Eingaben 1 und 2 die Werte 3 und 6.
+f(x) = x × n ist genau dann injektiv, wenn n nicht 0 ist: bei n = 2 liefern die Eingaben 1 und 2 die Werte 2 und 4.
+ist es wahr: f(x) = x × m ist genau dann injektiv, wenn m nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei m = 3 liefern die Eingaben 1 und 2 die Werte 3 und 6.
 ist f(x) = x × 1 auf 1, 2, 3 injektiv? ja: sie liefert 1, 2, 3, alle verschieden.
 f(x) = x × 0 est-elle injective sur 1, 2, 3 ? non : elle donne 0, 0, 0, pas toutes différentes.
 jede Funktion ist injektiv ist falsch: f(x) = x × 0 schickt 3 und 8 beide auf 0.
-ist es wahr: f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 2 liefern die Eingaben 1 und 2 die Werte 2 und 4.
-f(x) = x × k est injective exactement quand k n'est pas 0 : pour k = 3 les entrées 1 et 2 donnent 3 et 6.
+ist es wahr: f(x) = x × n ist genau dann injektiv, wenn n nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei n = 2 liefern die Eingaben 1 und 2 die Werte 2 und 4.
+f(x) = x × m est injective exactement quand m n'est pas 0 : pour m = 3 les entrées 1 et 2 donnent 3 et 6.
 f(x) = x × 1 est-elle injective sur 1, 2, 3 ? oui : elle donne 1, 2, 3, toutes différentes.
 ist f(x) = x × 1 auf 1, 2, 3 injektiv? ja: sie liefert 1, 2, 3, alle verschieden.
 ist es wahr: jede Funktion ist injektiv? nein: f(x) = x × 0 schickt 3 und 8 beide auf 0.
-f(x) = x × k est injective exactement quand k n'est pas 0 : pour k = 2 les entrées 1 et 2 donnent 2 et 4.
-est-il vrai que f(x) = x × k est injective exactement quand k n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 3 les entrées 1 et 2 donnent 3 et 6.
+f(x) = x × n est injective exactement quand n n'est pas 0 : pour n = 2 les entrées 1 et 2 donnent 2 et 4.
+est-il vrai que f(x) = x × m est injective exactement quand m n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour m = 3 les entrées 1 et 2 donnent 3 et 6.
 ist f(x) = x × 2 auf 1, 2, 3 injektiv? ja: sie liefert 2, 4, 6, alle verschieden.
 f(x) = x × 1 est-elle injective sur 1, 2, 3 ? oui : elle donne 1, 2, 3, toutes différentes.
 toute fonction est injective est faux : f(x) = x × 0 envoie 3 et 8 tous deux sur 0.
-est-il vrai que f(x) = x × k est injective exactement quand k n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 2 les entrées 1 et 2 donnent 2 et 4.
+est-il vrai que f(x) = x × n est injective exactement quand n n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour n = 2 les entrées 1 et 2 donnent 2 et 4.
 f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist: bei k = 4 liefern die Eingaben 1 und 2 die Werte 4 und 8.
 f(x) = x × 2 est-elle injective sur 1, 2, 3 ? oui : elle donne 2, 4, 6, toutes différentes.
 ist f(x) = x × 2 auf 1, 2, 3 injektiv? ja: sie liefert 2, 4, 6, alle verschieden.
 est-il vrai que toute fonction est injective ? non : f(x) = x × 0 envoie 3 et 8 tous deux sur 0.
-f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist: bei k = 3 liefern die Eingaben 1 und 2 die Werte 3 und 6.
+f(x) = x × m ist genau dann injektiv, wenn m nicht 0 ist: bei m = 3 liefern die Eingaben 1 und 2 die Werte 3 und 6.
 ist es wahr: f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 4 liefern die Eingaben 1 und 2 die Werte 4 und 8.
 ist f(x) = x × 0 auf 1, 2, 3 injektiv? nein: sie liefert 0, 0, 0, nicht alle verschieden.
 f(x) = x × 2 est-elle injective sur 1, 2, 3 ? oui : elle donne 2, 4, 6, toutes différentes.
 jede Funktion ist injektiv ist falsch: f(x) = x × 0 schickt 4 und 9 beide auf 0.
-ist es wahr: f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 3 liefern die Eingaben 1 und 2 die Werte 3 und 6.
+ist es wahr: f(x) = x × m ist genau dann injektiv, wenn m nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei m = 3 liefern die Eingaben 1 und 2 die Werte 3 und 6.
 f(x) = x × k est injective exactement quand k n'est pas 0 : pour k = 4 les entrées 1 et 2 donnent 4 et 8.
 f(x) = x × 0 est-elle injective sur 1, 2, 3 ? non : elle donne 0, 0, 0, pas toutes différentes.
 jede Funktion ist injektiv ist falsch: f(x) = x × 0 schickt 1 und 6 beide auf 0.
 ist es wahr: jede Funktion ist injektiv? nein: f(x) = x × 0 schickt 4 und 9 beide auf 0.
-f(x) = x × k est injective exactement quand k n'est pas 0 : pour k = 3 les entrées 1 et 2 donnent 3 et 6.
+f(x) = x × m est injective exactement quand m n'est pas 0 : pour m = 3 les entrées 1 et 2 donnent 3 et 6.
 est-il vrai que f(x) = x × k est injective exactement quand k n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 4 les entrées 1 et 2 donnent 4 et 8.
 ist f(x) = x × 1 auf 1, 2, 3 injektiv? ja: sie liefert 1, 2, 3, alle verschieden.
 ist es wahr: jede Funktion ist injektiv? nein: f(x) = x × 0 schickt 1 und 6 beide auf 0.
 toute fonction est injective est faux : f(x) = x × 0 envoie 4 et 9 tous deux sur 0.
-est-il vrai que f(x) = x × k est injective exactement quand k n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 3 les entrées 1 et 2 donnent 3 et 6.
-f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist: bei k = 5 liefern die Eingaben 1 und 2 die Werte 5 und 10.
+est-il vrai que f(x) = x × m est injective exactement quand m n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour m = 3 les entrées 1 et 2 donnent 3 et 6.
+f(x) = x × n ist genau dann injektiv, wenn n nicht 0 ist: bei n = 5 liefern die Eingaben 1 und 2 die Werte 5 und 10.
 f(x) = x × 1 est-elle injective sur 1, 2, 3 ? oui : elle donne 1, 2, 3, toutes différentes.
 toute fonction est injective est faux : f(x) = x × 0 envoie 1 et 6 tous deux sur 0.
 est-il vrai que toute fonction est injective ? non : f(x) = x × 0 envoie 4 et 9 tous deux sur 0.
 f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist: bei k = 1 liefern die Eingaben 1 und 2 die Werte 1 und 2.
-ist es wahr: f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 5 liefern die Eingaben 1 und 2 die Werte 5 und 10.
+ist es wahr: f(x) = x × n ist genau dann injektiv, wenn n nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei n = 5 liefern die Eingaben 1 und 2 die Werte 5 und 10.
 ist f(x) = x × 2 auf 1, 2, 3 injektiv? ja: sie liefert 2, 4, 6, alle verschieden.
 est-il vrai que toute fonction est injective ? non : f(x) = x × 0 envoie 1 et 6 tous deux sur 0.
 jede Funktion ist injektiv ist falsch: f(x) = x × 0 schickt 5 und 10 beide auf 0.
 ist es wahr: f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 1 liefern die Eingaben 1 und 2 die Werte 1 und 2.
-f(x) = x × k est injective exactement quand k n'est pas 0 : pour k = 5 les entrées 1 et 2 donnent 5 et 10.
+f(x) = x × n est injective exactement quand n n'est pas 0 : pour n = 5 les entrées 1 et 2 donnent 5 et 10.
 f(x) = x × 2 est-elle injective sur 1, 2, 3 ? oui : elle donne 2, 4, 6, toutes différentes.
 jede Funktion ist injektiv ist falsch: f(x) = x × 0 schickt 2 und 7 beide auf 0.
 ist es wahr: jede Funktion ist injektiv? nein: f(x) = x × 0 schickt 5 und 10 beide auf 0.
 f(x) = x × k est injective exactement quand k n'est pas 0 : pour k = 1 les entrées 1 et 2 donnent 1 et 2.
-est-il vrai que f(x) = x × k est injective exactement quand k n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 5 les entrées 1 et 2 donnent 5 et 10.
+est-il vrai que f(x) = x × n est injective exactement quand n n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour n = 5 les entrées 1 et 2 donnent 5 et 10.
 ist f(x) = x × 3 auf 1, 2, 3 injektiv? ja: sie liefert 3, 6, 9, alle verschieden.
 ist es wahr: jede Funktion ist injektiv? nein: f(x) = x × 0 schickt 2 und 7 beide auf 0.
 toute fonction est injective est faux : f(x) = x × 0 envoie 5 et 10 tous deux sur 0.
@@ -2374,22 +2374,22 @@ eine Funktion ist injektiv, wenn verschiedene Eingaben verschiedene Ausgaben lie
 f(x) = x × 3 est-elle injective sur 1, 2, 3 ? oui : elle donne 3, 6, 9, toutes différentes.
 toute fonction est injective est faux : f(x) = x × 0 envoie 2 et 7 tous deux sur 0.
 est-il vrai que toute fonction est injective ? non : f(x) = x × 0 envoie 5 et 10 tous deux sur 0.
-f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist: bei k = 2 liefern die Eingaben 1 und 2 die Werte 2 und 4.
+f(x) = x × n ist genau dann injektiv, wenn n nicht 0 ist: bei n = 2 liefern die Eingaben 1 und 2 die Werte 2 und 4.
 une fonction est injective quand des entrées différentes donnent des sorties différentes.
 ist f(x) = x × 4 auf 1, 2, 3 injektiv? ja: sie liefert 4, 8, 12, alle verschieden.
 est-il vrai que toute fonction est injective ? non : f(x) = x × 0 envoie 2 et 7 tous deux sur 0.
 f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist: bei k = 1 liefern die Eingaben 1 und 2 die Werte 1 und 2.
-ist es wahr: f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 2 liefern die Eingaben 1 und 2 die Werte 2 und 4.
+ist es wahr: f(x) = x × n ist genau dann injektiv, wenn n nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei n = 2 liefern die Eingaben 1 und 2 die Werte 2 und 4.
 was heißt es, dass eine Funktion injektiv ist? eine Funktion ist injektiv, wenn verschiedene Eingaben verschiedene Ausgaben liefern.
 f(x) = x × 4 est-elle injective sur 1, 2, 3 ? oui : elle donne 4, 8, 12, toutes différentes.
 jede Funktion ist injektiv ist falsch: f(x) = x × 0 schickt 3 und 8 beide auf 0.
 ist es wahr: f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 1 liefern die Eingaben 1 und 2 die Werte 1 und 2.
-f(x) = x × k est injective exactement quand k n'est pas 0 : pour k = 2 les entrées 1 et 2 donnent 2 et 4.
+f(x) = x × n est injective exactement quand n n'est pas 0 : pour n = 2 les entrées 1 et 2 donnent 2 et 4.
 que signifie qu'une fonction est injective ? une fonction est injective quand des entrées différentes donnent des sorties différentes.
 ist f(x) = x × 5 auf 1, 2, 3 injektiv? ja: sie liefert 5, 10, 15, alle verschieden.
 ist es wahr: jede Funktion ist injektiv? nein: f(x) = x × 0 schickt 3 und 8 beide auf 0.
 f(x) = x × k est injective exactement quand k n'est pas 0 : pour k = 1 les entrées 1 et 2 donnent 1 et 2.
-est-il vrai que f(x) = x × k est injective exactement quand k n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 2 les entrées 1 et 2 donnent 2 et 4.
+est-il vrai que f(x) = x × n est injective exactement quand n n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour n = 2 les entrées 1 et 2 donnent 2 et 4.
 
 was ist das Quadrat von 2? 2 × 2 = 4.
 quel est le carré de 25 ? 25 × 25 = 625.
@@ -2769,89 +2769,89 @@ un nombre est divisible par 3 quand la somme de ses chiffres l'est : la somme de
 ist es wahr: eine Zahl ist durch 3 teilbar, wenn ihre Quersumme es ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: die Quersumme von 285 ist 15, und 15 = 3 × 5.
 
 was ist die Summe der ersten 3 ungeraden Zahlen? 1 + 3 + 5 = 9.
-est-il vrai que la somme des k premiers nombres impairs est 2 × k ? non : pour k = 3 la somme est 9, et 2 × 3 = 6.
+est-il vrai que la somme des n premiers nombres impairs est 2 × n ? non : pour n = 3 la somme est 9, et 2 × 3 = 6.
 la somme des k premiers nombres impairs est 2 × k est faux : pour k = 6 la somme est 36, et 2 × 6 = 12.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist k × k? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 9 ist es 9 × 9 = 81.
+ist es wahr: die Summe der ersten m ungeraden Zahlen ist m × m? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei m = 9 ist es 9 × 9 = 81.
 was ist die Summe der ersten 2 ungeraden Zahlen? 1 + 3 = 4.
 quelle est la somme des 8 premiers nombres impairs ? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 = 64.
-la somme des k premiers nombres impairs est 2 × k est faux : pour k = 4 la somme est 16, et 2 × 4 = 8.
+la somme des n premiers nombres impairs est 2 × n est faux : pour n = 4 la somme est 16, et 2 × 4 = 8.
 ist es wahr: die Summe der ersten k ungeraden Zahlen ist k × k? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 3 ist es 3 × 3 = 9.
-die Summe der ersten k ungeraden Zahlen ist k × k: bei k = 12 ist es 12 × 12 = 144.
+die Summe der ersten m ungeraden Zahlen ist m × m: bei m = 12 ist es 12 × 12 = 144.
 quelle est la somme des 4 premiers nombres impairs ? 1 + 3 + 5 + 7 = 16.
-la somme des k premiers nombres impairs est 2 × k est faux : pour k = 4 la somme est 16, et 2 × 4 = 8.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist k × k? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 1 ist es 1 × 1 = 1.
+la somme des m premiers nombres impairs est 2 × m est faux : pour m = 4 la somme est 16, et 2 × 4 = 8.
+ist es wahr: die Summe der ersten n ungeraden Zahlen ist n × n? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei n = 1 ist es 1 × 1 = 1.
 die Summe der ersten k ungeraden Zahlen ist k × k: bei k = 10 ist es 10 × 10 = 100.
 quelle est la somme des 3 premiers nombres impairs ? 1 + 3 + 5 = 9.
 was ist die Summe der ersten 10 ungeraden Zahlen? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 = 100.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist 2 × k? nein: bei k = 5 ist die Summe 25, und 2 × 5 = 10.
-die Summe der ersten k ungeraden Zahlen ist k × k: bei k = 8 ist es 8 × 8 = 64.
-est-il vrai que la somme des k premiers nombres impairs est k × k ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 12 c'est 12 × 12 = 144.
+ist es wahr: die Summe der ersten m ungeraden Zahlen ist 2 × m? nein: bei m = 5 ist die Summe 25, und 2 × 5 = 10.
+die Summe der ersten n ungeraden Zahlen ist n × n: bei n = 8 ist es 8 × 8 = 64.
+est-il vrai que la somme des m premiers nombres impairs est m × m ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour m = 12 c'est 12 × 12 = 144.
 was ist die Summe der ersten 6 ungeraden Zahlen? 1 + 3 + 5 + 7 + 9 + 11 = 36.
 ist es wahr: die Summe der ersten k ungeraden Zahlen ist 2 × k? nein: bei k = 5 ist die Summe 25, und 2 × 5 = 10.
-die Summe der ersten k ungeraden Zahlen ist k × k: bei k = 2 ist es 2 × 2 = 4.
+die Summe der ersten m ungeraden Zahlen ist m × m: bei m = 2 ist es 2 × 2 = 4.
 est-il vrai que la somme des k premiers nombres impairs est k × k ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 10 c'est 10 × 10 = 100.
 was ist die Summe der ersten 2 ungeraden Zahlen? 1 + 3 = 4.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist 2 × k? nein: bei k = 3 ist die Summe 9, und 2 × 3 = 6.
+ist es wahr: die Summe der ersten n ungeraden Zahlen ist 2 × n? nein: bei n = 3 ist die Summe 9, und 2 × 3 = 6.
 die Summe der ersten k ungeraden Zahlen ist 2 × k ist falsch: bei k = 6 ist die Summe 36, und 2 × 6 = 12.
-est-il vrai que la somme des k premiers nombres impairs est k × k ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 8 c'est 8 × 8 = 64.
+est-il vrai que la somme des n premiers nombres impairs est n × n ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour n = 8 c'est 8 × 8 = 64.
 was ist eine ungerade Zahl? die ungeraden Zahlen beginnen mit 1, 3, 5, 7, und jede ist um 2 größer als die vorige.
 quelle est la somme des 7 premiers nombres impairs ? 1 + 3 + 5 + 7 + 9 + 11 + 13 = 49.
-die Summe der ersten k ungeraden Zahlen ist 2 × k ist falsch: bei k = 4 ist die Summe 16, und 2 × 4 = 8.
-est-il vrai que la somme des k premiers nombres impairs est k × k ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 2 c'est 2 × 2 = 4.
-la somme des k premiers nombres impairs est k × k : pour k = 11 c'est 11 × 11 = 121.
+die Summe der ersten n ungeraden Zahlen ist 2 × n ist falsch: bei n = 4 ist die Summe 16, und 2 × 4 = 8.
+est-il vrai que la somme des m premiers nombres impairs est m × m ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour m = 2 c'est 2 × 2 = 4.
+la somme des n premiers nombres impairs est n × n : pour n = 11 c'est 11 × 11 = 121.
 quelle est la somme des 3 premiers nombres impairs ? 1 + 3 + 5 = 9.
-die Summe der ersten k ungeraden Zahlen ist 2 × k ist falsch: bei k = 4 ist die Summe 16, und 2 × 4 = 8.
+die Summe der ersten m ungeraden Zahlen ist 2 × m ist falsch: bei m = 4 ist die Summe 16, und 2 × 4 = 8.
 est-il vrai que la somme des k premiers nombres impairs est 2 × k ? non : pour k = 6 la somme est 36, et 2 × 6 = 12.
-la somme des k premiers nombres impairs est k × k : pour k = 9 c'est 9 × 9 = 81.
+la somme des m premiers nombres impairs est m × m : pour m = 9 c'est 9 × 9 = 81.
 quelle est la somme des 2 premiers nombres impairs ? 1 + 3 = 4.
 was ist die Summe der ersten 9 ungeraden Zahlen? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 = 81.
-est-il vrai que la somme des k premiers nombres impairs est 2 × k ? non : pour k = 4 la somme est 16, et 2 × 4 = 8.
+est-il vrai que la somme des n premiers nombres impairs est 2 × n ? non : pour n = 4 la somme est 16, et 2 × 4 = 8.
 la somme des k premiers nombres impairs est k × k : pour k = 3 c'est 3 × 3 = 9.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist k × k? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 12 ist es 12 × 12 = 144.
+ist es wahr: die Summe der ersten m ungeraden Zahlen ist m × m? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei m = 12 ist es 12 × 12 = 144.
 was ist die Summe der ersten 5 ungeraden Zahlen? 1 + 3 + 5 + 7 + 9 = 25.
-est-il vrai que la somme des k premiers nombres impairs est 2 × k ? non : pour k = 4 la somme est 16, et 2 × 4 = 8.
-la somme des k premiers nombres impairs est k × k : pour k = 1 c'est 1 × 1 = 1.
+est-il vrai que la somme des m premiers nombres impairs est 2 × m ? non : pour m = 4 la somme est 16, et 2 × 4 = 8.
+la somme des n premiers nombres impairs est n × n : pour n = 1 c'est 1 × 1 = 1.
 ist es wahr: die Summe der ersten k ungeraden Zahlen ist k × k? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 10 ist es 10 × 10 = 100.
 was ist die Summe der ersten 4 ungeraden Zahlen? 1 + 3 + 5 + 7 = 16.
 quelle est la somme des 10 premiers nombres impairs ? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 = 100.
-la somme des k premiers nombres impairs est 2 × k est faux : pour k = 5 la somme est 25, et 2 × 5 = 10.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist k × k? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 8 ist es 8 × 8 = 64.
+la somme des m premiers nombres impairs est 2 × m est faux : pour m = 5 la somme est 25, et 2 × 5 = 10.
+ist es wahr: die Summe der ersten n ungeraden Zahlen ist n × n? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei n = 8 ist es 8 × 8 = 64.
 die ungeraden Zahlen beginnen mit 1, 3, 5, 7, und jede ist um 2 größer als die vorige.
 quelle est la somme des 6 premiers nombres impairs ? 1 + 3 + 5 + 7 + 9 + 11 = 36.
 la somme des k premiers nombres impairs est 2 × k est faux : pour k = 5 la somme est 25, et 2 × 5 = 10.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist k × k? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 2 ist es 2 × 2 = 4.
-die Summe der ersten k ungeraden Zahlen ist k × k: bei k = 11 ist es 11 × 11 = 121.
+ist es wahr: die Summe der ersten m ungeraden Zahlen ist m × m? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei m = 2 ist es 2 × 2 = 4.
+die Summe der ersten n ungeraden Zahlen ist n × n: bei n = 11 ist es 11 × 11 = 121.
 quelle est la somme des 2 premiers nombres impairs ? 1 + 3 = 4.
-la somme des k premiers nombres impairs est 2 × k est faux : pour k = 3 la somme est 9, et 2 × 3 = 6.
+la somme des n premiers nombres impairs est 2 × n est faux : pour n = 3 la somme est 9, et 2 × 3 = 6.
 ist es wahr: die Summe der ersten k ungeraden Zahlen ist 2 × k? nein: bei k = 6 ist die Summe 36, und 2 × 6 = 12.
-die Summe der ersten k ungeraden Zahlen ist k × k: bei k = 9 ist es 9 × 9 = 81.
+die Summe der ersten m ungeraden Zahlen ist m × m: bei m = 9 ist es 9 × 9 = 81.
 qu'est-ce qu'un nombre impair ? les nombres impairs commencent par 1, 3, 5, 7, et chacun dépasse le précédent de 2.
 was ist die Summe der ersten 8 ungeraden Zahlen? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 = 64.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist 2 × k? nein: bei k = 4 ist die Summe 16, und 2 × 4 = 8.
+ist es wahr: die Summe der ersten n ungeraden Zahlen ist 2 × n? nein: bei n = 4 ist die Summe 16, und 2 × 4 = 8.
 die Summe der ersten k ungeraden Zahlen ist k × k: bei k = 3 ist es 3 × 3 = 9.
-est-il vrai que la somme des k premiers nombres impairs est k × k ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 11 c'est 11 × 11 = 121.
+est-il vrai que la somme des n premiers nombres impairs est n × n ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour n = 11 c'est 11 × 11 = 121.
 was ist die Summe der ersten 4 ungeraden Zahlen? 1 + 3 + 5 + 7 = 16.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist 2 × k? nein: bei k = 4 ist die Summe 16, und 2 × 4 = 8.
-die Summe der ersten k ungeraden Zahlen ist k × k: bei k = 1 ist es 1 × 1 = 1.
-est-il vrai que la somme des k premiers nombres impairs est k × k ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 9 c'est 9 × 9 = 81.
+ist es wahr: die Summe der ersten m ungeraden Zahlen ist 2 × m? nein: bei m = 4 ist die Summe 16, und 2 × 4 = 8.
+die Summe der ersten n ungeraden Zahlen ist n × n: bei n = 1 ist es 1 × 1 = 1.
+est-il vrai que la somme des m premiers nombres impairs est m × m ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour m = 9 c'est 9 × 9 = 81.
 was ist die Summe der ersten 3 ungeraden Zahlen? 1 + 3 + 5 = 9.
 quelle est la somme des 9 premiers nombres impairs ? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 = 81.
-die Summe der ersten k ungeraden Zahlen ist 2 × k ist falsch: bei k = 5 ist die Summe 25, und 2 × 5 = 10.
+die Summe der ersten m ungeraden Zahlen ist 2 × m ist falsch: bei m = 5 ist die Summe 25, und 2 × 5 = 10.
 est-il vrai que la somme des k premiers nombres impairs est k × k ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 3 c'est 3 × 3 = 9.
-la somme des k premiers nombres impairs est k × k : pour k = 12 c'est 12 × 12 = 144.
+la somme des m premiers nombres impairs est m × m : pour m = 12 c'est 12 × 12 = 144.
 quelle est la somme des 5 premiers nombres impairs ? 1 + 3 + 5 + 7 + 9 = 25.
 die Summe der ersten k ungeraden Zahlen ist 2 × k ist falsch: bei k = 5 ist die Summe 25, und 2 × 5 = 10.
-est-il vrai que la somme des k premiers nombres impairs est k × k ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 1 c'est 1 × 1 = 1.
+est-il vrai que la somme des n premiers nombres impairs est n × n ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour n = 1 c'est 1 × 1 = 1.
 la somme des k premiers nombres impairs est k × k : pour k = 10 c'est 10 × 10 = 100.
 quelle est la somme des 4 premiers nombres impairs ? 1 + 3 + 5 + 7 = 16.
-die Summe der ersten k ungeraden Zahlen ist 2 × k ist falsch: bei k = 3 ist die Summe 9, und 2 × 3 = 6.
-est-il vrai que la somme des k premiers nombres impairs est 2 × k ? non : pour k = 5 la somme est 25, et 2 × 5 = 10.
-la somme des k premiers nombres impairs est k × k : pour k = 8 c'est 8 × 8 = 64.
+die Summe der ersten n ungeraden Zahlen ist 2 × n ist falsch: bei n = 3 ist die Summe 9, und 2 × 3 = 6.
+est-il vrai que la somme des m premiers nombres impairs est 2 × m ? non : pour m = 5 la somme est 25, et 2 × 5 = 10.
+la somme des n premiers nombres impairs est n × n : pour n = 8 c'est 8 × 8 = 64.
 les nombres impairs commencent par 1, 3, 5, 7, et chacun dépasse le précédent de 2.
 was ist die Summe der ersten 7 ungeraden Zahlen? 1 + 3 + 5 + 7 + 9 + 11 + 13 = 49.
 est-il vrai que la somme des k premiers nombres impairs est 2 × k ? non : pour k = 5 la somme est 25, et 2 × 5 = 10.
-la somme des k premiers nombres impairs est k × k : pour k = 2 c'est 2 × 2 = 4.
-ist es wahr: die Summe der ersten k ungeraden Zahlen ist k × k? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 11 ist es 11 × 11 = 121.
+la somme des m premiers nombres impairs est m × m : pour m = 2 c'est 2 × 2 = 4.
+ist es wahr: die Summe der ersten n ungeraden Zahlen ist n × n? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei n = 11 ist es 11 × 11 = 121.
 
 wenn n gerade ist, ist n + 3 gerade? nein: 4 ist gerade, und 4 + 3 = 7, was ungerade ist.
 est-il vrai que si n est pair alors n + 1 est pair ? non : 6 est pair, et 6 + 1 = 7, qui est impair.
@@ -2941,87 +2941,87 @@ ist es wahr: wenn n gerade ist, dann ist n + m genau dann gerade, wenn m gerade 
 ist f(x) = x × 2 auf 1, 2, 3 injektiv? ja: sie liefert 2, 4, 6, alle verschieden.
 est-il vrai que toute fonction est injective ? non : f(x) = x × 0 envoie 1 et 6 tous deux sur 0.
 toute fonction est injective est faux : f(x) = x × 0 envoie 3 et 8 tous deux sur 0.
-ist es wahr: f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 1 liefern die Eingaben 1 und 2 die Werte 1 und 2.
+ist es wahr: f(x) = x × m ist genau dann injektiv, wenn m nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei m = 1 liefern die Eingaben 1 und 2 die Werte 1 und 2.
 ist f(x) = x × 0 auf 1, 2, 3 injektiv? nein: sie liefert 0, 0, 0, nicht alle verschieden.
 f(x) = x × 1 est-elle injective sur 1, 2, 3 ? oui : elle donne 1, 2, 3, toutes différentes.
 toute fonction est injective est faux : f(x) = x × 0 envoie 1 et 6 tous deux sur 0.
 ist es wahr: f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 3 liefern die Eingaben 1 und 2 die Werte 3 und 6.
-f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist: bei k = 4 liefern die Eingaben 1 und 2 die Werte 4 und 8.
+f(x) = x × m ist genau dann injektiv, wenn m nicht 0 ist: bei m = 4 liefern die Eingaben 1 und 2 die Werte 4 und 8.
 f(x) = x × 3 est-elle injective sur 1, 2, 3 ? oui : elle donne 3, 6, 9, toutes différentes.
 toute fonction est injective est faux : f(x) = x × 0 envoie 2 et 7 tous deux sur 0.
-ist es wahr: f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 1 liefern die Eingaben 1 und 2 die Werte 1 und 2.
+ist es wahr: f(x) = x × n ist genau dann injektiv, wenn n nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei n = 1 liefern die Eingaben 1 und 2 die Werte 1 und 2.
 f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist: bei k = 2 liefern die Eingaben 1 und 2 die Werte 2 und 4.
 f(x) = x × 1 est-elle injective sur 1, 2, 3 ? oui : elle donne 1, 2, 3, toutes différentes.
 ist f(x) = x × 3 auf 1, 2, 3 injektiv? ja: sie liefert 3, 6, 9, alle verschieden.
 ist es wahr: jede Funktion ist injektiv? nein: f(x) = x × 0 schickt 2 und 7 beide auf 0.
-f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist: bei k = 7 liefern die Eingaben 1 und 2 die Werte 7 und 14.
-est-il vrai que f(x) = x × k est injective exactement quand k n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 4 les entrées 1 et 2 donnent 4 et 8.
+f(x) = x × n ist genau dann injektiv, wenn n nicht 0 ist: bei n = 7 liefern die Eingaben 1 und 2 die Werte 7 und 14.
+est-il vrai que f(x) = x × m est injective exactement quand m n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour m = 4 les entrées 1 et 2 donnent 4 et 8.
 ist f(x) = x × 5 auf 1, 2, 3 injektiv? ja: sie liefert 5, 10, 15, alle verschieden.
 ist es wahr: jede Funktion ist injektiv? nein: f(x) = x × 0 schickt 3 und 8 beide auf 0.
-f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist: bei k = 2 liefern die Eingaben 1 und 2 die Werte 2 und 4.
+f(x) = x × m ist genau dann injektiv, wenn m nicht 0 ist: bei m = 2 liefern die Eingaben 1 und 2 die Werte 2 und 4.
 est-il vrai que f(x) = x × k est injective exactement quand k n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 2 les entrées 1 et 2 donnent 2 et 4.
 ist f(x) = x × 1 auf 1, 2, 3 injektiv? ja: sie liefert 1, 2, 3, alle verschieden.
 ist es wahr: jede Funktion ist injektiv? nein: f(x) = x × 0 schickt 1 und 6 beide auf 0.
 jede Funktion ist injektiv ist falsch: f(x) = x × 0 schickt 3 und 8 beide auf 0.
-est-il vrai que f(x) = x × k est injective exactement quand k n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 7 les entrées 1 et 2 donnent 7 et 14.
+est-il vrai que f(x) = x × n est injective exactement quand n n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour n = 7 les entrées 1 et 2 donnent 7 et 14.
 was heißt es, dass eine Funktion injektiv ist? eine Funktion ist injektiv, wenn verschiedene Eingaben verschiedene Ausgaben liefern.
 f(x) = x × 0 est-elle injective sur 1, 2, 3 ? non : elle donne 0, 0, 0, pas toutes différentes.
 jede Funktion ist injektiv ist falsch: f(x) = x × 0 schickt 1 und 6 beide auf 0.
-est-il vrai que f(x) = x × k est injective exactement quand k n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 2 les entrées 1 et 2 donnent 2 et 4.
-f(x) = x × k est injective exactement quand k n'est pas 0 : pour k = 3 les entrées 1 et 2 donnent 3 et 6.
+est-il vrai que f(x) = x × m est injective exactement quand m n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour m = 2 les entrées 1 et 2 donnent 2 et 4.
+f(x) = x × n est injective exactement quand n n'est pas 0 : pour n = 3 les entrées 1 et 2 donnent 3 et 6.
 f(x) = x × 2 est-elle injective sur 1, 2, 3 ? oui : elle donne 2, 4, 6, toutes différentes.
 jede Funktion ist injektiv ist falsch: f(x) = x × 0 schickt 2 und 7 beide auf 0.
 est-il vrai que toute fonction est injective ? non : f(x) = x × 0 envoie 3 et 8 tous deux sur 0.
-f(x) = x × k est injective exactement quand k n'est pas 0 : pour k = 1 les entrées 1 et 2 donnent 1 et 2.
+f(x) = x × m est injective exactement quand m n'est pas 0 : pour m = 1 les entrées 1 et 2 donnent 1 et 2.
 f(x) = x × 0 est-elle injective sur 1, 2, 3 ? non : elle donne 0, 0, 0, pas toutes différentes.
 ist f(x) = x × 2 auf 1, 2, 3 injektiv? ja: sie liefert 2, 4, 6, alle verschieden.
 est-il vrai que toute fonction est injective ? non : f(x) = x × 0 envoie 1 et 6 tous deux sur 0.
 f(x) = x × k est injective exactement quand k n'est pas 0 : pour k = 3 les entrées 1 et 2 donnent 3 et 6.
-ist es wahr: f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 4 liefern die Eingaben 1 und 2 die Werte 4 und 8.
+ist es wahr: f(x) = x × m ist genau dann injektiv, wenn m nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei m = 4 liefern die Eingaben 1 und 2 die Werte 4 und 8.
 ist f(x) = x × 4 auf 1, 2, 3 injektiv? ja: sie liefert 4, 8, 12, alle verschieden.
 est-il vrai que toute fonction est injective ? non : f(x) = x × 0 envoie 2 et 7 tous deux sur 0.
-f(x) = x × k est injective exactement quand k n'est pas 0 : pour k = 1 les entrées 1 et 2 donnent 1 et 2.
+f(x) = x × n est injective exactement quand n n'est pas 0 : pour n = 1 les entrées 1 et 2 donnent 1 et 2.
 ist es wahr: f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 2 liefern die Eingaben 1 und 2 die Werte 2 und 4.
 ist f(x) = x × 2 auf 1, 2, 3 injektiv? ja: sie liefert 2, 4, 6, alle verschieden.
 f(x) = x × 3 est-elle injective sur 1, 2, 3 ? oui : elle donne 3, 6, 9, toutes différentes.
 toute fonction est injective est faux : f(x) = x × 0 envoie 2 et 7 tous deux sur 0.
-ist es wahr: f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 7 liefern die Eingaben 1 und 2 die Werte 7 und 14.
+ist es wahr: f(x) = x × n ist genau dann injektiv, wenn n nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei n = 7 liefern die Eingaben 1 und 2 die Werte 7 und 14.
 eine Funktion ist injektiv, wenn verschiedene Eingaben verschiedene Ausgaben liefern.
 f(x) = x × 5 est-elle injective sur 1, 2, 3 ? oui : elle donne 5, 10, 15, toutes différentes.
 toute fonction est injective est faux : f(x) = x × 0 envoie 3 et 8 tous deux sur 0.
-ist es wahr: f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 2 liefern die Eingaben 1 und 2 die Werte 2 und 4.
-f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist: bei k = 3 liefern die Eingaben 1 und 2 die Werte 3 und 6.
+ist es wahr: f(x) = x × m ist genau dann injektiv, wenn m nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei m = 2 liefern die Eingaben 1 und 2 die Werte 2 und 4.
+f(x) = x × n ist genau dann injektiv, wenn n nicht 0 ist: bei n = 3 liefern die Eingaben 1 und 2 die Werte 3 und 6.
 f(x) = x × 1 est-elle injective sur 1, 2, 3 ? oui : elle donne 1, 2, 3, toutes différentes.
 toute fonction est injective est faux : f(x) = x × 0 envoie 1 et 6 tous deux sur 0.
 ist es wahr: jede Funktion ist injektiv? nein: f(x) = x × 0 schickt 3 und 8 beide auf 0.
-f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist: bei k = 1 liefern die Eingaben 1 und 2 die Werte 1 und 2.
+f(x) = x × m ist genau dann injektiv, wenn m nicht 0 ist: bei m = 1 liefern die Eingaben 1 und 2 die Werte 1 und 2.
 que signifie qu'une fonction est injective ? une fonction est injective quand des entrées différentes donnent des sorties différentes.
 ist f(x) = x × 1 auf 1, 2, 3 injektiv? ja: sie liefert 1, 2, 3, alle verschieden.
 ist es wahr: jede Funktion ist injektiv? nein: f(x) = x × 0 schickt 1 und 6 beide auf 0.
 f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist: bei k = 3 liefern die Eingaben 1 und 2 die Werte 3 und 6.
-est-il vrai que f(x) = x × k est injective exactement quand k n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 3 les entrées 1 et 2 donnent 3 et 6.
+est-il vrai que f(x) = x × n est injective exactement quand n n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour n = 3 les entrées 1 et 2 donnent 3 et 6.
 ist f(x) = x × 3 auf 1, 2, 3 injektiv? ja: sie liefert 3, 6, 9, alle verschieden.
 ist es wahr: jede Funktion ist injektiv? nein: f(x) = x × 0 schickt 2 und 7 beide auf 0.
-f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist: bei k = 1 liefern die Eingaben 1 und 2 die Werte 1 und 2.
-est-il vrai que f(x) = x × k est injective exactement quand k n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 1 les entrées 1 et 2 donnent 1 et 2.
+f(x) = x × n ist genau dann injektiv, wenn n nicht 0 ist: bei n = 1 liefern die Eingaben 1 und 2 die Werte 1 und 2.
+est-il vrai que f(x) = x × m est injective exactement quand m n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour m = 1 les entrées 1 et 2 donnent 1 et 2.
 ist f(x) = x × 1 auf 1, 2, 3 injektiv? ja: sie liefert 1, 2, 3, alle verschieden.
 f(x) = x × 2 est-elle injective sur 1, 2, 3 ? oui : elle donne 2, 4, 6, toutes différentes.
 jede Funktion ist injektiv ist falsch: f(x) = x × 0 schickt 2 und 7 beide auf 0.
 est-il vrai que f(x) = x × k est injective exactement quand k n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 3 les entrées 1 et 2 donnent 3 et 6.
-f(x) = x × k est injective exactement quand k n'est pas 0 : pour k = 4 les entrées 1 et 2 donnent 4 et 8.
+f(x) = x × m est injective exactement quand m n'est pas 0 : pour m = 4 les entrées 1 et 2 donnent 4 et 8.
 f(x) = x × 4 est-elle injective sur 1, 2, 3 ? oui : elle donne 4, 8, 12, toutes différentes.
 jede Funktion ist injektiv ist falsch: f(x) = x × 0 schickt 3 und 8 beide auf 0.
-est-il vrai que f(x) = x × k est injective exactement quand k n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour k = 1 les entrées 1 et 2 donnent 1 et 2.
+est-il vrai que f(x) = x × n est injective exactement quand n n'est pas 0 ? oui : aucun contre-exemple parmi 1..1000 ; exemple : pour n = 1 les entrées 1 et 2 donnent 1 et 2.
 f(x) = x × k est injective exactement quand k n'est pas 0 : pour k = 2 les entrées 1 et 2 donnent 2 et 4.
 f(x) = x × 2 est-elle injective sur 1, 2, 3 ? oui : elle donne 2, 4, 6, toutes différentes.
 jede Funktion ist injektiv ist falsch: f(x) = x × 0 schickt 1 und 6 beide auf 0.
 est-il vrai que toute fonction est injective ? non : f(x) = x × 0 envoie 2 et 7 tous deux sur 0.
-f(x) = x × k est injective exactement quand k n'est pas 0 : pour k = 7 les entrées 1 et 2 donnent 7 et 14.
+f(x) = x × n est injective exactement quand n n'est pas 0 : pour n = 7 les entrées 1 et 2 donnent 7 et 14.
 une fonction est injective quand des entrées différentes donnent des sorties différentes.
 ist f(x) = x × 0 auf 1, 2, 3 injektiv? nein: sie liefert 0, 0, 0, nicht alle verschieden.
 est-il vrai que toute fonction est injective ? non : f(x) = x × 0 envoie 3 et 8 tous deux sur 0.
-f(x) = x × k est injective exactement quand k n'est pas 0 : pour k = 2 les entrées 1 et 2 donnent 2 et 4.
-ist es wahr: f(x) = x × k ist genau dann injektiv, wenn k nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei k = 3 liefern die Eingaben 1 und 2 die Werte 3 und 6.
+f(x) = x × m est injective exactement quand m n'est pas 0 : pour m = 2 les entrées 1 et 2 donnent 2 et 4.
+ist es wahr: f(x) = x × n ist genau dann injektiv, wenn n nicht 0 ist? ja: kein Gegenbeispiel unter 1..1000; Beispiel: bei n = 3 liefern die Eingaben 1 und 2 die Werte 3 und 6.
 
 was ist das Quadrat von 10? 10 × 10 = 100.
 est-il vrai que tout carré est pair ? non : 3 est impair et 3 × 3 = 9, qui est impair.

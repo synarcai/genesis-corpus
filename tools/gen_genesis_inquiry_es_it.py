@@ -61,6 +61,12 @@ import json
 import pathlib
 import sys
 
+# БУКВА ПЕРЕМЕННОЙ ЕСТЬ ДЫРА, А НЕ СЛОВО (holon 03.09): универсалия,
+# писавшая всегда «k», учила букву как слово рамки; буквы ходят поровну и
+# согласованно внутри строки.
+БУКВЫ = ("k", "n", "m")
+
+
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
 from layer import emit_grouped  # noqa: E402
@@ -331,7 +337,8 @@ def исп_нечётные(шаг):
     """
     вон = []
     ход = [2 + (шаг * 2 + i) % 11 for i in range(5)]
-    for k in случаи(ЯДРО_НЕЧЁТНЫЕ, ход):
+    for _и, k in enumerate(случаи(ЯДРО_НЕЧЁТНЫЕ, ход)):
+        б = БУКВЫ[_и % len(БУКВЫ)]
         ряд = " + ".join(str(2 * j + 1) for j in range(k))
         вон.append(f"¿cuánto suman los primeros {по_испански(k)} "
                    f"números impares? {ряд} = {k * k}.")
@@ -343,12 +350,13 @@ def исп_нечётные(шаг):
 def контр_нечётные(шаг):
     вон = []
     ход = [3 + (шаг * 2 + i) % 9 for i in range(3)]
-    for k in случаи(ЯДРО_КОНТР_НЕЧЁТНЫЕ, ход):
-        вон.append(f"la suma de los primeros k números impares es "
-                   f"2 × k es falso: con k = {k} la suma es {k * k} y "
+    for _и, k in enumerate(случаи(ЯДРО_КОНТР_НЕЧЁТНЫЕ, ход)):
+        б = БУКВЫ[_и % len(БУКВЫ)]
+        вон.append(f"la suma de los primeros {б} números impares es "
+                   f"2 × {б} es falso: con {б} = {k} la suma es {k * k} y "
                    f"2 × {k} = {2 * k}.")
-        вон.append(f"la somma dei primi k numeri dispari è 2 × k è "
-                   f"falso: con k = {k} la somma è {k * k} e 2 × {k} = "
+        вон.append(f"la somma dei primi {б} numeri dispari è 2 × {б} è "
+                   f"falso: con {б} = {k} la somma è {k * k} e 2 × {k} = "
                    f"{2 * k}.")
     return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
@@ -356,11 +364,12 @@ def контр_нечётные(шаг):
 def общ_нечётные(шаг):
     вон = []
     ход = [1 + (шаг * 3 + i) % 12 for i in range(3)]
-    for k in случаи(ЯДРО_ОБЩ_НЕЧЁТНЫЕ, ход):
-        вон.append(f"la suma de los primeros k números impares es "
-                   f"k × k: con k = {k} es {k} × {k} = {k * k}.")
-        вон.append(f"la somma dei primi k numeri dispari è k × k: con "
-                   f"k = {k} è {k} × {k} = {k * k}.")
+    for _и, k in enumerate(случаи(ЯДРО_ОБЩ_НЕЧЁТНЫЕ, ход)):
+        б = БУКВЫ[_и % len(БУКВЫ)]
+        вон.append(f"la suma de los primeros {б} números impares es "
+                   f"{б} × {б}: con {б} = {k} es {k} × {k} = {k * k}.")
+        вон.append(f"la somma dei primi {б} numeri dispari è {б} × {б}: con "
+                   f"{б} = {k} è {k} × {k} = {k * k}.")
     return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
@@ -474,12 +483,13 @@ def контр_инъекция(шаг):
 def общ_инъекция(шаг):
     вон = []
     ход = [1 + (шаг * 2 + i) % 9 for i in range(3)]
-    for k in случаи(ЯДРО_ОБЩ_ИНЪЕКЦИЯ, ход):
-        вон.append(f"f(x) = x × k es inyectiva exactamente cuando k no "
-                   f"es 0: con k = {k} las entradas 1 y 2 dan {k} y "
+    for _и, k in enumerate(случаи(ЯДРО_ОБЩ_ИНЪЕКЦИЯ, ход)):
+        б = БУКВЫ[_и % len(БУКВЫ)]
+        вон.append(f"f(x) = x × {б} es inyectiva exactamente cuando {б} no "
+                   f"es 0: con {б} = {k} las entradas 1 y 2 dan {k} y "
                    f"{2 * k}.")
-        вон.append(f"f(x) = x × k è iniettiva esattamente quando k non "
-                   f"è 0: con k = {k} gli ingressi 1 e 2 danno {k} e "
+        вон.append(f"f(x) = x × {б} è iniettiva esattamente quando {б} non "
+                   f"è 0: con {б} = {k} gli ingressi 1 e 2 danno {k} e "
                    f"{2 * k}.")
     return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 

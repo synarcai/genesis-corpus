@@ -53,6 +53,11 @@ import pathlib
 import re
 import sys
 
+# ВТОРАЯ РУКА: буквы переменной объявлены и здесь. Буква подставляется в
+# образец целиком, потому она обязана быть ОДНОЙ во всей строке.
+БУКВЫ = ("k", "n", "m")
+
+
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "scripts"))
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
@@ -318,14 +323,14 @@ def _общ_квадрат(м):
      r"([\d +]+) = " rf"{Ч}\.$", _сумма_нечётных),
     (rf"^wat is de som van de eerste {Ч} oneven getallen\? "
      r"([\d +]+) = " rf"{Ч}\.$", _сумма_нечётных),
-    (rf"^a soma dos k primeiros números ímpares é 2 × k é falso: para "
-     rf"k = {Ч} a soma é {Ч}, e 2 × {Ч} = {Ч}\.$", _контр_сумма),
-    (rf"^de som van de eerste k oneven getallen is 2 × k is onwaar: "
-     rf"bij k = {Ч} is de som {Ч}, en 2 × {Ч} = {Ч}\.$", _контр_сумма),
-    (rf"^a soma dos k primeiros números ímpares é k × k: para k = {Ч} "
-     rf"isso é {Ч} × {Ч} = {Ч}\.$", _общ_сумма),
-    (rf"^de som van de eerste k oneven getallen is k × k: bij k = {Ч} "
-     rf"is het {Ч} × {Ч} = {Ч}\.$", _общ_сумма),
+    *[(rf"^a soma dos {б} primeiros números ímpares é 2 × {б} é falso: para "
+     rf"{б} = {Ч} a soma é {Ч}, e 2 × {Ч} = {Ч}\.$", _контр_сумма) for б in БУКВЫ],
+    *[(rf"^de som van de eerste {б} oneven getallen is 2 × {б} is onwaar: "
+     rf"bij {б} = {Ч} is de som {Ч}, en 2 × {Ч} = {Ч}\.$", _контр_сумма) for б in БУКВЫ],
+    *[(rf"^a soma dos {б} primeiros números ímpares é {б} × {б}: para {б} = {Ч} "
+     rf"isso é {Ч} × {Ч} = {Ч}\.$", _общ_сумма) for б in БУКВЫ],
+    *[(rf"^de som van de eerste {б} oneven getallen is {б} × {б}: bij {б} = {Ч} "
+     rf"is het {Ч} × {Ч} = {Ч}\.$", _общ_сумма) for б in БУКВЫ],
 
     (rf"^se n é par, n \+ {Ч} é par\? (sim|não): {Ч} é par, e {Ч} \+ "
      rf"{Ч} = {Ч}, que é (par|ímpar)\.$", _условное_вопрос),
@@ -352,11 +357,11 @@ def _общ_квадрат(м):
      rf"{Ч} ambos a 0\.$", _контр_инъекция),
     (rf"^elke functie is injectief is onwaar: f\(x\) = x × 0 stuurt "
      rf"{Ч} en {Ч} beide naar 0\.$", _контр_инъекция),
-    (rf"^f\(x\) = x × k é injetiva exatamente quando k não é 0: para "
-     rf"k = {Ч} as entradas 1 e 2 dão {Ч} e {Ч}\.$", _общ_инъекция),
-    (rf"^f\(x\) = x × k is injectief precies wanneer k niet 0 is: bij "
-     rf"k = {Ч} geven de invoeren 1 en 2 de waarden {Ч} en {Ч}\.$",
-     _общ_инъекция),
+    *[(rf"^f\(x\) = x × {б} é injetiva exatamente quando {б} não é 0: para "
+     rf"{б} = {Ч} as entradas 1 e 2 dão {Ч} e {Ч}\.$", _общ_инъекция) for б in БУКВЫ],
+    *[(rf"^f\(x\) = x × {б} is injectief precies wanneer {б} niet 0 is: bij "
+     rf"{б} = {Ч} geven de invoeren 1 en 2 de waarden {Ч} en {Ч}\.$",
+     _общ_инъекция) for б in БУКВЫ],
 
     (rf"^qual é o quadrado de {Ч}\? {Ч} × {Ч} = {Ч}\.$", _квадрат),
     (rf"^wat is het kwadraat van {Ч}\? {Ч} × {Ч} = {Ч}\.$", _квадрат),

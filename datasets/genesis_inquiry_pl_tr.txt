@@ -146,58 +146,58 @@ bir sayı, rakamları toplamı 3'e bölünüyorsa 3'e bölünür: 114 sayısınd
 
 ilk üç tek sayının toplamı kaçtır? 1 + 3 + 5 = 9.
 ile wynosi suma pierwszych 6 liczb nieparzystych? 1 + 3 + 5 + 7 + 9 + 11 = 36.
-czy to prawda, że suma pierwszych k liczb nieparzystych wynosi 2 × k? nie: dla k = 5 suma wynosi 25, a 2 × 5 = 10.
+czy to prawda, że suma pierwszych n liczb nieparzystych wynosi 2 × n? nie: dla n = 5 suma wynosi 25, a 2 × 5 = 10.
 suma pierwszych k liczb nieparzystych wynosi 2 × k to fałsz: dla k = 4 suma wynosi 16, a 2 × 4 = 8.
 ilk k tek sayının toplamı k × k olur demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 4 için 4 × 4 = 16.
-ilk k tek sayının toplamı k × k olur: k = 9 için 9 × 9 = 81.
-czy to prawda, że suma pierwszych k liczb nieparzystych wynosi k × k? tak: brak kontrprzykładu wśród 1..1000; przykład: dla k = 2 jest to 2 × 2 = 4.
+ilk m tek sayının toplamı m × m olur: m = 9 için 9 × 9 = 81.
+czy to prawda, że suma pierwszych n liczb nieparzystych wynosi n × n? tak: brak kontrprzykładu wśród 1..1000; przykład: dla n = 2 jest to 2 × 2 = 4.
 liczby nieparzyste zaczynają się 1, 3, 5, 7 i każda następna jest o 2 większa od poprzedniej.
 ilk beş tek sayının toplamı kaçtır? 1 + 3 + 5 + 7 + 9 = 25.
 suma pierwszych k liczb nieparzystych wynosi 2 × k to fałsz: dla k = 3 suma wynosi 9, a 2 × 3 = 6.
-ilk k tek sayının toplamı 2 × k demek doğru mudur? hayır: k = 5 için toplam 25 ve 2 × 5 = 10.
+ilk n tek sayının toplamı 2 × n demek doğru mudur? hayır: n = 5 için toplam 25 ve 2 × 5 = 10.
 ilk k tek sayının toplamı 2 × k demek yanlıştır: k = 4 için toplam 16 ve 2 × 4 = 8.
-czy to prawda, że suma pierwszych k liczb nieparzystych wynosi k × k? tak: brak kontrprzykładu wśród 1..1000; przykład: dla k = 6 jest to 6 × 6 = 36.
+czy to prawda, że suma pierwszych n liczb nieparzystych wynosi n × n? tak: brak kontrprzykładu wśród 1..1000; przykład: dla n = 6 jest to 6 × 6 = 36.
 suma pierwszych k liczb nieparzystych wynosi k × k: dla k = 1 jest to 1 × 1 = 1.
-ilk k tek sayının toplamı k × k olur demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 2 için 2 × 2 = 4.
+ilk n tek sayının toplamı n × n olur demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: n = 2 için 2 × 2 = 4.
 co to jest liczba nieparzysta? liczby nieparzyste zaczynają się 1, 3, 5, 7 i każda następna jest o 2 większa od poprzedniej.
 ilk dört tek sayının toplamı kaçtır? 1 + 3 + 5 + 7 = 16.
 ilk k tek sayının toplamı 2 × k demek yanlıştır: k = 3 için toplam 9 ve 2 × 3 = 6.
-czy to prawda, że suma pierwszych k liczb nieparzystych wynosi 2 × k? nie: dla k = 7 suma wynosi 49, a 2 × 7 = 14.
+czy to prawda, że suma pierwszych m liczb nieparzystych wynosi 2 × m? nie: dla m = 7 suma wynosi 49, a 2 × 7 = 14.
 suma pierwszych k liczb nieparzystych wynosi k × k: dla k = 4 jest to 4 × 4 = 16.
-ilk k tek sayının toplamı k × k olur demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 6 için 6 × 6 = 36.
+ilk n tek sayının toplamı n × n olur demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: n = 6 için 6 × 6 = 36.
 ilk k tek sayının toplamı k × k olur: k = 1 için 1 × 1 = 1.
-czy to prawda, że suma pierwszych k liczb nieparzystych wynosi k × k? tak: brak kontrprzykładu wśród 1..1000; przykład: dla k = 3 jest to 3 × 3 = 9.
+czy to prawda, że suma pierwszych m liczb nieparzystych wynosi m × m? tak: brak kontrprzykładu wśród 1..1000; przykład: dla m = 3 jest to 3 × 3 = 9.
 ile wynosi suma pierwszych 3 liczb nieparzystych? 1 + 3 + 5 = 9.
 ilk iki tek sayının toplamı kaçtır? 1 + 3 = 4.
-suma pierwszych k liczb nieparzystych wynosi 2 × k to fałsz: dla k = 5 suma wynosi 25, a 2 × 5 = 10.
-ilk k tek sayının toplamı 2 × k demek doğru mudur? hayır: k = 7 için toplam 49 ve 2 × 7 = 14.
+suma pierwszych n liczb nieparzystych wynosi 2 × n to fałsz: dla n = 5 suma wynosi 25, a 2 × 5 = 10.
+ilk m tek sayının toplamı 2 × m demek doğru mudur? hayır: m = 7 için toplam 49 ve 2 × 7 = 14.
 ilk k tek sayının toplamı k × k olur: k = 4 için 4 × 4 = 16.
-czy to prawda, że suma pierwszych k liczb nieparzystych wynosi k × k? tak: brak kontrprzykładu wśród 1..1000; przykład: dla k = 9 jest to 9 × 9 = 81.
-suma pierwszych k liczb nieparzystych wynosi k × k: dla k = 2 jest to 2 × 2 = 4.
-ilk k tek sayının toplamı k × k olur demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 3 için 3 × 3 = 9.
+czy to prawda, że suma pierwszych m liczb nieparzystych wynosi m × m? tak: brak kontrprzykładu wśród 1..1000; przykład: dla m = 9 jest to 9 × 9 = 81.
+suma pierwszych n liczb nieparzystych wynosi n × n: dla n = 2 jest to 2 × 2 = 4.
+ilk m tek sayının toplamı m × m olur demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: m = 3 için 3 × 3 = 9.
 ile wynosi suma pierwszych 5 liczb nieparzystych? 1 + 3 + 5 + 7 + 9 = 25.
 ilk altı tek sayının toplamı kaçtır? 1 + 3 + 5 + 7 + 9 + 11 = 36.
-ilk k tek sayının toplamı 2 × k demek yanlıştır: k = 5 için toplam 25 ve 2 × 5 = 10.
+ilk n tek sayının toplamı 2 × n demek yanlıştır: n = 5 için toplam 25 ve 2 × 5 = 10.
 czy to prawda, że suma pierwszych k liczb nieparzystych wynosi 2 × k? nie: dla k = 4 suma wynosi 16, a 2 × 4 = 8.
-suma pierwszych k liczb nieparzystych wynosi k × k: dla k = 6 jest to 6 × 6 = 36.
-ilk k tek sayının toplamı k × k olur demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 9 için 9 × 9 = 81.
-ilk k tek sayının toplamı k × k olur: k = 2 için 2 × 2 = 4.
+suma pierwszych n liczb nieparzystych wynosi n × n: dla n = 6 jest to 6 × 6 = 36.
+ilk m tek sayının toplamı m × m olur demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: m = 9 için 9 × 9 = 81.
+ilk n tek sayının toplamı n × n olur: n = 2 için 2 × 2 = 4.
 tek sayılar 1, 3, 5, 7 diye başlar ve her biri bir öncekinden 2 fazladır.
 ile wynosi suma pierwszych 4 liczb nieparzystych? 1 + 3 + 5 + 7 = 16.
 czy to prawda, że suma pierwszych k liczb nieparzystych wynosi 2 × k? nie: dla k = 3 suma wynosi 9, a 2 × 3 = 6.
-suma pierwszych k liczb nieparzystych wynosi 2 × k to fałsz: dla k = 7 suma wynosi 49, a 2 × 7 = 14.
+suma pierwszych m liczb nieparzystych wynosi 2 × m to fałsz: dla m = 7 suma wynosi 49, a 2 × 7 = 14.
 ilk k tek sayının toplamı 2 × k demek doğru mudur? hayır: k = 4 için toplam 16 ve 2 × 4 = 8.
-ilk k tek sayının toplamı k × k olur: k = 6 için 6 × 6 = 36.
+ilk n tek sayının toplamı n × n olur: n = 6 için 6 × 6 = 36.
 czy to prawda, że suma pierwszych k liczb nieparzystych wynosi k × k? tak: brak kontrprzykładu wśród 1..1000; przykład: dla k = 1 jest to 1 × 1 = 1.
-suma pierwszych k liczb nieparzystych wynosi k × k: dla k = 3 jest to 3 × 3 = 9.
+suma pierwszych m liczb nieparzystych wynosi m × m: dla m = 3 jest to 3 × 3 = 9.
 tek sayı nedir? tek sayılar 1, 3, 5, 7 diye başlar ve her biri bir öncekinden 2 fazladır.
 ile wynosi suma pierwszych 2 liczb nieparzystych? 1 + 3 = 4.
 ilk k tek sayının toplamı 2 × k demek doğru mudur? hayır: k = 3 için toplam 9 ve 2 × 3 = 6.
-ilk k tek sayının toplamı 2 × k demek yanlıştır: k = 7 için toplam 49 ve 2 × 7 = 14.
+ilk m tek sayının toplamı 2 × m demek yanlıştır: m = 7 için toplam 49 ve 2 × 7 = 14.
 czy to prawda, że suma pierwszych k liczb nieparzystych wynosi k × k? tak: brak kontrprzykładu wśród 1..1000; przykład: dla k = 4 jest to 4 × 4 = 16.
-suma pierwszych k liczb nieparzystych wynosi k × k: dla k = 9 jest to 9 × 9 = 81.
+suma pierwszych m liczb nieparzystych wynosi m × m: dla m = 9 jest to 9 × 9 = 81.
 ilk k tek sayının toplamı k × k olur demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 1 için 1 × 1 = 1.
-ilk k tek sayının toplamı k × k olur: k = 3 için 3 × 3 = 9.
+ilk m tek sayının toplamı m × m olur: m = 3 için 3 × 3 = 9.
 
 n çift ise n + 4 çift midir? evet: 6 çifttir ve 6 + 4 = 10, bu da çifttir.
 jeśli n jest parzyste, czy n + 2 jest parzyste? tak: 6 jest parzyste i 6 + 2 = 8, co jest parzyste.
@@ -259,50 +259,50 @@ czy f(x) = x × 4 jest różnowartościowa na 1, 2, 3? tak: daje 4, 8, 12, wszys
 tüm fonksiyonlar birebirdir demek doğru mudur? hayır: f(x) = x × 0 hem 3 hem 8 sayısını 0 yapar.
 wszystkie funkcje są różnowartościowe to fałsz: f(x) = x × 0 prowadzi 2 i 9 do 0.
 czy to prawda, że f(x) = x × k jest różnowartościowa dokładnie wtedy, gdy k nie jest 0? tak: brak kontrprzykładu wśród 1..1000; przykład: dla k = 2 argumenty 1 i 2 dają 2 i 4.
-f(x) = x × k birebirdir ancak ve ancak k 0 değildir: k = 5 için 1 ve 2 girdileri 5 ve 10 verir.
+f(x) = x × m birebirdir ancak ve ancak m 0 değildir: m = 5 için 1 ve 2 girdileri 5 ve 10 verir.
 bir fonksiyonun birebir olması ne demektir? bir fonksiyon, farklı girdiler farklı çıktılar veriyorsa birebirdir.
 czy f(x) = x × 2 jest różnowartościowa na 1, 2, 3? tak: daje 2, 4, 6, wszystkie różne.
 czy to prawda, że wszystkie funkcje są różnowartościowe? nie: f(x) = x × 0 prowadzi 3 i 8 do 0.
 tüm fonksiyonlar birebirdir demek yanlıştır: f(x) = x × 0 hem 1 hem 8 sayısını 0 yapar.
 tüm fonksiyonlar birebirdir demek doğru mudur? hayır: f(x) = x × 0 hem 3 hem 10 sayısını 0 yapar.
-f(x) = x × k jest różnowartościowa dokładnie wtedy, gdy k nie jest 0: dla k = 5 argumenty 1 i 2 dają 5 i 10.
+f(x) = x × m jest różnowartościowa dokładnie wtedy, gdy m nie jest 0: dla m = 5 argumenty 1 i 2 dają 5 i 10.
 bir fonksiyon, farklı girdiler farklı çıktılar veriyorsa birebirdir.
 czy f(x) = x × 1 jest różnowartościowa na 1, 2, 3? tak: daje 1, 2, 3, wszystkie różne.
 tüm fonksiyonlar birebirdir demek doğru mudur? hayır: f(x) = x × 0 hem 2 hem 7 sayısını 0 yapar.
 wszystkie funkcje są różnowartościowe to fałsz: f(x) = x × 0 prowadzi 1 i 8 do 0.
 czy to prawda, że wszystkie funkcje są różnowartościowe? nie: f(x) = x × 0 prowadzi 3 i 10 do 0.
-f(x) = x × k birebirdir ancak ve ancak k 0 değildir: k = 3 için 1 ve 2 girdileri 3 ve 6 verir.
+f(x) = x × n birebirdir ancak ve ancak n 0 değildir: n = 3 için 1 ve 2 girdileri 3 ve 6 verir.
 f(x) = x × k birebirdir ancak ve ancak k 0 değildir demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 1 için 1 ve 2 girdileri 1 ve 2 verir.
 czy f(x) = x × 5 jest różnowartościowa na 1, 2, 3? tak: daje 5, 10, 15, wszystkie różne.
 czy to prawda, że wszystkie funkcje są różnowartościowe? nie: f(x) = x × 0 prowadzi 2 i 7 do 0.
 tüm fonksiyonlar birebirdir demek yanlıştır: f(x) = x × 0 hem 4 hem 9 sayısını 0 yapar.
 tüm fonksiyonlar birebirdir demek doğru mudur? hayır: f(x) = x × 0 hem 2 hem 9 sayısını 0 yapar.
-f(x) = x × k jest różnowartościowa dokładnie wtedy, gdy k nie jest 0: dla k = 3 argumenty 1 i 2 dają 3 i 6.
+f(x) = x × n jest różnowartościowa dokładnie wtedy, gdy n nie jest 0: dla n = 3 argumenty 1 i 2 dają 3 i 6.
 czy to prawda, że f(x) = x × k jest różnowartościowa dokładnie wtedy, gdy k nie jest 0? tak: brak kontrprzykładu wśród 1..1000; przykład: dla k = 1 argumenty 1 i 2 dają 1 i 2.
 czy f(x) = x × 0 jest różnowartościowa na 1, 2, 3? nie: daje 0, 0, 0, nie wszystkie różne.
 f(x) = x × 4 birebir midir? evet: 4, 8, 12 verir, hepsi farklıdır.
 wszystkie funkcje są różnowartościowe to fałsz: f(x) = x × 0 prowadzi 4 i 9 do 0.
 czy to prawda, że wszystkie funkcje są różnowartościowe? nie: f(x) = x × 0 prowadzi 2 i 9 do 0.
 f(x) = x × k birebirdir ancak ve ancak k 0 değildir: k = 2 için 1 ve 2 girdileri 2 ve 4 verir.
-f(x) = x × k birebirdir ancak ve ancak k 0 değildir demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 5 için 1 ve 2 girdileri 5 ve 10 verir.
+f(x) = x × m birebirdir ancak ve ancak m 0 değildir demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: m = 5 için 1 ve 2 girdileri 5 ve 10 verir.
 czy f(x) = x × 3 jest różnowartościowa na 1, 2, 3? tak: daje 3, 6, 9, wszystkie różne.
 f(x) = x × 2 birebir midir? evet: 2, 4, 6 verir, hepsi farklıdır.
 tüm fonksiyonlar birebirdir demek yanlıştır: f(x) = x × 0 hem 3 hem 8 sayısını 0 yapar.
 tüm fonksiyonlar birebirdir demek doğru mudur? hayır: f(x) = x × 0 hem 1 hem 8 sayısını 0 yapar.
 f(x) = x × k jest różnowartościowa dokładnie wtedy, gdy k nie jest 0: dla k = 2 argumenty 1 i 2 dają 2 i 4.
-czy to prawda, że f(x) = x × k jest różnowartościowa dokładnie wtedy, gdy k nie jest 0? tak: brak kontrprzykładu wśród 1..1000; przykład: dla k = 5 argumenty 1 i 2 dają 5 i 10.
+czy to prawda, że f(x) = x × m jest różnowartościowa dokładnie wtedy, gdy m nie jest 0? tak: brak kontrprzykładu wśród 1..1000; przykład: dla m = 5 argumenty 1 i 2 dają 5 i 10.
 co znaczy, że funkcja jest różnowartościowa? funkcja jest różnowartościowa, gdy różne argumenty dają różne wartości.
 f(x) = x × 1 birebir midir? evet: 1, 2, 3 verir, hepsi farklıdır.
 wszystkie funkcje są różnowartościowe to fałsz: f(x) = x × 0 prowadzi 3 i 8 do 0.
 czy to prawda, że wszystkie funkcje są różnowartościowe? nie: f(x) = x × 0 prowadzi 1 i 8 do 0.
 tüm fonksiyonlar birebirdir demek yanlıştır: f(x) = x × 0 hem 3 hem 10 sayısını 0 yapar.
-f(x) = x × k birebirdir ancak ve ancak k 0 değildir demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 3 için 1 ve 2 girdileri 3 ve 6 verir.
+f(x) = x × n birebirdir ancak ve ancak n 0 değildir demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: n = 3 için 1 ve 2 girdileri 3 ve 6 verir.
 funkcja jest różnowartościowa, gdy różne argumenty dają różne wartości.
 f(x) = x × 5 birebir midir? evet: 5, 10, 15 verir, hepsi farklıdır.
 tüm fonksiyonlar birebirdir demek yanlıştır: f(x) = x × 0 hem 2 hem 7 sayısını 0 yapar.
 tüm fonksiyonlar birebirdir demek doğru mudur? hayır: f(x) = x × 0 hem 4 hem 9 sayısını 0 yapar.
 wszystkie funkcje są różnowartościowe to fałsz: f(x) = x × 0 prowadzi 3 i 10 do 0.
-czy to prawda, że f(x) = x × k jest różnowartościowa dokładnie wtedy, gdy k nie jest 0? tak: brak kontrprzykładu wśród 1..1000; przykład: dla k = 3 argumenty 1 i 2 dają 3 i 6.
+czy to prawda, że f(x) = x × n jest różnowartościowa dokładnie wtedy, gdy n nie jest 0? tak: brak kontrprzykładu wśród 1..1000; przykład: dla n = 3 argumenty 1 i 2 dają 3 i 6.
 f(x) = x × k birebirdir ancak ve ancak k 0 değildir: k = 1 için 1 ve 2 girdileri 1 ve 2 verir.
 f(x) = x × 0 birebir midir? hayır: 0, 0, 0 verir, hepsi farklı değildir.
 wszystkie funkcje są różnowartościowe to fałsz: f(x) = x × 0 prowadzi 2 i 7 do 0.
@@ -594,52 +594,52 @@ bir sayı, rakamları toplamı 3'e bölünüyorsa 3'e bölünür demek doğru mu
 
 co to jest liczba nieparzysta? liczby nieparzyste zaczynają się 1, 3, 5, 7 i każda następna jest o 2 większa od poprzedniej.
 ilk yedi tek sayının toplamı kaçtır? 1 + 3 + 5 + 7 + 9 + 11 + 13 = 49.
-suma pierwszych k liczb nieparzystych wynosi 2 × k to fałsz: dla k = 7 suma wynosi 49, a 2 × 7 = 14.
+suma pierwszych m liczb nieparzystych wynosi 2 × m to fałsz: dla m = 7 suma wynosi 49, a 2 × 7 = 14.
 ilk k tek sayının toplamı k × k olur demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 4 için 4 × 4 = 16.
 ilk k tek sayının toplamı k × k olur: k = 5 için 5 × 5 = 25.
 ilk dört tek sayının toplamı kaçtır? 1 + 3 + 5 + 7 = 16.
-suma pierwszych k liczb nieparzystych wynosi 2 × k to fałsz: dla k = 5 suma wynosi 25, a 2 × 5 = 10.
+suma pierwszych n liczb nieparzystych wynosi 2 × n to fałsz: dla n = 5 suma wynosi 25, a 2 × 5 = 10.
 ilk k tek sayının toplamı 2 × k demek doğru mudur? hayır: k = 6 için toplam 36 ve 2 × 6 = 12.
-ilk k tek sayının toplamı k × k olur: k = 9 için 9 × 9 = 81.
+ilk m tek sayının toplamı m × m olur: m = 9 için 9 × 9 = 81.
 ilk üç tek sayının toplamı kaçtır? 1 + 3 + 5 = 9.
 suma pierwszych k liczb nieparzystych wynosi 2 × k to fałsz: dla k = 3 suma wynosi 9, a 2 × 3 = 6.
-ilk k tek sayının toplamı 2 × k demek doğru mudur? hayır: k = 7 için toplam 49 ve 2 × 7 = 14.
-ilk k tek sayının toplamı k × k olur: k = 6 için 6 × 6 = 36.
+ilk m tek sayının toplamı 2 × m demek doğru mudur? hayır: m = 7 için toplam 49 ve 2 × 7 = 14.
+ilk n tek sayının toplamı n × n olur: n = 6 için 6 × 6 = 36.
 tek sayılar 1, 3, 5, 7 diye başlar ve her biri bir öncekinden 2 fazladır.
 ile wynosi suma pierwszych 7 liczb nieparzystych? 1 + 3 + 5 + 7 + 9 + 11 + 13 = 49.
-ilk k tek sayının toplamı 2 × k demek doğru mudur? hayır: k = 5 için toplam 25 ve 2 × 5 = 10.
+ilk n tek sayının toplamı 2 × n demek doğru mudur? hayır: n = 5 için toplam 25 ve 2 × 5 = 10.
 ilk k tek sayının toplamı k × k olur: k = 4 için 4 × 4 = 16.
 czy to prawda, że suma pierwszych k liczb nieparzystych wynosi k × k? tak: brak kontrprzykładu wśród 1..1000; przykład: dla k = 5 jest to 5 × 5 = 25.
 ile wynosi suma pierwszych 4 liczb nieparzystych? 1 + 3 + 5 + 7 = 16.
 ilk k tek sayının toplamı 2 × k demek doğru mudur? hayır: k = 3 için toplam 9 ve 2 × 3 = 6.
 ilk k tek sayının toplamı 2 × k demek yanlıştır: k = 6 için toplam 36 ve 2 × 6 = 12.
-czy to prawda, że suma pierwszych k liczb nieparzystych wynosi k × k? tak: brak kontrprzykładu wśród 1..1000; przykład: dla k = 9 jest to 9 × 9 = 81.
+czy to prawda, że suma pierwszych m liczb nieparzystych wynosi m × m? tak: brak kontrprzykładu wśród 1..1000; przykład: dla m = 9 jest to 9 × 9 = 81.
 ile wynosi suma pierwszych 3 liczb nieparzystych? 1 + 3 + 5 = 9.
 ilk sekiz tek sayının toplamı kaçtır? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 = 64.
-ilk k tek sayının toplamı 2 × k demek yanlıştır: k = 7 için toplam 49 ve 2 × 7 = 14.
-czy to prawda, że suma pierwszych k liczb nieparzystych wynosi k × k? tak: brak kontrprzykładu wśród 1..1000; przykład: dla k = 6 jest to 6 × 6 = 36.
+ilk m tek sayının toplamı 2 × m demek yanlıştır: m = 7 için toplam 49 ve 2 × 7 = 14.
+czy to prawda, że suma pierwszych n liczb nieparzystych wynosi n × n? tak: brak kontrprzykładu wśród 1..1000; przykład: dla n = 6 jest to 6 × 6 = 36.
 liczby nieparzyste zaczynają się 1, 3, 5, 7 i każda następna jest o 2 większa od poprzedniej.
 ilk altı tek sayının toplamı kaçtır? 1 + 3 + 5 + 7 + 9 + 11 = 36.
-ilk k tek sayının toplamı 2 × k demek yanlıştır: k = 5 için toplam 25 ve 2 × 5 = 10.
+ilk n tek sayının toplamı 2 × n demek yanlıştır: n = 5 için toplam 25 ve 2 × 5 = 10.
 czy to prawda, że suma pierwszych k liczb nieparzystych wynosi k × k? tak: brak kontrprzykładu wśród 1..1000; przykład: dla k = 4 jest to 4 × 4 = 16.
 suma pierwszych k liczb nieparzystych wynosi k × k: dla k = 5 jest to 5 × 5 = 25.
 ilk beş tek sayının toplamı kaçtır? 1 + 3 + 5 + 7 + 9 = 25.
 ilk k tek sayının toplamı 2 × k demek yanlıştır: k = 3 için toplam 9 ve 2 × 3 = 6.
 czy to prawda, że suma pierwszych k liczb nieparzystych wynosi 2 × k? nie: dla k = 6 suma wynosi 36, a 2 × 6 = 12.
-suma pierwszych k liczb nieparzystych wynosi k × k: dla k = 9 jest to 9 × 9 = 81.
+suma pierwszych m liczb nieparzystych wynosi m × m: dla m = 9 jest to 9 × 9 = 81.
 tek sayı nedir? tek sayılar 1, 3, 5, 7 diye başlar ve her biri bir öncekinden 2 fazladır.
 ile wynosi suma pierwszych 8 liczb nieparzystych? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 = 64.
-czy to prawda, że suma pierwszych k liczb nieparzystych wynosi 2 × k? nie: dla k = 7 suma wynosi 49, a 2 × 7 = 14.
-suma pierwszych k liczb nieparzystych wynosi k × k: dla k = 6 jest to 6 × 6 = 36.
+czy to prawda, że suma pierwszych m liczb nieparzystych wynosi 2 × m? nie: dla m = 7 suma wynosi 49, a 2 × 7 = 14.
+suma pierwszych n liczb nieparzystych wynosi n × n: dla n = 6 jest to 6 × 6 = 36.
 ilk k tek sayının toplamı k × k olur demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 5 için 5 × 5 = 25.
 ile wynosi suma pierwszych 6 liczb nieparzystych? 1 + 3 + 5 + 7 + 9 + 11 = 36.
-czy to prawda, że suma pierwszych k liczb nieparzystych wynosi 2 × k? nie: dla k = 5 suma wynosi 25, a 2 × 5 = 10.
+czy to prawda, że suma pierwszych n liczb nieparzystych wynosi 2 × n? nie: dla n = 5 suma wynosi 25, a 2 × 5 = 10.
 suma pierwszych k liczb nieparzystych wynosi k × k: dla k = 4 jest to 4 × 4 = 16.
-ilk k tek sayının toplamı k × k olur demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 9 için 9 × 9 = 81.
+ilk m tek sayının toplamı m × m olur demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: m = 9 için 9 × 9 = 81.
 ile wynosi suma pierwszych 5 liczb nieparzystych? 1 + 3 + 5 + 7 + 9 = 25.
 czy to prawda, że suma pierwszych k liczb nieparzystych wynosi 2 × k? nie: dla k = 3 suma wynosi 9, a 2 × 3 = 6.
 suma pierwszych k liczb nieparzystych wynosi 2 × k to fałsz: dla k = 6 suma wynosi 36, a 2 × 6 = 12.
-ilk k tek sayının toplamı k × k olur demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 6 için 6 × 6 = 36.
+ilk n tek sayının toplamı n × n olur demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: n = 6 için 6 × 6 = 36.
 
 co to jest zdanie warunkowe? zdanie warunkowe jest prawdziwe, gdy wniosek zachodzi w każdym przypadku, w którym zachodzi założenie.
 n çift ise n + 4 çift midir? evet: 12 çifttir ve 12 + 4 = 16, bu da çifttir.
@@ -714,17 +714,17 @@ co znaczy, że funkcja jest różnowartościowa? funkcja jest różnowartościow
 f(x) = x × 4 birebir midir? evet: 4, 8, 12 verir, hepsi farklıdır.
 wszystkie funkcje są różnowartościowe to fałsz: f(x) = x × 0 prowadzi 4 i 9 do 0.
 tüm fonksiyonlar birebirdir demek doğru mudur? hayır: f(x) = x × 0 hem 4 hem 12 sayısını 0 yapar.
-f(x) = x × k birebirdir ancak ve ancak k 0 değildir: k = 3 için 1 ve 2 girdileri 3 ve 6 verir.
+f(x) = x × n birebirdir ancak ve ancak n 0 değildir: n = 3 için 1 ve 2 girdileri 3 ve 6 verir.
 bir fonksiyon, farklı girdiler farklı çıktılar veriyorsa birebirdir.
 czy f(x) = x × 4 jest różnowartościowa na 1, 2, 3? tak: daje 4, 8, 12, wszystkie różne.
 tüm fonksiyonlar birebirdir demek doğru mudur? hayır: f(x) = x × 0 hem 3 hem 8 sayısını 0 yapar.
 tüm fonksiyonlar birebirdir demek yanlıştır: f(x) = x × 0 hem 4 hem 12 sayısını 0 yapar.
-czy to prawda, że f(x) = x × k jest różnowartościowa dokładnie wtedy, gdy k nie jest 0? tak: brak kontrprzykładu wśród 1..1000; przykład: dla k = 3 argumenty 1 i 2 dają 3 i 6.
+czy to prawda, że f(x) = x × n jest różnowartościowa dokładnie wtedy, gdy n nie jest 0? tak: brak kontrprzykładu wśród 1..1000; przykład: dla n = 3 argumenty 1 i 2 dają 3 i 6.
 funkcja jest różnowartościowa, gdy różne argumenty dają różne wartości.
 f(x) = x × 2 birebir midir? evet: 2, 4, 6 verir, hepsi farklıdır.
 tüm fonksiyonlar birebirdir demek yanlıştır: f(x) = x × 0 hem 3 hem 8 sayısını 0 yapar.
 czy to prawda, że wszystkie funkcje są różnowartościowe? nie: f(x) = x × 0 prowadzi 4 i 12 do 0.
-f(x) = x × k jest różnowartościowa dokładnie wtedy, gdy k nie jest 0: dla k = 3 argumenty 1 i 2 dają 3 i 6.
+f(x) = x × n jest różnowartościowa dokładnie wtedy, gdy n nie jest 0: dla n = 3 argumenty 1 i 2 dają 3 i 6.
 f(x) = x × k birebirdir ancak ve ancak k 0 değildir demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 4 için 1 ve 2 girdileri 4 ve 8 verir.
 czy f(x) = x × 2 jest różnowartościowa na 1, 2, 3? tak: daje 2, 4, 6, wszystkie różne.
 czy to prawda, że wszystkie funkcje są różnowartościowe? nie: f(x) = x × 0 prowadzi 3 i 8 do 0.
@@ -745,27 +745,27 @@ f(x) = x × 0 birebir midir? hayır: 0, 0, 0 verir, hepsi farklı değildir.
 tüm fonksiyonlar birebirdir demek yanlıştır: f(x) = x × 0 hem 2 hem 7 sayısını 0 yapar.
 czy to prawda, że wszystkie funkcje są różnowartościowe? nie: f(x) = x × 0 prowadzi 3 i 11 do 0.
 f(x) = x × k jest różnowartościowa dokładnie wtedy, gdy k nie jest 0: dla k = 2 argumenty 1 i 2 dają 2 i 4.
-f(x) = x × k birebirdir ancak ve ancak k 0 değildir demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 5 için 1 ve 2 girdileri 5 ve 10 verir.
+f(x) = x × m birebirdir ancak ve ancak m 0 değildir demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: m = 5 için 1 ve 2 girdileri 5 ve 10 verir.
 czy f(x) = x × 0 jest różnowartościowa na 1, 2, 3? nie: daje 0, 0, 0, nie wszystkie różne.
 czy to prawda, że wszystkie funkcje są różnowartościowe? nie: f(x) = x × 0 prowadzi 2 i 7 do 0.
 wszystkie funkcje są różnowartościowe to fałsz: f(x) = x × 0 prowadzi 3 i 11 do 0.
 tüm fonksiyonlar birebirdir demek doğru mudur? hayır: f(x) = x × 0 hem 5 hem 13 sayısını 0 yapar.
-f(x) = x × k birebirdir ancak ve ancak k 0 değildir: k = 5 için 1 ve 2 girdileri 5 ve 10 verir.
+f(x) = x × m birebirdir ancak ve ancak m 0 değildir: m = 5 için 1 ve 2 girdileri 5 ve 10 verir.
 f(x) = x × 3 birebir midir? evet: 3, 6, 9 verir, hepsi farklıdır.
 wszystkie funkcje są różnowartościowe to fałsz: f(x) = x × 0 prowadzi 2 i 7 do 0.
 tüm fonksiyonlar birebirdir demek doğru mudur? hayır: f(x) = x × 0 hem 4 hem 9 sayısını 0 yapar.
 tüm fonksiyonlar birebirdir demek yanlıştır: f(x) = x × 0 hem 5 hem 13 sayısını 0 yapar.
-czy to prawda, że f(x) = x × k jest różnowartościowa dokładnie wtedy, gdy k nie jest 0? tak: brak kontrprzykładu wśród 1..1000; przykład: dla k = 5 argumenty 1 i 2 dają 5 i 10.
+czy to prawda, że f(x) = x × m jest różnowartościowa dokładnie wtedy, gdy m nie jest 0? tak: brak kontrprzykładu wśród 1..1000; przykład: dla m = 5 argumenty 1 i 2 dają 5 i 10.
 czy f(x) = x × 3 jest różnowartościowa na 1, 2, 3? tak: daje 3, 6, 9, wszystkie różne.
 f(x) = x × 6 birebir midir? evet: 6, 12, 18 verir, hepsi farklıdır.
 tüm fonksiyonlar birebirdir demek yanlıştır: f(x) = x × 0 hem 4 hem 9 sayısını 0 yapar.
 czy to prawda, że wszystkie funkcje są różnowartościowe? nie: f(x) = x × 0 prowadzi 5 i 13 do 0.
-f(x) = x × k jest różnowartościowa dokładnie wtedy, gdy k nie jest 0: dla k = 5 argumenty 1 i 2 dają 5 i 10.
+f(x) = x × m jest różnowartościowa dokładnie wtedy, gdy m nie jest 0: dla m = 5 argumenty 1 i 2 dają 5 i 10.
 bir fonksiyonun birebir olması ne demektir? bir fonksiyon, farklı girdiler farklı çıktılar veriyorsa birebirdir.
 czy f(x) = x × 6 jest różnowartościowa na 1, 2, 3? tak: daje 6, 12, 18, wszystkie różne.
 czy to prawda, że wszystkie funkcje są różnowartościowe? nie: f(x) = x × 0 prowadzi 4 i 9 do 0.
 wszystkie funkcje są różnowartościowe to fałsz: f(x) = x × 0 prowadzi 5 i 13 do 0.
-f(x) = x × k birebirdir ancak ve ancak k 0 değildir demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 3 için 1 ve 2 girdileri 3 ve 6 verir.
+f(x) = x × n birebirdir ancak ve ancak n 0 değildir demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: n = 3 için 1 ve 2 girdileri 3 ve 6 verir.
 
 co to jest kwadrat liczby? kwadrat liczby to ta liczba pomnożona przez samą siebie.
 6 sayısının karesi kaçtır? 6 × 6 = 36.
@@ -1041,63 +1041,63 @@ bir sayı, rakamları toplamı 3'e bölünüyorsa 3'e bölünür: 144 sayısınd
 ilk dört tek sayının toplamı kaçtır? 1 + 3 + 5 + 7 = 16.
 ilk k tek sayının toplamı 2 × k demek yanlıştır: k = 3 için toplam 9 ve 2 × 3 = 6.
 ilk k tek sayının toplamı 2 × k demek doğru mudur? hayır: k = 8 için toplam 64 ve 2 × 8 = 16.
-suma pierwszych k liczb nieparzystych wynosi k × k: dla k = 9 jest to 9 × 9 = 81.
+suma pierwszych m liczb nieparzystych wynosi m × m: dla m = 9 jest to 9 × 9 = 81.
 tek sayılar 1, 3, 5, 7 diye başlar ve her biri bir öncekinden 2 fazladır.
 ile wynosi suma pierwszych 8 liczb nieparzystych? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 = 64.
-ilk k tek sayının toplamı 2 × k demek doğru mudur? hayır: k = 5 için toplam 25 ve 2 × 5 = 10.
+ilk n tek sayının toplamı 2 × n demek doğru mudur? hayır: n = 5 için toplam 25 ve 2 × 5 = 10.
 suma pierwszych k liczb nieparzystych wynosi k × k: dla k = 4 jest to 4 × 4 = 16.
 czy to prawda, że suma pierwszych k liczb nieparzystych wynosi k × k? tak: brak kontrprzykładu wśród 1..1000; przykład: dla k = 7 jest to 7 × 7 = 49.
 ile wynosi suma pierwszych 5 liczb nieparzystych? 1 + 3 + 5 + 7 + 9 = 25.
 ilk on tek sayının toplamı kaçtır? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 = 100.
 suma pierwszych k liczb nieparzystych wynosi 2 × k to fałsz: dla k = 8 suma wynosi 64, a 2 × 8 = 16.
-czy to prawda, że suma pierwszych k liczb nieparzystych wynosi k × k? tak: brak kontrprzykładu wśród 1..1000; przykład: dla k = 6 jest to 6 × 6 = 36.
-ilk k tek sayının toplamı k × k olur: k = 8 için 8 × 8 = 64.
+czy to prawda, że suma pierwszych n liczb nieparzystych wynosi n × n? tak: brak kontrprzykładu wśród 1..1000; przykład: dla n = 6 jest to 6 × 6 = 36.
+ilk n tek sayının toplamı n × n olur: n = 8 için 8 × 8 = 64.
 ilk altı tek sayının toplamı kaçtır? 1 + 3 + 5 + 7 + 9 + 11 = 36.
-suma pierwszych k liczb nieparzystych wynosi 2 × k to fałsz: dla k = 5 suma wynosi 25, a 2 × 5 = 10.
-czy to prawda, że suma pierwszych k liczb nieparzystych wynosi 2 × k? nie: dla k = 9 suma wynosi 81, a 2 × 9 = 18.
-ilk k tek sayının toplamı k × k olur: k = 9 için 9 × 9 = 81.
+suma pierwszych n liczb nieparzystych wynosi 2 × n to fałsz: dla n = 5 suma wynosi 25, a 2 × 5 = 10.
+czy to prawda, że suma pierwszych n liczb nieparzystych wynosi 2 × n? nie: dla n = 9 suma wynosi 81, a 2 × 9 = 18.
+ilk m tek sayının toplamı m × m olur: m = 9 için 9 × 9 = 81.
 tek sayı nedir? tek sayılar 1, 3, 5, 7 diye başlar ve her biri bir öncekinden 2 fazladır.
 ile wynosi suma pierwszych 9 liczb nieparzystych? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 = 81.
-czy to prawda, że suma pierwszych k liczb nieparzystych wynosi 2 × k? nie: dla k = 7 suma wynosi 49, a 2 × 7 = 14.
+czy to prawda, że suma pierwszych m liczb nieparzystych wynosi 2 × m? nie: dla m = 7 suma wynosi 49, a 2 × 7 = 14.
 ilk k tek sayının toplamı k × k olur: k = 4 için 4 × 4 = 16.
 ilk k tek sayının toplamı k × k olur demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 7 için 7 × 7 = 49.
 ile wynosi suma pierwszych 4 liczb nieparzystych? 1 + 3 + 5 + 7 = 16.
 czy to prawda, że suma pierwszych k liczb nieparzystych wynosi 2 × k? nie: dla k = 3 suma wynosi 9, a 2 × 3 = 6.
 ilk k tek sayının toplamı 2 × k demek yanlıştır: k = 8 için toplam 64 ve 2 × 8 = 16.
-ilk k tek sayının toplamı k × k olur demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 6 için 6 × 6 = 36.
+ilk n tek sayının toplamı n × n olur demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: n = 6 için 6 × 6 = 36.
 liczby nieparzyste zaczynają się 1, 3, 5, 7 i każda następna jest o 2 większa od poprzedniej.
 ilk yedi tek sayının toplamı kaçtır? 1 + 3 + 5 + 7 + 9 + 11 + 13 = 49.
-ilk k tek sayının toplamı 2 × k demek yanlıştır: k = 5 için toplam 25 ve 2 × 5 = 10.
-ilk k tek sayının toplamı 2 × k demek doğru mudur? hayır: k = 9 için toplam 81 ve 2 × 9 = 18.
+ilk n tek sayının toplamı 2 × n demek yanlıştır: n = 5 için toplam 25 ve 2 × 5 = 10.
+ilk n tek sayının toplamı 2 × n demek doğru mudur? hayır: n = 9 için toplam 81 ve 2 × 9 = 18.
 suma pierwszych k liczb nieparzystych wynosi k × k: dla k = 7 jest to 7 × 7 = 49.
 ilk üç tek sayının toplamı kaçtır? 1 + 3 + 5 = 9.
 ile wynosi suma pierwszych 10 liczb nieparzystych? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 = 100.
-ilk k tek sayının toplamı 2 × k demek doğru mudur? hayır: k = 7 için toplam 49 ve 2 × 7 = 14.
-suma pierwszych k liczb nieparzystych wynosi k × k: dla k = 6 jest to 6 × 6 = 36.
-czy to prawda, że suma pierwszych k liczb nieparzystych wynosi k × k? tak: brak kontrprzykładu wśród 1..1000; przykład: dla k = 8 jest to 8 × 8 = 64.
+ilk m tek sayının toplamı 2 × m demek doğru mudur? hayır: m = 7 için toplam 49 ve 2 × 7 = 14.
+suma pierwszych n liczb nieparzystych wynosi n × n: dla n = 6 jest to 6 × 6 = 36.
+czy to prawda, że suma pierwszych n liczb nieparzystych wynosi n × n? tak: brak kontrprzykładu wśród 1..1000; przykład: dla n = 8 jest to 8 × 8 = 64.
 ile wynosi suma pierwszych 6 liczb nieparzystych? 1 + 3 + 5 + 7 + 9 + 11 = 36.
 ilk k tek sayının toplamı 2 × k demek doğru mudur? hayır: k = 3 için toplam 9 ve 2 × 3 = 6.
-suma pierwszych k liczb nieparzystych wynosi 2 × k to fałsz: dla k = 9 suma wynosi 81, a 2 × 9 = 18.
-czy to prawda, że suma pierwszych k liczb nieparzystych wynosi k × k? tak: brak kontrprzykładu wśród 1..1000; przykład: dla k = 9 jest to 9 × 9 = 81.
+suma pierwszych n liczb nieparzystych wynosi 2 × n to fałsz: dla n = 9 suma wynosi 81, a 2 × 9 = 18.
+czy to prawda, że suma pierwszych m liczb nieparzystych wynosi m × m? tak: brak kontrprzykładu wśród 1..1000; przykład: dla m = 9 jest to 9 × 9 = 81.
 co to jest liczba nieparzysta? liczby nieparzyste zaczynają się 1, 3, 5, 7 i każda następna jest o 2 większa od poprzedniej.
 ilk sekiz tek sayının toplamı kaçtır? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 = 64.
-suma pierwszych k liczb nieparzystych wynosi 2 × k to fałsz: dla k = 7 suma wynosi 49, a 2 × 7 = 14.
+suma pierwszych m liczb nieparzystych wynosi 2 × m to fałsz: dla m = 7 suma wynosi 49, a 2 × 7 = 14.
 czy to prawda, że suma pierwszych k liczb nieparzystych wynosi k × k? tak: brak kontrprzykładu wśród 1..1000; przykład: dla k = 4 jest to 4 × 4 = 16.
 ilk k tek sayının toplamı k × k olur: k = 7 için 7 × 7 = 49.
 ilk beş tek sayının toplamı kaçtır? 1 + 3 + 5 + 7 + 9 = 25.
 suma pierwszych k liczb nieparzystych wynosi 2 × k to fałsz: dla k = 3 suma wynosi 9, a 2 × 3 = 6.
 czy to prawda, że suma pierwszych k liczb nieparzystych wynosi 2 × k? nie: dla k = 8 suma wynosi 64, a 2 × 8 = 16.
-ilk k tek sayının toplamı k × k olur: k = 6 için 6 × 6 = 36.
-ilk k tek sayının toplamı k × k olur demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 8 için 8 × 8 = 64.
+ilk n tek sayının toplamı n × n olur: n = 6 için 6 × 6 = 36.
+ilk n tek sayının toplamı n × n olur demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: n = 8 için 8 × 8 = 64.
 ile wynosi suma pierwszych 7 liczb nieparzystych? 1 + 3 + 5 + 7 + 9 + 11 + 13 = 49.
-czy to prawda, że suma pierwszych k liczb nieparzystych wynosi 2 × k? nie: dla k = 5 suma wynosi 25, a 2 × 5 = 10.
-ilk k tek sayının toplamı 2 × k demek yanlıştır: k = 9 için toplam 81 ve 2 × 9 = 18.
-ilk k tek sayının toplamı k × k olur demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 9 için 9 × 9 = 81.
+czy to prawda, że suma pierwszych n liczb nieparzystych wynosi 2 × n? nie: dla n = 5 suma wynosi 25, a 2 × 5 = 10.
+ilk n tek sayının toplamı 2 × n demek yanlıştır: n = 9 için toplam 81 ve 2 × 9 = 18.
+ilk m tek sayının toplamı m × m olur demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: m = 9 için 9 × 9 = 81.
 ile wynosi suma pierwszych 3 liczb nieparzystych? 1 + 3 + 5 = 9.
 ilk dokuz tek sayının toplamı kaçtır? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 = 81.
-ilk k tek sayının toplamı 2 × k demek yanlıştır: k = 7 için toplam 49 ve 2 × 7 = 14.
+ilk m tek sayının toplamı 2 × m demek yanlıştır: m = 7 için toplam 49 ve 2 × 7 = 14.
 ilk k tek sayının toplamı k × k olur demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 4 için 4 × 4 = 16.
-suma pierwszych k liczb nieparzystych wynosi k × k: dla k = 8 jest to 8 × 8 = 64.
+suma pierwszych n liczb nieparzystych wynosi n × n: dla n = 8 jest to 8 × 8 = 64.
 
 n çift ise n + 2 çift midir? evet: 10 çifttir ve 10 + 2 = 12, bu da çifttir.
 n çift ise n + 3 çifttir demek yanlıştır: 6 çifttir ve 6 + 3 = 9, bu da tektir.
@@ -1171,12 +1171,12 @@ jeśli n jest parzyste, to n + m jest parzyste dokładnie wtedy, gdy m jest parz
 f(x) = x × 5 birebir midir? evet: 5, 10, 15 verir, hepsi farklıdır.
 wszystkie funkcje są różnowartościowe to fałsz: f(x) = x × 0 prowadzi 3 i 8 do 0.
 czy to prawda, że wszystkie funkcje są różnowartościowe? nie: f(x) = x × 0 prowadzi 6 i 8 do 0.
-f(x) = x × k birebirdir ancak ve ancak k 0 değildir: k = 3 için 1 ve 2 girdileri 3 ve 6 verir.
-f(x) = x × k birebirdir ancak ve ancak k 0 değildir demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 7 için 1 ve 2 girdileri 7 ve 14 verir.
+f(x) = x × n birebirdir ancak ve ancak n 0 değildir: n = 3 için 1 ve 2 girdileri 3 ve 6 verir.
+f(x) = x × n birebirdir ancak ve ancak n 0 değildir demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: n = 7 için 1 ve 2 girdileri 7 ve 14 verir.
 czy f(x) = x × 6 jest różnowartościowa na 1, 2, 3? tak: daje 6, 12, 18, wszystkie różne.
 tüm fonksiyonlar birebirdir demek doğru mudur? hayır: f(x) = x × 0 hem 3 hem 8 sayısını 0 yapar.
 wszystkie funkcje są różnowartościowe to fałsz: f(x) = x × 0 prowadzi 7 i 9 do 0.
-czy to prawda, że f(x) = x × k jest różnowartościowa dokładnie wtedy, gdy k nie jest 0? tak: brak kontrprzykładu wśród 1..1000; przykład: dla k = 5 argumenty 1 i 2 dają 5 i 10.
+czy to prawda, że f(x) = x × m jest różnowartościowa dokładnie wtedy, gdy m nie jest 0? tak: brak kontrprzykładu wśród 1..1000; przykład: dla m = 5 argumenty 1 i 2 dają 5 i 10.
 co znaczy, że funkcja jest różnowartościowa? funkcja jest różnowartościowa, gdy różne argumenty dają różne wartości.
 f(x) = x × 7 birebir midir? evet: 7, 14, 21 verir, hepsi farklıdır.
 tüm fonksiyonlar birebirdir demek yanlıştır: f(x) = x × 0 hem 4 hem 9 sayısını 0 yapar.
@@ -1190,17 +1190,17 @@ f(x) = x × k birebirdir ancak ve ancak k 0 değildir demek doğru mudur? evet: 
 czy f(x) = x × 5 jest różnowartościowa na 1, 2, 3? tak: daje 5, 10, 15, wszystkie różne.
 tüm fonksiyonlar birebirdir demek doğru mudur? hayır: f(x) = x × 0 hem 2 hem 7 sayısını 0 yapar.
 wszystkie funkcje są różnowartościowe to fałsz: f(x) = x × 0 prowadzi 6 i 8 do 0.
-czy to prawda, że f(x) = x × k jest różnowartościowa dokładnie wtedy, gdy k nie jest 0? tak: brak kontrprzykładu wśród 1..1000; przykład: dla k = 3 argumenty 1 i 2 dają 3 i 6.
-f(x) = x × k birebirdir ancak ve ancak k 0 değildir: k = 7 için 1 ve 2 girdileri 7 ve 14 verir.
+czy to prawda, że f(x) = x × n jest różnowartościowa dokładnie wtedy, gdy n nie jest 0? tak: brak kontrprzykładu wśród 1..1000; przykład: dla n = 3 argumenty 1 i 2 dają 3 i 6.
+f(x) = x × n birebirdir ancak ve ancak n 0 değildir: n = 7 için 1 ve 2 girdileri 7 ve 14 verir.
 f(x) = x × 4 birebir midir? evet: 4, 8, 12 verir, hepsi farklıdır.
 tüm fonksiyonlar birebirdir demek yanlıştır: f(x) = x × 0 hem 3 hem 8 sayısını 0 yapar.
 tüm fonksiyonlar birebirdir demek doğru mudur? hayır: f(x) = x × 0 hem 6 hem 8 sayısını 0 yapar.
-f(x) = x × k jest różnowartościowa dokładnie wtedy, gdy k nie jest 0: dla k = 5 argumenty 1 i 2 dają 5 i 10.
+f(x) = x × m jest różnowartościowa dokładnie wtedy, gdy m nie jest 0: dla m = 5 argumenty 1 i 2 dają 5 i 10.
 bir fonksiyon, farklı girdiler farklı çıktılar veriyorsa birebirdir.
 czy f(x) = x × 7 jest różnowartościowa na 1, 2, 3? tak: daje 7, 14, 21, wszystkie różne.
 czy to prawda, że wszystkie funkcje są różnowartościowe? nie: f(x) = x × 0 prowadzi 4 i 9 do 0.
 tüm fonksiyonlar birebirdir demek yanlıştır: f(x) = x × 0 hem 7 hem 9 sayısını 0 yapar.
-f(x) = x × k birebirdir ancak ve ancak k 0 değildir demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 5 için 1 ve 2 girdileri 5 ve 10 verir.
+f(x) = x × m birebirdir ancak ve ancak m 0 değildir demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: m = 5 için 1 ve 2 girdileri 5 ve 10 verir.
 czy f(x) = x × 3 jest różnowartościowa na 1, 2, 3? tak: daje 3, 6, 9, wszystkie różne.
 f(x) = x × 8 birebir midir? evet: 8, 16, 24 verir, hepsi farklıdır.
 wszystkie funkcje są różnowartościowe to fałsz: f(x) = x × 0 prowadzi 5 i 14 do 0.
@@ -1209,17 +1209,17 @@ f(x) = x × k birebirdir ancak ve ancak k 0 değildir: k = 6 için 1 ve 2 girdil
 f(x) = x × 0 birebir midir? hayır: 0, 0, 0 verir, hepsi farklı değildir.
 tüm fonksiyonlar birebirdir demek yanlıştır: f(x) = x × 0 hem 2 hem 7 sayısını 0 yapar.
 tüm fonksiyonlar birebirdir demek doğru mudur? hayır: f(x) = x × 0 hem 5 hem 14 sayısını 0 yapar.
-f(x) = x × k jest różnowartościowa dokładnie wtedy, gdy k nie jest 0: dla k = 3 argumenty 1 i 2 dają 3 i 6.
-czy to prawda, że f(x) = x × k jest różnowartościowa dokładnie wtedy, gdy k nie jest 0? tak: brak kontrprzykładu wśród 1..1000; przykład: dla k = 7 argumenty 1 i 2 dają 7 i 14.
+f(x) = x × n jest różnowartościowa dokładnie wtedy, gdy n nie jest 0: dla n = 3 argumenty 1 i 2 dają 3 i 6.
+czy to prawda, że f(x) = x × n jest różnowartościowa dokładnie wtedy, gdy n nie jest 0? tak: brak kontrprzykładu wśród 1..1000; przykład: dla n = 7 argumenty 1 i 2 dają 7 i 14.
 czy f(x) = x × 4 jest różnowartościowa na 1, 2, 3? tak: daje 4, 8, 12, wszystkie różne.
 czy to prawda, że wszystkie funkcje są różnowartościowe? nie: f(x) = x × 0 prowadzi 3 i 8 do 0.
 tüm fonksiyonlar birebirdir demek yanlıştır: f(x) = x × 0 hem 6 hem 8 sayısını 0 yapar.
-f(x) = x × k birebirdir ancak ve ancak k 0 değildir demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 3 için 1 ve 2 girdileri 3 ve 6 verir.
+f(x) = x × n birebirdir ancak ve ancak n 0 değildir demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: n = 3 için 1 ve 2 girdileri 3 ve 6 verir.
 funkcja jest różnowartościowa, gdy różne argumenty dają różne wartości.
 f(x) = x × 6 birebir midir? evet: 6, 12, 18 verir, hepsi farklıdır.
 wszystkie funkcje są różnowartościowe to fałsz: f(x) = x × 0 prowadzi 4 i 9 do 0.
 czy to prawda, że wszystkie funkcje są różnowartościowe? nie: f(x) = x × 0 prowadzi 7 i 9 do 0.
-f(x) = x × k birebirdir ancak ve ancak k 0 değildir: k = 5 için 1 ve 2 girdileri 5 ve 10 verir.
+f(x) = x × m birebirdir ancak ve ancak m 0 değildir: m = 5 için 1 ve 2 girdileri 5 ve 10 verir.
 bir fonksiyonun birebir olması ne demektir? bir fonksiyon, farklı girdiler farklı çıktılar veriyorsa birebirdir.
 czy f(x) = x × 8 jest różnowartościowa na 1, 2, 3? tak: daje 8, 16, 24, wszystkie różne.
 tüm fonksiyonlar birebirdir demek doğru mudur? hayır: f(x) = x × 0 hem 4 hem 9 sayısını 0 yapar.
@@ -1229,7 +1229,7 @@ czy f(x) = x × 0 jest różnowartościowa na 1, 2, 3? nie: daje 0, 0, 0, nie ws
 czy to prawda, że wszystkie funkcje są różnowartościowe? nie: f(x) = x × 0 prowadzi 2 i 7 do 0.
 tüm fonksiyonlar birebirdir demek yanlıştır: f(x) = x × 0 hem 5 hem 14 sayısını 0 yapar.
 f(x) = x × k birebirdir ancak ve ancak k 0 değildir demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 2 için 1 ve 2 girdileri 2 ve 4 verir.
-f(x) = x × k jest różnowartościowa dokładnie wtedy, gdy k nie jest 0: dla k = 7 argumenty 1 i 2 dają 7 i 14.
+f(x) = x × n jest różnowartościowa dokładnie wtedy, gdy n nie jest 0: dla n = 7 argumenty 1 i 2 dają 7 i 14.
 
 7 sayısının karesi kaçtır? 7 × 7 = 49.
 wszystkie kwadraty są parzyste to fałsz: 9 jest nieparzyste i 9 × 9 = 81, co jest nieparzyste.
@@ -1524,72 +1524,72 @@ bir sayı, rakamları toplamı 3'e bölünüyorsa 3'e bölünür demek doğru mu
 
 ile wynosi suma pierwszych 3 liczb nieparzystych? 1 + 3 + 5 = 9.
 ilk k tek sayının toplamı 2 × k demek doğru mudur? hayır: k = 3 için toplam 9 ve 2 × 3 = 6.
-ilk k tek sayının toplamı 2 × k demek yanlıştır: k = 11 için toplam 121 ve 2 × 11 = 22.
-czy to prawda, że suma pierwszych k liczb nieparzystych wynosi k × k? tak: brak kontrprzykładu wśród 1..1000; przykład: dla k = 11 jest to 11 × 11 = 121.
+ilk m tek sayının toplamı 2 × m demek yanlıştır: m = 11 için toplam 121 ve 2 × 11 = 22.
+czy to prawda, że suma pierwszych n liczb nieparzystych wynosi n × n? tak: brak kontrprzykładu wśród 1..1000; przykład: dla n = 11 jest to 11 × 11 = 121.
 ile wynosi suma pierwszych 9 liczb nieparzystych? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 = 81.
-ilk k tek sayının toplamı 2 × k demek doğru mudur? hayır: k = 7 için toplam 49 ve 2 × 7 = 14.
-ilk k tek sayının toplamı k × k olur: k = 6 için 6 × 6 = 36.
+ilk m tek sayının toplamı 2 × m demek doğru mudur? hayır: m = 7 için toplam 49 ve 2 × 7 = 14.
+ilk n tek sayının toplamı n × n olur: n = 6 için 6 × 6 = 36.
 tek sayılar 1, 3, 5, 7 diye başlar ve her biri bir öncekinden 2 fazladır.
 suma pierwszych k liczb nieparzystych wynosi 2 × k to fałsz: dla k = 3 suma wynosi 9, a 2 × 3 = 6.
-ilk k tek sayının toplamı 2 × k demek doğru mudur? hayır: k = 10 için toplam 100 ve 2 × 10 = 20.
+ilk n tek sayının toplamı 2 × n demek doğru mudur? hayır: n = 10 için toplam 100 ve 2 × 10 = 20.
 ilk k tek sayının toplamı k × k olur: k = 10 için 10 × 10 = 100.
 ilk dört tek sayının toplamı kaçtır? 1 + 3 + 5 + 7 = 16.
-suma pierwszych k liczb nieparzystych wynosi 2 × k to fałsz: dla k = 7 suma wynosi 49, a 2 × 7 = 14.
+suma pierwszych m liczb nieparzystych wynosi 2 × m to fałsz: dla m = 7 suma wynosi 49, a 2 × 7 = 14.
 ilk k tek sayının toplamı k × k olur demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 4 için 4 × 4 = 16.
-ilk k tek sayının toplamı k × k olur: k = 12 için 12 × 12 = 144.
+ilk m tek sayının toplamı m × m olur: m = 12 için 12 × 12 = 144.
 ilk on bir tek sayının toplamı kaçtır? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 + 21 = 121.
-suma pierwszych k liczb nieparzystych wynosi 2 × k to fałsz: dla k = 10 suma wynosi 100, a 2 × 10 = 20.
-ilk k tek sayının toplamı k × k olur demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 9 için 9 × 9 = 81.
+suma pierwszych n liczb nieparzystych wynosi 2 × n to fałsz: dla n = 10 suma wynosi 100, a 2 × 10 = 20.
+ilk m tek sayının toplamı m × m olur demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: m = 9 için 9 × 9 = 81.
 ile wynosi suma pierwszych 5 liczb nieparzystych? 1 + 3 + 5 + 7 + 9 = 25.
-czy to prawda, że suma pierwszych k liczb nieparzystych wynosi 2 × k? nie: dla k = 5 suma wynosi 25, a 2 × 5 = 10.
+czy to prawda, że suma pierwszych n liczb nieparzystych wynosi 2 × n? nie: dla n = 5 suma wynosi 25, a 2 × 5 = 10.
 suma pierwszych k liczb nieparzystych wynosi k × k: dla k = 4 jest to 4 × 4 = 16.
-ilk k tek sayının toplamı k × k olur demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 11 için 11 × 11 = 121.
+ilk n tek sayının toplamı n × n olur demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: n = 11 için 11 × 11 = 121.
 ile wynosi suma pierwszych 10 liczb nieparzystych? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 = 100.
 czy to prawda, że suma pierwszych k liczb nieparzystych wynosi 2 × k? nie: dla k = 9 suma wynosi 81, a 2 × 9 = 18.
-suma pierwszych k liczb nieparzystych wynosi k × k: dla k = 9 jest to 9 × 9 = 81.
+suma pierwszych m liczb nieparzystych wynosi m × m: dla m = 9 jest to 9 × 9 = 81.
 tek sayı nedir? tek sayılar 1, 3, 5, 7 diye başlar ve her biri bir öncekinden 2 fazladır.
 ilk k tek sayının toplamı 2 × k demek yanlıştır: k = 3 için toplam 9 ve 2 × 3 = 6.
-czy to prawda, że suma pierwszych k liczb nieparzystych wynosi 2 × k? nie: dla k = 11 suma wynosi 121, a 2 × 11 = 22.
-suma pierwszych k liczb nieparzystych wynosi k × k: dla k = 11 jest to 11 × 11 = 121.
+czy to prawda, że suma pierwszych m liczb nieparzystych wynosi 2 × m? nie: dla m = 11 suma wynosi 121, a 2 × 11 = 22.
+suma pierwszych n liczb nieparzystych wynosi n × n: dla n = 11 jest to 11 × 11 = 121.
 ilk sekiz tek sayının toplamı kaçtır? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 = 64.
-ilk k tek sayının toplamı 2 × k demek yanlıştır: k = 7 için toplam 49 ve 2 × 7 = 14.
-czy to prawda, że suma pierwszych k liczb nieparzystych wynosi k × k? tak: brak kontrprzykładu wśród 1..1000; przykład: dla k = 6 jest to 6 × 6 = 36.
+ilk m tek sayının toplamı 2 × m demek yanlıştır: m = 7 için toplam 49 ve 2 × 7 = 14.
+czy to prawda, że suma pierwszych n liczb nieparzystych wynosi n × n? tak: brak kontrprzykładu wśród 1..1000; przykład: dla n = 6 jest to 6 × 6 = 36.
 liczby nieparzyste zaczynają się 1, 3, 5, 7 i każda następna jest o 2 większa od poprzedniej.
 ilk on iki tek sayının toplamı kaçtır? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 + 21 + 23 = 144.
-ilk k tek sayının toplamı 2 × k demek yanlıştır: k = 10 için toplam 100 ve 2 × 10 = 20.
+ilk n tek sayının toplamı 2 × n demek yanlıştır: n = 10 için toplam 100 ve 2 × 10 = 20.
 czy to prawda, że suma pierwszych k liczb nieparzystych wynosi k × k? tak: brak kontrprzykładu wśród 1..1000; przykład: dla k = 10 jest to 10 × 10 = 100.
 ile wynosi suma pierwszych 4 liczb nieparzystych? 1 + 3 + 5 + 7 = 16.
-ilk k tek sayının toplamı 2 × k demek doğru mudur? hayır: k = 5 için toplam 25 ve 2 × 5 = 10.
+ilk n tek sayının toplamı 2 × n demek doğru mudur? hayır: n = 5 için toplam 25 ve 2 × 5 = 10.
 ilk k tek sayının toplamı k × k olur: k = 4 için 4 × 4 = 16.
-czy to prawda, że suma pierwszych k liczb nieparzystych wynosi k × k? tak: brak kontrprzykładu wśród 1..1000; przykład: dla k = 12 jest to 12 × 12 = 144.
+czy to prawda, że suma pierwszych m liczb nieparzystych wynosi m × m? tak: brak kontrprzykładu wśród 1..1000; przykład: dla m = 12 jest to 12 × 12 = 144.
 ile wynosi suma pierwszych 11 liczb nieparzystych? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 + 21 = 121.
 ilk k tek sayının toplamı 2 × k demek doğru mudur? hayır: k = 9 için toplam 81 ve 2 × 9 = 18.
-ilk k tek sayının toplamı k × k olur: k = 9 için 9 × 9 = 81.
+ilk m tek sayının toplamı m × m olur: m = 9 için 9 × 9 = 81.
 ilk üç tek sayının toplamı kaçtır? 1 + 3 + 5 = 9.
-suma pierwszych k liczb nieparzystych wynosi 2 × k to fałsz: dla k = 5 suma wynosi 25, a 2 × 5 = 10.
-ilk k tek sayının toplamı 2 × k demek doğru mudur? hayır: k = 11 için toplam 121 ve 2 × 11 = 22.
-ilk k tek sayının toplamı k × k olur: k = 11 için 11 × 11 = 121.
+suma pierwszych n liczb nieparzystych wynosi 2 × n to fałsz: dla n = 5 suma wynosi 25, a 2 × 5 = 10.
+ilk m tek sayının toplamı 2 × m demek doğru mudur? hayır: m = 11 için toplam 121 ve 2 × 11 = 22.
+ilk n tek sayının toplamı n × n olur: n = 11 için 11 × 11 = 121.
 ilk dokuz tek sayının toplamı kaçtır? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 = 81.
 suma pierwszych k liczb nieparzystych wynosi 2 × k to fałsz: dla k = 9 suma wynosi 81, a 2 × 9 = 18.
-ilk k tek sayının toplamı k × k olur demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 6 için 6 × 6 = 36.
+ilk n tek sayının toplamı n × n olur demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: n = 6 için 6 × 6 = 36.
 co to jest liczba nieparzysta? liczby nieparzyste zaczynają się 1, 3, 5, 7 i każda następna jest o 2 większa od poprzedniej.
 czy to prawda, że suma pierwszych k liczb nieparzystych wynosi 2 × k? nie: dla k = 3 suma wynosi 9, a 2 × 3 = 6.
-suma pierwszych k liczb nieparzystych wynosi 2 × k to fałsz: dla k = 11 suma wynosi 121, a 2 × 11 = 22.
+suma pierwszych m liczb nieparzystych wynosi 2 × m to fałsz: dla m = 11 suma wynosi 121, a 2 × 11 = 22.
 ilk k tek sayının toplamı k × k olur demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 10 için 10 × 10 = 100.
 ile wynosi suma pierwszych 8 liczb nieparzystych? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 = 64.
-czy to prawda, że suma pierwszych k liczb nieparzystych wynosi 2 × k? nie: dla k = 7 suma wynosi 49, a 2 × 7 = 14.
-suma pierwszych k liczb nieparzystych wynosi k × k: dla k = 6 jest to 6 × 6 = 36.
-ilk k tek sayının toplamı k × k olur demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 12 için 12 × 12 = 144.
+czy to prawda, że suma pierwszych m liczb nieparzystych wynosi 2 × m? nie: dla m = 7 suma wynosi 49, a 2 × 7 = 14.
+suma pierwszych n liczb nieparzystych wynosi n × n: dla n = 6 jest to 6 × 6 = 36.
+ilk m tek sayının toplamı m × m olur demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: m = 12 için 12 × 12 = 144.
 ile wynosi suma pierwszych 12 liczb nieparzystych? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 + 21 + 23 = 144.
-czy to prawda, że suma pierwszych k liczb nieparzystych wynosi 2 × k? nie: dla k = 10 suma wynosi 100, a 2 × 10 = 20.
+czy to prawda, że suma pierwszych n liczb nieparzystych wynosi 2 × n? nie: dla n = 10 suma wynosi 100, a 2 × 10 = 20.
 suma pierwszych k liczb nieparzystych wynosi k × k: dla k = 10 jest to 10 × 10 = 100.
 ilk beş tek sayının toplamı kaçtır? 1 + 3 + 5 + 7 + 9 = 25.
-ilk k tek sayının toplamı 2 × k demek yanlıştır: k = 5 için toplam 25 ve 2 × 5 = 10.
+ilk n tek sayının toplamı 2 × n demek yanlıştır: n = 5 için toplam 25 ve 2 × 5 = 10.
 czy to prawda, że suma pierwszych k liczb nieparzystych wynosi k × k? tak: brak kontrprzykładu wśród 1..1000; przykład: dla k = 4 jest to 4 × 4 = 16.
-suma pierwszych k liczb nieparzystych wynosi k × k: dla k = 12 jest to 12 × 12 = 144.
+suma pierwszych m liczb nieparzystych wynosi m × m: dla m = 12 jest to 12 × 12 = 144.
 ilk on tek sayının toplamı kaçtır? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 = 100.
 ilk k tek sayının toplamı 2 × k demek yanlıştır: k = 9 için toplam 81 ve 2 × 9 = 18.
-czy to prawda, że suma pierwszych k liczb nieparzystych wynosi k × k? tak: brak kontrprzykładu wśród 1..1000; przykład: dla k = 9 jest to 9 × 9 = 81.
+czy to prawda, że suma pierwszych m liczb nieparzystych wynosi m × m? tak: brak kontrprzykładu wśród 1..1000; przykład: dla m = 9 jest to 9 × 9 = 81.
 
 jeśli n jest parzyste, czy n + 4 jest parzyste? tak: 6 jest parzyste i 6 + 4 = 10, co jest parzyste.
 n çift ise n + 3 çifttir demek doğru mudur? hayır: 6 çifttir ve 6 + 3 = 9, bu da tektir.
@@ -1671,26 +1671,26 @@ f(x) = x × k birebirdir ancak ve ancak k 0 değildir demek doğru mudur? evet: 
 czy f(x) = x × 5 jest różnowartościowa na 1, 2, 3? tak: daje 5, 10, 15, wszystkie różne.
 tüm fonksiyonlar birebirdir demek doğru mudur? hayır: f(x) = x × 0 hem 3 hem 8 sayısını 0 yapar.
 f(x) = x × k jest różnowartościowa dokładnie wtedy, gdy k nie jest 0: dla k = 2 argumenty 1 i 2 dają 2 i 4.
-czy to prawda, że f(x) = x × k jest różnowartościowa dokładnie wtedy, gdy k nie jest 0? tak: brak kontrprzykładu wśród 1..1000; przykład: dla k = 8 argumenty 1 i 2 dają 8 i 16.
+czy to prawda, że f(x) = x × n jest różnowartościowa dokładnie wtedy, gdy n nie jest 0? tak: brak kontrprzykładu wśród 1..1000; przykład: dla n = 8 argumenty 1 i 2 dają 8 i 16.
 czy f(x) = x × 6 jest różnowartościowa na 1, 2, 3? tak: daje 6, 12, 18, wszystkie różne.
 czy to prawda, że wszystkie funkcje są różnowartościowe? nie: f(x) = x × 0 prowadzi 4 i 9 do 0.
 f(x) = x × k birebirdir ancak ve ancak k 0 değildir: k = 2 için 1 ve 2 girdileri 2 ve 4 verir.
-f(x) = x × k birebirdir ancak ve ancak k 0 değildir demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 8 için 1 ve 2 girdileri 8 ve 16 verir.
+f(x) = x × n birebirdir ancak ve ancak n 0 değildir demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: n = 8 için 1 ve 2 girdileri 8 ve 16 verir.
 czy f(x) = x × 7 jest różnowartościowa na 1, 2, 3? tak: daje 7, 14, 21, wszystkie różne.
 tüm fonksiyonlar birebirdir demek doğru mudur? hayır: f(x) = x × 0 hem 4 hem 9 sayısını 0 yapar.
-f(x) = x × k jest różnowartościowa dokładnie wtedy, gdy k nie jest 0: dla k = 3 argumenty 1 i 2 dają 3 i 6.
-czy to prawda, że f(x) = x × k jest różnowartościowa dokładnie wtedy, gdy k nie jest 0? tak: brak kontrprzykładu wśród 1..1000; przykład: dla k = 9 argumenty 1 i 2 dają 9 i 18.
+f(x) = x × n jest różnowartościowa dokładnie wtedy, gdy n nie jest 0: dla n = 3 argumenty 1 i 2 dają 3 i 6.
+czy to prawda, że f(x) = x × m jest różnowartościowa dokładnie wtedy, gdy m nie jest 0? tak: brak kontrprzykładu wśród 1..1000; przykład: dla m = 9 argumenty 1 i 2 dają 9 i 18.
 czy f(x) = x × 8 jest różnowartościowa na 1, 2, 3? tak: daje 8, 16, 24, wszystkie różne.
 czy to prawda, że wszystkie funkcje są różnowartościowe? nie: f(x) = x × 0 prowadzi 7 i 10 do 0.
-f(x) = x × k birebirdir ancak ve ancak k 0 değildir: k = 3 için 1 ve 2 girdileri 3 ve 6 verir.
-f(x) = x × k birebirdir ancak ve ancak k 0 değildir demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 9 için 1 ve 2 girdileri 9 ve 18 verir.
+f(x) = x × n birebirdir ancak ve ancak n 0 değildir: n = 3 için 1 ve 2 girdileri 3 ve 6 verir.
+f(x) = x × m birebirdir ancak ve ancak m 0 değildir demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: m = 9 için 1 ve 2 girdileri 9 ve 18 verir.
 czy f(x) = x × 1 jest różnowartościowa na 1, 2, 3? tak: daje 1, 2, 3, wszystkie różne.
 tüm fonksiyonlar birebirdir demek doğru mudur? hayır: f(x) = x × 0 hem 7 hem 10 sayısını 0 yapar.
-f(x) = x × k jest różnowartościowa dokładnie wtedy, gdy k nie jest 0: dla k = 5 argumenty 1 i 2 dają 5 i 10.
+f(x) = x × m jest różnowartościowa dokładnie wtedy, gdy m nie jest 0: dla m = 5 argumenty 1 i 2 dają 5 i 10.
 bir fonksiyon, farklı girdiler farklı çıktılar veriyorsa birebirdir.
 wszystkie funkcje są różnowartościowe to fałsz: f(x) = x × 0 prowadzi 2 i 7 do 0.
 czy to prawda, że wszystkie funkcje są różnowartościowe? nie: f(x) = x × 0 prowadzi 1 i 11 do 0.
-f(x) = x × k birebirdir ancak ve ancak k 0 değildir: k = 5 için 1 ve 2 girdileri 5 ve 10 verir.
+f(x) = x × m birebirdir ancak ve ancak m 0 değildir: m = 5 için 1 ve 2 girdileri 5 ve 10 verir.
 bir fonksiyonun birebir olması ne demektir? bir fonksiyon, farklı girdiler farklı çıktılar veriyorsa birebirdir.
 tüm fonksiyonlar birebirdir demek yanlıştır: f(x) = x × 0 hem 2 hem 7 sayısını 0 yapar.
 tüm fonksiyonlar birebirdir demek doğru mudur? hayır: f(x) = x × 0 hem 1 hem 11 sayısını 0 yapar.
@@ -1702,30 +1702,30 @@ f(x) = x × k birebirdir ancak ve ancak k 0 değildir: k = 7 için 1 ve 2 girdil
 f(x) = x × 0 birebir midir? hayır: 0, 0, 0 verir, hepsi farklı değildir.
 tüm fonksiyonlar birebirdir demek yanlıştır: f(x) = x × 0 hem 3 hem 8 sayısını 0 yapar.
 tüm fonksiyonlar birebirdir demek doğru mudur? hayır: f(x) = x × 0 hem 2 hem 12 sayısını 0 yapar.
-f(x) = x × k jest różnowartościowa dokładnie wtedy, gdy k nie jest 0: dla k = 8 argumenty 1 i 2 dają 8 i 16.
+f(x) = x × n jest różnowartościowa dokładnie wtedy, gdy n nie jest 0: dla n = 8 argumenty 1 i 2 dają 8 i 16.
 f(x) = x × 5 birebir midir? evet: 5, 10, 15 verir, hepsi farklıdır.
 wszystkie funkcje są różnowartościowe to fałsz: f(x) = x × 0 prowadzi 4 i 9 do 0.
 czy to prawda, że f(x) = x × k jest różnowartościowa dokładnie wtedy, gdy k nie jest 0? tak: brak kontrprzykładu wśród 1..1000; przykład: dla k = 2 argumenty 1 i 2 dają 2 i 4.
-f(x) = x × k birebirdir ancak ve ancak k 0 değildir: k = 8 için 1 ve 2 girdileri 8 ve 16 verir.
+f(x) = x × n birebirdir ancak ve ancak n 0 değildir: n = 8 için 1 ve 2 girdileri 8 ve 16 verir.
 f(x) = x × 6 birebir midir? evet: 6, 12, 18 verir, hepsi farklıdır.
 tüm fonksiyonlar birebirdir demek yanlıştır: f(x) = x × 0 hem 4 hem 9 sayısını 0 yapar.
 f(x) = x × k birebirdir ancak ve ancak k 0 değildir demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 2 için 1 ve 2 girdileri 2 ve 4 verir.
-f(x) = x × k jest różnowartościowa dokładnie wtedy, gdy k nie jest 0: dla k = 9 argumenty 1 i 2 dają 9 i 18.
+f(x) = x × m jest różnowartościowa dokładnie wtedy, gdy m nie jest 0: dla m = 9 argumenty 1 i 2 dają 9 i 18.
 f(x) = x × 7 birebir midir? evet: 7, 14, 21 verir, hepsi farklıdır.
 wszystkie funkcje są różnowartościowe to fałsz: f(x) = x × 0 prowadzi 7 i 10 do 0.
-czy to prawda, że f(x) = x × k jest różnowartościowa dokładnie wtedy, gdy k nie jest 0? tak: brak kontrprzykładu wśród 1..1000; przykład: dla k = 3 argumenty 1 i 2 dają 3 i 6.
-f(x) = x × k birebirdir ancak ve ancak k 0 değildir: k = 9 için 1 ve 2 girdileri 9 ve 18 verir.
+czy to prawda, że f(x) = x × n jest różnowartościowa dokładnie wtedy, gdy n nie jest 0? tak: brak kontrprzykładu wśród 1..1000; przykład: dla n = 3 argumenty 1 i 2 dają 3 i 6.
+f(x) = x × m birebirdir ancak ve ancak m 0 değildir: m = 9 için 1 ve 2 girdileri 9 ve 18 verir.
 f(x) = x × 8 birebir midir? evet: 8, 16, 24 verir, hepsi farklıdır.
 tüm fonksiyonlar birebirdir demek yanlıştır: f(x) = x × 0 hem 7 hem 10 sayısını 0 yapar.
-f(x) = x × k birebirdir ancak ve ancak k 0 değildir demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 3 için 1 ve 2 girdileri 3 ve 6 verir.
+f(x) = x × n birebirdir ancak ve ancak n 0 değildir demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: n = 3 için 1 ve 2 girdileri 3 ve 6 verir.
 funkcja jest różnowartościowa, gdy różne argumenty dają różne wartości.
 f(x) = x × 1 birebir midir? evet: 1, 2, 3 verir, hepsi farklıdır.
 wszystkie funkcje są różnowartościowe to fałsz: f(x) = x × 0 prowadzi 1 i 11 do 0.
-czy to prawda, że f(x) = x × k jest różnowartościowa dokładnie wtedy, gdy k nie jest 0? tak: brak kontrprzykładu wśród 1..1000; przykład: dla k = 5 argumenty 1 i 2 dają 5 i 10.
+czy to prawda, że f(x) = x × m jest różnowartościowa dokładnie wtedy, gdy m nie jest 0? tak: brak kontrprzykładu wśród 1..1000; przykład: dla m = 5 argumenty 1 i 2 dają 5 i 10.
 co znaczy, że funkcja jest różnowartościowa? funkcja jest różnowartościowa, gdy różne argumenty dają różne wartości.
 czy to prawda, że wszystkie funkcje są różnowartościowe? nie: f(x) = x × 0 prowadzi 2 i 7 do 0.
 tüm fonksiyonlar birebirdir demek yanlıştır: f(x) = x × 0 hem 1 hem 11 sayısını 0 yapar.
-f(x) = x × k birebirdir ancak ve ancak k 0 değildir demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 5 için 1 ve 2 girdileri 5 ve 10 verir.
+f(x) = x × m birebirdir ancak ve ancak m 0 değildir demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: m = 5 için 1 ve 2 girdileri 5 ve 10 verir.
 
 ile wynosi kwadrat liczby 12? 12 × 12 = 144.
 czy to prawda, że wszystkie kwadraty są parzyste? nie: 9 jest nieparzyste i 9 × 9 = 81, co jest nieparzyste.
@@ -2028,64 +2028,64 @@ ile wynosi suma pierwszych 11 liczb nieparzystych? 1 + 3 + 5 + 7 + 9 + 11 + 13 +
 czy to prawda, że suma pierwszych k liczb nieparzystych wynosi 2 × k? nie: dla k = 11 suma wynosi 121, a 2 × 11 = 22.
 suma pierwszych k liczb nieparzystych wynosi k × k: dla k = 1 jest to 1 × 1 = 1.
 ilk beş tek sayının toplamı kaçtır? 1 + 3 + 5 + 7 + 9 = 25.
-suma pierwszych k liczb nieparzystych wynosi 2 × k to fałsz: dla k = 7 suma wynosi 49, a 2 × 7 = 14.
-ilk k tek sayının toplamı k × k olur demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 6 için 6 × 6 = 36.
+suma pierwszych m liczb nieparzystych wynosi 2 × m to fałsz: dla m = 7 suma wynosi 49, a 2 × 7 = 14.
+ilk n tek sayının toplamı n × n olur demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: n = 6 için 6 × 6 = 36.
 co to jest liczba nieparzysta? liczby nieparzyste zaczynają się 1, 3, 5, 7 i każda następna jest o 2 większa od poprzedniej.
 ilk k tek sayının toplamı 2 × k demek doğru mudur? hayır: k = 3 için toplam 9 ve 2 × 3 = 6.
 ilk k tek sayının toplamı k × k olur: k = 4 için 4 × 4 = 16.
-czy to prawda, że suma pierwszych k liczb nieparzystych wynosi k × k? tak: brak kontrprzykładu wśród 1..1000; przykład: dla k = 3 jest to 3 × 3 = 9.
+czy to prawda, że suma pierwszych m liczb nieparzystych wynosi m × m? tak: brak kontrprzykładu wśród 1..1000; przykład: dla m = 3 jest to 3 × 3 = 9.
 ile wynosi suma pierwszych 2 liczb nieparzystych? 1 + 3 = 4.
-czy to prawda, że suma pierwszych k liczb nieparzystych wynosi 2 × k? nie: dla k = 4 suma wynosi 16, a 2 × 4 = 8.
-suma pierwszych k liczb nieparzystych wynosi k × k: dla k = 2 jest to 2 × 2 = 4.
+czy to prawda, że suma pierwszych n liczb nieparzystych wynosi 2 × n? nie: dla n = 4 suma wynosi 16, a 2 × 4 = 8.
+suma pierwszych n liczb nieparzystych wynosi n × n: dla n = 2 jest to 2 × 2 = 4.
 ilk on tek sayının toplamı kaçtır? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 = 100.
 suma pierwszych k liczb nieparzystych wynosi 2 × k to fałsz: dla k = 11 suma wynosi 121, a 2 × 11 = 22.
-ilk k tek sayının toplamı k × k olur demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 9 için 9 × 9 = 81.
+ilk m tek sayının toplamı m × m olur demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: m = 9 için 9 × 9 = 81.
 ile wynosi suma pierwszych 5 liczb nieparzystych? 1 + 3 + 5 + 7 + 9 = 25.
-ilk k tek sayının toplamı 2 × k demek doğru mudur? hayır: k = 5 için toplam 25 ve 2 × 5 = 10.
-ilk k tek sayının toplamı k × k olur: k = 6 için 6 × 6 = 36.
+ilk n tek sayının toplamı 2 × n demek doğru mudur? hayır: n = 5 için toplam 25 ve 2 × 5 = 10.
+ilk n tek sayının toplamı n × n olur: n = 6 için 6 × 6 = 36.
 tek sayılar 1, 3, 5, 7 diye başlar ve her biri bir öncekinden 2 fazladır.
 ilk k tek sayının toplamı 2 × k demek yanlıştır: k = 3 için toplam 9 ve 2 × 3 = 6.
 czy to prawda, że suma pierwszych k liczb nieparzystych wynosi k × k? tak: brak kontrprzykładu wśród 1..1000; przykład: dla k = 4 jest to 4 × 4 = 16.
-suma pierwszych k liczb nieparzystych wynosi k × k: dla k = 3 jest to 3 × 3 = 9.
+suma pierwszych m liczb nieparzystych wynosi m × m: dla m = 3 jest to 3 × 3 = 9.
 ilk on iki tek sayının toplamı kaçtır? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 + 21 + 23 = 144.
-suma pierwszych k liczb nieparzystych wynosi 2 × k to fałsz: dla k = 4 suma wynosi 16, a 2 × 4 = 8.
+suma pierwszych n liczb nieparzystych wynosi 2 × n to fałsz: dla n = 4 suma wynosi 16, a 2 × 4 = 8.
 ilk k tek sayının toplamı k × k olur demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 1 için 1 × 1 = 1.
 ile wynosi suma pierwszych 10 liczb nieparzystych? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 = 100.
-ilk k tek sayının toplamı 2 × k demek doğru mudur? hayır: k = 7 için toplam 49 ve 2 × 7 = 14.
-ilk k tek sayının toplamı k × k olur: k = 9 için 9 × 9 = 81.
+ilk m tek sayının toplamı 2 × m demek doğru mudur? hayır: m = 7 için toplam 49 ve 2 × 7 = 14.
+ilk m tek sayının toplamı m × m olur: m = 9 için 9 × 9 = 81.
 ilk üç tek sayının toplamı kaçtır? 1 + 3 + 5 = 9.
-ilk k tek sayının toplamı 2 × k demek yanlıştır: k = 5 için toplam 25 ve 2 × 5 = 10.
-czy to prawda, że suma pierwszych k liczb nieparzystych wynosi k × k? tak: brak kontrprzykładu wśród 1..1000; przykład: dla k = 6 jest to 6 × 6 = 36.
+ilk n tek sayının toplamı 2 × n demek yanlıştır: n = 5 için toplam 25 ve 2 × 5 = 10.
+czy to prawda, że suma pierwszych n liczb nieparzystych wynosi n × n? tak: brak kontrprzykładu wśród 1..1000; przykład: dla n = 6 jest to 6 × 6 = 36.
 liczby nieparzyste zaczynają się 1, 3, 5, 7 i każda następna jest o 2 większa od poprzedniej.
 czy to prawda, że suma pierwszych k liczb nieparzystych wynosi 2 × k? nie: dla k = 3 suma wynosi 9, a 2 × 3 = 6.
 suma pierwszych k liczb nieparzystych wynosi k × k: dla k = 4 jest to 4 × 4 = 16.
-ilk k tek sayının toplamı k × k olur demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 2 için 2 × 2 = 4.
+ilk n tek sayının toplamı n × n olur demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: n = 2 için 2 × 2 = 4.
 ile wynosi suma pierwszych 12 liczb nieparzystych? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 + 21 + 23 = 144.
 ilk k tek sayının toplamı 2 × k demek doğru mudur? hayır: k = 11 için toplam 121 ve 2 × 11 = 22.
 ilk k tek sayının toplamı k × k olur: k = 1 için 1 × 1 = 1.
 ilk dört tek sayının toplamı kaçtır? 1 + 3 + 5 + 7 = 16.
-ilk k tek sayının toplamı 2 × k demek yanlıştır: k = 7 için toplam 49 ve 2 × 7 = 14.
-czy to prawda, że suma pierwszych k liczb nieparzystych wynosi k × k? tak: brak kontrprzykładu wśród 1..1000; przykład: dla k = 9 jest to 9 × 9 = 81.
+ilk m tek sayının toplamı 2 × m demek yanlıştır: m = 7 için toplam 49 ve 2 × 7 = 14.
+czy to prawda, że suma pierwszych m liczb nieparzystych wynosi m × m? tak: brak kontrprzykładu wśród 1..1000; przykład: dla m = 9 jest to 9 × 9 = 81.
 ile wynosi suma pierwszych 3 liczb nieparzystych? 1 + 3 + 5 = 9.
-czy to prawda, że suma pierwszych k liczb nieparzystych wynosi 2 × k? nie: dla k = 5 suma wynosi 25, a 2 × 5 = 10.
-suma pierwszych k liczb nieparzystych wynosi k × k: dla k = 6 jest to 6 × 6 = 36.
-ilk k tek sayının toplamı k × k olur demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 3 için 3 × 3 = 9.
+czy to prawda, że suma pierwszych n liczb nieparzystych wynosi 2 × n? nie: dla n = 5 suma wynosi 25, a 2 × 5 = 10.
+suma pierwszych n liczb nieparzystych wynosi n × n: dla n = 6 jest to 6 × 6 = 36.
+ilk m tek sayının toplamı m × m olur demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: m = 3 için 3 × 3 = 9.
 suma pierwszych k liczb nieparzystych wynosi 2 × k to fałsz: dla k = 3 suma wynosi 9, a 2 × 3 = 6.
-ilk k tek sayının toplamı 2 × k demek doğru mudur? hayır: k = 4 için toplam 16 ve 2 × 4 = 8.
-ilk k tek sayının toplamı k × k olur: k = 2 için 2 × 2 = 4.
+ilk n tek sayının toplamı 2 × n demek doğru mudur? hayır: n = 4 için toplam 16 ve 2 × 4 = 8.
+ilk n tek sayının toplamı n × n olur: n = 2 için 2 × 2 = 4.
 ilk on bir tek sayının toplamı kaçtır? 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 + 21 = 121.
 ilk k tek sayının toplamı 2 × k demek yanlıştır: k = 11 için toplam 121 ve 2 × 11 = 22.
 czy to prawda, że suma pierwszych k liczb nieparzystych wynosi k × k? tak: brak kontrprzykładu wśród 1..1000; przykład: dla k = 1 jest to 1 × 1 = 1.
 ile wynosi suma pierwszych 4 liczb nieparzystych? 1 + 3 + 5 + 7 = 16.
-czy to prawda, że suma pierwszych k liczb nieparzystych wynosi 2 × k? nie: dla k = 7 suma wynosi 49, a 2 × 7 = 14.
-suma pierwszych k liczb nieparzystych wynosi k × k: dla k = 9 jest to 9 × 9 = 81.
+czy to prawda, że suma pierwszych m liczb nieparzystych wynosi 2 × m? nie: dla m = 7 suma wynosi 49, a 2 × 7 = 14.
+suma pierwszych m liczb nieparzystych wynosi m × m: dla m = 9 jest to 9 × 9 = 81.
 tek sayı nedir? tek sayılar 1, 3, 5, 7 diye başlar ve her biri bir öncekinden 2 fazladır.
-suma pierwszych k liczb nieparzystych wynosi 2 × k to fałsz: dla k = 5 suma wynosi 25, a 2 × 5 = 10.
+suma pierwszych n liczb nieparzystych wynosi 2 × n to fałsz: dla n = 5 suma wynosi 25, a 2 × 5 = 10.
 ilk k tek sayının toplamı k × k olur demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 4 için 4 × 4 = 16.
-ilk k tek sayının toplamı k × k olur: k = 3 için 3 × 3 = 9.
+ilk m tek sayının toplamı m × m olur: m = 3 için 3 × 3 = 9.
 ilk iki tek sayının toplamı kaçtır? 1 + 3 = 4.
-ilk k tek sayının toplamı 2 × k demek yanlıştır: k = 4 için toplam 16 ve 2 × 4 = 8.
-czy to prawda, że suma pierwszych k liczb nieparzystych wynosi k × k? tak: brak kontrprzykładu wśród 1..1000; przykład: dla k = 2 jest to 2 × 2 = 4.
+ilk n tek sayının toplamı 2 × n demek yanlıştır: n = 4 için toplam 16 ve 2 × 4 = 8.
+czy to prawda, że suma pierwszych n liczb nieparzystych wynosi n × n? tak: brak kontrprzykładu wśród 1..1000; przykład: dla n = 2 jest to 2 × 2 = 4.
 
 jeśli n jest parzyste, czy n + 1 jest parzyste? nie: 14 jest parzyste i 14 + 1 = 15, co jest nieparzyste.
 n çift ise n + 7 çifttir demek doğru mudur? hayır: 10 çifttir ve 10 + 7 = 17, bu da tektir.
@@ -2154,39 +2154,39 @@ czy to prawda, że jeśli n jest parzyste, to n + m jest parzyste dokładnie wte
 
 czy f(x) = x × 1 jest różnowartościowa na 1, 2, 3? tak: daje 1, 2, 3, wszystkie różne.
 tüm fonksiyonlar birebirdir demek doğru mudur? hayır: f(x) = x × 0 hem 2 hem 13 sayısını 0 yapar.
-f(x) = x × k birebirdir ancak ve ancak k 0 değildir: k = 5 için 1 ve 2 girdileri 5 ve 10 verir.
+f(x) = x × m birebirdir ancak ve ancak m 0 değildir: m = 5 için 1 ve 2 girdileri 5 ve 10 verir.
 f(x) = x × 5 birebir midir? evet: 5, 10, 15 verir, hepsi farklıdır.
 wszystkie funkcje są różnowartościowe to fałsz: f(x) = x × 0 prowadzi 2 i 13 do 0.
-f(x) = x × k birebirdir ancak ve ancak k 0 değildir demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 3 için 1 ve 2 girdileri 3 ve 6 verir.
+f(x) = x × n birebirdir ancak ve ancak n 0 değildir demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: n = 3 için 1 ve 2 girdileri 3 ve 6 verir.
 czy f(x) = x × 0 jest różnowartościowa na 1, 2, 3? nie: daje 0, 0, 0, nie wszystkie różne.
 czy to prawda, że wszystkie funkcje są różnowartościowe? nie: f(x) = x × 0 prowadzi 4 i 9 do 0.
-f(x) = x × k jest różnowartościowa dokładnie wtedy, gdy k nie jest 0: dla k = 3 argumenty 1 i 2 dają 3 i 6.
+f(x) = x × n jest różnowartościowa dokładnie wtedy, gdy n nie jest 0: dla n = 3 argumenty 1 i 2 dają 3 i 6.
 bir fonksiyonun birebir olması ne demektir? bir fonksiyon, farklı girdiler farklı çıktılar veriyorsa birebirdir.
 tüm fonksiyonlar birebirdir demek yanlıştır: f(x) = x × 0 hem 3 hem 8 sayısını 0 yapar.
 czy to prawda, że f(x) = x × k jest różnowartościowa dokładnie wtedy, gdy k nie jest 0? tak: brak kontrprzykładu wśród 1..1000; przykład: dla k = 2 argumenty 1 i 2 dają 2 i 4.
 funkcja jest różnowartościowa, gdy różne argumenty dają różne wartości.
 tüm fonksiyonlar birebirdir demek doğru mudur? hayır: f(x) = x × 0 hem 2 hem 7 sayısını 0 yapar.
 tüm fonksiyonlar birebirdir demek yanlıştır: f(x) = x × 0 hem 4 hem 8 sayısını 0 yapar.
-czy to prawda, że f(x) = x × k jest różnowartościowa dokładnie wtedy, gdy k nie jest 0? tak: brak kontrprzykładu wśród 1..1000; przykład: dla k = 1 argumenty 1 i 2 dają 1 i 2.
+czy to prawda, że f(x) = x × n jest różnowartościowa dokładnie wtedy, gdy n nie jest 0? tak: brak kontrprzykładu wśród 1..1000; przykład: dla n = 1 argumenty 1 i 2 dają 1 i 2.
 wszystkie funkcje są różnowartościowe to fałsz: f(x) = x × 0 prowadzi 2 i 7 do 0.
 tüm fonksiyonlar birebirdir demek doğru mudur? hayır: f(x) = x × 0 hem 3 hem 14 sayısını 0 yapar.
 f(x) = x × k birebirdir ancak ve ancak k 0 değildir: k = 9 için 1 ve 2 girdileri 9 ve 18 verir.
 f(x) = x × 1 birebir midir? evet: 1, 2, 3 verir, hepsi farklıdır.
 wszystkie funkcje są różnowartościowe to fałsz: f(x) = x × 0 prowadzi 3 i 14 do 0.
-f(x) = x × k birebirdir ancak ve ancak k 0 değildir demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 5 için 1 ve 2 girdileri 5 ve 10 verir.
+f(x) = x × m birebirdir ancak ve ancak m 0 değildir demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: m = 5 için 1 ve 2 girdileri 5 ve 10 verir.
 czy f(x) = x × 8 jest różnowartościowa na 1, 2, 3? tak: daje 8, 16, 24, wszystkie różne.
 czy to prawda, że wszystkie funkcje są różnowartościowe? nie: f(x) = x × 0 prowadzi 2 i 13 do 0.
-f(x) = x × k jest różnowartościowa dokładnie wtedy, gdy k nie jest 0: dla k = 5 argumenty 1 i 2 dają 5 i 10.
+f(x) = x × m jest różnowartościowa dokładnie wtedy, gdy m nie jest 0: dla m = 5 argumenty 1 i 2 dają 5 i 10.
 f(x) = x × 0 birebir midir? hayır: 0, 0, 0 verir, hepsi farklı değildir.
 tüm fonksiyonlar birebirdir demek yanlıştır: f(x) = x × 0 hem 4 hem 9 sayısını 0 yapar.
-czy to prawda, że f(x) = x × k jest różnowartościowa dokładnie wtedy, gdy k nie jest 0? tak: brak kontrprzykładu wśród 1..1000; przykład: dla k = 3 argumenty 1 i 2 dają 3 i 6.
+czy to prawda, że f(x) = x × n jest różnowartościowa dokładnie wtedy, gdy n nie jest 0? tak: brak kontrprzykładu wśród 1..1000; przykład: dla n = 3 argumenty 1 i 2 dają 3 i 6.
 czy f(x) = x × 3 jest różnowartościowa na 1, 2, 3? tak: daje 3, 6, 9, wszystkie różne.
 tüm fonksiyonlar birebirdir demek doğru mudur? hayır: f(x) = x × 0 hem 3 hem 8 sayısını 0 yapar.
 f(x) = x × k birebirdir ancak ve ancak k 0 değildir: k = 2 için 1 ve 2 girdileri 2 ve 4 verir.
 bir fonksiyon, farklı girdiler farklı çıktılar veriyorsa birebirdir.
 wszystkie funkcje są różnowartościowe to fałsz: f(x) = x × 0 prowadzi 3 i 8 do 0.
 tüm fonksiyonlar birebirdir demek doğru mudur? hayır: f(x) = x × 0 hem 4 hem 8 sayısını 0 yapar.
-f(x) = x × k birebirdir ancak ve ancak k 0 değildir: k = 1 için 1 ve 2 girdileri 1 ve 2 verir.
+f(x) = x × n birebirdir ancak ve ancak n 0 değildir: n = 1 için 1 ve 2 girdileri 1 ve 2 verir.
 czy to prawda, że wszystkie funkcje są różnowartościowe? nie: f(x) = x × 0 prowadzi 2 i 7 do 0.
 wszystkie funkcje są różnowartościowe to fałsz: f(x) = x × 0 prowadzi 4 i 8 do 0.
 f(x) = x × k birebirdir ancak ve ancak k 0 değildir demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 9 için 1 ve 2 girdileri 9 ve 18 verir.
@@ -2195,20 +2195,20 @@ czy to prawda, że wszystkie funkcje są różnowartościowe? nie: f(x) = x × 0
 f(x) = x × k jest różnowartościowa dokładnie wtedy, gdy k nie jest 0: dla k = 9 argumenty 1 i 2 dają 9 i 18.
 f(x) = x × 8 birebir midir? evet: 8, 16, 24 verir, hepsi farklıdır.
 tüm fonksiyonlar birebirdir demek yanlıştır: f(x) = x × 0 hem 2 hem 13 sayısını 0 yapar.
-czy to prawda, że f(x) = x × k jest różnowartościowa dokładnie wtedy, gdy k nie jest 0? tak: brak kontrprzykładu wśród 1..1000; przykład: dla k = 5 argumenty 1 i 2 dają 5 i 10.
+czy to prawda, że f(x) = x × m jest różnowartościowa dokładnie wtedy, gdy m nie jest 0? tak: brak kontrprzykładu wśród 1..1000; przykład: dla m = 5 argumenty 1 i 2 dają 5 i 10.
 czy f(x) = x × 5 jest różnowartościowa na 1, 2, 3? tak: daje 5, 10, 15, wszystkie różne.
 tüm fonksiyonlar birebirdir demek doğru mudur? hayır: f(x) = x × 0 hem 4 hem 9 sayısını 0 yapar.
-f(x) = x × k birebirdir ancak ve ancak k 0 değildir: k = 3 için 1 ve 2 girdileri 3 ve 6 verir.
+f(x) = x × n birebirdir ancak ve ancak n 0 değildir: n = 3 için 1 ve 2 girdileri 3 ve 6 verir.
 f(x) = x × 3 birebir midir? evet: 3, 6, 9 verir, hepsi farklıdır.
 wszystkie funkcje są różnowartościowe to fałsz: f(x) = x × 0 prowadzi 4 i 9 do 0.
 f(x) = x × k birebirdir ancak ve ancak k 0 değildir demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 2 için 1 ve 2 girdileri 2 ve 4 verir.
 co znaczy, że funkcja jest różnowartościowa? funkcja jest różnowartościowa, gdy różne argumenty dają różne wartości.
 czy to prawda, że wszystkie funkcje są różnowartościowe? nie: f(x) = x × 0 prowadzi 3 i 8 do 0.
 f(x) = x × k jest różnowartościowa dokładnie wtedy, gdy k nie jest 0: dla k = 2 argumenty 1 i 2 dają 2 i 4.
-f(x) = x × k birebirdir ancak ve ancak k 0 değildir demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: k = 1 için 1 ve 2 girdileri 1 ve 2 verir.
+f(x) = x × n birebirdir ancak ve ancak n 0 değildir demek doğru mudur? evet: 1..1000 arasında karşı örnek yok; örnek: n = 1 için 1 ve 2 girdileri 1 ve 2 verir.
 tüm fonksiyonlar birebirdir demek yanlıştır: f(x) = x × 0 hem 2 hem 7 sayısını 0 yapar.
 czy to prawda, że wszystkie funkcje są różnowartościowe? nie: f(x) = x × 0 prowadzi 4 i 8 do 0.
-f(x) = x × k jest różnowartościowa dokładnie wtedy, gdy k nie jest 0: dla k = 1 argumenty 1 i 2 dają 1 i 2.
+f(x) = x × n jest różnowartościowa dokładnie wtedy, gdy n nie jest 0: dla n = 1 argumenty 1 i 2 dają 1 i 2.
 f(x) = x × 2 birebir midir? evet: 2, 4, 6 verir, hepsi farklıdır.
 tüm fonksiyonlar birebirdir demek yanlıştır: f(x) = x × 0 hem 3 hem 14 sayısını 0 yapar.
 czy to prawda, że f(x) = x × k jest różnowartościowa dokładnie wtedy, gdy k nie jest 0? tak: brak kontrprzykładu wśród 1..1000; przykład: dla k = 9 argumenty 1 i 2 dają 9 i 18.

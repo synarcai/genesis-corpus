@@ -61,6 +61,12 @@ import json
 import pathlib
 import sys
 
+# БУКВА ПЕРЕМЕННОЙ ЕСТЬ ДЫРА, А НЕ СЛОВО (holon 03.09): универсалия,
+# писавшая всегда «k», учила букву как слово рамки; буквы ходят поровну и
+# согласованно внутри строки.
+БУКВЫ = ("k", "n", "m")
+
+
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
 from layer import emit_grouped  # noqa: E402
@@ -372,7 +378,8 @@ def исп_нечётные(шаг):
     """
     вон = []
     ход = [2 + (шаг * 2 + i) % 11 for i in range(5)]
-    for k in случаи(ЯДРО_НЕЧЁТНЫЕ, ход):
+    for _и, k in enumerate(случаи(ЯДРО_НЕЧЁТНЫЕ, ход)):
+        б = БУКВЫ[_и % len(БУКВЫ)]
         ряд = " + ".join(str(2 * j + 1) for j in range(k))
         вон.append(f"ile wynosi suma pierwszych {k} liczb "
                    f"nieparzystych? {ряд} = {k * k}.")
@@ -384,12 +391,13 @@ def исп_нечётные(шаг):
 def контр_нечётные(шаг):
     вон = []
     ход = [3 + (шаг * 2 + i) % 9 for i in range(3)]
-    for k in случаи(ЯДРО_КОНТР_НЕЧЁТНЫЕ, ход):
-        вон.append(f"suma pierwszych k liczb nieparzystych wynosi "
-                   f"2 × k to fałsz: dla k = {k} suma wynosi {k * k}, "
+    for _и, k in enumerate(случаи(ЯДРО_КОНТР_НЕЧЁТНЫЕ, ход)):
+        б = БУКВЫ[_и % len(БУКВЫ)]
+        вон.append(f"suma pierwszych {б} liczb nieparzystych wynosi "
+                   f"2 × {б} to fałsz: dla {б} = {k} suma wynosi {k * k}, "
                    f"a 2 × {k} = {2 * k}.")
-        вон.append(f"ilk k tek sayının toplamı 2 × k demek yanlıştır: "
-                   f"k = {k} için toplam {k * k} ve 2 × {k} = "
+        вон.append(f"ilk {б} tek sayının toplamı 2 × {б} demek yanlıştır: "
+                   f"{б} = {k} için toplam {k * k} ve 2 × {k} = "
                    f"{2 * k}.")
     return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
@@ -397,10 +405,11 @@ def контр_нечётные(шаг):
 def общ_нечётные(шаг):
     вон = []
     ход = [1 + (шаг * 3 + i) % 12 for i in range(3)]
-    for k in случаи(ЯДРО_ОБЩ_НЕЧЁТНЫЕ, ход):
-        вон.append(f"suma pierwszych k liczb nieparzystych wynosi "
-                   f"k × k: dla k = {k} jest to {k} × {k} = {k * k}.")
-        вон.append(f"ilk k tek sayının toplamı k × k olur: k = {k} "
+    for _и, k in enumerate(случаи(ЯДРО_ОБЩ_НЕЧЁТНЫЕ, ход)):
+        б = БУКВЫ[_и % len(БУКВЫ)]
+        вон.append(f"suma pierwszych {б} liczb nieparzystych wynosi "
+                   f"{б} × {б}: dla {б} = {k} jest to {k} × {k} = {k * k}.")
+        вон.append(f"ilk {б} tek sayının toplamı {б} × {б} olur: {б} = {k} "
                    f"için {k} × {k} = {k * k}.")
     return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
@@ -515,12 +524,13 @@ def контр_инъекция(шаг):
 def общ_инъекция(шаг):
     вон = []
     ход = [1 + (шаг * 2 + i) % 9 for i in range(3)]
-    for k in случаи(ЯДРО_ОБЩ_ИНЪЕКЦИЯ, ход):
-        вон.append(f"f(x) = x × k jest różnowartościowa dokładnie "
-                   f"wtedy, gdy k nie jest 0: dla k = {k} argumenty "
+    for _и, k in enumerate(случаи(ЯДРО_ОБЩ_ИНЪЕКЦИЯ, ход)):
+        б = БУКВЫ[_и % len(БУКВЫ)]
+        вон.append(f"f(x) = x × {б} jest różnowartościowa dokładnie "
+                   f"wtedy, gdy {б} nie jest 0: dla {б} = {k} argumenty "
                    f"1 i 2 dają {k} i {2 * k}.")
-        вон.append(f"f(x) = x × k birebirdir ancak ve ancak k 0 "
-                   f"değildir: k = {k} için 1 ve 2 girdileri {k} ve "
+        вон.append(f"f(x) = x × {б} birebirdir ancak ve ancak {б} 0 "
+                   f"değildir: {б} = {k} için 1 ve 2 girdileri {k} ve "
                    f"{2 * k} verir.")
     return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 

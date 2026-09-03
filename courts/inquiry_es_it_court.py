@@ -48,6 +48,11 @@ import pathlib
 import re
 import sys
 
+# ВТОРАЯ РУКА: буквы переменной объявлены и здесь. Буква подставляется в
+# образец целиком, потому она обязана быть ОДНОЙ во всей строке.
+БУКВЫ = ("k", "n", "m")
+
+
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "scripts"))
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
@@ -428,14 +433,14 @@ def _общ_квадрат_it(м):
      rf"{Ч}\.$", _сумма_es),
     (rf"^quanto fanno i primi {С} numeri dispari\? ([\d +]+) = {Ч}\.$",
      _сумма_it),
-    (rf"^la suma de los primeros k números impares es 2 × k es falso: "
-     rf"con k = {Ч} la suma es {Ч} y 2 × {Ч} = {Ч}\.$", _контр_сумма),
-    (rf"^la somma dei primi k numeri dispari è 2 × k è falso: con "
-     rf"k = {Ч} la somma è {Ч} e 2 × {Ч} = {Ч}\.$", _контр_сумма),
-    (rf"^la suma de los primeros k números impares es k × k: con "
-     rf"k = {Ч} es {Ч} × {Ч} = {Ч}\.$", _общ_сумма),
-    (rf"^la somma dei primi k numeri dispari è k × k: con k = {Ч} è "
-     rf"{Ч} × {Ч} = {Ч}\.$", _общ_сумма),
+    *[(rf"^la suma de los primeros {б} números impares es 2 × {б} es falso: "
+     rf"con {б} = {Ч} la suma es {Ч} y 2 × {Ч} = {Ч}\.$", _контр_сумма) for б in БУКВЫ],
+    *[(rf"^la somma dei primi {б} numeri dispari è 2 × {б} è falso: con "
+     rf"{б} = {Ч} la somma è {Ч} e 2 × {Ч} = {Ч}\.$", _контр_сумма) for б in БУКВЫ],
+    *[(rf"^la suma de los primeros {б} números impares es {б} × {б}: con "
+     rf"{б} = {Ч} es {Ч} × {Ч} = {Ч}\.$", _общ_сумма) for б in БУКВЫ],
+    *[(rf"^la somma dei primi {б} numeri dispari è {б} × {б}: con {б} = {Ч} è "
+     rf"{Ч} × {Ч} = {Ч}\.$", _общ_сумма) for б in БУКВЫ],
     (rf"^si n es par, ¿es n \+ {Ч} par\? (sí|no): {Ч} es par y {Ч} \+ "
      rf"{Ч} = {Ч}, que es (par|impar)\.$", _условное_es),
     (rf"^se n è pari, n \+ {Ч} è pari\? (sì|no): {Ч} è pari e {Ч} \+ "
@@ -458,10 +463,10 @@ def _общ_квадрат_it(м):
      rf"lleva {Ч} y {Ч} a 0\.$", _контр_инъекция),
     (rf"^tutte le funzioni sono iniettive è falso: f\(x\) = x × 0 "
      rf"porta {Ч} e {Ч} a 0\.$", _контр_инъекция),
-    (rf"^f\(x\) = x × k es inyectiva exactamente cuando k no es 0: con "
-     rf"k = {Ч} las entradas 1 y 2 dan {Ч} y {Ч}\.$", _общ_инъекция),
-    (rf"^f\(x\) = x × k è iniettiva esattamente quando k non è 0: con "
-     rf"k = {Ч} gli ingressi 1 e 2 danno {Ч} e {Ч}\.$", _общ_инъекция),
+    *[(rf"^f\(x\) = x × {б} es inyectiva exactamente cuando {б} no es 0: con "
+     rf"{б} = {Ч} las entradas 1 y 2 dan {Ч} y {Ч}\.$", _общ_инъекция) for б in БУКВЫ],
+    *[(rf"^f\(x\) = x × {б} è iniettiva esattamente quando {б} non è 0: con "
+     rf"{б} = {Ч} gli ingressi 1 e 2 danno {Ч} e {Ч}\.$", _общ_инъекция) for б in БУКВЫ],
     (rf"^¿cuál es el cuadrado de {Ч}\? {Ч} × {Ч} = {Ч}\.$", _квадрат),
     (rf"^qual è il quadrato di {Ч}\? {Ч} × {Ч} = {Ч}\.$", _квадрат),
     (rf"^todos los cuadrados son pares es falso: {Ч} es impar y {Ч} × "

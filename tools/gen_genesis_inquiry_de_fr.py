@@ -63,6 +63,12 @@ convincing lie a corpus can carry, and its form is always correct.
 import pathlib
 import sys
 
+# БУКВА ПЕРЕМЕННОЙ ЕСТЬ ДЫРА, А НЕ СЛОВО (holon 03.09): универсалия,
+# писавшая всегда «k», учила букву как слово рамки; буквы ходят поровну и
+# согласованно внутри строки.
+БУКВЫ = ("k", "n", "m")
+
+
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from layer import emit_grouped  # noqa: E402
 import universals  # noqa: E402
@@ -280,6 +286,7 @@ def исп_нечётные(шаг):
     вон = []
     for i in range(ИСПОЛНЕНИЙ):
         k = 2 + семя(шаг, i) % 11
+        б = БУКВЫ[(шаг + i) % len(БУКВЫ)]
         ряд = " + ".join(str(2 * j + 1) for j in range(k))
         вон.append(f"was ist die Summe der ersten {k} ungeraden "
                    f"Zahlen? {ряд} = {k * k}.")
@@ -292,11 +299,12 @@ def контр_нечётные(шаг):
     вон = []
     for i in range(КОНТРПРИМЕРОВ):
         k = 3 + семя(шаг, i) % 9
-        вон.append(f"die Summe der ersten k ungeraden Zahlen ist "
-                   f"2 × k ist falsch: bei k = {k} ist die Summe "
+        б = БУКВЫ[(шаг + i) % len(БУКВЫ)]
+        вон.append(f"die Summe der ersten {б} ungeraden Zahlen ist "
+                   f"2 × {б} ist falsch: bei {б} = {k} ist die Summe "
                    f"{k * k}, und 2 × {k} = {2 * k}.")
-        вон.append(f"la somme des k premiers nombres impairs est "
-                   f"2 × k est faux : pour k = {k} la somme est "
+        вон.append(f"la somme des {б} premiers nombres impairs est "
+                   f"2 × {б} est faux : pour {б} = {k} la somme est "
                    f"{k * k}, et 2 × {k} = {2 * k}.")
     return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
@@ -305,10 +313,11 @@ def общ_нечётные(шаг):
     вон = []
     for i in range(ОБОБЩЕНИЙ):
         k = 1 + семя(шаг, i) % 12
-        вон.append(f"die Summe der ersten k ungeraden Zahlen ist "
-                   f"k × k: bei k = {k} ist es {k} × {k} = {k * k}.")
-        вон.append(f"la somme des k premiers nombres impairs est "
-                   f"k × k : pour k = {k} c'est {k} × {k} = {k * k}.")
+        б = БУКВЫ[(шаг + i) % len(БУКВЫ)]
+        вон.append(f"die Summe der ersten {б} ungeraden Zahlen ist "
+                   f"{б} × {б}: bei {б} = {k} ist es {k} × {k} = {k * k}.")
+        вон.append(f"la somme des {б} premiers nombres impairs est "
+                   f"{б} × {б} : pour {б} = {k} c'est {k} × {k} = {k * k}.")
     return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
@@ -418,11 +427,12 @@ def общ_инъекция(шаг):
     вон = []
     for i in range(ОБОБЩЕНИЙ):
         k = 1 + семя(шаг, i) % 7
-        вон.append(f"f(x) = x × k ist genau dann injektiv, wenn k "
-                   f"nicht 0 ist: bei k = {k} liefern die Eingaben 1 "
+        б = БУКВЫ[(шаг + i) % len(БУКВЫ)]
+        вон.append(f"f(x) = x × {б} ist genau dann injektiv, wenn {б} "
+                   f"nicht 0 ist: bei {б} = {k} liefern die Eingaben 1 "
                    f"und 2 die Werte {k} und {2 * k}.")
-        вон.append(f"f(x) = x × k est injective exactement quand k "
-                   f"n'est pas 0 : pour k = {k} les entrées 1 et 2 "
+        вон.append(f"f(x) = x × {б} est injective exactement quand {б} "
+                   f"n'est pas 0 : pour {б} = {k} les entrées 1 et 2 "
                    f"donnent {k} et {2 * k}.")
     return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 

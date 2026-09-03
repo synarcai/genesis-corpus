@@ -79,6 +79,12 @@ convincing lie a corpus can carry, and its form is always correct.
 import pathlib
 import sys
 
+# БУКВА ПЕРЕМЕННОЙ ЕСТЬ ДЫРА, А НЕ СЛОВО (holon 03.09): универсалия,
+# писавшая всегда «k», учила букву как слово рамки; буквы ходят поровну и
+# согласованно внутри строки.
+БУКВЫ = ("k", "n", "m")
+
+
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from layer import emit_grouped  # noqa: E402
 import universals  # noqa: E402
@@ -280,6 +286,7 @@ def исп_нечётные(шаг):
     вон = []
     for i in range(ИСПОЛНЕНИЙ):
         k = 2 + семя(шаг, i) % 11
+        б = БУКВЫ[(шаг + i) % len(БУКВЫ)]
         ряд = " + ".join(str(2 * j + 1) for j in range(k))
         вон.append(f"qual é a soma dos {k} primeiros números ímpares? "
                    f"{ряд} = {k * k}.")
@@ -292,11 +299,12 @@ def контр_нечётные(шаг):
     вон = []
     for i in range(КОНТРПРИМЕРОВ):
         k = 3 + семя(шаг, i) % 9
-        вон.append(f"a soma dos k primeiros números ímpares é 2 × k é "
-                   f"falso: para k = {k} a soma é {k * k}, e 2 × {k} = "
+        б = БУКВЫ[(шаг + i) % len(БУКВЫ)]
+        вон.append(f"a soma dos {б} primeiros números ímpares é 2 × {б} é "
+                   f"falso: para {б} = {k} a soma é {k * k}, e 2 × {k} = "
                    f"{2 * k}.")
-        вон.append(f"de som van de eerste k oneven getallen is 2 × k "
-                   f"is onwaar: bij k = {k} is de som {k * k}, en "
+        вон.append(f"de som van de eerste {б} oneven getallen is 2 × {б} "
+                   f"is onwaar: bij {б} = {k} is de som {k * k}, en "
                    f"2 × {k} = {2 * k}.")
     return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
@@ -305,10 +313,11 @@ def общ_нечётные(шаг):
     вон = []
     for i in range(ОБОБЩЕНИЙ):
         k = 1 + семя(шаг, i) % 12
-        вон.append(f"a soma dos k primeiros números ímpares é k × k: "
-                   f"para k = {k} isso é {k} × {k} = {k * k}.")
-        вон.append(f"de som van de eerste k oneven getallen is k × k: "
-                   f"bij k = {k} is het {k} × {k} = {k * k}.")
+        б = БУКВЫ[(шаг + i) % len(БУКВЫ)]
+        вон.append(f"a soma dos {б} primeiros números ímpares é {б} × {б}: "
+                   f"para {б} = {k} isso é {k} × {k} = {k * k}.")
+        вон.append(f"de som van de eerste {б} oneven getallen is {б} × {б}: "
+                   f"bij {б} = {k} is het {k} × {k} = {k * k}.")
     return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
 
@@ -417,11 +426,12 @@ def общ_инъекция(шаг):
     вон = []
     for i in range(ОБОБЩЕНИЙ):
         k = 1 + семя(шаг, i) % 7
-        вон.append(f"f(x) = x × k é injetiva exatamente quando k não é "
-                   f"0: para k = {k} as entradas 1 e 2 dão {k} e "
+        б = БУКВЫ[(шаг + i) % len(БУКВЫ)]
+        вон.append(f"f(x) = x × {б} é injetiva exatamente quando {б} não é "
+                   f"0: para {б} = {k} as entradas 1 e 2 dão {k} e "
                    f"{2 * k}.")
-        вон.append(f"f(x) = x × k is injectief precies wanneer k niet "
-                   f"0 is: bij k = {k} geven de invoeren 1 en 2 de "
+        вон.append(f"f(x) = x × {б} is injectief precies wanneer {б} niet "
+                   f"0 is: bij {б} = {k} geven de invoeren 1 en 2 de "
                    f"waarden {k} en {2 * k}.")
     return universals.с_вопросами(вон, ЯЗЫКИ_МИРА)
 
