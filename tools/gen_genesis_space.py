@@ -55,6 +55,17 @@ def сетка(шаг, i):
         строки.append("".join(
             "#" if (r * r * 3 + c * 7 + r * c * 5 + шаг * 11 + i * 13) % плотность == 0
             else S.ПУСТО for c in range(n)))
+    # TWO DERIVED FLIPS MAKE THE POOL WIDE (holon 04.09: the remainder rule
+    # alone gave 24 distinct grids in 300 shows, and the EN shift question
+    # saw 2 — below LAW; the market of surfaces honestly stayed mute). The
+    # cells flipped are remainders of the show's own number s = 60·pass + i
+    # — derived, not drawn; the asymmetry law below still holds.
+    s_ = шаг * 60 + i
+    for клетка in ((s_ * 5 + 3) % (n * n), (s_ * 7 + 1) % (n * n)):
+        r, c = divmod(клетка, n)
+        ряд = list(строки[r])
+        ряд[c] = "#" if ряд[c] == S.ПУСТО else S.ПУСТО
+        строки[r] = "".join(ряд)
     if S.закрашено(строки) in (0, n * n):
         строки[0] = строки[0][:-1] + ("#" if строки[0][-1] == S.ПУСТО else S.ПУСТО)
     if (шаг + i) % 4 != 3:
@@ -111,24 +122,24 @@ def показ_отражения(г, шаг, i):
 
 
 def показ_сдвига(г, шаг, i):
-    for сдвиг_ in range(4):
-        en, ru = СТОРОНЫ[(шаг + i + сдвиг_) % 4]
-        k = 1 + (шаг + i) % 2
-        if not S.теряет(г, en, k):
-            break
-        k = 1
-        if not S.теряет(г, en, k):
-            break
-    else:
-        return None
-    а, б = S.записать(г), S.записать(S.сдвиг(г, en, k))
-    форма = (шаг + i) % 3
-    if форма == 0:
-        return f"grid {а} shifted {en} by {k} is {б}."
-    if форма == 1:
-        return f"сетка {а} после сдвига {ru} на {k} — {б}."
-    return (f"what is grid {а} shifted {en} by {k}? grid {а} shifted {en} by {k} is {б}." if i % 2 else
-            f"какой станет сетка {а} после сдвига {ru} на {k}? сетка {а} после сдвига {ru} на {k} — {б}.")
+    """For each distance 1 and 2 a direction that loses no cell, chosen
+    round-robin among the lawful ones, in ALL FOUR forms — the statement
+    and the question in both languages (holon 04.09: every EN shift form
+    and «by 2» want ≥ 8 distinct grids; the forms used to take turns on one
+    show per grid, and «first lawful direction» skewed the count to left)."""
+    вон = []
+    а = S.записать(г)
+    for k in (1, 2):
+        годные = [(en, ru) for en, ru in СТОРОНЫ if not S.теряет(г, en, k)]
+        if not годные:
+            continue
+        en, ru = годные[(шаг + i) % len(годные)]
+        б = S.записать(S.сдвиг(г, en, k))
+        вон += [f"grid {а} shifted {en} by {k} is {б}.",
+                f"сетка {а} после сдвига {ru} на {k} — {б}.",
+                f"what is grid {а} shifted {en} by {k}? grid {а} shifted {en} by {k} is {б}.",
+                f"какой станет сетка {а} после сдвига {ru} на {k}? сетка {а} после сдвига {ru} на {k} — {б}."]
+    return вон or None
 
 
 def показ_соседей(г, шаг, i):
@@ -186,7 +197,9 @@ def pass_shows(шаг):
         for показ in (показ_поворота, показ_отражения, показ_сдвига,
                       показ_соседей, показ_пути, показ_счёта):
             с = показ(г, шаг, i)
-            if с:
+            if isinstance(с, list):
+                вон.extend(с)
+            elif с:
                 вон.append(с)
     return вон
 
