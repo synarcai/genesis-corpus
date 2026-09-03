@@ -3672,6 +3672,24 @@
       "lines": 278420
     },
     {
+      "name": "minimal",
+      "file": "datasets/GENESIS-MIN.txt",
+      "genre": "the minimal assembly: every world of shows in manifest order, cut to NINE shows per GENUS (the second step of the census skeleton — numbers and numerals «#», declared names «@», the fillers of the houses of phrases, the words of fractions and multiplicity «※»). The owner's question of 03.09 — how minimal may the corpus be — has a number from the census (Σ min(mass, 9) by genus, 42 % of the lines) and now a FILE: an organism taught on this assembly must answer as much as one taught on the full one, or the difference is the price of mass. What is kept: the seams, the order and the names of the worlds, every genus up to nine shows; what is lost: the variety of NUMBERS beyond nine shows — the very thing the census calls weight and an executor may call knowledge. Built by scripts/minimal_build.py",
+      "act": [
+        "assemble"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "assembled_only"
+      ],
+      "size": 8861671,
+      "tiers": [],
+      "text": "mix",
+      "lines": 117681
+    },
+    {
       "name": "selfmeasure",
       "file": "datasets/genesis_selfmeasure.txt",
       "genre": "the organism speaking about ITSELF, where a self-report is a DATED MEASUREMENT and never an impression (TELOS-DESIGN §4): four genera — state as a fraction bounded by exact integer multiplication, boundary named by number with its complement summing to the whole, need as the DIFFERENCE of two measurements rather than a wish, and growth as the difference of two snapshots of the same day WITH BOTH PARTS NAMED, because a rise in the numerator is not a rise in the share; every show carries the instrument that produced the number and the day it was taken, every show is stated in the PAST tense so it stays true as a historical fact when the instrument moves on, a question surface stands on each genus, and a question about tomorrow is refused on the ground that no measurement later than the named day exists; the court recomputes every relation and additionally requires the pair of numbers to stand in a snapshot declared a second time inside the court, so a corruption consistent with its own arithmetic still breaks",
