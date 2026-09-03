@@ -218,9 +218,41 @@ def _куски(строка):
     return [к for к in re.split(r"(?<=[.。۔?؟!]) ", строка.strip()) if к.strip()]
 
 
+def простое(n):
+    return n > 1 and all(n % d for d in range(2, int(n ** 0.5) + 1))
+
+
+def _перебор_держится(шаги):
+    """THE SEARCH IS A CHAIN WITHOUT A SEAM (holon's choice 03.09, way «б»): a
+    walk over consecutive candidates, each rejected by its own witness — «3 × 3
+    = 9. 2 × 5 = 10. 1 × 11 = 11.» The results run one after another; every
+    candidate but the last is composite and stands beside ITS LEAST divisor;
+    the last stands beside one, and only a prime may — that is the predicate
+    said without a word for it. A pack that never declared «prime» still shows
+    the search, and the market sees the walk it must repeat."""
+    if len(шаги) < 2 or any(оп != "×" for оп, _, _, _ in шаги):
+        return False
+    результаты = [r for _, _, _, r in шаги]
+    if any(b - a != 1 for a, b in zip(результаты, результаты[1:])):
+        return False
+    for i, (_, a, b, r) in enumerate(шаги):
+        последний = i == len(шаги) - 1
+        меньший = min(a, b)
+        if последний:
+            if меньший != 1 or not простое(r):
+                return False
+        else:
+            наименьший = next((d for d in range(2, r) if r % d == 0), None)
+            if наименьший is None or меньший != наименьший:
+                return False
+    return True
+
+
 def судить(строка):
-    """(судимо, истинно): a chain of two or more declared equalities whose
-    seam holds and whose every step counts."""
+    """(судимо, истинно): a chain of two or more declared equalities — either a
+    LEDGER, whose seam holds (the result of a step is an operand of the next),
+    or a SEARCH, whose results run consecutively and whose witnesses reject
+    every candidate but the last."""
     с = строка.strip()
     куски = _куски(с)
     if len(куски) < 2:
@@ -233,8 +265,26 @@ def судить(строка):
             if _счёт(оп, a, b) != r:
                 return True, False
         # THE SEAM: the result of a step is an operand of the next
-        for (о1, a1, b1, r1), (о2, a2, b2, r2) in zip(шаги, шаги[1:]):
-            if r1 not in (a2, b2):
-                return True, False
-        return True, True
+        шов = all(r1 in (a2, b2) for (_, _, _, r1), (_, a2, b2, _) in zip(шаги, шаги[1:]))
+        if шов:
+            return True, True
+        return True, _перебор_держится(шаги)
     return False, False
+
+
+def перебор(язык, n):
+    """The walk from n to the next prime, as the declared equalities say it, or
+    None — the language cannot say one of the numbers."""
+    т = ЧИСЛА[язык]
+    if not умеет(язык, "×"):
+        return None
+    p = n + 1
+    while not простое(p):
+        p += 1
+    шаги = []
+    for m in range(n + 1, p + 1):
+        d = next((d for d in range(2, m) if m % d == 0), 1)
+        if m not in т or d not in т or (m // d) not in т:
+            return None
+        шаги.append(("×", d, m // d, m))
+    return шаги if len(шаги) >= 2 else None

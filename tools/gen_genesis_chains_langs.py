@@ -16,7 +16,7 @@ TEMPLATES each pack already declares in `show_kinds.arithmetic`, tells the
 operation by the place of the holes, and fills them with the pack's own
 numerals; a number the language does not declare is never said.
 
-MASS FROM THE RULE (М-148): nineteen chains per language per pass — six of
+MASS FROM THE RULE (М-148): twenty-three chains per language per pass (four of them searches) — six of
 (+, −), three of (×, +), six of three steps and four of four steps — on numbers that walk with
 strides coprime with the pack's table, so a language shows other numbers
 every pass.
@@ -97,6 +97,18 @@ def язык_группа(шаг, язык):
         цепочка = _вглубь(язык, шаг, i + 9, шагов=4)
         if цепочка:
             вон.append(F.цепь(язык, цепочка))
+    # THE SEARCH AS A CHAIN WITHOUT A SEAM (the collegium's task 2, way «б»
+    # chosen by holon 03.09): the walk to the next prime, every candidate
+    # rejected by its own witness, the last standing beside one — the predicate
+    # said without a word for it, so a pack that never declared «prime» still
+    # shows the search
+    for i in range(4):
+        n = 2 + (шаг * 7 + i * 5) % 60
+        for сдвиг in range(60):
+            ш = F.перебор(язык, n + сдвиг)
+            if ш and 2 <= len(ш) <= 6:
+                вон.append(F.цепь(язык, ш))
+                break
     return вон
 
 

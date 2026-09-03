@@ -388,6 +388,15 @@ def зачин_объявлен(вопрос):
     # любом месте, а не первым.
     if слова_вопроса & КОНЦЕВЫЕ:
         return True
+    # WRITING WITHOUT WORD SPACES CARRIES ITS QUESTION WORD INSIDE THE STRING
+    # (03.09: «大于90的最小质数是多少？» — Chinese declares «多少» at position
+    # «any», and splitting by spaces never finds it): a declared opener of two
+    # signs or more, non-ascii, is looked for as a SUBSTRING
+    внутри = set()
+    for л, (слова, _) in ЗАЧИНЫ_ПО_ЯЗЫКУ.items():
+        внутри |= {w for w in слова if len(w) >= 2 and not w.isascii()}
+    if any(w in вопрос for w in внутри):
+        return True
     # …and with its suffix («kaçtır», «nedir» — the Turkish question word
     # takes the copula suffix; 03.09: «ilk on tek sayının toplamı kaçtır?» was
     # refused when «on» read as an English sign and the Turkish block never ran)

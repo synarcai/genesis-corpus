@@ -45,6 +45,12 @@ import phrases  # noqa: E402
     "nl": ("de helft", "een derde", "een kwart", "een vijfde", "een zesde", "een zevende", "een achtste", "een negende", "een tiende"),
     "pl": ("połowa", "jedna trzecia", "jedna czwarta", "jedna piąta", "jedna szósta", "jedna siódma", "jedna ósma", "jedna dziewiąta", "jedna dziesiąta"),
     "tr": ("yarısı", "üçte biri", "dörtte biri", "beşte biri", "altıda biri", "yedide biri", "sekizde biri", "dokuzda biri", "onda biri"),
+    "uk": ("половина", "третина", "чверть", "п'ята частина", "шоста частина", "сьома частина", "восьма частина", "дев'ята частина", "десята частина"),
+    "sv": ("hälften", "en tredjedel", "en fjärdedel", "en femtedel", "en sjättedel", "en sjundedel", "en åttondel", "en niondel", "en tiondel"),
+    "id": ("setengah", "sepertiga", "seperempat", "seperlima", "seperenam", "sepertujuh", "seperdelapan", "sepersembilan", "sepersepuluh"),
+    "vi": ("một nửa", "một phần ba", "một phần tư", "một phần năm", "một phần sáu", "một phần bảy", "một phần tám", "một phần chín", "một phần mười"),
+    "zh": ("二分之一", "三分之一", "四分之一", "五分之一", "六分之一", "七分之一", "八分之一", "九分之一", "十分之一"),
+    "ja": ("半分", "三分の一", "四分の一", "五分の一", "六分の一", "七分の一", "八分の一", "九分の一", "十分の一"),
 }
 
 # прост — the law the found prime names; the rest are the four surfaces
@@ -100,6 +106,40 @@ import phrases  # noqa: E402
                прост2_утв="{n} sayısından sonraki asal sayı {p}: {л}.", прост2_воп="{n} sayısından sonraki asal sayı kaçtır?",
                множ_утв="n × {a} > {b} olan en küçük tam sayı {k}: {л}.", множ_воп="n × {a} > {b} olan en küçük tam sayı kaçtır?",
                часть_утв="bir sayının {ч} {v} ise sayı {x} olur: {v} × {k} = {x}.", часть_воп="{ч} {v} olan sayı kaçtır?"),
+    # SIX MORE LANGUAGES SAY THE SEARCH IN WORDS (the collegium's task 2, way
+    # «а»: the predicate is named only where the language declares it; the
+    # remaining ten carry the SEARCH WITHOUT A PREDICATE — the walk of
+    # rejections in the world of chains — and their words stand as a named debt)
+    "uk": dict(прост="{p} просте",
+               прост1_утв="найменше просте число, більше за {n}, — це {p}: {л}.", прост1_воп="яке найменше просте число, більше за {n}?",
+               прост2_утв="наступне просте число після {n} — це {p}: {л}.", прост2_воп="яке наступне просте число після {n}?",
+               множ_утв="найменше ціле n, при якому n × {a} > {b}, — це {k}: {л}.", множ_воп="яке найменше ціле n, при якому n × {a} > {b}?",
+               часть_утв="{ч} числа дорівнює {v}; число — {x}: {v} × {k} = {x}.", часть_воп="яке це число, якщо його {ч} дорівнює {v}?"),
+    "sv": dict(прост="{p} är ett primtal",
+               прост1_утв="det minsta primtalet större än {n} är {p}: {л}.", прост1_воп="vilket är det minsta primtalet större än {n}?",
+               прост2_утв="nästa primtal efter {n} är {p}: {л}.", прост2_воп="vilket är nästa primtal efter {n}?",
+               множ_утв="det minsta heltalet n med n × {a} > {b} är {k}: {л}.", множ_воп="vilket är det minsta heltalet n med n × {a} > {b}?",
+               часть_утв="{ч} av ett tal är {v}; talet är {x}: {v} × {k} = {x}.", часть_воп="vilket är talet om {ч} av det är {v}?"),
+    "id": dict(прост="{p} adalah bilangan prima",
+               прост1_утв="bilangan prima terkecil yang lebih besar dari {n} adalah {p}: {л}.", прост1_воп="berapa bilangan prima terkecil yang lebih besar dari {n}?",
+               прост2_утв="bilangan prima berikutnya setelah {n} adalah {p}: {л}.", прост2_воп="berapa bilangan prima berikutnya setelah {n}?",
+               множ_утв="bilangan bulat terkecil n dengan n × {a} > {b} adalah {k}: {л}.", множ_воп="berapa bilangan bulat terkecil n dengan n × {a} > {b}?",
+               часть_утв="{ч} dari suatu bilangan adalah {v}; bilangan itu {x}: {v} × {k} = {x}.", часть_воп="berapa bilangan itu jika {ч} darinya adalah {v}?"),
+    "vi": dict(прост="{p} là số nguyên tố",
+               прост1_утв="số nguyên tố nhỏ nhất lớn hơn {n} là {p}: {л}.", прост1_воп="số nguyên tố nhỏ nhất lớn hơn {n} là bao nhiêu?",
+               прост2_утв="số nguyên tố tiếp theo sau {n} là {p}: {л}.", прост2_воп="số nguyên tố tiếp theo sau {n} là bao nhiêu?",
+               множ_утв="số nguyên nhỏ nhất n với n × {a} > {b} là {k}: {л}.", множ_воп="số nguyên nhỏ nhất n với n × {a} > {b} là bao nhiêu?",
+               часть_утв="{ч} của một số là {v}; số đó là {x}: {v} × {k} = {x}.", часть_воп="số đó là bao nhiêu nếu {ч} của nó là {v}?"),
+    "zh": dict(прост="{p}是质数",
+               прост1_утв="大于{n}的最小质数是{p}：{л}。", прост1_воп="大于{n}的最小质数是多少？",
+               прост2_утв="{n}之后的下一个质数是{p}：{л}。", прост2_воп="{n}之后的下一个质数是多少？",
+               множ_утв="使 n × {a} > {b} 成立的最小整数是{k}：{л}。", множ_воп="使 n × {a} > {b} 成立的最小整数是多少？",
+               часть_утв="一个数的{ч}是{v}，这个数是{x}：{v} × {k} = {x}。", часть_воп="如果一个数的{ч}是{v}，这个数是多少？"),
+    "ja": dict(прост="{p} は素数です",
+               прост1_утв="{n} より大きい最小の素数は {p} です: {л}.", прост1_воп="{n} より大きい最小の素数は何ですか?",
+               прост2_утв="{n} の次の素数は {p} です: {л}.", прост2_воп="{n} の次の素数は何ですか?",
+               множ_утв="n × {a} > {b} となる最小の整数は {k} です: {л}.", множ_воп="n × {a} > {b} となる最小の整数は何ですか?",
+               часть_утв="ある数の{ч}は {v} です。その数は {x} です: {v} × {k} = {x}.", часть_воп="ある数の{ч}が {v} のとき、その数は何ですか?"),
 }
 РОДЫ = ("прост1", "прост2", "множ", "часть")
 

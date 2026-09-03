@@ -353,7 +353,7 @@
     {
       "name": "chains_langs",
       "file": "datasets/genesis_chains_langs.txt",
-      "genre": "A CHAIN OF TWO AND THREE STEPS IN TWENTY-NINE LANGUAGES (the owner's word: every language in surplus): nineteen declared languages (am, ar, el, fa, fi, he, hi, hu, id, ja, ka, ko, sv, sw, ta, th, uk, vi, zh) carried lexicon and single equalities only and NOT ONE CHAIN — the form the market of reasoning buys (holon, ONE-CARRIER: the ledger is the program is the proof). «九加四等于十三。 十三减九等于四。», «六 足す 十二 は 十八. 十八 引く 一 は 十七.», «шість плюс дванадцять дорівнює вісімнадцять. вісімнадцять мінус один дорівнює сімнадцять.», «tisa jumlisha nne ni sawa na kumi na tatu. kumi na tatu toa tisa ni sawa na nne.», «bốn mươi cộng hai mươi bằng sáu mươi. sáu mươi trừ mười bằng năm mươi. năm mươi nhân hai bằng một trăm.» — two steps of (+, −) and (×, +), and chains of THREE steps; NOT ONE NEW WORD is invented: the house of chains (tools/chainforms.py) reads the TEMPLATES each pack declares in show_kinds.arithmetic, tells the operation by the PLACE of the holes, and fills them with the pack's own numerals — a number the language does not declare is never said; the court reads the same templates back, recounts every step and checks the SEAM (the number leaving a step is an operand of the next)",
+      "genre": "A CHAIN OF TWO AND THREE STEPS IN TWENTY-NINE LANGUAGES (the owner's word: every language in surplus): nineteen declared languages (am, ar, el, fa, fi, he, hi, hu, id, ja, ka, ko, sv, sw, ta, th, uk, vi, zh) carried lexicon and single equalities only and NOT ONE CHAIN — the form the market of reasoning buys (holon, ONE-CARRIER: the ledger is the program is the proof). «九加四等于十三。 十三减九等于四。», «六 足す 十二 は 十八. 十八 引く 一 は 十七.», «шість плюс дванадцять дорівнює вісімнадцять. вісімнадцять мінус один дорівнює сімнадцять.», «tisa jumlisha nne ni sawa na kumi na tatu. kumi na tatu toa tisa ni sawa na nne.», «bốn mươi cộng hai mươi bằng sáu mươi. sáu mươi trừ mười bằng năm mươi. năm mươi nhân hai bằng một trăm.» — two steps of (+, −) and (×, +), and chains of THREE steps; NOT ONE NEW WORD is invented: the house of chains (tools/chainforms.py) reads the TEMPLATES each pack declares in show_kinds.arithmetic, tells the operation by the PLACE of the holes, and fills them with the pack's own numerals — a number the language does not declare is never said; the court reads the same templates back, recounts every step and checks the SEAM (the number leaving a step is an operand of the next) — and the SEARCH WITHOUT A PREDICATE (the collegium's task 2, way «б» chosen by holon 03.09): a walk over consecutive candidates, each rejected by its own witness and the last standing beside one («3 × 3 = 9. 2 × 5 = 10. 1 × 11 = 11.»), so that a pack that never declared the word «prime» still shows the search; the court knows both kinds of chain — the ledger, whose seam holds, and the search, whose results run consecutively",
       "act": [
         "recount",
         "translate"
@@ -517,7 +517,7 @@
     {
       "name": "search_langs",
       "file": "datasets/genesis_search_langs.txt",
-      "genre": "SEARCH WITH ITS LEDGER IN TEN LANGUAGES (holon's order for the market of reasoning, 03.09 — ONE-CARRIER: the ledger is the program is the proof): an answer that is FOUND by a bounded walk shows the walk step by primitive step — «the smallest prime greater than 90 is 97: 91 = 7 × 13, 92 = 2 × 46, 93 = 3 × 31, 94 = 2 × 47, 95 = 5 × 19, 96 = 2 × 48, 97 is prime.», the same walk asked as «what is the next prime after 90?» (one operation, two question surfaces — Д-1), «the smallest whole number n with n × 7 > 30 is 5: 1 × 7 = 7 ≤ 30, 2 × 7 = 14 ≤ 30, 3 × 7 = 21 ≤ 30, 4 × 7 = 28 ≤ 30, 5 × 7 = 35 > 30.», «какое число, если его пятая часть равна 6? пятая часть числа равна 6; число — 30: 6 × 5 = 30.» — in en/ru/de/fr/es/it/pt/nl/pl/tr, statement and question answered by the statement (М-153), ten shows per template on ten different numbers; the house of search phrases (tools/searchforms.py) reads its templates through tools/phrases.py, the court walks the same walk and compares the ledger step by step",
+      "genre": "SEARCH WITH ITS LEDGER IN TEN LANGUAGES (holon's order for the market of reasoning, 03.09 — ONE-CARRIER: the ledger is the program is the proof): an answer that is FOUND by a bounded walk shows the walk step by primitive step — «the smallest prime greater than 90 is 97: 91 = 7 × 13, 92 = 2 × 46, 93 = 3 × 31, 94 = 2 × 47, 95 = 5 × 19, 96 = 2 × 48, 97 is prime.», the same walk asked as «what is the next prime after 90?» (one operation, two question surfaces — Д-1), «the smallest whole number n with n × 7 > 30 is 5: 1 × 7 = 7 ≤ 30, 2 × 7 = 14 ≤ 30, 3 × 7 = 21 ≤ 30, 4 × 7 = 28 ≤ 30, 5 × 7 = 35 > 30.», «какое число, если его пятая часть равна 6? пятая часть числа равна 6; число — 30: 6 × 5 = 30.» — in en/ru/de/fr/es/it/pt/nl/pl/tr, statement and question answered by the statement (М-153), ten shows per template on ten different numbers; the house of search phrases (tools/searchforms.py) reads its templates through tools/phrases.py, the court walks the same walk and compares the ledger step by step — 03.09 the house grew to SIXTEEN languages (en, ru, de, fr, es, it, pt, nl, pl, tr, uk, sv, id, vi, zh, ja): the predicate «prime» is named only where the language declares it; the DEBT of the remaining ten (am, ar, el, fa, fi, he, hi, ka, ko, sw, ta, th) is named here as a debt and not hidden — they carry the SEARCH WITHOUT A PREDICATE instead (the walk of rejections in the world of chains, «3 × 3 = 9. 2 × 5 = 10. 1 × 11 = 11.»), which needs no word at all",
       "act": [
         "recount",
         "decide",
@@ -3674,10 +3674,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 14675602,
+      "size": 14764362,
       "tiers": [],
       "text": "mix",
-      "lines": 206136
+      "lines": 206819
     },
     {
       "name": "full",
@@ -3692,10 +3692,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 19158671,
+      "size": 19247431,
       "tiers": [],
       "text": "mix",
-      "lines": 279473
+      "lines": 280156
     },
     {
       "name": "minimal",
