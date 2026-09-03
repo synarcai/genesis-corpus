@@ -30,7 +30,54 @@ def _слова():
     return вон
 
 
+def _заполнители():
+    """The declared fillers of the houses of phrases — unit names, things,
+    days, share names — are signs of their language too (04.09: «2 kilometer
+    is 2000 meter» carries one function word, «is», which English shares;
+    the units say Dutch). English signs are the BRITISH unit spellings of the
+    house of units (metre, kilometre) and the pack's nouns; the American
+    «meter/kilometer» would tie with Dutch."""
+    вон = {}
+    def _в(язык, x):
+        if isinstance(x, str):
+            if x and x not in ("m", "f", "n"):
+                вон.setdefault(язык, set()).add(x.lower())
+        elif isinstance(x, (list, tuple)):
+            for y in x:
+                _в(язык, y)
+        elif isinstance(x, dict):
+            for y in x.values():
+                _в(язык, y)
+    try:
+        import holes, calforms, cmpforms, unitforms, physforms, shareforms, moneyforms, units, rugram
+    except Exception:
+        return вон
+    for язык, дни in holes.ДНИ.items():
+        _в(язык, дни)
+    for язык, рамки in holes.РАМКИ.items():
+        for р in рамки:
+            _в(язык, р.get("места")); _в(язык, р.get("вещи"))
+    for язык, я in calforms.ЯЗЫКИ.items():
+        _в(язык, я.get("дни")); _в(язык, я.get("косв"))
+    for дом in (cmpforms.ВЕЩИ, unitforms.ЕДИНИЦЫ, physforms.ЕДИНИЦЫ, shareforms.ИМЕНА):
+        for язык, x in дом.items():
+            _в(язык, x)
+    for язык, я in moneyforms.ЯЗЫКИ.items():
+        _в(язык, я.get("б")); _в(язык, я.get("м"))
+    for имя in units.ФОРМЫ_ВСЕХ:
+        for много in (False, True):
+            try:
+                _в("en", units.англ(имя, много, письмо="brit"))
+            except Exception:
+                pass
+    for ключ, формы in rugram.СЧЁТНЫЕ.items():
+        _в("ru", ключ); _в("ru", формы)
+    return вон
+
+
 СЛОВА = _слова()
+for _язык, _набор in _заполнители().items():
+    СЛОВА[_язык] = frozenset(СЛОВА.get(_язык, frozenset()) | _набор)
 
 
 def счёт(строка):
@@ -48,3 +95,11 @@ def язык(строка):
     if лучшие[0][1] == 0 or (len(лучшие) > 1 and лучшие[1][1] == лучшие[0][1]):
         return None
     return лучшие[0][0]
+
+
+def чужой(строка, свой="en"):
+    """True when some other language's sign is at least as strong as the
+    given language's and not zero — a court of that language must not judge."""
+    с = счёт(строка)
+    мой = с.get(свой, 0)
+    return any(v > 0 and v >= мой for язык, v in с.items() if язык != свой)
