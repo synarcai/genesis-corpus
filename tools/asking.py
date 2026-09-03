@@ -194,6 +194,25 @@ def _зачины_пакетов():
 ЗАЧИНЫ = frozenset(_ЗАЧИНЫ_ДОМА | _зачины_пакетов())
 
 
+def _зачины_по_языку():
+    """{язык: (frozenset(words), position)} — the packs' own openers, so that
+    a question of a declared language is judged by ITS words, not silenced
+    for its diacritics («¿cuánt es 12 − 5?», «quant è …» — mutation 04.09)."""
+    вон = {}
+    for путь in sorted(ПАКЕТЫ.glob("*.json")):
+        try:
+            пакет = json.loads(путь.read_text(encoding="utf-8"))
+        except ValueError:
+            continue
+        слова = пакет.get("ask_words") or {}
+        if isinstance(слова, dict) and слова.get("words"):
+            вон[путь.stem] = (frozenset(w.lower() for w in слова["words"] if w != "¬"), слова.get("position", "front"))
+    return вон
+
+
+ЗАЧИНЫ_ПО_ЯЗЫКУ = _зачины_по_языку()
+
+
 def _концевые_пакетов():
     """The question words of the packs that put them AT THE END (Turkish
     «kaç fincan koydu?», «kim koydu?»): such a question is recognised by the
@@ -250,8 +269,53 @@ def зачин_объявлен(вопрос):
     """
     if not ПИСЬМО_С_ПРОБЕЛАМИ.search(вопрос):
         return None
+    # A QUESTION OF A DECLARED LANGUAGE IS JUDGED BY THAT LANGUAGE'S OPENERS:
+    # the language is read by the sign of its function words and fillers
+    # (tools/langsign.py); front-position packs want the first word (with or
+    # without «¿»), end-position packs a word anywhere.
+    try:
+        import langsign
+        счёт = langsign.счёт(вопрос)
+    except Exception:
+        счёт = {}
+    верх = max(счёт.values(), default=0)
+    кандидаты = [л for л, v in счёт.items() if v == верх and верх > 0]
+    # THE LANGUAGES TIED AT THE TOP OF THE SIGN ARE ALL CANDIDATES: the
+    # question is judged by the union of their openers — a Portuguese
+    # question that ties with Spanish is not judged by Spanish alone.
+    if кандидаты and any(л not in ("en", "ru") for л in кандидаты) and any(л in ЗАЧИНЫ_ПО_ЯЗЫКУ for л in кандидаты):
+        слова_я = set()
+        конец = False
+        for л in кандидаты:
+            if л in ЗАЧИНЫ_ПО_ЯЗЫКУ:
+                слова_я |= ЗАЧИНЫ_ПО_ЯЗЫКУ[л][0]
+                конец = конец or ЗАЧИНЫ_ПО_ЯЗЫКУ[л][1] == "end"
+            elif л in ("en", "ru"):
+                слова_я |= _ЗАЧИНЫ_ДОМА
+        # the question is the LAST clause before the mark — a fact may stand before it
+        # …and a clause ends at a sentence mark, not at a comma («jaka jest
+        # prędkość ciała, które przebywa …» is one question)
+        клаузы = [к.strip() for к in re.split(r"(?<=[.!?…])\s+", вопрос) if к.strip()]
+        if not клаузы:
+            return None
+        клауза = клаузы[-1]
+        слова = [w.strip(_КРАЙ).lower() for w in клауза.split() if w.strip(_КРАЙ)]
+        if not слова:
+            return None
+        if not СЛОВО_ЗАЧИНА.fullmatch(слова[0]):
+            return None                      # a question opened by a number or a formula
+        первое = клауза.split()[0].lower()
+        if первое in слова_я or первое.lstrip("¿").strip(_КРАЙ) in слова_я or слова[0] in слова_я:
+            return True
+        # a preposition may open the question («o ile książek …», «на сколько …»)
+        if len(слова) > 1 and (слова[0] in ПРЕДЛОГИ or len(слова[0]) <= 2) and слова[1] in слова_я:
+            return True
+        if конец:
+            # a suffix may follow the opener («kaçtır», «mudur»)
+            return any(w in слова_я or any(w.startswith(з) for з in слова_я if len(з) >= 2) for w in слова)
+        return False
     if not КИРИЛЛИЦА.search(вопрос) and ДИАКРИТИКА.search(вопрос):
-        return None  # язык с диакритикой: зачины не объявлены — молчим
+        return None  # язык с диакритикой без объявленных зачинов — молчим
     if ВЫБОР.search(" " + вопрос + " "):
         return None
     начала = []

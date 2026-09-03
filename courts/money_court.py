@@ -124,7 +124,9 @@ def _открыть(о):
 
 
 ОТКРЫТЫЕ = tuple(_открыть(о) for о, _ in ОБРАЗЦЫ)
-ВЕЩИ_RU = frozenset({в[2] for в in _дом.ВЕЩИ} | {ф for в in _дом.ВЕЩИ for n in (1, 2, 5) for ф in (rugram.форма(в[2], n),)})
+# the Russian thing of this world stands as the SUBJECT («книга стоит») — the
+# lemma, not any count form («книг стоит» — mutation 04.09)
+ВЕЩИ_RU = frozenset(в[2] for в in _дом.ВЕЩИ)
 
 
 def судить(строка):
