@@ -391,6 +391,39 @@
       "actors": []
     },
     {
+      "name": "compare_langs",
+      "file": "datasets/genesis_compare_langs.txt",
+      "genre": "«MORE THAN» AND «TIMES AS MANY» IN EIGHT LANGUAGES (the owner's word: every language in surplus; the comparison worlds say them in en/ru): two holdings, then the difference or the ratio with its ledger, as statement and as question answered by the statement (М-153) — «Lena hat 11 Bücher und Paul hat 5 Bücher; Lena hat 6 Bücher mehr als Paul: 11 − 5 = 6.», «wievielmal so viele Äpfel wie Jonas hat Anna? … Anna hat zweimal so viele Äpfel wie Jonas: 4 ÷ 2 = 2.», «combien de livres Marie a-t-elle de plus que Paul ? …», «combien de fois Anne a-t-elle plus de pommes que Louis ? …», «¿cuántos libros más que Pablo tiene Marta? …», «quante volte più mele di Marco ha Anna? …», «quantos livros a mais do que Pedro tem Maria? …», «hoeveel keer zoveel appels als Daan heeft Anna? …», «o ile książek więcej niż Piotr ma Maria? …» (o 1 jabłko / o 6 książek — count forms by the pack), «Gül'de Mehmet'ten kaç kitap fazla var? Gül'de 11 kitap var ve Mehmet'te 5 kitap var; …», «Ayşe'de Ömer'in kaç katı kadar elma var? …» (Turkish names in the locative, ablative and genitive by vowel harmony and devoicing); actors from the packs, the multiplier by the language's own word (dreimal, trois fois, tres veces, tre volte, três vezes, drie keer, trzy razy, üç katı); the house of comparison phrases (tools/cmpforms.py) holds the phrases through tools/phrases.py, the court recomputes the difference and the ratio and requires a hole named twice to be filled twice the same",
+      "act": [
+        "recount",
+        "name",
+        "translate"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unsigned_only"
+      ],
+      "size": 58347,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": [
+        "person_names:de",
+        "person_names:fr",
+        "person_names:es",
+        "person_names:it",
+        "person_names:pt",
+        "person_names:nl",
+        "person_names:pl",
+        "person_names:tr"
+      ]
+    },
+    {
       "name": "holes",
       "file": "datasets/genesis_holes.txt",
       "genre": "the HOLE MARKET — one fact frame and every role of it asked in turn (holon's Д-1, REVISION 02.09: a question in the organism is a per-genus surface, not an operation over a bought fact frame; the census of the svod: the number hole carries ~20 000 questions, who/where/when a few dozen): «on monday ann put 5 cups on the shelf.» stands beside «… who put 5 cups on the shelf on monday? ann.», «… how many cups did ann put on the shelf on monday? 5.», «… what did ann put on the shelf on monday? 5 cups.», «… where did ann put 5 cups on monday? on the shelf.», «… when did ann put 5 cups on the shelf? on monday.» and the same frame in ru (кто/сколько/что/куда-где/когда), de (wer/wie viele/was/wohin-wo/wann — verb-second fact «am Montag legte Anna 5 Tassen auf das Regal»), es (¿quién/cuántos-cuántas/qué/dónde/cuándo — the question word agrees with the thing's gender), it (chi/quanti-quante/che cosa/dove/quando) fr (qui/combien de … a-t-elle mises/qu'est-ce que/où/quand — the participle agrees with the fronted object, the pronoun with the actor's gender from the pack), pt (quem/quantos-quantas/o que/onde/quando), nl (wie/hoeveel/wat/waar/wanneer — verb-second like German, nouns lowercase), pl (kto/ile/co/gdzie/kiedy — the past by the actor's gender, the count form few/many by the pack's count_agreement: «5 filiżanek», «3 gruszki») and tr (kim/kaç/ne/nereye-nerede/ne zaman — SOV fact «Ayşe pazartesi rafa 5 fincan koydu.», no plural after a numeral, the definite object of a question in the accusative «5 fincanı kim koydu?», places in the dative or locative) («в понедельник Анна положила 5 чашек на полку. куда положила Анна 5 чашек в понедельник? на полку.»); the question word names the hole's type, the question keeps every other role, the answer is exactly the filler the question removed; five verb frames (put, bought, found, ate, read) with their own places and things; the court parses the fact by the house of holes, recomputes every lawful question with its answer and accepts the line only as one of them; RU count and gender forms by the house of forms; THE ORGANISM ASKS (Д-1, second half — «lets the organism ask about its own open holes»): a fact with one role unfilled, its placeholder in place, and the question of that role after it, produced rather than answered — «on tuesday someone bought 3 apples in the shop. who bought 3 apples in the shop on tuesday?», «… carla bought some apples … how many apples did carla buy …?», «… bought something … what did carla buy …?», «… bought 3 apples somewhere. where …?», «at some time carla bought 3 apples in the shop. when …?» — in all ten languages (кто-то/несколько/что-то/куда-то-где-то/когда-то, jemand/einige/etwas/irgendwohin-irgendwo/irgendwann, alguien/algunos-algunas/algo/en algún lugar/en algún momento, qualcuno/alcuni-alcune/qualcosa/da qualche parte/a un certo punto, quelqu'un/quelques/quelque chose/quelque part/un jour, alguém/alguns-algumas/algo/em algum lugar/em algum momento, iemand/enkele/iets/ergens/ooit, ktoś/kilka/coś/gdzieś/kiedyś, biri/birkaç/bir şey/bir yere-bir yerde/bir gün); the court reads the open role off the placeholder and recomputes the question from the known roles; names are the packs' and agree in gender with the verb",
