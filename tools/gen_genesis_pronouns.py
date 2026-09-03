@@ -152,8 +152,66 @@ def страница(шаг, i):
     return f"{первое} {n} {ру(вещь_ru, n)}. {нареч_ru}{мест_ru} {втор[род]} {m}{хвост_ru}. сколько {ру(вещь_ru, 5)} {осталось}у {кого}? {n} {зн} {m} = {k}."
 
 
+# THE TAILS OF HOLDING AND THE HOLDINGS THEMSELVES (e9 04.09, the market of
+# story skeletons — a tail of the question is part of the form, only the
+# shown one is read): SVAMP asks «still have left», «have left with him»,
+# «at first / initially / at the beginning» (the state before the acts: the
+# first number), «altogether / in total»; and a pair of signs (ate → has) is
+# bought only from ≥ 2 holdings — «has» beside «holds» and «keeps». Each tail
+# and each holding gets its pages with different numbers and verbs; a page
+# with two acts of one bearer asks «how many more did X make than sell».
+ХВОСТЫ_УБЫЛИ = ("still have left", "have left with {мест_к}", "have now", "have")
+ХВОСТЫ_ПРИБЫЛИ = ("have altogether", "have in total", "have now", "have")
+ДО_АКТОВ = ("at first", "initially", "at the beginning")
+ДЕРЖАНИЯ = (("has", "have"), ("holds", "hold"), ("keeps", "keep"))
+# (act 1 past, act 2 past, base 1, base 2, things both acts take)
+СРАВНЕНИЯ_EN = (("made", "sold", "make", "sell", ("cakes", "pies", "cookies")),
+                ("bought", "sold", "buy", "sell", ("books", "pens", "cards")),
+                ("baked", "ate", "bake", "eat", ("cookies", "cakes", "pies")))
+ОСНОВА_V1 = {"had": "have", "picked": "pick", "found": "find", "bought": "buy", "received": "receive"}
+
+
+def страница_хвостов(шаг, i):
+    """The second block: tails, holdings, the state before the acts, the
+    comparison of two acts of one bearer."""
+    п = п_страница(шаг, i)
+    кто, n, m, k = п["кто"], п["n"], п["m"], п["ответ"]
+    en, _ = п["вещь"]
+    v1, v2, v3, v3мн, v3q, знак, хвост = ТРОЙКИ_EN[п["т"]]
+    имена = " and ".join(п["en"])
+    мест = ("he", "she", "they")[кто]
+    мест_к = ("him", "her", "them")[кто]
+    делает = "do" if кто == 2 else "does"
+    нареч = НАРЕЧИЯ_EN[п["нареч"]]
+    факты = f"{имена} {v1} {n} {by_count(n, en)}. {нареч}{мест} {v2} {m} {хвост}."
+    ф = (шаг * 3 + i) % 7
+    if ф == 0:                                   # the state before the acts
+        до = ДО_АКТОВ[(шаг + i) % 3]
+        return f"{факты} how many {en} did {имена} {ОСНОВА_V1[v1]} {до}? {имена} {v1} {n} {by_count(n, en)}."
+    if ф in (1, 2):                              # a tail of the question
+        хв = (ХВОСТЫ_УБЫЛИ if знак < 0 else ХВОСТЫ_ПРИБЫЛИ)[(шаг + i) % 4].format(мест_к=мест_к)
+        return f"{факты} how many {en} {делает} {имена} {хв}? {n} {'+' if знак > 0 else '−'} {m} = {k}."
+    if ф in (3, 4):                              # another holding for the same pair
+        д = ДЕРЖАНИЯ[1 + (шаг + i) % 2]
+        держит = д[1] if кто == 2 else д[0]
+        if ф == 3:
+            return f"{факты} {имена} {держит} {k} {by_count(k, en)}."
+        return f"{факты} how many {en} {делает} {имена} {д[1]}? {n} {'+' if знак > 0 else '−'} {m} = {k}."
+    # two acts of one bearer, compared
+    сд, пр, сдq, прq, вещи = СРАВНЕНИЯ_EN[(шаг + i) % 3]
+    вещь = вещи[((шаг + i) // 3 + шаг) % len(вещи)]
+    a = 8 + (шаг * 5 + i * 3) % 40
+    b = 2 + (шаг + i * 7) % (a - 3)
+    имя = п["en"][0]
+    он = "she" if имя in ЖЕН_EN else "he"
+    if ф == 5:
+        return f"{имя} {сд} {a} {by_count(a, вещь)}. {имя} {пр} {b} {by_count(b, вещь)}. {имя} {сд} {a - b} more {by_count(a - b, вещь)} than {он} {пр}: {a} − {b} = {a - b}."
+    # the question names the bearer by the pronoun — the world's own market
+    return f"{имя} {сд} {a} {by_count(a, вещь)}. {имя} {пр} {b} {by_count(b, вещь)}. how many more {вещь} did {он} {сдq} than {прq}? {a} − {b} = {a - b}."
+
+
 def pass_groups(шаг):
-    return [[страница(шаг, i) for i in range(48)]]
+    return [[страница(шаг, i) for i in range(48)], [страница_хвостов(шаг, i) for i in range(48)]]
 
 
 def main():

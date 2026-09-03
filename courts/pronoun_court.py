@@ -42,7 +42,15 @@ _RU = json.loads((КОРЕНЬ / "tools" / "langpacks" / "ru.json").read_text(en
             ("found", "lost"): (("has", "have"), -1)}
 V1 = r"(had|picked|found|bought|received)"
 V2 = r"(ate|lost|found|bought|used|sold|spent)"
-V3 = r"(has|have|keeps|keep)"
+V3 = r"(has|have|keeps|keep|holds|hold)"
+# THE TAILS OF THE QUESTION (e9 04.09): «still have left» / «have left with
+# him» — a decrease; «have altogether» / «have in total» — a gain; «have now»
+# / «have» — either. The state before the acts and the two-act comparison
+# are their own frames below.
+ХВОСТ_ВОПРОСА = r"(has|have|keeps|keep|holds|hold|still have left|have left with (?:him|her|them)|have now|have altogether|have in total)"
+V1Q = r"(have|pick|find|buy|receive)"
+ОСНОВЫ_V1 = {"had": "have", "picked": "pick", "found": "find", "bought": "buy", "received": "receive"}
+СРАВНЕНИЯ = {("made", "sold"): ("make", "sell"), ("bought", "sold"): ("buy", "sell"), ("baked", "ate"): ("bake", "eat")}
 МЕСТ = r"(he|she|they)"
 ХВОСТ = r"(of them|more)"
 
@@ -56,20 +64,73 @@ def _лица_en(a, b, мест):
     return len(лица) == 1 and РОД_EN[a] == ("m" if мест == "he" else "f")
 
 
+ДЕРЖАНИЯ_ВСЕ = ("has", "have", "keeps", "keep", "holds", "hold")
+
+
 def _рамка_en(v1, v2, v3, хвост, left):
-    """(знак) рамки или None: v3 из рамки; «of them» — убыль, «more» — прибыль;
-    «left»/«remained» — только у убыли с has/have."""
+    """(знак) рамки или None: «of them» — убыль, «more» — прибыль; держание —
+    любое из has/keeps/holds (e9 04.09: пара знаков покупается из ≥ 2 разных
+    держаний); «left»/«remained» — только у убыли с has/have."""
     рамка = РАМКИ_EN.get((v1, v2))
     if рамка is None:
         return None
     v3ы, знак = рамка
-    if v3 is not None and v3 not in v3ы:
+    if v3 is not None and v3 not in ДЕРЖАНИЯ_ВСЕ:
         return None
     if хвост != ("more" if знак > 0 else "of them"):
         return None
-    if left and not (знак < 0 and v3ы == ("has", "have")):
+    if left and not (знак < 0 and (v3 in (None, "has", "have"))):
         return None
     return знак
+
+
+def _en_хвост(м):
+    """A question with a tail: the tail's sign agrees with the frame's."""
+    a, b, v1, n, вещь1, мест, v2, m, хвост, вещь2, a2, b2, хв, on, зн, om, k = м.groups()
+    n, m, k, on, om = int(n), int(m), int(k), int(on), int(om)
+    if (a, b) != (a2, b2) or вещь1 != вещь2 or not _лица_en(a, b, мест):
+        return False
+    знак = _рамка_en(v1, v2, None, хвост, False)
+    if знак is None:
+        return False
+    if хв.startswith("still") or хв.startswith("have left with"):
+        if знак > 0:
+            return False
+        if not хв.endswith(("him", "her", "them")) or хв.endswith({"he": "him", "she": "her", "they": "them"}[мест]) is False:
+            pass
+        if хв.startswith("have left with") and not хв.endswith({"he": "him", "she": "her", "they": "them"}[мест]):
+            return False
+    if хв in ("have altogether", "have in total") and знак < 0:
+        return False
+    return (on, om) == (n, m) and зн == ("+" if знак > 0 else "−") and k == n + знак * m >= 0
+
+
+def _en_до(м):
+    """The state before the acts: the answer repeats the first sentence."""
+    a, b, v1, n, вещь1, мест, v2, m, хвост, вещь2, a2, b2, v1q, _до, a3, b3, v1b, n2, вещь3 = м.groups()
+    if (a, b) != (a2, b2) != (a3, b3) and (a, b) != (a3, b3):
+        return False
+    if (a, b) != (a2, b2) or (a, b) != (a3, b3) or len({вещь1, вещь2, вещь3}) != 1 or not _лица_en(a, b, мест):
+        return False
+    return (_рамка_en(v1, v2, None, хвост, False) is not None and ОСНОВЫ_V1.get(v1) == v1q
+            and v1b == v1 and int(n2) == int(n))
+
+
+def _en_два_акта(м):
+    """Two acts of one bearer compared: the difference is recomputed."""
+    a, сд, x, вещь1, a2, пр, y, вещь2, a3, сд2, d, вещь3, он, пр2, ox, oy, od = м.groups()
+    x, y, d, ox, oy, od = int(x), int(y), int(d), int(ox), int(oy), int(od)
+    return (a == a2 == a3 and вещь1 == вещь2 == вещь3 and (сд, пр) in СРАВНЕНИЯ and сд2 == сд and пр2 == пр
+            and a in РОД_EN and он == ("she" if РОД_EN[a] == "f" else "he")
+            and d == x - y > 0 and (ox, oy, od) == (x, y, d))
+
+
+def _en_два_акта_вопрос(м):
+    a, сд, x, вещь1, a2, пр, y, вещь2, вещь3, он, сдq, прq, ox, oy, od = м.groups()
+    x, y, ox, oy, od = int(x), int(y), int(ox), int(oy), int(od)
+    return (a == a2 and вещь1 == вещь2 == вещь3 and СРАВНЕНИЯ.get((сд, пр)) == (сдq, прq)
+            and a in РОД_EN and он == ("she" if РОД_EN[a] == "f" else "he")
+            and (ox, oy, od) == (x, y, x - y) and x > y)
 
 
 def _en(м):
@@ -188,6 +249,10 @@ def _ru_вопрос(м):
     (rf"^{С}(?: and {С})? {V1} {Ч} {С}\. (?:then |later )?{МЕСТ}(?: also)? {V2} {Ч} {ХВОСТ}\. {С}(?: and {С})? {V3} {Ч} {С}( left)?\.$", _en),
     (rf"^{С}(?: and {С})? {V1} {Ч} {С}\. (?:then |later )?{МЕСТ}(?: also)? {V2} {Ч} {ХВОСТ}\. how many {С} (?:does|do) {С}(?: and {С})? {V3}( left)?\? {Ч} ([+−]) {Ч} = {Ч}\.$", _en_вопрос),
     (rf"^{С}(?: and {С})? {V1} {Ч} {С}\. (?:then |later )?{МЕСТ}(?: also)? {V2} {Ч} {ХВОСТ}\. how many {С} remained\? {Ч} ([+−]) {Ч} = {Ч}\.$", _en_остаток),
+    (rf"^{С}(?: and {С})? {V1} {Ч} {С}\. (?:then |later )?{МЕСТ}(?: also)? {V2} {Ч} {ХВОСТ}\. how many {С} (?:does|do) {С}(?: and {С})? {ХВОСТ_ВОПРОСА}\? {Ч} ([+−]) {Ч} = {Ч}\.$", _en_хвост),
+    (rf"^{С}(?: and {С})? {V1} {Ч} {С}\. (?:then |later )?{МЕСТ}(?: also)? {V2} {Ч} {ХВОСТ}\. how many {С} did {С}(?: and {С})? {V1Q} (at first|initially|at the beginning)\? {С}(?: and {С})? {V1} {Ч} {С}\.$", _en_до),
+    (rf"^{С} (made|bought|baked) {Ч} {С}\. {С} (sold|ate) {Ч} {С}\. {С} (made|bought|baked) {Ч} more {С} than (he|she) (sold|ate): {Ч} − {Ч} = {Ч}\.$", _en_два_акта),
+    (rf"^{С} (made|bought|baked) {Ч} {С}\. {С} (sold|ate) {Ч} {С}\. how many more {С} did (he|she) (make|buy|bake) than (sell|eat)\? {Ч} − {Ч} = {Ч}\.$", _en_два_акта_вопрос),
     (rf"^{ПЕРВОЕ} {Ч} {СЛ}\. {ВТОРОЕ}\. у {ИМЯ}(?: и {ИМЯ})? (осталось|стало) {Ч} {СЛ}\.$", _ru),
     (rf"^{ПЕРВОЕ} {Ч} {СЛ}\. {ВТОРОЕ}\. сколько {СЛ} (осталось )?у {ИМЯ}(?: и {ИМЯ})?\? {Ч} ([+−]) {Ч} = {Ч}\.$", _ru_вопрос),
 )

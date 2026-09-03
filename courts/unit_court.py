@@ -34,6 +34,7 @@ from genesis import Unreadable, worlds  # noqa: E402
 from gsm_items import ITEMS  # noqa: E402
 from plural import singular  # noqa: E402
 from units import единица, отношение  # noqa: E402
+import units  # noqa: E402
 import arith_court  # noqa: E402
 
 # РУБЕЖ-ДОЛГА: ЛОЖНЫХ_РУБЕЖ = 0
@@ -91,6 +92,22 @@ def величина(слово):
     return Fraction(в) if в is not None else None
 
 
+def _форма_единицы(слово, имя, n):
+    """Is `слово` the form the house of units writes beside n for `имя`?"""
+    if re.search(r"[а-яё]", слово):
+        try:
+            return слово == units.рус(имя, n)
+        except (KeyError, IndexError):
+            return True
+    формы = set()
+    for письмо in ("brit", "amer"):
+        try:
+            формы.add(units.англ(имя, n != 1, письмо=письмо))
+        except (KeyError, IndexError):
+            pass
+    return not формы or слово in формы
+
+
 def судить(строка):
     """(судимо, истинно) для одной строки."""
     # ВОПРОС СУДИТСЯ СВОИМ ОТВЕТОМ, А РОД ОПРЕДЕЛЯЕТСЯ ОТВЕТОМ.
@@ -144,6 +161,12 @@ def судить(строка):
     ставка = отношение(если_слева, если_справа)
     if ставка is None:
         return False, True
+    # THE COUNT FORM OF THE UNIT IS PART OF THE CLAIM (mutation 04.09: «12
+    # kilogram equal 12000 grams» passed — the unit was resolved by any of
+    # its forms): beside n the English unit stands in its plural unless n = 1,
+    # in either spelling; the Russian one in the form of the house of units.
+    if not (_форма_единицы(чо, если_слева, сколько_слева) and _форма_единицы(чч, если_справа, сколько_справа)):
+        return True, False
     верно = сколько_слева * ставка == сколько_справа
     if з1 is not None:
         # ЗВЕНО «k × f = k·f» сверяется: множители — величина и отношение единиц.

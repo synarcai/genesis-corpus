@@ -766,6 +766,7 @@ _ПАКЕТ_RU = json.loads((pathlib.Path(__file__).resolve().parents[1] / "tool
                       "положил", "положила", "прочитал", "прочитала", "собрал", "собрала", "принёс", "принесла")
 _ЗАЧИН_RU = re.compile(r"(?:^|(?<=[.?!] ))([а-яё]+) (?:" + "|".join(ГЛАГОЛЫ_ИСТОРИИ_RU) + r")\b")
 _ПОСЛЕ = re.compile(r"\b(?:does|than)\s+([a-z]+)")
+ГЛАГОЛЫ_СРАВНЕНИЯ_EN = frozenset({"make", "sell", "buy", "eat", "bake"})
 
 
 from actors import Слой  # noqa: E402 — деятели мира из манифеста
@@ -785,7 +786,8 @@ def имена_на_месте(строка, слой=None):
     низ = строка.strip().lower()
     if re.search(r"[а-яё]", низ):
         if слой.лица("ru") and ИМЕНА_RU:
-            return all(м.group(1) in ИМЕНА_RU for м in _ЗАЧИН_RU.finditer(низ))
+            # a pronoun before the verb («он съел») names the actor of the sentence before
+            return all(м.group(1) in ИМЕНА_RU or м.group(1) in ("он", "она", "они") for м in _ЗАЧИН_RU.finditer(низ))
         return True
     for м in _ЗАЧИН.finditer(низ):
         w = м.group(1)
@@ -793,7 +795,10 @@ def имена_на_месте(строка, слой=None):
             return False
     for м in _ПОСЛЕ.finditer(низ):
         w = м.group(1)
-        if w not in ИМЕНА_EN and w not in КРАТНОСТИ_EN and w not in ЧИСЛИТЕЛЬНЫЕ_EN:
+        # a pronoun after «did»/«than» («did he make», «than she sold») names the bearer
+        # …and after «than» may stand the second act itself («make than sell»)
+        if (w not in ИМЕНА_EN and w not in КРАТНОСТИ_EN and w not in ЧИСЛИТЕЛЬНЫЕ_EN
+                and w not in ("he", "she", "they") and w not in ГЛАГОЛЫ_СРАВНЕНИЯ_EN):
             return False
     return True
 
