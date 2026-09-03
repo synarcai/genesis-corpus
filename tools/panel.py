@@ -98,6 +98,10 @@ for _где in (КОРЕНЬ / "courts", КОРЕНЬ / "tools", КОРЕНЬ / 
            "search_langs_court", "remainders_langs_court", "primes_langs_court",
            "money_story_court", "relations_story_court", "shares_percent_court",
            "chains_langs_court", "action_pages_court", "langmath_court",
+           # …и ПОРОЖДЕНИЕ ПЛАСТА С ЧИСЛОМ: строка судима тем, порождается ли
+           # она из объявленного шаблона пакета (счёт с классификатором,
+           # счётные цепи — остаток долга словаря, 03.09)
+           "langgen_court", "two_kinds_court",
            "metalang_court")
 
 
