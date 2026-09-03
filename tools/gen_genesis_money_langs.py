@@ -24,7 +24,7 @@ from layer import emit_grouped  # noqa: E402
 
 
 def язык_группа(шаг, язык):
-    вон = []
+    вон = [M.КУРС[язык], M.КУРС[язык]]     # the rate as a sentence, ten times over the passes
     for i in range(ШИРИНА):
         d = 3 + (шаг * 7 + i * 5) % 40
         c = 5 * ((шаг * 3 + i * 7) % 18 + 2)          # 10..95, as the money world

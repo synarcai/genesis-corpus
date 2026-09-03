@@ -33,6 +33,14 @@ import rugram  # noqa: E402
 }
 
 
+# THE RATE AS A SENTENCE (holon 04.09: the market of unit conversions buys the
+# multiplier from «1 dollar = 100 cents.», and the svod had no such line for
+# any other currency): the big unit in its one-form as the language names
+# it whole («1 рубль», not the genitive of the decimal writing).
+КУРС = {"de": "1 Euro = 100 Cent.", "fr": "1 euro = 100 centimes.", "es": "1 euro = 100 céntimos.", "it": "1 euro = 100 centesimi.",
+        "pt": "1 euro = 100 cêntimos.", "nl": "1 euro = 100 cent.", "pl": "1 zł = 100 groszy.", "tr": "1 lira = 100 kuruş.", "ru": "1 рубль = 100 копеек."}
+
+
 def запись(d, c):
     """«16,50» — the decimal comma, two digits of cents."""
     return f"{d},{c:02d}"
