@@ -211,8 +211,15 @@ def за_штуку(шаг):
         вон.append(f"each {вещь_en} costs {цена} dollars.")
         вон.append(f"each {вещь_en} costs {цена} dollars; {сколько} "
                    f"{вещь_en}s cost {итог} dollars.")
-        вон.append(f"how much do {сколько} {вещь_en}s cost? {сколько} "
-                   f"{вещь_en}s cost {итог} dollars.")
+        # THE QUESTION LINE IS WHOLE: the price per piece stands in it, the
+        # answer carries the product as a link (М-147; tellings-differ 04.09).
+        вон.append(f"each {вещь_en} costs {цена} dollars. how much do {сколько} "
+                   f"{вещь_en}s cost? {сколько} {вещь_en}s cost {итог} dollars: "
+                   f"{цена} × {сколько} = {итог}.")
+        вон.append(f"одна {вещь_ru} стоит {цена} {units.рус('rouble', цена)}. "
+                   f"сколько стоят {сколько} {_ру_счёт(вещь_ru, сколько)}? "
+                   f"{сколько} {_ру_счёт(вещь_ru, сколько)} стоят {итог} "
+                   f"{units.рус('rouble', итог)}: {цена} × {сколько} = {итог}.")
         вон.append(f"одна {вещь_ru} стоит {цена} "
                    f"{units.рус('rouble', цена)}; {сколько} "
                    f"{_ру_счёт(вещь_ru, сколько)} стоят {итог} "

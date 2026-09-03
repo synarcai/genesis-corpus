@@ -133,8 +133,11 @@ def _ру_верна(n, слово, имя):
     r"^each (\w+) costs (\d+) dollars; (\d+) (\w+)s cost (\d+) "
     r"dollars\.$")
 ЗА_ШТУКУ_ВОПРОС = re.compile(
-    r"^how much do (\d+) (\w+)s cost\? (\d+) (\w+)s cost (\d+) "
-    r"dollars\.$")
+    r"^(each (\w+) costs (\d+) dollars\.) how much do (\d+) (\w+)s cost\? (\d+) (\w+)s cost (\d+) "
+    r"dollars: (\d+) × (\d+) = (\d+)\.$")
+ЗА_ШТУКУ_ВОПРОС_RU = re.compile(
+    r"^одна (\S+) стоит (\d+) (\S+)\. сколько стоят (\d+) (\S+)\? (\d+) (\S+) стоят (\d+) "
+    r"(\S+): (\d+) × (\d+) = (\d+)\.$")
 ЗА_ШТУКУ_RU = re.compile(
     r"^одна (\S+) стоит (\d+) (\S+); (\d+) (\S+) стоят (\d+) "
     r"(\S+)\.$")
@@ -297,11 +300,22 @@ def судить(строка):
         return True, вещь == вещь2 and цена * n == итог
     m = ЗА_ШТУКУ_ВОПРОС.match(с)
     if m:
-        n, вещь, n2, вещь2, итог = (int(m.group(1)), m.group(2),
-                                    int(m.group(3)), m.group(4),
-                                    int(m.group(5)))
-        return True, (вещь == вещь2 and n == n2 and n > 0
-                      and итог % n == 0)
+        (факт, вещь0, цена, n, вещь, n2, вещь2, итог, л1, л2, л3) = m.groups()
+        цена, n, n2, итог, л1, л2, л3 = (int(x) for x in (цена, n, n2, итог, л1, л2, л3))
+        судимо, верно = судить(факт)          # the price per piece by its own rule
+        if not судимо:
+            return False, False
+        return True, (верно and вещь0 == вещь == вещь2 and n == n2 and n > 0
+                      and итог == цена * n and (л1, л2, л3) == (цена, n, итог))
+    m = ЗА_ШТУКУ_ВОПРОС_RU.match(с)
+    if m:
+        (вещь, цена, ф_ц, n, ф_в, n2, ф_в2, итог, ф_и, л1, л2, л3) = m.groups()
+        цена, n, n2, итог, л1, л2, л3 = (int(x) for x in (цена, n, n2, итог, л1, л2, л3))
+        if rugram.ПО_ФОРМЕ.get(вещь) != вещь:
+            return False, False                # the thing is not a lemma of the house of forms
+        return True, (n == n2 and n > 0 and ф_в == ф_в2 == rugram.форма(вещь, n)
+                      and _ру_верна(цена, ф_ц, "rouble") and _ру_верна(итог, ф_и, "rouble")
+                      and итог == цена * n and (л1, л2, л3) == (цена, n, итог))
     m = ЗА_ШТУКУ_RU.match(с)
     if m:
         вещь, цена, ф1, n, вещь_n, итог, ф2 = m.groups()
