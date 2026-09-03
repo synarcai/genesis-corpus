@@ -609,18 +609,20 @@ def вопросы(шаг):
                    f"отношении «{ру_имя}», но стоит в его транзитивном "
                    f"замыкании: цепь {звенья}.")
         break
-    модуль = сдвиг(о.МОДУЛИ, шаг)[0]
     # THE NUMBER IS NOT BELOW THE MODULUS (holon 04.09: «число 1 по модулю 3»
     # answered its own number — an echo, refused by the market's law of echo):
-    # the number stands at least two moduli up, distinct on every pass.
-    н = о.ЧИСЛА[шаг % len(о.ЧИСЛА)] + модуль * (2 + шаг)
-    о_ст = о.остаток(н, модуль)
-    вон.append(f"in what class modulo {модуль} does the number {н} "
-               f"stand? the number {н} stands in the class of remainder "
-               f"{о_ст} modulo {модуль}.")
-    вон.append(f"в каком классе по модулю {модуль} стоит число {н}? "
-               f"число {н} стоит в классе остатка {о_ст} по модулю "
-               f"{модуль}.")
+    # the number stands at least two moduli up, distinct on every pass; two
+    # shows a pass make ten a frame (holon: five stood at the edge of LAW).
+    for j in range(2):
+        модуль = сдвиг(о.МОДУЛИ, шаг + j)[0]
+        н = о.ЧИСЛА[(шаг + 2 * j) % len(о.ЧИСЛА)] + модуль * (2 + шаг + j)
+        о_ст = о.остаток(н, модуль)
+        вон.append(f"in what class modulo {модуль} does the number {н} "
+                   f"stand? the number {н} stands in the class of remainder "
+                   f"{о_ст} modulo {модуль}.")
+        вон.append(f"в каком классе по модулю {модуль} стоит число {н}? "
+                   f"число {н} стоит в классе остатка {о_ст} по модулю "
+                   f"{модуль}.")
     for имя, ру_имя, ан_обл, ру_обл, _п in сдвиг(о.СООТВЕТСТВИЯ, шаг)[:2]:
         n = len(о.отображение(имя))
         if о.однозначно(имя):

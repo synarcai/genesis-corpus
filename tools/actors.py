@@ -26,7 +26,13 @@ class Слой:
             м = json.loads(МАНИФЕСТ.read_text(encoding="utf-8"))
         except (OSError, ValueError):
             return
+        # THE GATE JUDGES A TEMPORARY «<world>.ворота» — the world's name is
+        # the part before that suffix (04.09: the actor law never fired at
+        # the gate, «маш купила» passed there and was caught only by the
+        # instruments).
         имя = pathlib.Path(путь).name
+        if имя.endswith(".ворота"):
+            имя = имя[:-len(".ворота")]
         for мир in м.get("worlds", ()):
             if pathlib.Path(мир.get("file", "")).name == имя:
                 а = мир.get("actors") or ()

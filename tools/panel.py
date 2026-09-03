@@ -347,7 +347,12 @@ class Палата:
         два списка судов.
         """
         LL = self.служебные.get("langlayer")
-        основа = pathlib.Path(путь).stem
+        # the gate judges «<world>.txt.ворота»: the layer's name is the part
+        # before both suffixes (04.09: «uk.txt» was asked as a language)
+        основа = pathlib.Path(путь).name
+        for суффикс in (".ворота", ".txt"):
+            if основа.endswith(суффикс):
+                основа = основа[:-len(суффикс)]
         if LL is None or "_lang_" not in основа:
             return None
         слова, без = LL.словарь_пакета(основа.rsplit("_", 1)[-1])

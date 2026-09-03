@@ -142,7 +142,11 @@ _ДНИ_ПО_RU = {ru: en for en, ru in дом.ДНИ_RU.items()}
 # ─── РОЛИ: ОБЪЯВЛЕННАЯ ТРОЙКА ──────────────────────────────────────
 _РОЛИ_EN = {(ч1, ч2): целое for ч1, ч2, целое, _r1, _r2, _rц in дом.РОЛИ}
 _РОЛИ_RU = {(ру1, ру2): ру_целое
-            for _ч1, _ч2, _ц, ру1, ру2, ру_целое in дом.РОЛИ}
+            for _ч1, _ч2, _ц, ру1, ру2, ру_целое in list(дом.РОЛИ) + list(дом.КЛАССЫ)}
+# EN pairs of the class question: (member, member) → class in the plural
+# (_РОЛИ_EN below maps the same pairs to the singular for the counting frame)
+_ПАРЫ_EN = {(ч1, ч2): дом.множественное(ц) for ч1, ч2, ц, *_ in дом.РОЛИ}
+_ПАРЫ_EN.update({(ч1, ч2): ц for ч1, ч2, ц, *_ in дом.КЛАССЫ})
 
 # ─── ЛЮДИ: ИМЯ, РОДИТЕЛЬНЫЙ И РОД ПРОШЕДШЕГО ───────────────────────
 _ИМЕНА_RU = {ru: (род, суф) for _en, ru, род, ж in дом.ЛЮДИ
@@ -442,6 +446,8 @@ def _суффикс_верен(имя_ru, суф):
     r"^(\S+) и (\S+) вместе зовутся (\S+)\.$")
 РОЛИ_RU_ВОПРОС = re.compile(
     r"^кто такие (\S+)\? (\S+) и (\S+) вместе зовутся \1\.$")
+РОЛИ_EN_ОБРАЗЕЦ = re.compile(r"^a ([a-z]+) and a ([a-z]+) together are called ([a-z]+)\.$")
+РОЛИ_EN_ВОПРОС = re.compile(r"^what are ([a-z]+)\? a ([a-z]+) and a ([a-z]+) together are called \1\.$")
 # КЛАСС СПИСКОМ: «люди: мужчина, женщина, …» / «people: man, woman, …» —
 # перечень обязан совпасть с объявленными членами класса (дом.РОЛИ) как
 # множество, без повторов.
@@ -450,6 +456,9 @@ _КЛАСС_EN = {}
 _КЛАСС_RU = {}
 for _ч1, _ч2, _ц, _р1, _р2, _рц in дом.РОЛИ:
     _КЛАСС_EN.setdefault(дом.множественное(_ц), set()).update((_ч1, _ч2))
+    _КЛАСС_RU.setdefault(_рц, set()).update((_р1, _р2))
+for _ч1, _ч2, _ц, _р1, _р2, _рц in дом.КЛАССЫ:
+    _КЛАСС_EN.setdefault(_ц, set()).update((_ч1, _ч2))
     _КЛАСС_RU.setdefault(_рц, set()).update((_р1, _р2))
 СЕМЬЯ = re.compile(
     r"^the family has a ([a-z]+), a ([a-z]+) and a ([a-z]+); the "
@@ -1361,6 +1370,18 @@ def судить(строка):
         if (ру1, ру2) not in _РОЛИ_RU:
             return False, False
         return True, _РОЛИ_RU[(ру1, ру2)] == целое
+    m = РОЛИ_EN_ВОПРОС.match(с)
+    if m:
+        целое, ч1, ч2 = m.groups()
+        if (ч1, ч2) not in _ПАРЫ_EN:
+            return False, False
+        return True, _ПАРЫ_EN[(ч1, ч2)] == целое
+    m = РОЛИ_EN_ОБРАЗЕЦ.match(с)
+    if m:
+        ч1, ч2, целое = m.groups()
+        if (ч1, ч2) not in _ПАРЫ_EN:
+            return False, False
+        return True, _ПАРЫ_EN[(ч1, ч2)] == целое
     m = КЛАСС_СПИСКОМ.match(с)
     if m:
         имя, члены = m.group(1), m.group(2).split(", ")

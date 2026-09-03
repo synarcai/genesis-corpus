@@ -542,6 +542,38 @@ for _инф, _наст, _прош, _доп in ГЛАГОЛЫ_RU:
     ("friend", "neighbour", "person", "друг", "сосед", "люди"),
 )
 
+# КЛАССЫ ВЕЩЕЙ ПАРАМИ ЧЛЕНОВ (holon 04.09: вопрос без чисел «кто такие ⟦S⟧?»
+# покупается рынком «дыра — то, что меняется» при ≥ 4 различных подлежащих
+# одной формы; классов было два на язык — люди и дети). Пять пар на класс:
+# (en1, en2, класс en, ru1, ru2, класс ru); члены — не лица, потому в счёт
+# «пришли на рынок» они не идут, только в пары и в список класса.
+КЛАССЫ = (
+    ("cat", "dog", "animals", "кошка", "собака", "животные"),
+    ("cow", "horse", "animals", "корова", "лошадь", "животные"),
+    ("fox", "wolf", "animals", "лиса", "волк", "животные"),
+    ("hare", "bear", "animals", "заяц", "медведь", "животные"),
+    ("hen", "duck", "animals", "курица", "утка", "животные"),
+    ("apple", "pear", "fruits", "яблоко", "груша", "фрукты"),
+    ("plum", "cherry", "fruits", "слива", "вишня", "фрукты"),
+    ("orange", "lemon", "fruits", "апельсин", "лимон", "фрукты"),
+    ("banana", "peach", "fruits", "банан", "персик", "фрукты"),
+    ("grape", "melon", "fruits", "виноград", "дыня", "фрукты"),
+    ("hammer", "saw", "tools", "молоток", "пила", "инструменты"),
+    ("axe", "spade", "tools", "топор", "лопата", "инструменты"),
+    ("screwdriver", "pliers", "tools", "отвёртка", "клещи", "инструменты"),
+    ("knife", "scissors", "tools", "нож", "ножницы", "инструменты"),
+    ("needle", "thimble", "tools", "игла", "напёрсток", "инструменты"),
+    ("carrot", "cabbage", "vegetables", "морковь", "капуста", "овощи"),
+    ("onion", "garlic", "vegetables", "лук", "чеснок", "овощи"),
+    ("beet", "turnip", "vegetables", "свёкла", "репа", "овощи"),
+    ("cucumber", "tomato", "vegetables", "огурец", "помидор", "овощи"),
+    ("potato", "marrow", "vegetables", "картофель", "кабачок", "овощи"),
+    ("son", "daughter", "children", "сын", "дочь", "дети"),
+    ("grandson", "granddaughter", "children", "внук", "внучка", "дети"),
+    ("nephew", "niece", "children", "племянник", "племянница", "дети"),
+)
+
+
 # Состав семьи объявлен парами имён, и число семьи ВЫВОДИТСЯ из длины
 # этого объявления. Написать «3» рядом с тремя именами значило бы
 # объявить истиной совпадение: суд считает членов, а не читает цифру.
@@ -1226,13 +1258,23 @@ def люди_ролями(шаг):
         вон.append(f"{ру1} и {ру2} вместе зовутся {ру_целое}.")
         вон.append(f"кто такие {ру_целое}? {ру1} и {ру2} вместе "
                    f"зовутся {ру_целое}.")
+        # THE SAME PAIR IN ENGLISH — the question of the class in both languages
+        вон.append(f"a {ч1} and a {ч2} together are called {множественное(целое)}.")
+        вон.append(f"what are {множественное(целое)}? a {ч1} and a {ч2} together are called {множественное(целое)}.")
+    # classes of things, five pairs each, the same two forms in both languages
+    for ч1, ч2, целое, ру1, ру2, ру_целое in КЛАССЫ:
+        вон.append(f"{ру1} и {ру2} вместе зовутся {ру_целое}.")
+        вон.append(f"кто такие {ру_целое}? {ру1} и {ру2} вместе зовутся {ру_целое}.")
+        вон.append(f"a {ч1} and a {ч2} together are called {целое}.")
+        вон.append(f"what are {целое}? a {ч1} and a {ч2} together are called {целое}.")
     # THE CLASS AS A LIST, ONE LINE (holon 04.09: «кто такие люди?» answered
     # by fifty different pairs — all true, the tellings diverging by content;
     # the genus «members of a class» wants the class shown whole).
-    for целое, ру_целое in dict((ц, рц) for _1, _2, ц, _3, _4, рц in РОЛИ).items():
-        en = list(dict.fromkeys(ч for ч1, ч2, ц, *_ in РОЛИ if ц == целое for ч in (ч1, ч2)))
-        ru = list(dict.fromkeys(р for _1, _2, ц, р1, р2, _рц in РОЛИ if ц == целое for р in (р1, р2)))
-        вон.append(f"{множественное(целое)}: {', '.join(en)}.")
+    списки = [(множественное(ц), рц, ч1, ч2, р1, р2) for ч1, ч2, ц, р1, р2, рц in РОЛИ] + [(ц, рц, ч1, ч2, р1, р2) for ч1, ч2, ц, р1, р2, рц in КЛАССЫ]
+    for целое, ру_целое in dict((ц, рц) for ц, рц, *_ in списки).items():
+        en = list(dict.fromkeys(ч for ц, _рц, ч1, ч2, *_ in списки if ц == целое for ч in (ч1, ч2)))
+        ru = list(dict.fromkeys(р for ц, _рц, _1, _2, р1, р2 in списки if ц == целое for р in (р1, р2)))
+        вон.append(f"{целое}: {', '.join(en)}.")
         вон.append(f"{ру_целое}: {', '.join(ru)}.")
     члены = [en for en, _ru in СЕМЬЯ]
     члены_ru = [ru for _en, ru in СЕМЬЯ]
