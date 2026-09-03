@@ -70,6 +70,7 @@ for _где in (КОРЕНЬ / "courts", КОРЕНЬ / "tools", КОРЕНЬ / 
            "money_langs_court",
            "geometry_langs_court",
            "units_langs_court",
+           "stats_langs_court",
            "mathspaces_court", "gsmforms_court", "engram_court",
            "definitions_court", "pronoun_court",
            "rates_court", "formula_lang_court",
