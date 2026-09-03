@@ -54,9 +54,18 @@ def _мелкая_верна(язык, n, строка):
     return f"{n} " + M.мелкая(язык, n).split(" ", 1)[1] in строка
 
 
+ДЕСЯТИЧНАЯ_С_ЕДИНИЦЕЙ = re.compile(r"\d+,\d\d ([^\W\d_]+)")
+
+
 def _судья(язык, вид, м, строка):
     if вид == "курс":
         return True                     # the declared sentence, letter for letter
+    # AFTER A DECIMAL THE BIG UNIT STANDS IN ITS DECLARED FORM («20,95 euros»,
+    # «16,50 рубля»; mutation 04.09: «20,95 euro» passed — the closed pattern
+    # accepted either form regardless of the number).
+    б = M.ЯЗЫКИ[язык]["б"][1]
+    if any(ед not in (б, б + "dır") for ед in ДЕСЯТИЧНАЯ_С_ЕДИНИЦЕЙ.findall(строка)):   # tr: «3,10 liradır»
+        return False
     г = [int(x) for x in м.groups()]
     if вид == "мост":
         d, c, всего, d2, d100, d100b, c2, всего2 = г

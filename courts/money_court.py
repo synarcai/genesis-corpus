@@ -124,6 +124,7 @@ def _открыть(о):
 
 
 ОТКРЫТЫЕ = tuple(_открыть(о) for о, _ in ОБРАЗЦЫ)
+ВЕЩИ_RU = frozenset({в[2] for в in _дом.ВЕЩИ} | {ф for в in _дом.ВЕЩИ for n in (1, 2, 5) for ф in (rugram.форма(в[2], n),)})
 
 
 def судить(строка):
@@ -136,6 +137,12 @@ def судить(строка):
             пара = asking.пара(с)
             if пара and not asking.о_том_же(пара[0], пара[1]):
                 return True, False
+            # A RUSSIAN THING IS ONE OF THE WORLD'S DECLARED THINGS (mutation 04.09:
+            # «ручк стоит 190 копеек» passed — the Russian slot took any word).
+            for г in m.groups():
+                if (г and re.fullmatch(r"[а-яё]+", г) and not г.startswith(("копе", "рубл"))
+                        and г not in ВЕЩИ_RU and г not in ("заплатил", "заплатила", "получил", "получила")):
+                    return True, False
             return True, bool(судья(m))
     if any(о.match(с) for о in ОТКРЫТЫЕ):
         return True, False

@@ -271,6 +271,7 @@ class Слой:
             self.объявленные_значения.add((n, k))
 
 
+ИМЯ_СПИСКА = re.compile(r"^([^\W\d_]+(?: [^\W\d_]+)?) (?:of|из) \S+ (?:items|пунктов): ")
 ВОПРОС_СПИСКА = re.compile(r"^(.+?) — (?:which items|какие это пункты)\? (?:numbered list of (\S+) items|список из (\S+) пунктов): ")
 
 
@@ -283,6 +284,12 @@ def судить(строка, слой):
     # THE QUESTION OF A LIST NAMES THE LIST AS THE ANSWER DOES (mutation 04.09:
     # «a numbere list of 2 items — which items?» passed — only the answer was
     # read): the head before the dash is the list's own name with its count.
+    # THE LIST'S OWN NAME IS A WORD OF THE FRAME («numbered list of N items:»,
+    # «список из N пунктов:»; mutation 04.09: «numbere list of 2 items: …»
+    # fell to the count court and passed).
+    м0 = ИМЯ_СПИСКА.match(строка.strip())
+    if м0 and м0.group(1) not in ("numbered list", "список"):
+        return True, False
     м = ВОПРОС_СПИСКА.match(строка.strip())
     if м:
         голова, n_en, n_ru = м.group(1), м.group(2), м.group(3)
