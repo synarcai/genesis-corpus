@@ -73,6 +73,25 @@ def _судья(язык, вид, м, строка):
     return (A, B) == (a * 100 + ac, b * 100 + bc) and S == A + B and (s, sc) == divmod(S, 100) and _мелкая_верна(язык, S, строка)
 
 
+def _открытые():
+    """The same shapes with any word where a unit or a copula stands: a line of
+    such a shape that no closed rule takes names a unit form the house does
+    not declare — a lie, not silence («1 рубл = 100 копеек», «5,15 рубл + …»)."""
+    вон = []
+    for язык, правила in ПРАВИЛА.items():
+        я = M.ЯЗЫКИ[язык]
+        слова = sorted({ф for ф in я["б"] + (я["м"] if язык != "ru" else ("копейка", "копейки", "копеек", "рубля", "рубль")) if ф}, key=len, reverse=True)
+        for образец, _ in правила:
+            о = образец.pattern
+            for сл in слова:
+                о = о.replace(re.escape(сл), r"[^\W\d_]+")
+            вон.append(re.compile(о))
+    return tuple(вон)
+
+
+ОТКРЫТЫЕ = _открытые()
+
+
 def судить(строка):
     с = строка.strip()
     for язык, правила in ПРАВИЛА.items():
@@ -80,6 +99,8 @@ def судить(строка):
             м = образец.match(с)
             if м:
                 return True, bool(_судья(язык, вид, м, с))
+    if any(о.match(с) for о in ОТКРЫТЫЕ):
+        return True, False
     return False, False
 
 

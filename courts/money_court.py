@@ -116,7 +116,14 @@ _Ф = [(о, _судья(п)) for о, п in ОБРАЗЦЫ]
 # that the closed rules do not take names a thing or a person the world did
 # not declare — a lie, not silence (mutation 04.09: «a penci costs 295
 # cents» fell to the count court and passed).
-ОТКРЫТЫЕ = tuple(re.compile(о.replace(С, r"(?:[a-zа-яё]+(?: [a-zа-яё]+)?)")) for о, _ in ОБРАЗЦЫ)
+def _открыть(о):
+    """The pattern with any word where a thing, a name or a unit form stands."""
+    о = о.replace(С, r"(?:[a-zа-яё]+(?: [a-zа-яё]+)?)")
+    о = о.replace("dollars", "dollars?").replace("cents", "cents?")
+    return re.compile(о)
+
+
+ОТКРЫТЫЕ = tuple(_открыть(о) for о, _ in ОБРАЗЦЫ)
 
 
 def судить(строка):
