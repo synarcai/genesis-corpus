@@ -177,7 +177,7 @@ import rugram  # noqa: E402
 }
 
 
-def _форма_счёта(язык, n):
+def форма_счёта(язык, n):
     """one / few / many by the pack's count_agreement — the first rule that
     fits; the declared law of the language, not a guess of this house."""
     правила = json.loads((КОРЕНЬ / "tools" / "langpacks" / f"{язык}.json").read_text(encoding="utf-8"))["count_agreement"]
@@ -301,7 +301,7 @@ def _вещь(язык, вещь, n):
     if язык in ("de", "nl"):
         return вещь
     if язык == "pl":
-        return вещь[0] if _форма_счёта("pl", n) == "few" else вещь[1]
+        return вещь[0] if форма_счёта("pl", n) == "few" else вещь[1]
     return вещь[0]
 
 
