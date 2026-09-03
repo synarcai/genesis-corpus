@@ -1,599 +1,599 @@
-welcher Tag kommt 2 Tage nach Samstag? 2 Tage nach Samstag kommt Montag.
-1 Tag nach Montag kommt Dienstag.
-welcher Tag kommt 4 Tage nach Montag? 4 Tage nach Montag kommt Freitag.
-5 Tage nach Mittwoch kommt Montag.
-welcher Tag kommt 2 Tage nach Mittwoch? 2 Tage nach Mittwoch kommt Freitag.
-3 Tage nach Freitag kommt Montag.
-welcher Tag kommt 6 Tage nach Freitag? 6 Tage nach Freitag kommt Donnerstag.
-1 Tag nach Sonntag kommt Montag.
-welcher Tag kommt 4 Tage nach Sonntag? 4 Tage nach Sonntag kommt Donnerstag.
-3 Tage nach Dienstag kommt Freitag.
-welcher Tag kommt 6 Tage nach Dienstag? 6 Tage nach Dienstag kommt Montag.
-1 Tag nach Donnerstag kommt Freitag.
-welcher Tag kommt 4 Tage nach Donnerstag? 4 Tage nach Donnerstag kommt Montag.
-5 Tage nach Samstag kommt Donnerstag.
+welcher Tag kommt 2 Tage nach Samstag? 2 Tage nach Samstag kommt Montag: 6 + 2 = 8, 8 − 7 = 1, Tag 1 ist Montag.
+1 Tag nach Montag kommt Dienstag: 1 + 1 = 2, Tag 2 ist Dienstag.
+welcher Tag kommt 4 Tage nach Montag? 4 Tage nach Montag kommt Freitag: 1 + 4 = 5, Tag 5 ist Freitag.
+5 Tage nach Mittwoch kommt Montag: 3 + 5 = 8, 8 − 7 = 1, Tag 1 ist Montag.
+welcher Tag kommt 2 Tage nach Mittwoch? 2 Tage nach Mittwoch kommt Freitag: 3 + 2 = 5, Tag 5 ist Freitag.
+3 Tage nach Freitag kommt Montag: 5 + 3 = 8, 8 − 7 = 1, Tag 1 ist Montag.
+welcher Tag kommt 6 Tage nach Freitag? 6 Tage nach Freitag kommt Donnerstag: 5 + 6 = 11, 11 − 7 = 4, Tag 4 ist Donnerstag.
+1 Tag nach Sonntag kommt Montag: 7 + 1 = 8, 8 − 7 = 1, Tag 1 ist Montag.
+welcher Tag kommt 4 Tage nach Sonntag? 4 Tage nach Sonntag kommt Donnerstag: 7 + 4 = 11, 11 − 7 = 4, Tag 4 ist Donnerstag.
+3 Tage nach Dienstag kommt Freitag: 2 + 3 = 5, Tag 5 ist Freitag.
+welcher Tag kommt 6 Tage nach Dienstag? 6 Tage nach Dienstag kommt Montag: 2 + 6 = 8, 8 − 7 = 1, Tag 1 ist Montag.
+1 Tag nach Donnerstag kommt Freitag: 4 + 1 = 5, Tag 5 ist Freitag.
+welcher Tag kommt 4 Tage nach Donnerstag? 4 Tage nach Donnerstag kommt Montag: 4 + 4 = 8, 8 − 7 = 1, Tag 1 ist Montag.
+5 Tage nach Samstag kommt Donnerstag: 6 + 5 = 11, 11 − 7 = 4, Tag 4 ist Donnerstag.
 
-quel jour vient 2 jours après samedi ? 2 jours après samedi vient lundi.
-1 jour après lundi vient mardi.
-quel jour vient 4 jours après lundi ? 4 jours après lundi vient vendredi.
-5 jours après mercredi vient lundi.
-quel jour vient 2 jours après mercredi ? 2 jours après mercredi vient vendredi.
-3 jours après vendredi vient lundi.
-quel jour vient 6 jours après vendredi ? 6 jours après vendredi vient jeudi.
-1 jour après dimanche vient lundi.
-quel jour vient 4 jours après dimanche ? 4 jours après dimanche vient jeudi.
-3 jours après mardi vient vendredi.
-quel jour vient 6 jours après mardi ? 6 jours après mardi vient lundi.
-1 jour après jeudi vient vendredi.
-quel jour vient 4 jours après jeudi ? 4 jours après jeudi vient lundi.
-5 jours après samedi vient jeudi.
+quel jour vient 2 jours après samedi ? 2 jours après samedi vient lundi: 6 + 2 = 8, 8 − 7 = 1, le jour 1 est lundi.
+1 jour après lundi vient mardi: 1 + 1 = 2, le jour 2 est mardi.
+quel jour vient 4 jours après lundi ? 4 jours après lundi vient vendredi: 1 + 4 = 5, le jour 5 est vendredi.
+5 jours après mercredi vient lundi: 3 + 5 = 8, 8 − 7 = 1, le jour 1 est lundi.
+quel jour vient 2 jours après mercredi ? 2 jours après mercredi vient vendredi: 3 + 2 = 5, le jour 5 est vendredi.
+3 jours après vendredi vient lundi: 5 + 3 = 8, 8 − 7 = 1, le jour 1 est lundi.
+quel jour vient 6 jours après vendredi ? 6 jours après vendredi vient jeudi: 5 + 6 = 11, 11 − 7 = 4, le jour 4 est jeudi.
+1 jour après dimanche vient lundi: 7 + 1 = 8, 8 − 7 = 1, le jour 1 est lundi.
+quel jour vient 4 jours après dimanche ? 4 jours après dimanche vient jeudi: 7 + 4 = 11, 11 − 7 = 4, le jour 4 est jeudi.
+3 jours après mardi vient vendredi: 2 + 3 = 5, le jour 5 est vendredi.
+quel jour vient 6 jours après mardi ? 6 jours après mardi vient lundi: 2 + 6 = 8, 8 − 7 = 1, le jour 1 est lundi.
+1 jour après jeudi vient vendredi: 4 + 1 = 5, le jour 5 est vendredi.
+quel jour vient 4 jours après jeudi ? 4 jours après jeudi vient lundi: 4 + 4 = 8, 8 − 7 = 1, le jour 1 est lundi.
+5 jours après samedi vient jeudi: 6 + 5 = 11, 11 − 7 = 4, le jour 4 est jeudi.
 
-¿qué día viene 2 días después del sábado? 2 días después del sábado viene el lunes.
-1 día después del lunes viene el martes.
-¿qué día viene 4 días después del lunes? 4 días después del lunes viene el viernes.
-5 días después del miércoles viene el lunes.
-¿qué día viene 2 días después del miércoles? 2 días después del miércoles viene el viernes.
-3 días después del viernes viene el lunes.
-¿qué día viene 6 días después del viernes? 6 días después del viernes viene el jueves.
-1 día después del domingo viene el lunes.
-¿qué día viene 4 días después del domingo? 4 días después del domingo viene el jueves.
-3 días después del martes viene el viernes.
-¿qué día viene 6 días después del martes? 6 días después del martes viene el lunes.
-1 día después del jueves viene el viernes.
-¿qué día viene 4 días después del jueves? 4 días después del jueves viene el lunes.
-5 días después del sábado viene el jueves.
+¿qué día viene 2 días después del sábado? 2 días después del sábado viene el lunes: 6 + 2 = 8, 8 − 7 = 1, el día 1 es lunes.
+1 día después del lunes viene el martes: 1 + 1 = 2, el día 2 es martes.
+¿qué día viene 4 días después del lunes? 4 días después del lunes viene el viernes: 1 + 4 = 5, el día 5 es viernes.
+5 días después del miércoles viene el lunes: 3 + 5 = 8, 8 − 7 = 1, el día 1 es lunes.
+¿qué día viene 2 días después del miércoles? 2 días después del miércoles viene el viernes: 3 + 2 = 5, el día 5 es viernes.
+3 días después del viernes viene el lunes: 5 + 3 = 8, 8 − 7 = 1, el día 1 es lunes.
+¿qué día viene 6 días después del viernes? 6 días después del viernes viene el jueves: 5 + 6 = 11, 11 − 7 = 4, el día 4 es jueves.
+1 día después del domingo viene el lunes: 7 + 1 = 8, 8 − 7 = 1, el día 1 es lunes.
+¿qué día viene 4 días después del domingo? 4 días después del domingo viene el jueves: 7 + 4 = 11, 11 − 7 = 4, el día 4 es jueves.
+3 días después del martes viene el viernes: 2 + 3 = 5, el día 5 es viernes.
+¿qué día viene 6 días después del martes? 6 días después del martes viene el lunes: 2 + 6 = 8, 8 − 7 = 1, el día 1 es lunes.
+1 día después del jueves viene el viernes: 4 + 1 = 5, el día 5 es viernes.
+¿qué día viene 4 días después del jueves? 4 días después del jueves viene el lunes: 4 + 4 = 8, 8 − 7 = 1, el día 1 es lunes.
+5 días después del sábado viene el jueves: 6 + 5 = 11, 11 − 7 = 4, el día 4 es jueves.
 
-che giorno viene 2 giorni dopo sabato? 2 giorni dopo sabato viene lunedì.
-1 giorno dopo lunedì viene martedì.
-che giorno viene 4 giorni dopo lunedì? 4 giorni dopo lunedì viene venerdì.
-5 giorni dopo mercoledì viene lunedì.
-che giorno viene 2 giorni dopo mercoledì? 2 giorni dopo mercoledì viene venerdì.
-3 giorni dopo venerdì viene lunedì.
-che giorno viene 6 giorni dopo venerdì? 6 giorni dopo venerdì viene giovedì.
-1 giorno dopo domenica viene lunedì.
-che giorno viene 4 giorni dopo domenica? 4 giorni dopo domenica viene giovedì.
-3 giorni dopo martedì viene venerdì.
-che giorno viene 6 giorni dopo martedì? 6 giorni dopo martedì viene lunedì.
-1 giorno dopo giovedì viene venerdì.
-che giorno viene 4 giorni dopo giovedì? 4 giorni dopo giovedì viene lunedì.
-5 giorni dopo sabato viene giovedì.
+che giorno viene 2 giorni dopo sabato? 2 giorni dopo sabato viene lunedì: 6 + 2 = 8, 8 − 7 = 1, il giorno 1 è lunedì.
+1 giorno dopo lunedì viene martedì: 1 + 1 = 2, il giorno 2 è martedì.
+che giorno viene 4 giorni dopo lunedì? 4 giorni dopo lunedì viene venerdì: 1 + 4 = 5, il giorno 5 è venerdì.
+5 giorni dopo mercoledì viene lunedì: 3 + 5 = 8, 8 − 7 = 1, il giorno 1 è lunedì.
+che giorno viene 2 giorni dopo mercoledì? 2 giorni dopo mercoledì viene venerdì: 3 + 2 = 5, il giorno 5 è venerdì.
+3 giorni dopo venerdì viene lunedì: 5 + 3 = 8, 8 − 7 = 1, il giorno 1 è lunedì.
+che giorno viene 6 giorni dopo venerdì? 6 giorni dopo venerdì viene giovedì: 5 + 6 = 11, 11 − 7 = 4, il giorno 4 è giovedì.
+1 giorno dopo domenica viene lunedì: 7 + 1 = 8, 8 − 7 = 1, il giorno 1 è lunedì.
+che giorno viene 4 giorni dopo domenica? 4 giorni dopo domenica viene giovedì: 7 + 4 = 11, 11 − 7 = 4, il giorno 4 è giovedì.
+3 giorni dopo martedì viene venerdì: 2 + 3 = 5, il giorno 5 è venerdì.
+che giorno viene 6 giorni dopo martedì? 6 giorni dopo martedì viene lunedì: 2 + 6 = 8, 8 − 7 = 1, il giorno 1 è lunedì.
+1 giorno dopo giovedì viene venerdì: 4 + 1 = 5, il giorno 5 è venerdì.
+che giorno viene 4 giorni dopo giovedì? 4 giorni dopo giovedì viene lunedì: 4 + 4 = 8, 8 − 7 = 1, il giorno 1 è lunedì.
+5 giorni dopo sabato viene giovedì: 6 + 5 = 11, 11 − 7 = 4, il giorno 4 è giovedì.
 
-que dia vem 2 dias depois de sábado? 2 dias depois de sábado vem segunda-feira.
-1 dia depois de segunda-feira vem terça-feira.
-que dia vem 4 dias depois de segunda-feira? 4 dias depois de segunda-feira vem sexta-feira.
-5 dias depois de quarta-feira vem segunda-feira.
-que dia vem 2 dias depois de quarta-feira? 2 dias depois de quarta-feira vem sexta-feira.
-3 dias depois de sexta-feira vem segunda-feira.
-que dia vem 6 dias depois de sexta-feira? 6 dias depois de sexta-feira vem quinta-feira.
-1 dia depois de domingo vem segunda-feira.
-que dia vem 4 dias depois de domingo? 4 dias depois de domingo vem quinta-feira.
-3 dias depois de terça-feira vem sexta-feira.
-que dia vem 6 dias depois de terça-feira? 6 dias depois de terça-feira vem segunda-feira.
-1 dia depois de quinta-feira vem sexta-feira.
-que dia vem 4 dias depois de quinta-feira? 4 dias depois de quinta-feira vem segunda-feira.
-5 dias depois de sábado vem quinta-feira.
+que dia vem 2 dias depois de sábado? 2 dias depois de sábado vem segunda-feira: 6 + 2 = 8, 8 − 7 = 1, o dia 1 é segunda-feira.
+1 dia depois de segunda-feira vem terça-feira: 1 + 1 = 2, o dia 2 é terça-feira.
+que dia vem 4 dias depois de segunda-feira? 4 dias depois de segunda-feira vem sexta-feira: 1 + 4 = 5, o dia 5 é sexta-feira.
+5 dias depois de quarta-feira vem segunda-feira: 3 + 5 = 8, 8 − 7 = 1, o dia 1 é segunda-feira.
+que dia vem 2 dias depois de quarta-feira? 2 dias depois de quarta-feira vem sexta-feira: 3 + 2 = 5, o dia 5 é sexta-feira.
+3 dias depois de sexta-feira vem segunda-feira: 5 + 3 = 8, 8 − 7 = 1, o dia 1 é segunda-feira.
+que dia vem 6 dias depois de sexta-feira? 6 dias depois de sexta-feira vem quinta-feira: 5 + 6 = 11, 11 − 7 = 4, o dia 4 é quinta-feira.
+1 dia depois de domingo vem segunda-feira: 7 + 1 = 8, 8 − 7 = 1, o dia 1 é segunda-feira.
+que dia vem 4 dias depois de domingo? 4 dias depois de domingo vem quinta-feira: 7 + 4 = 11, 11 − 7 = 4, o dia 4 é quinta-feira.
+3 dias depois de terça-feira vem sexta-feira: 2 + 3 = 5, o dia 5 é sexta-feira.
+que dia vem 6 dias depois de terça-feira? 6 dias depois de terça-feira vem segunda-feira: 2 + 6 = 8, 8 − 7 = 1, o dia 1 é segunda-feira.
+1 dia depois de quinta-feira vem sexta-feira: 4 + 1 = 5, o dia 5 é sexta-feira.
+que dia vem 4 dias depois de quinta-feira? 4 dias depois de quinta-feira vem segunda-feira: 4 + 4 = 8, 8 − 7 = 1, o dia 1 é segunda-feira.
+5 dias depois de sábado vem quinta-feira: 6 + 5 = 11, 11 − 7 = 4, o dia 4 é quinta-feira.
 
-welke dag komt 2 dagen na zaterdag? 2 dagen na zaterdag komt maandag.
-1 dag na maandag komt dinsdag.
-welke dag komt 4 dagen na maandag? 4 dagen na maandag komt vrijdag.
-5 dagen na woensdag komt maandag.
-welke dag komt 2 dagen na woensdag? 2 dagen na woensdag komt vrijdag.
-3 dagen na vrijdag komt maandag.
-welke dag komt 6 dagen na vrijdag? 6 dagen na vrijdag komt donderdag.
-1 dag na zondag komt maandag.
-welke dag komt 4 dagen na zondag? 4 dagen na zondag komt donderdag.
-3 dagen na dinsdag komt vrijdag.
-welke dag komt 6 dagen na dinsdag? 6 dagen na dinsdag komt maandag.
-1 dag na donderdag komt vrijdag.
-welke dag komt 4 dagen na donderdag? 4 dagen na donderdag komt maandag.
-5 dagen na zaterdag komt donderdag.
+welke dag komt 2 dagen na zaterdag? 2 dagen na zaterdag komt maandag: 6 + 2 = 8, 8 − 7 = 1, dag 1 is maandag.
+1 dag na maandag komt dinsdag: 1 + 1 = 2, dag 2 is dinsdag.
+welke dag komt 4 dagen na maandag? 4 dagen na maandag komt vrijdag: 1 + 4 = 5, dag 5 is vrijdag.
+5 dagen na woensdag komt maandag: 3 + 5 = 8, 8 − 7 = 1, dag 1 is maandag.
+welke dag komt 2 dagen na woensdag? 2 dagen na woensdag komt vrijdag: 3 + 2 = 5, dag 5 is vrijdag.
+3 dagen na vrijdag komt maandag: 5 + 3 = 8, 8 − 7 = 1, dag 1 is maandag.
+welke dag komt 6 dagen na vrijdag? 6 dagen na vrijdag komt donderdag: 5 + 6 = 11, 11 − 7 = 4, dag 4 is donderdag.
+1 dag na zondag komt maandag: 7 + 1 = 8, 8 − 7 = 1, dag 1 is maandag.
+welke dag komt 4 dagen na zondag? 4 dagen na zondag komt donderdag: 7 + 4 = 11, 11 − 7 = 4, dag 4 is donderdag.
+3 dagen na dinsdag komt vrijdag: 2 + 3 = 5, dag 5 is vrijdag.
+welke dag komt 6 dagen na dinsdag? 6 dagen na dinsdag komt maandag: 2 + 6 = 8, 8 − 7 = 1, dag 1 is maandag.
+1 dag na donderdag komt vrijdag: 4 + 1 = 5, dag 5 is vrijdag.
+welke dag komt 4 dagen na donderdag? 4 dagen na donderdag komt maandag: 4 + 4 = 8, 8 − 7 = 1, dag 1 is maandag.
+5 dagen na zaterdag komt donderdag: 6 + 5 = 11, 11 − 7 = 4, dag 4 is donderdag.
 
-jaki dzień przypada 2 dni po sobocie? 2 dni po sobocie przypada poniedziałek.
-1 dzień po poniedziałku przypada wtorek.
-jaki dzień przypada 4 dni po poniedziałku? 4 dni po poniedziałku przypada piątek.
-5 dni po środzie przypada poniedziałek.
-jaki dzień przypada 2 dni po środzie? 2 dni po środzie przypada piątek.
-3 dni po piątku przypada poniedziałek.
-jaki dzień przypada 6 dni po piątku? 6 dni po piątku przypada czwartek.
-1 dzień po niedzieli przypada poniedziałek.
-jaki dzień przypada 4 dni po niedzieli? 4 dni po niedzieli przypada czwartek.
-3 dni po wtorku przypada piątek.
-jaki dzień przypada 6 dni po wtorku? 6 dni po wtorku przypada poniedziałek.
-1 dzień po czwartku przypada piątek.
-jaki dzień przypada 4 dni po czwartku? 4 dni po czwartku przypada poniedziałek.
-5 dni po sobocie przypada czwartek.
+jaki dzień przypada 2 dni po sobocie? 2 dni po sobocie przypada poniedziałek: 6 + 2 = 8, 8 − 7 = 1, dzień 1 to poniedziałek.
+1 dzień po poniedziałku przypada wtorek: 1 + 1 = 2, dzień 2 to wtorek.
+jaki dzień przypada 4 dni po poniedziałku? 4 dni po poniedziałku przypada piątek: 1 + 4 = 5, dzień 5 to piątek.
+5 dni po środzie przypada poniedziałek: 3 + 5 = 8, 8 − 7 = 1, dzień 1 to poniedziałek.
+jaki dzień przypada 2 dni po środzie? 2 dni po środzie przypada piątek: 3 + 2 = 5, dzień 5 to piątek.
+3 dni po piątku przypada poniedziałek: 5 + 3 = 8, 8 − 7 = 1, dzień 1 to poniedziałek.
+jaki dzień przypada 6 dni po piątku? 6 dni po piątku przypada czwartek: 5 + 6 = 11, 11 − 7 = 4, dzień 4 to czwartek.
+1 dzień po niedzieli przypada poniedziałek: 7 + 1 = 8, 8 − 7 = 1, dzień 1 to poniedziałek.
+jaki dzień przypada 4 dni po niedzieli? 4 dni po niedzieli przypada czwartek: 7 + 4 = 11, 11 − 7 = 4, dzień 4 to czwartek.
+3 dni po wtorku przypada piątek: 2 + 3 = 5, dzień 5 to piątek.
+jaki dzień przypada 6 dni po wtorku? 6 dni po wtorku przypada poniedziałek: 2 + 6 = 8, 8 − 7 = 1, dzień 1 to poniedziałek.
+1 dzień po czwartku przypada piątek: 4 + 1 = 5, dzień 5 to piątek.
+jaki dzień przypada 4 dni po czwartku? 4 dni po czwartku przypada poniedziałek: 4 + 4 = 8, 8 − 7 = 1, dzień 1 to poniedziałek.
+5 dni po sobocie przypada czwartek: 6 + 5 = 11, 11 − 7 = 4, dzień 4 to czwartek.
 
-cumartesinden 2 gün sonra hangi gün gelir? cumartesinden 2 gün sonra pazartesi gelir.
-pazartesiden 1 gün sonra salı gelir.
-pazartesiden 4 gün sonra hangi gün gelir? pazartesiden 4 gün sonra cuma gelir.
-çarşambadan 5 gün sonra pazartesi gelir.
-çarşambadan 2 gün sonra hangi gün gelir? çarşambadan 2 gün sonra cuma gelir.
-cumadan 3 gün sonra pazartesi gelir.
-cumadan 6 gün sonra hangi gün gelir? cumadan 6 gün sonra perşembe gelir.
-pazardan 1 gün sonra pazartesi gelir.
-pazardan 4 gün sonra hangi gün gelir? pazardan 4 gün sonra perşembe gelir.
-salıdan 3 gün sonra cuma gelir.
-salıdan 6 gün sonra hangi gün gelir? salıdan 6 gün sonra pazartesi gelir.
-perşembeden 1 gün sonra cuma gelir.
-perşembeden 4 gün sonra hangi gün gelir? perşembeden 4 gün sonra pazartesi gelir.
-cumartesinden 5 gün sonra perşembe gelir.
+cumartesinden 2 gün sonra hangi gün gelir? cumartesinden 2 gün sonra pazartesi gelir: 6 + 2 = 8, 8 − 7 = 1, 1. gün pazartesi.
+pazartesiden 1 gün sonra salı gelir: 1 + 1 = 2, 2. gün salı.
+pazartesiden 4 gün sonra hangi gün gelir? pazartesiden 4 gün sonra cuma gelir: 1 + 4 = 5, 5. gün cuma.
+çarşambadan 5 gün sonra pazartesi gelir: 3 + 5 = 8, 8 − 7 = 1, 1. gün pazartesi.
+çarşambadan 2 gün sonra hangi gün gelir? çarşambadan 2 gün sonra cuma gelir: 3 + 2 = 5, 5. gün cuma.
+cumadan 3 gün sonra pazartesi gelir: 5 + 3 = 8, 8 − 7 = 1, 1. gün pazartesi.
+cumadan 6 gün sonra hangi gün gelir? cumadan 6 gün sonra perşembe gelir: 5 + 6 = 11, 11 − 7 = 4, 4. gün perşembe.
+pazardan 1 gün sonra pazartesi gelir: 7 + 1 = 8, 8 − 7 = 1, 1. gün pazartesi.
+pazardan 4 gün sonra hangi gün gelir? pazardan 4 gün sonra perşembe gelir: 7 + 4 = 11, 11 − 7 = 4, 4. gün perşembe.
+salıdan 3 gün sonra cuma gelir: 2 + 3 = 5, 5. gün cuma.
+salıdan 6 gün sonra hangi gün gelir? salıdan 6 gün sonra pazartesi gelir: 2 + 6 = 8, 8 − 7 = 1, 1. gün pazartesi.
+perşembeden 1 gün sonra cuma gelir: 4 + 1 = 5, 5. gün cuma.
+perşembeden 4 gün sonra hangi gün gelir? perşembeden 4 gün sonra pazartesi gelir: 4 + 4 = 8, 8 − 7 = 1, 1. gün pazartesi.
+cumartesinden 5 gün sonra perşembe gelir: 6 + 5 = 11, 11 − 7 = 4, 4. gün perşembe.
 
-4 Tage nach Freitag kommt Dienstag.
-welcher Tag kommt 3 Tage nach Samstag? 3 Tage nach Samstag kommt Dienstag.
-4 Tage nach Dienstag kommt Samstag.
-welcher Tag kommt 3 Tage nach Mittwoch? 3 Tage nach Mittwoch kommt Samstag.
-6 Tage nach Samstag kommt Freitag.
-welcher Tag kommt 5 Tage nach Sonntag? 5 Tage nach Sonntag kommt Freitag.
-6 Tage nach Mittwoch kommt Dienstag.
-welcher Tag kommt 5 Tage nach Donnerstag? 5 Tage nach Donnerstag kommt Dienstag.
-2 Tage nach Sonntag kommt Dienstag.
-welcher Tag kommt 5 Tage nach Montag? 5 Tage nach Montag kommt Samstag.
-2 Tage nach Donnerstag kommt Samstag.
-welcher Tag kommt 1 Tag nach Freitag? 1 Tag nach Freitag kommt Samstag.
-2 Tage nach Montag kommt Mittwoch.
-welcher Tag kommt 1 Tag nach Dienstag? 1 Tag nach Dienstag kommt Mittwoch.
+4 Tage nach Freitag kommt Dienstag: 5 + 4 = 9, 9 − 7 = 2, Tag 2 ist Dienstag.
+welcher Tag kommt 3 Tage nach Samstag? 3 Tage nach Samstag kommt Dienstag: 6 + 3 = 9, 9 − 7 = 2, Tag 2 ist Dienstag.
+4 Tage nach Dienstag kommt Samstag: 2 + 4 = 6, Tag 6 ist Samstag.
+welcher Tag kommt 3 Tage nach Mittwoch? 3 Tage nach Mittwoch kommt Samstag: 3 + 3 = 6, Tag 6 ist Samstag.
+6 Tage nach Samstag kommt Freitag: 6 + 6 = 12, 12 − 7 = 5, Tag 5 ist Freitag.
+welcher Tag kommt 5 Tage nach Sonntag? 5 Tage nach Sonntag kommt Freitag: 7 + 5 = 12, 12 − 7 = 5, Tag 5 ist Freitag.
+6 Tage nach Mittwoch kommt Dienstag: 3 + 6 = 9, 9 − 7 = 2, Tag 2 ist Dienstag.
+welcher Tag kommt 5 Tage nach Donnerstag? 5 Tage nach Donnerstag kommt Dienstag: 4 + 5 = 9, 9 − 7 = 2, Tag 2 ist Dienstag.
+2 Tage nach Sonntag kommt Dienstag: 7 + 2 = 9, 9 − 7 = 2, Tag 2 ist Dienstag.
+welcher Tag kommt 5 Tage nach Montag? 5 Tage nach Montag kommt Samstag: 1 + 5 = 6, Tag 6 ist Samstag.
+2 Tage nach Donnerstag kommt Samstag: 4 + 2 = 6, Tag 6 ist Samstag.
+welcher Tag kommt 1 Tag nach Freitag? 1 Tag nach Freitag kommt Samstag: 5 + 1 = 6, Tag 6 ist Samstag.
+2 Tage nach Montag kommt Mittwoch: 1 + 2 = 3, Tag 3 ist Mittwoch.
+welcher Tag kommt 1 Tag nach Dienstag? 1 Tag nach Dienstag kommt Mittwoch: 2 + 1 = 3, Tag 3 ist Mittwoch.
 
-4 jours après vendredi vient mardi.
-quel jour vient 3 jours après samedi ? 3 jours après samedi vient mardi.
-4 jours après mardi vient samedi.
-quel jour vient 3 jours après mercredi ? 3 jours après mercredi vient samedi.
-6 jours après samedi vient vendredi.
-quel jour vient 5 jours après dimanche ? 5 jours après dimanche vient vendredi.
-6 jours après mercredi vient mardi.
-quel jour vient 5 jours après jeudi ? 5 jours après jeudi vient mardi.
-2 jours après dimanche vient mardi.
-quel jour vient 5 jours après lundi ? 5 jours après lundi vient samedi.
-2 jours après jeudi vient samedi.
-quel jour vient 1 jour après vendredi ? 1 jour après vendredi vient samedi.
-2 jours après lundi vient mercredi.
-quel jour vient 1 jour après mardi ? 1 jour après mardi vient mercredi.
+4 jours après vendredi vient mardi: 5 + 4 = 9, 9 − 7 = 2, le jour 2 est mardi.
+quel jour vient 3 jours après samedi ? 3 jours après samedi vient mardi: 6 + 3 = 9, 9 − 7 = 2, le jour 2 est mardi.
+4 jours après mardi vient samedi: 2 + 4 = 6, le jour 6 est samedi.
+quel jour vient 3 jours après mercredi ? 3 jours après mercredi vient samedi: 3 + 3 = 6, le jour 6 est samedi.
+6 jours après samedi vient vendredi: 6 + 6 = 12, 12 − 7 = 5, le jour 5 est vendredi.
+quel jour vient 5 jours après dimanche ? 5 jours après dimanche vient vendredi: 7 + 5 = 12, 12 − 7 = 5, le jour 5 est vendredi.
+6 jours après mercredi vient mardi: 3 + 6 = 9, 9 − 7 = 2, le jour 2 est mardi.
+quel jour vient 5 jours après jeudi ? 5 jours après jeudi vient mardi: 4 + 5 = 9, 9 − 7 = 2, le jour 2 est mardi.
+2 jours après dimanche vient mardi: 7 + 2 = 9, 9 − 7 = 2, le jour 2 est mardi.
+quel jour vient 5 jours après lundi ? 5 jours après lundi vient samedi: 1 + 5 = 6, le jour 6 est samedi.
+2 jours après jeudi vient samedi: 4 + 2 = 6, le jour 6 est samedi.
+quel jour vient 1 jour après vendredi ? 1 jour après vendredi vient samedi: 5 + 1 = 6, le jour 6 est samedi.
+2 jours après lundi vient mercredi: 1 + 2 = 3, le jour 3 est mercredi.
+quel jour vient 1 jour après mardi ? 1 jour après mardi vient mercredi: 2 + 1 = 3, le jour 3 est mercredi.
 
-4 días después del viernes viene el martes.
-¿qué día viene 3 días después del sábado? 3 días después del sábado viene el martes.
-4 días después del martes viene el sábado.
-¿qué día viene 3 días después del miércoles? 3 días después del miércoles viene el sábado.
-6 días después del sábado viene el viernes.
-¿qué día viene 5 días después del domingo? 5 días después del domingo viene el viernes.
-6 días después del miércoles viene el martes.
-¿qué día viene 5 días después del jueves? 5 días después del jueves viene el martes.
-2 días después del domingo viene el martes.
-¿qué día viene 5 días después del lunes? 5 días después del lunes viene el sábado.
-2 días después del jueves viene el sábado.
-¿qué día viene 1 día después del viernes? 1 día después del viernes viene el sábado.
-2 días después del lunes viene el miércoles.
-¿qué día viene 1 día después del martes? 1 día después del martes viene el miércoles.
+4 días después del viernes viene el martes: 5 + 4 = 9, 9 − 7 = 2, el día 2 es martes.
+¿qué día viene 3 días después del sábado? 3 días después del sábado viene el martes: 6 + 3 = 9, 9 − 7 = 2, el día 2 es martes.
+4 días después del martes viene el sábado: 2 + 4 = 6, el día 6 es sábado.
+¿qué día viene 3 días después del miércoles? 3 días después del miércoles viene el sábado: 3 + 3 = 6, el día 6 es sábado.
+6 días después del sábado viene el viernes: 6 + 6 = 12, 12 − 7 = 5, el día 5 es viernes.
+¿qué día viene 5 días después del domingo? 5 días después del domingo viene el viernes: 7 + 5 = 12, 12 − 7 = 5, el día 5 es viernes.
+6 días después del miércoles viene el martes: 3 + 6 = 9, 9 − 7 = 2, el día 2 es martes.
+¿qué día viene 5 días después del jueves? 5 días después del jueves viene el martes: 4 + 5 = 9, 9 − 7 = 2, el día 2 es martes.
+2 días después del domingo viene el martes: 7 + 2 = 9, 9 − 7 = 2, el día 2 es martes.
+¿qué día viene 5 días después del lunes? 5 días después del lunes viene el sábado: 1 + 5 = 6, el día 6 es sábado.
+2 días después del jueves viene el sábado: 4 + 2 = 6, el día 6 es sábado.
+¿qué día viene 1 día después del viernes? 1 día después del viernes viene el sábado: 5 + 1 = 6, el día 6 es sábado.
+2 días después del lunes viene el miércoles: 1 + 2 = 3, el día 3 es miércoles.
+¿qué día viene 1 día después del martes? 1 día después del martes viene el miércoles: 2 + 1 = 3, el día 3 es miércoles.
 
-4 giorni dopo venerdì viene martedì.
-che giorno viene 3 giorni dopo sabato? 3 giorni dopo sabato viene martedì.
-4 giorni dopo martedì viene sabato.
-che giorno viene 3 giorni dopo mercoledì? 3 giorni dopo mercoledì viene sabato.
-6 giorni dopo sabato viene venerdì.
-che giorno viene 5 giorni dopo domenica? 5 giorni dopo domenica viene venerdì.
-6 giorni dopo mercoledì viene martedì.
-che giorno viene 5 giorni dopo giovedì? 5 giorni dopo giovedì viene martedì.
-2 giorni dopo domenica viene martedì.
-che giorno viene 5 giorni dopo lunedì? 5 giorni dopo lunedì viene sabato.
-2 giorni dopo giovedì viene sabato.
-che giorno viene 1 giorno dopo venerdì? 1 giorno dopo venerdì viene sabato.
-2 giorni dopo lunedì viene mercoledì.
-che giorno viene 1 giorno dopo martedì? 1 giorno dopo martedì viene mercoledì.
+4 giorni dopo venerdì viene martedì: 5 + 4 = 9, 9 − 7 = 2, il giorno 2 è martedì.
+che giorno viene 3 giorni dopo sabato? 3 giorni dopo sabato viene martedì: 6 + 3 = 9, 9 − 7 = 2, il giorno 2 è martedì.
+4 giorni dopo martedì viene sabato: 2 + 4 = 6, il giorno 6 è sabato.
+che giorno viene 3 giorni dopo mercoledì? 3 giorni dopo mercoledì viene sabato: 3 + 3 = 6, il giorno 6 è sabato.
+6 giorni dopo sabato viene venerdì: 6 + 6 = 12, 12 − 7 = 5, il giorno 5 è venerdì.
+che giorno viene 5 giorni dopo domenica? 5 giorni dopo domenica viene venerdì: 7 + 5 = 12, 12 − 7 = 5, il giorno 5 è venerdì.
+6 giorni dopo mercoledì viene martedì: 3 + 6 = 9, 9 − 7 = 2, il giorno 2 è martedì.
+che giorno viene 5 giorni dopo giovedì? 5 giorni dopo giovedì viene martedì: 4 + 5 = 9, 9 − 7 = 2, il giorno 2 è martedì.
+2 giorni dopo domenica viene martedì: 7 + 2 = 9, 9 − 7 = 2, il giorno 2 è martedì.
+che giorno viene 5 giorni dopo lunedì? 5 giorni dopo lunedì viene sabato: 1 + 5 = 6, il giorno 6 è sabato.
+2 giorni dopo giovedì viene sabato: 4 + 2 = 6, il giorno 6 è sabato.
+che giorno viene 1 giorno dopo venerdì? 1 giorno dopo venerdì viene sabato: 5 + 1 = 6, il giorno 6 è sabato.
+2 giorni dopo lunedì viene mercoledì: 1 + 2 = 3, il giorno 3 è mercoledì.
+che giorno viene 1 giorno dopo martedì? 1 giorno dopo martedì viene mercoledì: 2 + 1 = 3, il giorno 3 è mercoledì.
 
-4 dias depois de sexta-feira vem terça-feira.
-que dia vem 3 dias depois de sábado? 3 dias depois de sábado vem terça-feira.
-4 dias depois de terça-feira vem sábado.
-que dia vem 3 dias depois de quarta-feira? 3 dias depois de quarta-feira vem sábado.
-6 dias depois de sábado vem sexta-feira.
-que dia vem 5 dias depois de domingo? 5 dias depois de domingo vem sexta-feira.
-6 dias depois de quarta-feira vem terça-feira.
-que dia vem 5 dias depois de quinta-feira? 5 dias depois de quinta-feira vem terça-feira.
-2 dias depois de domingo vem terça-feira.
-que dia vem 5 dias depois de segunda-feira? 5 dias depois de segunda-feira vem sábado.
-2 dias depois de quinta-feira vem sábado.
-que dia vem 1 dia depois de sexta-feira? 1 dia depois de sexta-feira vem sábado.
-2 dias depois de segunda-feira vem quarta-feira.
-que dia vem 1 dia depois de terça-feira? 1 dia depois de terça-feira vem quarta-feira.
+4 dias depois de sexta-feira vem terça-feira: 5 + 4 = 9, 9 − 7 = 2, o dia 2 é terça-feira.
+que dia vem 3 dias depois de sábado? 3 dias depois de sábado vem terça-feira: 6 + 3 = 9, 9 − 7 = 2, o dia 2 é terça-feira.
+4 dias depois de terça-feira vem sábado: 2 + 4 = 6, o dia 6 é sábado.
+que dia vem 3 dias depois de quarta-feira? 3 dias depois de quarta-feira vem sábado: 3 + 3 = 6, o dia 6 é sábado.
+6 dias depois de sábado vem sexta-feira: 6 + 6 = 12, 12 − 7 = 5, o dia 5 é sexta-feira.
+que dia vem 5 dias depois de domingo? 5 dias depois de domingo vem sexta-feira: 7 + 5 = 12, 12 − 7 = 5, o dia 5 é sexta-feira.
+6 dias depois de quarta-feira vem terça-feira: 3 + 6 = 9, 9 − 7 = 2, o dia 2 é terça-feira.
+que dia vem 5 dias depois de quinta-feira? 5 dias depois de quinta-feira vem terça-feira: 4 + 5 = 9, 9 − 7 = 2, o dia 2 é terça-feira.
+2 dias depois de domingo vem terça-feira: 7 + 2 = 9, 9 − 7 = 2, o dia 2 é terça-feira.
+que dia vem 5 dias depois de segunda-feira? 5 dias depois de segunda-feira vem sábado: 1 + 5 = 6, o dia 6 é sábado.
+2 dias depois de quinta-feira vem sábado: 4 + 2 = 6, o dia 6 é sábado.
+que dia vem 1 dia depois de sexta-feira? 1 dia depois de sexta-feira vem sábado: 5 + 1 = 6, o dia 6 é sábado.
+2 dias depois de segunda-feira vem quarta-feira: 1 + 2 = 3, o dia 3 é quarta-feira.
+que dia vem 1 dia depois de terça-feira? 1 dia depois de terça-feira vem quarta-feira: 2 + 1 = 3, o dia 3 é quarta-feira.
 
-4 dagen na vrijdag komt dinsdag.
-welke dag komt 3 dagen na zaterdag? 3 dagen na zaterdag komt dinsdag.
-4 dagen na dinsdag komt zaterdag.
-welke dag komt 3 dagen na woensdag? 3 dagen na woensdag komt zaterdag.
-6 dagen na zaterdag komt vrijdag.
-welke dag komt 5 dagen na zondag? 5 dagen na zondag komt vrijdag.
-6 dagen na woensdag komt dinsdag.
-welke dag komt 5 dagen na donderdag? 5 dagen na donderdag komt dinsdag.
-2 dagen na zondag komt dinsdag.
-welke dag komt 5 dagen na maandag? 5 dagen na maandag komt zaterdag.
-2 dagen na donderdag komt zaterdag.
-welke dag komt 1 dag na vrijdag? 1 dag na vrijdag komt zaterdag.
-2 dagen na maandag komt woensdag.
-welke dag komt 1 dag na dinsdag? 1 dag na dinsdag komt woensdag.
+4 dagen na vrijdag komt dinsdag: 5 + 4 = 9, 9 − 7 = 2, dag 2 is dinsdag.
+welke dag komt 3 dagen na zaterdag? 3 dagen na zaterdag komt dinsdag: 6 + 3 = 9, 9 − 7 = 2, dag 2 is dinsdag.
+4 dagen na dinsdag komt zaterdag: 2 + 4 = 6, dag 6 is zaterdag.
+welke dag komt 3 dagen na woensdag? 3 dagen na woensdag komt zaterdag: 3 + 3 = 6, dag 6 is zaterdag.
+6 dagen na zaterdag komt vrijdag: 6 + 6 = 12, 12 − 7 = 5, dag 5 is vrijdag.
+welke dag komt 5 dagen na zondag? 5 dagen na zondag komt vrijdag: 7 + 5 = 12, 12 − 7 = 5, dag 5 is vrijdag.
+6 dagen na woensdag komt dinsdag: 3 + 6 = 9, 9 − 7 = 2, dag 2 is dinsdag.
+welke dag komt 5 dagen na donderdag? 5 dagen na donderdag komt dinsdag: 4 + 5 = 9, 9 − 7 = 2, dag 2 is dinsdag.
+2 dagen na zondag komt dinsdag: 7 + 2 = 9, 9 − 7 = 2, dag 2 is dinsdag.
+welke dag komt 5 dagen na maandag? 5 dagen na maandag komt zaterdag: 1 + 5 = 6, dag 6 is zaterdag.
+2 dagen na donderdag komt zaterdag: 4 + 2 = 6, dag 6 is zaterdag.
+welke dag komt 1 dag na vrijdag? 1 dag na vrijdag komt zaterdag: 5 + 1 = 6, dag 6 is zaterdag.
+2 dagen na maandag komt woensdag: 1 + 2 = 3, dag 3 is woensdag.
+welke dag komt 1 dag na dinsdag? 1 dag na dinsdag komt woensdag: 2 + 1 = 3, dag 3 is woensdag.
 
-4 dni po piątku przypada wtorek.
-jaki dzień przypada 3 dni po sobocie? 3 dni po sobocie przypada wtorek.
-4 dni po wtorku przypada sobota.
-jaki dzień przypada 3 dni po środzie? 3 dni po środzie przypada sobota.
-6 dni po sobocie przypada piątek.
-jaki dzień przypada 5 dni po niedzieli? 5 dni po niedzieli przypada piątek.
-6 dni po środzie przypada wtorek.
-jaki dzień przypada 5 dni po czwartku? 5 dni po czwartku przypada wtorek.
-2 dni po niedzieli przypada wtorek.
-jaki dzień przypada 5 dni po poniedziałku? 5 dni po poniedziałku przypada sobota.
-2 dni po czwartku przypada sobota.
-jaki dzień przypada 1 dzień po piątku? 1 dzień po piątku przypada sobota.
-2 dni po poniedziałku przypada środa.
-jaki dzień przypada 1 dzień po wtorku? 1 dzień po wtorku przypada środa.
+4 dni po piątku przypada wtorek: 5 + 4 = 9, 9 − 7 = 2, dzień 2 to wtorek.
+jaki dzień przypada 3 dni po sobocie? 3 dni po sobocie przypada wtorek: 6 + 3 = 9, 9 − 7 = 2, dzień 2 to wtorek.
+4 dni po wtorku przypada sobota: 2 + 4 = 6, dzień 6 to sobota.
+jaki dzień przypada 3 dni po środzie? 3 dni po środzie przypada sobota: 3 + 3 = 6, dzień 6 to sobota.
+6 dni po sobocie przypada piątek: 6 + 6 = 12, 12 − 7 = 5, dzień 5 to piątek.
+jaki dzień przypada 5 dni po niedzieli? 5 dni po niedzieli przypada piątek: 7 + 5 = 12, 12 − 7 = 5, dzień 5 to piątek.
+6 dni po środzie przypada wtorek: 3 + 6 = 9, 9 − 7 = 2, dzień 2 to wtorek.
+jaki dzień przypada 5 dni po czwartku? 5 dni po czwartku przypada wtorek: 4 + 5 = 9, 9 − 7 = 2, dzień 2 to wtorek.
+2 dni po niedzieli przypada wtorek: 7 + 2 = 9, 9 − 7 = 2, dzień 2 to wtorek.
+jaki dzień przypada 5 dni po poniedziałku? 5 dni po poniedziałku przypada sobota: 1 + 5 = 6, dzień 6 to sobota.
+2 dni po czwartku przypada sobota: 4 + 2 = 6, dzień 6 to sobota.
+jaki dzień przypada 1 dzień po piątku? 1 dzień po piątku przypada sobota: 5 + 1 = 6, dzień 6 to sobota.
+2 dni po poniedziałku przypada środa: 1 + 2 = 3, dzień 3 to środa.
+jaki dzień przypada 1 dzień po wtorku? 1 dzień po wtorku przypada środa: 2 + 1 = 3, dzień 3 to środa.
 
-cumadan 4 gün sonra salı gelir.
-cumartesinden 3 gün sonra hangi gün gelir? cumartesinden 3 gün sonra salı gelir.
-salıdan 4 gün sonra cumartesi gelir.
-çarşambadan 3 gün sonra hangi gün gelir? çarşambadan 3 gün sonra cumartesi gelir.
-cumartesinden 6 gün sonra cuma gelir.
-pazardan 5 gün sonra hangi gün gelir? pazardan 5 gün sonra cuma gelir.
-çarşambadan 6 gün sonra salı gelir.
-perşembeden 5 gün sonra hangi gün gelir? perşembeden 5 gün sonra salı gelir.
-pazardan 2 gün sonra salı gelir.
-pazartesiden 5 gün sonra hangi gün gelir? pazartesiden 5 gün sonra cumartesi gelir.
-perşembeden 2 gün sonra cumartesi gelir.
-cumadan 1 gün sonra hangi gün gelir? cumadan 1 gün sonra cumartesi gelir.
-pazartesiden 2 gün sonra çarşamba gelir.
-salıdan 1 gün sonra hangi gün gelir? salıdan 1 gün sonra çarşamba gelir.
+cumadan 4 gün sonra salı gelir: 5 + 4 = 9, 9 − 7 = 2, 2. gün salı.
+cumartesinden 3 gün sonra hangi gün gelir? cumartesinden 3 gün sonra salı gelir: 6 + 3 = 9, 9 − 7 = 2, 2. gün salı.
+salıdan 4 gün sonra cumartesi gelir: 2 + 4 = 6, 6. gün cumartesi.
+çarşambadan 3 gün sonra hangi gün gelir? çarşambadan 3 gün sonra cumartesi gelir: 3 + 3 = 6, 6. gün cumartesi.
+cumartesinden 6 gün sonra cuma gelir: 6 + 6 = 12, 12 − 7 = 5, 5. gün cuma.
+pazardan 5 gün sonra hangi gün gelir? pazardan 5 gün sonra cuma gelir: 7 + 5 = 12, 12 − 7 = 5, 5. gün cuma.
+çarşambadan 6 gün sonra salı gelir: 3 + 6 = 9, 9 − 7 = 2, 2. gün salı.
+perşembeden 5 gün sonra hangi gün gelir? perşembeden 5 gün sonra salı gelir: 4 + 5 = 9, 9 − 7 = 2, 2. gün salı.
+pazardan 2 gün sonra salı gelir: 7 + 2 = 9, 9 − 7 = 2, 2. gün salı.
+pazartesiden 5 gün sonra hangi gün gelir? pazartesiden 5 gün sonra cumartesi gelir: 1 + 5 = 6, 6. gün cumartesi.
+perşembeden 2 gün sonra cumartesi gelir: 4 + 2 = 6, 6. gün cumartesi.
+cumadan 1 gün sonra hangi gün gelir? cumadan 1 gün sonra cumartesi gelir: 5 + 1 = 6, 6. gün cumartesi.
+pazartesiden 2 gün sonra çarşamba gelir: 1 + 2 = 3, 3. gün çarşamba.
+salıdan 1 gün sonra hangi gün gelir? salıdan 1 gün sonra çarşamba gelir: 2 + 1 = 3, 3. gün çarşamba.
 
-welcher Tag kommt 6 Tage nach Sonntag? 6 Tage nach Sonntag kommt Samstag.
-3 Tage nach Donnerstag kommt Sonntag.
-welcher Tag kommt 4 Tage nach Samstag? 4 Tage nach Samstag kommt Mittwoch.
-1 Tag nach Mittwoch kommt Donnerstag.
-welcher Tag kommt 2 Tage nach Freitag? 2 Tage nach Freitag kommt Sonntag.
-5 Tage nach Dienstag kommt Sonntag.
-welcher Tag kommt 6 Tage nach Donnerstag? 6 Tage nach Donnerstag kommt Mittwoch.
-3 Tage nach Montag kommt Donnerstag.
-welcher Tag kommt 4 Tage nach Mittwoch? 4 Tage nach Mittwoch kommt Sonntag.
-3 Tage nach Sonntag kommt Mittwoch.
-welcher Tag kommt 2 Tage nach Dienstag? 2 Tage nach Dienstag kommt Donnerstag.
-1 Tag nach Samstag kommt Sonntag.
-welcher Tag kommt 6 Tage nach Montag? 6 Tage nach Montag kommt Sonntag.
-5 Tage nach Freitag kommt Mittwoch.
+welcher Tag kommt 6 Tage nach Sonntag? 6 Tage nach Sonntag kommt Samstag: 7 + 6 = 13, 13 − 7 = 6, Tag 6 ist Samstag.
+3 Tage nach Donnerstag kommt Sonntag: 4 + 3 = 7, Tag 7 ist Sonntag.
+welcher Tag kommt 4 Tage nach Samstag? 4 Tage nach Samstag kommt Mittwoch: 6 + 4 = 10, 10 − 7 = 3, Tag 3 ist Mittwoch.
+1 Tag nach Mittwoch kommt Donnerstag: 3 + 1 = 4, Tag 4 ist Donnerstag.
+welcher Tag kommt 2 Tage nach Freitag? 2 Tage nach Freitag kommt Sonntag: 5 + 2 = 7, Tag 7 ist Sonntag.
+5 Tage nach Dienstag kommt Sonntag: 2 + 5 = 7, Tag 7 ist Sonntag.
+welcher Tag kommt 6 Tage nach Donnerstag? 6 Tage nach Donnerstag kommt Mittwoch: 4 + 6 = 10, 10 − 7 = 3, Tag 3 ist Mittwoch.
+3 Tage nach Montag kommt Donnerstag: 1 + 3 = 4, Tag 4 ist Donnerstag.
+welcher Tag kommt 4 Tage nach Mittwoch? 4 Tage nach Mittwoch kommt Sonntag: 3 + 4 = 7, Tag 7 ist Sonntag.
+3 Tage nach Sonntag kommt Mittwoch: 7 + 3 = 10, 10 − 7 = 3, Tag 3 ist Mittwoch.
+welcher Tag kommt 2 Tage nach Dienstag? 2 Tage nach Dienstag kommt Donnerstag: 2 + 2 = 4, Tag 4 ist Donnerstag.
+1 Tag nach Samstag kommt Sonntag: 6 + 1 = 7, Tag 7 ist Sonntag.
+welcher Tag kommt 6 Tage nach Montag? 6 Tage nach Montag kommt Sonntag: 1 + 6 = 7, Tag 7 ist Sonntag.
+5 Tage nach Freitag kommt Mittwoch: 5 + 5 = 10, 10 − 7 = 3, Tag 3 ist Mittwoch.
 
-quel jour vient 6 jours après dimanche ? 6 jours après dimanche vient samedi.
-3 jours après jeudi vient dimanche.
-quel jour vient 4 jours après samedi ? 4 jours après samedi vient mercredi.
-1 jour après mercredi vient jeudi.
-quel jour vient 2 jours après vendredi ? 2 jours après vendredi vient dimanche.
-5 jours après mardi vient dimanche.
-quel jour vient 6 jours après jeudi ? 6 jours après jeudi vient mercredi.
-3 jours après lundi vient jeudi.
-quel jour vient 4 jours après mercredi ? 4 jours après mercredi vient dimanche.
-3 jours après dimanche vient mercredi.
-quel jour vient 2 jours après mardi ? 2 jours après mardi vient jeudi.
-1 jour après samedi vient dimanche.
-quel jour vient 6 jours après lundi ? 6 jours après lundi vient dimanche.
-5 jours après vendredi vient mercredi.
+quel jour vient 6 jours après dimanche ? 6 jours après dimanche vient samedi: 7 + 6 = 13, 13 − 7 = 6, le jour 6 est samedi.
+3 jours après jeudi vient dimanche: 4 + 3 = 7, le jour 7 est dimanche.
+quel jour vient 4 jours après samedi ? 4 jours après samedi vient mercredi: 6 + 4 = 10, 10 − 7 = 3, le jour 3 est mercredi.
+1 jour après mercredi vient jeudi: 3 + 1 = 4, le jour 4 est jeudi.
+quel jour vient 2 jours après vendredi ? 2 jours après vendredi vient dimanche: 5 + 2 = 7, le jour 7 est dimanche.
+5 jours après mardi vient dimanche: 2 + 5 = 7, le jour 7 est dimanche.
+quel jour vient 6 jours après jeudi ? 6 jours après jeudi vient mercredi: 4 + 6 = 10, 10 − 7 = 3, le jour 3 est mercredi.
+3 jours après lundi vient jeudi: 1 + 3 = 4, le jour 4 est jeudi.
+quel jour vient 4 jours après mercredi ? 4 jours après mercredi vient dimanche: 3 + 4 = 7, le jour 7 est dimanche.
+3 jours après dimanche vient mercredi: 7 + 3 = 10, 10 − 7 = 3, le jour 3 est mercredi.
+quel jour vient 2 jours après mardi ? 2 jours après mardi vient jeudi: 2 + 2 = 4, le jour 4 est jeudi.
+1 jour après samedi vient dimanche: 6 + 1 = 7, le jour 7 est dimanche.
+quel jour vient 6 jours après lundi ? 6 jours après lundi vient dimanche: 1 + 6 = 7, le jour 7 est dimanche.
+5 jours après vendredi vient mercredi: 5 + 5 = 10, 10 − 7 = 3, le jour 3 est mercredi.
 
-¿qué día viene 6 días después del domingo? 6 días después del domingo viene el sábado.
-3 días después del jueves viene el domingo.
-¿qué día viene 4 días después del sábado? 4 días después del sábado viene el miércoles.
-1 día después del miércoles viene el jueves.
-¿qué día viene 2 días después del viernes? 2 días después del viernes viene el domingo.
-5 días después del martes viene el domingo.
-¿qué día viene 6 días después del jueves? 6 días después del jueves viene el miércoles.
-3 días después del lunes viene el jueves.
-¿qué día viene 4 días después del miércoles? 4 días después del miércoles viene el domingo.
-3 días después del domingo viene el miércoles.
-¿qué día viene 2 días después del martes? 2 días después del martes viene el jueves.
-1 día después del sábado viene el domingo.
-¿qué día viene 6 días después del lunes? 6 días después del lunes viene el domingo.
-5 días después del viernes viene el miércoles.
+¿qué día viene 6 días después del domingo? 6 días después del domingo viene el sábado: 7 + 6 = 13, 13 − 7 = 6, el día 6 es sábado.
+3 días después del jueves viene el domingo: 4 + 3 = 7, el día 7 es domingo.
+¿qué día viene 4 días después del sábado? 4 días después del sábado viene el miércoles: 6 + 4 = 10, 10 − 7 = 3, el día 3 es miércoles.
+1 día después del miércoles viene el jueves: 3 + 1 = 4, el día 4 es jueves.
+¿qué día viene 2 días después del viernes? 2 días después del viernes viene el domingo: 5 + 2 = 7, el día 7 es domingo.
+5 días después del martes viene el domingo: 2 + 5 = 7, el día 7 es domingo.
+¿qué día viene 6 días después del jueves? 6 días después del jueves viene el miércoles: 4 + 6 = 10, 10 − 7 = 3, el día 3 es miércoles.
+3 días después del lunes viene el jueves: 1 + 3 = 4, el día 4 es jueves.
+¿qué día viene 4 días después del miércoles? 4 días después del miércoles viene el domingo: 3 + 4 = 7, el día 7 es domingo.
+3 días después del domingo viene el miércoles: 7 + 3 = 10, 10 − 7 = 3, el día 3 es miércoles.
+¿qué día viene 2 días después del martes? 2 días después del martes viene el jueves: 2 + 2 = 4, el día 4 es jueves.
+1 día después del sábado viene el domingo: 6 + 1 = 7, el día 7 es domingo.
+¿qué día viene 6 días después del lunes? 6 días después del lunes viene el domingo: 1 + 6 = 7, el día 7 es domingo.
+5 días después del viernes viene el miércoles: 5 + 5 = 10, 10 − 7 = 3, el día 3 es miércoles.
 
-che giorno viene 6 giorni dopo domenica? 6 giorni dopo domenica viene sabato.
-3 giorni dopo giovedì viene domenica.
-che giorno viene 4 giorni dopo sabato? 4 giorni dopo sabato viene mercoledì.
-1 giorno dopo mercoledì viene giovedì.
-che giorno viene 2 giorni dopo venerdì? 2 giorni dopo venerdì viene domenica.
-5 giorni dopo martedì viene domenica.
-che giorno viene 6 giorni dopo giovedì? 6 giorni dopo giovedì viene mercoledì.
-3 giorni dopo lunedì viene giovedì.
-che giorno viene 4 giorni dopo mercoledì? 4 giorni dopo mercoledì viene domenica.
-3 giorni dopo domenica viene mercoledì.
-che giorno viene 2 giorni dopo martedì? 2 giorni dopo martedì viene giovedì.
-1 giorno dopo sabato viene domenica.
-che giorno viene 6 giorni dopo lunedì? 6 giorni dopo lunedì viene domenica.
-5 giorni dopo venerdì viene mercoledì.
+che giorno viene 6 giorni dopo domenica? 6 giorni dopo domenica viene sabato: 7 + 6 = 13, 13 − 7 = 6, il giorno 6 è sabato.
+3 giorni dopo giovedì viene domenica: 4 + 3 = 7, il giorno 7 è domenica.
+che giorno viene 4 giorni dopo sabato? 4 giorni dopo sabato viene mercoledì: 6 + 4 = 10, 10 − 7 = 3, il giorno 3 è mercoledì.
+1 giorno dopo mercoledì viene giovedì: 3 + 1 = 4, il giorno 4 è giovedì.
+che giorno viene 2 giorni dopo venerdì? 2 giorni dopo venerdì viene domenica: 5 + 2 = 7, il giorno 7 è domenica.
+5 giorni dopo martedì viene domenica: 2 + 5 = 7, il giorno 7 è domenica.
+che giorno viene 6 giorni dopo giovedì? 6 giorni dopo giovedì viene mercoledì: 4 + 6 = 10, 10 − 7 = 3, il giorno 3 è mercoledì.
+3 giorni dopo lunedì viene giovedì: 1 + 3 = 4, il giorno 4 è giovedì.
+che giorno viene 4 giorni dopo mercoledì? 4 giorni dopo mercoledì viene domenica: 3 + 4 = 7, il giorno 7 è domenica.
+3 giorni dopo domenica viene mercoledì: 7 + 3 = 10, 10 − 7 = 3, il giorno 3 è mercoledì.
+che giorno viene 2 giorni dopo martedì? 2 giorni dopo martedì viene giovedì: 2 + 2 = 4, il giorno 4 è giovedì.
+1 giorno dopo sabato viene domenica: 6 + 1 = 7, il giorno 7 è domenica.
+che giorno viene 6 giorni dopo lunedì? 6 giorni dopo lunedì viene domenica: 1 + 6 = 7, il giorno 7 è domenica.
+5 giorni dopo venerdì viene mercoledì: 5 + 5 = 10, 10 − 7 = 3, il giorno 3 è mercoledì.
 
-que dia vem 6 dias depois de domingo? 6 dias depois de domingo vem sábado.
-3 dias depois de quinta-feira vem domingo.
-que dia vem 4 dias depois de sábado? 4 dias depois de sábado vem quarta-feira.
-1 dia depois de quarta-feira vem quinta-feira.
-que dia vem 2 dias depois de sexta-feira? 2 dias depois de sexta-feira vem domingo.
-5 dias depois de terça-feira vem domingo.
-que dia vem 6 dias depois de quinta-feira? 6 dias depois de quinta-feira vem quarta-feira.
-3 dias depois de segunda-feira vem quinta-feira.
-que dia vem 4 dias depois de quarta-feira? 4 dias depois de quarta-feira vem domingo.
-3 dias depois de domingo vem quarta-feira.
-que dia vem 2 dias depois de terça-feira? 2 dias depois de terça-feira vem quinta-feira.
-1 dia depois de sábado vem domingo.
-que dia vem 6 dias depois de segunda-feira? 6 dias depois de segunda-feira vem domingo.
-5 dias depois de sexta-feira vem quarta-feira.
+que dia vem 6 dias depois de domingo? 6 dias depois de domingo vem sábado: 7 + 6 = 13, 13 − 7 = 6, o dia 6 é sábado.
+3 dias depois de quinta-feira vem domingo: 4 + 3 = 7, o dia 7 é domingo.
+que dia vem 4 dias depois de sábado? 4 dias depois de sábado vem quarta-feira: 6 + 4 = 10, 10 − 7 = 3, o dia 3 é quarta-feira.
+1 dia depois de quarta-feira vem quinta-feira: 3 + 1 = 4, o dia 4 é quinta-feira.
+que dia vem 2 dias depois de sexta-feira? 2 dias depois de sexta-feira vem domingo: 5 + 2 = 7, o dia 7 é domingo.
+5 dias depois de terça-feira vem domingo: 2 + 5 = 7, o dia 7 é domingo.
+que dia vem 6 dias depois de quinta-feira? 6 dias depois de quinta-feira vem quarta-feira: 4 + 6 = 10, 10 − 7 = 3, o dia 3 é quarta-feira.
+3 dias depois de segunda-feira vem quinta-feira: 1 + 3 = 4, o dia 4 é quinta-feira.
+que dia vem 4 dias depois de quarta-feira? 4 dias depois de quarta-feira vem domingo: 3 + 4 = 7, o dia 7 é domingo.
+3 dias depois de domingo vem quarta-feira: 7 + 3 = 10, 10 − 7 = 3, o dia 3 é quarta-feira.
+que dia vem 2 dias depois de terça-feira? 2 dias depois de terça-feira vem quinta-feira: 2 + 2 = 4, o dia 4 é quinta-feira.
+1 dia depois de sábado vem domingo: 6 + 1 = 7, o dia 7 é domingo.
+que dia vem 6 dias depois de segunda-feira? 6 dias depois de segunda-feira vem domingo: 1 + 6 = 7, o dia 7 é domingo.
+5 dias depois de sexta-feira vem quarta-feira: 5 + 5 = 10, 10 − 7 = 3, o dia 3 é quarta-feira.
 
-welke dag komt 6 dagen na zondag? 6 dagen na zondag komt zaterdag.
-3 dagen na donderdag komt zondag.
-welke dag komt 4 dagen na zaterdag? 4 dagen na zaterdag komt woensdag.
-1 dag na woensdag komt donderdag.
-welke dag komt 2 dagen na vrijdag? 2 dagen na vrijdag komt zondag.
-5 dagen na dinsdag komt zondag.
-welke dag komt 6 dagen na donderdag? 6 dagen na donderdag komt woensdag.
-3 dagen na maandag komt donderdag.
-welke dag komt 4 dagen na woensdag? 4 dagen na woensdag komt zondag.
-3 dagen na zondag komt woensdag.
-welke dag komt 2 dagen na dinsdag? 2 dagen na dinsdag komt donderdag.
-1 dag na zaterdag komt zondag.
-welke dag komt 6 dagen na maandag? 6 dagen na maandag komt zondag.
-5 dagen na vrijdag komt woensdag.
+welke dag komt 6 dagen na zondag? 6 dagen na zondag komt zaterdag: 7 + 6 = 13, 13 − 7 = 6, dag 6 is zaterdag.
+3 dagen na donderdag komt zondag: 4 + 3 = 7, dag 7 is zondag.
+welke dag komt 4 dagen na zaterdag? 4 dagen na zaterdag komt woensdag: 6 + 4 = 10, 10 − 7 = 3, dag 3 is woensdag.
+1 dag na woensdag komt donderdag: 3 + 1 = 4, dag 4 is donderdag.
+welke dag komt 2 dagen na vrijdag? 2 dagen na vrijdag komt zondag: 5 + 2 = 7, dag 7 is zondag.
+5 dagen na dinsdag komt zondag: 2 + 5 = 7, dag 7 is zondag.
+welke dag komt 6 dagen na donderdag? 6 dagen na donderdag komt woensdag: 4 + 6 = 10, 10 − 7 = 3, dag 3 is woensdag.
+3 dagen na maandag komt donderdag: 1 + 3 = 4, dag 4 is donderdag.
+welke dag komt 4 dagen na woensdag? 4 dagen na woensdag komt zondag: 3 + 4 = 7, dag 7 is zondag.
+3 dagen na zondag komt woensdag: 7 + 3 = 10, 10 − 7 = 3, dag 3 is woensdag.
+welke dag komt 2 dagen na dinsdag? 2 dagen na dinsdag komt donderdag: 2 + 2 = 4, dag 4 is donderdag.
+1 dag na zaterdag komt zondag: 6 + 1 = 7, dag 7 is zondag.
+welke dag komt 6 dagen na maandag? 6 dagen na maandag komt zondag: 1 + 6 = 7, dag 7 is zondag.
+5 dagen na vrijdag komt woensdag: 5 + 5 = 10, 10 − 7 = 3, dag 3 is woensdag.
 
-jaki dzień przypada 6 dni po niedzieli? 6 dni po niedzieli przypada sobota.
-3 dni po czwartku przypada niedziela.
-jaki dzień przypada 4 dni po sobocie? 4 dni po sobocie przypada środa.
-1 dzień po środzie przypada czwartek.
-jaki dzień przypada 2 dni po piątku? 2 dni po piątku przypada niedziela.
-5 dni po wtorku przypada niedziela.
-jaki dzień przypada 6 dni po czwartku? 6 dni po czwartku przypada środa.
-3 dni po poniedziałku przypada czwartek.
-jaki dzień przypada 4 dni po środzie? 4 dni po środzie przypada niedziela.
-3 dni po niedzieli przypada środa.
-jaki dzień przypada 2 dni po wtorku? 2 dni po wtorku przypada czwartek.
-1 dzień po sobocie przypada niedziela.
-jaki dzień przypada 6 dni po poniedziałku? 6 dni po poniedziałku przypada niedziela.
-5 dni po piątku przypada środa.
+jaki dzień przypada 6 dni po niedzieli? 6 dni po niedzieli przypada sobota: 7 + 6 = 13, 13 − 7 = 6, dzień 6 to sobota.
+3 dni po czwartku przypada niedziela: 4 + 3 = 7, dzień 7 to niedziela.
+jaki dzień przypada 4 dni po sobocie? 4 dni po sobocie przypada środa: 6 + 4 = 10, 10 − 7 = 3, dzień 3 to środa.
+1 dzień po środzie przypada czwartek: 3 + 1 = 4, dzień 4 to czwartek.
+jaki dzień przypada 2 dni po piątku? 2 dni po piątku przypada niedziela: 5 + 2 = 7, dzień 7 to niedziela.
+5 dni po wtorku przypada niedziela: 2 + 5 = 7, dzień 7 to niedziela.
+jaki dzień przypada 6 dni po czwartku? 6 dni po czwartku przypada środa: 4 + 6 = 10, 10 − 7 = 3, dzień 3 to środa.
+3 dni po poniedziałku przypada czwartek: 1 + 3 = 4, dzień 4 to czwartek.
+jaki dzień przypada 4 dni po środzie? 4 dni po środzie przypada niedziela: 3 + 4 = 7, dzień 7 to niedziela.
+3 dni po niedzieli przypada środa: 7 + 3 = 10, 10 − 7 = 3, dzień 3 to środa.
+jaki dzień przypada 2 dni po wtorku? 2 dni po wtorku przypada czwartek: 2 + 2 = 4, dzień 4 to czwartek.
+1 dzień po sobocie przypada niedziela: 6 + 1 = 7, dzień 7 to niedziela.
+jaki dzień przypada 6 dni po poniedziałku? 6 dni po poniedziałku przypada niedziela: 1 + 6 = 7, dzień 7 to niedziela.
+5 dni po piątku przypada środa: 5 + 5 = 10, 10 − 7 = 3, dzień 3 to środa.
 
-pazardan 6 gün sonra hangi gün gelir? pazardan 6 gün sonra cumartesi gelir.
-perşembeden 3 gün sonra pazar gelir.
-cumartesinden 4 gün sonra hangi gün gelir? cumartesinden 4 gün sonra çarşamba gelir.
-çarşambadan 1 gün sonra perşembe gelir.
-cumadan 2 gün sonra hangi gün gelir? cumadan 2 gün sonra pazar gelir.
-salıdan 5 gün sonra pazar gelir.
-perşembeden 6 gün sonra hangi gün gelir? perşembeden 6 gün sonra çarşamba gelir.
-pazartesiden 3 gün sonra perşembe gelir.
-çarşambadan 4 gün sonra hangi gün gelir? çarşambadan 4 gün sonra pazar gelir.
-pazardan 3 gün sonra çarşamba gelir.
-salıdan 2 gün sonra hangi gün gelir? salıdan 2 gün sonra perşembe gelir.
-cumartesinden 1 gün sonra pazar gelir.
-pazartesiden 6 gün sonra hangi gün gelir? pazartesiden 6 gün sonra pazar gelir.
-cumadan 5 gün sonra çarşamba gelir.
+pazardan 6 gün sonra hangi gün gelir? pazardan 6 gün sonra cumartesi gelir: 7 + 6 = 13, 13 − 7 = 6, 6. gün cumartesi.
+perşembeden 3 gün sonra pazar gelir: 4 + 3 = 7, 7. gün pazar.
+cumartesinden 4 gün sonra hangi gün gelir? cumartesinden 4 gün sonra çarşamba gelir: 6 + 4 = 10, 10 − 7 = 3, 3. gün çarşamba.
+çarşambadan 1 gün sonra perşembe gelir: 3 + 1 = 4, 4. gün perşembe.
+cumadan 2 gün sonra hangi gün gelir? cumadan 2 gün sonra pazar gelir: 5 + 2 = 7, 7. gün pazar.
+salıdan 5 gün sonra pazar gelir: 2 + 5 = 7, 7. gün pazar.
+perşembeden 6 gün sonra hangi gün gelir? perşembeden 6 gün sonra çarşamba gelir: 4 + 6 = 10, 10 − 7 = 3, 3. gün çarşamba.
+pazartesiden 3 gün sonra perşembe gelir: 1 + 3 = 4, 4. gün perşembe.
+çarşambadan 4 gün sonra hangi gün gelir? çarşambadan 4 gün sonra pazar gelir: 3 + 4 = 7, 7. gün pazar.
+pazardan 3 gün sonra çarşamba gelir: 7 + 3 = 10, 10 − 7 = 3, 3. gün çarşamba.
+salıdan 2 gün sonra hangi gün gelir? salıdan 2 gün sonra perşembe gelir: 2 + 2 = 4, 4. gün perşembe.
+cumartesinden 1 gün sonra pazar gelir: 6 + 1 = 7, 7. gün pazar.
+pazartesiden 6 gün sonra hangi gün gelir? pazartesiden 6 gün sonra pazar gelir: 1 + 6 = 7, 7. gün pazar.
+cumadan 5 gün sonra çarşamba gelir: 5 + 5 = 10, 10 − 7 = 3, 3. gün çarşamba.
 
-6 Tage nach Freitag kommt Donnerstag.
-welcher Tag kommt 3 Tage nach Dienstag? 3 Tage nach Dienstag kommt Freitag.
-4 Tage nach Montag kommt Freitag.
-welcher Tag kommt 3 Tage nach Freitag? 3 Tage nach Freitag kommt Montag.
-4 Tage nach Donnerstag kommt Montag.
-welcher Tag kommt 1 Tag nach Montag? 1 Tag nach Montag kommt Dienstag.
-4 Tage nach Sonntag kommt Donnerstag.
-welcher Tag kommt 1 Tag nach Donnerstag? 1 Tag nach Donnerstag kommt Freitag.
-2 Tage nach Mittwoch kommt Freitag.
-welcher Tag kommt 1 Tag nach Sonntag? 1 Tag nach Sonntag kommt Montag.
-2 Tage nach Samstag kommt Montag.
-welcher Tag kommt 5 Tage nach Mittwoch? 5 Tage nach Mittwoch kommt Montag.
-6 Tage nach Dienstag kommt Montag.
-welcher Tag kommt 5 Tage nach Samstag? 5 Tage nach Samstag kommt Donnerstag.
+6 Tage nach Freitag kommt Donnerstag: 5 + 6 = 11, 11 − 7 = 4, Tag 4 ist Donnerstag.
+welcher Tag kommt 3 Tage nach Dienstag? 3 Tage nach Dienstag kommt Freitag: 2 + 3 = 5, Tag 5 ist Freitag.
+4 Tage nach Montag kommt Freitag: 1 + 4 = 5, Tag 5 ist Freitag.
+welcher Tag kommt 3 Tage nach Freitag? 3 Tage nach Freitag kommt Montag: 5 + 3 = 8, 8 − 7 = 1, Tag 1 ist Montag.
+4 Tage nach Donnerstag kommt Montag: 4 + 4 = 8, 8 − 7 = 1, Tag 1 ist Montag.
+welcher Tag kommt 1 Tag nach Montag? 1 Tag nach Montag kommt Dienstag: 1 + 1 = 2, Tag 2 ist Dienstag.
+4 Tage nach Sonntag kommt Donnerstag: 7 + 4 = 11, 11 − 7 = 4, Tag 4 ist Donnerstag.
+welcher Tag kommt 1 Tag nach Donnerstag? 1 Tag nach Donnerstag kommt Freitag: 4 + 1 = 5, Tag 5 ist Freitag.
+2 Tage nach Mittwoch kommt Freitag: 3 + 2 = 5, Tag 5 ist Freitag.
+welcher Tag kommt 1 Tag nach Sonntag? 1 Tag nach Sonntag kommt Montag: 7 + 1 = 8, 8 − 7 = 1, Tag 1 ist Montag.
+2 Tage nach Samstag kommt Montag: 6 + 2 = 8, 8 − 7 = 1, Tag 1 ist Montag.
+welcher Tag kommt 5 Tage nach Mittwoch? 5 Tage nach Mittwoch kommt Montag: 3 + 5 = 8, 8 − 7 = 1, Tag 1 ist Montag.
+6 Tage nach Dienstag kommt Montag: 2 + 6 = 8, 8 − 7 = 1, Tag 1 ist Montag.
+welcher Tag kommt 5 Tage nach Samstag? 5 Tage nach Samstag kommt Donnerstag: 6 + 5 = 11, 11 − 7 = 4, Tag 4 ist Donnerstag.
 
-6 jours après vendredi vient jeudi.
-quel jour vient 3 jours après mardi ? 3 jours après mardi vient vendredi.
-4 jours après lundi vient vendredi.
-quel jour vient 3 jours après vendredi ? 3 jours après vendredi vient lundi.
-4 jours après jeudi vient lundi.
-quel jour vient 1 jour après lundi ? 1 jour après lundi vient mardi.
-4 jours après dimanche vient jeudi.
-quel jour vient 1 jour après jeudi ? 1 jour après jeudi vient vendredi.
-2 jours après mercredi vient vendredi.
-quel jour vient 1 jour après dimanche ? 1 jour après dimanche vient lundi.
-2 jours après samedi vient lundi.
-quel jour vient 5 jours après mercredi ? 5 jours après mercredi vient lundi.
-6 jours après mardi vient lundi.
-quel jour vient 5 jours après samedi ? 5 jours après samedi vient jeudi.
+6 jours après vendredi vient jeudi: 5 + 6 = 11, 11 − 7 = 4, le jour 4 est jeudi.
+quel jour vient 3 jours après mardi ? 3 jours après mardi vient vendredi: 2 + 3 = 5, le jour 5 est vendredi.
+4 jours après lundi vient vendredi: 1 + 4 = 5, le jour 5 est vendredi.
+quel jour vient 3 jours après vendredi ? 3 jours après vendredi vient lundi: 5 + 3 = 8, 8 − 7 = 1, le jour 1 est lundi.
+4 jours après jeudi vient lundi: 4 + 4 = 8, 8 − 7 = 1, le jour 1 est lundi.
+quel jour vient 1 jour après lundi ? 1 jour après lundi vient mardi: 1 + 1 = 2, le jour 2 est mardi.
+4 jours après dimanche vient jeudi: 7 + 4 = 11, 11 − 7 = 4, le jour 4 est jeudi.
+quel jour vient 1 jour après jeudi ? 1 jour après jeudi vient vendredi: 4 + 1 = 5, le jour 5 est vendredi.
+2 jours après mercredi vient vendredi: 3 + 2 = 5, le jour 5 est vendredi.
+quel jour vient 1 jour après dimanche ? 1 jour après dimanche vient lundi: 7 + 1 = 8, 8 − 7 = 1, le jour 1 est lundi.
+2 jours après samedi vient lundi: 6 + 2 = 8, 8 − 7 = 1, le jour 1 est lundi.
+quel jour vient 5 jours après mercredi ? 5 jours après mercredi vient lundi: 3 + 5 = 8, 8 − 7 = 1, le jour 1 est lundi.
+6 jours après mardi vient lundi: 2 + 6 = 8, 8 − 7 = 1, le jour 1 est lundi.
+quel jour vient 5 jours après samedi ? 5 jours après samedi vient jeudi: 6 + 5 = 11, 11 − 7 = 4, le jour 4 est jeudi.
 
-6 días después del viernes viene el jueves.
-¿qué día viene 3 días después del martes? 3 días después del martes viene el viernes.
-4 días después del lunes viene el viernes.
-¿qué día viene 3 días después del viernes? 3 días después del viernes viene el lunes.
-4 días después del jueves viene el lunes.
-¿qué día viene 1 día después del lunes? 1 día después del lunes viene el martes.
-4 días después del domingo viene el jueves.
-¿qué día viene 1 día después del jueves? 1 día después del jueves viene el viernes.
-2 días después del miércoles viene el viernes.
-¿qué día viene 1 día después del domingo? 1 día después del domingo viene el lunes.
-2 días después del sábado viene el lunes.
-¿qué día viene 5 días después del miércoles? 5 días después del miércoles viene el lunes.
-6 días después del martes viene el lunes.
-¿qué día viene 5 días después del sábado? 5 días después del sábado viene el jueves.
+6 días después del viernes viene el jueves: 5 + 6 = 11, 11 − 7 = 4, el día 4 es jueves.
+¿qué día viene 3 días después del martes? 3 días después del martes viene el viernes: 2 + 3 = 5, el día 5 es viernes.
+4 días después del lunes viene el viernes: 1 + 4 = 5, el día 5 es viernes.
+¿qué día viene 3 días después del viernes? 3 días después del viernes viene el lunes: 5 + 3 = 8, 8 − 7 = 1, el día 1 es lunes.
+4 días después del jueves viene el lunes: 4 + 4 = 8, 8 − 7 = 1, el día 1 es lunes.
+¿qué día viene 1 día después del lunes? 1 día después del lunes viene el martes: 1 + 1 = 2, el día 2 es martes.
+4 días después del domingo viene el jueves: 7 + 4 = 11, 11 − 7 = 4, el día 4 es jueves.
+¿qué día viene 1 día después del jueves? 1 día después del jueves viene el viernes: 4 + 1 = 5, el día 5 es viernes.
+2 días después del miércoles viene el viernes: 3 + 2 = 5, el día 5 es viernes.
+¿qué día viene 1 día después del domingo? 1 día después del domingo viene el lunes: 7 + 1 = 8, 8 − 7 = 1, el día 1 es lunes.
+2 días después del sábado viene el lunes: 6 + 2 = 8, 8 − 7 = 1, el día 1 es lunes.
+¿qué día viene 5 días después del miércoles? 5 días después del miércoles viene el lunes: 3 + 5 = 8, 8 − 7 = 1, el día 1 es lunes.
+6 días después del martes viene el lunes: 2 + 6 = 8, 8 − 7 = 1, el día 1 es lunes.
+¿qué día viene 5 días después del sábado? 5 días después del sábado viene el jueves: 6 + 5 = 11, 11 − 7 = 4, el día 4 es jueves.
 
-6 giorni dopo venerdì viene giovedì.
-che giorno viene 3 giorni dopo martedì? 3 giorni dopo martedì viene venerdì.
-4 giorni dopo lunedì viene venerdì.
-che giorno viene 3 giorni dopo venerdì? 3 giorni dopo venerdì viene lunedì.
-4 giorni dopo giovedì viene lunedì.
-che giorno viene 1 giorno dopo lunedì? 1 giorno dopo lunedì viene martedì.
-4 giorni dopo domenica viene giovedì.
-che giorno viene 1 giorno dopo giovedì? 1 giorno dopo giovedì viene venerdì.
-2 giorni dopo mercoledì viene venerdì.
-che giorno viene 1 giorno dopo domenica? 1 giorno dopo domenica viene lunedì.
-2 giorni dopo sabato viene lunedì.
-che giorno viene 5 giorni dopo mercoledì? 5 giorni dopo mercoledì viene lunedì.
-6 giorni dopo martedì viene lunedì.
-che giorno viene 5 giorni dopo sabato? 5 giorni dopo sabato viene giovedì.
+6 giorni dopo venerdì viene giovedì: 5 + 6 = 11, 11 − 7 = 4, il giorno 4 è giovedì.
+che giorno viene 3 giorni dopo martedì? 3 giorni dopo martedì viene venerdì: 2 + 3 = 5, il giorno 5 è venerdì.
+4 giorni dopo lunedì viene venerdì: 1 + 4 = 5, il giorno 5 è venerdì.
+che giorno viene 3 giorni dopo venerdì? 3 giorni dopo venerdì viene lunedì: 5 + 3 = 8, 8 − 7 = 1, il giorno 1 è lunedì.
+4 giorni dopo giovedì viene lunedì: 4 + 4 = 8, 8 − 7 = 1, il giorno 1 è lunedì.
+che giorno viene 1 giorno dopo lunedì? 1 giorno dopo lunedì viene martedì: 1 + 1 = 2, il giorno 2 è martedì.
+4 giorni dopo domenica viene giovedì: 7 + 4 = 11, 11 − 7 = 4, il giorno 4 è giovedì.
+che giorno viene 1 giorno dopo giovedì? 1 giorno dopo giovedì viene venerdì: 4 + 1 = 5, il giorno 5 è venerdì.
+2 giorni dopo mercoledì viene venerdì: 3 + 2 = 5, il giorno 5 è venerdì.
+che giorno viene 1 giorno dopo domenica? 1 giorno dopo domenica viene lunedì: 7 + 1 = 8, 8 − 7 = 1, il giorno 1 è lunedì.
+2 giorni dopo sabato viene lunedì: 6 + 2 = 8, 8 − 7 = 1, il giorno 1 è lunedì.
+che giorno viene 5 giorni dopo mercoledì? 5 giorni dopo mercoledì viene lunedì: 3 + 5 = 8, 8 − 7 = 1, il giorno 1 è lunedì.
+6 giorni dopo martedì viene lunedì: 2 + 6 = 8, 8 − 7 = 1, il giorno 1 è lunedì.
+che giorno viene 5 giorni dopo sabato? 5 giorni dopo sabato viene giovedì: 6 + 5 = 11, 11 − 7 = 4, il giorno 4 è giovedì.
 
-6 dias depois de sexta-feira vem quinta-feira.
-que dia vem 3 dias depois de terça-feira? 3 dias depois de terça-feira vem sexta-feira.
-4 dias depois de segunda-feira vem sexta-feira.
-que dia vem 3 dias depois de sexta-feira? 3 dias depois de sexta-feira vem segunda-feira.
-4 dias depois de quinta-feira vem segunda-feira.
-que dia vem 1 dia depois de segunda-feira? 1 dia depois de segunda-feira vem terça-feira.
-4 dias depois de domingo vem quinta-feira.
-que dia vem 1 dia depois de quinta-feira? 1 dia depois de quinta-feira vem sexta-feira.
-2 dias depois de quarta-feira vem sexta-feira.
-que dia vem 1 dia depois de domingo? 1 dia depois de domingo vem segunda-feira.
-2 dias depois de sábado vem segunda-feira.
-que dia vem 5 dias depois de quarta-feira? 5 dias depois de quarta-feira vem segunda-feira.
-6 dias depois de terça-feira vem segunda-feira.
-que dia vem 5 dias depois de sábado? 5 dias depois de sábado vem quinta-feira.
+6 dias depois de sexta-feira vem quinta-feira: 5 + 6 = 11, 11 − 7 = 4, o dia 4 é quinta-feira.
+que dia vem 3 dias depois de terça-feira? 3 dias depois de terça-feira vem sexta-feira: 2 + 3 = 5, o dia 5 é sexta-feira.
+4 dias depois de segunda-feira vem sexta-feira: 1 + 4 = 5, o dia 5 é sexta-feira.
+que dia vem 3 dias depois de sexta-feira? 3 dias depois de sexta-feira vem segunda-feira: 5 + 3 = 8, 8 − 7 = 1, o dia 1 é segunda-feira.
+4 dias depois de quinta-feira vem segunda-feira: 4 + 4 = 8, 8 − 7 = 1, o dia 1 é segunda-feira.
+que dia vem 1 dia depois de segunda-feira? 1 dia depois de segunda-feira vem terça-feira: 1 + 1 = 2, o dia 2 é terça-feira.
+4 dias depois de domingo vem quinta-feira: 7 + 4 = 11, 11 − 7 = 4, o dia 4 é quinta-feira.
+que dia vem 1 dia depois de quinta-feira? 1 dia depois de quinta-feira vem sexta-feira: 4 + 1 = 5, o dia 5 é sexta-feira.
+2 dias depois de quarta-feira vem sexta-feira: 3 + 2 = 5, o dia 5 é sexta-feira.
+que dia vem 1 dia depois de domingo? 1 dia depois de domingo vem segunda-feira: 7 + 1 = 8, 8 − 7 = 1, o dia 1 é segunda-feira.
+2 dias depois de sábado vem segunda-feira: 6 + 2 = 8, 8 − 7 = 1, o dia 1 é segunda-feira.
+que dia vem 5 dias depois de quarta-feira? 5 dias depois de quarta-feira vem segunda-feira: 3 + 5 = 8, 8 − 7 = 1, o dia 1 é segunda-feira.
+6 dias depois de terça-feira vem segunda-feira: 2 + 6 = 8, 8 − 7 = 1, o dia 1 é segunda-feira.
+que dia vem 5 dias depois de sábado? 5 dias depois de sábado vem quinta-feira: 6 + 5 = 11, 11 − 7 = 4, o dia 4 é quinta-feira.
 
-6 dagen na vrijdag komt donderdag.
-welke dag komt 3 dagen na dinsdag? 3 dagen na dinsdag komt vrijdag.
-4 dagen na maandag komt vrijdag.
-welke dag komt 3 dagen na vrijdag? 3 dagen na vrijdag komt maandag.
-4 dagen na donderdag komt maandag.
-welke dag komt 1 dag na maandag? 1 dag na maandag komt dinsdag.
-4 dagen na zondag komt donderdag.
-welke dag komt 1 dag na donderdag? 1 dag na donderdag komt vrijdag.
-2 dagen na woensdag komt vrijdag.
-welke dag komt 1 dag na zondag? 1 dag na zondag komt maandag.
-2 dagen na zaterdag komt maandag.
-welke dag komt 5 dagen na woensdag? 5 dagen na woensdag komt maandag.
-6 dagen na dinsdag komt maandag.
-welke dag komt 5 dagen na zaterdag? 5 dagen na zaterdag komt donderdag.
+6 dagen na vrijdag komt donderdag: 5 + 6 = 11, 11 − 7 = 4, dag 4 is donderdag.
+welke dag komt 3 dagen na dinsdag? 3 dagen na dinsdag komt vrijdag: 2 + 3 = 5, dag 5 is vrijdag.
+4 dagen na maandag komt vrijdag: 1 + 4 = 5, dag 5 is vrijdag.
+welke dag komt 3 dagen na vrijdag? 3 dagen na vrijdag komt maandag: 5 + 3 = 8, 8 − 7 = 1, dag 1 is maandag.
+4 dagen na donderdag komt maandag: 4 + 4 = 8, 8 − 7 = 1, dag 1 is maandag.
+welke dag komt 1 dag na maandag? 1 dag na maandag komt dinsdag: 1 + 1 = 2, dag 2 is dinsdag.
+4 dagen na zondag komt donderdag: 7 + 4 = 11, 11 − 7 = 4, dag 4 is donderdag.
+welke dag komt 1 dag na donderdag? 1 dag na donderdag komt vrijdag: 4 + 1 = 5, dag 5 is vrijdag.
+2 dagen na woensdag komt vrijdag: 3 + 2 = 5, dag 5 is vrijdag.
+welke dag komt 1 dag na zondag? 1 dag na zondag komt maandag: 7 + 1 = 8, 8 − 7 = 1, dag 1 is maandag.
+2 dagen na zaterdag komt maandag: 6 + 2 = 8, 8 − 7 = 1, dag 1 is maandag.
+welke dag komt 5 dagen na woensdag? 5 dagen na woensdag komt maandag: 3 + 5 = 8, 8 − 7 = 1, dag 1 is maandag.
+6 dagen na dinsdag komt maandag: 2 + 6 = 8, 8 − 7 = 1, dag 1 is maandag.
+welke dag komt 5 dagen na zaterdag? 5 dagen na zaterdag komt donderdag: 6 + 5 = 11, 11 − 7 = 4, dag 4 is donderdag.
 
-6 dni po piątku przypada czwartek.
-jaki dzień przypada 3 dni po wtorku? 3 dni po wtorku przypada piątek.
-4 dni po poniedziałku przypada piątek.
-jaki dzień przypada 3 dni po piątku? 3 dni po piątku przypada poniedziałek.
-4 dni po czwartku przypada poniedziałek.
-jaki dzień przypada 1 dzień po poniedziałku? 1 dzień po poniedziałku przypada wtorek.
-4 dni po niedzieli przypada czwartek.
-jaki dzień przypada 1 dzień po czwartku? 1 dzień po czwartku przypada piątek.
-2 dni po środzie przypada piątek.
-jaki dzień przypada 1 dzień po niedzieli? 1 dzień po niedzieli przypada poniedziałek.
-2 dni po sobocie przypada poniedziałek.
-jaki dzień przypada 5 dni po środzie? 5 dni po środzie przypada poniedziałek.
-6 dni po wtorku przypada poniedziałek.
-jaki dzień przypada 5 dni po sobocie? 5 dni po sobocie przypada czwartek.
+6 dni po piątku przypada czwartek: 5 + 6 = 11, 11 − 7 = 4, dzień 4 to czwartek.
+jaki dzień przypada 3 dni po wtorku? 3 dni po wtorku przypada piątek: 2 + 3 = 5, dzień 5 to piątek.
+4 dni po poniedziałku przypada piątek: 1 + 4 = 5, dzień 5 to piątek.
+jaki dzień przypada 3 dni po piątku? 3 dni po piątku przypada poniedziałek: 5 + 3 = 8, 8 − 7 = 1, dzień 1 to poniedziałek.
+4 dni po czwartku przypada poniedziałek: 4 + 4 = 8, 8 − 7 = 1, dzień 1 to poniedziałek.
+jaki dzień przypada 1 dzień po poniedziałku? 1 dzień po poniedziałku przypada wtorek: 1 + 1 = 2, dzień 2 to wtorek.
+4 dni po niedzieli przypada czwartek: 7 + 4 = 11, 11 − 7 = 4, dzień 4 to czwartek.
+jaki dzień przypada 1 dzień po czwartku? 1 dzień po czwartku przypada piątek: 4 + 1 = 5, dzień 5 to piątek.
+2 dni po środzie przypada piątek: 3 + 2 = 5, dzień 5 to piątek.
+jaki dzień przypada 1 dzień po niedzieli? 1 dzień po niedzieli przypada poniedziałek: 7 + 1 = 8, 8 − 7 = 1, dzień 1 to poniedziałek.
+2 dni po sobocie przypada poniedziałek: 6 + 2 = 8, 8 − 7 = 1, dzień 1 to poniedziałek.
+jaki dzień przypada 5 dni po środzie? 5 dni po środzie przypada poniedziałek: 3 + 5 = 8, 8 − 7 = 1, dzień 1 to poniedziałek.
+6 dni po wtorku przypada poniedziałek: 2 + 6 = 8, 8 − 7 = 1, dzień 1 to poniedziałek.
+jaki dzień przypada 5 dni po sobocie? 5 dni po sobocie przypada czwartek: 6 + 5 = 11, 11 − 7 = 4, dzień 4 to czwartek.
 
-cumadan 6 gün sonra perşembe gelir.
-salıdan 3 gün sonra hangi gün gelir? salıdan 3 gün sonra cuma gelir.
-pazartesiden 4 gün sonra cuma gelir.
-cumadan 3 gün sonra hangi gün gelir? cumadan 3 gün sonra pazartesi gelir.
-perşembeden 4 gün sonra pazartesi gelir.
-pazartesiden 1 gün sonra hangi gün gelir? pazartesiden 1 gün sonra salı gelir.
-pazardan 4 gün sonra perşembe gelir.
-perşembeden 1 gün sonra hangi gün gelir? perşembeden 1 gün sonra cuma gelir.
-çarşambadan 2 gün sonra cuma gelir.
-pazardan 1 gün sonra hangi gün gelir? pazardan 1 gün sonra pazartesi gelir.
-cumartesinden 2 gün sonra pazartesi gelir.
-çarşambadan 5 gün sonra hangi gün gelir? çarşambadan 5 gün sonra pazartesi gelir.
-salıdan 6 gün sonra pazartesi gelir.
-cumartesinden 5 gün sonra hangi gün gelir? cumartesinden 5 gün sonra perşembe gelir.
+cumadan 6 gün sonra perşembe gelir: 5 + 6 = 11, 11 − 7 = 4, 4. gün perşembe.
+salıdan 3 gün sonra hangi gün gelir? salıdan 3 gün sonra cuma gelir: 2 + 3 = 5, 5. gün cuma.
+pazartesiden 4 gün sonra cuma gelir: 1 + 4 = 5, 5. gün cuma.
+cumadan 3 gün sonra hangi gün gelir? cumadan 3 gün sonra pazartesi gelir: 5 + 3 = 8, 8 − 7 = 1, 1. gün pazartesi.
+perşembeden 4 gün sonra pazartesi gelir: 4 + 4 = 8, 8 − 7 = 1, 1. gün pazartesi.
+pazartesiden 1 gün sonra hangi gün gelir? pazartesiden 1 gün sonra salı gelir: 1 + 1 = 2, 2. gün salı.
+pazardan 4 gün sonra perşembe gelir: 7 + 4 = 11, 11 − 7 = 4, 4. gün perşembe.
+perşembeden 1 gün sonra hangi gün gelir? perşembeden 1 gün sonra cuma gelir: 4 + 1 = 5, 5. gün cuma.
+çarşambadan 2 gün sonra cuma gelir: 3 + 2 = 5, 5. gün cuma.
+pazardan 1 gün sonra hangi gün gelir? pazardan 1 gün sonra pazartesi gelir: 7 + 1 = 8, 8 − 7 = 1, 1. gün pazartesi.
+cumartesinden 2 gün sonra pazartesi gelir: 6 + 2 = 8, 8 − 7 = 1, 1. gün pazartesi.
+çarşambadan 5 gün sonra hangi gün gelir? çarşambadan 5 gün sonra pazartesi gelir: 3 + 5 = 8, 8 − 7 = 1, 1. gün pazartesi.
+salıdan 6 gün sonra pazartesi gelir: 2 + 6 = 8, 8 − 7 = 1, 1. gün pazartesi.
+cumartesinden 5 gün sonra hangi gün gelir? cumartesinden 5 gün sonra perşembe gelir: 6 + 5 = 11, 11 − 7 = 4, 4. gün perşembe.
 
-1 Tag nach Freitag kommt Samstag.
-welcher Tag kommt 6 Tage nach Mittwoch? 6 Tage nach Mittwoch kommt Dienstag.
-3 Tage nach Mittwoch kommt Samstag.
-welcher Tag kommt 2 Tage nach Montag? 2 Tage nach Montag kommt Mittwoch.
-5 Tage nach Montag kommt Samstag.
-welcher Tag kommt 6 Tage nach Samstag? 6 Tage nach Samstag kommt Freitag.
-3 Tage nach Samstag kommt Dienstag.
-welcher Tag kommt 2 Tage nach Donnerstag? 2 Tage nach Donnerstag kommt Samstag.
-5 Tage nach Donnerstag kommt Dienstag.
-welcher Tag kommt 4 Tage nach Dienstag? 4 Tage nach Dienstag kommt Samstag.
-1 Tag nach Dienstag kommt Mittwoch.
-welcher Tag kommt 2 Tage nach Sonntag? 2 Tage nach Sonntag kommt Dienstag.
-5 Tage nach Sonntag kommt Freitag.
-welcher Tag kommt 4 Tage nach Freitag? 4 Tage nach Freitag kommt Dienstag.
+1 Tag nach Freitag kommt Samstag: 5 + 1 = 6, Tag 6 ist Samstag.
+welcher Tag kommt 6 Tage nach Mittwoch? 6 Tage nach Mittwoch kommt Dienstag: 3 + 6 = 9, 9 − 7 = 2, Tag 2 ist Dienstag.
+3 Tage nach Mittwoch kommt Samstag: 3 + 3 = 6, Tag 6 ist Samstag.
+welcher Tag kommt 2 Tage nach Montag? 2 Tage nach Montag kommt Mittwoch: 1 + 2 = 3, Tag 3 ist Mittwoch.
+5 Tage nach Montag kommt Samstag: 1 + 5 = 6, Tag 6 ist Samstag.
+welcher Tag kommt 6 Tage nach Samstag? 6 Tage nach Samstag kommt Freitag: 6 + 6 = 12, 12 − 7 = 5, Tag 5 ist Freitag.
+3 Tage nach Samstag kommt Dienstag: 6 + 3 = 9, 9 − 7 = 2, Tag 2 ist Dienstag.
+welcher Tag kommt 2 Tage nach Donnerstag? 2 Tage nach Donnerstag kommt Samstag: 4 + 2 = 6, Tag 6 ist Samstag.
+5 Tage nach Donnerstag kommt Dienstag: 4 + 5 = 9, 9 − 7 = 2, Tag 2 ist Dienstag.
+welcher Tag kommt 4 Tage nach Dienstag? 4 Tage nach Dienstag kommt Samstag: 2 + 4 = 6, Tag 6 ist Samstag.
+1 Tag nach Dienstag kommt Mittwoch: 2 + 1 = 3, Tag 3 ist Mittwoch.
+welcher Tag kommt 2 Tage nach Sonntag? 2 Tage nach Sonntag kommt Dienstag: 7 + 2 = 9, 9 − 7 = 2, Tag 2 ist Dienstag.
+5 Tage nach Sonntag kommt Freitag: 7 + 5 = 12, 12 − 7 = 5, Tag 5 ist Freitag.
+welcher Tag kommt 4 Tage nach Freitag? 4 Tage nach Freitag kommt Dienstag: 5 + 4 = 9, 9 − 7 = 2, Tag 2 ist Dienstag.
 
-1 jour après vendredi vient samedi.
-quel jour vient 6 jours après mercredi ? 6 jours après mercredi vient mardi.
-3 jours après mercredi vient samedi.
-quel jour vient 2 jours après lundi ? 2 jours après lundi vient mercredi.
-5 jours après lundi vient samedi.
-quel jour vient 6 jours après samedi ? 6 jours après samedi vient vendredi.
-3 jours après samedi vient mardi.
-quel jour vient 2 jours après jeudi ? 2 jours après jeudi vient samedi.
-5 jours après jeudi vient mardi.
-quel jour vient 4 jours après mardi ? 4 jours après mardi vient samedi.
-1 jour après mardi vient mercredi.
-quel jour vient 2 jours après dimanche ? 2 jours après dimanche vient mardi.
-5 jours après dimanche vient vendredi.
-quel jour vient 4 jours après vendredi ? 4 jours après vendredi vient mardi.
+1 jour après vendredi vient samedi: 5 + 1 = 6, le jour 6 est samedi.
+quel jour vient 6 jours après mercredi ? 6 jours après mercredi vient mardi: 3 + 6 = 9, 9 − 7 = 2, le jour 2 est mardi.
+3 jours après mercredi vient samedi: 3 + 3 = 6, le jour 6 est samedi.
+quel jour vient 2 jours après lundi ? 2 jours après lundi vient mercredi: 1 + 2 = 3, le jour 3 est mercredi.
+5 jours après lundi vient samedi: 1 + 5 = 6, le jour 6 est samedi.
+quel jour vient 6 jours après samedi ? 6 jours après samedi vient vendredi: 6 + 6 = 12, 12 − 7 = 5, le jour 5 est vendredi.
+3 jours après samedi vient mardi: 6 + 3 = 9, 9 − 7 = 2, le jour 2 est mardi.
+quel jour vient 2 jours après jeudi ? 2 jours après jeudi vient samedi: 4 + 2 = 6, le jour 6 est samedi.
+5 jours après jeudi vient mardi: 4 + 5 = 9, 9 − 7 = 2, le jour 2 est mardi.
+quel jour vient 4 jours après mardi ? 4 jours après mardi vient samedi: 2 + 4 = 6, le jour 6 est samedi.
+1 jour après mardi vient mercredi: 2 + 1 = 3, le jour 3 est mercredi.
+quel jour vient 2 jours après dimanche ? 2 jours après dimanche vient mardi: 7 + 2 = 9, 9 − 7 = 2, le jour 2 est mardi.
+5 jours après dimanche vient vendredi: 7 + 5 = 12, 12 − 7 = 5, le jour 5 est vendredi.
+quel jour vient 4 jours après vendredi ? 4 jours après vendredi vient mardi: 5 + 4 = 9, 9 − 7 = 2, le jour 2 est mardi.
 
-1 día después del viernes viene el sábado.
-¿qué día viene 6 días después del miércoles? 6 días después del miércoles viene el martes.
-3 días después del miércoles viene el sábado.
-¿qué día viene 2 días después del lunes? 2 días después del lunes viene el miércoles.
-5 días después del lunes viene el sábado.
-¿qué día viene 6 días después del sábado? 6 días después del sábado viene el viernes.
-3 días después del sábado viene el martes.
-¿qué día viene 2 días después del jueves? 2 días después del jueves viene el sábado.
-5 días después del jueves viene el martes.
-¿qué día viene 4 días después del martes? 4 días después del martes viene el sábado.
-1 día después del martes viene el miércoles.
-¿qué día viene 2 días después del domingo? 2 días después del domingo viene el martes.
-5 días después del domingo viene el viernes.
-¿qué día viene 4 días después del viernes? 4 días después del viernes viene el martes.
+1 día después del viernes viene el sábado: 5 + 1 = 6, el día 6 es sábado.
+¿qué día viene 6 días después del miércoles? 6 días después del miércoles viene el martes: 3 + 6 = 9, 9 − 7 = 2, el día 2 es martes.
+3 días después del miércoles viene el sábado: 3 + 3 = 6, el día 6 es sábado.
+¿qué día viene 2 días después del lunes? 2 días después del lunes viene el miércoles: 1 + 2 = 3, el día 3 es miércoles.
+5 días después del lunes viene el sábado: 1 + 5 = 6, el día 6 es sábado.
+¿qué día viene 6 días después del sábado? 6 días después del sábado viene el viernes: 6 + 6 = 12, 12 − 7 = 5, el día 5 es viernes.
+3 días después del sábado viene el martes: 6 + 3 = 9, 9 − 7 = 2, el día 2 es martes.
+¿qué día viene 2 días después del jueves? 2 días después del jueves viene el sábado: 4 + 2 = 6, el día 6 es sábado.
+5 días después del jueves viene el martes: 4 + 5 = 9, 9 − 7 = 2, el día 2 es martes.
+¿qué día viene 4 días después del martes? 4 días después del martes viene el sábado: 2 + 4 = 6, el día 6 es sábado.
+1 día después del martes viene el miércoles: 2 + 1 = 3, el día 3 es miércoles.
+¿qué día viene 2 días después del domingo? 2 días después del domingo viene el martes: 7 + 2 = 9, 9 − 7 = 2, el día 2 es martes.
+5 días después del domingo viene el viernes: 7 + 5 = 12, 12 − 7 = 5, el día 5 es viernes.
+¿qué día viene 4 días después del viernes? 4 días después del viernes viene el martes: 5 + 4 = 9, 9 − 7 = 2, el día 2 es martes.
 
-1 giorno dopo venerdì viene sabato.
-che giorno viene 6 giorni dopo mercoledì? 6 giorni dopo mercoledì viene martedì.
-3 giorni dopo mercoledì viene sabato.
-che giorno viene 2 giorni dopo lunedì? 2 giorni dopo lunedì viene mercoledì.
-5 giorni dopo lunedì viene sabato.
-che giorno viene 6 giorni dopo sabato? 6 giorni dopo sabato viene venerdì.
-3 giorni dopo sabato viene martedì.
-che giorno viene 2 giorni dopo giovedì? 2 giorni dopo giovedì viene sabato.
-5 giorni dopo giovedì viene martedì.
-che giorno viene 4 giorni dopo martedì? 4 giorni dopo martedì viene sabato.
-1 giorno dopo martedì viene mercoledì.
-che giorno viene 2 giorni dopo domenica? 2 giorni dopo domenica viene martedì.
-5 giorni dopo domenica viene venerdì.
-che giorno viene 4 giorni dopo venerdì? 4 giorni dopo venerdì viene martedì.
+1 giorno dopo venerdì viene sabato: 5 + 1 = 6, il giorno 6 è sabato.
+che giorno viene 6 giorni dopo mercoledì? 6 giorni dopo mercoledì viene martedì: 3 + 6 = 9, 9 − 7 = 2, il giorno 2 è martedì.
+3 giorni dopo mercoledì viene sabato: 3 + 3 = 6, il giorno 6 è sabato.
+che giorno viene 2 giorni dopo lunedì? 2 giorni dopo lunedì viene mercoledì: 1 + 2 = 3, il giorno 3 è mercoledì.
+5 giorni dopo lunedì viene sabato: 1 + 5 = 6, il giorno 6 è sabato.
+che giorno viene 6 giorni dopo sabato? 6 giorni dopo sabato viene venerdì: 6 + 6 = 12, 12 − 7 = 5, il giorno 5 è venerdì.
+3 giorni dopo sabato viene martedì: 6 + 3 = 9, 9 − 7 = 2, il giorno 2 è martedì.
+che giorno viene 2 giorni dopo giovedì? 2 giorni dopo giovedì viene sabato: 4 + 2 = 6, il giorno 6 è sabato.
+5 giorni dopo giovedì viene martedì: 4 + 5 = 9, 9 − 7 = 2, il giorno 2 è martedì.
+che giorno viene 4 giorni dopo martedì? 4 giorni dopo martedì viene sabato: 2 + 4 = 6, il giorno 6 è sabato.
+1 giorno dopo martedì viene mercoledì: 2 + 1 = 3, il giorno 3 è mercoledì.
+che giorno viene 2 giorni dopo domenica? 2 giorni dopo domenica viene martedì: 7 + 2 = 9, 9 − 7 = 2, il giorno 2 è martedì.
+5 giorni dopo domenica viene venerdì: 7 + 5 = 12, 12 − 7 = 5, il giorno 5 è venerdì.
+che giorno viene 4 giorni dopo venerdì? 4 giorni dopo venerdì viene martedì: 5 + 4 = 9, 9 − 7 = 2, il giorno 2 è martedì.
 
-1 dia depois de sexta-feira vem sábado.
-que dia vem 6 dias depois de quarta-feira? 6 dias depois de quarta-feira vem terça-feira.
-3 dias depois de quarta-feira vem sábado.
-que dia vem 2 dias depois de segunda-feira? 2 dias depois de segunda-feira vem quarta-feira.
-5 dias depois de segunda-feira vem sábado.
-que dia vem 6 dias depois de sábado? 6 dias depois de sábado vem sexta-feira.
-3 dias depois de sábado vem terça-feira.
-que dia vem 2 dias depois de quinta-feira? 2 dias depois de quinta-feira vem sábado.
-5 dias depois de quinta-feira vem terça-feira.
-que dia vem 4 dias depois de terça-feira? 4 dias depois de terça-feira vem sábado.
-1 dia depois de terça-feira vem quarta-feira.
-que dia vem 2 dias depois de domingo? 2 dias depois de domingo vem terça-feira.
-5 dias depois de domingo vem sexta-feira.
-que dia vem 4 dias depois de sexta-feira? 4 dias depois de sexta-feira vem terça-feira.
+1 dia depois de sexta-feira vem sábado: 5 + 1 = 6, o dia 6 é sábado.
+que dia vem 6 dias depois de quarta-feira? 6 dias depois de quarta-feira vem terça-feira: 3 + 6 = 9, 9 − 7 = 2, o dia 2 é terça-feira.
+3 dias depois de quarta-feira vem sábado: 3 + 3 = 6, o dia 6 é sábado.
+que dia vem 2 dias depois de segunda-feira? 2 dias depois de segunda-feira vem quarta-feira: 1 + 2 = 3, o dia 3 é quarta-feira.
+5 dias depois de segunda-feira vem sábado: 1 + 5 = 6, o dia 6 é sábado.
+que dia vem 6 dias depois de sábado? 6 dias depois de sábado vem sexta-feira: 6 + 6 = 12, 12 − 7 = 5, o dia 5 é sexta-feira.
+3 dias depois de sábado vem terça-feira: 6 + 3 = 9, 9 − 7 = 2, o dia 2 é terça-feira.
+que dia vem 2 dias depois de quinta-feira? 2 dias depois de quinta-feira vem sábado: 4 + 2 = 6, o dia 6 é sábado.
+5 dias depois de quinta-feira vem terça-feira: 4 + 5 = 9, 9 − 7 = 2, o dia 2 é terça-feira.
+que dia vem 4 dias depois de terça-feira? 4 dias depois de terça-feira vem sábado: 2 + 4 = 6, o dia 6 é sábado.
+1 dia depois de terça-feira vem quarta-feira: 2 + 1 = 3, o dia 3 é quarta-feira.
+que dia vem 2 dias depois de domingo? 2 dias depois de domingo vem terça-feira: 7 + 2 = 9, 9 − 7 = 2, o dia 2 é terça-feira.
+5 dias depois de domingo vem sexta-feira: 7 + 5 = 12, 12 − 7 = 5, o dia 5 é sexta-feira.
+que dia vem 4 dias depois de sexta-feira? 4 dias depois de sexta-feira vem terça-feira: 5 + 4 = 9, 9 − 7 = 2, o dia 2 é terça-feira.
 
-1 dag na vrijdag komt zaterdag.
-welke dag komt 6 dagen na woensdag? 6 dagen na woensdag komt dinsdag.
-3 dagen na woensdag komt zaterdag.
-welke dag komt 2 dagen na maandag? 2 dagen na maandag komt woensdag.
-5 dagen na maandag komt zaterdag.
-welke dag komt 6 dagen na zaterdag? 6 dagen na zaterdag komt vrijdag.
-3 dagen na zaterdag komt dinsdag.
-welke dag komt 2 dagen na donderdag? 2 dagen na donderdag komt zaterdag.
-5 dagen na donderdag komt dinsdag.
-welke dag komt 4 dagen na dinsdag? 4 dagen na dinsdag komt zaterdag.
-1 dag na dinsdag komt woensdag.
-welke dag komt 2 dagen na zondag? 2 dagen na zondag komt dinsdag.
-5 dagen na zondag komt vrijdag.
-welke dag komt 4 dagen na vrijdag? 4 dagen na vrijdag komt dinsdag.
+1 dag na vrijdag komt zaterdag: 5 + 1 = 6, dag 6 is zaterdag.
+welke dag komt 6 dagen na woensdag? 6 dagen na woensdag komt dinsdag: 3 + 6 = 9, 9 − 7 = 2, dag 2 is dinsdag.
+3 dagen na woensdag komt zaterdag: 3 + 3 = 6, dag 6 is zaterdag.
+welke dag komt 2 dagen na maandag? 2 dagen na maandag komt woensdag: 1 + 2 = 3, dag 3 is woensdag.
+5 dagen na maandag komt zaterdag: 1 + 5 = 6, dag 6 is zaterdag.
+welke dag komt 6 dagen na zaterdag? 6 dagen na zaterdag komt vrijdag: 6 + 6 = 12, 12 − 7 = 5, dag 5 is vrijdag.
+3 dagen na zaterdag komt dinsdag: 6 + 3 = 9, 9 − 7 = 2, dag 2 is dinsdag.
+welke dag komt 2 dagen na donderdag? 2 dagen na donderdag komt zaterdag: 4 + 2 = 6, dag 6 is zaterdag.
+5 dagen na donderdag komt dinsdag: 4 + 5 = 9, 9 − 7 = 2, dag 2 is dinsdag.
+welke dag komt 4 dagen na dinsdag? 4 dagen na dinsdag komt zaterdag: 2 + 4 = 6, dag 6 is zaterdag.
+1 dag na dinsdag komt woensdag: 2 + 1 = 3, dag 3 is woensdag.
+welke dag komt 2 dagen na zondag? 2 dagen na zondag komt dinsdag: 7 + 2 = 9, 9 − 7 = 2, dag 2 is dinsdag.
+5 dagen na zondag komt vrijdag: 7 + 5 = 12, 12 − 7 = 5, dag 5 is vrijdag.
+welke dag komt 4 dagen na vrijdag? 4 dagen na vrijdag komt dinsdag: 5 + 4 = 9, 9 − 7 = 2, dag 2 is dinsdag.
 
-1 dzień po piątku przypada sobota.
-jaki dzień przypada 6 dni po środzie? 6 dni po środzie przypada wtorek.
-3 dni po środzie przypada sobota.
-jaki dzień przypada 2 dni po poniedziałku? 2 dni po poniedziałku przypada środa.
-5 dni po poniedziałku przypada sobota.
-jaki dzień przypada 6 dni po sobocie? 6 dni po sobocie przypada piątek.
-3 dni po sobocie przypada wtorek.
-jaki dzień przypada 2 dni po czwartku? 2 dni po czwartku przypada sobota.
-5 dni po czwartku przypada wtorek.
-jaki dzień przypada 4 dni po wtorku? 4 dni po wtorku przypada sobota.
-1 dzień po wtorku przypada środa.
-jaki dzień przypada 2 dni po niedzieli? 2 dni po niedzieli przypada wtorek.
-5 dni po niedzieli przypada piątek.
-jaki dzień przypada 4 dni po piątku? 4 dni po piątku przypada wtorek.
+1 dzień po piątku przypada sobota: 5 + 1 = 6, dzień 6 to sobota.
+jaki dzień przypada 6 dni po środzie? 6 dni po środzie przypada wtorek: 3 + 6 = 9, 9 − 7 = 2, dzień 2 to wtorek.
+3 dni po środzie przypada sobota: 3 + 3 = 6, dzień 6 to sobota.
+jaki dzień przypada 2 dni po poniedziałku? 2 dni po poniedziałku przypada środa: 1 + 2 = 3, dzień 3 to środa.
+5 dni po poniedziałku przypada sobota: 1 + 5 = 6, dzień 6 to sobota.
+jaki dzień przypada 6 dni po sobocie? 6 dni po sobocie przypada piątek: 6 + 6 = 12, 12 − 7 = 5, dzień 5 to piątek.
+3 dni po sobocie przypada wtorek: 6 + 3 = 9, 9 − 7 = 2, dzień 2 to wtorek.
+jaki dzień przypada 2 dni po czwartku? 2 dni po czwartku przypada sobota: 4 + 2 = 6, dzień 6 to sobota.
+5 dni po czwartku przypada wtorek: 4 + 5 = 9, 9 − 7 = 2, dzień 2 to wtorek.
+jaki dzień przypada 4 dni po wtorku? 4 dni po wtorku przypada sobota: 2 + 4 = 6, dzień 6 to sobota.
+1 dzień po wtorku przypada środa: 2 + 1 = 3, dzień 3 to środa.
+jaki dzień przypada 2 dni po niedzieli? 2 dni po niedzieli przypada wtorek: 7 + 2 = 9, 9 − 7 = 2, dzień 2 to wtorek.
+5 dni po niedzieli przypada piątek: 7 + 5 = 12, 12 − 7 = 5, dzień 5 to piątek.
+jaki dzień przypada 4 dni po piątku? 4 dni po piątku przypada wtorek: 5 + 4 = 9, 9 − 7 = 2, dzień 2 to wtorek.
 
-cumadan 1 gün sonra cumartesi gelir.
-çarşambadan 6 gün sonra hangi gün gelir? çarşambadan 6 gün sonra salı gelir.
-çarşambadan 3 gün sonra cumartesi gelir.
-pazartesiden 2 gün sonra hangi gün gelir? pazartesiden 2 gün sonra çarşamba gelir.
-pazartesiden 5 gün sonra cumartesi gelir.
-cumartesinden 6 gün sonra hangi gün gelir? cumartesinden 6 gün sonra cuma gelir.
-cumartesinden 3 gün sonra salı gelir.
-perşembeden 2 gün sonra hangi gün gelir? perşembeden 2 gün sonra cumartesi gelir.
-perşembeden 5 gün sonra salı gelir.
-salıdan 4 gün sonra hangi gün gelir? salıdan 4 gün sonra cumartesi gelir.
-salıdan 1 gün sonra çarşamba gelir.
-pazardan 2 gün sonra hangi gün gelir? pazardan 2 gün sonra salı gelir.
-pazardan 5 gün sonra cuma gelir.
-cumadan 4 gün sonra hangi gün gelir? cumadan 4 gün sonra salı gelir.
+cumadan 1 gün sonra cumartesi gelir: 5 + 1 = 6, 6. gün cumartesi.
+çarşambadan 6 gün sonra hangi gün gelir? çarşambadan 6 gün sonra salı gelir: 3 + 6 = 9, 9 − 7 = 2, 2. gün salı.
+çarşambadan 3 gün sonra cumartesi gelir: 3 + 3 = 6, 6. gün cumartesi.
+pazartesiden 2 gün sonra hangi gün gelir? pazartesiden 2 gün sonra çarşamba gelir: 1 + 2 = 3, 3. gün çarşamba.
+pazartesiden 5 gün sonra cumartesi gelir: 1 + 5 = 6, 6. gün cumartesi.
+cumartesinden 6 gün sonra hangi gün gelir? cumartesinden 6 gün sonra cuma gelir: 6 + 6 = 12, 12 − 7 = 5, 5. gün cuma.
+cumartesinden 3 gün sonra salı gelir: 6 + 3 = 9, 9 − 7 = 2, 2. gün salı.
+perşembeden 2 gün sonra hangi gün gelir? perşembeden 2 gün sonra cumartesi gelir: 4 + 2 = 6, 6. gün cumartesi.
+perşembeden 5 gün sonra salı gelir: 4 + 5 = 9, 9 − 7 = 2, 2. gün salı.
+salıdan 4 gün sonra hangi gün gelir? salıdan 4 gün sonra cumartesi gelir: 2 + 4 = 6, 6. gün cumartesi.
+salıdan 1 gün sonra çarşamba gelir: 2 + 1 = 3, 3. gün çarşamba.
+pazardan 2 gün sonra hangi gün gelir? pazardan 2 gün sonra salı gelir: 7 + 2 = 9, 9 − 7 = 2, 2. gün salı.
+pazardan 5 gün sonra cuma gelir: 7 + 5 = 12, 12 − 7 = 5, 5. gün cuma.
+cumadan 4 gün sonra hangi gün gelir? cumadan 4 gün sonra salı gelir: 5 + 4 = 9, 9 − 7 = 2, 2. gün salı.

@@ -21,24 +21,38 @@ import phrases  # noqa: E402
 # the count forms of «day» (one, many), the statement and the question
 ЯЗЫКИ = {
     "de": dict(дни=("Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"),
-               день=("Tag", "Tage"), утв="{n} {д} nach {X} kommt {Y}.", воп="welcher Tag kommt {n} {д} nach {X}?"),
+               день=("Tag", "Tage"), утв="{n} {д} nach {X} kommt {Y}: {л}.", воп="welcher Tag kommt {n} {д} nach {X}?"),
     "fr": dict(дни=("lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"),
-               день=("jour", "jours"), утв="{n} {д} après {X} vient {Y}.", воп="quel jour vient {n} {д} après {X} ?"),
+               день=("jour", "jours"), утв="{n} {д} après {X} vient {Y}: {л}.", воп="quel jour vient {n} {д} après {X} ?"),
     "es": dict(дни=("lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"),
-               день=("día", "días"), утв="{n} {д} después del {X} viene el {Y}.", воп="¿qué día viene {n} {д} después del {X}?"),
+               день=("día", "días"), утв="{n} {д} después del {X} viene el {Y}: {л}.", воп="¿qué día viene {n} {д} después del {X}?"),
     "it": dict(дни=("lunedì", "martedì", "mercoledì", "giovedì", "venerdì", "sabato", "domenica"),
-               день=("giorno", "giorni"), утв="{n} {д} dopo {X} viene {Y}.", воп="che giorno viene {n} {д} dopo {X}?"),
+               день=("giorno", "giorni"), утв="{n} {д} dopo {X} viene {Y}: {л}.", воп="che giorno viene {n} {д} dopo {X}?"),
     "pt": dict(дни=("segunda-feira", "terça-feira", "quarta-feira", "quinta-feira", "sexta-feira", "sábado", "domingo"),
-               день=("dia", "dias"), утв="{n} {д} depois de {X} vem {Y}.", воп="que dia vem {n} {д} depois de {X}?"),
+               день=("dia", "dias"), утв="{n} {д} depois de {X} vem {Y}: {л}.", воп="que dia vem {n} {д} depois de {X}?"),
     "nl": dict(дни=("maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag", "zondag"),
-               день=("dag", "dagen"), утв="{n} {д} na {X} komt {Y}.", воп="welke dag komt {n} {д} na {X}?"),
+               день=("dag", "dagen"), утв="{n} {д} na {X} komt {Y}: {л}.", воп="welke dag komt {n} {д} na {X}?"),
     "pl": dict(дни=("poniedziałek", "wtorek", "środa", "czwartek", "piątek", "sobota", "niedziela"),
                косв=("poniedziałku", "wtorku", "środzie", "czwartku", "piątku", "sobocie", "niedzieli"),
-               день=("dzień", "dni"), утв="{n} {д} po {X} przypada {Y}.", воп="jaki dzień przypada {n} {д} po {X}?"),
+               день=("dzień", "dni"), утв="{n} {д} po {X} przypada {Y}: {л}.", воп="jaki dzień przypada {n} {д} po {X}?"),
     "tr": dict(дни=("pazartesi", "salı", "çarşamba", "perşembe", "cuma", "cumartesi", "pazar"),
                косв=("pazartesiden", "salıdan", "çarşambadan", "perşembeden", "cumadan", "cumartesinden", "pazardan"),
-               день=("gün", "gün"), утв="{X} {n} {д} sonra {Y} gelir.", воп="{X} {n} {д} sonra hangi gün gelir?"),
+               день=("gün", "gün"), утв="{X} {n} {д} sonra {Y} gelir: {л}.", воп="{X} {n} {д} sonra hangi gün gelir?"),
 }
+
+
+# the phrase of the day number in the ledger («Tag 5 ist Freitag»)
+ДЕНЬ_НОМЕР = {"de": "Tag {j} ist {Y}", "fr": "le jour {j} est {Y}", "es": "el día {j} es {Y}", "it": "il giorno {j} è {Y}",
+              "pt": "o dia {j} é {Y}", "nl": "dag {j} is {Y}", "pl": "dzień {j} to {Y}", "tr": "{j}. gün {Y}"}
+
+
+def леджер(язык, i, n):
+    """THE LEDGER OF THE CYCLE (holon 03.09): «2 + 3 = 5, Tag 5 ist Freitag»,
+    over the edge «6 + 3 = 9, 9 − 7 = 2, Tag 2 ist Dienstag»."""
+    s = i + 1 + n
+    j = s - 7 if s > 7 else s
+    шаги = [f"{i + 1} + {n} = {s}"] + ([f"{s} − 7 = {j}"] if s > 7 else [])
+    return ", ".join(шаги + [ДЕНЬ_НОМЕР[язык].format(j=j, Y=ЯЗЫКИ[язык]["дни"][j - 1])])
 
 
 def _косв(язык, i):
@@ -53,7 +67,7 @@ def _день(язык, n):
 
 def утверждение(язык, i, n):
     я = ЯЗЫКИ[язык]
-    return я["утв"].format(n=n, д=_день(язык, n), X=_косв(язык, i), Y=я["дни"][(i + n) % 7])
+    return я["утв"].format(n=n, д=_день(язык, n), X=_косв(язык, i), Y=я["дни"][(i + n) % 7], л=леджер(язык, i, n))
 
 
 def вопрос(язык, i, n):
@@ -64,7 +78,8 @@ def вопрос(язык, i, n):
 def _образец(язык, шаблон):
     я = ЯЗЫКИ[язык]
     alt = lambda слова: "(" + "|".join(re.escape(с) for с in sorted(set(слова), key=len, reverse=True)) + ")"
-    дыры = {"n": r"(\d+)", "д": alt(я["день"]), "X": alt(я.get("косв", я["дни"])), "Y": alt(я["дни"])}
+    дыры = {"n": r"(\d+)", "д": alt(я["день"]), "X": alt(я.get("косв", я["дни"])), "Y": alt(я["дни"]),
+            "л": r"(\d+ \+ \d+ = \d+(?:, \d+ − 7 = \d+)?, .+?)"}   # «2. gün salı» carries a period
     return phrases.образец(шаблон, дыры)
 
 
@@ -91,6 +106,8 @@ def судить_группы(язык, спрошено, группы):
     косв = я.get("косв", я["дни"])
     i = косв.index(з["X"])
     if я["дни"][(i + n) % 7] != з["Y"]:
+        return False
+    if з.get("л") is not None and з["л"] != леджер(язык, i, n):
         return False
     if спрош and (int(спрош["n"]) != n or спрош["X"] != з["X"] or спрош["д"] != з["д"]):
         return False

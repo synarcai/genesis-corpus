@@ -276,6 +276,32 @@
       "actors": []
     },
     {
+      "name": "money_story",
+      "file": "datasets/genesis_money_story.txt",
+      "genre": "STORIES OF MONEY IN THREE LANGUAGES (e9's order 03.09, the organ of money): «tom has $5.20. he spends $1.50. how much money does he have now? 520 − 150 = 370 cents. 370 cents is $3.70.» — the verbs of money with their signs (spends/spent, pays/paid — minus; earns/earned, saves/saved — plus) in two holdings (has/holds), ten pages per verb form on ten different decimals; the act with a price («he buys a pen for $1.50» — the number after «for»); «money» as the asked head («how much money does tom have? tom has $5.20.», «how much money is left?»); the same in Russian (у Тома 5 рублей 20 копеек / Том имеет …; тратит, потратил(а), платит, заплатил(а), зарабатывает, заработал(а), откладывает, отложил(а); покупает ручку за …; сколько денег у него теперь? / осталось? / у Тома?) and German (hat / besitzt; gibt … aus, gab … aus, bezahlt(e), verdient(e), spart(e); kauft einen Stift für …; wie viel Geld hat er jetzt? / bleibt übrig? / hat Tom?), the ledger in cents/копейках/Cent and the bridge back to the decimal writing; the house of money stories (tools/moneystory.py) holds the templates, the court reads them back and REGENERATES the page letter by letter",
+      "act": [
+        "recount",
+        "translate"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unsigned_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": [
+        "person_names:en",
+        "person_names:ru"
+      ]
+    },
+    {
       "name": "geometry_langs",
       "file": "datasets/genesis_geometry_langs.txt",
       "genre": "AREA AND PERIMETER IN EIGHT LANGUAGES (the owner's word: every language in surplus; the geometry world says them in en/ru): the four facts of the geometry world — the area and the perimeter of a rectangle, the perimeter and the area of a square — as statement and as question answered by the statement (М-153), with the geometry world's ledger: «ein Rechteck 7 mal 8 hat die Fläche 7 × 8 = 56.», «wie groß ist der Umfang eines Rechtecks 3 mal 4? ein Rechteck 3 mal 4 hat den Umfang 3 + 4 = 7, 2 × 7 = 14.», «un carré de côté 4 a un périmètre de 4 × 4 = 16.», «¿cuál es el área de un cuadrado de lado 5? un cuadrado de lado 5 tiene área 5 × 5 = 25.», «qual è il perimetro …», «qual é a área …», «wat is de omtrek van een rechthoek 3 bij 4? …», «jakie jest pole prostokąta 2 na 3? prostokąt 2 na 3 ma pole 2 × 3 = 6.», «kenarları 7 ve 8 olan dikdörtgenin çevresi: 7 + 8 = 15, 2 × 15 = 30.»; the house of geometry phrases (tools/geoforms.py) holds the phrases with holes, the court turns the same phrases into patterns and recomputes every ledger",
@@ -382,6 +408,76 @@
         "unsigned_only"
       ],
       "size": 41765,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
+      "name": "search_langs",
+      "file": "datasets/genesis_search_langs.txt",
+      "genre": "SEARCH WITH ITS LEDGER IN TEN LANGUAGES (holon's order for the market of reasoning, 03.09 — ONE-CARRIER: the ledger is the program is the proof): an answer that is FOUND by a bounded walk shows the walk step by primitive step — «the smallest prime greater than 90 is 97: 91 = 7 × 13, 92 = 2 × 46, 93 = 3 × 31, 94 = 2 × 47, 95 = 5 × 19, 96 = 2 × 48, 97 is prime.», the same walk asked as «what is the next prime after 90?» (one operation, two question surfaces — Д-1), «the smallest whole number n with n × 7 > 30 is 5: 1 × 7 = 7 ≤ 30, 2 × 7 = 14 ≤ 30, 3 × 7 = 21 ≤ 30, 4 × 7 = 28 ≤ 30, 5 × 7 = 35 > 30.», «какое число, если его пятая часть равна 6? пятая часть числа равна 6; число — 30: 6 × 5 = 30.» — in en/ru/de/fr/es/it/pt/nl/pl/tr, statement and question answered by the statement (М-153), ten shows per template on ten different numbers; the house of search phrases (tools/searchforms.py) reads its templates through tools/phrases.py, the court walks the same walk and compares the ledger step by step",
+      "act": [
+        "recount",
+        "decide",
+        "translate"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unsigned_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
+      "name": "remainders_langs",
+      "file": "datasets/genesis_remainders_langs.txt",
+      "genre": "DIVISION WITH A REMAINDER IN EIGHT LANGUAGES (the owner's word: every language in surplus; the remainders world says it in en/ru): «17 geteilt durch 5 ist 3 Rest 2: 5 × 3 = 15, 17 − 15 = 2.», «combien font 17 divisé par 5 ? 17 divisé par 5 fait 3 reste 2 : …», «¿cuánto es 17 dividido entre 5? …», «quanto fa 17 diviso 5? …», «quanto é 17 dividido por 5? …», «wat is 17 gedeeld door 5? …», «ile to 17 podzielone przez 5? …», «17 bölü 5 kaçtır? 17 bölü 5 eşittir 3 kalan 2: …» — statement and question answered by the statement (М-153), the ledger of the division unchanged (holon 03.09, ONE-CARRIER), the remainder never zero; the house of remainder phrases (tools/remforms.py) reads its templates through tools/phrases.py, the court divides again",
+      "act": [
+        "recount",
+        "translate"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unsigned_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
+      "name": "primes_langs",
+      "file": "datasets/genesis_primes_langs.txt",
+      "genre": "PRIME AND COMPOSITE IN EIGHT LANGUAGES (the owner's word: every language in surplus; the numbers world says it in en/ru): «97 ist eine Primzahl; ihre Teiler sind 1 und 97.», «91 ist keine Primzahl: 91 = 7 × 13.», «ist 91 eine Primzahl? nein: 91 ist keine Primzahl: 91 = 7 × 13.», fr «91 est-il premier ? non: …», es «¿es 91 primo? no: …», it «91 è primo? no: …», pt «91 é primo? não: …», nl «is 91 priem? nee: …», pl «czy 91 jest liczbą pierwszą? nie: …», tr «91 asal mıdır? hayır: 91 asal değildir: 91 = 7 × 13.» — the verdict word opens the answer (М-147), the witness follows (the two divisors of a prime, the least divisor and its cofactor of a composite); the house of prime phrases (tools/primeforms.py) reads its templates through tools/phrases.py, the court finds the least divisor itself",
+      "act": [
+        "decide",
+        "translate"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unsigned_only"
+      ],
+      "size": 0,
       "tiers": [],
       "text": "shows",
       "assemblies": [
@@ -3480,10 +3576,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 13612554,
+      "size": 13853068,
       "tiers": [],
       "text": "mix",
-      "lines": 198920
+      "lines": 200890
     },
     {
       "name": "full",
@@ -3498,10 +3594,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 18095623,
+      "size": 18336137,
       "tiers": [],
       "text": "mix",
-      "lines": 272257
+      "lines": 274227
     },
     {
       "name": "selfmeasure",
@@ -7711,6 +7807,136 @@
       "происхождение": "gutenberg:10481",
       "held_out": "shelf/fi/aho_rautatie.holdout.txt",
       "судится": []
+    },
+    {
+      "name": "openstax_fisica_1_es",
+      "file": "shelf/es/openstax_fisica_1_es.txt",
+      "genre": "Física universitaria, volumen 1 (Mecánica, ondas, acústica) — Samuel J. Ling (Truman State University), Jeff Sanny (Loyola Marymount University), William Moebs; edición en español OpenStax; OpenStax 2021 под CC BY 4.0",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 1423081,
+      "tiers": [],
+      "text": "prose",
+      "тема": "естествознание",
+      "язык": "es",
+      "плотность": "трактат",
+      "издано": 2021,
+      "источник": "free-license",
+      "происхождение": "openstax-archive:175c88b6-f89b-4eba-9514-bc45e2139a1d@9281eb6, https://openstax.org/details/books/física-universitaria-volumen-1 (CC BY 4.0)",
+      "held_out": "shelf/es/openstax_fisica_1_es.holdout.txt",
+      "судится": [],
+      "автор": "Samuel J. Ling (Truman State University), Jeff Sanny (Loyola Marymount University), William Moebs; edición en español OpenStax"
+    },
+    {
+      "name": "openstax_fisica_2_es",
+      "file": "shelf/es/openstax_fisica_2_es.txt",
+      "genre": "Física universitaria, volumen 2 (Termodinámica, electricidad y magnetismo) — Samuel J. Ling, Jeff Sanny, William Moebs; edición en español OpenStax; OpenStax 2021 под CC BY 4.0",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 1082984,
+      "tiers": [],
+      "text": "prose",
+      "тема": "естествознание",
+      "язык": "es",
+      "плотность": "трактат",
+      "издано": 2021,
+      "источник": "free-license",
+      "происхождение": "openstax-archive:da02605d-6d69-447c-a9b9-caf06dc4f413@9281eb6, https://openstax.org/details/books/física-universitaria-volumen-2 (CC BY 4.0)",
+      "held_out": "shelf/es/openstax_fisica_2_es.holdout.txt",
+      "судится": [],
+      "автор": "Samuel J. Ling, Jeff Sanny, William Moebs; edición en español OpenStax"
+    },
+    {
+      "name": "openstax_fisica_3_es",
+      "file": "shelf/es/openstax_fisica_3_es.txt",
+      "genre": "Física universitaria, volumen 3 (Óptica y física moderna) — Samuel J. Ling, Jeff Sanny, William Moebs; edición en español OpenStax; OpenStax 2021 под CC BY 4.0",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 920698,
+      "tiers": [],
+      "text": "prose",
+      "тема": "естествознание",
+      "язык": "es",
+      "плотность": "трактат",
+      "издано": 2021,
+      "источник": "free-license",
+      "происхождение": "openstax-archive:b647a9b9-7631-45a1-a8e7-5acc3a44fc01@9281eb6, https://openstax.org/details/books/física-universitaria-volumen-3 (CC BY 4.0)",
+      "held_out": "shelf/es/openstax_fisica_3_es.holdout.txt",
+      "судится": [],
+      "автор": "Samuel J. Ling, Jeff Sanny, William Moebs; edición en español OpenStax"
+    },
+    {
+      "name": "openstax_precalculo_es",
+      "file": "shelf/es/openstax_precalculo_es.txt",
+      "genre": "Precálculo 2ed — Jay Abramson (Arizona State University) con autores colaboradores nombrados en el prefacio; edición en español OpenStax 2022; OpenStax 2022 под CC BY 4.0",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 885791,
+      "tiers": [],
+      "text": "prose",
+      "тема": "математика",
+      "язык": "es",
+      "плотность": "трактат",
+      "издано": 2022,
+      "источник": "named-author",
+      "происхождение": "openstax-archive:52f5163f-a7e1-4545-b0fa-8001df262ca9@ea84f53, https://openstax.org/details/books/precálculo-2ed (CC BY 4.0)",
+      "held_out": "shelf/es/openstax_precalculo_es.holdout.txt",
+      "судится": [],
+      "автор": "Jay Abramson (Arizona State University) con autores colaboradores nombrados en el prefacio; edición en español OpenStax 2022"
+    },
+    {
+      "name": "openstax_quimica_es",
+      "file": "shelf/es/openstax_quimica_es.txt",
+      "genre": "Química 2ed — Paul Flowers (University of North Carolina at Pembroke), Klaus Theopold (University of Delaware), Richard Langley (Stephen F. Austin State University), William R. Robinson; edición en español OpenStax 2022; OpenStax 2022 под CC BY 4.0",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 1580548,
+      "tiers": [],
+      "text": "prose",
+      "тема": "естествознание",
+      "язык": "es",
+      "плотность": "трактат",
+      "издано": 2022,
+      "источник": "named-author",
+      "происхождение": "openstax-archive:462aa3f1-d65d-4cd9-a5ee-3214f95769b8@9b2eeca, https://openstax.org/details/books/química-2ed (CC BY 4.0)",
+      "held_out": "shelf/es/openstax_quimica_es.holdout.txt",
+      "судится": [],
+      "автор": "Paul Flowers (University of North Carolina at Pembroke), Klaus Theopold (University of Delaware), Richard Langley (Stephen F. Austin State University), William R. Robinson; edición en español OpenStax 2022"
     }
   ]
 }

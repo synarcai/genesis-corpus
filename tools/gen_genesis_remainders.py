@@ -56,22 +56,25 @@ def pass_shows(pass_i):
         thing = THINGS[(pass_i * 5 + i * 3) % len(THINGS)]
         who = SHARERS[(pass_i * 3 + i) % len(SHARERS)]
         out.append(f"{a} = {b} × {q} + {r}.")
-        out.append(f"{a} divided by {b} is {q} remainder {r}.")
+        # THE LEDGER OF THE DIVISION (holon 03.09, ONE-CARRIER: an answer that
+        # is computed shows its steps): «5 × 3 = 15, 17 − 15 = 2»
+        леджер = f"{b} × {q} = {b * q}, {a} − {b * q} = {r}"
+        out.append(f"{a} divided by {b} is {q} remainder {r}: {леджер}.")
         out.append(
             f"{a} {by_count(a, thing)} shared among {b} "
             f"{by_count(b, who)} leaves {r} left over."
         )
         out.append(
-            f"{a} разделить на {b} будет {q}, остаток {r}."
+            f"{a} разделить на {b} будет {q}, остаток {r}: {леджер}."
         )
         # ВОПРОСНАЯ ПОВЕРХНОСТЬ БЫЛА ТОЛЬКО ОПРЕДЕЛИТЕЛЬНОЙ («что такое
         # остаток?») — вычислительного вопроса не знал ни один язык.
         out.append(
             f"сколько будет {a} разделить на {b}? "
-            f"будет {q}, остаток {r}."
+            f"{a} разделить на {b} будет {q}, остаток {r}: {леджер}."
         )
         out.append(
-            f"what is {a} divided by {b}? it is {q} remainder {r}."
+            f"what is {a} divided by {b}? {a} divided by {b} is {q} remainder {r}: {леджер}."
         )
     for tpl in BARE:
         out.append(tpl)

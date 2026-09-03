@@ -1,0 +1,849 @@
+what is the next prime after 17? the next prime after 17 is 19: 18 = 2 × 9, 19 is prime.
+what is the smallest prime greater than 107? the smallest prime greater than 107 is 109: 108 = 2 × 54, 109 is prime.
+an eighth of a number is 15; the number is 120: 15 × 8 = 120.
+the smallest whole number n with n × 3 > 10 is 4: 1 × 3 = 3 ≤ 10, 2 × 3 = 6 ≤ 10, 3 × 3 = 9 ≤ 10, 4 × 3 = 12 > 10.
+the next prime after 54 is 59: 55 = 5 × 11, 56 = 2 × 28, 57 = 3 × 19, 58 = 2 × 29, 59 is prime.
+the smallest prime greater than 39 is 41: 40 = 2 × 20, 41 is prime.
+what is the number if a fifth of it is 7? a fifth of a number is 7; the number is 35: 7 × 5 = 35.
+what is the smallest whole number n with n × 5 > 26? the smallest whole number n with n × 5 > 26 is 6: 1 × 5 = 5 ≤ 26, 2 × 5 = 10 ≤ 26, 3 × 5 = 15 ≤ 26, 4 × 5 = 20 ≤ 26, 5 × 5 = 25 ≤ 26, 6 × 5 = 30 > 26.
+what is the next prime after 48? the next prime after 48 is 53: 49 = 7 × 7, 50 = 2 × 25, 51 = 3 × 17, 52 = 2 × 26, 53 is prime.
+what is the smallest prime greater than 76? the smallest prime greater than 76 is 79: 77 = 7 × 11, 78 = 2 × 39, 79 is prime.
+a third of a number is 3; the number is 9: 3 × 3 = 9.
+the smallest whole number n with n × 7 > 51 is 8: 1 × 7 = 7 ≤ 51, 2 × 7 = 14 ≤ 51, 3 × 7 = 21 ≤ 51, 4 × 7 = 28 ≤ 51, 5 × 7 = 35 ≤ 51, 6 × 7 = 42 ≤ 51, 7 × 7 = 49 ≤ 51, 8 × 7 = 56 > 51.
+the next prime after 85 is 89: 86 = 2 × 43, 87 = 3 × 29, 88 = 2 × 44, 89 is prime.
+the smallest prime greater than 8 is 11: 9 = 3 × 3, 10 = 2 × 5, 11 is prime.
+what is the number if a tenth of it is 19? a tenth of a number is 19; the number is 190: 19 × 10 = 190.
+what is the smallest whole number n with n × 11 > 14? the smallest whole number n with n × 11 > 14 is 2: 1 × 11 = 11 ≤ 14, 2 × 11 = 22 > 14.
+
+какое следующее простое после 17? следующее простое после 17 — это 19: 18 = 2 × 9, 19 простое.
+какое наименьшее простое больше 107? наименьшее простое больше 107 — это 109: 108 = 2 × 54, 109 простое.
+восьмая часть числа равна 15; число — 120: 15 × 8 = 120.
+наименьшее целое n, при котором n × 3 > 10, — это 4: 1 × 3 = 3 ≤ 10, 2 × 3 = 6 ≤ 10, 3 × 3 = 9 ≤ 10, 4 × 3 = 12 > 10.
+следующее простое после 54 — это 59: 55 = 5 × 11, 56 = 2 × 28, 57 = 3 × 19, 58 = 2 × 29, 59 простое.
+наименьшее простое больше 39 — это 41: 40 = 2 × 20, 41 простое.
+какое число, если его пятая часть равна 7? пятая часть числа равна 7; число — 35: 7 × 5 = 35.
+каково наименьшее целое n, при котором n × 5 > 26? наименьшее целое n, при котором n × 5 > 26, — это 6: 1 × 5 = 5 ≤ 26, 2 × 5 = 10 ≤ 26, 3 × 5 = 15 ≤ 26, 4 × 5 = 20 ≤ 26, 5 × 5 = 25 ≤ 26, 6 × 5 = 30 > 26.
+какое следующее простое после 48? следующее простое после 48 — это 53: 49 = 7 × 7, 50 = 2 × 25, 51 = 3 × 17, 52 = 2 × 26, 53 простое.
+какое наименьшее простое больше 76? наименьшее простое больше 76 — это 79: 77 = 7 × 11, 78 = 2 × 39, 79 простое.
+треть числа равна 3; число — 9: 3 × 3 = 9.
+наименьшее целое n, при котором n × 7 > 51, — это 8: 1 × 7 = 7 ≤ 51, 2 × 7 = 14 ≤ 51, 3 × 7 = 21 ≤ 51, 4 × 7 = 28 ≤ 51, 5 × 7 = 35 ≤ 51, 6 × 7 = 42 ≤ 51, 7 × 7 = 49 ≤ 51, 8 × 7 = 56 > 51.
+следующее простое после 85 — это 89: 86 = 2 × 43, 87 = 3 × 29, 88 = 2 × 44, 89 простое.
+наименьшее простое больше 8 — это 11: 9 = 3 × 3, 10 = 2 × 5, 11 простое.
+какое число, если его десятая часть равна 19? десятая часть числа равна 19; число — 190: 19 × 10 = 190.
+каково наименьшее целое n, при котором n × 11 > 14? наименьшее целое n, при котором n × 11 > 14, — это 2: 1 × 11 = 11 ≤ 14, 2 × 11 = 22 > 14.
+
+was ist die nächste Primzahl nach 17? die nächste Primzahl nach 17 ist 19: 18 = 2 × 9, 19 ist prim.
+was ist die kleinste Primzahl größer als 107? die kleinste Primzahl größer als 107 ist 109: 108 = 2 × 54, 109 ist prim.
+ein Achtel einer Zahl ist 15; die Zahl ist 120: 15 × 8 = 120.
+die kleinste ganze Zahl n mit n × 3 > 10 ist 4: 1 × 3 = 3 ≤ 10, 2 × 3 = 6 ≤ 10, 3 × 3 = 9 ≤ 10, 4 × 3 = 12 > 10.
+die nächste Primzahl nach 54 ist 59: 55 = 5 × 11, 56 = 2 × 28, 57 = 3 × 19, 58 = 2 × 29, 59 ist prim.
+die kleinste Primzahl größer als 39 ist 41: 40 = 2 × 20, 41 ist prim.
+welche Zahl ist es, wenn ein Fünftel davon 7 ist? ein Fünftel einer Zahl ist 7; die Zahl ist 35: 7 × 5 = 35.
+was ist die kleinste ganze Zahl n mit n × 5 > 26? die kleinste ganze Zahl n mit n × 5 > 26 ist 6: 1 × 5 = 5 ≤ 26, 2 × 5 = 10 ≤ 26, 3 × 5 = 15 ≤ 26, 4 × 5 = 20 ≤ 26, 5 × 5 = 25 ≤ 26, 6 × 5 = 30 > 26.
+was ist die nächste Primzahl nach 48? die nächste Primzahl nach 48 ist 53: 49 = 7 × 7, 50 = 2 × 25, 51 = 3 × 17, 52 = 2 × 26, 53 ist prim.
+was ist die kleinste Primzahl größer als 76? die kleinste Primzahl größer als 76 ist 79: 77 = 7 × 11, 78 = 2 × 39, 79 ist prim.
+ein Drittel einer Zahl ist 3; die Zahl ist 9: 3 × 3 = 9.
+die kleinste ganze Zahl n mit n × 7 > 51 ist 8: 1 × 7 = 7 ≤ 51, 2 × 7 = 14 ≤ 51, 3 × 7 = 21 ≤ 51, 4 × 7 = 28 ≤ 51, 5 × 7 = 35 ≤ 51, 6 × 7 = 42 ≤ 51, 7 × 7 = 49 ≤ 51, 8 × 7 = 56 > 51.
+die nächste Primzahl nach 85 ist 89: 86 = 2 × 43, 87 = 3 × 29, 88 = 2 × 44, 89 ist prim.
+die kleinste Primzahl größer als 8 ist 11: 9 = 3 × 3, 10 = 2 × 5, 11 ist prim.
+welche Zahl ist es, wenn ein Zehntel davon 19 ist? ein Zehntel einer Zahl ist 19; die Zahl ist 190: 19 × 10 = 190.
+was ist die kleinste ganze Zahl n mit n × 11 > 14? die kleinste ganze Zahl n mit n × 11 > 14 ist 2: 1 × 11 = 11 ≤ 14, 2 × 11 = 22 > 14.
+
+quel est le nombre premier suivant après 17 ? le nombre premier suivant après 17 est 19 : 18 = 2 × 9, 19 est premier.
+quel est le plus petit nombre premier supérieur à 107 ? le plus petit nombre premier supérieur à 107 est 109 : 108 = 2 × 54, 109 est premier.
+un huitième d'un nombre est 15 ; le nombre est 120 : 15 × 8 = 120.
+le plus petit entier n tel que n × 3 > 10 est 4 : 1 × 3 = 3 ≤ 10, 2 × 3 = 6 ≤ 10, 3 × 3 = 9 ≤ 10, 4 × 3 = 12 > 10.
+le nombre premier suivant après 54 est 59 : 55 = 5 × 11, 56 = 2 × 28, 57 = 3 × 19, 58 = 2 × 29, 59 est premier.
+le plus petit nombre premier supérieur à 39 est 41 : 40 = 2 × 20, 41 est premier.
+quel est le nombre si un cinquième de celui-ci est 7 ? un cinquième d'un nombre est 7 ; le nombre est 35 : 7 × 5 = 35.
+quel est le plus petit entier n tel que n × 5 > 26 ? le plus petit entier n tel que n × 5 > 26 est 6 : 1 × 5 = 5 ≤ 26, 2 × 5 = 10 ≤ 26, 3 × 5 = 15 ≤ 26, 4 × 5 = 20 ≤ 26, 5 × 5 = 25 ≤ 26, 6 × 5 = 30 > 26.
+quel est le nombre premier suivant après 48 ? le nombre premier suivant après 48 est 53 : 49 = 7 × 7, 50 = 2 × 25, 51 = 3 × 17, 52 = 2 × 26, 53 est premier.
+quel est le plus petit nombre premier supérieur à 76 ? le plus petit nombre premier supérieur à 76 est 79 : 77 = 7 × 11, 78 = 2 × 39, 79 est premier.
+un tiers d'un nombre est 3 ; le nombre est 9 : 3 × 3 = 9.
+le plus petit entier n tel que n × 7 > 51 est 8 : 1 × 7 = 7 ≤ 51, 2 × 7 = 14 ≤ 51, 3 × 7 = 21 ≤ 51, 4 × 7 = 28 ≤ 51, 5 × 7 = 35 ≤ 51, 6 × 7 = 42 ≤ 51, 7 × 7 = 49 ≤ 51, 8 × 7 = 56 > 51.
+le nombre premier suivant après 85 est 89 : 86 = 2 × 43, 87 = 3 × 29, 88 = 2 × 44, 89 est premier.
+le plus petit nombre premier supérieur à 8 est 11 : 9 = 3 × 3, 10 = 2 × 5, 11 est premier.
+quel est le nombre si un dixième de celui-ci est 19 ? un dixième d'un nombre est 19 ; le nombre est 190 : 19 × 10 = 190.
+quel est le plus petit entier n tel que n × 11 > 14 ? le plus petit entier n tel que n × 11 > 14 est 2 : 1 × 11 = 11 ≤ 14, 2 × 11 = 22 > 14.
+
+¿cuál es el siguiente primo después de 17? el siguiente primo después de 17 es 19: 18 = 2 × 9, 19 es primo.
+¿cuál es el menor primo mayor que 107? el menor primo mayor que 107 es 109: 108 = 2 × 54, 109 es primo.
+un octavo de un número es 15; el número es 120: 15 × 8 = 120.
+el menor entero n con n × 3 > 10 es 4: 1 × 3 = 3 ≤ 10, 2 × 3 = 6 ≤ 10, 3 × 3 = 9 ≤ 10, 4 × 3 = 12 > 10.
+el siguiente primo después de 54 es 59: 55 = 5 × 11, 56 = 2 × 28, 57 = 3 × 19, 58 = 2 × 29, 59 es primo.
+el menor primo mayor que 39 es 41: 40 = 2 × 20, 41 es primo.
+¿cuál es el número si un quinto de él es 7? un quinto de un número es 7; el número es 35: 7 × 5 = 35.
+¿cuál es el menor entero n con n × 5 > 26? el menor entero n con n × 5 > 26 es 6: 1 × 5 = 5 ≤ 26, 2 × 5 = 10 ≤ 26, 3 × 5 = 15 ≤ 26, 4 × 5 = 20 ≤ 26, 5 × 5 = 25 ≤ 26, 6 × 5 = 30 > 26.
+¿cuál es el siguiente primo después de 48? el siguiente primo después de 48 es 53: 49 = 7 × 7, 50 = 2 × 25, 51 = 3 × 17, 52 = 2 × 26, 53 es primo.
+¿cuál es el menor primo mayor que 76? el menor primo mayor que 76 es 79: 77 = 7 × 11, 78 = 2 × 39, 79 es primo.
+un tercio de un número es 3; el número es 9: 3 × 3 = 9.
+el menor entero n con n × 7 > 51 es 8: 1 × 7 = 7 ≤ 51, 2 × 7 = 14 ≤ 51, 3 × 7 = 21 ≤ 51, 4 × 7 = 28 ≤ 51, 5 × 7 = 35 ≤ 51, 6 × 7 = 42 ≤ 51, 7 × 7 = 49 ≤ 51, 8 × 7 = 56 > 51.
+el siguiente primo después de 85 es 89: 86 = 2 × 43, 87 = 3 × 29, 88 = 2 × 44, 89 es primo.
+el menor primo mayor que 8 es 11: 9 = 3 × 3, 10 = 2 × 5, 11 es primo.
+¿cuál es el número si un décimo de él es 19? un décimo de un número es 19; el número es 190: 19 × 10 = 190.
+¿cuál es el menor entero n con n × 11 > 14? el menor entero n con n × 11 > 14 es 2: 1 × 11 = 11 ≤ 14, 2 × 11 = 22 > 14.
+
+qual è il primo successivo dopo 17? il primo successivo dopo 17 è 19: 18 = 2 × 9, 19 è primo.
+qual è il più piccolo primo maggiore di 107? il più piccolo primo maggiore di 107 è 109: 108 = 2 × 54, 109 è primo.
+un ottavo di un numero è 15; il numero è 120: 15 × 8 = 120.
+il più piccolo intero n con n × 3 > 10 è 4: 1 × 3 = 3 ≤ 10, 2 × 3 = 6 ≤ 10, 3 × 3 = 9 ≤ 10, 4 × 3 = 12 > 10.
+il primo successivo dopo 54 è 59: 55 = 5 × 11, 56 = 2 × 28, 57 = 3 × 19, 58 = 2 × 29, 59 è primo.
+il più piccolo primo maggiore di 39 è 41: 40 = 2 × 20, 41 è primo.
+qual è il numero se un quinto di esso è 7? un quinto di un numero è 7; il numero è 35: 7 × 5 = 35.
+qual è il più piccolo intero n con n × 5 > 26? il più piccolo intero n con n × 5 > 26 è 6: 1 × 5 = 5 ≤ 26, 2 × 5 = 10 ≤ 26, 3 × 5 = 15 ≤ 26, 4 × 5 = 20 ≤ 26, 5 × 5 = 25 ≤ 26, 6 × 5 = 30 > 26.
+qual è il primo successivo dopo 48? il primo successivo dopo 48 è 53: 49 = 7 × 7, 50 = 2 × 25, 51 = 3 × 17, 52 = 2 × 26, 53 è primo.
+qual è il più piccolo primo maggiore di 76? il più piccolo primo maggiore di 76 è 79: 77 = 7 × 11, 78 = 2 × 39, 79 è primo.
+un terzo di un numero è 3; il numero è 9: 3 × 3 = 9.
+il più piccolo intero n con n × 7 > 51 è 8: 1 × 7 = 7 ≤ 51, 2 × 7 = 14 ≤ 51, 3 × 7 = 21 ≤ 51, 4 × 7 = 28 ≤ 51, 5 × 7 = 35 ≤ 51, 6 × 7 = 42 ≤ 51, 7 × 7 = 49 ≤ 51, 8 × 7 = 56 > 51.
+il primo successivo dopo 85 è 89: 86 = 2 × 43, 87 = 3 × 29, 88 = 2 × 44, 89 è primo.
+il più piccolo primo maggiore di 8 è 11: 9 = 3 × 3, 10 = 2 × 5, 11 è primo.
+qual è il numero se un decimo di esso è 19? un decimo di un numero è 19; il numero è 190: 19 × 10 = 190.
+qual è il più piccolo intero n con n × 11 > 14? il più piccolo intero n con n × 11 > 14 è 2: 1 × 11 = 11 ≤ 14, 2 × 11 = 22 > 14.
+
+qual é o próximo primo depois de 17? o próximo primo depois de 17 é 19: 18 = 2 × 9, 19 é primo.
+qual é o menor primo maior que 107? o menor primo maior que 107 é 109: 108 = 2 × 54, 109 é primo.
+um oitavo de um número é 15; o número é 120: 15 × 8 = 120.
+o menor inteiro n com n × 3 > 10 é 4: 1 × 3 = 3 ≤ 10, 2 × 3 = 6 ≤ 10, 3 × 3 = 9 ≤ 10, 4 × 3 = 12 > 10.
+o próximo primo depois de 54 é 59: 55 = 5 × 11, 56 = 2 × 28, 57 = 3 × 19, 58 = 2 × 29, 59 é primo.
+o menor primo maior que 39 é 41: 40 = 2 × 20, 41 é primo.
+qual é o número se um quinto dele é 7? um quinto de um número é 7; o número é 35: 7 × 5 = 35.
+qual é o menor inteiro n com n × 5 > 26? o menor inteiro n com n × 5 > 26 é 6: 1 × 5 = 5 ≤ 26, 2 × 5 = 10 ≤ 26, 3 × 5 = 15 ≤ 26, 4 × 5 = 20 ≤ 26, 5 × 5 = 25 ≤ 26, 6 × 5 = 30 > 26.
+qual é o próximo primo depois de 48? o próximo primo depois de 48 é 53: 49 = 7 × 7, 50 = 2 × 25, 51 = 3 × 17, 52 = 2 × 26, 53 é primo.
+qual é o menor primo maior que 76? o menor primo maior que 76 é 79: 77 = 7 × 11, 78 = 2 × 39, 79 é primo.
+um terço de um número é 3; o número é 9: 3 × 3 = 9.
+o menor inteiro n com n × 7 > 51 é 8: 1 × 7 = 7 ≤ 51, 2 × 7 = 14 ≤ 51, 3 × 7 = 21 ≤ 51, 4 × 7 = 28 ≤ 51, 5 × 7 = 35 ≤ 51, 6 × 7 = 42 ≤ 51, 7 × 7 = 49 ≤ 51, 8 × 7 = 56 > 51.
+o próximo primo depois de 85 é 89: 86 = 2 × 43, 87 = 3 × 29, 88 = 2 × 44, 89 é primo.
+o menor primo maior que 8 é 11: 9 = 3 × 3, 10 = 2 × 5, 11 é primo.
+qual é o número se um décimo dele é 19? um décimo de um número é 19; o número é 190: 19 × 10 = 190.
+qual é o menor inteiro n com n × 11 > 14? o menor inteiro n com n × 11 > 14 é 2: 1 × 11 = 11 ≤ 14, 2 × 11 = 22 > 14.
+
+wat is het volgende priemgetal na 17? het volgende priemgetal na 17 is 19: 18 = 2 × 9, 19 is priem.
+wat is het kleinste priemgetal groter dan 107? het kleinste priemgetal groter dan 107 is 109: 108 = 2 × 54, 109 is priem.
+een achtste van een getal is 15; het getal is 120: 15 × 8 = 120.
+het kleinste gehele getal n met n × 3 > 10 is 4: 1 × 3 = 3 ≤ 10, 2 × 3 = 6 ≤ 10, 3 × 3 = 9 ≤ 10, 4 × 3 = 12 > 10.
+het volgende priemgetal na 54 is 59: 55 = 5 × 11, 56 = 2 × 28, 57 = 3 × 19, 58 = 2 × 29, 59 is priem.
+het kleinste priemgetal groter dan 39 is 41: 40 = 2 × 20, 41 is priem.
+wat is het getal als een vijfde ervan 7 is? een vijfde van een getal is 7; het getal is 35: 7 × 5 = 35.
+wat is het kleinste gehele getal n met n × 5 > 26? het kleinste gehele getal n met n × 5 > 26 is 6: 1 × 5 = 5 ≤ 26, 2 × 5 = 10 ≤ 26, 3 × 5 = 15 ≤ 26, 4 × 5 = 20 ≤ 26, 5 × 5 = 25 ≤ 26, 6 × 5 = 30 > 26.
+wat is het volgende priemgetal na 48? het volgende priemgetal na 48 is 53: 49 = 7 × 7, 50 = 2 × 25, 51 = 3 × 17, 52 = 2 × 26, 53 is priem.
+wat is het kleinste priemgetal groter dan 76? het kleinste priemgetal groter dan 76 is 79: 77 = 7 × 11, 78 = 2 × 39, 79 is priem.
+een derde van een getal is 3; het getal is 9: 3 × 3 = 9.
+het kleinste gehele getal n met n × 7 > 51 is 8: 1 × 7 = 7 ≤ 51, 2 × 7 = 14 ≤ 51, 3 × 7 = 21 ≤ 51, 4 × 7 = 28 ≤ 51, 5 × 7 = 35 ≤ 51, 6 × 7 = 42 ≤ 51, 7 × 7 = 49 ≤ 51, 8 × 7 = 56 > 51.
+het volgende priemgetal na 85 is 89: 86 = 2 × 43, 87 = 3 × 29, 88 = 2 × 44, 89 is priem.
+het kleinste priemgetal groter dan 8 is 11: 9 = 3 × 3, 10 = 2 × 5, 11 is priem.
+wat is het getal als een tiende ervan 19 is? een tiende van een getal is 19; het getal is 190: 19 × 10 = 190.
+wat is het kleinste gehele getal n met n × 11 > 14? het kleinste gehele getal n met n × 11 > 14 is 2: 1 × 11 = 11 ≤ 14, 2 × 11 = 22 > 14.
+
+jaka jest następna liczba pierwsza po 17? następna liczba pierwsza po 17 to 19: 18 = 2 × 9, 19 jest liczbą pierwszą.
+jaka jest najmniejsza liczba pierwsza większa od 107? najmniejsza liczba pierwsza większa od 107 to 109: 108 = 2 × 54, 109 jest liczbą pierwszą.
+jedna ósma liczby to 15; liczba to 120: 15 × 8 = 120.
+najmniejsza liczba całkowita n, dla której n × 3 > 10, to 4: 1 × 3 = 3 ≤ 10, 2 × 3 = 6 ≤ 10, 3 × 3 = 9 ≤ 10, 4 × 3 = 12 > 10.
+następna liczba pierwsza po 54 to 59: 55 = 5 × 11, 56 = 2 × 28, 57 = 3 × 19, 58 = 2 × 29, 59 jest liczbą pierwszą.
+najmniejsza liczba pierwsza większa od 39 to 41: 40 = 2 × 20, 41 jest liczbą pierwszą.
+jaka to liczba, jeśli jej jedna piąta to 7? jedna piąta liczby to 7; liczba to 35: 7 × 5 = 35.
+jaka jest najmniejsza liczba całkowita n, dla której n × 5 > 26? najmniejsza liczba całkowita n, dla której n × 5 > 26, to 6: 1 × 5 = 5 ≤ 26, 2 × 5 = 10 ≤ 26, 3 × 5 = 15 ≤ 26, 4 × 5 = 20 ≤ 26, 5 × 5 = 25 ≤ 26, 6 × 5 = 30 > 26.
+jaka jest następna liczba pierwsza po 48? następna liczba pierwsza po 48 to 53: 49 = 7 × 7, 50 = 2 × 25, 51 = 3 × 17, 52 = 2 × 26, 53 jest liczbą pierwszą.
+jaka jest najmniejsza liczba pierwsza większa od 76? najmniejsza liczba pierwsza większa od 76 to 79: 77 = 7 × 11, 78 = 2 × 39, 79 jest liczbą pierwszą.
+jedna trzecia liczby to 3; liczba to 9: 3 × 3 = 9.
+najmniejsza liczba całkowita n, dla której n × 7 > 51, to 8: 1 × 7 = 7 ≤ 51, 2 × 7 = 14 ≤ 51, 3 × 7 = 21 ≤ 51, 4 × 7 = 28 ≤ 51, 5 × 7 = 35 ≤ 51, 6 × 7 = 42 ≤ 51, 7 × 7 = 49 ≤ 51, 8 × 7 = 56 > 51.
+następna liczba pierwsza po 85 to 89: 86 = 2 × 43, 87 = 3 × 29, 88 = 2 × 44, 89 jest liczbą pierwszą.
+najmniejsza liczba pierwsza większa od 8 to 11: 9 = 3 × 3, 10 = 2 × 5, 11 jest liczbą pierwszą.
+jaka to liczba, jeśli jej jedna dziesiąta to 19? jedna dziesiąta liczby to 19; liczba to 190: 19 × 10 = 190.
+jaka jest najmniejsza liczba całkowita n, dla której n × 11 > 14? najmniejsza liczba całkowita n, dla której n × 11 > 14, to 2: 1 × 11 = 11 ≤ 14, 2 × 11 = 22 > 14.
+
+17 sayısından sonraki asal sayı kaçtır? 17 sayısından sonraki asal sayı 19: 18 = 2 × 9, 19 asaldır.
+107 sayısından büyük en küçük asal sayı kaçtır? 107 sayısından büyük en küçük asal sayı 109: 108 = 2 × 54, 109 asaldır.
+bir sayının sekizde biri 15 ise sayı 120 olur: 15 × 8 = 120.
+n × 3 > 10 olan en küçük tam sayı 4: 1 × 3 = 3 ≤ 10, 2 × 3 = 6 ≤ 10, 3 × 3 = 9 ≤ 10, 4 × 3 = 12 > 10.
+54 sayısından sonraki asal sayı 59: 55 = 5 × 11, 56 = 2 × 28, 57 = 3 × 19, 58 = 2 × 29, 59 asaldır.
+39 sayısından büyük en küçük asal sayı 41: 40 = 2 × 20, 41 asaldır.
+beşte biri 7 olan sayı kaçtır? bir sayının beşte biri 7 ise sayı 35 olur: 7 × 5 = 35.
+n × 5 > 26 olan en küçük tam sayı kaçtır? n × 5 > 26 olan en küçük tam sayı 6: 1 × 5 = 5 ≤ 26, 2 × 5 = 10 ≤ 26, 3 × 5 = 15 ≤ 26, 4 × 5 = 20 ≤ 26, 5 × 5 = 25 ≤ 26, 6 × 5 = 30 > 26.
+48 sayısından sonraki asal sayı kaçtır? 48 sayısından sonraki asal sayı 53: 49 = 7 × 7, 50 = 2 × 25, 51 = 3 × 17, 52 = 2 × 26, 53 asaldır.
+76 sayısından büyük en küçük asal sayı kaçtır? 76 sayısından büyük en küçük asal sayı 79: 77 = 7 × 11, 78 = 2 × 39, 79 asaldır.
+bir sayının üçte biri 3 ise sayı 9 olur: 3 × 3 = 9.
+n × 7 > 51 olan en küçük tam sayı 8: 1 × 7 = 7 ≤ 51, 2 × 7 = 14 ≤ 51, 3 × 7 = 21 ≤ 51, 4 × 7 = 28 ≤ 51, 5 × 7 = 35 ≤ 51, 6 × 7 = 42 ≤ 51, 7 × 7 = 49 ≤ 51, 8 × 7 = 56 > 51.
+85 sayısından sonraki asal sayı 89: 86 = 2 × 43, 87 = 3 × 29, 88 = 2 × 44, 89 asaldır.
+8 sayısından büyük en küçük asal sayı 11: 9 = 3 × 3, 10 = 2 × 5, 11 asaldır.
+onda biri 19 olan sayı kaçtır? bir sayının onda biri 19 ise sayı 190 olur: 19 × 10 = 190.
+n × 11 > 14 olan en küçük tam sayı kaçtır? n × 11 > 14 olan en küçük tam sayı 2: 1 × 11 = 11 ≤ 14, 2 × 11 = 22 > 14.
+
+the smallest whole number n with n × 10 > 18 is 2: 1 × 10 = 10 ≤ 18, 2 × 10 = 20 > 18.
+what is the next prime after 101? the next prime after 101 is 103: 102 = 2 × 51, 103 is prime.
+the smallest prime greater than 92 is 97: 93 = 3 × 31, 94 = 2 × 47, 95 = 5 × 19, 96 = 2 × 48, 97 is prime.
+an eighth of a number is 14; the number is 112: 14 × 8 = 112.
+what is the smallest whole number n with n × 4 > 10? the smallest whole number n with n × 4 > 10 is 3: 1 × 4 = 4 ≤ 10, 2 × 4 = 8 ≤ 10, 3 × 4 = 12 > 10.
+the next prime after 33 is 37: 34 = 2 × 17, 35 = 5 × 7, 36 = 2 × 18, 37 is prime.
+what is the smallest prime greater than 24? the smallest prime greater than 24 is 29: 25 = 5 × 5, 26 = 2 × 13, 27 = 3 × 9, 28 = 2 × 14, 29 is prime.
+what is the number if a fifth of it is 6? a fifth of a number is 6; the number is 30: 6 × 5 = 30.
+the smallest whole number n with n × 6 > 26 is 5: 1 × 6 = 6 ≤ 26, 2 × 6 = 12 ≤ 26, 3 × 6 = 18 ≤ 26, 4 × 6 = 24 ≤ 26, 5 × 6 = 30 > 26.
+what is the next prime after 70? the next prime after 70 is 71: 71 is prime.
+the smallest prime greater than 61 is 67: 62 = 2 × 31, 63 = 3 × 21, 64 = 2 × 32, 65 = 5 × 13, 66 = 2 × 33, 67 is prime.
+a third of a number is 2; the number is 6: 2 × 3 = 6.
+what is the smallest whole number n with n × 8 > 54? the smallest whole number n with n × 8 > 54 is 7: 1 × 8 = 8 ≤ 54, 2 × 8 = 16 ≤ 54, 3 × 8 = 24 ≤ 54, 4 × 8 = 32 ≤ 54, 5 × 8 = 40 ≤ 54, 6 × 8 = 48 ≤ 54, 7 × 8 = 56 > 54.
+the next prime after 107 is 109: 108 = 2 × 54, 109 is prime.
+what is the smallest prime greater than 55? the smallest prime greater than 55 is 59: 56 = 2 × 28, 57 = 3 × 19, 58 = 2 × 29, 59 is prime.
+what is the number if a tenth of it is 18? a tenth of a number is 18; the number is 180: 18 × 10 = 180.
+
+наименьшее целое n, при котором n × 10 > 18, — это 2: 1 × 10 = 10 ≤ 18, 2 × 10 = 20 > 18.
+какое следующее простое после 101? следующее простое после 101 — это 103: 102 = 2 × 51, 103 простое.
+наименьшее простое больше 92 — это 97: 93 = 3 × 31, 94 = 2 × 47, 95 = 5 × 19, 96 = 2 × 48, 97 простое.
+восьмая часть числа равна 14; число — 112: 14 × 8 = 112.
+каково наименьшее целое n, при котором n × 4 > 10? наименьшее целое n, при котором n × 4 > 10, — это 3: 1 × 4 = 4 ≤ 10, 2 × 4 = 8 ≤ 10, 3 × 4 = 12 > 10.
+следующее простое после 33 — это 37: 34 = 2 × 17, 35 = 5 × 7, 36 = 2 × 18, 37 простое.
+какое наименьшее простое больше 24? наименьшее простое больше 24 — это 29: 25 = 5 × 5, 26 = 2 × 13, 27 = 3 × 9, 28 = 2 × 14, 29 простое.
+какое число, если его пятая часть равна 6? пятая часть числа равна 6; число — 30: 6 × 5 = 30.
+наименьшее целое n, при котором n × 6 > 26, — это 5: 1 × 6 = 6 ≤ 26, 2 × 6 = 12 ≤ 26, 3 × 6 = 18 ≤ 26, 4 × 6 = 24 ≤ 26, 5 × 6 = 30 > 26.
+какое следующее простое после 70? следующее простое после 70 — это 71: 71 простое.
+наименьшее простое больше 61 — это 67: 62 = 2 × 31, 63 = 3 × 21, 64 = 2 × 32, 65 = 5 × 13, 66 = 2 × 33, 67 простое.
+треть числа равна 2; число — 6: 2 × 3 = 6.
+каково наименьшее целое n, при котором n × 8 > 54? наименьшее целое n, при котором n × 8 > 54, — это 7: 1 × 8 = 8 ≤ 54, 2 × 8 = 16 ≤ 54, 3 × 8 = 24 ≤ 54, 4 × 8 = 32 ≤ 54, 5 × 8 = 40 ≤ 54, 6 × 8 = 48 ≤ 54, 7 × 8 = 56 > 54.
+следующее простое после 107 — это 109: 108 = 2 × 54, 109 простое.
+какое наименьшее простое больше 55? наименьшее простое больше 55 — это 59: 56 = 2 × 28, 57 = 3 × 19, 58 = 2 × 29, 59 простое.
+какое число, если его десятая часть равна 18? десятая часть числа равна 18; число — 180: 18 × 10 = 180.
+
+die kleinste ganze Zahl n mit n × 10 > 18 ist 2: 1 × 10 = 10 ≤ 18, 2 × 10 = 20 > 18.
+was ist die nächste Primzahl nach 101? die nächste Primzahl nach 101 ist 103: 102 = 2 × 51, 103 ist prim.
+die kleinste Primzahl größer als 92 ist 97: 93 = 3 × 31, 94 = 2 × 47, 95 = 5 × 19, 96 = 2 × 48, 97 ist prim.
+ein Achtel einer Zahl ist 14; die Zahl ist 112: 14 × 8 = 112.
+was ist die kleinste ganze Zahl n mit n × 4 > 10? die kleinste ganze Zahl n mit n × 4 > 10 ist 3: 1 × 4 = 4 ≤ 10, 2 × 4 = 8 ≤ 10, 3 × 4 = 12 > 10.
+die nächste Primzahl nach 33 ist 37: 34 = 2 × 17, 35 = 5 × 7, 36 = 2 × 18, 37 ist prim.
+was ist die kleinste Primzahl größer als 24? die kleinste Primzahl größer als 24 ist 29: 25 = 5 × 5, 26 = 2 × 13, 27 = 3 × 9, 28 = 2 × 14, 29 ist prim.
+welche Zahl ist es, wenn ein Fünftel davon 6 ist? ein Fünftel einer Zahl ist 6; die Zahl ist 30: 6 × 5 = 30.
+die kleinste ganze Zahl n mit n × 6 > 26 ist 5: 1 × 6 = 6 ≤ 26, 2 × 6 = 12 ≤ 26, 3 × 6 = 18 ≤ 26, 4 × 6 = 24 ≤ 26, 5 × 6 = 30 > 26.
+was ist die nächste Primzahl nach 70? die nächste Primzahl nach 70 ist 71: 71 ist prim.
+die kleinste Primzahl größer als 61 ist 67: 62 = 2 × 31, 63 = 3 × 21, 64 = 2 × 32, 65 = 5 × 13, 66 = 2 × 33, 67 ist prim.
+ein Drittel einer Zahl ist 2; die Zahl ist 6: 2 × 3 = 6.
+was ist die kleinste ganze Zahl n mit n × 8 > 54? die kleinste ganze Zahl n mit n × 8 > 54 ist 7: 1 × 8 = 8 ≤ 54, 2 × 8 = 16 ≤ 54, 3 × 8 = 24 ≤ 54, 4 × 8 = 32 ≤ 54, 5 × 8 = 40 ≤ 54, 6 × 8 = 48 ≤ 54, 7 × 8 = 56 > 54.
+die nächste Primzahl nach 107 ist 109: 108 = 2 × 54, 109 ist prim.
+was ist die kleinste Primzahl größer als 55? die kleinste Primzahl größer als 55 ist 59: 56 = 2 × 28, 57 = 3 × 19, 58 = 2 × 29, 59 ist prim.
+welche Zahl ist es, wenn ein Zehntel davon 18 ist? ein Zehntel einer Zahl ist 18; die Zahl ist 180: 18 × 10 = 180.
+
+le plus petit entier n tel que n × 10 > 18 est 2 : 1 × 10 = 10 ≤ 18, 2 × 10 = 20 > 18.
+quel est le nombre premier suivant après 101 ? le nombre premier suivant après 101 est 103 : 102 = 2 × 51, 103 est premier.
+le plus petit nombre premier supérieur à 92 est 97 : 93 = 3 × 31, 94 = 2 × 47, 95 = 5 × 19, 96 = 2 × 48, 97 est premier.
+un huitième d'un nombre est 14 ; le nombre est 112 : 14 × 8 = 112.
+quel est le plus petit entier n tel que n × 4 > 10 ? le plus petit entier n tel que n × 4 > 10 est 3 : 1 × 4 = 4 ≤ 10, 2 × 4 = 8 ≤ 10, 3 × 4 = 12 > 10.
+le nombre premier suivant après 33 est 37 : 34 = 2 × 17, 35 = 5 × 7, 36 = 2 × 18, 37 est premier.
+quel est le plus petit nombre premier supérieur à 24 ? le plus petit nombre premier supérieur à 24 est 29 : 25 = 5 × 5, 26 = 2 × 13, 27 = 3 × 9, 28 = 2 × 14, 29 est premier.
+quel est le nombre si un cinquième de celui-ci est 6 ? un cinquième d'un nombre est 6 ; le nombre est 30 : 6 × 5 = 30.
+le plus petit entier n tel que n × 6 > 26 est 5 : 1 × 6 = 6 ≤ 26, 2 × 6 = 12 ≤ 26, 3 × 6 = 18 ≤ 26, 4 × 6 = 24 ≤ 26, 5 × 6 = 30 > 26.
+quel est le nombre premier suivant après 70 ? le nombre premier suivant après 70 est 71 : 71 est premier.
+le plus petit nombre premier supérieur à 61 est 67 : 62 = 2 × 31, 63 = 3 × 21, 64 = 2 × 32, 65 = 5 × 13, 66 = 2 × 33, 67 est premier.
+un tiers d'un nombre est 2 ; le nombre est 6 : 2 × 3 = 6.
+quel est le plus petit entier n tel que n × 8 > 54 ? le plus petit entier n tel que n × 8 > 54 est 7 : 1 × 8 = 8 ≤ 54, 2 × 8 = 16 ≤ 54, 3 × 8 = 24 ≤ 54, 4 × 8 = 32 ≤ 54, 5 × 8 = 40 ≤ 54, 6 × 8 = 48 ≤ 54, 7 × 8 = 56 > 54.
+le nombre premier suivant après 107 est 109 : 108 = 2 × 54, 109 est premier.
+quel est le plus petit nombre premier supérieur à 55 ? le plus petit nombre premier supérieur à 55 est 59 : 56 = 2 × 28, 57 = 3 × 19, 58 = 2 × 29, 59 est premier.
+quel est le nombre si un dixième de celui-ci est 18 ? un dixième d'un nombre est 18 ; le nombre est 180 : 18 × 10 = 180.
+
+el menor entero n con n × 10 > 18 es 2: 1 × 10 = 10 ≤ 18, 2 × 10 = 20 > 18.
+¿cuál es el siguiente primo después de 101? el siguiente primo después de 101 es 103: 102 = 2 × 51, 103 es primo.
+el menor primo mayor que 92 es 97: 93 = 3 × 31, 94 = 2 × 47, 95 = 5 × 19, 96 = 2 × 48, 97 es primo.
+un octavo de un número es 14; el número es 112: 14 × 8 = 112.
+¿cuál es el menor entero n con n × 4 > 10? el menor entero n con n × 4 > 10 es 3: 1 × 4 = 4 ≤ 10, 2 × 4 = 8 ≤ 10, 3 × 4 = 12 > 10.
+el siguiente primo después de 33 es 37: 34 = 2 × 17, 35 = 5 × 7, 36 = 2 × 18, 37 es primo.
+¿cuál es el menor primo mayor que 24? el menor primo mayor que 24 es 29: 25 = 5 × 5, 26 = 2 × 13, 27 = 3 × 9, 28 = 2 × 14, 29 es primo.
+¿cuál es el número si un quinto de él es 6? un quinto de un número es 6; el número es 30: 6 × 5 = 30.
+el menor entero n con n × 6 > 26 es 5: 1 × 6 = 6 ≤ 26, 2 × 6 = 12 ≤ 26, 3 × 6 = 18 ≤ 26, 4 × 6 = 24 ≤ 26, 5 × 6 = 30 > 26.
+¿cuál es el siguiente primo después de 70? el siguiente primo después de 70 es 71: 71 es primo.
+el menor primo mayor que 61 es 67: 62 = 2 × 31, 63 = 3 × 21, 64 = 2 × 32, 65 = 5 × 13, 66 = 2 × 33, 67 es primo.
+un tercio de un número es 2; el número es 6: 2 × 3 = 6.
+¿cuál es el menor entero n con n × 8 > 54? el menor entero n con n × 8 > 54 es 7: 1 × 8 = 8 ≤ 54, 2 × 8 = 16 ≤ 54, 3 × 8 = 24 ≤ 54, 4 × 8 = 32 ≤ 54, 5 × 8 = 40 ≤ 54, 6 × 8 = 48 ≤ 54, 7 × 8 = 56 > 54.
+el siguiente primo después de 107 es 109: 108 = 2 × 54, 109 es primo.
+¿cuál es el menor primo mayor que 55? el menor primo mayor que 55 es 59: 56 = 2 × 28, 57 = 3 × 19, 58 = 2 × 29, 59 es primo.
+¿cuál es el número si un décimo de él es 18? un décimo de un número es 18; el número es 180: 18 × 10 = 180.
+
+il più piccolo intero n con n × 10 > 18 è 2: 1 × 10 = 10 ≤ 18, 2 × 10 = 20 > 18.
+qual è il primo successivo dopo 101? il primo successivo dopo 101 è 103: 102 = 2 × 51, 103 è primo.
+il più piccolo primo maggiore di 92 è 97: 93 = 3 × 31, 94 = 2 × 47, 95 = 5 × 19, 96 = 2 × 48, 97 è primo.
+un ottavo di un numero è 14; il numero è 112: 14 × 8 = 112.
+qual è il più piccolo intero n con n × 4 > 10? il più piccolo intero n con n × 4 > 10 è 3: 1 × 4 = 4 ≤ 10, 2 × 4 = 8 ≤ 10, 3 × 4 = 12 > 10.
+il primo successivo dopo 33 è 37: 34 = 2 × 17, 35 = 5 × 7, 36 = 2 × 18, 37 è primo.
+qual è il più piccolo primo maggiore di 24? il più piccolo primo maggiore di 24 è 29: 25 = 5 × 5, 26 = 2 × 13, 27 = 3 × 9, 28 = 2 × 14, 29 è primo.
+qual è il numero se un quinto di esso è 6? un quinto di un numero è 6; il numero è 30: 6 × 5 = 30.
+il più piccolo intero n con n × 6 > 26 è 5: 1 × 6 = 6 ≤ 26, 2 × 6 = 12 ≤ 26, 3 × 6 = 18 ≤ 26, 4 × 6 = 24 ≤ 26, 5 × 6 = 30 > 26.
+qual è il primo successivo dopo 70? il primo successivo dopo 70 è 71: 71 è primo.
+il più piccolo primo maggiore di 61 è 67: 62 = 2 × 31, 63 = 3 × 21, 64 = 2 × 32, 65 = 5 × 13, 66 = 2 × 33, 67 è primo.
+un terzo di un numero è 2; il numero è 6: 2 × 3 = 6.
+qual è il più piccolo intero n con n × 8 > 54? il più piccolo intero n con n × 8 > 54 è 7: 1 × 8 = 8 ≤ 54, 2 × 8 = 16 ≤ 54, 3 × 8 = 24 ≤ 54, 4 × 8 = 32 ≤ 54, 5 × 8 = 40 ≤ 54, 6 × 8 = 48 ≤ 54, 7 × 8 = 56 > 54.
+il primo successivo dopo 107 è 109: 108 = 2 × 54, 109 è primo.
+qual è il più piccolo primo maggiore di 55? il più piccolo primo maggiore di 55 è 59: 56 = 2 × 28, 57 = 3 × 19, 58 = 2 × 29, 59 è primo.
+qual è il numero se un decimo di esso è 18? un decimo di un numero è 18; il numero è 180: 18 × 10 = 180.
+
+o menor inteiro n com n × 10 > 18 é 2: 1 × 10 = 10 ≤ 18, 2 × 10 = 20 > 18.
+qual é o próximo primo depois de 101? o próximo primo depois de 101 é 103: 102 = 2 × 51, 103 é primo.
+o menor primo maior que 92 é 97: 93 = 3 × 31, 94 = 2 × 47, 95 = 5 × 19, 96 = 2 × 48, 97 é primo.
+um oitavo de um número é 14; o número é 112: 14 × 8 = 112.
+qual é o menor inteiro n com n × 4 > 10? o menor inteiro n com n × 4 > 10 é 3: 1 × 4 = 4 ≤ 10, 2 × 4 = 8 ≤ 10, 3 × 4 = 12 > 10.
+o próximo primo depois de 33 é 37: 34 = 2 × 17, 35 = 5 × 7, 36 = 2 × 18, 37 é primo.
+qual é o menor primo maior que 24? o menor primo maior que 24 é 29: 25 = 5 × 5, 26 = 2 × 13, 27 = 3 × 9, 28 = 2 × 14, 29 é primo.
+qual é o número se um quinto dele é 6? um quinto de um número é 6; o número é 30: 6 × 5 = 30.
+o menor inteiro n com n × 6 > 26 é 5: 1 × 6 = 6 ≤ 26, 2 × 6 = 12 ≤ 26, 3 × 6 = 18 ≤ 26, 4 × 6 = 24 ≤ 26, 5 × 6 = 30 > 26.
+qual é o próximo primo depois de 70? o próximo primo depois de 70 é 71: 71 é primo.
+o menor primo maior que 61 é 67: 62 = 2 × 31, 63 = 3 × 21, 64 = 2 × 32, 65 = 5 × 13, 66 = 2 × 33, 67 é primo.
+um terço de um número é 2; o número é 6: 2 × 3 = 6.
+qual é o menor inteiro n com n × 8 > 54? o menor inteiro n com n × 8 > 54 é 7: 1 × 8 = 8 ≤ 54, 2 × 8 = 16 ≤ 54, 3 × 8 = 24 ≤ 54, 4 × 8 = 32 ≤ 54, 5 × 8 = 40 ≤ 54, 6 × 8 = 48 ≤ 54, 7 × 8 = 56 > 54.
+o próximo primo depois de 107 é 109: 108 = 2 × 54, 109 é primo.
+qual é o menor primo maior que 55? o menor primo maior que 55 é 59: 56 = 2 × 28, 57 = 3 × 19, 58 = 2 × 29, 59 é primo.
+qual é o número se um décimo dele é 18? um décimo de um número é 18; o número é 180: 18 × 10 = 180.
+
+het kleinste gehele getal n met n × 10 > 18 is 2: 1 × 10 = 10 ≤ 18, 2 × 10 = 20 > 18.
+wat is het volgende priemgetal na 101? het volgende priemgetal na 101 is 103: 102 = 2 × 51, 103 is priem.
+het kleinste priemgetal groter dan 92 is 97: 93 = 3 × 31, 94 = 2 × 47, 95 = 5 × 19, 96 = 2 × 48, 97 is priem.
+een achtste van een getal is 14; het getal is 112: 14 × 8 = 112.
+wat is het kleinste gehele getal n met n × 4 > 10? het kleinste gehele getal n met n × 4 > 10 is 3: 1 × 4 = 4 ≤ 10, 2 × 4 = 8 ≤ 10, 3 × 4 = 12 > 10.
+het volgende priemgetal na 33 is 37: 34 = 2 × 17, 35 = 5 × 7, 36 = 2 × 18, 37 is priem.
+wat is het kleinste priemgetal groter dan 24? het kleinste priemgetal groter dan 24 is 29: 25 = 5 × 5, 26 = 2 × 13, 27 = 3 × 9, 28 = 2 × 14, 29 is priem.
+wat is het getal als een vijfde ervan 6 is? een vijfde van een getal is 6; het getal is 30: 6 × 5 = 30.
+het kleinste gehele getal n met n × 6 > 26 is 5: 1 × 6 = 6 ≤ 26, 2 × 6 = 12 ≤ 26, 3 × 6 = 18 ≤ 26, 4 × 6 = 24 ≤ 26, 5 × 6 = 30 > 26.
+wat is het volgende priemgetal na 70? het volgende priemgetal na 70 is 71: 71 is priem.
+het kleinste priemgetal groter dan 61 is 67: 62 = 2 × 31, 63 = 3 × 21, 64 = 2 × 32, 65 = 5 × 13, 66 = 2 × 33, 67 is priem.
+een derde van een getal is 2; het getal is 6: 2 × 3 = 6.
+wat is het kleinste gehele getal n met n × 8 > 54? het kleinste gehele getal n met n × 8 > 54 is 7: 1 × 8 = 8 ≤ 54, 2 × 8 = 16 ≤ 54, 3 × 8 = 24 ≤ 54, 4 × 8 = 32 ≤ 54, 5 × 8 = 40 ≤ 54, 6 × 8 = 48 ≤ 54, 7 × 8 = 56 > 54.
+het volgende priemgetal na 107 is 109: 108 = 2 × 54, 109 is priem.
+wat is het kleinste priemgetal groter dan 55? het kleinste priemgetal groter dan 55 is 59: 56 = 2 × 28, 57 = 3 × 19, 58 = 2 × 29, 59 is priem.
+wat is het getal als een tiende ervan 18 is? een tiende van een getal is 18; het getal is 180: 18 × 10 = 180.
+
+najmniejsza liczba całkowita n, dla której n × 10 > 18, to 2: 1 × 10 = 10 ≤ 18, 2 × 10 = 20 > 18.
+jaka jest następna liczba pierwsza po 101? następna liczba pierwsza po 101 to 103: 102 = 2 × 51, 103 jest liczbą pierwszą.
+najmniejsza liczba pierwsza większa od 92 to 97: 93 = 3 × 31, 94 = 2 × 47, 95 = 5 × 19, 96 = 2 × 48, 97 jest liczbą pierwszą.
+jedna ósma liczby to 14; liczba to 112: 14 × 8 = 112.
+jaka jest najmniejsza liczba całkowita n, dla której n × 4 > 10? najmniejsza liczba całkowita n, dla której n × 4 > 10, to 3: 1 × 4 = 4 ≤ 10, 2 × 4 = 8 ≤ 10, 3 × 4 = 12 > 10.
+następna liczba pierwsza po 33 to 37: 34 = 2 × 17, 35 = 5 × 7, 36 = 2 × 18, 37 jest liczbą pierwszą.
+jaka jest najmniejsza liczba pierwsza większa od 24? najmniejsza liczba pierwsza większa od 24 to 29: 25 = 5 × 5, 26 = 2 × 13, 27 = 3 × 9, 28 = 2 × 14, 29 jest liczbą pierwszą.
+jaka to liczba, jeśli jej jedna piąta to 6? jedna piąta liczby to 6; liczba to 30: 6 × 5 = 30.
+najmniejsza liczba całkowita n, dla której n × 6 > 26, to 5: 1 × 6 = 6 ≤ 26, 2 × 6 = 12 ≤ 26, 3 × 6 = 18 ≤ 26, 4 × 6 = 24 ≤ 26, 5 × 6 = 30 > 26.
+jaka jest następna liczba pierwsza po 70? następna liczba pierwsza po 70 to 71: 71 jest liczbą pierwszą.
+najmniejsza liczba pierwsza większa od 61 to 67: 62 = 2 × 31, 63 = 3 × 21, 64 = 2 × 32, 65 = 5 × 13, 66 = 2 × 33, 67 jest liczbą pierwszą.
+jedna trzecia liczby to 2; liczba to 6: 2 × 3 = 6.
+jaka jest najmniejsza liczba całkowita n, dla której n × 8 > 54? najmniejsza liczba całkowita n, dla której n × 8 > 54, to 7: 1 × 8 = 8 ≤ 54, 2 × 8 = 16 ≤ 54, 3 × 8 = 24 ≤ 54, 4 × 8 = 32 ≤ 54, 5 × 8 = 40 ≤ 54, 6 × 8 = 48 ≤ 54, 7 × 8 = 56 > 54.
+następna liczba pierwsza po 107 to 109: 108 = 2 × 54, 109 jest liczbą pierwszą.
+jaka jest najmniejsza liczba pierwsza większa od 55? najmniejsza liczba pierwsza większa od 55 to 59: 56 = 2 × 28, 57 = 3 × 19, 58 = 2 × 29, 59 jest liczbą pierwszą.
+jaka to liczba, jeśli jej jedna dziesiąta to 18? jedna dziesiąta liczby to 18; liczba to 180: 18 × 10 = 180.
+
+n × 10 > 18 olan en küçük tam sayı 2: 1 × 10 = 10 ≤ 18, 2 × 10 = 20 > 18.
+101 sayısından sonraki asal sayı kaçtır? 101 sayısından sonraki asal sayı 103: 102 = 2 × 51, 103 asaldır.
+92 sayısından büyük en küçük asal sayı 97: 93 = 3 × 31, 94 = 2 × 47, 95 = 5 × 19, 96 = 2 × 48, 97 asaldır.
+bir sayının sekizde biri 14 ise sayı 112 olur: 14 × 8 = 112.
+n × 4 > 10 olan en küçük tam sayı kaçtır? n × 4 > 10 olan en küçük tam sayı 3: 1 × 4 = 4 ≤ 10, 2 × 4 = 8 ≤ 10, 3 × 4 = 12 > 10.
+33 sayısından sonraki asal sayı 37: 34 = 2 × 17, 35 = 5 × 7, 36 = 2 × 18, 37 asaldır.
+24 sayısından büyük en küçük asal sayı kaçtır? 24 sayısından büyük en küçük asal sayı 29: 25 = 5 × 5, 26 = 2 × 13, 27 = 3 × 9, 28 = 2 × 14, 29 asaldır.
+beşte biri 6 olan sayı kaçtır? bir sayının beşte biri 6 ise sayı 30 olur: 6 × 5 = 30.
+n × 6 > 26 olan en küçük tam sayı 5: 1 × 6 = 6 ≤ 26, 2 × 6 = 12 ≤ 26, 3 × 6 = 18 ≤ 26, 4 × 6 = 24 ≤ 26, 5 × 6 = 30 > 26.
+70 sayısından sonraki asal sayı kaçtır? 70 sayısından sonraki asal sayı 71: 71 asaldır.
+61 sayısından büyük en küçük asal sayı 67: 62 = 2 × 31, 63 = 3 × 21, 64 = 2 × 32, 65 = 5 × 13, 66 = 2 × 33, 67 asaldır.
+bir sayının üçte biri 2 ise sayı 6 olur: 2 × 3 = 6.
+n × 8 > 54 olan en küçük tam sayı kaçtır? n × 8 > 54 olan en küçük tam sayı 7: 1 × 8 = 8 ≤ 54, 2 × 8 = 16 ≤ 54, 3 × 8 = 24 ≤ 54, 4 × 8 = 32 ≤ 54, 5 × 8 = 40 ≤ 54, 6 × 8 = 48 ≤ 54, 7 × 8 = 56 > 54.
+107 sayısından sonraki asal sayı 109: 108 = 2 × 54, 109 asaldır.
+55 sayısından büyük en küçük asal sayı kaçtır? 55 sayısından büyük en küçük asal sayı 59: 56 = 2 × 28, 57 = 3 × 19, 58 = 2 × 29, 59 asaldır.
+onda biri 18 olan sayı kaçtır? bir sayının onda biri 18 ise sayı 180 olur: 18 × 10 = 180.
+
+the next prime after 86 is 89: 87 = 3 × 29, 88 = 2 × 44, 89 is prime.
+what is the smallest whole number n with n × 11 > 82? the smallest whole number n with n × 11 > 82 is 8: 1 × 11 = 11 ≤ 82, 2 × 11 = 22 ≤ 82, 3 × 11 = 33 ≤ 82, 4 × 11 = 44 ≤ 82, 5 × 11 = 55 ≤ 82, 6 × 11 = 66 ≤ 82, 7 × 11 = 77 ≤ 82, 8 × 11 = 88 > 82.
+an eighth of a number is 13; the number is 104: 13 × 8 = 104.
+the smallest prime greater than 9 is 11: 10 = 2 × 5, 11 is prime.
+what is the next prime after 49? the next prime after 49 is 53: 50 = 2 × 25, 51 = 3 × 17, 52 = 2 × 26, 53 is prime.
+the smallest whole number n with n × 9 > 51 is 6: 1 × 9 = 9 ≤ 51, 2 × 9 = 18 ≤ 51, 3 × 9 = 27 ≤ 51, 4 × 9 = 36 ≤ 51, 5 × 9 = 45 ≤ 51, 6 × 9 = 54 > 51.
+what is the number if a tenth of it is 17? a tenth of a number is 17; the number is 170: 17 × 10 = 170.
+what is the smallest prime greater than 77? the smallest prime greater than 77 is 79: 78 = 2 × 39, 79 is prime.
+the next prime after 55 is 59: 56 = 2 × 28, 57 = 3 × 19, 58 = 2 × 29, 59 is prime.
+what is the smallest whole number n with n × 7 > 25? the smallest whole number n with n × 7 > 25 is 4: 1 × 7 = 7 ≤ 25, 2 × 7 = 14 ≤ 25, 3 × 7 = 21 ≤ 25, 4 × 7 = 28 > 25.
+a third of a number is 21; the number is 63: 21 × 3 = 63.
+the smallest prime greater than 40 is 41: 41 is prime.
+what is the next prime after 18? the next prime after 18 is 19: 19 is prime.
+the smallest whole number n with n × 3 > 7 is 3: 1 × 3 = 3 ≤ 7, 2 × 3 = 6 ≤ 7, 3 × 3 = 9 > 7.
+what is the number if a fifth of it is 5? a fifth of a number is 5; the number is 25: 5 × 5 = 25.
+what is the smallest prime greater than 108? the smallest prime greater than 108 is 109: 109 is prime.
+
+следующее простое после 86 — это 89: 87 = 3 × 29, 88 = 2 × 44, 89 простое.
+каково наименьшее целое n, при котором n × 11 > 82? наименьшее целое n, при котором n × 11 > 82, — это 8: 1 × 11 = 11 ≤ 82, 2 × 11 = 22 ≤ 82, 3 × 11 = 33 ≤ 82, 4 × 11 = 44 ≤ 82, 5 × 11 = 55 ≤ 82, 6 × 11 = 66 ≤ 82, 7 × 11 = 77 ≤ 82, 8 × 11 = 88 > 82.
+восьмая часть числа равна 13; число — 104: 13 × 8 = 104.
+наименьшее простое больше 9 — это 11: 10 = 2 × 5, 11 простое.
+какое следующее простое после 49? следующее простое после 49 — это 53: 50 = 2 × 25, 51 = 3 × 17, 52 = 2 × 26, 53 простое.
+наименьшее целое n, при котором n × 9 > 51, — это 6: 1 × 9 = 9 ≤ 51, 2 × 9 = 18 ≤ 51, 3 × 9 = 27 ≤ 51, 4 × 9 = 36 ≤ 51, 5 × 9 = 45 ≤ 51, 6 × 9 = 54 > 51.
+какое число, если его десятая часть равна 17? десятая часть числа равна 17; число — 170: 17 × 10 = 170.
+какое наименьшее простое больше 77? наименьшее простое больше 77 — это 79: 78 = 2 × 39, 79 простое.
+следующее простое после 55 — это 59: 56 = 2 × 28, 57 = 3 × 19, 58 = 2 × 29, 59 простое.
+каково наименьшее целое n, при котором n × 7 > 25? наименьшее целое n, при котором n × 7 > 25, — это 4: 1 × 7 = 7 ≤ 25, 2 × 7 = 14 ≤ 25, 3 × 7 = 21 ≤ 25, 4 × 7 = 28 > 25.
+треть числа равна 21; число — 63: 21 × 3 = 63.
+наименьшее простое больше 40 — это 41: 41 простое.
+какое следующее простое после 18? следующее простое после 18 — это 19: 19 простое.
+наименьшее целое n, при котором n × 3 > 7, — это 3: 1 × 3 = 3 ≤ 7, 2 × 3 = 6 ≤ 7, 3 × 3 = 9 > 7.
+какое число, если его пятая часть равна 5? пятая часть числа равна 5; число — 25: 5 × 5 = 25.
+какое наименьшее простое больше 108? наименьшее простое больше 108 — это 109: 109 простое.
+
+die nächste Primzahl nach 86 ist 89: 87 = 3 × 29, 88 = 2 × 44, 89 ist prim.
+was ist die kleinste ganze Zahl n mit n × 11 > 82? die kleinste ganze Zahl n mit n × 11 > 82 ist 8: 1 × 11 = 11 ≤ 82, 2 × 11 = 22 ≤ 82, 3 × 11 = 33 ≤ 82, 4 × 11 = 44 ≤ 82, 5 × 11 = 55 ≤ 82, 6 × 11 = 66 ≤ 82, 7 × 11 = 77 ≤ 82, 8 × 11 = 88 > 82.
+ein Achtel einer Zahl ist 13; die Zahl ist 104: 13 × 8 = 104.
+die kleinste Primzahl größer als 9 ist 11: 10 = 2 × 5, 11 ist prim.
+was ist die nächste Primzahl nach 49? die nächste Primzahl nach 49 ist 53: 50 = 2 × 25, 51 = 3 × 17, 52 = 2 × 26, 53 ist prim.
+die kleinste ganze Zahl n mit n × 9 > 51 ist 6: 1 × 9 = 9 ≤ 51, 2 × 9 = 18 ≤ 51, 3 × 9 = 27 ≤ 51, 4 × 9 = 36 ≤ 51, 5 × 9 = 45 ≤ 51, 6 × 9 = 54 > 51.
+welche Zahl ist es, wenn ein Zehntel davon 17 ist? ein Zehntel einer Zahl ist 17; die Zahl ist 170: 17 × 10 = 170.
+was ist die kleinste Primzahl größer als 77? die kleinste Primzahl größer als 77 ist 79: 78 = 2 × 39, 79 ist prim.
+die nächste Primzahl nach 55 ist 59: 56 = 2 × 28, 57 = 3 × 19, 58 = 2 × 29, 59 ist prim.
+was ist die kleinste ganze Zahl n mit n × 7 > 25? die kleinste ganze Zahl n mit n × 7 > 25 ist 4: 1 × 7 = 7 ≤ 25, 2 × 7 = 14 ≤ 25, 3 × 7 = 21 ≤ 25, 4 × 7 = 28 > 25.
+ein Drittel einer Zahl ist 21; die Zahl ist 63: 21 × 3 = 63.
+die kleinste Primzahl größer als 40 ist 41: 41 ist prim.
+was ist die nächste Primzahl nach 18? die nächste Primzahl nach 18 ist 19: 19 ist prim.
+die kleinste ganze Zahl n mit n × 3 > 7 ist 3: 1 × 3 = 3 ≤ 7, 2 × 3 = 6 ≤ 7, 3 × 3 = 9 > 7.
+welche Zahl ist es, wenn ein Fünftel davon 5 ist? ein Fünftel einer Zahl ist 5; die Zahl ist 25: 5 × 5 = 25.
+was ist die kleinste Primzahl größer als 108? die kleinste Primzahl größer als 108 ist 109: 109 ist prim.
+
+le nombre premier suivant après 86 est 89 : 87 = 3 × 29, 88 = 2 × 44, 89 est premier.
+quel est le plus petit entier n tel que n × 11 > 82 ? le plus petit entier n tel que n × 11 > 82 est 8 : 1 × 11 = 11 ≤ 82, 2 × 11 = 22 ≤ 82, 3 × 11 = 33 ≤ 82, 4 × 11 = 44 ≤ 82, 5 × 11 = 55 ≤ 82, 6 × 11 = 66 ≤ 82, 7 × 11 = 77 ≤ 82, 8 × 11 = 88 > 82.
+un huitième d'un nombre est 13 ; le nombre est 104 : 13 × 8 = 104.
+le plus petit nombre premier supérieur à 9 est 11 : 10 = 2 × 5, 11 est premier.
+quel est le nombre premier suivant après 49 ? le nombre premier suivant après 49 est 53 : 50 = 2 × 25, 51 = 3 × 17, 52 = 2 × 26, 53 est premier.
+le plus petit entier n tel que n × 9 > 51 est 6 : 1 × 9 = 9 ≤ 51, 2 × 9 = 18 ≤ 51, 3 × 9 = 27 ≤ 51, 4 × 9 = 36 ≤ 51, 5 × 9 = 45 ≤ 51, 6 × 9 = 54 > 51.
+quel est le nombre si un dixième de celui-ci est 17 ? un dixième d'un nombre est 17 ; le nombre est 170 : 17 × 10 = 170.
+quel est le plus petit nombre premier supérieur à 77 ? le plus petit nombre premier supérieur à 77 est 79 : 78 = 2 × 39, 79 est premier.
+le nombre premier suivant après 55 est 59 : 56 = 2 × 28, 57 = 3 × 19, 58 = 2 × 29, 59 est premier.
+quel est le plus petit entier n tel que n × 7 > 25 ? le plus petit entier n tel que n × 7 > 25 est 4 : 1 × 7 = 7 ≤ 25, 2 × 7 = 14 ≤ 25, 3 × 7 = 21 ≤ 25, 4 × 7 = 28 > 25.
+un tiers d'un nombre est 21 ; le nombre est 63 : 21 × 3 = 63.
+le plus petit nombre premier supérieur à 40 est 41 : 41 est premier.
+quel est le nombre premier suivant après 18 ? le nombre premier suivant après 18 est 19 : 19 est premier.
+le plus petit entier n tel que n × 3 > 7 est 3 : 1 × 3 = 3 ≤ 7, 2 × 3 = 6 ≤ 7, 3 × 3 = 9 > 7.
+quel est le nombre si un cinquième de celui-ci est 5 ? un cinquième d'un nombre est 5 ; le nombre est 25 : 5 × 5 = 25.
+quel est le plus petit nombre premier supérieur à 108 ? le plus petit nombre premier supérieur à 108 est 109 : 109 est premier.
+
+el siguiente primo después de 86 es 89: 87 = 3 × 29, 88 = 2 × 44, 89 es primo.
+¿cuál es el menor entero n con n × 11 > 82? el menor entero n con n × 11 > 82 es 8: 1 × 11 = 11 ≤ 82, 2 × 11 = 22 ≤ 82, 3 × 11 = 33 ≤ 82, 4 × 11 = 44 ≤ 82, 5 × 11 = 55 ≤ 82, 6 × 11 = 66 ≤ 82, 7 × 11 = 77 ≤ 82, 8 × 11 = 88 > 82.
+un octavo de un número es 13; el número es 104: 13 × 8 = 104.
+el menor primo mayor que 9 es 11: 10 = 2 × 5, 11 es primo.
+¿cuál es el siguiente primo después de 49? el siguiente primo después de 49 es 53: 50 = 2 × 25, 51 = 3 × 17, 52 = 2 × 26, 53 es primo.
+el menor entero n con n × 9 > 51 es 6: 1 × 9 = 9 ≤ 51, 2 × 9 = 18 ≤ 51, 3 × 9 = 27 ≤ 51, 4 × 9 = 36 ≤ 51, 5 × 9 = 45 ≤ 51, 6 × 9 = 54 > 51.
+¿cuál es el número si un décimo de él es 17? un décimo de un número es 17; el número es 170: 17 × 10 = 170.
+¿cuál es el menor primo mayor que 77? el menor primo mayor que 77 es 79: 78 = 2 × 39, 79 es primo.
+el siguiente primo después de 55 es 59: 56 = 2 × 28, 57 = 3 × 19, 58 = 2 × 29, 59 es primo.
+¿cuál es el menor entero n con n × 7 > 25? el menor entero n con n × 7 > 25 es 4: 1 × 7 = 7 ≤ 25, 2 × 7 = 14 ≤ 25, 3 × 7 = 21 ≤ 25, 4 × 7 = 28 > 25.
+un tercio de un número es 21; el número es 63: 21 × 3 = 63.
+el menor primo mayor que 40 es 41: 41 es primo.
+¿cuál es el siguiente primo después de 18? el siguiente primo después de 18 es 19: 19 es primo.
+el menor entero n con n × 3 > 7 es 3: 1 × 3 = 3 ≤ 7, 2 × 3 = 6 ≤ 7, 3 × 3 = 9 > 7.
+¿cuál es el número si un quinto de él es 5? un quinto de un número es 5; el número es 25: 5 × 5 = 25.
+¿cuál es el menor primo mayor que 108? el menor primo mayor que 108 es 109: 109 es primo.
+
+il primo successivo dopo 86 è 89: 87 = 3 × 29, 88 = 2 × 44, 89 è primo.
+qual è il più piccolo intero n con n × 11 > 82? il più piccolo intero n con n × 11 > 82 è 8: 1 × 11 = 11 ≤ 82, 2 × 11 = 22 ≤ 82, 3 × 11 = 33 ≤ 82, 4 × 11 = 44 ≤ 82, 5 × 11 = 55 ≤ 82, 6 × 11 = 66 ≤ 82, 7 × 11 = 77 ≤ 82, 8 × 11 = 88 > 82.
+un ottavo di un numero è 13; il numero è 104: 13 × 8 = 104.
+il più piccolo primo maggiore di 9 è 11: 10 = 2 × 5, 11 è primo.
+qual è il primo successivo dopo 49? il primo successivo dopo 49 è 53: 50 = 2 × 25, 51 = 3 × 17, 52 = 2 × 26, 53 è primo.
+il più piccolo intero n con n × 9 > 51 è 6: 1 × 9 = 9 ≤ 51, 2 × 9 = 18 ≤ 51, 3 × 9 = 27 ≤ 51, 4 × 9 = 36 ≤ 51, 5 × 9 = 45 ≤ 51, 6 × 9 = 54 > 51.
+qual è il numero se un decimo di esso è 17? un decimo di un numero è 17; il numero è 170: 17 × 10 = 170.
+qual è il più piccolo primo maggiore di 77? il più piccolo primo maggiore di 77 è 79: 78 = 2 × 39, 79 è primo.
+il primo successivo dopo 55 è 59: 56 = 2 × 28, 57 = 3 × 19, 58 = 2 × 29, 59 è primo.
+qual è il più piccolo intero n con n × 7 > 25? il più piccolo intero n con n × 7 > 25 è 4: 1 × 7 = 7 ≤ 25, 2 × 7 = 14 ≤ 25, 3 × 7 = 21 ≤ 25, 4 × 7 = 28 > 25.
+un terzo di un numero è 21; il numero è 63: 21 × 3 = 63.
+il più piccolo primo maggiore di 40 è 41: 41 è primo.
+qual è il primo successivo dopo 18? il primo successivo dopo 18 è 19: 19 è primo.
+il più piccolo intero n con n × 3 > 7 è 3: 1 × 3 = 3 ≤ 7, 2 × 3 = 6 ≤ 7, 3 × 3 = 9 > 7.
+qual è il numero se un quinto di esso è 5? un quinto di un numero è 5; il numero è 25: 5 × 5 = 25.
+qual è il più piccolo primo maggiore di 108? il più piccolo primo maggiore di 108 è 109: 109 è primo.
+
+o próximo primo depois de 86 é 89: 87 = 3 × 29, 88 = 2 × 44, 89 é primo.
+qual é o menor inteiro n com n × 11 > 82? o menor inteiro n com n × 11 > 82 é 8: 1 × 11 = 11 ≤ 82, 2 × 11 = 22 ≤ 82, 3 × 11 = 33 ≤ 82, 4 × 11 = 44 ≤ 82, 5 × 11 = 55 ≤ 82, 6 × 11 = 66 ≤ 82, 7 × 11 = 77 ≤ 82, 8 × 11 = 88 > 82.
+um oitavo de um número é 13; o número é 104: 13 × 8 = 104.
+o menor primo maior que 9 é 11: 10 = 2 × 5, 11 é primo.
+qual é o próximo primo depois de 49? o próximo primo depois de 49 é 53: 50 = 2 × 25, 51 = 3 × 17, 52 = 2 × 26, 53 é primo.
+o menor inteiro n com n × 9 > 51 é 6: 1 × 9 = 9 ≤ 51, 2 × 9 = 18 ≤ 51, 3 × 9 = 27 ≤ 51, 4 × 9 = 36 ≤ 51, 5 × 9 = 45 ≤ 51, 6 × 9 = 54 > 51.
+qual é o número se um décimo dele é 17? um décimo de um número é 17; o número é 170: 17 × 10 = 170.
+qual é o menor primo maior que 77? o menor primo maior que 77 é 79: 78 = 2 × 39, 79 é primo.
+o próximo primo depois de 55 é 59: 56 = 2 × 28, 57 = 3 × 19, 58 = 2 × 29, 59 é primo.
+qual é o menor inteiro n com n × 7 > 25? o menor inteiro n com n × 7 > 25 é 4: 1 × 7 = 7 ≤ 25, 2 × 7 = 14 ≤ 25, 3 × 7 = 21 ≤ 25, 4 × 7 = 28 > 25.
+um terço de um número é 21; o número é 63: 21 × 3 = 63.
+o menor primo maior que 40 é 41: 41 é primo.
+qual é o próximo primo depois de 18? o próximo primo depois de 18 é 19: 19 é primo.
+o menor inteiro n com n × 3 > 7 é 3: 1 × 3 = 3 ≤ 7, 2 × 3 = 6 ≤ 7, 3 × 3 = 9 > 7.
+qual é o número se um quinto dele é 5? um quinto de um número é 5; o número é 25: 5 × 5 = 25.
+qual é o menor primo maior que 108? o menor primo maior que 108 é 109: 109 é primo.
+
+het volgende priemgetal na 86 is 89: 87 = 3 × 29, 88 = 2 × 44, 89 is priem.
+wat is het kleinste gehele getal n met n × 11 > 82? het kleinste gehele getal n met n × 11 > 82 is 8: 1 × 11 = 11 ≤ 82, 2 × 11 = 22 ≤ 82, 3 × 11 = 33 ≤ 82, 4 × 11 = 44 ≤ 82, 5 × 11 = 55 ≤ 82, 6 × 11 = 66 ≤ 82, 7 × 11 = 77 ≤ 82, 8 × 11 = 88 > 82.
+een achtste van een getal is 13; het getal is 104: 13 × 8 = 104.
+het kleinste priemgetal groter dan 9 is 11: 10 = 2 × 5, 11 is priem.
+wat is het volgende priemgetal na 49? het volgende priemgetal na 49 is 53: 50 = 2 × 25, 51 = 3 × 17, 52 = 2 × 26, 53 is priem.
+het kleinste gehele getal n met n × 9 > 51 is 6: 1 × 9 = 9 ≤ 51, 2 × 9 = 18 ≤ 51, 3 × 9 = 27 ≤ 51, 4 × 9 = 36 ≤ 51, 5 × 9 = 45 ≤ 51, 6 × 9 = 54 > 51.
+wat is het getal als een tiende ervan 17 is? een tiende van een getal is 17; het getal is 170: 17 × 10 = 170.
+wat is het kleinste priemgetal groter dan 77? het kleinste priemgetal groter dan 77 is 79: 78 = 2 × 39, 79 is priem.
+het volgende priemgetal na 55 is 59: 56 = 2 × 28, 57 = 3 × 19, 58 = 2 × 29, 59 is priem.
+wat is het kleinste gehele getal n met n × 7 > 25? het kleinste gehele getal n met n × 7 > 25 is 4: 1 × 7 = 7 ≤ 25, 2 × 7 = 14 ≤ 25, 3 × 7 = 21 ≤ 25, 4 × 7 = 28 > 25.
+een derde van een getal is 21; het getal is 63: 21 × 3 = 63.
+het kleinste priemgetal groter dan 40 is 41: 41 is priem.
+wat is het volgende priemgetal na 18? het volgende priemgetal na 18 is 19: 19 is priem.
+het kleinste gehele getal n met n × 3 > 7 is 3: 1 × 3 = 3 ≤ 7, 2 × 3 = 6 ≤ 7, 3 × 3 = 9 > 7.
+wat is het getal als een vijfde ervan 5 is? een vijfde van een getal is 5; het getal is 25: 5 × 5 = 25.
+wat is het kleinste priemgetal groter dan 108? het kleinste priemgetal groter dan 108 is 109: 109 is priem.
+
+następna liczba pierwsza po 86 to 89: 87 = 3 × 29, 88 = 2 × 44, 89 jest liczbą pierwszą.
+jaka jest najmniejsza liczba całkowita n, dla której n × 11 > 82? najmniejsza liczba całkowita n, dla której n × 11 > 82, to 8: 1 × 11 = 11 ≤ 82, 2 × 11 = 22 ≤ 82, 3 × 11 = 33 ≤ 82, 4 × 11 = 44 ≤ 82, 5 × 11 = 55 ≤ 82, 6 × 11 = 66 ≤ 82, 7 × 11 = 77 ≤ 82, 8 × 11 = 88 > 82.
+jedna ósma liczby to 13; liczba to 104: 13 × 8 = 104.
+najmniejsza liczba pierwsza większa od 9 to 11: 10 = 2 × 5, 11 jest liczbą pierwszą.
+jaka jest następna liczba pierwsza po 49? następna liczba pierwsza po 49 to 53: 50 = 2 × 25, 51 = 3 × 17, 52 = 2 × 26, 53 jest liczbą pierwszą.
+najmniejsza liczba całkowita n, dla której n × 9 > 51, to 6: 1 × 9 = 9 ≤ 51, 2 × 9 = 18 ≤ 51, 3 × 9 = 27 ≤ 51, 4 × 9 = 36 ≤ 51, 5 × 9 = 45 ≤ 51, 6 × 9 = 54 > 51.
+jaka to liczba, jeśli jej jedna dziesiąta to 17? jedna dziesiąta liczby to 17; liczba to 170: 17 × 10 = 170.
+jaka jest najmniejsza liczba pierwsza większa od 77? najmniejsza liczba pierwsza większa od 77 to 79: 78 = 2 × 39, 79 jest liczbą pierwszą.
+następna liczba pierwsza po 55 to 59: 56 = 2 × 28, 57 = 3 × 19, 58 = 2 × 29, 59 jest liczbą pierwszą.
+jaka jest najmniejsza liczba całkowita n, dla której n × 7 > 25? najmniejsza liczba całkowita n, dla której n × 7 > 25, to 4: 1 × 7 = 7 ≤ 25, 2 × 7 = 14 ≤ 25, 3 × 7 = 21 ≤ 25, 4 × 7 = 28 > 25.
+jedna trzecia liczby to 21; liczba to 63: 21 × 3 = 63.
+najmniejsza liczba pierwsza większa od 40 to 41: 41 jest liczbą pierwszą.
+jaka jest następna liczba pierwsza po 18? następna liczba pierwsza po 18 to 19: 19 jest liczbą pierwszą.
+najmniejsza liczba całkowita n, dla której n × 3 > 7, to 3: 1 × 3 = 3 ≤ 7, 2 × 3 = 6 ≤ 7, 3 × 3 = 9 > 7.
+jaka to liczba, jeśli jej jedna piąta to 5? jedna piąta liczby to 5; liczba to 25: 5 × 5 = 25.
+jaka jest najmniejsza liczba pierwsza większa od 108? najmniejsza liczba pierwsza większa od 108 to 109: 109 jest liczbą pierwszą.
+
+86 sayısından sonraki asal sayı 89: 87 = 3 × 29, 88 = 2 × 44, 89 asaldır.
+n × 11 > 82 olan en küçük tam sayı kaçtır? n × 11 > 82 olan en küçük tam sayı 8: 1 × 11 = 11 ≤ 82, 2 × 11 = 22 ≤ 82, 3 × 11 = 33 ≤ 82, 4 × 11 = 44 ≤ 82, 5 × 11 = 55 ≤ 82, 6 × 11 = 66 ≤ 82, 7 × 11 = 77 ≤ 82, 8 × 11 = 88 > 82.
+bir sayının sekizde biri 13 ise sayı 104 olur: 13 × 8 = 104.
+9 sayısından büyük en küçük asal sayı 11: 10 = 2 × 5, 11 asaldır.
+49 sayısından sonraki asal sayı kaçtır? 49 sayısından sonraki asal sayı 53: 50 = 2 × 25, 51 = 3 × 17, 52 = 2 × 26, 53 asaldır.
+n × 9 > 51 olan en küçük tam sayı 6: 1 × 9 = 9 ≤ 51, 2 × 9 = 18 ≤ 51, 3 × 9 = 27 ≤ 51, 4 × 9 = 36 ≤ 51, 5 × 9 = 45 ≤ 51, 6 × 9 = 54 > 51.
+onda biri 17 olan sayı kaçtır? bir sayının onda biri 17 ise sayı 170 olur: 17 × 10 = 170.
+77 sayısından büyük en küçük asal sayı kaçtır? 77 sayısından büyük en küçük asal sayı 79: 78 = 2 × 39, 79 asaldır.
+55 sayısından sonraki asal sayı 59: 56 = 2 × 28, 57 = 3 × 19, 58 = 2 × 29, 59 asaldır.
+n × 7 > 25 olan en küçük tam sayı kaçtır? n × 7 > 25 olan en küçük tam sayı 4: 1 × 7 = 7 ≤ 25, 2 × 7 = 14 ≤ 25, 3 × 7 = 21 ≤ 25, 4 × 7 = 28 > 25.
+bir sayının üçte biri 21 ise sayı 63 olur: 21 × 3 = 63.
+40 sayısından büyük en küçük asal sayı 41: 41 asaldır.
+18 sayısından sonraki asal sayı kaçtır? 18 sayısından sonraki asal sayı 19: 19 asaldır.
+n × 3 > 7 olan en küçük tam sayı 3: 1 × 3 = 3 ≤ 7, 2 × 3 = 6 ≤ 7, 3 × 3 = 9 > 7.
+beşte biri 5 olan sayı kaçtır? bir sayının beşte biri 5 ise sayı 25 olur: 5 × 5 = 25.
+108 sayısından büyük en küçük asal sayı kaçtır? 108 sayısından büyük en küçük asal sayı 109: 109 asaldır.
+
+what is the smallest prime greater than 25? the smallest prime greater than 25 is 29: 26 = 2 × 13, 27 = 3 × 9, 28 = 2 × 14, 29 is prime.
+what is the next prime after 71? the next prime after 71 is 73: 72 = 2 × 36, 73 is prime.
+what is the smallest whole number n with n × 4 > 6? the smallest whole number n with n × 4 > 6 is 2: 1 × 4 = 4 ≤ 6, 2 × 4 = 8 > 6.
+what is the number if a tenth of it is 16? a tenth of a number is 16; the number is 160: 16 × 10 = 160.
+the smallest prime greater than 93 is 97: 94 = 2 × 47, 95 = 5 × 19, 96 = 2 × 48, 97 is prime.
+the next prime after 34 is 37: 35 = 5 × 7, 36 = 2 × 18, 37 is prime.
+the smallest whole number n with n × 12 > 82 is 7: 1 × 12 = 12 ≤ 82, 2 × 12 = 24 ≤ 82, 3 × 12 = 36 ≤ 82, 4 × 12 = 48 ≤ 82, 5 × 12 = 60 ≤ 82, 6 × 12 = 72 ≤ 82, 7 × 12 = 84 > 82.
+a third of a number is 20; the number is 60: 20 × 3 = 60.
+what is the smallest prime greater than 56? the smallest prime greater than 56 is 59: 57 = 3 × 19, 58 = 2 × 29, 59 is prime.
+what is the next prime after 102? the next prime after 102 is 103: 103 is prime.
+what is the smallest whole number n with n × 10 > 42? the smallest whole number n with n × 10 > 42 is 5: 1 × 10 = 10 ≤ 42, 2 × 10 = 20 ≤ 42, 3 × 10 = 30 ≤ 42, 4 × 10 = 40 ≤ 42, 5 × 10 = 50 > 42.
+what is the number if a fifth of it is 4? a fifth of a number is 4; the number is 20: 4 × 5 = 20.
+the smallest prime greater than 62 is 67: 63 = 3 × 21, 64 = 2 × 32, 65 = 5 × 13, 66 = 2 × 33, 67 is prime.
+the next prime after 108 is 109: 109 is prime.
+the smallest whole number n with n × 6 > 20 is 4: 1 × 6 = 6 ≤ 20, 2 × 6 = 12 ≤ 20, 3 × 6 = 18 ≤ 20, 4 × 6 = 24 > 20.
+an eighth of a number is 12; the number is 96: 12 × 8 = 96.
+
+какое наименьшее простое больше 25? наименьшее простое больше 25 — это 29: 26 = 2 × 13, 27 = 3 × 9, 28 = 2 × 14, 29 простое.
+какое следующее простое после 71? следующее простое после 71 — это 73: 72 = 2 × 36, 73 простое.
+каково наименьшее целое n, при котором n × 4 > 6? наименьшее целое n, при котором n × 4 > 6, — это 2: 1 × 4 = 4 ≤ 6, 2 × 4 = 8 > 6.
+какое число, если его десятая часть равна 16? десятая часть числа равна 16; число — 160: 16 × 10 = 160.
+наименьшее простое больше 93 — это 97: 94 = 2 × 47, 95 = 5 × 19, 96 = 2 × 48, 97 простое.
+следующее простое после 34 — это 37: 35 = 5 × 7, 36 = 2 × 18, 37 простое.
+наименьшее целое n, при котором n × 12 > 82, — это 7: 1 × 12 = 12 ≤ 82, 2 × 12 = 24 ≤ 82, 3 × 12 = 36 ≤ 82, 4 × 12 = 48 ≤ 82, 5 × 12 = 60 ≤ 82, 6 × 12 = 72 ≤ 82, 7 × 12 = 84 > 82.
+треть числа равна 20; число — 60: 20 × 3 = 60.
+какое наименьшее простое больше 56? наименьшее простое больше 56 — это 59: 57 = 3 × 19, 58 = 2 × 29, 59 простое.
+какое следующее простое после 102? следующее простое после 102 — это 103: 103 простое.
+каково наименьшее целое n, при котором n × 10 > 42? наименьшее целое n, при котором n × 10 > 42, — это 5: 1 × 10 = 10 ≤ 42, 2 × 10 = 20 ≤ 42, 3 × 10 = 30 ≤ 42, 4 × 10 = 40 ≤ 42, 5 × 10 = 50 > 42.
+какое число, если его пятая часть равна 4? пятая часть числа равна 4; число — 20: 4 × 5 = 20.
+наименьшее простое больше 62 — это 67: 63 = 3 × 21, 64 = 2 × 32, 65 = 5 × 13, 66 = 2 × 33, 67 простое.
+следующее простое после 108 — это 109: 109 простое.
+наименьшее целое n, при котором n × 6 > 20, — это 4: 1 × 6 = 6 ≤ 20, 2 × 6 = 12 ≤ 20, 3 × 6 = 18 ≤ 20, 4 × 6 = 24 > 20.
+восьмая часть числа равна 12; число — 96: 12 × 8 = 96.
+
+was ist die kleinste Primzahl größer als 25? die kleinste Primzahl größer als 25 ist 29: 26 = 2 × 13, 27 = 3 × 9, 28 = 2 × 14, 29 ist prim.
+was ist die nächste Primzahl nach 71? die nächste Primzahl nach 71 ist 73: 72 = 2 × 36, 73 ist prim.
+was ist die kleinste ganze Zahl n mit n × 4 > 6? die kleinste ganze Zahl n mit n × 4 > 6 ist 2: 1 × 4 = 4 ≤ 6, 2 × 4 = 8 > 6.
+welche Zahl ist es, wenn ein Zehntel davon 16 ist? ein Zehntel einer Zahl ist 16; die Zahl ist 160: 16 × 10 = 160.
+die kleinste Primzahl größer als 93 ist 97: 94 = 2 × 47, 95 = 5 × 19, 96 = 2 × 48, 97 ist prim.
+die nächste Primzahl nach 34 ist 37: 35 = 5 × 7, 36 = 2 × 18, 37 ist prim.
+die kleinste ganze Zahl n mit n × 12 > 82 ist 7: 1 × 12 = 12 ≤ 82, 2 × 12 = 24 ≤ 82, 3 × 12 = 36 ≤ 82, 4 × 12 = 48 ≤ 82, 5 × 12 = 60 ≤ 82, 6 × 12 = 72 ≤ 82, 7 × 12 = 84 > 82.
+ein Drittel einer Zahl ist 20; die Zahl ist 60: 20 × 3 = 60.
+was ist die kleinste Primzahl größer als 56? die kleinste Primzahl größer als 56 ist 59: 57 = 3 × 19, 58 = 2 × 29, 59 ist prim.
+was ist die nächste Primzahl nach 102? die nächste Primzahl nach 102 ist 103: 103 ist prim.
+was ist die kleinste ganze Zahl n mit n × 10 > 42? die kleinste ganze Zahl n mit n × 10 > 42 ist 5: 1 × 10 = 10 ≤ 42, 2 × 10 = 20 ≤ 42, 3 × 10 = 30 ≤ 42, 4 × 10 = 40 ≤ 42, 5 × 10 = 50 > 42.
+welche Zahl ist es, wenn ein Fünftel davon 4 ist? ein Fünftel einer Zahl ist 4; die Zahl ist 20: 4 × 5 = 20.
+die kleinste Primzahl größer als 62 ist 67: 63 = 3 × 21, 64 = 2 × 32, 65 = 5 × 13, 66 = 2 × 33, 67 ist prim.
+die nächste Primzahl nach 108 ist 109: 109 ist prim.
+die kleinste ganze Zahl n mit n × 6 > 20 ist 4: 1 × 6 = 6 ≤ 20, 2 × 6 = 12 ≤ 20, 3 × 6 = 18 ≤ 20, 4 × 6 = 24 > 20.
+ein Achtel einer Zahl ist 12; die Zahl ist 96: 12 × 8 = 96.
+
+quel est le plus petit nombre premier supérieur à 25 ? le plus petit nombre premier supérieur à 25 est 29 : 26 = 2 × 13, 27 = 3 × 9, 28 = 2 × 14, 29 est premier.
+quel est le nombre premier suivant après 71 ? le nombre premier suivant après 71 est 73 : 72 = 2 × 36, 73 est premier.
+quel est le plus petit entier n tel que n × 4 > 6 ? le plus petit entier n tel que n × 4 > 6 est 2 : 1 × 4 = 4 ≤ 6, 2 × 4 = 8 > 6.
+quel est le nombre si un dixième de celui-ci est 16 ? un dixième d'un nombre est 16 ; le nombre est 160 : 16 × 10 = 160.
+le plus petit nombre premier supérieur à 93 est 97 : 94 = 2 × 47, 95 = 5 × 19, 96 = 2 × 48, 97 est premier.
+le nombre premier suivant après 34 est 37 : 35 = 5 × 7, 36 = 2 × 18, 37 est premier.
+le plus petit entier n tel que n × 12 > 82 est 7 : 1 × 12 = 12 ≤ 82, 2 × 12 = 24 ≤ 82, 3 × 12 = 36 ≤ 82, 4 × 12 = 48 ≤ 82, 5 × 12 = 60 ≤ 82, 6 × 12 = 72 ≤ 82, 7 × 12 = 84 > 82.
+un tiers d'un nombre est 20 ; le nombre est 60 : 20 × 3 = 60.
+quel est le plus petit nombre premier supérieur à 56 ? le plus petit nombre premier supérieur à 56 est 59 : 57 = 3 × 19, 58 = 2 × 29, 59 est premier.
+quel est le nombre premier suivant après 102 ? le nombre premier suivant après 102 est 103 : 103 est premier.
+quel est le plus petit entier n tel que n × 10 > 42 ? le plus petit entier n tel que n × 10 > 42 est 5 : 1 × 10 = 10 ≤ 42, 2 × 10 = 20 ≤ 42, 3 × 10 = 30 ≤ 42, 4 × 10 = 40 ≤ 42, 5 × 10 = 50 > 42.
+quel est le nombre si un cinquième de celui-ci est 4 ? un cinquième d'un nombre est 4 ; le nombre est 20 : 4 × 5 = 20.
+le plus petit nombre premier supérieur à 62 est 67 : 63 = 3 × 21, 64 = 2 × 32, 65 = 5 × 13, 66 = 2 × 33, 67 est premier.
+le nombre premier suivant après 108 est 109 : 109 est premier.
+le plus petit entier n tel que n × 6 > 20 est 4 : 1 × 6 = 6 ≤ 20, 2 × 6 = 12 ≤ 20, 3 × 6 = 18 ≤ 20, 4 × 6 = 24 > 20.
+un huitième d'un nombre est 12 ; le nombre est 96 : 12 × 8 = 96.
+
+¿cuál es el menor primo mayor que 25? el menor primo mayor que 25 es 29: 26 = 2 × 13, 27 = 3 × 9, 28 = 2 × 14, 29 es primo.
+¿cuál es el siguiente primo después de 71? el siguiente primo después de 71 es 73: 72 = 2 × 36, 73 es primo.
+¿cuál es el menor entero n con n × 4 > 6? el menor entero n con n × 4 > 6 es 2: 1 × 4 = 4 ≤ 6, 2 × 4 = 8 > 6.
+¿cuál es el número si un décimo de él es 16? un décimo de un número es 16; el número es 160: 16 × 10 = 160.
+el menor primo mayor que 93 es 97: 94 = 2 × 47, 95 = 5 × 19, 96 = 2 × 48, 97 es primo.
+el siguiente primo después de 34 es 37: 35 = 5 × 7, 36 = 2 × 18, 37 es primo.
+el menor entero n con n × 12 > 82 es 7: 1 × 12 = 12 ≤ 82, 2 × 12 = 24 ≤ 82, 3 × 12 = 36 ≤ 82, 4 × 12 = 48 ≤ 82, 5 × 12 = 60 ≤ 82, 6 × 12 = 72 ≤ 82, 7 × 12 = 84 > 82.
+un tercio de un número es 20; el número es 60: 20 × 3 = 60.
+¿cuál es el menor primo mayor que 56? el menor primo mayor que 56 es 59: 57 = 3 × 19, 58 = 2 × 29, 59 es primo.
+¿cuál es el siguiente primo después de 102? el siguiente primo después de 102 es 103: 103 es primo.
+¿cuál es el menor entero n con n × 10 > 42? el menor entero n con n × 10 > 42 es 5: 1 × 10 = 10 ≤ 42, 2 × 10 = 20 ≤ 42, 3 × 10 = 30 ≤ 42, 4 × 10 = 40 ≤ 42, 5 × 10 = 50 > 42.
+¿cuál es el número si un quinto de él es 4? un quinto de un número es 4; el número es 20: 4 × 5 = 20.
+el menor primo mayor que 62 es 67: 63 = 3 × 21, 64 = 2 × 32, 65 = 5 × 13, 66 = 2 × 33, 67 es primo.
+el siguiente primo después de 108 es 109: 109 es primo.
+el menor entero n con n × 6 > 20 es 4: 1 × 6 = 6 ≤ 20, 2 × 6 = 12 ≤ 20, 3 × 6 = 18 ≤ 20, 4 × 6 = 24 > 20.
+un octavo de un número es 12; el número es 96: 12 × 8 = 96.
+
+qual è il più piccolo primo maggiore di 25? il più piccolo primo maggiore di 25 è 29: 26 = 2 × 13, 27 = 3 × 9, 28 = 2 × 14, 29 è primo.
+qual è il primo successivo dopo 71? il primo successivo dopo 71 è 73: 72 = 2 × 36, 73 è primo.
+qual è il più piccolo intero n con n × 4 > 6? il più piccolo intero n con n × 4 > 6 è 2: 1 × 4 = 4 ≤ 6, 2 × 4 = 8 > 6.
+qual è il numero se un decimo di esso è 16? un decimo di un numero è 16; il numero è 160: 16 × 10 = 160.
+il più piccolo primo maggiore di 93 è 97: 94 = 2 × 47, 95 = 5 × 19, 96 = 2 × 48, 97 è primo.
+il primo successivo dopo 34 è 37: 35 = 5 × 7, 36 = 2 × 18, 37 è primo.
+il più piccolo intero n con n × 12 > 82 è 7: 1 × 12 = 12 ≤ 82, 2 × 12 = 24 ≤ 82, 3 × 12 = 36 ≤ 82, 4 × 12 = 48 ≤ 82, 5 × 12 = 60 ≤ 82, 6 × 12 = 72 ≤ 82, 7 × 12 = 84 > 82.
+un terzo di un numero è 20; il numero è 60: 20 × 3 = 60.
+qual è il più piccolo primo maggiore di 56? il più piccolo primo maggiore di 56 è 59: 57 = 3 × 19, 58 = 2 × 29, 59 è primo.
+qual è il primo successivo dopo 102? il primo successivo dopo 102 è 103: 103 è primo.
+qual è il più piccolo intero n con n × 10 > 42? il più piccolo intero n con n × 10 > 42 è 5: 1 × 10 = 10 ≤ 42, 2 × 10 = 20 ≤ 42, 3 × 10 = 30 ≤ 42, 4 × 10 = 40 ≤ 42, 5 × 10 = 50 > 42.
+qual è il numero se un quinto di esso è 4? un quinto di un numero è 4; il numero è 20: 4 × 5 = 20.
+il più piccolo primo maggiore di 62 è 67: 63 = 3 × 21, 64 = 2 × 32, 65 = 5 × 13, 66 = 2 × 33, 67 è primo.
+il primo successivo dopo 108 è 109: 109 è primo.
+il più piccolo intero n con n × 6 > 20 è 4: 1 × 6 = 6 ≤ 20, 2 × 6 = 12 ≤ 20, 3 × 6 = 18 ≤ 20, 4 × 6 = 24 > 20.
+un ottavo di un numero è 12; il numero è 96: 12 × 8 = 96.
+
+qual é o menor primo maior que 25? o menor primo maior que 25 é 29: 26 = 2 × 13, 27 = 3 × 9, 28 = 2 × 14, 29 é primo.
+qual é o próximo primo depois de 71? o próximo primo depois de 71 é 73: 72 = 2 × 36, 73 é primo.
+qual é o menor inteiro n com n × 4 > 6? o menor inteiro n com n × 4 > 6 é 2: 1 × 4 = 4 ≤ 6, 2 × 4 = 8 > 6.
+qual é o número se um décimo dele é 16? um décimo de um número é 16; o número é 160: 16 × 10 = 160.
+o menor primo maior que 93 é 97: 94 = 2 × 47, 95 = 5 × 19, 96 = 2 × 48, 97 é primo.
+o próximo primo depois de 34 é 37: 35 = 5 × 7, 36 = 2 × 18, 37 é primo.
+o menor inteiro n com n × 12 > 82 é 7: 1 × 12 = 12 ≤ 82, 2 × 12 = 24 ≤ 82, 3 × 12 = 36 ≤ 82, 4 × 12 = 48 ≤ 82, 5 × 12 = 60 ≤ 82, 6 × 12 = 72 ≤ 82, 7 × 12 = 84 > 82.
+um terço de um número é 20; o número é 60: 20 × 3 = 60.
+qual é o menor primo maior que 56? o menor primo maior que 56 é 59: 57 = 3 × 19, 58 = 2 × 29, 59 é primo.
+qual é o próximo primo depois de 102? o próximo primo depois de 102 é 103: 103 é primo.
+qual é o menor inteiro n com n × 10 > 42? o menor inteiro n com n × 10 > 42 é 5: 1 × 10 = 10 ≤ 42, 2 × 10 = 20 ≤ 42, 3 × 10 = 30 ≤ 42, 4 × 10 = 40 ≤ 42, 5 × 10 = 50 > 42.
+qual é o número se um quinto dele é 4? um quinto de um número é 4; o número é 20: 4 × 5 = 20.
+o menor primo maior que 62 é 67: 63 = 3 × 21, 64 = 2 × 32, 65 = 5 × 13, 66 = 2 × 33, 67 é primo.
+o próximo primo depois de 108 é 109: 109 é primo.
+o menor inteiro n com n × 6 > 20 é 4: 1 × 6 = 6 ≤ 20, 2 × 6 = 12 ≤ 20, 3 × 6 = 18 ≤ 20, 4 × 6 = 24 > 20.
+um oitavo de um número é 12; o número é 96: 12 × 8 = 96.
+
+wat is het kleinste priemgetal groter dan 25? het kleinste priemgetal groter dan 25 is 29: 26 = 2 × 13, 27 = 3 × 9, 28 = 2 × 14, 29 is priem.
+wat is het volgende priemgetal na 71? het volgende priemgetal na 71 is 73: 72 = 2 × 36, 73 is priem.
+wat is het kleinste gehele getal n met n × 4 > 6? het kleinste gehele getal n met n × 4 > 6 is 2: 1 × 4 = 4 ≤ 6, 2 × 4 = 8 > 6.
+wat is het getal als een tiende ervan 16 is? een tiende van een getal is 16; het getal is 160: 16 × 10 = 160.
+het kleinste priemgetal groter dan 93 is 97: 94 = 2 × 47, 95 = 5 × 19, 96 = 2 × 48, 97 is priem.
+het volgende priemgetal na 34 is 37: 35 = 5 × 7, 36 = 2 × 18, 37 is priem.
+het kleinste gehele getal n met n × 12 > 82 is 7: 1 × 12 = 12 ≤ 82, 2 × 12 = 24 ≤ 82, 3 × 12 = 36 ≤ 82, 4 × 12 = 48 ≤ 82, 5 × 12 = 60 ≤ 82, 6 × 12 = 72 ≤ 82, 7 × 12 = 84 > 82.
+een derde van een getal is 20; het getal is 60: 20 × 3 = 60.
+wat is het kleinste priemgetal groter dan 56? het kleinste priemgetal groter dan 56 is 59: 57 = 3 × 19, 58 = 2 × 29, 59 is priem.
+wat is het volgende priemgetal na 102? het volgende priemgetal na 102 is 103: 103 is priem.
+wat is het kleinste gehele getal n met n × 10 > 42? het kleinste gehele getal n met n × 10 > 42 is 5: 1 × 10 = 10 ≤ 42, 2 × 10 = 20 ≤ 42, 3 × 10 = 30 ≤ 42, 4 × 10 = 40 ≤ 42, 5 × 10 = 50 > 42.
+wat is het getal als een vijfde ervan 4 is? een vijfde van een getal is 4; het getal is 20: 4 × 5 = 20.
+het kleinste priemgetal groter dan 62 is 67: 63 = 3 × 21, 64 = 2 × 32, 65 = 5 × 13, 66 = 2 × 33, 67 is priem.
+het volgende priemgetal na 108 is 109: 109 is priem.
+het kleinste gehele getal n met n × 6 > 20 is 4: 1 × 6 = 6 ≤ 20, 2 × 6 = 12 ≤ 20, 3 × 6 = 18 ≤ 20, 4 × 6 = 24 > 20.
+een achtste van een getal is 12; het getal is 96: 12 × 8 = 96.
+
+jaka jest najmniejsza liczba pierwsza większa od 25? najmniejsza liczba pierwsza większa od 25 to 29: 26 = 2 × 13, 27 = 3 × 9, 28 = 2 × 14, 29 jest liczbą pierwszą.
+jaka jest następna liczba pierwsza po 71? następna liczba pierwsza po 71 to 73: 72 = 2 × 36, 73 jest liczbą pierwszą.
+jaka jest najmniejsza liczba całkowita n, dla której n × 4 > 6? najmniejsza liczba całkowita n, dla której n × 4 > 6, to 2: 1 × 4 = 4 ≤ 6, 2 × 4 = 8 > 6.
+jaka to liczba, jeśli jej jedna dziesiąta to 16? jedna dziesiąta liczby to 16; liczba to 160: 16 × 10 = 160.
+najmniejsza liczba pierwsza większa od 93 to 97: 94 = 2 × 47, 95 = 5 × 19, 96 = 2 × 48, 97 jest liczbą pierwszą.
+następna liczba pierwsza po 34 to 37: 35 = 5 × 7, 36 = 2 × 18, 37 jest liczbą pierwszą.
+najmniejsza liczba całkowita n, dla której n × 12 > 82, to 7: 1 × 12 = 12 ≤ 82, 2 × 12 = 24 ≤ 82, 3 × 12 = 36 ≤ 82, 4 × 12 = 48 ≤ 82, 5 × 12 = 60 ≤ 82, 6 × 12 = 72 ≤ 82, 7 × 12 = 84 > 82.
+jedna trzecia liczby to 20; liczba to 60: 20 × 3 = 60.
+jaka jest najmniejsza liczba pierwsza większa od 56? najmniejsza liczba pierwsza większa od 56 to 59: 57 = 3 × 19, 58 = 2 × 29, 59 jest liczbą pierwszą.
+jaka jest następna liczba pierwsza po 102? następna liczba pierwsza po 102 to 103: 103 jest liczbą pierwszą.
+jaka jest najmniejsza liczba całkowita n, dla której n × 10 > 42? najmniejsza liczba całkowita n, dla której n × 10 > 42, to 5: 1 × 10 = 10 ≤ 42, 2 × 10 = 20 ≤ 42, 3 × 10 = 30 ≤ 42, 4 × 10 = 40 ≤ 42, 5 × 10 = 50 > 42.
+jaka to liczba, jeśli jej jedna piąta to 4? jedna piąta liczby to 4; liczba to 20: 4 × 5 = 20.
+najmniejsza liczba pierwsza większa od 62 to 67: 63 = 3 × 21, 64 = 2 × 32, 65 = 5 × 13, 66 = 2 × 33, 67 jest liczbą pierwszą.
+następna liczba pierwsza po 108 to 109: 109 jest liczbą pierwszą.
+najmniejsza liczba całkowita n, dla której n × 6 > 20, to 4: 1 × 6 = 6 ≤ 20, 2 × 6 = 12 ≤ 20, 3 × 6 = 18 ≤ 20, 4 × 6 = 24 > 20.
+jedna ósma liczby to 12; liczba to 96: 12 × 8 = 96.
+
+25 sayısından büyük en küçük asal sayı kaçtır? 25 sayısından büyük en küçük asal sayı 29: 26 = 2 × 13, 27 = 3 × 9, 28 = 2 × 14, 29 asaldır.
+71 sayısından sonraki asal sayı kaçtır? 71 sayısından sonraki asal sayı 73: 72 = 2 × 36, 73 asaldır.
+n × 4 > 6 olan en küçük tam sayı kaçtır? n × 4 > 6 olan en küçük tam sayı 2: 1 × 4 = 4 ≤ 6, 2 × 4 = 8 > 6.
+onda biri 16 olan sayı kaçtır? bir sayının onda biri 16 ise sayı 160 olur: 16 × 10 = 160.
+93 sayısından büyük en küçük asal sayı 97: 94 = 2 × 47, 95 = 5 × 19, 96 = 2 × 48, 97 asaldır.
+34 sayısından sonraki asal sayı 37: 35 = 5 × 7, 36 = 2 × 18, 37 asaldır.
+n × 12 > 82 olan en küçük tam sayı 7: 1 × 12 = 12 ≤ 82, 2 × 12 = 24 ≤ 82, 3 × 12 = 36 ≤ 82, 4 × 12 = 48 ≤ 82, 5 × 12 = 60 ≤ 82, 6 × 12 = 72 ≤ 82, 7 × 12 = 84 > 82.
+bir sayının üçte biri 20 ise sayı 60 olur: 20 × 3 = 60.
+56 sayısından büyük en küçük asal sayı kaçtır? 56 sayısından büyük en küçük asal sayı 59: 57 = 3 × 19, 58 = 2 × 29, 59 asaldır.
+102 sayısından sonraki asal sayı kaçtır? 102 sayısından sonraki asal sayı 103: 103 asaldır.
+n × 10 > 42 olan en küçük tam sayı kaçtır? n × 10 > 42 olan en küçük tam sayı 5: 1 × 10 = 10 ≤ 42, 2 × 10 = 20 ≤ 42, 3 × 10 = 30 ≤ 42, 4 × 10 = 40 ≤ 42, 5 × 10 = 50 > 42.
+beşte biri 4 olan sayı kaçtır? bir sayının beşte biri 4 ise sayı 20 olur: 4 × 5 = 20.
+62 sayısından büyük en küçük asal sayı 67: 63 = 3 × 21, 64 = 2 × 32, 65 = 5 × 13, 66 = 2 × 33, 67 asaldır.
+108 sayısından sonraki asal sayı 109: 109 asaldır.
+n × 6 > 20 olan en küçük tam sayı 4: 1 × 6 = 6 ≤ 20, 2 × 6 = 12 ≤ 20, 3 × 6 = 18 ≤ 20, 4 × 6 = 24 > 20.
+bir sayının sekizde biri 12 ise sayı 96 olur: 12 × 8 = 96.
+
+what is the smallest prime greater than 109? the smallest prime greater than 109 is 113: 110 = 2 × 55, 111 = 3 × 37, 112 = 2 × 56, 113 is prime.
+what is the number if a fifth of it is 3? a fifth of a number is 3; the number is 15: 3 × 5 = 15.
+the smallest whole number n with n × 9 > 39 is 5: 1 × 9 = 9 ≤ 39, 2 × 9 = 18 ≤ 39, 3 × 9 = 27 ≤ 39, 4 × 9 = 36 ≤ 39, 5 × 9 = 45 > 39.
+what is the next prime after 19? the next prime after 19 is 23: 20 = 2 × 10, 21 = 3 × 7, 22 = 2 × 11, 23 is prime.
+the smallest prime greater than 41 is 43: 42 = 2 × 21, 43 is prime.
+a third of a number is 19; the number is 57: 19 × 3 = 57.
+what is the smallest whole number n with n × 3 > 15? the smallest whole number n with n × 3 > 15 is 6: 1 × 3 = 3 ≤ 15, 2 × 3 = 6 ≤ 15, 3 × 3 = 9 ≤ 15, 4 × 3 = 12 ≤ 15, 5 × 3 = 15 ≤ 15, 6 × 3 = 18 > 15.
+the next prime after 56 is 59: 57 = 3 × 19, 58 = 2 × 29, 59 is prime.
+what is the smallest prime greater than 78? the smallest prime greater than 78 is 79: 79 is prime.
+what is the number if a tenth of it is 15? a tenth of a number is 15; the number is 150: 15 × 10 = 150.
+the smallest whole number n with n × 5 > 39 is 8: 1 × 5 = 5 ≤ 39, 2 × 5 = 10 ≤ 39, 3 × 5 = 15 ≤ 39, 4 × 5 = 20 ≤ 39, 5 × 5 = 25 ≤ 39, 6 × 5 = 30 ≤ 39, 7 × 5 = 35 ≤ 39, 8 × 5 = 40 > 39.
+what is the next prime after 50? the next prime after 50 is 53: 51 = 3 × 17, 52 = 2 × 26, 53 is prime.
+the smallest prime greater than 10 is 11: 11 is prime.
+an eighth of a number is 11; the number is 88: 11 × 8 = 88.
+what is the smallest whole number n with n × 7 > 14? the smallest whole number n with n × 7 > 14 is 3: 1 × 7 = 7 ≤ 14, 2 × 7 = 14 ≤ 14, 3 × 7 = 21 > 14.
+the next prime after 87 is 89: 88 = 2 × 44, 89 is prime.
+
+какое наименьшее простое больше 109? наименьшее простое больше 109 — это 113: 110 = 2 × 55, 111 = 3 × 37, 112 = 2 × 56, 113 простое.
+какое число, если его пятая часть равна 3? пятая часть числа равна 3; число — 15: 3 × 5 = 15.
+наименьшее целое n, при котором n × 9 > 39, — это 5: 1 × 9 = 9 ≤ 39, 2 × 9 = 18 ≤ 39, 3 × 9 = 27 ≤ 39, 4 × 9 = 36 ≤ 39, 5 × 9 = 45 > 39.
+какое следующее простое после 19? следующее простое после 19 — это 23: 20 = 2 × 10, 21 = 3 × 7, 22 = 2 × 11, 23 простое.
+наименьшее простое больше 41 — это 43: 42 = 2 × 21, 43 простое.
+треть числа равна 19; число — 57: 19 × 3 = 57.
+каково наименьшее целое n, при котором n × 3 > 15? наименьшее целое n, при котором n × 3 > 15, — это 6: 1 × 3 = 3 ≤ 15, 2 × 3 = 6 ≤ 15, 3 × 3 = 9 ≤ 15, 4 × 3 = 12 ≤ 15, 5 × 3 = 15 ≤ 15, 6 × 3 = 18 > 15.
+следующее простое после 56 — это 59: 57 = 3 × 19, 58 = 2 × 29, 59 простое.
+какое наименьшее простое больше 78? наименьшее простое больше 78 — это 79: 79 простое.
+какое число, если его десятая часть равна 15? десятая часть числа равна 15; число — 150: 15 × 10 = 150.
+наименьшее целое n, при котором n × 5 > 39, — это 8: 1 × 5 = 5 ≤ 39, 2 × 5 = 10 ≤ 39, 3 × 5 = 15 ≤ 39, 4 × 5 = 20 ≤ 39, 5 × 5 = 25 ≤ 39, 6 × 5 = 30 ≤ 39, 7 × 5 = 35 ≤ 39, 8 × 5 = 40 > 39.
+какое следующее простое после 50? следующее простое после 50 — это 53: 51 = 3 × 17, 52 = 2 × 26, 53 простое.
+наименьшее простое больше 10 — это 11: 11 простое.
+восьмая часть числа равна 11; число — 88: 11 × 8 = 88.
+каково наименьшее целое n, при котором n × 7 > 14? наименьшее целое n, при котором n × 7 > 14, — это 3: 1 × 7 = 7 ≤ 14, 2 × 7 = 14 ≤ 14, 3 × 7 = 21 > 14.
+следующее простое после 87 — это 89: 88 = 2 × 44, 89 простое.
+
+was ist die kleinste Primzahl größer als 109? die kleinste Primzahl größer als 109 ist 113: 110 = 2 × 55, 111 = 3 × 37, 112 = 2 × 56, 113 ist prim.
+welche Zahl ist es, wenn ein Fünftel davon 3 ist? ein Fünftel einer Zahl ist 3; die Zahl ist 15: 3 × 5 = 15.
+die kleinste ganze Zahl n mit n × 9 > 39 ist 5: 1 × 9 = 9 ≤ 39, 2 × 9 = 18 ≤ 39, 3 × 9 = 27 ≤ 39, 4 × 9 = 36 ≤ 39, 5 × 9 = 45 > 39.
+was ist die nächste Primzahl nach 19? die nächste Primzahl nach 19 ist 23: 20 = 2 × 10, 21 = 3 × 7, 22 = 2 × 11, 23 ist prim.
+die kleinste Primzahl größer als 41 ist 43: 42 = 2 × 21, 43 ist prim.
+ein Drittel einer Zahl ist 19; die Zahl ist 57: 19 × 3 = 57.
+was ist die kleinste ganze Zahl n mit n × 3 > 15? die kleinste ganze Zahl n mit n × 3 > 15 ist 6: 1 × 3 = 3 ≤ 15, 2 × 3 = 6 ≤ 15, 3 × 3 = 9 ≤ 15, 4 × 3 = 12 ≤ 15, 5 × 3 = 15 ≤ 15, 6 × 3 = 18 > 15.
+die nächste Primzahl nach 56 ist 59: 57 = 3 × 19, 58 = 2 × 29, 59 ist prim.
+was ist die kleinste Primzahl größer als 78? die kleinste Primzahl größer als 78 ist 79: 79 ist prim.
+welche Zahl ist es, wenn ein Zehntel davon 15 ist? ein Zehntel einer Zahl ist 15; die Zahl ist 150: 15 × 10 = 150.
+die kleinste ganze Zahl n mit n × 5 > 39 ist 8: 1 × 5 = 5 ≤ 39, 2 × 5 = 10 ≤ 39, 3 × 5 = 15 ≤ 39, 4 × 5 = 20 ≤ 39, 5 × 5 = 25 ≤ 39, 6 × 5 = 30 ≤ 39, 7 × 5 = 35 ≤ 39, 8 × 5 = 40 > 39.
+was ist die nächste Primzahl nach 50? die nächste Primzahl nach 50 ist 53: 51 = 3 × 17, 52 = 2 × 26, 53 ist prim.
+die kleinste Primzahl größer als 10 ist 11: 11 ist prim.
+ein Achtel einer Zahl ist 11; die Zahl ist 88: 11 × 8 = 88.
+was ist die kleinste ganze Zahl n mit n × 7 > 14? die kleinste ganze Zahl n mit n × 7 > 14 ist 3: 1 × 7 = 7 ≤ 14, 2 × 7 = 14 ≤ 14, 3 × 7 = 21 > 14.
+die nächste Primzahl nach 87 ist 89: 88 = 2 × 44, 89 ist prim.
+
+quel est le plus petit nombre premier supérieur à 109 ? le plus petit nombre premier supérieur à 109 est 113 : 110 = 2 × 55, 111 = 3 × 37, 112 = 2 × 56, 113 est premier.
+quel est le nombre si un cinquième de celui-ci est 3 ? un cinquième d'un nombre est 3 ; le nombre est 15 : 3 × 5 = 15.
+le plus petit entier n tel que n × 9 > 39 est 5 : 1 × 9 = 9 ≤ 39, 2 × 9 = 18 ≤ 39, 3 × 9 = 27 ≤ 39, 4 × 9 = 36 ≤ 39, 5 × 9 = 45 > 39.
+quel est le nombre premier suivant après 19 ? le nombre premier suivant après 19 est 23 : 20 = 2 × 10, 21 = 3 × 7, 22 = 2 × 11, 23 est premier.
+le plus petit nombre premier supérieur à 41 est 43 : 42 = 2 × 21, 43 est premier.
+un tiers d'un nombre est 19 ; le nombre est 57 : 19 × 3 = 57.
+quel est le plus petit entier n tel que n × 3 > 15 ? le plus petit entier n tel que n × 3 > 15 est 6 : 1 × 3 = 3 ≤ 15, 2 × 3 = 6 ≤ 15, 3 × 3 = 9 ≤ 15, 4 × 3 = 12 ≤ 15, 5 × 3 = 15 ≤ 15, 6 × 3 = 18 > 15.
+le nombre premier suivant après 56 est 59 : 57 = 3 × 19, 58 = 2 × 29, 59 est premier.
+quel est le plus petit nombre premier supérieur à 78 ? le plus petit nombre premier supérieur à 78 est 79 : 79 est premier.
+quel est le nombre si un dixième de celui-ci est 15 ? un dixième d'un nombre est 15 ; le nombre est 150 : 15 × 10 = 150.
+le plus petit entier n tel que n × 5 > 39 est 8 : 1 × 5 = 5 ≤ 39, 2 × 5 = 10 ≤ 39, 3 × 5 = 15 ≤ 39, 4 × 5 = 20 ≤ 39, 5 × 5 = 25 ≤ 39, 6 × 5 = 30 ≤ 39, 7 × 5 = 35 ≤ 39, 8 × 5 = 40 > 39.
+quel est le nombre premier suivant après 50 ? le nombre premier suivant après 50 est 53 : 51 = 3 × 17, 52 = 2 × 26, 53 est premier.
+le plus petit nombre premier supérieur à 10 est 11 : 11 est premier.
+un huitième d'un nombre est 11 ; le nombre est 88 : 11 × 8 = 88.
+quel est le plus petit entier n tel que n × 7 > 14 ? le plus petit entier n tel que n × 7 > 14 est 3 : 1 × 7 = 7 ≤ 14, 2 × 7 = 14 ≤ 14, 3 × 7 = 21 > 14.
+le nombre premier suivant après 87 est 89 : 88 = 2 × 44, 89 est premier.
+
+¿cuál es el menor primo mayor que 109? el menor primo mayor que 109 es 113: 110 = 2 × 55, 111 = 3 × 37, 112 = 2 × 56, 113 es primo.
+¿cuál es el número si un quinto de él es 3? un quinto de un número es 3; el número es 15: 3 × 5 = 15.
+el menor entero n con n × 9 > 39 es 5: 1 × 9 = 9 ≤ 39, 2 × 9 = 18 ≤ 39, 3 × 9 = 27 ≤ 39, 4 × 9 = 36 ≤ 39, 5 × 9 = 45 > 39.
+¿cuál es el siguiente primo después de 19? el siguiente primo después de 19 es 23: 20 = 2 × 10, 21 = 3 × 7, 22 = 2 × 11, 23 es primo.
+el menor primo mayor que 41 es 43: 42 = 2 × 21, 43 es primo.
+un tercio de un número es 19; el número es 57: 19 × 3 = 57.
+¿cuál es el menor entero n con n × 3 > 15? el menor entero n con n × 3 > 15 es 6: 1 × 3 = 3 ≤ 15, 2 × 3 = 6 ≤ 15, 3 × 3 = 9 ≤ 15, 4 × 3 = 12 ≤ 15, 5 × 3 = 15 ≤ 15, 6 × 3 = 18 > 15.
+el siguiente primo después de 56 es 59: 57 = 3 × 19, 58 = 2 × 29, 59 es primo.
+¿cuál es el menor primo mayor que 78? el menor primo mayor que 78 es 79: 79 es primo.
+¿cuál es el número si un décimo de él es 15? un décimo de un número es 15; el número es 150: 15 × 10 = 150.
+el menor entero n con n × 5 > 39 es 8: 1 × 5 = 5 ≤ 39, 2 × 5 = 10 ≤ 39, 3 × 5 = 15 ≤ 39, 4 × 5 = 20 ≤ 39, 5 × 5 = 25 ≤ 39, 6 × 5 = 30 ≤ 39, 7 × 5 = 35 ≤ 39, 8 × 5 = 40 > 39.
+¿cuál es el siguiente primo después de 50? el siguiente primo después de 50 es 53: 51 = 3 × 17, 52 = 2 × 26, 53 es primo.
+el menor primo mayor que 10 es 11: 11 es primo.
+un octavo de un número es 11; el número es 88: 11 × 8 = 88.
+¿cuál es el menor entero n con n × 7 > 14? el menor entero n con n × 7 > 14 es 3: 1 × 7 = 7 ≤ 14, 2 × 7 = 14 ≤ 14, 3 × 7 = 21 > 14.
+el siguiente primo después de 87 es 89: 88 = 2 × 44, 89 es primo.
+
+qual è il più piccolo primo maggiore di 109? il più piccolo primo maggiore di 109 è 113: 110 = 2 × 55, 111 = 3 × 37, 112 = 2 × 56, 113 è primo.
+qual è il numero se un quinto di esso è 3? un quinto di un numero è 3; il numero è 15: 3 × 5 = 15.
+il più piccolo intero n con n × 9 > 39 è 5: 1 × 9 = 9 ≤ 39, 2 × 9 = 18 ≤ 39, 3 × 9 = 27 ≤ 39, 4 × 9 = 36 ≤ 39, 5 × 9 = 45 > 39.
+qual è il primo successivo dopo 19? il primo successivo dopo 19 è 23: 20 = 2 × 10, 21 = 3 × 7, 22 = 2 × 11, 23 è primo.
+il più piccolo primo maggiore di 41 è 43: 42 = 2 × 21, 43 è primo.
+un terzo di un numero è 19; il numero è 57: 19 × 3 = 57.
+qual è il più piccolo intero n con n × 3 > 15? il più piccolo intero n con n × 3 > 15 è 6: 1 × 3 = 3 ≤ 15, 2 × 3 = 6 ≤ 15, 3 × 3 = 9 ≤ 15, 4 × 3 = 12 ≤ 15, 5 × 3 = 15 ≤ 15, 6 × 3 = 18 > 15.
+il primo successivo dopo 56 è 59: 57 = 3 × 19, 58 = 2 × 29, 59 è primo.
+qual è il più piccolo primo maggiore di 78? il più piccolo primo maggiore di 78 è 79: 79 è primo.
+qual è il numero se un decimo di esso è 15? un decimo di un numero è 15; il numero è 150: 15 × 10 = 150.
+il più piccolo intero n con n × 5 > 39 è 8: 1 × 5 = 5 ≤ 39, 2 × 5 = 10 ≤ 39, 3 × 5 = 15 ≤ 39, 4 × 5 = 20 ≤ 39, 5 × 5 = 25 ≤ 39, 6 × 5 = 30 ≤ 39, 7 × 5 = 35 ≤ 39, 8 × 5 = 40 > 39.
+qual è il primo successivo dopo 50? il primo successivo dopo 50 è 53: 51 = 3 × 17, 52 = 2 × 26, 53 è primo.
+il più piccolo primo maggiore di 10 è 11: 11 è primo.
+un ottavo di un numero è 11; il numero è 88: 11 × 8 = 88.
+qual è il più piccolo intero n con n × 7 > 14? il più piccolo intero n con n × 7 > 14 è 3: 1 × 7 = 7 ≤ 14, 2 × 7 = 14 ≤ 14, 3 × 7 = 21 > 14.
+il primo successivo dopo 87 è 89: 88 = 2 × 44, 89 è primo.
+
+qual é o menor primo maior que 109? o menor primo maior que 109 é 113: 110 = 2 × 55, 111 = 3 × 37, 112 = 2 × 56, 113 é primo.
+qual é o número se um quinto dele é 3? um quinto de um número é 3; o número é 15: 3 × 5 = 15.
+o menor inteiro n com n × 9 > 39 é 5: 1 × 9 = 9 ≤ 39, 2 × 9 = 18 ≤ 39, 3 × 9 = 27 ≤ 39, 4 × 9 = 36 ≤ 39, 5 × 9 = 45 > 39.
+qual é o próximo primo depois de 19? o próximo primo depois de 19 é 23: 20 = 2 × 10, 21 = 3 × 7, 22 = 2 × 11, 23 é primo.
+o menor primo maior que 41 é 43: 42 = 2 × 21, 43 é primo.
+um terço de um número é 19; o número é 57: 19 × 3 = 57.
+qual é o menor inteiro n com n × 3 > 15? o menor inteiro n com n × 3 > 15 é 6: 1 × 3 = 3 ≤ 15, 2 × 3 = 6 ≤ 15, 3 × 3 = 9 ≤ 15, 4 × 3 = 12 ≤ 15, 5 × 3 = 15 ≤ 15, 6 × 3 = 18 > 15.
+o próximo primo depois de 56 é 59: 57 = 3 × 19, 58 = 2 × 29, 59 é primo.
+qual é o menor primo maior que 78? o menor primo maior que 78 é 79: 79 é primo.
+qual é o número se um décimo dele é 15? um décimo de um número é 15; o número é 150: 15 × 10 = 150.
+o menor inteiro n com n × 5 > 39 é 8: 1 × 5 = 5 ≤ 39, 2 × 5 = 10 ≤ 39, 3 × 5 = 15 ≤ 39, 4 × 5 = 20 ≤ 39, 5 × 5 = 25 ≤ 39, 6 × 5 = 30 ≤ 39, 7 × 5 = 35 ≤ 39, 8 × 5 = 40 > 39.
+qual é o próximo primo depois de 50? o próximo primo depois de 50 é 53: 51 = 3 × 17, 52 = 2 × 26, 53 é primo.
+o menor primo maior que 10 é 11: 11 é primo.
+um oitavo de um número é 11; o número é 88: 11 × 8 = 88.
+qual é o menor inteiro n com n × 7 > 14? o menor inteiro n com n × 7 > 14 é 3: 1 × 7 = 7 ≤ 14, 2 × 7 = 14 ≤ 14, 3 × 7 = 21 > 14.
+o próximo primo depois de 87 é 89: 88 = 2 × 44, 89 é primo.
+
+wat is het kleinste priemgetal groter dan 109? het kleinste priemgetal groter dan 109 is 113: 110 = 2 × 55, 111 = 3 × 37, 112 = 2 × 56, 113 is priem.
+wat is het getal als een vijfde ervan 3 is? een vijfde van een getal is 3; het getal is 15: 3 × 5 = 15.
+het kleinste gehele getal n met n × 9 > 39 is 5: 1 × 9 = 9 ≤ 39, 2 × 9 = 18 ≤ 39, 3 × 9 = 27 ≤ 39, 4 × 9 = 36 ≤ 39, 5 × 9 = 45 > 39.
+wat is het volgende priemgetal na 19? het volgende priemgetal na 19 is 23: 20 = 2 × 10, 21 = 3 × 7, 22 = 2 × 11, 23 is priem.
+het kleinste priemgetal groter dan 41 is 43: 42 = 2 × 21, 43 is priem.
+een derde van een getal is 19; het getal is 57: 19 × 3 = 57.
+wat is het kleinste gehele getal n met n × 3 > 15? het kleinste gehele getal n met n × 3 > 15 is 6: 1 × 3 = 3 ≤ 15, 2 × 3 = 6 ≤ 15, 3 × 3 = 9 ≤ 15, 4 × 3 = 12 ≤ 15, 5 × 3 = 15 ≤ 15, 6 × 3 = 18 > 15.
+het volgende priemgetal na 56 is 59: 57 = 3 × 19, 58 = 2 × 29, 59 is priem.
+wat is het kleinste priemgetal groter dan 78? het kleinste priemgetal groter dan 78 is 79: 79 is priem.
+wat is het getal als een tiende ervan 15 is? een tiende van een getal is 15; het getal is 150: 15 × 10 = 150.
+het kleinste gehele getal n met n × 5 > 39 is 8: 1 × 5 = 5 ≤ 39, 2 × 5 = 10 ≤ 39, 3 × 5 = 15 ≤ 39, 4 × 5 = 20 ≤ 39, 5 × 5 = 25 ≤ 39, 6 × 5 = 30 ≤ 39, 7 × 5 = 35 ≤ 39, 8 × 5 = 40 > 39.
+wat is het volgende priemgetal na 50? het volgende priemgetal na 50 is 53: 51 = 3 × 17, 52 = 2 × 26, 53 is priem.
+het kleinste priemgetal groter dan 10 is 11: 11 is priem.
+een achtste van een getal is 11; het getal is 88: 11 × 8 = 88.
+wat is het kleinste gehele getal n met n × 7 > 14? het kleinste gehele getal n met n × 7 > 14 is 3: 1 × 7 = 7 ≤ 14, 2 × 7 = 14 ≤ 14, 3 × 7 = 21 > 14.
+het volgende priemgetal na 87 is 89: 88 = 2 × 44, 89 is priem.
+
+jaka jest najmniejsza liczba pierwsza większa od 109? najmniejsza liczba pierwsza większa od 109 to 113: 110 = 2 × 55, 111 = 3 × 37, 112 = 2 × 56, 113 jest liczbą pierwszą.
+jaka to liczba, jeśli jej jedna piąta to 3? jedna piąta liczby to 3; liczba to 15: 3 × 5 = 15.
+najmniejsza liczba całkowita n, dla której n × 9 > 39, to 5: 1 × 9 = 9 ≤ 39, 2 × 9 = 18 ≤ 39, 3 × 9 = 27 ≤ 39, 4 × 9 = 36 ≤ 39, 5 × 9 = 45 > 39.
+jaka jest następna liczba pierwsza po 19? następna liczba pierwsza po 19 to 23: 20 = 2 × 10, 21 = 3 × 7, 22 = 2 × 11, 23 jest liczbą pierwszą.
+najmniejsza liczba pierwsza większa od 41 to 43: 42 = 2 × 21, 43 jest liczbą pierwszą.
+jedna trzecia liczby to 19; liczba to 57: 19 × 3 = 57.
+jaka jest najmniejsza liczba całkowita n, dla której n × 3 > 15? najmniejsza liczba całkowita n, dla której n × 3 > 15, to 6: 1 × 3 = 3 ≤ 15, 2 × 3 = 6 ≤ 15, 3 × 3 = 9 ≤ 15, 4 × 3 = 12 ≤ 15, 5 × 3 = 15 ≤ 15, 6 × 3 = 18 > 15.
+następna liczba pierwsza po 56 to 59: 57 = 3 × 19, 58 = 2 × 29, 59 jest liczbą pierwszą.
+jaka jest najmniejsza liczba pierwsza większa od 78? najmniejsza liczba pierwsza większa od 78 to 79: 79 jest liczbą pierwszą.
+jaka to liczba, jeśli jej jedna dziesiąta to 15? jedna dziesiąta liczby to 15; liczba to 150: 15 × 10 = 150.
+najmniejsza liczba całkowita n, dla której n × 5 > 39, to 8: 1 × 5 = 5 ≤ 39, 2 × 5 = 10 ≤ 39, 3 × 5 = 15 ≤ 39, 4 × 5 = 20 ≤ 39, 5 × 5 = 25 ≤ 39, 6 × 5 = 30 ≤ 39, 7 × 5 = 35 ≤ 39, 8 × 5 = 40 > 39.
+jaka jest następna liczba pierwsza po 50? następna liczba pierwsza po 50 to 53: 51 = 3 × 17, 52 = 2 × 26, 53 jest liczbą pierwszą.
+najmniejsza liczba pierwsza większa od 10 to 11: 11 jest liczbą pierwszą.
+jedna ósma liczby to 11; liczba to 88: 11 × 8 = 88.
+jaka jest najmniejsza liczba całkowita n, dla której n × 7 > 14? najmniejsza liczba całkowita n, dla której n × 7 > 14, to 3: 1 × 7 = 7 ≤ 14, 2 × 7 = 14 ≤ 14, 3 × 7 = 21 > 14.
+następna liczba pierwsza po 87 to 89: 88 = 2 × 44, 89 jest liczbą pierwszą.
+
+109 sayısından büyük en küçük asal sayı kaçtır? 109 sayısından büyük en küçük asal sayı 113: 110 = 2 × 55, 111 = 3 × 37, 112 = 2 × 56, 113 asaldır.
+beşte biri 3 olan sayı kaçtır? bir sayının beşte biri 3 ise sayı 15 olur: 3 × 5 = 15.
+n × 9 > 39 olan en küçük tam sayı 5: 1 × 9 = 9 ≤ 39, 2 × 9 = 18 ≤ 39, 3 × 9 = 27 ≤ 39, 4 × 9 = 36 ≤ 39, 5 × 9 = 45 > 39.
+19 sayısından sonraki asal sayı kaçtır? 19 sayısından sonraki asal sayı 23: 20 = 2 × 10, 21 = 3 × 7, 22 = 2 × 11, 23 asaldır.
+41 sayısından büyük en küçük asal sayı 43: 42 = 2 × 21, 43 asaldır.
+bir sayının üçte biri 19 ise sayı 57 olur: 19 × 3 = 57.
+n × 3 > 15 olan en küçük tam sayı kaçtır? n × 3 > 15 olan en küçük tam sayı 6: 1 × 3 = 3 ≤ 15, 2 × 3 = 6 ≤ 15, 3 × 3 = 9 ≤ 15, 4 × 3 = 12 ≤ 15, 5 × 3 = 15 ≤ 15, 6 × 3 = 18 > 15.
+56 sayısından sonraki asal sayı 59: 57 = 3 × 19, 58 = 2 × 29, 59 asaldır.
+78 sayısından büyük en küçük asal sayı kaçtır? 78 sayısından büyük en küçük asal sayı 79: 79 asaldır.
+onda biri 15 olan sayı kaçtır? bir sayının onda biri 15 ise sayı 150 olur: 15 × 10 = 150.
+n × 5 > 39 olan en küçük tam sayı 8: 1 × 5 = 5 ≤ 39, 2 × 5 = 10 ≤ 39, 3 × 5 = 15 ≤ 39, 4 × 5 = 20 ≤ 39, 5 × 5 = 25 ≤ 39, 6 × 5 = 30 ≤ 39, 7 × 5 = 35 ≤ 39, 8 × 5 = 40 > 39.
+50 sayısından sonraki asal sayı kaçtır? 50 sayısından sonraki asal sayı 53: 51 = 3 × 17, 52 = 2 × 26, 53 asaldır.
+10 sayısından büyük en küçük asal sayı 11: 11 asaldır.
+bir sayının sekizde biri 11 ise sayı 88 olur: 11 × 8 = 88.
+n × 7 > 14 olan en küçük tam sayı kaçtır? n × 7 > 14 olan en küçük tam sayı 3: 1 × 7 = 7 ≤ 14, 2 × 7 = 14 ≤ 14, 3 × 7 = 21 > 14.
+87 sayısından sonraki asal sayı 89: 88 = 2 × 44, 89 asaldır.

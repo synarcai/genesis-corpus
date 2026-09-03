@@ -74,6 +74,21 @@ for _и, _м in enumerate(МЕСЯЦЫ_RU):
     assert МЕСЯЦЫ_RU_ТВОР[_и] == _г.ПАРАДИГМЫ[_м][4], _м
 
 
+def леджер_круга(i, k, язык):
+    """THE LEDGER OF THE CYCLE (holon 03.09, ONE-CARRIER — the head of the
+    answer stays, the chain after the colon is its witness; NOT YET WRITTEN in
+    en/ru — the market of cycles reads it first, see дни()): the day numbers
+    of the week are declared («monday is day number 1 of the week»), so the
+    step is arithmetic on them — «2 + 3 = 5, day 5 is friday», and over the
+    edge «6 + 3 = 9, 9 − 7 = 2, day 2 is tuesday»."""
+    s = i + 1 + k
+    j = s - 7 if s > 7 else s
+    имя = ДНИ_EN[j - 1] if язык == "en" else ДНИ_RU[j - 1]
+    шаги = [f"{i + 1} + {k} = {s}"] + ([f"{s} − 7 = {j}"] if s > 7 else [])
+    хвост = f"day {j} is {имя}" if язык == "en" else f"день {j} — {имя}"
+    return ", ".join(шаги + [хвост])
+
+
 def дни(шаг):
     """Сдвиг по кругу недели — сравнение по модулю семь в одежде."""
     вон = []
@@ -82,6 +97,10 @@ def дни(шаг):
             j = (i + k) % 7
             # ФОРМА ИДЁТ ЗА ЧИСЛОМ И ПО-АНГЛИЙСКИ: «1 days after» —
             # ошибка, которую суд согласования поймал в тот же прогон.
+            # THE LEDGER OF THE CYCLE (леджер_круга) WAITS FOR THE MARKET OF
+            # CYCLES (holon 03.09: the wheel is read from the whole telling and
+            # stumbles on the numbers of the chain — his road first; the eight
+            # languages of calendar_langs already carry it)
             вон.append(f"{k} {'day' if k == 1 else 'days'} after "
                        f"{ДНИ_EN[i]} comes {ДНИ_EN[j]}.")
             вон.append(f"через {k} {units.ру_форма(ДЕНЬ_СЧЁТ, k)} после "

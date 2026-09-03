@@ -280,10 +280,17 @@ def зачин_объявлен(вопрос):
         счёт = {}
     верх = max(счёт.values(), default=0)
     кандидаты = [л for л, v in счёт.items() if v == верх and верх > 0]
+    # THE SCRIPT DECIDES FIRST (03.09: «формула a^2 + b^2 = c^2 при a = 3 и
+    # b = 4 — чему равно c» counted its Latin letters as the articles of four
+    # languages): a Cyrillic question is a question of the Cyrillic pack
+    if КИРИЛЛИЦА.search(вопрос):
+        кандидаты = ["ru"]
     if not кандидаты and not КИРИЛЛИЦА.search(вопрос) and ДИАКРИТИКА.search(вопрос):
         # a diacritic question with no sign of any language («quant dá 9 + 10?»):
         # every declared front-position language is a candidate
-        кандидаты = [л for л, (_, поз) in ЗАЧИНЫ_ПО_ЯЗЫКУ.items() if поз != "end" and л not in ("en", "ru")]
+        # …front- AND end-position ones («tüm çift sayılar 4'e bölünür demek
+        # doğru mudur?» — the Turkish suffix «mudur» is read by its own pack)
+        кандидаты = [л for л in ЗАЧИНЫ_ПО_ЯЗЫКУ if л not in ("en", "ru")]
     # THE LANGUAGES TIED AT THE TOP OF THE SIGN ARE ALL CANDIDATES: the
     # question is judged by the union of their openers — a Portuguese
     # question that ties with Spanish is not judged by Spanish alone.
@@ -299,7 +306,9 @@ def зачин_объявлен(вопрос):
         # the question is the LAST clause before the mark — a fact may stand before it
         # …and a clause ends at a sentence mark, not at a comma («jaka jest
         # prędkość ciała, które przebywa …» is one question)
-        клаузы = [к.strip() for к in re.split(r"(?<=[.!?…])\s+", вопрос) if к.strip()]
+        # …and a dash with spaces opens a question clause after a fact
+        # («формула … при a = 3 и b = 4 — чему равно c»)
+        клаузы = [к.strip() for к in re.split(r"(?<=[.!?…])\s+|\s+[—–]\s+", вопрос) if к.strip()]
         if not клаузы:
             return None
         клауза = клаузы[-1]
@@ -316,9 +325,13 @@ def зачин_объявлен(вопрос):
             return True
         if конец:
             # a suffix may follow the opener («kaçtır», «mudur»)
-            return any(w in слова_я or any(w.startswith(з) for з in слова_я if len(з) >= 2) for w in слова)
-        return False
-    if not КИРИЛЛИЦА.search(вопрос) and ДИАКРИТИКА.search(вопрос):
+            if any(w in слова_я or any(w.startswith(з) for з in слова_я if len(з) >= 2) for w in слова):
+                return True
+        # THE LANGUAGE'S OWN OPENERS ACCEPT; THE HOUSE DECIDES THE REST (03.09:
+        # «si n est pair, n + 1 est-il pair ?», «se n è pari, n + 4 è pari?»,
+        # «asal sayı nedir?» were refused here without ever reaching the law
+        # of the house below — the block may accept, never refuse alone)
+    if not кандидаты and not КИРИЛЛИЦА.search(вопрос) and ДИАКРИТИКА.search(вопрос):
         return None  # язык с диакритикой без объявленных зачинов — молчим
     if ВЫБОР.search(" " + вопрос + " "):
         return None
@@ -345,12 +358,33 @@ def зачин_объявлен(вопрос):
         return None  # только числа, формулы, знаки — предмет, не зачин
     if any(н in ЗАЧИНЫ for н in начала):
         return True
+    слова_вопроса = {w.strip(_КРАЙ).lower() for w in вопрос.split()}
+    # AN INVERSION IS BOUND TO ITS VERB AND STANDS WHERE THE VERB STANDS
+    # («n + 1 est-il pair ?», «a-t-elle mis …»): a declared opener with a
+    # hyphen is the question wherever it stands
+    if any(w in ЗАЧИНЫ and "-" in w for w in слова_вопроса):
+        return True
+    # A QUESTION WHOSE SUBJECT IS A FORMULA («n + 4 è pari?», «2x² = 8 ist
+    # das lösbar?») opens with the subject, and the declared opener (the
+    # copula) follows it: the last clause is searched whole when its first
+    # token is no word
+    последняя = [к for к in РАЗДЕЛ.split(вопрос) if к.strip()]
+    if последняя:
+        токены = последняя[-1].split()
+        первый = токены[0].strip(_КРАЙ).lower() if токены else ""
+        if первый and (not СЛОВО_ЗАЧИНА.fullmatch(первый) or len(первый) == 1):
+            if any(w.strip(_КРАЙ).lower() in ЗАЧИНЫ for w in токены[1:]):
+                return True
     # ВОПРОСНОЕ СЛОВО СТОИТ ТАМ, ГДЕ ЕГО СТАВИТ ЯЗЫК: пакет с position «end»
     # объявляет слова, которые стоят внутри вопроса перед глаголом («Ayşe
     # pazartesi rafa kaç fincan koydu?»); такой вопрос узнаётся словом в
     # любом месте, а не первым.
-    слова_вопроса = {w.strip(_КРАЙ).lower() for w in вопрос.split()}
-    return bool(слова_вопроса & КОНЦЕВЫЕ)
+    if слова_вопроса & КОНЦЕВЫЕ:
+        return True
+    # …and with its suffix («kaçtır», «nedir» — the Turkish question word
+    # takes the copula suffix; 03.09: «ilk on tek sayının toplamı kaçtır?» was
+    # refused when «on» read as an English sign and the Turkish block never ran)
+    return any(w.startswith(з) for w in слова_вопроса for з in КОНЦЕВЫЕ if len(з) >= 3)
 
 
 def вопросное_слово_есть(вопрос):

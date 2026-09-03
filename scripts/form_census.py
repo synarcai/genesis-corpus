@@ -109,9 +109,12 @@ def заполнители_домов():
             for y in x.values():
                 _добавить(y)
     try:
-        import holes, calforms, cmpforms, unitforms, physforms, shareforms, moneyforms
+        import holes, calforms, cmpforms, unitforms, physforms, shareforms, moneyforms, searchforms, moneystory
     except Exception:
         return вон
+    _добавить(searchforms.ЧАСТИ)
+    for я in moneystory.ЯЗЫКИ.values():
+        _добавить(я["вещи"])
     _добавить(holes.ДНИ)
     for язык, рамки in holes.РАМКИ.items():
         for р in рамки:

@@ -123,8 +123,11 @@ class Книга:
     def __init__(self, имя, тема, плотность, издано, заглавие, автор,
                  издатель, лицензия, происхождение, дорога, язык="en",
                  сайт=None, uuid=None, версия=None, главы=(), части=(),
-                 запрос=None):
+                 запрос=None, источник=ИСТОЧНИК):
         self.имя = имя
+        # ИСТОЧНИК ПО ДОГОВОРУ: издано до рубежа машины — free-license;
+        # не раньше рубежа — только named-author с названным человеком.
+        self.источник = источник
         self.тема = тема
         self.плотность = плотность
         self.издано = издано
@@ -292,6 +295,86 @@ OPENSTAX_АВТОРЫ = "OpenStax, Rice University; senior contributing authors 
           f"{НАЧАЛО_ЖУРНАЛА_СОЗНАНИЯ}–{ОКНО[1]}", "authors named at each article",
           "Europe PMC (Oxford University Press journal)", "CC BY",
           "https://europepmc.org/", "europepmc", запрос=запрос_журнала_сознания()),
+    # ИСПАНСКИЕ ИЗДАНИЯ OPENSTAX (третий заказ 02.09, слово владельца: все
+    # языки с избытком). Четыре свидетельства издателя на 02.09.2026:
+    # «Física universitaria» тт. 1–3 — CC BY 4.0 везде (LICENSE репозитория
+    # osbooks-fisica-universitaria-bundle от 2021-10-27, JSON книги в архиве,
+    # предисловие «Creative Commons Atribución 4.0 Internacional (CC BY 4.0)»,
+    # CMS у тома 1; у томов 2–3 поле лицензии CMS пусто — не BY-NC-SA);
+    # издано 2021 (publish_date издателя). «Precálculo 2ed» и «Química 2ed»
+    # — CC BY 4.0 везде, но изданы издателем в 2022 (2022-05-18, 2022-06-02):
+    # по договору полки текст не раньше рубежа машины берётся лишь с
+    # названными людьми — источник named-author, авторы из предисловий.
+    # «Cálculo» тт. 1–3 — BY-NC-SA везде (не берётся); «Química: Comenzando
+    # con los átomos 2ed» — та же «Química» с переставленными главами
+    # (вторая копия несёт ноль); «Biología» по-испански у издателя нет.
+    Книга("openstax_fisica_1_es", "естествознание", "трактат", 2021,
+          "Física universitaria, volumen 1 (Mecánica, ondas, acústica)",
+          "Samuel J. Ling (Truman State University), Jeff Sanny (Loyola "
+          "Marymount University), William Moebs; edición en español OpenStax",
+          "OpenStax", "CC BY 4.0", f"{OPENSTAX}/details/books/física-universitaria-volumen-1",
+          "openstax", язык="es", uuid="175c88b6-f89b-4eba-9514-bc45e2139a1d",
+          версия="9281eb6"),
+    Книга("openstax_fisica_2_es", "естествознание", "трактат", 2021,
+          "Física universitaria, volumen 2 (Termodinámica, electricidad y magnetismo)",
+          "Samuel J. Ling, Jeff Sanny, William Moebs; edición en español OpenStax",
+          "OpenStax", "CC BY 4.0", f"{OPENSTAX}/details/books/física-universitaria-volumen-2",
+          "openstax", язык="es", uuid="da02605d-6d69-447c-a9b9-caf06dc4f413",
+          версия="9281eb6"),
+    Книга("openstax_fisica_3_es", "естествознание", "трактат", 2021,
+          "Física universitaria, volumen 3 (Óptica y física moderna)",
+          "Samuel J. Ling, Jeff Sanny, William Moebs; edición en español OpenStax",
+          "OpenStax", "CC BY 4.0", f"{OPENSTAX}/details/books/física-universitaria-volumen-3",
+          "openstax", язык="es", uuid="b647a9b9-7631-45a1-a8e7-5acc3a44fc01",
+          версия="9281eb6"),
+    Книга("openstax_precalculo_es", "математика", "трактат", 2022,
+          "Precálculo 2ed", "Jay Abramson (Arizona State University) con autores "
+          "colaboradores nombrados en el prefacio; edición en español OpenStax 2022",
+          "OpenStax", "CC BY 4.0", f"{OPENSTAX}/details/books/precálculo-2ed",
+          "openstax", язык="es", uuid="52f5163f-a7e1-4545-b0fa-8001df262ca9",
+          версия="ea84f53", источник="named-author"),
+    Книга("openstax_quimica_es", "естествознание", "трактат", 2022,
+          "Química 2ed", "Paul Flowers (University of North Carolina at Pembroke), "
+          "Klaus Theopold (University of Delaware), Richard Langley (Stephen F. "
+          "Austin State University), William R. Robinson; edición en español OpenStax 2022",
+          "OpenStax", "CC BY 4.0", f"{OPENSTAX}/details/books/química-2ed",
+          "openstax", язык="es", uuid="462aa3f1-d65d-4cd9-a5ee-3214f95769b8",
+          версия="9b2eeca", источник="named-author"),
+    # ПОЛЬСКАЯ ФИЗИКА OPENSTAX POLAND (четвёртый заказ 03.09): «Fizyka dla
+    # szkół wyższych» тт. 1–3 — адаптация University Physics, CC BY 4.0 по
+    # четырём свидетельствам на 03.09.2026 (CMS: Creative Commons Attribution
+    # License 4.0, издано 2017-12-05 и 2018-06-11; LICENSE репозитория
+    # osbooks-fizyka-bundle «Attribution 4.0 International» от 2021-03-18 без
+    # правок; JSON книг в архиве by/4.0/deed.pl; предисловие «Creative Commons
+    # Uznanie autorstwa 4.0 Międzynarodowe»). Переводчики и авторы адаптации
+    # названы в предисловии («Tłumacze i autorzy adaptacji»). Математики и
+    # химии у OpenStax Poland нет: кроме физики и психологии в CMS лишь
+    # «Mikroekonomia» (2022) и «Makroekonomia» (2023) — не наш ряд.
+    Книга("openstax_fizyka_1_pl", "естествознание", "трактат", 2017,
+          "Fizyka dla szkół wyższych, tom 1 (Mechanika, fale, akustyka)",
+          "OpenStax Poland (fundacja Katalyst Education); tłumacze i autorzy "
+          "adaptacji nazwani w przedmowie (Adam Bednorz, Anna Błachowicz, Tomasz "
+          "Błachowicz, Beata Bochentyn, Juliusz P. Braun, Bartosz Brzostowski i "
+          "inni); original senior authors Samuel J. Ling, Jeff Sanny, William Moebs",
+          "OpenStax Poland", "CC BY 4.0", f"{OPENSTAX}/details/books/fizyka-dla-szkół-wyższych-tom-1",
+          "openstax", язык="pl", uuid="4eaa8f03-88a8-485a-a777-dd3602f6c13e",
+          версия="0cd082f"),
+    Книга("openstax_fizyka_2_pl", "естествознание", "трактат", 2018,
+          "Fizyka dla szkół wyższych, tom 2 (Termodynamika, elektryczność i magnetyzm)",
+          "OpenStax Poland (fundacja Katalyst Education); tłumacze i autorzy "
+          "adaptacji nazwani w przedmowie; original senior authors Samuel J. Ling, "
+          "Jeff Sanny, William Moebs",
+          "OpenStax Poland", "CC BY 4.0", f"{OPENSTAX}/details/books/fizyka-dla-szkół-wyższych-tom-2",
+          "openstax", язык="pl", uuid="16ab5b96-4598-45f9-993c-b8d78d82b0c6",
+          версия="0cd082f"),
+    Книга("openstax_fizyka_3_pl", "естествознание", "трактат", 2018,
+          "Fizyka dla szkół wyższych, tom 3 (Optyka i fizyka współczesna)",
+          "OpenStax Poland (fundacja Katalyst Education); tłumacze i autorzy "
+          "adaptacji nazwani w przedmowie; original senior authors Samuel J. Ling, "
+          "Jeff Sanny, William Moebs",
+          "OpenStax Poland", "CC BY 4.0", f"{OPENSTAX}/details/books/fizyka-dla-szkół-wyższych-tom-3",
+          "openstax", язык="pl", uuid="bb62933e-f20a-4ffc-90aa-97b36c296c3e",
+          версия="0cd082f"),
     # ОТВЕРГНУТЫЕ, И ПОЧЕМУ (замер 02.09.2026):
     # * OpenStax «Psychology 2e», «Biology 2e», «Anatomy and Physiology
     #   2e», «Introduction to Philosophy», «Introduction to Behavioral
@@ -322,9 +405,15 @@ def судить_объявление():
             беды.append(f"{к.имя}: тема «{к.тема}» вне набора")
         if к.плотность not in shelf_kinds.ПЛОТНОСТИ:
             беды.append(f"{к.имя}: плотность «{к.плотность}» вне набора")
-        if к.издано >= shelf_kinds.РУБЕЖ_МАШИНЫ:
+        if к.источник not in shelf_kinds.ИСТОЧНИКИ:
+            беды.append(f"{к.имя}: источник «{к.источник}» вне набора")
+        if к.источник == "free-license" and к.издано >= shelf_kinds.РУБЕЖ_МАШИНЫ:
             беды.append(f"{к.имя}: издано {к.издано} — не раньше рубежа "
-                        f"машины {shelf_kinds.РУБЕЖ_МАШИНЫ}")
+                        f"машины {shelf_kinds.РУБЕЖ_МАШИНЫ}, а источник free-license")
+        if к.источник == "named-author" and not к.автор.strip():
+            беды.append(f"{к.имя}: источник named-author, а автор не назван")
+        if к.язык not in shelf_kinds.ЯЗЫКИ:
+            беды.append(f"{к.имя}: язык «{к.язык}» вне набора")
         if not re.fullmatch(r"CC BY(?: \d\.\d)?", к.лицензия):
             беды.append(f"{к.имя}: лицензия «{к.лицензия}» не CC BY")
         if к.дорога not in ДОРОГИ:
@@ -399,8 +488,13 @@ def не_та_лицензия(книга, лиц):
     "link-to-learning", "interactive", "interactive-embedded-homework",
     "interactive-embedded-reading", "art-connection", "visual-connection",
     "chapter-objectives", "os-eoc", "os-index", "os-reference",
+    # OpenStax по-испански и по-польски: врезка «Compruebe lo aprendido»
+    # (упражнение с решением), врезка встроенного видео, номер уравнения
+    # (сама формула — текст, см. MathML→TeX ниже).
+    "check-understanding", "media-2", "os-equation-number",
+    "os-chapter-objectives", "os-chapter-objective",
     "data-type:abstract", "data-type:glossary", "data-type:exercise",
-    "data-type:equation", "data-type:document-title", "data-type:media",
+    "data-type:document-title", "data-type:media",
     "data-type:footnote-refs", "role:doc-footnote", "role:doc-endnotes",
 }
 ВРЕЗКИ = {"textbox", "data-type:note"}
@@ -503,11 +597,163 @@ class Разбор(html.parser.HTMLParser):
         self.вид = "пункт" if self.пункты else "абзац"
 
 
-def разобрать(страница):
+def разобрать(страница, счёт=None):
     р = Разбор()
-    р.feed(страница)
+    р.feed(формулы_в_tex(страница, счёт if счёт is not None else collections.Counter()))
     р._закрыть()
     return р.куски
+
+
+# ------------------------------------------------------- ФОРМУЛЫ MathML
+# ФОРМУЛА ОСТАЁТСЯ ФОРМУЛОЙ, И ЯЗЫК ЕЁ — TeX (закон дороги TeX). Архив
+# OpenStax несёт формулы MathML без TeX-аннотации («Física universitaria»:
+# 98 формул в абзацах и 26 выключных на одну главу); перевод — ПРАВИЛОМ по
+# элементам разметки (дробь, степень, индекс, корень, стрелка над буквой,
+# таблица), знаки — таблицей соответствий, греческие буквы — макросами.
+# Что правило не знает, отдаётся словами узла и считается вслух; блок, не
+# разобранный как XML, — тоже.
+ЗНАКИ_TEX = {
+    "×": r"\times", "·": r"\cdot", "⋅": r"\cdot", "−": "-", "–": "-", "±": r"\pm",
+    "∓": r"\mp", "≤": r"\le", "≥": r"\ge", "≠": r"\ne", "≈": r"\approx",
+    "≡": r"\equiv", "∝": r"\propto", "→": r"\to", "←": r"\leftarrow",
+    "↔": r"\leftrightarrow", "⇒": r"\Rightarrow", "⇐": r"\Leftarrow",
+    "⇔": r"\Leftrightarrow", "∞": r"\infty", "∑": r"\sum", "∏": r"\prod",
+    "∫": r"\int", "∬": r"\iint", "∮": r"\oint", "∂": r"\partial", "∇": r"\nabla",
+    "∈": r"\in", "∉": r"\notin", "⊂": r"\subset", "⊆": r"\subseteq", "⊃": r"\supset",
+    "∪": r"\cup", "∩": r"\cap", "∅": r"\emptyset", "∘": r"\circ", "°": r"^\circ",
+    "′": "'", "″": "''", "⋯": r"\cdots", "…": r"\ldots", "⋮": r"\vdots", "∼": r"\sim",
+    "≃": r"\simeq", "≅": r"\cong", "≪": r"\ll", "≫": r"\gg", "∀": r"\forall",
+    "∃": r"\exists", "¬": r"\neg", "∧": r"\wedge", "∨": r"\vee", "⊥": r"\perp",
+    "∥": r"\parallel", "∠": r"\angle", "ℏ": r"\hbar", "ℓ": r"\ell", "∗": "*",
+    "⟨": r"\langle", "⟩": r"\rangle", "‖": r"\|", "{": r"\{", "}": r"\}",
+    "√": r"\surd", "∆": r"\Delta", "\u2061": "", "\u2062": "", "\u2063": "",
+    "\u2064": "", "\u00a0": " ", "\u200b": "", "%": r"\%", "&": r"\&", "#": r"\#",
+}
+ГРЕЧЕСКИЕ = dict(zip("αβγδεζηθικλμνξοπρστυφχψω",
+                     "alpha beta gamma delta epsilon zeta eta theta iota kappa lambda "
+                     "mu nu xi omicron pi rho sigma tau upsilon phi chi psi omega".split()))
+ГРЕЧЕСКИЕ.update({"Γ": "Gamma", "Δ": "Delta", "Θ": "Theta", "Λ": "Lambda", "Ξ": "Xi",
+                  "Π": "Pi", "Σ": "Sigma", "Φ": "Phi", "Ψ": "Psi", "Ω": "Omega",
+                  "ϵ": "varepsilon", "ϕ": "varphi", "ϑ": "vartheta", "ϱ": "varrho",
+                  "ς": "varsigma", "ϖ": "varpi"})
+ФУНКЦИИ = {"sin", "cos", "tan", "cot", "sec", "csc", "arcsin", "arccos", "arctan",
+           "sinh", "cosh", "tanh", "coth", "log", "ln", "exp", "lim", "max", "min",
+           "det", "sup", "inf", "arg", "deg", "dim", "gcd", "hom", "ker", "lg"}
+# Испанская и польская запись функций — в имена TeX.
+ФУНКЦИИ_ЯЗЫКА = {"sen": "sin", "tg": "tan", "ctg": "cot", "arcsen": "arcsin",
+                 "arctg": "arctan", "cosec": "csc", "cotg": "cot", "sh": "sinh",
+                 "ch": "cosh", "th": "tanh"}
+НАДПИСИ = {"→": "vec", "⇀": "vec", "⃗": "vec", "¯": "bar", "‾": "bar", "―": "bar",
+           "^": "hat", "ˆ": "hat", "˙": "dot", "¨": "ddot", "~": "tilde", "˜": "tilde",
+           "̃": "tilde", "̂": "hat", "̇": "dot", "̈": "ddot", "̄": "bar", "→": "vec"}
+БОЛЬШИЕ = {r"\sum", r"\prod", r"\int", r"\iint", r"\oint", r"\lim", r"\max",
+           r"\min", r"\sup", r"\inf"}
+МАТЕМАТИКА = re.compile(r"<math\b[^>]*>.*?</math>", re.S)
+АННОТАЦИЯ = re.compile(r"<annotation(?:-xml)?\b[^>]*>.*?</annotation(?:-xml)?>", re.S)
+# Именованная сущность HTML, не известная XML, — в знак.
+СУЩНОСТЬ = re.compile(r"&(?!(?:amp|lt|gt|quot|apos|#\d+|#x[0-9a-fA-F]+);)[A-Za-z][A-Za-z0-9]*;")
+
+
+def _tex_знаки(текст):
+    return "".join(ЗНАКИ_TEX.get(з, ("\\" + ГРЕЧЕСКИЕ[з] + " ") if з in ГРЕЧЕСКИЕ else з)
+                   for з in текст)
+
+
+def tex_узла(эл, счёт):
+    """TeX узла MathML — по правилам разметки; неизвестное — словами."""
+    и = _имя(эл)
+    дети = list(эл)
+
+    def т(д):
+        return tex_узла(д, счёт)
+    if и in ("annotation", "annotation-xml", "mphantom"):
+        return ""
+    if и == "semantics":
+        return т(дети[0]) if дети else ""
+    if и == "mi":
+        слово = (эл.text or "").strip()
+        if len(слово) > 1 and слово.isalpha() and слово.isascii():
+            слово = ФУНКЦИИ_ЯЗЫКА.get(слово, слово)
+            return ("\\" + слово + " ") if слово in ФУНКЦИИ else r"\mathrm{" + слово + "}"
+        слово = _tex_знаки(слово)
+        return (r"\mathbf{" + слово + "}") if эл.get("mathvariant") == "bold" else слово
+    if и == "mn":
+        return (эл.text or "").strip()
+    if и == "mo":
+        return " " + _tex_знаки((эл.text or "").strip()) + " "
+    if и == "mtext":
+        слова = " ".join((эл.text or "").replace("{", "").replace("}", "").split())
+        return (r"\text{" + слова + "}") if слова else " "
+    if и == "mspace":
+        return " "
+    if и == "mfrac" and len(дети) >= 2:
+        return (т(дети[0]) + "/" + т(дети[1])) if эл.get("bevelled") == "true" \
+            else r"\frac{" + т(дети[0]) + "}{" + т(дети[1]) + "}"
+    if и == "msup" and len(дети) >= 2:
+        return "{" + т(дети[0]) + "}^{" + т(дети[1]) + "}"
+    if и == "msub" and len(дети) >= 2:
+        return "{" + т(дети[0]) + "}_{" + т(дети[1]) + "}"
+    if и == "msubsup" and len(дети) >= 3:
+        return "{" + т(дети[0]) + "}_{" + т(дети[1]) + "}^{" + т(дети[2]) + "}"
+    if и == "msqrt":
+        return r"\sqrt{" + "".join(т(д) for д in дети) + "}"
+    if и == "mroot" and len(дети) >= 2:
+        return r"\sqrt[" + т(дети[1]) + "]{" + т(дети[0]) + "}"
+    if и in ("mover", "munder", "munderover") and len(дети) >= 2:
+        основа = т(дети[0])
+        if и == "mover":
+            знак = "".join(дети[1].itertext()).strip()
+            if знак in НАДПИСИ:
+                return "\\" + НАДПИСИ[знак] + "{" + основа + "}"
+            return r"\overset{" + т(дети[1]) + "}{" + основа + "}"
+        низ = т(дети[1])
+        if и == "munder":
+            return (основа.strip() + "_{" + низ + "}") if основа.strip() in БОЛЬШИЕ \
+                else r"\underset{" + низ + "}{" + основа + "}"
+        верх = т(дети[2]) if len(дети) >= 3 else ""
+        return (основа.strip() + "_{" + низ + "}^{" + верх + "}") if основа.strip() in БОЛЬШИЕ \
+            else r"\overset{" + верх + r"}{\underset{" + низ + "}{" + основа + "}}"
+    if и == "mtable":
+        ряды = [" & ".join(т(я) for я in ряд if _имя(я) == "mtd")
+                for ряд in дети if _имя(ряд) in ("mtr", "mlabeledtr")]
+        return r"\begin{matrix} " + r" \\ ".join(ряды) + r" \end{matrix}"
+    if и in ("mtr", "mtd", "mlabeledtr"):
+        return " ".join(т(д) for д in дети)
+    if и == "mfenced":
+        о, з = эл.get("open", "("), эл.get("close", ")")
+        return (r"\left" + (о or ".") + " " + ", ".join(т(д) for д in дети)
+                + r" \right" + (з or "."))
+    if и in ("math", "mrow", "mstyle", "mpadded", "menclose", "merror", "maction",
+             "mmultiscripts", "mprescripts", "none"):
+        return "".join(т(д) for д in дети)
+    счёт["неизвестных"] += 1
+    return " ".join("".join(эл.itertext()).split())
+
+
+def tex_из_mathml(блок, счёт):
+    """TeX формулы из блока <math>…</math>; блок, не разобранный как XML,
+    отдаёт свои слова и считается."""
+    блок = СУЩНОСТЬ.sub(lambda м: html.unescape(м.group(0)), АННОТАЦИЯ.sub("", блок))
+    try:
+        корень = ET.fromstring(блок)
+    except ET.ParseError:
+        счёт["не разобрано"] += 1
+        return " ".join(re.sub(r"<[^>]+>", " ", блок).split())
+    tex = " ".join(tex_узла(корень, счёт).split())
+    return re.sub(r"\s+([_^])", r"\1", tex)
+
+
+def формулы_в_tex(страница, счёт):
+    """Каждый <math> страницы — TeX между долларами: выключная формула —
+    «$$ … $$» своей строкой, формула в абзаце — «$…$» в нём."""
+    def замена(м):
+        блок = м.group(0)
+        tex = tex_из_mathml(блок, счёт)
+        if not tex:
+            return " "
+        счёт["формул"] += 1
+        return f"\n$$ {tex} $$\n" if 'display="block"' in блок[:200] else f" ${tex}$ "
+    return МАТЕМАТИКА.sub(замена, страница)
 
 
 # ------------------------------------------------------------ ПРАВИЛА
@@ -536,18 +782,33 @@ def разобрать(страница):
     # критическое мышление, развивайся; библиография, указатели, предисловие.
     r"kluczowe pojęcia", r"podsumowanie", r"sprawdź wiedzę", r"ćwicz myślenie krytyczne",
     r"rozwijaj się", r"bibliografia", r"skorowidz(?: \w+)*", r"przedmowa", r"literatura",
+    r"podsumowanie rozdziału", r"najważniejsze wzory", r"pytania(?: \w+)*", r"zadania(?: \w+)*",
+    r"dodatek \w+", r"odpowiedzi", r"sprawdź, czy rozumiesz", r"cele dydaktyczne",
+    # OpenStax по-испански: сводная страница обзора главы (архив её и не
+    # отдаёт), ключевые термины и уравнения, итоги, упражнения, задачи,
+    # практика, домашняя работа, решения, приложения, указатель.
+    r"revisión del capítulo", r"repaso del capítulo", r"términos clave", r"ecuaciones clave",
+    r"resumen(?: del capítulo)?", r"ejercicios(?: \w+)*", r"práctica", r"tarea para la casa",
+    r"resúmalo todo(?::.*)?", r"referencias", r"soluciones", r"preguntas(?: \w+)*",
+    r"problemas(?: \w+)*", r"prefacio", r"índice", r"apéndice \w+", r"compruebe lo aprendido",
+    r"objetivos de aprendizaje", r"glosario",
 )
 РУБРИКА = re.compile(
-    r"^(?:(?:chapter|unit|part|section|rozdział)\s+[\dIVX]+[:.]?\s*|\d+(?:\.\d+)*\.?\s+|[ivx]+\.\s+)?"
+    r"^(?:(?:chapter|unit|part|section|rozdział|capítulo|unidad|sección)\s+[\dIVX]+[:.]?\s*"
+    r"|\d+(?:\.\d+)*\.?\s+|[ivx]+\.\s+)?"
     r"(?:" + "|".join(РУБРИКИ) + r")\s*[:.]?$", re.I)
 # ОТСЫЛКА К РИСУНКУ В СКОБКАХ снимается вместе со скобками; предложение
 # «Figure 1.2 shows…» — текст, и оно остаётся.
 ОТСЫЛКА = re.compile(
-    r"\s*\(\s*(?:see\s+|cf\.\s+|also\s+|zob\.\s+|patrz\s+)?(?:figures?|figs?\.?|tables?|boxes?|"
-    r"videos?|equations?|eqs?\.?|panels?|ilustracj\w*|rysun\w*|tabel\w*|ramk\w*)"
-    r"\s*[\dA-Za-z][\dA-Za-z.\-–]*"
-    r"(?:\s*(?:and|,|;|–|-|&|to|i|oraz)\s*(?:figures?|figs?\.?|tables?|ilustracj\w*|tabel\w*)?\s*"
-    r"[\dA-Za-z][\dA-Za-z.\-–]*)*\s*\)", re.I)
+    r"\s*\(\s*(?:see\s+|cf\.\s+|also\s+|zob\.\s+|patrz\s+|v[ée]ase\s+|vea\s+|ver\s+|"
+    r"consulte\s+)?(?:la\s+|el\s+|las\s+|los\s+)?(?:figures?|figs?\.?|tables?|boxes?|"
+    r"videos?|equations?|eqs?\.?|panels?|ilustracj\w*|rysun\w*|tabel\w*|ramk\w*|"
+    r"figuras?|tablas?|ecuaci[oó]n(?:es)?|gr[aá]ficos?|cuadros?|im[aá]gen(?:es)?|"
+    r"równani\w*|wz[oó]r\w*|wykres\w*)"
+    r"\s*[\dA-Za-z][\dA-Za-z.\-–]*(?:\([a-z]\))?"
+    r"(?:\s*(?:and|,|;|–|-|&|to|i|oraz|y|e|o|a)\s*(?:la\s+|el\s+)?"
+    r"(?:figures?|figs?\.?|tables?|ilustracj\w*|tabel\w*|figuras?|tablas?|ecuaci[oó]n(?:es)?)?\s*"
+    r"(?:[\dA-Za-z][\dA-Za-z.\-–]*)?(?:\([a-z]\))?)*\s*\)", re.I)
 # ОПУСТЕВШИЕ СКОБКИ: после снятия ссылки на рисунок или номера цитаты в
 # них остаются лишь служебные слова — «(see and )», «[ ]», «( )».
 ПУСТЫЕ_СКОБКИ = re.compile(
@@ -667,7 +928,7 @@ def pressbooks_json(книга, кэш, путь):
     return json.loads(тело.decode("utf-8"))
 
 
-def pressbooks_единицы(книга, кэш):
+def pressbooks_единицы(книга, кэш, счёт):
     """[(куски главы)], автор — главы книги с авторами под заголовками."""
     мета = pressbooks_json(книга, кэш, "metadata")
     лиц = сверить_лицензию(книга, (мета.get("license") or {}).get("url"))
@@ -697,7 +958,7 @@ def pressbooks_единицы(книга, кэш):
                 for с in (узел.get("meta") or {}).get("pb_authors", [])]
         if свои:
             куски.append((", ".join(свои), 0, "абзац"))
-        куски += разобрать(узел.get("content", {}).get("rendered", ""))
+        куски += разобрать(узел.get("content", {}).get("rendered", ""), счёт)
         return куски
 
     for фм in оглавление.get("front-matter", []):
@@ -738,16 +999,21 @@ def openstax_json(книга, кэш, архив, ссылка, файл):
     return json.loads(тело)
 
 
-ГЛАВА = re.compile(r"(?:Chapter|Rozdział)\s+(\d+)\s*(.*)")
+ГЛАВА = re.compile(r"(?:Chapter|Rozdział|Capítulo)\s+(\d+)\s*(.*)")
 
 
-def openstax_единицы(книга, кэш):
-    """[(куски страницы)] — страницы объявленных глав, без аппарата."""
+def openstax_единицы(книга, кэш, счёт):
+    """[(куски страницы)], отказы — страницы объявленных глав, без аппарата.
+
+    СВОДНАЯ СТРАНИЦА ГЛАВЫ АРХИВОМ НЕ ОТДАЁТСЯ: «Revisión del capítulo»
+    у «Física universitaria» собирается при сборке книги, и на её id архив
+    отвечает 404. Она рубрика и не запрашивается; страница же, отказанная
+    архивом иначе, считается отказом и книгу не роняет."""
     архив = openstax_архив(кэш)
     книга_json = openstax_json(книга, кэш, архив,
                                f"{книга.uuid}@{книга.версия}", "book.json")
     лиц = сверить_лицензию(книга, (книга_json.get("license") or {}).get("url"))
-    единицы = []
+    единицы, отказы = [], collections.Counter()
 
     def обход(узел):
         for дитя in узел.get("contents", []):
@@ -766,17 +1032,21 @@ def openstax_единицы(книга, кэш):
                 if РУБРИКА.match(имя_стр):
                     continue
                 ид = стр["id"].split("@")[0]
-                стр_json = openstax_json(
-                    книга, кэш, архив, f"{книга.uuid}@{книга.версия}:{ид}",
-                    f"{ид}.json")
+                try:
+                    стр_json = openstax_json(
+                        книга, кэш, архив, f"{книга.uuid}@{книга.версия}:{ид}",
+                        f"{ид}.json")
+                except urllib.error.HTTPError as беда:
+                    отказы[f"HTTP {беда.code}"] += 1
+                    continue
                 куски = ([(заглавие, 1, "заголовок")] if первая else [])
                 куски.append((имя_стр, 2, "заголовок"))
-                куски += разобрать(стр_json.get("content", ""))
+                куски += разобрать(стр_json.get("content", ""), счёт)
                 единицы.append(куски)
                 первая = False
 
     обход(книга_json.get("tree", {}))
-    return единицы, книга.автор, лиц
+    return единицы, книга.автор, лиц, отказы
 
 
 # ----------------------------------------------------------- EUROPE PMC
@@ -985,18 +1255,18 @@ def объявление(книга, плотность, издано, авто�
               f"под {лиц}"),
         язык=книга.язык, тема=книга.тема, плотность=плотность,
         издано=издано, происхождение=f"{происхождение} ({лиц})",
-        судится=[], размер=байт, источник=ИСТОЧНИК)
+        судится=[], размер=байт, источник=книга.источник)
     узел["автор"] = автор
     return узел
 
 
 def ковать(книга, кэш):
-    отказы, годы = {}, []
+    отказы, годы, формулы = {}, [], collections.Counter()
     if книга.дорога == "pressbooks":
-        единицы, автор, лиц = pressbooks_единицы(книга, кэш)
+        единицы, автор, лиц = pressbooks_единицы(книга, кэш, формулы)
         происхождение = f"pressbooks:{книга.сайт}"
     elif книга.дорога == "openstax":
-        единицы, автор, лиц = openstax_единицы(книга, кэш)
+        единицы, автор, лиц, отказы = openstax_единицы(книга, кэш, формулы)
         происхождение = (f"openstax-archive:{книга.uuid}@{книга.версия}, "
                          f"{книга.происхождение}")
     else:
@@ -1032,6 +1302,9 @@ def ковать(книга, кэш):
           f"ссыл {счёт['ссылка']}) → {плотность}"
           + (f" издано {издано}" if годы else "")
           + f" остаток {остаток}"
+          + (f" формул {формулы['формул']} (неизвестных узлов "
+             f"{формулы['неизвестных']}, не разобрано {формулы['не разобрано']})"
+             if формулы["формул"] else "")
           + (f" отказов {dict(отказы)}" if отказы else ""))
     return объявление(книга, плотность, издано, автор, лиц, происхождение, байт)
 

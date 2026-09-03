@@ -175,10 +175,15 @@ def показ_соседей(г, шаг, i):
     k = S.соседи(г, r, c)
     а = S.записать(г)
     форма = (шаг + i) % 4
-    return [f"the number of filled side-neighbours of cell ({r}, {c}) in grid {а} is {k}.",
-            f"число закрашенных соседей по стороне у клетки ({r}, {c}) в сетке {а} — {k}.",
-            f"how many filled side-neighbours does cell ({r}, {c}) in grid {а} have? it has {k}.",
-            f"сколько закрашенных соседей по стороне у клетки ({r}, {c}) в сетке {а}? {k}."][форма]
+    # THE LEDGER OF THE COUNT (holon 03.09, ONE-CARRIER): the filled
+    # neighbours are listed, the number stands last in the answer
+    л_en, л_ru = S.соседи_леджер(г, r, c, "en"), S.соседи_леджер(г, r, c, "ru")
+    ответ_en = f"filled neighbours {л_en}: {k}." if k else "no filled neighbours: 0."
+    ответ_ru = f"закрашенные соседи {л_ru}: {k}." if k else "закрашенных соседей нет: 0."
+    return [f"the number of filled side-neighbours of cell ({r}, {c}) in grid {а} is {k}: {л_en}.",
+            f"число закрашенных соседей по стороне у клетки ({r}, {c}) в сетке {а} — {k}: {л_ru}.",
+            f"how many filled side-neighbours does cell ({r}, {c}) in grid {а} have? {ответ_en}",
+            f"сколько закрашенных соседей по стороне у клетки ({r}, {c}) в сетке {а}? {ответ_ru}"][форма]
 
 
 def показ_пути(г, шаг, i):

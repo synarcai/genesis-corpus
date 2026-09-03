@@ -41,6 +41,19 @@ import rugram  # noqa: E402
         "pt": "1 euro = 100 cêntimos.", "nl": "1 euro = 100 cent.", "pl": "1 zł = 100 groszy.", "tr": "1 lira = 100 kuruş.", "ru": "1 рубль = 100 копеек."}
 
 
+def курс_целый(язык, n):
+    """«2 Euro = 200 Cent.», «3 рубля = 300 копеек.», «7 zł = 700 groszy.» —
+    the rate at a whole number (holon 03.09: the market of unit conversions
+    buys a rate from ≥ 2 DIFFERENT pairs (v1, v2); ten lines of «1 Euro = 100
+    Cent.» are one pair)."""
+    я = ЯЗЫКИ[язык]
+    if язык == "ru":
+        б = f"{n} {rugram.форма('рубль', n)}"
+    else:
+        б = f"{n} {я['б'][0] if n == 1 else я['б'][1]}"
+    return f"{б} = {мелкая(язык, n * 100)}."
+
+
 def запись(d, c):
     """«16,50» — the decimal comma, two digits of cents."""
     return f"{d},{c:02d}"

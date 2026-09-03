@@ -20,6 +20,7 @@ import spacegrid as S  # noqa: E402
 Г = S.СЕТКА.pattern
 Ч = r"(\d+)"
 КЛ = r"\((\d), ?(\d)\)"
+СПИСОК = r"(?:\(\d, \d\)(?:, \(\d, \d\))*)"
 УГОЛ_RU = {"90": 90, "180": 180, "270": 270}
 ОСЬ_RU = {"слева направо": "left-right", "сверху вниз": "top-bottom"}
 КУДА_RU = {"вправо": "right", "влево": "left", "вниз": "down", "вверх": "up"}
@@ -73,11 +74,29 @@ def _сдвиг(м):
 
 
 def _соседи(м):
-    r, c, а, k = int(м.group(1)), int(м.group(2)), м.group(3), int(м.group(4))
+    """The count — and, when written, the list of the filled neighbours
+    (03.09: «is 2: (0, 1), (2, 1)», «filled neighbours (0, 1), (2, 1): 2»,
+    «no filled neighbours: 0»): the number is recounted, the list is the
+    house's own list in the house's order."""
+    гр = м.groups()
+    r, c, а = int(гр[0]), int(гр[1]), гр[2]
     г = _г(а)
     if г is None or not (1 <= r <= len(г) and 1 <= c <= len(г[0])):
         return False
-    return S.соседи(г, r, c) == k
+    хвост = [x for x in гр[3:] if x is not None]
+    числа = [x for x in хвост if x.isdigit()]
+    if not числа:
+        return False
+    k = int(числа[-1])
+    if S.соседи(г, r, c) != k:
+        return False
+    списки = [x for x in хвост if not x.isdigit()]
+    if not списки:
+        return True                       # the older shape, the count alone
+    сп = списки[0]
+    if сп in ("none", "нет", "no"):
+        return k == 0
+    return сп == S.соседи_леджер(г, r, c, "en")
 
 
 def _в_сетке(г, r, c):
@@ -147,10 +166,10 @@ def _счёт(м):
     (rf"^сетка ({Г}) после сдвига (вправо|влево|вниз|вверх) на {Ч} — (не )?({Г})\.$", _сдвиг),
     (rf"^what is grid ({Г}) shifted (right|left|down|up) by {Ч}\? grid ({Г}) shifted (right|left|down|up) by {Ч} is ({Г})\.$", _сдвиг_вопрос),
     (rf"^какой станет сетка ({Г}) после сдвига (вправо|влево|вниз|вверх) на {Ч}\? сетка ({Г}) после сдвига (вправо|влево|вниз|вверх) на {Ч} — ({Г})\.$", _сдвиг_вопрос),
-    (rf"^the number of filled side-neighbours of cell {КЛ} in grid ({Г}) is {Ч}\.$", _соседи),
-    (rf"^число закрашенных соседей по стороне у клетки {КЛ} в сетке ({Г}) — {Ч}\.$", _соседи),
-    (rf"^how many filled side-neighbours does cell {КЛ} in grid ({Г}) have\? it has {Ч}\.$", _соседи),
-    (rf"^сколько закрашенных соседей по стороне у клетки {КЛ} в сетке ({Г})\? {Ч}\.$", _соседи),
+    (rf"^the number of filled side-neighbours of cell {КЛ} in grid ({Г}) is (?:{Ч}|(\d+): ({СПИСОК}|none))\.$", _соседи),
+    (rf"^число закрашенных соседей по стороне у клетки {КЛ} в сетке ({Г}) — (?:{Ч}|(\d+): ({СПИСОК}|нет))\.$", _соседи),
+    (rf"^how many filled side-neighbours does cell {КЛ} in grid ({Г}) have\? (?:it has {Ч}|filled neighbours ({СПИСОК}): (\d+)|(no) filled neighbours: (0))\.$", _соседи),
+    (rf"^сколько закрашенных соседей по стороне у клетки {КЛ} в сетке ({Г})\? (?:{Ч}|закрашенные соседи ({СПИСОК}): (\d+)|закрашенных соседей (нет): (0))\.$", _соседи),
     (rf"^the length of the shortest path from {КЛ} to {КЛ} through empty cells by side in grid ({Г}) is {Ч}\.$", _путь),
     (rf"^длина кратчайшего пути от {КЛ} до {КЛ} по пустым клеткам по стороне в сетке ({Г}) — {Ч}\.$", _путь),
     (rf"^how long is the shortest path from {КЛ} to {КЛ} through empty cells by side in grid ({Г})\? {Ч}\.$", _путь),

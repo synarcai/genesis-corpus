@@ -55,9 +55,13 @@ def объявленное():
          "МЕСЯЦЫ_RU", "МЕСЯЦЫ_EN", "МЕСЯЦЫ_RU_РОД",
          "МЕСЯЦЫ_RU_ТВОР", "ДЛИНЫ")
 
+# THE LEDGER OF THE CYCLE after the colon (03.09): «2 + 3 = 5, day 5 is
+# friday», over the edge «6 + 3 = 9, 9 − 7 = 2, день 2 — вторник»
+ЛЕДЖЕР_КРУГА = (r"(?:: (\d+) \+ (\d+) = (\d+)(?:, (\d+) − 7 = (\d+))?, "
+                r"(?:day (\d+) is|день (\d+) —) (\w+))?")
 ЧЕРЕЗ = re.compile(
     r"^(?:(\d+) days? after (\w+) comes (\w+)"
-    r"|через (\d+) \S+ после (\w+) наступает (\w+))\.$")
+    r"|через (\d+) \S+ после (\w+) наступает (\w+))" + ЛЕДЖЕР_КРУГА + r"\.$")
 СОСЕД = re.compile(
     r"^(?:the day (after|before) (\w+) is (\w+)"
     r"|день (после|перед) (\w+) — это (\w+))\.$")
@@ -96,7 +100,7 @@ def объявленное():
     r"^(?:what day is (\d+) days after (\w+)\? "
     r"(\d+) days after (\w+) comes (\w+)"
     r"|какой день через (\d+) \S+ после (\w+)\? "
-    r"через (\d+) \S+ после (\w+) — (\w+))\.$")
+    r"через (\d+) \S+ после (\w+) — (\w+))" + ЛЕДЖЕР_КРУГА + r"\.$")
 ГОД = re.compile(
     r"^(?:a common year has (\d+) days and (\d+) full weeks"
     r"|обычный год имеет (\d+) дней и (\d+) полных недели)\.$")
@@ -115,6 +119,19 @@ def круг(имя):
     return None
 
 
+def _леджер_круга(хвост, откуда, k, куда):
+    """The chain after the colon, when written: «i + k = s[, s − 7 = j], day
+    j is Y» — i and j the declared day numbers (index + 1), Y the day named."""
+    if not хвост:
+        return True
+    ч = [int(x) for x in хвост[:-1]]
+    имя = хвост[-1]
+    i, j = откуда[0] + 1, куда[0] + 1
+    s = i + k
+    ожидание = [i, k, s] + ([s, s - 7] if s > 7 else []) + [j]
+    return ч == ожидание and (s - 7 if s > 7 else s) == j and круг(имя) == куда and имя in (ОБЪЯВЛЕНО.get("ДНИ_EN", ()) + ОБЪЯВЛЕНО.get("ДНИ_RU", ()))
+
+
 def судить(строка):
     """(судимо, истинно) для одной строки."""
     if not all(к in ОБЪЯВЛЕНО for к in НУЖНО):
@@ -126,7 +143,7 @@ def судить(строка):
         k, откуда, куда = int(г[0]), круг(г[1]), круг(г[2])
         if откуда is None or куда is None:
             return False, True
-        return True, (откуда[0] + k) % откуда[1] == куда[0]
+        return True, (откуда[0] + k) % откуда[1] == куда[0] and _леджер_круга(г[3:], откуда, k, куда)
     m = ВОПРОС_СОСЕД.match(с)
     if m:
         г = [x for x in m.groups() if x is not None]
@@ -145,7 +162,7 @@ def судить(строка):
         if (откуда is None or куда is None or спрошен != повтор
                 or k != k2):
             return False, True
-        return True, (откуда[0] + k) % откуда[1] == куда[0]
+        return True, (откуда[0] + k) % откуда[1] == куда[0] and _леджер_круга(г[5:], откуда, k, куда)
     m = СОСЕД.match(с)
     if m:
         г = [x for x in m.groups() if x is not None]

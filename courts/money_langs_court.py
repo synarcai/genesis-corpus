@@ -43,7 +43,11 @@ def _образцы(язык):
         обратно = rf"^{Ч} {м}{если} {Д} {б}{дв}{Ч} × 100 = {Ч}, {Ч} − {Ч} = {Ч}\.$"
     сумма = rf"^{Д} {б} \+ {Д} {б} = {Д} {б}{дв}{Ч} \+ {Ч} = {Ч} {м}\.$"
     курс = "^" + re.escape(M.КУРС[язык]) + "$"
-    return [(re.compile(мост), "мост"), (re.compile(вопрос), "вопрос"), (re.compile(обратно), "обратно"), (re.compile(сумма), "сумма"), (re.compile(курс), "курс")]
+    # the rate at a whole number: «2 Euro = 200 Cent.», «3 рубля = 300 копеек.»
+    б_целые = _alt(я["б"] + (("рубль", "рубля", "рублей") if язык == "ru" else ()))
+    курс_целый = rf"^{Ч} {б_целые} = {Ч} {м}\.$"
+    return [(re.compile(мост), "мост"), (re.compile(вопрос), "вопрос"), (re.compile(обратно), "обратно"), (re.compile(сумма), "сумма"),
+            (re.compile(курс), "курс"), (re.compile(курс_целый), "курс_целый")]
 
 
 ПРАВИЛА = {язык: _образцы(язык) for язык in M.ЯЗЫКИ}
@@ -60,6 +64,9 @@ def _мелкая_верна(язык, n, строка):
 def _судья(язык, вид, м, строка):
     if вид == "курс":
         return True                     # the declared sentence, letter for letter
+    if вид == "курс_целый":
+        n = int(м.group(1))
+        return n >= 1 and строка == M.курс_целый(язык, n)   # the house writes it so, forms included
     # AFTER A DECIMAL THE BIG UNIT STANDS IN ITS DECLARED FORM («20,95 euros»,
     # «16,50 рубля»; mutation 04.09: «20,95 euro» passed — the closed pattern
     # accepted either form regardless of the number).
@@ -86,6 +93,10 @@ def _открытые():
     """The same shapes with any word where a unit or a copula stands: a line of
     such a shape that no closed rule takes names a unit form the house does
     not declare — a lie, not silence («1 рубл = 100 копеек», «5,15 рубл + …»)."""
+    # ONE SLOT OPENS AT A TIME (03.09: with every unit word freed the shape
+    # «1 X = 100 Y.» claimed «1 dollar = 100 cents.» and «1 metre = 100
+    # centimetres.» — the metre is not a coin): the other words of the
+    # sentence stay the declared ones, so the shape still names its house.
     вон = []
     for язык, правила in ПРАВИЛА.items():
         я = M.ЯЗЫКИ[язык]
@@ -93,8 +104,9 @@ def _открытые():
         for образец, _ in правила:
             о = образец.pattern
             for сл in слова:
-                о = о.replace(re.escape(сл), r"[^\W\d_]+")
-            вон.append(re.compile(о))
+                э = re.escape(сл)
+                for м in re.finditer(re.escape(э), о):
+                    вон.append(re.compile(о[:м.start()] + r"[^\W\d_]+" + о[м.end():]))
     return tuple(вон)
 
 

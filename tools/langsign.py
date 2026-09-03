@@ -26,7 +26,9 @@ def _слова():
             continue
         слова = пакет.get("function_words")
         if isinstance(слова, list) and слова:
-            вон[путь.stem] = frozenset(w.lower() for w in слова)
+            # the tails of contractions («'s», «'ve») never stand alone — not signs
+            хвосты = {w.lower() for w in (пакет.get("contraction_tails") or ())}
+            вон[путь.stem] = frozenset(w.lower() for w in слова if w.lower() not in хвосты)
     return вон
 
 
@@ -49,7 +51,7 @@ def _заполнители():
             for y in x.values():
                 _в(язык, y)
     try:
-        import holes, calforms, cmpforms, unitforms, physforms, shareforms, moneyforms, units, rugram
+        import holes, calforms, cmpforms, unitforms, physforms, shareforms, moneyforms, units, rugram, searchforms, moneystory
     except Exception:
         return вон
     for язык, дни in holes.ДНИ.items():
@@ -64,6 +66,14 @@ def _заполнители():
             _в(язык, x)
     for язык, я in moneyforms.ЯЗЫКИ.items():
         _в(язык, я.get("б")); _в(язык, я.get("м"))
+    # the house of search: the parts («ein Fünftel») and the word of the found prime («ist prim»)
+    for язык, я in moneystory.ЯЗЫКИ.items():
+        for вещь in я["вещи"]:
+            for w in вещь.split():
+                _в(язык, w)
+        _в(язык, я["он"])
+    for язык, части in searchforms.ЧАСТИ.items():
+        _в(язык, части); _в(язык, searchforms.ЯЗЫКИ[язык]["прост"].replace("{p} ", ""))
     for имя in units.ФОРМЫ_ВСЕХ:
         for много in (False, True):
             try:
@@ -80,9 +90,30 @@ for _язык, _набор in _заполнители().items():
     СЛОВА[_язык] = frozenset(СЛОВА.get(_язык, frozenset()) | _набор)
 
 
+_КРАЙ_СЛОВА = re.compile(r"[^\W\d_.,;:?!¿¡]")
+
+
+def _слова(строка):
+    """The words of the line that can carry a sign. A ONE-LETTER WORD counts
+    only between words (03.09: «is {a e} ⊂ {a b e}» read its set elements as
+    the articles of four languages, «формула a^2 + b^2 = c^2 при a = 3» its
+    variables): a single letter beside a digit, a bracket or an operator is
+    notation, not a word."""
+    вон = []
+    for м in СЛОВО.finditer(строка):
+        w = м.group()
+        if len(w) == 1:
+            до = строка[:м.start()].rstrip()
+            после = строка[м.end():].lstrip()
+            if (до and _КРАЙ_СЛОВА.match(до[-1]) is None and not до[-1].isalpha()) or (после and not после[0].isalpha() and после[0] not in ".,;:?!¿¡"):
+                continue
+        вон.append(w.lower())
+    return вон
+
+
 def счёт(строка):
     """{язык: number of its function words in the line}."""
-    слова = [w.lower() for w in СЛОВО.findall(строка)]
+    слова = _слова(строка)
     return {язык: sum(1 for w in слова if w in набор) for язык, набор in СЛОВА.items()}
 
 

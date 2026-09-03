@@ -25,6 +25,10 @@ from layer import emit_grouped  # noqa: E402
 
 def язык_группа(шаг, язык):
     вон = [M.КУРС[язык], M.КУРС[язык]]     # the rate as a sentence, ten times over the passes
+    # …and at two whole numbers per pass, ten different ones over the passes
+    # (holon 03.09: the market of conversions wants ≥ 2 different pairs)
+    for h in range(2):
+        вон.append(M.курс_целый(язык, 2 + (шаг * 2 + h + (шаг >= 3)) % 11))
     for i in range(ШИРИНА):
         d = 3 + (шаг * 7 + i * 5) % 40
         c = 5 * ((шаг * 3 + i * 7) % 18 + 2)          # 10..95, as the money world

@@ -127,10 +127,13 @@ def фибо(n):
     # ТА ЖЕ ИСТИНА ИНОЙ ПОВЕРХНОСТЬЮ: слой остатка пишет её короче, и
     # суд, знавший лишь одну запись, молчал о двухстах шестидесяти
     # строках.
-    (r"^(\d+) divided by (\d+) is (\d+) remainder (\d+)$",
-     lambda a, b, c, d: divmod(int(a), int(b)) == (int(c), int(d))),
-    (r"^(\d+) разделить на (\d+) будет (\d+), остаток (\d+)$",
-     lambda a, b, c, d: divmod(int(a), int(b)) == (int(c), int(d))),
+    # …WITH ITS LEDGER (03.09): «17 divided by 5 is 3 remainder 2: 5 × 3 = 15,
+    # 17 − 15 = 2» — every link is recounted; a ledger is optional in the
+    # older shows, but a written ledger must be the division's own
+    (r"^(\d+) divided by (\d+) is (\d+) remainder (\d+)(?:: (\d+) × (\d+) = (\d+), (\d+) − (\d+) = (\d+))?$",
+     lambda a, b, c, d, *л: divmod(int(a), int(b)) == (int(c), int(d)) and _леджер_деления(a, b, c, d, л)),
+    (r"^(\d+) разделить на (\d+) будет (\d+), остаток (\d+)(?:: (\d+) × (\d+) = (\d+), (\d+) − (\d+) = (\d+))?$",
+     lambda a, b, c, d, *л: divmod(int(a), int(b)) == (int(c), int(d)) and _леджер_деления(a, b, c, d, л)),
     # ОТКАЗ ЕСТЬ ТАКОЕ ЖЕ УТВЕРЖДЕНИЕ: «места нет» истинно ровно
     # тогда, когда названная длина есть длина ряда И место за нею.
     # Суд считает длину сам, а не верит слову «нет».
@@ -140,6 +143,14 @@ def фибо(n):
      r"элементов$",
      lambda м, ряд, n: len(числа(ряд)) == int(n) and int(м) > int(n)),
 ]
+def _леджер_деления(a, b, c, d, л):
+    """«b × c = bc, a − bc = d» — absent, or the division's own links."""
+    if not л or л[0] is None:
+        return True
+    b1, c1, bc, a1, bc2, d1 = (int(x) for x in л)
+    return (b1, c1, a1, d1) == (int(b), int(c), int(a), int(d)) and bc == bc2 == int(b) * int(c) and int(a) - bc == d1
+
+
 СОБРАНО = [(re.compile(о), ф) for о, ф in ФОРМЫ]
 
 

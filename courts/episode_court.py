@@ -745,7 +745,14 @@ def впитать_ставки(путь):
 _ПАКЕТ_EN = json.loads((КОРЕНЬ / "tools" / "langpacks" / "en.json")
                        .read_text(encoding="utf-8"))
 ИМЕНА_EN = frozenset(_ПАКЕТ_EN.get("person_names", ()))
-ЗАЧИНЫ_EN = frozenset(_ПАКЕТ_EN.get("sentence_openers", ()))
+# the pack's sentence openers AND the question openers of the house of the
+# pair («when did …», «what's the total …» opened sentences the law refused)
+# …AND the connectives of reasoning («so the answer is 16.»): a reasoned answer
+# opens its inference with a declared connective, never a free word
+_СВЯЗКИ_EN = _ПАКЕТ_EN.get("connectives") or {}
+ЗАЧИНЫ_EN = (frozenset(_ПАКЕТ_EN.get("sentence_openers", ()))
+             | frozenset(w for w in __import__("asking").ЗАЧИНЫ if w.isascii())
+             | frozenset(list(_СВЯЗКИ_EN.keys()) + list(_СВЯЗКИ_EN.values())))
 КРАТНОСТИ_EN = frozenset(_ПАКЕТ_EN.get("compare_words", ()))
 _МЕСТО_ИМЕНИ = re.compile(r"(?:^|(?<=[.?!] ))([a-z]+)|\b(?:does|did|and)\s+([a-z]+)|\bthan\s+([a-z]+)")
 
@@ -765,11 +772,39 @@ _ПАКЕТ_RU = json.loads((pathlib.Path(__file__).resolve().parents[1] / "tool
                       "нашёл", "нашла", "потерял", "потеряла", "отдал", "отдала", "взял", "взяла", "съел", "съела", "дал", "дала",
                       "положил", "положила", "прочитал", "прочитала", "собрал", "собрала", "принёс", "принесла")
 _ЗАЧИН_RU = re.compile(r"(?:^|(?<=[.?!] ))([а-яё]+) (?:" + "|".join(ГЛАГОЛЫ_ИСТОРИИ_RU) + r")\b")
-_ПОСЛЕ = re.compile(r"\b(?:does|than)\s+([a-z]+)")
+_ПОСЛЕ = re.compile(r"\b(?:does)\s+([a-z]+)")
 ГЛАГОЛЫ_СРАВНЕНИЯ_EN = frozenset({"make", "sell", "buy", "eat", "bake"})
+ЗАЧИНЫ_RU = frozenset(w for w in __import__("asking").ЗАЧИНЫ if not w.isascii())
+# THE THINGS OF THE STORIES — every genus of things a verb takes
+# (tools/verbthings.py) and every noun of the pack: «more storks than birds»,
+# «more cups of flour than cups of sugar» — a thing after «than» names the
+# second measured, not the bearer
+_ФОРМЫ_СУЩ = _ПАКЕТ_EN.get("noun_forms") or {}
+ВЕЩИ_EN = frozenset(w for имя in dir(verbthings) if isinstance(getattr(verbthings, имя), (set, frozenset))
+                    for w in getattr(verbthings, имя) if isinstance(w, str)) | frozenset(
+    list(_ФОРМЫ_СУЩ.keys()) + list(_ФОРМЫ_СУЩ.values()) if isinstance(_ФОРМЫ_СУЩ, dict) else _ФОРМЫ_СУЩ)
+def _обрезки():
+    """THE TRUNCATED NAME (the instrument scripts/word_mutants.py drops the
+    last letter of a word): a declared name without its last letter that is
+    not itself a word of the language («elen», «pi», «pete») is a broken name
+    wherever it stands — after «than», after «did», in the middle of a clause.
+    The words of the language: the pack's function words, numerals, nouns,
+    the things of the stories, the multiplicities, the fillers of the houses."""
+    import langsign
+    слова = set(langsign.СЛОВА.get("en", ())) | ИМЕНА_EN | ЧИСЛИТЕЛЬНЫЕ_EN | ВЕЩИ_EN | КРАТНОСТИ_EN | set(ЗАЧИНЫ_EN)
+    return frozenset(и[:-1] for и in ИМЕНА_EN if len(и) >= 3 and и[:-1] not in слова)
+
+
+ПРЕДЛОГИ_EN = frozenset({"on", "at", "in", "by", "after", "before", "during", "since", "until", "from", "to", "with", "without", "for", "of", "over", "under", "into", "onto", "through", "about"})
+import langsign  # noqa: E402
 
 
 from actors import Слой  # noqa: E402 — деятели мира из манифеста
+
+
+ОБРЕЗКИ_EN = _обрезки()
+_СЛУЖЕБНЫЕ_EN = frozenset(langsign.СЛОВА.get("en", ()))
+_СЛОВО_EN = re.compile(r"(?<![a-z])[a-z]+(?![a-z])")
 
 
 def имена_на_месте(строка, слой=None):
@@ -787,20 +822,34 @@ def имена_на_месте(строка, слой=None):
     if re.search(r"[а-яё]", низ):
         if слой.лица("ru") and ИМЕНА_RU:
             # a pronoun before the verb («он съел») names the actor of the sentence before
-            return all(м.group(1) in ИМЕНА_RU or м.group(1) in ("он", "она", "они") for м in _ЗАЧИН_RU.finditer(низ))
+            # …or a question word («кто съел», «когда положила»), or a pronoun
+            return all(м.group(1) in ИМЕНА_RU or м.group(1) in ("он", "она", "они") or м.group(1) in ЗАЧИНЫ_RU
+                       for м in _ЗАЧИН_RU.finditer(низ))
+        return True
+    if not слой.лица("en"):
+        return True
+    # A LINE OF ANOTHER LANGUAGE IN AN ENGLISH-ACTOR WORLD (the hole market in
+    # ten languages: «am Montag legte Anna …») is not this law's — the sign of
+    # the language decides (tools/langsign.py).
+    if langsign.чужой(низ, "en"):
         return True
     for м in _ЗАЧИН.finditer(низ):
         w = м.group(1)
+        # a sentence may open with a time or place phrase («on monday ann put …»)
+        if w in ПРЕДЛОГИ_EN:
+            continue
         if w not in ИМЕНА_EN and w not in ЗАЧИНЫ_EN and w not in ЧИСЛИТЕЛЬНЫЕ_EN:
             return False
     for м in _ПОСЛЕ.finditer(низ):
         w = м.group(1)
-        # a pronoun after «did»/«than» («did he make», «than she sold») names the bearer
-        # …and after «than» may stand the second act itself («make than sell»)
-        if (w not in ИМЕНА_EN and w not in КРАТНОСТИ_EN and w not in ЧИСЛИТЕЛЬНЫЕ_EN
-                and w not in ("he", "she", "they") and w not in ГЛАГОЛЫ_СРАВНЕНИЯ_EN):
+        # a pronoun after «does» («does he have») names the bearer, an article
+        # a thing («does the bag need»); a broken name is the truncation law's
+        if w not in ИМЕНА_EN and w not in ("he", "she", "they") and w not in _СЛУЖЕБНЫЕ_EN:
             return False
-    return True
+    # AFTER «THAN» A THING MAY STAND («more storks than birds», «than in the
+    # afternoon», «than cups of sugar»): the bearer's corruption there is
+    # caught by the truncation law, which reads every word of the line
+    return not any(w in ОБРЕЗКИ_EN for w in _СЛОВО_EN.findall(низ))
 
 
 def судить(строка, слой=None):

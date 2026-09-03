@@ -94,6 +94,9 @@ def величина(слово):
 
 def _форма_единицы(слово, имя, n):
     """Is `слово` the form the house of units writes beside n for `имя`?"""
+    # THE ABBREVIATION IS A FORM OF THE UNIT (tools/units.py: «2 м = 200 см»)
+    if units.СОКРАЩЕНИЯ.get(слово) == имя:
+        return True
     if re.search(r"[а-яё]", слово):
         try:
             return слово == units.рус(имя, n)

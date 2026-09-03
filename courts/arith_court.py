@@ -533,17 +533,13 @@ _ТАБЛИЦЫ_ЧИСЛИТЕЛЬНЫХ = None
 
 
 def _числительное(слово):
-    """Is the word a numeral of some pack (read exactly, by the house)?"""
+    """Is the word a numeral of some pack — in any DECLARED form, the oblique
+    ones included («половина шести»: the pack's numeral_oblique, read by
+    словари() as the court reads every numeral)?"""
     global _ТАБЛИЦЫ_ЧИСЛИТЕЛЬНЫХ
     if _ТАБЛИЦЫ_ЧИСЛИТЕЛЬНЫХ is None:
-        import numerals as _n
-        _ТАБЛИЦЫ_ЧИСЛИТЕЛЬНЫХ = []
-        for ф in sorted(ПАКЕТЫ.glob("*.json")):
-            т = _n.таблица(ф.stem)
-            if т:
-                _ТАБЛИЦЫ_ЧИСЛИТЕЛЬНЫХ.append(т)
-    import numerals as _n
-    return any(_n.прочесть(слово, т) is not None for т in _ТАБЛИЦЫ_ЧИСЛИТЕЛЬНЫХ)
+        _ТАБЛИЦЫ_ЧИСЛИТЕЛЬНЫХ = словари()[0]
+    return слово.lower() in _ТАБЛИЦЫ_ЧИСЛИТЕЛЬНЫХ
 
 
 def понизить_латех(строка):
