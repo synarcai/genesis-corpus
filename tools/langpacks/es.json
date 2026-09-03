@@ -426,6 +426,14 @@
       "templates": [
         "{chain}."
       ]
+    },
+    "counting_steps": {
+      "templates": [
+        "{num:n} más {num:one} es {num:next}."
+      ],
+      "instances_per_pass": 11,
+      "verbatim_core": 11,
+      "run": true
     }
   },
   "core_pairing": [

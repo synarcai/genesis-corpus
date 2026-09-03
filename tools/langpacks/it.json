@@ -392,6 +392,14 @@
       "templates": [
         "{chain}."
       ]
+    },
+    "counting_steps": {
+      "templates": [
+        "{num:n} più {num:one} fa {num:next}."
+      ],
+      "instances_per_pass": 11,
+      "verbatim_core": 11,
+      "run": true
     }
   },
   "core_pairing": [

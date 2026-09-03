@@ -411,6 +411,14 @@
       "templates": [
         "{chain}."
       ]
+    },
+    "counting_steps": {
+      "templates": [
+        "{num:n} plus {num:one} égale {num:next}."
+      ],
+      "instances_per_pass": 11,
+      "verbatim_core": 11,
+      "run": true
     }
   },
   "core_pairing": [
