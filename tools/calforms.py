@@ -10,7 +10,12 @@ Spanish «del» + the article) and the count form of «day», and the two
 phrases — the statement and the question answered by it (М-153). Generator
 and court read one table; the court counts the cycle itself.
 """
+import pathlib
 import re
+import sys
+
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import phrases  # noqa: E402
 
 # per language: days (nominative), oblique days where the phrase bends them,
 # the count forms of «day» (one, many), the statement and the question
@@ -56,20 +61,11 @@ def вопрос(язык, i, n):
     return f"{я['воп'].format(n=n, д=_день(язык, n), X=_косв(язык, i))} {утверждение(язык, i, n)}"
 
 
-_ДЫРА = re.compile(r"\{(n|д|X|Y)\}")
-
-
 def _образец(язык, шаблон):
     я = ЯЗЫКИ[язык]
     alt = lambda слова: "(" + "|".join(re.escape(с) for с in sorted(set(слова), key=len, reverse=True)) + ")"
     дыры = {"n": r"(\d+)", "д": alt(я["день"]), "X": alt(я.get("косв", я["дни"])), "Y": alt(я["дни"])}
-    куски, конец = [], 0
-    for м in _ДЫРА.finditer(шаблон):
-        куски.append(re.escape(шаблон[конец:м.start()]))
-        куски.append(дыры[м.group(1)])
-        конец = м.end()
-    куски.append(re.escape(шаблон[конец:]))
-    return "".join(куски)
+    return phrases.образец(шаблон, дыры)
 
 
 def образцы(язык):
@@ -81,10 +77,10 @@ def образцы(язык):
 
 def судить_группы(язык, спрошено, группы):
     я = ЯЗЫКИ[язык]
-    порядок = [м.group(1) for м in _ДЫРА.finditer(я["утв"])]
+    порядок = phrases.порядок(я["утв"])
     г = list(группы)
     if спрошено:
-        в_порядок = [м.group(1) for м in _ДЫРА.finditer(я["воп"])]
+        в_порядок = phrases.порядок(я["воп"])
         спрош = dict(zip(в_порядок, г[:len(в_порядок)])); г = г[len(в_порядок):]
     else:
         спрош = {}

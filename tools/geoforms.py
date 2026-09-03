@@ -10,7 +10,12 @@ statement and question, with the ledger the geometry world writes
 read one table: the generator fills the holes {a} {b} {s} and the ledger,
 the court turns the same phrases into patterns and recomputes.
 """
+import pathlib
 import re
+import sys
+
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import phrases  # noqa: E402
 
 # per language: the rectangle phrase, the square phrase, the two predicates
 # («{ф} has area {л}.»), and the four questions
@@ -77,18 +82,9 @@ def вопрос(язык, k, a, b):
     return f"{я[ФАКТЫ[k][2]].format(a=a, b=b, s=a)} {утверждение(язык, k, a, b)}"
 
 
-_ДЫРА = re.compile(r"\{(a|b|s|л|ф)\}")
-
-
 def _образец(шаблон, дыры):
     """The template as a regex: literal parts escaped, holes as groups."""
-    куски, конец = [], 0
-    for м in _ДЫРА.finditer(шаблон):
-        куски.append(re.escape(шаблон[конец:м.start()]))
-        куски.append(дыры[м.group(1)])
-        конец = м.end()
-    куски.append(re.escape(шаблон[конец:]))
-    return "".join(куски)
+    return phrases.образец(шаблон, дыры)
 
 
 def образцы(язык):

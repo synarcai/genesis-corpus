@@ -8,7 +8,12 @@ question answered by the statement (М-153) — with a ledger the court
 recomputes: the mean as the sum and the division, the percent as the
 product and the division by 100. Generator and court read one table.
 """
+import pathlib
 import re
+import sys
+
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import phrases  # noqa: E402
 
 # {р} — the list «10, 14, 15»; {с} — the mean; {л} — the ledger;
 # {p} — the percent, {n} — the number, {в} — the value
@@ -61,7 +66,6 @@ def вопрос_процента(язык, p, n):
     return f"{ЯЗЫКИ[язык]['в_пр'].format(p=p, n=n)} {процент(язык, p, n)}"
 
 
-_ДЫРА = re.compile(r"\{(р|с|л|p|n|в)\}")
 _РЯД = r"(\d+(?:, \d+)+)"
 _ЛЕДЖЕР_СР = r"((?:\d+ \+ )+\d+ = \d+, \d+ ÷ \d+ = \d+)"
 _ЛЕДЖЕР_ПР = r"(\d+ × \d+ = \d+, \d+ ÷ 100 = \d+)"
@@ -69,13 +73,7 @@ _ЛЕДЖЕР_ПР = r"(\d+ × \d+ = \d+, \d+ ÷ 100 = \d+)"
 
 def _образец(шаблон, л):
     дыры = {"р": _РЯД, "с": r"(\d+)", "л": л, "p": r"(\d+)", "n": r"(\d+)", "в": r"(\d+)"}
-    куски, конец = [], 0
-    for м in _ДЫРА.finditer(шаблон):
-        куски.append(re.escape(шаблон[конец:м.start()]))
-        куски.append(дыры[м.group(1)])
-        конец = м.end()
-    куски.append(re.escape(шаблон[конец:]))
-    return "".join(куски)
+    return phrases.образец(шаблон, дыры)
 
 
 def образцы(язык):
@@ -92,10 +90,10 @@ def судить_группы(язык, вид, спрошено, группы):
     """Groups follow the template's hole order; the tr statement has no {с}/{в}."""
     я = ЯЗЫКИ[язык]
     шаблон = я[вид]
-    порядок = [м.group(1) for м in _ДЫРА.finditer(шаблон)]
+    порядок = phrases.порядок(шаблон)
     г = list(группы)
     if спрошено:
-        в_порядок = [м.group(1) for м in _ДЫРА.finditer(я["в_" + вид])]
+        в_порядок = phrases.порядок(я["в_" + вид])
         спрош = dict(zip(в_порядок, г[:len(в_порядок)])); г = г[len(в_порядок):]
     else:
         спрош = {}

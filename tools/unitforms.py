@@ -18,6 +18,7 @@ import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import holes  # noqa: E402
+import phrases  # noqa: E402
 import units  # noqa: E402
 
 # the pairs shown: (big unit, small unit) — the ratio is the house of units'
@@ -105,20 +106,11 @@ def _слово(язык):
     return "(" + "|".join(re.escape(ф) for ф in sorted(формы, key=len, reverse=True)) + ")"
 
 
-_ДЫРА = re.compile(r"\{(n|б|м|мм|k|итог|ск|де)\}")
-
-
 def _образец(язык, шаблон):
     слово = _слово(язык)
     дыры = {"n": r"(\d+)", "итог": r"(\d+)", "k": r"(\d+)", "б": слово, "м": слово, "мм": слово,
             "ск": "(" + "|".join(СКОЛЬКО.get(язык, ("",))) + ")", "де": "(de |d')"}
-    куски, конец = [], 0
-    for м in _ДЫРА.finditer(шаблон):
-        куски.append(re.escape(шаблон[конец:м.start()]))
-        куски.append(дыры[м.group(1)])
-        конец = м.end()
-    куски.append(re.escape(шаблон[конец:]))
-    return "".join(куски)
+    return phrases.образец(шаблон, дыры)
 
 
 def образцы(язык):
