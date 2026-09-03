@@ -75,6 +75,10 @@ from genesis import Unreadable, worlds  # noqa: E402
 РАЗНООБРАЗИЕ = re.compile(
     r"^(?:a regulator with (\d+) states can distinguish (\d+) disturbances"
     r"|регулятор с (\d+) состояниями различает (\d+) \S+)$")
+# ДВА РЕГУЛЯТОРА ВМЕСТЕ — ПРОИЗВЕДЕНИЕ СОСТОЯНИЙ (04.09): ответ считается.
+ДВА_РЕГУЛЯТОРА = re.compile(
+    r"^(?:two regulators with (\d+) and (\d+) states together distinguish (\d+) disturbances"
+    r"|два регулятора с (\d+) и (\d+) состояниями вместе различают (\d+) \S+): (\d+) × (\d+) = (\d+)\.?$")
 БИТЫ = re.compile(
     r"^(?:to distinguish (\d+) disturbances, a regulator needs (\d+) bits?"
     r"|чтобы различить (\d+) \S+, регулятору нужно (\d+) \S+)$")
@@ -218,6 +222,10 @@ def судить(строка):
     if m:
         а, б = [x for x in m.groups() if x is not None]
         return True, int(а) == int(б)
+    m = ДВА_РЕГУЛЯТОРА.match(с)
+    if m:
+        n, k, итог, л1, л2, л3 = [int(x) for x in m.groups() if x is not None]
+        return True, итог == n * k and (л1, л2, л3) == (n, k, итог)
     m = БИТЫ.match(с)
     if m:
         n, бит = [int(x) for x in m.groups() if x is not None]

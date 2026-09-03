@@ -200,6 +200,15 @@ def pass_shows(pass_i):
         out.append(утв_р_ru)
         out.append(спросить("distinguish", рег_en, утв_р_en))
         out.append(спросить("различает", рег_ru, утв_р_ru))
+        # THE LAW AS A LAW, AND A QUESTION WHOSE ANSWER IS COMPUTED (holon
+        # 04.09: the identity «n states distinguish n disturbances» has no
+        # executor — an echo masks ignorance): two regulators in series
+        # distinguish the PRODUCT of their states.
+        m = 2 + (n + pass_i) % 5
+        out.append(f"two regulators with {n} and {m} states together distinguish {n * m} disturbances: {n} × {m} = {n * m}.")
+        out.append(f"how many disturbances do two regulators with {n} and {m} states distinguish together? two regulators with {n} and {m} states together distinguish {n * m} disturbances: {n} × {m} = {n * m}.")
+        out.append(f"два регулятора с {n} и {m} состояниями вместе различают {n * m} {ру('возмущение', n * m)}: {n} × {m} = {n * m}.")
+        out.append(f"сколько возмущений различают вместе два регулятора с {n} и {m} состояниями? два регулятора с {n} и {m} состояниями вместе различают {n * m} {ру('возмущение', n * m)}: {n} × {m} = {n * m}.")
         # THE PURPOSE IS A TAIL, NOT A SUBJECT: «how many bits does to distinguish
         # 2 disturbances a regulator need?» (holon's TSV 04.09) — the question
         # inverted a subject that was a clause; the subject is the regulator.
