@@ -76,7 +76,7 @@ from genesis import Unreadable, worlds  # noqa: E402
     r"^(?:a regulator with (\d+) states can distinguish (\d+) disturbances"
     r"|регулятор с (\d+) состояниями различает (\d+) \S+)$")
 БИТЫ = re.compile(
-    r"^(?:a regulator needs (\d+) bits? to distinguish (\d+) disturbances"
+    r"^(?:to distinguish (\d+) disturbances, a regulator needs (\d+) bits?"
     r"|чтобы различить (\d+) \S+, регулятору нужно (\d+) \S+)$")
 
 
@@ -84,7 +84,7 @@ from genesis import Unreadable, worlds  # noqa: E402
 # Эшби, и он СЧИТАЕТСЯ, а не принимается: чтобы различить N возмущений,
 # нужно ⌈log₂ N⌉ бит, и ни битом меньше.
 РАЗЛИЧИТЬ = re.compile(
-    r"^(?:a regulator needs (\d+) bits? to distinguish (\d+) disturbances"
+    r"^(?:to distinguish (\d+) disturbances, a regulator needs (\d+) bits?"
     r"|чтобы различить (\d+) возмущений, регулятору нужно (\d+) бит\w*)\.$")
 
 
@@ -93,8 +93,8 @@ def бит_хватает(строка):
     m = РАЗЛИЧИТЬ.match(строка.strip())
     if not m:
         return None
-    # EN names the bits first, RU the disturbances first
-    бит, возмущений = (int(m.group(1)), int(m.group(2))) if m.group(1) else (int(m.group(4)), int(m.group(3)))
+    группы = [г for г in m.groups() if г is not None]
+    возмущений, бит = int(группы[0]), int(группы[1])
     if возмущений < 1:
         return None
     нужно = max(1, (возмущений - 1).bit_length())
@@ -220,7 +220,7 @@ def судить(строка):
         return True, int(а) == int(б)
     m = БИТЫ.match(с)
     if m:
-        бит, n = (int(m.group(1)), int(m.group(2))) if m.group(1) else (int(m.group(4)), int(m.group(3)))
+        n, бит = [int(x) for x in m.groups() if x is not None]
         нужно = math.ceil(math.log2(n)) if n > 1 else 1
         return True, нужно == бит
     return False, True

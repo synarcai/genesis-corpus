@@ -203,8 +203,10 @@ def pass_shows(pass_i):
         # THE PURPOSE IS A TAIL, NOT A SUBJECT: «how many bits does to distinguish
         # 2 disturbances a regulator need?» (holon's TSV 04.09) — the question
         # inverted a subject that was a clause; the subject is the regulator.
+        # The statement fronts the purpose with a comma so that the answer
+        # opens with the question's quantity (the house of the pair, М-145).
         цель_en = f"to distinguish {n} disturbances"
-        утв_б_en = f"a regulator needs {бит} {by_count(бит, 'bits')} {цель_en}."
+        утв_б_en = f"{цель_en}, a regulator needs {бит} {by_count(бит, 'bits')}."
         out.append(утв_б_en)
         out.append(f"how many bits does a regulator need {цель_en}? {утв_б_en}")
         out.append(f"чтобы различить {n} {ру('возмущение', n)}, регулятору нужно "

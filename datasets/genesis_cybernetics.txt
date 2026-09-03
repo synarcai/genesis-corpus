@@ -5,34 +5,34 @@ why does starting at 2 with target 4 and step 2 take 1 step? because 2 + 1 × 2 
 за сколько шагов начав с 9 при цели 19 и шаге 5 достигает цели? начав с 9 при цели 19 и шаге 5, значение достигает 19 за 2 шага: 9 + 2 × 5 = 19. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
 starting at 4 with target 10 and step 2 the value reaches 10 in 3 steps.
 target 10: an open loop takes one step more and reaches 12, overshooting by 2.
-to distinguish 2 disturbances a regulator needs 1 bit.
+to distinguish 2 disturbances, a regulator needs 1 bit.
 starting at 3 with target 9 and step 3 the value reaches 9 in 2 steps.
 target 9: an open loop takes one step more and reaches 12, overshooting by 3.
-to distinguish 4 disturbances a regulator needs 2 bits.
+to distinguish 4 disturbances, a regulator needs 2 bits.
 starting at 5 with target 25 and step 4 the value reaches 25 in 5 steps.
 target 25: an open loop takes one step more and reaches 29, overshooting by 4.
-to distinguish 8 disturbances a regulator needs 3 bits.
+to distinguish 8 disturbances, a regulator needs 3 bits.
 starting at 1 with target 21 and step 5 the value reaches 21 in 4 steps.
 target 21: an open loop takes one step more and reaches 26, overshooting by 5.
-to distinguish 16 disturbances a regulator needs 4 bits.
+to distinguish 16 disturbances, a regulator needs 4 bits.
 starting at 6 with target 42 and step 6 the value reaches 42 in 6 steps.
 target 42: an open loop takes one step more and reaches 48, overshooting by 6.
-to distinguish 3 disturbances a regulator needs 2 bits.
+to distinguish 3 disturbances, a regulator needs 2 bits.
 starting at 2 with target 4 and step 2 the value reaches 4 in 1 step.
 target 4: an open loop takes one step more and reaches 6, overshooting by 2.
-to distinguish 5 disturbances a regulator needs 3 bits.
+to distinguish 5 disturbances, a regulator needs 3 bits.
 starting at 8 with target 29 and step 3 the value reaches 29 in 7 steps.
 target 29: an open loop takes one step more and reaches 32, overshooting by 3.
-to distinguish 6 disturbances a regulator needs 3 bits.
+to distinguish 6 disturbances, a regulator needs 3 bits.
 starting at 7 with target 19 and step 4 the value reaches 19 in 3 steps.
 target 19: an open loop takes one step more and reaches 23, overshooting by 4.
-to distinguish 10 disturbances a regulator needs 4 bits.
+to distinguish 10 disturbances, a regulator needs 4 bits.
 starting at 9 with target 19 and step 5 the value reaches 19 in 2 steps.
 target 19: an open loop takes one step more and reaches 24, overshooting by 5.
-to distinguish 32 disturbances a regulator needs 5 bits.
+to distinguish 32 disturbances, a regulator needs 5 bits.
 starting at 10 with target 40 and step 6 the value reaches 40 in 5 steps.
 target 40: an open loop takes one step more and reaches 46, overshooting by 6.
-to distinguish 12 disturbances a regulator needs 4 bits.
+to distinguish 12 disturbances, a regulator needs 4 bits.
 a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
 что такое разомкнутый контур? разомкнутый контур — это контур управления, который повторяет шаг независимо от ошибки и может проскочить цель.
 why does starting at 3 with target 9 and step 3 take 2 steps? because 3 + 2 × 3 = 9: starting at 3 with target 9 and step 3 the value reaches 9 in 2 steps. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
@@ -216,34 +216,34 @@ how many steps does starting at 5 with target 25 and step 4 take? starting at 5 
 why does starting at 10 with target 40 and step 6 take 5 steps? because 10 + 5 × 6 = 40: starting at 10 with target 40 and step 6 the value reaches 40 in 5 steps. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
 начав с 4 при цели 10 и шаге 2, значение достигает 10 за 3 шага.
 machine A B C; on 1 A goes to B; on 1 B goes to C; from A the input 1 1 leads to C.
-how many bits does to distinguish 2 disturbances a regulator need? to distinguish 2 disturbances a regulator needs 1 bit.
+how many bits does a regulator need to distinguish 2 disturbances? to distinguish 2 disturbances, a regulator needs 1 bit.
 начав с 3 при цели 9 и шаге 3, значение достигает 9 за 2 шага.
 machine A B C; on 1 A goes to B; on 0 B goes to A; from A the input 1 0 leads to A.
-how many bits does to distinguish 4 disturbances a regulator need? to distinguish 4 disturbances a regulator needs 2 bits.
+how many bits does a regulator need to distinguish 4 disturbances? to distinguish 4 disturbances, a regulator needs 2 bits.
 начав с 5 при цели 25 и шаге 4, значение достигает 25 за 5 шагов.
 machine A B C D; on 1 A goes to B; on 1 B goes to C; on 1 C goes to D; from A the input 1 1 1 leads to D.
-how many bits does to distinguish 8 disturbances a regulator need? to distinguish 8 disturbances a regulator needs 3 bits.
+how many bits does a regulator need to distinguish 8 disturbances? to distinguish 8 disturbances, a regulator needs 3 bits.
 начав с 1 при цели 21 и шаге 5, значение достигает 21 за 4 шага.
 machine A B; on 1 A goes to B; on 1 B goes to A; from A the input 1 1 leads to A.
-how many bits does to distinguish 16 disturbances a regulator need? to distinguish 16 disturbances a regulator needs 4 bits.
+how many bits does a regulator need to distinguish 16 disturbances? to distinguish 16 disturbances, a regulator needs 4 bits.
 начав с 6 при цели 42 и шаге 6, значение достигает 42 за 6 шагов.
 machine A B C; on 0 A goes to C; on 1 C goes to B; from A the input 0 1 leads to B.
-how many bits does to distinguish 3 disturbances a regulator need? to distinguish 3 disturbances a regulator needs 2 bits.
+how many bits does a regulator need to distinguish 3 disturbances? to distinguish 3 disturbances, a regulator needs 2 bits.
 начав с 2 при цели 4 и шаге 2, значение достигает 4 за 1 шаг.
 machine A B C D; on 1 A goes to B; on 0 B goes to C; on 1 C goes to D; from A the input 1 0 1 leads to D.
-how many bits does to distinguish 5 disturbances a regulator need? to distinguish 5 disturbances a regulator needs 3 bits.
+how many bits does a regulator need to distinguish 5 disturbances? to distinguish 5 disturbances, a regulator needs 3 bits.
 начав с 8 при цели 29 и шаге 3, значение достигает 29 за 7 шагов.
 machine A B C; on 1 A goes to B; on 1 B goes to C; from A the input 1 1 leads to C.
-how many bits does to distinguish 6 disturbances a regulator need? to distinguish 6 disturbances a regulator needs 3 bits.
+how many bits does a regulator need to distinguish 6 disturbances? to distinguish 6 disturbances, a regulator needs 3 bits.
 начав с 7 при цели 19 и шаге 4, значение достигает 19 за 3 шага.
 machine A B C; on 1 A goes to B; on 0 B goes to A; from A the input 1 0 leads to A.
-how many bits does to distinguish 10 disturbances a regulator need? to distinguish 10 disturbances a regulator needs 4 bits.
+how many bits does a regulator need to distinguish 10 disturbances? to distinguish 10 disturbances, a regulator needs 4 bits.
 начав с 9 при цели 19 и шаге 5, значение достигает 19 за 2 шага.
 machine A B C D; on 1 A goes to B; on 1 B goes to C; on 1 C goes to D; from A the input 1 1 1 leads to D.
-how many bits does to distinguish 32 disturbances a regulator need? to distinguish 32 disturbances a regulator needs 5 bits.
+how many bits does a regulator need to distinguish 32 disturbances? to distinguish 32 disturbances, a regulator needs 5 bits.
 начав с 10 при цели 40 и шаге 6, значение достигает 40 за 5 шагов.
 machine A B; on 1 A goes to B; on 1 B goes to A; from A the input 1 1 leads to A.
-how many bits does to distinguish 12 disturbances a regulator need? to distinguish 12 disturbances a regulator needs 4 bits.
+how many bits does a regulator need to distinguish 12 disturbances? to distinguish 12 disturbances, a regulator needs 4 bits.
 
 what is the error of a control loop? the error of a control loop is the target minus the current value.
 необходимое разнообразие — это закон, по которому регулятор различает не больше возмущений, чем у него состояний.
@@ -265,18 +265,18 @@ how many disturbances can a regulator with 17 states distinguish? a regulator wi
 how many steps does starting at 8 with target 24 and step 4 take? starting at 8 with target 24 and step 4 the value reaches 24 in 4 steps.
 сколько возмущений различает регулятор с 18 состояниями? регулятор с 18 состояниями различает 18 возмущений.
 за сколько шагов начав с 7 при цели 37 и шаге 5 достигает цели? начав с 7 при цели 37 и шаге 5, значение достигает 37 за 6 шагов.
-to distinguish 20 disturbances a regulator needs 5 bits.
+to distinguish 20 disturbances, a regulator needs 5 bits.
 does a loop with target 16 starting at 9 with step 6 land exactly on the target? no: 16 − 9 = 7, 7 is not divisible by 6.
-how many bits does to distinguish 24 disturbances a regulator need? to distinguish 24 disturbances a regulator needs 5 bits.
+how many bits does a regulator need to distinguish 24 disturbances? to distinguish 24 disturbances, a regulator needs 5 bits.
 разомкнутый контур — это контур управления, который повторяет шаг независимо от ошибки и может проскочить цель.
 how many steps does starting at 3 with target 7 and step 4 take? starting at 3 with target 7 and step 4 the value reaches 7 in 1 step: 3 + 1 × 4 = 7. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
 почему начав с 8 при цели 24 и шаге 4, значение достигает цели за 4 шага? потому что 8 + 4 × 4 = 24: начав с 8 при цели 24 и шаге 4, значение достигает 24 за 4 шага. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
 how many steps does starting at 11 with target 19 and step 2 take? starting at 11 with target 19 and step 2 the value reaches 19 in 4 steps.
 сколько возмущений различает регулятор с 7 состояниями? регулятор с 7 состояниями различает 7 возмущений.
 за сколько шагов начав с 4 при цели 22 и шаге 3 достигает цели? начав с 4 при цели 22 и шаге 3, значение достигает 22 за 6 шагов.
-to distinguish 9 disturbances a regulator needs 4 bits.
+to distinguish 9 disturbances, a regulator needs 4 bits.
 does a loop with target 7 starting at 3 with step 4 land exactly on the target? yes: 7 − 3 = 4, 4 ÷ 4 = 1.
-how many bits does to distinguish 11 disturbances a regulator need? to distinguish 11 disturbances a regulator needs 4 bits.
+how many bits does a regulator need to distinguish 11 disturbances? to distinguish 11 disturbances, a regulator needs 4 bits.
 попадает ли контур с целью 41, начав с 5 при шаге 5 точно в цель? нет: 41 − 5 = 36, 36 не делится на 5 нацело.
 чтобы различить 13 возмущений, регулятору нужно 4 бита.
 target 19: a closed loop stops at 19 because the error is 0.
@@ -304,9 +304,9 @@ how many disturbances can a regulator with 13 states distinguish? a regulator wi
 how many steps does starting at 1 with target 19 and step 6 take? starting at 1 with target 19 and step 6 the value reaches 19 in 3 steps.
 сколько возмущений различает регулятор с 14 состояниями? регулятор с 14 состояниями различает 14 возмущений.
 за сколько шагов начав с 6 при цели 10 и шаге 2 достигает цели? начав с 6 при цели 10 и шаге 2, значение достигает 10 за 2 шага.
-to distinguish 15 disturbances a regulator needs 4 bits.
+to distinguish 15 disturbances, a regulator needs 4 bits.
 does a loop with target 17 starting at 2 with step 3 land exactly on the target? yes: 17 − 2 = 15, 15 ÷ 3 = 5.
-how many bits does to distinguish 17 disturbances a regulator need? to distinguish 17 disturbances a regulator needs 5 bits.
+how many bits does a regulator need to distinguish 17 disturbances? to distinguish 17 disturbances, a regulator needs 5 bits.
 попадает ли контур с целью 25, начав с 8 при шаге 4 точно в цель? нет: 25 − 8 = 17, 17 не делится на 4 нацело.
 чтобы различить 18 возмущений, регулятору нужно 5 бит.
 target 37: a closed loop stops at 37 because the error is 0.
@@ -334,7 +334,7 @@ how many disturbances can a regulator with 18 states distinguish? a regulator wi
 how many steps does starting at 7 with target 37 and step 5 take? starting at 7 with target 37 and step 5 the value reaches 37 in 6 steps.
 сколько возмущений различает регулятор с 20 состояниями? регулятор с 20 состояниями различает 20 возмущений.
 за сколько шагов начав с 9 при цели 15 и шаге 6 достигает цели? начав с 9 при цели 15 и шаге 6, значение достигает 15 за 1 шаг.
-to distinguish 24 disturbances a regulator needs 5 bits.
+to distinguish 24 disturbances, a regulator needs 5 bits.
 an open loop is a control loop that repeats its step regardless of the error and can overshoot the target.
 почему начав с 4 при цели 22 и шаге 3, значение достигает цели за 6 шагов? потому что 4 + 6 × 3 = 22: начав с 4 при цели 22 и шаге 3, значение достигает 22 за 6 шагов. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
 why does starting at 8 with target 24 and step 4 take 4 steps? because 8 + 4 × 4 = 24: starting at 8 with target 24 and step 4 the value reaches 24 in 4 steps. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
@@ -343,9 +343,9 @@ how many disturbances can a regulator with 7 states distinguish? a regulator wit
 how many steps does starting at 4 with target 22 and step 3 take? starting at 4 with target 22 and step 3 the value reaches 22 in 6 steps.
 сколько возмущений различает регулятор с 9 состояниями? регулятор с 9 состояниями различает 9 возмущений.
 за сколько шагов начав с 3 при цели 7 и шаге 4 достигает цели? начав с 3 при цели 7 и шаге 4, значение достигает 7 за 1 шаг.
-to distinguish 11 disturbances a regulator needs 4 bits.
+to distinguish 11 disturbances, a regulator needs 4 bits.
 does a loop with target 41 starting at 5 with step 5 land exactly on the target? no: 41 − 5 = 36, 36 is not divisible by 5.
-how many bits does to distinguish 13 disturbances a regulator need? to distinguish 13 disturbances a regulator needs 4 bits.
+how many bits does a regulator need to distinguish 13 disturbances? to distinguish 13 disturbances, a regulator needs 4 bits.
 попадает ли контур с целью 19, начав с 1 при шаге 6 точно в цель? да: 19 − 1 = 18, 18 ÷ 6 = 3.
 чтобы различить 14 возмущений, регулятору нужно 4 бита.
 target 10: a closed loop stops at 10 because the error is 0.
@@ -373,9 +373,9 @@ how many disturbances can a regulator with 14 states distinguish? a regulator wi
 how many steps does starting at 6 with target 10 and step 2 take? starting at 6 with target 10 and step 2 the value reaches 10 in 2 steps.
 сколько возмущений различает регулятор с 15 состояниями? регулятор с 15 состояниями различает 15 возмущений.
 за сколько шагов начав с 2 при цели 17 и шаге 3 достигает цели? начав с 2 при цели 17 и шаге 3, значение достигает 17 за 5 шагов.
-to distinguish 17 disturbances a regulator needs 5 bits.
+to distinguish 17 disturbances, a regulator needs 5 bits.
 does a loop with target 25 starting at 8 with step 4 land exactly on the target? no: 25 − 8 = 17, 17 is not divisible by 4.
-how many bits does to distinguish 18 disturbances a regulator need? to distinguish 18 disturbances a regulator needs 5 bits.
+how many bits does a regulator need to distinguish 18 disturbances? to distinguish 18 disturbances, a regulator needs 5 bits.
 попадает ли контур с целью 37, начав с 7 при шаге 5 точно в цель? да: 37 − 7 = 30, 30 ÷ 5 = 6.
 чтобы различить 20 возмущений, регулятору нужно 5 бит.
 target 15: a closed loop stops at 15 because the error is 0.
@@ -384,7 +384,7 @@ the error of a control loop is the target minus the current value.
 why does starting at 5 with target 40 and step 5 take 7 steps? because 5 + 7 × 5 = 40: starting at 5 with target 40 and step 5 the value reaches 40 in 7 steps. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
 за сколько шагов начав с 7 при цели 37 и шаге 5 достигает цели? начав с 7 при цели 37 и шаге 5, значение достигает 37 за 6 шагов: 7 + 6 × 5 = 37. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
 does a loop with target 19 starting at 11 with step 2 land exactly on the target? yes: 19 − 11 = 8, 8 ÷ 2 = 4.
-how many bits does to distinguish 7 disturbances a regulator need? to distinguish 7 disturbances a regulator needs 3 bits.
+how many bits does a regulator need to distinguish 7 disturbances? to distinguish 7 disturbances, a regulator needs 3 bits.
 попадает ли контур с целью 23, начав с 4 при шаге 3 точно в цель? нет: 23 − 4 = 19, 19 не делится на 3 нацело.
 чтобы различить 9 возмущений, регулятору нужно 4 бита.
 target 7: a closed loop stops at 7 because the error is 0.
@@ -412,9 +412,9 @@ how many disturbances can a regulator with 9 states distinguish? a regulator wit
 how many steps does starting at 3 with target 7 and step 4 take? starting at 3 with target 7 and step 4 the value reaches 7 in 1 step.
 сколько возмущений различает регулятор с 11 состояниями? регулятор с 11 состояниями различает 11 возмущений.
 за сколько шагов начав с 5 при цели 40 и шаге 5 достигает цели? начав с 5 при цели 40 и шаге 5, значение достигает 40 за 7 шагов.
-to distinguish 13 disturbances a regulator needs 4 bits.
+to distinguish 13 disturbances, a regulator needs 4 bits.
 does a loop with target 19 starting at 1 with step 6 land exactly on the target? yes: 19 − 1 = 18, 18 ÷ 6 = 3.
-how many bits does to distinguish 14 disturbances a regulator need? to distinguish 14 disturbances a regulator needs 4 bits.
+how many bits does a regulator need to distinguish 14 disturbances? to distinguish 14 disturbances, a regulator needs 4 bits.
 попадает ли контур с целью 11, начав с 6 при шаге 2 точно в цель? нет: 11 − 6 = 5, 5 не делится на 2 нацело.
 чтобы различить 15 возмущений, регулятору нужно 4 бита.
 target 17: a closed loop stops at 17 because the error is 0.
@@ -442,18 +442,18 @@ how many disturbances can a regulator with 15 states distinguish? a regulator wi
 how many steps does starting at 2 with target 17 and step 3 take? starting at 2 with target 17 and step 3 the value reaches 17 in 5 steps.
 сколько возмущений различает регулятор с 17 состояниями? регулятор с 17 состояниями различает 17 возмущений.
 за сколько шагов начав с 8 при цели 24 и шаге 4 достигает цели? начав с 8 при цели 24 и шаге 4, значение достигает 24 за 4 шага.
-to distinguish 18 disturbances a regulator needs 5 bits.
+to distinguish 18 disturbances, a regulator needs 5 bits.
 does a loop with target 37 starting at 7 with step 5 land exactly on the target? yes: 37 − 7 = 30, 30 ÷ 5 = 6.
-how many bits does to distinguish 20 disturbances a regulator need? to distinguish 20 disturbances a regulator needs 5 bits.
+how many bits does a regulator need to distinguish 20 disturbances? to distinguish 20 disturbances, a regulator needs 5 bits.
 попадает ли контур с целью 16, начав с 9 при шаге 6 точно в цель? нет: 16 − 9 = 7, 7 не делится на 6 нацело.
 чтобы различить 24 возмущения, регулятору нужно 5 бит.
 what is an open loop? an open loop is a control loop that repeats its step regardless of the error and can overshoot the target.
 за сколько шагов начав с 3 при цели 7 и шаге 4 достигает цели? начав с 3 при цели 7 и шаге 4, значение достигает 7 за 1 шаг: 3 + 1 × 4 = 7. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
 how many steps does starting at 7 with target 37 and step 5 take? starting at 7 with target 37 and step 5 the value reaches 37 in 6 steps: 7 + 6 × 5 = 37. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
 за сколько шагов начав с 11 при цели 19 и шаге 2 достигает цели? начав с 11 при цели 19 и шаге 2, значение достигает 19 за 4 шага.
-to distinguish 7 disturbances a regulator needs 3 bits.
+to distinguish 7 disturbances, a regulator needs 3 bits.
 does a loop with target 23 starting at 4 with step 3 land exactly on the target? no: 23 − 4 = 19, 19 is not divisible by 3.
-how many bits does to distinguish 9 disturbances a regulator need? to distinguish 9 disturbances a regulator needs 4 bits.
+how many bits does a regulator need to distinguish 9 disturbances? to distinguish 9 disturbances, a regulator needs 4 bits.
 попадает ли контур с целью 7, начав с 3 при шаге 4 точно в цель? да: 7 − 3 = 4, 4 ÷ 4 = 1.
 чтобы различить 11 возмущений, регулятору нужно 4 бита.
 target 40: a closed loop stops at 40 because the error is 0.
@@ -481,9 +481,9 @@ how many disturbances can a regulator with 11 states distinguish? a regulator wi
 how many steps does starting at 5 with target 40 and step 5 take? starting at 5 with target 40 and step 5 the value reaches 40 in 7 steps.
 сколько возмущений различает регулятор с 13 состояниями? регулятор с 13 состояниями различает 13 возмущений.
 за сколько шагов начав с 1 при цели 19 и шаге 6 достигает цели? начав с 1 при цели 19 и шаге 6, значение достигает 19 за 3 шага.
-to distinguish 14 disturbances a regulator needs 4 bits.
+to distinguish 14 disturbances, a regulator needs 4 bits.
 does a loop with target 11 starting at 6 with step 2 land exactly on the target? no: 11 − 6 = 5, 5 is not divisible by 2.
-how many bits does to distinguish 15 disturbances a regulator need? to distinguish 15 disturbances a regulator needs 4 bits.
+how many bits does a regulator need to distinguish 15 disturbances? to distinguish 15 disturbances, a regulator needs 4 bits.
 попадает ли контур с целью 17, начав с 2 при шаге 3 точно в цель? да: 17 − 2 = 15, 15 ÷ 3 = 5.
 чтобы различить 17 возмущений, регулятору нужно 5 бит.
 target 24: a closed loop stops at 24 because the error is 0.
@@ -502,7 +502,7 @@ starting at 11 with target 20 and step 3 the value reaches 20 in 3 steps.
 цель 28, значение 3, ошибка 25.
 a regulator with 2 states can distinguish 2 disturbances.
 how many steps does starting at 5 with target 29 and step 6 take? starting at 5 with target 29 and step 6 the value reaches 29 in 4 steps.
-how many bits does to distinguish 4 disturbances a regulator need? to distinguish 4 disturbances a regulator needs 2 bits.
+how many bits does a regulator need to distinguish 4 disturbances? to distinguish 4 disturbances, a regulator needs 2 bits.
 target 13: an open loop takes one step more and reaches 15, overshooting by 2.
 цель 9, значение 6: после шага 3 значение равно 9, а ошибка равна 0.
 how many disturbances can a regulator with 16 states distinguish? a regulator with 16 states can distinguish 16 disturbances.
@@ -510,13 +510,13 @@ does a loop with target 31 starting at 2 with step 4 land exactly on the target?
 target 23, value 8, error 15.
 machine A B C; on 0 A goes to C; on 1 C goes to B; this machine has 3 states and 2 transitions.
 начав с 7 при цели 19 и шаге 6, значение достигает 19 за 2 шага.
-to distinguish 6 disturbances a regulator needs 3 bits.
+to distinguish 6 disturbances, a regulator needs 3 bits.
 what is an open loop? an open loop is a control loop that repeats its step regardless of the error and can overshoot the target.
 почему начав с 3 при цели 28 и шаге 5, значение достигает цели за 5 шагов? потому что 3 + 5 × 5 = 28: начав с 3 при цели 28 и шаге 5, значение достигает 28 за 5 шагов. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
 target 24, value 10, error 14.
 machine A B C D; on 1 A goes to B; on 1 B goes to C; on 1 C goes to D; this machine has 4 states and 3 transitions.
 начав с 11 при цели 20 и шаге 3, значение достигает 20 за 3 шага.
-to distinguish 25 disturbances a regulator needs 5 bits.
+to distinguish 25 disturbances, a regulator needs 5 bits.
 target 12: a closed loop stops at 12 because the error is 0.
 target 28, value 3: after a step of 5 the value is 8 and the error is 20.
 регулятор с 2 состояниями различает 2 возмущения.
@@ -529,13 +529,13 @@ starting at 6 with target 9 and step 3 the value reaches 9 in 1 step.
 цель 23, значение 8, ошибка 15.
 a regulator with 5 states can distinguish 5 disturbances.
 how many steps does starting at 7 with target 19 and step 6 take? starting at 7 with target 19 and step 6 the value reaches 19 in 2 steps.
-how many bits does to distinguish 6 disturbances a regulator need? to distinguish 6 disturbances a regulator needs 3 bits.
+how many bits does a regulator need to distinguish 6 disturbances? to distinguish 6 disturbances, a regulator needs 3 bits.
 что такое разомкнутый контур? разомкнутый контур — это контур управления, который повторяет шаг независимо от ошибки и может проскочить цель.
 how many steps does starting at 5 with target 29 and step 6 take? starting at 5 with target 29 and step 6 the value reaches 29 in 4 steps: 5 + 4 × 6 = 29. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
 цель 24, значение 10, ошибка 14.
 a regulator with 64 states can distinguish 64 disturbances.
 how many steps does starting at 11 with target 20 and step 3 take? starting at 11 with target 20 and step 3 the value reaches 20 in 3 steps.
-how many bits does to distinguish 25 disturbances a regulator need? to distinguish 25 disturbances a regulator needs 5 bits.
+how many bits does a regulator need to distinguish 25 disturbances? to distinguish 25 disturbances, a regulator needs 5 bits.
 target 12: an open loop takes one step more and reaches 16, overshooting by 4.
 цель 28, значение 3: после шага 5 значение равно 8, а ошибка равна 20.
 how many disturbances can a regulator with 2 states distinguish? a regulator with 2 states can distinguish 2 disturbances.
@@ -543,7 +543,7 @@ does a loop with target 29 starting at 5 with step 6 land exactly on the target?
 target 13, value 1, error 12.
 machine A B C; on 1 A goes to B; on 0 B goes to A; this machine has 3 states and 2 transitions.
 начав с 6 при цели 9 и шаге 3, значение достигает 9 за 1 шаг.
-to distinguish 16 disturbances a regulator needs 4 bits.
+to distinguish 16 disturbances, a regulator needs 4 bits.
 target 30: a closed loop stops at 30 because the error is 0.
 target 23, value 8: after a step of 5 the value is 13 and the error is 10.
 регулятор с 5 состояниями различает 5 возмущений.
@@ -562,7 +562,7 @@ starting at 3 with target 28 and step 5 the value reaches 28 in 5 steps.
 цель 13, значение 1, ошибка 12.
 a regulator with 8 states can distinguish 8 disturbances.
 how many steps does starting at 6 with target 9 and step 3 take? starting at 6 with target 9 and step 3 the value reaches 9 in 1 step.
-how many bits does to distinguish 16 disturbances a regulator need? to distinguish 16 disturbances a regulator needs 4 bits.
+how many bits does a regulator need to distinguish 16 disturbances? to distinguish 16 disturbances, a regulator needs 4 bits.
 target 30: an open loop takes one step more and reaches 34, overshooting by 4.
 цель 23, значение 8: после шага 5 значение равно 13, а ошибка равна 10.
 how many disturbances can a regulator with 5 states distinguish? a regulator with 5 states can distinguish 5 disturbances.
@@ -576,7 +576,7 @@ does a loop with target 21 starting at 11 with step 3 land exactly on the target
 target 12, value 4, error 8.
 machine A B C; on 0 A goes to C; on 1 C goes to B; this machine has 3 states and 2 transitions.
 начав с 3 при цели 28 и шаге 5, значение достигает 28 за 5 шагов.
-to distinguish 2 disturbances a regulator needs 1 bit.
+to distinguish 2 disturbances, a regulator needs 1 bit.
 target 29: a closed loop stops at 29 because the error is 0.
 target 13, value 1: after a step of 2 the value is 3 and the error is 10.
 регулятор с 8 состояниями различает 8 возмущений.
@@ -595,7 +595,7 @@ starting at 10 with target 24 and step 2 the value reaches 24 in 7 steps.
 цель 12, значение 4, ошибка 8.
 a regulator with 28 states can distinguish 28 disturbances.
 how many steps does starting at 3 with target 28 and step 5 take? starting at 3 with target 28 and step 5 the value reaches 28 in 5 steps.
-how many bits does to distinguish 2 disturbances a regulator need? to distinguish 2 disturbances a regulator needs 1 bit.
+how many bits does a regulator need to distinguish 2 disturbances? to distinguish 2 disturbances, a regulator needs 1 bit.
 target 29: an open loop takes one step more and reaches 35, overshooting by 6.
 цель 13, значение 1: после шага 2 значение равно 3, а ошибка равна 10.
 how many disturbances can a regulator with 8 states distinguish? a regulator with 8 states can distinguish 8 disturbances.
@@ -603,13 +603,13 @@ does a loop with target 9 starting at 6 with step 3 land exactly on the target? 
 target 30, value 2, error 28.
 machine A B; on 1 A goes to B; on 1 B goes to A; this machine has 2 states and 2 transitions.
 начав с 8 при цели 23 и шаге 5, значение достигает 23 за 3 шага.
-to distinguish 5 disturbances a regulator needs 3 bits.
+to distinguish 5 disturbances, a regulator needs 3 bits.
 target 19: a closed loop stops at 19 because the error is 0.
 what is the error of a control loop? the error of a control loop is the target minus the current value.
 что такое необходимое разнообразие? необходимое разнообразие — это закон, по которому регулятор различает не больше возмущений, чем у него состояний.
 how many steps does starting at 6 with target 9 and step 3 take? starting at 6 with target 9 and step 3 the value reaches 9 in 1 step: 6 + 1 × 3 = 9. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
 начав с 10 при цели 24 и шаге 2, значение достигает 24 за 7 шагов.
-to distinguish 64 disturbances a regulator needs 6 bits.
+to distinguish 64 disturbances, a regulator needs 6 bits.
 target 20: a closed loop stops at 20 because the error is 0.
 target 12, value 4: after a step of 4 the value is 8 and the error is 4.
 регулятор с 28 состояниями различает 28 возмущений.
@@ -622,13 +622,13 @@ starting at 1 with target 13 and step 2 the value reaches 13 in 6 steps.
 цель 30, значение 2, ошибка 28.
 a regulator with 3 states can distinguish 3 disturbances.
 how many steps does starting at 8 with target 23 and step 5 take? starting at 8 with target 23 and step 5 the value reaches 23 in 3 steps.
-how many bits does to distinguish 5 disturbances a regulator need? to distinguish 5 disturbances a regulator needs 3 bits.
+how many bits does a regulator need to distinguish 5 disturbances? to distinguish 5 disturbances, a regulator needs 3 bits.
 target 19: an open loop takes one step more and reaches 25, overshooting by 6.
 что такое ошибка контура управления? ошибка контура управления — это цель минус текущее значение.
 how many steps does starting at 10 with target 24 and step 2 take? starting at 10 with target 24 and step 2 the value reaches 24 in 7 steps: 10 + 7 × 2 = 24. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
 за сколько шагов начав с 6 при цели 9 и шаге 3 достигает цели? начав с 6 при цели 9 и шаге 3, значение достигает 9 за 1 шаг: 6 + 1 × 3 = 9. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
 how many steps does starting at 10 with target 24 and step 2 take? starting at 10 with target 24 and step 2 the value reaches 24 in 7 steps.
-how many bits does to distinguish 64 disturbances a regulator need? to distinguish 64 disturbances a regulator needs 6 bits.
+how many bits does a regulator need to distinguish 64 disturbances? to distinguish 64 disturbances, a regulator needs 6 bits.
 target 20: an open loop takes one step more and reaches 23, overshooting by 3.
 цель 12, значение 4: после шага 4 значение равно 8, а ошибка равна 4.
 how many disturbances can a regulator with 28 states distinguish? a regulator with 28 states can distinguish 28 disturbances.
@@ -636,7 +636,7 @@ does a loop with target 29 starting at 3 with step 5 land exactly on the target?
 target 29, value 5, error 24.
 machine A B C; on 1 A goes to B; on 1 B goes to C; this machine has 3 states and 2 transitions.
 начав с 1 при цели 13 и шаге 2, значение достигает 13 за 6 шагов.
-to distinguish 8 disturbances a regulator needs 3 bits.
+to distinguish 8 disturbances, a regulator needs 3 bits.
 target 9: a closed loop stops at 9 because the error is 0.
 target 30, value 2: after a step of 4 the value is 6 and the error is 24.
 регулятор с 3 состояниями различает 3 возмущения.
@@ -655,7 +655,7 @@ starting at 4 with target 12 and step 4 the value reaches 12 in 2 steps.
 цель 29, значение 5, ошибка 24.
 a regulator with 4 states can distinguish 4 disturbances.
 how many steps does starting at 1 with target 13 and step 2 take? starting at 1 with target 13 and step 2 the value reaches 13 in 6 steps.
-how many bits does to distinguish 8 disturbances a regulator need? to distinguish 8 disturbances a regulator needs 3 bits.
+how many bits does a regulator need to distinguish 8 disturbances? to distinguish 8 disturbances, a regulator needs 3 bits.
 target 9: an open loop takes one step more and reaches 12, overshooting by 3.
 цель 30, значение 2: после шага 4 значение равно 6, а ошибка равна 24.
 how many disturbances can a regulator with 3 states distinguish? a regulator with 3 states can distinguish 3 disturbances.
@@ -669,7 +669,7 @@ does a loop with target 24 starting at 10 with step 2 land exactly on the target
 target 20, value 11, error 9.
 machine A B; on 1 A goes to B; on 1 B goes to A; this machine has 2 states and 2 transitions.
 начав с 4 при цели 12 и шаге 4, значение достигает 12 за 2 шага.
-to distinguish 28 disturbances a regulator needs 5 bits.
+to distinguish 28 disturbances, a regulator needs 5 bits.
 target 28: a closed loop stops at 28 because the error is 0.
 target 29, value 5: after a step of 6 the value is 11 and the error is 18.
 регулятор с 4 состояниями различает 4 возмущения.
@@ -688,7 +688,7 @@ how many steps does starting at 8 with target 23 and step 5 take? starting at 8 
 цель 20, значение 11, ошибка 9.
 a regulator with 25 states can distinguish 25 disturbances.
 how many steps does starting at 4 with target 12 and step 4 take? starting at 4 with target 12 and step 4 the value reaches 12 in 2 steps.
-how many bits does to distinguish 28 disturbances a regulator need? to distinguish 28 disturbances a regulator needs 5 bits.
+how many bits does a regulator need to distinguish 28 disturbances? to distinguish 28 disturbances, a regulator needs 5 bits.
 target 28: an open loop takes one step more and reaches 33, overshooting by 5.
 цель 29, значение 5: после шага 6 значение равно 11, а ошибка равна 18.
 how many disturbances can a regulator with 4 states distinguish? a regulator with 4 states can distinguish 4 disturbances.
@@ -696,7 +696,7 @@ does a loop with target 14 starting at 1 with step 2 land exactly on the target?
 target 9, value 6, error 3.
 machine A B C D; on 1 A goes to B; on 1 B goes to C; on 1 C goes to D; this machine has 4 states and 3 transitions.
 начав с 2 при цели 30 и шаге 4, значение достигает 30 за 7 шагов.
-to distinguish 3 disturbances a regulator needs 2 bits.
+to distinguish 3 disturbances, a regulator needs 2 bits.
 target 23: a closed loop stops at 23 because the error is 0.
 target 19, value 7: after a step of 6 the value is 13 and the error is 6.
 регулятор с 6 состояниями различает 6 возмущений.
@@ -715,7 +715,7 @@ starting at 5 with target 29 and step 6 the value reaches 29 in 4 steps.
 цель 9, значение 6, ошибка 3.
 a regulator with 16 states can distinguish 16 disturbances.
 how many steps does starting at 2 with target 30 and step 4 take? starting at 2 with target 30 and step 4 the value reaches 30 in 7 steps.
-how many bits does to distinguish 3 disturbances a regulator need? to distinguish 3 disturbances a regulator needs 2 bits.
+how many bits does a regulator need to distinguish 3 disturbances? to distinguish 3 disturbances, a regulator needs 2 bits.
 target 23: an open loop takes one step more and reaches 28, overshooting by 5.
 цель 19, значение 7: после шага 6 значение равно 13, а ошибка равна 6.
 how many disturbances can a regulator with 6 states distinguish? a regulator with 6 states can distinguish 6 disturbances.
@@ -729,7 +729,7 @@ does a loop with target 12 starting at 4 with step 4 land exactly on the target?
 target 28, value 3, error 25.
 machine A B C D; on 1 A goes to B; on 0 B goes to C; on 1 C goes to D; this machine has 4 states and 3 transitions.
 начав с 5 при цели 29 и шаге 6, значение достигает 29 за 4 шага.
-to distinguish 4 disturbances a regulator needs 2 bits.
+to distinguish 4 disturbances, a regulator needs 2 bits.
 target 13: a closed loop stops at 13 because the error is 0.
 target 9, value 6: after a step of 3 the value is 9 and the error is 0.
 регулятор с 16 состояниями различает 16 возмущений.
@@ -742,7 +742,7 @@ starting at 7 with target 19 and step 6 the value reaches 19 in 2 steps.
 a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
 за сколько шагов начав с 11 при цели 35 и шаге 4 достигает цели? начав с 11 при цели 35 и шаге 4, значение достигает 35 за 6 шагов: 11 + 6 × 4 = 35. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
 target 19, value 9: after a step of 2 the value is 11 and the error is 8.
-how many bits does to distinguish 10 disturbances a regulator need? to distinguish 10 disturbances a regulator needs 4 bits.
+how many bits does a regulator need to distinguish 10 disturbances? to distinguish 10 disturbances, a regulator needs 4 bits.
 регулятор с 32 состояниями различает 32 возмущения.
 target 35: an open loop takes one step more and reaches 39, overshooting by 4.
 за сколько шагов начав с 4 при цели 9 и шаге 5 достигает цели? начав с 4 при цели 9 и шаге 5, значение достигает 9 за 1 шаг.
@@ -782,7 +782,7 @@ machine A B C; on 1 A goes to B; on 1 B goes to C; this machine has 3 states and
 попадает ли контур с целью 27, начав с 6 при шаге 4 точно в цель? нет: 27 − 6 = 21, 21 не делится на 4 нацело.
 начав с 2 при цели 22 и шаге 5, значение достигает 22 за 4 шага.
 цель 44, значение 8, ошибка 36.
-to distinguish 17 disturbances a regulator needs 5 bits.
+to distinguish 17 disturbances, a regulator needs 5 bits.
 what is requisite variety? requisite variety is the law that a regulator can distinguish no more disturbances than it has states.
 почему начав с 6 при цели 26 и шаге 4, значение достигает цели за 5 шагов? потому что 6 + 5 × 4 = 26: начав с 6 при цели 26 и шаге 4, значение достигает 26 за 5 шагов. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
 machine A B C; on 1 A goes to B; on 1 B goes to C; from A the input 1 1 leads to C.
@@ -794,7 +794,7 @@ machine A B C; on 0 A goes to C; on 1 C goes to B; this machine has 3 states and
 попадает ли контур с целью 12, начав с 5 при шаге 2 точно в цель? нет: 12 − 5 = 7, 7 не делится на 2 нацело.
 начав с 1 при цели 7 и шаге 3, значение достигает 7 за 2 шага.
 цель 26, значение 6, ошибка 20.
-to distinguish 14 disturbances a regulator needs 4 bits.
+to distinguish 14 disturbances, a regulator needs 4 bits.
 a regulator with 15 states can distinguish 15 disturbances.
 target 44: a closed loop stops at 44 because the error is 0.
 what is a closed loop? a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
@@ -806,36 +806,36 @@ machine A B C D; on 1 A goes to B; on 1 B goes to C; on 1 C goes to D; this mach
 попадает ли контур с целью 10, начав с 4 при шаге 5 точно в цель? нет: 10 − 4 = 6, 6 не делится на 5 нацело.
 начав с 3 при цели 45 и шаге 6, значение достигает 45 за 7 шагов.
 цель 11, значение 5, ошибка 6.
-to distinguish 11 disturbances a regulator needs 4 bits.
+to distinguish 11 disturbances, a regulator needs 4 bits.
 a regulator with 13 states can distinguish 13 disturbances.
 target 26: a closed loop stops at 26 because the error is 0.
 how many steps does starting at 2 with target 22 and step 5 take? starting at 2 with target 22 and step 5 the value reaches 22 in 4 steps.
 target 44, value 8: after a step of 6 the value is 14 and the error is 30.
-how many bits does to distinguish 17 disturbances a regulator need? to distinguish 17 disturbances a regulator needs 5 bits.
+how many bits does a regulator need to distinguish 17 disturbances? to distinguish 17 disturbances, a regulator needs 5 bits.
 что такое необходимое разнообразие? необходимое разнообразие — это закон, по которому регулятор различает не больше возмущений, чем у него состояний.
 how many steps does starting at 2 with target 22 and step 5 take? starting at 2 with target 22 and step 5 the value reaches 22 in 4 steps: 2 + 4 × 5 = 22. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
 machine A B C; on 1 A goes to B; on 1 B goes to C; this machine has 3 states and 2 transitions.
 попадает ли контур с целью 23, начав с 10 при шаге 3 точно в цель? нет: 23 − 10 = 13, 13 не делится на 3 нацело.
 начав с 11 при цели 35 и шаге 4, значение достигает 35 за 6 шагов.
 цель 9, значение 4, ошибка 5.
-to distinguish 7 disturbances a regulator needs 3 bits.
+to distinguish 7 disturbances, a regulator needs 3 bits.
 a regulator with 9 states can distinguish 9 disturbances.
 target 11: a closed loop stops at 11 because the error is 0.
 how many steps does starting at 1 with target 7 and step 3 take? starting at 1 with target 7 and step 3 the value reaches 7 in 2 steps.
 target 26, value 6: after a step of 4 the value is 10 and the error is 16.
-how many bits does to distinguish 14 disturbances a regulator need? to distinguish 14 disturbances a regulator needs 4 bits.
+how many bits does a regulator need to distinguish 14 disturbances? to distinguish 14 disturbances, a regulator needs 4 bits.
 регулятор с 15 состояниями различает 15 возмущений.
 target 44: an open loop takes one step more and reaches 50, overshooting by 6.
 что такое замкнутый контур? замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
 how many steps does starting at 3 with target 45 and step 6 take? starting at 3 with target 45 and step 6 the value reaches 45 in 7 steps: 3 + 7 × 6 = 45. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
 начав с 9 при цели 19 и шаге 2, значение достигает 19 за 5 шагов.
 цель 22, значение 10, ошибка 12.
-to distinguish 32 disturbances a regulator needs 5 bits.
+to distinguish 32 disturbances, a regulator needs 5 bits.
 a regulator with 12 states can distinguish 12 disturbances.
 target 9: a closed loop stops at 9 because the error is 0.
 how many steps does starting at 3 with target 45 and step 6 take? starting at 3 with target 45 and step 6 the value reaches 45 in 7 steps.
 target 11, value 5: after a step of 2 the value is 7 and the error is 4.
-how many bits does to distinguish 11 disturbances a regulator need? to distinguish 11 disturbances a regulator needs 4 bits.
+how many bits does a regulator need to distinguish 11 disturbances? to distinguish 11 disturbances, a regulator needs 4 bits.
 регулятор с 13 состояниями различает 13 возмущений.
 target 26: an open loop takes one step more and reaches 30, overshooting by 4.
 за сколько шагов начав с 2 при цели 22 и шаге 5 достигает цели? начав с 2 при цели 22 и шаге 5, значение достигает 22 за 4 шага.
@@ -847,7 +847,7 @@ a regulator with 10 states can distinguish 10 disturbances.
 target 22: a closed loop stops at 22 because the error is 0.
 how many steps does starting at 11 with target 35 and step 4 take? starting at 11 with target 35 and step 4 the value reaches 35 in 6 steps.
 target 9, value 4: after a step of 5 the value is 9 and the error is 0.
-how many bits does to distinguish 7 disturbances a regulator need? to distinguish 7 disturbances a regulator needs 3 bits.
+how many bits does a regulator need to distinguish 7 disturbances? to distinguish 7 disturbances, a regulator needs 3 bits.
 регулятор с 9 состояниями различает 9 возмущений.
 target 11: an open loop takes one step more and reaches 13, overshooting by 2.
 за сколько шагов начав с 1 при цели 7 и шаге 3 достигает цели? начав с 1 при цели 7 и шаге 3, значение достигает 7 за 2 шага.
@@ -859,7 +859,7 @@ an open loop is a control loop that repeats its step regardless of the error and
 за сколько шагов начав с 3 при цели 45 и шаге 6 достигает цели? начав с 3 при цели 45 и шаге 6, значение достигает 45 за 7 шагов: 3 + 7 × 6 = 45. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
 how many steps does starting at 9 with target 19 and step 2 take? starting at 9 with target 19 and step 2 the value reaches 19 in 5 steps.
 target 22, value 10: after a step of 3 the value is 13 and the error is 9.
-how many bits does to distinguish 32 disturbances a regulator need? to distinguish 32 disturbances a regulator needs 5 bits.
+how many bits does a regulator need to distinguish 32 disturbances? to distinguish 32 disturbances, a regulator needs 5 bits.
 регулятор с 12 состояниями различает 12 возмущений.
 target 9: an open loop takes one step more and reaches 14, overshooting by 5.
 за сколько шагов начав с 3 при цели 45 и шаге 6 достигает цели? начав с 3 при цели 45 и шаге 6, значение достигает 45 за 7 шагов.
@@ -911,7 +911,7 @@ machine A B C D; on 1 A goes to B; on 0 B goes to C; on 1 C goes to D; this mach
 попадает ли контур с целью 7, начав с 1 при шаге 3 точно в цель? да: 7 − 1 = 6, 6 ÷ 3 = 2.
 начав с 6 при цели 26 и шаге 4, значение достигает 26 за 5 шагов.
 цель 22, значение 2, ошибка 20.
-to distinguish 15 disturbances a regulator needs 4 bits.
+to distinguish 15 disturbances, a regulator needs 4 bits.
 a regulator with 17 states can distinguish 17 disturbances.
 what is an open loop? an open loop is a control loop that repeats its step regardless of the error and can overshoot the target.
 почему начав с 5 при цели 11 и шаге 2, значение достигает цели за 3 шага? потому что 5 + 3 × 2 = 11: начав с 5 при цели 11 и шаге 2, значение достигает 11 за 3 шага. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
@@ -923,7 +923,7 @@ machine A B; on 1 A goes to B; on 1 B goes to A; this machine has 2 states and 2
 попадает ли контур с целью 45, начав с 3 при шаге 6 точно в цель? да: 45 − 3 = 42, 42 ÷ 6 = 7.
 начав с 5 при цели 11 и шаге 2, значение достигает 11 за 3 шага.
 цель 7, значение 1, ошибка 6.
-to distinguish 13 disturbances a regulator needs 4 bits.
+to distinguish 13 disturbances, a regulator needs 4 bits.
 a regulator with 14 states can distinguish 14 disturbances.
 target 22: a closed loop stops at 22 because the error is 0.
 how many steps does starting at 8 with target 44 and step 6 take? starting at 8 with target 44 and step 6 the value reaches 44 in 6 steps.
@@ -935,36 +935,36 @@ machine A B C; on 1 A goes to B; on 0 B goes to A; this machine has 3 states and
 попадает ли контур с целью 35, начав с 11 при шаге 4 точно в цель? да: 35 − 11 = 24, 24 ÷ 4 = 6.
 начав с 4 при цели 9 и шаге 5, значение достигает 9 за 1 шаг.
 цель 45, значение 3, ошибка 42.
-to distinguish 9 disturbances a regulator needs 4 bits.
+to distinguish 9 disturbances, a regulator needs 4 bits.
 a regulator with 11 states can distinguish 11 disturbances.
 target 7: a closed loop stops at 7 because the error is 0.
 how many steps does starting at 6 with target 26 and step 4 take? starting at 6 with target 26 and step 4 the value reaches 26 in 5 steps.
 target 22, value 2: after a step of 5 the value is 7 and the error is 15.
-how many bits does to distinguish 15 disturbances a regulator need? to distinguish 15 disturbances a regulator needs 4 bits.
+how many bits does a regulator need to distinguish 15 disturbances? to distinguish 15 disturbances, a regulator needs 4 bits.
 регулятор с 17 состояниями различает 17 возмущений.
 что такое разомкнутый контур? разомкнутый контур — это контур управления, который повторяет шаг независимо от ошибки и может проскочить цель.
 how many steps does starting at 1 with target 7 and step 3 take? starting at 1 with target 7 and step 3 the value reaches 7 in 2 steps: 1 + 2 × 3 = 7. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
 попадает ли контур с целью 19, начав с 9 при шаге 2 точно в цель? да: 19 − 9 = 10, 10 ÷ 2 = 5.
 начав с 10 при цели 22 и шаге 3, значение достигает 22 за 4 шага.
 цель 35, значение 11, ошибка 24.
-to distinguish 12 disturbances a regulator needs 4 bits.
+to distinguish 12 disturbances, a regulator needs 4 bits.
 a regulator with 7 states can distinguish 7 disturbances.
 target 45: a closed loop stops at 45 because the error is 0.
 how many steps does starting at 5 with target 11 and step 2 take? starting at 5 with target 11 and step 2 the value reaches 11 in 3 steps.
 target 7, value 1: after a step of 3 the value is 4 and the error is 3.
-how many bits does to distinguish 13 disturbances a regulator need? to distinguish 13 disturbances a regulator needs 4 bits.
+how many bits does a regulator need to distinguish 13 disturbances? to distinguish 13 disturbances, a regulator needs 4 bits.
 регулятор с 14 состояниями различает 14 возмущений.
 target 22: an open loop takes one step more and reaches 27, overshooting by 5.
 за сколько шагов начав с 8 при цели 44 и шаге 6 достигает цели? начав с 8 при цели 44 и шаге 6, значение достигает 44 за 6 шагов.
 что такое ошибка контура управления? ошибка контура управления — это цель минус текущее значение.
 how many steps does starting at 11 with target 35 and step 4 take? starting at 11 with target 35 and step 4 the value reaches 35 in 6 steps: 11 + 6 × 4 = 35. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
 цель 19, значение 9, ошибка 10.
-to distinguish 10 disturbances a regulator needs 4 bits.
+to distinguish 10 disturbances, a regulator needs 4 bits.
 a regulator with 32 states can distinguish 32 disturbances.
 target 35: a closed loop stops at 35 because the error is 0.
 how many steps does starting at 4 with target 9 and step 5 take? starting at 4 with target 9 and step 5 the value reaches 9 in 1 step.
 target 45, value 3: after a step of 6 the value is 9 and the error is 36.
-how many bits does to distinguish 9 disturbances a regulator need? to distinguish 9 disturbances a regulator needs 4 bits.
+how many bits does a regulator need to distinguish 9 disturbances? to distinguish 9 disturbances, a regulator needs 4 bits.
 регулятор с 11 состояниями различает 11 возмущений.
 target 7: an open loop takes one step more and reaches 10, overshooting by 3.
 за сколько шагов начав с 6 при цели 26 и шаге 4 достигает цели? начав с 6 при цели 26 и шаге 4, значение достигает 26 за 5 шагов.
@@ -976,7 +976,7 @@ requisite variety is the law that a regulator can distinguish no more disturbanc
 target 19: a closed loop stops at 19 because the error is 0.
 how many steps does starting at 10 with target 22 and step 3 take? starting at 10 with target 22 and step 3 the value reaches 22 in 4 steps.
 target 35, value 11: after a step of 4 the value is 15 and the error is 20.
-how many bits does to distinguish 12 disturbances a regulator need? to distinguish 12 disturbances a regulator needs 4 bits.
+how many bits does a regulator need to distinguish 12 disturbances? to distinguish 12 disturbances, a regulator needs 4 bits.
 регулятор с 7 состояниями различает 7 возмущений.
 target 45: an open loop takes one step more and reaches 51, overshooting by 6.
 за сколько шагов начав с 5 при цели 11 и шаге 2 достигает цели? начав с 5 при цели 11 и шаге 2, значение достигает 11 за 3 шага.
@@ -996,7 +996,7 @@ how many steps does starting at 4 with target 34 and step 6 take? starting at 4 
 starting at 3 with target 11 and step 2 the value reaches 11 in 4 steps.
 target 23, value 5: after a step of 3 the value is 8 and the error is 15.
 target 5, value 1, error 4.
-how many bits does to distinguish 4 disturbances a regulator need? to distinguish 4 disturbances a regulator needs 2 bits.
+how many bits does a regulator need to distinguish 4 disturbances? to distinguish 4 disturbances, a regulator needs 2 bits.
 сколько возмущений различает регулятор с 8 состояниями? регулятор с 8 состояниями различает 8 возмущений.
 регулятор с 16 состояниями различает 16 возмущений.
 необходимое разнообразие — это закон, по которому регулятор различает не больше возмущений, чем у него состояний.
@@ -1010,7 +1010,7 @@ target 22: an open loop takes one step more and reaches 26, overshooting by 4.
 цель 23, значение 5: после шага 3 значение равно 8, а ошибка равна 15.
 цель 5, значение 1, ошибка 4.
 чтобы различить 4 возмущения, регулятору нужно 2 бита.
-to distinguish 8 disturbances a regulator needs 3 bits.
+to distinguish 8 disturbances, a regulator needs 3 bits.
 how many disturbances can a regulator with 16 states distinguish? a regulator with 16 states can distinguish 16 disturbances.
 what is requisite variety? requisite variety is the law that a regulator can distinguish no more disturbances than it has states.
 за сколько шагов начав с 6 при цели 41 и шаге 5 достигает цели? начав с 6 при цели 41 и шаге 5, значение достигает 41 за 7 шагов: 6 + 7 × 5 = 41. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
@@ -1023,7 +1023,7 @@ how many steps does starting at 3 with target 11 and step 2 take? starting at 3 
 starting at 5 with target 23 and step 3 the value reaches 23 in 6 steps.
 target 5, value 1: after a step of 4 the value is 5 and the error is 0.
 target 41, value 6, error 35.
-how many bits does to distinguish 8 disturbances a regulator need? to distinguish 8 disturbances a regulator needs 3 bits.
+how many bits does a regulator need to distinguish 8 disturbances? to distinguish 8 disturbances, a regulator needs 3 bits.
 сколько возмущений различает регулятор с 16 состояниями? регулятор с 16 состояниями различает 16 возмущений.
 что такое необходимое разнообразие? необходимое разнообразие — это закон, по которому регулятор различает не больше возмущений, чем у него состояний.
 why does starting at 2 with target 20 and step 6 take 3 steps? because 2 + 3 × 6 = 20: starting at 2 with target 20 and step 6 the value reaches 20 in 3 steps. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
@@ -1037,10 +1037,10 @@ target 21: an open loop takes one step more and reaches 26, overshooting by 5.
 цель 5, значение 1: после шага 4 значение равно 5, а ошибка равна 0.
 цель 41, значение 6, ошибка 35.
 чтобы различить 8 возмущений, регулятору нужно 3 бита.
-to distinguish 16 disturbances a regulator needs 4 bits.
+to distinguish 16 disturbances, a regulator needs 4 bits.
 how many steps does starting at 7 with target 9 and step 2 take? starting at 7 with target 9 and step 2 the value reaches 9 in 1 step: 7 + 1 × 2 = 9. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
 почему начав с 2 при цели 20 и шаге 6, значение достигает цели за 3 шага? потому что 2 + 3 × 6 = 20: начав с 2 при цели 20 и шаге 6, значение достигает 20 за 3 шага. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
-to distinguish 18 disturbances a regulator needs 5 bits.
+to distinguish 18 disturbances, a regulator needs 5 bits.
 how many disturbances can a regulator with 20 states distinguish? a regulator with 20 states can distinguish 20 disturbances.
 a regulator with 24 states can distinguish 24 disturbances.
 machine A B C; on 1 A goes to B; on 0 B goes to A; from A the input 1 0 leads to A.
@@ -1050,10 +1050,10 @@ how many steps does starting at 5 with target 23 and step 3 take? starting at 5 
 starting at 1 with target 5 and step 4 the value reaches 5 in 1 step.
 target 41, value 6: after a step of 5 the value is 11 and the error is 30.
 target 20, value 2, error 18.
-how many bits does to distinguish 16 disturbances a regulator need? to distinguish 16 disturbances a regulator needs 4 bits.
+how many bits does a regulator need to distinguish 16 disturbances? to distinguish 16 disturbances, a regulator needs 4 bits.
 за сколько шагов начав с 7 при цели 9 и шаге 2 достигает цели? начав с 7 при цели 9 и шаге 2, значение достигает 9 за 1 шаг: 7 + 1 × 2 = 9. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
 target 9, value 7, error 2.
-how many bits does to distinguish 18 disturbances a regulator need? to distinguish 18 disturbances a regulator needs 5 bits.
+how many bits does a regulator need to distinguish 18 disturbances? to distinguish 18 disturbances, a regulator needs 5 bits.
 сколько возмущений различает регулятор с 20 состояниями? регулятор с 20 состояниями различает 20 возмущений.
 регулятор с 24 состояниями различает 24 возмущения.
 machine A B C; on 1 A goes to B; on 0 B goes to A; this machine has 3 states and 2 transitions.
@@ -1067,7 +1067,7 @@ target 34: an open loop takes one step more and reaches 40, overshooting by 6.
 why does starting at 9 with target 30 and step 3 take 7 steps? because 9 + 7 × 3 = 30: starting at 9 with target 30 and step 3 the value reaches 30 in 7 steps. a closed loop is a control loop that steps while the error is not 0 and stops when the error is 0.
 цель 9, значение 7, ошибка 2.
 чтобы различить 18 возмущений, регулятору нужно 5 бит.
-to distinguish 20 disturbances a regulator needs 5 bits.
+to distinguish 20 disturbances, a regulator needs 5 bits.
 how many disturbances can a regulator with 24 states distinguish? a regulator with 24 states can distinguish 24 disturbances.
 a regulator with 64 states can distinguish 64 disturbances.
 machine A B C D; on 1 A goes to B; on 1 B goes to C; on 1 C goes to D; from A the input 1 1 1 leads to D.
@@ -1080,7 +1080,7 @@ the error of a control loop is the target minus the current value.
 почему начав с 9 при цели 30 и шаге 3, значение достигает цели за 7 шагов? потому что 9 + 7 × 3 = 30: начав с 9 при цели 30 и шаге 3, значение достигает 30 за 7 шагов. замкнутый контур — это контур управления, который делает шаг, пока ошибка не 0, и останавливается, когда ошибка равна 0.
 target 9, value 7: after a step of 2 the value is 9 and the error is 0.
 target 30, value 9, error 21.
-how many bits does to distinguish 20 disturbances a regulator need? to distinguish 20 disturbances a regulator needs 5 bits.
+how many bits does a regulator need to distinguish 20 disturbances? to distinguish 20 disturbances, a regulator needs 5 bits.
 сколько возмущений различает регулятор с 24 состояниями? регулятор с 24 состояниями различает 24 возмущения.
 регулятор с 64 состояниями различает 64 возмущения.
 machine A B C D; on 1 A goes to B; on 1 B goes to C; on 1 C goes to D; this machine has 4 states and 3 transitions.
@@ -1094,7 +1094,7 @@ how many steps does starting at 10 with target 22 and step 4 take? starting at 1
 цель 9, значение 7: после шага 2 значение равно 9, а ошибка равна 0.
 цель 30, значение 9, ошибка 21.
 чтобы различить 20 возмущений, регулятору нужно 5 бит.
-to distinguish 24 disturbances a regulator needs 5 bits.
+to distinguish 24 disturbances, a regulator needs 5 bits.
 how many disturbances can a regulator with 64 states distinguish? a regulator with 64 states can distinguish 64 disturbances.
 a regulator with 25 states can distinguish 25 disturbances.
 machine A B; on 1 A goes to B; on 1 B goes to A; from A the input 1 1 leads to A.
@@ -1107,7 +1107,7 @@ what is the error of a control loop? the error of a control loop is the target m
 starting at 7 with target 9 and step 2 the value reaches 9 in 1 step.
 target 30, value 9: after a step of 3 the value is 12 and the error is 18.
 target 22, value 10, error 12.
-how many bits does to distinguish 24 disturbances a regulator need? to distinguish 24 disturbances a regulator needs 5 bits.
+how many bits does a regulator need to distinguish 24 disturbances? to distinguish 24 disturbances, a regulator needs 5 bits.
 сколько возмущений различает регулятор с 64 состояниями? регулятор с 64 состояниями различает 64 возмущения.
 регулятор с 25 состояниями различает 25 возмущений.
 machine A B; on 1 A goes to B; on 1 B goes to A; this machine has 2 states and 2 transitions.
@@ -1121,7 +1121,7 @@ why does starting at 11 with target 21 and step 5 take 2 steps? because 11 + 2 �
 цель 30, значение 9: после шага 3 значение равно 12, а ошибка равна 18.
 цель 22, значение 10, ошибка 12.
 чтобы различить 24 возмущения, регулятору нужно 5 бит.
-to distinguish 64 disturbances a regulator needs 6 bits.
+to distinguish 64 disturbances, a regulator needs 6 bits.
 how many disturbances can a regulator with 25 states distinguish? a regulator with 25 states can distinguish 25 disturbances.
 a regulator with 28 states can distinguish 28 disturbances.
 machine A B C; on 0 A goes to C; on 1 C goes to B; from A the input 0 1 leads to B.
@@ -1134,7 +1134,7 @@ how many steps does starting at 7 with target 9 and step 2 take? starting at 7 w
 starting at 9 with target 30 and step 3 the value reaches 30 in 7 steps.
 target 22, value 10: after a step of 4 the value is 14 and the error is 8.
 target 21, value 11, error 10.
-how many bits does to distinguish 64 disturbances a regulator need? to distinguish 64 disturbances a regulator needs 6 bits.
+how many bits does a regulator need to distinguish 64 disturbances? to distinguish 64 disturbances, a regulator needs 6 bits.
 сколько возмущений различает регулятор с 25 состояниями? регулятор с 25 состояниями различает 25 возмущений.
 регулятор с 28 состояниями различает 28 возмущений.
 machine A B C; on 0 A goes to C; on 1 C goes to B; this machine has 3 states and 2 transitions.
@@ -1148,7 +1148,7 @@ how many steps does starting at 4 with target 34 and step 6 take? starting at 4 
 цель 22, значение 10: после шага 4 значение равно 14, а ошибка равна 8.
 цель 21, значение 11, ошибка 10.
 чтобы различить 64 возмущения, регулятору нужно 6 бит.
-to distinguish 25 disturbances a regulator needs 5 bits.
+to distinguish 25 disturbances, a regulator needs 5 bits.
 how many disturbances can a regulator with 28 states distinguish? a regulator with 28 states can distinguish 28 disturbances.
 a regulator with 2 states can distinguish 2 disturbances.
 machine A B C D; on 1 A goes to B; on 0 B goes to C; on 1 C goes to D; from A the input 1 0 1 leads to D.
@@ -1161,7 +1161,7 @@ how many steps does starting at 9 with target 30 and step 3 take? starting at 9 
 starting at 10 with target 22 and step 4 the value reaches 22 in 3 steps.
 target 21, value 11: after a step of 5 the value is 16 and the error is 5.
 target 34, value 4, error 30.
-how many bits does to distinguish 25 disturbances a regulator need? to distinguish 25 disturbances a regulator needs 5 bits.
+how many bits does a regulator need to distinguish 25 disturbances? to distinguish 25 disturbances, a regulator needs 5 bits.
 сколько возмущений различает регулятор с 28 состояниями? регулятор с 28 состояниями различает 28 возмущений.
 регулятор с 2 состояниями различает 2 возмущения.
 machine A B C D; on 1 A goes to B; on 0 B goes to C; on 1 C goes to D; this machine has 4 states and 3 transitions.
@@ -1175,7 +1175,7 @@ why does starting at 3 with target 11 and step 2 take 4 steps? because 3 + 4 × 
 цель 21, значение 11: после шага 5 значение равно 16, а ошибка равна 5.
 цель 34, значение 4, ошибка 30.
 чтобы различить 25 возмущений, регулятору нужно 5 бит.
-to distinguish 28 disturbances a regulator needs 5 bits.
+to distinguish 28 disturbances, a regulator needs 5 bits.
 how many disturbances can a regulator with 2 states distinguish? a regulator with 2 states can distinguish 2 disturbances.
 a regulator with 4 states can distinguish 4 disturbances.
 machine A B C; on 1 A goes to B; on 1 B goes to C; from A the input 1 1 leads to C.
@@ -1188,7 +1188,7 @@ how many steps does starting at 10 with target 22 and step 4 take? starting at 1
 starting at 11 with target 21 and step 5 the value reaches 21 in 2 steps.
 target 34, value 4: after a step of 6 the value is 10 and the error is 24.
 target 11, value 3, error 8.
-how many bits does to distinguish 28 disturbances a regulator need? to distinguish 28 disturbances a regulator needs 5 bits.
+how many bits does a regulator need to distinguish 28 disturbances? to distinguish 28 disturbances, a regulator needs 5 bits.
 сколько возмущений различает регулятор с 2 состояниями? регулятор с 2 состояниями различает 2 возмущения.
 регулятор с 4 состояниями различает 4 возмущения.
 machine A B C; on 1 A goes to B; on 1 B goes to C; this machine has 3 states and 2 transitions.
@@ -1202,7 +1202,7 @@ target 9: an open loop takes one step more and reaches 11, overshooting by 2.
 цель 34, значение 4: после шага 6 значение равно 10, а ошибка равна 24.
 цель 11, значение 3, ошибка 8.
 чтобы различить 28 возмущений, регулятору нужно 5 бит.
-to distinguish 2 disturbances a regulator needs 1 bit.
+to distinguish 2 disturbances, a regulator needs 1 bit.
 how many disturbances can a regulator with 4 states distinguish? a regulator with 4 states can distinguish 4 disturbances.
 a regulator with 8 states can distinguish 8 disturbances.
 machine A B C; on 1 A goes to B; on 0 B goes to A; from A the input 1 0 leads to A.
@@ -1215,7 +1215,7 @@ how many steps does starting at 11 with target 21 and step 5 take? starting at 1
 starting at 4 with target 34 and step 6 the value reaches 34 in 5 steps.
 target 11, value 3: after a step of 2 the value is 5 and the error is 6.
 target 23, value 5, error 18.
-how many bits does to distinguish 2 disturbances a regulator need? to distinguish 2 disturbances a regulator needs 1 bit.
+how many bits does a regulator need to distinguish 2 disturbances? to distinguish 2 disturbances, a regulator needs 1 bit.
 сколько возмущений различает регулятор с 4 состояниями? регулятор с 4 состояниями различает 4 возмущения.
 регулятор с 8 состояниями различает 8 возмущений.
 machine A B C; on 1 A goes to B; on 0 B goes to A; this machine has 3 states and 2 transitions.
@@ -1229,6 +1229,6 @@ target 30: an open loop takes one step more and reaches 33, overshooting by 3.
 цель 11, значение 3: после шага 2 значение равно 5, а ошибка равна 6.
 цель 23, значение 5, ошибка 18.
 чтобы различить 2 возмущения, регулятору нужно 1 бит.
-to distinguish 4 disturbances a regulator needs 2 bits.
+to distinguish 4 disturbances, a regulator needs 2 bits.
 how many disturbances can a regulator with 8 states distinguish? a regulator with 8 states can distinguish 8 disturbances.
 a regulator with 16 states can distinguish 16 disturbances.
