@@ -157,6 +157,11 @@ def судить(строка):
         # секунд: 5 × 60 = 300.» проходила судом арифметики, 04.09).
         if з1 is not None and None not in (сколько_слева, сколько_справа):
             return True, False
+        # BOTH UNITS KNOWN, A COUNT UNREADABLE («оди метр равно 100 сантиметров»,
+        # mutation 04.09): the sentence claims a conversion with a number that
+        # is no number — a lie, not silence.
+        if None not in (если_слева, если_справа) and отношение(если_слева, если_справа) is not None:
+            return True, False
         return False, True
     ставка = отношение(если_слева, если_справа)
     if ставка is None:

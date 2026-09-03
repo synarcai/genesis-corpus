@@ -1017,6 +1017,12 @@ def судить(строка, слой=None):
     m = СТАВКА_RU.match(с)
     if m:
         штук, цена, итог = (int(m.group(i)) for i in (1, 2, 4))
+        # THE UNIT WORDS ARE ONE NOUN IN THE FORMS THE HOUSE WRITES BESIDE THE
+        # NUMBERS («2 по 3 рубл» — mutation 04.09: only the numbers were read)
+        ф1, ф2 = m.group(3), m.group(5)
+        лемма = rugram.ПО_ФОРМЕ.get(ф1)
+        if лемма is None or rugram.ПО_ФОРМЕ.get(ф2) != лемма or ф1 != rugram.форма(лемма, цена) or ф2 != rugram.форма(лемма, итог):
+            return True, False
         return True, штук * цена == итог
     m = РАВНЫ.match(с)
     if m:
