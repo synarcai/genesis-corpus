@@ -423,6 +423,30 @@
       "actors": []
     },
     {
+      "name": "genus_diff",
+      "file": "datasets/genesis_genus_diff.txt",
+      "genre": "DEFINITIONS BY GENUS AND DIFFERENCE — THE GENUS, THE DIFFERENCE AND FOUR QUESTIONS OF ONE FACT IN ONE LINE (the measure of the shelf, 03.09: «связка без числа» — a copula without a number — is fourteen per cent of the sentences of books, the largest kind of prose no house of the corpus had ever written; holon named the shape). Every show is one line holding «утверждение. вопрос? ответ.», as in the world of inquiry, so the market of the copula buys the FACT from the statement and the form of the ANSWER only from the question→answer pair standing beside it: «a pen is a tool that writes. what is a pen? a tool that writes.», «… is a pen a tool or an animal? a tool.», «… what does a pen do? a pen writes.», «… which tool writes? a pen.» Four questions of one fact, and their answers cover every role of it: the whole predicate, the genus alone, the difference alone, and the NAME alone — the last is the inversion, where the difference asks and the thing answers. Twenty-three things over nine genera in each of en/ru/de («ручка — это инструмент, который пишет. какой инструмент пишет? ручка.», «ein Stift ist ein Werkzeug, das schreibt. welches Werkzeug schreibt? ein Stift.»); the house (tools/defforms.py) declares every word and every agreement — the relative word agrees with the GENUS and stands beside it, and a thing is singular so that its difference is one verb form both after the genus and after the name. Each distinct line is written ONCE: the lexicon is finite, and repeating it would be weight, not knowledge",
+      "act": [
+        "name",
+        "translate",
+        "invert"
+      ],
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "geometry_langs",
       "file": "datasets/genesis_geometry_langs.txt",
       "genre": "AREA AND PERIMETER IN EIGHT LANGUAGES (the owner's word: every language in surplus; the geometry world says them in en/ru): the four facts of the geometry world — the area and the perimeter of a rectangle, the perimeter and the area of a square — as statement and as question answered by the statement (М-153), with the geometry world's ledger: «ein Rechteck 7 mal 8 hat die Fläche 7 × 8 = 56.», «wie groß ist der Umfang eines Rechtecks 3 mal 4? ein Rechteck 3 mal 4 hat den Umfang 3 + 4 = 7, 2 × 7 = 14.», «un carré de côté 4 a un périmètre de 4 × 4 = 16.», «¿cuál es el área de un cuadrado de lado 5? un cuadrado de lado 5 tiene área 5 × 5 = 25.», «qual è il perimetro …», «qual é a área …», «wat is de omtrek van een rechthoek 3 bij 4? …», «jakie jest pole prostokąta 2 na 3? prostokąt 2 na 3 ma pole 2 × 3 = 6.», «kenarları 7 ve 8 olan dikdörtgenin çevresi: 7 + 8 = 15, 2 × 15 = 30.»; the house of geometry phrases (tools/geoforms.py) holds the phrases with holes, the court turns the same phrases into patterns and recomputes every ledger",
@@ -3697,10 +3721,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 15184605,
+      "size": 16224950,
       "tiers": [],
       "text": "mix",
-      "lines": 209833
+      "lines": 219920
     },
     {
       "name": "full",
@@ -3715,10 +3739,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 19667674,
+      "size": 20708019,
       "tiers": [],
       "text": "mix",
-      "lines": 283170
+      "lines": 293257
     },
     {
       "name": "minimal",
@@ -3733,10 +3757,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 8861671,
+      "size": 9583752,
       "tiers": [],
       "text": "mix",
-      "lines": 117681
+      "lines": 122489
     },
     {
       "name": "mid13",
@@ -3751,10 +3775,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 10480832,
+      "size": 11039608,
       "tiers": [],
       "text": "mix",
-      "lines": 140660
+      "lines": 144371
     },
     {
       "name": "mid",
@@ -3769,10 +3793,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 12155310,
+      "size": 12850861,
       "tiers": [],
       "text": "mix",
-      "lines": 165845
+      "lines": 170538
     },
     {
       "name": "selfmeasure",

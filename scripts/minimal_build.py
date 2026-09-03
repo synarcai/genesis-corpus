@@ -31,7 +31,7 @@ import sys
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
 sys.path.insert(0, str(КОРЕНЬ / "scripts"))
 import form_census as C  # noqa: E402
-from gen_genesis_full import куски_сборки  # noqa: E402
+from gen_genesis_full import куски_сборки, записать_размер  # noqa: E402
 from layer import SEAM  # noqa: E402
 
 
@@ -66,6 +66,11 @@ def main():
     путь = КОРЕНЬ / а.цель
     путь.write_text(тело, encoding="utf-8")
     строк = sum(n for _, n in перепись)
+    # ОБЪЯВЛЕНИЕ СВЕРЯЕТСЯ ПРИ КАЖДОЙ СБОРКЕ (тот же закон, что у полного
+    # свода): срез вписывает СВОЙ размер в свой узел манифеста сам, иначе
+    # его число стоит обещанием и отстаёт на волну — так и вышло 03.09,
+    # когда суд манифеста уронил шесть разладов на трёх срезах
+    записать_размер(а.цель, len(тело.encode("utf-8")), строк)
     полных = sum(1 for _ in open(КОРЕНЬ / "datasets" / "GENESIS-FULL.txt", encoding="utf-8"))
     print(f"МИНИМАЛЬНЫЙ СВОД: written {а.цель}: {len(тело.encode('utf-8'))} bytes, {строк} строк, "
           f"{len(перепись)} миров, родов {родов}, масса ≤ {а.масса}; полный свод {полных} строк "

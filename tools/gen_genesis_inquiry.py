@@ -247,7 +247,7 @@ def контр_нечётные(шаг):
         вон.append(f"the sum of the first k odd numbers is 2 × k is "
                    f"false: at k = {k} the sum is {k * k} and 2 × {k} "
                    f"= {2 * k}.")
-        вон.append(f"сумма первых k нечётных равна 2 × k — ложь: при "
+        вон.append(f"сумма первых k нечётных чисел равна 2 × k — ложь: при "
                    f"k = {k} сумма равна {k * k}, а 2 × {k} = "
                    f"{2 * k}.")
     return с_вопросами(вон)
@@ -259,7 +259,7 @@ def общ_нечётные(шаг):
         k = 1 + (шаг * 2 + i) % 12
         вон.append(f"the sum of the first k odd numbers is k × k: at "
                    f"k = {k} it is {k} × {k} = {k * k}.")
-        вон.append(f"сумма первых k нечётных равна k × k: при k = {k} "
+        вон.append(f"сумма первых k нечётных чисел равна k × k: при k = {k} "
                    f"это {k} × {k} = {k * k}.")
     return с_вопросами(вон)
 
