@@ -35,10 +35,16 @@ from layer import emit_grouped  # noqa: E402
 
 def _добавить(вон, *арг, **кв):
     """A page whose form the language has not declared is not written (the law
-    of the declared form: no case is ever guessed)."""
+    of the declared form: no case is ever guessed).
+
+    ДВА РОДА НЕОБЪЯВЛЕННОГО, И ОБА МОЛЧАТ ОДИНАКОВО: форма ВЕЩИ, которой нет
+    в парадигме (ValueError дома), и целый РОД, слов которого язык не назвал
+    (KeyError таблицы) — испанский не объявил долей и цветных частей, и эти
+    страницы он просто не пишет.
+    """
     try:
         вон.append(F.страница(*арг, **кв))
-    except ValueError:
+    except (ValueError, KeyError):
         pass
 
 
@@ -82,14 +88,14 @@ def язык_группа(шаг, язык):
     # THREE GENERA FROM e9's PROFILE OF MUTENESS (03.09): the whole named by its
     # PLACE and a part of it, a rate «every day» without money, and the sum said
     # by «they» after the bearers are named — five pages each per pass
-    вещей_мест = len(F.ЯЗЫКИ[язык]["места"])
+    вещей_мест = len(F.ЯЗЫКИ[язык].get("места") or (0,))
     for i in range(5):
         n = 40 * (3 + (шаг * 5 + i * 7 + j) % 20)
         k = 5 * (1 + (шаг * 3 + i * 11 + j) % 15)
         if k >= n:
             k = n // 2
         _добавить(вон, язык, "место", X=лица[0][0], Т=(шаг + i) % вещей, n=n, k=k,
-                  место=(шаг + i) % вещей_мест, свойство=(шаг * 2 + i) % len(F.ЯЗЫКИ[язык]["свойства"]))
+                  место=(шаг + i) % вещей_мест, свойство=(шаг * 2 + i) % len(F.ЯЗЫКИ[язык].get("свойства") or (0,)))
         j += 1
     # the ECHO of a part (e9 03.09: so the market of heads buys «of them»), and
     # TWO PARTS WITH A REST (g1.39)
@@ -99,13 +105,13 @@ def язык_группа(шаг, язык):
         if k >= n:
             k = n // 4
         _добавить(вон, язык, "место_эхо", X=лица[0][0], Т=(шаг + i + 1) % вещей, n=n, k=k,
-                  место=(шаг + i + 1) % вещей_мест, свойство=(шаг + i) % len(F.ЯЗЫКИ[язык]["свойства"]))
+                  место=(шаг + i + 1) % вещей_мест, свойство=(шаг + i) % len(F.ЯЗЫКИ[язык].get("свойства") or (0,)))
         j += 1
     for i in range(5):
         n = 10 * (3 + (шаг * 3 + i * 7 + j) % 12)
         k = 2 + (шаг * 5 + i * 3 + j) % max(2, n // 4)
         k2 = 2 + (шаг * 7 + i * 5 + j) % max(2, n // 4)
-        свойств = len(F.ЯЗЫКИ[язык]["свойства"])
+        свойств = len(F.ЯЗЫКИ[язык].get("свойства") or (0,))
         с1 = (шаг + i) % свойств; с2 = (с1 + 1) % свойств; с3 = (с1 + 2) % свойств
         _добавить(вон, язык, "место_две", X=лица[0][0], Т=(шаг + i + 2) % вещей, n=n, k=k, k2=k2,
                   место=(шаг + i + 2) % вещей_мест, свойство=с1, свойство2=с2, свойство3=с3)
@@ -119,13 +125,13 @@ def язык_группа(шаг, язык):
         if k >= n:
             k = n // 4
         _добавить(вон, язык, "место_п", X=лица[0][0], Т=(шаг + i + 3) % вещей, n=n, k=k,
-                  место=(шаг + i + 3) % вещей_мест, свойство=(шаг + i + 1) % len(F.ЯЗЫКИ[язык]["свойства"]))
+                  место=(шаг + i + 3) % вещей_мест, свойство=(шаг + i + 1) % len(F.ЯЗЫКИ[язык].get("свойства") or (0,)))
         j += 1
     for i in range(5):
         n = 10 * (3 + (шаг * 7 + i * 3 + j) % 12)
         k = 2 + (шаг * 3 + i * 5 + j) % max(2, n // 4)
         k2 = 2 + (шаг * 5 + i * 7 + j) % max(2, n // 4)
-        свойств = len(F.ЯЗЫКИ[язык]["свойства"])
+        свойств = len(F.ЯЗЫКИ[язык].get("свойства") or (0,))
         с1 = (шаг + i + 1) % свойств; с2 = (с1 + 1) % свойств; с3 = (с1 + 2) % свойств
         _добавить(вон, язык, "место_две_п", X=лица[0][0], Т=(шаг + i + 4) % вещей, n=n, k=k, k2=k2,
                   место=(шаг + i + 4) % вещей_мест, свойство=с1, свойство2=с2, свойство3=с3)
@@ -135,11 +141,11 @@ def язык_группа(шаг, язык):
         k = 2 + (шаг * 7 + i * 5 + j) % max(2, n // 3)
         форма = "место_товар" if i % 2 == 0 else "место_товар_п"
         _добавить(вон, язык, форма, X=лица[0][0], Т=(шаг + i + 5) % вещей, n=n, k=k,
-                  место=(шаг + i + 5) % вещей_мест, свойство=(шаг + i + 2) % len(F.ЯЗЫКИ[язык]["свойства"]))
+                  место=(шаг + i + 5) % вещей_мест, свойство=(шаг + i + 2) % len(F.ЯЗЫКИ[язык].get("свойства") or (0,)))
         j += 1
     # THE LIST WITH ITS COUNT SHOWN (holon 03.09: the executors of lists buy the
     # form only when the count stands beside the enumeration) — seven each
-    вещей_мест = len(F.ЯЗЫКИ[язык]["вместилища"])
+    вещей_мест = len(F.ЯЗЫКИ[язык].get("вместилища") or F.ЯЗЫКИ[язык].get("вместилища_где") or (0,))
     for i in range(7):
         т1 = (шаг + i) % вещей; т2 = (т1 + 1 + i % 3) % вещей; т3 = (т2 + 1 + (шаг + i) % 3) % вещей
         if len({т1, т2, т3}) < 3:
@@ -177,14 +183,14 @@ def язык_группа(шаг, язык):
         k = 2 + (шаг * 3 + i * 5 + j) % 12
         за = i % 2 == 0
         _добавить(вон, язык, "ставка", X=X, Т=(шаг + i + 5) % вещей, n=n, k=k, m=n * k,
-                  глагол_ставки=(шаг + i) % len(F.ЯЗЫКИ[язык]["ставки"]), дней=за)
+                  глагол_ставки=(шаг + i) % len(F.ЯЗЫКИ[язык].get("ставки") or (0,)), дней=за)
         j += 1
     # THE GOOD LEAVES AND THE REST IS ASKED (32's tomograph 03.09): «paco had
     # 26 apples. paco ate 9 apples. how many apples does paco have left?» —
     # nine per pass, the three verbs walking, and the eating verb taking only
     # a good the language declares edible
-    съедобные = F.ЯЗЫКИ[язык]["съедобные"]
-    убылей = len(F.ЯЗЫКИ[язык]["убыли"])
+    съедобные = (F.ЯЗЫКИ[язык].get("съедобные") or (0,))
+    убылей = len(F.ЯЗЫКИ[язык].get("убыли") or (0,))
     for i in range(9):
         X = лица[(шаг * 7 + i * 3 + 2) % len(лица)][0]
         глагол = (шаг + i) % убылей
@@ -195,7 +201,7 @@ def язык_группа(шаг, язык):
         j += 1
     # A PLACE EMPTIED (32's order 03.09): every declared place gets its own
     # pages — the market of places buys a place only from holdings that name it
-    мест = len(F.ЯЗЫКИ[язык]["места"])
+    мест = len(F.ЯЗЫКИ[язык].get("места") or (0,))
     for i in range(мест):
         n = 7 + (шаг * 11 + i * 7 + j) % 70
         k = 1 + (шаг * 3 + i * 5 + j) % (n - 2)
@@ -204,7 +210,7 @@ def язык_группа(шаг, язык):
         j += 1
     # THE LIST ASKED IN THE SAME LINE (holon 03.09): the count as an executor is
     # bought only from a question→answer pair beside the enumeration
-    вместилищ = len(F.ЯЗЫКИ[язык].get("вместилища_где") or F.ЯЗЫКИ[язык]["вместилища"])
+    вместилищ = len(F.ЯЗЫКИ[язык].get("вместилища_где") or F.ЯЗЫКИ[язык].get("вместилища") or (0,))
     for i in range(7):
         т1 = (шаг * 3 + i) % вещей; т2 = (т1 + 2 + i % 3) % вещей; т3 = (т2 + 3) % вещей
         if len({т1, т2, т3}) < 3:

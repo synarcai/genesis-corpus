@@ -470,6 +470,30 @@
       "actors": []
     },
     {
+      "name": "measure_story",
+      "file": "datasets/genesis_measure_story.txt",
+      "genre": "MEASURED STORIES — A DISTANCE COMPARED BY ITS VERB, AND A PAIR PRICED BY ITS MULTIPLE (holon's orders from the last lines of the attack, 03.09). The first: «the frog jumped 31 inches. the grasshopper jumped 25 inches. how many more inches did the frog jump than the grasshopper? 31 − 25 = 6.» — the corpus said this with ONE verb, and a verb met once is learnt as a word rather than as a place of the frame; six verbs walk here (jumped, ran, walked, swam, flew, crawled — прыгнул, пробежал, прошёл, проплыл, пролетел, прополз), each with its bare form for the English question and, in Russian, with its own preposition («прыгнул НА 31 сантиметр», but «пробежал 31 метр») and its past tense agreeing with the actor («лягушка прыгнула», «кузнечик прыгнул»). The second: «a house and a lot cost 120 dollars together. the house costs three times as much as the lot. how much does the lot cost? 3 + 1 = 4, 120 ÷ 4 = 30.» — «as MUCH as» beside «times» on a price, where the corpus had only «as many as» on countables; both ends of the pair are asked, and the greater costs one step more, for its answer runs through the lesser. Every form is declared by the house (tools/measurestory.py): the Russian measure names three count forms, the past tense two genders, the second good its genitive; the court knows the whole finite table and calls a line of these shapes that the table does not hold a lie",
+      "act": [
+        "recount",
+        "compare",
+        "translate"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "geometry_langs",
       "file": "datasets/genesis_geometry_langs.txt",
       "genre": "AREA AND PERIMETER IN EIGHT LANGUAGES (the owner's word: every language in surplus; the geometry world says them in en/ru): the four facts of the geometry world — the area and the perimeter of a rectangle, the perimeter and the area of a square — as statement and as question answered by the statement (М-153), with the geometry world's ledger: «ein Rechteck 7 mal 8 hat die Fläche 7 × 8 = 56.», «wie groß ist der Umfang eines Rechtecks 3 mal 4? ein Rechteck 3 mal 4 hat den Umfang 3 + 4 = 7, 2 × 7 = 14.», «un carré de côté 4 a un périmètre de 4 × 4 = 16.», «¿cuál es el área de un cuadrado de lado 5? un cuadrado de lado 5 tiene área 5 × 5 = 25.», «qual è il perimetro …», «qual é a área …», «wat is de omtrek van een rechthoek 3 bij 4? …», «jakie jest pole prostokąta 2 na 3? prostokąt 2 na 3 ma pole 2 × 3 = 6.», «kenarları 7 ve 8 olan dikdörtgenin çevresi: 7 + 8 = 15, 2 × 15 = 30.»; the house of geometry phrases (tools/geoforms.py) holds the phrases with holes, the court turns the same phrases into patterns and recomputes every ledger",
@@ -3744,10 +3768,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 16415904,
+      "size": 16711444,
       "tiers": [],
       "text": "mix",
-      "lines": 222287
+      "lines": 223919
     },
     {
       "name": "full",
@@ -3762,10 +3786,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 20910949,
+      "size": 21206489,
       "tiers": [],
       "text": "mix",
-      "lines": 295834
+      "lines": 297466
     },
     {
       "name": "minimal",
@@ -3780,10 +3804,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 9732554,
+      "size": 9983034,
       "tiers": [],
       "text": "mix",
-      "lines": 123515
+      "lines": 124924
     },
     {
       "name": "mid13",
@@ -3798,10 +3822,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 11198441,
+      "size": 11462486,
       "tiers": [],
       "text": "mix",
-      "lines": 145522
+      "lines": 146999
     },
     {
       "name": "mid",
@@ -3816,10 +3840,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 13023375,
+      "size": 13310744,
       "tiers": [],
       "text": "mix",
-      "lines": 171877
+      "lines": 173469
     },
     {
       "name": "selfmeasure",

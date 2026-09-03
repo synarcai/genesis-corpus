@@ -15,7 +15,12 @@ the wrong kind (an unknown verb or an unknown thing is not judged here).
 ВЫПЕЧКА = {"cookies", "cakes", "pies", "buns", "loaves", "pastries", "pancakes"}
 ПИСЬМЕННОЕ = {"letters", "pages", "cards", "notes", "words", "lines", "poems", "essays", "stories", "chapters", "books"}
 ЧТЕНИЕ = {"books", "pages", "letters", "cards", "stories", "poems", "chapters", "notes", "words", "lines"}
-РАССТОЯНИЕ_ВРЕМЯ = {"miles", "kilometres", "kilometers", "metres", "meters", "feet", "steps", "laps", "minutes", "hours", "seconds"}
+# ДЮЙМ И САНТИМЕТР — ТОЖЕ РАССТОЯНИЕ (03.09, дом историй с мерой): прыжок
+# их держал, а ходьба и бег — нет, и «the dog walked 92 inches» звалось
+# ложью о языке при верной мере. Мелкая мера не перестаёт быть мерой
+# оттого, что ею редко меряют шаг.
+РАССТОЯНИЕ_ВРЕМЯ = {"miles", "kilometres", "kilometers", "metres", "meters", "feet", "inches",
+                    "centimetres", "centimeters", "steps", "laps", "minutes", "hours", "seconds"}
 ВЕС = {"pounds", "kilograms", "grams"}
 ОЧКИ = {"points", "goals", "runs"}
 ДЕНЬГИ = {"dollars", "coins", "cents", "rubles", "euros"}
