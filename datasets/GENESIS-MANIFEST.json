@@ -374,6 +374,32 @@
       "actors": []
     },
     {
+      "name": "action_pages",
+      "file": "datasets/genesis_action_pages.txt",
+      "genre": "A LEDGER FOR EVERY COUNTABLE ACT — NEW PAGES, OLD WORLDS UNTOUCHED (the collegium of a hundred per cent, owner 03.09; holon's first task, e9's condition «add new pages, do not rewrite old ones»): the reader's worlds answer computable questions with a value («peter keeps 4 coins»), and their form may not change because his markets buy skeletons from those lines; so the same genera come again WITH THE CHAIN, in en/ru/de — the remainder «peter had 8 coins. peter gave 4 coins away. how many coins are left? 8 − 4 = 4. so the answer is 4.», the increase «nick had 9 balls. nick got 2 balls more. … 9 + 2 = 11.», the share that went «у Анны было 70 книг. половина книг ушла. сколько книг осталось? 70 ÷ 2 = 35, 70 − 35 = 35.» and «две трети книг ушли … 60 ÷ 3 = 20, 20 × 2 = 40, 60 − 40 = 20.» (the words of the fractions from the house of shares, the Russian verb agreeing with the numerator), the two bearers «elena has 2 children. ava has 3 children. how many children do they have together? 2 + 3 = 5.», the multiple «Anna hat 2 Eier. Jonas hat dreimal so viele Eier wie Anna. … 3 × 2 = 6.»; ≥ 15 pages per genus and language; the house (tools/actionpages.py) holds the templates, the court regenerates the page letter by letter",
+      "act": [
+        "recount",
+        "translate"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": [
+        "person_names:en",
+        "person_names:ru"
+      ]
+    },
+    {
       "name": "geometry_langs",
       "file": "datasets/genesis_geometry_langs.txt",
       "genre": "AREA AND PERIMETER IN EIGHT LANGUAGES (the owner's word: every language in surplus; the geometry world says them in en/ru): the four facts of the geometry world — the area and the perimeter of a rectangle, the perimeter and the area of a square — as statement and as question answered by the statement (М-153), with the geometry world's ledger: «ein Rechteck 7 mal 8 hat die Fläche 7 × 8 = 56.», «wie groß ist der Umfang eines Rechtecks 3 mal 4? ein Rechteck 3 mal 4 hat den Umfang 3 + 4 = 7, 2 × 7 = 14.», «un carré de côté 4 a un périmètre de 4 × 4 = 16.», «¿cuál es el área de un cuadrado de lado 5? un cuadrado de lado 5 tiene área 5 × 5 = 25.», «qual è il perimetro …», «qual é a área …», «wat is de omtrek van een rechthoek 3 bij 4? …», «jakie jest pole prostokąta 2 na 3? prostokąt 2 na 3 ma pole 2 × 3 = 6.», «kenarları 7 ve 8 olan dikdörtgenin çevresi: 7 + 8 = 15, 2 × 15 = 30.»; the house of geometry phrases (tools/geoforms.py) holds the phrases with holes, the court turns the same phrases into patterns and recomputes every ledger",
@@ -3648,10 +3674,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 14512494,
+      "size": 14675602,
       "tiers": [],
       "text": "mix",
-      "lines": 205083
+      "lines": 206136
     },
     {
       "name": "full",
@@ -3666,10 +3692,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 18995563,
+      "size": 19158671,
       "tiers": [],
       "text": "mix",
-      "lines": 278420
+      "lines": 279473
     },
     {
       "name": "minimal",

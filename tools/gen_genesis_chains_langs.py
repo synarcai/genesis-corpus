@@ -16,8 +16,8 @@ TEMPLATES each pack already declares in `show_kinds.arithmetic`, tells the
 operation by the place of the holes, and fills them with the pack's own
 numerals; a number the language does not declare is never said.
 
-MASS FROM THE RULE (М-148): twelve chains per language per pass — six of
-(+, −), three of (×, +), three of three steps — on numbers that walk with
+MASS FROM THE RULE (М-148): nineteen chains per language per pass — six of
+(+, −), three of (×, +), six of three steps and four of four steps — on numbers that walk with
 strides coprime with the pack's table, so a language shows other numbers
 every pass.
 """
@@ -86,25 +86,55 @@ def язык_группа(шаг, язык):
                 if (p + c) in F.ЧИСЛА[язык] and c != a:
                     вон.append(F.цепь(язык, (("×", a, b, p), ("+", p, c, p + c))))
                     break
-    # three chains of THREE steps: the ledger of the market of reasoning
-    for i in range(3):
-        п = _пара(язык, шаг, i + 3)
-        if п is None:
-            continue
-        a, b = п
-        s = a + b
-        for c in sorted(v for v in F.ЧИСЛА[язык] if 1 <= v < s):
-            r = s - c
-            if r not in F.ЧИСЛА[язык] or r < 2:
-                continue
-            for d in sorted(v for v in F.ЧИСЛА[язык] if v >= 2):
-                if если(язык, "×") and (r * d) in F.ЧИСЛА[язык]:
-                    вон.append(F.цепь(язык, (("+", a, b, s), ("−", s, c, r), ("×", r, d, r * d))))
-                    break
-            else:
-                continue
-            break
+    # chains of THREE and FOUR steps: the ledger of the market of reasoning, and
+    # the food of the library of chains (holon 03.09: a bought chain becomes a
+    # step of another, so depth is what the library eats)
+    for i in range(6):
+        цепочка = _вглубь(язык, шаг, i + 3, шагов=3)
+        if цепочка:
+            вон.append(F.цепь(язык, цепочка))
+    for i in range(4):
+        цепочка = _вглубь(язык, шаг, i + 9, шагов=4)
+        if цепочка:
+            вон.append(F.цепь(язык, цепочка))
     return вон
+
+
+def _вглубь(язык, шаг, i, шагов):
+    """A chain of `шагов` steps: every intermediate number is one the language
+    declares, and every step spends the previous result."""
+    т = sorted(v for v in F.ЧИСЛА[язык] if v >= 1)
+    п = _пара(язык, шаг, i)
+    if п is None:
+        return None
+    a, b = п
+    s = a + b
+    цепочка = [("+", a, b, s)]
+    текущее = s
+    # the operations walk in turn: −, ×, −, ÷ … — each taking the running number
+    порядок = ("−", "×", "−", "+")
+    for k in range(шагов - 1):
+        оп = порядок[(k + шаг) % len(порядок)]
+        нашли = False
+        if оп == "−":
+            for c in sorted(v for v in т if 1 <= v < текущее):
+                if (текущее - c) in F.ЧИСЛА[язык] and (текущее - c) >= 2:
+                    цепочка.append(("−", текущее, c, текущее - c)); текущее -= c; нашли = True
+                    break
+        elif оп == "×" and F.умеет(язык, "×"):
+            for d in sorted(v for v in т if v >= 2):
+                if (текущее * d) in F.ЧИСЛА[язык]:
+                    цепочка.append(("×", текущее, d, текущее * d)); текущее *= d; нашли = True
+                    break
+        else:
+            for c in sorted(v for v in т if v >= 1):
+                if (текущее + c) in F.ЧИСЛА[язык]:
+                    цепочка.append(("+", текущее, c, текущее + c)); текущее += c; нашли = True
+                    break
+        if not нашли:
+            # the language cannot say the next number — the chain stops honestly
+            return цепочка if len(цепочка) >= шагов - 1 and len(цепочка) >= 2 else None
+    return цепочка
 
 
 def pass_groups(шаг):
