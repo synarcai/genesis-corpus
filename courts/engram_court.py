@@ -23,6 +23,7 @@ import sys
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
 
+import langsign  # noqa: E402
 ПАКЕТ = json.loads((КОРЕНЬ / "tools" / "langpacks" / "en.json")
                    .read_text(encoding="utf-8"))
 ЕДИНСТВЕННОЕ = dict(ПАКЕТ["noun_forms"])            # one → many
@@ -66,6 +67,11 @@ def форма(n, слово):
 def судить(строка):
     """(судимо, истинно): судимо, если есть счёт объявленного слова."""
     if ДЕСЯТИЧНАЯ_ЗАПЯТАЯ.search(строка):
+        return False, False
+    # СТРОКА ДРУГОГО ЯЗЫКА — НЕ ПОДСУДНА: знак языка по служебным словам
+    # пакетов (tools/langsign.py); «ein Rechteck 2 mal 3 hat die Fläche» —
+    # немецкий, и «3 hat» не английский счёт (геометрия на языках 04.09).
+    if langsign.язык(строка) not in (None, "en"):
         return False, False
     судимо = True_ = False
     for м in ПАРА.finditer(строка):

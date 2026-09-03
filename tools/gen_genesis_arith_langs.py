@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""GENESIS layer: THE VALUE ASKED IN EIGHT LANGUAGES.
+"""GENESIS layer: THE VALUE ASKED IN TEN LANGUAGES.
 
 The owner's word (03.09): every language in surplus. The svod asked the
 value of an expression in English and Russian only («what is 3 + 4?»,
@@ -21,7 +21,10 @@ import paraphrase  # noqa: E402
 from layer import emit_grouped  # noqa: E402
 
 ЦЕЛЬ = "datasets/genesis_arith_langs.txt"
-ЯЗЫКИ = ("de", "fr", "es", "it", "pl", "pt", "nl", "tr")
+# en and ru too (holon 04.09: the English heads «what's 47 + 38?», «what is the
+# result of 47 + 38?», «compute …», «evaluate …» were mute — the paraphrase
+# market wants the frame's words shown): every value form of the packs cycles.
+ЯЗЫКИ = ("de", "fr", "es", "it", "pl", "pt", "nl", "tr", "en", "ru")
 ШИРИНА = 16
 
 
