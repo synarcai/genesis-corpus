@@ -368,6 +368,29 @@
       "actors": []
     },
     {
+      "name": "sequences_langs",
+      "file": "datasets/genesis_sequences_langs.txt",
+      "genre": "THE k-TH TERM OF A PROGRESSION IN EIGHT LANGUAGES (the owner's word: every language in surplus; the sequences world says it in en/ru): «das Glied Nummer 3 der Folge ab 5 mit Schritt 6 ist 17: 3 − 1 = 2, 2 × 6 = 12, 5 + 12 = 17.», «quel est le terme numéro 3 de la progression partant de 5 avec le pas 6 ? …», «¿cuál es el término número 3 de la progresión desde 5 con paso 6? …», «qual è il termine numero 3 della progressione da 5 con passo 6? …», «qual é o termo número 3 da progressão desde 5 com passo 6? …», «wat is term nummer 3 van de rij vanaf 5 met stap 6? …», «ile wynosi wyraz numer 3 ciągu od 5 o kroku 6? …», «5 ile başlayan ve adımı 6 olan dizinin 3 numaralı terimi kaçtır? … terimi: 3 − 1 = 2, 2 × 6 = 12, 5 + 12 = 17.» — statement and question answered by the statement (М-153), the ledger of the sequences world unchanged; the house of progression phrases (tools/seqforms.py) reads its templates through tools/phrases.py, the court turns the same templates into patterns and recomputes",
+      "act": [
+        "recount",
+        "translate"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unsigned_only"
+      ],
+      "size": 41765,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "holes",
       "file": "datasets/genesis_holes.txt",
       "genre": "the HOLE MARKET — one fact frame and every role of it asked in turn (holon's Д-1, REVISION 02.09: a question in the organism is a per-genus surface, not an operation over a bought fact frame; the census of the svod: the number hole carries ~20 000 questions, who/where/when a few dozen): «on monday ann put 5 cups on the shelf.» stands beside «… who put 5 cups on the shelf on monday? ann.», «… how many cups did ann put on the shelf on monday? 5.», «… what did ann put on the shelf on monday? 5 cups.», «… where did ann put 5 cups on monday? on the shelf.», «… when did ann put 5 cups on the shelf? on monday.» and the same frame in ru (кто/сколько/что/куда-где/когда), de (wer/wie viele/was/wohin-wo/wann — verb-second fact «am Montag legte Anna 5 Tassen auf das Regal»), es (¿quién/cuántos-cuántas/qué/dónde/cuándo — the question word agrees with the thing's gender), it (chi/quanti-quante/che cosa/dove/quando) fr (qui/combien de … a-t-elle mises/qu'est-ce que/où/quand — the participle agrees with the fronted object, the pronoun with the actor's gender from the pack), pt (quem/quantos-quantas/o que/onde/quando), nl (wie/hoeveel/wat/waar/wanneer — verb-second like German, nouns lowercase), pl (kto/ile/co/gdzie/kiedy — the past by the actor's gender, the count form few/many by the pack's count_agreement: «5 filiżanek», «3 gruszki») and tr (kim/kaç/ne/nereye-nerede/ne zaman — SOV fact «Ayşe pazartesi rafa 5 fincan koydu.», no plural after a numeral, the definite object of a question in the accusative «5 fincanı kim koydu?», places in the dative or locative) («в понедельник Анна положила 5 чашек на полку. куда положила Анна 5 чашек в понедельник? на полку.»); the question word names the hole's type, the question keeps every other role, the answer is exactly the filler the question removed; five verb frames (put, bought, found, ate, read) with their own places and things; the court parses the fact by the house of holes, recomputes every lawful question with its answer and accepts the line only as one of them; RU count and gender forms by the house of forms; THE ORGANISM ASKS (Д-1, second half — «lets the organism ask about its own open holes»): a fact with one role unfilled, its placeholder in place, and the question of that role after it, produced rather than answered — «on tuesday someone bought 3 apples in the shop. who bought 3 apples in the shop on tuesday?», «… carla bought some apples … how many apples did carla buy …?», «… bought something … what did carla buy …?», «… bought 3 apples somewhere. where …?», «at some time carla bought 3 apples in the shop. when …?» — in all ten languages (кто-то/несколько/что-то/куда-то-где-то/когда-то, jemand/einige/etwas/irgendwohin-irgendwo/irgendwann, alguien/algunos-algunas/algo/en algún lugar/en algún momento, qualcuno/alcuni-alcune/qualcosa/da qualche parte/a un certo punto, quelqu'un/quelques/quelque chose/quelque part/un jour, alguém/alguns-algumas/algo/em algum lugar/em algum momento, iemand/enkele/iets/ergens/ooit, ktoś/kilka/coś/gdzieś/kiedyś, biri/birkaç/bir şey/bir yere-bir yerde/bir gün); the court reads the open role off the placeholder and recomputes the question from the known roles; names are the packs' and agree in gender with the verb",
