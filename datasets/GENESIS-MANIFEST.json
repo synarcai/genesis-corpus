@@ -447,6 +447,29 @@
       "actors": []
     },
     {
+      "name": "physics_langs",
+      "file": "datasets/genesis_physics_langs.txt",
+      "genre": "SPEED AND PRESSURE IN EIGHT LANGUAGES (the owner's word: every language in surplus; the physics worlds say speed = distance ÷ time and pressure = force ÷ area in en/ru): statement and question answered by the statement (М-153) with the unit names in their count forms and the ledger «72 ÷ 8 = 9» — «ein Körper, der 15 Meter in 3 Sekunden zurücklegt, hat die Geschwindigkeit 5 Meter pro Sekunde: 15 ÷ 3 = 5.», «quelle est la pression d'une force de 4 newtons sur 2 mètres carrés ? une force de 4 newtons sur 2 mètres carrés produit une pression de 2 pascals : 4 ÷ 2 = 2.», «¿cuál es la velocidad de un cuerpo que recorre 15 metros en 3 segundos? …», «qual è la pressione di una forza di 4 newton su 2 metri quadrati? …», «qual é a velocidade de um corpo que percorre 15 metros em 3 segundos? …», «wat is de druk van een kracht van 4 newton op 2 vierkante meter? …», «jaka jest prędkość ciała, które przebywa 15 metrów w 3 sekundy? … ma prędkość 5 metrów na sekundę» (niutony/niutonów, paskale/paskali by the pack's count_agreement), «3 saniyede 15 metre yol alan bir cismin hızı kaçtır? …», «21 newton kuvvetin 7 metrekare üzerindeki basıncı: 21 ÷ 7 = 3.»; the house of physics phrases (tools/physforms.py) holds the phrases and the unit forms through tools/phrases.py, the court divides itself",
+      "act": [
+        "recount",
+        "translate"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unsigned_only"
+      ],
+      "size": 61780,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "holes",
       "file": "datasets/genesis_holes.txt",
       "genre": "the HOLE MARKET — one fact frame and every role of it asked in turn (holon's Д-1, REVISION 02.09: a question in the organism is a per-genus surface, not an operation over a bought fact frame; the census of the svod: the number hole carries ~20 000 questions, who/where/when a few dozen): «on monday ann put 5 cups on the shelf.» stands beside «… who put 5 cups on the shelf on monday? ann.», «… how many cups did ann put on the shelf on monday? 5.», «… what did ann put on the shelf on monday? 5 cups.», «… where did ann put 5 cups on monday? on the shelf.», «… when did ann put 5 cups on the shelf? on monday.» and the same frame in ru (кто/сколько/что/куда-где/когда), de (wer/wie viele/was/wohin-wo/wann — verb-second fact «am Montag legte Anna 5 Tassen auf das Regal»), es (¿quién/cuántos-cuántas/qué/dónde/cuándo — the question word agrees with the thing's gender), it (chi/quanti-quante/che cosa/dove/quando) fr (qui/combien de … a-t-elle mises/qu'est-ce que/où/quand — the participle agrees with the fronted object, the pronoun with the actor's gender from the pack), pt (quem/quantos-quantas/o que/onde/quando), nl (wie/hoeveel/wat/waar/wanneer — verb-second like German, nouns lowercase), pl (kto/ile/co/gdzie/kiedy — the past by the actor's gender, the count form few/many by the pack's count_agreement: «5 filiżanek», «3 gruszki») and tr (kim/kaç/ne/nereye-nerede/ne zaman — SOV fact «Ayşe pazartesi rafa 5 fincan koydu.», no plural after a numeral, the definite object of a question in the accusative «5 fincanı kim koydu?», places in the dative or locative) («в понедельник Анна положила 5 чашек на полку. куда положила Анна 5 чашек в понедельник? на полку.»); the question word names the hole's type, the question keeps every other role, the answer is exactly the filler the question removed; five verb frames (put, bought, found, ate, read) with their own places and things; the court parses the fact by the house of holes, recomputes every lawful question with its answer and accepts the line only as one of them; RU count and gender forms by the house of forms; THE ORGANISM ASKS (Д-1, second half — «lets the organism ask about its own open holes»): a fact with one role unfilled, its placeholder in place, and the question of that role after it, produced rather than answered — «on tuesday someone bought 3 apples in the shop. who bought 3 apples in the shop on tuesday?», «… carla bought some apples … how many apples did carla buy …?», «… bought something … what did carla buy …?», «… bought 3 apples somewhere. where …?», «at some time carla bought 3 apples in the shop. when …?» — in all ten languages (кто-то/несколько/что-то/куда-то-где-то/когда-то, jemand/einige/etwas/irgendwohin-irgendwo/irgendwann, alguien/algunos-algunas/algo/en algún lugar/en algún momento, qualcuno/alcuni-alcune/qualcosa/da qualche parte/a un certo punto, quelqu'un/quelques/quelque chose/quelque part/un jour, alguém/alguns-algumas/algo/em algum lugar/em algum momento, iemand/enkele/iets/ergens/ooit, ktoś/kilka/coś/gdzieś/kiedyś, biri/birkaç/bir şey/bir yere-bir yerde/bir gün); the court reads the open role off the placeholder and recomputes the question from the known roles; names are the packs' and agree in gender with the verb",

@@ -85,7 +85,7 @@ from rugram import ПО_ФОРМЕ  # noqa: E402
          # ДОМА ФРАЗ НА ЯЗЫКАХ (04.09): каждый суд пересчитывает свой леджер
          # сам (мост центов, площадь, отношение единиц, среднее и процент,
          # цикл недели, член прогрессии, разность и отношение).
-         "money_langs", "geometry_langs", "units_langs", "stats_langs", "calendar_langs", "sequences_langs", "compare_langs", "share_langs",
+         "money_langs", "geometry_langs", "units_langs", "stats_langs", "calendar_langs", "sequences_langs", "compare_langs", "share_langs", "physics_langs",
          "linalg", "statistics", "program", "compsci", "unit",
          "notation", "formula", "physlaw", "physics", "calendar",
          "speech", "case", "valence", "cyber", "machine", "proof"}),
