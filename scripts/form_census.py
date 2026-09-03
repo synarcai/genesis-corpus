@@ -109,12 +109,22 @@ def заполнители_домов():
             for y in x.values():
                 _добавить(y)
     try:
-        import holes, calforms, cmpforms, unitforms, physforms, shareforms, moneyforms, searchforms, moneystory
+        import holes, calforms, cmpforms, unitforms, physforms, shareforms, moneyforms, searchforms, moneystory, fracforms, relstory
     except Exception:
         return вон
     _добавить(searchforms.ЧАСТИ)
     for я in moneystory.ЯЗЫКИ.values():
-        _добавить(я["вещи"])
+        _добавить(я["вещи"]); _добавить(я.get("товары")); _добавить(я.get("цели"))
+    # THE WORD OF THE FRACTION IS A HOLE OF ITS OWN GENUS (holon 03.09): «two
+    # thirds of #» and «one quarter of #» are ONE frame, or the census counts
+    # forty-five frames where the organism buys one
+    for язык in fracforms.ЯЗЫКИ:
+        for n, d in fracforms.ДОЛИ:
+            _добавить(fracforms.доля_слово(язык, n, d))
+    # …and so are the words of multiplicity and the pairs of the relation pages
+    for я in relstory.ЯЗЫКИ.values():
+        _добавить(я["кратно"]); _добавить(я["доля"]); _добавить(я.get("удвоенное")); _добавить(я["знаки"])
+        _добавить(я["пары"]); _добавить(я["вещи"])
     _добавить(holes.ДНИ)
     for язык, рамки in holes.РАМКИ.items():
         for р in рамки:

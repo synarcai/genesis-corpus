@@ -76,8 +76,8 @@ for _и, _м in enumerate(МЕСЯЦЫ_RU):
 
 def леджер_круга(i, k, язык):
     """THE LEDGER OF THE CYCLE (holon 03.09, ONE-CARRIER — the head of the
-    answer stays, the chain after the colon is its witness; NOT YET WRITTEN in
-    en/ru — the market of cycles reads it first, see дни()): the day numbers
+    answer stays, the chain after the colon is its witness — wave 70 cf96e016
+    reads the head before the colon): the day numbers
     of the week are declared («monday is day number 1 of the week»), so the
     step is arithmetic on them — «2 + 3 = 5, day 5 is friday», and over the
     edge «6 + 3 = 9, 9 − 7 = 2, day 2 is tuesday»."""
@@ -97,14 +97,13 @@ def дни(шаг):
             j = (i + k) % 7
             # ФОРМА ИДЁТ ЗА ЧИСЛОМ И ПО-АНГЛИЙСКИ: «1 days after» —
             # ошибка, которую суд согласования поймал в тот же прогон.
-            # THE LEDGER OF THE CYCLE (леджер_круга) WAITS FOR THE MARKET OF
-            # CYCLES (holon 03.09: the wheel is read from the whole telling and
-            # stumbles on the numbers of the chain — his road first; the eight
-            # languages of calendar_langs already carry it)
+            # THE LEDGER OF THE CYCLE (holon's word 03.09, wave 70 cf96e016
+            # «the show is the head before the colon»: the market of cycles
+            # reads the head, the chain after the colon is its witness)
             вон.append(f"{k} {'day' if k == 1 else 'days'} after "
-                       f"{ДНИ_EN[i]} comes {ДНИ_EN[j]}.")
+                       f"{ДНИ_EN[i]} comes {ДНИ_EN[j]}: {леджер_круга(i, k, 'en')}.")
             вон.append(f"через {k} {units.ру_форма(ДЕНЬ_СЧЁТ, k)} после "
-                       f"{ДНИ_RU_РОД[i]} наступает {ДНИ_RU[j]}.")
+                       f"{ДНИ_RU_РОД[i]} наступает {ДНИ_RU[j]}: {леджер_круга(i, k, 'ru')}.")
     return вон
 
 
@@ -146,11 +145,11 @@ def вопросы(шаг):
         for k in (2, 3, 4, 5):
             j = (i + k) % 7
             вон.append(f"what day is {k} days after {ДНИ_EN[i]}? "
-                       f"{k} days after {ДНИ_EN[i]} comes {ДНИ_EN[j]}.")
+                       f"{k} days after {ДНИ_EN[i]} comes {ДНИ_EN[j]}: {леджер_круга(i, k, 'en')}.")
             ф = units.ру_форма(ДЕНЬ_СЧЁТ, k)
             вон.append(f"какой день через {k} {ф} после "
                        f"{ДНИ_RU_РОД[i]}? через {k} {ф} после "
-                       f"{ДНИ_RU_РОД[i]} — {ДНИ_RU[j]}.")
+                       f"{ДНИ_RU_РОД[i]} — {ДНИ_RU[j]}: {леджер_круга(i, k, 'ru')}.")
     for i in range(12):
         сл, пр = (i + 1) % 12, (i - 1) % 12
         вон.append(f"what month comes after {МЕСЯЦЫ_EN[i]}? after "
