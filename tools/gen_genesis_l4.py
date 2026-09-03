@@ -65,10 +65,20 @@ def ru_lines(rng):
         out.append(f"{s} содержит {o}.")
     for (s, o), _ in FACTS["part"]:
         out.append(f"{s} — часть {o}.")
-    # question forms shown sparsely (P-1): the chamber genus
+    # ВОПРОС У КАЖДОГО РОДА СВЯЗКИ, А НЕ У ОДНОГО (прибор широты вопроса
+    # 03.09: род, говорящий одними утверждениями, учит отвечать молчанием —
+    # спрашивалось только определение, а причина, содержание и часть молчали).
+    # Вопрос назван словом своего рода: «что вызывает», «что содержит», «часть
+    # чего», — и ответ повторяет утверждение целиком, как велит закон пары.
     qs = rng.sample(FACTS["def"], 4)
     for (s, o), _ in qs:
         out.append(f"что такое {s}? {s} — это {o}.")
+    for (s, o), _ in rng.sample(FACTS["cause"], 4):
+        out.append(f"что вызывает {o}? {s} вызывает {o}.")
+    for (s, o), _ in rng.sample(FACTS["contain"], 4):
+        out.append(f"что содержит {s}? {s} содержит {o}.")
+    for (s, o), _ in rng.sample(FACTS["part"], 4):
+        out.append(f"часть чего {s}? {s} — часть {o}.")
     return out
 
 
@@ -85,6 +95,12 @@ def en_lines(rng):
     qs = rng.sample(FACTS["def"], 4)
     for _, (s, o) in qs:
         out.append(f"what is {s}? {s} is {o}.")
+    for _, (s, o) in rng.sample(FACTS["cause"], 4):
+        out.append(f"what causes {o}? {s} causes {o}.")
+    for _, (s, o) in rng.sample(FACTS["contain"], 4):
+        out.append(f"what does {s} contain? {s} contains {o}.")
+    for _, (s, o) in rng.sample(FACTS["part"], 4):
+        out.append(f"what is {s} part of? {s} is part of {o}.")
     return out
 
 
