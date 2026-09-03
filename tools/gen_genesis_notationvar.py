@@ -63,33 +63,43 @@ from layer import PASSES, emit  # noqa: E402
               if abs(а - б) <= 3)
 
 
+def буква(i):
+    """Буква переменной ходит по показам: начертание есть свойство СТЕПЕНИ,
+    а не буквы «икс» (03.09, тот же закон, каким живут универсалии)."""
+    return НВ.БУКВЫ[i % len(НВ.БУКВЫ)][0]
+
+
 def показы():
     вон = []
-    for c in КВАДРАТЫ:
-        ascii_ = f"x^2 - {c} = 0"
+    for i, c in enumerate(КВАДРАТЫ):
+        б = буква(i)
+        ascii_ = f"{б}^2 - {c} = 0"
         вон.append(f"«{ascii_}» и «{НВ.двойник(ascii_)}» суть одна запись.")
         вон.append(f"«{ascii_}» and «{НВ.двойник(ascii_)}» are one record.")
         вон.append(f"как ещё пишется «{ascii_}»? — «{НВ.двойник(ascii_)}».")
         вон.append(f"how else is «{ascii_}» written? — "
                    f"«{НВ.двойник(ascii_)}».")
-    for зн, b, c in ТРЁХЧЛЕНЫ:
-        b_часть = f" {зн} {b} x" if b else ""
+    for i, (зн, b, c) in enumerate(ТРЁХЧЛЕНЫ):
+        б = буква(i)
+        b_часть = f" {зн} {b} {б}" if b else ""
         c_часть = f" + {c}" if c else ""
-        ascii_ = f"x^2{b_часть}{c_часть} = 0"
+        ascii_ = f"{б}^2{b_часть}{c_часть} = 0"
         дв = НВ.двойник(ascii_)
         if дв is None:
             continue
         вон.append(f"«{ascii_}» и «{дв}» суть одна запись.")
         вон.append(f"как ещё пишется «{ascii_}»? — «{дв}».")
-    for зн, c in ЕДИНИЧНЫЕ:
-        ascii_ = f"x^2 {зн} x + {c} = 0"
+    for i, (зн, c) in enumerate(ЕДИНИЧНЫЕ):
+        б = буква(i)
+        ascii_ = f"{б}^2 {зн} {б} + {c} = 0"
         дв = НВ.двойник(ascii_)
         if дв:
             вон.append(f"«{ascii_}» и «{дв}» суть одна запись.")
             вон.append(f"как ещё пишется «{ascii_}»? — «{дв}».")
-    for a, зн, b, c in СТАРШИЙ:
+    for i, (a, зн, b, c) in enumerate(СТАРШИЙ):
+        б = буква(i)
         c_часть = f" + {c}" if c else ""
-        ascii_ = f"{a} x^2 {зн} {b} x{c_часть} = 0"
+        ascii_ = f"{a} {б}^2 {зн} {b} {б}{c_часть} = 0"
         дв = НВ.двойник(ascii_)
         if дв:
             вон.append(f"«{ascii_}» и «{дв}» суть одна запись.")
