@@ -54,20 +54,20 @@ def язык_группа(шаг, язык):
         p, N = _процент(j + i)
         вон.append(F.страница(язык, "проц", p=p, N=N, вопрос=(i + шаг) % 2 == 0))
     j += 6
-    # the complement («three quarters have; 20 do not»): four per pass
-    for i in range(4):
+    # the complement («three quarters have; 20 do not»): five per pass
+    for i in range(5):
         n, d = _доля(j + i * 3)
         if d - n < 1:
             n, d = 1, d
         вон.append(F.страница(язык, "дополн", n=n, d=d, q=2 + (шаг * 7 + i * 5 + j) % 18, вещь=(шаг + i) % 5))
     j += 4
-    # the number from its share: three per pass
-    for i in range(3):
+    # the number from its share: five per pass (mass 20+ buys depth-3 chains)
+    for i in range(5):
         n, d = _доля(j + i * 5)
         вон.append(F.страница(язык, "число", n=n, d=d, q=2 + (шаг * 3 + i * 11 + j) % 20))
     j += 3
-    # the number from its percent: three per pass
-    for i in range(3):
+    # the number from its percent: five per pass
+    for i in range(5):
         p, N = _процент(j + i * 4)
         вон.append(F.страница(язык, "проц_обр", p=p, N=N))
     return вон

@@ -18,9 +18,10 @@ comes as NEW PAGES of the same genera, in en/ru/de:
 The house of action pages (tools/actionpages.py) holds the templates; the
 court reads them back and regenerates the page letter by letter.
 
-MASS FROM THE RULE (М-148): fifteen pages per language per pass — three per
-genus — on numbers that walk with strides coprime with the tables, so every
-genus has ≥ 15 pages per language over the five passes.
+MASS FROM THE RULE (М-148, and the measured price of mass 03.09: depth-2
+chains are bought from mass 9, depth-3 from 20): twenty-five pages per
+language per pass — five per genus — on numbers that walk with strides coprime with the tables, so every
+genus has ≥ 20 pages per language over the five passes.
 """
 import pathlib
 import sys
@@ -47,32 +48,32 @@ def язык_группа(шаг, язык):
     кратности = sorted(F.ЯЗЫКИ[язык]["кратные"])
     вон = []
     j = шаг * 17
-    for i in range(3):
+    for i in range(5):
         X = лица[(шаг * 3 + i * 5) % len(лица)][0]
         n = 6 + (шаг * 7 + i * 11 + j) % 90
         k = 1 + (шаг * 5 + i * 3 + j) % (n - 2)
         _добавить(вон, язык, "остаток", X=X, Т=(шаг + i) % вещей, n=n, k=k)
         j += 1
-    for i in range(3):
+    for i in range(5):
         X = лица[(шаг * 5 + i * 3 + 1) % len(лица)][0]
         n = 4 + (шаг * 11 + i * 7 + j) % 80
         k = 1 + (шаг * 3 + i * 5 + j) % 20
         _добавить(вон, язык, "прибавка", X=X, Т=(шаг + i + 2) % вещей, n=n, k=k)
         j += 1
-    for i in range(3):
+    for i in range(5):
         X = лица[(шаг * 7 + i * 5 + 2) % len(лица)][0]
         чс, зн = F.ДОЛИ[(шаг * 3 + i) % len(F.ДОЛИ)]
         # the whole is a multiple of the denominator: every step stays whole
         n = зн * (3 + (шаг * 5 + i * 7 + j) % 24)
         _добавить(вон, язык, "доля", X=X, Т=(шаг + i + 4) % вещей, n=n, доля=(чс, зн))
         j += 1
-    for i in range(3):
+    for i in range(5):
         a = (шаг * 3 + i * 7 + 3) % len(лица); b = (a + 1 + (шаг + i) % (len(лица) - 1)) % len(лица)
         n = 2 + (шаг * 7 + i * 5 + j) % 40
         m = 2 + (шаг * 5 + i * 11 + j) % 40
         _добавить(вон, язык, "вместе", X=лица[a][0], Y=лица[b][0], Т=(шаг + i + 1) % вещей, n=n, m=m)
         j += 1
-    for i in range(3):
+    for i in range(5):
         a = (шаг * 5 + i * 3 + 5) % len(лица); b = (a + 2 + (шаг + i) % (len(лица) - 2)) % len(лица)
         n = 2 + (шаг * 11 + i * 7 + j) % 30
         _добавить(вон, язык, "кратное", X=лица[a][0], Y=лица[b][0], Т=(шаг + i + 3) % вещей,
