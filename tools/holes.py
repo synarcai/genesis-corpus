@@ -158,7 +158,7 @@ import rugram  # noqa: E402
         dict(м="zjadł", ж="zjadła", места=("w kuchni", "w szkole", "w ogrodzie"),
              вещи=(("jabłka", "jabłek"), ("gruszki", "gruszek"), ("ciastka", "ciastek"), ("śliwki", "śliwek"))),
         dict(м="przeczytał", ж="przeczytała", места=("w bibliotece", "w szkole", "w domu"),
-             вещи=(("książki", "książek"), ("opowiadania", "opowiadań"), ("gazety", "gazet"))),
+             вещи=(("książki", "książek"), ("opowiadania", "opowiadań"), ("listy", "listów"))),
     ),
     "tr": (  # Turkish: SOV fact «Ayşe pazartesi rafa 5 fincan koydu.», no plural after a numeral,
              # places in the dative (whither) or locative, things as (bare, accusative) for the
@@ -185,6 +185,93 @@ def _форма_счёта(язык, n):
         if "mod" not in п or (n % п["mod"]) in п["in"]:
             return п["form"]
     return "many"
+
+
+# THE OPEN ROLE — the organism asks about its own open hole (Д-1, second
+# half: «lets the organism ASK about its own open holes»). A fact whose one
+# role is unfilled is written with the language's placeholder for that role
+# (someone / some / something / somewhere / at some time), and what follows
+# is the question of that role — the same question the hole market answers,
+# now produced, not answered. The «whither» placeholder pairs with the
+# «whither» frame (put), the «where» one with the rest; the count
+# placeholder agrees in gender where the language asks it (algunos/algunas).
+ПРОБЕЛЫ = {
+    "en": dict(кто="someone", сколько="some", что="something", куда=("somewhere", "somewhere"), когда="at some time"),
+    "ru": dict(кто="кто-то", сколько="несколько", что="что-то", куда=("куда-то", "где-то"), когда="когда-то"),
+    "de": dict(кто="jemand", сколько="einige", что="etwas", куда=("irgendwohin", "irgendwo"), когда="irgendwann"),
+    "es": dict(кто="alguien", сколько=("algunos", "algunas"), что="algo", куда=("en algún lugar", "en algún lugar"), когда="en algún momento"),
+    "it": dict(кто="qualcuno", сколько=("alcuni", "alcune"), что="qualcosa", куда=("da qualche parte", "da qualche parte"), когда="a un certo punto"),
+    "fr": dict(кто="quelqu'un", сколько="quelques", что="quelque chose", куда=("quelque part", "quelque part"), когда="un jour"),
+    "pt": dict(кто="alguém", сколько=("alguns", "algumas"), что="algo", куда=("em algum lugar", "em algum lugar"), когда="em algum momento"),
+    "nl": dict(кто="iemand", сколько="enkele", что="iets", куда=("ergens", "ergens"), когда="ooit"),
+    "pl": dict(кто="ktoś", сколько="kilka", что="coś", куда=("gdzieś", "gdzieś"), когда="kiedyś"),
+    "tr": dict(кто="biri", сколько="birkaç", что="bir şey", куда=("bir yere", "bir yerde"), когда="bir gün"),
+}
+РОЛИ = ("кто", "сколько", "что", "куда", "когда")
+
+
+def _к_месту(язык, р):
+    """True for the frame whose place is a goal (put): куда / wohin / nereye."""
+    return р.get("куда") in ("куда", "wohin", "nereye") or (язык not in ("ru", "de", "tr") and р is РАМКИ[язык][0])
+
+
+def _много(язык, вещь):
+    """The thing beside a count placeholder — the plural / many form."""
+    if язык == "en":
+        return вещь[1]
+    if язык == "ru":
+        return rugram.форма(вещь, 5)
+    if язык in ("de", "nl"):
+        return вещь
+    if язык == "pl":
+        return вещь[1]
+    return вещь[0]
+
+
+def _глагол(язык, р, род):
+    if язык == "en":
+        return р["прош"]
+    if язык in ("ru", "pl"):
+        return р["ж"] if род == "f" else р["м"]
+    return р["гл"]
+
+
+def _сборка(язык, день, имя, гл, слот, место):
+    """The word order of the fact per language."""
+    if язык in ("de", "nl"):
+        return f"{день} {гл} {имя} {слот} {место}."
+    if язык == "tr":
+        return f"{имя} {день} {место} {слот} {гл}."
+    return f"{день} {имя} {гл} {слот} {место}."
+
+
+def открытый_факт(язык, роль, день, имя, род, k, n, вещь, место):
+    """The fact with the role `роль` (0..4) unfilled — its placeholder in place."""
+    р, пр = РАМКИ[язык][k], ПРОБЕЛЫ[язык]
+    if роль == 0:
+        имя, род = пр["кто"], "m"
+    if роль == 4:
+        день = пр["когда"]
+    if роль == 3:
+        место = пр["куда"][0 if _к_месту(язык, р) else 1]
+    if роль == 1:
+        ск = пр["сколько"]
+        if isinstance(ск, tuple):
+            ск = ск[1 if вещь[1] == "f" else 0]
+        слот = f"{ск} {_много(язык, вещь)}"
+    elif роль == 2:
+        слот = пр["что"]
+    else:
+        слот = f"{n} {_вещь(язык, вещь, n)}"
+    return _сборка(язык, день, имя, _глагол(язык, р, род), слот, место)
+
+
+def запросы(язык, день, имя, род, k, n, вещь, место):
+    """(open fact, its question) for every role — the question is the one
+    the hole market would answer, and it never names the open filler."""
+    вопросы = дыры(язык, день, имя, род, k, n, вещь, место)
+    return tuple((открытый_факт(язык, роль, день, имя, род, k, n, вещь, место), вопросы[роль][0])
+                 for роль in range(5))
 
 
 def _имена():
@@ -219,18 +306,9 @@ def _вещь(язык, вещь, n):
 
 
 def факт(язык, день, имя, род, k, n, вещь, место):
-    """The frame with no hole; `род` is the actor's gender (ru, fr)."""
+    """The frame with no hole; `род` is the actor's gender (ru, pl, fr)."""
     р = РАМКИ[язык][k]
-    в = _вещь(язык, вещь, n)
-    if язык == "en":
-        return f"{день} {имя} {р['прош']} {n} {в} {место}."
-    if язык in ("ru", "pl"):
-        return f"{день} {имя} {р['ж'] if род == 'f' else р['м']} {n} {в} {место}."
-    if язык in ("de", "nl"):
-        return f"{день} {р['гл']} {имя} {n} {в} {место}."
-    if язык == "tr":
-        return f"{имя} {день} {место} {n} {в} {р['гл']}."
-    return f"{день} {имя} {р['гл']} {n} {в} {место}."
+    return _сборка(язык, день, имя, _глагол(язык, р, род), f"{n} {_вещь(язык, вещь, n)}", место)
 
 
 def дыры(язык, день, имя, род, k, n, вещь, место):
@@ -368,6 +446,94 @@ for _я in ("es", "it", "fr", "pt", "pl"):
 СТРОКА = re.compile(r"^(?P<факт>[^.?]+\.)(?: (?P<вопрос>[^?]+?) ?\? (?P<ответ>[^.?]+)\.)?$")
 
 
+def _открытый_образец(язык):
+    """One regex per language: the fact with ANY one role replaced by its
+    placeholder — the open role is read off which alternative matched."""
+    пр = ПРОБЕЛЫ[язык]
+    дни = _alt(ДНИ[язык]) + "|" + re.escape(пр["когда"])
+    места = _alt(м for р in РАМКИ[язык] for м in р["места"]) + "|" + _alt(пр["куда"])
+    глаголы = _alt(_глаголы(язык))
+    ск = _alt(пр["сколько"] if isinstance(пр["сколько"], tuple) else (пр["сколько"],))
+    if язык == "en":
+        имя, слово = "[a-z]+", "[a-z]+"
+    elif язык == "ru":
+        имя, слово = "[А-ЯЁ][а-яё]+", "[а-яё]+"
+    elif язык == "de":
+        имя, слово = _ЛАТ, _ЛАТ
+    else:
+        имя, слово = _ЛАТ, _ЛАТ_СЛОВО
+    имя = f"{имя}|{re.escape(пр['кто'])}"
+    слот = rf"(?:(?P<n>\d+) (?P<вещь>{слово})|(?P<ск>{ск}) (?P<вещьм>{слово})|{re.escape(пр['что'])})"
+    if язык in ("de", "nl"):
+        return re.compile(rf"^(?P<день>{дни}) (?P<гл>{глаголы}) (?P<имя>{имя}) {слот} (?P<место>{места})\.$")
+    if язык == "tr":
+        return re.compile(rf"^(?P<имя>{имя}) (?P<день>{дни}) (?P<место>{места}) {слот} (?P<гл>{глаголы})\.$")
+    return re.compile(rf"^(?P<день>{дни}) (?P<имя>{имя}) (?P<гл>{глаголы}) {слот} (?P<место>{места})\.$")
+
+
+ОТКРЫТЫЙ = {язык: _открытый_образец(язык) for язык in ЯЗЫКИ}
+ЗАПРОС = re.compile(r"^(?P<факт>[^.?]+\.) (?P<вопрос>[^?]+?) ?\?$")
+
+
+def разобрать_запрос(строка):
+    """(язык, roles, open role, question) of a line «open fact. question?»,
+    None when it is not one; roles None when a filler is not the frame's."""
+    м = ЗАПРОС.match(строка)
+    if not м:
+        return None
+    for язык, образец in ОТКРЫТЫЙ.items():
+        ф = образец.match(м["факт"])
+        if not ф:
+            continue
+        пр = ПРОБЕЛЫ[язык]
+        k, р = _рамка(язык, ф["гл"])
+        if р is None:
+            return None
+        открытые = []
+        if ф["имя"] == пр["кто"]:
+            открытые.append(0)
+        if ф["день"] == пр["когда"]:
+            открытые.append(4)
+        if ф["место"] in пр["куда"]:
+            открытые.append(3)
+        if ф["n"] is None:
+            открытые.append(1 if ф["вещьм"] else 2)
+        if len(открытые) != 1:
+            return язык, None, None, м["вопрос"]
+        роль = открытые[0]
+        # the known fillers must be the frame's own
+        n = int(ф["n"]) if ф["n"] else 5
+        if ф["n"]:
+            вещь = _та_вещь(язык, р, ф["вещь"], n)
+        elif ф["вещьм"]:
+            вещь = next((в for в in р["вещи"] if _много(язык, в) == ф["вещьм"]), None)
+            ск = пр["сколько"]
+            if вещь is not None and isinstance(ск, tuple) and ф["ск"] != ск[1 if вещь[1] == "f" else 0]:
+                вещь = None
+        else:
+            вещь = р["вещи"][0]
+        if роль == 3:
+            место = р["места"][0]
+            if ф["место"] != пр["куда"][0 if _к_месту(язык, р) else 1]:
+                место = None
+        else:
+            место = ф["место"] if ф["место"] in р["места"] else None
+        if роль == 0:
+            имя, род = ИМЕНА[язык][0][0], "m"
+            if язык in ("ru", "pl") and ф["гл"] != р["м"]:
+                имя = None
+        else:
+            имя = ф["имя"]
+            род = РОД[язык].get(имя)
+            if род is None or (язык in ("ru", "pl") and ф["гл"] != (р["ж"] if род == "f" else р["м"])):
+                имя = None
+        день = ф["день"] if роль != 4 else ДНИ[язык][0]
+        if вещь is None or место is None or имя is None:
+            return язык, None, роль, м["вопрос"]
+        return язык, (день, имя, род, k, n, вещь, место), роль, м["вопрос"]
+    return None
+
+
 def _рамка(язык, глагол):
     for k, р in enumerate(РАМКИ[язык]):
         формы = (р["прош"],) if язык == "en" else (р["м"], р["ж"]) if язык in ("ru", "pl") else (р["гл"],)
@@ -401,12 +567,11 @@ def разобрать(строка):
             return None
         вещь = _та_вещь(язык, р, ф["вещь"], n)
         место = ф["место"] if ф["место"] in р["места"] else None
-        if язык in ("ru", "pl"):
-            род = "f" if ф["гл"] == р["ж"] else "m"
-        elif язык == "fr":
-            род = РОД["fr"].get(ф["имя"])
-        else:
-            род = "m"
+        # THE ACTOR IS A NAME OF THE PACK, and where the verb carries gender
+        # the two agree («Анна положил» is no frame of this house).
+        род = РОД[язык].get(ф["имя"])
+        if язык in ("ru", "pl") and род is not None and ф["гл"] != (р["ж"] if род == "f" else р["м"]):
+            род = None
         if вещь is None or место is None or род is None:
             return язык, None, м["вопрос"], м["ответ"]
         return язык, (ф["день"], ф["имя"], род, k, n, вещь, место), м["вопрос"], м["ответ"]
@@ -416,6 +581,12 @@ def разобрать(строка):
 def судить(строка):
     """(judged, true): a bare frame is true by its forms; a question is true
     iff it and its answer are one lawful hole of the fact."""
+    з = разобрать_запрос(строка)
+    if з is not None:
+        язык, роли, роль, вопрос = з
+        if роли is None:
+            return (True, False)
+        return (True, вопрос.rstrip(" ?") == запросы(язык, *роли)[роль][1].rstrip(" ?"))
     ч = разобрать(строка)
     if ч is None:
         return (False, False)

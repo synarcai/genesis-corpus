@@ -53,8 +53,23 @@ def язык_группа(шаг, язык):
     return вон
 
 
+ШИРИНА_ЗАПРОСОВ = 10   # 5 passes × 10 instances × 5 roles → 10 per (verb, role, language)
+
+
+def запросы_группа(шаг, язык):
+    """THE ORGANISM ASKS: a fact with one role unfilled — its placeholder in
+    place — and the question of that role after it, produced, not answered."""
+    вон = []
+    for i in range(ШИРИНА_ЗАПРОСОВ):
+        роли = _роли(шаг * 3 + 1, i + 5, язык)
+        for факт, вопрос in holes.запросы(язык, *роли):
+            вон.append(f"{факт} {вопрос}")
+    return вон
+
+
 def pass_groups(шаг):
-    return [язык_группа(шаг, язык) for язык in holes.ЯЗЫКИ]
+    return ([язык_группа(шаг, язык) for язык in holes.ЯЗЫКИ]
+            + [запросы_группа(шаг, язык) for язык in holes.ЯЗЫКИ])
 
 
 def main():
