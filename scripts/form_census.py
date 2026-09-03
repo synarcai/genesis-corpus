@@ -49,9 +49,13 @@ LAW2 = 9
 
 
 def имена():
+    """Every pack's declared names — the actors of every language (04.09:
+    the houses of phrases name actors in ten languages)."""
     вон = set()
-    for яз in ("en", "ru"):
-        п = json.loads((КОРЕНЬ / "tools" / "langpacks" / f"{яз}.json").read_text(encoding="utf-8"))
+    for путь in sorted((КОРЕНЬ / "tools" / "langpacks").glob("*.json")):
+        п = json.loads(путь.read_text(encoding="utf-8"))
+        if not п.get("person_names"):
+            continue
         for и in п.get("person_names", ()):
             вон.add(и); вон.add(и.capitalize())
             for ф in п.get("person_forms", {}).get(и, {}).values():
@@ -86,8 +90,44 @@ def вещи():
     return {в for в in вон if в and " " not in в and len(в) > 1}
 
 
-ВЕЩИ = вещи()
-ВЕЩЬ = re.compile(r"\b(" + "|".join(sorted(map(re.escape, ВЕЩИ), key=len, reverse=True)) + r")\b") if ВЕЩИ else None
+def заполнители_домов():
+    """THE DECLARED FILLERS OF THE HOUSES OF PHRASES — days, places, things,
+    units, share names, multiplier words — are holes of the frame as much as
+    a number is (М-159): a house fills them, a court reads them back from
+    the table. Without this the census counted «on monday ann put 5 cups on
+    the shelf» and «on tuesday ann put 5 pens in the box» as two frames and
+    called the hole market unsaturated (holes: 5 939 frames in 6 100 lines)."""
+    вон = set()
+    def _добавить(x):
+        if isinstance(x, str):
+            if x and x not in ("m", "f", "n"):
+                вон.add(x)
+        elif isinstance(x, (list, tuple)):
+            for y in x:
+                _добавить(y)
+        elif isinstance(x, dict):
+            for y in x.values():
+                _добавить(y)
+    try:
+        import holes, calforms, cmpforms, unitforms, physforms, shareforms, moneyforms
+    except Exception:
+        return вон
+    _добавить(holes.ДНИ)
+    for язык, рамки in holes.РАМКИ.items():
+        for р in рамки:
+            _добавить(р.get("места")); _добавить(р.get("вещи"))
+    _добавить(holes.ПРОБЕЛЫ)
+    for я in calforms.ЯЗЫКИ.values():
+        _добавить(я.get("дни")); _добавить(я.get("косв"))
+    _добавить(cmpforms.ВЕЩИ); _добавить(cmpforms.КРАТНО)
+    _добавить(unitforms.ЕДИНИЦЫ); _добавить(physforms.ЕДИНИЦЫ); _добавить(shareforms.ИМЕНА)
+    for я in moneyforms.ЯЗЫКИ.values():
+        _добавить(я.get("б")); _добавить(я.get("м"))
+    return {в for в in вон if len(в) > 1}
+
+
+ВЕЩИ = вещи() | заполнители_домов()
+ВЕЩЬ = re.compile(r"(?<![^\W\d_])(" + "|".join(sorted(map(re.escape, ВЕЩИ), key=len, reverse=True)) + r")(?![^\W\d_])") if ВЕЩИ else None
 
 
 def род(скелет_):
@@ -175,15 +215,20 @@ def main():
     по_миру = []
     for имя, с in миры:
         свои = set(с)
-        по_миру.append((имя, len(с), len(свои), sum(1 for ск in свои if масса[ск] >= LAW2)))
+        роды = {род(ск) for ск in свои}
+        по_миру.append((имя, len(с), len(свои), sum(1 for ск in свои if масса[ск] >= LAW2),
+                        len(роды), sum(1 for р in роды if масса_р[р] >= LAW2)))
     по_миру.sort(key=lambda r: -1000 * r[2] / max(1, r[1]))
     строки.append("")
-    строки.append("## Миры по новизне форм (рамок на тысячу строк; рамок с массой ≥ 9)")
-    for имя, n, р, к in по_миру[:15]:
-        строки.append(f"  {имя:24} строк {n:6} рамок {р:6} ({1000 * р / max(1, n):6.1f}/1000) купимых {к:5}")
+    # ОБЕ СТУПЕНИ: рамка (числа и имена — дыры) и род (и вещи, места, дни,
+    # единицы — дыры по домам); мир дыр на десяти языках есть 5 855 рамок и
+    # несколько сотен родов — новизна рамок там лексическая, не формальная.
+    строки.append("## Миры по новизне форм (рамок на тысячу строк; рамок с массой ≥ 9; родов и родов с массой ≥ 9)")
+    for имя, n, р, к, рд, кр in по_миру[:15]:
+        строки.append(f"  {имя:24} строк {n:6} рамок {р:6} ({1000 * р / max(1, n):6.1f}/1000) купимых {к:5} | родов {рд:5} купимых {кр:5}")
     строки.append("  …")
-    for имя, n, р, к in по_миру[-10:]:
-        строки.append(f"  {имя:24} строк {n:6} рамок {р:6} ({1000 * р / max(1, n):6.1f}/1000) купимых {к:5}")
+    for имя, n, р, к, рд, кр in по_миру[-10:]:
+        строки.append(f"  {имя:24} строк {n:6} рамок {р:6} ({1000 * р / max(1, n):6.1f}/1000) купимых {к:5} | родов {рд:5} купимых {кр:5}")
     # ИЗБЫТОК МАССЫ ПО МИРАМ: строки сверх девяти на рамку — кандидаты на
     # сокращение (оценка сверху); мир с большим избытком учит весом, не формой.
     строки.append("")
