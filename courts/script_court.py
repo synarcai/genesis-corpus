@@ -96,7 +96,9 @@ class Слой:
                     self.объявление = None
 
 
-ЗАДАНИЕ_ВИД = re.compile(r"^([^\W\d_]+) ([\d\s+\-*/×÷^√().,\u2212\u22c5]+[\d)])\. \S")
+# …a TASK carries an operation («compute 7 + 8.»); a word before a bare number
+# («детей 54.», «pupils 30.» — a fact of the relation pages, 03.09) is no task
+ЗАДАНИЕ_ВИД = re.compile(r"^([^\W\d_]+) ((?=[^.]*[+\-*/×÷^√\u2212\u22c5])[\d\s+\-*/×÷^√().,\u2212\u22c5]+[\d)])\. \S")
 
 
 def судить(строка, слой=None):
