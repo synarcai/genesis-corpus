@@ -14,14 +14,39 @@ question mark followed by an answer) into three kinds:
     «≤ / < / >» chain, a verbal step of the pack's verbal mathematics
     («6 times 4 is 24», «плюс … равно»), or a witness clause after a colon
     («97 is prime; its divisors are 1 and 97»);
-  · VALUE — the answer is a number (or numbers) and nothing else;
+  · VALUE — the answer is a number COMPUTED from the question's numbers and
+    nothing else: the derivation is owed and missing;
+  · READ-OFF — the answer is a number READ OFF the question: the question
+    carries ONE number and the answer repeats it («the trip takes 3 days.
+    how long does the trip take? 3 days.»). Nothing was computed, so no
+    ledger is owed and none can honestly be written;
+  · UNSUPPORTED — the question carries NO number at all («how many balls
+    does mary have left? 6 balls left.»). The line alone shows neither the
+    inputs nor the derivation, and the instrument reads lines: it cannot
+    tell whether the genus explains itself on another surface. Naming this
+    kind apart is the same law as the read-off: an instrument may not call
+    a debt what it did not verify — nor deny one;
   · WORD — the answer is a word, a verdict, a name, a list (no number).
-A world is «without a ledger» when its answered lines are computed (VALUE)
-and none carries a ledger; a world of WORD answers is a market of verdicts
-or maps, not of computation, and is listed apart.
+A world is «without a ledger» when its answered lines are COMPUTED and none
+carries a ledger; a world of WORD answers is a market of verdicts or maps,
+not of computation, and is listed apart.
 
-Print: a TSV per world (answered, ledger, value, word, share of ledger) and
-the two lists holon asked for; --out writes the TSV.
+The read-off kind is М-167 applied to this instrument itself (04.09): its
+first shape called every bare number a debt and so named 13 376 of them,
+counting among them the whole of `holes` (1200) and `unit_counts` (360),
+where the answer is the question's own number and there is nothing to
+derive. An instrument that names a debt where none exists claims more than
+it verified; the debt it prints now is the debt that is real.
+
+The unsupported kind is the same law read backwards, and it was bought by a
+mistake of the same hour: the first cure called a numberless question a
+read-off, and so quietly ACQUITTED all 1440 lines of `story`, where the
+question stands alone («how many balls does mary have left? 6 balls left.»)
+and its story lives on another line of the world. An instrument that reads
+lines may not pronounce on a page.
+
+Print: a TSV per world (answered, ledger, computed, read-off, unsupported,
+word, share of ledger) and the two lists holon asked for; --out writes it.
 """
 import argparse
 import collections
@@ -81,8 +106,31 @@ def вид_ответа(строка):
         return "word"
     # a witness after the value («97 is prime; its divisors are 1 and 97», «yes: 12 = 3 × 4»)
     if ";" in ответ or ":" in ответ:
-        return "ledger" if len(ЧИСЛО.findall(ответ)) >= 2 else "value"
-    return "value" if ТОЛЬКО_ЧИСЛА.match(ответ) or len(ЧИСЛО.findall(ответ)) == 1 else "value"
+        if len(ЧИСЛО.findall(ответ)) >= 2:
+            return "ledger"
+    return _вид_значения(ч_в, ч_о)
+
+
+def _вид_значения(ч_в, ч_о):
+    """Computed, read off, or beyond the line's reach — decided by the numbers.
+
+      · the question carries NO number: the line shows nothing to derive FROM,
+        and the instrument reads lines — «unsupported», not a debt and not an
+        acquittal;
+      · the question carries ONE distinct number and every number of the
+        answer is that number: there was nothing to combine it WITH, so the
+        answer was read off and no ledger is owed;
+      · otherwise the answer was computed and its ledger is owed.
+    Two distinct numbers in the question always count as computed, even when
+    the result coincides with one of them («had 8, gave 4 away, keeps 4»):
+    the coincidence is a fact about the values, not about the work done.
+    """
+    свои = set(ч_в)
+    if not свои:
+        return "unsupported"
+    if len(свои) == 1 and set(ч_о) <= свои:
+        return "read-off"
+    return "value"
 
 
 def мир_имя(путь):
@@ -108,14 +156,14 @@ def main():
     ап.add_argument("--out", type=pathlib.Path)
     а = ап.parse_args()
     п = перепись(worlds(kind="shows"))
-    строки = ["мир\tотвеченных\tледжер\tзначение\tслово\tдоля леджера"]
+    строки = ["мир\tотвеченных\tледжер\tвычислено\tпрочтено\tбез опоры\tслово\tдоля леджера"]
     без = []; словесные = []
     for имя, с in sorted(п.items(), key=lambda kv: -sum(kv[1].values())):
         всего = sum(с.values())
         if not всего:
             continue
         доля = с["ledger"] / (с["ledger"] + с["value"]) if (с["ledger"] + с["value"]) else 0.0
-        строки.append(f"{имя}\t{всего}\t{с['ledger']}\t{с['value']}\t{с['word']}\t{доля:.2f}")
+        строки.append(f"{имя}\t{всего}\t{с['ledger']}\t{с['value']}\t{с['read-off']}\t{с['unsupported']}\t{с['word']}\t{доля:.2f}")
         if с["value"] and not с["ledger"]:
             без.append((имя, с["value"]))
         elif not с["value"] and not с["ledger"] and с["word"]:
@@ -128,7 +176,8 @@ def main():
     всего = collections.Counter()
     for с in п.values():
         всего.update(с)
-    print(f"ПЕРЕПИСЬ ЛЕДЖЕРОВ: отвеченных {sum(всего.values())}, с леджером {всего['ledger']}, значением {всего['value']}, словом {всего['word']}; "
+    print(f"ПЕРЕПИСЬ ЛЕДЖЕРОВ: отвеченных {sum(всего.values())}, с леджером {всего['ledger']}, вычислено без леджера {всего['value']}, "
+          f"прочтено с вопроса {всего['read-off']}, без опоры в строке {всего['unsupported']}, словом {всего['word']}; "
           f"миров со значением без леджера {len(без)}: {', '.join(f'{и} ({n})' for и, n in без)}; "
           f"миров словесных ответов {len(словесные)}: {', '.join(и for и, n in словесные)}", file=sys.stderr)
     return 0
