@@ -26,7 +26,9 @@ def язык_группа(шаг, язык):
         i = (шаг * 3 + j) % 7
         n = 1 + (шаг * 5 + j * 2) % 6
         вон.append(F.утверждение(язык, i, n))
-        n2 = 1 + (шаг * 2 + j * 4 + 1) % 6
+        # five distinct k per start day over the five passes (holon's TSV 21e865b:
+        # mass<4-distinct — 2·шаг mod 6 gave three values, 5·шаг gives five)
+        n2 = 1 + (шаг * 5 + j * 4 + 1) % 6
         вон.append(F.вопрос(язык, (i + 3) % 7, n2))
     return вон
 
