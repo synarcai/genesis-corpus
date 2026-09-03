@@ -13,7 +13,7 @@ number? 12 is 40 percent of 30: 12 × 100 = 1200, 1200 ÷ 40 = 30.» The house
 of share and percent phrases (tools/fracforms.py) holds the templates; the
 court reads the fraction words back to their numbers and recomputes.
 
-MASS FROM THE RULE (М-148): 24 shows per language per pass — the share
+MASS FROM THE RULE (М-148, and holon's word 03.09 — LAW² different shows per WORD of a fraction): 86 shows per language per pass — the share
 walks the 45 declared (numerator, denominator) pairs with a stride coprime
 with the table, the percents the eleven declared ones, and every quantity
 is chosen so that the answer is whole.
@@ -30,7 +30,17 @@ from layer import emit_grouped  # noqa: E402
 
 
 def _доля(j):
+    """The (numerator, denominator) of show j — the walk covers EVERY declared
+    pair before repeating, so no word of a fraction stays with two shows while
+    another has ten (holon 03.09: «one tenth», «sevenths», «ninth» were refused
+    by the market for want of LAW² different shows per WORD)."""
     return F.ДОЛИ[(j * 7) % len(F.ДОЛИ)]
+
+
+def _доля_слова(j):
+    """Every DECLARED WORD in turn: the pairs are walked so that each word of a
+    fraction gets its own shows, not only the pairs of small denominators."""
+    return F.ДОЛИ[j % len(F.ДОЛИ)]
 
 
 def _процент(j):
@@ -45,9 +55,12 @@ def язык_группа(шаг, язык):
     вон = []
     j = шаг * 29
     # the share of a quantity: eight per pass, statement and question in turn
-    for i in range(8):
-        n, d = _доля(j + i)
-        вон.append(F.страница(язык, "доля", n=n, d=d, q=2 + (шаг * 5 + i * 7 + j) % 25, вопрос=(i + шаг) % 2 == 1))
+    for i in range(36):
+        n, d = _доля_слова(шаг * 36 + i)
+        q = 2 + (шаг * 5 + i * 7 + j) % 25
+        while q * n == d or q * d == d:   # the given must not be the denominator itself
+            q += 1
+        вон.append(F.страница(язык, "доля", n=n, d=d, q=q, вопрос=(i + шаг) % 2 == 1))
     j += 8
     # the percent of a quantity: six per pass
     for i in range(6):
@@ -59,12 +72,18 @@ def язык_группа(шаг, язык):
         n, d = _доля(j + i * 3)
         if d - n < 1:
             n, d = 1, d
-        вон.append(F.страница(язык, "дополн", n=n, d=d, q=2 + (шаг * 7 + i * 5 + j) % 18, вещь=(шаг + i) % 5))
+        q = 2 + (шаг * 7 + i * 5 + j) % 18
+        while q * n == d:                 # the given must not be the denominator
+            q += 1
+        вон.append(F.страница(язык, "дополн", n=n, d=d, q=q, вещь=(шаг + i) % 5))
     j += 4
     # the number from its share: five per pass (mass 20+ buys depth-3 chains)
-    for i in range(5):
-        n, d = _доля(j + i * 5)
-        вон.append(F.страница(язык, "число", n=n, d=d, q=2 + (шаг * 3 + i * 11 + j) % 20))
+    for i in range(36):
+        n, d = _доля_слова(шаг * 36 + i + 20)
+        q = 2 + (шаг * 3 + i * 11 + j) % 20
+        while q * n == d:                 # the share given must not be the denominator
+            q += 1
+        вон.append(F.страница(язык, "число", n=n, d=d, q=q))
     j += 3
     # the number from its percent: five per pass
     for i in range(5):
