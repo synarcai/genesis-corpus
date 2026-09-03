@@ -2379,7 +2379,6 @@ list: water and number.
 - мера.
 - лес.
 list: number and river.
-- stone.
 - bridge.
 список: звук и точка.
 - лес.
@@ -2389,34 +2388,27 @@ list: river and force.
 - field.
 список: точка и дорога.
 - вода.
-- число.
 list: force and word.
 - field.
 - light.
 список: дорога и дом.
-- число.
 - река.
 list: word and mountain.
 - light.
 - circle.
 список: дом и линия.
 - река.
-- сила.
 list: mountain and city.
 - circle.
 - time.
 список: линия и мера.
-- сила.
-- слово.
 list: city and stone.
 - time.
 - sound.
 список: мера и лес.
-- слово.
 - гора.
 list: stone and bridge.
 - sound.
-- point.
 список: лес и вода.
 - гора.
 - город.
@@ -2477,7 +2469,6 @@ section line contains light.
 ## мост.
 section measure contains circle.
 # word.
-## line.
 раздел свет содержит сила.
 # дом.
 ## поле.
@@ -2501,7 +2492,6 @@ section number contains point.
 ## время.
 section river contains road.
 # bridge.
-## number.
 раздел точка содержит камень.
 # вода.
 ## звук.
@@ -2509,25 +2499,19 @@ section force contains house.
 # field.
 ## river.
 раздел дорога содержит мост.
-# число.
 ## точка.
 section word contains line.
 # light.
-## force.
 раздел дом содержит поле.
 # река.
 ## дорога.
 section mountain contains measure.
 # circle.
-## word.
 раздел линия содержит свет.
-# сила.
-## дом.
 section city contains forest.
 # time.
 ## mountain.
 раздел мера содержит круг.
-# слово.
 ## линия.
 section stone contains water.
 # sound.
@@ -2536,8 +2520,6 @@ section stone contains water.
 # гора.
 ## мера.
 section bridge contains number.
-# point.
-## stone.
 раздел вода содержит звук.
 # город.
 ## лес.
@@ -2752,7 +2734,6 @@ heading level two: force.
 heading level one: house.
 # mountain.
 заголовок уровня один: точка.
-## сила.
 heading level one: field.
 # measure.
 заголовок уровня один: камень.
@@ -2767,14 +2748,10 @@ heading level three: road.
 heading level two: bridge.
 заголовок уровня три: город.
 ### дорога.
-heading level two: number.
 ## light.
 заголовок уровня два: лес.
 ## мост.
-heading level one: point.
-## force.
 заголовок уровня два: время.
-heading level one: stone.
 # house.
 заголовок уровня один: гора.
 # точка.
@@ -2800,7 +2777,6 @@ heading level one: mountain.
 заголовок уровня два: сила.
 ## время.
 heading level one: measure.
-заголовок уровня один: дом.
 # гора.
 heading level three: circle.
 - water.
@@ -2815,7 +2791,6 @@ list: word and mountain.
 list: line and measure.
 - city.
 список: дорога и дом.
-- слово.
 - гора.
 list: light and circle.
 - forest.
@@ -2833,8 +2808,6 @@ list: house and line.
 - mountain.
 - city.
 список: точка и дорога.
-- сила.
-- слово.
 list: field and light.
 - measure.
 - forest.
@@ -2847,11 +2820,9 @@ list: river and force.
 - поле.
 - свет.
 list: road and house.
-- word.
 - mountain.
 список: звук и точка.
 - река.
-- сила.
 list: bridge and field.
 - measure.
 список: город и камень.
@@ -2863,8 +2834,6 @@ list: number and river.
 - мост.
 - поле.
 list: point and road.
-- force.
-- word.
 список: время и звук.
 - река.
 list: stone and bridge.
@@ -2879,7 +2848,6 @@ list: water and number.
 - мост.
 list: sound and point.
 - river.
-- force.
 список: круг и время.
 - вода.
 list: city and stone.
@@ -2919,12 +2887,10 @@ section word contains line.
 ## city.
 раздел река содержит дорога.
 # круг.
-## слово.
 section line contains light.
 # city.
 ## forest.
 раздел дорога содержит мост.
-# слово.
 ## линия.
 section light contains force.
 # forest.
@@ -2937,12 +2903,10 @@ section force contains house.
 ## mountain.
 раздел число содержит точка.
 # свет.
-## сила.
 section house contains field.
 # mountain.
 ## measure.
 раздел точка содержит камень.
-# сила.
 section field contains river.
 # measure.
 ## circle.
@@ -2950,12 +2914,10 @@ section field contains river.
 ## поле.
 section river contains road.
 # circle.
-## word.
 раздел вода содержит звук.
 # поле.
 ## река.
 section road contains bridge.
-# word.
 раздел звук содержит город.
 # река.
 ## дорога.
@@ -2966,11 +2928,9 @@ section bridge contains number.
 ## мост.
 section number contains point.
 # light.
-## force.
 раздел лес содержит время.
 # мост.
 section point contains stone.
-# force.
 ## house.
 раздел время содержит гора.
 ## точка.
@@ -3157,18 +3117,14 @@ there is no heading «road» at level 6: in this layer it stands at level 3.
 нет ни одного заголовка «звук» на уровне 6: в слое он стоит на уровне 3.
 there is no heading «bridge» at level 5: in this layer it stands at level 2.
 нет ни одного заголовка «город» на уровне 6: в слое он стоит на уровне 3.
-there is no heading «number» at level 5: in this layer it stands at level 2.
 нет ни одного заголовка «лес» на уровне 5: в слое он стоит на уровне 2.
-there is no heading «point» at level 4: in this layer it stands at level 1.
 нет ни одного заголовка «время» на уровне 5: в слое он стоит на уровне 2.
-there is no heading «stone» at level 4: in this layer it stands at level 1.
 нет ни одного заголовка «гора» на уровне 4: в слое он стоит на уровне 1.
 there is no heading «water» at level 4: in this layer it stands at level 1.
 нет ни одного заголовка «мера» на уровне 4: в слое он стоит на уровне 1.
 there is no heading «sound» at level 6: in this layer it stands at level 3.
 нет ни одного заголовка «круг» на уровне 6: в слое он стоит на уровне 3.
 there is no heading «city» at level 6: in this layer it stands at level 3.
-нет ни одного заголовка «слово» на уровне 6: в слое он стоит на уровне 3.
 there is no heading «forest» at level 5: in this layer it stands at level 2.
 нет ни одного заголовка «линия» на уровне 5: в слое он стоит на уровне 2.
 there is no heading «time» at level 5: in this layer it stands at level 2.
@@ -3176,23 +3132,17 @@ there is no heading «time» at level 5: in this layer it stands at level 2.
 there is no heading «mountain» at level 4: in this layer it stands at level 1.
 заголовок уровня три: город.
 ### road.
-heading level three: word.
 заголовок уровня один: гора.
-heading level two: force.
 ### дорога.
-заголовок уровня три: слово.
 ### sound.
 heading level three: river.
 # точка.
-заголовок уровня два: сила.
 ## time.
-heading level two: number.
 ### звук.
 заголовок уровня три: река.
 ### circle.
 heading level one: water.
 ## время.
-заголовок уровня два: число.
 ## light.
 heading level two: forest.
 ### круг.
@@ -3209,7 +3159,6 @@ heading level one: house.
 заголовок уровня два: линия.
 ### city.
 heading level three: road.
-заголовок уровня один: дом.
 # mountain.
 ### город.
 заголовок уровня три: дорога.
@@ -3217,13 +3166,11 @@ heading level three: road.
 heading level three: sound.
 # гора.
 заголовок уровня один: точка.
-## force.
 heading level two: time.
 ### слово.
 заголовок уровня три: звук.
 ### river.
 heading level three: circle.
-## сила.
 заголовок уровня два: время.
 heading level two: light.
 ### река.
@@ -3240,7 +3187,6 @@ heading level two: bridge.
 заголовок уровня два: мост.
 heading level three: city.
 # мера.
-заголовок уровня один: камень.
 # house.
 heading level one: mountain.
 ## линия.
@@ -3303,28 +3249,20 @@ list: road and house.
 list: point and road.
 - город.
 список: дорога и дом.
-- word.
 - mountain.
 list: sound and point.
 - гора.
 - город.
 список: точка и дорога.
-- force.
-- word.
 list: time and sound.
-- слово.
 - гора.
 список: звук и точка.
 - river.
-- force.
 list: circle and time.
-- сила.
-- слово.
 список: время и звук.
 - river.
 list: light and circle.
 - река.
-- сила.
 список: круг и время.
 - water.
 list: field and light.
@@ -3372,22 +3310,18 @@ section number contains point.
 ## город.
 раздел река содержит дорога.
 # circle.
-## word.
 section water contains sound.
 # время.
 ## гора.
 раздел число содержит точка.
 # light.
-## force.
 section forest contains time.
 # круг.
-## слово.
 раздел вода содержит звук.
 # field.
 ## river.
 section measure contains circle.
 # свет.
-## сила.
 раздел лес содержит время.
 # bridge.
 section line contains light.
@@ -3409,21 +3343,17 @@ section point contains stone.
 # город.
 ## лес.
 раздел дорога содержит мост.
-# word.
 section sound contains city.
 # гора.
 ## мера.
 раздел точка содержит камень.
-# force.
 ## house.
 section time contains mountain.
-# слово.
 ## линия.
 раздел звук содержит город.
 # river.
 ## road.
 section circle contains word.
-# сила.
 раздел время содержит гора.
 section light contains force.
 # река.
@@ -3585,21 +3515,14 @@ there is no heading «field» at level 4: in this layer it stands at level 1.
 нет ни одного заголовка «свет» на уровне 5: в слое он стоит на уровне 2.
 there is no heading «bridge» at level 5: in this layer it stands at level 2.
 нет ни одного заголовка «поле» на уровне 4: в слое он стоит на уровне 1.
-there is no heading «stone» at level 4: in this layer it stands at level 1.
 нет ни одного заголовка «мост» на уровне 5: в слое он стоит на уровне 2.
 there is no heading «city» at level 6: in this layer it stands at level 3.
-нет ни одного заголовка «камень» на уровне 4: в слое он стоит на уровне 1.
 there is no heading «mountain» at level 4: in this layer it stands at level 1.
 нет ни одного заголовка «город» на уровне 6: в слое он стоит на уровне 3.
-there is no heading «word» at level 6: in this layer it stands at level 3.
 нет ни одного заголовка «гора» на уровне 4: в слое он стоит на уровне 1.
-there is no heading «force» at level 5: in this layer it stands at level 2.
-нет ни одного заголовка «слово» на уровне 6: в слое он стоит на уровне 3.
 there is no heading «river» at level 6: in this layer it stands at level 3.
-нет ни одного заголовка «сила» на уровне 5: в слое он стоит на уровне 2.
 нет ни одного заголовка «река» на уровне 6: в слое он стоит на уровне 3.
 there is no heading «water» at level 4: in this layer it stands at level 1.
-нет ни одного заголовка «число» на уровне 5: в слое он стоит на уровне 2.
 there is no heading «forest» at level 5: in this layer it stands at level 2.
 нет ни одного заголовка «вода» на уровне 4: в слое он стоит на уровне 1.
 there is no heading «measure» at level 4: in this layer it stands at level 1.
@@ -3608,11 +3531,9 @@ there is no heading «measure» at level 4: in this layer it stands at level 1.
 there is no heading «house» at level 4: in this layer it stands at level 1.
 нет ни одного заголовка «линия» на уровне 5: в слое он стоит на уровне 2.
 there is no heading «road» at level 6: in this layer it stands at level 3.
-нет ни одного заголовка «дом» на уровне 4: в слое он стоит на уровне 1.
 нет ни одного заголовка «дорога» на уровне 6: в слое он стоит на уровне 3.
 there is no heading «sound» at level 6: in this layer it stands at level 3.
 нет ни одного заголовка «точка» на уровне 4: в слое он стоит на уровне 1.
-## сила.
 заголовок уровня три: дорога.
 heading level two: forest.
 # точка.
@@ -3627,7 +3548,6 @@ heading level two: light.
 heading level two: time.
 заголовок уровня два: лес.
 ### circle.
-heading level two: force.
 # мера.
 заголовок уровня два: свет.
 ### river.
@@ -3639,7 +3559,6 @@ heading level one: mountain.
 ### word.
 heading level one: house.
 ### круг.
-заголовок уровня два: сила.
 ### road.
 ### река.
 заголовок уровня один: точка.
@@ -3664,10 +3583,8 @@ heading level three: sound.
 ## мост.
 заголовок уровня один: вода.
 ## time.
-heading level three: word.
 ## лес.
 заголовок уровня три: круг.
-## force.
 heading level three: road.
 ## свет.
 заголовок уровня три: река.
@@ -3675,11 +3592,8 @@ heading level three: city.
 заголовок уровня три: звук.
 # mountain.
 ## время.
-заголовок уровня три: слово.
 # house.
 heading level two: bridge.
-- сила.
-- слово.
 список: дорога и дом.
 - bridge.
 list: forest and water.
@@ -3708,7 +3622,6 @@ list: force and word.
 - лес.
 список: свет и круг.
 - river.
-- force.
 list: point and road.
 - поле.
 - свет.
@@ -3717,7 +3630,6 @@ list: point and road.
 list: mountain and city.
 - вода.
 список: время и звук.
-- word.
 - mountain.
 list: house and line.
 - круг.
@@ -3727,7 +3639,6 @@ list: house and line.
 - house.
 list: stone and bridge.
 - река.
-- сила.
 список: точка и дорога.
 - city.
 list: measure and forest.
@@ -3736,7 +3647,6 @@ list: measure and forest.
 список: гора и город.
 - measure.
 list: field and light.
-- слово.
 - гора.
 список: дом и линия.
 - bridge.
@@ -3766,8 +3676,6 @@ list: word and mountain.
 - лес.
 - вода.
 список: круг и время.
-- force.
-- word.
 list: road and house.
 - свет.
 - круг.
@@ -3784,7 +3692,6 @@ list: line and measure.
 список: слово и гора.
 - house.
 list: bridge and field.
-# сила.
 раздел дорога содержит мост.
 ## water.
 section forest contains time.
@@ -3798,7 +3705,6 @@ section light contains force.
 раздел линия содержит свет.
 # field.
 ## river.
-section number contains point.
 ## поле.
 раздел мост содержит число.
 # water.
@@ -3807,14 +3713,12 @@ section time contains mountain.
 ## вода.
 раздел лес содержит время.
 # circle.
-## word.
 section force contains house.
 # мера.
 ## круг.
 раздел свет содержит сила.
 # river.
 ## road.
-section point contains stone.
 # поле.
 ## река.
 раздел число содержит точка.
@@ -3824,10 +3728,8 @@ section mountain contains measure.
 # вода.
 ## звук.
 раздел время содержит гора.
-# word.
 section house contains field.
 # круг.
-## слово.
 раздел сила содержит дом.
 # road.
 ## bridge.
@@ -3843,7 +3745,6 @@ section measure contains circle.
 раздел гора содержит мера.
 ## light.
 section field contains river.
-# слово.
 ## линия.
 раздел дом содержит поле.
 # bridge.
@@ -3858,7 +3759,6 @@ section circle contains word.
 ## лес.
 раздел мера содержит круг.
 # light.
-## force.
 section river contains road.
 # линия.
 ## свет.
@@ -3868,15 +3768,12 @@ section sound contains city.
 раздел вода содержит звук.
 # time.
 ## mountain.
-section word contains line.
 # лес.
 ## время.
 раздел круг содержит слово.
-# force.
 ## house.
 section road contains bridge.
 # свет.
-## сила.
 раздел река содержит дорога.
 section city contains forest.
 ## точка.
@@ -4015,12 +3912,10 @@ there is no heading «light» at level 5: in this layer it stands at level 2.
 нет ни одного заголовка «мост» на уровне 5: в слое он стоит на уровне 2.
 there is no heading «time» at level 5: in this layer it stands at level 2.
 нет ни одного заголовка «лес» на уровне 5: в слое он стоит на уровне 2.
-there is no heading «force» at level 5: in this layer it stands at level 2.
 нет ни одного заголовка «свет» на уровне 5: в слое он стоит на уровне 2.
 there is no heading «mountain» at level 4: in this layer it stands at level 1.
 нет ни одного заголовка «время» на уровне 5: в слое он стоит на уровне 2.
 there is no heading «house» at level 4: in this layer it stands at level 1.
-нет ни одного заголовка «сила» на уровне 5: в слое он стоит на уровне 2.
 нет ни одного заголовка «точка» на уровне 4: в слое он стоит на уровне 1.
 there is no heading «measure» at level 4: in this layer it stands at level 1.
 нет ни одного заголовка «гора» на уровне 4: в слое он стоит на уровне 1.
@@ -4032,13 +3927,11 @@ there is no heading «river» at level 6: in this layer it stands at level 3.
 нет ни одного заголовка «поле» на уровне 4: в слое он стоит на уровне 1.
 there is no heading «sound» at level 6: in this layer it stands at level 3.
 нет ни одного заголовка «вода» на уровне 4: в слое он стоит на уровне 1.
-there is no heading «word» at level 6: in this layer it stands at level 3.
 нет ни одного заголовка «круг» на уровне 6: в слое он стоит на уровне 3.
 there is no heading «road» at level 6: in this layer it stands at level 3.
 нет ни одного заголовка «река» на уровне 6: в слое он стоит на уровне 3.
 there is no heading «city» at level 6: in this layer it stands at level 3.
 нет ни одного заголовка «звук» на уровне 6: в слое он стоит на уровне 3.
-нет ни одного заголовка «слово» на уровне 6: в слое он стоит на уровне 3.
 there is no heading «bridge» at level 5: in this layer it stands at level 2.
 нет ни одного заголовка «дорога» на уровне 6: в слое он стоит на уровне 3.
 there is no heading «forest» at level 5: in this layer it stands at level 2.
@@ -4049,7 +3942,6 @@ there is no heading «forest» at level 5: in this layer it stands at level 2.
 heading level one: measure.
 ### sound.
 заголовок уровня два: мост.
-## сила.
 heading level three: road.
 ## light.
 заголовок уровня один: гора.
@@ -4063,7 +3955,6 @@ heading level one: field.
 # точка.
 heading level three: city.
 ### круг.
-heading level two: force.
 # measure.
 заголовок уровня три: звук.
 ## мост.
@@ -4074,12 +3965,10 @@ heading level one: water.
 ## time.
 ### река.
 # field.
-заголовок уровня три: слово.
 ## лес.
 heading level three: circle.
 ### city.
 heading level two: bridge.
-## force.
 заголовок уровня один: мера.
 ### звук.
 heading level one: mountain.
@@ -4090,13 +3979,11 @@ heading level three: river.
 заголовок уровня два: время.
 heading level two: forest.
 заголовок уровня один: поле.
-### слово.
 heading level one: house.
 ### circle.
 заголовок уровня три: город.
 heading level three: sound.
 ## bridge.
-заголовок уровня два: сила.
 # мера.
 heading level two: light.
 # mountain.
@@ -4105,7 +3992,6 @@ heading level two: light.
 ### river.
 заголовок уровня два: линия.
 ## время.
-heading level three: word.
 ## forest.
 заголовок уровня один: точка.
 - поле.
@@ -4117,8 +4003,6 @@ list: number and river.
 list: measure and forest.
 - sound.
 список: мост и поле.
-- сила.
-- слово.
 list: road and house.
 - light.
 - circle.
@@ -4130,7 +4014,6 @@ list: time and sound.
 - линия.
 - мера.
 list: field and light.
-- word.
 - mountain.
 список: лес и вода.
 - точка.
@@ -4161,7 +4044,6 @@ list: circle and time.
 - city.
 список: число и река.
 list: bridge and field.
-- force.
 список: мера и лес.
 - звук.
 list: mountain and city.
@@ -4182,7 +4064,6 @@ list: stone and bridge.
 list: word and mountain.
 список: точка и дорога.
 ## река.
-section number contains point.
 ## field.
 раздел круг содержит слово.
 # город.
@@ -4190,7 +4071,6 @@ section measure contains circle.
 # sound.
 ## city.
 раздел мост содержит число.
-# сила.
 section road contains bridge.
 # light.
 раздел гора содержит мера.
@@ -4200,12 +4080,10 @@ section time contains mountain.
 раздел река содержит дорога.
 # линия.
 section field contains river.
-# word.
 раздел лес содержит время.
 section city contains forest.
 раздел дом содержит поле.
 # круг.
-## слово.
 section force contains house.
 ## circle.
 раздел звук содержит город.
@@ -4228,7 +4106,6 @@ section circle contains word.
 раздел число содержит точка.
 ## поле.
 section bridge contains number.
-# force.
 ## house.
 раздел мера содержит круг.
 # звук.
@@ -4242,10 +4119,8 @@ section river contains road.
 ## вода.
 section forest contains time.
 раздел поле содержит река.
-# слово.
 section house contains field.
 # circle.
-## word.
 раздел город содержит лес.
 ## точка.
 section sound contains city.
@@ -4262,7 +4137,6 @@ section stone contains water.
 раздел линия содержит свет.
 # время.
 ## гора.
-section word contains line.
 # forest.
 раздел точка содержит камень.
 graph TD; E-->F; F-->G;
@@ -4394,11 +4268,9 @@ there is no heading «forest» at level 5: in this layer it stands at level 2.
 there is no heading «house» at level 4: in this layer it stands at level 1.
 нет ни одного заголовка «город» на уровне 6: в слое он стоит на уровне 3.
 there is no heading «sound» at level 6: in this layer it stands at level 3.
-нет ни одного заголовка «сила» на уровне 5: в слое он стоит на уровне 2.
 there is no heading «light» at level 5: in this layer it stands at level 2.
 нет ни одного заголовка «вода» на уровне 4: в слое он стоит на уровне 1.
 нет ни одного заголовка «линия» на уровне 5: в слое он стоит на уровне 2.
-there is no heading «word» at level 6: in this layer it stands at level 3.
 нет ни одного заголовка «точка» на уровне 4: в слое он стоит на уровне 1.
 нет ни одного заголовка «круг» на уровне 6: в слое он стоит на уровне 3.
 there is no heading «measure» at level 4: in this layer it stands at level 1.
@@ -4410,11 +4282,9 @@ there is no heading «time» at level 5: in this layer it stands at level 2.
 there is no heading «field» at level 4: in this layer it stands at level 1.
 нет ни одного заголовка «лес» на уровне 5: в слое он стоит на уровне 2.
 there is no heading «city» at level 6: in this layer it stands at level 3.
-there is no heading «force» at level 5: in this layer it stands at level 2.
 нет ни одного заголовка «звук» на уровне 6: в слое он стоит на уровне 3.
 there is no heading «water» at level 4: in this layer it stands at level 1.
 нет ни одного заголовка «свет» на уровне 5: в слое он стоит на уровне 2.
-нет ни одного заголовка «слово» на уровне 6: в слое он стоит на уровне 3.
 there is no heading «circle» at level 6: in this layer it stands at level 3.
 there is no heading «bridge» at level 5: in this layer it stands at level 2.
 
@@ -15029,25 +14899,25 @@ a bottle is a vessel that holds milk. what is a bottle? a vessel that holds milk
 a table is a piece of furniture that holds plates. is a table a vehicle or a piece of furniture? a piece of furniture.
 is a lamp a device or a building? a device.
 a bicycle is a vehicle that rolls on two wheels. what is a bicycle? a vehicle that rolls on two wheels.
-a bakery is a building that bakes bread. is a bakery a tool or a building? a building.
-is a hat a garment or an animal? a garment.
-a hammer is a tool that strikes. what is a hammer? a tool that strikes.
-a bird is an animal that flies. is a bird a vessel or an animal? an animal.
-is a horse an animal or a vessel? an animal.
-an oak is a plant that grows tall. what is an oak? a plant that grows tall.
-a bottle is a vessel that holds milk. is a bottle a device or a vessel? a vessel.
-is a table a piece of furniture or a vehicle? a piece of furniture.
-a car is a vehicle that carries people. what is a car? a vehicle that carries people.
-a bicycle is a vehicle that rolls on two wheels. is a bicycle a garment or a vehicle? a vehicle.
-is a bakery a building or a tool? a building.
-a pen is a tool that writes. what is a pen? a tool that writes.
-a hammer is a tool that strikes. is a hammer a plant or a tool? a tool.
-is a bird an animal or a vessel? an animal.
-a bee is an animal that gathers honey. what is a bee? an animal that gathers honey.
-an oak is a plant that grows tall. is an oak a piece of furniture or a plant? a plant.
-is a bottle a vessel or a device? a vessel.
-an alarm clock is a device that shows the time. what is an alarm clock? a device that shows the time.
-a car is a vehicle that carries people. is a car a garment or a vehicle? a vehicle.
+a bakery is a building that bakes bread. is a bakery an organ or a building? a building.
+is a hat a garment or a substance? a garment.
+liquid water is a substance that freezes at zero. what is liquid water? a substance that freezes at zero.
+a right triangle is a figure that has one right angle. is a right triangle a force or a figure? a figure.
+is an even number a number or a word? a number.
+a green plant is an organism that makes its own food. what is a green plant? an organism that makes its own food.
+a knife is a tool that cuts. is a knife a plant or a tool? a tool.
+is a spoon a tool or a plant? a tool.
+a horse is an animal that runs. what is a horse? an animal that runs.
+a rose is a plant that blooms. is a rose a piece of furniture or a plant? a plant.
+is a cup a vessel or a device? a vessel.
+a table is a piece of furniture that holds plates. what is a table? a piece of furniture that holds plates.
+a lamp is a device that gives light. is a lamp a building or a device? a device.
+is a boat a vehicle or a garment? a vehicle.
+a bakery is a building that bakes bread. what is a bakery? a building that bakes bread.
+a hat is a garment that covers the head. is a hat a substance or a garment? a garment.
+is the lung an organ or a metal? an organ.
+a right triangle is a figure that has one right angle. what is a right triangle? a figure that has one right angle.
+an even number is a number that divides by two. is an even number a word or a number? a number.
 нож — это инструмент или растение? инструмент.
 птица — это животное, которое летает. что такое птица? животное, которое летает.
 лошадь — это животное, которое бегает. лошадь — это сосуд или животное? животное.
@@ -15056,49 +14926,55 @@ a car is a vehicle that carries people. is a car a garment or a vehicle? a vehic
 стол — это мебель, которая держит тарелки. стол — это транспорт или мебель? мебель.
 лампа — это прибор или здание? прибор.
 велосипед — это транспорт, который катится на двух колёсах. что такое велосипед? транспорт, который катится на двух колёсах.
-пекарня — это здание, которое печёт хлеб. пекарня — это инструмент или здание? здание.
-шапка — это одежда или животное? одежда.
-молоток — это инструмент, который бьёт. что такое молоток? инструмент, который бьёт.
-птица — это животное, которое летает. птица — это сосуд или животное? животное.
-лошадь — это животное или сосуд? животное.
-дуб — это растение, которое растёт высоким. что такое дуб? растение, которое растёт высоким.
-бутылка — это сосуд, который держит молоко. бутылка — это прибор или сосуд? сосуд.
-стол — это мебель или транспорт? мебель.
-автомобиль — это транспорт, который везёт людей. что такое автомобиль? транспорт, который везёт людей.
-велосипед — это транспорт, который катится на двух колёсах. велосипед — это одежда или транспорт? транспорт.
-пекарня — это здание или инструмент? здание.
-ручка — это инструмент, который пишет. что такое ручка? инструмент, который пишет.
-молоток — это инструмент, который бьёт. молоток — это растение или инструмент? инструмент.
-птица — это животное или сосуд? животное.
-пчела — это животное, которое собирает мёд. что такое пчела? животное, которое собирает мёд.
-дуб — это растение, которое растёт высоким. дуб — это мебель или растение? растение.
-бутылка — это сосуд или прибор? сосуд.
-будильник — это прибор, который показывает время. что такое будильник? прибор, который показывает время.
-автомобиль — это транспорт, который везёт людей. автомобиль — это одежда или транспорт? транспорт.
-пальто — это одежда, которая греет человека. что такое пальто? одежда, которая греет человека.
+пекарня — это здание, которое печёт хлеб. пекарня — это орган или здание? здание.
+шапка — это одежда или вещество? одежда.
+жидкая вода — это вещество, которое замерзает при нуле. что такое жидкая вода? вещество, которое замерзает при нуле.
+прямоугольный треугольник — это фигура, которая имеет прямой угол. прямоугольный треугольник — это сила или фигура? фигура.
+чётное число — это число или слово? число.
+зелёное растение — это организм, который готовит себе пищу. что такое зелёное растение? организм, который готовит себе пищу.
+нож — это инструмент, который режет. нож — это растение или инструмент? инструмент.
+ложка — это инструмент или растение? инструмент.
+лошадь — это животное, которое бегает. что такое лошадь? животное, которое бегает.
+роза — это растение, которое цветёт. роза — это мебель или растение? растение.
+чашка — это сосуд или прибор? сосуд.
+стол — это мебель, которая держит тарелки. что такое стол? мебель, которая держит тарелки.
+лампа — это прибор, который даёт свет. лампа — это здание или прибор? прибор.
+лодка — это транспорт или одежда? транспорт.
+пекарня — это здание, которое печёт хлеб. что такое пекарня? здание, которое печёт хлеб.
+шапка — это одежда, которая покрывает голову. шапка — это вещество или одежда? одежда.
+лёгкое — это орган или металл? орган.
+прямоугольный треугольник — это фигура, которая имеет прямой угол. что такое прямоугольный треугольник? фигура, которая имеет прямой угол.
+чётное число — это число, которое делится на два. чётное число — это слово или число? число.
+нож — это инструмент, который режет. что такое нож? инструмент, который режет.
+ложка — это инструмент, который черпает. ложка — это растение или инструмент? инструмент.
+роза — это растение, которое цветёт. что такое роза? растение, которое цветёт.
+чашка — это сосуд, который держит воду. чашка — это прибор или сосуд? сосуд.
+лампа — это прибор, который даёт свет. что такое лампа? прибор, который даёт свет.
+лодка — это транспорт, который плывёт по воде. лодка — это одежда или транспорт? транспорт.
+шапка — это одежда, которая покрывает голову. что такое шапка? одежда, которая покрывает голову.
+лёгкое — это орган, который принимает воздух. лёгкое — это металл или орган? орган.
+чётное число — это число, которое делится на два. что такое чётное число? число, которое делится на два.
+глагол — это слово, которое называет действие. глагол — это инструмент или слово? слово.
+ложка — это инструмент, который черпает. что такое ложка? инструмент, который черпает.
+рыба — это животное, которое плавает. рыба — это сосуд или животное? животное.
+чашка — это сосуд, который держит воду. что такое чашка? сосуд, который держит воду.
+стул — это мебель, которая вмещает одного человека. стул — это транспорт или мебель? мебель.
+лодка — это транспорт, который плывёт по воде. что такое лодка? транспорт, который плывёт по воде.
+школа — это здание, которое учит детей. школа — это орган или здание? здание.
+лёгкое — это орган, который принимает воздух. что такое лёгкое? орган, который принимает воздух.
+чистое железо — это металл, который ржавеет на воздухе. чистое железо — это число или металл? металл.
+глагол — это слово, которое называет действие. что такое глагол? слово, которое называет действие.
 ручка — это инструмент, который пишет. ручка — это растение или инструмент? инструмент.
 рыба — это животное, которое плавает. что такое рыба? животное, которое плавает.
 пчела — это животное, которое собирает мёд. пчела — это сосуд или животное? животное.
 стул — это мебель, которая вмещает одного человека. что такое стул? мебель, которая вмещает одного человека.
 будильник — это прибор, который показывает время. будильник — это здание или прибор? прибор.
 школа — это здание, которое учит детей. что такое школа? здание, которое учит детей.
-пальто — это одежда, которая греет человека. пальто — это животное или одежда? одежда.
-ложка — это инструмент, который черпает. что такое ложка? инструмент, который черпает.
-рыба — это животное, которое плавает. рыба — это сосуд или животное? животное.
-чашка — это сосуд, который держит воду. что такое чашка? сосуд, который держит воду.
-стул — это мебель, которая вмещает одного человека. стул — это транспорт или мебель? мебель.
-лодка — это транспорт, который плывёт по воде. что такое лодка? транспорт, который плывёт по воде.
-школа — это здание, которое учит детей. школа — это инструмент или здание? здание.
-ложка — это инструмент, который черпает. ложка — это растение или инструмент? инструмент.
-роза — это растение, которое цветёт. что такое роза? растение, которое цветёт.
-чашка — это сосуд, который держит воду. чашка — это прибор или сосуд? сосуд.
-лодка — это транспорт, который плывёт по воде. лодка — это одежда или транспорт? транспорт.
-шапка — это одежда, которая покрывает голову. что такое шапка? одежда, которая покрывает голову.
-лошадь — это животное, которое бегает. что такое лошадь? животное, которое бегает.
-роза — это растение, которое цветёт. роза — это мебель или растение? растение.
-стол — это мебель, которая держит тарелки. что такое стол? мебель, которая держит тарелки.
-пекарня — это здание, которое печёт хлеб. что такое пекарня? здание, которое печёт хлеб.
-шапка — это одежда, которая покрывает голову. шапка — это животное или одежда? одежда.
+пальто — это одежда, которая греет человека. пальто — это вещество или одежда? одежда.
+простое число — это число, которое имеет ровно два делителя. простое число — это слово или число? число.
+пальто — это одежда, которая греет человека. что такое пальто? одежда, которая греет человека.
+тяготение — это сила, которая притягивает тела. тяготение — это организм или сила? сила.
+тяготение — это сила, которая притягивает тела. что такое тяготение? сила, которая притягивает тела.
 ist ein Messer ein Werkzeug oder eine Pflanze? ein Werkzeug.
 ein Vogel ist ein Tier, das fliegt. was ist ein Vogel? ein Tier, das fliegt.
 ein Pferd ist ein Tier, das läuft. ist ein Pferd ein Gefäß oder ein Tier? ein Tier.
@@ -15107,130 +14983,160 @@ eine Flasche ist ein Gefäß, das hält Milch. was ist eine Flasche? ein Gefäß
 ein Tisch ist ein Möbelstück, das trägt Teller. ist ein Tisch ein Fahrzeug oder ein Möbelstück? ein Möbelstück.
 ist eine Lampe ein Gerät oder ein Gebäude? ein Gerät.
 ein Fahrrad ist ein Fahrzeug, das rollt auf zwei Rädern. was ist ein Fahrrad? ein Fahrzeug, das rollt auf zwei Rädern.
-eine Bäckerei ist ein Gebäude, das backt Brot. ist eine Bäckerei ein Werkzeug oder ein Gebäude? ein Gebäude.
-ist eine Mütze eine Kleidung oder ein Tier? eine Kleidung.
-ein Hammer ist ein Werkzeug, das schlägt. was ist ein Hammer? ein Werkzeug, das schlägt.
-ein Vogel ist ein Tier, das fliegt. ist ein Vogel ein Gefäß oder ein Tier? ein Tier.
-ist ein Pferd ein Tier oder ein Gefäß? ein Tier.
-eine Eiche ist eine Pflanze, die wächst hoch. was ist eine Eiche? eine Pflanze, die wächst hoch.
-eine Flasche ist ein Gefäß, das hält Milch. ist eine Flasche ein Gerät oder ein Gefäß? ein Gefäß.
-ist ein Tisch ein Möbelstück oder ein Fahrzeug? ein Möbelstück.
-ein Auto ist ein Fahrzeug, das fährt Menschen. was ist ein Auto? ein Fahrzeug, das fährt Menschen.
-ein Fahrrad ist ein Fahrzeug, das rollt auf zwei Rädern. ist ein Fahrrad eine Kleidung oder ein Fahrzeug? ein Fahrzeug.
-ist eine Bäckerei ein Gebäude oder ein Werkzeug? ein Gebäude.
-ein Stift ist ein Werkzeug, das schreibt. was ist ein Stift? ein Werkzeug, das schreibt.
-ein Hammer ist ein Werkzeug, das schlägt. ist ein Hammer eine Pflanze oder ein Werkzeug? ein Werkzeug.
-ist ein Vogel ein Tier oder ein Gefäß? ein Tier.
-eine Biene ist ein Tier, das sammelt Honig. was ist eine Biene? ein Tier, das sammelt Honig.
-eine Eiche ist eine Pflanze, die wächst hoch. ist eine Eiche ein Möbelstück oder eine Pflanze? eine Pflanze.
-ist eine Flasche ein Gefäß oder ein Gerät? ein Gefäß.
-ein Wecker ist ein Gerät, das zeigt die Zeit. was ist ein Wecker? ein Gerät, das zeigt die Zeit.
-ein Auto ist ein Fahrzeug, das fährt Menschen. ist ein Auto eine Kleidung oder ein Fahrzeug? ein Fahrzeug.
-ein Mantel ist eine Kleidung, die wärmt einen Menschen. was ist ein Mantel? eine Kleidung, die wärmt einen Menschen.
-ein Stift ist ein Werkzeug, das schreibt. ist ein Stift eine Pflanze oder ein Werkzeug? ein Werkzeug.
-ein Fisch ist ein Tier, das schwimmt. was ist ein Fisch? ein Tier, das schwimmt.
-ein Mantel ist eine Kleidung, die wärmt einen Menschen. ist ein Mantel ein Tier oder eine Kleidung? eine Kleidung.
-eine Rose ist eine Pflanze, die blüht. was ist eine Rose? eine Pflanze, die blüht.
-eine Mütze ist eine Kleidung, die bedeckt den Kopf. was ist eine Mütze? eine Kleidung, die bedeckt den Kopf.
+eine Bäckerei ist ein Gebäude, das backt Brot. ist eine Bäckerei ein Organ oder ein Gebäude? ein Gebäude.
+ist eine Mütze eine Kleidung oder ein Stoff? eine Kleidung.
+flüssiges Wasser ist ein Stoff, der gefriert bei null. was ist flüssiges Wasser? ein Stoff, der gefriert bei null.
+ein rechtwinkliges Dreieck ist eine Figur, die hat einen rechten Winkel. ist ein rechtwinkliges Dreieck eine Kraft oder eine Figur? eine Figur.
+ist eine gerade Zahl eine Zahl oder ein Wort? eine Zahl.
+eine grüne Pflanze ist ein Organismus, der macht sich selbst Nahrung. was ist eine grüne Pflanze? ein Organismus, der macht sich selbst Nahrung.
+ein Messer ist ein Werkzeug, das schneidet. ist ein Messer eine Pflanze oder ein Werkzeug? ein Werkzeug.
+ist ein Löffel ein Werkzeug oder eine Pflanze? ein Werkzeug.
+ein Pferd ist ein Tier, das läuft. was ist ein Pferd? ein Tier, das läuft.
 eine Rose ist eine Pflanze, die blüht. ist eine Rose ein Möbelstück oder eine Pflanze? eine Pflanze.
-eine Mütze ist eine Kleidung, die bedeckt den Kopf. ist eine Mütze ein Tier oder eine Kleidung? eine Kleidung.
-птица — это животное, которое летает. птица — это мебель или животное? животное.
-стол — это мебель, которая держит тарелки. стол — это здание или мебель? мебель.
-стул — это мебель, которая вмещает одного человека. стул — это здание или мебель? мебель.
-шапка — это одежда, которая покрывает голову. шапка — это растение или одежда? одежда.
-пальто — это одежда, которая греет человека. пальто — это растение или одежда? одежда.
-стол — это мебель, которая держит тарелки. стол — это мебель или прибор? мебель.
-eine Rose ist eine Pflanze, die blüht. ist eine Rose eine Pflanze oder ein Gefäß? eine Pflanze.
-eine Mütze ist eine Kleidung, die bedeckt den Kopf. ist eine Mütze eine Pflanze oder eine Kleidung? eine Kleidung.
-ein Mantel ist eine Kleidung, die wärmt einen Menschen. ist ein Mantel eine Pflanze oder eine Kleidung? eine Kleidung.
+ist eine Tasse ein Gefäß oder ein Gerät? ein Gefäß.
+ein Tisch ist ein Möbelstück, das trägt Teller. was ist ein Tisch? ein Möbelstück, das trägt Teller.
+eine Lampe ist ein Gerät, das gibt Licht. ist eine Lampe ein Gebäude oder ein Gerät? ein Gerät.
+ist ein Boot ein Fahrzeug oder eine Kleidung? ein Fahrzeug.
+eine Bäckerei ist ein Gebäude, das backt Brot. was ist eine Bäckerei? ein Gebäude, das backt Brot.
+eine Mütze ist eine Kleidung, die bedeckt den Kopf. ist eine Mütze ein Stoff oder eine Kleidung? eine Kleidung.
+ist die Lunge ein Organ oder ein Metall? ein Organ.
+ein rechtwinkliges Dreieck ist eine Figur, die hat einen rechten Winkel. was ist ein rechtwinkliges Dreieck? eine Figur, die hat einen rechten Winkel.
+eine gerade Zahl ist eine Zahl, die teilt sich durch zwei. ist eine gerade Zahl ein Wort oder eine Zahl? eine Zahl.
+ein Messer ist ein Werkzeug, das schneidet. was ist ein Messer? ein Werkzeug, das schneidet.
+ein Löffel ist ein Werkzeug, das schöpft. ist ein Löffel eine Pflanze oder ein Werkzeug? ein Werkzeug.
+eine Rose ist eine Pflanze, die blüht. was ist eine Rose? eine Pflanze, die blüht.
+eine Tasse ist ein Gefäß, das hält Wasser. ist eine Tasse ein Gerät oder ein Gefäß? ein Gefäß.
+eine Lampe ist ein Gerät, das gibt Licht. was ist eine Lampe? ein Gerät, das gibt Licht.
+ein Boot ist ein Fahrzeug, das fährt über Wasser. ist ein Boot eine Kleidung oder ein Fahrzeug? ein Fahrzeug.
+eine Mütze ist eine Kleidung, die bedeckt den Kopf. was ist eine Mütze? eine Kleidung, die bedeckt den Kopf.
+die Lunge ist ein Organ, das nimmt Luft auf. ist die Lunge ein Metall oder ein Organ? ein Organ.
+eine gerade Zahl ist eine Zahl, die teilt sich durch zwei. was ist eine gerade Zahl? eine Zahl, die teilt sich durch zwei.
+ein Löffel ist ein Werkzeug, das schöpft. was ist ein Löffel? ein Werkzeug, das schöpft.
+ein Mantel ist eine Kleidung, die wärmt einen Menschen. ist ein Mantel ein Stoff oder eine Kleidung? eine Kleidung.
+eine Primzahl ist eine Zahl, die hat genau zwei Teiler. ist eine Primzahl ein Wort oder eine Zahl? eine Zahl.
+eine Eiche ist eine Pflanze, die wächst hoch. ist eine Eiche ein Möbelstück oder eine Pflanze? eine Pflanze.
+ein Mantel ist eine Kleidung, die wärmt einen Menschen. was ist ein Mantel? eine Kleidung, die wärmt einen Menschen.
+eine Primzahl ist eine Zahl, die hat genau zwei Teiler. was ist eine Primzahl? eine Zahl, die hat genau zwei Teiler.
+die Schwerkraft ist eine Kraft, die zieht Körper zusammen. ist die Schwerkraft ein Organismus oder eine Kraft? eine Kraft.
+eine Eiche ist eine Pflanze, die wächst hoch. was ist eine Eiche? eine Pflanze, die wächst hoch.
+flüssiges Wasser ist ein Stoff, der gefriert bei null. ist flüssiges Wasser eine Figur oder ein Stoff? ein Stoff.
+die Schwerkraft ist eine Kraft, die zieht Körper zusammen. was ist die Schwerkraft? eine Kraft, die zieht Körper zusammen.
+eine grüne Pflanze ist ein Organismus, der macht sich selbst Nahrung. ist eine grüne Pflanze ein Tier oder ein Organismus? ein Organismus.
+шапка — это одежда, которая покрывает голову. шапка — это металл или одежда? одежда.
+пальто — это одежда, которая греет человека. пальто — это металл или одежда? одежда.
+тяготение — это сила, которая притягивает тела. тяготение — это сила или слово? сила.
 eine Eiche ist eine Pflanze, die wächst hoch. ist eine Eiche ein Gerät oder eine Pflanze? eine Pflanze.
-eine Rose ist eine Pflanze, die blüht. ist eine Rose ein Gerät oder eine Pflanze? eine Pflanze.
+eine grüne Pflanze ist ein Organismus, der macht sich selbst Nahrung. ist eine grüne Pflanze eine Pflanze oder ein Organismus? ein Organismus.
+flüssiges Wasser ist ein Stoff, der gefriert bei null. ist flüssiges Wasser eine Zahl oder ein Stoff? ein Stoff.
+eine grüne Pflanze ist ein Organismus, der macht sich selbst Nahrung. ist eine grüne Pflanze ein Organismus oder ein Werkzeug? ein Organismus.
+flüssiges Wasser ist ein Stoff, der gefriert bei null. ist flüssiges Wasser ein Stoff oder ein Metall? ein Stoff.
 a bee is an animal that gathers honey. what does a bee do? a bee gathers honey.
 a bakery is a building that bakes bread. what does a bakery do? a bakery bakes bread.
-a cup is a vessel that holds water. what does a cup do? a cup holds water.
 a pen is a tool that writes. what does a pen do? a pen writes.
 a table is a piece of furniture that holds plates. what does a table do? a table holds plates.
-a spoon is a tool that scoops. what does a spoon do? a spoon scoops.
-a car is a vehicle that carries people. what does a car do? a car carries people.
+pure iron is a metal that rusts in air. what does pure iron do? pure iron rusts in air.
 a horse is an animal that runs. what does a horse do? a horse runs.
 a school is a building that teaches children. what does a school do? a school teaches children.
+a green plant is an organism that makes its own food. what does a green plant do? a green plant makes its own food.
+a chair is a piece of furniture that seats one person. what does a chair do? a chair seats one person.
 пчела — это животное, которое собирает мёд. что делает пчела? пчела собирает мёд.
 пекарня — это здание, которое печёт хлеб. что делает пекарня? пекарня печёт хлеб.
-чашка — это сосуд, который держит воду. что делает чашка? чашка держит воду.
 ручка — это инструмент, который пишет. что делает ручка? ручка пишет.
 стол — это мебель, которая держит тарелки. что делает стол? стол держит тарелки.
-ложка — это инструмент, который черпает. что делает ложка? ложка черпает.
-автомобиль — это транспорт, который везёт людей. что делает автомобиль? автомобиль везёт людей.
+чистое железо — это металл, который ржавеет на воздухе. что делает чистое железо? чистое железо ржавеет на воздухе.
 лошадь — это животное, которое бегает. что делает лошадь? лошадь бегает.
 школа — это здание, которое учит детей. что делает школа? школа учит детей.
-дуб — это растение, которое растёт высоким. что делает дуб? дуб растёт высоким.
-шапка — это одежда, которая покрывает голову. что делает шапка? шапка покрывает голову.
+зелёное растение — это организм, который готовит себе пищу. что делает зелёное растение? зелёное растение готовит себе пищу.
 стул — это мебель, которая вмещает одного человека. что делает стул? стул вмещает одного человека.
-молоток — это инструмент, который бьёт. что делает молоток? молоток бьёт.
-лампа — это прибор, который даёт свет. что делает лампа? лампа даёт свет.
+жидкая вода — это вещество, которое замерзает при нуле. что делает жидкая вода? жидкая вода замерзает при нуле.
 рыба — это животное, которое плавает. что делает рыба? рыба плавает.
 велосипед — это транспорт, который катится на двух колёсах. что делает велосипед? велосипед катится на двух колёсах.
-роза — это растение, которое цветёт. что делает роза? роза цветёт.
-пальто — это одежда, которая греет человека. что делает пальто? пальто греет человека.
+глагол — это слово, которое называет действие. что делает глагол? глагол называет действие.
 бутылка — это сосуд, который держит молоко. что делает бутылка? бутылка держит молоко.
-нож — это инструмент, который режет. что делает нож? нож режет.
+лёгкое — это орган, который принимает воздух. что делает лёгкое? лёгкое принимает воздух.
 птица — это животное, которое летает. что делает птица? птица летает.
+лодка — это транспорт, который плывёт по воде. что делает лодка? лодка плывёт по воде.
+тяготение — это сила, которая притягивает тела. что делает тяготение? тяготение притягивает тела.
+чашка — это сосуд, который держит воду. что делает чашка? чашка держит воду.
+сердце человека — это орган, который качает кровь. что делает сердце человека? сердце человека качает кровь.
+чётное число — это число, которое делится на два. что делает чётное число? чётное число делится на два.
+шапка — это одежда, которая покрывает голову. что делает шапка? шапка покрывает голову.
+пальто — это одежда, которая греет человека. что делает пальто? пальто греет человека.
+прямоугольный треугольник — это фигура, которая имеет прямой угол. что делает прямоугольный треугольник? прямоугольный треугольник имеет прямой угол.
 eine Biene ist ein Tier, das sammelt Honig. was macht eine Biene? eine Biene sammelt Honig.
 eine Bäckerei ist ein Gebäude, das backt Brot. was macht eine Bäckerei? eine Bäckerei backt Brot.
-eine Tasse ist ein Gefäß, das hält Wasser. was macht eine Tasse? eine Tasse hält Wasser.
 ein Stift ist ein Werkzeug, das schreibt. was macht ein Stift? ein Stift schreibt.
 ein Tisch ist ein Möbelstück, das trägt Teller. was macht ein Tisch? ein Tisch trägt Teller.
-ein Löffel ist ein Werkzeug, das schöpft. was macht ein Löffel? ein Löffel schöpft.
-ein Auto ist ein Fahrzeug, das fährt Menschen. was macht ein Auto? ein Auto fährt Menschen.
+reines Eisen ist ein Metall, das rostet an der Luft. was macht reines Eisen? reines Eisen rostet an der Luft.
 ein Pferd ist ein Tier, das läuft. was macht ein Pferd? ein Pferd läuft.
 eine Schule ist ein Gebäude, das lehrt Kinder. was macht eine Schule? eine Schule lehrt Kinder.
+eine grüne Pflanze ist ein Organismus, der macht sich selbst Nahrung. was macht eine grüne Pflanze? eine grüne Pflanze macht sich selbst Nahrung.
+ein Stuhl ist ein Möbelstück, das trägt einen Menschen. was macht ein Stuhl? ein Stuhl trägt einen Menschen.
+flüssiges Wasser ist ein Stoff, der gefriert bei null. was macht flüssiges Wasser? flüssiges Wasser gefriert bei null.
+ein Fisch ist ein Tier, das schwimmt. was macht ein Fisch? ein Fisch schwimmt.
+die Schwerkraft ist eine Kraft, die zieht Körper zusammen. was macht die Schwerkraft? die Schwerkraft zieht Körper zusammen.
+eine grüne Pflanze ist ein Organismus, der macht sich selbst Nahrung. ist eine grüne Pflanze ein Organismus oder ein Tier? ein Organismus.
+flüssiges Wasser ist ein Stoff, der gefriert bei null. ist flüssiges Wasser ein Stoff oder eine Figur? ein Stoff.
+eine gerade Zahl ist eine Zahl, die teilt sich durch zwei. was macht eine gerade Zahl? eine gerade Zahl teilt sich durch zwei.
 eine Eiche ist eine Pflanze, die wächst hoch. was macht eine Eiche? eine Eiche wächst hoch.
 eine Mütze ist eine Kleidung, die bedeckt den Kopf. was macht eine Mütze? eine Mütze bedeckt den Kopf.
+eine Primzahl ist eine Zahl, die hat genau zwei Teiler. was macht eine Primzahl? eine Primzahl hat genau zwei Teiler.
 eine Rose ist eine Pflanze, die blüht. was macht eine Rose? eine Rose blüht.
 ein Mantel ist eine Kleidung, die wärmt einen Menschen. was macht ein Mantel? ein Mantel wärmt einen Menschen.
+ein rechtwinkliges Dreieck ist eine Figur, die hat einen rechten Winkel. was macht ein rechtwinkliges Dreieck? ein rechtwinkliges Dreieck hat einen rechten Winkel.
 a knife is a tool that cuts. which tool cuts? a knife.
 a bicycle is a vehicle that rolls on two wheels. which vehicle rolls on two wheels? a bicycle.
-a chair is a piece of furniture that seats one person. which piece of furniture seats one person? a chair.
-a horse is an animal that runs. which animal runs? a horse.
-a pen is a tool that writes. which tool writes? a pen.
-a boat is a vehicle that crosses water. which vehicle crosses water? a boat.
-a bottle is a vessel that holds milk. which vessel holds milk? a bottle.
+a hammer is a tool that strikes. which tool strikes? a hammer.
+a school is a building that teaches children. which building teaches children? a school.
+a spoon is a tool that scoops. which tool scoops? a spoon.
+a bakery is a building that bakes bread. which building bakes bread? a bakery.
+a bird is an animal that flies. which animal flies? a bird.
+a coat is a garment that keeps a person warm. which garment keeps a person warm? a coat.
 a fish is an animal that swims. which animal swims? a fish.
-a hat is a garment that covers the head. which garment covers the head? a hat.
 нож — это инструмент, который режет. какой инструмент режет? нож.
 велосипед — это транспорт, который катится на двух колёсах. какой транспорт катится на двух колёсах? велосипед.
-стул — это мебель, которая вмещает одного человека. какая мебель вмещает одного человека? стул.
-лошадь — это животное, которое бегает. какое животное бегает? лошадь.
-ручка — это инструмент, который пишет. какой инструмент пишет? ручка.
-лодка — это транспорт, который плывёт по воде. какой транспорт плывёт по воде? лодка.
-бутылка — это сосуд, который держит молоко. какой сосуд держит молоко? бутылка.
-рыба — это животное, которое плавает. какое животное плавает? рыба.
-шапка — это одежда, которая покрывает голову. какая одежда покрывает голову? шапка.
-автомобиль — это транспорт, который везёт людей. какой транспорт везёт людей? автомобиль.
-чашка — это сосуд, который держит воду. какой сосуд держит воду? чашка.
-птица — это животное, которое летает. какое животное летает? птица.
-пальто — это одежда, которая греет человека. какая одежда греет человека? пальто.
-лампа — это прибор, который даёт свет. какой прибор даёт свет? лампа.
-дуб — это растение, которое растёт высоким. какое растение растёт высоким? дуб.
+молоток — это инструмент, который бьёт. какой инструмент бьёт? молоток.
+школа — это здание, которое учит детей. какое здание учит детей? школа.
 ложка — это инструмент, который черпает. какой инструмент черпает? ложка.
 пекарня — это здание, которое печёт хлеб. какое здание печёт хлеб? пекарня.
-роза — это растение, которое цветёт. какое растение цветёт? роза.
-школа — это здание, которое учит детей. какое здание учит детей? школа.
-стол — это мебель, которая держит тарелки. какая мебель держит тарелки? стол.
+птица — это животное, которое летает. какое животное летает? птица.
+пальто — это одежда, которая греет человека. какая одежда греет человека? пальто.
+рыба — это животное, которое плавает. какое животное плавает? рыба.
+шапка — это одежда, которая покрывает голову. какая одежда покрывает голову? шапка.
+лошадь — это животное, которое бегает. какое животное бегает? лошадь.
+сердце человека — это орган, который качает кровь. какой орган качает кровь? сердце человека.
 пчела — это животное, которое собирает мёд. какое животное собирает мёд? пчела.
+лёгкое — это орган, который принимает воздух. какой орган принимает воздух? лёгкое.
+роза — это растение, которое цветёт. какое растение цветёт? роза.
+жидкая вода — это вещество, которое замерзает при нуле. какое вещество замерзает при нуле? жидкая вода.
+дуб — это растение, которое растёт высоким. какое растение растёт высоким? дуб.
+чистое железо — это металл, который ржавеет на воздухе. какой металл ржавеет на воздухе? чистое железо.
+чашка — это сосуд, который держит воду. какой сосуд держит воду? чашка.
+прямоугольный треугольник — это фигура, которая имеет прямой угол. какая фигура имеет прямой угол? прямоугольный треугольник.
+бутылка — это сосуд, который держит молоко. какой сосуд держит молоко? бутылка.
+стул — это мебель, которая вмещает одного человека. какая мебель вмещает одного человека? стул.
+стол — это мебель, которая держит тарелки. какая мебель держит тарелки? стол.
+тяготение — это сила, которая притягивает тела. какая сила притягивает тела? тяготение.
 ein Messer ist ein Werkzeug, das schneidet. welches Werkzeug schneidet? ein Messer.
 ein Fahrrad ist ein Fahrzeug, das rollt auf zwei Rädern. welches Fahrzeug rollt auf zwei Rädern? ein Fahrrad.
-ein Stuhl ist ein Möbelstück, das trägt einen Menschen. welches Möbelstück trägt einen Menschen? ein Stuhl.
-ein Pferd ist ein Tier, das läuft. welches Tier läuft? ein Pferd.
-ein Stift ist ein Werkzeug, das schreibt. welches Werkzeug schreibt? ein Stift.
-ein Boot ist ein Fahrzeug, das fährt über Wasser. welches Fahrzeug fährt über Wasser? ein Boot.
-eine Flasche ist ein Gefäß, das hält Milch. welches Gefäß hält Milch? eine Flasche.
+ein Hammer ist ein Werkzeug, das schlägt. welches Werkzeug schlägt? ein Hammer.
+eine Schule ist ein Gebäude, das lehrt Kinder. welches Gebäude lehrt Kinder? eine Schule.
+flüssiges Wasser ist ein Stoff, der gefriert bei null. ist flüssiges Wasser ein Stoff oder eine Zahl? ein Stoff.
+ein Löffel ist ein Werkzeug, das schöpft. welches Werkzeug schöpft? ein Löffel.
+eine Bäckerei ist ein Gebäude, das backt Brot. welches Gebäude backt Brot? eine Bäckerei.
+ein Vogel ist ein Tier, das fliegt. welches Tier fliegt? ein Vogel.
+ein Mantel ist eine Kleidung, die wärmt einen Menschen. welche Kleidung wärmt einen Menschen? ein Mantel.
 ein Fisch ist ein Tier, das schwimmt. welches Tier schwimmt? ein Fisch.
 eine Mütze ist eine Kleidung, die bedeckt den Kopf. welche Kleidung bedeckt den Kopf? eine Mütze.
-ein Auto ist ein Fahrzeug, das fährt Menschen. welches Fahrzeug fährt Menschen? ein Auto.
-ein Mantel ist eine Kleidung, die wärmt einen Menschen. welche Kleidung wärmt einen Menschen? ein Mantel.
-eine Eiche ist eine Pflanze, die wächst hoch. welche Pflanze wächst hoch? eine Eiche.
+ein Pferd ist ein Tier, das läuft. welches Tier läuft? ein Pferd.
 eine Rose ist eine Pflanze, die blüht. welche Pflanze blüht? eine Rose.
+flüssiges Wasser ist ein Stoff, der gefriert bei null. welcher Stoff gefriert bei null? flüssiges Wasser.
+eine Eiche ist eine Pflanze, die wächst hoch. welche Pflanze wächst hoch? eine Eiche.
+ein rechtwinkliges Dreieck ist eine Figur, die hat einen rechten Winkel. welche Figur hat einen rechten Winkel? ein rechtwinkliges Dreieck.
+eine Primzahl ist eine Zahl, die hat genau zwei Teiler. welche Zahl hat genau zwei Teiler? eine Primzahl.
+eine gerade Zahl ist eine Zahl, die teilt sich durch zwei. welche Zahl teilt sich durch zwei? eine gerade Zahl.
+die Schwerkraft ist eine Kraft, die zieht Körper zusammen. welche Kraft zieht Körper zusammen? die Schwerkraft.
+eine grüne Pflanze ist ein Organismus, der macht sich selbst Nahrung. welcher Organismus macht sich selbst Nahrung? eine grüne Pflanze.
 
 the trip takes 2 days. how long does the trip take? 2 days.
 the meeting lasts 2 hours. how long does the meeting last? 2 hours.
@@ -29884,10 +29790,8 @@ heading level one: city.
 # свет.
 ### forest.
 заголовок уровня три: знание.
-### сила.
 heading level two: hill.
 заголовок уровня два: звук.
-## слово.
 heading level one: bridge.
 заголовок уровня один: закон.
 # город.
@@ -29905,16 +29809,13 @@ heading level one: water.
 # мост.
 heading level three: forest.
 ### knowledge.
-заголовок уровня три: сила.
 ### время.
 ## sound.
-заголовок уровня два: слово.
 ## круг.
 heading level one: field.
 # law.
 заголовок уровня один: город.
 heading level three: form.
-### point.
 заголовок уровня три: линия.
 ### лес.
 heading level two: schema.
@@ -29924,18 +29825,15 @@ heading level one: matter.
 # light.
 заголовок уровня один: мост.
 heading level three: knowledge.
-### force.
 заголовок уровня три: время.
 ### форма.
 heading level two: sound.
-## word.
 заголовок уровня два: круг.
 ## схема.
 heading level one: law.
 # city.
 заголовок уровня один: вода.
 # материя.
-### line.
 заголовок уровня три: лес.
 ### знание.
 heading level two: measure.
@@ -29945,11 +29843,9 @@ heading level one: light.
 # bridge.
 заголовок уровня один: поле.
 # закон.
-heading level three: force.
 ### time.
 заголовок уровня три: форма.
 ### точка.
-heading level two: word.
 ## circle.
 список из двух пунктов: схема и город.
 numbered list of two items: city and form.
@@ -30025,7 +29921,6 @@ numbered list of two items: law and time.
 список из двух пунктов: вода и точка.
 - материя.
 numbered list of two items: point and circle.
-1. line.
 2. schema.
 список из двух пунктов: лес и мера.
 - знание.
@@ -30228,7 +30123,6 @@ let law = 4;
 a code block of one line: let force = 9;
 let time = 3;
 код-блок из одной строки: let form = 6;
-let point = 9;
 a code block of one line: let word = 5;
 let circle = 8;
 `knowledge` is read as code knowledge.
@@ -30600,16 +30494,13 @@ heading level one: water.
 # мост.
 heading level three: forest.
 ### knowledge.
-заголовок уровня три: сила.
 ### время.
 ## sound.
-заголовок уровня два: слово.
 ## круг.
 heading level one: field.
 # law.
 заголовок уровня один: город.
 heading level three: form.
-### point.
 заголовок уровня три: линия.
 ### лес.
 heading level two: schema.
@@ -30619,18 +30510,15 @@ heading level one: matter.
 # light.
 заголовок уровня один: мост.
 heading level three: knowledge.
-### force.
 заголовок уровня три: время.
 ### форма.
 heading level two: sound.
-## word.
 заголовок уровня два: круг.
 ## схема.
 heading level one: law.
 # city.
 заголовок уровня один: вода.
 # материя.
-### line.
 заголовок уровня три: лес.
 ### знание.
 heading level two: measure.
@@ -30640,11 +30528,9 @@ heading level one: light.
 # bridge.
 заголовок уровня один: поле.
 # закон.
-heading level three: force.
 ### time.
 заголовок уровня три: форма.
 ### точка.
-heading level two: word.
 ## circle.
 заголовок уровня два: схема.
 ## мера.
@@ -30653,10 +30539,8 @@ heading level one: city.
 # свет.
 ### forest.
 заголовок уровня три: знание.
-### сила.
 heading level two: hill.
 заголовок уровня два: звук.
-## слово.
 heading level one: bridge.
 1. schema.
 2. city.
@@ -30664,7 +30548,6 @@ heading level one: bridge.
 - материя.
 numbered list of two items: water and point.
 1. matter.
-2. line.
 список из двух пунктов: свет и лес.
 - знание.
 numbered list of two items: forest and measure.
@@ -30681,7 +30564,6 @@ numbered list of two items: field and force.
 2. time.
 список из двух пунктов: город и форма.
 numbered list of two items: form and word.
-1. point.
 2. circle.
 список из двух пунктов: линия и схема.
 numbered list of two items: schema and city.
@@ -30693,12 +30575,9 @@ numbered list of two items: matter and line.
 2. forest.
 список из двух пунктов: мост и знание.
 numbered list of two items: knowledge and hill.
-1. force.
-2. number.
 список из двух пунктов: время и звук.
 - форма.
 numbered list of two items: sound and bridge.
-1. word.
 2. field.
 список из двух пунктов: круг и закон.
 - схема.
@@ -30740,12 +30619,10 @@ numbered list of two items: hill and matter.
 список из двух пунктов: звук и мост.
 numbered list of two items: bridge and knowledge.
 1. field.
-2. force.
 список из двух пунктов: закон и время.
 - форма.
 numbered list of two items: time and sound.
 1. form.
-2. word.
 список из двух пунктов: точка и круг.
 - схема.
 numbered list of two items: circle and law.
@@ -30839,7 +30716,6 @@ let city = 8;
 a code block of one line: let time = 4;
 let form = 7;
 код-блок из одной строки: let point = 1;
-let line = 4;
 a code block of one line: let circle = 9;
 let schema = 9;
 код-блок из одной строки: let measure = 3;
@@ -30861,23 +30737,19 @@ let law = 5;
 код-блок из одной строки: let city = 8;
 let water = 2;
 a code block of one line: let form = 7;
-let point = 1;
 код-блок из одной строки: let line = 4;
 let forest = 7;
 a code block of one line: let schema = 9;
 let measure = 3;
 код-блок из одной строки: let hill = 6;
-let number = 9;
 a code block of one line: let matter = 5;
 let light = 8;
 код-блок из одной строки: let bridge = 2;
 let field = 2;
 a code block of one line: let knowledge = 7;
-let force = 1;
 код-блок из одной строки: let time = 4;
 let form = 7;
 a code block of one line: let sound = 3;
-let word = 6;
 код-блок из одной строки: let circle = 9;
 let schema = 9;
 a code block of one line: let law = 5;
@@ -30889,7 +30761,6 @@ a code block of one line: let point = 1;
 let knowledge = 7;
 a code block of one line: let measure = 3;
 let hill = 6;
-код-блок из одной строки: let number = 9;
 let sound = 3;
 a code block of one line: let light = 8;
 let bridge = 2;
@@ -30906,13 +30777,10 @@ a code block of one line: let city = 8;
 let water = 2;
 код-блок из одной строки: let matter = 5;
 let light = 8;
-a code block of one line: let line = 4;
 let forest = 7;
 код-блок из одной строки: let knowledge = 7;
-let force = 1;
 a code block of one line: let hill = 6;
 код-блок из одной строки: let sound = 3;
-let word = 6;
 a code block of one line: let bridge = 2;
 `схема` читается как код схема.
 *city* is read as italic city.
@@ -31097,7 +30965,6 @@ the sign _ is read as index.
 знак ^ читается как степень.
 the sign ` is read as code.
 заголовок уровня три: знание.
-### force.
 heading level three: time.
 # материя.
 заголовок уровня один: свет.
@@ -31109,7 +30976,6 @@ heading level two: sound.
 ### линия.
 заголовок уровня три: лес.
 ### knowledge.
-heading level three: force.
 заголовок уровня один: материя.
 # light.
 heading level one: bridge.
@@ -31130,26 +30996,21 @@ heading level one: light.
 heading level two: hill.
 ### форма.
 заголовок уровня три: точка.
-### line.
 heading level three: forest.
 # закон.
 заголовок уровня один: город.
 heading level one: matter.
-## слово.
 заголовок уровня два: круг.
 ## schema.
 heading level two: measure.
 ### время.
 заголовок уровня три: форма.
-### point.
 заголовок уровня один: закон.
 # city.
 heading level one: water.
 ## звук.
-заголовок уровня два: слово.
 ## circle.
 heading level two: schema.
-### сила.
 заголовок уровня три: время.
 ### form.
 # мост.
@@ -31157,10 +31018,8 @@ heading level two: schema.
 # law.
 heading level one: city.
 заголовок уровня два: звук.
-## word.
 heading level two: circle.
 ### знание.
-заголовок уровня три: сила.
 ### time.
 heading level three: form.
 # свет.
@@ -31168,7 +31027,6 @@ heading level three: form.
 heading level one: law.
 ## гора.
 ## sound.
-heading level two: word.
 ### лес.
 список из двух пунктов: мера и вода.
 1. hill.
@@ -31212,7 +31070,6 @@ numbered list of two items: water and point.
 numbered list of two items: schema and city.
 список из двух пунктов: время и звук.
 1. form.
-2. word.
 numbered list of two items: point and circle.
 - знание.
 список из двух пунктов: поле и сила.
@@ -31220,7 +31077,6 @@ numbered list of two items: point and circle.
 2. time.
 numbered list of two items: city and form.
 список из двух пунктов: звук и мост.
-1. word.
 2. field.
 numbered list of two items: circle and law.
 - знание.
@@ -31230,7 +31086,6 @@ numbered list of two items: circle and law.
 numbered list of two items: form and word.
 список из двух пунктов: мост и знание.
 1. field.
-2. force.
 numbered list of two items: law and time.
 - материя.
 список из двух пунктов: число и свет.
@@ -31238,7 +31093,6 @@ numbered list of two items: law and time.
 2. bridge.
 numbered list of two items: word and field.
 список из двух пунктов: знание и гора.
-1. force.
 numbered list of two items: time and sound.
 - материя.
 список из двух пунктов: свет и лес.
@@ -31343,7 +31197,6 @@ table: columns force and time; value row 3 and 9.
 table: columns bridge and field; value row 6 and 2.
 | схема | мера |
 код-блок из одной строки: let knowledge = 8;
-let force = 2;
 a code block of one line: let time = 5;
 let matter = 6;
 код-блок из одной строки: let light = 9;
@@ -31354,7 +31207,6 @@ let measure = 4;
 a code block of one line: let sound = 4;
 код-блок из одной строки: let forest = 8;
 let knowledge = 8;
-a code block of one line: let force = 2;
 let water = 3;
 код-блок из одной строки: let matter = 6;
 let light = 9;
@@ -31362,8 +31214,6 @@ a code block of one line: let bridge = 3;
 let schema = 1;
 код-блок из одной строки: let measure = 4;
 let hill = 7;
-a code block of one line: let number = 1;
-код-блок из одной строки: let line = 5;
 let forest = 8;
 a code block of one line: let knowledge = 8;
 let city = 9;
@@ -31375,40 +31225,32 @@ let circle = 1;
 let measure = 4;
 a code block of one line: let hill = 7;
 let form = 8;
-код-блок из одной строки: let point = 2;
 a code block of one line: let forest = 8;
 let law = 6;
 код-блок из одной строки: let city = 9;
 let water = 3;
 a code block of one line: let matter = 6;
-let word = 7;
 код-блок из одной строки: let circle = 1;
 let schema = 1;
 a code block of one line: let measure = 4;
 let time = 5;
 код-блок из одной строки: let form = 8;
-a code block of one line: let line = 5;
 let field = 3;
 код-блок из одной строки: let law = 6;
 let city = 9;
 a code block of one line: let water = 3;
 let sound = 4;
-код-блок из одной строки: let word = 7;
 let circle = 1;
 a code block of one line: let schema = 1;
-let force = 2;
 код-блок из одной строки: let time = 5;
 let form = 8;
-a code block of one line: let point = 2;
 let bridge = 3;
 код-блок из одной строки: let field = 3;
 let law = 6;
 a code block of one line: let city = 9;
 код-блок из одной строки: let sound = 4;
-let word = 7;
 a code block of one line: let circle = 1;
 let knowledge = 8;
-код-блок из одной строки: let force = 2;
 let time = 5;
 a code block of one line: let form = 8;
 let light = 9;
@@ -31416,9 +31258,7 @@ let light = 9;
 let field = 3;
 a code block of one line: let law = 6;
 let hill = 7;
-код-блок из одной строки: let number = 1;
 let sound = 4;
-a code block of one line: let word = 7;
 let forest = 8;
 **measure** is read as bold measure.
 *форма* читается как курсивная форма.
@@ -31531,21 +31371,17 @@ the sign # is read as heading.
 знак ^ читается как степень.
 знак ** читается как жирно.
 ## схема.
-заголовок уровня три: сила.
 heading level two: sound.
 # мост.
 заголовок уровня два: схема.
-### force.
 heading level one: water.
 ### точка.
 заголовок уровня один: мост.
 ## schema.
-heading level three: force.
 заголовок уровня три: точка.
 # bridge.
 heading level two: schema.
 # город.
-### point.
 heading level one: bridge.
 ### знание.
 заголовок уровня один: город.
@@ -31572,22 +31408,18 @@ heading level one: light.
 заголовок уровня один: закон.
 ## hill.
 heading level three: form.
-## слово.
 заголовок уровня три: лес.
 # law.
 heading level two: hill.
 # материя.
-заголовок уровня два: слово.
 ### forest.
 heading level one: law.
 ### время.
 заголовок уровня один: материя.
-## word.
 heading level three: forest.
 ## мера.
 заголовок уровня три: время.
 # matter.
-heading level two: word.
 заголовок уровня два: мера.
 ### time.
 heading level one: matter.
@@ -31599,9 +31431,7 @@ heading level three: time.
 заголовок уровня три: линия.
 heading level two: measure.
 заголовок уровня два: звук.
-### line.
 heading level one: field.
-### сила.
 заголовок уровня один: вода.
 ## sound.
 список из двух пунктов: время и звук.
@@ -31618,7 +31448,6 @@ numbered list of two items: matter and line.
 numbered list of two items: time and sound.
 список из двух пунктов: линия и схема.
 1. field.
-2. force.
 numbered list of two items: measure and water.
 список из двух пунктов: звук и мост.
 2. schema.
@@ -31633,7 +31462,6 @@ numbered list of two items: line and schema.
 numbered list of two items: sound and bridge.
 - знание.
 список из двух пунктов: схема и город.
-1. force.
 numbered list of two items: water and point.
 список из двух пунктов: мост и знание.
 1. schema.
@@ -31673,7 +31501,6 @@ numbered list of two items: circle and law.
 - закон.
 список из двух пунктов: гора и материя.
 1. form.
-2. word.
 numbered list of two items: light and forest.
 список из двух пунктов: закон и время.
 1. hill.
@@ -31689,7 +31516,6 @@ numbered list of two items: hill and matter.
 2. measure.
 numbered list of two items: law and time.
 список из двух пунктов: материя и линия.
-1. word.
 2. field.
 numbered list of two items: forest and measure.
 | мера | гора |
@@ -31777,16 +31603,13 @@ table: columns law and city; value row 4 and 4.
 | word | circle |
 table: columns forest and knowledge; value row 1 and 8.
 let schema = 2;
-код-блок из одной строки: let force = 3;
 let water = 4;
 a code block of one line: let sound = 5;
 let bridge = 4;
 код-блок из одной строки: let schema = 2;
-let force = 3;
 a code block of one line: let water = 4;
 код-блок из одной строки: let bridge = 4;
 let schema = 2;
-a code block of one line: let force = 3;
 let bridge = 4;
 a code block of one line: let schema = 2;
 let city = 1;
@@ -31816,22 +31639,18 @@ let forest = 9;
 код-блок из одной строки: let law = 7;
 let hill = 8;
 a code block of one line: let form = 9;
-let word = 8;
 код-блок из одной строки: let forest = 9;
 let law = 7;
 a code block of one line: let hill = 8;
 let matter = 7;
-код-блок из одной строки: let word = 8;
 let forest = 9;
 a code block of one line: let law = 7;
 let time = 6;
 код-блок из одной строки: let matter = 7;
-let word = 8;
 a code block of one line: let forest = 9;
 let measure = 5;
 код-блок из одной строки: let time = 6;
 let matter = 7;
-a code block of one line: let word = 8;
 let field = 4;
 код-блок из одной строки: let measure = 5;
 let time = 6;
@@ -31845,7 +31664,6 @@ a code block of one line: let measure = 5;
 let water = 4;
 код-блок из одной строки: let sound = 5;
 a code block of one line: let field = 4;
-let force = 3;
 код-блок из одной строки: let water = 4;
 let sound = 5;
 `знание` читается как код знание.
@@ -31961,7 +31779,6 @@ heading level two: schema.
 заголовок уровня один: закон.
 ### время.
 heading level one: matter.
-### line.
 заголовок уровня два: схема.
 ### знание.
 ### form.
@@ -31969,17 +31786,14 @@ heading level three: knowledge.
 ## hill.
 заголовок уровня один: материя.
 ### линия.
-### force.
 # law.
 ## schema.
 ### форма.
 ### forest.
 заголовок уровня три: знание.
 heading level three: form.
-### сила.
 - материя.
 numbered list of two items: form and word.
-1. word.
 2. field.
 список из двух пунктов: поле и сила.
 2. circle.
@@ -31989,7 +31803,6 @@ numbered list of two items: hill and matter.
 1. matter.
 список из двух пунктов: линия и схема.
 - схема.
-numbered list of two items: force and number.
 2. light.
 список из двух пунктов: свет и лес.
 numbered list of two items: law and time.
@@ -32010,8 +31823,6 @@ numbered list of two items: bridge and knowledge.
 2. hill.
 список из двух пунктов: гора и материя.
 numbered list of two items: word and field.
-2. force.
-список из двух пунктов: сила и число.
 numbered list of two items: point and circle.
 2. law.
 список из двух пунктов: закон и время.
@@ -32127,7 +31938,6 @@ let law = 8;
 a code block of one line: let hill = 9;
 let matter = 8;
 let schema = 3;
-a code block of one line: let force = 4;
 код-блок из одной строки: let light = 2;
 let forest = 1;
 a code block of one line: let law = 8;
@@ -32137,16 +31947,13 @@ let bridge = 5;
 a code block of one line: let schema = 3;
 let city = 2;
 код-блок из одной строки: let form = 1;
-let word = 9;
 a code block of one line: let forest = 1;
 let measure = 6;
 код-блок из одной строки: let water = 5;
 a code block of one line: let bridge = 5;
 let knowledge = 1;
 код-блок из одной строки: let hill = 9;
-a code block of one line: let word = 9;
 let field = 5;
-код-блок из одной строки: let force = 4;
 let circle = 3;
 код-блок из одной строки: let law = 8;
 a code block of one line: let matter = 8;
@@ -32158,14 +31965,12 @@ let sound = 6;
 код-блок из одной строки: let bridge = 5;
 a code block of one line: let city = 2;
 let form = 1;
-код-блок из одной строки: let word = 9;
 a code block of one line: let measure = 6;
 let water = 5;
 a code block of one line: let knowledge = 1;
 let hill = 9;
 код-блок из одной строки: let matter = 8;
 a code block of one line: let field = 5;
-let force = 4;
 a code block of one line: let circle = 3;
 код-блок из одной строки: let time = 7;
 код-блок из одной строки: let city = 2;
@@ -32204,7 +32009,6 @@ a code block of one line: let water = 5;
 *закон* читается как курсивный закон.
 *matter* is read as italic matter.
 `схема` читается как код схема.
-`number` is read as code number.
 **лес** читается как жирный лес.
 **time** is read as bold time.
 *мост* читается как курсивный мост.
@@ -43530,7 +43334,6 @@ induction: the base n = 1 holds, the step from n to n+1 holds, hence it holds up
 слово ребёнок в творительном падеже — ребёнком.
 слово утка в дательном падеже — утке.
 слово гость в творительном падеже — гостем.
-слово сила в именительном падеже — сила.
 слово гора в дательном падеже — горе.
 слово поле в творительном падеже — полем.
 слово неделя в дательном падеже — неделе.
@@ -43692,7 +43495,6 @@ induction: the base n = 1 holds, the step from n to n+1 holds, hence it holds up
 слово метр в предложном падеже — метре.
 слово число в творительном падеже — числом.
 слово кот в дательном падеже — коту.
-слово сила в именительном падеже — сила.
 слово гора в предложном падеже — горе.
 слово минута в творительном падеже — минутой.
 слово неделя в винительном падеже — неделю.
@@ -44051,7 +43853,6 @@ the cardinality of the set {a b c d e f} is 6.
 слово рубль в дательном падеже — рублю.
 слово птица в творительном падеже — птицей.
 слово утка в предложном падеже — утке.
-слово сила в именительном падеже — сила.
 слово поле в родительном падеже — поля.
 слово секунда в дательном падеже — секунде.
 слово километр в творительном падеже — километром.
@@ -44119,7 +43920,6 @@ the cardinality of the set {a b c d e} is 5.
 the cardinality of the set {a b c d e f g h} is 8.
 слово час в творительном падеже — часом.
 слово ребёнок в дательном падеже — ребёнку.
-слово сила в именительном падеже — сила.
 слово поле в предложном падеже — поле.
 слово неделя в творительном падеже — неделей.
 слово килограмм в дательном падеже — килограмму.
@@ -44509,7 +44309,6 @@ the cardinality of the set {a b c d e f} is 6.
 слово декабрь в винительном падеже — декабрь.
 слово книга в творительном падеже — книгой.
 слово кот в предложном падеже — коте.
-слово сила в именительном падеже — сила.
 слово месяц в дательном падеже — месяцу.
 слово копейка в винительном падеже — копейку.
 слово понедельник в творительном падеже — понедельником.
@@ -64174,7 +63973,6 @@ a code block of one line: word = 2
 «TabItem» — одна вкладка внутри «Tabs»: её значение — word, её ярлык — word.
 <details>
 <summary>number</summary>
-word
 </details>
 what does a block opening with «<details>» mean? «details» hides its text until opened; «summary» is what is shown folded: stone.
 an MDX document may import a component: Admonition is taken from @theme/Admonition.
@@ -64219,7 +64017,6 @@ what does a block opening with «```rust title="word.py" {1-3}» mean? a fence m
 что значит «TabItem»? «TabItem» — одна вкладка внутри «Tabs»: её значение — measure, её ярлык — measure.
 «TabItem» — одна вкладка внутри «Tabs»: её значение — stone, её ярлык — stone.
 <summary>word</summary>
-stone
 what does «import Tabs from '@theme/Tabs';» mean? an MDX document may import a component: Tabs is taken from @theme/Tabs.
 an MDX document may import a component: Figure is taken from ../src/Figure.
 что значит «## number {#number-2}»? заголовок может назвать свой якорь: к заголовку число ведёт #number-2.
@@ -64256,7 +64053,6 @@ a code block of one line: graph TD; C --> D;
 что значит блок, начатый с «```mermaid»? ограда mermaid рисует граф: он идёт слева направо и несёт ребро из D в E.
 front matter, огороженный тремя дефисами, объявляет документ: его id — word, заголовок — слово, место в боковике — 3.
 :::tip
-number
 what does a block opening with «:::danger» mean? three colons and «danger» open an admonition of kind danger; three colons close it; its text is stone.
 ограда может нести мету: язык js, заголовок number.py, подсвеченные строки 2,4.
 a fence may carry meta: language go, title stone.py, and highlighted lines 3.
@@ -64289,7 +64085,6 @@ front matter fenced by three dashes declares the document: its id is word, its t
 три двоеточия и «danger» открывают выноску рода danger; три двоеточия закрывают её; её текст — камень.
 a fence may carry meta: language js, title number.py, and highlighted lines 2,4.
 ```go title="stone.py" {3}
-stone = 3
 what does «TabItem» mean? «TabItem» is one tab inside «Tabs»: its value is number, its label is number.
 «details» hides its text until opened; «summary» is what is shown folded: measure.
 что значит блок, начатый с «<details>»? «details» прячет свой текст до раскрытия; «summary» — то, что видно свёрнутым: слово.
@@ -64301,10 +64096,8 @@ what does a block opening with «```mermaid» mean? a mermaid fence draws a grap
 что значит блок, начатый с «---»? front matter, огороженный тремя дефисами, объявляет документ: его id — measure, заголовок — мера, место в боковике — 1.
 front matter, огороженный тремя дефисами, объявляет документ: его id — stone, заголовок — камень, место в боковике — 4.
 :::warning
-word
 a fence may carry meta: language python, title measure.py, and highlighted lines 1.
 ```rust title="word.py" {1-3}
-word = 2
 «TabItem» is one tab inside «Tabs»: its value is measure, its label is measure.
 что значит «TabItem»? «TabItem» — одна вкладка внутри «Tabs»: её значение — word, её ярлык — word.
 «details» прячет свой текст до раскрытия; «summary» — то, что видно свёрнутым: число.
@@ -64319,11 +64112,9 @@ title: word
 what does a block opening with «:::note» mean? three colons and «note» open an admonition of kind note; three colons close it; its text is measure.
 three colons and «danger» open an admonition of kind danger; three colons close it; its text is stone.
 ```js title="number.py" {2,4}
-number = 1
 код-блок из одной строки: stone = 3
 «TabItem» — одна вкладка внутри «Tabs»: её значение — number, её ярлык — number.
 <summary>measure</summary>
-number
 what does a block opening with «<details>» mean? «details» hides its text until opened; «summary» is what is shown folded: word.
 an MDX document may import a component: TabItem is taken from @theme/TabItem.
 что значит «import Figure from '../src/Figure';»? документ MDX может ввозить составную часть: Figure берётся из ../src/Figure.
@@ -64440,7 +64231,6 @@ what does a block opening with «```bash» mean? three backticks fence a code bl
 2 leading spaces nest a list item one level deeper: sound is nested.
 «`light`» is read as code light.
 *stone*
-*дом*
 что значит «**свет**»? «**свет**» читается как жирный свет.
 что значит «[stone](/stone.md)»? «[stone](/stone.md)» — ссылка с текстом камень, ведущая на /stone.md.
 «[stone][light]» is a reference link: its target is not written here but under the label light.
@@ -64537,7 +64327,6 @@ what does «<em>» mean? raw HTML is allowed inside markdown: «<em>» opens and
 что значит блок, начатый с «number»? текст, подчёркнутый дефисами, есть заголовок уровня 2: число.
 «***» alone on a line is a thematic break: it divides the document and carries no text.
 what does «> stone» mean? a line beginning with a greater-than sign is a blockquote: it quotes stone.
-    stone = 1
 четыре пробела в начале делают блок кода: текст house = 4 есть код и не размечается.
 a code block of one line: sound = 2
 what does «[stone]: /stone.md» mean? «[stone]: /stone.md» defines a link label: the label stone stands for /stone.md.
@@ -64587,7 +64376,6 @@ what does «stone\» mean? a backslash ending a line is a hard line break: after
 что значит «<code>»? сырой HTML разрешён внутри разметки: «<code>» открывает и «</code>» закрывает; заключённый текст — звук.
 «###### sound» is a heading of level 6 whose text is sound.
 what does «### river» mean? «### river» is a heading of level 3 whose text is river.
-point
 ======
 «_____» в отдельной строке есть тематический разрыв: он делит документ и не несёт текста.
 что значит «больше»? строка, начатая знаком «больше», есть цитата; цитируемый текст — звук.
@@ -64599,7 +64387,6 @@ four leading spaces make a code block: the text sound = 3 is code and is not for
 what does «3. sound» mean? a number then a dot begins an ordered list item: item 3 is sound.
   - sound
 `light`
-*камень*
 что значит «*звук*»? «*звук*» читается как курсивный звук.
 what does «**light**» mean? «**light**» is read as bold light.
 what does «[stone](/stone.md)» mean? «[stone](/stone.md)» is a link with text stone leading to /stone.md.
@@ -64644,14 +64431,11 @@ what does «<strong>» mean? raw HTML is allowed inside markdown: «<strong>» o
 «----» alone on a line is a thematic break: it divides the document and carries no text.
 what does «> light» mean? a line beginning with a greater-than sign is a blockquote: it quotes light.
     light = 2
-stone = 0
 what does a block opening with «```json» mean? three backticks fence a code block of language json; its code is sound = 2.
 what does «[light]: /light.md» mean? «[light]: /light.md» defines a link label: the label light stands for /light.md.
 * light
 число и точка начинают пункт нумерованного списка: пункт 2 — свет.
 что значит «камень»? 2 пробела в начале вкладывают пункт на уровень глубже: пункт «камень» вложен.
-`stone`
-`дом`
 что значит «*свет*»? «*свет*» читается как курсивный свет.
 what does «**stone**» mean? «**stone**» is read as bold stone.
 «**дом**» читается как жирный дом.
@@ -64680,8 +64464,6 @@ sound = 2
 what does «    - house» mean? 4 leading spaces nest a list item one level deeper: house is nested.
 «`звук`» читается как код звук.
 «*light*» is read as italic light.
-**stone**
-**дом**
 «[sound](/sound.md)» is a link with text sound leading to /sound.md.
 what does «[light][sound]» mean? «[light][sound]» is a reference link: its target is not written here but under the label sound.
 <https://example.org/light>
@@ -64797,7 +64579,6 @@ what does «sound\» mean? a backslash ending a line is a hard line break: after
 сырой HTML разрешён внутри разметки: «<strong>» открывает и «</strong>» закрывает; заключённый текст — свет.
 что значит «---»? вторая строка таблицы задаёт выравнивание: «---» есть влево.
 ~~stone~~
-~~дом~~
 «- [ ]» begins a task item: the item «sound» is not done.
 what does «[^2]:» mean? «[^2]:» defines footnote 2, whose text is light.
 | :--- | ---: |
@@ -64875,7 +64656,6 @@ what does «~~sound~~» mean? «~~sound~~» is read as struck-out sound.
 что значит «- [x]»? «- [x]» начинает пункт задачи: пункт «свет» сделан.
 «[^2]:» defines footnote 2, whose text is light.
 what does «---» mean? the second row of a table sets alignment: «---» is left.
-~~камень~~
 что значит «~~звук~~»? «~~звук~~» читается как зачёркнутый звук.
 - [ ] sound
 «[^2]:» определяет сноску 2, её текст — свет.
@@ -64938,7 +64718,6 @@ what does a block opening with «---» mean? front matter fenced by three dashes
 :::tip
 light
 ```python title="stone.py" {1}
-stone = 0
 what does a block opening with «```rust title="sound.py" {1-3}» mean? a fence may carry meta: language rust, title sound.py, and highlighted lines 1-3.
 what does «TabItem» mean? «TabItem» is one tab inside «Tabs»: its value is light, its label is light.
 <summary>light</summary>
@@ -64972,7 +64751,6 @@ house
 ограда mermaid рисует граф: он идёт сверху вниз и несёт ребро из C в D.
 front matter, огороженный тремя дефисами, объявляет документ: его id — light, заголовок — свет, место в боковике — 2.
 что значит блок, начатый с «:::note»? три двоеточия и «note» открывают выноску рода note; три двоеточия закрывают её; её текст — камень.
-код-блок из одной строки: stone = 0
 ограда может нести мету: язык rust, заголовок sound.py, подсвеченные строки 1-3.
 «TabItem» — одна вкладка внутри «Tabs»: её значение — light, её ярлык — light.
 что значит блок, начатый с «<details>»? «details» прячет свой текст до раскрытия; «summary» — то, что видно свёрнутым: камень.
@@ -65006,7 +64784,6 @@ a code block of one line: graph TD; A --> B;
 a mermaid fence draws a graph: it goes top down and has an edge from C to D.
 front matter fenced by three dashes declares the document: its id is light, its title is light, its place in the sidebar is 2.
 what does a block opening with «:::note» mean? three colons and «note» open an admonition of kind note; three colons close it; its text is stone.
-a code block of one line: stone = 0
 a fence may carry meta: language rust, title sound.py, and highlighted lines 1-3.
 «TabItem» is one tab inside «Tabs»: its value is light, its label is light.
 what does a block opening with «<details>» mean? «details» hides its text until opened; «summary» is what is shown folded: stone.
@@ -65056,7 +64833,6 @@ a fence may carry meta: language js, title light.py, and highlighted lines 2,4.
 «TabItem» is one tab inside «Tabs»: its value is house, its label is house.
 what does a block opening with «<details>» mean? «details» hides its text until opened; «summary» is what is shown folded: sound.
 import Admonition from '@theme/Admonition';
-заголовок может назвать свой якорь: к заголовку слово ведёт #word-3.
 ограда mermaid рисует граф: он идёт сверху вниз и несёт ребро из A в B.
 a code block of one line: graph LR; D --> E;
 id: sound
@@ -65067,7 +64843,6 @@ a code block of one line: house = 3
 <TabItem value="sound" label="sound">house</TabItem>
 «details» прячет свой текст до раскрытия; «summary» — то, что видно свёрнутым: свет.
 что значит «import Tabs from '@theme/Tabs';»? документ MDX может ввозить составную часть: Tabs берётся из @theme/Tabs.
-a heading may name its own anchor: the heading number is reached by #number-2.
 what does «## forest {#forest-2}» mean? a heading may name its own anchor: the heading forest is reached by #forest-2.
 код-блок из одной строки: graph TD; C --> D;
 «### river» — заголовок уровня 3, его текст — река.
@@ -65105,7 +64880,6 @@ what does «-» mean? «-» then a space begins an unordered list item whose tex
 число и точка начинают пункт нумерованного списка: пункт 2 — лес.
 4 leading spaces nest a list item one level deeper: forest is nested.
 что значит «`дом`»? «`дом`» читается как код дом.
-*дом*
 *mountain*
 «**river**» is read as bold river.
 что значит «[forest](/forest.md)»? «[forest](/forest.md)» — ссылка с текстом лес, ведущая на /forest.md.
@@ -65175,7 +64949,6 @@ what does «#### mountain» mean? «#### mountain» is a heading of level 4 whos
 what does «[mountain]: /mountain.md» mean? «[mountain]: /mountain.md» defines a link label: the label mountain stands for /mountain.md.
 число и точка начинают пункт нумерованного списка: пункт 1 — дом.
 2 leading spaces nest a list item one level deeper: house is nested.
-`дом`
 `mountain`
 «*river*» is read as italic river.
 «**лес**» читается как жирный лес.
@@ -65486,7 +65259,6 @@ what does «*» mean? «*» then a space begins an unordered list item whose tex
 2 leading spaces nest a list item one level deeper: river is nested.
 what does «`forest`» mean? «`forest`» is read as code forest.
 что значит «*дом*»? «*дом*» читается как курсивный дом.
-**дом**
 **mountain**
 что значит «[river](/river.md)»? «[river](/river.md)» — ссылка с текстом река, ведущая на /river.md.
 what does «[river][mountain]» mean? «[river][mountain]» is a reference link: its target is not written here but under the label mountain.
@@ -65600,7 +65372,6 @@ what does «~~river~~» mean? «~~river~~» is read as struck-out river.
 what does «- [ ]» mean? «- [ ]» begins a task item: the item «house» is not done.
 «[^1]:» определяет сноску 1, её текст — дом.
 the second row of a table sets alignment: «---» is left.
-~~дом~~
 ~~mountain~~
 что значит «- [ ]»? «- [ ]» начинает пункт задачи: пункт «река» не сделан.
 what does «[^3]:» mean? «[^3]:» defines footnote 3, whose text is river.
@@ -65630,7 +65401,6 @@ what does a block opening with «```rust title="river.py" {1-3}» mean? a fence 
 <TabItem value="river" label="river">mountain</TabItem>
 что значит блок, начатый с «<details>»? «details» прячет свой текст до раскрытия; «summary» — то, что видно свёрнутым: лес.
 what does «import TabItem from '@theme/TabItem';» mean? an MDX document may import a component: TabItem is taken from @theme/TabItem.
-заголовок может назвать свой якорь: к заголовку камень ведёт #stone-4.
 что значит блок, начатый с «```mermaid»? ограда mermaid рисует граф: он идёт сверху вниз и несёт ребро из A в B.
 ограда mermaid рисует граф: он идёт слева направо и несёт ребро из D в E.
 front matter fenced by three dashes declares the document: its id is mountain, its title is mountain, its place in the sidebar is 4.
@@ -65640,7 +65410,6 @@ a code block of one line: river = 2
 <TabItem value="forest" label="forest">river</TabItem>
 что значит блок, начатый с «<details>»? «details» прячет свой текст до раскрытия; «summary» — то, что видно свёрнутым: дом.
 what does «import Tabs from '@theme/Tabs';» mean? an MDX document may import a component: Tabs is taken from @theme/Tabs.
-заголовок может назвать свой якорь: к заголовку слово ведёт #word-3.
 код-блок из одной строки: graph TD; A --> B;
 что значит блок, начатый с «```mermaid»? ограда mermaid рисует граф: он идёт сверху вниз и несёт ребро из C в D.
 front matter fenced by three dashes declares the document: its id is river, its title is river, its place in the sidebar is 3.
@@ -65673,7 +65442,6 @@ house
 что значит «TabItem»? «TabItem» — одна вкладка внутри «Tabs»: её значение — forest, её ярлык — forest.
 what does a block opening with «<details>» mean? «details» hides its text until opened; «summary» is what is shown folded: forest.
 документ MDX может ввозить составную часть: TabItem берётся из @theme/TabItem.
-a heading may name its own anchor: the heading stone is reached by #stone-4.
 what does a block opening with «```mermaid» mean? a mermaid fence draws a graph: it goes top down and has an edge from A to B.
 a mermaid fence draws a graph: it goes left to right and has an edge from D to E.
 id: mountain
@@ -65683,7 +65451,6 @@ title: mountain
 что значит «TabItem»? «TabItem» — одна вкладка внутри «Tabs»: её значение — house, её ярлык — house.
 what does a block opening with «<details>» mean? «details» hides its text until opened; «summary» is what is shown folded: house.
 документ MDX может ввозить составную часть: Tabs берётся из @theme/Tabs.
-a heading may name its own anchor: the heading word is reached by #word-3.
 a code block of one line: graph TD; A --> B;
 what does a block opening with «```mermaid» mean? a mermaid fence draws a graph: it goes top down and has an edge from C to D.
 id: river
@@ -76306,7 +76073,6 @@ the class is in the school, and the school is on the street; so the class is on 
 лампа не на стуле: стул не на пути от лампы до городка.
 the shirt is on the bed, and the bed is in the room. where is the shirt? the shirt is in the room.
 билет в сумке, а сумка на стуле; значит билет на стуле.
-the box is on the shelf.
 the door is not in the letter: the letter is not on the path from the door to the town.
 дом на улице, а улица в городке. где дом? дом в городке.
 the room is in the house, and the house is on the street; so the room is on the street.
@@ -114391,7 +114157,6 @@ in the tree of kinds the node digit does not contain the node sign: the node sig
 the level of the node size is 2.
 в дереве родов узел weight лежит в узле thing.
 in the tree of kinds the node stone contains the node chalk.
-путь от корня до узла stone имеет длину 3.
 the parent of the node metal is the node solid.
 узел water есть лист дерева родов: он не содержит ни одного узла.
 in the tree of kinds the node water does not contain the node sign: the node sign lies in the node thing.
@@ -114464,7 +114229,6 @@ the path from the root to the node letter has length 2.
 родителем узла size является узел measure.
 in the tree of kinds the node weight lies in the node thing.
 в дереве родов узел weight не содержит узел sign: узел sign лежит в узле thing.
-the path from the root to the node stone has length 3.
 в дереве родов узел metal лежит в узле body.
 the node water is a leaf of the tree of kinds: it contains no node.
 путь от корня до узла water таков: thing / body / liquid / water.
@@ -114514,7 +114278,6 @@ the path from the root to the node size has length 2.
 родителем узла weight является узел measure.
 the node stone contains 2 nodes.
 путь от корня до узла stone таков: thing / body / solid / stone.
-the level of the node metal is 3.
 в дереве родов узел water лежит в узле body.
 the node oil is a leaf of the tree of kinds: it contains no node.
 путь от корня до узла oil таков: thing / body / liquid / oil.
@@ -114523,7 +114286,6 @@ the path from the root to the node flint has length 4.
 in the tree of kinds the node iron lies in the node solid.
 в дереве родов узел iron не содержит узел sign: узел sign лежит в узле thing.
 the path from the root to the node tin is thing / body / solid / metal / tin.
-уровень узла thing равен 0.
 on the set {1, 2, 3, 4} the relation «equal» is symmetric: if a stands to b, then b stands to a.
 на множестве {1, 2, 3, 4} отношение «та же чётность» рефлексивно: каждый элемент относится к самому себе.
 on the set {1, 2, 3, 4} the relation «next» is not reflexive: 1 does not stand in relation to itself.
@@ -114948,13 +114710,11 @@ in what class modulo 3 does the number 16 stand? the number 16 stands in the cla
 какова длина кратчайшего пути из C в E в объявленном графе? в объявленном графе кратчайший путь из C в E имеет длину 1.
 is the relation «next» on the set {1, 2, 3, 4} transitive? on the set {1, 2, 3, 4} the relation «next» is not transitive: 1 stands to 2 and 2 stands to 3, but 1 does not stand to 3.
 взаимно-однозначно ли соответствие «имя по-русски» на узлах дерева родов? соответствие «имя по-русски» на узлах дерева родов взаимно-однозначно: 18 элементов и 18 значений.
-уровень узла sign равен 1.
 the parent of the node measure is the node thing.
 узел solid содержит 6 узлов.
 in the tree of kinds the node liquid contains the node water.
 путь от корня до узла liquid таков: thing / body / liquid.
 the path from the root to the node digit is thing / sign / digit.
-путь от корня до узла letter имеет длину 2.
 the path from the root to the node size has length 2.
 уровень узла weight равен 2.
 the parent of the node stone is the node solid.
@@ -114977,7 +114737,6 @@ in the tree of kinds the node digit lies in the node sign.
 the node size is a leaf of the tree of kinds: it contains no node.
 в дереве родов узел size не содержит узел measure: узел measure лежит в узле thing.
 in the tree of kinds the node weight does not contain the node measure: the node measure lies in the node thing.
-the level of the node metal is 3.
 родителем узла water является узел liquid.
 the parent of the node oil is the node liquid.
 в дереве родов узел flint лежит в узле body.
@@ -114993,10 +114752,8 @@ in the tree of kinds the node solid contains the node flint.
 путь от корня до узла solid таков: thing / body / solid.
 the path from the root to the node liquid has length 2.
 уровень узла digit равен 2.
-the level of the node letter is 2.
 родителем узла size является узел measure.
 the parent of the node weight is the node measure.
-узел stone содержит 2 узла.
 in the tree of kinds the node metal contains the node iron.
 путь от корня до узла metal таков: thing / body / solid / metal.
 the path from the root to the node water is thing / body / liquid / water.
@@ -115025,7 +114782,6 @@ in the tree of kinds the node chalk does not contain the node measure: the node 
 путь от корня до узла iron таков: thing / body / solid / metal / iron.
 the path from the root to the node tin is thing / body / solid / metal / tin.
 the path from the root to the node body has length 1.
-узел sign содержит 2 узла.
 in the tree of kinds the node measure contains the node size.
 путь от корня до узла measure таков: thing / measure.
 the path from the root to the node solid has length 2.
@@ -115036,7 +114792,6 @@ in the tree of kinds the node size lies in the node measure.
 узел weight есть лист дерева родов: он не содержит ни одного узла.
 in the tree of kinds the node stone contains the node flint.
 путь от корня до узла stone таков: thing / body / solid / stone.
-the path from the root to the node metal has length 3.
 уровень узла water равен 3.
 the level of the node oil is 3.
 родителем узла flint является узел stone.
@@ -115051,7 +114806,6 @@ the node solid contains 6 nodes.
 в дереве родов узел solid не содержит узел measure: узел measure лежит в узле thing.
 the path from the root to the node liquid is thing / body / liquid.
 путь от корня до узла digit имеет длину 2.
-the path from the root to the node letter has length 2.
 уровень узла size равен 2.
 the level of the node weight is 2.
 в дереве родов узел stone лежит в узле thing.
@@ -115093,7 +114847,6 @@ the level of the node digit is 2.
 родителем узла letter является узел sign.
 the parent of the node size is the node measure.
 в дереве родов узел weight лежит в узле measure.
-the node stone contains 2 nodes.
 в дереве родов узел stone не содержит узел measure: узел measure лежит в узле thing.
 the path from the root to the node metal is thing / body / solid / metal.
 путь от корня до узла water имеет длину 3.
@@ -115102,7 +114855,6 @@ the path from the root to the node oil has length 3.
 the level of the node chalk is 4.
 родителем узла iron является узел metal.
 the parent of the node tin is the node metal.
-узел thing содержит 17 узлов.
 in the tree of kinds the node body lies in the node thing.
 дерево родов есть иерархия из 18 узлов и 17 рёбер: каждый узел, кроме корня, лежит ровно в одном узле.
 родителем узла measure является узел thing.
@@ -115123,7 +114875,6 @@ in the tree of kinds the node flint does not contain the node measure: the node 
 the path from the root to the node iron is thing / body / solid / metal / iron.
 путь от корня до узла tin имеет длину 4.
 уровень узла body равен 1.
-the node sign contains 2 nodes.
 в дереве родов узел sign не содержит узел solid: узел solid лежит в узле body.
 the path from the root to the node measure is thing / measure.
 уровень узла solid равен 2.
@@ -115134,7 +114885,6 @@ in the tree of kinds the node letter lies in the node sign.
 the node weight is a leaf of the tree of kinds: it contains no node.
 в дереве родов узел weight не содержит узел measure: узел measure лежит в узле thing.
 the path from the root to the node stone is thing / body / solid / stone.
-уровень узла metal равен 3.
 the level of the node water is 3.
 родителем узла oil является узел liquid.
 the parent of the node flint is the node stone.
@@ -115194,14 +114944,12 @@ the parent of the node letter is the node sign.
 in the tree of kinds the node weight lies in the node measure.
 в дереве родов узел stone содержит узел flint.
 in the tree of kinds the node stone does not contain the node measure: the node measure lies in the node thing.
-путь от корня до узла metal имеет длину 3.
 the path from the root to the node water has length 3.
 уровень узла oil равен 3.
 the level of the node flint is 4.
 родителем узла chalk является узел stone.
 the parent of the node iron is the node metal.
 в дереве родов узел tin лежит в узле body.
-the node thing contains 17 nodes.
 узел body содержит 10 узлов.
 the tree of kinds is a hierarchy of 18 nodes and 17 edges: each node except the root lies in exactly one node.
 на множестве {1, 2, 3, 4} пара (2, 2) стоит в отношении «та же чётность».
@@ -115624,7 +115372,6 @@ the parent of the node liquid is the node body.
 уровень узла digit равен 2.
 the path from the root to the node letter is thing / sign / letter.
 в дереве родов узел size не содержит узел solid: узел solid лежит в узле body.
-узел metal содержит 2 узла.
 the parent of the node water is the node liquid.
 уровень узла oil равен 3.
 the path from the root to the node flint is thing / body / solid / stone / flint.
@@ -115653,7 +115400,6 @@ in the tree of kinds the node liquid does not contain the node solid: the node s
 узел letter есть лист дерева родов: он не содержит ни одного узла.
 the parent of the node size is the node measure.
 уровень узла weight равен 2.
-путь от корня до узла metal имеет длину 3.
 in the tree of kinds the node water does not contain the node solid: the node solid lies in the node body.
 узел flint есть лист дерева родов: он не содержит ни одного узла.
 the parent of the node chalk is the node stone.
@@ -115682,7 +115428,6 @@ in the tree of kinds the node solid lies in the node thing.
 the level of the node digit is 2.
 in the tree of kinds the node size does not contain the node solid: the node solid lies in the node body.
 в дереве родов узел stone содержит узел chalk.
-the node metal contains 2 nodes.
 в дереве родов узел water лежит в узле liquid.
 the level of the node oil is 3.
 путь от корня до узла flint имеет длину 4.
@@ -115711,7 +115456,6 @@ the path from the root to the node solid is thing / body / solid.
 the node letter is a leaf of the tree of kinds: it contains no node.
 в дереве родов узел size лежит в узле thing.
 the level of the node weight is 2.
-the path from the root to the node metal has length 3.
 путь от корня до узла water таков: thing / body / liquid / water.
 the node flint is a leaf of the tree of kinds: it contains no node.
 в дереве родов узел chalk лежит в узле thing.
@@ -115769,7 +115513,6 @@ the path from the root to the node liquid is thing / body / liquid.
 в дереве родов узел digit не содержит узел solid: узел solid лежит в узле body.
 in the tree of kinds the node size lies in the node thing.
 родителем узла weight является узел measure.
-уровень узла metal равен 3.
 the path from the root to the node water is thing / body / liquid / water.
 в дереве родов узел oil не содержит узел solid: узел solid лежит в узле body.
 in the tree of kinds the node chalk lies in the node thing.
@@ -115781,7 +115524,6 @@ in the tree of kinds the node sign contains the node letter.
 in the tree of kinds the node measure does not contain the node liquid: the node liquid lies in the node body.
 в дереве родов узел solid не содержит узел liquid: узел liquid лежит в узле body.
 the node digit is a leaf of the tree of kinds: it contains no node.
-в дереве родов узел letter лежит в узле thing.
 the level of the node size is 2.
 путь от корня до узла weight имеет длину 2.
 the path from the root to the node stone is thing / body / solid / stone.
@@ -115827,7 +115569,6 @@ in the tree of kinds the node digit does not contain the node solid: the node so
 узел size есть лист дерева родов: он не содержит ни одного узла.
 the parent of the node weight is the node measure.
 родителем узла stone является узел solid.
-the level of the node metal is 3.
 путь от корня до узла water имеет длину 3.
 in the tree of kinds the node oil does not contain the node solid: the node solid lies in the node body.
 узел chalk есть лист дерева родов: он не содержит ни одного узла.
@@ -115839,7 +115580,6 @@ the tree of kinds is a hierarchy of 18 nodes and 17 edges: each node except the 
 путь от корня до узла measure таков: thing / measure.
 in the tree of kinds the node solid does not contain the node liquid: the node liquid lies in the node body.
 в дереве родов узел liquid не содержит узел solid: узел solid лежит в узле body.
-in the tree of kinds the node letter lies in the node thing.
 родителем узла size является узел measure.
 the path from the root to the node weight has length 2.
 the path from the root to the node metal is thing / body / solid / metal.
@@ -116263,7 +116003,6 @@ the path from the root to the node solid is thing / body / solid.
 the parent of the node letter is the node sign.
 путь от корня до узла size имеет длину 2.
 in the tree of kinds the node stone contains the node flint.
-узел metal содержит 2 узла.
 the level of the node water is 3.
 путь от корня до узла oil таков: thing / body / liquid / oil.
 in the tree of kinds the node chalk lies in the node stone.
@@ -116339,7 +116078,6 @@ the level of the node digit is 2.
 путь от корня до узла letter таков: thing / sign / letter.
 in the tree of kinds the node weight lies in the node measure.
 родителем узла stone является узел solid.
-the path from the root to the node metal has length 3.
 в дереве родов узел water не содержит узел liquid: узел liquid лежит в узле body.
 the parent of the node flint is the node stone.
 путь от корня до узла chalk имеет длину 4.
@@ -116352,7 +116090,6 @@ the tree of kinds is a structure of 5 levels: from level 0 to level 4.
 the parent of the node digit is the node sign.
 the node weight is a leaf of the tree of kinds: it contains no node.
 в дереве родов узел stone лежит в узле body.
-the level of the node metal is 3.
 путь от корня до узла water таков: thing / body / liquid / water.
 in the tree of kinds the node flint lies in the node stone.
 уровень узла chalk равен 4.
@@ -116388,7 +116125,6 @@ the path from the root to the node measure is thing / measure.
 in the tree of kinds the node liquid does not contain the node digit: the node digit lies in the node sign.
 the path from the root to the node size has length 2.
 в дереве родов узел weight не содержит узел liquid: узел liquid лежит в узле body.
-the node metal contains 2 nodes.
 родителем узла water является узел liquid.
 the path from the root to the node oil is thing / body / liquid / oil.
 узел chalk есть лист дерева родов: он не содержит ни одного узла.
@@ -116427,7 +116163,6 @@ the level of the node liquid is 2.
 путь от корня до узла digit таков: thing / sign / digit.
 in the tree of kinds the node size lies in the node measure.
 уровень узла weight равен 2.
-the path from the root to the node stone is thing / body / solid / stone.
 в дереве родов узел metal не содержит узел liquid: узел liquid лежит в узле body.
 the parent of the node oil is the node liquid.
 путь от корня до узла flint имеет длину 4.
@@ -116441,7 +116176,6 @@ the parent of the node liquid is the node body.
 путь от корня до узла digit имеет длину 2.
 the node size is a leaf of the tree of kinds: it contains no node.
 родителем узла weight является узел measure.
-путь от корня до узла metal таков: thing / body / solid / metal.
 in the tree of kinds the node oil lies in the node body.
 уровень узла flint равен 4.
 in the tree of kinds the node chalk does not contain the node liquid: the node liquid lies in the node body.
@@ -116453,7 +116187,6 @@ in the tree of kinds the node liquid lies in the node body.
 уровень узла digit равен 2.
 in the tree of kinds the node letter does not contain the node liquid: the node liquid lies in the node body.
 в дереве родов узел weight лежит в узле measure.
-путь от корня до узла metal имеет длину 3.
 the node oil is a leaf of the tree of kinds: it contains no node.
 родителем узла flint является узел stone.
 the path from the root to the node chalk is thing / body / solid / stone / chalk.
@@ -116465,8 +116198,6 @@ the node liquid contains 2 nodes.
 родителем узла digit является узел sign.
 the path from the root to the node letter is thing / sign / letter.
 узел weight есть лист дерева родов: он не содержит ни одного узла.
-the parent of the node stone is the node solid.
-уровень узла metal равен 3.
 in the tree of kinds the node water does not contain the node liquid: the node liquid lies in the node body.
 в дереве родов узел flint лежит в узле stone.
 the path from the root to the node chalk has length 4.
@@ -116479,7 +116210,6 @@ in the tree of kinds the node liquid contains the node water.
 в дереве родов узел digit лежит в узле sign.
 в дереве родов узел size не содержит узел liquid: узел liquid лежит в узле body.
 in the tree of kinds the node stone lies in the node body.
-родителем узла metal является узел solid.
 the path from the root to the node water is thing / body / liquid / water.
 узел flint есть лист дерева родов: он не содержит ни одного узла.
 the level of the node chalk is 4.
