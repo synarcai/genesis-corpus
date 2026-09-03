@@ -31,7 +31,11 @@ _RU = json.loads((КОРЕНЬ / "tools" / "langpacks" / "ru.json").read_text(en
 Д = r"(\d+)\.(\d\d)"
 # a price in either writing: «16.50 dollars» or «$16.50» — two number groups either way
 ДЛ = r"(?:\$(\d+)\.(\d\d)|(\d+)\.(\d\d) dollars)"
-С = r"([a-z]+)"
+# THE THING IS ONE OF THE WORLD'S DECLARED THINGS (mutation 04.09: «a penci
+# costs 295 cents» passed — the thing was any word): the closed set comes
+# from the generator's table, singular and plural.
+import gen_genesis_money as _дом
+С = "(" + "|".join(sorted({ф for в in _дом.ВЕЩИ for ф in в[:2]} | set(_дом.ИМЕНА_EN), key=len, reverse=True)) + ")"
 СЛ = r"([а-яё]+)"
 
 
@@ -108,6 +112,11 @@ _Ф = [(о, _судья(п)) for о, п in ОБРАЗЦЫ]
     ("суммы", _Ф[15:17]),
 )
 ПРАВИЛА = families.правила(СЕМЕЙСТВА)
+# THE SAME SHAPES WITH ANY WORD FOR A THING OR A NAME: a line of this shape
+# that the closed rules do not take names a thing or a person the world did
+# not declare — a lie, not silence (mutation 04.09: «a penci costs 295
+# cents» fell to the count court and passed).
+ОТКРЫТЫЕ = tuple(re.compile(о.replace(С, r"(?:[a-zа-яё]+(?: [a-zа-яё]+)?)")) for о, _ in ОБРАЗЦЫ)
 
 
 def судить(строка):
@@ -121,6 +130,8 @@ def судить(строка):
             if пара and not asking.о_том_же(пара[0], пара[1]):
                 return True, False
             return True, bool(судья(m))
+    if any(о.match(с) for о in ОТКРЫТЫЕ):
+        return True, False
     return False, False
 
 

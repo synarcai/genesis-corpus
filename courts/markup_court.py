@@ -271,12 +271,24 @@ class Слой:
             self.объявленные_значения.add((n, k))
 
 
+ВОПРОС_СПИСКА = re.compile(r"^(.+?) — (?:which items|какие это пункты)\? (?:numbered list of (\S+) items|список из (\S+) пунктов): ")
+
+
 def судить(строка, слой):
     # ВОПРОС СУДИТСЯ СВОИМ ОТВЕТОМ, А РОД ОПРЕДЕЛЯЕТСЯ ОТВЕТОМ. Связь
     # половин держит общий дом `tools/asking.py`: величины вопроса суть
     # начальный отрезок величин ответа, и порча любой из них рвёт пару.
     # Слой передаётся ответу тот же — иначе вторая половина судилась бы
     # вне своего файла.
+    # THE QUESTION OF A LIST NAMES THE LIST AS THE ANSWER DOES (mutation 04.09:
+    # «a numbere list of 2 items — which items?» passed — only the answer was
+    # read): the head before the dash is the list's own name with its count.
+    м = ВОПРОС_СПИСКА.match(строка.strip())
+    if м:
+        голова, n_en, n_ru = м.group(1), м.group(2), м.group(3)
+        ждём = f"a numbered list of {n_en} items" if n_en else f"список из {n_ru} пунктов"
+        if голова != ждём:
+            return True, False
     если = asking.судить_парой(строка, lambda о: судить(о, слой))
     if если is not None:
         return если

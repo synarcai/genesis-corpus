@@ -352,10 +352,14 @@ def обрамление_прочь(ряд):
     «6 x + 2 y = 8 x» несёт непрочитанное МЕЖДУ величинами и потому
     нем. Выброс на краю есть работа суда; выброс внутри — догадка.
     """
+    # НЕПРОЧИТАННОЕ РЯДОМ С ОПЕРАЦИЕЙ — ОПЕРАНД, А НЕ РАМКА (подсадка 04.09:
+    # «нол минус ноль равно ноль» — «нол» выбрасывалось зачином, и
+    # «− 0 = 0» звалось истиной): слово перед знаком действия или после
+    # него стоит на месте величины и остаётся внутри — суд немеет честно.
     i, j = 0, len(ряд)
-    while i < j and ряд[i][0] == "?":
+    while i < j and ряд[i][0] == "?" and not (i + 1 < j and ряд[i + 1][0] == "o"):
         i += 1
-    while j > i and ряд[j - 1][0] == "?":
+    while j > i and ряд[j - 1][0] == "?" and not (j - 2 >= i and ряд[j - 2][0] == "o"):
         j -= 1
     return ряд[i:j]
 
@@ -510,11 +514,36 @@ def понизить_словами(строка):
         m = образец.match(с)
         if not m:
             continue
+        # A WORD IN A NUMBER SLOT MUST BE A NUMBER (mutation 04.09: «нол минус
+        # ноль равно ноль» lowered to «нол - ноль = ноль», the framing law
+        # dropped the unreadable word and the rest was true): a one-word slot
+        # value is digits or a numeral of some pack, else the record is not
+        # lowered — and the line stays outside this court's jurisdiction.
+        for значение in m.groups():
+            if значение and " " not in значение and not re.fullmatch(r"[-\u2212]?\d+", значение) and not _числительное(значение):
+                return строка
         вон = запись
         for имя, значение in zip(имена, m.groups()):
             вон = вон.replace(f"<{имя}>", значение)
         return вон
     return строка
+
+
+_ТАБЛИЦЫ_ЧИСЛИТЕЛЬНЫХ = None
+
+
+def _числительное(слово):
+    """Is the word a numeral of some pack (read exactly, by the house)?"""
+    global _ТАБЛИЦЫ_ЧИСЛИТЕЛЬНЫХ
+    if _ТАБЛИЦЫ_ЧИСЛИТЕЛЬНЫХ is None:
+        import numerals as _n
+        _ТАБЛИЦЫ_ЧИСЛИТЕЛЬНЫХ = []
+        for ф in sorted(ПАКЕТЫ.glob("*.json")):
+            т = _n.таблица(ф.stem)
+            if т:
+                _ТАБЛИЦЫ_ЧИСЛИТЕЛЬНЫХ.append(т)
+    import numerals as _n
+    return any(_n.прочесть(слово, т) is not None for т in _ТАБЛИЦЫ_ЧИСЛИТЕЛЬНЫХ)
 
 
 def понизить_латех(строка):
