@@ -654,7 +654,38 @@ def _клауза_ru(м):
                 and k * меньшее == большее)
 
 
+def _частное_en(м):
+    """«tom has 63 apples and ann has 7 apples; how many times as many apples
+    does tom have as ann? 63 ÷ 7 = 9.» — тот же вопрос, отвечённый ДЕЙСТВИЕМ."""
+    a, b, a2, b2, k = (int(м.group(i)) for i in (3, 6, 9, 10, 11))
+    предмет, мал = м.group(4), м.group(7)
+    if ГЛАГОЛЫ_EN.get(м.group(2)) != м.group(8):
+        return None
+    return (a == a2 and b == b2 and b and a == k * b
+            and предмет == by_count(a, предмет) and мал == by_count(b, предмет)
+            and м.group(1) != м.group(5))
+
+
+def _частное_ru(м):
+    """«том собрал 81 яблоко, аня собрала 9 яблок; во сколько раз больше яблок
+    собрал том, чем аня? 81 ÷ 9 = 9.» — имя стоит в именительном при СВОЁМ
+    глаголе, и глагол вопроса обязан быть глаголом зачина."""
+    зачин = _пара_ру(м, 1, 2, 3, 4, 5, 6, 7, 8)
+    if зачин is None:
+        return None
+    a, b, a2, b2, k = (int(м.group(i)) for i in (3, 7, 13, 14, 15))
+    if (м.group(11) != м.group(1) or м.group(12) != м.group(5)
+            or м.group(10) != м.group(2)):
+        return False
+    return bool(зачин and a == a2 and b == b2 and b and a == k * b
+                and м.group(9) == родительный(м.group(4)))
+
+
 ОБРАЗЦЫ = (
+    (rf"^{А} {ЛИЧ} {Ч} {А} and {А} \2 {Ч} {А}; how many times as many \4 "
+     rf"does \1 {ГОЛ} as \5\? {Ч} ÷ {Ч} = {Ч}\.$", _частное_en),
+    (rf"^{А} {А} {Ч} {А}, {А} {А} {Ч} {А}; во сколько раз больше {А} {А} {А}, "
+     rf"чем {А}\? {Ч} ÷ {Ч} = {Ч}\.$", _частное_ru),
     (r"^(?P<и1>\w+) (?P<г1>has|works) "
      r"(?P<ф>twice|[a-z]+ times|half|a third|a quarter|a fifth) as many "
      r"(?P<пр>\w+) as (?P<и2>\w+)\. (?P<и2б>\w+) (?P<г2>has|works) "
