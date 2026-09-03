@@ -25,7 +25,12 @@ from layer import emit_grouped  # noqa: E402
 # result of 47 + 38?», «compute …», «evaluate …» were mute — the paraphrase
 # market wants the frame's words shown): every value form of the packs cycles.
 ЯЗЫКИ = ("de", "fr", "es", "it", "pl", "pt", "nl", "tr", "en", "ru")
-ШИРИНА = 16
+# THE OPERATION IS A WORD OF THE FRAME (holon 04.09: «what's # + #» and
+# «what's # − #» are two frames, each wanting LAW ≥ 4 distinct shows — with
+# eight English forms over four operations, two shows a frame left the
+# market honestly mute): a pass shows eight expressions per form, so every
+# (form, operation) frame carries ten shows over the five passes.
+ПОКАЗОВ_НА_ФОРМУ = 8
 
 
 def выражение(шаг, i, оп):
@@ -49,9 +54,10 @@ def язык_группа(шаг, язык):
     head was bought for subtraction alone): the show index k walks the
     forms, k ÷ forms walks the operations."""
     формы = paraphrase.формы(язык, "value")
+    ширина = ПОКАЗОВ_НА_ФОРМУ * len(формы)
     вон = []
-    for i in range(ШИРИНА):
-        k = шаг * ШИРИНА + i
+    for i in range(ширина):
+        k = шаг * ширина + i
         форма = формы[k % len(формы)]
         в, з = выражение(шаг, i, (k // len(формы)) % 4)
         вон.append(f"{форма.format(в)} {в} = {з}.")

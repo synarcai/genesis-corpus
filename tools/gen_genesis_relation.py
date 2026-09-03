@@ -610,7 +610,10 @@ def вопросы(шаг):
                    f"замыкании: цепь {звенья}.")
         break
     модуль = сдвиг(о.МОДУЛИ, шаг)[0]
-    н = о.ЧИСЛА[шаг % len(о.ЧИСЛА)]
+    # THE NUMBER IS NOT BELOW THE MODULUS (holon 04.09: «число 1 по модулю 3»
+    # answered its own number — an echo, refused by the market's law of echo):
+    # the number stands at least two moduli up, distinct on every pass.
+    н = о.ЧИСЛА[шаг % len(о.ЧИСЛА)] + модуль * (2 + шаг)
     о_ст = о.остаток(н, модуль)
     вон.append(f"in what class modulo {модуль} does the number {н} "
                f"stand? the number {н} stands in the class of remainder "
