@@ -843,8 +843,10 @@ def имена_на_месте(строка, слой=None):
     for м in _ПОСЛЕ.finditer(низ):
         w = м.group(1)
         # a pronoun after «does» («does he have») names the bearer, an article
-        # a thing («does the bag need»); a broken name is the truncation law's
-        if w not in ИМЕНА_EN and w not in ("he", "she", "they") and w not in _СЛУЖЕБНЫЕ_EN:
+        # a thing («does the bag need»), a NUMERAL a counted one («does one card
+        # cost» — the rate of exchange, 03.09); a broken name is the truncation law's
+        if (w not in ИМЕНА_EN and w not in ("he", "she", "they") and w not in _СЛУЖЕБНЫЕ_EN
+                and w not in ЧИСЛИТЕЛЬНЫЕ_EN):
             return False
     # AFTER «THAN» A THING MAY STAND («more storks than birds», «than in the
     # afternoon», «than cups of sugar»): the bearer's corruption there is

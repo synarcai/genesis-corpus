@@ -110,6 +110,17 @@ def язык_группа(шаг, язык):
         _добавить(вон, язык, "место_две", X=лица[0][0], Т=(шаг + i + 2) % вещей, n=n, k=k, k2=k2,
                   место=(шаг + i + 2) % вещей_мест, свойство=с1, свойство2=с2, свойство3=с3)
         j += 1
+    # A GOOD PRICED IN ANOTHER GOOD (e9's profile, genus 7 — the rate of
+    # exchange), asked both ways: eight per pass
+    for i in range(8):
+        т1 = (шаг + i) % вещей; т2 = (т1 + 1 + (шаг + i) % (вещей - 1)) % вещей
+        n = 3 + (шаг * 5 + i * 7 + j) % 12
+        k = 2 + (шаг * 3 + i * 5 + j) % 9
+        if i % 2 == 0:
+            _добавить(вон, язык, "курс", X=лица[0][0], Т=т1, Т2=т2, n=n, k=k)
+        else:
+            _добавить(вон, язык, "курс_обр", X=лица[0][0], Т=т1, Т2=т2, n=n, m=n * k)
+        j += 1
     # the rate is asked BOTH ways, so each way keeps its own mass of twenty
     for i in range(8):
         X = лица[(шаг * 5 + i * 7 + 6) % len(лица)][0]

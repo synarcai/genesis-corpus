@@ -400,6 +400,29 @@
       ]
     },
     {
+      "name": "two_kinds",
+      "file": "datasets/genesis_two_kinds.txt",
+      "genre": "TWO KINDS AND A SUM OF WEIGHTS — THE SYSTEM OF TWO UNKNOWNS WITH ITS CHAIN (e9's order 03.09, the profile of muteness of the g1 band, genus 5): the band asked «there are 20 animals … 70 legs, how many cows?» and the organism was mute not for the arithmetic but because no page ever said how many legs a cow has. This world says it: «there are 20 animals in a farm, chickens and cows. a chicken has 2 legs and a cow has 4 legs. there are 70 legs in all. how many cows are there? 2 × 20 = 40, 70 − 40 = 30, 4 − 2 = 2, 30 ÷ 2 = 15. so the answer is 15.» — the chain is the substitution written out (all of the lesser kind would give 2 × 20 legs; the surplus is bought by swaps, each swap adding 4 − 2), and the lesser kind asked adds one step (20 − 15 = 5). Three pairs per language (chickens and cows, bicycles and cars, beetles and spiders — the lesser kind always carries the lesser weight, or the chain would run through negative numbers), en/ru/de («на ферме 20 животных, куриц и коров. у курицы 2 ноги, а у коровы 4 ноги. всего 70 ног. сколько коров? …», «es gibt 20 Tiere in einem Hof, Hühner und Kühe. ein Huhn hat 2 Beine und eine Kuh hat 4 Beine. …»); the house of two kinds (tools/twokinds.py) declares every count form it uses, the court solves the system itself and regenerates the page",
+      "act": [
+        "recount",
+        "translate"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "geometry_langs",
       "file": "datasets/genesis_geometry_langs.txt",
       "genre": "AREA AND PERIMETER IN EIGHT LANGUAGES (the owner's word: every language in surplus; the geometry world says them in en/ru): the four facts of the geometry world — the area and the perimeter of a rectangle, the perimeter and the area of a square — as statement and as question answered by the statement (М-153), with the geometry world's ledger: «ein Rechteck 7 mal 8 hat die Fläche 7 × 8 = 56.», «wie groß ist der Umfang eines Rechtecks 3 mal 4? ein Rechteck 3 mal 4 hat den Umfang 3 + 4 = 7, 2 × 7 = 14.», «un carré de côté 4 a un périmètre de 4 × 4 = 16.», «¿cuál es el área de un cuadrado de lado 5? un cuadrado de lado 5 tiene área 5 × 5 = 25.», «qual è il perimetro …», «qual é a área …», «wat is de omtrek van een rechthoek 3 bij 4? …», «jakie jest pole prostokąta 2 na 3? prostokąt 2 na 3 ma pole 2 × 3 = 6.», «kenarları 7 ve 8 olan dikdörtgenin çevresi: 7 + 8 = 15, 2 × 15 = 30.»; the house of geometry phrases (tools/geoforms.py) holds the phrases with holes, the court turns the same phrases into patterns and recomputes every ledger",
@@ -3674,10 +3697,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 14915600,
+      "size": 15021001,
       "tiers": [],
       "text": "mix",
-      "lines": 207853
+      "lines": 208333
     },
     {
       "name": "full",
@@ -3692,10 +3715,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 19398669,
+      "size": 19504070,
       "tiers": [],
       "text": "mix",
-      "lines": 281190
+      "lines": 281670
     },
     {
       "name": "minimal",
