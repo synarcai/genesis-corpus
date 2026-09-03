@@ -105,9 +105,11 @@ def _ру_верна(n, слово, имя):
 СТАВКА_ЗА = re.compile(
     r"^(.+?) earns (\d+) (\w+) per (\w+); in (\d+) (\w+) (.+?) earns "
     r"(\d+) (\w+)\.$")
+# THE QUESTION LINE IS WHOLE: the rate fact opens it (judged by СТАВКА on
+# its own), the answer carries the product as a link the court recomputes.
 СТАВКА_ВОПРОС = re.compile(
-    r"^how much does (.+?) earn in (\d+) (\w+)\? in (\d+) (\w+) "
-    r"(.+?) earns (\d+) (\w+)\.$")
+    r"^((.+?) earns (\d+) (\w+) every (\w+)\.) how much does (.+?) earn in (\d+) (\w+)\? in (\d+) (\w+) "
+    r"(.+?) earns (\d+) (\w+): (\d+) × (\d+) = (\d+)\.$")
 ТРАТА = re.compile(
     r"^he had (\d+) dollars and spent (\d+) dollars; he has (\d+) "
     r"dollars left\.$")
@@ -148,8 +150,8 @@ def _ру_верна(n, слово, имя):
     r"^(\S+) зарабатывает (\d+) (\S+) в (\S+); за (\d+) (\S+) "
     r"(\S+) зарабатывает (\d+) (\S+)\.$")
 СТАВКА_ВОПРОС_RU = re.compile(
-    r"^сколько (\S+) (\S+) зарабатывает за (\d+) (\S+)\? за (\d+) "
-    r"(\S+) (\S+) зарабатывает (\d+) (\S+)\.$")
+    r"^((\S+) зарабатывает (\d+) (\S+) в (\S+)\.) сколько (\S+) (\S+) зарабатывает за (\d+) (\S+)\? за (\d+) "
+    r"(\S+) (\S+) зарабатывает (\d+) (\S+): (\d+) × (\d+) = (\d+)\.$")
 ДОЛЛАРЫ_RU = re.compile(
     r"^(\d+) (\S+) (\d+) (\S+) — это (\d+) (\S+)\.$")
 
@@ -253,14 +255,18 @@ def судить(строка):
                       and _форма_верна(итог, деньги2))
     m = СТАВКА_ВОПРОС.match(с)
     if m:
-        кто, n, время, n2, время2, кто2, итог, деньги = (
-            m.group(1), int(m.group(2)), m.group(3), int(m.group(4)),
-            m.group(5), m.group(6), int(m.group(7)), m.group(8))
+        (факт, кто0, ставка, деньги0, время0, кто, n, время, n2, время2, кто2,
+         итог, деньги, л1, л2, л3) = m.groups()
+        ставка, n, n2, итог, л1, л2, л3 = (int(x) for x in (ставка, n, n2, итог, л1, л2, л3))
         if _ИМЯ.get(деньги) is None or _ИМЯ.get(время) is None:
             return False, False
-        # ВОПРОС ОБЯЗАН СПРАШИВАТЬ ТО ЖЕ, ЧЕМ ОТВЕЧАЕТ.
-        return True, (кто == кто2 and n == n2 and время == время2
-                      and итог % n == 0
+        судимо, верно = судить(факт)          # the rate fact by its own rule
+        if not судимо:
+            return False, False
+        # ВОПРОС ОБЯЗАН СПРАШИВАТЬ ТО ЖЕ, ЧЕМ ОТВЕЧАЕТ, И О ТОЙ ЖЕ СТАВКЕ.
+        return True, (верно and кто0 == кто == кто2 and n == n2 and время == время2
+                      and _ИМЯ.get(время0) == _ИМЯ[время] and _ИМЯ.get(деньги0) == _ИМЯ[деньги]
+                      and итог == ставка * n and (л1, л2, л3) == (ставка, n, итог)
                       and _форма_верна(n, время)
                       and _форма_верна(итог, деньги))
     m = ТРАТА.match(с)
@@ -340,13 +346,19 @@ def судить(строка):
                       and _ру_верна(итог, ф_д2, имя_д))
     m = СТАВКА_ВОПРОС_RU.match(с)
     if m:
-        (_ч, кто, n, ф_в, n2, ф_в2, кто2, итог, ф_д) = m.groups()
-        n, n2, итог = int(n), int(n2), int(итог)
+        (факт, кто0, ставка, ф_д0, в_ед, _ч, кто, n, ф_в, n2, ф_в2, кто2, итог, ф_д, л1, л2, л3) = m.groups()
+        ставка, n, n2, итог, л1, л2, л3 = (int(x) for x in (ставка, n, n2, итог, л1, л2, л3))
         имя_д, имя_в = _ру_имя(ф_д), _ру_имя(ф_в)
         if имя_д is None or имя_в is None:
             return False, False
-        return True, (кто == кто2 and n == n2 and ф_в == ф_в2
-                      and n > 0 and итог % n == 0
+        судимо, верно = судить(факт)          # the rate fact by its own rule
+        if not судимо:
+            return False, False
+        ру_в = _РУССКОЕ_ИМЯ.get(имя_в)
+        return True, (верно and кто0 == кто == кто2 and n == n2 and ф_в == ф_в2
+                      and _ру_имя(ф_д0) == имя_д and _ч == units.рус(имя_д, 5)
+                      and ру_в is not None and rugram.ПАРАДИГМЫ[ру_в][3] == в_ед
+                      and итог == ставка * n and (л1, л2, л3) == (ставка, n, итог)
                       and _ру_верна(n, ф_в, имя_в)
                       and _ру_верна(итог, ф_д, имя_д))
     m = В_ЕДИНИЦЕ_RU.match(с)
