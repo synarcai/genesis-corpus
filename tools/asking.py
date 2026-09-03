@@ -153,7 +153,7 @@ _КРАЙ = "«»\"'()[],.;:!"
 # сорок пять покрывают 94 %; остаток — вопрос-выбор («… — рост или
 # убыль?») и вопрос, начатый предметом («f(x) = …?», «5 яблок …»), о
 # которых дом молчит, а не лжёт.
-ЗАЧИНЫ = frozenset("""
+_ЗАЧИНЫ_ДОМА = frozenset("""
 what how which where when who whom whose why is are was were does do did
 whence whither wherefore wherein whereby whereof
 what's what’s how's how’s where's where’s who's who’s
@@ -191,7 +191,7 @@ def _зачины_пакетов():
     return вон
 
 
-ЗАЧИНЫ = frozenset(ЗАЧИНЫ | _зачины_пакетов())
+ЗАЧИНЫ = frozenset(_ЗАЧИНЫ_ДОМА | _зачины_пакетов())
 
 
 def _концевые_пакетов():
