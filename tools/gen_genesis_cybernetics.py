@@ -200,11 +200,13 @@ def pass_shows(pass_i):
         out.append(утв_р_ru)
         out.append(спросить("distinguish", рег_en, утв_р_en))
         out.append(спросить("различает", рег_ru, утв_р_ru))
-        бит_en = f"to distinguish {n} disturbances a regulator"
-        утв_б_en = (f"{бит_en} needs {бит} "
-                    f"{by_count(бит, 'bits')}.")
+        # THE PURPOSE IS A TAIL, NOT A SUBJECT: «how many bits does to distinguish
+        # 2 disturbances a regulator need?» (holon's TSV 04.09) — the question
+        # inverted a subject that was a clause; the subject is the regulator.
+        цель_en = f"to distinguish {n} disturbances"
+        утв_б_en = f"a regulator needs {бит} {by_count(бит, 'bits')} {цель_en}."
         out.append(утв_б_en)
-        out.append(спросить("bits", бит_en, утв_б_en))
+        out.append(f"how many bits does a regulator need {цель_en}? {утв_б_en}")
         out.append(f"чтобы различить {n} {ру('возмущение', n)}, регулятору нужно "
                    f"{бит} {ру('бит', бит)}.")
     return out
