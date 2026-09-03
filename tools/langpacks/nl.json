@@ -312,7 +312,8 @@
       ],
       "instances_per_pass": 40,
       "templates": [
-        "{lex:noun_count:one} is een ding."
+        "{lex:noun_count:one} is een ding.",
+        "wat is {lex:noun_count:one}? {lex:noun_count:one} is een ding."
       ]
     },
     "refusals": {

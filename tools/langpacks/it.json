@@ -350,7 +350,8 @@
       ],
       "instances_per_pass": 48,
       "templates": [
-        "{lex:noun_count:one} è una cosa."
+        "{lex:noun_count:one} è una cosa.",
+        "che cos'è {lex:noun_count:one}? {lex:noun_count:one} è una cosa."
       ]
     },
     "refusals": {

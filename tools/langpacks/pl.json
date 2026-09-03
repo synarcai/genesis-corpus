@@ -339,7 +339,8 @@
       ],
       "instances_per_pass": 44,
       "templates": [
-        "{lex:noun_count:one} to rzecz."
+        "{lex:noun_count:one} to rzecz.",
+        "co to jest {lex:noun_count:one}? {lex:noun_count:one} to rzecz."
       ]
     },
     "refusals": {

@@ -376,7 +376,8 @@
       "instances_per_pass": 18,
       "templates": [
         "{lex:noun_fem_a:one} это предмет.",
-        "{lex:noun_masc:one} это вещь."
+        "{lex:noun_masc:one} это вещь.",
+        "что такое {lex:noun_fem_a:one}? {lex:noun_fem_a:one} это предмет."
       ]
     },
     "narration": {

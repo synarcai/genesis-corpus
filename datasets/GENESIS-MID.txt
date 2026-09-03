@@ -6979,46 +6979,66 @@ there is no heading «bridge» at level 5: in this layer it stands at level 2.
 было 11 орехов. осталось 9 орехов.
 было 5 домов. осталось 4 дома.
 чашка это предмет.
-ложка это предмет.
-стол это вещь.
-гриб это вещь.
-монета это предмет.
 книга это предмет.
 орех это вещь.
-шар это вещь.
-марка это предмет.
-чашка это предмет.
-дом это вещь.
-книга это предмет.
-ложка это предмет.
-орех это вещь.
-гриб это вещь.
-марка это предмет.
-книга это предмет.
-шар это вещь.
-шар это вещь.
-чашка это предмет.
-чашка это предмет.
-дом это вещь.
-стол это вещь.
-ложка это предмет.
-монета это предмет.
-гриб это вещь.
-орех это вещь.
-книга это предмет.
-марка это предмет.
-шар это вещь.
-дом это вещь.
-чашка это предмет.
 орех это вещь.
 стол это вещь.
-книга это предмет.
-монета это предмет.
-шар это вещь.
-орех это вещь.
+что такое ложка? ложка это предмет.
+что такое книга? книга это предмет.
+что такое ложка? ложка это предмет.
+ложка это предмет.
 марка это предмет.
+орех это вещь.
+шар это вещь.
+гриб это вещь.
+что такое монета? монета это предмет.
+что такое марка? марка это предмет.
+что такое монета? монета это предмет.
+монета это предмет.
+чашка это предмет.
+шар это вещь.
 дом это вещь.
+орех это вещь.
+что такое монета? монета это предмет.
+что такое чашка? чашка это предмет.
+книга это предмет.
+книга это предмет.
+ложка это предмет.
+шар это вещь.
+стол это вещь.
+шар это вещь.
+что такое книга? книга это предмет.
+что такое ложка? ложка это предмет.
+книга это предмет.
+марка это предмет.
+монета это предмет.
 дом это вещь.
+гриб это вещь.
+дом это вещь.
+что такое марка? марка это предмет.
+что такое монета? монета это предмет.
+марка это предмет.
+чашка это предмет.
+книга это предмет.
+дом это вещь.
+орех это вещь.
+что такое чашка? чашка это предмет.
+что такое чашка? чашка это предмет.
+что такое книга? книга это предмет.
+марка это предмет.
+ложка это предмет.
+марка это предмет.
+стол это вещь.
+шар это вещь.
+что такое чашка? чашка это предмет.
+что такое ложка? ложка это предмет.
+что такое марка? марка это предмет.
+чашка это предмет.
+монета это предмет.
+гриб это вещь.
+дом это вещь.
+что такое ложка? ложка это предмет.
+что такое монета? монета это предмет.
 вчера маша принесла шесть чашек. потом маша принесла ещё.
 вчера маша получила один монета. потом маша получила ещё.
 вчера маша отдала пять марок. потом маша отдала ещё.
@@ -10329,6 +10349,9 @@ die woche ist eine sache.
 die tische sind dinge.
 die tische sind dinge.
 die tische sind dinge.
+was ist der spiegel? der spiegel ist ein ding.
+was ist der tisch? der tisch ist ein ding.
+was ist der berg? der berg ist ein ding.
 der text ist eine sache.
 das jahr ist eine sache.
 der hof ist ein ding.
@@ -10343,6 +10366,9 @@ die lampe ist eine sache.
 die tische sind dinge.
 die tische sind dinge.
 die tische sind dinge.
+was ist der wagen? der wagen ist ein ding.
+was ist der brief? der brief ist ein ding.
+was ist der tisch? der tisch ist ein ding.
 der typ ist eine sache.
 der berg ist ein ding.
 der weg ist ein ding.
@@ -10356,6 +10382,9 @@ die tür ist eine sache.
 die tische sind dinge.
 die tische sind dinge.
 die tische sind dinge.
+was ist der spiegel? der spiegel ist ein ding.
+was ist der garten? der garten ist ein ding.
+was ist der wagen? der wagen ist ein ding.
 der text ist eine sache.
 der spiegel ist ein ding.
 der baum ist ein ding.
@@ -10369,6 +10398,9 @@ die frage ist eine sache.
 die tische sind dinge.
 die tische sind dinge.
 die tische sind dinge.
+was ist der wald? der wald ist ein ding.
+was ist der hof? der hof ist ein ding.
+was ist der wald? der wald ist ein ding.
 die quelle ist ein ding.
 der typ ist eine sache.
 der wagen ist ein ding.
@@ -10383,6 +10415,9 @@ die straße ist eine sache.
 die tische sind dinge.
 die tische sind dinge.
 die tische sind dinge.
+was ist der berg? der berg ist ein ding.
+was ist der weg? der weg ist ein ding.
+was ist der hof? der hof ist ein ding.
 das system ist ein ding.
 der spiegel ist ein ding.
 der tisch ist ein ding.
@@ -10396,6 +10431,9 @@ die blume ist eine sache.
 die tische sind dinge.
 die tische sind dinge.
 die tische sind dinge.
+was ist der wald? der wald ist ein ding.
+was ist der baum? der baum ist ein ding.
+was ist der spiegel? der spiegel ist ein ding.
 die quelle ist ein ding.
 das jahr ist eine sache.
 der wagen ist ein ding.
@@ -10409,6 +10447,9 @@ die lampe ist eine sache.
 die stadt ist eine sache.
 die tische sind dinge.
 die tische sind dinge.
+was ist der berg? der berg ist ein ding.
+was ist der stuhl? der stuhl ist ein ding.
+was ist der baum? der baum ist ein ding.
 ich sehe den zettel.
 ¬ ich liest ein buch.
 ¬ die farbe von sieben?
@@ -11221,69 +11262,17 @@ die karte ist eine sache.
 die stadt ist eine sache.
 die blumen sind dinge.
 die blumen sind dinge.
-der typ ist eine sache.
-der baum ist ein ding.
-der baum ist ein ding.
-das wort ist ein ding.
-das feld ist ein ding.
-die karte ist eine sache.
-die blumen sind dinge.
-die quelle ist ein ding.
-der berg ist ein ding.
-der brief ist ein ding.
-das wort ist ein ding.
-das haus ist ein ding.
-die karte ist eine sache.
-die straße ist eine sache.
-die blumen sind dinge.
-der typ ist eine sache.
-der hof ist ein ding.
-der hof ist ein ding.
-das bild ist ein ding.
+was ist der wagen? der wagen ist ein ding.
+was ist der wagen? der wagen ist ein ding.
+das jahr ist eine sache.
+der tisch ist ein ding.
+der tisch ist ein ding.
 das gebäude ist ein ding.
-die lampe ist eine sache.
-die blume ist eine sache.
-die blumen sind dinge.
-die quelle ist ein ding.
-der spiegel ist ein ding.
-der stuhl ist ein ding.
-das wort ist ein ding.
-das zimmer ist ein ding.
-die lampe ist eine sache.
-die tür ist eine sache.
-die blumen sind dinge.
-das system ist ein ding.
-der wagen ist ein ding.
-der wagen ist ein ding.
-das dorf ist ein ding.
-das wort ist ein ding.
 die stadt ist eine sache.
 die frage ist eine sache.
 die blumen sind dinge.
-die blumen sind dinge.
-der spiegel ist ein ding.
-der weg ist ein ding.
-das bild ist ein ding.
-das buch ist ein ding.
-die lampe ist eine sache.
-die woche ist eine sache.
-die blumen sind dinge.
-das system ist ein ding.
-der wagen ist ein ding.
-der berg ist ein ding.
-das fenster ist ein ding.
-das bild ist ein ding.
-die straße ist eine sache.
-die karte ist eine sache.
-die blumen sind dinge.
-die blumen sind dinge.
-das jahr ist eine sache.
-der garten ist ein ding.
-das bild ist ein ding.
-das feld ist ein ding.
-die stadt ist eine sache.
-die blume ist eine sache.
-die blumen sind dinge.
+was ist der spiegel? der spiegel ist ein ding.
+was ist der stuhl? der stuhl ist ein ding.
 der text ist eine sache.
 der wagen ist ein ding.
 der spiegel ist ein ding.
@@ -11293,13 +11282,86 @@ die tür ist eine sache.
 die lampe ist eine sache.
 die blumen sind dinge.
 die blumen sind dinge.
+was ist der hof? der hof ist ein ding.
+was ist der hof? der hof ist ein ding.
 das jahr ist eine sache.
-der tisch ist ein ding.
-der tisch ist ein ding.
-das gebäude ist ein ding.
+der garten ist ein ding.
+das bild ist ein ding.
+das feld ist ein ding.
+die stadt ist eine sache.
+die blume ist eine sache.
+die blumen sind dinge.
+was ist der spiegel? der spiegel ist ein ding.
+was ist der brief? der brief ist ein ding.
+das system ist ein ding.
+der wagen ist ein ding.
+der berg ist ein ding.
+das fenster ist ein ding.
+das bild ist ein ding.
+die straße ist eine sache.
+die karte ist eine sache.
+die blumen sind dinge.
+die blumen sind dinge.
+was ist der baum? der baum ist ein ding.
+was ist der baum? der baum ist ein ding.
+der spiegel ist ein ding.
+der weg ist ein ding.
+das bild ist ein ding.
+das buch ist ein ding.
+die lampe ist eine sache.
+die woche ist eine sache.
+die blumen sind dinge.
+was ist der berg? der berg ist ein ding.
+was ist der wald? der wald ist ein ding.
+das system ist ein ding.
+der wagen ist ein ding.
+der wagen ist ein ding.
+das dorf ist ein ding.
+das wort ist ein ding.
 die stadt ist eine sache.
 die frage ist eine sache.
 die blumen sind dinge.
+die blumen sind dinge.
+was ist der tisch? der tisch ist ein ding.
+die quelle ist ein ding.
+der spiegel ist ein ding.
+der stuhl ist ein ding.
+das wort ist ein ding.
+das zimmer ist ein ding.
+die lampe ist eine sache.
+die tür ist eine sache.
+die blumen sind dinge.
+was ist der berg? der berg ist ein ding.
+was ist der spiegel? der spiegel ist ein ding.
+der typ ist eine sache.
+der hof ist ein ding.
+der hof ist ein ding.
+das bild ist ein ding.
+das gebäude ist ein ding.
+die lampe ist eine sache.
+die blume ist eine sache.
+die blumen sind dinge.
+was ist der wald? der wald ist ein ding.
+was ist der garten? der garten ist ein ding.
+die quelle ist ein ding.
+der berg ist ein ding.
+der brief ist ein ding.
+das wort ist ein ding.
+das haus ist ein ding.
+die karte ist eine sache.
+die straße ist eine sache.
+die blumen sind dinge.
+was ist der berg? der berg ist ein ding.
+was ist der berg? der berg ist ein ding.
+der typ ist eine sache.
+der baum ist ein ding.
+der baum ist ein ding.
+das wort ist ein ding.
+das feld ist ein ding.
+die karte ist eine sache.
+die blumen sind dinge.
+was ist der wald? der wald ist ein ding.
+was ist der weg? der weg ist ein ding.
 ¬ ich liest ein buch.
 ich lese ein buch.
 ¬ ich sehe der zettel.
@@ -12105,20 +12167,15 @@ das gebäude ist ein ding.
 das buch ist ein ding.
 die blume ist eine sache.
 die bücher sind dinge.
-der typ ist eine sache.
-der baum ist ein ding.
-das bild ist ein ding.
-das wort ist ein ding.
-die lampe ist eine sache.
+was ist der spiegel? der spiegel ist ein ding.
+was ist der wagen? der wagen ist ein ding.
+der spiegel ist ein ding.
+der brief ist ein ding.
+das gebäude ist ein ding.
+das haus ist ein ding.
 die tür ist eine sache.
 die bücher sind dinge.
-der text ist eine sache.
-der berg ist ein ding.
-der hof ist ein ding.
-das fenster ist ein ding.
-die lampe ist eine sache.
-die frage ist eine sache.
-die bücher sind dinge.
+was ist der wagen? der wagen ist ein ding.
 die quelle ist ein ding.
 der berg ist ein ding.
 der spiegel ist ein ding.
@@ -12126,53 +12183,7 @@ das buch ist ein ding.
 die stadt ist eine sache.
 die stadt ist eine sache.
 die bücher sind dinge.
-der spiegel ist ein ding.
-der stuhl ist ein ding.
-das gebäude ist ein ding.
-das zimmer ist ein ding.
-die woche ist eine sache.
-die bücher sind dinge.
-der typ ist eine sache.
-der tisch ist ein ding.
-das wort ist ein ding.
-das gebäude ist ein ding.
-die karte ist eine sache.
-die straße ist eine sache.
-die bücher sind dinge.
-das system ist ein ding.
-der wagen ist ein ding.
-der baum ist ein ding.
-das dorf ist ein ding.
-die karte ist eine sache.
-die blume ist eine sache.
-die bücher sind dinge.
-die quelle ist ein ding.
-der wagen ist ein ding.
-der berg ist ein ding.
-das zimmer ist ein ding.
-die stadt ist eine sache.
-die lampe ist eine sache.
-die bücher sind dinge.
-die bücher sind dinge.
-der spiegel ist ein ding.
-der brief ist ein ding.
-das gebäude ist ein ding.
-das haus ist ein ding.
-die tür ist eine sache.
-die bücher sind dinge.
-das jahr ist eine sache.
-der garten ist ein ding.
-das wort ist ein ding.
-das feld ist ein ding.
-die frage ist eine sache.
-die bücher sind dinge.
-das system ist ein ding.
-der hof ist ein ding.
-das bild ist ein ding.
-das bild ist ein ding.
-die karte ist eine sache.
-die woche ist eine sache.
-die bücher sind dinge.
+was ist der baum? der baum ist ein ding.
 der text ist eine sache.
 der wagen ist ein ding.
 der wagen ist ein ding.
@@ -12181,12 +12192,84 @@ die lampe ist eine sache.
 die karte ist eine sache.
 die bücher sind dinge.
 die bücher sind dinge.
+was ist der garten? der garten ist ein ding.
+das system ist ein ding.
+der wagen ist ein ding.
+der baum ist ein ding.
+das dorf ist ein ding.
+die karte ist eine sache.
+die blume ist eine sache.
+die bücher sind dinge.
+was ist der wald? der wald ist ein ding.
+was ist der stuhl? der stuhl ist ein ding.
+der typ ist eine sache.
+der baum ist ein ding.
+das bild ist ein ding.
+das wort ist ein ding.
+die lampe ist eine sache.
+die tür ist eine sache.
+die bücher sind dinge.
+was ist der spiegel? der spiegel ist ein ding.
+was ist der wald? der wald ist ein ding.
+das jahr ist eine sache.
+der garten ist ein ding.
+das wort ist ein ding.
+das feld ist ein ding.
+die frage ist eine sache.
+die bücher sind dinge.
+was ist der berg? der berg ist ein ding.
+was ist der berg? der berg ist ein ding.
+der spiegel ist ein ding.
+der stuhl ist ein ding.
+das gebäude ist ein ding.
+das zimmer ist ein ding.
+die woche ist eine sache.
+die bücher sind dinge.
+was ist der berg? der berg ist ein ding.
+was ist der hof? der hof ist ein ding.
 der berg ist ein ding.
 der wald ist ein ding.
 das feld ist ein ding.
 das fenster ist ein ding.
 die straße ist eine sache.
 die bücher sind dinge.
+was ist der hof? der hof ist ein ding.
+die quelle ist ein ding.
+der wagen ist ein ding.
+der berg ist ein ding.
+das zimmer ist ein ding.
+die stadt ist eine sache.
+die lampe ist eine sache.
+die bücher sind dinge.
+die bücher sind dinge.
+was ist der tisch? der tisch ist ein ding.
+der text ist eine sache.
+der berg ist ein ding.
+der hof ist ein ding.
+das fenster ist ein ding.
+die lampe ist eine sache.
+die frage ist eine sache.
+die bücher sind dinge.
+was ist der wald? der wald ist ein ding.
+was ist der weg? der weg ist ein ding.
+das system ist ein ding.
+der hof ist ein ding.
+das bild ist ein ding.
+das bild ist ein ding.
+die karte ist eine sache.
+die woche ist eine sache.
+die bücher sind dinge.
+was ist der spiegel? der spiegel ist ein ding.
+was ist der brief? der brief ist ein ding.
+der typ ist eine sache.
+der tisch ist ein ding.
+das wort ist ein ding.
+das gebäude ist ein ding.
+die karte ist eine sache.
+die straße ist eine sache.
+die bücher sind dinge.
+was ist der berg? der berg ist ein ding.
+was ist der spiegel? der spiegel ist ein ding.
 ¬ ich liest ein buch.
 ich sehe den zettel.
 ¬ buch plus haus gleich?
@@ -12819,88 +12902,109 @@ das fenster ist ein ding.
 die lampe ist eine sache.
 die karte ist eine sache.
 die karten sind dinge.
+was ist der tisch? der tisch ist ein ding.
+das jahr ist eine sache.
+der brief ist ein ding.
+das gebäude ist ein ding.
+die woche ist eine sache.
+die karten sind dinge.
+was ist der brief? der brief ist ein ding.
 der berg ist ein ding.
 der wagen ist ein ding.
 das haus ist ein ding.
 die lampe ist eine sache.
 die karten sind dinge.
+was ist der spiegel? der spiegel ist ein ding.
+was ist der wagen? der wagen ist ein ding.
+der spiegel ist ein ding.
+das wort ist ein ding.
+das wort ist ein ding.
+die woche ist eine sache.
+die karten sind dinge.
+was ist der spiegel? der spiegel ist ein ding.
 der text ist eine sache.
 der baum ist ein ding.
 das haus ist ein ding.
 die lampe ist eine sache.
 die lampe ist eine sache.
 die karten sind dinge.
+was ist der baum? der baum ist ein ding.
+der typ ist eine sache.
+der stuhl ist ein ding.
+das wort ist ein ding.
+die blume ist eine sache.
+die karten sind dinge.
+was ist der stuhl? der stuhl ist ein ding.
 der spiegel ist ein ding.
 der berg ist ein ding.
 das zimmer ist ein ding.
 die stadt ist eine sache.
 die karten sind dinge.
+was ist der spiegel? der spiegel ist ein ding.
+was ist der berg? der berg ist ein ding.
+der wagen ist ein ding.
+das bild ist ein ding.
+das bild ist ein ding.
+die blume ist eine sache.
+die karten sind dinge.
+was ist der wald? der wald ist ein ding.
 der text ist eine sache.
 der hof ist ein ding.
 das gebäude ist ein ding.
 die stadt ist eine sache.
 die stadt ist eine sache.
 die karten sind dinge.
+was ist der hof? der hof ist ein ding.
+der typ ist eine sache.
+der weg ist ein ding.
+das bild ist ein ding.
+die karte ist eine sache.
+die karten sind dinge.
+was ist der weg? der weg ist ein ding.
 der spiegel ist ein ding.
 der spiegel ist ein ding.
 das buch ist ein ding.
 die straße ist eine sache.
+was ist der wald? der wald ist ein ding.
+was ist der spiegel? der spiegel ist ein ding.
+der wagen ist ein ding.
+das bild ist ein ding.
+das dorf ist ein ding.
+die frage ist eine sache.
+die karten sind dinge.
+was ist der berg? der berg ist ein ding.
 die quelle ist ein ding.
 der wagen ist ein ding.
 das gebäude ist ein ding.
 die stadt ist eine sache.
 die straße ist eine sache.
 die karten sind dinge.
+was ist der wagen? der wagen ist ein ding.
+das system ist ein ding.
+der garten ist ein ding.
+das dorf ist ein ding.
+die karte ist eine sache.
+die karten sind dinge.
+was ist der garten? der garten ist ein ding.
 das jahr ist eine sache.
 der wald ist ein ding.
 das feld ist ein ding.
 die tür ist eine sache.
+was ist der wald? der wald ist ein ding.
+was ist der wald? der wald ist ein ding.
+der berg ist ein ding.
+der hof ist ein ding.
+das fenster ist ein ding.
+die karte ist eine sache.
+die karten sind dinge.
+was ist der berg? der berg ist ein ding.
 die quelle ist ein ding.
 der berg ist ein ding.
 das wort ist ein ding.
 das gebäude ist ein ding.
 die tür ist eine sache.
 die karten sind dinge.
-das jahr ist eine sache.
-der brief ist ein ding.
-das gebäude ist ein ding.
-die woche ist eine sache.
-die karten sind dinge.
-der spiegel ist ein ding.
-das wort ist ein ding.
-das wort ist ein ding.
-die woche ist eine sache.
-die karten sind dinge.
-der typ ist eine sache.
-der stuhl ist ein ding.
-das wort ist ein ding.
-die blume ist eine sache.
-die karten sind dinge.
-der wagen ist ein ding.
-das bild ist ein ding.
-das bild ist ein ding.
-die blume ist eine sache.
-die karten sind dinge.
-der typ ist eine sache.
-der weg ist ein ding.
-das bild ist ein ding.
-die karte ist eine sache.
-die karten sind dinge.
-der wagen ist ein ding.
-das bild ist ein ding.
-das dorf ist ein ding.
-die frage ist eine sache.
-die karten sind dinge.
-das system ist ein ding.
-der garten ist ein ding.
-das dorf ist ein ding.
-die karte ist eine sache.
-die karten sind dinge.
-der berg ist ein ding.
-der hof ist ein ding.
-das fenster ist ein ding.
-die karte ist eine sache.
-die karten sind dinge.
+was ist der berg? der berg ist ein ding.
 ¬ ich sehe der zettel.
 zwei bücher.
 ¬ buch plus haus gleich?
@@ -13313,89 +13417,110 @@ das bild ist ein ding.
 das zimmer ist ein ding.
 die karte ist eine sache.
 die wagen sind dinge.
-der berg ist ein ding.
-das bild ist ein ding.
-das haus ist ein ding.
-die frage ist eine sache.
-die wagen sind dinge.
+was ist der tisch? der tisch ist ein ding.
+der spiegel ist ein ding.
 der wagen ist ein ding.
-das wort ist ein ding.
-die stadt ist eine sache.
-die blume ist eine sache.
-die wagen sind dinge.
-der wagen ist ein ding.
-das wort ist ein ding.
-die stadt ist eine sache.
-die woche ist eine sache.
-die wagen sind dinge.
-der wald ist ein ding.
-das gebäude ist ein ding.
+das buch ist ein ding.
 die lampe ist eine sache.
 die wagen sind dinge.
+was ist der baum? der baum ist ein ding.
+der spiegel ist ein ding.
+der berg ist ein ding.
+das feld ist ein ding.
+die stadt ist eine sache.
+die wagen sind dinge.
+was ist der hof? der hof ist ein ding.
+das jahr ist eine sache.
 der spiegel ist ein ding.
 das gebäude ist ein ding.
-die lampe ist eine sache.
-die wagen sind dinge.
-der berg ist ein ding.
-das wort ist ein ding.
-die karte ist eine sache.
-die quelle ist ein ding.
-der wagen ist ein ding.
-das gebäude ist ein ding.
-die karte ist eine sache.
-die quelle ist ein ding.
-der hof ist ein ding.
-das feld ist ein ding.
 die straße ist eine sache.
-der text ist eine sache.
-der baum ist ein ding.
-das buch ist ein ding.
-die stadt ist eine sache.
-der text ist eine sache.
-der tisch ist ein ding.
-das zimmer ist ein ding.
-die lampe ist eine sache.
 die wagen sind dinge.
-das system ist ein ding.
-der garten ist ein ding.
-das haus ist ein ding.
-die karte ist eine sache.
-die wagen sind dinge.
-das system ist ein ding.
-der weg ist ein ding.
-das fenster ist ein ding.
-die frage ist eine sache.
-die wagen sind dinge.
-der typ ist eine sache.
-der stuhl ist ein ding.
-das dorf ist ein ding.
-die blume ist eine sache.
-die wagen sind dinge.
-der typ ist eine sache.
-der brief ist ein ding.
-das bild ist ein ding.
-die woche ist eine sache.
-die wagen sind dinge.
+was ist der wagen? der wagen ist ein ding.
 das jahr ist eine sache.
 der wald ist ein ding.
 das wort ist ein ding.
 die tür ist eine sache.
 die wagen sind dinge.
-das jahr ist eine sache.
-der spiegel ist ein ding.
-das gebäude ist ein ding.
-die straße ist eine sache.
+was ist der berg? der berg ist ein ding.
+der typ ist eine sache.
+der brief ist ein ding.
+das bild ist ein ding.
+die woche ist eine sache.
 die wagen sind dinge.
-der spiegel ist ein ding.
-der berg ist ein ding.
-das feld ist ein ding.
-die stadt ist eine sache.
+was ist der spiegel? der spiegel ist ein ding.
+der typ ist eine sache.
+der stuhl ist ein ding.
+das dorf ist ein ding.
+die blume ist eine sache.
 die wagen sind dinge.
-der spiegel ist ein ding.
-der wagen ist ein ding.
-das buch ist ein ding.
+was ist der wald? der wald ist ein ding.
+das system ist ein ding.
+der weg ist ein ding.
+das fenster ist ein ding.
+die frage ist eine sache.
+die wagen sind dinge.
+was ist der brief? der brief ist ein ding.
+das system ist ein ding.
+der garten ist ein ding.
+das haus ist ein ding.
+die karte ist eine sache.
+die wagen sind dinge.
+was ist der berg? der berg ist ein ding.
+der text ist eine sache.
+der tisch ist ein ding.
+das zimmer ist ein ding.
 die lampe ist eine sache.
 die wagen sind dinge.
+was ist der berg? der berg ist ein ding.
+der text ist eine sache.
+der baum ist ein ding.
+das buch ist ein ding.
+die stadt ist eine sache.
+was ist der spiegel? der spiegel ist ein ding.
+die quelle ist ein ding.
+der hof ist ein ding.
+das feld ist ein ding.
+die straße ist eine sache.
+was ist der spiegel? der spiegel ist ein ding.
+die quelle ist ein ding.
+der wagen ist ein ding.
+das gebäude ist ein ding.
+die karte ist eine sache.
+was ist der wald? der wald ist ein ding.
+was ist der berg? der berg ist ein ding.
+der berg ist ein ding.
+das wort ist ein ding.
+die karte ist eine sache.
+was ist der wald? der wald ist ein ding.
+was ist der spiegel? der spiegel ist ein ding.
+der spiegel ist ein ding.
+das gebäude ist ein ding.
+die lampe ist eine sache.
+die wagen sind dinge.
+was ist der wald? der wald ist ein ding.
+der wald ist ein ding.
+das gebäude ist ein ding.
+die lampe ist eine sache.
+die wagen sind dinge.
+was ist der brief? der brief ist ein ding.
+der wagen ist ein ding.
+das wort ist ein ding.
+die stadt ist eine sache.
+die woche ist eine sache.
+die wagen sind dinge.
+was ist der stuhl? der stuhl ist ein ding.
+der wagen ist ein ding.
+das wort ist ein ding.
+die stadt ist eine sache.
+die blume ist eine sache.
+die wagen sind dinge.
+was ist der weg? der weg ist ein ding.
+der berg ist ein ding.
+das bild ist ein ding.
+das haus ist ein ding.
+die frage ist eine sache.
+die wagen sind dinge.
+was ist der garten? der garten ist ein ding.
 ¬ ich liest ein buch.
 zwei bücher.
 ¬ zwei buch.
@@ -39536,28 +39661,47 @@ a card is a thing.
 a foot is a thing.
 a mouse is a thing.
 a leaf is a thing.
-the zebra is a thing.
-a egg is a thing.
+what is book? a book is a thing.
+what is page? a page is a thing.
+the quiz is a thing.
+the jar is a thing.
 a page is a thing.
 a mile is a thing.
+a leaf is a thing.
+a child is a thing.
+a person is a thing.
+what is card? a card is a thing.
+what is card? a card is a thing.
+what is book? a book is a thing.
+a book is a thing.
+a book is a thing.
+a page is a thing.
+a person is a thing.
 a foot is a thing.
 a child is a thing.
+what is mile? a mile is a thing.
+what is egg? a egg is a thing.
 the quiz is a thing.
 the zebra is a thing.
 a page is a thing.
 a card is a thing.
 a book is a thing.
-a mouse is a thing.
-a leaf is a thing.
-the quiz is a thing.
-the jar is a thing.
-a page is a thing.
-a mile is a thing.
-a leaf is a thing.
-a child is a thing.
+what is page? a page is a thing.
+what is page? a page is a thing.
+what is mile? a mile is a thing.
+the box is a thing.
+what is mile? a mile is a thing.
+what is book? a book is a thing.
+what is page? a page is a thing.
+the zebra is a thing.
+what is page? a page is a thing.
+what is egg? a egg is a thing.
+what is card? a card is a thing.
 the box is a thing.
 the jar is a thing.
-the box is a thing.
+what is card? a card is a thing.
+what is mile? a mile is a thing.
+what is egg? a egg is a thing.
 she keeps it now.
 ¬ three childs.
 one hundred minus one equals ninety nine.
@@ -39757,13 +39901,14 @@ they have it.
 they keep it.
 four five six seven eight nine ten eleven twelve thirteen.
 the box is a thing.
-the jar is a thing.
+what is mile? a mile is a thing.
+the quiz is a thing.
 the quiz is a thing.
 the jar is a thing.
-the quiz is a thing.
+the jar is a thing.
+the zebra is a thing.
 the zebra is a thing.
 the box is a thing.
-the zebra is a thing.
 ¬ three childs.
 ¬ she keep it now.
 she keeps it now.
@@ -39962,12 +40107,12 @@ we go it.
 they own it.
 they go it.
 the jar is a thing.
+the zebra is a thing.
+the box is a thing.
 the quiz is a thing.
 the jar is a thing.
-the box is a thing.
 the zebra is a thing.
 the box is a thing.
-the zebra is a thing.
 the quiz is a thing.
 one hundred minus one equals ninety nine.
 ¬ three childs.
@@ -40112,13 +40257,13 @@ we hold it.
 they own it.
 three four five six seven eight nine ten eleven twelve thirteen fourteen.
 the zebra is a thing.
-the box is a thing.
-the jar is a thing.
-the quiz is a thing.
-the box is a thing.
 the zebra is a thing.
 the jar is a thing.
+the jar is a thing.
 the quiz is a thing.
+the quiz is a thing.
+the box is a thing.
+the box is a thing.
 ¬ she keep it now.
 ¬ a book plus a jar equals?
 she keeps it now.
@@ -69167,35 +69312,68 @@ el taxi es una cosa.
 el árbol es una cosa.
 el avión es una cosa.
 la canción es una cosa.
-el avión es una cosa.
-el papel es una cosa.
-el pingüino es una cosa.
-el taxi es una cosa.
-el árbol es una cosa.
+¿qué es el papel? el papel es una cosa.
+¿qué es el kilo? el kilo es una cosa.
+¿qué es el kiwi? el kiwi es una cosa.
+¿qué es el libro? el libro es una cosa.
+¿qué es la mesa? la mesa es una cosa.
 el gato es una cosa.
 el libro es una cosa.
 la mesa es una cosa.
 el papel es una cosa.
 el pingüino es una cosa.
-el taxi es una cosa.
-el kilo es una cosa.
-el kiwi es una cosa.
-el libro es una cosa.
-la mesa es una cosa.
+¿qué es el libro? el libro es una cosa.
+¿qué es el coche? el coche es una cosa.
+¿qué es el examen? el examen es una cosa.
+¿qué es la flor? la flor es una cosa.
+¿qué es el gato? el gato es una cosa.
 el examen es una cosa.
 la flor es una cosa.
 el gato es una cosa.
 el kilo es una cosa.
-el avión es una cosa.
-la ciudad es una cosa.
-el coche es una cosa.
-el examen es una cosa.
-la flor es una cosa.
+¿qué es el papel? el papel es una cosa.
+¿qué es el árbol? el árbol es una cosa.
+¿qué es el avión? el avión es una cosa.
+¿qué es la canción? la canción es una cosa.
+¿qué es la casa? la casa es una cosa.
 el gato es una cosa.
 la canción es una cosa.
 la casa es una cosa.
 la ciudad es una cosa.
 el coche es una cosa.
+¿qué es el libro? el libro es una cosa.
+¿qué es la mesa? la mesa es una cosa.
+¿qué es el papel? el papel es una cosa.
+¿qué es el pingüino? el pingüino es una cosa.
+el avión es una cosa.
+el papel es una cosa.
+el pingüino es una cosa.
+el taxi es una cosa.
+el árbol es una cosa.
+¿qué es la ciudad? la ciudad es una cosa.
+¿qué es la flor? la flor es una cosa.
+¿qué es el gato? el gato es una cosa.
+¿qué es el kilo? el kilo es una cosa.
+¿qué es el kiwi? el kiwi es una cosa.
+el taxi es una cosa.
+el kilo es una cosa.
+el kiwi es una cosa.
+el libro es una cosa.
+la mesa es una cosa.
+¿qué es la canción? la canción es una cosa.
+¿qué es la casa? la casa es una cosa.
+¿qué es la ciudad? la ciudad es una cosa.
+¿qué es el coche? el coche es una cosa.
+el avión es una cosa.
+la ciudad es una cosa.
+el coche es una cosa.
+el examen es una cosa.
+la flor es una cosa.
+¿qué es la ciudad? la ciudad es una cosa.
+¿qué es el pingüino? el pingüino es una cosa.
+¿qué es el taxi? el taxi es una cosa.
+¿qué es el árbol? el árbol es una cosa.
+¿qué es el avión? el avión es una cosa.
 yo canto.
 ¬ los flor son bonitas.
 cien menos uno es noventa y nueve.
@@ -69716,36 +69894,69 @@ hay los libros aquí.
 el gato es una cosa.
 el kiwi es una cosa.
 el coche es una cosa.
-el kilo es una cosa.
-la ciudad es una cosa.
+¿qué es el coche? el coche es una cosa.
+¿qué es el árbol? el árbol es una cosa.
 el avión es una cosa.
 la casa es una cosa.
 el pingüino es una cosa.
-la canción es una cosa.
-el papel es una cosa.
+¿qué es el pingüino? el pingüino es una cosa.
+¿qué es el kilo? el kilo es una cosa.
 el avión es una cosa.
 la mesa es una cosa.
 la flor es una cosa.
+¿qué es la flor? la flor es una cosa.
+¿qué es la canción? la canción es una cosa.
+¿qué es el papel? el papel es una cosa.
+el coche es una cosa.
+el árbol es una cosa.
+¿qué es el libro? el libro es una cosa.
+¿qué es el libro? el libro es una cosa.
+¿qué es el examen? el examen es una cosa.
+el pingüino es una cosa.
+el kilo es una cosa.
+¿qué es el libro? el libro es una cosa.
+¿qué es la ciudad? la ciudad es una cosa.
+¿qué es el taxi? el taxi es una cosa.
+la flor es una cosa.
+la canción es una cosa.
+¿qué es la ciudad? la ciudad es una cosa.
+¿qué es el papel? el papel es una cosa.
+¿qué es el gato? el gato es una cosa.
+el árbol es una cosa.
+el libro es una cosa.
+¿qué es la ciudad? la ciudad es una cosa.
+¿qué es el examen? el examen es una cosa.
+¿qué es el avión? el avión es una cosa.
+el kilo es una cosa.
+la ciudad es una cosa.
+¿qué es el papel? el papel es una cosa.
+¿qué es el taxi? el taxi es una cosa.
+¿qué es el kiwi? el kiwi es una cosa.
+la canción es una cosa.
+el papel es una cosa.
+¿qué es el papel? el papel es una cosa.
+¿qué es el gato? el gato es una cosa.
+¿qué es la casa? la casa es una cosa.
 el libro es una cosa.
 el examen es una cosa.
 el avión es una cosa.
-el coche es una cosa.
-el árbol es una cosa.
+¿qué es el avión? el avión es una cosa.
+¿qué es la mesa? la mesa es una cosa.
 el taxi es una cosa.
 el taxi es una cosa.
 el kiwi es una cosa.
-el pingüino es una cosa.
-el kilo es una cosa.
+¿qué es el kiwi? el kiwi es una cosa.
+¿qué es el coche? el coche es una cosa.
 el taxi es una cosa.
 el gato es una cosa.
 la casa es una cosa.
-la flor es una cosa.
-la canción es una cosa.
+¿qué es la casa? la casa es una cosa.
+¿qué es el pingüino? el pingüino es una cosa.
 el gato es una cosa.
 el avión es una cosa.
 la mesa es una cosa.
-el árbol es una cosa.
-el libro es una cosa.
+¿qué es la mesa? la mesa es una cosa.
+¿qué es la flor? la flor es una cosa.
 ¬ los flor son bonitas.
 las flores son bonitas.
 ¬ yo cantas.
@@ -70241,37 +70452,70 @@ hay los kiwis aquí.
 hay las mesas aquí.
 el coche es una cosa.
 el árbol es una cosa.
-el gato es una cosa.
-el taxi es una cosa.
-el kiwi es una cosa.
+¿qué es la ciudad? la ciudad es una cosa.
+¿qué es el libro? el libro es una cosa.
+¿qué es el examen? el examen es una cosa.
 el pingüino es una cosa.
 el kilo es una cosa.
-el avión es una cosa.
-el gato es una cosa.
-la casa es una cosa.
+¿qué es el papel? el papel es una cosa.
+¿qué es la ciudad? la ciudad es una cosa.
+¿qué es el taxi? el taxi es una cosa.
 la flor es una cosa.
 la canción es una cosa.
-el avión es una cosa.
-el avión es una cosa.
-la mesa es una cosa.
+¿qué es el papel? el papel es una cosa.
+¿qué es el papel? el papel es una cosa.
+¿qué es el gato? el gato es una cosa.
 el árbol es una cosa.
 el libro es una cosa.
 el examen es una cosa.
-el kiwi es una cosa.
-el coche es una cosa.
+¿qué es el examen? el examen es una cosa.
+¿qué es el avión? el avión es una cosa.
 el taxi es una cosa.
 la ciudad es una cosa.
 el taxi es una cosa.
-la casa es una cosa.
-el pingüino es una cosa.
+¿qué es el taxi? el taxi es una cosa.
+¿qué es el kiwi? el kiwi es una cosa.
 el taxi es una cosa.
 el papel es una cosa.
 el gato es una cosa.
-la mesa es una cosa.
-la flor es una cosa.
+¿qué es el gato? el gato es una cosa.
+¿qué es la casa? la casa es una cosa.
 el gato es una cosa.
 el examen es una cosa.
 el avión es una cosa.
+¿qué es el avión? el avión es una cosa.
+¿qué es la mesa? la mesa es una cosa.
+el gato es una cosa.
+el taxi es una cosa.
+el kiwi es una cosa.
+¿qué es el kiwi? el kiwi es una cosa.
+¿qué es el coche? el coche es una cosa.
+el avión es una cosa.
+el gato es una cosa.
+la casa es una cosa.
+¿qué es la casa? la casa es una cosa.
+¿qué es el pingüino? el pingüino es una cosa.
+el avión es una cosa.
+el avión es una cosa.
+la mesa es una cosa.
+¿qué es la mesa? la mesa es una cosa.
+¿qué es la flor? la flor es una cosa.
+¿qué es la canción? la canción es una cosa.
+el kiwi es una cosa.
+el coche es una cosa.
+¿qué es el libro? el libro es una cosa.
+¿qué es el árbol? el árbol es una cosa.
+¿qué es el libro? el libro es una cosa.
+la casa es una cosa.
+el pingüino es una cosa.
+¿qué es el libro? el libro es una cosa.
+¿qué es el kilo? el kilo es una cosa.
+¿qué es la ciudad? la ciudad es una cosa.
+la mesa es una cosa.
+la flor es una cosa.
+¿qué es la ciudad? la ciudad es una cosa.
+¿qué es la canción? la canción es una cosa.
+¿qué es el papel? el papel es una cosa.
 cien menos uno es noventa y nueve.
 ¬ los flor son bonitas.
 yo canto.
@@ -70593,37 +70837,70 @@ hay las canciones aquí.
 hay los kilos aquí.
 el taxi es una cosa.
 el pingüino es una cosa.
-el taxi es una cosa.
-el coche es una cosa.
+¿qué es el libro? el libro es una cosa.
+¿qué es el avión? el avión es una cosa.
 el coche es una cosa.
 la mesa es una cosa.
-la mesa es una cosa.
-la casa es una cosa.
+¿qué es el gato? el gato es una cosa.
+¿qué es el taxi? el taxi es una cosa.
 la casa es una cosa.
 el kiwi es una cosa.
-el kiwi es una cosa.
-el avión es una cosa.
+¿qué es el examen? el examen es una cosa.
+¿qué es el papel? el papel es una cosa.
 el avión es una cosa.
 el gato es una cosa.
-el gato es una cosa.
-el taxi es una cosa.
+¿qué es la ciudad? la ciudad es una cosa.
+¿qué es el libro? el libro es una cosa.
 el taxi es una cosa.
 el examen es una cosa.
-el examen es una cosa.
-el papel es una cosa.
+¿qué es la canción? la canción es una cosa.
+¿qué es el kilo? el kilo es una cosa.
 el papel es una cosa.
 la ciudad es una cosa.
-la ciudad es una cosa.
+¿qué es el árbol? el árbol es una cosa.
+¿qué es la flor? la flor es una cosa.
 el libro es una cosa.
-el libro es una cosa.
-el avión es una cosa.
-la canción es una cosa.
+¿qué es el papel? el papel es una cosa.
+¿qué es el pingüino? el pingüino es una cosa.
 el avión es una cosa.
 el kilo es una cosa.
-el gato es una cosa.
-el árbol es una cosa.
+¿qué es la ciudad? la ciudad es una cosa.
+¿qué es la mesa? la mesa es una cosa.
 el gato es una cosa.
 la flor es una cosa.
+¿qué es el libro? el libro es una cosa.
+¿qué es el kiwi? el kiwi es una cosa.
+el taxi es una cosa.
+el coche es una cosa.
+¿qué es el avión? el avión es una cosa.
+¿qué es el gato? el gato es una cosa.
+la mesa es una cosa.
+la casa es una cosa.
+¿qué es el taxi? el taxi es una cosa.
+¿qué es el examen? el examen es una cosa.
+el kiwi es una cosa.
+el avión es una cosa.
+¿qué es el papel? el papel es una cosa.
+¿qué es la ciudad? la ciudad es una cosa.
+el gato es una cosa.
+el taxi es una cosa.
+¿qué es el libro? el libro es una cosa.
+¿qué es la canción? la canción es una cosa.
+el examen es una cosa.
+el papel es una cosa.
+¿qué es el kilo? el kilo es una cosa.
+¿qué es el árbol? el árbol es una cosa.
+la ciudad es una cosa.
+el libro es una cosa.
+¿qué es la flor? la flor es una cosa.
+el avión es una cosa.
+la canción es una cosa.
+¿qué es el papel? el papel es una cosa.
+¿qué es el coche? el coche es una cosa.
+el gato es una cosa.
+el árbol es una cosa.
+¿qué es la ciudad? la ciudad es una cosa.
+¿qué es la casa? la casa es una cosa.
 ¬ yo cantas.
 el gato es grande.
 ¬ libro más casa es ?
@@ -70855,37 +71132,70 @@ hay las casas aquí.
 hay los gatos aquí.
 la ciudad es una cosa.
 el kilo es una cosa.
-la flor es una cosa.
+¿qué es la casa? la casa es una cosa.
 el gato es una cosa.
 el kiwi es una cosa.
-el gato es una cosa.
-el papel es una cosa.
+¿qué es la ciudad? la ciudad es una cosa.
+¿qué es el kilo? el kilo es una cosa.
 el libro es una cosa.
 el árbol es una cosa.
-el pingüino es una cosa.
+¿qué es el kiwi? el kiwi es una cosa.
 el taxi es una cosa.
 el avión es una cosa.
+¿qué es el libro? el libro es una cosa.
+¿qué es el árbol? el árbol es una cosa.
+la canción es una cosa.
+¿qué es el papel? el papel es una cosa.
+¿qué es el avión? el avión es una cosa.
+el taxi es una cosa.
+el gato es una cosa.
+¿qué es la canción? la canción es una cosa.
+¿qué es la flor? la flor es una cosa.
+el kilo es una cosa.
+¿qué es el papel? el papel es una cosa.
+¿qué es el gato? el gato es una cosa.
+el kiwi es una cosa.
+el taxi es una cosa.
+¿qué es el kilo? el kilo es una cosa.
+¿qué es el pingüino? el pingüino es una cosa.
+el árbol es una cosa.
+¿qué es la ciudad? la ciudad es una cosa.
+¿qué es el taxi? el taxi es una cosa.
+el avión es una cosa.
+el examen es una cosa.
+¿qué es el árbol? el árbol es una cosa.
+¿qué es el coche? el coche es una cosa.
+la flor es una cosa.
+¿qué es la ciudad? la ciudad es una cosa.
+¿qué es el examen? el examen es una cosa.
+el gato es una cosa.
+el papel es una cosa.
+¿qué es la flor? la flor es una cosa.
+¿qué es la mesa? la mesa es una cosa.
+el pingüino es una cosa.
+¿qué es el libro? el libro es una cosa.
+¿qué es el papel? el papel es una cosa.
 el taxi es una cosa.
 la ciudad es una cosa.
-la canción es una cosa.
+¿qué es el pingüino? el pingüino es una cosa.
 el avión es una cosa.
 el coche es una cosa.
-el taxi es una cosa.
-el gato es una cosa.
+¿qué es el libro? el libro es una cosa.
+¿qué es la ciudad? la ciudad es una cosa.
 el examen es una cosa.
 el libro es una cosa.
-el kilo es una cosa.
+¿qué es el coche? el coche es una cosa.
 el avión es una cosa.
 la mesa es una cosa.
-el kiwi es una cosa.
-el taxi es una cosa.
+¿qué es el examen? el examen es una cosa.
+¿qué es el libro? el libro es una cosa.
 el papel es una cosa.
 la canción es una cosa.
-el árbol es una cosa.
+¿qué es la mesa? la mesa es una cosa.
 el gato es una cosa.
 la casa es una cosa.
-el avión es una cosa.
-el examen es una cosa.
+¿qué es el papel? el papel es una cosa.
+¿qué es la canción? la canción es una cosa.
 ¬ los flor son bonitas.
 el gato es grande.
 ¬ la gato es grande.
@@ -71247,54 +71557,103 @@ trois plus un égale quatre.
 sept plus un égale huit.
 dix plus un égale onze.
 le papier est une chose.
-le coût est une chose.
-la maison est une chose.
-le zèbre est une chose.
 le journal est une chose.
-la ville est une chose.
-le papier est une chose.
-le taxi est une chose.
-la fleur est une chose.
-le papier est une chose.
-le coût est une chose.
-la maison est une chose.
-l hôtel est une chose.
-le livre est une chose.
-le wagon est une chose.
-l hôtel est une chose.
-le taxi est une chose.
-la fleur est une chose.
-l hôtel est une chose.
-la fenêtre est une chose.
+l examen est une chose.
+la voiture est une chose.
 le noël est une chose.
-le chat est une chose.
-le livre est une chose.
+qu'est-ce que le maïs ? le maïs est une chose.
+qu'est-ce que le stylo ? le stylo est une chose.
+qu'est-ce que le kilo ? le kilo est une chose.
+qu'est-ce que la fenêtre ? la fenêtre est une chose.
+qu'est-ce que le wagon ? le wagon est une chose.
+qu'est-ce que le papier ? le papier est une chose.
+le zèbre est une chose.
+le stylo est une chose.
+le kilo est une chose.
+la fenêtre est une chose.
 le wagon est une chose.
+qu'est-ce que la voiture ? la voiture est une chose.
+qu'est-ce que l île ? l île est une chose.
+qu'est-ce que la table ? la table est une chose.
+qu'est-ce que le livre ? le livre est une chose.
+qu'est-ce que la fleur ? la fleur est une chose.
+qu'est-ce que le zèbre ? le zèbre est une chose.
+le garçon est une chose.
+l île est une chose.
+la table est une chose.
+le livre est une chose.
+la fleur est une chose.
+qu'est-ce que la voiture ? la voiture est une chose.
+qu'est-ce que le gâteau ? le gâteau est une chose.
+qu'est-ce que le chat ? le chat est une chose.
+qu'est-ce que le taxi ? le taxi est une chose.
+qu'est-ce que la maison ? la maison est une chose.
+qu'est-ce que le garçon ? le garçon est une chose.
+le maïs est une chose.
+le gâteau est une chose.
+le chat est une chose.
+le taxi est une chose.
+la maison est une chose.
+qu'est-ce que la fenêtre ? la fenêtre est une chose.
+qu'est-ce que le noël ? le noël est une chose.
+qu'est-ce que l hôtel ? l hôtel est une chose.
+qu'est-ce que le coût ? le coût est une chose.
+qu'est-ce que la ville ? la ville est une chose.
 le chat est une chose.
 la voiture est une chose.
-le gâteau est une chose.
-la table est une chose.
-la fenêtre est une chose.
 le noël est une chose.
-le chat est une chose.
-le maïs est une chose.
-l île est une chose.
-le kilo est une chose.
-la voiture est une chose.
-le gâteau est une chose.
-la table est une chose.
-le garçon est une chose.
-le stylo est une chose.
-l examen est une chose.
-le maïs est une chose.
-l île est une chose.
-le kilo est une chose.
-le zèbre est une chose.
-le journal est une chose.
+l hôtel est une chose.
+le coût est une chose.
 la ville est une chose.
-le garçon est une chose.
-le stylo est une chose.
+qu'est-ce que la fenêtre ? la fenêtre est une chose.
+qu'est-ce que le wagon ? le wagon est une chose.
+qu'est-ce que le papier ? le papier est une chose.
+qu'est-ce que le journal ? le journal est une chose.
+qu'est-ce que l examen ? l examen est une chose.
+le chat est une chose.
+la fenêtre est une chose.
+le wagon est une chose.
+le papier est une chose.
+le journal est une chose.
 l examen est une chose.
+qu'est-ce que le livre ? le livre est une chose.
+qu'est-ce que la fleur ? la fleur est une chose.
+qu'est-ce que le zèbre ? le zèbre est une chose.
+qu'est-ce que le stylo ? le stylo est une chose.
+qu'est-ce que le kilo ? le kilo est une chose.
+l hôtel est une chose.
+le livre est une chose.
+la fleur est une chose.
+le zèbre est une chose.
+le stylo est une chose.
+le kilo est une chose.
+qu'est-ce que le taxi ? le taxi est une chose.
+qu'est-ce que la maison ? la maison est une chose.
+qu'est-ce que le garçon ? le garçon est une chose.
+qu'est-ce que l île ? l île est une chose.
+qu'est-ce que la table ? la table est une chose.
+l hôtel est une chose.
+le taxi est une chose.
+la maison est une chose.
+le garçon est une chose.
+l île est une chose.
+la table est une chose.
+qu'est-ce que le coût ? le coût est une chose.
+qu'est-ce que la ville ? la ville est une chose.
+qu'est-ce que le maïs ? le maïs est une chose.
+qu'est-ce que le gâteau ? le gâteau est une chose.
+qu'est-ce que le chat ? le chat est une chose.
+le papier est une chose.
+le coût est une chose.
+la ville est une chose.
+le maïs est une chose.
+le gâteau est une chose.
+qu'est-ce que le maïs ? le maïs est une chose.
+qu'est-ce que le journal ? le journal est une chose.
+qu'est-ce que l examen ? l examen est une chose.
+qu'est-ce que la voiture ? la voiture est une chose.
+qu'est-ce que le noël ? le noël est une chose.
+qu'est-ce que l hôtel ? l hôtel est une chose.
 je danse.
 ¬ les maison sont grandes.
 cent moins un égale quatre-vingt-dix-neuf.
@@ -71597,50 +71956,99 @@ le stylo est une chose.
 le chat est une chose.
 le journal est une chose.
 la table est une chose.
-la fenêtre est une chose.
-la maison est une chose.
-la voiture est une chose.
-la fleur est une chose.
+qu'est-ce que le stylo ? le stylo est une chose.
+qu'est-ce que le chat ? le chat est une chose.
+qu'est-ce que le journal ? le journal est une chose.
+qu'est-ce que la table ? la table est une chose.
 l hôtel est une chose.
 l île est une chose.
 l hôtel est une chose.
 le stylo est une chose.
 le chat est une chose.
-le livre est une chose.
-la ville est une chose.
-la fenêtre est une chose.
-la maison est une chose.
+qu'est-ce que l île ? l île est une chose.
+qu'est-ce que l hôtel ? l hôtel est une chose.
+qu'est-ce que le stylo ? le stylo est une chose.
+qu'est-ce que le chat ? le chat est une chose.
 le papier est une chose.
 le gâteau est une chose.
 le papier est une chose.
 l île est une chose.
 l hôtel est une chose.
-le taxi est une chose.
-l examen est une chose.
-le livre est une chose.
-la ville est une chose.
+qu'est-ce que le gâteau ? le gâteau est une chose.
+qu'est-ce que le papier ? le papier est une chose.
+qu'est-ce que l île ? l île est une chose.
+qu'est-ce que l hôtel ? l hôtel est une chose.
 le papier est une chose.
 le noël est une chose.
 le zèbre est une chose.
 le gâteau est une chose.
+qu'est-ce que le maïs ? le maïs est une chose.
+qu'est-ce que le noël ? le noël est une chose.
+qu'est-ce que le zèbre ? le zèbre est une chose.
+qu'est-ce que le gâteau ? le gâteau est une chose.
+qu'est-ce que le papier ? le papier est une chose.
+le maïs est une chose.
+le wagon est une chose.
+le garçon est une chose.
+le noël est une chose.
+qu'est-ce que le maïs ? le maïs est une chose.
+qu'est-ce que le wagon ? le wagon est une chose.
+qu'est-ce que le garçon ? le garçon est une chose.
+qu'est-ce que le noël ? le noël est une chose.
+qu'est-ce que le zèbre ? le zèbre est une chose.
+la voiture est une chose.
+la fleur est une chose.
+le maïs est une chose.
+le wagon est une chose.
+qu'est-ce que la voiture ? la voiture est une chose.
+qu'est-ce que la fleur ? la fleur est une chose.
+qu'est-ce que le maïs ? le maïs est une chose.
+qu'est-ce que le wagon ? le wagon est une chose.
+qu'est-ce que le garçon ? le garçon est une chose.
+la fenêtre est une chose.
+la maison est une chose.
+la voiture est une chose.
+la fleur est une chose.
+qu'est-ce que la voiture ? la voiture est une chose.
+qu'est-ce que la maison ? la maison est une chose.
+qu'est-ce que la voiture ? la voiture est une chose.
+qu'est-ce que la fleur ? la fleur est une chose.
+qu'est-ce que le maïs ? le maïs est une chose.
+le livre est une chose.
+la ville est une chose.
+la fenêtre est une chose.
+la maison est une chose.
+qu'est-ce que la fenêtre ? la fenêtre est une chose.
+qu'est-ce que la ville ? la ville est une chose.
+qu'est-ce que la fenêtre ? la fenêtre est une chose.
+qu'est-ce que la maison ? la maison est une chose.
+qu'est-ce que la voiture ? la voiture est une chose.
+le taxi est une chose.
+l examen est une chose.
+le livre est une chose.
+la ville est une chose.
+qu'est-ce que la fenêtre ? la fenêtre est une chose.
+qu'est-ce que l examen ? l examen est une chose.
+qu'est-ce que le livre ? le livre est une chose.
+qu'est-ce que la ville ? la ville est une chose.
 le chat est une chose.
 le coût est une chose.
 le kilo est une chose.
 le taxi est une chose.
 l examen est une chose.
-le maïs est une chose.
-le wagon est une chose.
-le garçon est une chose.
-le noël est une chose.
+qu'est-ce que le coût ? le coût est une chose.
+qu'est-ce que le kilo ? le kilo est une chose.
+qu'est-ce que le taxi ? le taxi est une chose.
+qu'est-ce que l examen ? l examen est une chose.
 le chat est une chose.
 le journal est une chose.
 la table est une chose.
 le coût est une chose.
 le kilo est une chose.
-la voiture est une chose.
-la fleur est une chose.
-le maïs est une chose.
-le wagon est une chose.
+qu'est-ce que le journal ? le journal est une chose.
+qu'est-ce que la table ? la table est une chose.
+qu'est-ce que le coût ? le coût est une chose.
+qu'est-ce que le kilo ? le kilo est une chose.
 ¬ les maison sont grandes.
 les maisons sont grandes.
 ¬ je parles.
@@ -71920,51 +72328,100 @@ le coût est une chose.
 le chat est une chose.
 l île est une chose.
 le zèbre est une chose.
-l île est une chose.
-le zèbre est une chose.
-le wagon est une chose.
+qu'est-ce que la maison ? la maison est une chose.
+qu'est-ce que le livre ? le livre est une chose.
+qu'est-ce que le kilo ? le kilo est une chose.
 l hôtel est une chose.
 le wagon est une chose.
 la voiture est une chose.
 la ville est une chose.
-le papier est une chose.
-la ville est une chose.
-le taxi est une chose.
-la table est une chose.
+qu'est-ce que la fenêtre ? la fenêtre est une chose.
+qu'est-ce que l hôtel ? l hôtel est une chose.
+qu'est-ce que le gâteau ? le gâteau est une chose.
+qu'est-ce que le garçon ? le garçon est une chose.
 le taxi est une chose.
 la table est une chose.
 le stylo est une chose.
 le papier est une chose.
-le stylo est une chose.
-le papier est une chose.
-le noël est une chose.
+qu'est-ce que la fleur ? la fleur est une chose.
+qu'est-ce que la fenêtre ? la fenêtre est une chose.
+qu'est-ce que l examen ? l examen est une chose.
 le chat est une chose.
 le noël est une chose.
 le maïs est une chose.
 la maison est une chose.
-le papier est une chose.
-la maison est une chose.
-le livre est une chose.
-le kilo est une chose.
+qu'est-ce que la fenêtre ? la fenêtre est une chose.
+qu'est-ce que le chat ? le chat est une chose.
+qu'est-ce que l île ? l île est une chose.
+qu'est-ce que le zèbre ? le zèbre est une chose.
 le livre est une chose.
 le kilo est une chose.
 le journal est une chose.
 l hôtel est une chose.
-le journal est une chose.
-l hôtel est une chose.
-le gâteau est une chose.
+qu'est-ce que le wagon ? le wagon est une chose.
+qu'est-ce que la voiture ? la voiture est une chose.
+qu'est-ce que la ville ? la ville est une chose.
 le chat est une chose.
 le gâteau est une chose.
 le garçon est une chose.
 la fleur est une chose.
-l hôtel est une chose.
-la fleur est une chose.
-la fenêtre est une chose.
-l examen est une chose.
+qu'est-ce que la voiture ? la voiture est une chose.
+qu'est-ce que la table ? la table est une chose.
+qu'est-ce que le stylo ? le stylo est une chose.
+qu'est-ce que le papier ? le papier est une chose.
 la fenêtre est une chose.
 l examen est une chose.
 le coût est une chose.
 le chat est une chose.
+qu'est-ce que le noël ? le noël est une chose.
+qu'est-ce que le maïs ? le maïs est une chose.
+qu'est-ce que la maison ? la maison est une chose.
+qu'est-ce que le livre ? le livre est une chose.
+l île est une chose.
+le zèbre est une chose.
+le wagon est une chose.
+qu'est-ce que la voiture ? la voiture est une chose.
+qu'est-ce que le kilo ? le kilo est une chose.
+qu'est-ce que le journal ? le journal est une chose.
+qu'est-ce que l hôtel ? l hôtel est une chose.
+le papier est une chose.
+la ville est une chose.
+le taxi est une chose.
+la table est une chose.
+qu'est-ce que le gâteau ? le gâteau est une chose.
+qu'est-ce que le garçon ? le garçon est une chose.
+qu'est-ce que la fleur ? la fleur est une chose.
+qu'est-ce que la fenêtre ? la fenêtre est une chose.
+le stylo est une chose.
+le papier est une chose.
+le noël est une chose.
+qu'est-ce que le maïs ? le maïs est une chose.
+qu'est-ce que l examen ? l examen est une chose.
+qu'est-ce que le coût ? le coût est une chose.
+qu'est-ce que le chat ? le chat est une chose.
+le papier est une chose.
+la maison est une chose.
+le livre est une chose.
+le kilo est une chose.
+qu'est-ce que l île ? l île est une chose.
+qu'est-ce que le zèbre ? le zèbre est une chose.
+qu'est-ce que le wagon ? le wagon est une chose.
+qu'est-ce que la voiture ? la voiture est une chose.
+le journal est une chose.
+l hôtel est une chose.
+le gâteau est une chose.
+qu'est-ce que le maïs ? le maïs est une chose.
+qu'est-ce que la ville ? la ville est une chose.
+qu'est-ce que le taxi ? le taxi est une chose.
+qu'est-ce que la table ? la table est une chose.
+l hôtel est une chose.
+la fleur est une chose.
+la fenêtre est une chose.
+l examen est une chose.
+qu'est-ce que le stylo ? le stylo est une chose.
+qu'est-ce que le papier ? le papier est une chose.
+qu'est-ce que le noël ? le noël est une chose.
+qu'est-ce que le maïs ? le maïs est une chose.
 cent moins un égale quatre-vingt-dix-neuf.
 ¬ les maison sont grandes.
 je danse.
@@ -72230,52 +72687,101 @@ voilà les zèbres.
 le papier est une chose.
 l hôtel est une chose.
 la maison est une chose.
-le taxi est une chose.
-le zèbre est une chose.
-l examen est une chose.
+qu'est-ce que le gâteau ? le gâteau est une chose.
+qu'est-ce que le livre ? le livre est une chose.
+qu'est-ce que le papier ? le papier est une chose.
 le journal est une chose.
 le maïs est une chose.
 la table est une chose.
-l île est une chose.
-la fenêtre est une chose.
-l hôtel est une chose.
+qu'est-ce que la maison ? la maison est une chose.
+qu'est-ce que le stylo ? le stylo est une chose.
+qu'est-ce que la voiture ? la voiture est une chose.
 le noël est une chose.
 le taxi est une chose.
 le zèbre est une chose.
-la fleur est une chose.
-le journal est une chose.
-le maïs est une chose.
+qu'est-ce que la table ? la table est une chose.
+qu'est-ce que le wagon ? le wagon est une chose.
+qu'est-ce que le coût ? le coût est une chose.
 la ville est une chose.
 l île est une chose.
-le chat est une chose.
-le kilo est une chose.
-le noël est une chose.
+qu'est-ce que le maïs ? le maïs est une chose.
+qu'est-ce que le zèbre ? le zèbre est une chose.
+qu'est-ce que l examen ? l examen est une chose.
 l hôtel est une chose.
 le chat est une chose.
 la fleur est une chose.
-le papier est une chose.
-le papier est une chose.
-la ville est une chose.
+qu'est-ce que la fenêtre ? la fenêtre est une chose.
+qu'est-ce que la fenêtre ? la fenêtre est une chose.
+qu'est-ce que l hôtel ? l hôtel est une chose.
 le coût est une chose.
 le garçon est une chose.
 le kilo est une chose.
-le stylo est une chose.
-la voiture est une chose.
-le chat est une chose.
+qu'est-ce que la fleur ? la fleur est une chose.
+qu'est-ce que le journal ? le journal est une chose.
+qu'est-ce que le maïs ? le maïs est une chose.
 le gâteau est une chose.
 le livre est une chose.
 le papier est une chose.
-le wagon est une chose.
-le coût est une chose.
-le garçon est une chose.
+qu'est-ce que le kilo ? le kilo est une chose.
+qu'est-ce que le noël ? le noël est une chose.
+qu'est-ce que le taxi ? le taxi est une chose.
 la maison est une chose.
 le stylo est une chose.
-le chat est une chose.
-l examen est une chose.
-le gâteau est une chose.
+qu'est-ce que le maïs ? le maïs est une chose.
+qu'est-ce que le papier ? le papier est une chose.
+qu'est-ce que la ville ? la ville est une chose.
 l hôtel est une chose.
 la table est une chose.
 le wagon est une chose.
+qu'est-ce que la fenêtre ? la fenêtre est une chose.
+qu'est-ce que la voiture ? la voiture est une chose.
+qu'est-ce que le chat ? le chat est une chose.
+le taxi est une chose.
+le zèbre est une chose.
+l examen est une chose.
+qu'est-ce que le wagon ? le wagon est une chose.
+qu'est-ce que le coût ? le coût est une chose.
+qu'est-ce que le garçon ? le garçon est une chose.
+l île est une chose.
+la fenêtre est une chose.
+l hôtel est une chose.
+qu'est-ce que l examen ? l examen est une chose.
+qu'est-ce que le gâteau ? le gâteau est une chose.
+qu'est-ce que le livre ? le livre est une chose.
+la fleur est une chose.
+le journal est une chose.
+le maïs est une chose.
+qu'est-ce que l hôtel ? l hôtel est une chose.
+qu'est-ce que la maison ? la maison est une chose.
+le chat est une chose.
+le kilo est une chose.
+le noël est une chose.
+qu'est-ce que la voiture ? la voiture est une chose.
+qu'est-ce que le maïs ? le maïs est une chose.
+qu'est-ce que la table ? la table est une chose.
+le papier est une chose.
+le papier est une chose.
+la ville est une chose.
+qu'est-ce que le noël ? le noël est une chose.
+qu'est-ce que le taxi ? le taxi est une chose.
+qu'est-ce que le zèbre ? le zèbre est une chose.
+le stylo est une chose.
+la voiture est une chose.
+le chat est une chose.
+qu'est-ce que la ville ? la ville est une chose.
+qu'est-ce que l île ? l île est une chose.
+qu'est-ce que la fenêtre ? la fenêtre est une chose.
+le wagon est une chose.
+le coût est une chose.
+le garçon est une chose.
+qu'est-ce que le chat ? le chat est une chose.
+qu'est-ce que la fleur ? la fleur est une chose.
+le chat est une chose.
+l examen est une chose.
+le gâteau est une chose.
+qu'est-ce que la voiture ? la voiture est une chose.
+qu'est-ce que le garçon ? le garçon est une chose.
+qu'est-ce que le kilo ? le kilo est une chose.
 ¬ je parles.
 le livre est petit.
 ¬ livre plus maison égale ?
@@ -72535,53 +73041,102 @@ voilà les noëls.
 voilà les journaux.
 la fleur est une chose.
 l île est une chose.
-le chat est une chose.
-le papier est une chose.
-le kilo est une chose.
+qu'est-ce que le maïs ? le maïs est une chose.
+qu'est-ce que la fenêtre ? la fenêtre est une chose.
+qu'est-ce que le zèbre ? le zèbre est une chose.
 le gâteau est une chose.
 le coût est une chose.
 la voiture est une chose.
-la table est une chose.
-la maison est une chose.
+qu'est-ce que le garçon ? le garçon est une chose.
+qu'est-ce que le chat ? le chat est une chose.
 le journal est une chose.
 la fenêtre est une chose.
 le zèbre est une chose.
-la ville est une chose.
-le noël est une chose.
+qu'est-ce que l hôtel ? l hôtel est une chose.
+qu'est-ce que l examen ? l examen est une chose.
 l hôtel est une chose.
 le garçon est une chose.
 le chat est une chose.
-le wagon est une chose.
-le stylo est une chose.
+qu'est-ce que le kilo ? le kilo est une chose.
+qu'est-ce que la fleur ? la fleur est une chose.
 le chat est une chose.
 l hôtel est une chose.
 l examen est une chose.
-l île est une chose.
-le taxi est une chose.
-le maïs est une chose.
+qu'est-ce que la maison ? la maison est une chose.
+qu'est-ce que le gâteau ? le gâteau est une chose.
+qu'est-ce que le coût ? le coût est une chose.
 le kilo est une chose.
 la fleur est une chose.
-le papier est une chose.
-la voiture est une chose.
-le papier est une chose.
+qu'est-ce que la fenêtre ? la fenêtre est une chose.
+qu'est-ce que le journal ? le journal est une chose.
+qu'est-ce que la fenêtre ? la fenêtre est une chose.
 la maison est une chose.
 le gâteau est une chose.
-l hôtel est une chose.
-le zèbre est une chose.
-la table est une chose.
+qu'est-ce que la voiture ? la voiture est une chose.
+qu'est-ce que le livre ? le livre est une chose.
+qu'est-ce que le garçon ? le garçon est une chose.
 le noël est une chose.
 le journal est une chose.
 la fenêtre est une chose.
-le chat est une chose.
-la ville est une chose.
+qu'est-ce que le maïs ? le maïs est une chose.
+qu'est-ce que l hôtel ? l hôtel est une chose.
 le stylo est une chose.
 le livre est une chose.
 le garçon est une chose.
-l examen est une chose.
-le wagon est une chose.
+qu'est-ce que le papier ? le papier est une chose.
+qu'est-ce que le kilo ? le kilo est une chose.
 le papier est une chose.
 le maïs est une chose.
 l hôtel est une chose.
+qu'est-ce que la table ? la table est une chose.
+qu'est-ce que la maison ? la maison est une chose.
+le chat est une chose.
+le papier est une chose.
+le kilo est une chose.
+qu'est-ce que la ville ? la ville est une chose.
+qu'est-ce que le noël ? le noël est une chose.
+qu'est-ce que le journal ? le journal est une chose.
+la table est une chose.
+la maison est une chose.
+qu'est-ce que le wagon ? le wagon est une chose.
+qu'est-ce que le stylo ? le stylo est une chose.
+qu'est-ce que le livre ? le livre est une chose.
+la ville est une chose.
+le noël est une chose.
+qu'est-ce que la voiture ? la voiture est une chose.
+qu'est-ce que le taxi ? le taxi est une chose.
+qu'est-ce que le maïs ? le maïs est une chose.
+le wagon est une chose.
+le stylo est une chose.
+qu'est-ce que le maïs ? le maïs est une chose.
+qu'est-ce que la voiture ? la voiture est une chose.
+qu'est-ce que le papier ? le papier est une chose.
+l île est une chose.
+le taxi est une chose.
+le maïs est une chose.
+qu'est-ce que le zèbre ? le zèbre est une chose.
+qu'est-ce que la table ? la table est une chose.
+le papier est une chose.
+la voiture est une chose.
+le papier est une chose.
+qu'est-ce que le chat ? le chat est une chose.
+qu'est-ce que la ville ? la ville est une chose.
+l hôtel est une chose.
+le zèbre est une chose.
+la table est une chose.
+qu'est-ce que l examen ? l examen est une chose.
+qu'est-ce que le wagon ? le wagon est une chose.
+qu'est-ce que le stylo ? le stylo est une chose.
+le chat est une chose.
+la ville est une chose.
+qu'est-ce que la fleur ? la fleur est une chose.
+qu'est-ce que l île ? l île est une chose.
+qu'est-ce que le taxi ? le taxi est une chose.
+l examen est une chose.
+le wagon est une chose.
+qu'est-ce que la fenêtre ? la fenêtre est une chose.
+qu'est-ce que le coût ? le coût est une chose.
+qu'est-ce que la voiture ? la voiture est une chose.
 ¬ les maison sont grandes.
 le livre est petit.
 ¬ la livre est petit.
@@ -72955,13 +73510,13 @@ il tavolo è una cosa.
 il taxi è una cosa.
 il treno è una cosa.
 la virtù è una cosa.
-il fiore è una cosa.
-la carta è una cosa.
-la casa è una cosa.
-il chilo è una cosa.
-la città è una cosa.
-il così è una cosa.
-l esame è una cosa.
+che cos'è il treno? il treno è una cosa.
+che cos'è la macchina? la macchina è una cosa.
+che cos'è il perché? il perché è una cosa.
+che cos'è il però? il però è una cosa.
+che cos'è il quaderno? il quaderno è una cosa.
+che cos'è il tavolo? il tavolo è una cosa.
+che cos'è il taxi? il taxi è una cosa.
 il caffè è una cosa.
 il kiwi è una cosa.
 il libro è una cosa.
@@ -72970,13 +73525,13 @@ il perché è una cosa.
 il però è una cosa.
 il quaderno è una cosa.
 il tavolo è una cosa.
-il wafer è una cosa.
-lo yogurt è una cosa.
-la zebra è una cosa.
-il caffè è una cosa.
-la carta è una cosa.
-la casa è una cosa.
-il chilo è una cosa.
+che cos'è il giornale? il giornale è una cosa.
+che cos'è i jeans? i jeans è una cosa.
+che cos'è il kiwi? il kiwi è una cosa.
+che cos'è il libro? il libro è una cosa.
+che cos'è la macchina? la macchina è una cosa.
+che cos'è il perché? il perché è una cosa.
+che cos'è il però? il però è una cosa.
 il perché è una cosa.
 il gatto è una cosa.
 il giornale è una cosa.
@@ -72984,13 +73539,13 @@ i jeans è una cosa.
 il kiwi è una cosa.
 il libro è una cosa.
 la macchina è una cosa.
-il fiore è una cosa.
-il taxi è una cosa.
-il treno è una cosa.
-la virtù è una cosa.
-il wafer è una cosa.
-lo yogurt è una cosa.
-la zebra è una cosa.
+che cos'è il treno? il treno è una cosa.
+che cos'è l esame? l esame è una cosa.
+che cos'è il fiore? il fiore è una cosa.
+che cos'è il gatto? il gatto è una cosa.
+che cos'è il giornale? il giornale è una cosa.
+che cos'è i jeans? i jeans è una cosa.
+che cos'è il kiwi? il kiwi è una cosa.
 il caffè è una cosa.
 la città è una cosa.
 il così è una cosa.
@@ -72999,6 +73554,57 @@ il fiore è una cosa.
 il gatto è una cosa.
 il giornale è una cosa.
 i jeans è una cosa.
+che cos'è la casa? la casa è una cosa.
+che cos'è il chilo? il chilo è una cosa.
+che cos'è la città? la città è una cosa.
+che cos'è il così? il così è una cosa.
+che cos'è l esame? l esame è una cosa.
+che cos'è il fiore? il fiore è una cosa.
+che cos'è il gatto? il gatto è una cosa.
+il fiore è una cosa.
+la carta è una cosa.
+la casa è una cosa.
+il chilo è una cosa.
+la città è una cosa.
+il così è una cosa.
+l esame è una cosa.
+che cos'è il libro? il libro è una cosa.
+che cos'è la zebra? la zebra è una cosa.
+che cos'è il caffè? il caffè è una cosa.
+che cos'è la carta? la carta è una cosa.
+che cos'è la casa? la casa è una cosa.
+che cos'è il chilo? il chilo è una cosa.
+che cos'è la città? la città è una cosa.
+che cos'è il così? il così è una cosa.
+il wafer è una cosa.
+lo yogurt è una cosa.
+la zebra è una cosa.
+il caffè è una cosa.
+la carta è una cosa.
+la casa è una cosa.
+il chilo è una cosa.
+che cos'è la casa? la casa è una cosa.
+che cos'è la virtù? la virtù è una cosa.
+che cos'è il wafer? il wafer è una cosa.
+che cos'è lo yogurt? lo yogurt è una cosa.
+che cos'è la zebra? la zebra è una cosa.
+che cos'è il caffè? il caffè è una cosa.
+che cos'è la carta? la carta è una cosa.
+il fiore è una cosa.
+il taxi è una cosa.
+il treno è una cosa.
+la virtù è una cosa.
+il wafer è una cosa.
+lo yogurt è una cosa.
+la zebra è una cosa.
+che cos'è il libro? il libro è una cosa.
+che cos'è il quaderno? il quaderno è una cosa.
+che cos'è il tavolo? il tavolo è una cosa.
+che cos'è il taxi? il taxi è una cosa.
+che cos'è il treno? il treno è una cosa.
+che cos'è la virtù? la virtù è una cosa.
+che cos'è il wafer? il wafer è una cosa.
+che cos'è lo yogurt? lo yogurt è una cosa.
 io scrivo.
 ¬ le casa sono grandi.
 cento meno uno fa novantanove.
@@ -73293,52 +73899,103 @@ il kiwi è una cosa.
 il quaderno è una cosa.
 il wafer è una cosa.
 la casa è una cosa.
-i jeans è una cosa.
-il però è una cosa.
-la virtù è una cosa.
-la carta è una cosa.
-l esame è una cosa.
+che cos'è lo yogurt? lo yogurt è una cosa.
+che cos'è il chilo? il chilo è una cosa.
+che cos'è il gatto? il gatto è una cosa.
+che cos'è la macchina? la macchina è una cosa.
+che cos'è il taxi? il taxi è una cosa.
 il perché è una cosa.
 il treno è una cosa.
 il caffè è una cosa.
 il così è una cosa.
-il fiore è una cosa.
-il taxi è una cosa.
-la zebra è una cosa.
-la città è una cosa.
-il giornale è una cosa.
+che cos'è il treno? il treno è una cosa.
+che cos'è l esame? l esame è una cosa.
+che cos'è il kiwi? il kiwi è una cosa.
+che cos'è il quaderno? il quaderno è una cosa.
+che cos'è il wafer? il wafer è una cosa.
 il tavolo è una cosa.
 lo yogurt è una cosa.
 il chilo è una cosa.
 il gatto è una cosa.
-il caffè è una cosa.
-il wafer è una cosa.
-la casa è una cosa.
-il fiore è una cosa.
-il libro è una cosa.
+che cos'è il libro? il libro è una cosa.
+che cos'è il giornale? il giornale è una cosa.
+che cos'è il perché? il perché è una cosa.
+che cos'è il treno? il treno è una cosa.
+che cos'è il caffè? il caffè è una cosa.
 il perché è una cosa.
 la carta è una cosa.
 l esame è una cosa.
 il kiwi è una cosa.
 il quaderno è una cosa.
-il caffè è una cosa.
-il così è una cosa.
-i jeans è una cosa.
-il però è una cosa.
+che cos'è il libro? il libro è una cosa.
+che cos'è il tavolo? il tavolo è una cosa.
+che cos'è lo yogurt? lo yogurt è una cosa.
+che cos'è il chilo? il chilo è una cosa.
 il caffè è una cosa.
 la città è una cosa.
 il giornale è una cosa.
 il perché è una cosa.
 il treno è una cosa.
+che cos'è la casa? la casa è una cosa.
+che cos'è la virtù? la virtù è una cosa.
+che cos'è la carta? la carta è una cosa.
+che cos'è l esame? l esame è una cosa.
+che cos'è il kiwi? il kiwi è una cosa.
+il fiore è una cosa.
+il libro è una cosa.
+il tavolo è una cosa.
+lo yogurt è una cosa.
+che cos'è il treno? il treno è una cosa.
+che cos'è la zebra? la zebra è una cosa.
+che cos'è la città? la città è una cosa.
+che cos'è il giornale? il giornale è una cosa.
+che cos'è il perché? il perché è una cosa.
+i jeans è una cosa.
+il però è una cosa.
+la virtù è una cosa.
+la carta è una cosa.
+l esame è una cosa.
+che cos'è la casa? la casa è una cosa.
+che cos'è il fiore? il fiore è una cosa.
+che cos'è il libro? il libro è una cosa.
+che cos'è il tavolo? il tavolo è una cosa.
+il fiore è una cosa.
+il taxi è una cosa.
+la zebra è una cosa.
+la città è una cosa.
+il giornale è una cosa.
+che cos'è il così? il così è una cosa.
+che cos'è i jeans? i jeans è una cosa.
+che cos'è il però? il però è una cosa.
+che cos'è la virtù? la virtù è una cosa.
+il caffè è una cosa.
+il wafer è una cosa.
+la casa è una cosa.
+il fiore è una cosa.
+il libro è una cosa.
+che cos'è la casa? la casa è una cosa.
+che cos'è la macchina? la macchina è una cosa.
+che cos'è il taxi? il taxi è una cosa.
+che cos'è la zebra? la zebra è una cosa.
+che cos'è la città? la città è una cosa.
+il caffè è una cosa.
+il così è una cosa.
+i jeans è una cosa.
+il però è una cosa.
+che cos'è il libro? il libro è una cosa.
+che cos'è il quaderno? il quaderno è una cosa.
+che cos'è il wafer? il wafer è una cosa.
+che cos'è la casa? la casa è una cosa.
+che cos'è il fiore? il fiore è una cosa.
 il perché è una cosa.
 il gatto è una cosa.
 la macchina è una cosa.
 il taxi è una cosa.
 la zebra è una cosa.
-il fiore è una cosa.
-il libro è una cosa.
-il tavolo è una cosa.
-lo yogurt è una cosa.
+che cos'è il treno? il treno è una cosa.
+che cos'è il caffè? il caffè è una cosa.
+che cos'è il così? il così è una cosa.
+che cos'è i jeans? i jeans è una cosa.
 ¬ le casa sono grandi.
 le case sono grandi.
 ¬ io parli.
@@ -73620,53 +74277,104 @@ la virtù è una cosa.
 il però è una cosa.
 i jeans è una cosa.
 il così è una cosa.
-il chilo è una cosa.
-lo yogurt è una cosa.
-il tavolo è una cosa.
-il libro è una cosa.
+che cos'è il però? il però è una cosa.
+che cos'è i jeans? i jeans è una cosa.
+che cos'è il così? il così è una cosa.
+che cos'è il caffè? il caffè è una cosa.
 i jeans è una cosa.
 il così è una cosa.
 il caffè è una cosa.
 il treno è una cosa.
-il tavolo è una cosa.
-il libro è una cosa.
-il fiore è una cosa.
+che cos'è il così? il così è una cosa.
+che cos'è il caffè? il caffè è una cosa.
+che cos'è il treno? il treno è una cosa.
 il caffè è una cosa.
 il caffè è una cosa.
 il treno è una cosa.
 il perché è una cosa.
-il caffè è una cosa.
-il fiore è una cosa.
-la casa è una cosa.
-il wafer è una cosa.
+che cos'è il libro? il libro è una cosa.
+che cos'è il treno? il treno è una cosa.
+che cos'è il perché? il perché è una cosa.
+che cos'è il giornale? il giornale è una cosa.
 il fiore è una cosa.
 il perché è una cosa.
 il giornale è una cosa.
 la città è una cosa.
-il fiore è una cosa.
-il wafer è una cosa.
-il quaderno è una cosa.
-il kiwi è una cosa.
+che cos'è il treno? il treno è una cosa.
+che cos'è il giornale? il giornale è una cosa.
+che cos'è la città? la città è una cosa.
+che cos'è la zebra? la zebra è una cosa.
 il perché è una cosa.
 la città è una cosa.
 la zebra è una cosa.
 il taxi è una cosa.
-il perché è una cosa.
-il kiwi è una cosa.
-l esame è una cosa.
-la carta è una cosa.
+che cos'è la casa? la casa è una cosa.
+che cos'è la zebra? la zebra è una cosa.
+che cos'è il taxi? il taxi è una cosa.
+che cos'è la macchina? la macchina è una cosa.
 la zebra è una cosa.
 il taxi è una cosa.
 la macchina è una cosa.
 il gatto è una cosa.
-l esame è una cosa.
-la carta è una cosa.
-la virtù è una cosa.
-il però è una cosa.
+che cos'è il taxi? il taxi è una cosa.
+che cos'è la macchina? la macchina è una cosa.
+che cos'è il gatto? il gatto è una cosa.
+che cos'è il chilo? il chilo è una cosa.
 la macchina è una cosa.
 il gatto è una cosa.
 il chilo è una cosa.
 lo yogurt è una cosa.
+che cos'è il gatto? il gatto è una cosa.
+che cos'è il chilo? il chilo è una cosa.
+che cos'è lo yogurt? lo yogurt è una cosa.
+che cos'è il tavolo? il tavolo è una cosa.
+il chilo è una cosa.
+lo yogurt è una cosa.
+il tavolo è una cosa.
+il libro è una cosa.
+che cos'è lo yogurt? lo yogurt è una cosa.
+che cos'è il tavolo? il tavolo è una cosa.
+che cos'è il libro? il libro è una cosa.
+che cos'è il fiore? il fiore è una cosa.
+il tavolo è una cosa.
+il libro è una cosa.
+il fiore è una cosa.
+che cos'è il libro? il libro è una cosa.
+che cos'è il libro? il libro è una cosa.
+che cos'è il fiore? il fiore è una cosa.
+che cos'è la casa? la casa è una cosa.
+il caffè è una cosa.
+il fiore è una cosa.
+la casa è una cosa.
+il wafer è una cosa.
+che cos'è il treno? il treno è una cosa.
+che cos'è la casa? la casa è una cosa.
+che cos'è il wafer? il wafer è una cosa.
+che cos'è il quaderno? il quaderno è una cosa.
+il fiore è una cosa.
+il wafer è una cosa.
+il quaderno è una cosa.
+il kiwi è una cosa.
+che cos'è la casa? la casa è una cosa.
+che cos'è il quaderno? il quaderno è una cosa.
+che cos'è il kiwi? il kiwi è una cosa.
+che cos'è l esame? l esame è una cosa.
+il perché è una cosa.
+il kiwi è una cosa.
+l esame è una cosa.
+la carta è una cosa.
+che cos'è il kiwi? il kiwi è una cosa.
+che cos'è l esame? l esame è una cosa.
+che cos'è la carta? la carta è una cosa.
+che cos'è la virtù? la virtù è una cosa.
+l esame è una cosa.
+la carta è una cosa.
+la virtù è una cosa.
+il però è una cosa.
+che cos'è la carta? la carta è una cosa.
+che cos'è la virtù? la virtù è una cosa.
+che cos'è il però? il però è una cosa.
+che cos'è i jeans? i jeans è una cosa.
 cento meno uno fa novantanove.
 ¬ le casa sono grandi.
 io scrivo.
@@ -73938,51 +74646,99 @@ qui gli esami.
 il perché è una cosa.
 il kiwi è una cosa.
 il caffè è una cosa.
-il quaderno è una cosa.
-il così è una cosa.
-il taxi è una cosa.
+che cos'è la città? la città è una cosa.
+che cos'è il tavolo? il tavolo è una cosa.
+che cos'è l esame? l esame è una cosa.
 i jeans è una cosa.
 la zebra è una cosa.
-il fiore è una cosa.
-la città è una cosa.
-il tavolo è una cosa.
+che cos'è il treno? il treno è una cosa.
+che cos'è il quaderno? il quaderno è una cosa.
+che cos'è il così? il così è una cosa.
 il giornale è una cosa.
 lo yogurt è una cosa.
 il kiwi è una cosa.
-il chilo è una cosa.
-il quaderno è una cosa.
+che cos'è il però? il però è una cosa.
+che cos'è la città? la città è una cosa.
 il fiore è una cosa.
 il wafer è una cosa.
 i jeans è una cosa.
-la casa è una cosa.
-il però è una cosa.
-la città è una cosa.
+che cos'è il perché? il perché è una cosa.
+che cos'è il chilo? il chilo è una cosa.
+che cos'è il quaderno? il quaderno è una cosa.
 la virtù è una cosa.
 il giornale è una cosa.
-il caffè è una cosa.
-il perché è una cosa.
-il chilo è una cosa.
+che cos'è il libro? il libro è una cosa.
+che cos'è la casa? la casa è una cosa.
+che cos'è il però? il però è una cosa.
 il treno è una cosa.
 il gatto è una cosa.
 il wafer è una cosa.
-la macchina è una cosa.
-la casa è una cosa.
+che cos'è la carta? la carta è una cosa.
+che cos'è il perché? il perché è una cosa.
 il caffè è una cosa.
 il fiore è una cosa.
 la virtù è una cosa.
-la carta è una cosa.
-il perché è una cosa.
+che cos'è il caffè? il caffè è una cosa.
+che cos'è la macchina? la macchina è una cosa.
+che cos'è la casa? la casa è una cosa.
 l esame è una cosa.
 il treno è una cosa.
 il gatto è una cosa.
-il caffè è una cosa.
-la macchina è una cosa.
+che cos'è il libro? il libro è una cosa.
+che cos'è la carta? la carta è una cosa.
 il perché è una cosa.
 il taxi è una cosa.
-la zebra è una cosa.
-la carta è una cosa.
+il fiore è una cosa.
+che cos'è il kiwi? il kiwi è una cosa.
+che cos'è il caffè? il caffè è una cosa.
+che cos'è la macchina? la macchina è una cosa.
 il tavolo è una cosa.
 l esame è una cosa.
+che cos'è la casa? la casa è una cosa.
+che cos'è la zebra? la zebra è una cosa.
+che cos'è il libro? il libro è una cosa.
+il quaderno è una cosa.
+il così è una cosa.
+il taxi è una cosa.
+che cos'è lo yogurt? lo yogurt è una cosa.
+che cos'è il kiwi? il kiwi è una cosa.
+la città è una cosa.
+il tavolo è una cosa.
+che cos'è il wafer? il wafer è una cosa.
+che cos'è i jeans? i jeans è una cosa.
+che cos'è la zebra? la zebra è una cosa.
+il chilo è una cosa.
+il quaderno è una cosa.
+che cos'è il treno? il treno è una cosa.
+che cos'è il giornale? il giornale è una cosa.
+che cos'è lo yogurt? lo yogurt è una cosa.
+la casa è una cosa.
+il però è una cosa.
+la città è una cosa.
+che cos'è il gatto? il gatto è una cosa.
+che cos'è il wafer? il wafer è una cosa.
+il caffè è una cosa.
+il perché è una cosa.
+il chilo è una cosa.
+che cos'è la virtù? la virtù è una cosa.
+che cos'è il giornale? il giornale è una cosa.
+la macchina è una cosa.
+la casa è una cosa.
+che cos'è il treno? il treno è una cosa.
+che cos'è il gatto? il gatto è una cosa.
+la carta è una cosa.
+il perché è una cosa.
+che cos'è il taxi? il taxi è una cosa.
+che cos'è la virtù? la virtù è una cosa.
+il caffè è una cosa.
+la macchina è una cosa.
+che cos'è la casa? la casa è una cosa.
+che cos'è l esame? l esame è una cosa.
+che cos'è il treno? il treno è una cosa.
+la zebra è una cosa.
+la carta è una cosa.
+che cos'è il così? il così è una cosa.
+che cos'è il taxi? il taxi è una cosa.
 ¬ io parli.
 il libro è piccolo.
 ¬ libro più casa fa ?
@@ -74245,48 +75001,93 @@ qui i chili.
 il treno è una cosa.
 il gatto è una cosa.
 il wafer è una cosa.
-la macchina è una cosa.
-la casa è una cosa.
+che cos'è la carta? la carta è una cosa.
+che cos'è il perché? il perché è una cosa.
 il perché è una cosa.
 la virtù è una cosa.
-la carta è una cosa.
-il perché è una cosa.
+che cos'è il caffè? il caffè è una cosa.
+che cos'è la macchina? la macchina è una cosa.
+che cos'è la casa? la casa è una cosa.
 l esame è una cosa.
 il treno è una cosa.
-il perché è una cosa.
-il caffè è una cosa.
-la macchina è una cosa.
+che cos'è la casa? la casa è una cosa.
+che cos'è la carta? la carta è una cosa.
 il così è una cosa.
 il taxi è una cosa.
-la zebra è una cosa.
+che cos'è il kiwi? il kiwi è una cosa.
+che cos'è il caffè? il caffè è una cosa.
 il tavolo è una cosa.
 l esame è una cosa.
-lo yogurt è una cosa.
-il kiwi è una cosa.
-il caffè è una cosa.
+che cos'è i jeans? i jeans è una cosa.
+che cos'è la zebra? la zebra è una cosa.
 il quaderno è una cosa.
 il così è una cosa.
-i jeans è una cosa.
-la zebra è una cosa.
+che cos'è il treno? il treno è una cosa.
+che cos'è lo yogurt? lo yogurt è una cosa.
+che cos'è il kiwi? il kiwi è una cosa.
 il però è una cosa.
 la città è una cosa.
 il tavolo è una cosa.
-il giornale è una cosa.
-lo yogurt è una cosa.
+che cos'è il wafer? il wafer è una cosa.
+che cos'è i jeans? i jeans è una cosa.
 il caffè è una cosa.
 il chilo è una cosa.
 il quaderno è una cosa.
-il gatto è una cosa.
-il wafer è una cosa.
-i jeans è una cosa.
+che cos'è la virtù? la virtù è una cosa.
+che cos'è il giornale? il giornale è una cosa.
+che cos'è lo yogurt? lo yogurt è una cosa.
 la casa è una cosa.
 il però è una cosa.
-il caffè è una cosa.
-la virtù è una cosa.
-il giornale è una cosa.
+che cos'è il gatto? il gatto è una cosa.
+che cos'è il wafer? il wafer è una cosa.
 la carta è una cosa.
 il perché è una cosa.
 il chilo è una cosa.
+che cos'è la virtù? la virtù è una cosa.
+che cos'è il giornale? il giornale è una cosa.
+la macchina è una cosa.
+la casa è una cosa.
+che cos'è la casa? la casa è una cosa.
+che cos'è il treno? il treno è una cosa.
+che cos'è il gatto? il gatto è una cosa.
+la carta è una cosa.
+il perché è una cosa.
+che cos'è il taxi? il taxi è una cosa.
+il perché è una cosa.
+il caffè è una cosa.
+la macchina è una cosa.
+che cos'è il tavolo? il tavolo è una cosa.
+che cos'è l esame? l esame è una cosa.
+che cos'è il treno? il treno è una cosa.
+la zebra è una cosa.
+che cos'è il treno? il treno è una cosa.
+che cos'è il così? il così è una cosa.
+che cos'è il taxi? il taxi è una cosa.
+lo yogurt è una cosa.
+il kiwi è una cosa.
+il caffè è una cosa.
+che cos'è la città? la città è una cosa.
+che cos'è il tavolo? il tavolo è una cosa.
+i jeans è una cosa.
+la zebra è una cosa.
+che cos'è il chilo? il chilo è una cosa.
+che cos'è il quaderno? il quaderno è una cosa.
+che cos'è il così? il così è una cosa.
+il giornale è una cosa.
+lo yogurt è una cosa.
+che cos'è il però? il però è una cosa.
+che cos'è la città? la città è una cosa.
+il gatto è una cosa.
+il wafer è una cosa.
+i jeans è una cosa.
+che cos'è il perché? il perché è una cosa.
+che cos'è il chilo? il chilo è una cosa.
+il caffè è una cosa.
+la virtù è una cosa.
+il giornale è una cosa.
+che cos'è la macchina? la macchina è una cosa.
+che cos'è la casa? la casa è una cosa.
+che cos'è il però? il però è una cosa.
 ¬ le casa sono grandi.
 il libro è piccolo.
 ¬ la libro è piccolo.
@@ -74679,14 +75480,14 @@ o xale é uma coisa.
 o papel é uma coisa.
 o jipe é uma coisa.
 o coração é uma coisa.
-o livro é uma coisa.
-a canção é uma coisa.
-o âmbar é uma coisa.
-o táxi é uma coisa.
-o livro é uma coisa.
-o gato é uma coisa.
-a casa é uma coisa.
-o ônibus é uma coisa.
+que é o ônibus? o ônibus é uma coisa.
+que é o livro? o livro é uma coisa.
+que é o gato? o gato é uma coisa.
+que é a casa? a casa é uma coisa.
+que é o ônibus? o ônibus é uma coisa.
+que é o xale? o xale é uma coisa.
+que é o papel? o papel é uma coisa.
+que é o jipe? o jipe é uma coisa.
 o exame é uma coisa.
 o yoga é uma coisa.
 o público é uma coisa.
@@ -74695,14 +75496,14 @@ o exame é uma coisa.
 a canção é uma coisa.
 o âmbar é uma coisa.
 o táxi é uma coisa.
-o exame é uma coisa.
-a mesa é uma coisa.
-a irmã é uma coisa.
-a cidade é uma coisa.
-o avião é uma coisa.
-o yoga é uma coisa.
-o público é uma coisa.
-o jornal é uma coisa.
+que é o táxi? o táxi é uma coisa.
+que é o avião? o avião é uma coisa.
+que é o yoga? o yoga é uma coisa.
+que é o público? o público é uma coisa.
+que é o jornal? o jornal é uma coisa.
+que é o exame? o exame é uma coisa.
+que é a canção? a canção é uma coisa.
+que é o âmbar? o âmbar é uma coisa.
 o avião é uma coisa.
 a flor é uma coisa.
 o carro é uma coisa.
@@ -74711,15 +75512,15 @@ a web é uma coisa.
 a mesa é uma coisa.
 a irmã é uma coisa.
 a cidade é uma coisa.
-o avião é uma coisa.
-o avô é uma coisa.
-o àquela é uma coisa.
-o quilo é uma coisa.
-o kiwi é uma coisa.
-a flor é uma coisa.
-o carro é uma coisa.
-o índio é uma coisa.
-a web é uma coisa.
+que é o jornal? o jornal é uma coisa.
+que é o kiwi? o kiwi é uma coisa.
+que é a flor? a flor é uma coisa.
+que é o carro? o carro é uma coisa.
+que é o índio? o índio é uma coisa.
+que é a web? a web é uma coisa.
+que é a mesa? a mesa é uma coisa.
+que é a irmã? a irmã é uma coisa.
+que é a cidade? a cidade é uma coisa.
 o xale é uma coisa.
 o papel é uma coisa.
 o jipe é uma coisa.
@@ -74728,6 +75529,63 @@ o avô é uma coisa.
 o àquela é uma coisa.
 o quilo é uma coisa.
 o kiwi é uma coisa.
+que é o ônibus? o ônibus é uma coisa.
+que é o xale? o xale é uma coisa.
+que é o papel? o papel é uma coisa.
+que é o jipe? o jipe é uma coisa.
+que é o coração? o coração é uma coisa.
+que é o avô? o avô é uma coisa.
+que é o àquela? o àquela é uma coisa.
+que é o quilo? o quilo é uma coisa.
+o livro é uma coisa.
+a canção é uma coisa.
+o âmbar é uma coisa.
+o táxi é uma coisa.
+o livro é uma coisa.
+o gato é uma coisa.
+a casa é uma coisa.
+o ônibus é uma coisa.
+que é o táxi? o táxi é uma coisa.
+que é o exame? o exame é uma coisa.
+que é a canção? a canção é uma coisa.
+que é o âmbar? o âmbar é uma coisa.
+que é o táxi? o táxi é uma coisa.
+que é o livro? o livro é uma coisa.
+que é o gato? o gato é uma coisa.
+que é a casa? a casa é uma coisa.
+o exame é uma coisa.
+a mesa é uma coisa.
+a irmã é uma coisa.
+a cidade é uma coisa.
+o avião é uma coisa.
+o yoga é uma coisa.
+o público é uma coisa.
+o jornal é uma coisa.
+que é o jornal? o jornal é uma coisa.
+que é a web? a web é uma coisa.
+que é a mesa? a mesa é uma coisa.
+que é a irmã? a irmã é uma coisa.
+que é a cidade? a cidade é uma coisa.
+que é o avião? o avião é uma coisa.
+que é o yoga? o yoga é uma coisa.
+que é o público? o público é uma coisa.
+o avião é uma coisa.
+o avô é uma coisa.
+o àquela é uma coisa.
+o quilo é uma coisa.
+o kiwi é uma coisa.
+a flor é uma coisa.
+o carro é uma coisa.
+o índio é uma coisa.
+a web é uma coisa.
+que é o coração? o coração é uma coisa.
+que é o avô? o avô é uma coisa.
+que é o àquela? o àquela é uma coisa.
+que é o quilo? o quilo é uma coisa.
+que é o kiwi? o kiwi é uma coisa.
+que é a flor? a flor é uma coisa.
+que é o carro? o carro é uma coisa.
+que é o índio? o índio é uma coisa.
 eu escrevo.
 ¬ os casa são grandes.
 cem menos um é noventa e nove.
@@ -75054,58 +75912,115 @@ o ônibus é uma coisa.
 o yoga é uma coisa.
 o quilo é uma coisa.
 o livro é uma coisa.
-o avião é uma coisa.
-o jornal é uma coisa.
-a flor é uma coisa.
-a casa é uma coisa.
-o avião é uma coisa.
-o àquela é uma coisa.
+que é o jornal? o jornal é uma coisa.
+que é o âmbar? o âmbar é uma coisa.
+que é a web? a web é uma coisa.
+que é o papel? o papel é uma coisa.
+que é o jornal? o jornal é uma coisa.
+que é a flor? a flor é uma coisa.
 o índio é uma coisa.
 o xale é uma coisa.
 o público é uma coisa.
 o kiwi é uma coisa.
 o gato é uma coisa.
-o jipe é uma coisa.
-o exame é uma coisa.
-o carro é uma coisa.
-o ônibus é uma coisa.
-o yoga é uma coisa.
+que é o àquela? o àquela é uma coisa.
+que é o táxi? o táxi é uma coisa.
+que é a mesa? a mesa é uma coisa.
+que é o jipe? o jipe é uma coisa.
+que é o exame? o exame é uma coisa.
 o livro é uma coisa.
 a web é uma coisa.
 o papel é uma coisa.
 o jornal é uma coisa.
 a flor é uma coisa.
-o exame é uma coisa.
-o coração é uma coisa.
-a canção é uma coisa.
-o índio é uma coisa.
-o xale é uma coisa.
+que é o táxi? o táxi é uma coisa.
+que é o quilo? o quilo é uma coisa.
+que é o livro? o livro é uma coisa.
+que é a irmã? a irmã é uma coisa.
+que é o coração? o coração é uma coisa.
 o avião é uma coisa.
 o táxi é uma coisa.
 a mesa é uma coisa.
 o jipe é uma coisa.
 o exame é uma coisa.
 o carro é uma coisa.
-a cidade é uma coisa.
-o avô é uma coisa.
-o âmbar é uma coisa.
-a web é uma coisa.
-o papel é uma coisa.
+que é o público? o público é uma coisa.
+que é o kiwi? o kiwi é uma coisa.
+que é o gato? o gato é uma coisa.
+que é a cidade? a cidade é uma coisa.
+que é o avô? o avô é uma coisa.
 o quilo é uma coisa.
 o livro é uma coisa.
 a irmã é uma coisa.
 o coração é uma coisa.
 a canção é uma coisa.
-a casa é uma coisa.
-o avião é uma coisa.
-o àquela é uma coisa.
-o táxi é uma coisa.
-a mesa é uma coisa.
+que é o papel? o papel é uma coisa.
+que é o jornal? o jornal é uma coisa.
+que é a flor? a flor é uma coisa.
+que é a casa? a casa é uma coisa.
+que é o avião? o avião é uma coisa.
 o livro é uma coisa.
 o kiwi é uma coisa.
 o gato é uma coisa.
 a cidade é uma coisa.
 o avô é uma coisa.
+que é o táxi? o táxi é uma coisa.
+que é o jipe? o jipe é uma coisa.
+que é o exame? o exame é uma coisa.
+que é o carro? o carro é uma coisa.
+que é o ônibus? o ônibus é uma coisa.
+o avião é uma coisa.
+o jornal é uma coisa.
+a flor é uma coisa.
+a casa é uma coisa.
+o avião é uma coisa.
+o àquela é uma coisa.
+que é a irmã? a irmã é uma coisa.
+que é o coração? o coração é uma coisa.
+que é a canção? a canção é uma coisa.
+que é o índio? o índio é uma coisa.
+que é o xale? o xale é uma coisa.
+o jipe é uma coisa.
+o exame é uma coisa.
+o carro é uma coisa.
+o ônibus é uma coisa.
+o yoga é uma coisa.
+que é o ônibus? o ônibus é uma coisa.
+que é a cidade? a cidade é uma coisa.
+que é o avô? o avô é uma coisa.
+que é o âmbar? o âmbar é uma coisa.
+que é a web? a web é uma coisa.
+o exame é uma coisa.
+o coração é uma coisa.
+a canção é uma coisa.
+o índio é uma coisa.
+o xale é uma coisa.
+que é o jornal? o jornal é uma coisa.
+que é a casa? a casa é uma coisa.
+que é o avião? o avião é uma coisa.
+que é o àquela? o àquela é uma coisa.
+que é o táxi? o táxi é uma coisa.
+que é a mesa? a mesa é uma coisa.
+a cidade é uma coisa.
+o avô é uma coisa.
+o âmbar é uma coisa.
+a web é uma coisa.
+o papel é uma coisa.
+que é o carro? o carro é uma coisa.
+que é o ônibus? o ônibus é uma coisa.
+que é o yoga? o yoga é uma coisa.
+que é o quilo? o quilo é uma coisa.
+que é o livro? o livro é uma coisa.
+a casa é uma coisa.
+o avião é uma coisa.
+o àquela é uma coisa.
+o táxi é uma coisa.
+a mesa é uma coisa.
+que é o ônibus? o ônibus é uma coisa.
+que é o índio? o índio é uma coisa.
+que é o xale? o xale é uma coisa.
+que é o público? o público é uma coisa.
+que é o kiwi? o kiwi é uma coisa.
 ¬ os casa são grandes.
 as casas são grandes.
 ¬ eu falas.
@@ -75411,59 +76326,116 @@ a flor é uma coisa.
 o quilo é uma coisa.
 o avô é uma coisa.
 o jipe é uma coisa.
+que é o ônibus? o ônibus é uma coisa.
+que é o yoga? o yoga é uma coisa.
+que é a cidade? a cidade é uma coisa.
+que é a mesa? a mesa é uma coisa.
+que é o índio? o índio é uma coisa.
+a canção é uma coisa.
+o jornal é uma coisa.
+o yoga é uma coisa.
+a cidade é uma coisa.
+que é o coração? o coração é uma coisa.
+que é o papel? o papel é uma coisa.
+que é o ônibus? o ônibus é uma coisa.
+que é o gato? o gato é uma coisa.
+o exame é uma coisa.
+o àquela é uma coisa.
+o coração é uma coisa.
+o papel é uma coisa.
+o ônibus é uma coisa.
+que é o avião? o avião é uma coisa.
+que é a irmã? a irmã é uma coisa.
+que é a web? a web é uma coisa.
+que é o carro? o carro é uma coisa.
+o livro é uma coisa.
+o público é uma coisa.
+o avião é uma coisa.
+a irmã é uma coisa.
+que é o jornal? o jornal é uma coisa.
+que é o xale? o xale é uma coisa.
+que é a casa? a casa é uma coisa.
+que é o livro? o livro é uma coisa.
+que é o âmbar? o âmbar é uma coisa.
+o avô é uma coisa.
+o jipe é uma coisa.
+o xale é uma coisa.
+a casa é uma coisa.
+que é o táxi? o táxi é uma coisa.
+que é a mesa? a mesa é uma coisa.
+que é o índio? o índio é uma coisa.
+que é a flor? a flor é uma coisa.
+que é o quilo? o quilo é uma coisa.
+o yoga é uma coisa.
+a cidade é uma coisa.
+a mesa é uma coisa.
+o índio é uma coisa.
+que é o ônibus? o ônibus é uma coisa.
+que é o gato? o gato é uma coisa.
+que é o táxi? o táxi é uma coisa.
+que é a canção? a canção é uma coisa.
+o avião é uma coisa.
+o papel é uma coisa.
+o ônibus é uma coisa.
+o gato é uma coisa.
+o táxi é uma coisa.
+que é a web? a web é uma coisa.
+que é o carro? o carro é uma coisa.
+que é o kiwi? o kiwi é uma coisa.
+que é o àquela? o àquela é uma coisa.
 o livro é uma coisa.
 a irmã é uma coisa.
 a web é uma coisa.
 o carro é uma coisa.
 o kiwi é uma coisa.
-a canção é uma coisa.
-o jornal é uma coisa.
-o yoga é uma coisa.
-a cidade é uma coisa.
+que é o livro? o livro é uma coisa.
+que é o âmbar? o âmbar é uma coisa.
+que é o exame? o exame é uma coisa.
+que é o público? o público é uma coisa.
 o xale é uma coisa.
 a casa é uma coisa.
 o livro é uma coisa.
 o âmbar é uma coisa.
-o exame é uma coisa.
-o àquela é uma coisa.
-o coração é uma coisa.
-o papel é uma coisa.
-o ônibus é uma coisa.
+que é o táxi? o táxi é uma coisa.
+que é a flor? a flor é uma coisa.
+que é o quilo? o quilo é uma coisa.
+que é o avô? o avô é uma coisa.
+que é o jipe? o jipe é uma coisa.
 a mesa é uma coisa.
 o índio é uma coisa.
 a flor é uma coisa.
 o quilo é uma coisa.
-o livro é uma coisa.
-o público é uma coisa.
-o avião é uma coisa.
-a irmã é uma coisa.
+que é o ônibus? o ônibus é uma coisa.
+que é a canção? a canção é uma coisa.
+que é o jornal? o jornal é uma coisa.
+que é o yoga? o yoga é uma coisa.
 o avião é uma coisa.
 o gato é uma coisa.
 o táxi é uma coisa.
 a canção é uma coisa.
 o jornal é uma coisa.
-o avô é uma coisa.
-o jipe é uma coisa.
-o xale é uma coisa.
-a casa é uma coisa.
+que é o kiwi? o kiwi é uma coisa.
+que é o àquela? o àquela é uma coisa.
+que é o coração? o coração é uma coisa.
+que é o papel? o papel é uma coisa.
 o exame é uma coisa.
 o carro é uma coisa.
 o kiwi é uma coisa.
 o àquela é uma coisa.
 o coração é uma coisa.
-o yoga é uma coisa.
-a cidade é uma coisa.
-a mesa é uma coisa.
-o índio é uma coisa.
+que é o exame? o exame é uma coisa.
+que é o público? o público é uma coisa.
+que é o avião? o avião é uma coisa.
+que é a irmã? a irmã é uma coisa.
 o livro é uma coisa.
 o âmbar é uma coisa.
 o exame é uma coisa.
 o público é uma coisa.
-o avião é uma coisa.
-o papel é uma coisa.
-o ônibus é uma coisa.
-o gato é uma coisa.
-o táxi é uma coisa.
+que é o jornal? o jornal é uma coisa.
+que é o avô? o avô é uma coisa.
+que é o jipe? o jipe é uma coisa.
+que é o xale? o xale é uma coisa.
+que é a casa? a casa é uma coisa.
 cem menos um é noventa e nove.
 ¬ os casa são grandes.
 eu escrevo.
@@ -75763,59 +76735,116 @@ o livro é uma coisa.
 o xale é uma coisa.
 a cidade é uma coisa.
 o papel é uma coisa.
-o coração é uma coisa.
-o público é uma coisa.
-o avô é uma coisa.
+que é o quilo? o quilo é uma coisa.
+que é a canção? a canção é uma coisa.
+que é o kiwi? o kiwi é uma coisa.
 o quilo é uma coisa.
 a canção é uma coisa.
 o kiwi é uma coisa.
-o exame é uma coisa.
-o livro é uma coisa.
-o índio é uma coisa.
-o gato é uma coisa.
+que é o táxi? o táxi é uma coisa.
+que é o ônibus? o ônibus é uma coisa.
+que é a irmã? a irmã é uma coisa.
+que é o xale? o xale é uma coisa.
 o ônibus é uma coisa.
 a irmã é uma coisa.
 o xale é uma coisa.
-o jipe é uma coisa.
-o yoga é uma coisa.
-o coração é uma coisa.
+que é o àquela? o àquela é uma coisa.
+que é o exame? o exame é uma coisa.
+que é o quilo? o quilo é uma coisa.
 o exame é uma coisa.
 o exame é uma coisa.
 o quilo é uma coisa.
 a canção é uma coisa.
-o táxi é uma coisa.
-o carro é uma coisa.
-o livro é uma coisa.
+que é a casa? a casa é uma coisa.
+que é a mesa? a mesa é uma coisa.
+que é o ônibus? o ônibus é uma coisa.
 a casa é uma coisa.
 a mesa é uma coisa.
 o ônibus é uma coisa.
-o avião é uma coisa.
-o avião é uma coisa.
-o jipe é uma coisa.
-o yoga é uma coisa.
+que é o jornal? o jornal é uma coisa.
+que é o jornal? o jornal é uma coisa.
+que é o àquela? o àquela é uma coisa.
+que é o exame? o exame é uma coisa.
 o jornal é uma coisa.
 o àquela é uma coisa.
 o exame é uma coisa.
-o âmbar é uma coisa.
-a flor é uma coisa.
-o táxi é uma coisa.
+que é o gato? o gato é uma coisa.
+que é a web? a web é uma coisa.
+que é a casa? a casa é uma coisa.
 o avião é uma coisa.
 a web é uma coisa.
 a casa é uma coisa.
 a mesa é uma coisa.
-a cidade é uma coisa.
-o papel é uma coisa.
-o avião é uma coisa.
+que é o público? o público é uma coisa.
+que é o avô? o avô é uma coisa.
+que é o jornal? o jornal é uma coisa.
 o livro é uma coisa.
 o avô é uma coisa.
 o jornal é uma coisa.
 o àquela é uma coisa.
-o kiwi é uma coisa.
-o âmbar é uma coisa.
-a flor é uma coisa.
+que é o índio? o índio é uma coisa.
+que é o gato? o gato é uma coisa.
+que é a web? a web é uma coisa.
 o índio é uma coisa.
 o gato é uma coisa.
 a web é uma coisa.
+que é o ônibus? o ônibus é uma coisa.
+que é o coração? o coração é uma coisa.
+que é o público? o público é uma coisa.
+que é o avô? o avô é uma coisa.
+o coração é uma coisa.
+o público é uma coisa.
+o avô é uma coisa.
+que é o carro? o carro é uma coisa.
+que é o livro? o livro é uma coisa.
+que é o índio? o índio é uma coisa.
+o exame é uma coisa.
+o livro é uma coisa.
+o índio é uma coisa.
+o gato é uma coisa.
+que é o jipe? o jipe é uma coisa.
+que é o yoga? o yoga é uma coisa.
+que é o coração? o coração é uma coisa.
+o jipe é uma coisa.
+o yoga é uma coisa.
+o coração é uma coisa.
+que é o táxi? o táxi é uma coisa.
+que é o táxi? o táxi é uma coisa.
+que é o carro? o carro é uma coisa.
+que é o livro? o livro é uma coisa.
+o táxi é uma coisa.
+o carro é uma coisa.
+o livro é uma coisa.
+que é o papel? o papel é uma coisa.
+que é o avião? o avião é uma coisa.
+que é o jipe? o jipe é uma coisa.
+o avião é uma coisa.
+o avião é uma coisa.
+o jipe é uma coisa.
+o yoga é uma coisa.
+que é o âmbar? o âmbar é uma coisa.
+que é a flor? a flor é uma coisa.
+que é o táxi? o táxi é uma coisa.
+o âmbar é uma coisa.
+a flor é uma coisa.
+o táxi é uma coisa.
+que é o jornal? o jornal é uma coisa.
+que é a cidade? a cidade é uma coisa.
+que é o papel? o papel é uma coisa.
+que é o avião? o avião é uma coisa.
+a cidade é uma coisa.
+o papel é uma coisa.
+o avião é uma coisa.
+que é o ônibus? o ônibus é uma coisa.
+que é o kiwi? o kiwi é uma coisa.
+que é o âmbar? o âmbar é uma coisa.
+que é a flor? a flor é uma coisa.
+o kiwi é uma coisa.
+o âmbar é uma coisa.
+a flor é uma coisa.
+que é a irmã? a irmã é uma coisa.
+que é o xale? o xale é uma coisa.
+que é a cidade? a cidade é uma coisa.
 ¬ eu falas.
 o livro é pequeno.
 ¬ livro mais casa é ?
@@ -76112,62 +77141,119 @@ há os índios aqui.
 há os carros aqui.
 há as flores aqui.
 o yoga é uma coisa.
-o avião é uma coisa.
-a cidade é uma coisa.
-o papel é uma coisa.
 o xale é uma coisa.
-o ônibus é uma coisa.
-a irmã é uma coisa.
-a mesa é uma coisa.
-o avião é uma coisa.
-a casa é uma coisa.
-o gato é uma coisa.
-o livro é uma coisa.
-o índio é uma coisa.
-o carro é uma coisa.
-o livro é uma coisa.
-o táxi é uma coisa.
-o âmbar é uma coisa.
-a flor é uma coisa.
-o kiwi é uma coisa.
-o quilo é uma coisa.
+que é o jornal? o jornal é uma coisa.
+que é a irmã? a irmã é uma coisa.
+que é o gato? o gato é uma coisa.
 a canção é uma coisa.
-o exame é uma coisa.
-o jornal é uma coisa.
-o àquela é uma coisa.
 o avô é uma coisa.
-o coração é uma coisa.
-o público é uma coisa.
+que é o táxi? o táxi é uma coisa.
+que é o público? o público é uma coisa.
+que é o papel? o papel é uma coisa.
+o gato é uma coisa.
+a flor é uma coisa.
+que é o táxi? o táxi é uma coisa.
+que é o âmbar? o âmbar é uma coisa.
+que é o àquela? o àquela é uma coisa.
+o papel é uma coisa.
+a mesa é uma coisa.
+que é o ônibus? o ônibus é uma coisa.
+que é a casa? a casa é uma coisa.
+que é o carro? o carro é uma coisa.
+o àquela é uma coisa.
 o yoga é uma coisa.
-o exame é uma coisa.
-o jipe é uma coisa.
-o papel é uma coisa.
-o livro é uma coisa.
-a cidade é uma coisa.
-a irmã é uma coisa.
-o xale é uma coisa.
-o ônibus é uma coisa.
-a casa é uma coisa.
-a mesa é uma coisa.
-a web é uma coisa.
-o índio é uma coisa.
-o gato é uma coisa.
-o livro é uma coisa.
-o táxi é uma coisa.
+que é o ônibus? o ônibus é uma coisa.
+que é o jipe? o jipe é uma coisa.
+que é a irmã? a irmã é uma coisa.
 o carro é uma coisa.
-a flor é uma coisa.
-o avião é uma coisa.
-o âmbar é uma coisa.
 a canção é uma coisa.
-o exame é uma coisa.
-o quilo é uma coisa.
+que é o táxi? o táxi é uma coisa.
+que é o quilo? o quilo é uma coisa.
+que é o público? o público é uma coisa.
+a irmã é uma coisa.
+o gato é uma coisa.
+que é o ônibus? o ônibus é uma coisa.
+que é o índio? o índio é uma coisa.
+que é o âmbar? o âmbar é uma coisa.
+o público é uma coisa.
+o papel é uma coisa.
+que é o coração? o coração é uma coisa.
+que é a cidade? a cidade é uma coisa.
+que é a casa? a casa é uma coisa.
+o âmbar é uma coisa.
 o àquela é uma coisa.
+que é o kiwi? o kiwi é uma coisa.
+que é o jornal? o jornal é uma coisa.
+que é o jipe? o jipe é uma coisa.
+a casa é uma coisa.
+o carro é uma coisa.
+que é a web? a web é uma coisa.
+que é o táxi? o táxi é uma coisa.
+que é o quilo? o quilo é uma coisa.
+o jipe é uma coisa.
+a irmã é uma coisa.
+que é o avião? o avião é uma coisa.
+que é o ônibus? o ônibus é uma coisa.
+o avião é uma coisa.
+o quilo é uma coisa.
+o público é uma coisa.
+que é o exame? o exame é uma coisa.
+que é o coração? o coração é uma coisa.
+o avião é uma coisa.
+o índio é uma coisa.
+o âmbar é uma coisa.
+que é o livro? o livro é uma coisa.
+que é o kiwi? o kiwi é uma coisa.
+o exame é uma coisa.
+a cidade é uma coisa.
+a casa é uma coisa.
+que é o xale? o xale é uma coisa.
+que é a web? a web é uma coisa.
 o exame é uma coisa.
 o jornal é uma coisa.
-o público é uma coisa.
-o avô é uma coisa.
-o coração é uma coisa.
 o jipe é uma coisa.
+que é o avô? o avô é uma coisa.
+que é o avião? o avião é uma coisa.
+o livro é uma coisa.
+o táxi é uma coisa.
+o quilo é uma coisa.
+que é a flor? a flor é uma coisa.
+que é o exame? o exame é uma coisa.
+o livro é uma coisa.
+o ônibus é uma coisa.
+o índio é uma coisa.
+que é a mesa? a mesa é uma coisa.
+que é o livro? o livro é uma coisa.
+o exame é uma coisa.
+o coração é uma coisa.
+a cidade é uma coisa.
+que é o yoga? o yoga é uma coisa.
+que é o xale? o xale é uma coisa.
+o livro é uma coisa.
+o kiwi é uma coisa.
+o jornal é uma coisa.
+que é a canção? a canção é uma coisa.
+que é o avô? o avô é uma coisa.
+o xale é uma coisa.
+a web é uma coisa.
+o táxi é uma coisa.
+que é o gato? o gato é uma coisa.
+que é a flor? a flor é uma coisa.
+o avô é uma coisa.
+o avião é uma coisa.
+o ônibus é uma coisa.
+que é o papel? o papel é uma coisa.
+que é a mesa? a mesa é uma coisa.
+a flor é uma coisa.
+o exame é uma coisa.
+o coração é uma coisa.
+que é o àquela? o àquela é uma coisa.
+que é o yoga? o yoga é uma coisa.
+a mesa é uma coisa.
+o livro é uma coisa.
+que é o jornal? o jornal é uma coisa.
+que é o carro? o carro é uma coisa.
+que é a canção? a canção é uma coisa.
 ¬ os casa são grandes.
 o livro é pequeno.
 ¬ a livro é pequeno.
@@ -77462,43 +78548,86 @@ de ruïne is een ding.
 het boek is een ding.
 de quiz is een ding.
 de zon is een ding.
-de tafel is een ding.
-de trein is een ding.
-het huis is een ding.
-de tafel is een ding.
-de coëfficiënt is een ding.
-de ruïne is een ding.
+wat is de jas? de jas is een ding.
+wat is de kilo? de kilo is een ding.
+wat is de wolk? de wolk is een ding.
+wat is de jas? de jas is een ding.
+wat is de taxi? de taxi is een ding.
+wat is het examen? het examen is een ding.
 de kat is een ding.
 het papier is een ding.
 de yoghurt is een ding.
 de kat is een ding.
 de trein is een ding.
 het huis is een ding.
-de kat is een ding.
-het café is een ding.
-de reeks is een ding.
-de bloem is een ding.
-het papier is een ding.
-de yoghurt is een ding.
+wat is de zon? de zon is een ding.
+wat is de tafel? de tafel is een ding.
+wat is de coëfficiënt? de coëfficiënt is een ding.
+wat is de ruïne? de ruïne is een ding.
+wat is het boek? het boek is een ding.
+wat is de quiz? de quiz is een ding.
 de bloem is een ding.
 de taxi is een ding.
 het examen is een ding.
 de stad is een ding.
 het café is een ding.
 de reeks is een ding.
-de bloem is een ding.
-de kilo is een ding.
-de wolk is een ding.
-de jas is een ding.
-de taxi is een ding.
-het examen is een ding.
-de stad is een ding.
+wat is de ruïne? de ruïne is een ding.
+wat is de bloem? de bloem is een ding.
+wat is het papier? het papier is een ding.
+wat is de yoghurt? de yoghurt is een ding.
+wat is de kat? de kat is een ding.
+wat is de trein? de trein is een ding.
+wat is het huis? het huis is een ding.
 het boek is een ding.
 de quiz is een ding.
 de zon is een ding.
 de kilo is een ding.
 de wolk is een ding.
 de jas is een ding.
+wat is de jas? de jas is een ding.
+wat is de taxi? de taxi is een ding.
+wat is het examen? het examen is een ding.
+wat is de stad? de stad is een ding.
+wat is het café? het café is een ding.
+wat is de reeks? de reeks is een ding.
+de tafel is een ding.
+de trein is een ding.
+het huis is een ding.
+de tafel is een ding.
+de coëfficiënt is een ding.
+de ruïne is een ding.
+wat is de zon? de zon is een ding.
+wat is het boek? het boek is een ding.
+wat is de quiz? de quiz is een ding.
+wat is de zon? de zon is een ding.
+wat is de kilo? de kilo is een ding.
+wat is de wolk? de wolk is een ding.
+de kat is een ding.
+het café is een ding.
+de reeks is een ding.
+de bloem is een ding.
+het papier is een ding.
+de yoghurt is een ding.
+wat is de ruïne? de ruïne is een ding.
+wat is de kat? de kat is een ding.
+wat is de trein? de trein is een ding.
+wat is het huis? het huis is een ding.
+wat is de tafel? de tafel is een ding.
+wat is de coëfficiënt? de coëfficiënt is een ding.
+de bloem is een ding.
+de kilo is een ding.
+de wolk is een ding.
+de jas is een ding.
+de taxi is een ding.
+het examen is een ding.
+de stad is een ding.
+wat is de stad? de stad is een ding.
+wat is het café? het café is een ding.
+wat is de reeks? de reeks is een ding.
+wat is de bloem? de bloem is een ding.
+wat is het papier? het papier is een ding.
+wat is de yoghurt? de yoghurt is een ding.
 ik dans.
 ¬ de huis zijn groot.
 honderd min een is negenennegentig.
@@ -77782,45 +78911,88 @@ de kat is een ding.
 de kat is een ding.
 het examen is een ding.
 het boek is een ding.
-de kat is een ding.
-de tafel is een ding.
-de reeks is een ding.
-de kilo is een ding.
+wat is de zon? de zon is een ding.
+wat is de jas? de jas is een ding.
+wat is de coëfficiënt? de coëfficiënt is een ding.
+wat is de bloem? de bloem is een ding.
 de tafel is een ding.
 het boek is een ding.
 de yoghurt is een ding.
 de taxi is een ding.
-de tafel is een ding.
-de kilo is een ding.
-het huis is een ding.
-het café is een ding.
+wat is de jas? de jas is een ding.
+wat is de bloem? de bloem is een ding.
+wat is de wolk? de wolk is een ding.
+wat is de tafel? de tafel is een ding.
 de yoghurt is een ding.
 de taxi is een ding.
 de ruïne is een ding.
 het papier is een ding.
-het huis is een ding.
-het café is een ding.
-de zon is een ding.
-de trein is een ding.
+wat is de wolk? de wolk is een ding.
+wat is de tafel? de tafel is een ding.
+wat is de reeks? de reeks is een ding.
+wat is de kilo? de kilo is een ding.
 de ruïne is een ding.
 het papier is een ding.
 de jas is een ding.
 de coëfficiënt is een ding.
-de zon is een ding.
-de trein is een ding.
-de stad is een ding.
-de quiz is een ding.
+wat is de reeks? de reeks is een ding.
+wat is de kilo? de kilo is een ding.
+wat is het huis? het huis is een ding.
+wat is het café? het café is een ding.
 de jas is een ding.
 de coëfficiënt is een ding.
 de bloem is een ding.
-de bloem is een ding.
-de stad is een ding.
-de quiz is een ding.
-de kat is een ding.
+wat is de ruïne? de ruïne is een ding.
+wat is het huis? het huis is een ding.
+wat is het café? het café is een ding.
+wat is de zon? de zon is een ding.
 de bloem is een ding.
 de bloem is een ding.
 de wolk is een ding.
 de tafel is een ding.
+wat is de zon? de zon is een ding.
+wat is de zon? de zon is een ding.
+wat is de trein? de trein is een ding.
+wat is de stad? de stad is een ding.
+de kat is een ding.
+de tafel is een ding.
+de reeks is een ding.
+de kilo is een ding.
+wat is de jas? de jas is een ding.
+wat is de stad? de stad is een ding.
+wat is de quiz? de quiz is een ding.
+wat is de kat? de kat is een ding.
+de tafel is een ding.
+de kilo is een ding.
+het huis is een ding.
+het café is een ding.
+wat is de quiz? de quiz is een ding.
+wat is de kat? de kat is een ding.
+wat is het examen? het examen is een ding.
+wat is het boek? het boek is een ding.
+het huis is een ding.
+het café is een ding.
+de zon is een ding.
+de trein is een ding.
+wat is het examen? het examen is een ding.
+wat is het boek? het boek is een ding.
+wat is de yoghurt? de yoghurt is een ding.
+wat is de taxi? de taxi is een ding.
+de zon is een ding.
+de trein is een ding.
+de stad is een ding.
+de quiz is een ding.
+wat is de yoghurt? de yoghurt is een ding.
+wat is de taxi? de taxi is een ding.
+wat is de ruïne? de ruïne is een ding.
+de bloem is een ding.
+de stad is een ding.
+de quiz is een ding.
+de kat is een ding.
+wat is de ruïne? de ruïne is een ding.
+wat is de ruïne? de ruïne is een ding.
+wat is het papier? het papier is een ding.
+wat is de jas? de jas is een ding.
 ¬ de huis zijn groot.
 de huizen zijn groot.
 ¬ ik werkt.
@@ -78083,46 +79255,89 @@ daar zijn de quizzen.
 de trein is een ding.
 de kat is een ding.
 de yoghurt is een ding.
-de tafel is een ding.
-de zon is een ding.
-de quiz is een ding.
+wat is de jas? de jas is een ding.
+wat is de reeks? de reeks is een ding.
+wat is het café? het café is een ding.
 de bloem is een ding.
 de reeks is een ding.
 het café is een ding.
 de stad is een ding.
-de coëfficiënt is een ding.
-de tafel is een ding.
-het huis is een ding.
+wat is de taxi? de taxi is een ding.
+wat is de jas? de jas is een ding.
+wat is de wolk? de wolk is een ding.
 de taxi is een ding.
 de jas is een ding.
 de wolk is een ding.
-de kat is een ding.
-de yoghurt is een ding.
-het papier is een ding.
-de bloem is een ding.
+wat is de zon? de zon is een ding.
+wat is de quiz? de quiz is een ding.
+wat is het boek? het boek is een ding.
+wat is de ruïne? de ruïne is een ding.
 de quiz is een ding.
 het boek is een ding.
 de ruïne is een ding.
-het café is een ding.
-de stad is een ding.
-het examen is een ding.
+wat is de tafel? de tafel is een ding.
+wat is het huis? het huis is een ding.
+wat is de trein? de trein is een ding.
 de kat is een ding.
 het huis is een ding.
 de trein is een ding.
 de kat is een ding.
-de wolk is een ding.
-de kilo is een ding.
-de zon is een ding.
+wat is het papier? het papier is een ding.
+wat is de bloem? de bloem is een ding.
+wat is de reeks? de reeks is een ding.
 het papier is een ding.
 de bloem is een ding.
 de reeks is een ding.
-de tafel is een ding.
-de ruïne is een ding.
-de coëfficiënt is een ding.
+wat is de jas? de jas is een ding.
+wat is het examen? het examen is een ding.
+wat is de taxi? de taxi is een ding.
 de bloem is een ding.
 het examen is een ding.
 de taxi is een ding.
 de jas is een ding.
+wat is de kilo? de kilo is een ding.
+wat is de zon? de zon is een ding.
+wat is de quiz? de quiz is een ding.
+de tafel is een ding.
+de zon is een ding.
+de quiz is een ding.
+wat is de ruïne? de ruïne is een ding.
+wat is de coëfficiënt? de coëfficiënt is een ding.
+wat is de tafel? de tafel is een ding.
+wat is het huis? het huis is een ding.
+de coëfficiënt is een ding.
+de tafel is een ding.
+het huis is een ding.
+wat is de kat? de kat is een ding.
+wat is de yoghurt? de yoghurt is een ding.
+wat is het papier? het papier is een ding.
+de kat is een ding.
+de yoghurt is een ding.
+het papier is een ding.
+de bloem is een ding.
+wat is het café? het café is een ding.
+wat is de stad? de stad is een ding.
+wat is het examen? het examen is een ding.
+het café is een ding.
+de stad is een ding.
+het examen is een ding.
+wat is de zon? de zon is een ding.
+wat is de wolk? de wolk is een ding.
+wat is de kilo? de kilo is een ding.
+wat is de zon? de zon is een ding.
+de wolk is een ding.
+de kilo is een ding.
+de zon is een ding.
+wat is het boek? het boek is een ding.
+wat is de ruïne? de ruïne is een ding.
+wat is de coëfficiënt? de coëfficiënt is een ding.
+de tafel is een ding.
+de ruïne is een ding.
+de coëfficiënt is een ding.
+wat is de ruïne? de ruïne is een ding.
+wat is de trein? de trein is een ding.
+wat is de kat? de kat is een ding.
+wat is de yoghurt? de yoghurt is een ding.
 honderd min een is negenennegentig.
 ¬ de huis zijn groot.
 ik dans.
@@ -78379,46 +79594,89 @@ daar zijn de examens.
 de tafel is een ding.
 de wolk is een ding.
 de trein is een ding.
-de tafel is een ding.
-de stad is een ding.
+wat is de jas? de jas is een ding.
+wat is het huis? het huis is een ding.
 de kat is een ding.
 de quiz is een ding.
 het papier is een ding.
-de kat is een ding.
-de jas is een ding.
+wat is de zon? de zon is een ding.
+wat is de yoghurt? de yoghurt is een ding.
 de kat is een ding.
 de coëfficiënt is een ding.
 het café is een ding.
-de bloem is een ding.
-de zon is een ding.
+wat is de ruïne? de ruïne is een ding.
+wat is de reeks? de reeks is een ding.
 de bloem is een ding.
 de trein is een ding.
 de taxi is een ding.
-de stad is een ding.
-de ruïne is een ding.
+wat is het huis? het huis is een ding.
+wat is het examen? het examen is een ding.
 de bloem is een ding.
 het papier is een ding.
 de kilo is een ding.
+wat is de yoghurt? de yoghurt is een ding.
+wat is de wolk? de wolk is een ding.
+wat is de trein? de trein is een ding.
+het café is een ding.
+het boek is een ding.
+wat is de reeks? de reeks is een ding.
+wat is de quiz? de quiz is een ding.
+wat is het papier? het papier is een ding.
+de taxi is een ding.
+de tafel is een ding.
+wat is het examen? het examen is een ding.
+wat is de coëfficiënt? de coëfficiënt is een ding.
+wat is het café? het café is een ding.
+de kilo is een ding.
+de kat is een ding.
+wat is de jas? de jas is een ding.
+wat is de trein? de trein is een ding.
+wat is de taxi? de taxi is een ding.
+het boek is een ding.
+de bloem is een ding.
+wat is de jas? de jas is een ding.
+wat is het papier? het papier is een ding.
+wat is de kilo? de kilo is een ding.
+de tafel is een ding.
+de stad is een ding.
+wat is de zon? de zon is een ding.
+wat is het café? het café is een ding.
+wat is het boek? het boek is een ding.
+de kat is een ding.
+de jas is een ding.
+wat is de zon? de zon is een ding.
+wat is de taxi? de taxi is een ding.
+wat is de tafel? de tafel is een ding.
+de bloem is een ding.
+de zon is een ding.
+wat is de ruïne? de ruïne is een ding.
+wat is de kilo? de kilo is een ding.
+wat is de kat? de kat is een ding.
+de stad is een ding.
+de ruïne is een ding.
+wat is de ruïne? de ruïne is een ding.
+wat is het boek? het boek is een ding.
+wat is de bloem? de bloem is een ding.
 de jas is een ding.
 het huis is een ding.
 het examen is een ding.
-het café is een ding.
-het boek is een ding.
+wat is de tafel? de tafel is een ding.
+wat is de stad? de stad is een ding.
 de zon is een ding.
 de yoghurt is een ding.
 de wolk is een ding.
-de taxi is een ding.
-de tafel is een ding.
+wat is de kat? de kat is een ding.
+wat is de jas? de jas is een ding.
 de ruïne is een ding.
 de reeks is een ding.
 de quiz is een ding.
-de kilo is een ding.
-de kat is een ding.
+wat is de bloem? de bloem is een ding.
+wat is de zon? de zon is een ding.
 de tafel is een ding.
 het examen is een ding.
 de coëfficiënt is een ding.
-het boek is een ding.
-de bloem is een ding.
+wat is de stad? de stad is een ding.
+wat is de ruïne? de ruïne is een ding.
 ¬ ik werkt.
 het boek is klein.
 ¬ boek plus huis is ?
@@ -78674,47 +79932,90 @@ daar zijn de quizzen.
 daar zijn de coëfficiënten.
 de reeks is een ding.
 het examen is een ding.
-de trein is een ding.
-het papier is een ding.
+wat is de kilo? de kilo is een ding.
+wat is het boek? het boek is een ding.
 de kat is een ding.
 de tafel is een ding.
 de kat is een ding.
-de zon is een ding.
-de ruïne is een ding.
+wat is de reeks? de reeks is een ding.
+wat is het examen? het examen is een ding.
 het examen is een ding.
 de wolk is een ding.
-het papier is een ding.
-het café is een ding.
+wat is het boek? het boek is een ding.
+wat is de tafel? de tafel is een ding.
 de bloem is een ding.
 de kat is een ding.
 de bloem is een ding.
-de ruïne is een ding.
-het huis is een ding.
+wat is het examen? het examen is een ding.
+wat is de wolk? de wolk is een ding.
 de wolk is een ding.
 de quiz is een ding.
-de tafel is een ding.
-de taxi is een ding.
+wat is de jas? de jas is een ding.
+wat is de kat? de kat is een ding.
 de bloem is een ding.
 de bloem is een ding.
 de stad is een ding.
-het huis is een ding.
-de yoghurt is een ding.
+wat is de wolk? de wolk is een ding.
+wat is de quiz? de quiz is een ding.
 de quiz is een ding.
 de coëfficiënt is een ding.
+wat is de jas? de jas is een ding.
+wat is de bloem? de bloem is een ding.
+wat is de stad? de stad is een ding.
+de stad is een ding.
+de jas is een ding.
+wat is de quiz? de quiz is een ding.
+wat is de coëfficiënt? de coëfficiënt is een ding.
+de coëfficiënt is een ding.
+de trein is een ding.
+wat is de zon? de zon is een ding.
+wat is de stad? de stad is een ding.
+wat is de jas? de jas is een ding.
+de jas is een ding.
+de zon is een ding.
+wat is de coëfficiënt? de coëfficiënt is een ding.
+wat is de trein? de trein is een ding.
+de trein is een ding.
+het papier is een ding.
+wat is de zon? de zon is een ding.
+wat is de jas? de jas is een ding.
+wat is de zon? de zon is een ding.
+de zon is een ding.
+de ruïne is een ding.
+wat is de trein? de trein is een ding.
+wat is het papier? het papier is een ding.
+het papier is een ding.
+het café is een ding.
+wat is de ruïne? de ruïne is een ding.
+wat is de zon? de zon is een ding.
+wat is de ruïne? de ruïne is een ding.
+de ruïne is een ding.
+het huis is een ding.
+wat is het papier? het papier is een ding.
+wat is het café? het café is een ding.
+de tafel is een ding.
+de taxi is een ding.
+wat is de ruïne? de ruïne is een ding.
+wat is de ruïne? de ruïne is een ding.
+wat is het huis? het huis is een ding.
+het huis is een ding.
+de yoghurt is een ding.
+wat is het café? het café is een ding.
+wat is de taxi? de taxi is een ding.
 de tafel is een ding.
 de kilo is een ding.
 het boek is een ding.
-de stad is een ding.
-de jas is een ding.
+wat is het huis? het huis is een ding.
+wat is de yoghurt? de yoghurt is een ding.
 de yoghurt is een ding.
 de reeks is een ding.
-de coëfficiënt is een ding.
-de trein is een ding.
+wat is de taxi? de taxi is een ding.
+wat is de kilo? de kilo is een ding.
 de kat is een ding.
 het boek is een ding.
 de tafel is een ding.
-de jas is een ding.
-de zon is een ding.
+wat is de yoghurt? de yoghurt is een ding.
+wat is de reeks? de reeks is een ding.
 ¬ de huis zijn groot.
 het boek is klein.
 ¬ de boek is klein.
@@ -79054,41 +80355,82 @@ en zebra är en sak.
 ett quiz är en sak.
 en bok är en sak.
 ett tåg är en sak.
-ett bord är en sak.
-en väg är en sak.
-en jord är en sak.
-en yta är en sak.
-ett papper är en sak.
+vad är ett watt? ett watt är en sak.
+vad är en katt? en katt är en sak.
+vad är en zebra? en zebra är en sak.
+vad är ett quiz? ett quiz är en sak.
+vad är en bok? en bok är en sak.
 en blomma är en sak.
 ett quiz är en sak.
 en bok är en sak.
 ett tåg är en sak.
 ett hus är en sak.
 en webb är en sak.
-en blomma är en sak.
-en yta är en sak.
-ett papper är en sak.
-en blomma är en sak.
-en taxi är en sak.
-en examen är en sak.
+vad är ett tåg? ett tåg är en sak.
+vad är ett quiz? ett quiz är en sak.
+vad är en bok? en bok är en sak.
+vad är ett tåg? ett tåg är en sak.
+vad är ett hus? ett hus är en sak.
+vad är en webb? en webb är en sak.
 ett kilo är en sak.
 ett hus är en sak.
 en webb är en sak.
 ett kilo är en sak.
 en ö är en sak.
 en stad är en sak.
-ett kilo är en sak.
-en taxi är en sak.
-en examen är en sak.
-ett watt är en sak.
-en katt är en sak.
-en zebra är en sak.
+vad är en blomma? en blomma är en sak.
+vad är ett hus? ett hus är en sak.
+vad är en webb? en webb är en sak.
+vad är ett kilo? ett kilo är en sak.
+vad är en ö? en ö är en sak.
+vad är en stad? en stad är en sak.
 ett watt är en sak.
 en ö är en sak.
 en stad är en sak.
 ett bord är en sak.
 en väg är en sak.
 en jord är en sak.
+vad är ett kilo? ett kilo är en sak.
+vad är en ö? en ö är en sak.
+vad är en stad? en stad är en sak.
+vad är ett bord? ett bord är en sak.
+vad är en väg? en väg är en sak.
+vad är en jord? en jord är en sak.
+ett bord är en sak.
+en väg är en sak.
+en jord är en sak.
+en yta är en sak.
+ett papper är en sak.
+vad är ett tåg? ett tåg är en sak.
+vad är ett bord? ett bord är en sak.
+vad är en väg? en väg är en sak.
+vad är en jord? en jord är en sak.
+vad är en yta? en yta är en sak.
+vad är ett papper? ett papper är en sak.
+en blomma är en sak.
+en yta är en sak.
+ett papper är en sak.
+en blomma är en sak.
+en taxi är en sak.
+en examen är en sak.
+vad är en blomma? en blomma är en sak.
+vad är en yta? en yta är en sak.
+vad är ett papper? ett papper är en sak.
+vad är en blomma? en blomma är en sak.
+vad är en taxi? en taxi är en sak.
+vad är en examen? en examen är en sak.
+ett kilo är en sak.
+en taxi är en sak.
+en examen är en sak.
+ett watt är en sak.
+en katt är en sak.
+en zebra är en sak.
+vad är ett kilo? ett kilo är en sak.
+vad är en taxi? en taxi är en sak.
+vad är en examen? en examen är en sak.
+vad är ett watt? ett watt är en sak.
+vad är en katt? en katt är en sak.
+vad är en zebra? en zebra är en sak.
 jag dansar.
 ¬ en hus är stora.
 hundra minus ett blir nittionio.
@@ -79355,43 +80697,84 @@ ett kilo är en sak.
 ett tåg är en sak.
 en väg är en sak.
 ett watt är en sak.
-ett watt är en sak.
-ett watt är en sak.
-en webb är en sak.
-en yta är en sak.
+vad är ett kilo? ett kilo är en sak.
+vad är ett kilo? ett kilo är en sak.
+vad är ett papper? ett papper är en sak.
+vad är ett quiz? ett quiz är en sak.
 en webb är en sak.
 en yta är en sak.
 en zebra är en sak.
+vad är ett tåg? ett tåg är en sak.
+vad är en stad? en stad är en sak.
+vad är en taxi? en taxi är en sak.
+vad är ett tåg? ett tåg är en sak.
+ett kilo är en sak.
+en blomma är en sak.
+en bok är en sak.
+ett bord är en sak.
+vad är en väg? en väg är en sak.
+vad är ett watt? ett watt är en sak.
+vad är en webb? en webb är en sak.
+vad är en yta? en yta är en sak.
+en examen är en sak.
+ett hus är en sak.
+en jord är en sak.
+vad är ett tåg? ett tåg är en sak.
+vad är en zebra? en zebra är en sak.
+vad är en ö? en ö är en sak.
+vad är en blomma? en blomma är en sak.
+ett watt är en sak.
+ett kilo är en sak.
+ett papper är en sak.
+ett quiz är en sak.
+vad är en bok? en bok är en sak.
+vad är ett bord? ett bord är en sak.
+vad är en examen? en examen är en sak.
+vad är ett hus? ett hus är en sak.
+en stad är en sak.
+en taxi är en sak.
+ett tåg är en sak.
+vad är en blomma? en blomma är en sak.
+vad är en jord? en jord är en sak.
+vad är en katt? en katt är en sak.
+vad är ett kilo? ett kilo är en sak.
+ett watt är en sak.
+ett watt är en sak.
+en webb är en sak.
+en yta är en sak.
+vad är ett papper? ett papper är en sak.
+vad är ett quiz? ett quiz är en sak.
+vad är en stad? en stad är en sak.
 en blomma är en sak.
 en zebra är en sak.
 en ö är en sak.
 en blomma är en sak.
-ett kilo är en sak.
-en blomma är en sak.
-en bok är en sak.
-ett bord är en sak.
+vad är en blomma? en blomma är en sak.
+vad är ett tåg? ett tåg är en sak.
+vad är en väg? en väg är en sak.
+vad är ett watt? ett watt är en sak.
 en bok är en sak.
 ett bord är en sak.
 en examen är en sak.
 ett hus är en sak.
-en examen är en sak.
-ett hus är en sak.
-en jord är en sak.
+vad är en webb? en webb är en sak.
+vad är en yta? en yta är en sak.
+vad är en zebra? en zebra är en sak.
 en blomma är en sak.
 en jord är en sak.
 en katt är en sak.
 ett kilo är en sak.
-ett watt är en sak.
-ett kilo är en sak.
-ett papper är en sak.
-ett quiz är en sak.
+vad är ett kilo? ett kilo är en sak.
+vad är en blomma? en blomma är en sak.
+vad är en bok? en bok är en sak.
+vad är ett bord? ett bord är en sak.
 ett papper är en sak.
 ett quiz är en sak.
 en stad är en sak.
 en taxi är en sak.
-en stad är en sak.
-en taxi är en sak.
-ett tåg är en sak.
+vad är en examen? en examen är en sak.
+vad är ett hus? ett hus är en sak.
+vad är en jord? en jord är en sak.
 ¬ en hus är stora.
 ett hus är stort.
 ¬ jag talarar.
@@ -79642,44 +81025,85 @@ där är vägar.
 ett bord är en sak.
 en zebra är en sak.
 en väg är en sak.
-ett kilo är en sak.
-en examen är en sak.
-en ö är en sak.
+vad är en blomma? en blomma är en sak.
+vad är en webb? en webb är en sak.
+vad är en taxi? en taxi är en sak.
 ett watt är en sak.
 ett papper är en sak.
 ett hus är en sak.
-ett kilo är en sak.
-en väg är en sak.
-ett quiz är en sak.
+vad är en blomma? en blomma är en sak.
+vad är en katt? en katt är en sak.
+vad är ett bord? ett bord är en sak.
 en blomma är en sak.
 en ö är en sak.
 ett watt är en sak.
 en stad är en sak.
-ett hus är en sak.
-en blomma är en sak.
-en webb är en sak.
+vad är en yta? en yta är en sak.
+vad är ett tåg? ett tåg är en sak.
+vad är ett papper? ett papper är en sak.
 ett quiz är en sak.
 en jord är en sak.
 en bok är en sak.
-ett watt är en sak.
-en stad är en sak.
-en katt är en sak.
+vad är ett kilo? ett kilo är en sak.
+vad är en examen? en examen är en sak.
+vad är en ö? en ö är en sak.
 en blomma är en sak.
 en webb är en sak.
 en taxi är en sak.
-ett watt är en sak.
-en bok är en sak.
-en yta är en sak.
+vad är ett kilo? ett kilo är en sak.
+vad är en väg? en väg är en sak.
+vad är ett quiz? ett quiz är en sak.
 ett kilo är en sak.
 en katt är en sak.
 ett bord är en sak.
+vad är ett tåg? ett tåg är en sak.
+vad är ett hus? ett hus är en sak.
+vad är en blomma? en blomma är en sak.
+vad är en webb? en webb är en sak.
+en yta är en sak.
+ett tåg är en sak.
+ett papper är en sak.
+vad är ett watt? ett watt är en sak.
+vad är en stad? en stad är en sak.
+vad är en katt? en katt är en sak.
+ett kilo är en sak.
+en examen är en sak.
+en ö är en sak.
+vad är ett kilo? ett kilo är en sak.
+vad är en bok? en bok är en sak.
+vad är en yta? en yta är en sak.
+ett kilo är en sak.
+en väg är en sak.
+ett quiz är en sak.
+vad är ett tåg? ett tåg är en sak.
+vad är en taxi? en taxi är en sak.
+vad är ett kilo? ett kilo är en sak.
+vad är en examen? en examen är en sak.
+ett hus är en sak.
+en blomma är en sak.
+en webb är en sak.
+vad är ett bord? ett bord är en sak.
+vad är en zebra? en zebra är en sak.
+vad är en väg? en väg är en sak.
+ett watt är en sak.
+en stad är en sak.
+en katt är en sak.
+vad är ett tåg? ett tåg är en sak.
+vad är ett papper? ett papper är en sak.
+vad är ett hus? ett hus är en sak.
+ett watt är en sak.
+en bok är en sak.
+en yta är en sak.
+vad är en blomma? en blomma är en sak.
+vad är en ö? en ö är en sak.
+vad är ett watt? ett watt är en sak.
 en blomma är en sak.
 en taxi är en sak.
 ett kilo är en sak.
 en examen är en sak.
-en yta är en sak.
-ett tåg är en sak.
-ett papper är en sak.
+vad är ett quiz? ett quiz är en sak.
+vad är en jord? en jord är en sak.
+vad är en bok? en bok är en sak.
 hundra minus ett blir nittionio.
 ¬ en hus är stora.
 jag dansar.
@@ -79930,44 +81354,85 @@ där är katter.
 ett watt är en sak.
 ett quiz är en sak.
 ett watt är en sak.
-en zebra är en sak.
-en examen är en sak.
+vad är en stad? en stad är en sak.
+vad är en webb? en webb är en sak.
 en katt är en sak.
 en taxi är en sak.
-en blomma är en sak.
-en blomma är en sak.
-en jord är en sak.
+vad är ett tåg? ett tåg är en sak.
+vad är ett tåg? ett tåg är en sak.
+vad är en zebra? en zebra är en sak.
 ett papper är en sak.
 en väg är en sak.
-ett kilo är en sak.
-ett bord är en sak.
-ett kilo är en sak.
+vad är en blomma? en blomma är en sak.
+vad är ett watt? ett watt är en sak.
+vad är en blomma? en blomma är en sak.
 en stad är en sak.
 en webb är en sak.
-en ö är en sak.
-ett hus är en sak.
-ett quiz är en sak.
+vad är en taxi? en taxi är en sak.
+vad är en yta? en yta är en sak.
+vad är ett bord? ett bord är en sak.
 ett tåg är en sak.
 en zebra är en sak.
-en bok är en sak.
-en katt är en sak.
+vad är en väg? en väg är en sak.
+vad är en ö? en ö är en sak.
 ett kilo är en sak.
 ett watt är en sak.
 en blomma är en sak.
-en examen är en sak.
-ett papper är en sak.
+vad är en webb? en webb är en sak.
+vad är en bok? en bok är en sak.
 ett watt är en sak.
 en yta är en sak.
 ett bord är en sak.
-en jord är en sak.
-en stad är en sak.
+vad är en zebra? en zebra är en sak.
+vad är en examen? en examen är en sak.
 en väg är en sak.
 en ö är en sak.
+vad är ett tåg? ett tåg är en sak.
+vad är en blomma? en blomma är en sak.
+vad är en jord? en jord är en sak.
+en webb är en sak.
+en bok är en sak.
+vad är ett kilo? ett kilo är en sak.
+vad är ett bord? ett bord är en sak.
+vad är ett kilo? ett kilo är en sak.
+en zebra är en sak.
+en examen är en sak.
+vad är en ö? en ö är en sak.
+vad är ett hus? ett hus är en sak.
+en blomma är en sak.
+en blomma är en sak.
+en jord är en sak.
+vad är en bok? en bok är en sak.
+vad är en katt? en katt är en sak.
+ett kilo är en sak.
+ett bord är en sak.
+ett kilo är en sak.
+vad är en examen? en examen är en sak.
+vad är ett papper? ett papper är en sak.
+en ö är en sak.
+ett hus är en sak.
+ett quiz är en sak.
+vad är en jord? en jord är en sak.
+vad är en stad? en stad är en sak.
+en bok är en sak.
+en katt är en sak.
+vad är en blomma? en blomma är en sak.
+vad är ett kilo? ett kilo är en sak.
+vad är ett tåg? ett tåg är en sak.
+en examen är en sak.
+ett papper är en sak.
+vad är ett kilo? ett kilo är en sak.
+vad är ett quiz? ett quiz är en sak.
+vad är ett watt? ett watt är en sak.
+en jord är en sak.
+en stad är en sak.
+vad är en katt? en katt är en sak.
+vad är en taxi? en taxi är en sak.
 en blomma är en sak.
 ett kilo är en sak.
 ett tåg är en sak.
-en webb är en sak.
-en bok är en sak.
+vad är ett papper? ett papper är en sak.
+vad är en väg? en väg är en sak.
 ¬ jag talarar.
 en bok är liten.
 ¬ bok plus hus blir ?
@@ -80217,45 +81682,86 @@ där är quiz.
 där är quiz.
 ett bord är en sak.
 ett bord är en sak.
-en blomma är en sak.
-en blomma är en sak.
+vad är ett tåg? ett tåg är en sak.
+vad är ett tåg? ett tåg är en sak.
 en zebra är en sak.
 en zebra är en sak.
+vad är en blomma? en blomma är en sak.
+vad är ett papper? ett papper är en sak.
+en blomma är en sak.
+en väg är en sak.
+en väg är en sak.
+vad är ett hus? ett hus är en sak.
+vad är ett hus? ett hus är en sak.
+ett quiz är en sak.
+ett quiz är en sak.
+vad är en blomma? en blomma är en sak.
+vad är en blomma? en blomma är en sak.
+en jord är en sak.
+en jord är en sak.
+vad är ett kilo? ett kilo är en sak.
+vad är en webb? en webb är en sak.
+en blomma är en sak.
+en bok är en sak.
+en bok är en sak.
+vad är en taxi? en taxi är en sak.
+vad är en taxi? en taxi är en sak.
+en yta är en sak.
+en yta är en sak.
+vad är ett kilo? ett kilo är en sak.
+vad är ett kilo? ett kilo är en sak.
+ett tåg är en sak.
+ett tåg är en sak.
+vad är ett kilo? ett kilo är en sak.
+vad är en examen? en examen är en sak.
+ett kilo är en sak.
+ett papper är en sak.
+ett papper är en sak.
+vad är en ö? en ö är en sak.
+vad är en ö? en ö är en sak.
+ett hus är en sak.
+ett hus är en sak.
+vad är ett watt? ett watt är en sak.
+vad är ett watt? ett watt är en sak.
+en blomma är en sak.
+en blomma är en sak.
+vad är en stad? en stad är en sak.
+vad är en stad? en stad är en sak.
 ett kilo är en sak.
 en webb är en sak.
-en blomma är en sak.
-en väg är en sak.
-en väg är en sak.
+vad är ett tåg? ett tåg är en sak.
+vad är en katt? en katt är en sak.
+vad är en katt? en katt är en sak.
 en taxi är en sak.
 en taxi är en sak.
-ett quiz är en sak.
-ett quiz är en sak.
+vad är ett bord? ett bord är en sak.
+vad är ett bord? ett bord är en sak.
 ett kilo är en sak.
 ett kilo är en sak.
-en jord är en sak.
-en jord är en sak.
+vad är en zebra? en zebra är en sak.
+vad är en zebra? en zebra är en sak.
 ett watt är en sak.
 en examen är en sak.
-en blomma är en sak.
-en bok är en sak.
-en bok är en sak.
+vad är ett tåg? ett tåg är en sak.
+vad är en väg? en väg är en sak.
+vad är en väg? en väg är en sak.
 en ö är en sak.
 en ö är en sak.
-en yta är en sak.
-en yta är en sak.
+vad är ett quiz? ett quiz är en sak.
+vad är ett quiz? ett quiz är en sak.
 ett watt är en sak.
 ett watt är en sak.
-ett tåg är en sak.
-ett tåg är en sak.
+vad är en jord? en jord är en sak.
+vad är en jord? en jord är en sak.
 ett watt är en sak.
 en stad är en sak.
-ett kilo är en sak.
-ett papper är en sak.
-ett papper är en sak.
+vad är en blomma? en blomma är en sak.
+vad är en bok? en bok är en sak.
+vad är en bok? en bok är en sak.
 en katt är en sak.
 en katt är en sak.
-ett hus är en sak.
-ett hus är en sak.
+vad är en yta? en yta är en sak.
+vad är en yta? en yta är en sak.
 ¬ en hus är stora.
 en bok är liten.
 ¬ ett bok är liten.
@@ -80613,13 +82119,13 @@ fala to rzecz.
 kot to rzecz.
 papier to rzecz.
 ćma to rzecz.
-dom to rzecz.
-kilogram to rzecz.
-miasto to rzecz.
-taksówka to rzecz.
-żaba to rzecz.
-gazeta to rzecz.
-książka to rzecz.
+co to jest papier? papier to rzecz.
+co to jest łąka? łąka to rzecz.
+co to jest egzamin? egzamin to rzecz.
+co to jest kilogram? kilogram to rzecz.
+co to jest miasto? miasto to rzecz.
+co to jest taksówka? taksówka to rzecz.
+co to jest żaba? żaba to rzecz.
 kot to rzecz.
 źródło to rzecz.
 farba to rzecz.
@@ -80627,6 +82133,53 @@ koń to rzecz.
 pociąg to rzecz.
 łąka to rzecz.
 egzamin to rzecz.
+co to jest gazeta? gazeta to rzecz.
+co to jest fala? fala to rzecz.
+co to jest kot? kot to rzecz.
+co to jest papier? papier to rzecz.
+co to jest ćma? ćma to rzecz.
+co to jest dom? dom to rzecz.
+co to jest jabłko? jabłko to rzecz.
+żaba to rzecz.
+gazeta to rzecz.
+książka to rzecz.
+ręka to rzecz.
+ściana to rzecz.
+fala to rzecz.
+co to jest papier? papier to rzecz.
+co to jest farba? farba to rzecz.
+co to jest koń? koń to rzecz.
+co to jest pociąg? pociąg to rzecz.
+co to jest łąka? łąka to rzecz.
+co to jest egzamin? egzamin to rzecz.
+co to jest kilogram? kilogram to rzecz.
+kot to rzecz.
+jabłko to rzecz.
+kwiat to rzecz.
+stół to rzecz.
+źródło to rzecz.
+farba to rzecz.
+koń to rzecz.
+co to jest gazeta? gazeta to rzecz.
+co to jest książka? książka to rzecz.
+co to jest ręka? ręka to rzecz.
+co to jest ściana? ściana to rzecz.
+co to jest fala? fala to rzecz.
+co to jest kot? kot to rzecz.
+dom to rzecz.
+kilogram to rzecz.
+miasto to rzecz.
+taksówka to rzecz.
+żaba to rzecz.
+gazeta to rzecz.
+książka to rzecz.
+co to jest ściana? ściana to rzecz.
+co to jest kwiat? kwiat to rzecz.
+co to jest stół? stół to rzecz.
+co to jest źródło? źródło to rzecz.
+co to jest farba? farba to rzecz.
+co to jest koń? koń to rzecz.
+co to jest pociąg? pociąg to rzecz.
 ręka to rzecz.
 papier to rzecz.
 ćma to rzecz.
@@ -80634,12 +82187,12 @@ dom to rzecz.
 jabłko to rzecz.
 kwiat to rzecz.
 stół to rzecz.
-żaba to rzecz.
-gazeta to rzecz.
-książka to rzecz.
-ręka to rzecz.
-ściana to rzecz.
-fala to rzecz.
+co to jest miasto? miasto to rzecz.
+co to jest taksówka? taksówka to rzecz.
+co to jest żaba? żaba to rzecz.
+co to jest gazeta? gazeta to rzecz.
+co to jest książka? książka to rzecz.
+co to jest ręka? ręka to rzecz.
 dom to rzecz.
 pociąg to rzecz.
 łąka to rzecz.
@@ -80647,13 +82200,13 @@ egzamin to rzecz.
 kilogram to rzecz.
 miasto to rzecz.
 taksówka to rzecz.
-kot to rzecz.
-jabłko to rzecz.
-kwiat to rzecz.
-stół to rzecz.
-źródło to rzecz.
-farba to rzecz.
-koń to rzecz.
+co to jest ściana? ściana to rzecz.
+co to jest ćma? ćma to rzecz.
+co to jest dom? dom to rzecz.
+co to jest jabłko? jabłko to rzecz.
+co to jest kwiat? kwiat to rzecz.
+co to jest stół? stół to rzecz.
+co to jest źródło? źródło to rzecz.
 ja tańczę.
 ¬ pięć koty.
 sto minus jeden równa dziewięćdziesiąt dziewięć.
@@ -80950,48 +82503,95 @@ kot to rzecz.
 koń to rzecz.
 ściana to rzecz.
 koń to rzecz.
-źródło to rzecz.
-książka to rzecz.
-źródło to rzecz.
-książka to rzecz.
+co to jest kwiat? kwiat to rzecz.
+co to jest żaba? żaba to rzecz.
+co to jest kwiat? kwiat to rzecz.
+co to jest żaba? żaba to rzecz.
 żaba to rzecz.
 kwiat to rzecz.
 żaba to rzecz.
 kwiat to rzecz.
-ręka to rzecz.
-miasto to rzecz.
-dom to rzecz.
-miasto to rzecz.
+co to jest gazeta? gazeta to rzecz.
+co to jest egzamin? egzamin to rzecz.
+co to jest papier? papier to rzecz.
+co to jest egzamin? egzamin to rzecz.
 dom to rzecz.
 papier to rzecz.
 egzamin to rzecz.
 papier to rzecz.
 egzamin to rzecz.
-pociąg to rzecz.
-fala to rzecz.
-pociąg to rzecz.
-fala to rzecz.
+co to jest farba? farba to rzecz.
+co to jest ręka? ręka to rzecz.
+co to jest farba? farba to rzecz.
+co to jest ręka? ręka to rzecz.
 ręka to rzecz.
 farba to rzecz.
 ręka to rzecz.
 farba to rzecz.
+co to jest ściana? ściana to rzecz.
+co to jest taksówka? taksówka to rzecz.
+co to jest jabłko? jabłko to rzecz.
+co to jest taksówka? taksówka to rzecz.
+dom to rzecz.
+jabłko to rzecz.
+taksówka to rzecz.
+jabłko to rzecz.
+taksówka to rzecz.
+co to jest łąka? łąka to rzecz.
+co to jest kot? kot to rzecz.
+co to jest łąka? łąka to rzecz.
+co to jest kot? kot to rzecz.
+ręka to rzecz.
+łąka to rzecz.
+kot to rzecz.
+łąka to rzecz.
+co to jest ściana? ściana to rzecz.
+co to jest książka? książka to rzecz.
+co to jest źródło? źródło to rzecz.
+co to jest książka? książka to rzecz.
+co to jest źródło? źródło to rzecz.
+źródło to rzecz.
+książka to rzecz.
+źródło to rzecz.
+książka to rzecz.
+co to jest miasto? miasto to rzecz.
+co to jest dom? dom to rzecz.
+co to jest miasto? miasto to rzecz.
+co to jest dom? dom to rzecz.
+ręka to rzecz.
+miasto to rzecz.
+dom to rzecz.
+miasto to rzecz.
+co to jest papier? papier to rzecz.
+co to jest fala? fala to rzecz.
+co to jest pociąg? pociąg to rzecz.
+co to jest fala? fala to rzecz.
+co to jest pociąg? pociąg to rzecz.
+pociąg to rzecz.
+fala to rzecz.
+pociąg to rzecz.
+fala to rzecz.
+co to jest gazeta? gazeta to rzecz.
+co to jest stół? stół to rzecz.
+co to jest gazeta? gazeta to rzecz.
+co to jest stół? stół to rzecz.
 kot to rzecz.
 gazeta to rzecz.
 stół to rzecz.
 gazeta to rzecz.
-dom to rzecz.
-jabłko to rzecz.
-taksówka to rzecz.
-jabłko to rzecz.
-taksówka to rzecz.
+co to jest papier? papier to rzecz.
+co to jest ćma? ćma to rzecz.
+co to jest kilogram? kilogram to rzecz.
+co to jest ćma? ćma to rzecz.
+co to jest kilogram? kilogram to rzecz.
 kilogram to rzecz.
 ćma to rzecz.
 kilogram to rzecz.
 ćma to rzecz.
-ręka to rzecz.
-łąka to rzecz.
-kot to rzecz.
-łąka to rzecz.
+co to jest gazeta? gazeta to rzecz.
+co to jest koń? koń to rzecz.
+co to jest ściana? ściana to rzecz.
+co to jest koń? koń to rzecz.
 ¬ pięć koty.
 pięć kotów.
 ¬ ja czytasz.
@@ -81253,50 +82853,97 @@ tutaj gazety.
 kilogram to rzecz.
 książka to rzecz.
 papier to rzecz.
-dom to rzecz.
-ściana to rzecz.
-dom to rzecz.
-farba to rzecz.
+co to jest papier? papier to rzecz.
+co to jest książka? książka to rzecz.
+co to jest papier? papier to rzecz.
+co to jest stół? stół to rzecz.
 kot to rzecz.
 kwiat to rzecz.
 pociąg to rzecz.
 taksówka to rzecz.
-źródło to rzecz.
-egzamin to rzecz.
-gazeta to rzecz.
+co to jest kwiat? kwiat to rzecz.
+co to jest pociąg? pociąg to rzecz.
+co to jest taksówka? taksówka to rzecz.
 kot to rzecz.
 miasto to rzecz.
 ręka to rzecz.
 ćma to rzecz.
-żaba to rzecz.
-fala to rzecz.
-jabłko to rzecz.
+co to jest miasto? miasto to rzecz.
+co to jest ręka? ręka to rzecz.
+co to jest ćma? ćma to rzecz.
 dom to rzecz.
 papier to rzecz.
 stół to rzecz.
 łąka to rzecz.
-ręka to rzecz.
-farba to rzecz.
-kilogram to rzecz.
-książka to rzecz.
+co to jest gazeta? gazeta to rzecz.
+co to jest stół? stół to rzecz.
+co to jest łąka? łąka to rzecz.
+co to jest żaba? żaba to rzecz.
 pociąg to rzecz.
 taksówka to rzecz.
 ściana to rzecz.
-kot to rzecz.
-gazeta to rzecz.
-kot to rzecz.
-kwiat to rzecz.
+co to jest ściana? ściana to rzecz.
+co to jest taksówka? taksówka to rzecz.
+co to jest ściana? ściana to rzecz.
+co to jest dom? dom to rzecz.
 ręka to rzecz.
 ćma to rzecz.
 źródło to rzecz.
 egzamin to rzecz.
-jabłko to rzecz.
-koń to rzecz.
-miasto to rzecz.
+co to jest ćma? ćma to rzecz.
+co to jest źródło? źródło to rzecz.
+co to jest egzamin? egzamin to rzecz.
 ręka to rzecz.
 łąka to rzecz.
 żaba to rzecz.
 fala to rzecz.
+co to jest łąka? łąka to rzecz.
+co to jest żaba? żaba to rzecz.
+co to jest fala? fala to rzecz.
+dom to rzecz.
+ściana to rzecz.
+dom to rzecz.
+farba to rzecz.
+co to jest ściana? ściana to rzecz.
+co to jest dom? dom to rzecz.
+co to jest farba? farba to rzecz.
+co to jest kilogram? kilogram to rzecz.
+źródło to rzecz.
+egzamin to rzecz.
+gazeta to rzecz.
+co to jest ściana? ściana to rzecz.
+co to jest egzamin? egzamin to rzecz.
+co to jest gazeta? gazeta to rzecz.
+co to jest kot? kot to rzecz.
+żaba to rzecz.
+fala to rzecz.
+jabłko to rzecz.
+co to jest papier? papier to rzecz.
+co to jest fala? fala to rzecz.
+co to jest jabłko? jabłko to rzecz.
+co to jest koń? koń to rzecz.
+ręka to rzecz.
+farba to rzecz.
+kilogram to rzecz.
+książka to rzecz.
+co to jest farba? farba to rzecz.
+co to jest kilogram? kilogram to rzecz.
+co to jest książka? książka to rzecz.
+kot to rzecz.
+gazeta to rzecz.
+kot to rzecz.
+kwiat to rzecz.
+co to jest gazeta? gazeta to rzecz.
+co to jest kot? kot to rzecz.
+co to jest kwiat? kwiat to rzecz.
+co to jest pociąg? pociąg to rzecz.
+jabłko to rzecz.
+koń to rzecz.
+miasto to rzecz.
+co to jest gazeta? gazeta to rzecz.
+co to jest koń? koń to rzecz.
+co to jest miasto? miasto to rzecz.
+co to jest ręka? ręka to rzecz.
 sto minus jeden równa dziewięćdziesiąt dziewięć.
 ¬ pięć koty.
 ja tańczę.
@@ -81546,46 +83193,92 @@ tutaj domy.
 ręka to rzecz.
 ćma to rzecz.
 gazeta to rzecz.
-ręka to rzecz.
-egzamin to rzecz.
-kwiat to rzecz.
+co to jest gazeta? gazeta to rzecz.
+co to jest pociąg? pociąg to rzecz.
+co to jest dom? dom to rzecz.
 źródło to rzecz.
 kot to rzecz.
 taksówka to rzecz.
-gazeta to rzecz.
-pociąg to rzecz.
+co to jest taksówka? taksówka to rzecz.
+co to jest farba? farba to rzecz.
 kot to rzecz.
 kwiat to rzecz.
 ściana to rzecz.
-kot to rzecz.
-taksówka to rzecz.
-farba to rzecz.
+co to jest ściana? ściana to rzecz.
+co to jest kilogram? kilogram to rzecz.
+co to jest stół? stół to rzecz.
 pociąg to rzecz.
 dom to rzecz.
 książka to rzecz.
-ściana to rzecz.
-kilogram to rzecz.
+co to jest książka? książka to rzecz.
+co to jest łąka? łąka to rzecz.
 kot to rzecz.
 farba to rzecz.
 papier to rzecz.
-dom to rzecz.
-łąka to rzecz.
+co to jest papier? papier to rzecz.
+co to jest żaba? żaba to rzecz.
+co to jest koń? koń to rzecz.
+kilogram to rzecz.
 stół to rzecz.
 fala to rzecz.
-papier to rzecz.
-żaba to rzecz.
+co to jest fala? fala to rzecz.
+co to jest miasto? miasto to rzecz.
 dom to rzecz.
 łąka to rzecz.
-ręka to rzecz.
-fala to rzecz.
-miasto to rzecz.
+co to jest gazeta? gazeta to rzecz.
+co to jest ręka? ręka to rzecz.
+co to jest egzamin? egzamin to rzecz.
 żaba to rzecz.
 koń to rzecz.
 ćma to rzecz.
-ręka to rzecz.
+co to jest ćma? ćma to rzecz.
+co to jest gazeta? gazeta to rzecz.
 dom to rzecz.
 miasto to rzecz.
 źródło to rzecz.
+co to jest gazeta? gazeta to rzecz.
+co to jest kot? kot to rzecz.
+co to jest taksówka? taksówka to rzecz.
+ręka to rzecz.
+egzamin to rzecz.
+kwiat to rzecz.
+co to jest kwiat? kwiat to rzecz.
+co to jest ściana? ściana to rzecz.
+co to jest kilogram? kilogram to rzecz.
+gazeta to rzecz.
+pociąg to rzecz.
+co to jest ściana? ściana to rzecz.
+co to jest dom? dom to rzecz.
+co to jest książka? książka to rzecz.
+kot to rzecz.
+taksówka to rzecz.
+farba to rzecz.
+co to jest farba? farba to rzecz.
+co to jest papier? papier to rzecz.
+co to jest żaba? żaba to rzecz.
+ściana to rzecz.
+co to jest ściana? ściana to rzecz.
+co to jest stół? stół to rzecz.
+co to jest fala? fala to rzecz.
+dom to rzecz.
+łąka to rzecz.
+co to jest łąka? łąka to rzecz.
+co to jest ręka? ręka to rzecz.
+papier to rzecz.
+żaba to rzecz.
+co to jest papier? papier to rzecz.
+co to jest koń? koń to rzecz.
+co to jest ćma? ćma to rzecz.
+ręka to rzecz.
+fala to rzecz.
+miasto to rzecz.
+co to jest miasto? miasto to rzecz.
+co to jest źródło? źródło to rzecz.
+co to jest kot? kot to rzecz.
+ręka to rzecz.
+co to jest papier? papier to rzecz.
+co to jest egzamin? egzamin to rzecz.
+co to jest kwiat? kwiat to rzecz.
 ¬ ja czytasz.
 dwa koty.
 ¬ dom plus kot równa ?
@@ -81834,45 +83527,87 @@ tutaj papiery.
 tutaj pociągi.
 pociąg to rzecz.
 ręka to rzecz.
+co to jest ściana? ściana to rzecz.
+co to jest kot? kot to rzecz.
+co to jest koń? koń to rzecz.
+źródło to rzecz.
+żaba to rzecz.
+co to jest gazeta? gazeta to rzecz.
+co to jest ręka? ręka to rzecz.
+co to jest stół? stół to rzecz.
+co to jest gazeta? gazeta to rzecz.
+co to jest żaba? żaba to rzecz.
+co to jest dom? dom to rzecz.
+papier to rzecz.
+pociąg to rzecz.
+co to jest kot? kot to rzecz.
+ściana to rzecz.
+źródło to rzecz.
+co to jest papier? papier to rzecz.
+co to jest pociąg? pociąg to rzecz.
+co to jest ręka? ręka to rzecz.
+gazeta to rzecz.
+co to jest ściana? ściana to rzecz.
+co to jest źródło? źródło to rzecz.
+co to jest żaba? żaba to rzecz.
+miasto to rzecz.
+papier to rzecz.
+co to jest gazeta? gazeta to rzecz.
+dom to rzecz.
+łąka to rzecz.
+ściana to rzecz.
+co to jest miasto? miasto to rzecz.
+co to jest papier? papier to rzecz.
+dom to rzecz.
+farba to rzecz.
+gazeta to rzecz.
+co to jest łąka? łąka to rzecz.
+co to jest ściana? ściana to rzecz.
+kot to rzecz.
+kwiat to rzecz.
+miasto to rzecz.
+co to jest farba? farba to rzecz.
+co to jest gazeta? gazeta to rzecz.
 kot to rzecz.
 ćma to rzecz.
 łąka to rzecz.
-źródło to rzecz.
-żaba to rzecz.
+co to jest kwiat? kwiat to rzecz.
+co to jest miasto? miasto to rzecz.
 ręka to rzecz.
 fala to rzecz.
 farba to rzecz.
+co to jest ćma? ćma to rzecz.
+co to jest łąka? łąka to rzecz.
 ręka to rzecz.
 kwiat to rzecz.
-papier to rzecz.
-pociąg to rzecz.
+co to jest fala? fala to rzecz.
+co to jest farba? farba to rzecz.
 stół to rzecz.
 taksówka to rzecz.
 ćma to rzecz.
-ściana to rzecz.
-źródło to rzecz.
+co to jest kwiat? kwiat to rzecz.
 dom to rzecz.
 egzamin to rzecz.
 fala to rzecz.
-gazeta to rzecz.
+co to jest taksówka? taksówka to rzecz.
+co to jest ćma? ćma to rzecz.
 kot to rzecz.
 koń to rzecz.
-miasto to rzecz.
-papier to rzecz.
+co to jest egzamin? egzamin to rzecz.
+co to jest fala? fala to rzecz.
 ręka to rzecz.
 stół to rzecz.
-dom to rzecz.
-łąka to rzecz.
-ściana to rzecz.
+co to jest papier? papier to rzecz.
+co to jest koń? koń to rzecz.
 żaba to rzecz.
 dom to rzecz.
-dom to rzecz.
-farba to rzecz.
-gazeta to rzecz.
+co to jest papier? papier to rzecz.
+co to jest stół? stół to rzecz.
+co to jest taksówka? taksówka to rzecz.
 kot to rzecz.
-kot to rzecz.
-kwiat to rzecz.
-miasto to rzecz.
+co to jest ściana? ściana to rzecz.
+co to jest dom? dom to rzecz.
+co to jest egzamin? egzamin to rzecz.
 ¬ pięć koty.
 dwa koty.
 ¬ dwa kot.
@@ -82227,13 +83962,13 @@ pięć kotów.
 місто — це річ.
 форма — це річ.
 яблуко — це річ.
-газета — це річ.
-кіт — це річ.
-фарба — це річ.
-юнак — це річ.
-ґанок — це річ.
-книга — це річ.
-потяг — це річ.
+що таке форма? форма — це річ.
+що таке єнот? єнот — це річ.
+що таке дім? дім — це річ.
+що таке кіт? кіт — це річ.
+що таке фарба? фарба — це річ.
+що таке юнак? юнак — це річ.
+що таке ґанок? ґанок — це річ.
 місто — це річ.
 їжак — це річ.
 квітка — це річ.
@@ -82241,6 +83976,53 @@ pięć kotów.
 хмара — це річ.
 єнот — це річ.
 дім — це річ.
+що таке книга? книга — це річ.
+що таке жаба? жаба — це річ.
+що таке місто? місто — це річ.
+що таке форма? форма — це річ.
+що таке яблуко? яблуко — це річ.
+що таке газета? газета — це річ.
+що таке кілограм? кілограм — це річ.
+ґанок — це річ.
+книга — це річ.
+потяг — це річ.
+цибуля — це річ.
+іспит — це річ.
+жаба — це річ.
+що таке форма? форма — це річ.
+що таке квітка? квітка — це річ.
+що таке папір? папір — це річ.
+що таке хмара? хмара — це річ.
+що таке єнот? єнот — це річ.
+що таке дім? дім — це річ.
+що таке кіт? кіт — це річ.
+місто — це річ.
+кілограм — це річ.
+стіл — це річ.
+щука — це річ.
+їжак — це річ.
+квітка — це річ.
+папір — це річ.
+що таке книга? книга — це річ.
+що таке потяг? потяг — це річ.
+що таке цибуля? цибуля — це річ.
+що таке іспит? іспит — це річ.
+що таке жаба? жаба — це річ.
+що таке місто? місто — це річ.
+газета — це річ.
+кіт — це річ.
+фарба — це річ.
+юнак — це річ.
+ґанок — це річ.
+книга — це річ.
+потяг — це річ.
+що таке іспит? іспит — це річ.
+що таке стіл? стіл — це річ.
+що таке щука? щука — це річ.
+що таке їжак? їжак — це річ.
+що таке квітка? квітка — це річ.
+що таке папір? папір — це річ.
+що таке хмара? хмара — це річ.
 цибуля — це річ.
 форма — це річ.
 яблуко — це річ.
@@ -82248,12 +84030,12 @@ pięć kotów.
 кілограм — це річ.
 стіл — це річ.
 щука — це річ.
-ґанок — це річ.
-книга — це річ.
-потяг — це річ.
-цибуля — це річ.
-іспит — це річ.
-жаба — це річ.
+що таке фарба? фарба — це річ.
+що таке юнак? юнак — це річ.
+що таке ґанок? ґанок — це річ.
+що таке книга? книга — це річ.
+що таке потяг? потяг — це річ.
+що таке цибуля? цибуля — це річ.
 газета — це річ.
 хмара — це річ.
 єнот — це річ.
@@ -82261,13 +84043,13 @@ pięć kotów.
 кіт — це річ.
 фарба — це річ.
 юнак — це річ.
-місто — це річ.
-кілограм — це річ.
-стіл — це річ.
-щука — це річ.
-їжак — це річ.
-квітка — це річ.
-папір — це річ.
+що таке іспит? іспит — це річ.
+що таке яблуко? яблуко — це річ.
+що таке газета? газета — це річ.
+що таке кілограм? кілограм — це річ.
+що таке стіл? стіл — це річ.
+що таке щука? щука — це річ.
+що таке їжак? їжак — це річ.
 я танцюю.
 ¬ п'ять коти.
 сто мінус один дорівнює дев'яносто дев'ять.
@@ -82549,48 +84331,95 @@ pięć kotów.
 папір — це річ.
 іспит — це річ.
 папір — це річ.
-їжак — це річ.
-потяг — це річ.
-їжак — це річ.
-потяг — це річ.
+що таке стіл? стіл — це річ.
+що таке ґанок? ґанок — це річ.
+що таке стіл? стіл — це річ.
+що таке ґанок? ґанок — це річ.
 ґанок — це річ.
 стіл — це річ.
 ґанок — це річ.
 стіл — це річ.
-цибуля — це річ.
-фарба — це річ.
-газета — це річ.
-фарба — це річ.
+що таке книга? книга — це річ.
+що таке дім? дім — це річ.
+що таке форма? форма — це річ.
+що таке дім? дім — це річ.
 газета — це річ.
 форма — це річ.
 дім — це річ.
 форма — це річ.
 дім — це річ.
-хмара — це річ.
-жаба — це річ.
-хмара — це річ.
-жаба — це річ.
+що таке квітка? квітка — це річ.
+що таке цибуля? цибуля — це річ.
+що таке квітка? квітка — це річ.
+що таке цибуля? цибуля — це річ.
 цибуля — це річ.
 квітка — це річ.
 цибуля — це річ.
 квітка — це річ.
+що таке іспит? іспит — це річ.
+що таке юнак? юнак — це річ.
+що таке кілограм? кілограм — це річ.
+що таке юнак? юнак — це річ.
+газета — це річ.
+кілограм — це річ.
+юнак — це річ.
+кілограм — це річ.
+юнак — це річ.
+що таке єнот? єнот — це річ.
+що таке місто? місто — це річ.
+що таке єнот? єнот — це річ.
+що таке місто? місто — це річ.
+цибуля — це річ.
+єнот — це річ.
+місто — це річ.
+єнот — це річ.
+що таке іспит? іспит — це річ.
+що таке потяг? потяг — це річ.
+що таке їжак? їжак — це річ.
+що таке потяг? потяг — це річ.
+що таке їжак? їжак — це річ.
+їжак — це річ.
+потяг — це річ.
+їжак — це річ.
+потяг — це річ.
+що таке фарба? фарба — це річ.
+що таке газета? газета — це річ.
+що таке фарба? фарба — це річ.
+що таке газета? газета — це річ.
+цибуля — це річ.
+фарба — це річ.
+газета — це річ.
+фарба — це річ.
+що таке форма? форма — це річ.
+що таке жаба? жаба — це річ.
+що таке хмара? хмара — це річ.
+що таке жаба? жаба — це річ.
+що таке хмара? хмара — це річ.
+хмара — це річ.
+жаба — це річ.
+хмара — це річ.
+жаба — це річ.
+що таке книга? книга — це річ.
+що таке щука? щука — це річ.
+що таке книга? книга — це річ.
+що таке щука? щука — це річ.
 місто — це річ.
 книга — це річ.
 щука — це річ.
 книга — це річ.
-газета — це річ.
-кілограм — це річ.
-юнак — це річ.
-кілограм — це річ.
-юнак — це річ.
+що таке форма? форма — це річ.
+що таке яблуко? яблуко — це річ.
+що таке кіт? кіт — це річ.
+що таке яблуко? яблуко — це річ.
+що таке кіт? кіт — це річ.
 кіт — це річ.
 яблуко — це річ.
 кіт — це річ.
 яблуко — це річ.
-цибуля — це річ.
-єнот — це річ.
-місто — це річ.
-єнот — це річ.
+що таке книга? книга — це річ.
+що таке папір? папір — це річ.
+що таке іспит? іспит — це річ.
+що таке папір? папір — це річ.
 ¬ п'ять коти.
 п'ять котів.
 ¬ я читаєш.
@@ -82855,50 +84684,97 @@ pięć kotów.
 кіт — це річ.
 потяг — це річ.
 форма — це річ.
-газета — це річ.
-іспит — це річ.
-газета — це річ.
-квітка — це річ.
+що таке форма? форма — це річ.
+що таке потяг? потяг — це річ.
+що таке форма? форма — це річ.
+що таке щука? щука — це річ.
 місто — це річ.
 стіл — це річ.
 хмара — це річ.
 юнак — це річ.
-їжак — це річ.
-дім — це річ.
-книга — це річ.
+що таке стіл? стіл — це річ.
+що таке хмара? хмара — це річ.
+що таке юнак? юнак — це річ.
 місто — це річ.
 фарба — це річ.
 цибуля — це річ.
 яблуко — це річ.
-ґанок — це річ.
-жаба — це річ.
-кілограм — це річ.
+що таке фарба? фарба — це річ.
+що таке цибуля? цибуля — це річ.
+що таке яблуко? яблуко — це річ.
 газета — це річ.
 форма — це річ.
 щука — це річ.
 єнот — це річ.
-цибуля — це річ.
-квітка — це річ.
-кіт — це річ.
-потяг — це річ.
+що таке книга? книга — це річ.
+що таке щука? щука — це річ.
+що таке єнот? єнот — це річ.
+що таке ґанок? ґанок — це річ.
 хмара — це річ.
 юнак — це річ.
 іспит — це річ.
-місто — це річ.
-книга — це річ.
-місто — це річ.
-стіл — це річ.
+що таке іспит? іспит — це річ.
+що таке юнак? юнак — це річ.
+що таке іспит? іспит — це річ.
+що таке газета? газета — це річ.
 цибуля — це річ.
 яблуко — це річ.
 їжак — це річ.
 дім — це річ.
-кілограм — це річ.
-папір — це річ.
-фарба — це річ.
+що таке яблуко? яблуко — це річ.
+що таке їжак? їжак — це річ.
+що таке дім? дім — це річ.
 цибуля — це річ.
 єнот — це річ.
 ґанок — це річ.
 жаба — це річ.
+що таке єнот? єнот — це річ.
+що таке ґанок? ґанок — це річ.
+що таке жаба? жаба — це річ.
+газета — це річ.
+іспит — це річ.
+газета — це річ.
+квітка — це річ.
+що таке іспит? іспит — це річ.
+що таке газета? газета — це річ.
+що таке квітка? квітка — це річ.
+що таке кіт? кіт — це річ.
+їжак — це річ.
+дім — це річ.
+книга — це річ.
+що таке іспит? іспит — це річ.
+що таке дім? дім — це річ.
+що таке книга? книга — це річ.
+що таке місто? місто — це річ.
+ґанок — це річ.
+жаба — це річ.
+кілограм — це річ.
+що таке форма? форма — це річ.
+що таке жаба? жаба — це річ.
+що таке кілограм? кілограм — це річ.
+що таке папір? папір — це річ.
+цибуля — це річ.
+квітка — це річ.
+кіт — це річ.
+потяг — це річ.
+що таке квітка? квітка — це річ.
+що таке кіт? кіт — це річ.
+що таке потяг? потяг — це річ.
+місто — це річ.
+книга — це річ.
+місто — це річ.
+стіл — це річ.
+що таке книга? книга — це річ.
+що таке місто? місто — це річ.
+що таке стіл? стіл — це річ.
+що таке хмара? хмара — це річ.
+кілограм — це річ.
+папір — це річ.
+фарба — це річ.
+що таке книга? книга — це річ.
+що таке папір? папір — це річ.
+що таке фарба? фарба — це річ.
+що таке цибуля? цибуля — це річ.
 сто мінус один дорівнює дев'яносто дев'ять.
 ¬ п'ять коти.
 я танцюю.
@@ -83159,50 +85035,97 @@ pięć kotów.
 цибуля — це річ.
 яблуко — це річ.
 книга — це річ.
-цибуля — це річ.
-дім — це річ.
-стіл — це річ.
+що таке книга? книга — це річ.
+що таке хмара? хмара — це річ.
+що таке газета? газета — це річ.
 їжак — це річ.
 місто — це річ.
 юнак — це річ.
-книга — це річ.
-хмара — це річ.
+що таке юнак? юнак — це річ.
+що таке квітка? квітка — це річ.
 місто — це річ.
 стіл — це річ.
 іспит — це річ.
-місто — це річ.
-юнак — це річ.
-квітка — це річ.
+що таке іспит? іспит — це річ.
+що таке кіт? кіт — це річ.
+що таке щука? щука — це річ.
 хмара — це річ.
 газета — це річ.
 потяг — це річ.
-іспит — це річ.
-кіт — це річ.
+що таке потяг? потяг — це річ.
+що таке єнот? єнот — це річ.
 місто — це річ.
 квітка — це річ.
 форма — це річ.
-газета — це річ.
-потяг — це річ.
-єнот — це річ.
+що таке форма? форма — це річ.
+що таке ґанок? ґанок — це річ.
+що таке папір? папір — це річ.
 кіт — це річ.
 щука — це річ.
 жаба — це річ.
-форма — це річ.
-ґанок — це річ.
+що таке жаба? жаба — це річ.
+що таке фарба? фарба — це річ.
 газета — це річ.
 єнот — це річ.
 кілограм — це річ.
-цибуля — це річ.
-жаба — це річ.
-фарба — це річ.
+що таке книга? книга — це річ.
+що таке цибуля? цибуля — це річ.
+що таке дім? дім — це річ.
 ґанок — це річ.
 папір — це річ.
 яблуко — це річ.
-кілограм — це річ.
-цибуля — це річ.
+що таке яблуко? яблуко — це річ.
+що таке книга? книга — це річ.
 газета — це річ.
 фарба — це річ.
 їжак — це річ.
+що таке книга? книга — це річ.
+що таке місто? місто — це річ.
+що таке юнак? юнак — це річ.
+цибуля — це річ.
+дім — це річ.
+стіл — це річ.
+що таке стіл? стіл — це річ.
+що таке іспит? іспит — це річ.
+що таке кіт? кіт — це річ.
+книга — це річ.
+хмара — це річ.
+що таке іспит? іспит — це річ.
+що таке газета? газета — це річ.
+що таке потяг? потяг — це річ.
+місто — це річ.
+юнак — це річ.
+квітка — це річ.
+що таке квітка? квітка — це річ.
+що таке форма? форма — це річ.
+що таке ґанок? ґанок — це річ.
+іспит — це річ.
+кіт — це річ.
+що таке іспит? іспит — це річ.
+що таке щука? щука — це річ.
+що таке жаба? жаба — це річ.
+газета — це річ.
+потяг — це річ.
+єнот — це річ.
+що таке єнот? єнот — це річ.
+що таке кілограм? кілограм — це річ.
+що таке цибуля? цибуля — це річ.
+форма — це річ.
+ґанок — це річ.
+що таке форма? форма — це річ.
+що таке папір? папір — це річ.
+що таке яблуко? яблуко — це річ.
+цибуля — це річ.
+жаба — це річ.
+фарба — це річ.
+що таке фарба? фарба — це річ.
+що таке їжак? їжак — це річ.
+що таке місто? місто — це річ.
+кілограм — це річ.
+цибуля — це річ.
+що таке форма? форма — це річ.
+що таке дім? дім — це річ.
+що таке стіл? стіл — це річ.
 ¬ я читаєш.
 два коти.
 ¬ дім плюс кіт дорівнює ?
@@ -83459,51 +85382,98 @@ pięć kotów.
 тут хмари.
 хмара — це річ.
 цибуля — це річ.
+що таке іспит? іспит — це річ.
+що таке місто? місто — це річ.
+що таке папір? папір — це річ.
+їжак — це річ.
+ґанок — це річ.
+що таке книга? книга — це річ.
+що таке цибуля? цибуля — це річ.
+що таке щука? щука — це річ.
+кілограм — це річ.
+кіт — це річ.
+що таке книга? книга — це річ.
+що таке ґанок? ґанок — це річ.
+що таке газета? газета — це річ.
+форма — це річ.
+хмара — це річ.
+що таке кілограм? кілограм — це річ.
+що таке кіт? кіт — це річ.
+що таке місто? місто — це річ.
+іспит — це річ.
+їжак — це річ.
+що таке форма? форма — це річ.
+що таке хмара? хмара — це річ.
+що таке цибуля? цибуля — це річ.
+книга — це річ.
+кілограм — це річ.
+що таке іспит? іспит — це річ.
+що таке їжак? їжак — це річ.
+що таке ґанок? ґанок — це річ.
+фарба — це річ.
+форма — це річ.
+що таке книга? книга — це річ.
+що таке кілограм? кілограм — це річ.
+газета — це річ.
+єнот — це річ.
+іспит — це річ.
+що таке фарба? фарба — це річ.
+що таке форма? форма — це річ.
+газета — це річ.
+квітка — це річ.
+книга — це річ.
+що таке єнот? єнот — це річ.
+що таке іспит? іспит — це річ.
+місто — це річ.
+стіл — це річ.
+фарба — це річ.
+що таке квітка? квітка — це річ.
+що таке книга? книга — це річ.
 місто — це річ.
 яблуко — це річ.
 єнот — це річ.
-їжак — це річ.
-ґанок — це річ.
+що таке стіл? стіл — це річ.
+що таке фарба? фарба — це річ.
 цибуля — це річ.
 жаба — це річ.
 квітка — це річ.
-кілограм — це річ.
-кіт — це річ.
+що таке яблуко? яблуко — це річ.
+що таке єнот? єнот — це річ.
 цибуля — це річ.
 потяг — це річ.
 стіл — це річ.
-форма — це річ.
-хмара — це річ.
+що таке жаба? жаба — це річ.
+що таке квітка? квітка — це річ.
 щука — це річ.
 юнак — це річ.
 яблуко — це річ.
-іспит — це річ.
-їжак — це річ.
+що таке потяг? потяг — це річ.
+що таке стіл? стіл — це річ.
 газета — це річ.
 дім — це річ.
 жаба — це річ.
-книга — це річ.
-кілограм — це річ.
+що таке юнак? юнак — це річ.
+що таке яблуко? яблуко — це річ.
 місто — це річ.
 папір — це річ.
 потяг — це річ.
-фарба — це річ.
-форма — це річ.
+що таке дім? дім — це річ.
+що таке жаба? жаба — це річ.
 цибуля — це річ.
 щука — це річ.
-газета — це річ.
-єнот — це річ.
-іспит — це річ.
+що таке форма? форма — це річ.
+що таке папір? папір — це річ.
+що таке потяг? потяг — це річ.
 ґанок — це річ.
 газета — це річ.
-газета — це річ.
-квітка — це річ.
-книга — це річ.
+що таке форма? форма — це річ.
+що таке щука? щука — це річ.
+що таке юнак? юнак — це річ.
 кіт — це річ.
 місто — це річ.
-місто — це річ.
-стіл — це річ.
-фарба — це річ.
+що таке іспит? іспит — це річ.
+що таке газета? газета — це річ.
+що таке дім? дім — це річ.
 ¬ п'ять коти.
 два коти.
 ¬ два кіт.
@@ -83930,15 +85900,15 @@ jeton bir nesnedir.
 ışık bir nesnedir.
 kitap bir nesnedir.
 dağ bir nesnedir.
-gazete bir nesnedir.
-masa bir nesnedir.
-fikir bir nesnedir.
-tren bir nesnedir.
-hava bir nesnedir.
-öğrenci bir nesnedir.
-kilo bir nesnedir.
-cevap bir nesnedir.
-resim bir nesnedir.
+para nedir? para bir nesnedir.
+şehir nedir? şehir bir nesnedir.
+lale nedir? lale bir nesnedir.
+ev nedir? ev bir nesnedir.
+sınav nedir? sınav bir nesnedir.
+güneş nedir? güneş bir nesnedir.
+çiçek nedir? çiçek bir nesnedir.
+kedi nedir? kedi bir nesnedir.
+cam nedir? cam bir nesnedir.
 ağaç bir nesnedir.
 ev bir nesnedir.
 sınav bir nesnedir.
@@ -83949,15 +85919,15 @@ cam bir nesnedir.
 para bir nesnedir.
 fil bir nesnedir.
 uçak bir nesnedir.
-su bir nesnedir.
-göz bir nesnedir.
-yol bir nesnedir.
-kağıt bir nesnedir.
-ağaç bir nesnedir.
-masa bir nesnedir.
-fikir bir nesnedir.
-tren bir nesnedir.
-hava bir nesnedir.
+cevap nedir? cevap bir nesnedir.
+resim nedir? resim bir nesnedir.
+gazete nedir? gazete bir nesnedir.
+vapur nedir? vapur bir nesnedir.
+jüri nedir? jüri bir nesnedir.
+şehir nedir? şehir bir nesnedir.
+lale nedir? lale bir nesnedir.
+ev nedir? ev bir nesnedir.
+sınav nedir? sınav bir nesnedir.
 kedi bir nesnedir.
 vapur bir nesnedir.
 jüri bir nesnedir.
@@ -83967,15 +85937,15 @@ ev bir nesnedir.
 sınav bir nesnedir.
 güneş bir nesnedir.
 çiçek bir nesnedir.
-gazete bir nesnedir.
-jeton bir nesnedir.
-ışık bir nesnedir.
-kitap bir nesnedir.
-dağ bir nesnedir.
-su bir nesnedir.
-göz bir nesnedir.
-yol bir nesnedir.
-kağıt bir nesnedir.
+para nedir? para bir nesnedir.
+tren nedir? tren bir nesnedir.
+hava nedir? hava bir nesnedir.
+öğrenci nedir? öğrenci bir nesnedir.
+kilo nedir? kilo bir nesnedir.
+cevap nedir? cevap bir nesnedir.
+resim nedir? resim bir nesnedir.
+gazete nedir? gazete bir nesnedir.
+vapur nedir? vapur bir nesnedir.
 ağaç bir nesnedir.
 öğrenci bir nesnedir.
 kilo bir nesnedir.
@@ -83986,6 +85956,71 @@ vapur bir nesnedir.
 jüri bir nesnedir.
 şehir bir nesnedir.
 lale bir nesnedir.
+yol nedir? yol bir nesnedir.
+kağıt nedir? kağıt bir nesnedir.
+ağaç nedir? ağaç bir nesnedir.
+masa nedir? masa bir nesnedir.
+fikir nedir? fikir bir nesnedir.
+tren nedir? tren bir nesnedir.
+hava nedir? hava bir nesnedir.
+öğrenci nedir? öğrenci bir nesnedir.
+kilo nedir? kilo bir nesnedir.
+gazete bir nesnedir.
+masa bir nesnedir.
+fikir bir nesnedir.
+tren bir nesnedir.
+hava bir nesnedir.
+öğrenci bir nesnedir.
+kilo bir nesnedir.
+cevap bir nesnedir.
+resim bir nesnedir.
+jüri nedir? jüri bir nesnedir.
+kitap nedir? kitap bir nesnedir.
+dağ nedir? dağ bir nesnedir.
+su nedir? su bir nesnedir.
+göz nedir? göz bir nesnedir.
+yol nedir? yol bir nesnedir.
+kağıt nedir? kağıt bir nesnedir.
+ağaç nedir? ağaç bir nesnedir.
+masa nedir? masa bir nesnedir.
+fikir nedir? fikir bir nesnedir.
+su bir nesnedir.
+göz bir nesnedir.
+yol bir nesnedir.
+kağıt bir nesnedir.
+ağaç bir nesnedir.
+masa bir nesnedir.
+fikir bir nesnedir.
+tren bir nesnedir.
+hava bir nesnedir.
+yol nedir? yol bir nesnedir.
+fil nedir? fil bir nesnedir.
+uçak nedir? uçak bir nesnedir.
+jeton nedir? jeton bir nesnedir.
+ışık nedir? ışık bir nesnedir.
+kitap nedir? kitap bir nesnedir.
+dağ nedir? dağ bir nesnedir.
+su nedir? su bir nesnedir.
+göz nedir? göz bir nesnedir.
+gazete bir nesnedir.
+jeton bir nesnedir.
+ışık bir nesnedir.
+kitap bir nesnedir.
+dağ bir nesnedir.
+su bir nesnedir.
+göz bir nesnedir.
+yol bir nesnedir.
+kağıt bir nesnedir.
+jüri nedir? jüri bir nesnedir.
+güneş nedir? güneş bir nesnedir.
+çiçek nedir? çiçek bir nesnedir.
+kedi nedir? kedi bir nesnedir.
+cam nedir? cam bir nesnedir.
+para nedir? para bir nesnedir.
+fil nedir? fil bir nesnedir.
+uçak nedir? uçak bir nesnedir.
+jeton nedir? jeton bir nesnedir.
+ışık nedir? ışık bir nesnedir.
 iki ev.
 ¬ ben okuyorsun.
 on eksi bir dokuz eder.
@@ -84338,65 +86373,130 @@ kedi bir nesnedir.
 kağıt bir nesnedir.
 öğrenci bir nesnedir.
 jüri bir nesnedir.
-gazete bir nesnedir.
-su bir nesnedir.
-fikir bir nesnedir.
-resim bir nesnedir.
-ev bir nesnedir.
-para bir nesnedir.
+para nedir? para bir nesnedir.
+cevap nedir? cevap bir nesnedir.
+lale nedir? lale bir nesnedir.
+cam nedir? cam bir nesnedir.
+kitap nedir? kitap bir nesnedir.
+ağaç nedir? ağaç bir nesnedir.
 kedi bir nesnedir.
 öğrenci bir nesnedir.
 jüri bir nesnedir.
 çiçek bir nesnedir.
 jeton bir nesnedir.
 yol bir nesnedir.
-kedi bir nesnedir.
-ev bir nesnedir.
-para bir nesnedir.
-dağ bir nesnedir.
-masa bir nesnedir.
-cevap bir nesnedir.
+yol nedir? yol bir nesnedir.
+kitap nedir? kitap bir nesnedir.
+ağaç nedir? ağaç bir nesnedir.
+kilo nedir? kilo bir nesnedir.
+şehir nedir? şehir bir nesnedir.
+kedi nedir? kedi bir nesnedir.
 çiçek bir nesnedir.
 jeton bir nesnedir.
 yol bir nesnedir.
 hava bir nesnedir.
 vapur bir nesnedir.
 güneş bir nesnedir.
-dağ bir nesnedir.
-masa bir nesnedir.
-cevap bir nesnedir.
-lale bir nesnedir.
-cam bir nesnedir.
-kitap bir nesnedir.
+kilo nedir? kilo bir nesnedir.
+şehir nedir? şehir bir nesnedir.
+kedi nedir? kedi bir nesnedir.
+ışık nedir? ışık bir nesnedir.
+kağıt nedir? kağıt bir nesnedir.
+öğrenci nedir? öğrenci bir nesnedir.
 hava bir nesnedir.
 vapur bir nesnedir.
 güneş bir nesnedir.
 uçak bir nesnedir.
 göz bir nesnedir.
 tren bir nesnedir.
-lale bir nesnedir.
-cam bir nesnedir.
-kitap bir nesnedir.
-ağaç bir nesnedir.
-kilo bir nesnedir.
-şehir bir nesnedir.
+ışık nedir? ışık bir nesnedir.
+kağıt nedir? kağıt bir nesnedir.
+öğrenci nedir? öğrenci bir nesnedir.
+jüri nedir? jüri bir nesnedir.
+çiçek nedir? çiçek bir nesnedir.
+jeton nedir? jeton bir nesnedir.
 uçak bir nesnedir.
 göz bir nesnedir.
 tren bir nesnedir.
 gazete bir nesnedir.
 sınav bir nesnedir.
-ağaç bir nesnedir.
-ağaç bir nesnedir.
-kilo bir nesnedir.
-şehir bir nesnedir.
-kedi bir nesnedir.
-ışık bir nesnedir.
+jüri nedir? jüri bir nesnedir.
+jüri nedir? jüri bir nesnedir.
+çiçek nedir? çiçek bir nesnedir.
+jeton nedir? jeton bir nesnedir.
+yol nedir? yol bir nesnedir.
+hava nedir? hava bir nesnedir.
 ağaç bir nesnedir.
 gazete bir nesnedir.
 sınav bir nesnedir.
 fil bir nesnedir.
 su bir nesnedir.
 fikir bir nesnedir.
+para nedir? para bir nesnedir.
+yol nedir? yol bir nesnedir.
+hava nedir? hava bir nesnedir.
+vapur nedir? vapur bir nesnedir.
+güneş nedir? güneş bir nesnedir.
+uçak nedir? uçak bir nesnedir.
+gazete bir nesnedir.
+su bir nesnedir.
+fikir bir nesnedir.
+resim bir nesnedir.
+ev bir nesnedir.
+para bir nesnedir.
+yol nedir? yol bir nesnedir.
+güneş nedir? güneş bir nesnedir.
+uçak nedir? uçak bir nesnedir.
+göz nedir? göz bir nesnedir.
+tren nedir? tren bir nesnedir.
+gazete nedir? gazete bir nesnedir.
+kedi bir nesnedir.
+ev bir nesnedir.
+para bir nesnedir.
+dağ bir nesnedir.
+masa bir nesnedir.
+cevap bir nesnedir.
+göz nedir? göz bir nesnedir.
+tren nedir? tren bir nesnedir.
+gazete nedir? gazete bir nesnedir.
+sınav nedir? sınav bir nesnedir.
+fil nedir? fil bir nesnedir.
+su nedir? su bir nesnedir.
+dağ bir nesnedir.
+masa bir nesnedir.
+cevap bir nesnedir.
+lale bir nesnedir.
+cam bir nesnedir.
+kitap bir nesnedir.
+sınav nedir? sınav bir nesnedir.
+fil nedir? fil bir nesnedir.
+su nedir? su bir nesnedir.
+fikir nedir? fikir bir nesnedir.
+resim nedir? resim bir nesnedir.
+ev nedir? ev bir nesnedir.
+lale bir nesnedir.
+cam bir nesnedir.
+kitap bir nesnedir.
+ağaç bir nesnedir.
+kilo bir nesnedir.
+şehir bir nesnedir.
+fikir nedir? fikir bir nesnedir.
+resim nedir? resim bir nesnedir.
+ev nedir? ev bir nesnedir.
+para nedir? para bir nesnedir.
+dağ nedir? dağ bir nesnedir.
+ağaç bir nesnedir.
+ağaç bir nesnedir.
+kilo bir nesnedir.
+şehir bir nesnedir.
+kedi bir nesnedir.
+ışık bir nesnedir.
+jüri nedir? jüri bir nesnedir.
+para nedir? para bir nesnedir.
+dağ nedir? dağ bir nesnedir.
+masa nedir? masa bir nesnedir.
+cevap nedir? cevap bir nesnedir.
+lale nedir? lale bir nesnedir.
 ¬ ben okuyorsun.
 ben koşuyorum.
 ¬ iki eviniz.
@@ -84729,70 +86829,135 @@ burada sınavlar.
 burada çiçekler.
 burada camlar.
 tren bir nesnedir.
-öğrenci bir nesnedir.
-cevap bir nesnedir.
-gazete bir nesnedir.
-ağaç bir nesnedir.
-çiçek bir nesnedir.
-cam bir nesnedir.
-fil bir nesnedir.
-jeton bir nesnedir.
-kedi bir nesnedir.
-ağaç bir nesnedir.
-fikir bir nesnedir.
-hava bir nesnedir.
-kilo bir nesnedir.
-şehir bir nesnedir.
-ev bir nesnedir.
-güneş bir nesnedir.
-kedi bir nesnedir.
-ağaç bir nesnedir.
-dağ bir nesnedir.
-göz bir nesnedir.
-kağıt bir nesnedir.
 masa bir nesnedir.
-cevap bir nesnedir.
-gazete bir nesnedir.
+kağıt bir nesnedir.
+göz bir nesnedir.
+vapur nedir? vapur bir nesnedir.
+resim nedir? resim bir nesnedir.
+kilo nedir? kilo bir nesnedir.
+hava nedir? hava bir nesnedir.
+dağ bir nesnedir.
+ışık bir nesnedir.
+uçak bir nesnedir.
+jüri nedir? jüri bir nesnedir.
+fikir nedir? fikir bir nesnedir.
+ağaç nedir? ağaç bir nesnedir.
+yol nedir? yol bir nesnedir.
+kedi bir nesnedir.
+kedi bir nesnedir.
+güneş bir nesnedir.
+ev bir nesnedir.
+su nedir? su bir nesnedir.
+kitap nedir? kitap bir nesnedir.
+jeton nedir? jeton bir nesnedir.
+fil nedir? fil bir nesnedir.
+şehir bir nesnedir.
+vapur bir nesnedir.
+resim bir nesnedir.
+kilo bir nesnedir.
+cam nedir? cam bir nesnedir.
+çiçek nedir? çiçek bir nesnedir.
+sınav nedir? sınav bir nesnedir.
+lale nedir? lale bir nesnedir.
+hava bir nesnedir.
+fikir bir nesnedir.
+ağaç bir nesnedir.
+para nedir? para bir nesnedir.
+jüri nedir? jüri bir nesnedir.
+gazete nedir? gazete bir nesnedir.
+cevap nedir? cevap bir nesnedir.
+kedi bir nesnedir.
+su bir nesnedir.
+kitap bir nesnedir.
+jeton bir nesnedir.
+öğrenci nedir? öğrenci bir nesnedir.
+tren nedir? tren bir nesnedir.
+masa nedir? masa bir nesnedir.
+kağıt nedir? kağıt bir nesnedir.
+fil bir nesnedir.
+cam bir nesnedir.
+çiçek bir nesnedir.
+sınav bir nesnedir.
+göz nedir? göz bir nesnedir.
+dağ nedir? dağ bir nesnedir.
+ışık nedir? ışık bir nesnedir.
+ağaç bir nesnedir.
+lale bir nesnedir.
 jüri bir nesnedir.
-lale bir nesnedir.
-sınav bir nesnedir.
-fil bir nesnedir.
-jeton bir nesnedir.
-kitap bir nesnedir.
-su bir nesnedir.
 gazete bir nesnedir.
-hava bir nesnedir.
-kilo bir nesnedir.
-resim bir nesnedir.
-vapur bir nesnedir.
-güneş bir nesnedir.
-kedi bir nesnedir.
-para bir nesnedir.
-uçak bir nesnedir.
-ışık bir nesnedir.
-kağıt bir nesnedir.
-masa bir nesnedir.
-tren bir nesnedir.
+para nedir? para bir nesnedir.
+para nedir? para bir nesnedir.
+kedi nedir? kedi bir nesnedir.
+güneş nedir? güneş bir nesnedir.
+cevap bir nesnedir.
 öğrenci bir nesnedir.
-gazete bir nesnedir.
-lale bir nesnedir.
-sınav bir nesnedir.
-çiçek bir nesnedir.
-cam bir nesnedir.
-kitap bir nesnedir.
-su bir nesnedir.
-yol bir nesnedir.
-ağaç bir nesnedir.
-fikir bir nesnedir.
-resim bir nesnedir.
-vapur bir nesnedir.
-şehir bir nesnedir.
-ev bir nesnedir.
-kedi bir nesnedir.
-uçak bir nesnedir.
-ışık bir nesnedir.
-dağ bir nesnedir.
+tren bir nesnedir.
+masa bir nesnedir.
+ev nedir? ev bir nesnedir.
+şehir nedir? şehir bir nesnedir.
+vapur nedir? vapur bir nesnedir.
+resim nedir? resim bir nesnedir.
+kağıt bir nesnedir.
 göz bir nesnedir.
+dağ bir nesnedir.
+ışık bir nesnedir.
+kilo nedir? kilo bir nesnedir.
+hava nedir? hava bir nesnedir.
+fikir nedir? fikir bir nesnedir.
+ağaç bir nesnedir.
+uçak bir nesnedir.
+para bir nesnedir.
+kedi bir nesnedir.
+yol nedir? yol bir nesnedir.
+yol nedir? yol bir nesnedir.
+su nedir? su bir nesnedir.
+kitap nedir? kitap bir nesnedir.
+güneş bir nesnedir.
+ev bir nesnedir.
+şehir bir nesnedir.
+vapur bir nesnedir.
+jeton nedir? jeton bir nesnedir.
+fil nedir? fil bir nesnedir.
+cam nedir? cam bir nesnedir.
+çiçek nedir? çiçek bir nesnedir.
+resim bir nesnedir.
+kilo bir nesnedir.
+hava bir nesnedir.
+fikir bir nesnedir.
+sınav nedir? sınav bir nesnedir.
+lale nedir? lale bir nesnedir.
+jüri nedir? jüri bir nesnedir.
+gazete bir nesnedir.
+ağaç bir nesnedir.
+yol bir nesnedir.
+su bir nesnedir.
+yol nedir? yol bir nesnedir.
+cevap nedir? cevap bir nesnedir.
+öğrenci nedir? öğrenci bir nesnedir.
+tren nedir? tren bir nesnedir.
+kitap bir nesnedir.
+jeton bir nesnedir.
+fil bir nesnedir.
+cam bir nesnedir.
+masa nedir? masa bir nesnedir.
+kağıt nedir? kağıt bir nesnedir.
+göz nedir? göz bir nesnedir.
+dağ nedir? dağ bir nesnedir.
+çiçek bir nesnedir.
+sınav bir nesnedir.
+lale bir nesnedir.
+jüri nedir? jüri bir nesnedir.
+ışık nedir? ışık bir nesnedir.
+uçak nedir? uçak bir nesnedir.
+para nedir? para bir nesnedir.
+gazete bir nesnedir.
+gazete bir nesnedir.
+cevap bir nesnedir.
+öğrenci bir nesnedir.
+kedi nedir? kedi bir nesnedir.
+güneş nedir? güneş bir nesnedir.
+ev nedir? ev bir nesnedir.
+şehir nedir? şehir bir nesnedir.
 on eksi bir dokuz eder.
 ¬ ben okuyorsun.
 iki ev.
@@ -85128,67 +87293,132 @@ kedi bir nesnedir.
 resim bir nesnedir.
 kilo bir nesnedir.
 hava bir nesnedir.
-kilo bir nesnedir.
-hava bir nesnedir.
-fikir bir nesnedir.
-ağaç bir nesnedir.
+çiçek nedir? çiçek bir nesnedir.
+sınav nedir? sınav bir nesnedir.
+lale nedir? lale bir nesnedir.
+jüri nedir? jüri bir nesnedir.
 fikir bir nesnedir.
 ağaç bir nesnedir.
 yol bir nesnedir.
 su bir nesnedir.
-yol bir nesnedir.
-su bir nesnedir.
-kitap bir nesnedir.
-jeton bir nesnedir.
+gazete nedir? gazete bir nesnedir.
+cevap nedir? cevap bir nesnedir.
+öğrenci nedir? öğrenci bir nesnedir.
+tren nedir? tren bir nesnedir.
 kitap bir nesnedir.
 jeton bir nesnedir.
 fil bir nesnedir.
-gazete bir nesnedir.
-fil bir nesnedir.
-cam bir nesnedir.
-çiçek bir nesnedir.
+para nedir? para bir nesnedir.
+masa nedir? masa bir nesnedir.
+kağıt nedir? kağıt bir nesnedir.
+göz nedir? göz bir nesnedir.
 kedi bir nesnedir.
 çiçek bir nesnedir.
 sınav bir nesnedir.
 lale bir nesnedir.
-sınav bir nesnedir.
-lale bir nesnedir.
-jüri bir nesnedir.
-gazete bir nesnedir.
+dağ nedir? dağ bir nesnedir.
+ışık nedir? ışık bir nesnedir.
+uçak nedir? uçak bir nesnedir.
+para nedir? para bir nesnedir.
 jüri bir nesnedir.
 gazete bir nesnedir.
 cevap bir nesnedir.
 öğrenci bir nesnedir.
-cevap bir nesnedir.
-öğrenci bir nesnedir.
-tren bir nesnedir.
+kedi nedir? kedi bir nesnedir.
+güneş nedir? güneş bir nesnedir.
+ev nedir? ev bir nesnedir.
 ağaç bir nesnedir.
 tren bir nesnedir.
 masa bir nesnedir.
 kağıt bir nesnedir.
-gazete bir nesnedir.
-kağıt bir nesnedir.
-göz bir nesnedir.
-dağ bir nesnedir.
+para nedir? para bir nesnedir.
+vapur nedir? vapur bir nesnedir.
+resim nedir? resim bir nesnedir.
+kilo nedir? kilo bir nesnedir.
 göz bir nesnedir.
 dağ bir nesnedir.
 ışık bir nesnedir.
 uçak bir nesnedir.
-ışık bir nesnedir.
-uçak bir nesnedir.
-para bir nesnedir.
-kedi bir nesnedir.
+hava nedir? hava bir nesnedir.
+fikir nedir? fikir bir nesnedir.
+ağaç nedir? ağaç bir nesnedir.
+yol nedir? yol bir nesnedir.
 para bir nesnedir.
 kedi bir nesnedir.
 güneş bir nesnedir.
 ev bir nesnedir.
-güneş bir nesnedir.
-ev bir nesnedir.
-şehir bir nesnedir.
+su nedir? su bir nesnedir.
+kitap nedir? kitap bir nesnedir.
+jeton nedir? jeton bir nesnedir.
 ağaç bir nesnedir.
 şehir bir nesnedir.
 vapur bir nesnedir.
 resim bir nesnedir.
+yol nedir? yol bir nesnedir.
+cam nedir? cam bir nesnedir.
+çiçek nedir? çiçek bir nesnedir.
+sınav nedir? sınav bir nesnedir.
+kilo bir nesnedir.
+hava bir nesnedir.
+fikir bir nesnedir.
+ağaç bir nesnedir.
+lale nedir? lale bir nesnedir.
+jüri nedir? jüri bir nesnedir.
+gazete nedir? gazete bir nesnedir.
+cevap nedir? cevap bir nesnedir.
+yol bir nesnedir.
+su bir nesnedir.
+kitap bir nesnedir.
+jeton bir nesnedir.
+öğrenci nedir? öğrenci bir nesnedir.
+tren nedir? tren bir nesnedir.
+masa nedir? masa bir nesnedir.
+gazete bir nesnedir.
+fil bir nesnedir.
+cam bir nesnedir.
+çiçek bir nesnedir.
+yol nedir? yol bir nesnedir.
+göz nedir? göz bir nesnedir.
+dağ nedir? dağ bir nesnedir.
+ışık nedir? ışık bir nesnedir.
+sınav bir nesnedir.
+lale bir nesnedir.
+jüri bir nesnedir.
+gazete bir nesnedir.
+uçak nedir? uçak bir nesnedir.
+para nedir? para bir nesnedir.
+kedi nedir? kedi bir nesnedir.
+güneş nedir? güneş bir nesnedir.
+cevap bir nesnedir.
+öğrenci bir nesnedir.
+tren bir nesnedir.
+jüri nedir? jüri bir nesnedir.
+ev nedir? ev bir nesnedir.
+şehir nedir? şehir bir nesnedir.
+vapur nedir? vapur bir nesnedir.
+gazete bir nesnedir.
+kağıt bir nesnedir.
+göz bir nesnedir.
+dağ bir nesnedir.
+resim nedir? resim bir nesnedir.
+kilo nedir? kilo bir nesnedir.
+hava nedir? hava bir nesnedir.
+fikir nedir? fikir bir nesnedir.
+ışık bir nesnedir.
+uçak bir nesnedir.
+para bir nesnedir.
+kedi bir nesnedir.
+ağaç nedir? ağaç bir nesnedir.
+yol nedir? yol bir nesnedir.
+su nedir? su bir nesnedir.
+kitap nedir? kitap bir nesnedir.
+güneş bir nesnedir.
+ev bir nesnedir.
+şehir bir nesnedir.
+jüri nedir? jüri bir nesnedir.
+jeton nedir? jeton bir nesnedir.
+fil nedir? fil bir nesnedir.
+cam nedir? cam bir nesnedir.
 ¬ iki eviniz.
 beş kedi.
 ¬ ev artı kedi eder ?
@@ -85523,68 +87753,133 @@ burada şehirler.
 vapur bir nesnedir.
 dağ bir nesnedir.
 jüri bir nesnedir.
-kedi bir nesnedir.
-güneş bir nesnedir.
-masa bir nesnedir.
-çiçek bir nesnedir.
+yol nedir? yol bir nesnedir.
+su nedir? su bir nesnedir.
+şehir nedir? şehir bir nesnedir.
+göz nedir? göz bir nesnedir.
 kilo bir nesnedir.
 uçak bir nesnedir.
 cevap bir nesnedir.
-su bir nesnedir.
-şehir bir nesnedir.
-göz bir nesnedir.
-lale bir nesnedir.
+cevap nedir? cevap bir nesnedir.
+jeton nedir? jeton bir nesnedir.
+resim nedir? resim bir nesnedir.
+ışık nedir? ışık bir nesnedir.
 fikir bir nesnedir.
 kedi bir nesnedir.
 tren bir nesnedir.
-jeton bir nesnedir.
-resim bir nesnedir.
-ışık bir nesnedir.
+tren nedir? tren bir nesnedir.
+cam nedir? cam bir nesnedir.
+hava nedir? hava bir nesnedir.
 gazete bir nesnedir.
 yol bir nesnedir.
 ev bir nesnedir.
 kağıt bir nesnedir.
-cam bir nesnedir.
-hava bir nesnedir.
-para bir nesnedir.
+kağıt nedir? kağıt bir nesnedir.
+sınav nedir? sınav bir nesnedir.
+ağaç nedir? ağaç bir nesnedir.
 kedi bir nesnedir.
 kitap bir nesnedir.
 vapur bir nesnedir.
 dağ bir nesnedir.
-sınav bir nesnedir.
-ağaç bir nesnedir.
-güneş bir nesnedir.
+dağ nedir? dağ bir nesnedir.
+jüri nedir? jüri bir nesnedir.
+su nedir? su bir nesnedir.
 öğrenci bir nesnedir.
 fil bir nesnedir.
 kilo bir nesnedir.
-ağaç bir nesnedir.
-jüri bir nesnedir.
-su bir nesnedir.
-şehir bir nesnedir.
+jüri nedir? jüri bir nesnedir.
+uçak nedir? uçak bir nesnedir.
+cevap nedir? cevap bir nesnedir.
+jeton nedir? jeton bir nesnedir.
 masa bir nesnedir.
 çiçek bir nesnedir.
 fikir bir nesnedir.
-gazete bir nesnedir.
-cevap bir nesnedir.
-jeton bir nesnedir.
-resim bir nesnedir.
+para nedir? para bir nesnedir.
+kedi nedir? kedi bir nesnedir.
+tren nedir? tren bir nesnedir.
+cam nedir? cam bir nesnedir.
 göz bir nesnedir.
 lale bir nesnedir.
 yol bir nesnedir.
-kedi bir nesnedir.
-tren bir nesnedir.
-cam bir nesnedir.
-hava bir nesnedir.
+yol nedir? yol bir nesnedir.
+ev nedir? ev bir nesnedir.
+kağıt nedir? kağıt bir nesnedir.
+sınav nedir? sınav bir nesnedir.
 ışık bir nesnedir.
 gazete bir nesnedir.
 kitap bir nesnedir.
-ev bir nesnedir.
-kağıt bir nesnedir.
-sınav bir nesnedir.
+kitap nedir? kitap bir nesnedir.
+vapur nedir? vapur bir nesnedir.
+dağ nedir? dağ bir nesnedir.
 ağaç bir nesnedir.
 para bir nesnedir.
 öğrenci bir nesnedir.
 fil bir nesnedir.
+fil nedir? fil bir nesnedir.
+kilo nedir? kilo bir nesnedir.
+uçak nedir? uçak bir nesnedir.
+kedi bir nesnedir.
+güneş bir nesnedir.
+masa bir nesnedir.
+çiçek bir nesnedir.
+çiçek nedir? çiçek bir nesnedir.
+fikir nedir? fikir bir nesnedir.
+kedi nedir? kedi bir nesnedir.
+su bir nesnedir.
+şehir bir nesnedir.
+göz bir nesnedir.
+lale bir nesnedir.
+lale nedir? lale bir nesnedir.
+yol nedir? yol bir nesnedir.
+ev nedir? ev bir nesnedir.
+jeton bir nesnedir.
+resim bir nesnedir.
+ışık bir nesnedir.
+para nedir? para bir nesnedir.
+gazete nedir? gazete bir nesnedir.
+kitap nedir? kitap bir nesnedir.
+vapur nedir? vapur bir nesnedir.
+cam bir nesnedir.
+hava bir nesnedir.
+para bir nesnedir.
+yol nedir? yol bir nesnedir.
+öğrenci nedir? öğrenci bir nesnedir.
+fil nedir? fil bir nesnedir.
+kilo nedir? kilo bir nesnedir.
+sınav bir nesnedir.
+ağaç bir nesnedir.
+güneş bir nesnedir.
+güneş nedir? güneş bir nesnedir.
+masa nedir? masa bir nesnedir.
+çiçek nedir? çiçek bir nesnedir.
+ağaç bir nesnedir.
+jüri bir nesnedir.
+su bir nesnedir.
+şehir bir nesnedir.
+şehir nedir? şehir bir nesnedir.
+göz nedir? göz bir nesnedir.
+lale nedir? lale bir nesnedir.
+gazete bir nesnedir.
+cevap bir nesnedir.
+jeton bir nesnedir.
+resim bir nesnedir.
+resim nedir? resim bir nesnedir.
+ışık nedir? ışık bir nesnedir.
+gazete nedir? gazete bir nesnedir.
+kedi bir nesnedir.
+tren bir nesnedir.
+cam bir nesnedir.
+hava bir nesnedir.
+hava nedir? hava bir nesnedir.
+para nedir? para bir nesnedir.
+öğrenci nedir? öğrenci bir nesnedir.
+ev bir nesnedir.
+kağıt bir nesnedir.
+sınav bir nesnedir.
+jüri nedir? jüri bir nesnedir.
+ağaç nedir? ağaç bir nesnedir.
+güneş nedir? güneş bir nesnedir.
+masa nedir? masa bir nesnedir.
 ¬ ben okuyorsun.
 beş kedi.
 ¬ beş kediler.

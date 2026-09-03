@@ -350,7 +350,8 @@
       ],
       "instances_per_pass": 44,
       "templates": [
-        "{lex:noun_count:one} — це річ."
+        "{lex:noun_count:one} — це річ.",
+        "що таке {lex:noun_count:one}? {lex:noun_count:one} — це річ."
       ]
     },
     "refusals": {

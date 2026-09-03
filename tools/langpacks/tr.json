@@ -380,7 +380,8 @@
       ],
       "instances_per_pass": 62,
       "templates": [
-        "{lex:noun_count:one} bir nesnedir."
+        "{lex:noun_count:one} bir nesnedir.",
+        "{lex:noun_count:one} nedir? {lex:noun_count:one} bir nesnedir."
       ]
     },
     "refusals": {

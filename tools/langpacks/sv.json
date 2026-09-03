@@ -283,7 +283,8 @@
       ],
       "instances_per_pass": 38,
       "templates": [
-        "{lex:noun_count:one} är en sak."
+        "{lex:noun_count:one} är en sak.",
+        "vad är {lex:noun_count:one}? {lex:noun_count:one} är en sak."
       ]
     },
     "refusals": {
