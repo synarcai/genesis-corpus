@@ -90,6 +90,14 @@ for _где in (КОРЕНЬ / "courts", КОРЕНЬ / "tools", КОРЕНЬ / 
            "share_court", "compare_mult_court", "notationvar_court", "ruverbs_court", "script_court",
            "inquiry_pt_nl_court", "inquiry_pl_tr_court",
            "relation_court", "prosetree_court", "longdiv_court",
+           # ДОМА 03.09 (коллегия ста процентов): поиск, остатки и простые на
+           # языках, страницы денег и отношений, доли с процентами, цепочки на
+           # 29 языках, страницы действия — и АРИФМЕТИКА ЯЗЫКОВОГО ПЛАСТА,
+           # которая пересчитывает равенство, сказанное словами языка, вместо
+           # прежнего зачёта словарём (долг судимости 03.09)
+           "search_langs_court", "remainders_langs_court", "primes_langs_court",
+           "money_story_court", "relations_story_court", "shares_percent_court",
+           "chains_langs_court", "action_pages_court", "langmath_court",
            "metalang_court")
 
 

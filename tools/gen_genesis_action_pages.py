@@ -19,8 +19,8 @@ The house of action pages (tools/actionpages.py) holds the templates; the
 court reads them back and regenerates the page letter by letter.
 
 MASS FROM THE RULE (М-148, and the measured price of mass 03.09: depth-2
-chains are bought from mass 9, depth-3 from 20): twenty-five pages per
-language per pass — five per genus — on numbers that walk with strides coprime with the tables, so every
+chains are bought from mass 9, depth-3 from 20): forty pages per
+language per pass — five per genus, eight genera — on numbers that walk with strides coprime with the tables, so every
 genus has ≥ 20 pages per language over the five passes.
 """
 import pathlib
@@ -78,6 +78,33 @@ def язык_группа(шаг, язык):
         n = 2 + (шаг * 11 + i * 7 + j) % 30
         _добавить(вон, язык, "кратное", X=лица[a][0], Y=лица[b][0], Т=(шаг + i + 3) % вещей,
                               n=n, кратность=кратности[(шаг + i) % len(кратности)])
+        j += 1
+    # THREE GENERA FROM e9's PROFILE OF MUTENESS (03.09): the whole named by its
+    # PLACE and a part of it, a rate «every day» without money, and the sum said
+    # by «they» after the bearers are named — five pages each per pass
+    вещей_мест = len(F.ЯЗЫКИ[язык]["места"])
+    for i in range(5):
+        n = 40 * (3 + (шаг * 5 + i * 7 + j) % 20)
+        k = 5 * (1 + (шаг * 3 + i * 11 + j) % 15)
+        if k >= n:
+            k = n // 2
+        _добавить(вон, язык, "место", X=лица[0][0], Т=(шаг + i) % вещей, n=n, k=k,
+                  место=(шаг + i) % вещей_мест, свойство=(шаг * 2 + i) % len(F.ЯЗЫКИ[язык]["свойства"]))
+        j += 1
+    # the rate is asked BOTH ways, so each way keeps its own mass of twenty
+    for i in range(8):
+        X = лица[(шаг * 5 + i * 7 + 6) % len(лица)][0]
+        n = 5 * (2 + (шаг * 7 + i * 3 + j) % 30)
+        k = 2 + (шаг * 3 + i * 5 + j) % 12
+        за = i % 2 == 0
+        _добавить(вон, язык, "ставка", X=X, Т=(шаг + i + 5) % вещей, n=n, k=k, m=n * k,
+                  глагол_ставки=(шаг + i) % len(F.ЯЗЫКИ[язык]["ставки"]), дней=за)
+        j += 1
+    for i in range(5):
+        a = (шаг * 7 + i * 5 + 2) % len(лица); b = (a + 1 + (шаг + i) % (len(лица) - 1)) % len(лица)
+        n = 3 + (шаг * 11 + i * 7 + j) % 60
+        m = 3 + (шаг * 5 + i * 13 + j) % 60
+        _добавить(вон, язык, "вместе_они", X=лица[a][0], Y=лица[b][0], Т=(шаг + i + 6) % вещей, n=n, m=m)
         j += 1
     return вон
 
