@@ -28,11 +28,10 @@ from layer import emit_grouped  # noqa: E402
 ШИРИНА = 16
 
 
-def выражение(шаг, i):
-    """(expression, value) — the four operations in turn, exact division."""
+def выражение(шаг, i, оп):
+    """(expression, value) of operation оп (0..3), exact division."""
     a = 3 + (шаг * 7 + i * 5) % 40
     b = 2 + (шаг * 3 + i * 11) % 12
-    оп = (шаг + i) % 4
     if оп == 0:
         return f"{a} + {b}", a + b
     if оп == 1:
@@ -45,11 +44,16 @@ def выражение(шаг, i):
 
 
 def язык_группа(шаг, язык):
+    """EVERY FORM MEETS EVERY OPERATION (holon 04.09: with form and operation
+    both cycling by шаг + i, «what is the result of …» met only «−» and the
+    head was bought for subtraction alone): the show index k walks the
+    forms, k ÷ forms walks the operations."""
     формы = paraphrase.формы(язык, "value")
     вон = []
     for i in range(ШИРИНА):
-        в, з = выражение(шаг, i)
-        форма = формы[(шаг + i) % len(формы)]
+        k = шаг * ШИРИНА + i
+        форма = формы[k % len(формы)]
+        в, з = выражение(шаг, i, (k // len(формы)) % 4)
         вон.append(f"{форма.format(в)} {в} = {з}.")
     return вон
 
