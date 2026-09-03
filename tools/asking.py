@@ -353,10 +353,17 @@ def зачин_объявлен(вопрос):
     # не спрашивается: вопрос, начатый формулой, есть вопрос о предмете,
     # и дом о нём молчит (inquiry_de_fr: «f(x) = x × 0 est-elle injective
     # sur 1, 2, 3 ?» — 60 честных строк роняла первая редакция).
+    предметом = any(н and not СЛОВО_ЗАЧИНА.fullmatch(н) for н in начала)
     начала = [н for н in начала if н and СЛОВО_ЗАЧИНА.fullmatch(н)]
     if not начала:
         return None  # только числа, формулы, знаки — предмет, не зачин
     if any(н in ЗАЧИНЫ for н in начала):
+        return True
+    # A CLAUSE OPENED BY THE SUBJECT NAMES ITS QUESTION WORD INSIDE (03.09:
+    # «35 — это 70 процентов какого числа?» — the dash is the copula, the
+    # question word stands at the end): the opener is then not the place, but
+    # the word must still be a DECLARED one — «какго» is caught as before
+    if предметом and {w.strip(_КРАЙ).lower() for w in вопрос.split()} & ЗАЧИНЫ:
         return True
     слова_вопроса = {w.strip(_КРАЙ).lower() for w in вопрос.split()}
     # AN INVERSION IS BOUND TO ITS VERB AND STANDS WHERE THE VERB STANDS

@@ -328,6 +328,29 @@
       ]
     },
     {
+      "name": "shares_percent",
+      "file": "datasets/genesis_shares_percent.txt",
+      "genre": "SHARES AND PERCENTS OVER QUANTITIES — GENUS 2 OF THE g1 BAND (holon's word 03.09, G1-ATTACK): five forms whose ledger is a chain of primitives whole on the axis, en/ru/de — «what is two thirds of 24? two thirds of 24 is 16: 24 ÷ 3 = 8, 8 × 2 = 16.» (denominators 2..10 and numerators in words, ONE frame for every word of the fraction), «what is 40 percent of 220? 40 percent of 220 is 88: 220 × 40 = 8800, 8800 ÷ 100 = 88.» (the hundred divided last, never a fraction on the axis), the complement «three quarters of the pupils have a pen; 20 do not. how many pupils are there? 20 is one quarter of 80: 4 − 3 = 1, 20 ÷ 1 = 20, 20 × 4 = 80.», the number from its share «two thirds of a number is 16. what is the number? 16 is two thirds of 24: 16 ÷ 2 = 8, 8 × 3 = 24.», the number from its percent «12 is 40 percent of what number? 12 is 40 percent of 30: 12 × 100 = 1200, 1200 ÷ 40 = 30.»; ru («сколько будет две трети от 24? …», «три четверти учеников имеют ручку; 20 не имеют. …», «две трети числа равны 16. …» — связка согласована с числителем) and de («was sind zwei Drittel von 24? …», «ein Drittel einer Zahl ist 12. …» — the share takes its article); the house of share and percent phrases (tools/fracforms.py) reads its templates through tools/phrases.py, the court reads the fraction word back to its numbers and recomputes",
+      "act": [
+        "recount",
+        "translate"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "geometry_langs",
       "file": "datasets/genesis_geometry_langs.txt",
       "genre": "AREA AND PERIMETER IN EIGHT LANGUAGES (the owner's word: every language in surplus; the geometry world says them in en/ru): the four facts of the geometry world — the area and the perimeter of a rectangle, the perimeter and the area of a square — as statement and as question answered by the statement (М-153), with the geometry world's ledger: «ein Rechteck 7 mal 8 hat die Fläche 7 × 8 = 56.», «wie groß ist der Umfang eines Rechtecks 3 mal 4? ein Rechteck 3 mal 4 hat den Umfang 3 + 4 = 7, 2 × 7 = 14.», «un carré de côté 4 a un périmètre de 4 × 4 = 16.», «¿cuál es el área de un cuadrado de lado 5? un cuadrado de lado 5 tiene área 5 × 5 = 25.», «qual è il perimetro …», «qual é a área …», «wat is de omtrek van een rechthoek 3 bij 4? …», «jakie jest pole prostokąta 2 na 3? prostokąt 2 na 3 ma pole 2 × 3 = 6.», «kenarları 7 ve 8 olan dikdörtgenin çevresi: 7 + 8 = 15, 2 × 15 = 30.»; the house of geometry phrases (tools/geoforms.py) holds the phrases with holes, the court turns the same phrases into patterns and recomputes every ledger",
@@ -3602,10 +3625,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 14191216,
+      "size": 14297147,
       "tiers": [],
       "text": "mix",
-      "lines": 202690
+      "lines": 203410
     },
     {
       "name": "full",
@@ -3620,10 +3643,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 18674285,
+      "size": 18780216,
       "tiers": [],
       "text": "mix",
-      "lines": 276027
+      "lines": 276747
     },
     {
       "name": "selfmeasure",
