@@ -240,7 +240,8 @@
         "{n} + {m} = {sum}.",
         "{num:sum} minus {num:m} blir {num:n}.",
         "{num:n} gånger {num:m} blir {num:prod}.",
-        "{num:prod} delat {num:m} blir {num:n}."
+        "{num:prod} delat {num:m} blir {num:n}.",
+        "hur mycket är {num:n} plus {num:m}? {num:n} plus {num:m} blir {num:sum}."
       ]
     },
     "conjugation": {

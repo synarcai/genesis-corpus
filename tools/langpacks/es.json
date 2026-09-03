@@ -326,7 +326,8 @@
         "{n} + {m} = {sum}.",
         "{num:sum} menos {num:m} es {num:n}.",
         "{num:n} por {num:m} es {num:prod}.",
-        "{num:prod} entre {num:m} es {num:n}."
+        "{num:prod} entre {num:m} es {num:n}.",
+        "¿cuánto es {num:n} más {num:m}? {num:n} más {num:m} es {num:sum}."
       ]
     },
     "conjugation": {

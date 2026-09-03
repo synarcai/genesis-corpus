@@ -239,7 +239,8 @@
         "{n} + {m} = {sum}.",
         "{num:sum} minus {num:m} equals {num:n}.",
         "{num:n} times {num:m} equals {num:prod}.",
-        "{num:prod} over {num:m} equals {num:n}."
+        "{num:prod} over {num:m} equals {num:n}.",
+        "what is {num:n} plus {num:m}? {num:n} plus {num:m} equals {num:sum}."
       ]
     },
     "counting": {

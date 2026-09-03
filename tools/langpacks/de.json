@@ -495,7 +495,8 @@
         "{n} + {m} = {sum}.",
         "{num:sum} minus {num:m} gleich {num:n}.",
         "{num:n} mal {num:m} gleich {num:prod}.",
-        "{num:prod} durch {num:m} gleich {num:n}."
+        "{num:prod} durch {num:m} gleich {num:n}.",
+        "was ist {num:n} plus {num:m}? {num:n} plus {num:m} gleich {num:sum}."
       ]
     },
     "case_frames": {

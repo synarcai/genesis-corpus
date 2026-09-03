@@ -269,7 +269,8 @@
         "{n} + {m} = {sum}.",
         "{num:sum} min {num:m} is {num:n}.",
         "{num:n} keer {num:m} is {num:prod}.",
-        "{num:prod} gedeeld {num:m} is {num:n}."
+        "{num:prod} gedeeld {num:m} is {num:n}.",
+        "hoeveel is {num:n} plus {num:m}? {num:n} plus {num:m} is {num:sum}."
       ]
     },
     "conjugation": {

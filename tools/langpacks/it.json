@@ -307,7 +307,8 @@
         "{n} + {m} = {sum}.",
         "{num:sum} meno {num:m} fa {num:n}.",
         "{num:n} per {num:m} fa {num:prod}.",
-        "{num:prod} diviso {num:m} fa {num:n}."
+        "{num:prod} diviso {num:m} fa {num:n}.",
+        "quanto fa {num:n} più {num:m}? {num:n} più {num:m} fa {num:sum}."
       ]
     },
     "conjugation": {

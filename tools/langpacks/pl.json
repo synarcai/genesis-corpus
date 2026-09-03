@@ -296,7 +296,8 @@
         "{n} + {m} = {sum}.",
         "{num:sum} minus {num:m} równa {num:n}.",
         "{num:n} razy {num:m} równa {num:prod}.",
-        "{num:prod} podzielone {num:m} równa {num:n}."
+        "{num:prod} podzielone {num:m} równa {num:n}.",
+        "ile to {num:n} plus {num:m}? {num:n} plus {num:m} równa {num:sum}."
       ]
     },
     "conjugation": {

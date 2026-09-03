@@ -337,7 +337,8 @@
         "{n} + {m} = {sum}.",
         "{num:sum} eksi {num:m} eder {num:n}.",
         "{num:n} çarpı {num:m} eder {num:prod}.",
-        "{num:prod} bölü {num:m} eder {num:n}."
+        "{num:prod} bölü {num:m} eder {num:n}.",
+        "{num:n} artı {num:m} toplamı kaç? {num:n} artı {num:m} eder {num:sum}."
       ]
     },
     "conjugation": {

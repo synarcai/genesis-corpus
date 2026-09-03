@@ -338,7 +338,8 @@
         "{n} + {m} = {sum}.",
         "{num:sum} минус {num:m} равно {num:n}.",
         "{num:n} умножить на {num:m} равно {num:prod}.",
-        "{num:prod} делить {num:m} равно {num:n}."
+        "{num:prod} делить {num:m} равно {num:n}.",
+        "сколько будет {num:n} плюс {num:m}? {num:n} плюс {num:m} равно {num:sum}."
       ],
       "ops": {
         "плюс": "+",

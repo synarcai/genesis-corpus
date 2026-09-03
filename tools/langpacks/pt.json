@@ -319,7 +319,8 @@
         "{n} + {m} = {sum}.",
         "{num:sum} menos {num:m} é {num:n}.",
         "{num:n} vezes {num:m} é {num:prod}.",
-        "{num:prod} dividido {num:m} é {num:n}."
+        "{num:prod} dividido {num:m} é {num:n}.",
+        "quanto é {num:n} mais {num:m}? {num:n} mais {num:m} é {num:sum}."
       ]
     },
     "conjugation": {
