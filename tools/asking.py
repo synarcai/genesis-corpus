@@ -280,6 +280,10 @@ def зачин_объявлен(вопрос):
         счёт = {}
     верх = max(счёт.values(), default=0)
     кандидаты = [л for л, v in счёт.items() if v == верх and верх > 0]
+    if not кандидаты and not КИРИЛЛИЦА.search(вопрос) and ДИАКРИТИКА.search(вопрос):
+        # a diacritic question with no sign of any language («quant dá 9 + 10?»):
+        # every declared front-position language is a candidate
+        кандидаты = [л for л, (_, поз) in ЗАЧИНЫ_ПО_ЯЗЫКУ.items() if поз != "end" and л not in ("en", "ru")]
     # THE LANGUAGES TIED AT THE TOP OF THE SIGN ARE ALL CANDIDATES: the
     # question is judged by the union of their openers — a Portuguese
     # question that ties with Spanish is not judged by Spanish alone.

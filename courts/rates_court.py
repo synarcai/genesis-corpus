@@ -180,7 +180,22 @@ def _отношение(крупно, мелко):
     return units.отношение(имя_к, имя_м)
 
 
-def судить(строка):
+import closedworld  # noqa: E402
+from closedworld import Слой  # noqa: E402 — the palata hands the world's name
+# THE RATES WORLD IS CLOSED: every honest line of it is a shape of this court
+# (measured 04.09: 760 of 760), so a line of that world this court does not
+# recognise is a lie, not silence («th book costs …», «he ha 56 dollars …»).
+ЗАМКНУТЫЕ_МИРЫ = frozenset({"rates"})
+
+
+def судить(строка, слой=None):
+    вердикт = _судить(строка)
+    if вердикт[0] is False and closedworld.замкнут(слой, ЗАМКНУТЫЕ_МИРЫ) and строка.strip() and not строка.startswith("\x0c"):
+        return True, False
+    return вердикт
+
+
+def _судить(строка):
     """(судимо, истинно) для одной строки."""
     с = строка.strip()
     if not с:
