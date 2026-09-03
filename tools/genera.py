@@ -78,6 +78,10 @@ from rugram import ПО_ФОРМЕ  # noqa: E402
          # «how many edges does graph … have?» (03.09).
          "mathspaces",
          "inquiry_es_it", "arith", "episode", "algo", "number", "sequence", "geometry",
+         # СУД ДЕНЕГ пересчитывает центы, мосты и сдачу сам (04.09, 50 строк
+         # по замеру суда родов); СУД ДЫР пересчитывает ответ «сколько» из
+         # факта-фрейма (04.09).
+         "money", "holes",
          "linalg", "statistics", "program", "compsci", "unit",
          "notation", "formula", "physlaw", "physics", "calendar",
          "speech", "case", "valence", "cyber", "machine", "proof"}),

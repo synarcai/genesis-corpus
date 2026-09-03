@@ -52,13 +52,24 @@ import units  # noqa: E402
 # неразобранное не оттого, что их нечем проверить, а оттого, что
 # образец требовал буквы там, где корпус согласует форму. Формы
 # сводятся органом — тем же, что уже сводит их в агрегатах.
+# ЗВЕНО ПРИ ИТОГЕ НЕОБЯЗАТЕЛЬНО И ПЕРЕСЧИТЫВАЕТСЯ: «omar keeps 6 crates:
+# 9 − 3 = 6.» (звенья быта 03.09) — без этого хвоста 690 страниц items
+# читал один суд форм, а не хозяин счёта (суд родов 04.09).
+ЗВЕНО_ИТОГА = r"(?:: (\d+) ([+−]) (\d+) = (\d+))?"
 ПРИБАВЛЕНИЕ = re.compile(
     rf"^({С}) {С} (\d+) ({С})\. \1 {С} (\d+) ({С}) more\. "
-    rf"how many ({С}) does \1 \w+( \w+)?\? \1 \w+ (\d+) ({С})\.$")
+    rf"how many ({С}) does \1 \w+( \w+)?\? \1 \w+ (\d+) ({С}){ЗВЕНО_ИТОГА}\.$")
 УБАВЛЕНИЕ = re.compile(
     rf"^({С}) {С} (\d+) ({С})\. \1 {С} (\d+) ({С})( away)?\. "
     rf"how many ({С}) does \1 (?:keep|still know)\? "
-    rf"\1 \w+ (\d+) ({С})\.$")
+    rf"\1 \w+ (\d+) ({С}){ЗВЕНО_ИТОГА}\.$")
+
+
+def _звено_итога(m, a, b, знак, итог):
+    """The optional link after the total names the same operation."""
+    if m.group(10) is None:
+        return True
+    return (int(m.group(10)), m.group(11), int(m.group(12)), int(m.group(13))) == (a, знак, b, итог)
 # ПРЕДМЕТ СОГЛАСУЕТСЯ ПО СЧЁТУ, и обратная ссылка на него ЛОЖНА:
 # «felix has 1 balloon» рядом с «carla has 5 balloons» — одна и та же
 # вещь в двух формах, и суд, требующий буквального совпадения, объявил
@@ -851,12 +862,12 @@ def судить(строка, слой=None):
     if m:
         a, b, итог = int(m.group(2)), int(m.group(4)), int(m.group(8))
         вещи = {singular(m.group(i)) for i in (3, 5, 6, 9)}
-        return True, len(вещи) == 1 and a + b == итог
+        return True, len(вещи) == 1 and a + b == итог and _звено_итога(m, a, b, "+", итог)
     m = УБАВЛЕНИЕ.match(с)
     if m:
         a, b, итог = int(m.group(2)), int(m.group(4)), int(m.group(8))
         вещи = {singular(m.group(i)) for i in (3, 5, 7, 9)}
-        return True, len(вещи) == 1 and a - b == итог
+        return True, len(вещи) == 1 and a - b == итог and _звено_итога(m, a, b, "−", итог)
     m = АГРЕГАТ3.match(с)
     if m:
         вещи = {singular(m.group(i)) for i in (3, 6, 9, 10, 12)}
