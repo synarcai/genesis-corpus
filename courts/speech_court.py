@@ -122,6 +122,11 @@ def счёта_нет(строка):
     r"^(?:что следует из того, что (\d+) делится на (\d+)\? (\d+) (кратно \d+|чётно)"
     r"|what follows from (\d+) being divisible by (\d+)\? (\d+) "
     r"(is a multiple of \d+|is even))\.$")
+# ИЗ ЛОЖНОЙ ПОСЫЛКИ НЕ СЛЕДУЕТ НИЧЕГО — та же рамка вопроса, слово вердикта
+# «ничего» и основание, которое суд делит сам.
+НЕ_СЛЕДУЕТ = re.compile(
+    r"^(?:что следует из того, что (\d+) делится на (\d+)\? ничего: (\d+) не делится на (\d+)"
+    r"|what follows from (\d+) being divisible by (\d+)\? nothing: (\d+) is not divisible by (\d+))\.$")
 КОТОРЫЙ = re.compile(
     r"^(\d+) (?:есть число, которое делится на|"
     r"is a number that is divisible by) (\d+)\. (\d+) ÷ (\d+) = (\d+)\.$")
@@ -335,6 +340,10 @@ def судить(строка, слой=None):
             return (True, False) if слой is not None and слой.лица("ru") else (False, True)
         return True, (объявлено[0] == мест
                       and int(было) - int(ушло) == int(стало))
+    m = НЕ_СЛЕДУЕТ.match(с)
+    if m:
+        n, d, n2, d2 = (int(x) for x in m.groups() if x is not None)
+        return True, (n, d) == (n2, d2) and d > 0 and n % d != 0
     m = ЗНАЧИТ.match(с) or СЛЕДУЕТ.match(с)
     if m:
         г = [x for x in m.groups() if x is not None]
