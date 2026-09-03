@@ -1226,6 +1226,14 @@ def люди_ролями(шаг):
         вон.append(f"{ру1} и {ру2} вместе зовутся {ру_целое}.")
         вон.append(f"кто такие {ру_целое}? {ру1} и {ру2} вместе "
                    f"зовутся {ру_целое}.")
+    # THE CLASS AS A LIST, ONE LINE (holon 04.09: «кто такие люди?» answered
+    # by fifty different pairs — all true, the tellings diverging by content;
+    # the genus «members of a class» wants the class shown whole).
+    for целое, ру_целое in dict((ц, рц) for _1, _2, ц, _3, _4, рц in РОЛИ).items():
+        en = list(dict.fromkeys(ч for ч1, ч2, ц, *_ in РОЛИ if ц == целое for ч in (ч1, ч2)))
+        ru = list(dict.fromkeys(р for _1, _2, ц, р1, р2, _рц in РОЛИ if ц == целое for р in (р1, р2)))
+        вон.append(f"{множественное(целое)}: {', '.join(en)}.")
+        вон.append(f"{ру_целое}: {', '.join(ru)}.")
     члены = [en for en, _ru in СЕМЬЯ]
     члены_ru = [ru for _en, ru in СЕМЬЯ]
     вон.append(f"the family has a {члены[0]}, a {члены[1]} and a "
