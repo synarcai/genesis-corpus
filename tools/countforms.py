@@ -34,12 +34,21 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
     "en": dict(
         рамки=("the trip takes {n} {Е}.", "the meeting lasts {n} {Е}.",
                "the work took {n} {Е}.", "the child waited {n} {Е}."),
+        # ВОПРОС О ДЛИТЕЛЬНОСТИ — ВТОРАЯ ПОВЕРХНОСТЬ ТОЙ ЖЕ РАМКИ (прибор
+        # широты вопроса, 03.09: мир, говорящий только утверждениями, учит
+        # отвечать молчанием). Спрашивается та же единица тем же счётом.
+        вопросы=("how long does the trip take?", "how long does the meeting last?",
+                 "how long did the work take?", "how long did the child wait?"),
+        ответ="{n} {Е}.",
         единицы=(("day", "days"), ("hour", "hours"), ("week", "weeks"),
                  ("month", "months"), ("year", "years"), ("minute", "minutes")),
     ),
     "ru": dict(
         рамки=("поездка длится {n} {Е}.", "встреча длится {n} {Е}.",
                "работа заняла {n} {Е}.", "ребёнок ждал {n} {Е}."),
+        вопросы=("сколько длится поездка?", "сколько длится встреча?",
+                 "сколько заняла работа?", "сколько ждал ребёнок?"),
+        ответ="{n} {Е}.",
         единицы=(("день", "дня", "дней"), ("час", "часа", "часов"),
                  ("неделя", "недели", "недель"), ("месяц", "месяца", "месяцев"),
                  ("год", "года", "лет"), ("минута", "минуты", "минут")),
@@ -47,6 +56,9 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
     "de": dict(
         рамки=("die Reise dauert {n} {Е}.", "das Treffen dauert {n} {Е}.",
                "die Arbeit dauerte {n} {Е}.", "das Kind wartete {n} {Е}."),
+        вопросы=("wie lange dauert die Reise?", "wie lange dauert das Treffen?",
+                 "wie lange dauerte die Arbeit?", "wie lange wartete das Kind?"),
+        ответ="{n} {Е}.",
         единицы=(("Tag", "Tage"), ("Stunde", "Stunden"), ("Woche", "Wochen"),
                  ("Monat", "Monate"), ("Jahr", "Jahre"), ("Minute", "Minuten")),
     ),
@@ -78,6 +90,16 @@ def показ(язык, рамка, единица):
     return "\n".join(ш.format(n=n, Е=форма(язык, единица, n)) for n in СЧЁТЫ)
 
 
+def показ_вопросом(язык, рамка, единица, n):
+    """«the trip takes 3 days. how long does the trip take? 3 days.» — тот же
+    факт, спрошенный в той же строке: без вопросной поверхности мир учит
+    отвечать молчанием (прибор широты вопроса)."""
+    я = ЯЗЫКИ[язык]
+    е = форма(язык, единица, n)
+    return (f"{я['рамки'][рамка].format(n=n, Е=е)} {я['вопросы'][рамка]} "
+            f"{я['ответ'].format(n=n, Е=е)}")
+
+
 def _все():
     вон = {}
     for язык, я in ЯЗЫКИ.items():
@@ -86,6 +108,7 @@ def _все():
                 for n in СЧЁТЫ:
                     строка = я["рамки"][рамка].format(n=n, Е=форма(язык, единица, n))
                     вон[строка] = (язык, рамка, единица, n)
+                    вон[показ_вопросом(язык, рамка, единица, n)] = (язык, рамка, единица, n)
     return вон
 
 
@@ -97,8 +120,12 @@ def _образцы():
     for язык, я in ЯЗЫКИ.items():
         формы = sorted({ф for пара in я["единицы"] for ф in пара}, key=len, reverse=True)
         Е = "(?:" + "|".join(map(re.escape, формы)) + ")"
-        for ш in я["рамки"]:
-            вон.append(re.compile("^" + re.escape(ш).replace(r"\{n\}", r"\d+").replace(r"\{Е\}", Е) + "$"))
+        for i, ш in enumerate(я["рамки"]):
+            тело = re.escape(ш).replace(r"\{n\}", r"\d+").replace(r"\{Е\}", Е)
+            вон.append(re.compile("^" + тело + "$"))
+            воп = re.escape(я["вопросы"][i])
+            хвост = re.escape(я["ответ"]).replace(r"\{n\}", r"\d+").replace(r"\{Е\}", Е)
+            вон.append(re.compile("^" + тело + " " + воп + " " + хвост + "$"))
     return вон
 
 
