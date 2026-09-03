@@ -10,7 +10,14 @@ import physforms as F  # noqa: E402
 ПРАВИЛА = {язык: F.образцы(язык) for язык in F.ЯЗЫКИ}
 
 
-def судить(строка):
+import closedworld  # noqa: E402
+from closedworld import Слой  # noqa: E402 — the palata hands the world's name
+# THE WORLD IS CLOSED: every honest line of «physics_langs» is a shape of this court
+# (measured 04.09), so a line of it this court does not recognise is a lie.
+ЗАМКНУТЫЕ_МИРЫ = frozenset({"physics_langs"})
+
+
+def _судить(строка):
     с = строка.strip()
     for язык, правила in ПРАВИЛА.items():
         for образец, вид, спрошено in правила:
@@ -19,6 +26,9 @@ def судить(строка):
                 return True, F.судить_группы(язык, вид, спрошено, м.groups())
     return False, False
 
+
+
+судить = closedworld.замкнуть(_судить, ЗАМКНУТЫЕ_МИРЫ)
 
 def main():
     import collections

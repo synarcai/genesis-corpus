@@ -129,7 +129,14 @@ def _открыть(о):
 ВЕЩИ_RU = frozenset(в[2] for в in _дом.ВЕЩИ)
 
 
-def судить(строка):
+import closedworld  # noqa: E402
+from closedworld import Слой  # noqa: E402 — the palata hands the world's name
+# THE WORLD IS CLOSED: every honest line of «money» is a shape of this court
+# (measured 04.09), so a line of it this court does not recognise is a lie.
+ЗАМКНУТЫЕ_МИРЫ = frozenset({"money"})
+
+
+def _судить(строка):
     """(судимо, истинно) для одной строки."""
     с = строка.strip()
     for образец, судья in ПРАВИЛА:
@@ -150,6 +157,9 @@ def судить(строка):
         return True, False
     return False, False
 
+
+
+судить = closedworld.замкнуть(_судить, ЗАМКНУТЫЕ_МИРЫ)
 
 def main():
     import collections

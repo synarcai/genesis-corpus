@@ -42,3 +42,18 @@ class Слой:
 def замкнут(слой, миры):
     """Is the file being judged one of the court's closed worlds?"""
     return слой is not None and getattr(слой, "мир", None) in миры
+
+
+def замкнуть(судить_, миры):
+    """The court's judge wrapped by the law: silence on a line of a closed
+    world becomes a lie. The palata passes the layer when the court exports
+    `Слой` (import it from here beside this call)."""
+    миры = frozenset(миры)
+
+    def судить(строка, слой=None):
+        вердикт = судить_(строка)
+        if вердикт[0] is False and замкнут(слой, миры) and строка.strip() and not строка.startswith("\x0c"):
+            return True, False
+        return вердикт
+    судить.__wrapped__ = судить_
+    return судить
