@@ -67,6 +67,14 @@ def _числительные(язык):
         повтори="say that again, please. i repeat: {X} has {n} {Тn}.",
         объясни="i do not understand, explain. i explain: {X} had {n}, gave away {k}, and has {r} left: {л}",
         а_союз="and {Y}? {Y} has {m} {Тm}.",
+        # ВТОРАЯ ПОВЕРХНОСТЬ ЖИЛА ТОЛЬКО ПО-АНГЛИЙСКИ, и это нашёл прибор
+        # щербатости (форма × язык): «объясни2» и «наоборот2» стояли на одном
+        # языке из девяти — не по закону, а по недосмотру, и потому дописаны
+        # на все девять. Вариация у каждой своя и естественная: у объяснения
+        # переставлена вежливость («объясни, пожалуйста: я не понял»), у
+        # обращения — голова вопроса («что если наоборот?» при «а если
+        # наоборот?»). Вторая поверхность есть то, чем рынок отличает ФОРМУ от
+        # строки; одна на девять языков этого не даёт.
         объясни2="i don't understand, explain. i explain: {X} had {n}, gave away {k}, and has {r} left: {л}",
         наоборот2="{X} has {n} {Тn}, {Y} has {m} {Тm}. and if it were the other way round? then {X} would have {m} {Тm} and {Y} would have {n} {Тn}.",
         счёт_да="is it true that {A} times {B} is {C}? yes, {A} times {B} is {C}: {a} × {b} = {c}.",
@@ -83,6 +91,8 @@ def _числительные(язык):
         получил="{X} получил{а} {k} {Твk}.",
         почему_голый="почему? потому что было {n}, а отдано {k}: {л}",
         а_у="сколько у {Yр}? у {Yр} {m} {Тm}.",
+        наоборот2="у {Xр} {n} {Тn}, у {Yр} {m} {Тm}. что если наоборот? тогда у {Xр} {m} {Тm}, а у {Yр} {n} {Тn}.",
+        объясни2="объясни, пожалуйста: я не понял. объясняю: было {n}, отдано {k}, осталось {r}: {л}",
         наоборот="у {Xр} {n} {Тn}, у {Yр} {m} {Тm}. а если наоборот? тогда у {Xр} {m} {Тm}, а у {Yр} {n} {Тn}.",
         повтори="повтори, пожалуйста. повторяю: у {Xр} {n} {Тn}.",
         объясни="я не понял, объясни. объясняю: было {n}, отдано {k}, осталось {r}: {л}",
@@ -101,6 +111,8 @@ def _числительные(язык):
         получил="{X} bekam {k} {Тk}.",
         почему_голый="warum? weil {X} {n} hatte und {k} weggab: {л}",
         а_у="wie viele hat {Y}? {Y} hat {m} {Тm}.",
+        наоборот2="{X} hat {n} {Тn}, {Y} hat {m} {Тm}. was wäre, wenn es umgekehrt wäre? dann hätte {X} {m} {Тm} und {Y} {n} {Тn}.",
+        объясни2="erkläre es bitte: ich habe es nicht verstanden. ich erkläre: es waren {n}, {k} wurden weggegeben, es bleiben {r}: {л}",
         наоборот="{X} hat {n} {Тn}, {Y} hat {m} {Тm}. und wenn es umgekehrt wäre? dann hätte {X} {m} {Тm} und {Y} {n} {Тn}.",
         повтори="sag das bitte noch einmal. ich wiederhole: {X} hat {n} {Тn}.",
         объясни="ich habe es nicht verstanden, erkläre es. ich erkläre: es waren {n}, {k} wurden weggegeben, es bleiben {r}: {л}",
@@ -119,6 +131,8 @@ def _числительные(язык):
         получил="{X} recibió {k} {Тk}.",
         почему_голый="¿por qué? porque {X} tenía {n} y dio {k}: {л}",
         а_у="¿cuántas tiene {Y}? {Y} tiene {m} {Тm}.",
+        наоборот2="{X} tiene {n} {Тn}, {Y} tiene {m} {Тm}. ¿qué pasaría si fuera al revés? entonces {X} tendría {m} {Тm} y {Y} tendría {n} {Тn}.",
+        объясни2="explícalo, por favor: no lo he entendido. explico: había {n}, se dieron {k}, quedan {r}: {л}",
         наоборот="{X} tiene {n} {Тn}, {Y} tiene {m} {Тm}. ¿y si fuera al revés? entonces {X} tendría {m} {Тm} y {Y} tendría {n} {Тn}.",
         повтори="repite, por favor. repito: {X} tiene {n} {Тn}.",
         объясни="no lo he entendido, explícalo. explico: había {n}, se dieron {k}, quedan {r}: {л}",
@@ -137,6 +151,8 @@ def _числительные(язык):
         получил="{X} a reçu {k} {Тk}.",
         почему_голый="pourquoi ? parce que {X} en avait {n} et en a donné {k} : {л}",
         а_у="combien en a {Y} ? {Y} a {m} {Тm}.",
+        наоборот2="{X} a {n} {Тn}, {Y} a {m} {Тm}. que se passerait-il si c'était l'inverse ? alors {X} aurait {m} {Тm} et {Y} aurait {n} {Тn}.",
+        объясни2="explique, s'il te plaît : je n'ai pas compris. j'explique : il y en avait {n}, {k} ont été donnés, il en reste {r} : {л}",
         наоборот="{X} a {n} {Тn}, {Y} a {m} {Тm}. et si c'était l'inverse ? alors {X} aurait {m} {Тm} et {Y} aurait {n} {Тn}.",
         повтори="répète, s'il te plaît. je répète : {X} a {n} {Тn}.",
         объясни="je n'ai pas compris, explique. j'explique : il y en avait {n}, {k} ont été donnés, il en reste {r} : {л}",
@@ -155,6 +171,8 @@ def _числительные(язык):
         получил="{X} ha ricevuto {k} {Тk}.",
         почему_голый="perché? perché {X} aveva {n} e ha dato {k}: {л}",
         а_у="quante ne ha {Y}? {Y} ha {m} {Тm}.",
+        наоборот2="{X} ha {n} {Тn}, {Y} ha {m} {Тm}. che cosa succederebbe se fosse il contrario? allora {X} avrebbe {m} {Тm} e {Y} avrebbe {n} {Тn}.",
+        объясни2="spiega, per favore: non ho capito. spiego: ce n'erano {n}, {k} sono stati dati, ne restano {r}: {л}",
         наоборот="{X} ha {n} {Тn}, {Y} ha {m} {Тm}. e se fosse il contrario? allora {X} avrebbe {m} {Тm} e {Y} avrebbe {n} {Тn}.",
         повтори="ripeti, per favore. ripeto: {X} ha {n} {Тn}.",
         объясни="non ho capito, spiega. spiego: ce n'erano {n}, {k} sono stati dati, ne restano {r}: {л}",
@@ -173,6 +191,8 @@ def _числительные(язык):
         получил="{X} recebeu {k} {Тk}.",
         почему_голый="porquê? porque {X} tinha {n} e deu {k}: {л}",
         а_у="quantas tem {Y}? {Y} tem {m} {Тm}.",
+        наоборот2="{X} tem {n} {Тn}, {Y} tem {m} {Тm}. o que aconteceria se fosse ao contrário? então {X} teria {m} {Тm} e {Y} teria {n} {Тn}.",
+        объясни2="explica, por favor: não percebi. explico: havia {n}, {k} foram dados, restam {r}: {л}",
         наоборот="{X} tem {n} {Тn}, {Y} tem {m} {Тm}. e se fosse ao contrário? então {X} teria {m} {Тm} e {Y} teria {n} {Тn}.",
         повтори="repete, por favor. repito: {X} tem {n} {Тn}.",
         объясни="não percebi, explica. explico: havia {n}, {k} foram dados, restam {r}: {л}",
@@ -195,6 +215,8 @@ def _числительные(язык):
         почему_голый="dlaczego? ponieważ {X} miał{а} {n} i oddał{а} {k}: {л}",
         а_у="ile ma {Y}? {Y} ma {m} {Тm}.",
         а_если="a gdyby było dwa razy więcej? wtedy {X} miał{а}by {д} {Тд}: {лд}",
+        наоборот2="{X} ma {n} {Тn}, {Y} ma {m} {Тm}. co by było, gdyby było odwrotnie? wtedy {X} miał{а}by {m} {Тm}, a {Y} {n} {Тn}.",
+        объясни2="wyjaśnij, proszę: nie rozumiem. wyjaśniam: było {n}, oddano {k}, zostało {r}: {л}",
         наоборот="{X} ma {n} {Тn}, {Y} ma {m} {Тm}. a gdyby było odwrotnie? wtedy {X} miał{а}by {m} {Тm}, a {Y} {n} {Тn}.",
         повтори="powtórz, proszę. powtarzam: {X} ma {n} {Тn}.",
         объясни="nie rozumiem, wyjaśnij. wyjaśniam: było {n}, oddano {k}, zostało {r}: {л}",
@@ -213,6 +235,8 @@ def _числительные(язык):
         почему_голый="waarom? omdat {X} er {n} had en {k} weggaf: {л}",
         а_у="hoeveel heeft {Y}? {Y} heeft {m} {Тm}.",
         а_если="en als het er twee keer zoveel waren? dan zou {X} {д} {Тд} hebben: {лд}",
+        наоборот2="{X} heeft {n} {Тn}, {Y} heeft {m} {Тm}. wat zou er gebeuren als het omgekeerd was? dan zou {X} {m} {Тm} hebben en {Y} {n} {Тn}.",
+        объясни2="leg het uit, alsjeblieft: ik begrijp het niet. ik leg uit: {X} had er {n}, gaf {k} weg, en houdt er {r} over: {л}",
         наоборот="{X} heeft {n} {Тn}, {Y} heeft {m} {Тm}. en als het omgekeerd was? dan zou {X} {m} {Тm} hebben en {Y} {n} {Тn}.",
         повтори="zeg dat nog eens, alsjeblieft. ik herhaal: {X} heeft {n} {Тn}.",
         объясни="ik begrijp het niet, leg het uit. ik leg uit: {X} had er {n}, gaf {k} weg, en houdt er {r} over: {л}",
