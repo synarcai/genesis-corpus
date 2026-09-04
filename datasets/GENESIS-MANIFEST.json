@@ -612,6 +612,30 @@
       "actors": []
     },
     {
+      "name": "opposites",
+      "file": "datasets/genesis_opposites.txt",
+      "genre": "OPPOSITES — the first relation in the corpus of a WORD TO A WORD, not of a word to a thing, and there was not one show of it in the whole svod. A partner knows not only what a thing IS (the house of definitions) and how much of it there is (the house of nature) but also what it is OPPOSED to. The law that judges this is SYMMETRY: the relation is mutual, and if big is opposed to small then small is opposed to big — both sides stand in the shows, because a corpus that showed one side would teach half a law. The frame is a CITATION frame («what is the opposite of the word big?») and that is a decision, not a convenience: «opposite to BIG» would want a dative in Russian and a genitive in Polish, and every language would want two or three forms per word; the citation frame takes the word in its dictionary form, so the house declares exactly what it knows and invents no case it has not checked. Twelve pairs in each of the nine languages of the attack, three forms.",
+      "act": [
+        "name",
+        "compare",
+        "translate"
+      ],
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "measure_story",
       "file": "datasets/genesis_measure_story.txt",
       "genre": "MEASURED STORIES — A DISTANCE COMPARED BY ITS VERB, AND A PAIR PRICED BY ITS MULTIPLE (holon's orders from the last lines of the attack, 03.09). The first: «the frog jumped 31 inches. the grasshopper jumped 25 inches. how many more inches did the frog jump than the grasshopper? 31 − 25 = 6.» — the corpus said this with ONE verb, and a verb met once is learnt as a word rather than as a place of the frame; six verbs walk here (jumped, ran, walked, swam, flew, crawled — прыгнул, пробежал, прошёл, проплыл, пролетел, прополз), each with its bare form for the English question and, in Russian, with its own preposition («прыгнул НА 31 сантиметр», but «пробежал 31 метр») and its past tense agreeing with the actor («лягушка прыгнула», «кузнечик прыгнул»). The second: «a house and a lot cost 120 dollars together. the house costs three times as much as the lot. how much does the lot cost? 3 + 1 = 4, 120 ÷ 4 = 30.» — «as MUCH as» beside «times» on a price, where the corpus had only «as many as» on countables; both ends of the pair are asked, and the greater costs one step more, for its answer runs through the lesser. Every form is declared by the house (tools/measurestory.py): the Russian measure names three count forms, the past tense two genders, the second good its genitive; the court knows the whole finite table and calls a line of these shapes that the table does not hold a lie",
@@ -3910,10 +3934,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 18942713,
+      "size": 18956684,
       "tiers": [],
       "text": "mix",
-      "lines": 247626
+      "lines": 247950
     },
     {
       "name": "full",
@@ -3928,10 +3952,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 23456370,
+      "size": 23470341,
       "tiers": [],
       "text": "mix",
-      "lines": 321293
+      "lines": 321617
     },
     {
       "name": "minimal",
@@ -3946,10 +3970,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 10574655,
+      "size": 10588538,
       "tiers": [],
       "text": "mix",
-      "lines": 132839
+      "lines": 133163
     },
     {
       "name": "uniq",
@@ -3964,10 +3988,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 14491181,
+      "size": 14505064,
       "tiers": [],
       "text": "mix",
-      "lines": 151750
+      "lines": 152074
     },
     {
       "name": "mid13",
@@ -3982,10 +4006,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 12289829,
+      "size": 12303712,
       "tiers": [],
       "text": "mix",
-      "lines": 157090
+      "lines": 157414
     },
     {
       "name": "mid",
@@ -4000,10 +4024,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 14401068,
+      "size": 14414951,
       "tiers": [],
       "text": "mix",
-      "lines": 186055
+      "lines": 186379
     },
     {
       "name": "selfmeasure",
