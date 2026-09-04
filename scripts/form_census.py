@@ -56,11 +56,16 @@ def имена():
         п = json.loads(путь.read_text(encoding="utf-8"))
         if not п.get("person_names"):
             continue
+        # ОБЕ КАССЫ: пакет объявляет письмо имени (с заглавной, 05.09), а полоса
+        # беседы пишет вопросы строчными, как пишет человек в строке ввода;
+        # прибор скелета обязан узнать имя в любой кассе, иначе он назовёт
+        # немой форму, которая есть, — как назвал «ann … and tom?» в тот час,
+        # когда пакет стал заглавным
         for и in п.get("person_names", ()):
-            вон.add(и); вон.add(и.capitalize())
+            вон.add(и); вон.add(и.capitalize()); вон.add(и.lower())
             for ф in п.get("person_forms", {}).get(и, {}).values():
                 if isinstance(ф, str):
-                    вон.add(ф); вон.add(ф.capitalize())
+                    вон.add(ф); вон.add(ф.capitalize()); вон.add(ф.lower())
     # ПАДЕЖ ИМЕНИ, ОБЪЯВЛЕННЫЙ ДОМОМ, ЕСТЬ ТО ЖЕ ИМЯ. Дом историй отношений
     # объявляет дательный русских имён у себя («Юре», «Оле»), ибо пакет их не
     # держит, — и перепись, знавшая лишь именительный, дробила одну рамку на
@@ -68,7 +73,7 @@ def имена():
     try:
         import relstory
         for имя, форма in getattr(relstory, "_ДАТЕЛЬНЫЙ_RU", {}).items():
-            вон.add(форма); вон.add(форма.capitalize())
+            вон.add(форма); вон.add(форма.capitalize()); вон.add(форма.lower())
     except Exception:
         pass
     return вон

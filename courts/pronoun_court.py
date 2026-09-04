@@ -28,7 +28,8 @@ _RU = json.loads((КОРЕНЬ / "tools" / "langpacks" / "ru.json").read_text(en
 РОД_П = {n.capitalize(): ф["gen"].capitalize() for n, ф in _RU["person_forms"].items()}
 
 Ч = r"(\d+)"
-С = r"([a-z]+)"
+# имя лица пишется с заглавной (пакет, 05.09): класс букв знает обе кассы
+С = r"([A-Za-z]+)"
 ИМЯ = r"([А-ЯЁ][а-яё]+)"
 СЛ = r"([а-яё]+)"
 # РАМКА ЕСТЬ ПАРА ГЛАГОЛОВ (e9 03.09: had/used, had/lost, received/spent,

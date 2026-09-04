@@ -118,7 +118,7 @@ _Ф = [(о, _судья(п)) for о, п in ОБРАЗЦЫ]
 # cents» fell to the count court and passed).
 def _открыть(о):
     """The pattern with any word where a thing, a name or a unit form stands."""
-    о = о.replace(С, r"(?:[a-zа-яё]+(?: [a-zа-яё]+)?)")
+    о = о.replace(С, r"(?:[A-Za-zА-Яа-яЁё]+(?: [A-Za-zА-Яа-яЁё]+)?)")  # обе кассы: имя с заглавной (05.09)
     о = о.replace("dollars", "dollars?").replace("cents", "cents?")
     return re.compile(о)
 

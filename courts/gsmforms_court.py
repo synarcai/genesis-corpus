@@ -21,7 +21,10 @@ import families  # noqa: E402
 import rugram  # noqa: E402
 
 Ч = r"(−?\d+)"
-С = r"([a-zа-яё]+)"
+# ИМЯ ЛИЦА ПИШЕТСЯ С ЗАГЛАВНОЙ (пакет, 05.09) — класс букв обязан знать обе
+# кассы; класс «[a-z]+» назвал 96 честных строк несудимыми в тот час, как
+# пакет стал объявлять письмо имени сам
+С = r"([A-Za-zА-Яа-яЁё]+)"
 ИМЯ = r"([A-Za-zА-Яа-яЁё]+)"
 
 
@@ -421,11 +424,11 @@ def _рамка(закон):
 ГЛ_B, ГЛ_B0 = r"(used|made|read|bought|did|completed|watched|removed)", r"(use|make|read|buy|do|complete|watch|remove)"
 ВЕЩЬ_B = r"(cups of flour|cups of sugar|cakes|pastries|pages of math|pages of reading|bottles of regular soda|bottles of diet soda|push-ups|crunches|pages of reading homework|pages of math homework|movies|episodes|figures|books)"
 # 22E два деятеля, одно дело (e9 04.09: «the grasshopper jumped 9 inches and the mouse jumped 3 inches»)
-ДЕЯТЕЛЬ_E = r"((?:the )?[a-z]+)"
+ДЕЯТЕЛЬ_E = r"((?:the )?[A-Za-z]+)"
 ГЛ_E, ГЛ_E0, ВЕЩЬ_E = r"(jumped|brought|did|won)", r"(jump|bring|do|win)", r"(inches|feet|balloons|push-ups|metres|games)"
 ВЕЩЬ_C, ГДЕ = r"(storks|birds|red flowers|white flowers)", r"(on the fence|in the garden)"
 # 22П глаголы полос точками: деятель — имя, зверь или группа
-ДЕЯТЕЛЬ_П = r"((?:the )?[a-z]+)"
+ДЕЯТЕЛЬ_П = r"((?:the )?[A-Za-z]+)"
 ГЛ_П = r"(jumped|did|completed|watched|won|sent|lost|removed|raised|threw away)"
 ГЛ_П0 = r"(jump|do|complete|watch|win|send|lose|remove|raise|throw away)"
 ВЕЩЬ_П = r"(inches|feet|push-ups|crunches|pages|laps|movies|episodes|games|medals|letters|cards|coins|marbles|books|stickers|dollars|caps|bottles)"

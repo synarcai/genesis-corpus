@@ -38,10 +38,11 @@ from plural import by_count  # noqa: E402
 ЦЕЛЬ = "datasets/genesis_gsmforms.txt"
 _EN = json.loads((КОРЕНЬ / "tools" / "langpacks" / "en.json").read_text(encoding="utf-8"))
 _RU = json.loads((КОРЕНЬ / "tools" / "langpacks" / "ru.json").read_text(encoding="utf-8"))
-ИМЕНА_EN = [n for n in _EN["person_names"] if n in ("ann", "ben", "carla", "dan", "elena", "felix", "grace", "hugo", "ida", "omar", "peter", "vera")]
+# выбор лиц — дома, письмо — пакета (05.09): сверка по строчному образу
+ИМЕНА_EN = [n for n in _EN["person_names"] if n.lower() in ("ann", "ben", "carla", "dan", "elena", "felix", "grace", "hugo", "ida", "omar", "peter", "vera")]
 # РУССКИЕ ИМЕНА В ИМЕНИТЕЛЬНОМ — рамки построены так, что иных падежей нет
 # («Вера имеет 7 ручек»): так дом имён держит их одной таблицей.
-ИМЕНА_RU = [n.capitalize() for n in _RU["person_names"] if n in ("вера", "петя", "маша", "коля", "аня", "дима", "лена", "юра")]
+ИМЕНА_RU = [n.capitalize() for n in _RU["person_names"] if n.lower() in ("вера", "петя", "маша", "коля", "аня", "дима", "лена", "юра")]
 # РОД И РОДИТЕЛЬНЫЙ — ТАБЛИЦЕЙ ГЕНЕРАТОРА (пакет держит именительный; формы
 # падежей держат таблицы генераторов, суды читают их той же рукой): «у
 # Веры было», «Вера отдала» — третий слой дал рамки с падежом и глаголом.

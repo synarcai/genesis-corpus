@@ -744,7 +744,11 @@ def впитать_ставки(путь):
 # прежде порченое имя роняло рамку, и строку судил один лишь суд числа.
 _ПАКЕТ_EN = json.loads((КОРЕНЬ / "tools" / "langpacks" / "en.json")
                        .read_text(encoding="utf-8"))
-ИМЕНА_EN = frozenset(_ПАКЕТ_EN.get("person_names", ()))
+# СУД ЧИТАЕТ СТРОКУ СТРОЧНЫМИ («низ = строка.lower()»), и потому его словари имён
+# обязаны быть строчными ТОЖЕ — независимо от письма, объявленного пакетом.
+# 05.09 пакет стал писать имена с заглавной (как семь прочих пакетов), и суд,
+# сверявший строчную строку с заглавным словарём, назвал ложью 12 миров.
+ИМЕНА_EN = frozenset(и.lower() for и in _ПАКЕТ_EN.get("person_names", ()))
 # the pack's sentence openers AND the question openers of the house of the
 # pair («when did …», «what's the total …» opened sentences the law refused)
 # …AND the connectives of reasoning («so the answer is 16.»): a reasoned answer
@@ -767,7 +771,7 @@ _ЗАЧИН = re.compile(r"(?:^|(?<=[.?!] ))([a-z]+)(?![a-z:])")
 # читал никто). Глаголы истории — замкнутое множество суда, как и прочие
 # его слова родов; имена — все объявленные формы лиц пакета ru.
 _ПАКЕТ_RU = json.loads((pathlib.Path(__file__).resolve().parents[1] / "tools" / "langpacks" / "ru.json").read_text(encoding="utf-8"))
-ИМЕНА_RU = frozenset(list(_ПАКЕТ_RU.get("person_names", ())) + [ф for формы in _ПАКЕТ_RU.get("person_forms", {}).values() for ф in формы.values() if isinstance(ф, str)])
+ИМЕНА_RU = frozenset(и.lower() for и in list(_ПАКЕТ_RU.get("person_names", ())) + [ф for формы in _ПАКЕТ_RU.get("person_forms", {}).values() for ф in формы.values() if isinstance(ф, str)])
 ГЛАГОЛЫ_ИСТОРИИ_RU = ("купил", "купила", "заплатил", "заплатила", "продал", "продала", "получил", "получила", "потратил", "потратила",
                       "нашёл", "нашла", "потерял", "потеряла", "отдал", "отдала", "взял", "взяла", "съел", "съела", "дал", "дала",
                       "положил", "положила", "прочитал", "прочитала", "собрал", "собрала", "принёс", "принесла")

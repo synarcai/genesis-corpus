@@ -45,6 +45,10 @@ import json as _json
 import pathlib as _pathlib
 _ИМЕНА_ПАКЕТА = set(_json.loads((_pathlib.Path(__file__).resolve().parent / "langpacks"
                                   / "en.json").read_text(encoding="utf-8"))["person_names"])
+# РЕГИСТР ИМЕНИ ЧИТАЕТСЯ ИЗ ПАКЕТА (05.09): список дома выбирает лица, пакет
+# объявляет их письмо; «ann» дома есть «Ann» пакета, и в показ входит пакетное.
+_ПО_СТРОЧНОМУ = {и.lower(): и for и in _ИМЕНА_ПАКЕТА}
+NAMES_EN = [_ПО_СТРОЧНОМУ.get(и.lower(), и) for и in NAMES_EN]
 assert set(NAMES_EN) <= _ИМЕНА_ПАКЕТА, "имя не объявлено пакетом en"
 
 

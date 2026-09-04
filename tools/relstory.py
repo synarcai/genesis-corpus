@@ -56,9 +56,11 @@ def _лица(язык):
     for имя in п.get("person_names", ()):
         ф = формы.get(имя) or formы_guess(формы, имя)
         if язык == "ru":
-            if имя not in _ДАТЕЛЬНЫЙ_RU or not ф or not ф.get("gen"):
+            # дательный объявлен здесь строчным ключом; письмо имени — пакетом
+            # (05.09 пакет стал держать имена с заглавной, как прочие семь)
+            if имя.lower() not in _ДАТЕЛЬНЫЙ_RU or not ф or not ф.get("gen"):
                 continue
-            вон.append((имя.capitalize(), ф["gen"].capitalize(), _ДАТЕЛЬНЫЙ_RU[имя].capitalize()))
+            вон.append((имя.capitalize(), ф["gen"].capitalize(), _ДАТЕЛЬНЫЙ_RU[имя.lower()].capitalize()))
         else:
             вон.append((имя, имя, имя))
         if len(вон) == 12:
