@@ -41,7 +41,7 @@ GRAND». Языки, где сравнительное неизменно (ру�
 """
 import re
 
-ФОРМЫ = ("пара", "вопрос", "цепь", "обратно")
+ФОРМЫ = ("пара", "пара_воп", "вопрос", "цепь", "цепь_воп", "обратно", "может")
 
 ЯЗЫКИ = {
     "ru": dict(
@@ -49,6 +49,8 @@ import re
         вопрос="кто {г}: {a} или {b}? {a}.",
         цепь="{a} {г} {b2}. {b} {гb} {c2}. значит {a} {г} {c2}.",
         обратно="{a} {г} {b2}. значит {b} не {гb} {a2}.",
+        почему="почему? потому что {a} {г} {b2}, а {b} {гb} {c2}.",
+        может="может ли {b} быть {гb} {a2}? нет, {a} {г} {b2}.",
         г_воп="больше",
         ряд=(("мышь", "мыши", "больше"), ("кошка", "кошки", "больше"), ("собака", "собаки", "больше"), ("человек", "человека", "больше"), ("лошадь", "лошади", "больше"), ("слон", "слона", "больше")),
     ),
@@ -57,6 +59,8 @@ import re
         вопрос="which is {г}: {a} or {b}? {a}.",
         цепь="{a} is {г} than {b2}. {b} is {гb} than {c2}. so {a} is {г} than {c2}.",
         обратно="{a} is {г} than {b2}. so {b} is not {гb} than {a2}.",
+        почему="why? because {a} is {г} than {b2}, and {b} is {гb} than {c2}.",
+        может="can {b} be {гb} than {a2}? no, {a} is {г} than {b2}.",
         г_воп="bigger",
         ряд=(("a mouse", "a mouse", "bigger"), ("a cat", "a cat", "bigger"), ("a dog", "a dog", "bigger"), ("a person", "a person", "bigger"), ("a horse", "a horse", "bigger"), ("an elephant", "an elephant", "bigger")),
     ),
@@ -65,6 +69,8 @@ import re
         вопрос="was ist {г}: {a} oder {b}? {a}.",
         цепь="{a} ist {г} als {b2}. {b} ist {гb} als {c2}. also ist {a} {г} als {c2}.",
         обратно="{a} ist {г} als {b2}. also ist {b} nicht {гb} als {a2}.",
+        почему="warum? weil {a} {г} als {b2} ist und {b} {гb} als {c2} ist.",
+        может="kann {b} {гb} als {a2} sein? nein, {a} ist {г} als {b2}.",
         г_воп="größer",
         ряд=(("eine Maus", "eine Maus", "größer"), ("eine Katze", "eine Katze", "größer"), ("ein Hund", "ein Hund", "größer"), ("ein Mensch", "ein Mensch", "größer"), ("ein Pferd", "ein Pferd", "größer"), ("ein Elefant", "ein Elefant", "größer")),
     ),
@@ -73,6 +79,8 @@ import re
         вопрос="qu'est-ce qui est plus {г} : {a} ou {b} ? {a}.",
         цепь="{a} est plus {г} {b2}. {b} est plus {гb} {c2}. donc {a} est plus {г} {c2}.",
         обратно="{a} est plus {г} {b2}. donc {b} n'est pas plus {гb} {a2}.",
+        почему="pourquoi ? parce que {a} est plus {г} {b2} et {b} est plus {гb} {c2}.",
+        может="est-ce que {b} peut être plus {гb} {a2} ? non, {a} est plus {г} {b2}.",
         г_воп="grand",
         ряд=(("une souris", "qu'une souris", "grande"), ("un chat", "qu'un chat", "grand"), ("un chien", "qu'un chien", "grand"), ("une personne", "qu'une personne", "grande"), ("un cheval", "qu'un cheval", "grand"), ("un éléphant", "qu'un éléphant", "grand")),
     ),
@@ -81,6 +89,8 @@ import re
         вопрос="¿cuál es {г}: {a} o {b}? {a}.",
         цепь="{a} es {г} que {b2}. {b} es {гb} que {c2}. así que {a} es {г} que {c2}.",
         обратно="{a} es {г} que {b2}. así que {b} no es {гb} que {a2}.",
+        почему="¿por qué? porque {a} es {г} que {b2} y {b} es {гb} que {c2}.",
+        может="¿puede {b} ser {гb} que {a2}? no, {a} es {г} que {b2}.",
         г_воп="más grande",
         ряд=(("un ratón", "un ratón", "más grande"), ("un gato", "un gato", "más grande"), ("un perro", "un perro", "más grande"), ("una persona", "una persona", "más grande"), ("un caballo", "un caballo", "más grande"), ("un elefante", "un elefante", "más grande")),
     ),
@@ -89,6 +99,8 @@ import re
         вопрос="che cosa è {г}: {a} o {b}? {a}.",
         цепь="{a} è {г} di {b2}. {b} è {гb} di {c2}. quindi {a} è {г} di {c2}.",
         обратно="{a} è {г} di {b2}. quindi {b} non è {гb} di {a2}.",
+        почему="perché? perché {a} è {г} di {b2} e {b} è {гb} di {c2}.",
+        может="può {b} essere {гb} di {a2}? no, {a} è {г} di {b2}.",
         г_воп="più grande",
         ряд=(("un topo", "un topo", "più grande"), ("un gatto", "un gatto", "più grande"), ("un cane", "un cane", "più grande"), ("una persona", "una persona", "più grande"), ("un cavallo", "un cavallo", "più grande"), ("un elefante", "un elefante", "più grande")),
     ),
@@ -97,6 +109,8 @@ import re
         вопрос="qual é {г}: {a} ou {b}? {a}.",
         цепь="{a} é {г} do que {b2}. {b} é {гb} do que {c2}. portanto {a} é {г} do que {c2}.",
         обратно="{a} é {г} do que {b2}. portanto {b} não é {гb} do que {a2}.",
+        почему="porquê? porque {a} é {г} do que {b2} e {b} é {гb} do que {c2}.",
+        может="pode {b} ser {гb} do que {a2}? não, {a} é {г} do que {b2}.",
         г_воп="maior",
         ряд=(("um rato", "um rato", "maior"), ("um gato", "um gato", "maior"), ("um cão", "um cão", "maior"), ("uma pessoa", "uma pessoa", "maior"), ("um cavalo", "um cavalo", "maior"), ("um elefante", "um elefante", "maior")),
     ),
@@ -105,6 +119,8 @@ import re
         вопрос="wat is {г}: {a} of {b}? {a}.",
         цепь="{a} is {г} dan {b2}. {b} is {гb} dan {c2}. dus {a} is {г} dan {c2}.",
         обратно="{a} is {г} dan {b2}. dus {b} is niet {гb} dan {a2}.",
+        почему="waarom? omdat {a} {г} dan {b2} is en {b} {гb} dan {c2} is.",
+        может="kan {b} {гb} dan {a2} zijn? nee, {a} is {г} dan {b2}.",
         г_воп="groter",
         ряд=(("een muis", "een muis", "groter"), ("een kat", "een kat", "groter"), ("een hond", "een hond", "groter"), ("een mens", "een mens", "groter"), ("een paard", "een paard", "groter"), ("een olifant", "een olifant", "groter")),
     ),
@@ -113,6 +129,8 @@ import re
         вопрос="co jest {г}: {a} czy {b}? {a}.",
         цепь="{a} jest {г} od {b2}. {b} jest {гb} od {c2}. więc {a} jest {г} od {c2}.",
         обратно="{a} jest {г} od {b2}. więc {b} nie jest {гb} od {a2}.",
+        почему="dlaczego? ponieważ {a} jest {г} od {b2}, a {b} jest {гb} od {c2}.",
+        может="czy {b} może być {гb} od {a2}? nie, {a} jest {г} od {b2}.",
         г_воп="większe",
         ряд=(("mysz", "myszy", "większa"), ("kot", "kota", "większy"), ("pies", "psa", "większy"), ("człowiek", "człowieka", "większy"), ("koń", "konia", "większy"), ("słoń", "słonia", "większy")),
     ),
@@ -129,17 +147,32 @@ def показ(язык, форма, i, j=None, k=None):
     я = ЯЗЫКИ[язык]
     ряд = я["ряд"]
     n = len(ряд)
-    if форма == "цепь":
+    if форма in ("цепь", "цепь_воп"):
         # ТРИ РАЗЛИЧНЫХ МЕСТА В ПОРЯДКЕ УБЫВАНИЯ: вывод строится рядом, а не рукой
         a, b, c = i % n, (i - 1) % n, (i - 2) % n
         if not (a > b > c):
             return None
-        return я["цепь"].format(a=ряд[a][0], b=ряд[b][0], b2=ряд[b][1], c2=ряд[c][1],
-                                г=ряд[a][2], гb=ряд[b][2])
+        поля = dict(a=ряд[a][0], b=ряд[b][0], b2=ряд[b][1], c2=ряд[c][1],
+                    г=ряд[a][2], гb=ряд[b][2])
+        цепь = я["цепь"].format(**поля)
+        if форма == "цепь":
+            return цепь
+        # ВОПРОС НАД ВЫВОДОМ: «почему?» спрашивает не факт, а ОСНОВАНИЕ, и
+        # ответом стоят обе посылки. Род, чей вывод спрошен рядом, не нем.
+        return f"{цепь} {я['почему'].format(**поля)}"
     a = i % n
     b = (j if j is not None else i - 1) % n
     if a <= b:
         return None            # больше тот, кто позже; равных дом не пишет
+    if форма == "может":
+        # МОДАЛЬНЫЙ ВОПРОС НАД АНТИСИММЕТРИЕЙ: «может ли меньшее быть больше?» —
+        # вопрос о ВОЗМОЖНОСТИ, и ответ на него отрицателен по ряду, а не по вкусу.
+        # Он ставится ПОСЛЕ вывода, а не вместо него: страница несёт посылку,
+        # вывод и вопрос о возможности — и тогда род вывода не нем, ибо его
+        # собственный факт спрошен рядом тою же страницей.
+        поля = dict(a=ряд[a][0], a2=ряд[a][1], b=ряд[b][0], b2=ряд[b][1],
+                    г=ряд[a][2], гb=ряд[b][2])
+        return я["обратно"].format(**поля) + " " + я["может"].format(**поля)
     if форма == "обратно":
         # АНТИСИММЕТРИЯ КАК ВЫВОД: из «слон больше мыши» следует «мышь НЕ больше
         # слона», и следствие это проверяется тем же рядом, что и посылка. Оно
@@ -150,6 +183,10 @@ def показ(язык, форма, i, j=None, k=None):
                                    г=ряд[a][2], гb=ряд[b][2])
     if форма == "пара":
         return я["пара"].format(a=ряд[a][0], b2=ряд[b][1], г=ряд[a][2])
+    if форма == "пара_воп":
+        # ПАРА И ЕЁ ВОПРОС ОДНОЙ СТРАНИЦЕЙ: род, чей факт спрошен рядом, не нем.
+        return (я["пара"].format(a=ряд[a][0], b2=ряд[b][1], г=ряд[a][2]) + " "
+                + я["вопрос"].format(a=ряд[a][0], b=ряд[b][0], г=я["г_воп"]))
     # ВОПРОС СОГЛАСУЕТСЯ С ВОПРОСНЫМ СЛОВОМ, А НЕ С ОТВЕТОМ: «qu'est-ce qui est
     # plus GRAND» и «co jest większE» — подлежащее здесь местоимение среднего
     # рода, и форма при нём своя, объявленная при языке, а не при вещи.
@@ -162,13 +199,14 @@ def _все_показы():
         n = len(я["ряд"])
         for i in range(n):
             for j in range(n):
-                for форма in ("пара", "вопрос", "обратно"):
+                for форма in ("пара", "пара_воп", "вопрос", "обратно", "может"):
                     с = показ(язык, форма, i, j)
                     if с:
                         вон[с] = (язык, форма)
-            с = показ(язык, "цепь", i)
-            if с:
-                вон[с] = (язык, "цепь")
+            for форма in ("цепь", "цепь_воп"):
+                с = показ(язык, форма, i)
+                if с:
+                    вон[с] = (язык, форма)
     return вон
 
 
@@ -195,7 +233,11 @@ def _образцы():
         прил = sorted({т[2] for т in я["ряд"]} | {я["г_воп"]}, key=len, reverse=True)
         альт = lambda ряд: "(?:" + "|".join(re.escape(з) for з in ряд) + ")"
         for форма in ФОРМЫ:
-            ш = я[форма]
+            # СОСТАВНАЯ ФОРМА ЕСТЬ ДВЕ ОБЪЯВЛЕННЫЕ РЯДОМ: образец ей строится из
+            # обеих, а своей рамки у неё нет — второго объявления заводить не надо.
+            ш = (я["пара"] + " " + я["вопрос"]) if форма == "пара_воп" else (
+                (я["цепь"] + " " + я["почему"]) if форма == "цепь_воп" else
+                (я["обратно"] + " " + я["может"]) if форма == "может" else я[форма])
             куски, конец = [], 0
             for м in re.finditer(r"\{(\w+)\}", ш):
                 куски.append(re.escape(ш[конец:м.start()]))

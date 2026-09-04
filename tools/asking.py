@@ -171,18 +171,18 @@ can could should has have will shall must may might would ought need
 каковы каком какую какого какими где
 когда кто чем чего кому насколько почему зачем отчего откуда куда
 чём ком кем который которая которое которые которого которой которых
-является делится простое сравнимы связен
+является делится простое сравнимы связен может
 взаимно есть ли если во на
 wenn wie was ist sind welche welcher wo wann warum wieviel wer wen wem
-stimmt stimmst meinst bist wozu womit woraus wovon wodurch worauf
+stimmt stimmst meinst bist wozu womit woraus wovon wodurch worauf kann darf
 que quel quelle quels combien comment pourquoi est qu'est-ce est-il
 est-elle est-ce si y et tu es-tu quoi
-cual cuanto cuantos que es hay donde se ¿es ¿son ¿cuál ¿cuánto ¿qué ¿cómo ¿quién
+cual cuanto cuantos que es hay donde se ¿es ¿son ¿cuál ¿cuánto ¿qué ¿cómo ¿quién ¿puede
 ¿y ¿quieres ¿estás ¿por
-che cosa quanto quanti dove quale come chi perché intendi sei
-qual quantos onde como quem porque porquê queres concordas
+che cosa quanto quanti dove quale come chi perché intendi sei può
+qual quantos onde como quem porque porquê queres concordas pode
 czy ile co jaki jaka jakie jakiej jakim jakich czego gdzie kiedy jak czym dlaczego masz zgadzasz
-wat hoe hoeveel welke waar waarom bedoel ben klopt en waarmee waarvan waarop waardoor
+wat hoe hoeveel welke waar waarom bedoel ben klopt en waarmee waarvan waarop waardoor kan
 ты а
 # ЭЛЛИПТИЧЕСКИЙ ВОПРОС ОТКРЫВАЕТСЯ СОЮЗОМ, а не вопросным словом: «а у тома?»,
 # «and tom?», «und Lena?» — так и спрашивает человек, когда предмет вопроса
