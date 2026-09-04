@@ -14,6 +14,17 @@ A claim carrying a variable («n × n») is not numeric and is skipped: the cour
 checks what it can compute and stays silent about the rest. The strength is
 that a swapped digit anywhere — a case, the counterexample, its factorisation —
 is caught without the court knowing what the house meant to say.
+
+THE BORDER IS TAKEN FROM THE SUBJECT, NOT FROM THE WINDOW (М-180-f2). Reading
+content rather than frames, the first wave of this court claimed EIGHTEEN lines
+of Boole's «Analysis» and called eleven of them false: «$$ t_1t_2 = 0 … $$»
+parses as arithmetic when the subscripts are read as digits. The prose was not
+harmed — a shelf world is not written through the gates — but a court that
+judges a neighbour's book is a court that has lost its subject. So a line is
+claimed only if it carries a DECLARED MARKER of this house (a question head, a
+primality wording, a refusal opener) or if it carries NO LETTERS AT ALL, being
+a pure row of equalities. Boole's lines carry letters and no marker; the
+house's own pure-equation cases carry no letters; nothing else changes.
 """
 import pathlib
 import re
@@ -93,9 +104,43 @@ def _равенства(предложение):
     return вон
 
 
+def _метки():
+    """Объявленные метки дома: зачины вопроса, отказа, согласия и слова простоты."""
+    вон = set(ПРОСТО) | set(НЕ_ПРОСТО)
+    for с in F.СЛОВА.values():
+        for ключ in ("вопрос", "нет", "да", "нет_голое"):
+            рамка = с.get(ключ)
+            if not рамка:
+                continue
+            for кусок in re.split(r"\{\w+\}", рамка):
+                кусок = кусок.strip(" .:,?!«»").lower()
+                # ВОСЕМЬ БУКВ — НЕ ВКУС, А ЗАМЕР: рамка, разрезанная по дырам,
+                # даёт и распознавательные куски («does it follow that»), и
+                # союзы («and», «it gives»). Союз «and» из отказа сделал
+                # подсудной английскую прозу Буля; порог в восемь знаков режет
+                # союзы и оставляет зачины.
+                if len(кусок) >= 8:
+                    вон.add(кусок)
+    return tuple(sorted(вон, key=len, reverse=True))
+
+
+МЕТКИ = _метки()
+# ЧИСТЫЙ РЯД РАВЕНСТВ — только цифры и знаки счёта. Отсутствия БУКВ мало:
+# «$$ 1 = 0, $$» букв не имеет, но есть разметка чужой книги, и суд назвал её
+# ложью — верно арифметически и неверно по предмету.
+_ЧИСТЫЙ_РЯД = re.compile(r"^[\d\s+\-−×÷^²!().,=:;/]+$")
+
+
+def _наше(с):
+    низ = с.lower()
+    if any(м in низ for м in МЕТКИ):
+        return True
+    return bool(_ЧИСТЫЙ_РЯД.fullmatch(с))
+
+
 def _судить(строка):
     с = строка.strip()
-    if not с:
+    if not с or not _наше(с):
         return False, False
     предложения = [п.strip().rstrip(".?!") for п in re.split(r"(?<=[.?])\s+", с) if п.strip()]
     проверено = 0
