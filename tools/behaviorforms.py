@@ -69,11 +69,27 @@ stanco» верно счётом ролей и ложно речью. Втора
             ("{X} смотрел в другую сторону", "{X} не увидел знака", "{X} смотрел в другую сторону", "человек смотрит в другую сторону", "он не видит знака"),
         ),
         правило="{п}. поэтому {с}.", вопрос="{п}. поэтому {с}. почему {с}? потому что {пп}.",
-        кратко="почему, когда {оп}, {ов}? потому что {оп}.",
+        кратко="почему, когда {оп}, {ов}? {осн}.",
         цели=(("человек спит", "чтобы отдохнуть"), ("человек ест", "чтобы не быть голодным"), ("человек учится", "чтобы уметь больше")), зачем_рамка="зачем {д}? {ц}.",
         вывод="{з} {п}. значит {с}.",
         закон="когда {оп}, {ос}.",
         закон_вопрос="когда {оп}, {ос}. почему {ов}? потому что {оп}.",
+        вопросы_многих=(
+            'почему люди ошибаются чаще, когда устали?',
+            'почему люди ищут еду, когда голодны?',
+            'почему люди боятся неизвестного?',
+            'почему люди спешат, когда хотят успеть?',
+            'почему люди делают не думая то, что делают каждый день?',
+            'почему люди не видят знака, когда смотрят в другую сторону?',
+        ),
+        основания=(
+            ('почему человек ошибается чаще, когда устал?', 'потому что усталость ослабляет внимание'),
+            ('почему человек ищет еду, когда голоден?', 'потому что тело требует того, чего ему не хватает'),
+            ('почему человек боится, когда не знает, что будет?', 'потому что неизвестное нельзя предусмотреть'),
+            ('почему человек спешит, когда хочет успеть?', 'потому что времени остаётся меньше, чем нужно'),
+            ('почему человек делает не думая то, что делает каждый день?', 'потому что повторение делает действие привычным'),
+            ('почему человек не видит знака, когда смотрит в другую сторону?', 'потому что человек видит только то, на что смотрит'),
+        ),
     ),
     "en": dict(
         имена=("peter", "ivan", "john", "mark"),
@@ -92,11 +108,27 @@ stanco» верно счётом ролей и ложно речью. Втора
         вопр_след=("does {X} make more mistakes", "does {X} look for food", "is {X} afraid",
                    "does {X} hurry", "does {X} do it without thinking", "did {X} not see the sign"),
         правило="{п}. therefore {с}.", вопрос="{п}. therefore {с}. why {в}? because {пп}.",
-        кратко="why, when {оп}, {ов}? because {оп}.",
+        кратко="why, when {оп}, {ов}? {осн}.",
         цели=(("does a person sleep", "in order to rest"), ("does a person eat", "in order not to be hungry"), ("does a person study", "in order to be able to do more")), зачем_рамка="why {д}? {ц}.",
         вывод="{з} {п}. so {с}.",
         закон="when {оп}, {ос}.",
         закон_вопрос="when {оп}, {ос}. why {ов}? because {оп}.",
+        вопросы_многих=(
+            'why do people make more mistakes when they are tired?',
+            'why do people look for food when they are hungry?',
+            'why do people fear the unknown?',
+            'why do people hurry when they want to be in time?',
+            'why do people do without thinking what they do every day?',
+            'why do people not see the sign when they look the other way?',
+        ),
+        основания=(
+            ('why does a person make more mistakes when tired?', 'because tiredness weakens attention'),
+            ('why does a person look for food when hungry?', 'because the body asks for what it lacks'),
+            ('why is a person afraid when they do not know what will happen?', 'because the unknown cannot be foreseen'),
+            ('why does a person hurry when they want to be in time?', 'because less time is left than is needed'),
+            ('why does a person do without thinking what they do every day?', 'because repetition makes an action a habit'),
+            ('why does a person not see the sign when looking the other way?', 'because a person sees only what they look at'),
+        ),
         # английский вопрос и здесь требует вспомогательного глагола
         общ_вопрос=("does that person make more mistakes", "does that person look for food",
                     "is that person afraid", "does that person hurry",
@@ -113,11 +145,26 @@ stanco» верно счётом ролей и ложно речью. Втора
             ("{X} hat weggeschaut", "hat {X} das Zeichen nicht gesehen", "{X} weggeschaut hat", "ein Mensch wegschaut", "sieht er das Zeichen nicht"),
         ),
         правило="{п}. deshalb {с}.", вопрос="{п}. deshalb {с}. warum {с}? weil {пп}.",
-        кратко="warum {ов}, wenn {оп}? weil {оп}.",
         цели=(("schläft ein Mensch", "um sich auszuruhen"), ("isst ein Mensch", "um nicht hungrig zu sein"), ("lernt ein Mensch", "um mehr zu können")), зачем_рамка="wozu {д}? {ц}.",
         вывод="{з} {п}. also {с}.",
         закон="wenn {оп}, {ос}.",
         закон_вопрос="wenn {оп}, {ос}. warum {ов}? weil {оп}.",
+        вопросы_многих=(
+            'warum machen Menschen mehr Fehler, wenn sie müde sind?',
+            'warum suchen Menschen Essen, wenn sie hungrig sind?',
+            'warum fürchten Menschen das Unbekannte?',
+            'warum beeilen sich Menschen, wenn sie rechtzeitig kommen wollen?',
+            'warum machen Menschen ohne nachzudenken, was sie jeden Tag machen?',
+            'warum sehen Menschen das Zeichen nicht, wenn sie wegschauen?',
+        ),
+        основания=(
+            ('warum macht ein Mensch mehr Fehler, wenn er müde ist?', 'weil Müdigkeit die Aufmerksamkeit schwächt'),
+            ('warum sucht ein Mensch Essen, wenn er hungrig ist?', 'weil der Körper verlangt, was ihm fehlt'),
+            ('warum hat ein Mensch Angst, wenn er nicht weiß, was kommt?', 'weil man das Unbekannte nicht vorhersehen kann'),
+            ('warum beeilt sich ein Mensch, wenn er rechtzeitig kommen will?', 'weil weniger Zeit bleibt als nötig ist'),
+            ('warum macht ein Mensch ohne nachzudenken, was er jeden Tag macht?', 'weil Wiederholung eine Handlung zur Gewohnheit macht'),
+            ('warum sieht ein Mensch das Zeichen nicht, wenn er wegschaut?', 'weil ein Mensch nur sieht, wohin er schaut'),
+        ),
     ),
     "fr": dict(
         имена=("Paul", "Louis", "Jules", "Hugo"),
@@ -130,11 +177,27 @@ stanco» верно счётом ролей и ложно речью. Втора
             ("{X} regardait ailleurs", "{X} n'a pas vu le signe", "{X} regardait ailleurs", "une personne regarde ailleurs", "elle ne voit pas le signe"),
         ),
         правило="{п}. donc {с}.", вопрос="{п}. donc {с}. pourquoi {с} ? parce que {пп}.",
-        кратко="pourquoi, quand {оп}, {ов} ? parce que {оп}.",
+        кратко="pourquoi, quand {оп}, {ов} ? {осн}.",
         цели=(("une personne dort", "pour se reposer"), ("une personne mange", "pour ne pas avoir faim"), ("une personne apprend", "pour savoir faire plus")), зачем_рамка="pourquoi {д} ? {ц}.",
         вывод="{з} {п}. donc {с}.",
         закон="quand {оп}, {ос}.",
         закон_вопрос="quand {оп}, {ос}. pourquoi {ов} ? parce que {оп}.",
+        вопросы_многих=(
+            "pourquoi les gens font-ils plus d'erreurs quand ils sont fatigués ?",
+            'pourquoi les gens cherchent-ils à manger quand ils ont faim ?',
+            "pourquoi les gens craignent-ils l'inconnu ?",
+            'pourquoi les gens se dépêchent-ils quand ils veulent arriver à temps ?',
+            "pourquoi les gens font-ils sans réfléchir ce qu'ils font chaque jour ?",
+            'pourquoi les gens ne voient-ils pas le signe quand ils regardent ailleurs ?',
+        ),
+        основания=(
+            ("pourquoi une personne fait-elle plus d'erreurs quand elle est fatiguée ?", "parce que la fatigue affaiblit l'attention"),
+            ('pourquoi une personne cherche-t-elle à manger quand elle a faim ?', 'parce que le corps demande ce qui lui manque'),
+            ('pourquoi une personne a-t-elle peur quand elle ne sait pas ce qui va arriver ?', "parce qu'on ne peut pas prévoir l'inconnu"),
+            ('pourquoi une personne se dépêche-t-elle quand elle veut arriver à temps ?', "parce qu'il reste moins de temps qu'il n'en faut"),
+            ("pourquoi une personne fait-elle sans réfléchir ce qu'elle fait chaque jour ?", 'parce que la répétition rend un geste habituel'),
+            ('pourquoi une personne ne voit-elle pas le signe quand elle regarde ailleurs ?', "parce qu'une personne ne voit que ce qu'elle regarde"),
+        ),
     ),
     "es": dict(
         имена=("Pablo", "Luis", "Diego", "Carlos"),
@@ -147,11 +210,27 @@ stanco» верно счётом ролей и ложно речью. Втора
             ("{X} miraba hacia otro lado", "{X} no vio la señal", "{X} miraba hacia otro lado", "una persona mira hacia otro lado", "no ve la señal"),
         ),
         правило="{п}. por eso {с}.", вопрос="{п}. por eso {с}. ¿por qué {с}? porque {пп}.",
-        кратко="¿por qué, cuando {оп}, {ов}? porque {оп}.",
+        кратко="¿por qué, cuando {оп}, {ов}? {осн}.",
         цели=(("una persona duerme", "para descansar"), ("una persona come", "para no tener hambre"), ("una persona estudia", "para saber hacer más")), зачем_рамка="¿por qué {д}? {ц}.",
         вывод="{з} {п}. así que {с}.",
         закон="cuando {оп}, {ос}.",
         закон_вопрос="cuando {оп}, {ос}. ¿por qué {ов}? porque {оп}.",
+        вопросы_многих=(
+            '¿por qué la gente comete más errores cuando está cansada?',
+            '¿por qué la gente busca comida cuando tiene hambre?',
+            '¿por qué la gente teme lo desconocido?',
+            '¿por qué la gente se apresura cuando quiere llegar a tiempo?',
+            '¿por qué la gente hace sin pensar lo que hace cada día?',
+            '¿por qué la gente no ve la señal cuando mira hacia otro lado?',
+        ),
+        основания=(
+            ('¿por qué una persona comete más errores cuando está cansada?', 'porque el cansancio debilita la atención'),
+            ('¿por qué una persona busca comida cuando tiene hambre?', 'porque el cuerpo pide lo que le falta'),
+            ('¿por qué una persona tiene miedo cuando no sabe qué va a pasar?', 'porque lo desconocido no se puede prever'),
+            ('¿por qué una persona se apresura cuando quiere llegar a tiempo?', 'porque queda menos tiempo del que hace falta'),
+            ('¿por qué una persona hace sin pensar lo que hace cada día?', 'porque la repetición convierte una acción en costumbre'),
+            ('¿por qué una persona no ve la señal cuando mira hacia otro lado?', 'porque una persona sólo ve aquello que mira'),
+        ),
     ),
     "it": dict(
         имена=("Marco", "Luca", "Paolo", "Matteo"),
@@ -164,11 +243,27 @@ stanco» верно счётом ролей и ложно речью. Втора
             ("{X} guardava dall'altra parte", "{X} non ha visto il segnale", "{X} guardava dall'altra parte", "una persona guarda dall'altra parte", "non vede il segnale"),
         ),
         правило="{п}. perciò {с}.", вопрос="{п}. perciò {с}. perché {с}? perché {пп}.",
-        кратко="perché, quando {оп}, {ов}? perché {оп}.",
+        кратко="perché, quando {оп}, {ов}? {осн}.",
         цели=(("una persona dorme", "per riposare"), ("una persona mangia", "per non avere fame"), ("una persona studia", "per saper fare di più")), зачем_рамка="perché {д}? {ц}.",
         вывод="{з} {п}. quindi {с}.",
         закон="quando {оп}, {ос}.",
         закон_вопрос="quando {оп}, {ос}. perché {ов}? perché {оп}.",
+        вопросы_многих=(
+            'perché le persone fanno più errori quando sono stanche?',
+            'perché le persone cercano del cibo quando hanno fame?',
+            "perché le persone temono l'ignoto?",
+            'perché le persone si affrettano quando vogliono arrivare in tempo?',
+            'perché le persone fanno senza pensare ciò che fanno ogni giorno?',
+            "perché le persone non vedono il segnale quando guardano dall'altra parte?",
+        ),
+        основания=(
+            ('perché una persona fa più errori quando è stanca?', "perché la stanchezza indebolisce l'attenzione"),
+            ('perché una persona cerca del cibo quando ha fame?', 'perché il corpo chiede ciò che gli manca'),
+            ('perché una persona ha paura quando non sa che cosa succederà?', "perché l'ignoto non si può prevedere"),
+            ('perché una persona si affretta quando vuole arrivare in tempo?', 'perché resta meno tempo di quanto serve'),
+            ('perché una persona fa senza pensare ciò che fa ogni giorno?', 'perché la ripetizione rende un gesto abituale'),
+            ("perché una persona non vede il segnale quando guarda dall'altra parte?", 'perché una persona vede solo ciò che guarda'),
+        ),
     ),
     "pt": dict(
         имена=("Pedro", "Tiago", "Rui", "João"),
@@ -182,11 +277,27 @@ stanco» верно счётом ролей и ложно речью. Втора
         ),
         # португальский вопрос ставит «é que» между вопросным словом и клаузой
         правило="{п}. por isso {с}.", вопрос="{п}. por isso {с}. porque é que {в}? porque {пп}.",
-        кратко="porque é que, quando {оп}, {ов}? porque {оп}.",
+        кратко="porque é que, quando {оп}, {ов}? {осн}.",
         цели=(("uma pessoa dorme", "para descansar"), ("uma pessoa come", "para não ter fome"), ("uma pessoa estuda", "para saber fazer mais")), зачем_рамка="porque é que {д}? {ц}.",
         вывод="{з} {п}. portanto {с}.",
         закон="quando {оп}, {ос}.",
         закон_вопрос="quando {оп}, {ос}. porque é que {ов}? porque {оп}.",
+        вопросы_многих=(
+            'porque é que as pessoas cometem mais erros quando estão cansadas?',
+            'porque é que as pessoas procuram comida quando têm fome?',
+            'porque é que as pessoas temem o desconhecido?',
+            'porque é que as pessoas se apressam quando querem chegar a tempo?',
+            'porque é que as pessoas fazem sem pensar o que fazem todos os dias?',
+            'porque é que as pessoas não veem o sinal quando olham para o outro lado?',
+        ),
+        основания=(
+            ('porque é que uma pessoa comete mais erros quando está cansada?', 'porque o cansaço enfraquece a atenção'),
+            ('porque é que uma pessoa procura comida quando tem fome?', 'porque o corpo pede o que lhe falta'),
+            ('porque é que uma pessoa tem medo quando não sabe o que vai acontecer?', 'porque o desconhecido não se pode prever'),
+            ('porque é que uma pessoa se apressa quando quer chegar a tempo?', 'porque resta menos tempo do que é preciso'),
+            ('porque é que uma pessoa faz sem pensar o que faz todos os dias?', 'porque a repetição torna um gesto habitual'),
+            ('porque é que uma pessoa não vê o sinal quando olha para o outro lado?', 'porque uma pessoa só vê aquilo para onde olha'),
+        ),
     ),
     "nl": dict(
         имена=("Piet", "Jan", "Max", "Tim"),
@@ -199,11 +310,26 @@ stanco» верно счётом ролей и ложно речью. Втора
             ("{X} keek de andere kant op", "heeft {X} het teken niet gezien", "{X} de andere kant op keek", "een mens de andere kant op kijkt", "ziet hij het teken niet"),
         ),
         правило="{п}. daarom {с}.", вопрос="{п}. daarom {с}. waarom {с}? omdat {пп}.",
-        кратко="waarom {ов} als {оп}? omdat {оп}.",
         цели=(("slaapt een mens", "om uit te rusten"), ("eet een mens", "om geen honger te hebben"), ("leert een mens", "om meer te kunnen")), зачем_рамка="waarom {д}? {ц}.",
         вывод="{з} {п}. dus {с}.",
         закон="als {оп}, {ос}.",
         закон_вопрос="als {оп}, {ос}. waarom {ов}? omdat {оп}.",
+        вопросы_многих=(
+            'waarom maken mensen meer fouten als ze moe zijn?',
+            'waarom zoeken mensen eten als ze honger hebben?',
+            'waarom vrezen mensen het onbekende?',
+            'waarom haasten mensen zich als ze op tijd willen komen?',
+            'waarom doen mensen zonder na te denken wat ze elke dag doen?',
+            'waarom zien mensen het teken niet als ze de andere kant op kijken?',
+        ),
+        основания=(
+            ('waarom maakt een mens meer fouten als hij moe is?', 'omdat vermoeidheid de aandacht verzwakt'),
+            ('waarom zoekt een mens eten als hij honger heeft?', 'omdat het lichaam vraagt wat het mist'),
+            ('waarom is een mens bang als hij niet weet wat er komt?', 'omdat het onbekende niet te voorzien is'),
+            ('waarom haast een mens zich als hij op tijd wil komen?', 'omdat er minder tijd over is dan nodig is'),
+            ('waarom doet een mens zonder na te denken wat hij elke dag doet?', 'omdat herhaling een handeling tot gewoonte maakt'),
+            ('waarom ziet een mens het teken niet als hij de andere kant op kijkt?', 'omdat een mens alleen ziet waar hij naar kijkt'),
+        ),
     ),
     "pl": dict(
         имена=("Piotr", "Jan", "Marek", "Adam"),
@@ -216,14 +342,30 @@ stanco» верно счётом ролей и ложно речью. Втора
             ("{X} patrzył w inną stronę", "{X} nie zobaczył znaku", "{X} patrzył w inną stronę", "człowiek patrzy w inną stronę", "nie widzi znaku"),
         ),
         правило="{п}. dlatego {с}.", вопрос="{п}. dlatego {с}. dlaczego {с}? ponieważ {пп}.",
-        кратко="dlaczego, kiedy {оп}, {ов}? ponieważ {оп}.",
+        кратко="dlaczego, kiedy {оп}, {ов}? {осн}.",
         цели=(("człowiek śpi", "żeby odpocząć"), ("człowiek je", "żeby nie być głodnym"), ("człowiek się uczy", "żeby umieć więcej")), зачем_рамка="dlaczego {д}? {ц}.",
         вывод="{з} {п}. więc {с}.",
         закон="kiedy {оп}, {ос}.",
         закон_вопрос="kiedy {оп}, {ос}. dlaczego {ов}? ponieważ {оп}.",
+        вопросы_многих=(
+            'dlaczego ludzie popełniają więcej błędów, kiedy są zmęczeni?',
+            'dlaczego ludzie szukają jedzenia, kiedy są głodni?',
+            'dlaczego ludzie boją się nieznanego?',
+            'dlaczego ludzie się spieszą, kiedy chcą zdążyć?',
+            'dlaczego ludzie robią bez namysłu to, co robią codziennie?',
+            'dlaczego ludzie nie widzą znaku, kiedy patrzą w inną stronę?',
+        ),
+        основания=(
+            ('dlaczego człowiek popełnia więcej błędów, kiedy jest zmęczony?', 'bo zmęczenie osłabia uwagę'),
+            ('dlaczego człowiek szuka jedzenia, kiedy jest głodny?', 'bo ciało domaga się tego, czego mu brakuje'),
+            ('dlaczego człowiek boi się, kiedy nie wie, co będzie?', 'bo nieznanego nie można przewidzieć'),
+            ('dlaczego człowiek się spieszy, kiedy chce zdążyć?', 'bo zostaje mniej czasu, niż potrzeba'),
+            ('dlaczego człowiek robi bez namysłu to, co robi codziennie?', 'bo powtarzanie czyni czynność nawykiem'),
+            ('dlaczego człowiek nie widzi znaku, kiedy patrzy w inną stronę?', 'bo człowiek widzi tylko to, na co patrzy'),
+        ),
     ),
 }
-ФОРМЫ = ("правило", "вопрос", "закон", "закон_вопрос", "кратко", "зачем", "вывод")
+ФОРМЫ = ("правило", "вопрос", "закон", "закон_вопрос", "кратко", "основание", "основание_многих", "зачем", "вывод")
 
 for _яз, _я in ЯЗЫКИ.items():
     assert len(_я["пары"]) == len(РОДЫ), (_яз, len(_я["пары"]))
@@ -232,6 +374,12 @@ for _яз, _я in ЯЗЫКИ.items():
         assert len(_п) == 5, (_яз, _п)
     assert "вопр_след" not in _я or len(_я["вопр_след"]) == len(РОДЫ), _яз
     assert "общ_вопрос" not in _я or len(_я["общ_вопрос"]) == len(РОДЫ), _яз
+    assert len(_я["основания"]) == len(РОДЫ), _яз
+    assert len(_я["вопросы_многих"]) == len(РОДЫ), _яз
+    for _в in _я["вопросы_многих"]:
+        assert _в.rstrip().endswith("?"), (_яз, _в)
+    for _в, _о in _я["основания"]:
+        assert _в.rstrip().endswith(("?", "؟")) and _о and not _о.endswith("."), (_яз, _в)
 
 
 def страница(язык, форма, род, i=0):
@@ -250,12 +398,40 @@ def страница(язык, форма, род, i=0):
         X = я["имена"][i % len(я["имена"])]
         закон = я["закон"].format(оп=общ_п, ос=общ_с).rstrip(".")
         return я["вывод"].format(з=закон + ".", п=причина.format(X=X), с=следствие.format(X=X))
+    if форма == "основание":
+        # ОСНОВАНИЕ ЗАКОНА — причина ОДНИМ УРОВНЕМ НИЖЕ, и без неё дом отвечал
+        # кругом. Форма «кратко» спрашивала «почему, когда человек устал, он
+        # ошибается чаще?» и отвечала «потому что человек устал» — то есть
+        # повторяла условие, стоящее в самом вопросе. Части истинны, а ответ
+        # пуст: круг есть ложь ФОРМЫ при истинных частях, и корпус не вправе
+        # учить ему (М-182).
+        #
+        # Основание не выводится из пары и не может быть выведено: «усталость
+        # ослабляет внимание» — знание о человеке, а не следствие объявленного.
+        # Потому оно ОБЪЯВЛЕНО вместе со своим вопросом, целой фразой на язык:
+        # вопрос о законе стоит в естественном порядке («почему человек
+        # ошибается чаще, когда устал?»), какого не даст ни одна перестановка
+        # объявленных кусков, а связка причины входит в само основание — так
+        # французское «parce qu'on» и польское «bo» встают без склейки в коде.
+        вопрос, основание = я["основания"][род]
+        return f"{вопрос} {основание}."
+    if форма == "основание_многих":
+        # ТОТ ЖЕ ЗАКОН, СПРОШЕННЫЙ О МНОГИХ. Обобщённое единственное («человек
+        # боится») и обобщённое множественное («люди боятся») суть два регистра
+        # одного закона, и человек спрашивает вторым не реже первого. Ответ у
+        # обоих ОДИН — то самое основание: так дом показывает, что поверхность
+        # вопроса меняется, а причина нет, и это первый признак, по которому
+        # рынок отличает форму от строки.
+        return f'{я["вопросы_многих"][род]} {я["основания"][род][1]}.'
     if форма == "кратко":
+        if "кратко" not in я:
+            return None
         # ВОПРОС ОДНИМ ПРЕДЛОЖЕНИЕМ, БЕЗ ПРЕДШЕСТВУЮЩЕГО ЗАКОНА: так спрашивает
         # человек («почему человек ошибается, когда устал?»), и до этой формы
         # весь род требовал, чтобы закон стоял перед вопросом.
         общ_в = (я.get("общ_вопрос") or ())
-        return я["кратко"].format(оп=общ_п, ос=общ_с, ов=(общ_в[род] if общ_в else общ_с))
+        return я["кратко"].format(оп=общ_п, ос=общ_с, ов=(общ_в[род] if общ_в else общ_с),
+                                  осн=я["основания"][род][1])
     if форма == "закон_вопрос":
         # ВОПРОС НАД ОБОБЩЕНИЕМ: человек спрашивает о ЧЕЛОВЕКЕ, а не об имени
         # («почему человек ошибается, когда устал?»), и до этой формы весь род
@@ -283,7 +459,11 @@ def _все_показы():
         for род in РОДЫ:
             вон[страница(язык, "закон", род)] = (язык, "закон")
             вон[страница(язык, "закон_вопрос", род)] = (язык, "закон_вопрос")
-            вон[страница(язык, "кратко", род)] = (язык, "кратко")
+            вон[страница(язык, "основание", род)] = (язык, "основание")
+            вон[страница(язык, "основание_многих", род)] = (язык, "основание_многих")
+            с = страница(язык, "кратко", род)
+            if с:
+                вон[с] = (язык, "кратко")
             for i in range(len(я["имена"])):
                 вон[страница(язык, "вывод", род, i)] = (язык, "вывод")
             for i in range(len(я["имена"])):
@@ -320,6 +500,8 @@ def _самопроверка():
     for язык, я in ЯЗЫКИ.items():
         for форма in ФОРМЫ:
             с = цель(язык, 0) if форма == "зачем" else страница(язык, форма, УСТАЛОСТЬ)
+            if с is None:
+                continue
             судимо, истинно = судить(с)
             assert судимо and истинно, (язык, форма, с)
         # МУТАНТ: чужая причина при этом следствии
@@ -331,6 +513,8 @@ def _самопроверка():
     for язык in ("ru", "en", "de"):
         for форма in ФОРМЫ:
             печать = цель(язык, 0) if форма == "зачем" else страница(язык, форма, УСТАЛОСТЬ)
+            if печать is None:
+                continue
             print("  ", печать[:104])
     print(f"  мутантов поймано: {мутанты}")
     print(f"  дом пишет показов: {len(ПОКАЗЫ)} (языков {len(ЯЗЫКИ)}, родов {len(РОДЫ)}, форм {len(ФОРМЫ)})")
