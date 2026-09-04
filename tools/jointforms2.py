@@ -78,34 +78,89 @@ import natureforms as N  # noqa: E402
                поровну="mam {a} {ва}, ty masz {a} {ва}. kto ma więcej? nikt: {a} − {a} = 0, po równo."),
 }
 
+
+# ВЕЖЛИВЫЙ РЕГИСТР — второе лицо на «вы». Дом говорит собеседнику «у тебя», и
+# потому обязан уметь сказать «у вас»: замер по своду нашёл ноль строк с «вы»
+# при девяноста двух с «ты», а по-русски, по-немецки, по-французски,
+# по-испански, по-итальянски и по-польски это не оттенок, а грубость.
+# Английский различия не имеет и пишет одну форму (объявлено списком).
+БЕЗ_РАЗЛИЧИЯ_РЕГИСТРА = frozenset({"en"})
+ВЕЖЛИВЫЕ = {
+    "ru": dict(
+        вместе="у меня {a} {ва}, у вас {b} {вб}. сколько у нас вместе? {c} {вс}: {a} + {b} = {c}.",
+        разница="у меня {a} {ва}, у вас {b} {вб}. на сколько у меня больше? на {d}: {a} − {b} = {d}.",
+        поровну="у меня {a} {ва}, у вас {a} {ва}. у кого больше? ни у кого: {a} − {a} = 0, поровну.",
+    ),
+    "de": dict(
+        вместе="ich habe {a} {ва}, Sie haben {b} {вб}. wie viele haben wir zusammen? {c} {вс}: {a} + {b} = {c}.",
+        разница="ich habe {a} {ва}, Sie haben {b} {вб}. wie viele habe ich mehr? {d} mehr: {a} − {b} = {d}.",
+        поровну="ich habe {a} {ва}, Sie haben {a} {ва}. wer hat mehr? niemand: {a} − {a} = 0, gleich viele.",
+    ),
+    "fr": dict(
+        вместе="j'ai {a} {ва}, vous avez {b} {вб}. combien avons-nous ensemble ? {c} {вс} : {a} + {b} = {c}.",
+        разница="j'ai {a} {ва}, vous avez {b} {вб}. combien en ai-je de plus ? {d} de plus : {a} − {b} = {d}.",
+        поровну="j'ai {a} {ва}, vous avez {a} {ва}. qui en a plus ? personne : {a} − {a} = 0, autant l'un que l'autre.",
+    ),
+    "es": dict(
+        вместе="yo tengo {a} {ва}, usted tiene {b} {вб}. ¿cuántas tenemos juntos? {c} {вс}: {a} + {b} = {c}.",
+        разница="yo tengo {a} {ва}, usted tiene {b} {вб}. ¿cuántas tengo yo de más? {d} de más: {a} − {b} = {d}.",
+        поровну="yo tengo {a} {ва}, usted tiene {a} {ва}. ¿quién tiene más? nadie: {a} − {a} = 0, por igual.",
+    ),
+    "it": dict(
+        вместе="io ho {a} {ва}, Lei ha {b} {вб}. quante ne abbiamo insieme? {c} {вс}: {a} + {b} = {c}.",
+        разница="io ho {a} {ва}, Lei ha {b} {вб}. quante ne ho in più? {d} in più: {a} − {b} = {d}.",
+        поровну="io ho {a} {ва}, Lei ha {a} {ва}. chi ne ha di più? nessuno: {a} − {a} = 0, in parti uguali.",
+    ),
+    "pt": dict(
+        вместе="eu tenho {a} {ва}, você tem {b} {вб}. quantas temos juntos? {c} {вс}: {a} + {b} = {c}.",
+        разница="eu tenho {a} {ва}, você tem {b} {вб}. quantas tenho eu a mais? a diferença é {d}: {a} − {b} = {d}.",
+        поровну="eu tenho {a} {ва}, você tem {a} {ва}. quem tem mais? ninguém: {a} − {a} = 0, por igual.",
+    ),
+    "nl": dict(
+        вместе="ik heb {a} {ва}, u heeft {b} {вб}. hoeveel hebben wij samen? {c} {вс}: {a} + {b} = {c}.",
+        разница="ik heb {a} {ва}, u heeft {b} {вб}. hoeveel heb ik er meer? {d} meer: {a} − {b} = {d}.",
+        поровну="ik heb {a} {ва}, u heeft {a} {ва}. wie heeft er meer? niemand: {a} − {a} = 0, evenveel.",
+    ),
+    "pl": dict(
+        вместе="mam {a} {ва}, pan ma {b} {вб}. ile mamy razem? {c} {вс}: {a} + {b} = {c}.",
+        разница="mam {a} {ва}, pan ma {b} {вб}. o ile mam więcej? o {d}: {a} − {b} = {d}.",
+        поровну="mam {a} {ва}, pan ma {a} {ва}. kto ma więcej? nikt: {a} − {a} = 0, po równo.",
+    ),
+}
+
 ЯЗЫКИ = tuple(РАМКИ)
-ФОРМЫ = ("вместе", "разница", "поровну")
+ФОРМЫ = ("вместе", "разница", "поровну", "вместе_вы", "разница_вы", "поровну_вы")
 
 for _a, _b in ПАРЫ:
     assert _a > _b > 0, (_a, _b)
 for _яз in ЯЗЫКИ:
     assert len(ВЕЩИ[_яз]) == len(ВЕЩИ["ru"]), _яз
+    assert (_яз in БЕЗ_РАЗЛИЧИЯ_РЕГИСТРА) != (_яз in ВЕЖЛИВЫЕ), _яз
 
 
 def страница(язык, форма, i):
     вещи = ВЕЩИ[язык]
     в = вещи[i % len(вещи)]
-    if форма == "поровну":
+    рамки = ВЕЖЛИВЫЕ[язык] if форма.endswith("_вы") else РАМКИ[язык]
+    ключ = форма[:-3] if форма.endswith("_вы") else форма
+    if ключ == "поровну":
         a = РАВНЫЕ[i % len(РАВНЫЕ)]
-        return РАМКИ[язык]["поровну"].format(a=a, ва=N.вещь(язык, в, a))
+        return рамки["поровну"].format(a=a, ва=N.вещь(язык, в, a))
     a, b = ПАРЫ[i % len(ПАРЫ)]
     поля = dict(a=a, b=b, ва=N.вещь(язык, в, a), вб=N.вещь(язык, в, b))
-    if форма == "вместе":
+    if ключ == "вместе":
         c = a + b
-        return РАМКИ[язык]["вместе"].format(c=c, вс=N.вещь(язык, в, c), **поля)
-    return РАМКИ[язык]["разница"].format(d=a - b, **поля)
+        return рамки["вместе"].format(c=c, вс=N.вещь(язык, в, c), **поля)
+    return рамки["разница"].format(d=a - b, **поля)
 
 
 def _показы():
     вон = {}
     for язык in ЯЗЫКИ:
         for форма in ФОРМЫ:
-            сколько = len(РАВНЫЕ) if форма == "поровну" else len(ПАРЫ)
+            if форма.endswith("_вы") and язык in БЕЗ_РАЗЛИЧИЯ_РЕГИСТРА:
+                continue
+            сколько = len(РАВНЫЕ) if форма.startswith("поровну") else len(ПАРЫ)
             for i in range(сколько):
                 вон[страница(язык, форма, i)] = (язык, форма)
     return вон
