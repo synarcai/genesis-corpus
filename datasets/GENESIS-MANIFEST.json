@@ -636,6 +636,31 @@
       "actors": []
     },
     {
+      "name": "infer",
+      "file": "datasets/genesis_infer.txt",
+      "genre": "STRICT INFERENCE — modus ponens, modus tollens, and TWO FALLACIES named as fallacies. The map of reasoning forms (reports/REASONING-2026-09-04.md) named modus tollens the corpus's chief debt: the corpus showed the step from premise to consequence and never the step from the denial of the consequence to the denial of the premise. The debt was named together with its condition: build it not on facts of the world («ice is not seen on the surface → ice does not float» is a strict implication the world does not give) but on a row of conditionals each of which is strict. The row chosen is arithmetic, and it is chosen FOR THE ORACLE: «if a number is divisible by 4, it is divisible by 2» is strict by division, not by declaration, and so every show of this world is checked by RECOUNTING — the court knows nothing of what the house meant to say, and catches a swapped number by counting. The last two forms matter more than the first three: «6 is divisible by 2. does it follow that 6 is divisible by 4? no: 6 is not divisible by 4» shows an INVALID step together with its refutation. A corpus that shows only valid steps teaches a pattern; a corpus that shows an invalid step with its counterexample teaches the difference. The witness of both fallacies is THE SAME number — one observation destroys both wrong steps at once. Nine languages.",
+      "act": [
+        "decide",
+        "refute",
+        "recount",
+        "translate"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "opposites",
       "file": "datasets/genesis_opposites.txt",
       "genre": "OPPOSITES — the first relation in the corpus of a WORD TO A WORD, not of a word to a thing, and there was not one show of it in the whole svod. A partner knows not only what a thing IS (the house of definitions) and how much of it there is (the house of nature) but also what it is OPPOSED to. The law that judges this is SYMMETRY: the relation is mutual, and if big is opposed to small then small is opposed to big — both sides stand in the shows, because a corpus that showed one side would teach half a law. The frame is a CITATION frame («what is the opposite of the word big?») and that is a decision, not a convenience: «opposite to BIG» would want a dative in Russian and a genitive in Polish, and every language would want two or three forms per word; the citation frame takes the word in its dictionary form, so the house declares exactly what it knows and invents no case it has not checked. Twelve pairs in each of the nine languages of the attack, three forms.",
@@ -4005,10 +4030,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 19134945,
+      "size": 19233254,
       "tiers": [],
       "text": "mix",
-      "lines": 250161
+      "lines": 251231
     },
     {
       "name": "full",
@@ -4023,10 +4048,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 23648602,
+      "size": 23746911,
       "tiers": [],
       "text": "mix",
-      "lines": 323828
+      "lines": 324898
     },
     {
       "name": "minimal",

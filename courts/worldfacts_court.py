@@ -29,6 +29,20 @@ def _судить(строка):
 def main():
     import collections
     from genesis import worlds
+    # ЧУЖОЙ ПОКАЗ НЕ ПОВТОРЯЕТСЯ (М-172, вторая грань): строка, уже стоящая
+    # в другом мире свода, есть не знание, а вес. Первая волна дома написала
+    # «iron is a metal.» и «the sun is a star.» вслед за genesis_l4.
+    чужие = set()
+    for путь in worlds(kind="shows"):
+        if путь.name == "genesis_worldfacts.txt":
+            continue
+        for с in путь.read_text(encoding="utf-8", errors="replace").splitlines():
+            с = с.strip()
+            if с and not с.startswith("\x0c"):
+                чужие.add(с)
+    двойники = sorted(с for с in F.ПОКАЗЫ if с in чужие)
+    for с in двойники[:5]:
+        print(f"  ДВОЙНИК ЧУЖОГО МИРА: {с[:110]}")
     итог = collections.Counter(); примеры = []
     for путь in worlds(kind="shows"):
         if путь.name != "genesis_worldfacts.txt":
@@ -44,8 +58,9 @@ def main():
                     примеры.append(с)
     for п in примеры:
         print(f"  ЛОЖЬ: {п[:120]}")
-    поза = "PASS" if итог["ложных"] == 0 and итог["несудимых"] == 0 else "FAIL"
-    print(f"ФАКТЫ МИРА {поза}: {итог['ложных']} ложных из {итог['судимых']} судимых, несудимых {итог['несудимых']}")
+    поза = "PASS" if итог["ложных"] == 0 and итог["несудимых"] == 0 and not двойники else "FAIL"
+    print(f"ФАКТЫ МИРА {поза}: {итог['ложных']} ложных из {итог['судимых']} судимых, "
+          f"несудимых {итог['несудимых']}, двойников чужих миров {len(двойники)}")
     return 0 if поза == "PASS" else 1
 
 
