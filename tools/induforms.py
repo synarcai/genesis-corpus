@@ -31,8 +31,11 @@
 объявивший «1681 = 41 × 41» рукой, был бы домом веры. Суд пересчитывает всё —
 и случаи, и простоту, и разложение (courts/indu_court.py).
 
-ПЯТЬ ЯЗЫКОВ — названный долг, тот же, что у дома фактов мира: обобщение и его
-предел суть предложения, которые надо НАПИСАТЬ верно, а не перевести на глаз.
+ДЕВЯТЬ ЯЗЫКОВ: названный долг пяти уплачен в тот же день. Замер, вызвавший
+уплату: четыре языка (it, pt, nl, pl) стояли в восемнадцати домах форм из
+двадцати одного, и недостающие три несли РОВНО самые дорогие формы дня —
+основание, предел обобщения, различение факта от мнения. Перекос по массе был
+мал (1,5×), по ФОРМАМ — не мал вовсе.
 
     python3 tools/induforms.py    # самопроверка с мутантами
 """
@@ -172,6 +175,82 @@ def _мерсенн(n):
                причины=("cada número impar siguiente completa el cuadrado n × n hasta el cuadrado (n + 1) × (n + 1)",
                         "sumando la serie consigo misma escrita al revés se obtienen n pares, y cada par vale n + 1",
                         "añadir el cubo de n + 1 completa el cuadrado de la suma hasta el cuadrado de la suma siguiente")),
+    "it": dict(простое="{в} = {з} è primo.",
+               равенство="{л} = {п}.",
+               голое="{з} è primo.",
+               нет_голое="no: {з} non è primo, perché {з} = {a} × {b}.",
+               вопрос="ne segue che {у}?",
+               нет="no: per {к} = {x} viene {з}, e {з} = {a} × {b}.",
+               да="{c} casi non lo dimostrano, ma è vero: {п}.",
+               утверждения=(
+                            "n² + n + 41 è primo per ogni n",
+                            "2^n − 1 è primo per ogni n primo",
+                            "la somma dei primi n numeri dispari è n × n",
+                            "la somma dei primi n numeri è n × (n + 1) ÷ 2",
+                            "n! + 1 è primo per ogni n",
+                            "la somma dei primi n cubi è il quadrato della somma dei primi n numeri",
+                            "ogni numero dispari maggiore di 1 è primo"),
+               причины=(
+                            "ogni numero dispari successivo completa il quadrato n × n nel quadrato (n + 1) × (n + 1)",
+                            "sommando la serie a sé stessa scritta al contrario si ottengono n coppie, e ogni coppia vale n + 1",
+                            "aggiungere il cubo di n + 1 completa il quadrato della somma nel quadrato della somma successiva"),),
+    "pt": dict(простое="{в} = {з} é primo.",
+               равенство="{л} = {п}.",
+               голое="{з} é primo.",
+               нет_голое="não: {з} não é primo, pois {з} = {a} × {b}.",
+               вопрос="segue-se que {у}?",
+               нет="não: em {к} = {x} dá {з}, e {з} = {a} × {b}.",
+               да="{c} casos não o provam, mas é verdade: {п}.",
+               утверждения=(
+                            "n² + n + 41 é primo para todo n",
+                            "2^n − 1 é primo para todo n primo",
+                            "a soma dos primeiros n números ímpares é n × n",
+                            "a soma dos primeiros n números é n × (n + 1) ÷ 2",
+                            "n! + 1 é primo para todo n",
+                            "a soma dos primeiros n cubos é o quadrado da soma dos primeiros n números",
+                            "todo número ímpar maior que 1 é primo"),
+               причины=(
+                            "cada número ímpar seguinte completa o quadrado n × n no quadrado (n + 1) × (n + 1)",
+                            "somando a série a si mesma escrita ao contrário obtêm-se n pares, e cada par vale n + 1",
+                            "somar o cubo de n + 1 completa o quadrado da soma no quadrado da soma seguinte"),),
+    "nl": dict(простое="{в} = {з} is een priemgetal.",
+               равенство="{л} = {п}.",
+               голое="{з} is een priemgetal.",
+               нет_голое="nee: {з} is geen priemgetal, want {з} = {a} × {b}.",
+               вопрос="volgt daaruit dat {у}?",
+               нет="nee: bij {к} = {x} komt {з}, en {з} = {a} × {b}.",
+               да="{c} gevallen bewijzen het niet, maar het is waar: {п}.",
+               утверждения=(
+                            "n² + n + 41 voor elke n een priemgetal is",
+                            "2^n − 1 voor elk priemgetal n een priemgetal is",
+                            "de som van de eerste n oneven getallen n × n is",
+                            "de som van de eerste n getallen n × (n + 1) ÷ 2 is",
+                            "n! + 1 voor elke n een priemgetal is",
+                            "de som van de eerste n derde machten het kwadraat van de som van de eerste n getallen is",
+                            "elk oneven getal groter dan 1 een priemgetal is"),
+               причины=(
+                            "elk volgend oneven getal het kwadraat n × n aanvult tot het kwadraat (n + 1) × (n + 1)",
+                            "door de reeks bij zichzelf achterstevoren op te tellen men n paren krijgt, en elk paar n + 1 is",
+                            "het toevoegen van de derde macht van n + 1 het kwadraat van de som aanvult tot het kwadraat van de volgende som"),),
+    "pl": dict(простое="{в} = {з} jest liczbą pierwszą.",
+               равенство="{л} = {п}.",
+               голое="{з} jest liczbą pierwszą.",
+               нет_голое="nie: {з} nie jest liczbą pierwszą, bo {з} = {a} × {b}.",
+               вопрос="czy wynika z tego, że {у}?",
+               нет="nie: przy {к} = {x} wychodzi {з}, a {з} = {a} × {b}.",
+               да="{c} przypadki tego nie dowodzą, ale to prawda: {п}.",
+               утверждения=(
+                            "n² + n + 41 jest liczbą pierwszą dla każdego n",
+                            "2^n − 1 jest liczbą pierwszą dla każdej liczby pierwszej n",
+                            "suma pierwszych n liczb nieparzystych to n × n",
+                            "suma pierwszych n liczb to n × (n + 1) ÷ 2",
+                            "n! + 1 jest liczbą pierwszą dla każdego n",
+                            "suma pierwszych n sześcianów to kwadrat sumy pierwszych n liczb",
+                            "każda liczba nieparzysta większa od 1 jest liczbą pierwszą"),
+               причины=(
+                            "każda następna liczba nieparzysta dopełnia kwadrat n × n do kwadratu (n + 1) × (n + 1)",
+                            "dodając szereg do samego siebie zapisanego wspak otrzymujemy n par, a każda para to n + 1",
+                            "dodanie sześcianu n + 1 dopełnia kwadrat sumy do kwadratu następnej sumy"),),
 }
 
 ЯЗЫКИ = tuple(СЛОВА)

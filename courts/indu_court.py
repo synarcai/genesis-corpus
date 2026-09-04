@@ -42,8 +42,10 @@ from closedworld import Слой  # noqa: E402 — the palata hands the world's 
 # ИГЛЫ СТРОЧНЫЕ, ИБО СРАВНЕНИЕ ИДЁТ ПО СТРОЧНОЙ СТРОКЕ. Немецкое «ist eine
 # Primzahl» с большой буквы не находилось в строчном тексте, и весь немецкий
 # ряд голых чисел выпадал из суда — молча, как несудимый.
-ПРОСТО = ("— простое", "is prime", "ist eine primzahl", "est premier", "es primo")
-НЕ_ПРОСТО = ("не просто", "is not prime", "ist keine primzahl", "n'est pas premier", "no es primo")
+ПРОСТО = ("— простое", "is prime", "ist eine primzahl", "est premier", "es primo",
+          "è primo", "é primo", "is een priemgetal", "jest liczbą pierwszą")
+НЕ_ПРОСТО = ("не просто", "is not prime", "ist keine primzahl", "n'est pas premier", "no es primo",
+             "non è primo", "não é primo", "is geen priemgetal", "nie jest liczbą pierwszą")
 # ПОДЛЕЖАЩЕЕ ПРОСТОТЫ ЕСТЬ ГОЛОЕ ЧИСЛО ПОСЛЕ ПОСЛЕДНЕГО РАЗДЕЛИТЕЛЯ, а не
 # последнее число перед словом. «2^n − 1 is prime for every prime n» кончается
 # цифрой 1, и суд, читавший последнее число, объявлял единицу непростой и
