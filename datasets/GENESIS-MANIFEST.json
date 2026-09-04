@@ -810,6 +810,30 @@
       "actors": []
     },
     {
+      "name": "joint2",
+      "file": "datasets/genesis_joint2.txt",
+      "genre": "JOINT COUNT — «i have», «you have», «we have». All the arithmetic of the corpus until now spoke OF THIRD PERSONS: «anna has 7 balls, vanya has 4 balls». The measure that called this house into being: the svod carries 141 lines of «у меня», 10 of «у нас» and ZERO of «у тебя». An organism able to count only what belongs to others cannot add its own to what the interlocutor has just named — and that is the first thing a conversation about a matter requires. Three forms: the sum («how many do we have together? 11 apples: 7 + 4 = 11»), the difference, and EQUALITY («i have 6, you have 6. who has more? neither: 6 − 6 = 0, equally many») — the third is not an ornament: without it an organism asked «who has more» will always name somebody. The court checks TWO oracles at once: the arithmetic and THE COUNT FORM OF THE THING at each number («7 яблок», «4 яблока», «11 яблок»), because this world speaks in the first and second person and repeats one thing at three different counts in a single line — «7 яблока» would be true by arithmetic and false by speech, and no arithmetic court would ever see it.",
+      "act": [
+        "recount",
+        "compare",
+        "translate"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "reply",
       "file": "datasets/genesis_reply.txt",
       "genre": "REPLY — advice to the interlocutor RESTING ON A DECLARED LAW. The owner's order about «basic behavioural and psychological laws» was half closed: the behaviour house gives the LAW but not its APPLICATION TO THE PERSON SPEAKING. Here a person names their state and the answer is not sympathy without ground but advice with a checkable law behind it: «i am tired. what should i do? take a rest: when a person is tired, that person makes more mistakes.» The law is never rewritten here — it is quoted from the behaviour house, and the court reads it exactly so: it does not trust the house's own list but compares the tail of the line with the neighbour's declaration word for word. Advice under which a law of a DIFFERENT genus is placed is true in both halves and false as a whole — the same nature as a circular answer. The question head is chosen BY GENUS: tiredness, hunger and haste are asked WHAT TO DO (the state is fixable by action); fear, habit and missed attention are asked WHY (there is nothing to fix, there is something to understand). The sympathetic pair is declared for the NEIGHBOUR and never written as a show — see М-267.",
