@@ -25,9 +25,11 @@
 
 СЛОВАРЬ НЕ ОБЪЯВЛЯЕТСЯ ЗАНОВО: имена, товары и их формы счёта берутся из
 дома страниц действия — два дома, один словарь (тот же ход, что у дома
-сочленений). Оттого языков здесь СЕМЬ, а не девять: голландский и польский
-своих товаров в том доме ещё не имеют, и писать их здесь значило бы завести
-второй словарь. Это названный долг, а не умолчание.
+сочленений). Языков здесь ДЕВЯТЬ — все девять языков атаки. Голландский вошёл парой
+«один/много»; польскому пары было мало (у него ТРИ формы при числе: 1 piłka,
+2 piłki, 5 piłek), и потому в тот же час написан дом польского счёта
+`tools/plgram.py` — тот же по устройству, что русский. Долг, названный утром,
+погашен к вечеру.
 
     python3 tools/linkforms.py    # самопроверка с мутантами
 """
@@ -183,6 +185,42 @@ def _числительные(язык):
         неправда="é verdade que {X} tem {м} {Тм}? não, {X} tem {n} {Тn}.",
         переспрос="queres dizer {n} {Тn}? sim, {n} {Тn}.",
         согласен="concordas? sim, concordo: {X} tem {n} {Тn}.",
+    ),
+    "pl": dict(
+        было="{X} miał{а} {n} {Тn}.", отдал="{X} oddał{а} {k} {Тk}.", стало="{X} ma {r} {Тr}.",
+        получил="{X} dostał{а} {k} {Тk}.",
+        а_союз="a {Y}? {Y} ma {m} {Тm}.",
+        счёт_да="czy to prawda, że {A} razy {B} to {C}? tak, {A} razy {B} to {C}: {a} × {b} = {c}.",
+        почему="dlaczego {X} ma {r} {Тr}? ponieważ {X} miał{а} {n} i oddał{а} {k}: {л}",
+        почему_голый="dlaczego? ponieważ {X} miał{а} {n} i oddał{а} {k}: {л}",
+        а_у="ile ma {Y}? {Y} ma {m} {Тm}.",
+        а_если="a gdyby było dwa razy więcej? wtedy {X} miał{а}by {д} {Тд}: {лд}",
+        наоборот="{X} ma {n} {Тn}, {Y} ma {m} {Тm}. a gdyby było odwrotnie? wtedy {X} miał{а}by {m} {Тm}, a {Y} {n} {Тn}.",
+        повтори="powtórz, proszę. powtarzam: {X} ma {n} {Тn}.",
+        объясни="nie rozumiem, wyjaśnij. wyjaśniam: było {n}, oddano {k}, zostało {r}: {л}",
+        что_дальше="co dalej? {X} ma {r} {Тr}: {л}",
+        правда="czy to prawda? tak, {X} ma {n} {Тn}.",
+        неправда="czy to prawda, że {X} ma {м} {Тм}? nie, {X} ma {n} {Тn}.",
+        переспрос="czy chodzi ci o {n} {Тn}? tak, {n} {Тn}.",
+        согласен="czy się zgadzasz? tak, zgadzam się: {X} ma {n} {Тn}.",
+    ),
+    "nl": dict(
+        было="{X} had {n} {Тn}.", отдал="{X} gaf {k} {Тk} weg.", стало="{X} heeft {r} {Тr}.",
+        получил="{X} kreeg {k} {Тk}.",
+        а_союз="en {Y}? {Y} heeft {m} {Тm}.",
+        счёт_да="is het waar dat {A} maal {B} {C} is? ja, {A} maal {B} is {C}: {a} × {b} = {c}.",
+        почему="waarom heeft {X} {r} {Тr}? omdat {X} er {n} had en {k} weggaf: {л}",
+        почему_голый="waarom? omdat {X} er {n} had en {k} weggaf: {л}",
+        а_у="hoeveel heeft {Y}? {Y} heeft {m} {Тm}.",
+        а_если="en als het er twee keer zoveel waren? dan zou {X} {д} {Тд} hebben: {лд}",
+        наоборот="{X} heeft {n} {Тn}, {Y} heeft {m} {Тm}. en als het omgekeerd was? dan zou {X} {m} {Тm} hebben en {Y} {n} {Тn}.",
+        повтори="zeg dat nog eens, alsjeblieft. ik herhaal: {X} heeft {n} {Тn}.",
+        объясни="ik begrijp het niet, leg het uit. ik leg uit: {X} had er {n}, gaf {k} weg, en houdt er {r} over: {л}",
+        что_дальше="wat gebeurt er daarna? {X} heeft {r} {Тr}: {л}",
+        правда="klopt dat? ja, {X} heeft {n} {Тn}.",
+        неправда="klopt het dat {X} {м} {Тм} heeft? nee, {X} heeft {n} {Тn}.",
+        переспрос="bedoel je {n} {Тn}? ja, {n} {Тn}.",
+        согласен="ben je het ermee eens? ja, ik ben het ermee eens: {X} heeft {n} {Тn}.",
     ),
 }
 

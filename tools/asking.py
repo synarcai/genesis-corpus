@@ -182,12 +182,12 @@ cual cuanto cuantos que es hay donde se ¿es ¿son ¿cuál ¿cuánto ¿qué ¿c�
 che cosa quanto quanti dove quale come chi perché intendi sei
 qual quantos onde como quem porque porquê queres concordas
 czy ile co jaki jaka jakie gdzie kiedy jak czym dlaczego masz zgadzasz
-wat hoe hoeveel welke waar waarom bedoel ben
+wat hoe hoeveel welke waar waarom bedoel ben klopt en
 ты а
 # ЭЛЛИПТИЧЕСКИЙ ВОПРОС ОТКРЫВАЕТСЯ СОЮЗОМ, а не вопросным словом: «а у тома?»,
 # «and tom?», «und Lena?» — так и спрашивает человек, когда предмет вопроса
 # стоит в предыдущей реплике. Займ растёт разговором (см. выше).
-and und e
+and und e a
 ¬ apa cái
 """.split())
 
