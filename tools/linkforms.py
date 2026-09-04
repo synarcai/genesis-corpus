@@ -38,7 +38,7 @@ import sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import actionpages as A  # noqa: E402
 
-ФОРМЫ = ("почему", "почему_голый", "а_у", "а_если", "что_дальше", "правда", "неправда", "переспрос", "согласен")
+ФОРМЫ = ("почему", "почему_голый", "а_у", "а_если", "наоборот", "повтори", "объясни", "что_дальше", "правда", "неправда", "переспрос", "согласен")
 
 ЯЗЫКИ = {
     "en": dict(
@@ -46,6 +46,9 @@ import actionpages as A  # noqa: E402
         получил="{X} got {k} {Тk}.",
         почему_голый="why? because {X} had {n} and gave away {k}: {л}",
         а_у="how many does {Y} have? {Y} has {m} {Тm}.",
+        наоборот="{X} has {n} {Тn}, {Y} has {m} {Тm}. what if it were the other way round? then {X} would have {m} {Тm} and {Y} would have {n} {Тn}.",
+        повтори="say that again, please. i repeat: {X} has {n} {Тn}.",
+        объясни="i do not understand, explain. i explain: {X} had {n}, gave away {k}, and has {r} left: {л}",
         почему="why does {X} have {r} {Тr}? because {X} had {n} and gave away {k}: {л}",
         а_если="what if there were twice as many? then {X} would have {д} {Тд}: {лд}",
         что_дальше="what happens next? {X} has {r} {Тr}: {л}",
@@ -59,6 +62,9 @@ import actionpages as A  # noqa: E402
         получил="{X} получил{а} {k} {Твk}.",
         почему_голый="почему? потому что было {n}, а отдано {k}: {л}",
         а_у="сколько у {Yр}? у {Yр} {m} {Тm}.",
+        наоборот="у {Xр} {n} {Тn}, у {Yр} {m} {Тm}. а если наоборот? тогда у {Xр} {m} {Тm}, а у {Yр} {n} {Тn}.",
+        повтори="повтори, пожалуйста. повторяю: у {Xр} {n} {Тn}.",
+        объясни="я не понял, объясни. объясняю: было {n}, отдано {k}, осталось {r}: {л}",
         почему="почему у {Xр} {r} {Тr}? потому что было {n}, а отдано {k}: {л}",
         а_если="а если бы их было вдвое больше? тогда у {Xр} было бы {д} {Тд}: {лд}",
         что_дальше="что дальше? у {Xр} {r} {Тr}: {л}",
@@ -72,6 +78,9 @@ import actionpages as A  # noqa: E402
         получил="{X} bekam {k} {Тk}.",
         почему_голый="warum? weil {X} {n} hatte und {k} weggab: {л}",
         а_у="wie viele hat {Y}? {Y} hat {m} {Тm}.",
+        наоборот="{X} hat {n} {Тn}, {Y} hat {m} {Тm}. und wenn es umgekehrt wäre? dann hätte {X} {m} {Тm} und {Y} {n} {Тn}.",
+        повтори="sag das bitte noch einmal. ich wiederhole: {X} hat {n} {Тn}.",
+        объясни="ich habe es nicht verstanden, erkläre es. ich erkläre: es waren {n}, {k} wurden weggegeben, es bleiben {r}: {л}",
         почему="warum hat {X} {r} {Тr}? weil {X} {n} hatte und {k} weggab: {л}",
         а_если="und wenn es doppelt so viele wären? dann hätte {X} {д} {Тд}: {лд}",
         что_дальше="was kommt dann? {X} hat {r} {Тr}: {л}",
@@ -85,6 +94,9 @@ import actionpages as A  # noqa: E402
         получил="{X} recibió {k} {Тk}.",
         почему_голый="¿por qué? porque {X} tenía {n} y dio {k}: {л}",
         а_у="¿cuántas tiene {Y}? {Y} tiene {m} {Тm}.",
+        наоборот="{X} tiene {n} {Тn}, {Y} tiene {m} {Тm}. ¿y si fuera al revés? entonces {X} tendría {m} {Тm} y {Y} tendría {n} {Тn}.",
+        повтори="repite, por favor. repito: {X} tiene {n} {Тn}.",
+        объясни="no lo he entendido, explícalo. explico: había {n}, se dieron {k}, quedan {r}: {л}",
         почему="¿por qué {X} tiene {r} {Тr}? porque {X} tenía {n} y dio {k}: {л}",
         а_если="¿y si hubiera el doble? entonces {X} tendría {д} {Тд}: {лд}",
         что_дальше="¿qué pasa después? {X} tiene {r} {Тr}: {л}",
@@ -98,6 +110,9 @@ import actionpages as A  # noqa: E402
         получил="{X} a reçu {k} {Тk}.",
         почему_голый="pourquoi ? parce que {X} en avait {n} et en a donné {k} : {л}",
         а_у="combien en a {Y} ? {Y} a {m} {Тm}.",
+        наоборот="{X} a {n} {Тn}, {Y} a {m} {Тm}. et si c'était l'inverse ? alors {X} aurait {m} {Тm} et {Y} aurait {n} {Тn}.",
+        повтори="répète, s'il te plaît. je répète : {X} a {n} {Тn}.",
+        объясни="je n'ai pas compris, explique. j'explique : il y en avait {n}, {k} ont été donnés, il en reste {r} : {л}",
         почему="pourquoi {X} a {r} {Тr} ? parce que {X} en avait {n} et en a donné {k} : {л}",
         а_если="et s'il y en avait deux fois plus ? alors {X} aurait {д} {Тд} : {лд}",
         что_дальше="que se passe-t-il ensuite ? {X} a {r} {Тr} : {л}",
@@ -111,6 +126,9 @@ import actionpages as A  # noqa: E402
         получил="{X} ha ricevuto {k} {Тk}.",
         почему_голый="perché? perché {X} aveva {n} e ha dato {k}: {л}",
         а_у="quante ne ha {Y}? {Y} ha {m} {Тm}.",
+        наоборот="{X} ha {n} {Тn}, {Y} ha {m} {Тm}. e se fosse il contrario? allora {X} avrebbe {m} {Тm} e {Y} avrebbe {n} {Тn}.",
+        повтори="ripeti, per favore. ripeto: {X} ha {n} {Тn}.",
+        объясни="non ho capito, spiega. spiego: ce n'erano {n}, {k} sono stati dati, ne restano {r}: {л}",
         почему="perché {X} ha {r} {Тr}? perché {X} aveva {n} e ha dato {k}: {л}",
         а_если="e se fossero il doppio? allora {X} avrebbe {д} {Тд}: {лд}",
         что_дальше="che cosa succede dopo? {X} ha {r} {Тr}: {л}",
@@ -124,6 +142,9 @@ import actionpages as A  # noqa: E402
         получил="{X} recebeu {k} {Тk}.",
         почему_голый="porquê? porque {X} tinha {n} e deu {k}: {л}",
         а_у="quantas tem {Y}? {Y} tem {m} {Тm}.",
+        наоборот="{X} tem {n} {Тn}, {Y} tem {m} {Тm}. e se fosse ao contrário? então {X} teria {m} {Тm} e {Y} teria {n} {Тn}.",
+        повтори="repete, por favor. repito: {X} tem {n} {Тn}.",
+        объясни="não percebi, explica. explico: havia {n}, {k} foram dados, restam {r}: {л}",
         почему="porque é que {X} tem {r} {Тr}? porque {X} tinha {n} e deu {k}: {л}",
         а_если="e se fossem o dobro? então {X} teria {д} {Тд}: {лд}",
         что_дальше="o que acontece a seguir? {X} tem {r} {Тr}: {л}",
@@ -165,6 +186,25 @@ def _поля(язык, X, Т, n, k):
 def страница(язык, форма, X=0, Т=0, n=7, k=2, Y=None):
     я = ЯЗЫКИ[язык]
     п = _поля(язык, X, Т, n, k)
+    if форма in ("повтори", "объясни"):
+        # ПОЧИНКА РАЗГОВОРА: «повтори, пожалуйста» и «я не понял, объясни» —
+        # не вопросы, а просьбы, и ответ на них ПРОВЕРЯЕМ: повтор обязан
+        # совпасть с фактом, объяснение — показать кузницу. Без этой пары
+        # продукт, которого не поняли, не имеет второго хода.
+        if форма == "повтори":
+            зачин = я["стало"].format(**dict(п, r=n, Тr=п["Тn"]))
+            return f"{зачин} {я['повтори'].format(**п)}"
+        зачин = f"{я['было'].format(**п)} {я['отдал'].format(**п)} {я['стало'].format(**п)}"
+        return f"{зачин} {я['объясни'].format(**п)}"
+    if форма == "наоборот":
+        # КОНТРФАКТИЧЕСКОЕ ОБ ОБМЕНЕ: «а если наоборот?» ссылается на ДВА
+        # числа предыдущей фразы разом, и ответ проверяется тем же пересчётом,
+        # что и всякий показ дома, — величины меняются местами, а не меняются.
+        Y = (X + 1 + (Т % 3)) % len(A.ЛИЦА[язык])
+        второй = A.ЛИЦА[язык][Y]
+        п2 = dict(п, Y=второй[0], Yр=второй[2], m=k + 2, Тm=A._вещь(язык, Т, k + 2),
+                  n=n, Тn=A._вещь(язык, Т, n))
+        return я["наоборот"].format(**п2)
     if форма == "а_у":
         # ЭЛЛИПСИС ССЫЛАЕТСЯ НА СКАЗАННОЕ: вещь во втором вопросе ОПУЩЕНА
         # («сколько у бори?»), и восстановить её можно лишь из первой фразы.

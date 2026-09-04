@@ -174,7 +174,7 @@ can could should has have will shall must may might would ought need
 является делится простое сравнимы связен
 взаимно есть ли если во на
 wenn wie was ist sind welche welcher wo wann warum wieviel wer wen wem
-stimmt stimmst meinst bist
+stimmt stimmst meinst bist wozu
 que quel quelle quels combien comment pourquoi est qu'est-ce est-il
 est-elle est-ce si y et tu es-tu
 cual cuanto cuantos que es hay donde se ¿es ¿son ¿cuál ¿cuánto ¿qué ¿cómo ¿quién
