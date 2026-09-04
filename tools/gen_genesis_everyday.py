@@ -56,6 +56,7 @@ import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import rugram  # noqa: E402
+import verbthings  # noqa: E402
 from layer import emit_grouped  # noqa: E402
 
 ЦЕЛЬ = "datasets/genesis_everyday.txt"
@@ -1165,8 +1166,18 @@ def кванторы(шаг):
                    f"{сколько_всех * по_книг} books.")
         en, ru = ВЕЩИ_РУССКИЕ[(шаг * 3 + i * 5) % len(ВЕЩИ_РУССКИЕ)]
         кто_en, _кто_ru, кто_род, _женский = _кто(шаг, i)
+        # ГЛАГОЛ ИДЁТ ЗА ВЕЩЬЮ, А НЕ ВЕЩЬ ЗА ГЛАГОЛОМ (04.09). Рамка здесь
+        # учит АНАФОРЕ («the other»), а вещь под ней вращается по всему
+        # списку — и глагол «read», прибитый гвоздём, дал «ann read 1 apple»,
+        # «tom read 1 coin»: двадцать две строки, верные счётом и ложные
+        # речью. Дом сочетаемости знает, что чем берётся; глагол выбирается
+        # ИЗ НЕГО по вещи, а «took» стоит последним как глагол без пула —
+        # он берёт всё, и потому список не может оказаться пуст.
+        глагол = next(г for г in ("read", "ate", "wrote", "planted",
+                                  "drank", "picked", "took")
+                      if verbthings.берёт(г, en))
         вон.append(f"{кто_en} has 2 {множественное(en)}; {кто_en} "
-                   f"read 1 {en} and keeps the other {en}.")
+                   f"{глагол} 1 {en} and keeps the other {en}.")
         вон.append(f"{кто_en} has 1 {en} and bought another {en}; "
                    f"{кто_en} has 2 {множественное(en)}.")
         вон.append(f"у {кто_род} {сколько_всех} "

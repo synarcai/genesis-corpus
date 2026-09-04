@@ -10,6 +10,7 @@ things from it, and the episode court refuses a known verb with a thing of
 the wrong kind (an unknown verb or an unknown thing is not judged here).
 """
 from gsm_items import ANIMATE
+from plural import singular
 
 ЕДА = {"apples", "cookies", "cakes", "pastries", "nuts", "eggs", "slices", "bananas", "oranges", "pears", "sweets",
        "candies", "sandwiches", "grapes", "plums", "buns", "pies", "loaves", "pancakes", "cherries", "carrots", "calories"}
@@ -99,10 +100,29 @@ from gsm_items import ANIMATE
 }
 
 
+# ОДНА ВЕЩЬ — ТА ЖЕ ВЕЩЬ (04.09). Пулы объявлены множественным числом, а
+# показ при счёте один пишет единственное («felix sold 1 person away», «sara
+# wrote 1 pencil»), и дом, сверявший слово буквально, звал единственное
+# «вещью, которой не знает ни один пул», то есть не своим делом. Единственное
+# число не объявляется заново: дом множественного (tools/plural.py) уже знает
+# его для всякого объявленного слова, неправильные формы включая
+# («people → person», «children → child»), — и обратное соответствие ВЫВОДИТСЯ
+# из объявленных пулов, а не пишется рядом с ними.
+_ПО_ЕДИНСТВЕННОМУ = {singular(в): в for в in (ВСЕ_ВЕЩИ | ANIMATE)}
+
+
+def _множественное(вещь):
+    """Слово пула для вещи, названной в любом числе."""
+    if вещь in ВСЕ_ВЕЩИ or вещь in ANIMATE:
+        return вещь
+    return _ПО_ЕДИНСТВЕННОМУ.get(вещь, вещь)
+
+
 def берёт(глагол, вещь):
     """True — the pair is admissible or not this house's business (an unknown
     verb, or a thing no pool names); False — a known verb with a thing of
     the wrong kind, or a verb of trade and expense with a LIVING thing."""
+    вещь = _множественное(вещь)
     род = ГЛАГОЛ_БЕРЁТ.get(глагол)
     if вещь in ANIMATE:
         return род is None and глагол not in ТОРГ_И_РАСХОД
