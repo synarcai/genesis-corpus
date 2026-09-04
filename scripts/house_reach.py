@@ -28,8 +28,15 @@ import sys
 КОРЕНЬ = pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
 
+# СПИСОК ДОМОВ ЕСТЬ ЗНАМЕНАТЕЛЬ ЭТОГО ПРИБОРА, и он рос вместе с корпусом не
+# сам собой: десять домов, названных при рождении прибора, дали «0 пар с ложью»
+# в тот час, когда домов было уже двадцать, — и ноль этот был ЧЕСТЕН ПО СВОИМ
+# десяти и НЕМ по остальным (М-264, М-269). Всякий новый дом форм вписывается
+# сюда в тот же день, иначе прибор мерит не корпус, а свою память о нём.
 ДОМА = ("dialogueforms", "linkforms", "behaviorforms", "topicforms", "natureforms",
-        "oppositeforms", "roleforms", "scaleforms", "jointforms", "actionpages")
+        "oppositeforms", "roleforms", "scaleforms", "jointforms", "actionpages",
+        "worldfacts", "inferforms", "disjforms", "induforms", "analogforms",
+        "replyforms", "rewriteforms", "opinionforms", "objectforms", "jointforms2")
 
 
 def _показы(модуль):
