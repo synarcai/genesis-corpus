@@ -167,11 +167,11 @@ def _суффикс_верен(имя_ru, суф):
 # смеет узнать в чужой строке свою.
 
 ПОКУПКА = re.compile(
-    r"^([a-z]+) bought (\d+) ([a-z]+) and (\d+) ([a-z]+) at the "
-    r"([a-z ]+); \1 bought (\d+) things in all: (\d+) \+ (\d+) = (\d+)\.$")
+    r"^([A-Za-z]+) bought (\d+) ([A-Za-z]+) and (\d+) ([A-Za-z]+) at the "
+    r"([A-Za-z ]+); \1 bought (\d+) things in all: (\d+) \+ (\d+) = (\d+)\.$")
 ПОКУПКА_ВОПРОС = re.compile(
-    r"^([a-z]+) bought (\d+) ([a-z]+) and (\d+) ([a-z]+) at the "
-    r"([a-z ]+)\. how many things did \1 buy\? \1 bought (\d+) "
+    r"^([A-Za-z]+) bought (\d+) ([A-Za-z]+) and (\d+) ([A-Za-z]+) at the "
+    r"([A-Za-z ]+)\. how many things did \1 buy\? \1 bought (\d+) "
     r"things in all: (\d+) \+ (\d+) = (\d+)\.$")
 ПОКУПКА_RU = re.compile(
     r"^(\S+) купил(а?) (\d+) (\S+) и (\d+) (\S+) (в|на) (\S+); всего "
@@ -180,18 +180,18 @@ def _суффикс_верен(имя_ru, суф):
     r"^(\S+) купил(а?) (\d+) (\S+) и (\d+) (\S+) (в|на) (\S+)\. "
     r"сколько предметов купил\2 \1\? всего \1 купил\2 (\d+) (\S+): (\d+) \+ (\d+) = (\d+)\.$")
 
-МЕСТО = re.compile(r"^the ([a-z ]+) is (on|in|at) the ([a-z ]+)\.$")
+МЕСТО = re.compile(r"^the ([A-Za-z ]+) is (on|in|at) the ([A-Za-z ]+)\.$")
 МЕСТО_ЧЕРЕЗ = re.compile(
-    r"^the ([a-z ]+) is (on|in|at) the ([a-z ]+), and the ([a-z ]+) "
-    r"is (on|in|at) the ([a-z ]+); so the ([a-z ]+) is (on|in|at) "
-    r"the ([a-z ]+)\.$")
+    r"^the ([A-Za-z ]+) is (on|in|at) the ([A-Za-z ]+), and the ([A-Za-z ]+) "
+    r"is (on|in|at) the ([A-Za-z ]+); so the ([A-Za-z ]+) is (on|in|at) "
+    r"the ([A-Za-z ]+)\.$")
 МЕСТО_ВОПРОС = re.compile(
-    r"^the ([a-z ]+) is (on|in|at) the ([a-z ]+), and the ([a-z ]+) "
-    r"is (on|in|at) the ([a-z ]+)\. where is the ([a-z ]+)\? the "
-    r"([a-z ]+) is (on|in|at) the ([a-z ]+)\.$")
+    r"^the ([A-Za-z ]+) is (on|in|at) the ([A-Za-z ]+), and the ([A-Za-z ]+) "
+    r"is (on|in|at) the ([A-Za-z ]+)\. where is the ([A-Za-z ]+)\? the "
+    r"([A-Za-z ]+) is (on|in|at) the ([A-Za-z ]+)\.$")
 МЕСТО_ОТКАЗ = re.compile(
-    r"^the ([a-z ]+) is not (on|in|at) the ([a-z ]+): the ([a-z ]+) "
-    r"is not on the path from the ([a-z ]+) to the ([a-z ]+)\.$")
+    r"^the ([A-Za-z ]+) is not (on|in|at) the ([A-Za-z ]+): the ([A-Za-z ]+) "
+    r"is not on the path from the ([A-Za-z ]+) to the ([A-Za-z ]+)\.$")
 МЕСТО_RU = re.compile(r"^(\S+) (в|на) (\S+)\.$")
 МЕСТО_RU_ЧЕРЕЗ = re.compile(
     r"^(\S+) (в|на) (\S+), а (\S+) (в|на) (\S+); значит (\S+) (в|на) "
@@ -202,34 +202,34 @@ def _суффикс_верен(имя_ru, суф):
 МЕСТО_RU_ОТКАЗ = re.compile(
     r"^(\S+) не (в|на) (\S+): (\S+) не на пути от (\S+) до (\S+)\.$")
 
-ВРЕМЯ_ДО = re.compile(r"^the ([a-z]+) comes before the ([a-z]+)\.$")
-ВРЕМЯ_ПОСЛЕ = re.compile(r"^the ([a-z]+) comes after the ([a-z]+)\.$")
+ВРЕМЯ_ДО = re.compile(r"^the ([A-Za-z]+) comes before the ([A-Za-z]+)\.$")
+ВРЕМЯ_ПОСЛЕ = re.compile(r"^the ([A-Za-z]+) comes after the ([A-Za-z]+)\.$")
 ВРЕМЯ_СЛЕД = re.compile(
-    r"^the ([a-z]+) comes next after the ([a-z]+)\.$")
+    r"^the ([A-Za-z]+) comes next after the ([A-Za-z]+)\.$")
 ВРЕМЯ_ВОПРОС = re.compile(
-    r"^what comes before the ([a-z]+)\? the ([a-z]+) comes before "
+    r"^what comes before the ([A-Za-z]+)\? the ([A-Za-z]+) comes before "
     r"the \1\.$")
 ВРЕМЯ_КРАЙ = re.compile(
-    r"^the ([a-z]+) comes first and the ([a-z]+) comes last\.$")
+    r"^the ([A-Za-z]+) comes first and the ([A-Za-z]+) comes last\.$")
 ВРЕМЯ_РАНО = re.compile(
-    r"^the ([a-z]+) comes early and the ([a-z]+) comes late\.$")
+    r"^the ([A-Za-z]+) comes early and the ([A-Za-z]+) comes late\.$")
 ВРЕМЯ_РАБОТА = re.compile(
-    r"^([a-z]+) worked (in|during) the ([a-z]+) and rested "
-    r"(in|during) the ([a-z]+); \1 worked before \1 rested\.$")
+    r"^([A-Za-z]+) worked (in|during) the ([A-Za-z]+) and rested "
+    r"(in|during) the ([A-Za-z]+); \1 worked before \1 rested\.$")
 ВРЕМЯ_ПОКА = re.compile(
-    r"^([a-z]+) worked in the ([a-z]+) and ([a-z]+) rested in the "
-    r"([a-z]+); \1 worked while \3 rested\.$")
+    r"^([A-Za-z]+) worked in the ([A-Za-z]+) and ([A-Za-z]+) rested in the "
+    r"([A-Za-z]+); \1 worked while \3 rested\.$")
 ВРЕМЯ_СЕЙЧАС = re.compile(
-    r"^([a-z]+) works now and rests later; \1 works before \1 "
+    r"^([A-Za-z]+) works now and rests later; \1 works before \1 "
     r"rests\.$")
 ВРЕМЯ_ДОМ = re.compile(
-    r"^([a-z]+) left home in the ([a-z]+) and arrived at the "
-    r"([a-z ]+) in the ([a-z]+); \1 left home before \1 arrived at "
-    r"the ([a-z ]+)\.$")
-ДЕНЬ_ДО = re.compile(r"^([a-z]+) comes before ([a-z]+)\.$")
-ДЕНЬ_ПОСЛЕ = re.compile(r"^([a-z]+) comes after ([a-z]+)\.$")
+    r"^([A-Za-z]+) left home in the ([A-Za-z]+) and arrived at the "
+    r"([A-Za-z ]+) in the ([A-Za-z]+); \1 left home before \1 arrived at "
+    r"the ([A-Za-z ]+)\.$")
+ДЕНЬ_ДО = re.compile(r"^([A-Za-z]+) comes before ([A-Za-z]+)\.$")
+ДЕНЬ_ПОСЛЕ = re.compile(r"^([A-Za-z]+) comes after ([A-Za-z]+)\.$")
 НЕДЕЛЯ = re.compile(
-    r"^the ([a-z]+) has (\d+) days and the ([a-z]+) has (\d+) days; "
+    r"^the ([A-Za-z]+) has (\d+) days and the ([A-Za-z]+) has (\d+) days; "
     r"the \1 has (\d+) days more than the \3\.$")
 ВРЕМЯ_RU_ДО = re.compile(r"^(\S+) раньше (\S+)\.$")
 ВРЕМЯ_RU_ПОСЛЕ = re.compile(r"^(\S+) позже (\S+)\.$")
@@ -250,65 +250,65 @@ def _суффикс_верен(имя_ru, суф):
     r"(\d+) (\S+) больше\.$")
 
 ГЛАГОЛ_ДВОЕ = re.compile(
-    r"^today ([a-z]+) and ([a-z]+) ([a-z]+) (.+); yesterday \1 and "
-    r"\2 ([a-z]+) \4\.$")
+    r"^today ([A-Za-z]+) and ([A-Za-z]+) ([A-Za-z]+) (.+); yesterday \1 and "
+    r"\2 ([A-Za-z]+) \4\.$")
 ГЛАГОЛ_ОДИН = re.compile(
-    r"^today ([a-z]+) ([a-z]+) (.+); yesterday \1 ([a-z]+) \3\.$")
-ГЛАГОЛ_ПРОШ = re.compile(r"^the past of ([a-z]+) is ([a-z]+)\.$")
+    r"^today ([A-Za-z]+) ([A-Za-z]+) (.+); yesterday \1 ([A-Za-z]+) \3\.$")
+ГЛАГОЛ_ПРОШ = re.compile(r"^the past of ([A-Za-z]+) is ([A-Za-z]+)\.$")
 ГЛАГОЛ_ВОПРОС = re.compile(
-    r"^today ([a-z]+) ([a-z]+) (.+)\. what is the past of ([a-z]+)\? "
-    r"the past of \4 is ([a-z]+)\.$")
+    r"^today ([A-Za-z]+) ([A-Za-z]+) (.+)\. what is the past of ([A-Za-z]+)\? "
+    r"the past of \4 is ([A-Za-z]+)\.$")
 ГЛАГОЛ_RU = re.compile(
     r"^сегодня (\S+) (\S+) (.+); вчера \1 (\S+) \3\.$")
 ГЛАГОЛ_RU_ИМЯ = re.compile(
     r"^глагол «(\S+)» в прошедшем даёт «(\S+)»\.$")
 
 БОЛЬШЕ = re.compile(
-    r"^([a-z]+) has (\d+) ([a-z]+), and ([a-z]+) has (\d+) ([a-z]+); "
-    r"\1 has (\d+) more ([a-z]+) than \4\.$")
+    r"^([A-Za-z]+) has (\d+) ([A-Za-z]+), and ([A-Za-z]+) has (\d+) ([A-Za-z]+); "
+    r"\1 has (\d+) more ([A-Za-z]+) than \4\.$")
 МЕНЬШЕ = re.compile(
-    r"^([a-z]+) has (\d+) ([a-z]+), and ([a-z]+) has (\d+) ([a-z]+); "
-    r"\1 has (\d+) fewer ([a-z]+) than \4\.$")
+    r"^([A-Za-z]+) has (\d+) ([A-Za-z]+), and ([A-Za-z]+) has (\d+) ([A-Za-z]+); "
+    r"\1 has (\d+) fewer ([A-Za-z]+) than \4\.$")
 СТОЛЬКО_ЖЕ = re.compile(
-    r"^([a-z]+) has (\d+) ([a-z]+), and ([a-z]+) has (\d+) ([a-z]+); "
-    r"\1 has the same number of ([a-z]+) as \4\.$")
+    r"^([A-Za-z]+) has (\d+) ([A-Za-z]+), and ([A-Za-z]+) has (\d+) ([A-Za-z]+); "
+    r"\1 has the same number of ([A-Za-z]+) as \4\.$")
 БОЛЬШЕ_ВОПРОС = re.compile(
-    r"^([a-z]+) has (\d+) ([a-z]+), and ([a-z]+) has (\d+) "
-    r"([a-z]+)\. how many more ([a-z]+) does \1 have than \4\? \1 "
-    r"has (\d+) more ([a-z]+) than \4\.$")
+    r"^([A-Za-z]+) has (\d+) ([A-Za-z]+), and ([A-Za-z]+) has (\d+) "
+    r"([A-Za-z]+)\. how many more ([A-Za-z]+) does \1 have than \4\? \1 "
+    r"has (\d+) more ([A-Za-z]+) than \4\.$")
 КРАЙНИЕ = re.compile(
-    r"^([a-z]+) has (\d+) ([a-z]+), ([a-z]+) has (\d+) ([a-z]+) and "
-    r"([a-z]+) has 1 ([a-z]+); \1 has the most ([a-z]+) and \7 has "
-    r"the least ([a-z]+)\.$")
+    r"^([A-Za-z]+) has (\d+) ([A-Za-z]+), ([A-Za-z]+) has (\d+) ([A-Za-z]+) and "
+    r"([A-Za-z]+) has 1 ([A-Za-z]+); \1 has the most ([A-Za-z]+) and \7 has "
+    r"the least ([A-Za-z]+)\.$")
 ВДВОЕ = re.compile(
-    r"^([a-z]+) has (\d+) ([a-z]+), and ([a-z]+) has (\d+) ([a-z]+); "
-    r"\1 has twice as many ([a-z]+) as \4\.$")
+    r"^([A-Za-z]+) has (\d+) ([A-Za-z]+), and ([A-Za-z]+) has (\d+) ([A-Za-z]+); "
+    r"\1 has twice as many ([A-Za-z]+) as \4\.$")
 КРАТНО = re.compile(
-    r"^([a-z]+) has (\d+) ([a-z]+), and ([a-z]+) has (\d+) ([a-z]+); "
-    r"\1 has (double|triple) the ([a-z]+) of \4\.$")
+    r"^([A-Za-z]+) has (\d+) ([A-Za-z]+), and ([A-Za-z]+) has (\d+) ([A-Za-z]+); "
+    r"\1 has (double|triple) the ([A-Za-z]+) of \4\.$")
 ПОЛОВИНА = re.compile(
-    r"^([a-z]+) has (\d+) ([a-z]+), and ([a-z]+) has (\d+) ([a-z]+); "
-    r"\4 has half the ([a-z]+) of \1\.$")
+    r"^([A-Za-z]+) has (\d+) ([A-Za-z]+), and ([A-Za-z]+) has (\d+) ([A-Za-z]+); "
+    r"\4 has half the ([A-Za-z]+) of \1\.$")
 РАВНЫ = re.compile(
-    r"^([a-z]+) has (\d+) ([a-z]+), and ([a-z]+) has (\d+) ([a-z]+); "
+    r"^([A-Za-z]+) has (\d+) ([A-Za-z]+), and ([A-Za-z]+) has (\d+) ([A-Za-z]+); "
     r"the two counts are (equal|different)\.$")
 ВМЕСТЕ_ВРОЗЬ = re.compile(
-    r"^([a-z]+) has (\d+) ([a-z]+), and ([a-z]+) has (\d+) ([a-z]+); "
-    r"together they have (\d+) ([a-z]+), and apart they have (\d+) "
-    r"([a-z]+) and (\d+) ([a-z]+)\.$")
+    r"^([A-Za-z]+) has (\d+) ([A-Za-z]+), and ([A-Za-z]+) has (\d+) ([A-Za-z]+); "
+    r"together they have (\d+) ([A-Za-z]+), and apart they have (\d+) "
+    r"([A-Za-z]+) and (\d+) ([A-Za-z]+)\.$")
 ИТОГО = re.compile(
-    r"^([a-z]+) has (\d+) ([a-z]+), and ([a-z]+) has (\d+) ([a-z]+); "
-    r"the total comes to (\d+) ([a-z]+) altogether\.$")
+    r"^([A-Za-z]+) has (\d+) ([A-Za-z]+), and ([A-Za-z]+) has (\d+) ([A-Za-z]+); "
+    r"the total comes to (\d+) ([A-Za-z]+) altogether\.$")
 ТОЛЬКО = re.compile(
-    r"^([a-z]+) bought (\d+) ([a-z]+), but ([a-z]+) bought just "
-    r"(\d+) ([a-z]+); (\d+) ([a-z]+) are fewer than (\d+) ([a-z]+), "
+    r"^([A-Za-z]+) bought (\d+) ([A-Za-z]+), but ([A-Za-z]+) bought just "
+    r"(\d+) ([A-Za-z]+); (\d+) ([A-Za-z]+) are fewer than (\d+) ([A-Za-z]+), "
     r"and \4 bought less than \1\.$")
 ДРУГ_ДРУГУ = re.compile(
-    r"^([a-z]+) and ([a-z]+) gave (\d+) ([a-z]+) to each other; \1 "
-    r"gave (\d+) ([a-z]+) to \2, and \2 gave (\d+) ([a-z]+) to \1\.$")
+    r"^([A-Za-z]+) and ([A-Za-z]+) gave (\d+) ([A-Za-z]+) to each other; \1 "
+    r"gave (\d+) ([A-Za-z]+) to \2, and \2 gave (\d+) ([A-Za-z]+) to \1\.$")
 МЕНЬШЕ_МАССЫ = re.compile(
-    r"^([a-z]+) bought (\d+) ([a-z]+) of ([a-z]+), and ([a-z]+) "
-    r"bought (\d+) ([a-z]+) of \4; \5 bought less \4 than \1\.$")
+    r"^([A-Za-z]+) bought (\d+) ([A-Za-z]+) of ([A-Za-z]+), and ([A-Za-z]+) "
+    r"bought (\d+) ([A-Za-z]+) of \4; \5 bought less \4 than \1\.$")
 БОЛЬШЕ_RU = re.compile(
     r"^у (\S+) (\d+) (\S+), а у (\S+) (\d+) (\S+); у \1 на (\d+) "
     r"(\S+) больше, чем у \4\.$")
@@ -332,20 +332,20 @@ def _суффикс_верен(имя_ru, суф):
     r"(\S+) \5; у (\S+) \5 меньше, чем у (\S+)\.$")
 
 ОСТАТОК = re.compile(
-    r"^([a-z]+) had (\d+) ([a-z]+) and used (\d+) ([a-z]+); (\d+) "
-    r"([a-z]+) remain\.$")
+    r"^([A-Za-z]+) had (\d+) ([A-Za-z]+) and used (\d+) ([A-Za-z]+); (\d+) "
+    r"([A-Za-z]+) remain\.$")
 ОСТАТОК_ПРОЧЕЕ = re.compile(
-    r"^([a-z]+) had (\d+) ([a-z]+) and used (\d+) ([a-z]+); the rest "
-    r"are (\d+) ([a-z]+)\.$")
+    r"^([A-Za-z]+) had (\d+) ([A-Za-z]+) and used (\d+) ([A-Za-z]+); the rest "
+    r"are (\d+) ([A-Za-z]+)\.$")
 ОСТАТОК_СВЕРХ = re.compile(
-    r"^([a-z]+) had (\d+) ([a-z]+) and used (\d+) ([a-z]+); (\d+) "
-    r"([a-z]+) are left over\.$")
+    r"^([A-Za-z]+) had (\d+) ([A-Za-z]+) and used (\d+) ([A-Za-z]+); (\d+) "
+    r"([A-Za-z]+) are left over\.$")
 ОСТАТОК_ХРАНИТ = re.compile(
-    r"^([a-z]+) had (\d+) ([a-z]+) and used (\d+) ([a-z]+); \1 keeps "
-    r"the remaining (\d+) ([a-z]+)\.$")
+    r"^([A-Za-z]+) had (\d+) ([A-Za-z]+) and used (\d+) ([A-Za-z]+); \1 keeps "
+    r"the remaining (\d+) ([A-Za-z]+)\.$")
 ОСТАТОК_ВОПРОС = re.compile(
-    r"^([a-z]+) had (\d+) ([a-z]+) and used (\d+) ([a-z]+)\. how "
-    r"many ([a-z]+) remain\? (\d+) ([a-z]+) remain\.$")
+    r"^([A-Za-z]+) had (\d+) ([A-Za-z]+) and used (\d+) ([A-Za-z]+)\. how "
+    r"many ([A-Za-z]+) remain\? (\d+) ([A-Za-z]+) remain\.$")
 ОСТАТОК_RU = re.compile(
     r"^у (\S+) было (\d+) (\S+), (\S+) израсходовал(а?) (\d+) (\S+); "
     r"осталось (\d+) (\S+)\.$")
@@ -354,18 +354,18 @@ def _суффикс_верен(имя_ru, суф):
     r"(\S+)\. сколько (\S+) осталось\? осталось (\d+) (\S+)\.$")
 
 ВМЕЩАЕТ = re.compile(
-    r"^the ([a-z ]+) holds (\d+) ([a-z]+); ([a-z]+) filled the \1 "
-    r"with (\d+) ([a-z]+); the \1 needs (\d+) ([a-z]+) more\.$")
+    r"^the ([A-Za-z ]+) holds (\d+) ([A-Za-z]+); ([A-Za-z]+) filled the \1 "
+    r"with (\d+) ([A-Za-z]+); the \1 needs (\d+) ([A-Za-z]+) more\.$")
 ВМЕЩАЕТ_НЫНЕ = re.compile(
-    r"^the ([a-z ]+) holds (\d+) ([a-z]+); ([a-z]+) fills the \1 "
-    r"with (\d+) ([a-z]+) and needs (\d+) ([a-z]+) more\.$")
+    r"^the ([A-Za-z ]+) holds (\d+) ([A-Za-z]+); ([A-Za-z]+) fills the \1 "
+    r"with (\d+) ([A-Za-z]+) and needs (\d+) ([A-Za-z]+) more\.$")
 ВМЕЩАЕТ_ВОПРОС = re.compile(
-    r"^the ([a-z ]+) holds (\d+) ([a-z]+) and ([a-z]+) filled the \1 "
-    r"with (\d+) ([a-z]+)\. how many ([a-z]+) does the \1 need\? the "
-    r"\1 needs (\d+) ([a-z]+) more\.$")
+    r"^the ([A-Za-z ]+) holds (\d+) ([A-Za-z]+) and ([A-Za-z]+) filled the \1 "
+    r"with (\d+) ([A-Za-z]+)\. how many ([A-Za-z]+) does the \1 need\? the "
+    r"\1 needs (\d+) ([A-Za-z]+) more\.$")
 ОПУСТОШЕНО = re.compile(
-    r"^([a-z]+) (emptied|empties) the ([a-z ]+) of (\d+) ([a-z]+); "
-    r"the \3 keeps 0 ([a-z]+) (now|then)\.$")
+    r"^([A-Za-z]+) (emptied|empties) the ([A-Za-z ]+) of (\d+) ([A-Za-z]+); "
+    r"the \3 keeps 0 ([A-Za-z]+) (now|then)\.$")
 ВМЕЩАЕТ_RU = re.compile(
     r"^(\S+) вмещает (\d+) (\S+); (\S+) положил(а?) туда (\d+) "
     r"(\S+); не хватает ещё (\d+) (\S+)\.$")
@@ -374,24 +374,24 @@ def _суффикс_верен(имя_ru, суф):
     r"(\S+)\.$")
 
 ДЕЛЁЖ = re.compile(
-    r"^([a-z]+) shared (\d+) ([a-z]+) among (\d+) friends; each "
-    r"friend got (\d+) ([a-z]+)\.$")
+    r"^([A-Za-z]+) shared (\d+) ([A-Za-z]+) among (\d+) friends; each "
+    r"friend got (\d+) ([A-Za-z]+)\.$")
 ДЕЛЁЖ_НЫНЕ = re.compile(
-    r"^([a-z]+) shares (\d+) ([a-z]+) among (\d+) friends; every "
-    r"friend gets (\d+) ([a-z]+)\.$")
+    r"^([A-Za-z]+) shares (\d+) ([A-Za-z]+) among (\d+) friends; every "
+    r"friend gets (\d+) ([A-Za-z]+)\.$")
 ДЕЛЁЖ_ВОПРОС = re.compile(
-    r"^([a-z]+) shared (\d+) ([a-z]+) among (\d+) friends\. how many "
-    r"([a-z]+) did each friend get\? each friend got (\d+) "
-    r"([a-z]+)\.$")
+    r"^([A-Za-z]+) shared (\d+) ([A-Za-z]+) among (\d+) friends\. how many "
+    r"([A-Za-z]+) did each friend get\? each friend got (\d+) "
+    r"([A-Za-z]+)\.$")
 ДЕЛЁЖ_RU = re.compile(
     r"^(\S+) разделил(а?) (\d+) (\S+) между (\d+) друзьями; каждому "
     r"досталось по (\d+) (\S+)\.$")
 
 ДЕНЬГИ = re.compile(
-    r"^([a-z]+) (earned|earns) (\d+) coins and (paid|pays) (\d+) "
+    r"^([A-Za-z]+) (earned|earns) (\d+) coins and (paid|pays) (\d+) "
     r"(coins?) for a ticket; \1 (saved|saves) (\d+) coins\.$")
 ДЕНЬГИ_ВОПРОС = re.compile(
-    r"^([a-z]+) earned (\d+) coins and paid (\d+) (coins?) for a "
+    r"^([A-Za-z]+) earned (\d+) coins and paid (\d+) (coins?) for a "
     r"ticket\. how many coins did \1 save\? \1 saved (\d+) coins\.$")
 ДЕНЬГИ_RU = re.compile(
     r"^(\S+) заработал(а?) (\d+) (\S+) и заплатил\2 (\d+) (\S+) за "
@@ -399,23 +399,23 @@ def _суффикс_верен(имя_ru, суф):
 
 КВАНТОР = re.compile(
     r"^(\d+) students are in the class, and (\d+) (students?) "
-    r"(have|has) a key; ([a-z ]+) students have a key\.$")
+    r"(have|has) a key; ([A-Za-z ]+) students have a key\.$")
 КВАНТОР_ЛИЦО = re.compile(
     r"^(\d+) students are in the class, and (\d+) (students?) "
-    r"(have|has) a key; ([a-z ]+) in the class has a key\.$")
+    r"(have|has) a key; ([A-Za-z ]+) in the class has a key\.$")
 КАЖДЫЙ = re.compile(
     r"^(\d+) students are in the class, and (each|every) student has "
-    r"(\d+) ([a-z]+); the class has (\d+) books\.$")
+    r"(\d+) ([A-Za-z]+); the class has (\d+) books\.$")
 КАЖДЫЙ_ВОПРОС = re.compile(
     r"^(\d+) students are in the class, and each student has (\d+) "
-    r"([a-z]+)\. how many books does the class have\? the class has "
+    r"([A-Za-z]+)\. how many books does the class have\? the class has "
     r"(\d+) books\.$")
 ИНОЙ = re.compile(
-    r"^([a-z]+) has 2 ([a-z]+); \1 read 1 ([a-z]+) and keeps the "
-    r"other ([a-z]+)\.$")
+    r"^([A-Za-z]+) has 2 ([A-Za-z]+); \1 read 1 ([A-Za-z]+) and keeps the "
+    r"other ([A-Za-z]+)\.$")
 ЕЩЁ_ОДИН = re.compile(
-    r"^([a-z]+) has 1 ([a-z]+) and bought another ([a-z]+); \1 has 2 "
-    r"([a-z]+)\.$")
+    r"^([A-Za-z]+) has 1 ([A-Za-z]+) and bought another ([A-Za-z]+); \1 has 2 "
+    r"([A-Za-z]+)\.$")
 КВАНТОР_RU = re.compile(
     r"^у (\S+) (\d+) (\S+), и (\d+) (\S+) прочитаны; (.+)\.$")
 КАЖДЫЙ_RU = re.compile(
@@ -423,31 +423,31 @@ def _суффикс_верен(имя_ru, суф):
     r"(\d+) (\S+)\.$")
 
 ЕСТЬ_СУТЬ = re.compile(
-    r"^there is 1 ([a-z]+) (on|in|at) the ([a-z ]+), and there are "
-    r"(\d+) ([a-z]+) \2 the \3\.$")
+    r"^there is 1 ([A-Za-z]+) (on|in|at) the ([A-Za-z ]+), and there are "
+    r"(\d+) ([A-Za-z]+) \2 the \3\.$")
 АРТИКЛЬ = re.compile(
-    r"^([a-z]+) took 1 ([a-z]+) and 1 ([a-z]+); \1 took (a|an) \2 "
+    r"^([A-Za-z]+) took 1 ([A-Za-z]+) and 1 ([A-Za-z]+); \1 took (a|an) \2 "
     r"and (a|an) \3\.$")
 СУММА_ЕДИНИЦЫ = re.compile(
-    r"^1 ([a-z]+) and (\d+) ([a-z]+) make (\d+) ([a-z]+) in all\.$")
+    r"^1 ([A-Za-z]+) and (\d+) ([A-Za-z]+) make (\d+) ([A-Za-z]+) in all\.$")
 ЖДАЛ = re.compile(
-    r"^([a-z]+) waited (a|an) ([a-z]+) and counted 1 ([a-z]+)\.$")
+    r"^([A-Za-z]+) waited (a|an) ([A-Za-z]+) and counted 1 ([A-Za-z]+)\.$")
 СУММА_ЕДИНИЦЫ_RU = re.compile(
     r"^1 (\S+) и (\d+) (\S+) дают всего (\d+) (\S+)\.$")
 
 РОЛИ_ПРИШЛИ = re.compile(
-    r"^(\d+) ([a-z]+) and (\d+) ([a-z]+) came to the ([a-z ]+); "
-    r"(\d+) ([a-z]+) came to the \5 in all\.$")
+    r"^(\d+) ([A-Za-z]+) and (\d+) ([A-Za-z]+) came to the ([A-Za-z ]+); "
+    r"(\d+) ([A-Za-z]+) came to the \5 in all\.$")
 РОЛИ_ВОПРОС = re.compile(
-    r"^(\d+) ([a-z]+) and (\d+) ([a-z]+) came to the ([a-z ]+)\. how "
-    r"many ([a-z]+) came to the \5\? (\d+) ([a-z]+) came to the \5 "
+    r"^(\d+) ([A-Za-z]+) and (\d+) ([A-Za-z]+) came to the ([A-Za-z ]+)\. how "
+    r"many ([A-Za-z]+) came to the \5\? (\d+) ([A-Za-z]+) came to the \5 "
     r"in all\.$")
 РОЛИ_RU_ОБРАЗЕЦ = re.compile(
     r"^(\S+) и (\S+) вместе зовутся (\S+)\.$")
 РОЛИ_RU_ВОПРОС = re.compile(
     r"^кто такие (\S+)\? (\S+) и (\S+) вместе зовутся \1\.$")
-РОЛИ_EN_ОБРАЗЕЦ = re.compile(r"^a ([a-z]+) and a ([a-z]+) together are called ([a-z]+)\.$")
-РОЛИ_EN_ВОПРОС = re.compile(r"^what are ([a-z]+)\? a ([a-z]+) and a ([a-z]+) together are called \1\.$")
+РОЛИ_EN_ОБРАЗЕЦ = re.compile(r"^a ([A-Za-z]+) and a ([A-Za-z]+) together are called ([A-Za-z]+)\.$")
+РОЛИ_EN_ВОПРОС = re.compile(r"^what are ([A-Za-z]+)\? a ([A-Za-z]+) and a ([A-Za-z]+) together are called \1\.$")
 # КЛАСС СПИСКОМ: «люди: мужчина, женщина, …» / «people: man, woman, …» —
 # перечень обязан совпасть с объявленными членами класса (дом.РОЛИ) как
 # множество, без повторов.
@@ -461,40 +461,40 @@ for _ч1, _ч2, _ц, _р1, _р2, _рц in дом.КЛАССЫ:
     _КЛАСС_EN.setdefault(_ц, set()).update((_ч1, _ч2))
     _КЛАСС_RU.setdefault(_рц, set()).update((_р1, _р2))
 СЕМЬЯ = re.compile(
-    r"^the family has a ([a-z]+), a ([a-z]+) and a ([a-z]+); the "
+    r"^the family has a ([A-Za-z]+), a ([A-Za-z]+) and a ([A-Za-z]+); the "
     r"family has (\d+) people\.$")
 СЕМЬЯ_RU = re.compile(
-    r"^в семье ([а-яё]+), ([а-яё]+) и ([а-яё]+); в семье (\d+) "
+    r"^в семье ([А-ЯЁа-яё]+), ([А-ЯЁа-яё]+) и ([А-ЯЁа-яё]+); в семье (\d+) "
     r"человека\.$")
 
 ЧАСТОТА = re.compile(
-    r"^([a-z]+) worked on (\d+) (days?) of (\d+) days; \1 "
-    r"([a-z ]+)\.$")
+    r"^([A-Za-z]+) worked on (\d+) (days?) of (\d+) days; \1 "
+    r"([A-Za-z ]+)\.$")
 ЧАСТОТА_RU = re.compile(
     r"^(\S+) работал(а?) (\d+) (\S+) из (\d+); \1 (.+)\.$")
 СНОВА = re.compile(
-    r"^([a-z]+) counted the ([a-z]+) once and counted the \2 again; "
-    r"\1 counted the \2 ([a-z ]+) in all\.$")
+    r"^([A-Za-z]+) counted the ([A-Za-z]+) once and counted the \2 again; "
+    r"\1 counted the \2 ([A-Za-z ]+) in all\.$")
 СНОВА_RU = re.compile(
     r"^(\S+) считал(а?) (\S+) один раз и потом ещё раз; всего \1 "
     r"считал\2 (.+)\.$")
 
 ОКОЛО = re.compile(
-    r"^([a-z]+) counted (\d+) ([a-z]+); (\d+) ([a-z]+) are "
-    r"(nearly|about) (\d+) ([a-z]+)\.$")
+    r"^([A-Za-z]+) counted (\d+) ([A-Za-z]+); (\d+) ([A-Za-z]+) are "
+    r"(nearly|about) (\d+) ([A-Za-z]+)\.$")
 ОКОЛО_RU = re.compile(
     r"^(\S+) насчитал(а?) (\d+) (\S+); это (почти|примерно) (\d+) "
     r"(\S+)\.$")
 
 ПОЧЕМУ = re.compile(
-    r"^why does ([a-z]+) have (\d+) ([a-z]+)\? because \1 bought "
-    r"(\d+) ([a-z]+) and then (\d+) ([a-z]+) more\.$")
+    r"^why does ([A-Za-z]+) have (\d+) ([A-Za-z]+)\? because \1 bought "
+    r"(\d+) ([A-Za-z]+) and then (\d+) ([A-Za-z]+) more\.$")
 ПОЧЕМУ_RU = re.compile(
     r"^почему у (\S+) (\d+) (\S+)\? потому что (\S+) купил(а?) (\d+) "
     r"(\S+), а потом ещё (\d+) (\S+)\.$")
 ПЕРЕЧЕНЬ = re.compile(
-    r"^([a-z]+) bought ([a-z]+), ([a-z]+) and ([a-z]+) at the "
-    r"([a-z ]+); \1 bought (\d+) things in all\.$")
+    r"^([A-Za-z]+) bought ([A-Za-z]+), ([A-Za-z]+) and ([A-Za-z]+) at the "
+    r"([A-Za-z ]+); \1 bought (\d+) things in all\.$")
 ПЕРЕЧЕНЬ_RU = re.compile(
     r"^(в|на) (\S+) лежат (\S+), (\S+) и (\S+); \1 \2 лежат (\d+) "
     r"(\S+)\.$")
