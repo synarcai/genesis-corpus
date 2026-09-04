@@ -72,7 +72,10 @@ COURTS=("courts/arith_court.py" "courts/algo_court.py"
         "scripts/denominator_census.py"
         # ПЕРЕПИСЬ ПОВТОРОВ — сколько строк свода суть точные копии (05.09: 50 %,
         # сверх LAW 40 %). Число, а не рубеж: потолок повтора — решение владельца.
-        "scripts/repeat_census.py --свод")
+        "scripts/repeat_census.py --свод"
+        # СЛЕД РАЗБОРА ОПРЕДЕЛЕНИЙ — где разбор статьи остановился на каждом
+        # понятии без определения; причина, не названная прибором, — FAIL.
+        "scripts/definitions_reach.py")
 FELL=0
 for entry in "${COURTS[@]}"; do
   set -- $entry; tool="$1"; shift
