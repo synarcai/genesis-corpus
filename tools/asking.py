@@ -146,6 +146,15 @@ vad hur kaç mi τι πόσο ποιο هل كم ما क्या कितन�
 _КРАЙ = "«»\"'()[],.;:!"
 
 
+# ЗАЙМ ВЫРОС РАЗГОВОРОМ (04.09). Множество ниже мерено по своду, а свод до
+# этой ночи не знал РЕЧЕВОГО ОБИХОДА: в нём не было ни «почему?» четырёх
+# языков (perché, porque, waarom, dlaczego — вопросные слова, каких у займа
+# просто не оказалось), ни вопроса ДА/НЕТ, который в большинстве языков
+# обходится вовсе без вопросного слова и открывается глаголом или
+# местоимением («stimmt das?», «meinst du?», «ты имеешь в виду?», «¿estás de
+# acuerdo?»). Займ рос вместе с корпусом и здесь вырос снова — это его
+# природа, а не изъян: он погашается объявлением пакета, а не догадкой.
+#
 # ЗАЧИН — ПЕРВОЕ СЛОВО ВОПРОСНОГО ПРЕДЛОЖЕНИЯ. Признак «хоть одно
 # вопросное слово где-либо» оказался слаб: порча одного слова оставляет
 # в вопросе другие («чем равен … на 3?» несёт «на»), и ловилось ничего.
@@ -164,14 +173,17 @@ can could should has have will shall must may might would ought need
 чём ком кем который которая которое которые которого которой которых
 является делится простое сравнимы связен
 взаимно есть ли если во на
-wenn wie was ist sind welche welcher wo wann warum wieviel
+wenn wie was ist sind welche welcher wo wann warum wieviel wer wen wem
+stimmt stimmst meinst bist
 que quel quelle quels combien comment pourquoi est qu'est-ce est-il
-est-elle est-ce si y
-cual cuanto cuantos que es hay donde se ¿es ¿cuál ¿cuánto ¿qué
-che cosa quanto quanti dove quale
-qual quantos onde
-czy ile co jaki jaka jakie gdzie kiedy
-wat hoe hoeveel welke waar
+est-elle est-ce si y et tu es-tu
+cual cuanto cuantos que es hay donde se ¿es ¿son ¿cuál ¿cuánto ¿qué ¿cómo ¿quién
+¿y ¿quieres ¿estás ¿por
+che cosa quanto quanti dove quale come chi perché intendi sei
+qual quantos onde como quem porque queres concordas
+czy ile co jaki jaka jakie gdzie kiedy jak dlaczego masz zgadzasz
+wat hoe hoeveel welke waar waarom bedoel ben
+ты
 ¬ apa cái
 """.split())
 
