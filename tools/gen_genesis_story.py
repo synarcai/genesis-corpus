@@ -27,16 +27,24 @@ from plural import by_count
 
 
 # (nominative, genitive «у …», feminine?)
-NAMES_RU = [
-    ("маша", "маши", True),
-    ("петя", "пети", False),
-    ("вера", "веры", True),
-    ("коля", "коли", False),
-    ("аня", "ани", True),
-    ("дима", "димы", False),
-    ("лена", "лены", True),
-    ("юра", "юры", False),
-]
+# РУССКИЕ ЛИЦА — ИЗ ПАКЕТА (05.09): дом выбирает восемь имён, письмо, родительный
+# и род — у пакета ru.
+import json as _json
+import pathlib as _pathlib
+from rugram import МЕСТОИМЕНИЯ as _МЕСТ, СУФФИКС_ПРОШЕДШЕГО as _СУФ
+_RU = _json.loads((_pathlib.Path(__file__).resolve().parent / "langpacks" / "ru.json").read_text(encoding="utf-8"))["person_forms"]
+_RU_ПО_СТРОЧНОМУ = {и.lower(): и for и in _RU}
+
+
+def _лицо(имя):
+    """(имя, родительный, род) из пакета — по строчному образу имени."""
+    и = _RU_ПО_СТРОЧНОМУ[имя.lower()]
+    ф = _RU[и]
+    assert ф.get("gen") and ф.get("gender") in ("m", "f"), ("имя без падежа или рода в пакете", имя)
+    return и, ф["gen"], ф["gender"]
+
+_ВЫБОР_RU = ("маша", "петя", "вера", "коля", "аня", "дима", "лена", "юра")
+NAMES_RU = [(и, р, g == "f") for и, р, g in map(_лицо, _ВЫБОР_RU)]
 NAMES_EN = ["mary", "peter", "vera", "nick",
             "ann", "dima", "lena", "yuri"]
 # ИМЯ ОБЪЯВЛЕНО ПАКЕТОМ (дом имён, М-131): суд читает имя группой и сверяет
