@@ -37,8 +37,23 @@ import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import actionpages as A  # noqa: E402
+import json as _json
 
-ФОРМЫ = ("почему", "почему_голый", "а_у", "а_если", "наоборот", "повтори", "объясни", "что_дальше", "правда", "неправда", "переспрос", "согласен")
+# ЧИСЛИТЕЛЬНЫЕ СЛОВАМИ БЕРУТСЯ ИЗ ПАКЕТА ЯЗЫКА, а не объявляются здесь заново:
+# пакет — источник истины о слове языка, и второй список разошёлся бы с ним.
+_ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
+
+
+def _числительные(язык):
+    п = _json.loads((_ПАКЕТЫ / f"{язык}.json").read_text(encoding="utf-8"))
+    return {int(k): v for k, v in (п.get("numerals") or {}).items() if str(k).isdigit()}
+
+
+ЧИСЛА_СЛОВОМ = {}
+# ТАБЛИЦА УМНОЖЕНИЯ СЛОВАМИ: маленькая, вся в пределах объявленных числительных
+ТАБЛИЦА = ((2, 2), (2, 3), (3, 3), (2, 4), (3, 4), (2, 5))
+
+ФОРМЫ = ("почему", "почему_голый", "а_у", "а_если", "наоборот", "наоборот2", "а_союз", "повтори", "объясни", "объясни2", "счёт_да", "что_дальше", "правда", "неправда", "переспрос", "согласен")
 
 ЯЗЫКИ = {
     "en": dict(
@@ -49,6 +64,10 @@ import actionpages as A  # noqa: E402
         наоборот="{X} has {n} {Тn}, {Y} has {m} {Тm}. what if it were the other way round? then {X} would have {m} {Тm} and {Y} would have {n} {Тn}.",
         повтори="say that again, please. i repeat: {X} has {n} {Тn}.",
         объясни="i do not understand, explain. i explain: {X} had {n}, gave away {k}, and has {r} left: {л}",
+        а_союз="and {Y}? {Y} has {m} {Тm}.",
+        объясни2="i don't understand, explain. i explain: {X} had {n}, gave away {k}, and has {r} left: {л}",
+        наоборот2="{X} has {n} {Тn}, {Y} has {m} {Тm}. and if it were the other way round? then {X} would have {m} {Тm} and {Y} would have {n} {Тn}.",
+        счёт_да="is it true that {A} times {B} is {C}? yes, {A} times {B} is {C}: {a} × {b} = {c}.",
         почему="why does {X} have {r} {Тr}? because {X} had {n} and gave away {k}: {л}",
         а_если="what if there were twice as many? then {X} would have {д} {Тд}: {лд}",
         что_дальше="what happens next? {X} has {r} {Тr}: {л}",
@@ -65,6 +84,8 @@ import actionpages as A  # noqa: E402
         наоборот="у {Xр} {n} {Тn}, у {Yр} {m} {Тm}. а если наоборот? тогда у {Xр} {m} {Тm}, а у {Yр} {n} {Тn}.",
         повтори="повтори, пожалуйста. повторяю: у {Xр} {n} {Тn}.",
         объясни="я не понял, объясни. объясняю: было {n}, отдано {k}, осталось {r}: {л}",
+        а_союз="а у {Yр}? у {Yр} {m} {Тm}.",
+        счёт_да="правда ли, что {A}жды {B} — {C}? да, {A}жды {B} — {C}: {a} × {b} = {c}.",
         почему="почему у {Xр} {r} {Тr}? потому что было {n}, а отдано {k}: {л}",
         а_если="а если бы их было вдвое больше? тогда у {Xр} было бы {д} {Тд}: {лд}",
         что_дальше="что дальше? у {Xр} {r} {Тr}: {л}",
@@ -81,6 +102,8 @@ import actionpages as A  # noqa: E402
         наоборот="{X} hat {n} {Тn}, {Y} hat {m} {Тm}. und wenn es umgekehrt wäre? dann hätte {X} {m} {Тm} und {Y} {n} {Тn}.",
         повтори="sag das bitte noch einmal. ich wiederhole: {X} hat {n} {Тn}.",
         объясни="ich habe es nicht verstanden, erkläre es. ich erkläre: es waren {n}, {k} wurden weggegeben, es bleiben {r}: {л}",
+        а_союз="und {Y}? {Y} hat {m} {Тm}.",
+        счёт_да="stimmt es, dass {A} mal {B} {C} ist? ja, {A} mal {B} ist {C}: {a} × {b} = {c}.",
         почему="warum hat {X} {r} {Тr}? weil {X} {n} hatte und {k} weggab: {л}",
         а_если="und wenn es doppelt so viele wären? dann hätte {X} {д} {Тд}: {лд}",
         что_дальше="was kommt dann? {X} hat {r} {Тr}: {л}",
@@ -97,6 +120,8 @@ import actionpages as A  # noqa: E402
         наоборот="{X} tiene {n} {Тn}, {Y} tiene {m} {Тm}. ¿y si fuera al revés? entonces {X} tendría {m} {Тm} y {Y} tendría {n} {Тn}.",
         повтори="repite, por favor. repito: {X} tiene {n} {Тn}.",
         объясни="no lo he entendido, explícalo. explico: había {n}, se dieron {k}, quedan {r}: {л}",
+        а_союз="¿y {Y}? {Y} tiene {m} {Тm}.",
+        счёт_да="¿es verdad que {A} por {B} es {C}? sí, {A} por {B} es {C}: {a} × {b} = {c}.",
         почему="¿por qué {X} tiene {r} {Тr}? porque {X} tenía {n} y dio {k}: {л}",
         а_если="¿y si hubiera el doble? entonces {X} tendría {д} {Тд}: {лд}",
         что_дальше="¿qué pasa después? {X} tiene {r} {Тr}: {л}",
@@ -113,6 +138,8 @@ import actionpages as A  # noqa: E402
         наоборот="{X} a {n} {Тn}, {Y} a {m} {Тm}. et si c'était l'inverse ? alors {X} aurait {m} {Тm} et {Y} aurait {n} {Тn}.",
         повтори="répète, s'il te plaît. je répète : {X} a {n} {Тn}.",
         объясни="je n'ai pas compris, explique. j'explique : il y en avait {n}, {k} ont été donnés, il en reste {r} : {л}",
+        а_союз="et {Y} ? {Y} a {m} {Тm}.",
+        счёт_да="est-il vrai que {A} fois {B} font {C} ? oui, {A} fois {B} font {C} : {a} × {b} = {c}.",
         почему="pourquoi {X} a {r} {Тr} ? parce que {X} en avait {n} et en a donné {k} : {л}",
         а_если="et s'il y en avait deux fois plus ? alors {X} aurait {д} {Тд} : {лд}",
         что_дальше="que se passe-t-il ensuite ? {X} a {r} {Тr} : {л}",
@@ -129,6 +156,8 @@ import actionpages as A  # noqa: E402
         наоборот="{X} ha {n} {Тn}, {Y} ha {m} {Тm}. e se fosse il contrario? allora {X} avrebbe {m} {Тm} e {Y} avrebbe {n} {Тn}.",
         повтори="ripeti, per favore. ripeto: {X} ha {n} {Тn}.",
         объясни="non ho capito, spiega. spiego: ce n'erano {n}, {k} sono stati dati, ne restano {r}: {л}",
+        а_союз="e {Y}? {Y} ha {m} {Тm}.",
+        счёт_да="è vero che {A} per {B} fa {C}? sì, {A} per {B} fa {C}: {a} × {b} = {c}.",
         почему="perché {X} ha {r} {Тr}? perché {X} aveva {n} e ha dato {k}: {л}",
         а_если="e se fossero il doppio? allora {X} avrebbe {д} {Тд}: {лд}",
         что_дальше="che cosa succede dopo? {X} ha {r} {Тr}: {л}",
@@ -145,6 +174,8 @@ import actionpages as A  # noqa: E402
         наоборот="{X} tem {n} {Тn}, {Y} tem {m} {Тm}. e se fosse ao contrário? então {X} teria {m} {Тm} e {Y} teria {n} {Тn}.",
         повтори="repete, por favor. repito: {X} tem {n} {Тn}.",
         объясни="não percebi, explica. explico: havia {n}, {k} foram dados, restam {r}: {л}",
+        а_союз="e {Y}? {Y} tem {m} {Тm}.",
+        счёт_да="é verdade que {A} vezes {B} é {C}? sim, {A} vezes {B} é {C}: {a} × {b} = {c}.",
         почему="porque é que {X} tem {r} {Тr}? porque {X} tinha {n} e deu {k}: {л}",
         а_если="e se fossem o dobro? então {X} teria {д} {Тд}: {лд}",
         что_дальше="o que acontece a seguir? {X} tem {r} {Тr}: {л}",
@@ -154,6 +185,37 @@ import actionpages as A  # noqa: E402
         согласен="concordas? sim, concordo: {X} tem {n} {Тn}.",
     ),
 }
+
+
+def слова_счёта(язык, i):
+    """(да-показ, нет-показ) о счёте СЛОВАМИ: обе полярности с кузницей.
+
+    «правда ли, что дважды два — четыре?» есть вопрос об истине, а не о вещи,
+    и потому судится не пересчётом предметов, а самой таблицей: слово «четыре»
+    объявлено пакетом языка, произведение считается.
+
+    ВТОРОЙ ПОЛЯРНОСТИ ЗДЕСЬ НЕТ, И ЭТО НЕ НЕДОСМОТР, А ГРАНИЦА (04.09). Форма
+    «правда ли, что дважды два — ПЯТЬ? нет, четыре: 2 × 2 = 4.» истинна как
+    целое и содержит ложное равенство как ЦИТАТУ. Но суд арифметики читает
+    СТРОКУ, а не клаузу: он понижает числительные в цифры и находит «2 per 2
+    fa 5» — ложь по всей строке. Пока суды читают строки, корпус не вправе
+    цитировать ложь в судимой строке: цитата неотличима от утверждения на том
+    окне, каким смотрит суд. Вторая полярность у дома есть — в форме о ВЕЩАХ
+    («правда ли, что у ани 9 яблок? нет, у ани 5 яблок.»), где никакого
+    равенства не цитируется и суду нечего понижать.
+    """
+    я = ЯЗЫКИ[язык]
+    if "счёт_да" not in я:
+        return ()
+    if язык not in ЧИСЛА_СЛОВОМ:
+        ЧИСЛА_СЛОВОМ[язык] = _числительные(язык)
+    сл = ЧИСЛА_СЛОВОМ[язык]
+    a, b = ТАБЛИЦА[i % len(ТАБЛИЦА)]
+    c, d = a * b, a * b + 1
+    if not all(n in сл for n in (a, b, c, d)):
+        return ()
+    поля = dict(A=сл[a], B=сл[b], C=сл[c], D=сл[d], a=a, b=b, c=c)
+    return (я["счёт_да"].format(**поля),)
 
 
 def _винительный(язык, Т, k):
@@ -186,7 +248,7 @@ def _поля(язык, X, Т, n, k):
 def страница(язык, форма, X=0, Т=0, n=7, k=2, Y=None):
     я = ЯЗЫКИ[язык]
     п = _поля(язык, X, Т, n, k)
-    if форма in ("повтори", "объясни"):
+    if форма in ("повтори", "объясни", "объясни2"):
         # ПОЧИНКА РАЗГОВОРА: «повтори, пожалуйста» и «я не понял, объясни» —
         # не вопросы, а просьбы, и ответ на них ПРОВЕРЯЕМ: повтор обязан
         # совпасть с фактом, объяснение — показать кузницу. Без этой пары
@@ -195,8 +257,18 @@ def страница(язык, форма, X=0, Т=0, n=7, k=2, Y=None):
             зачин = я["стало"].format(**dict(п, r=n, Тr=п["Тn"]))
             return f"{зачин} {я['повтори'].format(**п)}"
         зачин = f"{я['было'].format(**п)} {я['отдал'].format(**п)} {я['стало'].format(**п)}"
-        return f"{зачин} {я['объясни'].format(**п)}"
-    if форма == "наоборот":
+        ключ = форма if форма in я else "объясни"
+        return f"{зачин} {я[ключ].format(**п)}"
+    if форма == "а_союз":
+        # ТОТ ЖЕ ЭЛЛИПСИС, НО СОЮЗОМ: «а у тома?», «and tom?» — так и спрашивает
+        # человек. Зачин здесь союз, а не вопросное слово, и это законная
+        # поверхность вопроса ДА/НЕТ и эллипсиса во всех семи языках.
+        Y = (X + 1 + (Т % 3)) % len(A.ЛИЦА[язык])
+        второй = A.ЛИЦА[язык][Y]
+        п2 = dict(п, Y=второй[0], Yр=второй[2], m=k + 2, Тm=A._вещь(язык, Т, k + 2))
+        зачин = я["стало"].format(**dict(п, r=n, Тr=п["Тn"]))
+        return f"{зачин} {я['а_союз'].format(**п2)}"
+    if форма in ("наоборот", "наоборот2"):
         # КОНТРФАКТИЧЕСКОЕ ОБ ОБМЕНЕ: «а если наоборот?» ссылается на ДВА
         # числа предыдущей фразы разом, и ответ проверяется тем же пересчётом,
         # что и всякий показ дома, — величины меняются местами, а не меняются.
@@ -204,7 +276,8 @@ def страница(язык, форма, X=0, Т=0, n=7, k=2, Y=None):
         второй = A.ЛИЦА[язык][Y]
         п2 = dict(п, Y=второй[0], Yр=второй[2], m=k + 2, Тm=A._вещь(язык, Т, k + 2),
                   n=n, Тn=A._вещь(язык, Т, n))
-        return я["наоборот"].format(**п2)
+        ключ = форма if форма in я else "наоборот"
+        return я[ключ].format(**п2)
     if форма == "а_у":
         # ЭЛЛИПСИС ССЫЛАЕТСЯ НА СКАЗАННОЕ: вещь во втором вопросе ОПУЩЕНА
         # («сколько у бори?»), и восстановить её можно лишь из первой фразы.
@@ -231,7 +304,14 @@ def _все_показы():
     вон = {}
     for язык, я in ЯЗЫКИ.items():
         лиц, вещей = len(A.ЛИЦА[язык]), len(A.ЯЗЫКИ[язык]["вещи"])
+        for i in range(len(ТАБЛИЦА)):
+            for с in слова_счёта(язык, i):
+                вон[с] = (язык, "счёт_словами")
         for форма in ФОРМЫ:
+            if форма == "счёт_да":
+                continue          # они пишутся своим ходом выше
+            if форма in ("наоборот2", "объясни2", "а_союз") and форма not in ЯЗЫКИ[язык]:
+                continue          # язык не объявил второй поверхности
             for i in range(лиц):
                 for t in range(вещей):
                     n = 5 + (i * 3 + t * 2) % 20
@@ -266,6 +346,12 @@ def _самопроверка():
     n0, k0 = 5 + (i0 * 3 + t0 * 2) % 20, 1 + (i0 + t0) % 4
     for язык in ЯЗЫКИ:
         for форма in ФОРМЫ:
+            if форма == "счёт_да":
+                for с in слова_счёта(язык, 0):
+                    assert судить(с) == (True, True), (язык, с)
+                continue
+            if форма in ("наоборот2", "объясни2", "а_союз") and форма not in ЯЗЫКИ[язык]:
+                continue
             с = страница(язык, форма, i0, t0, n0, k0)
             судимо, истинно = судить(с)
             assert судимо and истинно, (язык, форма, с)
@@ -275,7 +361,7 @@ def _самопроверка():
         assert судить(битая) == (False, False), (язык, битая)
         мутанты += 1
     for язык in ("ru", "en", "de"):
-        for форма in ("почему", "а_если", "неправда"):
+        for форма in ("почему", "а_если", "неправда", "а_союз"):
             print("  ", страница(язык, форма, i0, t0, n0, k0)[:118])
     print(f"  мутантов поймано: {мутанты}")
     print(f"  дом пишет показов: {len(ПОКАЗЫ)} (языков {len(ЯЗЫКИ)}, форм {len(ФОРМЫ)})")
