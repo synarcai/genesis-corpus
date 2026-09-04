@@ -636,6 +636,29 @@
       "actors": []
     },
     {
+      "name": "roles",
+      "file": "datasets/genesis_roles.txt",
+      "genre": "ROLE QUESTIONS — a question BY THE TYPE OF ITS HOLE: with what, where, of what. The collegium named Д-1 a generalizing defect: a question is a SURFACE bought from its own genus and not an operation over a fact, and the cure was named there too — an inversion organ, a market of question words BY HOLE TYPE (number, entity, time, place). The holes world holds time, place, entity and number inside a narrative; this house adds three types nobody held: INSTRUMENT («чем пишут? ручкой»), PLACE OF AN ACTION («где покупают хлеб? в магазине»), MATERIAL («из чего сделан стол? из дерева»). The ANSWER is declared as a WHOLE PHRASE, and that is a decision: «ручкой» is an instrumental, «в магазине» a prepositional with its preposition, «из дерева» a genitive with its own — declaring the cases apart would mean three case tables across nine languages and an error in each. The house declares the answer as it sounds, and can err only in what it declared — and what is declared is visible to the eye. The word order of a language lives in the DECLARATION, not in the frame: German and Dutch put the subject right after the verb («wo kauft man Brot?»), and the subject is declared inside the clause where the language keeps it. Nine languages, three hole types.",
+      "act": [
+        "name",
+        "translate"
+      ],
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "measure_story",
       "file": "datasets/genesis_measure_story.txt",
       "genre": "MEASURED STORIES — A DISTANCE COMPARED BY ITS VERB, AND A PAIR PRICED BY ITS MULTIPLE (holon's orders from the last lines of the attack, 03.09). The first: «the frog jumped 31 inches. the grasshopper jumped 25 inches. how many more inches did the frog jump than the grasshopper? 31 − 25 = 6.» — the corpus said this with ONE verb, and a verb met once is learnt as a word rather than as a place of the frame; six verbs walk here (jumped, ran, walked, swam, flew, crawled — прыгнул, пробежал, прошёл, проплыл, пролетел, прополз), each with its bare form for the English question and, in Russian, with its own preposition («прыгнул НА 31 сантиметр», but «пробежал 31 метр») and its past tense agreeing with the actor («лягушка прыгнула», «кузнечик прыгнул»). The second: «a house and a lot cost 120 dollars together. the house costs three times as much as the lot. how much does the lot cost? 3 + 1 = 4, 120 ÷ 4 = 30.» — «as MUCH as» beside «times» on a price, where the corpus had only «as many as» on countables; both ends of the pair are asked, and the greater costs one step more, for its answer runs through the lesser. Every form is declared by the house (tools/measurestory.py): the Russian measure names three count forms, the past tense two genders, the second good its genitive; the court knows the whole finite table and calls a line of these shapes that the table does not hold a lie",
@@ -3934,10 +3957,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 18962303,
+      "size": 18968056,
       "tiers": [],
       "text": "mix",
-      "lines": 248050
+      "lines": 248185
     },
     {
       "name": "full",
@@ -3952,10 +3975,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 23475960,
+      "size": 23481713,
       "tiers": [],
       "text": "mix",
-      "lines": 321717
+      "lines": 321852
     },
     {
       "name": "minimal",
@@ -3970,10 +3993,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 10594157,
+      "size": 10599822,
       "tiers": [],
       "text": "mix",
-      "lines": 133263
+      "lines": 133398
     },
     {
       "name": "uniq",
@@ -3988,10 +4011,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 14510683,
+      "size": 14516348,
       "tiers": [],
       "text": "mix",
-      "lines": 152174
+      "lines": 152309
     },
     {
       "name": "mid13",
@@ -4006,10 +4029,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 12309331,
+      "size": 12314996,
       "tiers": [],
       "text": "mix",
-      "lines": 157514
+      "lines": 157649
     },
     {
       "name": "mid",
@@ -4024,10 +4047,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 14420570,
+      "size": 14426235,
       "tiers": [],
       "text": "mix",
-      "lines": 186479
+      "lines": 186614
     },
     {
       "name": "selfmeasure",

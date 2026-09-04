@@ -174,15 +174,15 @@ can could should has have will shall must may might would ought need
 является делится простое сравнимы связен
 взаимно есть ли если во на
 wenn wie was ist sind welche welcher wo wann warum wieviel wer wen wem
-stimmt stimmst meinst bist wozu
+stimmt stimmst meinst bist wozu womit woraus wovon wodurch worauf
 que quel quelle quels combien comment pourquoi est qu'est-ce est-il
-est-elle est-ce si y et tu es-tu
+est-elle est-ce si y et tu es-tu quoi
 cual cuanto cuantos que es hay donde se ¿es ¿son ¿cuál ¿cuánto ¿qué ¿cómo ¿quién
 ¿y ¿quieres ¿estás ¿por
 che cosa quanto quanti dove quale come chi perché intendi sei
 qual quantos onde como quem porque porquê queres concordas
-czy ile co jaki jaka jakie jakiej jakim jakich gdzie kiedy jak czym dlaczego masz zgadzasz
-wat hoe hoeveel welke waar waarom bedoel ben klopt en
+czy ile co jaki jaka jakie jakiej jakim jakich czego gdzie kiedy jak czym dlaczego masz zgadzasz
+wat hoe hoeveel welke waar waarom bedoel ben klopt en waarmee waarvan waarop waardoor
 ты а
 # ЭЛЛИПТИЧЕСКИЙ ВОПРОС ОТКРЫВАЕТСЯ СОЮЗОМ, а не вопросным словом: «а у тома?»,
 # «and tom?», «und Lena?» — так и спрашивает человек, когда предмет вопроса
@@ -277,7 +277,7 @@ def _в_конце(слова):
 in at by for from to of on with about under over
 bei bij mit von aus nach für über
 w o na do przy z za
-à de en dans par pour sur sous a da su tra fra em com por""".split())
+à de en dans par pour sur sous a da su tra fra em com por con avec""".split())
 # ЗАЧИН ЖИВЁТ В НАЧАЛЕ ЛЮБОЙ КЛАУЗЫ ВОПРОСА, А НЕ ТОЛЬКО ПОСЛЕДНЕЙ.
 # «если n чётно, чётно ли n + 8?» несёт зачин первым словом; «для
 # f(t) = t^2, чему равно…» — вторым; «какова скорость тела, прошедшего
