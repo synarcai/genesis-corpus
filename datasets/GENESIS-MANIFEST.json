@@ -661,6 +661,105 @@
       "actors": []
     },
     {
+      "name": "disj",
+      "file": "datasets/genesis_disj.txt",
+      "genre": "EXCLUSION — the disjunctive syllogism over an EXHAUSTIVE row. The map of reasoning forms named it the second debt and named its condition too: the form needs a declared pair of excluding classes, and a declared pair is checked only by declaration. The condition is bypassed the same way strict inference bypassed its own: the row is arithmetic, and it is arithmetic FOR THE ORACLE. A remainder gives a row exhaustive BY COUNTING, not by declaration — the remainder of a division by 5 is one of 0, 1, 2, 3, 4 and no other, and that is a property of division, not an opinion of the house. So the elimination of the other members is a real elimination, and the court recomputes three things at once: the row is exhaustive, the excluded are the complement of the conclusion, and the conclusion is the remainder. Two orders of negation are declared, not guessed: seven languages repeat the particle at every member, English and German set the opener once.",
+      "act": [
+        "decide",
+        "refute",
+        "recount",
+        "translate"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
+      "name": "indu",
+      "file": "datasets/genesis_indu.txt",
+      "genre": "HASTE — generalisation from cases and the NAMED LIMIT of that step. The map of reasoning forms called it the most dangerous debt: the corpus showed a law and its case but never the step FROM cases TO the law together with the caveat that it is unreliable. There is exactly one way to teach it rightly — show BOTH outcomes of the same step. Four rows deceive (Euler's polynomial, Mersenne numbers, n! + 1, «every odd number is prime») and three hold (sums of odd numbers, of the row, of cubes), each of the latter with its REASON. The second form matters more: without it the first would teach distrust of every generalisation. The first teaches that cases are not a proof; the second that a proof is a REASON, not a count of agreeing cases. The court reads no frame of the house at all — it reads the LINE, finds every checkable claim and recomputes it: both arms of every equality, the primality of a named number, the compositeness of the counterexample.",
+      "act": [
+        "generalize",
+        "refute",
+        "recount",
+        "translate"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
+      "name": "analog",
+      "file": "datasets/genesis_analog.txt",
+      "genre": "LIKENESS — analogy and its CHECK, not its feeling. The fourth debt of the reasoning map, closed the same way as the other three: the row is one where the relation is CHECKED rather than declared. «2 is to 6 as 5 is to 15» is true by the cross product, and the third form of the house is the house: «2 is to 6 as 5 is to 12? no: 2 × 12 = 24, and 6 × 5 = 30» shows the CHECK, without which analogy stays what it usually is — a feeling of similarity with no right to a conclusion. An organism that learns the first two forms finds likenesses everywhere; one that learns the third can REJECT them and can name what it rejected them by. The court demands of a refusal that the two named products DIFFER: a refusal naming equal products would reject a TRUE analogy while displaying the correct test — a lie that teaches both the method and distrust of the method at once. Generic likeness («a shark is to fishes as an oak is to trees») is a named debt: it needs plural class forms the world-facts house does not declare.",
+      "act": [
+        "compare",
+        "refute",
+        "recount",
+        "translate"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
+      "name": "reply",
+      "file": "datasets/genesis_reply.txt",
+      "genre": "REPLY — advice to the interlocutor RESTING ON A DECLARED LAW. The owner's order about «basic behavioural and psychological laws» was half closed: the behaviour house gives the LAW but not its APPLICATION TO THE PERSON SPEAKING. Here a person names their state and the answer is not sympathy without ground but advice with a checkable law behind it: «i am tired. what should i do? take a rest: when a person is tired, that person makes more mistakes.» The law is never rewritten here — it is quoted from the behaviour house, and the court reads it exactly so: it does not trust the house's own list but compares the tail of the line with the neighbour's declaration word for word. Advice under which a law of a DIFFERENT genus is placed is true in both halves and false as a whole — the same nature as a circular answer. The question head is chosen BY GENUS: tiredness, hunger and haste are asked WHAT TO DO (the state is fixable by action); fear, habit and missed attention are asked WHY (there is nothing to fix, there is something to understand). The sympathetic pair is declared for the NEIGHBOUR and never written as a show — see М-267.",
+      "act": [
+        "decide",
+        "name",
+        "translate"
+      ],
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "opposites",
       "file": "datasets/genesis_opposites.txt",
       "genre": "OPPOSITES — the first relation in the corpus of a WORD TO A WORD, not of a word to a thing, and there was not one show of it in the whole svod. A partner knows not only what a thing IS (the house of definitions) and how much of it there is (the house of nature) but also what it is OPPOSED to. The law that judges this is SYMMETRY: the relation is mutual, and if big is opposed to small then small is opposed to big — both sides stand in the shows, because a corpus that showed one side would teach half a law. The frame is a CITATION frame («what is the opposite of the word big?») and that is a decision, not a convenience: «opposite to BIG» would want a dative in Russian and a genitive in Polish, and every language would want two or three forms per word; the citation frame takes the word in its dictionary form, so the house declares exactly what it knows and invents no case it has not checked. Twelve pairs in each of the nine languages of the attack, three forms.",
@@ -4030,10 +4129,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 19233254,
+      "size": 19291929,
       "tiers": [],
       "text": "mix",
-      "lines": 251231
+      "lines": 251728
     },
     {
       "name": "full",
@@ -4048,10 +4147,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 23746911,
+      "size": 23805586,
       "tiers": [],
       "text": "mix",
-      "lines": 324898
+      "lines": 325395
     },
     {
       "name": "minimal",

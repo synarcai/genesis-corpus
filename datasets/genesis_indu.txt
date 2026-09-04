@@ -1,0 +1,82 @@
+3 — простое. 5 — простое. 7 — простое. значит ли, что всякое нечётное число больше 1 просто? нет: 9 не просто, ибо 9 = 3 × 3.
+0² + 0 + 41 = 41 — простое. 1² + 1 + 41 = 43 — простое. 2² + 2 + 41 = 47 — простое. 3² + 3 + 41 = 53 — простое.
+2^2 − 1 = 3 — простое. 2^3 − 1 = 7 — простое. 2^5 − 1 = 31 — простое. 2^7 − 1 = 127 — простое. значит ли, что 2^n − 1 просто при всяком простом n? нет: при n = 11 выходит 2047, а 2047 = 23 × 89.
+
+3 is prime. 5 is prime. 7 is prime. does it follow that every odd number greater than 1 is prime? no: 9 is not prime, since 9 = 3 × 3.
+0² + 0 + 41 = 41 is prime. 1² + 1 + 41 = 43 is prime. 2² + 2 + 41 = 47 is prime. 3² + 3 + 41 = 53 is prime.
+2^2 − 1 = 3 is prime. 2^3 − 1 = 7 is prime. 2^5 − 1 = 31 is prime. 2^7 − 1 = 127 is prime. does it follow that 2^n − 1 is prime for every prime n? no: at n = 11 it gives 2047, and 2047 = 23 × 89.
+
+3 ist eine Primzahl. 5 ist eine Primzahl. 7 ist eine Primzahl. folgt daraus, dass jede ungerade Zahl größer als 1 eine Primzahl ist? nein: 9 ist keine Primzahl, denn 9 = 3 × 3.
+0² + 0 + 41 = 41 ist eine Primzahl. 1² + 1 + 41 = 43 ist eine Primzahl. 2² + 2 + 41 = 47 ist eine Primzahl. 3² + 3 + 41 = 53 ist eine Primzahl.
+2^2 − 1 = 3 ist eine Primzahl. 2^3 − 1 = 7 ist eine Primzahl. 2^5 − 1 = 31 ist eine Primzahl. 2^7 − 1 = 127 ist eine Primzahl. folgt daraus, dass 2^n − 1 für jede Primzahl n eine Primzahl ist? nein: bei n = 11 kommt 2047 heraus, und 2047 = 23 × 89.
+
+3 est premier. 5 est premier. 7 est premier. en découle-t-il que tout nombre impair supérieur à 1 est premier ? non : 9 n'est pas premier, car 9 = 3 × 3.
+0² + 0 + 41 = 41 est premier. 1² + 1 + 41 = 43 est premier. 2² + 2 + 41 = 47 est premier. 3² + 3 + 41 = 53 est premier.
+2^2 − 1 = 3 est premier. 2^3 − 1 = 7 est premier. 2^5 − 1 = 31 est premier. 2^7 − 1 = 127 est premier. en découle-t-il que 2^n − 1 est premier pour tout n premier ? non : à n = 11 on obtient 2047, et 2047 = 23 × 89.
+
+1 = 1 × 2 ÷ 2. 1 + 2 = 2 × 3 ÷ 2. 1 + 2 + 3 = 3 × 4 ÷ 2. 1 + 2 + 3 + 4 = 4 × 5 ÷ 2. ¿se sigue que la suma de los primeros n números es n × (n + 1) ÷ 2? 4 casos no lo demuestran, pero es cierto: sumando la serie consigo misma escrita al revés se obtienen n pares, y cada par vale n + 1.
+1 = 1 × 1. 1 + 3 = 2 × 2. 1 + 3 + 5 = 3 × 3. 1 + 3 + 5 + 7 = 4 × 4.
+1! + 1 = 2 es primo. 2! + 1 = 3 es primo. 3! + 1 = 7 es primo.
+
+2^2 − 1 = 3 — простое. 2^3 − 1 = 7 — простое. 2^5 − 1 = 31 — простое. 2^7 − 1 = 127 — простое.
+1 = 1 × 1. 1 + 3 = 2 × 2. 1 + 3 + 5 = 3 × 3. 1 + 3 + 5 + 7 = 4 × 4. значит ли, что сумма первых n нечётных чисел равна n × n? 4 случая этого не доказывают, но это верно: каждое следующее нечётное число достраивает квадрат n × n до квадрата (n + 1) × (n + 1).
+
+2^2 − 1 = 3 is prime. 2^3 − 1 = 7 is prime. 2^5 − 1 = 31 is prime. 2^7 − 1 = 127 is prime.
+1 = 1 × 1. 1 + 3 = 2 × 2. 1 + 3 + 5 = 3 × 3. 1 + 3 + 5 + 7 = 4 × 4. does it follow that the sum of the first n odd numbers is n × n? 4 cases do not prove it, but it is true: each next odd number completes the square n × n into the square (n + 1) × (n + 1).
+
+2^2 − 1 = 3 ist eine Primzahl. 2^3 − 1 = 7 ist eine Primzahl. 2^5 − 1 = 31 ist eine Primzahl. 2^7 − 1 = 127 ist eine Primzahl.
+1 = 1 × 1. 1 + 3 = 2 × 2. 1 + 3 + 5 = 3 × 3. 1 + 3 + 5 + 7 = 4 × 4. folgt daraus, dass die Summe der ersten n ungeraden Zahlen n × n ist? 4 Fälle beweisen es nicht, aber es stimmt: jede nächste ungerade Zahl das Quadrat n × n zum Quadrat (n + 1) × (n + 1) ergänzt.
+
+2^2 − 1 = 3 est premier. 2^3 − 1 = 7 est premier. 2^5 − 1 = 31 est premier. 2^7 − 1 = 127 est premier.
+1 = 1 × 1. 1 + 3 = 2 × 2. 1 + 3 + 5 = 3 × 3. 1 + 3 + 5 + 7 = 4 × 4. en découle-t-il que la somme des n premiers nombres impairs vaut n × n ? 4 cas ne le prouvent pas, mais c'est vrai : chaque nombre impair suivant complète le carré n × n en le carré (n + 1) × (n + 1).
+
+1! + 1 = 2 es primo. 2! + 1 = 3 es primo. 3! + 1 = 7 es primo. ¿se sigue que n! + 1 es primo para todo n? no: en n = 4 sale 25, y 25 = 5 × 5.
+3 es primo. 5 es primo. 7 es primo.
+1 = 1 × 2 ÷ 2. 1 + 2 = 2 × 3 ÷ 2. 1 + 2 + 3 = 3 × 4 ÷ 2. 1 + 2 + 3 + 4 = 4 × 5 ÷ 2.
+
+1 = 1 × 2 ÷ 2. 1 + 2 = 2 × 3 ÷ 2. 1 + 2 + 3 = 3 × 4 ÷ 2. 1 + 2 + 3 + 4 = 4 × 5 ÷ 2. значит ли, что сумма первых n чисел равна n × (n + 1) ÷ 2? 4 случая этого не доказывают, но это верно: сложив ряд с ним же, записанным наоборот, получим n пар, и в каждой паре n + 1.
+1! + 1 = 2 — простое. 2! + 1 = 3 — простое. 3! + 1 = 7 — простое.
+
+1 = 1 × 2 ÷ 2. 1 + 2 = 2 × 3 ÷ 2. 1 + 2 + 3 = 3 × 4 ÷ 2. 1 + 2 + 3 + 4 = 4 × 5 ÷ 2. does it follow that the sum of the first n numbers is n × (n + 1) ÷ 2? 4 cases do not prove it, but it is true: adding the row to itself written backwards gives n pairs, and each pair is n + 1.
+1! + 1 = 2 is prime. 2! + 1 = 3 is prime. 3! + 1 = 7 is prime.
+
+1 = 1 × 2 ÷ 2. 1 + 2 = 2 × 3 ÷ 2. 1 + 2 + 3 = 3 × 4 ÷ 2. 1 + 2 + 3 + 4 = 4 × 5 ÷ 2. folgt daraus, dass die Summe der ersten n Zahlen n × (n + 1) ÷ 2 ist? 4 Fälle beweisen es nicht, aber es stimmt: die Reihe zu sich selbst rückwärts addiert n Paare gibt, und jedes Paar ist n + 1.
+1! + 1 = 2 ist eine Primzahl. 2! + 1 = 3 ist eine Primzahl. 3! + 1 = 7 ist eine Primzahl.
+
+1 = 1 × 2 ÷ 2. 1 + 2 = 2 × 3 ÷ 2. 1 + 2 + 3 = 3 × 4 ÷ 2. 1 + 2 + 3 + 4 = 4 × 5 ÷ 2. en découle-t-il que la somme des n premiers nombres vaut n × (n + 1) ÷ 2 ? 4 cas ne le prouvent pas, mais c'est vrai : en ajoutant la suite à elle-même écrite à l'envers on obtient n paires, et chaque paire vaut n + 1.
+1! + 1 = 2 est premier. 2! + 1 = 3 est premier. 3! + 1 = 7 est premier.
+
+1 = 1 × 1. 1 + 8 = 3 × 3. 1 + 8 + 27 = 6 × 6. 1 + 8 + 27 + 64 = 10 × 10.
+0² + 0 + 41 = 41 es primo. 1² + 1 + 41 = 43 es primo. 2² + 2 + 41 = 47 es primo. 3² + 3 + 41 = 53 es primo. ¿se sigue que n² + n + 41 es primo para todo n? no: en n = 40 sale 1681, y 1681 = 41 × 41.
+1 = 1 × 1. 1 + 8 = 3 × 3. 1 + 8 + 27 = 6 × 6. 1 + 8 + 27 + 64 = 10 × 10. ¿se sigue que la suma de los primeros n cubos es el cuadrado de la suma de los primeros n números? 4 casos no lo demuestran, pero es cierto: añadir el cubo de n + 1 completa el cuadrado de la suma hasta el cuadrado de la suma siguiente.
+
+3 — простое. 5 — простое. 7 — простое.
+1! + 1 = 2 — простое. 2! + 1 = 3 — простое. 3! + 1 = 7 — простое. значит ли, что n! + 1 просто при всяком n? нет: при n = 4 выходит 25, а 25 = 5 × 5.
+
+3 is prime. 5 is prime. 7 is prime.
+1! + 1 = 2 is prime. 2! + 1 = 3 is prime. 3! + 1 = 7 is prime. does it follow that n! + 1 is prime for every n? no: at n = 4 it gives 25, and 25 = 5 × 5.
+
+3 ist eine Primzahl. 5 ist eine Primzahl. 7 ist eine Primzahl.
+1! + 1 = 2 ist eine Primzahl. 2! + 1 = 3 ist eine Primzahl. 3! + 1 = 7 ist eine Primzahl. folgt daraus, dass n! + 1 für jedes n eine Primzahl ist? nein: bei n = 4 kommt 25 heraus, und 25 = 5 × 5.
+
+3 est premier. 5 est premier. 7 est premier.
+1! + 1 = 2 est premier. 2! + 1 = 3 est premier. 3! + 1 = 7 est premier. en découle-t-il que n! + 1 est premier pour tout n ? non : à n = 4 on obtient 25, et 25 = 5 × 5.
+
+2^2 − 1 = 3 es primo. 2^3 − 1 = 7 es primo. 2^5 − 1 = 31 es primo. 2^7 − 1 = 127 es primo. ¿se sigue que 2^n − 1 es primo para todo n primo? no: en n = 11 sale 2047, y 2047 = 23 × 89.
+0² + 0 + 41 = 41 es primo. 1² + 1 + 41 = 43 es primo. 2² + 2 + 41 = 47 es primo. 3² + 3 + 41 = 53 es primo.
+3 es primo. 5 es primo. 7 es primo. ¿se sigue que todo número impar mayor que 1 es primo? no: 9 no es primo, pues 9 = 3 × 3.
+
+0² + 0 + 41 = 41 — простое. 1² + 1 + 41 = 43 — простое. 2² + 2 + 41 = 47 — простое. 3² + 3 + 41 = 53 — простое. значит ли, что n² + n + 41 просто при всяком n? нет: при n = 40 выходит 1681, а 1681 = 41 × 41.
+1 = 1 × 1. 1 + 8 = 3 × 3. 1 + 8 + 27 = 6 × 6. 1 + 8 + 27 + 64 = 10 × 10. значит ли, что сумма первых n кубов равна квадрату суммы первых n чисел? 4 случая этого не доказывают, но это верно: прибавление куба n + 1 достраивает квадрат суммы до квадрата следующей суммы.
+
+0² + 0 + 41 = 41 is prime. 1² + 1 + 41 = 43 is prime. 2² + 2 + 41 = 47 is prime. 3² + 3 + 41 = 53 is prime. does it follow that n² + n + 41 is prime for every n? no: at n = 40 it gives 1681, and 1681 = 41 × 41.
+1 = 1 × 1. 1 + 8 = 3 × 3. 1 + 8 + 27 = 6 × 6. 1 + 8 + 27 + 64 = 10 × 10. does it follow that the sum of the first n cubes is the square of the sum of the first n numbers? 4 cases do not prove it, but it is true: adding the cube of n + 1 completes the square of the sum into the square of the next sum.
+
+0² + 0 + 41 = 41 ist eine Primzahl. 1² + 1 + 41 = 43 ist eine Primzahl. 2² + 2 + 41 = 47 ist eine Primzahl. 3² + 3 + 41 = 53 ist eine Primzahl. folgt daraus, dass n² + n + 41 für jedes n eine Primzahl ist? nein: bei n = 40 kommt 1681 heraus, und 1681 = 41 × 41.
+1 = 1 × 1. 1 + 8 = 3 × 3. 1 + 8 + 27 = 6 × 6. 1 + 8 + 27 + 64 = 10 × 10. folgt daraus, dass die Summe der ersten n Kuben das Quadrat der Summe der ersten n Zahlen ist? 4 Fälle beweisen es nicht, aber es stimmt: das Hinzufügen des Kubus von n + 1 das Quadrat der Summe zum Quadrat der nächsten Summe ergänzt.
+
+0² + 0 + 41 = 41 est premier. 1² + 1 + 41 = 43 est premier. 2² + 2 + 41 = 47 est premier. 3² + 3 + 41 = 53 est premier. en découle-t-il que n² + n + 41 est premier pour tout n ? non : à n = 40 on obtient 1681, et 1681 = 41 × 41.
+1 = 1 × 1. 1 + 8 = 3 × 3. 1 + 8 + 27 = 6 × 6. 1 + 8 + 27 + 64 = 10 × 10. en découle-t-il que la somme des n premiers cubes vaut le carré de la somme des n premiers nombres ? 4 cas ne le prouvent pas, mais c'est vrai : ajouter le cube de n + 1 complète le carré de la somme en le carré de la somme suivante.
+
+2^2 − 1 = 3 es primo. 2^3 − 1 = 7 es primo. 2^5 − 1 = 31 es primo. 2^7 − 1 = 127 es primo.
+1 = 1 × 1. 1 + 3 = 2 × 2. 1 + 3 + 5 = 3 × 3. 1 + 3 + 5 + 7 = 4 × 4. ¿se sigue que la suma de los primeros n números impares es n × n? 4 casos no lo demuestran, pero es cierto: cada número impar siguiente completa el cuadrado n × n hasta el cuadrado (n + 1) × (n + 1).
