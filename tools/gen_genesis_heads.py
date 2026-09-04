@@ -49,6 +49,12 @@ def pass_shows(pi):
         b = (base + i * 3) % 4 + 1      # 1..4
         p = (base + i) % 4 + 2          # 2..5
         k = (base + i * 7) % 5 + 2      # 2..6
+        # ОТВЕТ И ЕГО КУЗНИЦА — ДВЕ ПОВЕРХНОСТИ ОДНОГО ФАКТА (М-166). Все
+        # четыре головы вычисляют ответ из чисел вопроса, и ни один из 640
+        # показов не нёс шага; кузница встаёт рядом с голым ответом
+        # чередованием по номеру, на разряде, свободном от разрядов имени,
+        # вещи, единицы и ставки.
+        forge = ((base + i) // 4) % 2 == 0
         # HEAD-1 how many: got-more (three verbs
         # share one (agent, item) key — the
         # episodic algebra needs the full triple)
@@ -56,7 +62,8 @@ def pass_shows(pi):
             f"{nm} had {a} {by_count(a, it)}. "
             f"{nm} got {b} {by_count(b, it)}. "
             f"how many {it} does {nm} "
-            f"have now? {nm} has {a + b} {it}."
+            f"have now? {nm} has {a + b} {it}"
+            f"{f': {a} + {b} = {a + b}' if forge else ''}."
         )
         # HEAD-1 how many: left
         # NOBODY GIVES AWAY MORE THAN THEY HAVE.
@@ -71,13 +78,15 @@ def pass_shows(pi):
             f"{nm} gave {gave} {by_count(gave, it)} "
             f"away. how many {it} are "
             f"left? {nm} keeps {a - gave} "
-            f"{by_count(a - gave, it)}."
+            f"{by_count(a - gave, it)}"
+            f"{f': {a} − {gave} = {a - gave}' if forge else ''}."
         )
         # HEAD-2 how much: rate pay
         out.append(
             f"{nm} bought {k} {by_count(k, it)} "
             f"at {p} dollars each. how much did "
-            f"{nm} pay? {nm} paid {k * p} dollars."
+            f"{nm} pay? {nm} paid {k * p} dollars"
+            f"{f': {k} × {p} = {k * p}' if forge else ''}."
         )
         # HEAD-2 how much: unit rate over time. THE VERB FOLLOWS THE UNIT
         # (03.09): «walks 2 pounds every day», «walks 5 days every day» were
@@ -86,7 +95,8 @@ def pass_shows(pi):
         out.append(
             f"{nm} {verb} {p} {by_count(p, un_r)} "
             f"every day. how much in {k} days? "
-            f"{k * p} {un_r}."
+            f"{k * p} {un_r}"
+            f"{f': {p} × {k} = {k * p}' if forge else ''}."
         )
     return out
 

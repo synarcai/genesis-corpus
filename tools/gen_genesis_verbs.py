@@ -101,12 +101,16 @@ def pass_shows(pass_i):
         it = its[seed % len(its)]
         n = seed % 7 + 3           # 3..9
         m = seed % 4 + 1           # 1..4
+        # ОТВЕТ И ЕГО КУЗНИЦА — ДВЕ ПОВЕРХНОСТИ ОДНОГО ФАКТА (М-166): 310
+        # вычисленных ответов без единого шага. Чередование берётся с
+        # разряда, свободного от разрядов имени, вещи и обоих чисел.
+        forge = f": {n} + {m} = {n + m}" if (seed // 8) % 2 == 0 else ""
         # the four-place discipline, in the past
         out.append(
             f"{a} {past} {n} {by_count(n, it)}. "
             f"{a} {past} {m} {by_count(m, it)} more. "
             f"how many {it} does {a} hold now? "
-            f"{a} holds {n + m} {by_count(n + m, it)}."
+            f"{a} holds {n + m} {by_count(n + m, it)}{forge}."
         )
         # THE PERFECT BESIDE ITS PAST: the pair is shown, not assumed
         out.append(
@@ -118,7 +122,7 @@ def pass_shows(pass_i):
             f"{b} has {done} {m} {by_count(m, it)}. "
             f"{a} has {done} {n} more {it} than {b}. "
             f"how many {it} does {a} hold now? "
-            f"{a} holds {n + m} {by_count(n + m, it)}."
+            f"{a} holds {n + m} {by_count(n + m, it)}{forge}."
         )
         # the present, so base and third person live too
         out.append(

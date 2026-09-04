@@ -70,6 +70,10 @@ def pass_shows(pi):
         # in another — the algebra buys each law
         # from its own shows
         add = (base + i) % 2 == 0
+        # ОТВЕТ И ЕГО КУЗНИЦА — ДВЕ ПОВЕРХНОСТИ ОДНОГО ФАКТА (М-166): 240
+        # вычисленных ответов без шага. Разряд чередования — третий: нулевой
+        # держит знак, первый — пару глаголов.
+        forge = ((base + i) // 4) % 2 == 0
         if add:
             c = a + b
             out.append(
@@ -77,7 +81,8 @@ def pass_shows(pi):
                 f"{nm} {av2} {b} {by_count(b, it)} "
                 f"more. how many {it} does {nm} "
                 f"hold now? {nm} holds {c} "
-                f"{by_count(c, it)}."
+                f"{by_count(c, it)}"
+                f"{f': {a} + {b} = {c}' if forge else ''}."
             )
         else:
             c = a - b
@@ -86,7 +91,8 @@ def pass_shows(pi):
                 f"{nm} {sv2} {b} {by_count(b, it)} "
                 f"away. how many {it} does {nm} "
                 f"keep? {nm} keeps {c} "
-                f"{by_count(c, it)}."
+                f"{by_count(c, it)}"
+                f"{f': {a} − {b} = {c}' if forge else ''}."
             )
     return out
 

@@ -74,6 +74,10 @@ def pass_shows(pi):
         pick = ((base + i) // 2) % 4
         # A VERB TAKES ITS OWN KIND OF THINGS (tools/verbthings.py)
         it = verbthings.подобрать(ADD_PAIRS[pick] if add else SUB_PAIRS[pick], ITEMS, base + i * 5)
+        # ОТВЕТ И ЕГО КУЗНИЦА — ДВЕ ПОВЕРХНОСТИ ОДНОГО ФАКТА (М-166): 400
+        # показов вычисленного ответа без единого шага. Разряд чередования
+        # свободен от разрядов знака (нулевой) и пары с вопросом (первый).
+        forge = ((base + i) // 4) % 2 == 0
         if add:
             (v1, v2) = ADD_PAIRS[pick]
             (ask, av) = ASK_ADD[
@@ -85,7 +89,8 @@ def pass_shows(pi):
                 f"{nm} {v2} {b} {by_count(b, it)} "
                 f"more. how many {it} does {nm} "
                 f"{ask}? {nm} {av} {c} "
-                f"{by_count(c, it)}."
+                f"{by_count(c, it)}"
+                f"{f': {a} + {b} = {c}' if forge else ''}."
             )
         else:
             (v1, v2) = SUB_PAIRS[pick]
@@ -98,7 +103,8 @@ def pass_shows(pi):
                 f"{nm} {v2} {b} {by_count(b, it)} "
                 f"away. how many {it} does {nm} "
                 f"{ask}? {nm} {av} {c} "
-                f"{by_count(c, it)}."
+                f"{by_count(c, it)}"
+                f"{f': {a} − {b} = {c}' if forge else ''}."
             )
     return out
 

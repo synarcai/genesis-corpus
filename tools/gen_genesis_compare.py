@@ -120,6 +120,7 @@ def pass_shows(pi):
             bv = (base + i * 7) % 7 + 3
             n = (base + i * 3) % 3 + 1
             av = bv + n
+            steps = f"{bv} + {n} = {av}"
             surf = ADD_SURF[
                 ((base + i) // 3) % len(ADD_SURF)
             ]
@@ -131,6 +132,7 @@ def pass_shows(pi):
             bv = (base + i * 7) % 6 + 5
             n = (base + i * 3) % 3 + 1
             av = bv - n
+            steps = f"{bv} − {n} = {av}"
             surf = SUB_SURF[
                 ((base + i) // 3) % len(SUB_SURF)
             ]
@@ -142,6 +144,7 @@ def pass_shows(pi):
             bv = (base + i * 7) % 4 + 2
             n = (base + i * 3) % 2 + 2
             av = bv * n
+            steps = f"{bv} × {n} = {av}"
             surf = MUL_SURF[((base + i) // 3) % len(MUL_SURF)]
             ask, av_verb = ASK_ADD[
                 ((base + i) // 6) % 2
@@ -151,6 +154,7 @@ def pass_shows(pi):
             bv = (base + i * 7) % 6 + 2
             n = 2
             av = bv * 2
+            steps = f"{bv} × 2 = {av}"
             surf = TWICE_SURF[((base + i) // 3) % len(TWICE_SURF)]
             ask, av_verb = ASK_ADD[((base + i) // 6) % 2]
         else:
@@ -158,6 +162,9 @@ def pass_shows(pi):
             bv = (base + i * 7) % 5 + 2
             n = (base + i * 3) % 3 + 1
             av = bv * 2 + n
+            # ДВА ШАГА, А НЕ ОДИН: внешнее отношение читается только после
+            # внутреннего, и кузница обязана показать этот порядок.
+            steps = f"{bv} × 2 = {bv * 2}, {bv * 2} + {n} = {av}"
             surf = NESTED_SURF[((base + i) // 3) % len(NESTED_SURF)]
             ask, av_verb = ASK_ADD[((base + i) // 6) % 2]
         # THE COUNT CHOOSES THE FORM. «1 eggs» was shown
@@ -181,10 +188,21 @@ def pass_shows(pi):
         # index, not by chance: each surface is seen
         # in both orders equally often.
         base_s = f"{b} has {bv} {by_count(bv, it)}."
+        # ОТВЕТ И ЕГО КУЗНИЦА — ДВЕ ПОВЕРХНОСТИ ОДНОГО ФАКТА (М-166).
+        # Перепись леджеров назвала этот род первым из десяти, где ответ
+        # есть ЧИСЛО, ВЫЧИСЛЕННОЕ из двух чисел вопроса, а шага не показано
+        # ни одного из 1440 раз: рынок композиций мог купить здесь только
+        # соответствие «условие → число», но не исполнителя, его творящего.
+        # Кузница не вытесняет голый ответ, а встаёт рядом с ним и берётся
+        # ЧЕРЕДОВАНИЕМ ПО НОМЕРУ — тем же законом, каким выше берётся
+        # порядок клауз, и на СОСЕДНЕМ разряде, чтобы две мены не вошли в
+        # резонанс: проза пишет ответ и без кузницы, и рынок обязан видеть
+        # обе поверхности равно часто.
+        forge = f": {steps}" if ((base + i) // 2) % 2 == 0 else ""
         tail = (
             f"how many {it} does {a} "
             f"{ask}? {a} {av_verb} {av} "
-            f"{by_count(av, it)}."
+            f"{by_count(av, it)}{forge}."
         )
         first, second = (
             (base_s, cmp_s) if (base + i) % 2 == 0

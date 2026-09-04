@@ -94,12 +94,20 @@ def pass_shows(pi):
             ((base + i) // 2) % len(pool)
         ]
         who = "they" if pron else f"{a} and {b}"
+        # ОТВЕТ И ЕГО КУЗНИЦА — ДВЕ ПОВЕРХНОСТИ ОДНОГО ФАКТА (М-166). Сумма
+        # агрегата вычисляется из чисел вопроса, а шага не стояло ни одного
+        # из 430 показов. Кузница берётся чередованием по номеру и на своём
+        # разряде у каждой из двух волн: у пары свободен нулевой (вопрос
+        # берётся со второго), у тройки — второй, ибо тройка идёт шагом
+        # четыре и нулевой разряд в ней постоянен.
+        forge = (base + i) % 2 == 0
         out.append(
             f"{a} has {x} {by_count(x, it)}. "
             f"{b} has {y} {by_count(y, it)}. "
             f"how many {it} do {who} "
             f"{ask}? {a} and {b} {av} "
-            f"{x + y} {by_count(x + y, it)}."
+            f"{x + y} {by_count(x + y, it)}"
+            f"{f': {x} + {y} = {x + y}' if forge else ''}."
         )
         # the TRIPLE wave: bearers meet by
         # adjacency (life's comma is cut) with
@@ -112,6 +120,10 @@ def pass_shows(pi):
             if c not in (a, b):
                 z = (base + i) % 4 + 1
                 s = x + y + z
+                forge3 = ((base + i) // 4) % 2 == 0
+                # ДВА ШАГА: смежность режется дважды, и кузница обязана
+                # показать промежуточную сумму, а не только итог.
+                steps3 = f": {x} + {y} = {x + y}, {x + y} + {z} = {s}"
                 out.append(
                     f"{a} has {x} "
                     f"{by_count(x, it)}. "
@@ -123,7 +135,8 @@ def pass_shows(pi):
                     f"{a} {b} and {c} "
                     f"{ask}? {a} {b} and "
                     f"{c} {av} {s} "
-                    f"{by_count(s, it)}."
+                    f"{by_count(s, it)}"
+                    f"{steps3 if forge3 else ''}."
                 )
     return out
 

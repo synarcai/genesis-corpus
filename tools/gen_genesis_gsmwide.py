@@ -65,6 +65,12 @@ def pass_shows(pi):
         pick = ((base + i) // 2) % 4
         # A VERB TAKES ITS OWN KIND OF THINGS (tools/verbthings.py)
         itm = verbthings.подобрать(ADD_PAIRS[pick] if add else SUB_PAIRS[pick], ITEMS, base + i * 7)
+        # ОТВЕТ И ЕГО КУЗНИЦА — ДВЕ ПОВЕРХНОСТИ ОДНОГО ФАКТА (М-166). Ответ
+        # этого рода ВЫЧИСЛЯЕТСЯ из двух чисел вопроса, а шага не стояло ни
+        # одного из 900: рынок мог купить соответствие, но не исполнителя.
+        # Кузница встаёт РЯДОМ с голым ответом чередованием по номеру, и
+        # разряд её свободен от разрядов глагола, вопроса и знака.
+        forge = ((base + i) // 8) % 2 == 0
         if add:
             (v1, v2) = ADD_PAIRS[pick]
             (ask, av) = ASKS_ADD[
@@ -76,7 +82,8 @@ def pass_shows(pi):
                 f"{nm} {v2} {b} {by_count(b, itm)} "
                 f"more. how many {itm} does {nm} "
                 f"{ask}? {nm} {av} {c} "
-                f"{by_count(c, itm)}."
+                f"{by_count(c, itm)}"
+                f"{f': {a} + {b} = {c}' if forge else ''}."
             )
         else:
             (v1, v2) = SUB_PAIRS[pick]
@@ -89,7 +96,8 @@ def pass_shows(pi):
                 f"{nm} {v2} {b} {by_count(b, itm)} "
                 f"away. how many {itm} does {nm} "
                 f"{ask}? {nm} {av} {c} "
-                f"{by_count(c, itm)}."
+                f"{by_count(c, itm)}"
+                f"{f': {a} − {b} = {c}' if forge else ''}."
             )
         # possessive genus: the acting noun
         # agents; lay/give live here
@@ -106,7 +114,8 @@ def pass_shows(pi):
                 f"{by_count(b2, 'eggs')} "
                 f"more. how many eggs do the "
                 f"{pet} hold now? the {pet} "
-                f"holds {a2 + b2} eggs."
+                f"holds {a2 + b2} eggs"
+                f"{f': {a2} + {b2} = {a2 + b2}' if forge else ''}."
             )
     return out
 
