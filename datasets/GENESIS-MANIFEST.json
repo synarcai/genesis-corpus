@@ -761,6 +761,30 @@
       "actors": []
     },
     {
+      "name": "opinion",
+      "file": "datasets/genesis_opinion.txt",
+      "genre": "FACT AND OPINION — what can be checked and what cannot. The corpus had learned to refuse honestly (the border of knowledge: «i do not know: the weather changes every day, and i do not see it») and to answer with a ground. One thing it could not do at all: TELL TWO KINDS OF STATEMENT APART. «Ice floats in water» and «this book is interesting» stand alike in speech and are checked differently — the first by observation, the second not at all — and an organism that does not know the difference will argue about tastes and agree with falsehood with equal confidence. The fact is never written here anew: it is QUOTED from the world-facts house, and the court asks the NEIGHBOUR whether the quoted statement is a fact, so a corpus cannot acquire «facts» behind its own declaration's back. A line of this shape carrying a statement from the wrong side is claimed and FALSE, not silent. The opinions are deliberately harmless — a taste for a book, a colour, a soup; no opinion ABOUT A PERSON is taken, since a corpus showing those teaches them, and the distinction of kind needs only soup.",
+      "act": [
+        "decide",
+        "name",
+        "translate"
+      ],
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "reply",
       "file": "datasets/genesis_reply.txt",
       "genre": "REPLY — advice to the interlocutor RESTING ON A DECLARED LAW. The owner's order about «basic behavioural and psychological laws» was half closed: the behaviour house gives the LAW but not its APPLICATION TO THE PERSON SPEAKING. Here a person names their state and the answer is not sympathy without ground but advice with a checkable law behind it: «i am tired. what should i do? take a rest: when a person is tired, that person makes more mistakes.» The law is never rewritten here — it is quoted from the behaviour house, and the court reads it exactly so: it does not trust the house's own list but compares the tail of the line with the neighbour's declaration word for word. Advice under which a law of a DIFFERENT genus is placed is true in both halves and false as a whole — the same nature as a circular answer. The question head is chosen BY GENUS: tiredness, hunger and haste are asked WHAT TO DO (the state is fixable by action); fear, habit and missed attention are asked WHY (there is nothing to fix, there is something to understand). The sympathetic pair is declared for the NEIGHBOUR and never written as a show — see М-267.",
