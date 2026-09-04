@@ -3928,6 +3928,24 @@
       "lines": 131645
     },
     {
+      "name": "uniq",
+      "file": "datasets/GENESIS-UNIQ.txt",
+      "genre": "the assembly WITHOUT REPEATS: every world of shows in manifest order, with the second and every further EXACT COPY of a line of the SAME world struck out. The measure that asked for it (d5, 04.09) is stronger than the weight it saves: if the measures on this assembly equal the measures on the full one, then half the svod IS NOT BOUGHT — a statement about the nature of buying, not about build time; if they differ, the repeat IS bought, and it is a law and not a debt. Three conditions of a clean trial are kept: the deduplication is WITHIN a world (a line met in two different worlds is a coincidence of worlds, not a repeat of a pass), the ORDER of lines is preserved (the page is the organism's unit, and a permutation changes neighbourhoods — only the second and further copies are struck, the first stays in its place), and a per-world report stands beside the assembly so that a divergence of measures can be attributed to a world.",
+      "act": [
+        "assemble"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "assembled_only"
+      ],
+      "size": 14168045,
+      "tiers": [],
+      "text": "mix",
+      "lines": 148007
+    },
+    {
       "name": "mid13",
       "file": "datasets/GENESIS-MID13.txt",
       "genre": "the assembly cut to 13 shows per GENUS — a point of the CURVE OF SUFFICIENCY (holon 03.09, after the price of mass was measured: on nine shows per genus the attack lost 13 answers, twenty points of coverage, four fifths of depth-2 chains and all of depth 3; so the corpus is cut again at thirteen and at twenty, and the same binary runs on 9 → 13 → 20 → full). The census measures the VISIBILITY of a genus; the purchase of a chain measures its LEARNABILITY, and the second wants mass. Built by scripts/minimal_build.py --масса 13",
