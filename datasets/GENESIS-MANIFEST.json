@@ -564,6 +564,30 @@
       "actors": []
     },
     {
+      "name": "topics",
+      "file": "datasets/genesis_topics.txt",
+      "genre": "EVERYDAY TOPICS — what a person asks about first (the owner's order, 04.09, item 4; the BESEDA band measures this genus mute 16 of 20, and names its cause: SUBJ-UNKNOWN — the reader does not know the SUBJECT of the question. «Что такое дождь?» requires rain to be defined somewhere in the svod, and it was not). Eight topics — weather, time and the calendar, food, the road, work, money in daily life, health, family — in two forms, each checkable in its own way: the DEFINITION («что такое дождь? дождь — это вода, которая падает из облаков.») judged by the declared table, so that the same frame with a FOREIGN definition is a lie; and the COUNT («в сутках 24 часа. сколько часов в сутках? 24 часа.», «в сутках 24 часа, в часе 60 минут. сколько минут в сутках? 1440 минут: 24 × 60 = 1440.») judged by recounting. The languages are divided BY THE NATURE OF THE FORM and not by convenience: the count is held by all nine languages of the attack (numbers do the work, two words per unit), the definitions by five (ru en de fr es) — a definition is a sentence that must be written correctly, not translated by eye, and a language whose definitions are not yet declared does not write them. A named debt.",
+      "act": [
+        "name",
+        "recount",
+        "translate"
+      ],
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "measure_story",
       "file": "datasets/genesis_measure_story.txt",
       "genre": "MEASURED STORIES — A DISTANCE COMPARED BY ITS VERB, AND A PAIR PRICED BY ITS MULTIPLE (holon's orders from the last lines of the attack, 03.09). The first: «the frog jumped 31 inches. the grasshopper jumped 25 inches. how many more inches did the frog jump than the grasshopper? 31 − 25 = 6.» — the corpus said this with ONE verb, and a verb met once is learnt as a word rather than as a place of the frame; six verbs walk here (jumped, ran, walked, swam, flew, crawled — прыгнул, пробежал, прошёл, проплыл, пролетел, прополз), each with its bare form for the English question and, in Russian, with its own preposition («прыгнул НА 31 сантиметр», but «пробежал 31 метр») and its past tense agreeing with the actor («лягушка прыгнула», «кузнечик прыгнул»). The second: «a house and a lot cost 120 dollars together. the house costs three times as much as the lot. how much does the lot cost? 3 + 1 = 4, 120 ÷ 4 = 30.» — «as MUCH as» beside «times» on a price, where the corpus had only «as many as» on countables; both ends of the pair are asked, and the greater costs one step more, for its answer runs through the lesser. Every form is declared by the house (tools/measurestory.py): the Russian measure names three count forms, the past tense two genders, the second good its genitive; the court knows the whole finite table and calls a line of these shapes that the table does not hold a lie",
@@ -3862,10 +3886,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 18099419,
+      "size": 18408678,
       "tiers": [],
       "text": "mix",
-      "lines": 239739
+      "lines": 242115
     },
     {
       "name": "full",
@@ -3880,10 +3904,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 22613076,
+      "size": 22922335,
       "tiers": [],
       "text": "mix",
-      "lines": 313406
+      "lines": 315782
     },
     {
       "name": "minimal",
@@ -3898,10 +3922,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 10229394,
+      "size": 10450435,
       "tiers": [],
       "text": "mix",
-      "lines": 129765
+      "lines": 131236
     },
     {
       "name": "mid13",
@@ -3916,10 +3940,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 11905369,
+      "size": 12132585,
       "tiers": [],
       "text": "mix",
-      "lines": 153642
+      "lines": 155175
     },
     {
       "name": "mid",
@@ -3934,10 +3958,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 13938079,
+      "size": 14176148,
       "tiers": [],
       "text": "mix",
-      "lines": 181917
+      "lines": 183555
     },
     {
       "name": "selfmeasure",
