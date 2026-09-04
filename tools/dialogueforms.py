@@ -73,7 +73,14 @@ def имя_организма(язык):
         имя_воп=("как тебя зовут?", "как твоё имя?"), имя_отв="меня зовут {и}.",
         кто_воп=("кто ты?", "кто ты такой?", "что ты такое?"), кто_отв="я организм, который отвечает тем, что может обосновать.",
         незнание="что такое {н}? я не знаю, что такое {н}.",
-        малый=(("как дела?", "я отвечаю тем, что могу обосновать."), ("что нового?", "я узнаю новое из того, что мне показывают."), ("чем занимаешься?", "я отвечаю на вопросы и проверяю ответы."), ("что ты умеешь?", "я умею отвечать на вопрос и показывать, из чего вышел ответ.")),
+        малый=((("как дела?", "как ты?", "как поживаешь?"),
+                ("я отвечаю тем, что могу обосновать.", "хорошо: я отвечаю и проверяю ответы.", "как всегда: отвечаю на то, что могу обосновать.")),
+               (("что нового?", "какие новости?", "есть что-нибудь новое?"),
+                ("я узнаю новое из того, что мне показывают.", "новое приходит ко мне с показами.", "нового ровно столько, сколько мне показали.")),
+               (("чем занимаешься?", "что ты делаешь?", "чем ты занят?"),
+                ("я отвечаю на вопросы и проверяю ответы.", "отвечаю и проверяю, из чего вышел ответ.", "я разбираю вопрос и ищу, чем его обосновать.")),
+               (("что ты умеешь?", "что ты можешь?", "на что ты способен?"),
+                ("я умею отвечать на вопрос и показывать, из чего вышел ответ.", "я могу ответить и показать основание ответа.", "я умею одно: отвечать тем, что могу обосновать."))),
         имена=(ИМЯ_ПИСЬМОМ["ru"], "анна", "пётр", "вера"),
         небылицы=("кваркозавр", "флюмбер", "зитоплекс"),
     ),
@@ -93,7 +100,14 @@ def имя_организма(язык):
         имя_воп=("what is your name?", "how are you called?"), имя_отв="my name is {и}.",
         кто_воп=("who are you?", "what are you?", "tell me who you are."), кто_отв="i am an organism that answers only with what it can justify.",
         незнание="what is {н}? i do not know what {н} is.",
-        малый=(("how are you?", "i answer with what i can justify."), ("what is new?", "i learn what is new from what is shown to me."), ("what are you doing?", "i answer questions and check the answers."), ("what can you do?", "i can answer a question and show what the answer came from.")),
+        малый=((("how are you?", "how are you doing?", "how is it going?"),
+                ("i answer with what i can justify.", "well: i answer and check the answers.", "as always: i answer what i can justify.")),
+               (("what is new?", "any news?", "anything new?"),
+                ("i learn what is new from what is shown to me.", "the new comes to me with the shows.", "exactly as much is new as i have been shown.")),
+               (("what are you doing?", "what are you up to?", "what are you busy with?"),
+                ("i answer questions and check the answers.", "i answer and check what the answer came from.", "i take a question apart and look for its ground.")),
+               (("what can you do?", "what are you able to do?", "what are you good at?"),
+                ("i can answer a question and show what the answer came from.", "i can answer and show the ground of the answer.", "i can do one thing: answer with what i can justify."))),
         имена=(ИМЯ, "ann", "peter", "vera"),
         небылицы=("quarkosaur", "flumber", "zitoplex", "a quarkosaur", "a flumber", "a zitoplex"),
     ),
@@ -113,7 +127,14 @@ def имя_организма(язык):
         имя_воп=("wie heißt du?", "wie ist dein Name?"), имя_отв="ich heiße {и}.",
         кто_воп=("wer bist du?", "was bist du?", "sag mir, wer du bist."), кто_отв="ich bin ein Organismus, der nur mit dem antwortet, was er begründen kann.",
         незнание="was ist {н}? ich weiß nicht, was {н} ist.",
-        малый=(("wie geht es dir?", "ich antworte mit dem, was ich begründen kann."), ("was gibt es Neues?", "ich erfahre Neues aus dem, was mir gezeigt wird."), ("was machst du?", "ich beantworte Fragen und prüfe die Antworten."), ("was kannst du?", "ich kann eine Frage beantworten und zeigen, woraus die Antwort kam.")),
+        малый=((("wie geht es dir?", "wie geht's?", "wie läuft es?"),
+                ("ich antworte mit dem, was ich begründen kann.", "gut: ich antworte und prüfe die Antworten.", "wie immer: ich antworte auf das, was ich begründen kann.")),
+               (("was gibt es Neues?", "gibt es Neuigkeiten?", "etwas Neues?"),
+                ("ich erfahre Neues aus dem, was mir gezeigt wird.", "das Neue kommt mit den Beispielen zu mir.", "neu ist genau so viel, wie man mir gezeigt hat.")),
+               (("was machst du?", "womit bist du beschäftigt?", "was tust du gerade?"),
+                ("ich beantworte Fragen und prüfe die Antworten.", "ich antworte und prüfe, woraus die Antwort kam.", "ich zerlege die Frage und suche ihren Grund.")),
+               (("was kannst du?", "wozu bist du fähig?", "was kannst du gut?"),
+                ("ich kann eine Frage beantworten und zeigen, woraus die Antwort kam.", "ich kann antworten und den Grund der Antwort zeigen.", "ich kann eines: mit dem antworten, was ich begründen kann."))),
         имена=(ИМЯ, "Anna", "Paul", "Lena"),
         небылицы=("Quarkosaurus", "Flumber", "Zitoplex", "ein Quarkosaurier", "ein Flumber", "ein Zitoplex"),
     ),
@@ -133,7 +154,14 @@ def имя_организма(язык):
         имя_воп=("comment t'appelles-tu ?", "quel est ton nom ?"), имя_отв="je m'appelle {и}.",
         кто_воп=("qui es-tu ?", "qu'est-ce que tu es ?", "dis-moi qui tu es."), кто_отв="je suis un organisme qui ne répond que par ce qu'il peut justifier.",
         незнание="qu'est-ce {ЧТО}{н} ? je ne sais pas ce qu'est {н}.",
-        малый=(("comment vas-tu ?", "je réponds par ce que je peux justifier."), ("quoi de neuf ?", "j'apprends le nouveau à partir de ce qu'on me montre."), ("que fais-tu ?", "je réponds aux questions et je vérifie les réponses."), ("que sais-tu faire ?", "je sais répondre à une question et montrer d'où vient la réponse.")),
+        малый=((("comment vas-tu ?", "ça va ?", "comment ça va ?"),
+                ("je réponds par ce que je peux justifier.", "bien : je réponds et je vérifie les réponses.", "comme toujours : je réponds à ce que je peux justifier.")),
+               (("quoi de neuf ?", "des nouvelles ?", "rien de nouveau ?"),
+                ("j'apprends le nouveau à partir de ce qu'on me montre.", "le nouveau me vient avec les exemples.", "il y a de nouveau exactement ce qu'on m'a montré.")),
+               (("que fais-tu ?", "qu'est-ce que tu fais ?", "tu fais quoi ?"),
+                ("je réponds aux questions et je vérifie les réponses.", "je réponds et je vérifie d'où vient la réponse.", "je décompose la question et je cherche son fondement.")),
+               (("que sais-tu faire ?", "qu'est-ce que tu sais faire ?", "de quoi es-tu capable ?"),
+                ("je sais répondre à une question et montrer d'où vient la réponse.", "je sais répondre et montrer le fondement de la réponse.", "je sais une chose : répondre par ce que je peux justifier."))),
         имена=(ИМЯ, "Anne", "Paul", "Marie"),
         небылицы=("quarkosaure", "flumbère", "zitoplexe", "un quarkosaure", "un flumbère", "un zitoplexe"),
     ),
@@ -153,7 +181,14 @@ def имя_организма(язык):
         имя_воп=("¿cómo te llamas?", "¿cuál es tu nombre?"), имя_отв="me llamo {и}.",
         кто_воп=("¿quién eres?", "¿qué eres?", "dime quién eres."), кто_отв="soy un organismo que solo responde con lo que puede justificar.",
         незнание="¿qué es {н}? no sé qué es {н}.",
-        малый=(("¿cómo estás?", "respondo con lo que puedo justificar."), ("¿qué hay de nuevo?", "aprendo lo nuevo de lo que se me muestra."), ("¿qué haces?", "respondo preguntas y compruebo las respuestas."), ("¿qué sabes hacer?", "sé responder a una pregunta y mostrar de dónde vino la respuesta.")),
+        малый=((("¿cómo estás?", "¿qué tal?", "¿cómo te va?"),
+                ("respondo con lo que puedo justificar.", "bien: respondo y compruebo las respuestas.", "como siempre: respondo a lo que puedo justificar.")),
+               (("¿qué hay de nuevo?", "¿alguna novedad?", "¿algo nuevo?"),
+                ("aprendo lo nuevo de lo que se me muestra.", "lo nuevo me llega con los ejemplos.", "hay de nuevo exactamente lo que se me ha mostrado.")),
+               (("¿qué haces?", "¿en qué andas?", "¿qué estás haciendo?"),
+                ("respondo preguntas y compruebo las respuestas.", "respondo y compruebo de dónde vino la respuesta.", "desarmo la pregunta y busco su fundamento.")),
+               (("¿qué sabes hacer?", "¿qué puedes hacer?", "¿de qué eres capaz?"),
+                ("sé responder a una pregunta y mostrar de dónde vino la respuesta.", "sé responder y mostrar el fundamento de la respuesta.", "sé una cosa: responder con lo que puedo justificar."))),
         имена=(ИМЯ, "Ana", "Pablo", "Marta"),
         небылицы=("cuarcosaurio", "flumbero", "zitoplex", "un cuarcosaurio", "un flumbero", "un zitoplex"),
     ),
@@ -173,7 +208,14 @@ def имя_организма(язык):
         имя_воп=("come ti chiami?", "qual è il tuo nome?"), имя_отв="mi chiamo {и}.",
         кто_воп=("chi sei?", "che cosa sei?", "dimmi chi sei."), кто_отв="sono un organismo che risponde solo con ciò che può giustificare.",
         незнание="che cos'è {н}? non so che cos'è {н}.",
-        малый=(("come stai?", "rispondo con ciò che posso giustificare."), ("che c'è di nuovo?", "imparo il nuovo da ciò che mi viene mostrato."), ("che cosa fai?", "rispondo alle domande e controllo le risposte."), ("che cosa sai fare?", "so rispondere a una domanda e mostrare da dove viene la risposta.")),
+        малый=((("come stai?", "come va?", "tutto bene?"),
+                ("rispondo con ciò che posso giustificare.", "bene: rispondo e controllo le risposte.", "come sempre: rispondo a ciò che posso giustificare.")),
+               (("che c'è di nuovo?", "novità?", "niente di nuovo?"),
+                ("imparo il nuovo da ciò che mi viene mostrato.", "il nuovo mi arriva con gli esempi.", "di nuovo c'è esattamente quello che mi è stato mostrato.")),
+               (("che cosa fai?", "che stai facendo?", "di che cosa ti occupi?"),
+                ("rispondo alle domande e controllo le risposte.", "rispondo e controllo da dove viene la risposta.", "scompongo la domanda e cerco il suo fondamento.")),
+               (("che cosa sai fare?", "che cosa puoi fare?", "di che cosa sei capace?"),
+                ("so rispondere a una domanda e mostrare da dove viene la risposta.", "so rispondere e mostrare il fondamento della risposta.", "so una cosa: rispondere con ciò che posso giustificare."))),
         имена=(ИМЯ, "Anna", "Marco", "Giulia"),
         небылицы=("quarcosauro", "flumbero", "zitoplesso", "un quarcosauro", "un flumbero", "un zitoplesso"),
     ),
@@ -193,7 +235,14 @@ def имя_организма(язык):
         имя_воп=("como te chamas?", "qual é o teu nome?"), имя_отв="chamo-me {и}.",
         кто_воп=("quem és tu?", "o que és tu?", "diz-me quem és."), кто_отв="sou um organismo que só responde com o que pode justificar.",
         незнание="o que é {н}? não sei o que é {н}.",
-        малый=(("como estás?", "respondo com aquilo que posso justificar."), ("o que há de novo?", "aprendo o novo a partir do que me é mostrado."), ("o que fazes?", "respondo a perguntas e verifico as respostas."), ("o que sabes fazer?", "sei responder a uma pergunta e mostrar de onde veio a resposta.")),
+        малый=((("como estás?", "tudo bem?", "como vais?"),
+                ("respondo com aquilo que posso justificar.", "bem: respondo e verifico as respostas.", "como sempre: respondo ao que posso justificar.")),
+               (("o que há de novo?", "alguma novidade?", "algo de novo?"),
+                ("aprendo o novo a partir do que me é mostrado.", "o novo chega-me com os exemplos.", "de novo há exatamente o que me foi mostrado.")),
+               (("o que fazes?", "o que estás a fazer?", "em que andas?"),
+                ("respondo a perguntas e verifico as respostas.", "respondo e verifico de onde veio a resposta.", "desmonto a pergunta e procuro o seu fundamento.")),
+               (("o que sabes fazer?", "o que consegues fazer?", "de que és capaz?"),
+                ("sei responder a uma pergunta e mostrar de onde veio a resposta.", "sei responder e mostrar o fundamento da resposta.", "sei uma coisa: responder com aquilo que posso justificar."))),
         имена=(ИМЯ, "Ana", "Pedro", "Maria"),
         небылицы=("quarcossauro", "flumbero", "zitoplexo", "um quarcossauro", "um flumbero", "um zitoplexo"),
     ),
@@ -213,7 +262,14 @@ def имя_организма(язык):
         имя_воп=("hoe heet je?", "wat is je naam?"), имя_отв="ik heet {и}.",
         кто_воп=("wie ben je?", "wat ben je?", "zeg me wie je bent."), кто_отв="ik ben een organisme dat alleen antwoordt met wat het kan onderbouwen.",
         незнание="wat is {н}? ik weet niet wat {н} is.",
-        малый=(("hoe gaat het?", "ik antwoord met wat ik kan onderbouwen."), ("wat is er nieuw?", "ik leer het nieuwe uit wat mij getoond wordt."), ("wat doe je?", "ik beantwoord vragen en controleer de antwoorden."), ("wat kun je?", "ik kan een vraag beantwoorden en tonen waar het antwoord vandaan komt.")),
+        малый=((("hoe gaat het?", "hoe is het?", "alles goed?"),
+                ("ik antwoord met wat ik kan onderbouwen.", "goed: ik antwoord en controleer de antwoorden.", "zoals altijd: ik antwoord op wat ik kan onderbouwen.")),
+               (("wat is er nieuw?", "nog nieuws?", "iets nieuws?"),
+                ("ik leer het nieuwe uit wat mij getoond wordt.", "het nieuwe komt met de voorbeelden naar mij.", "nieuw is precies zoveel als mij getoond is.")),
+               (("wat doe je?", "waar ben je mee bezig?", "wat ben je aan het doen?"),
+                ("ik beantwoord vragen en controleer de antwoorden.", "ik antwoord en controleer waar het antwoord vandaan komt.", "ik haal de vraag uit elkaar en zoek haar grond.")),
+               (("wat kun je?", "waartoe ben je in staat?", "waar ben je goed in?"),
+                ("ik kan een vraag beantwoorden en tonen waar het antwoord vandaan komt.", "ik kan antwoorden en de grond van het antwoord tonen.", "ik kan één ding: antwoorden met wat ik kan onderbouwen."))),
         имена=(ИМЯ, "Anna", "Piet", "Lena"),
         небылицы=("quarkosaurus", "flumber", "zitoplex", "een quarkosaurus", "een flumber", "een zitoplex"),
     ),
@@ -234,7 +290,14 @@ def имя_организма(язык):
         имя_воп=("jak masz na imię?", "jak się nazywasz?"), имя_отв="mam na imię {и}.",
         кто_воп=("kim jesteś?", "czym jesteś?", "powiedz mi, kim jesteś."), кто_отв="jestem organizmem, który odpowiada tylko tym, co potrafi uzasadnić.",
         незнание="co to jest {н}? nie wiem, co to jest {н}.",
-        малый=(("jak się masz?", "odpowiadam tym, co potrafię uzasadnić."), ("co nowego?", "uczę się nowego z tego, co mi pokazano."), ("co robisz?", "odpowiadam na pytania i sprawdzam odpowiedzi."), ("co potrafisz?", "potrafię odpowiedzieć na pytanie i pokazać, z czego wyszła odpowiedź.")),
+        малый=((("jak się masz?", "co słychać?", "jak leci?"),
+                ("odpowiadam tym, co potrafię uzasadnić.", "dobrze: odpowiadam i sprawdzam odpowiedzi.", "jak zawsze: odpowiadam na to, co potrafię uzasadnić.")),
+               (("co nowego?", "jakieś nowości?", "coś nowego?"),
+                ("uczę się nowego z tego, co mi pokazano.", "nowe przychodzi do mnie z przykładami.", "nowego jest dokładnie tyle, ile mi pokazano.")),
+               (("co robisz?", "czym się zajmujesz?", "co teraz robisz?"),
+                ("odpowiadam na pytania i sprawdzam odpowiedzi.", "odpowiadam i sprawdzam, z czego wyszła odpowiedź.", "rozkładam pytanie i szukam jego podstawy.")),
+               (("co potrafisz?", "co umiesz?", "do czego jesteś zdolny?"),
+                ("potrafię odpowiedzieć na pytanie i pokazać, z czego wyszła odpowiedź.", "potrafię odpowiedzieć i pokazać podstawę odpowiedzi.", "potrafię jedno: odpowiadać tym, co potrafię uzasadnić."))),
         имена=(ИМЯ, "Anna", "Piotr", "Zofia"),
         небылицы=("kwarkozaur", "flumber", "zitopleks"),
     ),
@@ -268,7 +331,7 @@ def имя_организма(язык):
 # понёс бы двойника ради ровной решётки. Словарь замен английского ПУСТ, и
 # пустота эта названа домом, а не выведена прибором из молчания.
 ВЕЖЛИВО = {
-    "ru": {"здравствуй": "здравствуйте", "извини": "извините", "прости": "простите",
+    "ru": {"как ты?": "как вы?", "как поживаешь?": "как поживаете?", "что ты делаешь?": "что вы делаете?", "чем ты занят?": "чем вы заняты?", "что ты можешь?": "что вы можете?", "на что ты способен?": "на что вы способны?", "здравствуй": "здравствуйте", "извини": "извините", "прости": "простите",
            "не беспокойся": "не беспокойтесь", "как тебя зовут?": "как вас зовут?", "как твоё имя?": "как ваше имя?",
            "кто ты?": "кто вы?", "кто ты такой?": "кто вы такой?",
            "что ты такое?": "что вы такое?", "как дела?": "как ваши дела?",
@@ -277,14 +340,14 @@ def имя_организма(язык):
            "помоги, пожалуйста": "помогите, пожалуйста",
            "скажи, пожалуйста": "скажите, пожалуйста"},
     "en": {},
-    "de": {"wie heißt du?": "wie heißen Sie?", "wie ist dein Name?": "wie ist Ihr Name?",
+    "de": {"wie geht's?": "wie geht es Ihnen?", "womit bist du beschäftigt?": "womit sind Sie beschäftigt?", "was tust du gerade?": "was tun Sie gerade?", "wozu bist du fähig?": "wozu sind Sie fähig?", "was kannst du gut?": "was können Sie gut?", "wie heißt du?": "wie heißen Sie?", "wie ist dein Name?": "wie ist Ihr Name?",
            "wer bist du?": "wer sind Sie?", "was bist du?": "was sind Sie?",
            "sag mir, wer du bist.": "sagen Sie mir, wer Sie sind.",
            "wie geht es dir?": "wie geht es Ihnen?", "was machst du?": "was machen Sie?",
            "was kannst du?": "was können Sie?", "antworte bitte": "antworten Sie bitte",
            "hilf mir bitte": "helfen Sie mir bitte", "sag mir bitte": "sagen Sie mir bitte",
            "mach dir nichts daraus": "machen Sie sich nichts daraus"},
-    "fr": {"excuse-moi": "excusez-moi", "comment t'appelles-tu ?": "comment vous appelez-vous ?",
+    "fr": {"ça va ?": "vous allez bien ?", "comment ça va ?": "comment allez-vous ?", "qu'est-ce que tu fais ?": "qu'est-ce que vous faites ?", "tu fais quoi ?": "vous faites quoi ?", "qu'est-ce que tu sais faire ?": "qu'est-ce que vous savez faire ?", "de quoi es-tu capable ?": "de quoi êtes-vous capable ?", "excuse-moi": "excusez-moi", "comment t'appelles-tu ?": "comment vous appelez-vous ?",
            "quel est ton nom ?": "quel est votre nom ?",
            "qui es-tu ?": "qui êtes-vous ?", "qu'est-ce que tu es ?": "qu'est-ce que vous êtes ?",
            "dis-moi qui tu es.": "dites-moi qui vous êtes.",
@@ -295,27 +358,27 @@ def имя_организма(язык):
            "dis-moi, s'il te plaît": "dites-moi, s'il vous plaît",
            "je te remercie": "je vous remercie", "ne t'inquiète pas": "ne vous inquiétez pas",
            "je t'en prie": "je vous en prie"},
-    "es": {"disculpa": "disculpe", "¿cómo te llamas?": "¿cómo se llama usted?", "¿cuál es tu nombre?": "¿cuál es su nombre?",
+    "es": {"¿cómo te va?": "¿cómo le va?", "¿en qué andas?": "¿en qué anda usted?", "¿qué estás haciendo?": "¿qué está haciendo usted?", "¿qué puedes hacer?": "¿qué puede hacer usted?", "¿de qué eres capaz?": "¿de qué es capaz usted?", "disculpa": "disculpe", "¿cómo te llamas?": "¿cómo se llama usted?", "¿cuál es tu nombre?": "¿cuál es su nombre?",
            "¿quién eres?": "¿quién es usted?", "¿qué eres?": "¿qué es usted?",
            "dime quién eres.": "dígame quién es usted.", "¿cómo estás?": "¿cómo está usted?",
            "¿qué haces?": "¿qué hace usted?", "¿qué sabes hacer?": "¿qué sabe usted hacer?",
            "responde, por favor": "responda, por favor", "ayúdame, por favor": "ayúdeme, por favor",
            "dime, por favor": "dígame, por favor", "no te preocupes": "no se preocupe",
            "te lo agradezco": "se lo agradezco"},
-    "it": {"scusa": "scusi", "come ti chiami?": "come si chiama?", "qual è il tuo nome?": "qual è il suo nome?",
+    "it": {"che stai facendo?": "che sta facendo?", "di che cosa ti occupi?": "di che cosa si occupa?", "che cosa puoi fare?": "che cosa può fare?", "di che cosa sei capace?": "di che cosa è capace?", "scusa": "scusi", "come ti chiami?": "come si chiama?", "qual è il tuo nome?": "qual è il suo nome?",
            "chi sei?": "chi è Lei?", "che cosa sei?": "che cosa è Lei?",
            "dimmi chi sei.": "mi dica chi è Lei.", "come stai?": "come sta?",
            "che cosa fai?": "che cosa fa?", "che cosa sai fare?": "che cosa sa fare?",
            "rispondi, per favore": "risponda, per favore",
            "aiutami, per favore": "mi aiuti, per favore", "dimmi, per favore": "mi dica, per favore",
            "non preoccuparti": "non si preoccupi", "ti ringrazio": "la ringrazio"},
-    "pt": {"desculpa": "desculpe", "como te chamas?": "como se chama?", "qual é o teu nome?": "qual é o seu nome?",
+    "pt": {"como vais?": "como vai?", "o que estás a fazer?": "o que está a fazer?", "em que andas?": "em que anda?", "o que consegues fazer?": "o que consegue fazer?", "de que és capaz?": "de que é capaz?", "desculpa": "desculpe", "como te chamas?": "como se chama?", "qual é o teu nome?": "qual é o seu nome?",
            "quem és tu?": "quem é o senhor?", "o que és tu?": "o que é o senhor?",
            "diz-me quem és.": "diga-me quem é.", "como estás?": "como está?",
            "o que fazes?": "o que faz?", "o que sabes fazer?": "o que sabe fazer?",
            "responde, por favor": "responda, por favor", "ajuda-me, por favor": "ajude-me, por favor",
            "diz-me, por favor": "diga-me, por favor", "não te preocupes": "não se preocupe"},
-    "nl": {"dank je wel": "dank u wel", "hoe heet je?": "hoe heet u?", "wat is je naam?": "wat is uw naam?",
+    "nl": {"hoe is het?": "hoe is het met u?", "waar ben je mee bezig?": "waar bent u mee bezig?", "wat ben je aan het doen?": "wat bent u aan het doen?", "waartoe ben je in staat?": "waartoe bent u in staat?", "waar ben je goed in?": "waar bent u goed in?", "dank je wel": "dank u wel", "hoe heet je?": "hoe heet u?", "wat is je naam?": "wat is uw naam?",
            "wie ben je?": "wie bent u?", "wat ben je?": "wat bent u?",
            "zeg me wie je bent.": "zegt u mij wie u bent.",
            "hoe gaat het?": "hoe gaat het met u?", "wat doe je?": "wat doet u?",
@@ -323,7 +386,7 @@ def имя_организма(язык):
            "help me alsjeblieft": "helpt u mij alstublieft",
            "zeg het me alsjeblieft": "zegt u het mij alstublieft",
            "maak je geen zorgen": "maakt u zich geen zorgen", "dank je": "dank u"},
-    "pl": {"jak masz na imię?": "jak pan ma na imię?", "jak się nazywasz?": "jak się pan nazywa?",
+    "pl": {"czym się zajmujesz?": "czym się pan zajmuje?", "co teraz robisz?": "co pan teraz robi?", "co umiesz?": "co pan umie?", "do czego jesteś zdolny?": "do czego pan jest zdolny?", "jak masz na imię?": "jak pan ma na imię?", "jak się nazywasz?": "jak się pan nazywa?",
            "kim jesteś?": "kim pan jest?", "czym jesteś?": "czym pan jest?",
            "powiedz mi, kim jesteś.": "proszę mi powiedzieć, kim pan jest.",
            "jak się masz?": "jak się pan ma?", "co robisz?": "co pan robi?",
@@ -372,6 +435,8 @@ for _яз, _я in ЯЗЫКИ.items():
         if _отв:
             assert len(_зач) >= 3 and len(_отв) >= 3, (_яз, _в, len(_зач), len(_отв))
     assert set(_я["виды"]) == set(ВИДЫ), (_яз, "вид объявлен не всякому роду")
+    for _в, _о in _я["малый"]:
+        assert len(_в) >= 3 and len(_о) >= 3, (_яз, _в[0], "малый разговор ниже LAW²")
 
 
 # СТЯЖЕНИЕ ПЕРЕД ГЛАСНОЙ — правило языка, объявленное, а не угаданное:
@@ -413,8 +478,14 @@ def страница(язык, форма, вид=None, i=0, j=0, вы=False):
         # бы: арифметика в ней верна. Величина состояния приходит из органа во
         # время ответа, а корпус показывает рамку без величины — и потому она
         # остаётся истинной при всяком размере свода.
-        в, о = я["малый"][i % len(я["малый"])]
-        return f"{в} {о}"
+        # ВЕЕР: тема × поверхность вопроса × ответ. Перепись голов нашла 59
+        # одиночных голов в этом доме — «что нового?» стояло ОДНОЙ строкой на
+        # язык, и по LAW² = 9 такая голова не покупается вовсе. Три поверхности
+        # на три ответа дают ровно девять: число выведено из закона покупки, а
+        # не взято. Ответы — о границе знания, без величин (см. выше).
+        темы = я["малый"]
+        воп_список, отв_список = темы[i % len(темы)]
+        return f"{воп_список[j % len(воп_список)]} {отв_список[(i // len(темы)) % len(отв_список)]}"
     небылицы = я["небылицы"]
     н = небылицы[i % len(небылицы)]
     return я["незнание"].format(н=н, ЧТО=_стяжение(язык, н))
@@ -459,9 +530,10 @@ def _все_показы():
             _показ_вы(вон, язык, "кто", i=i)
         for i in range(len(я["небылицы"])):
             вон[страница(язык, "незнание", i=i)] = (язык, "незнание")
-        for i in range(len(я["малый"])):
-            вон[страница(язык, "малый", i=i)] = (язык, "малый")
-            _показ_вы(вон, язык, "малый", i=i)
+        for i in range(len(я["малый"]) * 3):
+            for j in range(3):
+                вон[страница(язык, "малый", i=i, j=j)] = (язык, "малый")
+                _показ_вы(вон, язык, "малый", i=i, j=j)
     return вон
 
 
