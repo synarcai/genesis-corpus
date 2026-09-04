@@ -180,8 +180,8 @@ est-elle est-ce si y et tu es-tu
 cual cuanto cuantos que es hay donde se ¿es ¿son ¿cuál ¿cuánto ¿qué ¿cómo ¿quién
 ¿y ¿quieres ¿estás ¿por
 che cosa quanto quanti dove quale come chi perché intendi sei
-qual quantos onde como quem porque queres concordas
-czy ile co jaki jaka jakie gdzie kiedy jak dlaczego masz zgadzasz
+qual quantos onde como quem porque porquê queres concordas
+czy ile co jaki jaka jakie gdzie kiedy jak czym dlaczego masz zgadzasz
 wat hoe hoeveel welke waar waarom bedoel ben
 ты
 ¬ apa cái

@@ -73,6 +73,7 @@ def имя_организма(язык):
         имя_воп=("как тебя зовут?", "как твоё имя?"), имя_отв="меня зовут {и}.",
         кто_воп=("кто ты?", "кто ты такой?", "что ты такое?"), кто_отв="я организм, который отвечает тем, что может обосновать.",
         незнание="что такое {н}? я не знаю, что такое {н}.",
+        малый=(("как дела?", "я отвечаю тем, что могу обосновать."), ("что нового?", "я узнаю новое из того, что мне показывают."), ("чем занимаешься?", "я отвечаю на вопросы и проверяю ответы."), ("что ты умеешь?", "я умею отвечать на вопрос и показывать, из чего вышел ответ.")),
         имена=(ИМЯ_ПИСЬМОМ["ru"], "анна", "пётр", "вера"),
         небылицы=("кваркозавр", "флюмбер", "зитоплекс"),
     ),
@@ -92,8 +93,9 @@ def имя_организма(язык):
         имя_воп=("what is your name?", "how are you called?"), имя_отв="my name is {и}.",
         кто_воп=("who are you?", "what are you?", "tell me who you are."), кто_отв="i am an organism that answers only with what it can justify.",
         незнание="what is {н}? i do not know what {н} is.",
+        малый=(("how are you?", "i answer with what i can justify."), ("what is new?", "i learn what is new from what is shown to me."), ("what are you doing?", "i answer questions and check the answers."), ("what can you do?", "i can answer a question and show what the answer came from.")),
         имена=(ИМЯ, "ann", "peter", "vera"),
-        небылицы=("quarkosaur", "flumber", "zitoplex"),
+        небылицы=("quarkosaur", "flumber", "zitoplex", "a quarkosaur", "a flumber", "a zitoplex"),
     ),
     "de": dict(
         зачины={ПРИВЕТ: ("hallo", "guten Morgen", "guten Tag", "guten Abend", "grüß dich"),
@@ -111,8 +113,9 @@ def имя_организма(язык):
         имя_воп=("wie heißt du?", "wie ist dein Name?"), имя_отв="ich heiße {и}.",
         кто_воп=("wer bist du?", "was bist du?", "sag mir, wer du bist."), кто_отв="ich bin ein Organismus, der nur mit dem antwortet, was er begründen kann.",
         незнание="was ist {н}? ich weiß nicht, was {н} ist.",
+        малый=(("wie geht es dir?", "ich antworte mit dem, was ich begründen kann."), ("was gibt es Neues?", "ich erfahre Neues aus dem, was mir gezeigt wird."), ("was machst du?", "ich beantworte Fragen und prüfe die Antworten."), ("was kannst du?", "ich kann eine Frage beantworten und zeigen, woraus die Antwort kam.")),
         имена=(ИМЯ, "Anna", "Paul", "Lena"),
-        небылицы=("Quarkosaurus", "Flumber", "Zitoplex"),
+        небылицы=("Quarkosaurus", "Flumber", "Zitoplex", "ein Quarkosaurier", "ein Flumber", "ein Zitoplex"),
     ),
     "fr": dict(
         зачины={ПРИВЕТ: ("bonjour", "salut", "bonsoir", "coucou"),
@@ -130,8 +133,9 @@ def имя_организма(язык):
         имя_воп=("comment t'appelles-tu ?", "quel est ton nom ?"), имя_отв="je m'appelle {и}.",
         кто_воп=("qui es-tu ?", "qu'est-ce que tu es ?", "dis-moi qui tu es."), кто_отв="je suis un organisme qui ne répond que par ce qu'il peut justifier.",
         незнание="qu'est-ce que {н} ? je ne sais pas ce qu'est {н}.",
+        малый=(("comment vas-tu ?", "je réponds par ce que je peux justifier."), ("quoi de neuf ?", "j'apprends le nouveau à partir de ce qu'on me montre."), ("que fais-tu ?", "je réponds aux questions et je vérifie les réponses."), ("que sais-tu faire ?", "je sais répondre à une question et montrer d'où vient la réponse.")),
         имена=(ИМЯ, "Anne", "Paul", "Marie"),
-        небылицы=("quarkosaure", "flumbère", "zitoplexe"),
+        небылицы=("quarkosaure", "flumbère", "zitoplexe", "un quarkosaure", "un flumbère", "un zitoplexe"),
     ),
     "es": dict(
         зачины={ПРИВЕТ: ("hola", "buenos días", "buenas tardes", "buenas noches"),
@@ -149,8 +153,9 @@ def имя_организма(язык):
         имя_воп=("¿cómo te llamas?", "¿cuál es tu nombre?"), имя_отв="me llamo {и}.",
         кто_воп=("¿quién eres?", "¿qué eres?", "dime quién eres."), кто_отв="soy un organismo que solo responde con lo que puede justificar.",
         незнание="¿qué es {н}? no sé qué es {н}.",
+        малый=(("¿cómo estás?", "respondo con lo que puedo justificar."), ("¿qué hay de nuevo?", "aprendo lo nuevo de lo que se me muestra."), ("¿qué haces?", "respondo preguntas y compruebo las respuestas."), ("¿qué sabes hacer?", "sé responder a una pregunta y mostrar de dónde vino la respuesta.")),
         имена=(ИМЯ, "Ana", "Pablo", "Marta"),
-        небылицы=("cuarcosaurio", "flumbero", "zitoplex"),
+        небылицы=("cuarcosaurio", "flumbero", "zitoplex", "un cuarcosaurio", "un flumbero", "un zitoplex"),
     ),
     "it": dict(
         зачины={ПРИВЕТ: ("ciao", "buongiorno", "buonasera", "salve"),
@@ -168,8 +173,9 @@ def имя_организма(язык):
         имя_воп=("come ti chiami?", "qual è il tuo nome?"), имя_отв="mi chiamo {и}.",
         кто_воп=("chi sei?", "che cosa sei?", "dimmi chi sei."), кто_отв="sono un organismo che risponde solo con ciò che può giustificare.",
         незнание="che cos'è {н}? non so che cos'è {н}.",
+        малый=(("come stai?", "rispondo con ciò che posso giustificare."), ("che c'è di nuovo?", "imparo il nuovo da ciò che mi viene mostrato."), ("che cosa fai?", "rispondo alle domande e controllo le risposte."), ("che cosa sai fare?", "so rispondere a una domanda e mostrare da dove viene la risposta.")),
         имена=(ИМЯ, "Anna", "Marco", "Giulia"),
-        небылицы=("quarcosauro", "flumbero", "zitoplesso"),
+        небылицы=("quarcosauro", "flumbero", "zitoplesso", "un quarcosauro", "un flumbero", "un zitoplesso"),
     ),
     "pt": dict(
         зачины={ПРИВЕТ: ("olá", "bom dia", "boa tarde", "boa noite"),
@@ -187,8 +193,9 @@ def имя_организма(язык):
         имя_воп=("como te chamas?", "qual é o teu nome?"), имя_отв="chamo-me {и}.",
         кто_воп=("quem és tu?", "o que és tu?", "diz-me quem és."), кто_отв="sou um organismo que só responde com o que pode justificar.",
         незнание="o que é {н}? não sei o que é {н}.",
+        малый=(("como estás?", "respondo com aquilo que posso justificar."), ("o que há de novo?", "aprendo o novo a partir do que me é mostrado."), ("o que fazes?", "respondo a perguntas e verifico as respostas."), ("o que sabes fazer?", "sei responder a uma pergunta e mostrar de onde veio a resposta.")),
         имена=(ИМЯ, "Ana", "Pedro", "Maria"),
-        небылицы=("quarcossauro", "flumbero", "zitoplexo"),
+        небылицы=("quarcossauro", "flumbero", "zitoplexo", "um quarcossauro", "um flumbero", "um zitoplexo"),
     ),
     "nl": dict(
         зачины={ПРИВЕТ: ("hallo", "goedemorgen", "goedemiddag", "goedenavond", "hoi"),
@@ -206,8 +213,9 @@ def имя_организма(язык):
         имя_воп=("hoe heet je?", "wat is je naam?"), имя_отв="ik heet {и}.",
         кто_воп=("wie ben je?", "wat ben je?", "zeg me wie je bent."), кто_отв="ik ben een organisme dat alleen antwoordt met wat het kan onderbouwen.",
         незнание="wat is {н}? ik weet niet wat {н} is.",
+        малый=(("hoe gaat het?", "ik antwoord met wat ik kan onderbouwen."), ("wat is er nieuw?", "ik leer het nieuwe uit wat mij getoond wordt."), ("wat doe je?", "ik beantwoord vragen en controleer de antwoorden."), ("wat kun je?", "ik kan een vraag beantwoorden en tonen waar het antwoord vandaan komt.")),
         имена=(ИМЯ, "Anna", "Piet", "Lena"),
-        небылицы=("quarkosaurus", "flumber", "zitoplex"),
+        небылицы=("quarkosaurus", "flumber", "zitoplex", "een quarkosaurus", "een flumber", "een zitoplex"),
     ),
     "pl": dict(
         зачины={ПРИВЕТ: ("cześć", "dzień dobry", "dobry wieczór", "witam"),
@@ -222,14 +230,16 @@ def имя_организма(язык):
         виды={ПРИВЕТ: "powitanie", ПРОЩАНИЕ: "pożegnanie", БЛАГОДАРНОСТЬ: "podziękowanie",
               ИЗВИНЕНИЕ: "przeprosiny", СОГЛАСИЕ: "prośba", ОТКАЗ: "odmowa"},
         определение="co to jest {с}? {с} to {в}.",
+        определение2="czym jest {с}? {с} to {в}.",
         имя_воп=("jak masz na imię?", "jak się nazywasz?"), имя_отв="mam na imię {и}.",
         кто_воп=("kim jesteś?", "czym jesteś?", "powiedz mi, kim jesteś."), кто_отв="jestem organizmem, który odpowiada tylko tym, co potrafi uzasadnić.",
         незнание="co to jest {н}? nie wiem, co to jest {н}.",
+        малый=(("jak się masz?", "odpowiadam tym, co potrafię uzasadnić."), ("co nowego?", "uczę się nowego z tego, co mi pokazano."), ("co robisz?", "odpowiadam na pytania i sprawdzam odpowiedzi."), ("co potrafisz?", "potrafię odpowiedzieć na pytanie i pokazać, z czego wyszła odpowiedź.")),
         имена=(ИМЯ, "Anna", "Piotr", "Zofia"),
         небылицы=("kwarkozaur", "flumber", "zitopleks"),
     ),
 }
-ФОРМЫ = ("пара", "определение", "имя", "кто", "незнание")
+ФОРМЫ = ("пара", "определение", "имя", "кто", "незнание", "малый")
 
 # МАССА ПО ПРАВИЛУ: у всякого вида с парой ≥3 зачина и ≥3 ответа
 for _яз, _я in ЯЗЫКИ.items():
@@ -260,6 +270,14 @@ def страница(язык, форма, вид=None, i=0, j=0):
     if форма == "кто":
         вопросы = я["кто_воп"]
         return f"{вопросы[i % len(вопросы)]} {я['кто_отв']}"
+    if форма == "малый":
+        # МАЛЫЙ РАЗГОВОР БЕЗ ЧИСЛА (04.09, слово holon). Форма «сейчас я знаю
+        # N форм» была бы ЛОЖЬЮ при первом же росте свода, и суд её не поймал
+        # бы: арифметика в ней верна. Величина состояния приходит из органа во
+        # время ответа, а корпус показывает рамку без величины — и потому она
+        # остаётся истинной при всяком размере свода.
+        в, о = я["малый"][i % len(я["малый"])]
+        return f"{в} {о}"
     небылицы = я["небылицы"]
     return я["незнание"].format(н=небылицы[i % len(небылицы)])
 
@@ -273,6 +291,11 @@ def _все_показы():
             отв = ответы(язык, вид)
             for i in range(len(зач)):
                 вон[страница(язык, "определение", вид, i)] = (язык, "определение")
+                # ВТОРАЯ РАМКА ВОПРОСА, ГДЕ ЯЗЫК ЕЁ ИМЕЕТ: польский спрашивает
+                # «co to jest X?» и «czym jest X?» равно часто, и продукт,
+                # знающий одну, молчит на второй
+                if "определение2" in я:
+                    вон[я["определение2"].format(с=зач[i], в=я["виды"][вид])] = (язык, "определение")
                 for j in range(len(отв)):
                     вон[страница(язык, "пара", вид, i, j)] = (язык, "пара")
         for i in range(len(я["имена"])):
@@ -282,18 +305,32 @@ def _все_показы():
             вон[страница(язык, "кто", i=i)] = (язык, "кто")
         for i in range(len(я["небылицы"])):
             вон[страница(язык, "незнание", i=i)] = (язык, "незнание")
+        for i in range(len(я["малый"])):
+            вон[страница(язык, "малый", i=i)] = (язык, "малый")
     return вон
 
 
 ПОКАЗЫ = _все_показы()
 # РАМКИ БЕЗ СЛОВ — для суда о ЧУЖОМ слове в объявленной рамке: строка, севшая
 # в рамку дома, но с незнакомым словом, есть ЛОЖЬ, а не молчание.
-_РАМКИ = tuple(re.compile("^" + re.escape(ш).replace(r"\{с\}", "(.+?)")
-                          .replace(r"\{в\}", "(.+?)").replace(r"\{н\}", "(.+?)")
-                          .replace(r"\{и\}", "(.+?)") + "$")
-               for я in ЯЗЫКИ.values()
-               for ш in (я["определение"], я["незнание"])
+#
+# РАМКА ДОМА ШИРЕ ЕГО ПРЕДМЕТА, И ЭТО ЛОВУШКА (04.09). «что такое X?» есть
+# рамка ВСЕГО КОРПУСА, а не дома обихода: ею спрашивают о дожде, о числе, о
+# роде — обо всём. Дом, объявивший эту рамку своей, назвал ложью 128 честных
+# определений соседнего мира тем в тот же час, как они появились. Потому суд
+# рамки СМОТРИТ НА СЛОВО: он берётся судить лишь тогда, когда предмет вопроса
+# есть слово ЭТОГО дома («привет», «спасибо»); о дожде дом молчит, ибо о дожде
+# он ничего не объявлял. Тот же род, что М-172: молчание «не моё дело»
+# законно ровно там, где предмет и вправду не объявлен домом.
+_РАМКИ = tuple((язык, re.compile("^" + re.escape(ш).replace(r"\{с\}", "(.+?)")
+                                 .replace(r"\{в\}", "(.+?)").replace(r"\{н\}", "(.+?)")
+                                 .replace(r"\{и\}", "(.+?)") + "$"))
+               for язык, я in ЯЗЫКИ.items()
+               for ш in (я["определение"], я["незнание"]) + ((я["определение2"],) if "определение2" in я else ())
                + tuple(f"{в} {я['имя_отв']}" for в in я["имя_воп"]))
+_СВОИ_СЛОВА = {язык: {с for вид in ВИДЫ for с in я["зачины"][вид]}
+               | set(я["небылицы"]) | set(я["имена"])
+               for язык, я in ЯЗЫКИ.items()}
 
 
 def судить(строка):
@@ -302,8 +339,10 @@ def судить(строка):
     с = строка.strip()
     if с in ПОКАЗЫ:
         return True, True
-    if any(р.match(с) for р in _РАМКИ):
-        return True, False
+    for язык, р in _РАМКИ:
+        м = р.match(с)
+        if м and any(г in _СВОИ_СЛОВА[язык] for г in м.groups()):
+            return True, False
     return False, False
 
 
