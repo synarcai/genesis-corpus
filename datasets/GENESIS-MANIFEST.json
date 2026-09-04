@@ -612,6 +612,30 @@
       "actors": []
     },
     {
+      "name": "worldfacts",
+      "file": "datasets/genesis_worldfacts.txt",
+      "genre": "WORLD FACTS — why and what next about THINGS, not about numbers. The links house («ann has 5 coins. why? because she had 5 and gave away 1») speaks only over arithmetic facts, and the seven mute lines left in the LINKS-OF-A-TALK genus of the conversation band all had this one nature: a person asks the same conversational moves over facts of the WORLD («water boils at one hundred degrees. why?», «it is raining. what next?», «do you agree that water is wet?»). Six declared facts per language, each with its GROUND and its CONSEQUENCE, plus class membership on its own line, plus the two agreement frames. The shape was agreed with holon BEFORE the world was built and his word changed it twice: the question stands BETWEEN the fact and the ground (a line of two short statements without a number is the frame of his exchange market, and the question mark keeps it out without a single new feature — and, more importantly, «the ground becomes an ANSWER rather than a neighbour: a line without a question teaches juxtaposition, a line with a question teaches transition»), and membership stands on its OWN line, because a fact is checked by observation and a membership by other knowledge. Five languages; the rest is a named debt, by the same law as the definitions of the topics house.",
+      "act": [
+        "decide",
+        "name",
+        "translate"
+      ],
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "opposites",
       "file": "datasets/genesis_opposites.txt",
       "genre": "OPPOSITES — the first relation in the corpus of a WORD TO A WORD, not of a word to a thing, and there was not one show of it in the whole svod. A partner knows not only what a thing IS (the house of definitions) and how much of it there is (the house of nature) but also what it is OPPOSED to. The law that judges this is SYMMETRY: the relation is mutual, and if big is opposed to small then small is opposed to big — both sides stand in the shows, because a corpus that showed one side would teach half a law. The frame is a CITATION frame («what is the opposite of the word big?») and that is a decision, not a convenience: «opposite to BIG» would want a dative in Russian and a genitive in Polish, and every language would want two or three forms per word; the citation frame takes the word in its dictionary form, so the house declares exactly what it knows and invents no case it has not checked. Twelve pairs in each of the nine languages of the attack, three forms.",
@@ -3981,10 +4005,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 19097656,
+      "size": 19134945,
       "tiers": [],
       "text": "mix",
-      "lines": 249688
+      "lines": 250161
     },
     {
       "name": "full",
@@ -3999,10 +4023,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 23611313,
+      "size": 23648602,
       "tiers": [],
       "text": "mix",
-      "lines": 323355
+      "lines": 323828
     },
     {
       "name": "minimal",
