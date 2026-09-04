@@ -6,9 +6,11 @@
 спрашивает ребёнок: сколько у паука ног, сколько у человека зубов, при какой
 температуре кипит вода.
 
-ЦИКЛОВ ЗДЕСЬ ДВА — ВРЕМЕНА ГОДА И ДНИ НЕДЕЛИ, — И РАМКА У НИХ ОДНА, ибо род
-у них один: замыкание по остатку. Дом, заведший бы вторую рамку, развёл бы два
-цикла молча, и день, когда они разойдутся, никто бы не заметил.
+ЦИКЛОВ ЗДЕСЬ ТРИ — ВРЕМЕНА ГОДА, ДНИ НЕДЕЛИ И МЕСЯЦЫ, — И РАМКА У НИХ ОДНА,
+ибо род у них один: замыкание по остатку. Объявлены они СПИСКОМ, а не ветвями:
+первая редакция дома писала каждому циклу свою ветвь, и две ветви оказались
+одинаковы буква в букву — тот самый закон, написанный дважды, который у нас
+числят безымянностью рода.
 
 ВРЕМЕНА ГОДА — ЦИКЛ, А НЕ СПИСОК, и во всём своде их не было ни одного показа.
 Замыкание («после осени идёт зима») есть то, чем цикл отличается от перечня, и
@@ -47,6 +49,11 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import plgram  # noqa: E402
 import rugram  # noqa: E402
 
+# ЦИКЛЫ ОБЪЯВЛЕНЫ СПИСКОМ, А НЕ ВЕТВЯМИ: имя ряда → (ключ объявления, вопросная ли)
+ЦИКЛ_ФОРМЫ = {"сезон": ("времена", False), "сезон_воп": ("времена", True),
+              "день": ("дни", False), "день_воп": ("дни", True),
+              "месяц": ("месяцы", False), "месяц_воп": ("месяцы", True)}
+
 # факт = (носитель, носитель ПАРОЙ или None, вещь, число)
 ЯЗЫКИ = {
     "ru": dict(
@@ -57,6 +64,10 @@ import rugram  # noqa: E402
         дни=(("понедельник", "понедельника"), ("вторник", "вторника"), ("среда", "среды"),
              ("четверг", "четверга"), ("пятница", "пятницы"), ("суббота", "субботы"),
              ("воскресенье", "воскресенья")),
+        месяцы=(("январь", "января"), ("февраль", "февраля"), ("март", "марта"), ("апрель", "апреля"),
+                ("май", "мая"), ("июнь", "июня"), ("июль", "июля"), ("август", "августа"),
+                ("сентябрь", "сентября"), ("октябрь", "октября"), ("ноябрь", "ноября"),
+                ("декабрь", "декабря")),
         воп="у {б} {n} {в}. сколько {ва} у {б}? {n} {в}.",
         пара="у {б} {n} {в}. сколько {ва} у {бп}? {r} {вr}: {n} × 2 = {r}.",
         факты=(("паука", "двух пауков", "нога", 8), ("насекомого", "двух насекомых", "нога", 6),
@@ -78,6 +89,10 @@ import rugram  # noqa: E402
         дни=(("monday", "monday"), ("tuesday", "tuesday"), ("wednesday", "wednesday"),
              ("thursday", "thursday"), ("friday", "friday"), ("saturday", "saturday"),
              ("sunday", "sunday")),
+        месяцы=(("january", "january"), ("february", "february"), ("march", "march"), ("april", "april"),
+                ("may", "may"), ("june", "june"), ("july", "july"), ("august", "august"),
+                ("september", "september"), ("october", "october"), ("november", "november"),
+                ("december", "december")),
         воп="a {б} has {n} {в}. how many {ва} does a {б} have? {n} {в}.",
         пара="a {б} has {n} {в}. how many {ва} do {бп} have? {r} {вr}: {n} × 2 = {r}.",
         факты=(("spider", "two spiders", ("leg", "legs"), 8), ("insect", "two insects", ("leg", "legs"), 6),
@@ -101,6 +116,11 @@ import rugram  # noqa: E402
              ("der Mittwoch", "dem Mittwoch"), ("der Donnerstag", "dem Donnerstag"),
              ("der Freitag", "dem Freitag"), ("der Samstag", "dem Samstag"),
              ("der Sonntag", "dem Sonntag")),
+        месяцы=(("der Januar", "dem Januar"), ("der Februar", "dem Februar"), ("der März", "dem März"),
+                ("der April", "dem April"), ("der Mai", "dem Mai"), ("der Juni", "dem Juni"),
+                ("der Juli", "dem Juli"), ("der August", "dem August"), ("der September", "dem September"),
+                ("der Oktober", "dem Oktober"), ("der November", "dem November"),
+                ("der Dezember", "dem Dezember")),
         воп="{б} hat {n} {в}. wie viele {ва} hat {б}? {n} {в}.",
         пара="{б} hat {n} {в}. wie viele {ва} haben {бп}? {r} {вr}: {n} × 2 = {r}.",
         факты=(("eine Spinne", "zwei Spinnen", ("Bein", "Beine"), 8), ("ein Insekt", "zwei Insekten", ("Bein", "Beine"), 6),
@@ -123,6 +143,10 @@ import rugram  # noqa: E402
         дни=(("le lundi", "le lundi"), ("le mardi", "le mardi"), ("le mercredi", "le mercredi"),
              ("le jeudi", "le jeudi"), ("le vendredi", "le vendredi"), ("le samedi", "le samedi"),
              ("le dimanche", "le dimanche")),
+        месяцы=(("janvier", "janvier"), ("février", "février"), ("mars", "mars"), ("avril", "avril"),
+                ("mai", "mai"), ("juin", "juin"), ("juillet", "juillet"), ("août", "août"),
+                ("septembre", "septembre"), ("octobre", "octobre"), ("novembre", "novembre"),
+                ("décembre", "décembre")),
         воп="{б} a {n} {в}. combien de {ва} a {б} ? {n} {в}.",
         пара="{б} a {n} {в}. combien de {ва} ont {бп} ? {r} {вr} : {n} × 2 = {r}.",
         факты=(("une araignée", "deux araignées", ("patte", "pattes"), 8), ("un insecte", "deux insectes", ("patte", "pattes"), 6),
@@ -145,6 +169,10 @@ import rugram  # noqa: E402
         дни=(("el lunes", "del lunes"), ("el martes", "del martes"), ("el miércoles", "del miércoles"),
              ("el jueves", "del jueves"), ("el viernes", "del viernes"), ("el sábado", "del sábado"),
              ("el domingo", "del domingo")),
+        месяцы=(("enero", "de enero"), ("febrero", "de febrero"), ("marzo", "de marzo"),
+                ("abril", "de abril"), ("mayo", "de mayo"), ("junio", "de junio"),
+                ("julio", "de julio"), ("agosto", "de agosto"), ("septiembre", "de septiembre"),
+                ("octubre", "de octubre"), ("noviembre", "de noviembre"), ("diciembre", "de diciembre")),
         воп="{б} tiene {n} {в}. ¿cuántas {ва} tiene {б}? {n} {в}.",
         пара="{б} tiene {n} {в}. ¿cuántas {ва} tienen {бп}? {r} {вr}: {n} × 2 = {r}.",
         факты=(("una araña", "dos arañas", ("pata", "patas"), 8), ("un insecto", "dos insectos", ("pata", "patas"), 6),
@@ -166,6 +194,10 @@ import rugram  # noqa: E402
         дни=(("il lunedì", "il lunedì"), ("il martedì", "il martedì"), ("il mercoledì", "il mercoledì"),
              ("il giovedì", "il giovedì"), ("il venerdì", "il venerdì"), ("il sabato", "il sabato"),
              ("la domenica", "la domenica")),
+        месяцы=(("gennaio", "gennaio"), ("febbraio", "febbraio"), ("marzo", "marzo"), ("aprile", "aprile"),
+                ("maggio", "maggio"), ("giugno", "giugno"), ("luglio", "luglio"), ("agosto", "agosto"),
+                ("settembre", "settembre"), ("ottobre", "ottobre"), ("novembre", "novembre"),
+                ("dicembre", "dicembre")),
         воп="{б} ha {n} {в}. quante {ва} ha {б}? {n} {в}.",
         пара="{б} ha {n} {в}. quante {ва} hanno {бп}? {r} {вr}: {n} × 2 = {r}.",
         факты=(("un ragno", "due ragni", ("zampa", "zampe"), 8), ("un insetto", "due insetti", ("zampa", "zampe"), 6),
@@ -188,6 +220,10 @@ import rugram  # noqa: E402
              ("a quarta-feira", "da quarta-feira"), ("a quinta-feira", "da quinta-feira"),
              ("a sexta-feira", "da sexta-feira"), ("o sábado", "do sábado"),
              ("o domingo", "do domingo")),
+        месяцы=(("janeiro", "de janeiro"), ("fevereiro", "de fevereiro"), ("março", "de março"),
+                ("abril", "de abril"), ("maio", "de maio"), ("junho", "de junho"),
+                ("julho", "de julho"), ("agosto", "de agosto"), ("setembro", "de setembro"),
+                ("outubro", "de outubro"), ("novembro", "de novembro"), ("dezembro", "de dezembro")),
         воп="{б} tem {n} {в}. quantas {ва} tem {б}? {n} {в}.",
         пара="{б} tem {n} {в}. quantas {ва} têm {бп}? {r} {вr}: {n} × 2 = {r}.",
         факты=(("uma aranha", "duas aranhas", ("pata", "patas"), 8), ("um inseto", "dois insetos", ("pata", "patas"), 6),
@@ -209,6 +245,10 @@ import rugram  # noqa: E402
         дни=(("de maandag", "de maandag"), ("de dinsdag", "de dinsdag"), ("de woensdag", "de woensdag"),
              ("de donderdag", "de donderdag"), ("de vrijdag", "de vrijdag"), ("de zaterdag", "de zaterdag"),
              ("de zondag", "de zondag")),
+        месяцы=(("januari", "januari"), ("februari", "februari"), ("maart", "maart"), ("april", "april"),
+                ("mei", "mei"), ("juni", "juni"), ("juli", "juli"), ("augustus", "augustus"),
+                ("september", "september"), ("oktober", "oktober"), ("november", "november"),
+                ("december", "december")),
         воп="{б} heeft {n} {в}. hoeveel {ва} heeft {б}? {n} {в}.",
         пара="{б} heeft {n} {в}. hoeveel {ва} hebben {бп}? {r} {вr}: {n} × 2 = {r}.",
         факты=(("een spin", "twee spinnen", ("poot", "poten"), 8), ("een insect", "twee insecten", ("poot", "poten"), 6),
@@ -229,6 +269,10 @@ import rugram  # noqa: E402
         дни=(("poniedziałek", "poniedziałku"), ("wtorek", "wtorku"), ("środa", "środzie"),
              ("czwartek", "czwartku"), ("piątek", "piątku"), ("sobota", "sobocie"),
              ("niedziela", "niedzieli")),
+        месяцы=(("styczeń", "styczniu"), ("luty", "lutym"), ("marzec", "marcu"), ("kwiecień", "kwietniu"),
+                ("maj", "maju"), ("czerwiec", "czerwcu"), ("lipiec", "lipcu"), ("sierpień", "sierpniu"),
+                ("wrzesień", "wrześniu"), ("październik", "październiku"), ("listopad", "listopadzie"),
+                ("grudzień", "grudniu")),
         воп="{б} ma {n} {в}. ile {ва} ma {б}? {n} {в}.",
         пара="{б} ma {n} {в}. ile {ва} mają {бп}? {r} {вr}: {n} × 2 = {r}.",
         факты=(("pająk", "dwa pająki", "noga", 8), ("owad", "dwa owady", "noga", 6),
@@ -243,7 +287,7 @@ import rugram  # noqa: E402
         градус="stopień",
     ),
 }
-ФОРМЫ = ("утв", "воп", "пара", "часть", "темп", "темп_воп", "сезон", "сезон_воп", "день", "день_воп")
+ФОРМЫ = ("утв", "воп", "пара", "часть", "темп", "темп_воп") + tuple(ЦИКЛ_ФОРМЫ)
 
 
 def вещь(язык, в, n):
@@ -259,23 +303,22 @@ def вещь(язык, в, n):
 
 def показ(язык, форма, i):
     я = ЯЗЫКИ[язык]
-    if форма in ("день", "день_воп"):
-        # ВТОРОЙ ЦИКЛ ТОЙ ЖЕ РАМКОЙ: «после вторника идёт среда» и «после осени
-        # идёт зима» суть один род — замыкание по остатку, — и потому рамка у них
-        # ОДНА. Дом, заведший бы вторую, развёл бы два цикла молча.
-        дни = я["дни"]
-        (_, a) = дни[i % len(дни)]
-        (b, _) = дни[(i + 1) % len(дни)]
-        return я["сезон" if форма == "день" else "сезон_воп"].format(a=a, b=b)
-    if форма in ("сезон", "сезон_воп"):
+    if форма in ЦИКЛ_ФОРМЫ:
         # ЦИКЛ, А НЕ СПИСОК: после последнего идёт ПЕРВЫЙ, и замыкание есть то,
-        # чем цикл отличается от перечня. Показ «после осени идёт зима» строится
-        # тем же правилом, что и прочие три, — остатком по длине, — и потому
-        # замыкание нельзя забыть: оно не дописано рукой, а выведено.
-        врем = я["времена"]
-        (_, a) = врем[i % len(врем)]
-        (b, _) = врем[(i + 1) % len(врем)]
-        return я[форма].format(a=a, b=b)
+        # чем цикл отличается от перечня; строится оно тем же правилом, что и
+        # прочие показы — остатком по длине, — и потому забыть его нельзя: оно
+        # не дописано рукой, а выведено.
+        #
+        # И ЦИКЛОВ ЗДЕСЬ НЕСКОЛЬКО ПРИ ОДНОЙ РАМКЕ. Первая редакция дома писала
+        # каждому циклу свою ветвь, и две ветви были одинаковы буква в букву —
+        # тот самый закон, написанный дважды, который у нас числят безымянностью
+        # рода. Циклы объявлены списком, ветвь одна: день, когда рамки должны
+        # разойтись, будет виден, ибо разойтись им придётся ОБЪЯВЛЕНИЕМ.
+        имя, вопросная = ЦИКЛ_ФОРМЫ[форма]
+        ряд = я[имя]
+        (_, a) = ряд[i % len(ряд)]
+        (b, _) = ряд[(i + 1) % len(ряд)]
+        return я["сезон_воп" if вопросная else "сезон"].format(a=a, b=b)
     if форма in ("темп", "темп_воп"):
         ч, г, n = я["температуры"][i % len(я["температуры"])]
         гр = вещь(язык, я["градус"], n)
@@ -300,11 +343,8 @@ def _все_показы():
         for форма in ("темп", "темп_воп"):
             for i in range(len(я["температуры"])):
                 вон[показ(язык, форма, i)] = (язык, форма)
-        for форма in ("сезон", "сезон_воп"):
-            for i in range(len(я["времена"])):
-                вон[показ(язык, форма, i)] = (язык, форма)
-        for форма in ("день", "день_воп"):
-            for i in range(len(я["дни"])):
+        for форма, (имя, _) in ЦИКЛ_ФОРМЫ.items():
+            for i in range(len(я[имя])):
                 вон[показ(язык, форма, i)] = (язык, форма)
     return вон
 
