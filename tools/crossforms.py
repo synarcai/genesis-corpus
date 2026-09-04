@@ -23,6 +23,7 @@
 
     сколько будет 17 плюс 25? 17 + 25 = 42.
     ile wynosi 12 razy 4? 12 × 4 = 48.
+    чему равна сумма 17 и 25? 17 + 25 = 42.       ← третья запись: ИМЯ действия
 
 ОТВЕТ ЗНАКОМ ПРИ ВОПРОСЕ СЛОВОМ — не небрежность, а сама польза дома: показ
 связывает две записи одного действия в одной строке, и потому учит не только
@@ -57,8 +58,70 @@
                плюс="plus", минус="minus", умножить="razy", разделить="podzielone przez"),
 }
 
+# ИМЕНА ДЕЙСТВИЙ — третья запись той же оси: не знак и не слово, а ИМЯ
+# («сумма 17 и 25»). Вопрос здесь объявляется ЦЕЛИКОМ, ибо имя действия
+# имеет род и число, и голова с ним согласуется: «чему равнА суммА» при
+# женском и «чему равнО произведениЕ» при среднем. Согласование есть строй
+# языка, и живёт оно в объявлении, а не в коде.
+ИМЕНА = {
+    "ru": {
+        "плюс": "чему равна сумма {a} и {b}?",
+        "минус": "чему равна разность {a} и {b}?",
+        "умножить": "чему равно произведение {a} и {b}?",
+        "разделить": "чему равно частное {a} и {b}?",
+    },
+    "en": {
+        "плюс": "what is the sum of {a} and {b}?",
+        "минус": "what is the difference of {a} and {b}?",
+        "умножить": "what is the product of {a} and {b}?",
+        "разделить": "what is the quotient of {a} and {b}?",
+    },
+    "de": {
+        "плюс": "wie viel ist die Summe von {a} und {b}?",
+        "минус": "wie viel ist die Differenz von {a} und {b}?",
+        "умножить": "wie viel ist das Produkt von {a} und {b}?",
+        "разделить": "wie viel ist der Quotient von {a} und {b}?",
+    },
+    "fr": {
+        "плюс": "combien fait la somme de {a} et {b} ?",
+        "минус": "combien fait la différence de {a} et {b} ?",
+        "умножить": "combien fait le produit de {a} et {b} ?",
+        "разделить": "combien fait le quotient de {a} et {b} ?",
+    },
+    "es": {
+        "плюс": "¿cuánto es la suma de {a} y {b}?",
+        "минус": "¿cuánto es la diferencia de {a} y {b}?",
+        "умножить": "¿cuánto es el producto de {a} y {b}?",
+        "разделить": "¿cuánto es el cociente de {a} y {b}?",
+    },
+    "it": {
+        "плюс": "quanto fa la somma di {a} e {b}?",
+        "минус": "quanto fa la differenza di {a} e {b}?",
+        "умножить": "quanto fa il prodotto di {a} e {b}?",
+        "разделить": "quanto fa il quoziente di {a} e {b}?",
+    },
+    "pt": {
+        "плюс": "quanto é a soma de {a} e {b}?",
+        "минус": "quanto é a diferença de {a} e {b}?",
+        "умножить": "quanto é o produto de {a} e {b}?",
+        "разделить": "quanto é o quociente de {a} e {b}?",
+    },
+    "nl": {
+        "плюс": "hoeveel is de som van {a} en {b}?",
+        "минус": "hoeveel is het verschil van {a} en {b}?",
+        "умножить": "hoeveel is het product van {a} en {b}?",
+        "разделить": "hoeveel is het quotiënt van {a} en {b}?",
+    },
+    "pl": {
+        "плюс": "ile wynosi suma {a} i {b}?",
+        "минус": "ile wynosi różnica {a} i {b}?",
+        "умножить": "ile wynosi iloczyn {a} i {b}?",
+        "разделить": "ile wynosi iloraz {a} i {b}?",
+    },
+}
+
 ЯЗЫКИ = tuple(СЛОВА)
-ФОРМЫ = ("перекрёсток",)
+ФОРМЫ = ("перекрёсток", "именем")
 
 
 def значение(знак, a, b):
@@ -76,11 +139,17 @@ for _яз, _с in СЛОВА.items():
     assert len(_с["головы"]) == 2, _яз
     for _, _имя, _ in ДЕЙСТВИЯ:
         assert _имя in _с, (_яз, _имя)
+        assert _имя in ИМЕНА[_яз], (_яз, _имя)
     assert set(_с) - {"головы", "пробел_перед_знаком"} == {и for _, и, _ in ДЕЙСТВИЯ}, _яз
 
 
-def страница(язык, i):
+def страница(язык, i, форма="перекрёсток"):
     с = СЛОВА[язык]
+    if форма == "именем":
+        знак, имя, пары = ДЕЙСТВИЯ[i % len(ДЕЙСТВИЯ)]
+        a, b = пары[(i // len(ДЕЙСТВИЯ)) % len(пары)]
+        v = значение(знак, a, b)
+        return f"{ИМЕНА[язык][имя].format(a=a, b=b)} {a} {знак} {b} = {v}."
     голова = с["головы"][i % len(с["головы"])]
     к = i // len(с["головы"])
     знак, имя, пары = ДЕЙСТВИЯ[к % len(ДЕЙСТВИЯ)]
@@ -94,8 +163,11 @@ def страница(язык, i):
 
 def _показы():
     сколько = 2 * len(ДЕЙСТВИЯ) * len(ДЕЙСТВИЯ[0][2])
-    return {страница(язык, i): (язык, "перекрёсток")
-            for язык in ЯЗЫКИ for i in range(сколько)}
+    вон = {страница(язык, i): (язык, "перекрёсток") for язык in ЯЗЫКИ for i in range(сколько)}
+    именем = len(ДЕЙСТВИЯ) * len(ДЕЙСТВИЯ[0][2])
+    вон.update({страница(язык, i, "именем"): (язык, "именем")
+                for язык in ЯЗЫКИ for i in range(именем)})
+    return вон
 
 
 ПОКАЗЫ = _показы()
