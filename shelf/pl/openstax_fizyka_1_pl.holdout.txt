@@ -1,0 +1,664 @@
+W gazie doskonałym (zobacz: Kinetyczna teoria gazów) wzór na prędkość dźwięku jest następujący:
+
+$$ v = \sqrt{\frac{\kappa R{T}_{K}}{M}}, $$
+
+gdzie $\kappa$ jest wykładnikiem adiabaty, $R = 8,31 J \text{/} (mol \cdot K)$ jest stałą gazową, ${T}_{K}$ temperaturą bezwzględną w kelwinach, natomiast $M$ jest masą cząsteczkową. W ogólnym przypadku im bardziej sztywny (mniej ściśliwy) ośrodek, tym wyższa prędkość dźwięku. Analogicznie częstotliwość prostego ruchu harmonicznego jest wprost proporcjonalna do sztywności drgającego obiektu określonego przez $k$, stałą sprężystości. Dalej, im większa jest gęstość ośrodka, tym mniejsza jest prędkość dźwięku. Wniosek ten jest analogiczny do faktu, że częstotliwość prostego ruchu harmonicznego jest odwrotnie proporcjonalna do $m$ masy drgającego ciała. Prędkość dźwięku w powietrzu jest mała, ponieważ powietrze jest łatwo ściśliwe. Ponieważ ciecze i ciała stałe są bardzo sztywne i trudne do ściśnięcia, prędkość dźwięku w tych ciałach jest generalnie większa niż w gazach.
+
+Ponieważ prędkość dźwięku zależy od gęstości materiału, a gęstość zależy od temperatury, istnieje zależność pomiędzy temperaturą ośrodka i prędkością rozchodzącego się w nim dźwięku. Prędkość dźwięku w powietrzu dana jest wzorem:
+
+$$ v = 331 \frac{m}{s}\sqrt{1 + \frac{{T}_{C}}{273 {}^{ \circ }C}} = 331 \frac{m}{s}\sqrt{\frac{{T}_{K}}{273 K}}, $$
+
+gdzie temperatura ${T}_{C}$ dana jest w stopniach Celsjusza, a temperatura ${T}_{K}$ – w kelwinach. Prędkość dźwięku w gazach zależy od średniej prędkości cząsteczek gazu, ${v}_{\text{rms}} = \sqrt{3{k}_{B}T \text{/} m}$, gdzie ${k}_{B}$ jest stałą Boltzmana $(1,38 \cdot {10}^{ - 23} J \text{/} K)$, a $m$ jest masą pojedynczej cząsteczki. Zwróć uwagę, że $v$ jest prędkością propagacji koherentnego zaburzenia (fala), natomiast ${v}_{\text{rms}}$ opisuje prędkość cząsteczek poruszających się w różnych kierunkach. Z tego powodu uzasadnione jest stwierdzenie, że prędkość dźwięku w powietrzu powinna zależeć od pierwiastka kwadratowego z temperatury. Nie jest to silna zależność. Dla $0 {}^{ \circ }C$ prędkość dźwięku wynosi 331 m/s, natomiast dla $20 {}^{ \circ }C$ – 343 m/s, czyli niecałe $4\text{%}$ przyrostu. Ilustracja 17.6 pokazuje, w jaki sposób nietoperz wykorzystuje dźwięk do określenia odległości.
+
+
+Wyprowadzenie wzoru na prędkość dźwięku w powietrzu
+
+Jak wcześniej wspomniano, prędkość dźwięku w ośrodku zależy od rodzaju i stanu ośrodka. Wyprowadzenie zależności na prędkość dźwięku w powietrzu należy rozpocząć od masy przepływu i równania ciągłości omówionego w rozdziale Mechanika płynów.
+
+Rozważmy przepływ płynu przez rurę o przekroju poprzecznym $A$. Masa w małej objętości rury o długości $x$ jest równa iloczynowi gęstości i objętości $m = \rho V = \rho Ax.$ Natężenie masy przepływu jest równe:
+
+$$ \frac{dm}{dt} = \frac{d}{dt} (\rho V) = \frac{d}{dt} (\rho Ax) = \rho A\frac{dx}{dt} = \rho Av. $$
+
+Z równania ciągłości z rozdziału Mechanika płynów wynika, że masa przepływu wpływająca do objętości musi być równa masie przepływu wypływającej z objętości: $(\rho Av{) }_{\text{wpływająca}} = (\rho Av{) }_{\text{wypływająca}}.$
+
+Rozważmy teraz dźwięk propagujący się w płynie. Weźmy infinitezymalnej grubości obszar ułożony wzdłuż powierzchni równego ciśnienia. Gęstość, temperatura i prędkość zmieniają się wzdłuż takiego obszaru o, odpowiednio, $d\rho$, $dT$ oraz $dv$.
+
+Z równania ciągłości wynika, że strumień masy wpływający do danej objętości jest równy strumieniowi wypływającemu z objętości. W takim przypadku
+
+$$ \rho Av = (\rho + d\rho) A (v + dv). $$
+
+Powyższe równanie można uprościć. Po obustronnym podzieleniu przez powierzchnię $A$ i po uwzględnieniu, że mnożenie dwóch nieskończenie małych wielkości jest w przybliżeniu równe zero: $dp (dv) \approx 0$, otrzymujemy:
+
+$$ \begin{matrix} \rho v & = (\rho + d \rho) (v + d v) \\ \rho v & = \rho v + \rho (d v) + (d \rho) v + (d \rho) (d v) \\ 0 & = \rho (d v) + (d \rho) v \\ \rho d v & = - v d \rho. \end{matrix} $$
+
+Wypadkowa siła wywierana na objętość płynu jest równa sumie sił po lewej i prawe stronie:
+
+$$ \begin{matrix} {F}_{\text{wyp}} & = p d y d z - (p + d p) d y d z \\ & = p d y d z - p d y d z - d p d y d z \\ & = - d p d y d z \\ m a & = - d p d y d z. \end{matrix} $$
+
+Przyspieszenie jest równe sile podzielonej przez masę, a masa jest równa iloczynowi gęstości i objętości, $m = \rho V = \rho dxdydz$. Otrzymujemy zatem:
+
+$$ \begin{matrix} m a & = - d p d y d z \\ a & = - \frac{dpdydz}{m} = \frac{dpdydz}{\rho dxdydz} = - \frac{dp}{\rho dx} \\ \frac{dv}{dt} & = - \frac{dp}{\rho dx} \\ d v & = - \frac{dp}{\rho dx} d t = - \frac{dp}{\rho } \frac{1}{v} \\ \rho v d v & = - d p. \end{matrix} $$
+
+Z równania ciągłości $\rho dv = - vd\rho$, otrzymujemy:
+
+$$ \begin{matrix} \rho d v = - v d \rho \\ \left(- v d \rho \right) v = - d p \\ v = \sqrt{\frac{ d p}{ d \rho }} \end{matrix} $$
+
+Rozważmy falę dźwiękową poruszającą się w powietrzu. Podczas procesu sprężania i rozprężania gazu do układu nie jest dostarczane ani oddawane żadne ciepło. Proces, w którym nie występuje żadna wymiana ciepła z układem, nazywa się przemianą adiabatyczną. Jest ona szczegółowo opisana w rozdziale Pierwsze prawo termodynamiki, natomiast na tym etapie wystarczy stwierdzić, że dla procesu adiabatycznego $p{V}^{\kappa } = \text{const,}$ gdzie $p$ jest ciśnieniem, $V$ jest objętością, a $\kappa$ jest stałą zależną od gazu. Dla powietrza $\kappa = 1,40$. Gęstość jest równa iloczynowi liczby moli i masy molowej, podzielonej przez objętość, stąd objętość jest równa $V = nM \text{/} \rho$. Liczba moli i masa molowa są stałe i mogą być włączone do stałej, czyli otrzymujemy: $p (1 \text{/} \rho {) }^{\kappa } = \text{const.}$ Obliczając logarytm naturalny z obu stron równania, dochodzimy do wyrażenia: $\text{ln} p - \kappa \text{ln} \rho = \text{const}\text{.}$ Obliczając następnie pochodną po gęstości, otrzymujemy:
+
+$$ \begin{matrix} \ln p - \kappa \ln \rho & = \text{const} \\ \frac{d}{d\rho } (\ln p - \kappa \ln \rho) & = \frac{d}{d\rho } (\text{const}) \\ \frac{1}{p} \frac{dp}{d\rho } - \frac{\kappa }{\rho } & = 0 \\ \frac{dp}{d\rho } & = \frac{\kappa p}{\rho }. \end{matrix} $$
+
+Zakładając, że powietrze można uznać za gaz doskonały, możemy skorzystać z równania dla gazu doskonałego:
+
+$$ \begin{matrix} p V & = & n R T = \frac{m}{M} R T \\ p & = & \frac{m}{V} \frac{RT}{M} = \rho \frac{RT}{M}. \end{matrix} $$
+
+W powyższym wzorze $M$ oznacza masę molową powietrza:
+
+$$ \frac{dp}{d\rho } = \frac{\kappa p}{\rho } = \frac{\kappa (\rho \frac{RT}{M}) }{\rho } = \frac{\kappa RT}{M}. $$
+
+Ponieważ prędkość dźwięku jest równa $v = \sqrt{dp \text{/} d\rho }$, dalej otrzymujemy:
+
+$$ v = \sqrt{\frac{\kappa RT}{M}}. $$
+
+Należy zauważyć, że prędkość jest większa dla wyższych temperatur i mniejsza w przypadku cięższych gazów. Dla powietrza $\kappa = 1,4$, $M = 0,02897 kg \text{/} mol$ i $R = 8,31 J \text{/} (mol \cdot K)$. Jeśli temperatura wynosi ${T}_{C} = 20 {}^{ \circ }C$ $(T = 293 K)$, prędkość dźwięku jest równa $v = 343 \text{m/s}\text{.}$
+
+Wzór na prędkość dźwięku w powietrzu $v = \sqrt{\kappa RT \text{/} M}$ można uprościć do postaci, w której prędkość dźwięku jest funkcją temperatury bezwzględnej:
+
+$$ \begin{matrix} v & = \sqrt{\frac{\kappa RT}{M}} \\ & = \sqrt{\frac{\kappa RT}{M} (\frac{273 \text{K}}{273 \text{K}}) } = \sqrt{\frac{ (273 \text{K}) \kappa R}{M}} \sqrt{\frac{T}{273 \text{K}}} \\ & \approx 331 \frac{\text{m}}{\text{s}} \sqrt{\frac{T}{273 \text{K}}. } \end{matrix} $$
+
+Jedną z najważniejszych właściwości dźwięku jest fakt, że prędkość dźwięku jest prawie niezależna od częstotliwości. Ta niezależność jest z pewnością prawdziwa w przestrzeni otwartej, dla dźwięków z zakresu częstotliwości słyszalnych. Gdyby nie była prawdziwa, z pewnością można byłoby to zauważyć, np. w trakcie koncertu orkiestry marszowej na stadionie piłkarskim. Załóżmy, że dźwięki o wysokich częstotliwościach propagowałyby się szybciej – im dalej znajdujesz się od zespołu, tym dźwięki z instrumentów o niskich częstotliwościach są bardziej opóźnione od dźwięków o wysokich częstotliwościach. Tymczasem muzyka ze wszystkich instrumentów dociera w tym samym czasie, niezależnie od odległości, co oznacza, że dźwięki o różnych częstotliwościach muszą propagować się z podobną prędkością. Pamiętajmy, że:
+
+$$ v = f\lambda. $$
+
+W danym ośrodku, w pewnych warunkach, $v$ jest stałe, co oznacza, że istnieje zależność pomiędzy $f$ a $\lambda$: im wyższa częstotliwość, tym krótsza długość fali.
+
+
+Przykład 17.1
+
+
+Obliczanie długości fal
+
+Oblicz długości fal dźwięków w temperaturze powietrza równej $30,0 {}^{ \circ }C$ dla skrajnych częstotliwości określających zakres słyszalności 20 Hz i 20 000 Hz w temperaturze powietrza równej.
+
+
+Strategia rozwiązania
+
+Aby znaleźć długość fali na podstawie częstotliwości, możemy wykorzystać zależność $v = f\lambda.$
+
+
+Rozwiązanie
+
+Wyraź temperaturę w kelwinach, a następnie podstaw do wzoru:
+
+$$ v = 331 \frac{m}{s}\sqrt{\frac{303 K}{273 K}} = 348,7 \frac{m}{s}. $$
+
+Podstaw prędkość i dolną częstotliwość, aby otrzymać maksymalną długość fali:
+
+$$ {\lambda }_{\text{max}} = \text{​}\frac{348,7 \text{m/s}}{20 \text{Hz}} = 17 \text{m}\text{.} $$
+
+Podstaw prędkość i górną częstotliwość, aby otrzymać minimalną długość fali:
+
+$$ {\lambda }_{\text{min}} = \frac{348,7 \text{m/s}}{20,000 \text{Hz}} = 0,017 \text{m} = 1,7 \text{cm}\text{.} $$
+
+
+Znaczenie
+
+Ponieważ iloczyn $f$ i $\lambda$ jest wielkością stałą, im niższa częstotliwość $f$, tym większa długość fali $\lambda$ i odwrotnie.
+
+Prędkość dźwięku może się zmieniać, gdy dźwięk przechodzi z jednego ośrodka do drugiego, ale zwykle częstotliwość pozostaje taka sama. Podobnie częstotliwość fali na strunie jest równa częstotliwości siły wymuszającej drgania struny. Jeśli $v$ się zmienia i $f$ pozostaje taka sama, wówczas długość fali $\lambda$ musi się zmieniać. Wynika to ze wzoru $v = f\lambda$; wyższa prędkość dźwięku to większa długość fali dla danej częstotliwości.
+
+Chociaż fale dźwiękowe w powietrzu są falami podłużnymi, w ciele stałym poruszają się w postaci fal podłużnych i poprzecznych. Fale sejsmiczne (ang. seismic waves), które są zasadniczo falami dźwiękowymi w skorupie ziemskiej wytwarzanymi przez trzęsienia ziemi, są ciekawym przykładem tego, jak prędkość dźwięku zależy od sztywności ośrodka. Trzęsienia ziemi wytwarzają zarówno fale podłużne, jak i poprzeczne, które poruszają się z różnymi prędkościami. Moduł sztywności granitu jest większy niż jego moduł ścinania. Z tego powodu prędkość fal podłużnych (P) w granicie podczas trzęsień ziemi jest znacznie większa niż prędkość fal poprzecznych (S). Oba rodzaje fal trzęsień ziemi przemieszczają się wolniej w mniej sztywnych materiałach, takich jak osady. Fale P mają prędkości od 4 do 7 km/s, a zakresy prędkości fal S wynoszą od 2 do 5 km/s. Fale P propagują się dalej niż fale S podczas przechodzenia przez skorupę ziemską. Czas pomiędzy falami P i S jest powszechnie używany do określenia odległości od ich źródła, od epicentrum trzęsienia ziemi. Ponieważ fale S nie przechodzą przez ciekły rdzeń (brak modułu sztywności), a fale P załamują się na granicy płaszcz-jądro, tworzą się dwa obszary cienia.
+
+Gdy fale dźwiękowe oddalają się od głośnika lub od epicentrum trzęsienia ziemi, ich moc na jednostkę powierzchni maleje. Z tego powodu dźwięk w pobliżu głośnika jest bardzo głośny i staje się coraz cichszy wraz ze wzrostem odległości od głośnika. Fakt ten wyjaśnia również, dlaczego w epicentrum trzęsienia ziemi może wystąpić ogromna ilość szkód, a w obszarach odległych od epicentrum można jedynie odczuć wstrząsy. Moc na jednostkę powierzchni znana jest jako natężenie. W następnym rozdziale zostanie omówione, jak natężenie zależy od odległości od źródła.
+
+
+17.3 Natężenie dźwięku
+
+W cichym lesie możesz czasami usłyszeć pojedynczy spadający na ziemię liść. Natomiast, kiedy kierowca samochodu ma włączone radio, nie słychać nawet tego, co mówi osoba siedząca obok. Wszyscy jesteśmy świadomi, co to jest głośność dźwięków i że głośność związana jest z tym, jak energicznie wibruje źródło. Duży poziom hałasu jest niebezpieczny dla słuchu, dlatego tak ważne jest, aby osoby pracujące w warunkach przemysłowych stosowały ochronniki słuchu. Wielkością fizyczną, która opisuje fale dźwiękowe, niezależnie od tego, czy są one z zakresu słyszalnego czy nie, jest natężenie dźwięku.
+
+W rozdziale Fale zdefiniowaliśmy natężenie jako moc przenoszoną przez falę przypadającą na jednostkę powierzchni. Moc określa, jak szybko energia jest przenoszona przez falę. Natężenie fali $I$ określone jest przez wzór:
+
+$$ I = \frac{P}{A}, $$
+
+gdzie $P$ jest mocą przepływającą przez powierzchnię $A$. W układzie SI jednostką natężenia fali jest ${\text{W/m}}^{2}.$ Jeśli założymy, że fala dźwiękowa jest kulista oraz że nie ma żadnych strat związanych z procesami termicznymi, wówczas rozchodząca się fala ma coraz większą powierzchnię i z tego powodu spada jej natężenie. Powierzchnia sfery wynosi $A = 4\pi {r}^{2}.$ Jeśli fala rozchodzi się od ${r}_{1}$ do ${r}_{2},$ wówczas energia również przechodzi przez większą powierzchnię:
+
+$$ \begin{matrix} {P}_{1} & = & {P}_{2} \\ {I}_{1} 4 \pi {r}_{1}^{2} & = & {I}_{2} 4 \pi {r}_{2}^{2}; \end{matrix} $$
+
+$$ {I}_{2} = {I}_{1}{ (\frac{{r}_{1}}{{r}_{2}}) }^{2}. $$
+
+Natężenie maleje, gdy fala oddala się od źródła. Gdy podwoisz odległość od źródła, natężenie fali maleje do 1/4:
+
+$$ {I}_{2} = {I}_{1}{ (\frac{{r}_{1}}{{r}_{2}}) }^{2} = {I}_{1}{ (\frac{{r}_{1}}{2{r}_{1}}) }^{2} = \frac{1}{4}{I}_{1}. $$
+
+Mówiąc o natężeniu fali dźwiękowej, rozważamy uśrednioną w czasie moc, określoną przez wielkość $〈 P 〉$ podzieloną przez powierzchnię:
+
+$$ I = \frac{ 〈 P 〉 }{A}. $$
+
+Natężenie fali jest proporcjonalne do zmian kwadratu ciśnienia i odwrotnie proporcjonalne do gęstości i prędkości. Rozważmy fragment ośrodka, w którym rozchodzi się fala dźwiękowa w czasie $t$, tak jak pokazano na Ilustracji 17.13.
+
+Położenie krawędzi ograniczających obszar, przez który przechodzi fala dźwiękowa może ulec zmianie, podobnie jak objętość tego obszaru. Jeśli ${s}_{2} > {s}_{1}$, objętość się zwiększa, a ciśnienie zmniejsza. Jeśli ${s}_{2} < {s}_{1},$ objętość się zmniejsza, natomiast ciśnienie się zwiększa. Zmiana objętości wynosi:
+
+$$ \text{Δ}V = A\text{Δ}s = A ({s}_{2} - {s}_{1}) = A (s (x + \text{Δ}x, t) - s (x, t)). $$
+
+Względna różnica objętości jest równa zmianie objętości podzielonej przez objętość początkową:
+
+$$ \frac{dV}{V} = \underset{\Delta x\text{→}0}{ lim }\frac{A [s (x + \Delta x, t) - s (x, t)] }{A\Delta x} = \frac{\partials (x, t) }{\partialx}. $$
+
+Względna różnica objętości związana jest ze zmianami ciśnienia przez współczynnik sprężystości objętościowej (ang. bulk modulus) $K = - \frac{\Delta p (x, t) }{dV \text{/} V}$. Należy pamiętać, że znak minus jest niezbędny, ponieważ zmiana objętości przeciwstawia się zmianom ciśnienia. Zmiana ciśnienia jest równa $\Delta p (x, t) = - K\frac{dV}{V} = - K\frac{\partials (x, t) }{\partialx}$. Jeśli fala dźwiękowa jest opisywana funkcją cosinus, to wychylenie, jak pokazano w Równaniu 17.2, jest równe $s (x, t) = {s}_{\text{max}}\text{cos} (kx \mp \omega t + \varphi)$, a ciśnienie może być wyznaczone z zależności:
+
+$$ \Delta p (x, t) = - K\frac{dV}{V} = - K\frac{\partials (x, t) }{\partialx} = Kk{s}_{\text{max}}\sin (kx - \omega t + \varphi) = \Delta {p}_{max}\sin (kx - \omega t + \varphi). $$
+
+Natężenie fali dźwiękowej jest równe mocy na jednostkę powierzchni, natomiast moc jest równa iloczynowi siły i prędkości, $I = P \text{/} A = Fv \text{/} A = pv$. W tym przypadku prędkość jest prędkością drgań ośrodka, a nie prędkością fali dźwiękowej. Prędkość ośrodka jest równa szybkości zmian przemieszczenia (wychylenia):
+
+$$ v (x, t) = \frac{ \partial }{ \partial t}s (x, t) = \frac{ \partial }{ \partial t} ({s}_{\text{max}}\text{cos} (kx - \omega t + \varphi)) = {s}_{\text{max}}\omega \text{sin} (kx - \omega t + \varphi). $$
+
+Stąd natężenie przyjmuje postać:
+
+$$ \begin{matrix} I & = \text{Δ} p (x, t) v (x, t) \\ & = K k {s}_{\text{max}} \text{sin} (kx - \omega t + \varphi) [{s}_{\text{max}}\omega \text{sin} (kx - \omega t + \varphi)] \\ & = K k \omega {s}_{\text{max}}^{2} {\text{sin}}^{2} (kx - \omega t + \varphi). \end{matrix} $$
+
+Aby znaleźć uśrednione w czasie natężenie w czasie jednego okresu $T = 2\pi \text{/} \omega$ dla położenia $x$, całkujemy w przedziale czasu T, otrzymując $I = Kk\omega {s}_{\text{max}}^{2} \text{/} 2$. Korzystajac z zależności $\Delta {p}_{\text{max}} = Kk{s}_{\text{max}}$, $v = \sqrt{K \text{/} \rho }$ oraz $v = \omega \text{/} k$, otrzymujemy:
+
+$$ I = \frac{Kk\omega {s}_{\text{max}}^{2}}{2} = \frac{{K}^{2}{k}^{2}\omega {s}_{\text{max}}^{2}}{2Kk} = \frac{\omega { (\text{Δ}{p}_{\text{max}}) }^{2}}{2 (\rho {v}^{2}) k} = \frac{v{ (\text{Δ}{p}_{\text{max}}) }^{2}}{2 (\rho {v}^{2}) } = \frac{{ (\text{Δ}{p}_{\text{max}}) }^{2}}{2\rho v}. $$
+
+Powyższa zależność oznacza, że natężenie fali dźwiękowej związane jest z kwadratem jej amplitudy:
+
+$$ I = \frac{{ (\text{Δ}{p}_{\text{max}}) }^{2}}{2\rho v}. $$
+
+W powyższym wzorze $\text{Δ}{p}_{\text{max}}$ oznacza zmianę ciśnienia lub amplitudę ciśnienia w paskalach (Pa), tzn. ${\text{N/m}}^{2}$. Energia (podobnie jak energia kinetyczna $m{v}^{2} \text{/} 2$) drgającego fragmentu ośrodka (powietrza) w wyniku propagującej się fali dźwiękowej jest proporcjonalna do kwadratu amplitudy fali. W równaniu $\rho$ jest gęstością ośrodka, w którym propaguje się fala dźwiękowa, w jednostce ${\text{kg/m}}^{3},$ natomiast $v$ jest prędkością dźwięku w ośrodku, wyrażoną w m/s. Zmiana ciśnienia jest reprezentowana przez jego amplitudę, co oznacza, że $I$ zmienia się tak jak ${ (\text{Δ}p) }^{2}.$ Zależność ta jest zgodna z faktem, że fala dźwiękowa wytwarzana jest w wyniku drgań.
+
+
+Słyszenie i poziomy natężenia dźwięku
+
+Jak stwierdzono wcześniej w niniejszym rozdziale, słyszenie oznacza percepcję dźwięku. Mechanizm słyszenia obejmuje kilka ciekawych aspektów fizycznych. Fala dźwiękowa, która dociera do naszego ucha, jest falą zmian ciśnienia powietrza. Ucho jest przetwornikiem (ang. transducer), który zamienia falę dźwiękową na szereg impulsów elektrycznych, w sposób bardziej skomplikowany niż w przypadku mikrofonu. Ilustracja 17.14 pokazuje anatomię ucha.
+
+Ucho zewnętrzne przenosi dźwięk do błony bębenkowej. Dla częstotliwości 2000 Hz – 5000 Hz (w zakresie dźwięków ludzkiej mowy) w zewnętrznym przewodzie słuchowym następuje rezonacja słupa powietrza. Dzięki temu ucho człowieka jest wyjątkowo dobrze dostosowane do odbierania ludzkiej mowy. Ucho środkowe zamienia dźwięk na drgania mechaniczne, a następnie dostarcza te drgania do ślimaka.
+
+Zakres natężeń, które ucho ludzkie może odbierać, zależy od częstotliwości dźwięku, ale w ogólnym przypadku zakres ten jest bardzo szeroki. Progowa wartość natężenia, które może być słyszalne, wynosi ${I}_{0} = {10}^{−12} {\text{W/m}}^{2}$. Ból odczuwalny jest dla natężenia ${I}_{\text{ból}} = 1 {\text{W/m}}^{2}$. Ponieważ jednak ucho ludzie rejestruje natężenie logarytmiczne, wygodniej jest stosować skalę Bela.
+
+Poziom natężenia dźwięku (ang. sound intensity level) $\beta$, mierzony w decybelach (ang. decibel), o natężeniu $I$ w watach na metr kwadratowy, definiuje się jako:
+
+$$ \beta = 10{\log }_{10} (\frac{I}{{I}_{0}}) [dB], $$
+
+gdzie ${I}_{0} = {10}^{−12} {\text{W/m}}^{2}$ jest progową wartością natężenia, odpowiadającą jest wartością progową dla normalnie słyszącej osoby, odpowiadającą natężeniu dźwięku o częstotliwości 1000 Hz. Bardziej powszechne jest stosowanie poziomu natężenia dźwięku w dB niż w ${\text{W/m}}^{2}$. Sposób percepcji dźwięku przez ucho ludzkie może być dokładniej opisany przez logarytm natężenia dźwięku niż przez samo natężenie dźwięku. Ponieważ $\beta$ definiuje się jako stosunek, jest to wielkość bezwymiarowa, która określa poziom dźwięku (level) w odniesieniu do wartości progowej $({10}^{ - 12} W \text{/} {m}^{2})$. Jednostka decybel oznacza, że w definicji tej wielkości logarytm ze stosunku natężeń pomnożony jest przez 10. Nazwa bel pochodzi od Alexandra Grahama Bella (1847–1922), wynalazcy telefonu.
+
+Poziom natężenia dźwięku dla natężenia progowego: ${10}^{−12} {\text{W/m}}^{2}$ wynosi $\beta = 0 dB$, ponieważ ${\log }_{10} 1 = 0$. Tabela 17.2 pokazuje poziomy w decybelach oraz natężenia w watach na metr kwadratowy dla niektórych znanych dźwięków. Ucho jest tak czułe, że rejestruje jedną trylionową wata na metr kwadratowy, a jeszcze bardzie imponujące jest to, że powierzchnia błony bębenkowej wynosi ok. $1 {\text{cm}}^{2}$, co oznacza, że dla progu słyszenia pada na nią dźwięk o mocy ${10}^{−16} \text{W}$. Cząsteczki powietrza przy takim natężeniu fali dźwiękowej drgają na długości mniejszej niż średnica cząsteczki, a zmiany ciśnienia są mniejsze niż ${10}^{−9} \text{atm}$.
+
+Analiza przedstawionych w Tabeli 17.2 wartości lub Równania 17.12 pozwala zauważyć, że każdy wzrost natężenia o 10 razy oznacza przyrost poziomu natężenia o 10 dB. Na przykład dźwięki o poziomie natężenia 90 dB i 60 dB różnią się o 1000 razy w wielkości natężenia. Z kolei jeśli jeden dźwięk jest o ${10}^{7}$ razy głośniejszy w natężeniu, oznacza to, że jest o 70 dB głośniejszy.
+
+
+Przykład 17.2
+
+
+Obliczanie poziomów natężenia dźwięku
+
+Oblicz poziom natężenia dźwięku dla fali dźwiękowej rozchodzącej się w powietrzu w temperaturze $0\text{°C}$ gdy amplituda ciśnienia wynosi 0,656 Pa.
+
+
+Strategia rozwiązania
+
+Mamy daną wartość $\Delta p$, co pozwala nam obliczyć $I$, wykorzystując zależność $I = \frac{{ (\text{Δ}p) }^{2}}{2\rho {v}_{\text{w}}}.$ Korzystając z $I$, możemy obliczyć $\beta$ bezpośrednio z definicji $\beta = 10{\log }_{10} (I \text{/} {I}_{0})$ [dB].
+
+
+Rozwiązanie
+
+Określ znane wielkości: Dźwięk propaguje się z prędkością 331 m/s w powietrzu o temperaturze $0 {}^{ \circ }C.$ Gęstość powietrza wynosi $1,29 {\text{kg/m}}^{3}$ dla normalnego ciśnienia atmosferycznego w temperaturze $0 {}^{ \circ }C.$
+
+Podstaw otrzymane wartości oraz amplitudę ciśnienia do wzoru $I = \frac{{ (\text{Δ}p) }^{2}}{2\rho v}$:
+
+$$ I = \frac{ (\Delta p{) }^{2}}{2\rho v} = \frac{ (0,656 Pa{) }^{2}}{2 \cdot 1,29 kg \text{/} {m}^{3} \cdot 331 m \text{/} s} = 5,04 \cdot {10}^{ - 4} W \text{/} {m}^{2}. $$
+
+Podstaw wartość $I$ oraz znaną wartość ${I}_{0}$ do wzoru $\beta = 10{\log }_{10} (I \text{/} {I}_{0})$ [dB]. Oblicz poziom natężenia dźwięku w decybelach:
+
+$$ 10{\log }_{10} (5,04 \cdot {10}^{8}) = 10 \cdot 8,70 dB = 87 dB. $$
+
+
+Znaczenie
+
+Natężenie dźwięku, które wynosi 87 dB, jest pięć razy większe od natężenia 80 dB.
+
+
+Przykład 17.3
+
+
+Zmiany poziomu natężenia dźwięku
+
+Pokaż, że jeśli dźwięk jest dwukrotnie głośniejszy od innego, jego poziom natężenia jest o 3 dB wyższy.
+
+
+Strategia rozwiązania
+
+Dany jest stosunek dwóch natężeń dźwięku 2:1. Należy wyznaczyć różnicę w poziomach natężeń dźwięku w decybelach. Zadanie możemy rozwiązać, wykorzystując własności logarytmów.
+
+
+Rozwiązanie
+
+Określ znane wielkości: Stosunek dwóch natężeń wynosi 2 do 1 czyli
+
+Chcemy pokazać, że różnica w poziomach natężeń wysnosi 3 dB, czyli:
+
+$$ {\text{log}}_{10}b - {\text{log}}_{10}a = {\text{log}}_{10} (\frac{b}{a}). $$
+
+${\beta }_{2} - {\beta }_{1} = 10{\log }_{10} (\frac{{I}_{2}}{{I}_{1}}) = 10{\log }_{10} (2,00) = 10 \cdot 0,301 dB.$ A zatem,
+
+$$ {\beta }_{2} - {\beta }_{1} = 3,01 \text{dB}\text{.} $$
+
+
+Znaczenie
+
+Zauważ, że ponieważ dany jest stosunek ${I}_{2}\text{/}{I}_{1}$ a nie rzeczywiste wartości natężeń, to otrzymany wynik jest prawdziwy dla wszystkich natężeń, których stosunek jest równy 2. Na przykład dźwięk o poziomie 56,0 dB jest dwukrotnie bardziej intensywny niż dźwięk o poziomie 53,0 dB, a dźwięk o poziomie natężenia 97,0 dB jest o połowę mniej intensywny niż dźwięk o poziomie natężenia 100 dB i tak dalej.
+
+
+Słyszenie i wysokość dźwięku
+
+Ucho ludzkie posiada ogromny zakres wrażliwości na zjawiska dźwiękowe. Potrafi dostarczyć nam szereg informacji – takich jak wysokość, głośność i kierunek rozchodzenia się dźwięku.
+
+Percepcja częstotliwości to rejestrowanie wysokości dźwięku (ang. pitch). Zwykle ludzie mają doskonałą względną zdolność oceny wysokości dźwięku i potrafią rozróżnić dwa dźwięki o odmiennych częstotliwościach różniących się od siebie o ok. 0,3%. Na przykład dźwięki o częstotliwościach 500 i 501,5 Hz są wyraźnie dla człowieka różne. Nuty (ang. musical notes) są symbolicznym zapisem dźwięków o określonej częstotliwości.
+
+Percepcja natężenia oznacza rejestrowanie dźwięków o różnej głośności (ang. loudness). Można już usłyszeć różnicę ok. 1 dB. Głośność nie jest związana wyłącznie z natężeniem. Na percepcje głośności ma wpływ częstotliwość dźwięku. Dźwięki o wysokich i niskich częstotliwościach wydają się mniej głośne, ponieważ ucho ludzkie jest mniej na nie wrażliwe. Kiedy skrzypce grają środkowe C, to nie można tego dźwięku pomylić z tym samym dźwiękiem granym na fortepianie. Powodem jest to, że każdy instrument wytwarza charakterystyczny zbiór częstotliwości i natężeń. Tę kombinację częstotliwości oraz natężeń nazywamy zwykle barwą dźwięku (ang. timbre). Barwa dźwięku jest wynikiem wielu odbić, rezonansów i superpozycji fal w instrumencie.
+
+Jednostka nazywana fonem (ang. phon) jest wykorzystywana do określenia wrażenia głośności w postaci numerycznej. Fon różni się od decybela, ponieważ opisuje percepcję głośności (wielkość subiektywną), podczas gdy decybel jest jednostką wielkości fizycznej – natężenia. Ilustracja 17.15 pokazuje zależność głośności od natężenia (lub poziomu natężenia) w funkcji częstotliwości. Przedstawione krzywe to krzywe równej głośności. Parametrem każdej krzywej jest głośność. Dźwięki znajdujące się na danej krzywej odbierane są przez typowego słuchacza jako jednakowo głośne. Krzywe powstały na podstawie badań percepcji głośności dźwięków przeprowadzanych na dużej grupie ludzi. Analizowane dźwięki miały różne częstotliwości i poziomy natężenia. Dla częstotliwości 1000 Hz fony są równe decybelom.
+
+
+Przykład 17.4
+
+
+Pomiary głośności
+
+Jaka jest głośność w fonach dźwięku o częstotliwości 100 Hz, którego poziom natężenia wynosi 80 dB?
+
+Ile wynosi poziom natężenia dźwięku o częstotliwości 4000 Hz, którego głośność wynosi 70 fonów?
+
+Dla jakiego poziomu natężenia dźwięk o częstotliwości 8000 Hz ma taką samą głośność jak dźwięk o częstotliwości 200 Hz i poziomie 60 dB?
+
+
+Strategia rozwiązania
+
+Do rozwiązania tego przykładu powinien być wykorzystany wykres na Ilustracji 17.15. Aby znaleźć głośność danego dźwięku, musisz znać jego częstotliwość i poziom natężenia, znaleźć ten punkt na siatce kwadratowej, a następnie interpolować krzywą głośności, aby wyznaczyć głośność sygnału. Po wyznaczeniu tego punktu można określić poziom natężenia z osi pionowej.
+
+
+Rozwiązanie
+
+Określ znane wielkości: Siatka kwadratowa na wykresie głośności w fonach i poziomu natężenia dźwięku w decybelach – obie wielkości fizyczne: dźwięk o częstotliwości 100 Hz i poziomie 80 dB leży w połowie pomiędzy krzywymi głośności 70 i 80 fonów. Wyznaczona głośność – 75 fonów.
+
+Określ znane wielkości: dźwięk o częstotliwości 4000 Hz i głośności 70 fonów. Przesuwaj się wzdłuż krzywej 70 fonów, aż osiągniesz 4000 Hz. Punkt ten leży poniżej 70 dB i wynosi 67 dB. Wyznaczony poziom natężenia – 67 dB.
+
+Znajdź dźwięk o częstotliwości 200 Hz i poziomie natężenia 60 dB. Znajdź głośność – szukany punkt znajduje się tuż powyżej krzywej 70 fonów, a jego głośność wynosi 51 fonów. Znajdź poziom natężenia dźwięku na krzywej 51 fonów – 63 dB.
+
+
+Znaczenie
+
+Powyższe odpowiedzi, jak wszystkie informacje z Ilustracji 17.15, obarczone są niepewnością rzędu kilku fonów lub kilku decybeli, które są częściowo związane z trudnością w interpolacji, a przede wszystkim z niepewnością w krzywych równej głośności.
+
+W rozdziale przedstawiliśmy charakterystykę dźwięków i ich percepcję. Poniżej dowiemy się, jak powstają dźwięki emitowane przez instrumenty muzyczne lub przez aparat mowy człowieka.
+
+
+17.4 Tryby drgań fali stojącej
+
+Interferencja to nakładanie się dwóch lub więcej fal w przestrzeni. Może ona prowadzić do wzajemnego wzmacniania fal (interferencja konstruktywna) lub wygaszania (interferencja destruktywna). W rzeczywistości wyjaśnienie „czym jest fala” wymaga obserwacji interferencji. Ponieważ dźwięk jest falą, spodziewamy się, że będzie ulegał interferencji.
+
+
+Interferencja fal dźwiękowych
+
+W rozdziale Fale rozważaliśmy interferencję fal przesuniętych w fazie. Wyznaczyliśmy funkcję opisującą falę wypadkową, która była superpozycją fal ${y}_{1} (x, t) = A \text{sin} (kx - \omega t + \varphi)$ i ${y}_{2} (x, t) = A \text{sin} (kx - \omega t)$ i wynosiła:
+
+$$ y (x, t) = 2A\cos (\frac{\varphi }{2}) \sin (kx - \omega t + \frac{\varphi }{2}). $$
+
+Jeśli fale, które początkowo mają takie same fazy przebędą różne odległości, ich fazy zaczną się różnić. Fale dźwiękowe są doskonałym przykładem fal przesuniętych w fazie na skutek różnicy w długości dróg propagacji. Jak wcześniej stwierdziliśmy, fale dźwiękowe można zasadniczo modelować jako fale podłużne, gdzie cząsteczki powietrza drgają wokół położenia równowagi, lub jako zmiany ciśnienia powietrza.
+
+Gdy fale opuszczają głośnik, propagują się jako fale sferyczne. Konstruktywna interferencja fal jest wynikiem dodawania tzw. grzbietów i dolin interferujących ze sobą fal. Destruktywna interferencja zachodzi wówczas, gdy grzbietowi jednej fali odpowiada dolina drugiej i odwrotnie.
+
+Różnica faz w każdym punkcie związana jest z różnicą pomiędzy długościami dróg propagacji każdej z fal. Kiedy różnica ta jest równa wielokrotności długości fali
+
+$$ \Delta r = | {r}_{2} - {r}_{1} | = n\lambda, \text{gdzie} n = 0,1,2,3, \ldots, $$
+
+wówczas fale mają taką samą fazę i ulegają wzmocnieniu. Gdy różnica długości dróg propagacji jest równa wielokrotności połowy długości fali
+
+$$ \Delta r = | {r}_{2} - {r}_{1} | = n\frac{\lambda }{2}, \text{gdzie} n = 1,3,5, \ldots, $$
+
+wówczas fale są przesunięte w fazie o $180{}^{ \circ } (\pi rad)$ i w konsekwencji otrzymujemy interferencję destruktywną. Punkty te mogą być określone za pomocą miernika natężenia dźwięku.
+
+
+Przykład 17.5
+
+
+Interferencja fal dźwiękowych
+
+Dwa głośniki znajdują się w odległości 5 m od siebie i są pobudzane generatorem sygnałowym o nieznanej częstotliwości. Student z miernikiem poziomu dźwięku oddalił się o 6 m od głośników i przesunął się o 2 m w kierunku drugiego miernika i znalazł pierwsze minimum poziomu natężenia dźwięku, jak pokazano poniżej. Jaka jest częstotliwość sygnału generowanego przez generator? Załóżmy, że prędkość dźwięku wynosi $v = 343,00 \text{m/s}\text{.}$
+
+
+Strategia rozwiązania
+
+Prędkość fali jest równa $v = \lambda \text{/} T = \lambda f$. Częstotliwość jest zatem równa $f = v \text{/} \lambda$. Minimalna wartość natężenia dźwięku wskazuje destruktywną interferencję i pierwsze minimum pojawia się, jeśli różnica pomiędzy drogami propagacji obu fal wynosi $\text{Δ}r = \lambda \text{/}2,$ co może być wyznaczone z geometrii układu.
+
+
+Rozwiązanie
+
+Znajdź minimalną długość propagacji dla każdego z głośników.
+
+$$ {r}_{1} = \sqrt{{ (6,00 \text{m}) }^{2} + { (2,00 \text{m}) }^{2}} = 6,32 \text{m,} {r}_{2} = \sqrt{{ (6,00 \text{m}) }^{2} + { (3,00 \text{m}) }^{2}} = 6,71 \text{m} $$
+
+Wykorzystaj różnicę długości dróg propagacji, aby określić długość fali.
+
+$$ \text{Δ}r = | {r}_{2} - {r}_{1} | = | 6,71 \text{m} - 6,32 \text{m} | = 0,39 \text{m} $$
+
+Wyznacz częstotliwość sygnału.
+
+$$ f = \frac{v}{\lambda } = \frac{343,00 \text{m/s}}{0,78 \text{m}} = 439,74 \text{Hz} $$
+
+
+Znaczenie
+
+Jeśli punkt $P$ byłby punktem, w którym natężenie dźwięku byłoby maksymalne, długość drogi propagacji byłaby wielokrotnością długości fali.
+
+Kwestia przesunięcia fazy z powodu różnic w długościach dróg propagacji jest bardzo ważna. Możesz porównać to zagadnienie w rozdziałach Interferencja oraz Fotony i fale materii, w którym dyskutujemy o tym, w jaki sposób Thomas Young zastosował tę metodę w swoim słynnym eksperymencie z dwiema szczelinami, aby udowodnić, że światło ma analogiczne właściwości.
+
+
+Redukcja hałasu dzięki interferencji
+
+Ilustracja 17.18 przedstawia pomysłowe zastosowanie interferencji w celu wyeliminowania hałasu. Badano również możliwość zastosowania aktywnych metod redukcji hałasu (ang. noise reduction) w większej skali w samolotach pasażerskich. Interferencję destruktywną otrzymuje się po wykonaniu szybkiej analizy elektronicznej, dzięki której drugi zagłuszający dźwięk jest przesunięty w fazie o ${180}^{ \circ }$ w stosunku do zagłuszanego. Wówczas grzbiety i doliny obu dźwięków są ułożone przeciwnie do siebie. Fale dźwiękowe w ośrodkach ciekłych są falami ciśnienia i są zgodne z prawem Paskala (patrz rozdział Prawo Pascala i układy hydrauliczne). To znaczy ciśnienia z dwóch różnych źródeł dodają się i odejmują podobnie jak liczby proste. Z tego powodu dodatnie i ujemne połówki sinusoidalnych zmian ciśnienia dodają się i w konsekwencji zmniejszają wypadkowe ciśnienie, co oznacza mniejsze natężenie dźwięku. Oczywiście możliwa jest interferencja całkowicie destruktywna, ale tylko w skrajnym przypadku. W konsekwencji, przy stosowaniu tej metody, możliwa jest redukcja hałasu o 30 dB i więcej.
+
+Gdzie możemy zaobserwować interferencję dźwięku? Wszystkie dźwięki rezonansowe, takie jak dźwięki instrumentów muzycznych, są wynikiem konstruktywnych i destruktywnych interferencji. Tylko drgania o częstotliwościach rezonansowych dodają się i w wyniku tego powstają fale stojące. Natomiast inne interferują destruktywnie i się znoszą.
+
+
+Rezonans w rurze jednostronnie zamkniętej
+
+Jak stwierdzono w rozdziale Fale, fale stojące (ang. standing wave) są wynikiem sumowania dwóch fal poruszających się w przeciwnych kierunkach. Gdy dwie identyczne fale sinusoidalne poruszają się w przeciwnych kierunkach, opisuje się je zależnościami:
+
+$$ {y}_{1} (x, t) = A\sin (kx - \omega t) \text{oraz} {y}_{2} (x, t) = A\sin (kx + \omega t). $$
+
+Gdy te dwie interferują, wówczas powstaje fala stojąca:
+
+$$ {y}_{R} (x, t) = 2A\sin (kx) \cos (\omega t). $$
+
+Rezonans (ang. resonance) może powstać w wyniku nałożenia na fale warunków brzegowych. W rozdziale Fale wykazaliśmy, że rezonans może powstać na naciągniętej strunie, przy założeniu symetrycznych warunków brzegowych, tj. przy założeniu węzłów na obu końcach. Węzły zdefiniowano jako punkty, w których struna się nie porusza. Okazało się, że przyjęcie symetrycznych warunków brzegowych spowodowało, że niektóre częstotliwości rezonują, powodując powstanie fal stojących, podczas gdy inne interferują destruktywnie. Fale dźwiękowe mogą rezonować na przykład w rurze, przy czym częstotliwości, dla których występuje rezonans, zależą od warunków brzegowych.
+
+Załóżmy, że mamy rurę z jednej strony zamkniętą, a z drugiej otwartą. Jeśli trzymamy kamerton (ang. tuning fork) w pobliżu otwartej strony rury, dźwięk propaguje się wewnątrz rury i odbija się od jej końca. Odbity dźwięk posiada taką samą częstotliwość i długość fali jak dźwięk oryginalny, przy czym porusza się w przeciwnym kierunku. Na końcu rury cząsteczki powietrza mają bardzo mało miejsca, aby wykonywać drgania, co skutkuje powstaniem węzła. Na końcu otwartej części rury cząsteczki powietrza mają dużą swobodę, by wykonywać drgania, i dla odpowiednich częstotliwości tworzy się wówczas strzałka. W przeciwieństwie do symetrycznych warunków brzegowych na strunie, gdzie powstają fale stojące, warunki brzegowe dla rury jednostronnie otwartej są niesymetryczne – węzeł na końcu zamkniętej rury i strzałka na końcu otwartej.
+
+Jeśli kamerton ma odpowiednią częstotliwość, słup powietrza w rurze rezonuje bardzo mocno, ale dla większości częstotliwości rezonuje bardzo słabo. Oznacza to, że słup powietrza w rurze ma swoją częstotliwość własną. Rozważmy najniższą częstotliwość, dla której powietrze w rurze wpadnie w rezonans i w konsekwencji powstanie głośny dźwięk. Przy zamkniętej części rury powstanie węzeł, natomiast przy otwartej – strzałka – tak jak to pokazano na Ilustracji 17.19.
+
+Fala stojąca posiada węzeł na końcu zamkniętej części rury oraz strzałkę na końcu otwartej części. Odległość pomiędzy węzłem i strzałką wynosi jedną czwartą długości fali, co odpowiada długości rury, czyli ${\lambda }_{1} = 4L.$ Taki sam rezonans może powstać w wyniku drgań pobudzających na końcu zamkniętej części rury. Najlepiej rozważać drgania własne słupa powietrza w rurze, niezależnie od sposobu ich wywołania.
+
+Biorąc pod uwagę, że maksymalne drgania powietrza możliwe są przy otwartym końcu rury, a żadne na zamkniętym końcu, w rurze mogą rezonować także inne fale o krótszej długości, tak jak pokazano na Ilustracji 17.21. Na rysunku fala stojąca ma długość równą 3/4 długości fali $3{\lambda }_{3} \text{/} 4 = L$, co daje ${\lambda }_{3} = 4L \text{/} 3$. Dalsza analiza pokazuje, że wewnątrz rury powstają rezonanse dla jeszcze krótszych długości fal. Najniższa częstotliwość, dla której występuje rezonans, nazywa się częstotliwością podstawową (ang. fundamental frequency), natomiast wszystkie wyższe częstotliwości rezonansowe nazywane są alikwotami (ang. overtones). Wszystkie częstotliwości rezonansowe są wielokrotnością częstotliwości podstawowej i są wspólnie nazywane harmonicznymi (ang. harmonics). Częstotliwość podstawowa jest pierwszą harmoniczną, pierwszy alikwot jest drugą harmoniczną itd. Ilustracja 17.22 pokazuje częstotliwość podstawową i pierwsze trzy alikwoty (pierwsze cztery harmoniczne) w rurze jednostronnie zamkniętej.
+
+W rurze jednostronnie zamkniętej rezonans występuje dla następujący długości fal:
+
+$$ {\lambda }_{n} = \frac{4}{n}L, \text{gdzie} n = 1,3,5, \ldots $$
+
+Spójrzmy teraz na wzór dla częstotliwości rezonansowych dla prostej rury jednostronnie zamkniętej. Częstotliwość podstawowa dla długości fali $\lambda = 4L$ jest związana z prędkością dźwięku daną wzorem:
+
+$$ v = f\lambda. $$
+
+Rozwiązując powyższe równanie, można wyznaczyć $f$, która wynosi:
+
+$$ f = \frac{v}{\lambda } = \frac{v}{4L}, $$
+
+gdzie $v$ jest prędkością dźwięku w powietrzu. Podobnie dla pierwszego alikwota $\lambda = 4L\text{/}3$ otrzymujemy:
+
+$$ {f}_{3} = 3\frac{v}{4L} = 3{f}_{1}. $$
+
+Ponieważ ${f}_{3} = 3{f}_{1}$, pierwszy alikwot nazywamy trzecią harmoniczną. Postępując analogicznie, dochodzimy do wzoru, który można uogólnić za pomocą jednej zależności. Częstotliwości rezonansowe w rurze jednostronnie otwartej występują dla:
+
+$$ {f}_{n} = n\frac{v}{4L}, \text{dla} n = 1,3,5, \ldots, $$
+
+gdzie ${f}_{1}$ jest częstotliwością podstawową, ${f}_{3}$ jest pierwszym alikwotem itd. Interesujące jest to, że częstotliwości rezonansowe zależą od prędkości dźwięku oraz od temperatury. Zależność ta stwarza odczuwalny problem np. dla organów w starych nieogrzewanych kościołach (katedrach). Z tego powodu muzycy przed koncertem trzymają instrumenty dęte w pomieszczeniu o temperaturze pokojowej a nie na mrozie.
+
+
+Rezonans w rurze obustronnie otwartej
+
+Innym źródłem powstawania fal stojących jest rura obustronnie otwarta. W tym przypadku warunki brzegowe są symetryczne – na obu końcach powstają strzałki. Rezonanse w rurze obustronnie otwartej mogą być analizowane w podobny sposób jak w przypadku rury jednostronnie zamkniętej. Słupy powietrza w rurach obustronnie otwartych posiadają maksymalne wychylenie na obu końcach. Fale stojące pokazano na rysunku 8.
+
+W rurze obustronnie otwartej rezonans występuje dla następujących długości fal:
+
+$$ {\lambda }_{n} = \frac{2}{n}L, \text{dla} n = 1,2,3, \ldots $$
+
+Uwzględniając fakt, że na obu końcach rury obustronnie otwartej występują maksymalne wychylenia drgającego słupa powietrza oraz korzystając z Ilustracji 17.23 możemy wyznaczyć częstotliwości rezonansowe rury obustronnie otwartej:
+
+$$ {f}_{n} = n\frac{v}{2L}, \text{dla} n = 1,2,3, \ldots, $$
+
+gdzie ${f}_{1}$ jest częstotliwością podstawową, ${f}_{2}$ jest pierwszym alikwotem, ${f}_{3}$ jest drugim alikwotem itd. Należy zauważyć, że dla rury obustronnie otwartej częstotliwości rezonansowe są dwukrotnie większe niż dla rury jednostronnie otwartej. Oba typy rur różnią się też zestawem (widmem) alikwot.
+
+Zauważ, że rura obustronnie otwarta ma symetryczne warunki brzegowe, podobnie jak struna zaczepiona z obu stron, jak to było przedstawione w rozdziale Fale. Wzory na długości fal i częstotliwości rezonansowe instrumentu strunowego są takie same jak w Równaniu 17.15 i Równaniu 17.16. Prędkość fali na strunie (patrz rozdział Fale) wynosi $v = \sqrt{{F}_{T} \text{/} \mu }$. Powietrze wokół obustronnie otwartej rury wibruje z takimi samymi częstotliwościami jak w przypadku struny, wytwarzając dźwięki o takich samych częstotliwościach. Fala dźwiękowa porusza się z prędkością dźwięku i długością fali równą $v = \lambda f.$
+
+
+17.5 Źródła dźwięków muzycznych
+
+Niektóre instrumenty muzyczne – instrumenty dęte drewniane, mosiężne, organy piszczałkowe – można modelować jako rury z symetrycznymi warunkami brzegowymi (ang. tubes with symmetrical boundary conditions), obustronnie otwartymi lub zamkniętymi. Inne instrumenty mogą być modelowane jako rury z niesymetrycznymi warunkami brzegowymi (ang. tubes with anti-symmetrical boundary conditions), z jednej strony otwarte, a z drugiej zamknięte.
+
+Częstotliwości rezonansowe powstają na skutek rozchodzenia się fal podłużnych w rurach i ich interferencji z falami odbitymi, poruszającymi się w przeciwnych kierunkach. Organy piszczałkowe składają się z różnych piszczałek (rur) o określonych długościach, w celu wytworzenia różnych częstotliwości. Fale są wynikiem sprężania powietrza, które może się następnie rozprężać w rurach. Nawet w otwartych rurach niektóre odbicia pojawią się w wyniku oddziaływania końców rury z ciśnieniem atmosferycznym na zewnątrz rury.
+
+Strzałki nie występują dokładnie przy otworze rury, ale zależą od promienia rury. Fale nie propagują się w pełni, dopóki nie znajdą się poza otwartym końcem rury, a dla cienkościennej rury należy dodać korektę końcową. Ta korekcja końcowa jest około 0,6 razy większa od promienia rury i powinna być dodana do długości rurki.
+
+Muzycy grający na instrumentach takich jak flet czy obój zmieniają długość rury poprzez otwieranie i zamykanie otworów palcami. Na puzonie długość rury można zmieniać za pomocą rury przesuwnej. Trąbki posiadają określoną długość i mogą generować dźwięki o określonych częstotliwościach.
+
+Częstotliwość podstawowa i alikwoty mogą występować dla różnych kombinacji. Na przykład środkowe C na trąbce wyraźnie różni się od środkowego C na klarnecie, chociaż oba instrumenty są zmodyfikowanymi wersjami rury jednostronnie zamkniętej. Częstotliwość podstawowa jest taka sama (i najczęściej o największym natężeniu), ale alikwoty i ich kombinacje są różne. To sprawia, że różne instrumenty muzyczne (jak również ludzkie głosy) posiadają cechy charakterystyczne, niezależnie od tego, czy dźwięki wywołują słupy powietrza, struny, komory dźwiękowe czy bębny. W rzeczywistości np. nasza mowa jest wyznaczana przez kształt wnęki utworzonej przez gardło i usta w celu otrzymania odpowiedniej częstotliwości podstawowej i alikwotów. Na przykład można tworzyć proste wnęki rezonansowe (ang. resonant cavities) w celu rezonowania dźwięków samogłosek. U chłopców w okresie dojrzewania krtań rośnie i zmienia się kształt wnęki rezonansowej, co powoduje różnicę w dominujących częstotliwościach u kobiet i mężczyzn.
+
+
+Przykład 17.6
+
+
+Wyznaczanie długości rury o częstotliwości podstawowej 128 Hz
+
+Jaką długość powinna mieć rura jednostronnie zamknięta w dniu, w którym temperatura powietrza wynosi $22,0 {}^{ \circ }C$, jeśli jej częstotliwość podstawowa wynosi 128 Hz?
+
+Jaka jest częstotliwość czwartego alikwota?
+
+
+Strategia rozwiązania
+
+Długość rury $L$ można wyznaczyć z zależności ${f}_{n} = n v / \left(4 L \right)$, ale wcześniej należy wyznaczyć prędkość dźwięku $v$.
+
+
+Rozwiązanie
+
+Określ znane wielkości: częstotliwość podstawowa wynosi 128 Hz, a temperatura powietrza wynosi $22,0 {}^{ \circ }C$. Skorzystaj ze wzoru ${f}_{n} = n v / \left(4 L \right)$, aby wyznaczyć częstotliwość podstawową ($n = 1$),
+
+Oblicz prędkość dźwięku, korzystając ze wzoru $v = 331 m \text{/} s\sqrt{T \text{/} 273 K}$,
+
+$$ v = 331 \frac{m}{s}\sqrt{\frac{295 K}{273 K}} = 344 \frac{m}{s}. $$
+
+Podstaw wartości prędkości dźwięku oraz częstotliwości do wyrażenia na $L$.
+
+$$ L = \frac{v}{4{f}_{1}} = \frac{344 m \text{/} s}{4 \cdot 128 Hz} = 0,672 m $$
+
+Określ znane wielkości: dla pierwszego alikwota $n = 3$, dla drugiego alikwota $n = 5$, dla trzeciego alikwota $n = 7$ i dla czwartego alikwota $n = 9$. Podstaw wartość dla czwartego alikwota do wzoru ${f}_{n} = n v / \left(4 L \right)$
+
+$$ {f}_{9} = 9\frac{v}{4L} = 9{f}_{1} = 1,15 \text{kHz}\text{.} $$
+
+
+Znaczenie
+
+Wiele instrumentów dętych to zmodyfikowane rury wyposażone w otwory, zawory i inne urządzenia służące do zmiany długości słupa powietrza rezonansowego, a tym samym częstotliwości generowanego dźwięku. Rury, z których zbudowane są róg lub tuba, muszą być bardzo długie, by wytwarzały niskie częstotliwości. Ze względów praktycznych rury zwijane są więc w pętle. Niezależnie od tego, w jaki sposób pojawiają się alikwoty, czy w prostej rurze, czy w instrumencie muzycznym, dźwięk zależy od tego, w jaki sposób następuje stymulowanie drgań oraz jaki jest kształt rezonatora. Na przykład puzon nie wytwarza podstawowej częstotliwości, tylko alikwoty.
+
+Jeśli mamy dwie rury z taką samą częstotliwością podstawową, ale jedna z nich jest jednostronnie zamknięta, a druga obustronnie otwarta, ich dźwięki brzmią inaczej, ponieważ mają różne alikwoty. Na przykład środkowe C grane na rurze otwartej brzmiałoby głośniej, ponieważ ma parzyste i nieparzyste wielokrotności częstotliwości podstawowej. Zamknięta rura ma tylko nieparzyste wielokrotności.
+
+
+Rezonans
+
+Rezonanse powstają w różnych układach, np. strunach, słupach powietrznych, atomach. W poprzednich rozdziałach powiedzieliśmy, że rezonans powstaje w wyniku pobudzenia układu siłą wymuszającą z częstotliwością równą częstotliwości podstawowej. Amplituda tych drgań gwałtownie rośnie, aż do momentu, gdy prawo Hooke’a dla tego układu przestanie obowiązywać. Przykładem tego jest np. dźwięk celowo zniekształcony w niektórych rodzajach muzyki rockowej.
+
+Instrumenty dęte wykorzystują rezonans słupa powietrza do wzmocnienia tonów generowanych przez usta lub drgające trzciny. Inne instrumenty wykorzystują rezonans do wzmocnienia dźwięków w bardzo sprytny sposób. Ilustracja 17.27 prezentuje skrzypce i gitarę, które mają pudła rezonansowe, ale o różnych kształtach, co sprawia, że mają różną strukturę alikwotów. Wibrująca struna generuje dźwięk, który rezonuje w pudle rezonansowym, wzmacniając w ten sposób dźwięk i tworząc efekty, które nadają instrumentowi charakterystyczną barwę. Im bardziej skomplikowany jest kształt pudła rezonansowego, tym większa jest jego zdolność do rezonowania w szerokim zakresie częstotliwości. Marimba, którą przedstawiono na Ilustracji 17.28, wykorzystuje kotły lub gurdy poniżej drewnianych listew, aby wzmocnić ich dźwięki. Rezonans kotła może być regulowany przez dolanie wody.
+
+W naszych rozważaniach podkreślaliśmy zastosowanie rezonansu i fal stojących, ale teorie te odnoszą się do każdego układu mającego cechy falowe. Drgające struny na przykład rezonują i posiadają częstotliwości podstawowe i alikwoty podobne do słupa powietrza. Bardziej subtelne są drgania atomów na skutek natury falowej elektronów. Ich orbity mogą być postrzegane jako fale stojące, które mają częstotliwość podstawową (stan podstawowy) i alikwoty (stan wzbudzenia). To fascynujące, że charakterystyka fal ma zastosowanie w szerokim zakresie układów fizycznych.
+
+
+17.6 Dudnienia
+
+Badania o muzyce dostarczają wielu przykładów superpozycji fal oraz konstruktywnej i destrukcyjnej interferencji. Jest niewiele przykładów muzyki wykonywanej przez jedno źródło, generujące jedną częstotliwość przez dłuższy czas. Prawdopodobnie zgodzisz się z tym, że pojedyncza częstotliwość grana przez dłuższy czas jest nudna i irytująca, podobnie jak dźwięk silnika samolotu czy głośnego wentylatora. Muzyka jest przyjemna i ciekawa dzięki mieszaniu się różnych częstotliwości różnych instrumentów i głosów.
+
+Ciekawym zjawiskiem, które występuje w wyniku konstruktywnej i destrukcyjnej interferencji dwóch lub więcej częstotliwości dźwięku, jest zjawisko dudnień (ang. beats). Jeśli dwa dźwięki różnią się częstotliwością, fala wypadkowa może być zapisana jako:
+
+$$ {y}_{1} = A\cos ({k}_{1}x - 2\pi {f}_{1}t) \text{oraz} {y}_{2} = A\cos ({k}_{2}x - 2\pi {f}_{2}t). $$
+
+Wykorzystując znany z trygonometrii wzór $cos u + cos v = 2 cos \left(\left(u + v \right) / 2 \right) cos \left(\left(u - v \right) / 2 \right)$, a następnie ustalając położenie punktu odniesienia $x = 0 m$ w przestrzeni, możemy wyznaczyć punkt w przestrzeni, w którym występuje superpozycja dwóch fal dźwiękowych, która jest równa:
+
+$$ y (t) = 2A \text{cos} (2\pi {f}_{\text{średnia}}t) \text{cos} (2\pi (\frac{ | {f}_{2} - {f}_{1} | }{2}) t), $$
+
+gdzie częstotliwość dudnień (ang. beat frequency) jest równa:
+
+$$ {f}_{\text{dudnienia}} = | {f}_{2} - {f}_{1} |. $$
+
+Dudnienia te mogą być pożyteczne dla stroicieli fortepianów. Widełki stroikowe są pobudzone do drgań, podobnie jak dźwięk na fortepianie. Gdy stroiciel dostraja struny fortepianu, słyszy dudnienia o malejącej częstotliwość wynikające z wyrównywania częstości struny z częstotliwością generowaną przez widełki stroikowe.
+
+
+Przykład 17.7
+
+
+Znajdź częstotliwość dudnień pomiędzy dwoma kamertonami
+
+Jaka jest częstotliwość dudnień, gdy dwa kamertony o częstotliwości 256 Hz i 512 Hz pobudzone są jednocześnie?
+
+
+Strategia rozwiązania
+
+Częstotliwość dudnień jest równa różnicy dwóch częstotliwości.
+
+
+Rozwiązanie
+
+Korzystamy z ${f}_{\text{dudnienia}} = | {f}_{2} - {f}_{1} |:$
+
+$$ | {f}_{2} - {f}_{1} | = 512 Hz - 256 Hz = 256 Hz. $$
+
+
+Znaczenie
+
+Częstotliwość dudnień jest modułem różnicy dwóch częstotliwości. Częstotliwość ujemna nie miałaby sensu.
+
+Badanie superpozycji różnych fal ma wiele interesujących zastosowań poza badaniami dźwięku. W dalszych rozdziałach omówimy właściwości falowe cząstek. Cząstki mogą być modelowane jako „pakiety falowe”, które wynikają z superpozycji różnych fal, a cząstka porusza się z „prędkością grupową” pakietu falowego.
+
+
+17.7 Efekt Dopplera
+
+Rejestrowana przez obserwatora zmiana częstotliwości sygnału zbliżającej się i oddalającej się karetki pogotowia albo hałasu wytwarzanego przez głośny motocykl są typowymi przykładami efektu Dopplera (ang. Doppler effect). Po pierwsze, głośność dźwięku wzrasta, kiedy karetka zbliża się, i maleje, gdy karetka się oddala. Częstotliwość dźwięku syreny, który dociera do ucha obserwatora, rośnie, gdy karetka się zbliża, i maleje, gdy karetka się oddala, także wtedy, gdy syrena generuje dźwięk o stałej częstotliwości. Zmiany są najbardziej odczuwalne, gdy karetka mija obserwatora. Im szybciej karetka się porusza, tym większa jest zmiana częstotliwości syreny. To charakterystyczne przesunięcie częstotliwości słyszymy również dla poruszających się samochodów, samolotów, pociągów.
+
+Efekt Dopplera jest to zmiana odbieranej częstotliwości dźwięku w wyniku ruchu źródła dźwięku lub obserwatora. Dla przykładu, jeśli jedziesz pociągiem i mijasz syrenę ostrzegawczą, wówczas usłyszysz przesunięcie częstotliwości tej syreny w stronę niższych częstotliwości. Zmiana częstotliwości spowodowana względnym ruchem źródła i obserwatora nazywa się przesunięciem Dopplera (ang. Doppler shift). Efekt Dopplera i przesunięcie Dopplera nazwano tak od nazwiska austriackiego fizyka i matematyka Christiana Andreasa Dopplera (1803–1853), który przeprowadzał eksperymenty z ruchomymi źródłami i obserwatorami. Doppler badał muzyków grających w otwartym pociągu, a także grających obok torów kolejowych, gdy pociąg przejeżdżał. Ich muzykę obserwowano zarówno w pociągu, jak i poza nim, mierząc przy tym zmiany częstotliwości.
+
+Co jest przyczyną przesunięcia Dopplera? Ilustracja 17.30 pokazuje fale dźwiękowe wygenerowane przez stacjonarne i poruszające się źródło dźwięku w nieruchomej masie powietrza. Każde zaburzenie rozchodzi się sferycznie od punktu, z którego zostało wyemitowane. Jeśli źródło jest nieruchome, to wszystkie powierzchnie sferyczne, które reprezentują punkty zagęszczeń powietrza, są współśrodkowe, a obserwatorzy stacjonarni znajdujący się po obu stronach słyszą dźwięk o takiej samej długości i częstotliwości fali, jaki został wyemitowany przez źródło (przypadek (a)). Jeśli źródło się porusza, sytuacja jest inna. Każde zaburzenie powietrza pochodzi z określonego punktu, z którego zostało wyemitowane, ale punkt ten przemieszcza się. Ruch punktu emisji powoduje, że powierzchnie fazowe są bliżej siebie przed punktem emisji i bardziej oddalone od siebie po drugiej stronie. W ten sposób długość fali jest krótsza w kierunku, w którym źródło się porusza (z prawej strony przypadku (b)) i dłuższa w kierunku przeciwnym (po lewej stronie przypadku (b)). Jeśli obserwator się porusza, jak to pokazano w przypadku (c), to częstotliwość rejestrowanych zmian ciśnienia powietrza także się zmienia. Obserwator poruszający się w kierunku źródła odbiera je z wyższą częstotliwością, a osoba, która oddala się od źródła, która oddala się – rejestruje niższą częstotliwość.
+
+Wiemy, że długość fali i częstotliwość związane są zależnością $v = f\lambda$, gdzie $v$ jest prędkością dźwięku. Dźwięk rozchodzi się w ośrodku i ma taką samą prędkość $v$, niezależnie od tego, czy źródło dźwięku się porusza, czy nie. Zatem $f$ pomnożone przez $\lambda$ jest stałe. Ponieważ obserwator z prawej strony z przypadku (b) odbiera falę o krótszej długości, jej częstotliwość jest wyższa. Podobnie obserwator z lewej strony odbiera falę o dłuższej długości, a zatem słyszy dźwięk o niższej częstotliwości. Taka sama sytuacja występuje w przypadku (c). Wyższą częstotliwość odbiera obserwator poruszający się w stronę źródła, a niższą obserwator oddalający się od źródła. W ogólnym przypadku względny ruch przybliżający źródło i obserwatora zwiększa odbieraną częstotliwość. Względny ruch oddalający obniża częstotliwość. Im większa względna prędkość, tym efekt większy.
+
+Efekt Dopplera występuje nie tylko dla dźwięku, ale dla każdej fali, w której występuje względny ruch pomiędzy obserwatorem a źródłem. Przesunięcia Dopplera występują na przykład na częstotliwościach akustycznych, optycznych i mechanicznych (falach wodnych). Przesunięcie Dopplera może być wykorzystane do wyznaczenia prędkości, np. w diagnostyce medycznej, gdy ultradźwięki odbijają się od krwi. Względne prędkości gwiazd i galaktyk są wyznaczane na podstawie przesunięcia częstotliwości światła odbitego od tych obiektów i mówią wiele na temat początków Wszechświata. Współczesna fizyka została wzbogacona obserwacjami wykorzystującymi przesunięcia Dopplera.
+
+
+Opis odbieranej częstotliwości na skutek przesunięcia Dopplera
+
+Rozważmy dwóch nieruchomych obserwatorów $X$ i $Y$ na Ilustracji 17.31, zlokalizowanych po obu stronach nieruchomego źródła dźwięku. Każdy obserwator słyszy taką samą częstotliwość, równą tej generowanej przez stacjonarne źródło.
+
+Rozważmy teraz nieruchomego obserwatora $X$ z ruchomym źródłem oddalającym się od obserwatora ze stałą prędkością ${v}_{\text{s}} < v$. Dla czasu $t = 0$ źródło emituje falę dźwiękową, zaznaczoną na czarno. Fala ta porusza się z prędkością $v$. Pozycję fali dźwiękowej dla każdego przedziału czasu ${T}_{\text{s}}$ pokazano liniami przerywanymi. Po jednym okresie źródło przesunęło się o $\text{Δ}x = {v}_{\text{s}}{T}_{\text{s}}$ i emituje drugą falę dźwiękową, która porusza się z prędkością dźwięku. Źródło kontynuuje swój ruch oraz emituje fale dźwiękowe, co pokazano przy pomocy okręgów 3 i 4. Zwróć uwagę, że gdy fale są wyemitowane ze źródła, posiadają centrum w miejscu powstania.
+
+Korzystając z faktu, że długość fali jest równa prędkości pomnożonej przez okres, a okres jest odwrotnością częstotliwości, możemy wyprowadzić wzór na obserwowaną częstotliwość:
+
+$$ \begin{matrix} {\lambda }_{\text{o}} & = & {\lambda }_{\text{s}} + \text{Δ} x \\ v {T}_{\text{o}} & = & v {T}_{\text{s}} + {v}_{\text{s}} {T}_{\text{s}} \\ \frac{v}{{f}_{\text{o}}} & = & \frac{v}{{f}_{\text{s}}} + \frac{{v}_{\text{s}}}{{f}_{\text{s}}} = \frac{v + {v}_{\text{s}}}{{f}_{\text{s}}} \\ {f}_{\text{o}} & = & {f}_{\text{s}} (\frac{v}{v + {v}_{\text{s}}}). \end{matrix} $$
+
+Gdy źródło oddala się od obserwatora, rejestrowana częstotliwość jest niższa niż częstotliwość sygnału wygenerowanego przez źródło.
+
+Rozważmy teraz poruszające się źródło ze stałą prędkością ${v}_{s}$ przemieszczające się w kierunku stacjonarnego obserwatora $Y$, co pokazano na Ilustracji 17.32. Długość fali rejestrowanej przez obserwatora $Y$ wynosi ${\lambda }_{\text{o}} = {\lambda }_{\text{s}} - \text{Δ}x = {\lambda }_{\text{s}} - {v}_{\text{s}}{T}_{\text{s}}.$ Wykorzystując fakt, że długość fali jest równa prędkości pomnożonej przez okres, a okres jest odwrotnością częstotliwości, możemy wyprowadzić zależność na odbieraną częstotliwość:
+
+$$ \begin{matrix} {\lambda }_{\text{o}} & = & {\lambda }_{\text{s}} - \text{Δ} x \\ v {T}_{\text{o}} & = & v {T}_{\text{s}} - {v}_{\text{s}} {T}_{\text{s}} \\ \frac{v}{{f}_{\text{o}}} & = & \frac{v}{{f}_{\text{s}}} - \frac{{v}_{\text{s}}}{{f}_{\text{s}}} = \frac{v - {v}_{\text{s}}}{{f}_{\text{s}}} \\ {f}_{\text{o}} & = & {f}_{\text{s}} (\frac{v}{v - {v}_{\text{s}}}). \end{matrix} $$
+
+Kiedy źródło się porusza i obserwator jest nieruchomy, rejestrowana przez niego częstotliwość jest równa:
+
+$$ {f}_{\text{o}} = {f}_{\text{s}} (\frac{v}{v \mp {v}_{\text{s}}}), $$
+
+gdzie ${f}_{\text{o}}$ jest częstotliwością rejestrowaną przez nieruchomego obserwatora, ${f}_{\text{s}}$ jest częstotliwością sygnału wygenerowanego przez poruszające się źródło, $v$ jest prędkością dźwięku, ${v}_{\text{s}}$ jest stałą prędkością, z jaką porusza się źródło dźwięku, znak minus oznacza źródło przybliżające się do obserwatora, a znak plus oddalające się od obserwatora.
+
+Co się dzieje, jeśli obserwator porusza się, a źródło jest nieruchome? Jeśli obserwator przesuwa się w kierunku źródła stacjonarnego, obserwowana częstotliwość jest większa niż częstotliwość źródła. Jeśli obserwator oddala się od źródła stacjonarnego, obserwowana częstotliwość jest niższa niż częstotliwość źródła. Rozważmy obserwatora $X$ na Ilustracji 17.33, który przemieszcza się w kierunku źródła stacjonarnego z prędkością ${v}_{\text{o}}$. Źródło emituje sygnał o stałej częstotliwości ${f}_{\text{s}}$ i stałym okresie ${T}_{\text{s}}.$ Obserwator słyszy pierwszą falę wyemitowaną przez źródło. Jeśli obserwator byłby nieruchomy, czas dla jednej długości fali dźwięku do przejścia powinien być równy okresowi źródła ${T}_{\text{s}}.$ Ponieważ obserwator porusza się w stronę źródła, czas na przebycie jednej długości fali jest mniejszy niż ${T}_{\text{s}}$ i wynosi ${T}_{\text{o}} = {T}_{\text{s}} - \text{Δ}t.$ Dla czasu $t = 0$ obserwator rozpoczyna ruch, spotykając czoło fali i poruszając się dalej w kierunku następnego czoła fali skraca czas jej spotkania. Długość fali obserwatora jest równa długości fali ze źródła, pomniejszonej przez dystans pokonany przez obserwatora. Stąd długość fali ze źródła jest równa odległości przebytej przez obserwatora plus odległość, jaką fala dźwiękowa przebyła do momentu spotkania z obserwatorem:
+
+$$ \begin{matrix} {\lambda }_{\text{s}} & = & v {T}_{\text{o}} + {v}_{\text{o}} {T}_{\text{o}} \\ v {T}_{\text{s}} & = & (v + {v}_{\text{o}}) {T}_{\text{o}} \\ v (\frac{1}{{f}_{\text{s}}}) & = & (v + {v}_{\text{o}}) (\frac{1}{{f}_{\text{o}}}) \\ {f}_{\text{o}} & = & {f}_{\text{s}} (\frac{v + {v}_{\text{o}}}{v}). \end{matrix} $$
+
+Jeśli obserwator oddala się od źródła, rejestrowana częstotliwość może być wyznaczona z:
+
+$$ \begin{matrix} {\lambda }_{\text{s}} & = & v {T}_{\text{o}} - {v}_{\text{o}} {T}_{\text{o}} \\ v {T}_{\text{s}} & = & (v - {v}_{\text{o}}) {T}_{\text{o}} \\ v (\frac{1}{{f}_{\text{s}}}) & = & (v - {v}_{\text{o}}) (\frac{1}{{f}_{\text{o}}}) \\ {f}_{\text{o}} & = & {f}_{\text{s}} (\frac{v - {v}_{\text{o}}}{v}). \end{matrix} $$
+
+Zależności dla obserwatora poruszającego się w kierunku nieruchomego źródła i oddalającego się od tego źródła mogą być połączone w jedno równanie:
+
+$$ {f}_{\text{o}} = {f}_{\text{s}} (\frac{v \pm {v}_{\text{o}}}{v}), $$
+
+gdzie ${f}_{\text{o}}$ jest odbieraną częstotliwością, ${f}_{\text{s}}$ jest częstotliwością źródłową, a ${v}_{ }$ jest prędkością dźwięku, a ${v}_{\text{o}}$ jest prędkością obserwatora. Znak dodatni dotyczy sytuacji, gdy obserwator przybliża się do źródła, a znak minus, gdy się oddala.
+
+Równanie 17.18 i Równanie 17.19 mogą być uogólnione jedną zależnością. Znak dodatni w liczniku dotyczy przypadku, gdy obserwator porusza się w stronę źródła itd., patrz Tabela 17.4:
+
+$$ {f}_{\text{o}} = {f}_{\text{s}} (\frac{v \pm {v}_{\text{o}}}{v \mp {v}_{\text{s}}}), $$
+
+gdzie ${f}_{o}$ jest rejestrowaną częstotliwością, ${f}_{s}$ jest częstotliwością źródłową, ${v}_{}$ jest prędkością dźwięku, ${v}_{o}$ oznacza prędkość obserwatora, ${v}_{s}$ jest prędkością źródła, znak plus oznacza przybliżanie się, a znak minus oddalanie.
+
+
+Przykład 17.8
+
+
+Obliczanie efektu Dopplera
+
+Załóżmy, że pociąg, który ma sygnał (klakson) o częstości 150 Hz, porusza się z prędkością 35,0 m/s w dzień, w którym prędkość dźwięku wynosi 340 m/s.
+
+Jaką częstotliwość odbiera osoba stojąca przy torach, gdy pociąg się zbliża i gdy się oddala?
+
+Jaką częstotliwość obserwuje inżynier podróżujący pociągiem?
+
+
+Strategia rozwiązania
+
+Aby wyznaczyć rejestrowaną częstotliwość dla przypadku (a), należy wykorzystać zależność ${f}_{o} = {f}_{s} v / \left(v \mp {v}_{s} \right)$, ponieważ źródło znajduje się w ruchu. Znak minus dotyczy zbliżającego się pociągu, a znak plus – oddalającego się pociągu. W przypadku (b) występują dwa przesunięcia Dopplera: jedno związane z poruszającym się źródłem, i drugie związane z poruszającym się obserwatorem.
+
+
+Rozwiązanie
+
+Podstaw znane wartości do wzoru ${f}_{o} = {f}_{s} v / \left(v \mp {v}_{s} \right)$:
+
+$$ {f}_{\text{o}} = {f}_{\text{s}} (\frac{v}{v - {v}_{\text{s}}}) = 150 Hz \cdot \frac{340 m \text{/} s}{340 m \text{/} s - 35,0 m \text{/} s}. $$
+
+Oblicz częstotliwość odbieraną przez nieruchomego obserwatora, gdy pociąg się zbliża:
+
+Wykorzystaj tą samą zależność ze znakiem plus, aby wyznaczyć częstotliwość rejestrowaną przez nieruchomego obserwatora dla przypadku, gdy pociąg się oddala:
+
+$$ {f}_{\text{o}} = {f}_{\text{s}} (\frac{v}{v + {v}_{\text{s}}}) = 150 Hz \cdot \frac{340 m \text{/} s}{340 m \text{/} s + 35,0 m \text{/} s}. $$
+
+Wydaje się, że inżynier pociągu usłyszy taką samą częstotliwość sygnału jak tę wyemitowaną przez klakson, ponieważ względne prędkości pomiędzy nimi wynoszą zero.
+
+Względem ośrodka (powietrze) prędkości wynoszą ${v}_{\text{s}} = {v}_{\text{o}} = 35,0 \text{m/s}\text{.}$
+
+Pierwsze przesunięcie Dopplera związane jest z poruszającym się obserwatorem, natomiast drugie z poruszającym się źródłem.
+
+$$ {f}_{\text{o}} = [{f}_{\text{s}} (\frac{v \pm {v}_{\text{o}}}{v})] (\frac{v}{v \mp {v}_{\text{s}}}). $$
+
+Wielkość w nawiasie kwadratowym przedstawia przesunięcie Dopplera związane z poruszającym się obserwatorem. Czynnik po prawej opisuje efekt związany z ruchem źródła. Ponieważ inżynier w pociągu porusza się w kierunku do klaksonu, musimy wykorzystać znak plus dla ${v}_{\text{o}}$, ale ponieważ klakson porusza się w kierunku przeciwnym (od inżyniera), wykorzystujemy również znak plus dla ${v}_{\text{s}}.$ Jednak pociąg przewozi zarówno inżyniera, jak i klakson z taką samą prędkością, tj. ${v}_{\text{s}} = {v}_{\text{o}}.$ W efekcie otrzymujemy ${f}_{\text{o}}$:
+
+
+Znaczenie
+
+Dla przypadku, gdy źródło i obserwator nie poruszają się razem, wyznaczone wartości są prawidłowe, gdy źródło (w tym przypadku pociąg) jest wystarczająco daleko, aby uznać, że ruch źródła i obserwatora odbywa się w linii łączącej źródło i obserwatora. W obu przypadkach przesunięcie jest znaczące i łatwo zauważalne. Zauważ, że przesunięcie wynosi 17 Hz dla ruchu zbliżającego i 14 Hz dla oddalającego się. Przesunięcia nie są więc symetryczne.
+
+W przypadku inżyniera jadącego w pociągu oczekujemy, że nie ma zmian częstotliwości, ponieważ źródło i obserwator poruszają się razem. Jest to zgodne z naszym doświadczeniem. Na przykład nie ma przesunięcia Dopplera w częstotliwości głosów w rozmowie między kierowcą a pasażerem na motocyklu. Ludzie rozmawiający, gdy wiatr przenosi powietrze między nimi, również nie obserwują przesunięcia Dopplera. Kluczowym momentem jest tutaj to, że źródło i obserwator nie poruszają się względem siebie nawzajem.
+
+Efekt Dopplera i przesunięcie Dopplera mają wiele ważnych zastosowań w nauce i inżynierii. Na przykład przesunięcie dopplerowskie w ultrasonografie może być wykorzystane do pomiaru prędkości krwi, a policja wykorzystuje przesunięcie Dopplera w radarze (mikrofale) do pomiaru prędkości samochodów. W meteorologii przesunięcie dopplerowskie służy do śledzenia ruchu chmur burzowych; taki „Radar Dopplerowski” może określić prędkość i kierunek deszczu lub śniegu we froncie pogodowym. W astronomii możemy zbadać światło emitowane przez odległe galaktyki i określić ich prędkość względem naszej. Kiedy galaktyki oddalają się od nas, widmo ich światła zostaje przesunięte w kierunku niższych częstotliwości, a więc zwiększa się długość fali – jest to tak zwane przesunięcie ku czerwieni (ang. red shift). Takie informacje z odległych galaktykach pozwoliły nam oszacować wiek Wszechświata (od Wielkiego Wybuchu) na około 14 miliardów lat.
+
+
+17.8 Fale uderzeniowe
+
+Omawiając efekt Dopplera ruchomego źródła i obserwatora stacjonarnego, rozważaliśmy tylko przypadki, w których źródło poruszało się z prędkością mniejszą od prędkości dźwięku. Przypomnijmy, że odbierana częstotliwość sygnału generowanego przez poruszające się w stronę obserwatora źródło wynosi ${f}_{o} = {f}_{s} v / \left(v - {v}_{s} \right)$. Gdy prędkość źródła dźwięku zbliża się do prędkości dźwięku, rejestrowana przez obserwatora częstotliwość wzrasta. Zgodnie ze wzorem, jeśli źródło porusza się z prędkością dźwięku, mianownik jest równy zero, co sugeruje, że odbierana częstotliwość jest nieskończona. Jeśli źródło porusza się z prędkością większą niż prędkość dźwięku, rejestrowana częstotliwość jest ujemna.
+
+Co to może oznaczać? Co się dzieje, gdy prędkość źródła zbliża się do prędkości dźwięku? Kiedyś niektórzy naukowcy uważali, że powstaje wtedy, na skutek konstruktywnej interferencji, fala dźwiękowa o tak dużych wartościach ciśnienia, że oznaczałoby to brak możliwości, aby samolot przekroczył prędkość dźwięku, ponieważ ciśnienie to wystarczyłoby do zniszczenia samolotu. Ale dziś samoloty zwykle latają z prędkością wyższą niż prędkość dźwięku. 28 lipca 1976 kapitan Eldon W. Joersz oraz major George T. Morgan przelecieli samolotem SR-71 Blackbird #61-7958 z prędkością 3529,60 km/h, czyli liczba Macha wynosiła 2,85. Liczba Macha (ang. Mach number) jest równa prędkości źródła podzielonej przez prędkość dźwięku:
+
+$$ M = \frac{{v}_{\text{s}}}{v}. $$
+
+Przekonasz się, że najbardziej interesujące zjawiska występują wtedy, gdy prędkość źródła zbliża się do prędkości dźwięku i ją przekracza.
+
+
+Efekt Dopplera i wysoka prędkość
+
+Co się dzieje z dźwiękiem wytwarzanym przez ruchome źródło, na przykład przez samolot odrzutowy, który zbliża się lub nawet przekracza prędkość dźwięku? Odpowiedź na to pytanie dotyczy nie tylko dźwięku, lecz także wszystkich innych fal. Załóżmy, że samolot odrzutowy zbliża się do ciebie, emitując dźwięk o częstotliwości ${f}_{\text{s}}.$ Im większa jest prędkość samolotu ${v}_{\text{s}},$ tym większe jest przesunięcie dopplerowskie i wyższa rejestrowana częstotliwość ${f}_{\text{o}}$.
+
+Gdy ${v}_{\text{s}}$ zbliża się do prędkości dźwięku, ${f}_{\text{o}}$ dąży do nieskończoności, ponieważ mianownik ${f}_{o} = {f}_{s} v / \left(v \mp {v}_{s} \right)$ dąży do zera. Dla prędkości dźwięku ten wynik oznacza, że każda kolejna fala oddziałuje z poprzednią, ponieważ źródło porusza się z prędkością dźwięku. Obserwator odbiera je wszystkie w tym samym momencie, więc częstotliwość jest nieskończona (diagram na Ilustracji 17.35 (c)).
+
+
+Fale uderzeniowe i uderzenia dźwiękowe
+
+Jeśli źródło porusza się z prędkością większą niż prędkość dźwięku, obserwator usłyszy dźwięk dopiero, gdy źródło go minie. Wtedy docierający z opóźnieniem dźwięk zbliżającego się źródła, miesza się z dźwiękiem generowanym przez oddalające się źródło. Na wskutek nałożenia się tych fal zachodzi ciekawe zjawisko – powstaje fala uderzeniowa.
+
+Konstruktywna interferencja fal dźwiękowych docierających równocześnie do linii pokazanych na rysunku (stożek w trzech wymiarach). Ta superpozycja tworzy zakłócenie zwane falą uderzeniową (ang. shock wave). Konstruktywna interferencja dźwięku występuje, gdy obiekt porusza się z prędkością większą niż prędkość dźwięku. Wewnątrz stożka występuje destruktywna interferencja, przez co natężenie dźwięku jest znacznie mniejsze niż na powierzchni fali uderzeniowej. Kąt fali uderzeniowej można znaleźć na podstawie geometrii zjawiska. W czasie $t$ źródło przesunęło się o ${v}_{\text{s}}t$, fala dźwiękowa przemieściła się z tego samego punktu na odległość $vt$, a kąt może być wyznaczony z zależności $\text{sin} \theta = \frac{vt}{{v}_{\text{s}}t} = \frac{v}{{v}_{\text{s}}}.$ Liczbę Macha definiuje się jako ${v}_{\text{s}} \text{/} v$, co oznacza, że sinus kąta jest odwrotnością liczby Macha,
+
+$$ \text{sin} \theta = \frac{v}{{v}_{\text{s}}} = \frac{1}{M}. $$
+
+Z pewnością słyszałeś określenie grom dźwiękowy (ang. sonic boom). Powszechnym i błędnym wyobrażeniem jest to, że grom dźwiękowy występuje, gdy samolot przekracza barierę dźwięku; tzn. przyspiesza do prędkości większej niż prędkość dźwięku. W rzeczywistości grom dźwiękowy występuje, gdy fala uderzeniowa dociera do powierzchni ziemi.
+
+Samolot tworzy dwie fale uderzeniowe, przednią i tylną. Podczas oglądania transmisji telewizyjnej z lądowań statków kosmicznych można było często usłyszeć dwa wyraźne huki. Były one odseparowane od siebie o czas potrzebny na dotarcie obu fal do określonego punktu. Obserwatorzy na ziemi często nie widzą samolotu tworzącego grom dźwiękowy, ponieważ znika on, zanim fala uderzeniowa dotrze do nich, co pokazano na rysunku. Jeśli samolot leci na niskiej wysokości, ciśnienie gromu dźwiękowego może być niszczące, może na przykład wybić szyby. Ze względu na niszczycielskie działanie gromu dźwiękowego loty samolotów ponaddźwiękowych są zabronione nad terenami zaludnionymi.
+
+Fale uderzeniowe są przykładem szerszego zjawiska nazywanego falami dziobowymi. Fala dziobowa (ang. bow wave), taka jaką pokazano na Ilustracji 17.38, tworzona jest, gdy źródło fali porusza się z większą prędkością niż prędkość fali. Fale wodne rozprzestrzeniają się w postaci kręgów od punktu, w którym się tworzą, a fala dziobowa ma kształt litery „V”, i podąża za źródłem. Bardziej skomplikowany kształt (łuk) tworzony jest, gdy cząstka elementarna przemieszcza się przez ośrodek szybciej niż prędkość światła w tym ośrodku. (W próżni maksymalna prędkość światła wynosi $c = 3,00 \cdot {10}^{8} m \text{/} s$ w wodzie prędkość światła jest bliska $0,75c$). Jeśli cząstka powoduje emisję światła podczas swojego ruchu, to światło rozprzestrzenia się w postaci stożka pod kątem zależnym od prędkość cząstki, jak pokazano na Ilustracji 17.39. Taką falę dziobową nazywa się promieniowaniem Czerenkowa (ang. Cherenkov radiation) i jest to zjawisko często obserwowane w fizyce cząstek elementarnych.

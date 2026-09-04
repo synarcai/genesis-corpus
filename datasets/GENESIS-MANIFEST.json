@@ -736,6 +736,31 @@
       "actors": []
     },
     {
+      "name": "rewrite",
+      "file": "datasets/genesis_rewrite.txt",
+      "genre": "REWRITING — one number written two ways. d5 named sixty-two starving collections of the organism, and `rewrite_facts` was among them: the corpus had no rewriting shows at all. It showed WHAT equals what and never that the SAME number can be written otherwise. The difference from an equality is thin and important: «5 + 5 = 10» speaks of a VALUE; «5 + 5 and 2 × 5 are the same» speaks of TWO WRITINGS of one value, that is, of the very possibility of rewriting. The first teaches counting, the second that a writing is not the thing but its NAME, and a thing has many names. Without the second an organism counts but does not transform. The refusal form is necessary too: without it the house would teach that any two writings are equal; it shows by RECOUNTING both what exactly makes them differ, and the court demands that a refusal name DIFFERENT values.",
+      "act": [
+        "compare",
+        "invert",
+        "recount",
+        "translate"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "reply",
       "file": "datasets/genesis_reply.txt",
       "genre": "REPLY — advice to the interlocutor RESTING ON A DECLARED LAW. The owner's order about «basic behavioural and psychological laws» was half closed: the behaviour house gives the LAW but not its APPLICATION TO THE PERSON SPEAKING. Here a person names their state and the answer is not sympathy without ground but advice with a checkable law behind it: «i am tired. what should i do? take a rest: when a person is tired, that person makes more mistakes.» The law is never rewritten here — it is quoted from the behaviour house, and the court reads it exactly so: it does not trust the house's own list but compares the tail of the line with the neighbour's declaration word for word. Advice under which a law of a DIFFERENT genus is placed is true in both halves and false as a whole — the same nature as a circular answer. The question head is chosen BY GENUS: tiredness, hunger and haste are asked WHAT TO DO (the state is fixable by action); fear, habit and missed attention are asked WHY (there is nothing to fix, there is something to understand). The sympathetic pair is declared for the NEIGHBOUR and never written as a show — see М-267.",
@@ -8562,6 +8587,84 @@
       "held_out": "shelf/es/openstax_quimica_es.holdout.txt",
       "судится": [],
       "автор": "Paul Flowers (University of North Carolina at Pembroke), Klaus Theopold (University of Delaware), Richard Langley (Stephen F. Austin State University), William R. Robinson; edición en español OpenStax 2022"
+    },
+    {
+      "name": "openstax_fizyka_1_pl",
+      "file": "shelf/pl/openstax_fizyka_1_pl.txt",
+      "genre": "Fizyka dla szkół wyższych, tom 1 (Mechanika, fale, akustyka) — OpenStax Poland (fundacja Katalyst Education); tłumacze i autorzy adaptacji nazwani w przedmowie (Adam Bednorz, Anna Błachowicz, Tomasz Błachowicz, Beata Bochentyn, Juliusz P. Braun, Bartosz Brzostowski i inni); original senior authors Samuel J. Ling, Jeff Sanny, William Moebs; OpenStax Poland 2017 под CC BY 4.0",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 1432109,
+      "tiers": [],
+      "text": "prose",
+      "тема": "естествознание",
+      "язык": "pl",
+      "плотность": "трактат",
+      "издано": 2017,
+      "источник": "free-license",
+      "происхождение": "openstax-archive:4eaa8f03-88a8-485a-a777-dd3602f6c13e@0cd082f, https://openstax.org/details/books/fizyka-dla-szkół-wyższych-tom-1 (CC BY 4.0)",
+      "судится": [],
+      "автор": "OpenStax Poland (fundacja Katalyst Education); tłumacze i autorzy adaptacji nazwani w przedmowie (Adam Bednorz, Anna Błachowicz, Tomasz Błachowicz, Beata Bochentyn, Juliusz P. Braun, Bartosz Brzostowski i inni); original senior authors Samuel J. Ling, Jeff Sanny, William Moebs",
+      "held_out": "shelf/pl/openstax_fizyka_1_pl.holdout.txt"
+    },
+    {
+      "name": "openstax_fizyka_2_pl",
+      "file": "shelf/pl/openstax_fizyka_2_pl.txt",
+      "genre": "Fizyka dla szkół wyższych, tom 2 (Termodynamika, elektryczność i magnetyzm) — OpenStax Poland (fundacja Katalyst Education); tłumacze i autorzy adaptacji nazwani w przedmowie; original senior authors Samuel J. Ling, Jeff Sanny, William Moebs; OpenStax Poland 2018 под CC BY 4.0",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 1140216,
+      "tiers": [],
+      "text": "prose",
+      "тема": "естествознание",
+      "язык": "pl",
+      "плотность": "трактат",
+      "издано": 2018,
+      "источник": "free-license",
+      "происхождение": "openstax-archive:16ab5b96-4598-45f9-993c-b8d78d82b0c6@0cd082f, https://openstax.org/details/books/fizyka-dla-szkół-wyższych-tom-2 (CC BY 4.0)",
+      "судится": [],
+      "автор": "OpenStax Poland (fundacja Katalyst Education); tłumacze i autorzy adaptacji nazwani w przedmowie; original senior authors Samuel J. Ling, Jeff Sanny, William Moebs",
+      "held_out": "shelf/pl/openstax_fizyka_2_pl.holdout.txt"
+    },
+    {
+      "name": "openstax_fizyka_3_pl",
+      "file": "shelf/pl/openstax_fizyka_3_pl.txt",
+      "genre": "Fizyka dla szkół wyższych, tom 3 (Optyka i fizyka współczesna) — OpenStax Poland (fundacja Katalyst Education); tłumacze i autorzy adaptacji nazwani w przedmowie; original senior authors Samuel J. Ling, Jeff Sanny, William Moebs; OpenStax Poland 2018 под CC BY 4.0",
+      "act": [
+        "expound"
+      ],
+      "oracle": [
+        "none"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 932523,
+      "tiers": [],
+      "text": "prose",
+      "тема": "естествознание",
+      "язык": "pl",
+      "плотность": "трактат",
+      "издано": 2018,
+      "источник": "free-license",
+      "происхождение": "openstax-archive:bb62933e-f20a-4ffc-90aa-97b36c296c3e@0cd082f, https://openstax.org/details/books/fizyka-dla-szkół-wyższych-tom-3 (CC BY 4.0)",
+      "судится": [],
+      "автор": "OpenStax Poland (fundacja Katalyst Education); tłumacze i autorzy adaptacji nazwani w przedmowie; original senior authors Samuel J. Ling, Jeff Sanny, William Moebs",
+      "held_out": "shelf/pl/openstax_fizyka_3_pl.holdout.txt"
     }
   ]
 }

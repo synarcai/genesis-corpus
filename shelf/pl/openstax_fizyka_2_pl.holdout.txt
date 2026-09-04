@@ -1,0 +1,514 @@
+Przeanalizujmy najpierw, co prawo Gaussa dla pól elektrycznych mówi na temat kierunku rozchodzenia się fal elektromagnetycznych. Tworzymy powierzchnię Gaussa w postaci prostopadłościanu, którego przekrój poprzeczny jest prostokątem o bokach $l$ i $\Delta x$, tak jak na Ilustracji 16.6. Ponieważ składowa $y$ natężenia pola elektrycznego jest taka sama zarówno na górnej podstawie (oznaczonej jako Ściana 2), jak i na dolnej podstawie (oznaczonej jako Ściana 1) prostopadłościennej powierzchni Gaussa, wkłady od tych powierzchni do strumienia elektrycznego wzajemnie się znoszą. Powyższy argument jest też prawdziwy dla sumarycznego strumienia od składowej $z$ przez Ścianę 3 i Ścianę 4. Tym samym każdy niezerowy strumień elektryczny przechodzący przez powierzchnię Gaussa musi pochodzić od składowej $x$ natężenia pola elektrycznego. Ponieważ pole elektryczne nie jest w ogóle zależne od wartości $y$ i $z$, to ${E}_{x} \left(x, t \right)$ jest stałe na całej ścianie frontowej o polu powierzchni $A$. Wartość natężenia pola elektrycznego na przeciwległej ścianie będzie więc też stała na całej jej powierzchni i wynosiła będzie ${E}_{x} \left(x + \Delta x, t \right)$. Stosujemy prawo Gaussa
+
+$$ {\Phi }_{E} = - {E}_{x} \left(x, t \right) A + {E}_{x} \left(x + \Delta x, t \right) A = \frac{q}{{\epsilon }_{0}} \text{,} $$
+
+gdzie $A = l \cdot l$ jest powierzchnią ściany frontowej i ściany tylnej prostopadłościennej powierzchni Gaussa. Ładunek zamknięty wewnątrz tej powierzchni wynosi $q = 0 C$, więc strumień elektryczny tej składowej również wynosi 0, a z Równania 16.13 wynika, że ${E}_{x} \left(x, t \right) = {E}_{x} \left(x + \Delta x, t \right)$ dla każdego $\Delta x$. Tym samym, jeśli składowa $x$ pola elektrycznego jest różna od zera, to nie może ona być zależna od $x$. Jednorodne pole takiego rodzaju może być jedynie sztucznie dodane do biegnącej fali, na przykład gdy biegnie ona pomiędzy dwiema płaskorównoległymi, naładowanymi płytkami metalowymi. Taka składowa ${E}_{x} \left(x, t \right)$ nie byłaby częścią fali elektromagnetycznej biegnącej wzdłuż osi $x$, więc ${E}_{x} \left(x, t \right) = 0 V ∕ m$ dla tej fali. Oznacza to, że jedyne niezerowe składowe pola elektrycznego fali elektromagnetycznej to ${E}_{y} \left(x, t \right)$ i ${E}_{z} \left(x, t \right)$, prostopadłe do kierunku rozchodzenia się fali i siebie nawzajem.
+
+Argument ten jest też prawdziwy dla pola magnetycznego po zmianie $E$ na $B$ i zastosowaniu prawa Gaussa dla pola magnetycznego. Pokazuje to, że pole magnetyczne jest również prostopadłe do kierunku rozchodzenia się fali. Fala elektromagnetyczna jest tym samym falą poprzeczną z polem elektrycznym i magnetycznym, które oscylują prostopadle do kierunku rozchodzenia się fali.
+
+
+Prędkość rozchodzenia się fali elektromagnetycznej
+
+Możemy teraz zastosować równania Maxwella do rozważań dotyczących Ilustracji 16.4 z poprzedniego podrozdziału, aby otrzymać równanie opisujące zależność pola $E$ od zmiennego pola $B$ i równanie opisujące zależność pola $B$ od zmiennego pola $E$. Następnie połączyć te dwie zależności, by pokazać, jak pola $E$ i $B$ rozchodzą się w próżni z prędkością dokładnie odpowiadającą prędkości światła.
+
+Na początek stosujemy prawo Faradaya dla Ściany 3 powierzchni Gaussa, stosując metodę przedstawioną na Ilustracji 16.7. Ponieważ ${E}_{x} \left(x, t \right) = 0 V ∕ m$, to
+
+$$ \oint \vec{E} \cdot d \vec{s} = - {E}_{y} \left(x, t \right) l + {E}_{y} \left(x + \Delta x, t \right) l \text{.} $$
+
+Zakładając, że $\Delta x$ jest małe i podstawiając za ${E}_{y} \left(x + \Delta x, t \right)$
+
+$$ {E}_{y} \left(x + \Delta x, t \right) = {E}_{y} \left(x, t \right) + \frac{ \partial {E}_{y} \left(x, t \right)}{ \partial x} \Delta x \text{,} $$
+
+otrzymujemy
+
+$$ \oint \vec{E} \cdot d \vec{s} = \frac{ \partial {E}_{y} \left(x, t \right)}{ \partial x} \cdot l \Delta x \text{.} $$
+
+Ponieważ $\Delta x$ jest małe, strumień magnetyczny przenikający przez Ścianę 3 można przybliżyć, używając wartości pola $B$ na środku tej ściany, która wynosi ${B}_{z} \left(x + \Delta x ∕ 2, t \right)$. Strumień pola $B$ przez Ścianę 3 jest tym samym równy wartości pola $B$ pomnożonej przez jej powierzchnię
+
+$$ \underset{S}{ ∯ }\vec{B} \cdot \vec{n} d A = {B}_{z} \left(x + \frac{ \Delta x}{2}, t \right) l \Delta x \text{.} $$
+
+Z prawa Faradaya
+
+$$ \oint \vec{E} \cdot d \vec{s} = - \frac{\text{d}}{ d t} \iint_{S}\vec{B} \cdot \vec{n} d A \text{.} $$
+
+Z Równania 16.13 i Równania 16.14 otrzymujemy
+
+$$ ∂ E y ⁡ x t ∂ x ⁢ l ⁢ Δ x = − ∂ ∂ t ⁢ B z ⁡ x + Δ x 2 t ⁢ l ⁢ Δ x ⁢. $$
+
+Obustronnie redukując czynnik $l \Delta x$ i obliczając wartość wyrażenia w granicy $\Delta x = 0$, otrzymujemy wyrażenie
+
+$$ \frac{ \partial {E}_{y} \left(x, t \right)}{ \partial x} = - \frac{ \partial {B}_{z} \left(x, t \right)}{ \partial t} \text{.} $$
+
+Mogliśmy zastosować prawo Faradaya do Ściany 2 zamiast Ściany 3 z Ilustracji 16.7, aby otrzymać równanie
+
+$$ \frac{ \partial {E}_{z} \left(x, t \right)}{ \partial x} = - \frac{ \partial {B}_{y} \left(x, t \right)}{ \partial t} \text{.} $$
+
+Powyższe równania opisują przestrzenną zależność pola $E$ od wytwarzającego je zmiennego w czasie pola $B$.
+
+Kolejno stosujemy prawo Maxwella-Ampère’a (przy $i = 0 A$) dla tych samych ścian (Ściany 3 i Ściany 2) prostopadłościanu z Ilustracji 16.7. Używając Równania 16.10
+
+$$ \oint \vec{B} \cdot d \vec{s} = {\mu }_{0} {\epsilon }_{0} \frac{\text{d}}{ d t} \iint_{S}\vec{E} \cdot \vec{n} d s $$
+
+do Ściany 3, a następnie do Ściany 2, otrzymujemy dwa równania
+
+$$ \frac{ \partial {B}_{y} \left(x, t \right)}{ \partial x} = - {\epsilon }_{0} {\mu }_{0} \frac{ \partial {E}_{z} \left(x, t \right)}{ \partial t} \text{,} $$
+
+$$ \frac{ \partial {B}_{z} \left(x, t \right)}{ \partial x} = - {\epsilon }_{0} {\mu }_{0} \frac{ \partial {E}_{y} \left(x, t \right)}{ \partial t} \text{.} $$
+
+Te równania opisują przestrzenną zależność pola $B$, wytwarzanego przez zmienne w czasie pole $E$.
+
+Następnie łączymy równania opisujące zmienne pole $B$ wytwarzające pole $E$ z równaniami opisującymi zmienne pole $E$ wytwarzające pole $B$. Różniczkując obustronnie Równanie 16.16 względem zmiennej $x$ i podstawiając do niego Równanie 16.26, otrzymujemy
+
+$$ ∂ 2 E y ∂ x 2 = ∂ ∂ x ∂ E y ∂ x = − ∂ ∂ x ∂ B z ∂ t = − ∂ ∂ t ∂ B z ∂ x = ∂ ∂ t ε 0 ⁢ μ 0 ⁢ ∂ E y ∂ t $$
+
+albo
+
+$$ \frac{{ \partial }^{2}{E}_{y}}{ \partial {x}^{2}} = {\epsilon }_{0} {\mu }_{0} \frac{{ \partial }^{2}{E}_{y}}{ \partial {t}^{2}} \text{.} $$
+
+Powyższy wzór jest postacią ogólną równania falowego dla naszej fali jednowymiarowej. Ponieważ fala ta biegnie z pewną niezdefiniowaną prędkością $c$, można założyć, że składowe pól są funkcjami $x - c t$ dla fal biegnących w kierunku dodatnich wartości osi $x$. Oznacza to, że
+
+$$ {E}_{y} \left(x, t \right) = f \left(x - c t \right) \text{.} $$
+
+Wykazanie, że Równanie 16.17 i Równanie 16.18 implikują równość
+
+$$ 1 = {\epsilon }_{0} {\mu }_{0} {c}^{2} $$
+
+pozostawiamy czytelnikowi jako ćwiczenie matematyczne z wykorzystaniem wzoru na pochodną funkcji złożonej.
+
+Prędkość rozchodzenia się fali elektromagnetycznej w próżni jest zatem wyrażona przez przenikalność elektryczną i magnetyczną próżni
+
+$$ c = \frac{1}{\sqrt{{\epsilon }_{0} {\mu }_{0}}} \text{.} $$
+
+W analogiczny sposób mogliśmy założyć falę elektromagnetyczną o składowych polach ${E}_{z} \left(x, t \right)$ i ${B}_{y} \left(x, t \right)$. Te same rozważania, jedynie z użyciem Równania 16.25 i Równania 16.24, również pokazałyby, że prędkość rozchodzenia się fali elektromagnetycznej musi wynosić $c = 1 ∕ \sqrt{{\epsilon }_{0} {\mu }_{0}}$.
+
+Zagadnienie rozchodzenia się fal elektromagnetycznych zostało opublikowane przez Maxwella w roku 1873. Pokazał on w sposób znacznie bardziej ogólny niż powyższe rozważania, że fale elektromagnetyczne zawsze poruszają się w próżni z prędkością opisaną Równaniem 16.18. Jeśli wyznaczymy wartość liczbową prędkości $c$, otrzymamy
+
+$$ c = \frac{1}{\sqrt{8,85 \cdot {10}^{ - 12} {C}^{2} ∕ \left(N {m}^{2} \right) \cdot 4 \pi \cdot {10}^{ - 7} T \cdot m ∕ A}} = 3 \cdot {10}^{8} m ∕ s \text{,} $$
+
+co jest równe prędkości światła (ang. speed of light). Wyobraźmy sobie, jak bardzo podekscytowany musiał być Maxwell, gdy wyprowadził to równanie! Odkrył on powiązanie pomiędzy dwoma, zdawałoby się niezwiązanymi ze sobą, zjawiskami: falami elektromagnetycznymi i światłem.
+
+
+Jak powiązane są ze sobą pola $E$ i $B$
+
+Do tej pory zaobserwowaliśmy, że tempa zmian poszczególnych komponentów pól $E$ i $B$ są ze sobą powiązane, że fale elektromagnetyczne są falami poprzecznymi i że rozchodzą się z prędkością $c$. Pokażemy teraz, co równania Maxwella mówią o stosunku wartości pól $E$ i $B$ i o ich wzajemnych kierunkach.
+
+Rozważmy rozwiązania Równania 16.16 w postaci fal płaskich dla pola elektrycznego
+
+$$ {E}_{y} \left(x, t \right) = {E}_{0} cos \left(k x - \omega t \right) \text{.} $$
+
+Dobraliśmy układ współrzędnych tak, by fala zawsze biegła w kierunku dodatnich wartości osi $x$, a czynnik fazowy tak, by maksymalne natężenie pola występowało w czasie $t = 0 s$. Usprawiedliwieniem rozważania jedynie fal sinusoidalnych i cosinusoidalnych i rozciągania wyników tych rozważań na przypadki ogólne jest twierdzenie Fouriera mówiące, że każdą falę, nawet prostopadłą funkcję schodkową, da się przedstawić jako superpozycję funkcji sinus i cosinus.
+
+W dowolnym punkcie przestrzeni pole $E$ oscyluje sinusoidalnie z częstością kołową $\omega$ pomiędzy wartościami $+ {E}_{0}$ i $- {E}_{0}$ i – analogicznie – pole $B$ oscyluje sinusoidalnie z częstością kołową $\omega$ pomiędzy wartościami $+ {B}_{0}$ i $- {B}_{0}$. Amplitudą fali jest maksymalna wartość ${E}_{y} \left(x, t \right)$. Okresem oscylacji $T$ jest czas potrzebny na pojedynczą pełną oscylację. Częstotliwość $f$ jest liczbą oscylacji w jednostce czasu i jest powiązana z częstością kołową $\omega$ wyrażeniem $\omega = 2 \pi f$. Długość fali $\lambda$ to odległość pomiędzy dwoma kolejnymi ekstremami na wykresie oscylacji, a liczba falowa $k$ to liczba długości fali przypadających na odcinek o długości $2 \pi$, przy czym długość tego odcinka wyraża się w jednostkach odpowiadających długości fali. Wszystkie te wartości powiązane są ze sobą w taki sam sposób, jak w przypadku fal mechanicznych
+
+$$ \omega = 2 \pi f \text{,} f = \frac{1}{T} \text{,} k = \frac{2 \pi }{\lambda } \text{,} c = f \lambda = \frac{\omega }{k} \text{.} $$
+
+Wiedząc, że rozwiązanie dla ${E}_{y}$ ma postać jak w Równaniu 16.20, możemy ustalić wyrażenie na pole $B$ odpowiadające tej składowej. Z Równania 16.24 składowa indukcji magnetycznej ${B}_{z}$ musi spełniać warunki
+
+$$ ∂ B z ∂ t = − ∂ E y ∂ x ⁢, ∂ B z ∂ t = − ∂ ∂ x ⁢ E 0 ⁢ cos k ⁢ x − ω ⁢ t = k ⁢ E 0 ⁢ sin k ⁢ x − ω ⁢ t ⁢. $$
+
+Pole magnetyczne rozchodzi się z prędkością $c$ w kierunku dodatniej półosi $x$, podobnie jak pole elektryczne. Zatem wartość $B$ musi być funkcją $k \left(x - c t \right) = k x - \omega t$. Tym samym dochodzimy, używając Równania 16.21, do tego, że ${B}_{z}$ wynosi
+
+$$ {B}_{z} \left(x, t \right) = \frac{k}{\omega } {E}_{0} cos \left(k x - \omega t \right) = \frac{1}{c} {E}_{0} cos \left(k x - \omega t \right) \text{.} $$
+
+Wynik ten można też zapisać w postaci
+
+$$ E y ⁡ x t = E 0 ⁢ cos k ⁢ x − ω ⁢ t ⁢, B z ⁢ x t = B 0 ⁢ cos k ⁢ x − ω ⁢ t ⁢, $$
+
+$$ \frac{{E}_{y}}{{B}_{z}} = \frac{{E}_{0}}{{B}_{0}} = c \text{.} $$
+
+Oznacza to, że maksima wartości natężenia pól $E$ i $B$ występują w tych samych chwilach i położeniach, a ich wartości zawsze pozostają w stałym stosunku do siebie, równym $c$. Fala płaska ma postać przedstawioną na Ilustracji 16.8.
+
+
+Przykład 16.2
+
+
+Wyznaczanie wartości indukcji $B$ pola magnetycznego fali elektromagnetycznej
+
+Jaka jest maksymalna wartość indukcji pola magnetycznego fali elektromagnetycznej, dla której maksymalne natężenie pola elektrycznego ma wartość $1000 V ∕ m$?
+
+
+Strategia rozwiązania
+
+Aby znaleźć wartość $B$, musimy przekształcić Równanie 16.23 względem ${B}_{0}$
+
+$$ B = \frac{E}{c} \text{.} $$
+
+
+Rozwiązanie
+
+W treści zadania dana została wartość ${E}_{0}$, a $c$ jest prędkością światła. Podstawiając te wartości pod wyrażenie na ${B}_{0}$, otrzymujemy
+
+$$ B = \frac{1000 V ∕ m}{3 \cdot {10}^{8} m ∕ s} = 3,33 \cdot {10}^{ - 6} T \text{.} $$
+
+
+Znaczenie
+
+Wartość indukcji magnetycznej $B$ jest mniejsza niż jedna dziesiąta natężenia względnie słabego pola magnetycznego Ziemi. Oznacza to, że stosunkowo silnemu polu elektrycznemu towarzyszy stosunkowo słabe pole magnetyczne.
+
+Zmienne pola elektryczne generują stosunkowo słabe pola magnetyczne. Połączone pola elektryczne i magnetyczne można wykryć w postaci fal elektromagnetycznych, jednak wymaga to wykorzystania zjawiska rezonansu, tak jak zrobił to Hertz. Obwód z taką samą naturalną częstotliwością rezonansową co fala elektromagnetyczna może zostać zmuszony do oscylacji. Każde radio i antena telewizyjna wykorzystują tę zasadę do odbierania i wzmacniania słabych fal elektromagnetycznych, jednocześnie ignorując wszystkie fale o częstotliwości innej od częstotliwości rezonansowych odbiorników.
+
+
+Wytwarzanie i wykrywanie fal elektromagnetycznych
+
+Przepływ stałego prądu elektrycznego wytwarza pole magnetyczne, które jest niezmienne w czasie i które nie rozprzestrzenia się dalej pod postacią fali. Jednak przyspieszające ładunki wytwarzają fale elektromagnetyczne. Ładunek elektryczny oscylujący w górę i w dół, prąd przemienny, czyli przepływ ładunku w przewodniku okresowo, na przemian w obu kierunkach, wytwarzają fale elektromagnetyczne o częstotliwości ich oscylacji. Pole elektromagnetyczne wokół anteny dipolowej (ang. dipole antenna) zostało pokazane na Ilustracji 16.9. Nadajnik, który tu odgrywa rolę źródła energii, zmienia na przemian naładowanie dwóch połączonych z nim przewodników. Ciągle zmieniający się kierunek przepływu prądu przyspiesza ładunki w antenie, a to z kolei powoduje pojawienie się oscylującego pola elektrycznego w sąsiedztwie anteny. Zmienne pole elektryczne indukuje zmienne pole magnetyczne, które z kolei indukuje zmienne pole elektryczne, co w efekcie daje rozchodzącą się falę elektromagnetyczną. Częstotliwość tego promieniowania jest identyczna z częstotliwością źródła napięcia zmiennego, które przyspiesza ładunki w antenie. Oba przewodzące elementy anteny dipolowej są bardzo często zwykłymi, prostymi przewodami. Całkowita długość tych dwóch elementów jest zazwyczaj równa połowie długości fali, którą chcemy wyemitować (stąd też często stosowana nazwa alternatywna – antena półfalowa (ang. half-wave antenna)). Pozwala to na wytworzenie się w antenie fal stojących, co dodatkowo zwiększa wydajność emisji fal.
+
+Na Ilustracji 16.9 przedstawiono linie pola elektrycznego na płaszczyźnie przekroju poprzecznego. Pole magnetyczne jest prostopadłe do tej płaszczyzny. To pole elektromagnetyczne charakteryzuje się symetrią cylindryczną, z osią symetrii zgodną z osią dipola. Nie narysowano też linii pola blisko dipola, w celu większej przejrzystości. Warto też zauważyć, że wzór układający się z linii pola nie jest wcale jednakowy we wszystkich kierunkach. Najsilniejszy sygnał występuje w kierunku prostopadłym do osi anteny, podczas gdy w kierunku zgodnym z osią anteny sygnał jest zerowy. Sygnał wykrywany w dużej odległości od anteny pochodzi z pól elektrycznych i magnetycznych, indukujących się wzajemnie i rozchodzących się pod postacią fali elektromagnetycznej. W bardzo dużej odległości od anteny powierzchnie falowe (zbiory punktów o jednakowej fazie) fali elektromagnetycznej są prawie idealnie sferyczne. W jeszcze większych odległościach promieniowanie rozprzestrzenia się jak elektromagnetyczna fala płaska.
+
+Fale elektromagnetyczne unoszą energię ze źródła, zupełnie jak fale dźwiękowe unoszą energię z fali stojącej, wytworzonej na strunie gitarowej. Antena odbierająca sygnały elektromagnetyczne działa na odwrót. Rozprzestrzeniające się fale elektromagnetyczne natrafiają na antenę i indukują w niej prąd zmienny o częstotliwości zgodnej z częstotliwością fali elektromagnetycznej. Dzięki wzmacniaczowi selektywnemu układ wzbudza się jedynie dla dostrojonej częstotliwości rezonansowej, a pozostałe częstotliwości odrzuca. Elementy elektroniczne następnie wzmacniają sygnał wygenerowany przez poruszające się elektrony, a dalej konwertują go na sygnał audio i/lub wideo.
+
+
+16.3 Energia niesiona przez fale elektromagnetyczne
+
+Każdy, kto używał kiedykolwiek kuchenki mikrofalowej, wie, że fala elektromagnetyczna przenosi energię. Niekiedy jest to tak oczywiste, że nawet się nad tym nie zastanawiamy – jak w przypadku promieni słonecznych w gorący, lipcowy dzień. Czasami fala elektromagnetyczna przyjmuje bardziej subtelne formy – jak niewyczuwalna energia promieni gamma, które niszczą żywe komórki.
+
+Fale elektromagnetyczne dostarczają energię przez pola – elektryczne i magnetyczne. Pola te mogą wytwarzać siły i poruszać ładunkami w układzie, a w ten sposób wykonywać w tym układzie pracę. Jednak fala elektromagnetyczna niesie w sobie energię bez względu na to, czy została ona pochłonięta, czy też nie. Po wytworzeniu fala unosi ze sobą energię ze źródła. Jeśli część energii zostanie gdzieś pochłonięta, natężenia oscylujących pól maleją, a pozostała energia przenoszona jest dalej.
+
+Oczywistym jest, że im silniejsze są indukowane pola elektryczne i magnetyczne, tym większą pracę mogą one wykonać i tym większą energię niesie fala elektromagnetyczna. Dla takiej fali amplituda jest maksymalnym natężeniem pola elektrycznego lub magnetycznego. Energia fali jest więc ściśle zależna od amplitudy.
+
+W przypadku fali płaskiej, biegnącej w kierunku dodatnich wartości osi $x$ z fazą dobraną tak, by maksymalne natężenie pola w początku układu współrzędnych przypadało na czas $t = 0 ⁢ s$, pola elektryczne i magnetyczne muszą podlegać zależnościom
+
+$$ \begin{matrix} {E}_{y} \left(x, t \right) = {E}_{0} cos \left(k x - \omega t \right) \text{,} \\ {B}_{z} \left(x, t \right) = {B}_{0} cos \left(k x - \omega t \right) \text{.} \end{matrix} $$
+
+Energia fali elektromagnetycznej w dowolnej chwili jest sumą energii pól elektrycznego i magnetycznego, a energia przypadająca na jednostkę objętości, nazywana też gęstością energii $u$, jest sumą gęstości energii pochodzących od pola elektrycznego i pola magnetycznego. Wyrażenia opisujące gęstość energii obu pól zostały wyprowadzone wcześniej (${u}_{E}$ w Pojemność elektryczna i ${u}_{B}$ w Indukcyjność). Dodając te dwa wyrażenia, otrzymujemy
+
+$$ u \left(x, t \right) = {u}_{E} + {u}_{B} = \frac{1}{2} {\epsilon }_{0} {E}^{2} + \frac{1}{2 {\mu }_{0}} {B}^{2} \text{.} $$
+
+Równanie $E = c B = {\left({\epsilon }_{0} {\mu }_{0} \right)}^{ - 1 ∕ 2} B$ pokazuje też, że gęstość energii pola magnetycznego ${u}_{B}$ i gęstość energii pola elektrycznego ${u}_{E}$ są sobie równe, mimo że zmienne pole elektryczne generuje słabe pole magnetyczne. Ta równość gęstości energii obu pól prowadzi do równania
+
+$$ u \left(x, t \right) = {\epsilon }_{0} {E}^{2} = \frac{{B}^{2}}{{\mu }_{0}} \text{.} $$
+
+Gęstość energii przemieszcza się wraz z przemieszczającymi się polami elektrycznym i magnetycznym.
+
+Szybkość transportu energii możemy ustalić poprzez rozważenie małego odcinka czasu $\Delta t$. Jak pokazano na Ilustracji 16.11, energia w objętości cylindra o długości $c \Delta t$ i polu przekroju poprzecznego $A$ przenika przez płaszczyznę poprzeczną w czasie $\Delta t$.
+
+Energia przenikająca przez powierzchnię $A$ w czasie $\Delta t$ wynosi
+
+$$ u \cdot \text{objętość} = u A c \Delta t \text{.} $$
+
+Energia przypadająca na jednostkę powierzchni i jednostkę czasu, przechodząca przez płaszczyznę prostopadłą do kierunku rozchodzenia się fali, nazywana gęstością strumienia energii (ang. energy flux) i zapisywana jako $S$, może zostać obliczona przez podzielenie energii przez pole powierzchni $A$ i czas $\Delta t$
+
+$$ S = \frac{\text{energia przenikająca przez powierzchnię} A \text{w czasie} \Delta t}{A \Delta t} = u c = {\epsilon }_{0} c {E}^{2} = \frac{1}{{\mu }_{0}} E B \text{.} $$
+
+W bardziej ogólnym ujęciu gęstość strumienia energii przez dowolną powierzchnię zależy też od orientacji tej powierzchni. Aby uwzględnić tę orientację, wprowadza się wektor $\vec{S}$, nazywany wektorem Poyntinga (ang. Poynting vector), zdefiniowany jako
+
+$$ \vec{S} = \frac{1}{{\mu }_{0}} \vec{E} \times \vec{B} \text{.} $$
+
+Wynik mnożenia wektorowego wektorów $\vec{E}$ i $\vec{B}$ jest również wektorem o kierunku prostopadłym do obu mnożników. Aby potwierdzić, że kierunek ten jest zgodny z kierunkiem rozchodzenia się, a nie jemu przeciwny, wróćmy do Ilustracji 16.7. Zwróćmy uwagę, że reguła Lenza i prawo Faradaya powodują, że dla rosnącego w czasie pola magnetycznego pole elektryczne musi być silniejsze w $x$ niż w $x + \Delta x$. W tym punkcie i tej chwili natężenie pola elektrycznego maleje więc ze wzrostem $x$. Proporcjonalność pomiędzy wartościami wektorów $\vec{E}$ i $\vec{B}$ wymusza, by natężenie pola elektrycznego rosło w czasie wraz z wartością indukcji pola magnetycznego. Jest to możliwe wtedy i tylko wtedy, gdy fala rozchodzi się w prawą stronę diagramu, co z kolei implikuje, że wektor wynikowy $\vec{S} = \vec{E} \times \vec{B} ∕ {\mu }_{0}$ ma dokładnie ten sam kierunek i zwrot co kierunek rozchodzenia się fali elektromagnetycznej.
+
+Gęstość strumienia energii jest zależny od czasu, co można zobaczyć przez podstawienie $u$ z Równania 16.23 do Równania 16.27
+
+$$ S ⁡ x t = c ⁢ ε 0 ⁢ E 0 2 ⁢ cos 2 k ⁢ x − ω ⁢ t ⁢. $$
+
+Ponieważ częstotliwość światła widzialnego jest bardzo wysoka, rzędu ${10}^{14} \mathrm{Hz}$, gęstość strumienia energii dla światła widzialnego przenikający dowolną powierzchnię jest szybkozmienną funkcją czasu. Przez to niemal wszystkie urządzenia pomiarowe, włączając w to ludzkie oczy, są w stanie wykryć jedynie wartość uśrednioną po czasie. Taka średnia wartość gęstości strumienia energii to natężenie $I$ energii elektromagnetycznej i jest ona równoważna mocy przypadającej na jednostkę powierzchni. Można ją wyliczyć przez uśrednienie funkcji cosinus w Równaniu 16.29 po jednym pełnym cyklu
+
+$$ I = S śr = c ⁢ ε 0 ⁢ E 0 2 ⁢ 1 T ⁢ ∫ 0 T cos 2 2 ⁢ π ⁢ t T ⁢ d t ⁢. $$
+
+Możemy albo obliczyć wartość powyższej całki, albo zauważyć, że sinus i cosinus różnią się jedynie przesunięciem w fazie, przez co średnia po pojedynczej oscylacji dla $cos 2 x$ będzie taka sama jak dla $sin 2 x$. Wtedy otrzymujemy
+
+$$ 〈 {\text{cos}}^{2}x 〉 = \frac{1}{2} [〈 {\text{cos}}^{2}x 〉 + 〈 {\text{sin}}^{2}x 〉] = \frac{1}{2} 〈 1 〉 = \frac{1}{2}, $$
+
+gdzie nawiasy ostre $〈 \text{⋯} 〉$ oznaczają operację uśredniania po czasie. Zatem natężenie światła, biegnącego z prędkością $c$ przez próżnię, będzie wynosić
+
+$$ I = {S}_{\text{śr}} = \frac{1}{2} c {\epsilon }_{0} {E}_{0}^{2} \text{.} $$
+
+Jest ono wyrażone przez amplitudę natężenia pola elektrycznego ${E}_{0}$. Przekształcenia algebraiczne dają też zależność
+
+$$ I = \frac{c{B}_{0}^{2}}{2{\mu }_{0}}, $$
+
+gdzie ${B}_{0}$ jest amplitudą indukcji magnetycznej. Pomocne jest jeszcze jedno wyrażenie na ${I}_{\text{śr}}$, przedstawione przy pomocy parametrów zarówno pola $E$, jak i pola $B$. Podstawiając dane z zależności ${E}_{0} = c{B}_{0}$ do poprzedniego równania, otrzymujemy
+
+$$ I = \frac{{E}_{0} {B}_{0}}{2 {\mu }_{0}} \text{.} $$
+
+Możemy używać któregokolwiek z trzech powyższych wzorów zależnie od tego, który jest w danej chwili wygodniejszy, ponieważ są to tak naprawdę trzy wersje tej samej własności: energia fali jest zależna od kwadratu amplitudy. Ponadto, ponieważ równania te oparte są na założeniu, że fale elektromagnetyczne są falami sinusoidalnymi, to maksymalne natężenie jest dwukrotnie większe niż natężenie średnie ${I}_{0} = 2 I$.
+
+
+Przykład 16.3
+
+
+Wiązka laserowa
+
+Wiązka laserowa z małego lasera laboratoryjnego zazwyczaj ma natężenie równe około ${10}^{ - 3} W ∕ {m}^{2}$. Zakładając, że wiązka ta złożona jest z fal płaskich, obliczmy amplitudy wielkości charakteryzujących pola elektryczne i magnetyczne w tej wiązce.
+
+
+Strategia rozwiązania
+
+Użyjemy równań na natężenie wiązki laserowej, wyrażone przez amplitudę natężenia pola elektrycznego, aby wyliczyć tę amplitudę.
+
+
+Rozwiązanie
+
+Z Równania 16.31 natężenie wiązki laserowej jest równe
+
+$$ I = \frac{1}{2} c {\epsilon }_{0} {E}_{0}^{2} \text{.} $$
+
+Amplituda natężenia pola elektrycznego wynosi więc
+
+$$ {E}_{0} = \sqrt{\frac{2}{c {\epsilon }_{0}} I} = \sqrt{\frac{2}{3 \cdot {10}^{8} m ∕ s \cdot 8,85 \cdot {10}^{ - 12} F ∕ m} \cdot {10}^{ - 3} W ∕ {m}^{2}} = 0,87 V ∕ m \text{.} $$
+
+Amplituda indukcji magnetycznej może być obliczona z Równania 16.20
+
+$$ {B}_{0} = \frac{{E}_{0}}{c} = 2,9 \cdot {10}^{ - 9} T \text{.} $$
+
+
+Przykład 16.4
+
+
+Pola żarówki
+
+Żarówka emituje światło o mocy $5 W$. Ile wynosi średnie natężenie pola elektrycznego, a ile wartość indukcji magnetycznej tego światła w odległości $3 m$ od żarówki?
+
+
+Strategia rozwiązania
+
+Do obliczenia natężenia światła załóżmy, że żarówka emituje światło o mocy $P$ izotropowo do wnętrza sfery o promieniu $3 m$. Z natężenia światła możemy następnie wyliczyć amplitudę natężenia pola elektrycznego.
+
+
+Rozwiązanie
+
+Moc emitowana w postaci światła wynosi
+
+$$ \begin{matrix} I = \frac{P}{4 \pi {r}^{2}} = \frac{c {\epsilon }_{0} {E}_{0}^{2}}{2} \text{,} \\ {E}_{0} = \sqrt{2 \frac{P}{4 \pi {r}^{2} c {\epsilon }_{0}}} = \sqrt{2 \frac{5 W}{4 \pi \cdot {\left(3 m \right)}^{2} \cdot 3 \cdot {10}^{8} m ∕ s \cdot 8,85 \cdot {10}^{ - 12} {C}^{2} ∕ \left(N {m}^{2} \right)}} = 5,77 V ∕ m \text{,} \\ {B}_{0} = \frac{{E}_{0}}{c} = 1,92 \cdot {10}^{ - 8} T \text{.} \end{matrix} $$
+
+
+Znaczenie
+
+Natężenie $I$ maleje jak kwadrat odległości, jeśli promieniowanie jest emitowane jednakowo we wszystkich kierunkach.
+
+
+Przykład 16.5
+
+
+Zasięg radia
+
+Nadajnik radiowy o mocy $60 \mathrm{kW}$ na Ziemi wysyła sygnały do satelity odległego o $100 \mathrm{km}$. Jeśli moc nadajnika wzrosłaby do $90 \mathrm{kW}$, to w jakiej odległości od źródła sygnał będzie generował pole o tej samej amplitudzie natężenia energii, zakładając, że sygnał wysyłany będzie w tym samym kierunku co poprzednio?
+
+
+Strategia rozwiązania
+
+Pole powierzchni, na którym rozpraszana jest moc sygnału kierunkowego, zwiększa się z kwadratem odległości, jak pokazano na Ilustracji 16.12. Powiększymy moc ($90 \mathrm{kW}$ / $60 \mathrm{kW}$) razy, wartość pola powierzchni zwiększymy w podobny sposób, by zachować stosunek $I = P ∕ A = c {\epsilon }_{0} {E}_{0}^{2} ∕ 2$. Następnie użyjemy proporcji pomiędzy powierzchnią $A$ na rysunku a odległością podniesioną do kwadratu, by znaleźć odległość, dla której powierzchnia jest taka sama jak wyliczona wcześniej.
+
+
+Rozwiązanie
+
+Korzystając z proporcjonalności pola powierzchni do kwadratu odległości i przekształcając równanie, otrzymamy
+
+$$ \begin{matrix} \frac{{r}_{2}^{2}}{{r}_{1}^{2}} = \frac{{A}_{2}}{{A}_{1}} = \frac{90 W}{60 W} \text{,} \\ {r}_{2} = \sqrt{\frac{90}{60}} \cdot 100 \mathrm{km} = 122 \mathrm{km} \text{.} \end{matrix} $$
+
+
+Znaczenie
+
+Zasięg nadajnika radiowego to maksymalna odległość pomiędzy nadajnikiem i odbiornikiem, która jeszcze pozwala na prawidłowy przebieg komunikacji. W przypadku braku zakłóceń, takich jak odbicia od przeszkód, natężenie podlega prawu odwrotnych kwadratów. Oznacza to, że podwojenie zasięgu wymaga czterokrotnego zwiększenia mocy nadajnika.
+
+
+16.4 Pęd i ciśnienie promieniowania elektromagnetycznego
+
+Przedmioty materialne składają się z naładowanych cząstek. Fale elektromagnetyczne padające na takie przedmioty działają na naładowane cząstki siłą Lorentza z Równania 16.11. Siły te wykonują pracę nad cząstkami wchodzącymi w skład przedmiotów, zwiększając ich całkowitą energię, jak opisano to w poprzednim podrozdziale. Energia niesiona przez światło słoneczne powoduje tak przyjemne i znajome uczucie ciepła na twarzy w każdy słoneczny dzień. Znacznie mniej znaną własnością promieniowania elektromagnetycznego jest niezwykle małe ciśnienie, które promieniowanie to wytwarza przez oddziaływanie siłą w kierunku zgodnym z kierunkiem rozchodzenia się fali. Ta siła pojawia się, ponieważ fale elektromagnetyczne posiadają i mogą przekazywać pęd.
+
+Aby zrozumieć, skąd bierze się ten konkretny kierunek działania siły, wyobraźmy sobie płaskie fale elektromagnetyczne padające na metal, w którym ruch elektronów jest tłumiony przez opór metalu tak, że średni ruch elektronów jest zgodny w fazie z siłą go powodującą. Jest to sytuacja porównywalna do sytuacji obiektu poruszającego się z tarciem, który zatrzymuje się natychmiast, kiedy siła wymuszająca ruch zanika. Gdy pole elektryczne kierowane jest w stronę dodatnich wartości osi $y$, elektrony poruszają się w kierunku ujemnych wartości tej osi, a pole magnetyczne skierowane jest ku dodatnim wartościom osi $z$. Stosując regułę prawej dłoni i uwzględniając ujemny ładunek elektronów, obserwujemy, że siła działająca na elektrony ze strony pola magnetycznego działa w kierunku dodatnich wartości osi $x$. Jest to też oczywiście kierunek rozchodzenia się fali, która indukuje działającą na elektrony siłę. Gdy pole elektryczne odwraca swój kierunek, podobnie dzieje się z polem magnetycznym, przez co siła nadal działa w tym samym kierunku. Równania Maxwella w połączeniu z siłą Lorentza przewidują istnienie ciśnienia promieniowania w sposób znacznie bardziej ogólny niż w omawianym przykładzie.
+
+Maxwell przewidział, że fale elektromagnetyczne niosą ze sobą pęd. Obiekt pochłaniający falę elektromagnetyczną będzie doświadczał siły oddziałującej nań w kierunku rozchodzenia się pochłoniętej fali. Wartość tej siły powiązana jest z ciśnieniem promieniowania wywieranym na ten obiekt przez padającą falę. Siła będzie przy tym dwukrotnie większa, jeśli promieniowanie będzie odbijane, a nie absorbowane.
+
+Hipoteza Maxwella została udowodniona eksperymentalnie w roku 1903 przez Nicholsa i Hulla, którzy dokonali precyzyjnych pomiarów ciśnienia promieniowania z użyciem wagi skręceń (ang. torsion balance). Schematyczny układ pomiarowy przedstawiony został na Ilustracji 16.14. Para zwierciadeł zawieszona została na cienkiej nitce i umieszczona wewnątrz szklanego pojemnika. Nicholsowi i Hullowi udało się uzyskać małe, ale mierzalne skręcenie całego układu w wyniku oświetlenia jednego ze zwierciadeł. Ze zmierzonego kąta skręcenia mogli oni ustalić wartość siły powodującej to skręcenie. Wartość tak wyznaczonej siły skręcającej była w pełni zgodna z przewidywaniami teoretycznymi dla ciśnienia promieniowania.
+
+Ciśnienie promieniowania (ang. radiation pressure) ${p}_{\text{pr}}$, wywierane przez falę elektromagnetyczną na doskonale absorbującą powierzchnię, okazuje się równe gęstości energii tej fali
+
+$$ {p}_{\text{pr}} = u \text{(idealny absorber).} $$
+
+Jeśli materiał idealnie odbija promieniowanie, jak na przykład powierzchnia metaliczna, i kąt padania jest kątem prostym, to ciśnienie wywierane przez falę jest dwukrotnie większe, gdyż w czasie odbicia pęd fali padającej zmienia zwrot na przeciwny
+
+$$ {p}_{\text{pr}} = 2 u \text{(idealne zwierciadło).} $$
+
+W celu sprawdzenia poprawności tych wyników możemy dokonać sprawdzenia jednostek
+
+$$ \left[u \right] = \frac{J}{{m}^{3}} = \frac{N m}{{m}^{3}} = \frac{N}{{m}^{2}} = \mathrm{Pa} \text{.} $$
+
+Równanie 16.34 i Równanie 16.35 są równaniami na ciśnienie chwilowe, ponieważ jednak gęstość energii jest ekstremalnie szybkozmienną funkcją czasu, zazwyczaj interesuje nas jedynie ciśnienie promieniowania uśrednione po czasie. Ciśnienie takie można wyrazić jako funkcję natężenia fali elektromagnetycznej
+
+$$ p = \langle {p}_{\text{pr}} \rangle = \{ \begin{matrix} I \text{/} c & & & \text{idealny absorber} \\ 2 I \text{/} c & & & \text{idealne zwierciadło}. \end{matrix} $$
+
+Ciśnienie promieniowania jest niezwykle ważnym czynnikiem, niezbędnym do wyjaśnienia wielu zaobserwowanych zjawisk astronomicznych, włączając w to wygląd komet (ang. comets) na ziemskim nieboskłonie. Komety są w gruncie rzeczy obiektami składającymi się z lodu, w którym tkwią kawałki kosmicznych skał, drobiny pyłu i zamarznięte gazy. Kiedy kometa zbliża się do Słońca, grzeje się w jego blasku, a jej powierzchnia zaczyna parować. Koma takiej komety to mglisty obszar bezpośrednio wokół jądra, składający się z uwolnionych gazów, drobinek skał i pyłu. Część tego uwolnionego gazu i pyłu formuje ogony komety. Zauważmy, że przedstawiona na Ilustracji 16.15 kometa ma dwa oddzielne ogony. Warkocz jonowy (lub warkocz gazowy na Ilustracji 16.15) złożony jest głównie ze zjonizowanego gazu. Jony te oddziałują elektromagnetycznie z wiatrem słonecznym (ang. solar wind) będącym ciągłym strumieniem cząstek naładowanych, emitowanych ze Słońca. Siła oddziaływania wiatru słonecznego na zjonizowane gazy jest na tyle duża, że warkocz jonowy niemal zawsze skierowany jest „od Słońca”. Drugi warkocz składa się z cząsteczek pyłu. Ponieważ warkocz pyłowy jest obojętny elektrycznie, nie oddziałuje zupełnie z wiatrem słonecznym. Jednak wciąż wywierane jest na niego ciśnienie promieniowania, pochodzące od światła wysyłanego przez Słońce. Ciśnienie to, choć bardzo małe, jest wystarczająco silne, aby nieznacznie odchylić warkocz pyłowy od toru lotu komety.
+
+
+Przykład 16.6
+
+
+Kometa Halleya
+
+9 lutego 1986 roku kometa Halleya znajdowała się w punkcie jej orbity najbliższym Słońcu, czyli około $9 \cdot {10}^{10} m$ od środka gwiazdy. Średnia moc promieniowania emitowanego przez Słońce wynosi $3,8 \cdot {10}^{26} W$.
+
+Obliczmy wartość ciśnienia promieniowania wywieranego na kometę w tym punkcie jej orbity. Załóżmy, że kometa odbija całe padające na nią promieniowanie.
+
+Załóżmy, że od komety oddziela się odłamek o masie $10 \mathrm{kg}$ i polu przekroju poprzecznego $4 \cdot {10}^{ - 2} {m}^{2}$. Wyznaczmy wartość siły działającej na ten kawałek w związku z ciśnieniem promieniowania. Porównajmy tę siłę z siłą grawitacji wywieraną przez Słońce.
+
+
+Strategia rozwiązania
+
+Obliczymy natężenie promieniowania słonecznego dla danej odległości od Słońca i użyjemy tej wartości do wyliczenia ciśnienia promieniowania. Następnie skorzystamy z wyliczonej wartości promieniowania oraz podanego pola powierzchni komety i wyznaczymy wartość siły działającej na odłamek.
+
+
+Rozwiązanie
+
+Natężenie promieniowania słonecznego to średnia moc na jednostkę powierzchni. Dla danej odległości
+
+$$ I = {S}_{\text{śr}} = \frac{3,8 \cdot {10}^{26} W}{4 \pi {\left(9 \cdot {10}^{10} m \right)}^{2}} = 3,7 \cdot {10}^{3} W ∕ {m}^{2} \text{.} $$
+
+Zakładając, że kometa odbija całe padające na nie promieniowania, z Równania 16.36 otrzymujemy
+
+$$ p = \frac{2 I}{c} = \frac{2 \cdot 3,7 \cdot {10}^{3} W ∕ {m}^{2}}{3 \cdot {10}^{8} m ∕ s} = 2,5 \cdot {10}^{ - 5} N ∕ {m}^{2} \text{.} $$
+
+Siła oddziałująca na odłamek wywołana promieniowaniem wynosi
+
+$$ F = p A = 2,5 \cdot {10}^{ - 5} N ∕ {m}^{2} \cdot 4 \cdot {10}^{ - 2} {m}^{2} = {10}^{ - 6} N \text{,} $$
+
+podczas gdy siła grawitacji układu Słońce – odłamek wynosi
+
+$$ {F}_{\text{g}} = \frac{G M m}{{r}^{2}} = \frac{6,67 \cdot {10}^{ - 11} N {m}^{2} ∕ {\mathrm{kg}}^{2} \cdot 2 \cdot {10}^{30} \mathrm{kg} \cdot 10 \mathrm{kg}}{{\left(9 \cdot {10}^{10} m \right)}^{2}} = 0,16 N \text{.} $$
+
+
+Znaczenie
+
+Siła oddziaływania grawitacyjnego Słońca na odłamek jest o wiele większa niż siła pochodząca od ciśnienia promieniowania.
+
+Po wykazaniu przez Maxwella, że światło przenosi zarówno pęd, jak i energię, naturalnie pojawił się innowacyjny pomysł – choć początkowo jedynie jako science-fiction. Wywnioskowano, że możliwe jest wyposażenie statku w duży, odbijający światło żagiel i użycie ciśnienia promieniowania jako napędu. Tak napędzany pojazd nie musiałby przenosić żadnego paliwa na pokładzie. Zamiast krótkich impulsów ciągu z silników rakietowych doświadczałby małej, ale stałej siły wywieranej przez ciśnienie promieniowania; przyspieszałby bardzo powoli, ale po pewnym czasie byłby zdolny osiągnąć ogromne prędkości. Jednak niezbędny do tego byłby pojazd o małej masie własnej i dużej powierzchni żagla słonecznego (ang. light sail), by osiągnąć przyspieszenie o znaczeniu praktycznym.
+
+Gdy w latach sześćdziesiątych został uruchomiony amerykański program kosmiczny, agencja NASA zaczęła uważnie przyglądać się temu pomysłowi. Najświeższe udoskonalenia w dziedzinie napędu słonecznego zostały dokonane przez pozarządową organizację Planetary Society. Obecnie testowane jest użycie żagli słonecznych do napędzania małych pojazdów zbudowanych z tzw. CubeSatów – malutkich satelitów umieszczanych przez NASA na orbicie przy okazji innych startów. Taki projekt został zrealizowany również przez studentów z Politechniki Warszawskiej, którzy testowali możliwość deorbitacji za pomocą żagla słonecznego.
+
+Statek kosmiczny LightSail pokazany poniżej składa się z trzech CubeSatów połączonych ze sobą. Jego całkowita masa własna wynosi zaledwie około $5 \mathrm{kg}$, a jego rozmiar jest porównywalny z bochenkiem chleba. Żagiel wykonany został z bardzo cienkiej folii Mylar i rozkłada się, po uruchomieniu, do powierzchni $32 {m}^{2}$.
+
+
+Przykład 16.7
+
+
+Przyspieszenie LightSail
+
+Natężenie światła słonecznego w odległości $1 \mathrm{AU}$ (ang. Astronomical Unit – jednostki astronomicznej) wynosi $1370 W ∕ {m}^{2}$. Pojazd LightSail ma żagiel o całkowitym polu powierzchni równym $32 {m}^{2}$ i masie całkowitej $5 \mathrm{kg}$. Obliczmy maksymalne przyspieszenie, jakie może osiągnąć LightSail, wykorzystując do przyspieszania ciśnienie promieniowania, gdy znajduje się w odległości ok. $1 \mathrm{AU}$ od Słońca.
+
+
+Strategia rozwiązania
+
+Pojazd doświadcza maksymalnego przyspieszenia, kiedy otwarty żagiel skierowany jest bezpośrednio w stronę Słońca. Użyjemy natężenia światła do wyliczenia ciśnienia promieniowania, a następnie obliczymy wartość siły działającej na żagiel. Następnie – do obliczenia przyspieszenia – użyjemy II prawa dynamiki Newtona.
+
+
+Rozwiązanie
+
+Ciśnienie promieniowania powoduje powstanie siły równej
+
+$$ F = p A = 2 u A = \frac{2 I}{c} A = \frac{2 \cdot 1370 W ∕ {m}^{2} \cdot 32 {m}^{2}}{3 \cdot {10}^{8} m ∕ s} = 2,92 \cdot {10}^{ - 4} N \text{.} $$
+
+Przyspieszenie wynikające z tego ciśnienia wynosi
+
+$$ a = \frac{F}{m} = \frac{2,92 \cdot {10}^{ - 4} N}{5 \mathrm{kg}} = 5,8 \cdot {10}^{ - 5} m ∕ {s}^{2} \text{.} $$
+
+
+Znaczenie
+
+Jeśli udałoby się utrzymać tak małe przyspieszenie przez jeden rok, pojazd osiągnąłby prędkość $1829 m ∕ s$ lub $6600 \mathrm{km} ∕ h$.
+
+
+16.5 Widmo promieniowania elektromagnetycznego
+
+Fale elektromagnetyczne mają ogromną ilość zastosowań praktycznych, do których zaliczają się: komunikacja z użyciem telefonów komórkowych i radia, WiFi, gotowanie, widzenie, obrazowanie medyczne, a nawet leczenie raka. W tym podrozdziale opiszemy, w jaki sposób klasyfikuje się fale elektromagnetyczne. Podsumujemy też pokrótce główne zastosowania każdego z zakresów ich długości.
+
+Różne kategorie fal elektromagnetycznych różnią się pomiędzy sobą zakresem długości fal (lub – równoważnie – zakresem częstotliwości). Właściwości tych fal zmieniają się w sposób ciągły, kiedy długość fali przechodzi z jednego zakresu do kolejnego. Krótkie podsumowanie metod wytwarzania i zastosowań fal elektromagnetycznych przedstawiono w Tabeli 16.1.
+
+Związek $c = f \lambda$ pomiędzy częstotliwością $f$ i długością fali $\lambda$ prawdziwy jest dla wszystkich fal elektromagnetycznych i powoduje, że z większą częstotliwością powiązana jest mniejsza długość fali. Ilustracja 16.17 przedstawia klasyfikację fal elektromagnetycznych na podstawie ich częstotliwości i długości fali – jest to spektrum, czyli widmo, fal elektromagnetycznych.
+
+
+Fale radiowe
+
+Termin fale radiowe (ang. radio waves) odnosi się do tej części widma, w której fale mają długości większe od $0,1 m$. Fale te są często stosowane do przesyłania sygnałów audio (np. radio), jednak nazwa odnosi się do wszystkich fal o podanej wyżej długości, bez względu na zastosowanie. Fale radiowe zazwyczaj generowane są przez prąd zmienny, płynący w antenie nadawczej. Zakres ten charakteryzuje się dużą rozpiętością długości fali i podzielony jest na mniejsze podzakresy, takie jak: mikrofale, fale radiowe używane do transmisji AM i FM, fale telefonii komórkowej i fale telewizyjne.
+
+Fale elektromagnetyczne nie mają minimalnej częstotliwości, aczkolwiek tzw. fale o skrajnie niskich częstotliwościach – ELF (ang. extremely low frequency) to fale o najniższej częstotliwości, z jaką zwykle się spotykamy; obejmują zakres od $3 \mathrm{Hz}$ do $3 \mathrm{kHz}$. Ładunki przyspieszające w liniach przesyłowych wytwarzają fale elektromagnetyczne w zakresie ELF. Fale takie są zdolne do przenikania przez wodę, która absorbuje fale o wyższych częstotliwościach, dzięki czemu używa się ich do komunikacji z okrętami podwodnymi.
+
+W celu wykorzystania fal elektromagnetycznych do przesyłania informacji niezbędne jest zastosowanie modulacji amplitudy, częstotliwości albo fazy takiej fali, czyli kontrolowanej jej zmiany, w sposób umożliwiający zakodowanie pożądanych informacji. Dla transmisji AM moduluje się amplitudę fali tak, by przypominała wibracje dźwiękowe, które są przesyłane. Twierdzenie Fouriera pokazuje, że zmodulowanemu sygnałowi AM odpowiada pewna superpozycja fal, pokrywająca pewien wąski zakres częstotliwości. Każdej stacji AM przypisana jest określona częstotliwość nośna, która – zgodnie z ustaleniami międzynarodowymi – może zmieniać się w zakresie $\pm 5 \mathrm{kHz}$. W przypadku transmisji FM, w celu zakodowania informacji moduluje się częstotliwość fali nośnej, tak jak pokazano to na Ilustracji 16.18, a stacje nadawcze mogą używać zakresu częstotliwości $\pm 100 \mathrm{kHz}$ wokół częstotliwości nośnej. Fala elektromagnetyczna indukuje prąd w obwodzie anteny odbiorczej, a radio lub telewizor przetwarza ten sygnał dalej, by wytworzyć z niego dźwięk i/lub obraz. Im wyższa jest częstotliwość używanej do przesyłu fali radiowej, tym większa jest rozdzielczość możliwych zmian częstotliwości, i tym więcej danych można przesłać w jednostce czasu. Dla transmisji sygnału AM przeznaczono pasmo częstotliwości od $540 \mathrm{kHz}$ do $1600 \mathrm{kHz}$, zaś dla transmisji FM – od $88 \mathrm{MHz}$ do $108 \mathrm{MHz}$.
+
+Rozmowy telefoniczne z wykorzystaniem telefonów komórkowych (ang. cell phones) czy fonia i wizja w sygnale telewizyjnym (ang. television signal) są zazwyczaj przesyłane pod postacią cyfrową, przez zmianę sygnału na sekwencję zer i jedynek. Umożliwia to przesyłanie lepszej jakości, nawet słabszych sygnałów i, dodatkowo, pozwala na użycie algorytmów kompresji danych w celu transmisji jeszcze większej ilości informacji w każdym zakresie częstotliwości. Dane w komputerze również przesyłane są w postaci ciągów zer i jedynek, gdzie każde zero i każda jedynka odpowiadają jednemu bitowi danych.
+
+
+Mikrofale
+
+Mikrofale (ang. microwaves) są falami o najwyższej częstotliwości jaką da się wytworzyć przez przyspieszanie ładunków w makroskopowych urządzeniach i obwodach. Zakres częstotliwości mikrofal rozciąga się od ${10}^{9} \mathrm{Hz}$ do ${10}^{12} \mathrm{Hz}$. Wysokie częstotliwości odpowiadają małym, w porównaniu do pozostałych fal radiowych, długościom fal, stąd też nazwa mikrofal. Promieniowanie mikrofalowe występuje również naturalnie jako kosmiczne promieniowanie tła – pozostałości po wczesnym Wszechświecie. Wraz z pozostałymi zakresami częstotliwości fal elektromagnetycznych są one emitowane jako promieniowanie termiczne – promieniowanie emitowane i absorbowane przez każdy obiekt, którego temperatura jest wyższa niż zero absolutne ($0 K$). Promieniowanie termiczne powiązane jest ze wzbudzeniem termicznym (ang. thermal agitation), czyli termicznym ruchem atomów i cząsteczek wewnątrz każdego obiektu.
+
+Do satelitarnego przesyłania informacji wykorzystuje się głównie mikrofale. Innym bardzo częstym zastosowaniem mikrofal jest radar. Systemy radarowe mogą wykryć i zmierzyć odległość do obiektów, takich jak chmury, samoloty, a nawet Wenus. W tym celu systemy radarowe wykrywają echa wysyłanych mikrofal i mierzą czas od ich nadania do odbioru.
+
+Mikrofale o częstotliwości $2,45 \mathrm{GHz}$ są powszechnie używane w kuchenkach mikrofalowych. Elektrony w cząsteczkach wody mają tendencję do przebywania bliżej jądra atomu tlenu niż jąder atomów wodoru. To powoduje tworzenie się dwóch oddzielnych centrów o równym, ale przeciwnym ładunku, tym samym indukując w cząsteczce moment dipolowy (patrz Dipole elektryczne). Oscylujące pole elektryczne mikrofal wewnątrz kuchenki mikrofalowej powoduje pojawienie się momentu obrotowego, który „stara się ustawić” wszystkie cząsteczki najpierw w jedną, następnie w drugą stronę. Ruch każdej molekuły jest dodatkowo sprzężony z ruchem innych i rotacją wokół własnej osi. Takie sprzężenie powoduje zmianę energii fali elektromagnetycznej w energię ciągłego ruchu termicznego cząsteczek wody, co z kolei podgrzewa jedzenie. Talerz, na którym leży posiłek, nie zawiera wody, dzięki czemu pozostaje stosunkowo chłodny (o ile nie zawiera innych dipolowych cząsteczek, np. krystalicznego żelaza – dlatego naczynia kamionkowe i fajansowe zazwyczaj się rozgrzewają).
+
+Mikrofale w kuchence mikrofalowej odbijają się od jej ścian w taki sposób, że ich superpozycja tworzy falę stojącą, podobną do fali stojącej wibrującej struny gitarowej (patrz Tryby drgań fali stojącej). Wirujący wiatrak spełnia rolę mieszadła, odbijając fale w różnych kierunkach, a obrotowy talerz pozwala „rozsmarować” gorące miejsca (strzałki fali stojącej) na większym obszarze ogrzewanej porcji.
+
+
+Przykład 16.8
+
+
+Dlaczego kuchenka mikrofalowa podgrzewa pożywienie nierównomiernie?
+
+Jak daleko od siebie znajdują się strzałki fali w kuchence mikrofalowej o częstotliwości pracy $2,45 \mathrm{GHz}$?
+
+
+Strategia rozwiązania
+
+Rozważymy falę, która biegnie w określonym kierunku, a następnie ulega odbiciu i wraca do źródła.
+
+
+Rozwiązanie
+
+Strzałki fali stojącej, w których występuje maksymalne natężenie, oddalone są od siebie o pół długości fali, czyli o odległość
+
+$$ d = \frac{1}{2} \lambda = \frac{1}{2} \cdot \frac{c}{f} = \frac{3 \cdot {10}^{8} m ∕ s}{2 \cdot 2,45 \cdot {10}^{9} \mathrm{Hz}} = 6,02 \mathrm{cm} \text{.} $$
+
+
+Znaczenie
+
+Odległość pomiędzy punktami grzania w kuchence mikrofalowej zależy od długości mikrofal.
+
+Telefon komórkowy wyposażony jest w odbiornik radiowy i słaby nadajnik radiowy. Oba te podzespoły mogą się szybko dostroić do jednej z setek przypisanych im pasm częstotliwości mikrofalowych. Małe natężenie nadawanego sygnału ogranicza – celowo – jego zasięg. System urządzeń naziemnych zorganizowano tak, że telefon łączy się z jedną z wież sygnałowych, przypisanych do konkretnego, małego obszaru (komórki (ang. cell)), i zapewnia płynne przełączanie do kolejnej komórki, jeśli sygnał będzie w niej silniejszy. Pozwala to na używanie telefonów komórkowych przy jednoczesnej zmianie swojego położenia.
+
+Mikrofale są również używane w technologii WiFi, która pozwala właścicielom smartfonów, laptopów i innych urządzeń bezprzewodowo łączyć się z Internetem w domach, kawiarniach i na lotniskach. Bezprzewodowy ruter WiFi to urządzenie, które przesyła i odbiera dane z Internetu przez kabel albo inne połączenie, a następnie używa mikrofal, by przesłać te dane bezprzewodowo do urządzeń takich, jak smartfon czy laptop. Termin WiFi sam w sobie odnosi się do standardów, według których moduluje się i analizuje mikrofale, aby zapewnić kompatybilność urządzeniom pochodzącym od różnych producentów. Dane przesyłane bezprzewodowo w obu kierunkach składają się z sekwencji zer i jedynek, z których każda odpowiada pojedynczemu bitowi. Mikrofale używane w technologii WiFi podzielone są na dwa pasma: $2,4 \mathrm{GHz}$ i $5 \mathrm{GHz}$.
+
+Inne technologie bezprzewodowe też używają mikrofal, by zapewnić ciągłą komunikację pomiędzy różnymi urządzeniami. Bluetooth rozwijano równocześnie z WiFi jako standard komunikacji radiowej o częstotliwości $2,4 \mathrm{GHz}$ pomiędzy urządzeniami znajdującymi się w bliskiej odległości od siebie. Mogą to być na przykład słuchawki bezprzewodowe połączone z odtwarzaczem albo telefon komórkowy połączony z zestawem głośnomówiącym w samochodzie.
+
+Mikrofale znalazły też zastosowanie w tzw. radio-tagging z wykorzystaniem technologii RFID (ang. radio frequency identification). Jako przykład mogą posłużyć naklejki z obwodami przyklejane przez obsługę sklepu na towar, przekaźniki naklejek cyfrowych przyklejone do przedniej szyby samochodu czy obwody scalone (czipy) wszczepione pod skórę naszych zwierząt. Takie urządzenie odpowiada na sygnał mikrofalowy przez nadanie własnego sygnału, zawierającego zakodowane wcześniej informacje. Pozwala to na szybką identyfikację produktu przy kasie, pobranie od kierowcy opłaty za przejazd bez jego zatrzymywania i zidentyfikowanie psa, który zgubił swoją obrożę. W bardzo podobny sposób działa technologia NFC (ang. near field communication), jednak na znacznie mniejsze odległości. Opiera się ona na oddziaływaniu wyindukowanego pola magnetycznego o częstotliwościach mikrofalowych z dwiema cewkami. Smartfony, wyposażone w moduł NFC i odpowiednie oprogramowanie, mogą transmitować te same informacje co karta płatnicza, co z kolei umożliwia użycie telefonu jako środka płatniczego. Bardzo mały zasięg komunikacji jest w tym przypadku bardzo pożądanym środkiem bezpieczeństwa.
+
+
+Promieniowanie podczerwone
+
+Granica pomiędzy mikrofalami a promieniowaniem podczerwonym nie jest dobrze zdefiniowana. Promieniowanie podczerwone (ang. infrared radiation) zazwyczaj jest produkowane przez ruchy termiczne, czyli drgania i obroty atomów i cząsteczek. Jednak promieniowanie podczerwone może też być wytwarzane przez przejścia elektronowe w atomach i cząsteczkach. Około połowa energii docierającej do Ziemi ze Słońca ma postać promieniowania podczerwonego, a większość pozostałej energii ma postać światła widzialnego. Średnio $23 \%$ energii promieniowania słonecznego jest absorbowane przez atmosferę, około $48 \%$ absorbuje powierzchnia Ziemi, a $29 \%$ odbijane jest z powrotem w przestrzeń kosmiczną1.
+
+Zakres częstotliwości promieniowania podczerwonego kończy się dopiero przy dolnej granicy światła widzialnego – tuż poniżej koloru czerwonego. Wskazuje na to nawet nazwa tego zakresu – „pod czerwonym”. Cząsteczki wody szczególnie łatwo oscylują i rotują z częstotliwościami z zakresu podczerwieni. Satelity szpiegowskie mają zdolność wykrywania budynków, pojazdów czy nawet pojedynczych ludzi przez wykrywanie emisji podczerwonej obserwowanych obiektów. Moc takiej emisji jest proporcjonalna do czwartej potęgi temperatury bezwzględnej. Często używamy też lamp podczerwonych, włączając w to urządzenia nazywane grzejnikami kwarcowymi, do ogrzewania osób, ponieważ pochłaniamy promieniowanie podczerwone lepiej niż otoczenie.
+
+Piloty do telewizora, wieży stereo czy projektora najczęściej wykorzystują modulowaną wiązkę podczerwoną do transmisji danych. Jeśli jednak odbiornik nie znajduje się dokładnie na linii wiązki pilota, to nie będzie reagować. Dlatego też niektóre piloty wykorzystują transmisję z użyciem sygnału Bluetooth, aby pozbyć się tej niewygody.
+
+
+Światło widzialne
+
+Światło widzialne (ang. visible light) to wąski fragment widma fal elektromagnetycznych pomiędzy $400 \mathrm{nm}$ a około $750 \mathrm{nm}$, na które reaguje normalne ludzkie oko. Światło widzialne emitowane jest w wyniku wibracji i rotacji atomów i molekuł oraz w trakcie przejść elektronowych w atomach i molekułach. W związku z tym odbiorniki i detektory światła widzialnego w dużej mierze używają właśnie przejść elektronowych.
+
+Spośród fal tego zakresu najniższą częstotliwość i największą długość fali ma światło czerwone, podczas gdy światło fioletowe ma najwyższą częstotliwość i najmniejszą długość fali. Promieniowanie ciała doskonale czarnego, którego przykładem jest promieniowanie słoneczne, ma największe natężenie właśnie w zakresie widzialnym. W przypadku Słońca, więcej energii promieniowania odpowiada barwie czerwonej niż fioletowej, co w efekcie daje żółtawy kolor światła słonecznego.
+
+Rośliny i zwierzęta wykształciły metody pozwalające na wykorzystanie części widma fal elektromagnetycznych, którymi są one otoczone. My możemy podziwiać piękno natury poprzez światło widzialne, ale rośliny są jeszcze bardziej selektywne w wykorzystaniu fal elektromagnetycznych. Proces fotosyntezy wykorzystuje jedynie część widma światła widzialnego do produkcji cukrów.
+
+
+Promieniowanie ultrafioletowe
+
+Częstotliwości promieniowania ultrafioletowego (UV, ang. ultraviolet radiation), zwanego też po polsku nadfioletowym, rozciągają się powyżej fioletu, czyli fali o największej częstotliwości w paśmie widzialnym. „Najwyższe” fragmenty tego pasma pokrywają się częściowo z niskoczęstotliwościowymi promieniami X. Długości fal ultrafioletowych zamykają się w zakresie od około $400 \mathrm{nm}$ do około $10 \mathrm{nm}$ przy najwyższych częstotliwościach. Promieniowanie ultrafioletowe wytwarzane jest w wyniku przejść elektronowych w atomach, jonach i cząsteczkach, a także w periodycznych strukturach pola magnetycznego.
+
+Promieniowanie UV emitowane przez Słońce jest często dzielone na trzy podzakresy: UV-A ($320 \mathrm{nm}$ – $400 \mathrm{nm}$), UV-B ($290 \mathrm{nm}$ – $320 \mathrm{nm}$) i UV-C ($220 \mathrm{nm}$ – $290 \mathrm{nm}$). Większość promieniowania UV-B i UV-C jest absorbowana przez cząsteczki ozonu (O3) w górnych warstwach atmosfery (warstwa ozonowa). Z tego powodu prawie $99 \%$ promieniowania UV docierającego do powierzchni Ziemi to promieniowanie UV-A.
+
+Oparzenia słoneczne są z kolei spowodowane przez dużą ekspozycję na promieniowanie UV-B i UV-C, a wielokrotna ekspozycja na te typy promieniowania zwiększa ryzyko wystąpienia raka skóry. Opalenizna jest tak naprawdę odpowiedzią obronną ludzkiego organizmu, która polega na wytworzeniu pod naskórkiem pigmentu, osłaniającego przed promieniowaniem leżące pod nim komórki.
+
+Jak pokazywaliśmy w poprzednim rozdziale, im mniejsza długość fali, tym większa jest zmiana energii atomu lub cząsteczki, gdy taką falę absorbują. Powoduje to, że krótkofalowe promieniowanie UV (UV-B i UV-C) jest szkodliwe dla komórek organicznych. Wyjaśnia to też, dlaczego promieniowanie UV częściej niż światło widzialne wywołuje świecenie niektórych materiałów, czyli fluorescencję.
+
+Oczywiście poza negatywnymi skutkami ekspozycji na promieniowanie ultrafioletowe, są też skutki jak najbardziej pozytywne, zarówno w naturze, jak i w zastosowaniach w technologii. Produkcja witaminy D w skórze pobudzana jest przez promienie UV-B znajdujące się w świetle słonecznym. Wyniki badań naukowych wskazują, że niedobór witaminy D może być powiązany z rozwojem kilku rodzajów raka (m.in. prostaty, piersi i okrężnicy) i osteoporozy, a także krzywicy u dzieci. Promieniowanie ultrafioletowe o niewielkim natężeniu jest często stosowane do wywoływania fluorescencji w specjalnych barwnikach, które używane są na przykład jako forma zabezpieczenia banknotów przed fałszerstwem.
+
+
+Promienie X
+
+Promienie X (ang. X-ray) (promienie Röntgena) mają długości fal od ${10}^{ - 8} m$ do ${10}^{ - 12} m$. Są to fale o mniejszej długości i większej częstotliwości niż pasmo ultrafioletu. Z tego powodu energia przenoszona przez te fale jest większa niż w przypadku promieni UV. Przez to promienie X są bardzo szkodliwe dla żywych tkanek, przy czym są bardziej przenikliwe od promieniowania UV, które zatrzymuje się w większości na skórze. Promienie X mogą powodować zarówno raka, jak i zmiany genetyczne. Jednak ze względu na ich oddziaływanie na szybko dzielące się komórki są one często wykorzystywane do terapii antyrakowych.
+
+Największe zastosowanie promienie X znalazły w diagnostyce medycznej, a dokładniej – w obrazowaniu obiektów, które są nieprzezroczyste dla światła widzialnego, np. ludzkiego ciała. W przypadku konieczności prześwietlenia tkanek żywych każdorazowo ostrożnie porównuje się ryzyko uszkodzenia tkanek z korzyściami wynikającymi z uzyskania informacji diagnostycznych.
+
+
+Promienie gamma
+
+Niedługo po odkryciu zjawiska radioaktywności (w 1896 roku) odkryto również, że istnieją co najmniej 3 różne typy promieniowania jądrowego, które nazwano promieniami alfa, beta i gamma. Najbardziej przenikliwe promieniowanie jądrowe, czyli promienie $\gamma$ (ang. gamma ray), okazało się wysokoczęstotliwościowymi falami elektromagnetycznymi.
+
+Niższe zakresy częstotliwości promieniowania gamma pokrywają się częściowo z wyższymi zakresami częstotliwości promieni X. Promienie $\gamma$ mają dokładnie te same własności co promienie X o tej samej częstotliwości, różnią się jedynie źródłem wytwarzania promieniowania. Określenie „promieniowanie gamma” jest używane na ogół dla każdego promieniowania elektromagnetycznego emitowanego z jąder atomowych, podczas gdy „promienie X” wytwarzane są zazwyczaj przez bombardowanie jąder atomowych wysokoenergetycznymi elektronami wewnątrz lampy rentgenowskiej. Im wyższa częstotliwość promieni $\gamma$, tym bardziej są one przenikliwe i niszczące dla żywych tkanek. Promieniowanie gamma ma wiele zastosowań identycznych z promieniami X, np. terapie rakowe. Promienie $\gamma$ wysyłane przez substancje promieniotwórcze są używane w medycynie nuklearnej.

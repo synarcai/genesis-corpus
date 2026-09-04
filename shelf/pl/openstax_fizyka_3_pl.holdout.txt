@@ -1,0 +1,335 @@
+Pierwszym segmentem detektora jest krzemowa komora mozaikowa i śladowa, która ma mierzyć pęd cząstek naładowanych (takich jak elektrony czy protony). Detektor znajduje się w obszarze jednorodnego pola magnetycznego, które powoduje zakrzywienie toru cząstek dzięki działaniu siły Lorentza (dokładnie tak jak w cyklotronach). Jeśli pęd cząstki jest duży, promień okręgu, po którym porusza się cząstka, też jest duży i ślad po cząstce w komorze jest prawie linią prostą. Jeśli natomiast pęd jest mały, to promień krzywizny cząstki także jest mały i w detektorze obserwujemy silnie zakrzywione ślady. Gdy cząstki przechodzą przez wnętrze detektora, oddziałują z krzemowymi paskami o rozmiarach mikrometrycznych (półprzewodnikowy detektor paskowy) w wielu kolejnych punktach. Każda interakcja cząstki z półprzewodnikiem w danym miejscu wytwarza niewielki sygnał elektryczny. Wszystkie sygnały są wzmacniane przez odpowiedni układ elektroniczny i zapisywane. Na podstawie serii kolejnych sygnałów odtwarza się całą trajektorię cząstki przechodzącej przez wnętrze detektora. Dzięki analizie komputerowej do punktów dopasowuje się krzywą najlepszego dopasowania, dla której możemy znaleźć promień krzywizny i w efekcie pęd cząstki. W LHC, gdzie wiązki mają ogromne energie, w pojedynczym akcie zderzenia rejestrujemy bardzo dużą liczbę śladów. Odtworzone krzywoliniowe trajektorie fragmentów zarejestrowanych w innym detektorze LHC, ALICE, zaznaczono niebieskimi liniami na Ilustracji 11.10.
+
+Kolejny segment detektora to kalorymetr elektromagnetyczny. Ten detektor jest zbudowany z kryształów mających bardzo mało defektów, zawierających ciężki ołów w swojej strukturze krystalicznej. Kalorymetr służy do pomiaru całkowitej energii cząstek padających. Gdy cząstka wpada do jego wnętrza, wówczas oddziałuje z kryształem i traci energię wskutek absorpcji w materiale detektora. W wyniku tego wypromieniowywany jest strumień fotonów o wysokiej energii. Te fotony z kolei wytwarzają pary elektron–pozyton dzięki zjawisku kreacji par w sąsiedztwie ciężkich atomów ołowiu w krysztale. Następnie te cząstki też są absorbowane, przez co powstają kolejne fotony. Cały proces powtarza się wielokrotnie, w wyniku czego tworzy się kaskada cząstek (mówimy nawet „prysznic cząstek”), a sam kryształ rozbłyska. Uproszczony model fizyczny tego procesu wygląda następująco.
+
+Elektron o energii $E 0$ zderza się z atomami kryształu i traci połowę swojej energii na wytworzenie fotonu. Ten foton wytwarza parę elektron–pozyton, a każda z cząstek pary ulatuje z energią równą połowie energii fotonu. W międzyczasie pierwotny elektron dalej wytwarza promieniowanie elektromagnetyczne. W tej sytuacji po pierwszym etapie otrzymujemy cztery cząstki: dwa elektrony, jeden pozyton i jeden foton, każda o energii $E 0 ∕ 4$. Liczba cząstek w kaskadzie rośnie jak w ciągu geometrycznym. Po $n$ zdarzeniach mamy $N = 2 n$ cząstek. Zatem całkowita energia po $n$ zdarzeniach liczona na pojedynczą cząstkę wynosi
+
+$$ E ⁡ t = E 0 2 n, $$
+
+gdzie $E 0$ jest początkową energią cząstki padającej, a $E ⁡ t$ ilością energii przypadającą na cząstkę po $n$ zdarzeniach. Podobną kaskadę zdarzeń wywołuje wpadający pierwotnie do kalorymetru foton. Gdy ta energia przypadająca na cząstkę spadnie poniżej pewnej progowej wartości, inne procesy radiacyjne zaczynają nabierać znaczenia, a kaskada cząstek gaśnie (kryształ przestaje świecić). Wreszcie cała energia początkowa padającej cząstki ulega absorpcji w materiale kalorymetru i zmienia się w sygnał elektryczny, który możemy mierzyć przy pomocy urządzeń elektronicznych.
+
+Za kalorymetrem elektromagnetycznym znajduje się kalorymetr hadronowy. Jak możemy się domyślić, ten detektor rejestruje hadrony, takie jak protony czy piony. Kalorymetr hadronowy składa się z naprzemiennych warstw wykonanych z brązu i stali oddzielonych plastikowymi scyntylatorami. Kalorymetr ma zaabsorbować energię cząstek i zamienić ją na sygnał elektryczny. W materiale scyntylatora cząstki naładowane powodują rozbłyski (scyntylacje), które następnie są zamieniane na impulsy prądu. Za kalorymetrem ustawiona jest potężna cewka magnetyczna, wytwarzająca silne pole magnetyczne potrzebne do śledzenia trajektorii cząstek w komorze śladowej.
+
+Ostatnim segmentem detektora CMS jest detektor mionowy. Składa się on z grubych płyt stalowych, przez które mogą przenikać tylko lekkie cząstki, takie jak miony czy neutrina. Pomiędzy płytami znajdują się detektory mionowe, które z wysoką czułością mierzą pęd padających mionów. Detektory te odgrywają często bardzo ważną rolę w wykrywaniu niektórych cząstek, np. bozon Higgsa (odkryty niedawno w LHC) rozpada się na cztery miony – ich zarejestrowanie umożliwia wnioskowanie o właściwościach bozonu.
+
+Gdy wszystkie dane z detektorów w każdym segmencie są zebrane, można oszacować dokładny przebieg zderzenia i wszystkich etapów rozpadów następujących po nim. Energię relatywistyczną $i$ -tej cząstki możemy obliczyć jako
+
+$$ E i = p i ⁢ c 2 + m i ⁢ c 2 2, $$
+
+gdzie $p i$ jest długością wektora pędu cząstki $i$ -tej, a $m i$ jej masą spoczynkową.
+
+Całkowita energia wszystkich cząstek wynosi zatem
+
+$$ E cał = ∑ i E i. $$
+
+Jeśli udało się zarejestrować wszystkie cząstki biorące udział w reakcji (wszystkie produkty rozpadów), to całkowita energia $E cał$ powinna być równa energii w układzie środka masy zderzających się cząstek $W$. W praktyce nigdy się to nie udaje, ponieważ albo jest bardzo trudno je zauważyć (jak w przypadku neutrin), albo po prostu wymykają się z detektora i nie są rejestrowane. W wielu przypadkach jednak udaje się zrekonstruować dokładny przebieg każdej reakcji, tak jak można złożyć zegarek rozbity na drobne części. Szczegółowa informacja o łańcuchach rozpadów jest bardzo ważna z punktu widzenia weryfikacji modeli oddziaływania cząstek elementarnych.
+
+
+11.5 Model standardowy
+
+Największe wysiłki intelektualne naukowców skupiają się na rozwijaniu i weryfikacji modeli naukowych. Fizycy cząstek elementarnych poszukują najlepszych modeli ich oddziaływania. Podstawą dla nich są teorie grawitacji i elektromagnetyzmu rozwinięte w ciągu XVII, XVIII i XIX wieku. Celem ich pracy jest stworzenie zunifikowanej teorii wszystkiego, która umożliwiałaby zapisanie wszystkich oddziaływań między cząstkami w postaci jednego eleganckiego równania i uzyskanie spójnego pojedynczego obrazu całej fizyki oddziaływań. Równanie to mogłoby być samo w sobie bardzo złożone, jednak wielu naukowców uważa, że koncepcja stojąca za takim równaniem musi być bardzo prosta, przez co kiedyś będziemy w stanie powiedzieć: „Jak mogliśmy to przeoczyć? Przecież to było takie oczywiste!”.
+
+W tym podrozdziale poznamy szczegóły tzw. modelu standardowego – najlepszego obecnie modelu oddziaływań cząstek. Opisujemy go poprzez cztery podstawowe oddziaływania: grawitacyjne, elektromagnetyczne, słabe i silne jądrowe. Na końcu podsumujemy teorie unifikacji oddziaływań w fizyce.
+
+
+Wprowadzenie do modelu standardowego
+
+Model standardowy (ang. Standard Model) to współczesna teoria oddziaływań cząstek elementarnych, która opiera się na dwóch zasadniczych koncepcjach: teorii oddziaływań elektrosłabych oraz chromodynamice kwantowej. Chromodynamika kwantowa (QCD) (ang. quantum chromodynamics) to teoria oddziaływania ładunków kolorowych ze sobą. Teoria oddziaływań elektrosłabych (nazywana czasem małą teorią unifikacji) unifikuje elektrodynamikę kwantową (QED) (ang. quantum electrodynamics) – współczesną wersję elektromagnetyzmu – z teorią jądrowych oddziaływań słabych. W modelu standardowym wykorzystuje się narzędzia mechaniki zarówno relatywistycznej, jak i kwantowej.
+
+Oddziaływanie cząstek między sobą w modelu standardowym zachodzi poprzez wymianę bozonów pośredniczących, które odgrywają rolę nośników oddziaływań. Przykładowo oddziaływanie elektrostatyczne (Coulomba) między dwiema cząstkami naładowanymi elektrycznie odbywa się na zasadzie emisji i pochłaniania bezmasowych fotonów. To oddziaływanie może zachodzić teoretycznie przy dowolnej odległości między cząstkami. Jego efektem jest występowanie przyciągającej lub odpychającej siły Coulomba. Podobnie interpretujemy oddziaływanie kwarków – przyciągają się one poprzez wymianę gluonów. Leptony rozpraszają się na innych leptonach lub rozpadają na lżejsze leptony w wyniku wymiany masywnych bozonów $W$ i $Z$. Podsumowanie wszystkich oddziaływań w modelu standardowym znajduje się w Tabeli 11.6. Żeby zachować kompletność opisu, w tabeli wymieniono także oddziaływanie grawitacyjne, przenoszone za pośrednictwem bezmasowych grawitonów, jednak nie stanowi ono elementu modelu standardowego.
+
+Wszystkie oddziaływania w modelu standardowym można zapisać przy użyciu równań i diagramów. Równania matematyczne są w nim dość skomplikowane i zazwyczaj wykładane w ramach zaawansowanego kursu fizyki współczesnej. Jednak istotę modelu standardowego da się wyrazić łatwo przy pomocy diagramów Feynmana (ang. Feynman diagrams). Diagram taki, wprowadzony do fizyki przez amerykańskiego fizyka noblistę Richarda Feynmana (1918–1988), jest diagramem czasoprzestrzennym, w którym zapisujemy ewolucję czasową i oddziaływanie cząstek. Różne cząstki oznacza się różnymi symbolami, podobnie różne typy oddziaływań zaznacza się różnymi strzałkami. Oddziaływania cząstek w jednym wymiarze (wzdłuż wybranego kierunku w przestrzeni) przedstawia się w postaci wykresu zależności czasu od położenia (nie: położenia od czasu, jak zazwyczaj robimy w kinematyce). Dla przykładu za pomocą diagramu Feynmana omówmy rozpraszanie elektronu i neutrina elektronowego. Elektron porusza się w prawo, zgodnie z dodatnim kierunkiem osi $x$, i zderza się z neutrinem elektronowym, poruszającym się w lewo. W bliskiej odległości od siebie cząstki wymieniają bozon $Z$ (o obojętnym ładunku elektrycznym) – precyzyjniej: to elektron wysyła bozon $Z$ do neutrina. W wyniku tego elektron rozprasza się w lewo, a neutrino rozprasza się w prawo. Oddziaływanie nie jest natychmiastowe. Bozon $Z$ przemieszcza się między cząstkami przez pewien krótki czas. Rozpraszanie elektronu na neutrinie odbywa się za pośrednictwem oddziaływania słabego jądrowego. Występowanie siły między cząstkami nie może być wyjaśnione w ramach klasycznego elektromagnetyzmu, bo neutrino elektronowe nie jest obdarzone ładunkiem elektrycznym. Do oddziaływań słabych wrócimy jeszcze na koniec tego podrozdziału.
+
+
+Oddziaływanie elektromagnetyczne
+
+W świetle elektrodynamiki kwantowej siła oddziaływania elektromagnetycznego jest przenoszona między cząstkami naładowanymi za pomocą fotonów. Teoria ta opiera się na trzech podstawowych procesach: cząstka naładowana (np. elektron) przemieszcza się z jednego miejsca do drugiego, emituje lub absorbuje foton, a następnie dalej przemieszcza się do kolejnego miejsca. Gdy np. dwa elektrony oddziałują ze sobą, jeden z nich wysyła, a drugi pochłania foton. Fotony przenoszą energię i pęd z jednego elektronu na drugi. W efekcie otrzymujemy siłę odpychającą między elektronami. Mówimy, że wymienione fotony są wirtualne. Cząstka wirtualna (ang. virtual particle) to taka, która żyje zbyt krótko, by dało się ją zaobserwować. Fotony wirtualne mogą łamać zasadę zachowania energii. Żeby to zrozumieć, musimy odwołać się do zasady nieoznaczoności Heisenberga. Załóżmy, że czas życia fotonu $Δ t$ jest niezwykle krótki, w takim razie nieoznaczoność energii fotonu $Δ E$ może być bardzo duża, nawet większa niż energia potencjalna oddziaływania między elektronami.
+
+Żeby oszacować zasięg oddziaływania elektromagnetycznego, załóżmy, że nieoznaczoność energii fotonu jest porównywalna z samą energią fotonu. Zatem
+
+$$ Δ E ≈ E. $$
+
+Zgodnie z relacją Heisenberga dla energii i czasu otrzymujemy
+
+$$ Δ E ≈ ℏ Δ t, $$
+
+gdzie $ℏ = h ∕ 2 ⁢ π$ (czyt. h kreślone) jest zredukowaną stałą Plancka (albo stałą Diraca), natomiast $h$ jest stałą Plancka. Połączywszy oba równania, otrzymamy wzór na czas życia fotonu wirtualnego
+
+$$ Δ t ≈ ℏ E. $$
+
+Energia fotonu jest jednoznacznie zdefiniowana przez jego częstotliwość, $E = h ⁢ f$, więc
+
+$$ Δ t ≈ ℏ h ⁢ f ∼ 1 f = λ c. $$
+
+Pominęliśmy czynnik $2 ⁢ π$. Droga $d$, jaką foton może przebyć w tym czasie, wynosi
+
+$$ d = c ⋅ Δ t ≈ c ⋅ λ c = λ. $$
+
+Energia fotonu wirtualnego może być dowolnie mała, wobec czego jego długość fali może być dowolnie duża – nie ma przeszkód, aby była wręcz nieskończenie duża. Dlatego też mówimy, że siła oddziaływań elektromagnetycznych jest dalekozasięgowa.
+
+
+Słabe oddziaływanie jądrowe
+
+Oddziaływanie słabe odpowiada za wszystkie rodzaje rozpadów promieniotwórczych, w tym za rozpady cząstek elementarnych. Zasięg oddziaływania słabego jest bardzo mały (w przybliżeniu równy tylko $10 -18 ⁢ m$) i podobnie do innych oddziaływań w modelu standardowym można go opisać za pomocą wymiany cząstek pośredniczących. W odróżnieniu od oddziaływania elektromagnetycznego, w którym możemy podać siłę Coulomba, w przypadku oddziaływania słabego nie da się podać prostej definicji siły. Zachodzi ono w procesie wymiany jednego z trzech bozonów: $W +$, $W -$ lub $Z 0$. Model standardowy bezsprzecznie potwierdza istnienie tych cząstek o spinie równym $1$ oraz dokładnie przewiduje ich masy spoczynkowe. Zostały one po raz pierwszy zaobserwowane w latach 80. XX wieku w CERN, co było wielkim sukcesem modelu standardowego. Zmierzono ich dokładne masy, wynoszące $81 ⁢ GeV ∕ c 2$ w przypadku naładowanych elektrycznie bozonów $W$ oraz $90 ⁢ GeV ∕ c 2$ w przypadku obojętnego elektrycznie bozonu $Z 0$.
+
+Oddziaływanie słabe jądrowe najczęściej przejawia się w procesach rozpadu niestabilnych cząstek masywnych na lżejsze, jak w przypadku rozpadu neutronu na proton, elektron i antyneutrino elektronowe. Schemat tej reakcji możemy zapisać następująco
+
+$$ n ⟶ p + e − + ν ¯ e, $$
+
+gdzie $n$ oznacza neutron, $p$ – proton, $e -$ – elektron, a $ν ¯ e$ to prawie bezmasowe antyneutrino elektronowe. Ten proces, nazywany rozpadem $β −$, jest ważny z punktu widzenia wielu zjawisk fizycznych. Diagram Feynmana dla rozpadu $β −$ przedstawiono na Ilustracji 11.14 (a). Neutron emituje bozon $W -$ i zamienia się w proton, następnie bozon $W -$ rozpada się na elektron i antyneutrino elektronowe. Taki rozpad podobny jest do innego, w pewnym sensie odwrotnego, procesu rozpraszania
+
+$$ e - + p ⟶ n + ν e. $$
+
+W tym procesie proton emituje bozon $W +$ i zamienia się w neutron: Ilustracja 11.14 (b). Bozon $W +$ następnie oddziałuje z elektronem, w wyniku czego powstaje neutrino elektronowe. Inne przykłady procesów, w których ujawnia się oddziaływanie słabe, omówimy w zadaniach.
+
+Omówimy teraz zagadnienie zasięgu oddziaływania słabego, analogicznie do oddziaływania elektromagnetycznego. Przyjmiemy także, że nieoznaczoność energii cząstki pośredniczącej w przybliżeniu równa się jej masie ($E ≈ m ⁢ c 2$). Otrzymujemy
+
+$$ Δ t ≈ ℏ m ⁢ c 2. $$
+
+Największa odległość $d$, na jaką bozon pośredniczący może się oddalić, przy założeniu ruchu z prędkością bliską prędkości światła $c$, wynosi
+
+$$ d ≈ c ⋅ Δ t = ℏ m ⁢ c. $$
+
+Dla jednego z bozonów o masie spoczynkowej $m ⁢ c 2 ≈ 80 ⁢ GeV = 1,28 ⋅ 10 -8 ⁢ J$ otrzymujemy $m ⁢ c = 4,27 ⋅ 10 -17 ⁢ J ⁢ s ∕ m$. Zatem zasięg oddziaływania przenoszonego za pośrednictwem tego bozonu wynosi
+
+$$ d ≈ 1,05 ⋅ 10 -34 ⁢ J ⁢ s 4,27 ⋅ 10 -17 ⁢ J ⁢ s ∕ m ≈ 2 ⋅ 10 -18 ⁢ m. $$
+
+
+Silne oddziaływanie jądrowe
+
+Oddziaływania silne zachodzą między kwarkami, teorią tych oddziaływań zajmuje się chromodynamika kwantowa. Według niej kwarki wiążą się, wymieniając między sobą gluony. Kwarki są obdarzone zarówno ładunkiem elektrycznym o wartości $+ 2 ⁢ e ∕ 3$ lub $− e ∕ 3$, od którego zależy ich siła oddziaływania elektromagnetycznego, jak i ładunkiem kolorowym (czerwonym, niebieskim lub zielonym), który wpływa na wielkość oddziaływania silnego. Jak już wcześniej mówiliśmy, kwarki wiążą się tylko w dwójki lub trójki o kolorze neutralnym (są białe), przykładowo czerwony–niebieski–zielony albo czerwony–antyczerwony.
+
+Co ciekawe, same gluony, a więc nośniki oddziaływania silnego, też przenoszą ładunek kolorowy. To tak, jakby fotony miały ładunek elektryczny. Znamy osiem różnych gluonów: sześć z nich ma jeden z trzech kolorów oraz jednocześnie jeden z antykolorów (inny niż odpowiedni kolor), a dwa są neutralne (nie mają koloru), spójrzmy na Ilustracja 11.15 (a). Oddziaływanie dwóch kwarków za pośrednictwem kolorowych gluonów przedstawiamy za pomocą diagramu Feynmana na Ilustracji 11.15 (b). W pewnym momencie z lewej strony nadlatuje czerwony kwark dolny, a z prawej – zielony kwark dziwny (spójrzmy na dolny fragment diagramu). Kwark dolny wymienia z kwarkiem dziwnym gluon, który niesie ładunek czerwony i antyzielony jednocześnie. Na schemacie oznaczyliśmy antykolory przez barwy komplementarne do barw podstawowych (magenta, cyjan i żółty). Zgodnie z zasadami kwantowej chromodynamiki wszystkie oddziaływania w tym procesie (reprezentowane na diagramie przez wszystkie wierzchołki) muszą być koloru neutralnego (białe). Dlatego kwark dolny musi zmienić kolor z czerwonego na zielony, a kwark dziwny – z zielonego na czerwony. Kwarki wymieniają się kolorami.
+
+Jak możemy się spodziewać na podstawie powyższego przykładu, oddziaływania między kwarkami w jądrze atomowym mogą być bardzo skomplikowane. Ilustracja 11.16 przedstawia oddziaływanie protonu z neutronem. Zauważmy, że proton w tej reakcji zamienia się w neutron i odwrotnie. Występowanie par kwark–antykwark w tym procesie wymiennym sugeruje, że wiązanie nukleonów w jądra może być modelowane jako wymiana pionów.
+
+W praktyce szczegółowe zapisanie reakcji i prowadzenie obliczeń w chromodynamice kwantowej jest bardzo trudne. Ta trudność wynika z faktu, że wszystkim procesom zachodzącym w danej reakcji nieodłącznie towarzyszy oddziaływanie między wszystkimi cząstkami, którego nie da się pominąć w obliczeniach. Dlatego obliczenia chromodynamiki kwantowej często prowadzone są przy użyciu superkomputerów o dużej mocy obliczeniowej. Istnienie gluonów zostało potwierdzone w procesach rozpraszania elektronów na jądrach atomowych. W wyniku tych eksperymentów zauważono, że duża część pędu kwarków powstających w zderzeniach musi być unoszona przez inne cząstki – gluony, bez istnienia których całkowity pęd byłby znacznie mniejszy niż uzyskany.
+
+
+Teorie unifikacji
+
+W fizyce od dawna wiadomo, że siła (wielkość) oddziaływania między cząstkami zależy od odległości między nimi. Przykładowo dwie dodatnio naładowane elektrycznie cząstki doświadczają większego odpychania, gdy są bliżej siebie. W eksperymentach rozpraszania cząstek siła oddziaływania zależy od energii oddziałujących (padających na siebie) cząstek, ponieważ większa energia cząstek oznacza silniejsze oddziaływanie na mniejszej odległości.
+
+Fizycy cząstek elementarnych obecnie uważają, że wszystkie oddziaływania między cząstkami (za pośrednictwem czterech oddziaływań podstawowych) przy bardzo dużych ich energiach łączą się w jedno. Teoria unifikacji tłumaczy, jakiego typu są te zunifikowane oddziaływania i dlaczego załamują się (rozpadają) przy niższych energiach. W ramach wielkiej teorii unifikacji (GUT) rozważa się pojedyncze oddziaływanie łączące oddziaływania elektrosłabe i silne. Teoria wszystkiego to koncepcja połączenia wszystkich czterech typów oddziaływań podstawowych w jedną teorię oddziaływania. Zauważmy, że energie, przy których ma dochodzić do unifikacji, są niewyobrażalnie wysokie i jeszcze długo będą nie do osiągnięcia w eksperymentach. Jednak uważa się, że panowały one tuż po Wielkim Wybuchu, kiedy wszystkie oddziaływania rzeczywiście mogły stanowić jedno.
+
+
+11.6 Wielki Wybuch
+
+W rozdziale 11 do tej pory omawialiśmy cząstki elementarne, które są najmniejszymi obiektami dostępnymi naszym badaniom. Teraz zajmiemy się badaniem Wszechświata, który jest z kolei największym możliwym przedmiotem badań nauki. Cechą łączącą oba te z pozoru odległe tematy jest wysoka energia: badanie oddziaływań cząstek wymaga użycia takich właśnie energii, a największe możliwe występowały na wczesnych etapach ewolucji Wszechświata. Niektórzy fizycy uważają, że zunifikowane oddziaływania, o których mówiliśmy w poprzednim podrozdziale, mogły determinować ewolucję Wszechświata od najwcześniejszych chwil jego istnienia.
+
+
+Prawo Hubble’a
+
+W 1929 roku amerykański astronom Edwin Hubble (1889–1953) opublikował jedno z największych odkryć współczesnej astronomii. Dokonał on następujących obserwacji: (1) galaktyki wydają się oddalać od Ziemi, (2) prędkość ucieczki galaktyki ($v$) jest wprost proporcjonalna do jej odległości ($d$) od Ziemi. Obie wielkości, $v$ oraz $d$, można wyznaczyć eksperymentalnie na podstawie widm jasności gwiazdowych. Przykładowe dopasowanie do danych eksperymentalnych pokazuje Ilustracja 11.18 (oryginalny wykres Hubble’a zawierał duży rozrzut danych wokół linii prostej, ale trend liniowy był wyraźnie zachowany).
+
+Dane eksperymentalne sugerują wyraźnie prostą zależność liniową
+
+$$ v = H 0 ⁢ d, $$
+
+gdzie $H 0 = 70 ⁢ km ∕ s ⁢ Mpc$ jest stałą, znaną jako stała Hubble’a (ang. Hubble’s constant). (Uwaga: $1 ⁢ Mpc$ to milion parseków, a parsek jest jednostką długości równą $3,26$ roku świetlnego). Zależność powyższa nosi nazwę prawa Hubble’a (ang. Hubble’s law). Mówi ono, że odległe od nas galaktyki oddalają się w tempie $70 ⁢ km ∕ s$ na każdy megaparsek odległości. Wartość stałej Hubble’a odpowiada współczynnikowi nachylenia dopasowanej prostej na wykresie. Należy przyznać, że nazwa „stała Hubble’a” jest dość myląca, jej wartość bowiem zmienia się w czasie. Podana tutaj to stała Hubble’a obowiązująca dzisiaj. Prędkość ucieczki galaktyk można łączyć z wielkością kosmologiczną, jaką jest przesunięcie ku czerwieni, o którym powiemy więcej w dalszej części. Tak naprawdę miarą prędkości ucieczki jest właśnie owo przesunięcie ku czerwieni.
+
+Prawo Hubble’a poprawnie opisuje uśrednione zachowanie wszystkich galaktyk, z wyjątkiem tych najbliższych Ziemi. Przykładowo galaktyka odległa o $100 ⁢ Mpc$ od nas (odległość znamy z obserwacji jej rozmiarów i jasności) oddala się od nas ze średnią prędkością
+
+$$ v = 70 ⁢ km ∕ s ⁢ Mpc ⋅ 100 ⁢ Mpc = 7000 ⁢ km ∕ s. $$
+
+Ta prędkość może się oczywiście nieco zmieniać z powodu oddziaływania z sąsiednimi galaktykami. Możemy też przeprowadzić odwrotną analizę – na podstawie znanej prędkości ucieczki galaktyki, wynoszącej $10 000 ⁢ km ∕ s$ (co wiemy z obserwacji wielkości przesunięcia ku czerwieni), potrafimy obliczyć średnią odległość tej galaktyki od nas
+
+$$ d = v H 0 = 10 000 ⁢ km ∕ s 70 ⁢ km ∕ s ⁢ Mpc = 143 ⁢ Mpc. $$
+
+Pamiętajmy, że takie obliczenia są zawsze przybliżone, ponieważ nie znamy wartości stałej Hubble’a sprzed milionów czy miliardów lat. Tempo rozszerzania się Wszechświata na pewno zmieniało się i było inne np. $5$ miliardów lat temu.
+
+
+Model Wielkiego Wybuchu
+
+Naukowcy zajmujący się kosmologią (ang. cosmology) – nauką o początku, ewolucji i przyszłości Wszechświata, uważają, że powstał on w wyniku gigantycznej eksplozji, nazywanej Wielkim Wybuchem (ang. Big Bang), która nastąpiła ok. $13,7$ miliarda lat temu. Tego wybuchu nie należy jednak rozumieć jako eksplozji jakiegoś ciała i jego ekspansji w przestrzeni, jak np. wybuchu fajerwerku w powietrzu, ale raczej jako gwałtowne i szybkie rozszerzanie się samej przestrzeni. Na podstawie obecnych odległości i prędkości ucieczki gwiazd i galaktyk możemy określić ten moment w czasie, gdy cała materia skupiała się w jednym punkcie czasoprzestrzeni – na początku czasu.
+
+Naukowcy często wyjaśniają model Wielkiego Wybuchu i ekspansję czasoprzestrzeni za pomocą prostego modelu pompowanego balonu. Czerwone kropki na jego powierzchni symbolizują gwiazdy i galaktyki, a powłoka balonu jest modelem czterowymiarowej czasoprzestrzeni (Teoria względności). W miarę pompowania balon się rozszerza i każda kropka widzi, jakby wszystkie pozostałe kropki oddalały się od niej. Taki prosty obrazek uzmysławia nam dwie ważne cechy ekspansji Wszechświata. Po pierwsze, jest ona widoczna dla wszystkich obserwatorów we Wszechświecie, niezależnie od ich położenia. Nie istnieje środek Wszechświata, czy też środek ekspansji, zatem żaden punkt we Wszechświecie, także planeta Ziemia, nie jest szczególnie uprzywilejowany (zobacz ten przykład – Ćwiczenie 11.24).
+
+Po drugie, jak już sygnalizowaliśmy, w wyniku Wielkiego Wybuchu rozszerza się przestrzeń, a nie tylko zwiększa się odległość między galaktykami w zwykłej (statycznej) przestrzeni trójwymiarowej. Efekt kosmologicznej ekspansji dotyka wszystkich obiektów i zjawisk we Wszechświecie: planet, gwiazd, pyłów międzygwiezdnych, nawet światła. W konsekwencji długość fali świetlnej ($λ$) emitowanej przez odległe galaktyki jest rozciągnięta. Zwiększona długość fali powoduje zmniejszenie jej energii, a więc widziane przez obserwatora światło wydaje się „bardziej czerwone”. Efekt ten nazywa się kosmologicznym przesunięciem ku czerwieni (ang. redshift). Przesunięcie ku czerwieni jest mierzalne tylko dla naprawdę odległych obiektów, znajdujących się co najmniej $50$ milionów lat świetlnych od nas.
+
+
+Przykład 11.8
+
+
+Obliczanie prędkości i odległości galaktyk
+
+Zaobserwowano, że wielkość przesunięcia ku czerwieni pewnej galaktyki wynosi
+
+$$ z = λ obs − λ emit λ emit = 4,5. $$
+
+Oznacza to, że galaktyka porusza się z prędkością bliską prędkości światła. Wykorzystując relatywistyczny wzór na efekt Dopplera (podany w rozdziale Teoria względności), określmy:
+
+Jaka jest prędkość ucieczki tej galaktyki?
+
+Jaka jest odległość tej galaktyki od Ziemi?
+
+
+Strategia rozwiązania
+
+Musimy wykorzystać wzór na relatywistyczny efekt Dopplera w celu obliczenia prędkości na podstawie wielkości przesunięcia ku czerwieni, a następnie użyć prawa Hubble’a do obliczenia odległości od galaktyki.
+
+
+Rozwiązanie
+
+gdzie $β = v ∕ c.$ Po przekształceniu tego wzoru do postaci na $β$ i podstawieniu za $z$ otrzymujemy $β = 0,93$. Oznacza to, że prędkość ucieczki galaktyki wynosi $2,8 ⋅ 10 8 ⁢ m ∕ s$.
+
+Jeśli znamy prędkość ucieczki galaktyki, to na podstawie prawa Hubble’a obliczamy jej odległość od Ziemi
+
+$$ d = v H 0 = 2,8 ⋅ 10 8 ⁢ m ∕ s 73,8 ⋅ 10 3 ⁢ m ∕ s ⁢ Mpc = 3,8 ⋅ 10 3 ⁢ Mpc. $$
+
+
+Znaczenie
+
+Odległe galaktyki wydają się bardzo szybko oddalać od Ziemi. Przesunięcie ku czerwieni światła docierającego do nas z takich galaktyk może posłużyć do obliczenia prędkości ucieczki, która osiąga nawet ponad $90 ⁢%$ wartości prędkości światła. Pamiętajmy, że nie jest to prędkość ruchu samej galaktyki względem Ziemi, ale prędkość rozszerzania się przestrzeni.
+
+
+Struktura i dynamika ekspansji Wszechświata
+
+Uważa się, że w odpowiednio dużej skali Wszechświat jest jednorodny i izotropowy. Jest izotropowy, bo wygląda tak samo, gdy patrzymy w dowolnym kierunku. Jest też jednorodny, bo w każdym miejscu jest taki sam. Mówimy, że jednorodny i izotropowy Wszechświat jest gładki. Założenie o gładkości Wszechświata jest poparte licznymi obserwacjami, takimi jak prowadzone w ramach projektu APM Galaxy Survey w latach 80. i 90. XX wieku, podczas których w trakcie pomiarów fotometrii astronomicznej wykonano ok. $20$ milionów zdjęć kosmosu z Ziemi; czy przez satelity COBE (1989–1993) oraz WMAP (2001–2010) wystrzelone w misjach kosmologicznych do pomiaru tzw. promieniowania reliktowego, o którym powiemy w następnym podrozdziale. Model budowy Wszechświata gładkiego (jednorodnego i izotropowego) teoretycy zakładali jednak dużo wcześniej, zanim pojawiły się wyniki dokładnych obserwacji potwierdzających tę hipotezę. Założenie o jednorodności i izotropowości Wszechświata nazywane jest w nauce zasadą kosmologiczną (ang. cosmological principle).
+
+Otwartą kwestią pozostaje los i kierunek rozwoju rozszerzającego się gładkiego Wszechświata. W świetle ogólnej teorii względności stan Wszechświata charakteryzuje się za pomocą metryki czasoprzestrzeni o ogólnym równaniu
+
+$$ d s 2 = c 2 ⁢ d t 2 − a ⁡ t 2 ⁢ d Σ 2, $$
+
+gdzie $c$ to prędkość światła, $a$ to czynnik skali (jest funkcją czasu), natomiast $d Σ$ to element długości w trójwymiarowej przestrzeni. W układzie współrzędnych sferycznych ($r θ ϕ$) element długości możemy wyrazić jako
+
+$$ d Σ 2 = d r 2 1 − k ⁢ r 2 + r 2 ⁢ d θ 2 + sin θ 2 ⁢ d ϕ 2, $$
+
+gdzie $k$ jest stałą o wymiarze odwrotności pola powierzchni, definiującą krzywiznę przestrzeni. Stała $k$ niesie informację na temat rodzaju krzywizny Wszechświata:
+
+$k = 0$ (Wszechświat płaski, krzywizna typu płaszczyzny),
+
+$k < 0$ (Wszechświat otwarty, krzywizna typu hiperboli).
+
+Z kolei czynnik skalowania $a$ określa dynamikę ekspansji:
+
+$d a ∕ d t < 0$ (Wszechświat kurczący się).
+
+Zarówno czynnik skali $a$, jak i krzywiznę $k$ wyznacza się na podstawie równań ogólnej teorii względności Einsteina. Jeśli założymy model Wszechświata jako gazu galaktyk wypełniających czasoprzestrzeń, o gęstości $ρ$ i ciśnieniu $p$, oraz przyjmiemy dla uproszczenia $k = 0$ (płaski Wszechświat), to czynnik skali $a$ określimy za pomocą równania różniczkowego
+
+$$ d 2 a d t 2 = − 4 ⁢ π ⁢ G 3 ⋅ ρ + 3 ⁢ p ⋅ a, $$
+
+gdzie $G$ jest stałą grawitacji. Dla zwyczajnej, znanej nam materii przyjmujemy, że wartość $ρ + 3 ⁢ p$ jest dodatnia. Jeśli współczynnik skali jest także dodatni ($a > 0$), to z równania wynika, że jego zmiana w czasie maleje, a ekspansja Wszechświata hamuje w czasie (Wszechświat rozszerza się coraz wolniej). Jeśli przy $a > 0$ wyrażenie po prawej stronie jest ujemne (w jakiś sposób ciśnienie Wszechświata jest ujemne), to wartość czynnika skali przyspiesza w czasie i Wszechświat ekspanduje coraz szybciej. W świetle aktualnych badań kosmologicznych (np. na podstawie obserwacji supernowych) Wszechświat wydaje się stale rozszerzać, i to rozszerzać coraz szybciej. Uważa się, że wpływ na obecne tempo rozszerzania się ma gwałtowna ekspansja w bardzo wczesnym stadium rozwoju (ok. 300 000 lat po Wielkim Wybuchu). Nazywa się ją inflacją. Zagadką pozostaje przyczyna ujemnego ciśnienia materii. Uważa się, że wytwarza je nieznana nam forma materii i energii (o ciemnej materii i ciemnej energii wspomnimy w następnym podrozdziale). Równanie metryczne w zmiennych sferycznych, obowiązujące dla kulistych (sferycznych) rozkładów mas, podane powyżej, nazywa się metryką Friedmana-Lemaître’a-Robertsona-Walkera (FLRW) i jest jednym z najważniejszych równań kosmologii.
+
+
+11.7 Ewolucja wczesnego Wszechświata
+
+W poprzednim podrozdziale omawialiśmy strukturę i ewolucję Wszechświata. Powiedzieliśmy zwłaszcza, że Wszechświat wydaje się nieustannie rozszerzać, i to rozszerzać coraz szybciej (ekspansja Wszechświata przyspiesza). Teraz jednak zadamy sobie pytanie: Jak wyglądał Wszechświat na samym początku, tuż po powstaniu, i jak ewoluował? W tym podrozdziale przedstawimy aktualny stan wiedzy nt. wczesnego Wszechświata i jego ewolucji aż do dzisiejszej postaci.
+
+
+Wczesny Wszechświat
+
+Kosmolodzy uważają, że cała materia, jaka powstała na skutek Wielkiego Wybuchu, była w początkowym okresie (przed okresem inflacji) ściśnięta do obszaru znacznie mniejszego od atomu. Uważają oni, że Wszechświat był ekstremalnie gęsty i gorący, a wszystkie oddziaływania między cząstkami zachodziły pod wpływem jednej siły. Innymi słowy, cztery oddziaływania podstawowe, jakie dziś znamy (elektromagnetyczne, jądrowe silne i słabe, a nawet grawitacyjne), były zunifikowane do jednego. Ta unifikacja istniała przez bardzo krótki czas, zwany czasem Plancka. W jaki sposób i dlaczego ta jedność oddziaływań rozpadła się na dalszych etapach ewolucji Wszechświata, jest wciąż nierozwiązaną zagadką fizyki.
+
+Modele naukowe wczesnego Wszechświata są wciąż bardzo spekulatywne i nie ma jednej powszechnie akceptowanej teorii. Na Ilustracji 11.22 przedstawiamy jeden z możliwych i najbardziej prawdopodobnych scenariuszy zdarzeń od Wielkiego Wybuchu.
+
+Wielki Wybuch ($t < 10 -43 ⁢ s$): Załamują się wszystkie obowiązujące dzisiaj prawa fizyki. Tuż po Wielkim Wybuchu temperatura Wszechświata jest mniej więcej równa: $T = 10 32 ⁢ K$.
+
+Faza inflacji kosmologicznej ($t = 10 -43 ⁢ s$ do $t = 10 -35 ⁢ s$): Wszechświat rozszerza się eksponencjalnie, grawitacja oddziela się od pozostałych oddziaływań. Wszechświat ochładza się do temperatury: $T = 10 27 ⁢ K$.
+
+Era hadronowa i leptonowa ($t = 10 -35 ⁢ s$ do $t = 10 -6 ⁢ s$): Gdy Wszechświat kontynuuje ekspansję, oddziaływanie silne oddziela się od elektrosłabego – powstają hadrony, a następnie oddziaływanie elektrosłabe rozpada się na oddziaływanie słabe i oddziaływanie elektromagnetyczne – powstają leptony. Wszechświat jest gorącą zupą kwarków, leptonów, fotonów i innych cząstek, bez żadnej struktury.
+
+Era nukleonowa ($t = 10 -6 ⁢ s$ do $t = 225 ⁢ s$): Wszechświat składa się już z leptonów i hadronów (takich jak protony, neutrony i mezony), które pozostają w równowadze termicznej. Produkcja i anihilacja par cząstka−antycząstka zachodzą jednakowo łatwo, zatem także i fotony są w równowadze termicznej
+
+$$ \begin{matrix} \\ \\ \gamma + \gamma \leftrightarrow {\text{e}}^{\text{−}} + {\text{e}}^{ + } \\ \gamma + \gamma \leftrightarrow \text{p} + \overset{\text{−}}{\text{p}} \\ \gamma + \gamma \leftrightarrow \text{n} + \overset{\text{−}}{\text{n}}. \end{matrix} $$
+
+Liczby protonów i neutronów są praktycznie równe ze względu na reakcje z udziałem neutrin
+
+$$ \begin{matrix} \\ \\ {\nu }_{e} + \text{n} \leftrightarrow {\text{e}}^{\text{−}} + \text{p} \\ {\overset{\text{−}}{\nu }}_{e} + \text{p} \leftrightarrow {\text{e}}^{ + } + \text{n.} \end{matrix} $$
+
+Temperatura spada w dalszym ciągu i przy wartości $10 11 ⁢ K$ jest o wiele za niska, by dalsza produkcja par nukleon−antynukleon była możliwa. Liczba protonów i neutronów zaczyna przeważać nad liczbą ich antycząstek, więc reakcje anihilacji proton−antyproton ($p ⁢ p ¯$) oraz neutron−antyneutron ($n ⁢ n ¯$) ustają. Zaczynają powstawać pary proton−neutron związane w jądrach deuteru (deuterony).
+
+Era nukleosyntezy ($t = 225 ⁢ s$ do $t = 1000 ⁢ lat$): W miarę dalszej ekspansji Wszechświata deuterony oddziałują z protonami i neutronami, co prowadzi do tworzenia się większych jąder. Proces się powtarza i powstają coraz cięższe jądra. Pod koniec tej ery ok. $1 ∕ 4$ całej masy Wszechświata stanowiły jądra helu. (To tłumaczy, dlaczego w dzisiejszym Wszechświecie helu jest wciąż tak dużo). Energia fotonów zaczyna być niewystarczająca do produkcji par elektron−pozyton, więc elektrony i pozytony zaczynają ulegać anihilacji na wielką skalę i Wszechświat wypełnia morze fotonów.
+
+Era jonowa ($t = 1000 ⁢ lat$ do $t = 3000 ⁢ lat$): Temperatura jest tak niska, że jonizacja powstałych atomów nie zachodzi. Wszechświat wypełniają elektrony, pozytony, protony, jądra lekkich atomów i fotony.
+
+Era atomowa ($t = 3000 ⁢ lat$ do $t = 300 000 ⁢ lat$): Wszechświat schładza się poniżej $10 5 ⁢ K$, powstają atomy. Fotony nie oddziałują już z obojętnymi i stabilnymi atomami, więc oddzielają się od materii atomowej. Uwolnione fotony propagują się we Wszechświecie w postaci mikrofalowego promieniowania tła (ang. cosmic microwave background radiation, CMBR), które omówimy później.
+
+Era gwiazd i galaktyk ($t = 300 000 ⁢ lat$ do dzisiaj): Atomy i cząsteczki są przyciągane przez siły grawitacji i tworzą duże skupiska (obłoki pyłu, planety itd.). Atomy i cząsteczki wewnątrz gwiazd ulegają reakcjom syntezy jądrowej.
+
+Żeby w sposób ilościowy opisać cechy fizyczne wczesnego Wszechświata, przywołajmy znany związek energii termicznej ($E$) układu cząstek oddziałujących w temperaturze ($T$) równowagi cieplnej tego układu
+
+$$ E = k B ⁢ T, $$
+
+gdzie $k B$ jest stałą Boltzmanna. W ekstremalnie gorącym Wszechświecie w początkowym stadium jego rozwoju energie termiczne były niewyobrażalnie wysokie.
+
+
+Przykład 11.9
+
+
+Obliczanie energii Wielkiego Wybuchu
+
+Jaką energię termiczną miały cząstki zaraz po Wielkim Wybuchu?
+
+
+Strategia rozwiązania
+
+Energia termiczna pojedynczej cząstki wchodzącej w skład układu oddziałujących cząstek zależy tylko od temperatury równowagowej tego układu. Przybliżoną temperaturę Wszechświata tuż po Wielkim Wybuchu odczytamy z wcześniejszego diagramu czasowego.
+
+
+Rozwiązanie
+
+Kosmolodzy przypuszczają, że temperatura tuż po Wielkim Wybuchu wynosiła $T = 10 32 ⁢ K$. W takim razie energia termiczna cząstek wynosiła
+
+$$ k B ⁢ T ≈ 10 -4 ⁢ eV ∕ K ⋅ 10 32 ⁢ K = 10 28 ⁢ eV = 10 19 ⁢ GeV. $$
+
+
+Znaczenie
+
+Energia, jaka panowała we wczesnym Wszechświecie, jest o wiele rzędów wielkości większa niż obecnie możliwa do uzyskania przez człowieka w największych akceleratorach. Pozwalają one osiągnąć energie wiązek rzędu najwyżej $10 4 ⁢ GeV$.
+
+Nukleony powstają przy energiach rzędu energii spoczynkowej protonu, czyli ok. $1000 ⁢ MeV$. Takim energiom odpowiada temperatura
+
+$$ T = 1000 ⁢ MeV 8,62 ⋅ 10 11 ⁢ MeV ∕ K = 1,2 ⋅ 10 13 ⁢ K. $$
+
+Temperatury tego rzędu lub wyższe panowały w pierwszej sekundzie po Wielkim Wybuchu. Podobne oszacowanie możemy wykonać dla formowania atomów. Powstają one przy energii rzędu energii jonizacji atomu wodoru w stanie podstawowym ($13,6 ⁢ eV$). Temperatura efektywna przy tej energii wynosi
+
+$$ T = 13 ⁢ eV 8,62 ⋅ 10 5 ⁢ eV ∕ K = 1,6 ⋅ 10 5 ⁢ K. $$
+
+Tworzenie się atomów zachodziło więc długo po oddzieleniu się czterech oddziaływań podstawowych, łącznie z oddziaływaniem wiążącym protony i neutrony w jądra atomowe (oddziaływanie silne) i oddziaływaniem wiążącym elektrony z jądrami atomowymi (oddziaływanie elektromagnetyczne).
+
+
+Nukleosynteza lekkich pierwiastków
+
+Względne abundancje lekkich pierwiastków (wodoru, helu, litu i berylu) we Wszechświecie niosą wiele informacji o jego wczesnym okresie. Wyniki pomiarów wskazują, że większość helu ma pochodzenie pierwotne (powstała w wyniku nukleosyntezy zaraz po Wielkim Wybuchu). Okazało się też, że aż $25 ⁢%$ całej materii we Wszechświecie stanowi hel, a tak wielka ilość nie mogła powstać tylko w wyniku reakcji termojądrowych w gwiazdach.
+
+Jakie pierwiastki powstały tuż po Wielkim Wybuchu? Na pewnym etapie temperatura panująca we Wszechświecie osiągnęła wartość sprzyjającą tworzeniu się jąder atomowych (wiązania nukleonów w jądra atomowe) – ten etap nazywamy pierwotną nukleosyntezą (ang. nucleosynthesis). Podobne zjawiska zachodzą obecnie we wnętrzach gwiazd, także w naszym Słońcu. Pierwotna nukleosynteza zaczęła zachodzić w kilkaset sekund po Wielkim Wybuchu.
+
+Jak wyglądał proces pierwotnej nukleosyntezy i jakie pierwiastki powstały w jego wyniku? Po pierwsze, protony i neutrony zaczęły się łączyć w deuterony 2H, czyli jądra deuteru. Następnie deuterony wychwytywały dodatkowy neutron i tworzyły się trytony 3H – jądra radioaktywnej odmiany wodoru nazywanej trytem. Deuterony wychwytywały także protony, w wyniku czego powstawały jądra izotopu helu-3, 3He. Gdy jądra 3H wyłapały proton albo jądra 3He wychwyciły neutron, powstawały jądra helu o liczbie atomowej 4, 4He. Na tym etapie nukleosyntezy pierwotnej stosunek protonów do neutronów wynosił ok. $7$: $1$. Procesy tworzenia jąder helu zużyły niemal wszystkie dostępne neutrony. Cały proces produkcji helu zajął tylko ok. $3$ minut i niemal natychmiast cała materia we Wszechświecie została związana w jednej czwartej w jądra 4He oraz częściowo w jądra 2H, 3H i 3He. Powstały także bardzo niewielkie ilości jąder litu 7Li i berylu 7Be. W tym czasie ciągle spadała temperatura, aż jej wartość stała się tak niska, że nukleosynteza została przerwana. W obecnym kształcie Wszechświata abundancje lekkich pierwiastków 2H, 4He czy 7Li, powstałych w wyniku pierwotnej nukleosyntezy, w znacznym stopniu zależą od lokalnej gęstości materii.
+
+Wielkości abundancji przewidziane w modelu nukleosyntezy pierwotnej mogą stanowić świetny sprawdzian poprawności teorii Wielkiego Wybuchu i samej nukleosyntezy pierwotnej. Niedawno zakończony eksperyment WMAP (ang. Wilkinson Microwave Anisotropy Probe) przyniósł wyniki zgodne z przewidywaniami modelu. Zgodność danych eksperymentalnych z przewidywaniami teoretycznymi stanowi przekonujące potwierdzenie słuszności teorii Wielkiego Wybuchu.
+
+
+Mikrofalowe promieniowanie tła
+
+Zgodnie z przewidywaniami modeli kosmologicznych Wielki Wybuch powinien pozostawić we Wszechświecie ślad w postaci mikrofalowego promieniowania tła (ang. cosmic microwave background radiation, CMBR lub po prostu CMB), które powstało na końcu ery atomowej. Promieniowanie tła nazywane jest także promieniowaniem reliktowym, jako że stanowi dowód zjawisk zachodzących we wczesnym Wszechświecie. Natężenie tego promieniowania powinno być poprawnie opisane krzywą zdolności emisyjnej ciała doskonale czarnego (Fotony i fale materii). Zależność długości fali w maksimum tego rozkładu od temperatury podaje prawo Wiena
+
+$$ λ max = 2,898 ⋅ 10 -3 ⁢ m ⁢ K T, $$
+
+gdzie $T$ jest temperaturą mierzoną w kelwinach. Naukowcy spodziewali się, że postępująca ekspansja Wszechświata spowodowała rozciągnięcie światła (rozciągnięcie długości fali), więc temperatura tego promieniowania powinna być bardzo niska, a energia i długość fali powinny być duże.
+
+W 1965 roku dwaj pracownicy amerykańskiego Bell Laboratories: Arno Penzias (ur. 1933) i Robert Wilson (ur. 1941), podczas testowania nowego systemu komunikacji satelitarnej nie mogli pozbyć się szumów w zastosowanych antenach. Nie był to wynik niedoskonałości urządzeń elektronicznych, ale efekt rejestracji promieniowania o długości fali rzędu centymetrów (zakres długości fal typowy dla promieniowania mikrofalowego). Szum dochodził z każdego kierunku przestrzeni, także z wnętrza Ziemi. Później skojarzono go z mikrofalowym promieniowaniem tła. W 1978 roku Wilson i Penzias otrzymali za odkrycie promieniowania reliktowego Nagrodę Nobla. Natężenie mikrofalowego promieniowania tła, zarejestrowane przez satelitę WMAP, przedstawiono na Ilustracji 11.23. Dopasowanie do danych krzywej rozkładu Plancka pozwoliło ustalić temperaturę tego promieniowania $T = 2,7 ⁢ K$.
+
+Związanie cząstek w atomy na początku ewolucji Wszechświata sprawiło, że materia mniej chętnie zaczęła oddziaływać ze światłem. Dlatego też fotony, które dziś obserwujemy w promieniowaniu tła, musiały się oddzielić od materii przy temperaturze $T$ odpowiadającej energii ok. $1 ⁢ eV$ (jest to w przybliżeniu energia jonizacji atomu). Tej energii odpowiada temperatura
+
+$$ k B ⁢ T ∼ 1 ⁢ eV ⇒ T = 1 ⁢ eV 8,617 ⋅ 10 5 ⁢ eV ∕ K ∼ 10 4 ⁢ K. $$
+
+Według obecnych modeli kosmologicznych, ostatni moment, gdy fotony jeszcze rozpraszały się na cząstkach naładowanych, nastąpił ok. $380 000 ⁢ lat$ po Wielkim Wybuchu. Wcześniej cała materia we Wszechświecie miała formę plazmy, a fotony były w niej uwięzione.
+
+
+Materia i antymateria
+
+Z bezpośrednich obserwacji wiemy, że antymaterii jest w dzisiejszym Wszechświecie bardzo mało. Ziemia i nasz Układ Słoneczny składają się niemal wyłącznie z materii, podobnie cały obserwowany Wszechświat wydaje się zdominowany przez materię. Dowodem na to jest fakt, że nie obserwujemy efektów anihilacji cząstek i antycząstek docierających do nas z kosmosu, np. nie widzimy wyraźnie silniejszego sygnału fotonów $γ$ o energii $0,511 ⁢ MeV$, pochodzących z anihilacji elektronów i pozytonów. Naturalna produkcja antymaterii w kosmosie zachodzi jedynie na drodze zderzeń cząstek i rozpadów promieniotwórczych $β +$, ale prowadzi to do powstania tylko niewielkich ilości antycząstek, które w dodatku szybko ulegają anihilacji, pozostawiając przy życiu jedynie czystą energię.
+
+Pomimo tak przytłaczającej dominacji materii nad antymaterią we Wszechświecie model standardowy cząstek elementarnych i wszystkie pomiary eksperymentalne pokazują jedynie drobną preferencję w produkcji materii. Różnice w oddziaływaniu cząstek materii i antymaterii ze sobą i między sobą są bardzo nieznaczne. Przykładowo w procesie rozpadu obojętnego kaonu powstaje tylko odrobinę więcej materii niż antymaterii. Być może na drodze tego typu reakcji została zaburzona równowaga między materią a antymaterią we wczesnym Wszechświecie. Cała antymateria ulegała anihilacji z materią, a jedynie jej nadmiar przetrwał, by uformować gwiazdy i galaktyki. W tym sensie niezliczona mnogość gwiazd we Wszechświecie może być jedynie pozostałością po pierwotnej materii wytworzonej w wyniku Wielkiego Wybuchu. Nie znamy satysfakcjonującej odpowiedzi na pytanie, dlaczego materia dominuje nad antymaterią w dzisiejszym Wszechświecie.
+
+
+Ciemna materia i ciemna energia
+
+W ciągu ostatnich trzech dekad dzięki nowoczesnym i potężnym technikom badawczym odkryto, że Wszechświat wypełnia ciemna materia (ang. dark matter). Ten typ materii jest szczególnie interesujący i ważny, bo obecnie naukowcy zupełnie nie wiedzą, co to może być! Niewątpliwie jednak istnieje, bo jej obecność powoduje ugięcie światła docierającego do nas z odległych gwiazd. Jeżeli światło z odległej gwiazdy lub całej galaktyki ulega zagięciu w polu grawitacyjnym pewnego skupiska materii (także ciemnej), które znajduje się na linii pomiędzy nami a gwiazdą, to może powstać obraz tej samej gwiazdy lub galaktyki w dwóch różnych miejscach. Zakrzywienie światła w polu grawitacyjnym masywnego obiektu w przestrzeni kosmicznej nazywamy soczewkowaniem grawitacyjnym (ang. gravitational lensing). W niektórych przypadkach światło dociera do nas po różnych torach wokół soczewki (np. dużej galaktyki) i wtedy obserwujemy jasny krąg światła od obserwowanego obiektu.
+
+O ciemnej materii wiemy aktualnie tylko tyle, że jest zimna (ma niską temperaturę, a więc nie świeci – dlatego jest ciemna), wolno się porusza w przestrzeni kosmicznej i słabo oddziałuje ze znaną nam materią. Potencjalnymi kandydatami na ciemną materię są hipotetyczne cząstki zwane neutralinami (partnerzy bozonów $Z$, fotonów i bozonów Higgsa w teorii supersymetrii) albo wirujące po malutkich pierścieniach cząstki przenikające do nas z wielowymiarowej przestrzeni, przewidywane w teoriach strun.
+
+Coraz większa precyzja pomiarów astronomicznych doprowadziła do odkrycia nowej formy energii, zwanej ciemną energią (ang. dark energy). Dzięki niej udaje się wytłumaczyć większe niż oczekiwane wartości przesunięcia ku czerwieni bardzo odległych galaktyk. Bardzo duże wielkości redshiftu (czyli przesunięcia ku czerwieni) sugerują, że Wszechświat nie tylko się rozszerza, ale robi to coraz szybciej. O naturze i właściwościach ciemnej materii właściwie nic nie wiemy. Zarówno ciemna materia, jak i ciemna energia stanowią dwie bardzo interesujące i wciąż nierozwiązane zagadki współczesnej fizyki. Na podstawie obserwacji naukowcy szacują, że aż $68,3 ⁢%$ całkowitej energii we Wszechświecie stanowi ciemna energia, $26,8 ⁢%$ przypada na ciemną materię, a jedynie $4,9 ⁢%$ to energia związana ze znanymi nam cząstkami (tzw. materia świecąca, którą widzimy w bezpośrednich obserwacjach – Ilustracja 11.27). Wziąwszy pod uwagę tajemniczy charakter ciemnej materii i ciemnej energii, skromne wyznanie Izaaka Newtona sprzed trzech stuleci wydaje się nader aktualne również dzisiaj:
+
+„Nie wiem, jak wyglądam w oczach świata, lecz dla siebie jestem tylko chłopcem bawiącym się na morskim brzegu, pochylającym się i znajdującym piękniejszą muszelkę lub kamień gładszy niż inne, podczas gdy wielki ocean prawdy jest ciągle zakryty przede mną”.
