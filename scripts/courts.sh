@@ -45,7 +45,11 @@ COURTS=("courts/arith_court.py" "courts/algo_court.py"
         "scripts/ask_reach.py" "scripts/band_reach.py" "scripts/biblio_reach.py" "courts/ruverbs_court.py" "courts/script_court.py" "scripts/word_mutants.py" "scripts/shelf_court.py" "scripts/ask_width.py" "courts/notationvar_court.py"
         "courts/prosetree_court.py" "courts/longdiv_court.py"
         "scripts/form_census.py" "scripts/verbthings_court.py"
-        "scripts/coverage.py")
+        "scripts/coverage.py"
+        # ДОМА РАЗГОВОРА И РАССУЖДЕНИЯ (04.09). Их суды жили в палате и стерегли
+        # ВОРОТА, но в этом списке не стояли, и потому вердикт «пало 0 из 103»
+        # их не считал — ноль с укороченным знаменателем (М-264). Считает.
+        "courts/behavior_court.py" "courts/topics_court.py" "courts/nature_court.py" "courts/links_court.py" "courts/scale_court.py" "courts/opposites_court.py" "courts/roles_court.py" "courts/joints_court.py" "courts/dialogue_court.py" "courts/worldfacts_court.py" "courts/infer_court.py" "scripts/circle_probe.py")
 FELL=0
 for entry in "${COURTS[@]}"; do
   set -- $entry; tool="$1"; shift
