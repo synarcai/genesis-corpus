@@ -858,6 +858,31 @@
       "actors": []
     },
     {
+      "name": "hypo",
+      "file": "datasets/genesis_hypo.txt",
+      "genre": "TESTING A HYPOTHESIS — and THE CHIEF ASYMMETRY of knowledge. The haste house showed that cases do not prove; the strict-inference house showed valid and invalid steps. Neither showed THE ACT ITSELF: put forward a guess, choose a test, run it and name the outcome — and name it DIFFERENTLY in the two cases, because the two cases are NOT EQUAL IN FORCE. «I think every number divisible by 6 is divisible by 3. I will test 18: 18 is divisible by 6 and divisible by 3. It holds so far — but one test does not prove it.» And: «I think every number divisible by 3 is divisible by 6. I will test 9: 9 is divisible by 3 but not divisible by 6. So no — one test is enough to reject it.» That is the whole house. A passing test yields «IT HOLDS SO FAR» and never «so yes»; a failing one yields «SO NO» at once. The asymmetry is named in the show itself rather than left to the reader: an organism that learns it will not declare a rule from three agreements, and will not look for a fourth test of what is already rejected. The hypotheses come in mutually inverted pairs, so one and the same shape of guess yields both outcomes, and the difference between them lies not in the words but in the DEED. The witness is the smallest fit number and is computed, never declared.",
+      "act": [
+        "decide",
+        "refute",
+        "recount",
+        "translate"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "reply",
       "file": "datasets/genesis_reply.txt",
       "genre": "REPLY — advice to the interlocutor RESTING ON A DECLARED LAW. The owner's order about «basic behavioural and psychological laws» was half closed: the behaviour house gives the LAW but not its APPLICATION TO THE PERSON SPEAKING. Here a person names their state and the answer is not sympathy without ground but advice with a checkable law behind it: «i am tired. what should i do? take a rest: when a person is tired, that person makes more mistakes.» The law is never rewritten here — it is quoted from the behaviour house, and the court reads it exactly so: it does not trust the house's own list but compares the tail of the line with the neighbour's declaration word for word. Advice under which a law of a DIFFERENT genus is placed is true in both halves and false as a whole — the same nature as a circular answer. The question head is chosen BY GENUS: tiredness, hunger and haste are asked WHAT TO DO (the state is fixable by action); fear, habit and missed attention are asked WHY (there is nothing to fix, there is something to understand). The sympathetic pair is declared for the NEIGHBOUR and never written as a show — see М-267.",
