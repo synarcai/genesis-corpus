@@ -37,6 +37,19 @@
     "dzień": ("dzień", "dni", "dni"),
     "godzina": ("godzina", "godziny", "godzin"),
     "minuta": ("minuta", "minuty", "minut"),
+    # ЧАСТИ ТЕЛА И ПРЕДМЕТОВ (04.09, мир природы)
+    "noga": ("noga", "nogi", "nóg"),
+    "łapa": ("łapa", "łapy", "łap"),
+    "skrzydło": ("skrzydło", "skrzydła", "skrzydeł"),
+    "palec": ("palec", "palce", "palców"),
+    "koło": ("koło", "koła", "kół"),
+    "ząb": ("ząb", "zęby", "zębów"),
+    "ręka": ("ręka", "ręce", "rąk"),
+    "oko": ("oko", "oczy", "oczu"),
+    "kolor": ("kolor", "kolory", "kolorów"),
+    "planeta": ("planeta", "planety", "planet"),
+    "serce": ("serce", "serca", "serc"),
+    "stopień": ("stopień", "stopnie", "stopni"),
 }
 
 

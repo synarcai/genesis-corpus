@@ -181,7 +181,7 @@ cual cuanto cuantos que es hay donde se ¿es ¿son ¿cuál ¿cuánto ¿qué ¿c�
 ¿y ¿quieres ¿estás ¿por
 che cosa quanto quanti dove quale come chi perché intendi sei
 qual quantos onde como quem porque porquê queres concordas
-czy ile co jaki jaka jakie gdzie kiedy jak czym dlaczego masz zgadzasz
+czy ile co jaki jaka jakie jakiej jakim jakich gdzie kiedy jak czym dlaczego masz zgadzasz
 wat hoe hoeveel welke waar waarom bedoel ben klopt en
 ты а
 # ЭЛЛИПТИЧЕСКИЙ ВОПРОС ОТКРЫВАЕТСЯ СОЮЗОМ, а не вопросным словом: «а у тома?»,
@@ -268,8 +268,16 @@ def _в_конце(слова):
 # ПРЕДЛОГ ПЕРЕД ЗАЧИНОМ ПРОЗРАЧЕН: «за сколько шагов», «во сколько раз»,
 # «на что делится», «by how much», «for what n» — вопросное слово стоит
 # вторым, и предлог его не прячет.
+# ПРЕДЛОГ ВПРАВЕ ОТКРЫТЬ ВОПРОС, И ЯЗЫКОВ ЭТИХ БОЛЬШЕ, ЧЕМ ДВА (04.09, мир
+# природы): «bei welcher Temperatur kocht Wasser?», «bij welke temperatuur?»,
+# «w jakiej temperaturze?», «a che temperatura?», «à quelle température?» —
+# вопросное слово стоит ВТОРЫМ, а первым идёт предлог, и это не порча зачина,
+# а строй языка. Список предлогов и есть то место, где такой строй объявляется.
 ПРЕДЛОГИ = frozenset("""в за во на по с со до через от к ко у из о об при
-in at by for from to of on with about under over""".split())
+in at by for from to of on with about under over
+bei bij mit von aus nach für über
+w o na do przy z za
+à de en dans par pour sur sous a da su tra fra em com por""".split())
 # ЗАЧИН ЖИВЁТ В НАЧАЛЕ ЛЮБОЙ КЛАУЗЫ ВОПРОСА, А НЕ ТОЛЬКО ПОСЛЕДНЕЙ.
 # «если n чётно, чётно ли n + 8?» несёт зачин первым словом; «для
 # f(t) = t^2, чему равно…» — вторым; «какова скорость тела, прошедшего
