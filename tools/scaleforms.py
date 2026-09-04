@@ -1,0 +1,188 @@
+#!/usr/bin/env python3
+"""ДОМ ШКАЛЫ — сравнение вещей мира и ТРАНЗИТИВНОСТЬ как проверяемый вывод.
+
+Дом сравнения (`compare`) сравнивает ЧИСЛА при вещах: «у дана на 2 яблока
+больше». Здесь сравниваются САМИ ВЕЩИ — «слон больше собаки», — и числа при них
+нет вовсе. Такое сравнение нельзя проверить пересчётом, и потому оно обыкновенно
+не входит в корпус, где всякая строка обязана быть проверяема.
+
+ПРОВЕРЯЕМЫМ ЕГО ДЕЛАЕТ ШКАЛА. Вещи объявлены УПОРЯДОЧЕННЫМ рядом, и всякий показ
+есть утверждение о МЕСТАХ в этом ряду: «слон больше собаки» истинно ровно тогда,
+когда слон стоит в ряду позже собаки. Ряд объявлен, места считаются, ложь ловится.
+
+И тогда становится возможным то, ради чего дом и написан: **ТРАНЗИТИВНОСТЬ**.
+
+    слон больше собаки. собака больше мыши. значит слон больше мыши.
+
+Это не факт о мире, а ВЫВОД из двух фактов, и он проверяем тем же рядом. Показ,
+в котором посылки верны, а следствие нет, дом не напишет; строка чужая, в которой
+следствие не следует, будет названа ложью. Корпус, у которого есть проверяемый
+вывод, учит не только знанию, но и переходу от знания к знанию.
+
+СРАВНИТЕЛЬНОЕ СОГЛАСУЕТСЯ С ПОДЛЕЖАЩИМ, и потому объявлено ПРИ КАЖДОЙ ВЕЩИ, а не
+при языке: французское «une personne est plus GRANDE», но «un chat est plus
+GRAND». Языки, где сравнительное неизменно (русское «больше», немецкое
+«größer»), объявляют одно и то же слово шесть раз — и это не расточительство, а
+честность: день, когда шестая вещь потребует иной формы, не будет стоить правки
+рамки.
+
+СРАВНИТЕЛЬНОЕ ТРЕБУЕТ СВОЕГО ПАДЕЖА, и он объявлен при каждой вещи: русское
+«больше собакИ» и польское «od myszy» суть родительный, немецкое «als eine Maus»
+— именительный, французское «qu'une souris» несёт элизию. Дом объявляет форму
+сравнения как она звучит.
+
+    python3 tools/scaleforms.py    # самопроверка с мутантами
+"""
+ФОРМЫ = ("пара", "вопрос", "цепь")
+
+ЯЗЫКИ = {
+    "ru": dict(
+        пара="{a} {г} {b2}.",
+        вопрос="кто {г}: {a} или {b}? {a}.",
+        цепь="{a} {г} {b2}. {b} {гb} {c2}. значит {a} {г} {c2}.",
+        г_воп="больше",
+        ряд=(("мышь", "мыши", "больше"), ("кошка", "кошки", "больше"), ("собака", "собаки", "больше"), ("человек", "человека", "больше"), ("лошадь", "лошади", "больше"), ("слон", "слона", "больше")),
+    ),
+    "en": dict(
+        пара="{a} is {г} than {b2}.",
+        вопрос="which is {г}: {a} or {b}? {a}.",
+        цепь="{a} is {г} than {b2}. {b} is {гb} than {c2}. so {a} is {г} than {c2}.",
+        г_воп="bigger",
+        ряд=(("a mouse", "a mouse", "bigger"), ("a cat", "a cat", "bigger"), ("a dog", "a dog", "bigger"), ("a person", "a person", "bigger"), ("a horse", "a horse", "bigger"), ("an elephant", "an elephant", "bigger")),
+    ),
+    "de": dict(
+        пара="{a} ist {г} als {b2}.",
+        вопрос="was ist {г}: {a} oder {b}? {a}.",
+        цепь="{a} ist {г} als {b2}. {b} ist {гb} als {c2}. also ist {a} {г} als {c2}.",
+        г_воп="größer",
+        ряд=(("eine Maus", "eine Maus", "größer"), ("eine Katze", "eine Katze", "größer"), ("ein Hund", "ein Hund", "größer"), ("ein Mensch", "ein Mensch", "größer"), ("ein Pferd", "ein Pferd", "größer"), ("ein Elefant", "ein Elefant", "größer")),
+    ),
+    "fr": dict(
+        пара="{a} est plus {г} {b2}.",
+        вопрос="qu'est-ce qui est plus {г} : {a} ou {b} ? {a}.",
+        цепь="{a} est plus {г} {b2}. {b} est plus {гb} {c2}. donc {a} est plus {г} {c2}.",
+        г_воп="grand",
+        ряд=(("une souris", "qu'une souris", "grande"), ("un chat", "qu'un chat", "grand"), ("un chien", "qu'un chien", "grand"), ("une personne", "qu'une personne", "grande"), ("un cheval", "qu'un cheval", "grand"), ("un éléphant", "qu'un éléphant", "grand")),
+    ),
+    "es": dict(
+        пара="{a} es {г} que {b2}.",
+        вопрос="¿cuál es {г}: {a} o {b}? {a}.",
+        цепь="{a} es {г} que {b2}. {b} es {гb} que {c2}. así que {a} es {г} que {c2}.",
+        г_воп="más grande",
+        ряд=(("un ratón", "un ratón", "más grande"), ("un gato", "un gato", "más grande"), ("un perro", "un perro", "más grande"), ("una persona", "una persona", "más grande"), ("un caballo", "un caballo", "más grande"), ("un elefante", "un elefante", "más grande")),
+    ),
+    "it": dict(
+        пара="{a} è {г} di {b2}.",
+        вопрос="che cosa è {г}: {a} o {b}? {a}.",
+        цепь="{a} è {г} di {b2}. {b} è {гb} di {c2}. quindi {a} è {г} di {c2}.",
+        г_воп="più grande",
+        ряд=(("un topo", "un topo", "più grande"), ("un gatto", "un gatto", "più grande"), ("un cane", "un cane", "più grande"), ("una persona", "una persona", "più grande"), ("un cavallo", "un cavallo", "più grande"), ("un elefante", "un elefante", "più grande")),
+    ),
+    "pt": dict(
+        пара="{a} é {г} do que {b2}.",
+        вопрос="qual é {г}: {a} ou {b}? {a}.",
+        цепь="{a} é {г} do que {b2}. {b} é {гb} do que {c2}. portanto {a} é {г} do que {c2}.",
+        г_воп="maior",
+        ряд=(("um rato", "um rato", "maior"), ("um gato", "um gato", "maior"), ("um cão", "um cão", "maior"), ("uma pessoa", "uma pessoa", "maior"), ("um cavalo", "um cavalo", "maior"), ("um elefante", "um elefante", "maior")),
+    ),
+    "nl": dict(
+        пара="{a} is {г} dan {b2}.",
+        вопрос="wat is {г}: {a} of {b}? {a}.",
+        цепь="{a} is {г} dan {b2}. {b} is {гb} dan {c2}. dus {a} is {г} dan {c2}.",
+        г_воп="groter",
+        ряд=(("een muis", "een muis", "groter"), ("een kat", "een kat", "groter"), ("een hond", "een hond", "groter"), ("een mens", "een mens", "groter"), ("een paard", "een paard", "groter"), ("een olifant", "een olifant", "groter")),
+    ),
+    "pl": dict(
+        пара="{a} jest {г} od {b2}.",
+        вопрос="co jest {г}: {a} czy {b}? {a}.",
+        цепь="{a} jest {г} od {b2}. {b} jest {гb} od {c2}. więc {a} jest {г} od {c2}.",
+        г_воп="większe",
+        ряд=(("mysz", "myszy", "większy"), ("kot", "kota", "większy"), ("pies", "psa", "większy"), ("człowiek", "człowieka", "większy"), ("koń", "konia", "większy"), ("słoń", "słonia", "większy")),
+    ),
+}
+
+for _яз, _я in ЯЗЫКИ.items():
+    assert len(_я["ряд"]) == len(ЯЗЫКИ["ru"]["ряд"]), (_яз, len(_я["ряд"]))
+    _имена = [т[0] for т in _я["ряд"]]
+    assert len(_имена) == len(set(_имена)), (_яз, "вещь стоит в ряду дважды")
+
+
+def показ(язык, форма, i, j=None, k=None):
+    """Показ о МЕСТАХ в объявленном ряду: больше тот, кто стоит позже."""
+    я = ЯЗЫКИ[язык]
+    ряд = я["ряд"]
+    n = len(ряд)
+    if форма == "цепь":
+        # ТРИ РАЗЛИЧНЫХ МЕСТА В ПОРЯДКЕ УБЫВАНИЯ: вывод строится рядом, а не рукой
+        a, b, c = i % n, (i - 1) % n, (i - 2) % n
+        if not (a > b > c):
+            return None
+        return я["цепь"].format(a=ряд[a][0], b=ряд[b][0], b2=ряд[b][1], c2=ряд[c][1],
+                                г=ряд[a][2], гb=ряд[b][2])
+    a = i % n
+    b = (j if j is not None else i - 1) % n
+    if a <= b:
+        return None            # больше тот, кто позже; равных дом не пишет
+    if форма == "пара":
+        return я["пара"].format(a=ряд[a][0], b2=ряд[b][1], г=ряд[a][2])
+    # ВОПРОС СОГЛАСУЕТСЯ С ВОПРОСНЫМ СЛОВОМ, А НЕ С ОТВЕТОМ: «qu'est-ce qui est
+    # plus GRAND» и «co jest większE» — подлежащее здесь местоимение среднего
+    # рода, и форма при нём своя, объявленная при языке, а не при вещи.
+    return я["вопрос"].format(a=ряд[a][0], b=ряд[b][0], г=я["г_воп"])
+
+
+def _все_показы():
+    вон = {}
+    for язык, я in ЯЗЫКИ.items():
+        n = len(я["ряд"])
+        for i in range(n):
+            for j in range(n):
+                for форма in ("пара", "вопрос"):
+                    с = показ(язык, форма, i, j)
+                    if с:
+                        вон[с] = (язык, форма)
+            с = показ(язык, "цепь", i)
+            if с:
+                вон[с] = (язык, "цепь")
+    return вон
+
+
+ПОКАЗЫ = _все_показы()
+_НАЧАЛА = tuple((язык, я["пара"].split("{a}")[0]) for язык, я in ЯЗЫКИ.items())
+
+
+def судить(строка):
+    """Показ дома истинен; строка той же рамки с ПЕРЕВЁРНУТЫМ порядком — ложь,
+    ибо ряд объявлен и места в нём считаны."""
+    с = строка.strip()
+    if с in ПОКАЗЫ:
+        return True, True
+    for язык, я in ЯЗЫКИ.items():
+        for форма in ("пара", "цепь"):
+            ш = я[форма]
+            начало = ш.split("{a}")[0]
+            имена = {т[0] for т in я["ряд"]}
+            if с.startswith(начало) and any(с[len(начало):].startswith(и) for и in имена):
+                return True, False
+    return False, False
+
+
+def _самопроверка():
+    мутанты = 0
+    for язык, я in ЯЗЫКИ.items():
+        for форма in ФОРМЫ:
+            с = показ(язык, форма, len(я["ряд"]) - 1)
+            assert с and судить(с) == (True, True), (язык, форма, с)
+        # МУТАНТ: перевёрнутая пара («мышь больше слона») — ложь по ряду
+        ряд = я["ряд"]
+        битая = я["пара"].format(a=ряд[0][0], b2=ряд[-1][1], г=ряд[0][2])
+        assert судить(битая) == (True, False), (язык, битая)
+        мутанты += 1
+    for язык in ("ru", "en", "de", "fr", "pl"):
+        print("  ", показ(язык, "цепь", 5)[:112])
+    print(f"  мутантов поймано: {мутанты}")
+    print(f"  дом пишет показов: {len(ПОКАЗЫ)} (языков {len(ЯЗЫКИ)}, вещей в ряду {len(ЯЗЫКИ['ru']['ряд'])})")
+
+
+if __name__ == "__main__":
+    _самопроверка()
