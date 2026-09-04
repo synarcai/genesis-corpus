@@ -49,7 +49,7 @@ COURTS=("courts/arith_court.py" "courts/algo_court.py"
         # ДОМА РАЗГОВОРА И РАССУЖДЕНИЯ (04.09). Их суды жили в палате и стерегли
         # ВОРОТА, но в этом списке не стояли, и потому вердикт «пало 0 из 103»
         # их не считал — ноль с укороченным знаменателем (М-264). Считает.
-        "courts/behavior_court.py" "courts/topics_court.py" "courts/nature_court.py" "courts/links_court.py" "courts/scale_court.py" "courts/opposites_court.py" "courts/roles_court.py" "courts/joints_court.py" "courts/dialogue_court.py" "courts/worldfacts_court.py" "courts/infer_court.py" "scripts/circle_probe.py" "scripts/agree_probe.py"
+        "courts/behavior_court.py" "courts/topics_court.py" "courts/nature_court.py" "courts/links_court.py" "courts/scale_court.py" "courts/opposites_court.py" "courts/roles_court.py" "courts/joints_court.py" "courts/dialogue_court.py" "courts/worldfacts_court.py" "courts/infer_court.py" "scripts/circle_probe.py" "scripts/agree_probe.py" "scripts/shelf_declare.py"
         # …и четыре дома рассуждения, севшие 04.09 после снятия заморозки
         "courts/disj_court.py" "courts/indu_court.py" "courts/analog_court.py" "courts/reply_court.py")
 FELL=0
