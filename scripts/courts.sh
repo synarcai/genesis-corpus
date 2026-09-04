@@ -69,7 +69,10 @@ COURTS=("courts/arith_court.py" "courts/algo_court.py"
         "scripts/threshold_census.py"
         # ЧИСЛО БЕЗ ЗНАМЕНАТЕЛЯ — последняя строка каждого прибора леджера: сказано
         # ли, из скольких. Ноль без объёма — FAIL (закон holon).
-        "scripts/denominator_census.py")
+        "scripts/denominator_census.py"
+        # ПЕРЕПИСЬ ПОВТОРОВ — сколько строк свода суть точные копии (05.09: 50 %,
+        # сверх LAW 40 %). Число, а не рубеж: потолок повтора — решение владельца.
+        "scripts/repeat_census.py --свод")
 FELL=0
 for entry in "${COURTS[@]}"; do
   set -- $entry; tool="$1"; shift
