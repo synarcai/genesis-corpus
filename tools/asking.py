@@ -181,8 +181,8 @@ cual cuanto cuantos que es hay donde se ¿es ¿son ¿cuál ¿cuánto ¿qué ¿c�
 ¿y ¿quieres ¿estás ¿por
 che cosa quanto quanti dove quale come chi perché intendi sei può hanno ha
 qual quantos onde como quem porque porquê queres concordas pode todos tem têm
-czy ile co jaki jaka jakie jakiej jakim jakich czego gdzie kiedy jak czym dlaczego masz zgadzasz
-wat hoe hoeveel welke waar waarom bedoel ben klopt en waarmee waarvan waarop waardoor kan hebben heeft
+czy ile co jaki jaka jakie jakiej jakim jakich który które która czego gdzie kiedy jak czym dlaczego masz zgadzasz
+wat hoe hoeveel welke welk waar waarom bedoel ben klopt en waarmee waarvan waarop waardoor kan hebben heeft
 ты а
 # ЭЛЛИПТИЧЕСКИЙ ВОПРОС ОТКРЫВАЕТСЯ СОЮЗОМ, а не вопросным словом: «а у тома?»,
 # «and tom?», «und Lena?» — так и спрашивает человек, когда предмет вопроса

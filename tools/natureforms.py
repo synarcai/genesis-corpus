@@ -83,6 +83,8 @@ import rugram  # noqa: E402
                 ("декабрь", "декабря")),
         опроверж="{о} {n1} {в1}? нет: у {б2} {n2} {в2}.",
         общие=("у всех ли животных", "у всего ли транспорта"),
+        пример="{о2} {n} {в}? у {б}.",
+        общее_имя=("у какого животного", "у какого транспорта"),
         воп="у {б} {n} {в}. сколько {ва} у {б}? {n} {в}.",
         пара="у {б} {n} {в}. сколько {ва} у {бп}? {r} {вr}: {n} × 2 = {r}.",
         факты=(("паука", "двух пауков", "нога", 8), ("насекомого", "двух насекомых", "нога", 6),
@@ -111,6 +113,8 @@ import rugram  # noqa: E402
         опроверж="{о} {n1} {в1}? no: {арт} {б2} has {n2} {в2}.",
         общие=("do all animals have", "do all vehicles have"),
         гласные="aeiou",
+        пример="{о2} {n} {в}? a {б}.",
+        общее_имя=("which animal has", "which vehicle has"),
         воп="a {б} has {n} {в}. how many {ва} does a {б} have? {n} {в}.",
         пара="a {б} has {n} {в}. how many {ва} do {бп} have? {r} {вr}: {n} × 2 = {r}.",
         факты=(("spider", "two spiders", ("leg", "legs"), 8), ("insect", "two insects", ("leg", "legs"), 6),
@@ -141,6 +145,8 @@ import rugram  # noqa: E402
                 ("der Dezember", "dem Dezember")),
         опроверж="{о} {n1} {в1}? nein: {б2} hat {n2} {в2}.",
         общие=("haben alle Tiere", "haben alle Fahrzeuge"),
+        пример="{о2} {n} {в}? {б}.",
+        общее_имя=("welches Tier hat", "welches Fahrzeug hat"),
         воп="{б} hat {n} {в}. wie viele {ва} hat {б}? {n} {в}.",
         пара="{б} hat {n} {в}. wie viele {ва} haben {бп}? {r} {вr}: {n} × 2 = {r}.",
         факты=(("eine Spinne", "zwei Spinnen", ("Bein", "Beine"), 8), ("ein Insekt", "zwei Insekten", ("Bein", "Beine"), 6),
@@ -169,6 +175,8 @@ import rugram  # noqa: E402
                 ("décembre", "décembre")),
         опроверж="{о} {n1} {в1} ? non : {б2} a {n2} {в2}.",
         общие=("est-ce que tous les animaux ont", "est-ce que tous les véhicules ont"),
+        пример="{о2} {n} {в} ? {б}.",
+        общее_имя=("quel animal a", "quel véhicule a"),
         воп="{б} a {n} {в}. combien de {ва} a {б} ? {n} {в}.",
         пара="{б} a {n} {в}. combien de {ва} ont {бп} ? {r} {вr} : {n} × 2 = {r}.",
         факты=(("une araignée", "deux araignées", ("patte", "pattes"), 8), ("un insecte", "deux insectes", ("patte", "pattes"), 6),
@@ -197,6 +205,8 @@ import rugram  # noqa: E402
                 ("octubre", "de octubre"), ("noviembre", "de noviembre"), ("diciembre", "de diciembre")),
         опроверж="{о} {n1} {в1}? no: {б2} tiene {n2} {в2}.",
         общие=("¿tienen todos los animales", "¿tienen todos los vehículos"),
+        пример="{о2} {n} {в}? {б}.",
+        общее_имя=("¿qué animal tiene", "¿qué vehículo tiene"),
         воп="{б} tiene {n} {в}. ¿cuántas {ва} tiene {б}? {n} {в}.",
         пара="{б} tiene {n} {в}. ¿cuántas {ва} tienen {бп}? {r} {вr}: {n} × 2 = {r}.",
         факты=(("una araña", "dos arañas", ("pata", "patas"), 8), ("un insecto", "dos insectos", ("pata", "patas"), 6),
@@ -224,6 +234,8 @@ import rugram  # noqa: E402
                 ("dicembre", "dicembre")),
         опроверж="{о} {n1} {в1}? no: {б2} ha {n2} {в2}.",
         общие=("hanno tutti gli animali", "hanno tutti i veicoli"),
+        пример="{о2} {n} {в}? {б}.",
+        общее_имя=("quale animale ha", "quale veicolo ha"),
         воп="{б} ha {n} {в}. quante {ва} ha {б}? {n} {в}.",
         пара="{б} ha {n} {в}. quante {ва} hanno {бп}? {r} {вr}: {n} × 2 = {r}.",
         факты=(("un ragno", "due ragni", ("zampa", "zampe"), 8), ("un insetto", "due insetti", ("zampa", "zampe"), 6),
@@ -252,6 +264,8 @@ import rugram  # noqa: E402
                 ("outubro", "de outubro"), ("novembro", "de novembro"), ("dezembro", "de dezembro")),
         опроверж="{о} {n1} {в1}? não: {б2} tem {n2} {в2}.",
         общие=("todos os animais têm", "todos os veículos têm"),
+        пример="{о2} {n} {в}? {б}.",
+        общее_имя=("que animal tem", "que veículo tem"),
         воп="{б} tem {n} {в}. quantas {ва} tem {б}? {n} {в}.",
         пара="{б} tem {n} {в}. quantas {ва} têm {бп}? {r} {вr}: {n} × 2 = {r}.",
         факты=(("uma aranha", "duas aranhas", ("pata", "patas"), 8), ("um inseto", "dois insetos", ("pata", "patas"), 6),
@@ -279,6 +293,8 @@ import rugram  # noqa: E402
                 ("december", "december")),
         опроверж="{о} {n1} {в1}? nee: {б2} heeft {n2} {в2}.",
         общие=("hebben alle dieren", "hebben alle voertuigen"),
+        пример="{о2} {n} {в}? {б}.",
+        общее_имя=("welk dier heeft", "welk voertuig heeft"),
         воп="{б} heeft {n} {в}. hoeveel {ва} heeft {б}? {n} {в}.",
         пара="{б} heeft {n} {в}. hoeveel {ва} hebben {бп}? {r} {вr}: {n} × 2 = {r}.",
         факты=(("een spin", "twee spinnen", ("poot", "poten"), 8), ("een insect", "twee insecten", ("poot", "poten"), 6),
@@ -305,6 +321,8 @@ import rugram  # noqa: E402
                 ("grudzień", "grudniu")),
         опроверж="{о} {n1} {в1}? nie: {б2} ma {n2} {в2}.",
         общие=("czy wszystkie zwierzęta mają", "czy wszystkie pojazdy mają"),
+        пример="{о2} {n} {в}? {б}.",
+        общее_имя=("które zwierzę ma", "który pojazd ma"),
         воп="{б} ma {n} {в}. ile {ва} ma {б}? {n} {в}.",
         пара="{б} ma {n} {в}. ile {ва} mają {бп}? {r} {вr}: {n} × 2 = {r}.",
         факты=(("pająk", "dwa pająki", "noga", 8), ("owad", "dwa owady", "noga", 6),
@@ -319,7 +337,7 @@ import rugram  # noqa: E402
         градус="stopień",
     ),
 }
-ФОРМЫ = ("утв", "воп", "пара", "часть", "опроверж", "темп", "темп_воп") + tuple(ЦИКЛ_ФОРМЫ)
+ФОРМЫ = ("утв", "воп", "пара", "часть", "опроверж", "пример", "темп", "темп_воп") + tuple(ЦИКЛ_ФОРМЫ)
 
 
 def вещь(язык, в, n):
@@ -348,6 +366,27 @@ def _пары_опровержения(язык):
 
 def показ(язык, форма, i):
     я = ЯЗЫКИ[язык]
+    if форма == "пример":
+        # ПОДТВЕРЖДЕНИЕ ПРИМЕРОМ — вторая полярность опровержения, и без неё
+        # первая учила бы только отрицанию. «Есть ли животное с 8 ногами? да:
+        # паук.» Пример, как и контрпример, НАХОДИТСЯ в объявленных фактах, а
+        # не пишется рукой; берётся он из той же пары, что и опровержение, —
+        # первая её половина, — и потому обе полярности говорят об одном ряду.
+        пары = _пары_опровержения(язык)
+        if not пары:
+            return None
+        (б, в, n), _ = пары[i % len(пары)]
+        # НОСИТЕЛЬ ЗДЕСЬ ПОДЛЕЖАЩЕЕ, А В ПРОЧИХ ФОРМАХ ДОПОЛНЕНИЕ: русский и
+        # польский держат его в родительном («у паука»), и для ответа нужен
+        # именительный. Он берётся из ряда сравнения, если язык его объявил,
+        # иначе — как есть.
+        гласные = я.get("гласные")
+        имя = б
+        if гласные:
+            имя = ("an " if б and б[0].lower() in гласные else "a ") + б
+            имя = имя[2:] if я["пример"].count("a {б}") else имя
+        return я["пример"].format(о2=я["общее_имя"][i % len(я["общее_имя"])],
+                                  n=n, в=вещь(язык, в, n), б=имя)
     if форма == "опроверж":
         # ОПРОВЕРЖЕНИЕ ПРИМЕРОМ — первый в доме показ, где ответ есть «НЕТ» с
         # ПРИЧИНОЙ. Общее утверждение («у всех ли животных 8 ног?») опровергается
@@ -399,10 +438,11 @@ def показ(язык, форма, i):
 def _все_показы():
     вон = {}
     for язык, я in ЯЗЫКИ.items():
-        for i in range(len(_пары_опровержения(язык))):
-            с = показ(язык, "опроверж", i)
-            if с:
-                вон[с] = (язык, "опроверж")
+        for форма in ("опроверж", "пример"):
+            for i in range(len(_пары_опровержения(язык))):
+                с = показ(язык, форма, i)
+                if с:
+                    вон[с] = (язык, форма)
         for форма in ("утв", "воп", "пара", "часть"):
             for i in range(len(я["факты"])):
                 с = показ(язык, форма, i)
