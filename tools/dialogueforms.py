@@ -239,7 +239,129 @@ def имя_организма(язык):
         небылицы=("kwarkozaur", "flumber", "zitopleks"),
     ),
 }
+
+# --- ВЕЖЛИВОЕ ОБРАЩЕНИЕ ---
+#
+# Замер 04.09 по всему своду: «ты» 92 строки, «вы» НОЛЬ; «du» 220, «Sie» ноль;
+# «tu» 117, «vous» ноль; «usted» ноль, «Lei» ноль. Дом обихода — тот, которым
+# человек начинает разговор, — обращался на «ты» ко всякому. Это не пустая
+# клетка: это форма, которой корпус учил бы УВЕРЕННО И НЕВЕРНО, а по-русски,
+# по-немецки, по-французски, по-испански, по-итальянски и по-польски «ты» в
+# лицо незнакомому есть не оттенок, а грубость.
+#
+# ВЕЖЛИВАЯ РАМКА ЕСТЬ НЕФОРМАЛЬНАЯ С ОБЪЯВЛЕННОЙ ЗАМЕНОЙ, А НЕ ВТОРАЯ РУКОПИСЬ.
+# Объявляется ровно словарь замен; всё прочее — рамки, ответы, виды, имена —
+# берётся у неформального дома неизменным. Пара строк, различающихся ровно
+# обращением, есть тот показ, из которого рынок покупает закон регистра
+# анти-унификацией: общее уходит в рамку, различие остаётся дырой.
+#
+# ЗАМЕНА ИДЁТ УЗЛОМ, А НЕ СЛОВОМ (04.09, спор с holon). Польский вежливый
+# ставит вместо второго лица СУЩЕСТВИТЕЛЬНОЕ третьего («czy się zgadzasz» →
+# «czy pan się zgadza»), и глагол идёт за подлежащим, а не за регистром;
+# немецкий делает то же третьим лицом множественного. Потому объявляется
+# ЦЕЛАЯ СТРОКА в обеих одеждах, а не местоимение с поправкой: строка есть узел
+# со всем, что от него зависит, и подмена местоимения сломалась бы на первом
+# же языке, где меняется лицо, падеж или род.
+#
+# АНГЛИЙСКИЙ ПИШЕТ ОДНУ ФОРМУ, И ЭТО ОБЪЯВЛЕНО (М-279). «You» служит обоим
+# регистрам, вежливый показ совпал бы с неформальным слово в слово, и корпус
+# понёс бы двойника ради ровной решётки. Словарь замен английского ПУСТ, и
+# пустота эта названа домом, а не выведена прибором из молчания.
+ВЕЖЛИВО = {
+    "ru": {"как тебя зовут?": "как вас зовут?", "как твоё имя?": "как ваше имя?",
+           "кто ты?": "кто вы?", "кто ты такой?": "кто вы такой?",
+           "что ты такое?": "что вы такое?", "как дела?": "как ваши дела?",
+           "чем занимаешься?": "чем вы занимаетесь?", "что ты умеешь?": "что вы умеете?",
+           "ответь, пожалуйста": "ответьте, пожалуйста",
+           "помоги, пожалуйста": "помогите, пожалуйста",
+           "скажи, пожалуйста": "скажите, пожалуйста"},
+    "en": {},
+    "de": {"wie heißt du?": "wie heißen Sie?", "wie ist dein Name?": "wie ist Ihr Name?",
+           "wer bist du?": "wer sind Sie?", "was bist du?": "was sind Sie?",
+           "sag mir, wer du bist.": "sagen Sie mir, wer Sie sind.",
+           "wie geht es dir?": "wie geht es Ihnen?", "was machst du?": "was machen Sie?",
+           "was kannst du?": "was können Sie?", "antworte bitte": "antworten Sie bitte",
+           "hilf mir bitte": "helfen Sie mir bitte", "sag mir bitte": "sagen Sie mir bitte",
+           "mach dir nichts daraus": "machen Sie sich nichts daraus"},
+    "fr": {"comment t'appelles-tu ?": "comment vous appelez-vous ?",
+           "quel est ton nom ?": "quel est votre nom ?",
+           "qui es-tu ?": "qui êtes-vous ?", "qu'est-ce que tu es ?": "qu'est-ce que vous êtes ?",
+           "dis-moi qui tu es.": "dites-moi qui vous êtes.",
+           "comment vas-tu ?": "comment allez-vous ?", "que fais-tu ?": "que faites-vous ?",
+           "que sais-tu faire ?": "que savez-vous faire ?",
+           "réponds, s'il te plaît": "répondez, s'il vous plaît",
+           "aide-moi, s'il te plaît": "aidez-moi, s'il vous plaît",
+           "dis-moi, s'il te plaît": "dites-moi, s'il vous plaît",
+           "je te remercie": "je vous remercie", "ne t'inquiète pas": "ne vous inquiétez pas",
+           "je t'en prie": "je vous en prie"},
+    "es": {"¿cómo te llamas?": "¿cómo se llama usted?", "¿cuál es tu nombre?": "¿cuál es su nombre?",
+           "¿quién eres?": "¿quién es usted?", "¿qué eres?": "¿qué es usted?",
+           "dime quién eres.": "dígame quién es usted.", "¿cómo estás?": "¿cómo está usted?",
+           "¿qué haces?": "¿qué hace usted?", "¿qué sabes hacer?": "¿qué sabe usted hacer?",
+           "responde, por favor": "responda, por favor", "ayúdame, por favor": "ayúdeme, por favor",
+           "dime, por favor": "dígame, por favor", "no te preocupes": "no se preocupe",
+           "te lo agradezco": "se lo agradezco"},
+    "it": {"come ti chiami?": "come si chiama?", "qual è il tuo nome?": "qual è il suo nome?",
+           "chi sei?": "chi è Lei?", "che cosa sei?": "che cosa è Lei?",
+           "dimmi chi sei.": "mi dica chi è Lei.", "come stai?": "come sta?",
+           "che cosa fai?": "che cosa fa?", "che cosa sai fare?": "che cosa sa fare?",
+           "rispondi, per favore": "risponda, per favore",
+           "aiutami, per favore": "mi aiuti, per favore", "dimmi, per favore": "mi dica, per favore",
+           "non preoccuparti": "non si preoccupi", "ti ringrazio": "la ringrazio"},
+    "pt": {"como te chamas?": "como se chama?", "qual é o teu nome?": "qual é o seu nome?",
+           "quem és tu?": "quem é o senhor?", "o que és tu?": "o que é o senhor?",
+           "diz-me quem és.": "diga-me quem é.", "como estás?": "como está?",
+           "o que fazes?": "o que faz?", "o que sabes fazer?": "o que sabe fazer?",
+           "responde, por favor": "responda, por favor", "ajuda-me, por favor": "ajude-me, por favor",
+           "diz-me, por favor": "diga-me, por favor", "não te preocupes": "não se preocupe"},
+    "nl": {"hoe heet je?": "hoe heet u?", "wat is je naam?": "wat is uw naam?",
+           "wie ben je?": "wie bent u?", "wat ben je?": "wat bent u?",
+           "zeg me wie je bent.": "zegt u mij wie u bent.",
+           "hoe gaat het?": "hoe gaat het met u?", "wat doe je?": "wat doet u?",
+           "wat kun je?": "wat kunt u?", "antwoord alsjeblieft": "antwoordt u alstublieft",
+           "help me alsjeblieft": "helpt u mij alstublieft",
+           "zeg het me alsjeblieft": "zegt u het mij alstublieft",
+           "maak je geen zorgen": "maakt u zich geen zorgen", "dank je": "dank u"},
+    "pl": {"jak masz na imię?": "jak pan ma na imię?", "jak się nazywasz?": "jak się pan nazywa?",
+           "kim jesteś?": "kim pan jest?", "czym jesteś?": "czym pan jest?",
+           "powiedz mi, kim jesteś.": "proszę mi powiedzieć, kim pan jest.",
+           "jak się masz?": "jak się pan ma?", "co robisz?": "co pan robi?",
+           "co potrafisz?": "co pan potrafi?", "odpowiedz, proszę": "proszę odpowiedzieć",
+           "pomóż mi, proszę": "proszę mi pomóc", "powiedz mi, proszę": "proszę mi powiedzieć",
+           "nie martw się": "proszę się nie martwić", "wybacz": "proszę wybaczyć"},
+}
+
+
+def _переодеть(значение, таблица):
+    """Тот же дом в другом обращении — замена ведётся по объявленным строкам.
+
+    Обход общий, а не по полям: всякая строка дома проходит через словарь, и
+    новое поле, дописанное завтра, оденется само. Строки, замены не имеющей,
+    остаются как есть, — и форма, не изменившаяся ни в одной строке, показа не
+    получает (см. `_все_показы`): двойник в корпусе хуже пустой клетки.
+    """
+    if isinstance(значение, str):
+        return таблица.get(значение, значение)
+    if isinstance(значение, tuple):
+        return tuple(_переодеть(x, таблица) for x in значение)
+    if isinstance(значение, dict):
+        return {k: _переодеть(v, таблица) for k, v in значение.items()}
+    return значение
+
+
+ЯЗЫКИ_ВЫ = {яз: _переодеть(я, ВЕЖЛИВО[яз]) for яз, я in ЯЗЫКИ.items()}
+for _яз, _т in ВЕЖЛИВО.items():
+    assert _яз in ЯЗЫКИ, _яз
+    _все = repr(ЯЗЫКИ[_яз])
+    for _из in _т:
+        assert repr(_из)[1:-1] in _все, (_яз, _из, "замена объявлена строке, которой в доме нет")
+    assert (ЯЗЫКИ_ВЫ[_яз] != ЯЗЫКИ[_яз]) == bool(_т), (_яз, "словарь замен и дело разошлись")
+
 ФОРМЫ = ("пара", "определение", "имя", "кто", "незнание", "малый")
+ФОРМЫ_ВЫ = ("пара", "имя", "кто", "малый")
+# английский различия не имеет — дыра объявлена домом, а не выведена прибором
+ОБЪЯВЛЕННЫЕ_ПРОПУСКИ = {ф + "_вы": frozenset(я for я, т in ВЕЖЛИВО.items() if not т)
+                        for ф in ФОРМЫ_ВЫ}
 
 # МАССА ПО ПРАВИЛУ: у всякого вида с парой ≥3 зачина и ≥3 ответа
 for _яз, _я in ЯЗЫКИ.items():
@@ -264,15 +386,15 @@ def _стяжение(язык, слово):
     return "qu'" if слово and слово[0].lower() in ГЛАСНЫЕ[язык] else "que "
 
 
-def ответы(язык, вид):
-    я = ЯЗЫКИ[язык]
+def ответы(язык, вид, вы=False):
+    я = (ЯЗЫКИ_ВЫ if вы else ЯЗЫКИ)[язык]
     return я["зачины"][вид] if вид in ЗЕРКАЛЬНЫЕ else я["ответы"].get(вид, ())
 
 
-def страница(язык, форма, вид=None, i=0, j=0):
-    я = ЯЗЫКИ[язык]
+def страница(язык, форма, вид=None, i=0, j=0, вы=False):
+    я = (ЯЗЫКИ_ВЫ if вы else ЯЗЫКИ)[язык]
     if форма == "пара":
-        зач, отв = я["зачины"][вид], ответы(язык, вид)
+        зач, отв = я["зачины"][вид], ответы(язык, вид, вы)
         return f"{зач[i % len(зач)]}. {отв[j % len(отв)]}."
     if форма == "определение":
         зач = я["зачины"][вид]
@@ -298,6 +420,18 @@ def страница(язык, форма, вид=None, i=0, j=0):
 
 
 # --- сторона суда: строка судится ПЕРЕПИСЫВАНИЕМ ---
+def _показ_вы(вон, язык, форма, *, вид=None, i=0, j=0):
+    """Вежливый показ пишется, лишь если он ОТЛИЧАЕТСЯ от неформального.
+
+    Строка, совпавшая с неформальной, есть двойник, а не второй регистр: язык,
+    у которого различия нет (английский) или у которого эта именно строка
+    обращения не содержит, не получает ни одной лишней страницы.
+    """
+    вежливая = страница(язык, форма, вид, i, j, вы=True)
+    if вежливая != страница(язык, форма, вид, i, j):
+        вон[вежливая] = (язык, форма + "_вы")
+
+
 def _все_показы():
     вон = {}
     for язык, я in ЯЗЫКИ.items():
@@ -314,15 +448,19 @@ def _все_показы():
                                                  ЧТО=_стяжение(язык, зач[i]))] = (язык, "определение")
                 for j in range(len(отв)):
                     вон[страница(язык, "пара", вид, i, j)] = (язык, "пара")
+                    _показ_вы(вон, язык, "пара", вид=вид, i=i, j=j)
         for i in range(len(я["имена"])):
             for j in range(len(я["имя_воп"])):
                 вон[страница(язык, "имя", i=i, j=j)] = (язык, "имя")
+                _показ_вы(вон, язык, "имя", i=i, j=j)
         for i in range(len(я["кто_воп"])):
             вон[страница(язык, "кто", i=i)] = (язык, "кто")
+            _показ_вы(вон, язык, "кто", i=i)
         for i in range(len(я["небылицы"])):
             вон[страница(язык, "незнание", i=i)] = (язык, "незнание")
         for i in range(len(я["малый"])):
             вон[страница(язык, "малый", i=i)] = (язык, "малый")
+            _показ_вы(вон, язык, "малый", i=i)
     return вон
 
 
@@ -341,10 +479,10 @@ def _все_показы():
 _РАМКИ = tuple((язык, re.compile("^" + re.escape(ш).replace(r"\{с\}", "(.+?)")
                                  .replace(r"\{в\}", "(.+?)").replace(r"\{н\}", "(.+?)")
                                  .replace(r"\{и\}", "(.+?)").replace(r"\{ЧТО\}", "(?:qu'|que )") + "$"))
-               for язык, я in ЯЗЫКИ.items()
+               for дом in (ЯЗЫКИ, ЯЗЫКИ_ВЫ) for язык, я in дом.items()
                for ш in (я["определение"], я["незнание"]) + ((я["определение2"],) if "определение2" in я else ())
                + tuple(f"{в} {я['имя_отв']}" for в in я["имя_воп"]))
-_СВОИ_СЛОВА = {язык: {с for вид in ВИДЫ for с in я["зачины"][вид]}
+_СВОИ_СЛОВА = {язык: {с for дом in (ЯЗЫКИ, ЯЗЫКИ_ВЫ) for вид in ВИДЫ for с in дом[язык]["зачины"][вид]}
                | set(я["небылицы"]) | set(я["имена"])
                for язык, я in ЯЗЫКИ.items()}
 
@@ -381,6 +519,13 @@ def _самопроверка():
         чужая = f"{я['зачины'][БЛАГОДАРНОСТЬ][0]}. {я['зачины'][ПРОЩАНИЕ][0]}."
         assert чужая not in ПОКАЗЫ, (язык, чужая)
         мутанты += 1
+        # ВЕЖЛИВЫЙ ПОКАЗ ИСТИНЕН ТАМ, ГДЕ ОБЪЯВЛЕН, и не пишется, где замены нет
+        for форма in ФОРМЫ_ВЫ:
+            вид = ПРИВЕТ if форма == "пара" else None
+            вежливая = страница(язык, форма, вид, вы=True)
+            есть = вежливая != страница(язык, форма, вид)
+            assert есть == (ПОКАЗЫ.get(вежливая) == (язык, форма + "_вы")) or not ВЕЖЛИВО[язык], \
+                (язык, форма, вежливая)
         # МУТАНТ: незнание о ЗНАКОМОМ слове — ложь («что такое привет? я не знаю…»)
         битое2 = я["незнание"].format(н=я["зачины"][ПРИВЕТ][0],
                                       ЧТО=_стяжение(язык, я["зачины"][ПРИВЕТ][0]))
