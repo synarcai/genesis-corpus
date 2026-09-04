@@ -1049,6 +1049,30 @@
       "actors": []
     },
     {
+      "name": "action_measure",
+      "file": "datasets/genesis_action_measure.txt",
+      "genre": "ACTION MEASURE — the number that MEASURES the act, not counts the goods, and the number that counts the BEARERS, not the things. Named by d5 on the live SVAMP band (05.09): of 726 tacts, 46 carry a measured act («jumped 12 inches», «weighed 5 pounds») and 130 a number before the subject («6 birds were sitting on the fence. 4 more birds came») — 112 of them are held by NOTHING a frame «actor — verb — number — goods» can read. The house declares what the band showed and nothing beyond: two verbs of measure (jump — length, weigh — weight) with their units and count forms, sums of two measures with their ledger, bearers with an arrival and a departure. THE UNIT BELONGS TO THE VERB: «jumped 12 pounds» is a lie by unit before any number is checked. Every page carries its question. Two languages, as its sibling measure_story; the world is closed (courts/action_measure_court.py).",
+      "act": [
+        "recount",
+        "compare",
+        "translate"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "geometry_langs",
       "file": "datasets/genesis_geometry_langs.txt",
       "genre": "AREA AND PERIMETER IN EIGHT LANGUAGES (the owner's word: every language in surplus; the geometry world says them in en/ru): the four facts of the geometry world — the area and the perimeter of a rectangle, the perimeter and the area of a square — as statement and as question answered by the statement (М-153), with the geometry world's ledger: «ein Rechteck 7 mal 8 hat die Fläche 7 × 8 = 56.», «wie groß ist der Umfang eines Rechtecks 3 mal 4? ein Rechteck 3 mal 4 hat den Umfang 3 + 4 = 7, 2 × 7 = 14.», «un carré de côté 4 a un périmètre de 4 × 4 = 16.», «¿cuál es el área de un cuadrado de lado 5? un cuadrado de lado 5 tiene área 5 × 5 = 25.», «qual è il perimetro …», «qual é a área …», «wat is de omtrek van een rechthoek 3 bij 4? …», «jakie jest pole prostokąta 2 na 3? prostokąt 2 na 3 ma pole 2 × 3 = 6.», «kenarları 7 ve 8 olan dikdörtgenin çevresi: 7 + 8 = 15, 2 × 15 = 30.»; the house of geometry phrases (tools/geoforms.py) holds the phrases with holes, the court turns the same phrases into patterns and recomputes every ledger",

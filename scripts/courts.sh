@@ -75,7 +75,9 @@ COURTS=("courts/arith_court.py" "courts/algo_court.py"
         "scripts/repeat_census.py --свод"
         # СЛЕД РАЗБОРА ОПРЕДЕЛЕНИЙ — где разбор статьи остановился на каждом
         # понятии без определения; причина, не названная прибором, — FAIL.
-        "scripts/definitions_reach.py")
+        "scripts/definitions_reach.py"
+        # МЕРА ДЕЙСТВИЯ — число меряет действие или считает носителей (род d5, 05.09)
+        "courts/action_measure_court.py")
 FELL=0
 for entry in "${COURTS[@]}"; do
   set -- $entry; tool="$1"; shift
