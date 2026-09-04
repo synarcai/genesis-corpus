@@ -470,6 +470,29 @@
       "actors": []
     },
     {
+      "name": "joints",
+      "file": "datasets/genesis_joints.txt",
+      "genre": "THE JOINT BETWEEN TWO NUMERIC PHRASES — a fan of words in ONE position, and that position with NO word at all (32's number of 04.09). A market may read the joint by POSITION — «the word standing between two numeric phrases of one clause» — before it has bought anything; but a corpus that shows ONE word there teaches the word, not the position, and today the whole svod puts «and» in that place with six translations. This world shows «and / plus / along with / as well as / together with» in the same frame, the comma AND a word in one clause («5 apples, 3 pears and 2 plums»), and the bare list where the position carries no word at all («5 apples, 3 pears, 2 plums»). Seven languages, 24 declared joints; the goods, names and the word for «things» are NOT declared twice — they are read from the action-pages house, two houses on one dictionary.",
+      "act": [
+        "recount",
+        "translate"
+      ],
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "measure_story",
       "file": "datasets/genesis_measure_story.txt",
       "genre": "MEASURED STORIES — A DISTANCE COMPARED BY ITS VERB, AND A PAIR PRICED BY ITS MULTIPLE (holon's orders from the last lines of the attack, 03.09). The first: «the frog jumped 31 inches. the grasshopper jumped 25 inches. how many more inches did the frog jump than the grasshopper? 31 − 25 = 6.» — the corpus said this with ONE verb, and a verb met once is learnt as a word rather than as a place of the frame; six verbs walk here (jumped, ran, walked, swam, flew, crawled — прыгнул, пробежал, прошёл, проплыл, пролетел, прополз), each with its bare form for the English question and, in Russian, with its own preposition («прыгнул НА 31 сантиметр», but «пробежал 31 метр») and its past tense agreeing with the actor («лягушка прыгнула», «кузнечик прыгнул»). The second: «a house and a lot cost 120 dollars together. the house costs three times as much as the lot. how much does the lot cost? 3 + 1 = 4, 120 ÷ 4 = 30.» — «as MUCH as» beside «times» on a price, where the corpus had only «as many as» on countables; both ends of the pair are asked, and the greater costs one step more, for its answer runs through the lesser. Every form is declared by the house (tools/measurestory.py): the Russian measure names three count forms, the past tense two genders, the second good its genitive; the court knows the whole finite table and calls a line of these shapes that the table does not hold a lie",
@@ -3768,10 +3791,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 17576244,
+      "size": 17853263,
       "tiers": [],
       "text": "mix",
-      "lines": 233130
+      "lines": 235465
     },
     {
       "name": "full",
@@ -3786,10 +3809,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 22089901,
+      "size": 22366920,
       "tiers": [],
       "text": "mix",
-      "lines": 306797
+      "lines": 309132
     },
     {
       "name": "minimal",
@@ -3804,10 +3827,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 10188343,
+      "size": 10281700,
       "tiers": [],
       "text": "mix",
-      "lines": 127841
+      "lines": 128681
     },
     {
       "name": "mid13",
@@ -3822,10 +3845,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 11814439,
+      "size": 11937494,
       "tiers": [],
       "text": "mix",
-      "lines": 151242
+      "lines": 152350
     },
     {
       "name": "mid",
@@ -3840,10 +3863,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 13762596,
+      "size": 13935056,
       "tiers": [],
       "text": "mix",
-      "lines": 178714
+      "lines": 180261
     },
     {
       "name": "selfmeasure",
