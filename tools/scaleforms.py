@@ -10,7 +10,13 @@
 есть утверждение о МЕСТАХ в этом ряду: «слон больше собаки» истинно ровно тогда,
 когда слон стоит в ряду позже собаки. Ряд объявлен, места считаются, ложь ловится.
 
-И тогда становится возможным то, ради чего дом и написан: **ТРАНЗИТИВНОСТЬ**.
+И тогда становятся возможны ДВА ВЫВОДА, ради которых дом и написан.
+
+**АНТИСИММЕТРИЯ**: из «слон больше мыши» следует «мышь НЕ больше слона», и
+следствие проверяется тем же рядом, что и посылка. Это первый в корпусе показ
+с ОТРИЦАНИЕМ, выведенным, а не объявленным.
+
+**ТРАНЗИТИВНОСТЬ**.
 
     слон больше собаки. собака больше мыши. значит слон больше мыши.
 
@@ -33,13 +39,14 @@ GRAND». Языки, где сравнительное неизменно (ру�
 
     python3 tools/scaleforms.py    # самопроверка с мутантами
 """
-ФОРМЫ = ("пара", "вопрос", "цепь")
+ФОРМЫ = ("пара", "вопрос", "цепь", "обратно")
 
 ЯЗЫКИ = {
     "ru": dict(
         пара="{a} {г} {b2}.",
         вопрос="кто {г}: {a} или {b}? {a}.",
         цепь="{a} {г} {b2}. {b} {гb} {c2}. значит {a} {г} {c2}.",
+        обратно="{a} {г} {b2}. значит {b} не {гb} {a2}.",
         г_воп="больше",
         ряд=(("мышь", "мыши", "больше"), ("кошка", "кошки", "больше"), ("собака", "собаки", "больше"), ("человек", "человека", "больше"), ("лошадь", "лошади", "больше"), ("слон", "слона", "больше")),
     ),
@@ -47,6 +54,7 @@ GRAND». Языки, где сравнительное неизменно (ру�
         пара="{a} is {г} than {b2}.",
         вопрос="which is {г}: {a} or {b}? {a}.",
         цепь="{a} is {г} than {b2}. {b} is {гb} than {c2}. so {a} is {г} than {c2}.",
+        обратно="{a} is {г} than {b2}. so {b} is not {гb} than {a2}.",
         г_воп="bigger",
         ряд=(("a mouse", "a mouse", "bigger"), ("a cat", "a cat", "bigger"), ("a dog", "a dog", "bigger"), ("a person", "a person", "bigger"), ("a horse", "a horse", "bigger"), ("an elephant", "an elephant", "bigger")),
     ),
@@ -54,6 +62,7 @@ GRAND». Языки, где сравнительное неизменно (ру�
         пара="{a} ist {г} als {b2}.",
         вопрос="was ist {г}: {a} oder {b}? {a}.",
         цепь="{a} ist {г} als {b2}. {b} ist {гb} als {c2}. also ist {a} {г} als {c2}.",
+        обратно="{a} ist {г} als {b2}. also ist {b} nicht {гb} als {a2}.",
         г_воп="größer",
         ряд=(("eine Maus", "eine Maus", "größer"), ("eine Katze", "eine Katze", "größer"), ("ein Hund", "ein Hund", "größer"), ("ein Mensch", "ein Mensch", "größer"), ("ein Pferd", "ein Pferd", "größer"), ("ein Elefant", "ein Elefant", "größer")),
     ),
@@ -61,6 +70,7 @@ GRAND». Языки, где сравнительное неизменно (ру�
         пара="{a} est plus {г} {b2}.",
         вопрос="qu'est-ce qui est plus {г} : {a} ou {b} ? {a}.",
         цепь="{a} est plus {г} {b2}. {b} est plus {гb} {c2}. donc {a} est plus {г} {c2}.",
+        обратно="{a} est plus {г} {b2}. donc {b} n'est pas plus {гb} {a2}.",
         г_воп="grand",
         ряд=(("une souris", "qu'une souris", "grande"), ("un chat", "qu'un chat", "grand"), ("un chien", "qu'un chien", "grand"), ("une personne", "qu'une personne", "grande"), ("un cheval", "qu'un cheval", "grand"), ("un éléphant", "qu'un éléphant", "grand")),
     ),
@@ -68,6 +78,7 @@ GRAND». Языки, где сравнительное неизменно (ру�
         пара="{a} es {г} que {b2}.",
         вопрос="¿cuál es {г}: {a} o {b}? {a}.",
         цепь="{a} es {г} que {b2}. {b} es {гb} que {c2}. así que {a} es {г} que {c2}.",
+        обратно="{a} es {г} que {b2}. así que {b} no es {гb} que {a2}.",
         г_воп="más grande",
         ряд=(("un ratón", "un ratón", "más grande"), ("un gato", "un gato", "más grande"), ("un perro", "un perro", "más grande"), ("una persona", "una persona", "más grande"), ("un caballo", "un caballo", "más grande"), ("un elefante", "un elefante", "más grande")),
     ),
@@ -75,6 +86,7 @@ GRAND». Языки, где сравнительное неизменно (ру�
         пара="{a} è {г} di {b2}.",
         вопрос="che cosa è {г}: {a} o {b}? {a}.",
         цепь="{a} è {г} di {b2}. {b} è {гb} di {c2}. quindi {a} è {г} di {c2}.",
+        обратно="{a} è {г} di {b2}. quindi {b} non è {гb} di {a2}.",
         г_воп="più grande",
         ряд=(("un topo", "un topo", "più grande"), ("un gatto", "un gatto", "più grande"), ("un cane", "un cane", "più grande"), ("una persona", "una persona", "più grande"), ("un cavallo", "un cavallo", "più grande"), ("un elefante", "un elefante", "più grande")),
     ),
@@ -82,6 +94,7 @@ GRAND». Языки, где сравнительное неизменно (ру�
         пара="{a} é {г} do que {b2}.",
         вопрос="qual é {г}: {a} ou {b}? {a}.",
         цепь="{a} é {г} do que {b2}. {b} é {гb} do que {c2}. portanto {a} é {г} do que {c2}.",
+        обратно="{a} é {г} do que {b2}. portanto {b} não é {гb} do que {a2}.",
         г_воп="maior",
         ряд=(("um rato", "um rato", "maior"), ("um gato", "um gato", "maior"), ("um cão", "um cão", "maior"), ("uma pessoa", "uma pessoa", "maior"), ("um cavalo", "um cavalo", "maior"), ("um elefante", "um elefante", "maior")),
     ),
@@ -89,6 +102,7 @@ GRAND». Языки, где сравнительное неизменно (ру�
         пара="{a} is {г} dan {b2}.",
         вопрос="wat is {г}: {a} of {b}? {a}.",
         цепь="{a} is {г} dan {b2}. {b} is {гb} dan {c2}. dus {a} is {г} dan {c2}.",
+        обратно="{a} is {г} dan {b2}. dus {b} is niet {гb} dan {a2}.",
         г_воп="groter",
         ряд=(("een muis", "een muis", "groter"), ("een kat", "een kat", "groter"), ("een hond", "een hond", "groter"), ("een mens", "een mens", "groter"), ("een paard", "een paard", "groter"), ("een olifant", "een olifant", "groter")),
     ),
@@ -96,8 +110,9 @@ GRAND». Языки, где сравнительное неизменно (ру�
         пара="{a} jest {г} od {b2}.",
         вопрос="co jest {г}: {a} czy {b}? {a}.",
         цепь="{a} jest {г} od {b2}. {b} jest {гb} od {c2}. więc {a} jest {г} od {c2}.",
+        обратно="{a} jest {г} od {b2}. więc {b} nie jest {гb} od {a2}.",
         г_воп="większe",
-        ряд=(("mysz", "myszy", "większy"), ("kot", "kota", "większy"), ("pies", "psa", "większy"), ("człowiek", "człowieka", "większy"), ("koń", "konia", "większy"), ("słoń", "słonia", "większy")),
+        ряд=(("mysz", "myszy", "większa"), ("kot", "kota", "większy"), ("pies", "psa", "większy"), ("człowiek", "człowieka", "większy"), ("koń", "konia", "większy"), ("słoń", "słonia", "większy")),
     ),
 }
 
@@ -123,6 +138,14 @@ def показ(язык, форма, i, j=None, k=None):
     b = (j if j is not None else i - 1) % n
     if a <= b:
         return None            # больше тот, кто позже; равных дом не пишет
+    if форма == "обратно":
+        # АНТИСИММЕТРИЯ КАК ВЫВОД: из «слон больше мыши» следует «мышь НЕ больше
+        # слона», и следствие это проверяется тем же рядом, что и посылка. Оно
+        # второе в доме после транзитивности, и род у них один — вывод, а не
+        # факт; но закон иной, и потому объявлен своей рамкой, а не выведен из
+        # цепи молча.
+        return я["обратно"].format(a=ряд[a][0], a2=ряд[a][1], b=ряд[b][0], b2=ряд[b][1],
+                                   г=ряд[a][2], гb=ряд[b][2])
     if форма == "пара":
         return я["пара"].format(a=ряд[a][0], b2=ряд[b][1], г=ряд[a][2])
     # ВОПРОС СОГЛАСУЕТСЯ С ВОПРОСНЫМ СЛОВОМ, А НЕ С ОТВЕТОМ: «qu'est-ce qui est
@@ -137,7 +160,7 @@ def _все_показы():
         n = len(я["ряд"])
         for i in range(n):
             for j in range(n):
-                for форма in ("пара", "вопрос"):
+                for форма in ("пара", "вопрос", "обратно"):
                     с = показ(язык, форма, i, j)
                     if с:
                         вон[с] = (язык, форма)
@@ -158,7 +181,7 @@ def судить(строка):
     if с in ПОКАЗЫ:
         return True, True
     for язык, я in ЯЗЫКИ.items():
-        for форма in ("пара", "цепь"):
+        for форма in ("пара", "цепь", "обратно"):
             ш = я[форма]
             начало = ш.split("{a}")[0]
             имена = {т[0] for т in я["ряд"]}
