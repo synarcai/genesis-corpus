@@ -51,7 +51,11 @@ COURTS=("courts/arith_court.py" "courts/algo_court.py"
         # их не считал — ноль с укороченным знаменателем (М-264). Считает.
         "courts/behavior_court.py" "courts/topics_court.py" "courts/nature_court.py" "courts/links_court.py" "courts/scale_court.py" "courts/opposites_court.py" "courts/roles_court.py" "courts/joints_court.py" "courts/dialogue_court.py" "courts/worldfacts_court.py" "courts/infer_court.py" "scripts/circle_probe.py" "scripts/agree_probe.py" "scripts/shelf_declare.py" "scripts/house_reach.py" "scripts/head_census.py" "scripts/form_matrix.py"
         # …и четыре дома рассуждения, севшие 04.09 после снятия заморозки
-        "courts/disj_court.py" "courts/indu_court.py" "courts/analog_court.py" "courts/reply_court.py")
+        "courts/disj_court.py" "courts/indu_court.py" "courts/analog_court.py" "courts/reply_court.py"
+        # ПАРА РЕГИСТРА — условие ПОКУПКИ, названное holon: вежливая строка обязана
+        # отличаться от неформальной только обращением, иначе анти-унификация
+        # вынесет в дыру лишнее и закон выйдет шире дома. Рубеж 0 пороков.
+        "scripts/register_pairs.py")
 FELL=0
 for entry in "${COURTS[@]}"; do
   set -- $entry; tool="$1"; shift
