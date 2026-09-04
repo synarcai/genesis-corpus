@@ -33,10 +33,31 @@ sys.path.insert(0, str(КОРЕНЬ / "tools"))
 # в тот час, когда домов было уже двадцать, — и ноль этот был ЧЕСТЕН ПО СВОИМ
 # десяти и НЕМ по остальным (М-264, М-269). Всякий новый дом форм вписывается
 # сюда в тот же день, иначе прибор мерит не корпус, а свою память о нём.
-ДОМА = ("dialogueforms", "linkforms", "behaviorforms", "topicforms", "natureforms",
-        "oppositeforms", "roleforms", "scaleforms", "jointforms", "actionpages",
-        "worldfacts", "inferforms", "disjforms", "induforms", "analogforms",
-        "replyforms", "rewriteforms", "opinionforms", "objectforms", "jointforms2")
+# ДОМА НАХОДЯТСЯ ДЕЛОМ, А НЕ СПИСКОМ (05.09). Список рукой держал 20 домов при
+# 24 живых — прибор со своим знаменателем врёт тише, чем дом, и потому дороже
+# (второй раз за двое суток: 04.09 он мерил 10 при 20). Дом есть всякий модуль
+# tools/, объявивший ПОКАЗЫ и суд.
+import importlib
+
+
+def _дома():
+    вон = []
+    for путь in sorted((КОРЕНЬ / "tools").glob("*.py")):
+        if путь.name.startswith("gen_genesis_"):
+            continue
+        try:
+            м = importlib.import_module(путь.stem)
+        except Exception:
+            continue
+        # ХОЗЯИН — всякий, у кого есть показы; СУДЬЯ — всякий, у кого есть суд.
+        # Дом без своего суда (его суд живёт в courts/) всё равно хозяин: его
+        # честные показы — то, на чём ловится чужая рамка соседа.
+        if (isinstance(getattr(м, "ПОКАЗЫ", None), dict) and м.ПОКАЗЫ) or callable(getattr(м, "судить", None)):
+            вон.append(путь.stem)
+    return tuple(вон)
+
+
+ДОМА = _дома()
 
 
 def _показы(модуль):
