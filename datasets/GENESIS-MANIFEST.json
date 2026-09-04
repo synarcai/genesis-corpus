@@ -785,6 +785,31 @@
       "actors": []
     },
     {
+      "name": "object",
+      "file": "datasets/genesis_object.txt",
+      "genre": "OBJECTION — what to do with what somebody else said. The corpus had learned to answer, to refuse with a ground and to tell a fact from an opinion. One thing it never showed: an organism that cannot CHECK another's statement either agrees with everything or argues with everything, and both are the absence of a check rather than its result. «You said that 12 minus 5 makes 8. is that so? no: 8 + 5 = 13, not 12.» THE CHECK IS THE INVERSE OPERATION, not a repetition: «yes: 12 − 5 = 7» would be a circle (М-263), while «yes: 7 + 5 = 12» counts a DIFFERENT operation and arrives at the named number. The objection does not declare an error, it SHOWS one. Politeness here is part of the form and not an ornament: the objection opens with «is that so?» — a question the COUNTING itself answers — so an organism that learns this form objects by displaying, not by insisting. The quoted claim is written in WORDS, never in signs: by М-178 the corpus may not quote a falsehood inside a judged line, and the Spanish «12 menos 5 es 8» was read as an equality by the arithmetic court even without signs — so the quoted claim must not resemble an equality in words either.",
+      "act": [
+        "decide",
+        "refute",
+        "recount",
+        "translate"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "reply",
       "file": "datasets/genesis_reply.txt",
       "genre": "REPLY — advice to the interlocutor RESTING ON A DECLARED LAW. The owner's order about «basic behavioural and psychological laws» was half closed: the behaviour house gives the LAW but not its APPLICATION TO THE PERSON SPEAKING. Here a person names their state and the answer is not sympathy without ground but advice with a checkable law behind it: «i am tired. what should i do? take a rest: when a person is tired, that person makes more mistakes.» The law is never rewritten here — it is quoted from the behaviour house, and the court reads it exactly so: it does not trust the house's own list but compares the tail of the line with the neighbour's declaration word for word. Advice under which a law of a DIFFERENT genus is placed is true in both halves and false as a whole — the same nature as a circular answer. The question head is chosen BY GENUS: tiredness, hunger and haste are asked WHAT TO DO (the state is fixable by action); fear, habit and missed attention are asked WHY (there is nothing to fix, there is something to understand). The sympathetic pair is declared for the NEIGHBOUR and never written as a show — see М-267.",
