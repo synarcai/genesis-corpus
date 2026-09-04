@@ -6,6 +6,10 @@
 спрашивает ребёнок: сколько у паука ног, сколько у человека зубов, при какой
 температуре кипит вода.
 
+ЦИКЛОВ ЗДЕСЬ ДВА — ВРЕМЕНА ГОДА И ДНИ НЕДЕЛИ, — И РАМКА У НИХ ОДНА, ибо род
+у них один: замыкание по остатку. Дом, заведший бы вторую рамку, развёл бы два
+цикла молча, и день, когда они разойдутся, никто бы не заметил.
+
 ВРЕМЕНА ГОДА — ЦИКЛ, А НЕ СПИСОК, и во всём своде их не было ни одного показа.
 Замыкание («после осени идёт зима») есть то, чем цикл отличается от перечня, и
 здесь оно не дописано рукой, а ВЫВЕДЕНО остатком по длине — забыть его нельзя.
@@ -50,6 +54,9 @@ import rugram  # noqa: E402
         часть="у {б} {n} {в}. {в1} — часть {б}.",
         сезон="после {a} идёт {b}.", сезон_воп="после {a} идёт {b}. что идёт после {a}? {b}.",
         времена=(("зима", "зимы"), ("весна", "весны"), ("лето", "лета"), ("осень", "осени")),
+        дни=(("понедельник", "понедельника"), ("вторник", "вторника"), ("среда", "среды"),
+             ("четверг", "четверга"), ("пятница", "пятницы"), ("суббота", "субботы"),
+             ("воскресенье", "воскресенья")),
         воп="у {б} {n} {в}. сколько {ва} у {б}? {n} {в}.",
         пара="у {б} {n} {в}. сколько {ва} у {бп}? {r} {вr}: {n} × 2 = {r}.",
         факты=(("паука", "двух пауков", "нога", 8), ("насекомого", "двух насекомых", "нога", 6),
@@ -68,6 +75,9 @@ import rugram  # noqa: E402
         часть="a {б} has {n} {в}. a {в1} is a part of a {б}.",
         сезон="after {a} comes {b}.", сезон_воп="after {a} comes {b}. what comes after {a}? {b}.",
         времена=(("winter", "winter"), ("spring", "spring"), ("summer", "summer"), ("autumn", "autumn")),
+        дни=(("monday", "monday"), ("tuesday", "tuesday"), ("wednesday", "wednesday"),
+             ("thursday", "thursday"), ("friday", "friday"), ("saturday", "saturday"),
+             ("sunday", "sunday")),
         воп="a {б} has {n} {в}. how many {ва} does a {б} have? {n} {в}.",
         пара="a {б} has {n} {в}. how many {ва} do {бп} have? {r} {вr}: {n} × 2 = {r}.",
         факты=(("spider", "two spiders", ("leg", "legs"), 8), ("insect", "two insects", ("leg", "legs"), 6),
@@ -87,6 +97,10 @@ import rugram  # noqa: E402
         сезон="nach {a} kommt {b}.", сезон_воп="nach {a} kommt {b}. was kommt nach {a}? {b}.",
         времена=(("der Winter", "dem Winter"), ("der Frühling", "dem Frühling"),
                  ("der Sommer", "dem Sommer"), ("der Herbst", "dem Herbst")),
+        дни=(("der Montag", "dem Montag"), ("der Dienstag", "dem Dienstag"),
+             ("der Mittwoch", "dem Mittwoch"), ("der Donnerstag", "dem Donnerstag"),
+             ("der Freitag", "dem Freitag"), ("der Samstag", "dem Samstag"),
+             ("der Sonntag", "dem Sonntag")),
         воп="{б} hat {n} {в}. wie viele {ва} hat {б}? {n} {в}.",
         пара="{б} hat {n} {в}. wie viele {ва} haben {бп}? {r} {вr}: {n} × 2 = {r}.",
         факты=(("eine Spinne", "zwei Spinnen", ("Bein", "Beine"), 8), ("ein Insekt", "zwei Insekten", ("Bein", "Beine"), 6),
@@ -106,6 +120,9 @@ import rugram  # noqa: E402
         сезон="après {a} vient {b}.", сезон_воп="après {a} vient {b}. qu'est-ce qui vient après {a} ? {b}.",
         времена=(("l'hiver", "l'hiver"), ("le printemps", "le printemps"),
                  ("l'été", "l'été"), ("l'automne", "l'automne")),
+        дни=(("le lundi", "le lundi"), ("le mardi", "le mardi"), ("le mercredi", "le mercredi"),
+             ("le jeudi", "le jeudi"), ("le vendredi", "le vendredi"), ("le samedi", "le samedi"),
+             ("le dimanche", "le dimanche")),
         воп="{б} a {n} {в}. combien de {ва} a {б} ? {n} {в}.",
         пара="{б} a {n} {в}. combien de {ва} ont {бп} ? {r} {вr} : {n} × 2 = {r}.",
         факты=(("une araignée", "deux araignées", ("patte", "pattes"), 8), ("un insecte", "deux insectes", ("patte", "pattes"), 6),
@@ -125,6 +142,9 @@ import rugram  # noqa: E402
         сезон="después {a} viene {b}.", сезон_воп="después {a} viene {b}. ¿qué viene después {a}? {b}.",
         времена=(("el invierno", "del invierno"), ("la primavera", "de la primavera"),
                  ("el verano", "del verano"), ("el otoño", "del otoño")),
+        дни=(("el lunes", "del lunes"), ("el martes", "del martes"), ("el miércoles", "del miércoles"),
+             ("el jueves", "del jueves"), ("el viernes", "del viernes"), ("el sábado", "del sábado"),
+             ("el domingo", "del domingo")),
         воп="{б} tiene {n} {в}. ¿cuántas {ва} tiene {б}? {n} {в}.",
         пара="{б} tiene {n} {в}. ¿cuántas {ва} tienen {бп}? {r} {вr}: {n} × 2 = {r}.",
         факты=(("una araña", "dos arañas", ("pata", "patas"), 8), ("un insecto", "dos insectos", ("pata", "patas"), 6),
@@ -143,6 +163,9 @@ import rugram  # noqa: E402
         сезон="dopo {a} viene {b}.", сезон_воп="dopo {a} viene {b}. che cosa viene dopo {a}? {b}.",
         времена=(("l'inverno", "l'inverno"), ("la primavera", "la primavera"),
                  ("l'estate", "l'estate"), ("l'autunno", "l'autunno")),
+        дни=(("il lunedì", "il lunedì"), ("il martedì", "il martedì"), ("il mercoledì", "il mercoledì"),
+             ("il giovedì", "il giovedì"), ("il venerdì", "il venerdì"), ("il sabato", "il sabato"),
+             ("la domenica", "la domenica")),
         воп="{б} ha {n} {в}. quante {ва} ha {б}? {n} {в}.",
         пара="{б} ha {n} {в}. quante {ва} hanno {бп}? {r} {вr}: {n} × 2 = {r}.",
         факты=(("un ragno", "due ragni", ("zampa", "zampe"), 8), ("un insetto", "due insetti", ("zampa", "zampe"), 6),
@@ -161,6 +184,10 @@ import rugram  # noqa: E402
         сезон="depois {a} vem {b}.", сезон_воп="depois {a} vem {b}. o que vem depois {a}? {b}.",
         времена=(("o inverno", "do inverno"), ("a primavera", "da primavera"),
                  ("o verão", "do verão"), ("o outono", "do outono")),
+        дни=(("a segunda-feira", "da segunda-feira"), ("a terça-feira", "da terça-feira"),
+             ("a quarta-feira", "da quarta-feira"), ("a quinta-feira", "da quinta-feira"),
+             ("a sexta-feira", "da sexta-feira"), ("o sábado", "do sábado"),
+             ("o domingo", "do domingo")),
         воп="{б} tem {n} {в}. quantas {ва} tem {б}? {n} {в}.",
         пара="{б} tem {n} {в}. quantas {ва} têm {бп}? {r} {вr}: {n} × 2 = {r}.",
         факты=(("uma aranha", "duas aranhas", ("pata", "patas"), 8), ("um inseto", "dois insetos", ("pata", "patas"), 6),
@@ -179,6 +206,9 @@ import rugram  # noqa: E402
         сезон="na {a} komt {b}.", сезон_воп="na {a} komt {b}. wat komt na {a}? {b}.",
         времена=(("de winter", "de winter"), ("de lente", "de lente"),
                  ("de zomer", "de zomer"), ("de herfst", "de herfst")),
+        дни=(("de maandag", "de maandag"), ("de dinsdag", "de dinsdag"), ("de woensdag", "de woensdag"),
+             ("de donderdag", "de donderdag"), ("de vrijdag", "de vrijdag"), ("de zaterdag", "de zaterdag"),
+             ("de zondag", "de zondag")),
         воп="{б} heeft {n} {в}. hoeveel {ва} heeft {б}? {n} {в}.",
         пара="{б} heeft {n} {в}. hoeveel {ва} hebben {бп}? {r} {вr}: {n} × 2 = {r}.",
         факты=(("een spin", "twee spinnen", ("poot", "poten"), 8), ("een insect", "twee insecten", ("poot", "poten"), 6),
@@ -196,6 +226,9 @@ import rugram  # noqa: E402
         часть="{б} ma {n} {в}. {в1} jest jego częścią.",
         сезон="po {a} przychodzi {b}.", сезон_воп="po {a} przychodzi {b}. co przychodzi po {a}? {b}.",
         времена=(("zima", "zimie"), ("wiosna", "wiośnie"), ("lato", "lecie"), ("jesień", "jesieni")),
+        дни=(("poniedziałek", "poniedziałku"), ("wtorek", "wtorku"), ("środa", "środzie"),
+             ("czwartek", "czwartku"), ("piątek", "piątku"), ("sobota", "sobocie"),
+             ("niedziela", "niedzieli")),
         воп="{б} ma {n} {в}. ile {ва} ma {б}? {n} {в}.",
         пара="{б} ma {n} {в}. ile {ва} mają {бп}? {r} {вr}: {n} × 2 = {r}.",
         факты=(("pająk", "dwa pająki", "noga", 8), ("owad", "dwa owady", "noga", 6),
@@ -210,7 +243,7 @@ import rugram  # noqa: E402
         градус="stopień",
     ),
 }
-ФОРМЫ = ("утв", "воп", "пара", "часть", "темп", "темп_воп", "сезон", "сезон_воп")
+ФОРМЫ = ("утв", "воп", "пара", "часть", "темп", "темп_воп", "сезон", "сезон_воп", "день", "день_воп")
 
 
 def вещь(язык, в, n):
@@ -226,6 +259,14 @@ def вещь(язык, в, n):
 
 def показ(язык, форма, i):
     я = ЯЗЫКИ[язык]
+    if форма in ("день", "день_воп"):
+        # ВТОРОЙ ЦИКЛ ТОЙ ЖЕ РАМКОЙ: «после вторника идёт среда» и «после осени
+        # идёт зима» суть один род — замыкание по остатку, — и потому рамка у них
+        # ОДНА. Дом, заведший бы вторую, развёл бы два цикла молча.
+        дни = я["дни"]
+        (_, a) = дни[i % len(дни)]
+        (b, _) = дни[(i + 1) % len(дни)]
+        return я["сезон" if форма == "день" else "сезон_воп"].format(a=a, b=b)
     if форма in ("сезон", "сезон_воп"):
         # ЦИКЛ, А НЕ СПИСОК: после последнего идёт ПЕРВЫЙ, и замыкание есть то,
         # чем цикл отличается от перечня. Показ «после осени идёт зима» строится
@@ -261,6 +302,9 @@ def _все_показы():
                 вон[показ(язык, форма, i)] = (язык, форма)
         for форма in ("сезон", "сезон_воп"):
             for i in range(len(я["времена"])):
+                вон[показ(язык, форма, i)] = (язык, форма)
+        for форма in ("день", "день_воп"):
+            for i in range(len(я["дни"])):
                 вон[показ(язык, форма, i)] = (язык, форма)
     return вон
 
