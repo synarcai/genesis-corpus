@@ -134,7 +134,7 @@ def величины(текст):
 ВОПРОСНЫЕ_СЛОВА = frozenset("""
 what how which where when who whom whose why is are was were does do did
 can could should has have will or
-чему как сколько что какой какая какое какие каков какова каково
+чему как сколько что какой какая какое какие каков какова каково согласны
 каковы каком какую какого какими где
 когда кто является делится простое сравнимы взаимно есть ли если во на
 чем чего кого кому или
@@ -167,22 +167,22 @@ what how which where when who whom whose why is are was were does do did
 whence whither wherefore wherein whereby whereof
 what's what’s how's how’s where's where’s who's who’s
 can could should has have will shall must may might would ought need
-чему как сколько что какой какая какое какие каков какова каково
+чему как сколько что какой какая какое какие каков какова каково согласны
 каковы каком какую какого какими где
 когда кто чем чего кому насколько почему зачем отчего откуда куда
 чём ком кем который которая которое которые которого которой которых
 является делится простое сравнимы связен может
 взаимно есть ли если во на
 wenn wie was ist sind welche welcher wo wann warum wieviel wer wen wem
-stimmt stimmst meinst bist wozu womit woraus wovon wodurch worauf kann darf haben hat verhält
+stimmt stimmst stimmen meinst meinen bist wozu womit woraus wovon wodurch worauf kann darf haben hat verhält
 que quel quelle quels combien comment pourquoi est qu'est-ce est-il
-est-elle est-ce si y et tu es-tu quoi
+est-elle est-ce si y et tu es-tu êtes-vous vous quoi
 cual cuanto cuantos que es hay donde se ¿es ¿son ¿cuál ¿cuánto ¿qué ¿cómo ¿quién ¿puede ¿tienen ¿tiene
-¿y ¿quieres ¿estás ¿por
-che cosa quanto quanti dove quale come chi perché intendi sei può hanno ha
-qual quantos onde como quem porque porquê queres concordas pode todos tem têm
+¿y ¿quieres ¿quiere ¿estás ¿está ¿por
+che cosa quanto quanti dove quale come chi perché intendi intende sei può hanno ha
+qual quantos onde como quem porque porquê queres quer concordas concorda pode todos tem têm
 czy ile co jaki jaka jakie jakiej jakim jakich który które która czego gdzie kiedy jak czym dlaczego masz zgadzasz
-wat hoe hoeveel welke welk verhoudt waar waarom bedoel ben klopt en waarmee waarvan waarop waardoor kan hebben heeft
+wat hoe hoeveel welke welk verhoudt waar waarom bedoel bedoelt ben bent klopt en waarmee waarvan waarop waardoor kan hebben heeft
 ты а
 # ЭЛЛИПТИЧЕСКИЙ ВОПРОС ОТКРЫВАЕТСЯ СОЮЗОМ, а не вопросным словом: «а у тома?»,
 # «and tom?», «und Lena?» — так и спрашивает человек, когда предмет вопроса

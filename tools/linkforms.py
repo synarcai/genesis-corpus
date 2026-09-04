@@ -307,8 +307,81 @@ def _поля(язык, X, Т, n, k):
         л=f"{n} − {k} = {r}.", лд=f"{n} × 2 = {д}.")
 
 
-def страница(язык, форма, X=0, Т=0, n=7, k=2, Y=None):
-    я = ЯЗЫКИ[язык]
+
+# ВЕЖЛИВЫЙ РЕГИСТР — второе лицо на «вы». Замер по своду нашёл в корпусе НОЛЬ
+# строк с «вы» при девяноста двух с «ты», ноль «Sie» при двухстах двадцати
+# «du», ноль «vous» при ста семнадцати «tu». Дом связок — самый разговорный в
+# корпусе (279 строк обращаются к собеседнику), и потому регистр ему нужнее
+# всех: организм, зовущий владельца на «ты», по-русски, по-немецки,
+# по-французски, по-испански, по-итальянски и по-польски груб, а не краток.
+#
+# ВЕЖЛИВАЯ РАМКА ЕСТЬ НЕФОРМАЛЬНАЯ С ОБЪЯВЛЕННОЙ ЗАМЕНОЙ, а не вторая рукопись:
+# так видно, ЧТО ИМЕННО меняет регистр, и так невозможно завести две рамки,
+# разошедшиеся в чём-то, кроме обращения.
+#
+# АНГЛИЙСКИЙ РАЗЛИЧИЯ НЕ ИМЕЕТ («you» служит обоим) и пишет одну форму —
+# объявлено списком. ПОЛЬСКИЙ ИДЁТ ТРЕТЬИМ ЛИЦОМ («czy pan się zgadza»), а не
+# вторым, и потому его замены переписывают всю фразу.
+БЕЗ_РАЗЛИЧИЯ_РЕГИСТРА = frozenset({"en"})
+ЗАМЕНЫ_ОБРАЩЕНИЯ = {
+"ru": (("согласен ли ты?", "согласны ли вы?"), ("ты имеешь в виду", "вы имеете в виду"),
+       ("повтори, пожалуйста.", "повторите, пожалуйста."),
+       ("объясни.", "объясните."), ("объясни, пожалуйста:", "объясните, пожалуйста:")),
+"de": (("stimmst du zu?", "stimmen Sie zu?"), ("meinst du", "meinen Sie"),
+       ("sag das bitte noch einmal.", "sagen Sie das bitte noch einmal."),
+       ("erkläre es.", "erklären Sie es."), ("erkläre es bitte:", "erklären Sie es bitte:")),
+"fr": (("es-tu d'accord ?", "êtes-vous d'accord ?"), ("tu veux dire", "vous voulez dire"),
+       ("répète, s'il te plaît.", "répétez, s'il vous plaît."),
+       ("explique.", "expliquez."), ("explique, s'il te plaît :", "expliquez, s'il vous plaît :")),
+"es": (("¿estás de acuerdo?", "¿está usted de acuerdo?"), ("¿quieres decir", "¿quiere usted decir"),
+       ("repite, por favor.", "repita, por favor."),
+       ("explícalo.", "explíquelo."), ("explícalo, por favor:", "explíquelo, por favor:")),
+"it": (("sei d'accordo?", "è d'accordo?"), ("intendi", "intende"),
+       ("ripeti, per favore.", "ripeta, per favore."),
+       ("spiega.", "spieghi."), ("spiega, per favore:", "spieghi, per favore:")),
+"pt": (("concordas?", "concorda?"), ("queres dizer", "quer dizer"),
+       ("repete, por favor.", "repita, por favor."),
+       ("explica.", "explique."), ("explica, por favor:", "explique, por favor:")),
+"nl": (("ben je het ermee eens?", "bent u het ermee eens?"), ("bedoel je", "bedoelt u"),
+       ("zeg dat nog eens, alsjeblieft.", "zegt u dat nog eens, alstublieft."),
+       ("leg het uit.", "legt u het uit."), ("leg het uit, alsjeblieft:", "legt u het uit, alstublieft:")),
+"pl": (("czy się zgadzasz?", "czy pan się zgadza?"), ("czy chodzi ci o", "czy chodzi panu o"),
+       ("powtórz, proszę.", "proszę powtórzyć."),
+       ("wyjaśnij.", "proszę wyjaśnić."), ("wyjaśnij, proszę:", "proszę wyjaśnić:")),
+}
+ФОРМЫ_ВЫ = ("согласен", "переспрос", "повтори", "объясни", "объясни2")
+
+# ОБЪЯВЛЕННЫЙ ПРОПУСК: дыра, о которой дом ЗНАЕТ и которую держит нарочно.
+# Прибор щербатости (scripts/form_matrix.py) читает это объявление и не зовёт
+# такую дыру щербатостью: язык без различия регистров пишет одну форму, и
+# требовать от него второй значило бы судить английский русской меркой.
+ОБЪЯВЛЕННЫЕ_ПРОПУСКИ = {ф + "_вы": БЕЗ_РАЗЛИЧИЯ_РЕГИСТРА for ф in ФОРМЫ_ВЫ}
+
+
+def _языки_вы():
+    вон = {}
+    for язык, пары in ЗАМЕНЫ_ОБРАЩЕНИЯ.items():
+        своё = dict(ЯЗЫКИ[язык])
+        for форма in ФОРМЫ_ВЫ:
+            if форма not in своё:
+                continue
+            рамка = своё[форма]
+            for стар, нов in пары:
+                рамка = рамка.replace(стар, нов)
+            assert рамка != своё[форма], (язык, форма)
+            своё[форма] = рамка
+        вон[язык] = своё
+    return вон
+
+
+ЯЗЫКИ_ВЫ = _языки_вы()
+
+for _яз in ЯЗЫКИ:
+    assert (_яз in БЕЗ_РАЗЛИЧИЯ_РЕГИСТРА) != (_яз in ЯЗЫКИ_ВЫ), _яз
+
+
+def страница(язык, форма, X=0, Т=0, n=7, k=2, Y=None, вежливо=False):
+    я = (ЯЗЫКИ_ВЫ if вежливо else ЯЗЫКИ)[язык]
     п = _поля(язык, X, Т, n, k)
     if форма in ("повтори", "объясни", "объясни2"):
         # ПОЧИНКА РАЗГОВОРА: «повтори, пожалуйста» и «я не понял, объясни» —
@@ -378,10 +451,16 @@ def _все_показы():
                 for t in range(вещей):
                     n = 5 + (i * 3 + t * 2) % 20
                     k = 1 + (i + t) % 4
-                    try:
-                        вон[страница(язык, форма, i, t, n, k)] = (язык, форма)
-                    except ValueError:
-                        continue   # падеж не объявлен — страница не пишется
+                    for вежливо in (False, True):
+                        if вежливо and (форма not in ФОРМЫ_ВЫ
+                                        or язык in БЕЗ_РАЗЛИЧИЯ_РЕГИСТРА):
+                            continue
+                        имя = форма + ("_вы" if вежливо else "")
+                        try:
+                            вон[страница(язык, форма, i, t, n, k,
+                                         вежливо=вежливо)] = (язык, имя)
+                        except ValueError:
+                            continue   # падеж не объявлен — страница не пишется
     return вон
 
 
