@@ -66,7 +66,10 @@ COURTS=("courts/arith_court.py" "courts/algo_court.py"
         "scripts/prefix_traps.py"
         # ПЕРЕПИСЬ ПОРОГОВ — пай аудита «меры и пороги»: всякое число в роли
         # рубежа с ответом «объявлено / храповик / вкус». Печатает число, не падает.
-        "scripts/threshold_census.py")
+        "scripts/threshold_census.py"
+        # ЧИСЛО БЕЗ ЗНАМЕНАТЕЛЯ — последняя строка каждого прибора леджера: сказано
+        # ли, из скольких. Ноль без объёма — FAIL (закон holon).
+        "scripts/denominator_census.py")
 FELL=0
 for entry in "${COURTS[@]}"; do
   set -- $entry; tool="$1"; shift
