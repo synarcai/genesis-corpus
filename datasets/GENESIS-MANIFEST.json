@@ -883,6 +883,30 @@
       "actors": []
     },
     {
+      "name": "anaphora",
+      "file": "datasets/genesis_anaphora.txt",
+      "genre": "ANAPHORA — the second mention of a person, and TWO WAYS of carrying it. The measure over the svod: pronominal reference lives in Russian (746 «она», 873 «он»), English (608/547), German (324/586), French (137) — and is nearly or wholly absent in Spanish (0 «ella»), Italian (0 «lei») and Polish (0 «ona»). Three languages of nine never show a second mention. AND THAT IS NOT ONE GAP BUT TWO STRUCTURES MIXED INSIDE ONE ZERO: Spanish, Italian and Polish DROP the subject — the second mention is carried by the ENDING OF THE VERB, and writing «ella dio» there would be unidiomatic. A corpus that added pronouns to them would teach wrong speech; a corpus that added nothing would teach no reference at all. The house declares WHICH languages carry the mention in the verb, and the court holds it to that declaration. Three oracles on one line: the subtraction, the count form of the thing at EACH of the three numbers, and the agreement of the NAME with the gender of the frame — with the last check silent exactly where a language drops the subject, since there the two frames coincide word for word and the gender is not expressed at all. Silence there is not a hole but the shape of that language.",
+      "act": [
+        "recount",
+        "inflect",
+        "translate"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "reply",
       "file": "datasets/genesis_reply.txt",
       "genre": "REPLY — advice to the interlocutor RESTING ON A DECLARED LAW. The owner's order about «basic behavioural and psychological laws» was half closed: the behaviour house gives the LAW but not its APPLICATION TO THE PERSON SPEAKING. Here a person names their state and the answer is not sympathy without ground but advice with a checkable law behind it: «i am tired. what should i do? take a rest: when a person is tired, that person makes more mistakes.» The law is never rewritten here — it is quoted from the behaviour house, and the court reads it exactly so: it does not trust the house's own list but compares the tail of the line with the neighbour's declaration word for word. Advice under which a law of a DIFFERENT genus is placed is true in both halves and false as a whole — the same nature as a circular answer. The question head is chosen BY GENUS: tiredness, hunger and haste are asked WHAT TO DO (the state is fixable by action); fear, habit and missed attention are asked WHY (there is nothing to fix, there is something to understand). The sympathetic pair is declared for the NEIGHBOUR and never written as a show — see М-267.",
@@ -4276,10 +4300,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 19449348,
+      "size": 19502367,
       "tiers": [],
       "text": "mix",
-      "lines": 253387
+      "lines": 253999
     },
     {
       "name": "full",
@@ -4294,10 +4318,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 23963005,
+      "size": 24016024,
       "tiers": [],
       "text": "mix",
-      "lines": 327054
+      "lines": 327666
     },
     {
       "name": "minimal",

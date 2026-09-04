@@ -14,9 +14,25 @@
 0² + 0 + 41 = 41 est premier. 1² + 1 + 41 = 43 est premier. 2² + 2 + 41 = 47 est premier. 3² + 3 + 41 = 53 est premier.
 2^2 − 1 = 3 est premier. 2^3 − 1 = 7 est premier. 2^5 − 1 = 31 est premier. 2^7 − 1 = 127 est premier. en découle-t-il que 2^n − 1 est premier pour tout n premier ? non : à n = 11 on obtient 2047, et 2047 = 23 × 89.
 
-1 = 1 × 2 ÷ 2. 1 + 2 = 2 × 3 ÷ 2. 1 + 2 + 3 = 3 × 4 ÷ 2. 1 + 2 + 3 + 4 = 4 × 5 ÷ 2. ¿se sigue que la suma de los primeros n números es n × (n + 1) ÷ 2? 4 casos no lo demuestran, pero es cierto: sumando la serie consigo misma escrita al revés se obtienen n pares, y cada par vale n + 1.
+3 es primo. 5 es primo. 7 es primo. ¿se sigue que todo número impar mayor que 1 es primo? no: 9 no es primo, pues 9 = 3 × 3.
+0² + 0 + 41 = 41 es primo. 1² + 1 + 41 = 43 es primo. 2² + 2 + 41 = 47 es primo. 3² + 3 + 41 = 53 es primo.
+2^2 − 1 = 3 es primo. 2^3 − 1 = 7 es primo. 2^5 − 1 = 31 es primo. 2^7 − 1 = 127 es primo. ¿se sigue que 2^n − 1 es primo para todo n primo? no: en n = 11 sale 2047, y 2047 = 23 × 89.
+
+3 è primo. 5 è primo. 7 è primo. ne segue che ogni numero dispari maggiore di 1 è primo? no: 9 non è primo, perché 9 = 3 × 3.
+0² + 0 + 41 = 41 è primo. 1² + 1 + 41 = 43 è primo. 2² + 2 + 41 = 47 è primo. 3² + 3 + 41 = 53 è primo.
+2^2 − 1 = 3 è primo. 2^3 − 1 = 7 è primo. 2^5 − 1 = 31 è primo. 2^7 − 1 = 127 è primo. ne segue che 2^n − 1 è primo per ogni n primo? no: per n = 11 viene 2047, e 2047 = 23 × 89.
+
+3 é primo. 5 é primo. 7 é primo. segue-se que todo número ímpar maior que 1 é primo? não: 9 não é primo, pois 9 = 3 × 3.
+0² + 0 + 41 = 41 é primo. 1² + 1 + 41 = 43 é primo. 2² + 2 + 41 = 47 é primo. 3² + 3 + 41 = 53 é primo.
+2^2 − 1 = 3 é primo. 2^3 − 1 = 7 é primo. 2^5 − 1 = 31 é primo. 2^7 − 1 = 127 é primo. segue-se que 2^n − 1 é primo para todo n primo? não: em n = 11 dá 2047, e 2047 = 23 × 89.
+
+3 is een priemgetal. 5 is een priemgetal. 7 is een priemgetal. volgt daaruit dat elk oneven getal groter dan 1 een priemgetal is? nee: 9 is geen priemgetal, want 9 = 3 × 3.
+0² + 0 + 41 = 41 is een priemgetal. 1² + 1 + 41 = 43 is een priemgetal. 2² + 2 + 41 = 47 is een priemgetal. 3² + 3 + 41 = 53 is een priemgetal.
+2^2 − 1 = 3 is een priemgetal. 2^3 − 1 = 7 is een priemgetal. 2^5 − 1 = 31 is een priemgetal. 2^7 − 1 = 127 is een priemgetal. volgt daaruit dat 2^n − 1 voor elk priemgetal n een priemgetal is? nee: bij n = 11 komt 2047, en 2047 = 23 × 89.
+
+1 = 1 × 2 ÷ 2. 1 + 2 = 2 × 3 ÷ 2. 1 + 2 + 3 = 3 × 4 ÷ 2. 1 + 2 + 3 + 4 = 4 × 5 ÷ 2. czy wynika z tego, że suma pierwszych n liczb to n × (n + 1) ÷ 2? 4 przypadki tego nie dowodzą, ale to prawda: dodając szereg do samego siebie zapisanego wspak otrzymujemy n par, a każda para to n + 1.
 1 = 1 × 1. 1 + 3 = 2 × 2. 1 + 3 + 5 = 3 × 3. 1 + 3 + 5 + 7 = 4 × 4.
-1! + 1 = 2 es primo. 2! + 1 = 3 es primo. 3! + 1 = 7 es primo.
+1! + 1 = 2 jest liczbą pierwszą. 2! + 1 = 3 jest liczbą pierwszą. 3! + 1 = 7 jest liczbą pierwszą.
 
 2^2 − 1 = 3 — простое. 2^3 − 1 = 7 — простое. 2^5 − 1 = 31 — простое. 2^7 − 1 = 127 — простое.
 1 = 1 × 1. 1 + 3 = 2 × 2. 1 + 3 + 5 = 3 × 3. 1 + 3 + 5 + 7 = 4 × 4. значит ли, что сумма первых n нечётных чисел равна n × n? 4 случая этого не доказывают, но это верно: каждое следующее нечётное число достраивает квадрат n × n до квадрата (n + 1) × (n + 1).
@@ -30,8 +46,20 @@
 2^2 − 1 = 3 est premier. 2^3 − 1 = 7 est premier. 2^5 − 1 = 31 est premier. 2^7 − 1 = 127 est premier.
 1 = 1 × 1. 1 + 3 = 2 × 2. 1 + 3 + 5 = 3 × 3. 1 + 3 + 5 + 7 = 4 × 4. en découle-t-il que la somme des n premiers nombres impairs vaut n × n ? 4 cas ne le prouvent pas, mais c'est vrai : chaque nombre impair suivant complète le carré n × n en le carré (n + 1) × (n + 1).
 
-1! + 1 = 2 es primo. 2! + 1 = 3 es primo. 3! + 1 = 7 es primo. ¿se sigue que n! + 1 es primo para todo n? no: en n = 4 sale 25, y 25 = 5 × 5.
-3 es primo. 5 es primo. 7 es primo.
+2^2 − 1 = 3 es primo. 2^3 − 1 = 7 es primo. 2^5 − 1 = 31 es primo. 2^7 − 1 = 127 es primo.
+1 = 1 × 1. 1 + 3 = 2 × 2. 1 + 3 + 5 = 3 × 3. 1 + 3 + 5 + 7 = 4 × 4. ¿se sigue que la suma de los primeros n números impares es n × n? 4 casos no lo demuestran, pero es cierto: cada número impar siguiente completa el cuadrado n × n hasta el cuadrado (n + 1) × (n + 1).
+
+2^2 − 1 = 3 è primo. 2^3 − 1 = 7 è primo. 2^5 − 1 = 31 è primo. 2^7 − 1 = 127 è primo.
+1 = 1 × 1. 1 + 3 = 2 × 2. 1 + 3 + 5 = 3 × 3. 1 + 3 + 5 + 7 = 4 × 4. ne segue che la somma dei primi n numeri dispari è n × n? 4 casi non lo dimostrano, ma è vero: ogni numero dispari successivo completa il quadrato n × n nel quadrato (n + 1) × (n + 1).
+
+2^2 − 1 = 3 é primo. 2^3 − 1 = 7 é primo. 2^5 − 1 = 31 é primo. 2^7 − 1 = 127 é primo.
+1 = 1 × 1. 1 + 3 = 2 × 2. 1 + 3 + 5 = 3 × 3. 1 + 3 + 5 + 7 = 4 × 4. segue-se que a soma dos primeiros n números ímpares é n × n? 4 casos não o provam, mas é verdade: cada número ímpar seguinte completa o quadrado n × n no quadrado (n + 1) × (n + 1).
+
+2^2 − 1 = 3 is een priemgetal. 2^3 − 1 = 7 is een priemgetal. 2^5 − 1 = 31 is een priemgetal. 2^7 − 1 = 127 is een priemgetal.
+1 = 1 × 1. 1 + 3 = 2 × 2. 1 + 3 + 5 = 3 × 3. 1 + 3 + 5 + 7 = 4 × 4. volgt daaruit dat de som van de eerste n oneven getallen n × n is? 4 gevallen bewijzen het niet, maar het is waar: elk volgend oneven getal het kwadraat n × n aanvult tot het kwadraat (n + 1) × (n + 1).
+
+1! + 1 = 2 jest liczbą pierwszą. 2! + 1 = 3 jest liczbą pierwszą. 3! + 1 = 7 jest liczbą pierwszą. czy wynika z tego, że n! + 1 jest liczbą pierwszą dla każdego n? nie: przy n = 4 wychodzi 25, a 25 = 5 × 5.
+3 jest liczbą pierwszą. 5 jest liczbą pierwszą. 7 jest liczbą pierwszą.
 1 = 1 × 2 ÷ 2. 1 + 2 = 2 × 3 ÷ 2. 1 + 2 + 3 = 3 × 4 ÷ 2. 1 + 2 + 3 + 4 = 4 × 5 ÷ 2.
 
 1 = 1 × 2 ÷ 2. 1 + 2 = 2 × 3 ÷ 2. 1 + 2 + 3 = 3 × 4 ÷ 2. 1 + 2 + 3 + 4 = 4 × 5 ÷ 2. значит ли, что сумма первых n чисел равна n × (n + 1) ÷ 2? 4 случая этого не доказывают, но это верно: сложив ряд с ним же, записанным наоборот, получим n пар, и в каждой паре n + 1.
@@ -46,9 +74,21 @@
 1 = 1 × 2 ÷ 2. 1 + 2 = 2 × 3 ÷ 2. 1 + 2 + 3 = 3 × 4 ÷ 2. 1 + 2 + 3 + 4 = 4 × 5 ÷ 2. en découle-t-il que la somme des n premiers nombres vaut n × (n + 1) ÷ 2 ? 4 cas ne le prouvent pas, mais c'est vrai : en ajoutant la suite à elle-même écrite à l'envers on obtient n paires, et chaque paire vaut n + 1.
 1! + 1 = 2 est premier. 2! + 1 = 3 est premier. 3! + 1 = 7 est premier.
 
+1 = 1 × 2 ÷ 2. 1 + 2 = 2 × 3 ÷ 2. 1 + 2 + 3 = 3 × 4 ÷ 2. 1 + 2 + 3 + 4 = 4 × 5 ÷ 2. ¿se sigue que la suma de los primeros n números es n × (n + 1) ÷ 2? 4 casos no lo demuestran, pero es cierto: sumando la serie consigo misma escrita al revés se obtienen n pares, y cada par vale n + 1.
+1! + 1 = 2 es primo. 2! + 1 = 3 es primo. 3! + 1 = 7 es primo.
+
+1 = 1 × 2 ÷ 2. 1 + 2 = 2 × 3 ÷ 2. 1 + 2 + 3 = 3 × 4 ÷ 2. 1 + 2 + 3 + 4 = 4 × 5 ÷ 2. ne segue che la somma dei primi n numeri è n × (n + 1) ÷ 2? 4 casi non lo dimostrano, ma è vero: sommando la serie a sé stessa scritta al contrario si ottengono n coppie, e ogni coppia vale n + 1.
+1! + 1 = 2 è primo. 2! + 1 = 3 è primo. 3! + 1 = 7 è primo.
+
+1 = 1 × 2 ÷ 2. 1 + 2 = 2 × 3 ÷ 2. 1 + 2 + 3 = 3 × 4 ÷ 2. 1 + 2 + 3 + 4 = 4 × 5 ÷ 2. segue-se que a soma dos primeiros n números é n × (n + 1) ÷ 2? 4 casos não o provam, mas é verdade: somando a série a si mesma escrita ao contrário obtêm-se n pares, e cada par vale n + 1.
+1! + 1 = 2 é primo. 2! + 1 = 3 é primo. 3! + 1 = 7 é primo.
+
+1 = 1 × 2 ÷ 2. 1 + 2 = 2 × 3 ÷ 2. 1 + 2 + 3 = 3 × 4 ÷ 2. 1 + 2 + 3 + 4 = 4 × 5 ÷ 2. volgt daaruit dat de som van de eerste n getallen n × (n + 1) ÷ 2 is? 4 gevallen bewijzen het niet, maar het is waar: door de reeks bij zichzelf achterstevoren op te tellen men n paren krijgt, en elk paar n + 1 is.
+1! + 1 = 2 is een priemgetal. 2! + 1 = 3 is een priemgetal. 3! + 1 = 7 is een priemgetal.
+
 1 = 1 × 1. 1 + 8 = 3 × 3. 1 + 8 + 27 = 6 × 6. 1 + 8 + 27 + 64 = 10 × 10.
-0² + 0 + 41 = 41 es primo. 1² + 1 + 41 = 43 es primo. 2² + 2 + 41 = 47 es primo. 3² + 3 + 41 = 53 es primo. ¿se sigue que n² + n + 41 es primo para todo n? no: en n = 40 sale 1681, y 1681 = 41 × 41.
-1 = 1 × 1. 1 + 8 = 3 × 3. 1 + 8 + 27 = 6 × 6. 1 + 8 + 27 + 64 = 10 × 10. ¿se sigue que la suma de los primeros n cubos es el cuadrado de la suma de los primeros n números? 4 casos no lo demuestran, pero es cierto: añadir el cubo de n + 1 completa el cuadrado de la suma hasta el cuadrado de la suma siguiente.
+0² + 0 + 41 = 41 jest liczbą pierwszą. 1² + 1 + 41 = 43 jest liczbą pierwszą. 2² + 2 + 41 = 47 jest liczbą pierwszą. 3² + 3 + 41 = 53 jest liczbą pierwszą. czy wynika z tego, że n² + n + 41 jest liczbą pierwszą dla każdego n? nie: przy n = 40 wychodzi 1681, a 1681 = 41 × 41.
+1 = 1 × 1. 1 + 8 = 3 × 3. 1 + 8 + 27 = 6 × 6. 1 + 8 + 27 + 64 = 10 × 10. czy wynika z tego, że suma pierwszych n sześcianów to kwadrat sumy pierwszych n liczb? 4 przypadki tego nie dowodzą, ale to prawda: dodanie sześcianu n + 1 dopełnia kwadrat sumy do kwadratu następnej sumy.
 
 3 — простое. 5 — простое. 7 — простое.
 1! + 1 = 2 — простое. 2! + 1 = 3 — простое. 3! + 1 = 7 — простое. значит ли, что n! + 1 просто при всяком n? нет: при n = 4 выходит 25, а 25 = 5 × 5.
@@ -62,9 +102,21 @@
 3 est premier. 5 est premier. 7 est premier.
 1! + 1 = 2 est premier. 2! + 1 = 3 est premier. 3! + 1 = 7 est premier. en découle-t-il que n! + 1 est premier pour tout n ? non : à n = 4 on obtient 25, et 25 = 5 × 5.
 
-2^2 − 1 = 3 es primo. 2^3 − 1 = 7 es primo. 2^5 − 1 = 31 es primo. 2^7 − 1 = 127 es primo. ¿se sigue que 2^n − 1 es primo para todo n primo? no: en n = 11 sale 2047, y 2047 = 23 × 89.
-0² + 0 + 41 = 41 es primo. 1² + 1 + 41 = 43 es primo. 2² + 2 + 41 = 47 es primo. 3² + 3 + 41 = 53 es primo.
-3 es primo. 5 es primo. 7 es primo. ¿se sigue que todo número impar mayor que 1 es primo? no: 9 no es primo, pues 9 = 3 × 3.
+3 es primo. 5 es primo. 7 es primo.
+1! + 1 = 2 es primo. 2! + 1 = 3 es primo. 3! + 1 = 7 es primo. ¿se sigue que n! + 1 es primo para todo n? no: en n = 4 sale 25, y 25 = 5 × 5.
+
+3 è primo. 5 è primo. 7 è primo.
+1! + 1 = 2 è primo. 2! + 1 = 3 è primo. 3! + 1 = 7 è primo. ne segue che n! + 1 è primo per ogni n? no: per n = 4 viene 25, e 25 = 5 × 5.
+
+3 é primo. 5 é primo. 7 é primo.
+1! + 1 = 2 é primo. 2! + 1 = 3 é primo. 3! + 1 = 7 é primo. segue-se que n! + 1 é primo para todo n? não: em n = 4 dá 25, e 25 = 5 × 5.
+
+3 is een priemgetal. 5 is een priemgetal. 7 is een priemgetal.
+1! + 1 = 2 is een priemgetal. 2! + 1 = 3 is een priemgetal. 3! + 1 = 7 is een priemgetal. volgt daaruit dat n! + 1 voor elke n een priemgetal is? nee: bij n = 4 komt 25, en 25 = 5 × 5.
+
+2^2 − 1 = 3 jest liczbą pierwszą. 2^3 − 1 = 7 jest liczbą pierwszą. 2^5 − 1 = 31 jest liczbą pierwszą. 2^7 − 1 = 127 jest liczbą pierwszą. czy wynika z tego, że 2^n − 1 jest liczbą pierwszą dla każdej liczby pierwszej n? nie: przy n = 11 wychodzi 2047, a 2047 = 23 × 89.
+0² + 0 + 41 = 41 jest liczbą pierwszą. 1² + 1 + 41 = 43 jest liczbą pierwszą. 2² + 2 + 41 = 47 jest liczbą pierwszą. 3² + 3 + 41 = 53 jest liczbą pierwszą.
+3 jest liczbą pierwszą. 5 jest liczbą pierwszą. 7 jest liczbą pierwszą. czy wynika z tego, że każda liczba nieparzysta większa od 1 jest liczbą pierwszą? nie: 9 nie jest liczbą pierwszą, bo 9 = 3 × 3.
 
 0² + 0 + 41 = 41 — простое. 1² + 1 + 41 = 43 — простое. 2² + 2 + 41 = 47 — простое. 3² + 3 + 41 = 53 — простое. значит ли, что n² + n + 41 просто при всяком n? нет: при n = 40 выходит 1681, а 1681 = 41 × 41.
 1 = 1 × 1. 1 + 8 = 3 × 3. 1 + 8 + 27 = 6 × 6. 1 + 8 + 27 + 64 = 10 × 10. значит ли, что сумма первых n кубов равна квадрату суммы первых n чисел? 4 случая этого не доказывают, но это верно: прибавление куба n + 1 достраивает квадрат суммы до квадрата следующей суммы.
@@ -78,5 +130,17 @@
 0² + 0 + 41 = 41 est premier. 1² + 1 + 41 = 43 est premier. 2² + 2 + 41 = 47 est premier. 3² + 3 + 41 = 53 est premier. en découle-t-il que n² + n + 41 est premier pour tout n ? non : à n = 40 on obtient 1681, et 1681 = 41 × 41.
 1 = 1 × 1. 1 + 8 = 3 × 3. 1 + 8 + 27 = 6 × 6. 1 + 8 + 27 + 64 = 10 × 10. en découle-t-il que la somme des n premiers cubes vaut le carré de la somme des n premiers nombres ? 4 cas ne le prouvent pas, mais c'est vrai : ajouter le cube de n + 1 complète le carré de la somme en le carré de la somme suivante.
 
-2^2 − 1 = 3 es primo. 2^3 − 1 = 7 es primo. 2^5 − 1 = 31 es primo. 2^7 − 1 = 127 es primo.
-1 = 1 × 1. 1 + 3 = 2 × 2. 1 + 3 + 5 = 3 × 3. 1 + 3 + 5 + 7 = 4 × 4. ¿se sigue que la suma de los primeros n números impares es n × n? 4 casos no lo demuestran, pero es cierto: cada número impar siguiente completa el cuadrado n × n hasta el cuadrado (n + 1) × (n + 1).
+0² + 0 + 41 = 41 es primo. 1² + 1 + 41 = 43 es primo. 2² + 2 + 41 = 47 es primo. 3² + 3 + 41 = 53 es primo. ¿se sigue que n² + n + 41 es primo para todo n? no: en n = 40 sale 1681, y 1681 = 41 × 41.
+1 = 1 × 1. 1 + 8 = 3 × 3. 1 + 8 + 27 = 6 × 6. 1 + 8 + 27 + 64 = 10 × 10. ¿se sigue que la suma de los primeros n cubos es el cuadrado de la suma de los primeros n números? 4 casos no lo demuestran, pero es cierto: añadir el cubo de n + 1 completa el cuadrado de la suma hasta el cuadrado de la suma siguiente.
+
+0² + 0 + 41 = 41 è primo. 1² + 1 + 41 = 43 è primo. 2² + 2 + 41 = 47 è primo. 3² + 3 + 41 = 53 è primo. ne segue che n² + n + 41 è primo per ogni n? no: per n = 40 viene 1681, e 1681 = 41 × 41.
+1 = 1 × 1. 1 + 8 = 3 × 3. 1 + 8 + 27 = 6 × 6. 1 + 8 + 27 + 64 = 10 × 10. ne segue che la somma dei primi n cubi è il quadrato della somma dei primi n numeri? 4 casi non lo dimostrano, ma è vero: aggiungere il cubo di n + 1 completa il quadrato della somma nel quadrato della somma successiva.
+
+0² + 0 + 41 = 41 é primo. 1² + 1 + 41 = 43 é primo. 2² + 2 + 41 = 47 é primo. 3² + 3 + 41 = 53 é primo. segue-se que n² + n + 41 é primo para todo n? não: em n = 40 dá 1681, e 1681 = 41 × 41.
+1 = 1 × 1. 1 + 8 = 3 × 3. 1 + 8 + 27 = 6 × 6. 1 + 8 + 27 + 64 = 10 × 10. segue-se que a soma dos primeiros n cubos é o quadrado da soma dos primeiros n números? 4 casos não o provam, mas é verdade: somar o cubo de n + 1 completa o quadrado da soma no quadrado da soma seguinte.
+
+0² + 0 + 41 = 41 is een priemgetal. 1² + 1 + 41 = 43 is een priemgetal. 2² + 2 + 41 = 47 is een priemgetal. 3² + 3 + 41 = 53 is een priemgetal. volgt daaruit dat n² + n + 41 voor elke n een priemgetal is? nee: bij n = 40 komt 1681, en 1681 = 41 × 41.
+1 = 1 × 1. 1 + 8 = 3 × 3. 1 + 8 + 27 = 6 × 6. 1 + 8 + 27 + 64 = 10 × 10. volgt daaruit dat de som van de eerste n derde machten het kwadraat van de som van de eerste n getallen is? 4 gevallen bewijzen het niet, maar het is waar: het toevoegen van de derde macht van n + 1 het kwadraat van de som aanvult tot het kwadraat van de volgende som.
+
+2^2 − 1 = 3 jest liczbą pierwszą. 2^3 − 1 = 7 jest liczbą pierwszą. 2^5 − 1 = 31 jest liczbą pierwszą. 2^7 − 1 = 127 jest liczbą pierwszą.
+1 = 1 × 1. 1 + 3 = 2 × 2. 1 + 3 + 5 = 3 × 3. 1 + 3 + 5 + 7 = 4 × 4. czy wynika z tego, że suma pierwszych n liczb nieparzystych to n × n? 4 przypadki tego nie dowodzą, ale to prawda: każda następna liczba nieparzysta dopełnia kwadrat n × n do kwadratu (n + 1) × (n + 1).
