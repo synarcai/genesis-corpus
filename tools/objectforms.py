@@ -64,8 +64,8 @@
         нет="dijiste que quitando {b} a {a} quedan {x}. ¿es así? no: {x} + {b} = {y}, y no {a}.",
     ),
     "it": dict(
-        да="hai detto che {a} meno {b} fa {c}. è così? sì: {c} + {b} = {a}.",
-        нет="hai detto che {a} meno {b} fa {x}. è così? no: {x} + {b} = {y}, e non {a}.",
+        да="hai detto che togliendo {b} a {a} restano {c}. è così? sì: {c} + {b} = {a}.",
+        нет="hai detto che togliendo {b} a {a} restano {x}. è così? no: {x} + {b} = {y}, e non {a}.",
     ),
     "pt": dict(
         да="disseste que {a} menos {b} dá {c}. é assim? sim: {c} + {b} = {a}.",
@@ -81,26 +81,86 @@
     ),
 }
 
+
+# ВЕЖЛИВОЕ ОБРАЩЕНИЕ — второй РЕГИСТР той же формы, и его в корпусе не было
+# вовсе. Замер по своду: «ты» 92 строки, «вы» НОЛЬ; «du» 220, «Sie» ноль; «tu»
+# 117, «vous» ноль; «usted», «Lei», «pan» — ноль, ноль, два. Организм, который
+# владелец зовёт для беседы, обращался бы к нему НА «ТЫ» — а по-русски,
+# по-немецки, по-французски, по-испански, по-итальянски и по-польски это не
+# оттенок, а грубость.
+#
+# АНГЛИЙСКИЙ РАЗЛИЧИЯ НЕ ИМЕЕТ, и это объявлено списком, а не умолчанием: «you»
+# служит обоим регистрам, и вторая форма совпала бы с первой слово в слово.
+# Язык без различия пишет ОДНУ форму, и молчание тут есть строй языка.
+#
+# ПОЛЬСКИЙ ВЕЖЛИВЫЙ РЕГИСТР ИДЁТ ТРЕТЬИМ ЛИЦОМ («powiedział pan»), а не вторым,
+# и потому объявлен целой фразой: перестановкой местоимения его не получить.
+БЕЗ_РАЗЛИЧИЯ_РЕГИСТРА = frozenset({"en"})
+ВЕЖЛИВЫЕ = {
+    "ru": dict(
+        да="вы сказали, что от {a} отнять {b} будет {c}. так ли это? да: {c} + {b} = {a}.",
+        нет="вы сказали, что от {a} отнять {b} будет {x}. так ли это? нет: {x} + {b} = {y}, а не {a}.",
+    ),
+    "de": dict(
+        да="Sie haben gesagt, dass {a} minus {b} {c} macht. stimmt das? ja: {c} + {b} = {a}.",
+        нет="Sie haben gesagt, dass {a} minus {b} {x} macht. stimmt das? nein: {x} + {b} = {y}, nicht {a}.",
+    ),
+    "fr": dict(
+        да="vous avez dit que {a} moins {b} fait {c}. est-ce exact ? oui : {c} + {b} = {a}.",
+        нет="vous avez dit que {a} moins {b} fait {x}. est-ce exact ? non : {x} + {b} = {y}, et non {a}.",
+    ),
+    "es": dict(
+        да="usted dijo que quitando {b} a {a} quedan {c}. ¿es así? sí: {c} + {b} = {a}.",
+        нет="usted dijo que quitando {b} a {a} quedan {x}. ¿es así? no: {x} + {b} = {y}, y no {a}.",
+    ),
+    "it": dict(
+        да="Lei ha detto che togliendo {b} a {a} restano {c}. è così? sì: {c} + {b} = {a}.",
+        нет="Lei ha detto che togliendo {b} a {a} restano {x}. è così? no: {x} + {b} = {y}, e non {a}.",
+    ),
+    "pt": dict(
+        да="você disse que {a} menos {b} dá {c}. é assim? sim: {c} + {b} = {a}.",
+        нет="você disse que {a} menos {b} dá {x}. é assim? não: {x} + {b} = {y}, e não {a}.",
+    ),
+    "nl": dict(
+        да="u zei dat {a} min {b} {c} is. klopt dat? ja: {c} + {b} = {a}.",
+        нет="u zei dat {a} min {b} {x} is. klopt dat? nee: {x} + {b} = {y}, niet {a}.",
+    ),
+    "pl": dict(
+        да="powiedział pan, że {a} minus {b} to {c}. czy tak jest? tak: {c} + {b} = {a}.",
+        нет="powiedział pan, że {a} minus {b} to {x}. czy tak jest? nie: {x} + {b} = {y}, a nie {a}.",
+    ),
+}
+
 ЯЗЫКИ = tuple(РАМКИ)
-ФОРМЫ = ("да", "нет")
+ФОРМЫ = ("да", "нет", "да_вы", "нет_вы")
 
 for _a, _b in ПАРЫ:
     assert _a > _b > 0, (_a, _b)
+for _яз in РАМКИ:
+    assert (_яз in БЕЗ_РАЗЛИЧИЯ_РЕГИСТРА) != (_яз in ВЕЖЛИВЫЕ), _яз
     assert _a - _b != _a - _b + СДВИГ, (_a, _b)
 
 
 def страница(язык, форма, i):
     a, b = ПАРЫ[i % len(ПАРЫ)]
     c = a - b
-    if форма == "да":
-        return РАМКИ[язык]["да"].format(a=a, b=b, c=c)
+    рамки = ВЕЖЛИВЫЕ[язык] if форма.endswith("_вы") else РАМКИ[язык]
+    ключ = форма[:-3] if форма.endswith("_вы") else форма
+    if ключ == "да":
+        return рамки["да"].format(a=a, b=b, c=c)
     x = c + СДВИГ
-    return РАМКИ[язык]["нет"].format(a=a, b=b, x=x, y=x + b)
+    return рамки["нет"].format(a=a, b=b, x=x, y=x + b)
 
 
 def _показы():
-    return {страница(язык, форма, i): (язык, форма)
-            for язык in ЯЗЫКИ for форма in ФОРМЫ for i in range(len(ПАРЫ))}
+    вон = {}
+    for язык in ЯЗЫКИ:
+        for форма in ФОРМЫ:
+            if форма.endswith("_вы") and язык in БЕЗ_РАЗЛИЧИЯ_РЕГИСТРА:
+                continue          # язык без различия пишет ОДНУ форму
+            for i in range(len(ПАРЫ)):
+                вон[страница(язык, форма, i)] = (язык, форма)
+    return вон
 
 
 ПОКАЗЫ = _показы()
