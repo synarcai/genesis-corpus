@@ -6,6 +6,14 @@
 спрашивает ребёнок: сколько у паука ног, сколько у человека зубов, при какой
 температуре кипит вода.
 
+ВРЕМЕНА ГОДА — ЦИКЛ, А НЕ СПИСОК, и во всём своде их не было ни одного показа.
+Замыкание («после осени идёт зима») есть то, чем цикл отличается от перечня, и
+здесь оно не дописано рукой, а ВЫВЕДЕНО остатком по длине — забыть его нельзя.
+Форма «после X» объявлена при каждом имени отдельно, ибо предлог требует своего
+падежа: русский родительный («после зимы»), польский местный («po zimie»),
+немецкий дательный с артиклем («nach dem Winter»), испанский и португальский
+слитный предлог («del invierno», «do inverno»).
+
 ЧАСТЬ И ЦЕЛОЕ СТОЯТ РЯДОМ СО СЧЁТОМ, и это не украшение: «нога — часть паука»
 есть отношение ЧАСТИ К ЦЕЛОМУ, второе в корпусе отношение слова к слову после
 противоположности, — но здесь оно СЦЕПЛЕНО с числом («у паука 8 ног. нога —
@@ -40,6 +48,8 @@ import rugram  # noqa: E402
     "ru": dict(
         утв="у {б} {n} {в}.",
         часть="у {б} {n} {в}. {в1} — часть {б}.",
+        сезон="после {a} идёт {b}.", сезон_воп="после {a} идёт {b}. что идёт после {a}? {b}.",
+        времена=(("зима", "зимы"), ("весна", "весны"), ("лето", "лета"), ("осень", "осени")),
         воп="у {б} {n} {в}. сколько {ва} у {б}? {n} {в}.",
         пара="у {б} {n} {в}. сколько {ва} у {бп}? {r} {вr}: {n} × 2 = {r}.",
         факты=(("паука", "двух пауков", "нога", 8), ("насекомого", "двух насекомых", "нога", 6),
@@ -56,6 +66,8 @@ import rugram  # noqa: E402
     "en": dict(
         утв="a {б} has {n} {в}.",
         часть="a {б} has {n} {в}. a {в1} is a part of a {б}.",
+        сезон="after {a} comes {b}.", сезон_воп="after {a} comes {b}. what comes after {a}? {b}.",
+        времена=(("winter", "winter"), ("spring", "spring"), ("summer", "summer"), ("autumn", "autumn")),
         воп="a {б} has {n} {в}. how many {ва} does a {б} have? {n} {в}.",
         пара="a {б} has {n} {в}. how many {ва} do {бп} have? {r} {вr}: {n} × 2 = {r}.",
         факты=(("spider", "two spiders", ("leg", "legs"), 8), ("insect", "two insects", ("leg", "legs"), 6),
@@ -72,6 +84,9 @@ import rugram  # noqa: E402
     "de": dict(
         утв="{б} hat {n} {в}.",
         часть="{б} hat {n} {в}. ein {в1} ist ein Teil davon.",
+        сезон="nach {a} kommt {b}.", сезон_воп="nach {a} kommt {b}. was kommt nach {a}? {b}.",
+        времена=(("der Winter", "dem Winter"), ("der Frühling", "dem Frühling"),
+                 ("der Sommer", "dem Sommer"), ("der Herbst", "dem Herbst")),
         воп="{б} hat {n} {в}. wie viele {ва} hat {б}? {n} {в}.",
         пара="{б} hat {n} {в}. wie viele {ва} haben {бп}? {r} {вr}: {n} × 2 = {r}.",
         факты=(("eine Spinne", "zwei Spinnen", ("Bein", "Beine"), 8), ("ein Insekt", "zwei Insekten", ("Bein", "Beine"), 6),
@@ -88,6 +103,9 @@ import rugram  # noqa: E402
     "fr": dict(
         утв="{б} a {n} {в}.",
         часть="{б} a {n} {в}. une {в1} en est une partie.",
+        сезон="après {a} vient {b}.", сезон_воп="après {a} vient {b}. qu'est-ce qui vient après {a} ? {b}.",
+        времена=(("l'hiver", "l'hiver"), ("le printemps", "le printemps"),
+                 ("l'été", "l'été"), ("l'automne", "l'automne")),
         воп="{б} a {n} {в}. combien de {ва} a {б} ? {n} {в}.",
         пара="{б} a {n} {в}. combien de {ва} ont {бп} ? {r} {вr} : {n} × 2 = {r}.",
         факты=(("une araignée", "deux araignées", ("patte", "pattes"), 8), ("un insecte", "deux insectes", ("patte", "pattes"), 6),
@@ -104,6 +122,9 @@ import rugram  # noqa: E402
     "es": dict(
         утв="{б} tiene {n} {в}.",
         часть="{б} tiene {n} {в}. una {в1} forma parte de ello.",
+        сезон="después {a} viene {b}.", сезон_воп="después {a} viene {b}. ¿qué viene después {a}? {b}.",
+        времена=(("el invierno", "del invierno"), ("la primavera", "de la primavera"),
+                 ("el verano", "del verano"), ("el otoño", "del otoño")),
         воп="{б} tiene {n} {в}. ¿cuántas {ва} tiene {б}? {n} {в}.",
         пара="{б} tiene {n} {в}. ¿cuántas {ва} tienen {бп}? {r} {вr}: {n} × 2 = {r}.",
         факты=(("una araña", "dos arañas", ("pata", "patas"), 8), ("un insecto", "dos insectos", ("pata", "patas"), 6),
@@ -119,6 +140,9 @@ import rugram  # noqa: E402
     "it": dict(
         утв="{б} ha {n} {в}.",
         часть="{б} ha {n} {в}. una {в1} ne è una parte.",
+        сезон="dopo {a} viene {b}.", сезон_воп="dopo {a} viene {b}. che cosa viene dopo {a}? {b}.",
+        времена=(("l'inverno", "l'inverno"), ("la primavera", "la primavera"),
+                 ("l'estate", "l'estate"), ("l'autunno", "l'autunno")),
         воп="{б} ha {n} {в}. quante {ва} ha {б}? {n} {в}.",
         пара="{б} ha {n} {в}. quante {ва} hanno {бп}? {r} {вr}: {n} × 2 = {r}.",
         факты=(("un ragno", "due ragni", ("zampa", "zampe"), 8), ("un insetto", "due insetti", ("zampa", "zampe"), 6),
@@ -134,6 +158,9 @@ import rugram  # noqa: E402
     "pt": dict(
         утв="{б} tem {n} {в}.",
         часть="{б} tem {n} {в}. uma {в1} faz parte disso.",
+        сезон="depois {a} vem {b}.", сезон_воп="depois {a} vem {b}. o que vem depois {a}? {b}.",
+        времена=(("o inverno", "do inverno"), ("a primavera", "da primavera"),
+                 ("o verão", "do verão"), ("o outono", "do outono")),
         воп="{б} tem {n} {в}. quantas {ва} tem {б}? {n} {в}.",
         пара="{б} tem {n} {в}. quantas {ва} têm {бп}? {r} {вr}: {n} × 2 = {r}.",
         факты=(("uma aranha", "duas aranhas", ("pata", "patas"), 8), ("um inseto", "dois insetos", ("pata", "patas"), 6),
@@ -149,6 +176,9 @@ import rugram  # noqa: E402
     "nl": dict(
         утв="{б} heeft {n} {в}.",
         часть="{б} heeft {n} {в}. een {в1} is er een deel van.",
+        сезон="na {a} komt {b}.", сезон_воп="na {a} komt {b}. wat komt na {a}? {b}.",
+        времена=(("de winter", "de winter"), ("de lente", "de lente"),
+                 ("de zomer", "de zomer"), ("de herfst", "de herfst")),
         воп="{б} heeft {n} {в}. hoeveel {ва} heeft {б}? {n} {в}.",
         пара="{б} heeft {n} {в}. hoeveel {ва} hebben {бп}? {r} {вr}: {n} × 2 = {r}.",
         факты=(("een spin", "twee spinnen", ("poot", "poten"), 8), ("een insect", "twee insecten", ("poot", "poten"), 6),
@@ -164,6 +194,8 @@ import rugram  # noqa: E402
     "pl": dict(
         утв="{б} ma {n} {в}.",
         часть="{б} ma {n} {в}. {в1} jest jego częścią.",
+        сезон="po {a} przychodzi {b}.", сезон_воп="po {a} przychodzi {b}. co przychodzi po {a}? {b}.",
+        времена=(("zima", "zimie"), ("wiosna", "wiośnie"), ("lato", "lecie"), ("jesień", "jesieni")),
         воп="{б} ma {n} {в}. ile {ва} ma {б}? {n} {в}.",
         пара="{б} ma {n} {в}. ile {ва} mają {бп}? {r} {вr}: {n} × 2 = {r}.",
         факты=(("pająk", "dwa pająki", "noga", 8), ("owad", "dwa owady", "noga", 6),
@@ -178,7 +210,7 @@ import rugram  # noqa: E402
         градус="stopień",
     ),
 }
-ФОРМЫ = ("утв", "воп", "пара", "часть", "темп", "темп_воп")
+ФОРМЫ = ("утв", "воп", "пара", "часть", "темп", "темп_воп", "сезон", "сезон_воп")
 
 
 def вещь(язык, в, n):
@@ -194,6 +226,15 @@ def вещь(язык, в, n):
 
 def показ(язык, форма, i):
     я = ЯЗЫКИ[язык]
+    if форма in ("сезон", "сезон_воп"):
+        # ЦИКЛ, А НЕ СПИСОК: после последнего идёт ПЕРВЫЙ, и замыкание есть то,
+        # чем цикл отличается от перечня. Показ «после осени идёт зима» строится
+        # тем же правилом, что и прочие три, — остатком по длине, — и потому
+        # замыкание нельзя забыть: оно не дописано рукой, а выведено.
+        врем = я["времена"]
+        (_, a) = врем[i % len(врем)]
+        (b, _) = врем[(i + 1) % len(врем)]
+        return я[форма].format(a=a, b=b)
     if форма in ("темп", "темп_воп"):
         ч, г, n = я["температуры"][i % len(я["температуры"])]
         гр = вещь(язык, я["градус"], n)
@@ -217,6 +258,9 @@ def _все_показы():
                     вон[с] = (язык, форма)
         for форма in ("темп", "темп_воп"):
             for i in range(len(я["температуры"])):
+                вон[показ(язык, форма, i)] = (язык, форма)
+        for форма in ("сезон", "сезон_воп"):
+            for i in range(len(я["времена"])):
                 вон[показ(язык, форма, i)] = (язык, форма)
     return вон
 
