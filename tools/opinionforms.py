@@ -23,6 +23,11 @@
 показывающий такие мнения, учит их высказывать, а различению рода они не нужны:
 для него довольно вкуса к супу.
 
+ДЕВЯТЬ ЯЗЫКОВ: названный долг пяти уплачен вслед за домом фактов мира, и
+раньше него он уплачен быть не мог — дом мнения ЦИТИРУЕТ его факты, и цитировать
+было нечего, пока сосед молчал на четырёх языках. Порядок уплаты был назван
+вместе с долгом и соблюдён.
+
 ОБЕ ФОРМЫ ВОПРОСНЫЕ, голых утверждений дом не пишет (М-268).
 
     python3 tools/opinionforms.py    # самопроверка с мутантами
@@ -49,6 +54,34 @@ import worldfacts as W  # noqa: E402
            "cette musique est bonne", "il fait bon ici", "cette route est longue"),
     "es": ("este libro es interesante", "este color es bonito", "esta sopa está rica",
            "esta música es buena", "aquí se está bien", "este camino es largo"),
+    "it": (
+           "questo libro è interessante",
+           "questo colore è bello",
+           "questa zuppa è buona",
+           "questa musica è bella",
+           "qui si sta bene",
+           "questa strada è lunga"),
+    "pt": (
+           "este livro é interessante",
+           "esta cor é bonita",
+           "esta sopa é boa",
+           "esta música é boa",
+           "aqui está-se bem",
+           "esta estrada é longa"),
+    "nl": (
+           "dit boek is interessant",
+           "deze kleur is mooi",
+           "deze soep is lekker",
+           "deze muziek is goed",
+           "het is hier gezellig",
+           "deze weg is lang"),
+    "pl": (
+           "ta książka jest ciekawa",
+           "ten kolor jest ładny",
+           "ta zupa jest smaczna",
+           "ta muzyka jest dobra",
+           "tu jest przytulnie",
+           "ta droga jest długa"),
 }
 
 РАМКИ = {
@@ -67,6 +100,18 @@ import worldfacts as W  # noqa: E402
     "es": dict(вопрос="{у} — ¿es un hecho o una opinión?",
                факт="un hecho: eso se puede comprobar.",
                мнение="una opinión: otra persona puede tener otra."),
+    "it": dict(вопрос="{у} — è un fatto o un'opinione?",
+               факт="un fatto: si può verificare.",
+               мнение="un'opinione: un'altra persona può averne un'altra."),
+    "pt": dict(вопрос="{у} — é um facto ou uma opinião?",
+               факт="um facto: isso pode ser verificado.",
+               мнение="uma opinião: outra pessoa pode ter outra."),
+    "nl": dict(вопрос="{у} — is dat een feit of een mening?",
+               факт="een feit: dat kan gecontroleerd worden.",
+               мнение="een mening: een ander mens kan een andere hebben."),
+    "pl": dict(вопрос="{у} — czy to fakt, czy opinia?",
+               факт="fakt: to można sprawdzić.",
+               мнение="opinia: inny człowiek może mieć inną."),
 }
 
 ЯЗЫКИ = tuple(РАМКИ)
