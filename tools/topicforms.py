@@ -268,6 +268,69 @@ es): всякое определение есть предложение, кот
     "pl": ("{т} to {о}.", "co to jest {т}? {т} to {о}."),
 }
 
+# --- ГРАНИЦА ЗНАНИЯ: вопрос, на который у КОРПУСА ответа нет и быть не может ---
+# «Какая сегодня погода?» есть вопрос о факте, который меняется с днём и местом;
+# ни один свод его не несёт, и всякий ответ на него был бы выдумкой. Организм,
+# выучивший выдумку, лжёт уверенно — и это худший исход, чем молчание.
+#
+# Потому дом объявляет третий род: ЧЕСТНОЕ НЕЗНАНИЕ С ОСНОВАНИЕМ. Ответ здесь
+# не «не знаю» (это отговорка), а «не знаю, ПОТОМУ ЧТО …» — и основание
+# называет ПРИРОДУ границы: факт меняется со временем, разнится по месту,
+# доступен только тому, кто смотрит. Так организм учится не отсутствию знания,
+# а его ГРАНИЦЕ, и это единственная форма дома, чья истинность есть истинность
+# отказа.
+#
+# Три вопроса — по одному на природу границы: время дня (погода), текущий миг
+# (час), место и время разом (цена). Спрошены они на всех девяти языках атаки,
+# ибо граница знания у языка одна.
+ГРАНИЦА = {
+    "ru": (
+            ('какая сегодня погода?', 'я не знаю: погода меняется каждый день, а я её не вижу'),
+            ('который сейчас час?', 'я не знаю: время идёт, а часов у меня нет'),
+            ('сколько стоит хлеб?', 'я не знаю: цена разная в разных местах и меняется со временем'),
+    ),
+    "en": (
+            ('what is the weather today?', 'i do not know: the weather changes every day, and i do not see it'),
+            ('what time is it now?', 'i do not know: time passes, and i have no clock'),
+            ('how much does bread cost?', 'i do not know: the price differs from place to place and changes over time'),
+    ),
+    "de": (
+            ('wie ist das Wetter heute?', 'ich weiß es nicht: das Wetter ändert sich jeden Tag, und ich sehe es nicht'),
+            ('wie spät ist es jetzt?', 'ich weiß es nicht: die Zeit vergeht, und ich habe keine Uhr'),
+            ('was kostet Brot?', 'ich weiß es nicht: der Preis ist an jedem Ort anders und ändert sich mit der Zeit'),
+    ),
+    "fr": (
+            ("quel temps fait-il aujourd'hui ?", 'je ne sais pas : le temps change chaque jour, et je ne le vois pas'),
+            ('quelle heure est-il maintenant ?', "je ne sais pas : le temps passe, et je n'ai pas d'horloge"),
+            ('combien coûte le pain ?', "je ne sais pas : le prix change d'un endroit à l'autre et avec le temps"),
+    ),
+    "es": (
+            ('¿qué tiempo hace hoy?', 'no lo sé: el tiempo cambia cada día, y yo no lo veo'),
+            ('¿qué hora es ahora?', 'no lo sé: el tiempo pasa, y no tengo reloj'),
+            ('¿cuánto cuesta el pan?', 'no lo sé: el precio es distinto en cada lugar y cambia con el tiempo'),
+    ),
+    "it": (
+            ('che tempo fa oggi?', 'non lo so: il tempo cambia ogni giorno, e io non lo vedo'),
+            ('che ore sono adesso?', 'non lo so: il tempo passa, e io non ho un orologio'),
+            ('quanto costa il pane?', 'non lo so: il prezzo è diverso in ogni luogo e cambia col tempo'),
+    ),
+    "pt": (
+            ('que tempo faz hoje?', 'não sei: o tempo muda todos os dias, e eu não o vejo'),
+            ('que horas são agora?', 'não sei: o tempo passa, e eu não tenho relógio'),
+            ('quanto custa o pão?', 'não sei: o preço é diferente em cada lugar e muda com o tempo'),
+    ),
+    "nl": (
+            ('wat voor weer is het vandaag?', 'ik weet het niet: het weer verandert elke dag, en ik zie het niet'),
+            ('hoe laat is het nu?', 'ik weet het niet: de tijd gaat door, en ik heb geen klok'),
+            ('hoeveel kost brood?', 'ik weet het niet: de prijs is op elke plek anders en verandert met de tijd'),
+    ),
+    "pl": (
+            ('jaka jest dziś pogoda?', 'nie wiem: pogoda zmienia się każdego dnia, a ja jej nie widzę'),
+            ('która jest teraz godzina?', 'nie wiem: czas płynie, a ja nie mam zegara'),
+            ('ile kosztuje chleb?', 'nie wiem: cena jest inna w każdym miejscu i zmienia się z czasem'),
+    ),
+}
+
 # --- СЧЁТ КАЛЕНДАРЯ: девять языков, ибо работают числа, а слов нужно два ---
 # (единица большая, единица малая, сколько малых в большой)
 КАЛЕНДАРЬ = ((("неделе", "неделя"), ("дней", "день"), 7), (("годе", "год"), ("месяцев", "месяц"), 12),
@@ -329,6 +392,9 @@ def _показы():
             for т, о in пары:
                 вон[утв.format(т=т, о=о)] = (язык, "определение")
                 вон[воп.format(т=т, о=о)] = (язык, "вопрос_определения")
+    for язык, ряд in ГРАНИЦА.items():
+        for в, о in ряд:
+            вон[f"{в} {о}."] = (язык, "граница")
     for язык, с in СЧЁТ.items():
         for (б, м, мв), n in с["пары"]:
             вон[с["в"].format(б=б, м=м, мв=мв, n=n)] = (язык, "счёт")
@@ -344,7 +410,7 @@ def _показы():
 
 
 ПОКАЗЫ = _показы()
-ФОРМЫ = ("определение", "вопрос_определения", "счёт", "вопрос_счёта", "цепь_счёта")
+ФОРМЫ = ("определение", "вопрос_определения", "счёт", "вопрос_счёта", "цепь_счёта", "граница")
 ЯЗЫКИ = СЧЁТ   # девять языков: счёт держат все, определения — пять
 
 

@@ -70,6 +70,7 @@ stanco» верно счётом ролей и ложно речью. Втора
         ),
         правило="{п}. поэтому {с}.", вопрос="{п}. поэтому {с}. почему {с}? потому что {пп}.",
         кратко="почему, когда {оп}, {ов}? {осн}.",
+        дела_многих=("люди спят", "люди едят", "люди учатся"),
         цели=(("человек спит", "чтобы отдохнуть"), ("человек ест", "чтобы не быть голодным"), ("человек учится", "чтобы уметь больше")), зачем_рамка="зачем {д}? {ц}.",
         вывод="{з} {п}. значит {с}.",
         закон="когда {оп}, {ос}.",
@@ -109,6 +110,7 @@ stanco» верно счётом ролей и ложно речью. Втора
                    "does {X} hurry", "does {X} do it without thinking", "did {X} not see the sign"),
         правило="{п}. therefore {с}.", вопрос="{п}. therefore {с}. why {в}? because {пп}.",
         кратко="why, when {оп}, {ов}? {осн}.",
+        дела_многих=("do people sleep", "do people eat", "do people study"),
         цели=(("does a person sleep", "in order to rest"), ("does a person eat", "in order not to be hungry"), ("does a person study", "in order to be able to do more")), зачем_рамка="why {д}? {ц}.",
         вывод="{з} {п}. so {с}.",
         закон="when {оп}, {ос}.",
@@ -145,6 +147,7 @@ stanco» верно счётом ролей и ложно речью. Втора
             ("{X} hat weggeschaut", "hat {X} das Zeichen nicht gesehen", "{X} weggeschaut hat", "ein Mensch wegschaut", "sieht er das Zeichen nicht"),
         ),
         правило="{п}. deshalb {с}.", вопрос="{п}. deshalb {с}. warum {с}? weil {пп}.",
+        дела_многих=("schlafen Menschen", "essen Menschen", "lernen Menschen"),
         цели=(("schläft ein Mensch", "um sich auszuruhen"), ("isst ein Mensch", "um nicht hungrig zu sein"), ("lernt ein Mensch", "um mehr zu können")), зачем_рамка="wozu {д}? {ц}.",
         вывод="{з} {п}. also {с}.",
         закон="wenn {оп}, {ос}.",
@@ -178,6 +181,7 @@ stanco» верно счётом ролей и ложно речью. Втора
         ),
         правило="{п}. donc {с}.", вопрос="{п}. donc {с}. pourquoi {с} ? parce que {пп}.",
         кратко="pourquoi, quand {оп}, {ов} ? {осн}.",
+        дела_многих=("les gens dorment", "les gens mangent", "les gens apprennent"),
         цели=(("une personne dort", "pour se reposer"), ("une personne mange", "pour ne pas avoir faim"), ("une personne apprend", "pour savoir faire plus")), зачем_рамка="pourquoi {д} ? {ц}.",
         вывод="{з} {п}. donc {с}.",
         закон="quand {оп}, {ос}.",
@@ -211,6 +215,7 @@ stanco» верно счётом ролей и ложно речью. Втора
         ),
         правило="{п}. por eso {с}.", вопрос="{п}. por eso {с}. ¿por qué {с}? porque {пп}.",
         кратко="¿por qué, cuando {оп}, {ов}? {осн}.",
+        дела_многих=("la gente duerme", "la gente come", "la gente estudia"),
         цели=(("una persona duerme", "para descansar"), ("una persona come", "para no tener hambre"), ("una persona estudia", "para saber hacer más")), зачем_рамка="¿por qué {д}? {ц}.",
         вывод="{з} {п}. así que {с}.",
         закон="cuando {оп}, {ос}.",
@@ -244,6 +249,7 @@ stanco» верно счётом ролей и ложно речью. Втора
         ),
         правило="{п}. perciò {с}.", вопрос="{п}. perciò {с}. perché {с}? perché {пп}.",
         кратко="perché, quando {оп}, {ов}? {осн}.",
+        дела_многих=("le persone dormono", "le persone mangiano", "le persone studiano"),
         цели=(("una persona dorme", "per riposare"), ("una persona mangia", "per non avere fame"), ("una persona studia", "per saper fare di più")), зачем_рамка="perché {д}? {ц}.",
         вывод="{з} {п}. quindi {с}.",
         закон="quando {оп}, {ос}.",
@@ -278,6 +284,7 @@ stanco» верно счётом ролей и ложно речью. Втора
         # португальский вопрос ставит «é que» между вопросным словом и клаузой
         правило="{п}. por isso {с}.", вопрос="{п}. por isso {с}. porque é que {в}? porque {пп}.",
         кратко="porque é que, quando {оп}, {ов}? {осн}.",
+        дела_многих=("as pessoas dormem", "as pessoas comem", "as pessoas estudam"),
         цели=(("uma pessoa dorme", "para descansar"), ("uma pessoa come", "para não ter fome"), ("uma pessoa estuda", "para saber fazer mais")), зачем_рамка="porque é que {д}? {ц}.",
         вывод="{з} {п}. portanto {с}.",
         закон="quando {оп}, {ос}.",
@@ -310,6 +317,7 @@ stanco» верно счётом ролей и ложно речью. Втора
             ("{X} keek de andere kant op", "heeft {X} het teken niet gezien", "{X} de andere kant op keek", "een mens de andere kant op kijkt", "ziet hij het teken niet"),
         ),
         правило="{п}. daarom {с}.", вопрос="{п}. daarom {с}. waarom {с}? omdat {пп}.",
+        дела_многих=("slapen mensen", "eten mensen", "leren mensen"),
         цели=(("slaapt een mens", "om uit te rusten"), ("eet een mens", "om geen honger te hebben"), ("leert een mens", "om meer te kunnen")), зачем_рамка="waarom {д}? {ц}.",
         вывод="{з} {п}. dus {с}.",
         закон="als {оп}, {ос}.",
@@ -343,6 +351,7 @@ stanco» верно счётом ролей и ложно речью. Втора
         ),
         правило="{п}. dlatego {с}.", вопрос="{п}. dlatego {с}. dlaczego {с}? ponieważ {пп}.",
         кратко="dlaczego, kiedy {оп}, {ов}? {осн}.",
+        дела_многих=("ludzie śpią", "ludzie jedzą", "ludzie się uczą"),
         цели=(("człowiek śpi", "żeby odpocząć"), ("człowiek je", "żeby nie być głodnym"), ("człowiek się uczy", "żeby umieć więcej")), зачем_рамка="dlaczego {д}? {ц}.",
         вывод="{з} {п}. więc {с}.",
         закон="kiedy {оп}, {ос}.",
@@ -365,7 +374,7 @@ stanco» верно счётом ролей и ложно речью. Втора
         ),
     ),
 }
-ФОРМЫ = ("правило", "вопрос", "закон", "закон_вопрос", "кратко", "основание", "основание_многих", "зачем", "вывод")
+ФОРМЫ = ("правило", "вопрос", "закон", "закон_вопрос", "кратко", "основание", "основание_многих", "зачем", "зачем_многих", "вывод")
 
 for _яз, _я in ЯЗЫКИ.items():
     assert len(_я["пары"]) == len(РОДЫ), (_яз, len(_я["пары"]))
@@ -376,6 +385,7 @@ for _яз, _я in ЯЗЫКИ.items():
     assert "общ_вопрос" not in _я or len(_я["общ_вопрос"]) == len(РОДЫ), _яз
     assert len(_я["основания"]) == len(РОДЫ), _яз
     assert len(_я["вопросы_многих"]) == len(РОДЫ), _яз
+    assert len(_я["дела_многих"]) == len(_я["цели"]), _яз
     for _в in _я["вопросы_многих"]:
         assert _в.rstrip().endswith("?"), (_яз, _в)
     for _в, _о in _я["основания"]:
@@ -453,6 +463,15 @@ def цель(язык, i):
     return я["зачем_рамка"].format(д=д, ц=ц)
 
 
+def цель_многих(язык, i):
+    """«зачем люди спят? чтобы отдохнуть.» — тот же вопрос о цели, спрошенный о
+    многих. ЦЕЛЬ ОДНА, а лицо вопроса второе: меняется только дело, и потому
+    объявлено только оно (тот же закон, что у основания многих)."""
+    я = ЯЗЫКИ[язык]
+    _, ц = я["цели"][i % len(я["цели"])]
+    return я["зачем_рамка"].format(д=я["дела_многих"][i % len(я["дела_многих"])], ц=ц)
+
+
 def _все_показы():
     вон = {}
     for язык, я in ЯЗЫКИ.items():
@@ -471,6 +490,7 @@ def _все_показы():
                     вон[страница(язык, форма, род, i)] = (язык, форма)
         for i in range(len(я["цели"])):
             вон[цель(язык, i)] = (язык, "зачем")
+            вон[цель_многих(язык, i)] = (язык, "зачем_многих")
     return вон
 
 
@@ -499,7 +519,7 @@ def _самопроверка():
     мутанты = 0
     for язык, я in ЯЗЫКИ.items():
         for форма in ФОРМЫ:
-            с = цель(язык, 0) if форма == "зачем" else страница(язык, форма, УСТАЛОСТЬ)
+            с = цель_многих(язык, 0) if форма == "зачем_многих" else цель(язык, 0) if форма == "зачем" else страница(язык, форма, УСТАЛОСТЬ)
             if с is None:
                 continue
             судимо, истинно = судить(с)
@@ -512,7 +532,7 @@ def _самопроверка():
         мутанты += 1
     for язык in ("ru", "en", "de"):
         for форма in ФОРМЫ:
-            печать = цель(язык, 0) if форма == "зачем" else страница(язык, форма, УСТАЛОСТЬ)
+            печать = цель_многих(язык, 0) if форма == "зачем_многих" else цель(язык, 0) if форма == "зачем" else страница(язык, форма, УСТАЛОСТЬ)
             if печать is None:
                 continue
             print("  ", печать[:104])
