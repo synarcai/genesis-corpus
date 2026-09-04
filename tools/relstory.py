@@ -42,11 +42,14 @@ def _пакет(язык):
     return json.loads((ПАКЕТЫ / f"{язык}.json").read_text(encoding="utf-8"))
 
 
-# THE RUSSIAN NAME BENDS, AND THE CASES ARE DECLARED (as the age world does):
-# nominative, dative («Сэму 4 года»), genitive («старше Сэма») — the genitive
-# from the pack, the dative here.
-_ДАТЕЛЬНЫЙ_RU = {"анна": "анне", "аня": "ане", "вера": "вере", "дима": "диме", "иван": "ивану", "коля": "коле", "лена": "лене",
-                 "маша": "маше", "миша": "мише", "оля": "оле", "петя": "пете", "том": "тому", "юра": "юре", "саша": "саше"}
+# THE RUSSIAN NAME BENDS, AND THE CASES ARE DECLARED BY THE PACK (05.09):
+# nominative, dative («Сэму 4 года»), genitive («старше Сэма») — all three from
+# ru.json. The dative used to live here as a private table of fourteen names;
+# the age world held a second one, the pack a third registry without dative at
+# all. One declaration now; this map is DERIVED for readers that expect the old
+# name (form_census reads it as «declared cases of the house»).
+_ДАТЕЛЬНЫЙ_RU = {имя.lower(): ф["dat"].lower()
+                 for имя, ф in _пакет("ru").get("person_forms", {}).items() if ф.get("dat")}
 
 
 def _лица(язык):
@@ -58,9 +61,9 @@ def _лица(язык):
         if язык == "ru":
             # дательный объявлен здесь строчным ключом; письмо имени — пакетом
             # (05.09 пакет стал держать имена с заглавной, как прочие семь)
-            if имя.lower() not in _ДАТЕЛЬНЫЙ_RU or not ф or not ф.get("gen"):
+            if not ф or not ф.get("gen") or not ф.get("dat"):
                 continue
-            вон.append((имя.capitalize(), ф["gen"].capitalize(), _ДАТЕЛЬНЫЙ_RU[имя.lower()].capitalize()))
+            вон.append((имя.capitalize(), ф["gen"].capitalize(), ф["dat"].capitalize()))
         else:
             вон.append((имя, имя, имя))
         if len(вон) == 12:
