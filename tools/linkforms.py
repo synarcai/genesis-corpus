@@ -38,12 +38,14 @@ import sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import actionpages as A  # noqa: E402
 
-ФОРМЫ = ("почему", "а_если", "что_дальше", "правда", "неправда", "переспрос", "согласен")
+ФОРМЫ = ("почему", "почему_голый", "а_у", "а_если", "что_дальше", "правда", "неправда", "переспрос", "согласен")
 
 ЯЗЫКИ = {
     "en": dict(
         было="{X} had {n} {Тn}.", отдал="{X} gave away {k} {Тk}.", стало="{X} has {r} {Тr}.",
         получил="{X} got {k} {Тk}.",
+        почему_голый="why? because {X} had {n} and gave away {k}: {л}",
+        а_у="how many does {Y} have? {Y} has {m} {Тm}.",
         почему="why does {X} have {r} {Тr}? because {X} had {n} and gave away {k}: {л}",
         а_если="what if there were twice as many? then {X} would have {д} {Тд}: {лд}",
         что_дальше="what happens next? {X} has {r} {Тr}: {л}",
@@ -55,6 +57,8 @@ import actionpages as A  # noqa: E402
     "ru": dict(
         было="у {Xр} было {n} {Тn}.", отдал="{X} отдал{а} {k} {Твk}.", стало="у {Xр} {r} {Тr}.",
         получил="{X} получил{а} {k} {Твk}.",
+        почему_голый="почему? потому что было {n}, а отдано {k}: {л}",
+        а_у="сколько у {Yр}? у {Yр} {m} {Тm}.",
         почему="почему у {Xр} {r} {Тr}? потому что было {n}, а отдано {k}: {л}",
         а_если="а если бы их было вдвое больше? тогда у {Xр} было бы {д} {Тд}: {лд}",
         что_дальше="что дальше? у {Xр} {r} {Тr}: {л}",
@@ -66,6 +70,8 @@ import actionpages as A  # noqa: E402
     "de": dict(
         было="{X} hatte {n} {Тn}.", отдал="{X} gab {k} {Тk} weg.", стало="{X} hat {r} {Тr}.",
         получил="{X} bekam {k} {Тk}.",
+        почему_голый="warum? weil {X} {n} hatte und {k} weggab: {л}",
+        а_у="wie viele hat {Y}? {Y} hat {m} {Тm}.",
         почему="warum hat {X} {r} {Тr}? weil {X} {n} hatte und {k} weggab: {л}",
         а_если="und wenn es doppelt so viele wären? dann hätte {X} {д} {Тд}: {лд}",
         что_дальше="was kommt dann? {X} hat {r} {Тr}: {л}",
@@ -77,6 +83,8 @@ import actionpages as A  # noqa: E402
     "es": dict(
         было="{X} tenía {n} {Тn}.", отдал="{X} dio {k} {Тk}.", стало="{X} tiene {r} {Тr}.",
         получил="{X} recibió {k} {Тk}.",
+        почему_голый="¿por qué? porque {X} tenía {n} y dio {k}: {л}",
+        а_у="¿cuántas tiene {Y}? {Y} tiene {m} {Тm}.",
         почему="¿por qué {X} tiene {r} {Тr}? porque {X} tenía {n} y dio {k}: {л}",
         а_если="¿y si hubiera el doble? entonces {X} tendría {д} {Тд}: {лд}",
         что_дальше="¿qué pasa después? {X} tiene {r} {Тr}: {л}",
@@ -88,6 +96,8 @@ import actionpages as A  # noqa: E402
     "fr": dict(
         было="{X} avait {n} {Тn}.", отдал="{X} a donné {k} {Тk}.", стало="{X} a {r} {Тr}.",
         получил="{X} a reçu {k} {Тk}.",
+        почему_голый="pourquoi ? parce que {X} en avait {n} et en a donné {k} : {л}",
+        а_у="combien en a {Y} ? {Y} a {m} {Тm}.",
         почему="pourquoi {X} a {r} {Тr} ? parce que {X} en avait {n} et en a donné {k} : {л}",
         а_если="et s'il y en avait deux fois plus ? alors {X} aurait {д} {Тд} : {лд}",
         что_дальше="que se passe-t-il ensuite ? {X} a {r} {Тr} : {л}",
@@ -99,6 +109,8 @@ import actionpages as A  # noqa: E402
     "it": dict(
         было="{X} aveva {n} {Тn}.", отдал="{X} ha dato {k} {Тk}.", стало="{X} ha {r} {Тr}.",
         получил="{X} ha ricevuto {k} {Тk}.",
+        почему_голый="perché? perché {X} aveva {n} e ha dato {k}: {л}",
+        а_у="quante ne ha {Y}? {Y} ha {m} {Тm}.",
         почему="perché {X} ha {r} {Тr}? perché {X} aveva {n} e ha dato {k}: {л}",
         а_если="e se fossero il doppio? allora {X} avrebbe {д} {Тд}: {лд}",
         что_дальше="che cosa succede dopo? {X} ha {r} {Тr}: {л}",
@@ -110,6 +122,8 @@ import actionpages as A  # noqa: E402
     "pt": dict(
         было="{X} tinha {n} {Тn}.", отдал="{X} deu {k} {Тk}.", стало="{X} tem {r} {Тr}.",
         получил="{X} recebeu {k} {Тk}.",
+        почему_голый="porquê? porque {X} tinha {n} e deu {k}: {л}",
+        а_у="quantas tem {Y}? {Y} tem {m} {Тm}.",
         почему="porque é que {X} tem {r} {Тr}? porque {X} tinha {n} e deu {k}: {л}",
         а_если="e se fossem o dobro? então {X} teria {д} {Тд}: {лд}",
         что_дальше="o que acontece a seguir? {X} tem {r} {Тr}: {л}",
@@ -148,10 +162,21 @@ def _поля(язык, X, Т, n, k):
         л=f"{n} − {k} = {r}.", лд=f"{n} × 2 = {д}.")
 
 
-def страница(язык, форма, X=0, Т=0, n=7, k=2):
+def страница(язык, форма, X=0, Т=0, n=7, k=2, Y=None):
     я = ЯЗЫКИ[язык]
     п = _поля(язык, X, Т, n, k)
-    if форма == "почему":
+    if форма == "а_у":
+        # ЭЛЛИПСИС ССЫЛАЕТСЯ НА СКАЗАННОЕ: вещь во втором вопросе ОПУЩЕНА
+        # («сколько у бори?»), и восстановить её можно лишь из первой фразы.
+        # Это и есть связка разговора в чистом виде — вопрос, который без
+        # предыдущей реплики не имеет смысла.
+        Y = (X + 1 + (Т % 3)) % len(A.ЛИЦА[язык])
+        если_свой = A.ЛИЦА[язык][Y]
+        п2 = dict(п, Y=если_свой[0], Yр=если_свой[2], m=k + 2,
+                  Тm=A._вещь(язык, Т, k + 2))
+        зачин = я["стало"].format(**dict(п, r=n, Тr=п["Тn"]))
+        return f"{зачин} {я['а_у'].format(**п2)}"
+    if форма in ("почему", "почему_голый"):
         зачин = f"{я['было'].format(**п)} {я['отдал'].format(**п)} {я['стало'].format(**п)}"
     elif форма == "что_дальше":
         # тут «стало» есть ПРИБАВКА: факт до, приход, и вопрос о следующем
