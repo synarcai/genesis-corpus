@@ -9,6 +9,8 @@ contrary. One house declares what each verb takes; the generators draw their
 things from it, and the episode court refuses a known verb with a thing of
 the wrong kind (an unknown verb or an unknown thing is not judged here).
 """
+from gsm_items import ANIMATE
+
 ЕДА = {"apples", "cookies", "cakes", "pastries", "nuts", "eggs", "slices", "bananas", "oranges", "pears", "sweets",
        "candies", "sandwiches", "grapes", "plums", "buns", "pies", "loaves", "pancakes", "cherries", "carrots", "calories"}
 ПИТЬЁ = {"cups", "glasses", "bottles", "gallons", "litres", "liters", "mugs"}
@@ -72,12 +74,38 @@ the wrong kind (an unknown verb or an unknown thing is not judged here).
 }
 ВСЕ_ВЕЩИ = set().union(*ГЛАГОЛ_БЕРЁТ.values())
 
+# ЧЕЛОВЕК — НЕ ТОВАР И НЕ МАТЕРИАЛ (04.09). Одушевлённость объявлена в
+# gsm_items («a layer that pastes a possession verb onto these words is
+# wrong by construction»), но ЭТОТ дом её не читал, и одушевлённое слово
+# не лежит ни в одном пуле — а вещь, которой не знает ни один пул, дом
+# пропускал как «не моё дело». Оттого 155 показов двух миров говорили
+# «felix sold 1 person away», «carla eats 3 students», «hugo weighs 9
+# people»: грамматично и ложно о мире — тот же род изъяна, что «peter
+# keeps -1 coins».
+#
+# Отказ ложится ДВУМЯ правилами, и оба выводятся из уже объявленного:
+#   · глагол С ПУЛОМ отказывает одушевлённому, ибо ни один пул его не
+#     держит (ест еду, пишет письменное, взвешивает вес) — здесь чинится
+#     сама дыра «неизвестной вещи»;
+#   · глагол БЕЗ ПУЛА отказывает, если он есть глагол ТОРГА ИЛИ РАСХОДА:
+#     купить, продать, заплатить, сделать, потратить, заработать —
+#     обращение с живым как с товаром. Прочие беспулевые глаголы живое
+#     держат и держать должны: «у ани трое детей», «команда потеряла двух
+#     игроков», «в проект нужно 3 человека».
+ТОРГ_И_РАСХОД = {
+    "bought", "buys", "buy", "sold", "sells", "sell", "paid", "pays", "pay",
+    "makes", "made", "make", "earns", "earned", "earn",
+    "spends", "spent", "spend", "uses", "used", "use",
+}
+
 
 def берёт(глагол, вещь):
     """True — the pair is admissible or not this house's business (an unknown
     verb, or a thing no pool names); False — a known verb with a thing of
-    the wrong kind."""
+    the wrong kind, or a verb of trade and expense with a LIVING thing."""
     род = ГЛАГОЛ_БЕРЁТ.get(глагол)
+    if вещь in ANIMATE:
+        return род is None and глагол not in ТОРГ_И_РАСХОД
     if род is None or вещь not in ВСЕ_ВЕЩИ:
         return True
     return вещь in род
