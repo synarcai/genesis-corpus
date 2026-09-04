@@ -78,6 +78,10 @@
         ("после дождя земля мокрая", "потому что дождь — это вода, которая падает на землю", "на дороге стоят лужи"),
         ("вода кипит при 100 градусах", "потому что шкала градусов так и построена: сто градусов есть жара кипящей воды", "из воды идёт пар", "вода кипит при ста градусах"),
         ("дождь идёт", "потому что из облаков падает вода", "земля станет мокрой"),
+        ("вода мокрая", "потому что вода смачивает всё, к чему прикасается", "после воды рука мокрая"),
+        ("огонь горячий", "потому что огонь даёт тепло", "рядом с огнём тепло"),
+        ("снег холодный", "потому что снег есть замёрзшая вода", "снег тает в тепле"),
+        ("камень твёрдый", "потому что камень не мнётся под рукой", "камнем можно ударить"),
     ),
     "en": (
         ("ice floats in water", "because ice is lighter than water", "the ice is seen on the surface"),
@@ -87,6 +91,10 @@
         ("after rain the ground is wet", "because rain is water that falls on the ground", "there are puddles on the road"),
         ("water boils at 100 degrees", "because the scale of degrees is built that way: one hundred degrees is the heat of boiling water", "steam comes from the water", "water boils at one hundred degrees"),
         ("it is raining", "because water falls from the clouds", "the ground will become wet"),
+        ("water is wet", "because water wets everything it touches", "after the water the hand is wet"),
+        ("fire is hot", "because fire gives heat", "near the fire it is warm"),
+        ("snow is cold", "because snow is frozen water", "snow melts in the warmth"),
+        ("a stone is hard", "because a stone does not yield under the hand", "one can strike with a stone"),
     ),
     "de": (
         ("Eis schwimmt im Wasser", "weil Eis leichter ist als Wasser", "das Eis ist an der Oberfläche zu sehen"),
@@ -96,6 +104,10 @@
         ("nach dem Regen ist die Erde nass", "weil Regen Wasser ist, das auf die Erde fällt", "auf der Straße stehen Pfützen"),
         ("Wasser kocht bei 100 Grad", "weil die Gradskala so gebaut ist: hundert Grad ist die Hitze kochenden Wassers", "aus dem Wasser kommt Dampf", "Wasser kocht bei hundert Grad"),
         ("es regnet", "weil Wasser aus den Wolken fällt", "die Erde wird nass"),
+        ("Wasser ist nass", "weil Wasser alles nass macht, was es berührt", "nach dem Wasser ist die Hand nass"),
+        ("Feuer ist heiß", "weil Feuer Wärme gibt", "am Feuer ist es warm"),
+        ("Schnee ist kalt", "weil Schnee gefrorenes Wasser ist", "Schnee schmilzt in der Wärme"),
+        ("ein Stein ist hart", "weil ein Stein unter der Hand nicht nachgibt", "mit einem Stein kann man schlagen"),
     ),
     "fr": (
         ("la glace flotte sur l'eau", "parce que la glace est plus légère que l'eau", "on voit la glace à la surface"),
@@ -105,6 +117,10 @@
         ("après la pluie la terre est mouillée", "parce que la pluie est de l'eau qui tombe sur la terre", "il y a des flaques sur la route"),
         ("l'eau bout à 100 degrés", "parce que l'échelle des degrés est faite ainsi : cent degrés, c'est la chaleur de l'eau qui bout", "de la vapeur sort de l'eau", "l'eau bout à cent degrés"),
         ("il pleut", "parce que l'eau tombe des nuages", "la terre va devenir mouillée"),
+        ("l'eau est mouillée", "parce que l'eau mouille tout ce qu'elle touche", "après l'eau la main est mouillée"),
+        ("le feu est chaud", "parce que le feu donne de la chaleur", "près du feu il fait chaud"),
+        ("la neige est froide", "parce que la neige est de l'eau gelée", "la neige fond à la chaleur"),
+        ("la pierre est dure", "parce que la pierre ne cède pas sous la main", "on peut frapper avec une pierre"),
     ),
     "es": (
         ("el hielo flota en el agua", "porque el hielo es más ligero que el agua", "el hielo se ve en la superficie"),
@@ -114,6 +130,10 @@
         ("después de la lluvia la tierra está mojada", "porque la lluvia es agua que cae sobre la tierra", "hay charcos en el camino"),
         ("el agua hierve a 100 grados", "porque la escala de grados está hecha así: cien grados es el calor del agua que hierve", "del agua sale vapor", "el agua hierve a cien grados"),
         ("está lloviendo", "porque cae agua de las nubes", "la tierra se pondrá mojada"),
+        ("el agua moja", "porque el agua deja húmedo todo lo que toca", "después del agua la mano está mojada"),
+        ("el fuego es caliente", "porque el fuego da calor", "cerca del fuego hace calor"),
+        ("la nieve es fría", "porque la nieve es agua congelada", "la nieve se derrite con el calor"),
+        ("la piedra es dura", "porque la piedra no cede bajo la mano", "con una piedra se puede golpear"),
     ),
     "it": (
         ("il ghiaccio galleggia sull'acqua", "perché il ghiaccio è più leggero dell'acqua", "si vede il ghiaccio in superficie"),
@@ -123,6 +143,10 @@
         ("dopo la pioggia la terra è bagnata", "perché la pioggia è acqua che cade sulla terra", "ci sono pozzanghere sulla strada"),
         ("l'acqua bolle a 100 gradi", "perché la scala dei gradi è fatta così: cento gradi è il calore dell'acqua che bolle", "dall'acqua esce vapore", "l'acqua bolle a cento gradi"),
         ("piove", "perché l'acqua cade dalle nuvole", "la terra diventerà bagnata"),
+        ("l'acqua è bagnata", "perché l'acqua bagna tutto ciò che tocca", "dopo l'acqua la mano è bagnata"),
+        ("il fuoco è caldo", "perché il fuoco dà calore", "vicino al fuoco fa caldo"),
+        ("la neve è fredda", "perché la neve è acqua ghiacciata", "la neve si scioglie al caldo"),
+        ("la pietra è dura", "perché la pietra non cede sotto la mano", "con una pietra si può colpire"),
     ),
     "pt": (
         ("o gelo flutua na água", "porque o gelo é mais leve do que a água", "vê-se o gelo à superfície"),
@@ -132,6 +156,10 @@
         ("depois da chuva a terra está molhada", "porque a chuva é água que cai na terra", "há poças na estrada"),
         ("a água ferve a 100 graus", "porque a escala dos graus é feita assim: cem graus é o calor da água a ferver", "da água sai vapor", "a água ferve a cem graus"),
         ("está a chover", "porque cai água das nuvens", "a terra vai ficar molhada"),
+        ("a água molha", "porque a água deixa molhado tudo o que toca", "depois da água a mão está molhada"),
+        ("o fogo é quente", "porque o fogo dá calor", "perto do fogo faz calor"),
+        ("a neve é fria", "porque a neve é água congelada", "a neve derrete no calor"),
+        ("a pedra é dura", "porque a pedra não cede sob a mão", "com uma pedra pode-se bater"),
     ),
     "nl": (
         ("ijs drijft op water", "omdat ijs lichter is dan water", "het ijs is aan de oppervlakte te zien"),
@@ -141,6 +169,10 @@
         ("na de regen is de grond nat", "omdat regen water is dat op de grond valt", "er staan plassen op de weg"),
         ("water kookt bij 100 graden", "omdat de gradenschaal zo gemaakt is: honderd graden is de hitte van kokend water", "uit het water komt stoom", "water kookt bij honderd graden"),
         ("het regent", "omdat er water uit de wolken valt", "de grond wordt nat"),
+        ("water is nat", "omdat water alles nat maakt wat het aanraakt", "na het water is de hand nat"),
+        ("vuur is heet", "omdat vuur warmte geeft", "bij het vuur is het warm"),
+        ("sneeuw is koud", "omdat sneeuw bevroren water is", "sneeuw smelt in de warmte"),
+        ("een steen is hard", "omdat een steen niet meegeeft onder de hand", "met een steen kan men slaan"),
     ),
     "pl": (
         ("lód pływa po wodzie", "bo lód jest lżejszy od wody", "lód widać na powierzchni"),
@@ -150,6 +182,10 @@
         ("po deszczu ziemia jest mokra", "bo deszcz to woda, która pada na ziemię", "na drodze są kałuże"),
         ("woda wrze przy 100 stopniach", "bo skala stopni tak jest zbudowana: sto stopni to gorąco wrzącej wody", "z wody idzie para", "woda wrze przy stu stopniach"),
         ("pada deszcz", "bo z chmur spada woda", "ziemia zrobi się mokra"),
+        ("woda jest mokra", "ponieważ woda moczy wszystko, czego dotknie", "po wodzie ręka jest mokra"),
+        ("ogień jest gorący", "ponieważ ogień daje ciepło", "przy ogniu jest ciepło"),
+        ("śnieg jest zimny", "ponieważ śnieg to zamarznięta woda", "śnieg topnieje w cieple"),
+        ("kamień jest twardy", "ponieważ kamień nie ugina się pod ręką", "kamieniem można uderzyć"),
     ),
 }
 
@@ -423,10 +459,12 @@
            "het in de nacht donker is",
            "de grond na de regen nat is",
            "water bij 100 graden kookt",
-           "het regent"),
+           "het regent",
+           "water nat is", "vuur heet is", "sneeuw koud is", "een steen hard is"),
     "de": ("Eis im Wasser schwimmt", "ein Stein im Wasser sinkt", "Rauch nach oben steigt",
            "es nachts dunkel ist", "die Erde nach dem Regen nass ist",
-           "Wasser bei 100 Grad kocht", "es regnet"),
+           "Wasser bei 100 Grad kocht", "es regnet",
+           "Wasser nass ist", "Feuer heiß ist", "Schnee kalt ist", "ein Stein hart ist"),
 }
 
 # ДВЕНАДЦАТЬ ЧЛЕНОВ, А НЕ ШЕСТЬ, И ЭТО ЧУЖОЕ ЧИСЛО. d5 (04.09) назвал шестьдесят
