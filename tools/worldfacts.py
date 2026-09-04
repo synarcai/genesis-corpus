@@ -122,15 +122,45 @@
 # пару без носителя и без величины, которую всякий рынок тянет к себе.
 КЛАССЫ = {
     "ru": (("паук", "животное"), ("дуб", "дерево"), ("акула", "рыба"),
-           ("молоко", "жидкость"), ("ласточка", "птица"), ("роза", "цветок")),
+           ("молоко", "жидкость"), ("ласточка", "птица"), ("роза", "цветок"),
+           ("сосна", "дерево"),
+           ("тюльпан", "цветок"),
+           ("карп", "рыба"),
+           ("сова", "птица"),
+           ("сок", "жидкость"),
+           ("муравей", "животное")),
     "en": (("a spider", "an animal"), ("an oak", "a tree"), ("a shark", "a fish"),
-           ("milk", "a liquid"), ("a swallow", "a bird"), ("a rose", "a flower")),
+           ("milk", "a liquid"), ("a swallow", "a bird"), ("a rose", "a flower"),
+           ("a pine", "a tree"),
+           ("a tulip", "a flower"),
+           ("a carp", "a fish"),
+           ("an owl", "a bird"),
+           ("juice", "a liquid"),
+           ("an ant", "an animal")),
     "de": (("eine Spinne", "ein Tier"), ("eine Eiche", "ein Baum"), ("ein Hai", "ein Fisch"),
-           ("Milch", "eine Flüssigkeit"), ("eine Schwalbe", "ein Vogel"), ("eine Rose", "eine Blume")),
+           ("Milch", "eine Flüssigkeit"), ("eine Schwalbe", "ein Vogel"), ("eine Rose", "eine Blume"),
+           ("eine Kiefer", "ein Baum"),
+           ("eine Tulpe", "eine Blume"),
+           ("ein Karpfen", "ein Fisch"),
+           ("eine Eule", "ein Vogel"),
+           ("Saft", "eine Flüssigkeit"),
+           ("eine Ameise", "ein Tier")),
     "fr": (("une araignée", "un animal"), ("un chêne", "un arbre"), ("un requin", "un poisson"),
-           ("le lait", "un liquide"), ("une hirondelle", "un oiseau"), ("une rose", "une fleur")),
+           ("le lait", "un liquide"), ("une hirondelle", "un oiseau"), ("une rose", "une fleur"),
+           ("un pin", "un arbre"),
+           ("une tulipe", "une fleur"),
+           ("une carpe", "un poisson"),
+           ("un hibou", "un oiseau"),
+           ("le jus", "un liquide"),
+           ("une fourmi", "un animal")),
     "es": (("una araña", "un animal"), ("un roble", "un árbol"), ("un tiburón", "un pez"),
-           ("la leche", "un líquido"), ("una golondrina", "un pájaro"), ("una rosa", "una flor")),
+           ("la leche", "un líquido"), ("una golondrina", "un pájaro"), ("una rosa", "una flor"),
+           ("un pino", "un árbol"),
+           ("un tulipán", "una flor"),
+           ("una carpa", "un pez"),
+           ("un búho", "un pájaro"),
+           ("el zumo", "un líquido"),
+           ("una hormiga", "un animal")),
 }
 
 
@@ -231,6 +261,13 @@
            "Wasser bei 100 Grad kocht", "es regnet"),
 }
 
+# ДВЕНАДЦАТЬ ЧЛЕНОВ, А НЕ ШЕСТЬ, И ЭТО ЧУЖОЕ ЧИСЛО. d5 (04.09) назвал шестьдесят
+# два голодающих сбора организма и указал, чего ждут три из них — «def_facts»,
+# «def_copulas», «def_rules»: определения через связку с ДОСТАТОЧНЫМ числом
+# РАЗНЫХ подлежащих. Шести не хватало ни одному. Добавлены сосна, тюльпан,
+# карп, сова, сок и муравей — по два новых члена на каждый объявленный класс,
+# чтобы ступень родов тоже стояла не на одном свидетеле.
+#
 # ЧУЖОЙ ПОКАЗ НЕ ПОВТОРЯЕТСЯ. «iron is a metal.» и «the sun is a star.» уже
 # стояли в мире genesis_l4, и первая волна этого дома написала их второй раз —
 # прибор ШИРОТЫ ВОПРОСА поймал это с неожиданной стороны: образец дома
