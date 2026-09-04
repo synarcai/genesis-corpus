@@ -1,0 +1,68 @@
+# BESEDA-VY — ТА ЖЕ БЕСЕДА, СПРОШЕННАЯ НА «ВЫ».
+#
+# Полоса BESEDA-100 (holon, 04.09) спрашивает организм на «ты» во всех девяти
+# языках, и это правильно: она мерила, есть ли ответ ВООБЩЕ. Но замер того же
+# дня показал, что во всём своде вежливого обращения не было ни одной строки, —
+# значит полоса не могла этого увидеть: она не спрашивала.
+#
+# Эта полоса есть ДВОЙНИК первой в другом обращении, и мера у неё одна: та же
+# ли доля отвечена, когда человек говорит «вы». Расхождение долей есть число
+# регистра — сколько разговора организм теряет от одной перемены обращения.
+#
+# АНГЛИЙСКИЙ СТОИТ В ПОЛОСЕ ОДНОЙ ФОРМОЙ, и это не пропуск: «you» служит обоим
+# регистрам, вежливого двойника у него нет по природе языка (М-279). Его
+# строки здесь те же, что в первой полосе, и совпадение долей на английском
+# есть проверка самого прибора: язык без различия обязан дать ту же долю.
+#
+# Строка «вопрос ||| подстрока ожидаемого ответа»; без «|||» — довольно того,
+# чтобы ответ был и был обоснован.
+# GENUS: NAME-POLITE
+как вас зовут? ||| меня зовут
+what is your name? ||| my name is
+wie heißen Sie? ||| ich heiße
+comment vous appelez-vous ? ||| je m'appelle
+¿cómo se llama usted? ||| me llamo
+come si chiama? ||| mi chiamo
+como se chama? ||| chamo-me
+hoe heet u? ||| ik heet
+jak się pan nazywa? ||| nazywam się
+# GENUS: SELF-POLITE
+кто вы? ||| организм
+who are you? ||| organism
+wer sind Sie? ||| Organismus
+qui êtes-vous ? ||| organisme
+¿quién es usted? ||| organismo
+chi è Lei? ||| organismo
+quem é o senhor? ||| organismo
+wie bent u? ||| organisme
+kim pan jest? ||| organizmem
+# GENUS: EVERYDAY-POLITE
+как ваши дела?
+how are you?
+wie geht es Ihnen?
+comment allez-vous ?
+¿cómo está usted?
+come sta?
+como está?
+hoe gaat het met u?
+jak się pan ma?
+# GENUS: COURTESY-POLITE
+скажите, пожалуйста
+tell me, please
+sagen Sie mir bitte
+dites-moi, s'il vous plaît
+dígame, por favor
+mi dica, per favore
+diga-me, por favor
+zegt u het mij alstublieft
+proszę mi powiedzieć
+# GENUS: AGREEMENT-POLITE
+согласны ли вы, что лёд плавает в воде? ||| лёд плавает в воде
+do you agree that ice floats in water? ||| ice floats in water
+stimmen Sie zu, dass Eis im Wasser schwimmt? ||| Eis schwimmt im Wasser
+êtes-vous d'accord que la glace flotte sur l'eau ? ||| la glace flotte sur l'eau
+¿está usted de acuerdo en que el hielo flota en el agua? ||| el hielo flota en el agua
+è d'accordo che il ghiaccio galleggia sull'acqua? ||| il ghiaccio galleggia sull'acqua
+concorda que o gelo flutua na água? ||| o gelo flutua na água
+bent u het ermee eens dat ijs op water drijft? ||| ijs drijft op water
+czy zgadza się pan, że lód pływa po wodzie? ||| lód pływa po wodzie
