@@ -174,15 +174,15 @@ can could should has have will shall must may might would ought need
 является делится простое сравнимы связен может
 взаимно есть ли если во на
 wenn wie was ist sind welche welcher wo wann warum wieviel wer wen wem
-stimmt stimmst meinst bist wozu womit woraus wovon wodurch worauf kann darf
+stimmt stimmst meinst bist wozu womit woraus wovon wodurch worauf kann darf haben hat
 que quel quelle quels combien comment pourquoi est qu'est-ce est-il
 est-elle est-ce si y et tu es-tu quoi
-cual cuanto cuantos que es hay donde se ¿es ¿son ¿cuál ¿cuánto ¿qué ¿cómo ¿quién ¿puede
+cual cuanto cuantos que es hay donde se ¿es ¿son ¿cuál ¿cuánto ¿qué ¿cómo ¿quién ¿puede ¿tienen ¿tiene
 ¿y ¿quieres ¿estás ¿por
-che cosa quanto quanti dove quale come chi perché intendi sei può
-qual quantos onde como quem porque porquê queres concordas pode
+che cosa quanto quanti dove quale come chi perché intendi sei può hanno ha
+qual quantos onde como quem porque porquê queres concordas pode todos tem têm
 czy ile co jaki jaka jakie jakiej jakim jakich czego gdzie kiedy jak czym dlaczego masz zgadzasz
-wat hoe hoeveel welke waar waarom bedoel ben klopt en waarmee waarvan waarop waardoor kan
+wat hoe hoeveel welke waar waarom bedoel ben klopt en waarmee waarvan waarop waardoor kan hebben heeft
 ты а
 # ЭЛЛИПТИЧЕСКИЙ ВОПРОС ОТКРЫВАЕТСЯ СОЮЗОМ, а не вопросным словом: «а у тома?»,
 # «and tom?», «und Lena?» — так и спрашивает человек, когда предмет вопроса

@@ -49,6 +49,19 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import plgram  # noqa: E402
 import rugram  # noqa: E402
 
+# ОПРОВЕРЖЕНИЕ ПРИМЕРОМ: пары фактов, где вещь ОДНА, а число РАЗНОЕ. Общее
+# утверждение берётся с первого факта, контрпример — со второго, и оба уже
+# объявлены: контрпример не пишется рукой, а НАХОДИТСЯ в объявленном.
+#
+# ПАРЫ ВЫВОДЯТСЯ ПО ЯЗЫКУ, А НЕ ЗАДАЮТСЯ ОБЩИМИ НОМЕРАМИ. Первая редакция
+# объявила их номерами (0,1) и (8,9) — и это была ложь о доме: списки фактов
+# НЕ параллельны (испанский и итальянский держат десять фактов, прочие
+# двенадцать), и восьмой у них оказался иным. Вышло «tutti i veicoli hanno 7
+# colori? no: il sistema solare ha 8 pianeti» — вопрос о транспорте,
+# опровергнутый солнечной системой. Номер есть ссылка на ПОРЯДОК, а порядок у
+# каждого языка свой; ссылаться надо на СВОЙСТВО — на вещь, которая одна, и
+# число, которое разное.
+
 # ЦИКЛЫ ОБЪЯВЛЕНЫ СПИСКОМ, А НЕ ВЕТВЯМИ: имя ряда → (ключ объявления, вопросная ли)
 ЦИКЛ_ФОРМЫ = {"сезон": ("времена", False), "сезон_воп": ("времена", True),
               "день": ("дни", False), "день_воп": ("дни", True),
@@ -68,6 +81,8 @@ import rugram  # noqa: E402
                 ("май", "мая"), ("июнь", "июня"), ("июль", "июля"), ("август", "августа"),
                 ("сентябрь", "сентября"), ("октябрь", "октября"), ("ноябрь", "ноября"),
                 ("декабрь", "декабря")),
+        опроверж="{о} {n1} {в1}? нет: у {б2} {n2} {в2}.",
+        общие=("у всех ли животных", "у всего ли транспорта"),
         воп="у {б} {n} {в}. сколько {ва} у {б}? {n} {в}.",
         пара="у {б} {n} {в}. сколько {ва} у {бп}? {r} {вr}: {n} × 2 = {r}.",
         факты=(("паука", "двух пауков", "нога", 8), ("насекомого", "двух насекомых", "нога", 6),
@@ -93,6 +108,9 @@ import rugram  # noqa: E402
                 ("may", "may"), ("june", "june"), ("july", "july"), ("august", "august"),
                 ("september", "september"), ("october", "october"), ("november", "november"),
                 ("december", "december")),
+        опроверж="{о} {n1} {в1}? no: {арт} {б2} has {n2} {в2}.",
+        общие=("do all animals have", "do all vehicles have"),
+        гласные="aeiou",
         воп="a {б} has {n} {в}. how many {ва} does a {б} have? {n} {в}.",
         пара="a {б} has {n} {в}. how many {ва} do {бп} have? {r} {вr}: {n} × 2 = {r}.",
         факты=(("spider", "two spiders", ("leg", "legs"), 8), ("insect", "two insects", ("leg", "legs"), 6),
@@ -121,6 +139,8 @@ import rugram  # noqa: E402
                 ("der Juli", "dem Juli"), ("der August", "dem August"), ("der September", "dem September"),
                 ("der Oktober", "dem Oktober"), ("der November", "dem November"),
                 ("der Dezember", "dem Dezember")),
+        опроверж="{о} {n1} {в1}? nein: {б2} hat {n2} {в2}.",
+        общие=("haben alle Tiere", "haben alle Fahrzeuge"),
         воп="{б} hat {n} {в}. wie viele {ва} hat {б}? {n} {в}.",
         пара="{б} hat {n} {в}. wie viele {ва} haben {бп}? {r} {вr}: {n} × 2 = {r}.",
         факты=(("eine Spinne", "zwei Spinnen", ("Bein", "Beine"), 8), ("ein Insekt", "zwei Insekten", ("Bein", "Beine"), 6),
@@ -147,6 +167,8 @@ import rugram  # noqa: E402
                 ("mai", "mai"), ("juin", "juin"), ("juillet", "juillet"), ("août", "août"),
                 ("septembre", "septembre"), ("octobre", "octobre"), ("novembre", "novembre"),
                 ("décembre", "décembre")),
+        опроверж="{о} {n1} {в1} ? non : {б2} a {n2} {в2}.",
+        общие=("est-ce que tous les animaux ont", "est-ce que tous les véhicules ont"),
         воп="{б} a {n} {в}. combien de {ва} a {б} ? {n} {в}.",
         пара="{б} a {n} {в}. combien de {ва} ont {бп} ? {r} {вr} : {n} × 2 = {r}.",
         факты=(("une araignée", "deux araignées", ("patte", "pattes"), 8), ("un insecte", "deux insectes", ("patte", "pattes"), 6),
@@ -173,6 +195,8 @@ import rugram  # noqa: E402
                 ("abril", "de abril"), ("mayo", "de mayo"), ("junio", "de junio"),
                 ("julio", "de julio"), ("agosto", "de agosto"), ("septiembre", "de septiembre"),
                 ("octubre", "de octubre"), ("noviembre", "de noviembre"), ("diciembre", "de diciembre")),
+        опроверж="{о} {n1} {в1}? no: {б2} tiene {n2} {в2}.",
+        общие=("¿tienen todos los animales", "¿tienen todos los vehículos"),
         воп="{б} tiene {n} {в}. ¿cuántas {ва} tiene {б}? {n} {в}.",
         пара="{б} tiene {n} {в}. ¿cuántas {ва} tienen {бп}? {r} {вr}: {n} × 2 = {r}.",
         факты=(("una araña", "dos arañas", ("pata", "patas"), 8), ("un insecto", "dos insectos", ("pata", "patas"), 6),
@@ -198,6 +222,8 @@ import rugram  # noqa: E402
                 ("maggio", "maggio"), ("giugno", "giugno"), ("luglio", "luglio"), ("agosto", "agosto"),
                 ("settembre", "settembre"), ("ottobre", "ottobre"), ("novembre", "novembre"),
                 ("dicembre", "dicembre")),
+        опроверж="{о} {n1} {в1}? no: {б2} ha {n2} {в2}.",
+        общие=("hanno tutti gli animali", "hanno tutti i veicoli"),
         воп="{б} ha {n} {в}. quante {ва} ha {б}? {n} {в}.",
         пара="{б} ha {n} {в}. quante {ва} hanno {бп}? {r} {вr}: {n} × 2 = {r}.",
         факты=(("un ragno", "due ragni", ("zampa", "zampe"), 8), ("un insetto", "due insetti", ("zampa", "zampe"), 6),
@@ -224,6 +250,8 @@ import rugram  # noqa: E402
                 ("abril", "de abril"), ("maio", "de maio"), ("junho", "de junho"),
                 ("julho", "de julho"), ("agosto", "de agosto"), ("setembro", "de setembro"),
                 ("outubro", "de outubro"), ("novembro", "de novembro"), ("dezembro", "de dezembro")),
+        опроверж="{о} {n1} {в1}? não: {б2} tem {n2} {в2}.",
+        общие=("todos os animais têm", "todos os veículos têm"),
         воп="{б} tem {n} {в}. quantas {ва} tem {б}? {n} {в}.",
         пара="{б} tem {n} {в}. quantas {ва} têm {бп}? {r} {вr}: {n} × 2 = {r}.",
         факты=(("uma aranha", "duas aranhas", ("pata", "patas"), 8), ("um inseto", "dois insetos", ("pata", "patas"), 6),
@@ -249,6 +277,8 @@ import rugram  # noqa: E402
                 ("mei", "mei"), ("juni", "juni"), ("juli", "juli"), ("augustus", "augustus"),
                 ("september", "september"), ("oktober", "oktober"), ("november", "november"),
                 ("december", "december")),
+        опроверж="{о} {n1} {в1}? nee: {б2} heeft {n2} {в2}.",
+        общие=("hebben alle dieren", "hebben alle voertuigen"),
         воп="{б} heeft {n} {в}. hoeveel {ва} heeft {б}? {n} {в}.",
         пара="{б} heeft {n} {в}. hoeveel {ва} hebben {бп}? {r} {вr}: {n} × 2 = {r}.",
         факты=(("een spin", "twee spinnen", ("poot", "poten"), 8), ("een insect", "twee insecten", ("poot", "poten"), 6),
@@ -273,6 +303,8 @@ import rugram  # noqa: E402
                 ("maj", "maju"), ("czerwiec", "czerwcu"), ("lipiec", "lipcu"), ("sierpień", "sierpniu"),
                 ("wrzesień", "wrześniu"), ("październik", "październiku"), ("listopad", "listopadzie"),
                 ("grudzień", "grudniu")),
+        опроверж="{о} {n1} {в1}? nie: {б2} ma {n2} {в2}.",
+        общие=("czy wszystkie zwierzęta mają", "czy wszystkie pojazdy mają"),
         воп="{б} ma {n} {в}. ile {ва} ma {б}? {n} {в}.",
         пара="{б} ma {n} {в}. ile {ва} mają {бп}? {r} {вr}: {n} × 2 = {r}.",
         факты=(("pająk", "dwa pająki", "noga", 8), ("owad", "dwa owady", "noga", 6),
@@ -287,7 +319,7 @@ import rugram  # noqa: E402
         градус="stopień",
     ),
 }
-ФОРМЫ = ("утв", "воп", "пара", "часть", "темп", "темп_воп") + tuple(ЦИКЛ_ФОРМЫ)
+ФОРМЫ = ("утв", "воп", "пара", "часть", "опроверж", "темп", "темп_воп") + tuple(ЦИКЛ_ФОРМЫ)
 
 
 def вещь(язык, в, n):
@@ -301,8 +333,40 @@ def вещь(язык, в, n):
     return один if n == 1 else много
 
 
+def _пары_опровержения(язык):
+    """Пары фактов ОДНОЙ вещи с РАЗНЫМ числом, в порядке первого появления."""
+    по_вещи = {}
+    for б, _, в, n in ЯЗЫКИ[язык]["факты"]:
+        по_вещи.setdefault(str(в), []).append((б, в, n))
+    вон = []
+    for ряд in по_вещи.values():
+        разные = [ф for i, ф in enumerate(ряд) if all(ф[2] != g[2] for g in ряд[:i])]
+        if len(разные) >= 2:
+            вон.append((разные[0], разные[1]))
+    return вон
+
+
 def показ(язык, форма, i):
     я = ЯЗЫКИ[язык]
+    if форма == "опроверж":
+        # ОПРОВЕРЖЕНИЕ ПРИМЕРОМ — первый в доме показ, где ответ есть «НЕТ» с
+        # ПРИЧИНОЙ. Общее утверждение («у всех ли животных 8 ног?») опровергается
+        # не мнением, а ОБЪЯВЛЕННЫМ фактом («у насекомого 6 ног»), и потому
+        # проверяемо тем же счётом, что и всё в доме. Пара берётся такая, где
+        # вещь одна, а число разное: контрпример НАХОДИТСЯ в объявленном, а не
+        # пишется рукой, и подделать его нельзя, не подделав самого факта.
+        пары = _пары_опровержения(язык)
+        if not пары:
+            return None
+        (б1, в1, n1), (б2, в2, n2) = пары[i % len(пары)]
+        о = я["общие"][i % len(я["общие"])]
+        # АРТИКЛЬ ПЕРЕД ГЛАСНОЙ ОБЪЯВЛЕН ГЛАСНЫМИ, А НЕ УГАДАН: «a insect»
+        # неверно, «an insect» верно, и правило это язык объявляет сам —
+        # язык без объявленных гласных артикля не ставит.
+        гласные = я.get("гласные")
+        арт = ("an" if гласные and б2 and б2[0].lower() in гласные else "a") if гласные else ""
+        return я["опроверж"].format(о=о, n1=n1, в1=вещь(язык, в1, n1), арт=арт,
+                                    б2=б2, n2=n2, в2=вещь(язык, в2, n2))
     if форма in ЦИКЛ_ФОРМЫ:
         # ЦИКЛ, А НЕ СПИСОК: после последнего идёт ПЕРВЫЙ, и замыкание есть то,
         # чем цикл отличается от перечня; строится оно тем же правилом, что и
@@ -335,6 +399,10 @@ def показ(язык, форма, i):
 def _все_показы():
     вон = {}
     for язык, я in ЯЗЫКИ.items():
+        for i in range(len(_пары_опровержения(язык))):
+            с = показ(язык, "опроверж", i)
+            if с:
+                вон[с] = (язык, "опроверж")
         for форма in ("утв", "воп", "пара", "часть"):
             for i in range(len(я["факты"])):
                 с = показ(язык, форма, i)
