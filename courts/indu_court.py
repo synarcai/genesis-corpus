@@ -27,6 +27,7 @@ a pure row of equalities. Boole's lines carry letters and no marker; the
 house's own pure-equation cases carry no letters; nothing else changes.
 """
 import pathlib
+import json
 import re
 import sys
 
@@ -53,6 +54,47 @@ from closedworld import Слой  # noqa: E402 — the palata hands the world's 
 # проверяется вовсе: проверять в нём нечего, а молчать о непроверяемом суд
 # обязан.
 _ЧИСЛО_ПЕРЕД = re.compile(r"^\s*(\d+)\s*$")
+
+
+# СЛОВО ОПЕРАТОРА ЕСТЬ ЗНАК СВОЕГО ЯЗЫКА (05.09, шрам дома операции). Плечо равенства
+# берётся пробегом от «=» и останавливается на первой БУКВЕ, поэтому «7 plus 8 = 15» давало
+# суду плечо «8» против 15, и он звал ложью честную строку — сорок семь строк польского мира
+# разом, а вместе с ними всякое школьное уравнение, написанное словом. Ложь была не в
+# корпусе, а в суде: он читал знаки и не читал СЛОВА ЗНАКОВ, хотя каждый пакет языка их
+# объявляет (show_kinds.arithmetic.ops: plus→+, razy→*, «divided by»→/, «разделить на»→/).
+# Лечение — не заплата, а закон: перед разбором равенства слова-знаки заменяются своими
+# глифами, длинные фразы прежде коротких («divided by» прежде «divided»).
+#
+# ГРАНИЦА ЛЕЧЕНИЯ НАЗВАНА ЗАМЕРОМ: заменяются лишь слова, чей глиф есть знак СЧЁТА
+# (+ − × ÷), но НЕ слова равенства («равно», «es», «fa», «gleich»). Испанское «la mitad de 8
+# es 4» с заменой копулы дало бы «… 8 = 4» — плечо, оборванное буквами «de», против четырёх,
+# и суд назвал бы ложью верное. Копула остаётся словом; уравнение опознаётся по знаку.
+def _слова_знаков():
+    """{фраза: глиф} по всем пакетам языков; длинные прежде коротких."""
+    вон = {}
+    for путь in sorted((pathlib.Path(__file__).resolve().parents[1] / "tools" / "langpacks").glob("*.json")):
+        try:
+            пакет = json.loads(путь.read_text(encoding="utf-8"))
+        except ValueError:
+            continue
+        оп = ((пакет.get("show_kinds") or {}).get("arithmetic") or {}).get("ops") or {}
+        for слово, глиф in оп.items():
+            if str(глиф) in ("+", "-", "−", "*", "×", "/", "÷") and str(слово).strip():
+                вон[str(слово).lower()] = str(глиф)
+    return dict(sorted(вон.items(), key=lambda кв: (-len(кв[0]), кв[0])))
+
+
+_ЗНАКИ_СЛОВ = _слова_знаков()
+_СЛОВО_ЗНАКА = re.compile(
+    r"(?<![^\W\d_])(" + "|".join(re.escape(с) for с in _ЗНАКИ_СЛОВ) + r")(?![^\W\d_])",
+    re.IGNORECASE) if _ЗНАКИ_СЛОВ else None
+
+
+def _в_знаки(предложение):
+    """«14 podzielone przez 2 = 7» → «14 / 2 = 7»: слово оператора читается знаком."""
+    if _СЛОВО_ЗНАКА is None:
+        return предложение
+    return _СЛОВО_ЗНАКА.sub(lambda м: " %s " % _ЗНАКИ_СЛОВ[м.group(1).lower()], предложение)
 _ВЫРАЖЕНИЕ = re.compile(r"[\d\s+\-−×÷*/.^²!()]+")
 
 
@@ -176,7 +218,7 @@ def _судить(строка):
                    if п.strip() and not п.strip().endswith("?")]
     проверено = 0
     for п in предложения:
-        for a, b in _равенства(п):
+        for a, b in _равенства(_в_знаки(п)):
             проверено += 1
             if abs(a - b) > 1e-9:
                 return True, False
@@ -216,10 +258,22 @@ def main():
                 "946 / 22 = 44.",          # ASCII-деление считается, а не рвёт плечо
                 "104 = 20 * 5 + 3.",       # ASCII-умножение — то же
                 "3/4 = 0.7.",              # десятичная дробь читается целиком
-                "22 è primo? sì: 22 è primo.")   # вопрос не судится, ответ — судится
+                "22 è primo? sì: 22 è primo.",   # вопрос не судится, ответ — судится
+                # СЛОВЕСНОЕ УРАВНЕНИЕ СУДИТСЯ КАК ГЛИФОВОЕ (05.09): слово оператора есть знак
+                "does it follow that 7 plus 8 = 16? yes: 7 plus 8 = 16.",
+                "does it follow that 14 divided by 2 = 8? yes: 14 divided by 2 = 8.",
+                "does it follow that 6 razy 7 = 41? yes: 6 razy 7 = 41.",
+                "does it follow that 14 podzielone przez 2 = 8? yes: 14 podzielone przez 2 = 8.",
+                "does it follow that 20 разделить на 4 = 6? yes: 20 разделить на 4 = 6.")
     # ЧЕСТНЫЕ СТРОКИ СОСЕДНИХ МИРОВ — ИСТИНА, А НЕ ОБРЫВОК (05.09): деление столбиком, нотация,
     # уравнение с переменной, чьё плечо «+ 32» прежде судилось против «0»
     for честная in ("946 / 22 = 43.", "30 / 5 = 6.", "3/4 = 0.75.", "22 è primo? no: 22 non è primo: 22 = 2 × 11.",
+                    # СЛОВЕСНОЕ УРАВНЕНИЕ, КОТОРОЕ СХОДИТСЯ, — ИСТИНА НА ВСЕХ ДЕВЯТИ ЯЗЫКАХ
+                    "does it follow that 7 plus 8 = 15? yes: 7 plus 8 = 15.", "does it follow that 14 divided by 2 = 7? yes: 14 divided by 2 = 7.",
+                    "does it follow that 6 razy 7 = 42? yes: 6 razy 7 = 42.", "does it follow that 14 podzielone przez 2 = 7? yes: 14 podzielone przez 2 = 7.",
+                    "does it follow that 20 разделить на 4 = 5? yes: 20 разделить на 4 = 5.", "does it follow that 12 diviso per 3 = 4? yes: 12 diviso per 3 = 4.",
+                    "does it follow that 18 dividido por 3 = 6? yes: 18 dividido por 3 = 6.", "does it follow that 21 geteilt durch 3 = 7? yes: 21 geteilt durch 3 = 7.",
+                    "does it follow that 24 gedeeld door 4 = 6? yes: 24 gedeeld door 4 = 6.", "does it follow that 15 divisé par 3 = 5? yes: 15 divisé par 3 = 5.",
                     "every value satisfies x^2 - 12 x + 32 = 0 is false: at x = 9 it gives 81 - 108 + 32 = 5, and 5 is not 0."):
         if _судить(честная) != (True, True):
             print(f"  ЧЕСТНАЯ СТРОКА НАЗВАНА {_судить(честная)}: {честная[:100]}")
