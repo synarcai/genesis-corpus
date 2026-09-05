@@ -383,6 +383,12 @@ def тройки_лишнего(язык):
 # рыба, то акула — животное? да: …» — та же таблица иерархии, ответ с основанием обеими посылками.
 СИЛЛОГИЗМ_ДА = {'ru': 'если {кв} — {н}, а {ч} — {к}, то {ч} — {н}? да: {ч} — {к}, {кв} — {н}, значит {ч} — {н}.', 'en': 'if {кв} is {н} and {ч} is {к}, is {ч} {н}? yes: {ч} is {к}, {кв} is {н}, so {ч} is {н}.', 'de': 'wenn {кв} {н} ist und {ч} {к} ist, ist {ч} dann {н}? ja: {ч} ist {к}, {кв} ist {н}, also ist {ч} {н}.', 'fr': 'si {кв} est {н} et {чт} est {к}, {ч} est-il {н} ? oui : {ч} est {к}, {кв} est {н}, donc {ч} est {н}.', 'es': 'si {кв} es {н} y {ч} es {к}, ¿es {ч} {н}? sí: {ч} es {к}, {кв} es {н}, entonces {ч} es {н}.', 'it': 'se {кв} è {н} e {ч} è {к}, {ч} è {н}? sì: {ч} è {к}, {кв} è {н}, quindi {ч} è {н}.', 'pt': 'se {кв} é {н} e {ч} é {к}, {ч} é {н}? sim: {ч} é {к}, {кв} é {н}, logo {ч} é {н}.', 'nl': 'als {кв} {н} is en {ч} {к} is, is {ч} dan {н}? ja: {ч} is {к}, {кв} is {н}, dus {ч} is {н}.', 'pl': 'jeśli {кв} to {н}, a {ч} to {к}, to czy {ч} to {н}? tak: {ч} to {к}, {кв} to {н}, więc {ч} to {н}.'}
 
+# СИЛЛОГИЗМ С МНОЖЕСТВЕННЫМ КВАНТОРОМ (девятая полоса: человек говорит «все кошки — животные»,
+# а не «всякая кошка — животное»): квантор с классом и надкласс во множественном объявлены по языкам.
+КЛАСС_ВСЕ = {'ru': {'рыба': 'все рыбы', 'птица': 'все птицы', 'дерево': 'все деревья', 'цветок': 'все цветы', 'жидкость': 'все жидкости'}, 'en': {'a fish': 'all fish', 'a bird': 'all birds', 'a tree': 'all trees', 'a flower': 'all flowers', 'a liquid': 'all liquids'}, 'de': {'ein Fisch': 'alle Fische', 'ein Vogel': 'alle Vögel', 'ein Baum': 'alle Bäume', 'eine Blume': 'alle Blumen', 'eine Flüssigkeit': 'alle Flüssigkeiten'}, 'fr': {'un poisson': 'tous les poissons', 'un oiseau': 'tous les oiseaux', 'un arbre': 'tous les arbres', 'une fleur': 'toutes les fleurs', 'un liquide': 'tous les liquides'}, 'es': {'un pez': 'todos los peces', 'un pájaro': 'todos los pájaros', 'un árbol': 'todos los árboles', 'una flor': 'todas las flores', 'un líquido': 'todos los líquidos'}, 'it': {'un pesce': 'tutti i pesci', 'un uccello': 'tutti gli uccelli', 'un albero': 'tutti gli alberi', 'un fiore': 'tutti i fiori', 'un liquido': 'tutti i liquidi'}, 'pt': {'um peixe': 'todos os peixes', 'uma ave': 'todas as aves', 'uma árvore': 'todas as árvores', 'uma flor': 'todas as flores', 'um líquido': 'todos os líquidos'}, 'nl': {'een vis': 'alle vissen', 'een vogel': 'alle vogels', 'een boom': 'alle bomen', 'een bloem': 'alle bloemen', 'een vloeistof': 'alle vloeistoffen'}, 'pl': {'ryba': 'wszystkie ryby', 'ptak': 'wszystkie ptaki', 'drzewo': 'wszystkie drzewa', 'kwiat': 'wszystkie kwiaty', 'płyn': 'wszystkie płyny'}}
+НАДКЛАСС_МН = {'ru': {'животное': 'животные', 'растение': 'растения', 'вещество': 'вещества'}, 'en': {'an animal': 'animals', 'a plant': 'plants', 'a substance': 'substances'}, 'de': {'ein Tier': 'Tiere', 'eine Pflanze': 'Pflanzen', 'ein Stoff': 'Stoffe'}, 'fr': {'un animal': 'des animaux', 'une plante': 'des plantes', 'une substance': 'des substances'}, 'es': {'un animal': 'animales', 'una planta': 'plantas', 'una sustancia': 'sustancias'}, 'it': {'un animale': 'animali', 'una pianta': 'piante', 'una sostanza': 'sostanze'}, 'pt': {'um animal': 'animais', 'uma planta': 'plantas', 'uma substância': 'substâncias'}, 'nl': {'een dier': 'dieren', 'een plant': 'planten', 'een stof': 'stoffen'}, 'pl': {'zwierzę': 'zwierzęta', 'roślina': 'rośliny', 'substancja': 'substancje'}}
+СИЛЛОГИЗМ_ВСЕ = {'ru': 'если {квмн} — {нмн}, а {ч} — {к}, то {ч} — {н}? да: {ч} — {к}, {квмн} — {нмн}, значит {ч} — {н}.', 'en': 'if {квмн} are {нмн} and {ч} is {к}, is {ч} {н}? yes: {ч} is {к}, {квмн} are {нмн}, so {ч} is {н}.', 'de': 'wenn {квмн} {нмн} sind und {ч} {к} ist, ist {ч} dann {н}? ja: {ч} ist {к}, {квмн} sind {нмн}, also ist {ч} {н}.', 'fr': 'si {квмн} sont {нмн} et {чт} est {к}, {ч} est-il {н} ? oui : {ч} est {к}, {квмн} sont {нмн}, donc {ч} est {н}.', 'es': 'si {квмн} son {нмн} y {ч} es {к}, ¿es {ч} {н}? sí: {ч} es {к}, {квмн} son {нмн}, entonces {ч} es {н}.', 'it': 'se {квмн} sono {нмн} e {ч} è {к}, {ч} è {н}? sì: {ч} è {к}, {квмн} sono {нмн}, quindi {ч} è {н}.', 'pt': 'se {квмн} são {нмн} e {ч} é {к}, {ч} é {н}? sim: {ч} é {к}, {квмн} são {нмн}, logo {ч} é {н}.', 'nl': 'als {квмн} {нмн} zijn en {ч} {к} is, is {ч} dan {н}? ja: {ч} is {к}, {квмн} zijn {нмн}, dus {ч} is {н}.', 'pl': 'jeśli {квмн} to {нмн}, a {ч} to {к}, to czy {ч} to {н}? tak: {ч} to {к}, {квмн} to {нмн}, więc {ч} to {н}.'}
+
 ИЕРАРХИЯ = {
     "ru": (
         ("рыба", "всякая рыба", "животное"),
@@ -644,14 +650,16 @@ if _ОПРЕДЕЛЕНО is not None:
 ОБЪЯВЛЕННЫЕ_ПРОПУСКИ = {"согласен_что_вы": БЕЗ_РАЗЛИЧИЯ_РЕГИСТРА}
 
 ЯЗЫКИ = tuple(ФАКТЫ)
-ФОРМЫ = ("основание", "следствие", "принадлежность", "правда", "согласен", "согласен_что", "согласен_что_вы", "следствие2", "принадлежность_вопрос", "силлогизм", "почему_прямо", "общего", "лишнее", "силлогизм_да")
+ФОРМЫ = ("основание", "следствие", "принадлежность", "правда", "согласен", "согласен_что", "согласен_что_вы", "следствие2", "принадлежность_вопрос", "силлогизм", "почему_прямо", "общего", "лишнее", "силлогизм_да", "силлогизм_все")
 
 for _яз in ЯЗЫКИ:
     # «гласные_стяжения» есть ОБЪЯВЛЕНИЕ СТРОЯ, а не форма: язык, где стяжения
     # нет, его не объявляет, и сличение форм ведётся без служебных ключей.
     РАМКИ[_яз]["общего"] = ОБЩЕЕ[_яз]["рамка"]
     РАМКИ[_яз]["лишнее"] = ЛИШНЕЕ[_яз]
-    РАМКИ[_яз]["силлогизм_да"] = СИЛЛОГИЗМ_ДА[_яз]   # рамка формы «общего» живёт в своей таблице
+    РАМКИ[_яз]["силлогизм_да"] = СИЛЛОГИЗМ_ДА[_яз]
+    РАМКИ[_яз]["силлогизм_все"] = СИЛЛОГИЗМ_ВСЕ[_яз]
+    assert set(к for к, _, _ in ИЕРАРХИЯ[_яз]) <= set(КЛАСС_ВСЕ[_яз]) and set(н for _, _, н in ИЕРАРХИЯ[_яз]) <= set(НАДКЛАСС_МН[_яз]), _яз   # рамка формы «общего» живёт в своей таблице
     assert set(РАМКИ[_яз]) - {"гласные_стяжения"} == set(ФОРМЫ) - {"согласен_что_вы"}, _яз
     assert (_яз in БЕЗ_РАЗЛИЧИЯ_РЕГИСТРА) != (_яз in СОГЛАСЕН_ВЫ), _яз
     assert (_яз in ПРИДАТОЧНОЕ_РАВНО_ФАКТУ) != (_яз in ПРИДАТОЧНОЕ), _яз
@@ -672,7 +680,7 @@ _ЧИСЛОМ_И_СЛОВОМ = True
 def страница(язык, форма, i):
     """Одна страница дома. ФАКТ и ПРИНАДЛЕЖНОСТЬ идут по своим таблицам."""
     р = РАМКИ[язык]
-    if форма in ("силлогизм", "силлогизм_да"):
+    if форма in ("силлогизм", "силлогизм_да", "силлогизм_все"):
         # СИЛЛОГИЗМ (Barbara) — единственный ход корпуса от РОДА к НАДРОДУ.
         # Стоит ТОЛЬКО в вопросной обёртке: голый силлогизм был бы родом без
         # вопросной поверхности и поднял бы долг прибора ШИРОТЫ (тот же счёт,
@@ -687,7 +695,7 @@ def страница(язык, форма, i):
         # при согласной. Языки, где стяжения нет, дыры «чт» и не держат.
         гласные = р.get("гласные_стяжения")
         чт = (("qu'" if ч[:1].lower() in гласные else "que ") + ч) if гласные else None
-        return р[форма].format(ч=ч, к=к, кв=кв, н=н, чт=чт)
+        return р[форма].format(ч=ч, к=к, кв=кв, н=н, чт=чт, квмн=КЛАСС_ВСЕ[язык][к], нмн=НАДКЛАСС_МН[язык][н])
     if форма.startswith("принадлежность"):
         ч, к = КЛАССЫ[язык][i % len(КЛАССЫ[язык])]
         return р[форма].format(ч=ч, к=к)
@@ -727,7 +735,7 @@ def _показы():
     вон = {}
     for язык in ЯЗЫКИ:
         for форма in ФОРМЫ:
-            if форма in ("силлогизм", "силлогизм_да"):
+            if форма in ("силлогизм", "силлогизм_да", "силлогизм_все"):
                 for i in range(len(ИЕРАРХИЯ[язык])):
                     с = страница(язык, форма, i)
                     if с:
@@ -792,6 +800,7 @@ def _образцы():
             "км": list(ОБЩЕЕ[язык]["мн"].values()),
             "ч3": [ч for ч, _ in КЛАССЫ[язык]], "к3": [к for _, к in КЛАССЫ[язык]],
             "кв": [кв for _, кв, _ in ИЕРАРХИЯ[язык]],
+            "квмн": list(КЛАСС_ВСЕ[язык].values()), "нмн": list(НАДКЛАСС_МН[язык].values()),
             "н": [н for _, _, н in ИЕРАРХИЯ[язык]],
             "чт": ([("qu'" if ч[:1].lower() in (РАМКИ[язык].get("гласные_стяжения") or "")
                      else "que ") + ч for ч, _ in КЛАССЫ[язык]]
