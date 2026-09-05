@@ -111,6 +111,7 @@ import worldfacts as W  # noqa: E402
                факт="een feit: dat kan gecontroleerd worden.",
                мнение="een mening: een ander mens kan een andere hebben."),
     "pl": dict(вопрос="{у} — czy to fakt, czy opinia?",
+               вопрос2="{у} — to fakt czy opinia?",   # вторая поверхность (полоса BESEDA-2)
                факт="fakt: to można sprawdzić.",
                мнение="opinia: inny człowiek może mieć inną."),
 }
@@ -131,15 +132,20 @@ def утверждение(язык, форма, i):
     return МНЕНИЯ[язык][i % len(МНЕНИЯ[язык])]
 
 
-def страница(язык, форма, i):
+def страница(язык, форма, i, поверхность="вопрос"):
     я = РАМКИ[язык]
-    return f"{я['вопрос'].format(у=утверждение(язык, форма, i))} {я[форма]}"
+    return f"{я[поверхность].format(у=утверждение(язык, форма, i))} {я[форма]}"
 
 
 def _показы():
-    return {страница(язык, форма, i): (язык, форма)
-            for язык in ЯЗЫКИ for форма in ФОРМЫ
-            for i in range(ФАКТОВ if форма == "факт" else len(МНЕНИЯ[язык]))}
+    вон = {}
+    for язык in ЯЗЫКИ:
+        for форма in ФОРМЫ:
+            for i in range(ФАКТОВ if форма == "факт" else len(МНЕНИЯ[язык])):
+                for поверхность in ("вопрос", "вопрос2"):
+                    if поверхность in РАМКИ[язык]:
+                        вон[страница(язык, форма, i, поверхность)] = (язык, форма)
+    return вон
 
 
 ПОКАЗЫ = _показы()
@@ -157,8 +163,11 @@ def _хвосты():
     вон = []
     for яз, я in РАМКИ.items():
         for форма in ФОРМЫ:
-            рамка = я["вопрос"].replace("{у}", "\x00") + " " + я[форма]
-            вон.append(re.compile(re.escape(рамка).replace("\x00", "[^.?!]+")))
+            for поверхность in ("вопрос", "вопрос2"):
+                if поверхность not in я:
+                    continue
+                рамка = я[поверхность].replace("{у}", "\x00") + " " + я[форма]
+                вон.append(re.compile(re.escape(рамка).replace("\x00", "[^.?!]+")))
     return tuple(вон)
 
 

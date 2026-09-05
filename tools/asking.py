@@ -180,8 +180,8 @@ est-elle est-ce si y et tu es-tu êtes-vous vous quoi des rien ça sais-tu savez
 cual cuanto cuantos que es hay donde se ¿es ¿son ¿cuál ¿cuánto ¿qué ¿cómo ¿quién ¿puede ¿tienen ¿tiene
 ¿y ¿quieres ¿quiere ¿estás ¿está ¿por ¿algo ¿alguna ¿sabes ¿sabe
 che cosa quanto quanti dove quale come chi perché intendi intende sei può hanno ha niente novità tutto sai sa
-qual quantos onde como quem porque porquê queres quer concordas concorda pode todos tem têm algo alguma tudo sabes sabe
-czy ile co jaki jaka jakie jakiej jakim jakich który które która czego gdzie kiedy jak czym dlaczego masz zgadzasz
+qual quantos onde como quem porque porquê queres quer concordas concorda pode todos tem têm algo alguma tudo sabes sabe está
+czy ile co jaki jaka jakie jakiej jakim jakich który które która czego gdzie kiedy jak czym dlaczego masz zgadzasz to
 wat hoe hoeveel welke welk verhoudt waar waarom bedoel bedoelt ben bent klopt en waarmee waarvan waarop waardoor kan hebben heeft alles iets nog waartoe weet
 ты а
 # ЭЛЛИПТИЧЕСКИЙ ВОПРОС ОТКРЫВАЕТСЯ СОЮЗОМ, а не вопросным словом: «а у тома?»,
