@@ -301,34 +301,35 @@
 # родительный объявлен по членам. Кошка и собака входят в класс животных.
 ОБЩЕЕ = {
     "ru": dict(рамка="что общего у {ч1р} и {ч2р}? {ч1} и {ч2} — {км}.",
-               мн={"животное": "животные", "дерево": "деревья", "рыба": "рыбы", "жидкость": "жидкости", "птица": "птицы", "цветок": "цветы"},
+               мн={"животное": "животные", "дерево": "деревья", "рыба": "рыбы", "жидкость": "жидкости", "птица": "птицы", "цветок": "цветы", 'мебель': 'мебель'},
                род={"паук": "паука", "дуб": "дуба", "акула": "акулы", "молоко": "молока", "ласточка": "ласточки", "роза": "розы",
                     "сосна": "сосны", "тюльпан": "тюльпана", "карп": "карпа", "сова": "совы", "сок": "сока", "муравей": "муравья",
-                    "кошка": "кошки", "собака": "собаки"}),
+                    "кошка": "кошки", "собака": "собаки", "стол": "стола", "стул": "стула"}),
     "en": dict(рамка="what do {ч1} and {ч2} have in common? {ч1} and {ч2} are {км}.",
-               мн={"an animal": "animals", "a tree": "trees", "a fish": "fish", "a liquid": "liquids", "a bird": "birds", "a flower": "flowers"}),
+               мн={"an animal": "animals", "a tree": "trees", "a fish": "fish", "a liquid": "liquids", "a bird": "birds", "a flower": "flowers", 'furniture': 'furniture'}),
     "de": dict(рамка="was haben {ч1} und {ч2} gemeinsam? {ч1} und {ч2} sind {км}.",
-               мн={"ein Tier": "Tiere", "ein Baum": "Bäume", "ein Fisch": "Fische", "eine Flüssigkeit": "Flüssigkeiten", "ein Vogel": "Vögel", "eine Blume": "Blumen"}),
+               мн={"ein Tier": "Tiere", "ein Baum": "Bäume", "ein Fisch": "Fische", "eine Flüssigkeit": "Flüssigkeiten", "ein Vogel": "Vögel", "eine Blume": "Blumen", 'ein Möbelstück': 'Möbel'}),
     "fr": dict(рамка="qu'ont en commun {ч1} et {ч2} ? {ч1} et {ч2} sont {км}.",
-               мн={"un animal": "des animaux", "un arbre": "des arbres", "un poisson": "des poissons", "un liquide": "des liquides", "un oiseau": "des oiseaux", "une fleur": "des fleurs"}),
+               мн={"un animal": "des animaux", "un arbre": "des arbres", "un poisson": "des poissons", "un liquide": "des liquides", "un oiseau": "des oiseaux", "une fleur": "des fleurs", 'un meuble': 'des meubles'}),
     "es": dict(рамка="¿qué tienen en común {ч1} y {ч2}? {ч1} y {ч2} son {км}.",
-               мн={"un animal": "animales", "un árbol": "árboles", "un pez": "peces", "un líquido": "líquidos", "un pájaro": "pájaros", "una flor": "flores"}),
+               мн={"un animal": "animales", "un árbol": "árboles", "un pez": "peces", "un líquido": "líquidos", "un pájaro": "pájaros", "una flor": "flores", 'un mueble': 'muebles'}),
     "it": dict(рамка="che cosa hanno in comune {ч1} e {ч2}? {ч1} e {ч2} sono {км}.",
-               мн={"un animale": "animali", "un albero": "alberi", "un pesce": "pesci", "un liquido": "liquidi", "un uccello": "uccelli", "un fiore": "fiori"}),
+               мн={"un animale": "animali", "un albero": "alberi", "un pesce": "pesci", "un liquido": "liquidi", "un uccello": "uccelli", "un fiore": "fiori", 'un mobile': 'mobili'}),
     "pt": dict(рамка="o que têm em comum {ч1} e {ч2}? {ч1} e {ч2} são {км}.",
-               мн={"um animal": "animais", "uma árvore": "árvores", "um peixe": "peixes", "um líquido": "líquidos", "uma ave": "aves", "uma flor": "flores"}),
+               мн={"um animal": "animais", "uma árvore": "árvores", "um peixe": "peixes", "um líquido": "líquidos", "uma ave": "aves", "uma flor": "flores", 'um móvel': 'móveis'}),
     "nl": dict(рамка="wat hebben {ч1} en {ч2} gemeen? {ч1} en {ч2} zijn {км}.",
-               мн={"een dier": "dieren", "een boom": "bomen", "een vis": "vissen", "een vloeistof": "vloeistoffen", "een vogel": "vogels", "een bloem": "bloemen"}),
+               мн={"een dier": "dieren", "een boom": "bomen", "een vis": "vissen", "een vloeistof": "vloeistoffen", "een vogel": "vogels", "een bloem": "bloemen", 'een meubel': 'meubels'}),
     "pl": dict(рамка="co mają wspólnego {ч1} i {ч2}? {ч1} i {ч2} to {км}.",
-               мн={"zwierzę": "zwierzęta", "drzewo": "drzewa", "ryba": "ryby", "płyn": "płyny", "ptak": "ptaki", "kwiat": "kwiaty"}),
+               мн={"zwierzę": "zwierzęta", "drzewo": "drzewa", "ryba": "ryby", "płyn": "płyny", "ptak": "ptaki", "kwiat": "kwiaty", 'mebel': 'meble'}),
 }
 КОШКА_СОБАКА = {"ru": (("кошка", "животное"), ("собака", "животное")), "en": (("a cat", "an animal"), ("a dog", "an animal")),
                 "de": (("eine Katze", "ein Tier"), ("ein Hund", "ein Tier")), "fr": (("un chat", "un animal"), ("un chien", "un animal")),
                 "es": (("un gato", "un animal"), ("un perro", "un animal")), "it": (("un gatto", "un animale"), ("un cane", "un animale")),
                 "pt": (("um gato", "um animal"), ("um cão", "um animal")), "nl": (("een kat", "een dier"), ("een hond", "een dier")),
                 "pl": (("kot", "zwierzę"), ("pies", "zwierzę"))}
+МЕБЕЛЬ = {'ru': (('стол', 'мебель'), ('стул', 'мебель')), 'en': (('a table', 'furniture'), ('a chair', 'furniture')), 'de': (('ein Tisch', 'ein Möbelstück'), ('ein Stuhl', 'ein Möbelstück')), 'fr': (('une table', 'un meuble'), ('une chaise', 'un meuble')), 'es': (('una mesa', 'un mueble'), ('una silla', 'un mueble')), 'it': (('un tavolo', 'un mobile'), ('una sedia', 'un mobile')), 'pt': (('uma mesa', 'um móvel'), ('uma cadeira', 'um móvel')), 'nl': (('een tafel', 'een meubel'), ('een stoel', 'een meubel')), 'pl': (('stół', 'mebel'), ('krzesło', 'mebel'))}
 for _яз in КЛАССЫ:
-    КЛАССЫ[_яз] = tuple(КЛАССЫ[_яз]) + КОШКА_СОБАКА[_яз]
+    КЛАССЫ[_яз] = tuple(КЛАССЫ[_яз]) + КОШКА_СОБАКА[_яз] + МЕБЕЛЬ[_яз]
     assert set(к for _, к in КЛАССЫ[_яз]) <= set(ОБЩЕЕ[_яз]["мн"]), (_яз, "множественное класса не объявлено")
     if "род" in ОБЩЕЕ[_яз]:
         assert set(ч for ч, _ in КЛАССЫ[_яз]) <= set(ОБЩЕЕ[_яз]["род"]), (_яз, "родительный члена не объявлен")
@@ -344,6 +345,38 @@ def пары_класса(язык):
         for ч2, к2 in КЛАССЫ[язык]:
             if ч1 != ч2 and к1 == к2:
                 yield ч1, ч2, к1
+
+
+# ЛИШНЕЕ СРЕДИ ТРЁХ (шестая полоса, 05.09: «что лишнее: кошка, собака, стол?»): два члена
+# одного класса и один чужой; ответ — чужой член с основанием обоими классами.
+ЛИШНЕЕ = {
+    "ru": "что лишнее: {ч1}, {ч2}, {ч3}? {ч3}: {ч1} и {ч2} — {км}, а {ч3} — {к3}.",
+    "en": "which is the odd one out: {ч1}, {ч2}, {ч3}? {ч3}: {ч1} and {ч2} are {км}, and {ч3} is {к3}.",
+    "de": "was passt nicht dazu: {ч1}, {ч2}, {ч3}? {ч3}: {ч1} und {ч2} sind {км}, und {ч3} ist {к3}.",
+    "fr": "lequel est l'intrus : {ч1}, {ч2}, {ч3} ? {ч3} : {ч1} et {ч2} sont {км}, et {ч3} est {к3}.",
+    "es": "¿cuál no encaja: {ч1}, {ч2}, {ч3}? {ч3}: {ч1} y {ч2} son {км}, y {ч3} es {к3}.",
+    "it": "qual è l'intruso: {ч1}, {ч2}, {ч3}? {ч3}: {ч1} e {ч2} sono {км}, e {ч3} è {к3}.",
+    "pt": "qual é o intruso: {ч1}, {ч2}, {ч3}? {ч3}: {ч1} e {ч2} são {км}, e {ч3} é {к3}.",
+    "nl": "wat hoort er niet bij: {ч1}, {ч2}, {ч3}? {ч3}: {ч1} en {ч2} zijn {км}, en {ч3} is {к3}.",
+    "pl": "co nie pasuje: {ч1}, {ч2}, {ч3}? {ч3}: {ч1} i {ч2} to {км}, a {ч3} to {к3}.",
+}
+
+
+def тройки_лишнего(язык):
+    """Two members of one class and a stranger from every other class — one triple
+    per unordered pair of the class and per other class."""
+    члены = КЛАССЫ[язык]
+    классы = list(dict.fromkeys(к for _, к in члены))
+    for ч1, ч2, к in пары_класса(язык):
+        if ч1 > ч2:
+            continue
+        # the stranger — the first member of EVERY other class: «кошка, собака, стол»
+        # as well as «кошка, собака, дуб»
+        for к3 in классы:
+            if к3 == к:
+                continue
+            ч3 = next(ч for ч, кк in члены if кк == к3)
+            yield ч1, ч2, ч3, к, к3
 
 
 ИЕРАРХИЯ = {
@@ -607,12 +640,13 @@ if _ОПРЕДЕЛЕНО is not None:
 ОБЪЯВЛЕННЫЕ_ПРОПУСКИ = {"согласен_что_вы": БЕЗ_РАЗЛИЧИЯ_РЕГИСТРА}
 
 ЯЗЫКИ = tuple(ФАКТЫ)
-ФОРМЫ = ("основание", "следствие", "принадлежность", "правда", "согласен", "согласен_что", "согласен_что_вы", "следствие2", "принадлежность_вопрос", "силлогизм", "почему_прямо", "общего")
+ФОРМЫ = ("основание", "следствие", "принадлежность", "правда", "согласен", "согласен_что", "согласен_что_вы", "следствие2", "принадлежность_вопрос", "силлогизм", "почему_прямо", "общего", "лишнее")
 
 for _яз in ЯЗЫКИ:
     # «гласные_стяжения» есть ОБЪЯВЛЕНИЕ СТРОЯ, а не форма: язык, где стяжения
     # нет, его не объявляет, и сличение форм ведётся без служебных ключей.
-    РАМКИ[_яз]["общего"] = ОБЩЕЕ[_яз]["рамка"]   # рамка формы «общего» живёт в своей таблице
+    РАМКИ[_яз]["общего"] = ОБЩЕЕ[_яз]["рамка"]
+    РАМКИ[_яз]["лишнее"] = ЛИШНЕЕ[_яз]   # рамка формы «общего» живёт в своей таблице
     assert set(РАМКИ[_яз]) - {"гласные_стяжения"} == set(ФОРМЫ) - {"согласен_что_вы"}, _яз
     assert (_яз in БЕЗ_РАЗЛИЧИЯ_РЕГИСТРА) != (_яз in СОГЛАСЕН_ВЫ), _яз
     assert (_яз in ПРИДАТОЧНОЕ_РАВНО_ФАКТУ) != (_яз in ПРИДАТОЧНОЕ), _яз
@@ -653,6 +687,10 @@ def страница(язык, форма, i):
         ч, к = КЛАССЫ[язык][i % len(КЛАССЫ[язык])]
         return р[форма].format(ч=ч, к=к)
     ряд = ФАКТЫ[язык]
+    if форма == "лишнее":
+        тройки = list(тройки_лишнего(язык))
+        ч1, ч2, ч3, к, к3 = тройки[i % len(тройки)]
+        return ЛИШНЕЕ[язык].format(ч1=ч1, ч2=ч2, ч3=ч3, км=ОБЩЕЕ[язык]["мн"][к], к3=к3)
     if форма == "общего":
         пары = list(пары_класса(язык))
         ч1, ч2, к = пары[i % len(пары)]
@@ -696,6 +734,10 @@ def _показы():
                 continue
             if форма == "общего":
                 for i in range(len(list(пары_класса(язык)))):
+                    вон[страница(язык, форма, i)] = (язык, форма)
+                continue
+            if форма == "лишнее":
+                for i in range(len(list(тройки_лишнего(язык)))):
                     вон[страница(язык, форма, i)] = (язык, форма)
                 continue
             if форма == "согласен_что_вы" and язык in БЕЗ_РАЗЛИЧИЯ_РЕГИСТРА:
@@ -743,6 +785,7 @@ def _образцы():
             "ч1": [ч for ч, _ in КЛАССЫ[язык]], "ч2": [ч for ч, _ in КЛАССЫ[язык]],
             "ч1р": [_род(язык, ч) for ч, _ in КЛАССЫ[язык]], "ч2р": [_род(язык, ч) for ч, _ in КЛАССЫ[язык]],
             "км": list(ОБЩЕЕ[язык]["мн"].values()),
+            "ч3": [ч for ч, _ in КЛАССЫ[язык]], "к3": [к for _, к in КЛАССЫ[язык]],
             "кв": [кв for _, кв, _ in ИЕРАРХИЯ[язык]],
             "н": [н for _, _, н in ИЕРАРХИЯ[язык]],
             "чт": ([("qu'" if ч[:1].lower() in (РАМКИ[язык].get("гласные_стяжения") or "")

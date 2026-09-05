@@ -175,7 +175,7 @@ can could should has have will shall must may might would ought need any anythin
 взаимно есть ли если во на
 wenn wie was ist sind welche welcher wo wann warum wieviel wer wen wem
 stimmt stimmst stimmen meinst meinen bist wozu womit woraus wovon wodurch worauf kann darf haben hat verhält etwas gibt kennst weißt wissen
-que quel quelle quels combien comment pourquoi est qu'est-ce est-il qu'ont
+que quel quelle quels combien comment pourquoi est qu'est-ce est-il lequel laquelle lesquels qu'ont
 est-elle est-ce si y et tu es-tu êtes-vous vous quoi des rien ça sais-tu savez-vous
 cual cuanto cuantos que es hay donde se ¿es ¿son ¿cuál ¿cuánto ¿qué ¿cómo ¿quién ¿puede ¿tienen ¿tiene
 ¿y ¿quieres ¿quiere ¿estás ¿está ¿por ¿algo ¿alguna ¿sabes ¿sabe
