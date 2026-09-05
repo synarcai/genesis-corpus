@@ -183,7 +183,7 @@ che cosa quanto quanti dove quale come chi perché intendi intende sei può hann
 qual quantos onde como quem porque porquê queres quer concordas concorda pode todos tem têm algo alguma tudo sabes sabe está
 czy ile co jaki jaka jakie jakiej jakim jakich który które która czego gdzie kiedy jak czym dlaczego masz zgadzasz to
 wat hoe hoeveel welke welk verhoudt waar waarom bedoel bedoelt ben bent klopt en waarmee waarvan waarop waardoor kan hebben heeft alles iets nog waartoe weet
-ты а
+ты вы а
 # ЭЛЛИПТИЧЕСКИЙ ВОПРОС ОТКРЫВАЕТСЯ СОЮЗОМ, а не вопросным словом: «а у тома?»,
 # «and tom?», «und Lena?» — так и спрашивает человек, когда предмет вопроса
 # стоит в предыдущей реплике. Займ растёт разговором (см. выше).

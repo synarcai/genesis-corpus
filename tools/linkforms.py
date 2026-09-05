@@ -349,7 +349,7 @@ def уверенность(язык, i):
 ВЫ_УВЕРЕН = {"ru": ("ты уверен?", "вы уверены?"), "de": ("bist du sicher?", "sind Sie sicher?"),
              "fr": ("tu es sûr ?", "vous êtes sûr ?"), "es": ("¿estás seguro?", "¿está usted seguro?"),
              "it": ("sei sicuro?", "è sicuro?"), "pt": ("tens a certeza?", "tem a certeza?"),
-             "nl": ("weet je het zeker?", "weet u het zeker?"), "pl": ("jesteś pewien?", "jest pan pewien?")}
+             "nl": ("weet je het zeker?", "weet u het zeker?"), "pl": ("jesteś pewien?", "czy jest pan pewien?")}
 
 
 def уверенность_вы(язык, i):
