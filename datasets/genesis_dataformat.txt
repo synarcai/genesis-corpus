@@ -207,208 +207,96 @@ in json this record is {"depth": false, "line": false, "width": 32}.
 {"depth": false, "line": false, "width": 32} written in csv is depth,line,width ; false,false,32.
 how is {"depth": false, "line": false, "width": 32} said in words? {"depth": false, "line": false, "width": 32} in words is in the record the field depth has value false, the field line has value false, the field width has value 32.
 
-level: 45 ; name: number ; order: 51 written in json is {"level": 45, "name": "number", "order": 51}.
-в записи поле level имеет значение 45, поле name имеет значение number, поле order имеет значение 51 в json есть {"level": 45, "name": "number", "order": 51}.
-level,name,order ; 45,number,51 written in json is {"level": 45, "name": "number", "order": 51}.
-{"count": "number", "kind": 74, "size": 83} в письме yaml есть count: number ; kind: 74 ; size: 83.
-how is {"count": "number", "kind": 74, "size": 83} said in words? {"count": "number", "kind": 74, "size": 83} in words is in the record the field count has value number, the field kind has value 74, the field size has value 83.
-{"count": "number", "kind": 74, "size": 83} в письме csv есть count,kind,size ; number,74,83.
-{"order": false} written in toml is order = false.
-как читается {"order": false}? {"order": false} в словах есть в записи поле order имеет значение ложь.
-{"order": false} in words is in the record the field order has value false.
-count = "point" ; kind = false written in json is {"count": "point", "kind": false}.
-in json this record is {"depth": true, "line": 58, "value": 70}.
-in the record the field depth has value true, the field line has value 58, the field value has value 70 in json is {"depth": true, "line": 58, "value": 70}.
-{"order": false} в письме toml есть order = false.
-{"kind": "water", "width": 76} written in yaml is kind: water ; width: 76.
-{"kind": "water", "width": 76} в словах есть в записи поле kind имеет значение water, поле width имеет значение 76.
-{"depth": 95} written in csv is depth ; 95.
-line: force ; order: true ; size: sound written in json is {"line": "force", "order": true, "size": "sound"}.
-в записи поле line имеет значение force, поле order имеет значение истина, поле size имеет значение sound в json есть {"line": "force", "order": true, "size": "sound"}.
-kind,width ; true,98 written in json is {"kind": true, "width": 98}.
-{"level": 45, "name": "number", "order": 51} в письме yaml есть level: 45 ; name: number ; order: 51.
-how is {"level": 45, "name": "number", "order": 51} said in words? {"level": 45, "name": "number", "order": 51} in words is in the record the field level has value 45, the field name has value number, the field order has value 51.
-{"level": 45, "name": "number", "order": 51} в письме csv есть level,name,order ; 45,number,51.
-{"count": "number", "kind": 74, "size": 83} written in toml is count = "number" ; kind = 74 ; size = 83.
-как читается {"count": "number", "kind": 74, "size": 83}? {"count": "number", "kind": 74, "size": 83} в словах есть в записи поле count имеет значение number, поле kind имеет значение 74, поле size имеет значение 83.
-{"count": "number", "kind": 74, "size": 83} in words is in the record the field count has value number, the field kind has value 74, the field size has value 83.
-order = false written in json is {"order": false}.
-in json this record is {"order": false}.
-in the record the field order has value false in json is {"order": false}.
-{"count": "point", "kind": false} в письме toml есть count = "point" ; kind = false.
-{"depth": true, "line": 58, "value": 70} written in yaml is depth: true ; line: 58 ; value: 70.
-{"depth": true, "line": 58, "value": 70} в словах есть в записи поле depth имеет значение истина, поле line имеет значение 58, поле value имеет значение 70.
-{"order": false} written in csv is order ; false.
-kind: water ; width: 76 written in json is {"kind": "water", "width": 76}.
-в записи поле kind имеет значение water, поле width имеет значение 76 в json есть {"kind": "water", "width": 76}.
-depth ; 95 written in json is {"depth": 95}.
-{"line": "force", "order": true, "size": "sound"} в письме yaml есть line: force ; order: true ; size: sound.
-how is {"line": "force", "order": true, "size": "sound"} said in words? {"line": "force", "order": true, "size": "sound"} in words is in the record the field line has value force, the field order has value true, the field size has value sound.
-{"kind": true, "width": 98} в письме csv есть kind,width ; true,98.
-{"level": 45, "name": "number", "order": 51} written in toml is level = 45 ; name = "number" ; order = 51.
-как читается {"level": 45, "name": "number", "order": 51}? {"level": 45, "name": "number", "order": 51} в словах есть в записи поле level имеет значение 45, поле name имеет значение number, поле order имеет значение 51.
-{"level": 45, "name": "number", "order": 51} in words is in the record the field level has value 45, the field name has value number, the field order has value 51.
-count = "number" ; kind = 74 ; size = 83 written in json is {"count": "number", "kind": 74, "size": 83}.
-in json this record is {"count": "number", "kind": 74, "size": 83}.
-in the record the field count has value number, the field kind has value 74, the field size has value 83 in json is {"count": "number", "kind": 74, "size": 83}.
-{"order": false} в письме toml есть order = false.
-{"order": false} written in yaml is order: false.
-{"order": false} в словах есть в записи поле order имеет значение ложь.
-{"count": "point", "kind": false} written in csv is count,kind ; point,false.
-depth: true ; line: 58 ; value: 70 written in json is {"depth": true, "line": 58, "value": 70}.
-в записи поле depth имеет значение истина, поле line имеет значение 58, поле value имеет значение 70 в json есть {"depth": true, "line": 58, "value": 70}.
-order ; false written in json is {"order": false}.
+count: point ; kind: false written in json is {"count": "point", "kind": false}.
+в записи поле count имеет значение point, поле kind имеет значение ложь в json есть {"count": "point", "kind": false}.
+depth,line,value ; true,58,70 written in json is {"depth": true, "line": 58, "value": 70}.
 {"kind": "water", "width": 76} в письме yaml есть kind: water ; width: 76.
 how is {"kind": "water", "width": 76} said in words? {"kind": "water", "width": 76} in words is in the record the field kind has value water, the field width has value 76.
 {"depth": 95} в письме csv есть depth ; 95.
 {"line": "force", "order": true, "size": "sound"} written in toml is line = "force" ; order = true ; size = "sound".
 как читается {"line": "force", "order": true, "size": "sound"}? {"line": "force", "order": true, "size": "sound"} в словах есть в записи поле line имеет значение force, поле order имеет значение истина, поле size имеет значение sound.
 {"kind": true, "width": 98} in words is in the record the field kind has value true, the field width has value 98.
-level = 45 ; name = "number" ; order = 51 written in json is {"level": 45, "name": "number", "order": 51}.
-in json this record is {"level": 45, "name": "number", "order": 51}.
-in the record the field level has value 45, the field name has value number, the field order has value 51 in json is {"level": 45, "name": "number", "order": 51}.
-{"count": "number", "kind": 74, "size": 83} в письме toml есть count = "number" ; kind = 74 ; size = 83.
-{"count": "number", "kind": 74, "size": 83} written in yaml is count: number ; kind: 74 ; size: 83.
-{"count": "number", "kind": 74, "size": 83} в словах есть в записи поле count имеет значение number, поле kind имеет значение 74, поле size имеет значение 83.
-{"order": false} written in csv is order ; false.
-order: false written in json is {"order": false}.
-в записи поле order имеет значение ложь в json есть {"order": false}.
-count,kind ; point,false written in json is {"count": "point", "kind": false}.
-{"depth": true, "line": 58, "value": 70} в письме yaml есть depth: true ; line: 58 ; value: 70.
-how is {"depth": true, "line": 58, "value": 70} said in words? {"depth": true, "line": 58, "value": 70} in words is in the record the field depth has value true, the field line has value 58, the field value has value 70.
-{"order": false} в письме csv есть order ; false.
-{"kind": "water", "width": 76} written in toml is kind = "water" ; width = 76.
-как читается {"kind": "water", "width": 76}? {"kind": "water", "width": 76} в словах есть в записи поле kind имеет значение water, поле width имеет значение 76.
-{"depth": 95} in words is in the record the field depth has value 95.
-line = "force" ; order = true ; size = "sound" written in json is {"line": "force", "order": true, "size": "sound"}.
-in json this record is {"kind": true, "width": 98}.
-in the record the field kind has value true, the field width has value 98 in json is {"kind": true, "width": 98}.
-{"level": 45, "name": "number", "order": 51} в письме toml есть level = 45 ; name = "number" ; order = 51.
-{"level": 45, "name": "number", "order": 51} written in yaml is level: 45 ; name: number ; order: 51.
-{"level": 45, "name": "number", "order": 51} в словах есть в записи поле level имеет значение 45, поле name имеет значение number, поле order имеет значение 51.
-{"count": "number", "kind": 74, "size": 83} written in csv is count,kind,size ; number,74,83.
-count: number ; kind: 74 ; size: 83 written in json is {"count": "number", "kind": 74, "size": 83}.
-в записи поле count имеет значение number, поле kind имеет значение 74, поле size имеет значение 83 в json есть {"count": "number", "kind": 74, "size": 83}.
-order ; false written in json is {"order": false}.
-{"order": false} в письме yaml есть order: false.
-how is {"order": false} said in words? {"order": false} in words is in the record the field order has value false.
-{"count": "point", "kind": false} в письме csv есть count,kind ; point,false.
-{"depth": true, "line": 58, "value": 70} written in toml is depth = true ; line = 58 ; value = 70.
-как читается {"depth": true, "line": 58, "value": 70}? {"depth": true, "line": 58, "value": 70} в словах есть в записи поле depth имеет значение истина, поле line имеет значение 58, поле value имеет значение 70.
-{"order": false} in words is in the record the field order has value false.
-kind = "water" ; width = 76 written in json is {"kind": "water", "width": 76}.
-in json this record is {"depth": 95}.
-in the record the field depth has value 95 in json is {"depth": 95}.
-{"line": "force", "order": true, "size": "sound"} в письме toml есть line = "force" ; order = true ; size = "sound".
-{"kind": true, "width": 98} written in yaml is kind: true ; width: 98.
-{"kind": true, "width": 98} в словах есть в записи поле kind имеет значение истина, поле width имеет значение 98.
-{"level": 45, "name": "number", "order": 51} written in csv is level,name,order ; 45,number,51.
-level: 45 ; name: number ; order: 51 written in json is {"level": 45, "name": "number", "order": 51}.
-в записи поле level имеет значение 45, поле name имеет значение number, поле order имеет значение 51 в json есть {"level": 45, "name": "number", "order": 51}.
-count,kind,size ; number,74,83 written in json is {"count": "number", "kind": 74, "size": 83}.
-{"count": "number", "kind": 74, "size": 83} в письме yaml есть count: number ; kind: 74 ; size: 83.
-how is {"count": "number", "kind": 74, "size": 83} said in words? {"count": "number", "kind": 74, "size": 83} in words is in the record the field count has value number, the field kind has value 74, the field size has value 83.
-{"order": false} в письме csv есть order ; false.
-{"order": false} written in toml is order = false.
-как читается {"order": false}? {"order": false} в словах есть в записи поле order имеет значение ложь.
-{"count": "point", "kind": false} in words is in the record the field count has value point, the field kind has value false.
-depth = true ; line = 58 ; value = 70 written in json is {"depth": true, "line": 58, "value": 70}.
-in json this record is {"order": false}.
-in the record the field order has value false in json is {"order": false}.
+count = "point" ; kind = false written in json is {"count": "point", "kind": false}.
+in json this record is {"depth": true, "line": 58, "value": 70}.
+in the record the field depth has value true, the field line has value 58, the field value has value 70 in json is {"depth": true, "line": 58, "value": 70}.
 {"kind": "water", "width": 76} в письме toml есть kind = "water" ; width = 76.
 {"depth": 95} written in yaml is depth: 95.
 {"depth": 95} в словах есть в записи поле depth имеет значение 95.
 {"line": "force", "order": true, "size": "sound"} written in csv is line,order,size ; force,true,sound.
 kind: true ; width: 98 written in json is {"kind": true, "width": 98}.
 в записи поле kind имеет значение истина, поле width имеет значение 98 в json есть {"kind": true, "width": 98}.
-level,name,order ; 45,number,51 written in json is {"level": 45, "name": "number", "order": 51}.
-{"level": 45, "name": "number", "order": 51} в письме yaml есть level: 45 ; name: number ; order: 51.
-how is {"level": 45, "name": "number", "order": 51} said in words? {"level": 45, "name": "number", "order": 51} in words is in the record the field level has value 45, the field name has value number, the field order has value 51.
-{"count": "number", "kind": 74, "size": 83} в письме csv есть count,kind,size ; number,74,83.
-{"count": "number", "kind": 74, "size": 83} written in toml is count = "number" ; kind = 74 ; size = 83.
-как читается {"count": "number", "kind": 74, "size": 83}? {"count": "number", "kind": 74, "size": 83} в словах есть в записи поле count имеет значение number, поле kind имеет значение 74, поле size имеет значение 83.
-{"order": false} in words is in the record the field order has value false.
-order = false written in json is {"order": false}.
+count,kind ; point,false written in json is {"count": "point", "kind": false}.
+{"depth": true, "line": 58, "value": 70} в письме yaml есть depth: true ; line: 58 ; value: 70.
+how is {"depth": true, "line": 58, "value": 70} said in words? {"depth": true, "line": 58, "value": 70} in words is in the record the field depth has value true, the field line has value 58, the field value has value 70.
+{"kind": "water", "width": 76} в письме csv есть kind,width ; water,76.
+{"depth": 95} written in toml is depth = 95.
+как читается {"depth": 95}? {"depth": 95} в словах есть в записи поле depth имеет значение 95.
+{"line": "force", "order": true, "size": "sound"} in words is in the record the field line has value force, the field order has value true, the field size has value sound.
+kind = true ; width = 98 written in json is {"kind": true, "width": 98}.
 in json this record is {"count": "point", "kind": false}.
 in the record the field count has value point, the field kind has value false in json is {"count": "point", "kind": false}.
 {"depth": true, "line": 58, "value": 70} в письме toml есть depth = true ; line = 58 ; value = 70.
-{"order": false} written in yaml is order: false.
-{"order": false} в словах есть в записи поле order имеет значение ложь.
+{"kind": "water", "width": 76} written in yaml is kind: water ; width: 76.
+{"kind": "water", "width": 76} в словах есть в записи поле kind имеет значение water, поле width имеет значение 76.
+{"depth": 95} written in csv is depth ; 95.
+line: force ; order: true ; size: sound written in json is {"line": "force", "order": true, "size": "sound"}.
+в записи поле line имеет значение force, поле order имеет значение истина, поле size имеет значение sound в json есть {"line": "force", "order": true, "size": "sound"}.
+kind,width ; true,98 written in json is {"kind": true, "width": 98}.
+{"count": "point", "kind": false} в письме yaml есть count: point ; kind: false.
+how is {"count": "point", "kind": false} said in words? {"count": "point", "kind": false} in words is in the record the field count has value point, the field kind has value false.
+{"depth": true, "line": 58, "value": 70} в письме csv есть depth,line,value ; true,58,70.
+{"kind": "water", "width": 76} written in toml is kind = "water" ; width = 76.
+как читается {"kind": "water", "width": 76}? {"kind": "water", "width": 76} в словах есть в записи поле kind имеет значение water, поле width имеет значение 76.
+{"depth": 95} in words is in the record the field depth has value 95.
+line = "force" ; order = true ; size = "sound" written in json is {"line": "force", "order": true, "size": "sound"}.
+in json this record is {"kind": true, "width": 98}.
+in the record the field kind has value true, the field width has value 98 in json is {"kind": true, "width": 98}.
+{"count": "point", "kind": false} в письме toml есть count = "point" ; kind = false.
+{"depth": true, "line": 58, "value": 70} written in yaml is depth: true ; line: 58 ; value: 70.
+{"depth": true, "line": 58, "value": 70} в словах есть в записи поле depth имеет значение истина, поле line имеет значение 58, поле value имеет значение 70.
 {"kind": "water", "width": 76} written in csv is kind,width ; water,76.
 depth: 95 written in json is {"depth": 95}.
 в записи поле depth имеет значение 95 в json есть {"depth": 95}.
 line,order,size ; force,true,sound written in json is {"line": "force", "order": true, "size": "sound"}.
 {"kind": true, "width": 98} в письме yaml есть kind: true ; width: 98.
 how is {"kind": true, "width": 98} said in words? {"kind": true, "width": 98} in words is in the record the field kind has value true, the field width has value 98.
-{"level": 45, "name": "number", "order": 51} в письме csv есть level,name,order ; 45,number,51.
-{"level": 45, "name": "number", "order": 51} written in toml is level = 45 ; name = "number" ; order = 51.
-как читается {"level": 45, "name": "number", "order": 51}? {"level": 45, "name": "number", "order": 51} в словах есть в записи поле level имеет значение 45, поле name имеет значение number, поле order имеет значение 51.
-{"count": "number", "kind": 74, "size": 83} in words is in the record the field count has value number, the field kind has value 74, the field size has value 83.
-count = "number" ; kind = 74 ; size = 83 written in json is {"count": "number", "kind": 74, "size": 83}.
-in json this record is {"order": false}.
-in the record the field order has value false in json is {"order": false}.
-{"order": false} в письме toml есть order = false.
+{"count": "point", "kind": false} в письме csv есть count,kind ; point,false.
+{"depth": true, "line": 58, "value": 70} written in toml is depth = true ; line = 58 ; value = 70.
+как читается {"depth": true, "line": 58, "value": 70}? {"depth": true, "line": 58, "value": 70} в словах есть в записи поле depth имеет значение истина, поле line имеет значение 58, поле value имеет значение 70.
+{"kind": "water", "width": 76} in words is in the record the field kind has value water, the field width has value 76.
+depth = 95 written in json is {"depth": 95}.
+in json this record is {"line": "force", "order": true, "size": "sound"}.
+in the record the field line has value force, the field order has value true, the field size has value sound in json is {"line": "force", "order": true, "size": "sound"}.
+{"kind": true, "width": 98} в письме toml есть kind = true ; width = 98.
 {"count": "point", "kind": false} written in yaml is count: point ; kind: false.
 {"count": "point", "kind": false} в словах есть в записи поле count имеет значение point, поле kind имеет значение ложь.
 {"depth": true, "line": 58, "value": 70} written in csv is depth,line,value ; true,58,70.
-order: false written in json is {"order": false}.
-в записи поле order имеет значение ложь в json есть {"order": false}.
+kind: water ; width: 76 written in json is {"kind": "water", "width": 76}.
+в записи поле kind имеет значение water, поле width имеет значение 76 в json есть {"kind": "water", "width": 76}.
+depth ; 95 written in json is {"depth": 95}.
+{"line": "force", "order": true, "size": "sound"} в письме yaml есть line: force ; order: true ; size: sound.
+how is {"line": "force", "order": true, "size": "sound"} said in words? {"line": "force", "order": true, "size": "sound"} in words is in the record the field line has value force, the field order has value true, the field size has value sound.
+{"kind": true, "width": 98} в письме csv есть kind,width ; true,98.
+{"count": "point", "kind": false} written in toml is count = "point" ; kind = false.
+как читается {"count": "point", "kind": false}? {"count": "point", "kind": false} в словах есть в записи поле count имеет значение point, поле kind имеет значение ложь.
+{"depth": true, "line": 58, "value": 70} in words is in the record the field depth has value true, the field line has value 58, the field value has value 70.
+kind = "water" ; width = 76 written in json is {"kind": "water", "width": 76}.
+in json this record is {"depth": 95}.
+in the record the field depth has value 95 in json is {"depth": 95}.
+{"line": "force", "order": true, "size": "sound"} в письме toml есть line = "force" ; order = true ; size = "sound".
+{"kind": true, "width": 98} written in yaml is kind: true ; width: 98.
+{"kind": true, "width": 98} в словах есть в записи поле kind имеет значение истина, поле width имеет значение 98.
+{"count": "point", "kind": false} written in csv is count,kind ; point,false.
+depth: true ; line: 58 ; value: 70 written in json is {"depth": true, "line": 58, "value": 70}.
+в записи поле depth имеет значение истина, поле line имеет значение 58, поле value имеет значение 70 в json есть {"depth": true, "line": 58, "value": 70}.
 kind,width ; water,76 written in json is {"kind": "water", "width": 76}.
 {"depth": 95} в письме yaml есть depth: 95.
 how is {"depth": 95} said in words? {"depth": 95} in words is in the record the field depth has value 95.
 {"line": "force", "order": true, "size": "sound"} в письме csv есть line,order,size ; force,true,sound.
 {"kind": true, "width": 98} written in toml is kind = true ; width = 98.
 как читается {"kind": true, "width": 98}? {"kind": true, "width": 98} в словах есть в записи поле kind имеет значение истина, поле width имеет значение 98.
-{"level": 45, "name": "number", "order": 51} in words is in the record the field level has value 45, the field name has value number, the field order has value 51.
-level = 45 ; name = "number" ; order = 51 written in json is {"level": 45, "name": "number", "order": 51}.
-in json this record is {"count": "number", "kind": 74, "size": 83}.
-in the record the field count has value number, the field kind has value 74, the field size has value 83 in json is {"count": "number", "kind": 74, "size": 83}.
-{"count": "number", "kind": 74, "size": 83} в письме toml есть count = "number" ; kind = 74 ; size = 83.
-{"order": false} written in yaml is order: false.
-{"order": false} в словах есть в записи поле order имеет значение ложь.
-{"order": false} written in csv is order ; false.
-count: point ; kind: false written in json is {"count": "point", "kind": false}.
-в записи поле count имеет значение point, поле kind имеет значение ложь в json есть {"count": "point", "kind": false}.
-depth,line,value ; true,58,70 written in json is {"depth": true, "line": 58, "value": 70}.
-{"order": false} в письме yaml есть order: false.
-how is {"order": false} said in words? {"order": false} in words is in the record the field order has value false.
-{"kind": "water", "width": 76} в письме csv есть kind,width ; water,76.
-{"depth": 95} written in toml is depth = 95.
-как читается {"depth": 95}? {"depth": 95} в словах есть в записи поле depth имеет значение 95.
-{"line": "force", "order": true, "size": "sound"} in words is in the record the field line has value force, the field order has value true, the field size has value sound.
-kind = true ; width = 98 written in json is {"kind": true, "width": 98}.
-in json this record is {"level": 45, "name": "number", "order": 51}.
-in the record the field level has value 45, the field name has value number, the field order has value 51 in json is {"level": 45, "name": "number", "order": 51}.
-{"level": 45, "name": "number", "order": 51} в письме toml есть level = 45 ; name = "number" ; order = 51.
-{"count": "number", "kind": 74, "size": 83} written in yaml is count: number ; kind: 74 ; size: 83.
-{"count": "number", "kind": 74, "size": 83} в словах есть в записи поле count имеет значение number, поле kind имеет значение 74, поле size имеет значение 83.
-{"count": "number", "kind": 74, "size": 83} written in csv is count,kind,size ; number,74,83.
-order: false written in json is {"order": false}.
-в записи поле order имеет значение ложь в json есть {"order": false}.
-order ; false written in json is {"order": false}.
-{"count": "point", "kind": false} в письме yaml есть count: point ; kind: false.
-how is {"count": "point", "kind": false} said in words? {"count": "point", "kind": false} in words is in the record the field count has value point, the field kind has value false.
-{"depth": true, "line": 58, "value": 70} в письме csv есть depth,line,value ; true,58,70.
-{"order": false} written in toml is order = false.
-как читается {"order": false}? {"order": false} в словах есть в записи поле order имеет значение ложь.
-{"kind": "water", "width": 76} in words is in the record the field kind has value water, the field width has value 76.
-depth = 95 written in json is {"depth": 95}.
-in json this record is {"line": "force", "order": true, "size": "sound"}.
-in the record the field line has value force, the field order has value true, the field size has value sound in json is {"line": "force", "order": true, "size": "sound"}.
-{"kind": true, "width": 98} в письме toml есть kind = true ; width = 98.
-{"level": 45, "name": "number", "order": 51} written in yaml is level: 45 ; name: number ; order: 51.
-{"level": 45, "name": "number", "order": 51} в словах есть в записи поле level имеет значение 45, поле name имеет значение number, поле order имеет значение 51.
-{"level": 45, "name": "number", "order": 51} written in csv is level,name,order ; 45,number,51.
-count: number ; kind: 74 ; size: 83 written in json is {"count": "number", "kind": 74, "size": 83}.
-в записи поле count имеет значение number, поле kind имеет значение 74, поле size имеет значение 83 в json есть {"count": "number", "kind": 74, "size": 83}.
-count,kind,size ; number,74,83 written in json is {"count": "number", "kind": 74, "size": 83}.
-{"order": false} в письме yaml есть order: false.
-how is {"order": false} said in words? {"order": false} in words is in the record the field order has value false.
-{"order": false} в письме csv есть order ; false.
-{"count": "point", "kind": false} written in toml is count = "point" ; kind = false.
-как читается {"count": "point", "kind": false}? {"count": "point", "kind": false} в словах есть в записи поле count имеет значение point, поле kind имеет значение ложь.
-{"depth": true, "line": 58, "value": 70} in words is in the record the field depth has value true, the field line has value 58, the field value has value 70.
-order = false written in json is {"order": false}.
+{"count": "point", "kind": false} in words is in the record the field count has value point, the field kind has value false.
+depth = true ; line = 58 ; value = 70 written in json is {"depth": true, "line": 58, "value": 70}.
 in json this record is {"kind": "water", "width": 76}.
 in the record the field kind has value water, the field width has value 76 in json is {"kind": "water", "width": 76}.
 {"depth": 95} в письме toml есть depth = 95.
@@ -416,343 +304,119 @@ in the record the field kind has value water, the field width has value 76 in js
 {"line": "force", "order": true, "size": "sound"} в словах есть в записи поле line имеет значение force, поле order имеет значение истина, поле size имеет значение sound.
 {"kind": true, "width": 98} written in csv is kind,width ; true,98.
 
-{"level": 45, "name": "number", "order": 51} в письме csv есть level,name,order ; 45,number,51.
-level,name,order ; 45,number,51 written in json is {"level": 45, "name": "number", "order": 51}.
-{"count": "number", "kind": 74, "size": 83} written in csv is count,kind,size ; number,74,83.
-{"count": "number", "kind": 74, "size": 83} в письме toml есть count = "number" ; kind = 74 ; size = 83.
-order = false written in json is {"order": false}.
-{"order": false} written in toml is order = false.
-{"count": false, "width": "light"} в письме yaml есть count: false ; width: light.
-kind: false ; value: true written in json is {"kind": false, "value": true}.
-{"kind": 57, "order": "field", "point": true} written in yaml is kind: 57 ; order: field ; point: true.
-in json this record is {"name": "point", "order": "stone"}.
-как читается {"name": "point", "order": "stone"}? {"name": "point", "order": "stone"} в словах есть в записи поле name имеет значение point, поле order имеет значение stone.
-how is {"line": "line"} said in words? {"line": "line"} in words is in the record the field line has value line.
-в записи поле depth имеет значение sound, поле line имеет значение истина, поле weight имеет значение 2, поле width имеет значение force в json есть {"depth": "sound", "line": true, "weight": 2, "width": "force"}.
-{"size": 41} в словах есть в записи поле size имеет значение 41.
-in the record the field level has value 45, the field name has value number, the field order has value 51 in json is {"level": 45, "name": "number", "order": 51}.
-{"level": 45, "name": "number", "order": 51} in words is in the record the field level has value 45, the field name has value number, the field order has value 51.
-{"count": "number", "kind": 74, "size": 83} в письме csv есть count,kind,size ; number,74,83.
-count,kind,size ; number,74,83 written in json is {"count": "number", "kind": 74, "size": 83}.
-{"order": false} written in csv is order ; false.
-{"order": false} в письме toml есть order = false.
-count = false ; width = "light" written in json is {"count": false, "width": "light"}.
-{"kind": false, "value": true} written in toml is kind = false ; value = true.
-{"kind": 57, "order": "field", "point": true} в письме yaml есть kind: 57 ; order: field ; point: true.
-name: point ; order: stone written in json is {"name": "point", "order": "stone"}.
-{"line": "line"} written in yaml is line: line.
-in json this record is {"depth": "sound", "line": true, "weight": 2, "width": "force"}.
-как читается {"depth": "sound", "line": true, "weight": 2, "width": "force"}? {"depth": "sound", "line": true, "weight": 2, "width": "force"} в словах есть в записи поле depth имеет значение sound, поле line имеет значение истина, поле weight имеет значение 2, поле width имеет значение force.
-how is {"size": 41} said in words? {"size": 41} in words is in the record the field size has value 41.
-в записи поле level имеет значение 45, поле name имеет значение number, поле order имеет значение 51 в json есть {"level": 45, "name": "number", "order": 51}.
-{"level": 45, "name": "number", "order": 51} в словах есть в записи поле level имеет значение 45, поле name имеет значение number, поле order имеет значение 51.
-in the record the field count has value number, the field kind has value 74, the field size has value 83 in json is {"count": "number", "kind": 74, "size": 83}.
-{"count": "number", "kind": 74, "size": 83} in words is in the record the field count has value number, the field kind has value 74, the field size has value 83.
-{"order": false} в письме csv есть order ; false.
-order ; false written in json is {"order": false}.
-{"count": false, "width": "light"} written in csv is count,width ; false,light.
-{"kind": false, "value": true} в письме toml есть kind = false ; value = true.
-kind = 57 ; order = "field" ; point = true written in json is {"kind": 57, "order": "field", "point": true}.
-{"name": "point", "order": "stone"} written in toml is name = "point" ; order = "stone".
-{"line": "line"} в письме yaml есть line: line.
-depth: sound ; line: true ; weight: 2 ; width: force written in json is {"depth": "sound", "line": true, "weight": 2, "width": "force"}.
-{"size": 41} written in yaml is size: 41.
-in json this record is {"level": 45, "name": "number", "order": 51}.
-как читается {"level": 45, "name": "number", "order": 51}? {"level": 45, "name": "number", "order": 51} в словах есть в записи поле level имеет значение 45, поле name имеет значение number, поле order имеет значение 51.
-how is {"level": 45, "name": "number", "order": 51} said in words? {"level": 45, "name": "number", "order": 51} in words is in the record the field level has value 45, the field name has value number, the field order has value 51.
-в записи поле count имеет значение number, поле kind имеет значение 74, поле size имеет значение 83 в json есть {"count": "number", "kind": 74, "size": 83}.
-{"count": "number", "kind": 74, "size": 83} в словах есть в записи поле count имеет значение number, поле kind имеет значение 74, поле size имеет значение 83.
-in the record the field order has value false in json is {"order": false}.
-{"order": false} in words is in the record the field order has value false.
 {"count": false, "width": "light"} в письме csv есть count,width ; false,light.
-kind,value ; false,true written in json is {"kind": false, "value": true}.
-{"kind": 57, "order": "field", "point": true} written in csv is kind,order,point ; 57,field,true.
-{"name": "point", "order": "stone"} в письме toml есть name = "point" ; order = "stone".
-line = "line" written in json is {"line": "line"}.
-{"depth": "sound", "line": true, "weight": 2, "width": "force"} written in toml is depth = "sound" ; line = true ; weight = 2 ; width = "force".
-{"size": 41} в письме yaml есть size: 41.
-level: 45 ; name: number ; order: 51 written in json is {"level": 45, "name": "number", "order": 51}.
-{"level": 45, "name": "number", "order": 51} written in yaml is level: 45 ; name: number ; order: 51.
-in json this record is {"count": "number", "kind": 74, "size": 83}.
-как читается {"count": "number", "kind": 74, "size": 83}? {"count": "number", "kind": 74, "size": 83} в словах есть в записи поле count имеет значение number, поле kind имеет значение 74, поле size имеет значение 83.
-how is {"count": "number", "kind": 74, "size": 83} said in words? {"count": "number", "kind": 74, "size": 83} in words is in the record the field count has value number, the field kind has value 74, the field size has value 83.
-в записи поле order имеет значение ложь в json есть {"order": false}.
-{"order": false} в словах есть в записи поле order имеет значение ложь.
-in the record the field count has value false, the field width has value light in json is {"count": false, "width": "light"}.
-{"kind": false, "value": true} in words is in the record the field kind has value false, the field value has value true.
-{"kind": 57, "order": "field", "point": true} в письме csv есть kind,order,point ; 57,field,true.
-name,order ; point,stone written in json is {"name": "point", "order": "stone"}.
-{"line": "line"} written in csv is line ; line.
-{"depth": "sound", "line": true, "weight": 2, "width": "force"} в письме toml есть depth = "sound" ; line = true ; weight = 2 ; width = "force".
-size = 41 written in json is {"size": 41}.
-{"level": 45, "name": "number", "order": 51} written in toml is level = 45 ; name = "number" ; order = 51.
-{"level": 45, "name": "number", "order": 51} в письме yaml есть level: 45 ; name: number ; order: 51.
-count: number ; kind: 74 ; size: 83 written in json is {"count": "number", "kind": 74, "size": 83}.
-{"count": "number", "kind": 74, "size": 83} written in yaml is count: number ; kind: 74 ; size: 83.
-in json this record is {"order": false}.
-как читается {"order": false}? {"order": false} в словах есть в записи поле order имеет значение ложь.
-how is {"order": false} said in words? {"order": false} in words is in the record the field order has value false.
-в записи поле count имеет значение ложь, поле width имеет значение light в json есть {"count": false, "width": "light"}.
-{"kind": false, "value": true} в словах есть в записи поле kind имеет значение ложь, поле value имеет значение истина.
-in the record the field kind has value 57, the field order has value field, the field point has value true in json is {"kind": 57, "order": "field", "point": true}.
-{"name": "point", "order": "stone"} in words is in the record the field name has value point, the field order has value stone.
-{"line": "line"} в письме csv есть line ; line.
-depth,line,weight,width ; sound,true,2,force written in json is {"depth": "sound", "line": true, "weight": 2, "width": "force"}.
-{"size": 41} written in csv is size ; 41.
-{"level": 45, "name": "number", "order": 51} в письме toml есть level = 45 ; name = "number" ; order = 51.
-level = 45 ; name = "number" ; order = 51 written in json is {"level": 45, "name": "number", "order": 51}.
-{"count": "number", "kind": 74, "size": 83} written in toml is count = "number" ; kind = 74 ; size = 83.
-{"count": "number", "kind": 74, "size": 83} в письме yaml есть count: number ; kind: 74 ; size: 83.
-order: false written in json is {"order": false}.
-{"order": false} written in yaml is order: false.
-in json this record is {"count": false, "width": "light"}.
-как читается {"count": false, "width": "light"}? {"count": false, "width": "light"} в словах есть в записи поле count имеет значение ложь, поле width имеет значение light.
-how is {"kind": false, "value": true} said in words? {"kind": false, "value": true} in words is in the record the field kind has value false, the field value has value true.
-в записи поле kind имеет значение 57, поле order имеет значение field, поле point имеет значение истина в json есть {"kind": 57, "order": "field", "point": true}.
-{"name": "point", "order": "stone"} в словах есть в записи поле name имеет значение point, поле order имеет значение stone.
-in the record the field line has value line in json is {"line": "line"}.
-{"depth": "sound", "line": true, "weight": 2, "width": "force"} in words is in the record the field depth has value sound, the field line has value true, the field weight has value 2, the field width has value force.
-{"size": 41} в письме csv есть size ; 41.
-level,name,order ; 45,number,51 written in json is {"level": 45, "name": "number", "order": 51}.
-{"level": 45, "name": "number", "order": 51} written in csv is level,name,order ; 45,number,51.
-{"count": "number", "kind": 74, "size": 83} в письме toml есть count = "number" ; kind = 74 ; size = 83.
-count = "number" ; kind = 74 ; size = 83 written in json is {"count": "number", "kind": 74, "size": 83}.
-{"order": false} written in toml is order = false.
-{"order": false} в письме yaml есть order: false.
-count: false ; width: light written in json is {"count": false, "width": "light"}.
-{"kind": false, "value": true} written in yaml is kind: false ; value: true.
-in json this record is {"kind": 57, "order": "field", "point": true}.
-как читается {"kind": 57, "order": "field", "point": true}? {"kind": 57, "order": "field", "point": true} в словах есть в записи поле kind имеет значение 57, поле order имеет значение field, поле point имеет значение истина.
-how is {"name": "point", "order": "stone"} said in words? {"name": "point", "order": "stone"} in words is in the record the field name has value point, the field order has value stone.
-в записи поле line имеет значение line в json есть {"line": "line"}.
-{"depth": "sound", "line": true, "weight": 2, "width": "force"} в словах есть в записи поле depth имеет значение sound, поле line имеет значение истина, поле weight имеет значение 2, поле width имеет значение force.
-in the record the field size has value 41 in json is {"size": 41}.
-{"level": 45, "name": "number", "order": 51} in words is in the record the field level has value 45, the field name has value number, the field order has value 51.
-{"level": 45, "name": "number", "order": 51} в письме csv есть level,name,order ; 45,number,51.
-count,kind,size ; number,74,83 written in json is {"count": "number", "kind": 74, "size": 83}.
-{"count": "number", "kind": 74, "size": 83} written in csv is count,kind,size ; number,74,83.
-{"order": false} в письме toml есть order = false.
-order = false written in json is {"order": false}.
-{"count": false, "width": "light"} written in toml is count = false ; width = "light".
-{"kind": false, "value": true} в письме yaml есть kind: false ; value: true.
-kind: 57 ; order: field ; point: true written in json is {"kind": 57, "order": "field", "point": true}.
-{"name": "point", "order": "stone"} written in yaml is name: point ; order: stone.
-in json this record is {"line": "line"}.
-как читается {"line": "line"}? {"line": "line"} в словах есть в записи поле line имеет значение line.
-how is {"depth": "sound", "line": true, "weight": 2, "width": "force"} said in words? {"depth": "sound", "line": true, "weight": 2, "width": "force"} in words is in the record the field depth has value sound, the field line has value true, the field weight has value 2, the field width has value force.
-в записи поле size имеет значение 41 в json есть {"size": 41}.
-{"level": 45, "name": "number", "order": 51} в словах есть в записи поле level имеет значение 45, поле name имеет значение number, поле order имеет значение 51.
-in the record the field level has value 45, the field name has value number, the field order has value 51 in json is {"level": 45, "name": "number", "order": 51}.
-{"count": "number", "kind": 74, "size": 83} in words is in the record the field count has value number, the field kind has value 74, the field size has value 83.
-{"count": "number", "kind": 74, "size": 83} в письме csv есть count,kind,size ; number,74,83.
-order ; false written in json is {"order": false}.
-{"order": false} written in csv is order ; false.
-{"count": false, "width": "light"} в письме toml есть count = false ; width = "light".
-kind = false ; value = true written in json is {"kind": false, "value": true}.
-{"kind": 57, "order": "field", "point": true} written in toml is kind = 57 ; order = "field" ; point = true.
-{"name": "point", "order": "stone"} в письме yaml есть name: point ; order: stone.
-line: line written in json is {"line": "line"}.
-{"depth": "sound", "line": true, "weight": 2, "width": "force"} written in yaml is depth: sound ; line: true ; weight: 2 ; width: force.
-in json this record is {"size": 41}.
-как читается {"size": 41}? {"size": 41} в словах есть в записи поле size имеет значение 41.
-how is {"level": 45, "name": "number", "order": 51} said in words? {"level": 45, "name": "number", "order": 51} in words is in the record the field level has value 45, the field name has value number, the field order has value 51.
-в записи поле level имеет значение 45, поле name имеет значение number, поле order имеет значение 51 в json есть {"level": 45, "name": "number", "order": 51}.
-{"count": "number", "kind": 74, "size": 83} в словах есть в записи поле count имеет значение number, поле kind имеет значение 74, поле size имеет значение 83.
-in the record the field count has value number, the field kind has value 74, the field size has value 83 in json is {"count": "number", "kind": 74, "size": 83}.
-{"order": false} in words is in the record the field order has value false.
-{"order": false} в письме csv есть order ; false.
-count,width ; false,light written in json is {"count": false, "width": "light"}.
-{"kind": false, "value": true} written in csv is kind,value ; false,true.
-{"kind": 57, "order": "field", "point": true} в письме toml есть kind = 57 ; order = "field" ; point = true.
-name = "point" ; order = "stone" written in json is {"name": "point", "order": "stone"}.
-{"line": "line"} written in toml is line = "line".
-{"depth": "sound", "line": true, "weight": 2, "width": "force"} в письме yaml есть depth: sound ; line: true ; weight: 2 ; width: force.
-size: 41 written in json is {"size": 41}.
-{"level": 45, "name": "number", "order": 51} written in yaml is level: 45 ; name: number ; order: 51.
-in json this record is {"level": 45, "name": "number", "order": 51}.
-как читается {"level": 45, "name": "number", "order": 51}? {"level": 45, "name": "number", "order": 51} в словах есть в записи поле level имеет значение 45, поле name имеет значение number, поле order имеет значение 51.
-how is {"count": "number", "kind": 74, "size": 83} said in words? {"count": "number", "kind": 74, "size": 83} in words is in the record the field count has value number, the field kind has value 74, the field size has value 83.
-в записи поле count имеет значение number, поле kind имеет значение 74, поле size имеет значение 83 в json есть {"count": "number", "kind": 74, "size": 83}.
-{"order": false} в словах есть в записи поле order имеет значение ложь.
-in the record the field order has value false in json is {"order": false}.
-{"count": false, "width": "light"} in words is in the record the field count has value false, the field width has value light.
-{"kind": false, "value": true} в письме csv есть kind,value ; false,true.
-kind,order,point ; 57,field,true written in json is {"kind": 57, "order": "field", "point": true}.
-{"name": "point", "order": "stone"} written in csv is name,order ; point,stone.
-{"line": "line"} в письме toml есть line = "line".
-depth = "sound" ; line = true ; weight = 2 ; width = "force" written in json is {"depth": "sound", "line": true, "weight": 2, "width": "force"}.
-{"size": 41} written in toml is size = 41.
-{"level": 45, "name": "number", "order": 51} в письме yaml есть level: 45 ; name: number ; order: 51.
-level: 45 ; name: number ; order: 51 written in json is {"level": 45, "name": "number", "order": 51}.
-{"count": "number", "kind": 74, "size": 83} written in yaml is count: number ; kind: 74 ; size: 83.
-in json this record is {"count": "number", "kind": 74, "size": 83}.
-как читается {"count": "number", "kind": 74, "size": 83}? {"count": "number", "kind": 74, "size": 83} в словах есть в записи поле count имеет значение number, поле kind имеет значение 74, поле size имеет значение 83.
-how is {"order": false} said in words? {"order": false} in words is in the record the field order has value false.
-в записи поле order имеет значение ложь в json есть {"order": false}.
-{"count": false, "width": "light"} в словах есть в записи поле count имеет значение ложь, поле width имеет значение light.
-in the record the field kind has value false, the field value has value true in json is {"kind": false, "value": true}.
-{"kind": 57, "order": "field", "point": true} in words is in the record the field kind has value 57, the field order has value field, the field point has value true.
-{"name": "point", "order": "stone"} в письме csv есть name,order ; point,stone.
-line ; line written in json is {"line": "line"}.
-{"depth": "sound", "line": true, "weight": 2, "width": "force"} written in csv is depth,line,weight,width ; sound,true,2,force.
-{"size": 41} в письме toml есть size = 41.
-level = 45 ; name = "number" ; order = 51 written in json is {"level": 45, "name": "number", "order": 51}.
-{"level": 45, "name": "number", "order": 51} written in toml is level = 45 ; name = "number" ; order = 51.
-{"count": "number", "kind": 74, "size": 83} в письме yaml есть count: number ; kind: 74 ; size: 83.
-count: number ; kind: 74 ; size: 83 written in json is {"count": "number", "kind": 74, "size": 83}.
-{"order": false} written in yaml is order: false.
-in json this record is {"order": false}.
-как читается {"order": false}? {"order": false} в словах есть в записи поле order имеет значение ложь.
-how is {"count": false, "width": "light"} said in words? {"count": false, "width": "light"} in words is in the record the field count has value false, the field width has value light.
-в записи поле kind имеет значение ложь, поле value имеет значение истина в json есть {"kind": false, "value": true}.
-{"kind": 57, "order": "field", "point": true} в словах есть в записи поле kind имеет значение 57, поле order имеет значение field, поле point имеет значение истина.
-in the record the field name has value point, the field order has value stone in json is {"name": "point", "order": "stone"}.
-{"line": "line"} in words is in the record the field line has value line.
-{"depth": "sound", "line": true, "weight": 2, "width": "force"} в письме csv есть depth,line,weight,width ; sound,true,2,force.
-size ; 41 written in json is {"size": 41}.
-{"level": 45, "name": "number", "order": 51} written in csv is level,name,order ; 45,number,51.
-{"level": 45, "name": "number", "order": 51} в письме toml есть level = 45 ; name = "number" ; order = 51.
-count = "number" ; kind = 74 ; size = 83 written in json is {"count": "number", "kind": 74, "size": 83}.
-{"count": "number", "kind": 74, "size": 83} written in toml is count = "number" ; kind = 74 ; size = 83.
-{"order": false} в письме yaml есть order: false.
-order: false written in json is {"order": false}.
-{"count": false, "width": "light"} written in yaml is count: false ; width: light.
-in json this record is {"kind": false, "value": true}.
-как читается {"kind": false, "value": true}? {"kind": false, "value": true} в словах есть в записи поле kind имеет значение ложь, поле value имеет значение истина.
-how is {"kind": 57, "order": "field", "point": true} said in words? {"kind": 57, "order": "field", "point": true} in words is in the record the field kind has value 57, the field order has value field, the field point has value true.
+{"kind": false, "value": true} в письме toml есть kind = false ; value = true.
+{"kind": 57, "order": "field", "point": true} в письме yaml есть kind: 57 ; order: field ; point: true.
+in json this record is {"name": "point", "order": "stone"}.
 в записи поле name имеет значение point, поле order имеет значение stone в json есть {"name": "point", "order": "stone"}.
+{"line": "line"} in words is in the record the field line has value line.
+{"depth": "sound", "line": true, "weight": 2, "width": "force"} written in csv is depth,line,weight,width ; sound,true,2,force.
+{"size": 41} written in toml is size = 41.
+{"count": false, "width": "light"} written in yaml is count: false ; width: light.
+how is {"count": false, "width": "light"} said in words? {"count": false, "width": "light"} in words is in the record the field count has value false, the field width has value light.
+in the record the field kind has value false, the field value has value true in json is {"kind": false, "value": true}.
+kind,order,point ; 57,field,true written in json is {"kind": 57, "order": "field", "point": true}.
+name = "point" ; order = "stone" written in json is {"name": "point", "order": "stone"}.
+line: line written in json is {"line": "line"}.
+как читается {"line": "line"}? {"line": "line"} в словах есть в записи поле line имеет значение line.
+{"depth": "sound", "line": true, "weight": 2, "width": "force"} в словах есть в записи поле depth имеет значение sound, поле line имеет значение истина, поле weight имеет значение 2, поле width имеет значение force.
+{"size": 41} в письме csv есть size ; 41.
+{"count": false, "width": "light"} в письме toml есть count = false ; width = "light".
+{"kind": false, "value": true} в письме yaml есть kind: false ; value: true.
+in json this record is {"kind": 57, "order": "field", "point": true}.
+в записи поле kind имеет значение 57, поле order имеет значение field, поле point имеет значение истина в json есть {"kind": 57, "order": "field", "point": true}.
+{"name": "point", "order": "stone"} in words is in the record the field name has value point, the field order has value stone.
+{"line": "line"} written in csv is line ; line.
+{"depth": "sound", "line": true, "weight": 2, "width": "force"} written in toml is depth = "sound" ; line = true ; weight = 2 ; width = "force".
+{"size": 41} written in yaml is size: 41.
+how is {"size": 41} said in words? {"size": 41} in words is in the record the field size has value 41.
+in the record the field count has value false, the field width has value light in json is {"count": false, "width": "light"}.
+kind,value ; false,true written in json is {"kind": false, "value": true}.
+kind = 57 ; order = "field" ; point = true written in json is {"kind": 57, "order": "field", "point": true}.
+name: point ; order: stone written in json is {"name": "point", "order": "stone"}.
+как читается {"name": "point", "order": "stone"}? {"name": "point", "order": "stone"} в словах есть в записи поле name имеет значение point, поле order имеет значение stone.
 {"line": "line"} в словах есть в записи поле line имеет значение line.
+{"depth": "sound", "line": true, "weight": 2, "width": "force"} в письме csv есть depth,line,weight,width ; sound,true,2,force.
+{"size": 41} в письме toml есть size = 41.
+{"count": false, "width": "light"} в письме yaml есть count: false ; width: light.
+in json this record is {"kind": false, "value": true}.
+в записи поле kind имеет значение ложь, поле value имеет значение истина в json есть {"kind": false, "value": true}.
+{"kind": 57, "order": "field", "point": true} in words is in the record the field kind has value 57, the field order has value field, the field point has value true.
+{"name": "point", "order": "stone"} written in csv is name,order ; point,stone.
+{"line": "line"} written in toml is line = "line".
+{"depth": "sound", "line": true, "weight": 2, "width": "force"} written in yaml is depth: sound ; line: true ; weight: 2 ; width: force.
+how is {"depth": "sound", "line": true, "weight": 2, "width": "force"} said in words? {"depth": "sound", "line": true, "weight": 2, "width": "force"} in words is in the record the field depth has value sound, the field line has value true, the field weight has value 2, the field width has value force.
+in the record the field size has value 41 in json is {"size": 41}.
+count,width ; false,light written in json is {"count": false, "width": "light"}.
+kind = false ; value = true written in json is {"kind": false, "value": true}.
+kind: 57 ; order: field ; point: true written in json is {"kind": 57, "order": "field", "point": true}.
+как читается {"kind": 57, "order": "field", "point": true}? {"kind": 57, "order": "field", "point": true} в словах есть в записи поле kind имеет значение 57, поле order имеет значение field, поле point имеет значение истина.
+{"name": "point", "order": "stone"} в словах есть в записи поле name имеет значение point, поле order имеет значение stone.
+{"line": "line"} в письме csv есть line ; line.
+{"depth": "sound", "line": true, "weight": 2, "width": "force"} в письме toml есть depth = "sound" ; line = true ; weight = 2 ; width = "force".
+{"size": 41} в письме yaml есть size: 41.
+in json this record is {"count": false, "width": "light"}.
+в записи поле count имеет значение ложь, поле width имеет значение light в json есть {"count": false, "width": "light"}.
+{"kind": false, "value": true} in words is in the record the field kind has value false, the field value has value true.
+{"kind": 57, "order": "field", "point": true} written in csv is kind,order,point ; 57,field,true.
+{"name": "point", "order": "stone"} written in toml is name = "point" ; order = "stone".
+{"line": "line"} written in yaml is line: line.
+how is {"line": "line"} said in words? {"line": "line"} in words is in the record the field line has value line.
 in the record the field depth has value sound, the field line has value true, the field weight has value 2, the field width has value force in json is {"depth": "sound", "line": true, "weight": 2, "width": "force"}.
+size ; 41 written in json is {"size": 41}.
+count = false ; width = "light" written in json is {"count": false, "width": "light"}.
+kind: false ; value: true written in json is {"kind": false, "value": true}.
+как читается {"kind": false, "value": true}? {"kind": false, "value": true} в словах есть в записи поле kind имеет значение ложь, поле value имеет значение истина.
+{"kind": 57, "order": "field", "point": true} в словах есть в записи поле kind имеет значение 57, поле order имеет значение field, поле point имеет значение истина.
+{"name": "point", "order": "stone"} в письме csv есть name,order ; point,stone.
+{"line": "line"} в письме toml есть line = "line".
+{"depth": "sound", "line": true, "weight": 2, "width": "force"} в письме yaml есть depth: sound ; line: true ; weight: 2 ; width: force.
+in json this record is {"size": 41}.
+в записи поле size имеет значение 41 в json есть {"size": 41}.
+{"count": false, "width": "light"} in words is in the record the field count has value false, the field width has value light.
+{"kind": false, "value": true} written in csv is kind,value ; false,true.
+{"kind": 57, "order": "field", "point": true} written in toml is kind = 57 ; order = "field" ; point = true.
+{"name": "point", "order": "stone"} written in yaml is name: point ; order: stone.
+how is {"name": "point", "order": "stone"} said in words? {"name": "point", "order": "stone"} in words is in the record the field name has value point, the field order has value stone.
+in the record the field line has value line in json is {"line": "line"}.
+depth,line,weight,width ; sound,true,2,force written in json is {"depth": "sound", "line": true, "weight": 2, "width": "force"}.
+size = 41 written in json is {"size": 41}.
+count: false ; width: light written in json is {"count": false, "width": "light"}.
+как читается {"count": false, "width": "light"}? {"count": false, "width": "light"} в словах есть в записи поле count имеет значение ложь, поле width имеет значение light.
+{"kind": false, "value": true} в словах есть в записи поле kind имеет значение ложь, поле value имеет значение истина.
+{"kind": 57, "order": "field", "point": true} в письме csv есть kind,order,point ; 57,field,true.
+{"name": "point", "order": "stone"} в письме toml есть name = "point" ; order = "stone".
+{"line": "line"} в письме yaml есть line: line.
+in json this record is {"depth": "sound", "line": true, "weight": 2, "width": "force"}.
+в записи поле depth имеет значение sound, поле line имеет значение истина, поле weight имеет значение 2, поле width имеет значение force в json есть {"depth": "sound", "line": true, "weight": 2, "width": "force"}.
 {"size": 41} in words is in the record the field size has value 41.
+{"count": false, "width": "light"} written in csv is count,width ; false,light.
+{"kind": false, "value": true} written in toml is kind = false ; value = true.
+{"kind": 57, "order": "field", "point": true} written in yaml is kind: 57 ; order: field ; point: true.
+how is {"kind": 57, "order": "field", "point": true} said in words? {"kind": 57, "order": "field", "point": true} in words is in the record the field kind has value 57, the field order has value field, the field point has value true.
+in the record the field name has value point, the field order has value stone in json is {"name": "point", "order": "stone"}.
+line ; line written in json is {"line": "line"}.
+depth = "sound" ; line = true ; weight = 2 ; width = "force" written in json is {"depth": "sound", "line": true, "weight": 2, "width": "force"}.
+size: 41 written in json is {"size": 41}.
+как читается {"size": 41}? {"size": 41} в словах есть в записи поле size имеет значение 41.
+{"count": false, "width": "light"} в словах есть в записи поле count имеет значение ложь, поле width имеет значение light.
+{"kind": false, "value": true} в письме csv есть kind,value ; false,true.
+{"kind": 57, "order": "field", "point": true} в письме toml есть kind = 57 ; order = "field" ; point = true.
+{"name": "point", "order": "stone"} в письме yaml есть name: point ; order: stone.
+in json this record is {"line": "line"}.
+в записи поле line имеет значение line в json есть {"line": "line"}.
+{"depth": "sound", "line": true, "weight": 2, "width": "force"} in words is in the record the field depth has value sound, the field line has value true, the field weight has value 2, the field width has value force.
+{"size": 41} written in csv is size ; 41.
+{"count": false, "width": "light"} written in toml is count = false ; width = "light".
+{"kind": false, "value": true} written in yaml is kind: false ; value: true.
+how is {"kind": false, "value": true} said in words? {"kind": false, "value": true} in words is in the record the field kind has value false, the field value has value true.
+in the record the field kind has value 57, the field order has value field, the field point has value true in json is {"kind": 57, "order": "field", "point": true}.
+name,order ; point,stone written in json is {"name": "point", "order": "stone"}.
+line = "line" written in json is {"line": "line"}.
+depth: sound ; line: true ; weight: 2 ; width: force written in json is {"depth": "sound", "line": true, "weight": 2, "width": "force"}.
+как читается {"depth": "sound", "line": true, "weight": 2, "width": "force"}? {"depth": "sound", "line": true, "weight": 2, "width": "force"} в словах есть в записи поле depth имеет значение sound, поле line имеет значение истина, поле weight имеет значение 2, поле width имеет значение force.
+{"size": 41} в словах есть в записи поле size имеет значение 41.
 
-{"level": 45, "name": "number", "order": 51} written in toml is level = 45 ; name = "number" ; order = 51.
-level = 45 ; name = "number" ; order = 51 written in json is {"level": 45, "name": "number", "order": 51}.
-{"count": "number", "kind": 74, "size": 83} в письме toml есть count = "number" ; kind = 74 ; size = 83.
-{"count": "number", "kind": 74, "size": 83} written in csv is count,kind,size ; number,74,83.
-order ; false written in json is {"order": false}.
-{"order": false} в письме csv есть order ; false.
-{"kind": false, "level": 33, "size": 7} in words is in the record the field kind has value false, the field level has value 33, the field size has value 7.
-in the record the field weight has value true in json is {"weight": true}.
-{"size": "force"} в словах есть в записи поле size имеет значение force.
-в записи поле count имеет значение stone, поле name имеет значение 74, поле order имеет значение number, поле weight имеет значение истина в json есть {"count": "stone", "name": 74, "order": "number", "weight": true}.
-how is {"depth": 51} said in words? {"depth": 51} in words is in the record the field depth has value 51.
-как читается {"count": 54, "level": false}? {"count": 54, "level": false} в словах есть в записи поле count имеет значение 54, поле level имеет значение ложь.
-in json this record is {"level": 45, "name": "number", "order": 51}.
-{"level": 45, "name": "number", "order": 51} written in yaml is level: 45 ; name: number ; order: 51.
-count: number ; kind: 74 ; size: 83 written in json is {"count": "number", "kind": 74, "size": 83}.
-{"count": "number", "kind": 74, "size": 83} в письме yaml есть count: number ; kind: 74 ; size: 83.
-{"order": false} written in toml is order = false.
-order = false written in json is {"order": false}.
-{"kind": false, "level": 33, "size": 7} в письме toml есть kind = false ; level = 33 ; size = 7.
-{"weight": true} written in csv is weight ; true.
-size ; force written in json is {"size": "force"}.
-{"count": "stone", "name": 74, "order": "number", "weight": true} в письме csv есть count,name,order,weight ; stone,74,number,true.
-{"depth": 51} in words is in the record the field depth has value 51.
-in the record the field count has value 54, the field level has value false in json is {"count": 54, "level": false}.
-{"width": "point"} в словах есть в записи поле width имеет значение point.
-в записи поле level имеет значение 45, поле name имеет значение number, поле order имеет значение 51 в json есть {"level": 45, "name": "number", "order": 51}.
-how is {"level": 45, "name": "number", "order": 51} said in words? {"level": 45, "name": "number", "order": 51} in words is in the record the field level has value 45, the field name has value number, the field order has value 51.
-как читается {"count": "number", "kind": 74, "size": 83}? {"count": "number", "kind": 74, "size": 83} в словах есть в записи поле count имеет значение number, поле kind имеет значение 74, поле size имеет значение 83.
-in json this record is {"order": false}.
-{"order": false} written in yaml is order: false.
-kind: false ; level: 33 ; size: 7 written in json is {"kind": false, "level": 33, "size": 7}.
-{"weight": true} в письме yaml есть weight: true.
-{"size": "force"} written in toml is size = "force".
-count = "stone" ; name = 74 ; order = "number" ; weight = true written in json is {"count": "stone", "name": 74, "order": "number", "weight": true}.
-{"depth": 51} в письме toml есть depth = 51.
-{"count": 54, "level": false} written in csv is count,level ; 54,false.
-width ; point written in json is {"width": "point"}.
-{"level": 45, "name": "number", "order": 51} в письме csv есть level,name,order ; 45,number,51.
-{"level": 45, "name": "number", "order": 51} in words is in the record the field level has value 45, the field name has value number, the field order has value 51.
-in the record the field count has value number, the field kind has value 74, the field size has value 83 in json is {"count": "number", "kind": 74, "size": 83}.
-{"count": "number", "kind": 74, "size": 83} в словах есть в записи поле count имеет значение number, поле kind имеет значение 74, поле size имеет значение 83.
-в записи поле order имеет значение ложь в json есть {"order": false}.
-how is {"order": false} said in words? {"order": false} in words is in the record the field order has value false.
-как читается {"kind": false, "level": 33, "size": 7}? {"kind": false, "level": 33, "size": 7} в словах есть в записи поле kind имеет значение ложь, поле level имеет значение 33, поле size имеет значение 7.
-in json this record is {"size": "force"}.
-{"count": "stone", "name": 74, "order": "number", "weight": true} written in yaml is count: stone ; name: 74 ; order: number ; weight: true.
-depth: 51 written in json is {"depth": 51}.
-{"count": 54, "level": false} в письме yaml есть count: 54 ; level: false.
-{"width": "point"} written in toml is width = "point".
-level = 45 ; name = "number" ; order = 51 written in json is {"level": 45, "name": "number", "order": 51}.
-{"level": 45, "name": "number", "order": 51} в письме toml есть level = 45 ; name = "number" ; order = 51.
-{"count": "number", "kind": 74, "size": 83} written in csv is count,kind,size ; number,74,83.
-count,kind,size ; number,74,83 written in json is {"count": "number", "kind": 74, "size": 83}.
-{"order": false} в письме csv есть order ; false.
-{"order": false} in words is in the record the field order has value false.
-in the record the field kind has value false, the field level has value 33, the field size has value 7 in json is {"kind": false, "level": 33, "size": 7}.
-{"weight": true} в словах есть в записи поле weight имеет значение истина.
-в записи поле size имеет значение force в json есть {"size": "force"}.
-how is {"count": "stone", "name": 74, "order": "number", "weight": true} said in words? {"count": "stone", "name": 74, "order": "number", "weight": true} in words is in the record the field count has value stone, the field name has value 74, the field order has value number, the field weight has value true.
-как читается {"depth": 51}? {"depth": 51} в словах есть в записи поле depth имеет значение 51.
-in json this record is {"width": "point"}.
-{"level": 45, "name": "number", "order": 51} written in yaml is level: 45 ; name: number ; order: 51.
-level: 45 ; name: number ; order: 51 written in json is {"level": 45, "name": "number", "order": 51}.
-{"count": "number", "kind": 74, "size": 83} в письме yaml есть count: number ; kind: 74 ; size: 83.
-{"count": "number", "kind": 74, "size": 83} written in toml is count = "number" ; kind = 74 ; size = 83.
-order = false written in json is {"order": false}.
-{"order": false} в письме toml есть order = false.
-{"kind": false, "level": 33, "size": 7} written in csv is kind,level,size ; false,33,7.
-weight ; true written in json is {"weight": true}.
-{"size": "force"} в письме csv есть size ; force.
-{"count": "stone", "name": 74, "order": "number", "weight": true} in words is in the record the field count has value stone, the field name has value 74, the field order has value number, the field weight has value true.
-in the record the field depth has value 51 in json is {"depth": 51}.
-{"count": 54, "level": false} в словах есть в записи поле count имеет значение 54, поле level имеет значение ложь.
-в записи поле width имеет значение point в json есть {"width": "point"}.
-how is {"level": 45, "name": "number", "order": 51} said in words? {"level": 45, "name": "number", "order": 51} in words is in the record the field level has value 45, the field name has value number, the field order has value 51.
-как читается {"level": 45, "name": "number", "order": 51}? {"level": 45, "name": "number", "order": 51} в словах есть в записи поле level имеет значение 45, поле name имеет значение number, поле order имеет значение 51.
-in json this record is {"count": "number", "kind": 74, "size": 83}.
-{"order": false} written in yaml is order: false.
-order: false written in json is {"order": false}.
-{"kind": false, "level": 33, "size": 7} в письме yaml есть kind: false ; level: 33 ; size: 7.
-{"weight": true} written in toml is weight = true.
-size = "force" written in json is {"size": "force"}.
-{"count": "stone", "name": 74, "order": "number", "weight": true} в письме toml есть count = "stone" ; name = 74 ; order = "number" ; weight = true.
-{"depth": 51} written in csv is depth ; 51.
-count,level ; 54,false written in json is {"count": 54, "level": false}.
-{"width": "point"} в письме csv есть width ; point.
-{"level": 45, "name": "number", "order": 51} in words is in the record the field level has value 45, the field name has value number, the field order has value 51.
-in the record the field level has value 45, the field name has value number, the field order has value 51 in json is {"level": 45, "name": "number", "order": 51}.
-{"count": "number", "kind": 74, "size": 83} в словах есть в записи поле count имеет значение number, поле kind имеет значение 74, поле size имеет значение 83.
-в записи поле count имеет значение number, поле kind имеет значение 74, поле size имеет значение 83 в json есть {"count": "number", "kind": 74, "size": 83}.
-how is {"order": false} said in words? {"order": false} in words is in the record the field order has value false.
-как читается {"order": false}? {"order": false} в словах есть в записи поле order имеет значение ложь.
-in json this record is {"weight": true}.
-{"size": "force"} written in yaml is size: force.
-count: stone ; name: 74 ; order: number ; weight: true written in json is {"count": "stone", "name": 74, "order": "number", "weight": true}.
-{"depth": 51} в письме yaml есть depth: 51.
-{"count": 54, "level": false} written in toml is count = 54 ; level = false.
-width = "point" written in json is {"width": "point"}.
-{"level": 45, "name": "number", "order": 51} в письме toml есть level = 45 ; name = "number" ; order = 51.
-{"level": 45, "name": "number", "order": 51} written in csv is level,name,order ; 45,number,51.
-count,kind,size ; number,74,83 written in json is {"count": "number", "kind": 74, "size": 83}.
-{"count": "number", "kind": 74, "size": 83} в письме csv есть count,kind,size ; number,74,83.
-{"order": false} in words is in the record the field order has value false.
-in the record the field order has value false in json is {"order": false}.
-{"kind": false, "level": 33, "size": 7} в словах есть в записи поле kind имеет значение ложь, поле level имеет значение 33, поле size имеет значение 7.
-в записи поле weight имеет значение истина в json есть {"weight": true}.
-how is {"size": "force"} said in words? {"size": "force"} in words is in the record the field size has value force.
-как читается {"count": "stone", "name": 74, "order": "number", "weight": true}? {"count": "stone", "name": 74, "order": "number", "weight": true} в словах есть в записи поле count имеет значение stone, поле name имеет значение 74, поле order имеет значение number, поле weight имеет значение истина.
-in json this record is {"count": 54, "level": false}.
-{"width": "point"} written in yaml is width: point.
-level: 45 ; name: number ; order: 51 written in json is {"level": 45, "name": "number", "order": 51}.
-{"level": 45, "name": "number", "order": 51} в письме yaml есть level: 45 ; name: number ; order: 51.
-{"count": "number", "kind": 74, "size": 83} written in toml is count = "number" ; kind = 74 ; size = 83.
-count = "number" ; kind = 74 ; size = 83 written in json is {"count": "number", "kind": 74, "size": 83}.
-{"order": false} в письме toml есть order = false.
-{"order": false} written in csv is order ; false.
-kind,level,size ; false,33,7 written in json is {"kind": false, "level": 33, "size": 7}.
-{"weight": true} в письме csv есть weight ; true.
-{"size": "force"} in words is in the record the field size has value force.
-in the record the field count has value stone, the field name has value 74, the field order has value number, the field weight has value true in json is {"count": "stone", "name": 74, "order": "number", "weight": true}.
-{"depth": 51} в словах есть в записи поле depth имеет значение 51.
-в записи поле count имеет значение 54, поле level имеет значение ложь в json есть {"count": 54, "level": false}.
-how is {"width": "point"} said in words? {"width": "point"} in words is in the record the field width has value point.
-как читается {"level": 45, "name": "number", "order": 51}? {"level": 45, "name": "number", "order": 51} в словах есть в записи поле level имеет значение 45, поле name имеет значение number, поле order имеет значение 51.
-in json this record is {"count": "number", "kind": 74, "size": 83}.
-{"count": "number", "kind": 74, "size": 83} written in yaml is count: number ; kind: 74 ; size: 83.
-order: false written in json is {"order": false}.
-{"order": false} в письме yaml есть order: false.
 {"kind": false, "level": 33, "size": 7} written in toml is kind = false ; level = 33 ; size = 7.
 weight = true written in json is {"weight": true}.
 {"size": "force"} в письме toml есть size = "force".
@@ -760,60 +424,12 @@ weight = true written in json is {"weight": true}.
 depth ; 51 written in json is {"depth": 51}.
 {"count": 54, "level": false} в письме csv есть count,level ; 54,false.
 {"width": "point"} in words is in the record the field width has value point.
-in the record the field level has value 45, the field name has value number, the field order has value 51 in json is {"level": 45, "name": "number", "order": 51}.
-{"level": 45, "name": "number", "order": 51} в словах есть в записи поле level имеет значение 45, поле name имеет значение number, поле order имеет значение 51.
-в записи поле count имеет значение number, поле kind имеет значение 74, поле size имеет значение 83 в json есть {"count": "number", "kind": 74, "size": 83}.
-how is {"count": "number", "kind": 74, "size": 83} said in words? {"count": "number", "kind": 74, "size": 83} in words is in the record the field count has value number, the field kind has value 74, the field size has value 83.
-как читается {"order": false}? {"order": false} в словах есть в записи поле order имеет значение ложь.
-in json this record is {"kind": false, "level": 33, "size": 7}.
-{"weight": true} written in yaml is weight: true.
-size: force written in json is {"size": "force"}.
-{"count": "stone", "name": 74, "order": "number", "weight": true} в письме yaml есть count: stone ; name: 74 ; order: number ; weight: true.
-{"depth": 51} written in toml is depth = 51.
-count = 54 ; level = false written in json is {"count": 54, "level": false}.
-{"width": "point"} в письме toml есть width = "point".
-{"level": 45, "name": "number", "order": 51} written in csv is level,name,order ; 45,number,51.
-level,name,order ; 45,number,51 written in json is {"level": 45, "name": "number", "order": 51}.
-{"count": "number", "kind": 74, "size": 83} в письме csv есть count,kind,size ; number,74,83.
-{"count": "number", "kind": 74, "size": 83} in words is in the record the field count has value number, the field kind has value 74, the field size has value 83.
-in the record the field order has value false in json is {"order": false}.
-{"order": false} в словах есть в записи поле order имеет значение ложь.
-в записи поле kind имеет значение ложь, поле level имеет значение 33, поле size имеет значение 7 в json есть {"kind": false, "level": 33, "size": 7}.
-how is {"weight": true} said in words? {"weight": true} in words is in the record the field weight has value true.
-как читается {"size": "force"}? {"size": "force"} в словах есть в записи поле size имеет значение force.
-in json this record is {"depth": 51}.
-{"count": 54, "level": false} written in yaml is count: 54 ; level: false.
-width: point written in json is {"width": "point"}.
-{"level": 45, "name": "number", "order": 51} в письме yaml есть level: 45 ; name: number ; order: 51.
-{"level": 45, "name": "number", "order": 51} written in toml is level = 45 ; name = "number" ; order = 51.
-count = "number" ; kind = 74 ; size = 83 written in json is {"count": "number", "kind": 74, "size": 83}.
-{"count": "number", "kind": 74, "size": 83} в письме toml есть count = "number" ; kind = 74 ; size = 83.
-{"order": false} written in csv is order ; false.
-order ; false written in json is {"order": false}.
-{"kind": false, "level": 33, "size": 7} в письме csv есть kind,level,size ; false,33,7.
-{"weight": true} in words is in the record the field weight has value true.
-in the record the field size has value force in json is {"size": "force"}.
-{"count": "stone", "name": 74, "order": "number", "weight": true} в словах есть в записи поле count имеет значение stone, поле name имеет значение 74, поле order имеет значение number, поле weight имеет значение истина.
-в записи поле depth имеет значение 51 в json есть {"depth": 51}.
-how is {"count": 54, "level": false} said in words? {"count": 54, "level": false} in words is in the record the field count has value 54, the field level has value false.
-как читается {"width": "point"}? {"width": "point"} в словах есть в записи поле width имеет значение point.
-in json this record is {"level": 45, "name": "number", "order": 51}.
-{"count": "number", "kind": 74, "size": 83} written in yaml is count: number ; kind: 74 ; size: 83.
-count: number ; kind: 74 ; size: 83 written in json is {"count": "number", "kind": 74, "size": 83}.
-{"order": false} в письме yaml есть order: false.
-{"order": false} written in toml is order = false.
-kind = false ; level = 33 ; size = 7 written in json is {"kind": false, "level": 33, "size": 7}.
-{"weight": true} в письме toml есть weight = true.
-{"size": "force"} written in csv is size ; force.
-count,name,order,weight ; stone,74,number,true written in json is {"count": "stone", "name": 74, "order": "number", "weight": true}.
-{"depth": 51} в письме csv есть depth ; 51.
-{"count": 54, "level": false} in words is in the record the field count has value 54, the field level has value false.
-in the record the field width has value point in json is {"width": "point"}.
-{"level": 45, "name": "number", "order": 51} в словах есть в записи поле level имеет значение 45, поле name имеет значение number, поле order имеет значение 51.
-в записи поле level имеет значение 45, поле name имеет значение number, поле order имеет значение 51 в json есть {"level": 45, "name": "number", "order": 51}.
-how is {"count": "number", "kind": 74, "size": 83} said in words? {"count": "number", "kind": 74, "size": 83} in words is in the record the field count has value number, the field kind has value 74, the field size has value 83.
-как читается {"count": "number", "kind": 74, "size": 83}? {"count": "number", "kind": 74, "size": 83} в словах есть в записи поле count имеет значение number, поле kind имеет значение 74, поле size имеет значение 83.
-in json this record is {"order": false}.
+in the record the field kind has value false, the field level has value 33, the field size has value 7 in json is {"kind": false, "level": 33, "size": 7}.
+{"weight": true} в словах есть в записи поле weight имеет значение истина.
+в записи поле size имеет значение force в json есть {"size": "force"}.
+how is {"count": "stone", "name": 74, "order": "number", "weight": true} said in words? {"count": "stone", "name": 74, "order": "number", "weight": true} in words is in the record the field count has value stone, the field name has value 74, the field order has value number, the field weight has value true.
+как читается {"depth": 51}? {"depth": 51} в словах есть в записи поле depth имеет значение 51.
+in json this record is {"width": "point"}.
 {"kind": false, "level": 33, "size": 7} written in yaml is kind: false ; level: 33 ; size: 7.
 weight: true written in json is {"weight": true}.
 {"size": "force"} в письме yaml есть size: force.
@@ -821,12 +437,92 @@ weight: true written in json is {"weight": true}.
 depth = 51 written in json is {"depth": 51}.
 {"count": 54, "level": false} в письме toml есть count = 54 ; level = false.
 {"width": "point"} written in csv is width ; point.
-level,name,order ; 45,number,51 written in json is {"level": 45, "name": "number", "order": 51}.
-{"level": 45, "name": "number", "order": 51} в письме csv есть level,name,order ; 45,number,51.
-{"count": "number", "kind": 74, "size": 83} in words is in the record the field count has value number, the field kind has value 74, the field size has value 83.
-in the record the field count has value number, the field kind has value 74, the field size has value 83 in json is {"count": "number", "kind": 74, "size": 83}.
-{"order": false} в словах есть в записи поле order имеет значение ложь.
-в записи поле order имеет значение ложь в json есть {"order": false}.
+kind,level,size ; false,33,7 written in json is {"kind": false, "level": 33, "size": 7}.
+{"weight": true} в письме csv есть weight ; true.
+{"size": "force"} in words is in the record the field size has value force.
+in the record the field count has value stone, the field name has value 74, the field order has value number, the field weight has value true in json is {"count": "stone", "name": 74, "order": "number", "weight": true}.
+{"depth": 51} в словах есть в записи поле depth имеет значение 51.
+в записи поле count имеет значение 54, поле level имеет значение ложь в json есть {"count": 54, "level": false}.
+how is {"width": "point"} said in words? {"width": "point"} in words is in the record the field width has value point.
+как читается {"kind": false, "level": 33, "size": 7}? {"kind": false, "level": 33, "size": 7} в словах есть в записи поле kind имеет значение ложь, поле level имеет значение 33, поле size имеет значение 7.
+in json this record is {"size": "force"}.
+{"count": "stone", "name": 74, "order": "number", "weight": true} written in yaml is count: stone ; name: 74 ; order: number ; weight: true.
+depth: 51 written in json is {"depth": 51}.
+{"count": 54, "level": false} в письме yaml есть count: 54 ; level: false.
+{"width": "point"} written in toml is width = "point".
+kind = false ; level = 33 ; size = 7 written in json is {"kind": false, "level": 33, "size": 7}.
+{"weight": true} в письме toml есть weight = true.
+{"size": "force"} written in csv is size ; force.
+count,name,order,weight ; stone,74,number,true written in json is {"count": "stone", "name": 74, "order": "number", "weight": true}.
+{"depth": 51} в письме csv есть depth ; 51.
+{"count": 54, "level": false} in words is in the record the field count has value 54, the field level has value false.
+in the record the field width has value point in json is {"width": "point"}.
+{"kind": false, "level": 33, "size": 7} в словах есть в записи поле kind имеет значение ложь, поле level имеет значение 33, поле size имеет значение 7.
+в записи поле weight имеет значение истина в json есть {"weight": true}.
+how is {"size": "force"} said in words? {"size": "force"} in words is in the record the field size has value force.
+как читается {"count": "stone", "name": 74, "order": "number", "weight": true}? {"count": "stone", "name": 74, "order": "number", "weight": true} в словах есть в записи поле count имеет значение stone, поле name имеет значение 74, поле order имеет значение number, поле weight имеет значение истина.
+in json this record is {"count": 54, "level": false}.
+{"width": "point"} written in yaml is width: point.
+kind: false ; level: 33 ; size: 7 written in json is {"kind": false, "level": 33, "size": 7}.
+{"weight": true} в письме yaml есть weight: true.
+{"size": "force"} written in toml is size = "force".
+count = "stone" ; name = 74 ; order = "number" ; weight = true written in json is {"count": "stone", "name": 74, "order": "number", "weight": true}.
+{"depth": 51} в письме toml есть depth = 51.
+{"count": 54, "level": false} written in csv is count,level ; 54,false.
+width ; point written in json is {"width": "point"}.
+{"kind": false, "level": 33, "size": 7} в письме csv есть kind,level,size ; false,33,7.
+{"weight": true} in words is in the record the field weight has value true.
+in the record the field size has value force in json is {"size": "force"}.
+{"count": "stone", "name": 74, "order": "number", "weight": true} в словах есть в записи поле count имеет значение stone, поле name имеет значение 74, поле order имеет значение number, поле weight имеет значение истина.
+в записи поле depth имеет значение 51 в json есть {"depth": 51}.
+how is {"count": 54, "level": false} said in words? {"count": 54, "level": false} in words is in the record the field count has value 54, the field level has value false.
+как читается {"width": "point"}? {"width": "point"} в словах есть в записи поле width имеет значение point.
+in json this record is {"weight": true}.
+{"size": "force"} written in yaml is size: force.
+count: stone ; name: 74 ; order: number ; weight: true written in json is {"count": "stone", "name": 74, "order": "number", "weight": true}.
+{"depth": 51} в письме yaml есть depth: 51.
+{"count": 54, "level": false} written in toml is count = 54 ; level = false.
+width = "point" written in json is {"width": "point"}.
+{"kind": false, "level": 33, "size": 7} в письме toml есть kind = false ; level = 33 ; size = 7.
+{"weight": true} written in csv is weight ; true.
+size ; force written in json is {"size": "force"}.
+{"count": "stone", "name": 74, "order": "number", "weight": true} в письме csv есть count,name,order,weight ; stone,74,number,true.
+{"depth": 51} in words is in the record the field depth has value 51.
+in the record the field count has value 54, the field level has value false in json is {"count": 54, "level": false}.
+{"width": "point"} в словах есть в записи поле width имеет значение point.
+в записи поле kind имеет значение ложь, поле level имеет значение 33, поле size имеет значение 7 в json есть {"kind": false, "level": 33, "size": 7}.
+how is {"weight": true} said in words? {"weight": true} in words is in the record the field weight has value true.
+как читается {"size": "force"}? {"size": "force"} в словах есть в записи поле size имеет значение force.
+in json this record is {"depth": 51}.
+{"count": 54, "level": false} written in yaml is count: 54 ; level: false.
+width: point written in json is {"width": "point"}.
+{"kind": false, "level": 33, "size": 7} в письме yaml есть kind: false ; level: 33 ; size: 7.
+{"weight": true} written in toml is weight = true.
+size = "force" written in json is {"size": "force"}.
+{"count": "stone", "name": 74, "order": "number", "weight": true} в письме toml есть count = "stone" ; name = 74 ; order = "number" ; weight = true.
+{"depth": 51} written in csv is depth ; 51.
+count,level ; 54,false written in json is {"count": 54, "level": false}.
+{"width": "point"} в письме csv есть width ; point.
+{"kind": false, "level": 33, "size": 7} in words is in the record the field kind has value false, the field level has value 33, the field size has value 7.
+in the record the field weight has value true in json is {"weight": true}.
+{"size": "force"} в словах есть в записи поле size имеет значение force.
+в записи поле count имеет значение stone, поле name имеет значение 74, поле order имеет значение number, поле weight имеет значение истина в json есть {"count": "stone", "name": 74, "order": "number", "weight": true}.
+how is {"depth": 51} said in words? {"depth": 51} in words is in the record the field depth has value 51.
+как читается {"count": 54, "level": false}? {"count": 54, "level": false} в словах есть в записи поле count имеет значение 54, поле level имеет значение ложь.
+in json this record is {"kind": false, "level": 33, "size": 7}.
+{"weight": true} written in yaml is weight: true.
+size: force written in json is {"size": "force"}.
+{"count": "stone", "name": 74, "order": "number", "weight": true} в письме yaml есть count: stone ; name: 74 ; order: number ; weight: true.
+{"depth": 51} written in toml is depth = 51.
+count = 54 ; level = false written in json is {"count": 54, "level": false}.
+{"width": "point"} в письме toml есть width = "point".
+{"kind": false, "level": 33, "size": 7} written in csv is kind,level,size ; false,33,7.
+weight ; true written in json is {"weight": true}.
+{"size": "force"} в письме csv есть size ; force.
+{"count": "stone", "name": 74, "order": "number", "weight": true} in words is in the record the field count has value stone, the field name has value 74, the field order has value number, the field weight has value true.
+in the record the field depth has value 51 in json is {"depth": 51}.
+{"count": 54, "level": false} в словах есть в записи поле count имеет значение 54, поле level имеет значение ложь.
+в записи поле width имеет значение point в json есть {"width": "point"}.
 how is {"kind": false, "level": 33, "size": 7} said in words? {"kind": false, "level": 33, "size": 7} in words is in the record the field kind has value false, the field level has value 33, the field size has value 7.
 как читается {"weight": true}? {"weight": true} в словах есть в записи поле weight имеет значение истина.
 in json this record is {"count": "stone", "name": 74, "order": "number", "weight": true}.
@@ -834,208 +530,112 @@ in json this record is {"count": "stone", "name": 74, "order": "number", "weight
 count: 54 ; level: false written in json is {"count": 54, "level": false}.
 {"width": "point"} в письме yaml есть width: point.
 
-{"level": 45, "name": "number", "order": 51} в словах есть в записи поле level имеет значение 45, поле name имеет значение number, поле order имеет значение 51.
-как читается {"level": 45, "name": "number", "order": 51}? {"level": 45, "name": "number", "order": 51} в словах есть в записи поле level имеет значение 45, поле name имеет значение number, поле order имеет значение 51.
-count: number ; kind: 74 ; size: 83 written in json is {"count": "number", "kind": 74, "size": 83}.
-order = false written in json is {"order": false}.
-order ; false written in json is {"order": false}.
-in the record the field depth has value false, the field order has value false, the field value has value 96 in json is {"depth": false, "order": false, "value": 96}.
-how is {"name": "field"} said in words? {"name": "field"} in words is in the record the field name has value field.
-{"size": 47} written in yaml is size: 47.
-{"size": "form"} written in toml is size = "form".
-{"count": false, "kind": 61, "name": "sound", "width": "circle"} written in csv is count,kind,name,width ; false,61,sound,circle.
-{"level": true, "weight": false} in words is in the record the field level has value true, the field weight has value false.
-в записи поле level имеет значение 45, поле name имеет значение number, поле order имеет значение 51 в json есть {"level": 45, "name": "number", "order": 51}.
-in json this record is {"count": "number", "kind": 74, "size": 83}.
-{"count": "number", "kind": 74, "size": 83} в письме yaml есть count: number ; kind: 74 ; size: 83.
-{"order": false} в письме toml есть order = false.
-{"order": false} в письме csv есть order ; false.
 {"depth": false, "order": false, "value": 96} в словах есть в записи поле depth имеет значение ложь, поле order имеет значение ложь, поле value имеет значение 96.
 как читается {"name": "field"}? {"name": "field"} в словах есть в записи поле name имеет значение field.
 size: 47 written in json is {"size": 47}.
 size = "form" written in json is {"size": "form"}.
 count,kind,name,width ; false,61,sound,circle written in json is {"count": false, "kind": 61, "name": "sound", "width": "circle"}.
 in the record the field level has value true, the field weight has value false in json is {"level": true, "weight": false}.
-how is {"level": 45, "name": "number", "order": 51} said in words? {"level": 45, "name": "number", "order": 51} in words is in the record the field level has value 45, the field name has value number, the field order has value 51.
-{"count": "number", "kind": 74, "size": 83} written in yaml is count: number ; kind: 74 ; size: 83.
-{"count": "number", "kind": 74, "size": 83} written in toml is count = "number" ; kind = 74 ; size = 83.
-{"order": false} written in csv is order ; false.
-{"order": false} in words is in the record the field order has value false.
-в записи поле depth имеет значение ложь, поле order имеет значение ложь, поле value имеет значение 96 в json есть {"depth": false, "order": false, "value": 96}.
-in json this record is {"count": false}.
-{"size": 47} в письме yaml есть size: 47.
-{"size": "form"} в письме toml есть size = "form".
-{"count": false, "kind": 61, "name": "sound", "width": "circle"} в письме csv есть count,kind,name,width ; false,61,sound,circle.
-{"level": true, "weight": false} в словах есть в записи поле level имеет значение истина, поле weight имеет значение ложь.
-как читается {"level": 45, "name": "number", "order": 51}? {"level": 45, "name": "number", "order": 51} в словах есть в записи поле level имеет значение 45, поле name имеет значение number, поле order имеет значение 51.
-count: number ; kind: 74 ; size: 83 written in json is {"count": "number", "kind": 74, "size": 83}.
-count = "number" ; kind = 74 ; size = 83 written in json is {"count": "number", "kind": 74, "size": 83}.
-order ; false written in json is {"order": false}.
-in the record the field order has value false in json is {"order": false}.
 how is {"depth": false, "order": false, "value": 96} said in words? {"depth": false, "order": false, "value": 96} in words is in the record the field depth has value false, the field order has value false, the field value has value 96.
 {"count": false} written in yaml is count: false.
 {"size": 47} written in toml is size = 47.
 {"size": "form"} written in csv is size ; form.
 {"count": false, "kind": 61, "name": "sound", "width": "circle"} in words is in the record the field count has value false, the field kind has value 61, the field name has value sound, the field width has value circle.
 в записи поле level имеет значение истина, поле weight имеет значение ложь в json есть {"level": true, "weight": false}.
-in json this record is {"level": 45, "name": "number", "order": 51}.
-{"count": "number", "kind": 74, "size": 83} в письме yaml есть count: number ; kind: 74 ; size: 83.
-{"count": "number", "kind": 74, "size": 83} в письме toml есть count = "number" ; kind = 74 ; size = 83.
-{"order": false} в письме csv есть order ; false.
-{"order": false} в словах есть в записи поле order имеет значение ложь.
-как читается {"depth": false, "order": false, "value": 96}? {"depth": false, "order": false, "value": 96} в словах есть в записи поле depth имеет значение ложь, поле order имеет значение ложь, поле value имеет значение 96.
-count: false written in json is {"count": false}.
-size = 47 written in json is {"size": 47}.
-size ; form written in json is {"size": "form"}.
-in the record the field count has value false, the field kind has value 61, the field name has value sound, the field width has value circle in json is {"count": false, "kind": 61, "name": "sound", "width": "circle"}.
-how is {"level": true, "weight": false} said in words? {"level": true, "weight": false} in words is in the record the field level has value true, the field weight has value false.
-{"level": 45, "name": "number", "order": 51} written in yaml is level: 45 ; name: number ; order: 51.
-{"count": "number", "kind": 74, "size": 83} written in toml is count = "number" ; kind = 74 ; size = 83.
-{"count": "number", "kind": 74, "size": 83} written in csv is count,kind,size ; number,74,83.
-{"order": false} in words is in the record the field order has value false.
-в записи поле order имеет значение ложь в json есть {"order": false}.
 in json this record is {"name": "field"}.
 {"count": false} в письме yaml есть count: false.
 {"size": 47} в письме toml есть size = 47.
 {"size": "form"} в письме csv есть size ; form.
 {"count": false, "kind": 61, "name": "sound", "width": "circle"} в словах есть в записи поле count имеет значение ложь, поле kind имеет значение 61, поле name имеет значение sound, поле width имеет значение circle.
 как читается {"level": true, "weight": false}? {"level": true, "weight": false} в словах есть в записи поле level имеет значение истина, поле weight имеет значение ложь.
-level: 45 ; name: number ; order: 51 written in json is {"level": 45, "name": "number", "order": 51}.
-count = "number" ; kind = 74 ; size = 83 written in json is {"count": "number", "kind": 74, "size": 83}.
-count,kind,size ; number,74,83 written in json is {"count": "number", "kind": 74, "size": 83}.
-in the record the field order has value false in json is {"order": false}.
-how is {"order": false} said in words? {"order": false} in words is in the record the field order has value false.
-{"name": "field"} written in yaml is name: field.
-{"count": false} written in toml is count = false.
-{"size": 47} written in csv is size ; 47.
-{"size": "form"} in words is in the record the field size has value form.
-в записи поле count имеет значение ложь, поле kind имеет значение 61, поле name имеет значение sound, поле width имеет значение circle в json есть {"count": false, "kind": 61, "name": "sound", "width": "circle"}.
-in json this record is {"level": 45, "name": "number", "order": 51}.
-{"level": 45, "name": "number", "order": 51} в письме yaml есть level: 45 ; name: number ; order: 51.
-{"count": "number", "kind": 74, "size": 83} в письме toml есть count = "number" ; kind = 74 ; size = 83.
-{"count": "number", "kind": 74, "size": 83} в письме csv есть count,kind,size ; number,74,83.
-{"order": false} в словах есть в записи поле order имеет значение ложь.
-как читается {"order": false}? {"order": false} в словах есть в записи поле order имеет значение ложь.
 name: field written in json is {"name": "field"}.
 count = false written in json is {"count": false}.
 size ; 47 written in json is {"size": 47}.
 in the record the field size has value form in json is {"size": "form"}.
 how is {"count": false, "kind": 61, "name": "sound", "width": "circle"} said in words? {"count": false, "kind": 61, "name": "sound", "width": "circle"} in words is in the record the field count has value false, the field kind has value 61, the field name has value sound, the field width has value circle.
-{"level": 45, "name": "number", "order": 51} written in yaml is level: 45 ; name: number ; order: 51.
-{"level": 45, "name": "number", "order": 51} written in toml is level = 45 ; name = "number" ; order = 51.
-{"count": "number", "kind": 74, "size": 83} written in csv is count,kind,size ; number,74,83.
-{"count": "number", "kind": 74, "size": 83} in words is in the record the field count has value number, the field kind has value 74, the field size has value 83.
-в записи поле order имеет значение ложь в json есть {"order": false}.
-in json this record is {"depth": false, "order": false, "value": 96}.
-{"name": "field"} в письме yaml есть name: field.
-{"count": false} в письме toml есть count = false.
-{"size": 47} в письме csv есть size ; 47.
-{"size": "form"} в словах есть в записи поле size имеет значение form.
-как читается {"count": false, "kind": 61, "name": "sound", "width": "circle"}? {"count": false, "kind": 61, "name": "sound", "width": "circle"} в словах есть в записи поле count имеет значение ложь, поле kind имеет значение 61, поле name имеет значение sound, поле width имеет значение circle.
-level: 45 ; name: number ; order: 51 written in json is {"level": 45, "name": "number", "order": 51}.
-level = 45 ; name = "number" ; order = 51 written in json is {"level": 45, "name": "number", "order": 51}.
-count,kind,size ; number,74,83 written in json is {"count": "number", "kind": 74, "size": 83}.
-in the record the field count has value number, the field kind has value 74, the field size has value 83 in json is {"count": "number", "kind": 74, "size": 83}.
-how is {"order": false} said in words? {"order": false} in words is in the record the field order has value false.
 {"depth": false, "order": false, "value": 96} written in yaml is depth: false ; order: false ; value: 96.
 {"name": "field"} written in toml is name = "field".
 {"count": false} written in csv is count ; false.
 {"size": 47} in words is in the record the field size has value 47.
 в записи поле size имеет значение form в json есть {"size": "form"}.
 in json this record is {"level": true, "weight": false}.
-{"level": 45, "name": "number", "order": 51} в письме yaml есть level: 45 ; name: number ; order: 51.
-{"level": 45, "name": "number", "order": 51} в письме toml есть level = 45 ; name = "number" ; order = 51.
-{"count": "number", "kind": 74, "size": 83} в письме csv есть count,kind,size ; number,74,83.
-{"count": "number", "kind": 74, "size": 83} в словах есть в записи поле count имеет значение number, поле kind имеет значение 74, поле size имеет значение 83.
-как читается {"order": false}? {"order": false} в словах есть в записи поле order имеет значение ложь.
-depth: false ; order: false ; value: 96 written in json is {"depth": false, "order": false, "value": 96}.
-name = "field" written in json is {"name": "field"}.
-count ; false written in json is {"count": false}.
-in the record the field size has value 47 in json is {"size": 47}.
-how is {"size": "form"} said in words? {"size": "form"} in words is in the record the field size has value form.
-{"level": true, "weight": false} written in yaml is level: true ; weight: false.
-{"level": 45, "name": "number", "order": 51} written in toml is level = 45 ; name = "number" ; order = 51.
-{"level": 45, "name": "number", "order": 51} written in csv is level,name,order ; 45,number,51.
-{"count": "number", "kind": 74, "size": 83} in words is in the record the field count has value number, the field kind has value 74, the field size has value 83.
-в записи поле count имеет значение number, поле kind имеет значение 74, поле size имеет значение 83 в json есть {"count": "number", "kind": 74, "size": 83}.
-in json this record is {"order": false}.
 {"depth": false, "order": false, "value": 96} в письме yaml есть depth: false ; order: false ; value: 96.
 {"name": "field"} в письме toml есть name = "field".
 {"count": false} в письме csv есть count ; false.
 {"size": 47} в словах есть в записи поле size имеет значение 47.
 как читается {"size": "form"}? {"size": "form"} в словах есть в записи поле size имеет значение form.
 level: true ; weight: false written in json is {"level": true, "weight": false}.
-level = 45 ; name = "number" ; order = 51 written in json is {"level": 45, "name": "number", "order": 51}.
-level,name,order ; 45,number,51 written in json is {"level": 45, "name": "number", "order": 51}.
-in the record the field count has value number, the field kind has value 74, the field size has value 83 in json is {"count": "number", "kind": 74, "size": 83}.
-how is {"count": "number", "kind": 74, "size": 83} said in words? {"count": "number", "kind": 74, "size": 83} in words is in the record the field count has value number, the field kind has value 74, the field size has value 83.
-{"order": false} written in yaml is order: false.
-{"depth": false, "order": false, "value": 96} written in toml is depth = false ; order = false ; value = 96.
-{"name": "field"} written in csv is name ; field.
-{"count": false} in words is in the record the field count has value false.
-в записи поле size имеет значение 47 в json есть {"size": 47}.
-in json this record is {"count": false, "kind": 61, "name": "sound", "width": "circle"}.
-{"level": true, "weight": false} в письме yaml есть level: true ; weight: false.
-{"level": 45, "name": "number", "order": 51} в письме toml есть level = 45 ; name = "number" ; order = 51.
-{"level": 45, "name": "number", "order": 51} в письме csv есть level,name,order ; 45,number,51.
-{"count": "number", "kind": 74, "size": 83} в словах есть в записи поле count имеет значение number, поле kind имеет значение 74, поле size имеет значение 83.
-как читается {"count": "number", "kind": 74, "size": 83}? {"count": "number", "kind": 74, "size": 83} в словах есть в записи поле count имеет значение number, поле kind имеет значение 74, поле size имеет значение 83.
-order: false written in json is {"order": false}.
 depth = false ; order = false ; value = 96 written in json is {"depth": false, "order": false, "value": 96}.
 name ; field written in json is {"name": "field"}.
 in the record the field count has value false in json is {"count": false}.
 how is {"size": 47} said in words? {"size": 47} in words is in the record the field size has value 47.
 {"count": false, "kind": 61, "name": "sound", "width": "circle"} written in yaml is count: false ; kind: 61 ; name: sound ; width: circle.
 {"level": true, "weight": false} written in toml is level = true ; weight = false.
-{"level": 45, "name": "number", "order": 51} written in csv is level,name,order ; 45,number,51.
-{"level": 45, "name": "number", "order": 51} in words is in the record the field level has value 45, the field name has value number, the field order has value 51.
-в записи поле count имеет значение number, поле kind имеет значение 74, поле size имеет значение 83 в json есть {"count": "number", "kind": 74, "size": 83}.
-in json this record is {"order": false}.
-{"order": false} в письме yaml есть order: false.
-{"depth": false, "order": false, "value": 96} в письме toml есть depth = false ; order = false ; value = 96.
-{"name": "field"} в письме csv есть name ; field.
-{"count": false} в словах есть в записи поле count имеет значение ложь.
-как читается {"size": 47}? {"size": 47} в словах есть в записи поле size имеет значение 47.
-count: false ; kind: 61 ; name: sound ; width: circle written in json is {"count": false, "kind": 61, "name": "sound", "width": "circle"}.
-level = true ; weight = false written in json is {"level": true, "weight": false}.
-level,name,order ; 45,number,51 written in json is {"level": 45, "name": "number", "order": 51}.
-in the record the field level has value 45, the field name has value number, the field order has value 51 in json is {"level": 45, "name": "number", "order": 51}.
-how is {"count": "number", "kind": 74, "size": 83} said in words? {"count": "number", "kind": 74, "size": 83} in words is in the record the field count has value number, the field kind has value 74, the field size has value 83.
-{"order": false} written in yaml is order: false.
-{"order": false} written in toml is order = false.
 {"depth": false, "order": false, "value": 96} written in csv is depth,order,value ; false,false,96.
 {"name": "field"} in words is in the record the field name has value field.
 в записи поле count имеет значение ложь в json есть {"count": false}.
 in json this record is {"size": "form"}.
 {"count": false, "kind": 61, "name": "sound", "width": "circle"} в письме yaml есть count: false ; kind: 61 ; name: sound ; width: circle.
 {"level": true, "weight": false} в письме toml есть level = true ; weight = false.
-{"level": 45, "name": "number", "order": 51} в письме csv есть level,name,order ; 45,number,51.
-{"level": 45, "name": "number", "order": 51} в словах есть в записи поле level имеет значение 45, поле name имеет значение number, поле order имеет значение 51.
-как читается {"count": "number", "kind": 74, "size": 83}? {"count": "number", "kind": 74, "size": 83} в словах есть в записи поле count имеет значение number, поле kind имеет значение 74, поле size имеет значение 83.
-order: false written in json is {"order": false}.
-order = false written in json is {"order": false}.
-depth,order,value ; false,false,96 written in json is {"depth": false, "order": false, "value": 96}.
-in the record the field name has value field in json is {"name": "field"}.
-how is {"count": false} said in words? {"count": false} in words is in the record the field count has value false.
-{"size": "form"} written in yaml is size: form.
-{"count": false, "kind": 61, "name": "sound", "width": "circle"} written in toml is count = false ; kind = 61 ; name = "sound" ; width = "circle".
-{"level": true, "weight": false} written in csv is level,weight ; true,false.
-{"level": 45, "name": "number", "order": 51} in words is in the record the field level has value 45, the field name has value number, the field order has value 51.
-в записи поле level имеет значение 45, поле name имеет значение number, поле order имеет значение 51 в json есть {"level": 45, "name": "number", "order": 51}.
-in json this record is {"count": "number", "kind": 74, "size": 83}.
-{"order": false} в письме yaml есть order: false.
-{"order": false} в письме toml есть order = false.
 {"depth": false, "order": false, "value": 96} в письме csv есть depth,order,value ; false,false,96.
 {"name": "field"} в словах есть в записи поле name имеет значение field.
 как читается {"count": false}? {"count": false} в словах есть в записи поле count имеет значение ложь.
 size: form written in json is {"size": "form"}.
 count = false ; kind = 61 ; name = "sound" ; width = "circle" written in json is {"count": false, "kind": 61, "name": "sound", "width": "circle"}.
 level,weight ; true,false written in json is {"level": true, "weight": false}.
-in the record the field level has value 45, the field name has value number, the field order has value 51 in json is {"level": 45, "name": "number", "order": 51}.
-how is {"level": 45, "name": "number", "order": 51} said in words? {"level": 45, "name": "number", "order": 51} in words is in the record the field level has value 45, the field name has value number, the field order has value 51.
-{"count": "number", "kind": 74, "size": 83} written in yaml is count: number ; kind: 74 ; size: 83.
-{"order": false} written in toml is order = false.
-{"order": false} written in csv is order ; false.
+in the record the field depth has value false, the field order has value false, the field value has value 96 in json is {"depth": false, "order": false, "value": 96}.
+how is {"name": "field"} said in words? {"name": "field"} in words is in the record the field name has value field.
+{"size": 47} written in yaml is size: 47.
+{"size": "form"} written in toml is size = "form".
+{"count": false, "kind": 61, "name": "sound", "width": "circle"} written in csv is count,kind,name,width ; false,61,sound,circle.
+{"level": true, "weight": false} in words is in the record the field level has value true, the field weight has value false.
+в записи поле depth имеет значение ложь, поле order имеет значение ложь, поле value имеет значение 96 в json есть {"depth": false, "order": false, "value": 96}.
+in json this record is {"count": false}.
+{"size": 47} в письме yaml есть size: 47.
+{"size": "form"} в письме toml есть size = "form".
+{"count": false, "kind": 61, "name": "sound", "width": "circle"} в письме csv есть count,kind,name,width ; false,61,sound,circle.
+{"level": true, "weight": false} в словах есть в записи поле level имеет значение истина, поле weight имеет значение ложь.
+как читается {"depth": false, "order": false, "value": 96}? {"depth": false, "order": false, "value": 96} в словах есть в записи поле depth имеет значение ложь, поле order имеет значение ложь, поле value имеет значение 96.
+count: false written in json is {"count": false}.
+size = 47 written in json is {"size": 47}.
+size ; form written in json is {"size": "form"}.
+in the record the field count has value false, the field kind has value 61, the field name has value sound, the field width has value circle in json is {"count": false, "kind": 61, "name": "sound", "width": "circle"}.
+how is {"level": true, "weight": false} said in words? {"level": true, "weight": false} in words is in the record the field level has value true, the field weight has value false.
+{"name": "field"} written in yaml is name: field.
+{"count": false} written in toml is count = false.
+{"size": 47} written in csv is size ; 47.
+{"size": "form"} in words is in the record the field size has value form.
+в записи поле count имеет значение ложь, поле kind имеет значение 61, поле name имеет значение sound, поле width имеет значение circle в json есть {"count": false, "kind": 61, "name": "sound", "width": "circle"}.
+in json this record is {"depth": false, "order": false, "value": 96}.
+{"name": "field"} в письме yaml есть name: field.
+{"count": false} в письме toml есть count = false.
+{"size": 47} в письме csv есть size ; 47.
+{"size": "form"} в словах есть в записи поле size имеет значение form.
+как читается {"count": false, "kind": 61, "name": "sound", "width": "circle"}? {"count": false, "kind": 61, "name": "sound", "width": "circle"} в словах есть в записи поле count имеет значение ложь, поле kind имеет значение 61, поле name имеет значение sound, поле width имеет значение circle.
+depth: false ; order: false ; value: 96 written in json is {"depth": false, "order": false, "value": 96}.
+name = "field" written in json is {"name": "field"}.
+count ; false written in json is {"count": false}.
+in the record the field size has value 47 in json is {"size": 47}.
+how is {"size": "form"} said in words? {"size": "form"} in words is in the record the field size has value form.
+{"level": true, "weight": false} written in yaml is level: true ; weight: false.
+{"depth": false, "order": false, "value": 96} written in toml is depth = false ; order = false ; value = 96.
+{"name": "field"} written in csv is name ; field.
+{"count": false} in words is in the record the field count has value false.
+в записи поле size имеет значение 47 в json есть {"size": 47}.
+in json this record is {"count": false, "kind": 61, "name": "sound", "width": "circle"}.
+{"level": true, "weight": false} в письме yaml есть level: true ; weight: false.
+{"depth": false, "order": false, "value": 96} в письме toml есть depth = false ; order = false ; value = 96.
+{"name": "field"} в письме csv есть name ; field.
+{"count": false} в словах есть в записи поле count имеет значение ложь.
+как читается {"size": 47}? {"size": 47} в словах есть в записи поле size имеет значение 47.
+count: false ; kind: 61 ; name: sound ; width: circle written in json is {"count": false, "kind": 61, "name": "sound", "width": "circle"}.
+level = true ; weight = false written in json is {"level": true, "weight": false}.
+depth,order,value ; false,false,96 written in json is {"depth": false, "order": false, "value": 96}.
+in the record the field name has value field in json is {"name": "field"}.
+how is {"count": false} said in words? {"count": false} in words is in the record the field count has value false.
+{"size": "form"} written in yaml is size: form.
+{"count": false, "kind": 61, "name": "sound", "width": "circle"} written in toml is count = false ; kind = 61 ; name = "sound" ; width = "circle".
+{"level": true, "weight": false} written in csv is level,weight ; true,false.
 {"depth": false, "order": false, "value": 96} in words is in the record the field depth has value false, the field order has value false, the field value has value 96.
 в записи поле name имеет значение field в json есть {"name": "field"}.
 in json this record is {"size": 47}.

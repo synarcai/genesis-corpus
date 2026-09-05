@@ -43,17 +43,26 @@ what is the degree of 3 in graph 1-2, 3-4? the degree of 3 in graph 1-2, 3-4 is 
 graph 1-6, 2-5, 3-4 does not have the cycle 1-2-6-1: 1-2 is not an edge.
 the degree of 1 in graph 1-2, 1-3, 1-4, 1-5 is not 5: it is 4.
 сколько рёбер в графе 1-6, 2-5, 3-4? в графе 1-6, 2-5, 3-4 3 ребра.
+граф 1-5, 2-5, 3-5, 4-5 связен: из 1 достижима каждая вершина.
 graph 1-2, 3-4 does not have the cycle 1-3-2-1: 1-3 is not an edge.
-the degree of 1 in graph 1-2, 3-4 is 1: its edges are 1-2.
-в графе 1-4, 2-4, 3-4, 4-5 есть путь от 1 до 5 длины 2: 1-4-5.
+graph 1-6, 2-5, 3-4 has 6 vertices.
+пути от 1 до 4 в графе 1-2, 3-4 нет: рёбра их не соединяют.
+is graph 1-3, 2-3, 3-4 connected? graph 1-3, 2-3, 3-4 is connected: every vertex is reached from 1.
+the degree of 3 in graph 1-2, 3-4 is 1: its edges are 3-4.
+в графе 1-2, 2-3, 2-4, 2-5 есть путь от 1 до 5 длины 2: 1-2-5.
 graph 1-6, 2-5, 3-4 has a path from 1 to 6 of length 1: 1-6.
 есть ли в графе 1-2, 3-4 цикл 1-3-2-1? в графе 1-2, 3-4 нет цикла 1-3-2-1: 1-3 не ребро.
 в графе 1-6, 2-5, 3-4 3 ребра.
+в графе 1-5, 2-5, 3-5, 4-5 есть путь от 1 до 5 длины 1: 1-5.
 graph 1-2, 3-4 is not connected: no path from 1 to 4.
-в графе 1-2, 2-3, 2-4, 2-5 нет цикла 1-3-2-1: 1-3 не ребро.
-какова степень вершины 2 в графе 1-2, 3-4? степень вершины 2 в графе 1-2, 3-4 — 1: его рёбра 1-2.
-graph 1-2, 1-3, 1-4, 1-5 is connected: every vertex is reached from 1.
+в графе 1-4, 2-4, 3-4, 4-5 нет цикла 1-2-4-1: 1-2 не ребро.
+какова степень вершины 4 в графе 1-2, 3-4? степень вершины 4 в графе 1-2, 3-4 — 1: его рёбра 3-4.
+graph 1-3, 2-3, 3-4 is connected: every vertex is reached from 1.
 в графе 1-6, 2-5, 3-4 нет цикла 1-2-6-1: 1-2 не ребро.
+степень вершины 3 в графе 1-2, 2-3, 2-4, 2-5 — не 2: она 1.
+how many edges does graph 1-6, 2-5, 3-4 have? graph 1-6, 2-5, 3-4 has 3 edges.
+в графе 1-2, 3-4 нет цикла 1-3-2-1: 1-3 не ребро.
+в графе 1-6, 2-5, 3-4 6 вершин.
 степень вершины 4 в графе 1-5, 2-5, 3-5, 4-5 — не 2: она 1.
 there is no path from 1 to 4 in graph 1-2, 3-4: the edges do not join them.
 связен ли граф 1-4, 2-4, 3-4, 4-5? граф 1-4, 2-4, 3-4, 4-5 связен: из 1 достижима каждая вершина.
@@ -65,28 +74,6 @@ graph 1-6, 2-5, 3-4 has 3 edges.
 граф 1-2, 3-4 не связен: нет пути от 1 до 4.
 graph 1-2, 1-3, 1-4, 1-5 does not have the cycle 2-3-1-2: 2-3 is not an edge.
 what is the degree of 1 in graph 1-2, 3-4? the degree of 1 in graph 1-2, 3-4 is 1: its edges are 1-2.
-граф 1-5, 2-5, 3-5, 4-5 связен: из 1 достижима каждая вершина.
-graph 1-2, 3-4 does not have the cycle 1-3-2-1: 1-3 is not an edge.
-graph 1-6, 2-5, 3-4 has 6 vertices.
-пути от 1 до 4 в графе 1-2, 3-4 нет: рёбра их не соединяют.
-is graph 1-3, 2-3, 3-4 connected? graph 1-3, 2-3, 3-4 is connected: every vertex is reached from 1.
-the degree of 3 in graph 1-2, 3-4 is 1: its edges are 3-4.
-в графе 1-2, 2-3, 2-4, 2-5 есть путь от 1 до 5 длины 2: 1-2-5.
-graph 1-6, 2-5, 3-4 has a path from 1 to 6 of length 1: 1-6.
-есть ли в графе 1-2, 3-4 цикл 1-3-2-1? в графе 1-2, 3-4 нет цикла 1-3-2-1: 1-3 не ребро.
-в графе 1-6, 2-5, 3-4 3 ребра.
-graph 1-2, 3-4 is not connected: no path from 1 to 4.
-в графе 1-5, 2-5, 3-5, 4-5 нет цикла 1-2-5-1: 1-2 не ребро.
-степень вершины 2 в графе 1-4, 2-4, 3-4, 4-5 — не 2: она 1.
-how many edges does graph 1-6, 2-5, 3-4 have? graph 1-6, 2-5, 3-4 has 3 edges.
-в графе 1-2, 3-4 нет цикла 1-3-2-1: 1-3 не ребро.
-в графе 1-6, 2-5, 3-4 6 вершин.
-there is no path from 1 to 4 in graph 1-2, 3-4: the edges do not join them.
-связен ли граф 1-2, 2-3, 2-4, 2-5? граф 1-2, 2-3, 2-4, 2-5 связен: из 1 достижима каждая вершина.
-степень вершины 2 в графе 1-2, 3-4 — 1: его рёбра 1-2.
-graph 1-2, 1-3, 1-4, 1-5 has a path from 1 to 5 of length 1: 1-5.
-в графе 1-6, 2-5, 3-4 есть путь от 1 до 6 длины 1: 1-6.
-does graph 1-2, 3-4 have the cycle 1-3-2-1? graph 1-2, 3-4 does not have the cycle 1-3-2-1: 1-3 is not an edge.
 what is the degree of 1 in graph 1-2, 3-4? the degree of 1 in graph 1-2, 3-4 is 1: its edges are 1-2.
 граф 1-4, 2-4, 3-4, 4-5 связен: из 1 достижима каждая вершина.
 graph 1-6, 2-5, 3-4 does not have the cycle 1-2-6-1: 1-2 is not an edge.
@@ -97,17 +84,26 @@ graph 1-6, 2-5, 3-4 has 6 vertices.
 пути от 1 до 4 в графе 1-2, 3-4 нет: рёбра их не соединяют.
 is graph 1-2, 1-3, 1-4, 1-5 connected? graph 1-2, 1-3, 1-4, 1-5 is connected: every vertex is reached from 1.
 the degree of 1 in graph 1-2, 3-4 is 1: its edges are 1-2.
-в графе 1-5, 2-5, 3-5, 4-5 есть путь от 1 до 5 длины 1: 1-5.
+the degree of 1 in graph 1-2, 3-4 is 1: its edges are 1-2.
+в графе 1-4, 2-4, 3-4, 4-5 есть путь от 1 до 5 длины 2: 1-4-5.
+graph 1-6, 2-5, 3-4 has a path from 1 to 6 of length 1: 1-6.
+есть ли в графе 1-2, 3-4 цикл 1-3-2-1? в графе 1-2, 3-4 нет цикла 1-3-2-1: 1-3 не ребро.
+в графе 1-6, 2-5, 3-4 3 ребра.
 graph 1-2, 3-4 is not connected: no path from 1 to 4.
-в графе 1-4, 2-4, 3-4, 4-5 нет цикла 1-2-4-1: 1-2 не ребро.
-какова степень вершины 4 в графе 1-2, 3-4? степень вершины 4 в графе 1-2, 3-4 — 1: его рёбра 3-4.
-graph 1-3, 2-3, 3-4 is connected: every vertex is reached from 1.
+в графе 1-2, 2-3, 2-4, 2-5 нет цикла 1-3-2-1: 1-3 не ребро.
+какова степень вершины 2 в графе 1-2, 3-4? степень вершины 2 в графе 1-2, 3-4 — 1: его рёбра 1-2.
+graph 1-2, 1-3, 1-4, 1-5 is connected: every vertex is reached from 1.
 в графе 1-6, 2-5, 3-4 нет цикла 1-2-6-1: 1-2 не ребро.
-степень вершины 3 в графе 1-2, 2-3, 2-4, 2-5 — не 2: она 1.
+в графе 1-5, 2-5, 3-5, 4-5 нет цикла 1-2-5-1: 1-2 не ребро.
+степень вершины 2 в графе 1-4, 2-4, 3-4, 4-5 — не 2: она 1.
 how many edges does graph 1-6, 2-5, 3-4 have? graph 1-6, 2-5, 3-4 has 3 edges.
 в графе 1-2, 3-4 нет цикла 1-3-2-1: 1-3 не ребро.
 в графе 1-6, 2-5, 3-4 6 вершин.
 there is no path from 1 to 4 in graph 1-2, 3-4: the edges do not join them.
+связен ли граф 1-2, 2-3, 2-4, 2-5? граф 1-2, 2-3, 2-4, 2-5 связен: из 1 достижима каждая вершина.
+степень вершины 2 в графе 1-2, 3-4 — 1: его рёбра 1-2.
+graph 1-2, 1-3, 1-4, 1-5 has a path from 1 to 5 of length 1: 1-5.
+в графе 1-6, 2-5, 3-4 есть путь от 1 до 6 длины 1: 1-6.
 связен ли граф 1-5, 2-5, 3-5, 4-5? граф 1-5, 2-5, 3-5, 4-5 связен: из 1 достижима каждая вершина.
 
 какая линия плоскости Фано 124, 235, 346, 457, 561, 672, 713 несёт точки 2 и 4? плоскость Фано 124, 235, 346, 457, 561, 672, 713: точки 2 и 4 лежат ровно на одной линии, 124.
@@ -257,46 +253,24 @@ what is (1, −4) rotated 90° counterclockwise about the origin? (1, −4) rota
 в графе 1-4, 2-3 нет цикла 1-2-4-1: 1-2 не ребро.
 в графе 1-4, 2-3, 5-6 нет цикла 1-2-4-1: 1-2 не ребро.
 в графе 1-4, 2-4, 3-4, 4-5 нет цикла 1-2-4-1: 1-2 не ребро.
-the degree of 3 in graph 1-4, 2-3, 5-6 is not 2: it is 1.
-the degree of 2 in graph 2-3, 2-4, 2-5 is 3: its edges are 2-3, 2-4, 2-5.
-how many vertices does graph 1-4, 2-3 have? graph 1-4, 2-3 has 4 vertices.
-there is no path from 1 to 6 in graph 1-4, 2-3, 5-6: the edges do not join them.
-graph 1-5, 2-5, 3-5, 4-5 has a path from 1 to 5 of length 1: 1-5.
-graph 1-4, 2-3 has 2 edges.
-in graph 1-4, 2-3, 5-6, is there a path from 1 to 6? there is no path from 1 to 6 in graph 1-4, 2-3, 5-6: the edges do not join them.
-graph 1-4, 2-3, 5-6 is not connected: no path from 1 to 6.
-is graph 2-3, 2-4, 2-5 connected? graph 2-3, 2-4, 2-5 is connected: every vertex is reached from 2.
-graph 1-4, 2-3 does not have the cycle 1-2-4-1: 1-2 is not an edge.
-graph 1-4, 2-3, 5-6 does not have the cycle 1-2-4-1: 1-2 is not an edge.
-graph 1-5, 2-5, 3-5, 4-5 does not have the cycle 1-2-5-1: 1-2 is not an edge.
-does graph 1-4, 2-3 have the cycle 1-2-4-1? graph 1-4, 2-3 does not have the cycle 1-2-4-1: 1-2 is not an edge.
-степень вершины 2 в графе 1-3, 2-3, 3-4, 3-5 — 1: его рёбра 2-3.
+в графе 1-4, 2-3 4 вершины.
+степень вершины 6 в графе 1-4, 2-3, 5-6 — не 2: она 1.
+степень вершины 3 в графе 1-2, 1-3, 1-4, 1-5 — 1: его рёбра 1-3.
 сколько вершин в графе 1-4, 2-3? в графе 1-4, 2-3 4 вершины.
 пути от 1 до 6 в графе 1-4, 2-3, 5-6 нет: рёбра их не соединяют.
-в графе 1-2, 1-3, 1-4, 1-5 есть путь от 1 до 5 длины 1: 1-5.
-в графе 1-4, 2-3 2 ребра.
-есть ли в графе 1-4, 2-3, 5-6 путь от 1 до 6? пути от 1 до 6 в графе 1-4, 2-3, 5-6 нет: рёбра их не соединяют.
-граф 1-4, 2-4, 3-4, 4-5 связен: из 1 достижима каждая вершина.
-связен ли граф 1-3, 2-3, 3-4, 3-5? граф 1-3, 2-3, 3-4, 3-5 связен: из 1 достижима каждая вершина.
-в графе 1-4, 2-3 нет цикла 1-2-4-1: 1-2 не ребро.
-в графе 1-4, 2-3, 5-6 нет цикла 1-2-4-1: 1-2 не ребро.
-в графе 1-2, 1-3, 1-4, 1-5 нет цикла 2-3-1-2: 2-3 не ребро.
+в графе 1-4, 2-4, 3-4, 4-5 есть путь от 1 до 5 длины 2: 1-4-5.
+in graph 1-4, 2-3, 5-6, is there a path from 1 to 6? there is no path from 1 to 6 in graph 1-4, 2-3, 5-6: the edges do not join them.
+graph 2-3, 2-4, 2-5 is connected: every vertex is reached from 2.
+graph 1-4, 2-3 has a path from 1 to 4 of length 1: 1-4.
+graph 1-4, 2-3, 5-6 is not connected: no path from 1 to 6.
+is graph 1-5, 2-5, 3-5, 4-5 connected? graph 1-5, 2-5, 3-5, 4-5 is connected: every vertex is reached from 1.
+graph 1-4, 2-3 does not have the cycle 1-2-4-1: 1-2 is not an edge.
+в графе 1-3, 2-3, 3-4, 3-5 нет цикла 1-2-3-1: 1-2 не ребро.
 есть ли в графе 1-4, 2-3 цикл 1-2-4-1? в графе 1-4, 2-3 нет цикла 1-2-4-1: 1-2 не ребро.
 graph 1-4, 2-3 has 4 vertices.
 the degree of 3 in graph 1-4, 2-3, 5-6 is not 2: it is 1.
-there is no path from 1 to 6 in graph 1-4, 2-3, 5-6: the edges do not join them.
-graph 2-3, 2-4, 2-5 has a path from 2 to 5 of length 1: 2-5.
-graph 1-4, 2-3 has 2 edges.
-in graph 1-4, 2-3, 5-6, is there a path from 1 to 6? there is no path from 1 to 6 in graph 1-4, 2-3, 5-6: the edges do not join them.
-graph 1-5, 2-5, 3-5, 4-5 is connected: every vertex is reached from 1.
-graph 1-4, 2-3 has a path from 1 to 4 of length 1: 1-4.
-graph 1-4, 2-3, 5-6 is not connected: no path from 1 to 6.
-graph 1-4, 2-3, 5-6 does not have the cycle 1-2-4-1: 1-2 is not an edge.
-graph 2-3, 2-4, 2-5 does not have the cycle 3-4-2-3: 3-4 is not an edge.
-does graph 1-4, 2-3 have the cycle 1-2-4-1? graph 1-4, 2-3 does not have the cycle 1-2-4-1: 1-2 is not an edge.
-в графе 1-4, 2-3 4 вершины.
-степень вершины 6 в графе 1-4, 2-3, 5-6 — не 2: она 1.
-степень вершины 4 в графе 1-4, 2-4, 3-4, 4-5 — 4: его рёбра 1-4, 2-4, 3-4, 4-5.
+the degree of 1 in graph 1-5, 2-5, 3-5, 4-5 is 1: its edges are 1-5.
+how many vertices does graph 1-4, 2-3 have? graph 1-4, 2-3 has 4 vertices.
 в графе 1-3, 2-3, 3-4, 3-5 есть путь от 1 до 5 длины 2: 1-3-5.
 в графе 1-4, 2-3 2 ребра.
 есть ли в графе 1-4, 2-3, 5-6 путь от 1 до 6? пути от 1 до 6 в графе 1-4, 2-3, 5-6 нет: рёбра их не соединяют.
@@ -304,26 +278,43 @@ does graph 1-4, 2-3 have the cycle 1-2-4-1? graph 1-4, 2-3 does not have the cyc
 в графе 1-4, 2-3 есть путь от 1 до 4 длины 1: 1-4.
 граф 1-4, 2-3, 5-6 не связен: нет пути от 1 до 6.
 связен ли граф 1-4, 2-4, 3-4, 4-5? граф 1-4, 2-4, 3-4, 4-5 связен: из 1 достижима каждая вершина.
-в графе 1-3, 2-3, 3-4, 3-5 нет цикла 1-2-3-1: 1-2 не ребро.
-есть ли в графе 1-4, 2-3 цикл 1-2-4-1? в графе 1-4, 2-3 нет цикла 1-2-4-1: 1-2 не ребро.
-graph 1-4, 2-3 has 4 vertices.
-the degree of 3 in graph 1-4, 2-3, 5-6 is not 2: it is 1.
-the degree of 1 in graph 1-5, 2-5, 3-5, 4-5 is 1: its edges are 1-5.
-how many vertices does graph 1-4, 2-3 have? graph 1-4, 2-3 has 4 vertices.
-there is no path from 1 to 6 in graph 1-4, 2-3, 5-6: the edges do not join them.
-in graph 1-4, 2-3, 5-6, is there a path from 1 to 6? there is no path from 1 to 6 in graph 1-4, 2-3, 5-6: the edges do not join them.
-graph 2-3, 2-4, 2-5 is connected: every vertex is reached from 2.
-graph 1-4, 2-3 has a path from 1 to 4 of length 1: 1-4.
-graph 1-4, 2-3, 5-6 is not connected: no path from 1 to 6.
-is graph 1-5, 2-5, 3-5, 4-5 connected? graph 1-5, 2-5, 3-5, 4-5 is connected: every vertex is reached from 1.
-graph 1-4, 2-3 does not have the cycle 1-2-4-1: 1-2 is not an edge.
 graph 1-4, 2-3, 5-6 does not have the cycle 1-2-4-1: 1-2 is not an edge.
+graph 2-3, 2-4, 2-5 does not have the cycle 3-4-2-3: 3-4 is not an edge.
+does graph 1-4, 2-3 have the cycle 1-2-4-1? graph 1-4, 2-3 does not have the cycle 1-2-4-1: 1-2 is not an edge.
 в графе 1-4, 2-3 4 вершины.
 степень вершины 6 в графе 1-4, 2-3, 5-6 — не 2: она 1.
-степень вершины 3 в графе 1-2, 1-3, 1-4, 1-5 — 1: его рёбра 1-3.
+степень вершины 4 в графе 1-4, 2-4, 3-4, 4-5 — 4: его рёбра 1-4, 2-4, 3-4, 4-5.
+there is no path from 1 to 6 in graph 1-4, 2-3, 5-6: the edges do not join them.
+graph 2-3, 2-4, 2-5 has a path from 2 to 5 of length 1: 2-5.
+graph 1-4, 2-3 has 2 edges.
+in graph 1-4, 2-3, 5-6, is there a path from 1 to 6? there is no path from 1 to 6 in graph 1-4, 2-3, 5-6: the edges do not join them.
+graph 1-5, 2-5, 3-5, 4-5 is connected: every vertex is reached from 1.
+graph 1-4, 2-3 has a path from 1 to 4 of length 1: 1-4.
+связен ли граф 1-3, 2-3, 3-4, 3-5? граф 1-3, 2-3, 3-4, 3-5 связен: из 1 достижима каждая вершина.
+в графе 1-4, 2-3 нет цикла 1-2-4-1: 1-2 не ребро.
+в графе 1-4, 2-3, 5-6 нет цикла 1-2-4-1: 1-2 не ребро.
+в графе 1-2, 1-3, 1-4, 1-5 нет цикла 2-3-1-2: 2-3 не ребро.
+есть ли в графе 1-4, 2-3 цикл 1-2-4-1? в графе 1-4, 2-3 нет цикла 1-2-4-1: 1-2 не ребро.
+graph 1-4, 2-3 has 4 vertices.
+степень вершины 2 в графе 1-3, 2-3, 3-4, 3-5 — 1: его рёбра 2-3.
 сколько вершин в графе 1-4, 2-3? в графе 1-4, 2-3 4 вершины.
 пути от 1 до 6 в графе 1-4, 2-3, 5-6 нет: рёбра их не соединяют.
-в графе 1-4, 2-4, 3-4, 4-5 есть путь от 1 до 5 длины 2: 1-4-5.
+в графе 1-2, 1-3, 1-4, 1-5 есть путь от 1 до 5 длины 1: 1-5.
+в графе 1-4, 2-3 2 ребра.
+есть ли в графе 1-4, 2-3, 5-6 путь от 1 до 6? пути от 1 до 6 в графе 1-4, 2-3, 5-6 нет: рёбра их не соединяют.
+граф 1-4, 2-4, 3-4, 4-5 связен: из 1 достижима каждая вершина.
+graph 1-4, 2-3, 5-6 is not connected: no path from 1 to 6.
+is graph 2-3, 2-4, 2-5 connected? graph 2-3, 2-4, 2-5 is connected: every vertex is reached from 2.
+graph 1-4, 2-3 does not have the cycle 1-2-4-1: 1-2 is not an edge.
+graph 1-4, 2-3, 5-6 does not have the cycle 1-2-4-1: 1-2 is not an edge.
+graph 1-5, 2-5, 3-5, 4-5 does not have the cycle 1-2-5-1: 1-2 is not an edge.
+does graph 1-4, 2-3 have the cycle 1-2-4-1? graph 1-4, 2-3 does not have the cycle 1-2-4-1: 1-2 is not an edge.
+the degree of 3 in graph 1-4, 2-3, 5-6 is not 2: it is 1.
+the degree of 2 in graph 2-3, 2-4, 2-5 is 3: its edges are 2-3, 2-4, 2-5.
+how many vertices does graph 1-4, 2-3 have? graph 1-4, 2-3 has 4 vertices.
+there is no path from 1 to 6 in graph 1-4, 2-3, 5-6: the edges do not join them.
+graph 1-5, 2-5, 3-5, 4-5 has a path from 1 to 5 of length 1: 1-5.
+graph 1-4, 2-3 has 2 edges.
 
 плоскость Фано 124, 235, 346, 457, 561, 672, 713: точка 2 лежит ровно на 3 линиях: 124, 235, 672.
 Fano plane 124, 235, 346, 457, 561, 672, 713: points 5 and 4 do not lie on line 124: it carries 1, 2, 4.
@@ -456,85 +447,64 @@ what is (2, −3) shifted by (0, 2)? (2, −3) shifted by (0, 2) is (2, −1): (
 (−1, 0) reflected in the y-axis is (1, 0): y stays, x changes sign.
 (−4, 3) shifted by (2, −1) is (−2, 2): (−4 + 2, 3 + −1).
 
-есть ли в графе 1-2, 3-4 цикл 1-3-2-1? в графе 1-2, 3-4 нет цикла 1-3-2-1: 1-3 не ребро.
-the degree of 3 in graph 1-2, 3-4 is not 2: it is 1.
-there is no path from 1 to 6 in graph 1-2, 3-6, 4-5: the edges do not join them.
-graph 1-4, 2-4, 3-4, 4-5 is connected: every vertex is reached from 1.
-does graph 1-2, 3-4 have the cycle 1-3-2-1? graph 1-2, 3-4 does not have the cycle 1-3-2-1: 1-3 is not an edge.
-степень вершины 4 в графе 1-2, 3-4 — не 2: она 1.
-в графе 1-2, 3-4 нет цикла 1-3-2-1: 1-3 не ребро.
-есть ли в графе 1-2, 3-6, 4-5 цикл 1-3-2-1? в графе 1-2, 3-6, 4-5 нет цикла 1-3-2-1: 1-3 не ребро.
-the degree of 3 in graph 1-2, 3-6, 4-5 is 1: its edges are 3-6.
-graph 1-4, 2-4, 3-4, 4-5 has a path from 1 to 5 of length 2: 1-4-5.
-graph 1-2, 3-4 does not have the cycle 1-3-2-1: 1-3 is not an edge.
-does graph 1-2, 3-6, 4-5 have the cycle 1-3-2-1? graph 1-2, 3-6, 4-5 does not have the cycle 1-3-2-1: 1-3 is not an edge.
-граф 1-2, 3-4 не связен: нет пути от 1 до 4.
-в графе 1-2, 3-6, 4-5 нет цикла 1-3-2-1: 1-3 не ребро.
-есть ли в графе 1-5, 2-5, 3-5, 4-5 цикл 1-2-5-1? в графе 1-5, 2-5, 3-5, 4-5 нет цикла 1-2-5-1: 1-2 не ребро.
-graph 1-4, 2-4, 3-4, 4-5 has 4 edges.
-graph 1-2, 3-4 is not connected: no path from 1 to 4.
-graph 1-2, 3-6, 4-5 does not have the cycle 1-3-2-1: 1-3 is not an edge.
-пути от 1 до 4 в графе 1-2, 3-4 нет: рёбра их не соединяют.
-граф 1-2, 3-6, 4-5 не связен: нет пути от 1 до 6.
-в графе 1-5, 2-5, 3-5, 4-5 нет цикла 1-2-5-1: 1-2 не ребро.
+in graph 1-3, 1-4, 1-5, is there a path from 1 to 5? graph 1-3, 1-4, 1-5 has a path from 1 to 5 of length 1: 1-5.
+сколько рёбер в графе 1-5, 2-5, 3-5, 4-5? в графе 1-5, 2-5, 3-5, 4-5 4 ребра.
 how many vertices does graph 1-4, 2-4, 3-4, 4-5 have? graph 1-4, 2-4, 3-4, 4-5 has 5 vertices.
-there is no path from 1 to 4 in graph 1-2, 3-4: the edges do not join them.
+в графе 1-3, 2-3, 3-4, 3-5 5 вершин.
 graph 1-2, 3-6, 4-5 is not connected: no path from 1 to 6.
-степень вершины 4 в графе 1-2, 3-4 — не 2: она 1.
+в графе 1-2, 3-6, 4-5 нет цикла 1-3-2-1: 1-3 не ребро.
+graph 1-2, 3-6, 4-5 is not connected: no path from 1 to 6.
 пути от 1 до 6 в графе 1-2, 3-6, 4-5 нет: рёбра их не соединяют.
+does graph 1-2, 3-6, 4-5 have the cycle 1-3-2-1? graph 1-2, 3-6, 4-5 does not have the cycle 1-3-2-1: 1-3 is not an edge.
+graph 1-3, 1-4, 1-5 is connected: every vertex is reached from 1.
+в графе 1-5, 2-5, 3-5, 4-5 есть путь от 1 до 5 длины 1: 1-5.
+graph 1-4, 2-4, 3-4, 4-5 has 4 edges.
+в графе 1-3, 2-3, 3-4, 3-5 4 ребра.
+graph 1-2, 3-6, 4-5 does not have the cycle 1-3-2-1: 1-3 is not an edge.
+есть ли в графе 1-2, 3-6, 4-5 цикл 1-3-2-1? в графе 1-2, 3-6, 4-5 нет цикла 1-3-2-1: 1-3 не ребро.
+is graph 1-2, 3-6, 4-5 connected? graph 1-2, 3-6, 4-5 is not connected: no path from 1 to 6.
+есть ли в графе 1-2, 3-6, 4-5 путь от 1 до 6? пути от 1 до 6 в графе 1-2, 3-6, 4-5 нет: рёбра их не соединяют.
+степень вершины 4 в графе 1-2, 3-4 — не 2: она 1.
+graph 1-3, 1-4, 1-5 does not have the cycle 3-4-1-3: 3-4 is not an edge.
 граф 1-5, 2-5, 3-5, 4-5 связен: из 1 достижима каждая вершина.
+graph 1-4, 2-4, 3-4, 4-5 has a path from 1 to 5 of length 2: 1-4-5.
+в графе 1-3, 2-3, 3-4, 3-5 есть путь от 1 до 5 длины 2: 1-3-5.
+степень вершины 4 в графе 1-2, 3-4 — не 2: она 1.
+the degree of 3 in graph 1-2, 3-4 is not 2: it is 1.
+graph 1-2, 3-6, 4-5 does not have the cycle 1-3-2-1: 1-3 is not an edge.
+граф 1-2, 3-6, 4-5 не связен: нет пути от 1 до 6.
+связен ли граф 1-2, 3-4? граф 1-2, 3-4 не связен: нет пути от 1 до 4.
+степень вершины 6 в графе 1-2, 3-6, 4-5 — 1: его рёбра 3-6.
+в графе 1-5, 2-5, 3-5, 4-5 нет цикла 1-2-5-1: 1-2 не ребро.
+graph 1-4, 2-4, 3-4, 4-5 is connected: every vertex is reached from 1.
+есть ли в графе 1-3, 2-3, 3-4, 3-5 путь от 1 до 5? в графе 1-3, 2-3, 3-4, 3-5 есть путь от 1 до 5 длины 2: 1-3-5.
+graph 1-3, 1-4, 1-5 has 4 vertices.
+is graph 1-2, 3-4 connected? graph 1-2, 3-4 is not connected: no path from 1 to 4.
+степень вершины 2 в графе 1-2, 3-4 — не 2: она 1.
+в графе 1-2, 3-6, 4-5 нет цикла 1-3-2-1: 1-3 не ребро.
+the degree of 3 in graph 1-2, 3-6, 4-5 is 1: its edges are 3-6.
+какова степень вершины 6 в графе 1-2, 3-6, 4-5? степень вершины 6 в графе 1-2, 3-6, 4-5 — 1: его рёбра 3-6.
+есть ли в графе 1-5, 2-5, 3-5, 4-5 цикл 1-2-5-1? в графе 1-5, 2-5, 3-5, 4-5 нет цикла 1-2-5-1: 1-2 не ребро.
+is graph 1-4, 2-4, 3-4, 4-5 connected? graph 1-4, 2-4, 3-4, 4-5 is connected: every vertex is reached from 1.
+граф 1-3, 2-3, 3-4, 3-5 связен: из 1 достижима каждая вершина.
+graph 1-3, 1-4, 1-5 has 3 edges.
+в графе 1-5, 2-5, 3-5, 4-5 5 вершин.
+есть ли в графе 1-2, 3-4 путь от 1 до 4? пути от 1 до 4 в графе 1-2, 3-4 нет: рёбра их не соединяют.
+the degree of 1 in graph 1-2, 3-4 is not 2: it is 1.
+there is no path from 1 to 6 in graph 1-2, 3-6, 4-5: the edges do not join them.
+пути от 1 до 6 в графе 1-2, 3-6, 4-5 нет: рёбра их не соединяют.
+the degree of 3 in graph 1-2, 3-6, 4-5 is 1: its edges are 3-6.
+graph 1-4, 2-4, 3-4, 4-5 does not have the cycle 1-2-4-1: 1-2 is not an edge.
+в графе 1-3, 2-3, 3-4, 3-5 нет цикла 1-2-3-1: 1-2 не ребро.
+graph 1-3, 1-4, 1-5 has a path from 1 to 5 of length 1: 1-5.
+в графе 1-5, 2-5, 3-5, 4-5 4 ребра.
 graph 1-4, 2-4, 3-4, 4-5 has 5 vertices.
 what is the degree of 1 in graph 1-2, 3-4 is not 2: it? the degree of 1 in graph 1-2, 3-4 is not 2: it is 1.
-there is no path from 1 to 6 in graph 1-2, 3-6, 4-5: the edges do not join them.
-graph 1-2, 3-6, 4-5 does not have the cycle 1-3-2-1: 1-3 is not an edge.
-какова степень вершины 6 в графе 1-2, 3-6, 4-5? степень вершины 6 в графе 1-2, 3-6, 4-5 — 1: его рёбра 3-6.
-в графе 1-5, 2-5, 3-5, 4-5 есть путь от 1 до 5 длины 1: 1-5.
-в графе 1-2, 3-4 нет цикла 1-3-2-1: 1-3 не ребро.
-the degree of 1 in graph 1-2, 3-4 is not 2: it is 1.
-what is the degree of 3 in graph 1-2, 3-6, 4-5? the degree of 3 in graph 1-2, 3-6, 4-5 is 1: its edges are 3-6.
-graph 1-2, 3-6, 4-5 is not connected: no path from 1 to 6.
-степень вершины 6 в графе 1-2, 3-6, 4-5 — 1: его рёбра 3-6.
-сколько рёбер в графе 1-5, 2-5, 3-5, 4-5? в графе 1-5, 2-5, 3-5, 4-5 4 ребра.
-граф 1-2, 3-4 не связен: нет пути от 1 до 4.
-в графе 1-2, 3-6, 4-5 нет цикла 1-3-2-1: 1-3 не ребро.
-the degree of 3 in graph 1-2, 3-6, 4-5 is 1: its edges are 3-6.
 in graph 1-2, 3-6, 4-5, is there a path from 1 to 6? there is no path from 1 to 6 in graph 1-2, 3-6, 4-5: the edges do not join them.
-graph 1-3, 1-4, 1-5 does not have the cycle 3-4-1-3: 3-4 is not an edge.
-в графе 1-5, 2-5, 3-5, 4-5 4 ребра.
-есть ли в графе 1-2, 3-4 путь от 1 до 4? пути от 1 до 4 в графе 1-2, 3-4 нет: рёбра их не соединяют.
 граф 1-2, 3-6, 4-5 не связен: нет пути от 1 до 6.
-в графе 1-3, 2-3, 3-4, 3-5 нет цикла 1-2-3-1: 1-2 не ребро.
 there is no path from 1 to 6 in graph 1-2, 3-6, 4-5: the edges do not join them.
-graph 1-3, 1-4, 1-5 is connected: every vertex is reached from 1.
-в графе 1-5, 2-5, 3-5, 4-5 5 вершин.
-пути от 1 до 4 в графе 1-2, 3-4 нет: рёбра их не соединяют.
-есть ли в графе 1-2, 3-6, 4-5 путь от 1 до 6? пути от 1 до 6 в графе 1-2, 3-6, 4-5 нет: рёбра их не соединяют.
-граф 1-3, 2-3, 3-4, 3-5 связен: из 1 достижима каждая вершина.
-the degree of 3 in graph 1-2, 3-6, 4-5 is 1: its edges are 3-6.
-in graph 1-3, 1-4, 1-5, is there a path from 1 to 5? graph 1-3, 1-4, 1-5 has a path from 1 to 5 of length 1: 1-5.
-graph 1-2, 3-4 does not have the cycle 1-3-2-1: 1-3 is not an edge.
-степень вершины 2 в графе 1-2, 3-4 — не 2: она 1.
-пути от 1 до 6 в графе 1-2, 3-6, 4-5 нет: рёбра их не соединяют.
-есть ли в графе 1-3, 2-3, 3-4, 3-5 путь от 1 до 5? в графе 1-3, 2-3, 3-4, 3-5 есть путь от 1 до 5 длины 2: 1-3-5.
-в графе 1-2, 3-4 нет цикла 1-3-2-1: 1-3 не ребро.
-graph 1-3, 1-4, 1-5 has a path from 1 to 5 of length 1: 1-5.
-is graph 1-2, 3-4 connected? graph 1-2, 3-4 is not connected: no path from 1 to 4.
-graph 1-2, 3-6, 4-5 does not have the cycle 1-3-2-1: 1-3 is not an edge.
 степень вершины 6 в графе 1-2, 3-6, 4-5 — 1: его рёбра 3-6.
-в графе 1-3, 2-3, 3-4, 3-5 есть путь от 1 до 5 длины 2: 1-3-5.
-связен ли граф 1-2, 3-4? граф 1-2, 3-4 не связен: нет пути от 1 до 4.
-graph 1-3, 1-4, 1-5 has 3 edges.
-graph 1-2, 3-4 is not connected: no path from 1 to 4.
-is graph 1-2, 3-6, 4-5 connected? graph 1-2, 3-6, 4-5 is not connected: no path from 1 to 6.
-graph 1-4, 2-4, 3-4, 4-5 does not have the cycle 1-2-4-1: 1-2 is not an edge.
-в графе 1-3, 2-3, 3-4, 3-5 4 ребра.
-граф 1-2, 3-4 не связен: нет пути от 1 до 4.
-graph 1-3, 1-4, 1-5 has 4 vertices.
-there is no path from 1 to 4 in graph 1-2, 3-4: the edges do not join them.
-graph 1-2, 3-6, 4-5 is not connected: no path from 1 to 6.
-is graph 1-4, 2-4, 3-4, 4-5 connected? graph 1-4, 2-4, 3-4, 4-5 is connected: every vertex is reached from 1.
-в графе 1-3, 2-3, 3-4, 3-5 5 вершин.
-пути от 1 до 4 в графе 1-2, 3-4 нет: рёбра их не соединяют.
+what is the degree of 3 in graph 1-2, 3-6, 4-5? the degree of 3 in graph 1-2, 3-6, 4-5 is 1: its edges are 3-6.
 
 Fano plane 124, 235, 346, 457, 561, 672, 713: lines 561 and 346 meet at exactly one point, 6.
 какую точку плоскости Фано 124, 235, 346, 457, 561, 672, 713 делят линии 124 и 672? плоскость Фано 124, 235, 346, 457, 561, 672, 713: линии 124 и 672 пересекаются ровно в одной точке, 2.
@@ -596,46 +566,7 @@ row 1 of [2 2 / −2 1] is (2, 2).
 матрица [2 1 / −2 4] транспонированная — не [2 1 / −2 4]: это [2 −2 / 1 4].
 след матрицы [2 3 / −2 2] — 4: 2 + 2 = 4.
 
-степень вершины — это число рёбер при ней.
-what is the distance between two points? the distance between two points is the length of the segment that joins them.
-что такое определитель матрицы? определитель матрицы 2 на 2 — это произведение её главной диагонали минус произведение другой диагонали.
-the degree of a vertex is the number of edges at it.
-расстояние между двумя точками — это длина отрезка, который их соединяет.
-what is the determinant of a matrix? the determinant of a matrix 2 by 2 is the product of its main diagonal minus the product of its other diagonal.
-что такое ребро графа? ребро графа — это пара вершин, которые оно соединяет.
-the distance between two points is the length of the segment that joins them.
-определитель матрицы 2 на 2 — это произведение её главной диагонали минус произведение другой диагонали.
-what is an edge of a graph? an edge of a graph is a pair of vertices that it joins.
-когда граф связен? граф связен, когда каждая вершина достижима из каждой другой по пути.
-the determinant of a matrix 2 by 2 is the product of its main diagonal minus the product of its other diagonal.
-ребро графа — это пара вершин, которые оно соединяет.
-when is a graph connected? a graph is connected when every vertex is reached from every other vertex by a path.
-что такое след матрицы? след матрицы — это сумма её диагональных элементов.
-an edge of a graph is a pair of vertices that it joins.
-граф связен, когда каждая вершина достижима из каждой другой по пути.
-what is the trace of a matrix? the trace of a matrix is the sum of its diagonal entries.
-что такое вершина графа? вершина графа — это одна из его точек.
-a graph is connected when every vertex is reached from every other vertex by a path.
-след матрицы — это сумма её диагональных элементов.
-what is a vertex of a graph? a vertex of a graph is one of its points.
-что такое путь в графе? путь в графе — это цепь вершин, в которой каждая вершина соединена ребром со следующей.
-the trace of a matrix is the sum of its diagonal entries.
-вершина графа — это одна из его точек.
-what is a path in a graph? a path in a graph is a chain of vertices in which each vertex is joined to the next by an edge.
-что такое середина отрезка? середина отрезка — это точка на равном расстоянии от обоих его концов.
-a vertex of a graph is one of its points.
-путь в графе — это цепь вершин, в которой каждая вершина соединена ребром со следующей.
-what is the midpoint of a segment? the midpoint of a segment is the point at equal distance from both its ends.
-что такое линия плоскости Фано? линия плоскости Фано — это тройка её семи точек, и любые две точки лежат ровно на одной линии.
-a path in a graph is a chain of vertices in which each vertex is joined to the next by an edge.
-середина отрезка — это точка на равном расстоянии от обоих его концов.
-what is a line of the Fano plane? a line of the Fano plane is a triple of its seven points, and any two points lie on exactly one line.
-что такое степень вершины? степень вершины — это число рёбер при ней.
-the midpoint of a segment is the point at equal distance from both its ends.
-линия плоскости Фано — это тройка её семи точек, и любые две точки лежат ровно на одной линии.
-what is the degree of a vertex? the degree of a vertex is the number of edges at it.
-что такое расстояние между двумя точками? расстояние между двумя точками — это длина отрезка, который их соединяет.
-a line of the Fano plane is a triple of its seven points, and any two points lie on exactly one line.
+
 
 (−3, 4) shifted by (2, 0) is not (0, 4): it is (−1, 4).
 (4, 0) после сдвига на (−1, 2) — (3, 2): (4 + −1, 0 + 2).
@@ -673,73 +604,42 @@ what is the distance between (−4, 2) and (−7, −2)? the distance between (�
 середина отрезка (−2, −3) и (−4, −1) — (−3, −2): (−2 + −4) ÷ 2 = −3 и (−3 + −1) ÷ 2 = −2.
 the distance between (−4, 2) and (−7, −2) is 5: 3² + 4² = 5².
 
-the degree of 1 in graph 1-5, 2-5, 4-5 is not 2: it is 1.
-есть ли в графе 1-4, 2-4, 3-4, 4-5 путь от 1 до 5? в графе 1-4, 2-4, 3-4, 4-5 есть путь от 1 до 5 длины 2: 1-4-5.
-graph 1-3, 2-3, 3-4, 3-5 does not have the cycle 1-2-3-1: 1-2 is not an edge.
-graph 1-6, 2-5, 3-4 has a path from 1 to 6 of length 1: 1-6.
-what is the degree of 1 in graph 1-5, 2-5, 4-5 is not 2: it? the degree of 1 in graph 1-5, 2-5, 4-5 is not 2: it is 1.
-граф 1-4, 2-4, 3-4, 4-5 связен: из 1 достижима каждая вершина.
-в графе 1-6, 2-5, 3-4 6 вершин.
-in graph 1-6, 2-5, 3-4, is there a path from 1 to 6? graph 1-6, 2-5, 3-4 has a path from 1 to 6 of length 1: 1-6.
 graph 1-5, 2-5, 4-5 has a path from 1 to 5 of length 1: 1-5.
-в графе 1-4, 2-4, 3-4, 4-5 нет цикла 1-2-4-1: 1-2 не ребро.
-в графе 1-6, 2-5, 3-4 3 ребра.
-graph 1-6, 2-5, 3-4 does not have the cycle 1-2-6-1: 1-2 is not an edge.
-graph 1-5, 2-5, 4-5 is connected: every vertex is reached from 1.
-graph 1-6, 2-5, 3-4 has 6 vertices.
-сколько рёбер в графе 1-6, 2-5, 3-4? в графе 1-6, 2-5, 3-4 3 ребра.
-степень вершины 4 в графе 1-4, 2-3 — 1: его рёбра 1-4.
-graph 1-5, 2-5, 4-5 does not have the cycle 1-2-5-1: 1-2 is not an edge.
-how many vertices does graph 1-6, 2-5, 3-4 have? graph 1-6, 2-5, 3-4 has 6 vertices.
-в графе 1-6, 2-5, 3-4 есть путь от 1 до 6 длины 1: 1-6.
-в графе 1-4, 2-3 есть путь от 1 до 4 длины 1: 1-4.
-does graph 1-5, 2-5, 4-5 have the cycle 1-2-5-1? graph 1-5, 2-5, 4-5 does not have the cycle 1-2-5-1: 1-2 is not an edge.
-graph 1-6, 2-5, 3-4 has 3 edges.
-в графе 1-6, 2-5, 3-4 нет цикла 1-2-6-1: 1-2 не ребро.
-есть ли в графе 1-4, 2-3 путь от 1 до 4? в графе 1-4, 2-3 есть путь от 1 до 4 длины 1: 1-4.
-в графе 1-6, 2-5, 3-4 6 вершин.
-graph 1-6, 2-5, 3-4 has a path from 1 to 6 of length 1: 1-6.
 the degree of 1 in graph 1-4, 2-3 is 1: its edges are 1-4.
-в графе 1-4, 2-3 нет цикла 1-2-4-1: 1-2 не ребро.
-в графе 1-6, 2-5, 3-4 3 ребра.
-graph 1-6, 2-5, 3-4 does not have the cycle 1-2-6-1: 1-2 is not an edge.
-what is the degree of 1 in graph 1-4, 2-3? the degree of 1 in graph 1-4, 2-3 is 1: its edges are 1-4.
-the degree of 1 in graph 1-2, 1-4, 1-5 is not 4: it is 3.
-в графе 1-6, 2-5, 3-4 есть путь от 1 до 6 длины 1: 1-6.
-does graph 1-6, 2-5, 3-4 have the cycle 1-2-6-1? graph 1-6, 2-5, 3-4 does not have the cycle 1-2-6-1: 1-2 is not an edge.
-graph 1-4, 2-3 has a path from 1 to 4 of length 1: 1-4.
-graph 1-2, 1-4, 1-5 has a path from 1 to 5 of length 1: 1-5.
-есть ли в графе 1-6, 2-5, 3-4 путь от 1 до 6? в графе 1-6, 2-5, 3-4 есть путь от 1 до 6 длины 1: 1-6.
-степень вершины 2 в графе 1-4, 2-3 — 1: его рёбра 2-3.
-graph 1-4, 2-3 does not have the cycle 1-2-4-1: 1-2 is not an edge.
-in graph 1-2, 1-4, 1-5, is there a path from 1 to 5? graph 1-2, 1-4, 1-5 has a path from 1 to 5 of length 1: 1-5.
-в графе 1-6, 2-5, 3-4 нет цикла 1-2-6-1: 1-2 не ребро.
-в графе 1-4, 2-3 есть путь от 1 до 4 длины 1: 1-4.
-степень вершины 4 в графе 1-2, 2-3, 2-4, 2-5 — не 2: она 1.
+the degree of 1 in graph 1-5, 2-5, 4-5 is not 2: it is 1.
+is graph 1-3, 2-3, 3-4, 3-5 connected? graph 1-3, 2-3, 3-4, 3-5 is connected: every vertex is reached from 1.
+степень вершины 4 в графе 1-4, 2-3 — 1: его рёбра 1-4.
+graph 1-3, 2-3, 3-4, 3-5 has a path from 1 to 5 of length 2: 1-3-5.
 graph 1-2, 1-4, 1-5 is connected: every vertex is reached from 1.
+степень вершины 2 в графе 1-4, 2-3 — 1: его рёбра 2-3.
+graph 1-2, 1-4, 1-5 has a path from 1 to 5 of length 1: 1-5.
+how many vertices does graph 1-6, 2-5, 3-4 have? graph 1-6, 2-5, 3-4 has 6 vertices.
+есть ли в графе 1-4, 2-3 путь от 1 до 4? в графе 1-4, 2-3 есть путь от 1 до 4 длины 1: 1-4.
+степень вершины 3 в графе 1-4, 2-4, 3-4, 4-5 — не 2: она 1.
+in graph 1-6, 2-5, 3-4, is there a path from 1 to 6? graph 1-6, 2-5, 3-4 has a path from 1 to 6 of length 1: 1-6.
 the degree of 3 in graph 1-4, 2-3 is 1: its edges are 2-3.
-в графе 1-4, 2-3 нет цикла 1-2-4-1: 1-2 не ребро.
+в графе 1-2, 2-3, 2-4, 2-5 нет цикла 1-3-2-1: 1-3 не ребро.
+does graph 1-5, 2-5, 4-5 have the cycle 1-2-5-1? graph 1-5, 2-5, 4-5 does not have the cycle 1-2-5-1: 1-2 is not an edge.
 в графе 1-2, 2-3, 2-4, 2-5 есть путь от 1 до 5 длины 2: 1-2-5.
+graph 1-5, 2-5, 4-5 is connected: every vertex is reached from 1.
+what is the degree of 1 in graph 1-4, 2-3? the degree of 1 in graph 1-4, 2-3 is 1: its edges are 1-4.
+what is the degree of 1 in graph 1-5, 2-5, 4-5 is not 2: it? the degree of 1 in graph 1-5, 2-5, 4-5 is not 2: it is 1.
+graph 1-3, 2-3, 3-4, 3-5 does not have the cycle 1-2-3-1: 1-2 is not an edge.
+какова степень вершины 4 в графе 1-4, 2-3? степень вершины 4 в графе 1-4, 2-3 — 1: его рёбра 1-4.
+graph 1-3, 2-3, 3-4, 3-5 is connected: every vertex is reached from 1.
 graph 1-2, 1-4, 1-5 does not have the cycle 2-4-1-2: 2-4 is not an edge.
-graph 1-4, 2-3 has a path from 1 to 4 of length 1: 1-4.
-есть ли в графе 1-4, 2-3 цикл 1-2-4-1? в графе 1-4, 2-3 нет цикла 1-2-4-1: 1-2 не ребро.
-граф 1-2, 2-3, 2-4, 2-5 связен: из 1 достижима каждая вершина.
+the degree of 1 in graph 1-3, 2-3, 3-4, 3-5 is not 2: it is 1.
+in graph 1-2, 1-4, 1-5, is there a path from 1 to 5? graph 1-2, 1-4, 1-5 has a path from 1 to 5 of length 1: 1-5.
+does graph 1-6, 2-5, 3-4 have the cycle 1-2-6-1? graph 1-6, 2-5, 3-4 does not have the cycle 1-2-6-1: 1-2 is not an edge.
+the degree of 1 in graph 1-2, 1-4, 1-5 is not 4: it is 3.
+есть ли в графе 1-4, 2-4, 3-4, 4-5 путь от 1 до 5? в графе 1-4, 2-4, 3-4, 4-5 есть путь от 1 до 5 длины 2: 1-4-5.
 степень вершины 4 в графе 1-4, 2-3 — 1: его рёбра 1-4.
 in graph 1-4, 2-3, is there a path from 1 to 4? graph 1-4, 2-3 has a path from 1 to 4 of length 1: 1-4.
-the degree of 1 in graph 1-3, 2-3, 3-4, 3-5 is not 2: it is 1.
-в графе 1-2, 2-3, 2-4, 2-5 нет цикла 1-3-2-1: 1-3 не ребро.
-какова степень вершины 4 в графе 1-4, 2-3? степень вершины 4 в графе 1-4, 2-3 — 1: его рёбра 1-4.
-graph 1-4, 2-3 does not have the cycle 1-2-4-1: 1-2 is not an edge.
-graph 1-3, 2-3, 3-4, 3-5 has a path from 1 to 5 of length 2: 1-3-5.
 есть ли в графе 1-2, 2-3, 2-4, 2-5 цикл 1-3-2-1? в графе 1-2, 2-3, 2-4, 2-5 нет цикла 1-3-2-1: 1-3 не ребро.
-в графе 1-4, 2-3 есть путь от 1 до 4 длины 1: 1-4.
-степень вершины 3 в графе 1-4, 2-4, 3-4, 4-5 — не 2: она 1.
-graph 1-3, 2-3, 3-4, 3-5 is connected: every vertex is reached from 1.
-graph 1-6, 2-5, 3-4 has 6 vertices.
-в графе 1-4, 2-3 нет цикла 1-2-4-1: 1-2 не ребро.
-в графе 1-4, 2-4, 3-4, 4-5 есть путь от 1 до 5 длины 2: 1-4-5.
-is graph 1-3, 2-3, 3-4, 3-5 connected? graph 1-3, 2-3, 3-4, 3-5 is connected: every vertex is reached from 1.
-graph 1-6, 2-5, 3-4 has 3 edges.
+есть ли в графе 1-6, 2-5, 3-4 путь от 1 до 6? в графе 1-6, 2-5, 3-4 есть путь от 1 до 6 длины 1: 1-6.
+граф 1-2, 2-3, 2-4, 2-5 связен: из 1 достижима каждая вершина.
+graph 1-5, 2-5, 4-5 does not have the cycle 1-2-5-1: 1-2 is not an edge.
+степень вершины 4 в графе 1-2, 2-3, 2-4, 2-5 — не 2: она 1.
 
 Fano plane 124, 235, 346, 457, 561, 672, 713: points 5 and 6 lie on exactly one line, 561.
 which line of Fano plane 124, 235, 346, 457, 561, 672, 713 carries points 2 and 7? Fano plane 124, 235, 346, 457, 561, 672, 713: points 2 and 7 lie on exactly one line, 672.
@@ -803,46 +703,7 @@ what is column 2 of [0 3 / 0 3]? column 2 of [0 3 / 0 3] is (3, 3).
 столбец 1 матрицы [3 0 / −1 4] — (3, −1).
 the determinant of [2 3 / 1 3] is 3: 2 × 3 − 3 × 1 = 3.
 
-an edge of a graph is a pair of vertices that it joins.
-расстояние между двумя точками — это длина отрезка, который их соединяет.
-what is a line of the Fano plane? a line of the Fano plane is a triple of its seven points, and any two points lie on exactly one line.
-что такое путь в графе? путь в графе — это цепь вершин, в которой каждая вершина соединена ребром со следующей.
-the determinant of a matrix 2 by 2 is the product of its main diagonal minus the product of its other diagonal.
-степень вершины — это число рёбер при ней.
-what is the midpoint of a segment? the midpoint of a segment is the point at equal distance from both its ends.
-что такое вершина графа? вершина графа — это одна из его точек.
-the distance between two points is the length of the segment that joins them.
-линия плоскости Фано — это тройка её семи точек, и любые две точки лежат ровно на одной линии.
-what is a path in a graph? a path in a graph is a chain of vertices in which each vertex is joined to the next by an edge.
-что такое след матрицы? след матрицы — это сумма её диагональных элементов.
-the degree of a vertex is the number of edges at it.
-середина отрезка — это точка на равном расстоянии от обоих его концов.
-what is a vertex of a graph? a vertex of a graph is one of its points.
-когда граф связен? граф связен, когда каждая вершина достижима из каждой другой по пути.
-a line of the Fano plane is a triple of its seven points, and any two points lie on exactly one line.
-путь в графе — это цепь вершин, в которой каждая вершина соединена ребром со следующей.
-what is the trace of a matrix? the trace of a matrix is the sum of its diagonal entries.
-что такое ребро графа? ребро графа — это пара вершин, которые оно соединяет.
-the midpoint of a segment is the point at equal distance from both its ends.
-вершина графа — это одна из его точек.
-when is a graph connected? a graph is connected when every vertex is reached from every other vertex by a path.
-что такое определитель матрицы? определитель матрицы 2 на 2 — это произведение её главной диагонали минус произведение другой диагонали.
-a path in a graph is a chain of vertices in which each vertex is joined to the next by an edge.
-след матрицы — это сумма её диагональных элементов.
-what is an edge of a graph? an edge of a graph is a pair of vertices that it joins.
-что такое расстояние между двумя точками? расстояние между двумя точками — это длина отрезка, который их соединяет.
-a vertex of a graph is one of its points.
-граф связен, когда каждая вершина достижима из каждой другой по пути.
-what is the determinant of a matrix? the determinant of a matrix 2 by 2 is the product of its main diagonal minus the product of its other diagonal.
-что такое степень вершины? степень вершины — это число рёбер при ней.
-the trace of a matrix is the sum of its diagonal entries.
-ребро графа — это пара вершин, которые оно соединяет.
-what is the distance between two points? the distance between two points is the length of the segment that joins them.
-что такое линия плоскости Фано? линия плоскости Фано — это тройка её семи точек, и любые две точки лежат ровно на одной линии.
-a graph is connected when every vertex is reached from every other vertex by a path.
-определитель матрицы 2 на 2 — это произведение её главной диагонали минус произведение другой диагонали.
-what is the degree of a vertex? the degree of a vertex is the number of edges at it.
-что такое середина отрезка? середина отрезка — это точка на равном расстоянии от обоих его концов.
+
 
 (3, −3) shifted by (1, 0) is (4, −3): (3 + 1, −3 + 0).
 (2, 4) shifted by (−1, −2) is (1, 2): (2 + −1, 4 + −2).
@@ -880,120 +741,79 @@ the midpoint of (0, 0) and (0, −2) is (0, −1): (0 + 0) ÷ 2 = 0 and (0 + −
 (2, 4) после поворота на 180° против часовой стрелки вокруг начала координат — не (4, −2): это (−2, −4).
 расстояние между (1, 2) и (−14, 10) — 17: 15² + 8² = 17².
 
-graph 1-2, 3-4 has 2 edges.
-есть ли в графе 1-2, 3-4 путь от 1 до 4? пути от 1 до 4 в графе 1-2, 3-4 нет: рёбра их не соединяют.
-graph 1-2, 3-4 does not have the cycle 1-3-2-1: 1-3 is not an edge.
-the degree of 1 in graph 1-5, 2-5, 3-5 is 1: its edges are 1-5.
-в графе 1-4, 2-3, 5-6 нет цикла 1-2-4-1: 1-2 не ребро.
-в графе 1-2, 3-4 4 вершины.
-how many edges does graph 1-2, 3-4 have? graph 1-2, 3-4 has 2 edges.
-граф 1-2, 3-4 не связен: нет пути от 1 до 4.
-пути от 1 до 6 в графе 1-4, 2-3, 5-6 нет: рёбра их не соединяют.
-graph 1-4, 2-3, 5-6 is not connected: no path from 1 to 6.
-в графе 1-4, 2-3, 5-6 нет цикла 1-2-4-1: 1-2 не ребро.
-сколько вершин в графе 1-2, 3-4? в графе 1-2, 3-4 4 вершины.
-is graph 1-4, 3-4, 4-5 connected? graph 1-4, 3-4, 4-5 is connected: every vertex is reached from 1.
-the degree of 3 in graph 1-4, 2-3, 5-6 is not 2: it is 1.
-пути от 1 до 6 в графе 1-4, 2-3, 5-6 нет: рёбра их не соединяют.
-graph 1-4, 2-3, 5-6 is not connected: no path from 1 to 6.
-the degree of 1 in graph 1-4, 3-4, 4-5 is 1: its edges are 1-4.
-есть ли в графе 1-3, 2-3, 3-4, 3-5 путь от 1 до 5? в графе 1-3, 2-3, 3-4, 3-5 есть путь от 1 до 5 длины 2: 1-3-5.
-graph 1-2, 2-3, 2-4, 2-5 does not have the cycle 1-3-2-1: 1-3 is not an edge.
-the degree of 3 in graph 1-4, 2-3, 5-6 is not 2: it is 1.
-граф 1-4, 2-3, 5-6 не связен: нет пути от 1 до 6.
-graph 1-2, 3-4 does not have the cycle 1-3-2-1: 1-3 is not an edge.
-what is the degree of 1 in graph 1-2, 2-3, 2-4, 2-5? the degree of 1 in graph 1-2, 2-3, 2-4, 2-5 is 1: its edges are 1-2.
-граф 1-2, 1-3, 1-4, 1-5 связен: из 1 достижима каждая вершина.
-graph 1-5, 2-5, 3-5 does not have the cycle 1-2-5-1: 1-2 is not an edge.
-there is no path from 1 to 4 in graph 1-2, 3-4: the edges do not join them.
-граф 1-2, 3-4 не связен: нет пути от 1 до 4.
-does graph 1-2, 3-4 have the cycle 1-3-2-1? graph 1-2, 3-4 does not have the cycle 1-3-2-1: 1-3 is not an edge.
-graph 1-5, 2-5, 3-5 has a path from 1 to 5 of length 1: 1-5.
-graph 1-2, 3-4 has 4 vertices.
-в графе 1-2, 3-4 2 ребра.
-there is no path from 1 to 4 in graph 1-2, 3-4: the edges do not join them.
-связен ли граф 1-2, 3-4? граф 1-2, 3-4 не связен: нет пути от 1 до 4.
-есть ли в графе 1-4, 2-3, 5-6 путь от 1 до 6? пути от 1 до 6 в графе 1-4, 2-3, 5-6 нет: рёбра их не соединяют.
-graph 1-4, 2-3, 5-6 does not have the cycle 1-2-4-1: 1-2 is not an edge.
-graph 1-2, 3-4 has 4 vertices.
-в графе 1-2, 3-4 2 ребра.
-graph 1-4, 3-4, 4-5 does not have the cycle 1-3-4-1: 1-3 is not an edge.
-what is the degree of 3 in graph 1-4, 2-3, 5-6 is not 2: it? the degree of 3 in graph 1-4, 2-3, 5-6 is not 2: it is 1.
-граф 1-4, 2-3, 5-6 не связен: нет пути от 1 до 6.
-graph 1-4, 2-3, 5-6 does not have the cycle 1-2-4-1: 1-2 is not an edge.
-graph 1-4, 3-4, 4-5 has a path from 1 to 5 of length 2: 1-4-5.
-граф 1-3, 2-3, 3-4, 3-5 связен: из 1 достижима каждая вершина.
-does graph 1-2, 2-3, 2-4, 2-5 have the cycle 1-3-2-1? graph 1-2, 2-3, 2-4, 2-5 does not have the cycle 1-3-2-1: 1-3 is not an edge.
-there is no path from 1 to 6 in graph 1-4, 2-3, 5-6: the edges do not join them.
-в графе 1-4, 2-3, 5-6 нет цикла 1-2-4-1: 1-2 не ребро.
-степень вершины 3 в графе 1-3, 2-3, 3-4, 3-5 — 4: его рёбра 1-3, 2-3, 3-4, 3-5.
-graph 1-2, 2-3, 2-4, 2-5 has a path from 1 to 5 of length 2: 1-2-5.
-связен ли граф 1-2, 1-3, 1-4, 1-5? граф 1-2, 1-3, 1-4, 1-5 связен: из 1 достижима каждая вершина.
-степень вершины 6 в графе 1-4, 2-3, 5-6 — не 2: она 1.
-graph 1-2, 3-4 is not connected: no path from 1 to 4.
-в графе 1-2, 3-4 нет цикла 1-3-2-1: 1-3 не ребро.
-степень вершины 4 в графе 1-2, 1-3, 1-4, 1-5 — 1: его рёбра 1-4.
-in graph 1-5, 2-5, 3-5, is there a path from 1 to 5? graph 1-5, 2-5, 3-5 has a path from 1 to 5 of length 1: 1-5.
-how many vertices does graph 1-2, 3-4 have? graph 1-2, 3-4 has 4 vertices.
-пути от 1 до 4 в графе 1-2, 3-4 нет: рёбра их не соединяют.
-graph 1-2, 3-4 is not connected: no path from 1 to 4.
-в графе 1-2, 3-4 нет цикла 1-3-2-1: 1-3 не ребро.
-граф 1-4, 2-3, 5-6 не связен: нет пути от 1 до 6.
 does graph 1-4, 2-3, 5-6 have the cycle 1-2-4-1? graph 1-4, 2-3, 5-6 does not have the cycle 1-2-4-1: 1-2 is not an edge.
-graph 1-2, 3-4 has 2 edges.
-пути от 1 до 4 в графе 1-2, 3-4 нет: рёбра их не соединяют.
-степень вершины 6 в графе 1-4, 2-3, 5-6 — не 2: она 1.
-there is no path from 1 to 6 in graph 1-4, 2-3, 5-6: the edges do not join them.
-связен ли граф 1-4, 2-3, 5-6? граф 1-4, 2-3, 5-6 не связен: нет пути от 1 до 6.
 в графе 1-2, 3-4 4 вершины.
-graph 1-4, 3-4, 4-5 is connected: every vertex is reached from 1.
-в графе 1-3, 2-3, 3-4, 3-5 нет цикла 1-2-3-1: 1-2 не ребро.
-степень вершины 6 в графе 1-4, 2-3, 5-6 — не 2: она 1.
-in graph 1-4, 2-3, 5-6, is there a path from 1 to 6? there is no path from 1 to 6 in graph 1-4, 2-3, 5-6: the edges do not join them.
-есть ли в графе 1-4, 2-3, 5-6 цикл 1-2-4-1? в графе 1-4, 2-3, 5-6 нет цикла 1-2-4-1: 1-2 не ребро.
-в графе 1-3, 2-3, 3-4, 3-5 есть путь от 1 до 5 длины 2: 1-3-5.
+степень вершины 3 в графе 1-3, 2-3, 3-4, 3-5 — 4: его рёбра 1-3, 2-3, 3-4, 3-5.
+граф 1-2, 1-3, 1-4, 1-5 связен: из 1 достижима каждая вершина.
+how many vertices does graph 1-2, 3-4 have? graph 1-2, 3-4 has 4 vertices.
+how many edges does graph 1-2, 3-4 have? graph 1-2, 3-4 has 2 edges.
+is graph 1-4, 3-4, 4-5 connected? graph 1-4, 3-4, 4-5 is connected: every vertex is reached from 1.
+связен ли граф 1-4, 2-3, 5-6? граф 1-4, 2-3, 5-6 не связен: нет пути от 1 до 6.
+the degree of 1 in graph 1-4, 3-4, 4-5 is 1: its edges are 1-4.
 graph 1-2, 2-3, 2-4, 2-5 is connected: every vertex is reached from 1.
-в графе 1-2, 1-3, 1-4, 1-5 нет цикла 2-3-1-2: 2-3 не ребро.
-пути от 1 до 6 в графе 1-4, 2-3, 5-6 нет: рёбра их не соединяют.
-is graph 1-2, 3-4 connected? graph 1-2, 3-4 is not connected: no path from 1 to 4.
-the degree of 1 in graph 1-2, 2-3, 2-4, 2-5 is 1: its edges are 1-2.
-в графе 1-2, 1-3, 1-4, 1-5 есть путь от 1 до 5 длины 1: 1-5.
 graph 1-5, 2-5, 3-5 is connected: every vertex is reached from 1.
+the degree of 1 in graph 1-2, 2-3, 2-4, 2-5 is 1: its edges are 1-2.
+the degree of 1 in graph 1-5, 2-5, 3-5 is 1: its edges are 1-5.
+в графе 1-2, 3-4 4 вершины.
+сколько вершин в графе 1-2, 3-4? в графе 1-2, 3-4 4 вершины.
+есть ли в графе 1-3, 2-3, 3-4, 3-5 путь от 1 до 5? в графе 1-3, 2-3, 3-4, 3-5 есть путь от 1 до 5 длины 2: 1-3-5.
+связен ли граф 1-2, 1-3, 1-4, 1-5? граф 1-2, 1-3, 1-4, 1-5 связен: из 1 достижима каждая вершина.
+graph 1-2, 3-4 has 2 edges.
+степень вершины 4 в графе 1-2, 1-3, 1-4, 1-5 — 1: его рёбра 1-4.
+graph 1-4, 3-4, 4-5 does not have the cycle 1-3-4-1: 1-3 is not an edge.
+graph 1-2, 3-4 has 4 vertices.
+graph 1-4, 3-4, 4-5 has a path from 1 to 5 of length 2: 1-4-5.
+graph 1-2, 2-3, 2-4, 2-5 does not have the cycle 1-3-2-1: 1-3 is not an edge.
+graph 1-5, 2-5, 3-5 does not have the cycle 1-2-5-1: 1-2 is not an edge.
+what is the degree of 1 in graph 1-2, 2-3, 2-4, 2-5? the degree of 1 in graph 1-2, 2-3, 2-4, 2-5 is 1: its edges are 1-2.
+graph 1-5, 2-5, 3-5 has a path from 1 to 5 of length 1: 1-5.
+в графе 1-2, 3-4 2 ребра.
+в графе 1-2, 3-4 2 ребра.
+what is the degree of 3 in graph 1-4, 2-3, 5-6 is not 2: it? the degree of 3 in graph 1-4, 2-3, 5-6 is not 2: it is 1.
+в графе 1-2, 1-3, 1-4, 1-5 нет цикла 2-3-1-2: 2-3 не ребро.
+is graph 1-2, 3-4 connected? graph 1-2, 3-4 is not connected: no path from 1 to 4.
+в графе 1-2, 1-3, 1-4, 1-5 есть путь от 1 до 5 длины 1: 1-5.
+graph 1-2, 3-4 has 4 vertices.
+graph 1-2, 3-4 has 2 edges.
+graph 1-4, 3-4, 4-5 is connected: every vertex is reached from 1.
+does graph 1-2, 2-3, 2-4, 2-5 have the cycle 1-3-2-1? graph 1-2, 2-3, 2-4, 2-5 does not have the cycle 1-3-2-1: 1-3 is not an edge.
+есть ли в графе 1-4, 2-3, 5-6 цикл 1-2-4-1? в графе 1-4, 2-3, 5-6 нет цикла 1-2-4-1: 1-2 не ребро.
+graph 1-2, 2-3, 2-4, 2-5 has a path from 1 to 5 of length 2: 1-2-5.
+in graph 1-5, 2-5, 3-5, is there a path from 1 to 5? graph 1-5, 2-5, 3-5 has a path from 1 to 5 of length 1: 1-5.
+есть ли в графе 1-2, 3-4 путь от 1 до 4? пути от 1 до 4 в графе 1-2, 3-4 нет: рёбра их не соединяют.
+связен ли граф 1-2, 3-4? граф 1-2, 3-4 не связен: нет пути от 1 до 4.
 
-плоскость Фано 124, 235, 346, 457, 561, 672, 713: линии 124 и 235 пересекаются ровно в одной точке, 2.
-how many lines of Fano plane 124, 235, 346, 457, 561, 672, 713 pass through point 6? Fano plane 124, 235, 346, 457, 561, 672, 713: point 6 lies on exactly 3 lines: 346, 561, 672.
-Fano plane 124, 235, 346, 457, 561, 672, 713: lines 235 and 346 meet at exactly one point, 3.
-плоскость Фано 124, 235, 346, 457, 561, 672, 713: точки 7 и 4 не лежат на линии 124: она несёт 1, 2, 4.
-плоскость Фано 124, 235, 346, 457, 561, 672, 713: точки 3 и 4 лежат ровно на одной линии, 346.
-Fano plane 124, 235, 346, 457, 561, 672, 713: point 5 lies on exactly 3 lines: 235, 457, 561.
-Fano plane 124, 235, 346, 457, 561, 672, 713: points 4 and 5 lie on exactly one line, 457.
-плоскость Фано 124, 235, 346, 457, 561, 672, 713: линии 672 и 713 пересекаются ровно в одной точке, 7.
-how many lines of Fano plane 124, 235, 346, 457, 561, 672, 713 pass through point 4? Fano plane 124, 235, 346, 457, 561, 672, 713: point 4 lies on exactly 3 lines: 124, 346, 457.
-Fano plane 124, 235, 346, 457, 561, 672, 713: lines 713 and 124 meet at exactly one point, 1.
-плоскость Фано 124, 235, 346, 457, 561, 672, 713: точки 5 и 7 не лежат на линии 124: она несёт 1, 2, 4.
-плоскость Фано 124, 235, 346, 457, 561, 672, 713: точки 1 и 6 лежат ровно на одной линии, 561.
-Fano plane 124, 235, 346, 457, 561, 672, 713: point 6 lies on exactly 3 lines: 346, 561, 672.
 Fano plane 124, 235, 346, 457, 561, 672, 713: points 2 and 1 lie on exactly one line, 124.
+плоскость Фано 124, 235, 346, 457, 561, 672, 713: точки 7 и 4 не лежат на линии 124: она несёт 1, 2, 4.
+Fano plane 124, 235, 346, 457, 561, 672, 713: points 4 and 5 lie on exactly one line, 457.
+плоскость Фано 124, 235, 346, 457, 561, 672, 713: точки 6 и 2 не лежат на линии 124: она несёт 1, 2, 4.
+плоскость Фано 124, 235, 346, 457, 561, 672, 713: точки 5 и 7 не лежат на линии 124: она несёт 1, 2, 4.
+плоскость Фано 124, 235, 346, 457, 561, 672, 713: точки 1 и 6 не лежат на линии 124: она несёт 1, 2, 4.
 плоскость Фано 124, 235, 346, 457, 561, 672, 713: линии 713 и 124 пересекаются ровно в одной точке, 1.
+плоскость Фано 124, 235, 346, 457, 561, 672, 713: точки 3 и 4 не лежат на линии 124: она несёт 1, 2, 4.
+плоскость Фано 124, 235, 346, 457, 561, 672, 713: линии 672 и 713 пересекаются ровно в одной точке, 7.
+плоскость Фано 124, 235, 346, 457, 561, 672, 713: линии 561 и 672 пересекаются ровно в одной точке, 6.
+плоскость Фано 124, 235, 346, 457, 561, 672, 713: линии 124 и 235 пересекаются ровно в одной точке, 2.
+плоскость Фано 124, 235, 346, 457, 561, 672, 713: точки 7 и 4 лежат ровно на одной линии, 457.
+плоскость Фано 124, 235, 346, 457, 561, 672, 713: линии 346 и 457 пересекаются ровно в одной точке, 4.
+плоскость Фано 124, 235, 346, 457, 561, 672, 713: точки 6 и 2 лежат ровно на одной линии, 672.
+плоскость Фано 124, 235, 346, 457, 561, 672, 713: точки 5 и 7 лежат ровно на одной линии, 457.
+плоскость Фано 124, 235, 346, 457, 561, 672, 713: точки 1 и 6 лежат ровно на одной линии, 561.
+how many lines of Fano plane 124, 235, 346, 457, 561, 672, 713 pass through point 6? Fano plane 124, 235, 346, 457, 561, 672, 713: point 6 lies on exactly 3 lines: 346, 561, 672.
+плоскость Фано 124, 235, 346, 457, 561, 672, 713: точки 3 и 4 лежат ровно на одной линии, 346.
+how many lines of Fano plane 124, 235, 346, 457, 561, 672, 713 pass through point 5? Fano plane 124, 235, 346, 457, 561, 672, 713: point 5 lies on exactly 3 lines: 235, 457, 561.
+how many lines of Fano plane 124, 235, 346, 457, 561, 672, 713 pass through point 4? Fano plane 124, 235, 346, 457, 561, 672, 713: point 4 lies on exactly 3 lines: 124, 346, 457.
+how many lines of Fano plane 124, 235, 346, 457, 561, 672, 713 pass through point 7? Fano plane 124, 235, 346, 457, 561, 672, 713: point 7 lies on exactly 3 lines: 457, 672, 713.
+Fano plane 124, 235, 346, 457, 561, 672, 713: point 6 lies on exactly 3 lines: 346, 561, 672.
 how many lines of Fano plane 124, 235, 346, 457, 561, 672, 713 pass through point 2? Fano plane 124, 235, 346, 457, 561, 672, 713: point 2 lies on exactly 3 lines: 124, 235, 672.
 Fano plane 124, 235, 346, 457, 561, 672, 713: lines 561 and 672 meet at exactly one point, 6.
-плоскость Фано 124, 235, 346, 457, 561, 672, 713: точки 3 и 4 не лежат на линии 124: она несёт 1, 2, 4.
-плоскость Фано 124, 235, 346, 457, 561, 672, 713: точки 6 и 2 лежат ровно на одной линии, 672.
 Fano plane 124, 235, 346, 457, 561, 672, 713: point 4 lies on exactly 3 lines: 124, 346, 457.
-Fano plane 124, 235, 346, 457, 561, 672, 713: points 7 and 4 lie on exactly one line, 457.
-плоскость Фано 124, 235, 346, 457, 561, 672, 713: линии 561 и 672 пересекаются ровно в одной точке, 6.
-how many lines of Fano plane 124, 235, 346, 457, 561, 672, 713 pass through point 7? Fano plane 124, 235, 346, 457, 561, 672, 713: point 7 lies on exactly 3 lines: 457, 672, 713.
+Fano plane 124, 235, 346, 457, 561, 672, 713: lines 713 and 124 meet at exactly one point, 1.
 Fano plane 124, 235, 346, 457, 561, 672, 713: lines 672 and 713 meet at exactly one point, 7.
-плоскость Фано 124, 235, 346, 457, 561, 672, 713: точки 1 и 6 не лежат на линии 124: она несёт 1, 2, 4.
-плоскость Фано 124, 235, 346, 457, 561, 672, 713: точки 7 и 4 лежат ровно на одной линии, 457.
-Fano plane 124, 235, 346, 457, 561, 672, 713: point 2 lies on exactly 3 lines: 124, 235, 672.
+Fano plane 124, 235, 346, 457, 561, 672, 713: lines 235 and 346 meet at exactly one point, 3.
 Fano plane 124, 235, 346, 457, 561, 672, 713: points 5 and 7 lie on exactly one line, 457.
-плоскость Фано 124, 235, 346, 457, 561, 672, 713: линии 346 и 457 пересекаются ровно в одной точке, 4.
-how many lines of Fano plane 124, 235, 346, 457, 561, 672, 713 pass through point 5? Fano plane 124, 235, 346, 457, 561, 672, 713: point 5 lies on exactly 3 lines: 235, 457, 561.
 Fano plane 124, 235, 346, 457, 561, 672, 713: lines 457 and 561 meet at exactly one point, 5.
-плоскость Фано 124, 235, 346, 457, 561, 672, 713: точки 6 и 2 не лежат на линии 124: она несёт 1, 2, 4.
-плоскость Фано 124, 235, 346, 457, 561, 672, 713: точки 5 и 7 лежат ровно на одной линии, 457.
-Fano plane 124, 235, 346, 457, 561, 672, 713: point 7 lies on exactly 3 lines: 457, 672, 713.
+Fano plane 124, 235, 346, 457, 561, 672, 713: points 7 and 4 lie on exactly one line, 457.
 Fano plane 124, 235, 346, 457, 561, 672, 713: points 6 and 2 lie on exactly one line, 672.
 
 matrix [1 0 / 1 1] transposed is not [1 0 / 1 1]: it is [1 1 / 0 1].
@@ -1018,43 +838,4 @@ what is [0 2 / −2 3] + [0 0 / 2 −1]? [0 2 / −2 3] + [0 0 / 2 −1] = [0 2 
 след матрицы [−1 3 / 0 4] — не 4: он 3.
 [3 2 / 2 3] · (2, 1) = (8, 7): 3 × 2 + 2 × 1 = 8 and 2 × 2 + 3 × 1 = 7.
 
-a path in a graph is a chain of vertices in which each vertex is joined to the next by an edge.
-что такое след матрицы? след матрицы — это сумма её диагональных элементов.
-what is the degree of a vertex? the degree of a vertex is the number of edges at it.
-след матрицы — это сумма её диагональных элементов.
-the degree of a vertex is the number of edges at it.
-что такое середина отрезка? середина отрезка — это точка на равном расстоянии от обоих его концов.
-what is an edge of a graph? an edge of a graph is a pair of vertices that it joins.
-середина отрезка — это точка на равном расстоянии от обоих его концов.
-an edge of a graph is a pair of vertices that it joins.
-что такое расстояние между двумя точками? расстояние между двумя точками — это длина отрезка, который их соединяет.
-what is a vertex of a graph? a vertex of a graph is one of its points.
-расстояние между двумя точками — это длина отрезка, который их соединяет.
-a vertex of a graph is one of its points.
-когда граф связен? граф связен, когда каждая вершина достижима из каждой другой по пути.
-what is a line of the Fano plane? a line of the Fano plane is a triple of its seven points, and any two points lie on exactly one line.
-граф связен, когда каждая вершина достижима из каждой другой по пути.
-a line of the Fano plane is a triple of its seven points, and any two points lie on exactly one line.
-что такое путь в графе? путь в графе — это цепь вершин, в которой каждая вершина соединена ребром со следующей.
-what is the determinant of a matrix? the determinant of a matrix 2 by 2 is the product of its main diagonal minus the product of its other diagonal.
-путь в графе — это цепь вершин, в которой каждая вершина соединена ребром со следующей.
-the determinant of a matrix 2 by 2 is the product of its main diagonal minus the product of its other diagonal.
-что такое степень вершины? степень вершины — это число рёбер при ней.
-what is the trace of a matrix? the trace of a matrix is the sum of its diagonal entries.
-степень вершины — это число рёбер при ней.
-the trace of a matrix is the sum of its diagonal entries.
-что такое ребро графа? ребро графа — это пара вершин, которые оно соединяет.
-what is the midpoint of a segment? the midpoint of a segment is the point at equal distance from both its ends.
-ребро графа — это пара вершин, которые оно соединяет.
-the midpoint of a segment is the point at equal distance from both its ends.
-что такое вершина графа? вершина графа — это одна из его точек.
-what is the distance between two points? the distance between two points is the length of the segment that joins them.
-вершина графа — это одна из его точек.
-the distance between two points is the length of the segment that joins them.
-что такое линия плоскости Фано? линия плоскости Фано — это тройка её семи точек, и любые две точки лежат ровно на одной линии.
-when is a graph connected? a graph is connected when every vertex is reached from every other vertex by a path.
-линия плоскости Фано — это тройка её семи точек, и любые две точки лежат ровно на одной линии.
-a graph is connected when every vertex is reached from every other vertex by a path.
-что такое определитель матрицы? определитель матрицы 2 на 2 — это произведение её главной диагонали минус произведение другой диагонали.
-what is a path in a graph? a path in a graph is a chain of vertices in which each vertex is joined to the next by an edge.
-определитель матрицы 2 на 2 — это произведение её главной диагонали минус произведение другой диагонали.
+
