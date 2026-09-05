@@ -1,0 +1,87 @@
+# BESEDA-11 — ОДИННАДЦАТАЯ ПОЛОСА: формы SVAMP на девяти языках (список d5 и атлас holon — в языках).
+#
+# Дом форм SVAMP закрыл живую полосу по-английски (с русскими близнецами). Слово владельца — всякий
+# язык в избытке: эта полоса спрашивает те же формы в девяти языках: скрытое «несколько», итог
+# «всего», местоимение «из них», условие «если отдаст», «сначала … потом», передача «кому», «сделал N
+# отжиманий», «добавил N». Строка «вопрос ||| подстрока ожидаемого ответа».
+#
+# GENUS: SOME-GIVEN
+у Анны было 12 монет. она отдала несколько. теперь у неё осталось 7 монет. сколько монет она отдала? ||| 5
+Ann had 12 coins. she gave some of them away. now she has 7 coins left. how many coins did she give away? ||| 5
+Anna hatte 12 Münzen. sie gab einige weg. jetzt hat sie noch 7 Münzen. wie viele Münzen gab sie weg? ||| 5
+Anne avait 12 pièces. elle en a donné quelques-unes. maintenant il lui en reste 7. combien de pièces a-t-elle données ? ||| 5
+Ana tenía 12 monedas. dio algunas. ahora le quedan 7 monedas. ¿cuántas monedas dio? ||| 5
+Anna aveva 12 monete. ne ha date alcune. ora le restano 7 monete. quante monete ha dato? ||| 5
+a Ana tinha 12 moedas. deu algumas. agora tem 7 moedas. quantas moedas deu? ||| 5
+Anna had 12 munten. ze gaf er een paar weg. nu heeft ze er nog 7. hoeveel munten gaf ze weg? ||| 5
+Anna miała 12 monet. oddała kilka. teraz ma 7 monet. ile monet oddała? ||| 5
+# GENUS: TOTAL-HEAD
+у Анны 12 красных монет и 5 синих монет. сколько монет у Анны всего? ||| 17
+Ann has 12 red coins and 5 blue coins. how many coins does Ann have in all? ||| 17
+Anna hat 12 rote Münzen und 5 blaue Münzen. wie viele Münzen hat Anna insgesamt? ||| 17
+Anne a 12 pièces rouges et 5 pièces bleues. combien de pièces Anne a-t-elle en tout ? ||| 17
+Ana tiene 12 monedas rojas y 5 monedas azules. ¿cuántas monedas tiene Ana en total? ||| 17
+Anna ha 12 monete rosse e 5 monete blu. quante monete ha Anna in tutto? ||| 17
+a Ana tem 12 moedas vermelhas e 5 moedas azuis. quantas moedas tem a Ana no total? ||| 17
+Anna heeft 12 rode munten en 5 blauwe munten. hoeveel munten heeft Anna in totaal? ||| 17
+Anna ma 12 czerwonych monet i 5 niebieskich monet. ile monet ma Anna razem? ||| 17
+# GENUS: OF-THEM
+у Анны было 12 монет. она отдала 5 из них Вере. сколько монет у неё теперь? ||| 7
+Ann had 12 coins. she gave 5 of them to Ben. how many coins does she have now? ||| 7
+Anna hatte 12 Münzen. sie gab 5 davon an Ben. wie viele Münzen hat sie jetzt? ||| 7
+Anne avait 12 pièces. elle en a donné 5 à Louis. combien de pièces a-t-elle maintenant ? ||| 7
+Ana tenía 12 monedas. dio 5 de ellas a Luis. ¿cuántas monedas tiene ahora? ||| 7
+Anna aveva 12 monete. ne ha date 5 a Luca. quante monete ha adesso? ||| 7
+a Ana tinha 12 moedas. deu 5 delas ao Luís. quantas moedas tem agora? ||| 7
+Anna had 12 munten. ze gaf er 5 aan Ben. hoeveel munten heeft ze nu? ||| 7
+Anna miała 12 monet. oddała 5 z nich Janowi. ile monet ma teraz? ||| 7
+# GENUS: IF-GIVES
+у Анны 12 монет. если она отдаст 5, сколько у неё останется? ||| 7
+Ann has 12 coins. if she gives away 5, how many will she have? ||| 7
+Anna hat 12 Münzen. wenn sie 5 weggibt, wie viele wird sie haben? ||| 7
+Anne a 12 pièces. si elle en donne 5, combien lui en restera-t-il ? ||| 7
+Ana tiene 12 monedas. si da 5, ¿cuántas le quedarán? ||| 7
+Anna ha 12 monete. se ne dà 5, quante ne avrà? ||| 7
+a Ana tem 12 moedas. se der 5, quantas ficará com? ||| 7
+Anna heeft 12 munten. als ze er 5 weggeeft, hoeveel heeft ze dan? ||| 7
+Anna ma 12 monet. jeśli odda 5, ile jej zostanie? ||| 7
+# GENUS: FIRST-THEN
+сначала у Анны было 12 монет. потом она получила ещё 5. сколько монет у неё теперь? ||| 17
+at first Ann had 12 coins. then she got 5 more. how many coins does she have now? ||| 17
+zuerst hatte Anna 12 Münzen. dann bekam sie 5 mehr. wie viele Münzen hat sie jetzt? ||| 17
+d'abord Anne avait 12 pièces. puis elle en a reçu 5 de plus. combien de pièces a-t-elle maintenant ? ||| 17
+al principio Ana tenía 12 monedas. luego recibió 5 más. ¿cuántas monedas tiene ahora? ||| 17
+all'inizio Anna aveva 12 monete. poi ne ha ricevute altre 5. quante monete ha adesso? ||| 17
+no início a Ana tinha 12 moedas. depois recebeu mais 5. quantas moedas tem agora? ||| 17
+eerst had Anna 12 munten. daarna kreeg ze er 5 bij. hoeveel munten heeft ze nu? ||| 17
+najpierw Anna miała 12 monet. potem dostała jeszcze 5. ile monet ma teraz? ||| 17
+# GENUS: GAVE-TO
+у Анны было 12 монет. она отдала 5 монет Вере. сколько монет у Анны теперь? ||| 7
+Ann had 12 coins. she gave 5 coins to Ben. how many coins does Ann have now? ||| 7
+Anna hatte 12 Münzen. sie gab Ben 5 Münzen. wie viele Münzen hat Anna jetzt? ||| 7
+Anne avait 12 pièces. elle a donné 5 pièces à Louis. combien de pièces Anne a-t-elle maintenant ? ||| 7
+Ana tenía 12 monedas. dio 5 monedas a Luis. ¿cuántas monedas tiene Ana ahora? ||| 7
+Anna aveva 12 monete. ha dato 5 monete a Luca. quante monete ha Anna adesso? ||| 7
+a Ana tinha 12 moedas. deu 5 moedas ao Luís. quantas moedas tem a Ana agora? ||| 7
+Anna had 12 munten. ze gaf 5 munten aan Ben. hoeveel munten heeft Anna nu? ||| 7
+Anna miała 12 monet. oddała 5 monet Janowi. ile monet ma Anna teraz? ||| 7
+# GENUS: DID-PUSHUPS
+Ваня сделал 12 отжиманий и 5 скручиваний. сколько отжиманий сделал Ваня? ||| 12
+Ben did 12 push-ups and 5 crunches. how many push-ups did Ben do? ||| 12
+Ben machte 12 Liegestütze und 5 Sit-ups. wie viele Liegestütze machte Ben? ||| 12
+Louis a fait 12 pompes et 5 abdos. combien de pompes Louis a-t-il faites ? ||| 12
+Luis hizo 12 flexiones y 5 abdominales. ¿cuántas flexiones hizo Luis? ||| 12
+Luca ha fatto 12 flessioni e 5 addominali. quante flessioni ha fatto Luca? ||| 12
+o Luís fez 12 flexões e 5 abdominais. quantas flexões fez o Luís? ||| 12
+Ben deed 12 push-ups en 5 sit-ups. hoeveel push-ups deed Ben? ||| 12
+Jan zrobił 12 pompek i 5 brzuszków. ile pompek zrobił Jan? ||| 12
+# GENUS: ADDED
+у Анны было 12 приложений в телефоне. она добавила 5 приложений. сколько приложений у неё теперь? ||| 17
+Ann had 12 apps on the phone. she added 5 new apps. how many apps does she have now? ||| 17
+Anna hatte 12 Apps auf dem Handy. sie fügte 5 neue Apps hinzu. wie viele Apps hat sie jetzt? ||| 17
+Anne avait 12 applications sur le téléphone. elle a ajouté 5 nouvelles applications. combien d'applications a-t-elle maintenant ? ||| 17
+Ana tenía 12 aplicaciones en el teléfono. añadió 5 aplicaciones nuevas. ¿cuántas aplicaciones tiene ahora? ||| 17
+Anna aveva 12 app sul telefono. ha aggiunto 5 nuove app. quante app ha adesso? ||| 17
+a Ana tinha 12 aplicações no telemóvel. adicionou 5 aplicações novas. quantas aplicações tem agora? ||| 17
+Anna had 12 apps op de telefoon. ze voegde 5 nieuwe apps toe. hoeveel apps heeft ze nu? ||| 17
+Anna miała 12 aplikacji w telefonie. dodała 5 nowych aplikacji. ile aplikacji ma teraz? ||| 17
