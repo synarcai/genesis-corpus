@@ -1,0 +1,88 @@
+# BESEDA-8 — ВОСЬМАЯ ПОЛОСА БЕСЕДЫ: чем человек проверяет, что собеседник знает СВОИ ЯЗЫКИ и СЕБЯ.
+#
+# Семь полос спрашивали о мире и числе. Эта спрашивает о самом собеседнике и его языках: перевод
+# слова на другой язык, как сказать «спасибо» по-французски, на каком языке с ним говорят, сколько
+# языков он знает, умеет ли он считать (с показом), может ли ошибаться, сколько ему лет, человек ли
+# он. Девять языков; строка «вопрос ||| подстрока ожидаемого ответа»; без «|||» — довольно того,
+# чтобы ответ был и был обоснован.
+#
+# GENUS: TRANSLATE-WORD
+как будет «кот» по-английски? ||| cat
+what is "cat" in russian? ||| кот
+was heißt „Katze“ auf Englisch? ||| cat
+comment dit-on « chat » en anglais ? ||| cat
+¿cómo se dice «gato» en inglés? ||| cat
+come si dice «gatto» in inglese? ||| cat
+como se diz «gato» em inglês? ||| cat
+wat is "kat" in het Engels? ||| cat
+jak jest „kot” po angielsku? ||| cat
+# GENUS: SAY-THANKS-IN
+как сказать «спасибо» по-французски? ||| merci
+how do you say "thank you" in french? ||| merci
+wie sagt man „danke“ auf Französisch? ||| merci
+comment dit-on « merci » en anglais ? ||| thank you
+¿cómo se dice «gracias» en francés? ||| merci
+come si dice «grazie» in francese? ||| merci
+como se diz «obrigado» em francês? ||| merci
+hoe zeg je "dank je" in het Frans? ||| merci
+jak powiedzieć „dziękuję” po francusku? ||| merci
+# GENUS: WHICH-LANGUAGE
+на каком языке я говорю? ||| русск
+what language am i speaking? ||| english
+welche Sprache spreche ich? ||| Deutsch
+quelle langue est-ce que je parle ? ||| français
+¿qué idioma estoy hablando? ||| español
+che lingua sto parlando? ||| italiano
+que língua estou a falar? ||| português
+welke taal spreek ik? ||| Nederlands
+w jakim języku mówię? ||| polsk
+# GENUS: HOW-MANY-LANGUAGES
+сколько языков ты знаешь? ||| девять
+how many languages do you know? ||| nine
+wie viele Sprachen kennst du? ||| neun
+combien de langues connais-tu ? ||| neuf
+¿cuántos idiomas conoces? ||| nueve
+quante lingue conosci? ||| nove
+quantas línguas conheces? ||| nove
+hoeveel talen ken je? ||| negen
+ile języków znasz? ||| dziewięć
+# GENUS: CAN-YOU-COUNT
+ты умеешь считать? ||| да
+can you count? ||| yes
+kannst du zählen? ||| ja
+sais-tu compter ? ||| oui
+¿sabes contar? ||| sí
+sai contare? ||| sì
+sabes contar? ||| sim
+kun je tellen? ||| ja
+umiesz liczyć? ||| tak
+# GENUS: CAN-YOU-ERR
+ты можешь ошибаться? ||| да
+can you be wrong? ||| yes
+kannst du dich irren? ||| ja
+peux-tu te tromper ? ||| oui
+¿puedes equivocarte? ||| sí
+puoi sbagliare? ||| sì
+podes enganar-te? ||| sim
+kun je je vergissen? ||| ja
+czy możesz się mylić? ||| tak
+# GENUS: HOW-OLD-ARE-YOU
+сколько тебе лет? ||| нет
+how old are you? ||| no
+wie alt bist du? ||| kein
+quel âge as-tu ? ||| pas
+¿cuántos años tienes? ||| no
+quanti anni hai? ||| non
+quantos anos tens? ||| não
+hoe oud ben je? ||| geen
+ile masz lat? ||| nie
+# GENUS: ARE-YOU-HUMAN
+ты человек? ||| нет
+are you a human? ||| no
+bist du ein Mensch? ||| nein
+es-tu un humain ? ||| non
+¿eres un humano? ||| no
+sei un umano? ||| no
+és um humano? ||| não
+ben je een mens? ||| nee
+czy jesteś człowiekiem? ||| nie
