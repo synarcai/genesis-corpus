@@ -16,6 +16,7 @@ acts are theirs, and when the count form of the thing is the form of its number.
 frame that breaks any of these is a lie; a line of no frame is a lie of the closed world.
 """
 import pathlib
+import re
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1] / "tools"))
@@ -24,6 +25,13 @@ import closedworld  # noqa: E402
 from closedworld import Слой  # noqa: E402 — the palata hands the world's name
 
 ЗАМКНУТЫЕ_МИРЫ = frozenset({"mandateforms"})
+
+# СВОБОДНОЕ ЧИСЛО (М-…, 05.09): счёт приказа НЕ НЕСЁТ ИСТИНЫ ВЕРДИКТА. «удали 3 файла» и
+# «удали 4 файла» одинаково запрещены правилом «не удаляй файлы» — мандат говорит о
+# ДЕЙСТВИИ, а не о величине, и подмена цифры не делает страницу ложной. Истину числа здесь
+# несёт лишь его СЧЁТНАЯ ФОРМА («удали 3 файлов» — ложь), и её судит закон дома; подсадка
+# такой формы стоит в списке ниже шестой строкой.
+СВОБОДНОЕ_ЧИСЛО = [re.compile(r"(\d+)")]
 
 
 def _судить(строка):
