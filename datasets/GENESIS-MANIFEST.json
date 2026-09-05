@@ -1110,6 +1110,23 @@
       ]
     },
     {
+      "name": "sceneforms",
+      "file": "datasets/genesis_sceneforms.txt",
+      "genre": "THE SCENE — six frames without a verb of action (05.09, the measure of the day: story holdings are bought in English only — nought right in eight languages while the shows stand in all nine; the market of frames needs the VOLUME of different frames, not new verbs). A place holding two kinds with the question about the second; a class of a thing; two places with the question «where are more»; the colour of a thing; a thing before its place; and «are there …?» in both polarities, the words of polarity read from the pack. Places, the copula of place and the plural article are the house of holdings, classes the house of world facts, colours the house of SVAMP — one declaration, several readers (tools/sceneforms.py). CLOSED world.",
+      "act": [
+        "recount",
+        "compare"
+      ],
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "person_names:ru,en,de,fr,es,it,pt,nl,pl",
+      "text": "shows"
+    },
+    {
       "name": "cmpframes",
       "file": "datasets/genesis_cmpframes.txt",
       "genre": "FRAMES OF COMPARISON — the largest class of the reader's lies on the held-out key (05.09: twelve of fifteen — «9 flexiones más que», «in più/in meno di», «meer/minder dan», «więcej/mniej niż»: the marker is not bought and the answer takes a neighbouring number). Four frames on nine languages over two bearer groups (a deed done and a holding held): more by N, fewer by N, twice/three times as many, and the reverse question «by how many more». The answer is a full sentence with the bearer, the number and the thing, then the ledger; the sign of the ledger is a hole, and «more» with a minus is a lie BY SIGN. Bearers, goods and count forms from the action-pages house and the packs; multiplicity words, Slavic past-tense gender and the gender of es/it/pt goods declared here (tools/cmpframes.py). CLOSED world.",

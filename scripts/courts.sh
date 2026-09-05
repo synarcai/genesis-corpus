@@ -89,25 +89,118 @@ COURTS=("courts/arith_court.py" "courts/algo_court.py"
         # таблиц дома; 0 прожитых строк; переписывается на каждой точке (ворота посадки читателя).
         "scripts/holdout_key.py"
         # МЕРА ДЕЙСТВИЯ — число меряет действие или считает носителей (род d5, 05.09)
-        "courts/holdforms_court.py" "courts/cmpframes_court.py" "courts/action_measure_court.py" "courts/numberline_court.py" "courts/countfacts_court.py" "courts/letters_court.py" "courts/propcompare_court.py" "courts/price_court.py" "courts/translate_court.py" "courts/timeunits_court.py" "courts/svamp_court.py" "courts/measure_langs_court.py")
-FELL=0
-for entry in "${COURTS[@]}"; do
+        "courts/holdforms_court.py" "courts/cmpframes_court.py" "courts/sceneforms_court.py" "courts/action_measure_court.py" "courts/numberline_court.py" "courts/countfacts_court.py" "courts/letters_court.py" "courts/propcompare_court.py" "courts/price_court.py" "courts/translate_court.py" "courts/timeunits_court.py" "courts/svamp_court.py" "courts/measure_langs_court.py")
+# ПРИБОРЫ ИДУТ ПАЧКАМИ, А ВЕРДИКТ ОСТАЁТСЯ ОДНОЙ ЛЕНТОЙ (05.09).
+#
+# Набор шёл в один поток — 70 минут по меткам леджера на 144 прибора, — и точка
+# ждала его одна. Приборы не зависят друг от друга: каждый читает корпус и пишет
+# СВОЙ файл (перепись копий — COPIES.tsv, ключ — HOLDOUT-KEY, свип — свой вердикт),
+# и единственное общее место было reports/ledger.tsv. Потому:
+#
+#   · рабочие НЕ ПИШУТ В ЛЕДЖЕР — они складывают вывод, код и время в свои
+#     временные файлы, а строку леджера пишет РОДИТЕЛЬ, когда собирает пачку;
+#   · вывод печатается В ИСХОДНОМ ПОРЯДКЕ СПИСКА, пачка за пачкой: чересполосицы
+#     нет, а ход виден по мере готовности пачки, как и прежде;
+#   · число рабочих — GENESIS_SUITE_JOBS, по умолчанию ЧЕТВЕРТЬ ядер: палата в
+#     каждом процессе держит память, и щедрость здесь стоила дня — четыре ковки
+#     точки умерли от исчерпания подкачки, когда рядом жили тяжёлые процессы.
+#
+# ПРИБОРЫ, КОТОРЫЕ ГОНЯТСЯ ОДНИ, названы поимённо и с причиной (SOLO): их бег
+# рядом с другими есть переподписка машины, а не ускорение.
+SOLO=("scripts/reproducible.py"   # разворачивает зеркало дерева и гоняет 139 порождателей
+      "scripts/prose_court.py"    # сам параллелит палату по 207 мирам прозы (306 МБ)
+      "courts/prosetree_court.py" # тот же корпус прозы, разбор дерева
+      "scripts/court_reach.py"    # вся палата по всем мирам показов (292 тысячи строк)
+      "courts/arith_court.py")    # самый долгий суд корпуса: 167 миров построчно
+
+JOBS="${GENESIS_SUITE_JOBS:-}"
+if [ -z "$JOBS" ]; then
+  CORES=$(sysctl -n hw.ncpu 2>/dev/null || getconf _NPROCESSORS_ONLN 2>/dev/null || echo 4)
+  JOBS=$((CORES / 4))
+fi
+[ "$JOBS" -lt 1 ] && JOBS=1
+
+TMPDIR_SUITE=$(mktemp -d "${TMPDIR:-/tmp}/courts.XXXXXX") || exit 2
+trap 'rm -rf "$TMPDIR_SUITE"' EXIT
+mkdir -p reports
+
+is_solo() {
+  set -- $1; probe="$1"
+  for s in "${SOLO[@]}"; do
+    [ "$probe" = "$s" ] && return 0
+  done
+  return 1
+}
+
+run_one() {
+  idx="$1"; entry="$2"
   set -- $entry; tool="$1"; shift
   out=$(python3 "$tool" "$@" 2>&1); rc=$?
-  last=$(printf '%s\n' "$out" | tail -1)
-  # ЛЕДЖЕР ПРИБОРОВ: последняя строка каждого суда — с датой и кодом —
-  # дописывается в reports/ledger.tsv; отчёт «состояние кристалла»
-  # (scripts/crystal.py) читает оттуда последний вердикт каждого прибора.
-  mkdir -p reports
-  printf '%s\t%s\t%s\t%s\n' "$(date -u +%Y-%m-%dT%H:%M:%SZ)" "$(basename "$tool")" "$rc" "$last" >> reports/ledger.tsv
-  if [ "$rc" = 0 ]; then
-    printf 'СУД ЦЕЛ   %-26s %s\n' "$(basename "$tool")" "$last"
+  printf '%s
+' "$out" > "$TMPDIR_SUITE/$idx.out"
+  printf '%s
+' "$rc" > "$TMPDIR_SUITE/$idx.rc"
+  date -u +%Y-%m-%dT%H:%M:%SZ > "$TMPDIR_SUITE/$idx.ts"
+}
+
+FELL=0
+# СБОР ПАЧКИ: вывод по порядку индексов, строка леджера — здесь же, из родителя.
+flush_range() {
+  k="$1"; last_idx="$2"
+  while [ "$k" -le "$last_idx" ]; do
+    entry="${COURTS[$k]}"
+    set -- $entry; tool="$1"
+    rc=$(cat "$TMPDIR_SUITE/$k.rc" 2>/dev/null || echo 2)
+    stamp=$(cat "$TMPDIR_SUITE/$k.ts" 2>/dev/null || date -u +%Y-%m-%dT%H:%M:%SZ)
+    out=$(cat "$TMPDIR_SUITE/$k.out" 2>/dev/null)
+    last=$(printf '%s
+' "$out" | tail -1)
+    # ЛЕДЖЕР ПРИБОРОВ: последняя строка каждого суда — с датой и кодом —
+    # дописывается в reports/ledger.tsv; отчёт «состояние кристалла»
+    # (scripts/crystal.py) читает оттуда последний вердикт каждого прибора.
+    printf '%s\t%s\t%s\t%s\n' "$stamp" "$(basename "$tool")" "$rc" "$last" >> reports/ledger.tsv
+    if [ "$rc" = 0 ]; then
+      printf 'СУД ЦЕЛ   %-26s %s\n' "$(basename "$tool")" "$last"
+    else
+      FELL=$((FELL+1))
+      printf 'СУД ПАЛ   %-26s (rc=%s)\n' "$(basename "$tool")" "$rc"
+      printf '%s\n' "$out" | tail -6 | sed 's/^/    /'
+    fi
+    k=$((k+1))
+  done
+}
+
+TOTAL=${#COURTS[@]}
+i=0
+batch_start=0
+running=0
+while [ "$i" -lt "$TOTAL" ]; do
+  entry="${COURTS[$i]}"
+  if is_solo "$entry"; then
+    if [ "$running" -gt 0 ]; then
+      wait
+      flush_range "$batch_start" $((i-1))
+      running=0
+    fi
+    run_one "$i" "$entry"
+    flush_range "$i" "$i"
+    batch_start=$((i+1))
   else
-    FELL=$((FELL+1))
-    printf 'СУД ПАЛ   %-26s (rc=%s)\n' "$(basename "$tool")" "$rc"
-    printf '%s\n' "$out" | tail -6 | sed 's/^/    /'
+    run_one "$i" "$entry" &
+    running=$((running+1))
+    if [ "$running" -ge "$JOBS" ]; then
+      wait
+      flush_range "$batch_start" "$i"
+      running=0
+      batch_start=$((i+1))
+    fi
   fi
+  i=$((i+1))
 done
+if [ "$running" -gt 0 ]; then
+  wait
+  flush_range "$batch_start" $((TOTAL-1))
+fi
 echo "---"
 if [ "$FELL" = 0 ]; then
   echo "СУДЫ КОРПУСА: все ${#COURTS[@]} целы"
