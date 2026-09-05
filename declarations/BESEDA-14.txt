@@ -1,0 +1,114 @@
+# BESEDA-14 — ЧЕТЫРНАДЦАТАЯ ПОЛОСА: сцена и сравнение именем (05.09, вечер).
+# Роды дома сцены (место с двумя родами, два места, принадлежность, есть ли, цвет, класс) и
+# формы сравнения, отвечающие ИМЕНЕМ (кто больше, кто меньше, поровну, во сколько раз).
+# Девять языков; строка «вопрос ||| подстрока ожидаемого ответа». Меряется на девятой точке.
+# GENUS: SCENE-SECOND
+на столе 1 шар и 13 карт. сколько карт на столе? ||| на столе 13 карт
+there is 1 ball and 13 cards on the table. how many cards are on the table? ||| there are 13 cards on the table
+auf dem Tisch ist 1 Ball und 13 Karten. wie viele Karten sind auf dem Tisch? ||| auf dem Tisch sind 13 Karten
+il y a 1 ballon et 13 cartes sur la table. combien de cartes y a-t-il sur la table ? ||| il y a 13 cartes sur la table
+hay 1 balón y 13 cartas en la mesa. ¿cuántas cartas hay en la mesa? ||| hay 13 cartas en la mesa
+c'è 1 pallone e 13 carte sul tavolo. quante carte ci sono sul tavolo? ||| ci sono 13 carte sul tavolo
+há 1 bola e 13 cartas na mesa. quantas cartas há na mesa? ||| há 13 cartas na mesa
+er ligt 1 bal en 13 appels op de tafel. hoeveel appels liggen er op de tafel? ||| er liggen 13 appels op de tafel
+na stole jest 1 piłka i 13 jabłek. ile jabłek jest na stole? ||| na stole jest 13 jabłek
+# GENUS: SCENE-WHERE-MORE
+на столе 1 шар, а в сумке 13 шаров. где шаров больше? ||| в сумке
+there is 1 ball on the table and there are 13 balls in the bag. where are there more balls? ||| in the bag
+auf dem Tisch ist 1 Ball und in der Tasche sind 13 Bälle. wo sind mehr Bälle? ||| in der Tasche
+il y a 1 ballon sur la table et 13 ballons dans le sac. où y a-t-il plus de ballons ? ||| dans le sac
+hay 1 balón en la mesa y 13 balones en la bolsa. ¿dónde hay más balones? ||| en la bolsa
+c'è 1 pallone sul tavolo e ci sono 13 palloni nella borsa. dove ci sono più palloni? ||| nella borsa
+há 1 bola na mesa e 13 bolas no saco. onde há mais bolas? ||| no saco
+er ligt 1 bal op de tafel en er liggen 13 ballen in de tas. waar liggen meer ballen? ||| in de tas
+na stole jest 1 piłka, a w torbie jest 13 piłek. gdzie jest więcej piłek? ||| w torbie
+# GENUS: SCENE-BELONG
+1 цветок в коробке. где 1 цветок? ||| в коробке
+1 flower are in the box. where are the 1 flower? ||| in the box
+1 Blume ist in der Kiste. wo ist die 1 Blume? ||| in der Kiste
+1 fleur est dans la boîte. où est les 1 fleur ? ||| dans la boîte
+1 flor está en la caja. ¿dónde está las 1 flor? ||| en la caja
+1 fiore è nella scatola. dove è i 1 fiore? ||| nella scatola
+1 flor está na caixa. onde está as 1 flor? ||| na caixa
+1 ei ligt in de doos. waar ligt de 1 ei? ||| in de doos
+1 jajko jest w pudełku. gdzie jest 1 jajko? ||| w pudełku
+# GENUS: SCENE-YES
+в сумке 1 чашка. есть ли чашки в сумке? ||| да, в сумке 1 чашка
+there is 1 apple in the bag. are there any apples in the bag? ||| yes, there is 1 apple in the bag
+in der Tasche ist 1 Tasse. gibt es Tassen in der Tasche? ||| ja, in der Tasche ist 1 Tasse
+il y a 1 pomme dans le sac. y a-t-il des pommes dans le sac ? ||| oui, il y a 1 pomme dans le sac
+hay 1 manzana en la bolsa. ¿es verdad que hay manzanas en la bolsa? ||| sí, hay 1 manzana en la bolsa
+c'è 1 mela nella borsa. ci sono mele nella borsa? ||| sì, c'è 1 mela nella borsa
+há 1 maçã no saco. é verdade que há maçãs no saco? ||| sim, há 1 maçã no saco
+er ligt 1 pen in de tas. zijn er pennen in de tas? ||| ja, er ligt 1 pen in de tas
+w torbie jest 1 długopis. czy w torbie są długopisy? ||| tak, w torbie jest 1 długopis
+# GENUS: SCENE-NO
+на полке нет монет. есть ли монеты на полке? ||| нет, на полке нет монет
+there are no coins on the shelf. are there any coins on the shelf? ||| no, there are no coins on the shelf
+im Regal sind keine Münzen. gibt es Münzen im Regal? ||| nein, im Regal sind keine Münzen
+il n'y a pas de pièces sur l'étagère. y a-t-il des pièces sur l'étagère ? ||| non, il n'y a pas de pièces sur l'étagère
+no hay monedas en el estante. ¿es verdad que hay monedas en el estante? ||| no, no hay monedas en el estante
+non ci sono monete sullo scaffale. ci sono monete sullo scaffale? ||| no, non ci sono monete sullo scaffale
+não há moedas na prateleira. é verdade que há moedas na prateleira? ||| não, não há moedas na prateleira
+er liggen geen munten op de plank. zijn er munten op de plank? ||| nee, er liggen geen munten op de plank
+na półce nie ma monet. czy na półce są monety? ||| nie, na półce nie ma monet
+# GENUS: SCENE-COLOUR
+у Ивана 5 красных яблок. какого цвета яблоки у Ивана? ||| красные
+Ava has 2 red books. what colour are the books? ||| red
+Lena hat 2 rote Bücher. welche Farbe haben die Bücher? ||| rot
+Marie a 2 livres rouges. de quelle couleur sont les livres ? ||| rouges
+Marta tiene 2 libros azules. ¿de qué color son los libros? ||| azules
+Giulia ha 2 libri blu. di che colore sono i libri? ||| blu
+a Maria tem 2 livros azuis. de que cor são os livros? ||| azuis
+Emma heeft 2 rode boeken. welke kleur hebben de boeken? ||| rood
+Paweł ma 5 czerwonych kwiatów. jakiego koloru są kwiaty? ||| czerwone
+# GENUS: SCENE-CLASS
+паук — животное. что такое паук? ||| паук — животное
+a spider is an animal. what is a spider? ||| a spider is an animal
+eine Spinne ist ein Tier. was ist eine Spinne? ||| eine Spinne ist ein Tier
+une araignée est un animal. qu'est-ce qu'une araignée ? ||| une araignée est un animal
+una araña es un animal. ¿qué es una araña? ||| una araña es un animal
+un ragno è un animale. che cos'è un ragno? ||| un ragno è un animale
+uma aranha é um animal. o que é uma aranha? ||| uma aranha é um animal
+een spin is een dier. wat is een spin? ||| een spin is een dier
+pająk to zwierzę. co to jest pająk? ||| pająk to zwierzę
+# GENUS: CMP-WHO-MORE
+Анна сделала 16 отжиманий. Аня сделала 7 отжиманий. кто сделал больше отжиманий? ||| Анна сделала больше отжиманий
+Ann did 16 push-ups. Anna did 7 push-ups. who did more push-ups? ||| Ann did more push-ups
+Anna machte 16 Liegestütze. Jonas machte 7 Liegestütze. wer machte mehr Liegestütze? ||| Anna machte mehr Liegestütze
+Anne a fait 16 pompes. Louis a fait 7 pompes. qui a fait plus de pompes ? ||| Anne a fait plus de pompes
+Ana hizo 16 flexiones. Luis hizo 7 flexiones. ¿quién hizo más flexiones? ||| Ana hizo más flexiones
+Anna ha fatto 16 flessioni. Marco ha fatto 7 flessioni. chi ha fatto più flessioni? ||| Anna ha fatto più flessioni
+a Ana fez 16 flexões. o João fez 7 flexões. quem fez mais flexões? ||| a Ana fez mais flexões
+Anna deed 16 push-ups. Daan deed 7 push-ups. wie deed meer push-ups? ||| Anna deed meer push-ups
+Anna zrobiła 16 pompek. Jan zrobił 7 pompek. kto zrobił więcej pompek? ||| Anna zrobiła więcej pompek
+# GENUS: CMP-WHO-LESS
+Анна сделала 16 отжиманий. Аня сделала 7 отжиманий. кто сделал меньше отжиманий? ||| Аня сделала меньше отжиманий
+Ann did 16 push-ups. Anna did 7 push-ups. who did fewer push-ups? ||| Anna did fewer push-ups
+Anna machte 16 Liegestütze. Jonas machte 7 Liegestütze. wer machte weniger Liegestütze? ||| Jonas machte weniger Liegestütze
+Anne a fait 16 pompes. Louis a fait 7 pompes. qui a fait moins de pompes ? ||| Louis a fait moins de pompes
+Ana hizo 16 flexiones. Luis hizo 7 flexiones. ¿quién hizo menos flexiones? ||| Luis hizo menos flexiones
+Anna ha fatto 16 flessioni. Marco ha fatto 7 flessioni. chi ha fatto meno flessioni? ||| Marco ha fatto meno flessioni
+a Ana fez 16 flexões. o João fez 7 flexões. quem fez menos flexões? ||| o João fez menos flexões
+Anna deed 16 push-ups. Daan deed 7 push-ups. wie deed minder push-ups? ||| Daan deed minder push-ups
+Anna zrobiła 16 pompek. Jan zrobił 7 pompek. kto zrobił mniej pompek? ||| Jan zrobił mniej pompek
+# GENUS: CMP-EQUAL
+Анна сделала 16 отжиманий. Аня сделала 16 отжиманий. кто сделал больше отжиманий? ||| никто: оба сделали поровну — 16 отжиманий
+Ann did 16 push-ups. Anna did 16 push-ups. who did more push-ups? ||| neither: they did the same — 16 push-ups
+Anna machte 16 Liegestütze. Jonas machte 16 Liegestütze. wer machte mehr Liegestütze? ||| keiner: beide machten gleich viele — 16 Liegestütze
+Anne a fait 16 pompes. Louis a fait 16 pompes. qui a fait plus de pompes ? ||| personne : les deux en ont fait autant — 16 pompes
+Ana hizo 16 flexiones. Luis hizo 16 flexiones. ¿quién hizo más flexiones? ||| ninguno: los dos hicieron lo mismo — 16 flexiones
+Anna ha fatto 16 flessioni. Marco ha fatto 16 flessioni. chi ha fatto più flessioni? ||| nessuno: entrambi ne hanno fatto lo stesso numero — 16 flessioni
+a Ana fez 16 flexões. o João fez 16 flexões. quem fez mais flexões? ||| ninguém: os dois fizeram o mesmo — 16 flexões
+Anna deed 16 push-ups. Daan deed 16 push-ups. wie deed meer push-ups? ||| niemand: beiden deden evenveel — 16 push-ups
+Anna zrobiła 16 pompek. Jan zrobił 16 pompek. kto zrobił więcej pompek? ||| nikt: obydwoje zrobili po tyle samo — 16 pompek
+# GENUS: CMP-HOW-MANY-TIMES
+Анна сделала 32 отжимания. Аня сделала 16 отжиманий. во сколько раз больше отжиманий сделал Анна, чем Аня? ||| вдвое: 32 ÷ 16 = 2
+Ann did 32 push-ups. Anna did 16 push-ups. how many times more push-ups did Ann do than Anna? ||| twice as many: 32 ÷ 16 = 2
+Anna machte 32 Liegestütze. Jonas machte 16 Liegestütze. wie viele Mal mehr Liegestütze machte Anna als Jonas? ||| zweimal so viele: 32 ÷ 16 = 2
+Anne a fait 32 pompes. Louis a fait 16 pompes. combien de fois plus de pompes a fait Anne que Louis ? ||| deux fois plus : 32 ÷ 16 = 2
+Ana hizo 32 flexiones. Luis hizo 16 flexiones. ¿cuántas veces más flexiones hizo Ana que Luis? ||| el doble: 32 ÷ 16 = 2
+Anna ha fatto 32 flessioni. Marco ha fatto 16 flessioni. quante volte più flessioni ha fatto Anna di Marco? ||| il doppio: 32 ÷ 16 = 2
+a Ana fez 32 flexões. o João fez 16 flexões. quantas vezes mais flexões fez a Ana do que o João? ||| o dobro: 32 ÷ 16 = 2
+Anna deed 32 push-ups. Daan deed 16 push-ups. hoeveel keer meer push-ups deed Anna dan Daan? ||| twee keer zoveel: 32 ÷ 16 = 2
+Anna zrobiła 32 pompki. Jan zrobił 16 pompek. ile razy więcej pompek zrobiła Anna niż Jan? ||| dwa razy więcej: 32 ÷ 16 = 2
