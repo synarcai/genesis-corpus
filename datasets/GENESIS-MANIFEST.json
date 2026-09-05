@@ -1094,6 +1094,29 @@
       "actors": []
     },
     {
+      "name": "action_measure_langs",
+      "file": "datasets/genesis_action_measure_langs.txt",
+      "genre": "ACTION MEASURE IN SEVEN MORE LANGUAGES (d5's genus, the owner's word: every language in surplus) — «der Frosch sprang 12 Zentimeter. wie weit sprang der Frosch? 12 Zentimeter.», «la grenouille a sauté de 12 centimètres.», «żaba skoczyła na 12 centymetrów.», the sum of two measures, and the bearers at a place with an arrival or a departure («auf dem Zaun saßen 6 Vögel. 4 weitere Vögel kamen dazu.», «na płocie siedziało 6 ptaków. przyleciały jeszcze 4 ptaki.») in de/fr/es/it/pt/nl/pl. The unit belongs to the verb; count forms of units and bearers are declared (Polish three, Romance two, German and Dutch one) and chosen by the pack's rule; the Polish verb of the bearers bends with the count form. Frames declared per language, read by the court through the same tables (tools/measurelangs.py). CLOSED world.",
+      "act": [
+        "recount",
+        "compare"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "numberline",
       "file": "datasets/genesis_numberline.txt",
       "genre": "THE NUMBER LINE IN NINE LANGUAGES — the simplest questions a person checks a speaker with, all mute in all nine languages on the third band of conversation (BESEDA-3, 05.09): «what number comes after 9? after 9 comes 10.», «which is bigger: 7 or 9? 9 is bigger: 9 − 7 = 2.», «count from 1 to 5. 1, 2, 3, 4, 5.», «is 7 an even or an odd number? odd: 7 = 2 × 3 + 1.» — neighbour, bigger/smaller, rows up and down, parity, each answer with its ground (the difference, the halving, the row itself). The house tools/numberline.py declares the frames of ru/en/de/fr/es/it/pt/nl/pl (the Italian article bends before a vowel-initial number word: «dopo l'8», «dopo il 9»); the court walks the line itself. CLOSED world.",
