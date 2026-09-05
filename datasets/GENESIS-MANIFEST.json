@@ -1095,6 +1095,28 @@
       "actors": []
     },
     {
+      "name": "countfacts",
+      "file": "datasets/genesis_countfacts.txt",
+      "genre": "COUNT FACTS IN NINE LANGUAGES — a thing defined or asked by the ONE number a court can recount: «what is a triangle? a triangle is a shape with three sides.», «how many sides does a pentagon have? a pentagon has five sides.», «how many legs does a dog have? a dog has four legs.» Born from the third band of conversation (BESEDA-3, 05.09): «что такое треугольник?» and «сколько ног у собаки?» were mute in all nine languages — the definitions world speaks only ru/en from the shelf, and the shelf counts neither sides nor legs. Two kinds (sides of five figures, legs of nine animals), each entity with one declared count in tools/countfacts.py read by generator and court alike; the count stands in words in the form the phrase needs (ru «три стороны / пять сторон», «две ноги / шесть ног», pl «trzy boki / pięć boków»). CLOSED world.",
+      "act": [
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "geometry_langs",
       "file": "datasets/genesis_geometry_langs.txt",
       "genre": "AREA AND PERIMETER IN EIGHT LANGUAGES (the owner's word: every language in surplus; the geometry world says them in en/ru): the four facts of the geometry world — the area and the perimeter of a rectangle, the perimeter and the area of a square — as statement and as question answered by the statement (М-153), with the geometry world's ledger: «ein Rechteck 7 mal 8 hat die Fläche 7 × 8 = 56.», «wie groß ist der Umfang eines Rechtecks 3 mal 4? ein Rechteck 3 mal 4 hat den Umfang 3 + 4 = 7, 2 × 7 = 14.», «un carré de côté 4 a un périmètre de 4 × 4 = 16.», «¿cuál es el área de un cuadrado de lado 5? un cuadrado de lado 5 tiene área 5 × 5 = 25.», «qual è il perimetro …», «qual é a área …», «wat is de omtrek van een rechthoek 3 bij 4? …», «jakie jest pole prostokąta 2 na 3? prostokąt 2 na 3 ma pole 2 × 3 = 6.», «kenarları 7 ve 8 olan dikdörtgenin çevresi: 7 + 8 = 15, 2 × 15 = 30.»; the house of geometry phrases (tools/geoforms.py) holds the phrases with holes, the court turns the same phrases into patterns and recomputes every ledger",
