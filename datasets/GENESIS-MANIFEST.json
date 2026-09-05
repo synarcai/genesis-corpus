@@ -4682,10 +4682,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 28702966,
+      "size": 29418622,
       "tiers": [],
       "text": "mix",
-      "lines": 337733
+      "lines": 340973
     },
     {
       "name": "minimal",
@@ -9231,6 +9231,23 @@
       "file": "datasets/genesis_mandateforms.txt",
       "genre": "THE MANDATE — a standing rule against an order (05.09, the agent architecture, the sixth market): one or two rules the agent was told once, an order of one act, and a verdict that never stands bare — «no: the rule forbids deleting», «yes: the rule forbids deleting, but this is creating», «the second rule: it forbids moving» (which rule, out of two), «yes: no rule forbids creating» (the mandate's silence is a permission, and it says why), «two rules: they forbid deleting and moving». Every act is declared in the three shapes a language needs — the prohibition, the name after «forbids» and the name after «this is» («vieta di cancellare» against «questo è cancellare», «zabrania usuwania» against «to jest usuwanie»). Things and their count forms are the tool house's (tools/mandateforms.py). CLOSED world.",
       "act": [
+        "decide"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "personforms",
+      "file": "datasets/genesis_personforms.txt",
+      "genre": "THE PERSONALITY — the same fact, another voice (05.09, the agent architecture, the seventh and last market). A personality is a set of SLOW STATE VARIABLES WITH PROVENANCE, and its whole lawful power is two things: the FORM of an answer and the CHOICE BETWEEN EQUALS. One tape is answered twice — «13.» by the terse personality, «there are 13 files in the folder: 10 + 3 = 13» by the verbose one — and a third page puts both answers side by side and asks whether it is the same number, answering «yes: 13 and 13 — one number», so the law stands ON the page and not only in the court. A choice by character is shown ONLY where the two ways leave the same count (delete three files or move three out: the folder keeps seven either way, recomputed): the cautious personality takes the way that destroys nothing, the quick one the way named first. Every trait names its provenance («my caution comes from a mistake»). Things, places and the copula are the tool house's, the acts and the ledger the episode house's (tools/personforms.py). CLOSED world.",
+      "act": [
+        "recount",
         "decide"
       ],
       "oracle": [

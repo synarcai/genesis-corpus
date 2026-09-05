@@ -89,7 +89,7 @@ COURTS=("courts/arith_court.py" "courts/algo_court.py"
         # таблиц дома; 0 прожитых строк; переписывается на каждой точке (ворота посадки читателя).
         "scripts/holdout_key.py"
         # МЕРА ДЕЙСТВИЯ — число меряет действие или считает носителей (род d5, 05.09)
-        "courts/holdforms_court.py" "courts/cmpframes_court.py" "courts/sceneforms_court.py" "courts/toolforms_court.py" "courts/verifyforms_court.py" "courts/planforms_court.py" "courts/episodeforms_court.py" "courts/summaryforms_court.py" "courts/opforms_court.py" "courts/readnum_court.py" "courts/mandateforms_court.py" "courts/action_measure_court.py" "courts/numberline_court.py" "courts/countfacts_court.py" "courts/letters_court.py" "courts/propcompare_court.py" "courts/price_court.py" "courts/translate_court.py" "courts/timeunits_court.py" "courts/svamp_court.py" "courts/measure_langs_court.py")
+        "courts/holdforms_court.py" "courts/cmpframes_court.py" "courts/sceneforms_court.py" "courts/toolforms_court.py" "courts/verifyforms_court.py" "courts/planforms_court.py" "courts/episodeforms_court.py" "courts/summaryforms_court.py" "courts/opforms_court.py" "courts/readnum_court.py" "courts/mandateforms_court.py" "courts/personforms_court.py" "courts/action_measure_court.py" "courts/numberline_court.py" "courts/countfacts_court.py" "courts/letters_court.py" "courts/propcompare_court.py" "courts/price_court.py" "courts/translate_court.py" "courts/timeunits_court.py" "courts/svamp_court.py" "courts/measure_langs_court.py")
 # ПРИБОРЫ ИДУТ ПАЧКАМИ, А ВЕРДИКТ ОСТАЁТСЯ ОДНОЙ ЛЕНТОЙ (05.09).
 #
 # Набор шёл в один поток — 70 минут по меткам леджера на 144 прибора, — и точка
