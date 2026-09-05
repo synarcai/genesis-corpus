@@ -4682,10 +4682,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 31659844,
+      "size": 31703637,
       "tiers": [],
       "text": "mix",
-      "lines": 357113
+      "lines": 357545
     },
     {
       "name": "minimal",
@@ -9408,6 +9408,23 @@
       ],
       "boundary": [
         "declared_pairs_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "speedforms",
+      "file": "datasets/genesis_speedforms.txt",
+      "genre": "SPEED — the unit that is a RATIO of two units (06.09). The census found ZERO lines in the свод carrying «km/h» in any of its nine spellings: the corpus has rates and it has units, but never the unit that is itself a ratio — and the ratio is where the three questions of a rate become ONE law: distance is speed times time, time is distance over speed, speed is distance over time. A market that bought only the first cannot answer the other two, and the reader's silence atlas names the money-and-rate road as its second-largest gate. Each page carries both kinds of unit at once: the ratio and the kilometre as abbreviations (which need no count form) and the hour as a counted word (which needs its own, taken from the house of the clock). Every division is exact (tools/speedforms.py). CLOSED world.",
+      "act": [
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only",
+        "exact_only"
       ],
       "actors": "",
       "text": "shows"
