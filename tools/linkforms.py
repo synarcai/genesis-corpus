@@ -80,6 +80,7 @@ def _числительные(язык):
         объясни2="i don't understand, explain. i explain: {X} had {n}, gave away {k}, and has {r} left: {л}",
         наоборот2="{X} has {n} {Тn}, {Y} has {m} {Тm}. and if it were the other way round? then {X} would have {m} {Тm} and {Y} would have {n} {Тn}.",
         счёт_да="is it true that {A} times {B} is {C}? yes, {A} times {B} is {C}: {a} × {b} = {c}.",
+        уверен="{a} + {b} = {c}. are you sure? yes: {c} − {b} = {a}, so {a} + {b} = {c}.",
         счёт_нет="is it true that {A} times {B} is {D}? no, {A} times {B} is {C}: {a} × {b} = {c}.",
         почему="why does {X} have {r} {Тr}? because {X} had {n} and gave away {k}: {л}",
         а_если="what if there were twice as many? then {X} would have {д} {Тд}: {лд}",
@@ -103,6 +104,7 @@ def _числительные(язык):
         сказал_что="ты сказал, что у {Xр} {м} {Тм}. это верно? нет, у {Xр} {n} {Тn}.",
         а_союз="а у {Yр}? у {Yр} {m} {Тm}.",
         счёт_да="правда ли, что {A}жды {B} — {C}? да, {A}жды {B} — {C}: {a} × {b} = {c}.",
+        уверен="{a} + {b} = {c}. ты уверен? да: {c} − {b} = {a}, значит {a} + {b} = {c}.",
         счёт_нет="правда ли, что {A}жды {B} — {D}? нет, {A}жды {B} — {C}: {a} × {b} = {c}.",
         # ВТОРАЯ ПОВЕРХНОСТЬ ТОЙ ЖЕ ФОРМЫ — БЕЗ СВЯЗОЧНОГО ТИРЕ. Полоса беседы
         # держала немой строку «правда ли, что дважды два четыре?», и корпус
@@ -138,6 +140,7 @@ def _числительные(язык):
         сказал_что="du hast gesagt, dass {X} {м} {Тм} hat. stimmt das? nein, {X} hat {n} {Тn}.",
         а_союз="und {Y}? {Y} hat {m} {Тm}.",
         счёт_да="stimmt es, dass {A} mal {B} {C} ist? ja, {A} mal {B} ist {C}: {a} × {b} = {c}.",
+        уверен="{a} + {b} = {c}. bist du sicher? ja: {c} − {b} = {a}, also {a} + {b} = {c}.",
         счёт_нет="stimmt es, dass {A} mal {B} {D} ist? nein, {A} mal {B} ist {C}: {a} × {b} = {c}.",
         счёт_да2="stimmt es, dass {A}mal {B} {C} ist? ja, {A}mal {B} ist {C}: {a} × {b} = {c}.",
         счёт_нет2="stimmt es, dass {A}mal {B} {D} ist? nein, {A}mal {B} ist {C}: {a} × {b} = {c}.",
@@ -163,6 +166,7 @@ def _числительные(язык):
         сказал_что="dijiste que {X} tiene {м} {Тм}. ¿es cierto? no, {X} tiene {n} {Тn}.",
         а_союз="¿y {Y}? {Y} tiene {m} {Тm}.",
         счёт_да="¿es verdad que {A} por {B} es {C}? sí, {A} por {B} es {C}: {a} × {b} = {c}.",
+        уверен="{a} + {b} = {c}. ¿estás seguro? sí: {c} − {b} = {a}, así que {a} + {b} = {c}.",
         счёт_нет="¿es verdad que {A} por {B} es {D}? no, {A} por {B} es {C}: {a} × {b} = {c}.",
         почему="¿por qué {X} tiene {r} {Тr}? porque {X} tenía {n} y dio {k}: {л}",
         а_если="¿y si hubiera el doble? entonces {X} tendría {д} {Тд}: {лд}",
@@ -186,6 +190,7 @@ def _числительные(язык):
         сказал_что="tu as dit {que}{X} a {м} {Тм}. c'est vrai ? non, {X} a {n} {Тn}.",
         а_союз="et {Y} ? {Y} a {m} {Тm}.",
         счёт_да="est-il vrai que {A} fois {B} font {C} ? oui, {A} fois {B} font {C} : {a} × {b} = {c}.",
+        уверен="{a} + {b} = {c}. tu es sûr ? oui : {c} − {b} = {a}, donc {a} + {b} = {c}.",
         счёт_нет="est-il vrai que {A} fois {B} font {D} ? non, {A} fois {B} font {C} : {a} × {b} = {c}.",
         почему="pourquoi {X} a {r} {Тr} ? parce que {X} en avait {n} et en a donné {k} : {л}",
         а_если="et s'il y en avait deux fois plus ? alors {X} aurait {д} {Тд} : {лд}",
@@ -209,6 +214,7 @@ def _числительные(язык):
         сказал_что="hai detto che {X} ha {м} {Тм}. è giusto? no, {X} ha {n} {Тn}.",
         а_союз="e {Y}? {Y} ha {m} {Тm}.",
         счёт_да="è vero che {A} per {B} fa {C}? sì, {A} per {B} fa {C}: {a} × {b} = {c}.",
+        уверен="{a} + {b} = {c}. sei sicuro? sì: {c} − {b} = {a}, quindi {a} + {b} = {c}.",
         счёт_нет="è vero che {A} per {B} fa {D}? no, {A} per {B} fa {C}: {a} × {b} = {c}.",
         почему="perché {X} ha {r} {Тr}? perché {X} aveva {n} e ha dato {k}: {л}",
         а_если="e se fossero il doppio? allora {X} avrebbe {д} {Тд}: {лд}",
@@ -232,6 +238,7 @@ def _числительные(язык):
         сказал_что="disseste que {X} tem {м} {Тм}. está certo? não, {X} tem {n} {Тn}.",
         а_союз="e {Y}? {Y} tem {m} {Тm}.",
         счёт_да="é verdade que {A} vezes {B} é {C}? sim, {A} vezes {B} é {C}: {a} × {b} = {c}.",
+        уверен="{a} + {b} = {c}. tens a certeza? sim: {c} − {b} = {a}, logo {a} + {b} = {c}.",
         счёт_нет="é verdade que {A} vezes {B} é {D}? não, {A} vezes {B} é {C}: {a} × {b} = {c}.",
         почему="porque é que {X} tem {r} {Тr}? porque {X} tinha {n} e deu {k}: {л}",
         а_если="e se fossem o dobro? então {X} teria {д} {Тд}: {лд}",
@@ -246,6 +253,7 @@ def _числительные(язык):
         получил="{X} dostał{а} {k} {Тk}.",
         а_союз="a {Y}? {Y} ma {m} {Тm}.",
         счёт_да="czy to prawda, że {A} razy {B} to {C}? tak, {A} razy {B} to {C}: {a} × {b} = {c}.",
+        уверен="{a} + {b} = {c}. jesteś pewien? tak: {c} − {b} = {a}, więc {a} + {b} = {c}.",
         счёт_нет="czy to prawda, że {A} razy {B} to {D}? nie, {A} razy {B} to {C}: {a} × {b} = {c}.",
         почему="dlaczego {X} ma {r} {Тr}? ponieważ {X} miał{а} {n} i oddał{а} {k}: {л}",
         почему_голый="dlaczego? ponieważ {X} miał{а} {n} i oddał{а} {k}: {л}",
@@ -269,6 +277,7 @@ def _числительные(язык):
         получил="{X} kreeg {k} {Тk}.",
         а_союз="en {Y}? {Y} heeft {m} {Тm}.",
         счёт_да="is het waar dat {A} maal {B} {C} is? ja, {A} maal {B} is {C}: {a} × {b} = {c}.",
+        уверен="{a} + {b} = {c}. weet je het zeker? ja: {c} − {b} = {a}, dus {a} + {b} = {c}.",
         счёт_нет="is het waar dat {A} maal {B} {D} is? nee, {A} maal {B} is {C}: {a} × {b} = {c}.",
         почему="waarom heeft {X} {r} {Тr}? omdat {X} er {n} had en {k} weggaf: {л}",
         почему_голый="waarom? omdat {X} er {n} had en {k} weggaf: {л}",
@@ -318,6 +327,36 @@ def слова_счёта(язык, i):
     поля = dict(A=сл[a], B=сл[b], C=сл[c], D=сл[d], a=a, b=b, c=c)
     поверхности = [я[к] for к in ("счёт_да", "счёт_нет", "счёт_да2", "счёт_нет2") if к in я]
     return tuple(п.format(**поля) for п in поверхности)
+
+
+# СУММЫ ДЛЯ «ТЫ УВЕРЕН?»: подтверждение — обратным действием
+СУММЫ = ((2, 2), (7, 5), (12, 9), (17, 25), (8, 15), (20, 30))
+
+
+def уверенность(язык, i):
+    """«2 + 2 = 4. ты уверен? да: 4 − 2 = 2, значит 2 + 2 = 4.» — третья полоса
+    беседы (05.09, род ARE-YOU-SURE): собеседник, спрошенный о верности, не
+    повторяет ответ, а ПРОВЕРЯЕТ его обратным действием; обе кузницы судит
+    арифметика, а слово «да» — окно вопроса (М-284) не трогает: вопрос «ты
+    уверен?» равенства не несёт."""
+    я = ЯЗЫКИ[язык]
+    if "уверен" not in я:
+        return ()
+    a, b = СУММЫ[i % len(СУММЫ)]
+    return (я["уверен"].format(a=a, b=b, c=a + b),)
+
+
+ВЫ_УВЕРЕН = {"ru": ("ты уверен?", "вы уверены?"), "de": ("bist du sicher?", "sind Sie sicher?"),
+             "fr": ("tu es sûr ?", "vous êtes sûr ?"), "es": ("¿estás seguro?", "¿está usted seguro?"),
+             "it": ("sei sicuro?", "è sicuro?"), "pt": ("tens a certeza?", "tem a certeza?"),
+             "nl": ("weet je het zeker?", "weet u het zeker?"), "pl": ("jesteś pewien?", "jest pan pewien?")}
+
+
+def уверенность_вы(язык, i):
+    if язык not in ВЫ_УВЕРЕН:
+        return ()
+    ты, вы = ВЫ_УВЕРЕН[язык]
+    return tuple(с.replace(ты, вы) for с in уверенность(язык, i))
 
 
 def _винительный(язык, Т, k):
@@ -489,6 +528,11 @@ def _все_показы():
         for i in range(len(ТАБЛИЦА)):
             for с in слова_счёта(язык, i):
                 вон[с] = (язык, "счёт_словами")
+        for i in range(len(СУММЫ)):
+            for с in уверенность(язык, i):
+                вон[с] = (язык, "уверен")
+            for с in уверенность_вы(язык, i):
+                вон[с] = (язык, "уверен_вы")
         for форма in ФОРМЫ:
             if форма == "счёт_да":
                 continue          # они пишутся своим ходом выше
