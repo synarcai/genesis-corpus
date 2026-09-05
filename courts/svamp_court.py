@@ -36,6 +36,11 @@ def main():
         "Ann had 12 coins. she gave 5 of them to Anna. how many coins does she have now? 7: 12 − 4 = 8.",
         "a coin costs $ 3. how much do 4 coins cost? $ 12: 4 × 3 = 13.",
         "у Вани было 12 шаров. он отдал 5 из них Вере. сколько шаров у него теперь? 7: 12 − 5 = 8.",
+        # ДОЛИ И ЦЕПОЧКИ (05.09): делитель не есть знаменатель слова доли; заявленный ответ не есть итог
+        # леджера; шаг цепочки не опирается на итог предыдущего
+        "Ann has 12 coins. a third of them are red. how many coins are red? 4: 12 ÷ 4 = 3.",
+        "Ann has 12 coins. she gives away 5. how many coins does Ann own now? Ann owns 6 coins: 12 − 5 = 7.",
+        "Ann has 12 coins. half of them are red. how many coins are not red? step 1: 12 ÷ 2 = 6. step 2: 12 − 5 = 7. total: 7.",
     )
     пойманы = sum(1 for п in подсадки if _судить(п) == (True, False))
     if пойманы != len(подсадки):

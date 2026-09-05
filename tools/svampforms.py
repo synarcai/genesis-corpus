@@ -48,6 +48,18 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
          "pl": (("najpierw", "potem"), ("na początku", "później"), ("początkowo", "następnie"))}
 ЦВЕТА = {"en": ("red", "blue"), "ru": ("красных", "синих"), "de": ("rote", "blaue"), "fr": ("rouges", "bleues"), "es": ("rojas", "azules"),
          "it": ("rosse", "blu"), "pt": ("vermelhas", "azuis"), "nl": ("rode", "blauwe"), "pl": ("czerwonych", "niebieskich")}
+# A FRACTION OF THE THINGS (sweep of the sixth point, 05.09: stories with shares — 41 mute in en, the
+# largest reasoning class after holdings): the share is a DECLARED WORD, its denominator is the
+# ledger's divisor («a third of them are red: 12 ÷ 3 = 4»); the colour is a predicate that does not
+# bend with the thing's gender (fr rouges/jaunes, es verdes/azules, it verdi/blu, pt verdes/azuis)
+ДОЛИ = {"en": {2: "half", 3: "a third", 4: "a quarter"}, "ru": {2: "половина", 3: "треть", 4: "четверть"},
+        "de": {2: "die Hälfte", 3: "ein Drittel", 4: "ein Viertel"}, "fr": {2: "la moitié", 3: "un tiers", 4: "un quart"},
+        "es": {2: "la mitad", 3: "un tercio", 4: "un cuarto"}, "it": {2: "la metà", 3: "un terzo", 4: "un quarto"},
+        "pt": {2: "metade", 3: "um terço", 4: "um quarto"}, "nl": {2: "de helft", 3: "een derde", 4: "een kwart"},
+        "pl": {2: "połowa", 3: "jedna trzecia", 4: "jedna czwarta"}}
+ЦВЕТ_ПРЕД = {"en": ("red", "blue"), "ru": ("красные", "синие"), "de": ("rot", "blau"), "fr": ("rouges", "jaunes"),
+             "es": ("verdes", "azules"), "it": ("verdi", "blu"), "pt": ("verdes", "azuis"), "nl": ("rood", "blauw"),
+             "pl": ("czerwone", "niebieskie")}
 # Polish dative of the names (the pack declares gender only)
 ДАТЕЛЬНЫЙ_PL = {"Anna": "Annie", "Jan": "Janowi", "Maria": "Marii", "Piotr": "Piotrowi", "Zofia": "Zofii", "Paweł": "Pawłowi", "Ewa": "Ewie", "Marek": "Markowi"}
 # goods outside the lexicon: (two kinds, the union), count forms one/many (ru: one/few/many)
@@ -87,6 +99,8 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         держит="{X} has {n} {Тn}. {Он} finds {k} more. how many {Тмн} does {X} hold now? {X} holds {s} {Тs}: {n} + {k} = {s}.",
         хранит="{X} has {n} {Тn}. {Он} gives away {k}. how many {Тмн} does {X} keep? {X} keeps {r} {Тr}: {n} − {k} = {r}.",
         владеет_после="{X} has {n} {Тn}. {Он} gives away {k}. how many {Тмн} does {X} own now? {X} owns {r} {Тr}: {n} − {k} = {r}.",
+        доля="{X} has {n} {Тn}. {ДОЛЯ} of them are {ЦП}. how many {Тмн} are {ЦП}? {r}: {n} ÷ {q} = {r}.",
+        доля_не="{X} has {n} {Тn}. {ДОЛЯ} of them are {ЦП}. how many {Тмн} are not {ЦП}? step 1: {n} ÷ {q} = {r}. step 2: {n} − {r} = {d}. total: {d}.",
         факт="{X} has {n} {Тn}. how many {Тмн} does {X} have? {n}.",
         без_данных="how many {Тмн} does {X} have? I do not know: how many {Тмн} {X} has is not said.",
         собрал_у="{X} collected {n} {Тn}. {Он} lost {k} of them. how many {Тмн} does {X} have left? {r}: {n} − {k} = {r}.",
@@ -111,6 +125,8 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         три_шаги="{X} собрал{а} {n} {Тn}. {X} купил{а} ещё {k}. {он} потерял{а} {m} из них. сколько {Тмн} у {Xр} осталось? шаг 1: {n} + {k} = {s}. шаг 2: {s} − {m} = {t}. итог: {t}.",
         владеет="у {Xр} есть {n} {Тn}. сколько {Тмн} имеет {X}? {X} имеет {n} {Тn}.",
         владеет_после="у {Xр} есть {n} {Тn}. {Он} отдаёт {k}. сколько {Тмн} имеет {X} теперь? {X} имеет {r} {Тr}: {n} − {k} = {r}.",
+        доля="у {Xр} {n} {Тn}. {ДОЛЯ} из них — {ЦП}. сколько из них {ЦП}? {r}: {n} ÷ {q} = {r}.",
+        доля_не="у {Xр} {n} {Тn}. {ДОЛЯ} из них — {ЦП}. сколько из них не {ЦП}? шаг 1: {n} ÷ {q} = {r}. шаг 2: {n} − {r} = {d}. итог: {d}.",
         факт="у {Xр} {n} {Тn}. сколько {Тмн} у {Xр}? {n}.",
         без_данных="сколько {Тмн} у {Xр}? не знаю: сколько {Тмн} у {Xр}, не сказано.",
         собрал_у="{X} собрал{а} {n} {Тn}. {Он} потерял{а} {k} из них. сколько {Тмн} у {Xр} осталось? {r}: {n} − {k} = {r}.",
@@ -141,7 +157,8 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
 }
 РАМКИ.update({
     "de": dict(
-        осталось="{X} hatte {n} {Тn}. {Он} gab {k} weg. wie viele hat {он} jetzt? {он} hat jetzt noch {r}: {n} − {k} = {r}.",
+        осталось=("{X} hatte {n} {Тn}. {Он} gab {k} weg. wie viele hat {он} jetzt? {он} hat jetzt noch {r}: {n} − {k} = {r}.",
+                  "{X} hatte {n} {Тn}. {Он} gab {k} weg. wie viele bleiben übrig? es bleiben {r} übrig: {n} − {k} = {r}."),
         ему="{X} hatte {n} {Тn}. {Y} gab {ему} {k} mehr. wie viele {Тмн} hat {он} jetzt? {s}: {n} + {k} = {s}.",
         если_придут="in der Kiste sind {n} {Тn}. wenn {k} mehr hineingelegt werden, wie viele werden es sein? {s}: {n} + {k} = {s}.",
         у_него="{X} hatte {n} {Тn}. {Y} nahm {ему} {k} {Тk} weg. wie viele {Тмн} hat {X} jetzt? {r}: {n} − {k} = {r}.",
@@ -153,6 +170,8 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         три_шаги="{X} sammelte {n} {Тn}. {X} kaufte noch {k}. {он} verlor {m} davon. wie viele {Тмн} hat {X} noch? Schritt 1: {n} + {k} = {s}. Schritt 2: {s} − {m} = {t}. Ergebnis: {t}.",
         владеет="{X} hat {n} {Тn}. wie viele {Тмн} besitzt {X}? {X} besitzt {n} {Тn}.",
         владеет_после="{X} hat {n} {Тn}. {Он} gibt {k} weg. wie viele {Тмн} besitzt {X} jetzt? {X} besitzt {r} {Тr}: {n} − {k} = {r}.",
+        доля="{X} hat {n} {Тn}. {ДОЛЯ} davon ist {ЦП}. wie viele davon sind {ЦП}? {r}: {n} ÷ {q} = {r}.",
+        доля_не="{X} hat {n} {Тn}. {ДОЛЯ} davon ist {ЦП}. wie viele davon sind nicht {ЦП}? Schritt 1: {n} ÷ {q} = {r}. Schritt 2: {n} − {r} = {d}. Ergebnis: {d}.",
         факт="{X} hat {n} {Тn}. wie viele {Тмн} hat {X}? {n}.",
         без_данных="wie viele {Тмн} hat {X}? ich weiß es nicht: wie viele {Тмн} {X} hat, ist nicht gesagt.",
         собрал_у="{X} sammelte {n} {Тn}. {Он} verlor {k} davon. wie viele {Тмн} hat {X} noch? {r}: {n} − {k} = {r}.",
@@ -174,6 +193,8 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         три_шаги="{X} a ramassé {n} {Тn}. {X} en a acheté {k} de plus. {он} en a perdu {m}. combien de {Тмн} reste-t-il à {X} ? étape 1 : {n} + {k} = {s}. étape 2 : {s} − {m} = {t}. total : {t}.",
         владеет="{X} a {n} {Тn}. combien de {Тмн} possède {X} ? {X} possède {n} {Тn}.",
         владеет_после="{X} a {n} {Тn}. {Он} en donne {k}. combien de {Тмн} possède {X} maintenant ? {X} possède {r} {Тr} : {n} − {k} = {r}.",
+        доля="{X} a {n} {Тn}. {ДОЛЯ} sont {ЦП}. combien sont {ЦП} ? {r} : {n} ÷ {q} = {r}.",
+        доля_не="{X} a {n} {Тn}. {ДОЛЯ} sont {ЦП}. combien ne sont pas {ЦП} ? étape 1 : {n} ÷ {q} = {r}. étape 2 : {n} − {r} = {d}. total : {d}.",
         факт="{X} a {n} {Тn}. combien de {Тмн} a {X} ? {n}.",
         без_данных="combien de {Тмн} a {X} ? je ne sais pas : combien de {Тмн} a {X} n'est pas dit.",
         собрал_у="{X} a ramassé {n} {Тn}. {Он} en a perdu {k}. combien de {Тмн} reste-t-il à {X} ? {r} : {n} − {k} = {r}.",
@@ -195,6 +216,8 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         три_шаги="{X} recogió {n} {Тn}. {X} compró {k} más. {он} perdió {m}. ¿qué cantidad de {Тмн} le queda a {X}? paso 1: {n} + {k} = {s}. paso 2: {s} − {m} = {t}. total: {t}.",
         владеет="{X} tiene {n} {Тn}. ¿{кск} {Тмн} posee {X}? {X} posee {n} {Тn}.",
         владеет_после="{X} tiene {n} {Тn}. da {k}. ¿{кск} {Тмн} posee {X} ahora? {X} posee {r} {Тr}: {n} − {k} = {r}.",
+        доля="{X} tiene {n} {Тn}. {ДОЛЯ} de {ellas} son {ЦП}. ¿{кск} son {ЦП}? {r}: {n} ÷ {q} = {r}.",
+        доля_не="{X} tiene {n} {Тn}. {ДОЛЯ} de {ellas} son {ЦП}. ¿{кск} no son {ЦП}? paso 1: {n} ÷ {q} = {r}. paso 2: {n} − {r} = {d}. total: {d}.",
         факт="{X} tiene {n} {Тn}. ¿{кск} {Тмн} tiene {X}? {n}.",
         без_данных="¿{кск} {Тмн} tiene {X}? no lo sé: no se dice {кск} {Тмн} tiene {X}.",
         собрал_у="{X} recogió {n} {Тn}. perdió {k}. ¿qué cantidad de {Тмн} le queda a {X}? {r}: {n} − {k} = {r}.",
@@ -216,6 +239,8 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         три_шаги="{X} ha raccolto {n} {Тn}. {X} ha comprato {altre} {k} {Тk}. {он} ha perso {m} {Тm}. che quantità di {Тмн} resta a {X}? passo 1: {n} + {k} = {s}. passo 2: {s} − {m} = {t}. totale: {t}.",
         владеет="{X} ha {n} {Тn}. {quante} {Тмн} possiede {X}? {X} possiede {n} {Тn}.",
         владеет_после="{X} ha {n} {Тn}. ne dà {k}. {quante} {Тмн} possiede {X} adesso? {X} possiede {r} {Тr}: {n} − {k} = {r}.",
+        доля="{X} ha {n} {Тn}. {ДОЛЯ} sono {ЦП}. {quante} sono {ЦП}? {r}: {n} ÷ {q} = {r}.",
+        доля_не="{X} ha {n} {Тn}. {ДОЛЯ} sono {ЦП}. {quante} non sono {ЦП}? passo 1: {n} ÷ {q} = {r}. passo 2: {n} − {r} = {d}. totale: {d}.",
         факт="{X} ha {n} {Тn}. {quante} {Тмн} ha {X}? {n}.",
         без_данных="{quante} {Тмн} ha {X}? non lo so: non è detto {quante} {Тмн} ha {X}.",
         собрал_у="{X} ha raccolto {n} {Тn}. ha perso {k} {Тk}. che quantità di {Тмн} resta a {X}? {r}: {n} − {k} = {r}.",
@@ -237,6 +262,8 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         три_шаги="{X} apanhou {n} {Тn}. {X} comprou mais {k}. {он} perdeu {m}. que quantidade de {Тмн} resta {Xд}? passo 1: {n} + {k} = {s}. passo 2: {s} − {m} = {t}. total: {t}.",
         владеет="{X} tem {n} {Тn}. {quantas} {Тмн} possui {X}? {X} possui {n} {Тn}.",
         владеет_после="{X} tem {n} {Тn}. dá {k}. {quantas} {Тмн} possui {X} agora? {X} possui {r} {Тr}: {n} − {k} = {r}.",
+        доля="{X} tem {n} {Тn}. {ДОЛЯ} são {ЦП}. {quantas} são {ЦП}? {r}: {n} ÷ {q} = {r}.",
+        доля_не="{X} tem {n} {Тn}. {ДОЛЯ} são {ЦП}. {quantas} não são {ЦП}? passo 1: {n} ÷ {q} = {r}. passo 2: {n} − {r} = {d}. total: {d}.",
         факт="{X} tem {n} {Тn}. {quantas} {Тмн} tem {X}? {n}.",
         без_данных="{quantas} {Тмн} tem {X}? não sei: não é dito {quantas} {Тмн} tem {X}.",
         собрал_у="{X} apanhou {n} {Тn}. perdeu {k}. que quantidade de {Тмн} resta {Xд}? {r}: {n} − {k} = {r}.",
@@ -259,6 +286,8 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         три_шаги="{X} verzamelde {n} {Тn}. {X} kocht er nog {k} bij. {он} verloor er {m}. hoeveel {Тмн} heeft {X} nog? stap 1: {n} + {k} = {s}. stap 2: {s} − {m} = {t}. totaal: {t}.",
         владеет="{X} heeft {n} {Тn}. hoeveel {Тмн} bezit {X}? {X} bezit {n} {Тn}.",
         владеет_после="{X} heeft {n} {Тn}. {он} geeft er {k} weg. hoeveel {Тмн} bezit {X} nu? {X} bezit {r} {Тr}: {n} − {k} = {r}.",
+        доля="{X} heeft {n} {Тn}. {ДОЛЯ} daarvan is {ЦП}. hoeveel daarvan zijn {ЦП}? {r}: {n} ÷ {q} = {r}.",
+        доля_не="{X} heeft {n} {Тn}. {ДОЛЯ} daarvan is {ЦП}. hoeveel daarvan zijn niet {ЦП}? stap 1: {n} ÷ {q} = {r}. stap 2: {n} − {r} = {d}. totaal: {d}.",
         факт="{X} heeft {n} {Тn}. hoeveel {Тмн} heeft {X}? {n}.",
         без_данных="hoeveel {Тмн} heeft {X}? ik weet het niet: hoeveel {Тмн} {X} heeft, is niet gezegd.",
         собрал_у="{X} verzamelde {n} {Тn}. {он} verloor er {k}. hoeveel {Тмн} heeft {X} nog? {r}: {n} − {k} = {r}.",
@@ -280,6 +309,8 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         три_шаги="{X} zebrał{а} {n} {Тn}. {X} kupił{а} jeszcze {k}. {он} zgubił{а} {m} z nich. ile {Тмн} zostało {Xд}? krok 1: {n} + {k} = {s}. krok 2: {s} − {m} = {t}. razem: {t}.",
         владеет="{X} ma {n} {Тn}. ile {Тмн} posiada {X}? {X} posiada {n} {Тn}.",
         владеет_после="{X} ma {n} {Тn}. oddaje {k}. ile {Тмн} posiada {X} teraz? {X} posiada {r} {Тr}: {n} − {k} = {r}.",
+        доля="{X} ma {n} {Тn}. {ДОЛЯ} z nich to {ЦП}. ile z nich to {ЦП}? {r}: {n} ÷ {q} = {r}.",
+        доля_не="{X} ma {n} {Тn}. {ДОЛЯ} z nich to {ЦП}. ile z nich to nie {ЦП}? krok 1: {n} ÷ {q} = {r}. krok 2: {n} − {r} = {d}. razem: {d}.",
         факт="{X} ma {n} {Тn}. ile {Тмн} ma {X}? {n}.",
         без_данных="ile {Тмн} ma {X}? nie wiem: nie powiedziano, ile {Тмн} ma {X}.",
         собрал_у="{X} zebrał{а} {n} {Тn}. zgubił{а} {k} z nich. ile {Тмн} zostało {Xд}? {r}: {n} − {k} = {r}.",
@@ -289,7 +320,7 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         время="{В1} {X} miał{а} {n} {Тn}. {В2} dostał{а} jeszcze {k}. ile {Тмн} ma teraz? {s}: {n} + {k} = {s}.",
         кому="{X} miał{а} {n} {Тn}. oddał{а} {k} {Тk} {Yд}. ile {Тмн} ma {X} teraz? {r}: {n} − {k} = {r}."),
 })
-ФОРМЫ = ("некоторые", "итог", "итог_всего", "осталось", "из_них", "ему", "если", "если_придут", "время", "кому", "у_него", "единица", "товар", "потерял", "купил_ещё", "собрал_у", "три", "три_шаги", "факт", "без_данных", "владеет", "владеет2", "владеет_после", "держит", "хранит")
+ФОРМЫ = ("некоторые", "итог", "итог_всего", "осталось", "из_них", "ему", "если", "если_придут", "время", "кому", "у_него", "единица", "товар", "потерял", "купил_ещё", "собрал_у", "три", "три_шаги", "факт", "без_данных", "владеет", "владеет2", "владеет_после", "держит", "хранит", "доля", "доля_не")
 # the unit before the number is an English shape of the band; Russian writes «3 ₽» after — declared gap
 ОБЪЯВЛЕННЫЕ_ПРОПУСКИ = {"единица": frozenset({"ru"}),
                        # «possess» — второй английский глагол владения; у других языков один
@@ -377,6 +408,11 @@ def страница(язык, форма, i, j, Т, n, k, вариант=0, и�
     if форма in ("итог", "итог_всего"):
         цвета = ЦВЕТА_М[язык] if п.get("_род") == "m" and язык in ЦВЕТА_М else ЦВЕТА[язык]
         п.update(Ц1=цвета[0], Ц2=цвета[1])
+    if форма in ("доля", "доля_не"):
+        q = (2, 3, 4)[вариант % 3]
+        if n % q:
+            return None            # a share is shown only where it divides — no fractions of things
+        п.update(q=q, r=n // q, d=n - n // q, ДОЛЯ=ДОЛИ[язык][q], ЦП=ЦВЕТ_ПРЕД[язык][Т % 2])
     if форма == "время":
         в1, в2 = ВРЕМЯ[язык][вариант % len(ВРЕМЯ[язык])]
         п.update(В1=в1, В2=в2)
@@ -419,7 +455,7 @@ def _показы():
                 continue
             for q, (n, k) in enumerate(ЧИСЛА):
                 i = q % лиц; j = (q * 3 + 1) % лиц; Т = q % вещей
-                варианты = 3 if форма in ("итог", "время", "товар") else (4 if форма == "единица" else 1)
+                варианты = 3 if форма in ("итог", "время", "товар", "доля", "доля_не") else (4 if форма == "единица" else 1)
                 if isinstance(РАМКИ[язык][форма], tuple):
                     варианты = max(варианты, len(РАМКИ[язык][форма]))
                 for вариант in range(варианты):
@@ -452,7 +488,8 @@ def _образцы():
         товары = [ф for ряд in ТОВАРЫ.get(язык, ()) for г in ряд for ф in г]
         дыры = {"X": alt(имена), "Y": alt(имена), "Xр": alt(род), "Yд": alt(дат), "Xд": alt(дат), "он": alt(мест), "Он": alt(мест), "него": alt(мест), "ему": alt(мест),
                 "а": "(?:а|о|и|a|)", "аY": "(?:а|о|и|a|)", "n": r"(\d+)", "k": r"(\d+)", "r": r"(\d+)", "s": r"(\d+)", "a": r"(\d+)", "b": r"(\d+)", "v": r"(\d+)",
-                "m": r"(\d+)", "t": r"(\d+)",
+                "m": r"(\d+)", "t": r"(\d+)", "q": r"(\d+)", "d": r"(\d+)",
+                "ДОЛЯ": alt(ДОЛИ[язык].values()), "ЦП": alt(ЦВЕТ_ПРЕД[язык]),
                 "Тn": alt(вещи), "Тk": alt(вещи), "Тr": alt(вещи), "Тs": alt(вещи), "Тмн": alt(вещи), "Т1": alt(вещи1), "Тm": alt(вещи),
                 "ГОЛОВА": alt(ГОЛОВЫ_ИТОГА[язык]), "Ц1": alt(ЦВЕТА[язык] + ЦВЕТА_М.get(язык, ())), "Ц2": alt(ЦВЕТА[язык] + ЦВЕТА_М.get(язык, ())),
                 "В1": alt(в for в, _ in ВРЕМЯ[язык]), "В2": alt(в for _, в in ВРЕМЯ[язык]),
@@ -820,8 +857,20 @@ def _образцы_актов():
 
 ОБРАЗЦЫ.extend(_образцы_актов())
 ЛЕДЖЕР3 = re.compile(r"(\d+) \+ (\d+) ([+−]) (\d+) = (\d+)\.$")
-ЛЕДЖЕР = re.compile(r"(\d+) ([+−×]) (\d+) = (\d+)\.$")
-ШАГ = re.compile(r"(\d+) ([+−×]) (\d+) = (\d+)")
+ЛЕДЖЕР = re.compile(r"(\d+) ([+−×÷]) (\d+) = (\d+)\.$")
+ШАГ = re.compile(r"(\d+) ([+−×÷]) (\d+) = (\d+)")
+
+
+def _значение(a, з, b):
+    if з == "+": return a + b
+    if з == "−": return a - b
+    if з == "×": return a * b
+    return a // b if b and a % b == 0 else None       # ÷ only where it divides
+
+
+def _знаменатели(язык, текст):
+    """The denominators of the declared share words in the story: «a third» lends the 3."""
+    return {q for q, слово in ДОЛИ.get(язык, {}).items() if слово in текст}
 ВОПРОС_КОНЕЦ = re.compile(r"[?？] ")
 
 
@@ -839,7 +888,7 @@ def _имена_в(язык, текст):
     return {с for с in re.findall(r"[^\W\d_]+", текст) if с in формы}
 
 
-def _шаги(с):
+def _шаги(с, язык=None):
     """A CHAIN OF STEPS (the long surface of one genus, 05.09): every step recomputed, every
     next step fed by the previous result, the total the last result, the first inputs the
     story's numbers. None — the line is not a chain (fewer than two steps)."""
@@ -848,11 +897,11 @@ def _шаги(с):
         return None
     хвост = с[ШАГ.search(с).start():]
     голова = с[:ШАГ.search(с).start()]
-    числа = {int(x) for x in re.findall(r"\d+", голова)}
+    числа = {int(x) for x in re.findall(r"\d+", голова)} | _знаменатели(язык, голова)
     прежний = None
     for a, з, b, v in шаги:
         a, b, v = int(a), int(b), int(v)
-        if v != (a + b if з == "+" else a - b if з == "−" else a * b):
+        if v != _значение(a, з, b):
             return False
         if прежний is None:
             if a not in числа or b not in числа:
@@ -871,7 +920,7 @@ def судить(строка):
         return True, True
     for образ, язык, форма in ОБРАЗЦЫ:
         if образ.match(с):
-            цепь = _шаги(с)
+            цепь = _шаги(с, язык)
             if цепь is not None:
                 return True, цепь
             if not ЛЕДЖЕР.search(с):
@@ -899,9 +948,22 @@ def судить(строка):
             if not м:
                 return True, False
             a, з, b, v = int(м.group(1)), м.group(2), int(м.group(3)), int(м.group(4))
-            верно = v == (a + b if з == "+" else a - b if з == "−" else a * b)
-            # the numbers of the story (BEFORE the ledger) must be the numbers of the ledger
-            числа = [int(x) for x in re.findall(r"\d+", с[:м.start()])]
+            верно = v == _значение(a, з, b)
+            # the numbers of the STORY (before the question mark) must be the numbers of the
+            # ledger — a declared share word lends its denominator («a third» → 3), and a share's
+            # divisor must be that denominator; the ANSWER (between the question mark and the
+            # ledger) states the ledger's result — «6: 12 − 5 = 7» is a lie of the answer, not of
+            # the equation (05.09: the first judge read the answer's number as a story number)
+            вопросы = list(ВОПРОС_КОНЕЦ.finditer(с[:м.start()]))
+            история = с[:вопросы[-1].start()] if вопросы else с[:м.start()]
+            ответ = с[вопросы[-1].end():м.start()] if вопросы else ""
+            знаменатели = _знаменатели(язык, история)
+            числа = [int(x) for x in re.findall(r"\d+", история)] + list(знаменатели)
+            заявлено = [int(x) for x in re.findall(r"\d+", ответ)]
+            if заявлено and заявлено[-1] != v:
+                return True, False
+            if з == "÷" and знаменатели and b not in знаменатели:
+                return True, False
             return True, верно and a in числа and b in числа
     return False, False
 
@@ -936,9 +998,11 @@ def _самопроверка():
     # мутанты двух длин и удержания: шаг с неверным итогом, разорванная связь шагов, число в удержании,
     # чужое число в факте
     for язык in РАМКИ:
-        ш = страница(язык, "три_шаги", 0, 1, 0, 12, 5)
-        assert судить(ш) == (True, True), ш
-        assert судить(re.sub(r"= (\d+)\. (\S+ 2)", lambda м: f"= {int(м.group(1)) + 1}. {м.group(2)}", ш, 1)) == (True, False), ш
+        for цепная in ("три_шаги", "доля_не"):
+            ш = страница(язык, цепная, 0, 1, 0, 12, 5)
+            assert судить(ш) == (True, True), ш
+            assert судить(re.sub(r"= (\d+)\. (\S+ 2)", lambda м: f"= {int(м.group(1)) + 1}. {м.group(2)}", ш, 1)) == (True, False), ш
+            мутанты += 1
         ф = страница(язык, "факт", 0, 1, 0, 12, 5)
         assert судить(ф) == (True, True), ф
         assert судить(ф[:-3] + "13.") == (True, False), ф
