@@ -41,6 +41,15 @@ def main():
         "Ann is 12 years old. how old is Ann? Ann is 12 year old.",
         "Lena hat keine Münzen. wie viele Münzen hat Lena? null: Lena hat keine Bälle.",
         "Marta tiene 12 monedas. ¿cuántos monedas tiene Marta? Marta tiene 12 monedas.",
+        # ВОЛНА 2 (05.09): вопрос о ВТОРОМ товаре, отвеченный числом первого; владелец назван
+        # чужим именем; вещь названа чужой вещью; место названо чужим местом; связка места не
+        # по числу («there are 1 book»); вопрос «где» о единственном — шов, дом его не пишет
+        "Ann has 12 coins and 5 books. how many books does Ann have? Ann has 12 books.",
+        "у Ани 12 монет. у кого 12 монет? у Анны.",
+        "Ann has 12 coins. what does Ann have? Ann has books.",
+        "there are 12 books on the shelf. where are the 12 books? in the box.",
+        "there are 1 book on the shelf. how many books are on the shelf? there are 1 book on the shelf.",
+        "there is 1 book on the shelf. where is the 1 book? on the shelf.",
     )
     пойманы = sum(1 for п in подсадки if _судить(п) == (True, False))
     if пойманы != len(подсадки):

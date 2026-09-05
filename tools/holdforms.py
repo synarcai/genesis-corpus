@@ -46,47 +46,123 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
     "ru": dict(держание="у {Xр} {n} {Тn}. сколько {Тмн} у {Xр}? у {Xр} {n} {Тn}.",
                возраст="{Xд} {n} {Гn}. сколько лет {Xд}? {Xд} {n} {Гn}.",
                двое="у {Xр} {n} {Тn}, а у {Yр} {k} {Тk}. сколько {Тмн} у {Yр}? у {Yр} {k} {Тk}.",
-               нет="у {Xр} нет {Тмн}. сколько {Тмн} у {Xр}? {ноль}: у {Xр} нет {Тмн}."),
+               нет="у {Xр} нет {Тмн}. сколько {Тмн} у {Xр}? {ноль}: у {Xр} нет {Тмн}.",
+               место="{М} {n} {Тn}. сколько {Тмн} {М}? {М} {n} {Тn}.",
+               два_товара="у {Xр} {n} {Тn} и {m} {Т2m}. сколько {Т2мн} у {Xр}? у {Xр} {m} {Т2m}.",
+               чей="у {Xр} {n} {Тn}. у кого {n} {Тn}? у {Xр}.",
+               что_у="у {Xр} {n} {Тn}. что у {Xр}? у {Xр} {Тмн}.",
+               место_чего="{М} {n} {Тn}. где {n} {Тn}? {М}."),
     "en": dict(держание="{X} has {n} {Тn}. how many {Тмн} does {X} have? {X} has {n} {Тn}.",
                возраст="{X} is {n} {Гn} old. how old is {X}? {X} is {n} {Гn} old.",
                двое="{X} has {n} {Тn} and {Y} has {k} {Тk}. how many {Тмн} does {Y} have? {Y} has {k} {Тk}.",
-               нет="{X} has no {Тмн}. how many {Тмн} does {X} have? {ноль}: {X} has no {Тмн}."),
+               нет="{X} has no {Тмн}. how many {Тмн} does {X} have? {ноль}: {X} has no {Тмн}.",
+               место="{ЕСТЬ} {n} {Тn} {М}. how many {Тмн} are {М}? {ЕСТЬ} {n} {Тn} {М}.",
+               два_товара="{X} has {n} {Тn} and {m} {Т2m}. how many {Т2мн} does {X} have? {X} has {m} {Т2m}.",
+               чей="{X} has {n} {Тn}. who has {n} {Тn}? {X}.",
+               что_у="{X} has {n} {Тn}. what does {X} have? {X} has {Тмн}.",
+               место_чего="{ЕСТЬ} {n} {Тn} {М}. where {ЕСТЬ2} the {n} {Тn}? {М}."),
     "de": dict(держание="{X} hat {n} {Тn}. wie viele {Тмн} hat {X}? {X} hat {n} {Тn}.",
                возраст="{X} ist {n} {Гn} alt. wie alt ist {X}? {X} ist {n} {Гn} alt.",
                двое="{X} hat {n} {Тn} und {Y} hat {k} {Тk}. wie viele {Тмн} hat {Y}? {Y} hat {k} {Тk}.",
-               нет="{X} hat keine {Тмн}. wie viele {Тмн} hat {X}? {ноль}: {X} hat keine {Тмн}."),
+               нет="{X} hat keine {Тмн}. wie viele {Тмн} hat {X}? {ноль}: {X} hat keine {Тмн}.",
+               место="{М} {ЕСТЬ} {n} {Тn}. wie viele {Тмн} sind {М}? {М} {ЕСТЬ} {n} {Тn}.",
+               два_товара="{X} hat {n} {Тn} und {m} {Т2m}. wie viele {Т2мн} hat {X}? {X} hat {m} {Т2m}.",
+               чей="{X} hat {n} {Тn}. wer hat {n} {Тn}? {X}.",
+               что_у="{X} hat {n} {Тn}. was hat {X}? {X} hat {Тмн}.",
+               место_чего="{М} {ЕСТЬ} {n} {Тn}. wo {ЕСТЬ2} die {n} {Тn}? {М}."),
     "fr": dict(держание="{X} a {n} {Тn}. combien de {Тмн} a {X} ? {X} a {n} {Тn}.",
                возраст="{X} a {n} {Гn}. quel âge a {X} ? {X} a {n} {Гn}.",
                двое="{X} a {n} {Тn} et {Y} a {k} {Тk}. combien de {Тмн} a {Y} ? {Y} a {k} {Тk}.",
-               нет="{X} n'a pas de {Тмн}. combien de {Тмн} a {X} ? {ноль} : {X} n'a pas de {Тмн}."),
+               нет="{X} n'a pas de {Тмн}. combien de {Тмн} a {X} ? {ноль} : {X} n'a pas de {Тмн}.",
+               место="il y a {n} {Тn} {М}. combien de {Тмн} y a-t-il {М} ? il y a {n} {Тn} {М}.",
+               два_товара="{X} a {n} {Тn} et {m} {Т2m}. combien de {Т2мн} a {X} ? {X} a {m} {Т2m}.",
+               чей="{X} a {n} {Тn}. qui a {n} {Тn} ? {X}.",
+               что_у="{X} a {n} {Тn}. qu'est-ce que {X} a ? {X} a des {Тмн}.",
+               место_чего="il y a {n} {Тn} {М}. où {ЕСТЬ2} les {n} {Тn} ? {М}."),
     "es": dict(держание="{X} tiene {n} {Тn}. ¿{кск} {Тмн} tiene {X}? {X} tiene {n} {Тn}.",
                возраст="{X} tiene {n} {Гn}. ¿cuántos años tiene {X}? {X} tiene {n} {Гn}.",
                двое="{X} tiene {n} {Тn} y {Y} tiene {k} {Тk}. ¿{кск} {Тмн} tiene {Y}? {Y} tiene {k} {Тk}.",
-               нет="{X} no tiene {Тмн}. ¿{кск} {Тмн} tiene {X}? {ноль}: {X} no tiene {Тмн}."),
+               нет="{X} no tiene {Тмн}. ¿{кск} {Тмн} tiene {X}? {ноль}: {X} no tiene {Тмн}.",
+               место="hay {n} {Тn} {М}. ¿{кск} {Тмн} hay {М}? hay {n} {Тn} {М}.",
+               два_товара="{X} tiene {n} {Тn} y {m} {Т2m}. ¿{кск2} {Т2мн} tiene {X}? {X} tiene {m} {Т2m}.",
+               чей="{X} tiene {n} {Тn}. ¿quién tiene {n} {Тn}? {X}.",
+               что_у="{X} tiene {n} {Тn}. ¿qué tiene {X}? {X} tiene {Тмн}.",
+               место_чего="hay {n} {Тn} {М}. ¿dónde {ЕСТЬ2} {АМ} {n} {Тn}? {М}."),
     "it": dict(держание="{X} ha {n} {Тn}. {quante} {Тмн} ha {X}? {X} ha {n} {Тn}.",
                возраст="{X} ha {n} {Гn}. quanti anni ha {X}? {X} ha {n} {Гn}.",
                двое="{X} ha {n} {Тn} e {Y} ha {k} {Тk}. {quante} {Тмн} ha {Y}? {Y} ha {k} {Тk}.",
-               нет="{X} non ha {Тмн}. {quante} {Тмн} ha {X}? {ноль}: {X} non ha {Тмн}."),
+               нет="{X} non ha {Тмн}. {quante} {Тмн} ha {X}? {ноль}: {X} non ha {Тмн}.",
+               место="{ЕСТЬ} {n} {Тn} {М}. {quante} {Тмн} ci sono {М}? {ЕСТЬ} {n} {Тn} {М}.",
+               два_товара="{X} ha {n} {Тn} e {m} {Т2m}. {quante2} {Т2мн} ha {X}? {X} ha {m} {Т2m}.",
+               чей="{X} ha {n} {Тn}. chi ha {n} {Тn}? {X}.",
+               что_у="{X} ha {n} {Тn}. che cosa ha {X}? {X} ha {Тмн}.",
+               место_чего="{ЕСТЬ} {n} {Тn} {М}. dove {ЕСТЬ2} {АМ} {n} {Тn}? {М}."),
     "pt": dict(держание="{X} tem {n} {Тn}. {quantas} {Тмн} tem {X}? {X} tem {n} {Тn}.",
                возраст="{X} tem {n} {Гn}. quantos anos tem {X}? {X} tem {n} {Гn}.",
                двое="{X} tem {n} {Тn} e {Y} tem {k} {Тk}. {quantas} {Тмн} tem {Y}? {Y} tem {k} {Тk}.",
-               нет="{X} não tem {Тмн}. {quantas} {Тмн} tem {X}? {ноль}: {X} não tem {Тмн}."),
+               нет="{X} não tem {Тмн}. {quantas} {Тмн} tem {X}? {ноль}: {X} não tem {Тмн}.",
+               место="há {n} {Тn} {М}. {quantas} {Тмн} há {М}? há {n} {Тn} {М}.",
+               два_товара="{X} tem {n} {Тn} e {m} {Т2m}. {quantas2} {Т2мн} tem {X}? {X} tem {m} {Т2m}.",
+               чей="{X} tem {n} {Тn}. quem tem {n} {Тn}? {X}.",
+               что_у="{X} tem {n} {Тn}. o que tem {X}? {X} tem {Тмн}.",
+               место_чего="há {n} {Тn} {М}. onde {ЕСТЬ2} {АМ} {n} {Тn}? {М}."),
     "nl": dict(держание="{X} heeft {n} {Тn}. hoeveel {Тмн} heeft {X}? {X} heeft {n} {Тn}.",
                возраст="{X} is {n} {Гn} oud. hoe oud is {X}? {X} is {n} {Гn} oud.",
                двое="{X} heeft {n} {Тn} en {Y} heeft {k} {Тk}. hoeveel {Тмн} heeft {Y}? {Y} heeft {k} {Тk}.",
-               нет="{X} heeft geen {Тмн}. hoeveel {Тмн} heeft {X}? {ноль}: {X} heeft geen {Тмн}."),
+               нет="{X} heeft geen {Тмн}. hoeveel {Тмн} heeft {X}? {ноль}: {X} heeft geen {Тмн}.",
+               место="er {ЕСТЬ} {n} {Тn} {М}. hoeveel {Тмн} liggen {М}? er {ЕСТЬ} {n} {Тn} {М}.",
+               два_товара="{X} heeft {n} {Тn} en {m} {Т2m}. hoeveel {Т2мн} heeft {X}? {X} heeft {m} {Т2m}.",
+               чей="{X} heeft {n} {Тn}. wie heeft {n} {Тn}? {X}.",
+               что_у="{X} heeft {n} {Тn}. wat heeft {X}? {X} heeft {Тмн}.",
+               место_чего="er {ЕСТЬ} {n} {Тn} {М}. waar {ЕСТЬ2} de {n} {Тn}? {М}."),
     "pl": dict(держание="{X} ma {n} {Тn}. ile {Тмн} ma {X}? {X} ma {n} {Тn}.",
                возраст="{X} ma {n} {Гn}. ile lat ma {X}? {X} ma {n} {Гn}.",
                двое="{X} ma {n} {Тn}, a {Y} ma {k} {Тk}. ile {Тмн} ma {Y}? {Y} ma {k} {Тk}.",
-               нет="{X} nie ma {Тмн}. ile {Тмн} ma {X}? {ноль}: {X} nie ma {Тмн}."),
+               нет="{X} nie ma {Тмн}. ile {Тмн} ma {X}? {ноль}: {X} nie ma {Тмн}.",
+               место="{М} jest {n} {Тn}. ile {Тмн} jest {М}? {М} jest {n} {Тn}.",
+               два_товара="{X} ma {n} {Тn} i {m} {Т2m}. ile {Т2мн} ma {X}? {X} ma {m} {Т2m}.",
+               чей="{X} ma {n} {Тn}. kto ma {n} {Тn}? {X}.",
+               что_у="{X} ma {n} {Тn}. co ma {X}? {X} ma {Тмн}.",
+               место_чего="{М} jest {n} {Тn}. gdzie jest {n} {Тn}? {М}."),
 }
-ФОРМЫ = ("держание", "возраст", "двое", "нет")
+ФОРМЫ = ("держание", "возраст", "двое", "нет", "место", "два_товара", "чей", "что_у", "место_чего")
 # THE SINGULAR IS FOR ONE ALONE in these languages («21 ans», «21 años», «21 anni», «21 anos»,
 # «21 years»); a pack whose agreement rule bends 11/21/31 to the singular is wrong there, and
 # the house does not write what the pack bends wrong: those ages are a DECLARED SEAM until the
 # pack is corrected (the Polish rule was cured the same way, fa0db99). Nothing is skipped once
 # the pack says «one» for 1 alone — the seam is read from the table, not from a list of numbers.
 ЕДИНИЦА_ТОЛЬКО_ОДИН = frozenset({"en", "de", "fr", "es", "it", "pt", "nl"})
+
+
+# THE PLACE IS DECLARED WITH ITS PREPOSITION AND CASE (05.09, wave 2 of the house): a place
+# bends in Russian and Polish («на полке», «w pudełku») and takes an article elsewhere («on the
+# shelf», «im Regal», «sur l'étagère»), and the house writes the whole prepositional phrase —
+# one declaration, no guessing at cases. The question and the answer wear the SAME phrase.
+МЕСТА = {
+    "ru": ("на полке", "на столе", "в коробке", "в сумке"),
+    "en": ("on the shelf", "on the table", "in the box", "in the bag"),
+    "de": ("im Regal", "auf dem Tisch", "in der Kiste", "in der Tasche"),
+    "fr": ("sur l'étagère", "sur la table", "dans la boîte", "dans le sac"),
+    "es": ("en el estante", "en la mesa", "en la caja", "en la bolsa"),
+    "it": ("sullo scaffale", "sul tavolo", "nella scatola", "nella borsa"),
+    "pt": ("na prateleira", "na mesa", "na caixa", "no saco"),
+    "nl": ("op de plank", "op de tafel", "in de doos", "in de tas"),
+    "pl": ("na półce", "na stole", "w pudełku", "w torbie"),
+}
+# THE COPULA OF A PLACE BENDS WITH THE NUMBER: «there is 1 card» / «there are 12 cards»,
+# «im Regal ist 1 Buch» / «sind 12 Bücher», «c'è 1 libro» / «ci sono 12 libri», «er ligt 1 boek» /
+# «er liggen 12 boeken». Where the language keeps one form («hay», «há», «na półce jest»), the
+# frame writes it and needs no hole. The judge checks the copula against the number.
+ЕСТЬ = {"en": ("there is", "there are"), "de": ("ist", "sind"), "it": ("c'è", "ci sono"),
+        "nl": ("ligt", "liggen")}
+# the same law for the question «where is / where are»
+ЕСТЬ2 = {"en": ("is", "are"), "de": ("ist", "sind"), "it": ("è", "sono"), "nl": ("ligt", "liggen"),
+         "fr": ("est", "sont"), "es": ("está", "están"), "pt": ("está", "estão")}
+
+# THE PLURAL ARTICLE BENDS WITH THE THING where the language has one and it is not invariant
+# («los libros» / «las flores», «i libri» / «le carte», «os livros» / «as flores»); the languages
+# whose plural article is one word write it inside the frame and need no hole.
+АРТИКЛЬ_МН = {"es": ("los", "las"), "it": ("i", "le"), "pt": ("os", "as")}
 
 
 def _пакет(язык):
@@ -110,21 +186,36 @@ def _дательный(язык, лицо):
     return лицо[0]
 
 
-def _поля(язык, i, j, Т, n, k):
+def _поля(язык, i, j, Т, n, k, М=0, Т2=None, m=None):
     X, Y = S._лицо(язык, i), S._лицо(язык, j)
     if Y[0] == X[0]:
         Y = S._лицо(язык, j + 1)
     вещь = lambda c: A._вещь(язык, Т, c)
+    вещей = len(A.ЯЗЫКИ[язык]["вещи"])
+    Т2 = (Т + 1) % вещей if Т2 is None else Т2 % вещей
+    if Т2 == Т:
+        Т2 = (Т2 + 1) % вещей
+    m = k if m is None else m
+    вещь2 = lambda c: A._вещь(язык, Т2, c)
     п = dict(X=X[0], Xр=X[2], Xд=_дательный(язык, X), Y=Y[0], Yр=Y[2],
-             n=n, k=k, Тn=вещь(n), Тk=вещь(k), Тмн=вещь(5), Гn=N.год(язык, n), ноль=НОЛЬ[язык])
+             n=n, k=k, m=m, Тn=вещь(n), Тk=вещь(k), Тмн=вещь(5), Гn=N.год(язык, n), ноль=НОЛЬ[язык],
+             М=МЕСТА[язык][М % len(МЕСТА[язык])], Т2m=вещь2(m), Т2мн=вещь2(5))
     род = S.РОД_ВЕЩЕЙ.get(язык, {}).get(вещь(5), "f")
+    род2 = S.РОД_ВЕЩЕЙ.get(язык, {}).get(вещь2(5), "f")
     for дыра, (м_, ж_) in S.РОДОВЫЕ.get(язык, {}).items():
         п[дыра] = м_ if род == "m" else ж_
+        п[дыра + "2"] = м_ if род2 == "m" else ж_
+    if язык in АРТИКЛЬ_МН:
+        п["АМ"] = АРТИКЛЬ_МН[язык][0 if род == "m" else 1]
+    if язык in ЕСТЬ:
+        п["ЕСТЬ"] = ЕСТЬ[язык][0 if n == 1 else 1]
+    if язык in ЕСТЬ2:
+        п["ЕСТЬ2"] = ЕСТЬ2[язык][0 if n == 1 else 1]
     return п
 
 
-def страница(язык, форма, i, j, Т, n, k=None):
-    return РАМКИ[язык][форма].format(**_поля(язык, i, j, Т, n, k if k is not None else n))
+def страница(язык, форма, i, j, Т, n, k=None, М=0, Т2=None, m=None):
+    return РАМКИ[язык][форма].format(**_поля(язык, i, j, Т, n, k if k is not None else n, М, Т2, m))
 
 
 def _пара(n):
@@ -158,6 +249,26 @@ def _показы():
         for i in range(лиц):
             for Т in range(вещей):
                 вон[страница(язык, "нет", i, i + 1, Т, 1)] = (язык, "нет")
+        # WAVE 2 — the frames the reader must buy in nine languages (05.09, measured on the
+        # held-out key: story holdings are bought in English alone). A place holding things, a
+        # bearer holding two DIFFERENT things and asked about the second, and three questions
+        # whose answer is not a number at all: who holds, what is held, where it lies.
+        мест = len(МЕСТА[язык])
+        for n in range(1, ВЕРХ + 1):
+            for сдвиг in (0, 1):
+                Т = (n * (3 + сдвиг) + сдвиг) % вещей
+                вон[страница(язык, "место", 0, 1, Т, n, М=(n + сдвиг) % мест)] = (язык, "место")
+                вон[страница(язык, "два_товара", (n * 2 + сдвиг) % лиц, 0, Т, n,
+                             Т2=(Т + 1 + сдвиг) % вещей, m=_пара(n))] = (язык, "два_товара")
+            i, Т = n % лиц, (n * 5 + 1) % вещей
+            вон[страница(язык, "чей", i, i + 1, Т, n)] = (язык, "чей")
+            вон[страница(язык, "что_у", i, i + 1, Т, n)] = (язык, "что_у")
+            # ШОВ ЕДИНСТВЕННОГО ЧИСЛА: вопрос «где» называет вещь ОПРЕДЕЛЁННОЙ («die 12 Bücher»,
+            # «les 12 livres», «los 12 libros»), а её единственное требует артикля по роду в
+            # каждом языке — таблицы рода единственного дом не объявлял, и он не пишет того,
+            # чего не знает: форма стоит на числах от двух (шов читается правилом, не списком).
+            if n >= 2:
+                вон[страница(язык, "место_чего", 0, 1, Т, n, М=n % мест)] = (язык, "место_чего")
     return вон
 
 
@@ -185,9 +296,17 @@ def _образец(язык, рамка):
     имена = alt(л[0] for л in лица); род = alt(л[2] for л in лица); дат = alt(_дательный(язык, л) for л in лица)
     вещи = alt(ФОРМЫ_ВЕЩЕЙ[язык]); годы = alt(ГОДЫ[язык])
     дыры = {"X": имена, "Y": имена, "Xр": род, "Yр": род, "Xд": дат, "n": r"\d+", "k": r"\d+",
-            "Тn": вещи, "Тk": вещи, "Тмн": вещи, "Гn": годы, "ноль": re.escape(НОЛЬ[язык])}
+            "m": r"\d+", "Тn": вещи, "Тk": вещи, "Тмн": вещи, "Т2m": вещи, "Т2мн": вещи,
+            "Гn": годы, "ноль": re.escape(НОЛЬ[язык]), "М": alt(МЕСТА[язык])}
+    if язык in АРТИКЛЬ_МН:
+        дыры["АМ"] = alt(АРТИКЛЬ_МН[язык])
+    if язык in ЕСТЬ:
+        дыры["ЕСТЬ"] = alt(ЕСТЬ[язык])
+    if язык in ЕСТЬ2:
+        дыры["ЕСТЬ2"] = alt(ЕСТЬ2[язык])
     for дыра, пара in S.РОДОВЫЕ.get(язык, {}).items():
         дыры[дыра] = alt(пара)
+        дыры[дыра + "2"] = alt(пара)
     счёт = {}
     куски = []
     for кусок in re.split(r"(\{[^}]+\})", рамка):
@@ -230,15 +349,42 @@ def _вердикт(язык, форма, м):
     if "Тмн" in значения and "Тn" in значения:
         if not (ФОРМЫ_ВЕЩЕЙ[язык].get(значения["Тмн"], set()) & ФОРМЫ_ВЕЩЕЙ[язык].get(значения["Тn"], set())):
             return False
+    if "Т2m" in значения:
+        m = int(значения["m"])
+        свои2 = ФОРМЫ_ВЕЩЕЙ[язык].get(значения["Т2m"], set())
+        if not any(A._вещь(язык, Т, m) == значения["Т2m"] for Т in свои2):
+            return False
+        # the second thing's plural is the plural of the SAME second thing
+        if "Т2мн" in значения and not (свои2 & ФОРМЫ_ВЕЩЕЙ[язык].get(значения["Т2мн"], set())):
+            return False
+        # and the second thing is NOT the first one: the question names another thing
+        if "Тn" in значения and (свои2 & ФОРМЫ_ВЕЩЕЙ[язык].get(значения["Тn"], set())):
+            return False
     if "Гn" in значения and N.год(язык, n) != значения["Гn"]:
         return False
     if форма in ("держание", "двое", "нет", "возраст") and n is not None and not (1 <= n <= ВЕРХ):
         return False
+    if форма == "место_чего" and n is not None and n < 2:
+        return False        # the seam of the singular: the house does not write it
     for дыра, пара in S.РОДОВЫЕ.get(язык, {}).items():
         if дыра in значения and "Тмн" in значения:
             род = S.РОД_ВЕЩЕЙ.get(язык, {}).get(значения["Тмн"], "f")
             if значения[дыра] != (пара[0] if род == "m" else пара[1]):
                 return False
+        # the question word of the SECOND thing bends with the second thing
+        if дыра + "2" in значения and "Т2мн" in значения:
+            род2 = S.РОД_ВЕЩЕЙ.get(язык, {}).get(значения["Т2мн"], "f")
+            if значения[дыра + "2"] != (пара[0] if род2 == "m" else пара[1]):
+                return False
+    for дыра, таблица in (("ЕСТЬ", ЕСТЬ), ("ЕСТЬ2", ЕСТЬ2)):
+        if дыра in значения and n is not None and язык in таблица:
+            if значения[дыра] != таблица[язык][0 if n == 1 else 1]:
+                return False
+    if "АМ" in значения and "Тn" in значения and язык in АРТИКЛЬ_МН:
+        вещи_ = ФОРМЫ_ВЕЩЕЙ[язык].get(значения["Тn"], set())
+        род = S.РОД_ВЕЩЕЙ.get(язык, {}).get(A._вещь(язык, next(iter(вещи_)), 5), "f") if вещи_ else "f"
+        if значения["АМ"] != (АРТИКЛЬ_МН[язык][0] if род == "m" else АРТИКЛЬ_МН[язык][1]):
+            return False
     return True
 
 
@@ -284,11 +430,46 @@ def _самопроверка():
         assert судить(н) == (True, True), н
         assert судить(н[:v_last(н)] + н[v_last(н):].replace(НОЛЬ[язык], "3", 1)) == (False, False), н
         мутанты += 4
+        # ── ВОЛНА 2: пять родов лжи новых рамок ──────────────────────────────
+        # (1) вопрос о ВТОРОМ товаре, отвеченный числом первого
+        дт = страница(язык, "два_товара", 0, 1, 0, 12, Т2=1, m=5)
+        assert судить(дт) == (True, True), дт
+        хв = v_last(дт)
+        assert судить(дт[:хв] + дт[хв:].replace("5", "12", 1)) == (True, False), дт
+        # (2) владелец назван чужим именем
+        ч = страница(язык, "чей", 0, 1, 0, 12)
+        assert судить(ч) == (True, True), ч
+        X0, X1 = S._лицо(язык, 0), S._лицо(язык, 1)
+        for своё, чужое in ((X0[0], X1[0]), (X0[2], X1[2])):
+            if своё in ч[v_last(ч):]:
+                assert судить(ч[:v_last(ч)] + ч[v_last(ч):].replace(своё, чужое, 1)) == (True, False), ч
+                break
+        # (3) вещь названа чужой вещью
+        щ = страница(язык, "что_у", 0, 1, 0, 12)
+        assert судить(щ) == (True, True), щ
+        своя, чужая = A._вещь(язык, 0, 5), A._вещь(язык, 1, 5)
+        assert судить(щ[:v_last(щ)] + щ[v_last(щ):].replace(своя, чужая, 1)) == (True, False), щ
+        # (4) место названо чужим местом
+        мч = страница(язык, "место_чего", 0, 1, 0, 12, М=0)
+        assert судить(мч) == (True, True), мч
+        assert судить(мч[:v_last(мч)] + мч[v_last(мч):].replace(МЕСТА[язык][0], МЕСТА[язык][2], 1)) == (True, False), мч
+        # (5) связка места не по числу («there are 1 card»)
+        м1 = страница(язык, "место", 0, 1, 0, 1, М=0)
+        assert судить(м1) == (True, True), м1
+        if язык in ЕСТЬ:
+            assert судить(м1.replace(ЕСТЬ[язык][0], ЕСТЬ[язык][1], 1)) == (True, False), м1
+            мутанты += 1
+        мутанты += 4
     print("  ", страница("ru", "держание", 1, 2, 1, 3))
     print("  ", страница("ru", "возраст", 1, 2, 0, 22))
     print("  ", страница("en", "двое", 0, 3, 2, 12, 5))
     print("  ", страница("pl", "нет", 1, 2, 0, 1))
     print("  ", страница("pt", "возраст", 1, 2, 0, 28))
+    print("  ", страница("en", "место", 0, 1, 2, 12, М=0))
+    print("  ", страница("de", "два_товара", 0, 1, 0, 12, Т2=2, m=5))
+    print("  ", страница("es", "место_чего", 0, 1, 2, 12, М=0))
+    print("  ", страница("nl", "что_у", 0, 1, 3, 7))
+    print("  ", страница("fr", "чей", 0, 1, 1, 9))
     print(f"  мутантов поймано: {мутанты}")
     по_форме = {}
     for _, (язык, форма) in ПОКАЗЫ.items():
