@@ -23,7 +23,7 @@ from gsm_items import ANIMATE
 from gsm_items import ITEMS as CENSUS_ITEMS
 from plural import by_count
 
-NAMES = ["ava", "ben", "carla", "dan",
+NAMES_HOUSE = ["ava", "ben", "carla", "dan",
          "elena", "felix", "grace", "hugo"]
 # ИМЯ ОБЪЯВЛЕНО ПАКЕТОМ (дом имён, М-131): суд читает имя группой и сверяет
 # с пакетом; имя, которого пакет не знает, не вправе войти в показ.
@@ -34,7 +34,7 @@ _ИМЕНА_ПАКЕТА = set(_json.loads((_pathlib.Path(__file__).resolve().pa
 # РЕГИСТР ИМЕНИ ЧИТАЕТСЯ ИЗ ПАКЕТА (05.09): список дома выбирает лица, пакет
 # объявляет их письмо; «ann» дома есть «Ann» пакета, и в показ входит пакетное.
 _ПО_СТРОЧНОМУ = {и.lower(): и for и in _ИМЕНА_ПАКЕТА}
-NAMES = [_ПО_СТРОЧНОМУ.get(и.lower(), и) for и in NAMES]
+NAMES = [_ПО_СТРОЧНОМУ.get(и.lower(), и) for и in NAMES_HOUSE]
 assert set(NAMES) <= _ИМЕНА_ПАКЕТА, "имя не объявлено пакетом en"
 # THE AGGREGATE GENUS MUST NOT BE BOUGHT ON EIGHT
 # WORDS. The layer's own eight are kept (they are

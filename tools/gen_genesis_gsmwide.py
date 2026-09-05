@@ -17,7 +17,7 @@ import verbthings  # noqa: E402
 from plural import by_count
 
 
-NAMES = ["ava", "ben", "carla", "dan", "elena",
+NAMES_HOUSE = ["ava", "ben", "carla", "dan", "elena",
          "felix", "grace", "hugo", "iris",
          "janet", "kyle", "lena"]
 # ИМЯ ОБЪЯВЛЕНО ПАКЕТОМ (дом имён, М-131): суд читает имя группой и сверяет
@@ -29,7 +29,7 @@ _ИМЕНА_ПАКЕТА = set(_json.loads((_pathlib.Path(__file__).resolve().pa
 # РЕГИСТР ИМЕНИ ЧИТАЕТСЯ ИЗ ПАКЕТА (05.09): список дома выбирает лица, пакет
 # объявляет их письмо; «ann» дома есть «Ann» пакета, и в показ входит пакетное.
 _ПО_СТРОЧНОМУ = {и.lower(): и for и in _ИМЕНА_ПАКЕТА}
-NAMES = [_ПО_СТРОЧНОМУ.get(и.lower(), и) for и in NAMES]
+NAMES = [_ПО_СТРОЧНОМУ.get(и.lower(), и) for и in NAMES_HOUSE]
 assert set(NAMES) <= _ИМЕНА_ПАКЕТА, "имя не объявлено пакетом en"
 PETS = ["ducks", "hens", "cats", "goats"]
 ITEMS = ["hours", "minutes", "years", "miles",

@@ -97,12 +97,93 @@ def чаще(счётчик, закон):
     return {с for с, к in счётчик.items() if к >= закон}
 
 
+def _служебные():
+    """Function words and question words declared by the packs — never count nouns.
+
+    THE COURT READS «4 weg» AS FOUR OF A THING. Dutch «gaf er 4 weg» carries a
+    separable particle after the number, Dutch «5 op» a preposition; the text-derived
+    dictionary took them for nouns and called «1 weg» a disagreement 96 times (05.09,
+    the links world). A pack declares its function words; the court reads them.
+    """
+    import json
+    вон = set()
+    for ф in sorted((КОРЕНЬ / "tools" / "langpacks").glob("*.json")):
+        try:
+            п = json.loads(ф.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            continue
+        for ключ in ("function_words", "sentence_openers"):
+            вон |= {str(с).lower() for с in (п.get(ключ) or ())}
+        вон |= {str(с).lower() for с in ((п.get("ask_words") or {}).get("words") or ())}
+    return frozenset(вон)
+
+
+СЛУЖЕБНЫЕ = _служебные()
+
+
+def _по_языкам():
+    """language → its declared function words: the witness of a line's language."""
+    import json
+    вон = {}
+    for ф in sorted((КОРЕНЬ / "tools" / "langpacks").glob("*.json")):
+        try:
+            п = json.loads(ф.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            continue
+        слова = {str(с).lower() for с in (п.get("function_words") or ())}
+        if слова and п.get("script", "latin") in ("latin", None):
+            вон[ф.stem] = frozenset(слова)
+    return вон
+
+
+ПО_ЯЗЫКАМ = _по_языкам()
+_СЛОВО = re.compile(r"[a-z]+")
+
+
+def язык_строки(строка):
+    """The pack whose declared function words the line carries most; None on a tie."""
+    слова = _СЛОВО.findall(строка)
+    if not слова:
+        return None
+    счёт = {я: sum(1 for с in слова if с in набор) for я, набор in ПО_ЯЗЫКАМ.items()}
+    лучший = max(счёт.values()) if счёт else 0
+    if лучший == 0:
+        return None
+    победители = [я for я, к in счёт.items() if к == лучший]
+    return победители[0] if len(победители) == 1 else None
+
+
 def судить(путь, закон):
-    """(рассогласовано, верно, порча) — числом и поимённо."""
-    текст = путь.read_text(encoding="utf-8", errors="replace").lower()
+    """(рассогласовано, верно, порча) — числом и поимённо.
+
+    AGREEMENT IS JUDGED WITHIN ONE LANGUAGE. A world of nine languages carries
+    Italian «9 carte» (a plural) and French «1 carte» (a singular) in one file, and
+    the single text-wide dictionary read the French as a disagreement of the Italian
+    (05.09, the links world: 186 accusations, all of this kind or of particles).
+    Every line is assigned to the pack whose declared function words it carries most;
+    the dictionaries and the verdicts are kept per language, and a line of no
+    decidable language contributes nothing.
+    """
+    полный = путь.read_text(encoding="utf-8", errors="replace").lower()
+    итого_порча, итого_верно = {}, 0
+    по_языку = {}
+    for строка in полный.splitlines():
+        я = язык_строки(строка)
+        if я is None:
+            continue
+        по_языку.setdefault(я, []).append(строка)
+    for я, строки in по_языку.items():
+        рассогласовано, верно, порча = _судить_текст("\n".join(строки), закон)
+        итого_верно += верно
+        for слово, к in порча.items():
+            итого_порча[слово] = итого_порча.get(слово, 0) + к
+    return sum(итого_порча.values()), итого_верно, итого_порча
+
+
+def _судить_текст(текст, закон):
     множественные = {}
     for число, слово in СЧЁТ.findall(текст):
-        if int(число) > 1:
+        if int(число) > 1 and слово not in СЛУЖЕБНЫЕ:
             множественные[слово] = множественные.get(слово, 0) + 1
     # ОБА ЦЕНЗА СВИДЕТЕЛЬСТВУЮТ ОБ ОДНОМ — О СЧЁТЕ БОЛЬШЕ ЕДИНИЦЫ.
     #
@@ -127,7 +208,7 @@ def судить(путь, закон):
     # вместо двух, и потому отвергнут замером.
     предметы = {}
     for число, слово in ПРЕДМЕТНО.findall(текст):
-        if int(число) > 1:
+        if int(число) > 1 and слово not in СЛУЖЕБНЫЕ:
             предметы[слово] = предметы.get(слово, 0) + 1
     # СЛОВО ИЗ ОДНОЙ БУКВЫ НЕ БЫВАЕТ СЧЁТНЫМ ИМЕНЕМ. В алгебраическом
     # слое «1 x + 7 x = 8 x» дало пятнадцать ложных обвинений: «x» —

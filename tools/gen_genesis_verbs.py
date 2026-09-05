@@ -33,7 +33,7 @@ from gsm_items import ANIMATE, ITEMS  # noqa: E402
 from layer import emit  # noqa: E402
 from plural import by_count  # noqa: E402
 
-NAMES = ["ida", "omar", "pia", "rosa", "sven", "tara", "umar", "vera"]
+NAMES_HOUSE = ["ida", "omar", "pia", "rosa", "sven", "tara", "umar", "vera"]
 # ИМЯ ОБЪЯВЛЕНО ПАКЕТОМ (дом имён, М-131): суд читает имя группой и сверяет
 # с пакетом; имя, которого пакет не знает, не вправе войти в показ.
 import json as _json
@@ -43,7 +43,7 @@ _ИМЕНА_ПАКЕТА = set(_json.loads((_pathlib.Path(__file__).resolve().pa
 # РЕГИСТР ИМЕНИ ЧИТАЕТСЯ ИЗ ПАКЕТА (05.09): список дома выбирает лица, пакет
 # объявляет их письмо; «ann» дома есть «Ann» пакета, и в показ входит пакетное.
 _ПО_СТРОЧНОМУ = {и.lower(): и for и in _ИМЕНА_ПАКЕТА}
-NAMES = [_ПО_СТРОЧНОМУ.get(и.lower(), и) for и in NAMES]
+NAMES = [_ПО_СТРОЧНОМУ.get(и.lower(), и) for и in NAMES_HOUSE]
 assert set(NAMES) <= _ИМЕНА_ПАКЕТА, "имя не объявлено пакетом en"
 THINGS = [w for w in ITEMS if w not in ANIMATE]
 # (base, third person, past, participle, items it truly takes)
