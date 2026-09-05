@@ -189,6 +189,7 @@ wat hoe hoeveel welke welk verhoudt waar waarom bedoel bedoelt ben bent klopt en
 # стоит в предыдущей реплике. Займ растёт разговором (см. выше).
 and und e a
 ¬ apa cái
+ilu
 """.split())
 
 
