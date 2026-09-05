@@ -28,6 +28,7 @@ import genesis  # noqa: E402
 import svampforms as F  # noqa: E402
 import numberline as N  # noqa: E402
 import crossforms as C  # noqa: E402
+import letters as LT  # noqa: E402
 
 # РУБЕЖ-ДОЛГА: ПРОЖИТЫХ_РУБЕЖ = 0
 ПРОЖИТЫХ_РУБЕЖ = 0
@@ -49,6 +50,11 @@ import crossforms as C  # noqa: E402
          "ТРОЙКИ_ЧИСЕЛ": ((4, 11, 7), (6, 2, 9), (14, 19, 16), (10, 3, 8)), "РЯДЫ": ((3, 2), (4, 1), (6, 3), (2, 4)),
          "ДЕЛЁЖ": ((14, 2), (18, 3), (12, 4), (20, 4))}
 ЛИНИЯ_ФОРМЫ = {"возраст", "между", "наибольшее", "наименьшее", "ряд_дальше", "поровну"}
+# THE HOUSE OF LETTERS holds out WORDS: the same questions (how many letters, the first, the last,
+# backwards) about words the house never declared — the answer is the word's own
+СЛОВА = {"ru": ("книга", "дверь", "река"), "en": ("book", "door", "river"), "de": ("Buch", "Tür", "Fluss"),
+         "fr": ("livre", "porte", "rivière"), "es": ("libro", "puerta", "río"), "it": ("libro", "porta", "fiume"),
+         "pt": ("livro", "porta", "rio"), "nl": ("boek", "deur", "rivier"), "pl": ("książka", "drzwi", "rzeka")}
 # THE CROSSROADS holds out arithmetic pairs — the same four signs, other numbers
 ДЕЙСТВИЯ = (("+", ((23, 19), (14, 7), (31, 26), (45, 55))), ("−", ((41, 19), (23, 7), (52, 26), (90, 45))),
             ("×", ((13, 3), (11, 6), (7, 8), (25, 4))), ("÷", ((42, 7), (36, 4), (63, 9), (72, 8))))
@@ -113,6 +119,18 @@ def _перекрёсток():
     return вон
 
 
+def _буквы():
+    вон = []
+    for язык, слова in СЛОВА.items():
+        for w in слова:
+            assert w not in LT.ЯЗЫКИ[язык]["слова"], (язык, w)
+            for форма in LT.ФОРМЫ:
+                с = LT.страница(язык, форма, w, вопросом=(форма == "наоборот"))
+                if _разрезать(с):
+                    вон.append((язык, форма, с))
+    return вон
+
+
 def _страницы(вон):
     for язык in F.РАМКИ:
         лиц = len(F.A.ЛИЦА[язык]); вещей = len(F.A.ЯЗЫКИ[язык]["вещи"])
@@ -162,7 +180,7 @@ def main(argv):
     if беда:
         print(f"УДЕРЖАННЫЙ КЛЮЧ FAIL: удержанные числа стоят в таблицах дома: {sorted(map(str, беда))}")
         return 1
-    ряд = страницы() + _линия() + _перекрёсток()
+    ряд = страницы() + _линия() + _перекрёсток() + _буквы()
     # no question may stand in a world of shows (lived lines)
     прожито = set()
     for путь in genesis.worlds(kind="shows"):
