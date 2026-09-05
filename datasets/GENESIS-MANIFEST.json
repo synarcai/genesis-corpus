@@ -1183,6 +1183,28 @@
       "actors": []
     },
     {
+      "name": "translate",
+      "file": "datasets/genesis_translate.txt",
+      "genre": "TRANSLATION BETWEEN THE NINE LANGUAGES — «как будет «кот» по-английски? cat.», «how do you say thank you in french? merci.», each language into each. Born from the eighth band of conversation (BESEDA-8, 06.09): the organism speaks nine languages and had never been asked to carry a word from one into another. The words are the letters house's aligned words, the phrases the dialogue house's first thanks, greeting and farewell; tools/translateforms.py declares only how each language names the others and the two frames; the court reads the same tables. CLOSED world.",
+      "act": [
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "geometry_langs",
       "file": "datasets/genesis_geometry_langs.txt",
       "genre": "AREA AND PERIMETER IN EIGHT LANGUAGES (the owner's word: every language in surplus; the geometry world says them in en/ru): the four facts of the geometry world — the area and the perimeter of a rectangle, the perimeter and the area of a square — as statement and as question answered by the statement (М-153), with the geometry world's ledger: «ein Rechteck 7 mal 8 hat die Fläche 7 × 8 = 56.», «wie groß ist der Umfang eines Rechtecks 3 mal 4? ein Rechteck 3 mal 4 hat den Umfang 3 + 4 = 7, 2 × 7 = 14.», «un carré de côté 4 a un périmètre de 4 × 4 = 16.», «¿cuál es el área de un cuadrado de lado 5? un cuadrado de lado 5 tiene área 5 × 5 = 25.», «qual è il perimetro …», «qual é a área …», «wat is de omtrek van een rechthoek 3 bij 4? …», «jakie jest pole prostokąta 2 na 3? prostokąt 2 na 3 ma pole 2 × 3 = 6.», «kenarları 7 ve 8 olan dikdörtgenin çevresi: 7 + 8 = 15, 2 × 15 = 30.»; the house of geometry phrases (tools/geoforms.py) holds the phrases with holes, the court turns the same phrases into patterns and recomputes every ledger",
