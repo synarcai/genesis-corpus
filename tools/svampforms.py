@@ -29,11 +29,27 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
 
 # pronouns by gender: nominative, genitive-with-у (ru) / object (en), dative (ru) / object (en)
 МЕСТОИМЕНИЯ = {"en": {"m": dict(он="he", него="him", ему="him"), "f": dict(он="she", него="her", ему="her")},
-               "ru": {"m": dict(он="он", него="него", ему="ему"), "f": dict(он="она", него="неё", ему="ей")}}
-ГОЛОВЫ_ИТОГА = {"en": ("in all", "altogether", "in total"), "ru": ("всего", "в сумме", "итого")}
+               "ru": {"m": dict(он="он", него="него", ему="ему"), "f": dict(он="она", него="неё", ему="ей")},
+               "de": {"m": dict(он="er", него="ihm", ему="ihm"), "f": dict(он="sie", него="ihr", ему="ihr")},
+               "fr": {"m": dict(он="il", него="lui", ему="lui"), "f": dict(он="elle", него="elle", ему="lui")},
+               "es": {"m": dict(он="él", него="él", ему="le"), "f": dict(он="ella", него="ella", ему="le")},
+               "it": {"m": dict(он="lui", него="lui", ему="gli"), "f": dict(он="lei", него="lei", ему="le")},
+               "pt": {"m": dict(он="ele", него="ele", ему="lhe"), "f": dict(он="ela", него="ela", ему="lhe")},
+               "nl": {"m": dict(он="hij", него="hem", ему="hem"), "f": dict(он="zij", него="haar", ему="haar")},
+               "pl": {"m": dict(он="on", него="niego", ему="mu"), "f": dict(он="ona", него="niej", ему="jej")}}
+ГОЛОВЫ_ИТОГА = {"en": ("in all", "altogether", "in total"), "ru": ("всего", "в сумме", "итого"), "de": ("insgesamt", "zusammen", "im Ganzen"),
+                "fr": ("en tout", "au total", "en tout et pour tout"), "es": ("en total", "en conjunto", "en suma"), "it": ("in tutto", "in totale", "complessivamente"),
+                "pt": ("no total", "ao todo", "em conjunto"), "nl": ("in totaal", "bij elkaar", "alles bij elkaar"), "pl": ("razem", "łącznie", "w sumie")}
 ВРЕМЯ = {"en": (("at first", "then"), ("initially", "later"), ("originally", "finally"), ("at the start", "then")),
-         "ru": (("сначала", "потом"), ("вначале", "затем"), ("изначально", "позже"))}
-ЦВЕТА = {"en": ("red", "blue"), "ru": ("красных", "синих")}
+         "ru": (("сначала", "потом"), ("вначале", "затем"), ("изначально", "позже")),
+         "de": (("zuerst", "dann"), ("anfangs", "später"), ("am Anfang", "danach")), "fr": (("d'abord", "puis"), ("au début", "ensuite"), ("à l'origine", "plus tard")),
+         "es": (("al principio", "luego"), ("primero", "después"), ("inicialmente", "más tarde")), "it": (("all'inizio", "poi"), ("prima", "dopo"), ("inizialmente", "più tardi")),
+         "pt": (("no início", "depois"), ("primeiro", "a seguir"), ("inicialmente", "mais tarde")), "nl": (("eerst", "daarna"), ("aanvankelijk", "later"), ("in het begin", "toen")),
+         "pl": (("najpierw", "potem"), ("na początku", "później"), ("początkowo", "następnie"))}
+ЦВЕТА = {"en": ("red", "blue"), "ru": ("красных", "синих"), "de": ("rote", "blaue"), "fr": ("rouges", "bleues"), "es": ("rojas", "azules"),
+         "it": ("rosse", "blu"), "pt": ("vermelhas", "azuis"), "nl": ("rode", "blauwe"), "pl": ("czerwonych", "niebieskich")}
+# Polish dative of the names (the pack declares gender only)
+ДАТЕЛЬНЫЙ_PL = {"Anna": "Annie", "Jan": "Janowi", "Maria": "Marii", "Piotr": "Piotrowi", "Zofia": "Zofii", "Paweł": "Pawłowi", "Ewa": "Ewie", "Marek": "Markowi"}
 # goods outside the lexicon: (two kinds, the union), count forms one/many (ru: one/few/many)
 ТОВАРЫ = {"en": ((("page of reading homework", "pages of reading homework"), ("page of math homework", "pages of math homework"), ("page of homework", "pages of homework")),
                  (("pack of red cards", "packs of red cards"), ("pack of blue cards", "packs of blue cards"), ("pack of cards", "packs of cards")),
@@ -73,6 +89,57 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         товар="у {Xр} {a} {Г1a} и {b} {Г2b}. сколько {Г3мн} у {него} всего? {s} {Г3s}: {a} + {b} = {s}.",
     ),
 }
+РАМКИ.update({
+    "de": dict(
+        некоторые="{X} hatte {n} {Тn}. {Он} gab einige weg. jetzt hat {он} noch {r} {Тr}. wie viele {Тмн} gab {он} weg? {k}: {n} − {r} = {k}.",
+        итог="{X} hat {a} {Ц1} {Тмн} und {b} {Ц2} {Тмн}. wie viele {Тмн} hat {X} {ГОЛОВА}? {s} {Тs}: {a} + {b} = {s}.",
+        из_них="{X} hatte {n} {Тn}. {Он} gab {k} davon an {Y}. wie viele {Тмн} hat {он} jetzt? {r}: {n} − {k} = {r}.",
+        если="{X} hat {n} {Тn}. wenn {он} {k} weggibt, wie viele wird {он} haben? {r}: {n} − {k} = {r}.",
+        время="{В1} hatte {X} {n} {Тn}. {В2} bekam {он} {k} mehr. wie viele {Тмн} hat {он} jetzt? {s}: {n} + {k} = {s}.",
+        кому="{X} hatte {n} {Тn}. {Он} gab {Y} {k} {Тk}. wie viele {Тмн} hat {X} jetzt? {r}: {n} − {k} = {r}."),
+    "fr": dict(
+        некоторые="{X} avait {n} {Тn}. {Он} en a donné quelques-unes. maintenant il {ему} en reste {r}. combien de {Тмн} a-t-{он} données ? {k} : {n} − {r} = {k}.",
+        итог="{X} a {a} {Тмн} {Ц1} et {b} {Тмн} {Ц2}. combien de {Тмн} {X} a-t-{он} {ГОЛОВА} ? {s} {Тs} : {a} + {b} = {s}.",
+        из_них="{X} avait {n} {Тn}. {Он} en a donné {k} à {Y}. combien de {Тмн} a-t-{он} maintenant ? {r} : {n} − {k} = {r}.",
+        если="{X} a {n} {Тn}. si {он} en donne {k}, combien lui en restera-t-il ? {r} : {n} − {k} = {r}.",
+        время="{В1} {X} avait {n} {Тn}. {В2} {он} en a reçu {k} de plus. combien de {Тмн} a-t-{он} maintenant ? {s} : {n} + {k} = {s}.",
+        кому="{X} avait {n} {Тn}. {Он} a donné {k} {Тk} à {Y}. combien de {Тмн} {X} a-t-{он} maintenant ? {r} : {n} − {k} = {r}."),
+    "es": dict(
+        некоторые="{X} tenía {n} {Тn}. dio algunas. ahora le quedan {r} {Тr}. ¿cuántas {Тмн} dio? {k}: {n} − {r} = {k}.",
+        итог="{X} tiene {a} {Тмн} {Ц1} y {b} {Тмн} {Ц2}. ¿cuántas {Тмн} tiene {X} {ГОЛОВА}? {s} {Тs}: {a} + {b} = {s}.",
+        из_них="{X} tenía {n} {Тn}. dio {k} de ellas a {Y}. ¿cuántas {Тмн} tiene ahora? {r}: {n} − {k} = {r}.",
+        если="{X} tiene {n} {Тn}. si da {k}, ¿cuántas le quedarán? {r}: {n} − {k} = {r}.",
+        время="{В1} {X} tenía {n} {Тn}. {В2} recibió {k} más. ¿cuántas {Тмн} tiene ahora? {s}: {n} + {k} = {s}.",
+        кому="{X} tenía {n} {Тn}. dio {k} {Тk} a {Y}. ¿cuántas {Тмн} tiene {X} ahora? {r}: {n} − {k} = {r}."),
+    "it": dict(
+        некоторые="{X} aveva {n} {Тn}. ne ha date alcune. ora {ему} restano {r} {Тr}. quante {Тмн} ha dato? {k}: {n} − {r} = {k}.",
+        итог="{X} ha {a} {Тмн} {Ц1} e {b} {Тмн} {Ц2}. quante {Тмн} ha {X} {ГОЛОВА}? {s} {Тs}: {a} + {b} = {s}.",
+        из_них="{X} aveva {n} {Тn}. ne ha date {k} a {Y}. quante {Тмн} ha adesso? {r}: {n} − {k} = {r}.",
+        если="{X} ha {n} {Тn}. se ne dà {k}, quante ne avrà? {r}: {n} − {k} = {r}.",
+        время="{В1} {X} aveva {n} {Тn}. {В2} ne ha ricevute altre {k}. quante {Тмн} ha adesso? {s}: {n} + {k} = {s}.",
+        кому="{X} aveva {n} {Тn}. ha dato {k} {Тk} a {Y}. quante {Тмн} ha {X} adesso? {r}: {n} − {k} = {r}."),
+    "pt": dict(
+        некоторые="{X} tinha {n} {Тn}. deu algumas. agora tem {r} {Тr}. quantas {Тмн} deu? {k}: {n} − {r} = {k}.",
+        итог="{X} tem {a} {Тмн} {Ц1} e {b} {Тмн} {Ц2}. quantas {Тмн} tem {X} {ГОЛОВА}? {s} {Тs}: {a} + {b} = {s}.",
+        из_них="{X} tinha {n} {Тn}. deu {k} delas a {Y}. quantas {Тмн} tem agora? {r}: {n} − {k} = {r}.",
+        если="{X} tem {n} {Тn}. se der {k}, com quantas ficará? {r}: {n} − {k} = {r}.",
+        время="{В1} {X} tinha {n} {Тn}. {В2} recebeu mais {k}. quantas {Тмн} tem agora? {s}: {n} + {k} = {s}.",
+        кому="{X} tinha {n} {Тn}. deu {k} {Тk} a {Y}. quantas {Тмн} tem {X} agora? {r}: {n} − {k} = {r}."),
+    "nl": dict(
+        некоторые="{X} had {n} {Тn}. {он} gaf er een paar weg. nu heeft {он} er nog {r}. hoeveel {Тмн} gaf {он} weg? {k}: {n} − {r} = {k}.",
+        итог="{X} heeft {a} {Ц1} {Тмн} en {b} {Ц2} {Тмн}. hoeveel {Тмн} heeft {X} {ГОЛОВА}? {s} {Тs}: {a} + {b} = {s}.",
+        из_них="{X} had {n} {Тn}. {он} gaf er {k} aan {Y}. hoeveel {Тмн} heeft {он} nu? {r}: {n} − {k} = {r}.",
+        если="{X} heeft {n} {Тn}. als {он} er {k} weggeeft, hoeveel heeft {он} dan? {r}: {n} − {k} = {r}.",
+        время="{В1} had {X} {n} {Тn}. {В2} kreeg {он} er {k} bij. hoeveel {Тмн} heeft {он} nu? {s}: {n} + {k} = {s}.",
+        кому="{X} had {n} {Тn}. {он} gaf {k} {Тk} aan {Y}. hoeveel {Тмн} heeft {X} nu? {r}: {n} − {k} = {r}."),
+    "pl": dict(
+        некоторые="{X} miał{а} {n} {Тn}. oddał{а} kilka. teraz ma {r} {Тr}. ile {Тмн} oddał{а}? {k}: {n} − {r} = {k}.",
+        итог="{X} ma {a} {Ц1} {Тмн} i {b} {Ц2} {Тмн}. ile {Тмн} ma {X} {ГОЛОВА}? {s} {Тs}: {a} + {b} = {s}.",
+        из_них="{X} miał{а} {n} {Тn}. oddał{а} {k} z nich {Yд}. ile {Тмн} ma teraz? {r}: {n} − {k} = {r}.",
+        если="{X} ma {n} {Тn}. jeśli odda {k}, ile {ему} zostanie? {r}: {n} − {k} = {r}.",
+        время="{В1} {X} miał{а} {n} {Тn}. {В2} dostał{а} jeszcze {k}. ile {Тмн} ma teraz? {s}: {n} + {k} = {s}.",
+        кому="{X} miał{а} {n} {Тn}. oddał{а} {k} {Тk} {Yд}. ile {Тмн} ma {X} teraz? {r}: {n} − {k} = {r}."),
+})
 ФОРМЫ = ("некоторые", "итог", "итог_всего", "осталось", "из_них", "ему", "если", "если_придут", "время", "кому", "у_него", "единица", "товар")
 # the unit before the number is an English shape of the band; Russian writes «3 ₽» after — declared gap
 ОБЪЯВЛЕННЫЕ_ПРОПУСКИ = {"единица": frozenset({"ru"})}
@@ -99,9 +166,10 @@ def _поля(язык, i, j, Т, n, k, форма):
         Y = _лицо(язык, j + 1)
     м = МЕСТОИМЕНИЯ[язык][X[1]]
     вещь = lambda c: A._вещь(язык, Т, c)
-    п = dict(X=X[0], Xр=X[2], Y=Y[0], Yд=_дательный(Y[0]) if язык == "ru" else Y[0],
+    Yд = _дательный(Y[0]) if язык == "ru" else ДАТЕЛЬНЫЙ_PL.get(Y[0], Y[0]) if язык == "pl" else Y[0]
+    п = dict(X=X[0], Xр=X[2], Y=Y[0], Yд=Yд,
              он=м["он"], Он=м["он"], него=м["него"], ему=м["ему"],
-             а=A._а(язык, X[1]), аY=A._а(язык, Y[1]),
+             а=(("a" if X[1] == "f" else "") if язык == "pl" else A._а(язык, X[1])), аY=(("a" if Y[1] == "f" else "") if язык == "pl" else A._а(язык, Y[1])),
              n=n, k=k, r=n - k, s=n + k, a=n, b=k,
              Тn=вещь(n), Тk=вещь(k), Тr=вещь(n - k), Тs=вещь(n + k), Тмн=вещь(5), Т1=вещь(1))
     return п
@@ -164,13 +232,14 @@ def _образцы():
     alt = lambda слова: "(?:" + "|".join(re.escape(с) for с in sorted(set(с for с in слова if с), key=len, reverse=True)) + ")"
     for язык, рамки in РАМКИ.items():
         имена = [л[0] for л in A.ЛИЦА[язык]]; род = [л[2] for л in A.ЛИЦА[язык]]
-        дат = [_дательный(л[0]) for л in A.ЛИЦА[язык]] if язык == "ru" else имена
+        дат = ([_дательный(л[0]) for л in A.ЛИЦА[язык]] if язык == "ru" else
+               [ДАТЕЛЬНЫЙ_PL.get(л[0], л[0]) for л in A.ЛИЦА[язык]] if язык == "pl" else имена)
         вещи = [A._вещь(язык, Т, c) for Т in range(len(A.ЯЗЫКИ[язык]["вещи"])) for c in (1, 2, 5)]
-        вещи1 = [A.ЯЗЫКИ[язык]["вещи"][Т][0] if язык == "en" else A.ЯЗЫКИ[язык]["вещи"][Т] for Т in range(len(A.ЯЗЫКИ[язык]["вещи"]))]
+        вещи1 = [A._вещь(язык, Т, 1) for Т in range(len(A.ЯЗЫКИ[язык]["вещи"]))]
         мест = [v for г in МЕСТОИМЕНИЯ[язык].values() for v in г.values()]
-        товары = [ф for ряд in ТОВАРЫ[язык] for г in ряд for ф in г]
+        товары = [ф for ряд in ТОВАРЫ.get(язык, ()) for г in ряд for ф in г]
         дыры = {"X": alt(имена), "Y": alt(имена), "Xр": alt(род), "Yд": alt(дат), "он": alt(мест), "Он": alt(мест), "него": alt(мест), "ему": alt(мест),
-                "а": "(?:а|о|и|)", "аY": "(?:а|о|и|)", "n": r"(\d+)", "k": r"(\d+)", "r": r"(\d+)", "s": r"(\d+)", "a": r"(\d+)", "b": r"(\d+)", "v": r"(\d+)",
+                "а": "(?:а|о|и|a|)", "аY": "(?:а|о|и|a|)", "n": r"(\d+)", "k": r"(\d+)", "r": r"(\d+)", "s": r"(\d+)", "a": r"(\d+)", "b": r"(\d+)", "v": r"(\d+)",
                 "Тn": alt(вещи), "Тk": alt(вещи), "Тr": alt(вещи), "Тs": alt(вещи), "Тмн": alt(вещи), "Т1": alt(вещи1),
                 "ГОЛОВА": alt(ГОЛОВЫ_ИТОГА[язык]), "Ц1": alt(ЦВЕТА[язык]), "Ц2": alt(ЦВЕТА[язык]),
                 "В1": alt(в for в, _ in ВРЕМЯ[язык]), "В2": alt(в for _, в in ВРЕМЯ[язык]),
@@ -240,6 +309,31 @@ def _образцы():
 }
 _ТОВАР_ПО_ДЫРЕ = {"ОТЖ": "отжимания", "СКР": "скручивания", "ПРИЛ": "приложения", "ФИГ": "фигурки", "КРЫШ": "крышки", "РОЗ": "розы",
                   "ПОС": "посетители", "ДЕТ": "дети", "ИГР": "игры", "ЧАС": "часы", "МЕЛ": "мелки", "СТР": "страницы"}
+ТОВАРЫ_АКТОВ.update({
+    "de": {"отжимания": ("Liegestütz", "Liegestütze"), "скручивания": ("Sit-up", "Sit-ups"), "приложения": ("App", "Apps")},
+    "fr": {"отжимания": ("pompe", "pompes"), "скручивания": ("abdo", "abdos"), "приложения": ("application", "applications")},
+    "es": {"отжимания": ("flexión", "flexiones"), "скручивания": ("abdominal", "abdominales"), "приложения": ("aplicación", "aplicaciones")},
+    "it": {"отжимания": ("flessione", "flessioni"), "скручивания": ("addominale", "addominali"), "приложения": ("app", "app")},
+    "pt": {"отжимания": ("flexão", "flexões"), "скручивания": ("abdominal", "abdominais"), "приложения": ("aplicação", "aplicações")},
+    "nl": {"отжимания": ("push-up", "push-ups"), "скручивания": ("sit-up", "sit-ups"), "приложения": ("app", "apps")},
+    "pl": {"отжимания": ("pompka", "pompki", "pompek"), "скручивания": ("brzuszek", "brzuszki", "brzuszków"), "приложения": ("aplikacja", "aplikacje", "aplikacji")},
+})
+РАМКИ_АКТОВ.update({
+    "de": dict(сделал="{X} machte {n} {ОТЖn} und {k} {СКРk}. wie viele {ОТЖмн} machte {X}? {n}. wie viele Übungen insgesamt? {s}: {n} + {k} = {s}.",
+               добавил="{X} hatte {n} {ПРИЛn} auf dem Handy. {Он} fügte {k} neue {ПРИЛмн} hinzu. wie viele {ПРИЛмн} hat {он} jetzt? {s}: {n} + {k} = {s}."),
+    "fr": dict(сделал="{X} a fait {n} {ОТЖn} et {k} {СКРk}. combien de {ОТЖмн} {X} a-t-{он} faites ? {n}. combien d'exercices en tout ? {s} : {n} + {k} = {s}.",
+               добавил="{X} avait {n} {ПРИЛn} sur le téléphone. {Он} a ajouté {k} nouvelles {ПРИЛмн}. combien d'{ПРИЛмн} a-t-{он} maintenant ? {s} : {n} + {k} = {s}."),
+    "es": dict(сделал="{X} hizo {n} {ОТЖn} y {k} {СКРk}. ¿cuántas {ОТЖмн} hizo {X}? {n}. ¿cuántos ejercicios en total? {s}: {n} + {k} = {s}.",
+               добавил="{X} tenía {n} {ПРИЛn} en el teléfono. añadió {k} {ПРИЛмн} nuevas. ¿cuántas {ПРИЛмн} tiene ahora? {s}: {n} + {k} = {s}."),
+    "it": dict(сделал="{X} ha fatto {n} {ОТЖn} e {k} {СКРk}. quante {ОТЖмн} ha fatto {X}? {n}. quanti esercizi in tutto? {s}: {n} + {k} = {s}.",
+               добавил="{X} aveva {n} {ПРИЛn} sul telefono. ha aggiunto {k} nuove {ПРИЛмн}. quante {ПРИЛмн} ha adesso? {s}: {n} + {k} = {s}."),
+    "pt": dict(сделал="{X} fez {n} {ОТЖn} e {k} {СКРk}. quantas {ОТЖмн} fez {X}? {n}. quantos exercícios no total? {s}: {n} + {k} = {s}.",
+               добавил="{X} tinha {n} {ПРИЛn} no telemóvel. adicionou {k} {ПРИЛмн} novas. quantas {ПРИЛмн} tem agora? {s}: {n} + {k} = {s}."),
+    "nl": dict(сделал="{X} deed {n} {ОТЖn} en {k} {СКРk}. hoeveel {ОТЖмн} deed {X}? {n}. hoeveel oefeningen in totaal? {s}: {n} + {k} = {s}.",
+               добавил="{X} had {n} {ПРИЛn} op de telefoon. {он} voegde {k} nieuwe {ПРИЛмн} toe. hoeveel {ПРИЛмн} heeft {он} nu? {s}: {n} + {k} = {s}."),
+    "pl": dict(сделал="{X} zrobił{а} {n} {ОТЖn} i {k} {СКРk}. ile {ОТЖмн} zrobił{а} {X}? {n}. ile ćwiczeń razem? {s}: {n} + {k} = {s}.",
+               добавил="{X} miał{а} {n} {ПРИЛn} w telefonie. dodał{а} {k} {ПРИЛk}. ile {ПРИЛмн} ma teraz? {s}: {n} + {k} = {s}."),
+})
 ФОРМЫ_АКТОВ = tuple(РАМКИ_АКТОВ["en"])
 ЧИСЛА_АКТОВ = ((12, 5, 4), (35, 3, 9), (20, 8, 6), (15, 7, 2), (30, 12, 10), (9, 4, 3), (18, 11, 5), (24, 15, 7))
 
@@ -254,11 +348,13 @@ def _поля_акта(язык, i, j, n, k, m):
         Y = _лицо(язык, j + 1)
     мест = МЕСТОИМЕНИЯ[язык][X[1]]
     п = dict(X=X[0], Xр=X[2], Y=Y[0], Yр=Y[2], он=мест["он"], Он=мест["он"], него=мест["него"],
-             а=A._а(язык, X[1]), аY=A._а(язык, Y[1]),
+             а=(("a" if X[1] == "f" else "") if язык == "pl" else A._а(язык, X[1])), аY=(("a" if Y[1] == "f" else "") if язык == "pl" else A._а(язык, Y[1])),
              n=n, k=k, m=m, r=n - k, s=n + k, t=n + k + m, k2=k - (n + k - (n + k - k)) if False else k)
     # «сели_вышли»: сели k, вышли k2, теперь s = n + k − k2 — вышло меньше, чем село
     п["k2"] = max(1, k // 2); п["s_бус"] = n + k - п["k2"]
     for дыра, ключ in _ТОВАР_ПО_ДЫРЕ.items():
+        if ключ not in ТОВАРЫ_АКТОВ[язык]:
+            continue
         п[дыра + "n"] = _товар_форма(язык, ключ, n); п[дыра + "k"] = _товар_форма(язык, ключ, k)
         п[дыра + "m"] = _товар_форма(язык, ключ, m); п[дыра + "s"] = _товар_форма(язык, ключ, n + k)
         п[дыра + "мн"] = ТОВАРЫ_АКТОВ[язык][ключ][-1]
@@ -278,6 +374,8 @@ def _показы_актов():
     for язык in РАМКИ_АКТОВ:
         лиц = len(A.ЛИЦА[язык])
         for форма in ФОРМЫ_АКТОВ:
+            if форма not in РАМКИ_АКТОВ[язык]:
+                continue
             for q, (n, k, m) in enumerate(ЧИСЛА_АКТОВ):
                 вон[страница_акта(язык, форма, q % лиц, (q * 3 + 1) % лиц, n, k, m)] = (язык, форма)
     return вон
@@ -293,8 +391,10 @@ def _образцы_актов():
         имена = [л[0] for л in A.ЛИЦА[язык]]; род = [л[2] for л in A.ЛИЦА[язык]]
         мест = [v for г in МЕСТОИМЕНИЯ[язык].values() for v in г.values()]
         дыры = {"X": alt(имена), "Y": alt(имена), "Xр": alt(род), "Yр": alt(род), "он": alt(мест), "Он": alt(мест), "него": alt(мест),
-                "а": "(?:а|о|и|)", "аY": "(?:а|о|и|)", "n": r"(\d+)", "k": r"(\d+)", "m": r"(\d+)", "r": r"(\d+)", "s": r"(\d+)", "t": r"(\d+)", "k2": r"(\d+)"}
+                "а": "(?:а|о|и|a|)", "аY": "(?:а|о|и|a|)", "n": r"(\d+)", "k": r"(\d+)", "m": r"(\d+)", "r": r"(\d+)", "s": r"(\d+)", "t": r"(\d+)", "k2": r"(\d+)"}
         for дыра, ключ in _ТОВАР_ПО_ДЫРЕ.items():
+            if ключ not in ТОВАРЫ_АКТОВ[язык]:
+                continue
             формы = alt(ТОВАРЫ_АКТОВ[язык][ключ])
             for суффикс in ("n", "k", "m", "s", "мн"):
                 дыры[дыра + суффикс] = формы
@@ -347,6 +447,8 @@ def _самопроверка():
             мутанты += 1
     for язык in РАМКИ_АКТОВ:
         for форма in ФОРМЫ_АКТОВ:
+            if форма not in РАМКИ_АКТОВ[язык]:
+                continue
             с = страница_акта(язык, форма, 0, 1, 12, 5)
             битая = re.sub(r"= (\d+)\.$", lambda м: f"= {int(м.group(1)) + 1}.", с)
             assert судить(битая) == (True, False), битая
