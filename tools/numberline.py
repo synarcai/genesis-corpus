@@ -136,14 +136,25 @@ def _поля(n=None, m=None, a=None, b=None, ряд=None):
     return п
 
 
-def страница(язык, форма, **чем):
+# THE QUESTION AFTER THE COUNTING TASK — «count from 1 to 5. what do we get?
+# 1, 2, 3, 4, 5.» An imperative carries no question by nature, and the width
+# of asking (scripts/ask_width.py) counts a genus without a question surface
+# as a debt; the house of tasks answers it with one declared question per
+# language, and this house reads THE SAME table rather than declaring a second.
+import taskforms as _T
+ВОПРОС_ПОСЛЕ = _T.ВОПРОСЫ
+ПОВЕЛЕНИЯ = ("счёт", "обратно")
+
+
+def страница(язык, форма, вопросом=False, **чем):
     я = ЯЗЫКИ[язык][форма]
     п = _поля(**чем)
     if форма == "чёт":
         ответ = я[1] if п["n"] % 2 == 0 else я[2]
     else:
         ответ = я[1]
-    return f"{я[0].format(**п)} {ответ.format(**п)}"
+    между = f" {ВОПРОС_ПОСЛЕ[язык]}" if вопросом else ""
+    return f"{я[0].format(**п)}{между} {ответ.format(**п)}"
 
 
 def пары(язык):
@@ -173,8 +184,9 @@ def _показы():
                 if a + k - 1 > 10:
                     continue
                 ряд = list(range(a, a + k))
-                вон[страница(язык, "счёт", a=a, b=a + k - 1, ряд=ряд)] = (язык, "счёт")
-                вон[страница(язык, "обратно", a=a, b=a + k - 1, ряд=ряд[::-1])] = (язык, "обратно")
+                for вопросом in (False, True):
+                    вон[страница(язык, "счёт", вопросом, a=a, b=a + k - 1, ряд=ряд)] = (язык, "счёт")
+                    вон[страница(язык, "обратно", вопросом, a=a, b=a + k - 1, ряд=ряд[::-1])] = (язык, "обратно")
         for n in range(1, ВЕРХ + 1):
             вон[страница(язык, "чёт", n=n)] = (язык, "чёт")
     return вон
@@ -187,10 +199,13 @@ def _показы():
         "ряд": r"(?P<ряд>\d+(?:, \d+)+)", "IL": r"(?:il |l')", "DEL": r"(?:del |dell')", "IM": r"(?:il |l')"}
 
 
-def _образец(шаблон):
+def _образец(шаблон, видены=None):
     """A frame becomes a regex: every hole is named ONCE; a repeated hole
-    becomes a back-reference, so «{c} … {c}» must carry the same number."""
-    видены, куски = set(), []
+    becomes a back-reference, so «{c} … {c}» must carry the same number.
+    The set of seen holes is shared between the question and the answer
+    of one page, so the answer's {n} is the question's {n}."""
+    видены = set() if видены is None else видены
+    куски = []
     for кусок in re.split(r"(\{[^}]+\})", шаблон):
         if кусок.startswith("{"):
             имя = кусок[1:-1]
@@ -212,7 +227,9 @@ def _образцы():
             for k, ответ in enumerate(я[1:]):
                 # one pattern over the whole page: the hole of the question and the
                 # hole of the answer are the SAME hole, and a back-reference binds them
-                образ = re.compile("^" + _образец(я[0] + " " + ответ) + "$")
+                между = "(?: " + re.escape(ВОПРОС_ПОСЛЕ[язык]) + ")?" if форма in ПОВЕЛЕНИЯ else ""
+                общие = set()
+                образ = re.compile("^" + _образец(я[0], общие) + между + " " + _образец(ответ, общие) + "$")
                 вон.append((образ, язык, форма, k))
     return вон
 
