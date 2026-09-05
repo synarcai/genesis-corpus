@@ -4682,10 +4682,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 29885899,
+      "size": 29969461,
       "tiers": [],
       "text": "mix",
-      "lines": 343070
+      "lines": 343862
     },
     {
       "name": "minimal",
@@ -9272,6 +9272,24 @@
       ],
       "boundary": [
         "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "signedworld",
+      "file": "datasets/genesis_signedworld.txt",
+      "genre": "THE SIGNED WORLD — a number below zero is still a number (05.09, Д-5 of the ranked defects). Every market of the corpus counts things, and things do not go below nought: the only signed numbers in the whole свод stood inside algebra. Here two everyday frames where a language writes the minus sign without apology — the thermometer and the floors of a house — carry four movements: upward across zero («in the morning it was −5 degrees. it became 8 degrees warmer … 3: −5 + 8 = 3»), downward across zero, the DIFFERENCE THROUGH ZERO («by how much is 3 warmer than −5? by 8: 3 − (−5) = 8» — where a reader that learnt «minus makes smaller» breaks), and a lift rising from an underground floor. The count form follows the ABSOLUTE value («−5 градусов», «−1 градус», «−2 stopnie»): «how many» knows no sign. Every movement CROSSES zero, else the page is not about the sign (tools/signedworld.py). CLOSED world.",
+      "act": [
+        "recount",
+        "compare"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only",
+        "crossing_only"
       ],
       "actors": "",
       "text": "shows"

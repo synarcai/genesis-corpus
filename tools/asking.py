@@ -276,7 +276,7 @@ def _в_конце(слова):
 # а строй языка. Список предлогов и есть то место, где такой строй объявляется.
 ПРЕДЛОГИ = frozenset("""в за во на по с со до через от к ко у из о об при
 in at by for from to of on with about under over
-bei bij mit von aus nach für über
+bei bij mit von aus nach für über auf an zu
 w o na do przy z za
 à de en dans par pour sur sous a da su tra fra em com por con avec""".split())
 # ЗАЧИН ЖИВЁТ В НАЧАЛЕ ЛЮБОЙ КЛАУЗЫ ВОПРОСА, А НЕ ТОЛЬКО ПОСЛЕДНЕЙ.

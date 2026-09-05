@@ -241,7 +241,7 @@ recache.установить()
            # ПЛАН (05.09, архитектура агента: шаг проверяется числом, итог — вердиктом)
            "planforms_court",
            # ЭПИЗОД (05.09, архитектура агента: лента актов, префикс леджера, ничья шагов)
-           "episodeforms_court", "summaryforms_court", "opforms_court", "readnum_court", "mandateforms_court", "personforms_court", "selfmodelforms_court")
+           "episodeforms_court", "summaryforms_court", "opforms_court", "readnum_court", "mandateforms_court", "personforms_court", "selfmodelforms_court", "signedworld_court")
 
 
 def _взять(модуль):
