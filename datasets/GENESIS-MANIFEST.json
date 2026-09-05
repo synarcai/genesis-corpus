@@ -4682,10 +4682,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 31632575,
+      "size": 31659844,
       "tiers": [],
       "text": "mix",
-      "lines": 356735
+      "lines": 357113
     },
     {
       "name": "minimal",
@@ -9391,6 +9391,23 @@
       "boundary": [
         "whole_only",
         "exact_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "clockwords",
+      "file": "datasets/genesis_clockwords.txt",
+      "genre": "THE HOUR SAID IN WORDS — one time, and nine ways to divide it (06.09). The census that found no clock in the свод found no spoken clock either: ZERO lines with «half past two» or «половина третьего». THE SAME 2:30 IS «half past two» AND «половина третьего»: English, French, Spanish, Italian and Portuguese count from the hour that has passed, Russian, German, Dutch and Polish toward the hour that is coming — and German does one for the quarter («Viertel nach eins») and the other for the half («halb zwei»), so the two halves of one language disagree and only a declared table can hold that. Two directions, so the naming is a road and not a label: figures to words and words to figures. The shift is declared PER PHRASE, never derived (tools/clockwords.py). CLOSED world.",
+      "act": [
+        "name",
+        "translate"
+      ],
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "declared_pairs_only"
       ],
       "actors": "",
       "text": "shows"
