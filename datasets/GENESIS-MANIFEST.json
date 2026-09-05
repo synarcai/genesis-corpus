@@ -4682,10 +4682,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 31217206,
+      "size": 31386256,
       "tiers": [],
       "text": "mix",
-      "lines": 354338
+      "lines": 355391
     },
     {
       "name": "minimal",
@@ -9340,6 +9340,23 @@
       ],
       "boundary": [
         "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "clockforms",
+      "file": "datasets/genesis_clockforms.txt",
+      "genre": "THE CLOCK — the carry that is sixty, not ten (06.09). A census of the свод found ZERO lines carrying a time of day: every carry the corpus showed was a carry by ten, and an organism that has never seen the hour crossed has no reason to believe that fifty minutes plus twenty-five is one hour fifteen. One journey and three questions over it, each the inverse of another: the arrival (departure plus duration), the departure (arrival minus duration), the duration (the difference of two times). EVERY page crosses the hour — a page whose minutes stay under sixty teaches nothing the ten-carry did not, and the house does not write it. The ledger is written in hours and minutes, not in the clock's own colon, and the judge holds the clock's own law: a minute under sixty, an hour under twenty-four, so «12:75» is a lie and not another spelling of «13:15» (tools/clockforms.py). CLOSED world.",
+      "act": [
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only",
+        "exact_only"
       ],
       "actors": "",
       "text": "shows"

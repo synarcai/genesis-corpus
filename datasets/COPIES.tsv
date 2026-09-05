@@ -1,5 +1,5 @@
 мир	генератор	через_слой	строк	различных	копий	макс_копий
-datasets/GENESIS-FULL.txt	gen_genesis_full.py	0	351674	245404	106270	473
+datasets/GENESIS-FULL.txt	gen_genesis_full.py	0	354338	248068	106270	473
 datasets/genesis_action_measure.txt	gen_genesis_action_measure.py	1	234	234	0	1
 datasets/genesis_action_measure_langs.txt	gen_genesis_action_measure_langs.py	1	462	462	0	1
 datasets/genesis_action_pages.txt	gen_genesis_action_pages.py	1	4921	4897	24	2
@@ -81,6 +81,7 @@ datasets/genesis_money.txt	gen_genesis_money.py	1	450	450	0	1
 datasets/genesis_money_langs.txt	gen_genesis_money_langs.py	1	1188	1179	9	2
 datasets/genesis_money_story.txt	gen_genesis_money_story.py	1	795	795	0	1
 datasets/genesis_nature.txt	gen_genesis_nature.py	1	868	868	0	1
+datasets/genesis_nomention.txt	gen_genesis_nomention.py	1	2160	2160	0	1
 datasets/genesis_notation.txt	gen_genesis_notation.py	1	398	199	199	2
 datasets/genesis_notationvar.txt	gen_genesis_notationvar.py	1	5386	5386	0	1
 datasets/genesis_numberline.txt	gen_genesis_numberline.py	1	5256	5256	0	1
@@ -125,7 +126,7 @@ datasets/genesis_sequences_langs.txt	gen_genesis_sequences_langs.py	1	320	320	0	
 datasets/genesis_share.txt	gen_genesis_share.py	1	976	712	264	2
 datasets/genesis_share_langs.txt	gen_genesis_share_langs.py	1	560	432	128	2
 datasets/genesis_shares_percent.txt	gen_genesis_shares_percent.py	1	1320	1287	33	2
-datasets/genesis_signedworld.txt	gen_genesis_signedworld.py	1	792	792	0	1
+datasets/genesis_signedworld.txt	gen_genesis_signedworld.py	1	1296	1296	0	1
 datasets/genesis_space.txt	gen_genesis_space.py	1	2301	1761	540	2
 datasets/genesis_speech.txt	gen_genesis_speech.py	1	1910	1390	520	2
 datasets/genesis_statistics.txt	gen_genesis_statistics.py	1	1176	711	465	2
