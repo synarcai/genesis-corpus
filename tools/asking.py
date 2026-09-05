@@ -174,14 +174,14 @@ can could should has have will shall must may might would ought need any anythin
 является делится простое сравнимы связен может
 взаимно есть ли если во на
 wenn wie was ist sind welche welcher wo wann warum wieviel wer wen wem
-stimmt stimmst stimmen meinst meinen bist wozu womit woraus wovon wodurch worauf kann darf haben hat verhält etwas gibt kennst weißt wissen
-que quel quelle quels combien comment pourquoi est qu'est-ce est-il lequel laquelle lesquels qu'ont
+stimmt stimmst stimmen meinst meinen bist wozu womit woraus wovon wodurch worauf kann darf haben hat verhält etwas gibt kennst kannst lebst weißt wissen
+que quel quelle quels combien comment pourquoi est qu'est-ce est-il lequel laquelle lesquels peux-tu qu'ont
 est-elle est-ce si y et tu es-tu êtes-vous vous quoi des rien ça sais-tu savez-vous
 cual cuanto cuantos que es hay donde se ¿es ¿son ¿cuál ¿cuánto ¿qué ¿cómo ¿quién ¿puede ¿tienen ¿tiene
-¿y ¿quieres ¿quiere ¿estás ¿está ¿por ¿algo ¿alguna ¿sabes ¿sabe
-che cosa quanto quanti dove quale come chi perché intendi intende sei può hanno ha niente novità tutto sai sa
-qual quantos onde como quem porque porquê queres quer concordas concorda pode todos tem têm algo alguma tudo sabes sabe está
-czy ile co jaki jaka jakie jakiej jakim jakich jakiego znasz który które która czego gdzie kiedy jak czym dlaczego masz zgadzasz to
+¿y ¿quieres ¿quiere ¿estás ¿está ¿por ¿algo ¿alguna ¿sabes ¿sabe ¿puedes ¿eres
+che cosa quanto quanti dove quale come chi perché intendi intende sei può hanno ha niente novità tutto sai sa puoi
+qual quantos onde como quem porque porquê queres quer concordas concorda pode todos tem têm algo alguma tudo sabes sabe podes és está
+czy ile co jaki jaka jakie jakiej jakim jakich jakiego znasz umiesz który które która czego gdzie kiedy jak czym dlaczego masz zgadzasz to
 wat hoe hoeveel welke welk verhoudt waar waarom bedoel bedoelt ben bent klopt en waarmee waarvan waarop waardoor kan hebben heeft alles iets nog waartoe weet
 ты вы а
 # ЭЛЛИПТИЧЕСКИЙ ВОПРОС ОТКРЫВАЕТСЯ СОЮЗОМ, а не вопросным словом: «а у тома?»,
