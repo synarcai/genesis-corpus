@@ -95,6 +95,8 @@ from rugram import ПО_ФОРМЕ  # noqa: E402
          # единиц времени, перекрёстка, заданий, меры на языках и букв — свои ответы
          "links", "action_measure", "unit_counts", "numberline", "countfacts", "price",
          "timeunits", "cross", "task", "measure_langs", "letters", "joint2", "nature",
+         # суд бытовых тем держит объявленные пары «сколько … ? N» (счёт по таблице дома)
+         "topics",
          # ДОМА ФРАЗ НА ЯЗЫКАХ (04.09): каждый суд пересчитывает свой леджер
          # сам (мост центов, площадь, отношение единиц, среднее и процент,
          # цикл недели, член прогрессии, разность и отношение).
@@ -112,7 +114,7 @@ from rugram import ПО_ФОРМЕ  # noqa: E402
         {"rugram", "episode", "speech", "unit", "notation", "physlaw",
          # суд природы (04.09) и суд связок (05.09) принимают только объявленные счётные
          # формы своих рамок — форма при числе судится ими по построению
-         "nature", "links",
+         "nature", "links", "svamp",
          "compsci", "case", "valence", "calendar", "statistics",
          "formula", "sequence", "number", "algo", "cyber", "machine",
          "geometry", "program", "proof", "linalg", "selfmeasure",
