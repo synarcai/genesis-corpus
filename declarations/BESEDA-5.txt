@@ -1,0 +1,88 @@
+# BESEDA-5 — ПЯТАЯ ПОЛОСА БЕСЕДЫ: чем человек проверяет, что собеседник ДУМАЕТ, а не повторяет.
+#
+# Четвёртая полоса дала восемь домов за ночь; мера снова исчерпала полосу. Эта спрашивает то, что
+# требует хода, а не таблицы: три слагаемых разом, пропущенное слагаемое, «да/нет» о сравнении,
+# что тяжелее, что общего у двух вещей, бессмысленный вопрос (цвет не весит), чужое имя, которого
+# не говорили, и простая благодарность. Девять языков; строка «вопрос ||| подстрока ожидаемого
+# ответа»; без «|||» — довольно того, чтобы ответ был и был обоснован.
+#
+# GENUS: THREE-TERMS
+сколько будет 2 + 3 + 4? ||| 9
+what is 2 + 3 + 4? ||| 9
+wie viel ist 2 + 3 + 4? ||| 9
+combien font 2 + 3 + 4 ? ||| 9
+¿cuánto es 2 + 3 + 4? ||| 9
+quanto fa 2 + 3 + 4? ||| 9
+quanto é 2 + 3 + 4? ||| 9
+hoeveel is 2 + 3 + 4? ||| 9
+ile jest 2 + 3 + 4? ||| 9
+# GENUS: MISSING-ADDEND
+3 + ? = 5. какое число пропущено? ||| 2
+3 + ? = 5. what number is missing? ||| 2
+3 + ? = 5. welche Zahl fehlt? ||| 2
+3 + ? = 5. quel nombre manque ? ||| 2
+3 + ? = 5. ¿qué número falta? ||| 2
+3 + ? = 5. quale numero manca? ||| 2
+3 + ? = 5. que número falta? ||| 2
+3 + ? = 5. welk getal ontbreekt? ||| 2
+3 + ? = 5. jakiej liczby brakuje? ||| 2
+# GENUS: YES-NO-COMPARE
+7 больше 5? ||| да
+is 7 bigger than 5? ||| yes
+ist 7 größer als 5? ||| ja
+7 est-il plus grand que 5 ? ||| oui
+¿7 es mayor que 5? ||| sí
+7 è maggiore di 5? ||| sì
+7 é maior do que 5? ||| sim
+is 7 groter dan 5? ||| ja
+czy 7 jest większe od 5? ||| tak
+# GENUS: HEAVIER
+что тяжелее: камень или перо? ||| камень
+which is heavier: a stone or a feather? ||| stone
+was ist schwerer: ein Stein oder eine Feder? ||| Stein
+lequel est le plus lourd : une pierre ou une plume ? ||| pierre
+¿qué pesa más: una piedra o una pluma? ||| piedra
+cosa è più pesante: una pietra o una piuma? ||| pietra
+o que é mais pesado: uma pedra ou uma pena? ||| pedra
+wat is zwaarder: een steen of een veer? ||| steen
+co jest cięższe: kamień czy pióro? ||| kamień
+# GENUS: COMMON
+что общего у кошки и собаки? ||| животные
+what do a cat and a dog have in common? ||| animals
+was haben eine Katze und ein Hund gemeinsam? ||| Tiere
+qu'ont en commun un chat et un chien ? ||| animaux
+¿qué tienen en común un gato y un perro? ||| animales
+che cosa hanno in comune un gatto e un cane? ||| animali
+o que têm em comum um gato e um cão? ||| animais
+wat hebben een kat en een hond gemeen? ||| dieren
+co mają wspólnego kot i pies? ||| zwierzęta
+# GENUS: NONSENSE
+сколько весит синий цвет? ||| не
+how much does the colour blue weigh? ||| not
+wie viel wiegt die Farbe Blau? ||| nicht
+combien pèse la couleur bleue ? ||| pas
+¿cuánto pesa el color azul? ||| no
+quanto pesa il colore blu? ||| non
+quanto pesa a cor azul? ||| não
+hoeveel weegt de kleur blauw? ||| niet
+ile waży kolor niebieski? ||| nie
+# GENUS: MY-NAME
+как меня зовут? ||| не знаю
+what is my name? ||| do not know
+wie heiße ich? ||| weiß nicht
+comment je m'appelle ? ||| ne sais pas
+¿cómo me llamo? ||| no sé
+come mi chiamo? ||| non so
+como me chamo? ||| não sei
+hoe heet ik? ||| weet niet
+jak mam na imię? ||| nie wiem
+# GENUS: THANKS
+спасибо за ответ. ||| пожалуйста
+thank you for the answer. ||| welcome
+danke für die Antwort. ||| bitte
+merci pour la réponse. ||| rien
+gracias por la respuesta. ||| nada
+grazie per la risposta. ||| prego
+obrigado pela resposta. ||| nada
+bedankt voor het antwoord. ||| graag
+dziękuję za odpowiedź. ||| proszę
