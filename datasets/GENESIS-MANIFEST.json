@@ -4682,10 +4682,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 30950927,
+      "size": 31217206,
       "tiers": [],
       "text": "mix",
-      "lines": 352178
+      "lines": 354338
     },
     {
       "name": "minimal",
@@ -9323,6 +9323,23 @@
       "boundary": [
         "whole_only",
         "exact_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "nomention",
+      "file": "datasets/genesis_nomention.txt",
+      "genre": "WHAT WAS NEVER SAID — the fourth gate of the silence atlas (06.09, d5's measure: unknown-entity, the question names a thing the story never carried). The honest answer is a refusal WITH ITS GROUND — «I do not know: nothing is said about the box», «nie wiem: o wpisach nie powiedziano» — and the ground names the very place or kind the question asked, so the refusal is CHECKABLE. Beside it stands the positive twin (the question about the place the story DID name, answered by the count): a market shown only refusals buys refusal. Four shapes over one and two stated places, plus the question about another KIND of thing. Places in three cases come from the summary house, things from the tool house, the word of not-knowing from the pair house; declared here is the about-case of a thing, which no neighbour had (tools/nomention.py). CLOSED world.",
+      "act": [
+        "recount",
+        "refuse"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
       ],
       "actors": "",
       "text": "shows"
