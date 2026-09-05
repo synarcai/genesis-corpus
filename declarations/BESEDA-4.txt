@@ -1,0 +1,88 @@
+# BESEDA-4 — ЧЕТВЁРТАЯ ПОЛОСА БЕСЕДЫ: чем человек проверяет, что собеседник ЗНАЕТ мир и слово.
+#
+# Третья полоса (BESEDA-3) закрыта целиком за вечер 05.09 (100 % строкой) — и снова мера исчерпала
+# полосу, а не корпус. Эта спрашивает: почему так (факт с основанием), сколько букв в слове, сколько
+# минут в часе, какого цвета трава, половина числа, на сколько одно больше другого, как пишется число
+# словом, сколько лет будет через n лет. Девять языков; строка «вопрос ||| подстрока ожидаемого
+# ответа»; без «|||» — довольно того, чтобы ответ был и был обоснован.
+#
+# GENUS: WHY-FACT
+почему лёд плавает в воде? ||| легче
+why does ice float in water? ||| lighter
+warum schwimmt Eis im Wasser? ||| leichter
+pourquoi la glace flotte-t-elle sur l'eau ? ||| légère
+¿por qué el hielo flota en el agua? ||| ligero
+perché il ghiaccio galleggia sull'acqua? ||| leggero
+porque é que o gelo flutua na água? ||| leve
+waarom drijft ijs op water? ||| lichter
+dlaczego lód pływa po wodzie? ||| lżejszy
+# GENUS: LETTERS
+сколько букв в слове «кот»? ||| 3
+how many letters are there in the word "cat"? ||| 3
+wie viele Buchstaben hat das Wort „Katze“? ||| 5
+combien de lettres y a-t-il dans le mot « chat » ? ||| 4
+¿cuántas letras tiene la palabra «gato»? ||| 4
+quante lettere ha la parola «gatto»? ||| 5
+quantas letras tem a palavra «gato»? ||| 4
+hoeveel letters heeft het woord "kat"? ||| 3
+ile liter ma słowo „kot”? ||| 3
+# GENUS: MINUTES-IN-HOUR
+сколько минут в часе? ||| 60
+how many minutes are there in an hour? ||| 60
+wie viele Minuten hat eine Stunde? ||| 60
+combien de minutes y a-t-il dans une heure ? ||| 60
+¿cuántos minutos tiene una hora? ||| 60
+quanti minuti ha un'ora? ||| 60
+quantos minutos tem uma hora? ||| 60
+hoeveel minuten heeft een uur? ||| 60
+ile minut ma godzina? ||| 60
+# GENUS: COLOR
+какого цвета трава? ||| зелёная
+what colour is grass? ||| green
+welche Farbe hat Gras? ||| grün
+de quelle couleur est l'herbe ? ||| verte
+¿de qué color es la hierba? ||| verde
+di che colore è l'erba? ||| verde
+de que cor é a relva? ||| verde
+welke kleur heeft gras? ||| groen
+jakiego koloru jest trawa? ||| zielona
+# GENUS: HALF
+сколько будет половина от 10? ||| 5
+what is half of 10? ||| 5
+was ist die Hälfte von 10? ||| 5
+combien fait la moitié de 10 ? ||| 5
+¿cuánto es la mitad de 10? ||| 5
+quanto fa la metà di 10? ||| 5
+quanto é a metade de 10? ||| 5
+wat is de helft van 10? ||| 5
+ile to połowa z 10? ||| 5
+# GENUS: HOW-MUCH-MORE
+на сколько 9 больше 7? ||| 2
+how much more is 9 than 7? ||| 2
+um wie viel ist 9 größer als 7? ||| 2
+de combien 9 est-il plus grand que 7 ? ||| 2
+¿cuánto mayor es 9 que 7? ||| 2
+di quanto 9 è maggiore di 7? ||| 2
+quanto é que 9 é maior do que 7? ||| 2
+hoeveel is 9 meer dan 7? ||| 2
+o ile 9 jest większe od 7? ||| 2
+# GENUS: NUMBER-IN-WORDS
+как пишется число 7 словом? ||| семь
+how do you write the number 7 in words? ||| seven
+wie schreibt man die Zahl 7 in Worten? ||| sieben
+comment écrit-on le nombre 7 en lettres ? ||| sept
+¿cómo se escribe el número 7 en letras? ||| siete
+come si scrive il numero 7 in lettere? ||| sette
+como se escreve o número 7 por extenso? ||| sete
+hoe schrijf je het getal 7 in letters? ||| zeven
+jak zapisać liczbę 7 słownie? ||| siedem
+# GENUS: AGE-IN-YEARS
+мне 7 лет. сколько мне будет через 3 года? ||| 10
+i am 7 years old. how old will i be in 3 years? ||| 10
+ich bin 7 Jahre alt. wie alt werde ich in 3 Jahren sein? ||| 10
+j'ai 7 ans. quel âge aurai-je dans 3 ans ? ||| 10
+tengo 7 años. ¿cuántos años tendré dentro de 3 años? ||| 10
+ho 7 anni. quanti anni avrò tra 3 anni? ||| 10
+tenho 7 anos. quantos anos terei daqui a 3 anos? ||| 10
+ik ben 7 jaar oud. hoe oud ben ik over 3 jaar? ||| 10
+mam 7 lat. ile będę mieć lat za 3 lata? ||| 10
