@@ -1098,11 +1098,16 @@
       "file": "datasets/genesis_holdforms.txt",
       "genre": "HOLDINGS WITHOUT A VERB — the first show «only by frames» (05.09, the owner's word through holon: prototype ONE BEARER, a story read only by frames). Four frames on nine languages: a bearer holds a number of things and is asked how many; a person has an age and is asked how old; two bearers hold two numbers and the question names the SECOND; a bearer holds none («ноль», «zero»). No act, no ledger, no arithmetic — the answer is the story's own number said back in a full sentence. Bearers, things and their count forms are the action-pages house and the packs; the year is the number-line house's table; the zero is the pack's numeral (tools/holdforms.py). CLOSED world.",
       "act": [
-        "hold",
         "recount"
       ],
       "actors": "person_names:ru,en,de,fr,es,it,pt,nl,pl",
-      "text": "shows"
+      "text": "shows",
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "whole_only"
+      ]
     },
     {
       "name": "cmpframes",
@@ -1113,7 +1118,13 @@
         "recount"
       ],
       "actors": "person_names:ru,en,de,fr,es,it,pt,nl,pl",
-      "text": "shows"
+      "text": "shows",
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ]
     },
     {
       "name": "action_measure_langs",
@@ -4568,10 +4579,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 19224914,
+      "size": 19422357,
       "tiers": [],
       "text": "mix",
-      "lines": 253495
+      "lines": 255285
     },
     {
       "name": "full",
@@ -4586,10 +4597,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 21868148,
+      "size": 22797275,
       "tiers": [],
       "text": "mix",
-      "lines": 291447
+      "lines": 300045
     },
     {
       "name": "minimal",
