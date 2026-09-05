@@ -25,37 +25,47 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
 # per language: things — the «one» phrase (with its numeral, so the gender lives
 # in the declared phrase) and the count forms; the currency forms; the frame
 ЯЗЫКИ = {
-    "ru": dict(вещи=(dict(one="одно яблоко", few="яблока", many="яблок"), dict(one="одна книга", few="книги", many="книг"),
+    "ru": dict(съем=('у меня {k} {Вk}. я съем {m}. сколько останется?', '{r}: {k} − {m} = {r}.'),
+               вещи=(dict(one="одно яблоко", few="яблока", many="яблок"), dict(one="одна книга", few="книги", many="книг"),
                     dict(one="один карандаш", few="карандаша", many="карандашей")),
                валюта=dict(one="рубль", few="рубля", many="рублей"),
                рамка=("{В1} стоит {n} {Р}. сколько стоят {k} {Вk}?", "{v} {Рv}: {k} × {n} = {v}.")),
-    "en": dict(вещи=(dict(one="one apple", many="apples"), dict(one="one book", many="books"), dict(one="one pencil", many="pencils")),
+    "en": dict(съем=('i have {k} {Вk}. i eat {m}. how many are left?', '{r}: {k} − {m} = {r}.'),
+               вещи=(dict(one="one apple", many="apples"), dict(one="one book", many="books"), dict(one="one pencil", many="pencils")),
                валюта=dict(one="dollar", many="dollars"),
                рамка=("{В1} costs {n} {Р}. how much do {k} {Вk} cost?", "{v} {Рv}: {k} × {n} = {v}.")),
-    "de": dict(вещи=(dict(one="ein Apfel", many="Äpfel"), dict(one="ein Buch", many="Bücher"), dict(one="ein Bleistift", many="Bleistifte")),
+    "de": dict(съем=('ich habe {k} {Вk}. ich esse {m}. wie viele bleiben übrig?', '{r}: {k} − {m} = {r}.'),
+               вещи=(dict(one="ein Apfel", many="Äpfel"), dict(one="ein Buch", many="Bücher"), dict(one="ein Bleistift", many="Bleistifte")),
                валюта=dict(one="Euro", many="Euro"),
                рамка=("{В1} kostet {n} {Р}. wie viel kosten {k} {Вk}?", "{v} {Рv}: {k} × {n} = {v}.")),
-    "fr": dict(вещи=(dict(one="une pomme", many="pommes"), dict(one="un livre", many="livres"), dict(one="un crayon", many="crayons")),
+    "fr": dict(съем=("j'ai {k} {Вk}. j'en mange {m}. combien en reste-t-il ?", '{r} : {k} − {m} = {r}.'),
+               вещи=(dict(one="une pomme", many="pommes"), dict(one="un livre", many="livres"), dict(one="un crayon", many="crayons")),
                валюта=dict(one="euro", many="euros"),
                рамка=("{В1} coûte {n} {Р}. combien coûtent {k} {Вk} ?", "{v} {Рv} : {k} × {n} = {v}.")),
-    "es": dict(вещи=(dict(one="una manzana", many="manzanas"), dict(one="un libro", many="libros"), dict(one="un lápiz", many="lápices")),
+    "es": dict(съем=('tengo {k} {Вk}. me como {m}. ¿cuántas quedan?', '{r}: {k} − {m} = {r}.'),
+               вещи=(dict(one="una manzana", many="manzanas"), dict(one="un libro", many="libros"), dict(one="un lápiz", many="lápices")),
                валюта=dict(one="euro", many="euros"),
                рамка=("{В1} cuesta {n} {Р}. ¿cuánto cuestan {k} {Вk}?", "{v} {Рv}: {k} × {n} = {v}.")),
-    "it": dict(вещи=(dict(one="una mela", many="mele"), dict(one="un libro", many="libri"), dict(one="una matita", many="matite")),
+    "it": dict(съем=('ho {k} {Вk}. ne mangio {m}. quante ne restano?', '{r}: {k} − {m} = {r}.'),
+               вещи=(dict(one="una mela", many="mele"), dict(one="un libro", many="libri"), dict(one="una matita", many="matite")),
                валюта=dict(one="euro", many="euro"),
                рамка=("{В1} costa {n} {Р}. quanto costano {k} {Вk}?", "{v} {Рv}: {k} × {n} = {v}.")),
-    "pt": dict(вещи=(dict(one="uma maçã", many="maçãs"), dict(one="um livro", many="livros"), dict(one="um lápis", many="lápis")),
+    "pt": dict(съем=('tenho {k} {Вk}. como {m}. quantas ficam?', '{r}: {k} − {m} = {r}.'),
+               вещи=(dict(one="uma maçã", many="maçãs"), dict(one="um livro", many="livros"), dict(one="um lápis", many="lápis")),
                валюта=dict(one="euro", many="euros"),
                рамка=("{В1} custa {n} {Р}. quanto custam {k} {Вk}?", "{v} {Рv}: {k} × {n} = {v}.")),
-    "nl": dict(вещи=(dict(one="een appel", many="appels"), dict(one="een boek", many="boeken"), dict(one="een potlood", many="potloden")),
+    "nl": dict(съем=('ik heb {k} {Вk}. ik eet er {m} op. hoeveel blijven er over?', '{r}: {k} − {m} = {r}.'),
+               вещи=(dict(one="een appel", many="appels"), dict(one="een boek", many="boeken"), dict(one="een potlood", many="potloden")),
                валюта=dict(one="euro", many="euro"),
                рамка=("{В1} kost {n} {Р}. hoeveel kosten {k} {Вk}?", "{v} {Рv}: {k} × {n} = {v}.")),
-    "pl": dict(вещи=(dict(one="jedno jabłko", few="jabłka", many="jabłek"), dict(one="jedna książka", few="książki", many="książek"),
+    "pl": dict(съем=('mam {k} {Вk}. zjem {m}. ile zostanie?', '{r}: {k} − {m} = {r}.'),
+               вещи=(dict(one="jedno jabłko", few="jabłka", many="jabłek"), dict(one="jedna książka", few="książki", many="książek"),
                     dict(one="jeden ołówek", few="ołówki", many="ołówków")),
                валюта=dict(one="złoty", few="złote", many="złotych"),
                рамка=("{В1} kosztuje {n} {Р}. ile kosztują {k} {Вk}?", "{v} {Рv}: {k} × {n} = {v}.")),
 }
 ЦЕНЫ = (2, 3, 5)           # the price of one
+СЪЕДЕНО = ((3, 1), (5, 2), (4, 3), (7, 5), (2, 1), (6, 4))   # (had, eaten) — apples only: the first thing
 СЧЁТ = (2, 3, 4, 5)        # how many are bought
 _ПАКЕТ = {}
 
@@ -81,9 +91,22 @@ def страница(язык, в, n, k):
     return f"{воп.format(**п)} {отв.format(**п)}"
 
 
+def страница_съем(язык, k, m):
+    """«у меня 3 яблока. я съем 1. сколько останется? 2: 3 − 1 = 2.» — the first thing
+    (the apple) is the one eaten; its count form by the pack's rule."""
+    я = ЯЗЫКИ[язык]; вещь = я["вещи"][0]
+    воп, отв = я["съем"]
+    п = dict(k=k, Вk=форма(язык, вещь, k), m=m, r=k - m)
+    return f"{воп.format(**п)} {отв.format(**п)}"
+
+
 def _показы():
-    return {страница(язык, в, n, k): (язык, "цена")
-            for язык, я in ЯЗЫКИ.items() for в in range(len(я["вещи"])) for n in ЦЕНЫ for k in СЧЁТ}
+    вон = {страница(язык, в, n, k): (язык, "цена")
+           for язык, я in ЯЗЫКИ.items() for в in range(len(я["вещи"])) for n in ЦЕНЫ for k in СЧЁТ}
+    for язык in ЯЗЫКИ:
+        for k, m in СЪЕДЕНО:
+            вон[страница_съем(язык, k, m)] = (язык, "съем")
+    return вон
 
 
 ПОКАЗЫ = _показы()
@@ -104,7 +127,13 @@ def _образцы():
                 куски.append(f"(?P={имя})" if имя in видены else дыры[имя]); видены.add(имя)
             else:
                 куски.append(re.escape(кусок))
-        вон.append((re.compile("^" + "".join(куски) + "$"), язык))
+        вон.append((re.compile("^" + "".join(куски) + "$"), язык, "цена"))
+        # the first-person story: the thing eaten is the first (the apple), its count form a hole
+        воп, отв = я["съем"]
+        узор = re.escape(воп + " " + отв)
+        for имя, дыра in (("k", r"(?P<k>\d+)"), ("Вk", "(?P<Вk>" + alt(я["вещи"][0].values())[1:]), ("m", r"(?P<m>\d+)"), ("r", r"(?P<r>\d+)")):
+            узор = узор.replace(re.escape("{" + имя + "}"), дыра, 1).replace(re.escape("{" + имя + "}"), f"(?P={имя})")
+        вон.append((re.compile("^" + узор + "$"), язык, "съем"))
     return вон
 
 
@@ -114,11 +143,14 @@ def _образцы():
 def судить(строка):
     """(судимо, истинно): the total is the product, and every count form is the pack's."""
     с = строка.strip()
-    for образ, язык in ОБРАЗЦЫ:
+    for образ, язык, вид in ОБРАЗЦЫ:
         м = образ.match(с)
         if not м:
             continue
         я = ЯЗЫКИ[язык]; г = м.groupdict()
+        if вид == "съем":
+            k, m, r = int(г["k"]), int(г["m"]), int(г["r"])
+            return True, m < k and r == k - m and г["Вk"] == форма(язык, я["вещи"][0], k)
         n, k, v = int(г["n"]), int(г["k"]), int(г["v"])
         вещь = next((в for в in я["вещи"] if в["one"] == г["В1"]), None)
         if вещь is None or v != n * k:
@@ -130,6 +162,9 @@ def судить(строка):
 def _самопроверка():
     for показ, (язык, _) in ПОКАЗЫ.items():
         assert судить(показ) == (True, True), (язык, показ)
+    for язык in ЯЗЫКИ:
+        битая = страница_съем(язык, 3, 1).replace("= 2.", "= 3.").replace("? 2", "? 3")
+        assert судить(битая) == (True, False), битая
     мутанты = 0
     for язык in ЯЗЫКИ:
         # MUTANT: the total off by one in BOTH places (6 → 7 keeps the currency form),
