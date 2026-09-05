@@ -26,41 +26,56 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
     "ru": dict(слова=("кот", "дом", "вода", "хлеб", "солнце", "окно", "рука", "стол"),
                букв=("сколько букв в слове «{w}»?", "{n}: {L}."),
                первая=("какая первая буква в слове «{w}»?", "«{l}»."),
-               последняя=("какая последняя буква в слове «{w}»?", "«{l}».")),
+               последняя=("какая последняя буква в слове «{w}»?", "«{l}»."),
+               наоборот=("скажи слово «{w}» наоборот.", "«{r}».")),
     "en": dict(слова=("cat", "dog", "house", "water", "bread", "sun", "hand", "table"),
                букв=('how many letters are there in the word "{w}"?', "{n}: {L}."),
                первая=('what is the first letter of the word "{w}"?', '"{l}".'),
-               последняя=('what is the last letter of the word "{w}"?', '"{l}".')),
+               последняя=('what is the last letter of the word "{w}"?', '"{l}".'),
+               наоборот=('say the word "{w}" backwards.', '"{r}".')),
     "de": dict(слова=("Katze", "Hund", "Haus", "Wasser", "Brot", "Sonne", "Hand", "Tisch"),
                букв=("wie viele Buchstaben hat das Wort „{w}“?", "{n}: {L}."),
                первая=("was ist der erste Buchstabe des Wortes „{w}“?", "„{l}“."),
-               последняя=("was ist der letzte Buchstabe des Wortes „{w}“?", "„{l}“.")),
+               последняя=("was ist der letzte Buchstabe des Wortes „{w}“?", "„{l}“."),
+               наоборот=("sag das Wort „{w}“ rückwärts.", "„{r}“.")),
     "fr": dict(слова=("chat", "chien", "maison", "eau", "pain", "soleil", "main", "table"),
                букв=("combien de lettres y a-t-il dans le mot « {w} » ?", "{n} : {L}."),
                первая=("quelle est la première lettre du mot « {w} » ?", "« {l} »."),
-               последняя=("quelle est la dernière lettre du mot « {w} » ?", "« {l} ».")),
+               последняя=("quelle est la dernière lettre du mot « {w} » ?", "« {l} »."),
+               наоборот=("dis le mot « {w} » à l'envers.", "« {r} ».")),
     "es": dict(слова=("gato", "perro", "casa", "agua", "pan", "sol", "mano", "mesa"),
                букв=("¿cuántas letras tiene la palabra «{w}»?", "{n}: {L}."),
                первая=("¿cuál es la primera letra de la palabra «{w}»?", "«{l}»."),
-               последняя=("¿cuál es la última letra de la palabra «{w}»?", "«{l}».")),
+               последняя=("¿cuál es la última letra de la palabra «{w}»?", "«{l}»."),
+               наоборот=("di la palabra «{w}» al revés.", "«{r}».")),
     "it": dict(слова=("gatto", "cane", "casa", "acqua", "pane", "sole", "mano", "tavolo"),
                букв=("quante lettere ha la parola «{w}»?", "{n}: {L}."),
                первая=("qual è la prima lettera della parola «{w}»?", "«{l}»."),
-               последняя=("qual è l'ultima lettera della parola «{w}»?", "«{l}».")),
+               последняя=("qual è l'ultima lettera della parola «{w}»?", "«{l}»."),
+               наоборот=("di' la parola «{w}» al contrario.", "«{r}».")),
     "pt": dict(слова=("gato", "cão", "casa", "água", "pão", "sol", "mão", "mesa"),
                букв=("quantas letras tem a palavra «{w}»?", "{n}: {L}."),
                первая=("qual é a primeira letra da palavra «{w}»?", "«{l}»."),
-               последняя=("qual é a última letra da palavra «{w}»?", "«{l}».")),
+               последняя=("qual é a última letra da palavra «{w}»?", "«{l}»."),
+               наоборот=("diz a palavra «{w}» ao contrário.", "«{r}».")),
     "nl": dict(слова=("kat", "hond", "huis", "water", "brood", "zon", "hand", "tafel"),
                букв=('hoeveel letters heeft het woord "{w}"?', "{n}: {L}."),
                первая=('wat is de eerste letter van het woord "{w}"?', '"{l}".'),
-               последняя=('wat is de laatste letter van het woord "{w}"?', '"{l}".')),
+               последняя=('wat is de laatste letter van het woord "{w}"?', '"{l}".'),
+               наоборот=('zeg het woord "{w}" achterstevoren.', '"{r}".')),
     "pl": dict(слова=("kot", "pies", "dom", "woda", "chleb", "słońce", "ręka", "stół"),
                букв=("ile liter ma słowo „{w}”?", "{n}: {L}."),
                первая=("jaka jest pierwsza litera słowa „{w}”?", "„{l}”."),
-               последняя=("jaka jest ostatnia litera słowa „{w}”?", "„{l}”.")),
+               последняя=("jaka jest ostatnia litera słowa „{w}”?", "„{l}”."),
+               наоборот=("powiedz słowo „{w}” od tyłu.", "„{r}”.")),
 }
-ФОРМЫ = ("букв", "первая", "последняя")
+ФОРМЫ = ("букв", "первая", "последняя", "наоборот")
+
+# THE WORD BACKWARDS (sixth band, 05.09) is a TASK, not a question — and a genus
+# without a question surface is a debt of the width of asking; the question after
+# the task is the one declared by the house of tasks, read here, not redeclared.
+import taskforms as _T
+ВОПРОС_ПОСЛЕ = _T.ВОПРОСЫ
 
 for _яз, _я in ЯЗЫКИ.items():
     assert len(_я["слова"]) == len(set(_я["слова"])) == 8, _яз
@@ -69,25 +84,31 @@ for _яз, _я in ЯЗЫКИ.items():
 
 
 def _поля(w):
-    return dict(w=w, n=len(w), L=", ".join(w), l=w[0], последняя=w[-1])
+    return dict(w=w, n=len(w), L=", ".join(w), l=w[0], r=w[::-1])
 
 
-def страница(язык, форма, w):
+def страница(язык, форма, w, вопросом=False):
     воп, отв = ЯЗЫКИ[язык][форма]
     п = _поля(w)
     if форма == "последняя":
         п["l"] = w[-1]
-    return f"{воп.format(**п)} {отв.format(**п)}"
+    между = f" {ВОПРОС_ПОСЛЕ[язык]}" if вопросом else ""
+    return f"{воп.format(**п)}{между} {отв.format(**п)}"
 
 
 def _показы():
-    return {страница(язык, форма, w): (язык, форма)
-            for язык, я in ЯЗЫКИ.items() for форма in ФОРМЫ for w in я["слова"]}
+    вон = {страница(язык, форма, w): (язык, форма)
+           for язык, я in ЯЗЫКИ.items() for форма in ФОРМЫ for w in я["слова"]}
+    for язык, я in ЯЗЫКИ.items():
+        for w in я["слова"]:
+            вон[страница(язык, "наоборот", w, вопросом=True)] = (язык, "наоборот")
+    return вон
 
 
 ПОКАЗЫ = _показы()
 
-ДЫРЫ = {"w": r"(?P<w>[^\W\d_]+)", "n": r"(?P<n>\d+)", "L": r"(?P<L>[^\W\d_](?:, [^\W\d_])*)", "l": r"(?P<l>[^\W\d_])"}
+ДЫРЫ = {"w": r"(?P<w>[^\W\d_]+)", "n": r"(?P<n>\d+)", "L": r"(?P<L>[^\W\d_](?:, [^\W\d_])*)", "l": r"(?P<l>[^\W\d_])",
+        "r": r"(?P<r>[^\W\d_]+)"}
 
 
 def _образец(шаблон):
@@ -97,7 +118,8 @@ def _образец(шаблон):
     return "".join(куски)
 
 
-ОБРАЗЦЫ = [(re.compile("^" + _образец(я[форма][0] + " " + я[форма][1]) + "$"), язык, форма)
+ОБРАЗЦЫ = [(re.compile("^" + _образец(я[форма][0]) + ("(?: " + re.escape(ВОПРОС_ПОСЛЕ[язык]) + ")?" if форма == "наоборот" else "")
+                       + " " + _образец(я[форма][1]) + "$"), язык, форма)
            for язык, я in ЯЗЫКИ.items() for форма in ФОРМЫ]
 
 
@@ -113,6 +135,8 @@ def судить(строка):
             return True, False        # a word the house never declared
         if форма == "букв":
             return True, int(г["n"]) == len(w) and г["L"] == ", ".join(w)
+        if форма == "наоборот":
+            return True, г["r"] == w[::-1]
         return True, г["l"] == (w[0] if форма == "первая" else w[-1])
     return False, False
 
