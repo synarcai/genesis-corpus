@@ -364,12 +364,12 @@ def пары_класса(язык):
 
 def тройки_лишнего(язык):
     """Two members of one class and a stranger from every other class — one triple
-    per unordered pair of the class and per other class."""
+    per ORDERED pair of the class and per other class."""
     члены = КЛАССЫ[язык]
     классы = list(dict.fromkeys(к for _, к in члены))
     for ч1, ч2, к in пары_класса(язык):
-        if ч1 > ч2:
-            continue
+        # BOTH ORDERS of the pair: «eine Katze, ein Hund» as the person says it, not as
+        # the alphabet sorts it (sixth band: de/it/pt/nl were mute by order alone)
         # the stranger — the first member of EVERY other class: «кошка, собака, стол»
         # as well as «кошка, собака, дуб»
         for к3 in классы:
