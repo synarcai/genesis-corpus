@@ -98,6 +98,52 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
                        сколько=("ile nóg ma {Ф}?", "{Ф} ma {С}.")),
         },
     ),
+    "цвет": dict(
+        # THE VALUE IS A COLOUR, NOT A COUNT — and the answer phrase is declared PER
+        # ENTITY, because agreement follows the thing («трава зелёная», «небо
+        # голубое», «снег белый»), not the colour. The shared fact keeps the colour
+        # key, so that grass is green in every language of the house.
+        факты={"трава": "green", "небо": "blue", "снег": "white", "уголь": "black", "кровь": "red",
+               "солнце": "yellow", "молоко": "white", "лимон": "yellow"},
+        языки={
+            "ru": dict(имена=(("трава",), ("небо",), ("снег",), ("уголь",), ("кровь",), ("солнце",), ("молоко",), ("лимон",)),
+                       значения=("трава зелёная", "небо голубое", "снег белый", "уголь чёрный", "кровь красная",
+                                 "солнце жёлтое", "молоко белое", "лимон жёлтый"),
+                       сколько=("какого цвета {Ф}?", "{С}.")),
+            "en": dict(имена=(("grass",), ("the sky",), ("snow",), ("coal",), ("blood",), ("the sun",), ("milk",), ("a lemon",)),
+                       значения=("grass is green", "the sky is blue", "snow is white", "coal is black", "blood is red",
+                                 "the sun is yellow", "milk is white", "a lemon is yellow"),
+                       сколько=("what colour is {Ф}?", "{С}.")),
+            "de": dict(имена=(("Gras",), ("der Himmel",), ("Schnee",), ("Kohle",), ("Blut",), ("die Sonne",), ("Milch",), ("eine Zitrone",)),
+                       значения=("Gras ist grün", "der Himmel ist blau", "Schnee ist weiß", "Kohle ist schwarz", "Blut ist rot",
+                                 "die Sonne ist gelb", "Milch ist weiß", "eine Zitrone ist gelb"),
+                       сколько=("welche Farbe hat {Ф}?", "{С}.")),
+            "fr": dict(имена=(("l'herbe",), ("le ciel",), ("la neige",), ("le charbon",), ("le sang",), ("le soleil",), ("le lait",), ("un citron",)),
+                       значения=("l'herbe est verte", "le ciel est bleu", "la neige est blanche", "le charbon est noir", "le sang est rouge",
+                                 "le soleil est jaune", "le lait est blanc", "un citron est jaune"),
+                       сколько=("de quelle couleur est {Ф} ?", "{С}.")),
+            "es": dict(имена=(("la hierba",), ("el cielo",), ("la nieve",), ("el carbón",), ("la sangre",), ("el sol",), ("la leche",), ("un limón",)),
+                       значения=("la hierba es verde", "el cielo es azul", "la nieve es blanca", "el carbón es negro", "la sangre es roja",
+                                 "el sol es amarillo", "la leche es blanca", "un limón es amarillo"),
+                       сколько=("¿de qué color es {Ф}?", "{С}.")),
+            "it": dict(имена=(("l'erba",), ("il cielo",), ("la neve",), ("il carbone",), ("il sangue",), ("il sole",), ("il latte",), ("un limone",)),
+                       значения=("l'erba è verde", "il cielo è azzurro", "la neve è bianca", "il carbone è nero", "il sangue è rosso",
+                                 "il sole è giallo", "il latte è bianco", "un limone è giallo"),
+                       сколько=("di che colore è {Ф}?", "{С}.")),
+            "pt": dict(имена=(("a relva",), ("o céu",), ("a neve",), ("o carvão",), ("o sangue",), ("o sol",), ("o leite",), ("um limão",)),
+                       значения=("a relva é verde", "o céu é azul", "a neve é branca", "o carvão é preto", "o sangue é vermelho",
+                                 "o sol é amarelo", "o leite é branco", "um limão é amarelo"),
+                       сколько=("de que cor é {Ф}?", "{С}.")),
+            "nl": dict(имена=(("gras",), ("de lucht",), ("sneeuw",), ("steenkool",), ("bloed",), ("de zon",), ("melk",), ("een citroen",)),
+                       значения=("gras is groen", "de lucht is blauw", "sneeuw is wit", "steenkool is zwart", "bloed is rood",
+                                 "de zon is geel", "melk is wit", "een citroen is geel"),
+                       сколько=("welke kleur heeft {Ф}?", "{С}.")),
+            "pl": dict(имена=(("trawa",), ("niebo",), ("śnieg",), ("węgiel",), ("krew",), ("słońce",), ("mleko",), ("cytryna",)),
+                       значения=("trawa jest zielona", "niebo jest niebieskie", "śnieg jest biały", "węgiel jest czarny", "krew jest czerwona",
+                                 "słońce jest żółte", "mleko jest białe", "cytryna jest żółta"),
+                       сколько=("jakiego koloru jest {Ф}?", "{С}.")),
+        },
+    ),
 }
 ЯЗЫКИ = tuple(ВИДЫ["стороны"]["языки"])
 ФОРМЫ = ("что", "сколько")
@@ -105,7 +151,16 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 for _вид, _в in ВИДЫ.items():
     for _яз, _я in _в["языки"].items():
         assert len(_я["имена"]) == len(_в["факты"]), (_вид, _яз, "имён не по фактам")
-        assert set(_в["факты"].values()) <= set(_я["счёт"]), (_вид, _яз, "счёт не объявлен")
+        if "значения" in _я:
+            assert len(_я["значения"]) == len(_в["факты"]), (_вид, _яз, "значений не по фактам")
+        else:
+            assert set(_в["факты"].values()) <= set(_я["счёт"]), (_вид, _яз, "счёт не объявлен")
+
+
+def _значение(вид, язык, i):
+    """The declared value phrase of entity i: by its number (a count kind) or by itself."""
+    в = ВИДЫ[вид]; я = в["языки"][язык]
+    return я["значения"][i] if "значения" in я else я["счёт"][list(в["факты"].values())[i]]
 
 
 def _имя(вид, язык, i):
@@ -116,7 +171,7 @@ def _имя(вид, язык, i):
 def страница(вид, язык, форма, i):
     в = ВИДЫ[вид]; я = в["языки"][язык]
     Ф, Фр = _имя(вид, язык, i)
-    п = dict(Ф=Ф, Фр=Фр, С=я["счёт"][list(в["факты"].values())[i]])
+    п = dict(Ф=Ф, Фр=Фр, С=_значение(вид, язык, i))
     воп, отв = я[форма]
     return f"{воп.format(**п)} {отв.format(**п)}"
 
@@ -145,7 +200,7 @@ def _образцы():
         for язык, я in в["языки"].items():
             n = len(в["факты"])
             дыры = {"Ф": alt(_имя(вид, язык, i)[0] for i in range(n)), "Фр": alt(_имя(вид, язык, i)[1] for i in range(n)),
-                    "С": alt(я["счёт"].values())}
+                    "С": alt(_значение(вид, язык, i) for i in range(n))}
             for форма in ФОРМЫ:
                 if форма not in я:
                     continue
@@ -179,8 +234,7 @@ def судить(строка):
         сущ = г.get("Ф") or г.get("Фр")
         if сущ not in имена:
             return True, False
-        число = list(в["факты"].values())[имена.index(сущ)]
-        return True, я["счёт"].get(число) == г["С"]
+        return True, _значение(вид, язык, имена.index(сущ)) == г["С"]
     return False, False
 
 
@@ -190,10 +244,9 @@ def _самопроверка():
     мутанты = 0
     for вид, в in ВИДЫ.items():
         for язык, я in в["языки"].items():
-            числа = sorted(set(в["факты"].values()))
             с = страница(вид, язык, "сколько", 0)
-            своё = я["счёт"][list(в["факты"].values())[0]]
-            чужое = я["счёт"][next(x for x in числа if я["счёт"][x] != своё)]
+            своё = _значение(вид, язык, 0)
+            чужое = next(_значение(вид, язык, i) for i in range(1, len(в["факты"])) if _значение(вид, язык, i) != своё)
             битая = с.replace(своё, чужое)
             assert судить(битая) == (True, False), битая
             мутанты += 1

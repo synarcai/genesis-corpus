@@ -25,6 +25,10 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 # {r} their difference, {h} the half, {ряд} the row «1, 2, 3»
 ЯЗЫКИ = {
     "ru": dict(
+        на_сколько=("на сколько {c} больше {d}?", "на {r}: {c} − {d} = {r}."),
+        словом=("как пишется число {n} словом?", "{N}."),
+        половина=("сколько будет половина от {n}?", "{h}: {n} ÷ 2 = {h}."),
+        возраст=("мне {a} {Га}. сколько мне будет через {k} {Гk}?", "{s} {Гs}: {a} + {k} = {s}."),
         после=("какое число идёт после {n}?", "после {n} идёт {m}."),
         перед=("какое число идёт перед {n}?", "перед {n} идёт {m}."),
         больше=("что больше: {a} или {b}?", "{c} больше: {c} − {d} = {r}."),
@@ -34,6 +38,11 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
         чёт=("{n} — чётное или нечётное число?", "чётное: {n} = 2 × {h}.", "нечётное: {n} = 2 × {h} + 1."),
     ),
     "en": dict(
+        на_сколько=("how much more is {c} than {d}?", "{r} more: {c} − {d} = {r}."),
+        словом=("how do you write the number {n} in words?", "{N}."),
+        # the share court owns «half of X is Y» — the answer is written in its frame
+        половина=("what is half of {n}?", "half of {n} is {h}: {n} ÷ 2 = {h}."),
+        возраст=("i am {a} {Га} old. how old will i be in {k} {Гk}?", "{s} {Гs} old: {a} + {k} = {s}."),
         после=("what number comes after {n}?", "after {n} comes {m}."),
         перед=("what number comes before {n}?", "before {n} comes {m}."),
         больше=("which is bigger: {a} or {b}?", "{c} is bigger: {c} − {d} = {r}."),
@@ -43,6 +52,10 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
         чёт=("is {n} an even or an odd number?", "even: {n} = 2 × {h}.", "odd: {n} = 2 × {h} + 1."),
     ),
     "de": dict(
+        на_сколько=("um wie viel ist {c} größer als {d}?", "um {r}: {c} − {d} = {r}."),
+        словом=("wie schreibt man die Zahl {n} in Worten?", "{N}."),
+        половина=("was ist die Hälfte von {n}?", "{h}: {n} ÷ 2 = {h}."),
+        возраст=("ich bin {a} {Га} alt. wie alt werde ich in {k} {Гk} sein?", "{s} {Гs}: {a} + {k} = {s}."),
         после=("welche Zahl kommt nach {n}?", "nach {n} kommt {m}."),
         перед=("welche Zahl kommt vor {n}?", "vor {n} kommt {m}."),
         больше=("was ist größer: {a} oder {b}?", "{c} ist größer: {c} − {d} = {r}."),
@@ -52,6 +65,10 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
         чёт=("ist {n} eine gerade oder eine ungerade Zahl?", "gerade: {n} = 2 × {h}.", "ungerade: {n} = 2 × {h} + 1."),
     ),
     "fr": dict(
+        на_сколько=("de combien {c} est-il plus grand que {d} ?", "de {r} : {c} − {d} = {r}."),
+        словом=("comment écrit-on le nombre {n} en lettres ?", "{N}."),
+        половина=("combien fait la moitié de {n} ?", "{h} : {n} ÷ 2 = {h}."),
+        возраст=("j'ai {a} {Га}. quel âge aurai-je dans {k} {Гk} ?", "{s} {Гs} : {a} + {k} = {s}."),
         после=("quel nombre vient après {n} ?", "après {n} vient {m}."),
         перед=("quel nombre vient avant {n} ?", "avant {n} vient {m}."),
         больше=("lequel est le plus grand : {a} ou {b} ?", "{c} est le plus grand : {c} − {d} = {r}."),
@@ -61,6 +78,11 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
         чёт=("{n} est-il un nombre pair ou impair ?", "pair : {n} = 2 × {h}.", "impair : {n} = 2 × {h} + 1."),
     ),
     "es": dict(
+        # «{r} más» читалось бы судом арифметики как «{r} +» — «más» есть знак пакета; «en {r}» им не является
+        на_сколько=("¿cuánto mayor es {c} que {d}?", "en {r}: {c} − {d} = {r}."),
+        словом=("¿cómo se escribe el número {n} en letras?", "{N}."),
+        половина=("¿cuánto es la mitad de {n}?", "{h}: {n} ÷ 2 = {h}."),
+        возраст=("tengo {a} {Га}. ¿cuántos años tendré dentro de {k} {Гk}?", "{s} {Гs}: {a} + {k} = {s}."),
         после=("¿qué número viene después del {n}?", "después del {n} viene el {m}."),
         перед=("¿qué número viene antes del {n}?", "antes del {n} viene el {m}."),
         больше=("¿cuál es mayor: {a} o {b}?", "{c} es mayor: {c} − {d} = {r}."),
@@ -70,6 +92,10 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
         чёт=("¿{n} es un número par o impar?", "par: {n} = 2 × {h}.", "impar: {n} = 2 × {h} + 1."),
     ),
     "it": dict(
+        на_сколько=("di quanto {c} è maggiore di {d}?", "di {r}: {c} − {d} = {r}."),
+        словом=("come si scrive il numero {n} in lettere?", "{N}."),
+        половина=("quanto fa la metà di {n}?", "{h}: {n} ÷ 2 = {h}."),
+        возраст=("ho {a} {Га}. quanti anni avrò tra {k} {Гk}?", "{s} {Гs}: {a} + {k} = {s}."),
         # the article bends before a vowel-initial number word: «dopo l'8», «dopo il 9»
         после=("che numero viene dopo {IL}{n}?", "dopo {IL}{n} viene {IM}{m}."),
         перед=("che numero viene prima {DEL}{n}?", "prima {DEL}{n} viene {IM}{m}."),
@@ -80,6 +106,11 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
         чёт=("{n} è un numero pari o dispari?", "pari: {n} = 2 × {h}.", "dispari: {n} = 2 × {h} + 1."),
     ),
     "pt": dict(
+        # «{r} a mais» — «mais» есть знак пакета («+»); «em {r}» знаком не читается
+        на_сколько=("quanto é que {c} é maior do que {d}?", "em {r}: {c} − {d} = {r}."),
+        словом=("como se escreve o número {n} por extenso?", "{N}."),
+        половина=("quanto é a metade de {n}?", "{h}: {n} ÷ 2 = {h}."),
+        возраст=("tenho {a} {Га}. quantos anos terei daqui a {k} {Гk}?", "{s} {Гs}: {a} + {k} = {s}."),
         после=("que número vem depois do {n}?", "depois do {n} vem o {m}."),
         перед=("que número vem antes do {n}?", "antes do {n} vem o {m}."),
         больше=("qual é maior: {a} ou {b}?", "{c} é maior: {c} − {d} = {r}."),
@@ -89,6 +120,10 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
         чёт=("{n} é um número par ou ímpar?", "par: {n} = 2 × {h}.", "ímpar: {n} = 2 × {h} + 1."),
     ),
     "nl": dict(
+        на_сколько=("hoeveel is {c} meer dan {d}?", "{r} meer: {c} − {d} = {r}."),
+        словом=("hoe schrijf je het getal {n} in letters?", "{N}."),
+        половина=("wat is de helft van {n}?", "{h}: {n} ÷ 2 = {h}."),
+        возраст=("ik ben {a} {Га} oud. hoe oud ben ik over {k} {Гk}?", "{s} {Гs}: {a} + {k} = {s}."),
         после=("welk getal komt na {n}?", "na {n} komt {m}."),
         перед=("welk getal komt voor {n}?", "voor {n} komt {m}."),
         больше=("wat is groter: {a} of {b}?", "{c} is groter: {c} − {d} = {r}."),
@@ -98,6 +133,10 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
         чёт=("is {n} een even of een oneven getal?", "even: {n} = 2 × {h}.", "oneven: {n} = 2 × {h} + 1."),
     ),
     "pl": dict(
+        на_сколько=("o ile {c} jest większe od {d}?", "o {r}: {c} − {d} = {r}."),
+        словом=("jak zapisać liczbę {n} słownie?", "{N}."),
+        половина=("ile to połowa z {n}?", "{h}: {n} ÷ 2 = {h}."),
+        возраст=("mam {a} {Га}. ile będę mieć lat za {k} {Гk}?", "{s} {Гs}: {a} + {k} = {s}."),
         после=("jaka liczba jest po {n}?", "po {n} jest {m}."),
         перед=("jaka liczba jest przed {n}?", "przed {n} jest {m}."),
         больше=("co jest większe: {a} czy {b}?", "{c} jest większe: {c} − {d} = {r}."),
@@ -108,7 +147,41 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
     ),
 }
 
-ФОРМЫ = ("после", "перед", "больше", "меньше", "счёт", "обратно", "чёт")
+ФОРМЫ = ("после", "перед", "больше", "меньше", "счёт", "обратно", "чёт", "на_сколько", "словом", "половина", "возраст")
+
+# THE YEAR BENDS BY THE COUNT, and the rule is the pack's (count_agreement),
+# not this file's: Russian «1 год / 3 года / 7 лет», Polish «rok / lata / lat»,
+# the rest one plural. The forms are named by the pack's own names.
+import json as _json
+_ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
+ГОД = {"ru": {"one": "год", "few": "года", "many": "лет"}, "pl": {"one": "rok", "few": "lata", "many": "lat"},
+       "en": {"one": "year", "many": "years"}, "de": {"one": "Jahr", "many": "Jahre"}, "fr": {"one": "an", "many": "ans"},
+       "es": {"one": "año", "many": "años"}, "it": {"one": "anno", "many": "anni"}, "pt": {"one": "ano", "many": "anos"},
+       "nl": {"one": "jaar", "many": "jaar"}}
+_ПАКЕТ = {}
+
+
+def _пакет(язык):
+    if язык not in _ПАКЕТ:
+        _ПАКЕТ[язык] = _json.loads((_ПАКЕТЫ / f"{язык}.json").read_text(encoding="utf-8"))
+    return _ПАКЕТ[язык]
+
+
+def год(язык, k):
+    """The count form of «year» for k by the pack's agreement rule."""
+    import langpack
+    формы = list(ГОД[язык])
+    i = langpack.count_form_index(_пакет(язык), {"forms": формы}, k)
+    return ГОД[язык][формы[i]]
+
+
+def числом(язык, n):
+    """The numeral of n as the pack declares it, or None."""
+    ч = _пакет(язык).get("numerals") or {}
+    return ч.get(str(n))
+
+
+ВОЗРАСТА = ((5, 1), (7, 3), (9, 2), (12, 5), (7, 1), (12, 3))
 ВЕРХ = 20          # the line the house walks: 1..20
 ДЛИНА_РЯДА = (3, 4, 5, 6)   # rows counted up or down
 
@@ -122,10 +195,16 @@ def _it(n):
             "dell'" if n in _ГЛАСНЫЕ_IT else "del ")
 
 
-def _поля(n=None, m=None, a=None, b=None, ряд=None):
+def _поля(n=None, m=None, a=None, b=None, ряд=None, язык=None, k=None):
     п = {}
     if n is not None:
         п.update(n=n, m=m, h=n // 2, IL=_it(n)[0], DEL=_it(n)[1])
+        if язык is not None:
+            п.update(N=числом(язык, n))
+    if k is not None:
+        s = a + k
+        п.update(a=a, k=k, s=s, Га=год(язык, a), Гk=год(язык, k), Гs=год(язык, s))
+        return п
     if m is not None:
         п.update(IM=_it(m)[0])
     if a is not None:
@@ -148,7 +227,9 @@ import taskforms as _T
 
 def страница(язык, форма, вопросом=False, **чем):
     я = ЯЗЫКИ[язык][форма]
-    п = _поля(**чем)
+    п = _поля(язык=язык, **чем)
+    if форма == "словом" and п.get("N") is None:
+        return None            # numeral not declared by the pack — no page
     if форма == "чёт":
         ответ = я[1] if п["n"] % 2 == 0 else я[2]
     else:
@@ -189,6 +270,16 @@ def _показы():
                     вон[страница(язык, "обратно", вопросом, a=a, b=a + k - 1, ряд=ряд[::-1])] = (язык, "обратно")
         for n in range(1, ВЕРХ + 1):
             вон[страница(язык, "чёт", n=n)] = (язык, "чёт")
+            с = страница(язык, "словом", n=n)
+            if с is not None:
+                вон[с] = (язык, "словом")
+            if n % 2 == 0:
+                вон[страница(язык, "половина", n=n)] = (язык, "половина")
+        for a, b in пары(язык):
+            c, d = max(a, b), min(a, b)
+            вон[страница(язык, "на_сколько", a=c, b=d)] = (язык, "на_сколько")
+        for a, k in ВОЗРАСТА:
+            вон[страница(язык, "возраст", a=a, k=k)] = (язык, "возраст")
     return вон
 
 
@@ -196,7 +287,9 @@ def _показы():
 
 ДЫРЫ = {"n": r"(?P<n>\d+)", "m": r"(?P<m>\d+)", "a": r"(?P<a>\d+)", "b": r"(?P<b>\d+)",
         "c": r"(?P<c>\d+)", "d": r"(?P<d>\d+)", "r": r"(?P<r>\d+)", "h": r"(?P<h>\d+)",
-        "ряд": r"(?P<ряд>\d+(?:, \d+)+)", "IL": r"(?:il |l')", "DEL": r"(?:del |dell')", "IM": r"(?:il |l')"}
+        "ряд": r"(?P<ряд>\d+(?:, \d+)+)", "IL": r"(?:il |l')", "DEL": r"(?:del |dell')", "IM": r"(?:il |l')",
+        "k": r"(?P<k>\d+)", "s": r"(?P<s>\d+)", "N": r"(?P<N>[^\W\d_]+(?:[ -][^\W\d_]+)*)",
+        "Га": r"(?P<Га>[^\W\d_]+)", "Гk": r"(?P<Гk>[^\W\d_]+)", "Гs": r"(?P<Гs>[^\W\d_]+)"}
 
 
 def _образец(шаблон, видены=None):
@@ -244,12 +337,21 @@ def судить(строка):
         м = образ.match(с)
         if not м:
             continue
-        г = {к: (int(v) if к != "ряд" else v) for к, v in м.groupdict().items() if v is not None}
-        return True, _верно(форма, k, г)
+        г = {к: (int(v) if v.isdigit() else v) for к, v in м.groupdict().items() if v is not None}
+        return True, _верно(форма, k, г, язык)
     return False, False
 
 
-def _верно(форма, k, г):
+def _верно(форма, k, г, язык):
+    if форма == "на_сколько":
+        return г["c"] > г["d"] and г["r"] == г["c"] - г["d"]
+    if форма == "словом":
+        return г["N"] == числом(язык, г["n"])
+    if форма == "половина":
+        return г["n"] % 2 == 0 and г["h"] == г["n"] // 2
+    if форма == "возраст":
+        a, k_, s = г["a"], г["k"], г["s"]
+        return s == a + k_ and (г["Га"], г["Гk"], г["Гs"]) == (год(язык, a), год(язык, k_), год(язык, s))
     if форма == "после":
         return г["m"] == г["n"] + 1
     if форма == "перед":
