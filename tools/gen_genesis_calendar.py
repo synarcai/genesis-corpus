@@ -122,6 +122,11 @@ def соседи(шаг):
         вон.append(f"today is {ДНИ_EN[i]}. what day will it be tomorrow? {ДНИ_EN[сл]}.")
         вон.append(f"сегодня {ДНИ_RU[i]}. какой день был вчера? {ДНИ_RU[пр]}.")
         вон.append(f"сегодня {ДНИ_RU[i]}. какой день будет завтра? {ДНИ_RU[сл]}.")
+        # ПОСЛЕЗАВТРА И ПОЗАВЧЕРА (седьмая полоса, 06.09) — два шага по кругу
+        вон.append(f"today is {ДНИ_EN[i]}. what day will it be the day after tomorrow? {ДНИ_EN[(i + 2) % 7]}.")
+        вон.append(f"today is {ДНИ_EN[i]}. what day was the day before yesterday? {ДНИ_EN[(i - 2) % 7]}.")
+        вон.append(f"сегодня {ДНИ_RU[i]}. какой день будет послезавтра? {ДНИ_RU[(i + 2) % 7]}.")
+        вон.append(f"сегодня {ДНИ_RU[i]}. какой день был позавчера? {ДНИ_RU[(i - 2) % 7]}.")
         вон.append(f"the day before {ДНИ_EN[i]} is {ДНИ_EN[пр]}.")
         вон.append(f"день перед {ДНИ_RU[i]} — это {ДНИ_RU[пр]}.")
         вон.append(f"{ДНИ_EN[i]} is day number {i + 1} of the week.")

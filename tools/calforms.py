@@ -20,29 +20,37 @@ import phrases  # noqa: E402
 # per language: days (nominative), oblique days where the phrase bends them,
 # the count forms of «day» (one, many), the statement and the question
 ЯЗЫКИ = {
-    "de": dict(вчера_воп="heute ist {X}. welcher Tag war gestern?", завтра_воп="heute ist {X}. welcher Tag ist morgen?",
+    "de": dict(послезавтра_воп="heute ist {X}. welcher Tag ist übermorgen?", позавчера_воп="heute ist {X}. welcher Tag war vorgestern?",
+               вчера_воп="heute ist {X}. welcher Tag war gestern?", завтра_воп="heute ist {X}. welcher Tag ist morgen?",
                дни=("Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"),
                день=("Tag", "Tage"), утв="{n} {д} nach {X} kommt {Y}: {л}.", воп="welcher Tag kommt {n} {д} nach {X}?", сосед_воп="welcher Tag kommt nach {X}?", сосед_утв="nach {X} kommt {Y}."),
-    "fr": dict(вчера_воп="aujourd'hui c'est {X}. quel jour était-ce hier ?", завтра_воп="aujourd'hui c'est {X}. quel jour sera-ce demain ?",
+    "fr": dict(послезавтра_воп="aujourd'hui c'est {X}. quel jour sera-ce après-demain ?", позавчера_воп="aujourd'hui c'est {X}. quel jour était-ce avant-hier ?",
+               вчера_воп="aujourd'hui c'est {X}. quel jour était-ce hier ?", завтра_воп="aujourd'hui c'est {X}. quel jour sera-ce demain ?",
                дни=("lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"),
                день=("jour", "jours"), утв="{n} {д} après {X} vient {Y}: {л}.", воп="quel jour vient {n} {д} après {X} ?", сосед_воп="quel jour vient après {X} ?", сосед_утв="après {X} vient {Y}."),
-    "es": dict(вчера_воп="hoy es {X}. ¿qué día fue ayer?", завтра_воп="hoy es {X}. ¿qué día será mañana?",
+    "es": dict(послезавтра_воп="hoy es {X}. ¿qué día será pasado mañana?", позавчера_воп="hoy es {X}. ¿qué día fue anteayer?",
+               вчера_воп="hoy es {X}. ¿qué día fue ayer?", завтра_воп="hoy es {X}. ¿qué día será mañana?",
                дни=("lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"),
                день=("día", "días"), утв="{n} {д} después del {X} viene el {Y}: {л}.", воп="¿qué día viene {n} {д} después del {X}?", сосед_воп="¿qué día viene después del {X}?", сосед_утв="después del {X} viene el {Y}."),
-    "it": dict(вчера_воп="oggi è {X}. che giorno era ieri?", завтра_воп="oggi è {X}. che giorno sarà domani?",
+    "it": dict(послезавтра_воп="oggi è {X}. che giorno sarà dopodomani?", позавчера_воп="oggi è {X}. che giorno era l'altro ieri?",
+               вчера_воп="oggi è {X}. che giorno era ieri?", завтра_воп="oggi è {X}. che giorno sarà domani?",
                дни=("lunedì", "martedì", "mercoledì", "giovedì", "venerdì", "sabato", "domenica"),
                день=("giorno", "giorni"), утв="{n} {д} dopo {X} viene {Y}: {л}.", воп="che giorno viene {n} {д} dopo {X}?", сосед_воп="che giorno viene dopo {X}?", сосед_утв="dopo {X} viene {Y}."),
-    "pt": dict(вчера_воп="hoje é {X}. que dia foi ontem?", завтра_воп="hoje é {X}. que dia será amanhã?",
+    "pt": dict(послезавтра_воп="hoje é {X}. que dia será depois de amanhã?", позавчера_воп="hoje é {X}. que dia foi anteontem?",
+               вчера_воп="hoje é {X}. que dia foi ontem?", завтра_воп="hoje é {X}. que dia será amanhã?",
                дни=("segunda-feira", "terça-feira", "quarta-feira", "quinta-feira", "sexta-feira", "sábado", "domingo"),
                день=("dia", "dias"), утв="{n} {д} depois de {X} vem {Y}: {л}.", воп="que dia vem {n} {д} depois de {X}?", сосед_воп="que dia vem depois de {X}?", сосед_утв="depois de {X} vem {Y}."),
-    "nl": dict(вчера_воп="vandaag is het {X}. welke dag was het gisteren?", завтра_воп="vandaag is het {X}. welke dag is het morgen?",
+    "nl": dict(послезавтра_воп="vandaag is het {X}. welke dag is het overmorgen?", позавчера_воп="vandaag is het {X}. welke dag was het eergisteren?",
+               вчера_воп="vandaag is het {X}. welke dag was het gisteren?", завтра_воп="vandaag is het {X}. welke dag is het morgen?",
                дни=("maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag", "zondag"),
                день=("dag", "dagen"), утв="{n} {д} na {X} komt {Y}: {л}.", воп="welke dag komt {n} {д} na {X}?", сосед_воп="welke dag komt na {X}?", сосед_утв="na {X} komt {Y}."),
-    "pl": dict(вчера_воп="dziś jest {X}. jaki dzień był wczoraj?", завтра_воп="dziś jest {X}. jaki dzień będzie jutro?",
+    "pl": dict(послезавтра_воп="dziś jest {X}. jaki dzień będzie pojutrze?", позавчера_воп="dziś jest {X}. jaki dzień był przedwczoraj?",
+               вчера_воп="dziś jest {X}. jaki dzień był wczoraj?", завтра_воп="dziś jest {X}. jaki dzień będzie jutro?",
                дни=("poniedziałek", "wtorek", "środa", "czwartek", "piątek", "sobota", "niedziela"),
                косв=("poniedziałku", "wtorku", "środzie", "czwartku", "piątku", "sobocie", "niedzieli"),
                день=("dzień", "dni"), утв="{n} {д} po {X} przypada {Y}: {л}.", воп="jaki dzień przypada {n} {д} po {X}?", сосед_воп="jaki dzień jest po {X}?", сосед_утв="po {X} jest {Y}."),
-    "tr": dict(вчера_воп="bugün {X}. dün hangi gündü?", завтра_воп="bugün {X}. yarın hangi gün?",
+    "tr": dict(послезавтра_воп="bugün {X}. öbür gün hangi gün?", позавчера_воп="bugün {X}. evvelsi gün hangi gündü?",
+               вчера_воп="bugün {X}. dün hangi gündü?", завтра_воп="bugün {X}. yarın hangi gün?",
                дни=("pazartesi", "salı", "çarşamba", "perşembe", "cuma", "cumartesi", "pazar"),
                косв=("pazartesiden", "salıdan", "çarşambadan", "perşembeden", "cumadan", "cumartesinden", "pazardan"),
                день=("gün", "gün"), утв="{X} {n} {д} sonra {Y} gelir: {л}.", воп="{X} {n} {д} sonra hangi gün gelir?", сосед_воп="{X} sonra hangi gün gelir?", сосед_утв="{X} sonra {Y} gelir."),
@@ -98,8 +106,11 @@ def вчера(язык, i, куда="вчера"):
     stands in the nominative after «is»; the answer is the bare neighbour."""
     я = ЯЗЫКИ[язык]
     X = я["дни"][i]
-    Y = я["дни"][(i - 1) % 7] if куда == "вчера" else я["дни"][(i + 1) % 7]
+    Y = я["дни"][(i + ШАГ_ДНЯ[куда]) % 7]
     return f"{я[куда + '_воп'].format(X=X)} {Y}."
+
+
+ШАГ_ДНЯ = {"вчера": -1, "завтра": 1, "послезавтра": 2, "позавчера": -2}
 
 
 def _образец(язык, шаблон):
@@ -117,7 +128,9 @@ def образцы(язык):
             (re.compile("^" + _образец(язык, я["воп"]) + " " + утв + "$"), True),
             (re.compile("^" + _образец(язык, я["сосед_воп"]) + " " + _образец(язык, я["сосед_утв"]) + "$"), "сосед"),
             (re.compile("^" + _образец(язык, я["вчера_воп"]).replace(_дни_косв(язык), _дни_им(язык), 1) + " " + _дни_им(язык) + r"\.$"), "вчера"),
-            (re.compile("^" + _образец(язык, я["завтра_воп"]).replace(_дни_косв(язык), _дни_им(язык), 1) + " " + _дни_им(язык) + r"\.$"), "завтра")]
+            (re.compile("^" + _образец(язык, я["завтра_воп"]).replace(_дни_косв(язык), _дни_им(язык), 1) + " " + _дни_им(язык) + r"\.$"), "завтра"),
+            (re.compile("^" + _образец(язык, я["послезавтра_воп"]).replace(_дни_косв(язык), _дни_им(язык), 1) + " " + _дни_им(язык) + r"\.$"), "послезавтра"),
+            (re.compile("^" + _образец(язык, я["позавчера_воп"]).replace(_дни_косв(язык), _дни_им(язык), 1) + " " + _дни_им(язык) + r"\.$"), "позавчера")]
 
 
 def _дни_им(язык):
@@ -131,13 +144,13 @@ def _дни_косв(язык):
 
 def судить_группы(язык, спрошено, группы):
     я = ЯЗЫКИ[язык]
-    if спрошено in ("вчера", "завтра"):
+    if спрошено in ШАГ_ДНЯ:
         г = list(группы)
         дни = я["дни"]
         if len(г) != 2 or г[0] not in дни:
             return False
         i = дни.index(г[0])
-        return дни[(i - 1) % 7 if спрошено == "вчера" else (i + 1) % 7] == г[1]
+        return дни[(i + ШАГ_ДНЯ[спрошено]) % 7] == г[1]
     if спрошено == "сосед":
         # группы: X вопроса, X утверждения, Y — сосед есть следующий день круга
         г = list(группы)
