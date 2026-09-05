@@ -111,6 +111,45 @@ def _ворота(path, body):
 
 
 
+# ПОТОЛОК ПОВТОРА СТРОКИ — LAW, А НЕ ЧИСЛО ПРОХОДОВ (05.09, вердикт коллегии
+# по слову владельца: «только вы коллегиально можете решить»). Перепись
+# повторов нашла: 50 % строк свода — точные копии, 40 % — сверх LAW=2, одна
+# строка до 460 раз. Три ковки читателя: база 91/96, потолок по своду 91/96
+# (word_integrity 0,99 → 1,0), потолок по блоку — третья строка реестра;
+# ворота читателя holon пройдены (графа 102 = 102, истории 2 = 2, потерь 0).
+# Копия сверх LAW не есть показ: скелет строки без дыр есть она сама, и третья
+# копия не учит ничему, чему не научила вторая. Слово покупается при двух
+# встречах — две копии дают ему ровно это. Счёт ведётся ПО МИРУ, через все
+# проходы: мир есть единица свода, а не проход.
+from langpack import LAW  # noqa: E402
+
+
+def _потолок(shows, выдано):
+    """Показы прохода без копий сверх LAW — счёт ведётся по всему миру.
+
+    ПОРЯДОК ПЕРВОГО ВХОЖДЕНИЯ ХРАНИТСЯ, И ЭТО СУД, А НЕ ОБЕЩАНИЕ (условие
+    holon/d5, снятое замером: сортированный дедуп того же содержания двигает
+    три четверти покупок — страница есть отрезок ленты). Потолок лишь снимает
+    копии сверх LAW; ни одна оставшаяся строка не меняет места относительно
+    других — проверяется здесь же на каждом проходе.
+    """
+    вон = []
+    for с in shows:
+        if выдано.get(с, 0) >= LAW:
+            continue
+        выдано[с] = выдано.get(с, 0) + 1
+        вон.append(с)
+    # суд порядка: оставшиеся строки идут в том же порядке, что и в исходном проходе
+    ит = iter(shows)
+    for с in вон:
+        for исх in ит:
+            if исх == с:
+                break
+        else:
+            raise AssertionError("потолок повтора переставил строку: " + с[:60])
+    return вон
+
+
 def emit(path, pass_shows, passes=PASSES):
     """Run the passes, weld them with seams, write, and say the number.
 
@@ -119,9 +158,9 @@ def emit(path, pass_shows, passes=PASSES):
     layer speaks one fact on three surfaces), and reporting lines would
     quietly inflate it.
     """
-    blocks, total = [], 0
+    blocks, total, выдано = [], 0, {}
     for pi, (mult, shift) in enumerate(passes):
-        shows = pass_shows(pi)
+        shows = _потолок(pass_shows(pi), выдано)
         total += len(shows)
         blocks.append("\n".join(shuffle(shows, mult, shift)))
     body = SEAM.join(blocks) + "\n"
@@ -141,9 +180,10 @@ def emit_grouped(path, pass_groups, passes=PASSES):
     pass's own, so a kind is permuted, never sampled — the law is the
     same law, applied one level down.
     """
-    blocks, total = [], 0
+    blocks, total, выдано = [], 0, {}
     for pi, (mult, shift) in enumerate(passes):
         for shows in pass_groups(pi):
+            shows = _потолок(shows, выдано)
             total += len(shows)
             blocks.append("\n".join(shuffle(shows, mult, shift)))
     body = SEAM.join(blocks) + "\n"
