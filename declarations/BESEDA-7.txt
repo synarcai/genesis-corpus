@@ -1,0 +1,87 @@
+# BESEDA-7 — СЕДЬМАЯ ПОЛОСА БЕСЕДЫ: чем человек проверяет, что собеседник ДЕРЖИТ НИТЬ.
+#
+# Шестая полоса спрашивала порядок. Эта спрашивает нить: два действия подряд словами, число между
+# двумя, несогласие с ложным равенством, счёт за двадцатью, повтор названных чисел, счёт двойками,
+# послезавтра от названного сегодня, цена нескольких вещей по одной цене. Девять языков; строка
+# «вопрос ||| подстрока ожидаемого ответа»; без «|||» — довольно того, чтобы ответ был и был обоснован.
+#
+# GENUS: CHAINED
+сколько будет 3 + 4, а потом минус 2? ||| 5
+what is 3 + 4, and then minus 2? ||| 5
+wie viel ist 3 + 4, und dann minus 2? ||| 5
+combien font 3 + 4, et ensuite moins 2 ? ||| 5
+¿cuánto es 3 + 4, y luego menos 2? ||| 5
+quanto fa 3 + 4, e poi meno 2? ||| 5
+quanto é 3 + 4, e depois menos 2? ||| 5
+hoeveel is 3 + 4, en dan min 2? ||| 5
+ile jest 3 + 4, a potem minus 2? ||| 5
+# GENUS: BETWEEN
+назови число между 3 и 5. ||| 4
+name a number between 3 and 5. ||| 4
+nenne eine Zahl zwischen 3 und 5. ||| 4
+nomme un nombre entre 3 et 5. ||| 4
+di un número entre 3 y 5. ||| 4
+di' un numero tra 3 e 5. ||| 4
+diz um número entre 3 e 5. ||| 4
+noem een getal tussen 3 en 5. ||| 4
+podaj liczbę między 3 a 5. ||| 4
+# GENUS: AGREE-FALSE
+согласен ли ты, что 2 + 2 = 5? ||| нет
+do you agree that 2 + 2 = 5? ||| no
+stimmst du zu, dass 2 + 2 = 5? ||| nein
+es-tu d'accord que 2 + 2 = 5 ? ||| non
+¿estás de acuerdo en que 2 + 2 = 5? ||| no
+sei d'accordo che 2 + 2 = 5? ||| no
+concordas que 2 + 2 = 5? ||| não
+ben je het ermee eens dat 2 + 2 = 5? ||| nee
+czy zgadzasz się, że 2 + 2 = 5? ||| nie
+# GENUS: HUNDRED
+сколько будет 100 − 1? ||| 99
+what is 100 − 1? ||| 99
+wie viel ist 100 − 1? ||| 99
+combien font 100 − 1 ? ||| 99
+¿cuánto es 100 − 1? ||| 99
+quanto fa 100 − 1? ||| 99
+quanto é 100 − 1? ||| 99
+hoeveel is 100 − 1? ||| 99
+ile jest 100 − 1? ||| 99
+# GENUS: REPEAT-NUMBERS
+повтори числа: 5, 3, 8. ||| 5, 3, 8
+repeat the numbers: 5, 3, 8. ||| 5, 3, 8
+wiederhole die Zahlen: 5, 3, 8. ||| 5, 3, 8
+répète les nombres : 5, 3, 8. ||| 5, 3, 8
+repite los números: 5, 3, 8. ||| 5, 3, 8
+ripeti i numeri: 5, 3, 8. ||| 5, 3, 8
+repete os números: 5, 3, 8. ||| 5, 3, 8
+herhaal de getallen: 5, 3, 8. ||| 5, 3, 8
+powtórz liczby: 5, 3, 8. ||| 5, 3, 8
+# GENUS: COUNT-BY
+считай двойками до 10. ||| 2, 4, 6, 8, 10
+count by twos up to 10. ||| 2, 4, 6, 8, 10
+zähle in Zweierschritten bis 10. ||| 2, 4, 6, 8, 10
+compte de deux en deux jusqu'à 10. ||| 2, 4, 6, 8, 10
+cuenta de dos en dos hasta 10. ||| 2, 4, 6, 8, 10
+conta di due in due fino a 10. ||| 2, 4, 6, 8, 10
+conta de dois em dois até 10. ||| 2, 4, 6, 8, 10
+tel met sprongen van twee tot 10. ||| 2, 4, 6, 8, 10
+licz dwójkami do 10. ||| 2, 4, 6, 8, 10
+# GENUS: DAY-AFTER-TOMORROW
+сегодня среда. какой день будет послезавтра? ||| пятница
+today is wednesday. what day will it be the day after tomorrow? ||| friday
+heute ist Mittwoch. welcher Tag ist übermorgen? ||| Freitag
+aujourd'hui c'est mercredi. quel jour sera-ce après-demain ? ||| vendredi
+hoy es miércoles. ¿qué día será pasado mañana? ||| viernes
+oggi è mercoledì. che giorno sarà dopodomani? ||| venerdì
+hoje é quarta-feira. que dia será depois de amanhã? ||| sexta
+vandaag is het woensdag. welke dag is het overmorgen? ||| vrijdag
+dziś jest środa. jaki dzień będzie pojutrze? ||| piątek
+# GENUS: PRICE
+одно яблоко стоит 2 рубля. сколько стоят 3 яблока? ||| 6
+one apple costs 2 dollars. how much do 3 apples cost? ||| 6
+ein Apfel kostet 2 Euro. wie viel kosten 3 Äpfel? ||| 6
+une pomme coûte 2 euros. combien coûtent 3 pommes ? ||| 6
+una manzana cuesta 2 euros. ¿cuánto cuestan 3 manzanas? ||| 6
+una mela costa 2 euro. quanto costano 3 mele? ||| 6
+uma maçã custa 2 euros. quanto custam 3 maçãs? ||| 6
+een appel kost 2 euro. hoeveel kosten 3 appels? ||| 6
+jedno jabłko kosztuje 2 złote. ile kosztują 3 jabłka? ||| 6
