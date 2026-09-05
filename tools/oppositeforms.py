@@ -62,15 +62,15 @@ import re
            ("suchy", "mokry"), ("głośny", "cichy"), ("silny", "słaby")),
 }
 РАМКИ = {
-    "ru": ("{a} и {b} — противоположности.", "что противоположно слову {a}? {b}."),
-    "en": ("{a} and {b} are opposites.", "what is the opposite of {a}? {b}."),
-    "de": ("{a} und {b} sind Gegensätze.", "was ist das Gegenteil von {a}? {b}."),
-    "fr": ("{a} et {b} sont des contraires.", "quel est le contraire de {a} ? {b}."),
-    "es": ("{a} y {b} son contrarios.", "¿cuál es el contrario de {a}? {b}."),
-    "it": ("{a} e {b} sono contrari.", "qual è il contrario di {a}? {b}."),
-    "pt": ("{a} e {b} são contrários.", "qual é o contrário de {a}? {b}."),
-    "nl": ("{a} en {b} zijn tegenstellingen.", "wat is het tegenovergestelde van {a}? {b}."),
-    "pl": ("{a} i {b} to przeciwieństwa.", "jakie jest przeciwieństwo słowa {a}? {b}."),
+    "ru": ("{a} и {b} — противоположности.", "что противоположно слову {a}? {b}.", "какое слово противоположно слову «{a}»? {b}."),
+    "en": ("{a} and {b} are opposites.", "what is the opposite of {a}? {b}.", 'what is the opposite of "{a}"? {b}.'),
+    "de": ("{a} und {b} sind Gegensätze.", "was ist das Gegenteil von {a}? {b}.", "was ist das Gegenteil von „{a}“? {b}."),
+    "fr": ("{a} et {b} sont des contraires.", "quel est le contraire de {a} ? {b}.", "quel est le contraire de « {a} » ? {b}."),
+    "es": ("{a} y {b} son contrarios.", "¿cuál es el contrario de {a}? {b}.", "¿cuál es el contrario de «{a}»? {b}."),
+    "it": ("{a} e {b} sono contrari.", "qual è il contrario di {a}? {b}.", "qual è il contrario di «{a}»? {b}."),
+    "pt": ("{a} e {b} são contrários.", "qual é o contrário de {a}? {b}.", "qual é o contrário de «{a}»? {b}."),
+    "nl": ("{a} en {b} zijn tegenstellingen.", "wat is het tegenovergestelde van {a}? {b}.", 'wat is het tegenovergestelde van "{a}"? {b}.'),
+    "pl": ("{a} i {b} to przeciwieństwa.", "jakie jest przeciwieństwo słowa {a}? {b}.", "jakie jest przeciwieństwo słowa „{a}”? {b}."),
 }
 # ВЫВОД ИЗ ОТНОШЕНИЯ — то, чего в доме не было: отношение стояло НАЗВАННЫМ, но
 # из него ничего не следовало. Пара противоположна ⇒ обе стороны вместе не
@@ -96,7 +96,7 @@ import re
     "pl": ("co z tego wynika?", "{a} i {b} nie idą razem."),
 }
 ЯЗЫКИ = ПАРЫ
-ФОРМЫ = ("утв", "утв_воп", "воп", "воп_обратно", "вывод")
+ФОРМЫ = ("утв", "утв_воп", "воп", "воп_кав", "воп_обратно", "вывод")
 
 for _яз, _пары in ПАРЫ.items():
     assert _яз in РАМКИ, _яз
@@ -106,8 +106,13 @@ for _яз, _пары in ПАРЫ.items():
 
 
 def показ(язык, форма, i):
-    утв, воп = РАМКИ[язык]
+    утв, воп, кав = РАМКИ[язык]
     a, b = ПАРЫ[язык][i % len(ПАРЫ[язык])]
+    if форма == "воп_кав":
+        # СЛОВО В КАВЫЧКАХ ЯЗЫКА (третья полоса беседы, 05.09): человек, называя
+        # слово, берёт его в кавычки — «какое слово противоположно слову
+        # «большой»?» — и кавычки у каждого языка свои («», "", „“, « »).
+        return кав.format(a=a, b=b)
     if форма == "утв":
         return утв.format(a=a, b=b)
     if форма == "утв_воп":
@@ -147,12 +152,12 @@ def _все_показы():
 # чужой строке — а это и есть цена права называть строку ложной.
 def _образцы():
     вон = []
-    for язык, (утв, воп) in РАМКИ.items():
+    for язык, (утв, воп, кав) in РАМКИ.items():
         слова = "|".join(sorted((re.escape(w) for п in ПАРЫ[язык] for w in п),
                                 key=len, reverse=True))
         дыра = f"(?:{слова})"
         вопрос, следствие = ВЫВОД[язык]
-        for рамка in (утв, воп, f"{утв} {вопрос} {следствие}", f"{утв} {воп}"):
+        for рамка in (утв, воп, кав, f"{утв} {вопрос} {следствие}", f"{утв} {воп}"):
             узор = re.escape(рамка).replace(re.escape("{a}"), дыра).replace(re.escape("{b}"), дыра)
             вон.append(re.compile(узор))
     return tuple(вон)
@@ -178,7 +183,7 @@ def _самопроверка():
             с = показ(язык, форма, 0)
             assert судить(с) == (True, True), (язык, форма, с)
         # МУТАНТ: пара, сцепленная накрест («что противоположно большому? короткий»)
-        утв, воп = РАМКИ[язык]
+        утв, воп, _кав = РАМКИ[язык]
         a = ПАРЫ[язык][0][0]
         чужой = ПАРЫ[язык][1][1]
         битая = воп.format(a=a, b=чужой)
