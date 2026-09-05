@@ -35,7 +35,7 @@ _RU = json.loads((КОРЕНЬ / "tools" / "langpacks" / "ru.json").read_text(en
 # costs 295 cents» passed — the thing was any word): the closed set comes
 # from the generator's table, singular and plural.
 import gen_genesis_money as _дом
-С = "(" + "|".join(sorted({ф for в in _дом.ВЕЩИ for ф in в[:2]} | set(_дом.ИМЕНА_EN), key=len, reverse=True)) + ")"
+С = "(" + "|".join(sorted({ф for в in _дом.ВЕЩИ for ф in в[:2]} | set(_дом.ИМЕНА_EN), key=lambda с: (-len(с), с))) + ")"
 СЛ = r"([а-яё]+)"
 
 

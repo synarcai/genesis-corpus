@@ -80,7 +80,7 @@ def имена():
 
 
 ИМЕНА = имена()
-ИМЯ = re.compile(r"\b(" + "|".join(sorted(map(re.escape, ИМЕНА), key=len, reverse=True)) + r")\b") if ИМЕНА else None
+ИМЯ = re.compile(r"\b(" + "|".join(sorted(map(re.escape, ИМЕНА), key=lambda с: (-len(с), с))) + r")\b") if ИМЕНА else None
 
 
 def вещи():
@@ -193,7 +193,7 @@ def заполнители_домов():
 
 
 ВЕЩИ = вещи() | заполнители_домов()
-ВЕЩЬ = re.compile(r"(?<![^\W\d_])(" + "|".join(sorted(map(re.escape, ВЕЩИ), key=len, reverse=True)) + r")(?![^\W\d_])") if ВЕЩИ else None
+ВЕЩЬ = re.compile(r"(?<![^\W\d_])(" + "|".join(sorted(map(re.escape, ВЕЩИ), key=lambda с: (-len(с), с))) + r")(?![^\W\d_])") if ВЕЩИ else None
 
 
 def род(скелет_):
@@ -231,7 +231,7 @@ def _числительные():
 
 
 ЧИСЛИТЕЛЬНЫЕ = _числительные()
-_ПОРЯДОК = sorted(ЧИСЛИТЕЛЬНЫЕ, key=len, reverse=True)
+_ПОРЯДОК = sorted(ЧИСЛИТЕЛЬНЫЕ, key=lambda с: (-len(с), с))
 ЧИСЛИТЕЛЬНОЕ = re.compile(r"(?<![^\W\d_])(" + "|".join(map(re.escape, _ПОРЯДОК)) + r")(?![^\W\d_])") if ЧИСЛИТЕЛЬНЫЕ else None
 # WRITING WITHOUT SPACES HAS NO WORD BOUNDARY («九加四等于十三。»): a numeral of
 # Han characters is read wherever it stands, longest first, so «十三» is one

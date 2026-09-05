@@ -103,7 +103,7 @@ def _слово(язык):
     """Every unit form of the language as one alternative."""
     формы = {ф for е in ЕДИНИЦЫ[язык].values() for ф in е if len(ф) > 1 or язык == "tr"}
     формы = {ф for ф in формы if ф not in ("m", "f", "n")}
-    return "(" + "|".join(re.escape(ф) for ф in sorted(формы, key=len, reverse=True)) + ")"
+    return "(" + "|".join(re.escape(ф) for ф in sorted(формы, key=lambda с: (-len(с), с))) + ")"
 
 
 def _образец(язык, шаблон):

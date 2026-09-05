@@ -189,9 +189,9 @@ def _латиница(слово):
 
 
 _РАЗД = "|".join(re.escape(ф) for ф in
-                 sorted(ФОРМЫ_РАЗДЕЛА, key=len, reverse=True))
+                 sorted(ФОРМЫ_РАЗДЕЛА, key=lambda с: (-len(с), с)))
 _УТВ = "|".join(re.escape(ф) for ф in
-                sorted(ФОРМЫ_УТВЕРЖДЕНИЯ, key=len, reverse=True))
+                sorted(ФОРМЫ_УТВЕРЖДЕНИЯ, key=lambda с: (-len(с), с)))
 
 # ОБЪЯВЛЕНИЯ — три вида, и все три с ЯВНЫМ признаком в начале строки.
 ОБЪЯВЛ_ПАРАГРАФ = re.compile(rf"^\s*(?:#{{1,6}}\s*)?§\s*({НОМЕР})\.?\s+\S")

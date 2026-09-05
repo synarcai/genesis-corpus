@@ -132,7 +132,7 @@ def main():
     внешний = м.get("external_root")
     слова = вопросные_слова()
     словом = (re.compile(r"\b(?:%s)\b" % "|".join(
-        re.escape(с) for с in sorted(слова, key=len, reverse=True)))
+        re.escape(с) for с in sorted(слова, key=lambda с: (-len(с), с))))
         if слова else None)
 
     палата = panel.Палата()

@@ -195,7 +195,7 @@ def _показы():
 
 
 def _alt(слова):
-    return "(?:" + "|".join(re.escape(с) for с in sorted(set(с for с in слова if с), key=len, reverse=True)) + ")"
+    return "(?:" + "|".join(re.escape(с) for с in sorted(set(с for с in слова if с), key=lambda с: (-len(с), с))) + ")"
 
 
 def _образцы():
@@ -204,7 +204,7 @@ def _образцы():
         деятели = _alt(д[0] for д in я["деятели"])
         прош = _alt(г[0] for г in я["глаголы"]) if len(я["глаголы"][0]) == 3 else _alt(ф for г in я["глаголы"] for ф in г[:2])
         единицы = _alt(ф for вид in я["единицы"].values() for ряд in вид for ф in ряд)
-        пр = "(?:" + "|".join(re.escape(п) for п in set(я["пр"].values())) + ")?" if я["пр"] else ""
+        пр = "(?:" + _alt(set(я["пр"].values())) + ")?" if я["пр"] else ""
         ч = r"(\d+)"
         дыры = {"A": "(" + деятели + ")", "Гп": "(" + прош + ")", "ПР": пр, "n": ч, "a": ч, "b": ч, "s": ч, "k": ч, "r": ч,
                 "ЕДn": "(" + единицы + ")", "ЕДa": "(" + единицы + ")", "ЕДb": "(" + единицы + ")", "ЕДs": "(" + единицы + ")", "ЕДмн": "(" + единицы + ")",

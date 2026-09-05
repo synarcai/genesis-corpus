@@ -110,7 +110,7 @@ def многословные(словарь):
     if ключ in _МНОГО:
         return _МНОГО[ключ]
     длинные = sorted((с for с in словарь if " " in с),
-                     key=len, reverse=True)
+                     key=lambda с: (-len(с), с))
     if not длинные:
         _МНОГО[ключ] = None
         return None

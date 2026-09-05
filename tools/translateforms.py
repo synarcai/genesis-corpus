@@ -99,7 +99,7 @@ def _показы():
 
 def _образцы():
     вон = []
-    alt = lambda слова: "(" + "|".join(re.escape(с) for с in sorted(set(слова), key=len, reverse=True)) + ")"
+    alt = lambda слова: "(" + "|".join(re.escape(с) for с in sorted(set(слова), key=lambda с: (-len(с), с))) + ")"
     for язык in ЯЗЫКИ:
         for вид in (0, 1):
             воп, отв = РАМКИ[язык][вид]

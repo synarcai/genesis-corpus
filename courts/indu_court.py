@@ -135,7 +135,7 @@ def _метки():
                 # союзы и оставляет зачины.
                 if len(кусок) >= 8:
                     вон.add(кусок)
-    return tuple(sorted(вон, key=len, reverse=True))
+    return tuple(sorted(вон, key=lambda с: (-len(с), с)))
 
 
 # ИМЯ С ПОДЧЁРКОМ — НЕ СТИЛЬ, А ГРАНИЦА ВИДИМОСТИ: прибор ШИРОТЫ ВОПРОСА

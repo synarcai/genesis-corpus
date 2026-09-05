@@ -115,7 +115,7 @@ def вчера(язык, i, куда="вчера"):
 
 def _образец(язык, шаблон):
     я = ЯЗЫКИ[язык]
-    alt = lambda слова: "(" + "|".join(re.escape(с) for с in sorted(set(слова), key=len, reverse=True)) + ")"
+    alt = lambda слова: "(" + "|".join(re.escape(с) for с in sorted(set(слова), key=lambda с: (-len(с), с))) + ")"
     дыры = {"n": r"(\d+)", "д": alt(я["день"]), "X": alt(я.get("косв", я["дни"])), "Y": alt(я["дни"]),
             "л": r"(\d+ \+ \d+ = \d+(?:, \d+ − 7 = \d+)?, .+?)"}   # «2. gün salı» carries a period
     return phrases.образец(шаблон, дыры)
@@ -134,12 +134,12 @@ def образцы(язык):
 
 
 def _дни_им(язык):
-    return "(" + "|".join(re.escape(с) for с in sorted(set(ЯЗЫКИ[язык]["дни"]), key=len, reverse=True)) + ")"
+    return "(" + "|".join(re.escape(с) for с in sorted(set(ЯЗЫКИ[язык]["дни"]), key=lambda с: (-len(с), с))) + ")"
 
 
 def _дни_косв(язык):
     я = ЯЗЫКИ[язык]
-    return "(" + "|".join(re.escape(с) for с in sorted(set(я.get("косв", я["дни"])), key=len, reverse=True)) + ")"
+    return "(" + "|".join(re.escape(с) for с in sorted(set(я.get("косв", я["дни"])), key=lambda с: (-len(с), с))) + ")"
 
 
 def судить_группы(язык, спрошено, группы):

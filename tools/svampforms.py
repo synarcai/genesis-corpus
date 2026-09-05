@@ -588,7 +588,7 @@ def _образцы():
     """A regex per frame: names, things, pronouns, time words and goods are declared
     alternations; numbers are holes; the ledger is read by the judge."""
     вон = []
-    alt = lambda слова: "(?:" + "|".join(re.escape(с) for с in sorted(set(с for с in слова if с), key=len, reverse=True)) + ")"
+    alt = lambda слова: "(?:" + "|".join(re.escape(с) for с in sorted(set(с for с in слова if с), key=lambda с: (-len(с), с))) + ")"
     for язык, рамки in РАМКИ.items():
         имена = [л[0] for л in A.ЛИЦА[язык]]; род = [л[2] for л in A.ЛИЦА[язык]]
         имена = [_лицо(язык, i)[0] for i in range(len(A.ЛИЦА[язык]))]
@@ -959,7 +959,7 @@ def _показы_актов():
 
 def _образцы_актов():
     вон = []
-    alt = lambda слова: "(?:" + "|".join(re.escape(с) for с in sorted(set(с for с in слова if с), key=len, reverse=True)) + ")"
+    alt = lambda слова: "(?:" + "|".join(re.escape(с) for с in sorted(set(с for с in слова if с), key=lambda с: (-len(с), с))) + ")"
     for язык, рамки in РАМКИ_АКТОВ.items():
         имена = [_лицо(язык, i)[0] for i in range(len(A.ЛИЦА[язык]))]; род = [л[2] for л in A.ЛИЦА[язык]]
         мест = [v for г in МЕСТОИМЕНИЯ[язык].values() for v in г.values()]

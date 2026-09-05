@@ -249,7 +249,7 @@ _КРАТНОСТЬ = {язык: {слово: m for m, слово in кр.items(
 
 
 def _alt(слова):
-    return "(?:" + "|".join(re.escape(с) for с in sorted({с for с in слова if с}, key=len, reverse=True)) + ")"
+    return "(?:" + "|".join(re.escape(с) for с in sorted({с for с in слова if с}, key=lambda с: (-len(с), с))) + ")"
 
 
 def _образец(язык, рамка):

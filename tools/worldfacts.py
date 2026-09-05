@@ -831,7 +831,7 @@ def _образцы():
                      else "que ") + ч for ч in [ч for ч, _ in КЛАССЫ[язык]] + [п[0] for п in ПИТОМЦЫ[язык]]]
                    if РАМКИ[язык].get("гласные_стяжения") else []),
         }
-        альт = {к: "(?:" + "|".join(re.escape(з) for з in sorted(set(р), key=len, reverse=True)) + ")"
+        альт = {к: "(?:" + "|".join(re.escape(з) for з in sorted(set(р), key=lambda с: (-len(с), с))) + ")"
                 for к, р in ряды.items() if р}
         for форма in ФОРМЫ:
             # вежливая рамка живёт в своём словаре; язык без различия её не имеет

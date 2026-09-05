@@ -90,7 +90,7 @@ def выбор(слова):
     а «о брате» распадётся на предлог и слово.
     """
     return "(?:" + "|".join(sorted((re.escape(с) for с in слова),
-                                   key=len, reverse=True)) + ")"
+                                   key=lambda с: (-len(с), с))) + ")"
 
 
 ИМЯ_EN = выбор(ЛЮДИ)

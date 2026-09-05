@@ -240,7 +240,7 @@ def объявленные_многословные(значения, опера
                     роль[с] = род
         БУКВА = r"[^\W\d_]"
         куски = []
-        for с in sorted(роль, key=len, reverse=True):
+        for с in sorted(роль, key=lambda с: (-len(с), с)):
             тело = re.escape(с)
             слева = f"(?<!{БУКВА})" if с[:1].isalpha() else ""
             справа = f"(?!{БУКВА})" if с[-1:].isalpha() else ""

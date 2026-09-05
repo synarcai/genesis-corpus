@@ -114,7 +114,7 @@ def _показы():
 
 def _образцы():
     вон = []
-    alt = lambda слова: "(" + "|".join(re.escape(с) for с in sorted(set(слова), key=len, reverse=True)) + ")"
+    alt = lambda слова: "(" + "|".join(re.escape(с) for с in sorted(set(слова), key=lambda с: (-len(с), с))) + ")"
     for язык, я in ЯЗЫКИ.items():
         вещи_формы = [ф for в in я["вещи"] for ф in в.values()]
         дыры = {"В1": "(?P<В1>" + alt(в["one"] for в in я["вещи"])[1:], "Вk": "(?P<Вk>" + alt(вещи_формы)[1:],

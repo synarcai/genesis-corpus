@@ -370,7 +370,7 @@ def _чит(т, язык):
             return (род, д), хвост
     степень = " to the power " if язык == "en" else " в степени "
     for (яз, имя), знак in sorted(_ИМЕНА.items(),
-                                  key=lambda п: -len(п[0][1])):
+                                  key=lambda п: (-len(п[0][1]), п[0])):
         if яз != язык:
             continue
         если = имя + " "
@@ -728,7 +728,7 @@ def разобрать_инфикс(текст, язык):
     for з, имя in _ИНФИКС[язык].items():
         знаки[имя] = з
     т = текст.strip()
-    for имя, з in sorted(знаки.items(), key=lambda п: -len(п[0])):
+    for имя, з in sorted(знаки.items(), key=lambda п: (-len(п[0]), п[0])):
         т = re.sub(rf"(?<![\w]){re.escape(имя)}(?![\w])", f" {з} ", т)
     т = re.sub(rf"(\S+) {re.escape(_КВАДРАТ[язык])}", r"\1 ^ 2", т)
     т = re.sub(rf"(\S+) {re.escape(_КУБ[язык])}", r"\1 ^ 3", т)

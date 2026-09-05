@@ -91,7 +91,7 @@ def main():
 
     накоплено, взято = set(), 0
     рубежи = {50: None, 80: None, 95: None, 100: None}
-    for имя, роды in sorted(миры, key=lambda з: -len({р for р in з[1] if len(где[р]) == 1})):
+    for имя, роды in sorted(миры, key=lambda з: (-len({р for р in з[1] if len(где[р]) == 1}), з[0])):
         накоплено |= set(роды)
         взято += 1
         доля = 100 * len(накоплено) // всего_рамок

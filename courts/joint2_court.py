@@ -34,7 +34,7 @@ def _образцы():
     вон = []
     for язык in F.ЯЗЫКИ:
         формы_вещей = sorted({N.вещь(язык, в, n) for в in F.ВЕЩИ[язык]
-                              for n in range(0, 41)}, key=len, reverse=True)
+                              for n in range(0, 41)}, key=lambda с: (-len(с), с))
         альт = "(?:" + "|".join(re.escape(ф) for ф in формы_вещей) + ")"
         for форма in F.ФОРМЫ:
             # ВЕЖЛИВЫЙ РЕГИСТР — вторая рамка того же рода; язык без различия

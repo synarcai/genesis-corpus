@@ -195,7 +195,7 @@ def _образцы():
     """One pattern per (kind, language, form): the entity and the count are
     holes bound by back-reference where the page repeats them."""
     вон = []
-    alt = lambda слова: "(?:" + "|".join(re.escape(с) for с in sorted(set(слова), key=len, reverse=True)) + ")"
+    alt = lambda слова: "(?:" + "|".join(re.escape(с) for с in sorted(set(слова), key=lambda с: (-len(с), с))) + ")"
     for вид, в in ВИДЫ.items():
         for язык, я in в["языки"].items():
             n = len(в["факты"])

@@ -164,9 +164,9 @@ def вопрос_кратно(язык, A, B, x, y, в):
 
 def _дыры(язык):
     имя = "(" + "|".join(re.escape(и) for и in ИМЕНА[язык]) + ")"
-    формы = sorted({ф for в in ВЕЩИ[язык] for ф in в}, key=len, reverse=True)
+    формы = sorted({ф for в in ВЕЩИ[язык] for ф in в}, key=lambda с: (-len(с), с))
     слово = "(" + "|".join(re.escape(ф) for ф in формы) + ")"
-    к = "(" + "|".join(re.escape(с) for с in sorted(КРАТНО[язык].values(), key=len, reverse=True)) + ")"
+    к = "(" + "|".join(re.escape(с) for с in sorted(КРАТНО[язык].values(), key=lambda с: (-len(с), с))) + ")"
     д = {"A": имя, "B": имя, "x": r"(\d+)", "y": r"(\d+)", "в": слово, "вy": слово, "d": r"(\d+)", "вd": слово, "вм": слово, "к": к, "k": r"(\d+)", "он": "(il|elle)"}
     if язык == "tr":
         for ключ, падеж in (("Aм", "loc"), ("Bм", "loc"), ("Bот", "abl"), ("Bр", "gen")):

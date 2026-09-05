@@ -67,7 +67,7 @@ def вопрос(язык, k, n):
 
 def _дыры(язык):
     я = ЯЗЫКИ[язык]
-    alt = lambda слова: "(" + "|".join(re.escape(с) for с in sorted(set(слова), key=len, reverse=True)) + ")"
+    alt = lambda слова: "(" + "|".join(re.escape(с) for с in sorted(set(слова), key=lambda с: (-len(с), с))) + ")"
     return {"и": alt(ИМЕНА[язык]), "n": r"(\d+)", "в": r"(\d+)", "с": alt(я["с"]), "вс": alt(я["вс"]),
             "л": r"(\d+ ÷ \d+ = \d+(?:, \d+ × \d+ = \d+)?)"}
 

@@ -415,7 +415,7 @@ def дыры(язык, день, имя, род, k, n, вещь, место):
 
 
 def _alt(слова):
-    return "|".join(re.escape(с) for с in sorted(set(слова), key=len, reverse=True))
+    return "|".join(re.escape(с) for с in sorted(set(слова), key=lambda с: (-len(с), с)))
 
 
 def _глаголы(язык):

@@ -82,7 +82,7 @@ def _образцы():
         числа = _числительные(пакет)
         if not числа:
             continue
-        альт_чисел = "(?:" + "|".join(re.escape(с) for с in sorted(set(числа.values()), key=len, reverse=True)) + ")"
+        альт_чисел = "(?:" + "|".join(re.escape(с) for с in sorted(set(числа.values()), key=lambda с: (-len(с), с))) + ")"
         for род in (пакет.get("show_kinds") or {}).values():
             for ш in род.get("templates") or ():
                 if not _ЧИСЛ.search(ш) or _ЦЕПЬ.search(ш):
@@ -97,7 +97,7 @@ def _образцы():
                         if not формы:
                             годно = False
                             break
-                        куски.append("(?:" + "|".join(re.escape(ф) for ф in sorted(формы, key=len, reverse=True)) + ")")
+                        куски.append("(?:" + "|".join(re.escape(ф) for ф in sorted(формы, key=lambda с: (-len(с), с))) + ")")
                     elif _ЧИСЛ.fullmatch(дыра):
                         куски.append(альт_чисел)
                     else:
@@ -115,7 +115,7 @@ def _образцы():
 _ПО_СЛОВУ = {язык: {с: з for з, с in _числительные(п).items()} for язык, п in ПАКЕТЫ_ВСЕ.items()}
 
 
-_ПОРЯДОК = {язык: sorted(по_слову, key=len, reverse=True) for язык, по_слову in
+_ПОРЯДОК = {язык: sorted(по_слову, key=lambda с: (-len(с), с)) for язык, по_слову in
             ((язык, {с: з for з, с in _числительные(п).items()}) for язык, п in ПАКЕТЫ_ВСЕ.items())}
 
 

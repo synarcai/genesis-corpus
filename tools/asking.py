@@ -97,7 +97,7 @@ def _величины_словом():
 ВЕЛИЧИНЫ_СЛОВОМ = _величины_словом()
 ВЕЛИЧИНА = re.compile(
     r"\d+|" + "|".join(r"\b" + re.escape(с) + r"\b" for с in
-                       sorted(ВЕЛИЧИНЫ_СЛОВОМ, key=len, reverse=True)),
+                       sorted(ВЕЛИЧИНЫ_СЛОВОМ, key=lambda с: (-len(с), с))),
     re.I)
 
 
@@ -448,7 +448,7 @@ def _задания():
         слова.update(w.lower() for w in (пакет.get("task_words") or {}).get("words", ()))
     if not слова:
         return None
-    зачины = "|".join(re.escape(w) for w in sorted(слова, key=len, reverse=True))
+    зачины = "|".join(re.escape(w) for w in sorted(слова, key=lambda с: (-len(с), с)))
     return re.compile(rf"^((?:{зачины})\b[^.?!]*?)\. (.+)$")
 
 

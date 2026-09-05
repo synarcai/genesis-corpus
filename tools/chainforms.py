@@ -168,7 +168,7 @@ def _образец(язык, ш):
     """The template as a pattern: every hole a group of the language's numbers."""
     т = ЧИСЛА[язык]
     словами = all(м.group(1) for м in _ДЫРА.finditer(ш))
-    дыра = ("(" + "|".join(re.escape(с) for с in sorted(set(т.values()), key=len, reverse=True)) + ")") if словами else r"(\d+)"
+    дыра = ("(" + "|".join(re.escape(с) for с in sorted(set(т.values()), key=lambda с: (-len(с), с))) + ")") if словами else r"(\d+)"
     куски, конец = [], 0
     for м in _ДЫРА.finditer(ш):
         куски.append(re.escape(ш[конец:м.start()])); куски.append(дыра); конец = м.end()

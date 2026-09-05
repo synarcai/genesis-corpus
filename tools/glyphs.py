@@ -282,7 +282,7 @@ for _с in ТАБЛИЦА:
         assert _имя not in ПО_ИМЕНИ or ПО_ИМЕНИ[_имя] == _с, _имя
         ПО_ИМЕНИ[_имя] = _с
 ОБРАЗЕЦ_ИМЕНИ = "(?:" + "|".join(
-    re.escape(и) for и in sorted(ПО_ИМЕНИ, key=len, reverse=True)) + ")"
+    re.escape(и) for и in sorted(ПО_ИМЕНИ, key=lambda с: (-len(с), с))) + ")"
 
 
 def символ_по_имени(имя):

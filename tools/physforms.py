@@ -93,7 +93,7 @@ def вопрос(язык, вид, a, b):
 
 
 def _дыры(язык):
-    alt = lambda ключ: "(" + "|".join(re.escape(ф) for ф in sorted((ЕДИНИЦЫ[язык][ключ],) if isinstance(ЕДИНИЦЫ[язык][ключ], str) else ЕДИНИЦЫ[язык][ключ], key=len, reverse=True)) + ")"
+    alt = lambda ключ: "(" + "|".join(re.escape(ф) for ф in sorted((ЕДИНИЦЫ[язык][ключ],) if isinstance(ЕДИНИЦЫ[язык][ключ], str) else ЕДИНИЦЫ[язык][ключ], key=lambda с: (-len(с), с))) + ")"
     return {"s": r"(\d+)", "t": r"(\d+)", "v": r"(\d+)", "F": r"(\d+)", "A": r"(\d+)", "p": r"(\d+)", "л": ЛЕДЖЕР,
             "ем": alt("m"), "ес": alt("s"), "ев": alt("v"), "еN": alt("N"), "еA": alt("A"), "еp": alt("p")}
 

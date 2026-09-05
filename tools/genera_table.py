@@ -49,7 +49,7 @@ def семейства_gsmforms():
                 if "?" in с:
                     яз = "ru" if КИРИЛЛИЦА.search(с) else "en"
                     форма = re.sub(r"\d+", "#", с.split("?")[0] + "?")
-                    форма = re.sub(r"\b(?:" + "|".join(sorted(map(re.escape, G.ИМЕНА_EN + G.ИМЕНА_RU), key=len, reverse=True)) + r")\b", "@", форма)
+                    форма = re.sub(r"\b(?:" + "|".join(sorted(map(re.escape, G.ИМЕНА_EN + G.ИМЕНА_RU), key=lambda с: (-len(с), с))) + r")\b", "@", форма)
                     вопросы.setdefault(яз, collections.Counter())[форма] += 1
         вон.append({"мир": "gsmforms", "семейство": имя, "формула": G.ФОРМУЛЫ[имя],
                     "величины": sorted(k for k in getattr(G, "п_" + имя)(0, 0) if k != "ответ"),

@@ -141,7 +141,7 @@ def _выбор(имена):
     есть ОДИН знак.
     """
     return "(" + "|".join(re.escape(и) for и in
-                          sorted(имена, key=len, reverse=True)) + ")"
+                          sorted(имена, key=lambda с: (-len(с), с))) + ")"
 
 
 ДА = _выбор(ДОЛЯ_АНГЛ)

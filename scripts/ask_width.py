@@ -255,7 +255,7 @@ def вопросный():
     """
     слова = ask_reach.вопросные_слова()
     словом = (re.compile(r"\b(?:%s)\b" % "|".join(
-        re.escape(с) for с in sorted(слова, key=len, reverse=True)))
+        re.escape(с) for с in sorted(слова, key=lambda с: (-len(с), с))))
         if слова else None)
 
     def разобрать(строка):

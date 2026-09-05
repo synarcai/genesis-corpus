@@ -925,7 +925,7 @@ def страница(язык, форма, X, Т=0, n=0, k=0, m=0, Y=None, до�
 
 # --- the court's side ---
 def _альт(слова):
-    return "(" + "|".join(re.escape(с) for с in sorted(set(с for с in слова if с), key=len, reverse=True)) + ")"
+    return "(" + "|".join(re.escape(с) for с in sorted(set(с for с in слова if с), key=lambda с: (-len(с), с))) + ")"
 
 
 def _дыры(язык):

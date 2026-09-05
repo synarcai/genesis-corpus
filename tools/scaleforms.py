@@ -228,9 +228,9 @@ def _образцы():
     """
     вон = []
     for язык, я in ЯЗЫКИ.items():
-        имена = sorted({т[0] for т in я["ряд"]}, key=len, reverse=True)
-        формы = sorted({т[1] for т in я["ряд"]}, key=len, reverse=True)
-        прил = sorted({т[2] for т in я["ряд"]} | {я["г_воп"]}, key=len, reverse=True)
+        имена = sorted({т[0] for т in я["ряд"]}, key=lambda с: (-len(с), с))
+        формы = sorted({т[1] for т in я["ряд"]}, key=lambda с: (-len(с), с))
+        прил = sorted({т[2] for т in я["ряд"]} | {я["г_воп"]}, key=lambda с: (-len(с), с))
         альт = lambda ряд: "(?:" + "|".join(re.escape(з) for з in ряд) + ")"
         for форма in ФОРМЫ:
             # СОСТАВНАЯ ФОРМА ЕСТЬ ДВЕ ОБЪЯВЛЕННЫЕ РЯДОМ: образец ей строится из

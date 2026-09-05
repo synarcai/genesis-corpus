@@ -36,7 +36,7 @@ from rugram import ПО_ФОРМЕ  # noqa: E402
 # домом русского счёта.
 СОГЛАСОВАНИЕ = (r"\b\d+ (?:"
                 + "|".join(sorted((re.escape(ф) for ф in ПО_ФОРМЕ),
-                                  key=len, reverse=True))
+                                  key=lambda с: (-len(с), с)))
                 + r")\b")
 
 Род = collections.namedtuple("Род", "имя зачем признак хозяева")

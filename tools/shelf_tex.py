@@ -101,7 +101,7 @@ def добыть(книга, кэш):
     with zipfile.ZipFile(zip_) as z:
         имена = [и for и in z.namelist() if и.endswith(".tex")]
         # ГЛАВНЫЙ ФАЙЛ — ТОТ, ГДЕ \begin{document}; прочие суть включения.
-        for имя in sorted(имена, key=len):
+        for имя in sorted(имена, key=lambda с: (len(с), с)):
             сырое = z.read(имя)
             текст = _раскодировать(сырое)
             if r"\begin{document}" in текст:
@@ -226,7 +226,7 @@ def _раскрыть_макросы(тело, макросы):
     """
     if not макросы:
         return тело
-    имена = sorted(макросы, key=len, reverse=True)
+    имена = sorted(макросы, key=lambda с: (-len(с), с))
     образец = re.compile(r"\\(" + "|".join(re.escape(и) for и in имена)
                          + r")(?![A-Za-z])")
     вон, i = [], 0

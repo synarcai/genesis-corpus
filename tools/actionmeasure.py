@@ -220,7 +220,7 @@ def _все_показы():
 
 # --- суд: пересчёт, единица по глаголу, счётная форма
 def _alt(слова):
-    return "(?:" + "|".join(re.escape(с) for с in sorted(слова, key=len, reverse=True)) + ")"
+    return "(?:" + "|".join(re.escape(с) for с in sorted(слова, key=lambda с: (-len(с), с))) + ")"
 
 
 def _образцы(язык):

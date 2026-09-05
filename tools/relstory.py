@@ -266,7 +266,7 @@ def страница(язык, форма, **п):
 
 # --- the court's side: the same templates as patterns, the page regenerated ---
 def _альт(слова):
-    return "(" + "|".join(re.escape(с) for с in sorted(set(с for с in слова if с), key=len, reverse=True)) + ")"
+    return "(" + "|".join(re.escape(с) for с in sorted(set(с for с in слова if с), key=lambda с: (-len(с), с))) + ")"
 
 
 def _дыры(язык):

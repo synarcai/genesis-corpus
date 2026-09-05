@@ -283,7 +283,7 @@ def _все(язык):
 
 
 def _альт(слова):
-    return "(?:" + "|".join(re.escape(с) for с in sorted(set(слова), key=len, reverse=True)) + ")"
+    return "(?:" + "|".join(re.escape(с) for с in sorted(set(слова), key=lambda с: (-len(с), с))) + ")"
 
 
 def _образцы(язык):

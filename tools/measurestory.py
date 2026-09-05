@@ -154,7 +154,7 @@ def пара(язык, форма, товар=0, k=2, основание=30):
 
 
 def _альт(слова):
-    return "(?:" + "|".join(re.escape(с) for с in sorted(set(слова), key=len, reverse=True)) + ")"
+    return "(?:" + "|".join(re.escape(с) for с in sorted(set(слова), key=lambda с: (-len(с), с))) + ")"
 
 
 def _образцы(язык):

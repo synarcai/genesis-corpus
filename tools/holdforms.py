@@ -180,7 +180,7 @@ _ДЫРА = re.compile(r"\{([^}]+)\}")
 
 def _образец(язык, рамка):
     """One pattern over the whole page; the i-th occurrence of a hole is the group «hole__i»."""
-    alt = lambda слова: "(?:" + "|".join(re.escape(с) for с in sorted({с for с in слова if с}, key=len, reverse=True)) + ")"
+    alt = lambda слова: "(?:" + "|".join(re.escape(с) for с in sorted({с for с in слова if с}, key=lambda с: (-len(с), с))) + ")"
     лица = [S._лицо(язык, i) for i in range(len(A.ЛИЦА[язык]))]
     имена = alt(л[0] for л in лица); род = alt(л[2] for л in лица); дат = alt(_дательный(язык, л) for л in лица)
     вещи = alt(ФОРМЫ_ВЕЩЕЙ[язык]); годы = alt(ГОДЫ[язык])

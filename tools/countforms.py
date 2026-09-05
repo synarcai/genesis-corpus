@@ -118,7 +118,7 @@ def _все():
 def _образцы():
     вон = []
     for язык, я in ЯЗЫКИ.items():
-        формы = sorted({ф for пара in я["единицы"] for ф in пара}, key=len, reverse=True)
+        формы = sorted({ф for пара in я["единицы"] for ф in пара}, key=lambda с: (-len(с), с))
         Е = "(?:" + "|".join(map(re.escape, формы)) + ")"
         for i, ш in enumerate(я["рамки"]):
             тело = re.escape(ш).replace(r"\{n\}", r"\d+").replace(r"\{Е\}", Е)

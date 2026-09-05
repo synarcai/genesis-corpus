@@ -23,7 +23,7 @@ import moneyforms as M  # noqa: E402
 
 
 def _alt(формы):
-    return "(?:" + "|".join(re.escape(ф) for ф in sorted(set(формы), key=len, reverse=True)) + ")"
+    return "(?:" + "|".join(re.escape(ф) for ф in sorted(set(формы), key=lambda с: (-len(с), с))) + ")"
 
 
 def _образцы(язык):
@@ -100,7 +100,7 @@ def _открытые():
     вон = []
     for язык, правила in ПРАВИЛА.items():
         я = M.ЯЗЫКИ[язык]
-        слова = sorted({ф for ф in я["б"] + (я["м"] if язык != "ru" else ("копейка", "копейки", "копеек", "рубля", "рубль")) if ф}, key=len, reverse=True)
+        слова = sorted({ф for ф in я["б"] + (я["м"] if язык != "ru" else ("копейка", "копейки", "копеек", "рубля", "рубль")) if ф}, key=lambda с: (-len(с), с))
         for образец, _ in правила:
             о = образец.pattern
             for сл in слова:
