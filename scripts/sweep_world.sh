@@ -17,6 +17,9 @@
 # текущий main — сертификатами и честными отказами).
 set -u
 OZAR_CORE="${OZAR_CORE:-ozar-core}"
+# ДОБАВОЧНЫЕ ФЛАГИ ЧИТАТЕЛЯ (OZAR_FLAGS, например --fresh — сброс живой ленты на каждой строке pipe:
+# один --pipe-прогон есть один диалог, и числа соседних строк ключа перетекали в ответы — holon, 05.09)
+OZAR_FLAGS="${OZAR_FLAGS:-}"
 cd "$(dirname "$0")/.."
 if [ $# -lt 5 ]; then
   echo "usage: scripts/sweep_world.sh WORLD.txt STATE N SEED OUTDIR"; exit 2
@@ -36,7 +39,7 @@ fi
 for side in lex pos schema; do
   [ -f "$CLONE.$side" ] || { echo "ВОРОТА МИРА ОТКАЗ: у состояния нет сайдкара .$side — клонируйте ozar clone, не копируйте один файл"; exit 2; }
 done
-"$OZAR_CORE" 250 0 --state "$CLONE" --pipe --no-ask < "$OUT/sweep_q.txt" > "$OUT/run.out" 2> "$OUT/run.err"
+"$OZAR_CORE" 250 0 --state "$CLONE" --pipe --no-ask $OZAR_FLAGS < "$OUT/sweep_q.txt" > "$OUT/run.out" 2> "$OUT/run.err"
 echo "RUN EXIT $?"
 python3 scripts/sweep_self.py judge "$OUT/sweep_key.tsv" "$OUT/run.out" --классов 12 \
   --метка "мир $(basename "$WORLD") на $(basename "$STATE")" --в "$OUT/verdict.tsv"

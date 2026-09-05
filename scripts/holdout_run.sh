@@ -9,6 +9,9 @@
 # Читатель: OZAR_CORE (иначе ozar-core с пути). ИМЕНА ПЕРЕМЕННЫХ ЛАТИНИЦЕЙ (bash 3.2).
 set -u
 OZAR_CORE="${OZAR_CORE:-ozar-core}"
+# ДОБАВОЧНЫЕ ФЛАГИ ЧИТАТЕЛЯ (OZAR_FLAGS, например --fresh — сброс живой ленты на каждой строке pipe:
+# один --pipe-прогон есть один диалог, и числа соседних строк ключа перетекали в ответы — holon, 05.09)
+OZAR_FLAGS="${OZAR_FLAGS:-}"
 cd "$(dirname "$0")/.."
 if [ $# -lt 2 ]; then
   echo "usage: scripts/holdout_run.sh STATE OUTDIR [N] [KEY]"; exit 2
@@ -35,7 +38,7 @@ if [ ! -f "$CLONE" ]; then
   ozar clone --base "$STATE" --state "$CLONE" > "$OUT/clone.log" 2>&1 || { echo "ВОРОТА ЧИТАТЕЛЯ ОТКАЗ: клон не удался"; exit 2; }
 fi
 T0=$SECONDS
-"$OZAR_CORE" 250 0 --state "$CLONE" --pipe --no-ask < "$OUT/questions.txt" > "$OUT/run.out" 2> "$OUT/run.err"
+"$OZAR_CORE" 250 0 --state "$CLONE" --pipe --no-ask $OZAR_FLAGS < "$OUT/questions.txt" > "$OUT/run.out" 2> "$OUT/run.err"
 echo "RUN EXIT $?"
 python3 scripts/sweep_self.py judge "$OUT/key.tsv" "$OUT/run.out" --классов 12 \
   --метка "удержанный ключ ($(wc -l < "$OUT/key.tsv" | tr -d ' ') вопросов) на $(basename "$STATE")" \
