@@ -1,0 +1,104 @@
+# BESEDA-13 — ТРИНАДЦАТАЯ ПОЛОСА: безглагольные рамки и сравнение (05.09, мера рамок:
+# держания историй куплены только по-английски — 0 верных на восьми языках при показах во всех девяти).
+# Формы новых домов дня: держание, место, два товара, кто, что, где; больше/меньше на N, кратность, «на сколько».
+# Девять языков; строка «вопрос ||| подстрока ожидаемого ответа».
+# GENUS: HOLD-COUNT
+у Ани 1 шар. сколько шаров у Ани? ||| у Ани 1 шар
+Anna has 1 ball. how many balls does Anna have? ||| Anna has 1 ball
+Jonas hat 1 Ball. wie viele Bälle hat Jonas? ||| Jonas hat 1 Ball
+Louis a 1 ballon. combien de ballons a Louis ? ||| Louis a 1 ballon
+Luis tiene 1 balón. ¿cuántos balones tiene Luis? ||| Luis tiene 1 balón
+Marco ha 1 pallone. quanti palloni ha Marco? ||| Marco ha 1 pallone
+o João tem 1 bola. quantas bolas tem o João? ||| o João tem 1 bola
+Daan heeft 1 bal. hoeveel ballen heeft Daan? ||| Daan heeft 1 bal
+Jan ma 1 piłka. ile piłek ma Jan? ||| Jan ma 1 piłka
+# GENUS: HOLD-PLACE
+на столе 1 карта. сколько карт на столе? ||| на столе 1 карта
+there is 1 card on the table. how many cards are on the table? ||| there is 1 card on the table
+auf dem Tisch ist 1 Karte. wie viele Karten sind auf dem Tisch? ||| auf dem Tisch ist 1 Karte
+il y a 1 carte sur la table. combien de cartes y a-t-il sur la table ? ||| il y a 1 carte sur la table
+hay 1 carta en la mesa. ¿cuántas cartas hay en la mesa? ||| hay 1 carta en la mesa
+c'è 1 carta sul tavolo. quante carte ci sono sul tavolo? ||| c'è 1 carta sul tavolo
+há 1 carta na mesa. quantas cartas há na mesa? ||| há 1 carta na mesa
+er ligt 1 appel op de tafel. hoeveel appels liggen op de tafel? ||| er ligt 1 appel op de tafel
+na stole jest 1 jabłko. ile jabłek jest na stole? ||| na stole jest 1 jabłko
+# GENUS: HOLD-SECOND
+у Вани 1 карта и 11 цветков. сколько цветков у Вани? ||| у Вани 11 цветков
+Ava has 1 card and 11 flowers. how many flowers does Ava have? ||| Ava has 11 flowers
+Lena hat 1 Karte und 11 Blumen. wie viele Blumen hat Lena? ||| Lena hat 11 Blumen
+Marie a 1 carte et 11 fleurs. combien de fleurs a Marie ? ||| Marie a 11 fleurs
+Marta tiene 1 carta y 11 flores. ¿cuántas flores tiene Marta? ||| Marta tiene 11 flores
+Giulia ha 1 carta e 11 fiori. quanti fiori ha Giulia? ||| Giulia ha 11 fiori
+a Maria tem 1 carta e 11 flores. quantas flores tem a Maria? ||| a Maria tem 11 flores
+Emma heeft 1 appel en 11 eieren. hoeveel eieren heeft Emma? ||| Emma heeft 11 eieren
+Maria ma 1 jabłko i 11 jajek. ile jajek ma Maria? ||| Maria ma 11 jajek
+# GENUS: HOLD-WHO
+у Ани 1 ручка. у кого 1 ручка? ||| у Ани
+Anna has 1 pen. who has 1 pen? ||| Anna
+Jonas hat 1 Stift. wer hat 1 Stift? ||| Jonas
+Louis a 1 stylo. qui a 1 stylo ? ||| Louis
+Luis tiene 1 bolígrafo. ¿quién tiene 1 bolígrafo? ||| Luis
+Marco ha 1 penna. chi ha 1 penna? ||| Marco
+o João tem 1 caneta. quem tem 1 caneta? ||| o João
+Daan heeft 1 kaart. wie heeft 1 kaart? ||| Daan
+Jan ma 1 karta. kto ma 1 karta? ||| Jan
+# GENUS: HOLD-WHAT
+у Ани 1 ручка. что у Ани? ||| у Ани ручек
+Anna has 1 pen. what does Anna have? ||| Anna has pens
+Jonas hat 1 Stift. was hat Jonas? ||| Jonas hat Stifte
+Louis a 1 stylo. qu'est-ce que Louis a ? ||| Louis a des stylos
+Luis tiene 1 bolígrafo. ¿qué tiene Luis? ||| Luis tiene bolígrafos
+Marco ha 1 penna. che cosa ha Marco? ||| Marco ha penne
+o João tem 1 caneta. o que tem o João? ||| o João tem canetas
+Daan heeft 1 kaart. wat heeft Daan? ||| Daan heeft kaarten
+Jan ma 1 karta. co ma Jan? ||| Jan ma kart
+# GENUS: HOLD-WHERE
+в коробке 2 карты. где 2 карты? ||| в коробке
+there are 2 cards in the box. where are the 2 cards? ||| in the box
+in der Kiste sind 2 Karten. wo sind die 2 Karten? ||| in der Kiste
+il y a 2 cartes dans la boîte. où sont les 2 cartes ? ||| dans la boîte
+hay 2 cartas en la caja. ¿dónde están las 2 cartas? ||| en la caja
+ci sono 2 carte nella scatola. dove sono le 2 carte? ||| nella scatola
+há 2 cartas na caixa. onde estão as 2 cartas? ||| na caixa
+er liggen 2 appels in de doos. waar liggen de 2 appels? ||| in de doos
+w pudełku jest 2 jabłka. gdzie jest 2 jabłka? ||| w pudełku
+# GENUS: CMP-MORE
+Анна сделала 16 отжиманий. Аня сделала на 7 отжиманий больше, чем Анна. сколько отжиманий сделала Аня? ||| Аня сделала 23 отжимания: 16 + 7 = 23
+Ann did 16 push-ups. Anna did 7 more push-ups than Ann. how many push-ups did Anna do? ||| Anna did 23 push-ups: 16 + 7 = 23
+Anna machte 16 Liegestütze. Jonas machte 7 Liegestütze mehr als Anna. wie viele Liegestütze machte Jonas? ||| Jonas machte 23 Liegestütze: 16 + 7 = 23
+Anne a fait 16 pompes. Louis a fait 7 pompes de plus que Anne. combien de pompes a fait Louis ? ||| Louis a fait 23 pompes : 16 + 7 = 23
+Ana hizo 16 flexiones. Luis hizo 7 flexiones más que Ana. ¿cuántas flexiones hizo Luis? ||| Luis hizo 23 flexiones: 16 + 7 = 23
+Anna ha fatto 16 flessioni. Marco ha fatto 7 flessioni in più di Anna. quante flessioni ha fatto Marco? ||| Marco ha fatto 23 flessioni: 16 + 7 = 23
+a Ana fez 16 flexões. o João fez mais 7 flexões do que a Ana. quantas flexões fez o João? ||| o João fez 23 flexões: 16 + 7 = 23
+Anna deed 16 push-ups. Daan deed 7 push-ups meer dan Anna. hoeveel push-ups deed Daan? ||| Daan deed 23 push-ups: 16 + 7 = 23
+Anna zrobiła 16 pompek. Jan zrobił o 7 pompek więcej niż Anna. ile pompek zrobił Jan? ||| Jan zrobił 23 pompki: 16 + 7 = 23
+# GENUS: CMP-LESS
+Анна сделала 16 отжиманий. Аня сделала на 7 отжиманий меньше, чем Анна. сколько отжиманий сделала Аня? ||| Аня сделала 9 отжиманий: 16 − 7 = 9
+Ann did 16 push-ups. Anna did 7 fewer push-ups than Ann. how many push-ups did Anna do? ||| Anna did 9 push-ups: 16 − 7 = 9
+Anna machte 16 Liegestütze. Jonas machte 7 Liegestütze weniger als Anna. wie viele Liegestütze machte Jonas? ||| Jonas machte 9 Liegestütze: 16 − 7 = 9
+Anne a fait 16 pompes. Louis a fait 7 pompes de moins que Anne. combien de pompes a fait Louis ? ||| Louis a fait 9 pompes : 16 − 7 = 9
+Ana hizo 16 flexiones. Luis hizo 7 flexiones menos que Ana. ¿cuántas flexiones hizo Luis? ||| Luis hizo 9 flexiones: 16 − 7 = 9
+Anna ha fatto 16 flessioni. Marco ha fatto 7 flessioni in meno di Anna. quante flessioni ha fatto Marco? ||| Marco ha fatto 9 flessioni: 16 − 7 = 9
+a Ana fez 16 flexões. o João fez menos 7 flexões do que a Ana. quantas flexões fez o João? ||| o João fez 9 flexões: 16 − 7 = 9
+Anna deed 16 push-ups. Daan deed 7 push-ups minder dan Anna. hoeveel push-ups deed Daan? ||| Daan deed 9 push-ups: 16 − 7 = 9
+Anna zrobiła 16 pompek. Jan zrobił o 7 pompek mniej niż Anna. ile pompek zrobił Jan? ||| Jan zrobił 9 pompek: 16 − 7 = 9
+# GENUS: CMP-TIMES
+Анна сделала 16 отжиманий. Аня сделала вдвое больше отжиманий, чем Анна. сколько отжиманий сделала Аня? ||| Аня сделала 32 отжимания: 16 × 2 = 32
+Ann did 16 push-ups. Anna did twice as many push-ups as Ann. how many push-ups did Anna do? ||| Anna did 32 push-ups: 16 × 2 = 32
+Anna machte 16 Liegestütze. Jonas machte zweimal so viele Liegestütze wie Anna. wie viele Liegestütze machte Jonas? ||| Jonas machte 32 Liegestütze: 16 × 2 = 32
+Anne a fait 16 pompes. Louis a fait deux fois plus de pompes que Anne. combien de pompes a fait Louis ? ||| Louis a fait 32 pompes : 16 × 2 = 32
+Ana hizo 16 flexiones. Luis hizo el doble de flexiones que Ana. ¿cuántas flexiones hizo Luis? ||| Luis hizo 32 flexiones: 16 × 2 = 32
+Anna ha fatto 16 flessioni. Marco ha fatto il doppio delle flessioni di Anna. quante flessioni ha fatto Marco? ||| Marco ha fatto 32 flessioni: 16 × 2 = 32
+a Ana fez 16 flexões. o João fez o dobro das flexões de a Ana. quantas flexões fez o João? ||| o João fez 32 flexões: 16 × 2 = 32
+Anna deed 16 push-ups. Daan deed twee keer zoveel push-ups als Anna. hoeveel push-ups deed Daan? ||| Daan deed 32 push-ups: 16 × 2 = 32
+Anna zrobiła 16 pompek. Jan zrobił dwa razy więcej pompek niż Anna. ile pompek zrobił Jan? ||| Jan zrobił 32 pompki: 16 × 2 = 32
+# GENUS: CMP-DIFF
+Анна сделала 16 отжиманий. Аня сделала 23 отжимания. на сколько больше отжиманий сделала Аня, чем Анна? ||| на 7 отжиманий больше: 23 − 16 = 7
+Ann did 16 push-ups. Anna did 23 push-ups. how many more push-ups did Anna do than Ann? ||| 7 more push-ups: 23 − 16 = 7
+Anna machte 16 Liegestütze. Jonas machte 23 Liegestütze. wie viele Liegestütze mehr machte Jonas als Anna? ||| 7 Liegestütze mehr: 23 − 16 = 7
+Anne a fait 16 pompes. Louis a fait 23 pompes. combien de pompes de plus a fait Louis que Anne ? ||| 7 pompes de plus : 23 − 16 = 7
+Ana hizo 16 flexiones. Luis hizo 23 flexiones. ¿cuántas flexiones más hizo Luis que Ana? ||| 7 flexiones más: 23 − 16 = 7
+Anna ha fatto 16 flessioni. Marco ha fatto 23 flessioni. quante flessioni in più ha fatto Marco di Anna? ||| 7 flessioni in più: 23 − 16 = 7
+a Ana fez 16 flexões. o João fez 23 flexões. quantas flexões a mais fez o João do que a Ana? ||| mais 7 flexões: 23 − 16 = 7
+Anna deed 16 push-ups. Daan deed 23 push-ups. hoeveel push-ups meer deed Daan dan Anna? ||| 7 push-ups meer: 23 − 16 = 7
+Anna zrobiła 16 pompek. Jan zrobił 23 pompki. o ile więcej pompek zrobił Jan niż Anna? ||| o 7 pompek więcej: 23 − 16 = 7
