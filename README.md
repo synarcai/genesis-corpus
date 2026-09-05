@@ -23,8 +23,8 @@ rebuilt from nothing and re-judged by anyone.
 |---|---|
 | **167 worlds of shows + 213 of prose** | declared in `datasets/GENESIS-MANIFEST.json`; 71 prose worlds are public-domain books on the shelf (`shelf/`, contract `declarations/SHELF.md`) |
 | **29 languages** | one pack each in `tools/langpacks/`, zero engine edits |
-| **124 courts + 84 instruments** | every line re-executed by a court; the corpus as a whole measured by judgeability, reproducibility, manifest, shelf, band, library, concept reach, mutation catch |
-| **0** | false or blind lines among ~357 000 judged |
+| **124 courts + 86 instruments** | every line re-executed by a court; the corpus as a whole measured by judgeability, reproducibility, manifest, shelf, band, library, concept reach, mutation catch |
+| **0** | false or blind lines among ~291 000 judged (after the repetition ceiling LAW = 2 per show and world, М-402: ~65 000 copies gone, no show lost) |
 
 The corpus is a **knowledge engine**, not a text dump: worlds are
 functions of the manifest, courts re-execute every claim, executor
