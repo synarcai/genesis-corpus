@@ -1127,6 +1127,23 @@
       "text": "shows"
     },
     {
+      "name": "toolforms",
+      "file": "datasets/genesis_toolforms.txt",
+      "genre": "THE TOOL — «the state before · the call · the state after» (05.09, the agent architecture: a tool is known by what it changes and by what it leaves alone). Six genera on nine languages: create, delete, append, read, move between two folders (with the twin asking about the first folder) and the SAME act done TWICE — the quorum of idempotence stands in pairs: creating twice moves the count twice, reading twice moves nothing and says its ground («reading changes nothing», «Lesen ändert nichts», «czytanie nic nie zmienia»). Things of acts with their count forms, places as whole prepositional phrases, the copula bent by number (Polish by its count cell), the gender of es/it/pt read from the SVAMP house — one declaration, several readers (tools/toolforms.py). CLOSED world.",
+      "act": [
+        "recount",
+        "decide"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
       "name": "cmpframes",
       "file": "datasets/genesis_cmpframes.txt",
       "genre": "FRAMES OF COMPARISON — the largest class of the reader's lies on the held-out key (05.09: twelve of fifteen — «9 flexiones más que», «in più/in meno di», «meer/minder dan», «więcej/mniej niż»: the marker is not bought and the answer takes a neighbouring number). Four frames on nine languages over two bearer groups (a deed done and a holding held): more by N, fewer by N, twice/three times as many, and the reverse question «by how many more». The answer is a full sentence with the bearer, the number and the thing, then the ledger; the sign of the ledger is a hole, and «more» with a minus is a lie BY SIGN. Bearers, goods and count forms from the action-pages house and the packs; multiplicity words, Slavic past-tense gender and the gender of es/it/pt goods declared here (tools/cmpframes.py). CLOSED world.",

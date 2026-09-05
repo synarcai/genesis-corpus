@@ -89,7 +89,7 @@ COURTS=("courts/arith_court.py" "courts/algo_court.py"
         # таблиц дома; 0 прожитых строк; переписывается на каждой точке (ворота посадки читателя).
         "scripts/holdout_key.py"
         # МЕРА ДЕЙСТВИЯ — число меряет действие или считает носителей (род d5, 05.09)
-        "courts/holdforms_court.py" "courts/cmpframes_court.py" "courts/sceneforms_court.py" "courts/action_measure_court.py" "courts/numberline_court.py" "courts/countfacts_court.py" "courts/letters_court.py" "courts/propcompare_court.py" "courts/price_court.py" "courts/translate_court.py" "courts/timeunits_court.py" "courts/svamp_court.py" "courts/measure_langs_court.py")
+        "courts/holdforms_court.py" "courts/cmpframes_court.py" "courts/sceneforms_court.py" "courts/toolforms_court.py" "courts/action_measure_court.py" "courts/numberline_court.py" "courts/countfacts_court.py" "courts/letters_court.py" "courts/propcompare_court.py" "courts/price_court.py" "courts/translate_court.py" "courts/timeunits_court.py" "courts/svamp_court.py" "courts/measure_langs_court.py")
 # ПРИБОРЫ ИДУТ ПАЧКАМИ, А ВЕРДИКТ ОСТАЁТСЯ ОДНОЙ ЛЕНТОЙ (05.09).
 #
 # Набор шёл в один поток — 70 минут по меткам леджера на 144 прибора, — и точка
@@ -113,10 +113,26 @@ SOLO=("scripts/reproducible.py"   # разворачивает зеркало д
       "scripts/court_reach.py"    # вся палата по всем мирам показов (292 тысячи строк)
       "courts/arith_court.py")    # самый долгий суд корпуса: 167 миров построчно
 
+# ЧИСЛО РАБОЧИХ УСТУПАЕТ НАГРУЗКЕ МАШИНЫ, И ЭТО ЗАМЕРЕНО, А НЕ УГАДАНО.
+# Малый набор из двенадцати приборов на машине с load average 99 при 16 ядрах:
+# один поток 176 с, пачки по четыре — 282 с. Переподписанная машина от новых
+# процессов не ускоряется, а глохнет: они делят ту же память и ту же подкачку
+# (в тот час её было занято 33 ГБ из 35, и четыре ковки точки умерли от этого).
+# Потому по умолчанию берётся четверть ядер, но не больше свободных по load
+# average, а при нагрузке выше числа ядер — один рабочий. GENESIS_SUITE_JOBS,
+# если объявлен, слушается: зовущий знает, чем занята машина.
 JOBS="${GENESIS_SUITE_JOBS:-}"
 if [ -z "$JOBS" ]; then
   CORES=$(sysctl -n hw.ncpu 2>/dev/null || getconf _NPROCESSORS_ONLN 2>/dev/null || echo 4)
   JOBS=$((CORES / 4))
+  LOAD=$(uptime | sed 's/.*averages*: *//; s/[ ,].*//' | cut -d. -f1)
+  case "$LOAD" in ''|*[!0-9]*) LOAD=0 ;; esac
+  if [ "$LOAD" -gt "$CORES" ]; then
+    JOBS=1
+  else
+    FREE=$((CORES - LOAD))
+    [ "$FREE" -lt "$JOBS" ] && JOBS=$FREE
+  fi
 fi
 [ "$JOBS" -lt 1 ] && JOBS=1
 
