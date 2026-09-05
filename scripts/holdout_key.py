@@ -26,6 +26,8 @@ import sys
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
 import genesis  # noqa: E402
 import svampforms as F  # noqa: E402
+import numberline as N  # noqa: E402
+import crossforms as C  # noqa: E402
 
 # РУБЕЖ-ДОЛГА: ПРОЖИТЫХ_РУБЕЖ = 0
 ПРОЖИТЫХ_РУБЕЖ = 0
@@ -40,6 +42,18 @@ import svampforms as F  # noqa: E402
 ЧИСЛА_АКТОВ = ((14, 9, 8), (22, 13, 11), (26, 17, 13), (34, 19, 14), (16, 9, 8), (28, 13, 11), (38, 17, 13), (44, 19, 14))
 # prices of the «unit» form come from the house's own table, not from n and k — held out here
 ЦЕНЫ = ((7, 6), (9, 8), (11, 7), (13, 9))
+# THE NUMBER LINE holds out the forms that stand on declared tables (the walk 1..20 is enumerated
+# whole and cannot be held out): age, the number between, the greatest / smallest of three, the row
+# continued, sharing equally
+ЛИНИЯ = {"ВОЗРАСТА": ((6, 4), (8, 2), (11, 6), (13, 4)), "МЕЖДУ": ((2, 4), (6, 8), (8, 10), (12, 14)),
+         "ТРОЙКИ_ЧИСЕЛ": ((4, 11, 7), (6, 2, 9), (14, 19, 16), (10, 3, 8)), "РЯДЫ": ((3, 2), (4, 1), (6, 3), (2, 4)),
+         "ДЕЛЁЖ": ((14, 2), (18, 3), (12, 4), (20, 4))}
+ЛИНИЯ_ФОРМЫ = {"возраст", "между", "наибольшее", "наименьшее", "ряд_дальше", "поровну"}
+# THE CROSSROADS holds out arithmetic pairs — the same four signs, other numbers
+ДЕЙСТВИЯ = (("+", ((23, 19), (14, 7), (31, 26), (45, 55))), ("−", ((41, 19), (23, 7), (52, 26), (90, 45))),
+            ("×", ((13, 3), (11, 6), (7, 8), (25, 4))), ("÷", ((42, 7), (36, 4), (63, 9), (72, 8))))
+# only the forms that stand on the pairs; the triples, chains and signed sums stand on their own tables
+ПЕРЕКРЁСТОК_ФОРМЫ = {"перекрёсток", "именем", "согласен", "согласен_вы", "просьба", "просьба_вы", "теперь", "словом"}
 ВОПРОС = re.compile(r"[?？] ")
 ЧИСЛО = re.compile(r"\d+")
 
@@ -65,6 +79,38 @@ def страницы():
         return _страницы(вон)
     finally:
         F.ЦЕНЫ = цены_дома
+
+
+def _линия():
+    """The number line's pages for the held-out tables — the house's own walk, other tables."""
+    было = {имя: getattr(N, имя) for имя in ЛИНИЯ}
+    for имя, таблица in ЛИНИЯ.items():
+        setattr(N, имя, таблица)
+    try:
+        показы = N._показы()
+    finally:
+        for имя, таблица in было.items():
+            setattr(N, имя, таблица)
+    взято = collections.Counter(); вон = []
+    for с, (язык, форма) in показы.items():
+        if форма in ЛИНИЯ_ФОРМЫ and взято[(язык, форма)] < 2 and _разрезать(с) and ЧИСЛО.search(_разрезать(с)[0]):
+            вон.append((язык, форма, с)); взято[(язык, форма)] += 1
+    return вон
+
+
+def _перекрёсток():
+    """The crossroads' pages for held-out pairs — the same signs and names, other numbers."""
+    было = C.ДЕЙСТВИЯ
+    C.ДЕЙСТВИЯ = tuple((знак, имя, dict(ДЕЙСТВИЯ)[знак]) for знак, имя, _ in было)
+    try:
+        показы = C._показы()
+    finally:
+        C.ДЕЙСТВИЯ = было
+    взято = collections.Counter(); вон = []
+    for с, (язык, форма) in показы.items():
+        if форма in ПЕРЕКРЁСТОК_ФОРМЫ and взято[(язык, форма)] < 2 and _разрезать(с) and ЧИСЛО.search(_разрезать(с)[0]):
+            вон.append((язык, форма, с)); взято[(язык, форма)] += 1
+    return вон
 
 
 def _страницы(вон):
@@ -109,16 +155,23 @@ def main(argv):
     свои_ряды = set(F.ЧИСЛА) | set(F.ЧИСЛА_АКТОВ) | {(n, k) for n, k, _ in F.ЧИСЛА_АКТОВ} | set(F.ЦЕНЫ)
     беда = ({n for n, *_ in ЧИСЛА} | {n for n, *_ in ЧИСЛА_АКТОВ}) & свои_n
     беда |= {р for р in set(ЧИСЛА) | set(ЧИСЛА_АКТОВ) | {(n, k) for n, k, _ in ЧИСЛА_АКТОВ} | set(ЦЕНЫ) if р in свои_ряды}
+    for имя, таблица in ЛИНИЯ.items():
+        беда |= set(таблица) & set(getattr(N, имя))
+    домашние_пары = {(з, п) for з, _, пары in C.ДЕЙСТВИЯ for п in пары}
+    беда |= {(з, п) for з, пары in ДЕЙСТВИЯ for п in пары if (з, п) in домашние_пары}
     if беда:
         print(f"УДЕРЖАННЫЙ КЛЮЧ FAIL: удержанные числа стоят в таблицах дома: {sorted(map(str, беда))}")
         return 1
-    ряд = страницы()
+    ряд = страницы() + _линия() + _перекрёсток()
     # no question may stand in a world of shows (lived lines)
     прожито = set()
     for путь in genesis.worlds(kind="shows"):
         if путь.is_file():
             прожито.update(л.strip() for л in путь.read_text(encoding="utf-8", errors="replace").splitlines())
-    прожитых = sum(1 for _, _, с in ряд if с.strip() in прожито)
+    прожитые = [(язык, форма, с) for язык, форма, с in ряд if с.strip() in прожито]
+    прожитых = len(прожитые)
+    for язык, форма, с in прожитые[:3]:
+        print(f"  ПРОЖИТА [{язык} {форма}] {с[:90]}")
     строки = []
     for язык, форма, с in ряд:
         в, о = _разрезать(с)
