@@ -39,9 +39,13 @@ import re._parser as _parser
 # The interpreter's compile() is copied below verbatim for the miss path; it must stay the
 # same shape as the one shipped with the interpreter this was written against.
 ВЕРСИИ = ((3, 11), (3, 12), (3, 13))
-# A palata build compiles thousands of patterns; a process that compiled fewer is a single
-# house or a script — it merges into the file, it does not rewrite it.
-РУБЕЖ_ПЕРЕЗАПИСИ = 1000
+# EVERY PROCESS MERGES; ONLY A FULL FILE IS PRUNED, AND PRUNED TO A LIVE SET. A rule that let
+# any process of a thousand patterns REWRITE the file looked frugal and was not: a single heavy
+# court (doznanie uses over a thousand) evicted the palata's other 4 000, and the next gate paid
+# the misses again. Merging never evicts; the ceiling bounds the file, and when it is reached the
+# file is rewritten with exactly the patterns the current process used — a live set, not a
+# graveyard. The palata's own build uses ≈ 5 200 entries, so the ceiling is set well above it.
+ПОТОЛОК_ЗАПИСЕЙ = 20000
 
 _ПАМЯТЬ = None      # {(pattern, flags): (flags_out, code bytes, groups, groupindex, indexgroup)}
 # The engine's code word is a 32-bit unsigned int; the code is kept as the bytes of an array of
@@ -117,13 +121,12 @@ def _сохранить():
     if not _НОВЫХ:
         return None
     try:
-        if len(_ИСПОЛЬЗОВАНО) >= РУБЕЖ_ПЕРЕЗАПИСИ:
+        global _ПАМЯТЬ
+        _ПАМЯТЬ = None  # re-read: a neighbour process may have written since this one loaded
+        данные = dict(_загрузить())
+        данные.update(_ИСПОЛЬЗОВАНО)
+        if len(данные) > ПОТОЛОК_ЗАПИСЕЙ:
             данные = dict(_ИСПОЛЬЗОВАНО)
-        else:
-            global _ПАМЯТЬ
-            _ПАМЯТЬ = None
-            данные = dict(_загрузить())
-            данные.update(_ИСПОЛЬЗОВАНО)
         путь = файл()
         путь.parent.mkdir(parents=True, exist_ok=True)
         fd, врем = tempfile.mkstemp(dir=путь.parent, prefix=путь.name + ".", suffix=".tmp")
