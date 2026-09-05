@@ -47,7 +47,8 @@ import svampforms as S  # noqa: E402 — the count cell of a pack and the gender
     "de": (("Datei", "Dateien"), ("Eintrag", "Einträge"), ("Nachricht", "Nachrichten")),
     "fr": (("fichier", "fichiers"), ("enregistrement", "enregistrements"), ("message", "messages")),
     "es": (("archivo", "archivos"), ("registro", "registros"), ("mensaje", "mensajes")),
-    "it": (("file", "file"), ("voce", "voci"), ("messaggio", "messaggi")),
+    # «documento/documenti» вместо инвариантного «file»: см. закон согласования (М-…, 05.09)
+    "it": (("documento", "documenti"), ("voce", "voci"), ("messaggio", "messaggi")),
     "pt": (("ficheiro", "ficheiros"), ("registo", "registos"), ("mensagem", "mensagens")),
     "nl": (("bestand", "bestanden"), ("record", "records"), ("bericht", "berichten")),
     "pl": (("plik", "pliki", "plików"), ("wpis", "wpisy", "wpisów"), ("wiadomość", "wiadomości", "wiadomości")),
@@ -181,7 +182,7 @@ import svampforms as S  # noqa: E402 — the count cell of a pack and the gender
 # РОД ВЕЩЕЙ АКТОВ там, где вопросное слово гнётся (es/it/pt): ключ — форма множественного.
 РОД = {
     "es": {"archivos": "m", "registros": "m", "mensajes": "m", "líneas": "f"},
-    "it": {"file": "m", "voci": "f", "messaggi": "m", "righe": "f"},
+    "it": {"documenti": "m", "voci": "f", "messaggi": "m", "righe": "f"},
     "pt": {"ficheiros": "m", "registos": "m", "mensagens": "f", "linhas": "f"},
 }
 

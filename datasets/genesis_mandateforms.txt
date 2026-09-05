@@ -258,52 +258,52 @@ regla: no muevas archivos. borra 2 mensajes. ¿puede ejecutarse la orden? sí: l
 regla: no borres archivos. borra 5 mensajes. ¿puede ejecutarse la orden? no: la regla prohíbe borrar.
 la primera regla: no borres archivos. la segunda regla: no muevas archivos. mueve 7 mensajes. ¿qué regla lo prohíbe? la segunda regla: prohíbe mover.
 
-regola: non creare file. cancella 3 file. si può eseguire l'ordine? sì: la regola vieta di creare, ma questo è cancellare.
-la prima regola: non creare file. la seconda regola: non spostare file. sposta 5 file. quale regola lo vieta? la seconda regola: vieta di spostare.
+regola: non creare file. cancella 3 documenti. si può eseguire l'ordine? sì: la regola vieta di creare, ma questo è cancellare.
+la prima regola: non creare file. la seconda regola: non spostare file. sposta 5 documenti. quale regola lo vieta? la seconda regola: vieta di spostare.
 la prima regola: non cancellare file. la seconda regola: non creare file. sposta 2 voci. si può eseguire l'ordine? sì: nessuna regola vieta di spostare.
 regola: non creare file. cancella 5 voci. si può eseguire l'ordine? sì: la regola vieta di creare, ma questo è cancellare.
 la prima regola: non creare file. la seconda regola: non spostare file. sposta 7 voci. quale regola lo vieta? la seconda regola: vieta di spostare.
 la prima regola: non cancellare file. la seconda regola: non creare file. sposta 3 messaggi. si può eseguire l'ordine? sì: nessuna regola vieta di spostare.
 regola: non creare file. cancella 7 messaggi. si può eseguire l'ordine? sì: la regola vieta di creare, ma questo è cancellare.
-la prima regola: non cancellare file. la seconda regola: non spostare file. crea 2 file. si può eseguire l'ordine? sì: nessuna regola vieta di creare.
-regola: non spostare file. crea 5 file. si può eseguire l'ordine? sì: la regola vieta di spostare, ma questo è creare.
+la prima regola: non cancellare file. la seconda regola: non spostare file. crea 2 documenti. si può eseguire l'ordine? sì: nessuna regola vieta di creare.
+regola: non spostare file. crea 5 documenti. si può eseguire l'ordine? sì: la regola vieta di spostare, ma questo è creare.
 regola: non cancellare file. crea 2 voci. si può eseguire l'ordine? sì: la regola vieta di cancellare, ma questo è creare.
 la prima regola: non cancellare file. la seconda regola: non spostare file. crea 3 voci. si può eseguire l'ordine? sì: nessuna regola vieta di creare.
 regola: non spostare file. crea 7 voci. si può eseguire l'ordine? sì: la regola vieta di spostare, ma questo è creare.
 regola: non cancellare file. crea 3 messaggi. si può eseguire l'ordine? sì: la regola vieta di cancellare, ma questo è creare.
 la prima regola: non cancellare file. la seconda regola: non spostare file. crea 5 messaggi. si può eseguire l'ordine? sì: nessuna regola vieta di creare.
-regola: non creare file. sposta 2 file. si può eseguire l'ordine? sì: la regola vieta di creare, ma questo è spostare.
-la prima regola: non creare file. la seconda regola: non spostare file. cancella 3 file. si può eseguire l'ordine? sì: nessuna regola vieta di cancellare.
-la prima regola: non cancellare file. la seconda regola: non creare file. sposta 7 file. quante regole ci sono? due regole: vietano di cancellare e di creare.
+regola: non creare file. sposta 2 documenti. si può eseguire l'ordine? sì: la regola vieta di creare, ma questo è spostare.
+la prima regola: non creare file. la seconda regola: non spostare file. cancella 3 documenti. si può eseguire l'ordine? sì: nessuna regola vieta di cancellare.
+la prima regola: non cancellare file. la seconda regola: non creare file. sposta 7 documenti. quante regole ci sono? due regole: vietano di cancellare e di creare.
 regola: non creare file. sposta 3 voci. si può eseguire l'ordine? sì: la regola vieta di creare, ma questo è spostare.
 la prima regola: non creare file. la seconda regola: non spostare file. cancella 5 voci. si può eseguire l'ordine? sì: nessuna regola vieta di cancellare.
 la prima regola: non cancellare file. la seconda regola: non creare file. sposta 2 messaggi. quante regole ci sono? due regole: vietano di cancellare e di creare.
 regola: non creare file. sposta 5 messaggi. si può eseguire l'ordine? sì: la regola vieta di creare, ma questo è spostare.
 la prima regola: non creare file. la seconda regola: non spostare file. cancella 7 messaggi. si può eseguire l'ordine? sì: nessuna regola vieta di cancellare.
-la prima regola: non cancellare file. la seconda regola: non creare file. cancella 3 file. quale regola lo vieta? la prima regola: vieta di cancellare.
-regola: non cancellare file. sposta 7 file. si può eseguire l'ordine? sì: la regola vieta di cancellare, ma questo è spostare.
+la prima regola: non cancellare file. la seconda regola: non creare file. cancella 3 documenti. quale regola lo vieta? la prima regola: vieta di cancellare.
+regola: non cancellare file. sposta 7 documenti. si può eseguire l'ordine? sì: la regola vieta di cancellare, ma questo è spostare.
 la prima regola: non cancellare file. la seconda regola: non spostare file. crea 2 voci. quante regole ci sono? due regole: vietano di cancellare e di spostare.
 la prima regola: non cancellare file. la seconda regola: non creare file. cancella 5 voci. quale regola lo vieta? la prima regola: vieta di cancellare.
 regola: non cancellare file. sposta 2 messaggi. si può eseguire l'ordine? sì: la regola vieta di cancellare, ma questo è spostare.
 la prima regola: non cancellare file. la seconda regola: non spostare file. crea 3 messaggi. quante regole ci sono? due regole: vietano di cancellare e di spostare.
 la prima regola: non cancellare file. la seconda regola: non creare file. cancella 7 messaggi. quale regola lo vieta? la prima regola: vieta di cancellare.
-la prima regola: non creare file. la seconda regola: non spostare file. cancella 2 file. quante regole ci sono? due regole: vietano di creare e di spostare.
-la prima regola: non cancellare file. la seconda regola: non spostare file. cancella 5 file. quale regola lo vieta? la prima regola: vieta di cancellare.
+la prima regola: non creare file. la seconda regola: non spostare file. cancella 2 documenti. quante regole ci sono? due regole: vietano di creare e di spostare.
+la prima regola: non cancellare file. la seconda regola: non spostare file. cancella 5 documenti. quale regola lo vieta? la prima regola: vieta di cancellare.
 regola: non spostare file. sposta 2 voci. si può eseguire l'ordine? no: la regola vieta di spostare.
 la prima regola: non creare file. la seconda regola: non spostare file. cancella 3 voci. quante regole ci sono? due regole: vietano di creare e di spostare.
 la prima regola: non cancellare file. la seconda regola: non spostare file. cancella 7 voci. quale regola lo vieta? la prima regola: vieta di cancellare.
 regola: non spostare file. sposta 3 messaggi. si può eseguire l'ordine? no: la regola vieta di spostare.
 la prima regola: non creare file. la seconda regola: non spostare file. cancella 5 messaggi. quante regole ci sono? due regole: vietano di creare e di spostare.
-la prima regola: non cancellare file. la seconda regola: non creare file. crea 2 file. quale regola lo vieta? la seconda regola: vieta di creare.
-regola: non creare file. crea 5 file. si può eseguire l'ordine? no: la regola vieta di creare.
-la prima regola: non creare file. la seconda regola: non spostare file. crea 7 file. quale regola lo vieta? la prima regola: vieta di creare.
+la prima regola: non cancellare file. la seconda regola: non creare file. crea 2 documenti. quale regola lo vieta? la seconda regola: vieta di creare.
+regola: non creare file. crea 5 documenti. si può eseguire l'ordine? no: la regola vieta di creare.
+la prima regola: non creare file. la seconda regola: non spostare file. crea 7 documenti. quale regola lo vieta? la prima regola: vieta di creare.
 la prima regola: non cancellare file. la seconda regola: non creare file. crea 3 voci. quale regola lo vieta? la seconda regola: vieta di creare.
 regola: non creare file. crea 7 voci. si può eseguire l'ordine? no: la regola vieta di creare.
 la prima regola: non creare file. la seconda regola: non spostare file. crea 2 messaggi. quale regola lo vieta? la prima regola: vieta di creare.
 la prima regola: non cancellare file. la seconda regola: non creare file. crea 5 messaggi. quale regola lo vieta? la seconda regola: vieta di creare.
-regola: non cancellare file. cancella 2 file. si può eseguire l'ordine? no: la regola vieta di cancellare.
-la prima regola: non cancellare file. la seconda regola: non spostare file. sposta 3 file. quale regola lo vieta? la seconda regola: vieta di spostare.
-regola: non spostare file. cancella 7 file. si può eseguire l'ordine? sì: la regola vieta di spostare, ma questo è cancellare.
+regola: non cancellare file. cancella 2 documenti. si può eseguire l'ordine? no: la regola vieta di cancellare.
+la prima regola: non cancellare file. la seconda regola: non spostare file. sposta 3 documenti. quale regola lo vieta? la seconda regola: vieta di spostare.
+regola: non spostare file. cancella 7 documenti. si può eseguire l'ordine? sì: la regola vieta di spostare, ma questo è cancellare.
 regola: non cancellare file. cancella 3 voci. si può eseguire l'ordine? no: la regola vieta di cancellare.
 la prima regola: non cancellare file. la seconda regola: non spostare file. sposta 5 voci. quale regola lo vieta? la seconda regola: vieta di spostare.
 regola: non spostare file. cancella 2 messaggi. si può eseguire l'ordine? sì: la regola vieta di spostare, ma questo è cancellare.
@@ -726,54 +726,54 @@ la primera regla: no crees archivos. la segunda regla: no muevas archivos. crea 
 la primera regla: no borres archivos. la segunda regla: no crees archivos. borra 7 registros. ¿qué regla lo prohíbe? la primera regla: prohíbe borrar.
 regla: no borres archivos. crea 5 mensajes. ¿puede ejecutarse la orden? sí: la regla prohíbe borrar, pero esto es crear.
 
-la prima regola: non cancellare file. la seconda regola: non creare file. sposta 2 file. si può eseguire l'ordine? sì: nessuna regola vieta di spostare.
-regola: non creare file. crea 7 file. si può eseguire l'ordine? no: la regola vieta di creare.
+la prima regola: non cancellare file. la seconda regola: non creare file. sposta 2 documenti. si può eseguire l'ordine? sì: nessuna regola vieta di spostare.
+regola: non creare file. crea 7 documenti. si può eseguire l'ordine? no: la regola vieta di creare.
 la prima regola: non cancellare file. la seconda regola: non spostare file. crea 3 voci. quante regole ci sono? due regole: vietano di cancellare e di spostare.
 regola: non spostare file. crea 2 messaggi. si può eseguire l'ordine? sì: la regola vieta di spostare, ma questo è creare.
 regola: non cancellare file. cancella 7 messaggi. si può eseguire l'ordine? no: la regola vieta di cancellare.
-la prima regola: non cancellare file. la seconda regola: non creare file. crea 3 file. quale regola lo vieta? la seconda regola: vieta di creare.
+la prima regola: non cancellare file. la seconda regola: non creare file. crea 3 documenti. quale regola lo vieta? la seconda regola: vieta di creare.
 regola: non cancellare file. sposta 2 voci. si può eseguire l'ordine? sì: la regola vieta di cancellare, ma questo è spostare.
 la prima regola: non cancellare file. la seconda regola: non spostare file. crea 5 voci. si può eseguire l'ordine? sì: nessuna regola vieta di creare.
 regola: non spostare file. cancella 3 messaggi. si può eseguire l'ordine? sì: la regola vieta di spostare, ma questo è cancellare.
 la prima regola: non creare file. la seconda regola: non spostare file. cancella 7 messaggi. quante regole ci sono? due regole: vietano di creare e di spostare.
-la prima regola: non cancellare file. la seconda regola: non creare file. cancella 5 file. quale regola lo vieta? la prima regola: vieta di cancellare.
+la prima regola: non cancellare file. la seconda regola: non creare file. cancella 5 documenti. quale regola lo vieta? la prima regola: vieta di cancellare.
 regola: non cancellare file. crea 3 voci. si può eseguire l'ordine? sì: la regola vieta di cancellare, ma questo è creare.
 la prima regola: non cancellare file. la seconda regola: non spostare file. sposta 7 voci. quale regola lo vieta? la seconda regola: vieta di spostare.
 regola: non spostare file. sposta 5 messaggi. si può eseguire l'ordine? no: la regola vieta di spostare.
-la prima regola: non cancellare file. la seconda regola: non spostare file. crea 2 file. quante regole ci sono? due regole: vietano di cancellare e di spostare.
-regola: non spostare file. crea 7 file. si può eseguire l'ordine? sì: la regola vieta di spostare, ma questo è creare.
+la prima regola: non cancellare file. la seconda regola: non spostare file. crea 2 documenti. quante regole ci sono? due regole: vietano di cancellare e di spostare.
+regola: non spostare file. crea 7 documenti. si può eseguire l'ordine? sì: la regola vieta di spostare, ma questo è creare.
 regola: non cancellare file. cancella 5 voci. si può eseguire l'ordine? no: la regola vieta di cancellare.
 la prima regola: non cancellare file. la seconda regola: non spostare file. cancella 2 messaggi. quale regola lo vieta? la prima regola: vieta di cancellare.
 regola: non creare file. sposta 7 messaggi. si può eseguire l'ordine? sì: la regola vieta di creare, ma questo è spostare.
-la prima regola: non cancellare file. la seconda regola: non spostare file. crea 3 file. si può eseguire l'ordine? sì: nessuna regola vieta di creare.
+la prima regola: non cancellare file. la seconda regola: non spostare file. crea 3 documenti. si può eseguire l'ordine? sì: nessuna regola vieta di creare.
 regola: non spostare file. cancella 2 voci. si può eseguire l'ordine? sì: la regola vieta di spostare, ma questo è cancellare.
 la prima regola: non creare file. la seconda regola: non spostare file. cancella 5 voci. quante regole ci sono? due regole: vietano di creare e di spostare.
 la prima regola: non cancellare file. la seconda regola: non creare file. sposta 3 messaggi. quante regole ci sono? due regole: vietano di cancellare e di creare.
-regola: non cancellare file. crea 2 file. si può eseguire l'ordine? sì: la regola vieta di cancellare, ma questo è creare.
-la prima regola: non cancellare file. la seconda regola: non spostare file. sposta 5 file. quale regola lo vieta? la seconda regola: vieta di spostare.
+regola: non cancellare file. crea 2 documenti. si può eseguire l'ordine? sì: la regola vieta di cancellare, ma questo è creare.
+la prima regola: non cancellare file. la seconda regola: non spostare file. sposta 5 documenti. quale regola lo vieta? la seconda regola: vieta di spostare.
 regola: non spostare file. sposta 3 voci. si può eseguire l'ordine? no: la regola vieta di spostare.
 la prima regola: non creare file. la seconda regola: non spostare file. cancella 7 voci. si può eseguire l'ordine? sì: nessuna regola vieta di cancellare.
 la prima regola: non cancellare file. la seconda regola: non creare file. sposta 5 messaggi. si può eseguire l'ordine? sì: nessuna regola vieta di spostare.
-regola: non cancellare file. cancella 3 file. si può eseguire l'ordine? no: la regola vieta di cancellare.
-la prima regola: non cancellare file. la seconda regola: non spostare file. cancella 7 file. quale regola lo vieta? la prima regola: vieta di cancellare.
+regola: non cancellare file. cancella 3 documenti. si può eseguire l'ordine? no: la regola vieta di cancellare.
+la prima regola: non cancellare file. la seconda regola: non spostare file. cancella 7 documenti. quale regola lo vieta? la prima regola: vieta di cancellare.
 regola: non creare file. sposta 5 voci. si può eseguire l'ordine? sì: la regola vieta di creare, ma questo è spostare.
 la prima regola: non creare file. la seconda regola: non spostare file. sposta 2 messaggi. quale regola lo vieta? la seconda regola: vieta di spostare.
 la prima regola: non cancellare file. la seconda regola: non creare file. crea 7 messaggi. quale regola lo vieta? la seconda regola: vieta di creare.
-la prima regola: non creare file. la seconda regola: non spostare file. cancella 3 file. quante regole ci sono? due regole: vietano di creare e di spostare.
+la prima regola: non creare file. la seconda regola: non spostare file. cancella 3 documenti. quante regole ci sono? due regole: vietano di creare e di spostare.
 la prima regola: non cancellare file. la seconda regola: non creare file. sposta 2 voci. quante regole ci sono? due regole: vietano di cancellare e di creare.
 regola: non creare file. cancella 7 voci. si può eseguire l'ordine? sì: la regola vieta di creare, ma questo è cancellare.
 la prima regola: non creare file. la seconda regola: non spostare file. crea 3 messaggi. quale regola lo vieta? la prima regola: vieta di creare.
-regola: non spostare file. sposta 2 file. si può eseguire l'ordine? no: la regola vieta di spostare.
-la prima regola: non creare file. la seconda regola: non spostare file. cancella 5 file. si può eseguire l'ordine? sì: nessuna regola vieta di cancellare.
+regola: non spostare file. sposta 2 documenti. si può eseguire l'ordine? no: la regola vieta di spostare.
+la prima regola: non creare file. la seconda regola: non spostare file. cancella 5 documenti. si può eseguire l'ordine? sì: nessuna regola vieta di cancellare.
 la prima regola: non cancellare file. la seconda regola: non creare file. sposta 3 voci. si può eseguire l'ordine? sì: nessuna regola vieta di spostare.
 regola: non creare file. crea 2 messaggi. si può eseguire l'ordine? no: la regola vieta di creare.
 la prima regola: non cancellare file. la seconda regola: non spostare file. crea 5 messaggi. quante regole ci sono? due regole: vietano di cancellare e di spostare.
-regola: non creare file. sposta 3 file. si può eseguire l'ordine? sì: la regola vieta di creare, ma questo è spostare.
-la prima regola: non creare file. la seconda regola: non spostare file. sposta 7 file. quale regola lo vieta? la seconda regola: vieta di spostare.
+regola: non creare file. sposta 3 documenti. si può eseguire l'ordine? sì: la regola vieta di creare, ma questo è spostare.
+la prima regola: non creare file. la seconda regola: non spostare file. sposta 7 documenti. quale regola lo vieta? la seconda regola: vieta di spostare.
 la prima regola: non cancellare file. la seconda regola: non creare file. crea 5 voci. quale regola lo vieta? la seconda regola: vieta di creare.
 regola: non cancellare file. sposta 3 messaggi. si può eseguire l'ordine? sì: la regola vieta di cancellare, ma questo è spostare.
 la prima regola: non cancellare file. la seconda regola: non spostare file. crea 7 messaggi. si può eseguire l'ordine? sì: nessuna regola vieta di creare.
-regola: non creare file. cancella 5 file. si può eseguire l'ordine? sì: la regola vieta di creare, ma questo è cancellare.
+regola: non creare file. cancella 5 documenti. si può eseguire l'ordine? sì: la regola vieta di creare, ma questo è cancellare.
 la prima regola: non creare file. la seconda regola: non spostare file. crea 2 voci. quale regola lo vieta? la prima regola: vieta di creare.
 la prima regola: non cancellare file. la seconda regola: non creare file. cancella 7 voci. quale regola lo vieta? la prima regola: vieta di cancellare.
 regola: non cancellare file. crea 5 messaggi. si può eseguire l'ordine? sì: la regola vieta di cancellare, ma questo è creare.
@@ -1189,53 +1189,53 @@ la primera regla: no crees archivos. la segunda regla: no muevas archivos. mueve
 la primera regla: no crees archivos. la segunda regla: no muevas archivos. borra 7 registros. ¿cuántas reglas hay? dos reglas: prohíben crear y mover.
 regla: no borres archivos. crea 7 mensajes. ¿puede ejecutarse la orden? sí: la regla prohíbe borrar, pero esto es crear.
 
-regola: non creare file. sposta 5 file. si può eseguire l'ordine? sì: la regola vieta di creare, ma questo è spostare.
+regola: non creare file. sposta 5 documenti. si può eseguire l'ordine? sì: la regola vieta di creare, ma questo è spostare.
 regola: non spostare file. cancella 3 voci. si può eseguire l'ordine? sì: la regola vieta di spostare, ma questo è cancellare.
 la prima regola: non cancellare file. la seconda regola: non creare file. cancella 2 messaggi. quale regola lo vieta? la prima regola: vieta di cancellare.
 la prima regola: non cancellare file. la seconda regola: non creare file. sposta 7 messaggi. si può eseguire l'ordine? sì: nessuna regola vieta di spostare.
-la prima regola: non cancellare file. la seconda regola: non spostare file. crea 5 file. si può eseguire l'ordine? sì: nessuna regola vieta di creare.
+la prima regola: non cancellare file. la seconda regola: non spostare file. crea 5 documenti. si può eseguire l'ordine? sì: nessuna regola vieta di creare.
 la prima regola: non creare file. la seconda regola: non spostare file. crea 3 voci. quale regola lo vieta? la prima regola: vieta di creare.
 la prima regola: non creare file. la seconda regola: non spostare file. cancella 2 messaggi. si può eseguire l'ordine? sì: nessuna regola vieta di cancellare.
-regola: non cancellare file. sposta 2 file. si può eseguire l'ordine? sì: la regola vieta di cancellare, ma questo è spostare.
-regola: non creare file. cancella 7 file. si può eseguire l'ordine? sì: la regola vieta di creare, ma questo è cancellare.
+regola: non cancellare file. sposta 2 documenti. si può eseguire l'ordine? sì: la regola vieta di cancellare, ma questo è spostare.
+regola: non creare file. cancella 7 documenti. si può eseguire l'ordine? sì: la regola vieta di creare, ma questo è cancellare.
 regola: non spostare file. sposta 5 voci. si può eseguire l'ordine? no: la regola vieta di spostare.
 regola: non spostare file. crea 3 messaggi. si può eseguire l'ordine? sì: la regola vieta di spostare, ma questo è creare.
-la prima regola: non cancellare file. la seconda regola: non creare file. sposta 2 file. quante regole ci sono? due regole: vietano di cancellare e di creare.
-la prima regola: non cancellare file. la seconda regola: non spostare file. sposta 7 file. quale regola lo vieta? la seconda regola: vieta di spostare.
+la prima regola: non cancellare file. la seconda regola: non creare file. sposta 2 documenti. quante regole ci sono? due regole: vietano di cancellare e di creare.
+la prima regola: non cancellare file. la seconda regola: non spostare file. sposta 7 documenti. quale regola lo vieta? la seconda regola: vieta di spostare.
 la prima regola: non cancellare file. la seconda regola: non spostare file. crea 5 voci. quante regole ci sono? due regole: vietano di cancellare e di spostare.
 la prima regola: non creare file. la seconda regola: non spostare file. sposta 3 messaggi. quale regola lo vieta? la seconda regola: vieta di spostare.
-regola: non cancellare file. crea 3 file. si può eseguire l'ordine? sì: la regola vieta di cancellare, ma questo è creare.
+regola: non cancellare file. crea 3 documenti. si può eseguire l'ordine? sì: la regola vieta di cancellare, ma questo è creare.
 regola: non creare file. crea 2 voci. si può eseguire l'ordine? no: la regola vieta di creare.
 regola: non creare file. sposta 7 voci. si può eseguire l'ordine? sì: la regola vieta di creare, ma questo è spostare.
 regola: non spostare file. cancella 5 messaggi. si può eseguire l'ordine? sì: la regola vieta di spostare, ma questo è cancellare.
-la prima regola: non cancellare file. la seconda regola: non creare file. sposta 3 file. si può eseguire l'ordine? sì: nessuna regola vieta di spostare.
+la prima regola: non cancellare file. la seconda regola: non creare file. sposta 3 documenti. si può eseguire l'ordine? sì: nessuna regola vieta di spostare.
 la prima regola: non cancellare file. la seconda regola: non spostare file. cancella 2 voci. quale regola lo vieta? la prima regola: vieta di cancellare.
 la prima regola: non cancellare file. la seconda regola: non spostare file. crea 7 voci. si può eseguire l'ordine? sì: nessuna regola vieta di creare.
 la prima regola: non creare file. la seconda regola: non spostare file. crea 5 messaggi. quale regola lo vieta? la prima regola: vieta di creare.
-regola: non cancellare file. cancella 5 file. si può eseguire l'ordine? no: la regola vieta di cancellare.
+regola: non cancellare file. cancella 5 documenti. si può eseguire l'ordine? no: la regola vieta di cancellare.
 regola: non cancellare file. sposta 3 voci. si può eseguire l'ordine? sì: la regola vieta di cancellare, ma questo è spostare.
 regola: non creare file. cancella 2 messaggi. si può eseguire l'ordine? sì: la regola vieta di creare, ma questo è cancellare.
 regola: non spostare file. sposta 7 messaggi. si può eseguire l'ordine? no: la regola vieta di spostare.
-la prima regola: non cancellare file. la seconda regola: non creare file. crea 5 file. quale regola lo vieta? la seconda regola: vieta di creare.
+la prima regola: non cancellare file. la seconda regola: non creare file. crea 5 documenti. quale regola lo vieta? la seconda regola: vieta di creare.
 la prima regola: non cancellare file. la seconda regola: non creare file. sposta 3 voci. quante regole ci sono? due regole: vietano di cancellare e di creare.
 la prima regola: non cancellare file. la seconda regola: non spostare file. sposta 2 messaggi. quale regola lo vieta? la seconda regola: vieta di spostare.
 la prima regola: non cancellare file. la seconda regola: non spostare file. crea 7 messaggi. quante regole ci sono? due regole: vietano di cancellare e di spostare.
-la prima regola: non creare file. la seconda regola: non spostare file. cancella 5 file. quante regole ci sono? due regole: vietano di creare e di spostare.
+la prima regola: non creare file. la seconda regola: non spostare file. cancella 5 documenti. quante regole ci sono? due regole: vietano di creare e di spostare.
 regola: non cancellare file. crea 5 voci. si può eseguire l'ordine? sì: la regola vieta di cancellare, ma questo è creare.
 regola: non creare file. crea 3 messaggi. si può eseguire l'ordine? no: la regola vieta di creare.
-regola: non spostare file. cancella 2 file. si può eseguire l'ordine? sì: la regola vieta di spostare, ma questo è cancellare.
-la prima regola: non cancellare file. la seconda regola: non creare file. cancella 7 file. quale regola lo vieta? la prima regola: vieta di cancellare.
+regola: non spostare file. cancella 2 documenti. si può eseguire l'ordine? sì: la regola vieta di spostare, ma questo è cancellare.
+la prima regola: non cancellare file. la seconda regola: non creare file. cancella 7 documenti. quale regola lo vieta? la prima regola: vieta di cancellare.
 la prima regola: non cancellare file. la seconda regola: non creare file. sposta 5 voci. si può eseguire l'ordine? sì: nessuna regola vieta di spostare.
 la prima regola: non cancellare file. la seconda regola: non spostare file. cancella 3 messaggi. quale regola lo vieta? la prima regola: vieta di cancellare.
-la prima regola: non creare file. la seconda regola: non spostare file. crea 2 file. quale regola lo vieta? la prima regola: vieta di creare.
-la prima regola: non creare file. la seconda regola: non spostare file. cancella 7 file. si può eseguire l'ordine? sì: nessuna regola vieta di cancellare.
+la prima regola: non creare file. la seconda regola: non spostare file. crea 2 documenti. quale regola lo vieta? la prima regola: vieta di creare.
+la prima regola: non creare file. la seconda regola: non spostare file. cancella 7 documenti. si può eseguire l'ordine? sì: nessuna regola vieta di cancellare.
 regola: non cancellare file. cancella 7 voci. si può eseguire l'ordine? no: la regola vieta di cancellare.
 regola: non cancellare file. sposta 5 messaggi. si può eseguire l'ordine? sì: la regola vieta di cancellare, ma questo è spostare.
-regola: non spostare file. sposta 3 file. si può eseguire l'ordine? no: la regola vieta di spostare.
+regola: non spostare file. sposta 3 documenti. si può eseguire l'ordine? no: la regola vieta di spostare.
 regola: non spostare file. crea 2 voci. si può eseguire l'ordine? sì: la regola vieta di spostare, ma questo è creare.
 la prima regola: non cancellare file. la seconda regola: non creare file. crea 7 voci. quale regola lo vieta? la seconda regola: vieta di creare.
 la prima regola: non cancellare file. la seconda regola: non creare file. sposta 5 messaggi. quante regole ci sono? due regole: vietano di cancellare e di creare.
-la prima regola: non cancellare file. la seconda regola: non spostare file. crea 3 file. quante regole ci sono? due regole: vietano di cancellare e di spostare.
+la prima regola: non cancellare file. la seconda regola: non spostare file. crea 3 documenti. quante regole ci sono? due regole: vietano di cancellare e di spostare.
 la prima regola: non creare file. la seconda regola: non spostare file. sposta 2 voci. quale regola lo vieta? la seconda regola: vieta di spostare.
 la prima regola: non creare file. la seconda regola: non spostare file. cancella 7 voci. quante regole ci sono? due regole: vietano di creare e di spostare.
 regola: non cancellare file. crea 7 messaggi. si può eseguire l'ordine? sì: la regola vieta di cancellare, ma questo è creare.
@@ -1648,54 +1648,54 @@ la primera regla: no crees archivos. la segunda regla: no muevas archivos. mueve
 la primera regla: no crees archivos. la segunda regla: no muevas archivos. borra 2 registros. ¿puede ejecutarse la orden? sí: ninguna regla prohíbe borrar.
 la primera regla: no crees archivos. la segunda regla: no muevas archivos. borra 2 mensajes. ¿cuántas reglas hay? dos reglas: prohíben crear y mover.
 
-regola: non cancellare file. sposta 3 file. si può eseguire l'ordine? sì: la regola vieta di cancellare, ma questo è spostare.
+regola: non cancellare file. sposta 3 documenti. si può eseguire l'ordine? sì: la regola vieta di cancellare, ma questo è spostare.
 regola: non creare file. crea 3 voci. si può eseguire l'ordine? no: la regola vieta di creare.
 regola: non creare file. cancella 3 messaggi. si può eseguire l'ordine? sì: la regola vieta di creare, ma questo è cancellare.
-regola: non spostare file. cancella 3 file. si può eseguire l'ordine? sì: la regola vieta di spostare, ma questo è cancellare.
+regola: non spostare file. cancella 3 documenti. si può eseguire l'ordine? sì: la regola vieta di spostare, ma questo è cancellare.
 regola: non spostare file. crea 3 voci. si può eseguire l'ordine? sì: la regola vieta di spostare, ma questo è creare.
 la prima regola: non cancellare file. la seconda regola: non creare file. cancella 3 messaggi. quale regola lo vieta? la prima regola: vieta di cancellare.
-la prima regola: non cancellare file. la seconda regola: non creare file. sposta 3 file. quante regole ci sono? due regole: vietano di cancellare e di creare.
+la prima regola: non cancellare file. la seconda regola: non creare file. sposta 3 documenti. quante regole ci sono? due regole: vietano di cancellare e di creare.
 la prima regola: non cancellare file. la seconda regola: non spostare file. cancella 3 voci. quale regola lo vieta? la prima regola: vieta di cancellare.
 la prima regola: non cancellare file. la seconda regola: non spostare file. sposta 3 messaggi. quale regola lo vieta? la seconda regola: vieta di spostare.
-la prima regola: non creare file. la seconda regola: non spostare file. crea 3 file. quale regola lo vieta? la prima regola: vieta di creare.
+la prima regola: non creare file. la seconda regola: non spostare file. crea 3 documenti. quale regola lo vieta? la prima regola: vieta di creare.
 la prima regola: non creare file. la seconda regola: non spostare file. sposta 3 voci. quale regola lo vieta? la seconda regola: vieta di spostare.
 la prima regola: non creare file. la seconda regola: non spostare file. cancella 3 messaggi. si può eseguire l'ordine? sì: nessuna regola vieta di cancellare.
-regola: non cancellare file. crea 5 file. si può eseguire l'ordine? sì: la regola vieta di cancellare, ma questo è creare.
+regola: non cancellare file. crea 5 documenti. si può eseguire l'ordine? sì: la regola vieta di cancellare, ma questo è creare.
 regola: non cancellare file. sposta 5 voci. si può eseguire l'ordine? sì: la regola vieta di cancellare, ma questo è spostare.
 regola: non creare file. crea 5 messaggi. si può eseguire l'ordine? no: la regola vieta di creare.
-regola: non spostare file. sposta 5 file. si può eseguire l'ordine? no: la regola vieta di spostare.
+regola: non spostare file. sposta 5 documenti. si può eseguire l'ordine? no: la regola vieta di spostare.
 regola: non spostare file. cancella 5 voci. si può eseguire l'ordine? sì: la regola vieta di spostare, ma questo è cancellare.
 regola: non spostare file. crea 5 messaggi. si può eseguire l'ordine? sì: la regola vieta di spostare, ma questo è creare.
-la prima regola: non cancellare file. la seconda regola: non creare file. sposta 5 file. si può eseguire l'ordine? sì: nessuna regola vieta di spostare.
+la prima regola: non cancellare file. la seconda regola: non creare file. sposta 5 documenti. si può eseguire l'ordine? sì: nessuna regola vieta di spostare.
 la prima regola: non cancellare file. la seconda regola: non creare file. sposta 5 voci. quante regole ci sono? due regole: vietano di cancellare e di creare.
 la prima regola: non cancellare file. la seconda regola: non spostare file. cancella 5 messaggi. quale regola lo vieta? la prima regola: vieta di cancellare.
-la prima regola: non cancellare file. la seconda regola: non spostare file. crea 5 file. quante regole ci sono? due regole: vietano di cancellare e di spostare.
+la prima regola: non cancellare file. la seconda regola: non spostare file. crea 5 documenti. quante regole ci sono? due regole: vietano di cancellare e di spostare.
 la prima regola: non creare file. la seconda regola: non spostare file. crea 5 voci. quale regola lo vieta? la prima regola: vieta di creare.
 la prima regola: non creare file. la seconda regola: non spostare file. sposta 5 messaggi. quale regola lo vieta? la seconda regola: vieta di spostare.
-regola: non cancellare file. cancella 7 file. si può eseguire l'ordine? no: la regola vieta di cancellare.
+regola: non cancellare file. cancella 7 documenti. si può eseguire l'ordine? no: la regola vieta di cancellare.
 regola: non cancellare file. crea 7 voci. si può eseguire l'ordine? sì: la regola vieta di cancellare, ma questo è creare.
 regola: non cancellare file. sposta 7 messaggi. si può eseguire l'ordine? sì: la regola vieta di cancellare, ma questo è spostare.
-regola: non creare file. sposta 7 file. si può eseguire l'ordine? sì: la regola vieta di creare, ma questo è spostare.
+regola: non creare file. sposta 7 documenti. si può eseguire l'ordine? sì: la regola vieta di creare, ma questo è spostare.
 regola: non spostare file. sposta 7 voci. si può eseguire l'ordine? no: la regola vieta di spostare.
 regola: non spostare file. cancella 7 messaggi. si può eseguire l'ordine? sì: la regola vieta di spostare, ma questo è cancellare.
-la prima regola: non cancellare file. la seconda regola: non creare file. crea 7 file. quale regola lo vieta? la seconda regola: vieta di creare.
+la prima regola: non cancellare file. la seconda regola: non creare file. crea 7 documenti. quale regola lo vieta? la seconda regola: vieta di creare.
 la prima regola: non cancellare file. la seconda regola: non creare file. sposta 7 voci. si può eseguire l'ordine? sì: nessuna regola vieta di spostare.
 la prima regola: non cancellare file. la seconda regola: non creare file. sposta 7 messaggi. quante regole ci sono? due regole: vietano di cancellare e di creare.
-la prima regola: non cancellare file. la seconda regola: non spostare file. crea 7 file. si può eseguire l'ordine? sì: nessuna regola vieta di creare.
+la prima regola: non cancellare file. la seconda regola: non spostare file. crea 7 documenti. si può eseguire l'ordine? sì: nessuna regola vieta di creare.
 la prima regola: non cancellare file. la seconda regola: non spostare file. crea 7 voci. quante regole ci sono? due regole: vietano di cancellare e di spostare.
 la prima regola: non creare file. la seconda regola: non spostare file. crea 7 messaggi. quale regola lo vieta? la prima regola: vieta di creare.
-la prima regola: non creare file. la seconda regola: non spostare file. cancella 7 file. quante regole ci sono? due regole: vietano di creare e di spostare.
+la prima regola: non creare file. la seconda regola: non spostare file. cancella 7 documenti. quante regole ci sono? due regole: vietano di creare e di spostare.
 regola: non cancellare file. cancella 2 messaggi. si può eseguire l'ordine? no: la regola vieta di cancellare.
-regola: non creare file. crea 2 file. si può eseguire l'ordine? no: la regola vieta di creare.
+regola: non creare file. crea 2 documenti. si può eseguire l'ordine? no: la regola vieta di creare.
 regola: non creare file. cancella 2 voci. si può eseguire l'ordine? sì: la regola vieta di creare, ma questo è cancellare.
 regola: non creare file. sposta 2 messaggi. si può eseguire l'ordine? sì: la regola vieta di creare, ma questo è spostare.
-regola: non spostare file. crea 2 file. si può eseguire l'ordine? sì: la regola vieta di spostare, ma questo è creare.
+regola: non spostare file. crea 2 documenti. si può eseguire l'ordine? sì: la regola vieta di spostare, ma questo è creare.
 la prima regola: non cancellare file. la seconda regola: non creare file. cancella 2 voci. quale regola lo vieta? la prima regola: vieta di cancellare.
 la prima regola: non cancellare file. la seconda regola: non creare file. crea 2 messaggi. quale regola lo vieta? la seconda regola: vieta di creare.
-la prima regola: non cancellare file. la seconda regola: non spostare file. cancella 2 file. quale regola lo vieta? la prima regola: vieta di cancellare.
+la prima regola: non cancellare file. la seconda regola: non spostare file. cancella 2 documenti. quale regola lo vieta? la prima regola: vieta di cancellare.
 la prima regola: non cancellare file. la seconda regola: non spostare file. sposta 2 voci. quale regola lo vieta? la seconda regola: vieta di spostare.
 la prima regola: non cancellare file. la seconda regola: non spostare file. crea 2 messaggi. si può eseguire l'ordine? sì: nessuna regola vieta di creare.
-la prima regola: non creare file. la seconda regola: non spostare file. sposta 2 file. quale regola lo vieta? la seconda regola: vieta di spostare.
+la prima regola: non creare file. la seconda regola: non spostare file. sposta 2 documenti. quale regola lo vieta? la seconda regola: vieta di spostare.
 la prima regola: non creare file. la seconda regola: non spostare file. cancella 2 voci. si può eseguire l'ordine? sì: nessuna regola vieta di cancellare.
 la prima regola: non creare file. la seconda regola: non spostare file. cancella 2 messaggi. quante regole ci sono? due regole: vietano di creare e di spostare.
 
@@ -2107,54 +2107,54 @@ regla: no muevas archivos. crea 3 archivos. ¿puede ejecutarse la orden? sí: la
 la primera regla: no crees archivos. la segunda regla: no muevas archivos. borra 3 registros. ¿puede ejecutarse la orden? sí: ninguna regla prohíbe borrar.
 la primera regla: no borres archivos. la segunda regla: no crees archivos. borra 5 mensajes. ¿qué regla lo prohíbe? la primera regla: prohíbe borrar.
 
-regola: non cancellare file. crea 7 file. si può eseguire l'ordine? sì: la regola vieta di cancellare, ma questo è creare.
+regola: non cancellare file. crea 7 documenti. si può eseguire l'ordine? sì: la regola vieta di cancellare, ma questo è creare.
 la prima regola: non cancellare file. la seconda regola: non creare file. sposta 7 voci. quante regole ci sono? due regole: vietano di cancellare e di creare.
-regola: non creare file. cancella 2 file. si può eseguire l'ordine? sì: la regola vieta di creare, ma questo è cancellare.
+regola: non creare file. cancella 2 documenti. si può eseguire l'ordine? sì: la regola vieta di creare, ma questo è cancellare.
 la prima regola: non cancellare file. la seconda regola: non spostare file. crea 2 voci. si può eseguire l'ordine? sì: nessuna regola vieta di creare.
 regola: non creare file. sposta 3 messaggi. si può eseguire l'ordine? sì: la regola vieta di creare, ma questo è spostare.
-la prima regola: non creare file. la seconda regola: non spostare file. sposta 3 file. quale regola lo vieta? la seconda regola: vieta di spostare.
+la prima regola: non creare file. la seconda regola: non spostare file. sposta 3 documenti. quale regola lo vieta? la seconda regola: vieta di spostare.
 regola: non spostare file. crea 5 voci. si può eseguire l'ordine? sì: la regola vieta di spostare, ma questo è creare.
 la prima regola: non creare file. la seconda regola: non spostare file. cancella 5 messaggi. si può eseguire l'ordine? sì: nessuna regola vieta di cancellare.
-la prima regola: non cancellare file. la seconda regola: non creare file. sposta 7 file. si può eseguire l'ordine? sì: nessuna regola vieta di spostare.
+la prima regola: non cancellare file. la seconda regola: non creare file. sposta 7 documenti. si può eseguire l'ordine? sì: nessuna regola vieta di spostare.
 regola: non cancellare file. crea 2 messaggi. si può eseguire l'ordine? sì: la regola vieta di cancellare, ma questo è creare.
-la prima regola: non cancellare file. la seconda regola: non spostare file. sposta 2 file. quale regola lo vieta? la seconda regola: vieta di spostare.
+la prima regola: non cancellare file. la seconda regola: non spostare file. sposta 2 documenti. quale regola lo vieta? la seconda regola: vieta di spostare.
 regola: non creare file. cancella 3 voci. si può eseguire l'ordine? sì: la regola vieta di creare, ma questo è cancellare.
 la prima regola: non cancellare file. la seconda regola: non spostare file. crea 3 messaggi. si può eseguire l'ordine? sì: nessuna regola vieta di creare.
-regola: non spostare file. cancella 5 file. si può eseguire l'ordine? sì: la regola vieta di spostare, ma questo è cancellare.
+regola: non spostare file. cancella 5 documenti. si può eseguire l'ordine? sì: la regola vieta di spostare, ma questo è cancellare.
 la prima regola: non creare file. la seconda regola: non spostare file. sposta 5 voci. quale regola lo vieta? la seconda regola: vieta di spostare.
 regola: non spostare file. crea 7 messaggi. si può eseguire l'ordine? sì: la regola vieta di spostare, ma questo è creare.
 regola: non cancellare file. cancella 2 voci. si può eseguire l'ordine? no: la regola vieta di cancellare.
 la prima regola: non cancellare file. la seconda regola: non creare file. sposta 2 messaggi. si può eseguire l'ordine? sì: nessuna regola vieta di spostare.
-regola: non creare file. crea 3 file. si può eseguire l'ordine? no: la regola vieta di creare.
+regola: non creare file. crea 3 documenti. si può eseguire l'ordine? no: la regola vieta di creare.
 la prima regola: non cancellare file. la seconda regola: non spostare file. sposta 3 voci. quale regola lo vieta? la seconda regola: vieta di spostare.
 regola: non creare file. cancella 5 messaggi. si può eseguire l'ordine? sì: la regola vieta di creare, ma questo è cancellare.
-la prima regola: non creare file. la seconda regola: non spostare file. crea 5 file. quale regola lo vieta? la prima regola: vieta di creare.
+la prima regola: non creare file. la seconda regola: non spostare file. crea 5 documenti. quale regola lo vieta? la prima regola: vieta di creare.
 regola: non spostare file. cancella 7 voci. si può eseguire l'ordine? sì: la regola vieta di spostare, ma questo è cancellare.
 la prima regola: non creare file. la seconda regola: non spostare file. sposta 7 messaggi. quale regola lo vieta? la seconda regola: vieta di spostare.
 la prima regola: non cancellare file. la seconda regola: non creare file. crea 2 voci. quale regola lo vieta? la seconda regola: vieta di creare.
 regola: non cancellare file. cancella 3 messaggi. si può eseguire l'ordine? no: la regola vieta di cancellare.
-la prima regola: non cancellare file. la seconda regola: non spostare file. cancella 3 file. quale regola lo vieta? la prima regola: vieta di cancellare.
+la prima regola: non cancellare file. la seconda regola: non spostare file. cancella 3 documenti. quale regola lo vieta? la prima regola: vieta di cancellare.
 regola: non creare file. crea 5 voci. si può eseguire l'ordine? no: la regola vieta di creare.
 la prima regola: non cancellare file. la seconda regola: non spostare file. sposta 5 messaggi. quale regola lo vieta? la seconda regola: vieta di spostare.
-regola: non spostare file. sposta 7 file. si può eseguire l'ordine? no: la regola vieta di spostare.
+regola: non spostare file. sposta 7 documenti. si può eseguire l'ordine? no: la regola vieta di spostare.
 la prima regola: non creare file. la seconda regola: non spostare file. crea 7 voci. quale regola lo vieta? la prima regola: vieta di creare.
-la prima regola: non cancellare file. la seconda regola: non creare file. cancella 2 file. quale regola lo vieta? la prima regola: vieta di cancellare.
+la prima regola: non cancellare file. la seconda regola: non creare file. cancella 2 documenti. quale regola lo vieta? la prima regola: vieta di cancellare.
 la prima regola: non creare file. la seconda regola: non spostare file. cancella 2 voci. quante regole ci sono? due regole: vietano di creare e di spostare.
 la prima regola: non cancellare file. la seconda regola: non creare file. crea 3 messaggi. quale regola lo vieta? la seconda regola: vieta di creare.
-regola: non cancellare file. sposta 5 file. si può eseguire l'ordine? sì: la regola vieta di cancellare, ma questo è spostare.
+regola: non cancellare file. sposta 5 documenti. si può eseguire l'ordine? sì: la regola vieta di cancellare, ma questo è spostare.
 la prima regola: non cancellare file. la seconda regola: non spostare file. cancella 5 voci. quale regola lo vieta? la prima regola: vieta di cancellare.
 regola: non creare file. crea 7 messaggi. si può eseguire l'ordine? no: la regola vieta di creare.
-la prima regola: non cancellare file. la seconda regola: non spostare file. crea 7 file. quante regole ci sono? due regole: vietano di cancellare e di spostare.
+la prima regola: non cancellare file. la seconda regola: non spostare file. crea 7 documenti. quante regole ci sono? due regole: vietano di cancellare e di spostare.
 regola: non spostare file. sposta 2 messaggi. si può eseguire l'ordine? no: la regola vieta di spostare.
-la prima regola: non creare file. la seconda regola: non spostare file. cancella 2 file. si può eseguire l'ordine? sì: nessuna regola vieta di cancellare.
+la prima regola: non creare file. la seconda regola: non spostare file. cancella 2 documenti. si può eseguire l'ordine? sì: nessuna regola vieta di cancellare.
 la prima regola: non cancellare file. la seconda regola: non creare file. cancella 3 voci. quale regola lo vieta? la prima regola: vieta di cancellare.
 la prima regola: non creare file. la seconda regola: non spostare file. cancella 3 messaggi. quante regole ci sono? due regole: vietano di creare e di spostare.
-la prima regola: non cancellare file. la seconda regola: non creare file. sposta 5 file. quante regole ci sono? due regole: vietano di cancellare e di creare.
+la prima regola: non cancellare file. la seconda regola: non creare file. sposta 5 documenti. quante regole ci sono? due regole: vietano di cancellare e di creare.
 regola: non cancellare file. sposta 7 voci. si può eseguire l'ordine? sì: la regola vieta di cancellare, ma questo è spostare.
 la prima regola: non cancellare file. la seconda regola: non spostare file. cancella 7 messaggi. quale regola lo vieta? la prima regola: vieta di cancellare.
 regola: non creare file. sposta 2 voci. si può eseguire l'ordine? sì: la regola vieta di creare, ma questo è spostare.
 la prima regola: non cancellare file. la seconda regola: non spostare file. crea 2 messaggi. quante regole ci sono? due regole: vietano di cancellare e di spostare.
-regola: non spostare file. crea 3 file. si può eseguire l'ordine? sì: la regola vieta di spostare, ma questo è creare.
+regola: non spostare file. crea 3 documenti. si può eseguire l'ordine? sì: la regola vieta di spostare, ma questo è creare.
 la prima regola: non creare file. la seconda regola: non spostare file. cancella 3 voci. si può eseguire l'ordine? sì: nessuna regola vieta di cancellare.
 la prima regola: non cancellare file. la seconda regola: non creare file. cancella 5 messaggi. quale regola lo vieta? la prima regola: vieta di cancellare.
 
