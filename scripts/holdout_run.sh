@@ -21,7 +21,14 @@ for side in lex pos schema; do
   [ -f "$STATE.$side" ] || { echo "ВОРОТА ЧИТАТЕЛЯ ОТКАЗ: у состояния нет сайдкара .$side"; exit 2; }
 done
 mkdir -p "$OUT"
-if [ "$N" -gt 0 ]; then head -n "$N" "$KEY" > "$OUT/key.tsv"; else cp "$KEY" "$OUT/key.tsv"; fi
+# N ВОПРОСОВ БЕРУТСЯ С ШАГОМ ПО ВСЕМУ КЛЮЧУ, А НЕ С НАЧАЛА: ключ упорядочен по языкам и домам,
+# и первые N строк были бы одним языком (проба 05.09: 60 первых = 60 английских)
+if [ "$N" -gt 0 ]; then
+  TOTAL=$(wc -l < "$KEY" | tr -d ' ')
+  awk -v n="$N" -v total="$TOTAL" 'BEGIN { step = (total > n) ? total / n : 1 } { if (int((NR - 1) / step) != int((NR - 2) / step) || NR == 1) print }' "$KEY" | head -n "$N" > "$OUT/key.tsv"
+else
+  cp "$KEY" "$OUT/key.tsv"
+fi
 cut -f2 "$OUT/key.tsv" > "$OUT/questions.txt"
 CLONE="$OUT/reader.state"
 if [ ! -f "$CLONE" ]; then
