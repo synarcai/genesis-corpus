@@ -351,6 +351,8 @@ import re
                пары=((("eine Woche", "Tage", "Tage"), 7), (("ein Jahr", "Monate", "Monate"), 12), (("ein Tag", "Stunden", "Stunden"), 24),
                      (("eine Stunde", "Minuten", "Minuten"), 60), (("eine Minute", "Sekunden", "Sekunden"), 60))),
     "fr": dict(в="{б} a {n} {м}.", воп="{б} a {n} {м}. combien de {мв} a {б} ? {n} {м}.",
+               # вторая поверхность (полоса BESEDA-2): «combien de jours y a-t-il dans une semaine ?»
+               воп2="{б} a {n} {м}. combien de {мв} y a-t-il dans {б} ? {n} {м}.",
                пары=((("une semaine", "jours", "jours"), 7), (("une année", "mois", "mois"), 12), (("un jour", "heures", "heures"), 24),
                      (("une heure", "minutes", "minutes"), 60), (("une minute", "secondes", "secondes"), 60))),
     "es": dict(в="{б} tiene {n} {м}.", воп="{б} tiene {n} {м}. ¿cuántos {мв} tiene {б}? {n} {м}.",
