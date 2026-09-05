@@ -207,7 +207,11 @@ def _ключ(путь):
 
 
 def _ответы(путь):
+    """reply_id → certified answer; and reply_id → the reader's own reason for silence
+    (holon's atlas, 05.09: a mute class is language × REASON × head — «nominal»,
+    «session-recall», «not_mine», … — the reason is the reader's word, read from its JSON)."""
     вон, json_есть = {}, False
+    ПРИЧИНЫ.clear()
     with open(путь, encoding="utf-8", errors="replace") as f:
         for л in f:
             if not л.startswith("{"):
@@ -218,9 +222,16 @@ def _ответы(путь):
                 continue
             json_есть = True
             c = j.get("compute")
-            if isinstance(c, dict) and c.get("verdict") == "certified" and j.get("reply_id") is not None:
-                вон[int(j["reply_id"])] = str(c.get("answer", ""))
+            if isinstance(c, dict) and j.get("reply_id") is not None:
+                if c.get("verdict") == "certified":
+                    вон[int(j["reply_id"])] = str(c.get("answer", ""))
+                else:
+                    причина = c.get("why") or (c.get("declined") or [c.get("verdict", "?")])[0]
+                    ПРИЧИНЫ[int(j["reply_id"])] = str(причина).split(":")[0]
     return вон, json_есть
+
+
+ПРИЧИНЫ = {}
 
 
 def _вердикт(строки, классов, метка, секунд=None):
@@ -236,7 +247,7 @@ def _вердикт(строки, классов, метка, секунд=None)
             if len(лжи) < 20:
                 лжи.append(f"{я} {в[:80]} → {ответ[:40]} · надо {о[:40]}")
         else:
-            немые[(я, голова(в))] += 1
+            немые[(я, (ответ or "—"), голова(в))] += 1
     немых = sum(1 for с in строки if с[3] == "немо")
     поза = "PASS" if лжей <= ЛЖИ_РУБЕЖ else "FAIL"
     print(f"СВОД СПРАШИВАЕТ СЕБЯ {поза} [{метка}]: сертифицировано {верных + лжей} из {len(строки)}, "
@@ -247,9 +258,9 @@ def _вердикт(строки, классов, метка, секунд=None)
         f"[{г}] {по_глубине[г]['верно']}/{по_глубине[г]['ложь']}/{по_глубине[г]['немо']}" for г in ("0", "1", "2+")))
     for л in лжи:
         print(f"  ЛОЖЬ {л}")
-    print(f"  немые классы (язык · голова · вопросов), крупнейшие {классов}:")
-    for (я, г), к in немые.most_common(классов):
-        print(f"    {я} · {г} · {к}")
+    print(f"  немые классы (язык · причина читателя · голова · вопросов), крупнейшие {классов}:")
+    for (я, пр, г), к in немые.most_common(классов):
+        print(f"    {я} · {пр} · {г} · {к}")
     return 0 if поза == "PASS" else 1
 
 
@@ -268,7 +279,7 @@ def judge(ключ, прогон, классов=12, метка="sweep", куд�
         if i in ответы:
             строки.append((я, в, о, "верно" if верно(о, ответы[i]) else "ложь", ответы[i]))
         else:
-            строки.append((я, в, о, "немо", ""))
+            строки.append((я, в, о, "немо", ПРИЧИНЫ.get(i, "")))
     куда = pathlib.Path(куда) if куда else ПОСЛЕДНИЙ
     куда.parent.mkdir(parents=True, exist_ok=True)
     куда.write_text(f"# метка\t{метка}\n# секунд\t{секунд or ''}\n" + "".join(

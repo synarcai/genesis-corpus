@@ -31,6 +31,11 @@ CLONE="$OUT/reader.state"
 if [ ! -f "$CLONE" ]; then
   ozar clone --base "$STATE" --state "$CLONE" > "$OUT/clone.log" 2>&1 || { echo "ВОРОТА МИРА ОТКАЗ: клон не удался"; exit 2; }
 fi
+# СОСТОЯНИЕ ЕСТЬ ФАЙЛ С САЙДКАРАМИ (.lex .pos .schema): состояние без них читатель открывает
+# и отвечает всему «not_mine: session-recall» (05.09 — симлинк на один файл вместо клона)
+for side in lex pos schema; do
+  [ -f "$CLONE.$side" ] || { echo "ВОРОТА МИРА ОТКАЗ: у состояния нет сайдкара .$side — клонируйте ozar clone, не копируйте один файл"; exit 2; }
+done
 "$OZAR_CORE" 250 0 --state "$CLONE" --pipe --no-ask < "$OUT/sweep_q.txt" > "$OUT/run.out" 2> "$OUT/run.err"
 echo "RUN EXIT $?"
 python3 scripts/sweep_self.py judge "$OUT/sweep_key.tsv" "$OUT/run.out" --классов 12 \
