@@ -55,7 +55,7 @@ def _числительные(язык):
 # ТАБЛИЦА УМНОЖЕНИЯ СЛОВАМИ: маленькая, вся в пределах объявленных числительных
 ТАБЛИЦА = ((2, 2), (2, 3), (3, 3), (2, 4), (3, 4), (2, 5))
 
-ФОРМЫ = ("почему", "почему_голый", "а_у", "а_если", "наоборот", "наоборот2", "а_союз", "повтори", "объясни", "объясни2", "счёт_да", "что_дальше", "правда", "неправда", "переспрос", "согласен")
+ФОРМЫ = ("почему", "почему_голый", "а_у", "а_если", "наоборот", "наоборот2", "а_союз", "повтори", "объясни", "объясни2", "объясни3", "счёт_да", "что_дальше", "правда", "неправда", "сказал_что", "переспрос", "согласен")
 
 ЯЗЫКИ = {
     "en": dict(
@@ -66,6 +66,8 @@ def _числительные(язык):
         наоборот="{X} has {n} {Тn}, {Y} has {m} {Тm}. what if it were the other way round? then {X} would have {m} {Тm} and {Y} would have {n} {Тn}.",
         повтори="say that again, please. i repeat: {X} has {n} {Тn}.",
         объясни="i do not understand, explain. i explain: {X} had {n}, gave away {k}, and has {r} left: {л}",
+        объясни3="i did not understand, explain it again. i explain again: {X} had {n}, gave away {k}, and has {r} left: {л}",
+        сказал_что="you said that {X} has {м} {Тм}. is that right? no, {X} has {n} {Тn}.",
         а_союз="and {Y}? {Y} has {m} {Тm}.",
         # ВТОРАЯ ПОВЕРХНОСТЬ ЖИЛА ТОЛЬКО ПО-АНГЛИЙСКИ, и это нашёл прибор
         # щербатости (форма × язык): «объясни2» и «наоборот2» стояли на одном
@@ -96,6 +98,8 @@ def _числительные(язык):
         наоборот="у {Xр} {n} {Тn}, у {Yр} {m} {Тm}. а если наоборот? тогда у {Xр} {m} {Тm}, а у {Yр} {n} {Тn}.",
         повтори="повтори, пожалуйста. повторяю: у {Xр} {n} {Тn}.",
         объясни="я не понял, объясни. объясняю: было {n}, отдано {k}, осталось {r}: {л}",
+        объясни3="я не понял, объясни ещё раз. объясняю ещё раз: было {n}, отдано {k}, осталось {r}: {л}",
+        сказал_что="ты сказал, что у {Xр} {м} {Тм}. это верно? нет, у {Xр} {n} {Тn}.",
         а_союз="а у {Yр}? у {Yр} {m} {Тm}.",
         счёт_да="правда ли, что {A}жды {B} — {C}? да, {A}жды {B} — {C}: {a} × {b} = {c}.",
         # ВТОРАЯ ПОВЕРХНОСТЬ ТОЙ ЖЕ ФОРМЫ — БЕЗ СВЯЗОЧНОГО ТИРЕ. Полоса беседы
@@ -127,6 +131,8 @@ def _числительные(язык):
         наоборот="{X} hat {n} {Тn}, {Y} hat {m} {Тm}. und wenn es umgekehrt wäre? dann hätte {X} {m} {Тm} und {Y} {n} {Тn}.",
         повтори="sag das bitte noch einmal. ich wiederhole: {X} hat {n} {Тn}.",
         объясни="ich habe es nicht verstanden, erkläre es. ich erkläre: es waren {n}, {k} wurden weggegeben, es bleiben {r}: {л}",
+        объясни3="ich habe es nicht verstanden, erkläre es noch einmal. ich erkläre noch einmal: es waren {n}, {k} wurden weggegeben, es bleiben {r}: {л}",
+        сказал_что="du hast gesagt, dass {X} {м} {Тм} hat. stimmt das? nein, {X} hat {n} {Тn}.",
         а_союз="und {Y}? {Y} hat {m} {Тm}.",
         счёт_да="stimmt es, dass {A} mal {B} {C} ist? ja, {A} mal {B} ist {C}: {a} × {b} = {c}.",
         почему="warum hat {X} {r} {Тr}? weil {X} {n} hatte und {k} weggab: {л}",
@@ -147,6 +153,8 @@ def _числительные(язык):
         наоборот="{X} tiene {n} {Тn}, {Y} tiene {m} {Тm}. ¿y si fuera al revés? entonces {X} tendría {m} {Тm} y {Y} tendría {n} {Тn}.",
         повтори="repite, por favor. repito: {X} tiene {n} {Тn}.",
         объясни="no lo he entendido, explícalo. explico: había {n}, se dieron {k}, quedan {r}: {л}",
+        объясни3="no lo he entendido, explícalo otra vez. explico otra vez: había {n}, se dieron {k}, quedan {r}: {л}",
+        сказал_что="dijiste que {X} tiene {м} {Тм}. ¿es cierto? no, {X} tiene {n} {Тn}.",
         а_союз="¿y {Y}? {Y} tiene {m} {Тm}.",
         счёт_да="¿es verdad que {A} por {B} es {C}? sí, {A} por {B} es {C}: {a} × {b} = {c}.",
         почему="¿por qué {X} tiene {r} {Тr}? porque {X} tenía {n} y dio {k}: {л}",
@@ -167,6 +175,8 @@ def _числительные(язык):
         наоборот="{X} a {n} {Тn}, {Y} a {m} {Тm}. et si c'était l'inverse ? alors {X} aurait {m} {Тm} et {Y} aurait {n} {Тn}.",
         повтори="répète, s'il te plaît. je répète : {X} a {n} {Тn}.",
         объясни="je n'ai pas compris, explique. j'explique : il y en avait {n}, {k} ont été donnés, il en reste {r} : {л}",
+        объясни3="je n'ai pas compris, explique encore une fois. j'explique encore une fois : il y en avait {n}, {k} ont été donnés, il en reste {r} : {л}",
+        сказал_что="tu as dit que {X} a {м} {Тм}. c'est vrai ? non, {X} a {n} {Тn}.",
         а_союз="et {Y} ? {Y} a {m} {Тm}.",
         счёт_да="est-il vrai que {A} fois {B} font {C} ? oui, {A} fois {B} font {C} : {a} × {b} = {c}.",
         почему="pourquoi {X} a {r} {Тr} ? parce que {X} en avait {n} et en a donné {k} : {л}",
@@ -187,6 +197,8 @@ def _числительные(язык):
         наоборот="{X} ha {n} {Тn}, {Y} ha {m} {Тm}. e se fosse il contrario? allora {X} avrebbe {m} {Тm} e {Y} avrebbe {n} {Тn}.",
         повтори="ripeti, per favore. ripeto: {X} ha {n} {Тn}.",
         объясни="non ho capito, spiega. spiego: ce n'erano {n}, {k} sono stati dati, ne restano {r}: {л}",
+        объясни3="non ho capito, spiegalo ancora una volta. spiego ancora una volta: ce n'erano {n}, {k} sono stati dati, ne restano {r}: {л}",
+        сказал_что="hai detto che {X} ha {м} {Тм}. è giusto? no, {X} ha {n} {Тn}.",
         а_союз="e {Y}? {Y} ha {m} {Тm}.",
         счёт_да="è vero che {A} per {B} fa {C}? sì, {A} per {B} fa {C}: {a} × {b} = {c}.",
         почему="perché {X} ha {r} {Тr}? perché {X} aveva {n} e ha dato {k}: {л}",
@@ -207,6 +219,8 @@ def _числительные(язык):
         наоборот="{X} tem {n} {Тn}, {Y} tem {m} {Тm}. e se fosse ao contrário? então {X} teria {m} {Тm} e {Y} teria {n} {Тn}.",
         повтори="repete, por favor. repito: {X} tem {n} {Тn}.",
         объясни="não percebi, explica. explico: havia {n}, {k} foram dados, restam {r}: {л}",
+        объясни3="não percebi, explica outra vez. explico outra vez: havia {n}, {k} foram dados, restam {r}: {л}",
+        сказал_что="disseste que {X} tem {м} {Тм}. está certo? não, {X} tem {n} {Тn}.",
         а_союз="e {Y}? {Y} tem {m} {Тm}.",
         счёт_да="é verdade que {A} vezes {B} é {C}? sim, {A} vezes {B} é {C}: {a} × {b} = {c}.",
         почему="porque é que {X} tem {r} {Тr}? porque {X} tinha {n} e deu {k}: {л}",
@@ -231,6 +245,8 @@ def _числительные(язык):
         наоборот="{X} ma {n} {Тn}, {Y} ma {m} {Тm}. a gdyby było odwrotnie? wtedy {X} miał{а}by {m} {Тm}, a {Y} {n} {Тn}.",
         повтори="powtórz, proszę. powtarzam: {X} ma {n} {Тn}.",
         объясни="nie rozumiem, wyjaśnij. wyjaśniam: było {n}, oddano {k}, zostało {r}: {л}",
+        объясни3="nie zrozumiałem, wyjaśnij jeszcze raz. wyjaśniam jeszcze raz: było {n}, oddano {k}, zostało {r}: {л}",
+        сказал_что="powiedziałeś, że {X} ma {м} {Тм}. czy to prawda? nie, {X} ma {n} {Тn}.",
         что_дальше="co dalej? {X} ma {r} {Тr}: {л}",
         правда="czy to prawda? tak, {X} ma {n} {Тn}.",
         неправда="czy to prawda, że {X} ma {м} {Тм}? nie, {X} ma {n} {Тn}.",
@@ -251,6 +267,8 @@ def _числительные(язык):
         наоборот="{X} heeft {n} {Тn}, {Y} heeft {m} {Тm}. en als het omgekeerd was? dan zou {X} {m} {Тm} hebben en {Y} {n} {Тn}.",
         повтори="zeg dat nog eens, alsjeblieft. ik herhaal: {X} heeft {n} {Тn}.",
         объясни="ik begrijp het niet, leg het uit. ik leg uit: {X} had er {n}, gaf {k} weg, en houdt er {r} over: {л}",
+        объясни3="ik heb het niet begrepen, leg het nog een keer uit. ik leg het nog een keer uit: {X} had er {n}, gaf {k} weg, en houdt er {r} over: {л}",
+        сказал_что="je zei dat {X} {м} {Тм} heeft. klopt dat? nee, {X} heeft {n} {Тn}.",
         что_дальше="wat gebeurt er daarna? {X} heeft {r} {Тr}: {л}",
         правда="klopt dat? ja, {X} heeft {n} {Тn}.",
         неправда="klopt het dat {X} {м} {Тм} heeft? nee, {X} heeft {n} {Тn}.",
@@ -336,32 +354,32 @@ def _поля(язык, X, Т, n, k):
 # вторым, и потому его замены переписывают всю фразу.
 БЕЗ_РАЗЛИЧИЯ_РЕГИСТРА = frozenset({"en"})
 ЗАМЕНЫ_ОБРАЩЕНИЯ = {
-"ru": (("согласен ли ты?", "согласны ли вы?"), ("ты имеешь в виду", "вы имеете в виду"),
+"ru": (("согласен ли ты?", "согласны ли вы?"), ("объясни ещё раз.", "объясните ещё раз."), ("ты сказал, что", "вы сказали, что"), ("ты имеешь в виду", "вы имеете в виду"),
        ("повтори, пожалуйста.", "повторите, пожалуйста."),
        ("объясни.", "объясните."), ("объясни, пожалуйста:", "объясните, пожалуйста:")),
-"de": (("stimmst du zu?", "stimmen Sie zu?"), ("meinst du", "meinen Sie"),
+"de": (("stimmst du zu?", "stimmen Sie zu?"), ("erkläre es noch einmal.", "erklären Sie es noch einmal."), ("du hast gesagt, dass", "Sie haben gesagt, dass"), ("meinst du", "meinen Sie"),
        ("sag das bitte noch einmal.", "sagen Sie das bitte noch einmal."),
        ("erkläre es.", "erklären Sie es."), ("erkläre es bitte:", "erklären Sie es bitte:")),
-"fr": (("es-tu d'accord ?", "êtes-vous d'accord ?"), ("tu veux dire", "vous voulez dire"),
+"fr": (("es-tu d'accord ?", "êtes-vous d'accord ?"), ("explique encore une fois.", "expliquez encore une fois."), ("tu as dit que", "vous avez dit que"), ("tu veux dire", "vous voulez dire"),
        ("répète, s'il te plaît.", "répétez, s'il vous plaît."),
        ("explique.", "expliquez."), ("explique, s'il te plaît :", "expliquez, s'il vous plaît :")),
-"es": (("¿estás de acuerdo?", "¿está usted de acuerdo?"), ("¿quieres decir", "¿quiere usted decir"),
+"es": (("¿estás de acuerdo?", "¿está usted de acuerdo?"), ("explícalo otra vez.", "explíquelo otra vez."), ("dijiste que", "usted dijo que"), ("¿quieres decir", "¿quiere usted decir"),
        ("repite, por favor.", "repita, por favor."),
        ("explícalo.", "explíquelo."), ("explícalo, por favor:", "explíquelo, por favor:")),
-"it": (("sei d'accordo?", "è d'accordo?"), ("intendi", "intende"),
+"it": (("sei d'accordo?", "è d'accordo?"), ("spiegalo ancora una volta.", "lo spieghi ancora una volta."), ("hai detto che", "Lei ha detto che"), ("intendi", "intende"),
        ("ripeti, per favore.", "ripeta, per favore."),
        ("spiega.", "spieghi."), ("spiega, per favore:", "spieghi, per favore:")),
-"pt": (("concordas?", "concorda?"), ("queres dizer", "quer dizer"),
+"pt": (("concordas?", "concorda?"), ("explica outra vez.", "explique outra vez."), ("disseste que", "o senhor disse que"), ("queres dizer", "quer dizer"),
        ("repete, por favor.", "repita, por favor."),
        ("explica.", "explique."), ("explica, por favor:", "explique, por favor:")),
-"nl": (("ben je het ermee eens?", "bent u het ermee eens?"), ("bedoel je", "bedoelt u"),
+"nl": (("ben je het ermee eens?", "bent u het ermee eens?"), ("leg het nog een keer uit.", "legt u het nog een keer uit."), ("je zei dat", "u zei dat"), ("bedoel je", "bedoelt u"),
        ("zeg dat nog eens, alsjeblieft.", "zegt u dat nog eens, alstublieft."),
        ("leg het uit.", "legt u het uit."), ("leg het uit, alsjeblieft:", "legt u het uit, alstublieft:")),
-"pl": (("czy się zgadzasz?", "czy pan się zgadza?"), ("czy chodzi ci o", "czy chodzi panu o"),
+"pl": (("czy się zgadzasz?", "czy pan się zgadza?"), ("wyjaśnij jeszcze raz.", "proszę wyjaśnić jeszcze raz."), ("powiedziałeś, że", "powiedział pan, że"), ("czy chodzi ci o", "czy chodzi panu o"),
        ("powtórz, proszę.", "proszę powtórzyć."),
        ("wyjaśnij.", "proszę wyjaśnić."), ("wyjaśnij, proszę:", "proszę wyjaśnić:")),
 }
-ФОРМЫ_ВЫ = ("согласен", "переспрос", "повтори", "объясни", "объясни2")
+ФОРМЫ_ВЫ = ("согласен", "переспрос", "повтори", "объясни", "объясни2", "объясни3", "сказал_что")
 
 # ОБЪЯВЛЕННЫЙ ПРОПУСК: дыра, о которой дом ЗНАЕТ и которую держит нарочно.
 # Прибор щербатости (scripts/form_matrix.py) читает это объявление и не зовёт
