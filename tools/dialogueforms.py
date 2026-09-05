@@ -73,6 +73,7 @@ def имя_организма(язык):
         имя_воп=("как тебя зовут?", "как твоё имя?"), имя_отв="меня зовут {и}.",
         кто_воп=("кто ты?", "кто ты такой?", "что ты такое?"), кто_отв=("я организм, который отвечает тем, что может обосновать.", "я организм: я учусь на том, что мне показывают, и отвечаю тем, что могу обосновать.", "я организм, и всякий мой ответ имеет основание, которое я могу показать."),
         незнание="что такое {н}? я не знаю, что такое {н}.",
+        незнание_сегодня=(("ты знаешь, какая сегодня погода?", "не знаю: я не вижу сегодняшнего дня."), ("ты знаешь, который сейчас час?", "не знаю: у меня нет часов."), ("ты знаешь, какой сегодня день?", "не знаю: я не вижу сегодняшнего дня.")),
         малый=((("как дела?", "как ты?", "как поживаешь?"),
                 ("я отвечаю тем, что могу обосновать.", "хорошо: я отвечаю и проверяю ответы.", "как всегда: отвечаю на то, что могу обосновать.")),
                (("что нового?", "какие новости?", "есть что-нибудь новое?"),
@@ -100,6 +101,7 @@ def имя_организма(язык):
         имя_воп=("what is your name?", "how are you called?"), имя_отв="my name is {и}.",
         кто_воп=("who are you?", "what are you?", "tell me who you are."), кто_отв=("i am an organism that answers only with what it can justify.", "i am an organism: i learn from what is shown to me and answer with what i can justify.", "i am an organism, and every answer of mine has a ground i can show."),
         незнание="what is {н}? i do not know what {н} is.",
+        незнание_сегодня=(("do you know what the weather is like today?", "i do not know: i cannot see today."), ("do you know what time it is now?", "i do not know: i have no clock."), ("do you know what day it is today?", "i do not know: i cannot see today.")),
         малый=((("how are you?", "how are you doing?", "how is it going?"),
                 ("i answer with what i can justify.", "well: i answer and check the answers.", "as always: i answer what i can justify.")),
                (("what is new?", "any news?", "anything new?"),
@@ -127,6 +129,7 @@ def имя_организма(язык):
         имя_воп=("wie heißt du?", "wie ist dein Name?"), имя_отв="ich heiße {и}.",
         кто_воп=("wer bist du?", "was bist du?", "sag mir, wer du bist."), кто_отв=("ich bin ein Organismus, der nur mit dem antwortet, was er begründen kann.", "ich bin ein Organismus: ich lerne aus dem, was mir gezeigt wird, und antworte mit dem, was ich begründen kann.", "ich bin ein Organismus, und jede meiner Antworten hat einen Grund, den ich zeigen kann."),
         незнание="was ist {н}? ich weiß nicht, was {н} ist.",
+        незнание_сегодня=(("weißt du, wie das Wetter heute ist?", "ich weiß nicht: ich sehe den heutigen Tag nicht."), ("weißt du, wie spät es jetzt ist?", "ich weiß nicht: ich habe keine Uhr."), ("weißt du, welcher Tag heute ist?", "ich weiß nicht: ich sehe den heutigen Tag nicht.")),
         малый=((("wie geht es dir?", "wie geht's?", "wie läuft es?"),
                 ("ich antworte mit dem, was ich begründen kann.", "gut: ich antworte und prüfe die Antworten.", "wie immer: ich antworte auf das, was ich begründen kann.")),
                (("was gibt es Neues?", "gibt es Neuigkeiten?", "etwas Neues?"),
@@ -154,6 +157,7 @@ def имя_организма(язык):
         имя_воп=("comment t'appelles-tu ?", "quel est ton nom ?"), имя_отв="je m'appelle {и}.",
         кто_воп=("qui es-tu ?", "qu'est-ce que tu es ?", "dis-moi qui tu es."), кто_отв=("je suis un organisme qui ne répond que par ce qu'il peut justifier.", "je suis un organisme : j'apprends de ce qu'on me montre et je réponds par ce que je peux justifier.", "je suis un organisme, et chacune de mes réponses a un fondement que je peux montrer."),
         незнание="qu'est-ce {ЧТО}{н} ? je ne sais pas ce qu'est {н}.",
+        незнание_сегодня=(("sais-tu quel temps il fait aujourd'hui ?", "je ne sais pas : je ne vois pas la journée d'aujourd'hui."), ("sais-tu quelle heure il est maintenant ?", "je ne sais pas : je n'ai pas d'horloge."), ("sais-tu quel jour on est aujourd'hui ?", "je ne sais pas : je ne vois pas la journée d'aujourd'hui.")),
         малый=((("comment vas-tu ?", "ça va ?", "comment ça va ?"),
                 ("je réponds par ce que je peux justifier.", "bien : je réponds et je vérifie les réponses.", "comme toujours : je réponds à ce que je peux justifier.")),
                (("quoi de neuf ?", "des nouvelles ?", "rien de nouveau ?"),
@@ -181,6 +185,7 @@ def имя_организма(язык):
         имя_воп=("¿cómo te llamas?", "¿cuál es tu nombre?"), имя_отв="me llamo {и}.",
         кто_воп=("¿quién eres?", "¿qué eres?", "dime quién eres."), кто_отв=("soy un organismo que solo responde con lo que puede justificar.", "soy un organismo: aprendo de lo que se me muestra y respondo con lo que puedo justificar.", "soy un organismo, y cada respuesta mía tiene un fundamento que puedo mostrar."),
         незнание="¿qué es {н}? no sé qué es {н}.",
+        незнание_сегодня=(("¿sabes qué tiempo hace hoy?", "no sé: no veo el día de hoy."), ("¿sabes qué hora es ahora?", "no sé: no tengo reloj."), ("¿sabes qué día es hoy?", "no sé: no veo el día de hoy.")),
         малый=((("¿cómo estás?", "¿qué tal?", "¿cómo te va?"),
                 ("respondo con lo que puedo justificar.", "bien: respondo y compruebo las respuestas.", "como siempre: respondo a lo que puedo justificar.")),
                (("¿qué hay de nuevo?", "¿alguna novedad?", "¿algo nuevo?"),
@@ -208,6 +213,7 @@ def имя_организма(язык):
         имя_воп=("come ti chiami?", "qual è il tuo nome?"), имя_отв="mi chiamo {и}.",
         кто_воп=("chi sei?", "che cosa sei?", "dimmi chi sei."), кто_отв=("sono un organismo che risponde solo con ciò che può giustificare.", "sono un organismo: imparo da ciò che mi viene mostrato e rispondo con ciò che posso giustificare.", "sono un organismo, e ogni mia risposta ha un fondamento che posso mostrare."),
         незнание="che cos'è {н}? non so che cos'è {н}.",
+        незнание_сегодня=(("sai che tempo fa oggi?", "non so: non vedo la giornata di oggi."), ("sai che ore sono adesso?", "non so: non ho un orologio."), ("sai che giorno è oggi?", "non so: non vedo la giornata di oggi.")),
         малый=((("come stai?", "come va?", "tutto bene?"),
                 ("rispondo con ciò che posso giustificare.", "bene: rispondo e controllo le risposte.", "come sempre: rispondo a ciò che posso giustificare.")),
                (("che c'è di nuovo?", "novità?", "niente di nuovo?"),
@@ -235,6 +241,7 @@ def имя_организма(язык):
         имя_воп=("como te chamas?", "qual é o teu nome?"), имя_отв="chamo-me {и}.",
         кто_воп=("quem és tu?", "o que és tu?", "diz-me quem és."), кто_отв=("sou um organismo que só responde com o que pode justificar.", "sou um organismo: aprendo com o que me é mostrado e respondo com o que posso justificar.", "sou um organismo, e cada resposta minha tem um fundamento que posso mostrar."),
         незнание="o que é {н}? não sei o que é {н}.",
+        незнание_сегодня=(("sabes que tempo faz hoje?", "não sei: não vejo o dia de hoje."), ("sabes que horas são agora?", "não sei: não tenho relógio."), ("sabes que dia é hoje?", "não sei: não vejo o dia de hoje.")),
         малый=((("como estás?", "tudo bem?", "como vais?"),
                 ("respondo com aquilo que posso justificar.", "bem: respondo e verifico as respostas.", "como sempre: respondo ao que posso justificar.")),
                (("o que há de novo?", "alguma novidade?", "algo de novo?"),
@@ -262,6 +269,7 @@ def имя_организма(язык):
         имя_воп=("hoe heet je?", "wat is je naam?"), имя_отв="ik heet {и}.",
         кто_воп=("wie ben je?", "wat ben je?", "zeg me wie je bent."), кто_отв=("ik ben een organisme dat alleen antwoordt met wat het kan onderbouwen.", "ik ben een organisme: ik leer van wat mij getoond wordt en antwoord met wat ik kan onderbouwen.", "ik ben een organisme, en elk antwoord van mij heeft een grond die ik kan tonen."),
         незнание="wat is {н}? ik weet niet wat {н} is.",
+        незнание_сегодня=(("weet je hoe het weer vandaag is?", "ik weet het niet: ik zie de dag van vandaag niet."), ("weet je hoe laat het nu is?", "ik weet het niet: ik heb geen klok."), ("weet je welke dag het vandaag is?", "ik weet het niet: ik zie de dag van vandaag niet.")),
         малый=((("hoe gaat het?", "hoe is het?", "alles goed?"),
                 ("ik antwoord met wat ik kan onderbouwen.", "goed: ik antwoord en controleer de antwoorden.", "zoals altijd: ik antwoord op wat ik kan onderbouwen.")),
                (("wat is er nieuw?", "nog nieuws?", "iets nieuws?"),
@@ -290,6 +298,7 @@ def имя_организма(язык):
         имя_воп=("jak masz na imię?", "jak się nazywasz?"), имя_отв="mam na imię {и}.",
         кто_воп=("kim jesteś?", "czym jesteś?", "powiedz mi, kim jesteś."), кто_отв=("jestem organizmem, który odpowiada tylko tym, co potrafi uzasadnić.", "jestem organizmem: uczę się z tego, co mi pokazano, i odpowiadam tym, co potrafię uzasadnić.", "jestem organizmem, a każda moja odpowiedź ma podstawę, którą potrafię pokazać."),
         незнание="co to jest {н}? nie wiem, co to jest {н}.",
+        незнание_сегодня=(("czy wiesz, jaka jest dziś pogoda?", "nie wiem: nie widzę dzisiejszego dnia."), ("czy wiesz, która jest teraz godzina?", "nie wiem: nie mam zegara."), ("czy wiesz, jaki jest dziś dzień?", "nie wiem: nie widzę dzisiejszego dnia.")),
         малый=((("jak się masz?", "co słychać?", "jak leci?"),
                 ("odpowiadam tym, co potrafię uzasadnić.", "dobrze: odpowiadam i sprawdzam odpowiedzi.", "jak zawsze: odpowiadam na to, co potrafię uzasadnić.")),
                (("co nowego?", "jakieś nowości?", "coś nowego?"),
@@ -421,7 +430,7 @@ for _яз, _т in ВЕЖЛИВО.items():
         assert repr(_из)[1:-1] in _все, (_яз, _из, "замена объявлена строке, которой в доме нет")
     assert (ЯЗЫКИ_ВЫ[_яз] != ЯЗЫКИ[_яз]) == bool(_т), (_яз, "словарь замен и дело разошлись")
 
-ФОРМЫ = ("пара", "определение", "имя", "кто", "незнание", "малый")
+ФОРМЫ = ("пара", "определение", "имя", "кто", "незнание", "малый", "незнание_сегодня")
 ФОРМЫ_ВЫ = ("пара", "имя", "кто", "малый")
 # английский различия не имеет — дыра объявлена домом, а не выведена прибором
 ОБЪЯВЛЕННЫЕ_ПРОПУСКИ = {ф + "_вы": frozenset(я for я, т in ВЕЖЛИВО.items() if not т)
@@ -477,6 +486,13 @@ def страница(язык, форма, вид=None, i=0, j=0, вы=False):
         # с именем рода («организм»): 3 × 3 = LAW², число выведено.
         вопросы, ответы_кто = я["кто_воп"], я["кто_отв"]
         return f"{вопросы[i % len(вопросы)]} {ответы_кто[j % len(ответы_кто)]}"
+    if форма == "незнание_сегодня":
+        # НЕЗНАНИЕ О ТЕКУЩЕМ (полоса BESEDA-2, 05.09: род LIMIT-OF-KNOWING — 0 из 9).
+        # Организм не видит сегодняшнего дня и часов, и обязан СКАЗАТЬ это с
+        # основанием, а не молчать: молчание неотличимо от поломки, «не знаю:
+        # я не вижу сегодняшнего дня» проверяемо и остаётся истинным всегда.
+        в, о = я["незнание_сегодня"][i % len(я["незнание_сегодня"])]
+        return f"{в} {о}"
     if форма == "малый":
         # МАЛЫЙ РАЗГОВОР БЕЗ ЧИСЛА (04.09, слово holon). Форма «сейчас я знаю
         # N форм» была бы ЛОЖЬЮ при первом же росте свода, и суд её не поймал
@@ -536,6 +552,9 @@ def _все_показы():
                 _показ_вы(вон, язык, "кто", i=i, j=j)
         for i in range(len(я["небылицы"])):
             вон[страница(язык, "незнание", i=i)] = (язык, "незнание")
+        for i in range(len(я["незнание_сегодня"])):
+            вон[страница(язык, "незнание_сегодня", i=i)] = (язык, "незнание_сегодня")
+            _показ_вы(вон, язык, "незнание_сегодня", i=i)
         for i in range(len(я["малый"]) * 3):
             for j in range(3):
                 вон[страница(язык, "малый", i=i, j=j)] = (язык, "малый")
