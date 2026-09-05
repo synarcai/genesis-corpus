@@ -41,6 +41,11 @@ def main():
         "Ann has 12 coins. a third of them are red. how many coins are red? 4: 12 ÷ 4 = 3.",
         "Ann has 12 coins. she gives away 5. how many coins does Ann own now? Ann owns 6 coins: 12 − 5 = 7.",
         "Ann has 12 coins. half of them are red. how many coins are not red? step 1: 12 ÷ 2 = 6. step 2: 12 − 5 = 7. total: 7.",
+        # СКРЫТОЕ КОЛИЧЕСТВО (05.09): восстановленное число не сходится с двумя названными; заявленный
+        # ответ не есть итог леджера; леджер взял число, которого история не называла
+        "Ann had 12 coins. she got some more coins. now she has 17 coins. how many coins did she get? 5: 17 − 12 = 6.",
+        "у Анны было 12 монет. она потеряла несколько монет. теперь у неё 7 монет. сколько монет она потеряла? 6: 12 − 7 = 5.",
+        "Anna miała 12 monet. sprzedała część z nich. teraz ma 7 monet. ile monet sprzedała? 4: 11 − 7 = 4.",
     )
     пойманы = sum(1 for п in подсадки if _судить(п) == (True, False))
     if пойманы != len(подсадки):

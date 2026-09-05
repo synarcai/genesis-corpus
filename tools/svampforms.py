@@ -105,6 +105,10 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
 
 РАМКИ = {
     "en": dict(
+        пришло_скрыто="{X} had {n} {Тn}. {Он} got {СК} more {Тмн}. now {он} has {s} {Тs}. how many {Тмн} did {он} get? {k}: {s} − {n} = {k}.",
+        ушло_скрыто="{X} had {n} {Тn}. {Он} lost {СК} {Тмн}. now {он} has {r} {Тr}. how many {Тмн} did {он} lose? {k}: {n} − {r} = {k}.",
+        часть_из_них="{X} had {n} {Тn}. {Он} sold {СКЧ}. now {он} has {r} {Тr}. how many {Тмн} did {он} sell? {k}: {n} − {r} = {k}.",
+        взял_скрыто="{X} had {n} {Тn}. {Y} took {СК} {Тмн} from {него}. now {он} has {r} {Тr}. how many {Тмн} did {Y} take? {k}: {n} − {r} = {k}.",
         некоторые="{X} had {n} {Тn}. {Он} gave some of them away. now {он} has {r} {Тr} left. how many {Тмн} did {он} give away? {k}: {n} − {r} = {k}.",
         итог="{X} has {a} {Ц1} {Тмн} and {b} {Ц2} {Тмн}. how many {Тмн} does {X} have {ГОЛОВА}? {s} {Тs}: {a} + {b} = {s}.",
         итог_всего="{X} has {a} {Ц1} {Тмн} and {b} {Ц2} {Тмн}. how many {Тмн} does {X} have? a total of {s} {Тs}: {a} + {b} = {s}.",
@@ -141,6 +145,10 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         товар="{X} has {a} {Г1a} and {b} {Г2b}. how many {Г3мн} does {он} have in all? {s} {Г3s}: {a} + {b} = {s}.",
     ),
     "ru": dict(
+        пришло_скрыто="у {Xр} было {n} {Тn}. {Он} получил{а} ещё {СК} {Тмн}. теперь у {него} {s} {Тs}. сколько {Тмн} {он} получил{а}? {k}: {s} − {n} = {k}.",
+        ушло_скрыто="у {Xр} было {n} {Тn}. {Он} потерял{а} {СК} {Тмн}. теперь у {него} {r} {Тr}. сколько {Тмн} {он} потерял{а}? {k}: {n} − {r} = {k}.",
+        часть_из_них="у {Xр} было {n} {Тn}. {Он} продал{а} {СКЧ}. теперь у {него} {r} {Тr}. сколько {Тмн} {он} продал{а}? {k}: {n} − {r} = {k}.",
+        взял_скрыто="у {Xр} было {n} {Тn}. {Y} взял{аY} у {него} {СК} {Тмн}. теперь у {него} {r} {Тr}. сколько {Тмн} взял{аY} {Y}? {k}: {n} − {r} = {k}.",
         некоторые="у {Xр} было {n} {Тn}. {Он} отдал{а} несколько. теперь у {него} осталось {r} {Тr}. сколько {Тмн} {он} отдал{а}? {k}: {n} − {r} = {k}.",
         итог="у {Xр} {a} {Ц1} {Тмн} и {b} {Ц2} {Тмн}. сколько {Тмн} у {Xр} {ГОЛОВА}? {s} {Тs}: {a} + {b} = {s}.",
         итог_всего="у {Xр} {a} {Ц1} {Тмн} и {b} {Ц2} {Тмн}. сколько {Тмн} у {Xр}? всего {s} {Тs}: {a} + {b} = {s}.",
@@ -182,6 +190,23 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
     "pt": {"livros": "m", "ovos": "m"},
 }
 ЦВЕТА_М = {"es": ("rojos", "azules"), "it": ("rossi", "blu"), "pt": ("vermelhos", "azuis")}
+# СКРЫТОЕ КОЛИЧЕСТВО — ЭТО НЕ ЧИСЛО, А ЕГО ОТСУТСТВИЕ (05.09, d5: рынок читателя hidden_words
+# покупает «несколько / some / einige» как ДЫРУ ЧИСЛА, и на старых ковках он инертен, потому что
+# корпус показывал скрытое лишь одной английской формой). Слово скрытого количества объявлено
+# здесь таблицей: оно стоит там, где стояло бы число, и восстанавливается ЛЕДЖЕРОМ из двух
+# названных чисел истории — иначе строка учила бы догадке, а не счёту. Где язык гнёт слово по
+# роду вещи, объявлена пара (мужской, женский) и выбирается тем же родом, что и вопросное слово.
+СКРЫТОЕ = {
+    "ru": {"несколько": "несколько", "часть": "часть из них"},
+    "en": {"несколько": "some", "часть": "some of them"},
+    "de": {"несколько": "einige", "часть": "einen Teil davon"},
+    "fr": {"несколько": "plusieurs", "часть": "une partie"},
+    "es": {"несколько": ("algunos", "algunas"), "часть": "una parte"},
+    "it": {"несколько": ("alcuni", "alcune"), "часть": "una parte"},
+    "pt": {"несколько": ("alguns", "algumas"), "часть": "uma parte"},
+    "nl": {"несколько": "enkele", "часть": "een deel ervan"},
+    "pl": {"несколько": "kilka", "часть": "część z nich"},
+}
 РОДОВЫЕ = {  # hole → (masculine, feminine)
     "es": {"кск": ("cuántos", "cuántas"), "ellas": ("ellos", "ellas"), "algunas": ("algunos", "algunas")},
     "it": {"quante": ("quanti", "quante"), "date": ("dati", "date"), "altre": ("altri", "altre"),
@@ -196,6 +221,10 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         если_придут="in der Kiste sind {n} {Тn}. wenn {k} mehr hineingelegt werden, wie viele werden es sein? {s}: {n} + {k} = {s}.",
         у_него="{X} hatte {n} {Тn}. {Y} nahm {ему} {k} {Тk} weg. wie viele {Тмн} hat {X} jetzt? {r}: {n} − {k} = {r}.",
         товар="{X} hat {a} {Г1a} und {b} {Г2b}. wie viele {Г3мн} hat {он} insgesamt? {s} {Г3s}: {a} + {b} = {s}.",
+        пришло_скрыто="{X} hatte {n} {Тn}. {Он} bekam noch {СК} {Тмн}. jetzt hat {он} {s} {Тs}. wie viele {Тмн} bekam {он}? {k}: {s} − {n} = {k}.",
+        ушло_скрыто="{X} hatte {n} {Тn}. {Он} verlor {СК} {Тмн}. jetzt hat {он} {r} {Тr}. wie viele {Тмн} verlor {он}? {k}: {n} − {r} = {k}.",
+        часть_из_них="{X} hatte {n} {Тn}. {Он} verkaufte {СКЧ}. jetzt hat {он} {r} {Тr}. wie viele {Тмн} verkaufte {он}? {k}: {n} − {r} = {k}.",
+        взял_скрыто="{X} hatte {n} {Тn}. {Y} nahm {ему} {СК} {Тмн} weg. jetzt hat {он} {r} {Тr}. wie viele {Тмн} nahm {Y} weg? {k}: {n} − {r} = {k}.",
         некоторые="{X} hatte {n} {Тn}. {Он} gab einige weg. jetzt hat {он} noch {r} {Тr}. wie viele {Тмн} gab {он} weg? {k}: {n} − {r} = {k}.",
         итог="{X} hat {a} {Ц1} {Тмн} und {b} {Ц2} {Тмн}. wie viele {Тмн} hat {X} {ГОЛОВА}? {s} {Тs}: {a} + {b} = {s}.",
         из_них="{X} hatte {n} {Тn}. {Он} gab {k} davon an {Y}. wie viele {Тмн} hat {он} jetzt? {r}: {n} − {k} = {r}.",
@@ -226,6 +255,10 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         если_придут="il y a {n} {Тn} dans la boîte. si on en ajoute {k}, combien y en aura-t-il ? {s} : {n} + {k} = {s}.",
         у_него="{X} avait {n} {Тn}. {Y} {ему} a pris {k} {Тk}. combien de {Тмн} {X} a-t-{он} maintenant ? {r} : {n} − {k} = {r}.",
         товар="{X} a {a} {Г1a} et {b} {Г2b}. combien de {Г3мн} a-t-{он} en tout ? {s} {Г3s} : {a} + {b} = {s}.",
+        пришло_скрыто="{X} avait {n} {Тn}. {Он} en a reçu {СК} de plus. maintenant {он} a {s} {Тs}. combien en a-t-{он} reçu de plus ? {k} : {s} − {n} = {k}.",
+        ушло_скрыто="{X} avait {n} {Тn}. {Он} en a perdu {СК}. maintenant {он} a {r} {Тr}. combien en a-t-{он} perdu ? {k} : {n} − {r} = {k}.",
+        часть_из_них="{X} avait {n} {Тn}. {Он} en a vendu {СКЧ}. maintenant {он} a {r} {Тr}. combien en a-t-{он} vendu ? {k} : {n} − {r} = {k}.",
+        взял_скрыто="{X} avait {n} {Тn}. {Y} {ему} en a pris {СК}. maintenant {он} a {r} {Тr}. combien {Y} en a-t-{онY} pris ? {k} : {n} − {r} = {k}.",
         некоторые="{X} avait {n} {Тn}. {Он} en a donné quelques-unes. maintenant il {ему} en reste {r}. combien de {Тмн} a-t-{он} données ? {k} : {n} − {r} = {k}.",
         итог="{X} a {a} {Тмн} {Ц1} et {b} {Тмн} {Ц2}. combien de {Тмн} {X} a-t-{он} {ГОЛОВА} ? {s} {Тs} : {a} + {b} = {s}.",
         из_них="{X} avait {n} {Тn}. {Он} en a donné {k} à {Y}. combien de {Тмн} a-t-{он} maintenant ? {r} : {n} − {k} = {r}.",
@@ -256,6 +289,10 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         если_придут="hay {n} {Тn} en la caja. si se ponen {k} más, ¿{кск} habrá? {s}: {n} + {k} = {s}.",
         у_него="{X} tenía {n} {Тn}. {Y} {ему} quitó {k} {Тk}. ¿{кск} {Тмн} tiene {X} ahora? {r}: {n} − {k} = {r}.",
         товар="{X} tiene {a} {Г1a} y {b} {Г2b}. ¿cuántas {Г3мн} tiene en total? {s} {Г3s}: {a} + {b} = {s}.",
+        пришло_скрыто="{X} tenía {n} {Тn}. recibió {СК} {Тмн} más. ahora tiene {s} {Тs}. ¿{кск} {Тмн} recibió? {k}: {s} − {n} = {k}.",
+        ушло_скрыто="{X} tenía {n} {Тn}. perdió {СК} {Тмн}. ahora tiene {r} {Тr}. ¿{кск} {Тмн} perdió? {k}: {n} − {r} = {k}.",
+        часть_из_них="{X} tenía {n} {Тn}. vendió {СКЧ}. ahora tiene {r} {Тr}. ¿{кск} {Тмн} vendió? {k}: {n} − {r} = {k}.",
+        взял_скрыто="{X} tenía {n} {Тn}. {Y} {ему} quitó {СК} {Тмн}. ahora tiene {r} {Тr}. ¿{кск} {Тмн} quitó {Y}? {k}: {n} − {r} = {k}.",
         некоторые="{X} tenía {n} {Тn}. dio {algunas}. ahora le quedan {r} {Тr}. ¿{кск} {Тмн} dio? {k}: {n} − {r} = {k}.",
         итог="{X} tiene {a} {Тмн} {Ц1} y {b} {Тмн} {Ц2}. ¿{кск} {Тмн} tiene {X} {ГОЛОВА}? {s} {Тs}: {a} + {b} = {s}.",
         из_них="{X} tenía {n} {Тn}. dio {k} de {ellas} a {Y}. ¿{кск} {Тмн} tiene ahora? {r}: {n} − {k} = {r}.",
@@ -286,6 +323,10 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         если_придут="ci sono {n} {Тn} nella scatola. se se ne mettono {altre} {k}, {quante} ce ne saranno? {s}: {n} + {k} = {s}.",
         у_него="{X} aveva {n} {Тn}. {Y} {ему} ha preso {k} {Тk}. {quante} {Тмн} ha {X} adesso? {r}: {n} − {k} = {r}.",
         товар="{X} ha {a} {Г1a} e {b} {Г2b}. quante {Г3мн} ha in tutto? {s} {Г3s}: {a} + {b} = {s}.",
+        пришло_скрыто="{X} aveva {n} {Тn}. ha ricevuto {СК} {Тмн} in più. ora ha {s} {Тs}. {quante} {Тмн} ha ricevuto? {k}: {s} − {n} = {k}.",
+        ушло_скрыто="{X} aveva {n} {Тn}. ha perso {СК} {Тмн}. ora ha {r} {Тr}. {quante} {Тмн} ha perso? {k}: {n} − {r} = {k}.",
+        часть_из_них="{X} aveva {n} {Тn}. ha venduto {СКЧ}. ora ha {r} {Тr}. {quante} {Тмн} ha venduto? {k}: {n} − {r} = {k}.",
+        взял_скрыто="{X} aveva {n} {Тn}. {Y} {ему} ha preso {СК} {Тмн}. ora ha {r} {Тr}. {quante} {Тмн} ha preso {Y}? {k}: {n} − {r} = {k}.",
         некоторые="{X} aveva {n} {Тn}. ne ha {date} {alcune}. ora {ему} restano {r} {Тr}. {quante} {Тмн} ha dato? {k}: {n} − {r} = {k}.",
         итог="{X} ha {a} {Тмн} {Ц1} e {b} {Тмн} {Ц2}. {quante} {Тмн} ha {X} {ГОЛОВА}? {s} {Тs}: {a} + {b} = {s}.",
         из_них="{X} aveva {n} {Тn}. ne ha {date} {k} a {Y}. {quante} {Тмн} ha adesso? {r}: {n} − {k} = {r}.",
@@ -316,6 +357,10 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         если_придут="há {n} {Тn} na caixa. se puserem mais {k}, {quantas} haverá? {s}: {n} + {k} = {s}.",
         у_него="{X} tinha {n} {Тn}. {Y} tirou-{ему} {k} {Тk}. {quantas} {Тмн} tem {X} agora? {r}: {n} − {k} = {r}.",
         товар="{X} tem {a} {Г1a} e {b} {Г2b}. quantas {Г3мн} tem no total? {s} {Г3s}: {a} + {b} = {s}.",
+        пришло_скрыто="{X} tinha {n} {Тn}. recebeu mais {СК} {Тмн}. agora tem {s} {Тs}. {quantas} {Тмн} recebeu? {k}: {s} − {n} = {k}.",
+        ушло_скрыто="{X} tinha {n} {Тn}. perdeu {СК} {Тмн}. agora tem {r} {Тr}. {quantas} {Тмн} perdeu? {k}: {n} − {r} = {k}.",
+        часть_из_них="{X} tinha {n} {Тn}. vendeu {СКЧ}. agora tem {r} {Тr}. {quantas} {Тмн} vendeu? {k}: {n} − {r} = {k}.",
+        взял_скрыто="{X} tinha {n} {Тn}. {Y} tirou-{ему} {СК} {Тмн}. agora tem {r} {Тr}. {quantas} {Тмн} tirou {Y}? {k}: {n} − {r} = {k}.",
         некоторые="{X} tinha {n} {Тn}. deu {algumas}. agora tem {r} {Тr}. {quantas} {Тмн} deu? {k}: {n} − {r} = {k}.",
         итог="{X} tem {a} {Тмн} {Ц1} e {b} {Тмн} {Ц2}. {quantas} {Тмн} tem {X} {ГОЛОВА}? {s} {Тs}: {a} + {b} = {s}.",
         из_них="{X} tinha {n} {Тn}. deu {k} {delas} {Yд}. {quantas} {Тмн} tem agora? {r}: {n} − {k} = {r}.",
@@ -347,6 +392,10 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         если_придут="er zitten {n} {Тn} in de doos. als er {k} bij worden gedaan, hoeveel zijn het er dan? {s}: {n} + {k} = {s}.",
         у_него="{X} had {n} {Тn}. {Y} nam {k} {Тk} van {него} af. hoeveel {Тмн} heeft {X} nu? {r}: {n} − {k} = {r}.",
         товар="{X} heeft {a} {Г1a} en {b} {Г2b}. hoeveel {Г3мн} heeft {он} in totaal? {s} {Г3s}: {a} + {b} = {s}.",
+        пришло_скрыто="{X} had {n} {Тn}. {он} kreeg er {СК} bij. nu heeft {он} {s} {Тs}. hoeveel {Тмн} kreeg {он} erbij? {k}: {s} − {n} = {k}.",
+        ушло_скрыто="{X} had {n} {Тn}. {он} verloor er {СК}. nu heeft {он} {r} {Тr}. hoeveel {Тмн} verloor {он}? {k}: {n} − {r} = {k}.",
+        часть_из_них="{X} had {n} {Тn}. {он} verkocht {СКЧ}. nu heeft {он} {r} {Тr}. hoeveel {Тмн} verkocht {он}? {k}: {n} − {r} = {k}.",
+        взял_скрыто="{X} had {n} {Тn}. {Y} nam er {СК} van {него}. nu heeft {он} {r} {Тr}. hoeveel {Тмн} nam {Y}? {k}: {n} − {r} = {k}.",
         некоторые="{X} had {n} {Тn}. {он} gaf er een paar weg. nu heeft {он} er nog {r}. hoeveel {Тмн} gaf {он} weg? {k}: {n} − {r} = {k}.",
         итог="{X} heeft {a} {Ц1} {Тмн} en {b} {Ц2} {Тмн}. hoeveel {Тмн} heeft {X} {ГОЛОВА}? {s} {Тs}: {a} + {b} = {s}.",
         из_них="{X} had {n} {Тn}. {он} gaf er {k} aan {Y}. hoeveel {Тмн} heeft {он} nu? {r}: {n} − {k} = {r}.",
@@ -377,6 +426,10 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         если_придут="w pudełku jest {n} {Тn}. jeśli włożyć jeszcze {k}, ile będzie? {s}: {n} + {k} = {s}.",
         у_него="{X} miał{а} {n} {Тn}. {Y} zabrał{аY} {ему} {k} {Тk}. ile {Тмн} ma {X} teraz? {r}: {n} − {k} = {r}.",
         товар="{X} ma {a} {Г1a} i {b} {Г2b}. ile {Г3мн} ma razem? {s} {Г3s}: {a} + {b} = {s}.",
+        пришло_скрыто="{X} miał{а} {n} {Тn}. dostał{а} jeszcze {СК} {Тмн}. teraz ma {s} {Тs}. ile {Тмн} dostał{а}? {k}: {s} − {n} = {k}.",
+        ушло_скрыто="{X} miał{а} {n} {Тn}. zgubił{а} {СК} {Тмн}. teraz ma {r} {Тr}. ile {Тмн} zgubił{а}? {k}: {n} − {r} = {k}.",
+        часть_из_них="{X} miał{а} {n} {Тn}. sprzedał{а} {СКЧ}. teraz ma {r} {Тr}. ile {Тмн} sprzedał{а}? {k}: {n} − {r} = {k}.",
+        взял_скрыто="{X} miał{а} {n} {Тn}. {Y} zabrał{аY} {ему} {СК} {Тмн}. teraz ma {r} {Тr}. ile {Тмн} zabrał{аY} {Y}? {k}: {n} − {r} = {k}.",
         некоторые="{X} miał{а} {n} {Тn}. oddał{а} kilka. teraz ma {r} {Тr}. ile {Тмн} oddał{а}? {k}: {n} − {r} = {k}.",
         итог="{X} ma {a} {Ц1} {Тмн} i {b} {Ц2} {Тмн}. ile {Тмн} ma {X} {ГОЛОВА}? {s} {Тs}: {a} + {b} = {s}.",
         из_них="{X} miał{а} {n} {Тn}. oddał{а} {k} z nich {Yд}. ile {Тмн} ma teraz? {r}: {n} − {k} = {r}.",
@@ -402,7 +455,7 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         время="{В1} {X} miał{а} {n} {Тn}. {В2} dostał{а} jeszcze {k}. ile {Тмн} ma teraz? {s}: {n} + {k} = {s}.",
         кому="{X} miał{а} {n} {Тn}. oddał{а} {k} {Тk} {Yд}. ile {Тмн} ma {X} teraz? {r}: {n} − {k} = {r}."),
 })
-ФОРМЫ = ("некоторые", "итог", "итог_всего", "осталось", "из_них", "ему", "если", "если_придут", "время", "кому", "у_него", "единица", "товар", "потерял", "купил_ещё", "собрал_у", "три", "три_шаги", "факт", "без_данных", "владеет", "владеет2", "владеет_после", "держит", "хранит", "доля", "доля_не", "возраст_имя", "его_вещи", "вместе_их", "дал_ему", "купил_у_него", "оставив_ему", "имя_с_с")
+ФОРМЫ = ("некоторые", "итог", "итог_всего", "осталось", "из_них", "ему", "если", "если_придут", "время", "кому", "у_него", "единица", "товар", "потерял", "купил_ещё", "собрал_у", "три", "три_шаги", "факт", "без_данных", "пришло_скрыто", "ушло_скрыто", "часть_из_них", "взял_скрыто", "владеет", "владеет2", "владеет_после", "держит", "хранит", "доля", "доля_не", "возраст_имя", "его_вещи", "вместе_их", "дал_ему", "купил_у_него", "оставив_ему", "имя_с_с")
 # the unit before the number is an English shape of the band; Russian writes «3 ₽» after — declared gap
 ОБЪЯВЛЕННЫЕ_ПРОПУСКИ = {"единица": frozenset({"ru"}),
                        # «possess» — второй английский глагол владения; у других языков один
@@ -479,6 +532,11 @@ def _поля(язык, i, j, Т, n, k, форма):
     for дыра, (м_, ж_) in РОДОВЫЕ.get(язык, {}).items():
         п[дыра] = м_ if род == "m" else ж_
     п["_род"] = род
+    # СЛОВО СКРЫТОГО КОЛИЧЕСТВА СТОИТ ТАМ, ГДЕ СТОЯЛО БЫ ЧИСЛО, и гнётся родом вещи там, где язык
+    # его гнёт (es/it/pt): пара (мужской, женский) выбирается тем же родом, что и вопросное слово.
+    ск = СКРЫТОЕ[язык]
+    п["СК"] = ск["несколько"][0 if род == "m" else 1] if isinstance(ск["несколько"], tuple) else ск["несколько"]
+    п["СКЧ"] = ск["часть"][0 if род == "m" else 1] if isinstance(ск["часть"], tuple) else ск["часть"]
     # THE OTHER PERSON'S PRONOUNS (Y), the parent and the pair by X's gender, the name's possessive
     мY = МЕСТОИМЕНИЯ[язык][Y[1]]
     п.update(Yр=Y[2], онY=мY["он"], негоY=мY["него"], емуY=мY["ему"], Xде=_имя_чьё(язык, X))
@@ -584,6 +642,11 @@ def _годы(язык):
     return list(_NL.ГОД[язык].values()) + list(_NL.ГОД_ПОСЛЕ.get(язык, {}).values())
 
 
+def _слова_скрытого(язык, ключ):
+    з = СКРЫТОЕ[язык][ключ]
+    return list(з) if isinstance(з, tuple) else [з]
+
+
 def _образцы():
     """A regex per frame: names, things, pronouns, time words and goods are declared
     alternations; numbers are holes; the ledger is read by the judge."""
@@ -603,6 +666,9 @@ def _образцы():
                 "а": "(?:а|о|и|a|)", "аY": "(?:а|о|и|a|)", "n": r"(\d+)", "k": r"(\d+)", "r": r"(\d+)", "s": r"(\d+)", "a": r"(\d+)", "b": r"(\d+)", "v": r"(\d+)",
                 "m": r"(\d+)", "t": r"(\d+)", "q": r"(\d+)", "d": r"(\d+)",
                 "ДОЛЯ": alt(ДОЛИ[язык].values()), "ЦП": alt(ЦВЕТ_ПРЕД[язык]),
+                # ДЫРА СКРЫТОГО КОЛИЧЕСТВА ПРИНИМАЕТ ТОЛЬКО ОБЪЯВЛЕННОЕ СЛОВО: строка с числом на
+                # этом месте есть строка другого рода, и дом её не признаёт (суд самопроверки).
+                "СК": alt(_слова_скрытого(язык, "несколько")), "СКЧ": alt(_слова_скрытого(язык, "часть")),
                 "Гn": alt(_годы(язык)), "Гk": alt(_годы(язык)), "Гs": alt(_годы(язык)),
                 "Тn": alt(вещи), "Тk": alt(вещи), "Тr": alt(вещи), "Тs": alt(вещи), "Тмн": alt(вещи), "Т1": alt(вещи1), "Тm": alt(вещи),
                 "ГОЛОВА": alt(ГОЛОВЫ_ИТОГА[язык]), "Ц1": alt(ЦВЕТА[язык] + ЦВЕТА_М.get(язык, ())), "Ц2": alt(ЦВЕТА[язык] + ЦВЕТА_М.get(язык, ())),
@@ -1124,6 +1190,25 @@ def _самопроверка():
                 битая = re.sub(r"= (\d+)\.$", lambda м: f"= {int(м.group(1)) + 1}.", с)
                 assert судить(битая) == (True, False), битая
                 мутанты += 1
+    # МУТАНТЫ СКРЫТОГО КОЛИЧЕСТВА (три рода): леджер не сходится — общим ножом выше; ответ не равен
+    # итогу леджера; СЛОВО СКРЫТОГО КОЛИЧЕСТВА, ЗАМЕНЁННОЕ ЧИСЛОМ, делает строку строкой другого
+    # рода — дом её не признаёт вовсе (дыра принимает лишь объявленное слово, и это не придирка
+    # к письму: названное число не есть скрытое, и учить по нему счёту нечему).
+    for язык in РАМКИ:
+        for форма in ("пришло_скрыто", "ушло_скрыто", "часть_из_них", "взял_скрыто"):
+            с = страница(язык, форма, 0, 1, 0, 12, 5)
+            assert судить(с) == (True, True), с
+            заявлен = re.sub(r"([?？]\s*)(\d+)(\s*:)", lambda м: f"{м.group(1)}{int(м.group(2)) + 1}{м.group(3)}", с, 1)
+            assert судить(заявлен) == (True, False), заявлен
+            for ключ, дыра in (("несколько", "СК"), ("часть", "СКЧ")):
+                слово = _слова_скрытого(язык, ключ)
+                если = next((w for w in слово if w in с), None)
+                if если is None:
+                    continue
+                числом = с.replace(если, "4", 1)
+                assert судить(числом) == (False, False), числом
+                мутанты += 1
+            мутанты += 1
     # мутанты двух длин и удержания: шаг с неверным итогом, разорванная связь шагов, число в удержании,
     # чужое число в факте
     for язык in РАМКИ:
