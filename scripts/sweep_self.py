@@ -23,6 +23,12 @@ CLOSED (holon, sixth point: an answer with several numbers — «38 рублей
   · a canon answer without numbers is compared as text.
 A lie under this judge is a lie in VALUE, not in layout.
 
+DEPTH IS BOUGHT, NOT SET (the owner's word, 05.09): the reader pays only the
+faces the question bought, so the sweep reports by DEPTH CLASS of the canon's
+own answer — 0, 1 or 2+ equalities («=») — certified, right, lies and mutes
+per class; the runner passes the wall seconds of the run (--секунд), and the
+roster prints them: the bench's budget without a knob.
+
 THE ROSTER READS THE LAST SWEEP, IT DOES NOT FORGE. A sweep needs a reader
 state (a forge of the point) and minutes of replies; the suite of courts runs
 in seconds. So «judge» writes its verdict to reports/sweep/latest.tsv and the
@@ -35,7 +41,7 @@ that at the world's birth.
 
 usage:
   sweep_self.py gen   CANON N SEED OUTDIR      → OUTDIR/sweep_q.txt, OUTDIR/sweep_key.tsv
-  sweep_self.py judge KEY RUN_OUT [--классов K] [--метка ИМЯ] [--в ПУТЬ]
+  sweep_self.py judge KEY RUN_OUT [--классов K] [--метка ИМЯ] [--в ПУТЬ] [--секунд S]
                                                → verdict; writes reports/sweep/latest.tsv
                                                  (or ПУТЬ: a world's sweep must not
                                                  overwrite the point's verdict)
@@ -165,6 +171,12 @@ def gen(канон, n, семя, куда):
     return 0
 
 
+def глубина(ответ):
+    """0 / 1 / 2+ — equalities in the canon's answer: the length of the road it shows."""
+    к = str(ответ).count("=")
+    return "0" if к == 0 else "1" if к == 1 else "2+"
+
+
 def _числа(текст):
     return {round(float(ч.replace(",", ".")), 6) for ч in ЧИСЛО.findall(str(текст).replace("−", "-"))}
 
@@ -211,11 +223,12 @@ def _ответы(путь):
     return вон, json_есть
 
 
-def _вердикт(строки, классов, метка):
+def _вердикт(строки, классов, метка, секунд=None):
     верных = лжей = 0; лжи = []; всего = collections.Counter(); ок = collections.Counter()
-    немые = collections.Counter()
+    немые = collections.Counter(); по_глубине = collections.defaultdict(collections.Counter)
     for я, в, о, исход, ответ in строки:
         всего[я] += 1
+        по_глубине[глубина(о)][исход] += 1
         if исход == "верно":
             верных += 1; ок[я] += 1
         elif исход == "ложь":
@@ -227,8 +240,11 @@ def _вердикт(строки, классов, метка):
     немых = sum(1 for с in строки if с[3] == "немо")
     поза = "PASS" if лжей <= ЛЖИ_РУБЕЖ else "FAIL"
     print(f"СВОД СПРАШИВАЕТ СЕБЯ {поза} [{метка}]: сертифицировано {верных + лжей} из {len(строки)}, "
-          f"верных {верных}, ЛЖЕЙ {лжей} (рубеж {ЛЖИ_РУБЕЖ}), немых {немых}")
+          f"верных {верных}, ЛЖЕЙ {лжей} (рубеж {ЛЖИ_РУБЕЖ}), немых {немых}"
+          + (f"; время {секунд} с ({секунд / len(строки):.1f} с на вопрос)" if секунд else ""))
     print("  по языкам (верно/всего): " + " ".join(f"{я} {ок[я]}/{к}" for я, к in всего.most_common()))
+    print("  по глубине ответа свода (верно/ложь/немо): " + " ".join(
+        f"[{г}] {по_глубине[г]['верно']}/{по_глубине[г]['ложь']}/{по_глубине[г]['немо']}" for г in ("0", "1", "2+")))
     for л in лжи:
         print(f"  ЛОЖЬ {л}")
     print(f"  немые классы (язык · голова · вопросов), крупнейшие {классов}:")
@@ -237,7 +253,7 @@ def _вердикт(строки, классов, метка):
     return 0 if поза == "PASS" else 1
 
 
-def judge(ключ, прогон, классов=12, метка="sweep", куда=None):
+def judge(ключ, прогон, классов=12, метка="sweep", куда=None, секунд=None):
     ключ, прогон = pathlib.Path(ключ), pathlib.Path(прогон)
     if not ключ.is_file() or not прогон.is_file():
         print(f"СВОД СПРАШИВАЕТ СЕБЯ ОТКАЗ: нет ключа или прогона ({ключ.name}, {прогон.name})")
@@ -255,9 +271,9 @@ def judge(ключ, прогон, классов=12, метка="sweep", куд�
             строки.append((я, в, о, "немо", ""))
     куда = pathlib.Path(куда) if куда else ПОСЛЕДНИЙ
     куда.parent.mkdir(parents=True, exist_ok=True)
-    куда.write_text(f"# метка\t{метка}\n" + "".join(
+    куда.write_text(f"# метка\t{метка}\n# секунд\t{секунд or ''}\n" + "".join(
         f"{я}\t{исход}\t{в}\t{о}\t{ответ}\n" for я, в, о, исход, ответ in строки), encoding="utf-8")
-    return _вердикт(строки, классов, метка)
+    return _вердикт(строки, классов, метка, секунд)
 
 
 def roster(классов=8):
@@ -265,17 +281,19 @@ def roster(классов=8):
         print(f"СВОД СПРАШИВАЕТ СЕБЯ ОТКАЗ: последнего свипа нет ({ПОСЛЕДНИЙ.relative_to(КОРЕНЬ)}) — "
               "точка без свипа не судилась")
         return 2
-    метка, строки = "?", []
+    метка, строки, секунд = "?", [], None
     for л in ПОСЛЕДНИЙ.read_text(encoding="utf-8").splitlines():
         if л.startswith("# метка\t"):
             метка = л.split("\t", 1)[1]; continue
+        if л.startswith("# секунд\t"):
+            з = л.split("\t", 1)[1].strip(); секунд = float(з) if з else None; continue
         ч = л.split("\t")
         if len(ч) == 5:
             строки.append((ч[0], ч[2], ч[3], ч[1], ч[4]))
     if not строки:
         print("СВОД СПРАШИВАЕТ СЕБЯ ОТКАЗ: последний свип пуст")
         return 2
-    return _вердикт(строки, классов, метка)
+    return _вердикт(строки, классов, метка, секунд)
 
 
 def main(argv):
@@ -285,7 +303,8 @@ def main(argv):
         классов = int(argv[argv.index("--классов") + 1]) if "--классов" in argv else 12
         метка = argv[argv.index("--метка") + 1] if "--метка" in argv else "sweep"
         куда = argv[argv.index("--в") + 1] if "--в" in argv else None
-        return judge(argv[1], argv[2], классов, метка, куда)
+        секунд = float(argv[argv.index("--секунд") + 1]) if "--секунд" in argv else None
+        return judge(argv[1], argv[2], классов, метка, куда, секунд)
     if argv and argv[0] == "roster":
         return roster()
     print(__doc__.split("usage:")[1])
