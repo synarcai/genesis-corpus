@@ -360,29 +360,57 @@
     ),
 }
 
+# ПРЯМОЙ ВОПРОС «ПОЧЕМУ {ФАКТ}?» (четвёртая полоса беседы, 05.09: «почему лёд плавает
+# в воде?» был нем во всех девяти языках — дом спрашивал «почему?» лишь ПОСЛЕ
+# факта). В русском, польском, испанском, итальянском и португальском вопрос
+# есть факт с вопросным словом впереди — рамка. В английском, немецком,
+# французском и нидерландском вопрос ПЕРЕСТРАИВАЕТ факт (do-support, инверсия),
+# и вопросная форма факта ОБЪЯВЛЯЕТСЯ — по одной на факт, не выводится.
+ВОПРОС_ПОЧЕМУ = {
+    "en": ("why does ice float in water", "why does a stone sink in water", "why does smoke rise",
+           "why is it dark at night", "why is the ground wet after rain", "why does water boil at 100 degrees",
+           "why is it raining", "why is water wet", "why is fire hot", "why is snow cold", "why is a stone hard"),
+    "de": ("warum schwimmt Eis im Wasser", "warum sinkt ein Stein im Wasser", "warum steigt Rauch nach oben",
+           "warum ist es nachts dunkel", "warum ist die Erde nach dem Regen nass", "warum kocht Wasser bei 100 Grad",
+           "warum regnet es", "warum ist Wasser nass", "warum ist Feuer heiß", "warum ist Schnee kalt", "warum ist ein Stein hart"),
+    "fr": ("pourquoi la glace flotte-t-elle sur l'eau", "pourquoi une pierre coule-t-elle dans l'eau", "pourquoi la fumée monte-t-elle",
+           "pourquoi fait-il sombre la nuit", "pourquoi la terre est-elle mouillée après la pluie", "pourquoi l'eau bout-elle à 100 degrés",
+           "pourquoi pleut-il", "pourquoi l'eau est-elle mouillée", "pourquoi le feu est-il chaud", "pourquoi la neige est-elle froide",
+           "pourquoi la pierre est-elle dure"),
+    "nl": ("waarom drijft ijs op water", "waarom zinkt een steen in water", "waarom stijgt rook op",
+           "waarom is het donker in de nacht", "waarom is de grond nat na de regen", "waarom kookt water bij 100 graden",
+           "waarom regent het", "waarom is water nat", "waarom is vuur heet", "waarom is sneeuw koud", "waarom is een steen hard"),
+}
+for _яз, _в in ВОПРОС_ПОЧЕМУ.items():
+    assert len(_в) == len(ФАКТЫ[_яз]), (_яз, "вопросов не по фактам")
+
 РАМКИ = {
-    "ru": dict(основание="{ф}. почему? {о}.", следствие="{ф}. что дальше? {с}.",
+    "ru": dict(почему_прямо="почему {ф}? {о}.",
+               основание="{ф}. почему? {о}.", следствие="{ф}. что дальше? {с}.",
                следствие2="{ф}. и что потом? {с}.",
                принадлежность="{ч} — {к}.", правда="{ф}. правда ли это? да, {ф}.",
                силлогизм="что следует из того, что {ч} — {к}, а {кв} — {н}? {ч} — {к}. {кв} — {н}. значит {ч} — {н}.",
                принадлежность_вопрос="чем является {ч}? {ч} — {к}.",
                согласен="{ф}. согласен ли ты? да, я согласен: {ф}.",
                согласен_что="согласен ли ты, что {п}? да, {ф}."),
-    "en": dict(основание="{ф}. why? {о}.", следствие="{ф}. what happens next? {с}.",
+    "en": dict(почему_прямо="{впф}? {о}.",
+               основание="{ф}. why? {о}.", следствие="{ф}. what happens next? {с}.",
                следствие2="{ф}. what next? {с}.",
                принадлежность="{ч} is {к}.", правда="{ф}. is that true? yes, {ф}.",
                силлогизм="what follows from {ч} being {к} and {кв} being {н}? {ч} is {к}. {кв} is {н}. so {ч} is {н}.",
                принадлежность_вопрос="what kind of thing is {ч}? {ч} is {к}.",
                согласен="{ф}. do you agree? yes, i agree: {ф}.",
                согласен_что="do you agree that {п}? yes, {ф}."),
-    "de": dict(основание="{ф}. warum? {о}.", следствие="{ф}. was kommt dann? {с}.",
+    "de": dict(почему_прямо="{впф}? {о}.",
+               основание="{ф}. warum? {о}.", следствие="{ф}. was kommt dann? {с}.",
                следствие2="{ф}. und dann? {с}.",
                принадлежность="{ч} ist {к}.", правда="{ф}. stimmt das? ja, {ф}.",
                силлогизм="was folgt daraus, dass {ч} {к} ist und {кв} {н} ist? {ч} ist {к}. {кв} ist {н}. also ist {ч} {н}.",
                принадлежность_вопрос="was für ein Ding ist {ч}? {ч} ist {к}.",
                согласен="{ф}. stimmst du zu? ja, ich stimme zu: {ф}.",
                согласен_что="stimmst du zu, dass {п}? ja, {ф}."),
-    "fr": dict(основание="{ф}. pourquoi ? {о}.", следствие="{ф}. et ensuite ? {с}.",
+    "fr": dict(почему_прямо="{впф} ? {о}.",
+               основание="{ф}. pourquoi ? {о}.", следствие="{ф}. et ensuite ? {с}.",
                следствие2="{ф}. et après ? {с}.",
                принадлежность="{ч} est {к}.", правда="{ф}. est-ce vrai ? oui, {ф}.",
                силлогизм="que découle-t-il du fait {чт} est {к} et que {кв} est {н} ? {ч} est {к}. {кв} est {н}. donc {ч} est {н}.",
@@ -390,14 +418,15 @@
                принадлежность_вопрос="quelle sorte de chose est {ч} ? {ч} est {к}.",
                согласен="{ф}. es-tu d'accord ? oui, je suis d'accord : {ф}.",
                согласен_что="es-tu d'accord que {п} ? oui, {ф}."),
-    "es": dict(основание="{ф}. ¿por qué? {о}.", следствие="{ф}. ¿y luego? {с}.",
+    "es": dict(почему_прямо="¿por qué {ф}? {о}.",
+               основание="{ф}. ¿por qué? {о}.", следствие="{ф}. ¿y luego? {с}.",
                следствие2="{ф}. ¿y después? {с}.",
                принадлежность="{ч} es {к}.", правда="{ф}. ¿es verdad? sí, {ф}.",
                силлогизм="¿qué se sigue de que {ч} sea {к} y de que {кв} sea {н}? {ч} es {к}. {кв} es {н}. entonces {ч} es {н}.",
                принадлежность_вопрос="¿qué clase de cosa es {ч}? {ч} es {к}.",
                согласен="{ф}. ¿estás de acuerdo? sí, estoy de acuerdo: {ф}.",
                согласен_что="¿estás de acuerdo en que {п}? sí, {ф}."),
-    "it": dict(
+    "it": dict(почему_прямо="perché {ф}? {о}.",
                основание="{ф}. perché? {о}.",
                следствие="{ф}. che cosa succede poi? {с}.",
                следствие2="{ф}. e poi? {с}.",
@@ -408,7 +437,7 @@
                согласен_что="sei d'accordo che {п}? sì, {ф}.",
                силлогизм="che cosa segue dal fatto che {ч} è {к} e che {кв} è {н}? {ч} è {к}. {кв} è {н}. quindi {ч} è {н}.",
     ),
-    "pt": dict(
+    "pt": dict(почему_прямо="porque é que {ф}? {о}.",
                основание="{ф}. porquê? {о}.",
                следствие="{ф}. o que acontece depois? {с}.",
                следствие2="{ф}. e depois? {с}.",
@@ -419,7 +448,7 @@
                согласен_что="concordas que {п}? sim, {ф}.",
                силлогизм="o que se segue de {ч} ser {к} e de {кв} ser {н}? {ч} é {к}. {кв} é {н}. portanto {ч} é {н}.",
     ),
-    "nl": dict(
+    "nl": dict(почему_прямо="{впф}? {о}.",
                основание="{ф}. waarom? {о}.",
                следствие="{ф}. wat gebeurt er dan? {с}.",
                следствие2="{ф}. en dan? {с}.",
@@ -430,7 +459,7 @@
                согласен_что="ben je het ermee eens dat {п}? ja, {ф}.",
                силлогизм="wat volgt eruit dat {ч} {к} is en dat {кв} {н} is? {ч} is {к}. {кв} is {н}. dus is {ч} {н}.",
     ),
-    "pl": dict(
+    "pl": dict(почему_прямо="dlaczego {ф}? {о}.",
                основание="{ф}. dlaczego? {о}.",
                следствие="{ф}. co będzie dalej? {с}.",
                следствие2="{ф}. a potem? {с}.",
@@ -526,7 +555,7 @@ if _ОПРЕДЕЛЕНО is not None:
 ОБЪЯВЛЕННЫЕ_ПРОПУСКИ = {"согласен_что_вы": БЕЗ_РАЗЛИЧИЯ_РЕГИСТРА}
 
 ЯЗЫКИ = tuple(ФАКТЫ)
-ФОРМЫ = ("основание", "следствие", "принадлежность", "правда", "согласен", "согласен_что", "согласен_что_вы", "следствие2", "принадлежность_вопрос", "силлогизм")
+ФОРМЫ = ("основание", "следствие", "принадлежность", "правда", "согласен", "согласен_что", "согласен_что_вы", "следствие2", "принадлежность_вопрос", "силлогизм", "почему_прямо")
 
 for _яз in ЯЗЫКИ:
     # «гласные_стяжения» есть ОБЪЯВЛЕНИЕ СТРОЯ, а не форма: язык, где стяжения
@@ -571,6 +600,11 @@ def страница(язык, форма, i):
         ч, к = КЛАССЫ[язык][i % len(КЛАССЫ[язык])]
         return р[форма].format(ч=ч, к=к)
     ряд = ФАКТЫ[язык]
+    if форма == "почему_прямо":
+        к = i % len(ряд)
+        ф, о = ряд[к][0], ряд[к][1]
+        впф = ВОПРОС_ПОЧЕМУ[язык][к] if язык in ВОПРОС_ПОЧЕМУ else None
+        return РАМКИ[язык][форма].format(ф=ф, о=о, впф=впф)
     if форма in ("согласен_что", "согласен_что_вы"):
         # ПОДЧИНЕНИЕ БЕРЁТ ТОЛЬКО ГЛАВНУЮ ПОВЕРХНОСТЬ ФАКТА: вторая (число
         # словом) потребовала бы второго придаточного, а придаточное пишется
@@ -605,7 +639,7 @@ def _показы():
                 continue
             if форма == "согласен_что_вы" and язык in БЕЗ_РАЗЛИЧИЯ_РЕГИСТРА:
                 continue          # язык без различия пишет ОДНУ форму
-            шагов = (len(ФАКТЫ[язык]) if форма.startswith("согласен_что")
+            шагов = (len(ФАКТЫ[язык]) if форма.startswith("согласен_что") or форма == "почему_прямо"
                      else 2 * len(ФАКТЫ[язык]))
             for i in range(шагов):
                 с = страница(язык, форма, i)
@@ -644,6 +678,7 @@ def _образцы():
             # союз — БЕЗ НИХ рамка силлогизма не попадала в образцы, а мир
             # ЗАМКНУТ: строка своего мира, не узнанная образцом, есть ложь, и
             # ворота отвергли все 25 силлогизмов разом
+            "впф": list(ВОПРОС_ПОЧЕМУ.get(язык, ())),
             "кв": [кв for _, кв, _ in ИЕРАРХИЯ[язык]],
             "н": [н for _, _, н in ИЕРАРХИЯ[язык]],
             "чт": ([("qu'" if ч[:1].lower() in (РАМКИ[язык].get("гласные_стяжения") or "")
