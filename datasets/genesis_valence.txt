@@ -1,139 +1,115 @@
 жизнеспособность была 5 из 7, стала 4 из 7 — рост или убыль? убыль: жизнеспособность была 5 из 7, стала 4 из 7, стало хуже.
-жизнеспособность была 4 из 7, стала 5 из 7 — рост или убыль? рост: жизнеспособность была 4 из 7, стала 5 из 7, стало лучше.
-viability was 5 of 7 and is 4 of 7: a fall, worse.
-viability was 3 of 7 and is 4 of 7: a rise, better.
-жизнеспособность 5 из 7 при пороге 2 из 7, убыль 3 из 7: запас 3 из 7, сила страха 3 к 3 — страшно.
-жизнеспособность была 6 из 7, стала 7 из 7: рост, стало лучше.
-viability 4 of 7 with the threshold 2 of 7 and a fall of 3 of 7: the reserve is 2 of 7, the strength of fear is 3 to 2 — afraid.
-viability was 3 of 7 and is 4 of 7 — a rise or a fall? a rise: viability was 3 of 7 and is 4 of 7, better.
-жизнеспособность 4 из 7 при пороге 2 из 7, убыль 1 из 7: запас 2 из 7, сила страха 1 к 2 — страшно.
-жизнеспособность была 6 из 7, стала 7 из 7 — рост или убыль? рост: жизнеспособность была 6 из 7, стала 7 из 7, стало лучше.
-the error 3 became 8, the reserve 9 became 5: the quantities part. the projection is declared onto the error. therefore worse.
-viability 7 of 7 with the threshold 2 of 7 and no change: the reserve is 5 of 7 and it is still — calm.
-ошибка 1 стала 12, запас 13 стал 9: величины разошлись. проекция объявлена на ошибку. значит стало хуже.
-жизнеспособность 5 из 7 при пороге 2 из 7, изменение 0: запас 3 из 7 и покой — спокойно.
-the error 1 became 15, the reserve 16 became 12: the quantities part. the projection is declared onto the error. therefore worse.
-viability 5 of 7 with the threshold 2 of 7 and no change: the reserve is 3 of 7 and it is still — calm.
-ошибка 7 стала 2 и запас 4 стал 9, но жизнеспособность 3 из 7 упала до 1 из 7: порог 2 пройден — шаг необратим, страшно.
-цель 11, было 7, стало 10: ошибка 4 стала 1. проекция объявлена: убыль ошибки есть рост жизнеспособности. значит стало лучше.
-the error 10 became 2 and the reserve 7 became 12, but viability 3 of 7 fell to 1 of 7: the threshold 2 is crossed — the step is irreversible, afraid.
-viability was 3 of 7 and is 4 of 7: a rise, better.
-жизнеспособность была 5 из 7, стала 4 из 7: убыль, стало хуже.
-жизнеспособность была 6 из 7, стала 7 из 7: рост, стало лучше.
-viability was 5 of 7 and is 4 of 7 — a rise or a fall? a fall: viability was 5 of 7 and is 4 of 7, worse.
-viability was 3 of 7 and is 4 of 7 — a rise or a fall? a rise: viability was 3 of 7 and is 4 of 7, better.
-жизнеспособность 6 из 7 при пороге 2 из 7, убыль 1 из 7: запас 4 из 7, сила страха 1 к 4 — страшно.
-жизнеспособность была 6 из 7, стала 7 из 7 — рост или убыль? рост: жизнеспособность была 6 из 7, стала 7 из 7, стало лучше.
-viability 5 of 7 with the threshold 2 of 7 and a fall of 1 of 7: the reserve is 3 of 7, the strength of fear is 1 to 3 — afraid.
-viability was 4 of 7 and is 5 of 7: a rise, better.
-ошибка 1 стала 6, запас 7 стал 3: величины разошлись. проекция объявлена на ошибку. значит стало хуже.
-жизнеспособность 5 из 7 при пороге 2 из 7, изменение 0: запас 3 из 7 и покой — спокойно.
-the error 1 became 9, the reserve 10 became 6: the quantities part. the projection is declared onto the error. therefore worse.
-viability 5 of 7 with the threshold 2 of 7 and no change: the reserve is 3 of 7 and it is still — calm.
-ошибка 2 стала 13, запас 14 стал 10: величины разошлись. проекция объявлена на ошибку. значит стало хуже.
-жизнеспособность 6 из 7 при пороге 2 из 7, изменение 0: запас 4 из 7 и покой — спокойно.
-viability 4 of 7, the step fell by 2: now 2 of 7, the threshold 2 is crossed — the step is irreversible, afraid.
-goal 8, was 4, now 7: the error 4 became 1. the projection is declared: a falling error is a rising viability. therefore better.
-ошибка 8 стала 3 и запас 5 стал 10, но жизнеспособность 3 из 7 упала до 1 из 7: порог 2 пройден — шаг необратим, страшно.
-цель 12, было 7, стало 10: ошибка 5 стала 2. проекция объявлена: убыль ошибки есть рост жизнеспособности. значит стало лучше.
-the error 11 became 3 and the reserve 8 became 13, but viability 3 of 7 fell to 1 of 7: the threshold 2 is crossed — the step is irreversible, afraid.
-viability was 3 of 7 and is 4 of 7 — a rise or a fall? a rise: viability was 3 of 7 and is 4 of 7, better.
-жизнеспособность была 5 из 7, стала 4 из 7 — рост или убыль? убыль: жизнеспособность была 5 из 7, стала 4 из 7, стало хуже.
-жизнеспособность была 6 из 7, стала 7 из 7 — рост или убыль? рост: жизнеспособность была 6 из 7, стала 7 из 7, стало лучше.
-viability 3 of 7 with the threshold 2 of 7 and a fall of 1 of 7: the reserve is 1 of 7, the strength of fear is 1 to 1 — afraid.
-viability was 4 of 7 and is 5 of 7: a rise, better.
-жизнеспособность 3 из 7 при пороге 2 из 7, убыль 2 из 7: запас 1 из 7, сила страха 2 к 1 — страшно.
-жизнеспособность была 3 из 7, стала 4 из 7: рост, стало лучше.
-viability 6 of 7 with the threshold 2 of 7 and a fall of 2 of 7: the reserve is 4 of 7, the strength of fear is 2 to 4 — afraid.
 viability was 4 of 7 and is 5 of 7 — a rise or a fall? a rise: viability was 4 of 7 and is 5 of 7, better.
-ошибка 2 стала 7, запас 8 стал 4: величины разошлись. проекция объявлена на ошибку. значит стало хуже.
+viability 3 of 7 with the threshold 2 of 7 and a fall of 1 of 7: the reserve is 1 of 7, the strength of fear is 1 to 1 — afraid.
+жизнеспособность была 4 из 7, стала 5 из 7 — рост или убыль? рост: жизнеспособность была 4 из 7, стала 5 из 7, стало лучше.
+жизнеспособность 4 из 7 при пороге 2 из 7, убыль 3 из 7: запас 2 из 7, сила страха 3 к 2 — страшно.
+жизнеспособность 4 из 7 при пороге 2 из 7, убыль 1 из 7: запас 2 из 7, сила страха 1 к 2 — страшно.
+the error 3 became 8, the reserve 9 became 5: the quantities part. the projection is declared onto the error. therefore worse.
+жизнеспособность 5 из 7 при пороге 2 из 7, изменение 0: запас 3 из 7 и покой — спокойно.
+ошибка 2 стала 13, запас 14 стал 10: величины разошлись. проекция объявлена на ошибку. значит стало хуже.
+жизнеспособность 4 из 7, шаг убыл на 2: стало 2 из 7, порог 2 пройден — шаг необратим, страшно.
+the error 7 became 2 and the reserve 4 became 9, but viability 3 of 7 fell to 1 of 7: the threshold 2 is crossed — the step is irreversible, afraid.
+цель 12, было 7, стало 10: ошибка 5 стала 2. проекция объявлена: убыль ошибки есть рост жизнеспособности. значит стало лучше.
+жизнеспособность была 5 из 7, стала 4 из 7: убыль, стало хуже.
+viability was 4 of 7 and is 5 of 7: a rise, better.
+viability was 6 of 7 and is 7 of 7 — a rise or a fall? a rise: viability was 6 of 7 and is 7 of 7, better.
+жизнеспособность была 4 из 7, стала 5 из 7: рост, стало лучше.
+жизнеспособность 3 из 7 при пороге 2 из 7, убыль 2 из 7: запас 1 из 7, сила страха 2 к 1 — страшно.
+жизнеспособность 6 из 7 при пороге 2 из 7, убыль 2 из 7: запас 4 из 7, сила страха 2 к 4 — страшно.
+the error 2 became 7, the reserve 8 became 4: the quantities part. the projection is declared onto the error. therefore worse.
+жизнеспособность 7 из 7 при пороге 2 из 7, изменение 0: запас 5 из 7 и покой — спокойно.
+ошибка 1 стала 12, запас 13 стал 9: величины разошлись. проекция объявлена на ошибку. значит стало хуже.
+ошибка 1 стала 15, запас 16 стал 12: величины разошлись. проекция объявлена на ошибку. значит стало хуже.
+the error 6 became 1 and the reserve 3 became 8, but viability 3 of 7 fell to 1 of 7: the threshold 2 is crossed — the step is irreversible, afraid.
+цель 11, было 7, стало 10: ошибка 4 стала 1. проекция объявлена: убыль ошибки есть рост жизнеспособности. значит стало лучше.
+ошибка 11 стала 3 и запас 8 стал 13, но жизнеспособность 3 из 7 упала до 1 из 7: порог 2 пройден — шаг необратим, страшно.
+viability was 3 of 7 and is 4 of 7 — a rise or a fall? a rise: viability was 3 of 7 and is 4 of 7, better.
+viability was 5 of 7 and is 4 of 7 — a rise or a fall? a fall: viability was 5 of 7 and is 4 of 7, worse.
+жизнеспособность была 3 из 7, стала 4 из 7 — рост или убыль? рост: жизнеспособность была 3 из 7, стала 4 из 7, стало лучше.
+жизнеспособность 6 из 7 при пороге 2 из 7, убыль 1 из 7: запас 4 из 7, сила страха 1 к 4 — страшно.
+viability was 6 of 7 and is 7 of 7 — a rise or a fall? a rise: viability was 6 of 7 and is 7 of 7, better.
+viability 4 of 7 with the threshold 2 of 7 and a fall of 1 of 7: the reserve is 2 of 7, the strength of fear is 1 to 2 — afraid.
 жизнеспособность 6 из 7 при пороге 2 из 7, изменение 0: запас 4 из 7 и покой — спокойно.
-the error 2 became 10, the reserve 11 became 7: the quantities part. the projection is declared onto the error. therefore worse.
+ошибка 3 стала 11, запас 12 стал 8: величины разошлись. проекция объявлена на ошибку. значит стало хуже.
+viability 7 of 7 with the threshold 2 of 7 and no change: the reserve is 5 of 7 and it is still — calm.
+viability 4 of 7, the step fell by 2: now 2 of 7, the threshold 2 is crossed — the step is irreversible, afraid.
+цель 10, было 4, стало 7: ошибка 6 стала 3. проекция объявлена: убыль ошибки есть рост жизнеспособности. значит стало лучше.
+ошибка 10 стала 2 и запас 7 стал 12, но жизнеспособность 3 из 7 упала до 1 из 7: порог 2 пройден — шаг необратим, страшно.
+viability was 3 of 7 and is 4 of 7: a rise, better.
+viability was 5 of 7 and is 4 of 7: a fall, worse.
+жизнеспособность была 3 из 7, стала 4 из 7: рост, стало лучше.
+жизнеспособность 5 из 7 при пороге 2 из 7, убыль 3 из 7: запас 3 из 7, сила страха 3 к 3 — страшно.
+viability was 6 of 7 and is 7 of 7: a rise, better.
+viability 6 of 7 with the threshold 2 of 7 and a fall of 2 of 7: the reserve is 4 of 7, the strength of fear is 2 to 4 — afraid.
+жизнеспособность 5 из 7 при пороге 2 из 7, изменение 0: запас 3 из 7 и покой — спокойно.
+ошибка 2 стала 10, запас 11 стал 7: величины разошлись. проекция объявлена на ошибку. значит стало хуже.
 viability 6 of 7 with the threshold 2 of 7 and no change: the reserve is 4 of 7 and it is still — calm.
+the error 1 became 15, the reserve 16 became 12: the quantities part. the projection is declared onto the error. therefore worse.
+цель 9, было 4, стало 7: ошибка 5 стала 2. проекция объявлена: убыль ошибки есть рост жизнеспособности. значит стало лучше.
+ошибка 9 стала 1 и запас 6 стал 11, но жизнеспособность 3 из 7 упала до 1 из 7: порог 2 пройден — шаг необратим, страшно.
+goal 13, was 7, now 10: the error 6 became 3. the projection is declared: a falling error is a rising viability. therefore better.
+viability was 5 of 7 and is 4 of 7 — a rise or a fall? a fall: viability was 5 of 7 and is 4 of 7, worse.
+жизнеспособность была 6 из 7, стала 7 из 7: рост, стало лучше.
+жизнеспособность 4 из 7 при пороге 2 из 7, убыль 2 из 7: запас 2 из 7, сила страха 2 к 2 — страшно.
+viability was 4 of 7 and is 5 of 7 — a rise or a fall? a rise: viability was 4 of 7 and is 5 of 7, better.
+viability 4 of 7 with the threshold 2 of 7 and a fall of 3 of 7: the reserve is 2 of 7, the strength of fear is 3 to 2 — afraid.
+ошибка 1 стала 6, запас 7 стал 3: величины разошлись. проекция объявлена на ошибку. значит стало хуже.
+ошибка 1 стала 9, запас 10 стал 6: величины разошлись. проекция объявлена на ошибку. значит стало хуже.
+viability 5 of 7 with the threshold 2 of 7 and no change: the reserve is 3 of 7 and it is still — calm.
+the error 2 became 13, the reserve 14 became 10: the quantities part. the projection is declared onto the error. therefore worse.
+цель 8, было 4, стало 7: ошибка 4 стала 1. проекция объявлена: убыль ошибки есть рост жизнеспособности. значит стало лучше.
+ошибка 8 стала 3 и запас 5 стал 10, но жизнеспособность 3 из 7 упала до 1 из 7: порог 2 пройден — шаг необратим, страшно.
+goal 12, was 7, now 10: the error 5 became 2. the projection is declared: a falling error is a rising viability. therefore better.
+viability was 5 of 7 and is 4 of 7: a fall, worse.
+жизнеспособность была 4 из 7, стала 5 из 7 — рост или убыль? рост: жизнеспособность была 4 из 7, стала 5 из 7, стало лучше.
+жизнеспособность 3 из 7 при пороге 2 из 7, убыль 1 из 7: запас 1 из 7, сила страха 1 к 1 — страшно.
+viability was 4 of 7 and is 5 of 7: a rise, better.
+viability 3 of 7 with the threshold 2 of 7 and a fall of 2 of 7: the reserve is 1 of 7, the strength of fear is 2 to 1 — afraid.
+жизнеспособность 3 из 7 при пороге 2 из 7, убыль 3 из 7: запас 1 из 7, сила страха 3 к 1 — страшно.
+ошибка 3 стала 8, запас 9 стал 5: величины разошлись. проекция объявлена на ошибку. значит стало хуже.
+viability 7 of 7 with the threshold 2 of 7 and no change: the reserve is 5 of 7 and it is still — calm.
+the error 1 became 12, the reserve 13 became 9: the quantities part. the projection is declared onto the error. therefore worse.
+жизнеспособность 4 из 7, шаг убыл на 2: стало 2 из 7, порог 2 пройден — шаг необратим, страшно.
+ошибка 7 стала 2 и запас 4 стал 9, но жизнеспособность 3 из 7 упала до 1 из 7: порог 2 пройден — шаг необратим, страшно.
+goal 11, was 7, now 10: the error 4 became 1. the projection is declared: a falling error is a rising viability. therefore better.
+the error 11 became 3 and the reserve 8 became 13, but viability 3 of 7 fell to 1 of 7: the threshold 2 is crossed — the step is irreversible, afraid.
+жизнеспособность была 4 из 7, стала 5 из 7: рост, стало лучше.
+viability was 6 of 7 and is 7 of 7: a rise, better.
+viability was 3 of 7 and is 4 of 7 — a rise or a fall? a rise: viability was 3 of 7 and is 4 of 7, better.
+viability 6 of 7 with the threshold 2 of 7 and a fall of 1 of 7: the reserve is 4 of 7, the strength of fear is 1 to 4 — afraid.
+жизнеспособность 5 из 7 при пороге 2 из 7, убыль 1 из 7: запас 3 из 7, сила страха 1 к 3 — страшно.
+the error 1 became 6, the reserve 7 became 3: the quantities part. the projection is declared onto the error. therefore worse.
+viability 6 of 7 with the threshold 2 of 7 and no change: the reserve is 4 of 7 and it is still — calm.
+the error 3 became 11, the reserve 12 became 8: the quantities part. the projection is declared onto the error. therefore worse.
 ошибка 3 стала 14, запас 15 стал 11: величины разошлись. проекция объявлена на ошибку. значит стало хуже.
+ошибка 6 стала 1 и запас 3 стал 8, но жизнеспособность 3 из 7 упала до 1 из 7: порог 2 пройден — шаг необратим, страшно.
+goal 10, was 4, now 7: the error 6 became 3. the projection is declared: a falling error is a rising viability. therefore better.
+the error 10 became 2 and the reserve 7 became 12, but viability 3 of 7 fell to 1 of 7: the threshold 2 is crossed — the step is irreversible, afraid.
+жизнеспособность была 3 из 7, стала 4 из 7 — рост или убыль? рост: жизнеспособность была 3 из 7, стала 4 из 7, стало лучше.
+жизнеспособность была 5 из 7, стала 4 из 7 — рост или убыль? убыль: жизнеспособность была 5 из 7, стала 4 из 7, стало хуже.
+viability was 3 of 7 and is 4 of 7: a rise, better.
+viability 5 of 7 with the threshold 2 of 7 and a fall of 3 of 7: the reserve is 3 of 7, the strength of fear is 3 to 3 — afraid.
+жизнеспособность была 6 из 7, стала 7 из 7 — рост или убыль? рост: жизнеспособность была 6 из 7, стала 7 из 7, стало лучше.
+viability 3 of 7 with the threshold 2 of 7 and a fall of 3 of 7: the reserve is 1 of 7, the strength of fear is 3 to 1 — afraid.
+viability 5 of 7 with the threshold 2 of 7 and no change: the reserve is 3 of 7 and it is still — calm.
+the error 2 became 10, the reserve 11 became 7: the quantities part. the projection is declared onto the error. therefore worse.
 жизнеспособность 7 из 7 при пороге 2 из 7, изменение 0: запас 5 из 7 и покой — спокойно.
 viability 4 of 7, the step fell by 2: now 2 of 7, the threshold 2 is crossed — the step is irreversible, afraid.
 goal 9, was 4, now 7: the error 5 became 2. the projection is declared: a falling error is a rising viability. therefore better.
-ошибка 9 стала 1 и запас 6 стал 11, но жизнеспособность 3 из 7 упала до 1 из 7: порог 2 пройден — шаг необратим, страшно.
-цель 13, было 7, стало 10: ошибка 6 стала 3. проекция объявлена: убыль ошибки есть рост жизнеспособности. значит стало лучше.
-viability was 5 of 7 and is 4 of 7: a fall, worse.
-viability was 4 of 7 and is 5 of 7: a rise, better.
-жизнеспособность была 5 из 7, стала 4 из 7: убыль, стало хуже.
-жизнеспособность была 3 из 7, стала 4 из 7: рост, стало лучше.
-viability 4 of 7 with the threshold 2 of 7 and a fall of 2 of 7: the reserve is 2 of 7, the strength of fear is 2 to 2 — afraid.
-viability was 4 of 7 and is 5 of 7 — a rise or a fall? a rise: viability was 4 of 7 and is 5 of 7, better.
-жизнеспособность 4 из 7 при пороге 2 из 7, убыль 3 из 7: запас 2 из 7, сила страха 3 к 2 — страшно.
-жизнеспособность была 3 из 7, стала 4 из 7 — рост или убыль? рост: жизнеспособность была 3 из 7, стала 4 из 7, стало лучше.
-viability 3 of 7 with the threshold 2 of 7 and a fall of 3 of 7: the reserve is 1 of 7, the strength of fear is 3 to 1 — afraid.
-viability was 6 of 7 and is 7 of 7: a rise, better.
-ошибка 3 стала 8, запас 9 стал 5: величины разошлись. проекция объявлена на ошибку. значит стало хуже.
-жизнеспособность 7 из 7 при пороге 2 из 7, изменение 0: запас 5 из 7 и покой — спокойно.
-the error 3 became 11, the reserve 12 became 8: the quantities part. the projection is declared onto the error. therefore worse.
-viability 7 of 7 with the threshold 2 of 7 and no change: the reserve is 5 of 7 and it is still — calm.
-ошибка 1 стала 15, запас 16 стал 12: величины разошлись. проекция объявлена на ошибку. значит стало хуже.
-жизнеспособность 5 из 7 при пороге 2 из 7, изменение 0: запас 3 из 7 и покой — спокойно.
-the error 6 became 1 and the reserve 3 became 8, but viability 3 of 7 fell to 1 of 7: the threshold 2 is crossed — the step is irreversible, afraid.
-goal 10, was 4, now 7: the error 6 became 3. the projection is declared: a falling error is a rising viability. therefore better.
-ошибка 10 стала 2 и запас 7 стал 12, но жизнеспособность 3 из 7 упала до 1 из 7: порог 2 пройден — шаг необратим, страшно.
-жизнеспособность была 3 из 7, стала 4 из 7: рост, стало лучше.
-viability was 5 of 7 and is 4 of 7 — a rise or a fall? a fall: viability was 5 of 7 and is 4 of 7, worse.
-viability was 4 of 7 and is 5 of 7 — a rise or a fall? a rise: viability was 4 of 7 and is 5 of 7, better.
-жизнеспособность была 5 из 7, стала 4 из 7 — рост или убыль? убыль: жизнеспособность была 5 из 7, стала 4 из 7, стало хуже.
-жизнеспособность была 3 из 7, стала 4 из 7 — рост или убыль? рост: жизнеспособность была 3 из 7, стала 4 из 7, стало лучше.
-viability 5 of 7 with the threshold 2 of 7 and a fall of 3 of 7: the reserve is 3 of 7, the strength of fear is 3 to 3 — afraid.
-viability was 6 of 7 and is 7 of 7: a rise, better.
-жизнеспособность 5 из 7 при пороге 2 из 7, убыль 1 из 7: запас 3 из 7, сила страха 1 к 3 — страшно.
-жизнеспособность была 4 из 7, стала 5 из 7: рост, стало лучше.
-viability 4 of 7 with the threshold 2 of 7 and a fall of 1 of 7: the reserve is 2 of 7, the strength of fear is 1 to 2 — afraid.
-viability was 6 of 7 and is 7 of 7 — a rise or a fall? a rise: viability was 6 of 7 and is 7 of 7, better.
-ошибка 1 стала 9, запас 10 стал 6: величины разошлись. проекция объявлена на ошибку. значит стало хуже.
-жизнеспособность 5 из 7 при пороге 2 из 7, изменение 0: запас 3 из 7 и покой — спокойно.
-the error 1 became 12, the reserve 13 became 9: the quantities part. the projection is declared onto the error. therefore worse.
-viability 5 of 7 with the threshold 2 of 7 and no change: the reserve is 3 of 7 and it is still — calm.
-жизнеспособность 4 из 7, шаг убыл на 2: стало 2 из 7, порог 2 пройден — шаг необратим, страшно.
-цель 8, было 4, стало 7: ошибка 4 стала 1. проекция объявлена: убыль ошибки есть рост жизнеспособности. значит стало лучше.
-the error 7 became 2 and the reserve 4 became 9, but viability 3 of 7 fell to 1 of 7: the threshold 2 is crossed — the step is irreversible, afraid.
-goal 11, was 7, now 10: the error 4 became 1. the projection is declared: a falling error is a rising viability. therefore better.
-ошибка 11 стала 3 и запас 8 стал 13, но жизнеспособность 3 из 7 упала до 1 из 7: порог 2 пройден — шаг необратим, страшно.
-жизнеспособность была 3 из 7, стала 4 из 7 — рост или убыль? рост: жизнеспособность была 3 из 7, стала 4 из 7, стало лучше.
-viability was 5 of 7 and is 4 of 7: a fall, worse.
-viability was 6 of 7 and is 7 of 7: a rise, better.
-жизнеспособность 3 из 7 при пороге 2 из 7, убыль 1 из 7: запас 1 из 7, сила страха 1 к 1 — страшно.
-жизнеспособность была 4 из 7, стала 5 из 7: рост, стало лучше.
-viability 6 of 7 with the threshold 2 of 7 and a fall of 1 of 7: the reserve is 4 of 7, the strength of fear is 1 to 4 — afraid.
-viability was 6 of 7 and is 7 of 7 — a rise or a fall? a rise: viability was 6 of 7 and is 7 of 7, better.
-жизнеспособность 6 из 7 при пороге 2 из 7, убыль 2 из 7: запас 4 из 7, сила страха 2 к 4 — страшно.
-жизнеспособность была 4 из 7, стала 5 из 7 — рост или убыль? рост: жизнеспособность была 4 из 7, стала 5 из 7, стало лучше.
-the error 1 became 6, the reserve 7 became 3: the quantities part. the projection is declared onto the error. therefore worse.
-viability 5 of 7 with the threshold 2 of 7 and no change: the reserve is 3 of 7 and it is still — calm.
-ошибка 2 стала 10, запас 11 стал 7: величины разошлись. проекция объявлена на ошибку. значит стало хуже.
-жизнеспособность 6 из 7 при пороге 2 из 7, изменение 0: запас 4 из 7 и покой — спокойно.
-the error 2 became 13, the reserve 14 became 10: the quantities part. the projection is declared onto the error. therefore worse.
-viability 6 of 7 with the threshold 2 of 7 and no change: the reserve is 4 of 7 and it is still — calm.
-жизнеспособность 4 из 7, шаг убыл на 2: стало 2 из 7, порог 2 пройден — шаг необратим, страшно.
-цель 9, было 4, стало 7: ошибка 5 стала 2. проекция объявлена: убыль ошибки есть рост жизнеспособности. значит стало лучше.
-the error 8 became 3 and the reserve 5 became 10, but viability 3 of 7 fell to 1 of 7: the threshold 2 is crossed — the step is irreversible, afraid.
-goal 12, was 7, now 10: the error 5 became 2. the projection is declared: a falling error is a rising viability. therefore better.
-жизнеспособность была 5 из 7, стала 4 из 7: убыль, стало хуже.
-жизнеспособность была 4 из 7, стала 5 из 7: рост, стало лучше.
-viability was 5 of 7 and is 4 of 7 — a rise or a fall? a fall: viability was 5 of 7 and is 4 of 7, worse.
-viability was 6 of 7 and is 7 of 7 — a rise or a fall? a rise: viability was 6 of 7 and is 7 of 7, better.
-жизнеспособность 4 из 7 при пороге 2 из 7, убыль 2 из 7: запас 2 из 7, сила страха 2 к 2 — страшно.
-жизнеспособность была 4 из 7, стала 5 из 7 — рост или убыль? рост: жизнеспособность была 4 из 7, стала 5 из 7, стало лучше.
-viability 3 of 7 with the threshold 2 of 7 and a fall of 2 of 7: the reserve is 1 of 7, the strength of fear is 2 to 1 — afraid.
-viability was 3 of 7 and is 4 of 7: a rise, better.
-жизнеспособность 3 из 7 при пороге 2 из 7, убыль 3 из 7: запас 1 из 7, сила страха 3 к 1 — страшно.
-жизнеспособность была 6 из 7, стала 7 из 7: рост, стало лучше.
-the error 2 became 7, the reserve 8 became 4: the quantities part. the projection is declared onto the error. therefore worse.
-viability 6 of 7 with the threshold 2 of 7 and no change: the reserve is 4 of 7 and it is still — calm.
-ошибка 3 стала 11, запас 12 стал 8: величины разошлись. проекция объявлена на ошибку. значит стало хуже.
-жизнеспособность 7 из 7 при пороге 2 из 7, изменение 0: запас 5 из 7 и покой — спокойно.
-the error 3 became 14, the reserve 15 became 11: the quantities part. the projection is declared onto the error. therefore worse.
-viability 7 of 7 with the threshold 2 of 7 and no change: the reserve is 5 of 7 and it is still — calm.
-ошибка 6 стала 1 и запас 3 стал 8, но жизнеспособность 3 из 7 упала до 1 из 7: порог 2 пройден — шаг необратим, страшно.
-цель 10, было 4, стало 7: ошибка 6 стала 3. проекция объявлена: убыль ошибки есть рост жизнеспособности. значит стало лучше.
 the error 9 became 1 and the reserve 6 became 11, but viability 3 of 7 fell to 1 of 7: the threshold 2 is crossed — the step is irreversible, afraid.
-goal 13, was 7, now 10: the error 6 became 3. the projection is declared: a falling error is a rising viability. therefore better.
+жизнеспособность была 3 из 7, стала 4 из 7: рост, стало лучше.
+жизнеспособность была 5 из 7, стала 4 из 7: убыль, стало хуже.
+жизнеспособность была 6 из 7, стала 7 из 7 — рост или убыль? рост: жизнеспособность была 6 из 7, стала 7 из 7, стало лучше.
+viability 4 of 7 with the threshold 2 of 7 and a fall of 2 of 7: the reserve is 2 of 7, the strength of fear is 2 to 2 — afraid.
+жизнеспособность была 6 из 7, стала 7 из 7: рост, стало лучше.
+viability 5 of 7 with the threshold 2 of 7 and a fall of 1 of 7: the reserve is 3 of 7, the strength of fear is 1 to 3 — afraid.
+ошибка 2 стала 7, запас 8 стал 4: величины разошлись. проекция объявлена на ошибку. значит стало хуже.
+the error 1 became 9, the reserve 10 became 6: the quantities part. the projection is declared onto the error. therefore worse.
+жизнеспособность 6 из 7 при пороге 2 из 7, изменение 0: запас 4 из 7 и покой — спокойно.
+the error 3 became 14, the reserve 15 became 11: the quantities part. the projection is declared onto the error. therefore worse.
+goal 8, was 4, now 7: the error 4 became 1. the projection is declared: a falling error is a rising viability. therefore better.
+the error 8 became 3 and the reserve 5 became 10, but viability 3 of 7 fell to 1 of 7: the threshold 2 is crossed — the step is irreversible, afraid.
+цель 13, было 7, стало 10: ошибка 6 стала 3. проекция объявлена: убыль ошибки есть рост жизнеспособности. значит стало лучше.
 
 viability was 4 of 7 and is 3 of 7: the strength of feeling is 1 of 7.
 жизнеспособность была 6 из 7, стала 7 из 7: сила чувства 1 из 7.
@@ -692,104 +668,14 @@ viability was 9 of 21 and is 7 of 21: the strength of feeling is 2 of 21.
 viability was 15 of 21 and is 19 of 21 — what is the strength of feeling? viability was 15 of 21 and is 19 of 21: the strength of feeling is 4 of 21.
 первая производная 8, вторая производная -1, разброс 13: тройка чувства (8, -1, 13).
 reflection 3 of 6 with the threshold 1 of 3, coherence 0 with the threshold 1: the evaluation lives, awareness is not claimed.
-рефлексия 4 из 6 при пороге 1 из 3, связность 3 при пороге 1: оценка осознана.
-the error 28 became 5, the reserve 17 became 23: the quantities part. the projection is declared onto the error. therefore better.
-ошибка 35 стала 6, запас 24 стал 30: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
-viability 11 of 21, the step fell by 4: now 7 of 21, the threshold 6 is not crossed — the step is reversible, not afraid.
-жизнеспособность была 7 из 21, стала 3 из 21: сила чувства 4 из 21.
-viability was 10 of 21 and is 9 of 21: the strength of feeling is 1 of 21.
-жизнеспособность была 13 из 21, стала 15 из 21 — какова сила чувства? жизнеспособность была 13 из 21, стала 15 из 21: сила чувства 2 из 21.
-viability was 16 of 21 and is 21 of 21 — what is the strength of feeling? viability was 16 of 21 and is 21 of 21: the strength of feeling is 5 of 21.
-первая производная 10, вторая производная -2, разброс 15: тройка чувства (10, -2, 15).
-reflection 5 of 6 with the threshold 1 of 3, coherence 2 with the threshold 1: the evaluation is aware of itself.
-рефлексия 6 из 6 при пороге 1 из 3, связность 1 при пороге 1: оценка осознана.
-the error 30 became 7, the reserve 19 became 25: the quantities part. the projection is declared onto the error. therefore better.
-ошибка 37 стала 5, запас 26 стал 32: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
-viability 13 of 21, the step fell by 6: now 7 of 21, the threshold 6 is not crossed — the step is reversible, not afraid.
-жизнеспособность была 8 из 21, стала 5 из 21: сила чувства 3 из 21.
-viability was 11 of 21 and is 11 of 21: the strength of feeling is 0 of 21.
-жизнеспособность была 14 из 21, стала 17 из 21 — какова сила чувства? жизнеспособность была 14 из 21, стала 17 из 21: сила чувства 3 из 21.
-first derivative 5, second derivative -2, spread 10: the triple of feeling is (5, -2, 10).
-первая производная 12, вторая производная -3, разброс 17: тройка чувства (12, -3, 17).
-reflection 1 of 6 with the threshold 1 of 3, coherence 0 with the threshold 1: the evaluation lives, awareness is not claimed.
-когеренция выражения и чувства называется апперцепция.
-the error 32 became 6, the reserve 21 became 27: the quantities part. the projection is declared onto the error. therefore better.
-жизнеспособность 9 из 21, шаг убыл на 2: стало 7 из 21, порог 6 не пройден — шаг обратим, не страшно.
-viability 15 of 21, the step fell by 2: now 13 of 21, the threshold 6 is not crossed — the step is reversible, not afraid.
-жизнеспособность была 9 из 21, стала 7 из 21: сила чувства 2 из 21.
-viability was 12 of 21 and is 13 of 21: the strength of feeling is 1 of 21.
-жизнеспособность была 15 из 21, стала 19 из 21 — какова сила чувства? жизнеспособность была 15 из 21, стала 19 из 21: сила чувства 4 из 21.
-first derivative 7, second derivative -3, spread 12: the triple of feeling is (7, -3, 12).
-рефлексия 3 из 6 при пороге 1 из 3, связность 0 при пороге 1: оценка живёт, осознание не утверждается.
-reflection 3 of 6 with the threshold 1 of 3, coherence 2 with the threshold 1: the evaluation is aware of itself.
-ошибка 28 стала 5, запас 17 стал 23: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
-the error 34 became 5, the reserve 23 became 29: the quantities part. the projection is declared onto the error. therefore better.
-жизнеспособность 11 из 21, шаг убыл на 4: стало 7 из 21, порог 6 не пройден — шаг обратим, не страшно.
-viability 17 of 21, the step fell by 4: now 13 of 21, the threshold 6 is not crossed — the step is reversible, not afraid.
-жизнеспособность была 10 из 21, стала 9 из 21: сила чувства 1 из 21.
-viability was 13 of 21 and is 15 of 21: the strength of feeling is 2 of 21.
-жизнеспособность была 16 из 21, стала 21 из 21 — какова сила чувства? жизнеспособность была 16 из 21, стала 21 из 21: сила чувства 5 из 21.
-first derivative 9, second derivative -4, spread 14: the triple of feeling is (9, -4, 14).
-рефлексия 5 из 6 при пороге 1 из 3, связность 2 при пороге 1: оценка осознана.
-reflection 5 of 6 with the threshold 1 of 3, coherence 0 with the threshold 1: the evaluation lives, awareness is not claimed.
-ошибка 30 стала 7, запас 19 стал 25: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
-the error 36 became 7, the reserve 25 became 31: the quantities part. the projection is declared onto the error. therefore better.
-жизнеспособность 13 из 21, шаг убыл на 6: стало 7 из 21, порог 6 не пройден — шаг обратим, не страшно.
-viability was 7 of 21 and is 3 of 21 — what is the strength of feeling? viability was 7 of 21 and is 3 of 21: the strength of feeling is 4 of 21.
-жизнеспособность была 11 из 21, стала 11 из 21: сила чувства 0 из 21.
-viability was 14 of 21 and is 17 of 21: the strength of feeling is 3 of 21.
-первая производная 5, вторая производная -2, разброс 10: тройка чувства (5, -2, 10).
-first derivative 11, second derivative 0, spread 16: the triple of feeling is (11, 0, 16).
-рефлексия 1 из 6 при пороге 1 из 3, связность 0 при пороге 1: оценка живёт, осознание не утверждается.
-the coherence of dynamics and feeling is called affect.
-ошибка 32 стала 6, запас 21 стал 27: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
-viability 8 of 21, the step fell by 1: now 7 of 21, the threshold 6 is not crossed — the step is reversible, not afraid.
-жизнеспособность 15 из 21, шаг убыл на 2: стало 13 из 21, порог 6 не пройден — шаг обратим, не страшно.
-viability was 8 of 21 and is 5 of 21 — what is the strength of feeling? viability was 8 of 21 and is 5 of 21: the strength of feeling is 3 of 21.
-жизнеспособность была 12 из 21, стала 13 из 21: сила чувства 1 из 21.
-viability was 15 of 21 and is 19 of 21: the strength of feeling is 4 of 21.
-первая производная 7, вторая производная -3, разброс 12: тройка чувства (7, -3, 12).
-first derivative 13, second derivative -1, spread 18: the triple of feeling is (13, -1, 18).
-рефлексия 3 из 6 при пороге 1 из 3, связность 2 при пороге 1: оценка осознана.
-the coherence of structure and feeling is called representation.
-ошибка 34 стала 5, запас 23 стал 29: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
-viability 10 of 21, the step fell by 3: now 7 of 21, the threshold 6 is not crossed — the step is reversible, not afraid.
-жизнеспособность 17 из 21, шаг убыл на 4: стало 13 из 21, порог 6 не пройден — шаг обратим, не страшно.
-viability was 9 of 21 and is 7 of 21 — what is the strength of feeling? viability was 9 of 21 and is 7 of 21: the strength of feeling is 2 of 21.
-жизнеспособность была 13 из 21, стала 15 из 21: сила чувства 2 из 21.
-viability was 16 of 21 and is 21 of 21: the strength of feeling is 5 of 21.
-первая производная 9, вторая производная -4, разброс 14: тройка чувства (9, -4, 14).
-reflection 4 of 6 with the threshold 1 of 3, coherence 1 with the threshold 1: the evaluation is aware of itself.
-рефлексия 5 из 6 при пороге 1 из 3, связность 0 при пороге 1: оценка живёт, осознание не утверждается.
-the error 29 became 6, the reserve 18 became 24: the quantities part. the projection is declared onto the error. therefore better.
-ошибка 36 стала 7, запас 25 стал 31: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
-viability 12 of 21, the step fell by 5: now 7 of 21, the threshold 6 is not crossed — the step is reversible, not afraid.
-жизнеспособность была 7 из 21, стала 3 из 21 — какова сила чувства? жизнеспособность была 7 из 21, стала 3 из 21: сила чувства 4 из 21.
-viability was 10 of 21 and is 9 of 21 — what is the strength of feeling? viability was 10 of 21 and is 9 of 21: the strength of feeling is 1 of 21.
-жизнеспособность была 14 из 21, стала 17 из 21: сила чувства 3 из 21.
-first derivative 4, second derivative -4, spread 9: the triple of feeling is (4, -4, 9).
-первая производная 11, вторая производная 0, разброс 16: тройка чувства (11, 0, 16).
-reflection 6 of 6 with the threshold 1 of 3, coherence 3 with the threshold 1: the evaluation is aware of itself.
-когеренция движения и чувства называется аффект.
-the error 31 became 5, the reserve 20 became 26: the quantities part. the projection is declared onto the error. therefore better.
-жизнеспособность 8 из 21, шаг убыл на 1: стало 7 из 21, порог 6 не пройден — шаг обратим, не страшно.
-viability 14 of 21, the step fell by 1: now 13 of 21, the threshold 6 is not crossed — the step is reversible, not afraid.
-жизнеспособность была 8 из 21, стала 5 из 21 — какова сила чувства? жизнеспособность была 8 из 21, стала 5 из 21: сила чувства 3 из 21.
-viability was 11 of 21 and is 11 of 21 — what is the strength of feeling? viability was 11 of 21 and is 11 of 21: the strength of feeling is 0 of 21.
-жизнеспособность была 15 из 21, стала 19 из 21: сила чувства 4 из 21.
-first derivative 6, second derivative 0, spread 11: the triple of feeling is (6, 0, 11).
-первая производная 13, вторая производная -1, разброс 18: тройка чувства (13, -1, 18).
-reflection 2 of 6 with the threshold 1 of 3, coherence 1 with the threshold 1: the evaluation is aware of itself.
-когеренция формы и чувства называется репрезентация.
-the error 33 became 7, the reserve 22 became 28: the quantities part. the projection is declared onto the error. therefore better.
-жизнеспособность 10 из 21, шаг убыл на 3: стало 7 из 21, порог 6 не пройден — шаг обратим, не страшно.
-viability 16 of 21, the step fell by 3: now 13 of 21, the threshold 6 is not crossed — the step is reversible, not afraid.
-жизнеспособность была 9 из 21, стала 7 из 21 — какова сила чувства? жизнеспособность была 9 из 21, стала 7 из 21: сила чувства 2 из 21.
-viability was 12 of 21 and is 13 of 21 — what is the strength of feeling? viability was 12 of 21 and is 13 of 21: the strength of feeling is 1 of 21.
-жизнеспособность была 16 из 21, стала 21 из 21: сила чувства 5 из 21.
-first derivative 8, second derivative -1, spread 13: the triple of feeling is (8, -1, 13).
-рефлексия 4 из 6 при пороге 1 из 3, связность 1 при пороге 1: оценка осознана.
-reflection 4 of 6 with the threshold 1 of 3, coherence 3 with the threshold 1: the evaluation is aware of itself.
+ошибка 31 стала 5, запас 20 стал 26: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
+the error 37 became 5, the reserve 26 became 32: the quantities part. the projection is declared onto the error. therefore better.
+жизнеспособность 14 из 21, шаг убыл на 1: стало 13 из 21, порог 6 не пройден — шаг обратим, не страшно.
+viability was 8 of 21 and is 5 of 21: the strength of feeling is 3 of 21.
+жизнеспособность была 11 из 21, стала 11 из 21 — какова сила чувства? жизнеспособность была 11 из 21, стала 11 из 21: сила чувства 0 из 21.
+viability was 14 of 21 and is 17 of 21 — what is the strength of feeling? viability was 14 of 21 and is 17 of 21: the strength of feeling is 3 of 21.
+первая производная 6, вторая производная 0, разброс 11: тройка чувства (6, 0, 11).
+first derivative 12, second derivative -3, spread 17: the triple of feeling is (12, -3, 17).
 ошибка 29 стала 6, запас 18 стал 24: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
 the error 35 became 6, the reserve 24 became 30: the quantities part. the projection is declared onto the error. therefore better.
 жизнеспособность 12 из 21, шаг убыл на 5: стало 7 из 21, порог 6 не пройден — шаг обратим, не страшно.
@@ -799,17 +685,89 @@ viability was 13 of 21 and is 15 of 21 — what is the strength of feeling? viab
 первая производная 4, вторая производная -4, разброс 9: тройка чувства (4, -4, 9).
 first derivative 10, second derivative -2, spread 15: the triple of feeling is (10, -2, 15).
 рефлексия 6 из 6 при пороге 1 из 3, связность 3 при пороге 1: оценка осознана.
-reflection 6 of 6 with the threshold 1 of 3, coherence 1 with the threshold 1: the evaluation is aware of itself.
-ошибка 31 стала 5, запас 20 стал 26: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
-the error 37 became 5, the reserve 26 became 32: the quantities part. the projection is declared onto the error. therefore better.
-жизнеспособность 14 из 21, шаг убыл на 1: стало 13 из 21, порог 6 не пройден — шаг обратим, не страшно.
-viability was 8 of 21 and is 5 of 21: the strength of feeling is 3 of 21.
-жизнеспособность была 11 из 21, стала 11 из 21 — какова сила чувства? жизнеспособность была 11 из 21, стала 11 из 21: сила чувства 0 из 21.
-viability was 14 of 21 and is 17 of 21 — what is the strength of feeling? viability was 14 of 21 and is 17 of 21: the strength of feeling is 3 of 21.
-первая производная 6, вторая производная 0, разброс 11: тройка чувства (6, 0, 11).
-first derivative 12, second derivative -3, spread 17: the triple of feeling is (12, -3, 17).
-рефлексия 2 из 6 при пороге 1 из 3, связность 1 при пороге 1: оценка осознана.
-the coherence of articulation and feeling is called apperception.
+the error 33 became 7, the reserve 22 became 28: the quantities part. the projection is declared onto the error. therefore better.
+жизнеспособность 10 из 21, шаг убыл на 3: стало 7 из 21, порог 6 не пройден — шаг обратим, не страшно.
+viability 16 of 21, the step fell by 3: now 13 of 21, the threshold 6 is not crossed — the step is reversible, not afraid.
+жизнеспособность была 9 из 21, стала 7 из 21 — какова сила чувства? жизнеспособность была 9 из 21, стала 7 из 21: сила чувства 2 из 21.
+viability was 12 of 21 and is 13 of 21 — what is the strength of feeling? viability was 12 of 21 and is 13 of 21: the strength of feeling is 1 of 21.
+жизнеспособность была 16 из 21, стала 21 из 21: сила чувства 5 из 21.
+first derivative 8, second derivative -1, spread 13: the triple of feeling is (8, -1, 13).
+рефлексия 4 из 6 при пороге 1 из 3, связность 1 при пороге 1: оценка осознана.
+the error 31 became 5, the reserve 20 became 26: the quantities part. the projection is declared onto the error. therefore better.
+жизнеспособность 8 из 21, шаг убыл на 1: стало 7 из 21, порог 6 не пройден — шаг обратим, не страшно.
+viability 14 of 21, the step fell by 1: now 13 of 21, the threshold 6 is not crossed — the step is reversible, not afraid.
+жизнеспособность была 8 из 21, стала 5 из 21 — какова сила чувства? жизнеспособность была 8 из 21, стала 5 из 21: сила чувства 3 из 21.
+viability was 11 of 21 and is 11 of 21 — what is the strength of feeling? viability was 11 of 21 and is 11 of 21: the strength of feeling is 0 of 21.
+жизнеспособность была 15 из 21, стала 19 из 21: сила чувства 4 из 21.
+first derivative 6, second derivative 0, spread 11: the triple of feeling is (6, 0, 11).
+первая производная 13, вторая производная -1, разброс 18: тройка чувства (13, -1, 18).
+the error 29 became 6, the reserve 18 became 24: the quantities part. the projection is declared onto the error. therefore better.
+ошибка 36 стала 7, запас 25 стал 31: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
+viability 12 of 21, the step fell by 5: now 7 of 21, the threshold 6 is not crossed — the step is reversible, not afraid.
+жизнеспособность была 7 из 21, стала 3 из 21 — какова сила чувства? жизнеспособность была 7 из 21, стала 3 из 21: сила чувства 4 из 21.
+viability was 10 of 21 and is 9 of 21 — what is the strength of feeling? viability was 10 of 21 and is 9 of 21: the strength of feeling is 1 of 21.
+жизнеспособность была 14 из 21, стала 17 из 21: сила чувства 3 из 21.
+first derivative 4, second derivative -4, spread 9: the triple of feeling is (4, -4, 9).
+первая производная 11, вторая производная 0, разброс 16: тройка чувства (11, 0, 16).
+reflection 6 of 6 with the threshold 1 of 3, coherence 3 with the threshold 1: the evaluation is aware of itself.
+ошибка 34 стала 5, запас 23 стал 29: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
+viability 10 of 21, the step fell by 3: now 7 of 21, the threshold 6 is not crossed — the step is reversible, not afraid.
+жизнеспособность 17 из 21, шаг убыл на 4: стало 13 из 21, порог 6 не пройден — шаг обратим, не страшно.
+viability was 9 of 21 and is 7 of 21 — what is the strength of feeling? viability was 9 of 21 and is 7 of 21: the strength of feeling is 2 of 21.
+жизнеспособность была 13 из 21, стала 15 из 21: сила чувства 2 из 21.
+viability was 16 of 21 and is 21 of 21: the strength of feeling is 5 of 21.
+первая производная 9, вторая производная -4, разброс 14: тройка чувства (9, -4, 14).
+reflection 4 of 6 with the threshold 1 of 3, coherence 1 with the threshold 1: the evaluation is aware of itself.
+ошибка 32 стала 6, запас 21 стал 27: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
+viability 8 of 21, the step fell by 1: now 7 of 21, the threshold 6 is not crossed — the step is reversible, not afraid.
+жизнеспособность 15 из 21, шаг убыл на 2: стало 13 из 21, порог 6 не пройден — шаг обратим, не страшно.
+viability was 8 of 21 and is 5 of 21 — what is the strength of feeling? viability was 8 of 21 and is 5 of 21: the strength of feeling is 3 of 21.
+жизнеспособность была 12 из 21, стала 13 из 21: сила чувства 1 из 21.
+viability was 15 of 21 and is 19 of 21: the strength of feeling is 4 of 21.
+первая производная 7, вторая производная -3, разброс 12: тройка чувства (7, -3, 12).
+first derivative 13, second derivative -1, spread 18: the triple of feeling is (13, -1, 18).
+ошибка 30 стала 7, запас 19 стал 25: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
+the error 36 became 7, the reserve 25 became 31: the quantities part. the projection is declared onto the error. therefore better.
+жизнеспособность 13 из 21, шаг убыл на 6: стало 7 из 21, порог 6 не пройден — шаг обратим, не страшно.
+viability was 7 of 21 and is 3 of 21 — what is the strength of feeling? viability was 7 of 21 and is 3 of 21: the strength of feeling is 4 of 21.
+жизнеспособность была 11 из 21, стала 11 из 21: сила чувства 0 из 21.
+viability was 14 of 21 and is 17 of 21: the strength of feeling is 3 of 21.
+первая производная 5, вторая производная -2, разброс 10: тройка чувства (5, -2, 10).
+first derivative 11, second derivative 0, spread 16: the triple of feeling is (11, 0, 16).
+ошибка 28 стала 5, запас 17 стал 23: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
+the error 34 became 5, the reserve 23 became 29: the quantities part. the projection is declared onto the error. therefore better.
+жизнеспособность 11 из 21, шаг убыл на 4: стало 7 из 21, порог 6 не пройден — шаг обратим, не страшно.
+viability 17 of 21, the step fell by 4: now 13 of 21, the threshold 6 is not crossed — the step is reversible, not afraid.
+жизнеспособность была 10 из 21, стала 9 из 21: сила чувства 1 из 21.
+viability was 13 of 21 and is 15 of 21: the strength of feeling is 2 of 21.
+жизнеспособность была 16 из 21, стала 21 из 21 — какова сила чувства? жизнеспособность была 16 из 21, стала 21 из 21: сила чувства 5 из 21.
+first derivative 9, second derivative -4, spread 14: the triple of feeling is (9, -4, 14).
+рефлексия 5 из 6 при пороге 1 из 3, связность 2 при пороге 1: оценка осознана.
+the error 32 became 6, the reserve 21 became 27: the quantities part. the projection is declared onto the error. therefore better.
+жизнеспособность 9 из 21, шаг убыл на 2: стало 7 из 21, порог 6 не пройден — шаг обратим, не страшно.
+viability 15 of 21, the step fell by 2: now 13 of 21, the threshold 6 is not crossed — the step is reversible, not afraid.
+жизнеспособность была 9 из 21, стала 7 из 21: сила чувства 2 из 21.
+viability was 12 of 21 and is 13 of 21: the strength of feeling is 1 of 21.
+жизнеспособность была 15 из 21, стала 19 из 21 — какова сила чувства? жизнеспособность была 15 из 21, стала 19 из 21: сила чувства 4 из 21.
+first derivative 7, second derivative -3, spread 12: the triple of feeling is (7, -3, 12).
+рефлексия 3 из 6 при пороге 1 из 3, связность 0 при пороге 1: оценка живёт, осознание не утверждается.
+the error 30 became 7, the reserve 19 became 25: the quantities part. the projection is declared onto the error. therefore better.
+ошибка 37 стала 5, запас 26 стал 32: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
+viability 13 of 21, the step fell by 6: now 7 of 21, the threshold 6 is not crossed — the step is reversible, not afraid.
+жизнеспособность была 8 из 21, стала 5 из 21: сила чувства 3 из 21.
+viability was 11 of 21 and is 11 of 21: the strength of feeling is 0 of 21.
+жизнеспособность была 14 из 21, стала 17 из 21 — какова сила чувства? жизнеспособность была 14 из 21, стала 17 из 21: сила чувства 3 из 21.
+first derivative 5, second derivative -2, spread 10: the triple of feeling is (5, -2, 10).
+первая производная 12, вторая производная -3, разброс 17: тройка чувства (12, -3, 17).
+the error 28 became 5, the reserve 17 became 23: the quantities part. the projection is declared onto the error. therefore better.
+ошибка 35 стала 6, запас 24 стал 30: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
+viability 11 of 21, the step fell by 4: now 7 of 21, the threshold 6 is not crossed — the step is reversible, not afraid.
+жизнеспособность была 7 из 21, стала 3 из 21: сила чувства 4 из 21.
+viability was 10 of 21 and is 9 of 21: the strength of feeling is 1 of 21.
+жизнеспособность была 13 из 21, стала 15 из 21 — какова сила чувства? жизнеспособность была 13 из 21, стала 15 из 21: сила чувства 2 из 21.
+viability was 16 of 21 and is 21 of 21 — what is the strength of feeling? viability was 16 of 21 and is 21 of 21: the strength of feeling is 5 of 21.
+первая производная 10, вторая производная -2, разброс 15: тройка чувства (10, -2, 15).
+reflection 5 of 6 with the threshold 1 of 3, coherence 2 with the threshold 1: the evaluation is aware of itself.
 ошибка 33 стала 7, запас 22 стал 28: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
 viability 9 of 21, the step fell by 2: now 7 of 21, the threshold 6 is not crossed — the step is reversible, not afraid.
 жизнеспособность 16 из 21, шаг убыл на 3: стало 13 из 21, порог 6 не пройден — шаг обратим, не страшно.
@@ -963,126 +921,100 @@ the error 29 became 3 and the reserve 20 became 37, but viability 9 of 28 fell t
 viability was 14 of 28 and is 14 of 28: the strength of feeling is 0 of 28.
 жизнеспособность была 18 из 28, стала 22 из 28 — какова сила чувства? жизнеспособность была 18 из 28, стала 22 из 28: сила чувства 4 из 28.
 first derivative 14, second derivative -1, spread 20: the triple of feeling is (14, -1, 20).
-рефлексия 1 из 6 при пороге 1 из 3, связность 0 при пороге 1: оценка живёт, осознание не утверждается.
-the error 40 became 8, the reserve 25 became 32: the quantities part. the projection is declared onto the error. therefore better.
-жизнеспособность 10 из 28, шаг убыл на 1: стало 9 из 28, порог 8 не пройден — шаг обратим, не страшно.
-viability 18 of 28, the step fell by 1: now 17 of 28, the threshold 8 is not crossed — the step is reversible, not afraid.
-жизнеспособность была 12 из 28, стала 10 из 28 — какова сила чувства? жизнеспособность была 12 из 28, стала 10 из 28: сила чувства 2 из 28.
-viability was 16 of 28 and is 18 of 28 — what is the strength of feeling? viability was 16 of 28 and is 18 of 28: the strength of feeling is 2 of 28.
-первая производная 11, вторая производная -2, разброс 17: тройка чувства (11, -2, 17).
-reflection 3 of 6 with the threshold 1 of 3, coherence 0 with the threshold 1: the evaluation lives, awareness is not claimed.
-когеренция выражения и чувства называется апперцепция.
-the error 45 became 7, the reserve 30 became 37: the quantities part. the projection is declared onto the error. therefore better.
-жизнеспособность 15 из 28, шаг убыл на 6: стало 9 из 28, порог 8 не пройден — шаг обратим, не страшно.
-viability was 10 of 28 and is 6 of 28 — what is the strength of feeling? viability was 10 of 28 and is 6 of 28: the strength of feeling is 4 of 28.
-жизнеспособность была 15 из 28, стала 16 из 28: сила чувства 1 из 28.
-first derivative 7, second derivative -5, spread 13: the triple of feeling is (7, -5, 13).
-первая производная 16, вторая производная -2, разброс 22: тройка чувства (16, -2, 22).
-reflection 2 of 6 with the threshold 1 of 3, coherence 1 with the threshold 1: the evaluation is aware of itself.
-ошибка 42 стала 7, запас 27 стал 34: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
-viability 11 of 28, the step fell by 2: now 9 of 28, the threshold 8 is not crossed — the step is reversible, not afraid.
-жизнеспособность была 9 из 28, стала 4 из 28: сила чувства 5 из 28.
-viability was 13 of 28 and is 12 of 28: the strength of feeling is 1 of 28.
-жизнеспособность была 17 из 28, стала 20 из 28 — какова сила чувства? жизнеспособность была 17 из 28, стала 20 из 28: сила чувства 3 из 28.
-first derivative 12, second derivative -5, spread 18: the triple of feeling is (12, -5, 18).
-рефлексия 5 из 6 при пороге 1 из 3, связность 2 при пороге 1: оценка осознана.
-the coherence of structure and feeling is called representation.
-ошибка 47 стала 9, запас 32 стал 39: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
-viability 16 of 28, the step fell by 7: now 9 of 28, the threshold 8 is not crossed — the step is reversible, not afraid.
-жизнеспособность была 11 из 28, стала 8 из 28 — какова сила чувства? жизнеспособность была 11 из 28, стала 8 из 28: сила чувства 3 из 28.
-viability was 15 of 28 and is 16 of 28 — what is the strength of feeling? viability was 15 of 28 and is 16 of 28: the strength of feeling is 1 of 28.
-первая производная 9, вторая производная -1, разброс 15: тройка чувства (9, -1, 15).
-reflection 1 of 6 with the threshold 1 of 3, coherence 2 with the threshold 1: the evaluation lives, awareness is not claimed.
-рефлексия 4 из 6 при пороге 1 из 3, связность 3 при пороге 1: оценка осознана.
-the error 43 became 8, the reserve 28 became 35: the quantities part. the projection is declared onto the error. therefore better.
-жизнеспособность 13 из 28, шаг убыл на 4: стало 9 из 28, порог 8 не пройден — шаг обратим, не страшно.
-viability was 9 of 28 and is 4 of 28 — what is the strength of feeling? viability was 9 of 28 and is 4 of 28: the strength of feeling is 5 of 28.
-жизнеспособность была 14 из 28, стала 14 из 28: сила чувства 0 из 28.
-viability was 18 of 28 and is 22 of 28: the strength of feeling is 4 of 28.
-первая производная 14, вторая производная -1, разброс 20: тройка чувства (14, -1, 20).
-reflection 6 of 6 with the threshold 1 of 3, coherence 3 with the threshold 1: the evaluation is aware of itself.
-ошибка 40 стала 8, запас 25 стал 32: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
-the error 48 became 7, the reserve 33 became 40: the quantities part. the projection is declared onto the error. therefore better.
-жизнеспособность 18 из 28, шаг убыл на 1: стало 17 из 28, порог 8 не пройден — шаг обратим, не страшно.
-viability was 12 of 28 and is 10 of 28: the strength of feeling is 2 of 28.
-жизнеспособность была 16 из 28, стала 18 из 28 — какова сила чувства? жизнеспособность была 16 из 28, стала 18 из 28: сила чувства 2 из 28.
-first derivative 10, second derivative -4, spread 16: the triple of feeling is (10, -4, 16).
-рефлексия 3 из 6 при пороге 1 из 3, связность 0 при пороге 1: оценка живёт, осознание не утверждается.
-the coherence of dynamics and feeling is called affect.
 ошибка 45 стала 7, запас 30 стал 37: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
 viability 14 of 28, the step fell by 5: now 9 of 28, the threshold 8 is not crossed — the step is reversible, not afraid.
 жизнеспособность была 10 из 28, стала 6 из 28 — какова сила чувства? жизнеспособность была 10 из 28, стала 6 из 28: сила чувства 4 из 28.
 viability was 14 of 28 and is 14 of 28 — what is the strength of feeling? viability was 14 of 28 and is 14 of 28: the strength of feeling is 0 of 28.
 первая производная 7, вторая производная -5, разброс 13: тройка чувства (7, -5, 13).
 first derivative 15, second derivative -4, spread 21: the triple of feeling is (15, -4, 21).
-рефлексия 2 из 6 при пороге 1 из 3, связность 1 при пороге 1: оценка осознана.
-the error 41 became 9, the reserve 26 became 33: the quantities part. the projection is declared onto the error. therefore better.
-жизнеспособность 11 из 28, шаг убыл на 2: стало 9 из 28, порог 8 не пройден — шаг обратим, не страшно.
-viability 19 of 28, the step fell by 2: now 17 of 28, the threshold 8 is not crossed — the step is reversible, not afraid.
-жизнеспособность была 13 из 28, стала 12 из 28: сила чувства 1 из 28.
-viability was 17 of 28 and is 20 of 28: the strength of feeling is 3 of 28.
-первая производная 12, вторая производная -5, разброс 18: тройка чувства (12, -5, 18).
-reflection 4 of 6 with the threshold 1 of 3, coherence 1 with the threshold 1: the evaluation is aware of itself.
-когеренция формы и чувства называется репрезентация.
-the error 46 became 8, the reserve 31 became 38: the quantities part. the projection is declared onto the error. therefore better.
-жизнеспособность 16 из 28, шаг убыл на 7: стало 9 из 28, порог 8 не пройден — шаг обратим, не страшно.
-viability was 11 of 28 and is 8 of 28: the strength of feeling is 3 of 28.
-жизнеспособность была 15 из 28, стала 16 из 28 — какова сила чувства? жизнеспособность была 15 из 28, стала 16 из 28: сила чувства 1 из 28.
-first derivative 8, second derivative -3, spread 14: the triple of feeling is (8, -3, 14).
-рефлексия 1 из 6 при пороге 1 из 3, связность 2 при пороге 1: оценка живёт, осознание не утверждается.
-reflection 3 of 6 with the threshold 1 of 3, coherence 2 with the threshold 1: the evaluation is aware of itself.
-ошибка 43 стала 8, запас 28 стал 35: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
-viability 12 of 28, the step fell by 3: now 9 of 28, the threshold 8 is not crossed — the step is reversible, not afraid.
-жизнеспособность была 9 из 28, стала 4 из 28 — какова сила чувства? жизнеспособность была 9 из 28, стала 4 из 28: сила чувства 5 из 28.
-viability was 13 of 28 and is 12 of 28 — what is the strength of feeling? viability was 13 of 28 and is 12 of 28: the strength of feeling is 1 of 28.
-жизнеспособность была 18 из 28, стала 22 из 28: сила чувства 4 из 28.
-first derivative 13, second derivative -3, spread 19: the triple of feeling is (13, -3, 19).
-рефлексия 6 из 6 при пороге 1 из 3, связность 3 при пороге 1: оценка осознана.
-the error 39 became 7, the reserve 24 became 31: the quantities part. the projection is declared onto the error. therefore better.
-ошибка 48 стала 7, запас 33 стал 40: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
-viability 17 of 28, the step fell by 8: now 9 of 28, the threshold 8 is not crossed — the step is reversible, not afraid.
-жизнеспособность была 12 из 28, стала 10 из 28: сила чувства 2 из 28.
-viability was 16 of 28 and is 18 of 28: the strength of feeling is 2 of 28.
-первая производная 10, вторая производная -4, разброс 16: тройка чувства (10, -4, 16).
-reflection 2 of 6 with the threshold 1 of 3, coherence 3 with the threshold 1: the evaluation is aware of itself.
-когеренция движения и чувства называется аффект.
-the error 44 became 9, the reserve 29 became 36: the quantities part. the projection is declared onto the error. therefore better.
-жизнеспособность 14 из 28, шаг убыл на 5: стало 9 из 28, порог 8 не пройден — шаг обратим, не страшно.
-viability was 10 of 28 and is 6 of 28: the strength of feeling is 4 of 28.
-жизнеспособность была 14 из 28, стала 14 из 28 — какова сила чувства? жизнеспособность была 14 из 28, стала 14 из 28: сила чувства 0 из 28.
-viability was 18 of 28 and is 22 of 28 — what is the strength of feeling? viability was 18 of 28 and is 22 of 28: the strength of feeling is 4 of 28.
-первая производная 15, вторая производная -4, разброс 21: тройка чувства (15, -4, 21).
-reflection 1 of 6 with the threshold 1 of 3, coherence 0 with the threshold 1: the evaluation lives, awareness is not claimed.
-ошибка 41 стала 9, запас 26 стал 33: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
-viability 10 of 28, the step fell by 1: now 9 of 28, the threshold 8 is not crossed — the step is reversible, not afraid.
-жизнеспособность 19 из 28, шаг убыл на 2: стало 17 из 28, порог 8 не пройден — шаг обратим, не страшно.
-viability was 12 of 28 and is 10 of 28 — what is the strength of feeling? viability was 12 of 28 and is 10 of 28: the strength of feeling is 2 of 28.
-жизнеспособность была 17 из 28, стала 20 из 28: сила чувства 3 из 28.
-first derivative 11, second derivative -2, spread 17: the triple of feeling is (11, -2, 17).
-рефлексия 4 из 6 при пороге 1 из 3, связность 1 при пороге 1: оценка осознана.
-the coherence of articulation and feeling is called apperception.
 ошибка 46 стала 8, запас 31 стал 38: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
 viability 15 of 28, the step fell by 6: now 9 of 28, the threshold 8 is not crossed — the step is reversible, not afraid.
 жизнеспособность была 11 из 28, стала 8 из 28: сила чувства 3 из 28.
 viability was 15 of 28 and is 16 of 28: the strength of feeling is 1 of 28.
 первая производная 8, вторая производная -3, разброс 14: тройка чувства (8, -3, 14).
 first derivative 16, second derivative -2, spread 22: the triple of feeling is (16, -2, 22).
-рефлексия 3 из 6 при пороге 1 из 3, связность 2 при пороге 1: оценка осознана.
+ошибка 47 стала 9, запас 32 стал 39: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
+viability 16 of 28, the step fell by 7: now 9 of 28, the threshold 8 is not crossed — the step is reversible, not afraid.
+жизнеспособность была 11 из 28, стала 8 из 28 — какова сила чувства? жизнеспособность была 11 из 28, стала 8 из 28: сила чувства 3 из 28.
+viability was 15 of 28 and is 16 of 28 — what is the strength of feeling? viability was 15 of 28 and is 16 of 28: the strength of feeling is 1 of 28.
+первая производная 9, вторая производная -1, разброс 15: тройка чувства (9, -1, 15).
+the error 39 became 7, the reserve 24 became 31: the quantities part. the projection is declared onto the error. therefore better.
+ошибка 48 стала 7, запас 33 стал 40: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
+viability 17 of 28, the step fell by 8: now 9 of 28, the threshold 8 is not crossed — the step is reversible, not afraid.
+жизнеспособность была 12 из 28, стала 10 из 28: сила чувства 2 из 28.
+viability was 16 of 28 and is 18 of 28: the strength of feeling is 2 of 28.
+первая производная 10, вторая производная -4, разброс 16: тройка чувства (10, -4, 16).
+the error 40 became 8, the reserve 25 became 32: the quantities part. the projection is declared onto the error. therefore better.
+жизнеспособность 10 из 28, шаг убыл на 1: стало 9 из 28, порог 8 не пройден — шаг обратим, не страшно.
+viability 18 of 28, the step fell by 1: now 17 of 28, the threshold 8 is not crossed — the step is reversible, not afraid.
+жизнеспособность была 12 из 28, стала 10 из 28 — какова сила чувства? жизнеспособность была 12 из 28, стала 10 из 28: сила чувства 2 из 28.
+viability was 16 of 28 and is 18 of 28 — what is the strength of feeling? viability was 16 of 28 and is 18 of 28: the strength of feeling is 2 of 28.
+первая производная 11, вторая производная -2, разброс 17: тройка чувства (11, -2, 17).
+the error 41 became 9, the reserve 26 became 33: the quantities part. the projection is declared onto the error. therefore better.
+жизнеспособность 11 из 28, шаг убыл на 2: стало 9 из 28, порог 8 не пройден — шаг обратим, не страшно.
+viability 19 of 28, the step fell by 2: now 17 of 28, the threshold 8 is not crossed — the step is reversible, not afraid.
+жизнеспособность была 13 из 28, стала 12 из 28: сила чувства 1 из 28.
+viability was 17 of 28 and is 20 of 28: the strength of feeling is 3 of 28.
+первая производная 12, вторая производная -5, разброс 18: тройка чувства (12, -5, 18).
 the error 42 became 7, the reserve 27 became 34: the quantities part. the projection is declared onto the error. therefore better.
 жизнеспособность 12 из 28, шаг убыл на 3: стало 9 из 28, порог 8 не пройден — шаг обратим, не страшно.
 viability was 9 of 28 and is 4 of 28: the strength of feeling is 5 of 28.
 жизнеспособность была 13 из 28, стала 12 из 28 — какова сила чувства? жизнеспособность была 13 из 28, стала 12 из 28: сила чувства 1 из 28.
 viability was 17 of 28 and is 20 of 28 — what is the strength of feeling? viability was 17 of 28 and is 20 of 28: the strength of feeling is 3 of 28.
 первая производная 13, вторая производная -3, разброс 19: тройка чувства (13, -3, 19).
-reflection 5 of 6 with the threshold 1 of 3, coherence 2 with the threshold 1: the evaluation is aware of itself.
+the error 43 became 8, the reserve 28 became 35: the quantities part. the projection is declared onto the error. therefore better.
+жизнеспособность 13 из 28, шаг убыл на 4: стало 9 из 28, порог 8 не пройден — шаг обратим, не страшно.
+viability was 9 of 28 and is 4 of 28 — what is the strength of feeling? viability was 9 of 28 and is 4 of 28: the strength of feeling is 5 of 28.
+жизнеспособность была 14 из 28, стала 14 из 28: сила чувства 0 из 28.
+viability was 18 of 28 and is 22 of 28: the strength of feeling is 4 of 28.
+первая производная 14, вторая производная -1, разброс 20: тройка чувства (14, -1, 20).
+the error 44 became 9, the reserve 29 became 36: the quantities part. the projection is declared onto the error. therefore better.
+жизнеспособность 14 из 28, шаг убыл на 5: стало 9 из 28, порог 8 не пройден — шаг обратим, не страшно.
+viability was 10 of 28 and is 6 of 28: the strength of feeling is 4 of 28.
+жизнеспособность была 14 из 28, стала 14 из 28 — какова сила чувства? жизнеспособность была 14 из 28, стала 14 из 28: сила чувства 0 из 28.
+viability was 18 of 28 and is 22 of 28 — what is the strength of feeling? viability was 18 of 28 and is 22 of 28: the strength of feeling is 4 of 28.
+первая производная 15, вторая производная -4, разброс 21: тройка чувства (15, -4, 21).
+the error 45 became 7, the reserve 30 became 37: the quantities part. the projection is declared onto the error. therefore better.
+жизнеспособность 15 из 28, шаг убыл на 6: стало 9 из 28, порог 8 не пройден — шаг обратим, не страшно.
+viability was 10 of 28 and is 6 of 28 — what is the strength of feeling? viability was 10 of 28 and is 6 of 28: the strength of feeling is 4 of 28.
+жизнеспособность была 15 из 28, стала 16 из 28: сила чувства 1 из 28.
+first derivative 7, second derivative -5, spread 13: the triple of feeling is (7, -5, 13).
+первая производная 16, вторая производная -2, разброс 22: тройка чувства (16, -2, 22).
+the error 46 became 8, the reserve 31 became 38: the quantities part. the projection is declared onto the error. therefore better.
+жизнеспособность 16 из 28, шаг убыл на 7: стало 9 из 28, порог 8 не пройден — шаг обратим, не страшно.
+viability was 11 of 28 and is 8 of 28: the strength of feeling is 3 of 28.
+жизнеспособность была 15 из 28, стала 16 из 28 — какова сила чувства? жизнеспособность была 15 из 28, стала 16 из 28: сила чувства 1 из 28.
+first derivative 8, second derivative -3, spread 14: the triple of feeling is (8, -3, 14).
 ошибка 39 стала 7, запас 24 стал 31: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
 the error 47 became 9, the reserve 32 became 39: the quantities part. the projection is declared onto the error. therefore better.
 жизнеспособность 17 из 28, шаг убыл на 8: стало 9 из 28, порог 8 не пройден — шаг обратим, не страшно.
 viability was 11 of 28 and is 8 of 28 — what is the strength of feeling? viability was 11 of 28 and is 8 of 28: the strength of feeling is 3 of 28.
 жизнеспособность была 16 из 28, стала 18 из 28: сила чувства 2 из 28.
 first derivative 9, second derivative -1, spread 15: the triple of feeling is (9, -1, 15).
-рефлексия 2 из 6 при пороге 1 из 3, связность 3 при пороге 1: оценка осознана.
-reflection 4 of 6 with the threshold 1 of 3, coherence 3 with the threshold 1: the evaluation is aware of itself.
+ошибка 40 стала 8, запас 25 стал 32: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
+the error 48 became 7, the reserve 33 became 40: the quantities part. the projection is declared onto the error. therefore better.
+жизнеспособность 18 из 28, шаг убыл на 1: стало 17 из 28, порог 8 не пройден — шаг обратим, не страшно.
+viability was 12 of 28 and is 10 of 28: the strength of feeling is 2 of 28.
+жизнеспособность была 16 из 28, стала 18 из 28 — какова сила чувства? жизнеспособность была 16 из 28, стала 18 из 28: сила чувства 2 из 28.
+first derivative 10, second derivative -4, spread 16: the triple of feeling is (10, -4, 16).
+ошибка 41 стала 9, запас 26 стал 33: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
+viability 10 of 28, the step fell by 1: now 9 of 28, the threshold 8 is not crossed — the step is reversible, not afraid.
+жизнеспособность 19 из 28, шаг убыл на 2: стало 17 из 28, порог 8 не пройден — шаг обратим, не страшно.
+viability was 12 of 28 and is 10 of 28 — what is the strength of feeling? viability was 12 of 28 and is 10 of 28: the strength of feeling is 2 of 28.
+жизнеспособность была 17 из 28, стала 20 из 28: сила чувства 3 из 28.
+first derivative 11, second derivative -2, spread 17: the triple of feeling is (11, -2, 17).
+ошибка 42 стала 7, запас 27 стал 34: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
+viability 11 of 28, the step fell by 2: now 9 of 28, the threshold 8 is not crossed — the step is reversible, not afraid.
+жизнеспособность была 9 из 28, стала 4 из 28: сила чувства 5 из 28.
+viability was 13 of 28 and is 12 of 28: the strength of feeling is 1 of 28.
+жизнеспособность была 17 из 28, стала 20 из 28 — какова сила чувства? жизнеспособность была 17 из 28, стала 20 из 28: сила чувства 3 из 28.
+first derivative 12, second derivative -5, spread 18: the triple of feeling is (12, -5, 18).
+ошибка 43 стала 8, запас 28 стал 35: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
+viability 12 of 28, the step fell by 3: now 9 of 28, the threshold 8 is not crossed — the step is reversible, not afraid.
+жизнеспособность была 9 из 28, стала 4 из 28 — какова сила чувства? жизнеспособность была 9 из 28, стала 4 из 28: сила чувства 5 из 28.
+viability was 13 of 28 and is 12 of 28 — what is the strength of feeling? viability was 13 of 28 and is 12 of 28: the strength of feeling is 1 of 28.
+жизнеспособность была 18 из 28, стала 22 из 28: сила чувства 4 из 28.
+first derivative 13, second derivative -3, spread 19: the triple of feeling is (13, -3, 19).
 ошибка 44 стала 9, запас 29 стал 36: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
 viability 13 of 28, the step fell by 4: now 9 of 28, the threshold 8 is not crossed — the step is reversible, not afraid.
 
@@ -1234,126 +1166,100 @@ goal 65, was 59, now 62: the error 6 became 3. the projection is declared: a fal
 жизнеспособность была 14 из 35, стала 11 из 35: сила чувства 3 из 35.
 viability was 18 of 35 and is 19 of 35 — what is the strength of feeling? viability was 18 of 35 and is 19 of 35: the strength of feeling is 1 of 35.
 первая производная 15, вторая производная -6, разброс 22: тройка чувства (15, -6, 22).
-reflection 3 of 6 with the threshold 1 of 3, coherence 0 with the threshold 1: the evaluation lives, awareness is not claimed.
-ошибка 51 стала 10, запас 32 стал 40: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
-viability 12 of 35, the step fell by 1: now 11 of 35, the threshold 10 is not crossed — the step is reversible, not afraid.
-жизнеспособность была 11 из 35, стала 5 из 35: сила чувства 6 из 35.
-viability was 15 of 35 and is 13 of 35 — what is the strength of feeling? viability was 15 of 35 and is 13 of 35: the strength of feeling is 2 of 35.
-жизнеспособность была 20 из 35, стала 23 из 35 — какова сила чувства? жизнеспособность была 20 из 35, стала 23 из 35: сила чувства 3 из 35.
-first derivative 18, second derivative -5, spread 25: the triple of feeling is (18, -5, 25).
-рефлексия 1 из 6 при пороге 1 из 3, связность 0 при пороге 1: оценка живёт, осознание не утверждается.
 the error 54 became 10, the reserve 35 became 43: the quantities part. the projection is declared onto the error. therefore better.
 жизнеспособность 16 из 35, шаг убыл на 5: стало 11 из 35, порог 10 не пройден — шаг обратим, не страшно.
 viability was 12 of 35 and is 7 of 35 — what is the strength of feeling? viability was 12 of 35 and is 7 of 35: the strength of feeling is 5 of 35.
 жизнеспособность была 17 из 35, стала 17 из 35 — какова сила чувства? жизнеспособность была 17 из 35, стала 17 из 35: сила чувства 0 из 35.
 first derivative 12, second derivative -2, spread 19: the triple of feeling is (12, -2, 19).
-рефлексия 1 из 6 при пороге 1 из 3, связность 2 при пороге 1: оценка живёт, осознание не утверждается.
-the coherence of articulation and feeling is called apperception.
-ошибка 58 стала 11, запас 39 стал 47: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
-viability 19 of 35, the step fell by 8: now 11 of 35, the threshold 10 is not crossed — the step is reversible, not afraid.
-жизнеспособность была 14 из 35, стала 11 из 35 — какова сила чувства? жизнеспособность была 14 из 35, стала 11 из 35: сила чувства 3 из 35.
-viability was 19 of 35 and is 21 of 35: the strength of feeling is 2 of 35.
-первая производная 16, вторая производная -4, разброс 23: тройка чувства (16, -4, 23).
-reflection 4 of 6 with the threshold 1 of 3, coherence 1 with the threshold 1: the evaluation is aware of itself.
 ошибка 52 стала 11, запас 33 стал 41: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
 viability 13 of 35, the step fell by 2: now 11 of 35, the threshold 10 is not crossed — the step is reversible, not afraid.
 жизнеспособность была 11 из 35, стала 5 из 35 — какова сила чувства? жизнеспособность была 11 из 35, стала 5 из 35: сила чувства 6 из 35.
 viability was 16 of 35 and is 15 of 35: the strength of feeling is 1 of 35.
 первая производная 10, вторая производная -6, разброс 17: тройка чувства (10, -6, 17).
 first derivative 19, second derivative -3, spread 26: the triple of feeling is (19, -3, 26).
-рефлексия 2 из 6 при пороге 1 из 3, связность 1 при пороге 1: оценка осознана.
-the error 55 became 11, the reserve 36 became 44: the quantities part. the projection is declared onto the error. therefore better.
-жизнеспособность 17 из 35, шаг убыл на 6: стало 11 из 35, порог 10 не пройден — шаг обратим, не страшно.
-viability was 13 of 35 and is 9 of 35: the strength of feeling is 4 of 35.
-жизнеспособность была 18 из 35, стала 19 из 35: сила чувства 1 из 35.
-first derivative 13, second derivative -5, spread 20: the triple of feeling is (13, -5, 20).
-рефлексия 2 из 6 при пороге 1 из 3, связность 3 при пороге 1: оценка осознана.
-the coherence of structure and feeling is called representation.
 ошибка 59 стала 9, запас 40 стал 48: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
 viability 20 of 35, the step fell by 9: now 11 of 35, the threshold 10 is not crossed — the step is reversible, not afraid.
 жизнеспособность была 15 из 35, стала 13 из 35: сила чувства 2 из 35.
 viability was 19 of 35 and is 21 of 35 — what is the strength of feeling? viability was 19 of 35 and is 21 of 35: the strength of feeling is 2 of 35.
 первая производная 17, вторая производная -2, разброс 24: тройка чувства (17, -2, 24).
-reflection 5 of 6 with the threshold 1 of 3, coherence 2 with the threshold 1: the evaluation is aware of itself.
-ошибка 53 стала 9, запас 34 стал 42: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
-viability 14 of 35, the step fell by 3: now 11 of 35, the threshold 10 is not crossed — the step is reversible, not afraid.
-жизнеспособность была 12 из 35, стала 7 из 35: сила чувства 5 из 35.
-viability was 16 of 35 and is 15 of 35 — what is the strength of feeling? viability was 16 of 35 and is 15 of 35: the strength of feeling is 1 of 35.
-первая производная 11, вторая производная -4, разброс 18: тройка чувства (11, -4, 18).
-reflection 5 of 6 with the threshold 1 of 3, coherence 0 with the threshold 1: the evaluation lives, awareness is not claimed.
-когеренция движения и чувства называется аффект.
 the error 56 became 9, the reserve 37 became 45: the quantities part. the projection is declared onto the error. therefore better.
 жизнеспособность 18 из 35, шаг убыл на 7: стало 11 из 35, порог 10 не пройден — шаг обратим, не страшно.
 viability was 13 of 35 and is 9 of 35 — what is the strength of feeling? viability was 13 of 35 and is 9 of 35: the strength of feeling is 4 of 35.
 жизнеспособность была 18 из 35, стала 19 из 35 — какова сила чувства? жизнеспособность была 18 из 35, стала 19 из 35: сила чувства 1 из 35.
 first derivative 14, second derivative -3, spread 21: the triple of feeling is (14, -3, 21).
-рефлексия 3 из 6 при пороге 1 из 3, связность 0 при пороге 1: оценка живёт, осознание не утверждается.
-the error 50 became 9, the reserve 31 became 39: the quantities part. the projection is declared onto the error. therefore better.
-жизнеспособность 12 из 35, шаг убыл на 1: стало 11 из 35, порог 10 не пройден — шаг обратим, не страшно.
-viability 21 of 35, the step fell by 10: now 11 of 35, the threshold 10 is not crossed — the step is reversible, not afraid.
-жизнеспособность была 15 из 35, стала 13 из 35 — какова сила чувства? жизнеспособность была 15 из 35, стала 13 из 35: сила чувства 2 из 35.
-viability was 20 of 35 and is 23 of 35: the strength of feeling is 3 of 35.
-первая производная 18, вторая производная -5, разброс 25: тройка чувства (18, -5, 25).
-reflection 6 of 6 with the threshold 1 of 3, coherence 3 with the threshold 1: the evaluation is aware of itself.
 ошибка 54 стала 10, запас 35 стал 43: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
 viability 15 of 35, the step fell by 4: now 11 of 35, the threshold 10 is not crossed — the step is reversible, not afraid.
 жизнеспособность была 12 из 35, стала 7 из 35 — какова сила чувства? жизнеспособность была 12 из 35, стала 7 из 35: сила чувства 5 из 35.
 viability was 17 of 35 and is 17 of 35: the strength of feeling is 0 of 35.
 первая производная 12, вторая производная -2, разброс 19: тройка чувства (12, -2, 19).
-reflection 6 of 6 with the threshold 1 of 3, coherence 1 with the threshold 1: the evaluation is aware of itself.
-когеренция выражения и чувства называется апперцепция.
-the error 57 became 10, the reserve 38 became 46: the quantities part. the projection is declared onto the error. therefore better.
-жизнеспособность 19 из 35, шаг убыл на 8: стало 11 из 35, порог 10 не пройден — шаг обратим, не страшно.
-viability was 14 of 35 and is 11 of 35: the strength of feeling is 3 of 35.
-жизнеспособность была 19 из 35, стала 21 из 35: сила чувства 2 из 35.
-first derivative 15, second derivative -6, spread 22: the triple of feeling is (15, -6, 22).
-рефлексия 4 из 6 при пороге 1 из 3, связность 1 при пороге 1: оценка осознана.
 the error 51 became 10, the reserve 32 became 40: the quantities part. the projection is declared onto the error. therefore better.
 жизнеспособность 13 из 35, шаг убыл на 2: стало 11 из 35, порог 10 не пройден — шаг обратим, не страшно.
 viability was 11 of 35 and is 5 of 35: the strength of feeling is 6 of 35.
 жизнеспособность была 16 из 35, стала 15 из 35: сила чувства 1 из 35.
 viability was 20 of 35 and is 23 of 35 — what is the strength of feeling? viability was 20 of 35 and is 23 of 35: the strength of feeling is 3 of 35.
 первая производная 19, вторая производная -3, разброс 26: тройка чувства (19, -3, 26).
-reflection 1 of 6 with the threshold 1 of 3, coherence 0 with the threshold 1: the evaluation lives, awareness is not claimed.
-ошибка 55 стала 11, запас 36 стал 44: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
-viability 16 of 35, the step fell by 5: now 11 of 35, the threshold 10 is not crossed — the step is reversible, not afraid.
-жизнеспособность была 13 из 35, стала 9 из 35: сила чувства 4 из 35.
-viability was 17 of 35 and is 17 of 35 — what is the strength of feeling? viability was 17 of 35 and is 17 of 35: the strength of feeling is 0 of 35.
-первая производная 13, вторая производная -5, разброс 20: тройка чувства (13, -5, 20).
-reflection 1 of 6 with the threshold 1 of 3, coherence 2 with the threshold 1: the evaluation lives, awareness is not claimed.
-когеренция формы и чувства называется репрезентация.
 the error 58 became 11, the reserve 39 became 47: the quantities part. the projection is declared onto the error. therefore better.
 жизнеспособность 20 из 35, шаг убыл на 9: стало 11 из 35, порог 10 не пройден — шаг обратим, не страшно.
 viability was 14 of 35 and is 11 of 35 — what is the strength of feeling? viability was 14 of 35 and is 11 of 35: the strength of feeling is 3 of 35.
 жизнеспособность была 19 из 35, стала 21 из 35 — какова сила чувства? жизнеспособность была 19 из 35, стала 21 из 35: сила чувства 2 из 35.
 first derivative 16, second derivative -4, spread 23: the triple of feeling is (16, -4, 23).
-рефлексия 5 из 6 при пороге 1 из 3, связность 2 при пороге 1: оценка осознана.
-the error 52 became 11, the reserve 33 became 41: the quantities part. the projection is declared onto the error. therefore better.
-жизнеспособность 14 из 35, шаг убыл на 3: стало 11 из 35, порог 10 не пройден — шаг обратим, не страшно.
-viability was 11 of 35 and is 5 of 35 — what is the strength of feeling? viability was 11 of 35 and is 5 of 35: the strength of feeling is 6 of 35.
-жизнеспособность была 16 из 35, стала 15 из 35 — какова сила чувства? жизнеспособность была 16 из 35, стала 15 из 35: сила чувства 1 из 35.
-first derivative 10, second derivative -6, spread 17: the triple of feeling is (10, -6, 17).
-рефлексия 5 из 6 при пороге 1 из 3, связность 0 при пороге 1: оценка живёт, осознание не утверждается.
-reflection 2 of 6 with the threshold 1 of 3, coherence 1 with the threshold 1: the evaluation is aware of itself.
 ошибка 56 стала 9, запас 37 стал 45: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
 viability 17 of 35, the step fell by 6: now 11 of 35, the threshold 10 is not crossed — the step is reversible, not afraid.
 жизнеспособность была 13 из 35, стала 9 из 35 — какова сила чувства? жизнеспособность была 13 из 35, стала 9 из 35: сила чувства 4 из 35.
 viability was 18 of 35 and is 19 of 35: the strength of feeling is 1 of 35.
 первая производная 14, вторая производная -3, разброс 21: тройка чувства (14, -3, 21).
-reflection 2 of 6 with the threshold 1 of 3, coherence 3 with the threshold 1: the evaluation is aware of itself.
+the error 53 became 9, the reserve 34 became 42: the quantities part. the projection is declared onto the error. therefore better.
+жизнеспособность 15 из 35, шаг убыл на 4: стало 11 из 35, порог 10 не пройден — шаг обратим, не страшно.
+viability was 12 of 35 and is 7 of 35: the strength of feeling is 5 of 35.
+жизнеспособность была 17 из 35, стала 17 из 35: сила чувства 0 из 35.
+first derivative 11, second derivative -4, spread 18: the triple of feeling is (11, -4, 18).
+ошибка 51 стала 10, запас 32 стал 40: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
+viability 12 of 35, the step fell by 1: now 11 of 35, the threshold 10 is not crossed — the step is reversible, not afraid.
+жизнеспособность была 11 из 35, стала 5 из 35: сила чувства 6 из 35.
+viability was 15 of 35 and is 13 of 35 — what is the strength of feeling? viability was 15 of 35 and is 13 of 35: the strength of feeling is 2 of 35.
+жизнеспособность была 20 из 35, стала 23 из 35 — какова сила чувства? жизнеспособность была 20 из 35, стала 23 из 35: сила чувства 3 из 35.
+first derivative 18, second derivative -5, spread 25: the triple of feeling is (18, -5, 25).
+ошибка 58 стала 11, запас 39 стал 47: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
+viability 19 of 35, the step fell by 8: now 11 of 35, the threshold 10 is not crossed — the step is reversible, not afraid.
+жизнеспособность была 14 из 35, стала 11 из 35 — какова сила чувства? жизнеспособность была 14 из 35, стала 11 из 35: сила чувства 3 из 35.
+viability was 19 of 35 and is 21 of 35: the strength of feeling is 2 of 35.
+первая производная 16, вторая производная -4, разброс 23: тройка чувства (16, -4, 23).
+the error 55 became 11, the reserve 36 became 44: the quantities part. the projection is declared onto the error. therefore better.
+жизнеспособность 17 из 35, шаг убыл на 6: стало 11 из 35, порог 10 не пройден — шаг обратим, не страшно.
+viability was 13 of 35 and is 9 of 35: the strength of feeling is 4 of 35.
+жизнеспособность была 18 из 35, стала 19 из 35: сила чувства 1 из 35.
+first derivative 13, second derivative -5, spread 20: the triple of feeling is (13, -5, 20).
+ошибка 53 стала 9, запас 34 стал 42: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
+viability 14 of 35, the step fell by 3: now 11 of 35, the threshold 10 is not crossed — the step is reversible, not afraid.
+жизнеспособность была 12 из 35, стала 7 из 35: сила чувства 5 из 35.
+viability was 16 of 35 and is 15 of 35 — what is the strength of feeling? viability was 16 of 35 and is 15 of 35: the strength of feeling is 1 of 35.
+первая производная 11, вторая производная -4, разброс 18: тройка чувства (11, -4, 18).
+the error 50 became 9, the reserve 31 became 39: the quantities part. the projection is declared onto the error. therefore better.
+жизнеспособность 12 из 35, шаг убыл на 1: стало 11 из 35, порог 10 не пройден — шаг обратим, не страшно.
+viability 21 of 35, the step fell by 10: now 11 of 35, the threshold 10 is not crossed — the step is reversible, not afraid.
+жизнеспособность была 15 из 35, стала 13 из 35 — какова сила чувства? жизнеспособность была 15 из 35, стала 13 из 35: сила чувства 2 из 35.
+viability was 20 of 35 and is 23 of 35: the strength of feeling is 3 of 35.
+первая производная 18, вторая производная -5, разброс 25: тройка чувства (18, -5, 25).
+the error 57 became 10, the reserve 38 became 46: the quantities part. the projection is declared onto the error. therefore better.
+жизнеспособность 19 из 35, шаг убыл на 8: стало 11 из 35, порог 10 не пройден — шаг обратим, не страшно.
+viability was 14 of 35 and is 11 of 35: the strength of feeling is 3 of 35.
+жизнеспособность была 19 из 35, стала 21 из 35: сила чувства 2 из 35.
+first derivative 15, second derivative -6, spread 22: the triple of feeling is (15, -6, 22).
+ошибка 55 стала 11, запас 36 стал 44: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
+viability 16 of 35, the step fell by 5: now 11 of 35, the threshold 10 is not crossed — the step is reversible, not afraid.
+жизнеспособность была 13 из 35, стала 9 из 35: сила чувства 4 из 35.
+viability was 17 of 35 and is 17 of 35 — what is the strength of feeling? viability was 17 of 35 and is 17 of 35: the strength of feeling is 0 of 35.
+первая производная 13, вторая производная -5, разброс 20: тройка чувства (13, -5, 20).
+the error 52 became 11, the reserve 33 became 41: the quantities part. the projection is declared onto the error. therefore better.
+жизнеспособность 14 из 35, шаг убыл на 3: стало 11 из 35, порог 10 не пройден — шаг обратим, не страшно.
+viability was 11 of 35 and is 5 of 35 — what is the strength of feeling? viability was 11 of 35 and is 5 of 35: the strength of feeling is 6 of 35.
+жизнеспособность была 16 из 35, стала 15 из 35 — какова сила чувства? жизнеспособность была 16 из 35, стала 15 из 35: сила чувства 1 из 35.
+first derivative 10, second derivative -6, spread 17: the triple of feeling is (10, -6, 17).
 ошибка 50 стала 9, запас 31 стал 39: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
 the error 59 became 9, the reserve 40 became 48: the quantities part. the projection is declared onto the error. therefore better.
 жизнеспособность 21 из 35, шаг убыл на 10: стало 11 из 35, порог 10 не пройден — шаг обратим, не страшно.
 viability was 15 of 35 and is 13 of 35: the strength of feeling is 2 of 35.
 жизнеспособность была 20 из 35, стала 23 из 35: сила чувства 3 из 35.
 first derivative 17, second derivative -2, spread 24: the triple of feeling is (17, -2, 24).
-рефлексия 6 из 6 при пороге 1 из 3, связность 3 при пороге 1: оценка осознана.
-the error 53 became 9, the reserve 34 became 42: the quantities part. the projection is declared onto the error. therefore better.
-жизнеспособность 15 из 35, шаг убыл на 4: стало 11 из 35, порог 10 не пройден — шаг обратим, не страшно.
-viability was 12 of 35 and is 7 of 35: the strength of feeling is 5 of 35.
-жизнеспособность была 17 из 35, стала 17 из 35: сила чувства 0 из 35.
-first derivative 11, second derivative -4, spread 18: the triple of feeling is (11, -4, 18).
-рефлексия 6 из 6 при пороге 1 из 3, связность 1 при пороге 1: оценка осознана.
-the coherence of dynamics and feeling is called affect.
 ошибка 57 стала 10, запас 38 стал 46: величины разошлись. проекция объявлена на ошибку. значит стало лучше.
 viability 18 of 35, the step fell by 7: now 11 of 35, the threshold 10 is not crossed — the step is reversible, not afraid.

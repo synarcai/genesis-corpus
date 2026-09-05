@@ -6,61 +6,20 @@ T ∧ T = T.
 the sign ∈ is read as belongs to.
 is {a c} ⊂ {a c e}? {a c} ⊂ {a c e} = T.
 true and true equals true.
-from S and S → P follows P.
-слово истина читается как T.
-знак ¬ читается как не.
-d ∈ {c d} = T.
-{b d} ⊂ {a b d} = T.
-каждый элемент {a b e} принадлежит {a b e}.
-не истина равно ложь.
-the sign → is read as implies.
-every element of {c d e} belongs to {c d e}.
-d ∈ {b d e} = T.
-знак ∨ читается как или.
-how is the sign → read? the sign → is read as implies.
-how is the sign ∧ read? the sign ∧ is read as and.
 ложь и истина равно ложь.
+{c d} ∩ {a c} = {c}.
+d ∈ {c d} = T.
+знак ⊂ читается как входит в.
+c ∈ {a b c} = T.
+the sign ∈ is read as belongs to.
+слово истина читается как T.
+the sign ∧ is read as and.
+{c d} ∪ {c d} = {c d}.
+a ∈ {c e} = F.
+a ∈ {c e} = F.
+from S and S → P follows P.
 знак ∪ читается как объединение.
 T ∨ F = T.
-слово истина читается как T.
-e ∈ {a b e} = T.
-знак ∪ читается как объединение.
-знак ∈ читается как принадлежит.
-{a e} ∪ {c d} = {a c d e}.
-e ∈ {a d e} = T.
-из S и S → R следует R.
-каждый элемент {a b d} принадлежит {a b d}.
-is {c d} ⊂ {b c d}? {c d} ⊂ {b c d} = T.
-знак ∨ читается как или.
-знак ∨ читается как или.
-{c d} ∩ {a c} = {c}.
-how is the sign ∧ read? the sign ∧ is read as and.
-каждый элемент {a d e} принадлежит {a d e}.
-{b c} ⊂ {b c e} = T.
-слово истина читается как T.
-how is the sign ∈ read? the sign ∈ is read as belongs to.
-каждый элемент {c d e} принадлежит {c d e}.
-how is the sign ∧ read? the sign ∧ is read as and.
-b ∈ {b d e} = T.
-{a c} ⊂ {a c e} = T.
-e ∈ {d e} = T.
-how is the sign → read? the sign → is read as implies.
-слово ложь читается как F.
-how is the sign ¬ read? the sign ¬ is read as not.
-из S и S → R следует R.
-false and true equals false.
-the word true is read as T.
-F ∧ F = F.
-is {a e} ⊂ {a b e}? {a e} ⊂ {a b e} = T.
-знак ∈ читается как принадлежит.
-c ∈ {d e} = F.
-how is the sign ∈ read? the sign ∈ is read as belongs to.
-the sign → is read as implies.
-the sign ∧ is read as and.
-{b c} ∪ {b c} = {b c}.
-from S and S → R follows R.
-from R and R → Q follows Q.
-знак ∨ читается как или.
 is {b d} ⊂ {a b d}? {b d} ⊂ {a b d} = T.
 знак ∩ читается как пересечение.
 из R и R → Q следует Q.
@@ -70,383 +29,268 @@ F ∨ T = T.
 {a c} ∩ {c e} = {c}.
 {c d} ⊂ {b c d} = T.
 a ∈ {b d} = F.
-из R и R → P следует P.
-{a b} ∩ {a b} = {a b}.
-the sign ∧ is read as and.
-d ∈ {c d e} = T.
-знак ⊂ читается как входит в.
-c ∈ {a b c} = T.
-the sign ∈ is read as belongs to.
-слово истина читается как T.
-the sign ∧ is read as and.
-{c d} ∪ {c d} = {c d}.
-a ∈ {c e} = F.
-a ∈ {c e} = F.
-the sign → is read as implies.
-the word false is read as F.
-the sign ¬ is read as not.
-знак ∈ читается как принадлежит.
-знак ∈ читается как принадлежит.
-
+слово ложь читается как F.
 знак ¬ читается как не.
-знак ∈ читается как принадлежит.
+false and true equals false.
+the word true is read as T.
+F ∧ F = F.
 is {a e} ⊂ {a b e}? {a e} ⊂ {a b e} = T.
-every element of {b d e} belongs to {b d e}.
-{c e} ∩ {a e} = {e}.
-is {a b} ⊂ {a b e}? {a b} ⊂ {a b e} = T.
-{b d} ⊂ {b d e} = T.
-каждый элемент {b d e} принадлежит {b d e}.
-ложь и ложь равно ложь.
-the word false is read as F.
-знак ⊂ читается как входит в.
-the sign ∧ is read as and.
-знак → читается как следует.
-¬ T = F.
-каждый элемент {a c e} принадлежит {a c e}.
-e ∈ {b c d} = F.
-the word false is read as F.
-from R and R → P follows P.
-из P и P → R следует R.
-{a e} ⊂ {a c d e} = T.
-how is the sign ∨ read? the sign ∨ is read as or.
-how is the sign ∨ read? the sign ∨ is read as or.
-the sign ∨ is read as or.
-e ∈ {c e} = T.
-{d e} ∪ {b e} = {b d e}.
-знак ∧ читается как и.
-a ∈ {a b} = T.
-{b e} ∪ {a e} = {a b e}.
-знак ∪ читается как объединение.
+знак ∈ читается как принадлежит.
+c ∈ {d e} = F.
 how is the sign ∈ read? the sign ∈ is read as belongs to.
-the word true is read as T.
-знак ¬ читается как не.
-c ∈ {a b e} = F.
-знак ∨ читается как или.
-from S and S → R follows R.
-how is the sign → read? the sign → is read as implies.
-a ∈ {c e} = F.
-знак ∩ читается как пересечение.
+the sign → is read as implies.
+the sign ∧ is read as and.
+из R и R → P следует P.
 the sign ¬ is read as not.
+d ∈ {c d e} = T.
 {b c} ⊂ {b c e} = T.
+слово истина читается как T.
 how is the sign ∈ read? the sign ∈ is read as belongs to.
-{a d} ⊂ {a c d e} = T.
-the sign → is read as implies.
-знак ∨ читается как или.
-b ∈ {c d e} = F.
-every element of {a c e} belongs to {a c e}.
-the word true is read as T.
-is {b d} ⊂ {b d e}? {b d} ⊂ {b d e} = T.
-a ∈ {b c} = F.
-из R и R → P следует P.
-every element of {a c d} belongs to {a c d}.
-{a e} ⊂ {a b e} = T.
-how is the sign ∧ read? the sign ∧ is read as and.
-{b c} ∩ {c e} = {c}.
-{a b} ⊂ {a b e} = T.
-каждый элемент {a c e} принадлежит {a c e}.
-d ∈ {a d e} = T.
-каждый элемент {a b d} принадлежит {a b d}.
-знак ¬ читается как не.
-{a e} ∪ {a b} = {a b e}.
-is {a e} ⊂ {a c d e}? {a e} ⊂ {a c d e} = T.
-{c e} ∪ {a c} = {a c e}.
-{b e} ∪ {b d} = {b d e}.
-how is the sign ∨ read? the sign ∨ is read as or.
-c ∈ {a d e} = F.
-{a c} ∩ {c e} = {c}.
-from R and R → Q follows Q.
 каждый элемент {c d e} принадлежит {c d e}.
-слово ложь читается как F.
-the sign ∨ is read as or.
-the sign ∨ is read as or.
-слово ложь читается как F.
-{c d} ∩ {c d} = {c d}.
-{a b} ∪ {a b} = {a b}.
-{b e} ∩ {b d} = {b}.
+how is the sign ∧ read? the sign ∧ is read as and.
 b ∈ {b d e} = T.
-знак → читается как следует.
-знак ∩ читается как пересечение.
-the sign ∈ is read as belongs to.
-how is the sign ¬ read? the sign ¬ is read as not.
-is {b c} ⊂ {b c e}? {b c} ⊂ {b c e} = T.
-из P и P → S следует S.
-is {a d} ⊂ {a c d e}? {a d} ⊂ {a c d e} = T.
-how is the sign → read? the sign → is read as implies.
-the sign → is read as implies.
-знак ∧ читается как и.
-d ∈ {b d} = T.
-from P and P → Q follows Q.
-every element of {a b c} belongs to {a b c}.
-the sign ∈ is read as belongs to.
-
-from S and S → R follows R.
-the sign ¬ is read as not.
-{b c} ⊂ {a b c} = T.
-из P и P → R следует R.
-знак ∪ читается как объединение.
-the sign ∨ is read as or.
-how is the sign ¬ read? the sign ¬ is read as not.
-every element of {a d e} belongs to {a d e}.
-how is the sign ¬ read? the sign ¬ is read as not.
-is {b c} ⊂ {a b c}? {b c} ⊂ {a b c} = T.
-знак → читается как следует.
-e ∈ {a b} = F.
-how is the sign ∨ read? the sign ∨ is read as or.
-¬ F = T.
-{d e} ⊂ {d e} = T.
-из S и S → R следует R.
-знак ¬ читается как не.
-every element of {a b d} belongs to {a b d}.
-T ∧ F = F.
-каждый элемент {c d e} принадлежит {c d e}.
-знак → читается как следует.
-is {d e} ⊂ {d e}? {d e} ⊂ {d e} = T.
-знак ¬ читается как не.
-every element of {c d e} belongs to {c d e}.
-the word true is read as T.
-слово ложь читается как F.
-from P and P → S follows S.
-{b c} ∪ {b e} = {b c e}.
-каждый элемент {a c d} принадлежит {a c d}.
-знак ⊂ читается как входит в.
-{a e} ∪ {a d} = {a d e}.
-знак ⊂ читается как входит в.
-знак ∪ читается как объединение.
-{c e} ∩ {d e} = {e}.
-{b c} ∩ {b d} = {b}.
-{c d} ∪ {a c} = {a c d}.
-из S и S → Q следует Q.
-{c d} ∪ {c e} = {c d e}.
-{c d} ∩ {c e} = {c}.
-every element of {c d e} belongs to {c d e}.
-из R и R → P следует P.
-{c e} ⊂ {c d e} = T.
-from S and S → Q follows Q.
-the sign ∈ is read as belongs to.
-{b c} ∩ {b e} = {b}.
-{a d} ⊂ {a c d e} = T.
-{b e} ∩ {a e} = {e}.
-the sign ∈ is read as belongs to.
-is {c e} ⊂ {c d e}? {c e} ⊂ {c d e} = T.
-c ∈ {a b c} = T.
-how is the sign ∈ read? the sign ∈ is read as belongs to.
-{c d} ∪ {c e} = {c d e}.
-is {a d} ⊂ {a c d e}? {a d} ⊂ {a c d e} = T.
-every element of {a c e} belongs to {a c e}.
-how is the sign ∈ read? the sign ∈ is read as belongs to.
-b ∈ {b d} = T.
-the sign → is read as implies.
-d ∈ {c d} = T.
-знак → читается как следует.
-the sign ∪ is read as union.
-{a b} ⊂ {a b d e} = T.
-{a c} ⊂ {a c d} = T.
-not true equals false.
-how is the sign → read? the sign → is read as implies.
-{a e} ⊂ {a e} = T.
-{a b} ⊂ {a b} = T.
-how is the sign ∪ read? the sign ∪ is read as union.
-is {a b} ⊂ {a b d e}? {a b} ⊂ {a b d e} = T.
-is {a c} ⊂ {a c d}? {a c} ⊂ {a c d} = T.
-знак ∧ читается как и.
-every element of {b c d} belongs to {b c d}.
-is {a e} ⊂ {a e}? {a e} ⊂ {a e} = T.
-is {a b} ⊂ {a b}? {a b} ⊂ {a b} = T.
-a ∈ {a b e} = T.
-истина и ложь равно ложь.
-из S и S → Q следует Q.
-{c d} ∩ {c e} = {c}.
-the sign ∨ is read as or.
-слово истина читается как T.
-c ∈ {c d} = T.
-знак ∧ читается как и.
-знак ∈ читается как принадлежит.
-{a d} ∪ {c d} = {a c d}.
-false and false equals false.
-how is the sign ∨ read? the sign ∨ is read as or.
-every element of {a b e} belongs to {a b e}.
-b ∈ {a c e} = F.
-знак ∈ читается как принадлежит.
-из R и R → P следует P.
-the sign ¬ is read as not.
-
-from S and S → P follows P.
-how is the sign → read? the sign → is read as implies.
-{b e} ∪ {b e} = {b e}.
-true and false equals false.
-is {a c} ⊂ {a c d e}? {a c} ⊂ {a c d e} = T.
-the sign ∨ is read as or.
-e ∈ {a e} = T.
-{b e} ∩ {b e} = {b e}.
-знак ∧ читается как и.
-from R and R → P follows P.
-каждый элемент {a c d} принадлежит {a c d}.
-{c e} ∪ {d e} = {c d e}.
-the sign ∨ is read as or.
-{b e} ∩ {b d} = {b}.
-how is the sign ∪ read? the sign ∪ is read as union.
-{c e} ⊂ {b c e} = T.
-every element of {a b c} belongs to {a b c}.
-{a b} ∪ {a e} = {a b e}.
-{a b} ∪ {c d} = {a b c d}.
-слово ложь читается как F.
-знак ∨ читается как или.
-F ∨ F = F.
-каждый элемент {b c d} принадлежит {b c d}.
-знак → читается как следует.
-from S and S → Q follows Q.
-{b c} ∪ {c e} = {b c e}.
-how is the sign ∨ read? the sign ∨ is read as or.
-T ∨ T = T.
-the sign ∪ is read as union.
-знак ¬ читается как не.
-знак ⊂ читается как входит в.
-из P и P → Q следует Q.
-{b e} ∪ {b d} = {b d e}.
-how is the sign ∨ read? the sign ∨ is read as or.
-{b e} ⊂ {b d e} = T.
-¬ T = F.
-is {c e} ⊂ {b c e}? {c e} ⊂ {b c e} = T.
-the sign ¬ is read as not.
-a ∈ {c e} = F.
-from R and R → P follows P.
-from R and R → P follows P.
-c ∈ {b c} = T.
-the word false is read as F.
-b ∈ {b c d} = T.
-{b c} ∪ {b d} = {b c d}.
-каждый элемент {a b c} принадлежит {a b c}.
-из R и R → Q следует Q.
-the sign ∨ is read as or.
-знак ∪ читается как объединение.
-how is the sign ∪ read? the sign ∪ is read as union.
-{a e} ⊂ {a b d e} = T.
-every element of {a c e} belongs to {a c e}.
-d ∈ {b e} = F.
-знак ∧ читается как и.
-{c e} ∩ {c d} = {c}.
-is {b e} ⊂ {b d e}? {b e} ⊂ {b d e} = T.
-d ∈ {a d e} = T.
-the sign ∧ is read as and.
-how is the sign ¬ read? the sign ¬ is read as not.
-слово истина читается как T.
-{c e} ∩ {a c} = {c}.
-слово ложь читается как F.
-the sign ∈ is read as belongs to.
-from R and R → Q follows Q.
-из S и S → P следует P.
-каждый элемент {a c e} принадлежит {a c e}.
-the sign ∧ is read as and.
-the sign ∪ is read as union.
-how is the sign ∨ read? the sign ∨ is read as or.
-the sign → is read as implies.
-{a e} ∩ {a d} = {a}.
-is {a e} ⊂ {a b d e}? {a e} ⊂ {a b d e} = T.
-{a c} ⊂ {a c d e} = T.
-знак ∧ читается как и.
-знак ∩ читается как пересечение.
-из P и P → Q следует Q.
-d ∈ {b d e} = T.
-¬ F = T.
-how is the sign ∧ read? the sign ∧ is read as and.
-e ∈ {b d e} = T.
-c ∈ {b c e} = T.
-не истина равно ложь.
-the sign ∪ is read as union.
-how is the sign ∈ read? the sign ∈ is read as belongs to.
-из R и R → Q следует Q.
-знак ∧ читается как и.
-каждый элемент {a b c} принадлежит {a b c}.
-how is the sign ∧ read? the sign ∧ is read as and.
-how is the sign ∪ read? the sign ∪ is read as union.
-
-{c e} ∪ {b e} = {b c e}.
-из S и S → R следует R.
-the sign ¬ is read as not.
-истина и истина равно истина.
-{c e} ⊂ {c e} = T.
-from P and P → R follows R.
-{c d} ⊂ {c d e} = T.
-the word false is read as F.
-is {c d} ⊂ {a c d}? {c d} ⊂ {a c d} = T.
-the sign ∪ is read as union.
-the sign ∧ is read as and.
-b ∈ {b e} = T.
-{b c} ∩ {b c} = {b c}.
-из P и P → S следует S.
-¬ F = T.
-{a b} ∩ {a e} = {a}.
-how is the sign ¬ read? the sign ¬ is read as not.
 {a c} ⊂ {a c e} = T.
-{a d} ⊂ {a b d e} = T.
-the sign ∧ is read as and.
-every element of {a b d} belongs to {a b d}.
-how is the sign ¬ read? the sign ¬ is read as not.
-the sign ∈ is read as belongs to.
-is {c e} ⊂ {c e}? {c e} ⊂ {c e} = T.
-{c d} ⊂ {b c d} = T.
-is {c d} ⊂ {c d e}? {c d} ⊂ {c d e} = T.
-from P and P → S follows S.
-not true equals false.
-how is the sign ∪ read? the sign ∪ is read as union.
-how is the sign ∧ read? the sign ∧ is read as and.
-e ∈ {a e} = T.
-знак ⊂ читается как входит в.
-every element of {a c d} belongs to {a c d}.
-{a c} ∪ {c e} = {a c e}.
-the word true is read as T.
-the sign → is read as implies.
-is {a c} ⊂ {a c e}? {a c} ⊂ {a c e} = T.
-is {a d} ⊂ {a b d e}? {a d} ⊂ {a b d e} = T.
-how is the sign ∧ read? the sign ∧ is read as and.
-{d e} ∪ {a b} = {a b d e}.
-c ∈ {c d e} = T.
-how is the sign ∈ read? the sign ∈ is read as belongs to.
-{c e} ∩ {b e} = {e}.
-is {c d} ⊂ {b c d}? {c d} ⊂ {b c d} = T.
-{c e} ∪ {a e} = {a c e}.
-{a e} ∩ {a b} = {a}.
-the sign ∪ is read as union.
-c ∈ {a b e} = F.
-знак ∩ читается как пересечение.
-from S and S → P follows P.
-from S and S → R follows R.
-{c e} ∪ {c d} = {c d e}.
-e ∈ {a c d} = F.
-знак ∩ читается как пересечение.
-how is the sign → read? the sign → is read as implies.
-not true equals false.
-the word false is read as F.
-from S and S → R follows R.
-знак ¬ читается как не.
-из S и S → P следует P.
-{a c} ∪ {c e} = {a c e}.
-{c d} ⊂ {a b c d} = T.
-{d e} ∩ {b e} = {e}.
-the sign ¬ is read as not.
-a ∈ {a d} = T.
-how is the sign ∪ read? the sign ∪ is read as union.
-из S и S → P следует P.
-знак ∨ читается как или.
-from P and P → Q follows Q.
-the word true is read as T.
-F ∧ T = F.
-d ∈ {c d} = T.
-e ∈ {b e} = T.
-знак ∈ читается как принадлежит.
-знак → читается как следует.
-¬ T = F.
-не истина равно ложь.
-from S and S → P follows P.
+e ∈ {d e} = T.
+{b c} ∪ {b c} = {b c}.
+{a b} ∩ {a b} = {a b}.
 из S и S → R следует R.
-{c d} ⊂ {a c d} = T.
-is {c d} ⊂ {a b c d}? {c d} ⊂ {a b c d} = T.
-d ∈ {a c d} = T.
+e ∈ {a b e} = T.
+знак ∪ читается как объединение.
+знак ∈ читается как принадлежит.
+{a e} ∪ {c d} = {a c d e}.
+e ∈ {a d e} = T.
+из S и S → R следует R.
+каждый элемент {a b d} принадлежит {a b d}.
+is {c d} ⊂ {b c d}? {c d} ⊂ {b c d} = T.
+знак ∨ читается как или.
+from S and S → R follows R.
+from R and R → Q follows Q.
+{b d} ⊂ {a b d} = T.
+каждый элемент {a b e} принадлежит {a b e}.
+не истина равно ложь.
+the sign → is read as implies.
+every element of {c d e} belongs to {c d e}.
+d ∈ {b d e} = T.
+знак ∨ читается как или.
+how is the sign → read? the sign → is read as implies.
+how is the sign ∧ read? the sign ∧ is read as and.
+the word false is read as F.
 how is the sign ¬ read? the sign ¬ is read as not.
-{a c} ∪ {b e} = {a b c e}.
-e ∈ {a c} = F.
-{c d} ∪ {c e} = {c d e}.
-from P and P → R follows R.
+каждый элемент {a d e} принадлежит {a d e}.
+
+знак ¬ читается как не.
+a ∈ {a b} = T.
+is {a e} ⊂ {a c d e}? {a e} ⊂ {a c d e} = T.
+every element of {a c e} belongs to {a c e}.
+how is the sign ¬ read? the sign ¬ is read as not.
+e ∈ {b c d} = F.
+из R и R → P следует P.
+b ∈ {b d e} = T.
+{a e} ⊂ {a c d e} = T.
+{c e} ∩ {a e} = {e}.
 the sign ¬ is read as not.
-{a d} ∩ {c d} = {d}.
+c ∈ {a d e} = F.
+ложь и ложь равно ложь.
+from S and S → R follows R.
+слово ложь читается как F.
+{b c} ∩ {c e} = {c}.
+from P and P → Q follows Q.
+e ∈ {c e} = T.
+каждый элемент {a b d} принадлежит {a b d}.
+every element of {a c d} belongs to {a c d}.
+{b e} ∪ {a e} = {a b e}.
 знак → читается как следует.
+the word true is read as T.
+{c d} ∩ {c d} = {c d}.
+{a c} ∩ {c e} = {c}.
+the word false is read as F.
+знак → читается как следует.
+{c e} ∪ {a c} = {a c e}.
+is {a b} ⊂ {a b e}? {a b} ⊂ {a b e} = T.
+is {b c} ⊂ {b c e}? {b c} ⊂ {b c e} = T.
+{d e} ∪ {b e} = {b d e}.
+from R and R → P follows P.
+is {a e} ⊂ {a b e}? {a e} ⊂ {a b e} = T.
+how is the sign ∨ read? the sign ∨ is read as or.
+{a b} ⊂ {a b e} = T.
+{b c} ⊂ {b c e} = T.
+{a b} ∪ {a b} = {a b}.
+from R and R → Q follows Q.
+{a e} ⊂ {a b e} = T.
+the sign ∨ is read as or.
+¬ T = F.
+every element of {a b c} belongs to {a b c}.
+c ∈ {a b e} = F.
+знак ∧ читается как и.
+знак ⊂ читается как входит в.
+знак ∩ читается как пересечение.
+{b e} ∪ {b d} = {b d e}.
+is {b d} ⊂ {b d e}? {b d} ⊂ {b d e} = T.
+из P и P → S следует S.
+{b e} ∩ {b d} = {b}.
+{a e} ∪ {a b} = {a b e}.
+знак ∧ читается как и.
+how is the sign ∨ read? the sign ∨ is read as or.
+{b d} ⊂ {b d e} = T.
+a ∈ {b c} = F.
+is {a d} ⊂ {a c d e}? {a d} ⊂ {a c d e} = T.
+из P и P → R следует R.
+b ∈ {c d e} = F.
+the sign ∨ is read as or.
+каждый элемент {a c e} принадлежит {a c e}.
+каждый элемент {b d e} принадлежит {b d e}.
+{a d} ⊂ {a c d e} = T.
+каждый элемент {c d e} принадлежит {c d e}.
+every element of {b d e} belongs to {b d e}.
+d ∈ {b d} = T.
+каждый элемент {a c e} принадлежит {a c e}.
+d ∈ {a d e} = T.
+
+{d e} ⊂ {d e} = T.
+{c d} ∪ {c e} = {c d e}.
+T ∧ F = F.
+{c e} ⊂ {c d e} = T.
+{a e} ⊂ {a e} = T.
+every element of {a b d} belongs to {a b d}.
+{a c} ⊂ {a c d} = T.
+is {d e} ⊂ {d e}? {d e} ⊂ {d e} = T.
+{b c} ∩ {b e} = {b}.
+{b e} ∩ {a e} = {e}.
+is {c e} ⊂ {c d e}? {c e} ⊂ {c d e} = T.
+is {a e} ⊂ {a e}? {a e} ⊂ {a e} = T.
+{a d} ⊂ {a c d e} = T.
+is {a c} ⊂ {a c d}? {a c} ⊂ {a c d} = T.
+каждый элемент {a c d} принадлежит {a c d}.
+{c d} ∪ {c e} = {c d e}.
+every element of {a c e} belongs to {a c e}.
+b ∈ {b d} = T.
+every element of {a b e} belongs to {a b e}.
+is {a d} ⊂ {a c d e}? {a d} ⊂ {a c d e} = T.
+из S и S → Q следует Q.
+{c d} ∪ {a c} = {a c d}.
+{a b} ⊂ {a b} = T.
+{a b} ⊂ {a b d e} = T.
+not true equals false.
+{b c} ⊂ {a b c} = T.
+the sign ∪ is read as union.
+{a d} ∪ {c d} = {a c d}.
+from S and S → Q follows Q.
+is {a b} ⊂ {a b}? {a b} ⊂ {a b} = T.
+is {a b} ⊂ {a b d e}? {a b} ⊂ {a b d e} = T.
+{c d} ∩ {c e} = {c}.
+is {b c} ⊂ {a b c}? {b c} ⊂ {a b c} = T.
+how is the sign ∪ read? the sign ∪ is read as union.
+¬ F = T.
+every element of {b c d} belongs to {b c d}.
+c ∈ {c d} = T.
+истина и ложь равно ложь.
+false and false equals false.
+every element of {c d e} belongs to {c d e}.
+a ∈ {a b e} = T.
+{b c} ∪ {b e} = {b c e}.
+из S и S → Q следует Q.
+b ∈ {a c e} = F.
+from P and P → S follows S.
+every element of {a d e} belongs to {a d e}.
+{a e} ∪ {a d} = {a d e}.
+e ∈ {a b} = F.
+{b c} ∩ {b d} = {b}.
+d ∈ {c d} = T.
+из P и P → R следует R.
+{c e} ∩ {d e} = {e}.
+
+e ∈ {b d e} = T.
+{b c} ∪ {b d} = {b c d}.
+¬ F = T.
+e ∈ {a e} = T.
+from R and R → P follows P.
+{b c} ∪ {c e} = {b c e}.
+b ∈ {b c d} = T.
+{b e} ∩ {b d} = {b}.
+is {c e} ⊂ {b c e}? {c e} ⊂ {b c e} = T.
+c ∈ {b c e} = T.
+d ∈ {b d e} = T.
+d ∈ {b e} = F.
+{b e} ∩ {b e} = {b e}.
+true and false equals false.
+из R и R → Q следует Q.
+{a e} ∩ {a d} = {a}.
+¬ T = F.
+{c e} ∪ {d e} = {c d e}.
+каждый элемент {a b c} принадлежит {a b c}.
+{a c} ⊂ {a c d e} = T.
+T ∨ T = T.
+{c e} ∩ {a c} = {c}.
+c ∈ {b c} = T.
+из S и S → P следует P.
+{b e} ⊂ {b d e} = T.
+каждый элемент {a c d} принадлежит {a c d}.
+{c e} ∩ {c d} = {c}.
+{a e} ⊂ {a b d e} = T.
+from S and S → P follows P.
+the sign ∪ is read as union.
+from S and S → Q follows Q.
+every element of {a b c} belongs to {a b c}.
+{b e} ∪ {b e} = {b e}.
+d ∈ {a d e} = T.
+{b e} ∪ {b d} = {b d e}.
+{a b} ∪ {c d} = {a b c d}.
+is {a c} ⊂ {a c d e}? {a c} ⊂ {a c d e} = T.
+каждый элемент {b c d} принадлежит {b c d}.
+не истина равно ложь.
+{c e} ⊂ {b c e} = T.
+{a b} ∪ {a e} = {a b e}.
+is {b e} ⊂ {b d e}? {b e} ⊂ {b d e} = T.
+из P и P → Q следует Q.
+из P и P → Q следует Q.
+is {a e} ⊂ {a b d e}? {a e} ⊂ {a b d e} = T.
+F ∨ F = F.
+how is the sign ∪ read? the sign ∪ is read as union.
+каждый элемент {a b c} принадлежит {a b c}.
+
+from P and P → R follows R.
+is {a c} ⊂ {a c e}? {a c} ⊂ {a c e} = T.
+{a c} ∪ {c e} = {a c e}.
+c ∈ {c d e} = T.
+{a d} ⊂ {a b d e} = T.
+every element of {a b d} belongs to {a b d}.
+{a c} ∪ {c e} = {a c e}.
+from P and P → R follows R.
+a ∈ {a d} = T.
+is {c e} ⊂ {c e}? {c e} ⊂ {c e} = T.
+is {c d} ⊂ {c d e}? {c d} ⊂ {c d e} = T.
+e ∈ {a c} = F.
+{d e} ∩ {b e} = {e}.
+{a d} ∩ {c d} = {d}.
+is {c d} ⊂ {a b c d}? {c d} ⊂ {a b c d} = T.
+e ∈ {a e} = T.
+{c e} ∪ {c d} = {c d e}.
+{a b} ∩ {a e} = {a}.
+not true equals false.
+e ∈ {a c d} = F.
+from P and P → S follows S.
+is {a d} ⊂ {a b d e}? {a d} ⊂ {a b d e} = T.
+{d e} ∪ {a b} = {a b d e}.
+{c d} ⊂ {a c d} = T.
+{c d} ⊂ {b c d} = T.
+{a c} ∪ {b e} = {a b c e}.
+{c e} ∩ {b e} = {e}.
+{c e} ∪ {a e} = {a c e}.
+из P и P → S следует S.
+d ∈ {a c d} = T.
+{a c} ⊂ {a c e} = T.
+c ∈ {a b e} = F.
+from P and P → Q follows Q.
+F ∧ T = F.
+e ∈ {b e} = T.
+истина и истина равно истина.
+{c e} ∪ {b e} = {b c e}.
+{a e} ∩ {a b} = {a}.
+{c e} ⊂ {c e} = T.
+{c d} ⊂ {c d e} = T.
+is {c d} ⊂ {a c d}? {c d} ⊂ {a c d} = T.
+is {c d} ⊂ {b c d}? {c d} ⊂ {b c d} = T.
+{b c} ∩ {b c} = {b c}.
+{c d} ⊂ {a b c d} = T.
+b ∈ {b e} = T.
+every element of {a c d} belongs to {a c d}.

@@ -1961,12 +1961,7 @@ is 82 a prime number? no: 82 is not prime; 82 = 2 × 41.
 скажи, простое ли 83. да: 83 простое; его делители — 1 и 83.
 tell me whether 85 is prime. no: 85 is not prime; 85 = 5 × 17.
 
-является ли 1 простым числом? 1 ни простое, ни составное: его единственный делитель — 1.
-простое ли число 1? 1 ни простое, ни составное: его единственный делитель — 1.
-скажи, простое ли 1. 1 ни простое, ни составное: его единственный делитель — 1.
-is 1 a prime number? 1 is neither prime nor composite: its only divisor is 1.
-does 1 have exactly two divisors? 1 is neither prime nor composite: its only divisor is 1.
-tell me whether 1 is prime. 1 is neither prime nor composite: its only divisor is 1.
+
 
 78 раскладывается в 2 × 3 × 13.
 what does 81 factorise into? 81 factorises into 3 × 3 × 3 × 3.
@@ -2580,30 +2575,7 @@ are 18 and 33 coprime? no: 18 and 33 are not coprime; their gcd is 3.
 взаимно ли просты 21 и 39? нет: 21 и 39 не взаимно просты; их нод равен 3.
 25 and 47 are coprime; their gcd is 1.
 
-кратное числа — это произведение этого числа и целого числа.
-what is an even number? an even number is a whole number that is divisible by 2.
-что такое кратное числа? кратное числа — это произведение этого числа и целого числа.
-a divisor of a number is a whole number that divides it with remainder 0.
-два числа сравнимы по модулю m, когда дают одинаковый остаток при делении на m.
-what is a divisor of a number? a divisor of a number is a whole number that divides it with remainder 0.
-когда два числа сравнимы по модулю m? два числа сравнимы по модулю m, когда дают одинаковый остаток при делении на m.
-the remainder of a division is what is left of the dividend after the largest whole multiple of the divisor is taken away.
-взаимно простые числа — это два числа, чей наибольший общий делитель равен 1.
-what is the remainder of a division? the remainder of a division is what is left of the dividend after the largest whole multiple of the divisor is taken away.
-что такое взаимно простые числа? взаимно простые числа — это два числа, чей наибольший общий делитель равен 1.
-a multiple of a number is the product of that number and a whole number.
-чётное число — это целое число, которое делится на 2.
-what is a multiple of a number? a multiple of a number is the product of that number and a whole number.
-что такое чётное число? чётное число — это целое число, которое делится на 2.
-two numbers are congruent modulo m when they leave the same remainder on division by m.
-делитель числа — это целое число, на которое оно делится с остатком 0.
-when are two numbers congruent modulo m? two numbers are congruent modulo m when they leave the same remainder on division by m.
-что такое делитель числа? делитель числа — это целое число, на которое оно делится с остатком 0.
-a coprime pair is two numbers whose greatest common divisor is 1.
-остаток от деления — это то, что остаётся от делимого после вычитания наибольшего целого кратного делителя.
-what is a coprime pair? a coprime pair is two numbers whose greatest common divisor is 1.
-что такое остаток от деления? остаток от деления — это то, что остаётся от делимого после вычитания наибольшего целого кратного делителя.
-an even number is a whole number that is divisible by 2.
+
 
 tell me whether 86 is prime. no: 86 is not prime; 86 = 2 × 43.
 является ли 88 простым числом? нет: 88 составное; 88 = 2 × 44.
@@ -2830,12 +2802,7 @@ tell me whether 97 is prime. yes: 97 is prime; its divisors are 1 and 97.
 is 110 a prime number? no: 110 is not prime; 110 = 2 × 55.
 does 112 have exactly two divisors? no: 112 is not prime; 112 = 2 × 56.
 
-простое ли число 1? 1 ни простое, ни составное: его единственный делитель — 1.
-является ли 1 простым числом? 1 ни простое, ни составное: его единственный делитель — 1.
-tell me whether 1 is prime. 1 is neither prime nor composite: its only divisor is 1.
-does 1 have exactly two divisors? 1 is neither prime nor composite: its only divisor is 1.
-is 1 a prime number? 1 is neither prime nor composite: its only divisor is 1.
-скажи, простое ли 1. 1 ни простое, ни составное: его единственный делитель — 1.
+
 
 113 factorises into 113.
 117 раскладывается в 3 × 3 × 13.
@@ -3449,30 +3416,7 @@ are 22 and 39 coprime? yes: 22 and 39 are coprime; their gcd is 1.
 are 19 and 33 coprime? yes: 19 and 33 are coprime; their gcd is 1.
 взаимно ли просты 23 и 41? да: 23 и 41 взаимно просты; их нод равен 1.
 
-the remainder of a division is what is left of the dividend after the largest whole multiple of the divisor is taken away.
-чётное число — это целое число, которое делится на 2.
-when are two numbers congruent modulo m? two numbers are congruent modulo m when they leave the same remainder on division by m.
-что такое остаток от деления? остаток от деления — это то, что остаётся от делимого после вычитания наибольшего целого кратного делителя.
-a divisor of a number is a whole number that divides it with remainder 0.
-взаимно простые числа — это два числа, чей наибольший общий делитель равен 1.
-what is a multiple of a number? a multiple of a number is the product of that number and a whole number.
-что такое делитель числа? делитель числа — это целое число, на которое оно делится с остатком 0.
-an even number is a whole number that is divisible by 2.
-два числа сравнимы по модулю m, когда дают одинаковый остаток при делении на m.
-what is the remainder of a division? the remainder of a division is what is left of the dividend after the largest whole multiple of the divisor is taken away.
-что такое чётное число? чётное число — это целое число, которое делится на 2.
-a coprime pair is two numbers whose greatest common divisor is 1.
-кратное числа — это произведение этого числа и целого числа.
-what is a divisor of a number? a divisor of a number is a whole number that divides it with remainder 0.
-что такое взаимно простые числа? взаимно простые числа — это два числа, чей наибольший общий делитель равен 1.
-two numbers are congruent modulo m when they leave the same remainder on division by m.
-остаток от деления — это то, что остаётся от делимого после вычитания наибольшего целого кратного делителя.
-what is an even number? an even number is a whole number that is divisible by 2.
-когда два числа сравнимы по модулю m? два числа сравнимы по модулю m, когда дают одинаковый остаток при делении на m.
-a multiple of a number is the product of that number and a whole number.
-делитель числа — это целое число, на которое оно делится с остатком 0.
-what is a coprime pair? a coprime pair is two numbers whose greatest common divisor is 1.
-что такое кратное числа? кратное числа — это произведение этого числа и целого числа.
+
 
 tell me whether 115 is prime. no: 115 is not prime; 115 = 5 × 23.
 скажи, простое ли 117. нет: 117 составное; 117 = 3 × 39.
@@ -3699,12 +3643,7 @@ does 136 have exactly two divisors? no: 136 is not prime; 136 = 2 × 68.
 простое ли число 138? нет: 138 составное; 138 = 2 × 69.
 141 составное; 141 = 3 × 47.
 
-is 1 a prime number? 1 is neither prime nor composite: its only divisor is 1.
-does 1 have exactly two divisors? 1 is neither prime nor composite: its only divisor is 1.
-tell me whether 1 is prime. 1 is neither prime nor composite: its only divisor is 1.
-является ли 1 простым числом? 1 ни простое, ни составное: его единственный делитель — 1.
-простое ли число 1? 1 ни простое, ни составное: его единственный делитель — 1.
-скажи, простое ли 1. 1 ни простое, ни составное: его единственный делитель — 1.
+
 
 151 factorises into 151.
 во что раскладывается 155? 155 раскладывается в 5 × 31.
@@ -4318,27 +4257,4 @@ are 22 and 37 coprime? yes: 22 and 37 are coprime; their gcd is 1.
 are 21 and 35 coprime? no: 21 and 35 are not coprime; their gcd is 7.
 26 и 45 взаимно просты; их нод равен 1.
 
-two numbers are congruent modulo m when they leave the same remainder on division by m.
-что такое остаток от деления? остаток от деления — это то, что остаётся от делимого после вычитания наибольшего целого кратного делителя.
-what is a divisor of a number? a divisor of a number is a whole number that divides it with remainder 0.
-чётное число — это целое число, которое делится на 2.
-a coprime pair is two numbers whose greatest common divisor is 1.
-что такое кратное числа? кратное числа — это произведение этого числа и целого числа.
-what is the remainder of a division? the remainder of a division is what is left of the dividend after the largest whole multiple of the divisor is taken away.
-делитель числа — это целое число, на которое оно делится с остатком 0.
-an even number is a whole number that is divisible by 2.
-когда два числа сравнимы по модулю m? два числа сравнимы по модулю m, когда дают одинаковый остаток при делении на m.
-what is a multiple of a number? a multiple of a number is the product of that number and a whole number.
-остаток от деления — это то, что остаётся от делимого после вычитания наибольшего целого кратного делителя.
-a divisor of a number is a whole number that divides it with remainder 0.
-что такое взаимно простые числа? взаимно простые числа — это два числа, чей наибольший общий делитель равен 1.
-when are two numbers congruent modulo m? two numbers are congruent modulo m when they leave the same remainder on division by m.
-кратное числа — это произведение этого числа и целого числа.
-the remainder of a division is what is left of the dividend after the largest whole multiple of the divisor is taken away.
-что такое чётное число? чётное число — это целое число, которое делится на 2.
-what is a coprime pair? a coprime pair is two numbers whose greatest common divisor is 1.
-два числа сравнимы по модулю m, когда дают одинаковый остаток при делении на m.
-a multiple of a number is the product of that number and a whole number.
-что такое делитель числа? делитель числа — это целое число, на которое оно делится с остатком 0.
-what is an even number? an even number is a whole number that is divisible by 2.
-взаимно простые числа — это два числа, чей наибольший общий делитель равен 1.
+
