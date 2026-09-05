@@ -101,6 +101,7 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         владеет_после="{X} has {n} {Тn}. {Он} gives away {k}. how many {Тмн} does {X} own now? {X} owns {r} {Тr}: {n} − {k} = {r}.",
         доля="{X} has {n} {Тn}. {ДОЛЯ} of them are {ЦП}. how many {Тмн} are {ЦП}? {r}: {n} ÷ {q} = {r}.",
         доля_не="{X} has {n} {Тn}. {ДОЛЯ} of them are {ЦП}. how many {Тмн} are not {ЦП}? step 1: {n} ÷ {q} = {r}. step 2: {n} − {r} = {d}. total: {d}.",
+        возраст_имя="{X} is {n} {Гn} old. how old will {X} be in {k} {Гk}? {X} will be {s} {Гs} old: {n} + {k} = {s}.",
         факт="{X} has {n} {Тn}. how many {Тмн} does {X} have? {n}.",
         без_данных="how many {Тмн} does {X} have? I do not know: how many {Тмн} {X} has is not said.",
         собрал_у="{X} collected {n} {Тn}. {Он} lost {k} of them. how many {Тмн} does {X} have left? {r}: {n} − {k} = {r}.",
@@ -127,6 +128,7 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         владеет_после="у {Xр} есть {n} {Тn}. {Он} отдаёт {k}. сколько {Тмн} имеет {X} теперь? {X} имеет {r} {Тr}: {n} − {k} = {r}.",
         доля="у {Xр} {n} {Тn}. {ДОЛЯ} из них — {ЦП}. сколько из них {ЦП}? {r}: {n} ÷ {q} = {r}.",
         доля_не="у {Xр} {n} {Тn}. {ДОЛЯ} из них — {ЦП}. сколько из них не {ЦП}? шаг 1: {n} ÷ {q} = {r}. шаг 2: {n} − {r} = {d}. итог: {d}.",
+        возраст_имя="{Xд} {n} {Гn}. сколько лет будет {Xд} через {k} {Гk}? {Xд} будет {s} {Гs}: {n} + {k} = {s}.",
         факт="у {Xр} {n} {Тn}. сколько {Тмн} у {Xр}? {n}.",
         без_данных="сколько {Тмн} у {Xр}? не знаю: сколько {Тмн} у {Xр}, не сказано.",
         собрал_у="{X} собрал{а} {n} {Тn}. {Он} потерял{а} {k} из них. сколько {Тмн} у {Xр} осталось? {r}: {n} − {k} = {r}.",
@@ -172,6 +174,7 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         владеет_после="{X} hat {n} {Тn}. {Он} gibt {k} weg. wie viele {Тмн} besitzt {X} jetzt? {X} besitzt {r} {Тr}: {n} − {k} = {r}.",
         доля="{X} hat {n} {Тn}. {ДОЛЯ} davon ist {ЦП}. wie viele davon sind {ЦП}? {r}: {n} ÷ {q} = {r}.",
         доля_не="{X} hat {n} {Тn}. {ДОЛЯ} davon ist {ЦП}. wie viele davon sind nicht {ЦП}? Schritt 1: {n} ÷ {q} = {r}. Schritt 2: {n} − {r} = {d}. Ergebnis: {d}.",
+        возраст_имя="{X} ist {n} {Гn} alt. wie alt wird {X} in {k} {Гk} sein? {X} wird {s} {Гs} alt sein: {n} + {k} = {s}.",
         факт="{X} hat {n} {Тn}. wie viele {Тмн} hat {X}? {n}.",
         без_данных="wie viele {Тмн} hat {X}? ich weiß es nicht: wie viele {Тмн} {X} hat, ist nicht gesagt.",
         собрал_у="{X} sammelte {n} {Тn}. {Он} verlor {k} davon. wie viele {Тмн} hat {X} noch? {r}: {n} − {k} = {r}.",
@@ -195,6 +198,7 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         владеет_после="{X} a {n} {Тn}. {Он} en donne {k}. combien de {Тмн} possède {X} maintenant ? {X} possède {r} {Тr} : {n} − {k} = {r}.",
         доля="{X} a {n} {Тn}. {ДОЛЯ} sont {ЦП}. combien sont {ЦП} ? {r} : {n} ÷ {q} = {r}.",
         доля_не="{X} a {n} {Тn}. {ДОЛЯ} sont {ЦП}. combien ne sont pas {ЦП} ? étape 1 : {n} ÷ {q} = {r}. étape 2 : {n} − {r} = {d}. total : {d}.",
+        возраст_имя="{X} a {n} {Гn}. quel âge aura {X} dans {k} {Гk} ? {X} aura {s} {Гs} : {n} + {k} = {s}.",
         факт="{X} a {n} {Тn}. combien de {Тмн} a {X} ? {n}.",
         без_данных="combien de {Тмн} a {X} ? je ne sais pas : combien de {Тмн} a {X} n'est pas dit.",
         собрал_у="{X} a ramassé {n} {Тn}. {Он} en a perdu {k}. combien de {Тмн} reste-t-il à {X} ? {r} : {n} − {k} = {r}.",
@@ -218,6 +222,7 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         владеет_после="{X} tiene {n} {Тn}. da {k}. ¿{кск} {Тмн} posee {X} ahora? {X} posee {r} {Тr}: {n} − {k} = {r}.",
         доля="{X} tiene {n} {Тn}. {ДОЛЯ} de {ellas} son {ЦП}. ¿{кск} son {ЦП}? {r}: {n} ÷ {q} = {r}.",
         доля_не="{X} tiene {n} {Тn}. {ДОЛЯ} de {ellas} son {ЦП}. ¿{кск} no son {ЦП}? paso 1: {n} ÷ {q} = {r}. paso 2: {n} − {r} = {d}. total: {d}.",
+        возраст_имя="{X} tiene {n} {Гn}. ¿cuántos años tendrá {X} dentro de {k} {Гk}? {X} tendrá {s} {Гs}: {n} + {k} = {s}.",
         факт="{X} tiene {n} {Тn}. ¿{кск} {Тмн} tiene {X}? {n}.",
         без_данных="¿{кск} {Тмн} tiene {X}? no lo sé: no se dice {кск} {Тмн} tiene {X}.",
         собрал_у="{X} recogió {n} {Тn}. perdió {k}. ¿qué cantidad de {Тмн} le queda a {X}? {r}: {n} − {k} = {r}.",
@@ -241,6 +246,7 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         владеет_после="{X} ha {n} {Тn}. ne dà {k}. {quante} {Тмн} possiede {X} adesso? {X} possiede {r} {Тr}: {n} − {k} = {r}.",
         доля="{X} ha {n} {Тn}. {ДОЛЯ} sono {ЦП}. {quante} sono {ЦП}? {r}: {n} ÷ {q} = {r}.",
         доля_не="{X} ha {n} {Тn}. {ДОЛЯ} sono {ЦП}. {quante} non sono {ЦП}? passo 1: {n} ÷ {q} = {r}. passo 2: {n} − {r} = {d}. totale: {d}.",
+        возраст_имя="{X} ha {n} {Гn}. quanti anni avrà {X} tra {k} {Гk}? {X} avrà {s} {Гs}: {n} + {k} = {s}.",
         факт="{X} ha {n} {Тn}. {quante} {Тмн} ha {X}? {n}.",
         без_данных="{quante} {Тмн} ha {X}? non lo so: non è detto {quante} {Тмн} ha {X}.",
         собрал_у="{X} ha raccolto {n} {Тn}. ha perso {k} {Тk}. che quantità di {Тмн} resta a {X}? {r}: {n} − {k} = {r}.",
@@ -264,6 +270,7 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         владеет_после="{X} tem {n} {Тn}. dá {k}. {quantas} {Тмн} possui {X} agora? {X} possui {r} {Тr}: {n} − {k} = {r}.",
         доля="{X} tem {n} {Тn}. {ДОЛЯ} são {ЦП}. {quantas} são {ЦП}? {r}: {n} ÷ {q} = {r}.",
         доля_не="{X} tem {n} {Тn}. {ДОЛЯ} são {ЦП}. {quantas} não são {ЦП}? passo 1: {n} ÷ {q} = {r}. passo 2: {n} − {r} = {d}. total: {d}.",
+        возраст_имя="{X} tem {n} {Гn}. quantos anos terá {X} daqui a {k} {Гk}? {X} terá {s} {Гs}: {n} + {k} = {s}.",
         факт="{X} tem {n} {Тn}. {quantas} {Тмн} tem {X}? {n}.",
         без_данных="{quantas} {Тмн} tem {X}? não sei: não é dito {quantas} {Тмн} tem {X}.",
         собрал_у="{X} apanhou {n} {Тn}. perdeu {k}. que quantidade de {Тмн} resta {Xд}? {r}: {n} − {k} = {r}.",
@@ -288,6 +295,7 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         владеет_после="{X} heeft {n} {Тn}. {он} geeft er {k} weg. hoeveel {Тмн} bezit {X} nu? {X} bezit {r} {Тr}: {n} − {k} = {r}.",
         доля="{X} heeft {n} {Тn}. {ДОЛЯ} daarvan is {ЦП}. hoeveel daarvan zijn {ЦП}? {r}: {n} ÷ {q} = {r}.",
         доля_не="{X} heeft {n} {Тn}. {ДОЛЯ} daarvan is {ЦП}. hoeveel daarvan zijn niet {ЦП}? stap 1: {n} ÷ {q} = {r}. stap 2: {n} − {r} = {d}. totaal: {d}.",
+        возраст_имя="{X} is {n} {Гn} oud. hoe oud is {X} over {k} {Гk}? {X} is dan {s} {Гs} oud: {n} + {k} = {s}.",
         факт="{X} heeft {n} {Тn}. hoeveel {Тмн} heeft {X}? {n}.",
         без_данных="hoeveel {Тмн} heeft {X}? ik weet het niet: hoeveel {Тмн} {X} heeft, is niet gezegd.",
         собрал_у="{X} verzamelde {n} {Тn}. {он} verloor er {k}. hoeveel {Тмн} heeft {X} nog? {r}: {n} − {k} = {r}.",
@@ -311,6 +319,7 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         владеет_после="{X} ma {n} {Тn}. oddaje {k}. ile {Тмн} posiada {X} teraz? {X} posiada {r} {Тr}: {n} − {k} = {r}.",
         доля="{X} ma {n} {Тn}. {ДОЛЯ} z nich to {ЦП}. ile z nich to {ЦП}? {r}: {n} ÷ {q} = {r}.",
         доля_не="{X} ma {n} {Тn}. {ДОЛЯ} z nich to {ЦП}. ile z nich to nie {ЦП}? krok 1: {n} ÷ {q} = {r}. krok 2: {n} − {r} = {d}. razem: {d}.",
+        возраст_имя="{X} ma {n} {Гn}. ile lat będzie mieć {X} za {k} {Гk}? {X} będzie mieć {s} {Гs}: {n} + {k} = {s}.",
         факт="{X} ma {n} {Тn}. ile {Тмн} ma {X}? {n}.",
         без_данных="ile {Тмн} ma {X}? nie wiem: nie powiedziano, ile {Тмн} ma {X}.",
         собрал_у="{X} zebrał{а} {n} {Тn}. zgubił{а} {k} z nich. ile {Тмн} zostało {Xд}? {r}: {n} − {k} = {r}.",
@@ -320,7 +329,7 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         время="{В1} {X} miał{а} {n} {Тn}. {В2} dostał{а} jeszcze {k}. ile {Тмн} ma teraz? {s}: {n} + {k} = {s}.",
         кому="{X} miał{а} {n} {Тn}. oddał{а} {k} {Тk} {Yд}. ile {Тмн} ma {X} teraz? {r}: {n} − {k} = {r}."),
 })
-ФОРМЫ = ("некоторые", "итог", "итог_всего", "осталось", "из_них", "ему", "если", "если_придут", "время", "кому", "у_него", "единица", "товар", "потерял", "купил_ещё", "собрал_у", "три", "три_шаги", "факт", "без_данных", "владеет", "владеет2", "владеет_после", "держит", "хранит", "доля", "доля_не")
+ФОРМЫ = ("некоторые", "итог", "итог_всего", "осталось", "из_них", "ему", "если", "если_придут", "время", "кому", "у_него", "единица", "товар", "потерял", "купил_ещё", "собрал_у", "три", "три_шаги", "факт", "без_данных", "владеет", "владеет2", "владеет_после", "держит", "хранит", "доля", "доля_не", "возраст_имя")
 # the unit before the number is an English shape of the band; Russian writes «3 ₽» after — declared gap
 ОБЪЯВЛЕННЫЕ_ПРОПУСКИ = {"единица": frozenset({"ru"}),
                        # «possess» — второй английский глагол владения; у других языков один
@@ -371,6 +380,10 @@ def _поля(язык, i, j, Т, n, k, форма):
              а=(("a" if X[1] == "f" else "") if язык == "pl" else A._а(язык, X[1])), аY=(("a" if Y[1] == "f" else "") if язык == "pl" else A._а(язык, Y[1])),
              n=n, k=k, r=n - k, s=n + k, a=n, b=k, m=(k + 1) // 2, t=n + k - (k + 1) // 2,
              Тn=вещь(n), Тk=вещь(k), Тr=вещь(n - k), Тs=вещь(n + k), Тмн=вещь(5), Т1=вещь(1), Тm=вещь((k + 1) // 2))
+    # THE YEAR BENDS BY THE COUNT — the numberline house declares its forms (one table, two houses);
+    # after the preposition the oblique form where the language bends it («in 5 Jahren»)
+    import numberline as _NL
+    п.update(Гn=_NL.год(язык, n), Гk=_NL.год(язык, k, после=True), Гs=_NL.год(язык, n + k))
     род = РОД_ВЕЩЕЙ.get(язык, {}).get(вещь(5), "f")
     for дыра, (м_, ж_) in РОДОВЫЕ.get(язык, {}).items():
         п[дыра] = м_ if род == "m" else ж_
@@ -471,6 +484,11 @@ def _показы():
 ПОКАЗЫ = _показы()
 
 
+def _годы(язык):
+    import numberline as _NL
+    return list(_NL.ГОД[язык].values()) + list(_NL.ГОД_ПОСЛЕ.get(язык, {}).values())
+
+
 def _образцы():
     """A regex per frame: names, things, pronouns, time words and goods are declared
     alternations; numbers are holes; the ledger is read by the judge."""
@@ -490,6 +508,7 @@ def _образцы():
                 "а": "(?:а|о|и|a|)", "аY": "(?:а|о|и|a|)", "n": r"(\d+)", "k": r"(\d+)", "r": r"(\d+)", "s": r"(\d+)", "a": r"(\d+)", "b": r"(\d+)", "v": r"(\d+)",
                 "m": r"(\d+)", "t": r"(\d+)", "q": r"(\d+)", "d": r"(\d+)",
                 "ДОЛЯ": alt(ДОЛИ[язык].values()), "ЦП": alt(ЦВЕТ_ПРЕД[язык]),
+                "Гn": alt(_годы(язык)), "Гk": alt(_годы(язык)), "Гs": alt(_годы(язык)),
                 "Тn": alt(вещи), "Тk": alt(вещи), "Тr": alt(вещи), "Тs": alt(вещи), "Тмн": alt(вещи), "Т1": alt(вещи1), "Тm": alt(вещи),
                 "ГОЛОВА": alt(ГОЛОВЫ_ИТОГА[язык]), "Ц1": alt(ЦВЕТА[язык] + ЦВЕТА_М.get(язык, ())), "Ц2": alt(ЦВЕТА[язык] + ЦВЕТА_М.get(язык, ())),
                 "В1": alt(в for в, _ in ВРЕМЯ[язык]), "В2": alt(в for _, в in ВРЕМЯ[язык]),
