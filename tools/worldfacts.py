@@ -306,7 +306,9 @@
                     "сосна": "сосны", "тюльпан": "тюльпана", "карп": "карпа", "сова": "совы", "сок": "сока", "муравей": "муравья",
                     "кошка": "кошки", "собака": "собаки", "стол": "стола", "стул": "стула"}),
     "en": dict(рамка="what do {ч1} and {ч2} have in common? {ч1} and {ч2} are {км}.",
-               мн={"an animal": "animals", "a tree": "trees", "a fish": "fish", "a liquid": "liquids", "a bird": "birds", "a flower": "flowers", 'furniture': 'furniture'}),
+               мн={"an animal": "animals", "a tree": "trees", "a fish": "fish", "a liquid": "liquids", "a bird": "birds", "a flower": "flowers",
+                   # ОДИН ГОЛОС С ДОМОМ ОПРЕДЕЛЕНИЙ (согласие домов, 05.09): «a chair is a piece of furniture», как и его определение
+                   'a piece of furniture': 'pieces of furniture'}),
     "de": dict(рамка="was haben {ч1} und {ч2} gemeinsam? {ч1} und {ч2} sind {км}.",
                мн={"ein Tier": "Tiere", "ein Baum": "Bäume", "ein Fisch": "Fische", "eine Flüssigkeit": "Flüssigkeiten", "ein Vogel": "Vögel", "eine Blume": "Blumen", 'ein Möbelstück': 'Möbel'}),
     "fr": dict(рамка="qu'ont en commun {ч1} et {ч2} ? {ч1} et {ч2} sont {км}.",
@@ -327,7 +329,7 @@
                 "es": (("un gato", "un animal"), ("un perro", "un animal")), "it": (("un gatto", "un animale"), ("un cane", "un animale")),
                 "pt": (("um gato", "um animal"), ("um cão", "um animal")), "nl": (("een kat", "een dier"), ("een hond", "een dier")),
                 "pl": (("kot", "zwierzę"), ("pies", "zwierzę"))}
-МЕБЕЛЬ = {'ru': (('стол', 'мебель'), ('стул', 'мебель')), 'en': (('a table', 'furniture'), ('a chair', 'furniture')), 'de': (('ein Tisch', 'ein Möbelstück'), ('ein Stuhl', 'ein Möbelstück')), 'fr': (('une table', 'un meuble'), ('une chaise', 'un meuble')), 'es': (('una mesa', 'un mueble'), ('una silla', 'un mueble')), 'it': (('un tavolo', 'un mobile'), ('una sedia', 'un mobile')), 'pt': (('uma mesa', 'um móvel'), ('uma cadeira', 'um móvel')), 'nl': (('een tafel', 'een meubel'), ('een stoel', 'een meubel')), 'pl': (('stół', 'mebel'), ('krzesło', 'mebel'))}
+МЕБЕЛЬ = {'ru': (('стол', 'мебель'), ('стул', 'мебель')), 'en': (('a table', 'a piece of furniture'), ('a chair', 'a piece of furniture')), 'de': (('ein Tisch', 'ein Möbelstück'), ('ein Stuhl', 'ein Möbelstück')), 'fr': (('une table', 'un meuble'), ('une chaise', 'un meuble')), 'es': (('una mesa', 'un mueble'), ('una silla', 'un mueble')), 'it': (('un tavolo', 'un mobile'), ('una sedia', 'un mobile')), 'pt': (('uma mesa', 'um móvel'), ('uma cadeira', 'um móvel')), 'nl': (('een tafel', 'een meubel'), ('een stoel', 'een meubel')), 'pl': (('stół', 'mebel'), ('krzesło', 'mebel'))}
 for _яз in КЛАССЫ:
     КЛАССЫ[_яз] = tuple(КЛАССЫ[_яз]) + КОШКА_СОБАКА[_яз] + МЕБЕЛЬ[_яз]
     assert set(к for _, к in КЛАССЫ[_яз]) <= set(ОБЩЕЕ[_яз]["мн"]), (_яз, "множественное класса не объявлено")
