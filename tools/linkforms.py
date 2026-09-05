@@ -55,7 +55,7 @@ def _числительные(язык):
 # ТАБЛИЦА УМНОЖЕНИЯ СЛОВАМИ: маленькая, вся в пределах объявленных числительных
 ТАБЛИЦА = ((2, 2), (2, 3), (3, 3), (2, 4), (3, 4), (2, 5))
 
-ФОРМЫ = ("почему", "почему_голый", "а_у", "а_если", "наоборот", "наоборот2", "а_союз", "повтори", "объясни", "объясни2", "объясни3", "счёт_да", "что_дальше", "правда", "неправда", "сказал_что", "переспрос", "согласен")
+ФОРМЫ = ("почему", "почему_голый", "а_у", "а_если", "наоборот", "наоборот2", "а_союз", "повтори", "объясни", "объясни2", "объясни3", "счёт_да", "что_дальше", "правда", "неправда", "сказал_что", "переспрос", "согласен", "повтори2", "переспрос2", "объясни4", "почему_думаешь")
 
 ЯЗЫКИ = {
     "en": dict(
@@ -65,6 +65,10 @@ def _числительные(язык):
         а_у="how many does {Y} have? {Y} has {m} {Тm}.",
         наоборот="{X} has {n} {Тn}, {Y} has {m} {Тm}. what if it were the other way round? then {X} would have {m} {Тm} and {Y} would have {n} {Тn}.",
         повтори="say that again, please. i repeat: {X} has {n} {Тn}.",
+        повтори2="say it again. i repeat: {X} has {n} {Тn}.",
+        переспрос2="what did you say? i repeat: {X} has {n} {Тn}.",
+        объясни4="explain it more simply. more simply: {n} − {k} = {r}.",
+        почему_думаешь="why do you think so? because {X} had {n} and gave away {k}: {л}",
         объясни="i do not understand, explain. i explain: {X} had {n}, gave away {k}, and has {r} left: {л}",
         объясни3="i did not understand, explain it again. i explain again: {X} had {n}, gave away {k}, and has {r} left: {л}",
         сказал_что="you said that {X} has {м} {Тм}. is that right? no, {X} has {n} {Тn}.",
@@ -99,6 +103,10 @@ def _числительные(язык):
         объясни2="объясни, пожалуйста: я не понял. объясняю: было {n}, отдано {k}, осталось {r}: {л}",
         наоборот="у {Xр} {n} {Тn}, у {Yр} {m} {Тm}. а если наоборот? тогда у {Xр} {m} {Тm}, а у {Yр} {n} {Тn}.",
         повтори="повтори, пожалуйста. повторяю: у {Xр} {n} {Тn}.",
+        повтори2="скажи ещё раз. повторяю: у {Xр} {n} {Тn}.",
+        переспрос2="что ты сказал? повторяю: у {Xр} {n} {Тn}.",
+        объясни4="объясни проще. объясняю проще: {n} − {k} = {r}.",
+        почему_думаешь="почему ты так думаешь? потому что было {n}, а отдано {k}: {л}",
         объясни="я не понял, объясни. объясняю: было {n}, отдано {k}, осталось {r}: {л}",
         объясни3="я не понял, объясни ещё раз. объясняю ещё раз: было {n}, отдано {k}, осталось {r}: {л}",
         сказал_что="ты сказал, что у {Xр} {м} {Тм}. это верно? нет, у {Xр} {n} {Тn}.",
@@ -135,6 +143,10 @@ def _числительные(язык):
         объясни2="erkläre es bitte: ich habe es nicht verstanden. ich erkläre: es waren {n}, {k} wurden weggegeben, es bleiben {r}: {л}",
         наоборот="{X} hat {n} {Тn}, {Y} hat {m} {Тm}. und wenn es umgekehrt wäre? dann hätte {X} {m} {Тm} und {Y} {n} {Тn}.",
         повтори="sag das bitte noch einmal. ich wiederhole: {X} hat {n} {Тn}.",
+        повтори2="sag es noch einmal. ich wiederhole: {X} hat {n} {Тn}.",
+        переспрос2="was hast du gesagt? ich wiederhole: {X} hat {n} {Тn}.",
+        объясни4="erkläre es einfacher. einfacher: {n} − {k} = {r}.",
+        почему_думаешь="warum denkst du das? weil {X} {n} hatte und {k} weggab: {л}",
         объясни="ich habe es nicht verstanden, erkläre es. ich erkläre: es waren {n}, {k} wurden weggegeben, es bleiben {r}: {л}",
         объясни3="ich habe es nicht verstanden, erkläre es noch einmal. ich erkläre noch einmal: es waren {n}, {k} wurden weggegeben, es bleiben {r}: {л}",
         сказал_что="du hast gesagt, dass {X} {м} {Тм} hat. stimmt das? nein, {X} hat {n} {Тn}.",
@@ -161,6 +173,10 @@ def _числительные(язык):
         объясни2="explícalo, por favor: no lo he entendido. explico: había {n}, se dieron {k}, quedan {r}: {л}",
         наоборот="{X} tiene {n} {Тn}, {Y} tiene {m} {Тm}. ¿y si fuera al revés? entonces {X} tendría {m} {Тm} y {Y} tendría {n} {Тn}.",
         повтори="repite, por favor. repito: {X} tiene {n} {Тn}.",
+        повтори2="dilo otra vez. repito: {X} tiene {n} {Тn}.",
+        переспрос2="¿qué has dicho? repito: {X} tiene {n} {Тn}.",
+        объясни4="explícalo más sencillo. más sencillo: {n} − {k} = {r}.",
+        почему_думаешь="¿por qué piensas eso? porque {X} tenía {n} y dio {k}: {л}",
         объясни="no lo he entendido, explícalo. explico: había {n}, se dieron {k}, quedan {r}: {л}",
         объясни3="no entendí, explícalo otra vez. explico otra vez: había {n}, se dieron {k}, quedan {r}: {л}",
         сказал_что="dijiste que {X} tiene {м} {Тм}. ¿es cierto? no, {X} tiene {n} {Тn}.",
@@ -185,6 +201,10 @@ def _числительные(язык):
         объясни2="explique, s'il te plaît : je n'ai pas compris. j'explique : il y en avait {n}, {k} ont été donnés, il en reste {r} : {л}",
         наоборот="{X} a {n} {Тn}, {Y} a {m} {Тm}. et si c'était l'inverse ? alors {X} aurait {m} {Тm} et {Y} aurait {n} {Тn}.",
         повтори="répète, s'il te plaît. je répète : {X} a {n} {Тn}.",
+        повтори2="redis-le. je répète : {X} a {n} {Тn}.",
+        переспрос2="qu'est-ce que tu as dit ? je répète : {X} a {n} {Тn}.",
+        объясни4="explique plus simplement. plus simplement : {n} − {k} = {r}.",
+        почему_думаешь="pourquoi penses-tu cela ? parce que {X} en avait {n} et en a donné {k} : {л}",
         объясни="je n'ai pas compris, explique. j'explique : il y en avait {n}, {k} ont été donnés, il en reste {r} : {л}",
         объясни3="je n'ai pas compris, explique encore une fois. j'explique encore une fois : il y en avait {n}, {k} ont été donnés, il en reste {r} : {л}",
         сказал_что="tu as dit {que}{X} a {м} {Тм}. c'est vrai ? non, {X} a {n} {Тn}.",
@@ -209,6 +229,10 @@ def _числительные(язык):
         объясни2="spiega, per favore: non ho capito. spiego: ce n'erano {n}, {k} sono stati dati, ne restano {r}: {л}",
         наоборот="{X} ha {n} {Тn}, {Y} ha {m} {Тm}. e se fosse il contrario? allora {X} avrebbe {m} {Тm} e {Y} avrebbe {n} {Тn}.",
         повтори="ripeti, per favore. ripeto: {X} ha {n} {Тn}.",
+        повтори2="ripetilo. ripeto: {X} ha {n} {Тn}.",
+        переспрос2="cosa hai detto? ripeto: {X} ha {n} {Тn}.",
+        объясни4="spiegalo più semplicemente. più semplicemente: {n} − {k} = {r}.",
+        почему_думаешь="perché lo pensi? perché {X} ne aveva {n} e ne ha dati {k}: {л}",
         объясни="non ho capito, spiega. spiego: ce n'erano {n}, {k} sono stati dati, ne restano {r}: {л}",
         объясни3="non ho capito, spiegalo ancora una volta. spiego ancora una volta: ce n'erano {n}, {k} sono stati dati, ne restano {r}: {л}",
         сказал_что="hai detto che {X} ha {м} {Тм}. è giusto? no, {X} ha {n} {Тn}.",
@@ -233,6 +257,10 @@ def _числительные(язык):
         объясни2="explica, por favor: não percebi. explico: havia {n}, {k} foram dados, restam {r}: {л}",
         наоборот="{X} tem {n} {Тn}, {Y} tem {m} {Тm}. e se fosse ao contrário? então {X} teria {m} {Тm} e {Y} teria {n} {Тn}.",
         повтори="repete, por favor. repito: {X} tem {n} {Тn}.",
+        повтори2="diz outra vez. repito: {X} tem {n} {Тn}.",
+        переспрос2="o que disseste? repito: {X} tem {n} {Тn}.",
+        объясни4="explica de forma mais simples. mais simples: {n} − {k} = {r}.",
+        почему_думаешь="porque pensas isso? porque {X} tinha {n} e deu {k}: {л}",
         объясни="não percebi, explica. explico: havia {n}, {k} foram dados, restam {r}: {л}",
         объясни3="não percebi, explica outra vez. explico outra vez: havia {n}, {k} foram dados, restam {r}: {л}",
         сказал_что="disseste que {X} tem {м} {Тм}. está certo? não, {X} tem {n} {Тn}.",
@@ -263,6 +291,10 @@ def _числительные(язык):
         объясни2="wyjaśnij, proszę: nie rozumiem. wyjaśniam: było {n}, oddano {k}, zostało {r}: {л}",
         наоборот="{X} ma {n} {Тn}, {Y} ma {m} {Тm}. a gdyby było odwrotnie? wtedy {X} miał{а}by {m} {Тm}, a {Y} {n} {Тn}.",
         повтори="powtórz, proszę. powtarzam: {X} ma {n} {Тn}.",
+        повтори2="powiedz jeszcze raz. powtarzam: {X} ma {n} {Тn}.",
+        переспрос2="co powiedziałeś? powtarzam: {X} ma {n} {Тn}.",
+        объясни4="wyjaśnij prościej. prościej: {n} − {k} = {r}.",
+        почему_думаешь="dlaczego tak myślisz? bo było {n}, a oddano {k}: {л}",
         объясни="nie rozumiem, wyjaśnij. wyjaśniam: było {n}, oddano {k}, zostało {r}: {л}",
         объясни3="nie zrozumiałem, wyjaśnij jeszcze raz. wyjaśniam jeszcze raz: było {n}, oddano {k}, zostało {r}: {л}",
         сказал_что="powiedziałeś, że {X} ma {м} {Тм}. czy to prawda? nie, {X} ma {n} {Тn}.",
@@ -287,6 +319,10 @@ def _числительные(язык):
         объясни2="leg het uit, alsjeblieft: ik begrijp het niet. ik leg uit: {X} had er {n}, gaf {k} weg, en houdt er {r} over: {л}",
         наоборот="{X} heeft {n} {Тn}, {Y} heeft {m} {Тm}. en als het omgekeerd was? dan zou {X} {m} {Тm} hebben en {Y} {n} {Тn}.",
         повтори="zeg dat nog eens, alsjeblieft. ik herhaal: {X} heeft {n} {Тn}.",
+        повтори2="zeg het nog eens. ik herhaal: {X} heeft {n} {Тn}.",
+        переспрос2="wat zei je? ik herhaal: {X} heeft {n} {Тn}.",
+        объясни4="leg het eenvoudiger uit. eenvoudiger: {n} − {k} = {r}.",
+        почему_думаешь="waarom denk je dat? omdat {X} er {n} had en er {k} weggaf: {л}",
         объясни="ik begrijp het niet, leg het uit. ik leg uit: {X} had er {n}, gaf {k} weg, en houdt er {r} over: {л}",
         объясни3="ik heb het niet begrepen, leg het nog een keer uit. ik leg het nog een keer uit: {X} had er {n}, gaf {k} weg, en houdt er {r} over: {л}",
         сказал_что="je zei dat {X} {м} {Тм} heeft. klopt dat? nee, {X} heeft {n} {Тn}.",
@@ -469,14 +505,20 @@ for _яз in ЯЗЫКИ:
 def страница(язык, форма, X=0, Т=0, n=7, k=2, Y=None, вежливо=False):
     я = (ЯЗЫКИ_ВЫ if вежливо else ЯЗЫКИ)[язык]
     п = _поля(язык, X, Т, n, k)
-    if форма in ("повтори", "объясни", "объясни2"):
+    if форма in ("повтори", "повтори2", "переспрос2", "объясни", "объясни2", "объясни4", "почему_думаешь"):
         # ПОЧИНКА РАЗГОВОРА: «повтори, пожалуйста» и «я не понял, объясни» —
         # не вопросы, а просьбы, и ответ на них ПРОВЕРЯЕМ: повтор обязан
         # совпасть с фактом, объяснение — показать кузницу. Без этой пары
         # продукт, которого не поняли, не имеет второго хода.
-        if форма == "повтори":
+        if форма in ("повтори", "повтори2", "переспрос2"):
+            # ХОДЫ ПОСЛЕ ОТВЕТА (десятая полоса, 06.09): «скажи ещё раз», «что ты сказал?» —
+            # тот же повтор факта, что и «повтори, пожалуйста»
             зачин = я["стало"].format(**dict(п, r=n, Тr=п["Тn"]))
-            return f"{зачин} {я['повтори'].format(**п)}"
+            return f"{зачин} {я[форма].format(**п)}"
+        if форма == "почему_думаешь":
+            # «почему ты так думаешь?» после ответа — основание есть кузница
+            зачин = f"{я['было'].format(**п)} {я['отдал'].format(**п)} {я['стало'].format(**п)}"
+            return f"{зачин} {я[форма].format(**п)}"
         зачин = f"{я['было'].format(**п)} {я['отдал'].format(**п)} {я['стало'].format(**п)}"
         ключ = форма if форма in я else "объясни"
         return f"{зачин} {я[ключ].format(**п)}"
