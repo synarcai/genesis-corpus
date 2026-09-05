@@ -1,0 +1,90 @@
+# BESEDA-2 — ВТОРАЯ ПОЛОСА БЕСЕДЫ: то, о чём человек спрашивает собеседника ПОСЛЕ приветствия.
+#
+# Первая полоса (BESEDA-100, holon) дошла до пола: 95 % строкой, 97 % с формой, и два
+# оставшихся немых — намеренный отказ корпуса. Значит мера исчерпала полосу, а не корпус:
+# новая немота видна только новой полосе. Эта полоса спрашивает то, чего первая не
+# спрашивала: закон дня и недели, отказ от лжи с основанием, помощь в счёте, поправку
+# собеседника, просьбу пояснить, память о сказанном, мнение против факта, границу
+# незнания. Девять языков; строка «вопрос ||| подстрока ожидаемого ответа»; без «|||» —
+# довольно того, чтобы ответ был и был обоснован.
+#
+# GENUS: WEEK-LAW
+сколько дней в неделе? ||| 7
+how many days are there in a week? ||| 7
+wie viele Tage hat eine Woche? ||| 7
+combien de jours y a-t-il dans une semaine ? ||| 7
+¿cuántos días tiene una semana? ||| 7
+quanti giorni ha una settimana? ||| 7
+quantos dias tem uma semana? ||| 7
+hoeveel dagen heeft een week? ||| 7
+ile dni ma tydzień? ||| 7
+# GENUS: NEXT-DAY
+какой день идёт после понедельника? ||| вторник
+what day comes after monday? ||| tuesday
+welcher Tag kommt nach Montag? ||| Dienstag
+quel jour vient après lundi ? ||| mardi
+¿qué día viene después del lunes? ||| martes
+che giorno viene dopo lunedì? ||| martedì
+que dia vem depois de segunda-feira? ||| terça
+welke dag komt na maandag? ||| dinsdag
+jaki dzień jest po poniedziałku? ||| wtorek
+# GENUS: REFUSE-FALSE
+правда ли, что дважды два пять? ||| нет
+is it true that twice two is five? ||| no
+stimmt es, dass zweimal zwei fünf ist? ||| nein
+est-il vrai que deux fois deux font cinq ? ||| non
+¿es verdad que dos por dos es cinco? ||| no
+è vero che due per due fa cinque? ||| no
+é verdade que dois vezes dois é cinco? ||| não
+is het waar dat twee maal twee vijf is? ||| nee
+czy to prawda, że dwa razy dwa to pięć? ||| nie
+# GENUS: HELP-COUNT
+помоги, пожалуйста: сколько будет 12 плюс 7? ||| 19
+help me, please: how much is 12 plus 7? ||| 19
+hilf mir bitte: wie viel ist 12 plus 7? ||| 19
+aide-moi, s'il te plaît : combien font 12 plus 7 ? ||| 19
+ayúdame, por favor: ¿cuánto es 12 más 7? ||| 19
+aiutami, per favore: quanto fa 12 più 7? ||| 19
+ajuda-me, por favor: quanto é 12 mais 7? ||| 19
+help me alsjeblieft: hoeveel is 12 plus 7? ||| 19
+pomóż mi, proszę: ile jest 12 plus 7? ||| 19
+# GENUS: CORRECT-ME
+у Анны 7 монет. ты сказал, что у Анны 8 монет. это верно? ||| 7
+Anna has 7 coins. you said that Anna has 8 coins. is that right? ||| 7
+Anna hat 7 Münzen. du hast gesagt, dass Anna 8 Münzen hat. stimmt das? ||| 7
+Anna a 7 pièces. tu as dit qu'Anna a 8 pièces. c'est vrai ? ||| 7
+Anna tiene 7 monedas. dijiste que Anna tiene 8 monedas. ¿es cierto? ||| 7
+Anna ha 7 monete. hai detto che Anna ha 8 monete. è giusto? ||| 7
+Anna tem 7 moedas. disseste que Anna tem 8 moedas. está certo? ||| 7
+Anna heeft 7 munten. je zei dat Anna 8 munten heeft. klopt dat? ||| 7
+Anna ma 7 monet. powiedziałeś, że Anna ma 8 monet. czy to prawda? ||| 7
+# GENUS: EXPLAIN-AGAIN
+я не понял, объясни ещё раз.
+i did not understand, explain it again.
+ich habe es nicht verstanden, erkläre es noch einmal.
+je n'ai pas compris, explique encore une fois.
+no entendí, explícalo otra vez.
+non ho capito, spiegalo ancora una volta.
+não percebi, explica outra vez.
+ik heb het niet begrepen, leg het nog een keer uit.
+nie zrozumiałem, wyjaśnij jeszcze raz.
+# GENUS: OPINION-VS-FACT
+лёд плавает в воде — это факт или мнение? ||| факт
+ice floats in water — is that a fact or an opinion? ||| fact
+Eis schwimmt im Wasser — ist das eine Tatsache oder eine Meinung? ||| Tatsache
+la glace flotte sur l'eau — est-ce un fait ou une opinion ? ||| fait
+el hielo flota en el agua — ¿es un hecho o una opinión? ||| hecho
+il ghiaccio galleggia sull'acqua — è un fatto o un'opinione? ||| fatto
+o gelo flutua na água — é um facto ou uma opinião? ||| facto
+ijs drijft op water — is dat een feit of een mening? ||| feit
+lód pływa po wodzie — to fakt czy opinia? ||| fakt
+# GENUS: LIMIT-OF-KNOWING
+ты знаешь, какая сегодня погода? ||| не знаю
+do you know what the weather is like today? ||| do not know
+weißt du, wie das Wetter heute ist? ||| weiß nicht
+sais-tu quel temps il fait aujourd'hui ? ||| ne sais pas
+¿sabes qué tiempo hace hoy? ||| no sé
+sai che tempo fa oggi? ||| non so
+sabes que tempo faz hoje? ||| não sei
+weet je hoe het weer vandaag is? ||| weet niet
+czy wiesz, jaka jest dziś pogoda? ||| nie wiem
