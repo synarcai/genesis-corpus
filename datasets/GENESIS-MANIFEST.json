@@ -1072,6 +1072,28 @@
       "actors": []
     },
     {
+      "name": "svamp",
+      "file": "datasets/genesis_svamp.txt",
+      "genre": "SVAMP SHAPES — the eight shapes of the live SVAMP band that no frame of the corpus held (d5, 06.09, by weight on 726 tacts): the hidden quantity «some» and the heads of the total (in all, altogether, in total, a total of, now has N left); the oblique pronoun as a pronoun (gave 5 of them, gave him 20); the hypothetical act in the question (if she gives away 5, how many will she have?); the words of time order (at first … then); transfer with a direction (gave 5 coins to Ann, took 5 from her); the unit before the number ($ 3 — English only, declared); goods outside the lexicon (pages of reading homework). English and Russian twins; names and things are the house of action pages, pronouns declared by gender; every answer carries its ledger, recomputed by the court (tools/svampforms.py). CLOSED world.",
+      "act": [
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "numberline",
       "file": "datasets/genesis_numberline.txt",
       "genre": "THE NUMBER LINE IN NINE LANGUAGES — the simplest questions a person checks a speaker with, all mute in all nine languages on the third band of conversation (BESEDA-3, 05.09): «what number comes after 9? after 9 comes 10.», «which is bigger: 7 or 9? 9 is bigger: 9 − 7 = 2.», «count from 1 to 5. 1, 2, 3, 4, 5.», «is 7 an even or an odd number? odd: 7 = 2 × 3 + 1.» — neighbour, bigger/smaller, rows up and down, parity, each answer with its ground (the difference, the halving, the row itself). The house tools/numberline.py declares the frames of ru/en/de/fr/es/it/pt/nl/pl (the Italian article bends before a vowel-initial number word: «dopo l'8», «dopo il 9»); the court walks the line itself. CLOSED world.",
