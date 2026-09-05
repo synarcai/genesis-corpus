@@ -379,18 +379,29 @@ def страница(язык, форма, i, j, Т, n, k, вариант=0, и�
         п.update(n=n_, k=k_, v=n_ * k_, Тмн=A._вещь(язык, Т, 5))
     if форма == "товар":
         г1, г2, г3 = ТОВАРЫ[язык][вариант % len(ТОВАРЫ[язык])]
-        п.update(Г1a=_счёт(г1, n), Г2b=_счёт(г2, k), Г3мн=г3[-1], Г3s=_счёт(г3, n + k))
+        п.update(Г1a=_счёт(г1, n, язык), Г2b=_счёт(г2, k, язык), Г3мн=г3[-1], Г3s=_счёт(г3, n + k, язык))
     return р.format(**п)
 
 
-def _счёт(ф, c):
-    """Count form of a declared goods phrase: (one, many) for en, (one, few, many) for ru."""
+def _счёт(ф, c, язык="ru"):
+    """Count form of a declared goods phrase: (one, many) for en, (one, few, many) for ru and pl.
+
+    THE RULE IS THE PACK'S, NOT RUSSIAN (05.09, the agreement court: «21 kwiat», «31 moneta» —
+    Polish gives 21, 31, 101 the genitive plural, only exactly 1 the singular; Russian gives 21
+    the singular). The cell is read from the language pack's declared count_agreement."""
     if len(ф) == 2:
         return ф[0] if c == 1 else ф[1]
-    if c % 100 in range(11, 15):
-        return ф[2]
-    п = c % 10
-    return ф[0] if п == 1 else ф[1] if п in (2, 3, 4) else ф[2]
+    return ф[_ячейка(язык, c)]
+
+
+_ПАКЕТЫ_СЧЁТА = {}
+
+
+def _ячейка(язык, c):
+    import langpack
+    if язык not in _ПАКЕТЫ_СЧЁТА:
+        _ПАКЕТЫ_СЧЁТА[язык] = json.loads((_ПАКЕТЫ / f"{язык}.json").read_text(encoding="utf-8"))
+    return langpack.count_form_index(_ПАКЕТЫ_СЧЁТА[язык], {"forms": ["one", "few", "many"]}, c)
 
 
 def _показы():
@@ -721,7 +732,7 @@ _ТОВАР_ПО_ДЫРЕ.update({"ДЕВ": "девочки", "МАЛ": "мал�
 
 
 def _товар_форма(язык, ключ, c):
-    return _счёт(ТОВАРЫ_АКТОВ[язык][ключ], c)
+    return _счёт(ТОВАРЫ_АКТОВ[язык][ключ], c, язык)
 
 
 def _поля_акта(язык, i, j, n, k, m):
@@ -736,7 +747,7 @@ def _поля_акта(язык, i, j, n, k, m):
     # «сели_вышли»: сели k, вышли k2, теперь s = n + k − k2 — вышло меньше, чем село
     п["k2"] = max(1, k // 2); п["s_бус"] = n + k - п["k2"]
     if язык in НОВЫЕ:
-        п["НОВk"] = _счёт(НОВЫЕ[язык], k)
+        п["НОВk"] = _счёт(НОВЫЕ[язык], k, язык)
     for дыра, ключ in _ТОВАР_ПО_ДЫРЕ.items():
         if ключ not in ТОВАРЫ_АКТОВ[язык]:
             continue
