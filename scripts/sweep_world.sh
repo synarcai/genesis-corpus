@@ -12,7 +12,11 @@
 #            (~/projects/oldman/synarcai/canon/FULL-<sha8>.state); N — скелетов;
 #   SEED   — семя выборки; OUTDIR — куда класть выборку, прогон и вердикт.
 # ИМЕНА ПЕРЕМЕННЫХ ЛАТИНИЦЕЙ: bash 3.2 macOS кириллических не берёт.
+# ЧИТАТЕЛЬ БЕРЁТСЯ ИЗ OZAR_CORE, ИНАЧЕ С ПУТИ: установленный бинарь может отстать от main
+# (05.09: ~/.cargo/bin/ozar-core от 08:37 отвечал всему миру «not_mine: session-recall»,
+# текущий main — сертификатами и честными отказами).
 set -u
+OZAR_CORE="${OZAR_CORE:-ozar-core}"
 cd "$(dirname "$0")/.."
 if [ $# -lt 5 ]; then
   echo "usage: scripts/sweep_world.sh WORLD.txt STATE N SEED OUTDIR"; exit 2
@@ -27,7 +31,7 @@ CLONE="$OUT/reader.state"
 if [ ! -f "$CLONE" ]; then
   ozar clone --base "$STATE" --state "$CLONE" > "$OUT/clone.log" 2>&1 || { echo "ВОРОТА МИРА ОТКАЗ: клон не удался"; exit 2; }
 fi
-ozar-core 250 0 --state "$CLONE" --pipe --no-ask < "$OUT/sweep_q.txt" > "$OUT/run.out" 2> "$OUT/run.err"
+"$OZAR_CORE" 250 0 --state "$CLONE" --pipe --no-ask < "$OUT/sweep_q.txt" > "$OUT/run.out" 2> "$OUT/run.err"
 echo "RUN EXIT $?"
 python3 scripts/sweep_self.py judge "$OUT/sweep_key.tsv" "$OUT/run.out" --классов 12 \
   --метка "мир $(basename "$WORLD") на $(basename "$STATE")" --в "$OUT/verdict.tsv"
