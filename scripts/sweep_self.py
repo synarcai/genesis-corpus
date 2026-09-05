@@ -185,14 +185,36 @@ def _текст(т):
     return re.sub(r"\s+", " ", str(т).replace("−", "-").strip().lower()).rstrip(". ")
 
 
+СОСТАВНАЯ = re.compile(r"\d+ [^\W\d_]+ \d+ [^\W\d_]+")
+ПОЧЕМУ = frozenset("why почему pourquoi warum por perché porque waarom dlaczego".split())
+
+
+def почему(вопрос):
+    """A why-question is not judged by value (holon, 05.09): its answer is a ground, not a
+    number. The question is its LAST sentence — the story before it is evidence."""
+    хвост = re.split(r"(?<=[.!?]) ", str(вопрос).strip().rstrip("?").strip())[-1]
+    слова = СЛОВО.findall(хвост.lower())
+    return bool(слова) and (слова[0] in ПОЧЕМУ or (слова[0] == "por" and len(слова) > 1 and слова[1] == "qué"))
+
+
 def верно(ответ_канона, ответ_читателя):
+    """THE VALUE IS THE END OF THE CANON'S ANSWER (holon's scar, 05.09 — two blind spots of
+    the judges: text inside text let «12» pass against «12 − 5 = 7»; a superset of numbers
+    called «5» a lie against «медиана 2 8 5 равна 5»). Three rules, in order:
+      · the reader's answer, normalised, ENDS the canon's answer — right (grids, «5»);
+      · the canon's answer carries no number — judged as text;
+      · otherwise the canon's LAST number must stand in the reader's answer, and for a
+        compound unit («38 рублей 80 копеек») every number of the canon's answer must."""
     канон, чит = _текст(ответ_канона), _текст(ответ_читателя)
-    if чит and чит in канон:
+    if чит and канон.endswith(чит):
         return True
-    надо, есть = _числа(ответ_канона), _числа(ответ_читателя)
-    if not надо:
+    ряд = [round(float(ч.replace(",", ".")), 6) for ч in ЧИСЛО.findall(str(ответ_канона).replace("−", "-"))]
+    есть = _числа(ответ_читателя)
+    if not ряд:
         return канон == чит
-    return надо <= есть
+    if СОСТАВНАЯ.search(канон):
+        return set(ряд) <= есть
+    return ряд[-1] in есть
 
 
 def _ключ(путь):
@@ -237,9 +259,13 @@ def _ответы(путь):
 def _вердикт(строки, классов, метка, секунд=None):
     верных = лжей = 0; лжи = []; всего = collections.Counter(); ок = collections.Counter()
     немые = collections.Counter(); по_глубине = collections.defaultdict(collections.Counter)
+    вне = 0
     for я, в, о, исход, ответ in строки:
         всего[я] += 1
         по_глубине[глубина(о)][исход] += 1
+        if исход == "вне":
+            вне += 1
+            continue
         if исход == "верно":
             верных += 1; ок[я] += 1
         elif исход == "ложь":
@@ -250,8 +276,8 @@ def _вердикт(строки, классов, метка, секунд=None)
             немые[(я, (ответ or "—"), голова(в))] += 1
     немых = sum(1 for с in строки if с[3] == "немо")
     поза = "PASS" if лжей <= ЛЖИ_РУБЕЖ else "FAIL"
-    print(f"СВОД СПРАШИВАЕТ СЕБЯ {поза} [{метка}]: сертифицировано {верных + лжей} из {len(строки)}, "
-          f"верных {верных}, ЛЖЕЙ {лжей} (рубеж {ЛЖИ_РУБЕЖ}), немых {немых}"
+    print(f"СВОД СПРАШИВАЕТ СЕБЯ {поза} [{метка}]: сертифицировано {верных + лжей + вне} из {len(строки)}, "
+          f"верных {верных}, ЛЖЕЙ {лжей} (рубеж {ЛЖИ_РУБЕЖ}), немых {немых}, вне значения (why) {вне}"
           + (f"; время {секунд} с ({секунд / len(строки):.1f} с на вопрос)" if секунд else ""))
     print("  по языкам (верно/всего): " + " ".join(f"{я} {ок[я]}/{к}" for я, к in всего.most_common()))
     print("  по глубине ответа свода (верно/ложь/немо): " + " ".join(
@@ -277,7 +303,8 @@ def judge(ключ, прогон, классов=12, метка="sweep", куд�
     строки = []
     for i, (я, в, о) in enumerate(ряд, 1):
         if i in ответы:
-            строки.append((я, в, о, "верно" if верно(о, ответы[i]) else "ложь", ответы[i]))
+            исход = "вне" if почему(в) else ("верно" if верно(о, ответы[i]) else "ложь")
+            строки.append((я, в, о, исход, ответы[i]))
         else:
             строки.append((я, в, о, "немо", ПРИЧИНЫ.get(i, "")))
     куда = pathlib.Path(куда) if куда else ПОСЛЕДНИЙ
