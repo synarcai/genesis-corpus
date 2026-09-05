@@ -1057,24 +1057,7 @@ what is a corollary? a corollary is what follows from what is already proved: fr
 corollary of the theorem «if a is even and b is even, then a + b is even»: if a is even, b is even and c is even, then a + b + c is even, since 6 + 10 = 16, and 16 + 22 = 38, and 38 is even.
 следствие теоремы «если a чётно и b чётно, то a + b чётно»: если a чётно, то a + a чётно, ибо 6 + 6 = 12, и 12 чётно.
 
-the fate of a hypothesis: the hypothesis «n * n + n + 41 is prime for every whole n» is refuted, since at n = 40 it gives 1681 = 41 * 41.
-проверка случаев не есть доказательство: 2 * n + 3 просто при n от 0 до 2, а при n = 3 выходит 9 = 3 * 3.
-checking cases is not a proof: n * n + 1 is prime for n from 1 to 2, and at n = 3 it gives 10 = 2 * 5.
-гипотеза: n * n + 1 просто при всяком целом n больше 0. она верна при n от 1 до 2, но убита контрпримером: при n = 3 выходит 10 = 2 * 5.
-hypothesis: n * n + n + 41 is prime for every whole n. it holds for n from 0 to 39, but a counterexample kills it: at n = 40 it gives 1681 = 41 * 41.
-участь гипотезы: гипотеза «2 * n + 3 просто при всяком целом n» опровергнута, ибо при n = 3 выходит 9 = 3 * 3.
-the fate of a hypothesis: the hypothesis «n * n + 1 is prime for every whole n greater than 0» is refuted, since at n = 3 it gives 10 = 2 * 5.
-проверка случаев не есть доказательство: n * n + n + 41 просто при n от 0 до 39, а при n = 40 выходит 1681 = 41 * 41.
-checking cases is not a proof: 2 * n + 3 is prime for n from 0 to 2, and at n = 3 it gives 9 = 3 * 3.
-гипотеза: 2 * n + 3 просто при всяком целом n. она верна при n от 0 до 2, но убита контрпримером: при n = 3 выходит 9 = 3 * 3.
-hypothesis: n * n + 1 is prime for every whole n greater than 0. it holds for n from 1 to 2, but a counterexample kills it: at n = 3 it gives 10 = 2 * 5.
-участь гипотезы: гипотеза «n * n + n + 41 просто при всяком целом n» опровергнута, ибо при n = 40 выходит 1681 = 41 * 41.
-the fate of a hypothesis: the hypothesis «2 * n + 3 is prime for every whole n» is refuted, since at n = 3 it gives 9 = 3 * 3.
-проверка случаев не есть доказательство: n * n + 1 просто при n от 1 до 2, а при n = 3 выходит 10 = 2 * 5.
-checking cases is not a proof: n * n + n + 41 is prime for n from 0 to 39, and at n = 40 it gives 1681 = 41 * 41.
-гипотеза: n * n + n + 41 просто при всяком целом n. она верна при n от 0 до 39, но убита контрпримером: при n = 40 выходит 1681 = 41 * 41.
-hypothesis: 2 * n + 3 is prime for every whole n. it holds for n from 0 to 2, but a counterexample kills it: at n = 3 it gives 9 = 3 * 3.
-участь гипотезы: гипотеза «n * n + 1 просто при всяком целом n больше 0» опровергнута, ибо при n = 3 выходит 10 = 2 * 5.
+
 
 hypothesis: every even number greater than 2 is a sum of two primes. it has no proof, and a case confirms it: 22 = 3 + 19, and 3 is prime, and 19 is prime.
 гипотезой зовётся утверждение без доказательства, и случай его не доказывает: 24 = 5 + 19, и 5 просто, и 19 просто.
@@ -1458,24 +1441,7 @@ what is a corollary? a corollary is what follows from what is already proved: fr
 следствие теоремы «если a даёт остаток 3 при делении на 5 и b даёт остаток 1 при делении на 5, то a * b даёт остаток 3 при делении на 5»: если a даёт остаток 3 при делении на 5, b даёт остаток 1 при делении на 5 и c даёт остаток 1 при делении на 5, то a * b * c даёт остаток 3 при делении на 5, ибо 23 * 41 = 943, и 943 * 76 = 71668, и 71668 даёт остаток 3 при делении на 5.
 corollary of the theorem «if a leaves remainder 2 when divided by 3 and b leaves remainder 2 when divided by 3, then a * b leaves remainder 1 when divided by 3»: if a leaves remainder 2 when divided by 3, then a * a leaves remainder 1 when divided by 3, since 20 * 20 = 400, and 400 leaves remainder 1 when divided by 3.
 
-проверка случаев не есть доказательство: n * n + n + 41 просто при n от 0 до 39, а при n = 40 выходит 1681 = 41 * 41.
-the fate of a hypothesis: the hypothesis «n * n + n + 41 is prime for every whole n» is refuted, since at n = 40 it gives 1681 = 41 * 41.
-участь гипотезы: гипотеза «n * n + n + 41 просто при всяком целом n» опровергнута, ибо при n = 40 выходит 1681 = 41 * 41.
-hypothesis: n * n + n + 41 is prime for every whole n. it holds for n from 0 to 39, but a counterexample kills it: at n = 40 it gives 1681 = 41 * 41.
-гипотеза: n * n + n + 41 просто при всяком целом n. она верна при n от 0 до 39, но убита контрпримером: при n = 40 выходит 1681 = 41 * 41.
-checking cases is not a proof: 2 * n + 3 is prime for n from 0 to 2, and at n = 3 it gives 9 = 3 * 3.
-проверка случаев не есть доказательство: 2 * n + 3 просто при n от 0 до 2, а при n = 3 выходит 9 = 3 * 3.
-the fate of a hypothesis: the hypothesis «2 * n + 3 is prime for every whole n» is refuted, since at n = 3 it gives 9 = 3 * 3.
-участь гипотезы: гипотеза «2 * n + 3 просто при всяком целом n» опровергнута, ибо при n = 3 выходит 9 = 3 * 3.
-hypothesis: 2 * n + 3 is prime for every whole n. it holds for n from 0 to 2, but a counterexample kills it: at n = 3 it gives 9 = 3 * 3.
-гипотеза: 2 * n + 3 просто при всяком целом n. она верна при n от 0 до 2, но убита контрпримером: при n = 3 выходит 9 = 3 * 3.
-checking cases is not a proof: n * n + 1 is prime for n from 1 to 2, and at n = 3 it gives 10 = 2 * 5.
-проверка случаев не есть доказательство: n * n + 1 просто при n от 1 до 2, а при n = 3 выходит 10 = 2 * 5.
-the fate of a hypothesis: the hypothesis «n * n + 1 is prime for every whole n greater than 0» is refuted, since at n = 3 it gives 10 = 2 * 5.
-участь гипотезы: гипотеза «n * n + 1 просто при всяком целом n больше 0» опровергнута, ибо при n = 3 выходит 10 = 2 * 5.
-hypothesis: n * n + 1 is prime for every whole n greater than 0. it holds for n from 1 to 2, but a counterexample kills it: at n = 3 it gives 10 = 2 * 5.
-гипотеза: n * n + 1 просто при всяком целом n больше 0. она верна при n от 1 до 2, но убита контрпримером: при n = 3 выходит 10 = 2 * 5.
-checking cases is not a proof: n * n + n + 41 is prime for n from 0 to 39, and at n = 40 it gives 1681 = 41 * 41.
+
 
 что такое гипотеза? гипотеза есть утверждение без доказательства, и случай её не доказывает: 26 = 3 + 23, и 3 просто, и 23 просто.
 what is a hypothesis? a hypothesis is a statement without a proof, and a case does not prove it: 30 = 7 + 23, and 7 is prime, and 23 is prime.
@@ -1553,19 +1519,15 @@ what does «is not divisible by 5» mean? a number is not divisible by 5 if its 
 the statement «if a is not divisible by 2 and b is not divisible by 2, then a * b is not divisible by 2» is true, since 2 is prime: a product is not divisible by a prime unless one of its factors is.
 
 условные утверждения имеют условие и заключение, и условная часть «если a даёт остаток 3 при делении на 5 и b даёт остаток 1 при делении на 5, то a * b даёт остаток 3 при делении на 5» стоит до слова «то»: при a = 23 и b = 41 выходит 23 * 41 = 943.
-of the two assertions one is proved and the other is not, and the proved one is «if a leaves remainder 3 when divided by 5 and b leaves remainder 1 when divided by 5, then a * b leaves remainder 3 when divided by 5»: at a = 23 and b = 41 it gives 23 * 41 = 943.
-утверждение «n * n + n + 41 просто при всяком целом n» есть гипотеза, а не теорема: доказательства нет, и при n = 40 выходит 1681 = 41 * 41.
-the statement «n * n + 1 is prime for every whole n greater than 0» is a hypothesis and not a theorem: there is no proof, and at n = 3 it gives 10 = 2 * 5.
-утверждение «если a чётно и b нечётно, то a + b нечётно» есть теорема, ибо ход от условия к заключению есть: 10 + 13 = 2 * ( 5 + 6 ) + 1 = 2 * 11 + 1 = 23.
-a conditional statement has a condition and a conclusion, and the assertion «if a leaves remainder 3 when divided by 5 and b leaves remainder 1 when divided by 5, then a * b leaves remainder 3 when divided by 5» is one of them: at a = 23 and b = 41 it gives 23 * 41 = 943.
-двумя теоремами показано, что 23 + 41 = 64 и 23 * 41 = 943.
-the statement «n * n + n + 41 is prime for every whole n» is a hypothesis and not a theorem: there is no proof, and at n = 40 it gives 1681 = 41 * 41.
-утверждение «если a даёт остаток 3 при делении на 5 и b даёт остаток 1 при делении на 5, то a * b даёт остаток 3 при делении на 5» есть теорема, ибо ход от условия к заключению есть: 23 * 41 = 5 * ( 5 * 4 * 8 + 4 + 24 ) + 3 = 5 * 188 + 3 = 943.
-the statement «if a is even and b is odd, then a + b is odd» is a theorem, since the move from the condition to the conclusion exists: 10 + 13 = 2 * ( 5 + 6 ) + 1 = 2 * 11 + 1 = 23.
-из двух утверждений одно доказано, а другое нет, и первое есть «если a даёт остаток 3 при делении на 5 и b даёт остаток 1 при делении на 5, то a * b даёт остаток 3 при делении на 5»: при a = 23 и b = 41 выходит 23 * 41 = 943.
-two theorems show that 23 + 41 = 64 and 23 * 41 = 943.
-утверждение «n * n + 1 просто при всяком целом n больше 0» есть гипотеза, а не теорема: доказательства нет, и при n = 3 выходит 10 = 2 * 5.
 the statement «if a leaves remainder 3 when divided by 5 and b leaves remainder 1 when divided by 5, then a * b leaves remainder 3 when divided by 5» is a theorem, since the move from the condition to the conclusion exists: 23 * 41 = 5 * ( 5 * 4 * 8 + 4 + 24 ) + 3 = 5 * 188 + 3 = 943.
+двумя теоремами показано, что 23 + 41 = 64 и 23 * 41 = 943.
+a conditional statement has a condition and a conclusion, and the assertion «if a leaves remainder 3 when divided by 5 and b leaves remainder 1 when divided by 5, then a * b leaves remainder 3 when divided by 5» is one of them: at a = 23 and b = 41 it gives 23 * 41 = 943.
+утверждение «если a чётно и b нечётно, то a + b нечётно» есть теорема, ибо ход от условия к заключению есть: 10 + 13 = 2 * ( 5 + 6 ) + 1 = 2 * 11 + 1 = 23.
+two theorems show that 23 + 41 = 64 and 23 * 41 = 943.
+из двух утверждений одно доказано, а другое нет, и первое есть «если a даёт остаток 3 при делении на 5 и b даёт остаток 1 при делении на 5, то a * b даёт остаток 3 при делении на 5»: при a = 23 и b = 41 выходит 23 * 41 = 943.
+the statement «if a is even and b is odd, then a + b is odd» is a theorem, since the move from the condition to the conclusion exists: 10 + 13 = 2 * ( 5 + 6 ) + 1 = 2 * 11 + 1 = 23.
+утверждение «если a даёт остаток 3 при делении на 5 и b даёт остаток 1 при делении на 5, то a * b даёт остаток 3 при делении на 5» есть теорема, ибо ход от условия к заключению есть: 23 * 41 = 5 * ( 5 * 4 * 8 + 4 + 24 ) + 3 = 5 * 188 + 3 = 943.
+of the two assertions one is proved and the other is not, and the proved one is «if a leaves remainder 3 when divided by 5 and b leaves remainder 1 when divided by 5, then a * b leaves remainder 3 when divided by 5»: at a = 23 and b = 41 it gives 23 * 41 = 943.
 
 две теоремы об одной паре: если a чётно и b нечётно, то a + b нечётно, и если a чётно и b нечётно, то a * b чётно. при a = 10 и b = 13 выходят два заключения: 10 + 13 = 23, и 23 нечётно; 10 * 13 = 130, и 130 чётно.
 two statements of different kind: «if a leaves remainder 3 when divided by 5 and b leaves remainder 1 when divided by 5, then a * b leaves remainder 3 when divided by 5» is a theorem, since the move exists: 23 * 41 = 5 * ( 5 * 4 * 8 + 4 + 24 ) + 3 = 5 * 188 + 3 = 943; «n * n + n + 41 is prime for every whole n» is a hypothesis, and it is killed at n = 40: 1681 = 41 * 41.
@@ -1855,24 +1817,7 @@ corollary of the theorem «if a is even and b is even, then a + b is even»: if 
 что такое следствие? следствие есть то, что вытекает из уже доказанного: из теоремы «если a даёт остаток 2 при делении на 4 и b даёт остаток 2 при делении на 4, то a + b делится на 4 без остатка» при a = 10 и b = 26 выходит 10 + 26 = 36, и 36 делится на 4 без остатка.
 what is a corollary? a corollary is what follows from what is already proved: from the theorem «if a is even and b is even, then a + b is even» at a = 14 and b = 24 it gives 14 + 24 = 38, and 38 is even.
 
-гипотеза: n * n + n + 41 просто при всяком целом n. она верна при n от 0 до 39, но убита контрпримером: при n = 40 выходит 1681 = 41 * 41.
-hypothesis: n * n + n + 41 is prime for every whole n. it holds for n from 0 to 39, but a counterexample kills it: at n = 40 it gives 1681 = 41 * 41.
-участь гипотезы: гипотеза «n * n + n + 41 просто при всяком целом n» опровергнута, ибо при n = 40 выходит 1681 = 41 * 41.
-the fate of a hypothesis: the hypothesis «n * n + n + 41 is prime for every whole n» is refuted, since at n = 40 it gives 1681 = 41 * 41.
-проверка случаев не есть доказательство: n * n + n + 41 просто при n от 0 до 39, а при n = 40 выходит 1681 = 41 * 41.
-checking cases is not a proof: n * n + n + 41 is prime for n from 0 to 39, and at n = 40 it gives 1681 = 41 * 41.
-гипотеза: n * n + 1 просто при всяком целом n больше 0. она верна при n от 1 до 2, но убита контрпримером: при n = 3 выходит 10 = 2 * 5.
-hypothesis: n * n + 1 is prime for every whole n greater than 0. it holds for n from 1 to 2, but a counterexample kills it: at n = 3 it gives 10 = 2 * 5.
-участь гипотезы: гипотеза «n * n + 1 просто при всяком целом n больше 0» опровергнута, ибо при n = 3 выходит 10 = 2 * 5.
-the fate of a hypothesis: the hypothesis «n * n + 1 is prime for every whole n greater than 0» is refuted, since at n = 3 it gives 10 = 2 * 5.
-проверка случаев не есть доказательство: n * n + 1 просто при n от 1 до 2, а при n = 3 выходит 10 = 2 * 5.
-checking cases is not a proof: n * n + 1 is prime for n from 1 to 2, and at n = 3 it gives 10 = 2 * 5.
-гипотеза: 2 * n + 3 просто при всяком целом n. она верна при n от 0 до 2, но убита контрпримером: при n = 3 выходит 9 = 3 * 3.
-hypothesis: 2 * n + 3 is prime for every whole n. it holds for n from 0 to 2, but a counterexample kills it: at n = 3 it gives 9 = 3 * 3.
-участь гипотезы: гипотеза «2 * n + 3 просто при всяком целом n» опровергнута, ибо при n = 3 выходит 9 = 3 * 3.
-the fate of a hypothesis: the hypothesis «2 * n + 3 is prime for every whole n» is refuted, since at n = 3 it gives 9 = 3 * 3.
-проверка случаев не есть доказательство: 2 * n + 3 просто при n от 0 до 2, а при n = 3 выходит 9 = 3 * 3.
-checking cases is not a proof: 2 * n + 3 is prime for n from 0 to 2, and at n = 3 it gives 9 = 3 * 3.
+
 
 что такое гипотеза? гипотеза есть утверждение без доказательства, и случай её не доказывает: 34 = 3 + 31, и 3 просто, и 31 просто.
 by a hypothesis we call a statement without a proof, and a case does not prove it: 32 = 3 + 29, and 3 is prime, and 29 is prime.
@@ -1899,76 +1844,50 @@ the fate of a hypothesis: the hypothesis «every even number greater than 2 is a
 гипотезой зовётся утверждение без доказательства, и случай его не доказывает: 36 = 5 + 31, и 5 просто, и 31 просто.
 hypothesis: every even number greater than 2 is a sum of two primes. it has no proof, and a case confirms it: 36 = 5 + 31, and 5 is prime, and 31 is prime.
 
-counterexample: the statement «if a leaves remainder 2 when divided by 3 and b is divisible by 3, then a * b is divisible by 6» is false, since at a = 5 and b = 3 it gives 5 * 3 = 15, while 15 = 6 * 2 + 3.
-контрпример опровергает утверждение «если a даёт остаток 2 при делении на 4 и b даёт остаток 2 при делении на 4, то a + b делится на 8 без остатка» одним свидетелем: 2 + 10 = 12, а 12 = 8 * 1 + 4.
-the refutation is one witness, and it refutes the statement «if a is even and b is even, then a + b is divisible by 4» alone: 2 + 4 = 6, while 6 = 4 * 1 + 2.
-what is a counterexample? a counterexample is one witness refuting a universal statement: «if a leaves remainder 2 when divided by 4 and b leaves remainder 2 when divided by 4, then a + b is divisible by 8» is refuted by a = 2 and b = 10, since 2 + 10 = 12, while 12 = 8 * 1 + 4.
-что такое контрпример? контрпример есть один свидетель, опровергающий всеобщее утверждение: «если a чётно и b чётно, то a + b делится на 4 без остатка» опровергнуто парой a = 2 и b = 4, ибо 2 + 4 = 6, а 6 = 4 * 1 + 2.
 counterexample: the statement «if a leaves remainder 2 when divided by 4 and b leaves remainder 2 when divided by 4, then a + b is divisible by 8» is false, since at a = 2 and b = 10 it gives 2 + 10 = 12, while 12 = 8 * 1 + 4.
-контрпример: утверждение «если a чётно и b чётно, то a + b делится на 4 без остатка» ложно, ибо при a = 2 и b = 4 выходит 2 + 4 = 6, а 6 = 4 * 1 + 2.
-the refutation is one witness, and it refutes the statement «if a leaves remainder 2 when divided by 3 and b is divisible by 3, then a * b is divisible by 6» alone: 5 * 3 = 15, while 15 = 6 * 2 + 3.
-the strength of a counterexample is in one witness, and counterexamples refute the statement «if a leaves remainder 2 when divided by 5 and b leaves remainder 1 when divided by 5, then a * b is divisible by 10» one at a time: 2 * 11 = 22, while 22 = 10 * 2 + 2.
-что такое контрпример? контрпример есть один свидетель, опровергающий всеобщее утверждение: «если a даёт остаток 2 при делении на 3 и b делится на 3 без остатка, то a * b делится на 6 без остатка» опровергнуто парой a = 5 и b = 3, ибо 5 * 3 = 15, а 15 = 6 * 2 + 3.
-counterexample: the statement «if a leaves remainder 2 when divided by 5 and b leaves remainder 1 when divided by 5, then a * b is divisible by 10» is false, since at a = 2 and b = 11 it gives 2 * 11 = 22, while 22 = 10 * 2 + 2.
 контрпример: утверждение «если a даёт остаток 2 при делении на 3 и b делится на 3 без остатка, то a * b делится на 6 без остатка» ложно, ибо при a = 5 и b = 3 выходит 5 * 3 = 15, а 15 = 6 * 2 + 3.
 the refutation is one witness, and it refutes the statement «if a leaves remainder 2 when divided by 4 and b leaves remainder 2 when divided by 4, then a + b is divisible by 8» alone: 2 + 10 = 12, while 12 = 8 * 1 + 4.
-the strength of a counterexample is in one witness, and counterexamples refute the statement «if a is even and b is even, then a + b is divisible by 4» one at a time: 2 + 4 = 6, while 6 = 4 * 1 + 2.
-что такое контрпример? контрпример есть один свидетель, опровергающий всеобщее утверждение: «если a даёт остаток 2 при делении на 4 и b даёт остаток 2 при делении на 4, то a + b делится на 8 без остатка» опровергнуто парой a = 2 и b = 10, ибо 2 + 10 = 12, а 12 = 8 * 1 + 4.
-one counterexample kills a universal statement, and a confirming case does not save it: «if a is even and b is even, then a + b is divisible by 4» holds at a = 2 and b = 2, since 2 + 2 = 4 and 4 = 4 * 1, but fails at a = 2 and b = 4, since 2 + 4 = 6 and 6 = 4 * 1 + 2.
-контрпример: утверждение «если a даёт остаток 2 при делении на 4 и b даёт остаток 2 при делении на 4, то a + b делится на 8 без остатка» ложно, ибо при a = 2 и b = 10 выходит 2 + 10 = 12, а 12 = 8 * 1 + 4.
-the statement «if a leaves remainder 2 when divided by 5 and b leaves remainder 1 when divided by 5, then a * b is divisible by 10» is refutable by one witness, and here it is refuted: 2 * 11 = 22, while 22 = 10 * 2 + 2.
 the strength of a counterexample is in one witness, and counterexamples refute the statement «if a leaves remainder 2 when divided by 3 and b is divisible by 3, then a * b is divisible by 6» one at a time: 5 * 3 = 15, while 15 = 6 * 2 + 3.
 сила контрпримера в одном свидетеле: контрпримеры опровергают утверждение «если a даёт остаток 2 при делении на 5 и b даёт остаток 1 при делении на 5, то a * b делится на 10 без остатка» поодиночке, и первый же довольно: 2 * 11 = 22, а 22 = 10 * 2 + 2.
-one counterexample kills a universal statement, and a confirming case does not save it: «if a leaves remainder 2 when divided by 3 and b is divisible by 3, then a * b is divisible by 6» holds at a = 5 and b = 6, since 5 * 6 = 30 and 30 = 6 * 5, but fails at a = 5 and b = 3, since 5 * 3 = 15 and 15 = 6 * 2 + 3.
-контрпример: утверждение «если a даёт остаток 2 при делении на 5 и b даёт остаток 1 при делении на 5, то a * b делится на 10 без остатка» ложно, ибо при a = 2 и b = 11 выходит 2 * 11 = 22, а 22 = 10 * 2 + 2.
-the statement «if a is even and b is even, then a + b is divisible by 4» is refutable by one witness, and here it is refuted: 2 + 4 = 6, while 6 = 4 * 1 + 2.
-the strength of a counterexample is in one witness, and counterexamples refute the statement «if a leaves remainder 2 when divided by 4 and b leaves remainder 2 when divided by 4, then a + b is divisible by 8» one at a time: 2 + 10 = 12, while 12 = 8 * 1 + 4.
-сила контрпримера в одном свидетеле: контрпримеры опровергают утверждение «если a чётно и b чётно, то a + b делится на 4 без остатка» поодиночке, и первый же довольно: 2 + 4 = 6, а 6 = 4 * 1 + 2.
 one counterexample kills a universal statement, and a confirming case does not save it: «if a leaves remainder 2 when divided by 4 and b leaves remainder 2 when divided by 4, then a + b is divisible by 8» holds at a = 6 and b = 10, since 6 + 10 = 16 and 16 = 8 * 2, but fails at a = 2 and b = 10, since 2 + 10 = 12 and 12 = 8 * 1 + 4.
-один контрпример убивает всеобщее утверждение, а подтверждающий случай его не спасает: «если a чётно и b чётно, то a + b делится на 4 без остатка» верно при a = 2 и b = 2, ибо 2 + 2 = 4 и 4 = 4 * 1, но ложно при a = 2 и b = 4, ибо 2 + 4 = 6 и 6 = 4 * 1 + 2.
-the statement «if a leaves remainder 2 when divided by 3 and b is divisible by 3, then a * b is divisible by 6» is refutable by one witness, and here it is refuted: 5 * 3 = 15, while 15 = 6 * 2 + 3.
-контрпример опровергает утверждение «если a даёт остаток 2 при делении на 5 и b даёт остаток 1 при делении на 5, то a * b делится на 10 без остатка» одним свидетелем: 2 * 11 = 22, а 22 = 10 * 2 + 2.
-сила контрпримера в одном свидетеле: контрпримеры опровергают утверждение «если a даёт остаток 2 при делении на 3 и b делится на 3 без остатка, то a * b делится на 6 без остатка» поодиночке, и первый же довольно: 5 * 3 = 15, а 15 = 6 * 2 + 3.
-what is a counterexample? a counterexample is one witness refuting a universal statement: «if a leaves remainder 2 when divided by 5 and b leaves remainder 1 when divided by 5, then a * b is divisible by 10» is refuted by a = 2 and b = 11, since 2 * 11 = 22, while 22 = 10 * 2 + 2.
 один контрпример убивает всеобщее утверждение, а подтверждающий случай его не спасает: «если a даёт остаток 2 при делении на 3 и b делится на 3 без остатка, то a * b делится на 6 без остатка» верно при a = 5 и b = 6, ибо 5 * 6 = 30 и 30 = 6 * 5, но ложно при a = 5 и b = 3, ибо 5 * 3 = 15 и 15 = 6 * 2 + 3.
 the statement «if a leaves remainder 2 when divided by 4 and b leaves remainder 2 when divided by 4, then a + b is divisible by 8» is refutable by one witness, and here it is refuted: 2 + 10 = 12, while 12 = 8 * 1 + 4.
-контрпример опровергает утверждение «если a чётно и b чётно, то a + b делится на 4 без остатка» одним свидетелем: 2 + 4 = 6, а 6 = 4 * 1 + 2.
-сила контрпримера в одном свидетеле: контрпримеры опровергают утверждение «если a даёт остаток 2 при делении на 4 и b даёт остаток 2 при делении на 4, то a + b делится на 8 без остатка» поодиночке, и первый же довольно: 2 + 10 = 12, а 12 = 8 * 1 + 4.
-what is a counterexample? a counterexample is one witness refuting a universal statement: «if a is even and b is even, then a + b is divisible by 4» is refuted by a = 2 and b = 4, since 2 + 4 = 6, while 6 = 4 * 1 + 2.
-один контрпример убивает всеобщее утверждение, а подтверждающий случай его не спасает: «если a даёт остаток 2 при делении на 4 и b даёт остаток 2 при делении на 4, то a + b делится на 8 без остатка» верно при a = 6 и b = 10, ибо 6 + 10 = 16 и 16 = 8 * 2, но ложно при a = 2 и b = 10, ибо 2 + 10 = 12 и 12 = 8 * 1 + 4.
-counterexample: the statement «if a is even and b is even, then a + b is divisible by 4» is false, since at a = 2 and b = 4 it gives 2 + 4 = 6, while 6 = 4 * 1 + 2.
 контрпример опровергает утверждение «если a даёт остаток 2 при делении на 3 и b делится на 3 без остатка, то a * b делится на 6 без остатка» одним свидетелем: 5 * 3 = 15, а 15 = 6 * 2 + 3.
 the refutation is one witness, and it refutes the statement «if a leaves remainder 2 when divided by 5 and b leaves remainder 1 when divided by 5, then a * b is divisible by 10» alone: 2 * 11 = 22, while 22 = 10 * 2 + 2.
+what is a counterexample? a counterexample is one witness refuting a universal statement: «if a leaves remainder 2 when divided by 4 and b leaves remainder 2 when divided by 4, then a + b is divisible by 8» is refuted by a = 2 and b = 10, since 2 + 10 = 12, while 12 = 8 * 1 + 4.
+что такое контрпример? контрпример есть один свидетель, опровергающий всеобщее утверждение: «если a даёт остаток 2 при делении на 3 и b делится на 3 без остатка, то a * b делится на 6 без остатка» опровергнуто парой a = 5 и b = 3, ибо 5 * 3 = 15, а 15 = 6 * 2 + 3.
+counterexample: the statement «if a leaves remainder 2 when divided by 5 and b leaves remainder 1 when divided by 5, then a * b is divisible by 10» is false, since at a = 2 and b = 11 it gives 2 * 11 = 22, while 22 = 10 * 2 + 2.
+контрпример: утверждение «если a даёт остаток 2 при делении на 4 и b даёт остаток 2 при делении на 4, то a + b делится на 8 без остатка» ложно, ибо при a = 2 и b = 10 выходит 2 + 10 = 12, а 12 = 8 * 1 + 4.
+the statement «if a leaves remainder 2 when divided by 5 and b leaves remainder 1 when divided by 5, then a * b is divisible by 10» is refutable by one witness, and here it is refuted: 2 * 11 = 22, while 22 = 10 * 2 + 2.
+the strength of a counterexample is in one witness, and counterexamples refute the statement «if a leaves remainder 2 when divided by 4 and b leaves remainder 2 when divided by 4, then a + b is divisible by 8» one at a time: 2 + 10 = 12, while 12 = 8 * 1 + 4.
+сила контрпримера в одном свидетеле: контрпримеры опровергают утверждение «если a даёт остаток 2 при делении на 3 и b делится на 3 без остатка, то a * b делится на 6 без остатка» поодиночке, и первый же довольно: 5 * 3 = 15, а 15 = 6 * 2 + 3.
+what is a counterexample? a counterexample is one witness refuting a universal statement: «if a leaves remainder 2 when divided by 5 and b leaves remainder 1 when divided by 5, then a * b is divisible by 10» is refuted by a = 2 and b = 11, since 2 * 11 = 22, while 22 = 10 * 2 + 2.
+один контрпример убивает всеобщее утверждение, а подтверждающий случай его не спасает: «если a даёт остаток 2 при делении на 4 и b даёт остаток 2 при делении на 4, то a + b делится на 8 без остатка» верно при a = 6 и b = 10, ибо 6 + 10 = 16 и 16 = 8 * 2, но ложно при a = 2 и b = 10, ибо 2 + 10 = 12 и 12 = 8 * 1 + 4.
+counterexample: the statement «if a leaves remainder 2 when divided by 3 and b is divisible by 3, then a * b is divisible by 6» is false, since at a = 5 and b = 3 it gives 5 * 3 = 15, while 15 = 6 * 2 + 3.
+контрпример опровергает утверждение «если a даёт остаток 2 при делении на 4 и b даёт остаток 2 при делении на 4, то a + b делится на 8 без остатка» одним свидетелем: 2 + 10 = 12, а 12 = 8 * 1 + 4.
+the refutation is one witness, and it refutes the statement «if a leaves remainder 2 when divided by 3 and b is divisible by 3, then a * b is divisible by 6» alone: 5 * 3 = 15, while 15 = 6 * 2 + 3.
+the strength of a counterexample is in one witness, and counterexamples refute the statement «if a leaves remainder 2 when divided by 5 and b leaves remainder 1 when divided by 5, then a * b is divisible by 10» one at a time: 2 * 11 = 22, while 22 = 10 * 2 + 2.
+что такое контрпример? контрпример есть один свидетель, опровергающий всеобщее утверждение: «если a даёт остаток 2 при делении на 4 и b даёт остаток 2 при делении на 4, то a + b делится на 8 без остатка» опровергнуто парой a = 2 и b = 10, ибо 2 + 10 = 12, а 12 = 8 * 1 + 4.
+one counterexample kills a universal statement, and a confirming case does not save it: «if a leaves remainder 2 when divided by 3 and b is divisible by 3, then a * b is divisible by 6» holds at a = 5 and b = 6, since 5 * 6 = 30 and 30 = 6 * 5, but fails at a = 5 and b = 3, since 5 * 3 = 15 and 15 = 6 * 2 + 3.
+контрпример: утверждение «если a даёт остаток 2 при делении на 5 и b даёт остаток 1 при делении на 5, то a * b делится на 10 без остатка» ложно, ибо при a = 2 и b = 11 выходит 2 * 11 = 22, а 22 = 10 * 2 + 2.
+the statement «if a leaves remainder 2 when divided by 3 and b is divisible by 3, then a * b is divisible by 6» is refutable by one witness, and here it is refuted: 5 * 3 = 15, while 15 = 6 * 2 + 3.
+контрпример опровергает утверждение «если a даёт остаток 2 при делении на 5 и b даёт остаток 1 при делении на 5, то a * b делится на 10 без остатка» одним свидетелем: 2 * 11 = 22, а 22 = 10 * 2 + 2.
+сила контрпримера в одном свидетеле: контрпримеры опровергают утверждение «если a даёт остаток 2 при делении на 4 и b даёт остаток 2 при делении на 4, то a + b делится на 8 без остатка» поодиночке, и первый же довольно: 2 + 10 = 12, а 12 = 8 * 1 + 4.
 what is a counterexample? a counterexample is one witness refuting a universal statement: «if a leaves remainder 2 when divided by 3 and b is divisible by 3, then a * b is divisible by 6» is refuted by a = 5 and b = 3, since 5 * 3 = 15, while 15 = 6 * 2 + 3.
 что такое контрпример? контрпример есть один свидетель, опровергающий всеобщее утверждение: «если a даёт остаток 2 при делении на 5 и b даёт остаток 1 при делении на 5, то a * b делится на 10 без остатка» опровергнуто парой a = 2 и b = 11, ибо 2 * 11 = 22, а 22 = 10 * 2 + 2.
 
-что значит «не делится на 2»? число не делится на 2, если при делении на 2 остаток есть 1: отрицание сказуемого называет все остатки, кроме нуля.
-what does «is not divisible by 3» mean? a number is not divisible by 3 if its remainder when divided by 3 is 1 or 2: the negation of a predicate names every remainder but zero.
-утверждение «если a не делится на 2 и b делится на 2 без остатка, то a + b не делится на 2» верно, ибо остаток a + b при делении на 2 есть остаток a, а он не нуль.
-the statement «if a is not divisible by 3 and b is divisible by 3, then a + b is not divisible by 3» is true, since the remainder of a + b when divided by 3 is the remainder of a, and it is not zero.
-утверждение «если a не делится на 2 и b не делится на 2, то a * b не делится на 2» верно, ибо 2 просто: произведение не делится на простое, пока ни один из множителей на него не делится.
-the statement «if a is not divisible by 3 and b is not divisible by 3, then a * b is not divisible by 3» is true, since 3 is prime: a product is not divisible by a prime unless one of its factors is.
-что значит «не делится на 3»? число не делится на 3, если при делении на 3 остаток есть 1 или 2: отрицание сказуемого называет все остатки, кроме нуля.
-what does «is not divisible by 2» mean? a number is not divisible by 2 if its remainder when divided by 2 is 1: the negation of a predicate names every remainder but zero.
-утверждение «если a не делится на 3 и b делится на 3 без остатка, то a + b не делится на 3» верно, ибо остаток a + b при делении на 3 есть остаток a, а он не нуль.
-the statement «if a is not divisible by 2 and b is divisible by 2, then a + b is not divisible by 2» is true, since the remainder of a + b when divided by 2 is the remainder of a, and it is not zero.
-утверждение «если a не делится на 3 и b не делится на 3, то a * b не делится на 3» верно, ибо 3 просто: произведение не делится на простое, пока ни один из множителей на него не делится.
-the statement «if a is not divisible by 2 and b is not divisible by 2, then a * b is not divisible by 2» is true, since 2 is prime: a product is not divisible by a prime unless one of its factors is.
+
 
-утверждение «2 * n + 3 просто при всяком целом n» есть гипотеза, а не теорема: доказательства нет, и при n = 3 выходит 9 = 3 * 3.
-the statement «if a leaves remainder 2 when divided by 3 and b is divisible by 3, then a * b is divisible by 3» is a theorem, since the move from the condition to the conclusion exists: 26 * 30 = 3 * ( 3 * 8 * 10 + 20 ) = 3 * 260 = 780.
-двумя теоремами показано, что 14 + 24 = 38 и 14 * 24 = 336.
-the statement «2 * n + 3 is prime for every whole n» is a hypothesis and not a theorem: there is no proof, and at n = 3 it gives 9 = 3 * 3.
-условные утверждения имеют условие и заключение, и условная часть «если a чётно и b чётно, то a + b чётно» стоит до слова «то»: при a = 14 и b = 24 выходит 14 + 24 = 38.
-two theorems show that 14 + 24 = 38 and 14 * 24 = 336.
-утверждение «если a чётно и b чётно, то a + b чётно» есть теорема, ибо ход от условия к заключению есть: 14 + 24 = 2 * ( 7 + 12 ) = 2 * 19 = 38.
-a conditional statement has a condition and a conclusion, and the assertion «if a is even and b is even, then a + b is even» is one of them: at a = 14 and b = 24 it gives 14 + 24 = 38.
-утверждение «n * n + 1 просто при всяком целом n больше 0» есть гипотеза, а не теорема: доказательства нет, и при n = 3 выходит 10 = 2 * 5.
-the statement «if a is even and b is even, then a + b is even» is a theorem, since the move from the condition to the conclusion exists: 14 + 24 = 2 * ( 7 + 12 ) = 2 * 19 = 38.
-из двух утверждений одно доказано, а другое нет, и первое есть «если a чётно и b чётно, то a + b чётно»: при a = 14 и b = 24 выходит 14 + 24 = 38.
-the statement «n * n + 1 is prime for every whole n greater than 0» is a hypothesis and not a theorem: there is no proof, and at n = 3 it gives 10 = 2 * 5.
 утверждение «если a даёт остаток 2 при делении на 3 и b делится на 3 без остатка, то a * b делится на 3 без остатка» есть теорема, ибо ход от условия к заключению есть: 26 * 30 = 3 * ( 3 * 8 * 10 + 20 ) = 3 * 260 = 780.
+the statement «if a is even and b is even, then a + b is even» is a theorem, since the move from the condition to the conclusion exists: 14 + 24 = 2 * ( 7 + 12 ) = 2 * 19 = 38.
+утверждение «если a чётно и b чётно, то a + b чётно» есть теорема, ибо ход от условия к заключению есть: 14 + 24 = 2 * ( 7 + 12 ) = 2 * 19 = 38.
+two theorems show that 14 + 24 = 38 and 14 * 24 = 336.
+двумя теоремами показано, что 14 + 24 = 38 и 14 * 24 = 336.
 of the two assertions one is proved and the other is not, and the proved one is «if a is even and b is even, then a + b is even»: at a = 14 and b = 24 it gives 14 + 24 = 38.
+из двух утверждений одно доказано, а другое нет, и первое есть «если a чётно и b чётно, то a + b чётно»: при a = 14 и b = 24 выходит 14 + 24 = 38.
+a conditional statement has a condition and a conclusion, and the assertion «if a is even and b is even, then a + b is even» is one of them: at a = 14 and b = 24 it gives 14 + 24 = 38.
+условные утверждения имеют условие и заключение, и условная часть «если a чётно и b чётно, то a + b чётно» стоит до слова «то»: при a = 14 и b = 24 выходит 14 + 24 = 38.
+the statement «if a leaves remainder 2 when divided by 3 and b is divisible by 3, then a * b is divisible by 3» is a theorem, since the move from the condition to the conclusion exists: 26 * 30 = 3 * ( 3 * 8 * 10 + 20 ) = 3 * 260 = 780.
 
 два определения делят числа надвое: число даёт остаток 2 при делении на 3, если оно есть 3 * k + 2 при целом k; число делится на 3 без остатка, если оно есть 3 * k при целом k. 20 подпадает под первое и не подпадает под второе: 20 = 3 * 6 + 2.
 two theorems about one pair: if a leaves remainder 2 when divided by 3 and b is divisible by 3, then a + b leaves remainder 2 when divided by 3, and if a leaves remainder 2 when divided by 3 and b is divisible by 3, then a * b is divisible by 3. at a = 26 and b = 30 there are two conclusions: 26 + 30 = 56, and 56 leaves remainder 2 when divided by 3; 26 * 30 = 780, and 780 is divisible by 3.
