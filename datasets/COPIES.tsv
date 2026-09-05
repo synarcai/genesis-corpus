@@ -1,5 +1,5 @@
 мир	генератор	через_слой	строк	различных	копий	макс_копий
-datasets/GENESIS-FULL.txt	gen_genesis_full.py	0	347066	240796	106270	473
+datasets/GENESIS-FULL.txt	gen_genesis_full.py	0	351674	245404	106270	473
 datasets/genesis_action_measure.txt	gen_genesis_action_measure.py	1	234	234	0	1
 datasets/genesis_action_measure_langs.txt	gen_genesis_action_measure_langs.py	1	462	462	0	1
 datasets/genesis_action_pages.txt	gen_genesis_action_pages.py	1	4921	4897	24	2
@@ -11,7 +11,7 @@ datasets/genesis_analog.txt	gen_genesis_analog.py	1	144	144	0	1
 datasets/genesis_anaphora.txt	gen_genesis_anaphora.py	1	216	216	0	1
 datasets/genesis_arith_langs.txt	gen_genesis_arith_langs.py	1	1400	1360	40	2
 datasets/genesis_average.txt	gen_genesis_average.py	1	1300	1300	0	1
-datasets/genesis_beforetails.txt	gen_genesis_beforetails.py	1	1800	1800	0	1
+datasets/genesis_beforetails.txt	gen_genesis_beforetails.py	1	3600	3600	0	1
 datasets/genesis_behavior.txt	gen_genesis_behavior.py	1	1608	1608	0	1
 datasets/genesis_bignum.txt	gen_genesis_bignum.py	1	937	888	49	2
 datasets/genesis_calendar.txt	gen_genesis_calendar.py	1	846	423	423	2
@@ -30,7 +30,7 @@ datasets/genesis_dataformat.txt	gen_genesis_dataformat.py	1	640	592	48	2
 datasets/genesis_definitions.txt	gen_genesis_definitions.py	1	2141	1354	787	2
 datasets/genesis_depletion.txt	gen_genesis_depletion.py	1	304	301	3	2
 datasets/genesis_dialogue.txt	gen_genesis_dialogue.py	1	2052	2052	0	1
-datasets/genesis_discountroad.txt	gen_genesis_discountroad.py	1	1404	1404	0	1
+datasets/genesis_discountroad.txt	gen_genesis_discountroad.py	1	2808	2808	0	1
 datasets/genesis_disj.txt	gen_genesis_disj.py	1	216	216	0	1
 datasets/genesis_doctree.txt	gen_genesis_doctree.py	1	516	258	258	2
 datasets/genesis_episodeforms.txt	gen_genesis_episodeforms.py	1	5229	5229	0	1
@@ -102,7 +102,7 @@ datasets/genesis_pronouns.txt	gen_genesis_pronouns.py	1	480	480	0	1
 datasets/genesis_proof.txt	gen_genesis_proof.py	1	520	297	223	2
 datasets/genesis_propcompare.txt	gen_genesis_propcompare.py	1	200	200	0	1
 datasets/genesis_rates.txt	gen_genesis_rates.py	1	667	624	43	2
-datasets/genesis_readnum.txt	gen_genesis_readnum.py	1	1836	1836	0	1
+datasets/genesis_readnum.txt	gen_genesis_readnum.py	1	3240	3240	0	1
 datasets/genesis_realverbs.txt	gen_genesis_realverbs.py	1	240	196	44	2
 datasets/genesis_relation.txt	gen_genesis_relation.py	1	2084	1418	666	2
 datasets/genesis_relations_story.txt	gen_genesis_relations_story.py	1	1989	1815	174	2
