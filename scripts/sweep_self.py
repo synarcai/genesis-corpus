@@ -71,7 +71,7 @@ _ПИСЬМО = (("ru", re.compile(r"[а-яё]")), ("pl", re.compile(r"[ąęłń
 _МЕТКИ = (("de", re.compile(r"\b(?:wie|ist|hat|hatte|welche[rs]?)\b")),
           ("fr", re.compile(r"\b(?:combien|quel(?:le)?s?|est-ce|il y a|avait|reste)\b")),
           ("it", re.compile(r"\b(?:quant[iea]|qual[ei]|è|aveva|sono)\b")),
-          ("pt", re.compile(r"\b(?:quant[oa]s?|tinha|tem|restam|ficam)\b")),
+          ("pt", re.compile(r"\b(?:quant[oa]s?|tinha|tem|restam|ficam|partes|iguais|dá|terá|possui)\b")),
           ("es", re.compile(r"\b(?:cuánt[oa]s?|tiene|tenía|quedan)\b")),
           ("nl", re.compile(r"\b(?:hoeveel|welke|heeft|had|zijn er|is er)\b")),
           ("pl", re.compile(r"\b(?:ile|ilu|ma|miała?|jest)\b")),
