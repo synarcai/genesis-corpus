@@ -1,0 +1,89 @@
+# BESEDA-3 — ТРЕТЬЯ ПОЛОСА БЕСЕДЫ: то, чем человек ПРОВЕРЯЕТ собеседника на простом.
+#
+# Вторая полоса (BESEDA-2) дошла до пола с формой: 100 % по пробному своду 05.09, немых 0 —
+# и снова мера исчерпала полосу, а не корпус. Эта полоса спрашивает простое, чем проверяют
+# всякого: чёт и нечет, что больше, какое число дальше, сколько ног у собаки, что такое
+# треугольник, уверен ли ты, сосчитай подряд, противоположное слово. Девять языков; строка
+# «вопрос ||| подстрока ожидаемого ответа»; без «|||» — довольно того, чтобы ответ был и был
+# обоснован.
+#
+# GENUS: PARITY
+7 — чётное или нечётное число? ||| нечётное
+is 7 an even or an odd number? ||| odd
+ist 7 eine gerade oder eine ungerade Zahl? ||| ungerade
+7 est-il un nombre pair ou impair ? ||| impair
+¿7 es un número par o impar? ||| impar
+7 è un numero pari o dispari? ||| dispari
+7 é um número par ou ímpar? ||| ímpar
+is 7 een even of een oneven getal? ||| oneven
+7 to liczba parzysta czy nieparzysta? ||| nieparzysta
+# GENUS: BIGGER
+что больше: 7 или 9? ||| 9
+which is bigger: 7 or 9? ||| 9
+was ist größer: 7 oder 9? ||| 9
+lequel est le plus grand : 7 ou 9 ? ||| 9
+¿cuál es mayor: 7 o 9? ||| 9
+quale è maggiore: 7 o 9? ||| 9
+qual é maior: 7 ou 9? ||| 9
+wat is groter: 7 of 9? ||| 9
+co jest większe: 7 czy 9? ||| 9
+# GENUS: NEXT-NUMBER
+какое число идёт после 9? ||| 10
+what number comes after 9? ||| 10
+welche Zahl kommt nach 9? ||| 10
+quel nombre vient après 9 ? ||| 10
+¿qué número viene después del 9? ||| 10
+che numero viene dopo il 9? ||| 10
+que número vem depois do 9? ||| 10
+welk getal komt na 9? ||| 10
+jaka liczba jest po 9? ||| 10
+# GENUS: LEGS
+сколько ног у собаки?
+how many legs does a dog have?
+wie viele Beine hat ein Hund?
+combien de pattes a un chien ?
+¿cuántas patas tiene un perro?
+quante zampe ha un cane?
+quantas patas tem um cão?
+hoeveel poten heeft een hond?
+ile nóg ma pies?
+# GENUS: WHAT-IS
+что такое треугольник? ||| три
+what is a triangle? ||| three
+was ist ein Dreieck? ||| drei
+qu'est-ce qu'un triangle ? ||| trois
+¿qué es un triángulo? ||| tres
+che cos'è un triangolo? ||| tre
+o que é um triângulo? ||| três
+wat is een driehoek? ||| drie
+co to jest trójkąt? ||| trzy
+# GENUS: ARE-YOU-SURE
+2 + 2 = 4. ты уверен? ||| да
+2 + 2 = 4. are you sure? ||| yes
+2 + 2 = 4. bist du sicher? ||| ja
+2 + 2 = 4. tu es sûr ? ||| oui
+2 + 2 = 4. ¿estás seguro? ||| sí
+2 + 2 = 4. sei sicuro? ||| sì
+2 + 2 = 4. tens a certeza? ||| sim
+2 + 2 = 4. weet je het zeker? ||| ja
+2 + 2 = 4. jesteś pewien? ||| tak
+# GENUS: COUNT-UP
+сосчитай от 1 до 5. ||| 1, 2, 3, 4, 5
+count from 1 to 5. ||| 1, 2, 3, 4, 5
+zähle von 1 bis 5. ||| 1, 2, 3, 4, 5
+compte de 1 à 5. ||| 1, 2, 3, 4, 5
+cuenta del 1 al 5. ||| 1, 2, 3, 4, 5
+conta da 1 a 5. ||| 1, 2, 3, 4, 5
+conta de 1 a 5. ||| 1, 2, 3, 4, 5
+tel van 1 tot 5. ||| 1, 2, 3, 4, 5
+policz od 1 do 5. ||| 1, 2, 3, 4, 5
+# GENUS: OPPOSITE
+какое слово противоположно слову «большой»? ||| маленький
+what is the opposite of "big"? ||| small
+was ist das Gegenteil von „groß“? ||| klein
+quel est le contraire de « grand » ? ||| petit
+¿cuál es el contrario de «grande»? ||| pequeño
+qual è il contrario di «grande»? ||| piccolo
+qual é o contrário de «grande»? ||| pequeno
+wat is het tegenovergestelde van "groot"? ||| klein
+jakie jest przeciwieństwo słowa „duży”? ||| mały
