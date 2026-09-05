@@ -37,24 +37,36 @@ import asking  # noqa: E402 — the house of the pair declares which openers a q
 
 ЯЗЫКИ = ("ru", "en", "de", "fr", "es", "it", "pt", "nl", "pl")
 ЧАСЫ = (1, 2, 3, 4, 5, 6, 7)          # час, от которого считают; следующий берётся сдвигом
+# ЧАСЫ 8..11 ДОМ НЕ ПИШЕТ НАРОЧНО: таблицы доведены до двенадцати, и удержанный ключ спрашивает
+# ими то, чего дом не показывал, — так меряется ФОРМА, а не память
 # ТАБЛИЦЫ ЧАСОВЫХ СЛОВ — по одной на КАЖДЫЙ падеж, которого требует фраза часов этого языка.
 # Индекс 1..8 (нулевой не используется).
 СЛОВА = {
-    "ru": {"род": (None, "первого", "второго", "третьего", "четвёртого", "пятого", "шестого", "седьмого", "восьмого"),
-           "им": (None, "час", "два", "три", "четыре", "пять", "шесть", "семь", "восемь")},
-    "en": {"им": (None, "one", "two", "three", "four", "five", "six", "seven", "eight")},
-    "de": {"им": (None, "eins", "zwei", "drei", "vier", "fünf", "sechs", "sieben", "acht")},
-    "nl": {"им": (None, "een", "twee", "drie", "vier", "vijf", "zes", "zeven", "acht")},
+    "ru": {"род": (None, "первого", "второго", "третьего", "четвёртого", "пятого", "шестого", "седьмого",
+                   "восьмого", "девятого", "десятого", "одиннадцатого", "двенадцатого"),
+           "им": (None, "час", "два", "три", "четыре", "пять", "шесть", "семь", "восемь",
+                  "девять", "десять", "одиннадцать", "двенадцать")},
+    "en": {"им": (None, "one", "two", "three", "four", "five", "six", "seven", "eight",
+                  "nine", "ten", "eleven", "twelve")},
+    "de": {"им": (None, "eins", "zwei", "drei", "vier", "fünf", "sechs", "sieben", "acht",
+                  "neun", "zehn", "elf", "zwölf")},
+    "nl": {"им": (None, "een", "twee", "drie", "vier", "vijf", "zes", "zeven", "acht",
+                  "negen", "tien", "elf", "twaalf")},
     "fr": {"им": (None, "une heure", "deux heures", "trois heures", "quatre heures", "cinq heures",
-                  "six heures", "sept heures", "huit heures")},
+                  "six heures", "sept heures", "huit heures", "neuf heures", "dix heures",
+                  "onze heures", "douze heures")},
     "es": {"им": (None, "la una", "las dos", "las tres", "las cuatro", "las cinco", "las seis",
-                  "las siete", "las ocho")},
+                  "las siete", "las ocho", "las nueve", "las diez", "las once", "las doce")},
     "it": {"им": (None, "l'una", "le due", "le tre", "le quattro", "le cinque", "le sei",
-                  "le sette", "le otto")},
-    "pt": {"им": (None, "uma", "duas", "três", "quatro", "cinco", "seis", "sete", "oito")},
-    "pl": {"по": (None, "pierwszej", "drugiej", "trzeciej", "czwartej", "piątej", "szóstej", "siódmej", "ósmej"),
-           "до": (None, "pierwszej", "drugiej", "trzeciej", "czwartej", "piątej", "szóstej", "siódmej", "ósmej"),
-           "им": (None, "pierwsza", "druga", "trzecia", "czwarta", "piąta", "szósta", "siódma", "ósma")},
+                  "le sette", "le otto", "le nove", "le dieci", "le undici", "le dodici")},
+    "pt": {"им": (None, "uma", "duas", "três", "quatro", "cinco", "seis", "sete", "oito",
+                  "nove", "dez", "onze", "doze")},
+    "pl": {"по": (None, "pierwszej", "drugiej", "trzeciej", "czwartej", "piątej", "szóstej", "siódmej",
+                  "ósmej", "dziewiątej", "dziesiątej", "jedenastej", "dwunastej"),
+           "до": (None, "pierwszej", "drugiej", "trzeciej", "czwartej", "piątej", "szóstej", "siódmej",
+                  "ósmej", "dziewiątej", "dziesiątej", "jedenastej", "dwunastej"),
+           "им": (None, "pierwsza", "druga", "trzecia", "czwarta", "piąta", "szósta", "siódma",
+                  "ósma", "dziewiąta", "dziesiąta", "jedenasta", "dwunasta")},
 }
 # ФРАЗА ЧАСОВ И ЕЁ СДВИГ: 0 — считают от прошедшего часа, 1 — к наступающему. Сдвиг объявлен
 # ПОФРАЗНО, ибо две половины одного языка расходятся (немецкое «Viertel nach eins» при «halb zwei»).
@@ -139,7 +151,10 @@ def _показы():
 
 ПОКАЗЫ = _показы()
 # ВСЕ ФРАЗЫ ДОМА — множество, по которому судится ЧУЖОЕ СЛОВО при своей рамке
-_ФРАЗЫ_ЯЗЫКА = {язык: {_слово(язык, вид, ч): (вид, ч) for вид in ВИДЫ for ч in ЧАСЫ}
+# РАМКА ЗНАЕТ ВЕСЬ ЦИФЕРБЛАТ, А ПОКАЗЫ — ЛИШЬ ЕГО ЧАСТЬ: иначе удержанная страница (час 9,
+# которого дом не писал) была бы для суда ЧУЖОЙ строкой, и ключ мерил бы молчание вместо формы
+ВСЕ_ЧАСЫ = tuple(range(1, 12))
+_ФРАЗЫ_ЯЗЫКА = {язык: {_слово(язык, вид, ч): (вид, ч) for вид in ВИДЫ for ч in ВСЕ_ЧАСЫ}
                 for язык in ЯЗЫКИ}
 
 
