@@ -25,6 +25,10 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 # {r} their difference, {h} the half, {ряд} the row «1, 2, 3»
 ЯЗЫКИ = {
     "ru": dict(
+        половина_половины=("сколько будет половина от половины {n}?", "{q}: {n} ÷ 2 = {h}, {h} ÷ 2 = {q}."),
+        поровну=("раздели {n} на {k} поровну.", "по {q}: {n} ÷ {k} = {q}."),
+        не_больше_ли=("верно ли, что {c} не больше {d}?", "нет: {c} больше {d}, {c} − {d} = {r}."),
+        не_больше_ли_да=("верно ли, что {d} не больше {c}?", "да: {d} меньше {c}, {c} − {d} = {r}."),
         между=("назови число между {a} и {c}.", "{b}: {a} < {b} < {c}."),
         между_воп=("какое число стоит между {a} и {c}?", "{b}: {a} < {b} < {c}."),
         повтори=("повтори числа: {ряд}.", "{ряд}."),
@@ -50,6 +54,10 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
         чёт=("{n} — чётное или нечётное число?", "чётное: {n} = 2 × {h}.", "нечётное: {n} = 2 × {h} + 1."),
     ),
     "en": dict(
+        половина_половины=("what is half of half of {n}?", "{q}: {n} ÷ 2 = {h}, {h} ÷ 2 = {q}."),
+        поровну=("share {n} equally between {k}.", "{q} each: {n} ÷ {k} = {q}."),
+        не_больше_ли=("is it true that {c} is not bigger than {d}?", "no: {c} is bigger than {d}, {c} − {d} = {r}."),
+        не_больше_ли_да=("is it true that {d} is not bigger than {c}?", "yes: {d} is smaller than {c}, {c} − {d} = {r}."),
         между=("name a number between {a} and {c}.", "{b}: {a} < {b} < {c}."),
         между_воп=("what number lies between {a} and {c}?", "{b}: {a} < {b} < {c}."),
         повтори=("repeat the numbers: {ряд}.", "{ряд}."),
@@ -76,6 +84,10 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
         чёт=("is {n} an even or an odd number?", "even: {n} = 2 × {h}.", "odd: {n} = 2 × {h} + 1."),
     ),
     "de": dict(
+        половина_половины=("was ist die Hälfte von der Hälfte von {n}?", "{q}: {n} ÷ 2 = {h}, {h} ÷ 2 = {q}."),
+        поровну=("teile {n} gleichmäßig durch {k}.", "je {q}: {n} ÷ {k} = {q}."),
+        не_больше_ли=("stimmt es, dass {c} nicht größer als {d} ist?", "nein: {c} ist größer als {d}, {c} − {d} = {r}."),
+        не_больше_ли_да=("stimmt es, dass {d} nicht größer als {c} ist?", "ja: {d} ist kleiner als {c}, {c} − {d} = {r}."),
         между=("nenne eine Zahl zwischen {a} und {c}.", "{b}: {a} < {b} < {c}."),
         между_воп=("welche Zahl liegt zwischen {a} und {c}?", "{b}: {a} < {b} < {c}."),
         повтори=("wiederhole die Zahlen: {ряд}.", "{ряд}."),
@@ -101,6 +113,10 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
         чёт=("ist {n} eine gerade oder eine ungerade Zahl?", "gerade: {n} = 2 × {h}.", "ungerade: {n} = 2 × {h} + 1."),
     ),
     "fr": dict(
+        половина_половины=("combien fait la moitié de la moitié de {n} ?", "{q} : {n} ÷ 2 = {h}, {h} ÷ 2 = {q}."),
+        поровну=("partage {n} en {k} parts égales.", "{q} chacune : {n} ÷ {k} = {q}."),
+        не_больше_ли=("est-il vrai que {c} n'est pas plus grand que {d} ?", "non : {c} est plus grand que {d}, {c} − {d} = {r}."),
+        не_больше_ли_да=("est-il vrai que {d} n'est pas plus grand que {c} ?", "oui : {d} est plus petit que {c}, {c} − {d} = {r}."),
         между=("nomme un nombre entre {a} et {c}.", "{b} : {a} < {b} < {c}."),
         между_воп=("quel nombre se trouve entre {a} et {c} ?", "{b} : {a} < {b} < {c}."),
         повтори=("répète les nombres : {ряд}.", "{ряд}."),
@@ -126,6 +142,10 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
         чёт=("{n} est-il un nombre pair ou impair ?", "pair : {n} = 2 × {h}.", "impair : {n} = 2 × {h} + 1."),
     ),
     "es": dict(
+        половина_половины=("¿cuánto es la mitad de la mitad de {n}?", "{q}: {n} ÷ 2 = {h}, {h} ÷ 2 = {q}."),
+        поровну=("reparte {n} en {k} partes iguales.", "{q} cada una: {n} ÷ {k} = {q}."),
+        не_больше_ли=("¿es verdad que {c} no es mayor que {d}?", "no: {c} es mayor que {d}, {c} − {d} = {r}."),
+        не_больше_ли_да=("¿es verdad que {d} no es mayor que {c}?", "sí: {d} es menor que {c}, {c} − {d} = {r}."),
         между=("di un número entre {a} y {c}.", "{b}: {a} < {b} < {c}."),
         между_воп=("¿qué número está entre {a} y {c}?", "{b}: {a} < {b} < {c}."),
         повтори=("repite los números: {ряд}.", "{ряд}."),
@@ -152,6 +172,10 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
         чёт=("¿{n} es un número par o impar?", "par: {n} = 2 × {h}.", "impar: {n} = 2 × {h} + 1."),
     ),
     "it": dict(
+        половина_половины=("quanto fa la metà della metà di {n}?", "{q}: {n} ÷ 2 = {h}, {h} ÷ 2 = {q}."),
+        поровну=("dividi {n} in {k} parti uguali.", "{q} ciascuna: {n} ÷ {k} = {q}."),
+        не_больше_ли=("è vero che {c} non è maggiore di {d}?", "no: {c} è maggiore di {d}, {c} − {d} = {r}."),
+        не_больше_ли_да=("è vero che {d} non è maggiore di {c}?", "sì: {d} è minore di {c}, {c} − {d} = {r}."),
         между=("di' un numero tra {a} e {c}.", "{b}: {a} < {b} < {c}."),
         между_воп=("quale numero sta tra {a} e {c}?", "{b}: {a} < {b} < {c}."),
         повтори=("ripeti i numeri: {ряд}.", "{ряд}."),
@@ -178,6 +202,10 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
         чёт=("{n} è un numero pari o dispari?", "pari: {n} = 2 × {h}.", "dispari: {n} = 2 × {h} + 1."),
     ),
     "pt": dict(
+        половина_половины=("quanto é a metade da metade de {n}?", "{q}: {n} ÷ 2 = {h}, {h} ÷ 2 = {q}."),
+        поровну=("divide {n} em {k} partes iguais.", "{q} cada uma: {n} ÷ {k} = {q}."),
+        не_больше_ли=("é verdade que {c} não é maior do que {d}?", "não: {c} é maior do que {d}, {c} − {d} = {r}."),
+        не_больше_ли_да=("é verdade que {d} não é maior do que {c}?", "sim: {d} é menor do que {c}, {c} − {d} = {r}."),
         между=("diz um número entre {a} e {c}.", "{b}: {a} < {b} < {c}."),
         между_воп=("que número está entre {a} e {c}?", "{b}: {a} < {b} < {c}."),
         повтори=("repete os números: {ряд}.", "{ряд}."),
@@ -204,6 +232,10 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
         чёт=("{n} é um número par ou ímpar?", "par: {n} = 2 × {h}.", "ímpar: {n} = 2 × {h} + 1."),
     ),
     "nl": dict(
+        половина_половины=("wat is de helft van de helft van {n}?", "{q}: {n} ÷ 2 = {h}, {h} ÷ 2 = {q}."),
+        поровну=("verdeel {n} gelijk over {k}.", "{q} elk: {n} ÷ {k} = {q}."),
+        не_больше_ли=("is het waar dat {c} niet groter is dan {d}?", "nee: {c} is groter dan {d}, {c} − {d} = {r}."),
+        не_больше_ли_да=("is het waar dat {d} niet groter is dan {c}?", "ja: {d} is kleiner dan {c}, {c} − {d} = {r}."),
         между=("noem een getal tussen {a} en {c}.", "{b}: {a} < {b} < {c}."),
         между_воп=("welk getal ligt tussen {a} en {c}?", "{b}: {a} < {b} < {c}."),
         повтори=("herhaal de getallen: {ряд}.", "{ряд}."),
@@ -229,6 +261,10 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
         чёт=("is {n} een even of een oneven getal?", "even: {n} = 2 × {h}.", "oneven: {n} = 2 × {h} + 1."),
     ),
     "pl": dict(
+        половина_половины=("ile to połowa z połowy z {n}?", "{q}: {n} ÷ 2 = {h}, {h} ÷ 2 = {q}."),
+        поровну=("podziel {n} na {k} równe części.", "po {q}: {n} ÷ {k} = {q}."),
+        не_больше_ли=("czy to prawda, że {c} nie jest większe od {d}?", "nie: {c} jest większe od {d}, {c} − {d} = {r}."),
+        не_больше_ли_да=("czy to prawda, że {d} nie jest większe od {c}?", "tak: {d} jest mniejsze od {c}, {c} − {d} = {r}."),
         между=("podaj liczbę między {a} a {c}.", "{b}: {a} < {b} < {c}."),
         между_воп=("jaka liczba leży między {a} a {c}?", "{b}: {a} < {b} < {c}."),
         повтори=("powtórz liczby: {ряд}.", "{ряд}."),
@@ -257,13 +293,17 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 
 ФОРМЫ = ("после", "перед", "больше", "меньше", "счёт", "обратно", "чёт", "на_сколько", "словом", "половина", "возраст",
          "пропуск", "больше_ли", "больше_ли_нет", "ряд_дальше", "наибольшее", "наименьшее", "вдвое",
-         "между", "между_воп", "повтори", "повтори_воп", "шагом")
+         "между", "между_воп", "повтори", "повтори_воп", "шагом",
+         "половина_половины", "поровну", "не_больше_ли", "не_больше_ли_да")
+# NINTH BAND (06.09): half of half (n a multiple of 4), sharing equally (n a multiple
+# of k), and the negated comparison in both polarities
+ДЕЛЁЖ = ((10, 2), (12, 3), (8, 4), (20, 5), (9, 3), (15, 5), (6, 2), (16, 4))
 # SEVENTH BAND (06.09): the number between two (the gap of one — the answer is
 # the only whole number), the numbers repeated as said, counting by twos
 МЕЖДУ = ((3, 5), (7, 9), (1, 3), (10, 12), (14, 16), (18, 20), (5, 7), (11, 13))
 ПОВТОРЫ = ((5, 3, 8), (2, 9, 4), (7, 7, 1), (10, 6, 3), (1, 2, 3), (8, 5, 9, 2), (4, 12, 6), (3, 3, 3))
 ДВОЙКАМИ = (6, 8, 10, 12, 14, 16, 18, 20)
-ПОВЕЛЕНИЯ = ("счёт", "обратно", "шагом")
+ПОВЕЛЕНИЯ = ("счёт", "обратно", "шагом", "поровну")
 # SIXTH BAND (05.09): the sequence continued by its step, the greatest and the
 # smallest of three, the double
 РЯДЫ = ((2, 2), (1, 1), (3, 3), (5, 1), (1, 2), (10, 2), (4, 3), (2, 1))      # (first term, step)
@@ -339,10 +379,16 @@ def _поля(n=None, m=None, a=None, b=None, ряд=None, язык=None, k=None
         return dict(ряд=", ".join(str(x) for x in ряд))
     if форма == "шагом":
         return dict(b=b, ряд=", ".join(str(x) for x in range(2, b + 1, 2)))
+    if форма == "половина_половины":
+        return dict(n=n, h=n // 2, q=n // 4)
+    if форма == "поровну":
+        return dict(n=n, k=k, q=n // k)
     if n is not None:
         п.update(n=n, m=m, h=n // 2, IL=_it(n)[0], DEL=_it(n)[1])
         if язык is not None:
             п.update(N=числом(язык, n))
+    if форма == "поровну":
+        return dict(n=n, k=k, q=n // k)
     if k is not None:
         s = a + k
         п.update(a=a, k=k, s=s)
@@ -445,6 +491,15 @@ def _показы():
         for b in ДВОЙКАМИ:
             for вопросом in (False, True):
                 вон[страница(язык, "шагом", вопросом, b=b)] = (язык, "шагом")
+        for n in range(4, ВЕРХ + 1, 4):
+            вон[страница(язык, "половина_половины", n=n)] = (язык, "половина_половины")
+        for n, k in ДЕЛЁЖ:
+            for вопросом in (False, True):
+                вон[страница(язык, "поровну", вопросом, n=n, k=k)] = (язык, "поровну")
+        for a, b in пары(язык):
+            c, d = max(a, b), min(a, b)
+            вон[страница(язык, "не_больше_ли", a=c, b=d)] = (язык, "не_больше_ли")
+            вон[страница(язык, "не_больше_ли_да", a=c, b=d)] = (язык, "не_больше_ли_да")
     return вон
 
 
@@ -455,7 +510,7 @@ def _показы():
         "ряд": r"(?P<ряд>\d+(?:, \d+)+)", "IL": r"(?:il |l')", "DEL": r"(?:del |dell')", "IM": r"(?:il |l')",
         "k": r"(?P<k>\d+)", "s": r"(?P<s>\d+)", "N": r"(?P<N>[^\W\d_]+(?:[ -][^\W\d_]+)*)",
         "Га": r"(?P<Га>[^\W\d_]+)", "Гk": r"(?P<Гk>[^\W\d_]+)", "Гs": r"(?P<Гs>[^\W\d_]+)",
-        "ш": r"(?P<ш>\d+)"}
+        "ш": r"(?P<ш>\d+)", "q": r"(?P<q>\d+)"}
 
 
 def _образец(шаблон, видены=None, суффикс=""):
@@ -531,6 +586,14 @@ def судить(строка):
 
 
 def _верно(форма, k, г, язык):
+    if форма == "половина_половины":
+        n = г["n"]
+        return n % 4 == 0 and г["h"] == n // 2 and г["q"] == n // 4
+    if форма == "поровну":
+        n, k_ = г["n"], г["k"]
+        return k_ > 0 and n % k_ == 0 and г["q"] == n // k_
+    if форма in ("не_больше_ли", "не_больше_ли_да"):
+        return г["c"] > г["d"] and г["r"] == г["c"] - г["d"]
     if форма in ("между", "между_воп"):
         return г["b"] == г["a"] + 1 and г["c"] == г["a"] + 2
     if форма in ("повтори", "повтори_воп"):
