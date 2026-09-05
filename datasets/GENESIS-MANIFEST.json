@@ -1144,6 +1144,40 @@
       "text": "shows"
     },
     {
+      "name": "verifyforms",
+      "file": "datasets/genesis_verifyforms.txt",
+      "genre": "VERIFICATION — «claim · check · verdict», and the pages where the instrument is OBLIGED to refuse (05.09, the agent architecture, the fourth market): a true claim checked by ANOTHER action cannot be confirmed — the verdict is «not verified», and the ground is named. Six genera on nine languages: the check that holds, the check that refutes and names the right number, the check about another action, the two-claim question answered by the CLAIM and not by the number, and parity proved by the identity «85 = 42 × 2 + 1» (not by a false division — an instrument that checks may not lie in its own check). A false equality lives only inside a QUESTION, and the answer opens with the pack's word of denial: the corpus's arithmetic court recomputes every equality, and the window of М-284 reads the quoted lie rightly. Numbers held out in 50..99, disjoint from the tables of the story and comparison houses (tools/verifyforms.py). CLOSED world.",
+      "act": [
+        "decide",
+        "refute"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "planforms",
+      "file": "datasets/genesis_planforms.txt",
+      "genre": "THE PLAN — «task · steps · checkable end» (05.09, the agent architecture, the third market and its critical path): a plan is a chain whose EVERY step is checked by a number, and whose end is a verdict about the task. Five genera on nine languages: a plan of two steps and of three (with accumulation), the plan whose end is NEGATIVE and whose verdict names BOTH numbers («9 Kisten nötig, 6 Kisten vorhanden»), the question about the ORDER of steps (answered by a step, not by a number) and the question about their COUNT. The order's answer is a hole with both short phrases declared as alternatives — a swapped answer must LIE, not fall silent (tools/planforms.py). CLOSED world.",
+      "act": [
+        "recount",
+        "decide"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
       "name": "cmpframes",
       "file": "datasets/genesis_cmpframes.txt",
       "genre": "FRAMES OF COMPARISON — the largest class of the reader's lies on the held-out key (05.09: twelve of fifteen — «9 flexiones más que», «in più/in meno di», «meer/minder dan», «więcej/mniej niż»: the marker is not bought and the answer takes a neighbouring number). Four frames on nine languages over two bearer groups (a deed done and a holding held): more by N, fewer by N, twice/three times as many, and the reverse question «by how many more». The answer is a full sentence with the bearer, the number and the thing, then the ledger; the sign of the ledger is a hole, and «more» with a minus is a lie BY SIGN. Bearers, goods and count forms from the action-pages house and the packs; multiplicity words, Slavic past-tense gender and the gender of es/it/pt goods declared here (tools/cmpframes.py). CLOSED world.",
