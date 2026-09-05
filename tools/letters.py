@@ -71,6 +71,24 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 }
 ФОРМЫ = ("букв", "первая", "последняя", "наоборот")
 
+# THE NAME OF A LETTER IS A DECLARATION (05.09, the syllabus subject «письмо и графема»: a letter
+# is a sign with a name). Latin letters read aloud in Russian and in English; the markdown/LaTeX
+# world writes them (imported from here), this court judges them — one table, two readers.
+ИМЕНА_БУКВ = {"a": ("а", "ay"), "b": ("бэ", "bee"), "c": ("цэ", "cee"), "d": ("дэ", "dee"),
+              "k": ("ка", "kay"), "m": ("эм", "em"), "n": ("эн", "en"), "p": ("пэ", "pee"),
+              "x": ("икс", "ex"), "y": ("игрек", "wy"), "z": ("зет", "zed")}
+ЧТЕНИЕ_БУКВЫ = {"ru": ("как читается буква {б}?", "буква {б} читается как {имя}."),
+                "en": ("how is the letter {б} read?", "the letter {б} is read as {имя}.")}
+_ЧТЕНИЕ = [(re.compile("^(?:" + re.escape(в).replace(r"\{б\}", "(?P<бв>[a-z])") + " )?"
+                       + re.escape(о).replace(r"\{б\}", "(?P<б>[a-z])").replace(r"\{имя\}", r"(?P<имя>[^\W\d_]+)") + "$"), язык)
+           for язык, (в, о) in ЧТЕНИЕ_БУКВЫ.items()]
+
+
+def чтение_буквы(язык, б, вопросом=True):
+    в, о = ЧТЕНИЕ_БУКВЫ[язык]
+    имя = ИМЕНА_БУКВ[б][0 if язык == "ru" else 1]
+    return (в.format(б=б) + " " if вопросом else "") + о.format(б=б, имя=имя)
+
 # THE WORD BACKWARDS (sixth band, 05.09) is a TASK, not a question — and a genus
 # without a question surface is a debt of the width of asking; the question after
 # the task is the one declared by the house of tasks, read here, not redeclared.
@@ -126,6 +144,13 @@ def _образец(шаблон):
 def судить(строка):
     """(судимо, истинно): a page of a frame whose count, spelling and letter are the word's own."""
     с = строка.strip()
+    for образ, язык in _ЧТЕНИЕ:
+        м = образ.match(с)
+        if м:
+            б, имя = м.group("б"), м.group("имя")
+            if м.group("бв") is not None and м.group("бв") != б:
+                return True, False
+            return True, б in ИМЕНА_БУКВ and ИМЕНА_БУКВ[б][0 if язык == "ru" else 1] == имя
     for образ, язык, форма in ОБРАЗЦЫ:
         м = образ.match(с)
         if not м:

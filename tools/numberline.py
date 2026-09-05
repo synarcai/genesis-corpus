@@ -352,7 +352,9 @@ def числом(язык, n):
 
 ВОЗРАСТА = ((5, 1), (7, 3), (9, 2), (12, 5), (7, 1), (12, 3))
 ВЕРХ = 20          # the line the house walks: 1..20
-ДЛИНА_РЯДА = (3, 4, 5, 6)   # rows counted up or down
+# РЯДЫ ПО ПЯТЬ И ДЛИННЕЕ — счёт есть первое основание (05.09, полнота силлабуса «натуральный ряд»:
+# живой ряд шёл тройками и четвёрками, и предмет стоял на легаси-мирах)
+ДЛИНА_РЯДА = (3, 4, 5, 6, 7, 8)   # rows counted up or down
 
 # ITALIAN ARTICLE BEFORE A DIGIT is the article before its WORD: «l'uno»,
 # «l'otto», «l'undici», «il nove». Declared, not derived from spelling.
