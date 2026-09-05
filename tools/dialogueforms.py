@@ -60,7 +60,7 @@ def имя_организма(язык):
     "ru": dict(
         зачины={ПРИВЕТ: ("привет", "здравствуй", "доброе утро", "добрый день", "добрый вечер"),
                 ПРОЩАНИЕ: ("пока", "до свидания", "до встречи", "всего доброго"),
-                БЛАГОДАРНОСТЬ: ("спасибо", "большое спасибо", "благодарю"),
+                БЛАГОДАРНОСТЬ: ("спасибо", "большое спасибо", "благодарю", 'спасибо за ответ'),
                 ИЗВИНЕНИЕ: ("извини", "прости", "прошу прощения"),
                 СОГЛАСИЕ: ("ответь, пожалуйста", "помоги, пожалуйста", "скажи, пожалуйста"),
                 ОТКАЗ: ("нет", "к сожалению, нет", "не могу")},
@@ -74,6 +74,8 @@ def имя_организма(язык):
         кто_воп=("кто ты?", "кто ты такой?", "что ты такое?"), кто_отв=("я организм, который отвечает тем, что может обосновать.", "я организм: я учусь на том, что мне показывают, и отвечаю тем, что могу обосновать.", "я организм, и всякий мой ответ имеет основание, которое я могу показать."),
         незнание="что такое {н}? я не знаю, что такое {н}.",
         незнание_сегодня=(("ты знаешь, какая сегодня погода?", "не знаю: я не вижу сегодняшнего дня."), ("ты знаешь, который сейчас час?", "не знаю: у меня нет часов."), ("ты знаешь, какой сегодня день?", "не знаю: я не вижу сегодняшнего дня.")),
+        моё_имя=(('как меня зовут?', 'не знаю: ты не назвал своего имени.'), ('ты знаешь моё имя?', 'не знаю: ты его не называл.'), ('кто я?', 'не знаю: ты не сказал мне, кто ты.')),
+        бессмыслица=(('сколько весит синий цвет?', 'этот вопрос не имеет смысла: цвет ничего не весит.'), ('какого цвета число 7?', 'этот вопрос не имеет смысла: у числа нет цвета.'), ('сколько часов в килограмме?', 'этот вопрос не имеет смысла: килограмм не измеряется часами.')),
         малый=((("как дела?", "как ты?", "как поживаешь?"),
                 ("я отвечаю тем, что могу обосновать.", "хорошо: я отвечаю и проверяю ответы.", "как всегда: отвечаю на то, что могу обосновать.")),
                (("что нового?", "какие новости?", "есть что-нибудь новое?"),
@@ -88,7 +90,7 @@ def имя_организма(язык):
     "en": dict(
         зачины={ПРИВЕТ: ("hello", "hi", "good morning", "good afternoon", "good evening"),
                 ПРОЩАНИЕ: ("goodbye", "bye", "see you", "farewell"),
-                БЛАГОДАРНОСТЬ: ("thank you", "thanks", "thank you very much"),
+                БЛАГОДАРНОСТЬ: ("thank you", "thanks", "thank you very much", 'thank you for the answer'),
                 ИЗВИНЕНИЕ: ("sorry", "excuse me", "i am sorry"),
                 СОГЛАСИЕ: ("answer, please", "help me, please", "tell me, please"),
                 ОТКАЗ: ("no", "unfortunately not", "i cannot")},
@@ -102,6 +104,8 @@ def имя_организма(язык):
         кто_воп=("who are you?", "what are you?", "tell me who you are."), кто_отв=("i am an organism that answers only with what it can justify.", "i am an organism: i learn from what is shown to me and answer with what i can justify.", "i am an organism, and every answer of mine has a ground i can show."),
         незнание="what is {н}? i do not know what {н} is.",
         незнание_сегодня=(("do you know what the weather is like today?", "i do not know: i cannot see today."), ("do you know what time it is now?", "i do not know: i have no clock."), ("do you know what day it is today?", "i do not know: i cannot see today.")),
+        моё_имя=(('what is my name?', 'i do not know: you have not told me your name.'), ('do you know my name?', 'i do not know it: you have not said it.'), ('who am i?', 'i do not know: you have not told me who you are.')),
+        бессмыслица=(('how much does the colour blue weigh?', 'this question does not make sense: a colour does not weigh anything.'), ('what colour is the number 7?', 'this question does not make sense: a number has no colour.'), ('how many hours are there in a kilogram?', 'this question does not make sense: a kilogram is not measured in hours.')),
         малый=((("how are you?", "how are you doing?", "how is it going?"),
                 ("i answer with what i can justify.", "well: i answer and check the answers.", "as always: i answer what i can justify.")),
                (("what is new?", "any news?", "anything new?"),
@@ -116,7 +120,7 @@ def имя_организма(язык):
     "de": dict(
         зачины={ПРИВЕТ: ("hallo", "guten Morgen", "guten Tag", "guten Abend", "grüß dich"),
                 ПРОЩАНИЕ: ("tschüss", "auf Wiedersehen", "bis bald", "leb wohl"),
-                БЛАГОДАРНОСТЬ: ("danke", "vielen Dank", "danke schön"),
+                БЛАГОДАРНОСТЬ: ("danke", "vielen Dank", "danke schön", 'danke für die Antwort'),
                 ИЗВИНЕНИЕ: ("entschuldigung", "es tut mir leid", "verzeihung"),
                 СОГЛАСИЕ: ("antworte bitte", "hilf mir bitte", "sag mir bitte"),
                 ОТКАЗ: ("nein", "leider nicht", "ich kann nicht")},
@@ -130,6 +134,8 @@ def имя_организма(язык):
         кто_воп=("wer bist du?", "was bist du?", "sag mir, wer du bist."), кто_отв=("ich bin ein Organismus, der nur mit dem antwortet, was er begründen kann.", "ich bin ein Organismus: ich lerne aus dem, was mir gezeigt wird, und antworte mit dem, was ich begründen kann.", "ich bin ein Organismus, und jede meiner Antworten hat einen Grund, den ich zeigen kann."),
         незнание="was ist {н}? ich weiß nicht, was {н} ist.",
         незнание_сегодня=(("weißt du, wie das Wetter heute ist?", "ich weiß nicht: ich sehe den heutigen Tag nicht."), ("weißt du, wie spät es jetzt ist?", "ich weiß nicht: ich habe keine Uhr."), ("weißt du, welcher Tag heute ist?", "ich weiß nicht: ich sehe den heutigen Tag nicht.")),
+        моё_имя=(('wie heiße ich?', 'ich weiß es nicht: du hast mir deinen Namen nicht gesagt.'), ('kennst du meinen Namen?', 'ich weiß ihn nicht: du hast ihn nicht genannt.'), ('wer bin ich?', 'ich weiß es nicht: du hast mir nicht gesagt, wer du bist.')),
+        бессмыслица=(('wie viel wiegt die Farbe Blau?', 'diese Frage hat keinen Sinn: eine Farbe wiegt nichts.'), ('welche Farbe hat die Zahl 7?', 'diese Frage hat keinen Sinn: eine Zahl hat keine Farbe.'), ('wie viele Stunden hat ein Kilogramm?', 'diese Frage hat keinen Sinn: ein Kilogramm wird nicht in Stunden gemessen.')),
         малый=((("wie geht es dir?", "wie geht's?", "wie läuft es?"),
                 ("ich antworte mit dem, was ich begründen kann.", "gut: ich antworte und prüfe die Antworten.", "wie immer: ich antworte auf das, was ich begründen kann.")),
                (("was gibt es Neues?", "gibt es Neuigkeiten?", "etwas Neues?"),
@@ -144,7 +150,7 @@ def имя_организма(язык):
     "fr": dict(
         зачины={ПРИВЕТ: ("bonjour", "salut", "bonsoir", "coucou"),
                 ПРОЩАНИЕ: ("au revoir", "à bientôt", "à plus tard", "adieu"),
-                БЛАГОДАРНОСТЬ: ("merci", "merci beaucoup", "je te remercie"),
+                БЛАГОДАРНОСТЬ: ("merci", "merci beaucoup", "je te remercie", 'merci pour la réponse'),
                 ИЗВИНЕНИЕ: ("pardon", "excuse-moi", "je suis désolé"),
                 СОГЛАСИЕ: ("réponds, s'il te plaît", "aide-moi, s'il te plaît", "dis-moi, s'il te plaît"),
                 ОТКАЗ: ("non", "malheureusement non", "je ne peux pas")},
@@ -158,6 +164,8 @@ def имя_организма(язык):
         кто_воп=("qui es-tu ?", "qu'est-ce que tu es ?", "dis-moi qui tu es."), кто_отв=("je suis un organisme qui ne répond que par ce qu'il peut justifier.", "je suis un organisme : j'apprends de ce qu'on me montre et je réponds par ce que je peux justifier.", "je suis un organisme, et chacune de mes réponses a un fondement que je peux montrer."),
         незнание="qu'est-ce {ЧТО}{н} ? je ne sais pas ce qu'est {н}.",
         незнание_сегодня=(("sais-tu quel temps il fait aujourd'hui ?", "je ne sais pas : je ne vois pas la journée d'aujourd'hui."), ("sais-tu quelle heure il est maintenant ?", "je ne sais pas : je n'ai pas d'horloge."), ("sais-tu quel jour on est aujourd'hui ?", "je ne sais pas : je ne vois pas la journée d'aujourd'hui.")),
+        моё_имя=(("comment je m'appelle ?", "je ne sais pas : tu ne m'as pas dit ton nom."), ('tu connais mon nom ?', "je ne le sais pas : tu ne l'as pas dit."), ('qui suis-je ?', "je ne sais pas : tu ne m'as pas dit qui tu es.")),
+        бессмыслица=(('combien pèse la couleur bleue ?', "cette question n'a pas de sens : une couleur ne pèse rien."), ('de quelle couleur est le nombre 7 ?', "cette question n'a pas de sens : un nombre n'a pas de couleur."), ("combien d'heures y a-t-il dans un kilogramme ?", "cette question n'a pas de sens : un kilogramme ne se mesure pas en heures.")),
         малый=((("comment vas-tu ?", "ça va ?", "comment ça va ?"),
                 ("je réponds par ce que je peux justifier.", "bien : je réponds et je vérifie les réponses.", "comme toujours : je réponds à ce que je peux justifier.")),
                (("quoi de neuf ?", "des nouvelles ?", "rien de nouveau ?"),
@@ -172,7 +180,7 @@ def имя_организма(язык):
     "es": dict(
         зачины={ПРИВЕТ: ("hola", "buenos días", "buenas tardes", "buenas noches"),
                 ПРОЩАНИЕ: ("adiós", "hasta luego", "hasta pronto", "nos vemos"),
-                БЛАГОДАРНОСТЬ: ("gracias", "muchas gracias", "te lo agradezco"),
+                БЛАГОДАРНОСТЬ: ("gracias", "muchas gracias", "te lo agradezco", 'gracias por la respuesta'),
                 ИЗВИНЕНИЕ: ("perdón", "disculpa", "lo siento"),
                 СОГЛАСИЕ: ("responde, por favor", "ayúdame, por favor", "dime, por favor"),
                 ОТКАЗ: ("no", "lamentablemente no", "no puedo")},
@@ -186,6 +194,8 @@ def имя_организма(язык):
         кто_воп=("¿quién eres?", "¿qué eres?", "dime quién eres."), кто_отв=("soy un organismo que solo responde con lo que puede justificar.", "soy un organismo: aprendo de lo que se me muestra y respondo con lo que puedo justificar.", "soy un organismo, y cada respuesta mía tiene un fundamento que puedo mostrar."),
         незнание="¿qué es {н}? no sé qué es {н}.",
         незнание_сегодня=(("¿sabes qué tiempo hace hoy?", "no sé: no veo el día de hoy."), ("¿sabes qué hora es ahora?", "no sé: no tengo reloj."), ("¿sabes qué día es hoy?", "no sé: no veo el día de hoy.")),
+        моё_имя=(('¿cómo me llamo?', 'no sé: no me has dicho tu nombre.'), ('¿sabes mi nombre?', 'no lo sé: no lo has dicho.'), ('¿quién soy?', 'no sé: no me has dicho quién eres.')),
+        бессмыслица=(('¿cuánto pesa el color azul?', 'esta pregunta no tiene sentido: un color no pesa nada.'), ('¿de qué color es el número 7?', 'esta pregunta no tiene sentido: un número no tiene color.'), ('¿cuántas horas tiene un kilogramo?', 'esta pregunta no tiene sentido: un kilogramo no se mide en horas.')),
         малый=((("¿cómo estás?", "¿qué tal?", "¿cómo te va?"),
                 ("respondo con lo que puedo justificar.", "bien: respondo y compruebo las respuestas.", "como siempre: respondo a lo que puedo justificar.")),
                (("¿qué hay de nuevo?", "¿alguna novedad?", "¿algo nuevo?"),
@@ -200,7 +210,7 @@ def имя_организма(язык):
     "it": dict(
         зачины={ПРИВЕТ: ("ciao", "buongiorno", "buonasera", "salve"),
                 ПРОЩАНИЕ: ("arrivederci", "a presto", "a dopo", "addio"),
-                БЛАГОДАРНОСТЬ: ("grazie", "grazie mille", "ti ringrazio"),
+                БЛАГОДАРНОСТЬ: ("grazie", "grazie mille", "ti ringrazio", 'grazie per la risposta'),
                 ИЗВИНЕНИЕ: ("scusa", "mi dispiace", "chiedo scusa"),
                 СОГЛАСИЕ: ("rispondi, per favore", "aiutami, per favore", "dimmi, per favore"),
                 ОТКАЗ: ("no", "purtroppo no", "non posso")},
@@ -214,6 +224,8 @@ def имя_организма(язык):
         кто_воп=("chi sei?", "che cosa sei?", "dimmi chi sei."), кто_отв=("sono un organismo che risponde solo con ciò che può giustificare.", "sono un organismo: imparo da ciò che mi viene mostrato e rispondo con ciò che posso giustificare.", "sono un organismo, e ogni mia risposta ha un fondamento che posso mostrare."),
         незнание="che cos'è {н}? non so che cos'è {н}.",
         незнание_сегодня=(("sai che tempo fa oggi?", "non so: non vedo la giornata di oggi."), ("sai che ore sono adesso?", "non so: non ho un orologio."), ("sai che giorno è oggi?", "non so: non vedo la giornata di oggi.")),
+        моё_имя=(('come mi chiamo?', 'non so: non mi hai detto il tuo nome.'), ('sai il mio nome?', 'non lo so: non lo hai detto.'), ('chi sono?', 'non so: non mi hai detto chi sei.')),
+        бессмыслица=(('quanto pesa il colore blu?', 'questa domanda non ha senso: un colore non pesa nulla.'), ('di che colore è il numero 7?', 'questa domanda non ha senso: un numero non ha colore.'), ('quante ore ha un chilogrammo?', 'questa domanda non ha senso: un chilogrammo non si misura in ore.')),
         малый=((("come stai?", "come va?", "tutto bene?"),
                 ("rispondo con ciò che posso giustificare.", "bene: rispondo e controllo le risposte.", "come sempre: rispondo a ciò che posso giustificare.")),
                (("che c'è di nuovo?", "novità?", "niente di nuovo?"),
@@ -228,7 +240,7 @@ def имя_организма(язык):
     "pt": dict(
         зачины={ПРИВЕТ: ("olá", "bom dia", "boa tarde", "boa noite"),
                 ПРОЩАНИЕ: ("adeus", "até logo", "até breve", "tchau"),
-                БЛАГОДАРНОСТЬ: ("obrigado", "muito obrigado", "agradeço"),
+                БЛАГОДАРНОСТЬ: ("obrigado", "muito obrigado", "agradeço", 'obrigado pela resposta'),
                 ИЗВИНЕНИЕ: ("desculpa", "perdão", "lamento"),
                 СОГЛАСИЕ: ("responde, por favor", "ajuda-me, por favor", "diz-me, por favor"),
                 ОТКАЗ: ("não", "infelizmente não", "não posso")},
@@ -242,6 +254,8 @@ def имя_организма(язык):
         кто_воп=("quem és tu?", "o que és tu?", "diz-me quem és."), кто_отв=("sou um organismo que só responde com o que pode justificar.", "sou um organismo: aprendo com o que me é mostrado e respondo com o que posso justificar.", "sou um organismo, e cada resposta minha tem um fundamento que posso mostrar."),
         незнание="o que é {н}? não sei o que é {н}.",
         незнание_сегодня=(("sabes que tempo faz hoje?", "não sei: não vejo o dia de hoje."), ("sabes que horas são agora?", "não sei: não tenho relógio."), ("sabes que dia é hoje?", "não sei: não vejo o dia de hoje.")),
+        моё_имя=(('como me chamo?', 'não sei: não me disseste o teu nome.'), ('sabes o meu nome?', 'não sei: não o disseste.'), ('quem sou eu?', 'não sei: não me disseste quem és.')),
+        бессмыслица=(('quanto pesa a cor azul?', 'esta pergunta não faz sentido: uma cor não pesa nada.'), ('de que cor é o número 7?', 'esta pergunta não faz sentido: um número não tem cor.'), ('quantas horas tem um quilograma?', 'esta pergunta não faz sentido: um quilograma não se mede em horas.')),
         малый=((("como estás?", "tudo bem?", "como vais?"),
                 ("respondo com aquilo que posso justificar.", "bem: respondo e verifico as respostas.", "como sempre: respondo ao que posso justificar.")),
                (("o que há de novo?", "alguma novidade?", "algo de novo?"),
@@ -256,7 +270,7 @@ def имя_организма(язык):
     "nl": dict(
         зачины={ПРИВЕТ: ("hallo", "goedemorgen", "goedemiddag", "goedenavond", "hoi"),
                 ПРОЩАНИЕ: ("dag", "tot ziens", "tot straks", "vaarwel"),
-                БЛАГОДАРНОСТЬ: ("dank je", "bedankt", "dank je wel"),
+                БЛАГОДАРНОСТЬ: ("dank je", "bedankt", "dank je wel", 'bedankt voor het antwoord'),
                 ИЗВИНЕНИЕ: ("sorry", "pardon", "het spijt me"),
                 СОГЛАСИЕ: ("antwoord alsjeblieft", "help me alsjeblieft", "zeg het me alsjeblieft"),
                 ОТКАЗ: ("nee", "helaas niet", "ik kan niet")},
@@ -270,6 +284,8 @@ def имя_организма(язык):
         кто_воп=("wie ben je?", "wat ben je?", "zeg me wie je bent."), кто_отв=("ik ben een organisme dat alleen antwoordt met wat het kan onderbouwen.", "ik ben een organisme: ik leer van wat mij getoond wordt en antwoord met wat ik kan onderbouwen.", "ik ben een organisme, en elk antwoord van mij heeft een grond die ik kan tonen."),
         незнание="wat is {н}? ik weet niet wat {н} is.",
         незнание_сегодня=(("weet je hoe het weer vandaag is?", "ik weet het niet: ik zie de dag van vandaag niet."), ("weet je hoe laat het nu is?", "ik weet het niet: ik heb geen klok."), ("weet je welke dag het vandaag is?", "ik weet het niet: ik zie de dag van vandaag niet.")),
+        моё_имя=(('hoe heet ik?', 'ik weet het niet: je hebt me je naam niet gezegd.'), ('weet je mijn naam?', 'ik weet hem niet: je hebt hem niet gezegd.'), ('wie ben ik?', 'ik weet het niet: je hebt me niet gezegd wie je bent.')),
+        бессмыслица=(('hoeveel weegt de kleur blauw?', 'deze vraag heeft geen zin: een kleur weegt niets.'), ('welke kleur heeft het getal 7?', 'deze vraag heeft geen zin: een getal heeft geen kleur.'), ('hoeveel uur zit er in een kilogram?', 'deze vraag heeft geen zin: een kilogram wordt niet in uren gemeten.')),
         малый=((("hoe gaat het?", "hoe is het?", "alles goed?"),
                 ("ik antwoord met wat ik kan onderbouwen.", "goed: ik antwoord en controleer de antwoorden.", "zoals altijd: ik antwoord op wat ik kan onderbouwen.")),
                (("wat is er nieuw?", "nog nieuws?", "iets nieuws?"),
@@ -284,7 +300,7 @@ def имя_организма(язык):
     "pl": dict(
         зачины={ПРИВЕТ: ("cześć", "dzień dobry", "dobry wieczór", "witam"),
                 ПРОЩАНИЕ: ("do widzenia", "pa", "do zobaczenia", "żegnaj"),
-                БЛАГОДАРНОСТЬ: ("dziękuję", "dzięki", "bardzo dziękuję"),
+                БЛАГОДАРНОСТЬ: ("dziękuję", "dzięki", "bardzo dziękuję", 'dziękuję za odpowiedź'),
                 ИЗВИНЕНИЕ: ("przepraszam", "wybacz", "bardzo przepraszam"),
                 СОГЛАСИЕ: ("odpowiedz, proszę", "pomóż mi, proszę", "powiedz mi, proszę"),
                 ОТКАЗ: ("nie", "niestety nie", "nie mogę")},
@@ -299,6 +315,8 @@ def имя_организма(язык):
         кто_воп=("kim jesteś?", "czym jesteś?", "powiedz mi, kim jesteś."), кто_отв=("jestem organizmem, który odpowiada tylko tym, co potrafi uzasadnić.", "jestem organizmem: uczę się z tego, co mi pokazano, i odpowiadam tym, co potrafię uzasadnić.", "jestem organizmem, a każda moja odpowiedź ma podstawę, którą potrafię pokazać."),
         незнание="co to jest {н}? nie wiem, co to jest {н}.",
         незнание_сегодня=(("czy wiesz, jaka jest dziś pogoda?", "nie wiem: nie widzę dzisiejszego dnia."), ("czy wiesz, która jest teraz godzina?", "nie wiem: nie mam zegara."), ("czy wiesz, jaki jest dziś dzień?", "nie wiem: nie widzę dzisiejszego dnia.")),
+        моё_имя=(('jak mam na imię?', 'nie wiem: nie podałeś mi swojego imienia.'), ('znasz moje imię?', 'nie znam: nie podałeś go.'), ('kim jestem?', 'nie wiem: nie powiedziałeś mi, kim jesteś.')),
+        бессмыслица=(('ile waży kolor niebieski?', 'to pytanie nie ma sensu: kolor nic nie waży.'), ('jakiego koloru jest liczba 7?', 'to pytanie nie ma sensu: liczba nie ma koloru.'), ('ile godzin ma kilogram?', 'to pytanie nie ma sensu: kilogramu nie mierzy się w godzinach.')),
         малый=((("jak się masz?", "co słychać?", "jak leci?"),
                 ("odpowiadam tym, co potrafię uzasadnić.", "dobrze: odpowiadam i sprawdzam odpowiedzi.", "jak zawsze: odpowiadam na to, co potrafię uzasadnić.")),
                (("co nowego?", "jakieś nowości?", "coś nowego?"),
@@ -430,7 +448,7 @@ for _яз, _т in ВЕЖЛИВО.items():
         assert repr(_из)[1:-1] in _все, (_яз, _из, "замена объявлена строке, которой в доме нет")
     assert (ЯЗЫКИ_ВЫ[_яз] != ЯЗЫКИ[_яз]) == bool(_т), (_яз, "словарь замен и дело разошлись")
 
-ФОРМЫ = ("пара", "определение", "имя", "кто", "незнание", "малый", "незнание_сегодня")
+ФОРМЫ = ("пара", "определение", "имя", "кто", "незнание", "малый", "незнание_сегодня", "моё_имя", "бессмыслица")
 ФОРМЫ_ВЫ = ("пара", "имя", "кто", "малый")
 # английский различия не имеет — дыра объявлена домом, а не выведена прибором
 ОБЪЯВЛЕННЫЕ_ПРОПУСКИ = {ф + "_вы": frozenset(я for я, т in ВЕЖЛИВО.items() if not т)
@@ -486,6 +504,13 @@ def страница(язык, форма, вид=None, i=0, j=0, вы=False):
         # с именем рода («организм»): 3 × 3 = LAW², число выведено.
         вопросы, ответы_кто = я["кто_воп"], я["кто_отв"]
         return f"{вопросы[i % len(вопросы)]} {ответы_кто[j % len(ответы_кто)]}"
+    if форма in ("моё_имя", "бессмыслица"):
+        # ЧУЖОЕ ИМЯ, КОТОРОГО НЕ ГОВОРИЛИ, И ВОПРОС БЕЗ СМЫСЛА (пятая полоса, 05.09):
+        # «как меня зовут? не знаю: ты не назвал своего имени.» — незнание с
+        # основанием, истинное всегда; «сколько весит синий цвет? этот вопрос не
+        # имеет смысла: цвет ничего не весит.» — отказ по категории, с основанием.
+        в, о = я[форма][i % len(я[форма])]
+        return f"{в} {о}"
     if форма == "незнание_сегодня":
         # НЕЗНАНИЕ О ТЕКУЩЕМ (полоса BESEDA-2, 05.09: род LIMIT-OF-KNOWING — 0 из 9).
         # Организм не видит сегодняшнего дня и часов, и обязан СКАЗАТЬ это с
@@ -555,6 +580,10 @@ def _все_показы():
         for i in range(len(я["незнание_сегодня"])):
             вон[страница(язык, "незнание_сегодня", i=i)] = (язык, "незнание_сегодня")
             _показ_вы(вон, язык, "незнание_сегодня", i=i)
+        for форма in ("моё_имя", "бессмыслица"):
+            for i in range(len(я[форма])):
+                вон[страница(язык, форма, i=i)] = (язык, форма)
+                _показ_вы(вон, язык, форма, i=i)
         for i in range(len(я["малый"]) * 3):
             for j in range(3):
                 вон[страница(язык, "малый", i=i, j=j)] = (язык, "малый")
