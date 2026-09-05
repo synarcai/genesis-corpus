@@ -178,13 +178,18 @@ def refusal_shows():
     return out
 
 
-def main():
-    kinds = [
+def pass_groups(_pi):
+    """The kinds of a pass — the same eight in every pass; declared at module level so
+    an instrument (the copies census) can read the shows' shape without writing."""
+    return [
         heading_shows(), list_shows(), nesting_shows(),
         mermaid_transit_shows(), draw_shows(),
         formula_step_shows(), question_shows(), refusal_shows(),
     ]
-    emit_grouped("datasets/genesis_md_structures.txt", lambda _pi: kinds)
+
+
+def main():
+    emit_grouped("datasets/genesis_md_structures.txt", pass_groups)
 
 
 if __name__ == "__main__":
