@@ -1,0 +1,64 @@
+# BESEDA-12 — ДВЕНАДЦАТАЯ ПОЛОСА: формы восьмой точки (05.09) — владение в вопросе при «has» в истории,
+# доля вещей, цепочка шагов, удержание без данных, отношение «меньше на», вещи нескольких родов.
+# Девять языков; строка «вопрос ||| подстрока ожидаемого ответа»; без «|||» — довольно ответа с основанием.
+#
+# GENUS: OWN-AFTER-HAS
+Ann has 12 coins. she gives away 5. how many coins does Ann own now? ||| 7
+у Ани есть 12 монет. она отдаёт 5. сколько монет имеет Аня теперь? ||| 7
+Anna hat 12 Münzen. sie gibt 5 weg. wie viele Münzen besitzt Anna jetzt? ||| 7
+Anne a 12 pièces. elle en donne 5. combien de pièces possède Anne maintenant ? ||| 7
+Ana tiene 12 monedas. da 5. ¿cuántas monedas posee Ana ahora? ||| 7
+Anna ha 12 monete. ne dà 5. quante monete possiede Anna adesso? ||| 7
+a Ana tem 12 moedas. dá 5. quantas moedas possui a Ana agora? ||| 7
+Anna heeft 12 munten. ze geeft er 5 weg. hoeveel munten bezit Anna nu? ||| 7
+Anna ma 12 monet. oddaje 5. ile monet posiada Anna teraz? ||| 7
+# GENUS: FRACTION-OF-THINGS
+Ann has 12 coins. a third of them are red. how many coins are red? ||| 4
+у Ани 12 монет. треть из них — красные. сколько из них красные? ||| 4
+Anna hat 12 Münzen. ein Drittel davon ist rot. wie viele davon sind rot? ||| 4
+Anne a 12 pièces. un tiers sont rouges. combien sont rouges ? ||| 4
+Ana tiene 12 monedas. un tercio de ellas son verdes. ¿cuántas son verdes? ||| 4
+Anna ha 12 monete. un terzo sono verdi. quante sono verdi? ||| 4
+a Ana tem 12 moedas. um terço são verdes. quantas são verdes? ||| 4
+Anna heeft 12 munten. een derde daarvan is rood. hoeveel daarvan zijn rood? ||| 4
+Anna ma 12 monet. jedna trzecia z nich to czerwone. ile z nich to czerwone? ||| 4
+# GENUS: FRACTION-REST
+Ann has 12 coins. half of them are red. how many coins are not red? ||| 6
+у Ани 12 монет. половина из них — красные. сколько из них не красные? ||| 6
+Anna hat 12 Münzen. die Hälfte davon ist rot. wie viele davon sind nicht rot? ||| 6
+Anne a 12 pièces. la moitié sont rouges. combien ne sont pas rouges ? ||| 6
+Ana tiene 12 monedas. la mitad de ellas son verdes. ¿cuántas no son verdes? ||| 6
+Anna ha 12 monete. la metà sono verdi. quante non sono verdi? ||| 6
+a Ana tem 12 moedas. metade são verdes. quantas não são verdes? ||| 6
+Anna heeft 12 munten. de helft daarvan is rood. hoeveel daarvan zijn niet rood? ||| 6
+Anna ma 12 monet. połowa z nich to czerwone. ile z nich to nie czerwone? ||| 6
+# GENUS: THREE-STEPS
+Ann collected 12 coins. Ann bought 5 more. she lost 3 of them. how many coins does Ann have left? ||| 14
+Аня собрала 12 монет. Аня купила ещё 5. она потеряла 3 из них. сколько монет у Ани осталось? ||| 14
+Anna sammelte 12 Münzen. Anna kaufte noch 5. sie verlor 3 davon. wie viele Münzen hat Anna noch? ||| 14
+Anne a ramassé 12 pièces. Anne en a acheté 5 de plus. elle en a perdu 3. combien de pièces reste-t-il à Anne ? ||| 14
+Ana recogió 12 monedas. Ana compró 5 más. ella perdió 3. ¿qué cantidad de monedas le queda a Ana? ||| 14
+Anna ha raccolto 12 monete. Anna ha comprato altre 5 monete. lei ha perso 3 monete. che quantità di monete resta a Anna? ||| 14
+a Ana apanhou 12 moedas. a Ana comprou mais 5. ela perdeu 3. que quantidade de moedas resta à Ana? ||| 14
+Anna verzamelde 12 munten. Anna kocht er nog 5 bij. ze verloor er 3. hoeveel munten heeft Anna nog? ||| 14
+Anna zebrała 12 monet. Anna kupiła jeszcze 5. ona zgubiła 3 z nich. ile monet zostało Annie? ||| 14
+# GENUS: NO-DATA
+how many coins does Ann have? ||| do not know
+сколько монет у Ани? ||| не знаю
+wie viele Münzen hat Anna? ||| weiß es nicht
+combien de pièces a Anne ? ||| ne sais pas
+¿cuántas monedas tiene Ana? ||| no lo sé
+quante monete ha Anna? ||| non lo so
+quantas moedas tem a Ana? ||| não sei
+hoeveel munten heeft Anna? ||| weet het niet
+ile monet ma Anna? ||| nie wiem
+# GENUS: FEWER-THAN
+Marta did 20 push-ups. Carlos did 8 push-ups less than Marta. how many push-ups did Carlos do? ||| 12
+Марта сделала 20 отжиманий. Карлос сделал на 8 отжиманий меньше, чем Марта. сколько отжиманий сделал Карлос? ||| 12
+Marta machte 20 Liegestütze. Carlos machte 8 Liegestütze weniger als Marta. wie viele Liegestütze machte Carlos? ||| 12
+Marta a fait 20 pompes. Carlos a fait 8 pompes de moins que Marta. combien de pompes a fait Carlos ? ||| 12
+Marta hizo 20 flexiones. Carlos hizo 8 flexiones menos que Marta. ¿cuántas flexiones hizo Carlos? ||| 12
+Marta ha fatto 20 flessioni. Carlo ha fatto 8 flessioni meno di Marta. quante flessioni ha fatto Carlo? ||| 12
+a Marta fez 20 flexões. o Carlos fez menos 8 flexões do que a Marta. quantas flexões fez o Carlos? ||| 12
+Marta deed 20 push-ups. Carlos deed 8 push-ups minder dan Marta. hoeveel push-ups deed Carlos? ||| 12
+Marta zrobiła 20 pompek. Karol zrobił o 8 pompek mniej niż Marta. ile pompek zrobił Karol? ||| 12
