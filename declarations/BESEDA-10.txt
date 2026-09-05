@@ -1,0 +1,87 @@
+# BESEDA-10 — ДЕСЯТАЯ ПОЛОСА БЕСЕДЫ: чем человек ВЕДЁТ беседу дальше после ответа.
+#
+# Девять полос спрашивали. Эта — ходы после ответа: эллипсис «а теперь …?», просьба объяснить
+# проще, «почему ты так думаешь?», «это всё?», «скажи ещё раз», «спасибо, понял», «что ты
+# сказал?», «у меня ещё вопрос». Девять языков; строка «вопрос ||| подстрока ожидаемого ответа»;
+# без «|||» — довольно того, чтобы ответ был и был обоснован.
+#
+# GENUS: AND-NOW
+а теперь 7 + 8? ||| 15
+and now 7 + 8? ||| 15
+und jetzt 7 + 8? ||| 15
+et maintenant 7 + 8 ? ||| 15
+¿y ahora 7 + 8? ||| 15
+e adesso 7 + 8? ||| 15
+e agora 7 + 8? ||| 15
+en nu 7 + 8? ||| 15
+a teraz 7 + 8? ||| 15
+# GENUS: SIMPLER
+объясни проще.
+explain it more simply.
+erkläre es einfacher.
+explique plus simplement.
+explícalo más sencillo.
+spiegalo più semplicemente.
+explica de forma mais simples.
+leg het eenvoudiger uit.
+wyjaśnij prościej.
+# GENUS: WHY-SO
+почему ты так думаешь? ||| потому что
+why do you think so? ||| because
+warum denkst du das? ||| weil
+pourquoi penses-tu cela ? ||| parce que
+¿por qué piensas eso? ||| porque
+perché lo pensi? ||| perché
+porque pensas isso? ||| porque
+waarom denk je dat? ||| omdat
+dlaczego tak myślisz? ||| bo
+# GENUS: IS-THAT-ALL
+это всё? ||| да
+is that all? ||| yes
+ist das alles? ||| ja
+c'est tout ? ||| oui
+¿eso es todo? ||| sí
+è tutto? ||| sì
+é tudo? ||| sim
+is dat alles? ||| ja
+to wszystko? ||| tak
+# GENUS: SAY-AGAIN
+скажи ещё раз.
+say it again.
+sag es noch einmal.
+redis-le.
+dilo otra vez.
+ripetilo.
+diz outra vez.
+zeg het nog eens.
+powiedz jeszcze raz.
+# GENUS: GOT-IT
+спасибо, понял. ||| пожалуйста
+thanks, got it. ||| welcome
+danke, verstanden. ||| bitte
+merci, compris. ||| rien
+gracias, entendido. ||| nada
+grazie, capito. ||| prego
+obrigado, percebi. ||| nada
+bedankt, begrepen. ||| graag
+dzięki, rozumiem. ||| proszę
+# GENUS: WHAT-DID-YOU-SAY
+что ты сказал?
+what did you say?
+was hast du gesagt?
+qu'est-ce que tu as dit ?
+¿qué has dicho?
+cosa hai detto?
+o que disseste?
+wat zei je?
+co powiedziałeś?
+# GENUS: NEXT-QUESTION
+у меня ещё вопрос. ||| спрашивай
+i have another question. ||| go ahead
+ich habe noch eine Frage. ||| frag
+j'ai encore une question. ||| écoute
+tengo otra pregunta. ||| pregunta
+ho un'altra domanda. ||| chiedi
+tenho mais uma pergunta. ||| pergunta
+ik heb nog een vraag. ||| vraag
+mam jeszcze jedno pytanie. ||| pytaj
