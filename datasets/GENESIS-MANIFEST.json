@@ -4682,10 +4682,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 30172579,
+      "size": 30365929,
       "tiers": [],
       "text": "mix",
-      "lines": 345662
+      "lines": 347066
     },
     {
       "name": "minimal",
@@ -9306,6 +9306,23 @@
       ],
       "boundary": [
         "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "discountroad",
+      "file": "datasets/genesis_discountroad.txt",
+      "genre": "THE MONEY ROAD WITH A DISCOUNT (05.09, the SECOND gate of the silence atlas by d5's measure: 72–76 turns of the grove stop on the money road). A price, a discount ON EACH item, and FOUR questions over one and the same pair of numbers: the price after the discount («how much is paid for one pack? $51: 76 − 25 = 51»), the bill for several («for 5 packs? $255: 5 × 51 = 255» — the discounted price multiplies, not the full one), how many items fit into a sum at the FULL price («for $380? 5: 380 ÷ 76 = 5») and how many at the DISCOUNTED price («for $255? 5: 255 ÷ 51 = 5»). The four stand over one pair on purpose: the market must buy the QUESTION, the arithmetic it already has. The currency sign stands where the language puts it, and the accusative is written where the language bends it («на каждую пачку», «na każdą paczkę») (tools/discountroad.py). CLOSED world.",
+      "act": [
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only",
+        "exact_only"
       ],
       "actors": "",
       "text": "shows"
