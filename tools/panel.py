@@ -43,6 +43,13 @@ for _где in (КОРЕНЬ / "courts", КОРЕНЬ / "tools", КОРЕНЬ / 
     if _где.is_dir() and str(_где) not in sys.path:
         sys.path.insert(0, str(_где))
 
+# THE FIXED PRICE OF THE PALATA IS PAID ONCE PER INTERPRETER, NOT ONCE PER PROCESS (05.09): the
+# 125 courts compile ≈ 6 800 patterns on import, ≈ 80 % of a cold build, and the parallel gate
+# builds a palata in every worker — the persistent cache of compiled patterns (tools/recache.py)
+# is installed before the first court is imported; verdicts are the same by construction.
+import recache  # noqa: E402
+recache.установить()
+
 # СУДЫ НАЗВАНЫ ПОЛНЫМИ ИМЕНАМИ МОДУЛЕЙ, А НЕ ОСНОВАМИ. Основа
 # («arith») собиралась в имя на месте зова (`f"{имя}_court"`), и всякий,
 # кто читает зависимости ГЛАЗАМИ ИЛИ ПРИБОРОМ, их не видел: парк
@@ -222,7 +229,9 @@ for _где in (КОРЕНЬ / "courts", КОРЕНЬ / "tools", КОРЕНЬ / 
            "scale_court",
            "metalang_court",
            # ДЕРЖАНИЯ БЕЗ ГЛАГОЛА (05.09, первый показ «только рамками»)
-           "holdforms_court")
+           "holdforms_court",
+           # РАМКИ СРАВНЕНИЯ (05.09, лжи маркеров на удержанном ключе)
+           "cmpframes_court")
 
 
 def _взять(модуль):
