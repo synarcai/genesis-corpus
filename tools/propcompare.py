@@ -40,7 +40,7 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
                       "скорость": ("schneller", "langsamer"), "рост": ("höher", "niedriger")},
                пары={"тяжесть": ("ein Stein", "eine Feder"), "твёрдость": ("ein Stein", "ein Kissen"), "жар": ("Feuer", "Eis"),
                      "скорость": ("ein Hase", "eine Schildkröte"), "рост": ("eine Giraffe", "eine Katze")}),
-    "fr": dict(рамка=("qu'est-ce qui est {C} : {X} ou {Y} ?", "{W}."),
+    "fr": dict(рамка=("qu'est-ce qui est {C} : {X} ou {Y} ?", "{W}."), рамка2=("lequel est le {C} : {X} ou {Y} ?", "{W}."),
                сравн={"тяжесть": ("plus lourd", "plus léger"), "твёрдость": ("plus dur", "plus mou"), "жар": ("plus chaud", "plus froid"),
                       "скорость": ("plus rapide", "plus lent"), "рост": ("plus haut", "plus bas")},
                пары={"тяжесть": ("une pierre", "une plume"), "твёрдость": ("une pierre", "un coussin"), "жар": ("le feu", "la glace"),
@@ -78,7 +78,7 @@ for _яз, _я in ЯЗЫКИ.items():
     assert len(_слова) == len(set(_слова)), (_яз, "сравнительное в двух свойствах")
 
 
-def страница(язык, свойство, порядок=0, направление=0):
+def страница(язык, свойство, порядок=0, направление=0, рамка="рамка"):
     """порядок 0/1 — the pair asked as (winner, loser) or reversed; направление 0/1 —
     the «more» comparative (answer: the winner) or the «less» one (answer: the loser)."""
     я = ЯЗЫКИ[язык]
@@ -86,13 +86,14 @@ def страница(язык, свойство, порядок=0, направ�
     C = я["сравн"][свойство][направление]
     X, Y = (w, l) if порядок == 0 else (l, w)
     W = w if направление == 0 else l
-    воп, отв = я["рамка"]
+    воп, отв = я[рамка]
     return f"{воп.format(C=C, X=X, Y=Y)} {отв.format(W=W)}"
 
 
 def _показы():
-    return {страница(язык, св, п, н): (язык, св)
-            for язык in ЯЗЫКИ for св in СВОЙСТВА for п in (0, 1) for н in (0, 1)}
+    return {страница(язык, св, п, н, р): (язык, св)
+            for язык, я in ЯЗЫКИ.items() for р in ("рамка", "рамка2") if р in я
+            for св in СВОЙСТВА for п in (0, 1) for н in (0, 1)}
 
 
 ПОКАЗЫ = _показы()
@@ -105,9 +106,12 @@ def _образцы():
         вещи = [в for п in я["пары"].values() for в in п]
         дыры = {"C": "(?P<C>" + alt(с for п in я["сравн"].values() for с in п)[3:],
                 "X": "(?P<X>" + alt(вещи)[3:], "Y": "(?P<Y>" + alt(вещи)[3:], "W": "(?P<W>" + alt(вещи)[3:]}
-        шаблон = " ".join(я["рамка"])
-        куски = [дыры[к[1:-1]] if к.startswith("{") else re.escape(к) for к in re.split(r"(\{[^}]+\})", шаблон)]
-        вон.append((re.compile("^" + "".join(куски) + "$"), язык))
+        for р in ("рамка", "рамка2"):
+            if р not in я:
+                continue
+            шаблон = " ".join(я[р])
+            куски = [дыры[к[1:-1]] if к.startswith("{") else re.escape(к) for к in re.split(r"(\{[^}]+\})", шаблон)]
+            вон.append((re.compile("^" + "".join(куски) + "$"), язык))
     return вон
 
 
