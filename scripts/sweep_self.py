@@ -35,8 +35,10 @@ that at the world's birth.
 
 usage:
   sweep_self.py gen   CANON N SEED OUTDIR      → OUTDIR/sweep_q.txt, OUTDIR/sweep_key.tsv
-  sweep_self.py judge KEY RUN_OUT [--классов K] [--метка ИМЯ]
+  sweep_self.py judge KEY RUN_OUT [--классов K] [--метка ИМЯ] [--в ПУТЬ]
                                                → verdict; writes reports/sweep/latest.tsv
+                                                 (or ПУТЬ: a world's sweep must not
+                                                 overwrite the point's verdict)
   sweep_self.py roster                         → re-reads the last verdict for the suite
 """
 import collections
@@ -128,6 +130,8 @@ def скелет(вопрос):
 def голова(вопрос):
     """The class of a question: its first two words with names masked to X and numbers to #."""
     куски = re.findall(r"[^\W\d_]+(?:['’][^\W\d_]+)?|\d+", вопрос.lower())
+    if len(куски) > 1 and куски[0] in ("o", "a") and куски[1] in ИМЕНА:
+        куски = куски[1:]          # the Portuguese article before a name is the name's
     вон = []
     for к in куски[:3]:
         вон.append("#" if к.isdigit() else "X" if к in ИМЕНА else к)
@@ -233,7 +237,7 @@ def _вердикт(строки, классов, метка):
     return 0 if поза == "PASS" else 1
 
 
-def judge(ключ, прогон, классов=12, метка="sweep"):
+def judge(ключ, прогон, классов=12, метка="sweep", куда=None):
     ключ, прогон = pathlib.Path(ключ), pathlib.Path(прогон)
     if not ключ.is_file() or not прогон.is_file():
         print(f"СВОД СПРАШИВАЕТ СЕБЯ ОТКАЗ: нет ключа или прогона ({ключ.name}, {прогон.name})")
@@ -249,8 +253,9 @@ def judge(ключ, прогон, классов=12, метка="sweep"):
             строки.append((я, в, о, "верно" if верно(о, ответы[i]) else "ложь", ответы[i]))
         else:
             строки.append((я, в, о, "немо", ""))
-    ПОСЛЕДНИЙ.parent.mkdir(parents=True, exist_ok=True)
-    ПОСЛЕДНИЙ.write_text(f"# метка\t{метка}\n" + "".join(
+    куда = pathlib.Path(куда) if куда else ПОСЛЕДНИЙ
+    куда.parent.mkdir(parents=True, exist_ok=True)
+    куда.write_text(f"# метка\t{метка}\n" + "".join(
         f"{я}\t{исход}\t{в}\t{о}\t{ответ}\n" for я, в, о, исход, ответ in строки), encoding="utf-8")
     return _вердикт(строки, классов, метка)
 
@@ -279,7 +284,8 @@ def main(argv):
     if len(argv) >= 3 and argv[0] == "judge":
         классов = int(argv[argv.index("--классов") + 1]) if "--классов" in argv else 12
         метка = argv[argv.index("--метка") + 1] if "--метка" in argv else "sweep"
-        return judge(argv[1], argv[2], классов, метка)
+        куда = argv[argv.index("--в") + 1] if "--в" in argv else None
+        return judge(argv[1], argv[2], классов, метка, куда)
     if argv and argv[0] == "roster":
         return roster()
     print(__doc__.split("usage:")[1])
