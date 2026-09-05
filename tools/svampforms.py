@@ -62,6 +62,25 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
              "pl": ("czerwone", "niebieskie")}
 # Polish dative of the names (the pack declares gender only)
 ДАТЕЛЬНЫЙ_PL = {"Anna": "Annie", "Jan": "Janowi", "Maria": "Marii", "Piotr": "Piotrowi", "Zofia": "Zofii", "Paweł": "Pawłowi", "Ewa": "Ewie", "Marek": "Markowi"}
+# THE PARENT AND THE PAIR BEND BY THE BEARER'S GENDER (d5, live band p156, 05.09: nine of twelve
+# lies of the grove stand on unbought pronouns — «his strawberries», «together their strawberries»,
+# «gave HIM 20», «bought 140 cakes FROM HIM», «leaving HIM with 27»): the possessive parent (his
+# father / her mother — the bearer's gender picks both words), its Russian genitive after «у», the
+# bare parent of the name's possessive («Marco's father», «у отца Марко», «le père de Louis»), and
+# the pair's word where the language bends it (fr ils/elles, es/pt juntos/juntas)
+РОДНЯ = {
+    "en": {"m": dict(Р="his father", Рб="father", они="they"), "f": dict(Р="her mother", Рб="mother", они="they")},
+    "ru": {"m": dict(Р="его отец", Рр="его отца", Рб="отца"), "f": dict(Р="её мать", Рр="её матери", Рб="матери")},
+    "de": {"m": dict(Р="sein Vater", Рб="der Vater", они="sie"), "f": dict(Р="ihre Mutter", Рб="die Mutter", они="sie")},
+    "fr": {"m": dict(Р="son père", Рб="le père", они="ils"), "f": dict(Р="sa mère", Рб="la mère", они="elles")},
+    "es": {"m": dict(Р="su padre", Рб="el padre", вместе="juntos"), "f": dict(Р="su madre", Рб="la madre", вместе="juntas")},
+    "it": {"m": dict(Р="suo padre", Рб="il padre"), "f": dict(Р="sua madre", Рб="la madre")},
+    "pt": {"m": dict(Р="o pai dele", Рб="o pai", вместе="juntos"), "f": dict(Р="a mãe dela", Рб="a mãe", вместе="juntas")},
+    "nl": {"m": dict(Р="zijn vader", Рб="de vader", они="ze"), "f": dict(Р="haar moeder", Рб="de moeder", они="ze")},
+    "pl": {"m": dict(Р="jego tata", Рб="tata"), "f": dict(Р="jej mama", Рб="mama")},
+}
+# Polish genitive of the names (the pack declares gender only): «tata Marka», «mama Anny»
+РОДИТЕЛЬНЫЙ_PL = {"Anna": "Anny", "Jan": "Jana", "Maria": "Marii", "Piotr": "Piotra", "Zofia": "Zofii", "Paweł": "Pawła", "Ewa": "Ewy", "Marek": "Marka"}
 # goods outside the lexicon: (two kinds, the union), count forms one/many (ru: one/few/many)
 ТОВАРЫ = {"en": ((("page of reading homework", "pages of reading homework"), ("page of math homework", "pages of math homework"), ("page of homework", "pages of homework")),
                  (("pack of red cards", "packs of red cards"), ("pack of blue cards", "packs of blue cards"), ("pack of cards", "packs of cards")),
@@ -102,6 +121,12 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         доля="{X} has {n} {Тn}. {ДОЛЯ} of them are {ЦП}. how many {Тмн} are {ЦП}? {r}: {n} ÷ {q} = {r}.",
         доля_не="{X} has {n} {Тn}. {ДОЛЯ} of them are {ЦП}. how many {Тмн} are not {ЦП}? step 1: {n} ÷ {q} = {r}. step 2: {n} − {r} = {d}. total: {d}.",
         возраст_имя="{X} is {n} {Гn} old. how old will {X} be in {k} {Гk}? {X} will be {s} {Гs} old: {n} + {k} = {s}.",
+        его_вещи="{X} has {n} {Тn}. {Р} has {k} {Тk}. how many {Тмн} does {X} have? {X} has {n} {Тn}.",
+        вместе_их="{X} has {n} {Тn}. {Р} has {k} {Тk}. how many {Тмн} do {они} have together? together {они} have {s} {Тs}: {n} + {k} = {s}.",
+        дал_ему="{X} had {n} {Тn}. {Y} gave {ему} {k} {Тk}. how many {Тмн} does {X} have now? {X} has {s} {Тs}: {n} + {k} = {s}.",
+        купил_у_него="{X} had {n} {Тn}. {Y} had some too. {Он} bought {k} {Тk} from {негоY}. how many {Тмн} does {X} have now? {X} has {s} {Тs}: {n} + {k} = {s}.",
+        оставив_ему="{X} gave {k} {Тk} to {Y}, leaving {него} with {r} {Тr}. how many {Тмн} did {X} have at first? {X} had {n} {Тn}: {k} + {r} = {n}.",
+        имя_с_с="{Xде} {Рб} has {k} {Тk}. how many {Тмн} does {Xде} {Рб} have? {Xде} {Рб} has {k} {Тk}.",
         факт="{X} has {n} {Тn}. how many {Тмн} does {X} have? {n}.",
         без_данных="how many {Тмн} does {X} have? I do not know: how many {Тмн} {X} has is not said.",
         собрал_у="{X} collected {n} {Тn}. {Он} lost {k} of them. how many {Тмн} does {X} have left? {r}: {n} − {k} = {r}.",
@@ -129,6 +154,12 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         доля="у {Xр} {n} {Тn}. {ДОЛЯ} из них — {ЦП}. сколько из них {ЦП}? {r}: {n} ÷ {q} = {r}.",
         доля_не="у {Xр} {n} {Тn}. {ДОЛЯ} из них — {ЦП}. сколько из них не {ЦП}? шаг 1: {n} ÷ {q} = {r}. шаг 2: {n} − {r} = {d}. итог: {d}.",
         возраст_имя="{Xд} {n} {Гn}. сколько лет будет {Xд} через {k} {Гk}? {Xд} будет {s} {Гs}: {n} + {k} = {s}.",
+        его_вещи="у {Xр} {n} {Тn}. у {Рр} {k} {Тk}. сколько {Тмн} у {Xр}? у {Xр} {n} {Тn}.",
+        вместе_их="у {Xр} {n} {Тn}. у {Рр} {k} {Тk}. сколько {Тмн} у них вместе? вместе у них {s} {Тs}: {n} + {k} = {s}.",
+        дал_ему="у {Xр} было {n} {Тn}. {Y} дал{аY} {ему} {k} {Тk}. сколько {Тмн} у {Xр} теперь? у {Xр} {s} {Тs}: {n} + {k} = {s}.",
+        купил_у_него="у {Xр} было {n} {Тn}. у {Yр} тоже были. {Он} купил{а} у {негоY} {k} {Тk}. сколько {Тмн} у {Xр} теперь? у {Xр} {s} {Тs}: {n} + {k} = {s}.",
+        оставив_ему="{X} отдал{а} {k} {Тk} {Yд}, и у {него} осталось {r} {Тr}. сколько {Тмн} было у {Xр} сначала? у {Xр} было {n} {Тn}: {k} + {r} = {n}.",
+        имя_с_с="у {Рб} {Xде} {k} {Тk}. сколько {Тмн} у {Рб} {Xде}? у {Рб} {Xде} {k} {Тk}.",
         факт="у {Xр} {n} {Тn}. сколько {Тмн} у {Xр}? {n}.",
         без_данных="сколько {Тмн} у {Xр}? не знаю: сколько {Тмн} у {Xр}, не сказано.",
         собрал_у="{X} собрал{а} {n} {Тn}. {Он} потерял{а} {k} из них. сколько {Тмн} у {Xр} осталось? {r}: {n} − {k} = {r}.",
@@ -175,6 +206,12 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         доля="{X} hat {n} {Тn}. {ДОЛЯ} davon ist {ЦП}. wie viele davon sind {ЦП}? {r}: {n} ÷ {q} = {r}.",
         доля_не="{X} hat {n} {Тn}. {ДОЛЯ} davon ist {ЦП}. wie viele davon sind nicht {ЦП}? Schritt 1: {n} ÷ {q} = {r}. Schritt 2: {n} − {r} = {d}. Ergebnis: {d}.",
         возраст_имя="{X} ist {n} {Гn} alt. wie alt wird {X} in {k} {Гk} sein? {X} wird {s} {Гs} alt sein: {n} + {k} = {s}.",
+        его_вещи="{X} hat {n} {Тn}. {Р} hat {k} {Тk}. wie viele {Тмн} hat {X}? {X} hat {n} {Тn}.",
+        вместе_их="{X} hat {n} {Тn}. {Р} hat {k} {Тk}. wie viele {Тмн} haben {они} zusammen? zusammen haben {они} {s} {Тs}: {n} + {k} = {s}.",
+        дал_ему="{X} hatte {n} {Тn}. {Y} gab {ему} {k} {Тk}. wie viele {Тмн} hat {X} jetzt? {X} hat {s} {Тs}: {n} + {k} = {s}.",
+        купил_у_него="{X} hatte {n} {Тn}. {Y} hatte auch welche. {Он} kaufte {k} {Тk} von {негоY}. wie viele {Тмн} hat {X} jetzt? {X} hat {s} {Тs}: {n} + {k} = {s}.",
+        оставив_ему="{X} gab {Y} {k} {Тk}, womit {ему} {r} {Тr} blieben. wie viele {Тмн} hatte {X} zuerst? {X} hatte {n} {Тn}: {k} + {r} = {n}.",
+        имя_с_с="{Рб} {Xде} hat {k} {Тk}. wie viele {Тмн} hat {Рб} {Xде}? {Рб} {Xде} hat {k} {Тk}.",
         факт="{X} hat {n} {Тn}. wie viele {Тмн} hat {X}? {n}.",
         без_данных="wie viele {Тмн} hat {X}? ich weiß es nicht: wie viele {Тмн} {X} hat, ist nicht gesagt.",
         собрал_у="{X} sammelte {n} {Тn}. {Он} verlor {k} davon. wie viele {Тмн} hat {X} noch? {r}: {n} − {k} = {r}.",
@@ -199,6 +236,12 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         доля="{X} a {n} {Тn}. {ДОЛЯ} sont {ЦП}. combien sont {ЦП} ? {r} : {n} ÷ {q} = {r}.",
         доля_не="{X} a {n} {Тn}. {ДОЛЯ} sont {ЦП}. combien ne sont pas {ЦП} ? étape 1 : {n} ÷ {q} = {r}. étape 2 : {n} − {r} = {d}. total : {d}.",
         возраст_имя="{X} a {n} {Гn}. quel âge aura {X} dans {k} {Гk} ? {X} aura {s} {Гs} : {n} + {k} = {s}.",
+        его_вещи="{X} a {n} {Тn}. {Р} a {k} {Тk}. combien de {Тмн} a {X} ? {X} a {n} {Тn}.",
+        вместе_их="{X} a {n} {Тn}. {Р} a {k} {Тk}. combien de {Тмн} ont-{они} ensemble ? ensemble {они} ont {s} {Тs} : {n} + {k} = {s}.",
+        дал_ему="{X} avait {n} {Тn}. {Y} {ему} a donné {k} {Тk}. combien de {Тмн} a {X} maintenant ? {X} a {s} {Тs} : {n} + {k} = {s}.",
+        купил_у_него="{X} avait {n} {Тn}. {Y} en avait aussi. {Он} {емуY} a acheté {k} {Тk}. combien de {Тмн} a {X} maintenant ? {X} a {s} {Тs} : {n} + {k} = {s}.",
+        оставив_ему="{X} a donné {k} {Тk} à {Y}, ce qui {ему} laisse {r} {Тr}. combien de {Тмн} avait {X} au début ? {X} avait {n} {Тn} : {k} + {r} = {n}.",
+        имя_с_с="{Рб} {Xде} a {k} {Тk}. combien de {Тмн} a {Рб} {Xде} ? {Рб} {Xде} a {k} {Тk}.",
         факт="{X} a {n} {Тn}. combien de {Тмн} a {X} ? {n}.",
         без_данных="combien de {Тмн} a {X} ? je ne sais pas : combien de {Тмн} a {X} n'est pas dit.",
         собрал_у="{X} a ramassé {n} {Тn}. {Он} en a perdu {k}. combien de {Тмн} reste-t-il à {X} ? {r} : {n} − {k} = {r}.",
@@ -223,6 +266,12 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         доля="{X} tiene {n} {Тn}. {ДОЛЯ} de {ellas} son {ЦП}. ¿{кск} son {ЦП}? {r}: {n} ÷ {q} = {r}.",
         доля_не="{X} tiene {n} {Тn}. {ДОЛЯ} de {ellas} son {ЦП}. ¿{кск} no son {ЦП}? paso 1: {n} ÷ {q} = {r}. paso 2: {n} − {r} = {d}. total: {d}.",
         возраст_имя="{X} tiene {n} {Гn}. ¿cuántos años tendrá {X} dentro de {k} {Гk}? {X} tendrá {s} {Гs}: {n} + {k} = {s}.",
+        его_вещи="{X} tiene {n} {Тn}. {Р} tiene {k} {Тk}. ¿{кск} {Тмн} tiene {X}? {X} tiene {n} {Тn}.",
+        вместе_их="{X} tiene {n} {Тn}. {Р} tiene {k} {Тk}. ¿{кск} {Тмн} tienen {вместе}? {вместе} tienen {s} {Тs}: {n} + {k} = {s}.",
+        дал_ему="{X} tenía {n} {Тn}. {Y} {ему} dio {k} {Тk}. ¿{кск} {Тмн} tiene {X} ahora? {X} tiene {s} {Тs}: {n} + {k} = {s}.",
+        купил_у_него="{X} tenía {n} {Тn}. {Y} también tenía. {Он} {емуY} compró {k} {Тk}. ¿{кск} {Тмн} tiene {X} ahora? {X} tiene {s} {Тs}: {n} + {k} = {s}.",
+        оставив_ему="{X} dio {k} {Тk} a {Y}, lo que {ему} deja {r} {Тr}. ¿{кск} {Тмн} tenía {X} al principio? {X} tenía {n} {Тn}: {k} + {r} = {n}.",
+        имя_с_с="{Рб} {Xде} tiene {k} {Тk}. ¿{кск} {Тмн} tiene {Рб} {Xде}? {Рб} {Xде} tiene {k} {Тk}.",
         факт="{X} tiene {n} {Тn}. ¿{кск} {Тмн} tiene {X}? {n}.",
         без_данных="¿{кск} {Тмн} tiene {X}? no lo sé: no se dice {кск} {Тмн} tiene {X}.",
         собрал_у="{X} recogió {n} {Тn}. perdió {k}. ¿qué cantidad de {Тмн} le queda a {X}? {r}: {n} − {k} = {r}.",
@@ -247,6 +296,12 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         доля="{X} ha {n} {Тn}. {ДОЛЯ} sono {ЦП}. {quante} sono {ЦП}? {r}: {n} ÷ {q} = {r}.",
         доля_не="{X} ha {n} {Тn}. {ДОЛЯ} sono {ЦП}. {quante} non sono {ЦП}? passo 1: {n} ÷ {q} = {r}. passo 2: {n} − {r} = {d}. totale: {d}.",
         возраст_имя="{X} ha {n} {Гn}. quanti anni avrà {X} tra {k} {Гk}? {X} avrà {s} {Гs}: {n} + {k} = {s}.",
+        его_вещи="{X} ha {n} {Тn}. {Р} ha {k} {Тk}. {quante} {Тмн} ha {X}? {X} ha {n} {Тn}.",
+        вместе_их="{X} ha {n} {Тn}. {Р} ha {k} {Тk}. {quante} {Тмн} hanno insieme? insieme hanno {s} {Тs}: {n} + {k} = {s}.",
+        дал_ему="{X} aveva {n} {Тn}. {Y} {ему} ha dato {k} {Тk}. {quante} {Тмн} ha {X} adesso? {X} ha {s} {Тs}: {n} + {k} = {s}.",
+        купил_у_него="{X} aveva {n} {Тn}. anche {Y} ne aveva. {Он} {емуY} ha comprato {k} {Тk}. {quante} {Тмн} ha {X} adesso? {X} ha {s} {Тs}: {n} + {k} = {s}.",
+        оставив_ему="{X} ha dato {k} {Тk} a {Y}, il che {ему} lascia {r} {Тr}. {quante} {Тмн} aveva {X} all'inizio? {X} aveva {n} {Тn}: {k} + {r} = {n}.",
+        имя_с_с="{Рб} {Xде} ha {k} {Тk}. {quante} {Тмн} ha {Рб} {Xде}? {Рб} {Xде} ha {k} {Тk}.",
         факт="{X} ha {n} {Тn}. {quante} {Тмн} ha {X}? {n}.",
         без_данных="{quante} {Тмн} ha {X}? non lo so: non è detto {quante} {Тмн} ha {X}.",
         собрал_у="{X} ha raccolto {n} {Тn}. ha perso {k} {Тk}. che quantità di {Тмн} resta a {X}? {r}: {n} − {k} = {r}.",
@@ -271,6 +326,12 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         доля="{X} tem {n} {Тn}. {ДОЛЯ} são {ЦП}. {quantas} são {ЦП}? {r}: {n} ÷ {q} = {r}.",
         доля_не="{X} tem {n} {Тn}. {ДОЛЯ} são {ЦП}. {quantas} não são {ЦП}? passo 1: {n} ÷ {q} = {r}. passo 2: {n} − {r} = {d}. total: {d}.",
         возраст_имя="{X} tem {n} {Гn}. quantos anos terá {X} daqui a {k} {Гk}? {X} terá {s} {Гs}: {n} + {k} = {s}.",
+        его_вещи="{X} tem {n} {Тn}. {Р} tem {k} {Тk}. {quantas} {Тмн} tem {X}? {X} tem {n} {Тn}.",
+        вместе_их="{X} tem {n} {Тn}. {Р} tem {k} {Тk}. {quantas} {Тмн} têm {вместе}? {вместе} têm {s} {Тs}: {n} + {k} = {s}.",
+        дал_ему="{X} tinha {n} {Тn}. {Y} deu-{ему} {k} {Тk}. {quantas} {Тмн} tem {X} agora? {X} tem {s} {Тs}: {n} + {k} = {s}.",
+        купил_у_него="{X} tinha {n} {Тn}. {Y} também tinha. {Он} comprou-{емуY} {k} {Тk}. {quantas} {Тмн} tem {X} agora? {X} tem {s} {Тs}: {n} + {k} = {s}.",
+        оставив_ему="{X} deu {k} {Тk} {Yд}, o que {ему} deixa {r} {Тr}. {quantas} {Тмн} tinha {X} no início? {X} tinha {n} {Тn}: {k} + {r} = {n}.",
+        имя_с_с="{Рб} {Xде} tem {k} {Тk}. {quantas} {Тмн} tem {Рб} {Xде}? {Рб} {Xде} tem {k} {Тk}.",
         факт="{X} tem {n} {Тn}. {quantas} {Тмн} tem {X}? {n}.",
         без_данных="{quantas} {Тмн} tem {X}? não sei: não é dito {quantas} {Тмн} tem {X}.",
         собрал_у="{X} apanhou {n} {Тn}. perdeu {k}. que quantidade de {Тмн} resta {Xд}? {r}: {n} − {k} = {r}.",
@@ -296,6 +357,12 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         доля="{X} heeft {n} {Тn}. {ДОЛЯ} daarvan is {ЦП}. hoeveel daarvan zijn {ЦП}? {r}: {n} ÷ {q} = {r}.",
         доля_не="{X} heeft {n} {Тn}. {ДОЛЯ} daarvan is {ЦП}. hoeveel daarvan zijn niet {ЦП}? stap 1: {n} ÷ {q} = {r}. stap 2: {n} − {r} = {d}. totaal: {d}.",
         возраст_имя="{X} is {n} {Гn} oud. hoe oud is {X} over {k} {Гk}? {X} is dan {s} {Гs} oud: {n} + {k} = {s}.",
+        его_вещи="{X} heeft {n} {Тn}. {Р} heeft {k} {Тk}. hoeveel {Тмн} heeft {X}? {X} heeft {n} {Тn}.",
+        вместе_их="{X} heeft {n} {Тn}. {Р} heeft {k} {Тk}. hoeveel {Тмн} hebben {они} samen? samen hebben {они} {s} {Тs}: {n} + {k} = {s}.",
+        дал_ему="{X} had {n} {Тn}. {Y} gaf {ему} {k} {Тk}. hoeveel {Тмн} heeft {X} nu? {X} heeft {s} {Тs}: {n} + {k} = {s}.",
+        купил_у_него="{X} had {n} {Тn}. {Y} had er ook. {Он} kocht {k} {Тk} van {негоY}. hoeveel {Тмн} heeft {X} nu? {X} heeft {s} {Тs}: {n} + {k} = {s}.",
+        оставив_ему="{X} gaf {k} {Тk} aan {Y}, waardoor {ему} {r} {Тr} overbleven. hoeveel {Тмн} had {X} eerst? {X} had {n} {Тn}: {k} + {r} = {n}.",
+        имя_с_с="{Рб} {Xде} heeft {k} {Тk}. hoeveel {Тмн} heeft {Рб} {Xде}? {Рб} {Xде} heeft {k} {Тk}.",
         факт="{X} heeft {n} {Тn}. hoeveel {Тмн} heeft {X}? {n}.",
         без_данных="hoeveel {Тмн} heeft {X}? ik weet het niet: hoeveel {Тмн} {X} heeft, is niet gezegd.",
         собрал_у="{X} verzamelde {n} {Тn}. {он} verloor er {k}. hoeveel {Тмн} heeft {X} nog? {r}: {n} − {k} = {r}.",
@@ -320,6 +387,12 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         доля="{X} ma {n} {Тn}. {ДОЛЯ} z nich to {ЦП}. ile z nich to {ЦП}? {r}: {n} ÷ {q} = {r}.",
         доля_не="{X} ma {n} {Тn}. {ДОЛЯ} z nich to {ЦП}. ile z nich to nie {ЦП}? krok 1: {n} ÷ {q} = {r}. krok 2: {n} − {r} = {d}. razem: {d}.",
         возраст_имя="{X} ma {n} {Гn}. ile lat będzie mieć {X} za {k} {Гk}? {X} będzie mieć {s} {Гs}: {n} + {k} = {s}.",
+        его_вещи="{X} ma {n} {Тn}. {Р} ma {k} {Тk}. ile {Тмн} ma {X}? {X} ma {n} {Тn}.",
+        вместе_их="{X} ma {n} {Тn}. {Р} ma {k} {Тk}. ile {Тмн} mają razem? razem mają {s} {Тs}: {n} + {k} = {s}.",
+        дал_ему="{X} miał{а} {n} {Тn}. {Y} dał{аY} {ему} {k} {Тk}. ile {Тмн} ma {X} teraz? {X} ma {s} {Тs}: {n} + {k} = {s}.",
+        купил_у_него="{X} miał{а} {n} {Тn}. {Y} też miał{аY}. {Он} kupił{а} od {негоY} {k} {Тk}. ile {Тмн} ma {X} teraz? {X} ma {s} {Тs}: {n} + {k} = {s}.",
+        оставив_ему="{X} dał{а} {Yд} {k} {Тk}, co zostawiło {ему} {r} {Тr}. ile {Тмн} miał{а} {X} na początku? {X} miał{а} {n} {Тn}: {k} + {r} = {n}.",
+        имя_с_с="{Рб} {Xде} ma {k} {Тk}. ile {Тмн} ma {Рб} {Xде}? {Рб} {Xде} ma {k} {Тk}.",
         факт="{X} ma {n} {Тn}. ile {Тмн} ma {X}? {n}.",
         без_данных="ile {Тмн} ma {X}? nie wiem: nie powiedziano, ile {Тмн} ma {X}.",
         собрал_у="{X} zebrał{а} {n} {Тn}. zgubił{а} {k} z nich. ile {Тмн} zostało {Xд}? {r}: {n} − {k} = {r}.",
@@ -329,7 +402,7 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         время="{В1} {X} miał{а} {n} {Тn}. {В2} dostał{а} jeszcze {k}. ile {Тмн} ma teraz? {s}: {n} + {k} = {s}.",
         кому="{X} miał{а} {n} {Тn}. oddał{а} {k} {Тk} {Yд}. ile {Тмн} ma {X} teraz? {r}: {n} − {k} = {r}."),
 })
-ФОРМЫ = ("некоторые", "итог", "итог_всего", "осталось", "из_них", "ему", "если", "если_придут", "время", "кому", "у_него", "единица", "товар", "потерял", "купил_ещё", "собрал_у", "три", "три_шаги", "факт", "без_данных", "владеет", "владеет2", "владеет_после", "держит", "хранит", "доля", "доля_не", "возраст_имя")
+ФОРМЫ = ("некоторые", "итог", "итог_всего", "осталось", "из_них", "ему", "если", "если_придут", "время", "кому", "у_него", "единица", "товар", "потерял", "купил_ещё", "собрал_у", "три", "три_шаги", "факт", "без_данных", "владеет", "владеет2", "владеет_после", "держит", "хранит", "доля", "доля_не", "возраст_имя", "его_вещи", "вместе_их", "дал_ему", "купил_у_него", "оставив_ему", "имя_с_с")
 # the unit before the number is an English shape of the band; Russian writes «3 ₽» after — declared gap
 ОБЪЯВЛЕННЫЕ_ПРОПУСКИ = {"единица": frozenset({"ru"}),
                        # «possess» — второй английский глагол владения; у других языков один
@@ -338,6 +411,8 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
                        # держащими голосом страниц — ответ полным предложением с леджером ±)
                        "держит": frozenset({"ru", "de", "fr", "es", "it", "pt", "nl", "pl"}),
                        "хранит": frozenset({"ru", "de", "fr", "es", "it", "pt", "nl", "pl"})}
+# TWO HOLDERS, ONE BEARER ASKED: the answer repeats the FIRST holder's number, not the parent's
+ОТВЕТ_ПЕРВОГО = frozenset({"его_вещи"})
 ЧИСЛА = ((12, 5), (20, 8), (15, 6), (9, 4), (30, 12), (25, 7), (18, 11), (40, 15))
 ЦЕНЫ = ((3, 4), (2, 5), (6, 3), (5, 5))
 _ДАТ = None
@@ -365,6 +440,22 @@ def _дательный_pt(лицо):
     return ("à " if лицо[1] == "f" else "ao ") + лицо[0].split(" ", 1)[1]
 
 
+def _имя_чьё(язык, X):
+    """THE NAME'S POSSESSIVE — one surface per language: en «Ann's», ru the genitive, de/nl «von/van»,
+    es «de», it «di», fr «de» with the elision before a vowel («d'Anne», «d'Hugo»), pt the article
+    contracted («do João», «da Ana»), pl the genitive declared by the house."""
+    имя = X[0]
+    if язык == "en": return имя + "'s"
+    if язык == "ru": return X[2]
+    if язык == "de": return "von " + имя
+    if язык == "nl": return "van " + имя
+    if язык == "es": return "de " + имя
+    if язык == "it": return "di " + имя
+    if язык == "fr": return ("d'" if имя[0] in "AEIOUHÉÈaeiouhéè" else "de ") + имя
+    if язык == "pt": return "d" + имя
+    return РОДИТЕЛЬНЫЙ_PL.get(имя, имя)
+
+
 def _поля(язык, i, j, Т, n, k, форма):
     X, Y = _лицо(язык, i), _лицо(язык, j)
     if Y[0] == X[0]:
@@ -388,6 +479,10 @@ def _поля(язык, i, j, Т, n, k, форма):
     for дыра, (м_, ж_) in РОДОВЫЕ.get(язык, {}).items():
         п[дыра] = м_ if род == "m" else ж_
     п["_род"] = род
+    # THE OTHER PERSON'S PRONOUNS (Y), the parent and the pair by X's gender, the name's possessive
+    мY = МЕСТОИМЕНИЯ[язык][Y[1]]
+    п.update(Yр=Y[2], онY=мY["он"], негоY=мY["него"], емуY=мY["ему"], Xде=_имя_чьё(язык, X))
+    п.update(РОДНЯ[язык][X[1]])
     return п
 
 
@@ -515,6 +610,10 @@ def _образцы():
                 "Г1a": alt(товары), "Г2b": alt(товары), "Г3мн": alt(товары), "Г3s": alt(товары)}
         for дыра, пара in РОДОВЫЕ.get(язык, {}).items():
             дыры[дыра] = alt(пара)
+        дыры.update({"Yр": alt(род), "онY": alt(мест), "негоY": alt(мест), "емуY": alt(мест),
+                     "Xде": alt(_имя_чьё(язык, _лицо(язык, i)) for i in range(len(A.ЛИЦА[язык])))})
+        for ключ in {к for г in РОДНЯ[язык].values() for к in г}:
+            дыры[ключ] = alt(г.get(ключ) for г in РОДНЯ[язык].values())
         for форма, рамки_формы in рамки.items():
             поверхности = list(рамки_формы if isinstance(рамки_формы, tuple) else (рамки_формы,))
             if not isinstance(рамки_формы, tuple) and близнец(рамки_формы):
@@ -965,6 +1064,8 @@ def судить(строка):
                     # the holding names the same bearer as the question — a refusal about
                     # another person is a lie, not a holding
                     return True, (not в_ответе) and _имена_в(язык, история) == _имена_в(язык, ответ)
+                if форма in ОТВЕТ_ПЕРВОГО:
+                    return True, в_ответе == [int(x) for x in re.findall(r"\d+", история)][:1]
                 return True, bool(в_ответе) and all(x in в_истории for x in в_ответе)
             м3 = ЛЕДЖЕР3.search(с)
             if м3:
@@ -1039,7 +1140,18 @@ def _самопроверка():
         подмена = б0[:б0.index("? ") + 2] + б1[б1.index("? ") + 2:]     # удержание о другом носителе
         assert судить(подмена) == (True, False), подмена
         мутанты += 4
-    for форма in ("некоторые", "итог", "из_них", "если", "время", "кому", "единица", "товар", "три_шаги", "факт", "без_данных"):
+    # мутанты поссессивов: ответ числом родителя, чужое число у родителя имени
+    for язык in РАМКИ:
+        е = страница(язык, "его_вещи", 0, 1, 0, 12, 5)
+        assert судить(е) == (True, True), е
+        голова, ответ = е.rsplit("? ", 1)
+        assert судить(голова + "? " + ответ.replace("12", "5")) == (True, False), е
+        и = страница(язык, "имя_с_с", 0, 1, 0, 12, 5)
+        assert судить(и) == (True, True), и
+        голова, ответ = и.rsplit("? ", 1)
+        assert судить(голова + "? " + ответ.replace("5", "6")) == (True, False), и
+        мутанты += 2
+    for форма in ("некоторые", "итог", "из_них", "если", "время", "кому", "единица", "товар", "три_шаги", "факт", "без_данных", "вместе_их", "купил_у_него", "оставив_ему", "имя_с_с"):
         print("  ", страница("en", форма, 0, 1, 0, 12, 5))
     for форма in ("некоторые", "из_них", "кому", "товар"):
         print("  ", страница("ru", форма, 2, 3, 1, 12, 5))
