@@ -560,10 +560,28 @@ def _живые_строки(путь):
 
 
 def _джобы():
+    """Workers for the gate — declared, then bounded by the machine's LOAD.
+
+    THE MACHINE IS SHARED (05.09: four forges of a canon point died with EXIT=137 — jetsam
+    on an exhausted swap, 42 of 45 GB, while three readers, a node server and a build held
+    memory beside them). A gate that always takes half the cores is a good citizen only on an
+    idle machine; under load it becomes the last straw. So the default halves the cores and
+    then yields to the load average: a machine already running more jobs than it has cores
+    gets one worker, not eight. GENESIS_JOBS, when declared, is obeyed — the caller knows.
+    """
     з = os.environ.get("GENESIS_JOBS")
     if з and з.isdigit() and int(з) > 0:
         return int(з)
-    return max(1, (os.cpu_count() or 2) // 2)
+    ядер = os.cpu_count() or 2
+    сколько = max(1, ядер // 2)
+    try:
+        нагрузка = os.getloadavg()[0]
+    except (OSError, AttributeError):
+        return сколько
+    if нагрузка > ядер:
+        return 1
+    свободно = int(max(0, ядер - нагрузка))
+    return max(1, min(сколько, свободно))
 
 
 def _границы(всего, jobs):
