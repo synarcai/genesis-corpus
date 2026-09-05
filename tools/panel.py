@@ -33,8 +33,10 @@
 
 import importlib
 import inspect
+import os
 import pathlib
 import sys
+from concurrent.futures import ProcessPoolExecutor
 
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 for _где in (КОРЕНЬ / "courts", КОРЕНЬ / "tools", КОРЕНЬ / "scripts"):
@@ -218,7 +220,9 @@ for _где in (КОРЕНЬ / "courts", КОРЕНЬ / "tools", КОРЕНЬ / 
            # ТРАНЗИТИВНОСТЬ как проверяемый ВЫВОД — первый в корпусе показ, где
            # третья строка не факт, а следствие двух первых
            "scale_court",
-           "metalang_court")
+           "metalang_court",
+           # ДЕРЖАНИЯ БЕЗ ГЛАГОЛА (05.09, первый показ «только рамками»)
+           "holdforms_court")
 
 
 def _взять(модуль):
@@ -493,20 +497,88 @@ class Палата:
         return {имя for имя, суд in self.суды.items()
                 if род_текста(суд) != род}
 
-    def судить_файл(self, путь):
-        """[(строка, судимо, истинно, кем)] по всему файлу."""
+    def судить_файл(self, путь, jobs=None):
+        """[(строка, судимо, истинно, кем)] по всему файлу.
+
+        МАНДАТ ДИАГНОСТИКИ: ПЕТЛЯ МИНУТАМИ, НЕ ЧАСАМИ. The gate judged every
+        world in ONE thread by all 124 courts — a 4 378-show world crossed the
+        gate in ~5 minutes, the 38 000-line bilingual school world far longer,
+        and the point's suite waited on each. A line does not depend on a line:
+        the file is split into equal chunks of NON-EMPTY lines, each judged in
+        its own process (spawn on macOS → the worker builds its own palata once
+        and lazily, as scripts/prose_court.py::_палата_рабочего does), and the
+        chunks are welded back IN ORDER. The verdict is IDENTICAL to the single
+        thread: same (строка, судимо, истинно, кем), the same courts in the same
+        order — because every worker builds the file's LAYERS over the WHOLE file
+        (Слой.впитать, episode ставки/итоги read the entire file) and judges only
+        its own lines. Jobs default: GENESIS_JOBS, else half the cores; a file
+        under the threshold, or jobs = 1, walks the old single-thread path.
+        """
         путь = pathlib.Path(путь)
+        строки = _живые_строки(путь)
+        if jobs is None:
+            jobs = _джобы()
+        if jobs > 1 and len(строки) > ПАРАЛЛЕЛЬ_ПОРОГ:
+            границы = _границы(len(строки), jobs)
+            задачи = [(str(путь), a, b) for a, b in границы]
+            вон = []
+            with ProcessPoolExecutor(max_workers=jobs) as пул:
+                for кусок in пул.map(_судить_кусок, задачи):
+                    вон.extend(кусок)
+            return вон
         слои = self.слои(путь)
         пласт = self.пласт_файла(путь)
-        вон = []
-        with путь.open(encoding="utf-8", errors="replace") as поток:
-            for строка in поток:
-                if not строка.strip():
-                    continue
-                судимо, истинно, кем = self.судить(строка, слои,
-                                                    пласт)
-                вон.append((строка.rstrip("\n"), судимо, истинно, кем))
-        return вон
+        return [(с, *self.судить(с, слои, пласт)) for с in строки]
+
+
+# СТРОКИ, КОТОРЫЕ СУДЯТСЯ — непустые, с тем же отсевом, что был в судить_файл
+# (пустая строка пропускается, хвостовой перевод строки снят). Один закон резки
+# у родителя (чтобы посчитать и поделить) и у рабочего (чтобы взять свой ломоть) —
+# иначе диапазоны разошлись бы, и параллель солгала бы о порядке.
+def _живые_строки(путь):
+    вон = []
+    with pathlib.Path(путь).open(encoding="utf-8", errors="replace") as поток:
+        for строка in поток:
+            if not строка.strip():
+                continue
+            вон.append(строка.rstrip("\n"))
+    return вон
+
+
+# ПОРОГ РАСПАРАЛЛЕЛИВАНИЯ: ниже него накладные расходы спавна (каждый рабочий
+# строит палату заново — суды дороги при загрузке) не окупаются.
+ПАРАЛЛЕЛЬ_ПОРОГ = 2000
+
+
+def _джобы():
+    з = os.environ.get("GENESIS_JOBS")
+    if з and з.isdigit() and int(з) > 0:
+        return int(з)
+    return max(1, (os.cpu_count() or 2) // 2)
+
+
+def _границы(всего, jobs):
+    """`jobs` смежных диапазонов [начало, конец) по непустым строкам, почти равных."""
+    jobs = max(1, min(jobs, всего))
+    шаг, остаток = divmod(всего, jobs)
+    границы, начало = [], 0
+    for i in range(jobs):
+        длина = шаг + (1 if i < остаток else 0)
+        границы.append((начало, начало + длина))
+        начало += длина
+    return границы
+
+
+def _судить_кусок(аргс):
+    """Один ломоть файла в одном процессе: палата строится лениво (одна на процесс),
+    слои и пласт — по ЦЕЛОМУ файлу, судятся только строки [начало, конец)."""
+    путь, начало, конец = аргс
+    п = палата()
+    путь_p = pathlib.Path(путь)
+    слои = п.слои(путь_p)
+    пласт = п.пласт_файла(путь_p)
+    строки = _живые_строки(путь_p)
+    return [(с, *п.судить(с, слои, пласт)) for с in строки[начало:конец]]
 
 
 _ПАЛАТА = None
