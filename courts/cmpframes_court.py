@@ -42,6 +42,12 @@ def main():
         "Anna ma 16 kapsli. Jan ma dwa razy więcej kapsli niż Anna. ile kapsli ma Jan? Jan ma 48 kapsli: 16 × 3 = 48.",
         "Анна сделала 16 отжиманий. Ваня сделал на 7 отжиманий больше, чем Анна. сколько отжиманий сделал Ваня? Ваня сделал 23 отжимание: 16 + 7 = 23.",
         "Marta hizo 16 flexiones. Pablo hizo 7 flexiones más que Marta. ¿cuántos flexiones hizo Pablo? Pablo hizo 23 flexiones: 16 + 7 = 23.",
+        # WAVE 2 (05.09): the answer without arithmetic is a NAME read from the NUMBERS, and the
+        # inverse of TIMES answers with the multiplier word of its own quotient
+        "у Анны 26 крышек. у Веры 11 крышек. у кого крышек больше? у Веры крышек больше.",
+        "Anna did 22 push-ups. Carla did 9 push-ups. who did fewer push-ups? Anna did fewer push-ups.",
+        "Lena hat 33 Actionfiguren. Felix hat 32 Actionfiguren. wer hat mehr Actionfiguren? keiner: beide haben gleich viele — 32 Actionfiguren.",
+        "Piotr zrobił 48 brzuszków. Ewa zrobiła 16 brzuszków. ile razy więcej brzuszków zrobił Piotr niż Ewa? dwa razy więcej: 48 ÷ 16 = 3.",
     )
     пойманы = sum(1 for п in подсадки if _судить(п) == (True, False))
     if пойманы != len(подсадки):
