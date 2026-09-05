@@ -458,7 +458,7 @@ def _показы():
         "ш": r"(?P<ш>\d+)"}
 
 
-def _образец(шаблон, видены=None):
+def _образец(шаблон, видены=None, суффикс=""):
     """A frame becomes a regex: every hole is named ONCE; a repeated hole
     becomes a back-reference, so «{c} … {c}» must carry the same number.
     The set of seen holes is shared between the question and the answer
@@ -470,25 +470,39 @@ def _образец(шаблон, видены=None):
             имя = кусок[1:-1]
             if имя in ("IL", "DEL", "IM"):
                 куски.append(ДЫРЫ[имя])
-            elif имя in видены:
-                куски.append(f"(?P={имя})")
+            elif имя + суффикс in видены:
+                куски.append(f"(?P={имя + суффикс})")
             else:
-                видены.add(имя); куски.append(ДЫРЫ[имя])
+                # a suffix renames the holes of a second branch: an imperative and its
+                # question twin live in ONE pattern, and the judge matches their numbers
+                видены.add(имя + суффикс); куски.append(ДЫРЫ[имя].replace(f"(?P<{имя}>", f"(?P<{имя + суффикс}>"))
         else:
             куски.append(re.escape(кусок))
     return "".join(куски)
+
+
+# imperative → its question twin: one genus, one pattern, two branches (the width
+# of asking counts a pattern without a question surface as a debt)
+БЛИЗНЕЦЫ = {"между": "между_воп", "повтори": "повтори_воп"}
 
 
 def _образцы():
     вон = []
     for язык, формы in ЯЗЫКИ.items():
         for форма, я in формы.items():
+            if форма in БЛИЗНЕЦЫ.values():
+                continue                       # lives inside its imperative's pattern
             for k, ответ in enumerate(я[1:]):
                 # one pattern over the whole page: the hole of the question and the
                 # hole of the answer are the SAME hole, and a back-reference binds them
                 между = "(?: " + re.escape(ВОПРОС_ПОСЛЕ[язык]) + ")?" if форма in ПОВЕЛЕНИЯ else ""
                 общие = set()
-                образ = re.compile("^" + _образец(я[0], общие) + между + " " + _образец(ответ, общие) + "$")
+                if форма in БЛИЗНЕЦЫ:
+                    близнец = формы[БЛИЗНЕЦЫ[форма]][0]
+                    вопрос = "(?:" + _образец(я[0], общие) + "|" + _образец(близнец, общие, "_2") + ")"
+                    образ = re.compile("^" + вопрос + " " + _образец(ответ, set(), "_3") + "$")
+                else:
+                    образ = re.compile("^" + _образец(я[0], общие) + между + " " + _образец(ответ, общие) + "$")
                 вон.append((образ, язык, форма, k))
     return вон
 
@@ -504,6 +518,14 @@ def судить(строка):
         if not м:
             continue
         г = {к: (int(v) if v.isdigit() else v) for к, v in м.groupdict().items() if v is not None}
+        if форма in БЛИЗНЕЦЫ:
+            # the branch that matched carries the question's numbers; the answer's own
+            # holes («_3») must agree with them
+            вопрос = {(к[:-2] if к.endswith("_2") else к): v for к, v in г.items() if not к.endswith("_3")}
+            ответ = {к[:-2]: v for к, v in г.items() if к.endswith("_3")}
+            if any(ключ in ответ and ответ[ключ] != вопрос[ключ] for ключ in вопрос):
+                return True, False
+            г = dict(ответ, **вопрос)
         return True, _верно(форма, k, г, язык)
     return False, False
 
