@@ -1,0 +1,87 @@
+# BESEDA-6 — ШЕСТАЯ ПОЛОСА БЕСЕДЫ: чем человек проверяет, что собеседник ВИДИТ ПОРЯДОК.
+#
+# Пятая полоса дала ход, а не таблицу. Эта спрашивает порядок: действия по старшинству, продолжение
+# ряда, лишнее среди трёх, наибольшее из трёх, удвоение, слово наоборот, вчерашний день от
+# названного сегодняшнего, извинение. Девять языков; строка «вопрос ||| подстрока ожидаемого
+# ответа»; без «|||» — довольно того, чтобы ответ был и был обоснован.
+#
+# GENUS: ORDER-OF-OPS
+сколько будет 2 + 3 × 4? ||| 14
+what is 2 + 3 × 4? ||| 14
+wie viel ist 2 + 3 × 4? ||| 14
+combien font 2 + 3 × 4 ? ||| 14
+¿cuánto es 2 + 3 × 4? ||| 14
+quanto fa 2 + 3 × 4? ||| 14
+quanto é 2 + 3 × 4? ||| 14
+hoeveel is 2 + 3 × 4? ||| 14
+ile jest 2 + 3 × 4? ||| 14
+# GENUS: SEQUENCE-NEXT
+продолжи ряд: 2, 4, 6, ? ||| 8
+continue the sequence: 2, 4, 6, ? ||| 8
+setze die Folge fort: 2, 4, 6, ? ||| 8
+continue la suite : 2, 4, 6, ? ||| 8
+continúa la serie: 2, 4, 6, ? ||| 8
+continua la sequenza: 2, 4, 6, ? ||| 8
+continua a sequência: 2, 4, 6, ? ||| 8
+ga verder met de reeks: 2, 4, 6, ? ||| 8
+kontynuuj ciąg: 2, 4, 6, ? ||| 8
+# GENUS: ODD-ONE-OUT
+что лишнее: кошка, собака, стол? ||| стол
+which is the odd one out: a cat, a dog, a table? ||| table
+was passt nicht dazu: eine Katze, ein Hund, ein Tisch? ||| Tisch
+lequel est l'intrus : un chat, un chien, une table ? ||| table
+¿cuál no encaja: un gato, un perro, una mesa? ||| mesa
+qual è l'intruso: un gatto, un cane, un tavolo? ||| tavolo
+qual é o intruso: um gato, um cão, uma mesa? ||| mesa
+wat hoort er niet bij: een kat, een hond, een tafel? ||| tafel
+co nie pasuje: kot, pies, stół? ||| stół
+# GENUS: GREATEST-OF-THREE
+какое число самое большое: 3, 9 или 5? ||| 9
+which number is the greatest: 3, 9 or 5? ||| 9
+welche Zahl ist die größte: 3, 9 oder 5? ||| 9
+quel est le plus grand nombre : 3, 9 ou 5 ? ||| 9
+¿cuál es el número más grande: 3, 9 o 5? ||| 9
+qual è il numero più grande: 3, 9 o 5? ||| 9
+qual é o maior número: 3, 9 ou 5? ||| 9
+welk getal is het grootste: 3, 9 of 5? ||| 9
+która liczba jest największa: 3, 9 czy 5? ||| 9
+# GENUS: DOUBLE
+сколько будет вдвое больше 6? ||| 12
+what is twice 6? ||| 12
+was ist das Doppelte von 6? ||| 12
+combien fait le double de 6 ? ||| 12
+¿cuánto es el doble de 6? ||| 12
+quanto fa il doppio di 6? ||| 12
+quanto é o dobro de 6? ||| 12
+wat is het dubbele van 6? ||| 12
+ile to podwojone 6? ||| 12
+# GENUS: REVERSE-WORD
+скажи слово «кот» наоборот. ||| ток
+say the word "cat" backwards. ||| tac
+sag das Wort „Hund“ rückwärts. ||| dnuH
+dis le mot « chat » à l'envers. ||| tahc
+di la palabra «gato» al revés. ||| otag
+di' la parola «gatto» al contrario. ||| ottag
+diz a palavra «gato» ao contrário. ||| otag
+zeg het woord "kat" achterstevoren. ||| tak
+powiedz słowo „kot” od tyłu. ||| tok
+# GENUS: YESTERDAY
+сегодня среда. какой день был вчера? ||| вторник
+today is wednesday. what day was yesterday? ||| tuesday
+heute ist Mittwoch. welcher Tag war gestern? ||| Dienstag
+aujourd'hui c'est mercredi. quel jour était-ce hier ? ||| mardi
+hoy es miércoles. ¿qué día fue ayer? ||| martes
+oggi è mercoledì. che giorno era ieri? ||| martedì
+hoje é quarta-feira. que dia foi ontem? ||| terça
+vandaag is het woensdag. welke dag was het gisteren? ||| dinsdag
+dziś jest środa. jaki dzień był wczoraj? ||| wtorek
+# GENUS: SORRY
+извини, я ошибся. ||| ничего
+sorry, i made a mistake. ||| never mind
+entschuldige, ich habe mich geirrt. ||| macht nichts
+pardon, je me suis trompé. ||| grave
+perdona, me he equivocado. ||| pasa nada
+scusa, ho sbagliato. ||| fa niente
+desculpa, enganei-me. ||| faz mal
+sorry, ik heb me vergist. ||| geeft niet
+przepraszam, pomyliłem się. ||| nic nie szkodzi
