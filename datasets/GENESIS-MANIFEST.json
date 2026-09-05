@@ -1178,6 +1178,23 @@
       "text": "shows"
     },
     {
+      "name": "episodeforms",
+      "file": "datasets/genesis_episodeforms.txt",
+      "genre": "THE EPISODE — a TAPE of acts over one state (05.09, the agent architecture, the first market): three acts in a row and the question about the state after the whole tape; the question about the state after the SECOND step (the ledger's prefix); which act moved the count most — answered by the act, and the tape where TWO acts moved it EQUALLY is shown beside it, so that «the first maximum» is not bought as a law; the tape holding a reading, which changes nothing, and the question how many acts DID change the count; the tape whose end is smaller than its beginning, answered by both numbers. Acts and their words are the tool house — one declaration, several readers (tools/episodeforms.py). CLOSED world.",
+      "act": [
+        "recount",
+        "decide"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
       "name": "cmpframes",
       "file": "datasets/genesis_cmpframes.txt",
       "genre": "FRAMES OF COMPARISON — the largest class of the reader's lies on the held-out key (05.09: twelve of fifteen — «9 flexiones más que», «in più/in meno di», «meer/minder dan», «więcej/mniej niż»: the marker is not bought and the answer takes a neighbouring number). Four frames on nine languages over two bearer groups (a deed done and a holding held): more by N, fewer by N, twice/three times as many, and the reverse question «by how many more». The answer is a full sentence with the bearer, the number and the thing, then the ledger; the sign of the ledger is a hole, and «more» with a minus is a lie BY SIGN. Bearers, goods and count forms from the action-pages house and the packs; multiplicity words, Slavic past-tense gender and the gender of es/it/pt goods declared here (tools/cmpframes.py). CLOSED world.",
