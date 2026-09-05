@@ -1,0 +1,87 @@
+# BESEDA-9 — ДЕВЯТАЯ ПОЛОСА БЕСЕДЫ: чем человек проверяет, что собеседник РАССУЖДАЕТ.
+#
+# Восемь полос спрашивали о мире, числе, языках и самом собеседнике. Эта спрашивает вывод: силлогизм
+# вопросом «да/нет», отрицание в сравнении, ноль в счёте, дни в двух неделях, минуты в двух часах,
+# делёж поровну, половина от половины, задача от первого лица. Девять языков; строка «вопрос |||
+# подстрока ожидаемого ответа»; без «|||» — довольно того, чтобы ответ был и был обоснован.
+#
+# GENUS: SYLLOGISM-YN
+если все кошки — животные, а Мурка — кошка, то Мурка — животное? ||| да
+if all cats are animals and Tom is a cat, is Tom an animal? ||| yes
+wenn alle Katzen Tiere sind und Mia eine Katze ist, ist Mia dann ein Tier? ||| ja
+si tous les chats sont des animaux et que Minou est un chat, Minou est-il un animal ? ||| oui
+si todos los gatos son animales y Tom es un gato, ¿es Tom un animal? ||| sí
+se tutti i gatti sono animali e Tom è un gatto, Tom è un animale? ||| sì
+se todos os gatos são animais e o Tom é um gato, o Tom é um animal? ||| sim
+als alle katten dieren zijn en Tom een kat is, is Tom dan een dier? ||| ja
+jeśli wszystkie koty są zwierzętami, a Filemon jest kotem, to czy Filemon jest zwierzęciem? ||| tak
+# GENUS: NOT-BIGGER
+верно ли, что 7 не больше 5? ||| нет
+is it true that 7 is not bigger than 5? ||| no
+stimmt es, dass 7 nicht größer als 5 ist? ||| nein
+est-il vrai que 7 n'est pas plus grand que 5 ? ||| non
+¿es verdad que 7 no es mayor que 5? ||| no
+è vero che 7 non è maggiore di 5? ||| no
+é verdade que 7 não é maior do que 5? ||| não
+is het waar dat 7 niet groter is dan 5? ||| nee
+czy to prawda, że 7 nie jest większe od 5? ||| nie
+# GENUS: ZERO
+сколько будет 0 + 5? ||| 5
+what is 0 + 5? ||| 5
+wie viel ist 0 + 5? ||| 5
+combien font 0 + 5 ? ||| 5
+¿cuánto es 0 + 5? ||| 5
+quanto fa 0 + 5? ||| 5
+quanto é 0 + 5? ||| 5
+hoeveel is 0 + 5? ||| 5
+ile jest 0 + 5? ||| 5
+# GENUS: TWO-WEEKS
+сколько дней в двух неделях? ||| 14
+how many days are there in two weeks? ||| 14
+wie viele Tage haben zwei Wochen? ||| 14
+combien de jours y a-t-il dans deux semaines ? ||| 14
+¿cuántos días tienen dos semanas? ||| 14
+quanti giorni hanno due settimane? ||| 14
+quantos dias têm duas semanas? ||| 14
+hoeveel dagen hebben twee weken? ||| 14
+ile dni mają dwa tygodnie? ||| 14
+# GENUS: HOURS-TO-MINUTES
+сколько минут в 2 часах? ||| 120
+how many minutes are there in 2 hours? ||| 120
+wie viele Minuten haben 2 Stunden? ||| 120
+combien de minutes y a-t-il dans 2 heures ? ||| 120
+¿cuántos minutos tienen 2 horas? ||| 120
+quanti minuti hanno 2 ore? ||| 120
+quantos minutos têm 2 horas? ||| 120
+hoeveel minuten hebben 2 uur? ||| 120
+ile minut mają 2 godziny? ||| 120
+# GENUS: SHARE-EQUALLY
+раздели 10 на 2 поровну. ||| 5
+share 10 equally between 2. ||| 5
+teile 10 gleichmäßig durch 2. ||| 5
+partage 10 en 2 parts égales. ||| 5
+reparte 10 en 2 partes iguales. ||| 5
+dividi 10 in 2 parti uguali. ||| 5
+divide 10 em 2 partes iguais. ||| 5
+verdeel 10 gelijk over 2. ||| 5
+podziel 10 na 2 równe części. ||| 5
+# GENUS: HALF-OF-HALF
+сколько будет половина от половины 8? ||| 2
+what is half of half of 8? ||| 2
+was ist die Hälfte von der Hälfte von 8? ||| 2
+combien fait la moitié de la moitié de 8 ? ||| 2
+¿cuánto es la mitad de la mitad de 8? ||| 2
+quanto fa la metà della metà di 8? ||| 2
+quanto é a metade da metade de 8? ||| 2
+wat is de helft van de helft van 8? ||| 2
+ile to połowa z połowy z 8? ||| 2
+# GENUS: FIRST-PERSON-STORY
+у меня 3 яблока. я съем 1. сколько останется? ||| 2
+i have 3 apples. i eat 1. how many are left? ||| 2
+ich habe 3 Äpfel. ich esse 1. wie viele bleiben übrig? ||| 2
+j'ai 3 pommes. j'en mange 1. combien en reste-t-il ? ||| 2
+tengo 3 manzanas. me como 1. ¿cuántas quedan? ||| 2
+ho 3 mele. ne mangio 1. quante ne restano? ||| 2
+tenho 3 maçãs. como 1. quantas ficam? ||| 2
+ik heb 3 appels. ik eet er 1 op. hoeveel blijven er over? ||| 2
+mam 3 jabłka. zjem 1. ile zostanie? ||| 2
