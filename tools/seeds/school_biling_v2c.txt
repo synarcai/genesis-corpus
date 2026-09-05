@@ -3240,7 +3240,7 @@ graph TD; A-->B; B-->C;
 A ведёт к B.
 graph TD; A-->B; B-->C; C-->D;
 graph TD; A-->B;
-the letter x is read as x.
+the letter x is read as ex.
 start --> work; work --> end;
 graph TD; A-->B;
 знак > читается как больше.
@@ -3366,10 +3366,10 @@ z + x = x + z.
 graph TD; A-->B;
 graph TD; A-->B; B-->C; A-->C;
 the sign ( is read as open bracket.
-the letter y is read as y.
+the letter y is read as wy.
 graph TD; A-->B; B-->C; C-->D;
 the sum does not depend on the order.
-the letter y is read as y.
+the letter y is read as wy.
 знак < читается как меньше.
 graph TD; A-->B;
 x + y = y + x.
@@ -3428,7 +3428,7 @@ A ведёт к B. B ведёт к C. C ведёт к D. A ведёт к D.
 A leads to B. B leads to C. A leads to C.
 (x + y) + z = x + (y + z).
 the word graph is read as diagram.
-the letter x is read as x.
+the letter x is read as ex.
 graph TD; A-->B;
 A ведёт к B. B ведёт к C. C ведёт к D. A ведёт к D.
 start --> work; work --> end;
@@ -3755,7 +3755,7 @@ graph TD; A-->B; B-->C;
 graph TD; A-->B; B-->C; A-->C;
 x × (y + z) = x × y + x × z.
 graph TD; A-->B;
-the letter y is read as y.
+the letter y is read as wy.
 graph TD; A-->B; B-->C; C-->D;
 x × (y + z) = x × y + x × z.
 graph TD; A-->B; B-->C; C-->D;
@@ -3813,7 +3813,7 @@ A ведёт к B. B ведёт к C.
 8 + 2 = 2 + 8.
 x × (y + z) = x × y + x × z.
 A leads to B. B leads to C. C leads to D.
-the letter x is read as x.
+the letter x is read as ex.
 graph TD; A-->B; B-->C; C-->D;
 x plus y equals y plus x.
 стрелка --> читается как ведёт к.
@@ -3889,14 +3889,14 @@ A leads to B. B leads to C.
 A leads to B.
 A leads to B. B leads to C. C leads to D. A leads to D.
 x × (y + z) = x × y + x × z.
-the letter y is read as y.
+the letter y is read as wy.
 y + x = x + y.
 graph TD; A-->B; B-->C; C-->D; A-->D;
 z + y = y + z.
 8 + 2 = 2 + 8.
 graph TD; A-->B; B-->C; C-->D;
 A ведёт к B.
-the letter x is read as x.
+the letter x is read as ex.
 A ведёт к B. B ведёт к C.
 the sum does not depend on the order.
 A ведёт к B.
@@ -7225,7 +7225,7 @@ A leads to B. B leads to C. C leads to D.
 A leads to B.
 стрелка --> читается как ведёт к.
 graph TD; A-->B;
-the letter x is read as x.
+the letter x is read as ex.
 z + x = x + z.
 graph TD; A-->B;
 A leads to B.
@@ -7425,7 +7425,7 @@ x × z = z × x.
 the sum does not depend on the order.
 the sign > is read as greater than.
 y + x = x + y.
-the letter y is read as y.
+the letter y is read as wy.
 (x + y) + z = x + (y + z).
 A ведёт к B.
 graph TD; A-->B;
@@ -7461,7 +7461,7 @@ graph TD; A-->B; B-->C; C-->D; A-->D;
 graph TD; A-->B; B-->C; C-->D;
 3 + 3 = 3 + 3.
 1 < 5.
-the letter y is read as y.
+the letter y is read as wy.
 A ведёт к B. B ведёт к C. C ведёт к D.
 знак < читается как меньше.
 start --> work; work --> end;
@@ -7569,7 +7569,7 @@ A ведёт к B. B ведёт к C. C ведёт к D.
 A ведёт к B.
 graph TD; A-->B;
 graph TD; A-->B; B-->C; A-->C;
-the letter x is read as x.
+the letter x is read as ex.
 A leads to B.
 A ведёт к B. B ведёт к C. C ведёт к D.
 graph TD; A-->B;
@@ -7800,7 +7800,7 @@ A ведёт к B. B ведёт к C. C ведёт к D.
 знак < читается как меньше.
 x × z = z × x.
 graph TD; A-->B; B-->C; C-->D;
-the letter y is read as y.
+the letter y is read as wy.
 A leads to B.
 (x + y) + z = x + (y + z).
 z × x = x × z.
@@ -7891,7 +7891,7 @@ graph TD; A-->B; B-->C;
 graph TD; A-->B; B-->C; A-->C;
 9 < 12.
 A leads to B.
-the letter y is read as y.
+the letter y is read as wy.
 A leads to B.
 x × (y + z) = x × y + x × z.
 graph TD; A-->B; B-->C; A-->C;
@@ -7955,7 +7955,7 @@ A leads to B. B leads to C.
 8 + 2 = 2 + 8.
 graph TD; A-->B; B-->C; C-->D; A-->D;
 A leads to B. B leads to C. C leads to D.
-the letter x is read as x.
+the letter x is read as ex.
 2 + 5 = 5 + 2.
 the arrow --> is read as leads to.
 A ведёт к B. B ведёт к C. C ведёт к D.
@@ -8073,7 +8073,7 @@ x + z = z + x.
 graph TD; A-->B; B-->C; A-->C;
 graph TD; A-->B;
 graph TD; A-->B;
-the letter x is read as x.
+the letter x is read as ex.
 A ведёт к B. B ведёт к C. C ведёт к D.
 A leads to B. B leads to C. A leads to C.
 x × y = y × x.
@@ -11405,7 +11405,7 @@ the sign > is read as greater than.
 9 + 4 = 4 + 9.
 A leads to B.
 graph TD; A-->B; B-->C; C-->D; A-->D;
-the letter x is read as x.
+the letter x is read as ex.
 start --> work; work --> end;
 A ведёт к B. B ведёт к C. C ведёт к D.
 сумма не зависит от порядка слагаемых.
@@ -11475,7 +11475,7 @@ graph TD; A-->B;
 A ведёт к B.
 the sign > is read as greater than.
 9 + 6 = 6 + 9.
-the letter x is read as x.
+the letter x is read as ex.
 8 < 11.
 вход --> обработка; обработка --> выход;
 graph TD; A-->B; B-->C;
@@ -11577,7 +11577,7 @@ graph TD; A-->B; B-->C; C-->D;
 graph TD; A-->B; B-->C; C-->D;
 graph TD; A-->B;
 graph TD; A-->B; B-->C; C-->D;
-the letter y is read as y.
+the letter y is read as wy.
 graph TD; A-->B; B-->C;
 the word graph is read as diagram.
 знак ) читается как скобка закрывается.
@@ -11856,7 +11856,7 @@ graph TD; A-->B; B-->C;
 5 + 9 = 9 + 5.
 A ведёт к B.
 graph TD; A-->B; B-->C;
-the letter x is read as x.
+the letter x is read as ex.
 1 < 2.
 x plus y equals y plus x.
 graph TD; A-->B; B-->C; A-->C;
@@ -11990,8 +11990,8 @@ graph TD; A-->B; B-->C;
 graph TD; A-->B; B-->C; C-->D;
 A ведёт к B.
 graph TD; A-->B; B-->C; C-->D;
-the letter y is read as y.
-the letter x is read as x.
+the letter y is read as wy.
+the letter x is read as ex.
 A leads to B. B leads to C. C leads to D.
 graph TD; A-->B;
 A leads to B. B leads to C. C leads to D.
@@ -12067,7 +12067,7 @@ z × x = x × z.
 знак < читается как меньше.
 знак ( читается как скобка открывается.
 the word graph is read as diagram.
-the letter y is read as y.
+the letter y is read as wy.
 y + x = x + y.
 A ведёт к B. B ведёт к C.
 x × (y + z) = x × y + x × z.
@@ -12133,7 +12133,7 @@ A leads to B. B leads to C.
 graph TD; A-->B; B-->C; C-->D;
 A ведёт к B. B ведёт к C. C ведёт к D. A ведёт к D.
 graph TD; A-->B; B-->C; C-->D;
-the letter y is read as y.
+the letter y is read as wy.
 A ведёт к B.
 8 < 12.
 A leads to B. B leads to C.
@@ -15373,7 +15373,7 @@ start --> work; work --> end;
 start --> work; work --> end;
 9 < 11.
 8 < 12.
-the letter x is read as x.
+the letter x is read as ex.
 A leads to B. B leads to C. A leads to C.
 the sign ( is read as open bracket.
 A ведёт к B. B ведёт к C. C ведёт к D. A ведёт к D.
@@ -15456,7 +15456,7 @@ A ведёт к B.
 знак ( читается как скобка открывается.
 икс плюс игрек равно игрек плюс икс.
 z + x = x + z.
-the letter x is read as x.
+the letter x is read as ex.
 x plus y equals y plus x.
 A ведёт к B. B ведёт к C. C ведёт к D.
 the sum does not depend on the order.
@@ -15676,7 +15676,7 @@ y + x = x + y.
 graph TD; A-->B;
 A ведёт к B.
 6 < 8.
-the letter y is read as y.
+the letter y is read as wy.
 A ведёт к B.
 graph TD; A-->B; B-->C; C-->D; A-->D;
 A leads to B. B leads to C. A leads to C.
@@ -15707,7 +15707,7 @@ z + x = x + z.
 икс плюс игрек равно игрек плюс икс.
 1 + 3 = 3 + 1.
 the sign ) is read as close bracket.
-the letter y is read as y.
+the letter y is read as wy.
 x × (y + z) = x × y + x × z.
 9 < 12.
 знак ( читается как скобка открывается.
@@ -15739,7 +15739,7 @@ A ведёт к B. B ведёт к C.
 A ведёт к B. B ведёт к C.
 A ведёт к B.
 graph TD; A-->B; B-->C; C-->D;
-the letter x is read as x.
+the letter x is read as ex.
 1 < 2.
 graph TD; A-->B;
 graph TD; A-->B;
@@ -15754,7 +15754,7 @@ x plus y equals y plus x.
 A ведёт к B. B ведёт к C.
 A ведёт к B. B ведёт к C. A ведёт к C.
 graph TD; A-->B; B-->C; C-->D;
-the letter x is read as x.
+the letter x is read as ex.
 y + x = x + y.
 graph TD; A-->B;
 graph TD; A-->B;
@@ -15821,7 +15821,7 @@ A ведёт к B.
 graph TD; A-->B; B-->C; C-->D;
 z + y = y + z.
 x + y = y + x.
-the letter y is read as y.
+the letter y is read as wy.
 вход --> обработка; обработка --> выход;
 graph TD; A-->B; B-->C; C-->D;
 graph TD; A-->B;
@@ -15872,7 +15872,7 @@ graph TD; A-->B; B-->C; C-->D;
 7 + 2 = 2 + 7.
 A ведёт к B. B ведёт к C.
 graph TD; A-->B; B-->C; A-->C;
-the letter y is read as y.
+the letter y is read as wy.
 z + x = x + z.
 A leads to B. B leads to C. C leads to D. A leads to D.
 start --> work; work --> end;
@@ -19449,7 +19449,7 @@ A ведёт к B.
 A ведёт к B. B ведёт к C. C ведёт к D.
 graph TD; A-->B; B-->C; C-->D;
 A leads to B. B leads to C. C leads to D.
-the letter x is read as x.
+the letter x is read as ex.
 the sum does not depend on the order.
 graph TD; A-->B; B-->C; A-->C;
 A leads to B. B leads to C. C leads to D.
@@ -19613,7 +19613,7 @@ A ведёт к B. B ведёт к C. C ведёт к D.
 x + y = y + x.
 2 + 6 = 6 + 2.
 A leads to B. B leads to C. C leads to D.
-the letter y is read as y.
+the letter y is read as wy.
 слово graph читается как схема.
 graph TD; A-->B; B-->C; C-->D; A-->D;
 graph TD; A-->B;
@@ -19621,7 +19621,7 @@ x × y = y × x.
 A ведёт к B. B ведёт к C. C ведёт к D.
 A ведёт к B. B ведёт к C. C ведёт к D.
 A ведёт к B. B ведёт к C. C ведёт к D. A ведёт к D.
-the letter y is read as y.
+the letter y is read as wy.
 graph TD; A-->B; B-->C; A-->C;
 A ведёт к B. B ведёт к C. C ведёт к D. A ведёт к D.
 A ведёт к B. B ведёт к C. C ведёт к D.
@@ -19726,7 +19726,7 @@ graph TD; A-->B; B-->C; C-->D;
 graph TD; A-->B; B-->C; C-->D;
 z × x = x × z.
 A ведёт к B. B ведёт к C.
-the letter y is read as y.
+the letter y is read as wy.
 A leads to B. B leads to C. C leads to D.
 знак ( читается как скобка открывается.
 x + y = y + x.
@@ -19899,7 +19899,7 @@ graph TD; A-->B; B-->C; A-->C;
 A ведёт к B. B ведёт к C. C ведёт к D.
 graph TD; A-->B; B-->C; C-->D;
 A leads to B. B leads to C. C leads to D.
-the letter y is read as y.
+the letter y is read as wy.
 the word graph is read as diagram.
 graph TD; A-->B;
 A ведёт к B.
@@ -19975,7 +19975,7 @@ x × (y + z) = x × y + x × z.
 the sum does not depend on the order.
 graph TD; A-->B; B-->C; C-->D; A-->D;
 A ведёт к B. B ведёт к C. A ведёт к C.
-the letter x is read as x.
+the letter x is read as ex.
 A leads to B. B leads to C.
 A ведёт к B.
 8 < 10.
@@ -20008,7 +20008,7 @@ the sign > is read as greater than.
 graph TD; A-->B;
 знак > читается как больше.
 x × (y + z) = x × y + x × z.
-the letter x is read as x.
+the letter x is read as ex.
 3 + 1 = 1 + 3.
 graph TD; A-->B;
 A ведёт к B.
@@ -20026,7 +20026,7 @@ graph TD; A-->B; B-->C; C-->D; A-->D;
 graph TD; A-->B; B-->C; C-->D; A-->D;
 A ведёт к B. B ведёт к C. C ведёт к D.
 A leads to B.
-the letter x is read as x.
+the letter x is read as ex.
 A ведёт к B.
 x × (y + z) = x × y + x × z.
 the sign < is read as less than.
