@@ -25,6 +25,10 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 # {r} their difference, {h} the half, {ряд} the row «1, 2, 3»
 ЯЗЫКИ = {
     "ru": dict(
+        ряд_дальше=("продолжи ряд: {a}, {b}, {c}, ?", "{d}: шаг {ш}."),
+        наибольшее=("какое число самое большое: {a}, {b} или {c}?", "{m}."),
+        наименьшее=("какое число самое маленькое: {a}, {b} или {c}?", "{m}."),
+        вдвое=("сколько будет вдвое больше {n}?", "{d}: {n} × 2 = {d}."),
         пропуск=("{a} + ? = {s}. какое число пропущено?", "{k}: {s} − {a} = {k}."),
         больше_ли=("{c} больше {d}?", "да: {c} − {d} = {r}."),
         больше_ли_нет=("{d} больше {c}?", "нет, {d} меньше {c}: {c} − {d} = {r}."),
@@ -41,6 +45,10 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
         чёт=("{n} — чётное или нечётное число?", "чётное: {n} = 2 × {h}.", "нечётное: {n} = 2 × {h} + 1."),
     ),
     "en": dict(
+        ряд_дальше=("continue the sequence: {a}, {b}, {c}, ?", "{d}: the step is {ш}."),
+        наибольшее=("which number is the greatest: {a}, {b} or {c}?", "{m}."),
+        наименьшее=("which number is the smallest: {a}, {b} or {c}?", "{m}."),
+        вдвое=("what is twice {n}?", "{d}: {n} × 2 = {d}."),
         пропуск=("{a} + ? = {s}. what number is missing?", "{k}: {s} − {a} = {k}."),
         больше_ли=("is {c} bigger than {d}?", "yes: {c} − {d} = {r}."),
         больше_ли_нет=("is {d} bigger than {c}?", "no, {d} is smaller than {c}: {c} − {d} = {r}."),
@@ -58,6 +66,10 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
         чёт=("is {n} an even or an odd number?", "even: {n} = 2 × {h}.", "odd: {n} = 2 × {h} + 1."),
     ),
     "de": dict(
+        ряд_дальше=("setze die Folge fort: {a}, {b}, {c}, ?", "{d}: der Schritt ist {ш}."),
+        наибольшее=("welche Zahl ist die größte: {a}, {b} oder {c}?", "{m}."),
+        наименьшее=("welche Zahl ist die kleinste: {a}, {b} oder {c}?", "{m}."),
+        вдвое=("was ist das Doppelte von {n}?", "{d}: {n} × 2 = {d}."),
         пропуск=("{a} + ? = {s}. welche Zahl fehlt?", "{k}: {s} − {a} = {k}."),
         больше_ли=("ist {c} größer als {d}?", "ja: {c} − {d} = {r}."),
         больше_ли_нет=("ist {d} größer als {c}?", "nein, {d} ist kleiner als {c}: {c} − {d} = {r}."),
@@ -74,6 +86,10 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
         чёт=("ist {n} eine gerade oder eine ungerade Zahl?", "gerade: {n} = 2 × {h}.", "ungerade: {n} = 2 × {h} + 1."),
     ),
     "fr": dict(
+        ряд_дальше=("continue la suite : {a}, {b}, {c}, ?", "{d} : le pas est {ш}."),
+        наибольшее=("quel est le plus grand nombre : {a}, {b} ou {c} ?", "{m}."),
+        наименьшее=("quel est le plus petit nombre : {a}, {b} ou {c} ?", "{m}."),
+        вдвое=("combien fait le double de {n} ?", "{d} : {n} × 2 = {d}."),
         пропуск=("{a} + ? = {s}. quel nombre manque ?", "{k} : {s} − {a} = {k}."),
         больше_ли=("{c} est-il plus grand que {d} ?", "oui : {c} − {d} = {r}."),
         больше_ли_нет=("{d} est-il plus grand que {c} ?", "non, {d} est plus petit que {c} : {c} − {d} = {r}."),
@@ -90,6 +106,10 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
         чёт=("{n} est-il un nombre pair ou impair ?", "pair : {n} = 2 × {h}.", "impair : {n} = 2 × {h} + 1."),
     ),
     "es": dict(
+        ряд_дальше=("continúa la serie: {a}, {b}, {c}, ?", "{d}: el paso es {ш}."),
+        наибольшее=("¿cuál es el número más grande: {a}, {b} o {c}?", "{m}."),
+        наименьшее=("¿cuál es el número más pequeño: {a}, {b} o {c}?", "{m}."),
+        вдвое=("¿cuánto es el doble de {n}?", "{d}: {n} × 2 = {d}."),
         пропуск=("{a} + ? = {s}. ¿qué número falta?", "{k}: {s} − {a} = {k}."),
         больше_ли=("¿{c} es mayor que {d}?", "sí: {c} − {d} = {r}."),
         больше_ли_нет=("¿{d} es mayor que {c}?", "no, {d} es menor que {c}: {c} − {d} = {r}."),
@@ -107,6 +127,10 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
         чёт=("¿{n} es un número par o impar?", "par: {n} = 2 × {h}.", "impar: {n} = 2 × {h} + 1."),
     ),
     "it": dict(
+        ряд_дальше=("continua la sequenza: {a}, {b}, {c}, ?", "{d}: il passo è {ш}."),
+        наибольшее=("qual è il numero più grande: {a}, {b} o {c}?", "{m}."),
+        наименьшее=("qual è il numero più piccolo: {a}, {b} o {c}?", "{m}."),
+        вдвое=("quanto fa il doppio di {n}?", "{d}: {n} × 2 = {d}."),
         пропуск=("{a} + ? = {s}. quale numero manca?", "{k}: {s} − {a} = {k}."),
         больше_ли=("{c} è maggiore di {d}?", "sì: {c} − {d} = {r}."),
         больше_ли_нет=("{d} è maggiore di {c}?", "no, {d} è minore di {c}: {c} − {d} = {r}."),
@@ -124,6 +148,10 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
         чёт=("{n} è un numero pari o dispari?", "pari: {n} = 2 × {h}.", "dispari: {n} = 2 × {h} + 1."),
     ),
     "pt": dict(
+        ряд_дальше=("continua a sequência: {a}, {b}, {c}, ?", "{d}: o passo é {ш}."),
+        наибольшее=("qual é o maior número: {a}, {b} ou {c}?", "{m}."),
+        наименьшее=("qual é o menor número: {a}, {b} ou {c}?", "{m}."),
+        вдвое=("quanto é o dobro de {n}?", "{d}: {n} × 2 = {d}."),
         пропуск=("{a} + ? = {s}. que número falta?", "{k}: {s} − {a} = {k}."),
         больше_ли=("{c} é maior do que {d}?", "sim: {c} − {d} = {r}."),
         больше_ли_нет=("{d} é maior do que {c}?", "não, {d} é menor do que {c}: {c} − {d} = {r}."),
@@ -141,6 +169,10 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
         чёт=("{n} é um número par ou ímpar?", "par: {n} = 2 × {h}.", "ímpar: {n} = 2 × {h} + 1."),
     ),
     "nl": dict(
+        ряд_дальше=("ga verder met de reeks: {a}, {b}, {c}, ?", "{d}: de stap is {ш}."),
+        наибольшее=("welk getal is het grootste: {a}, {b} of {c}?", "{m}."),
+        наименьшее=("welk getal is het kleinste: {a}, {b} of {c}?", "{m}."),
+        вдвое=("wat is het dubbele van {n}?", "{d}: {n} × 2 = {d}."),
         пропуск=("{a} + ? = {s}. welk getal ontbreekt?", "{k}: {s} − {a} = {k}."),
         больше_ли=("is {c} groter dan {d}?", "ja: {c} − {d} = {r}."),
         больше_ли_нет=("is {d} groter dan {c}?", "nee, {d} is kleiner dan {c}: {c} − {d} = {r}."),
@@ -157,6 +189,10 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
         чёт=("is {n} een even of een oneven getal?", "even: {n} = 2 × {h}.", "oneven: {n} = 2 × {h} + 1."),
     ),
     "pl": dict(
+        ряд_дальше=("kontynuuj ciąg: {a}, {b}, {c}, ?", "{d}: krok wynosi {ш}."),
+        наибольшее=("która liczba jest największa: {a}, {b} czy {c}?", "{m}."),
+        наименьшее=("która liczba jest najmniejsza: {a}, {b} czy {c}?", "{m}."),
+        вдвое=("ile to podwojone {n}?", "{d}: {n} × 2 = {d}."),
         пропуск=("{a} + ? = {s}. jakiej liczby brakuje?", "{k}: {s} − {a} = {k}."),
         больше_ли=("czy {c} jest większe od {d}?", "tak: {c} − {d} = {r}."),
         больше_ли_нет=("czy {d} jest większe od {c}?", "nie, {d} jest mniejsze od {c}: {c} − {d} = {r}."),
@@ -175,7 +211,11 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 }
 
 ФОРМЫ = ("после", "перед", "больше", "меньше", "счёт", "обратно", "чёт", "на_сколько", "словом", "половина", "возраст",
-         "пропуск", "больше_ли", "больше_ли_нет")
+         "пропуск", "больше_ли", "больше_ли_нет", "ряд_дальше", "наибольшее", "наименьшее", "вдвое")
+# SIXTH BAND (05.09): the sequence continued by its step, the greatest and the
+# smallest of three, the double
+РЯДЫ = ((2, 2), (1, 1), (3, 3), (5, 1), (1, 2), (10, 2), (4, 3), (2, 1))      # (first term, step)
+ТРОЙКИ_ЧИСЕЛ = ((3, 9, 5), (7, 2, 4), (12, 15, 11), (8, 1, 6), (20, 14, 17), (5, 10, 2), (9, 3, 6), (13, 18, 16))
 # THE MISSING ADDEND (fifth band, 05.09): «3 + ? = 5. what number is missing? 2: 5 − 3 = 2.»
 # — a hole in the equation, answered by the inverse operation
 ПРОПУСКИ = ((3, 2), (5, 4), (7, 3), (2, 6), (9, 1), (4, 4), (6, 7), (8, 5))
@@ -232,8 +272,15 @@ def _it(n):
             "dell'" if n in _ГЛАСНЫЕ_IT else "del ")
 
 
-def _поля(n=None, m=None, a=None, b=None, ряд=None, язык=None, k=None, год_нужен=True):
+def _поля(n=None, m=None, a=None, b=None, ряд=None, язык=None, k=None, год_нужен=True, ш=None, тройка=None, форма=None):
     п = {}
+    if ш is not None:
+        return dict(a=a, b=a + ш, c=a + 2 * ш, d=a + 3 * ш, ш=ш)
+    if тройка is not None:
+        a_, b_, c_ = тройка
+        return dict(a=a_, b=b_, c=c_, m=(max if форма == "наибольшее" else min)(тройка))
+    if форма == "вдвое":
+        return dict(n=n, d=2 * n)
     if n is not None:
         п.update(n=n, m=m, h=n // 2, IL=_it(n)[0], DEL=_it(n)[1])
         if язык is not None:
@@ -266,7 +313,7 @@ import taskforms as _T
 
 def страница(язык, форма, вопросом=False, **чем):
     я = ЯЗЫКИ[язык][форма]
-    п = _поля(язык=язык, год_нужен=(форма == "возраст"), **чем)
+    п = _поля(язык=язык, год_нужен=(форма == "возраст"), форма=форма, **чем)
     if форма == "словом" and п.get("N") is None:
         return None            # numeral not declared by the pack — no page
     if форма == "чёт":
@@ -325,6 +372,13 @@ def _показы():
             c, d = max(a, b), min(a, b)
             вон[страница(язык, "больше_ли", a=c, b=d)] = (язык, "больше_ли")
             вон[страница(язык, "больше_ли_нет", a=c, b=d)] = (язык, "больше_ли_нет")
+        for a, ш in РЯДЫ:
+            вон[страница(язык, "ряд_дальше", a=a, ш=ш)] = (язык, "ряд_дальше")
+        for т3 in ТРОЙКИ_ЧИСЕЛ:
+            вон[страница(язык, "наибольшее", тройка=т3)] = (язык, "наибольшее")
+            вон[страница(язык, "наименьшее", тройка=т3)] = (язык, "наименьшее")
+        for n in range(1, ВЕРХ + 1):
+            вон[страница(язык, "вдвое", n=n)] = (язык, "вдвое")
     return вон
 
 
@@ -334,7 +388,8 @@ def _показы():
         "c": r"(?P<c>\d+)", "d": r"(?P<d>\d+)", "r": r"(?P<r>\d+)", "h": r"(?P<h>\d+)",
         "ряд": r"(?P<ряд>\d+(?:, \d+)+)", "IL": r"(?:il |l')", "DEL": r"(?:del |dell')", "IM": r"(?:il |l')",
         "k": r"(?P<k>\d+)", "s": r"(?P<s>\d+)", "N": r"(?P<N>[^\W\d_]+(?:[ -][^\W\d_]+)*)",
-        "Га": r"(?P<Га>[^\W\d_]+)", "Гk": r"(?P<Гk>[^\W\d_]+)", "Гs": r"(?P<Гs>[^\W\d_]+)"}
+        "Га": r"(?P<Га>[^\W\d_]+)", "Гk": r"(?P<Гk>[^\W\d_]+)", "Гs": r"(?P<Гs>[^\W\d_]+)",
+        "ш": r"(?P<ш>\d+)"}
 
 
 def _образец(шаблон, видены=None):
@@ -388,6 +443,14 @@ def судить(строка):
 
 
 def _верно(форма, k, г, язык):
+    if форма == "ряд_дальше":
+        a, b, c, d, ш = г["a"], г["b"], г["c"], г["d"], г["ш"]
+        return ш >= 1 and b - a == ш and c - b == ш and d - c == ш
+    if форма in ("наибольшее", "наименьшее"):
+        тройка = (г["a"], г["b"], г["c"])
+        return len(set(тройка)) == 3 and г["m"] == (max if форма == "наибольшее" else min)(тройка)
+    if форма == "вдвое":
+        return г["d"] == 2 * г["n"]
     if форма == "пропуск":
         return г["s"] == г["a"] + г["k"]
     if форма in ("больше_ли", "больше_ли_нет"):
