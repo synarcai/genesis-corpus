@@ -35,7 +35,7 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
                "es": {"m": dict(он="él", него="él", ему="le"), "f": dict(он="ella", него="ella", ему="le")},
                "it": {"m": dict(он="lui", него="lui", ему="gli"), "f": dict(он="lei", него="lei", ему="le")},
                "pt": {"m": dict(он="ele", него="ele", ему="lhe"), "f": dict(он="ela", него="ela", ему="lhe")},
-               "nl": {"m": dict(он="hij", него="hem", ему="hem"), "f": dict(он="zij", него="haar", ему="haar")},
+               "nl": {"m": dict(он="hij", него="hem", ему="hem"), "f": dict(он="ze", него="haar", ему="haar")},
                "pl": {"m": dict(он="on", него="niego", ему="mu"), "f": dict(он="ona", него="niej", ему="jej")}}
 ГОЛОВЫ_ИТОГА = {"en": ("in all", "altogether", "in total"), "ru": ("всего", "в сумме", "итого"), "de": ("insgesamt", "zusammen", "im Ganzen"),
                 "fr": ("en tout", "au total", "en tout et pour tout"), "es": ("en total", "en conjunto", "en suma"), "it": ("in tutto", "in totale", "complessivamente"),
@@ -56,7 +56,21 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
                  (("box of apples", "boxes of apples"), ("box of pears", "boxes of pears"), ("box of fruit", "boxes of fruit"))),
           "ru": ((("страница чтения", "страницы чтения", "страниц чтения"), ("страница математики", "страницы математики", "страниц математики"), ("страница", "страницы", "страниц")),
                  (("пачка красных карт", "пачки красных карт", "пачек красных карт"), ("пачка синих карт", "пачки синих карт", "пачек синих карт"), ("пачка карт", "пачки карт", "пачек карт")),
-                 (("коробка яблок", "коробки яблок", "коробок яблок"), ("коробка груш", "коробки груш", "коробок груш"), ("коробка фруктов", "коробки фруктов", "коробок фруктов")))}
+                 (("коробка яблок", "коробки яблок", "коробок яблок"), ("коробка груш", "коробки груш", "коробок груш"), ("коробка фруктов", "коробки фруктов", "коробок фруктов"))),
+          "de": ((("Seite Lesehausaufgaben", "Seiten Lesehausaufgaben"), ("Seite Mathehausaufgaben", "Seiten Mathehausaufgaben"), ("Seite Hausaufgaben", "Seiten Hausaufgaben")),
+                 (("Kiste Äpfel", "Kisten Äpfel"), ("Kiste Birnen", "Kisten Birnen"), ("Kiste Obst", "Kisten Obst"))),
+          "fr": ((("page de lecture", "pages de lecture"), ("page de maths", "pages de maths"), ("page de devoirs", "pages de devoirs")),
+                 (("caisse de pommes", "caisses de pommes"), ("caisse de poires", "caisses de poires"), ("caisse de fruits", "caisses de fruits"))),
+          "es": ((("página de lectura", "páginas de lectura"), ("página de matemáticas", "páginas de matemáticas"), ("página de deberes", "páginas de deberes")),
+                 (("caja de manzanas", "cajas de manzanas"), ("caja de peras", "cajas de peras"), ("caja de fruta", "cajas de fruta"))),
+          "it": ((("pagina di lettura", "pagine di lettura"), ("pagina di matematica", "pagine di matematica"), ("pagina di compiti", "pagine di compiti")),
+                 (("cassa di mele", "casse di mele"), ("cassa di pere", "casse di pere"), ("cassa di frutta", "casse di frutta"))),
+          "pt": ((("página de leitura", "páginas de leitura"), ("página de matemática", "páginas de matemática"), ("página de trabalhos", "páginas de trabalhos")),
+                 (("caixa de maçãs", "caixas de maçãs"), ("caixa de peras", "caixas de peras"), ("caixa de fruta", "caixas de fruta"))),
+          "nl": ((("pagina leeshuiswerk", "pagina's leeshuiswerk"), ("pagina rekenhuiswerk", "pagina's rekenhuiswerk"), ("pagina huiswerk", "pagina's huiswerk")),
+                 (("kist appels", "kisten appels"), ("kist peren", "kisten peren"), ("kist fruit", "kisten fruit"))),
+          "pl": ((("strona czytania", "strony czytania", "stron czytania"), ("strona matematyki", "strony matematyki", "stron matematyki"), ("strona", "strony", "stron")),
+                 (("skrzynka jabłek", "skrzynki jabłek", "skrzynek jabłek"), ("skrzynka gruszek", "skrzynki gruszek", "skrzynek gruszek"), ("skrzynka owoców", "skrzynki owoców", "skrzynek owoców")))}
 
 РАМКИ = {
     "en": dict(
@@ -91,6 +105,11 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
 }
 РАМКИ.update({
     "de": dict(
+        осталось="{X} hatte {n} {Тn}. {Он} gab {k} weg. wie viele hat {он} jetzt? {он} hat jetzt noch {r}: {n} − {k} = {r}.",
+        ему="{X} hatte {n} {Тn}. {Y} gab {ему} {k} mehr. wie viele {Тмн} hat {он} jetzt? {s}: {n} + {k} = {s}.",
+        если_придут="in der Kiste sind {n} {Тn}. wenn {k} mehr hineingelegt werden, wie viele werden es sein? {s}: {n} + {k} = {s}.",
+        у_него="{X} hatte {n} {Тn}. {Y} nahm {ему} {k} {Тk} weg. wie viele {Тмн} hat {X} jetzt? {r}: {n} − {k} = {r}.",
+        товар="{X} hat {a} {Г1a} und {b} {Г2b}. wie viele {Г3мн} hat {он} insgesamt? {s} {Г3s}: {a} + {b} = {s}.",
         некоторые="{X} hatte {n} {Тn}. {Он} gab einige weg. jetzt hat {он} noch {r} {Тr}. wie viele {Тмн} gab {он} weg? {k}: {n} − {r} = {k}.",
         итог="{X} hat {a} {Ц1} {Тмн} und {b} {Ц2} {Тмн}. wie viele {Тмн} hat {X} {ГОЛОВА}? {s} {Тs}: {a} + {b} = {s}.",
         из_них="{X} hatte {n} {Тn}. {Он} gab {k} davon an {Y}. wie viele {Тмн} hat {он} jetzt? {r}: {n} − {k} = {r}.",
@@ -98,6 +117,11 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         время="{В1} hatte {X} {n} {Тn}. {В2} bekam {он} {k} mehr. wie viele {Тмн} hat {он} jetzt? {s}: {n} + {k} = {s}.",
         кому="{X} hatte {n} {Тn}. {Он} gab {Y} {k} {Тk}. wie viele {Тмн} hat {X} jetzt? {r}: {n} − {k} = {r}."),
     "fr": dict(
+        осталось="{X} avait {n} {Тn}. {Он} en a donné {k}. combien en a-t-{он} maintenant ? il {ему} en reste {r} : {n} − {k} = {r}.",
+        ему="{X} avait {n} {Тn}. {Y} {ему} en a donné {k} de plus. combien de {Тмн} a-t-{он} maintenant ? {s} : {n} + {k} = {s}.",
+        если_придут="il y a {n} {Тn} dans la boîte. si on en ajoute {k}, combien y en aura-t-il ? {s} : {n} + {k} = {s}.",
+        у_него="{X} avait {n} {Тn}. {Y} {ему} a pris {k} {Тk}. combien de {Тмн} {X} a-t-{он} maintenant ? {r} : {n} − {k} = {r}.",
+        товар="{X} a {a} {Г1a} et {b} {Г2b}. combien de {Г3мн} a-t-{он} en tout ? {s} {Г3s} : {a} + {b} = {s}.",
         некоторые="{X} avait {n} {Тn}. {Он} en a donné quelques-unes. maintenant il {ему} en reste {r}. combien de {Тмн} a-t-{он} données ? {k} : {n} − {r} = {k}.",
         итог="{X} a {a} {Тмн} {Ц1} et {b} {Тмн} {Ц2}. combien de {Тмн} {X} a-t-{он} {ГОЛОВА} ? {s} {Тs} : {a} + {b} = {s}.",
         из_них="{X} avait {n} {Тn}. {Он} en a donné {k} à {Y}. combien de {Тмн} a-t-{он} maintenant ? {r} : {n} − {k} = {r}.",
@@ -105,6 +129,11 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         время="{В1} {X} avait {n} {Тn}. {В2} {он} en a reçu {k} de plus. combien de {Тмн} a-t-{он} maintenant ? {s} : {n} + {k} = {s}.",
         кому="{X} avait {n} {Тn}. {Он} a donné {k} {Тk} à {Y}. combien de {Тмн} {X} a-t-{он} maintenant ? {r} : {n} − {k} = {r}."),
     "es": dict(
+        осталось="{X} tenía {n} {Тn}. dio {k}. ¿cuántas tiene ahora? ahora le quedan {r}: {n} − {k} = {r}.",
+        ему="{X} tenía {n} {Тn}. {Y} {ему} dio {k} más. ¿cuántas {Тмн} tiene ahora? {s}: {n} + {k} = {s}.",
+        если_придут="hay {n} {Тn} en la caja. si se ponen {k} más, ¿cuántas habrá? {s}: {n} + {k} = {s}.",
+        у_него="{X} tenía {n} {Тn}. {Y} {ему} quitó {k} {Тk}. ¿cuántas {Тмн} tiene {X} ahora? {r}: {n} − {k} = {r}.",
+        товар="{X} tiene {a} {Г1a} y {b} {Г2b}. ¿cuántas {Г3мн} tiene en total? {s} {Г3s}: {a} + {b} = {s}.",
         некоторые="{X} tenía {n} {Тn}. dio algunas. ahora le quedan {r} {Тr}. ¿cuántas {Тмн} dio? {k}: {n} − {r} = {k}.",
         итог="{X} tiene {a} {Тмн} {Ц1} y {b} {Тмн} {Ц2}. ¿cuántas {Тмн} tiene {X} {ГОЛОВА}? {s} {Тs}: {a} + {b} = {s}.",
         из_них="{X} tenía {n} {Тn}. dio {k} de ellas a {Y}. ¿cuántas {Тмн} tiene ahora? {r}: {n} − {k} = {r}.",
@@ -112,6 +141,11 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         время="{В1} {X} tenía {n} {Тn}. {В2} recibió {k} más. ¿cuántas {Тмн} tiene ahora? {s}: {n} + {k} = {s}.",
         кому="{X} tenía {n} {Тn}. dio {k} {Тk} a {Y}. ¿cuántas {Тмн} tiene {X} ahora? {r}: {n} − {k} = {r}."),
     "it": dict(
+        осталось="{X} aveva {n} {Тn}. ne ha date {k}. quante ne ha adesso? {ему} ne restano {r}: {n} − {k} = {r}.",
+        ему="{X} aveva {n} {Тn}. {Y} {ему} ne ha date altre {k}. quante {Тмн} ha adesso? {s}: {n} + {k} = {s}.",
+        если_придут="ci sono {n} {Тn} nella scatola. se se ne mettono altre {k}, quante ce ne saranno? {s}: {n} + {k} = {s}.",
+        у_него="{X} aveva {n} {Тn}. {Y} {ему} ha preso {k} {Тk}. quante {Тмн} ha {X} adesso? {r}: {n} − {k} = {r}.",
+        товар="{X} ha {a} {Г1a} e {b} {Г2b}. quante {Г3мн} ha in tutto? {s} {Г3s}: {a} + {b} = {s}.",
         некоторые="{X} aveva {n} {Тn}. ne ha date alcune. ora {ему} restano {r} {Тr}. quante {Тмн} ha dato? {k}: {n} − {r} = {k}.",
         итог="{X} ha {a} {Тмн} {Ц1} e {b} {Тмн} {Ц2}. quante {Тмн} ha {X} {ГОЛОВА}? {s} {Тs}: {a} + {b} = {s}.",
         из_них="{X} aveva {n} {Тn}. ne ha date {k} a {Y}. quante {Тмн} ha adesso? {r}: {n} − {k} = {r}.",
@@ -119,13 +153,23 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         время="{В1} {X} aveva {n} {Тn}. {В2} ne ha ricevute altre {k}. quante {Тмн} ha adesso? {s}: {n} + {k} = {s}.",
         кому="{X} aveva {n} {Тn}. ha dato {k} {Тk} a {Y}. quante {Тмн} ha {X} adesso? {r}: {n} − {k} = {r}."),
     "pt": dict(
+        осталось="{X} tinha {n} {Тn}. deu {k}. quantas tem agora? agora tem {r}: {n} − {k} = {r}.",
+        ему="{X} tinha {n} {Тn}. {Y} deu-{ему} mais {k}. quantas {Тмн} tem agora? {s}: {n} + {k} = {s}.",
+        если_придут="há {n} {Тn} na caixa. se puserem mais {k}, quantas haverá? {s}: {n} + {k} = {s}.",
+        у_него="{X} tinha {n} {Тn}. {Y} tirou-{ему} {k} {Тk}. quantas {Тмн} tem {X} agora? {r}: {n} − {k} = {r}.",
+        товар="{X} tem {a} {Г1a} e {b} {Г2b}. quantas {Г3мн} tem no total? {s} {Г3s}: {a} + {b} = {s}.",
         некоторые="{X} tinha {n} {Тn}. deu algumas. agora tem {r} {Тr}. quantas {Тмн} deu? {k}: {n} − {r} = {k}.",
         итог="{X} tem {a} {Тмн} {Ц1} e {b} {Тмн} {Ц2}. quantas {Тмн} tem {X} {ГОЛОВА}? {s} {Тs}: {a} + {b} = {s}.",
-        из_них="{X} tinha {n} {Тn}. deu {k} delas a {Y}. quantas {Тмн} tem agora? {r}: {n} − {k} = {r}.",
+        из_них="{X} tinha {n} {Тn}. deu {k} delas {Yд}. quantas {Тмн} tem agora? {r}: {n} − {k} = {r}.",
         если="{X} tem {n} {Тn}. se der {k}, com quantas ficará? {r}: {n} − {k} = {r}.",
         время="{В1} {X} tinha {n} {Тn}. {В2} recebeu mais {k}. quantas {Тмн} tem agora? {s}: {n} + {k} = {s}.",
-        кому="{X} tinha {n} {Тn}. deu {k} {Тk} a {Y}. quantas {Тмн} tem {X} agora? {r}: {n} − {k} = {r}."),
+        кому="{X} tinha {n} {Тn}. deu {k} {Тk} {Yд}. quantas {Тмн} tem {X} agora? {r}: {n} − {k} = {r}."),
     "nl": dict(
+        осталось="{X} had {n} {Тn}. {он} gaf er {k} weg. hoeveel heeft {он} nu? {он} heeft er nu nog {r}: {n} − {k} = {r}.",
+        ему="{X} had {n} {Тn}. {Y} gaf {ему} er {k} bij. hoeveel {Тмн} heeft {он} nu? {s}: {n} + {k} = {s}.",
+        если_придут="er zitten {n} {Тn} in de doos. als er {k} bij worden gedaan, hoeveel zijn het er dan? {s}: {n} + {k} = {s}.",
+        у_него="{X} had {n} {Тn}. {Y} nam {k} {Тk} van {него} af. hoeveel {Тмн} heeft {X} nu? {r}: {n} − {k} = {r}.",
+        товар="{X} heeft {a} {Г1a} en {b} {Г2b}. hoeveel {Г3мн} heeft {он} in totaal? {s} {Г3s}: {a} + {b} = {s}.",
         некоторые="{X} had {n} {Тn}. {он} gaf er een paar weg. nu heeft {он} er nog {r}. hoeveel {Тмн} gaf {он} weg? {k}: {n} − {r} = {k}.",
         итог="{X} heeft {a} {Ц1} {Тмн} en {b} {Ц2} {Тмн}. hoeveel {Тмн} heeft {X} {ГОЛОВА}? {s} {Тs}: {a} + {b} = {s}.",
         из_них="{X} had {n} {Тn}. {он} gaf er {k} aan {Y}. hoeveel {Тмн} heeft {он} nu? {r}: {n} − {k} = {r}.",
@@ -133,6 +177,11 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         время="{В1} had {X} {n} {Тn}. {В2} kreeg {он} er {k} bij. hoeveel {Тмн} heeft {он} nu? {s}: {n} + {k} = {s}.",
         кому="{X} had {n} {Тn}. {он} gaf {k} {Тk} aan {Y}. hoeveel {Тмн} heeft {X} nu? {r}: {n} − {k} = {r}."),
     "pl": dict(
+        осталось="{X} miał{а} {n} {Тn}. oddał{а} {k}. ile ma teraz? teraz zostało {ему} {r}: {n} − {k} = {r}.",
+        ему="{X} miał{а} {n} {Тn}. {Y} dał{аY} {ему} jeszcze {k}. ile {Тмн} ma teraz? {s}: {n} + {k} = {s}.",
+        если_придут="w pudełku jest {n} {Тn}. jeśli włożyć jeszcze {k}, ile będzie? {s}: {n} + {k} = {s}.",
+        у_него="{X} miał{а} {n} {Тn}. {Y} zabrał{аY} {ему} {k} {Тk}. ile {Тмн} ma {X} teraz? {r}: {n} − {k} = {r}.",
+        товар="{X} ma {a} {Г1a} i {b} {Г2b}. ile {Г3мн} ma razem? {s} {Г3s}: {a} + {b} = {s}.",
         некоторые="{X} miał{а} {n} {Тn}. oddał{а} kilka. teraz ma {r} {Тr}. ile {Тмн} oddał{а}? {k}: {n} − {r} = {k}.",
         итог="{X} ma {a} {Ц1} {Тмн} i {b} {Ц2} {Тмн}. ile {Тмн} ma {X} {ГОЛОВА}? {s} {Тs}: {a} + {b} = {s}.",
         из_них="{X} miał{а} {n} {Тn}. oddał{а} {k} z nich {Yд}. ile {Тмн} ma teraz? {r}: {n} − {k} = {r}.",
@@ -157,7 +206,17 @@ def _дательный(имя):
 
 
 def _лицо(язык, i):
-    return A.ЛИЦА[язык][i % len(A.ЛИЦА[язык])]
+    л = A.ЛИЦА[язык][i % len(A.ЛИЦА[язык])]
+    if язык == "pt":
+        # EUROPEAN PORTUGUESE puts the article before a name: «a Ana», «o Luís»; the dative
+        # contracts it: «à Ana», «ao Luís» — the article is the gender's, declared here
+        арт = "a " if л[1] == "f" else "o "
+        return (арт + л[0], л[1], л[2])
+    return л
+
+
+def _дательный_pt(лицо):
+    return ("à " if лицо[1] == "f" else "ao ") + лицо[0].split(" ", 1)[1]
 
 
 def _поля(язык, i, j, Т, n, k, форма):
@@ -166,7 +225,8 @@ def _поля(язык, i, j, Т, n, k, форма):
         Y = _лицо(язык, j + 1)
     м = МЕСТОИМЕНИЯ[язык][X[1]]
     вещь = lambda c: A._вещь(язык, Т, c)
-    Yд = _дательный(Y[0]) if язык == "ru" else ДАТЕЛЬНЫЙ_PL.get(Y[0], Y[0]) if язык == "pl" else Y[0]
+    Yд = (_дательный(Y[0]) if язык == "ru" else ДАТЕЛЬНЫЙ_PL.get(Y[0], Y[0]) if язык == "pl"
+          else _дательный_pt(Y) if язык == "pt" else Y[0])
     п = dict(X=X[0], Xр=X[2], Y=Y[0], Yд=Yд,
              он=м["он"], Он=м["он"], него=м["него"], ему=м["ему"],
              а=(("a" if X[1] == "f" else "") if язык == "pl" else A._а(язык, X[1])), аY=(("a" if Y[1] == "f" else "") if язык == "pl" else A._а(язык, Y[1])),
@@ -232,8 +292,10 @@ def _образцы():
     alt = lambda слова: "(?:" + "|".join(re.escape(с) for с in sorted(set(с for с in слова if с), key=len, reverse=True)) + ")"
     for язык, рамки in РАМКИ.items():
         имена = [л[0] for л in A.ЛИЦА[язык]]; род = [л[2] for л in A.ЛИЦА[язык]]
+        имена = [_лицо(язык, i)[0] for i in range(len(A.ЛИЦА[язык]))]
         дат = ([_дательный(л[0]) for л in A.ЛИЦА[язык]] if язык == "ru" else
-               [ДАТЕЛЬНЫЙ_PL.get(л[0], л[0]) for л in A.ЛИЦА[язык]] if язык == "pl" else имена)
+               [ДАТЕЛЬНЫЙ_PL.get(л[0], л[0]) for л in A.ЛИЦА[язык]] if язык == "pl" else
+               [_дательный_pt(_лицо(язык, i)) for i in range(len(A.ЛИЦА[язык]))] if язык == "pt" else имена)
         вещи = [A._вещь(язык, Т, c) for Т in range(len(A.ЯЗЫКИ[язык]["вещи"])) for c in (1, 2, 5)]
         вещи1 = [A._вещь(язык, Т, 1) for Т in range(len(A.ЯЗЫКИ[язык]["вещи"]))]
         мест = [v for г in МЕСТОИМЕНИЯ[язык].values() for v in г.values()]
@@ -388,7 +450,7 @@ def _образцы_актов():
     вон = []
     alt = lambda слова: "(?:" + "|".join(re.escape(с) for с in sorted(set(с for с in слова if с), key=len, reverse=True)) + ")"
     for язык, рамки in РАМКИ_АКТОВ.items():
-        имена = [л[0] for л in A.ЛИЦА[язык]]; род = [л[2] for л in A.ЛИЦА[язык]]
+        имена = [_лицо(язык, i)[0] for i in range(len(A.ЛИЦА[язык]))]; род = [л[2] for л in A.ЛИЦА[язык]]
         мест = [v for г in МЕСТОИМЕНИЯ[язык].values() for v in г.values()]
         дыры = {"X": alt(имена), "Y": alt(имена), "Xр": alt(род), "Yр": alt(род), "он": alt(мест), "Он": alt(мест), "него": alt(мест),
                 "а": "(?:а|о|и|a|)", "аY": "(?:а|о|и|a|)", "n": r"(\d+)", "k": r"(\d+)", "m": r"(\d+)", "r": r"(\d+)", "s": r"(\d+)", "t": r"(\d+)", "k2": r"(\d+)"}
