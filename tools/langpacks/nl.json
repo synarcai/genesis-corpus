@@ -1,5 +1,7 @@
 {
   "lang": "nl",
+  "polarity": {"yes": ["ja"], "no": ["nee"]},
+  "polarity_comment": "ANSWER POLARITY (05.09): the word that opens an answer and fixes the truth of what the question quoted — «правда ли, что дважды два — пять? нет, …». The arithmetic court reads the quoted equality through this word: after a no-word it must be false, after a yes-word true. Declared per language, never derived.",
   "script": "latin",
   "script_range": "A-Za-zÉÈËÏÖÜéèëïöü",
   "graphemes": "abcdefghijklmnopqrstuvwxyzéëï",

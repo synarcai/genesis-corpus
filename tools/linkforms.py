@@ -80,6 +80,7 @@ def _числительные(язык):
         объясни2="i don't understand, explain. i explain: {X} had {n}, gave away {k}, and has {r} left: {л}",
         наоборот2="{X} has {n} {Тn}, {Y} has {m} {Тm}. and if it were the other way round? then {X} would have {m} {Тm} and {Y} would have {n} {Тn}.",
         счёт_да="is it true that {A} times {B} is {C}? yes, {A} times {B} is {C}: {a} × {b} = {c}.",
+        счёт_нет="is it true that {A} times {B} is {D}? no, {A} times {B} is {C}: {a} × {b} = {c}.",
         почему="why does {X} have {r} {Тr}? because {X} had {n} and gave away {k}: {л}",
         а_если="what if there were twice as many? then {X} would have {д} {Тд}: {лд}",
         что_дальше="what happens next? {X} has {r} {Тr}: {л}",
@@ -102,6 +103,7 @@ def _числительные(язык):
         сказал_что="ты сказал, что у {Xр} {м} {Тм}. это верно? нет, у {Xр} {n} {Тn}.",
         а_союз="а у {Yр}? у {Yр} {m} {Тm}.",
         счёт_да="правда ли, что {A}жды {B} — {C}? да, {A}жды {B} — {C}: {a} × {b} = {c}.",
+        счёт_нет="правда ли, что {A}жды {B} — {D}? нет, {A}жды {B} — {C}: {a} × {b} = {c}.",
         # ВТОРАЯ ПОВЕРХНОСТЬ ТОЙ ЖЕ ФОРМЫ — БЕЗ СВЯЗОЧНОГО ТИРЕ. Полоса беседы
         # держала немой строку «правда ли, что дважды два четыре?», и корпус
         # нёс её же С ТИРЕ: тире есть знак ПИСЬМА, которого нет в речи, и
@@ -113,6 +115,7 @@ def _числительные(язык):
         # опускается. Второй поверхностью, а не второй формой, дом обходится
         # без объявленного пропуска на восемь языков.
         счёт_да2="правда ли, что {A}жды {B} {C}? да, {A}жды {B} {C}: {a} × {b} = {c}.",
+        счёт_нет2="правда ли, что {A}жды {B} {D}? нет, {A}жды {B} {C}: {a} × {b} = {c}.",
         почему="почему у {Xр} {r} {Тr}? потому что было {n}, а отдано {k}: {л}",
         а_если="а если бы их было вдвое больше? тогда у {Xр} было бы {д} {Тд}: {лд}",
         что_дальше="что дальше? у {Xр} {r} {Тr}: {л}",
@@ -135,6 +138,9 @@ def _числительные(язык):
         сказал_что="du hast gesagt, dass {X} {м} {Тм} hat. stimmt das? nein, {X} hat {n} {Тn}.",
         а_союз="und {Y}? {Y} hat {m} {Тm}.",
         счёт_да="stimmt es, dass {A} mal {B} {C} ist? ja, {A} mal {B} ist {C}: {a} × {b} = {c}.",
+        счёт_нет="stimmt es, dass {A} mal {B} {D} ist? nein, {A} mal {B} ist {C}: {a} × {b} = {c}.",
+        счёт_да2="stimmt es, dass {A}mal {B} {C} ist? ja, {A}mal {B} ist {C}: {a} × {b} = {c}.",
+        счёт_нет2="stimmt es, dass {A}mal {B} {D} ist? nein, {A}mal {B} ist {C}: {a} × {b} = {c}.",
         почему="warum hat {X} {r} {Тr}? weil {X} {n} hatte und {k} weggab: {л}",
         а_если="und wenn es doppelt so viele wären? dann hätte {X} {д} {Тд}: {лд}",
         что_дальше="was kommt dann? {X} hat {r} {Тr}: {л}",
@@ -153,10 +159,11 @@ def _числительные(язык):
         наоборот="{X} tiene {n} {Тn}, {Y} tiene {m} {Тm}. ¿y si fuera al revés? entonces {X} tendría {m} {Тm} y {Y} tendría {n} {Тn}.",
         повтори="repite, por favor. repito: {X} tiene {n} {Тn}.",
         объясни="no lo he entendido, explícalo. explico: había {n}, se dieron {k}, quedan {r}: {л}",
-        объясни3="no lo he entendido, explícalo otra vez. explico otra vez: había {n}, se dieron {k}, quedan {r}: {л}",
+        объясни3="no entendí, explícalo otra vez. explico otra vez: había {n}, se dieron {k}, quedan {r}: {л}",
         сказал_что="dijiste que {X} tiene {м} {Тм}. ¿es cierto? no, {X} tiene {n} {Тn}.",
         а_союз="¿y {Y}? {Y} tiene {m} {Тm}.",
         счёт_да="¿es verdad que {A} por {B} es {C}? sí, {A} por {B} es {C}: {a} × {b} = {c}.",
+        счёт_нет="¿es verdad que {A} por {B} es {D}? no, {A} por {B} es {C}: {a} × {b} = {c}.",
         почему="¿por qué {X} tiene {r} {Тr}? porque {X} tenía {n} y dio {k}: {л}",
         а_если="¿y si hubiera el doble? entonces {X} tendría {д} {Тд}: {лд}",
         что_дальше="¿qué pasa después? {X} tiene {r} {Тr}: {л}",
@@ -176,9 +183,10 @@ def _числительные(язык):
         повтори="répète, s'il te plaît. je répète : {X} a {n} {Тn}.",
         объясни="je n'ai pas compris, explique. j'explique : il y en avait {n}, {k} ont été donnés, il en reste {r} : {л}",
         объясни3="je n'ai pas compris, explique encore une fois. j'explique encore une fois : il y en avait {n}, {k} ont été donnés, il en reste {r} : {л}",
-        сказал_что="tu as dit que {X} a {м} {Тм}. c'est vrai ? non, {X} a {n} {Тn}.",
+        сказал_что="tu as dit {que}{X} a {м} {Тм}. c'est vrai ? non, {X} a {n} {Тn}.",
         а_союз="et {Y} ? {Y} a {m} {Тm}.",
         счёт_да="est-il vrai que {A} fois {B} font {C} ? oui, {A} fois {B} font {C} : {a} × {b} = {c}.",
+        счёт_нет="est-il vrai que {A} fois {B} font {D} ? non, {A} fois {B} font {C} : {a} × {b} = {c}.",
         почему="pourquoi {X} a {r} {Тr} ? parce que {X} en avait {n} et en a donné {k} : {л}",
         а_если="et s'il y en avait deux fois plus ? alors {X} aurait {д} {Тд} : {лд}",
         что_дальше="que se passe-t-il ensuite ? {X} a {r} {Тr} : {л}",
@@ -201,6 +209,7 @@ def _числительные(язык):
         сказал_что="hai detto che {X} ha {м} {Тм}. è giusto? no, {X} ha {n} {Тn}.",
         а_союз="e {Y}? {Y} ha {m} {Тm}.",
         счёт_да="è vero che {A} per {B} fa {C}? sì, {A} per {B} fa {C}: {a} × {b} = {c}.",
+        счёт_нет="è vero che {A} per {B} fa {D}? no, {A} per {B} fa {C}: {a} × {b} = {c}.",
         почему="perché {X} ha {r} {Тr}? perché {X} aveva {n} e ha dato {k}: {л}",
         а_если="e se fossero il doppio? allora {X} avrebbe {д} {Тд}: {лд}",
         что_дальше="che cosa succede dopo? {X} ha {r} {Тr}: {л}",
@@ -223,6 +232,7 @@ def _числительные(язык):
         сказал_что="disseste que {X} tem {м} {Тм}. está certo? não, {X} tem {n} {Тn}.",
         а_союз="e {Y}? {Y} tem {m} {Тm}.",
         счёт_да="é verdade que {A} vezes {B} é {C}? sim, {A} vezes {B} é {C}: {a} × {b} = {c}.",
+        счёт_нет="é verdade que {A} vezes {B} é {D}? não, {A} vezes {B} é {C}: {a} × {b} = {c}.",
         почему="porque é que {X} tem {r} {Тr}? porque {X} tinha {n} e deu {k}: {л}",
         а_если="e se fossem o dobro? então {X} teria {д} {Тд}: {лд}",
         что_дальше="o que acontece a seguir? {X} tem {r} {Тr}: {л}",
@@ -236,6 +246,7 @@ def _числительные(язык):
         получил="{X} dostał{а} {k} {Тk}.",
         а_союз="a {Y}? {Y} ma {m} {Тm}.",
         счёт_да="czy to prawda, że {A} razy {B} to {C}? tak, {A} razy {B} to {C}: {a} × {b} = {c}.",
+        счёт_нет="czy to prawda, że {A} razy {B} to {D}? nie, {A} razy {B} to {C}: {a} × {b} = {c}.",
         почему="dlaczego {X} ma {r} {Тr}? ponieważ {X} miał{а} {n} i oddał{а} {k}: {л}",
         почему_голый="dlaczego? ponieważ {X} miał{а} {n} i oddał{а} {k}: {л}",
         а_у="ile ma {Y}? {Y} ma {m} {Тm}.",
@@ -258,6 +269,7 @@ def _числительные(язык):
         получил="{X} kreeg {k} {Тk}.",
         а_союз="en {Y}? {Y} heeft {m} {Тm}.",
         счёт_да="is het waar dat {A} maal {B} {C} is? ja, {A} maal {B} is {C}: {a} × {b} = {c}.",
+        счёт_нет="is het waar dat {A} maal {B} {D} is? nee, {A} maal {B} is {C}: {a} × {b} = {c}.",
         почему="waarom heeft {X} {r} {Тr}? omdat {X} er {n} had en {k} weggaf: {л}",
         почему_голый="waarom? omdat {X} er {n} had en {k} weggaf: {л}",
         а_у="hoeveel heeft {Y}? {Y} heeft {m} {Тm}.",
@@ -279,21 +291,19 @@ def _числительные(язык):
 
 
 def слова_счёта(язык, i):
-    """(да-показ, нет-показ) о счёте СЛОВАМИ: обе полярности с кузницей.
+    """Показы о счёте СЛОВАМИ — обе полярности с кузницей.
 
     «правда ли, что дважды два — четыре?» есть вопрос об истине, а не о вещи,
     и потому судится не пересчётом предметов, а самой таблицей: слово «четыре»
     объявлено пакетом языка, произведение считается.
 
-    ВТОРОЙ ПОЛЯРНОСТИ ЗДЕСЬ НЕТ, И ЭТО НЕ НЕДОСМОТР, А ГРАНИЦА (04.09). Форма
-    «правда ли, что дважды два — ПЯТЬ? нет, четыре: 2 × 2 = 4.» истинна как
-    целое и содержит ложное равенство как ЦИТАТУ. Но суд арифметики читает
-    СТРОКУ, а не клаузу: он понижает числительные в цифры и находит «2 per 2
-    fa 5» — ложь по всей строке. Пока суды читают строки, корпус не вправе
-    цитировать ложь в судимой строке: цитата неотличима от утверждения на том
-    окне, каким смотрит суд. Вторая полярность у дома есть — в форме о ВЕЩАХ
-    («правда ли, что у ани 9 яблок? нет, у ани 5 яблок.»), где никакого
-    равенства не цитируется и суду нечего понижать.
+    ВТОРАЯ ПОЛЯРНОСТЬ — ОТКАЗ ОТ ЛЖИ С ОСНОВАНИЕМ: «правда ли, что дважды два —
+    пять? нет, дважды два — четыре: 2 × 2 = 4.» Дом не смел её писать (граница
+    04.09): суд арифметики читал предложение как утверждение и находил в вопросе
+    «2 × 2 = 5». С 05.09 у суда есть ОКНО ВОПРОСА: равенство, процитированное
+    вопросом, судится словом, открывающим ответ, — после «нет» оно обязано быть
+    ложным; слово полярности объявляет пакет языка. Цитата лжи стала законной
+    ровно тогда, когда суд научился её читать, — не раньше.
     """
     я = ЯЗЫКИ[язык]
     if "счёт_да" not in я:
@@ -306,7 +316,7 @@ def слова_счёта(язык, i):
     if not all(n in сл for n in (a, b, c, d)):
         return ()
     поля = dict(A=сл[a], B=сл[b], C=сл[c], D=сл[d], a=a, b=b, c=c)
-    поверхности = [я["счёт_да"]] + ([я["счёт_да2"]] if "счёт_да2" in я else [])
+    поверхности = [я[к] for к in ("счёт_да", "счёт_нет", "счёт_да2", "счёт_нет2") if к in я]
     return tuple(п.format(**поля) for п in поверхности)
 
 
@@ -325,12 +335,19 @@ def _винительный(язык, Т, k):
     return в
 
 
+def _que(имя):
+    """ЭЛИЗИЯ: французское «que» перед гласной или немым h есть «qu'» («tu as dit
+    qu'Anna a 8 pièces»); перед согласной — «que » с пробелом. Поле страницы:
+    рамка пишет «{que}{X}», а буква решается именем."""
+    return "qu'" if имя[:1].lower() in "aeiouyhàâéèêëîïôûùœ" else "que "
+
+
 def _поля(язык, X, Т, n, k):
     я, лицо = ЯЗЫКИ[язык], A.ЛИЦА[язык][X]
     r, д, м = n - k, n * 2, n + 4
     вещь = lambda с: A._вещь(язык, Т, с)
     return dict(
-        X=лицо[0], Xр=лицо[2], а=A._а(язык, лицо[1]),
+        X=лицо[0], Xр=лицо[2], а=A._а(язык, лицо[1]), que=_que(лицо[0]),
         n=n, k=k, r=r, д=д, м=м,
         Тn=вещь(n), Тk=вещь(k), Тr=вещь(r), Тд=вещь(д), Тм=вещь(м),
         Твk=_винительный(язык, Т, k),
@@ -360,7 +377,7 @@ def _поля(язык, X, Т, n, k):
 "de": (("stimmst du zu?", "stimmen Sie zu?"), ("erkläre es noch einmal.", "erklären Sie es noch einmal."), ("du hast gesagt, dass", "Sie haben gesagt, dass"), ("meinst du", "meinen Sie"),
        ("sag das bitte noch einmal.", "sagen Sie das bitte noch einmal."),
        ("erkläre es.", "erklären Sie es."), ("erkläre es bitte:", "erklären Sie es bitte:")),
-"fr": (("es-tu d'accord ?", "êtes-vous d'accord ?"), ("explique encore une fois.", "expliquez encore une fois."), ("tu as dit que", "vous avez dit que"), ("tu veux dire", "vous voulez dire"),
+"fr": (("es-tu d'accord ?", "êtes-vous d'accord ?"), ("explique encore une fois.", "expliquez encore une fois."), ("tu as dit {que}", "vous avez dit {que}"), ("tu veux dire", "vous voulez dire"),
        ("répète, s'il te plaît.", "répétez, s'il vous plaît."),
        ("explique.", "expliquez."), ("explique, s'il te plaît :", "expliquez, s'il vous plaît :")),
 "es": (("¿estás de acuerdo?", "¿está usted de acuerdo?"), ("explícalo otra vez.", "explíquelo otra vez."), ("dijiste que", "usted dijo que"), ("¿quieres decir", "¿quiere usted decir"),

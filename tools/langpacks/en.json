@@ -1,5 +1,7 @@
 {
   "lang": "en",
+  "polarity": {"yes": ["yes"], "no": ["no"]},
+  "polarity_comment": "ANSWER POLARITY (05.09): the word that opens an answer and fixes the truth of what the question quoted — «правда ли, что дважды два — пять? нет, …». The arithmetic court reads the quoted equality through this word: after a no-word it must be false, after a yes-word true. Declared per language, never derived.",
   "script": "latin",
   "comment": "THIRD PACK. English lived in GENESIS without one: its morphology was scattered across six generators and its identity in the census was the SCRIPT DEFAULT — the only language claimed by omission. Its paradigms are thin where English is actually hard: the -s of the third person (keep/keeps) and the plurals that obey nothing (child/children, foot/feet). Both are declared here, in the one place a language is supposed to live.",
   "lexeme_source": {

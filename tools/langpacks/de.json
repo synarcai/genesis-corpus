@@ -1,5 +1,7 @@
 {
   "lang": "de",
+  "polarity": {"yes": ["ja"], "no": ["nein"]},
+  "polarity_comment": "ANSWER POLARITY (05.09): the word that opens an answer and fixes the truth of what the question quoted — «правда ли, что дважды два — пять? нет, …». The arithmetic court reads the quoted equality through this word: after a no-word it must be false, after a yes-word true. Declared per language, never derived.",
   "script": "latin",
   "comment": "SECOND PACK, AND THE PROOF OF THE ENGINE'S CLAIM: German cost one file and zero engine edits. Its agreement rule is TWO lines where Russian needs four, and the engine reads both from data. German carries the case ON THE ARTICLE, so a paradigm cell here is «der Tisch / des Tisches / dem Tisch / den Tisch» — the article is part of the form, not a word beside it.",
   "lexeme_source": {
