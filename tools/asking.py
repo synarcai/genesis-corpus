@@ -172,13 +172,13 @@ can could should has have will shall must may might would ought need any anythin
 когда кто чем чего кому насколько почему зачем отчего откуда куда
 чём ком кем который которая которое которые которого которой которых
 является делится простое сравнимы связен может
-взаимно есть ли если во на
+взаимно есть ли если во на это
 wenn wie was ist sind welche welcher wo wann warum wieviel wer wen wem
 stimmt stimmst stimmen meinst meinen bist wozu womit woraus wovon wodurch worauf kann darf haben hat verhält etwas gibt kennst kannst lebst weißt wissen
-que quel quelle quels combien comment pourquoi est qu'est-ce est-il lequel laquelle lesquels peux-tu qu'ont
+que quel quelle quels combien comment pourquoi est qu'est-ce est-il lequel laquelle lesquels peux-tu c'est qu'ont
 est-elle est-ce si y et tu es-tu êtes-vous vous quoi des rien ça sais-tu savez-vous
 cual cuanto cuantos que es hay donde se ¿es ¿son ¿cuál ¿cuánto ¿qué ¿cómo ¿quién ¿puede ¿tienen ¿tiene
-¿y ¿quieres ¿quiere ¿estás ¿está ¿por ¿algo ¿alguna ¿sabes ¿sabe ¿puedes ¿eres
+¿y ¿quieres ¿quiere ¿estás ¿está ¿por ¿algo ¿alguna ¿sabes ¿sabe ¿puedes ¿eres ¿eso
 che cosa quanto quanti dove quale come chi perché intendi intende sei può hanno ha niente novità tutto sai sa puoi
 qual quantos onde como quem porque porquê queres quer concordas concorda pode todos tem têm algo alguma tudo sabes sabe podes és está
 czy ile co jaki jaka jakie jakiej jakim jakich jakiego znasz umiesz który które która czego gdzie kiedy jak czym dlaczego masz zgadzasz to

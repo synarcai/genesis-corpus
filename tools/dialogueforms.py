@@ -60,7 +60,7 @@ def имя_организма(язык):
     "ru": dict(
         зачины={ПРИВЕТ: ("привет", "здравствуй", "доброе утро", "добрый день", "добрый вечер"),
                 ПРОЩАНИЕ: ("пока", "до свидания", "до встречи", "всего доброго"),
-                БЛАГОДАРНОСТЬ: ("спасибо", "большое спасибо", "благодарю", 'спасибо за ответ'),
+                БЛАГОДАРНОСТЬ: ("спасибо", "большое спасибо", "благодарю", 'спасибо за ответ', 'спасибо, понял'),
                 ИЗВИНЕНИЕ: ("извини", "прости", "прошу прощения", 'извини, я ошибся'),
                 СОГЛАСИЕ: ("ответь, пожалуйста", "помоги, пожалуйста", "скажи, пожалуйста"),
                 ОТКАЗ: ("нет", "к сожалению, нет", "не могу")},
@@ -79,6 +79,7 @@ def имя_организма(язык):
         о_себе=(('ты умеешь считать?', 'да: 2 + 2 = 4.'), ('ты можешь ошибаться?', 'да: я могу ошибаться там, где не проверил.'), ('сколько тебе лет?', 'у меня нет возраста: я организм, а не человек.'), ('ты человек?', 'нет: я организм, который отвечает тем, что проверил.'), ('ты живой?', 'не знаю: я организм, и что значит «живой» для организма, ещё не установлено.')),
         язык=('на каком языке я говорю?', 'ты говоришь по-русски.'),
         языки=('сколько языков ты знаешь?', 'девять: русский, английский, немецкий, французский, испанский, итальянский, португальский, нидерландский и польский.'),
+        ход=(('это всё?', 'да, это весь ответ.'), ('у меня ещё вопрос.', 'спрашивай.')),
         малый=((("как дела?", "как ты?", "как поживаешь?"),
                 ("я отвечаю тем, что могу обосновать.", "хорошо: я отвечаю и проверяю ответы.", "как всегда: отвечаю на то, что могу обосновать.")),
                (("что нового?", "какие новости?", "есть что-нибудь новое?"),
@@ -93,7 +94,7 @@ def имя_организма(язык):
     "en": dict(
         зачины={ПРИВЕТ: ("hello", "hi", "good morning", "good afternoon", "good evening"),
                 ПРОЩАНИЕ: ("goodbye", "bye", "see you", "farewell"),
-                БЛАГОДАРНОСТЬ: ("thank you", "thanks", "thank you very much", 'thank you for the answer'),
+                БЛАГОДАРНОСТЬ: ("thank you", "thanks", "thank you very much", 'thank you for the answer', 'thanks, got it'),
                 ИЗВИНЕНИЕ: ("sorry", "excuse me", "i am sorry", 'sorry, i made a mistake'),
                 СОГЛАСИЕ: ("answer, please", "help me, please", "tell me, please"),
                 ОТКАЗ: ("no", "unfortunately not", "i cannot")},
@@ -112,6 +113,7 @@ def имя_организма(язык):
         о_себе=(('can you count?', 'yes: 2 + 2 = 4.'), ('can you be wrong?', 'yes: i can be wrong where i have not checked.'), ('how old are you?', 'i have no age: i am an organism, not a human.'), ('are you a human?', 'no: i am an organism that answers with what it has checked.'), ('are you alive?', 'i do not know: i am an organism, and what «alive» means for an organism is not yet settled.')),
         язык=('what language am i speaking?', 'you are speaking english.'),
         языки=('how many languages do you know?', 'nine: russian, english, german, french, spanish, italian, portuguese, dutch and polish.'),
+        ход=(('is that all?', 'yes, that is the whole answer.'), ('i have another question.', 'go ahead.')),
         малый=((("how are you?", "how are you doing?", "how is it going?"),
                 ("i answer with what i can justify.", "well: i answer and check the answers.", "as always: i answer what i can justify.")),
                (("what is new?", "any news?", "anything new?"),
@@ -126,7 +128,7 @@ def имя_организма(язык):
     "de": dict(
         зачины={ПРИВЕТ: ("hallo", "guten Morgen", "guten Tag", "guten Abend", "grüß dich"),
                 ПРОЩАНИЕ: ("tschüss", "auf Wiedersehen", "bis bald", "leb wohl"),
-                БЛАГОДАРНОСТЬ: ("danke", "vielen Dank", "danke schön", 'danke für die Antwort'),
+                БЛАГОДАРНОСТЬ: ("danke", "vielen Dank", "danke schön", 'danke für die Antwort', 'danke, verstanden'),
                 ИЗВИНЕНИЕ: ("entschuldigung", "es tut mir leid", "verzeihung", 'entschuldige, ich habe mich geirrt'),
                 СОГЛАСИЕ: ("antworte bitte", "hilf mir bitte", "sag mir bitte"),
                 ОТКАЗ: ("nein", "leider nicht", "ich kann nicht")},
@@ -145,6 +147,7 @@ def имя_организма(язык):
         о_себе=(('kannst du zählen?', 'ja: 2 + 2 = 4.'), ('kannst du dich irren?', 'ja: ich kann mich irren, wo ich nicht geprüft habe.'), ('wie alt bist du?', 'ich habe kein Alter: ich bin ein Organismus, kein Mensch.'), ('bist du ein Mensch?', 'nein: ich bin ein Organismus, der mit dem antwortet, was er geprüft hat.'), ('lebst du?', 'ich weiß es nicht: ich bin ein Organismus, und was «lebendig» für einen Organismus heißt, ist noch nicht geklärt.')),
         язык=('welche Sprache spreche ich?', 'du sprichst Deutsch.'),
         языки=('wie viele Sprachen kennst du?', 'neun: Russisch, Englisch, Deutsch, Französisch, Spanisch, Italienisch, Portugiesisch, Niederländisch und Polnisch.'),
+        ход=(('ist das alles?', 'ja, das ist die ganze Antwort.'), ('ich habe noch eine Frage.', 'frag.')),
         малый=((("wie geht es dir?", "wie geht's?", "wie läuft es?"),
                 ("ich antworte mit dem, was ich begründen kann.", "gut: ich antworte und prüfe die Antworten.", "wie immer: ich antworte auf das, was ich begründen kann.")),
                (("was gibt es Neues?", "gibt es Neuigkeiten?", "etwas Neues?"),
@@ -159,7 +162,7 @@ def имя_организма(язык):
     "fr": dict(
         зачины={ПРИВЕТ: ("bonjour", "salut", "bonsoir", "coucou"),
                 ПРОЩАНИЕ: ("au revoir", "à bientôt", "à plus tard", "adieu"),
-                БЛАГОДАРНОСТЬ: ("merci", "merci beaucoup", "je te remercie", 'merci pour la réponse'),
+                БЛАГОДАРНОСТЬ: ("merci", "merci beaucoup", "je te remercie", 'merci pour la réponse', 'merci, compris'),
                 ИЗВИНЕНИЕ: ("pardon", "excuse-moi", "je suis désolé", 'pardon, je me suis trompé'),
                 СОГЛАСИЕ: ("réponds, s'il te plaît", "aide-moi, s'il te plaît", "dis-moi, s'il te plaît"),
                 ОТКАЗ: ("non", "malheureusement non", "je ne peux pas")},
@@ -178,6 +181,7 @@ def имя_организма(язык):
         о_себе=(('sais-tu compter ?', 'oui : 2 + 2 = 4.'), ('peux-tu te tromper ?', "oui : je peux me tromper là où je n'ai pas vérifié."), ('quel âge as-tu ?', "je n'ai pas d'âge : je suis un organisme, pas un humain."), ('es-tu un humain ?', "non : je suis un organisme qui répond avec ce qu'il a vérifié."), ('es-tu vivant ?', "je ne sais pas : je suis un organisme, et ce que « vivant » veut dire pour un organisme n'est pas encore établi.")),
         язык=('quelle langue est-ce que je parle ?', 'tu parles français.'),
         языки=('combien de langues connais-tu ?', "neuf : le russe, l'anglais, l'allemand, le français, l'espagnol, l'italien, le portugais, le néerlandais et le polonais."),
+        ход=(("c'est tout ?", "oui, c'est toute la réponse."), ("j'ai encore une question.", "je t'écoute.")),
         малый=((("comment vas-tu ?", "ça va ?", "comment ça va ?"),
                 ("je réponds par ce que je peux justifier.", "bien : je réponds et je vérifie les réponses.", "comme toujours : je réponds à ce que je peux justifier.")),
                (("quoi de neuf ?", "des nouvelles ?", "rien de nouveau ?"),
@@ -192,7 +196,7 @@ def имя_организма(язык):
     "es": dict(
         зачины={ПРИВЕТ: ("hola", "buenos días", "buenas tardes", "buenas noches"),
                 ПРОЩАНИЕ: ("adiós", "hasta luego", "hasta pronto", "nos vemos"),
-                БЛАГОДАРНОСТЬ: ("gracias", "muchas gracias", "te lo agradezco", 'gracias por la respuesta'),
+                БЛАГОДАРНОСТЬ: ("gracias", "muchas gracias", "te lo agradezco", 'gracias por la respuesta', 'gracias, entendido'),
                 ИЗВИНЕНИЕ: ("perdón", "disculpa", "lo siento", 'perdona, me he equivocado'),
                 СОГЛАСИЕ: ("responde, por favor", "ayúdame, por favor", "dime, por favor"),
                 ОТКАЗ: ("no", "lamentablemente no", "no puedo")},
@@ -211,6 +215,7 @@ def имя_организма(язык):
         о_себе=(('¿sabes contar?', 'sí: 2 + 2 = 4.'), ('¿puedes equivocarte?', 'sí: puedo equivocarme donde no he comprobado.'), ('¿cuántos años tienes?', 'no tengo edad: soy un organismo, no un humano.'), ('¿eres un humano?', 'no: soy un organismo que responde con lo que ha comprobado.'), ('¿estás vivo?', 'no sé: soy un organismo, y lo que «vivo» significa para un organismo aún no está establecido.')),
         язык=('¿qué idioma estoy hablando?', 'estás hablando español.'),
         языки=('¿cuántos idiomas conoces?', 'nueve: ruso, inglés, alemán, francés, español, italiano, portugués, neerlandés y polaco.'),
+        ход=(('¿eso es todo?', 'sí, esa es toda la respuesta.'), ('tengo otra pregunta.', 'pregunta.')),
         малый=((("¿cómo estás?", "¿qué tal?", "¿cómo te va?"),
                 ("respondo con lo que puedo justificar.", "bien: respondo y compruebo las respuestas.", "como siempre: respondo a lo que puedo justificar.")),
                (("¿qué hay de nuevo?", "¿alguna novedad?", "¿algo nuevo?"),
@@ -225,7 +230,7 @@ def имя_организма(язык):
     "it": dict(
         зачины={ПРИВЕТ: ("ciao", "buongiorno", "buonasera", "salve"),
                 ПРОЩАНИЕ: ("arrivederci", "a presto", "a dopo", "addio"),
-                БЛАГОДАРНОСТЬ: ("grazie", "grazie mille", "ti ringrazio", 'grazie per la risposta'),
+                БЛАГОДАРНОСТЬ: ("grazie", "grazie mille", "ti ringrazio", 'grazie per la risposta', 'grazie, capito'),
                 ИЗВИНЕНИЕ: ("scusa", "mi dispiace", "chiedo scusa", 'scusa, ho sbagliato'),
                 СОГЛАСИЕ: ("rispondi, per favore", "aiutami, per favore", "dimmi, per favore"),
                 ОТКАЗ: ("no", "purtroppo no", "non posso")},
@@ -244,6 +249,7 @@ def имя_организма(язык):
         о_себе=(('sai contare?', 'sì: 2 + 2 = 4.'), ('puoi sbagliare?', 'sì: posso sbagliare dove non ho verificato.'), ('quanti anni hai?', 'non ho età: sono un organismo, non un umano.'), ('sei un umano?', 'no: sono un organismo che risponde con ciò che ha verificato.'), ('sei vivo?', 'non so: sono un organismo, e che cosa significhi «vivo» per un organismo non è ancora stabilito.')),
         язык=('che lingua sto parlando?', 'stai parlando italiano.'),
         языки=('quante lingue conosci?', 'nove: russo, inglese, tedesco, francese, spagnolo, italiano, portoghese, olandese e polacco.'),
+        ход=(('è tutto?', 'sì, questa è tutta la risposta.'), ("ho un'altra domanda.", 'chiedi pure.')),
         малый=((("come stai?", "come va?", "tutto bene?"),
                 ("rispondo con ciò che posso giustificare.", "bene: rispondo e controllo le risposte.", "come sempre: rispondo a ciò che posso giustificare.")),
                (("che c'è di nuovo?", "novità?", "niente di nuovo?"),
@@ -258,7 +264,7 @@ def имя_организма(язык):
     "pt": dict(
         зачины={ПРИВЕТ: ("olá", "bom dia", "boa tarde", "boa noite"),
                 ПРОЩАНИЕ: ("adeus", "até logo", "até breve", "tchau"),
-                БЛАГОДАРНОСТЬ: ("obrigado", "muito obrigado", "agradeço", 'obrigado pela resposta'),
+                БЛАГОДАРНОСТЬ: ("obrigado", "muito obrigado", "agradeço", 'obrigado pela resposta', 'obrigado, percebi'),
                 ИЗВИНЕНИЕ: ("desculpa", "perdão", "lamento", 'desculpa, enganei-me'),
                 СОГЛАСИЕ: ("responde, por favor", "ajuda-me, por favor", "diz-me, por favor"),
                 ОТКАЗ: ("não", "infelizmente não", "não posso")},
@@ -277,6 +283,7 @@ def имя_организма(язык):
         о_себе=(('sabes contar?', 'sim: 2 + 2 = 4.'), ('podes enganar-te?', 'sim: posso enganar-me onde não verifiquei.'), ('quantos anos tens?', 'não tenho idade: sou um organismo, não um humano.'), ('és um humano?', 'não: sou um organismo que responde com o que verificou.'), ('estás vivo?', 'não sei: sou um organismo, e o que «vivo» significa para um organismo ainda não está estabelecido.')),
         язык=('que língua estou a falar?', 'estás a falar português.'),
         языки=('quantas línguas conheces?', 'nove: russo, inglês, alemão, francês, espanhol, italiano, português, neerlandês e polaco.'),
+        ход=(('é tudo?', 'sim, é toda a resposta.'), ('tenho mais uma pergunta.', 'pergunta.')),
         малый=((("como estás?", "tudo bem?", "como vais?"),
                 ("respondo com aquilo que posso justificar.", "bem: respondo e verifico as respostas.", "como sempre: respondo ao que posso justificar.")),
                (("o que há de novo?", "alguma novidade?", "algo de novo?"),
@@ -291,7 +298,7 @@ def имя_организма(язык):
     "nl": dict(
         зачины={ПРИВЕТ: ("hallo", "goedemorgen", "goedemiddag", "goedenavond", "hoi"),
                 ПРОЩАНИЕ: ("dag", "tot ziens", "tot straks", "vaarwel"),
-                БЛАГОДАРНОСТЬ: ("dank je", "bedankt", "dank je wel", 'bedankt voor het antwoord'),
+                БЛАГОДАРНОСТЬ: ("dank je", "bedankt", "dank je wel", 'bedankt voor het antwoord', 'bedankt, begrepen'),
                 ИЗВИНЕНИЕ: ("sorry", "pardon", "het spijt me", 'sorry, ik heb me vergist'),
                 СОГЛАСИЕ: ("antwoord alsjeblieft", "help me alsjeblieft", "zeg het me alsjeblieft"),
                 ОТКАЗ: ("nee", "helaas niet", "ik kan niet")},
@@ -310,6 +317,7 @@ def имя_организма(язык):
         о_себе=(('kun je tellen?', 'ja: 2 + 2 = 4.'), ('kun je je vergissen?', 'ja: ik kan me vergissen waar ik niet heb gecontroleerd.'), ('hoe oud ben je?', 'ik heb geen leeftijd: ik ben een organisme, geen mens.'), ('ben je een mens?', 'nee: ik ben een organisme dat antwoordt met wat het heeft gecontroleerd.'), ('leef je?', 'ik weet het niet: ik ben een organisme, en wat «levend» voor een organisme betekent, is nog niet vastgesteld.')),
         язык=('welke taal spreek ik?', 'je spreekt Nederlands.'),
         языки=('hoeveel talen ken je?', 'negen: Russisch, Engels, Duits, Frans, Spaans, Italiaans, Portugees, Nederlands en Pools.'),
+        ход=(('is dat alles?', 'ja, dat is het hele antwoord.'), ('ik heb nog een vraag.', 'vraag maar.')),
         малый=((("hoe gaat het?", "hoe is het?", "alles goed?"),
                 ("ik antwoord met wat ik kan onderbouwen.", "goed: ik antwoord en controleer de antwoorden.", "zoals altijd: ik antwoord op wat ik kan onderbouwen.")),
                (("wat is er nieuw?", "nog nieuws?", "iets nieuws?"),
@@ -324,7 +332,7 @@ def имя_организма(язык):
     "pl": dict(
         зачины={ПРИВЕТ: ("cześć", "dzień dobry", "dobry wieczór", "witam"),
                 ПРОЩАНИЕ: ("do widzenia", "pa", "do zobaczenia", "żegnaj"),
-                БЛАГОДАРНОСТЬ: ("dziękuję", "dzięki", "bardzo dziękuję", 'dziękuję za odpowiedź'),
+                БЛАГОДАРНОСТЬ: ("dziękuję", "dzięki", "bardzo dziękuję", 'dziękuję za odpowiedź', 'dzięki, rozumiem'),
                 ИЗВИНЕНИЕ: ("przepraszam", "wybacz", "bardzo przepraszam", 'przepraszam, pomyliłem się'),
                 СОГЛАСИЕ: ("odpowiedz, proszę", "pomóż mi, proszę", "powiedz mi, proszę"),
                 ОТКАЗ: ("nie", "niestety nie", "nie mogę")},
@@ -344,6 +352,7 @@ def имя_организма(язык):
         о_себе=(('umiesz liczyć?', 'tak: 2 + 2 = 4.'), ('czy możesz się mylić?', 'tak: mogę się mylić tam, gdzie nie sprawdziłem.'), ('ile masz lat?', 'nie mam wieku: jestem organizmem, a nie człowiekiem.'), ('czy jesteś człowiekiem?', 'nie: jestem organizmem, który odpowiada tym, co sprawdził.'), ('czy żyjesz?', 'nie wiem: jestem organizmem, a co znaczy «żywy» dla organizmu, jeszcze nie ustalono.')),
         язык=('w jakim języku mówię?', 'mówisz po polsku.'),
         языки=('ile języków znasz?', 'dziewięć: rosyjski, angielski, niemiecki, francuski, hiszpański, włoski, portugalski, niderlandzki i polski.'),
+        ход=(('to wszystko?', 'tak, to cała odpowiedź.'), ('mam jeszcze jedno pytanie.', 'pytaj.')),
         малый=((("jak się masz?", "co słychać?", "jak leci?"),
                 ("odpowiadam tym, co potrafię uzasadnić.", "dobrze: odpowiadam i sprawdzam odpowiedzi.", "jak zawsze: odpowiadam na to, co potrafię uzasadnić.")),
                (("co nowego?", "jakieś nowości?", "coś nowego?"),
@@ -475,7 +484,7 @@ for _яз, _т in ВЕЖЛИВО.items():
         assert repr(_из)[1:-1] in _все, (_яз, _из, "замена объявлена строке, которой в доме нет")
     assert (ЯЗЫКИ_ВЫ[_яз] != ЯЗЫКИ[_яз]) == bool(_т), (_яз, "словарь замен и дело разошлись")
 
-ФОРМЫ = ("пара", "определение", "имя", "кто", "незнание", "малый", "незнание_сегодня", "моё_имя", "бессмыслица", "о_себе", "язык", "языки")
+ФОРМЫ = ("пара", "определение", "имя", "кто", "незнание", "малый", "незнание_сегодня", "моё_имя", "бессмыслица", "о_себе", "язык", "языки", "ход")
 # THE COUNT OF LANGUAGES IS A FACT OF THE HOUSE, not a word: «девять» must be the number of languages here
 assert len(ЯЗЫКИ) == 9, "the answer «nine languages» would be a lie"
 ФОРМЫ_ВЫ = ("пара", "имя", "кто", "малый")
@@ -539,7 +548,7 @@ def страница(язык, форма, вид=None, i=0, j=0, вы=False):
         # of languages is the count of this house
         в, о = я[форма]
         return f"{в} {о}"
-    if форма in ("моё_имя", "бессмыслица", "о_себе"):
+    if форма in ("моё_имя", "бессмыслица", "о_себе", "ход"):
         # ЧУЖОЕ ИМЯ, КОТОРОГО НЕ ГОВОРИЛИ, И ВОПРОС БЕЗ СМЫСЛА (пятая полоса, 05.09):
         # «как меня зовут? не знаю: ты не назвал своего имени.» — незнание с
         # основанием, истинное всегда; «сколько весит синий цвет? этот вопрос не
@@ -615,7 +624,7 @@ def _все_показы():
         for i in range(len(я["незнание_сегодня"])):
             вон[страница(язык, "незнание_сегодня", i=i)] = (язык, "незнание_сегодня")
             _показ_вы(вон, язык, "незнание_сегодня", i=i)
-        for форма in ("моё_имя", "бессмыслица", "о_себе"):
+        for форма in ("моё_имя", "бессмыслица", "о_себе", "ход"):
             for i in range(len(я[форма])):
                 вон[страница(язык, форма, i=i)] = (язык, форма)
                 _показ_вы(вон, язык, форма, i=i)
