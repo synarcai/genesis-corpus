@@ -31,8 +31,15 @@ shasum -a 256 "$OZAR_CORE" | cut -c1-16 > "$OUT/reader.sha"
 # N ВОПРОСОВ БЕРУТСЯ С ШАГОМ ПО ВСЕМУ КЛЮЧУ, А НЕ С НАЧАЛА: ключ упорядочен по языкам и домам,
 # и первые N строк были бы одним языком (проба 05.09: 60 первых = 60 английских)
 if [ "$N" -gt 0 ]; then
-  TOTAL=$(wc -l < "$KEY" | tr -d ' ')
-  awk -v n="$N" -v total="$TOTAL" 'BEGIN { step = (total > n) ? total / n : 1 } { if (int((NR - 1) / step) != int((NR - 2) / step) || NR == 1) print }' "$KEY" | head -n "$N" > "$OUT/key.tsv"
+  # N ВОПРОСОВ С ШАГОМ ПО ВСЕМУ КЛЮЧУ, А НЕ С НАЧАЛА: ключ упорядочен по домам и языкам, и
+  # первые N строк были бы одним языком (проба 05.09: 60 первых = 60 английских).
+  python3 - "$KEY" "$N" > "$OUT/key.tsv" <<'PYEOF'
+import sys
+ключ, n = sys.argv[1], int(sys.argv[2])
+строки = list(open(ключ, encoding="utf-8"))
+шаг = max(1, len(строки) // n)
+sys.stdout.writelines(строки[::шаг][:n])
+PYEOF
 else
   cp "$KEY" "$OUT/key.tsv"
 fi
