@@ -21,23 +21,23 @@ import phrases  # noqa: E402
 # the count forms of «day» (one, many), the statement and the question
 ЯЗЫКИ = {
     "de": dict(дни=("Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"),
-               день=("Tag", "Tage"), утв="{n} {д} nach {X} kommt {Y}: {л}.", воп="welcher Tag kommt {n} {д} nach {X}?"),
+               день=("Tag", "Tage"), утв="{n} {д} nach {X} kommt {Y}: {л}.", воп="welcher Tag kommt {n} {д} nach {X}?", сосед_воп="welcher Tag kommt nach {X}?", сосед_утв="nach {X} kommt {Y}."),
     "fr": dict(дни=("lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"),
-               день=("jour", "jours"), утв="{n} {д} après {X} vient {Y}: {л}.", воп="quel jour vient {n} {д} après {X} ?"),
+               день=("jour", "jours"), утв="{n} {д} après {X} vient {Y}: {л}.", воп="quel jour vient {n} {д} après {X} ?", сосед_воп="quel jour vient après {X} ?", сосед_утв="après {X} vient {Y}."),
     "es": dict(дни=("lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"),
-               день=("día", "días"), утв="{n} {д} después del {X} viene el {Y}: {л}.", воп="¿qué día viene {n} {д} después del {X}?"),
+               день=("día", "días"), утв="{n} {д} después del {X} viene el {Y}: {л}.", воп="¿qué día viene {n} {д} después del {X}?", сосед_воп="¿qué día viene después del {X}?", сосед_утв="después del {X} viene el {Y}."),
     "it": dict(дни=("lunedì", "martedì", "mercoledì", "giovedì", "venerdì", "sabato", "domenica"),
-               день=("giorno", "giorni"), утв="{n} {д} dopo {X} viene {Y}: {л}.", воп="che giorno viene {n} {д} dopo {X}?"),
+               день=("giorno", "giorni"), утв="{n} {д} dopo {X} viene {Y}: {л}.", воп="che giorno viene {n} {д} dopo {X}?", сосед_воп="che giorno viene dopo {X}?", сосед_утв="dopo {X} viene {Y}."),
     "pt": dict(дни=("segunda-feira", "terça-feira", "quarta-feira", "quinta-feira", "sexta-feira", "sábado", "domingo"),
-               день=("dia", "dias"), утв="{n} {д} depois de {X} vem {Y}: {л}.", воп="que dia vem {n} {д} depois de {X}?"),
+               день=("dia", "dias"), утв="{n} {д} depois de {X} vem {Y}: {л}.", воп="que dia vem {n} {д} depois de {X}?", сосед_воп="que dia vem depois de {X}?", сосед_утв="depois de {X} vem {Y}."),
     "nl": dict(дни=("maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag", "zondag"),
-               день=("dag", "dagen"), утв="{n} {д} na {X} komt {Y}: {л}.", воп="welke dag komt {n} {д} na {X}?"),
+               день=("dag", "dagen"), утв="{n} {д} na {X} komt {Y}: {л}.", воп="welke dag komt {n} {д} na {X}?", сосед_воп="welke dag komt na {X}?", сосед_утв="na {X} komt {Y}."),
     "pl": dict(дни=("poniedziałek", "wtorek", "środa", "czwartek", "piątek", "sobota", "niedziela"),
                косв=("poniedziałku", "wtorku", "środzie", "czwartku", "piątku", "sobocie", "niedzieli"),
-               день=("dzień", "dni"), утв="{n} {д} po {X} przypada {Y}: {л}.", воп="jaki dzień przypada {n} {д} po {X}?"),
+               день=("dzień", "dni"), утв="{n} {д} po {X} przypada {Y}: {л}.", воп="jaki dzień przypada {n} {д} po {X}?", сосед_воп="jaki dzień jest po {X}?", сосед_утв="po {X} jest {Y}."),
     "tr": dict(дни=("pazartesi", "salı", "çarşamba", "perşembe", "cuma", "cumartesi", "pazar"),
                косв=("pazartesiden", "salıdan", "çarşambadan", "perşembeden", "cumadan", "cumartesinden", "pazardan"),
-               день=("gün", "gün"), утв="{X} {n} {д} sonra {Y} gelir: {л}.", воп="{X} {n} {д} sonra hangi gün gelir?"),
+               день=("gün", "gün"), утв="{X} {n} {д} sonra {Y} gelir: {л}.", воп="{X} {n} {д} sonra hangi gün gelir?", сосед_воп="{X} sonra hangi gün gelir?", сосед_утв="{X} sonra {Y} gelir."),
 }
 
 
@@ -75,6 +75,15 @@ def вопрос(язык, i, n):
     return f"{я['воп'].format(n=n, д=_день(язык, n), X=_косв(язык, i))} {утверждение(язык, i, n)}"
 
 
+def сосед(язык, i):
+    """СОСЕДНИЙ ДЕНЬ БЕЗ ЧИСЛА (полоса BESEDA-2, 05.09: род NEXT-DAY — 1 из 9).
+    Человек спрашивает «какой день идёт после понедельника?» без «через n дней»;
+    дом знал только счёт через n дней. Страница: вопрос и утверждение соседства."""
+    я = ЯЗЫКИ[язык]
+    X, Y = _косв(язык, i), я["дни"][(i + 1) % 7]
+    return f"{я['сосед_воп'].format(X=X)} {я['сосед_утв'].format(X=X, Y=Y)}"
+
+
 def _образец(язык, шаблон):
     я = ЯЗЫКИ[язык]
     alt = lambda слова: "(" + "|".join(re.escape(с) for с in sorted(set(слова), key=len, reverse=True)) + ")"
@@ -87,11 +96,19 @@ def образцы(язык):
     я = ЯЗЫКИ[язык]
     утв = _образец(язык, я["утв"])
     return [(re.compile("^" + утв + "$"), False),
-            (re.compile("^" + _образец(язык, я["воп"]) + " " + утв + "$"), True)]
+            (re.compile("^" + _образец(язык, я["воп"]) + " " + утв + "$"), True),
+            (re.compile("^" + _образец(язык, я["сосед_воп"]) + " " + _образец(язык, я["сосед_утв"]) + "$"), "сосед")]
 
 
 def судить_группы(язык, спрошено, группы):
     я = ЯЗЫКИ[язык]
+    if спрошено == "сосед":
+        # группы: X вопроса, X утверждения, Y — сосед есть следующий день круга
+        г = list(группы)
+        косв = я.get("косв", я["дни"])
+        if len(г) != 3 or г[0] != г[1] or г[0] not in косв:
+            return False
+        return я["дни"][(косв.index(г[0]) + 1) % 7] == г[2]
     порядок = phrases.порядок(я["утв"])
     г = list(группы)
     if спрошено:
