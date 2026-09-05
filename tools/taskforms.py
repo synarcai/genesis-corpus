@@ -35,7 +35,10 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import crossforms as C  # noqa: E402
 
 ГОЛОВЫ = {
-    "ru": ("вычисли", "посчитай"), "en": ("calculate", "work out"),
+    # ТРИ ГОЛОВЫ ТАМ, ГДЕ ИХ СПРАШИВАЮТ (карта holon, 05.09): клетки «compute × слово»
+    # и «find × слово», «найди × слово» были пусты — головы стояли лишь при знаке
+    # в соседнем мире. Число голов объявляется языком, не законом «две».
+    "ru": ("вычисли", "посчитай", "найди"), "en": ("calculate", "compute", "find"),
     "de": ("berechne", "rechne"), "fr": ("calcule", "trouve"),
     "es": ("calcula", "halla"), "it": ("calcola", "trova"),
     "pt": ("calcula", "encontra"), "nl": ("bereken", "zoek"),
@@ -130,7 +133,7 @@ import crossforms as C  # noqa: E402
 
 for _яз in ЯЗЫКИ:
     assert _яз in C.СЛОВА, _яз
-    assert len(ГОЛОВЫ[_яз]) == 2, _яз
+    assert len(ГОЛОВЫ[_яз]) >= 2, _яз
     assert _яз in ВОПРОСЫ, _яз
     for _, _имя, _ in C.ДЕЙСТВИЯ:
         assert _имя in ИМЕНА_ВИН[_яз], (_яз, _имя)
@@ -151,9 +154,9 @@ def страница(язык, i, форма="задание"):
 
 
 def _показы():
-    сколько = 2 * len(C.ДЕЙСТВИЯ) * len(C.ДЕЙСТВИЯ[0][2])
     вон = {}
     for язык in ЯЗЫКИ:
+        сколько = len(ГОЛОВЫ[язык]) * len(C.ДЕЙСТВИЯ) * len(C.ДЕЙСТВИЯ[0][2])
         for форма in ФОРМЫ:
             for i in range(сколько):
                 вон[страница(язык, i, форма)] = (язык, форма)
