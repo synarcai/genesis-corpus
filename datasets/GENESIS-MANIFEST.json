@@ -4682,10 +4682,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 31579010,
+      "size": 31632575,
       "tiers": [],
       "text": "mix",
-      "lines": 356255
+      "lines": 356735
     },
     {
       "name": "minimal",
@@ -9365,6 +9365,23 @@
       "name": "mixedunits",
       "file": "datasets/genesis_mixedunits.txt",
       "genre": "THE MIXED MEASURE — the carry that is a thousand, and the one that is a hundred (06.09). The census that found no clock in the свод found no mixed measure either: ZERO lines carrying «2 kg 300 g» or «2 m 30 cm». Four movements, two of them borrowing: grams overflowing into kilograms and taken back out of them, centimetres into metres and out. EVERY page crosses the unit — a sum whose grams stay under a thousand teaches nothing plain addition did not. The judge holds the measure's own law: the small part is UNDER its base, so «4 kg 1100 g» is a carry left unfinished and not another spelling of «4 kg 100 g» plus a kilogram (tools/mixedunits.py). CLOSED world.",
+      "act": [
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only",
+        "exact_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "dateforms",
+      "file": "datasets/genesis_dateforms.txt",
+      "genre": "THE DATE — the carry whose base is NOT the same twice (06.09). The census that found no clock and no mixed measure found no date either: ZERO lines carrying a day number beside a month. Crossing from one month into the next is the only carry in the corpus WHOSE BASE CHANGES — thirty-one days in March, thirty in April, twenty-eight in February — and a carry with a fixed base can be learnt as a habit, while this one can only be learnt as a law that ASKS THE MONTH. Three movements (forward, backward, the span), and every ledger names the month's length: «3 April: March has 31 days, 28 + 6 = 34, 34 − 31 = 3». Every page crosses the month. GERMAN IS A DECLARED GAP: it writes the day with a full stop («5. März»), and a full stop followed by a space ends a sentence for every court of this corpus (tools/dateforms.py). CLOSED world.",
       "act": [
         "recount"
       ],
