@@ -25,6 +25,11 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 # {r} their difference, {h} the half, {ряд} the row «1, 2, 3»
 ЯЗЫКИ = {
     "ru": dict(
+        между=("назови число между {a} и {c}.", "{b}: {a} < {b} < {c}."),
+        между_воп=("какое число стоит между {a} и {c}?", "{b}: {a} < {b} < {c}."),
+        повтори=("повтори числа: {ряд}.", "{ряд}."),
+        повтори_воп=("я назвал числа: {ряд}. какие числа я назвал?", "{ряд}."),
+        шагом=("считай двойками до {b}.", "{ряд}."),
         ряд_дальше=("продолжи ряд: {a}, {b}, {c}, ?", "{d}: шаг {ш}."),
         наибольшее=("какое число самое большое: {a}, {b} или {c}?", "{m}."),
         наименьшее=("какое число самое маленькое: {a}, {b} или {c}?", "{m}."),
@@ -45,6 +50,11 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
         чёт=("{n} — чётное или нечётное число?", "чётное: {n} = 2 × {h}.", "нечётное: {n} = 2 × {h} + 1."),
     ),
     "en": dict(
+        между=("name a number between {a} and {c}.", "{b}: {a} < {b} < {c}."),
+        между_воп=("what number lies between {a} and {c}?", "{b}: {a} < {b} < {c}."),
+        повтори=("repeat the numbers: {ряд}.", "{ряд}."),
+        повтори_воп=("i said the numbers: {ряд}. what numbers did i say?", "{ряд}."),
+        шагом=("count by twos up to {b}.", "{ряд}."),
         ряд_дальше=("continue the sequence: {a}, {b}, {c}, ?", "{d}: the step is {ш}."),
         наибольшее=("which number is the greatest: {a}, {b} or {c}?", "{m}."),
         наименьшее=("which number is the smallest: {a}, {b} or {c}?", "{m}."),
@@ -66,6 +76,11 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
         чёт=("is {n} an even or an odd number?", "even: {n} = 2 × {h}.", "odd: {n} = 2 × {h} + 1."),
     ),
     "de": dict(
+        между=("nenne eine Zahl zwischen {a} und {c}.", "{b}: {a} < {b} < {c}."),
+        между_воп=("welche Zahl liegt zwischen {a} und {c}?", "{b}: {a} < {b} < {c}."),
+        повтори=("wiederhole die Zahlen: {ряд}.", "{ряд}."),
+        повтори_воп=("ich habe die Zahlen genannt: {ряд}. welche Zahlen habe ich genannt?", "{ряд}."),
+        шагом=("zähle in Zweierschritten bis {b}.", "{ряд}."),
         ряд_дальше=("setze die Folge fort: {a}, {b}, {c}, ?", "{d}: der Schritt ist {ш}."),
         наибольшее=("welche Zahl ist die größte: {a}, {b} oder {c}?", "{m}."),
         наименьшее=("welche Zahl ist die kleinste: {a}, {b} oder {c}?", "{m}."),
@@ -86,6 +101,11 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
         чёт=("ist {n} eine gerade oder eine ungerade Zahl?", "gerade: {n} = 2 × {h}.", "ungerade: {n} = 2 × {h} + 1."),
     ),
     "fr": dict(
+        между=("nomme un nombre entre {a} et {c}.", "{b} : {a} < {b} < {c}."),
+        между_воп=("quel nombre se trouve entre {a} et {c} ?", "{b} : {a} < {b} < {c}."),
+        повтори=("répète les nombres : {ряд}.", "{ряд}."),
+        повтори_воп=("j'ai dit les nombres : {ряд}. quels nombres ai-je dits ?", "{ряд}."),
+        шагом=("compte de deux en deux jusqu'à {b}.", "{ряд}."),
         ряд_дальше=("continue la suite : {a}, {b}, {c}, ?", "{d} : le pas est {ш}."),
         наибольшее=("quel est le plus grand nombre : {a}, {b} ou {c} ?", "{m}."),
         наименьшее=("quel est le plus petit nombre : {a}, {b} ou {c} ?", "{m}."),
@@ -106,6 +126,11 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
         чёт=("{n} est-il un nombre pair ou impair ?", "pair : {n} = 2 × {h}.", "impair : {n} = 2 × {h} + 1."),
     ),
     "es": dict(
+        между=("di un número entre {a} y {c}.", "{b}: {a} < {b} < {c}."),
+        между_воп=("¿qué número está entre {a} y {c}?", "{b}: {a} < {b} < {c}."),
+        повтори=("repite los números: {ряд}.", "{ряд}."),
+        повтори_воп=("he dicho los números: {ряд}. ¿qué números he dicho?", "{ряд}."),
+        шагом=("cuenta de dos en dos hasta {b}.", "{ряд}."),
         ряд_дальше=("continúa la serie: {a}, {b}, {c}, ?", "{d}: el paso es {ш}."),
         наибольшее=("¿cuál es el número más grande: {a}, {b} o {c}?", "{m}."),
         наименьшее=("¿cuál es el número más pequeño: {a}, {b} o {c}?", "{m}."),
@@ -127,6 +152,11 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
         чёт=("¿{n} es un número par o impar?", "par: {n} = 2 × {h}.", "impar: {n} = 2 × {h} + 1."),
     ),
     "it": dict(
+        между=("di' un numero tra {a} e {c}.", "{b}: {a} < {b} < {c}."),
+        между_воп=("quale numero sta tra {a} e {c}?", "{b}: {a} < {b} < {c}."),
+        повтори=("ripeti i numeri: {ряд}.", "{ряд}."),
+        повтори_воп=("ho detto i numeri: {ряд}. quali numeri ho detto?", "{ряд}."),
+        шагом=("conta di due in due fino a {b}.", "{ряд}."),
         ряд_дальше=("continua la sequenza: {a}, {b}, {c}, ?", "{d}: il passo è {ш}."),
         наибольшее=("qual è il numero più grande: {a}, {b} o {c}?", "{m}."),
         наименьшее=("qual è il numero più piccolo: {a}, {b} o {c}?", "{m}."),
@@ -148,6 +178,11 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
         чёт=("{n} è un numero pari o dispari?", "pari: {n} = 2 × {h}.", "dispari: {n} = 2 × {h} + 1."),
     ),
     "pt": dict(
+        между=("diz um número entre {a} e {c}.", "{b}: {a} < {b} < {c}."),
+        между_воп=("que número está entre {a} e {c}?", "{b}: {a} < {b} < {c}."),
+        повтори=("repete os números: {ряд}.", "{ряд}."),
+        повтори_воп=("eu disse os números: {ряд}. que números eu disse?", "{ряд}."),
+        шагом=("conta de dois em dois até {b}.", "{ряд}."),
         ряд_дальше=("continua a sequência: {a}, {b}, {c}, ?", "{d}: o passo é {ш}."),
         наибольшее=("qual é o maior número: {a}, {b} ou {c}?", "{m}."),
         наименьшее=("qual é o menor número: {a}, {b} ou {c}?", "{m}."),
@@ -169,6 +204,11 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
         чёт=("{n} é um número par ou ímpar?", "par: {n} = 2 × {h}.", "ímpar: {n} = 2 × {h} + 1."),
     ),
     "nl": dict(
+        между=("noem een getal tussen {a} en {c}.", "{b}: {a} < {b} < {c}."),
+        между_воп=("welk getal ligt tussen {a} en {c}?", "{b}: {a} < {b} < {c}."),
+        повтори=("herhaal de getallen: {ряд}.", "{ряд}."),
+        повтори_воп=("ik heb de getallen genoemd: {ряд}. welke getallen heb ik genoemd?", "{ряд}."),
+        шагом=("tel met sprongen van twee tot {b}.", "{ряд}."),
         ряд_дальше=("ga verder met de reeks: {a}, {b}, {c}, ?", "{d}: de stap is {ш}."),
         наибольшее=("welk getal is het grootste: {a}, {b} of {c}?", "{m}."),
         наименьшее=("welk getal is het kleinste: {a}, {b} of {c}?", "{m}."),
@@ -189,6 +229,11 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
         чёт=("is {n} een even of een oneven getal?", "even: {n} = 2 × {h}.", "oneven: {n} = 2 × {h} + 1."),
     ),
     "pl": dict(
+        между=("podaj liczbę między {a} a {c}.", "{b}: {a} < {b} < {c}."),
+        между_воп=("jaka liczba leży między {a} a {c}?", "{b}: {a} < {b} < {c}."),
+        повтори=("powtórz liczby: {ряд}.", "{ряд}."),
+        повтори_воп=("podałem liczby: {ряд}. jakie liczby podałem?", "{ряд}."),
+        шагом=("licz dwójkami do {b}.", "{ряд}."),
         ряд_дальше=("kontynuuj ciąg: {a}, {b}, {c}, ?", "{d}: krok wynosi {ш}."),
         наибольшее=("która liczba jest największa: {a}, {b} czy {c}?", "{m}."),
         наименьшее=("która liczba jest najmniejsza: {a}, {b} czy {c}?", "{m}."),
@@ -211,7 +256,14 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 }
 
 ФОРМЫ = ("после", "перед", "больше", "меньше", "счёт", "обратно", "чёт", "на_сколько", "словом", "половина", "возраст",
-         "пропуск", "больше_ли", "больше_ли_нет", "ряд_дальше", "наибольшее", "наименьшее", "вдвое")
+         "пропуск", "больше_ли", "больше_ли_нет", "ряд_дальше", "наибольшее", "наименьшее", "вдвое",
+         "между", "между_воп", "повтори", "повтори_воп", "шагом")
+# SEVENTH BAND (06.09): the number between two (the gap of one — the answer is
+# the only whole number), the numbers repeated as said, counting by twos
+МЕЖДУ = ((3, 5), (7, 9), (1, 3), (10, 12), (14, 16), (18, 20), (5, 7), (11, 13))
+ПОВТОРЫ = ((5, 3, 8), (2, 9, 4), (7, 7, 1), (10, 6, 3), (1, 2, 3), (8, 5, 9, 2), (4, 12, 6), (3, 3, 3))
+ДВОЙКАМИ = (6, 8, 10, 12, 14, 16, 18, 20)
+ПОВЕЛЕНИЯ = ("счёт", "обратно", "шагом")
 # SIXTH BAND (05.09): the sequence continued by its step, the greatest and the
 # smallest of three, the double
 РЯДЫ = ((2, 2), (1, 1), (3, 3), (5, 1), (1, 2), (10, 2), (4, 3), (2, 1))      # (first term, step)
@@ -281,6 +333,12 @@ def _поля(n=None, m=None, a=None, b=None, ряд=None, язык=None, k=None
         return dict(a=a_, b=b_, c=c_, m=(max if форма == "наибольшее" else min)(тройка))
     if форма == "вдвое":
         return dict(n=n, d=2 * n)
+    if форма in ("между", "между_воп"):
+        return dict(a=a, b=a + 1, c=a + 2)
+    if форма in ("повтори", "повтори_воп"):
+        return dict(ряд=", ".join(str(x) for x in ряд))
+    if форма == "шагом":
+        return dict(b=b, ряд=", ".join(str(x) for x in range(2, b + 1, 2)))
     if n is not None:
         п.update(n=n, m=m, h=n // 2, IL=_it(n)[0], DEL=_it(n)[1])
         if язык is not None:
@@ -308,7 +366,6 @@ def _поля(n=None, m=None, a=None, b=None, ряд=None, язык=None, k=None
 # language, and this house reads THE SAME table rather than declaring a second.
 import taskforms as _T
 ВОПРОС_ПОСЛЕ = _T.ВОПРОСЫ
-ПОВЕЛЕНИЯ = ("счёт", "обратно")
 
 
 def страница(язык, форма, вопросом=False, **чем):
@@ -379,6 +436,15 @@ def _показы():
             вон[страница(язык, "наименьшее", тройка=т3)] = (язык, "наименьшее")
         for n in range(1, ВЕРХ + 1):
             вон[страница(язык, "вдвое", n=n)] = (язык, "вдвое")
+        for a, c in МЕЖДУ:
+            вон[страница(язык, "между", a=a)] = (язык, "между")
+            вон[страница(язык, "между_воп", a=a)] = (язык, "между")
+        for ряд in ПОВТОРЫ:
+            вон[страница(язык, "повтори", ряд=list(ряд))] = (язык, "повтори")
+            вон[страница(язык, "повтори_воп", ряд=list(ряд))] = (язык, "повтори")
+        for b in ДВОЙКАМИ:
+            for вопросом in (False, True):
+                вон[страница(язык, "шагом", вопросом, b=b)] = (язык, "шагом")
     return вон
 
 
@@ -443,6 +509,13 @@ def судить(строка):
 
 
 def _верно(форма, k, г, язык):
+    if форма in ("между", "между_воп"):
+        return г["b"] == г["a"] + 1 and г["c"] == г["a"] + 2
+    if форма in ("повтори", "повтори_воп"):
+        return True      # the row of the answer is bound to the row of the question by back-reference
+    if форма == "шагом":
+        b = г["b"]
+        return b % 2 == 0 and г["ряд"] == ", ".join(str(x) for x in range(2, b + 1, 2))
     if форма == "ряд_дальше":
         a, b, c, d, ш = г["a"], г["b"], г["c"], г["d"], г["ш"]
         return ш >= 1 and b - a == ш and c - b == ш and d - c == ш
