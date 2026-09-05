@@ -85,6 +85,9 @@ COURTS=("courts/arith_court.py" "courts/algo_court.py"
         # ДОСЯГАЕМОСТЬ СУДА (М-404) — вся палата по всем мирам показов: суд, выросший
         # головами или образцами после записи мира, судит его здесь, а не у чужих ворот.
         "scripts/court_reach.py"
+        # УДЕРЖАННЫЙ КЛЮЧ — вопросы, которых свод не показывал: формы дома SVAMP с числами вне
+        # таблиц дома; 0 прожитых строк; переписывается на каждой точке (ворота посадки читателя).
+        "scripts/holdout_key.py"
         # МЕРА ДЕЙСТВИЯ — число меряет действие или считает носителей (род d5, 05.09)
         "courts/action_measure_court.py" "courts/numberline_court.py" "courts/countfacts_court.py" "courts/letters_court.py" "courts/propcompare_court.py" "courts/price_court.py" "courts/translate_court.py" "courts/timeunits_court.py" "courts/svamp_court.py" "courts/measure_langs_court.py")
 FELL=0
