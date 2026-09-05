@@ -4682,10 +4682,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 29969461,
+      "size": 30172579,
       "tiers": [],
       "text": "mix",
-      "lines": 343862
+      "lines": 345662
     },
     {
       "name": "minimal",
@@ -9290,6 +9290,22 @@
       "boundary": [
         "whole_only",
         "crossing_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "beforetails",
+      "file": "datasets/genesis_beforetails.txt",
+      "genre": "THE TAIL THAT POINTS BACKWARD — «how many did I have TO BEGIN WITH?» (05.09, the third gate of the silence atlas by d5's measure: 24 rows of the grove and 23 of the reader stop at an unbought before-tail). A story told forward and asked BACKWARDS: an act (gave away, bought, spent money), the state after it, and a question ending with one of FIVE tails per language — «to begin with», «in the beginning», «initially», «at the start», «before that»; «сначала», «вначале», «изначально», «поначалу», «до того» — because the market must buy the WORDS and not one phrase. The act is inverted by the sign of its kind: what was given away is added back, what was bought is taken away, what was spent is added back to what is left. First person throughout, so no name declines in nine languages; goods, currency and the counting rule are the price house's (tools/beforetails.py). CLOSED world.",
+      "act": [
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
       ],
       "actors": "",
       "text": "shows"
