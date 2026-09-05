@@ -41,6 +41,9 @@ def main():
         "the frog jumped 12 inches and then 8 inches. how far did the frog jump in all? 20 inches: 12 + 8 = 21.",
         "6 birds were sitting on the fence. 4 more birds came. how many birds are on the fence now? 10 birds: 6 + 4 = 11.",
         "лягушка прыгнула на 12 сантиметр. на сколько сантиметров прыгнула лягушка? на 12 сантиметр.",
+        # разность родов сложена неверно; экзистенциальная убыль с неверным итогом
+        "there are 12 more girls than boys in the school. there are 20 boys in the school. how many girls are there in the school? 33 girls: 20 + 12 = 33.",
+        "на заборе 6 птиц. улетели 4 птицы. сколько птиц на заборе теперь? 3 птицы: 6 − 4 = 3.",
     )
     пойманы = sum(1 for п in подсадки if _судить(п) == (True, False))
     if пойманы != len(подсадки):
