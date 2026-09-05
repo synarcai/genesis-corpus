@@ -391,7 +391,8 @@ def тройки_лишнего(язык):
 
 # СИЛЛОГИЗМ С ИМЕНЕМ (девятая полоса: «если все кошки — животные, а Мурка — кошка, то Мурка —
 # животное?») — классическая форма: единичное под родом под надродом; имена питомцев объявлены.
-ПИТОМЦЫ = {'ru': (('Мурка', 'кошка', 'все кошки'), ('Шарик', 'собака', 'все собаки')), 'en': (('Tom', 'a cat', 'all cats'), ('Rex', 'a dog', 'all dogs')), 'de': (('Mia', 'eine Katze', 'alle Katzen'), ('Bello', 'ein Hund', 'alle Hunde')), 'fr': (('Minou', 'un chat', 'tous les chats'), ('Médor', 'un chien', 'tous les chiens')), 'es': (('Tom', 'un gato', 'todos los gatos'), ('Toby', 'un perro', 'todos los perros')), 'it': (('Tom', 'un gatto', 'tutti i gatti'), ('Fido', 'un cane', 'tutti i cani')), 'pt': (('Tom', 'um gato', 'todos os gatos'), ('Bobi', 'um cão', 'todos os cães')), 'nl': (('Tom', 'een kat', 'alle katten'), ('Max', 'een hond', 'alle honden')), 'pl': (('Filemon', 'kot', 'wszystkie koty'), ('Reksio', 'pies', 'wszystkie psy'))}
+ПИТОМЦЫ = {'ru': (('Мурка', 'кошка', 'все кошки'), ('Шарик', 'собака', 'все собаки')), 'en': (('Tom', 'a cat', 'all cats'), ('Rex', 'a dog', 'all dogs')), 'de': (('Mia', 'eine Katze', 'alle Katzen'), ('Bello', 'ein Hund', 'alle Hunde')), 'fr': (('Minou', 'un chat', 'tous les chats'), ('Médor', 'un chien', 'tous les chiens')), 'es': (('Tom', 'un gato', 'todos los gatos'), ('Toby', 'un perro', 'todos los perros')), 'it': (('Tom', 'un gatto', 'tutti i gatti'), ('Fido', 'un cane', 'tutti i cani')), 'pt': (('o Tom', 'um gato', 'todos os gatos'), ('o Bobi', 'um cão', 'todos os cães')), 'nl': (('Tom', 'een kat', 'alle katten'), ('Max', 'een hond', 'alle honden')), 'pl': (('Filemon', 'kot', 'wszystkie koty', 'kotem'), ('Reksio', 'pies', 'wszystkie psy', 'psem'))}
+СИЛЛОГИЗМ_ИМЯ_PL = "jeśli {квмн} są {нтв_мн}, a {ч} jest {ктв}, to czy {ч} jest {нтв}? tak: {ч} jest {ктв}, {квмн} są {нтв_мн}, więc {ч} jest {нтв}."
 ЖИВОТНОЕ = {'ru': 'животное', 'en': 'an animal', 'de': 'ein Tier', 'fr': 'un animal', 'es': 'un animal', 'it': 'un animale', 'pt': 'um animal', 'nl': 'een dier', 'pl': 'zwierzę'}
 
 ИЕРАРХИЯ = {
@@ -664,7 +665,7 @@ for _яз in ЯЗЫКИ:
     РАМКИ[_яз]["лишнее"] = ЛИШНЕЕ[_яз]
     РАМКИ[_яз]["силлогизм_да"] = СИЛЛОГИЗМ_ДА[_яз]
     РАМКИ[_яз]["силлогизм_все"] = СИЛЛОГИЗМ_ВСЕ[_яз]
-    РАМКИ[_яз]["силлогизм_имя"] = СИЛЛОГИЗМ_ВСЕ[_яз]      # та же рамка, единичное — имя
+    РАМКИ[_яз]["силлогизм_имя"] = СИЛЛОГИЗМ_ИМЯ_PL if _яз == "pl" else СИЛЛОГИЗМ_ВСЕ[_яз]      # та же рамка, единичное — имя
     assert set(к for к, _, _ in ИЕРАРХИЯ[_яз]) <= set(КЛАСС_ВСЕ[_яз]) and set(н for _, _, н in ИЕРАРХИЯ[_яз]) <= set(НАДКЛАСС_МН[_яз]), _яз   # рамка формы «общего» живёт в своей таблице
     assert set(РАМКИ[_яз]) - {"гласные_стяжения"} == set(ФОРМЫ) - {"согласен_что_вы"}, _яз
     assert (_яз in БЕЗ_РАЗЛИЧИЯ_РЕГИСТРА) != (_яз in СОГЛАСЕН_ВЫ), _яз
@@ -703,8 +704,13 @@ def страница(язык, форма, i):
         чт = (("qu'" if ч[:1].lower() in гласные else "que ") + ч) if гласные else None
         return р[форма].format(ч=ч, к=к, кв=кв, н=н, чт=чт, квмн=КЛАСС_ВСЕ[язык][к], нмн=НАДКЛАСС_МН[язык][н])
     if форма == "силлогизм_имя":
-        имя, к, квмн = ПИТОМЦЫ[язык][i % len(ПИТОМЦЫ[язык])]
+        питомец = ПИТОМЦЫ[язык][i % len(ПИТОМЦЫ[язык])]
+        имя, к, квмн = питомец[:3]
         н = ЖИВОТНОЕ[язык]
+        if язык == "pl":
+            # POLISH CLASSIFIES IN THE INSTRUMENTAL: «Filemon jest kotem, wszystkie koty są zwierzętami»
+            # — the instrumental of the class is declared with the pet, that of the superclass here
+            return СИЛЛОГИЗМ_ИМЯ_PL.format(ч=имя, ктв=питомец[3], квмн=квмн, нтв="zwierzęciem", нтв_мн="zwierzętami")
         гласные = р.get("гласные_стяжения")
         чт = (("qu'" if имя[:1].lower() in гласные else "que ") + имя) if гласные else None
         return СИЛЛОГИЗМ_ВСЕ[язык].format(ч=имя, к=к, квмн=квмн, н=н, нмн=НАДКЛАСС_МН[язык][н], чт=чт)
@@ -802,8 +808,8 @@ def _образцы():
             "ф": [з[0] for з in ФАКТЫ[язык]] + [з[3] for з in ФАКТЫ[язык] if len(з) > 3],
             "о": [з[1] for з in ФАКТЫ[язык]],
             "с": [з[2] for з in ФАКТЫ[язык]],
-            "ч": [ч for ч, _ in КЛАССЫ[язык]] + [имя for имя, _, _ in ПИТОМЦЫ[язык]],
-            "к": [к for _, к in КЛАССЫ[язык]] + [к for _, к, _ in ПИТОМЦЫ[язык]],
+            "ч": [ч for ч, _ in КЛАССЫ[язык]] + [п[0] for п in ПИТОМЦЫ[язык]],
+            "к": [к for _, к in КЛАССЫ[язык]] + [п[1] for п in ПИТОМЦЫ[язык]],
             "п": ([з[0] for з in ФАКТЫ[язык]] if язык in ПРИДАТОЧНОЕ_РАВНО_ФАКТУ
                   else list(ПРИДАТОЧНОЕ[язык])),
             # дыры силлогизма: класс, класс с квантором, надкласс и стянутый
@@ -816,10 +822,11 @@ def _образцы():
             "км": list(ОБЩЕЕ[язык]["мн"].values()),
             "ч3": [ч for ч, _ in КЛАССЫ[язык]], "к3": [к for _, к in КЛАССЫ[язык]],
             "кв": [кв for _, кв, _ in ИЕРАРХИЯ[язык]],
-            "квмн": list(КЛАСС_ВСЕ[язык].values()) + [кв for _, _, кв in ПИТОМЦЫ[язык]], "нмн": list(НАДКЛАСС_МН[язык].values()),
+            "квмн": list(КЛАСС_ВСЕ[язык].values()) + [п[2] for п in ПИТОМЦЫ[язык]], "нмн": list(НАДКЛАСС_МН[язык].values()),
+            "ктв": [п[3] for п in ПИТОМЦЫ[язык] if len(п) > 3], "нтв": ["zwierzęciem"] if язык == "pl" else [], "нтв_мн": ["zwierzętami"] if язык == "pl" else [],
             "н": [н for _, _, н in ИЕРАРХИЯ[язык]],
             "чт": ([("qu'" if ч[:1].lower() in (РАМКИ[язык].get("гласные_стяжения") or "")
-                     else "que ") + ч for ч in [ч for ч, _ in КЛАССЫ[язык]] + [имя for имя, _, _ in ПИТОМЦЫ[язык]]]
+                     else "que ") + ч for ч in [ч for ч, _ in КЛАССЫ[язык]] + [п[0] for п in ПИТОМЦЫ[язык]]]
                    if РАМКИ[язык].get("гласные_стяжения") else []),
         }
         альт = {к: "(?:" + "|".join(re.escape(з) for з in sorted(set(р), key=len, reverse=True)) + ")"
