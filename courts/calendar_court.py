@@ -96,6 +96,10 @@ def объявленное():
     r"(?:after|before) (\w+) comes (\w+)"
     r"|какой (?:день|месяц) (?:идёт )?(после|перед) (\w+)\? "
     r"(?:после|перед) (\w+) — (\w+))\.$")
+# ВЧЕРА И ЗАВТРА ОТ НАЗВАННОГО СЕГОДНЯ (06.09): круг проходится на шаг назад или вперёд
+ВОПРОС_ВЧЕРА = re.compile(
+    r"^(?:today is (\w+)\. what day (was yesterday|will it be tomorrow)\? (\w+)"
+    r"|сегодня (\w+)\. какой день (был вчера|будет завтра)\? (\w+))\.$")
 ВОПРОС_ЧЕРЕЗ = re.compile(
     r"^(?:what day is (\d+) days after (\w+)\? "
     r"(\d+) days after (\w+) comes (\w+)"
@@ -144,6 +148,15 @@ def судить(строка):
         if откуда is None or куда is None:
             return False, True
         return True, (откуда[0] + k) % откуда[1] == куда[0] and _леджер_круга(г[3:], откуда, k, куда)
+    m = ВОПРОС_ВЧЕРА.match(с)
+    if m:
+        г = [x for x in m.groups() if x is not None]
+        сегодня, куда, ответ = г
+        откуда, к = круг(сегодня), круг(ответ)
+        if откуда is None or к is None:
+            return False, True
+        шаг = -1 if куда in ("was yesterday", "был вчера") else 1
+        return True, (откуда[0] + шаг) % откуда[1] == к[0]
     m = ВОПРОС_СОСЕД.match(с)
     if m:
         г = [x for x in m.groups() if x is not None]
