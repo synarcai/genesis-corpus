@@ -1,5 +1,5 @@
 мир	генератор	через_слой	строк	различных	копий	макс_копий
-datasets/GENESIS-FULL.txt	gen_genesis_full.py	0	291447	185255	106192	473
+datasets/GENESIS-FULL.txt	gen_genesis_full.py	0	300045	193775	106270	473
 datasets/genesis_action_measure.txt	gen_genesis_action_measure.py	1	234	234	0	1
 datasets/genesis_action_measure_langs.txt	gen_genesis_action_measure_langs.py	1	462	462	0	1
 datasets/genesis_action_pages.txt	gen_genesis_action_pages.py	1	4921	4897	24	2
@@ -16,6 +16,7 @@ datasets/genesis_bignum.txt	gen_genesis_bignum.py	1	937	888	49	2
 datasets/genesis_calendar.txt	gen_genesis_calendar.py	1	846	423	423	2
 datasets/genesis_calendar_langs.txt	gen_genesis_calendar_langs.py	1	1120	840	280	2
 datasets/genesis_chains_langs.txt	gen_genesis_chains_langs.py	1	3092	2889	203	2
+datasets/genesis_cmpframes.txt	gen_genesis_cmpframes.py	1	3456	3456	0	1
 datasets/genesis_compare.txt	gen_genesis_compare.py	1	1440	1424	16	2
 datasets/genesis_compare_langs.txt	gen_genesis_compare_langs.py	1	480	480	0	1
 datasets/genesis_compare_mult.txt	gen_genesis_compare_mult.py	1	2759	1740	1019	5
@@ -43,6 +44,7 @@ datasets/genesis_gsmforms.txt	gen_genesis_gsmforms.py	1	2511	2260	251	2
 datasets/genesis_gsmlex.txt	gen_genesis_gsmlex.py	1	400	400	0	1
 datasets/genesis_gsmwide.txt	gen_genesis_gsmwide.py	1	900	840	60	2
 datasets/genesis_heads.txt	gen_genesis_heads.py	1	560	472	88	2
+datasets/genesis_holdforms.txt	gen_genesis_holdforms.py	1	3192	3192	0	1
 datasets/genesis_holes.txt	gen_genesis_holes.py	1	6100	6100	0	1
 datasets/genesis_hypo.txt	gen_genesis_hypo.py	1	144	144	0	1
 datasets/genesis_indu.txt	gen_genesis_indu.py	1	102	102	0	1
@@ -121,7 +123,7 @@ datasets/genesis_stenogram.txt	gen_genesis_stenogram.py	1	550	526	24	3
 datasets/genesis_story.txt	gen_genesis_story.py	1	2686	2405	281	2
 datasets/genesis_story_chain.txt	gen_genesis_story_chain.py	1	890	890	0	1
 datasets/genesis_surfaces.txt	gen_genesis_surfaces.py	1	2200	1944	256	2
-datasets/genesis_svamp.txt	gen_genesis_svamp.py	1	4072	4072	0	1
+datasets/genesis_svamp.txt	gen_genesis_svamp.py	1	4954	4954	0	1
 datasets/genesis_task.txt	gen_genesis_task.py	1	2196	2196	0	1
 datasets/genesis_timeunits.txt	gen_genesis_timeunits.py	1	420	420	0	1
 datasets/genesis_topics.txt	gen_genesis_topics.py	1	1104	1104	0	1
