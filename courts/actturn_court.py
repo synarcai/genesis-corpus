@@ -38,14 +38,14 @@ def main():
     # создания; ОТКАЗ СДВИНУЛ МИР; чужой файл в отчёте; два рода акта в одном ходе; чтение
     # прибавило файл; невозможный акт объявлен над пустой папкой; удаление из пустой папки.
     подсадки = (
-        "пользователь: создай файл a.txt. организм: предлагаю создать файл a.txt. подтверждено ли это? организм: создал файл a.txt. папка содержит 4 файла: 3 + 1 = 4.",
+        "пользователь: создай файл b.txt. организм: предлагаю создать файл b.txt. подтверждено ли это? организм: создал файл b.txt. папка содержит 4 файла: 3 + 1 = 4.",
         "user: create the file a.txt. organism: i propose to create the file a.txt. is that confirmed? user: yes. organism: created the file a.txt. the folder contains 3 files: 3 + 1 = 3.",
         "Benutzer: erstelle die Datei a.txt. Organismus: ich schlage vor, die Datei a.txt zu erstellen. ist das bestätigt? Benutzer: nein. Organismus: keine Bestätigung — die Handlung wird nicht ausgeführt. der Ordner enthält 3 Dateien: 2 + 1 = 3.",
         "użytkownik: utwórz plik a.txt. organizm: proponuję utworzyć plik a.txt. czy to potwierdzone? użytkownik: tak. organizm: utworzyłem plik b.txt. folder zawiera 2 pliki: 1 + 1 = 2.",
         "utilisateur : supprime le fichier a.txt. organisme : je propose de supprimer le fichier a.txt. est-ce confirmé ? utilisateur : oui. organisme : j'ai créé le fichier a.txt. le dossier contient 1 fichier : 2 − 1 = 1.",
-        "utente: leggi il file a.txt. organismo: propongo di leggere il file a.txt. è confermato? utente: sì. organismo: ho letto il file a.txt. la cartella contiene 4 file: 3 + 1 = 4.",
-        "usuario: crea el archivo a.txt. organismo: el archivo a.txt ya existe — el acto no se realiza. la carpeta contiene 0 archivos: 0 = 0.",
-        "gebruiker: verwijder het bestand a.txt. organisme: ik stel voor het bestand a.txt te verwijderen. is dat bevestigd? gebruiker: ja. organisme: ik heb het bestand a.txt verwijderd. de map bevat 1 bestand: 1 − 1 = 1.",
+        "utente: leggi il file a.txt. organismo: propongo di leggere il file a.txt. è confermato? utente: sì. organismo: ho letto il file a.txt. il file a.txt contiene 12 byte: 7 + 5 = 12.",
+        "usuario: amplía el archivo a.txt. organismo: propongo ampliar el archivo a.txt. ¿es correcto? usuario: sí. organismo: he ampliado el archivo a.txt. el archivo a.txt contiene 7 bytes: 7 = 7.",
+        "gebruiker: hoeveel bestanden zitten er in de map? organisme: de map bevat 4 bestanden: 3 = 4.",
     )
     пойманы = sum(1 for п in подсадки if _судить(п) == (True, False))
     if пойманы != len(подсадки):
