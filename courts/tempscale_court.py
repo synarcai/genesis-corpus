@@ -42,8 +42,8 @@ def main():
         "20 Grad Celsius — wie viel ist das in Fahrenheit? 68 Grad Fahrenheit: 20 × 9 ÷ 5 = 36. 36 + 30 = 68.",
         "68 stopni Fahrenheita — ile to jest Celsjusza? 20 stopni Celsjusza: 68 × 5 ÷ 9 = 36. 36 − 32 = 20.",
         "14 градусов по Фаренгейту — сколько это по Цельсию? −10 градусов по Цельсию: 14 − 32 = −18. −18 × 5 ÷ 9 = −10.",
-        "0 градусов по Цельсию — это 32 градуса по Фаренгейту: при этой температуре вода кипит.",
-        "100 Grad Celsius sind 212 Grad Fahrenheit: bei dieser Temperatur gefriert Wasser.",
+        "при скольких градусах по Цельсию вода кипит? 0 градусов по Цельсию — это 32 градуса по Фаренгейту: при этой температуре вода кипит.",
+        "bei wie viel Grad Celsius gefriert Wasser? 100 Grad Celsius sind 212 Grad Fahrenheit: bei dieser Temperatur gefriert Wasser.",
         "25 grados Celsius — ¿cuánto es eso en Fahrenheit? 78 grados Fahrenheit: 25 × 9 ÷ 5 = 45. 45 + 32 = 78.",
     )
     пойманы = sum(1 for п in подсадки if _судить(п) == (True, False))

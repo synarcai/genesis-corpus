@@ -44,7 +44,7 @@ def main():
         "użytkownik: utwórz plik a.txt. organizm: proponuję utworzyć plik a.txt. czy to potwierdzone? użytkownik: tak. organizm: utworzyłem plik b.txt. folder zawiera 2 pliki: 1 + 1 = 2.",
         "utilisateur : supprime le fichier a.txt. organisme : je propose de supprimer le fichier a.txt. est-ce confirmé ? utilisateur : oui. organisme : j'ai créé le fichier a.txt. le dossier contient 1 fichier : 2 − 1 = 1.",
         "utente: leggi il file a.txt. organismo: propongo di leggere il file a.txt. è confermato? utente: sì. organismo: ho letto il file a.txt. il file a.txt contiene 12 byte: 7 + 5 = 12.",
-        "usuario: amplía el archivo a.txt. organismo: propongo ampliar el archivo a.txt. ¿es correcto? usuario: sí. organismo: he ampliado el archivo a.txt. el archivo a.txt contiene 7 bytes: 7 = 7.",
+        "usuario: crea el archivo a.txt. organismo: el archivo a.txt ya existe — el acto no se realiza. usuario: ¿cuántos archivos hay en la carpeta? organismo: la carpeta contiene 3 archivos: 2 + 1 = 3.",
         "gebruiker: hoeveel bestanden zitten er in de map? organisme: de map bevat 4 bestanden: 3 = 4.",
     )
     пойманы = sum(1 for п in подсадки if _судить(п) == (True, False))

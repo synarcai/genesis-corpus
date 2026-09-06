@@ -42,11 +42,27 @@ import priceforms as P  # noqa: E402 — the apple and the pack's counting rule
 # («3 красных яблока», «3 czerwone jabłka» при двух-четырёх и «5 czerwonych» при пяти),
 # сказуемым другой (немецкое сказуемое НЕ СКЛОНЯЕТСЯ: «2 sind grün», а не «grüne»),
 # после отрицания третий («сколько яблок не красных?»). Три таблицы, а не одна с догадкой.
+# ЦВЕТ ПРИ ЧИСЛЕ ГНЁТСЯ ПО СЧЁТУ, И ЕДИНИЦА БЕРЁТ ЕДИНСТВЕННОЕ. Суд согласования поймал
+# 24 обвинения (06.09): «1 красных», «1 rouges», «1 rojas», «1 rote», «1 rosse», «1 rode» —
+# ложь письма в шести языках разом, рождённая тем, что цвет объявлялся ОДНОЙ формой. Цвет при
+# числе есть ПРИЛАГАТЕЛЬНОЕ и гнётся как счётное имя; формы взяты по роду вещи корзины
+# (яблоко — среднего рода, Apfel — мужского, pomme/manzana/mela/maçã — женского).
 ЦВ_ПРИ_ЧИСЛЕ = {
-    "ru": ("красных", "зелёных", "синих"), "en": ("red", "green", "blue"),
-    "de": ("rote", "grüne", "blaue"), "fr": ("rouges", "vertes", "bleues"),
-    "es": ("rojas", "verdes", "azules"), "it": ("rosse", "verdi", "blu"),
-    "pt": ("vermelhas", "verdes", "azuis"), "nl": ("rode", "groene", "blauwe"),
+    "ru": (dict(one="красное", few="красных", many="красных"),
+           dict(one="зелёное", few="зелёных", many="зелёных"),
+           dict(one="синее", few="синих", many="синих")),
+    "en": ("red", "green", "blue"),
+    "de": (dict(one="roter", many="rote"), dict(one="grüner", many="grüne"),
+           dict(one="blauer", many="blaue")),
+    "fr": (dict(one="rouge", many="rouges"), dict(one="verte", many="vertes"),
+           dict(one="bleue", many="bleues")),
+    "es": (dict(one="roja", many="rojas"), dict(one="verde", many="verdes"),
+           dict(one="azul", many="azules")),
+    "it": (dict(one="rossa", many="rosse"), dict(one="verde", many="verdi"),
+           dict(one="blu", many="blu")),
+    "pt": (dict(one="vermelha", many="vermelhas"), dict(one="verde", many="verdes"),
+           dict(one="azul", many="azuis")),
+    "nl": ("rode", "groene", "blauwe"),
     "pl": (dict(one="czerwone", few="czerwone", many="czerwonych"),
            dict(one="zielone", few="zielone", many="zielonych"),
            dict(one="niebieskie", few="niebieskie", many="niebieskich")),
@@ -136,7 +152,8 @@ def _вещь(язык, k):
 
 
 def _цвет_при_числе(язык, i, n):
-    """Цвет при числе: у польского он гнётся по счёту, у прочих один."""
+    """Цвет при числе ГНЁТСЯ ПО СЧЁТУ: единица берёт единственное («1 красное», «1 roter»),
+    прочие — множественное. Английский и голландский не гнут его вовсе, и их форма одна."""
     з = ЦВ_ПРИ_ЧИСЛЕ[язык][i]
     return P.форма(язык, з, n) if isinstance(з, dict) else з
 
@@ -228,7 +245,7 @@ def _образец(язык, форма, nk):
 # ФОРМЫ ЦВЕТА ПРИ ЧИСЛЕ РАЗНЫЕ У РАЗНЫХ СЧЁТОВ (польский), и потому образец строится на
 # КАЖДЫЙ набор чисел дома: рамка есть форма, а форма зависит от того, сколько их
 _НАБОРЫ_РАМОК = sorted({(n, k, n - k) for n, k in НАБОРЫ} | {(n, n, 0) for n in ВСЕ_КРАСНЫЕ})
-ОБРАЗЦЫ = [(_образец(язык, форма, nk), язык, форма)
+ОБРАЗЦЫ = [(_образец(язык, форма, nk), язык, форма, nk)
            for язык in ЯЗЫКИ for форма in ФОРМЫ for nk in _НАБОРЫ_РАМОК]
 
 
@@ -242,8 +259,20 @@ def _значения(м):
     return вон
 
 
-def _вердикт(язык, форма, зн):
+def _вердикт(язык, форма, зн, nk):
+    """ЧИСЛА СТРАНИЦЫ ОБЯЗАНЫ БЫТЬ ЧИСЛАМИ ЕЁ РАМКИ, ибо форма цвета живёт в рамке.
+
+    Образец строится на КАЖДЫЙ набор чисел (цвет при числе гнётся по счёту), а дыры {n}, {k},
+    {m} берут любые цифры — и строка «1 красных» проходила образцом, собранным для пятёрки с
+    тройкой: числа свои, цвет чужой. Суд согласования поймал это раньше меня (24 обвинения в
+    шести языках, 06.09); ныне вердикт требует, чтобы числа строки были числами ЕЁ рамки.
+    """
     n = int(зн["n"])
+    k_рамки = nk[1] if форма != "все_да" else nk[0]
+    if n != nk[0]:
+        return False
+    if форма != "все_да" and int(зн["k"]) != k_рамки:
+        return False
     if n < 1 or зн.get("Т") != _вещь(язык, n):
         return False
     if форма == "все_да":
@@ -262,14 +291,14 @@ def судить(строка):
     с = строка.strip()
     if с in ПОКАЗЫ:
         return True, True
-    for образ, язык, форма in ОБРАЗЦЫ:
+    for образ, язык, форма, nk in ОБРАЗЦЫ:
         м = образ.match(с)
         if not м:
             continue
         зн = _значения(м)
         if зн is None:
             return True, False
-        return True, _вердикт(язык, форма, зн)
+        return True, _вердикт(язык, форма, зн, nk)
     return False, False
 
 

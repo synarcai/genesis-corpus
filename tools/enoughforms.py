@@ -54,31 +54,31 @@ import priceforms as P  # noqa: E402 — the goods, the currency, the price sent
 РЕЧЬ = {
     "ru": dict(кошелёк="у меня {M}.", вопрос="хватит ли на {K}?", да="да", нет="нет",
                остаток="останется {X}", нехватка="нужно ещё {X}",
-               вопрос_ещё="сколько ещё нужно на {K}?", двоеточие=": ", род_нехватки=False, ничего="ничего не останется"),
+               вопрос_ещё="сколько ещё нужно на {K}?", остаток_один="останется {X}", нехватка_один="нужно ещё {X}", двоеточие=": ", род_нехватки=False, ничего="ничего не останется"),
     "en": dict(кошелёк="i have {M}.", вопрос="is that enough for {K}?", да="yes", нет="no",
                остаток="{X} will be left", нехватка="{X} are missing",
-               вопрос_ещё="how much more is needed for {K}?", двоеточие=": ", род_нехватки=False, ничего="nothing will be left"),
+               вопрос_ещё="how much more is needed for {K}?", остаток_один="{X} will be left", нехватка_один="{X} is missing", двоеточие=": ", род_нехватки=False, ничего="nothing will be left"),
     "de": dict(кошелёк="ich habe {M}.", вопрос="ist das genug für {K}?", да="ja", нет="nein",
                остаток="{X} bleiben übrig", нехватка="{X} fehlen",
-               вопрос_ещё="wie viel fehlt noch für {K}?", двоеточие=": ", род_нехватки=False, ничего="es bleibt nichts übrig"),
+               вопрос_ещё="wie viel fehlt noch für {K}?", остаток_один="{X} bleibt übrig", нехватка_один="{X} fehlt", двоеточие=": ", род_нехватки=False, ничего="es bleibt nichts übrig"),
     "fr": dict(кошелёк="j'ai {M}.", вопрос="est-ce assez pour {K} ?", да="oui", нет="non",
                остаток="il reste {X}", нехватка="il manque {X}",
-               вопрос_ещё="combien manque-t-il pour {K} ?", двоеточие=" : ", род_нехватки=False, ничего="il ne reste rien"),
+               вопрос_ещё="combien manque-t-il pour {K} ?", остаток_один="il reste {X}", нехватка_один="il manque {X}", двоеточие=" : ", род_нехватки=False, ничего="il ne reste rien"),
     "es": dict(кошелёк="tengo {M}.", вопрос="¿es suficiente para {K}?", да="sí", нет="no",
                остаток="quedan {X}", нехватка="faltan {X}",
-               вопрос_ещё="¿cuánto falta para {K}?", двоеточие=": ", род_нехватки=False, ничего="no queda nada"),
+               вопрос_ещё="¿cuánto falta para {K}?", остаток_один="queda {X}", нехватка_один="falta {X}", двоеточие=": ", род_нехватки=False, ничего="no queda nada"),
     "it": dict(кошелёк="ho {M}.", вопрос="è abbastanza per {K}?", да="sì", нет="no",
                остаток="restano {X}", нехватка="mancano {X}",
-               вопрос_ещё="quanto manca per {K}?", двоеточие=": ", род_нехватки=False, ничего="non resta nulla"),
+               вопрос_ещё="quanto manca per {K}?", остаток_один="resta {X}", нехватка_один="manca {X}", двоеточие=": ", род_нехватки=False, ничего="non resta nulla"),
     "pt": dict(кошелёк="tenho {M}.", вопрос="é suficiente para {K}?", да="sim", нет="não",
                остаток="sobram {X}", нехватка="faltam {X}",
-               вопрос_ещё="quanto falta para {K}?", двоеточие=": ", род_нехватки=False, ничего="não sobra nada"),
+               вопрос_ещё="quanto falta para {K}?", остаток_один="sobra {X}", нехватка_один="falta {X}", двоеточие=": ", род_нехватки=False, ничего="não sobra nada"),
     "nl": dict(кошелёк="ik heb {M}.", вопрос="is dat genoeg voor {K}?", да="ja", нет="nee",
                остаток="er blijft {X} over", нехватка="er ontbreken {X}",
-               вопрос_ещё="hoeveel is er nog nodig voor {K}?", двоеточие=": ", род_нехватки=False, ничего="er blijft niets over"),
+               вопрос_ещё="hoeveel is er nog nodig voor {K}?", остаток_один="er blijft {X} over", нехватка_один="er ontbreekt {X}", двоеточие=": ", род_нехватки=False, ничего="er blijft niets over"),
     "pl": dict(кошелёк="mam {M}.", вопрос="czy wystarczy na {K}?", да="tak", нет="nie",
                остаток="zostanie {X}", нехватка="trzeba jeszcze {X}",
-               вопрос_ещё="ile jeszcze potrzeba na {K}?", двоеточие=": ", род_нехватки=False, ничего="nic nie zostanie"),
+               вопрос_ещё="ile jeszcze potrzeba na {K}?", остаток_один="zostanie {X}", нехватка_один="trzeba jeszcze {X}", двоеточие=": ", род_нехватки=False, ничего="nic nie zostanie"),
 }
 
 
@@ -109,8 +109,13 @@ def цена_фраза(язык, i, n):
                         k="", Вk="") + "."
 
 
-def рамка(язык, форма):
-    р = РЕЧЬ[язык]
+def рамка(язык, форма, один=False):
+    """один — страница, где остаток или нехватка равны ЕДИНИЦЕ: там глагол встаёт в
+    единственное число («1 Euro fehlt», «1 dollar is missing», «falta 1 euro»), и суд
+    согласования поймал это на шести языках разом (06.09)."""
+    р = dict(РЕЧЬ[язык])
+    if один:
+        р["остаток"], р["нехватка"] = р["остаток_один"], р["нехватка_один"]
     голова = "{ЦЕНА} " + р["кошелёк"].replace("{M}", "{M}") + " "
     if форма == "сколько_ещё":
         return (голова + р["вопрос_ещё"].replace("{K}", "{K}") + " {D}" + р["двоеточие"]
@@ -142,7 +147,8 @@ def страница(язык, форма, i, случай):
     else:
         зн.update(d=v - m, D=деньги(язык, v - m),
                   X=деньги(язык, v - m, РЕЧЬ[язык]["род_нехватки"]))
-    return рамка(язык, форма).format(**зн)
+    один = (зн.get("o") == 1) if форма == "хватит" else (зн.get("d") == 1)
+    return рамка(язык, форма, один).format(**зн)
 
 
 def _показы():

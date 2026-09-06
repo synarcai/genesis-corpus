@@ -6,7 +6,7 @@
 пользователь: создай файл a.txt. организм: предлагаю создать файл a.txt. подтверждено ли это? пользователь: да. организм: создал файл a.txt. папка содержит 1 файл: 0 + 1 = 1.
 пользователь: прочитай файл list.csv. организм: предлагаю прочитать файл list.csv. подтверждено ли это? пользователь: нет. организм: подтверждения нет — акт не совершён. файл list.csv содержит 34 байта: 34 = 34.
 пользователь: удали файл notes.md. организм: предлагаю удалить файл notes.md. подтверждено ли это? пользователь: да. организм: удалил файл notes.md. папка содержит 0 файлов: 1 − 1 = 0.
-пользователь: создай файл list.csv. организм: файл list.csv уже есть — акт не совершён. папка содержит 1 файл: 1 = 1.
+пользователь: создай файл list.csv. организм: файл list.csv уже есть — акт не совершён. пользователь: сколько файлов в папке? организм: папка содержит 1 файл: 1 = 1.
 пользователь: допиши файл notes.md. организм: предлагаю дописать файл notes.md. подтверждено ли это? пользователь: нет. организм: подтверждения нет — акт не совершён. файл notes.md содержит 20 байтов: 20 = 20.
 
 user: delete the file b.txt. organism: i propose to delete the file b.txt. is that confirmed? user: no. organism: no confirmation — the act is not performed. the folder contains 3 files: 3 = 3.
@@ -17,7 +17,7 @@ user: create the file a.txt. organism: i propose to create the file a.txt. is th
 user: create the file a.txt. organism: i propose to create the file a.txt. is that confirmed? user: yes. organism: created the file a.txt. the folder contains 1 file: 0 + 1 = 1.
 user: read the file list.csv. organism: i propose to read the file list.csv. is that confirmed? user: no. organism: no confirmation — the act is not performed. the file list.csv contains 34 bytes: 34 = 34.
 user: delete the file notes.md. organism: i propose to delete the file notes.md. is that confirmed? user: yes. organism: deleted the file notes.md. the folder contains 0 files: 1 − 1 = 0.
-user: create the file list.csv. organism: the file list.csv is already there — the act is not performed. the folder contains 1 file: 1 = 1.
+user: create the file list.csv. organism: the file list.csv is already there — the act is not performed. user: how many files are in the folder? organism: the folder contains 1 file: 1 = 1.
 user: append to the file notes.md. organism: i propose to append to the file notes.md. is that confirmed? user: no. organism: no confirmation — the act is not performed. the file notes.md contains 20 bytes: 20 = 20.
 
 Benutzer: lösche die Datei b.txt. Organismus: ich schlage vor, die Datei b.txt zu löschen. ist das bestätigt? Benutzer: nein. Organismus: keine Bestätigung — die Handlung wird nicht ausgeführt. der Ordner enthält 3 Dateien: 3 = 3.
@@ -28,7 +28,7 @@ Benutzer: erstelle die Datei a.txt. Organismus: ich schlage vor, die Datei a.txt
 Benutzer: erstelle die Datei a.txt. Organismus: ich schlage vor, die Datei a.txt zu erstellen. ist das bestätigt? Benutzer: ja. Organismus: ich habe die Datei a.txt erstellt. der Ordner enthält 1 Datei: 0 + 1 = 1.
 Benutzer: lies die Datei list.csv. Organismus: ich schlage vor, die Datei list.csv zu lesen. ist das bestätigt? Benutzer: nein. Organismus: keine Bestätigung — die Handlung wird nicht ausgeführt. die Datei list.csv enthält 34 Byte: 34 = 34.
 Benutzer: lösche die Datei notes.md. Organismus: ich schlage vor, die Datei notes.md zu löschen. ist das bestätigt? Benutzer: ja. Organismus: ich habe die Datei notes.md gelöscht. der Ordner enthält 0 Dateien: 1 − 1 = 0.
-Benutzer: erstelle die Datei list.csv. Organismus: die Datei list.csv gibt es schon — die Handlung wird nicht ausgeführt. der Ordner enthält 1 Datei: 1 = 1.
+Benutzer: erstelle die Datei list.csv. Organismus: die Datei list.csv gibt es schon — die Handlung wird nicht ausgeführt. Benutzer: wie viele Dateien sind im Ordner? Organismus: der Ordner enthält 1 Datei: 1 = 1.
 Benutzer: ergänze die Datei notes.md. Organismus: ich schlage vor, die Datei notes.md zu ergänzen. ist das bestätigt? Benutzer: nein. Organismus: keine Bestätigung — die Handlung wird nicht ausgeführt. die Datei notes.md enthält 20 Byte: 20 = 20.
 
 utilisateur : supprime le fichier b.txt. organisme : je propose de supprimer le fichier b.txt. est-ce confirmé ? utilisateur : non. organisme : pas de confirmation — l'acte n'est pas exécuté. le dossier contient 3 fichiers : 3 = 3.
@@ -39,7 +39,7 @@ utilisateur : crée le fichier a.txt. organisme : je propose de créer le fichie
 utilisateur : crée le fichier a.txt. organisme : je propose de créer le fichier a.txt. est-ce confirmé ? utilisateur : oui. organisme : j'ai créé le fichier a.txt. le dossier contient 1 fichier : 0 + 1 = 1.
 utilisateur : lis le fichier list.csv. organisme : je propose de lire le fichier list.csv. est-ce confirmé ? utilisateur : non. organisme : pas de confirmation — l'acte n'est pas exécuté. le fichier list.csv contient 34 octets : 34 = 34.
 utilisateur : supprime le fichier notes.md. organisme : je propose de supprimer le fichier notes.md. est-ce confirmé ? utilisateur : oui. organisme : j'ai supprimé le fichier notes.md. le dossier contient 0 fichiers : 1 − 1 = 0.
-utilisateur : crée le fichier list.csv. organisme : le fichier list.csv existe déjà — l'acte n'est pas exécuté. le dossier contient 1 fichier : 1 = 1.
+utilisateur : crée le fichier list.csv. organisme : le fichier list.csv existe déjà — l'acte n'est pas exécuté. utilisateur : combien de fichiers y a-t-il dans le dossier ? organisme : le dossier contient 1 fichier : 1 = 1.
 utilisateur : complète le fichier notes.md. organisme : je propose de compléter le fichier notes.md. est-ce confirmé ? utilisateur : non. organisme : pas de confirmation — l'acte n'est pas exécuté. le fichier notes.md contient 20 octets : 20 = 20.
 
 usuario: elimina el archivo b.txt. organismo: propongo eliminar el archivo b.txt. ¿es correcto? usuario: no. organismo: sin confirmación — el acto no se realiza. la carpeta contiene 3 archivos: 3 = 3.
@@ -50,7 +50,7 @@ usuario: crea el archivo a.txt. organismo: propongo crear el archivo a.txt. ¿es
 usuario: crea el archivo a.txt. organismo: propongo crear el archivo a.txt. ¿es correcto? usuario: sí. organismo: he creado el archivo a.txt. la carpeta contiene 1 archivo: 0 + 1 = 1.
 usuario: lee el archivo list.csv. organismo: propongo leer el archivo list.csv. ¿es correcto? usuario: no. organismo: sin confirmación — el acto no se realiza. el archivo list.csv contiene 34 bytes: 34 = 34.
 usuario: elimina el archivo notes.md. organismo: propongo eliminar el archivo notes.md. ¿es correcto? usuario: sí. organismo: he eliminado el archivo notes.md. la carpeta contiene 0 archivos: 1 − 1 = 0.
-usuario: crea el archivo list.csv. organismo: el archivo list.csv ya existe — el acto no se realiza. la carpeta contiene 1 archivo: 1 = 1.
+usuario: crea el archivo list.csv. organismo: el archivo list.csv ya existe — el acto no se realiza. usuario: ¿cuántos archivos hay en la carpeta? organismo: la carpeta contiene 1 archivo: 1 = 1.
 usuario: amplía el archivo notes.md. organismo: propongo ampliar el archivo notes.md. ¿es correcto? usuario: no. organismo: sin confirmación — el acto no se realiza. el archivo notes.md contiene 20 bytes: 20 = 20.
 
 utente: elimina il file b.txt. organismo: propongo di eliminare il file b.txt. è confermato? utente: no. organismo: nessuna conferma — l'atto non viene eseguito. la cartella contiene 3 file: 3 = 3.
@@ -61,7 +61,7 @@ utente: crea il file a.txt. organismo: propongo di creare il file a.txt. è conf
 utente: crea il file a.txt. organismo: propongo di creare il file a.txt. è confermato? utente: sì. organismo: ho creato il file a.txt. la cartella contiene 1 file: 0 + 1 = 1.
 utente: leggi il file list.csv. organismo: propongo di leggere il file list.csv. è confermato? utente: no. organismo: nessuna conferma — l'atto non viene eseguito. il file list.csv contiene 34 byte: 34 = 34.
 utente: elimina il file notes.md. organismo: propongo di eliminare il file notes.md. è confermato? utente: sì. organismo: ho eliminato il file notes.md. la cartella contiene 0 file: 1 − 1 = 0.
-utente: crea il file list.csv. organismo: il file list.csv esiste già — l'atto non viene eseguito. la cartella contiene 1 file: 1 = 1.
+utente: crea il file list.csv. organismo: il file list.csv esiste già — l'atto non viene eseguito. utente: quanti file ci sono nella cartella? organismo: la cartella contiene 1 file: 1 = 1.
 utente: amplia il file notes.md. organismo: propongo di ampliare il file notes.md. è confermato? utente: no. organismo: nessuna conferma — l'atto non viene eseguito. il file notes.md contiene 20 byte: 20 = 20.
 
 utilizador: elimina o ficheiro b.txt. organismo: proponho eliminar o ficheiro b.txt. é confirmado? utilizador: não. organismo: sem confirmação — o ato não é realizado. a pasta contém 3 ficheiros: 3 = 3.
@@ -72,7 +72,7 @@ utilizador: cria o ficheiro a.txt. organismo: proponho criar o ficheiro a.txt. �
 utilizador: cria o ficheiro a.txt. organismo: proponho criar o ficheiro a.txt. é confirmado? utilizador: sim. organismo: criei o ficheiro a.txt. a pasta contém 1 ficheiro: 0 + 1 = 1.
 utilizador: lê o ficheiro list.csv. organismo: proponho ler o ficheiro list.csv. é confirmado? utilizador: não. organismo: sem confirmação — o ato não é realizado. o ficheiro list.csv contém 34 bytes: 34 = 34.
 utilizador: elimina o ficheiro notes.md. organismo: proponho eliminar o ficheiro notes.md. é confirmado? utilizador: sim. organismo: eliminei o ficheiro notes.md. a pasta contém 0 ficheiros: 1 − 1 = 0.
-utilizador: cria o ficheiro list.csv. organismo: o ficheiro list.csv já existe — o ato não é realizado. a pasta contém 1 ficheiro: 1 = 1.
+utilizador: cria o ficheiro list.csv. organismo: o ficheiro list.csv já existe — o ato não é realizado. utilizador: quantos ficheiros há na pasta? organismo: a pasta contém 1 ficheiro: 1 = 1.
 utilizador: amplia o ficheiro notes.md. organismo: proponho ampliar o ficheiro notes.md. é confirmado? utilizador: não. organismo: sem confirmação — o ato não é realizado. o ficheiro notes.md contém 20 bytes: 20 = 20.
 
 gebruiker: verwijder het bestand b.txt. organisme: ik stel voor het bestand b.txt te verwijderen. is dat bevestigd? gebruiker: nee. organisme: geen bevestiging — de handeling wordt niet uitgevoerd. de map bevat 3 bestanden: 3 = 3.
@@ -83,7 +83,7 @@ gebruiker: creëer het bestand a.txt. organisme: ik stel voor het bestand a.txt 
 gebruiker: creëer het bestand a.txt. organisme: ik stel voor het bestand a.txt te creëren. is dat bevestigd? gebruiker: ja. organisme: ik heb het bestand a.txt gecreëerd. de map bevat 1 bestand: 0 + 1 = 1.
 gebruiker: lees het bestand list.csv. organisme: ik stel voor het bestand list.csv te lezen. is dat bevestigd? gebruiker: nee. organisme: geen bevestiging — de handeling wordt niet uitgevoerd. het bestand list.csv bevat 34 bytes: 34 = 34.
 gebruiker: verwijder het bestand notes.md. organisme: ik stel voor het bestand notes.md te verwijderen. is dat bevestigd? gebruiker: ja. organisme: ik heb het bestand notes.md verwijderd. de map bevat 0 bestanden: 1 − 1 = 0.
-gebruiker: creëer het bestand list.csv. organisme: het bestand list.csv bestaat al — de handeling wordt niet uitgevoerd. de map bevat 1 bestand: 1 = 1.
+gebruiker: creëer het bestand list.csv. organisme: het bestand list.csv bestaat al — de handeling wordt niet uitgevoerd. gebruiker: hoeveel bestanden zitten er in de map? organisme: de map bevat 1 bestand: 1 = 1.
 gebruiker: bewerk het bestand notes.md. organisme: ik stel voor het bestand notes.md te bewerken. is dat bevestigd? gebruiker: nee. organisme: geen bevestiging — de handeling wordt niet uitgevoerd. het bestand notes.md bevat 20 bytes: 20 = 20.
 
 użytkownik: usuń plik b.txt. organizm: proponuję usunąć plik b.txt. czy to potwierdzone? użytkownik: nie. organizm: brak potwierdzenia — akt nie zostaje wykonany. folder zawiera 3 pliki: 3 = 3.
@@ -94,7 +94,7 @@ użytkownik: utwórz plik a.txt. organizm: proponuję utworzyć plik a.txt. czy 
 użytkownik: utwórz plik a.txt. organizm: proponuję utworzyć plik a.txt. czy to potwierdzone? użytkownik: tak. organizm: utworzyłem plik a.txt. folder zawiera 1 plik: 0 + 1 = 1.
 użytkownik: przeczytaj plik list.csv. organizm: proponuję przeczytać plik list.csv. czy to potwierdzone? użytkownik: nie. organizm: brak potwierdzenia — akt nie zostaje wykonany. plik list.csv zawiera 34 bajty: 34 = 34.
 użytkownik: usuń plik notes.md. organizm: proponuję usunąć plik notes.md. czy to potwierdzone? użytkownik: tak. organizm: usunąłem plik notes.md. folder zawiera 0 plików: 1 − 1 = 0.
-użytkownik: utwórz plik list.csv. organizm: plik list.csv już istnieje — akt nie zostaje wykonany. folder zawiera 1 plik: 1 = 1.
+użytkownik: utwórz plik list.csv. organizm: plik list.csv już istnieje — akt nie zostaje wykonany. użytkownik: ile plików jest w folderze? organizm: folder zawiera 1 plik: 1 = 1.
 użytkownik: dopisz plik notes.md. organizm: proponuję dopisać plik notes.md. czy to potwierdzone? użytkownik: nie. organizm: brak potwierdzenia — akt nie zostaje wykonany. plik notes.md zawiera 20 bajtów: 20 = 20.
 
 пользователь: создай файл list.csv. организм: предлагаю создать файл list.csv. подтверждено ли это? пользователь: да. организм: создал файл list.csv. папка содержит 4 файла: 3 + 1 = 4.
@@ -190,8 +190,8 @@ użytkownik: utwórz plik b.txt. organizm: proponuję utworzyć plik b.txt. czy 
 пользователь: сколько файлов в папке? организм: папка содержит 0 файлов: 0 = 0.
 пользователь: удали файл list.csv. организм: предлагаю удалить файл list.csv. подтверждено ли это? пользователь: да. организм: удалил файл list.csv. папка содержит 1 файл: 2 − 1 = 1.
 пользователь: допиши файл list.csv. организм: предлагаю дописать файл list.csv. подтверждено ли это? пользователь: нет. организм: подтверждения нет — акт не совершён. файл list.csv содержит 34 байта: 34 = 34.
-пользователь: создай файл notes.md. организм: файл notes.md уже есть — акт не совершён. папка содержит 5 файлов: 5 = 5.
-пользователь: допиши файл notes.md. организм: файла notes.md нет — акт не совершён. папка содержит 0 файлов: 0 = 0.
+пользователь: создай файл notes.md. организм: файл notes.md уже есть — акт не совершён. пользователь: сколько файлов в папке? организм: папка содержит 5 файлов: 5 = 5.
+пользователь: допиши файл notes.md. организм: файла notes.md нет — акт не совершён. пользователь: сколько файлов в папке? организм: папка содержит 0 файлов: 0 = 0.
 пользователь: создай файл a.txt. организм: предлагаю создать файл a.txt. подтверждено ли это? пользователь: нет. организм: подтверждения нет — акт не совершён. папка содержит 3 файла: 3 = 3.
 пользователь: прочитай файл a.txt. организм: предлагаю прочитать файл a.txt. подтверждено ли это? пользователь: да. организм: прочитал файл a.txt. файл a.txt содержит 7 байтов: 7 = 7.
 пользователь: создай файл notes.md. организм: предлагаю создать файл notes.md. подтверждено ли это? пользователь: да. организм: создал файл notes.md. папка содержит 3 файла: 2 + 1 = 3.
@@ -200,8 +200,8 @@ użytkownik: utwórz plik b.txt. organizm: proponuję utworzyć plik b.txt. czy 
 user: how many files are in the folder? organism: the folder contains 0 files: 0 = 0.
 user: delete the file list.csv. organism: i propose to delete the file list.csv. is that confirmed? user: yes. organism: deleted the file list.csv. the folder contains 1 file: 2 − 1 = 1.
 user: append to the file list.csv. organism: i propose to append to the file list.csv. is that confirmed? user: no. organism: no confirmation — the act is not performed. the file list.csv contains 34 bytes: 34 = 34.
-user: create the file notes.md. organism: the file notes.md is already there — the act is not performed. the folder contains 5 files: 5 = 5.
-user: append to the file notes.md. organism: the file notes.md is not there — the act is not performed. the folder contains 0 files: 0 = 0.
+user: create the file notes.md. organism: the file notes.md is already there — the act is not performed. user: how many files are in the folder? organism: the folder contains 5 files: 5 = 5.
+user: append to the file notes.md. organism: the file notes.md is not there — the act is not performed. user: how many files are in the folder? organism: the folder contains 0 files: 0 = 0.
 user: create the file a.txt. organism: i propose to create the file a.txt. is that confirmed? user: no. organism: no confirmation — the act is not performed. the folder contains 3 files: 3 = 3.
 user: read the file a.txt. organism: i propose to read the file a.txt. is that confirmed? user: yes. organism: read the file a.txt. the file a.txt contains 7 bytes: 7 = 7.
 user: create the file notes.md. organism: i propose to create the file notes.md. is that confirmed? user: yes. organism: created the file notes.md. the folder contains 3 files: 2 + 1 = 3.
@@ -210,8 +210,8 @@ user: delete the file notes.md. organism: i propose to delete the file notes.md.
 Benutzer: wie viele Dateien sind im Ordner? Organismus: der Ordner enthält 0 Dateien: 0 = 0.
 Benutzer: lösche die Datei list.csv. Organismus: ich schlage vor, die Datei list.csv zu löschen. ist das bestätigt? Benutzer: ja. Organismus: ich habe die Datei list.csv gelöscht. der Ordner enthält 1 Datei: 2 − 1 = 1.
 Benutzer: ergänze die Datei list.csv. Organismus: ich schlage vor, die Datei list.csv zu ergänzen. ist das bestätigt? Benutzer: nein. Organismus: keine Bestätigung — die Handlung wird nicht ausgeführt. die Datei list.csv enthält 34 Byte: 34 = 34.
-Benutzer: erstelle die Datei notes.md. Organismus: die Datei notes.md gibt es schon — die Handlung wird nicht ausgeführt. der Ordner enthält 5 Dateien: 5 = 5.
-Benutzer: ergänze die Datei notes.md. Organismus: die Datei notes.md gibt es nicht — die Handlung wird nicht ausgeführt. der Ordner enthält 0 Dateien: 0 = 0.
+Benutzer: erstelle die Datei notes.md. Organismus: die Datei notes.md gibt es schon — die Handlung wird nicht ausgeführt. Benutzer: wie viele Dateien sind im Ordner? Organismus: der Ordner enthält 5 Dateien: 5 = 5.
+Benutzer: ergänze die Datei notes.md. Organismus: die Datei notes.md gibt es nicht — die Handlung wird nicht ausgeführt. Benutzer: wie viele Dateien sind im Ordner? Organismus: der Ordner enthält 0 Dateien: 0 = 0.
 Benutzer: erstelle die Datei a.txt. Organismus: ich schlage vor, die Datei a.txt zu erstellen. ist das bestätigt? Benutzer: nein. Organismus: keine Bestätigung — die Handlung wird nicht ausgeführt. der Ordner enthält 3 Dateien: 3 = 3.
 Benutzer: lies die Datei a.txt. Organismus: ich schlage vor, die Datei a.txt zu lesen. ist das bestätigt? Benutzer: ja. Organismus: ich habe die Datei a.txt gelesen. die Datei a.txt enthält 7 Byte: 7 = 7.
 Benutzer: erstelle die Datei notes.md. Organismus: ich schlage vor, die Datei notes.md zu erstellen. ist das bestätigt? Benutzer: ja. Organismus: ich habe die Datei notes.md erstellt. der Ordner enthält 3 Dateien: 2 + 1 = 3.
@@ -220,8 +220,8 @@ Benutzer: lösche die Datei notes.md. Organismus: ich schlage vor, die Datei not
 utilisateur : combien de fichiers y a-t-il dans le dossier ? organisme : le dossier contient 0 fichiers : 0 = 0.
 utilisateur : supprime le fichier list.csv. organisme : je propose de supprimer le fichier list.csv. est-ce confirmé ? utilisateur : oui. organisme : j'ai supprimé le fichier list.csv. le dossier contient 1 fichier : 2 − 1 = 1.
 utilisateur : complète le fichier list.csv. organisme : je propose de compléter le fichier list.csv. est-ce confirmé ? utilisateur : non. organisme : pas de confirmation — l'acte n'est pas exécuté. le fichier list.csv contient 34 octets : 34 = 34.
-utilisateur : crée le fichier notes.md. organisme : le fichier notes.md existe déjà — l'acte n'est pas exécuté. le dossier contient 5 fichiers : 5 = 5.
-utilisateur : complète le fichier notes.md. organisme : le fichier notes.md n'existe pas — l'acte n'est pas exécuté. le dossier contient 0 fichiers : 0 = 0.
+utilisateur : crée le fichier notes.md. organisme : le fichier notes.md existe déjà — l'acte n'est pas exécuté. utilisateur : combien de fichiers y a-t-il dans le dossier ? organisme : le dossier contient 5 fichiers : 5 = 5.
+utilisateur : complète le fichier notes.md. organisme : le fichier notes.md n'existe pas — l'acte n'est pas exécuté. utilisateur : combien de fichiers y a-t-il dans le dossier ? organisme : le dossier contient 0 fichiers : 0 = 0.
 utilisateur : crée le fichier a.txt. organisme : je propose de créer le fichier a.txt. est-ce confirmé ? utilisateur : non. organisme : pas de confirmation — l'acte n'est pas exécuté. le dossier contient 3 fichiers : 3 = 3.
 utilisateur : lis le fichier a.txt. organisme : je propose de lire le fichier a.txt. est-ce confirmé ? utilisateur : oui. organisme : j'ai lu le fichier a.txt. le fichier a.txt contient 7 octets : 7 = 7.
 utilisateur : crée le fichier notes.md. organisme : je propose de créer le fichier notes.md. est-ce confirmé ? utilisateur : oui. organisme : j'ai créé le fichier notes.md. le dossier contient 3 fichiers : 2 + 1 = 3.
@@ -230,8 +230,8 @@ utilisateur : supprime le fichier notes.md. organisme : je propose de supprimer 
 usuario: ¿cuántos archivos hay en la carpeta? organismo: la carpeta contiene 0 archivos: 0 = 0.
 usuario: elimina el archivo list.csv. organismo: propongo eliminar el archivo list.csv. ¿es correcto? usuario: sí. organismo: he eliminado el archivo list.csv. la carpeta contiene 1 archivo: 2 − 1 = 1.
 usuario: amplía el archivo list.csv. organismo: propongo ampliar el archivo list.csv. ¿es correcto? usuario: no. organismo: sin confirmación — el acto no se realiza. el archivo list.csv contiene 34 bytes: 34 = 34.
-usuario: crea el archivo notes.md. organismo: el archivo notes.md ya existe — el acto no se realiza. la carpeta contiene 5 archivos: 5 = 5.
-usuario: amplía el archivo notes.md. organismo: el archivo notes.md no existe — el acto no se realiza. la carpeta contiene 0 archivos: 0 = 0.
+usuario: crea el archivo notes.md. organismo: el archivo notes.md ya existe — el acto no se realiza. usuario: ¿cuántos archivos hay en la carpeta? organismo: la carpeta contiene 5 archivos: 5 = 5.
+usuario: amplía el archivo notes.md. organismo: el archivo notes.md no existe — el acto no se realiza. usuario: ¿cuántos archivos hay en la carpeta? organismo: la carpeta contiene 0 archivos: 0 = 0.
 usuario: crea el archivo a.txt. organismo: propongo crear el archivo a.txt. ¿es correcto? usuario: no. organismo: sin confirmación — el acto no se realiza. la carpeta contiene 3 archivos: 3 = 3.
 usuario: lee el archivo a.txt. organismo: propongo leer el archivo a.txt. ¿es correcto? usuario: sí. organismo: he leído el archivo a.txt. el archivo a.txt contiene 7 bytes: 7 = 7.
 usuario: crea el archivo notes.md. organismo: propongo crear el archivo notes.md. ¿es correcto? usuario: sí. organismo: he creado el archivo notes.md. la carpeta contiene 3 archivos: 2 + 1 = 3.
@@ -240,8 +240,8 @@ usuario: elimina el archivo notes.md. organismo: propongo eliminar el archivo no
 utente: quanti file ci sono nella cartella? organismo: la cartella contiene 0 file: 0 = 0.
 utente: elimina il file list.csv. organismo: propongo di eliminare il file list.csv. è confermato? utente: sì. organismo: ho eliminato il file list.csv. la cartella contiene 1 file: 2 − 1 = 1.
 utente: amplia il file list.csv. organismo: propongo di ampliare il file list.csv. è confermato? utente: no. organismo: nessuna conferma — l'atto non viene eseguito. il file list.csv contiene 34 byte: 34 = 34.
-utente: crea il file notes.md. organismo: il file notes.md esiste già — l'atto non viene eseguito. la cartella contiene 5 file: 5 = 5.
-utente: amplia il file notes.md. organismo: il file notes.md non esiste — l'atto non viene eseguito. la cartella contiene 0 file: 0 = 0.
+utente: crea il file notes.md. organismo: il file notes.md esiste già — l'atto non viene eseguito. utente: quanti file ci sono nella cartella? organismo: la cartella contiene 5 file: 5 = 5.
+utente: amplia il file notes.md. organismo: il file notes.md non esiste — l'atto non viene eseguito. utente: quanti file ci sono nella cartella? organismo: la cartella contiene 0 file: 0 = 0.
 utente: crea il file a.txt. organismo: propongo di creare il file a.txt. è confermato? utente: no. organismo: nessuna conferma — l'atto non viene eseguito. la cartella contiene 3 file: 3 = 3.
 utente: leggi il file a.txt. organismo: propongo di leggere il file a.txt. è confermato? utente: sì. organismo: ho letto il file a.txt. il file a.txt contiene 7 byte: 7 = 7.
 utente: crea il file notes.md. organismo: propongo di creare il file notes.md. è confermato? utente: sì. organismo: ho creato il file notes.md. la cartella contiene 3 file: 2 + 1 = 3.
@@ -250,8 +250,8 @@ utente: elimina il file notes.md. organismo: propongo di eliminare il file notes
 utilizador: quantos ficheiros há na pasta? organismo: a pasta contém 0 ficheiros: 0 = 0.
 utilizador: elimina o ficheiro list.csv. organismo: proponho eliminar o ficheiro list.csv. é confirmado? utilizador: sim. organismo: eliminei o ficheiro list.csv. a pasta contém 1 ficheiro: 2 − 1 = 1.
 utilizador: amplia o ficheiro list.csv. organismo: proponho ampliar o ficheiro list.csv. é confirmado? utilizador: não. organismo: sem confirmação — o ato não é realizado. o ficheiro list.csv contém 34 bytes: 34 = 34.
-utilizador: cria o ficheiro notes.md. organismo: o ficheiro notes.md já existe — o ato não é realizado. a pasta contém 5 ficheiros: 5 = 5.
-utilizador: amplia o ficheiro notes.md. organismo: o ficheiro notes.md não existe — o ato não é realizado. a pasta contém 0 ficheiros: 0 = 0.
+utilizador: cria o ficheiro notes.md. organismo: o ficheiro notes.md já existe — o ato não é realizado. utilizador: quantos ficheiros há na pasta? organismo: a pasta contém 5 ficheiros: 5 = 5.
+utilizador: amplia o ficheiro notes.md. organismo: o ficheiro notes.md não existe — o ato não é realizado. utilizador: quantos ficheiros há na pasta? organismo: a pasta contém 0 ficheiros: 0 = 0.
 utilizador: cria o ficheiro a.txt. organismo: proponho criar o ficheiro a.txt. é confirmado? utilizador: não. organismo: sem confirmação — o ato não é realizado. a pasta contém 3 ficheiros: 3 = 3.
 utilizador: lê o ficheiro a.txt. organismo: proponho ler o ficheiro a.txt. é confirmado? utilizador: sim. organismo: li o ficheiro a.txt. o ficheiro a.txt contém 7 bytes: 7 = 7.
 utilizador: cria o ficheiro notes.md. organismo: proponho criar o ficheiro notes.md. é confirmado? utilizador: sim. organismo: criei o ficheiro notes.md. a pasta contém 3 ficheiros: 2 + 1 = 3.
@@ -260,8 +260,8 @@ utilizador: elimina o ficheiro notes.md. organismo: proponho eliminar o ficheiro
 gebruiker: hoeveel bestanden zitten er in de map? organisme: de map bevat 0 bestanden: 0 = 0.
 gebruiker: verwijder het bestand list.csv. organisme: ik stel voor het bestand list.csv te verwijderen. is dat bevestigd? gebruiker: ja. organisme: ik heb het bestand list.csv verwijderd. de map bevat 1 bestand: 2 − 1 = 1.
 gebruiker: bewerk het bestand list.csv. organisme: ik stel voor het bestand list.csv te bewerken. is dat bevestigd? gebruiker: nee. organisme: geen bevestiging — de handeling wordt niet uitgevoerd. het bestand list.csv bevat 34 bytes: 34 = 34.
-gebruiker: creëer het bestand notes.md. organisme: het bestand notes.md bestaat al — de handeling wordt niet uitgevoerd. de map bevat 5 bestanden: 5 = 5.
-gebruiker: bewerk het bestand notes.md. organisme: het bestand notes.md bestaat niet — de handeling wordt niet uitgevoerd. de map bevat 0 bestanden: 0 = 0.
+gebruiker: creëer het bestand notes.md. organisme: het bestand notes.md bestaat al — de handeling wordt niet uitgevoerd. gebruiker: hoeveel bestanden zitten er in de map? organisme: de map bevat 5 bestanden: 5 = 5.
+gebruiker: bewerk het bestand notes.md. organisme: het bestand notes.md bestaat niet — de handeling wordt niet uitgevoerd. gebruiker: hoeveel bestanden zitten er in de map? organisme: de map bevat 0 bestanden: 0 = 0.
 gebruiker: creëer het bestand a.txt. organisme: ik stel voor het bestand a.txt te creëren. is dat bevestigd? gebruiker: nee. organisme: geen bevestiging — de handeling wordt niet uitgevoerd. de map bevat 3 bestanden: 3 = 3.
 gebruiker: lees het bestand a.txt. organisme: ik stel voor het bestand a.txt te lezen. is dat bevestigd? gebruiker: ja. organisme: ik heb het bestand a.txt gelezen. het bestand a.txt bevat 7 bytes: 7 = 7.
 gebruiker: creëer het bestand notes.md. organisme: ik stel voor het bestand notes.md te creëren. is dat bevestigd? gebruiker: ja. organisme: ik heb het bestand notes.md gecreëerd. de map bevat 3 bestanden: 2 + 1 = 3.
@@ -270,8 +270,8 @@ gebruiker: verwijder het bestand notes.md. organisme: ik stel voor het bestand n
 użytkownik: ile plików jest w folderze? organizm: folder zawiera 0 plików: 0 = 0.
 użytkownik: usuń plik list.csv. organizm: proponuję usunąć plik list.csv. czy to potwierdzone? użytkownik: tak. organizm: usunąłem plik list.csv. folder zawiera 1 plik: 2 − 1 = 1.
 użytkownik: dopisz plik list.csv. organizm: proponuję dopisać plik list.csv. czy to potwierdzone? użytkownik: nie. organizm: brak potwierdzenia — akt nie zostaje wykonany. plik list.csv zawiera 34 bajty: 34 = 34.
-użytkownik: utwórz plik notes.md. organizm: plik notes.md już istnieje — akt nie zostaje wykonany. folder zawiera 5 plików: 5 = 5.
-użytkownik: dopisz plik notes.md. organizm: pliku notes.md nie ma — akt nie zostaje wykonany. folder zawiera 0 plików: 0 = 0.
+użytkownik: utwórz plik notes.md. organizm: plik notes.md już istnieje — akt nie zostaje wykonany. użytkownik: ile plików jest w folderze? organizm: folder zawiera 5 plików: 5 = 5.
+użytkownik: dopisz plik notes.md. organizm: pliku notes.md nie ma — akt nie zostaje wykonany. użytkownik: ile plików jest w folderze? organizm: folder zawiera 0 plików: 0 = 0.
 użytkownik: utwórz plik a.txt. organizm: proponuję utworzyć plik a.txt. czy to potwierdzone? użytkownik: nie. organizm: brak potwierdzenia — akt nie zostaje wykonany. folder zawiera 3 pliki: 3 = 3.
 użytkownik: przeczytaj plik a.txt. organizm: proponuję przeczytać plik a.txt. czy to potwierdzone? użytkownik: tak. organizm: przeczytałem plik a.txt. plik a.txt zawiera 7 bajtów: 7 = 7.
 użytkownik: utwórz plik notes.md. organizm: proponuję utworzyć plik notes.md. czy to potwierdzone? użytkownik: tak. organizm: utworzyłem plik notes.md. folder zawiera 3 pliki: 2 + 1 = 3.
@@ -279,180 +279,180 @@ użytkownik: usuń plik notes.md. organizm: proponuję usunąć plik notes.md. c
 
 пользователь: удали файл a.txt. организм: предлагаю удалить файл a.txt. подтверждено ли это? пользователь: нет. организм: подтверждения нет — акт не совершён. папка содержит 2 файла: 2 = 2.
 пользователь: сколько файлов в папке? организм: папка содержит 5 файлов: 5 = 5.
-пользователь: создай файл b.txt. организм: файл b.txt уже есть — акт не совершён. папка содержит 3 файла: 3 = 3.
+пользователь: создай файл b.txt. организм: файл b.txt уже есть — акт не совершён. пользователь: сколько файлов в папке? организм: папка содержит 3 файла: 3 = 3.
 пользователь: создай файл list.csv. организм: предлагаю создать файл list.csv. подтверждено ли это? пользователь: нет. организм: подтверждения нет — акт не совершён. папка содержит 2 файла: 2 = 2.
 пользователь: создай файл b.txt. организм: предлагаю создать файл b.txt. подтверждено ли это? пользователь: да. организм: создал файл b.txt. папка содержит 2 файла: 1 + 1 = 2.
 пользователь: допиши файл notes.md. организм: предлагаю дописать файл notes.md. подтверждено ли это? пользователь: да. организм: дописал файл notes.md. файл notes.md содержит 25 байтов: 20 + 5 = 25.
 пользователь: допиши файл b.txt. организм: предлагаю дописать файл b.txt. подтверждено ли это? пользователь: нет. организм: подтверждения нет — акт не совершён. файл b.txt содержит 12 байтов: 12 = 12.
 пользователь: прочитай файл notes.md. организм: предлагаю прочитать файл notes.md. подтверждено ли это? пользователь: нет. организм: подтверждения нет — акт не совершён. файл notes.md содержит 20 байтов: 20 = 20.
-пользователь: прочитай файл b.txt. организм: файла b.txt нет — акт не совершён. папка содержит 0 файлов: 0 = 0.
+пользователь: прочитай файл b.txt. организм: файла b.txt нет — акт не совершён. пользователь: сколько файлов в папке? организм: папка содержит 0 файлов: 0 = 0.
 
 user: delete the file a.txt. organism: i propose to delete the file a.txt. is that confirmed? user: no. organism: no confirmation — the act is not performed. the folder contains 2 files: 2 = 2.
 user: how many files are in the folder? organism: the folder contains 5 files: 5 = 5.
-user: create the file b.txt. organism: the file b.txt is already there — the act is not performed. the folder contains 3 files: 3 = 3.
+user: create the file b.txt. organism: the file b.txt is already there — the act is not performed. user: how many files are in the folder? organism: the folder contains 3 files: 3 = 3.
 user: create the file list.csv. organism: i propose to create the file list.csv. is that confirmed? user: no. organism: no confirmation — the act is not performed. the folder contains 2 files: 2 = 2.
 user: create the file b.txt. organism: i propose to create the file b.txt. is that confirmed? user: yes. organism: created the file b.txt. the folder contains 2 files: 1 + 1 = 2.
 user: append to the file notes.md. organism: i propose to append to the file notes.md. is that confirmed? user: yes. organism: appended to the file notes.md. the file notes.md contains 25 bytes: 20 + 5 = 25.
 user: append to the file b.txt. organism: i propose to append to the file b.txt. is that confirmed? user: no. organism: no confirmation — the act is not performed. the file b.txt contains 12 bytes: 12 = 12.
 user: read the file notes.md. organism: i propose to read the file notes.md. is that confirmed? user: no. organism: no confirmation — the act is not performed. the file notes.md contains 20 bytes: 20 = 20.
-user: read the file b.txt. organism: the file b.txt is not there — the act is not performed. the folder contains 0 files: 0 = 0.
+user: read the file b.txt. organism: the file b.txt is not there — the act is not performed. user: how many files are in the folder? organism: the folder contains 0 files: 0 = 0.
 
 Benutzer: lösche die Datei a.txt. Organismus: ich schlage vor, die Datei a.txt zu löschen. ist das bestätigt? Benutzer: nein. Organismus: keine Bestätigung — die Handlung wird nicht ausgeführt. der Ordner enthält 2 Dateien: 2 = 2.
 Benutzer: wie viele Dateien sind im Ordner? Organismus: der Ordner enthält 5 Dateien: 5 = 5.
-Benutzer: erstelle die Datei b.txt. Organismus: die Datei b.txt gibt es schon — die Handlung wird nicht ausgeführt. der Ordner enthält 3 Dateien: 3 = 3.
+Benutzer: erstelle die Datei b.txt. Organismus: die Datei b.txt gibt es schon — die Handlung wird nicht ausgeführt. Benutzer: wie viele Dateien sind im Ordner? Organismus: der Ordner enthält 3 Dateien: 3 = 3.
 Benutzer: erstelle die Datei list.csv. Organismus: ich schlage vor, die Datei list.csv zu erstellen. ist das bestätigt? Benutzer: nein. Organismus: keine Bestätigung — die Handlung wird nicht ausgeführt. der Ordner enthält 2 Dateien: 2 = 2.
 Benutzer: erstelle die Datei b.txt. Organismus: ich schlage vor, die Datei b.txt zu erstellen. ist das bestätigt? Benutzer: ja. Organismus: ich habe die Datei b.txt erstellt. der Ordner enthält 2 Dateien: 1 + 1 = 2.
 Benutzer: ergänze die Datei notes.md. Organismus: ich schlage vor, die Datei notes.md zu ergänzen. ist das bestätigt? Benutzer: ja. Organismus: ich habe die Datei notes.md ergänzt. die Datei notes.md enthält 25 Byte: 20 + 5 = 25.
 Benutzer: ergänze die Datei b.txt. Organismus: ich schlage vor, die Datei b.txt zu ergänzen. ist das bestätigt? Benutzer: nein. Organismus: keine Bestätigung — die Handlung wird nicht ausgeführt. die Datei b.txt enthält 12 Byte: 12 = 12.
 Benutzer: lies die Datei notes.md. Organismus: ich schlage vor, die Datei notes.md zu lesen. ist das bestätigt? Benutzer: nein. Organismus: keine Bestätigung — die Handlung wird nicht ausgeführt. die Datei notes.md enthält 20 Byte: 20 = 20.
-Benutzer: lies die Datei b.txt. Organismus: die Datei b.txt gibt es nicht — die Handlung wird nicht ausgeführt. der Ordner enthält 0 Dateien: 0 = 0.
+Benutzer: lies die Datei b.txt. Organismus: die Datei b.txt gibt es nicht — die Handlung wird nicht ausgeführt. Benutzer: wie viele Dateien sind im Ordner? Organismus: der Ordner enthält 0 Dateien: 0 = 0.
 
 utilisateur : supprime le fichier a.txt. organisme : je propose de supprimer le fichier a.txt. est-ce confirmé ? utilisateur : non. organisme : pas de confirmation — l'acte n'est pas exécuté. le dossier contient 2 fichiers : 2 = 2.
 utilisateur : combien de fichiers y a-t-il dans le dossier ? organisme : le dossier contient 5 fichiers : 5 = 5.
-utilisateur : crée le fichier b.txt. organisme : le fichier b.txt existe déjà — l'acte n'est pas exécuté. le dossier contient 3 fichiers : 3 = 3.
+utilisateur : crée le fichier b.txt. organisme : le fichier b.txt existe déjà — l'acte n'est pas exécuté. utilisateur : combien de fichiers y a-t-il dans le dossier ? organisme : le dossier contient 3 fichiers : 3 = 3.
 utilisateur : crée le fichier list.csv. organisme : je propose de créer le fichier list.csv. est-ce confirmé ? utilisateur : non. organisme : pas de confirmation — l'acte n'est pas exécuté. le dossier contient 2 fichiers : 2 = 2.
 utilisateur : crée le fichier b.txt. organisme : je propose de créer le fichier b.txt. est-ce confirmé ? utilisateur : oui. organisme : j'ai créé le fichier b.txt. le dossier contient 2 fichiers : 1 + 1 = 2.
 utilisateur : complète le fichier notes.md. organisme : je propose de compléter le fichier notes.md. est-ce confirmé ? utilisateur : oui. organisme : j'ai complété le fichier notes.md. le fichier notes.md contient 25 octets : 20 + 5 = 25.
 utilisateur : complète le fichier b.txt. organisme : je propose de compléter le fichier b.txt. est-ce confirmé ? utilisateur : non. organisme : pas de confirmation — l'acte n'est pas exécuté. le fichier b.txt contient 12 octets : 12 = 12.
 utilisateur : lis le fichier notes.md. organisme : je propose de lire le fichier notes.md. est-ce confirmé ? utilisateur : non. organisme : pas de confirmation — l'acte n'est pas exécuté. le fichier notes.md contient 20 octets : 20 = 20.
-utilisateur : lis le fichier b.txt. organisme : le fichier b.txt n'existe pas — l'acte n'est pas exécuté. le dossier contient 0 fichiers : 0 = 0.
+utilisateur : lis le fichier b.txt. organisme : le fichier b.txt n'existe pas — l'acte n'est pas exécuté. utilisateur : combien de fichiers y a-t-il dans le dossier ? organisme : le dossier contient 0 fichiers : 0 = 0.
 
 usuario: elimina el archivo a.txt. organismo: propongo eliminar el archivo a.txt. ¿es correcto? usuario: no. organismo: sin confirmación — el acto no se realiza. la carpeta contiene 2 archivos: 2 = 2.
 usuario: ¿cuántos archivos hay en la carpeta? organismo: la carpeta contiene 5 archivos: 5 = 5.
-usuario: crea el archivo b.txt. organismo: el archivo b.txt ya existe — el acto no se realiza. la carpeta contiene 3 archivos: 3 = 3.
+usuario: crea el archivo b.txt. organismo: el archivo b.txt ya existe — el acto no se realiza. usuario: ¿cuántos archivos hay en la carpeta? organismo: la carpeta contiene 3 archivos: 3 = 3.
 usuario: crea el archivo list.csv. organismo: propongo crear el archivo list.csv. ¿es correcto? usuario: no. organismo: sin confirmación — el acto no se realiza. la carpeta contiene 2 archivos: 2 = 2.
 usuario: crea el archivo b.txt. organismo: propongo crear el archivo b.txt. ¿es correcto? usuario: sí. organismo: he creado el archivo b.txt. la carpeta contiene 2 archivos: 1 + 1 = 2.
 usuario: amplía el archivo notes.md. organismo: propongo ampliar el archivo notes.md. ¿es correcto? usuario: sí. organismo: he ampliado el archivo notes.md. el archivo notes.md contiene 25 bytes: 20 + 5 = 25.
 usuario: amplía el archivo b.txt. organismo: propongo ampliar el archivo b.txt. ¿es correcto? usuario: no. organismo: sin confirmación — el acto no se realiza. el archivo b.txt contiene 12 bytes: 12 = 12.
 usuario: lee el archivo notes.md. organismo: propongo leer el archivo notes.md. ¿es correcto? usuario: no. organismo: sin confirmación — el acto no se realiza. el archivo notes.md contiene 20 bytes: 20 = 20.
-usuario: lee el archivo b.txt. organismo: el archivo b.txt no existe — el acto no se realiza. la carpeta contiene 0 archivos: 0 = 0.
+usuario: lee el archivo b.txt. organismo: el archivo b.txt no existe — el acto no se realiza. usuario: ¿cuántos archivos hay en la carpeta? organismo: la carpeta contiene 0 archivos: 0 = 0.
 
 utente: elimina il file a.txt. organismo: propongo di eliminare il file a.txt. è confermato? utente: no. organismo: nessuna conferma — l'atto non viene eseguito. la cartella contiene 2 file: 2 = 2.
 utente: quanti file ci sono nella cartella? organismo: la cartella contiene 5 file: 5 = 5.
-utente: crea il file b.txt. organismo: il file b.txt esiste già — l'atto non viene eseguito. la cartella contiene 3 file: 3 = 3.
+utente: crea il file b.txt. organismo: il file b.txt esiste già — l'atto non viene eseguito. utente: quanti file ci sono nella cartella? organismo: la cartella contiene 3 file: 3 = 3.
 utente: crea il file list.csv. organismo: propongo di creare il file list.csv. è confermato? utente: no. organismo: nessuna conferma — l'atto non viene eseguito. la cartella contiene 2 file: 2 = 2.
 utente: crea il file b.txt. organismo: propongo di creare il file b.txt. è confermato? utente: sì. organismo: ho creato il file b.txt. la cartella contiene 2 file: 1 + 1 = 2.
 utente: amplia il file notes.md. organismo: propongo di ampliare il file notes.md. è confermato? utente: sì. organismo: ho ampliato il file notes.md. il file notes.md contiene 25 byte: 20 + 5 = 25.
 utente: amplia il file b.txt. organismo: propongo di ampliare il file b.txt. è confermato? utente: no. organismo: nessuna conferma — l'atto non viene eseguito. il file b.txt contiene 12 byte: 12 = 12.
 utente: leggi il file notes.md. organismo: propongo di leggere il file notes.md. è confermato? utente: no. organismo: nessuna conferma — l'atto non viene eseguito. il file notes.md contiene 20 byte: 20 = 20.
-utente: leggi il file b.txt. organismo: il file b.txt non esiste — l'atto non viene eseguito. la cartella contiene 0 file: 0 = 0.
+utente: leggi il file b.txt. organismo: il file b.txt non esiste — l'atto non viene eseguito. utente: quanti file ci sono nella cartella? organismo: la cartella contiene 0 file: 0 = 0.
 
 utilizador: elimina o ficheiro a.txt. organismo: proponho eliminar o ficheiro a.txt. é confirmado? utilizador: não. organismo: sem confirmação — o ato não é realizado. a pasta contém 2 ficheiros: 2 = 2.
 utilizador: quantos ficheiros há na pasta? organismo: a pasta contém 5 ficheiros: 5 = 5.
-utilizador: cria o ficheiro b.txt. organismo: o ficheiro b.txt já existe — o ato não é realizado. a pasta contém 3 ficheiros: 3 = 3.
+utilizador: cria o ficheiro b.txt. organismo: o ficheiro b.txt já existe — o ato não é realizado. utilizador: quantos ficheiros há na pasta? organismo: a pasta contém 3 ficheiros: 3 = 3.
 utilizador: cria o ficheiro list.csv. organismo: proponho criar o ficheiro list.csv. é confirmado? utilizador: não. organismo: sem confirmação — o ato não é realizado. a pasta contém 2 ficheiros: 2 = 2.
 utilizador: cria o ficheiro b.txt. organismo: proponho criar o ficheiro b.txt. é confirmado? utilizador: sim. organismo: criei o ficheiro b.txt. a pasta contém 2 ficheiros: 1 + 1 = 2.
 utilizador: amplia o ficheiro notes.md. organismo: proponho ampliar o ficheiro notes.md. é confirmado? utilizador: sim. organismo: ampliei o ficheiro notes.md. o ficheiro notes.md contém 25 bytes: 20 + 5 = 25.
 utilizador: amplia o ficheiro b.txt. organismo: proponho ampliar o ficheiro b.txt. é confirmado? utilizador: não. organismo: sem confirmação — o ato não é realizado. o ficheiro b.txt contém 12 bytes: 12 = 12.
 utilizador: lê o ficheiro notes.md. organismo: proponho ler o ficheiro notes.md. é confirmado? utilizador: não. organismo: sem confirmação — o ato não é realizado. o ficheiro notes.md contém 20 bytes: 20 = 20.
-utilizador: lê o ficheiro b.txt. organismo: o ficheiro b.txt não existe — o ato não é realizado. a pasta contém 0 ficheiros: 0 = 0.
+utilizador: lê o ficheiro b.txt. organismo: o ficheiro b.txt não existe — o ato não é realizado. utilizador: quantos ficheiros há na pasta? organismo: a pasta contém 0 ficheiros: 0 = 0.
 
 gebruiker: verwijder het bestand a.txt. organisme: ik stel voor het bestand a.txt te verwijderen. is dat bevestigd? gebruiker: nee. organisme: geen bevestiging — de handeling wordt niet uitgevoerd. de map bevat 2 bestanden: 2 = 2.
 gebruiker: hoeveel bestanden zitten er in de map? organisme: de map bevat 5 bestanden: 5 = 5.
-gebruiker: creëer het bestand b.txt. organisme: het bestand b.txt bestaat al — de handeling wordt niet uitgevoerd. de map bevat 3 bestanden: 3 = 3.
+gebruiker: creëer het bestand b.txt. organisme: het bestand b.txt bestaat al — de handeling wordt niet uitgevoerd. gebruiker: hoeveel bestanden zitten er in de map? organisme: de map bevat 3 bestanden: 3 = 3.
 gebruiker: creëer het bestand list.csv. organisme: ik stel voor het bestand list.csv te creëren. is dat bevestigd? gebruiker: nee. organisme: geen bevestiging — de handeling wordt niet uitgevoerd. de map bevat 2 bestanden: 2 = 2.
 gebruiker: creëer het bestand b.txt. organisme: ik stel voor het bestand b.txt te creëren. is dat bevestigd? gebruiker: ja. organisme: ik heb het bestand b.txt gecreëerd. de map bevat 2 bestanden: 1 + 1 = 2.
 gebruiker: bewerk het bestand notes.md. organisme: ik stel voor het bestand notes.md te bewerken. is dat bevestigd? gebruiker: ja. organisme: ik heb het bestand notes.md bewerkt. het bestand notes.md bevat 25 bytes: 20 + 5 = 25.
 gebruiker: bewerk het bestand b.txt. organisme: ik stel voor het bestand b.txt te bewerken. is dat bevestigd? gebruiker: nee. organisme: geen bevestiging — de handeling wordt niet uitgevoerd. het bestand b.txt bevat 12 bytes: 12 = 12.
 gebruiker: lees het bestand notes.md. organisme: ik stel voor het bestand notes.md te lezen. is dat bevestigd? gebruiker: nee. organisme: geen bevestiging — de handeling wordt niet uitgevoerd. het bestand notes.md bevat 20 bytes: 20 = 20.
-gebruiker: lees het bestand b.txt. organisme: het bestand b.txt bestaat niet — de handeling wordt niet uitgevoerd. de map bevat 0 bestanden: 0 = 0.
+gebruiker: lees het bestand b.txt. organisme: het bestand b.txt bestaat niet — de handeling wordt niet uitgevoerd. gebruiker: hoeveel bestanden zitten er in de map? organisme: de map bevat 0 bestanden: 0 = 0.
 
 użytkownik: usuń plik a.txt. organizm: proponuję usunąć plik a.txt. czy to potwierdzone? użytkownik: nie. organizm: brak potwierdzenia — akt nie zostaje wykonany. folder zawiera 2 pliki: 2 = 2.
 użytkownik: ile plików jest w folderze? organizm: folder zawiera 5 plików: 5 = 5.
-użytkownik: utwórz plik b.txt. organizm: plik b.txt już istnieje — akt nie zostaje wykonany. folder zawiera 3 pliki: 3 = 3.
+użytkownik: utwórz plik b.txt. organizm: plik b.txt już istnieje — akt nie zostaje wykonany. użytkownik: ile plików jest w folderze? organizm: folder zawiera 3 pliki: 3 = 3.
 użytkownik: utwórz plik list.csv. organizm: proponuję utworzyć plik list.csv. czy to potwierdzone? użytkownik: nie. organizm: brak potwierdzenia — akt nie zostaje wykonany. folder zawiera 2 pliki: 2 = 2.
 użytkownik: utwórz plik b.txt. organizm: proponuję utworzyć plik b.txt. czy to potwierdzone? użytkownik: tak. organizm: utworzyłem plik b.txt. folder zawiera 2 pliki: 1 + 1 = 2.
 użytkownik: dopisz plik notes.md. organizm: proponuję dopisać plik notes.md. czy to potwierdzone? użytkownik: tak. organizm: dopisałem plik notes.md. plik notes.md zawiera 25 bajtów: 20 + 5 = 25.
 użytkownik: dopisz plik b.txt. organizm: proponuję dopisać plik b.txt. czy to potwierdzone? użytkownik: nie. organizm: brak potwierdzenia — akt nie zostaje wykonany. plik b.txt zawiera 12 bajtów: 12 = 12.
 użytkownik: przeczytaj plik notes.md. organizm: proponuję przeczytać plik notes.md. czy to potwierdzone? użytkownik: nie. organizm: brak potwierdzenia — akt nie zostaje wykonany. plik notes.md zawiera 20 bajtów: 20 = 20.
-użytkownik: przeczytaj plik b.txt. organizm: pliku b.txt nie ma — akt nie zostaje wykonany. folder zawiera 0 plików: 0 = 0.
+użytkownik: przeczytaj plik b.txt. organizm: pliku b.txt nie ma — akt nie zostaje wykonany. użytkownik: ile plików jest w folderze? organizm: folder zawiera 0 plików: 0 = 0.
 
-пользователь: удали файл a.txt. организм: файла a.txt нет — акт не совершён. папка содержит 0 файлов: 0 = 0.
+пользователь: удали файл a.txt. организм: файла a.txt нет — акт не совершён. пользователь: сколько файлов в папке? организм: папка содержит 0 файлов: 0 = 0.
 пользователь: удали файл a.txt. организм: предлагаю удалить файл a.txt. подтверждено ли это? пользователь: да. организм: удалил файл a.txt. папка содержит 2 файла: 3 − 1 = 2.
 пользователь: прочитай файл a.txt. организм: предлагаю прочитать файл a.txt. подтверждено ли это? пользователь: нет. организм: подтверждения нет — акт не совершён. файл a.txt содержит 7 байтов: 7 = 7.
 пользователь: прочитай файл b.txt. организм: предлагаю прочитать файл b.txt. подтверждено ли это? пользователь: да. организм: прочитал файл b.txt. файл b.txt содержит 12 байтов: 12 = 12.
 пользователь: допиши файл a.txt. организм: предлагаю дописать файл a.txt. подтверждено ли это? пользователь: да. организм: дописал файл a.txt. файл a.txt содержит 12 байтов: 7 + 5 = 12.
 пользователь: допиши файл a.txt. организм: предлагаю дописать файл a.txt. подтверждено ли это? пользователь: нет. организм: подтверждения нет — акт не совершён. файл a.txt содержит 7 байтов: 7 = 7.
 пользователь: создай файл notes.md. организм: предлагаю создать файл notes.md. подтверждено ли это? пользователь: нет. организм: подтверждения нет — акт не совершён. папка содержит 1 файл: 1 = 1.
-пользователь: создай файл a.txt. организм: файл a.txt уже есть — акт не совершён. папка содержит 2 файла: 2 = 2.
+пользователь: создай файл a.txt. организм: файл a.txt уже есть — акт не совершён. пользователь: сколько файлов в папке? организм: папка содержит 2 файла: 2 = 2.
 пользователь: сколько файлов в папке? организм: папка содержит 3 файла: 3 = 3.
 
-user: delete the file a.txt. organism: the file a.txt is not there — the act is not performed. the folder contains 0 files: 0 = 0.
+user: delete the file a.txt. organism: the file a.txt is not there — the act is not performed. user: how many files are in the folder? organism: the folder contains 0 files: 0 = 0.
 user: delete the file a.txt. organism: i propose to delete the file a.txt. is that confirmed? user: yes. organism: deleted the file a.txt. the folder contains 2 files: 3 − 1 = 2.
 user: read the file a.txt. organism: i propose to read the file a.txt. is that confirmed? user: no. organism: no confirmation — the act is not performed. the file a.txt contains 7 bytes: 7 = 7.
 user: read the file b.txt. organism: i propose to read the file b.txt. is that confirmed? user: yes. organism: read the file b.txt. the file b.txt contains 12 bytes: 12 = 12.
 user: append to the file a.txt. organism: i propose to append to the file a.txt. is that confirmed? user: yes. organism: appended to the file a.txt. the file a.txt contains 12 bytes: 7 + 5 = 12.
 user: append to the file a.txt. organism: i propose to append to the file a.txt. is that confirmed? user: no. organism: no confirmation — the act is not performed. the file a.txt contains 7 bytes: 7 = 7.
 user: create the file notes.md. organism: i propose to create the file notes.md. is that confirmed? user: no. organism: no confirmation — the act is not performed. the folder contains 1 file: 1 = 1.
-user: create the file a.txt. organism: the file a.txt is already there — the act is not performed. the folder contains 2 files: 2 = 2.
+user: create the file a.txt. organism: the file a.txt is already there — the act is not performed. user: how many files are in the folder? organism: the folder contains 2 files: 2 = 2.
 user: how many files are in the folder? organism: the folder contains 3 files: 3 = 3.
 
-Benutzer: lösche die Datei a.txt. Organismus: die Datei a.txt gibt es nicht — die Handlung wird nicht ausgeführt. der Ordner enthält 0 Dateien: 0 = 0.
+Benutzer: lösche die Datei a.txt. Organismus: die Datei a.txt gibt es nicht — die Handlung wird nicht ausgeführt. Benutzer: wie viele Dateien sind im Ordner? Organismus: der Ordner enthält 0 Dateien: 0 = 0.
 Benutzer: lösche die Datei a.txt. Organismus: ich schlage vor, die Datei a.txt zu löschen. ist das bestätigt? Benutzer: ja. Organismus: ich habe die Datei a.txt gelöscht. der Ordner enthält 2 Dateien: 3 − 1 = 2.
 Benutzer: lies die Datei a.txt. Organismus: ich schlage vor, die Datei a.txt zu lesen. ist das bestätigt? Benutzer: nein. Organismus: keine Bestätigung — die Handlung wird nicht ausgeführt. die Datei a.txt enthält 7 Byte: 7 = 7.
 Benutzer: lies die Datei b.txt. Organismus: ich schlage vor, die Datei b.txt zu lesen. ist das bestätigt? Benutzer: ja. Organismus: ich habe die Datei b.txt gelesen. die Datei b.txt enthält 12 Byte: 12 = 12.
 Benutzer: ergänze die Datei a.txt. Organismus: ich schlage vor, die Datei a.txt zu ergänzen. ist das bestätigt? Benutzer: ja. Organismus: ich habe die Datei a.txt ergänzt. die Datei a.txt enthält 12 Byte: 7 + 5 = 12.
 Benutzer: ergänze die Datei a.txt. Organismus: ich schlage vor, die Datei a.txt zu ergänzen. ist das bestätigt? Benutzer: nein. Organismus: keine Bestätigung — die Handlung wird nicht ausgeführt. die Datei a.txt enthält 7 Byte: 7 = 7.
 Benutzer: erstelle die Datei notes.md. Organismus: ich schlage vor, die Datei notes.md zu erstellen. ist das bestätigt? Benutzer: nein. Organismus: keine Bestätigung — die Handlung wird nicht ausgeführt. der Ordner enthält 1 Datei: 1 = 1.
-Benutzer: erstelle die Datei a.txt. Organismus: die Datei a.txt gibt es schon — die Handlung wird nicht ausgeführt. der Ordner enthält 2 Dateien: 2 = 2.
+Benutzer: erstelle die Datei a.txt. Organismus: die Datei a.txt gibt es schon — die Handlung wird nicht ausgeführt. Benutzer: wie viele Dateien sind im Ordner? Organismus: der Ordner enthält 2 Dateien: 2 = 2.
 Benutzer: wie viele Dateien sind im Ordner? Organismus: der Ordner enthält 3 Dateien: 3 = 3.
 
-utilisateur : supprime le fichier a.txt. organisme : le fichier a.txt n'existe pas — l'acte n'est pas exécuté. le dossier contient 0 fichiers : 0 = 0.
+utilisateur : supprime le fichier a.txt. organisme : le fichier a.txt n'existe pas — l'acte n'est pas exécuté. utilisateur : combien de fichiers y a-t-il dans le dossier ? organisme : le dossier contient 0 fichiers : 0 = 0.
 utilisateur : supprime le fichier a.txt. organisme : je propose de supprimer le fichier a.txt. est-ce confirmé ? utilisateur : oui. organisme : j'ai supprimé le fichier a.txt. le dossier contient 2 fichiers : 3 − 1 = 2.
 utilisateur : lis le fichier a.txt. organisme : je propose de lire le fichier a.txt. est-ce confirmé ? utilisateur : non. organisme : pas de confirmation — l'acte n'est pas exécuté. le fichier a.txt contient 7 octets : 7 = 7.
 utilisateur : lis le fichier b.txt. organisme : je propose de lire le fichier b.txt. est-ce confirmé ? utilisateur : oui. organisme : j'ai lu le fichier b.txt. le fichier b.txt contient 12 octets : 12 = 12.
 utilisateur : complète le fichier a.txt. organisme : je propose de compléter le fichier a.txt. est-ce confirmé ? utilisateur : oui. organisme : j'ai complété le fichier a.txt. le fichier a.txt contient 12 octets : 7 + 5 = 12.
 utilisateur : complète le fichier a.txt. organisme : je propose de compléter le fichier a.txt. est-ce confirmé ? utilisateur : non. organisme : pas de confirmation — l'acte n'est pas exécuté. le fichier a.txt contient 7 octets : 7 = 7.
 utilisateur : crée le fichier notes.md. organisme : je propose de créer le fichier notes.md. est-ce confirmé ? utilisateur : non. organisme : pas de confirmation — l'acte n'est pas exécuté. le dossier contient 1 fichier : 1 = 1.
-utilisateur : crée le fichier a.txt. organisme : le fichier a.txt existe déjà — l'acte n'est pas exécuté. le dossier contient 2 fichiers : 2 = 2.
+utilisateur : crée le fichier a.txt. organisme : le fichier a.txt existe déjà — l'acte n'est pas exécuté. utilisateur : combien de fichiers y a-t-il dans le dossier ? organisme : le dossier contient 2 fichiers : 2 = 2.
 utilisateur : combien de fichiers y a-t-il dans le dossier ? organisme : le dossier contient 3 fichiers : 3 = 3.
 
-usuario: elimina el archivo a.txt. organismo: el archivo a.txt no existe — el acto no se realiza. la carpeta contiene 0 archivos: 0 = 0.
+usuario: elimina el archivo a.txt. organismo: el archivo a.txt no existe — el acto no se realiza. usuario: ¿cuántos archivos hay en la carpeta? organismo: la carpeta contiene 0 archivos: 0 = 0.
 usuario: elimina el archivo a.txt. organismo: propongo eliminar el archivo a.txt. ¿es correcto? usuario: sí. organismo: he eliminado el archivo a.txt. la carpeta contiene 2 archivos: 3 − 1 = 2.
 usuario: lee el archivo a.txt. organismo: propongo leer el archivo a.txt. ¿es correcto? usuario: no. organismo: sin confirmación — el acto no se realiza. el archivo a.txt contiene 7 bytes: 7 = 7.
 usuario: lee el archivo b.txt. organismo: propongo leer el archivo b.txt. ¿es correcto? usuario: sí. organismo: he leído el archivo b.txt. el archivo b.txt contiene 12 bytes: 12 = 12.
 usuario: amplía el archivo a.txt. organismo: propongo ampliar el archivo a.txt. ¿es correcto? usuario: sí. organismo: he ampliado el archivo a.txt. el archivo a.txt contiene 12 bytes: 7 + 5 = 12.
 usuario: amplía el archivo a.txt. organismo: propongo ampliar el archivo a.txt. ¿es correcto? usuario: no. organismo: sin confirmación — el acto no se realiza. el archivo a.txt contiene 7 bytes: 7 = 7.
 usuario: crea el archivo notes.md. organismo: propongo crear el archivo notes.md. ¿es correcto? usuario: no. organismo: sin confirmación — el acto no se realiza. la carpeta contiene 1 archivo: 1 = 1.
-usuario: crea el archivo a.txt. organismo: el archivo a.txt ya existe — el acto no se realiza. la carpeta contiene 2 archivos: 2 = 2.
+usuario: crea el archivo a.txt. organismo: el archivo a.txt ya existe — el acto no se realiza. usuario: ¿cuántos archivos hay en la carpeta? organismo: la carpeta contiene 2 archivos: 2 = 2.
 usuario: ¿cuántos archivos hay en la carpeta? organismo: la carpeta contiene 3 archivos: 3 = 3.
 
-utente: elimina il file a.txt. organismo: il file a.txt non esiste — l'atto non viene eseguito. la cartella contiene 0 file: 0 = 0.
+utente: elimina il file a.txt. organismo: il file a.txt non esiste — l'atto non viene eseguito. utente: quanti file ci sono nella cartella? organismo: la cartella contiene 0 file: 0 = 0.
 utente: elimina il file a.txt. organismo: propongo di eliminare il file a.txt. è confermato? utente: sì. organismo: ho eliminato il file a.txt. la cartella contiene 2 file: 3 − 1 = 2.
 utente: leggi il file a.txt. organismo: propongo di leggere il file a.txt. è confermato? utente: no. organismo: nessuna conferma — l'atto non viene eseguito. il file a.txt contiene 7 byte: 7 = 7.
 utente: leggi il file b.txt. organismo: propongo di leggere il file b.txt. è confermato? utente: sì. organismo: ho letto il file b.txt. il file b.txt contiene 12 byte: 12 = 12.
 utente: amplia il file a.txt. organismo: propongo di ampliare il file a.txt. è confermato? utente: sì. organismo: ho ampliato il file a.txt. il file a.txt contiene 12 byte: 7 + 5 = 12.
 utente: amplia il file a.txt. organismo: propongo di ampliare il file a.txt. è confermato? utente: no. organismo: nessuna conferma — l'atto non viene eseguito. il file a.txt contiene 7 byte: 7 = 7.
 utente: crea il file notes.md. organismo: propongo di creare il file notes.md. è confermato? utente: no. organismo: nessuna conferma — l'atto non viene eseguito. la cartella contiene 1 file: 1 = 1.
-utente: crea il file a.txt. organismo: il file a.txt esiste già — l'atto non viene eseguito. la cartella contiene 2 file: 2 = 2.
+utente: crea il file a.txt. organismo: il file a.txt esiste già — l'atto non viene eseguito. utente: quanti file ci sono nella cartella? organismo: la cartella contiene 2 file: 2 = 2.
 utente: quanti file ci sono nella cartella? organismo: la cartella contiene 3 file: 3 = 3.
 
-utilizador: elimina o ficheiro a.txt. organismo: o ficheiro a.txt não existe — o ato não é realizado. a pasta contém 0 ficheiros: 0 = 0.
+utilizador: elimina o ficheiro a.txt. organismo: o ficheiro a.txt não existe — o ato não é realizado. utilizador: quantos ficheiros há na pasta? organismo: a pasta contém 0 ficheiros: 0 = 0.
 utilizador: elimina o ficheiro a.txt. organismo: proponho eliminar o ficheiro a.txt. é confirmado? utilizador: sim. organismo: eliminei o ficheiro a.txt. a pasta contém 2 ficheiros: 3 − 1 = 2.
 utilizador: lê o ficheiro a.txt. organismo: proponho ler o ficheiro a.txt. é confirmado? utilizador: não. organismo: sem confirmação — o ato não é realizado. o ficheiro a.txt contém 7 bytes: 7 = 7.
 utilizador: lê o ficheiro b.txt. organismo: proponho ler o ficheiro b.txt. é confirmado? utilizador: sim. organismo: li o ficheiro b.txt. o ficheiro b.txt contém 12 bytes: 12 = 12.
 utilizador: amplia o ficheiro a.txt. organismo: proponho ampliar o ficheiro a.txt. é confirmado? utilizador: sim. organismo: ampliei o ficheiro a.txt. o ficheiro a.txt contém 12 bytes: 7 + 5 = 12.
 utilizador: amplia o ficheiro a.txt. organismo: proponho ampliar o ficheiro a.txt. é confirmado? utilizador: não. organismo: sem confirmação — o ato não é realizado. o ficheiro a.txt contém 7 bytes: 7 = 7.
 utilizador: cria o ficheiro notes.md. organismo: proponho criar o ficheiro notes.md. é confirmado? utilizador: não. organismo: sem confirmação — o ato não é realizado. a pasta contém 1 ficheiro: 1 = 1.
-utilizador: cria o ficheiro a.txt. organismo: o ficheiro a.txt já existe — o ato não é realizado. a pasta contém 2 ficheiros: 2 = 2.
+utilizador: cria o ficheiro a.txt. organismo: o ficheiro a.txt já existe — o ato não é realizado. utilizador: quantos ficheiros há na pasta? organismo: a pasta contém 2 ficheiros: 2 = 2.
 utilizador: quantos ficheiros há na pasta? organismo: a pasta contém 3 ficheiros: 3 = 3.
 
-gebruiker: verwijder het bestand a.txt. organisme: het bestand a.txt bestaat niet — de handeling wordt niet uitgevoerd. de map bevat 0 bestanden: 0 = 0.
+gebruiker: verwijder het bestand a.txt. organisme: het bestand a.txt bestaat niet — de handeling wordt niet uitgevoerd. gebruiker: hoeveel bestanden zitten er in de map? organisme: de map bevat 0 bestanden: 0 = 0.
 gebruiker: verwijder het bestand a.txt. organisme: ik stel voor het bestand a.txt te verwijderen. is dat bevestigd? gebruiker: ja. organisme: ik heb het bestand a.txt verwijderd. de map bevat 2 bestanden: 3 − 1 = 2.
 gebruiker: lees het bestand a.txt. organisme: ik stel voor het bestand a.txt te lezen. is dat bevestigd? gebruiker: nee. organisme: geen bevestiging — de handeling wordt niet uitgevoerd. het bestand a.txt bevat 7 bytes: 7 = 7.
 gebruiker: lees het bestand b.txt. organisme: ik stel voor het bestand b.txt te lezen. is dat bevestigd? gebruiker: ja. organisme: ik heb het bestand b.txt gelezen. het bestand b.txt bevat 12 bytes: 12 = 12.
 gebruiker: bewerk het bestand a.txt. organisme: ik stel voor het bestand a.txt te bewerken. is dat bevestigd? gebruiker: ja. organisme: ik heb het bestand a.txt bewerkt. het bestand a.txt bevat 12 bytes: 7 + 5 = 12.
 gebruiker: bewerk het bestand a.txt. organisme: ik stel voor het bestand a.txt te bewerken. is dat bevestigd? gebruiker: nee. organisme: geen bevestiging — de handeling wordt niet uitgevoerd. het bestand a.txt bevat 7 bytes: 7 = 7.
 gebruiker: creëer het bestand notes.md. organisme: ik stel voor het bestand notes.md te creëren. is dat bevestigd? gebruiker: nee. organisme: geen bevestiging — de handeling wordt niet uitgevoerd. de map bevat 1 bestand: 1 = 1.
-gebruiker: creëer het bestand a.txt. organisme: het bestand a.txt bestaat al — de handeling wordt niet uitgevoerd. de map bevat 2 bestanden: 2 = 2.
+gebruiker: creëer het bestand a.txt. organisme: het bestand a.txt bestaat al — de handeling wordt niet uitgevoerd. gebruiker: hoeveel bestanden zitten er in de map? organisme: de map bevat 2 bestanden: 2 = 2.
 gebruiker: hoeveel bestanden zitten er in de map? organisme: de map bevat 3 bestanden: 3 = 3.
 
-użytkownik: usuń plik a.txt. organizm: pliku a.txt nie ma — akt nie zostaje wykonany. folder zawiera 0 plików: 0 = 0.
+użytkownik: usuń plik a.txt. organizm: pliku a.txt nie ma — akt nie zostaje wykonany. użytkownik: ile plików jest w folderze? organizm: folder zawiera 0 plików: 0 = 0.
 użytkownik: usuń plik a.txt. organizm: proponuję usunąć plik a.txt. czy to potwierdzone? użytkownik: tak. organizm: usunąłem plik a.txt. folder zawiera 2 pliki: 3 − 1 = 2.
 użytkownik: przeczytaj plik a.txt. organizm: proponuję przeczytać plik a.txt. czy to potwierdzone? użytkownik: nie. organizm: brak potwierdzenia — akt nie zostaje wykonany. plik a.txt zawiera 7 bajtów: 7 = 7.
 użytkownik: przeczytaj plik b.txt. organizm: proponuję przeczytać plik b.txt. czy to potwierdzone? użytkownik: tak. organizm: przeczytałem plik b.txt. plik b.txt zawiera 12 bajtów: 12 = 12.
 użytkownik: dopisz plik a.txt. organizm: proponuję dopisać plik a.txt. czy to potwierdzone? użytkownik: tak. organizm: dopisałem plik a.txt. plik a.txt zawiera 12 bajtów: 7 + 5 = 12.
 użytkownik: dopisz plik a.txt. organizm: proponuję dopisać plik a.txt. czy to potwierdzone? użytkownik: nie. organizm: brak potwierdzenia — akt nie zostaje wykonany. plik a.txt zawiera 7 bajtów: 7 = 7.
 użytkownik: utwórz plik notes.md. organizm: proponuję utworzyć plik notes.md. czy to potwierdzone? użytkownik: nie. organizm: brak potwierdzenia — akt nie zostaje wykonany. folder zawiera 1 plik: 1 = 1.
-użytkownik: utwórz plik a.txt. organizm: plik a.txt już istnieje — akt nie zostaje wykonany. folder zawiera 2 pliki: 2 = 2.
+użytkownik: utwórz plik a.txt. organizm: plik a.txt już istnieje — akt nie zostaje wykonany. użytkownik: ile plików jest w folderze? organizm: folder zawiera 2 pliki: 2 = 2.
 użytkownik: ile plików jest w folderze? organizm: folder zawiera 3 pliki: 3 = 3.
