@@ -4682,10 +4682,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 32499110,
+      "size": 32549388,
       "tiers": [],
       "text": "mix",
-      "lines": 363971
+      "lines": 364367
     },
     {
       "name": "minimal",
@@ -9639,6 +9639,22 @@
       "name": "pronobject",
       "file": "datasets/genesis_pronobject.txt",
       "genre": "TRANSFER WITH A PRONOUN OBJECT — the receiver named once, then only pointed at (06.09). Asked for by holon on the measure of omega-ad: SVAMP tact 458 — «Jack gave HIM 20 marbles. Josh had 22 before…» — is answered 22 instead of 42 because «him/her/them» are not bought as pronouns, the market voting with the word in the ACTOR'S place while the OBJECT'S place never votes at all; and the свод could not teach it, carrying «him» in 12 lines and «gave her» in 10 on the whole FULL. Two bearers are NAMED with their counts in the first clause, the second clause transfers a number to a PRONOUN whose antecedent is the SECOND-named person, and the page then asks about one of the two — BOTH askings existing, because one ledger alone lets a reader answer by a rule of position: asked about the giver the ledger SUBTRACTS, asked about the receiver it ADDS, and the question is what decides which. Three pronouns (she, he, they), the giver always of the OTHER gender so the pronoun cannot be resolved by «the only person there is». THE PLACE OF THE OBJECT IS ADJACENCY TO THE VERB, NOT DISTANCE TO THE NUMBER, and the languages part company on the side: after the verb (ru, en, de, nl, pl), before it (fr, es, it), fused to it (pt «deu-LHE»), and after the whole verb for the Italian plural («ha dato LORO»), which has no unambiguous clitic in that slot. A second divergence is declared rather than smoothed: French, Spanish and Portuguese DO NOT MARK GENDER in this pronoun — «lui», «le», «-lhe» serve both — so a court demanding a distinction they do not have would call their honest pages lies, and the court measures the collapse instead of assuming it. The verbs agree: the giver's with the GIVER'S gender where the language moves it, and both the having-verb and the question's verb with the NUMBER of the receiver, which seven of the nine languages move. The interrogative agrees with the GOODS' GENDER where the language bends it («quanti libri» against «quante matite») and is a CELL of the pattern, so a wrong one is named a lie rather than left unjudged (tools/pronobject.py). CLOSED world.",
+      "act": [
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "proform",
+      "file": "datasets/genesis_proform.txt",
+      "genre": "THE PRO-FORM OF THE GOODS — the thing named once, then stood in for (06.09). Asked for by omega-ad: SVAMP tact 510 — «lost 11 marbles and found 5 new ones» — is answered 8 instead of 13 because «ones» is not bought as a GOODS, the fact it carries is left unplaced and the number rides on nothing. The свод could barely teach it: «N new ones» stands in 24 lines, ALL in one world, ALL English, ONE frame, ONE goods, and the pro-form of this shape is absent from the other eight languages. Twenty-four lines of one frame in one language do not buy a pro-form: a market that has met «ones» only after «red apples» has met a collocation, not a stand-in. Three frames: the pro-form is NOT a new goods and the ledger adds it to the goods named BEFORE it; the pro-form survives a SUBTRACTION in between («I had 20, I lost 11 and found 5 new ones»), which is tact 510 exactly and the frame that tells resolution from luck; and the goods named ONCE and elided EVERYWHERE — in the pro-form and in the QUESTION alike — so that only the ANSWER names it again, because a question that repeats the goods lets the reader skip the resolution entirely. The shape of the pro-form is itself a shown fact, and the languages part company twice: ENGLISH CANNOT ELIDE THE NOUN after an adjective and must prop it with «ones», while the other eight leave the bare adjective («5 новых», «5 neue», «5 nouvelles») AGREEING with the gender of the noun that is not there; and the question with the goods elided takes a partitive clitic in French and Italian («combien EN ai-je», «quante NE ho») and nothing at all in the other seven. The signs of the ledger stand as CELLS of the pattern, not letters of the frame, so «9 − 5 = 4» is named a LIE rather than left unjudged (tools/proform.py). CLOSED world.",
       "act": [
         "recount"
       ],
