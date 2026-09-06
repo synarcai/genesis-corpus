@@ -35,53 +35,53 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
                малые={"минута": dict(вопрос="минут", one="минута", few="минуты", many="минут"), "секунда": dict(вопрос="секунд", one="секунда", few="секунды", many="секунд"),
                       "день": dict(вопрос="дней", one="день", few="дня", many="дней"), "час": dict(вопрос="часов", one="час", few="часа", many="часов")},
                словом={2: "двух", 3: "трёх", 4: "четырёх"},
-               рамка=("сколько {М} в {k} {Б}?", "{v}: {k_} × {f} = {v}.")),
+               рамка=("сколько {М} в {k} {Б}?", "{v}: {k_} {зн} {f} = {v}.")),
     "en": dict(большие={"час": dict(many="hours"), "минута": dict(many="minutes"), "неделя": dict(many="weeks"), "сутки": dict(many="days")},
                малые={"минута": dict(вопрос="minutes", one="minute", many="minutes"), "секунда": dict(вопрос="seconds", one="second", many="seconds"),
                       "день": dict(вопрос="days", one="day", many="days"), "час": dict(вопрос="hours", one="hour", many="hours")},
                словом={2: "two", 3: "three", 4: "four"},
-               рамка=("how many {М} are there in {k} {Б}?", "{v}: {k_} × {f} = {v}.")),
-    "de": dict(рамка2=("wie viele {М} haben {k} {Б2}?", "{v}: {k_} × {f} = {v}."),
+               рамка=("how many {М} are there in {k} {Б}?", "{v}: {k_} {зн} {f} = {v}.")),
+    "de": dict(рамка2=("wie viele {М} haben {k} {Б2}?", "{v}: {k_} {зн} {f} = {v}."),
                большие2={"час": dict(many="Stunden"), "минута": dict(many="Minuten"), "неделя": dict(many="Wochen"), "сутки": dict(many="Tage")},
                большие={"час": dict(many="Stunden"), "минута": dict(many="Minuten"), "неделя": dict(many="Wochen"), "сутки": dict(many="Tagen")},
                малые={"минута": dict(вопрос="Minuten", one="Minute", many="Minuten"), "секунда": dict(вопрос="Sekunden", one="Sekunde", many="Sekunden"),
                       "день": dict(вопрос="Tage", one="Tag", many="Tage"), "час": dict(вопрос="Stunden", one="Stunde", many="Stunden")},
                словом={2: "zwei", 3: "drei", 4: "vier"},
-               рамка=("wie viele {М} sind in {k} {Б}?", "{v}: {k_} × {f} = {v}.")),
+               рамка=("wie viele {М} sind in {k} {Б}?", "{v}: {k_} {зн} {f} = {v}.")),
     "fr": dict(большие={"час": dict(many="heures"), "минута": dict(many="minutes"), "неделя": dict(many="semaines"), "сутки": dict(many="jours")},
                малые={"минута": dict(вопрос="minutes", one="minute", many="minutes"), "секунда": dict(вопрос="secondes", one="seconde", many="secondes"),
                       "день": dict(вопрос="jours", one="jour", many="jours"), "час": dict(вопрос="heures", one="heure", many="heures")},
                словом={2: "deux", 3: "trois", 4: "quatre"},
-               рамка=("combien de {М} y a-t-il dans {k} {Б} ?", "{v} : {k_} × {f} = {v}.")),
-    "es": dict(рамка2=("¿cuántos {М} tienen {k} {Б2}?", "{v}: {k_} × {f} = {v}."),
+               рамка=("combien de {М} y a-t-il dans {k} {Б} ?", "{v} : {k_} {зн} {f} = {v}.")),
+    "es": dict(рамка2=("¿cuántos {М} tienen {k} {Б2}?", "{v}: {k_} {зн} {f} = {v}."),
                большие2={"час": dict(many="horas"), "минута": dict(many="minutos"), "неделя": dict(many="semanas"), "сутки": dict(many="días")},
                большие={"час": dict(many="horas"), "минута": dict(many="minutos"), "неделя": dict(many="semanas"), "сутки": dict(many="días")},
                малые={"минута": dict(вопрос="minutos", one="minuto", many="minutos"), "секунда": dict(вопрос="segundos", one="segundo", many="segundos"),
                       "день": dict(вопрос="días", one="día", many="días"), "час": dict(вопрос="horas", one="hora", many="horas")},
                словом={2: "dos", 3: "tres", 4: "cuatro"},
-               рамка=("¿cuántos {М} hay en {k} {Б}?", "{v}: {k_} × {f} = {v}.")),
-    "it": dict(рамка2=("quanti {М} hanno {k} {Б2}?", "{v}: {k_} × {f} = {v}."),
+               рамка=("¿cuántos {М} hay en {k} {Б}?", "{v}: {k_} {зн} {f} = {v}.")),
+    "it": dict(рамка2=("quanti {М} hanno {k} {Б2}?", "{v}: {k_} {зн} {f} = {v}."),
                большие2={"час": dict(many="ore"), "минута": dict(many="minuti"), "неделя": dict(many="settimane"), "сутки": dict(many="giorni")},
                большие={"час": dict(many="ore"), "минута": dict(many="minuti"), "неделя": dict(many="settimane"), "сутки": dict(many="giorni")},
                малые={"минута": dict(вопрос="minuti", one="minuto", many="minuti"), "секунда": dict(вопрос="secondi", one="secondo", many="secondi"),
                       "день": dict(вопрос="giorni", one="giorno", many="giorni"), "час": dict(вопрос="ore", one="ora", many="ore")},
                словом={2: "due", 3: "tre", 4: "quattro"},
-               рамка=("quanti {М} ci sono in {k} {Б}?", "{v}: {k_} × {f} = {v}.")),
-    "pt": dict(рамка2=("quantos {М} têm {k} {Б2}?", "{v}: {k_} × {f} = {v}."),
+               рамка=("quanti {М} ci sono in {k} {Б}?", "{v}: {k_} {зн} {f} = {v}.")),
+    "pt": dict(рамка2=("quantos {М} têm {k} {Б2}?", "{v}: {k_} {зн} {f} = {v}."),
                большие2={"час": dict(many="horas"), "минута": dict(many="minutos"), "неделя": dict(many="semanas"), "сутки": dict(many="dias")},
                большие={"час": dict(many="horas"), "минута": dict(many="minutos"), "неделя": dict(many="semanas"), "сутки": dict(many="dias")},
                малые={"минута": dict(вопрос="minutos", one="minuto", many="minutos"), "секунда": dict(вопрос="segundos", one="segundo", many="segundos"),
                       "день": dict(вопрос="dias", one="dia", many="dias"), "час": dict(вопрос="horas", one="hora", many="horas")},
                словом={2: "duas", 3: "três", 4: "quatro"},
-               рамка=("quantos {М} há em {k} {Б}?", "{v}: {k_} × {f} = {v}.")),
-    "nl": dict(рамка2=("hoeveel {М} hebben {k} {Б2}?", "{v}: {k_} × {f} = {v}."),
+               рамка=("quantos {М} há em {k} {Б}?", "{v}: {k_} {зн} {f} = {v}.")),
+    "nl": dict(рамка2=("hoeveel {М} hebben {k} {Б2}?", "{v}: {k_} {зн} {f} = {v}."),
                большие2={"час": dict(many="uur"), "минута": dict(many="minuten"), "неделя": dict(many="weken"), "сутки": dict(many="dagen")},
                большие={"час": dict(many="uur"), "минута": dict(many="minuten"), "неделя": dict(many="weken"), "сутки": dict(many="dagen")},
                малые={"минута": dict(вопрос="minuten", one="minuut", many="minuten"), "секунда": dict(вопрос="seconden", one="seconde", many="seconden"),
                       "день": dict(вопрос="dagen", one="dag", many="dagen"), "час": dict(вопрос="uur", one="uur", many="uur")},
                словом={2: "twee", 3: "drie", 4: "vier"},
-               рамка=("hoeveel {М} zitten er in {k} {Б}?", "{v}: {k_} × {f} = {v}.")),
-    "pl": dict(рамка2=("ile {М} mają {k} {Б2}?", "{v}: {k_} × {f} = {v}."),
+               рамка=("hoeveel {М} zitten er in {k} {Б}?", "{v}: {k_} {зн} {f} = {v}.")),
+    "pl": dict(рамка2=("ile {М} mają {k} {Б2}?", "{v}: {k_} {зн} {f} = {v}."),
                большие2={"час": dict(few="godziny", many="godzin"), "минута": dict(few="minuty", many="minut"), "неделя": dict(few="tygodnie", many="tygodni"), "сутки": dict(few="doby", many="dób")},
                словом2={"час": {2: "dwie", 3: "trzy", 4: "cztery"}, "минута": {2: "dwie", 3: "trzy", 4: "cztery"}, "неделя": {2: "dwa", 3: "trzy", 4: "cztery"}, "сутки": {2: "dwie", 3: "trzy", 4: "cztery"}},
                большие={"час": dict(few="godzinach", many="godzinach"), "минута": dict(few="minutach", many="minutach"),
@@ -89,7 +89,7 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
                малые={"минута": dict(вопрос="minut", one="minuta", few="minuty", many="minut"), "секунда": dict(вопрос="sekund", one="sekunda", few="sekundy", many="sekund"),
                       "день": dict(вопрос="dni", one="dzień", few="dni", many="dni"), "час": dict(вопрос="godzin", one="godzina", few="godziny", many="godzin")},
                словом={2: "dwóch", 3: "trzech", 4: "czterech"},
-               рамка=("ile {М} jest w {k} {Б}?", "{v}: {k_} × {f} = {v}.")),
+               рамка=("ile {М} jest w {k} {Б}?", "{v}: {k_} {зн} {f} = {v}.")),
 }
 СЧЁТ = (2, 3, 4, 5)
 _ПАКЕТ = {}
@@ -122,7 +122,7 @@ def страница(язык, i, k, словом=True, рамка="рамка")
     сл = _слово(язык, б, k, рамка)
     K = сл if словом and сл else str(k)
     большие = я["большие2"] if рамка == "рамка2" else я["большие"]
-    п = dict(М=я["малые"][м]["вопрос"], k=K, Б=форма(язык, я["большие"][б], k), Б2=форма(язык, большие[б], k), v=v, k_=k, f=f)
+    п = dict(М=я["малые"][м]["вопрос"], k=K, Б=форма(язык, я["большие"][б], k), Б2=форма(язык, большие[б], k), v=v, k_=k, f=f, зн="×")
     воп, отв = я[рамка]
     return f"{воп.format(**п)} {отв.format(**п)}"
 
@@ -150,7 +150,10 @@ def _образцы():
                 "k": r"(?P<k>\d+|" + alt(слова)[1:],
                 "Б": "(?P<Б>" + alt(ф for б in я["большие"].values() for ф in б.values())[1:],
                 "Б2": "(?P<Б2>" + alt(ф for б in я.get("большие2", {}).values() for ф in б.values())[1:] if "большие2" in я else "",
-                "v": r"(?P<v>\d+)", "k_": r"(?P<k_>\d+)", "f": r"(?P<f>\d+)"}
+                "v": r"(?P<v>\d+)", "k_": r"(?P<k_>\d+)", "f": r"(?P<f>\d+)",
+                # ЗНАК ДЕЙСТВИЯ — ДЫРА, А НЕ БУКВА (М-489): «2 ÷ 60 = 120» обязано быть ЛОЖЬЮ,
+                # а не немотой, иначе суд слеп ровно на той порче, ради которой поставлен
+                "зн": r"(?P<zn>[+−×÷])"}
         for рамка in (("рамка", "рамка2") if "рамка2" in я else ("рамка",)):
             видены, куски = set(), []
             for кусок in re.split(r"(\{[^}]+\})", " ".join(я[рамка])):
@@ -182,6 +185,8 @@ def судить(строка):
         б = пара[0]
         слово_k = _слово(язык, б, k, рамка)
         if not (г["k"] == str(k) or г["k"] == слово_k):
+            return True, False
+        if г.get("zn") != "×":
             return True, False
         большие = я["большие2"] if рамка == "рамка2" else я["большие"]
         ключ = "Б2" if рамка == "рамка2" else "Б"
