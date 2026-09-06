@@ -48,39 +48,39 @@ import asking  # noqa: E402 — the house of the pair declares which openers a q
     "ru": dict(вопрос_записи="как записать {n} римскими цифрами?",
                дано="римская запись {R}.", вопрос_числа="какое это число?",
                закон="в записи {R} меньший знак {a} стоит перед большим знаком {b} и вычитается",
-               двоеточие=": "),
+               вопрос_знака="что это значит?", ответ_знака="вычитание", двоеточие=": "),
     "en": dict(вопрос_записи="how is {n} written in roman numerals?",
                дано="the roman numeral {R}.", вопрос_числа="what number is this?",
                закон="in {R} the smaller sign {a} stands before the larger sign {b} and is subtracted",
-               двоеточие=": "),
+               вопрос_знака="what does that mean?", ответ_знака="subtraction", двоеточие=": "),
     "de": dict(вопрос_записи="wie schreibt man {n} in römischen Ziffern?",
                дано="die römische Zahl {R}.", вопрос_числа="welche Zahl ist das?",
                закон="in {R} steht das kleinere Zeichen {a} vor dem größeren Zeichen {b} und wird abgezogen",
-               двоеточие=": "),
+               вопрос_знака="was bedeutet das?", ответ_знака="Subtraktion", двоеточие=": "),
     "fr": dict(вопрос_записи="comment écrit-on {n} en chiffres romains ?",
                дано="le nombre romain {R}.", вопрос_числа="quel nombre est-ce ?",
                закон="dans {R} le signe plus petit {a} est placé devant le signe plus grand {b} et se soustrait",
-               двоеточие=" : "),
+               вопрос_знака="qu'est-ce que cela signifie ?", ответ_знака="une soustraction", двоеточие=" : "),
     "es": dict(вопрос_записи="¿cómo se escribe {n} en números romanos?",
                дано="el número romano {R}.", вопрос_числа="¿qué número es este?",
                закон="en {R} el signo menor {a} está delante del signo mayor {b} y se resta",
-               двоеточие=": "),
+               вопрос_знака="¿qué significa eso?", ответ_знака="una resta", двоеточие=": "),
     "it": dict(вопрос_записи="come si scrive {n} in numeri romani?",
                дано="il numero romano {R}.", вопрос_числа="che numero è questo?",
                закон="in {R} il segno minore {a} sta davanti al segno maggiore {b} e si sottrae",
-               двоеточие=": "),
+               вопрос_знака="che cosa significa?", ответ_знака="una sottrazione", двоеточие=": "),
     "pt": dict(вопрос_записи="como se escreve {n} em algarismos romanos?",
                дано="o número romano {R}.", вопрос_числа="que número é este?",
                закон="em {R} o sinal menor {a} está antes do sinal maior {b} e subtrai-se",
-               двоеточие=": "),
+               вопрос_знака="o que significa isso?", ответ_знака="uma subtração", двоеточие=": "),
     "nl": dict(вопрос_записи="hoe schrijft men {n} in Romeinse cijfers?",
                дано="het Romeinse getal {R}.", вопрос_числа="welk getal is dit?",
                закон="in {R} staat het kleinere teken {a} voor het grotere teken {b} en wordt afgetrokken",
-               двоеточие=": "),
+               вопрос_знака="wat betekent dat?", ответ_знака="aftrekken", двоеточие=": "),
     "pl": dict(вопрос_записи="jak zapisać {n} cyframi rzymskimi?",
                дано="liczba rzymska {R}.", вопрос_числа="jaka to liczba?",
                закон="w {R} mniejszy znak {a} stoi przed większym znakiem {b} i odejmuje się",
-               двоеточие=": "),
+               вопрос_знака="co to znaczy?", ответ_знака="odejmowanie", двоеточие=": "),
 }
 
 
@@ -127,8 +127,10 @@ def рамка(язык, форма):
     if форма == "чтение":
         # ЗАПИСЬ ДАНА — ЧИСЛО СОБРАНО ИЗ ТЕХ ЖЕ ЧАСТЕЙ
         return р["дано"] + " " + р["вопрос_числа"] + " {n}" + р["двоеточие"] + "{L} = {n}."
-    # ЗАКОН ПОРЯДКА: МЕНЬШИЙ ЗНАК ПЕРЕД БОЛЬШИМ ВЫЧИТАЕТСЯ
-    return р["закон"] + р["двоеточие"] + "{vb} − {va} = {r}."
+    # ЗАКОН ПОРЯДКА: МЕНЬШИЙ ЗНАК ПЕРЕД БОЛЬШИМ ВЫЧИТАЕТСЯ — и страница СПРАШИВАЕТ о нём:
+    # объявительная рамка учит форме, но не даёт читателю спросить (храповик ask_width).
+    return (р["закон"] + ". " + р["вопрос_знака"] + " " + р["ответ_знака"]
+            + р["двоеточие"] + "{vb} − {va} = {r}.")
 
 
 def страница(язык, форма, n):

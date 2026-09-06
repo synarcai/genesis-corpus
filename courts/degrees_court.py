@@ -36,14 +36,14 @@ def main():
     # ОБЪЯВЛЕНА ТАМ, ГДЕ ЕЁ НЕТ; неправильность СКРЫТА там, где она есть; цепь отвечает средним
     # именем; вопрос цепи о чужом признаке; обратное не обращено; обращение чужим словом.
     подсадки = (
-        "высокий, ниже, самый высокий — три степени одного признака.",
-        "tall, taller, the shortest — three degrees of one property.",
-        "schnell, schneller, am schnellsten — drei Stufen einer Eigenschaft, und die zweite folgt nicht aus der ersten.",
-        "good, better, the best — three degrees of one property.",
+        "какие три степени у слова «высокий»? высокий, ниже, самый высокий — три степени одного признака.",
+        "what are the three degrees of «tall»? tall, taller, the shortest — three degrees of one property.",
+        "welche drei Stufen hat «schnell»? schnell, schneller, am schnellsten — drei Stufen einer Eigenschaft, und die zweite folgt nicht aus der ersten.",
+        "what are the three degrees of «good»? good, better, the best — three degrees of one property.",
         "Ваня выше, чем Дима. Дима выше, чем Иван. кто самый высокий? Дима: Ваня выше, чем Дима, а Дима выше, чем Иван.",
         "Jonas ist schneller als Paul. Paul ist schneller als Felix. wer ist am größten? Jonas: Jonas ist schneller als Paul, und Paul ist schneller als Felix.",
-        "Jan jest wyższy niż Piotr. więc Piotr jest wyższy niż Jan.",
-        "Ваня быстрее, чем Дима. значит, Дима ниже, чем Ваня.",
+        "Jan jest wyższy niż Piotr. a jaki jest Piotr? wyższy niż Jan.",
+        "Ваня быстрее, чем Дима. каков тогда Дима? ниже, чем Ваня.",
     )
     пойманы = sum(1 for п in подсадки if _судить(п) == (True, False))
     if пойманы != len(подсадки):

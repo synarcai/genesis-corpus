@@ -1,0 +1,413 @@
+пользователь: прочитай файл a.txt. организм: предлагаю прочитать файл a.txt. подтверждено ли это? пользователь: да. организм: прочитал файл a.txt. папка содержит 1 файл: 1 = 1.
+пользователь: удали файл a.txt. организм: предлагаю удалить файл a.txt. подтверждено ли это? пользователь: да. организм: удалил файл a.txt. папка содержит 0 файлов: 1 − 1 = 0.
+пользователь: создай файл a.txt. организм: предлагаю создать файл a.txt. подтверждено ли это? пользователь: да. организм: создал файл a.txt. папка содержит 3 файла: 2 + 1 = 3.
+пользователь: допиши файл a.txt. организм: предлагаю дописать файл a.txt. подтверждено ли это? пользователь: да. организм: дописал файл a.txt. папка содержит 5 файлов: 5 = 5.
+пользователь: прочитай файл a.txt. организм: предлагаю прочитать файл a.txt. подтверждено ли это? пользователь: нет. организм: подтверждения нет — акт не совершён. папка содержит 5 файлов: 5 = 5.
+пользователь: удали файл a.txt. организм: предлагаю удалить файл a.txt. подтверждено ли это? пользователь: нет. организм: подтверждения нет — акт не совершён. папка содержит 3 файла: 3 = 3.
+пользователь: создай файл a.txt. организм: файл a.txt уже есть — акт не совершён. папка содержит 3 файла: 3 = 3.
+пользователь: создай файл a.txt. организм: предлагаю создать файл a.txt. подтверждено ли это? пользователь: да. организм: создал файл a.txt. папка содержит 1 файл: 0 + 1 = 1.
+пользователь: допиши файл a.txt. организм: предлагаю дописать файл a.txt. подтверждено ли это? пользователь: нет. организм: подтверждения нет — акт не совершён. папка содержит 2 файла: 2 = 2.
+
+user: read the file a.txt. organism: i propose to read the file a.txt. is that confirmed? user: yes. organism: read the file a.txt. the folder contains 1 file: 1 = 1.
+user: delete the file a.txt. organism: i propose to delete the file a.txt. is that confirmed? user: yes. organism: deleted the file a.txt. the folder contains 0 files: 1 − 1 = 0.
+user: create the file a.txt. organism: i propose to create the file a.txt. is that confirmed? user: yes. organism: created the file a.txt. the folder contains 3 files: 2 + 1 = 3.
+user: append to the file a.txt. organism: i propose to append to the file a.txt. is that confirmed? user: yes. organism: appended to the file a.txt. the folder contains 5 files: 5 = 5.
+user: read the file a.txt. organism: i propose to read the file a.txt. is that confirmed? user: no. organism: no confirmation — the act is not performed. the folder contains 5 files: 5 = 5.
+user: delete the file a.txt. organism: i propose to delete the file a.txt. is that confirmed? user: no. organism: no confirmation — the act is not performed. the folder contains 3 files: 3 = 3.
+user: create the file a.txt. organism: the file a.txt is already there — the act is not performed. the folder contains 3 files: 3 = 3.
+user: create the file a.txt. organism: i propose to create the file a.txt. is that confirmed? user: yes. organism: created the file a.txt. the folder contains 1 file: 0 + 1 = 1.
+user: append to the file a.txt. organism: i propose to append to the file a.txt. is that confirmed? user: no. organism: no confirmation — the act is not performed. the folder contains 2 files: 2 = 2.
+
+Benutzer: lies die Datei a.txt. Organismus: ich schlage vor, die Datei a.txt zu lesen. ist das bestätigt? Benutzer: ja. Organismus: ich habe die Datei a.txt gelesen. der Ordner enthält 1 Datei: 1 = 1.
+Benutzer: lösche die Datei a.txt. Organismus: ich schlage vor, die Datei a.txt zu löschen. ist das bestätigt? Benutzer: ja. Organismus: ich habe die Datei a.txt gelöscht. der Ordner enthält 0 Dateien: 1 − 1 = 0.
+Benutzer: erstelle die Datei a.txt. Organismus: ich schlage vor, die Datei a.txt zu erstellen. ist das bestätigt? Benutzer: ja. Organismus: ich habe die Datei a.txt erstellt. der Ordner enthält 3 Dateien: 2 + 1 = 3.
+Benutzer: ergänze die Datei a.txt. Organismus: ich schlage vor, die Datei a.txt zu ergänzen. ist das bestätigt? Benutzer: ja. Organismus: ich habe die Datei a.txt ergänzt. der Ordner enthält 5 Dateien: 5 = 5.
+Benutzer: lies die Datei a.txt. Organismus: ich schlage vor, die Datei a.txt zu lesen. ist das bestätigt? Benutzer: nein. Organismus: keine Bestätigung — die Handlung wird nicht ausgeführt. der Ordner enthält 5 Dateien: 5 = 5.
+Benutzer: lösche die Datei a.txt. Organismus: ich schlage vor, die Datei a.txt zu löschen. ist das bestätigt? Benutzer: nein. Organismus: keine Bestätigung — die Handlung wird nicht ausgeführt. der Ordner enthält 3 Dateien: 3 = 3.
+Benutzer: erstelle die Datei a.txt. Organismus: die Datei a.txt gibt es schon — die Handlung wird nicht ausgeführt. der Ordner enthält 3 Dateien: 3 = 3.
+Benutzer: erstelle die Datei a.txt. Organismus: ich schlage vor, die Datei a.txt zu erstellen. ist das bestätigt? Benutzer: ja. Organismus: ich habe die Datei a.txt erstellt. der Ordner enthält 1 Datei: 0 + 1 = 1.
+Benutzer: ergänze die Datei a.txt. Organismus: ich schlage vor, die Datei a.txt zu ergänzen. ist das bestätigt? Benutzer: nein. Organismus: keine Bestätigung — die Handlung wird nicht ausgeführt. der Ordner enthält 2 Dateien: 2 = 2.
+
+utilisateur : lis le fichier a.txt. organisme : je propose de lire le fichier a.txt. est-ce confirmé ? utilisateur : oui. organisme : j'ai lu le fichier a.txt. le dossier contient 1 fichier : 1 = 1.
+utilisateur : supprime le fichier a.txt. organisme : je propose de supprimer le fichier a.txt. est-ce confirmé ? utilisateur : oui. organisme : j'ai supprimé le fichier a.txt. le dossier contient 0 fichiers : 1 − 1 = 0.
+utilisateur : crée le fichier a.txt. organisme : je propose de créer le fichier a.txt. est-ce confirmé ? utilisateur : oui. organisme : j'ai créé le fichier a.txt. le dossier contient 3 fichiers : 2 + 1 = 3.
+utilisateur : complète le fichier a.txt. organisme : je propose de compléter le fichier a.txt. est-ce confirmé ? utilisateur : oui. organisme : j'ai complété le fichier a.txt. le dossier contient 5 fichiers : 5 = 5.
+utilisateur : lis le fichier a.txt. organisme : je propose de lire le fichier a.txt. est-ce confirmé ? utilisateur : non. organisme : pas de confirmation — l'acte n'est pas exécuté. le dossier contient 5 fichiers : 5 = 5.
+utilisateur : supprime le fichier a.txt. organisme : je propose de supprimer le fichier a.txt. est-ce confirmé ? utilisateur : non. organisme : pas de confirmation — l'acte n'est pas exécuté. le dossier contient 3 fichiers : 3 = 3.
+utilisateur : crée le fichier a.txt. organisme : le fichier a.txt existe déjà — l'acte n'est pas exécuté. le dossier contient 3 fichiers : 3 = 3.
+utilisateur : crée le fichier a.txt. organisme : je propose de créer le fichier a.txt. est-ce confirmé ? utilisateur : oui. organisme : j'ai créé le fichier a.txt. le dossier contient 1 fichier : 0 + 1 = 1.
+utilisateur : complète le fichier a.txt. organisme : je propose de compléter le fichier a.txt. est-ce confirmé ? utilisateur : non. organisme : pas de confirmation — l'acte n'est pas exécuté. le dossier contient 2 fichiers : 2 = 2.
+
+usuario: lee el archivo a.txt. organismo: propongo leer el archivo a.txt. ¿es correcto? usuario: sí. organismo: he leído el archivo a.txt. la carpeta contiene 1 archivo: 1 = 1.
+usuario: elimina el archivo a.txt. organismo: propongo eliminar el archivo a.txt. ¿es correcto? usuario: sí. organismo: he eliminado el archivo a.txt. la carpeta contiene 0 archivos: 1 − 1 = 0.
+usuario: crea el archivo a.txt. organismo: propongo crear el archivo a.txt. ¿es correcto? usuario: sí. organismo: he creado el archivo a.txt. la carpeta contiene 3 archivos: 2 + 1 = 3.
+usuario: amplía el archivo a.txt. organismo: propongo ampliar el archivo a.txt. ¿es correcto? usuario: sí. organismo: he ampliado el archivo a.txt. la carpeta contiene 5 archivos: 5 = 5.
+usuario: lee el archivo a.txt. organismo: propongo leer el archivo a.txt. ¿es correcto? usuario: no. organismo: sin confirmación — el acto no se realiza. la carpeta contiene 5 archivos: 5 = 5.
+usuario: elimina el archivo a.txt. organismo: propongo eliminar el archivo a.txt. ¿es correcto? usuario: no. organismo: sin confirmación — el acto no se realiza. la carpeta contiene 3 archivos: 3 = 3.
+usuario: crea el archivo a.txt. organismo: el archivo a.txt ya existe — el acto no se realiza. la carpeta contiene 3 archivos: 3 = 3.
+usuario: crea el archivo a.txt. organismo: propongo crear el archivo a.txt. ¿es correcto? usuario: sí. organismo: he creado el archivo a.txt. la carpeta contiene 1 archivo: 0 + 1 = 1.
+usuario: amplía el archivo a.txt. organismo: propongo ampliar el archivo a.txt. ¿es correcto? usuario: no. organismo: sin confirmación — el acto no se realiza. la carpeta contiene 2 archivos: 2 = 2.
+
+utente: leggi il file a.txt. organismo: propongo di leggere il file a.txt. è confermato? utente: sì. organismo: ho letto il file a.txt. la cartella contiene 1 file: 1 = 1.
+utente: elimina il file a.txt. organismo: propongo di eliminare il file a.txt. è confermato? utente: sì. organismo: ho eliminato il file a.txt. la cartella contiene 0 file: 1 − 1 = 0.
+utente: crea il file a.txt. organismo: propongo di creare il file a.txt. è confermato? utente: sì. organismo: ho creato il file a.txt. la cartella contiene 3 file: 2 + 1 = 3.
+utente: amplia il file a.txt. organismo: propongo di ampliare il file a.txt. è confermato? utente: sì. organismo: ho ampliato il file a.txt. la cartella contiene 5 file: 5 = 5.
+utente: leggi il file a.txt. organismo: propongo di leggere il file a.txt. è confermato? utente: no. organismo: nessuna conferma — l'atto non viene eseguito. la cartella contiene 5 file: 5 = 5.
+utente: elimina il file a.txt. organismo: propongo di eliminare il file a.txt. è confermato? utente: no. organismo: nessuna conferma — l'atto non viene eseguito. la cartella contiene 3 file: 3 = 3.
+utente: crea il file a.txt. organismo: il file a.txt esiste già — l'atto non viene eseguito. la cartella contiene 3 file: 3 = 3.
+utente: crea il file a.txt. organismo: propongo di creare il file a.txt. è confermato? utente: sì. organismo: ho creato il file a.txt. la cartella contiene 1 file: 0 + 1 = 1.
+utente: amplia il file a.txt. organismo: propongo di ampliare il file a.txt. è confermato? utente: no. organismo: nessuna conferma — l'atto non viene eseguito. la cartella contiene 2 file: 2 = 2.
+
+utilizador: lê o ficheiro a.txt. organismo: proponho ler o ficheiro a.txt. é confirmado? utilizador: sim. organismo: li o ficheiro a.txt. a pasta contém 1 ficheiro: 1 = 1.
+utilizador: elimina o ficheiro a.txt. organismo: proponho eliminar o ficheiro a.txt. é confirmado? utilizador: sim. organismo: eliminei o ficheiro a.txt. a pasta contém 0 ficheiros: 1 − 1 = 0.
+utilizador: cria o ficheiro a.txt. organismo: proponho criar o ficheiro a.txt. é confirmado? utilizador: sim. organismo: criei o ficheiro a.txt. a pasta contém 3 ficheiros: 2 + 1 = 3.
+utilizador: amplia o ficheiro a.txt. organismo: proponho ampliar o ficheiro a.txt. é confirmado? utilizador: sim. organismo: ampliei o ficheiro a.txt. a pasta contém 5 ficheiros: 5 = 5.
+utilizador: lê o ficheiro a.txt. organismo: proponho ler o ficheiro a.txt. é confirmado? utilizador: não. organismo: sem confirmação — o ato não é realizado. a pasta contém 5 ficheiros: 5 = 5.
+utilizador: elimina o ficheiro a.txt. organismo: proponho eliminar o ficheiro a.txt. é confirmado? utilizador: não. organismo: sem confirmação — o ato não é realizado. a pasta contém 3 ficheiros: 3 = 3.
+utilizador: cria o ficheiro a.txt. organismo: o ficheiro a.txt já existe — o ato não é realizado. a pasta contém 3 ficheiros: 3 = 3.
+utilizador: cria o ficheiro a.txt. organismo: proponho criar o ficheiro a.txt. é confirmado? utilizador: sim. organismo: criei o ficheiro a.txt. a pasta contém 1 ficheiro: 0 + 1 = 1.
+utilizador: amplia o ficheiro a.txt. organismo: proponho ampliar o ficheiro a.txt. é confirmado? utilizador: não. organismo: sem confirmação — o ato não é realizado. a pasta contém 2 ficheiros: 2 = 2.
+
+gebruiker: lees het bestand a.txt. organisme: ik stel voor het bestand a.txt te lezen. is dat bevestigd? gebruiker: ja. organisme: ik heb het bestand a.txt gelezen. de map bevat 1 bestand: 1 = 1.
+gebruiker: verwijder het bestand a.txt. organisme: ik stel voor het bestand a.txt te verwijderen. is dat bevestigd? gebruiker: ja. organisme: ik heb het bestand a.txt verwijderd. de map bevat 0 bestanden: 1 − 1 = 0.
+gebruiker: creëer het bestand a.txt. organisme: ik stel voor het bestand a.txt te creëren. is dat bevestigd? gebruiker: ja. organisme: ik heb het bestand a.txt gecreëerd. de map bevat 3 bestanden: 2 + 1 = 3.
+gebruiker: bewerk het bestand a.txt. organisme: ik stel voor het bestand a.txt te bewerken. is dat bevestigd? gebruiker: ja. organisme: ik heb het bestand a.txt bewerkt. de map bevat 5 bestanden: 5 = 5.
+gebruiker: lees het bestand a.txt. organisme: ik stel voor het bestand a.txt te lezen. is dat bevestigd? gebruiker: nee. organisme: geen bevestiging — de handeling wordt niet uitgevoerd. de map bevat 5 bestanden: 5 = 5.
+gebruiker: verwijder het bestand a.txt. organisme: ik stel voor het bestand a.txt te verwijderen. is dat bevestigd? gebruiker: nee. organisme: geen bevestiging — de handeling wordt niet uitgevoerd. de map bevat 3 bestanden: 3 = 3.
+gebruiker: creëer het bestand a.txt. organisme: het bestand a.txt bestaat al — de handeling wordt niet uitgevoerd. de map bevat 3 bestanden: 3 = 3.
+gebruiker: creëer het bestand a.txt. organisme: ik stel voor het bestand a.txt te creëren. is dat bevestigd? gebruiker: ja. organisme: ik heb het bestand a.txt gecreëerd. de map bevat 1 bestand: 0 + 1 = 1.
+gebruiker: bewerk het bestand a.txt. organisme: ik stel voor het bestand a.txt te bewerken. is dat bevestigd? gebruiker: nee. organisme: geen bevestiging — de handeling wordt niet uitgevoerd. de map bevat 2 bestanden: 2 = 2.
+
+użytkownik: przeczytaj plik a.txt. organizm: proponuję przeczytać plik a.txt. czy to potwierdzone? użytkownik: tak. organizm: przeczytałem plik a.txt. folder zawiera 1 plik: 1 = 1.
+użytkownik: usuń plik a.txt. organizm: proponuję usunąć plik a.txt. czy to potwierdzone? użytkownik: tak. organizm: usunąłem plik a.txt. folder zawiera 0 plików: 1 − 1 = 0.
+użytkownik: utwórz plik a.txt. organizm: proponuję utworzyć plik a.txt. czy to potwierdzone? użytkownik: tak. organizm: utworzyłem plik a.txt. folder zawiera 3 pliki: 2 + 1 = 3.
+użytkownik: dopisz plik a.txt. organizm: proponuję dopisać plik a.txt. czy to potwierdzone? użytkownik: tak. organizm: dopisałem plik a.txt. folder zawiera 5 plików: 5 = 5.
+użytkownik: przeczytaj plik a.txt. organizm: proponuję przeczytać plik a.txt. czy to potwierdzone? użytkownik: nie. organizm: brak potwierdzenia — akt nie zostaje wykonany. folder zawiera 5 plików: 5 = 5.
+użytkownik: usuń plik a.txt. organizm: proponuję usunąć plik a.txt. czy to potwierdzone? użytkownik: nie. organizm: brak potwierdzenia — akt nie zostaje wykonany. folder zawiera 3 pliki: 3 = 3.
+użytkownik: utwórz plik a.txt. organizm: plik a.txt już istnieje — akt nie zostaje wykonany. folder zawiera 3 pliki: 3 = 3.
+użytkownik: utwórz plik a.txt. organizm: proponuję utworzyć plik a.txt. czy to potwierdzone? użytkownik: tak. organizm: utworzyłem plik a.txt. folder zawiera 1 plik: 0 + 1 = 1.
+użytkownik: dopisz plik a.txt. organizm: proponuję dopisać plik a.txt. czy to potwierdzone? użytkownik: nie. organizm: brak potwierdzenia — akt nie zostaje wykonany. folder zawiera 2 pliki: 2 = 2.
+
+пользователь: создай файл a.txt. организм: предлагаю создать файл a.txt. подтверждено ли это? пользователь: да. организм: создал файл a.txt. папка содержит 6 файлов: 5 + 1 = 6.
+пользователь: прочитай файл a.txt. организм: предлагаю прочитать файл a.txt. подтверждено ли это? пользователь: нет. организм: подтверждения нет — акт не совершён. папка содержит 2 файла: 2 = 2.
+пользователь: создай файл a.txt. организм: предлагаю создать файл a.txt. подтверждено ли это? пользователь: нет. организм: подтверждения нет — акт не совершён. папка содержит 0 файлов: 0 = 0.
+пользователь: удали файл a.txt. организм: предлагаю удалить файл a.txt. подтверждено ли это? пользователь: нет. организм: подтверждения нет — акт не совершён. папка содержит 1 файл: 1 = 1.
+пользователь: прочитай файл a.txt. организм: предлагаю прочитать файл a.txt. подтверждено ли это? пользователь: да. организм: прочитал файл a.txt. папка содержит 5 файлов: 5 = 5.
+пользователь: создай файл a.txt. организм: предлагаю создать файл a.txt. подтверждено ли это? пользователь: нет. организм: подтверждения нет — акт не совершён. папка содержит 2 файла: 2 = 2.
+пользователь: удали файл a.txt. организм: предлагаю удалить файл a.txt. подтверждено ли это? пользователь: да. организм: удалил файл a.txt. папка содержит 4 файла: 5 − 1 = 4.
+пользователь: допиши файл a.txt. организм: предлагаю дописать файл a.txt. подтверждено ли это? пользователь: да. организм: дописал файл a.txt. папка содержит 2 файла: 2 = 2.
+
+user: create the file a.txt. organism: i propose to create the file a.txt. is that confirmed? user: yes. organism: created the file a.txt. the folder contains 6 files: 5 + 1 = 6.
+user: read the file a.txt. organism: i propose to read the file a.txt. is that confirmed? user: no. organism: no confirmation — the act is not performed. the folder contains 2 files: 2 = 2.
+user: create the file a.txt. organism: i propose to create the file a.txt. is that confirmed? user: no. organism: no confirmation — the act is not performed. the folder contains 0 files: 0 = 0.
+user: delete the file a.txt. organism: i propose to delete the file a.txt. is that confirmed? user: no. organism: no confirmation — the act is not performed. the folder contains 1 file: 1 = 1.
+user: read the file a.txt. organism: i propose to read the file a.txt. is that confirmed? user: yes. organism: read the file a.txt. the folder contains 5 files: 5 = 5.
+user: create the file a.txt. organism: i propose to create the file a.txt. is that confirmed? user: no. organism: no confirmation — the act is not performed. the folder contains 2 files: 2 = 2.
+user: delete the file a.txt. organism: i propose to delete the file a.txt. is that confirmed? user: yes. organism: deleted the file a.txt. the folder contains 4 files: 5 − 1 = 4.
+user: append to the file a.txt. organism: i propose to append to the file a.txt. is that confirmed? user: yes. organism: appended to the file a.txt. the folder contains 2 files: 2 = 2.
+
+Benutzer: erstelle die Datei a.txt. Organismus: ich schlage vor, die Datei a.txt zu erstellen. ist das bestätigt? Benutzer: ja. Organismus: ich habe die Datei a.txt erstellt. der Ordner enthält 6 Dateien: 5 + 1 = 6.
+Benutzer: lies die Datei a.txt. Organismus: ich schlage vor, die Datei a.txt zu lesen. ist das bestätigt? Benutzer: nein. Organismus: keine Bestätigung — die Handlung wird nicht ausgeführt. der Ordner enthält 2 Dateien: 2 = 2.
+Benutzer: erstelle die Datei a.txt. Organismus: ich schlage vor, die Datei a.txt zu erstellen. ist das bestätigt? Benutzer: nein. Organismus: keine Bestätigung — die Handlung wird nicht ausgeführt. der Ordner enthält 0 Dateien: 0 = 0.
+Benutzer: lösche die Datei a.txt. Organismus: ich schlage vor, die Datei a.txt zu löschen. ist das bestätigt? Benutzer: nein. Organismus: keine Bestätigung — die Handlung wird nicht ausgeführt. der Ordner enthält 1 Datei: 1 = 1.
+Benutzer: lies die Datei a.txt. Organismus: ich schlage vor, die Datei a.txt zu lesen. ist das bestätigt? Benutzer: ja. Organismus: ich habe die Datei a.txt gelesen. der Ordner enthält 5 Dateien: 5 = 5.
+Benutzer: erstelle die Datei a.txt. Organismus: ich schlage vor, die Datei a.txt zu erstellen. ist das bestätigt? Benutzer: nein. Organismus: keine Bestätigung — die Handlung wird nicht ausgeführt. der Ordner enthält 2 Dateien: 2 = 2.
+Benutzer: lösche die Datei a.txt. Organismus: ich schlage vor, die Datei a.txt zu löschen. ist das bestätigt? Benutzer: ja. Organismus: ich habe die Datei a.txt gelöscht. der Ordner enthält 4 Dateien: 5 − 1 = 4.
+Benutzer: ergänze die Datei a.txt. Organismus: ich schlage vor, die Datei a.txt zu ergänzen. ist das bestätigt? Benutzer: ja. Organismus: ich habe die Datei a.txt ergänzt. der Ordner enthält 2 Dateien: 2 = 2.
+
+utilisateur : crée le fichier a.txt. organisme : je propose de créer le fichier a.txt. est-ce confirmé ? utilisateur : oui. organisme : j'ai créé le fichier a.txt. le dossier contient 6 fichiers : 5 + 1 = 6.
+utilisateur : lis le fichier a.txt. organisme : je propose de lire le fichier a.txt. est-ce confirmé ? utilisateur : non. organisme : pas de confirmation — l'acte n'est pas exécuté. le dossier contient 2 fichiers : 2 = 2.
+utilisateur : crée le fichier a.txt. organisme : je propose de créer le fichier a.txt. est-ce confirmé ? utilisateur : non. organisme : pas de confirmation — l'acte n'est pas exécuté. le dossier contient 0 fichiers : 0 = 0.
+utilisateur : supprime le fichier a.txt. organisme : je propose de supprimer le fichier a.txt. est-ce confirmé ? utilisateur : non. organisme : pas de confirmation — l'acte n'est pas exécuté. le dossier contient 1 fichier : 1 = 1.
+utilisateur : lis le fichier a.txt. organisme : je propose de lire le fichier a.txt. est-ce confirmé ? utilisateur : oui. organisme : j'ai lu le fichier a.txt. le dossier contient 5 fichiers : 5 = 5.
+utilisateur : crée le fichier a.txt. organisme : je propose de créer le fichier a.txt. est-ce confirmé ? utilisateur : non. organisme : pas de confirmation — l'acte n'est pas exécuté. le dossier contient 2 fichiers : 2 = 2.
+utilisateur : supprime le fichier a.txt. organisme : je propose de supprimer le fichier a.txt. est-ce confirmé ? utilisateur : oui. organisme : j'ai supprimé le fichier a.txt. le dossier contient 4 fichiers : 5 − 1 = 4.
+utilisateur : complète le fichier a.txt. organisme : je propose de compléter le fichier a.txt. est-ce confirmé ? utilisateur : oui. organisme : j'ai complété le fichier a.txt. le dossier contient 2 fichiers : 2 = 2.
+
+usuario: crea el archivo a.txt. organismo: propongo crear el archivo a.txt. ¿es correcto? usuario: sí. organismo: he creado el archivo a.txt. la carpeta contiene 6 archivos: 5 + 1 = 6.
+usuario: lee el archivo a.txt. organismo: propongo leer el archivo a.txt. ¿es correcto? usuario: no. organismo: sin confirmación — el acto no se realiza. la carpeta contiene 2 archivos: 2 = 2.
+usuario: crea el archivo a.txt. organismo: propongo crear el archivo a.txt. ¿es correcto? usuario: no. organismo: sin confirmación — el acto no se realiza. la carpeta contiene 0 archivos: 0 = 0.
+usuario: elimina el archivo a.txt. organismo: propongo eliminar el archivo a.txt. ¿es correcto? usuario: no. organismo: sin confirmación — el acto no se realiza. la carpeta contiene 1 archivo: 1 = 1.
+usuario: lee el archivo a.txt. organismo: propongo leer el archivo a.txt. ¿es correcto? usuario: sí. organismo: he leído el archivo a.txt. la carpeta contiene 5 archivos: 5 = 5.
+usuario: crea el archivo a.txt. organismo: propongo crear el archivo a.txt. ¿es correcto? usuario: no. organismo: sin confirmación — el acto no se realiza. la carpeta contiene 2 archivos: 2 = 2.
+usuario: elimina el archivo a.txt. organismo: propongo eliminar el archivo a.txt. ¿es correcto? usuario: sí. organismo: he eliminado el archivo a.txt. la carpeta contiene 4 archivos: 5 − 1 = 4.
+usuario: amplía el archivo a.txt. organismo: propongo ampliar el archivo a.txt. ¿es correcto? usuario: sí. organismo: he ampliado el archivo a.txt. la carpeta contiene 2 archivos: 2 = 2.
+
+utente: crea il file a.txt. organismo: propongo di creare il file a.txt. è confermato? utente: sì. organismo: ho creato il file a.txt. la cartella contiene 6 file: 5 + 1 = 6.
+utente: leggi il file a.txt. organismo: propongo di leggere il file a.txt. è confermato? utente: no. organismo: nessuna conferma — l'atto non viene eseguito. la cartella contiene 2 file: 2 = 2.
+utente: crea il file a.txt. organismo: propongo di creare il file a.txt. è confermato? utente: no. organismo: nessuna conferma — l'atto non viene eseguito. la cartella contiene 0 file: 0 = 0.
+utente: elimina il file a.txt. organismo: propongo di eliminare il file a.txt. è confermato? utente: no. organismo: nessuna conferma — l'atto non viene eseguito. la cartella contiene 1 file: 1 = 1.
+utente: leggi il file a.txt. organismo: propongo di leggere il file a.txt. è confermato? utente: sì. organismo: ho letto il file a.txt. la cartella contiene 5 file: 5 = 5.
+utente: crea il file a.txt. organismo: propongo di creare il file a.txt. è confermato? utente: no. organismo: nessuna conferma — l'atto non viene eseguito. la cartella contiene 2 file: 2 = 2.
+utente: elimina il file a.txt. organismo: propongo di eliminare il file a.txt. è confermato? utente: sì. organismo: ho eliminato il file a.txt. la cartella contiene 4 file: 5 − 1 = 4.
+utente: amplia il file a.txt. organismo: propongo di ampliare il file a.txt. è confermato? utente: sì. organismo: ho ampliato il file a.txt. la cartella contiene 2 file: 2 = 2.
+
+utilizador: cria o ficheiro a.txt. organismo: proponho criar o ficheiro a.txt. é confirmado? utilizador: sim. organismo: criei o ficheiro a.txt. a pasta contém 6 ficheiros: 5 + 1 = 6.
+utilizador: lê o ficheiro a.txt. organismo: proponho ler o ficheiro a.txt. é confirmado? utilizador: não. organismo: sem confirmação — o ato não é realizado. a pasta contém 2 ficheiros: 2 = 2.
+utilizador: cria o ficheiro a.txt. organismo: proponho criar o ficheiro a.txt. é confirmado? utilizador: não. organismo: sem confirmação — o ato não é realizado. a pasta contém 0 ficheiros: 0 = 0.
+utilizador: elimina o ficheiro a.txt. organismo: proponho eliminar o ficheiro a.txt. é confirmado? utilizador: não. organismo: sem confirmação — o ato não é realizado. a pasta contém 1 ficheiro: 1 = 1.
+utilizador: lê o ficheiro a.txt. organismo: proponho ler o ficheiro a.txt. é confirmado? utilizador: sim. organismo: li o ficheiro a.txt. a pasta contém 5 ficheiros: 5 = 5.
+utilizador: cria o ficheiro a.txt. organismo: proponho criar o ficheiro a.txt. é confirmado? utilizador: não. organismo: sem confirmação — o ato não é realizado. a pasta contém 2 ficheiros: 2 = 2.
+utilizador: elimina o ficheiro a.txt. organismo: proponho eliminar o ficheiro a.txt. é confirmado? utilizador: sim. organismo: eliminei o ficheiro a.txt. a pasta contém 4 ficheiros: 5 − 1 = 4.
+utilizador: amplia o ficheiro a.txt. organismo: proponho ampliar o ficheiro a.txt. é confirmado? utilizador: sim. organismo: ampliei o ficheiro a.txt. a pasta contém 2 ficheiros: 2 = 2.
+
+gebruiker: creëer het bestand a.txt. organisme: ik stel voor het bestand a.txt te creëren. is dat bevestigd? gebruiker: ja. organisme: ik heb het bestand a.txt gecreëerd. de map bevat 6 bestanden: 5 + 1 = 6.
+gebruiker: lees het bestand a.txt. organisme: ik stel voor het bestand a.txt te lezen. is dat bevestigd? gebruiker: nee. organisme: geen bevestiging — de handeling wordt niet uitgevoerd. de map bevat 2 bestanden: 2 = 2.
+gebruiker: creëer het bestand a.txt. organisme: ik stel voor het bestand a.txt te creëren. is dat bevestigd? gebruiker: nee. organisme: geen bevestiging — de handeling wordt niet uitgevoerd. de map bevat 0 bestanden: 0 = 0.
+gebruiker: verwijder het bestand a.txt. organisme: ik stel voor het bestand a.txt te verwijderen. is dat bevestigd? gebruiker: nee. organisme: geen bevestiging — de handeling wordt niet uitgevoerd. de map bevat 1 bestand: 1 = 1.
+gebruiker: lees het bestand a.txt. organisme: ik stel voor het bestand a.txt te lezen. is dat bevestigd? gebruiker: ja. organisme: ik heb het bestand a.txt gelezen. de map bevat 5 bestanden: 5 = 5.
+gebruiker: creëer het bestand a.txt. organisme: ik stel voor het bestand a.txt te creëren. is dat bevestigd? gebruiker: nee. organisme: geen bevestiging — de handeling wordt niet uitgevoerd. de map bevat 2 bestanden: 2 = 2.
+gebruiker: verwijder het bestand a.txt. organisme: ik stel voor het bestand a.txt te verwijderen. is dat bevestigd? gebruiker: ja. organisme: ik heb het bestand a.txt verwijderd. de map bevat 4 bestanden: 5 − 1 = 4.
+gebruiker: bewerk het bestand a.txt. organisme: ik stel voor het bestand a.txt te bewerken. is dat bevestigd? gebruiker: ja. organisme: ik heb het bestand a.txt bewerkt. de map bevat 2 bestanden: 2 = 2.
+
+użytkownik: utwórz plik a.txt. organizm: proponuję utworzyć plik a.txt. czy to potwierdzone? użytkownik: tak. organizm: utworzyłem plik a.txt. folder zawiera 6 plików: 5 + 1 = 6.
+użytkownik: przeczytaj plik a.txt. organizm: proponuję przeczytać plik a.txt. czy to potwierdzone? użytkownik: nie. organizm: brak potwierdzenia — akt nie zostaje wykonany. folder zawiera 2 pliki: 2 = 2.
+użytkownik: utwórz plik a.txt. organizm: proponuję utworzyć plik a.txt. czy to potwierdzone? użytkownik: nie. organizm: brak potwierdzenia — akt nie zostaje wykonany. folder zawiera 0 plików: 0 = 0.
+użytkownik: usuń plik a.txt. organizm: proponuję usunąć plik a.txt. czy to potwierdzone? użytkownik: nie. organizm: brak potwierdzenia — akt nie zostaje wykonany. folder zawiera 1 plik: 1 = 1.
+użytkownik: przeczytaj plik a.txt. organizm: proponuję przeczytać plik a.txt. czy to potwierdzone? użytkownik: tak. organizm: przeczytałem plik a.txt. folder zawiera 5 plików: 5 = 5.
+użytkownik: utwórz plik a.txt. organizm: proponuję utworzyć plik a.txt. czy to potwierdzone? użytkownik: nie. organizm: brak potwierdzenia — akt nie zostaje wykonany. folder zawiera 2 pliki: 2 = 2.
+użytkownik: usuń plik a.txt. organizm: proponuję usunąć plik a.txt. czy to potwierdzone? użytkownik: tak. organizm: usunąłem plik a.txt. folder zawiera 4 pliki: 5 − 1 = 4.
+użytkownik: dopisz plik a.txt. organizm: proponuję dopisać plik a.txt. czy to potwierdzone? użytkownik: tak. organizm: dopisałem plik a.txt. folder zawiera 2 pliki: 2 = 2.
+
+пользователь: создай файл a.txt. организм: файл a.txt уже есть — акт не совершён. папка содержит 2 файла: 2 = 2.
+пользователь: допиши файл a.txt. организм: файла a.txt нет — акт не совершён. папка содержит 0 файлов: 0 = 0.
+пользователь: удали файл a.txt. организм: предлагаю удалить файл a.txt. подтверждено ли это? пользователь: да. организм: удалил файл a.txt. папка содержит 1 файл: 2 − 1 = 1.
+пользователь: создай файл a.txt. организм: предлагаю создать файл a.txt. подтверждено ли это? пользователь: да. организм: создал файл a.txt. папка содержит 2 файла: 1 + 1 = 2.
+пользователь: прочитай файл a.txt. организм: предлагаю прочитать файл a.txt. подтверждено ли это? пользователь: да. организм: прочитал файл a.txt. папка содержит 2 файла: 2 = 2.
+пользователь: создай файл a.txt. организм: предлагаю создать файл a.txt. подтверждено ли это? пользователь: нет. организм: подтверждения нет — акт не совершён. папка содержит 5 файлов: 5 = 5.
+пользователь: допиши файл a.txt. организм: предлагаю дописать файл a.txt. подтверждено ли это? пользователь: нет. организм: подтверждения нет — акт не совершён. папка содержит 3 файла: 3 = 3.
+пользователь: удали файл a.txt. организм: предлагаю удалить файл a.txt. подтверждено ли это? пользователь: нет. организм: подтверждения нет — акт не совершён. папка содержит 5 файлов: 5 = 5.
+
+user: create the file a.txt. organism: the file a.txt is already there — the act is not performed. the folder contains 2 files: 2 = 2.
+user: append to the file a.txt. organism: the file a.txt is not there — the act is not performed. the folder contains 0 files: 0 = 0.
+user: delete the file a.txt. organism: i propose to delete the file a.txt. is that confirmed? user: yes. organism: deleted the file a.txt. the folder contains 1 file: 2 − 1 = 1.
+user: create the file a.txt. organism: i propose to create the file a.txt. is that confirmed? user: yes. organism: created the file a.txt. the folder contains 2 files: 1 + 1 = 2.
+user: read the file a.txt. organism: i propose to read the file a.txt. is that confirmed? user: yes. organism: read the file a.txt. the folder contains 2 files: 2 = 2.
+user: create the file a.txt. organism: i propose to create the file a.txt. is that confirmed? user: no. organism: no confirmation — the act is not performed. the folder contains 5 files: 5 = 5.
+user: append to the file a.txt. organism: i propose to append to the file a.txt. is that confirmed? user: no. organism: no confirmation — the act is not performed. the folder contains 3 files: 3 = 3.
+user: delete the file a.txt. organism: i propose to delete the file a.txt. is that confirmed? user: no. organism: no confirmation — the act is not performed. the folder contains 5 files: 5 = 5.
+
+Benutzer: erstelle die Datei a.txt. Organismus: die Datei a.txt gibt es schon — die Handlung wird nicht ausgeführt. der Ordner enthält 2 Dateien: 2 = 2.
+Benutzer: ergänze die Datei a.txt. Organismus: die Datei a.txt gibt es nicht — die Handlung wird nicht ausgeführt. der Ordner enthält 0 Dateien: 0 = 0.
+Benutzer: lösche die Datei a.txt. Organismus: ich schlage vor, die Datei a.txt zu löschen. ist das bestätigt? Benutzer: ja. Organismus: ich habe die Datei a.txt gelöscht. der Ordner enthält 1 Datei: 2 − 1 = 1.
+Benutzer: erstelle die Datei a.txt. Organismus: ich schlage vor, die Datei a.txt zu erstellen. ist das bestätigt? Benutzer: ja. Organismus: ich habe die Datei a.txt erstellt. der Ordner enthält 2 Dateien: 1 + 1 = 2.
+Benutzer: lies die Datei a.txt. Organismus: ich schlage vor, die Datei a.txt zu lesen. ist das bestätigt? Benutzer: ja. Organismus: ich habe die Datei a.txt gelesen. der Ordner enthält 2 Dateien: 2 = 2.
+Benutzer: erstelle die Datei a.txt. Organismus: ich schlage vor, die Datei a.txt zu erstellen. ist das bestätigt? Benutzer: nein. Organismus: keine Bestätigung — die Handlung wird nicht ausgeführt. der Ordner enthält 5 Dateien: 5 = 5.
+Benutzer: ergänze die Datei a.txt. Organismus: ich schlage vor, die Datei a.txt zu ergänzen. ist das bestätigt? Benutzer: nein. Organismus: keine Bestätigung — die Handlung wird nicht ausgeführt. der Ordner enthält 3 Dateien: 3 = 3.
+Benutzer: lösche die Datei a.txt. Organismus: ich schlage vor, die Datei a.txt zu löschen. ist das bestätigt? Benutzer: nein. Organismus: keine Bestätigung — die Handlung wird nicht ausgeführt. der Ordner enthält 5 Dateien: 5 = 5.
+
+utilisateur : crée le fichier a.txt. organisme : le fichier a.txt existe déjà — l'acte n'est pas exécuté. le dossier contient 2 fichiers : 2 = 2.
+utilisateur : complète le fichier a.txt. organisme : le fichier a.txt n'existe pas — l'acte n'est pas exécuté. le dossier contient 0 fichiers : 0 = 0.
+utilisateur : supprime le fichier a.txt. organisme : je propose de supprimer le fichier a.txt. est-ce confirmé ? utilisateur : oui. organisme : j'ai supprimé le fichier a.txt. le dossier contient 1 fichier : 2 − 1 = 1.
+utilisateur : crée le fichier a.txt. organisme : je propose de créer le fichier a.txt. est-ce confirmé ? utilisateur : oui. organisme : j'ai créé le fichier a.txt. le dossier contient 2 fichiers : 1 + 1 = 2.
+utilisateur : lis le fichier a.txt. organisme : je propose de lire le fichier a.txt. est-ce confirmé ? utilisateur : oui. organisme : j'ai lu le fichier a.txt. le dossier contient 2 fichiers : 2 = 2.
+utilisateur : crée le fichier a.txt. organisme : je propose de créer le fichier a.txt. est-ce confirmé ? utilisateur : non. organisme : pas de confirmation — l'acte n'est pas exécuté. le dossier contient 5 fichiers : 5 = 5.
+utilisateur : complète le fichier a.txt. organisme : je propose de compléter le fichier a.txt. est-ce confirmé ? utilisateur : non. organisme : pas de confirmation — l'acte n'est pas exécuté. le dossier contient 3 fichiers : 3 = 3.
+utilisateur : supprime le fichier a.txt. organisme : je propose de supprimer le fichier a.txt. est-ce confirmé ? utilisateur : non. organisme : pas de confirmation — l'acte n'est pas exécuté. le dossier contient 5 fichiers : 5 = 5.
+
+usuario: crea el archivo a.txt. organismo: el archivo a.txt ya existe — el acto no se realiza. la carpeta contiene 2 archivos: 2 = 2.
+usuario: amplía el archivo a.txt. organismo: el archivo a.txt no existe — el acto no se realiza. la carpeta contiene 0 archivos: 0 = 0.
+usuario: elimina el archivo a.txt. organismo: propongo eliminar el archivo a.txt. ¿es correcto? usuario: sí. organismo: he eliminado el archivo a.txt. la carpeta contiene 1 archivo: 2 − 1 = 1.
+usuario: crea el archivo a.txt. organismo: propongo crear el archivo a.txt. ¿es correcto? usuario: sí. organismo: he creado el archivo a.txt. la carpeta contiene 2 archivos: 1 + 1 = 2.
+usuario: lee el archivo a.txt. organismo: propongo leer el archivo a.txt. ¿es correcto? usuario: sí. organismo: he leído el archivo a.txt. la carpeta contiene 2 archivos: 2 = 2.
+usuario: crea el archivo a.txt. organismo: propongo crear el archivo a.txt. ¿es correcto? usuario: no. organismo: sin confirmación — el acto no se realiza. la carpeta contiene 5 archivos: 5 = 5.
+usuario: amplía el archivo a.txt. organismo: propongo ampliar el archivo a.txt. ¿es correcto? usuario: no. organismo: sin confirmación — el acto no se realiza. la carpeta contiene 3 archivos: 3 = 3.
+usuario: elimina el archivo a.txt. organismo: propongo eliminar el archivo a.txt. ¿es correcto? usuario: no. organismo: sin confirmación — el acto no se realiza. la carpeta contiene 5 archivos: 5 = 5.
+
+utente: crea il file a.txt. organismo: il file a.txt esiste già — l'atto non viene eseguito. la cartella contiene 2 file: 2 = 2.
+utente: amplia il file a.txt. organismo: il file a.txt non esiste — l'atto non viene eseguito. la cartella contiene 0 file: 0 = 0.
+utente: elimina il file a.txt. organismo: propongo di eliminare il file a.txt. è confermato? utente: sì. organismo: ho eliminato il file a.txt. la cartella contiene 1 file: 2 − 1 = 1.
+utente: crea il file a.txt. organismo: propongo di creare il file a.txt. è confermato? utente: sì. organismo: ho creato il file a.txt. la cartella contiene 2 file: 1 + 1 = 2.
+utente: leggi il file a.txt. organismo: propongo di leggere il file a.txt. è confermato? utente: sì. organismo: ho letto il file a.txt. la cartella contiene 2 file: 2 = 2.
+utente: crea il file a.txt. organismo: propongo di creare il file a.txt. è confermato? utente: no. organismo: nessuna conferma — l'atto non viene eseguito. la cartella contiene 5 file: 5 = 5.
+utente: amplia il file a.txt. organismo: propongo di ampliare il file a.txt. è confermato? utente: no. organismo: nessuna conferma — l'atto non viene eseguito. la cartella contiene 3 file: 3 = 3.
+utente: elimina il file a.txt. organismo: propongo di eliminare il file a.txt. è confermato? utente: no. organismo: nessuna conferma — l'atto non viene eseguito. la cartella contiene 5 file: 5 = 5.
+
+utilizador: cria o ficheiro a.txt. organismo: o ficheiro a.txt já existe — o ato não é realizado. a pasta contém 2 ficheiros: 2 = 2.
+utilizador: amplia o ficheiro a.txt. organismo: o ficheiro a.txt não existe — o ato não é realizado. a pasta contém 0 ficheiros: 0 = 0.
+utilizador: elimina o ficheiro a.txt. organismo: proponho eliminar o ficheiro a.txt. é confirmado? utilizador: sim. organismo: eliminei o ficheiro a.txt. a pasta contém 1 ficheiro: 2 − 1 = 1.
+utilizador: cria o ficheiro a.txt. organismo: proponho criar o ficheiro a.txt. é confirmado? utilizador: sim. organismo: criei o ficheiro a.txt. a pasta contém 2 ficheiros: 1 + 1 = 2.
+utilizador: lê o ficheiro a.txt. organismo: proponho ler o ficheiro a.txt. é confirmado? utilizador: sim. organismo: li o ficheiro a.txt. a pasta contém 2 ficheiros: 2 = 2.
+utilizador: cria o ficheiro a.txt. organismo: proponho criar o ficheiro a.txt. é confirmado? utilizador: não. organismo: sem confirmação — o ato não é realizado. a pasta contém 5 ficheiros: 5 = 5.
+utilizador: amplia o ficheiro a.txt. organismo: proponho ampliar o ficheiro a.txt. é confirmado? utilizador: não. organismo: sem confirmação — o ato não é realizado. a pasta contém 3 ficheiros: 3 = 3.
+utilizador: elimina o ficheiro a.txt. organismo: proponho eliminar o ficheiro a.txt. é confirmado? utilizador: não. organismo: sem confirmação — o ato não é realizado. a pasta contém 5 ficheiros: 5 = 5.
+
+gebruiker: creëer het bestand a.txt. organisme: het bestand a.txt bestaat al — de handeling wordt niet uitgevoerd. de map bevat 2 bestanden: 2 = 2.
+gebruiker: bewerk het bestand a.txt. organisme: het bestand a.txt bestaat niet — de handeling wordt niet uitgevoerd. de map bevat 0 bestanden: 0 = 0.
+gebruiker: verwijder het bestand a.txt. organisme: ik stel voor het bestand a.txt te verwijderen. is dat bevestigd? gebruiker: ja. organisme: ik heb het bestand a.txt verwijderd. de map bevat 1 bestand: 2 − 1 = 1.
+gebruiker: creëer het bestand a.txt. organisme: ik stel voor het bestand a.txt te creëren. is dat bevestigd? gebruiker: ja. organisme: ik heb het bestand a.txt gecreëerd. de map bevat 2 bestanden: 1 + 1 = 2.
+gebruiker: lees het bestand a.txt. organisme: ik stel voor het bestand a.txt te lezen. is dat bevestigd? gebruiker: ja. organisme: ik heb het bestand a.txt gelezen. de map bevat 2 bestanden: 2 = 2.
+gebruiker: creëer het bestand a.txt. organisme: ik stel voor het bestand a.txt te creëren. is dat bevestigd? gebruiker: nee. organisme: geen bevestiging — de handeling wordt niet uitgevoerd. de map bevat 5 bestanden: 5 = 5.
+gebruiker: bewerk het bestand a.txt. organisme: ik stel voor het bestand a.txt te bewerken. is dat bevestigd? gebruiker: nee. organisme: geen bevestiging — de handeling wordt niet uitgevoerd. de map bevat 3 bestanden: 3 = 3.
+gebruiker: verwijder het bestand a.txt. organisme: ik stel voor het bestand a.txt te verwijderen. is dat bevestigd? gebruiker: nee. organisme: geen bevestiging — de handeling wordt niet uitgevoerd. de map bevat 5 bestanden: 5 = 5.
+
+użytkownik: utwórz plik a.txt. organizm: plik a.txt już istnieje — akt nie zostaje wykonany. folder zawiera 2 pliki: 2 = 2.
+użytkownik: dopisz plik a.txt. organizm: pliku a.txt nie ma — akt nie zostaje wykonany. folder zawiera 0 plików: 0 = 0.
+użytkownik: usuń plik a.txt. organizm: proponuję usunąć plik a.txt. czy to potwierdzone? użytkownik: tak. organizm: usunąłem plik a.txt. folder zawiera 1 plik: 2 − 1 = 1.
+użytkownik: utwórz plik a.txt. organizm: proponuję utworzyć plik a.txt. czy to potwierdzone? użytkownik: tak. organizm: utworzyłem plik a.txt. folder zawiera 2 pliki: 1 + 1 = 2.
+użytkownik: przeczytaj plik a.txt. organizm: proponuję przeczytać plik a.txt. czy to potwierdzone? użytkownik: tak. organizm: przeczytałem plik a.txt. folder zawiera 2 pliki: 2 = 2.
+użytkownik: utwórz plik a.txt. organizm: proponuję utworzyć plik a.txt. czy to potwierdzone? użytkownik: nie. organizm: brak potwierdzenia — akt nie zostaje wykonany. folder zawiera 5 plików: 5 = 5.
+użytkownik: dopisz plik a.txt. organizm: proponuję dopisać plik a.txt. czy to potwierdzone? użytkownik: nie. organizm: brak potwierdzenia — akt nie zostaje wykonany. folder zawiera 3 pliki: 3 = 3.
+użytkownik: usuń plik a.txt. organizm: proponuję usunąć plik a.txt. czy to potwierdzone? użytkownik: nie. organizm: brak potwierdzenia — akt nie zostaje wykonany. folder zawiera 5 plików: 5 = 5.
+
+пользователь: прочитай файл a.txt. организм: файла a.txt нет — акт не совершён. папка содержит 0 файлов: 0 = 0.
+пользователь: прочитай файл a.txt. организм: предлагаю прочитать файл a.txt. подтверждено ли это? пользователь: нет. организм: подтверждения нет — акт не совершён. папка содержит 3 файла: 3 = 3.
+пользователь: допиши файл a.txt. организм: предлагаю дописать файл a.txt. подтверждено ли это? пользователь: нет. организм: подтверждения нет — акт не совершён. папка содержит 1 файл: 1 = 1.
+пользователь: допиши файл a.txt. организм: предлагаю дописать файл a.txt. подтверждено ли это? пользователь: да. организм: дописал файл a.txt. папка содержит 3 файла: 3 = 3.
+пользователь: создай файл a.txt. организм: предлагаю создать файл a.txt. подтверждено ли это? пользователь: нет. организм: подтверждения нет — акт не совершён. папка содержит 1 файл: 1 = 1.
+пользователь: создай файл a.txt. организм: предлагаю создать файл a.txt. подтверждено ли это? пользователь: да. организм: создал файл a.txt. папка содержит 4 файла: 3 + 1 = 4.
+пользователь: создай файл a.txt. организм: файл a.txt уже есть — акт не совершён. папка содержит 5 файлов: 5 = 5.
+пользователь: удали файл a.txt. организм: предлагаю удалить файл a.txt. подтверждено ли это? пользователь: нет. организм: подтверждения нет — акт не совершён. папка содержит 2 файла: 2 = 2.
+
+user: read the file a.txt. organism: the file a.txt is not there — the act is not performed. the folder contains 0 files: 0 = 0.
+user: read the file a.txt. organism: i propose to read the file a.txt. is that confirmed? user: no. organism: no confirmation — the act is not performed. the folder contains 3 files: 3 = 3.
+user: append to the file a.txt. organism: i propose to append to the file a.txt. is that confirmed? user: no. organism: no confirmation — the act is not performed. the folder contains 1 file: 1 = 1.
+user: append to the file a.txt. organism: i propose to append to the file a.txt. is that confirmed? user: yes. organism: appended to the file a.txt. the folder contains 3 files: 3 = 3.
+user: create the file a.txt. organism: i propose to create the file a.txt. is that confirmed? user: no. organism: no confirmation — the act is not performed. the folder contains 1 file: 1 = 1.
+user: create the file a.txt. organism: i propose to create the file a.txt. is that confirmed? user: yes. organism: created the file a.txt. the folder contains 4 files: 3 + 1 = 4.
+user: create the file a.txt. organism: the file a.txt is already there — the act is not performed. the folder contains 5 files: 5 = 5.
+user: delete the file a.txt. organism: i propose to delete the file a.txt. is that confirmed? user: no. organism: no confirmation — the act is not performed. the folder contains 2 files: 2 = 2.
+
+Benutzer: lies die Datei a.txt. Organismus: die Datei a.txt gibt es nicht — die Handlung wird nicht ausgeführt. der Ordner enthält 0 Dateien: 0 = 0.
+Benutzer: lies die Datei a.txt. Organismus: ich schlage vor, die Datei a.txt zu lesen. ist das bestätigt? Benutzer: nein. Organismus: keine Bestätigung — die Handlung wird nicht ausgeführt. der Ordner enthält 3 Dateien: 3 = 3.
+Benutzer: ergänze die Datei a.txt. Organismus: ich schlage vor, die Datei a.txt zu ergänzen. ist das bestätigt? Benutzer: nein. Organismus: keine Bestätigung — die Handlung wird nicht ausgeführt. der Ordner enthält 1 Datei: 1 = 1.
+Benutzer: ergänze die Datei a.txt. Organismus: ich schlage vor, die Datei a.txt zu ergänzen. ist das bestätigt? Benutzer: ja. Organismus: ich habe die Datei a.txt ergänzt. der Ordner enthält 3 Dateien: 3 = 3.
+Benutzer: erstelle die Datei a.txt. Organismus: ich schlage vor, die Datei a.txt zu erstellen. ist das bestätigt? Benutzer: nein. Organismus: keine Bestätigung — die Handlung wird nicht ausgeführt. der Ordner enthält 1 Datei: 1 = 1.
+Benutzer: erstelle die Datei a.txt. Organismus: ich schlage vor, die Datei a.txt zu erstellen. ist das bestätigt? Benutzer: ja. Organismus: ich habe die Datei a.txt erstellt. der Ordner enthält 4 Dateien: 3 + 1 = 4.
+Benutzer: erstelle die Datei a.txt. Organismus: die Datei a.txt gibt es schon — die Handlung wird nicht ausgeführt. der Ordner enthält 5 Dateien: 5 = 5.
+Benutzer: lösche die Datei a.txt. Organismus: ich schlage vor, die Datei a.txt zu löschen. ist das bestätigt? Benutzer: nein. Organismus: keine Bestätigung — die Handlung wird nicht ausgeführt. der Ordner enthält 2 Dateien: 2 = 2.
+
+utilisateur : lis le fichier a.txt. organisme : le fichier a.txt n'existe pas — l'acte n'est pas exécuté. le dossier contient 0 fichiers : 0 = 0.
+utilisateur : lis le fichier a.txt. organisme : je propose de lire le fichier a.txt. est-ce confirmé ? utilisateur : non. organisme : pas de confirmation — l'acte n'est pas exécuté. le dossier contient 3 fichiers : 3 = 3.
+utilisateur : complète le fichier a.txt. organisme : je propose de compléter le fichier a.txt. est-ce confirmé ? utilisateur : non. organisme : pas de confirmation — l'acte n'est pas exécuté. le dossier contient 1 fichier : 1 = 1.
+utilisateur : complète le fichier a.txt. organisme : je propose de compléter le fichier a.txt. est-ce confirmé ? utilisateur : oui. organisme : j'ai complété le fichier a.txt. le dossier contient 3 fichiers : 3 = 3.
+utilisateur : crée le fichier a.txt. organisme : je propose de créer le fichier a.txt. est-ce confirmé ? utilisateur : non. organisme : pas de confirmation — l'acte n'est pas exécuté. le dossier contient 1 fichier : 1 = 1.
+utilisateur : crée le fichier a.txt. organisme : je propose de créer le fichier a.txt. est-ce confirmé ? utilisateur : oui. organisme : j'ai créé le fichier a.txt. le dossier contient 4 fichiers : 3 + 1 = 4.
+utilisateur : crée le fichier a.txt. organisme : le fichier a.txt existe déjà — l'acte n'est pas exécuté. le dossier contient 5 fichiers : 5 = 5.
+utilisateur : supprime le fichier a.txt. organisme : je propose de supprimer le fichier a.txt. est-ce confirmé ? utilisateur : non. organisme : pas de confirmation — l'acte n'est pas exécuté. le dossier contient 2 fichiers : 2 = 2.
+
+usuario: lee el archivo a.txt. organismo: el archivo a.txt no existe — el acto no se realiza. la carpeta contiene 0 archivos: 0 = 0.
+usuario: lee el archivo a.txt. organismo: propongo leer el archivo a.txt. ¿es correcto? usuario: no. organismo: sin confirmación — el acto no se realiza. la carpeta contiene 3 archivos: 3 = 3.
+usuario: amplía el archivo a.txt. organismo: propongo ampliar el archivo a.txt. ¿es correcto? usuario: no. organismo: sin confirmación — el acto no se realiza. la carpeta contiene 1 archivo: 1 = 1.
+usuario: amplía el archivo a.txt. organismo: propongo ampliar el archivo a.txt. ¿es correcto? usuario: sí. organismo: he ampliado el archivo a.txt. la carpeta contiene 3 archivos: 3 = 3.
+usuario: crea el archivo a.txt. organismo: propongo crear el archivo a.txt. ¿es correcto? usuario: no. organismo: sin confirmación — el acto no se realiza. la carpeta contiene 1 archivo: 1 = 1.
+usuario: crea el archivo a.txt. organismo: propongo crear el archivo a.txt. ¿es correcto? usuario: sí. organismo: he creado el archivo a.txt. la carpeta contiene 4 archivos: 3 + 1 = 4.
+usuario: crea el archivo a.txt. organismo: el archivo a.txt ya existe — el acto no se realiza. la carpeta contiene 5 archivos: 5 = 5.
+usuario: elimina el archivo a.txt. organismo: propongo eliminar el archivo a.txt. ¿es correcto? usuario: no. organismo: sin confirmación — el acto no se realiza. la carpeta contiene 2 archivos: 2 = 2.
+
+utente: leggi il file a.txt. organismo: il file a.txt non esiste — l'atto non viene eseguito. la cartella contiene 0 file: 0 = 0.
+utente: leggi il file a.txt. organismo: propongo di leggere il file a.txt. è confermato? utente: no. organismo: nessuna conferma — l'atto non viene eseguito. la cartella contiene 3 file: 3 = 3.
+utente: amplia il file a.txt. organismo: propongo di ampliare il file a.txt. è confermato? utente: no. organismo: nessuna conferma — l'atto non viene eseguito. la cartella contiene 1 file: 1 = 1.
+utente: amplia il file a.txt. organismo: propongo di ampliare il file a.txt. è confermato? utente: sì. organismo: ho ampliato il file a.txt. la cartella contiene 3 file: 3 = 3.
+utente: crea il file a.txt. organismo: propongo di creare il file a.txt. è confermato? utente: no. organismo: nessuna conferma — l'atto non viene eseguito. la cartella contiene 1 file: 1 = 1.
+utente: crea il file a.txt. organismo: propongo di creare il file a.txt. è confermato? utente: sì. organismo: ho creato il file a.txt. la cartella contiene 4 file: 3 + 1 = 4.
+utente: crea il file a.txt. organismo: il file a.txt esiste già — l'atto non viene eseguito. la cartella contiene 5 file: 5 = 5.
+utente: elimina il file a.txt. organismo: propongo di eliminare il file a.txt. è confermato? utente: no. organismo: nessuna conferma — l'atto non viene eseguito. la cartella contiene 2 file: 2 = 2.
+
+utilizador: lê o ficheiro a.txt. organismo: o ficheiro a.txt não existe — o ato não é realizado. a pasta contém 0 ficheiros: 0 = 0.
+utilizador: lê o ficheiro a.txt. organismo: proponho ler o ficheiro a.txt. é confirmado? utilizador: não. organismo: sem confirmação — o ato não é realizado. a pasta contém 3 ficheiros: 3 = 3.
+utilizador: amplia o ficheiro a.txt. organismo: proponho ampliar o ficheiro a.txt. é confirmado? utilizador: não. organismo: sem confirmação — o ato não é realizado. a pasta contém 1 ficheiro: 1 = 1.
+utilizador: amplia o ficheiro a.txt. organismo: proponho ampliar o ficheiro a.txt. é confirmado? utilizador: sim. organismo: ampliei o ficheiro a.txt. a pasta contém 3 ficheiros: 3 = 3.
+utilizador: cria o ficheiro a.txt. organismo: proponho criar o ficheiro a.txt. é confirmado? utilizador: não. organismo: sem confirmação — o ato não é realizado. a pasta contém 1 ficheiro: 1 = 1.
+utilizador: cria o ficheiro a.txt. organismo: proponho criar o ficheiro a.txt. é confirmado? utilizador: sim. organismo: criei o ficheiro a.txt. a pasta contém 4 ficheiros: 3 + 1 = 4.
+utilizador: cria o ficheiro a.txt. organismo: o ficheiro a.txt já existe — o ato não é realizado. a pasta contém 5 ficheiros: 5 = 5.
+utilizador: elimina o ficheiro a.txt. organismo: proponho eliminar o ficheiro a.txt. é confirmado? utilizador: não. organismo: sem confirmação — o ato não é realizado. a pasta contém 2 ficheiros: 2 = 2.
+
+gebruiker: lees het bestand a.txt. organisme: het bestand a.txt bestaat niet — de handeling wordt niet uitgevoerd. de map bevat 0 bestanden: 0 = 0.
+gebruiker: lees het bestand a.txt. organisme: ik stel voor het bestand a.txt te lezen. is dat bevestigd? gebruiker: nee. organisme: geen bevestiging — de handeling wordt niet uitgevoerd. de map bevat 3 bestanden: 3 = 3.
+gebruiker: bewerk het bestand a.txt. organisme: ik stel voor het bestand a.txt te bewerken. is dat bevestigd? gebruiker: nee. organisme: geen bevestiging — de handeling wordt niet uitgevoerd. de map bevat 1 bestand: 1 = 1.
+gebruiker: bewerk het bestand a.txt. organisme: ik stel voor het bestand a.txt te bewerken. is dat bevestigd? gebruiker: ja. organisme: ik heb het bestand a.txt bewerkt. de map bevat 3 bestanden: 3 = 3.
+gebruiker: creëer het bestand a.txt. organisme: ik stel voor het bestand a.txt te creëren. is dat bevestigd? gebruiker: nee. organisme: geen bevestiging — de handeling wordt niet uitgevoerd. de map bevat 1 bestand: 1 = 1.
+gebruiker: creëer het bestand a.txt. organisme: ik stel voor het bestand a.txt te creëren. is dat bevestigd? gebruiker: ja. organisme: ik heb het bestand a.txt gecreëerd. de map bevat 4 bestanden: 3 + 1 = 4.
+gebruiker: creëer het bestand a.txt. organisme: het bestand a.txt bestaat al — de handeling wordt niet uitgevoerd. de map bevat 5 bestanden: 5 = 5.
+gebruiker: verwijder het bestand a.txt. organisme: ik stel voor het bestand a.txt te verwijderen. is dat bevestigd? gebruiker: nee. organisme: geen bevestiging — de handeling wordt niet uitgevoerd. de map bevat 2 bestanden: 2 = 2.
+
+użytkownik: przeczytaj plik a.txt. organizm: pliku a.txt nie ma — akt nie zostaje wykonany. folder zawiera 0 plików: 0 = 0.
+użytkownik: przeczytaj plik a.txt. organizm: proponuję przeczytać plik a.txt. czy to potwierdzone? użytkownik: nie. organizm: brak potwierdzenia — akt nie zostaje wykonany. folder zawiera 3 pliki: 3 = 3.
+użytkownik: dopisz plik a.txt. organizm: proponuję dopisać plik a.txt. czy to potwierdzone? użytkownik: nie. organizm: brak potwierdzenia — akt nie zostaje wykonany. folder zawiera 1 plik: 1 = 1.
+użytkownik: dopisz plik a.txt. organizm: proponuję dopisać plik a.txt. czy to potwierdzone? użytkownik: tak. organizm: dopisałem plik a.txt. folder zawiera 3 pliki: 3 = 3.
+użytkownik: utwórz plik a.txt. organizm: proponuję utworzyć plik a.txt. czy to potwierdzone? użytkownik: nie. organizm: brak potwierdzenia — akt nie zostaje wykonany. folder zawiera 1 plik: 1 = 1.
+użytkownik: utwórz plik a.txt. organizm: proponuję utworzyć plik a.txt. czy to potwierdzone? użytkownik: tak. organizm: utworzyłem plik a.txt. folder zawiera 4 pliki: 3 + 1 = 4.
+użytkownik: utwórz plik a.txt. organizm: plik a.txt już istnieje — akt nie zostaje wykonany. folder zawiera 5 plików: 5 = 5.
+użytkownik: usuń plik a.txt. organizm: proponuję usunąć plik a.txt. czy to potwierdzone? użytkownik: nie. organizm: brak potwierdzenia — akt nie zostaje wykonany. folder zawiera 2 pliki: 2 = 2.
+
+пользователь: прочитай файл a.txt. организм: предлагаю прочитать файл a.txt. подтверждено ли это? пользователь: нет. организм: подтверждения нет — акт не совершён. папка содержит 1 файл: 1 = 1.
+пользователь: допиши файл a.txt. организм: предлагаю дописать файл a.txt. подтверждено ли это? пользователь: нет. организм: подтверждения нет — акт не совершён. папка содержит 5 файлов: 5 = 5.
+пользователь: удали файл a.txt. организм: файла a.txt нет — акт не совершён. папка содержит 0 файлов: 0 = 0.
+пользователь: прочитай файл a.txt. организм: предлагаю прочитать файл a.txt. подтверждено ли это? пользователь: да. организм: прочитал файл a.txt. папка содержит 3 файла: 3 = 3.
+пользователь: создай файл a.txt. организм: файл a.txt уже есть — акт не совершён. папка содержит 1 файл: 1 = 1.
+пользователь: удали файл a.txt. организм: предлагаю удалить файл a.txt. подтверждено ли это? пользователь: да. организм: удалил файл a.txt. папка содержит 2 файла: 3 − 1 = 2.
+пользователь: допиши файл a.txt. организм: предлагаю дописать файл a.txt. подтверждено ли это? пользователь: да. организм: дописал файл a.txt. папка содержит 1 файл: 1 = 1.
+пользователь: создай файл a.txt. организм: предлагаю создать файл a.txt. подтверждено ли это? пользователь: нет. организм: подтверждения нет — акт не совершён. папка содержит 3 файла: 3 = 3.
+
+user: read the file a.txt. organism: i propose to read the file a.txt. is that confirmed? user: no. organism: no confirmation — the act is not performed. the folder contains 1 file: 1 = 1.
+user: append to the file a.txt. organism: i propose to append to the file a.txt. is that confirmed? user: no. organism: no confirmation — the act is not performed. the folder contains 5 files: 5 = 5.
+user: delete the file a.txt. organism: the file a.txt is not there — the act is not performed. the folder contains 0 files: 0 = 0.
+user: read the file a.txt. organism: i propose to read the file a.txt. is that confirmed? user: yes. organism: read the file a.txt. the folder contains 3 files: 3 = 3.
+user: create the file a.txt. organism: the file a.txt is already there — the act is not performed. the folder contains 1 file: 1 = 1.
+user: delete the file a.txt. organism: i propose to delete the file a.txt. is that confirmed? user: yes. organism: deleted the file a.txt. the folder contains 2 files: 3 − 1 = 2.
+user: append to the file a.txt. organism: i propose to append to the file a.txt. is that confirmed? user: yes. organism: appended to the file a.txt. the folder contains 1 file: 1 = 1.
+user: create the file a.txt. organism: i propose to create the file a.txt. is that confirmed? user: no. organism: no confirmation — the act is not performed. the folder contains 3 files: 3 = 3.
+
+Benutzer: lies die Datei a.txt. Organismus: ich schlage vor, die Datei a.txt zu lesen. ist das bestätigt? Benutzer: nein. Organismus: keine Bestätigung — die Handlung wird nicht ausgeführt. der Ordner enthält 1 Datei: 1 = 1.
+Benutzer: ergänze die Datei a.txt. Organismus: ich schlage vor, die Datei a.txt zu ergänzen. ist das bestätigt? Benutzer: nein. Organismus: keine Bestätigung — die Handlung wird nicht ausgeführt. der Ordner enthält 5 Dateien: 5 = 5.
+Benutzer: lösche die Datei a.txt. Organismus: die Datei a.txt gibt es nicht — die Handlung wird nicht ausgeführt. der Ordner enthält 0 Dateien: 0 = 0.
+Benutzer: lies die Datei a.txt. Organismus: ich schlage vor, die Datei a.txt zu lesen. ist das bestätigt? Benutzer: ja. Organismus: ich habe die Datei a.txt gelesen. der Ordner enthält 3 Dateien: 3 = 3.
+Benutzer: erstelle die Datei a.txt. Organismus: die Datei a.txt gibt es schon — die Handlung wird nicht ausgeführt. der Ordner enthält 1 Datei: 1 = 1.
+Benutzer: lösche die Datei a.txt. Organismus: ich schlage vor, die Datei a.txt zu löschen. ist das bestätigt? Benutzer: ja. Organismus: ich habe die Datei a.txt gelöscht. der Ordner enthält 2 Dateien: 3 − 1 = 2.
+Benutzer: ergänze die Datei a.txt. Organismus: ich schlage vor, die Datei a.txt zu ergänzen. ist das bestätigt? Benutzer: ja. Organismus: ich habe die Datei a.txt ergänzt. der Ordner enthält 1 Datei: 1 = 1.
+Benutzer: erstelle die Datei a.txt. Organismus: ich schlage vor, die Datei a.txt zu erstellen. ist das bestätigt? Benutzer: nein. Organismus: keine Bestätigung — die Handlung wird nicht ausgeführt. der Ordner enthält 3 Dateien: 3 = 3.
+
+utilisateur : lis le fichier a.txt. organisme : je propose de lire le fichier a.txt. est-ce confirmé ? utilisateur : non. organisme : pas de confirmation — l'acte n'est pas exécuté. le dossier contient 1 fichier : 1 = 1.
+utilisateur : complète le fichier a.txt. organisme : je propose de compléter le fichier a.txt. est-ce confirmé ? utilisateur : non. organisme : pas de confirmation — l'acte n'est pas exécuté. le dossier contient 5 fichiers : 5 = 5.
+utilisateur : supprime le fichier a.txt. organisme : le fichier a.txt n'existe pas — l'acte n'est pas exécuté. le dossier contient 0 fichiers : 0 = 0.
+utilisateur : lis le fichier a.txt. organisme : je propose de lire le fichier a.txt. est-ce confirmé ? utilisateur : oui. organisme : j'ai lu le fichier a.txt. le dossier contient 3 fichiers : 3 = 3.
+utilisateur : crée le fichier a.txt. organisme : le fichier a.txt existe déjà — l'acte n'est pas exécuté. le dossier contient 1 fichier : 1 = 1.
+utilisateur : supprime le fichier a.txt. organisme : je propose de supprimer le fichier a.txt. est-ce confirmé ? utilisateur : oui. organisme : j'ai supprimé le fichier a.txt. le dossier contient 2 fichiers : 3 − 1 = 2.
+utilisateur : complète le fichier a.txt. organisme : je propose de compléter le fichier a.txt. est-ce confirmé ? utilisateur : oui. organisme : j'ai complété le fichier a.txt. le dossier contient 1 fichier : 1 = 1.
+utilisateur : crée le fichier a.txt. organisme : je propose de créer le fichier a.txt. est-ce confirmé ? utilisateur : non. organisme : pas de confirmation — l'acte n'est pas exécuté. le dossier contient 3 fichiers : 3 = 3.
+
+usuario: lee el archivo a.txt. organismo: propongo leer el archivo a.txt. ¿es correcto? usuario: no. organismo: sin confirmación — el acto no se realiza. la carpeta contiene 1 archivo: 1 = 1.
+usuario: amplía el archivo a.txt. organismo: propongo ampliar el archivo a.txt. ¿es correcto? usuario: no. organismo: sin confirmación — el acto no se realiza. la carpeta contiene 5 archivos: 5 = 5.
+usuario: elimina el archivo a.txt. organismo: el archivo a.txt no existe — el acto no se realiza. la carpeta contiene 0 archivos: 0 = 0.
+usuario: lee el archivo a.txt. organismo: propongo leer el archivo a.txt. ¿es correcto? usuario: sí. organismo: he leído el archivo a.txt. la carpeta contiene 3 archivos: 3 = 3.
+usuario: crea el archivo a.txt. organismo: el archivo a.txt ya existe — el acto no se realiza. la carpeta contiene 1 archivo: 1 = 1.
+usuario: elimina el archivo a.txt. organismo: propongo eliminar el archivo a.txt. ¿es correcto? usuario: sí. organismo: he eliminado el archivo a.txt. la carpeta contiene 2 archivos: 3 − 1 = 2.
+usuario: amplía el archivo a.txt. organismo: propongo ampliar el archivo a.txt. ¿es correcto? usuario: sí. organismo: he ampliado el archivo a.txt. la carpeta contiene 1 archivo: 1 = 1.
+usuario: crea el archivo a.txt. organismo: propongo crear el archivo a.txt. ¿es correcto? usuario: no. organismo: sin confirmación — el acto no se realiza. la carpeta contiene 3 archivos: 3 = 3.
+
+utente: leggi il file a.txt. organismo: propongo di leggere il file a.txt. è confermato? utente: no. organismo: nessuna conferma — l'atto non viene eseguito. la cartella contiene 1 file: 1 = 1.
+utente: amplia il file a.txt. organismo: propongo di ampliare il file a.txt. è confermato? utente: no. organismo: nessuna conferma — l'atto non viene eseguito. la cartella contiene 5 file: 5 = 5.
+utente: elimina il file a.txt. organismo: il file a.txt non esiste — l'atto non viene eseguito. la cartella contiene 0 file: 0 = 0.
+utente: leggi il file a.txt. organismo: propongo di leggere il file a.txt. è confermato? utente: sì. organismo: ho letto il file a.txt. la cartella contiene 3 file: 3 = 3.
+utente: crea il file a.txt. organismo: il file a.txt esiste già — l'atto non viene eseguito. la cartella contiene 1 file: 1 = 1.
+utente: elimina il file a.txt. organismo: propongo di eliminare il file a.txt. è confermato? utente: sì. organismo: ho eliminato il file a.txt. la cartella contiene 2 file: 3 − 1 = 2.
+utente: amplia il file a.txt. organismo: propongo di ampliare il file a.txt. è confermato? utente: sì. organismo: ho ampliato il file a.txt. la cartella contiene 1 file: 1 = 1.
+utente: crea il file a.txt. organismo: propongo di creare il file a.txt. è confermato? utente: no. organismo: nessuna conferma — l'atto non viene eseguito. la cartella contiene 3 file: 3 = 3.
+
+utilizador: lê o ficheiro a.txt. organismo: proponho ler o ficheiro a.txt. é confirmado? utilizador: não. organismo: sem confirmação — o ato não é realizado. a pasta contém 1 ficheiro: 1 = 1.
+utilizador: amplia o ficheiro a.txt. organismo: proponho ampliar o ficheiro a.txt. é confirmado? utilizador: não. organismo: sem confirmação — o ato não é realizado. a pasta contém 5 ficheiros: 5 = 5.
+utilizador: elimina o ficheiro a.txt. organismo: o ficheiro a.txt não existe — o ato não é realizado. a pasta contém 0 ficheiros: 0 = 0.
+utilizador: lê o ficheiro a.txt. organismo: proponho ler o ficheiro a.txt. é confirmado? utilizador: sim. organismo: li o ficheiro a.txt. a pasta contém 3 ficheiros: 3 = 3.
+utilizador: cria o ficheiro a.txt. organismo: o ficheiro a.txt já existe — o ato não é realizado. a pasta contém 1 ficheiro: 1 = 1.
+utilizador: elimina o ficheiro a.txt. organismo: proponho eliminar o ficheiro a.txt. é confirmado? utilizador: sim. organismo: eliminei o ficheiro a.txt. a pasta contém 2 ficheiros: 3 − 1 = 2.
+utilizador: amplia o ficheiro a.txt. organismo: proponho ampliar o ficheiro a.txt. é confirmado? utilizador: sim. organismo: ampliei o ficheiro a.txt. a pasta contém 1 ficheiro: 1 = 1.
+utilizador: cria o ficheiro a.txt. organismo: proponho criar o ficheiro a.txt. é confirmado? utilizador: não. organismo: sem confirmação — o ato não é realizado. a pasta contém 3 ficheiros: 3 = 3.
+
+gebruiker: lees het bestand a.txt. organisme: ik stel voor het bestand a.txt te lezen. is dat bevestigd? gebruiker: nee. organisme: geen bevestiging — de handeling wordt niet uitgevoerd. de map bevat 1 bestand: 1 = 1.
+gebruiker: bewerk het bestand a.txt. organisme: ik stel voor het bestand a.txt te bewerken. is dat bevestigd? gebruiker: nee. organisme: geen bevestiging — de handeling wordt niet uitgevoerd. de map bevat 5 bestanden: 5 = 5.
+gebruiker: verwijder het bestand a.txt. organisme: het bestand a.txt bestaat niet — de handeling wordt niet uitgevoerd. de map bevat 0 bestanden: 0 = 0.
+gebruiker: lees het bestand a.txt. organisme: ik stel voor het bestand a.txt te lezen. is dat bevestigd? gebruiker: ja. organisme: ik heb het bestand a.txt gelezen. de map bevat 3 bestanden: 3 = 3.
+gebruiker: creëer het bestand a.txt. organisme: het bestand a.txt bestaat al — de handeling wordt niet uitgevoerd. de map bevat 1 bestand: 1 = 1.
+gebruiker: verwijder het bestand a.txt. organisme: ik stel voor het bestand a.txt te verwijderen. is dat bevestigd? gebruiker: ja. organisme: ik heb het bestand a.txt verwijderd. de map bevat 2 bestanden: 3 − 1 = 2.
+gebruiker: bewerk het bestand a.txt. organisme: ik stel voor het bestand a.txt te bewerken. is dat bevestigd? gebruiker: ja. organisme: ik heb het bestand a.txt bewerkt. de map bevat 1 bestand: 1 = 1.
+gebruiker: creëer het bestand a.txt. organisme: ik stel voor het bestand a.txt te creëren. is dat bevestigd? gebruiker: nee. organisme: geen bevestiging — de handeling wordt niet uitgevoerd. de map bevat 3 bestanden: 3 = 3.
+
+użytkownik: przeczytaj plik a.txt. organizm: proponuję przeczytać plik a.txt. czy to potwierdzone? użytkownik: nie. organizm: brak potwierdzenia — akt nie zostaje wykonany. folder zawiera 1 plik: 1 = 1.
+użytkownik: dopisz plik a.txt. organizm: proponuję dopisać plik a.txt. czy to potwierdzone? użytkownik: nie. organizm: brak potwierdzenia — akt nie zostaje wykonany. folder zawiera 5 plików: 5 = 5.
+użytkownik: usuń plik a.txt. organizm: pliku a.txt nie ma — akt nie zostaje wykonany. folder zawiera 0 plików: 0 = 0.
+użytkownik: przeczytaj plik a.txt. organizm: proponuję przeczytać plik a.txt. czy to potwierdzone? użytkownik: tak. organizm: przeczytałem plik a.txt. folder zawiera 3 pliki: 3 = 3.
+użytkownik: utwórz plik a.txt. organizm: plik a.txt już istnieje — akt nie zostaje wykonany. folder zawiera 1 plik: 1 = 1.
+użytkownik: usuń plik a.txt. organizm: proponuję usunąć plik a.txt. czy to potwierdzone? użytkownik: tak. organizm: usunąłem plik a.txt. folder zawiera 2 pliki: 3 − 1 = 2.
+użytkownik: dopisz plik a.txt. organizm: proponuję dopisać plik a.txt. czy to potwierdzone? użytkownik: tak. organizm: dopisałem plik a.txt. folder zawiera 1 plik: 1 = 1.
+użytkownik: utwórz plik a.txt. organizm: proponuję utworzyć plik a.txt. czy to potwierdzone? użytkownik: nie. organizm: brak potwierdzenia — akt nie zostaje wykonany. folder zawiera 3 pliki: 3 = 3.

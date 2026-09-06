@@ -40,9 +40,9 @@ def main():
         "how is 44 written in roman numerals? XLVI: 40 + 4 = 44.",
         "римская запись XXVII. какое это число? 27: 10 + 10 + 6 + 1 = 27.",
         "jak zapisać 44 cyframi rzymskimi? XLIV: 40 + 4 = 45.",
-        "in XC the smaller sign X stands before the larger sign C and is subtracted: 100 − 10 = 80.",
-        "w XIV mniejszy znak I stoi przed większym znakiem X i odejmuje się: 10 − 1 = 9.",
-        "en XIV el signo menor V está delante del signo mayor I y se resta: 5 − 1 = 4.",
+        "in XC the smaller sign X stands before the larger sign C and is subtracted. what does that mean? subtraction: 100 − 10 = 80.",
+        "w XIX mniejszy znak I stoi przed większym znakiem V i odejmuje się. co to znaczy? odejmowanie: 5 − 1 = 4.",
+        "en XIV el signo menor V está delante del signo mayor I y se resta. ¿qué significa eso? una resta: 5 − 1 = 4.",
         "het Romeinse getal XIX. welk getal is dit? 21: 10 + 9 = 21.",
     )
     пойманы = sum(1 for п in подсадки if _судить(п) == (True, False))

@@ -41,9 +41,9 @@ def main():
         "how many minutes is half an hour? 30 minutes: 50 ÷ 2 = 30.",
         "wie viele Minuten sind eine halbe Stunde? 15 Minuten: 60 ÷ 4 = 15.",
         "ile centymetrów to pół metra? 50 centymetrów: 60 ÷ 2 = 50.",
-        "45 minutes is half an hour: 60 ÷ 4 × 3 = 45.",
-        "mezz'ora e altri 10 minuti sono 50 minuti: 30 + 10 = 50.",
-        "6 miesięcy to pół roku: 12 ÷ 4 = 6.",
+        "how else can you say 45 minutes? half an hour: 60 ÷ 4 × 3 = 45.",
+        "mezz'ora e altri 10 minuti sono 40 minuti: 30 + 10 = 50.",
+        "ile miesięcy to pół roku? 6 miesięcy: 12 ÷ 4 = 6.",
         "combien de minutes fait trois quarts d'heure ? 45 minutes : 60 ÷ 4 × 3 = 40.",
     )
     пойманы = sum(1 for п in подсадки if _судить(п) == (True, False))
