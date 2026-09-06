@@ -74,6 +74,7 @@ from panel import палата  # noqa: E402
 # 02–03.09), и набор точки ждал его один. Мир не зависит от мира: у каждого своя
 # палата в своём процессе, итог складывается в порядке манифеста — вердикт и числа
 # те же, время делится на число ядер (мандат диагностики: петля минутами).
+import collections
 import concurrent.futures
 import os
 
@@ -88,17 +89,25 @@ def _палата_рабочего():
 
 
 def _судить_мир(мир):
-    """One world in one process: (имя, свои, прочтено, ложных, примеры, разлады, чужие_имена)."""
+    """One world in one process: (имя, свои, прочтено, ложных, примеры, разлады, чужие_имена, кем).
+
+    ДОЛГ, НЕ НАЗЫВАЮЩИЙ СВОЕГО МЕСТА, НЕЛЕЧИМ. The instrument counted the objections and
+    printed six of them: to learn WHICH court objects to WHICH world one had to run the
+    whole palata by hand. The eighth field is that map — objections by (court, world), and
+    the verdict prints the heaviest pairs, because a court that reads one foreign world
+    wrongly is one boundary to name, and the number alone never says which.
+    """
     суд = _палата_рабочего()
     имя = мир.get("name", "?")
     путь = genesis._resolve(мир.get("file", ""))
     разлады, чужие_имена, примеры = [], [], []
+    возражатели = collections.Counter()
     if not путь.is_file():
-        return имя, 0, 0, 0, примеры, [f"{имя}: файла нет — {мир.get('file')}"], чужие_имена
+        return имя, 0, 0, 0, примеры, [f"{имя}: файла нет — {мир.get('file')}"], чужие_имена, возражатели
     текст = путь.read_text(encoding="utf-8", errors="replace")
     свои = sum(1 for с in текст.splitlines() if с.strip())
     if not свои:
-        return имя, 0, 0, 0, примеры, [f"{имя}: файл пуст"], чужие_имена
+        return имя, 0, 0, 0, примеры, [f"{имя}: файл пуст"], чужие_имена, возражатели
     объявлен = имя.rsplit("_", 1)[-1]
     на_деле = язык_текста(текст)
     if объявлен in ЯЗЫКИ and на_деле and объявлен != на_деле:
@@ -115,11 +124,13 @@ def _судить_мир(мир):
         прочтено += bool(судимо)
         if судимо and not истинно:
             ложных += 1
+            for к in кем:
+                возражатели[(к, имя)] += 1
             подсудные = [к for к in кем if к not in чужие_суды]
             клеймо = "" if подсудные else " (вне подсудности)"
             if len(примеры) < 6:
                 примеры.append(f"{имя} [{','.join(кем)}]{клеймо}: {строка.strip()[:70]}")
-    return имя, свои, прочтено, ложных, примеры, разлады, чужие_имена
+    return имя, свои, прочтено, ложных, примеры, разлады, чужие_имена, возражатели
 
 КИРИЛЛИЦА = re.compile(r"[а-яёА-ЯЁ]")
 ЛАТИНИЦА = re.compile(r"[a-zA-Z]")
@@ -163,7 +174,9 @@ def main():
     else:
         with concurrent.futures.ProcessPoolExecutor(max_workers=jobs) as пул:
             итоги = list(пул.map(_судить_мир, проза))
-    for имя, свои, свои_прочтено, свои_ложных, свои_примеры, свои_разлады, свои_чужие in итоги:
+    возражатели = collections.Counter()
+    for имя, свои, свои_прочтено, свои_ложных, свои_примеры, свои_разлады, свои_чужие, свои_кем in итоги:
+        возражатели.update(свои_кем)
         разлады += свои_разлады
         чужие_имена += свои_чужие
         if not свои:
@@ -180,6 +193,14 @@ def main():
         доля = 100 * прочт_м // всего_м if всего_м else 0
         print(f"  {имя_м:<16}{всего_м:>8} строк, прочтено "
               f"{прочт_м:>6} ({доля:>3}%)")
+    if возражатели:
+        по_судам = collections.Counter()
+        for (суд_имя, мир_имя), к in возражатели.items():
+            по_судам[суд_имя] += к
+        print("  ВОЗРАЖЕНИЯ ПО СУДАМ: "
+              + ", ".join(f"{с} {к}" for с, к in по_судам.most_common(8)))
+        for (суд_имя, мир_имя), к in возражатели.most_common(10):
+            print(f"    ДОЛГ {суд_имя:<16} {мир_имя:<16} {к:>6}")
     for р in разлады[:8]:
         print(f"  РАЗЛАД {р}")
     for р in чужие_имена:
