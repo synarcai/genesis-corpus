@@ -4664,7 +4664,7 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 19475169,
+      "size": 19475255,
       "tiers": [],
       "text": "mix",
       "lines": 255693
@@ -4682,10 +4682,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 32293152,
+      "size": 32499110,
       "tiers": [],
       "text": "mix",
-      "lines": 362459
+      "lines": 363971
     },
     {
       "name": "minimal",
@@ -9593,6 +9593,54 @@
         "decide",
         "recount",
         "refuse"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "numphrase",
+      "file": "datasets/genesis_numphrase.txt",
+      "genre": "THE NUMBER'S PHRASE — the number that hangs on a FORM, not on a digit (06.09). The measure of the executor (d5, band p156) named the debt exactly: of 423 tacts where the reader does not read a number, 409 carry PLAIN DIGITS — the trouble is not the shape of the number but the shape of the PHRASE it hangs on. The census of the свод says why: eight lines carry «N pages long», six carry a progressive with a counted subject, and ZERO carry «N more … but N fewer». Four frames, each a different way for a number to sit in a sentence: the measure as what the text HAS («the first chapter has 48 pages», and Russian with no verb at all — «в первой главе 48 страниц»); THE SAME FACT as a PREDICATE OF LENGTH («is 48 pages long»), shown beside the first in ALL NINE languages, because a house that gives a language one of the two sells the market that one — and the languages part company on whether the predicate takes a verb of its own (ru, en, de, fr, it, nl) or a tail on the verb of possession (es, pt, pl: «tiene 48 páginas de largo», «ma 48 stron długości»), which parting is itself a shown fact; in both, the answer must repeat the number in the same COUNT FORM the language gives it («48 stron», never «48 strony»), and each frame carries ITS OWN question, so «how many pages does it have?» is never «how long is it?»; the counted subject with a verb, where the NUMBER GOVERNS THE VERB and the boundary is NOT THE LAST DIGIT — eleven ends in one and takes the plural, twenty-one does not, and BOTH SIDES ARE SHOWN, because a rule shown on one side only is indistinguishable from the rule of the last digit and the reader would buy the counterfeit; and two comparisons of OPPOSITE direction in one sentence, where the second number must not be dragged after the first and the answer is taken from the number that was ASKED about. The verb's form is asked of the LANGUAGE PACK — the same cell that decides the noun's count form — so verb and noun cannot disagree, and it is judged ONLY in a language that moves it (Russian alone of the nine): marking the other eight would call an honest English page a lie («52 children were riding») and would catch a mutant FOR FREE, by its number rather than by its damage. The goods and the counting rule are the house of price's own; declared here are the chapter and the page, the child and the verb of riding, and the two comparison frames (tools/numphrase.py). CLOSED world.",
+      "act": [
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "kinbearer",
+      "file": "datasets/genesis_kinbearer.txt",
+      "genre": "THE ACTING RELATIVE — a bearer that is not a name, and that ACTS (06.09). The census that bought this house: the relative STANDS in the свод as a HOLDER — «her mother has 5 coins», «у её матери 5 монет», 64 lines over all nine languages in one world — and NEVER ACTS. Zero lines, in every language, carry «her dad gave», «её мама дала», «sa mère a donné», «ihr Vater gab», «jej tata dał». A bearer met in one role only is not a bearer: it is a noun that happened to hold a number, and six SVAMP tacts of the shape «Her dad gave her 4 more dollars» stand mute for both readers on exactly that. Four frames: the relative GIVES and the ledger adds; the SAME page with the question asking WHO gave, so that a reader who took the bearer for decoration has nothing to answer with; the girl gives TO the relative, where the same bearer wears the RECIPIENT'S case («своей маме», «ihrem Vater», «swojemu tacie») and the ledger subtracts; and BOTH relatives giving in one page with one antecedent, so «her mom» and «her dad» are two bearers and not one «her parent», with a two-step ledger whose second step stands on the first. The verb agrees with the RELATIVE'S gender where the language moves it («её мама дала» against «её папа дал»), and the girl's own giving carries HER form, never the relative's. The possessive is itself a shown fact: French «son père»/«sa mère», German «ihr Vater»/«ihre Mutter» and Italian «suo padre»/«sua madre» agree with the POSSESSED, while English, Russian, Spanish, Dutch and Polish leave it alone and Portuguese hangs it behind («o pai dela») — both relatives are shown in every language, so the difference is visible rather than asserted; and the interrogative and article agree with the GOODS' GENDER where the language bends them («quante matite» against «quanti libri»), declared and not guessed. The goods and the counting rule are the house of price's own, and every giving construction is one the corpus already carried and judged (tools/kinbearer.py). CLOSED world.",
+      "act": [
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "pronobject",
+      "file": "datasets/genesis_pronobject.txt",
+      "genre": "TRANSFER WITH A PRONOUN OBJECT — the receiver named once, then only pointed at (06.09). Asked for by holon on the measure of omega-ad: SVAMP tact 458 — «Jack gave HIM 20 marbles. Josh had 22 before…» — is answered 22 instead of 42 because «him/her/them» are not bought as pronouns, the market voting with the word in the ACTOR'S place while the OBJECT'S place never votes at all; and the свод could not teach it, carrying «him» in 12 lines and «gave her» in 10 on the whole FULL. Two bearers are NAMED with their counts in the first clause, the second clause transfers a number to a PRONOUN whose antecedent is the SECOND-named person, and the page then asks about one of the two — BOTH askings existing, because one ledger alone lets a reader answer by a rule of position: asked about the giver the ledger SUBTRACTS, asked about the receiver it ADDS, and the question is what decides which. Three pronouns (she, he, they), the giver always of the OTHER gender so the pronoun cannot be resolved by «the only person there is». THE PLACE OF THE OBJECT IS ADJACENCY TO THE VERB, NOT DISTANCE TO THE NUMBER, and the languages part company on the side: after the verb (ru, en, de, nl, pl), before it (fr, es, it), fused to it (pt «deu-LHE»), and after the whole verb for the Italian plural («ha dato LORO»), which has no unambiguous clitic in that slot. A second divergence is declared rather than smoothed: French, Spanish and Portuguese DO NOT MARK GENDER in this pronoun — «lui», «le», «-lhe» serve both — so a court demanding a distinction they do not have would call their honest pages lies, and the court measures the collapse instead of assuming it. The verbs agree: the giver's with the GIVER'S gender where the language moves it, and both the having-verb and the question's verb with the NUMBER of the receiver, which seven of the nine languages move. The interrogative agrees with the GOODS' GENDER where the language bends it («quanti libri» against «quante matite») and is a CELL of the pattern, so a wrong one is named a lie rather than left unjudged (tools/pronobject.py). CLOSED world.",
+      "act": [
+        "recount"
       ],
       "oracle": [
         "recompute"
