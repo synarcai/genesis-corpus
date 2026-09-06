@@ -4682,10 +4682,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 31703637,
+      "size": 32155535,
       "tiers": [],
       "text": "mix",
-      "lines": 357545
+      "lines": 361622
     },
     {
       "name": "minimal",
@@ -9424,6 +9424,126 @@
       ],
       "boundary": [
         "whole_only",
+        "exact_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "roundforms",
+      "file": "datasets/genesis_roundforms.txt",
+      "genre": "ROUNDING — the rule of the half is DECLARED, not derived (06.09). The census found THREE lines of rounding in the whole свод. Rounding is the one everyday arithmetic whose answer is not forced by the numbers alone: forty-three goes to forty and forty-seven to fifty because the nearer end wins, but forty-FIVE stands at equal distance from both, and what happens then is a CONVENTION — this corpus declares «the half goes up» and declares it ON THE PAGE, in every language. The ledger names BOTH distances, so rounding is shown as a comparison and not as the dropping of a digit; the same law is shown one step up, to the hundred, so that the base is seen as a base (tools/roundforms.py). CLOSED world.",
+      "act": [
+        "recount"
+      ],
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "orderforms",
+      "file": "datasets/genesis_orderforms.txt",
+      "genre": "ORDER — sorting is not comparing twice (06.09). The census found ZERO lines with «in ascending order» in the свод: the corpus compared pairs and named extremes, but never put a set IN ORDER — and ordering is one operation over the set whose answer is a SEQUENCE, not a number. Four questions over one set: the order up, the order down, WHICH IS SECOND LARGEST (a question no maximum can answer) and WHICH STANDS BETWEEN the other two, with the chain of signs «31 < 44 < 57» as its ledger. Sets with equal members are not written: an equal pair has no second place (tools/orderforms.py). CLOSED world.",
+      "act": [
+        "recount",
+        "compare"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "quantforms",
+      "file": "datasets/genesis_quantforms.txt",
+      "genre": "THE QUANTIFIER — «all», «some», «none» over a set that is COUNTED (06.09). The census found four lines of «every one of» in the whole свод. Five claims over one basket, and every answer carries its counted WITNESS: all are red (refuted by «no: 2 are green», or true and witnessed by the whole count), some are green, none are blue (the colour the basket never carried, refused with its ground), and the complement counted («how many are not red? 4: 9 − 5 = 4») — negation as subtraction, where a quantifier meets arithmetic. The colour is declared in THREE cases, because the languages need three (after a numeral, as a predicate — German does not inflect it — and after a negation), and the counting form does not replace the nominative plural (tools/quantforms.py). CLOSED world.",
+      "act": [
+        "recount",
+        "decide"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "roman",
+      "file": "datasets/genesis_roman.txt",
+      "genre": "THE ROMAN NUMERAL — a third notation, and the law that the ORDER of two signs decides the sign of their arithmetic (06.09). The census found ZERO roman numerals in the whole свод: the corpus writes numbers as digits and as words of nine languages, never as the notation every book still uses for a century and a chapter. Three frames over one number: the numeral asked for, the numeral read, and the subtractive law itself named — the smaller sign standing before the larger is SUBTRACTED, the only place in our markets where position decides addition or subtraction. The letters are the same in nine languages, so the house holds nine at the price of one; the judge renders the number greedily by the table and refuses «XIIII» for 14 though its letters add up, because the market has ONE spelling of a number, and then demands the ledger be the tokens' values in the tokens' order (tools/romanforms.py). CLOSED world.",
+      "act": [
+        "translate",
+        "recount"
+      ],
+      "oracle": [
+        "recompute",
+        "reversibility"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "place",
+      "file": "datasets/genesis_place.txt",
+      "genre": "PLACE — where a thing stands, and the three laws of standing (06.09). The census found ZERO lines of «слева от» / «to the left of» in the whole свод and four carrying «above the»: the corpus knows the GRID (cells and turns) and the meta-language of relations (what goes into what), but has never once said where an everyday thing stands with respect to another — and no page of prose describing a room, a shelf or a diagram can be followed without it. Three laws over one chain of things: the CONVERSE (if the book is left of the cup, the cup is right of the book, and the page says why), TRANSITIVITY (left of the left is left, with the conclusion drawn), and BETWEENNESS (the middle thing named, grounded on the converse law used inside the answer). The same three are shown on two axes — horizontal and vertical — so the law is seen as a law of an AXIS and not a property of one word; the nine languages cost only the case each axis demands (genitive in ru/pl, dative in de, the plain article elsewhere), and the judge REBUILDS the page from the things it reads out of it (tools/placeforms.py). CLOSED world.",
+      "act": [
+        "decide",
+        "generalize"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "unitfrac",
+      "file": "datasets/genesis_unitfrac.txt",
+      "genre": "THE NAMED FRACTION OF A UNIT — «полчаса» is a WORD and a COMPUTATION (06.09). The census found ZERO lines carrying «полчаса», «half an hour» or «четверть часа» in the whole свод, and the house of speed had to declare the hole out loud when it refused to show a fraction of an hour. Every one of these words is IRREGULAR: Russian welds the half into one word («полчаса», «полгода»), German inflects by the unit's gender («eine halbe Stunde», «ein halber Meter»), Polish has one word for the quarter-hour («kwadrans») and a special form for one-and-a-half («półtorej godziny»), Dutch counts three quarter-hours as «drie kwartier». One law over FOUR BASES — the hour (60), the kilogram (1000), the metre (100) and the year (12): the fraction asked in the smaller unit, the same equality read back from the number to the word, and the fraction entering arithmetic with a whole number of the smaller unit (tools/unitfrac.py). CLOSED world.",
+      "act": [
+        "translate",
+        "recount"
+      ],
+      "oracle": [
+        "recompute",
+        "reversibility"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "enough",
+      "file": "datasets/genesis_enough.txt",
+      "genre": "SUFFICIENCY — the yes-or-no that is bought by arithmetic (06.09). The census found ZERO lines carrying «хватит ли» / «is that enough» in the whole свод: the corpus computes prices, sums and differences and never once DECIDES with them, though the commonest use a person makes of arithmetic is exactly this. Three frames over one purse and the boundary between them: the money suffices (the cost multiplied out and the REMAINDER subtracted), it does not (the same multiplication and the subtraction turned the OTHER way, naming what is missing — the DIRECTION of the subtraction is the verdict), the shortfall asked as a number, and the exact-equality case where nothing is left over and the zero is said by the word each language uses («ничего не останется», «es bleibt nichts übrig»). The goods, the currency and the price sentence are the house of price's own; declared here are the purse and the two verdict words (tools/enoughforms.py). CLOSED world.",
+      "act": [
+        "decide",
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
         "exact_only"
       ],
       "actors": "",
