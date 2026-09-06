@@ -1,6 +1,13 @@
 {
   "lang": "ru",
-  "polarity": {"yes": ["да"], "no": ["нет"]},
+  "polarity": {
+    "yes": [
+      "да"
+    ],
+    "no": [
+      "нет"
+    ]
+  },
   "polarity_comment": "ANSWER POLARITY (05.09): the word that opens an answer and fixes the truth of what the question quoted — «правда ли, что дважды два — пять? нет, …». The arithmetic court reads the quoted equality through this word: after a no-word it must be false, after a yes-word true. Declared per language, never derived.",
   "script": "cyrillic",
   "comment": "REFERENCE pack, form-first: sufficiency is 32's verdict, not this file's claim. lexeme_source declares the NUMBER required per class (his law: a hundred-th language must not ship 83 words in German). POLARITY LIVED: with «это» paired to the school core the engine judged 4 of 5 (missing=это) and refused rc=1 — pairing must name the world that carries the concept.",
@@ -1151,21 +1158,21 @@
   },
   "ask_words": {
     "words": [
-   "¬",
-   "где",
-   "как",
-   "какой",
-   "когда",
-   "кого",
-   "кто",
-   "ли",
-   "почему",
-   "скольких",
-   "сколько",
-   "чего",
-   "чему",
-   "что"
-  ],
+      "¬",
+      "где",
+      "как",
+      "какой",
+      "когда",
+      "кого",
+      "кто",
+      "ли",
+      "почему",
+      "скольких",
+      "сколько",
+      "чего",
+      "чему",
+      "что"
+    ],
     "position": "front"
   },
   "ask_words_comment": "question words and their POSITION in the sentence (front/end) — derived from this pack's own layer and checkable by the same measure (М-137: the pack, not the pair-house, declares them)",
@@ -1387,5 +1394,10 @@
     ],
     "position": "front"
   },
-  "task_words_comment": "повелительные зачины ЗАДАНИЯ (04.09, Т-4 коллегии выразительности): «вычисли 47 + 38.», «скажи, простое ли 91.» — у задания нет вопросного знака; дом пары режет «{задание}. {ответ}» по первой точке, если задание открыто одним из этих слов, и судит ответ судом мира"
+  "task_words_comment": "повелительные зачины ЗАДАНИЯ (04.09, Т-4 коллегии выразительности): «вычисли 47 + 38.», «скажи, простое ли 91.» — у задания нет вопросного знака; дом пары режет «{задание}. {ответ}» по первой точке, если задание открыто одним из этих слов, и судит ответ судом мира",
+  "function_words": [
+    "все",
+    "и",
+    "это"
+  ]
 }
