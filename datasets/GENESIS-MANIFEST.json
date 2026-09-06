@@ -4682,10 +4682,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 32155535,
+      "size": 32188415,
       "tiers": [],
       "text": "mix",
-      "lines": 361622
+      "lines": 361892
     },
     {
       "name": "minimal",
@@ -9545,6 +9545,24 @@
       ],
       "boundary": [
         "exact_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "degrees",
+      "file": "datasets/genesis_degrees.txt",
+      "genre": "THE DEGREES OF COMPARISON — the same property said three times, and the irregular said aloud (06.09). The census found TWENTY-NINE lines carrying a comparative adjective («сильнее», «stronger», «stärker») in the whole свод: the corpus compares NUMBERS on every page and almost never compares by a PROPERTY — and the property is where the languages keep one of their oldest irregularities (good–better–best, gut–besser–am besten, bon–meilleur, dobry–lepszy). Three frames over one property: the row of three degrees, where the page SAYS SO when the second does not follow from the first; the transitive chain of three men ending in the superlative («кто самый высокий?»), whose ground is the two comparisons; and the converse through the ANTONYM — the converse of a comparison is not the same word negated but the OPPOSITE word. German and Dutch make only ONE of good/bad irregular, and that is exactly the shape a reader must see (tools/degrees.py). CLOSED world.",
+      "act": [
+        "inflect",
+        "compare",
+        "generalize"
+      ],
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "unnamed"
       ],
       "actors": "",
       "text": "shows"
