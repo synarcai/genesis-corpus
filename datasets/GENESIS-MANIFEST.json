@@ -4287,10 +4287,7 @@
       "источник": "public-domain",
       "происхождение": "gutenberg:35420",
       "held_out": "shelf/en/mill_logic_v1.holdout.txt",
-      "судится": [
-        "halves",
-        "prosetree"
-      ]
+      "судится": ["prosetree"]
     },
     {
       "name": "gutenberg_poincare_foundations",
@@ -4970,7 +4967,7 @@
       "источник": "public-domain",
       "происхождение": "gutenberg:23100",
       "held_out": "shelf/en/demorgan_paradoxes.holdout.txt",
-      "судится": ["arith", "engram", "halves"]
+      "судится": ["arith", "engram"]
     },
     {
       "name": "gutenberg_webster_1913",
@@ -5043,11 +5040,7 @@
       "источник": "public-domain",
       "происхождение": "gutenberg:45988",
       "held_out": "shelf/en/bacon_organum.holdout.txt",
-      "судится": [
-        "engram",
-        "halves",
-        "prosetree"
-      ]
+      "судится": ["engram", "prosetree"]
     },
     {
       "name": "gutenberg_carnot_heat",
@@ -5491,7 +5484,7 @@
       "источник": "public-domain",
       "происхождение": "gutenberg:36884",
       "held_out": "shelf/en/boole_analysis.holdout.txt",
-      "судится": ["halves"]
+      "судится": [], "судьи_сняты": "halves 0/1 и formula 0/9 — 06–07.09: названный судья не читал ни одной истинной строки"
     },
     {
       "name": "gutenberg_boole_laws",
@@ -5563,11 +5556,7 @@
       "источник": "public-domain",
       "происхождение": "gutenberg:21076",
       "held_out": "shelf/en/euclid_elements.holdout.txt",
-      "судится": [
-        "engram",
-        "halves",
-        "prosetree"
-      ]
+      "судится": ["engram", "prosetree"]
     },
     {
       "name": "gutenberg_hadamard_lectures",
