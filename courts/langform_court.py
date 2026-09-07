@@ -110,7 +110,7 @@ import sys
 ПАКЕТЫ = КОРЕНЬ / "tools/langpacks"
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
 from genesis import Unreadable, worlds  # noqa: E402
-from langpack import count_form_index  # noqa: E402
+from langpack import count_form_index, счётная_форма  # noqa: E402
 
 # РУБЕЖ-ДОЛГА: ЛОЖНЫХ_РУБЕЖ = 0
 ЛОЖНЫХ_РУБЕЖ = 0
@@ -328,10 +328,13 @@ def воспроизводится(совпало, обр, слой):
             if k is None:
                 return False
             cls = слой.классы[класс]
-            i = count_form_index(слой.пакет, cls, k)
             форма = совпало.group(имя)
+            # СУД ЗОВЁТ ТО ЖЕ ПРАВИЛО, ЧТО И ДВИЖОК, А НЕ СВОЁ (07.09): `счётная_форма`
+            # знает про объявленный счётный столбец `count_*`, а прежний `count_form_index`
+            # отвечал лишь «какая ЯЧЕЙКА» — и суд сверял основную там, где движок клал
+            # счётную. Двести восемьдесят верных строк немецкого были названы ложью.
             кто = {л for л, формы in (cls.get("lexemes") or {}).items()
-                   if i < len(формы) and формы[i] == форма}
+                   if счётная_форма(слой.пакет, cls, формы, k) == форма}
             if not сузить(класс, кто):
                 return False
     return True
