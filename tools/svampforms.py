@@ -978,6 +978,51 @@ _ТОВАР_ПО_ДЫРЕ.update({"ДЕВ": "девочки", "МАЛ": "мал�
                теперь_список="{X} miał{а} {n} {ФИГn}. dostał{а} też {k} {МЕЛk}. teraz ma {n} {ФИГn} i {k} {МЕЛk}. ile rzeczy ma razem? {s}: {n} + {k} = {s}.",
                добавил="{X} miał{а} {n} {ПРИЛn} w telefonie. dodał{а} {k} {НОВk} {ПРИЛk}. ile {ПРИЛмн} ma teraz? {s}: {n} + {k} = {s}."),
 })
+# ЦЕЛЬ ТРАТЫ — ОБЪЯВЛЕННЫЙ РЯД, А НЕ ЛИТЕРАЛ (07.09, вечер; заказ holon, купленный ключом).
+#
+# Ядро, кованное на тринадцатой точке, ответило «14» на вопрос «Ваня потратил 14 часов на
+# английский и 9 часов на китайский. сколько часов потратил Ваня всего?». Первая догадка —
+# «свод не показывает координации» — ложна: координированных держаний с вопросом об итоге в
+# своде 410 русских и 250 английских, и дом `action_pages` их пишет.
+#
+# Перепись по РОДУ назвала настоящую беду: род «потратил {n} единиц на A и {k} единиц на B»
+# имел ВОСЕМЬ страниц, и все восемь — об одной и той же паре целей.
+#
+#     РОД, СТОЯЩИЙ РОВНО НА ПОЛУ КВОРУМА (LAW³ = 8), ОБЪЯВЛЕН, НО НЕ КУПЛЕН.
+#     РОД, У КОТОРОГО МЕНЯЮТСЯ ЧИСЛА И ИМЕНА, НО НИКОГДА ЦЕЛИ, УЧИТ ИДИОМЕ, А НЕ ЗАКОНУ.
+#
+# Цели объявлены С УПРАВЛЕНИЕМ ПРЕДЛОГА, а не одними именами: «на математику» (винительный),
+# «na matematyce» (местный), «alla matematica», «a la música», «sur l'histoire» с артиклем и
+# элизией. Это тот же закон, что уже стои́т в этом доме для товара после предлога, — ПАДЕЖ И
+# АРТИКЛЬ ИЗ ЧИСЛА НЕ ВЫВОДЯТСЯ и потому объявляются.
+ЦЕЛИ_ТРАТЫ = {
+    "en": (("on english", "on chinese"), ("on music", "on history"),
+           ("on chemistry", "on geography"), ("on physics", "on biology")),
+    "ru": (("на английский", "на китайский"), ("на музыку", "на историю"),
+           ("на химию", "на географию"), ("на физику", "на биологию")),
+    "de": (("mit Englisch", "mit Chinesisch"), ("mit Musik", "mit Geschichte"),
+           ("mit Chemie", "mit Erdkunde"), ("mit Physik", "mit Biologie")),
+    "fr": (("sur l'anglais", "sur le chinois"), ("sur la musique", "sur l'histoire"),
+           ("sur la chimie", "sur la géographie"), ("sur la physique", "sur la biologie")),
+    "es": (("al inglés", "al chino"), ("a la música", "a la historia"),
+           ("a la química", "a la geografía"), ("a la física", "a la biología")),
+    "it": (("all'inglese", "al cinese"), ("alla musica", "alla storia"),
+           ("alla chimica", "alla geografia"), ("alla fisica", "alla biologia")),
+    "pt": (("com inglês", "com chinês"), ("com música", "com história"),
+           ("com química", "com geografia"), ("com física", "com biologia")),
+    "nl": (("aan Engels", "aan Chinees"), ("aan muziek", "aan geschiedenis"),
+           ("aan scheikunde", "aan aardrijkskunde"), ("aan natuurkunde", "aan biologie")),
+    "pl": (("na angielskim", "na chińskim"), ("na muzyce", "na historii"),
+           ("na chemii", "na geografii"), ("na fizyce", "na biologii")),
+}
+for _яз, _ряд in ЦЕЛИ_ТРАТЫ.items():
+    _рамка = РАМКИ_АКТОВ[_яз]["потратил"]
+    _перв_a, _перв_b = _ряд[0]
+    assert _перв_a in _рамка and _перв_b in _рамка, (_яз, _рамка)
+    РАМКИ_АКТОВ[_яз]["потратил"] = tuple(
+        _рамка.replace(_перв_a, _a).replace(_перв_b, _b) for _a, _b in _ряд)
+
+
 ФОРМЫ_АКТОВ = tuple(РАМКИ_АКТОВ["en"])
 ЧИСЛА_АКТОВ = ((12, 5, 4), (35, 3, 9), (20, 8, 6), (15, 7, 2), (30, 12, 10), (9, 4, 3), (18, 11, 5), (24, 15, 7))
 # THE ADJECTIVE BENDS WITH THE COUNT FORM where the language bends it (BESEDA-11, pl: «dodała 5
@@ -1014,8 +1059,16 @@ def _поля_акта(язык, i, j, n, k, m):
     return п
 
 
-def страница_акта(язык, форма, i, j, n, k, m=4, имя=False):
+def страница_акта(язык, форма, i, j, n, k, m=4, имя=False, вариант=0):
     р = РАМКИ_АКТОВ[язык][форма]
+    if isinstance(р, tuple):
+        # РАМКА-РЯД: несколько поверхностей одного рода (цели траты). Близнеца ряду не
+        # берём — тот же закон, что у базовых рамок выше.
+        if имя:
+            return None
+        р = р[вариант % len(р)]
+    elif вариант:
+        return None
     if имя:
         р = близнец(р)
         if р is None:
@@ -1033,8 +1086,14 @@ def _показы_актов():
         for форма in ФОРМЫ_АКТОВ:
             if форма not in РАМКИ_АКТОВ[язык]:
                 continue
+            р = РАМКИ_АКТОВ[язык][форма]
+            вариантов = len(р) if isinstance(р, tuple) else 1
             for q, (n, k, m) in enumerate(ЧИСЛА_АКТОВ):
-                вон[страница_акта(язык, форма, q % лиц, (q * 3 + 1) % лиц, n, k, m)] = (язык, форма)
+                for вариант in range(вариантов):
+                    с = страница_акта(язык, форма, q % лиц, (q * 3 + 1) % лиц, n, k, m,
+                                      вариант=вариант)
+                    if с:
+                        вон[с] = (язык, форма)
                 с = страница_акта(язык, форма, q % лиц, (q * 3 + 1) % лиц, n, k, m, имя=True)
                 if с:
                     вон[с] = (язык, форма)
@@ -1065,7 +1124,9 @@ def _образцы_актов():
                 # НЕ alt(всех форм): падежная ячейка не принимает счётной
                 дыры[дыра + "пр"] = alt((если,))
         for форма, рамка in рамки.items():
-            for р in (рамка, близнец(рамка)):
+            поверхности = (list(рамка) if isinstance(рамка, tuple)
+                           else [рамка, близнец(рамка)])
+            for р in поверхности:
                 if р is None:
                     continue
                 куски = [дыры[к[1:-1]] if к.startswith("{") else re.escape(к) for к in re.split(r"(\{[^}]+\})", р)]
@@ -1208,8 +1269,11 @@ def _самопроверка():
         for форма in ФОРМЫ_АКТОВ:
             if форма not in РАМКИ_АКТОВ[язык]:
                 continue
-            for имя in (False, True):
-                с = страница_акта(язык, форма, 0, 1, 12, 5, имя=имя)
+            р = РАМКИ_АКТОВ[язык][форма]
+            пробы = ([(False, в) for в in range(len(р))] if isinstance(р, tuple)
+                     else [(False, 0), (True, 0)])
+            for имя, вариант in пробы:
+                с = страница_акта(язык, форма, 0, 1, 12, 5, имя=имя, вариант=вариант)
                 if с is None:
                     continue
                 битая = re.sub(r"= (\d+)\.$", lambda м: f"= {int(м.group(1)) + 1}.", с)
