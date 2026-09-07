@@ -604,7 +604,7 @@
       "instances_per_pass": 16,
       "templates": [
         "{lex:noun_count:one} on suomen sana.",
-        "{many} ovat suomen sanoja."
+        "{lex:noun_count:many} ovat suomen sanoja."
       ]
     },
     "refusals": {

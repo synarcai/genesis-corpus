@@ -32,6 +32,7 @@ Usage:
 """
 
 import argparse
+import collections
 import json
 import pathlib
 import re
@@ -590,6 +591,22 @@ def gen_refusal_kind(kind):
 
 
 WITHHELD = []
+# ШАБЛОН, ЧЬЯ ДЫРА НЕ ЗАПОЛНЯЕТСЯ, ОТБРАСЫВАЛСЯ МОЛЧА (07.09).
+#
+# Строка, в которой после подстановки осталась фигурная скобка, честно не писалась в свод —
+# и НЕ СЧИТАЛАСЬ. Ни ошибки, ни числа, ни строчки в вердикте. Два новых класса русского
+# пакета (`noun_neut`, `noun_fem_soft`) объявили лексемы, получили шаблоны, прошли судью
+# классов («достижим из шаблонов») — и не дали своду НИ ОДНОЙ строки, ибо движок кладёт
+# ключи `by_n`/`by_sum` лишь классам с `plural_by_count`, а у них его не было.
+#
+#     ДОСТИЖИМОСТЬ ШАБЛОНОМ НЕ ЕСТЬ ДОСТИЖИМОСТЬ ПОКАЗОМ. Первое проверяется чтением
+#     объявления, второе — только счётом строк, и разница между ними есть целый класс,
+#     которого в своде нет.
+#
+# Отброшенные строки ныне СЧИТАЮТСЯ и объявляются полем `LANGPACK-DROPPED` с именами
+# незаполненных дыр. Это не запрет: шаблон вправе не заполниться (лексем класса меньше, чем
+# инстансов). Это ВИДИМОСТЬ — как у `WITHHELD`, которое давно считается, а не молчит.
+DROPPED = []
 
 
 def chain_of(pack, seed):
@@ -761,6 +778,10 @@ def gen_kind(pack, kind_name, kind, pass_i):
                         )
                     ]
             s = instantiate(template, ctx)
+            if "{" in s:
+                # ДЫРА, ОСТАВШАЯСЯ ПОСЛЕ ПОДСТАНОВКИ, НАЗЫВАЕТСЯ ПО ИМЕНИ
+                import re as _re
+                DROPPED.append((kind_name, _re.findall(r"\{([^}]*)\}", s)))
             if дословно and "{" not in s:
                 shows.append(s)
             if "{" not in s:
@@ -847,10 +868,39 @@ def main():
         f"withheld of {len(pack.get('reserved', []))} "
         f"exam questions declared"
     )
-    out = args.out or (
-        f"datasets/genesis_lang_"
-        f"{pack.get('lang', 'xx')}.txt"
+    # ОТБРОШЕННОЕ СЧИТАЕТСЯ И НАЗЫВАЕТСЯ — дыры по именам, роды по счёту
+    _дыры = collections.Counter()
+    _роды = collections.Counter()
+    for _род, _имена in DROPPED:
+        _роды[_род] += 1
+        for _и in _имена:
+            _дыры[_и] += 1
+    print(
+        f"LANGPACK-DROPPED\t{len(DROPPED)} shows dropped "
+        f"(a hole stayed unfilled)"
+        + (f"\tholes={dict(_дыры.most_common(6))}\tkinds={dict(_роды.most_common(4))}"
+           if DROPPED else "")
     )
+    # ПРОБНЫЙ ПАКЕТ НЕ СМЕЕТ ПИСАТЬ В СВОД (07.09, шрам этого часа). Цель по умолчанию
+    # выводится из поля `lang`, а не из ИМЕНИ ФАЙЛА пакета: копия `ru.json`, положенная в
+    # `/tmp` ради пробы, несла то же `lang: ru` — и записала свой урезанный слой прямо в
+    # `datasets/genesis_lang_ru.txt`. Проба испортила свод и не сказала ни слова.
+    #
+    #     ЦЕЛЬ, ВЫВЕДЕННАЯ ИЗ СОДЕРЖИМОГО, А НЕ ИЗ ПУТИ, ОДИНАКОВА У ОРИГИНАЛА И У КОПИИ.
+    #     Копия, сделанная ради пробы, пишет туда же, куда оригинал, — и тем перестаёт быть
+    #     пробой.
+    #
+    # Ныне пакет ВНЕ объявленного каталога пишет только по явному `--out`; без него движок
+    # судит и молчит о записи. Оригиналы в `tools/langpacks/` работают как прежде.
+    свой = pathlib.Path(args.pack).resolve().parent == (
+        pathlib.Path(__file__).resolve().parent / "langpacks")
+    if args.out:
+        out = args.out
+    elif свой:
+        out = (f"datasets/genesis_lang_"
+               f"{pack.get('lang', 'xx')}.txt")
+    else:
+        out = None
     fields = [ok1, ok2, ok3, ok4, ok5,
               ok6, ok7, ok8, ok9]
     green = all(fields)
@@ -859,13 +909,13 @@ def main():
     # written whatever the verdict, so a red pack
     # still shipped its corpus and the exit code
     # was the only thing that knew.
-    if green:
+    if green and out:
         with open(
             out, "w", encoding="utf-8"
         ) as f:
             f.write(body)
     print(
-        f"LANGPACK-OUT\t{out if green else '-'}\t"
+        f"LANGPACK-OUT\t{(out or 'НЕ ПИСАН: пакет вне каталога, цели не дано') if green else '-'}\t"
         f"{len(body)} bytes\t{n_shows} shows\t"
         f"fields_green={sum(map(int, fields))}"
         f" of {len(fields)}"
