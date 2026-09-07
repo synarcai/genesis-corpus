@@ -51,6 +51,11 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from layer import emit                                            # noqa: E402
 from plural import by_count                                       # noqa: E402
 
+# ПАСПОРТ КОРНЯ (07.09): дом итога читает отсюда список вместилищ НАРОЧНО — одно слово в
+# двух домах и двух чтениях (мера «3 cups of sugar» и вместилище «a box of 20 crayons») есть
+# свидетельство того, что роль принадлежит МЕСТУ, а не слову.
+ЧИТАЮТ = ("totalsubj",)
+
 _ПАКЕТ = json.loads((pathlib.Path(__file__).resolve().parent / "langpacks" / "en.json")
                     .read_text(encoding="utf-8"))
 _ИМЕНА_ПАКЕТА = set(_ПАКЕТ["person_names"])

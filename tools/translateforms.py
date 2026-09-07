@@ -21,7 +21,7 @@ import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import dialogueforms as D  # noqa: E402
-import letters as L  # noqa: E402
+import concepts as C  # noqa: E402
 
 ЯЗЫКИ = ("ru", "en", "de", "fr", "es", "it", "pt", "nl", "pl")
 
@@ -83,16 +83,17 @@ import letters as L  # noqa: E402
 # слов (иначе счёт букв отвечается угадыванием), дому перевода — ВЫРАВНИВАНИЕ ПО СМЫСЛУ.
 # Одному списку обоих не дать, и попытка дать кончается ложью в том доме, который спросили
 # позже. Потому список здесь СВОЙ, объявленный понятиями.
-СЛОВАРЬ = (
-    ("cat",   dict(ru="кот", en="cat", de="Katze", fr="chat", es="gato", it="gatto", pt="gato", nl="kat", pl="kot")),
-    ("dog",   dict(ru="собака", en="dog", de="Hund", fr="chien", es="perro", it="cane", pt="cão", nl="hond", pl="pies")),
-    ("house", dict(ru="дом", en="house", de="Haus", fr="maison", es="casa", it="casa", pt="casa", nl="huis", pl="dom")),
-    ("water", dict(ru="вода", en="water", de="Wasser", fr="eau", es="agua", it="acqua", pt="água", nl="water", pl="woda")),
-    ("bread", dict(ru="хлеб", en="bread", de="Brot", fr="pain", es="pan", it="pane", pt="pão", nl="brood", pl="chleb")),
-    ("sun",   dict(ru="солнце", en="sun", de="Sonne", fr="soleil", es="sol", it="sole", pt="sol", nl="zon", pl="słońce")),
-    ("hand",  dict(ru="рука", en="hand", de="Hand", fr="main", es="mano", it="mano", pt="mão", nl="hand", pl="ręka")),
-    ("table", dict(ru="стол", en="table", de="Tisch", fr="table", es="mesa", it="tavolo", pt="mesa", nl="tafel", pl="stół")),
-)
+# СЛОВА БЕРУТСЯ У ОБЩЕЙ ТАБЛИЦЫ ПОНЯТИЙ (07.09, `tools/concepts.py`). Своя таблица дома
+# прожила час: она чинила ложь, но была ЧЕТВЁРТЫМ словарём корпуса — у пакетов девять своих,
+# у домов свои, и ни один ключ не говорил, что «book», «libro» и «книга» суть одно.
+#
+#     СЛОВАРЬ, ЖИВУЩИЙ В ДОМЕ, ЕСТЬ СЛОВАРЬ ЭТОГО ДОМА. Четыре дома напишут четыре
+#     несогласных словаря, и разойдутся они молча — как разошлись списки букв и перевода.
+#
+# Понятия, какие берёт этот дом, названы ПО КЛЮЧУ, а не по английскому слову: ключ есть имя
+# понятия, английское — один из девяти столбцов.
+ПОНЯТИЯ_ДОМА = ("c36", "c37", "c54", "c62", "c68", "c69", "c70", "c52")
+СЛОВАРЬ = tuple((к, C.ПОНЯТИЯ[к][1]) for к in ПОНЯТИЯ_ДОМА)
 # УТВЕРЖДЕНИЕ ПО СУЩЕСТВУ: у всякого понятия есть слово на КАЖДОМ из девяти языков, и
 # каждое понятие названо. Это и есть выравнивание — не длина, а полнота по понятию.
 for _пон, _ряд in СЛОВАРЬ:

@@ -17,6 +17,13 @@ import pathlib
 import re
 import sys
 
+# ПАСПОРТ КОРНЯ (07.09): кто читает списки слов дома букв. Правка этих списков есть правка
+# мира начертаний (он рисует ИХ слова) и удержанного ключа (он держит три слова на язык в
+# тайне и утверждает, что дом букв их не пишет) — оба шрама того же дня. Дом перевода из
+# этого списка ВЫШЕЛ: он читает ныне общую таблицу понятий, ибо буквам нужны разные ДЛИНЫ,
+# а переводу — выравнивание по СМЫСЛУ, и одному списку обоих не дать.
+ЧИТАЮТ = ("gen_genesis_md_latex", "gen_genesis_letters", "letters_court", "holdout_key")
+
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 
 # per language: eight plain words, and the three frames — the count with its

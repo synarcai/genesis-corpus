@@ -12,6 +12,14 @@ the wrong kind (an unknown verb or an unknown thing is not judged here).
 from gsm_items import ANIMATE
 from plural import singular
 
+# ПАСПОРТ КОРНЯ (07.09): кто читает род глагола. Правка ГЛАГОЛ_БЕРЁТ или ANIMATE есть правка
+# всех этих домов и судов — шрам 06.09, когда семь глаголов моста, внесённых сюда, уронили
+# суд эпизода 986 ложными строками в одиннадцати мирах. Список сверяется прибором
+# `scripts/root_passport.py`, а не памятью.
+ЧИТАЮТ = ("gen_genesis_gsmlex", "gen_genesis_everyday", "gen_genesis_realverbs",
+          "gen_genesis_gsmwide", "gen_genesis_story_chain", "gen_genesis_items",
+          "gen_genesis_pronouns", "episode_court", "verbthings_court")
+
 ЕДА = {"apples", "cookies", "cakes", "pastries", "nuts", "eggs", "slices", "bananas", "oranges", "pears", "sweets",
        "candies", "sandwiches", "grapes", "plums", "buns", "pies", "loaves", "pancakes", "cherries", "carrots", "calories"}
 ПИТЬЁ = {"cups", "glasses", "bottles", "gallons", "litres", "liters", "mugs"}
