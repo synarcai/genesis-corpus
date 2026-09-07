@@ -451,62 +451,62 @@
           "Katzen"
         ],
         "nachricht": [
-          "Nachricht",
-          "Nachrichten",
+          "nachricht",
+          "nachrichten",
           "Nachricht",
           "Nachrichten"
         ],
         "datei": [
-          "Datei",
-          "Dateien",
+          "datei",
+          "dateien",
           "Datei",
           "Dateien"
         ],
         "eintrag": [
-          "Eintrag",
-          "Einträge",
+          "eintrag",
+          "einträge",
           "Eintrag",
           "Einträge"
         ],
         "apfel": [
-          "Apfel",
-          "Äpfel",
+          "apfel",
+          "äpfel",
           "Apfel",
           "Äpfel"
         ],
         "münze": [
-          "Münze",
-          "Münzen",
+          "münze",
+          "münzen",
           "Münze",
           "Münzen"
         ],
         "stift": [
-          "Stift",
-          "Stifte",
+          "stift",
+          "stifte",
           "Stift",
           "Stifte"
         ],
         "tasse": [
-          "Tasse",
-          "Tassen",
+          "tasse",
+          "tassen",
           "Tasse",
           "Tassen"
         ],
         "ball": [
-          "Ball",
-          "Bälle",
+          "ball",
+          "bälle",
           "Ball",
           "Bälle"
         ],
         "rubel": [
-          "Rubel",
-          "Rubel",
+          "rubel",
+          "rubel",
           "Rubel",
           "Rubel"
         ],
         "ei": [
-          "Ei",
-          "Eier",
+          "ei",
+          "eier",
           "Ei",
           "Eier"
         ]
@@ -648,11 +648,12 @@
         "zähle",
         "viele"
       ],
-      "instances_per_pass": 18,
+      "instances_per_pass": 25,
       "templates": [
         "ich zähle {n} {lex:noun_count:by_n}.",
         "ich zähle {sum} {lex:noun_count:by_sum}."
-      ]
+      ],
+      "instances_comment": "инстансов 25 при 19 лексемах noun_count (07.09): движок берёт лексему по кольцу, и при инстансах меньше лексем часть кольца проходится однажды — закон «всякое объявленное слово живёт не менее LAW раз» падает не на слове, а на СЧЁТЕ МЕСТ"
     },
     "definition": {
       "lexicon": [
@@ -675,7 +676,9 @@
         "{lex:noun_neut_case:nom} ist ein ding.",
         "{lex:noun_fem_case:nom} ist eine sache.",
         "{lex:noun_plural_case:nom} sind dinge.",
-        "was ist {lex:noun_masc_case:nom}? {lex:noun_masc_case:nom} ist ein ding."
+        "was ist {lex:noun_masc_case:nom}? {lex:noun_masc_case:nom} ist ein ding.",
+        "{lex:noun_count:count_one} ist ein Ding.",
+        "{lex:noun_count:count_many} sind Dinge."
       ]
     },
     "refusals": {
