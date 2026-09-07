@@ -61,7 +61,8 @@ recache.установить()
 ОСОБЫЕ = ("arith_court", "logic_court", "markup_court",
           "formula_court", "langlayer_court", "langform_court")
 # Прочие судят строку одним доводом.
-ПРОСТЫЕ = ("wordparts_court", "wordorder_court", "plan_court", "algo_court",
+ПРОСТЫЕ = ("wordparts_court", "wordorder_court", "plan_court", "genderverb_court",
+           "algo_court",
            "physics_court",
            "cyber_court",
            "notation_court", "program_court", "statistics_court",

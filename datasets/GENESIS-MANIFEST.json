@@ -4734,10 +4734,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 20132309,
+      "size": 20187710,
       "tiers": [],
       "text": "mix",
-      "lines": 265232
+      "lines": 266030
     },
     {
       "name": "full",
@@ -4752,10 +4752,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 34189009,
+      "size": 34244410,
       "tiers": [],
       "text": "mix",
-      "lines": 382385
+      "lines": 383183
     },
     {
       "name": "minimal",
@@ -9875,6 +9875,27 @@
       "genre": "order-row with a condition and the REPORT of its execution: the ledger of observation (files, runs, exit, millis) and a verdict that FOLLOWS from comparing the ledger with the condition (nine languages, both branches)",
       "act": [
         "decide",
+        "name"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
+    },
+    {
+      "name": "genderverb",
+      "file": "datasets/genesis_genderverb.txt",
+      "genre": "the gender ending of the past tense: «сделал + а = сделала», the ending named as a gender and TIED TO THE BEARER'S declared gender — the place of the bearer where the subject is dropped (ru and pl only: seven of nine languages have no gender in the past)",
+      "act": [
+        "inflect",
         "name"
       ],
       "oracle": [
