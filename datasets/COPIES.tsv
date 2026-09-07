@@ -1,5 +1,5 @@
 мир	генератор	через_слой	строк	различных	копий	макс_копий
-datasets/GENESIS-FULL.txt	gen_genesis_full.py	0	363971	257701	106270	473
+datasets/GENESIS-FULL.txt	gen_genesis_full.py	0	367076	260673	106403	473
 datasets/genesis_action_measure.txt	gen_genesis_action_measure.py	1	234	234	0	1
 datasets/genesis_action_measure_langs.txt	gen_genesis_action_measure_langs.py	1	462	462	0	1
 datasets/genesis_action_pages.txt	gen_genesis_action_pages.py	1	4921	4897	24	2
@@ -66,7 +66,7 @@ datasets/genesis_inquiry_pt_nl.txt	gen_genesis_inquiry_pt_nl.py	1	2108	1566	542	
 datasets/genesis_items.txt	gen_genesis_items.py	1	2357	2150	207	2
 datasets/genesis_joint2.txt	gen_genesis_joint2.py	1	255	255	0	1
 datasets/genesis_joints.txt	gen_genesis_joints.py	1	2700	2700	0	1
-datasets/genesis_kinbearer.txt	gen_genesis_kinbearer.py	1	378	378	0	1
+datasets/genesis_kinbearer.txt	gen_genesis_kinbearer.py	1	486	486	0	1
 datasets/genesis_l1_logic_sets.txt	gen_genesis_logic_sets.py	1	292	214	78	2
 datasets/genesis_l3_eng_proof.txt	gen_genesis_eng_proof.py	1	153	119	34	2
 datasets/genesis_l3_prog.txt	gen_genesis_prog.py	1	182	144	38	2
@@ -109,6 +109,7 @@ datasets/genesis_place.txt	gen_genesis_place.py	1	1296	1296	0	1
 datasets/genesis_planforms.txt	gen_genesis_planforms.py	1	2520	2520	0	1
 datasets/genesis_price.txt	gen_genesis_price.py	1	378	378	0	1
 datasets/genesis_primes_langs.txt	gen_genesis_primes_langs.py	1	400	400	0	1
+datasets/genesis_proform.txt	gen_genesis_proform.py	1	288	288	0	1
 datasets/genesis_programs.txt	gen_genesis_programs.py	1	784	565	219	2
 datasets/genesis_pronobject.txt	gen_genesis_pronobject.py	1	864	864	0	1
 datasets/genesis_pronouns.txt	gen_genesis_pronouns.py	1	480	480	0	1

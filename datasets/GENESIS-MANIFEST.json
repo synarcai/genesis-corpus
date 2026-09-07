@@ -4734,7 +4734,7 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 19475255,
+      "size": 19474182,
       "tiers": [],
       "text": "mix",
       "lines": 255693
@@ -4752,10 +4752,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 32658180,
+      "size": 32866849,
       "tiers": [],
       "text": "mix",
-      "lines": 365327
+      "lines": 367076
     },
     {
       "name": "minimal",
@@ -9747,6 +9747,23 @@
       "name": "subjcount",
       "file": "datasets/genesis_subjcount.txt",
       "genre": "THE COUNT OF THE SUBJECT — the number stands with WHO ACTS, not with what is owned (07.09). Asked for by holon-f9 on the atlas of the reader's unread numbers (tomograph st48, omega-ad): of 539 refusals on base p156, 420 stories are classified, and THE COUNT OF THE SUBJECT is the third largest class — 104 stories, e.g. «43 children were riding on the bus. 82 children got on the bus. how many children are on the bus now?». A NUMBER AT THE SUBJECT IS A DIFFERENT READING FROM A NUMBER AT THE OBJECT: the whole corpus teaches counting POSSESSIONS — «Ben had 22 books» — where the number stands with a thing a BEARER owns and the frame hunts for that bearer. Here there is no bearer at all: the ACTORS THEMSELVES are counted, and the place (bus, fence, shop) is a SCENE, not an owner. The census that bought the house, on the свод of 07.09 (378 361 lines): «N X got off …» 6 pages, «N X flew away …» 6, «N X were riding …» 15, «N X got on the …» 8 — not even LAW³ = 8 for most; while the EXISTENTIAL «there are/were N X» stands 4 165 times, which is a different form and a different class of the atlas (92 stories). The corpus can say «there were 43 kids on the bus» and almost cannot say «43 kids were riding on the bus»: THE DIFFERENCE IS NOT IN THE SENSE BUT IN THE PLACE OF THE NUMBER — after an empty «there», or at the HEAD, at the subject, where the reader's frame must look for it. So this house writes WITHOUT «there», on purpose. Four frames: gain (added), loss (subtracted), two steps (subtracted then added, the order stated by the ledger), and THE QUESTION ABOUT THE ACT ITSELF («how many children got on the bus?»), whose answer is the SECOND number and not the total — a gate against a reader answering by position, and its answer REPEATS THE FACT WHOLE, because a page without a ledger stands only by memory and the court of memory needs a fact to check against. The scene is a PLACE and the question names it, so a reader who loses the scene has nothing to answer with. The verb of motion takes only what moves by itself, and the genus is declared INSIDE this house and not in the common `verbthings`: that is bought by the scar of 06.09, when seven bridge verbs put into the common `ГЛАГОЛ_БЕРЁТ` felled the episode court with 986 false lines in eleven worlds. Verb and scene agree by a declared table — a bird does not get off a bus and a customer does not fly off a fence. The ledger stands on the page, so the court of arithmetic reads it without a house of its own (tools/subjcount.py). CLOSED world.",
+      "act": [
+        "recount",
+        "translate"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "measureof",
+      "file": "datasets/genesis_measureof.txt",
+      "genre": "THE MEASURE THROUGH «of» — the number counts the VESSEL and the goods stand behind the preposition (07.09). The atlas of the reader's unread numbers (tomograph st48, omega-ad) puts MEASURE AND PARTITIVE second with 107 stories of 420; a census of the свод split the class in two and one half turned out not to be ours. «N of them» stands 1 645 times (1 061 of them bare), a live and frequent form — a reader falling on it falls by its own frame path, not by a debt of the corpus. But «3 cups of sugar» stands 198 times in four worlds over 23 (measure + goods) pairs, and the spread is the whole story: «cups of water» 64, and the other twenty-two pairs NINE OR FEWER each. A MARKET THAT MET A MEASURE WITH ONE GOODS SIXTY-FOUR TIMES AND WITH TWENTY-TWO OTHERS NINE TIMES EACH BOUGHT A COLLOCATION, NOT A MEASURE: it knows «cups of water» as one word and «cups of» as a frame with a hole not at all. The reading here is unlike everything else the corpus teaches: the number stands with the VESSEL, and the goods stand behind the preposition and never go plural («3 cups of sugar», not «sugars»), while the rest of the свод puts the number on the thing itself («Ben had 22 books»). Four frames, and the first three conditions are the schema's own (holon-f9): THE ANSWER CARRIES THE VESSEL — «5 cups of sugar», never «5 sugar» and never a bare «5», because the schema reads the countable noun by the place of the digit and the goods lie down as a fact's label; THE QUESTION ABOUT THE GOODS IS A SEPARATE DECLARED FRAME («how much sugar does Ann have?»), declared on purpose so that a refusal there counts as the reader's wall and not as a lie of the corpus; and BOTH SUM FORMS stand — one vessel with two goods («2 cups of coffee and 2 cups of honey»), which is the «19 apps and 18 files» shape the reader fails on in seventy stories of the atlas, and one label with two bearers («Ann has 2 cups of sugar and Ben has 3 cups of sugar»), which folds by the label; the loss frame answers with vessel and goods whole. Every vessel is a word the pack declares and its plural is taken FROM the pack (the first edition wrote «16 boxs of honey»: a house that knows the rule better than the pack knows it only for the words it did not think of); the goods behind the preposition are never counted and need no declaration of count. A vessel takes its own goods by a declared table — milk stands in a bottle and not in a bag. The page «the recipe calls for 3 cups of sugar» is NOT written here and that is said rather than forgotten: its bearer is a «recipe», a thing without deed, and that is a different wall (tools/measureof.py). CLOSED world.",
       "act": [
         "recount",
         "translate"
