@@ -93,6 +93,33 @@ VERBS = [
 ]
 
 
+# ГЛАГОЛ ВОПРОСА — У АКТА, А НЕ ОДИН НА ВСЕХ (07.09; нашёл holon-f9 по знаку «ate: holds +45»).
+#
+# Дом спрашивал сумму актов ОДНОЙ строкой на все глаголы — «how many {it} does {a} hold
+# now?» — не спрашивая, что глагол делает с вещью. Для «bought», «made», «caught», «got»
+# это верно: приобретённое держится. Для «ate», «drank», «used», «sold», «spent», «gave»,
+# «paid», «read», «ran», «took», «needed», «saw» — ЛОЖЬ, и рынок знаков читателя купил
+# ровно то, что было написано: «съеденное держится», знак «ate → holds +45 против −0».
+#
+#     ГЛАГОЛ ВОПРОСА ОБЯЗАН БЫТЬ ГЛАГОЛОМ АКТА. Дом, спрашивающий «сколько держит» о
+#     съеденном, учит не счёту, а тому, что съеденное держится. Строка при этом
+#     арифметически ЧЕСТНА — 5 + 1 = 6, — и оттого ни один счётный суд её не ловит: порча
+#     лежит в СМЫСЛЕ, а суды считают величину.
+#
+# ЗАМЕР ДО ПРАВКИ: 45 таких страниц в мире `verbs`. Род глагола объявлен ЗДЕСЬ, а не в
+# общем `verbthings`, — по шраму 06.09, когда семь глаголов моста, внесённых в общий род,
+# уронили суд эпизода 986 ложными строками в одиннадцати мирах.
+ДЕРЖИТ = frozenset({"buy", "make", "catch", "get", "grow", "hold", "put"})
+
+
+def вопрос_суммы(base, past, s3, a, it, n):
+    """(вопрос, ответ) о сумме актов — глаголом самого акта, если акт не есть держание."""
+    if base in ДЕРЖИТ:
+        return (f"how many {it} does {a} hold now? ", f"{a} holds {n} ")
+    # СПРОШЕНО О САМОМ АКТЕ: «how many cookies did Vera eat in all? Vera ate 8 cookies.»
+    return (f"how many {it} did {a} {base} in all? ", f"{a} {past} {n} ")
+
+
 def pass_shows(pass_i):
     out = []
     unknown = [w for _, _, _, _, its in VERBS for w in its
@@ -110,11 +137,12 @@ def pass_shows(pass_i):
         # разряда, свободного от разрядов имени, вещи и обоих чисел.
         forge = f": {n} + {m} = {n + m}" if (seed // 8) % 2 == 0 else ""
         # the four-place discipline, in the past
+        воп, отв = вопрос_суммы(base, past, s3, a, it, n + m)
         out.append(
             f"{a} {past} {n} {by_count(n, it)}. "
             f"{a} {past} {m} {by_count(m, it)} more. "
-            f"how many {it} does {a} hold now? "
-            f"{a} holds {n + m} {by_count(n + m, it)}{forge}."
+            f"{воп}"
+            f"{отв}{by_count(n + m, it)}{forge}."
         )
         # THE PERFECT BESIDE ITS PAST: the pair is shown, not assumed
         out.append(
@@ -122,11 +150,12 @@ def pass_shows(pass_i):
             f"{a} {past} {n} {by_count(n, it)}."
         )
         # g1.46's own shape: the perfect inside a comparison
+        воп2, отв2 = вопрос_суммы(base, past, s3, a, it, n + m)
         out.append(
             f"{b} has {done} {m} {by_count(m, it)}. "
             f"{a} has {done} {n} more {it} than {b}. "
-            f"how many {it} does {a} hold now? "
-            f"{a} holds {n + m} {by_count(n + m, it)}{forge}."
+            f"{воп2}"
+            f"{отв2}{by_count(n + m, it)}{forge}."
         )
         # the present, so base and third person live too
         out.append(

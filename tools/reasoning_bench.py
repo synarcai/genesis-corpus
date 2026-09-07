@@ -55,6 +55,23 @@ def свободен(вопрос):
                 pass
     н = вопрос.lower().strip()
     return all(н not in т for т in _ТЕКСТ)
+
+# ПОВЕРХНОСТЬ ОБЪЯВЛЯЕТСЯ И ДЛЯ ВЕРДИКТА, А НЕ ТОЛЬКО ДЛЯ ЗНАЧЕНИЯ (07.09, замер omega-ad).
+#
+# Полоса несла 128 тактов с `{"kind": "verdict", "v": "no"}` и 48 со значением; прибор снятия
+# (`exam_runner`) читает лишь значение — и зачёл 48 из 176, назвав 123 верных ответа лживыми.
+# Ответы читателя были ПРАВИЛЬНЫ («is 142 a prime number?» → «no: 142 = 2 × 71»), лгало число.
+#
+#     ПОЛОСА, ГОВОРЯЩАЯ РОДОМ, КОТОРОГО ПРИБОР НЕ ЗНАЕТ, МЕРИТ ПРИБОР, А НЕ ЧИТАТЕЛЯ. Чинить
+#     прибор — дело того, чей он; но полоса обязана говорить и на общем языке, ибо
+#     договориться о роде можно, а угадать его нельзя.
+#
+# Потому вердикт несёт `surfaces` — те же слова, что и `v`, — и всякий прибор, умеющий
+# сверять поверхности, зачтёт такт, не зная слова «verdict».
+def _вердикт(яз, да_ли):
+    слово = ("yes" if яз == "en" else "да") if да_ли else ("no" if яз == "en" else "нет")
+    return {"kind": "verdict", "v": слово, "surfaces": [слово]}
+
 ЛОЖНЫЕ = {
     "prime": ("a prime number is a whole number whose only divisor is itself.", "простое число — это целое число, у которого один делитель — оно само."),
     "divisible": ("a number is divisible by another when the remainder is 1.", "число делится на другое, когда остаток равен единице."),
@@ -151,7 +168,7 @@ def пробы():
             прост = I.простое(n)
             for яз, ask in (("en", f"is {n} a prime number?"), ("ru", f"является ли {n} простым числом?")):
                 вон.append({"id": f"t9.reasoning.prime.free.{k}", "tier": 9, "ask": ask,
-                            "expect": {"kind": "verdict", "v": ("yes" if яз == "en" else "да") if прост else ("no" if яз == "en" else "нет")},
+                            "expect": _вердикт(яз, прост),
                             "law": I.ОПР_ПРОСТОТА[0 if яз == "en" else 1], "not_law": ЛОЖНЫЕ["prime"][0 if яз == "en" else 1],
                             "tags": ["t9.reasoning", "prime", яз]})
                 k += 1
@@ -163,7 +180,7 @@ def пробы():
             да = a % b == 0
             for яз, ask in (("en", f"is {a} divisible by {b}?"), ("ru", f"делится ли {a} на {b}?")):
                 вон.append({"id": f"t9.reasoning.divisible.free.{k}", "tier": 9, "ask": ask,
-                            "expect": {"kind": "verdict", "v": ("yes" if яз == "en" else "да") if да else ("no" if яз == "en" else "нет")},
+                            "expect": _вердикт(яз, да),
                             "law": I.ОПР_ДЕЛИМОСТЬ[0 if яз == "en" else 1], "not_law": ЛОЖНЫЕ["divisible"][0 if яз == "en" else 1],
                             "tags": ["t9.reasoning", "divisible", яз]})
                 k += 1
@@ -175,7 +192,7 @@ def пробы():
             for v, есть in ((да, True), (нет, False)):
                 for яз, ask in (("en", f"is {v} a root of {ур}?"), ("ru", f"является ли {v} корнем {ур}?")):
                     вон.append({"id": f"t9.reasoning.root.free.{k}", "tier": 9, "ask": ask,
-                                "expect": {"kind": "verdict", "v": ("yes" if яз == "en" else "да") if есть else ("no" if яз == "en" else "нет")},
+                                "expect": _вердикт(яз, есть),
                                 "law": E.ОПР_КОРЕНЬ[0 if яз == "en" else 1], "not_law": ЛОЖНЫЕ["root"][0 if яз == "en" else 1],
                                 "tags": ["t9.reasoning", "root", яз]})
                     k += 1

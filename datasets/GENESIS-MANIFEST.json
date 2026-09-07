@@ -4734,7 +4734,7 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 19474182,
+      "size": 19476861,
       "tiers": [],
       "text": "mix",
       "lines": 255693
@@ -4752,10 +4752,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 32866849,
+      "size": 33145231,
       "tiers": [],
       "text": "mix",
-      "lines": 367076
+      "lines": 369476
     },
     {
       "name": "minimal",
@@ -9767,6 +9767,23 @@
       "act": [
         "recount",
         "translate"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "relcompare",
+      "file": "datasets/genesis_relcompare.txt",
+      "genre": "THE RELATIVE FACT — a number that belongs to the DIFFERENCE and to neither bearer (07.09). The atlas of the reader's unread numbers (tomograph st48, omega-ad) puts the comparison marker eighth with 48 stories — «458 more girls than boys», «6 fewer peaches than Steven». The form IS in the свод, so this house is built not for the form but for two flaws of it, both measured on 380 610 lines: «N more X than Y» 645 lines over 75 goods, «N fewer X than Y» 184 over 40, «N times as many» 96 — and THE QUESTION ABOUT THE DIFFERENCE («how many more X than Y») only 52. The свод writes the relative fact FORWARD — given the smaller and the difference, find the larger — eight hundred and twenty-nine times, and asks BACKWARD — given both, find the difference — fifty-two. And the second flaw is worse than the first: THE DIFFERENCE IS ALMOST ALWAYS TINY. Of 829 occurrences over 40 distinct numbers, eighty percent of the mass stands on one through nine (1:107, 2:145, 3:97, 4:56, 5:49, 6:78, 7:55, 8:41, 9:39), the largest being 234. A GENUS SHOWN ONLY IN SMALL NUMBERS IS LEARNED AS A CORRECTION AND NOT AS A RELATION: a reader that has met «1 more cookie» a hundred and seven times takes the number after «more» for a small addition to its neighbour, while in «458 more girls than boys» the number behaves as a magnitude of its own — the same flaw the world of letters had with its four word-lengths. Five frames: forward with the question about the GREATER, forward with the question about the LESSER (the same marker, the opposite deed — a reader that took «more» for an order to add lies on the second), backward asking the difference in both surfaces («how many more … than …» and «how many fewer … than …»), and THE RELATIVE FACT BEFORE ITS ANCHOR («Felix has 31 more cards than Carla. Carla has 31 cards.»), where the bearer is named AFTER the reference to it and a frame hunting leftward for the anchor finds nothing: THE ORDER OF SENTENCES IS A SHOWN FACT, NOT A CONVENIENCE OF WRITING. The difference runs the whole range — eight tiers from one to five hundred, with the small no more numerous than the large, 379 distinct values and 598 the largest — and that is the chief thing the house stands for. Names and the plural of every goods are the pack's declarations (tools/relcompare.py). CLOSED world.",
+      "act": [
+        "recount",
+        "compare"
       ],
       "oracle": [
         "recompute"

@@ -4,8 +4,9 @@
 
 Born from the eighth band of conversation (BESEDA-8, 06.09): the organism speaks
 nine languages and had never been asked to carry a word from one into another.
-The words are the letters house's words (tools/letters.py — eight plain words,
-declared aligned across the nine languages), the phrases are the dialogue
+The words are THIS HOUSE'S OWN table, declared by CONCEPT and not by place (07.09:
+the words were taken from the letters house by INDEX, and the Russian list stood one
+place apart — 75 false translations shipped in the свод), the phrases are the dialogue
 house's first thanks and first greeting (tools/dialogueforms.py); this house
 declares only how each language NAMES the others («по-английски», «in
 russian», «auf Englisch», «en anglais») and the two frames. The court reads the
@@ -60,8 +61,47 @@ import letters as L  # noqa: E402
 }
 
 
+# СЛОВАРЬ ПЕРЕВОДА ОБЪЯВЛЕН ПОНЯТИЯМИ, А НЕ МЕСТАМИ (07.09) — и это починка лжи, которая
+# лежала в своде и которую не ловил никто.
+#
+# Дом брал слова у ДОМА БУКВ и спаривал их ПО НОМЕРУ МЕСТА, проверяя при этом одно:
+#
+#     assert len(_слова(_яз)) == len(_слова("ru")), (_яз, "слова не выровнены")
+#
+#     УТВЕРЖДЕНИЕ О ДЛИНЕ СПИСКА НЕ ЕСТЬ УТВЕРЖДЕНИЕ О ЕГО ПОРЯДКЕ. Утверждение стояло,
+#     звалось «слова не выровнены» и считало ДЛИНУ. Так объявление лгало вдвойне — и
+#     делом, и именем.
+#
+# Восемь языков были согласны между собой (cat, dog, house, water, bread, sun, hand,
+# table), а русский стоял иначе — «кот, дом, вода, хлеб, солнце, окно, рука, стол»: в нём
+# нет собаки и есть окно, отчего места 1…5 сдвинулись на одно. ЗАМЕР по лежащему миру
+# (792 строки): верных по смыслу 437, ЛОЖНЫХ 75 — «как будет «хлеб» по-французски? eau»,
+# «как будет «солнце» по-немецки? Brot», «как будет «вода» по-испански? casa». Ни один суд
+# этого не ловил: перевод не пересчитывается из строки, и палата молчала по существу.
+#
+# ДВА ДОМА, ЧИТАЮЩИЕ ОДИН СПИСОК, ТРЕБУЮТ ОТ НЕГО РАЗНОГО. Дому букв нужны РАЗНЫЕ ДЛИНЫ
+# слов (иначе счёт букв отвечается угадыванием), дому перевода — ВЫРАВНИВАНИЕ ПО СМЫСЛУ.
+# Одному списку обоих не дать, и попытка дать кончается ложью в том доме, который спросили
+# позже. Потому список здесь СВОЙ, объявленный понятиями.
+СЛОВАРЬ = (
+    ("cat",   dict(ru="кот", en="cat", de="Katze", fr="chat", es="gato", it="gatto", pt="gato", nl="kat", pl="kot")),
+    ("dog",   dict(ru="собака", en="dog", de="Hund", fr="chien", es="perro", it="cane", pt="cão", nl="hond", pl="pies")),
+    ("house", dict(ru="дом", en="house", de="Haus", fr="maison", es="casa", it="casa", pt="casa", nl="huis", pl="dom")),
+    ("water", dict(ru="вода", en="water", de="Wasser", fr="eau", es="agua", it="acqua", pt="água", nl="water", pl="woda")),
+    ("bread", dict(ru="хлеб", en="bread", de="Brot", fr="pain", es="pan", it="pane", pt="pão", nl="brood", pl="chleb")),
+    ("sun",   dict(ru="солнце", en="sun", de="Sonne", fr="soleil", es="sol", it="sole", pt="sol", nl="zon", pl="słońce")),
+    ("hand",  dict(ru="рука", en="hand", de="Hand", fr="main", es="mano", it="mano", pt="mão", nl="hand", pl="ręka")),
+    ("table", dict(ru="стол", en="table", de="Tisch", fr="table", es="mesa", it="tavolo", pt="mesa", nl="tafel", pl="stół")),
+)
+# УТВЕРЖДЕНИЕ ПО СУЩЕСТВУ: у всякого понятия есть слово на КАЖДОМ из девяти языков, и
+# каждое понятие названо. Это и есть выравнивание — не длина, а полнота по понятию.
+for _пон, _ряд in СЛОВАРЬ:
+    assert set(_ряд) == set(ЯЗЫКИ), (_пон, "понятие не полно по языкам")
+assert len({п for п, _ in СЛОВАРЬ}) == len(СЛОВАРЬ), "понятие названо дважды"
+
+
 def _слова(язык):
-    return L.ЯЗЫКИ[язык]["слова"]
+    return tuple(ряд[язык] for _пон, ряд in СЛОВАРЬ)
 
 
 def _фразы(язык):
@@ -69,8 +109,8 @@ def _фразы(язык):
     return (я[D.БЛАГОДАРНОСТЬ][0], я[D.ПРИВЕТ][0], я[D.ПРОЩАНИЕ][0])
 
 
-for _яз in ЯЗЫКИ:
-    assert len(_слова(_яз)) == len(_слова("ru")), (_яз, "слова не выровнены")
+# (утверждение о ДЛИНЕ списков снято: оно звалось «слова не выровнены» и выравнивания не
+# проверяло; ныне выравнивание утверждается выше — по полноте каждого ПОНЯТИЯ.)
 assert len(ЯЗЫКИ) == 9
 
 
