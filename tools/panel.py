@@ -127,6 +127,7 @@ recache.установить()
            "numberline_court",
            "countfacts_court",
            "letters_court",
+           "langcount_court",
            "propcompare_court",
            "price_court",
            "translate_court",

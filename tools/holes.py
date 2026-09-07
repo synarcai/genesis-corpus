@@ -178,11 +178,29 @@ import rugram  # noqa: E402
 
 
 def форма_счёта(язык, n):
-    """one / few / many by the pack's count_agreement — the first rule that
-    fits; the declared law of the language, not a guess of this house."""
-    правила = json.loads((КОРЕНЬ / "tools" / "langpacks" / f"{язык}.json").read_text(encoding="utf-8"))["count_agreement"]
-    for п in правила:
+    """one / few / many по объявлению пакета — первым подходящим правилом.
+
+    ДОМ, ПЕРЕПИСАВШИЙ ЧУЖОЙ ЗАКОН СВОИМИ СЛОВАМИ, ПЕРЕПИСАЛ ЕГО НЕВЕРНО (07.09).
+
+    Здесь стояла своя, шестистрочная, копия чтения правил, и в ней было условие
+
         if "mod" not in п or (n % п["mod"]) in п["in"]:
+
+    — то есть правило БЕЗ `mod` срабатывало ВСЕГДА, не глядя на своё же `in`. Польский
+    объявляет «{"in": [1], "form": "one"}» без `mod`, и оттого дом отвечал «one» на всякое
+    число, кроме одиннадцати-четырнадцати: «4 książek», «5 książka», «9 kilogram» — 69
+    строк неправильной польской речи при верной арифметике, которых не видел ни один суд,
+    покуда не был написан суд счёта на девяти языках.
+
+    Орган `langpack.count_form_index` читает те же правила ВЕРНО и стои́т в корпусе давно;
+    дом переписал его, потому что ему нужно было ИМЯ ячейки, а орган отдаёт НОМЕР. Ныне
+    дом зовёт орган и берёт имя по номеру: один закон — один читатель.
+    """
+    пак = json.loads((КОРЕНЬ / "tools" / "langpacks" / f"{язык}.json").read_text(encoding="utf-8"))
+    правила = пак.get("count_agreement") or []
+    for п in правила:
+        значение = n % п["mod"] if "mod" in п else n
+        if "in" not in п or значение in п["in"]:
             return п["form"]
     return "many"
 
