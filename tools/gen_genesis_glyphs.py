@@ -39,11 +39,23 @@ from layer import PASSES, emit  # noqa: E402
 for _с in СИМВОЛЫ:
     ПО_КЛАССУ.setdefault(G.РОД[_с], []).append(_с)
 
-_EN = json.loads((КОРЕНЬ / "tools" / "langpacks" / "en.json")
-                 .read_text(encoding="utf-8"))["noun_forms"]
-СЛОВА_EN = sorted(w for w in _EN if 2 <= len(w) <= 6 and w.isalpha() and w.isascii())
-СЛОВА_RU = sorted(w for w in rugram.СЧЁТНЫЕ if 2 <= len(w) <= 6 and w.isalpha()
-                  and all(с in G.ТАБЛИЦА for с in w))
+# СЛОВА ЭТОГО ДОМА ОБЪЯВЛЕНЫ ЗДЕСЬ, А НЕ ВЫБИРАЮТСЯ ИЗ ЧУЖОГО СПИСКА (07.09).
+#
+# Прежде дом брал английские слова из `langpacks/en.json["noun_forms"]`, а русские — из
+# `rugram.СЧЁТНЫЕ`, отбирая по длине и выбирая ПО НОМЕРУ в отсортированном ряду. Утром того
+# же дня три слова, объявленные в пакете ради суда памяти, сдвинули этот ряд — и дом
+# переписался ВЕСЬ: «child» стал «chair», «nut» стал «number», «year» стал «yard». Молча;
+# поймал только прибор воспроизводимости.
+#
+#     ДОМ, ВЫБИРАЮЩИЙ ПО НОМЕРУ В ЧУЖОМ СПИСКЕ, ПЕРЕПИСЫВАЕТСЯ ВЕСЬ, КОГДА СПИСОК РАСТЁТ
+#     НА ОДНО СЛОВО. Никакая сортировка этого не чинит: меняется длина ряда, а с нею — все
+#     остатки от деления.
+#
+# Ныне ряды объявлены ЗДЕСЬ, ровно те же, что были на своде a9e223c3 (это доказано
+# сличением: мир не изменился ни на байт). Пакет и `rugram` остаются источником ИСТИНЫ О
+# СЛОВЕ — как оно пишется и склоняется, — но не источником ВЫБОРА слов этого дома.
+СЛОВА_EN = ('acre', 'ampere', 'app', 'apple', 'bag', 'baker', 'ball', 'banana', 'basket', 'batch', 'bird', 'bit', 'bolt', 'book', 'bottle', 'box', 'cake', 'candy', 'car', 'card', 'cent', 'chair', 'child', 'class', 'coin', 'cookie', 'crate', 'cup', 'day', 'degree', 'dollar', 'edge', 'egg', 'factor', 'fish', 'flower', 'foot', 'friend', 'gallon', 'girl', 'gram', 'gun', 'hat', 'hour', 'inch', 'item', 'jewel', 'joule', 'key', 'kid', 'kopeck', 'lamp', 'leaf', 'letter', 'line', 'list', 'litre', 'loaf', 'marble', 'meal', 'meter', 'metre', 'mile', 'minute', 'month', 'mouse', 'newton', 'node', 'note', 'novel', 'number', 'nut', 'ohm', 'order', 'ounce', 'pack', 'page', 'pair', 'pascal', 'pen', 'pencil', 'person', 'piece', 'plate', 'player', 'point', 'pound', 'pupil', 'puppy', 'report', 'rose', 'ruble', 'second', 'seed', 'seller', 'shelf', 'shell', 'shirt', 'shoe', 'sign', 'slice', 'spoon', 'stamp', 'state', 'step', 'stick', 'stone', 'sweet', 'thing', 'ticket', 'toy', 'tree', 'value', 'vlog', 'volt', 'watt', 'way', 'week', 'worker', 'yard', 'year')
+СЛОВА_RU = ('аист', 'ампер', 'билет', 'бит', 'ватт', 'вольт', 'глаз', 'год', 'гость', 'градус', 'грамм', 'груша', 'день', 'дерево', 'деталь', 'джоуль', 'доллар', 'дюйм', 'житель', 'жук', 'журнал', 'задача', 'знак', 'зуб', 'игра', 'исход', 'камень', 'карта', 'клетка', 'ключ', 'книга', 'колесо', 'кот', 'крыло', 'купюра', 'лапа', 'листок', 'литр', 'марка', 'машина', 'месяц', 'метр', 'миля', 'минута', 'монета', 'неделя', 'нога', 'ньютон', 'ом', 'орех', 'палец', 'панель', 'письмо', 'птица', 'раз', 'ребро', 'роза', 'рубль', 'рука', 'ручка', 'свеча', 'сердце', 'слива', 'способ', 'торт', 'узел', 'унция', 'утка', 'ученик', 'фильм', 'фунт', 'фут', 'цвет', 'цветок', 'цент', 'час', 'часть', 'чашка', 'число', 'шаг', 'шар', 'шарик', 'яблоко', 'ягода', 'яйцо')
 
 
 def чужой(символ, сдвиг):
