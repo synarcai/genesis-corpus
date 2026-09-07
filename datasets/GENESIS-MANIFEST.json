@@ -2044,7 +2044,17 @@
       "size": 10547,
       "tiers": [],
       "text": "shows",
-      "ПРЕДМЕТЫ": ["x = #", "task: x plus # equals #", "answer: #", "задача: # плюс x равно #", "ответ: #", "четверть", "quarter", "половина", "half"]
+      "ПРЕДМЕТЫ": [
+        "x = #",
+        "task: x plus # equals #",
+        "answer: #",
+        "задача: # плюс x равно #",
+        "ответ: #",
+        "четверть",
+        "quarter",
+        "половина",
+        "half"
+      ]
     },
     {
       "name": "prog",
@@ -2062,7 +2072,27 @@
       "size": 14313,
       "tiers": [],
       "text": "shows",
-      "ПРЕДМЕТЫ": ["массив [#…]", "длина = #", "первый = #", "последний = #", "sort [#…] → [#…]", "min = #", "max = #", "если x > # то y = # иначе y = #", "вход x = #", "выход y = #", "if x > # then y = # else y = #", "input x = #", "output y = #", "s = #; для i от # до #: s = s + i", "итог s = #", "factorial(#) = # × factorial(#)", "factorial(#) = #", "трасса: i=# s=#; …", "трасса: i=# s=#"]
+      "ПРЕДМЕТЫ": [
+        "массив [#…]",
+        "длина = #",
+        "первый = #",
+        "последний = #",
+        "sort [#…] → [#…]",
+        "min = #",
+        "max = #",
+        "если x > # то y = # иначе y = #",
+        "вход x = #",
+        "выход y = #",
+        "if x > # then y = # else y = #",
+        "input x = #",
+        "output y = #",
+        "s = #; для i от # до #: s = s + i",
+        "итог s = #",
+        "factorial(#) = # × factorial(#)",
+        "factorial(#) = #",
+        "трасса: i=# s=#; …",
+        "трасса: i=# s=#"
+      ]
     },
     {
       "name": "eng_proof",
@@ -2080,7 +2110,45 @@
       "size": 24888,
       "tiers": [],
       "text": "shows",
-      "ПРЕДМЕТЫ": ["function add(a b) return a + b", "таблица: строка# = #…", "строка# = #…", "исходов #, благоприятных #", "доля = #/#", "программа: пока x < #: x = x + #", "вход x = #", "выход x = #", "шаг от # к #: если верно для # и из # следует #, то верно для #", "трасса: x = # → x+# = #; …", "цепь: #…", "if x > # then B else C", "code: graph TD; A{x > #}; A-->|yes|B; A-->|no|C;", "монета: исходов #", "доля орла = #/#", "if y = # then B else C", "code: graph TD; A{y = #}; A-->|yes|B; A-->|no|C;", "если x > # то B иначе C", "код: graph TD; A{x > #}; A-->|да|B; A-->|нет|C;", "цикл: пока x < # повторяй шаг", "код: graph TD; S-->L; L-->|x < #|L; L-->|иначе|E;", "если y = # то B иначе C", "код: graph TD; A{y = #}; A-->|да|B; A-->|нет|C;", "если x < # то B иначе C", "код: graph TD; A{x < #}; A-->|да|B; A-->|нет|C;", "трасса: x = # → x+# = #", "база: верно для #", "шаг: из n следует n+#", "итог: верно для каждого n в цепи", "base: true for #", "step: from n follows n+#", "hence: true for every n in the chain", "if x < # then B else C", "code: graph TD; A{x < #}; A-->|yes|B; A-->|no|C;", "трасса: тело не исполнилось", "кость: исходов #", "доля шестёрки = #/#"]
+      "ПРЕДМЕТЫ": [
+        "function add(a b) return a + b",
+        "таблица: строка# = #…",
+        "строка# = #…",
+        "исходов #, благоприятных #",
+        "доля = #/#",
+        "программа: пока x < #: x = x + #",
+        "вход x = #",
+        "выход x = #",
+        "шаг от # к #: если верно для # и из # следует #, то верно для #",
+        "трасса: x = # → x+# = #; …",
+        "цепь: #…",
+        "if x > # then B else C",
+        "code: graph TD; A{x > #}; A-->|yes|B; A-->|no|C;",
+        "монета: исходов #",
+        "доля орла = #/#",
+        "if y = # then B else C",
+        "code: graph TD; A{y = #}; A-->|yes|B; A-->|no|C;",
+        "если x > # то B иначе C",
+        "код: graph TD; A{x > #}; A-->|да|B; A-->|нет|C;",
+        "цикл: пока x < # повторяй шаг",
+        "код: graph TD; S-->L; L-->|x < #|L; L-->|иначе|E;",
+        "если y = # то B иначе C",
+        "код: graph TD; A{y = #}; A-->|да|B; A-->|нет|C;",
+        "если x < # то B иначе C",
+        "код: graph TD; A{x < #}; A-->|да|B; A-->|нет|C;",
+        "трасса: x = # → x+# = #",
+        "база: верно для #",
+        "шаг: из n следует n+#",
+        "итог: верно для каждого n в цепи",
+        "base: true for #",
+        "step: from n follows n+#",
+        "hence: true for every n in the chain",
+        "if x < # then B else C",
+        "code: graph TD; A{x < #}; A-->|yes|B; A-->|no|C;",
+        "трасса: тело не исполнилось",
+        "кость: исходов #",
+        "доля шестёрки = #/#"
+      ]
     },
     {
       "name": "md_latex",
@@ -4287,7 +4355,9 @@
       "источник": "public-domain",
       "происхождение": "gutenberg:35420",
       "held_out": "shelf/en/mill_logic_v1.holdout.txt",
-      "судится": ["prosetree"]
+      "судится": [
+        "prosetree"
+      ]
     },
     {
       "name": "gutenberg_poincare_foundations",
@@ -4682,10 +4752,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 32549388,
+      "size": 32658180,
       "tiers": [],
       "text": "mix",
-      "lines": 364367
+      "lines": 365327
     },
     {
       "name": "minimal",
@@ -4967,7 +5037,10 @@
       "источник": "public-domain",
       "происхождение": "gutenberg:23100",
       "held_out": "shelf/en/demorgan_paradoxes.holdout.txt",
-      "судится": ["arith", "engram"]
+      "судится": [
+        "arith",
+        "engram"
+      ]
     },
     {
       "name": "gutenberg_webster_1913",
@@ -5040,7 +5113,10 @@
       "источник": "public-domain",
       "происхождение": "gutenberg:45988",
       "held_out": "shelf/en/bacon_organum.holdout.txt",
-      "судится": ["engram", "prosetree"]
+      "судится": [
+        "engram",
+        "prosetree"
+      ]
     },
     {
       "name": "gutenberg_carnot_heat",
@@ -5484,7 +5560,8 @@
       "источник": "public-domain",
       "происхождение": "gutenberg:36884",
       "held_out": "shelf/en/boole_analysis.holdout.txt",
-      "судится": [], "судьи_сняты": "halves 0/1 и formula 0/9 — 06–07.09: названный судья не читал ни одной истинной строки"
+      "судится": [],
+      "судьи_сняты": "halves 0/1 и formula 0/9 — 06–07.09: названный судья не читал ни одной истинной строки"
     },
     {
       "name": "gutenberg_boole_laws",
@@ -5556,7 +5633,10 @@
       "источник": "public-domain",
       "происхождение": "gutenberg:21076",
       "held_out": "shelf/en/euclid_elements.holdout.txt",
-      "судится": ["engram", "prosetree"]
+      "судится": [
+        "engram",
+        "prosetree"
+      ]
     },
     {
       "name": "gutenberg_hadamard_lectures",
@@ -9636,6 +9716,40 @@
       "genre": "THE PRO-FORM OF THE GOODS — the thing named once, then stood in for (06.09). Asked for by omega-ad: SVAMP tact 510 — «lost 11 marbles and found 5 new ones» — is answered 8 instead of 13 because «ones» is not bought as a GOODS, the fact it carries is left unplaced and the number rides on nothing. The свод could barely teach it: «N new ones» stands in 24 lines, ALL in one world, ALL English, ONE frame, ONE goods, and the pro-form of this shape is absent from the other eight languages. Twenty-four lines of one frame in one language do not buy a pro-form: a market that has met «ones» only after «red apples» has met a collocation, not a stand-in. Three frames: the pro-form is NOT a new goods and the ledger adds it to the goods named BEFORE it; the pro-form survives a SUBTRACTION in between («I had 20, I lost 11 and found 5 new ones»), which is tact 510 exactly and the frame that tells resolution from luck; and the goods named ONCE and elided EVERYWHERE — in the pro-form and in the QUESTION alike — so that only the ANSWER names it again, because a question that repeats the goods lets the reader skip the resolution entirely. The shape of the pro-form is itself a shown fact, and the languages part company twice: ENGLISH CANNOT ELIDE THE NOUN after an adjective and must prop it with «ones», while the other eight leave the bare adjective («5 новых», «5 neue», «5 nouvelles») AGREEING with the gender of the noun that is not there; and the question with the goods elided takes a partitive clitic in French and Italian («combien EN ai-je», «quante NE ho») and nothing at all in the other seven. The signs of the ledger stand as CELLS of the pattern, not letters of the frame, so «9 − 5 = 4» is named a LIE rather than left unjudged (tools/proform.py). CLOSED world.",
       "act": [
         "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "verbbridge",
+      "file": "datasets/genesis_verbbridge.txt",
+      "genre": "THE BRIDGE OF THE ASKED FORM — a verb asked in its OWN interrogative form (07.09). Asked for by holon-f9 on the reader's own census (school fw15): the market of bridges buys the tie «did X SELL» → «sold» from the neighbourhood of a CLEAN QUESTION and a FACT-ANSWER, and of the corpus's 54 story verbs only 25 carry that bridge. Seven verbs stand with a hundred or more assertions and NOT ONE question — count 1152/10, earn 419/0, add 361/0, pack 341/0, collect 316/0, save 599/0, delete 724/0 — so «how many marbles did josh lose?» is a word the reader has never met, though it has met «lost» a thousand times. WITHOUT THE BRIDGE A READER DOES NOT KNOW THAT «did he lose» AND «lost» ARE ONE VERB. The question is CLEAN — it carries NO NUMBER, because a number in the question turns the page into a conditional task and the market of bridges does not take it; the answer is a FACT of the same story and not a computation, for the bridge teaches the FORM and other houses teach the count. Half the pages carry TWO facts before the question («X counted 62 cakes. X sold 9 cakes. how many cakes did X count?»), so one page feeds the market of bridges, the market of tails and the signs of verbs at once, and the second verb's goods are THE SAME goods — two stories welded by a name would hand the tail market a false pair. The goods of every verb are taken from `verbthings.ГЛАГОЛ_БЕРЁТ`, so «counted 8 miles» is impossible by construction; the genus of the bridge verbs is declared INSIDE THIS HOUSE and not in the common one, bought by measurement: the first edition put the seven verbs into the common `ГЛАГОЛ_БЕРЁТ` and the episode court fell at once with 986 false lines in eleven worlds. Names are declared by the language pack (М-131), not by a list of the house. Both tenses stand («did … count» against «does … count»), the auxiliary agreeing with the fact's tense. At least LAW² = 4 pages to a verb and at least LAW = 2 bearers, else the bridge is shown and not bought (tools/verbbridge.py). CLOSED world.",
+      "act": [
+        "recount",
+        "translate"
+      ],
+      "oracle": [
+        "same_object"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "subjcount",
+      "file": "datasets/genesis_subjcount.txt",
+      "genre": "THE COUNT OF THE SUBJECT — the number stands with WHO ACTS, not with what is owned (07.09). Asked for by holon-f9 on the atlas of the reader's unread numbers (tomograph st48, omega-ad): of 539 refusals on base p156, 420 stories are classified, and THE COUNT OF THE SUBJECT is the third largest class — 104 stories, e.g. «43 children were riding on the bus. 82 children got on the bus. how many children are on the bus now?». A NUMBER AT THE SUBJECT IS A DIFFERENT READING FROM A NUMBER AT THE OBJECT: the whole corpus teaches counting POSSESSIONS — «Ben had 22 books» — where the number stands with a thing a BEARER owns and the frame hunts for that bearer. Here there is no bearer at all: the ACTORS THEMSELVES are counted, and the place (bus, fence, shop) is a SCENE, not an owner. The census that bought the house, on the свод of 07.09 (378 361 lines): «N X got off …» 6 pages, «N X flew away …» 6, «N X were riding …» 15, «N X got on the …» 8 — not even LAW³ = 8 for most; while the EXISTENTIAL «there are/were N X» stands 4 165 times, which is a different form and a different class of the atlas (92 stories). The corpus can say «there were 43 kids on the bus» and almost cannot say «43 kids were riding on the bus»: THE DIFFERENCE IS NOT IN THE SENSE BUT IN THE PLACE OF THE NUMBER — after an empty «there», or at the HEAD, at the subject, where the reader's frame must look for it. So this house writes WITHOUT «there», on purpose. Four frames: gain (added), loss (subtracted), two steps (subtracted then added, the order stated by the ledger), and THE QUESTION ABOUT THE ACT ITSELF («how many children got on the bus?»), whose answer is the SECOND number and not the total — a gate against a reader answering by position, and its answer REPEATS THE FACT WHOLE, because a page without a ledger stands only by memory and the court of memory needs a fact to check against. The scene is a PLACE and the question names it, so a reader who loses the scene has nothing to answer with. The verb of motion takes only what moves by itself, and the genus is declared INSIDE this house and not in the common `verbthings`: that is bought by the scar of 06.09, when seven bridge verbs put into the common `ГЛАГОЛ_БЕРЁТ` felled the episode court with 986 false lines in eleven worlds. Verb and scene agree by a declared table — a bird does not get off a bus and a customer does not fly off a fence. The ledger stands on the page, so the court of arithmetic reads it without a house of its own (tools/subjcount.py). CLOSED world.",
+      "act": [
+        "recount",
+        "translate"
       ],
       "oracle": [
         "recompute"
