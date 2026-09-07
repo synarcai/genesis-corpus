@@ -59,25 +59,42 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from layer import emit                                            # noqa: E402
 from plural import by_count                                       # noqa: E402
 
-# СЦЕНА И ЕЁ НАРОД: что где бывает и каким глаголом приходит и уходит.
+# СЦЕНА И ЕЁ НАРОД: что где бывает, каким глаголом стоит, приходит и уходит.
 #
 # РОД ГЛАГОЛА ДВИЖЕНИЯ ОБЪЯВЛЕН ЗДЕСЬ, А НЕ В ОБЩЕМ ДОМЕ (шрам 06.09, см. описание).
-# Каждая запись: сцена → (народ, глагол стояния, глагол прибытия, глагол убытия).
+#
+# СЦЕНЫ ПЕРЕСЕКАЮТСЯ С МЕСТАМИ ЭКЗИСТЕНЦИАЛЬНОГО ДОМА — ПО ПРОСЬБЕ holon-f9 И ПО ДЕЛУ.
+# Свод несёт 7 130 экзистенциальных держаний места («there are N X on the P») в 24 словах:
+# box 1773, folder 1726, list 1668, shelf 821, table 214, bag 213, basket 117, garden 99,
+# class 74, file 59, fence 56, vase 52, yard 51, room 49, pond 40, park 37, cage 35, bus 14.
+# Первая редакция дома взяла семь сцен и пересеклась с ними ТРЕМЯ (bus, fence, yard) —
+# меньше LAW² = 4.
+#
+#     МЕСТО, КУПЛЕННОЕ ОДНИМ ДОМОМ, ЕСТЬ СЛОВО ЭТОГО ДОМА, А НЕ МЕСТО. Чтобы «разница
+#     только в месте числа» была ЗАСВИДЕТЕЛЬСТВОВАНА, а не объявлена, одно и то же слово
+#     обязано стоять местом в ОБЕИХ формах: и после пустого «there», и при подлежащем.
+#
+# Ныне сцен двенадцать, и восемь из них — bus, fence, yard, garden, park, pond, cage,
+# room — стоя́т местами и в экзистенциальном доме: вдвое больше LAW².
+#
+# Каждая запись: (место, народ, глагол стояния БЕЗ места, предлог места, приход, уход,
+# обстоятельство ПРИХОДА для пятой
+# рамки — пустое там, где своего обстоятельства у сцены нет).
 СЦЕНЫ = (
-    ("bus",    "children", "were riding on the bus",     "got on the bus",      "got off the bus"),
-    ("bus",    "kids",     "were riding on the bus",     "got on the bus",      "got off the bus"),
-    ("fence",  "birds",    "were sitting on the fence",  "flew to the fence",   "flew away"),
-    ("tree",   "birds",    "were sitting in the tree",   "flew to the tree",    "flew away"),
-    ("shop",   "customers", "were waiting in the shop",  "came into the shop",  "left the shop"),
-    ("hall",   "students", "were waiting in the hall",   "came into the hall",  "left the hall"),
-    ("train",  "passengers", "were riding on the train", "got on the train",    "got off the train"),
-    ("yard",   "puppies",  "were playing in the yard",   "ran into the yard",   "ran out of the yard"),
+    ("bus",    "children",  "were riding",  "on the bus",    "got on the bus",     "got off the bus",    "at the bus stop"),
+    ("bus",    "kids",      "were riding",  "on the bus",    "got on the bus",     "got off the bus",    "at the bus stop"),
+    ("fence",  "birds",     "were sitting", "on the fence",  "flew to the fence",  "flew away",          ""),
+    ("tree",   "birds",     "were sitting", "in the tree",   "flew to the tree",   "flew away",          ""),
+    ("shop",   "customers", "were waiting", "in the shop",   "came into the shop", "left the shop",      ""),
+    ("hall",   "students",  "were waiting", "in the hall",   "came into the hall", "left the hall",      ""),
+    ("train",  "passengers", "were riding", "on the train",  "got on the train",   "got off the train",  "at the station"),
+    ("yard",   "puppies",   "were playing", "in the yard",   "ran into the yard",  "ran out of the yard", ""),
+    ("garden", "birds",     "were sitting", "in the garden", "flew to the garden", "flew away",          ""),
+    ("park",   "children",  "were playing", "in the park",   "came into the park", "left the park",      ""),
+    ("pond",   "birds",     "were swimming", "on the pond",  "flew to the pond",   "flew away",          ""),
+    ("cage",   "birds",     "were sitting", "in the cage",   "flew into the cage", "flew out of the cage", ""),
+    ("room",   "students",  "were waiting", "in the room",   "came into the room", "left the room",      ""),
 )
-
-# ПРЕДЛОГ СЦЕНЫ В ВОПРОСЕ: «on the bus» против «in the shop» — сказано, а не выведено.
-ГДЕ = {"bus": "on the bus", "fence": "on the fence", "tree": "in the tree",
-       "shop": "in the shop", "hall": "in the hall", "train": "on the train",
-       "yard": "in the yard"}
 
 
 def _сцена(i):
@@ -87,14 +104,13 @@ def _сцена(i):
 def показы(pi):
     основа = pi * 29
     вон = []
-    for i in range(len(СЦЕНЫ) * 12):
-        место, народ, стоят, пришли, ушли = _сцена(основа + i)
-        где = ГДЕ[место]
+    for i in range(len(СЦЕНЫ) * 15):
+        место, народ, стоят, где, пришли, ушли, обст = _сцена(основа + i)
         n = (основа + i * 7) % 60 + 9          # 9..68
         m = (основа + i * 11) % (n - 4) + 3    # 3..n-2, всегда меньше n
-        # РАМКА И СЦЕНА НЕ ДОЛЖНЫ ШАГАТЬ В НОГУ (07.09, первая проба дома). Сцен восемь,
-        # рамок четыре, и «рамка = i % 4» при «сцена = i % 8» связывает их намертво:
-        # каждая рамка встречала РОВНО ДВЕ сцены из восьми, и четвёртая рамка вышла
+        # РАМКА И СЦЕНА НЕ ДОЛЖНЫ ШАГАТЬ В НОГУ (07.09, первая проба дома). Сцен было
+        # восемь, рамок четыре, и «рамка = i % 4» при «сцена = i % 8» связывало их
+        # намертво: каждая рамка встречала РОВНО ДВЕ сцены из восьми, и четвёртая вышла
         # написанной только о дереве и о дворе.
         #
         #     ДВА СЧЁТЧИКА ОТ ОДНОГО ЧИСЛА СВЯЗАНЫ, А НЕ НЕЗАВИСИМЫ. Дом, объявивший
@@ -102,9 +118,9 @@ def показы(pi):
         #     это можно было только пересчётом, ибо страницы по отдельности честны.
         #
         # Рамка берётся от ЧАСТНОГО, а не от остатка: сцена меняется на каждом шаге,
-        # рамка — раз в восемь шагов, и за полный оборот каждая рамка встречает каждую сцену.
-        рамка = ((основа + i) // len(СЦЕНЫ)) % 4
-        если_н = f"{n} {by_count(n, народ)} {стоят}."
+        # рамка — раз в тринадцать шагов, и за оборот каждая рамка встречает каждую сцену.
+        рамка = ((основа + i) // len(СЦЕНЫ)) % 5
+        если_н = f"{n} {by_count(n, народ)} {стоят} {где}."
         if рамка == 0:
             # ПРИБЫЛЬ
             вон.append(
@@ -126,7 +142,7 @@ def показы(pi):
                 f"how many {народ} are {где} now? "
                 f"{n - m + k} {by_count(n - m + k, народ)}: "
                 f"{n} − {m} = {n - m}, {n - m} + {k} = {n - m + k}.")
-        else:
+        elif рамка == 3:
             # ВОПРОС О САМОМ ДЕЙСТВИИ: ответ есть ВТОРОЕ число, а не итог.
             #
             # ОТВЕТ ПОВТОРЯЕТ ФАКТ ЦЕЛИКОМ, А НЕ ОДНО ЧИСЛО (07.09, вторая проба дома).
@@ -141,6 +157,41 @@ def показы(pi):
                 f"{если_н} {m} {by_count(m, народ)} {пришли}. "
                 f"how many {народ} {пришли}? "
                 f"{m} {by_count(m, народ)} {пришли}.")
+        else:
+            # ОБСТОЯТЕЛЬСТВО ПЕРЕД ЧИСЛОМ (07.09, пятая рамка, заказана holon-f9).
+            #
+            # Форма SVAMP, которой в своде 23 истории: «At the bus stop 82 children got
+            # on the bus», «On the fence 3 birds were sitting». У читателя закон
+            # «обстановка ПЕРЕД числом» есть, но открывающее «At the …» его ломает:
+            # число стои́т уже не в голове предложения, а третьим-четвёртым словом, и
+            # рамка, выученная на числе-первом, молчит.
+            #
+            #     ЧИСЛО, СДВИНУТОЕ ОБСТОЯТЕЛЬСТВОМ, ЕСТЬ ТО ЖЕ ЧИСЛО ПРИ ТОМ ЖЕ
+            #     ПОДЛЕЖАЩЕМ. Дом, написавший только число-первое, купил бы читателю не
+            #     счёт подлежащего, а ПОЛОЖЕНИЕ числа в строке.
+            #
+            # ДВА ВИДА ОБСТОЯТЕЛЬСТВА, И ОБА ОБЪЯВЛЕНЫ, А НЕ СКЛЕЕНЫ ОДНИМ ПРАВИЛОМ.
+            # Где у сцены есть СВОЁ обстоятельство прихода («at the bus stop», «at the
+            # station»), оно сдвигает число ВТОРОГО предложения; где его нет, вперёд
+            # выносится само место сцены и сдвигает число ПЕРВОГО. Первая проба писала
+            # одно правило на всех и родила «At the bus stop 13 children were riding» —
+            # правду о месте и неправду о деле: дети едут в автобусе, а не на остановке.
+            #
+            #     ОБСТОЯТЕЛЬСТВО НЕ ПЕРЕСТАВЛЯЕТСЯ, А ПРИНАДЛЕЖИТ. Слово, верное перед
+            #     одним глаголом, перед другим лжёт, и «сдвинуть число» не значит
+            #     «поставить любое место в голову».
+            if обст:
+                вон.append(
+                    f"{n} {by_count(n, народ)} {стоят} {где}. "
+                    f"{обст.capitalize()} {m} {by_count(m, народ)} {пришли}. "
+                    f"how many {народ} are {где} now? "
+                    f"{n + m} {by_count(n + m, народ)}: {n} + {m} = {n + m}.")
+            else:
+                вон.append(
+                    f"{где.capitalize()} {n} {by_count(n, народ)} {стоят}. "
+                    f"{m} {by_count(m, народ)} {пришли}. "
+                    f"how many {народ} are {где} now? "
+                    f"{n + m} {by_count(n + m, народ)}: {n} + {m} = {n + m}.")
     return вон
 
 
