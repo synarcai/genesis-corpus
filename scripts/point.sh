@@ -2,7 +2,10 @@
 # ТОЧКА СВОДА ОДНОЙ КОМАНДОЙ (05.09, мандат ускорения): сборка свода и приборы точки по порядку —
 # свод → манифест → ширина вопроса → состав палаты → перепись копий → удержанный ключ →
 # воспроизводимость (после свода: свод есть цель генератора и обязан совпасть) → подпись.
-# Полный набор судов (courts.sh, ~45 мин) — отдельно: scripts/point.sh --suite. Под nohup:
+# Полный набор судов (~45 мин) — отдельно: scripts/point.sh --suite. Под nohup:
+# ПОД ЗАМКОМ НАБОР ГОНЯТЬ ЧЕРЕЗ scripts/suite.sh: он берёт имя со штампом времени
+# (свой прогон не ждёт сам себя) и ЧИТАЕТ код 75 — «набор не запускался», который
+# иначе молчит в логе до утра (шрам 07.09).
 #   nohup bash scripts/point.sh > /tmp/point.txt 2>&1 &
 # ИМЕНА ПЕРЕМЕННЫХ ЛАТИНИЦЕЙ (bash 3.2).
 set -u
@@ -25,7 +28,7 @@ run "удержанный ключ" python3 scripts/holdout_key.py
 run "воспроизводимость" python3 scripts/reproducible.py
 echo "== подпись: sha $(shasum -a 256 datasets/GENESIS-FULL.txt | cut -c1-16), байт $(wc -c < datasets/GENESIS-FULL.txt | tr -d ' '), строк $(grep -c . datasets/GENESIS-FULL.txt)"
 if [ "$SUITE" = 1 ]; then
-  bash scripts/courts.sh | tail -3
+  bash scripts/suite.sh | tail -3
 fi
 if [ "$FELL" = 0 ]; then echo "ТОЧКА PASS: все приборы точки целы"; exit 0; fi
 echo "ТОЧКА FAIL: пало приборов $FELL"; exit 1
