@@ -1,573 +1,597 @@
 {
- "lang": "pl",
- "polarity": {
-  "yes": [
-   "tak"
-  ],
-  "no": [
-   "nie"
-  ]
- },
- "polarity_comment": "ANSWER POLARITY (05.09): the word that opens an answer and fixes the truth of what the question quoted — «правда ли, что дважды два — пять? нет, …». The arithmetic court reads the quoted equality through this word: after a no-word it must be false, after a yes-word true. Declared per language, never derived.",
- "remainder_word": [
-  "reszta"
- ],
- "remainder_comment": "REMAINDER WORD (06.09): the word that names the remainder in the division form «a = b × q + r, <word> r» — «кратно ли 34 числу 6? нет: 34 = 6 × 5 + 4, остаток 4». The arithmetic court reads the form through this word: the equality and the named remainder must agree (a = b·q + r and r′ = r). Declared per language from the census of the corpus (1290 shows: остаток 318, remainder 305, resto 238, Rest 100, reste 100, rest 100, reszta 77, kalan 52), never derived.",
- "script": "latin",
- "script_range": "A-Za-zĄĆĘŁŃÓŚŹŻąćęłńóśźż",
- "graphemes": "aąbcćdeęfghijklłmnńoóprsśtuwyzźż",
- "tier": 1,
- "comment": "ELEVENTH PACK. Polish: the Slavic count law (1 / 2-4 / 5+ with the teens exception) on a Latin alphabet, and nine diacritics no other pack carries. TIER 1.",
- "lexeme_source": {
-  "law": "every morph class must carry >= LAW distinct lexemes; a class below its declared need is judged poor by the engine",
-  "need_per_class": 5
- },
- "numerals": {
-  "0": "zero",
-  "1": "jeden",
-  "2": "dwa",
-  "3": "trzy",
-  "4": "cztery",
-  "5": "pięć",
-  "6": "sześć",
-  "7": "siedem",
-  "8": "osiem",
-  "9": "dziewięć",
-  "10": "dziesięć",
-  "11": "jedenaście",
-  "12": "dwanaście",
-  "13": "trzynaście",
-  "14": "czternaście",
-  "15": "piętnaście",
-  "16": "szesnaście",
-  "17": "siedemnaście",
-  "18": "osiemnaście",
-  "19": "dziewiętnaście",
-  "20": "dwadzieścia",
-  "30": "trzydzieści",
-  "40": "czterdzieści",
-  "50": "pięćdziesiąt",
-  "60": "sześćdziesiąt",
-  "70": "siedemdziesiąt",
-  "80": "osiemdziesiąt",
-  "90": "dziewięćdziesiąt",
-  "100": "sto"
- },
- "count_agreement": [
-  {
-   "mod": 100,
-   "in": [
-    11,
-    12,
-    13,
-    14
-   ],
-   "form": "many"
-  },
-  {
-   "in": [
-    1
-   ],
-   "form": "one"
-  },
-  {
-   "mod": 10,
-   "in": [
-    2,
-    3,
-    4
-   ],
-   "form": "few"
-  },
-  {
-   "form": "many"
-  }
- ],
- "morph_classes": {
-  "verb_pres": {
-   "forms": [
-    "s1",
-    "s2",
-    "s3",
-    "p1",
-    "p2",
-    "p3"
-   ],
-   "paradigm_cells": 6,
-   "need": 5,
-   "lexemes": {
-    "czytać": [
-     "czytam",
-     "czytasz",
-     "czyta",
-     "czytamy",
-     "czytacie",
-     "czytają"
+  "lang": "pl",
+  "polarity": {
+    "yes": [
+      "tak"
     ],
-    "śpiewać": [
-     "śpiewam",
-     "śpiewasz",
-     "śpiewa",
-     "śpiewamy",
-     "śpiewacie",
-     "śpiewają"
-    ],
-    "pytać": [
-     "pytam",
-     "pytasz",
-     "pyta",
-     "pytamy",
-     "pytacie",
-     "pytają"
-    ],
-    "kochać": [
-     "kocham",
-     "kochasz",
-     "kocha",
-     "kochamy",
-     "kochacie",
-     "kochają"
-    ],
-    "mieszkać": [
-     "mieszkam",
-     "mieszkasz",
-     "mieszka",
-     "mieszkamy",
-     "mieszkacie",
-     "mieszkają"
-    ],
-    "słuchać": [
-     "słucham",
-     "słuchasz",
-     "słucha",
-     "słuchamy",
-     "słuchacie",
-     "słuchają"
-    ],
-    "grać": [
-     "gram",
-     "grasz",
-     "gra",
-     "gramy",
-     "gracie",
-     "grają"
-    ],
-    "znać": [
-     "znam",
-     "znasz",
-     "zna",
-     "znamy",
-     "znacie",
-     "znają"
+    "no": [
+      "nie"
     ]
-   },
-   "rule": {
-    "classes": {
-     "ać": {
-      "strip": "ać",
-      "endings": [
-       "am",
-       "asz",
-       "a",
-       "amy",
-       "acie",
-       "ają"
+  },
+  "polarity_comment": "ANSWER POLARITY (05.09): the word that opens an answer and fixes the truth of what the question quoted — «правда ли, что дважды два — пять? нет, …». The arithmetic court reads the quoted equality through this word: after a no-word it must be false, after a yes-word true. Declared per language, never derived.",
+  "remainder_word": [
+    "reszta"
+  ],
+  "remainder_comment": "REMAINDER WORD (06.09): the word that names the remainder in the division form «a = b × q + r, <word> r» — «кратно ли 34 числу 6? нет: 34 = 6 × 5 + 4, остаток 4». The arithmetic court reads the form through this word: the equality and the named remainder must agree (a = b·q + r and r′ = r). Declared per language from the census of the corpus (1290 shows: остаток 318, remainder 305, resto 238, Rest 100, reste 100, rest 100, reszta 77, kalan 52), never derived.",
+  "script": "latin",
+  "script_range": "A-Za-zĄĆĘŁŃÓŚŹŻąćęłńóśźż",
+  "graphemes": "aąbcćdeęfghijklłmnńoóprsśtuwyzźż",
+  "tier": 1,
+  "comment": "ELEVENTH PACK. Polish: the Slavic count law (1 / 2-4 / 5+ with the teens exception) on a Latin alphabet, and nine diacritics no other pack carries. TIER 1.",
+  "lexeme_source": {
+    "law": "every morph class must carry >= LAW distinct lexemes; a class below its declared need is judged poor by the engine",
+    "need_per_class": 5
+  },
+  "numerals": {
+    "0": "zero",
+    "1": "jeden",
+    "2": "dwa",
+    "3": "trzy",
+    "4": "cztery",
+    "5": "pięć",
+    "6": "sześć",
+    "7": "siedem",
+    "8": "osiem",
+    "9": "dziewięć",
+    "10": "dziesięć",
+    "11": "jedenaście",
+    "12": "dwanaście",
+    "13": "trzynaście",
+    "14": "czternaście",
+    "15": "piętnaście",
+    "16": "szesnaście",
+    "17": "siedemnaście",
+    "18": "osiemnaście",
+    "19": "dziewiętnaście",
+    "20": "dwadzieścia",
+    "30": "trzydzieści",
+    "40": "czterdzieści",
+    "50": "pięćdziesiąt",
+    "60": "sześćdziesiąt",
+    "70": "siedemdziesiąt",
+    "80": "osiemdziesiąt",
+    "90": "dziewięćdziesiąt",
+    "100": "sto"
+  },
+  "count_agreement": [
+    {
+      "mod": 100,
+      "in": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "form": "many"
+    },
+    {
+      "in": [
+        1
+      ],
+      "form": "one"
+    },
+    {
+      "mod": 10,
+      "in": [
+        2,
+        3,
+        4
+      ],
+      "form": "few"
+    },
+    {
+      "form": "many"
+    }
+  ],
+  "morph_classes": {
+    "verb_pres": {
+      "forms": [
+        "s1",
+        "s2",
+        "s3",
+        "p1",
+        "p2",
+        "p3"
+      ],
+      "paradigm_cells": 6,
+      "need": 5,
+      "lexemes": {
+        "czytać": [
+          "czytam",
+          "czytasz",
+          "czyta",
+          "czytamy",
+          "czytacie",
+          "czytają"
+        ],
+        "śpiewać": [
+          "śpiewam",
+          "śpiewasz",
+          "śpiewa",
+          "śpiewamy",
+          "śpiewacie",
+          "śpiewają"
+        ],
+        "pytać": [
+          "pytam",
+          "pytasz",
+          "pyta",
+          "pytamy",
+          "pytacie",
+          "pytają"
+        ],
+        "kochać": [
+          "kocham",
+          "kochasz",
+          "kocha",
+          "kochamy",
+          "kochacie",
+          "kochają"
+        ],
+        "mieszkać": [
+          "mieszkam",
+          "mieszkasz",
+          "mieszka",
+          "mieszkamy",
+          "mieszkacie",
+          "mieszkają"
+        ],
+        "słuchać": [
+          "słucham",
+          "słuchasz",
+          "słucha",
+          "słuchamy",
+          "słuchacie",
+          "słuchają"
+        ],
+        "grać": [
+          "gram",
+          "grasz",
+          "gra",
+          "gramy",
+          "gracie",
+          "grają"
+        ],
+        "znać": [
+          "znam",
+          "znasz",
+          "zna",
+          "znamy",
+          "znacie",
+          "znają"
+        ]
+      },
+      "rule": {
+        "classes": {
+          "ać": {
+            "strip": "ać",
+            "endings": [
+              "am",
+              "asz",
+              "a",
+              "amy",
+              "acie",
+              "ają"
+            ]
+          }
+        },
+        "of": {
+          "czytać": "ać",
+          "śpiewać": "ać",
+          "pytać": "ać",
+          "kochać": "ać",
+          "mieszkać": "ać",
+          "słuchać": "ać",
+          "grać": "ać",
+          "znać": "ać"
+        }
+      }
+    },
+    "noun_count": {
+      "forms": [
+        "one",
+        "few",
+        "many"
+      ],
+      "paradigm_cells": 3,
+      "need": 5,
+      "lexemes": {
+        "książka": [
+          "książka",
+          "książki",
+          "książek"
+        ],
+        "dom": [
+          "dom",
+          "domy",
+          "domów"
+        ],
+        "stół": [
+          "stół",
+          "stoły",
+          "stołów"
+        ],
+        "kwiat": [
+          "kwiat",
+          "kwiaty",
+          "kwiatów"
+        ],
+        "miasto": [
+          "miasto",
+          "miasta",
+          "miast"
+        ],
+        "papier": [
+          "papier",
+          "papiery",
+          "papierów"
+        ],
+        "kot": [
+          "kot",
+          "koty",
+          "kotów"
+        ],
+        "kilogram": [
+          "kilogram",
+          "kilogramy",
+          "kilogramów"
+        ],
+        "egzamin": [
+          "egzamin",
+          "egzaminy",
+          "egzaminów"
+        ],
+        "taksówka": [
+          "taksówka",
+          "taksówki",
+          "taksówek"
+        ],
+        "pociąg": [
+          "pociąg",
+          "pociągi",
+          "pociągów"
+        ],
+        "gazeta": [
+          "gazeta",
+          "gazety",
+          "gazet"
+        ],
+        "źródło": [
+          "źródło",
+          "źródła",
+          "źródeł"
+        ],
+        "żaba": [
+          "żaba",
+          "żaby",
+          "żab"
+        ],
+        "ćma": [
+          "ćma",
+          "ćmy",
+          "ciem"
+        ],
+        "łąka": [
+          "łąka",
+          "łąki",
+          "łąk"
+        ],
+        "koń": [
+          "koń",
+          "konie",
+          "koni"
+        ],
+        "ściana": [
+          "ściana",
+          "ściany",
+          "ścian"
+        ],
+        "jabłko": [
+          "jabłko",
+          "jabłka",
+          "jabłek"
+        ],
+        "ręka": [
+          "ręka",
+          "ręce",
+          "rąk"
+        ],
+        "farba": [
+          "farba",
+          "farby",
+          "farb"
+        ],
+        "fala": [
+          "fala",
+          "fale",
+          "fal"
+        ]
+      },
+      "count_comment": "ЯЧЕЙКА «many» ПРЕЖДЕ НЕСЛА ИМЕНИТЕЛЬНЫЙ МНОЖЕСТВЕННОГО, а правило `count_agreement` требует трёх форм: при пяти и более польский берёт РОДИТЕЛЬНЫЙ множественного («5 książek», не «5 książki»). Ныне ячеек три; прежняя форма стои́т на месте «few» (2–4) — тем же индексом 1, так что читатель по номеру не сдвинут, а читатель по имени получает верное (07.09)."
+    }
+  },
+  "show_kinds": {
+    "arithmetic": {
+      "lexicon": [
+        "plus",
+        "minus",
+        "razy",
+        "podzielone",
+        "równa"
+      ],
+      "ops": {
+        "minus": "-",
+        "plus": "+",
+        "podzielone": "/",
+        "podzielone przez": "/",
+        "pomnożone przez": "*",
+        "razy": "*",
+        "równa": "="
+      },
+      "instances_per_pass": 14,
+      "templates": [
+        "{num:n} plus {num:m} równa {num:sum}.",
+        "{n} + {m} = {sum}.",
+        "{num:sum} minus {num:m} równa {num:n}.",
+        "{num:n} razy {num:m} równa {num:prod}.",
+        "{num:prod} podzielone {num:m} równa {num:n}.",
+        "ile to {num:n} plus {num:m}? {num:n} plus {num:m} równa {num:sum}."
       ]
-     }
     },
-    "of": {
-     "czytać": "ać",
-     "śpiewać": "ać",
-     "pytać": "ać",
-     "kochać": "ać",
-     "mieszkać": "ać",
-     "słuchać": "ać",
-     "grać": "ać",
-     "znać": "ać"
+    "conjugation": {
+      "lexicon": [
+        "ja",
+        "ty",
+        "on",
+        "my",
+        "wy",
+        "oni"
+      ],
+      "instances_per_pass": 16,
+      "templates": [
+        "ja {lex:verb_pres:s1}.",
+        "ty {lex:verb_pres:s2}.",
+        "on {lex:verb_pres:s3}.",
+        "my {lex:verb_pres:p1}.",
+        "wy {lex:verb_pres:p2}.",
+        "oni {lex:verb_pres:p3}."
+      ]
+    },
+    "counting": {
+      "lexicon": [
+        "tutaj",
+        "oto"
+      ],
+      "instances_per_pass": 44,
+      "templates": [
+        "oto {lex:noun_count:one}.",
+        "oto {lex:noun_count:many}.",
+        "tutaj {lex:noun_count:many}."
+      ]
+    },
+    "definition": {
+      "lexicon": [
+        "rzecz",
+        "przedmiot",
+        "jest"
+      ],
+      "instances_per_pass": 44,
+      "templates": [
+        "{lex:noun_count:one} to rzecz.",
+        "co to jest {lex:noun_count:one}? {lex:noun_count:one} to rzecz."
+      ]
+    },
+    "refusals": {
+      "refusal": true,
+      "marker": "¬ ",
+      "lexicon": [
+        "¬"
+      ],
+      "pairs": [
+        {
+          "bad": "dwa kot.",
+          "good": "dwa koty.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "pięć koty.",
+          "good": "pięć kotów.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "ja czytasz.",
+          "good": "ja tańczę.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "jaki kolor ma siedem ?",
+          "good": "co to jest przedmiot ?",
+          "reason": "unanswerable"
+        },
+        {
+          "bad": "dom plus kot równa ?",
+          "good": "sto minus jeden równa dziewięćdziesiąt dziewięć.",
+          "reason": "type_mismatch"
+        }
+      ]
+    },
+    "counting_chain": {
+      "lexicon": [],
+      "instances_per_pass": 3,
+      "templates": [
+        "{chain}."
+      ]
     }
-   }
   },
-  "noun_count": {
-   "forms": [
-    "one",
-    "many"
-   ],
-   "paradigm_cells": 2,
-   "need": 5,
-   "lexemes": {
-    "książka": [
-     "książka",
-     "książki"
+  "core_pairing": [
+    {
+      "lang_word": "plus",
+      "core": "+",
+      "core_form": "+",
+      "lang_form": "plus"
+    },
+    {
+      "lang_word": "minus",
+      "core": "-",
+      "core_form": "-",
+      "lang_form": "minus"
+    },
+    {
+      "lang_word": "razy",
+      "core": "×",
+      "core_form": "×",
+      "lang_form": "razy"
+    },
+    {
+      "lang_word": "podzielone",
+      "core": "÷",
+      "core_form": "÷",
+      "lang_form": "podzielone"
+    },
+    {
+      "lang_word": "równa",
+      "core": "=",
+      "core_form": "=",
+      "lang_form": "równa"
+    }
+  ],
+  "cross_kind_share": 0.3,
+  "irregulars": [
+    "ręce",
+    "konie",
+    "stoły",
+    "źródła",
+    "jabłka"
+  ],
+  "probe": {
+    "words": [
+      "dom",
+      "ja",
+      "kot",
+      "minus",
+      "my",
+      "on",
+      "oni",
+      "oto",
+      "plus",
+      "podzielone",
+      "przedmiot",
+      "razy",
+      "rzecz",
+      "równa",
+      "to",
+      "tutaj",
+      "ty",
+      "wy"
     ],
-    "dom": [
-     "dom",
-     "domy"
+    "diacritics": "ąćęłńóśźż"
+  },
+  "ask_words": {
+    "words": [
+      "co",
+      "czy",
+      "czyj",
+      "czyja",
+      "dokąd",
+      "gdzie",
+      "ile",
+      "jaka",
+      "jaki",
+      "jakie",
+      "kiedy",
+      "kto",
+      "którego",
+      "których",
+      "którym",
+      "którą",
+      "skąd",
+      "¬"
     ],
-    "stół": [
-     "stół",
-     "stoły"
+    "position": "front"
+  },
+  "ask_words_comment": "question words and their POSITION (front/end/any) — derived from this pack's own layer, checkable by the same measure (М-137)",
+  "ask_forms": {
+    "prime": [
+      "czy {} jest liczbą pierwszą?",
+      "czy {} ma dokładnie dwa dzielniki?"
     ],
-    "kwiat": [
-     "kwiat",
-     "kwiaty"
+    "divisible": [
+      "czy {} dzieli się przez {}?",
+      "czy {} jest wielokrotnością liczby {}?"
     ],
-    "miasto": [
-     "miasto",
-     "miasta"
-    ],
-    "papier": [
-     "papier",
-     "papiery"
-    ],
-    "kot": [
-     "kot",
-     "koty"
-    ],
-    "kilogram": [
-     "kilogram",
-     "kilogramy"
-    ],
-    "egzamin": [
-     "egzamin",
-     "egzaminy"
-    ],
-    "taksówka": [
-     "taksówka",
-     "taksówki"
-    ],
-    "pociąg": [
-     "pociąg",
-     "pociągi"
-    ],
-    "gazeta": [
-     "gazeta",
-     "gazety"
-    ],
-    "źródło": [
-     "źródło",
-     "źródła"
-    ],
-    "żaba": [
-     "żaba",
-     "żaby"
-    ],
-    "ćma": [
-     "ćma",
-     "ćmy"
-    ],
-    "łąka": [
-     "łąka",
-     "łąki"
-    ],
-    "koń": [
-     "koń",
-     "konie"
-    ],
-    "ściana": [
-     "ściana",
-     "ściany"
-    ],
-    "jabłko": [
-     "jabłko",
-     "jabłka"
-    ],
-    "ręka": [
-     "ręka",
-     "ręce"
-    ],
-    "farba": [
-     "farba",
-     "farby"
-    ],
-    "fala": [
-     "fala",
-     "fale"
+    "value": [
+      "ile to {}?",
+      "ile wynosi {}?",
+      "oblicz {}."
     ]
-   }
-  }
- },
- "show_kinds": {
-  "arithmetic": {
-   "lexicon": [
-    "plus",
-    "minus",
-    "razy",
-    "podzielone",
-    "równa"
-   ],
-   "ops": {
-    "minus": "-",
-    "plus": "+",
-    "podzielone": "/",
-    "podzielone przez": "/",
-    "pomnożone przez": "*",
-    "razy": "*",
-    "równa": "="
-   },
-   "instances_per_pass": 14,
-   "templates": [
-    "{num:n} plus {num:m} równa {num:sum}.",
-    "{n} + {m} = {sum}.",
-    "{num:sum} minus {num:m} równa {num:n}.",
-    "{num:n} razy {num:m} równa {num:prod}.",
-    "{num:prod} podzielone {num:m} równa {num:n}.",
-    "ile to {num:n} plus {num:m}? {num:n} plus {num:m} równa {num:sum}."
-   ]
   },
-  "conjugation": {
-   "lexicon": [
-    "ja",
-    "ty",
-    "on",
-    "my",
-    "wy",
-    "oni"
-   ],
-   "instances_per_pass": 16,
-   "templates": [
-    "ja {lex:verb_pres:s1}.",
-    "ty {lex:verb_pres:s2}.",
-    "on {lex:verb_pres:s3}.",
-    "my {lex:verb_pres:p1}.",
-    "wy {lex:verb_pres:p2}.",
-    "oni {lex:verb_pres:p3}."
-   ]
+  "ask_forms_comment": "second declared question form of each genus (Т-4 of the expressiveness college, 03.09): a paraphrase is a form of the pack, never a synonym list of a generator; every form carries the whole pair; the opening word is a declared question word (courts/script_court.py reads it)",
+  "task_words": {
+    "words": [
+      "oblicz",
+      "policz"
+    ]
   },
-  "counting": {
-   "lexicon": [
-    "tutaj",
-    "oto"
-   ],
-   "instances_per_pass": 44,
-   "templates": [
-    "oto {lex:noun_count:one}.",
-    "oto {lex:noun_count:many}.",
-    "tutaj {lex:noun_count:many}."
-   ]
-  },
-  "definition": {
-   "lexicon": [
-    "rzecz",
-    "przedmiot",
-    "jest"
-   ],
-   "instances_per_pass": 44,
-   "templates": [
-    "{lex:noun_count:one} to rzecz.",
-    "co to jest {lex:noun_count:one}? {lex:noun_count:one} to rzecz."
-   ]
-  },
-  "refusals": {
-   "refusal": true,
-   "marker": "¬ ",
-   "lexicon": [
-    "¬"
-   ],
-   "pairs": [
-    {
-     "bad": "dwa kot.",
-     "good": "dwa koty.",
-     "reason": "agreement"
+  "person_names": [
+    "Anna",
+    "Jan",
+    "Maria",
+    "Piotr",
+    "Zofia",
+    "Paweł",
+    "Ewa",
+    "Marek"
+  ],
+  "person_forms": {
+    "Anna": {
+      "gender": "f"
     },
-    {
-     "bad": "pięć koty.",
-     "good": "pięć kotów.",
-     "reason": "agreement"
+    "Jan": {
+      "gender": "m"
     },
-    {
-     "bad": "ja czytasz.",
-     "good": "ja tańczę.",
-     "reason": "agreement"
+    "Maria": {
+      "gender": "f"
     },
-    {
-     "bad": "jaki kolor ma siedem ?",
-     "good": "co to jest przedmiot ?",
-     "reason": "unanswerable"
+    "Piotr": {
+      "gender": "m"
     },
-    {
-     "bad": "dom plus kot równa ?",
-     "good": "sto minus jeden równa dziewięćdziesiąt dziewięć.",
-     "reason": "type_mismatch"
+    "Zofia": {
+      "gender": "f"
+    },
+    "Paweł": {
+      "gender": "m"
+    },
+    "Ewa": {
+      "gender": "f"
+    },
+    "Marek": {
+      "gender": "m"
     }
-   ]
   },
-  "counting_chain": {
-   "lexicon": [],
-   "instances_per_pass": 3,
-   "templates": [
-    "{chain}."
-   ]
-  }
- },
- "core_pairing": [
-  {
-   "lang_word": "plus",
-   "core": "+",
-   "core_form": "+",
-   "lang_form": "plus"
-  },
-  {
-   "lang_word": "minus",
-   "core": "-",
-   "core_form": "-",
-   "lang_form": "minus"
-  },
-  {
-   "lang_word": "razy",
-   "core": "×",
-   "core_form": "×",
-   "lang_form": "razy"
-  },
-  {
-   "lang_word": "podzielone",
-   "core": "÷",
-   "core_form": "÷",
-   "lang_form": "podzielone"
-  },
-  {
-   "lang_word": "równa",
-   "core": "=",
-   "core_form": "=",
-   "lang_form": "równa"
-  }
- ],
- "cross_kind_share": 0.3,
- "irregulars": [
-  "ręce",
-  "konie",
-  "stoły",
-  "źródła",
-  "jabłka"
- ],
- "probe": {
-  "words": [
-   "dom",
-   "ja",
-   "kot",
-   "minus",
-   "my",
-   "on",
-   "oni",
-   "oto",
-   "plus",
-   "podzielone",
-   "przedmiot",
-   "razy",
-   "rzecz",
-   "równa",
-   "to",
-   "tutaj",
-   "ty",
-   "wy"
-  ],
-  "diacritics": "ąćęłńóśźż"
- },
- "ask_words": {
-  "words": [
-   "co",
-   "czy",
-   "czyj",
-   "czyja",
-   "dokąd",
-   "gdzie",
-   "ile",
-   "jaka",
-   "jaki",
-   "jakie",
-   "kiedy",
-   "kto",
-   "którego",
-   "których",
-   "którym",
-   "którą",
-   "skąd",
-   "¬"
-  ],
-  "position": "front"
- },
- "ask_words_comment": "question words and their POSITION (front/end/any) — derived from this pack's own layer, checkable by the same measure (М-137)",
- "ask_forms": {
-  "prime": [
-   "czy {} jest liczbą pierwszą?",
-   "czy {} ma dokładnie dwa dzielniki?"
-  ],
-  "divisible": [
-   "czy {} dzieli się przez {}?",
-   "czy {} jest wielokrotnością liczby {}?"
-  ],
-  "value": [
-   "ile to {}?",
-   "ile wynosi {}?",
-   "oblicz {}."
+  "function_words": [
+    "co",
+    "dla",
+    "do",
+    "gdzie",
+    "i",
+    "ile",
+    "jaka",
+    "jaki",
+    "jakie",
+    "jest",
+    "kiedy",
+    "kto",
+    "lub",
+    "ma",
+    "mają",
+    "na",
+    "nie",
+    "o",
+    "od",
+    "przez",
+    "są",
+    "w",
+    "z",
+    "że"
   ]
- },
- "ask_forms_comment": "second declared question form of each genus (Т-4 of the expressiveness college, 03.09): a paraphrase is a form of the pack, never a synonym list of a generator; every form carries the whole pair; the opening word is a declared question word (courts/script_court.py reads it)",
- "task_words": {
-  "words": [
-   "oblicz",
-   "policz"
-  ]
- },
- "person_names": [
-  "Anna",
-  "Jan",
-  "Maria",
-  "Piotr",
-  "Zofia",
-  "Paweł",
-  "Ewa",
-  "Marek"
- ],
- "person_forms": {
-  "Anna": {
-   "gender": "f"
-  },
-  "Jan": {
-   "gender": "m"
-  },
-  "Maria": {
-   "gender": "f"
-  },
-  "Piotr": {
-   "gender": "m"
-  },
-  "Zofia": {
-   "gender": "f"
-  },
-  "Paweł": {
-   "gender": "m"
-  },
-  "Ewa": {
-   "gender": "f"
-  },
-  "Marek": {
-   "gender": "m"
-  }
- },
- "function_words": [
-  "co",
-  "dla",
-  "do",
-  "gdzie",
-  "i",
-  "ile",
-  "jaka",
-  "jaki",
-  "jakie",
-  "jest",
-  "kiedy",
-  "kto",
-  "lub",
-  "ma",
-  "mają",
-  "na",
-  "nie",
-  "o",
-  "od",
-  "przez",
-  "są",
-  "w",
-  "z",
-  "że"
- ]
 }

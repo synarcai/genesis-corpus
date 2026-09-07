@@ -388,49 +388,70 @@
     "noun_count": {
       "forms": [
         "one",
-        "many"
+        "many",
+        "count_one",
+        "count_many"
       ],
-      "paradigm_cells": 2,
+      "paradigm_cells": 4,
       "need": 5,
       "plural_by_count": true,
       "lexemes": {
         "buch": [
           "buch",
-          "bücher"
+          "bücher",
+          "Buch",
+          "Bücher"
         ],
         "karte": [
           "karte",
-          "karten"
+          "karten",
+          "Karte",
+          "Karten"
         ],
         "tisch": [
           "tisch",
-          "tische"
+          "tische",
+          "Tisch",
+          "Tische"
         ],
         "haus": [
           "haus",
-          "häuser"
+          "häuser",
+          "Haus",
+          "Häuser"
         ],
         "blume": [
           "blume",
-          "blumen"
+          "blumen",
+          "Blume",
+          "Blumen"
         ],
         "wort": [
           "wort",
-          "wörter"
+          "wörter",
+          "Wort",
+          "Wörter"
         ],
         "frage": [
           "frage",
-          "fragen"
+          "fragen",
+          "Frage",
+          "Fragen"
         ],
         "weg": [
           "weg",
-          "wege"
+          "wege",
+          "Weg",
+          "Wege"
         ],
         "katze": [
           "katze",
-          "katzen"
+          "katzen",
+          "Katze",
+          "Katzen"
         ]
-      }
+      },
+      "count_comment": "ячейки one/many стоя́т строчными, как их объявили; count_one/count_many несут ПРОПИСНУЮ, ибо немецкое имя пишется с прописной (07.09)"
     },
     "noun_plural_case": {
       "forms": [

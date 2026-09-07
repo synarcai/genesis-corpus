@@ -1,625 +1,674 @@
 {
- "lang": "fr",
- "polarity": {
-  "yes": [
-   "oui"
+  "lang": "fr",
+  "polarity": {
+    "yes": [
+      "oui"
+    ],
+    "no": [
+      "non"
+    ]
+  },
+  "polarity_comment": "ANSWER POLARITY (05.09): the word that opens an answer and fixes the truth of what the question quoted — «правда ли, что дважды два — пять? нет, …». The arithmetic court reads the quoted equality through this word: after a no-word it must be false, after a yes-word true. Declared per language, never derived.",
+  "remainder_word": [
+    "reste"
   ],
-  "no": [
-   "non"
-  ]
- },
- "polarity_comment": "ANSWER POLARITY (05.09): the word that opens an answer and fixes the truth of what the question quoted — «правда ли, что дважды два — пять? нет, …». The arithmetic court reads the quoted equality through this word: after a no-word it must be false, after a yes-word true. Declared per language, never derived.",
- "remainder_word": [
-  "reste"
- ],
- "remainder_comment": "REMAINDER WORD (06.09): the word that names the remainder in the division form «a = b × q + r, <word> r» — «кратно ли 34 числу 6? нет: 34 = 6 × 5 + 4, остаток 4». The arithmetic court reads the form through this word: the equality and the named remainder must agree (a = b·q + r and r′ = r). Declared per language from the census of the corpus (1290 shows: остаток 318, remainder 305, resto 238, Rest 100, reste 100, rest 100, reszta 77, kalan 52), never derived.",
- "script": "latin",
- "script_range": "A-Za-zÀÂÇÉÈÊËÎÏÔÙÛÜŸàâçéèêëîïôùûüÿ",
- "graphemes": "abcdefghijklmnopqrstuvwxyzàâçéèêëîïôùû",
- "tier": 1,
- "comment": "SIXTH PACK. French: six persons, silent endings that differ in writing where they merge in speech — a paradigm the written corpus can teach and the spoken cannot. TIER 1: structure green, forms not checked by a native.",
- "lexeme_source": {
-  "law": "every morph class must carry >= LAW distinct lexemes; a class below its declared need is judged poor by the engine",
-  "need_per_class": 5
- },
- "numerals": {
-  "0": "zéro",
-  "1": "un",
-  "2": "deux",
-  "3": "trois",
-  "4": "quatre",
-  "5": "cinq",
-  "6": "six",
-  "7": "sept",
-  "8": "huit",
-  "9": "neuf",
-  "10": "dix",
-  "11": "onze",
-  "12": "douze",
-  "13": "treize",
-  "14": "quatorze",
-  "15": "quinze",
-  "16": "seize",
-  "17": "dix-sept",
-  "18": "dix-huit",
-  "19": "dix-neuf",
-  "20": "vingt",
-  "30": "trente",
-  "40": "quarante",
-  "50": "cinquante",
-  "60": "soixante",
-  "70": "soixante-dix",
-  "80": "quatre-vingts",
-  "90": "quatre-vingt-dix",
-  "99": "quatre-vingt-dix-neuf",
-  "100": "cent"
- },
- "count_agreement": [
-  {
-   "in": [
-    1
-   ],
-   "form": "one"
+  "remainder_comment": "REMAINDER WORD (06.09): the word that names the remainder in the division form «a = b × q + r, <word> r» — «кратно ли 34 числу 6? нет: 34 = 6 × 5 + 4, остаток 4». The arithmetic court reads the form through this word: the equality and the named remainder must agree (a = b·q + r and r′ = r). Declared per language from the census of the corpus (1290 shows: остаток 318, remainder 305, resto 238, Rest 100, reste 100, rest 100, reszta 77, kalan 52), never derived.",
+  "script": "latin",
+  "script_range": "A-Za-zÀÂÇÉÈÊËÎÏÔÙÛÜŸàâçéèêëîïôùûüÿ",
+  "graphemes": "abcdefghijklmnopqrstuvwxyzàâçéèêëîïôùû",
+  "tier": 1,
+  "comment": "SIXTH PACK. French: six persons, silent endings that differ in writing where they merge in speech — a paradigm the written corpus can teach and the spoken cannot. TIER 1: structure green, forms not checked by a native.",
+  "lexeme_source": {
+    "law": "every morph class must carry >= LAW distinct lexemes; a class below its declared need is judged poor by the engine",
+    "need_per_class": 5
   },
-  {
-   "form": "many"
-  }
- ],
- "morph_classes": {
-  "verb_pres": {
-   "forms": [
-    "s1",
-    "s2",
-    "s3",
-    "p1",
-    "p2",
-    "p3"
-   ],
-   "paradigm_cells": 6,
-   "need": 5,
-   "lexemes": {
-    "parler": [
-     "parle",
-     "parles",
-     "parle",
-     "parlons",
-     "parlez",
-     "parlent"
-    ],
-    "manger": [
-     "mange",
-     "manges",
-     "mange",
-     "mangeons",
-     "mangez",
-     "mangent"
-    ],
-    "finir": [
-     "finis",
-     "finis",
-     "finit",
-     "finissons",
-     "finissez",
-     "finissent"
-    ],
-    "vendre": [
-     "vends",
-     "vends",
-     "vend",
-     "vendons",
-     "vendez",
-     "vendent"
-    ],
-    "lire": [
-     "lis",
-     "lis",
-     "lit",
-     "lisons",
-     "lisez",
-     "lisent"
-    ],
-    "courir": [
-     "cours",
-     "cours",
-     "court",
-     "courons",
-     "courez",
-     "courent"
-    ],
-    "ouvrir": [
-     "ouvre",
-     "ouvres",
-     "ouvre",
-     "ouvrons",
-     "ouvrez",
-     "ouvrent"
-    ],
-    "chanter": [
-     "chante",
-     "chantes",
-     "chante",
-     "chantons",
-     "chantez",
-     "chantent"
-    ]
-   },
-   "rule": {
-    "classes": {
-     "er": {
-      "strip": "er",
-      "endings": [
-       "e",
-       "es",
-       "e",
-       "ons",
-       "ez",
-       "ent"
-      ]
-     },
-     "ir_iss": {
-      "strip": "ir",
-      "endings": [
-       "is",
-       "is",
-       "it",
-       "issons",
-       "issez",
-       "issent"
-      ]
-     },
-     "ir_bare": {
-      "strip": "ir",
-      "endings": [
-       "s",
-       "s",
-       "t",
-       "ons",
-       "ez",
-       "ent"
-      ]
-     },
-     "ir_er": {
-      "strip": "ir",
-      "endings": [
-       "e",
-       "es",
-       "e",
-       "ons",
-       "ez",
-       "ent"
-      ]
-     },
-     "re": {
-      "strip": "re",
-      "endings": [
-       "s",
-       "s",
-       "",
-       "ons",
-       "ez",
-       "ent"
-      ]
-     }
+  "numerals": {
+    "0": "zéro",
+    "1": "un",
+    "2": "deux",
+    "3": "trois",
+    "4": "quatre",
+    "5": "cinq",
+    "6": "six",
+    "7": "sept",
+    "8": "huit",
+    "9": "neuf",
+    "10": "dix",
+    "11": "onze",
+    "12": "douze",
+    "13": "treize",
+    "14": "quatorze",
+    "15": "quinze",
+    "16": "seize",
+    "17": "dix-sept",
+    "18": "dix-huit",
+    "19": "dix-neuf",
+    "20": "vingt",
+    "30": "trente",
+    "40": "quarante",
+    "50": "cinquante",
+    "60": "soixante",
+    "70": "soixante-dix",
+    "80": "quatre-vingts",
+    "90": "quatre-vingt-dix",
+    "99": "quatre-vingt-dix-neuf",
+    "100": "cent"
+  },
+  "count_agreement": [
+    {
+      "in": [
+        1
+      ],
+      "form": "one"
     },
-    "of": {
-     "parler": "er",
-     "manger": "*",
-     "finir": "ir_iss",
-     "vendre": "re",
-     "lire": "*",
-     "courir": "ir_bare",
-     "ouvrir": "ir_er",
-     "chanter": "er"
+    {
+      "form": "many"
     }
-   }
+  ],
+  "morph_classes": {
+    "verb_pres": {
+      "forms": [
+        "s1",
+        "s2",
+        "s3",
+        "p1",
+        "p2",
+        "p3"
+      ],
+      "paradigm_cells": 6,
+      "need": 5,
+      "lexemes": {
+        "parler": [
+          "parle",
+          "parles",
+          "parle",
+          "parlons",
+          "parlez",
+          "parlent"
+        ],
+        "manger": [
+          "mange",
+          "manges",
+          "mange",
+          "mangeons",
+          "mangez",
+          "mangent"
+        ],
+        "finir": [
+          "finis",
+          "finis",
+          "finit",
+          "finissons",
+          "finissez",
+          "finissent"
+        ],
+        "vendre": [
+          "vends",
+          "vends",
+          "vend",
+          "vendons",
+          "vendez",
+          "vendent"
+        ],
+        "lire": [
+          "lis",
+          "lis",
+          "lit",
+          "lisons",
+          "lisez",
+          "lisent"
+        ],
+        "courir": [
+          "cours",
+          "cours",
+          "court",
+          "courons",
+          "courez",
+          "courent"
+        ],
+        "ouvrir": [
+          "ouvre",
+          "ouvres",
+          "ouvre",
+          "ouvrons",
+          "ouvrez",
+          "ouvrent"
+        ],
+        "chanter": [
+          "chante",
+          "chantes",
+          "chante",
+          "chantons",
+          "chantez",
+          "chantent"
+        ]
+      },
+      "rule": {
+        "classes": {
+          "er": {
+            "strip": "er",
+            "endings": [
+              "e",
+              "es",
+              "e",
+              "ons",
+              "ez",
+              "ent"
+            ]
+          },
+          "ir_iss": {
+            "strip": "ir",
+            "endings": [
+              "is",
+              "is",
+              "it",
+              "issons",
+              "issez",
+              "issent"
+            ]
+          },
+          "ir_bare": {
+            "strip": "ir",
+            "endings": [
+              "s",
+              "s",
+              "t",
+              "ons",
+              "ez",
+              "ent"
+            ]
+          },
+          "ir_er": {
+            "strip": "ir",
+            "endings": [
+              "e",
+              "es",
+              "e",
+              "ons",
+              "ez",
+              "ent"
+            ]
+          },
+          "re": {
+            "strip": "re",
+            "endings": [
+              "s",
+              "s",
+              "",
+              "ons",
+              "ez",
+              "ent"
+            ]
+          }
+        },
+        "of": {
+          "parler": "er",
+          "manger": "*",
+          "finir": "ir_iss",
+          "vendre": "re",
+          "lire": "*",
+          "courir": "ir_bare",
+          "ouvrir": "ir_er",
+          "chanter": "er"
+        }
+      }
+    },
+    "noun_count": {
+      "forms": [
+        "one",
+        "many",
+        "count_one",
+        "count_many"
+      ],
+      "paradigm_cells": 4,
+      "need": 5,
+      "lexemes": {
+        "livre": [
+          "le livre",
+          "les livres",
+          "livre",
+          "livres"
+        ],
+        "maison": [
+          "la maison",
+          "les maisons",
+          "maison",
+          "maisons"
+        ],
+        "table": [
+          "la table",
+          "les tables",
+          "table",
+          "tables"
+        ],
+        "voiture": [
+          "la voiture",
+          "les voitures",
+          "voiture",
+          "voitures"
+        ],
+        "fleur": [
+          "la fleur",
+          "les fleurs",
+          "fleur",
+          "fleurs"
+        ],
+        "ville": [
+          "la ville",
+          "les villes",
+          "ville",
+          "villes"
+        ],
+        "papier": [
+          "le papier",
+          "les papiers",
+          "papier",
+          "papiers"
+        ],
+        "chat": [
+          "le chat",
+          "les chats",
+          "chat",
+          "chats"
+        ],
+        "kilo": [
+          "le kilo",
+          "les kilos",
+          "kilo",
+          "kilos"
+        ],
+        "examen": [
+          "l examen",
+          "les examens",
+          "examen",
+          "examens"
+        ],
+        "taxi": [
+          "le taxi",
+          "les taxis",
+          "taxi",
+          "taxis"
+        ],
+        "wagon": [
+          "le wagon",
+          "les wagons",
+          "wagon",
+          "wagons"
+        ],
+        "zèbre": [
+          "le zèbre",
+          "les zèbres",
+          "zèbre",
+          "zèbres"
+        ],
+        "journal": [
+          "le journal",
+          "les journaux",
+          "journal",
+          "journaux"
+        ],
+        "gâteau": [
+          "le gâteau",
+          "les gâteaux",
+          "gâteau",
+          "gâteaux"
+        ],
+        "garçon": [
+          "le garçon",
+          "les garçons",
+          "garçon",
+          "garçons"
+        ],
+        "fenêtre": [
+          "la fenêtre",
+          "les fenêtres",
+          "fenêtre",
+          "fenêtres"
+        ],
+        "île": [
+          "l île",
+          "les îles",
+          "île",
+          "îles"
+        ],
+        "maïs": [
+          "le maïs",
+          "les maïs",
+          "maïs",
+          "maïs"
+        ],
+        "hôtel": [
+          "l hôtel",
+          "les hôtels",
+          "hôtel",
+          "hôtels"
+        ],
+        "stylo": [
+          "le stylo",
+          "les stylos",
+          "stylo",
+          "stylos"
+        ],
+        "coût": [
+          "le coût",
+          "les coûts",
+          "coût",
+          "coûts"
+        ],
+        "noël": [
+          "le noël",
+          "les noëls",
+          "noël",
+          "noëls"
+        ]
+      },
+      "count_comment": "ячейки one/many НАЗЫВАЮТ вещь и несут артикль; count_one/count_many СЧИТАЮТ её и артикля не несут — «5 livres», а не «5 les livres» (07.09)"
+    }
   },
-  "noun_count": {
-   "forms": [
-    "one",
-    "many"
-   ],
-   "paradigm_cells": 2,
-   "need": 5,
-   "lexemes": {
-    "livre": [
-     "le livre",
-     "les livres"
+  "show_kinds": {
+    "arithmetic": {
+      "lexicon": [
+        "plus",
+        "moins",
+        "fois",
+        "divisé",
+        "égale"
+      ],
+      "ops": {
+        "divisé": "/",
+        "divisé par": "/",
+        "fois": "*",
+        "moins": "-",
+        "multiplié par": "*",
+        "plus": "+",
+        "égale": "="
+      },
+      "instances_per_pass": 14,
+      "templates": [
+        "{num:n} plus {num:m} égale {num:sum}.",
+        "{n} + {m} = {sum}.",
+        "{num:sum} moins {num:m} égale {num:n}.",
+        "{num:n} fois {num:m} égale {num:prod}.",
+        "{num:prod} divisé {num:m} égale {num:n}.",
+        "combien font {num:n} plus {num:m} ? {num:n} plus {num:m} égale {num:sum}."
+      ]
+    },
+    "conjugation": {
+      "lexicon": [
+        "je",
+        "tu",
+        "il",
+        "nous",
+        "vous",
+        "ils"
+      ],
+      "instances_per_pass": 16,
+      "templates": [
+        "je {lex:verb_pres:s1}.",
+        "tu {lex:verb_pres:s2}.",
+        "il {lex:verb_pres:s3}.",
+        "nous {lex:verb_pres:p1}.",
+        "vous {lex:verb_pres:p2}.",
+        "ils {lex:verb_pres:p3}."
+      ]
+    },
+    "counting": {
+      "lexicon": [
+        "voici",
+        "voilà"
+      ],
+      "instances_per_pass": 46,
+      "templates": [
+        "voici {lex:noun_count:one}.",
+        "voici {lex:noun_count:many}.",
+        "voilà {lex:noun_count:many}."
+      ]
+    },
+    "definition": {
+      "lexicon": [
+        "chose",
+        "une",
+        "objet"
+      ],
+      "instances_per_pass": 46,
+      "templates": [
+        "{lex:noun_count:one} est une chose.",
+        "qu'est-ce que {lex:noun_count:one} ? {lex:noun_count:one} est une chose."
+      ]
+    },
+    "refusals": {
+      "refusal": true,
+      "marker": "¬ ",
+      "lexicon": [
+        "¬"
+      ],
+      "pairs": [
+        {
+          "bad": "la livre est petit.",
+          "good": "le livre est petit.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "les maison sont grandes.",
+          "good": "les maisons sont grandes.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "je parles.",
+          "good": "je danse.",
+          "reason": "agreement"
+        },
+        {
+          "bad": "quelle est la couleur de sept ?",
+          "good": "où est le stylo ?",
+          "reason": "unanswerable"
+        },
+        {
+          "bad": "livre plus maison égale ?",
+          "good": "cent moins un égale quatre-vingt-dix-neuf.",
+          "reason": "type_mismatch"
+        }
+      ]
+    },
+    "counting_chain": {
+      "lexicon": [],
+      "instances_per_pass": 3,
+      "templates": [
+        "{chain}."
+      ]
+    },
+    "counting_steps": {
+      "templates": [
+        "{num:n} plus {num:one} égale {num:next}."
+      ],
+      "instances_per_pass": 11,
+      "verbatim_core": 11,
+      "run": true
+    }
+  },
+  "core_pairing": [
+    {
+      "lang_word": "plus",
+      "core": "+",
+      "core_form": "+",
+      "lang_form": "plus"
+    },
+    {
+      "lang_word": "moins",
+      "core": "-",
+      "core_form": "-",
+      "lang_form": "moins"
+    },
+    {
+      "lang_word": "fois",
+      "core": "×",
+      "core_form": "×",
+      "lang_form": "fois"
+    },
+    {
+      "lang_word": "divisé",
+      "core": "÷",
+      "core_form": "÷",
+      "lang_form": "divisé"
+    },
+    {
+      "lang_word": "égale",
+      "core": "=",
+      "core_form": "=",
+      "lang_form": "égale"
+    }
+  ],
+  "cross_kind_share": 0.3,
+  "irregulars": [
+    "journaux",
+    "lis",
+    "vends",
+    "cours",
+    "est"
+  ],
+  "probe": {
+    "words": [
+      "chat",
+      "chose",
+      "divisé",
+      "est",
+      "et",
+      "fois",
+      "il",
+      "ils",
+      "je",
+      "la",
+      "le",
+      "les",
+      "livre",
+      "moins",
+      "nous",
+      "objet",
+      "où",
+      "plus",
+      "tu",
+      "une",
+      "voici",
+      "voilà",
+      "vous",
+      "égale"
     ],
-    "maison": [
-     "la maison",
-     "les maisons"
+    "diacritics": "àâçéèêëîïôùû"
+  },
+  "ask_words": {
+    "words": [
+      "où",
+      "que",
+      "quel",
+      "quelle",
+      "combien",
+      "comment",
+      "pourquoi",
+      "est",
+      "qu'est-ce",
+      "est-il",
+      "qui",
+      "quand",
+      "quels",
+      "quelles",
+      "¬",
+      "est-elle",
+      "a-t-il",
+      "a-t-elle",
+      "sont-ils",
+      "sont-elles"
     ],
-    "table": [
-     "la table",
-     "les tables"
+    "position": "front"
+  },
+  "ask_words_comment": "question words and their POSITION in the sentence (front/end) — derived from this pack's own layer and checkable by the same measure (М-137: the pack, not the pair-house, declares them)",
+  "ask_forms": {
+    "prime": [
+      "{} est-il un nombre premier ?",
+      "{} est-il divisible seulement par 1 et par lui-même ?"
     ],
-    "voiture": [
-     "la voiture",
-     "les voitures"
+    "divisible": [
+      "{} est-il divisible par {} ?",
+      "{} est-il un multiple de {} ?"
     ],
-    "fleur": [
-     "la fleur",
-     "les fleurs"
-    ],
-    "ville": [
-     "la ville",
-     "les villes"
-    ],
-    "papier": [
-     "le papier",
-     "les papiers"
-    ],
-    "chat": [
-     "le chat",
-     "les chats"
-    ],
-    "kilo": [
-     "le kilo",
-     "les kilos"
-    ],
-    "examen": [
-     "l examen",
-     "les examens"
-    ],
-    "taxi": [
-     "le taxi",
-     "les taxis"
-    ],
-    "wagon": [
-     "le wagon",
-     "les wagons"
-    ],
-    "zèbre": [
-     "le zèbre",
-     "les zèbres"
-    ],
-    "journal": [
-     "le journal",
-     "les journaux"
-    ],
-    "gâteau": [
-     "le gâteau",
-     "les gâteaux"
-    ],
-    "garçon": [
-     "le garçon",
-     "les garçons"
-    ],
-    "fenêtre": [
-     "la fenêtre",
-     "les fenêtres"
-    ],
-    "île": [
-     "l île",
-     "les îles"
-    ],
-    "maïs": [
-     "le maïs",
-     "les maïs"
-    ],
-    "hôtel": [
-     "l hôtel",
-     "les hôtels"
-    ],
-    "stylo": [
-     "le stylo",
-     "les stylos"
-    ],
-    "coût": [
-     "le coût",
-     "les coûts"
-    ],
-    "noël": [
-     "le noël",
-     "les noëls"
+    "value": [
+      "combien font {} ?",
+      "que vaut {} ?",
+      "calcule {}."
     ]
-   }
-  }
- },
- "show_kinds": {
-  "arithmetic": {
-   "lexicon": [
-    "plus",
-    "moins",
-    "fois",
-    "divisé",
-    "égale"
-   ],
-   "ops": {
-    "divisé": "/",
-    "divisé par": "/",
-    "fois": "*",
-    "moins": "-",
-    "multiplié par": "*",
-    "plus": "+",
-    "égale": "="
-   },
-   "instances_per_pass": 14,
-   "templates": [
-    "{num:n} plus {num:m} égale {num:sum}.",
-    "{n} + {m} = {sum}.",
-    "{num:sum} moins {num:m} égale {num:n}.",
-    "{num:n} fois {num:m} égale {num:prod}.",
-    "{num:prod} divisé {num:m} égale {num:n}.",
-    "combien font {num:n} plus {num:m} ? {num:n} plus {num:m} égale {num:sum}."
-   ]
   },
-  "conjugation": {
-   "lexicon": [
-    "je",
-    "tu",
-    "il",
-    "nous",
-    "vous",
-    "ils"
-   ],
-   "instances_per_pass": 16,
-   "templates": [
-    "je {lex:verb_pres:s1}.",
-    "tu {lex:verb_pres:s2}.",
-    "il {lex:verb_pres:s3}.",
-    "nous {lex:verb_pres:p1}.",
-    "vous {lex:verb_pres:p2}.",
-    "ils {lex:verb_pres:p3}."
-   ]
+  "ask_forms_comment": "second declared question form of each genus (Т-4 of the expressiveness college, 03.09): a paraphrase is a form of the pack, never a synonym list of a generator; every form carries the whole pair; the opening word is a declared question word (courts/script_court.py reads it)",
+  "person_names": [
+    "Anne",
+    "Louis",
+    "Marie",
+    "Paul",
+    "Léa",
+    "Hugo",
+    "Claire",
+    "Jules"
+  ],
+  "person_forms": {
+    "Anne": {
+      "gender": "f"
+    },
+    "Louis": {
+      "gender": "m"
+    },
+    "Marie": {
+      "gender": "f"
+    },
+    "Paul": {
+      "gender": "m"
+    },
+    "Léa": {
+      "gender": "f"
+    },
+    "Hugo": {
+      "gender": "m"
+    },
+    "Claire": {
+      "gender": "f"
+    },
+    "Jules": {
+      "gender": "m"
+    }
   },
-  "counting": {
-   "lexicon": [
-    "voici",
-    "voilà"
-   ],
-   "instances_per_pass": 46,
-   "templates": [
-    "voici {lex:noun_count:one}.",
-    "voici {lex:noun_count:many}.",
-    "voilà {lex:noun_count:many}."
-   ]
+  "task_words": {
+    "words": [
+      "calcule",
+      "calculez"
+    ]
   },
-  "definition": {
-   "lexicon": [
-    "chose",
+  "function_words": [
+    "a",
+    "au",
+    "avec",
+    "combien",
+    "dans",
+    "de",
+    "des",
+    "du",
+    "est",
+    "et",
+    "la",
+    "le",
+    "les",
+    "ne",
+    "ont",
+    "ou",
+    "où",
+    "par",
+    "pas",
+    "pour",
+    "quand",
+    "que",
+    "quel",
+    "quelle",
+    "qui",
+    "sont",
+    "sur",
+    "un",
     "une",
-    "objet"
-   ],
-   "instances_per_pass": 46,
-   "templates": [
-    "{lex:noun_count:one} est une chose.",
-    "qu'est-ce que {lex:noun_count:one} ? {lex:noun_count:one} est une chose."
-   ]
-  },
-  "refusals": {
-   "refusal": true,
-   "marker": "¬ ",
-   "lexicon": [
-    "¬"
-   ],
-   "pairs": [
-    {
-     "bad": "la livre est petit.",
-     "good": "le livre est petit.",
-     "reason": "agreement"
-    },
-    {
-     "bad": "les maison sont grandes.",
-     "good": "les maisons sont grandes.",
-     "reason": "agreement"
-    },
-    {
-     "bad": "je parles.",
-     "good": "je danse.",
-     "reason": "agreement"
-    },
-    {
-     "bad": "quelle est la couleur de sept ?",
-     "good": "où est le stylo ?",
-     "reason": "unanswerable"
-    },
-    {
-     "bad": "livre plus maison égale ?",
-     "good": "cent moins un égale quatre-vingt-dix-neuf.",
-     "reason": "type_mismatch"
-    }
-   ]
-  },
-  "counting_chain": {
-   "lexicon": [],
-   "instances_per_pass": 3,
-   "templates": [
-    "{chain}."
-   ]
-  },
-  "counting_steps": {
-   "templates": [
-    "{num:n} plus {num:one} égale {num:next}."
-   ],
-   "instances_per_pass": 11,
-   "verbatim_core": 11,
-   "run": true
-  }
- },
- "core_pairing": [
-  {
-   "lang_word": "plus",
-   "core": "+",
-   "core_form": "+",
-   "lang_form": "plus"
-  },
-  {
-   "lang_word": "moins",
-   "core": "-",
-   "core_form": "-",
-   "lang_form": "moins"
-  },
-  {
-   "lang_word": "fois",
-   "core": "×",
-   "core_form": "×",
-   "lang_form": "fois"
-  },
-  {
-   "lang_word": "divisé",
-   "core": "÷",
-   "core_form": "÷",
-   "lang_form": "divisé"
-  },
-  {
-   "lang_word": "égale",
-   "core": "=",
-   "core_form": "=",
-   "lang_form": "égale"
-  }
- ],
- "cross_kind_share": 0.3,
- "irregulars": [
-  "journaux",
-  "lis",
-  "vends",
-  "cours",
-  "est"
- ],
- "probe": {
-  "words": [
-   "chat",
-   "chose",
-   "divisé",
-   "est",
-   "et",
-   "fois",
-   "il",
-   "ils",
-   "je",
-   "la",
-   "le",
-   "les",
-   "livre",
-   "moins",
-   "nous",
-   "objet",
-   "où",
-   "plus",
-   "tu",
-   "une",
-   "voici",
-   "voilà",
-   "vous",
-   "égale"
-  ],
-  "diacritics": "àâçéèêëîïôùû"
- },
- "ask_words": {
-  "words": [
-   "où",
-   "que",
-   "quel",
-   "quelle",
-   "combien",
-   "comment",
-   "pourquoi",
-   "est",
-   "qu'est-ce",
-   "est-il",
-   "qui",
-   "quand",
-   "quels",
-   "quelles",
-   "¬",
-   "est-elle",
-   "a-t-il",
-   "a-t-elle",
-   "sont-ils",
-   "sont-elles"
-  ],
-  "position": "front"
- },
- "ask_words_comment": "question words and their POSITION in the sentence (front/end) — derived from this pack's own layer and checkable by the same measure (М-137: the pack, not the pair-house, declares them)",
- "ask_forms": {
-  "prime": [
-   "{} est-il un nombre premier ?",
-   "{} est-il divisible seulement par 1 et par lui-même ?"
-  ],
-  "divisible": [
-   "{} est-il divisible par {} ?",
-   "{} est-il un multiple de {} ?"
-  ],
-  "value": [
-   "combien font {} ?",
-   "que vaut {} ?",
-   "calcule {}."
+    "y"
   ]
- },
- "ask_forms_comment": "second declared question form of each genus (Т-4 of the expressiveness college, 03.09): a paraphrase is a form of the pack, never a synonym list of a generator; every form carries the whole pair; the opening word is a declared question word (courts/script_court.py reads it)",
- "person_names": [
-  "Anne",
-  "Louis",
-  "Marie",
-  "Paul",
-  "Léa",
-  "Hugo",
-  "Claire",
-  "Jules"
- ],
- "person_forms": {
-  "Anne": {
-   "gender": "f"
-  },
-  "Louis": {
-   "gender": "m"
-  },
-  "Marie": {
-   "gender": "f"
-  },
-  "Paul": {
-   "gender": "m"
-  },
-  "Léa": {
-   "gender": "f"
-  },
-  "Hugo": {
-   "gender": "m"
-  },
-  "Claire": {
-   "gender": "f"
-  },
-  "Jules": {
-   "gender": "m"
-  }
- },
- "task_words": {
-  "words": [
-   "calcule",
-   "calculez"
-  ]
- },
- "function_words": [
-  "a",
-  "au",
-  "avec",
-  "combien",
-  "dans",
-  "de",
-  "des",
-  "du",
-  "est",
-  "et",
-  "la",
-  "le",
-  "les",
-  "ne",
-  "ont",
-  "ou",
-  "où",
-  "par",
-  "pas",
-  "pour",
-  "quand",
-  "que",
-  "quel",
-  "quelle",
-  "qui",
-  "sont",
-  "sur",
-  "un",
-  "une",
-  "y"
- ]
 }
