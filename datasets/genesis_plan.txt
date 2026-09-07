@@ -1,0 +1,580 @@
+отчёт: files 1, runs 1, exit 1, millis 450 — какой exit у сборки? 1.
+report: files 1, runs 1, exit 3, millis 450 — how many runs were there? 1.
+if exit is 0, land. report: files 1, runs 1, exit 1, millis 700 — was it landed? no: exit 1 ≠ 0.
+ergänze die datei list.csv. dann führe den build aus. wenn exit 0 ist, lande. bericht: files 1, runs 1, exit 0, millis 450 — gelandet.
+rapport: files 0, runs 1, exit 2, millis 450 — quel était l'exit du build ? 2.
+informe: files 1, runs 1, exit 0, millis 700 — ¿cuántas ejecuciones hubo? 1.
+si exit es 0, aterriza. informe: files 1, runs 1, exit 2, millis 700 — ¿aterrizó? no: exit 2 ≠ 0.
+leggi il file list.csv. poi esegui il build. se exit è 0, atterra. rapporto: files 1, runs 1, exit 1, millis 450 — non atterrato.
+relatório: files 1, runs 1, exit 3, millis 450 — qual era o exit do build? 3.
+relatório: files 1, runs 1, exit 1, millis 700 — quantas execuções houve? 1.
+als exit 0 is, land. rapport: files 0, runs 1, exit 3, millis 700 — is er geland? nee: exit 3 ≠ 0.
+usuń plik list.csv. następnie uruchom build. jeśli exit = 0, wyląduj. raport: files 0, runs 1, exit 2, millis 450 — nie wylądowano.
+отчёт: files 0, runs 1, exit 0, millis 900 — какой exit у сборки? 0.
+отчёт: files 1, runs 1, exit 2, millis 900 — сколько запусков было? 1.
+if exit is 0, land. report: files 1, runs 1, exit 0, millis 1200 — was it landed? yes: exit 0 = 0.
+lösche die datei a.txt. dann führe den build aus. wenn exit 0 ist, lande. bericht: files 0, runs 1, exit 3, millis 700 — nicht gelandet.
+rapport: files 1, runs 1, exit 1, millis 900 — quel était l'exit du build ? 1.
+rapport: files 1, runs 1, exit 3, millis 900 — combien de lancements y a-t-il eu ? 1.
+si exit es 0, aterriza. informe: files 0, runs 1, exit 1, millis 1200 — ¿aterrizó? no: exit 1 ≠ 0.
+elimina il file b.txt. poi esegui il build. se exit è 0, atterra. rapporto: files 0, runs 1, exit 0, millis 900 — atterrato.
+rapporto: files 1, runs 1, exit 2, millis 900 — qual era l'exit del build? 2.
+relatório: files 1, runs 1, exit 0, millis 1200 — quantas execuções houve? 1.
+als exit 0 is, land. rapport: files 1, runs 1, exit 2, millis 1200 — is er geland? nee: exit 2 ≠ 0.
+utwórz plik b.txt. następnie uruchom build. jeśli exit = 0, wyląduj. raport: files 1, runs 1, exit 1, millis 900 — nie wylądowano.
+raport: files 1, runs 1, exit 3, millis 900 — jaki był exit builda? 3.
+отчёт: files 1, runs 1, exit 1, millis 450 — сколько запусков было? 1.
+if exit is 0, land. report: files 1, runs 1, exit 3, millis 450 — was it landed? no: exit 3 ≠ 0.
+erstelle die datei notes.md. dann führe den build aus. wenn exit 0 ist, lande. bericht: files 1, runs 1, exit 2, millis 1200 — nicht gelandet.
+bericht: files 1, runs 1, exit 0, millis 450 — welchen exit hatte der build? 0.
+rapport: files 0, runs 1, exit 2, millis 450 — combien de lancements y a-t-il eu ? 1.
+si exit es 0, aterriza. informe: files 1, runs 1, exit 0, millis 700 — ¿aterrizó? sí: exit 0 = 0.
+amplía el archivo notes.md. luego ejecuta el build. si exit es 0, aterriza. informe: files 1, runs 1, exit 3, millis 1200 — no aterrizado.
+rapporto: files 1, runs 1, exit 1, millis 450 — qual era l'exit del build? 1.
+relatório: files 1, runs 1, exit 3, millis 450 — quantas execuções houve? 1.
+se exit é 0, aterra. relatório: files 1, runs 1, exit 1, millis 700 — aterrou? não: exit 1 ≠ 0.
+bewerk het bestand list.csv. daarna voer de build uit. als exit 0 is, land. rapport: files 1, runs 1, exit 0, millis 450 — geland.
+raport: files 0, runs 1, exit 2, millis 450 — jaki był exit builda? 2.
+отчёт: files 0, runs 1, exit 0, millis 900 — сколько запусков было? 1.
+если exit = 0, посади. отчёт: files 1, runs 1, exit 2, millis 900 — посажено ли? нет: exit 2 ≠ 0.
+append to the file a.txt. then run the build. if exit is 0, land. report: files 1, runs 1, exit 1, millis 700 — not landed.
+bericht: files 0, runs 1, exit 3, millis 700 — welchen exit hatte der build? 3.
+rapport: files 1, runs 1, exit 1, millis 900 — combien de lancements y a-t-il eu ? 1.
+si exit vaut 0, atterris. rapport: files 1, runs 1, exit 3, millis 900 — a-t-il atterri ? non: exit 3 ≠ 0.
+lee el archivo a.txt. luego ejecuta el build. si exit es 0, aterriza. informe: files 1, runs 1, exit 2, millis 700 — no aterrizado.
+rapporto: files 0, runs 1, exit 0, millis 900 — qual era l'exit del build? 0.
+rapporto: files 1, runs 1, exit 2, millis 900 — quante esecuzioni ci sono state? 1.
+se exit é 0, aterra. relatório: files 1, runs 1, exit 0, millis 1200 — aterrou? sim: exit 0 = 0.
+verwijder het bestand a.txt. daarna voer de build uit. als exit 0 is, land. rapport: files 0, runs 1, exit 3, millis 700 — niet geland.
+raport: files 1, runs 1, exit 1, millis 900 — jaki był exit builda? 1.
+raport: files 1, runs 1, exit 3, millis 900 — ile było uruchomień? 1.
+если exit = 0, посади. отчёт: files 1, runs 1, exit 1, millis 450 — посажено ли? нет: exit 1 ≠ 0.
+read the file notes.md. then run the build. if exit is 0, land. report: files 1, runs 1, exit 0, millis 1200 — landed.
+bericht: files 1, runs 1, exit 2, millis 1200 — welchen exit hatte der build? 2.
+bericht: files 1, runs 1, exit 0, millis 450 — wie viele läufe gab es? 1.
+si exit vaut 0, atterris. rapport: files 0, runs 1, exit 2, millis 450 — a-t-il atterri ? non: exit 2 ≠ 0.
+elimina el archivo notes.md. luego ejecuta el build. si exit es 0, aterriza. informe: files 0, runs 1, exit 1, millis 1200 — no aterrizado.
+informe: files 1, runs 1, exit 3, millis 1200 — ¿cuál fue el exit del build? 3.
+rapporto: files 1, runs 1, exit 1, millis 450 — quante esecuzioni ci sono state? 1.
+se exit é 0, aterra. relatório: files 1, runs 1, exit 3, millis 450 — aterrou? não: exit 3 ≠ 0.
+creëer het bestand notes.md. daarna voer de build uit. als exit 0 is, land. rapport: files 1, runs 1, exit 2, millis 1200 — niet geland.
+rapport: files 1, runs 1, exit 0, millis 450 — welke exit had de build? 0.
+raport: files 0, runs 1, exit 2, millis 450 — ile było uruchomień? 1.
+если exit = 0, посади. отчёт: files 0, runs 1, exit 0, millis 900 — посажено ли? да: exit 0 = 0.
+create the file list.csv. then run the build. if exit is 0, land. report: files 1, runs 1, exit 3, millis 450 — not landed.
+report: files 1, runs 1, exit 1, millis 700 — what was the exit of the build? 1.
+bericht: files 0, runs 1, exit 3, millis 700 — wie viele läufe gab es? 1.
+si exit vaut 0, atterris. rapport: files 1, runs 1, exit 1, millis 900 — a-t-il atterri ? non: exit 1 ≠ 0.
+crea el archivo a.txt. luego ejecuta el build. si exit es 0, aterriza. informe: files 1, runs 1, exit 0, millis 700 — aterrizado.
+informe: files 1, runs 1, exit 2, millis 700 — ¿cuál fue el exit del build? 2.
+rapporto: files 0, runs 1, exit 0, millis 900 — quante esecuzioni ci sono state? 1.
+se exit è 0, atterra. rapporto: files 1, runs 1, exit 2, millis 900 — è atterrato? no: exit 2 ≠ 0.
+amplia o ficheiro a.txt. depois executa o build. se exit é 0, aterra. relatório: files 1, runs 1, exit 1, millis 700 — não aterrado.
+rapport: files 0, runs 1, exit 3, millis 700 — welke exit had de build? 3.
+raport: files 1, runs 1, exit 1, millis 900 — ile było uruchomień? 1.
+jeśli exit = 0, wyląduj. raport: files 1, runs 1, exit 3, millis 900 — czy wylądowano? nie: exit 3 ≠ 0.
+допиши файл b.txt. затем запусти сборку. если exit = 0, посади. отчёт: files 1, runs 1, exit 2, millis 900 — не посажено.
+report: files 1, runs 1, exit 0, millis 1200 — what was the exit of the build? 0.
+bericht: files 1, runs 1, exit 2, millis 1200 — wie viele läufe gab es? 1.
+wenn exit 0 ist, lande. bericht: files 1, runs 1, exit 0, millis 450 — wurde gelandet? ja: exit 0 = 0.
+lis le fichier b.txt. puis lance le build. si exit vaut 0, atterris. rapport: files 1, runs 1, exit 3, millis 900 — non atterri.
+informe: files 0, runs 1, exit 1, millis 1200 — ¿cuál fue el exit del build? 1.
+informe: files 1, runs 1, exit 3, millis 1200 — ¿cuántas ejecuciones hubo? 1.
+se exit è 0, atterra. rapporto: files 1, runs 1, exit 1, millis 450 — è atterrato? no: exit 1 ≠ 0.
+lê o ficheiro notes.md. depois executa o build. se exit é 0, aterra. relatório: files 1, runs 1, exit 0, millis 1200 — aterrado.
+rapport: files 1, runs 1, exit 2, millis 1200 — welke exit had de build? 2.
+rapport: files 1, runs 1, exit 0, millis 450 — hoeveel runs waren er? 1.
+jeśli exit = 0, wyląduj. raport: files 0, runs 1, exit 2, millis 450 — czy wylądowano? nie: exit 2 ≠ 0.
+прочитай файл list.csv. затем запусти сборку. если exit = 0, посади. отчёт: files 1, runs 1, exit 1, millis 450 — не посажено.
+report: files 1, runs 1, exit 3, millis 450 — what was the exit of the build? 3.
+report: files 1, runs 1, exit 1, millis 700 — how many runs were there? 1.
+wenn exit 0 ist, lande. bericht: files 0, runs 1, exit 3, millis 700 — wurde gelandet? nein: exit 3 ≠ 0.
+supprime le fichier list.csv. puis lance le build. si exit vaut 0, atterris. rapport: files 0, runs 1, exit 2, millis 450 — non atterri.
+informe: files 1, runs 1, exit 0, millis 700 — ¿cuál fue el exit del build? 0.
+informe: files 1, runs 1, exit 2, millis 700 — ¿cuántas ejecuciones hubo? 1.
+se exit è 0, atterra. rapporto: files 0, runs 1, exit 0, millis 900 — è atterrato? sì: exit 0 = 0.
+cria o ficheiro list.csv. depois executa o build. se exit é 0, aterra. relatório: files 1, runs 1, exit 3, millis 450 — não aterrado.
+relatório: files 1, runs 1, exit 1, millis 700 — qual era o exit do build? 1.
+rapport: files 0, runs 1, exit 3, millis 700 — hoeveel runs waren er? 1.
+jeśli exit = 0, wyląduj. raport: files 1, runs 1, exit 1, millis 900 — czy wylądowano? nie: exit 1 ≠ 0.
+удали файл b.txt. затем запусти сборку. если exit = 0, посади. отчёт: files 0, runs 1, exit 0, millis 900 — посажено.
+отчёт: files 1, runs 1, exit 2, millis 900 — какой exit у сборки? 2.
+report: files 1, runs 1, exit 0, millis 1200 — how many runs were there? 1.
+wenn exit 0 ist, lande. bericht: files 1, runs 1, exit 2, millis 1200 — wurde gelandet? nein: exit 2 ≠ 0.
+crée le fichier b.txt. puis lance le build. si exit vaut 0, atterris. rapport: files 1, runs 1, exit 1, millis 900 — non atterri.
+rapport: files 1, runs 1, exit 3, millis 900 — quel était l'exit du build ? 3.
+informe: files 0, runs 1, exit 1, millis 1200 — ¿cuántas ejecuciones hubo? 1.
+si exit es 0, aterriza. informe: files 1, runs 1, exit 3, millis 1200 — ¿aterrizó? no: exit 3 ≠ 0.
+amplia il file b.txt. poi esegui il build. se exit è 0, atterra. rapporto: files 1, runs 1, exit 2, millis 900 — non atterrato.
+relatório: files 1, runs 1, exit 0, millis 1200 — qual era o exit do build? 0.
+rapport: files 1, runs 1, exit 2, millis 1200 — hoeveel runs waren er? 1.
+als exit 0 is, land. rapport: files 1, runs 1, exit 0, millis 450 — is er geland? ja: exit 0 = 0.
+przeczytaj plik b.txt. następnie uruchom build. jeśli exit = 0, wyląduj. raport: files 1, runs 1, exit 3, millis 900 — nie wylądowano.
+
+отчёт: files 1, runs 1, exit 0, millis 700 — сколько запусков было? 1.
+отчёт: files 1, runs 1, exit 3, millis 1200 — какой exit у сборки? 3.
+append to the file b.txt. then run the build. if exit is 0, land. report: files 1, runs 1, exit 2, millis 900 — not landed.
+wenn exit 0 ist, lande. bericht: files 1, runs 1, exit 0, millis 1200 — wurde gelandet? ja: exit 0 = 0.
+rapport: files 0, runs 1, exit 3, millis 700 — combien de lancements y a-t-il eu ? 1.
+informe: files 0, runs 1, exit 2, millis 450 — ¿cuál fue el exit del build? 2.
+elimina il file notes.md. poi esegui il build. se exit è 0, atterra. rapporto: files 0, runs 1, exit 1, millis 1200 — non atterrato.
+se exit è 0, atterra. rapporto: files 1, runs 1, exit 3, millis 1200 — è atterrato? no: exit 3 ≠ 0.
+relatório: files 1, runs 1, exit 2, millis 900 — quantas execuções houve? 1.
+rapport: files 1, runs 1, exit 1, millis 700 — welke exit had de build? 1.
+dopisz plik list.csv. następnie uruchom build. jeśli exit = 0, wyląduj. raport: files 1, runs 1, exit 0, millis 450 — wylądowano.
+если exit = 0, посади. отчёт: files 0, runs 1, exit 1, millis 1200 — посажено ли? нет: exit 1 ≠ 0.
+report: files 0, runs 1, exit 0, millis 900 — how many runs were there? 1.
+bericht: files 1, runs 1, exit 3, millis 450 — welchen exit hatte der build? 3.
+crée le fichier notes.md. puis lance le build. si exit vaut 0, atterris. rapport: files 1, runs 1, exit 2, millis 1200 — non atterri.
+si exit vaut 0, atterris. rapport: files 1, runs 1, exit 0, millis 450 — a-t-il atterri ? oui: exit 0 = 0.
+informe: files 1, runs 1, exit 3, millis 900 — ¿cuántas ejecuciones hubo? 1.
+rapporto: files 1, runs 1, exit 2, millis 700 — qual era l'exit del build? 2.
+lê o ficheiro list.csv. depois executa o build. se exit é 0, aterra. relatório: files 1, runs 1, exit 1, millis 450 — não aterrado.
+als exit 0 is, land. rapport: files 1, runs 1, exit 3, millis 450 — is er geland? nee: exit 3 ≠ 0.
+raport: files 1, runs 1, exit 2, millis 1200 — ile było uruchomień? 1.
+отчёт: files 1, runs 1, exit 0, millis 700 — какой exit у сборки? 0.
+допиши файл notes.md. затем запусти сборку. если exit = 0, посади. отчёт: files 1, runs 1, exit 3, millis 1200 — не посажено.
+if exit is 0, land. report: files 1, runs 1, exit 1, millis 450 — was it landed? no: exit 1 ≠ 0.
+bericht: files 1, runs 1, exit 0, millis 1200 — wie viele läufe gab es? 1.
+rapport: files 0, runs 1, exit 3, millis 700 — quel était l'exit du build ? 3.
+elimina el archivo list.csv. luego ejecuta el build. si exit es 0, aterriza. informe: files 0, runs 1, exit 2, millis 450 — no aterrizado.
+se exit è 0, atterra. rapporto: files 1, runs 1, exit 0, millis 700 — è atterrato? sì: exit 0 = 0.
+rapporto: files 1, runs 1, exit 3, millis 1200 — quante esecuzioni ci sono state? 1.
+relatório: files 1, runs 1, exit 2, millis 900 — qual era o exit do build? 2.
+bewerk het bestand a.txt. daarna voer de build uit. als exit 0 is, land. rapport: files 1, runs 1, exit 1, millis 700 — niet geland.
+jeśli exit = 0, wyląduj. raport: files 0, runs 1, exit 3, millis 700 — czy wylądowano? nie: exit 3 ≠ 0.
+отчёт: files 0, runs 1, exit 1, millis 1200 — сколько запусков было? 1.
+report: files 0, runs 1, exit 0, millis 900 — what was the exit of the build? 0.
+erstelle die datei list.csv. dann führe den build aus. wenn exit 0 ist, lande. bericht: files 1, runs 1, exit 3, millis 450 — nicht gelandet.
+wenn exit 0 ist, lande. bericht: files 1, runs 1, exit 1, millis 700 — wurde gelandet? nein: exit 1 ≠ 0.
+rapport: files 1, runs 1, exit 0, millis 450 — combien de lancements y a-t-il eu ? 1.
+informe: files 1, runs 1, exit 3, millis 900 — ¿cuál fue el exit del build? 3.
+leggi il file a.txt. poi esegui il build. se exit è 0, atterra. rapporto: files 1, runs 1, exit 2, millis 700 — non atterrato.
+se exit é 0, aterra. relatório: files 0, runs 1, exit 0, millis 900 — aterrou? sim: exit 0 = 0.
+rapport: files 1, runs 1, exit 3, millis 450 — hoeveel runs waren er? 1.
+raport: files 1, runs 1, exit 2, millis 1200 — jaki był exit builda? 2.
+создай файл a.txt. затем запусти сборку. если exit = 0, посади. отчёт: files 1, runs 1, exit 0, millis 700 — посажено.
+если exit = 0, посади. отчёт: files 1, runs 1, exit 2, millis 700 — посажено ли? нет: exit 2 ≠ 0.
+report: files 1, runs 1, exit 1, millis 450 — how many runs were there? 1.
+bericht: files 1, runs 1, exit 0, millis 1200 — welchen exit hatte der build? 0.
+supprime le fichier a.txt. puis lance le build. si exit vaut 0, atterris. rapport: files 0, runs 1, exit 3, millis 700 — non atterri.
+si exit es 0, aterriza. informe: files 1, runs 1, exit 1, millis 900 — ¿aterrizó? no: exit 1 ≠ 0.
+rapporto: files 1, runs 1, exit 0, millis 700 — quante esecuzioni ci sono state? 1.
+rapporto: files 1, runs 1, exit 3, millis 1200 — qual era l'exit del build? 3.
+amplia o ficheiro b.txt. depois executa o build. se exit é 0, aterra. relatório: files 1, runs 1, exit 2, millis 900 — não aterrado.
+als exit 0 is, land. rapport: files 1, runs 1, exit 0, millis 1200 — is er geland? ja: exit 0 = 0.
+raport: files 0, runs 1, exit 3, millis 700 — ile było uruchomień? 1.
+отчёт: files 0, runs 1, exit 1, millis 1200 — какой exit у сборки? 1.
+delete the file b.txt. then run the build. if exit is 0, land. report: files 0, runs 1, exit 0, millis 900 — landed.
+if exit is 0, land. report: files 1, runs 1, exit 2, millis 900 — was it landed? no: exit 2 ≠ 0.
+bericht: files 1, runs 1, exit 1, millis 700 — wie viele läufe gab es? 1.
+rapport: files 1, runs 1, exit 0, millis 450 — quel était l'exit du build ? 0.
+lee el archivo b.txt. luego ejecuta el build. si exit es 0, aterriza. informe: files 1, runs 1, exit 3, millis 900 — no aterrizado.
+se exit è 0, atterra. rapporto: files 0, runs 1, exit 1, millis 1200 — è atterrato? no: exit 1 ≠ 0.
+relatório: files 0, runs 1, exit 0, millis 900 — quantas execuções houve? 1.
+rapport: files 1, runs 1, exit 3, millis 450 — welke exit had de build? 3.
+utwórz plik notes.md. następnie uruchom build. jeśli exit = 0, wyląduj. raport: files 1, runs 1, exit 2, millis 1200 — nie wylądowano.
+jeśli exit = 0, wyląduj. raport: files 1, runs 1, exit 0, millis 450 — czy wylądowano? tak: exit 0 = 0.
+отчёт: files 1, runs 1, exit 2, millis 700 — сколько запусков было? 1.
+report: files 1, runs 1, exit 1, millis 450 — what was the exit of the build? 1.
+lies die datei notes.md. dann führe den build aus. wenn exit 0 ist, lande. bericht: files 1, runs 1, exit 0, millis 1200 — gelandet.
+si exit vaut 0, atterris. rapport: files 1, runs 1, exit 2, millis 1200 — a-t-il atterri ? non: exit 2 ≠ 0.
+informe: files 1, runs 1, exit 1, millis 900 — ¿cuántas ejecuciones hubo? 1.
+rapporto: files 1, runs 1, exit 0, millis 700 — qual era l'exit del build? 0.
+amplia il file notes.md. poi esegui il build. se exit è 0, atterra. rapporto: files 1, runs 1, exit 3, millis 1200 — non atterrato.
+se exit é 0, aterra. relatório: files 1, runs 1, exit 1, millis 450 — aterrou? não: exit 1 ≠ 0.
+rapport: files 1, runs 1, exit 0, millis 1200 — hoeveel runs waren er? 1.
+raport: files 0, runs 1, exit 3, millis 700 — jaki był exit builda? 3.
+удали файл notes.md. затем запусти сборку. если exit = 0, посади. отчёт: files 0, runs 1, exit 1, millis 1200 — не посажено.
+если exit = 0, посади. отчёт: files 1, runs 1, exit 3, millis 1200 — посажено ли? нет: exit 3 ≠ 0.
+report: files 1, runs 1, exit 2, millis 900 — how many runs were there? 1.
+bericht: files 1, runs 1, exit 1, millis 700 — welchen exit hatte der build? 1.
+complète le fichier list.csv. puis lance le build. si exit vaut 0, atterris. rapport: files 1, runs 1, exit 0, millis 450 — atterri.
+si exit es 0, aterriza. informe: files 0, runs 1, exit 2, millis 450 — ¿aterrizó? no: exit 2 ≠ 0.
+rapporto: files 0, runs 1, exit 1, millis 1200 — quante esecuzioni ci sono state? 1.
+relatório: files 0, runs 1, exit 0, millis 900 — qual era o exit do build? 0.
+creëer het bestand list.csv. daarna voer de build uit. als exit 0 is, land. rapport: files 1, runs 1, exit 3, millis 450 — niet geland.
+als exit 0 is, land. rapport: files 1, runs 1, exit 1, millis 700 — is er geland? nee: exit 1 ≠ 0.
+raport: files 1, runs 1, exit 0, millis 450 — ile było uruchomień? 1.
+отчёт: files 1, runs 1, exit 2, millis 700 — какой exit у сборки? 2.
+read the file list.csv. then run the build. if exit is 0, land. report: files 1, runs 1, exit 1, millis 450 — not landed.
+wenn exit 0 ist, lande. bericht: files 1, runs 1, exit 3, millis 450 — wurde gelandet? nein: exit 3 ≠ 0.
+rapport: files 1, runs 1, exit 2, millis 1200 — combien de lancements y a-t-il eu ? 1.
+informe: files 1, runs 1, exit 1, millis 900 — ¿cuál fue el exit del build? 1.
+crea il file a.txt. poi esegui il build. se exit è 0, atterra. rapporto: files 1, runs 1, exit 0, millis 700 — atterrato.
+se exit è 0, atterra. rapporto: files 1, runs 1, exit 2, millis 700 — è atterrato? no: exit 2 ≠ 0.
+relatório: files 1, runs 1, exit 1, millis 450 — quantas execuções houve? 1.
+rapport: files 1, runs 1, exit 0, millis 1200 — welke exit had de build? 0.
+usuń plik a.txt. następnie uruchom build. jeśli exit = 0, wyląduj. raport: files 0, runs 1, exit 3, millis 700 — nie wylądowano.
+если exit = 0, посади. отчёт: files 1, runs 1, exit 0, millis 700 — посажено ли? да: exit 0 = 0.
+отчёт: files 1, runs 1, exit 3, millis 1200 — сколько запусков было? 1.
+report: files 1, runs 1, exit 2, millis 900 — what was the exit of the build? 2.
+ergänze die datei a.txt. dann führe den build aus. wenn exit 0 ist, lande. bericht: files 1, runs 1, exit 1, millis 700 — nicht gelandet.
+si exit vaut 0, atterris. rapport: files 0, runs 1, exit 3, millis 700 — a-t-il atterri ? non: exit 3 ≠ 0.
+informe: files 0, runs 1, exit 2, millis 450 — ¿cuántas ejecuciones hubo? 1.
+rapporto: files 0, runs 1, exit 1, millis 1200 — qual era l'exit del build? 1.
+elimina o ficheiro b.txt. depois executa o build. se exit é 0, aterra. relatório: files 0, runs 1, exit 0, millis 900 — aterrado.
+se exit é 0, aterra. relatório: files 1, runs 1, exit 2, millis 900 — aterrou? não: exit 2 ≠ 0.
+rapport: files 1, runs 1, exit 1, millis 700 — hoeveel runs waren er? 1.
+raport: files 1, runs 1, exit 0, millis 450 — jaki był exit builda? 0.
+прочитай файл a.txt. затем запусти сборку. если exit = 0, посади. отчёт: files 1, runs 1, exit 2, millis 700 — не посажено.
+if exit is 0, land. report: files 0, runs 1, exit 0, millis 900 — was it landed? yes: exit 0 = 0.
+bericht: files 1, runs 1, exit 3, millis 450 — wie viele läufe gab es? 1.
+rapport: files 1, runs 1, exit 2, millis 1200 — quel était l'exit du build ? 2.
+crea el archivo b.txt. luego ejecuta el build. si exit es 0, aterriza. informe: files 1, runs 1, exit 1, millis 900 — no aterrizado.
+si exit es 0, aterriza. informe: files 1, runs 1, exit 3, millis 900 — ¿aterrizó? no: exit 3 ≠ 0.
+rapporto: files 1, runs 1, exit 2, millis 700 — quante esecuzioni ci sono state? 1.
+relatório: files 1, runs 1, exit 1, millis 450 — qual era o exit do build? 1.
+lees het bestand notes.md. daarna voer de build uit. als exit 0 is, land. rapport: files 1, runs 1, exit 0, millis 1200 — geland.
+jeśli exit = 0, wyląduj. raport: files 1, runs 1, exit 2, millis 1200 — czy wylądowano? nie: exit 2 ≠ 0.
+
+отчёт: files 1, runs 1, exit 3, millis 900 — какой exit у сборки? 3.
+report: files 1, runs 1, exit 2, millis 700 — how many runs were there? 1.
+wenn exit 0 ist, lande. bericht: files 1, runs 1, exit 1, millis 450 — wurde gelandet? nein: exit 1 ≠ 0.
+complète le fichier a.txt. puis lance le build. si exit vaut 0, atterris. rapport: files 1, runs 1, exit 1, millis 700 — non atterri.
+informe: files 1, runs 1, exit 0, millis 450 — ¿cuál fue el exit del build? 0.
+rapporto: files 1, runs 1, exit 3, millis 900 — quante esecuzioni ci sono state? 1.
+se exit é 0, aterra. relatório: files 1, runs 1, exit 2, millis 700 — aterrou? não: exit 2 ≠ 0.
+bewerk het bestand b.txt. daarna voer de build uit. als exit 0 is, land. rapport: files 1, runs 1, exit 2, millis 900 — niet geland.
+raport: files 1, runs 1, exit 1, millis 700 — jaki był exit builda? 1.
+отчёт: files 1, runs 1, exit 3, millis 900 — сколько запусков было? 1.
+if exit is 0, land. report: files 1, runs 1, exit 2, millis 700 — was it landed? no: exit 2 ≠ 0.
+ergänze die datei b.txt. dann führe den build aus. wenn exit 0 ist, lande. bericht: files 1, runs 1, exit 2, millis 900 — nicht gelandet.
+rapport: files 1, runs 1, exit 1, millis 700 — quel était l'exit du build ? 1.
+informe: files 1, runs 1, exit 0, millis 450 — ¿cuántas ejecuciones hubo? 1.
+se exit è 0, atterra. rapporto: files 1, runs 1, exit 3, millis 900 — è atterrato? no: exit 3 ≠ 0.
+amplia o ficheiro notes.md. depois executa o build. se exit é 0, aterra. relatório: files 1, runs 1, exit 3, millis 1200 — não aterrado.
+rapport: files 1, runs 1, exit 2, millis 900 — welke exit had de build? 2.
+raport: files 1, runs 1, exit 1, millis 700 — ile było uruchomień? 1.
+если exit = 0, посади. отчёт: files 1, runs 1, exit 3, millis 900 — посажено ли? нет: exit 3 ≠ 0.
+append to the file notes.md. then run the build. if exit is 0, land. report: files 1, runs 1, exit 3, millis 1200 — not landed.
+bericht: files 1, runs 1, exit 2, millis 900 — welchen exit hatte der build? 2.
+rapport: files 1, runs 1, exit 1, millis 700 — combien de lancements y a-t-il eu ? 1.
+si exit es 0, aterriza. informe: files 1, runs 1, exit 0, millis 450 — ¿aterrizó? sí: exit 0 = 0.
+cria o ficheiro a.txt. depois executa o build. se exit é 0, aterra. relatório: files 1, runs 1, exit 0, millis 700 — aterrado.
+relatório: files 1, runs 1, exit 3, millis 1200 — qual era o exit do build? 3.
+rapport: files 1, runs 1, exit 2, millis 900 — hoeveel runs waren er? 1.
+jeśli exit = 0, wyląduj. raport: files 1, runs 1, exit 1, millis 700 — czy wylądowano? nie: exit 1 ≠ 0.
+create the file a.txt. then run the build. if exit is 0, land. report: files 1, runs 1, exit 0, millis 700 — landed.
+report: files 1, runs 1, exit 3, millis 1200 — what was the exit of the build? 3.
+bericht: files 1, runs 1, exit 2, millis 900 — wie viele läufe gab es? 1.
+si exit vaut 0, atterris. rapport: files 1, runs 1, exit 1, millis 700 — a-t-il atterri ? non: exit 1 ≠ 0.
+crea il file b.txt. poi esegui il build. se exit è 0, atterra. rapporto: files 1, runs 1, exit 1, millis 900 — non atterrato.
+relatório: files 1, runs 1, exit 0, millis 700 — qual era o exit do build? 0.
+relatório: files 1, runs 1, exit 3, millis 1200 — quantas execuções houve? 1.
+als exit 0 is, land. rapport: files 1, runs 1, exit 2, millis 900 — is er geland? nee: exit 2 ≠ 0.
+создай файл b.txt. затем запусти сборку. если exit = 0, посади. отчёт: files 1, runs 1, exit 1, millis 900 — не посажено.
+report: files 1, runs 1, exit 0, millis 700 — what was the exit of the build? 0.
+report: files 1, runs 1, exit 3, millis 1200 — how many runs were there? 1.
+wenn exit 0 ist, lande. bericht: files 1, runs 1, exit 2, millis 900 — wurde gelandet? nein: exit 2 ≠ 0.
+crea el archivo notes.md. luego ejecuta el build. si exit es 0, aterriza. informe: files 1, runs 1, exit 2, millis 1200 — no aterrizado.
+rapporto: files 1, runs 1, exit 1, millis 900 — qual era l'exit del build? 1.
+relatório: files 1, runs 1, exit 0, millis 700 — quantas execuções houve? 1.
+se exit é 0, aterra. relatório: files 1, runs 1, exit 3, millis 1200 — aterrou? não: exit 3 ≠ 0.
+utwórz plik list.csv. następnie uruchom build. jeśli exit = 0, wyląduj. raport: files 1, runs 1, exit 3, millis 450 — nie wylądowano.
+отчёт: files 1, runs 1, exit 1, millis 900 — какой exit у сборки? 1.
+report: files 1, runs 1, exit 0, millis 700 — how many runs were there? 1.
+if exit is 0, land. report: files 1, runs 1, exit 3, millis 1200 — was it landed? no: exit 3 ≠ 0.
+crée le fichier list.csv. puis lance le build. si exit vaut 0, atterris. rapport: files 1, runs 1, exit 3, millis 450 — non atterri.
+informe: files 1, runs 1, exit 2, millis 1200 — ¿cuál fue el exit del build? 2.
+rapporto: files 1, runs 1, exit 1, millis 900 — quante esecuzioni ci sono state? 1.
+se exit é 0, aterra. relatório: files 1, runs 1, exit 0, millis 700 — aterrou? sim: exit 0 = 0.
+verwijder het bestand b.txt. daarna voer de build uit. als exit 0 is, land. rapport: files 0, runs 1, exit 0, millis 900 — geland.
+raport: files 1, runs 1, exit 3, millis 450 — jaki był exit builda? 3.
+отчёт: files 1, runs 1, exit 1, millis 900 — сколько запусков было? 1.
+if exit is 0, land. report: files 1, runs 1, exit 0, millis 700 — was it landed? yes: exit 0 = 0.
+lösche die datei b.txt. dann führe den build aus. wenn exit 0 ist, lande. bericht: files 0, runs 1, exit 0, millis 900 — gelandet.
+rapport: files 1, runs 1, exit 3, millis 450 — quel était l'exit du build ? 3.
+informe: files 1, runs 1, exit 2, millis 1200 — ¿cuántas ejecuciones hubo? 1.
+se exit è 0, atterra. rapporto: files 1, runs 1, exit 1, millis 900 — è atterrato? no: exit 1 ≠ 0.
+elimina o ficheiro notes.md. depois executa o build. se exit é 0, aterra. relatório: files 0, runs 1, exit 1, millis 1200 — não aterrado.
+rapport: files 0, runs 1, exit 0, millis 900 — welke exit had de build? 0.
+raport: files 1, runs 1, exit 3, millis 450 — ile było uruchomień? 1.
+если exit = 0, посади. отчёт: files 1, runs 1, exit 1, millis 900 — посажено ли? нет: exit 1 ≠ 0.
+delete the file notes.md. then run the build. if exit is 0, land. report: files 0, runs 1, exit 1, millis 1200 — not landed.
+bericht: files 0, runs 1, exit 0, millis 900 — welchen exit hatte der build? 0.
+rapport: files 1, runs 1, exit 3, millis 450 — combien de lancements y a-t-il eu ? 1.
+si exit es 0, aterriza. informe: files 1, runs 1, exit 2, millis 1200 — ¿aterrizó? no: exit 2 ≠ 0.
+elimina il file list.csv. poi esegui il build. se exit è 0, atterra. rapporto: files 0, runs 1, exit 2, millis 450 — non atterrato.
+relatório: files 0, runs 1, exit 1, millis 1200 — qual era o exit do build? 1.
+rapport: files 0, runs 1, exit 0, millis 900 — hoeveel runs waren er? 1.
+jeśli exit = 0, wyląduj. raport: files 1, runs 1, exit 3, millis 450 — czy wylądowano? nie: exit 3 ≠ 0.
+удали файл list.csv. затем запусти сборку. если exit = 0, посади. отчёт: files 0, runs 1, exit 2, millis 450 — не посажено.
+report: files 0, runs 1, exit 1, millis 1200 — what was the exit of the build? 1.
+bericht: files 0, runs 1, exit 0, millis 900 — wie viele läufe gab es? 1.
+si exit vaut 0, atterris. rapport: files 1, runs 1, exit 3, millis 450 — a-t-il atterri ? non: exit 3 ≠ 0.
+elimina el archivo a.txt. luego ejecuta el build. si exit es 0, aterriza. informe: files 0, runs 1, exit 3, millis 700 — no aterrizado.
+rapporto: files 0, runs 1, exit 2, millis 450 — qual era l'exit del build? 2.
+relatório: files 0, runs 1, exit 1, millis 1200 — quantas execuções houve? 1.
+als exit 0 is, land. rapport: files 0, runs 1, exit 0, millis 900 — is er geland? ja: exit 0 = 0.
+przeczytaj plik notes.md. następnie uruchom build. jeśli exit = 0, wyląduj. raport: files 1, runs 1, exit 0, millis 1200 — wylądowano.
+отчёт: files 0, runs 1, exit 2, millis 450 — какой exit у сборки? 2.
+report: files 0, runs 1, exit 1, millis 1200 — how many runs were there? 1.
+wenn exit 0 ist, lande. bericht: files 0, runs 1, exit 0, millis 900 — wurde gelandet? ja: exit 0 = 0.
+lis le fichier notes.md. puis lance le build. si exit vaut 0, atterris. rapport: files 1, runs 1, exit 0, millis 1200 — atterri.
+informe: files 0, runs 1, exit 3, millis 700 — ¿cuál fue el exit del build? 3.
+rapporto: files 0, runs 1, exit 2, millis 450 — quante esecuzioni ci sono state? 1.
+se exit é 0, aterra. relatório: files 0, runs 1, exit 1, millis 1200 — aterrou? não: exit 1 ≠ 0.
+lees het bestand list.csv. daarna voer de build uit. als exit 0 is, land. rapport: files 1, runs 1, exit 1, millis 450 — niet geland.
+raport: files 1, runs 1, exit 0, millis 1200 — jaki był exit builda? 0.
+отчёт: files 0, runs 1, exit 2, millis 450 — сколько запусков было? 1.
+if exit is 0, land. report: files 0, runs 1, exit 1, millis 1200 — was it landed? no: exit 1 ≠ 0.
+lies die datei list.csv. dann führe den build aus. wenn exit 0 ist, lande. bericht: files 1, runs 1, exit 1, millis 450 — nicht gelandet.
+rapport: files 1, runs 1, exit 0, millis 1200 — quel était l'exit du build ? 0.
+informe: files 0, runs 1, exit 3, millis 700 — ¿cuántas ejecuciones hubo? 1.
+se exit è 0, atterra. rapporto: files 0, runs 1, exit 2, millis 450 — è atterrato? no: exit 2 ≠ 0.
+lê o ficheiro a.txt. depois executa o build. se exit é 0, aterra. relatório: files 1, runs 1, exit 2, millis 700 — não aterrado.
+rapport: files 1, runs 1, exit 1, millis 450 — welke exit had de build? 1.
+raport: files 1, runs 1, exit 0, millis 1200 — ile było uruchomień? 1.
+если exit = 0, посади. отчёт: files 0, runs 1, exit 2, millis 450 — посажено ли? нет: exit 2 ≠ 0.
+read the file a.txt. then run the build. if exit is 0, land. report: files 1, runs 1, exit 2, millis 700 — not landed.
+bericht: files 1, runs 1, exit 1, millis 450 — welchen exit hatte der build? 1.
+rapport: files 1, runs 1, exit 0, millis 1200 — combien de lancements y a-t-il eu ? 1.
+si exit es 0, aterriza. informe: files 0, runs 1, exit 3, millis 700 — ¿aterrizó? no: exit 3 ≠ 0.
+leggi il file b.txt. poi esegui il build. se exit è 0, atterra. rapporto: files 1, runs 1, exit 3, millis 900 — non atterrato.
+relatório: files 1, runs 1, exit 2, millis 700 — qual era o exit do build? 2.
+rapport: files 1, runs 1, exit 1, millis 450 — hoeveel runs waren er? 1.
+jeśli exit = 0, wyląduj. raport: files 1, runs 1, exit 0, millis 1200 — czy wylądowano? tak: exit 0 = 0.
+прочитай файл b.txt. затем запусти сборку. если exit = 0, посади. отчёт: files 1, runs 1, exit 3, millis 900 — не посажено.
+report: files 1, runs 1, exit 2, millis 700 — what was the exit of the build? 2.
+bericht: files 1, runs 1, exit 1, millis 450 — wie viele läufe gab es? 1.
+si exit vaut 0, atterris. rapport: files 1, runs 1, exit 0, millis 1200 — a-t-il atterri ? oui: exit 0 = 0.
+amplía el archivo list.csv. luego ejecuta el build. si exit es 0, aterriza. informe: files 1, runs 1, exit 0, millis 450 — aterrizado.
+rapporto: files 1, runs 1, exit 3, millis 900 — qual era l'exit del build? 3.
+relatório: files 1, runs 1, exit 2, millis 700 — quantas execuções houve? 1.
+als exit 0 is, land. rapport: files 1, runs 1, exit 1, millis 450 — is er geland? nee: exit 1 ≠ 0.
+dopisz plik a.txt. następnie uruchom build. jeśli exit = 0, wyląduj. raport: files 1, runs 1, exit 1, millis 700 — nie wylądowano.
+
+удали файл a.txt. затем запусти сборку. если exit = 0, посади. отчёт: files 0, runs 1, exit 3, millis 700 — не посажено.
+report: files 1, runs 1, exit 3, millis 900 — what was the exit of the build? 3.
+bericht: files 1, runs 1, exit 3, millis 1200 — wie viele läufe gab es? 1.
+si exit es 0, aterriza. informe: files 1, runs 1, exit 3, millis 450 — ¿aterrizó? no: exit 3 ≠ 0.
+amplia il file list.csv. poi esegui il build. se exit è 0, atterra. rapporto: files 1, runs 1, exit 0, millis 450 — atterrato.
+rapport: files 1, runs 1, exit 0, millis 700 — welke exit had de build? 0.
+raport: files 0, runs 1, exit 0, millis 900 — ile było uruchomień? 1.
+если exit = 0, посади. отчёт: files 0, runs 1, exit 3, millis 700 — посажено ли? нет: exit 3 ≠ 0.
+erstelle die datei a.txt. dann führe den build aus. wenn exit 0 ist, lande. bericht: files 1, runs 1, exit 0, millis 700 — gelandet.
+rapport: files 0, runs 1, exit 0, millis 900 — quel était l'exit du build ? 0.
+informe: files 1, runs 1, exit 0, millis 1200 — ¿cuántas ejecuciones hubo? 1.
+se exit è 0, atterra. rapporto: files 1, runs 1, exit 0, millis 450 — è atterrato? sì: exit 0 = 0.
+verwijder het bestand notes.md. daarna voer de build uit. als exit 0 is, land. rapport: files 0, runs 1, exit 1, millis 1200 — niet geland.
+raport: files 1, runs 1, exit 1, millis 450 — jaki był exit builda? 1.
+отчёт: files 1, runs 1, exit 0, millis 450 — сколько запусков было? 1.
+wenn exit 0 ist, lande. bericht: files 1, runs 1, exit 0, millis 700 — wurde gelandet? ja: exit 0 = 0.
+lis le fichier list.csv. puis lance le build. si exit vaut 0, atterris. rapport: files 1, runs 1, exit 1, millis 450 — non atterri.
+informe: files 1, runs 1, exit 1, millis 700 — ¿cuál fue el exit del build? 1.
+relatório: files 1, runs 1, exit 1, millis 900 — quantas execuções houve? 1.
+als exit 0 is, land. rapport: files 0, runs 1, exit 1, millis 1200 — is er geland? nee: exit 1 ≠ 0.
+dopisz plik b.txt. następnie uruchom build. jeśli exit = 0, wyląduj. raport: files 1, runs 1, exit 2, millis 900 — nie wylądowano.
+report: files 1, runs 1, exit 1, millis 900 — what was the exit of the build? 1.
+bericht: files 0, runs 1, exit 1, millis 1200 — wie viele läufe gab es? 1.
+si exit vaut 0, atterris. rapport: files 1, runs 1, exit 1, millis 450 — a-t-il atterri ? non: exit 1 ≠ 0.
+crea il file notes.md. poi esegui il build. se exit è 0, atterra. rapporto: files 1, runs 1, exit 2, millis 1200 — non atterrato.
+relatório: files 0, runs 1, exit 2, millis 450 — qual era o exit do build? 2.
+rapport: files 1, runs 1, exit 2, millis 700 — hoeveel runs waren er? 1.
+jeśli exit = 0, wyląduj. raport: files 1, runs 1, exit 2, millis 900 — czy wylądowano? nie: exit 2 ≠ 0.
+delete the file list.csv. then run the build. if exit is 0, land. report: files 0, runs 1, exit 2, millis 450 — not landed.
+bericht: files 1, runs 1, exit 2, millis 700 — welchen exit hatte der build? 2.
+rapport: files 1, runs 1, exit 2, millis 900 — combien de lancements y a-t-il eu ? 1.
+se exit è 0, atterra. rapporto: files 1, runs 1, exit 2, millis 1200 — è atterrato? no: exit 2 ≠ 0.
+lê o ficheiro b.txt. depois executa o build. se exit é 0, aterra. relatório: files 1, runs 1, exit 3, millis 900 — não aterrado.
+rapport: files 1, runs 1, exit 3, millis 1200 — welke exit had de build? 3.
+отчёт: files 1, runs 1, exit 2, millis 1200 — сколько запусков было? 1.
+if exit is 0, land. report: files 0, runs 1, exit 2, millis 450 — was it landed? no: exit 2 ≠ 0.
+ergänze die datei notes.md. dann führe den build aus. wenn exit 0 ist, lande. bericht: files 1, runs 1, exit 3, millis 1200 — nicht gelandet.
+informe: files 1, runs 1, exit 3, millis 450 — ¿cuál fue el exit del build? 3.
+rapporto: files 0, runs 1, exit 3, millis 700 — quante esecuzioni ci sono state? 1.
+se exit é 0, aterra. relatório: files 1, runs 1, exit 3, millis 900 — aterrou? não: exit 3 ≠ 0.
+usuń plik b.txt. następnie uruchom build. jeśli exit = 0, wyląduj. raport: files 0, runs 1, exit 0, millis 900 — wylądowano.
+отчёт: files 0, runs 1, exit 3, millis 700 — какой exit у сборки? 3.
+report: files 1, runs 1, exit 3, millis 900 — how many runs were there? 1.
+wenn exit 0 ist, lande. bericht: files 1, runs 1, exit 3, millis 1200 — wurde gelandet? nein: exit 3 ≠ 0.
+lee el archivo notes.md. luego ejecuta el build. si exit es 0, aterriza. informe: files 1, runs 1, exit 0, millis 1200 — aterrizado.
+rapporto: files 1, runs 1, exit 0, millis 450 — qual era l'exit del build? 0.
+rapport: files 1, runs 1, exit 0, millis 700 — hoeveel runs waren er? 1.
+jeśli exit = 0, wyląduj. raport: files 0, runs 1, exit 0, millis 900 — czy wylądowano? tak: exit 0 = 0.
+допиши файл list.csv. затем запусти сборку. если exit = 0, посади. отчёт: files 1, runs 1, exit 0, millis 450 — посажено.
+bericht: files 1, runs 1, exit 0, millis 700 — welchen exit hatte der build? 0.
+rapport: files 0, runs 1, exit 0, millis 900 — combien de lancements y a-t-il eu ? 1.
+si exit es 0, aterriza. informe: files 1, runs 1, exit 0, millis 1200 — ¿aterrizó? sí: exit 0 = 0.
+cria o ficheiro b.txt. depois executa o build. se exit é 0, aterra. relatório: files 1, runs 1, exit 1, millis 900 — não aterrado.
+rapport: files 0, runs 1, exit 1, millis 1200 — welke exit had de build? 1.
+raport: files 1, runs 1, exit 1, millis 450 — ile było uruchomień? 1.
+если exit = 0, посади. отчёт: files 1, runs 1, exit 0, millis 450 — посажено ли? да: exit 0 = 0.
+lösche die datei notes.md. dann führe den build aus. wenn exit 0 ist, lande. bericht: files 0, runs 1, exit 1, millis 1200 — nicht gelandet.
+rapport: files 1, runs 1, exit 1, millis 450 — quel était l'exit du build ? 1.
+informe: files 1, runs 1, exit 1, millis 700 — ¿cuántas ejecuciones hubo? 1.
+se exit é 0, aterra. relatório: files 1, runs 1, exit 1, millis 900 — aterrou? não: exit 1 ≠ 0.
+lees het bestand a.txt. daarna voer de build uit. als exit 0 is, land. rapport: files 1, runs 1, exit 2, millis 700 — niet geland.
+raport: files 1, runs 1, exit 2, millis 900 — jaki był exit builda? 2.
+report: files 1, runs 1, exit 1, millis 900 — how many runs were there? 1.
+wenn exit 0 ist, lande. bericht: files 0, runs 1, exit 1, millis 1200 — wurde gelandet? nein: exit 1 ≠ 0.
+complète le fichier b.txt. puis lance le build. si exit vaut 0, atterris. rapport: files 1, runs 1, exit 2, millis 900 — non atterri.
+rapporto: files 1, runs 1, exit 2, millis 1200 — qual era l'exit del build? 2.
+relatório: files 0, runs 1, exit 2, millis 450 — quantas execuções houve? 1.
+als exit 0 is, land. rapport: files 1, runs 1, exit 2, millis 700 — is er geland? nee: exit 2 ≠ 0.
+создай файл notes.md. затем запусти сборку. если exit = 0, посади. отчёт: files 1, runs 1, exit 2, millis 1200 — не посажено.
+report: files 0, runs 1, exit 2, millis 450 — what was the exit of the build? 2.
+bericht: files 1, runs 1, exit 2, millis 700 — wie viele läufe gab es? 1.
+si exit vaut 0, atterris. rapport: files 1, runs 1, exit 2, millis 900 — a-t-il atterri ? non: exit 2 ≠ 0.
+elimina il file a.txt. poi esegui il build. se exit è 0, atterra. rapporto: files 0, runs 1, exit 3, millis 700 — non atterrato.
+relatório: files 1, runs 1, exit 3, millis 900 — qual era o exit do build? 3.
+rapport: files 1, runs 1, exit 3, millis 1200 — hoeveel runs waren er? 1.
+если exit = 0, посади. отчёт: files 1, runs 1, exit 2, millis 1200 — посажено ли? нет: exit 2 ≠ 0.
+read the file b.txt. then run the build. if exit is 0, land. report: files 1, runs 1, exit 3, millis 900 — not landed.
+bericht: files 1, runs 1, exit 3, millis 1200 — welchen exit hatte der build? 3.
+informe: files 1, runs 1, exit 3, millis 450 — ¿cuántas ejecuciones hubo? 1.
+se exit è 0, atterra. rapporto: files 0, runs 1, exit 3, millis 700 — è atterrato? no: exit 3 ≠ 0.
+creëer het bestand a.txt. daarna voer de build uit. als exit 0 is, land. rapport: files 1, runs 1, exit 0, millis 700 — geland.
+raport: files 0, runs 1, exit 0, millis 900 — jaki był exit builda? 0.
+отчёт: files 0, runs 1, exit 3, millis 700 — сколько запусков было? 1.
+if exit is 0, land. report: files 1, runs 1, exit 3, millis 900 — was it landed? no: exit 3 ≠ 0.
+supprime le fichier b.txt. puis lance le build. si exit vaut 0, atterris. rapport: files 0, runs 1, exit 0, millis 900 — atterri.
+informe: files 1, runs 1, exit 0, millis 1200 — ¿cuál fue el exit del build? 0.
+rapporto: files 1, runs 1, exit 0, millis 450 — quante esecuzioni ci sono state? 1.
+als exit 0 is, land. rapport: files 1, runs 1, exit 0, millis 700 — is er geland? ja: exit 0 = 0.
+przeczytaj plik list.csv. następnie uruchom build. jeśli exit = 0, wyląduj. raport: files 1, runs 1, exit 1, millis 450 — nie wylądowano.
+отчёт: files 1, runs 1, exit 0, millis 450 — какой exit у сборки? 0.
+bericht: files 1, runs 1, exit 0, millis 700 — wie viele läufe gab es? 1.
+si exit vaut 0, atterris. rapport: files 0, runs 1, exit 0, millis 900 — a-t-il atterri ? oui: exit 0 = 0.
+amplía el archivo a.txt. luego ejecuta el build. si exit es 0, aterriza. informe: files 1, runs 1, exit 1, millis 700 — no aterrizado.
+relatório: files 1, runs 1, exit 1, millis 900 — qual era o exit do build? 1.
+rapport: files 0, runs 1, exit 1, millis 1200 — hoeveel runs waren er? 1.
+jeśli exit = 0, wyląduj. raport: files 1, runs 1, exit 1, millis 450 — czy wylądowano? nie: exit 1 ≠ 0.
+create the file b.txt. then run the build. if exit is 0, land. report: files 1, runs 1, exit 1, millis 900 — not landed.
+bericht: files 0, runs 1, exit 1, millis 1200 — welchen exit hatte der build? 1.
+rapport: files 1, runs 1, exit 1, millis 450 — combien de lancements y a-t-il eu ? 1.
+si exit es 0, aterriza. informe: files 1, runs 1, exit 1, millis 700 — ¿aterrizó? no: exit 1 ≠ 0.
+elimina o ficheiro list.csv. depois executa o build. se exit é 0, aterra. relatório: files 0, runs 1, exit 2, millis 450 — não aterrado.
+rapport: files 1, runs 1, exit 2, millis 700 — welke exit had de build? 2.
+raport: files 1, runs 1, exit 2, millis 900 — ile było uruchomień? 1.
+if exit is 0, land. report: files 1, runs 1, exit 1, millis 900 — was it landed? no: exit 1 ≠ 0.
+lies die datei a.txt. dann führe den build aus. wenn exit 0 ist, lande. bericht: files 1, runs 1, exit 2, millis 700 — nicht gelandet.
+rapport: files 1, runs 1, exit 2, millis 900 — quel était l'exit du build ? 2.
+rapporto: files 1, runs 1, exit 2, millis 1200 — quante esecuzioni ci sono state? 1.
+se exit é 0, aterra. relatório: files 0, runs 1, exit 2, millis 450 — aterrou? não: exit 2 ≠ 0.
+bewerk het bestand notes.md. daarna voer de build uit. als exit 0 is, land. rapport: files 1, runs 1, exit 3, millis 1200 — niet geland.
+отчёт: files 1, runs 1, exit 2, millis 1200 — какой exit у сборки? 2.
+report: files 0, runs 1, exit 2, millis 450 — how many runs were there? 1.
+wenn exit 0 ist, lande. bericht: files 1, runs 1, exit 2, millis 700 — wurde gelandet? nein: exit 2 ≠ 0.
+crea el archivo list.csv. luego ejecuta el build. si exit es 0, aterriza. informe: files 1, runs 1, exit 3, millis 450 — no aterrizado.
+rapporto: files 0, runs 1, exit 3, millis 700 — qual era l'exit del build? 3.
+relatório: files 1, runs 1, exit 3, millis 900 — quantas execuções houve? 1.
+als exit 0 is, land. rapport: files 1, runs 1, exit 3, millis 1200 — is er geland? nee: exit 3 ≠ 0.
+
+create the file notes.md. then run the build. if exit is 0, land. report: files 1, runs 1, exit 2, millis 1200 — not landed.
+wenn exit 0 ist, lande. bericht: files 0, runs 1, exit 2, millis 450 — wurde gelandet? nein: exit 2 ≠ 0.
+rapport: files 1, runs 1, exit 3, millis 1200 — combien de lancements y a-t-il eu ? 1.
+rapporto: files 1, runs 1, exit 0, millis 1200 — qual era l'exit del build? 0.
+creëer het bestand b.txt. daarna voer de build uit. als exit 0 is, land. rapport: files 1, runs 1, exit 1, millis 900 — niet geland.
+jeśli exit = 0, wyląduj. raport: files 0, runs 1, exit 1, millis 1200 — czy wylądowano? nie: exit 1 ≠ 0.
+отчёт: files 1, runs 1, exit 1, millis 700 — сколько запусков было? 1.
+bericht: files 0, runs 1, exit 2, millis 450 — welchen exit hatte der build? 2.
+complète le fichier notes.md. puis lance le build. si exit vaut 0, atterris. rapport: files 1, runs 1, exit 3, millis 1200 — non atterri.
+se exit è 0, atterra. rapporto: files 1, runs 1, exit 3, millis 450 — è atterrato? no: exit 3 ≠ 0.
+relatório: files 1, runs 1, exit 0, millis 450 — quantas execuções houve? 1.
+raport: files 0, runs 1, exit 1, millis 1200 — jaki był exit builda? 1.
+допиши файл a.txt. затем запусти сборку. если exit = 0, посади. отчёт: files 1, runs 1, exit 1, millis 700 — не посажено.
+wenn exit 0 ist, lande. bericht: files 1, runs 1, exit 1, millis 900 — wurde gelandet? nein: exit 1 ≠ 0.
+rapport: files 1, runs 1, exit 2, millis 700 — combien de lancements y a-t-il eu ? 1.
+rapporto: files 1, runs 1, exit 3, millis 450 — qual era l'exit del build? 3.
+amplia o ficheiro list.csv. depois executa o build. se exit é 0, aterra. relatório: files 1, runs 1, exit 0, millis 450 — aterrado.
+jeśli exit = 0, wyląduj. raport: files 1, runs 1, exit 0, millis 700 — czy wylądowano? tak: exit 0 = 0.
+отчёт: files 1, runs 1, exit 0, millis 1200 — сколько запусков было? 1.
+bericht: files 1, runs 1, exit 1, millis 900 — welchen exit hatte der build? 1.
+lis le fichier a.txt. puis lance le build. si exit vaut 0, atterris. rapport: files 1, runs 1, exit 2, millis 700 — non atterri.
+si exit es 0, aterriza. informe: files 1, runs 1, exit 2, millis 900 — ¿aterrizó? no: exit 2 ≠ 0.
+relatório: files 0, runs 1, exit 3, millis 700 — quantas execuções houve? 1.
+raport: files 1, runs 1, exit 0, millis 700 — jaki był exit builda? 0.
+прочитай файл notes.md. затем запусти сборку. если exit = 0, посади. отчёт: files 1, runs 1, exit 0, millis 1200 — посажено.
+if exit is 0, land. report: files 1, runs 1, exit 0, millis 450 — was it landed? yes: exit 0 = 0.
+rapport: files 0, runs 1, exit 1, millis 1200 — combien de lancements y a-t-il eu ? 1.
+informe: files 1, runs 1, exit 2, millis 900 — ¿cuál fue el exit del build? 2.
+elimina o ficheiro a.txt. depois executa o build. se exit é 0, aterra. relatório: files 0, runs 1, exit 3, millis 700 — não aterrado.
+als exit 0 is, land. rapport: files 1, runs 1, exit 3, millis 900 — is er geland? nee: exit 3 ≠ 0.
+отчёт: files 1, runs 1, exit 3, millis 450 — сколько запусков было? 1.
+report: files 1, runs 1, exit 0, millis 450 — what was the exit of the build? 0.
+supprime le fichier notes.md. puis lance le build. si exit vaut 0, atterris. rapport: files 0, runs 1, exit 1, millis 1200 — non atterri.
+si exit es 0, aterriza. informe: files 1, runs 1, exit 1, millis 450 — ¿aterrizó? no: exit 1 ≠ 0.
+relatório: files 1, runs 1, exit 2, millis 1200 — quantas execuções houve? 1.
+rapport: files 1, runs 1, exit 3, millis 900 — welke exit had de build? 3.
+создай файл list.csv. затем запусти сборку. если exit = 0, посади. отчёт: files 1, runs 1, exit 3, millis 450 — не посажено.
+if exit is 0, land. report: files 0, runs 1, exit 3, millis 700 — was it landed? no: exit 3 ≠ 0.
+rapport: files 1, runs 1, exit 0, millis 700 — combien de lancements y a-t-il eu ? 1.
+informe: files 1, runs 1, exit 1, millis 450 — ¿cuál fue el exit del build? 1.
+cria o ficheiro notes.md. depois executa o build. se exit é 0, aterra. relatório: files 1, runs 1, exit 2, millis 1200 — não aterrado.
+als exit 0 is, land. rapport: files 0, runs 1, exit 2, millis 450 — is er geland? nee: exit 2 ≠ 0.
+raport: files 1, runs 1, exit 3, millis 1200 — ile było uruchomień? 1.
+report: files 0, runs 1, exit 3, millis 700 — what was the exit of the build? 3.
+crée le fichier a.txt. puis lance le build. si exit vaut 0, atterris. rapport: files 1, runs 1, exit 0, millis 700 — atterri.
+si exit es 0, aterriza. informe: files 0, runs 1, exit 0, millis 900 — ¿aterrizó? sí: exit 0 = 0.
+rapporto: files 1, runs 1, exit 1, millis 700 — quante esecuzioni ci sono state? 1.
+rapport: files 0, runs 1, exit 2, millis 450 — welke exit had de build? 2.
+dopisz plik notes.md. następnie uruchom build. jeśli exit = 0, wyląduj. raport: files 1, runs 1, exit 3, millis 1200 — nie wylądowano.
+if exit is 0, land. report: files 1, runs 1, exit 2, millis 1200 — was it landed? no: exit 2 ≠ 0.
+bericht: files 1, runs 1, exit 3, millis 900 — wie viele läufe gab es? 1.
+informe: files 0, runs 1, exit 0, millis 900 — ¿cuál fue el exit del build? 0.
+amplia il file a.txt. poi esegui il build. se exit è 0, atterra. rapporto: files 1, runs 1, exit 1, millis 700 — non atterrato.
+als exit 0 is, land. rapport: files 1, runs 1, exit 1, millis 900 — is er geland? nee: exit 1 ≠ 0.
+raport: files 1, runs 1, exit 2, millis 700 — ile było uruchomień? 1.
+report: files 1, runs 1, exit 2, millis 1200 — what was the exit of the build? 2.
+lies die datei b.txt. dann führe den build aus. wenn exit 0 ist, lande. bericht: files 1, runs 1, exit 3, millis 900 — nicht gelandet.
+si exit vaut 0, atterris. rapport: files 1, runs 1, exit 3, millis 1200 — a-t-il atterri ? non: exit 3 ≠ 0.
+rapporto: files 1, runs 1, exit 0, millis 1200 — quante esecuzioni ci sono state? 1.
+rapport: files 1, runs 1, exit 1, millis 900 — welke exit had de build? 1.
+przeczytaj plik a.txt. następnie uruchom build. jeśli exit = 0, wyląduj. raport: files 1, runs 1, exit 2, millis 700 — nie wylądowano.
+если exit = 0, посади. отчёт: files 1, runs 1, exit 1, millis 700 — посажено ли? нет: exit 1 ≠ 0.
+bericht: files 0, runs 1, exit 2, millis 450 — wie viele läufe gab es? 1.
+rapport: files 1, runs 1, exit 3, millis 1200 — quel était l'exit du build ? 3.
+leggi il file notes.md. poi esegui il build. se exit è 0, atterra. rapporto: files 1, runs 1, exit 0, millis 1200 — atterrato.
+se exit é 0, aterra. relatório: files 1, runs 1, exit 0, millis 450 — aterrou? sim: exit 0 = 0.
+raport: files 0, runs 1, exit 1, millis 1200 — ile było uruchomień? 1.
+отчёт: files 1, runs 1, exit 1, millis 700 — какой exit у сборки? 1.
+lösche die datei list.csv. dann führe den build aus. wenn exit 0 ist, lande. bericht: files 0, runs 1, exit 2, millis 450 — nicht gelandet.
+si exit vaut 0, atterris. rapport: files 1, runs 1, exit 2, millis 700 — a-t-il atterri ? non: exit 2 ≠ 0.
+rapporto: files 1, runs 1, exit 3, millis 450 — quante esecuzioni ci sono state? 1.
+relatório: files 1, runs 1, exit 0, millis 450 — qual era o exit do build? 0.
+usuń plik notes.md. następnie uruchom build. jeśli exit = 0, wyląduj. raport: files 0, runs 1, exit 1, millis 1200 — nie wylądowano.
+если exit = 0, посади. отчёт: files 1, runs 1, exit 0, millis 1200 — посажено ли? да: exit 0 = 0.
+bericht: files 1, runs 1, exit 1, millis 900 — wie viele läufe gab es? 1.
+rapport: files 1, runs 1, exit 2, millis 700 — quel était l'exit du build ? 2.
+crea il file list.csv. poi esegui il build. se exit è 0, atterra. rapporto: files 1, runs 1, exit 3, millis 450 — non atterrato.
+se exit é 0, aterra. relatório: files 0, runs 1, exit 3, millis 700 — aterrou? não: exit 3 ≠ 0.
+raport: files 1, runs 1, exit 0, millis 700 — ile było uruchomień? 1.
+отчёт: files 1, runs 1, exit 0, millis 1200 — какой exit у сборки? 0.
+erstelle die datei b.txt. dann führe den build aus. wenn exit 0 ist, lande. bericht: files 1, runs 1, exit 1, millis 900 — nicht gelandet.
+si exit vaut 0, atterris. rapport: files 0, runs 1, exit 1, millis 1200 — a-t-il atterri ? non: exit 1 ≠ 0.
+informe: files 1, runs 1, exit 2, millis 900 — ¿cuántas ejecuciones hubo? 1.
+relatório: files 0, runs 1, exit 3, millis 700 — qual era o exit do build? 3.
+utwórz plik a.txt. następnie uruchom build. jeśli exit = 0, wyląduj. raport: files 1, runs 1, exit 0, millis 700 — wylądowano.
+если exit = 0, посади. отчёт: files 1, runs 1, exit 3, millis 450 — посажено ли? нет: exit 3 ≠ 0.
+report: files 1, runs 1, exit 0, millis 450 — how many runs were there? 1.
+rapport: files 0, runs 1, exit 1, millis 1200 — quel était l'exit du build ? 1.
+amplía el archivo b.txt. luego ejecuta el build. si exit es 0, aterriza. informe: files 1, runs 1, exit 2, millis 900 — no aterrizado.
+se exit é 0, aterra. relatório: files 1, runs 1, exit 2, millis 1200 — aterrou? não: exit 2 ≠ 0.
+rapport: files 1, runs 1, exit 3, millis 900 — hoeveel runs waren er? 1.
+отчёт: files 1, runs 1, exit 3, millis 450 — какой exit у сборки? 3.
+append to the file list.csv. then run the build. if exit is 0, land. report: files 1, runs 1, exit 0, millis 450 — landed.
+si exit vaut 0, atterris. rapport: files 1, runs 1, exit 0, millis 700 — a-t-il atterri ? oui: exit 0 = 0.
+informe: files 1, runs 1, exit 1, millis 450 — ¿cuántas ejecuciones hubo? 1.
+relatório: files 1, runs 1, exit 2, millis 1200 — qual era o exit do build? 2.
+lees het bestand b.txt. daarna voer de build uit. als exit 0 is, land. rapport: files 1, runs 1, exit 3, millis 900 — niet geland.
+jeśli exit = 0, wyląduj. raport: files 1, runs 1, exit 3, millis 1200 — czy wylądowano? nie: exit 3 ≠ 0.
+report: files 0, runs 1, exit 3, millis 700 — how many runs were there? 1.
+rapport: files 1, runs 1, exit 0, millis 700 — quel était l'exit du build ? 0.
+lee el archivo list.csv. luego ejecuta el build. si exit es 0, aterriza. informe: files 1, runs 1, exit 1, millis 450 — no aterrizado.
+se exit è 0, atterra. rapporto: files 1, runs 1, exit 1, millis 700 — è atterrato? no: exit 1 ≠ 0.
+rapport: files 0, runs 1, exit 2, millis 450 — hoeveel runs waren er? 1.
+raport: files 1, runs 1, exit 3, millis 1200 — jaki był exit builda? 3.
+delete the file a.txt. then run the build. if exit is 0, land. report: files 0, runs 1, exit 3, millis 700 — not landed.
+wenn exit 0 ist, lande. bericht: files 1, runs 1, exit 3, millis 900 — wurde gelandet? nein: exit 3 ≠ 0.
+informe: files 0, runs 1, exit 0, millis 900 — ¿cuántas ejecuciones hubo? 1.
+rapporto: files 1, runs 1, exit 1, millis 700 — qual era l'exit del build? 1.
+verwijder het bestand list.csv. daarna voer de build uit. als exit 0 is, land. rapport: files 0, runs 1, exit 2, millis 450 — niet geland.
+jeśli exit = 0, wyląduj. raport: files 1, runs 1, exit 2, millis 700 — czy wylądowano? nie: exit 2 ≠ 0.
+report: files 1, runs 1, exit 2, millis 1200 — how many runs were there? 1.
+bericht: files 1, runs 1, exit 3, millis 900 — welchen exit hatte der build? 3.
+elimina el archivo b.txt. luego ejecuta el build. si exit es 0, aterriza. informe: files 0, runs 1, exit 0, millis 900 — aterrizado.
+se exit è 0, atterra. rapporto: files 1, runs 1, exit 0, millis 1200 — è atterrato? sì: exit 0 = 0.
+rapport: files 1, runs 1, exit 1, millis 900 — hoeveel runs waren er? 1.
+raport: files 1, runs 1, exit 2, millis 700 — jaki był exit builda? 2.

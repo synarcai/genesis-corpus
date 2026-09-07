@@ -4734,10 +4734,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 20071516,
+      "size": 20130794,
       "tiers": [],
       "text": "mix",
-      "lines": 264640
+      "lines": 265216
     },
     {
       "name": "full",
@@ -4752,10 +4752,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 34128216,
+      "size": 34187494,
       "tiers": [],
       "text": "mix",
-      "lines": 381793
+      "lines": 382369
     },
     {
       "name": "minimal",
@@ -9854,6 +9854,27 @@
       "file": "datasets/genesis_wordorder.txt",
       "genre": "where the verb stands: the place named by COUNT, not by the label «SOV» — the verb's index and the sentence's word count, checkable by splitting the quoted sentence (290 sentences of the layers, 11 languages)",
       "act": [
+        "name"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
+    },
+    {
+      "name": "plan",
+      "file": "datasets/genesis_plan.txt",
+      "genre": "order-row with a condition and the REPORT of its execution: the ledger of observation (files, runs, exit, millis) and a verdict that FOLLOWS from comparing the ledger with the condition (nine languages, both branches)",
+      "act": [
+        "decide",
         "name"
       ],
       "oracle": [
