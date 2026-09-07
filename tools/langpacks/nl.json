@@ -321,6 +321,48 @@
           "appels",
           "appel",
           "appels"
+        ],
+        "munt": [
+          "munt",
+          "munten",
+          "munt",
+          "munten"
+        ],
+        "pen": [
+          "pen",
+          "pennen",
+          "pen",
+          "pennen"
+        ],
+        "kop": [
+          "kop",
+          "koppen",
+          "kop",
+          "koppen"
+        ],
+        "kaart": [
+          "kaart",
+          "kaarten",
+          "kaart",
+          "kaarten"
+        ],
+        "bal": [
+          "bal",
+          "ballen",
+          "bal",
+          "ballen"
+        ],
+        "roebel": [
+          "roebel",
+          "roebels",
+          "roebel",
+          "roebels"
+        ],
+        "ei": [
+          "ei",
+          "eieren",
+          "ei",
+          "eieren"
         ]
       },
       "count_comment": "ячейки one/many НАЗЫВАЮТ вещь и несут артикль; count_one/count_many СЧИТАЮТ её и артикля не несут — «5 livres», а не «5 les livres» (07.09)"

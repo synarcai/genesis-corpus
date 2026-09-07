@@ -320,6 +320,41 @@
           "wpis",
           "wpisy",
           "wpisów"
+        ],
+        "moneta": [
+          "moneta",
+          "monety",
+          "monet"
+        ],
+        "długopis": [
+          "długopis",
+          "długopisy",
+          "długopisów"
+        ],
+        "filiżanka": [
+          "filiżanka",
+          "filiżanki",
+          "filiżanek"
+        ],
+        "karta": [
+          "karta",
+          "karty",
+          "kart"
+        ],
+        "piłka": [
+          "piłka",
+          "piłki",
+          "piłek"
+        ],
+        "rubel": [
+          "rubel",
+          "ruble",
+          "rubli"
+        ],
+        "jajko": [
+          "jajko",
+          "jajka",
+          "jajek"
         ]
       },
       "count_comment": "ЯЧЕЙКА «many» ПРЕЖДЕ НЕСЛА ИМЕНИТЕЛЬНЫЙ МНОЖЕСТВЕННОГО, а правило `count_agreement` требует трёх форм: при пяти и более польский берёт РОДИТЕЛЬНЫЙ множественного («5 książek», не «5 książki»). Ныне ячеек три; прежняя форма стои́т на месте «few» (2–4) — тем же индексом 1, так что читатель по номеру не сдвинут, а читатель по имени получает верное (07.09)."

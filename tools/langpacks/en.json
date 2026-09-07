@@ -116,6 +116,26 @@
         "apple": [
           "apple",
           "apples"
+        ],
+        "coin": [
+          "coin",
+          "coins"
+        ],
+        "pen": [
+          "pen",
+          "pens"
+        ],
+        "cup": [
+          "cup",
+          "cups"
+        ],
+        "ball": [
+          "ball",
+          "balls"
+        ],
+        "ruble": [
+          "ruble",
+          "rubles"
         ]
       }
     },
@@ -608,7 +628,10 @@
     "passenger": "passengers",
     "table": "tables",
     "house": "houses",
-    "cat": "cats"
+    "cat": "cats",
+    "message": "messages",
+    "file": "files",
+    "record": "records"
   },
   "function_words": [
     "a",
