@@ -107,8 +107,27 @@ def pass_shows(pass_i):
             ASK_ANIM if anim else ASK_THING)
         # A VERB TAKES ITS OWN KIND OF THINGS (tools/verbthings.py): the page
         # is per thing, so the PAIR follows the thing — «picked 4 miles» no more.
-        add = [п for п in add if all(verbthings.берёт(г, it) for г in п)] or add
-        sub = [п for п in sub if all(verbthings.берёт(г, it) for г in п)] or sub
+        #
+        # ЗАПАСНОЙ ХОД «or add» ОТМЕНЁН (07.09, по просьбе holon-f9). Он значил вот
+        # что: если закон не оставил дому НИ ОДНОЙ годной пары, дом берёт пару
+        # НЕГОДНУЮ и пишет страницу вопреки закону — молча. Закон при этом стои́т в
+        # тексте и в имени, и всякий читающий его верит, что он держит.
+        #
+        #     ЗАКОН С ЗАПАСНЫМ ХОДОМ ЕСТЬ НЕ ЗАКОН, А ПОЖЕЛАНИЕ. Он держит ровно
+        #     там, где и без него всё в порядке, и отступает ровно там, где нужен.
+        #
+        # ЗАМЕРЕНО ПЕРЕД ПРАВКОЙ: ход этот НЫНЕ МЁРТВ — у всех 69 вещей есть годная
+        # пара и сложения, и вычитания, и ни разу отступать не приходится. Свод от
+        # правки не меняется ни на байт; меняется то, что случится ЗАВТРА, когда
+        # заведут вещь без пары: дом ОСТАНОВИТСЯ с именем вещи в руках вместо того,
+        # чтобы написать «picked 4 miles» и промолчать.
+        add = [п for п in add if all(verbthings.берёт(г, it) for г in п)]
+        sub = [п for п in sub if all(verbthings.берёт(г, it) for г in п)]
+        if not add or not sub:
+            raise AssertionError(
+                "вещь «%s» не берёт ни одной объявленной пары (%s): объяви пару в "
+                "tools/verbthings.py или убери вещь — страница вопреки закону не "
+                "пишется" % (it, "сложения" if not add else "вычитания"))
         v1, v2 = add[seed % len(add)]
         s1, s2 = sub[seed % len(sub)]
         out.append(
