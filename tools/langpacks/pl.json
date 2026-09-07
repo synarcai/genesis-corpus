@@ -355,6 +355,41 @@
           "jajko",
           "jajka",
           "jajek"
+        ],
+        "ołówek": [
+          "ołówek",
+          "ołówki",
+          "ołówków"
+        ],
+        "kopiejka": [
+          "kopiejka",
+          "kopiejki",
+          "kopiejek"
+        ],
+        "metr": [
+          "metr",
+          "metry",
+          "metrów"
+        ],
+        "minuta": [
+          "minuta",
+          "minuty",
+          "minut"
+        ],
+        "godzina": [
+          "godzina",
+          "godziny",
+          "godzin"
+        ],
+        "rok": [
+          "rok",
+          "lata",
+          "lat"
+        ],
+        "dolar": [
+          "dolar",
+          "dolary",
+          "dolarów"
         ]
       },
       "count_comment": "ЯЧЕЙКА «many» ПРЕЖДЕ НЕСЛА ИМЕНИТЕЛЬНЫЙ МНОЖЕСТВЕННОГО, а правило `count_agreement` требует трёх форм: при пяти и более польский берёт РОДИТЕЛЬНЫЙ множественного («5 książek», не «5 książki»). Ныне ячеек три; прежняя форма стои́т на месте «few» (2–4) — тем же индексом 1, так что читатель по номеру не сдвинут, а читатель по имени получает верное (07.09).",
