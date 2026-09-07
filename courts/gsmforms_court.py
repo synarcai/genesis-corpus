@@ -427,7 +427,19 @@ def _рамка(закон):
 ВЕЩЬ_B = r"(cups of flour|cups of sugar|cakes|pastries|pages of math|pages of reading|bottles of regular soda|bottles of diet soda|push-ups|crunches|pages of reading homework|pages of math homework|movies|episodes|figures|books)"
 # 22E два деятеля, одно дело (e9 04.09: «the grasshopper jumped 9 inches and the mouse jumped 3 inches»)
 ДЕЯТЕЛЬ_E = r"((?:the )?[A-Za-z]+)"
-ГЛ_E, ГЛ_E0, ВЕЩЬ_E = r"(jumped|brought|did|won)", r"(jump|bring|do|win)", r"(inches|feet|balloons|push-ups|metres|games)"
+# ДВА СПИСКА ОДНОГО ЗАКОНА РАСХОДЯТСЯ МОЛЧА (07.09, вечер). Дом объявляет вещи в
+# `tools/gen_genesis_gsmforms.py:БОЛЬШЕ_E`, суд — здесь, второй раз. Я поменял в доме
+# «metres» на «meters» (одно письмо единицы в одном мире) — и суд ПЕРЕСТАЛ ЧИТАТЬ свой
+# дом: ворота записи назвали две честные строки ложью, ибо их не прочёл никто, кто знает
+# их закон. Вылечено добавлением слова СЮДА ЖЕ, и это лечение, а не закон.
+#
+#     СПИСОК, ПЕРЕПИСАННЫЙ В СУД ИЗ ДОМА, ЕСТЬ ДОЛГ, А НЕ УДОБСТВО: он верен ровно до
+#     первой правки дома, и день этой правки ничем не отмечен.
+#
+# Долг назван и оставлен назван: свести списки в одно место — работа отдельная, ибо
+# суд держит их полтора десятка, и всякий свод их через дом рискует кругом ввоза
+# (дом зовёт ворота записи, ворота зовут палату, палата ввозит этот суд).
+ГЛ_E, ГЛ_E0, ВЕЩЬ_E = r"(jumped|brought|did|won)", r"(jump|bring|do|win)", r"(inches|feet|balloons|push-ups|meters|metres|games)"
 ВЕЩЬ_C, ГДЕ = r"(storks|birds|red flowers|white flowers)", r"(on the fence|in the garden)"
 # 22П глаголы полос точками: деятель — имя, зверь или группа
 ДЕЯТЕЛЬ_П = r"((?:the )?[A-Za-z]+)"

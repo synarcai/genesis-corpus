@@ -430,6 +430,7 @@
       ],
       "instances_per_pass": 12,
       "templates": [
+        "{lex:adj_forms:bare} 있어요.",
         "{lex:adj_forms:subject} 많아요.",
         "저는 {lex:adj_forms:object} 좋아해요.",
         "이것은 {lex:adj_forms:copula}."

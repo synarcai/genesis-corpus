@@ -23,6 +23,7 @@
 законов с вещественными постоянными в слое нет вовсе, потому судить их
 нечем и не о чем.
 """
+import plural
 import pathlib
 import re
 import sys
@@ -66,9 +67,21 @@ from genesis import Unreadable, worlds  # noqa: E402
 
 ЗАКОН_СТРОКА = re.compile(
     r"^([\w]+) = ([^;]+); (\d+)[^\d]*?([×/])[^\d]*?(\d+)[^=]*= (\d+)")
+# ЕДИНИЦА ЧИТАЕТСЯ ДЫРОЙ И ПРОВЕРЯЕТСЯ, А НЕ СТОИ́Т ЛИТЕРАЛОМ (07.09, вечер).
+#
+# Образец держал «metres» и «seconds» буквой. Когда дом физики стал показывать величину
+# при ЕДИНИЦЕ — «a body covering 1 metre in 1 second has speed 1 metre per second» —
+# образец перестал совпадать, и суд ЗАМОЛЧАЛ о собственном доме. Молчание тут хуже
+# ошибки: строка честна, а суд, поставленный её читать, её не видит.
+#
+#     СУД, ДЕРЖАЩИЙ ФОРМУ СЛОВА ЛИТЕРАЛОМ, СЛЕПНЕТ РОВНО ТОГДА, КОГДА ДОМ НАЧИНАЕТ
+#     ПОКАЗЫВАТЬ ВТОРУЮ ФОРМУ, — то есть ровно тогда, когда читать становится что.
+#
+# Ныне единица есть ДЫРА, и суд не только принимает обе формы, но и ТРЕБУЕТ СОГЛАСИЯ
+# формы с числом: «2 metre» и «1 metres» суть ложь письма, и суд зовёт их ложью.
 СКОРОСТЬ_EN = re.compile(
-    r"^a body covering (\d+) metres in (\d+) seconds has speed "
-    r"(\d+) metres per second$")
+    r"^a body covering (\d+) (metres?) in (\d+) (seconds?) has speed "
+    r"(\d+) (metres?) per second$")
 СКОРОСТЬ_RU = re.compile(
     r"^тело, прошедшее (\d+) метр\S* за (\d+) секунд\S*, имеет скорость "
     r"(\d+) метр\S* в секунду$")
@@ -95,8 +108,8 @@ from genesis import Unreadable, worlds  # noqa: E402
 # ответа нет» истинно ровно тогда, когда путь и вправду не делится на
 # время нацело. Суд считает остаток, а не верит слову «нет».
 ЦЕЛОСТЬ_СКОРОСТИ = re.compile(
-    r"^(?:yes: (\d+) ÷ (\d+) = (\d+) metres per second"
-    r"|no: (\d+) metres in (\d+) seconds do not give a whole speed, "
+    r"^(?:yes: (\d+) ÷ (\d+) = (\d+) metres? per second"
+    r"|no: (\d+) metres? in (\d+) seconds? do(?:es)? not give a whole speed, "
     r"(\d+) is not divisible by (\d+)"
     r"|да: (\d+) ÷ (\d+) = (\d+) метр\S* в секунду"
     r"|нет: (\d+) метр\S* за (\d+) секунд\S* не да[её]?т?ю?т? целой скорости, "
@@ -119,7 +132,15 @@ def судить(строка):
         путь, срок, путь2, срок2 = г
         return True, (путь == путь2 and срок == срок2 and срок != 0
                       and путь % срок != 0)
-    m = СКОРОСТЬ_EN.match(с) or СКОРОСТЬ_RU.match(с)
+    m = СКОРОСТЬ_EN.match(с)
+    if m:
+        s, ед_s, t, ед_t, v, ед_v = m.groups()
+        s, t, v = int(s), int(t), int(v)
+        согласны = (ед_s == plural.by_count(s, "metres")
+                    and ед_t == plural.by_count(t, "seconds")
+                    and ед_v == plural.by_count(v, "metres"))
+        return True, согласны and t != 0 and s == v * t
+    m = СКОРОСТЬ_RU.match(с)
     if m:
         s, t, v = (int(x) for x in m.groups())
         return True, t != 0 and s == v * t
