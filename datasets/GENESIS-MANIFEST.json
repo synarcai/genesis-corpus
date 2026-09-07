@@ -4734,10 +4734,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 19692811,
+      "size": 19988342,
       "tiers": [],
       "text": "mix",
-      "lines": 258981
+      "lines": 263748
     },
     {
       "name": "full",
@@ -4752,10 +4752,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 33749511,
+      "size": 34045042,
       "tiers": [],
       "text": "mix",
-      "lines": 376134
+      "lines": 380901
     },
     {
       "name": "minimal",
@@ -9827,6 +9827,27 @@
       ],
       "actors": "",
       "text": "shows"
+    },
+    {
+      "name": "wordparts",
+      "file": "datasets/genesis_wordparts.txt",
+      "genre": "what a word is made of: «talo + ssa = talossa» — the composition of forms the packs already declare, shown only where the stem stands unchanged (684 forms in 22 languages)",
+      "act": [
+        "name",
+        "translate"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
     }
   ]
 }
