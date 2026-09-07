@@ -128,6 +128,11 @@ def счёт(язык, понятие, n):
  "ru": dict(имена=("Аня", "Ваня", "Вера", "Глеб"),
      сцена_с_ролью="{a} сидели на столе. {b} пришли на стол. сколько котов на столе теперь? {t}: {na} + {nb} = {nt}.",
      без_сцены="{a} стоят {деньги}. сколько стоит один? {one}: {nb} ÷ {na} = {one_n}.",
+     # РУССКОЕ «У КОГО-ТО БЫЛО» НЕ ДАЁТ ВТОРОЙ КЛАУЗЕ ОБЩЕГО ПОДЛЕЖАЩЕГО (07.09):
+     # носитель там стои́т в родительном, и «у Вани было 9 книг и отдал 6» безголово.
+     # Вся суть рамки — второй акт БЕЗ повторённого носителя, и ради неё берётся
+     # именительный с глаголом держания: «Ваня держал 9 книг и отдал 6 книг».
+     клауза_без_носителя="{и1} {имел} {a} и {отдал} {c}. сколько {род_мн} у {род_и1} осталось? {ост}: {na} − {nc} = {n_ост}.",
      число_первое="{a} сидели на столе. {b} пришли. сколько котов на столе теперь? {t}: {na} + {nb} = {nt}.",
      опенер="на столе лежат {a}. на стол кладут ещё {b}. сколько книг на столе теперь? {t}: {na} + {nb} = {nt}.",
      если="если на столе {a}, а на стол кладут ещё {b}, сколько книг на столе? {t}: {na} + {nb} = {nt}.",
@@ -138,6 +143,7 @@ def счёт(язык, понятие, n):
  "en": dict(имена=("Ann", "Ben", "Carla", "Dan"),
      сцена_с_ролью="{a} were sitting on the table. {b} came to the table. how many cats are on the table now? {t}: {na} + {nb} = {nt}.",
      без_сцены="{a} cost {деньги}. how much does one cost? {one}: {nb} ÷ {na} = {one_n}.",
+     клауза_без_носителя="{и1} had {a} and gave away {c}. how many {род_мн} does {и1} have now? {ост}: {na} − {nc} = {n_ост}.",
      число_первое="{a} were sitting on the table. {b} came. how many cats are on the table now? {t}: {na} + {nb} = {nt}.",
      опенер="there are {a} on the table. {b} more are put on the table. how many books are on the table now? {t}: {na} + {nb} = {nt}.",
      если="if {a} are on the table and {b} more are put there, how many books are on the table? {t}: {na} + {nb} = {nt}.",
@@ -148,6 +154,7 @@ def счёт(язык, понятие, n):
  "de": dict(имена=("Anna", "Felix", "Jonas", "Laura"),
      сцена_с_ролью="{a} saßen auf dem Tisch. {b} kamen auf den Tisch. wie viele Katzen sind jetzt auf dem Tisch? {t}: {na} + {nb} = {nt}.",
      без_сцены="{a} kosten {деньги}. wie viel kostet eines? {one}: {nb} ÷ {na} = {one_n}.",
+     клауза_без_носителя="{и1} hatte {a} und gab {c} weg. wie viele {род_мн} hat {и1} jetzt? {ост}: {na} − {nc} = {n_ост}.",
      число_первое="{a} saßen auf dem Tisch. {b} kamen dazu. wie viele Katzen sind jetzt auf dem Tisch? {t}: {na} + {nb} = {nt}.",
      опенер="auf dem Tisch liegen {a}. {b} werden dazugelegt. wie viele Bücher liegen jetzt auf dem Tisch? {t}: {na} + {nb} = {nt}.",
      если="wenn {a} auf dem Tisch liegen und {b} dazugelegt werden, wie viele Bücher liegen auf dem Tisch? {t}: {na} + {nb} = {nt}.",
@@ -158,6 +165,7 @@ def счёт(язык, понятие, n):
  "fr": dict(имена=("Anne", "Hugo", "Jules", "Claire"),
      сцена_с_ролью="{a} étaient assis sur la table. {b} sont venus sur la table. combien de chats y a-t-il sur la table maintenant ? {t} : {na} + {nb} = {nt}.",
      без_сцены="{a} coûtent {деньги}. combien coûte un seul ? {one} : {nb} ÷ {na} = {one_n}.",
+     клауза_без_носителя="{и1} avait {a} et a donné {c}. combien de {род_мн} {и1} a-t-il maintenant ? {ост} : {na} − {nc} = {n_ост}.",
      число_первое="{a} étaient assis sur la table. {b} sont arrivés. combien de chats y a-t-il sur la table maintenant ? {t} : {na} + {nb} = {nt}.",
      опенер="il y a {a} sur la table. on pose {b} de plus sur la table. combien de livres y a-t-il sur la table maintenant ? {t} : {na} + {nb} = {nt}.",
      если="si {a} sont sur la table et qu'on pose {b} de plus, combien de livres y a-t-il sur la table ? {t} : {na} + {nb} = {nt}.",
@@ -168,6 +176,7 @@ def счёт(язык, понятие, n):
  "es": dict(имена=("Ana", "Carlos", "Diego", "Elena"),
      сцена_с_ролью="{a} estaban sentados en la mesa. {b} vinieron a la mesa. ¿cuántos gatos hay en la mesa ahora? {t}: {na} + {nb} = {nt}.",
      без_сцены="{a} cuestan {деньги}. ¿cuánto cuesta uno? {one}: {nb} ÷ {na} = {one_n}.",
+     клауза_без_носителя="{и1} tenía {a} y dio {c}. ¿cuántos {род_мн} tiene {и1} ahora? {ост}: {na} − {nc} = {n_ост}.",
      число_первое="{a} estaban sentados en la mesa. {b} llegaron. ¿cuántos gatos hay en la mesa ahora? {t}: {na} + {nb} = {nt}.",
      опенер="hay {a} en la mesa. se ponen {b} más en la mesa. ¿cuántos libros hay en la mesa ahora? {t}: {na} + {nb} = {nt}.",
      если="si {a} están en la mesa y se ponen {b} más, ¿cuántos libros hay en la mesa? {t}: {na} + {nb} = {nt}.",
@@ -178,6 +187,7 @@ def счёт(язык, понятие, n):
  "it": dict(имена=("Anna", "Luca", "Marco", "Giulia"),
      сцена_с_ролью="{a} erano seduti sul tavolo. {b} sono venuti sul tavolo. quanti gatti ci sono sul tavolo adesso? {t}: {na} + {nb} = {nt}.",
      без_сцены="{a} costano {деньги}. quanto costa uno? {one}: {nb} ÷ {na} = {one_n}.",
+     клауза_без_носителя="{и1} aveva {a} e ha dato {c}. quanti {род_мн} ha {и1} adesso? {ост}: {na} − {nc} = {n_ост}.",
      число_первое="{a} erano seduti sul tavolo. {b} sono arrivati. quanti gatti ci sono sul tavolo adesso? {t}: {na} + {nb} = {nt}.",
      опенер="ci sono {a} sul tavolo. si mettono {b} in più sul tavolo. quanti libri ci sono sul tavolo adesso? {t}: {na} + {nb} = {nt}.",
      если="se {a} sono sul tavolo e se ne mettono {b} in più, quanti libri ci sono sul tavolo? {t}: {na} + {nb} = {nt}.",
@@ -188,6 +198,7 @@ def счёт(язык, понятие, n):
  "pt": dict(имена=("Ana", "João", "Maria", "Beatriz"),
      сцена_с_ролью="{a} estavam sentados na mesa. {b} vieram para a mesa. quantos gatos há na mesa agora? {t}: {na} + {nb} = {nt}.",
      без_сцены="{a} custam {деньги}. quanto custa um? {one}: {nb} ÷ {na} = {one_n}.",
+     клауза_без_носителя="{и1} tinha {a} e deu {c}. quantos {род_мн} {и1} tem agora? {ост}: {na} − {nc} = {n_ост}.",
      число_первое="{a} estavam sentados na mesa. {b} chegaram. quantos gatos há na mesa agora? {t}: {na} + {nb} = {nt}.",
      опенер="há {a} na mesa. põem-se {b} a mais na mesa. quantos livros há na mesa agora? {t}: {na} + {nb} = {nt}.",
      если="se {a} estão na mesa e se põem {b} a mais, quantos livros há na mesa? {t}: {na} + {nb} = {nt}.",
@@ -198,6 +209,7 @@ def счёт(язык, понятие, n):
  "nl": dict(имена=("Anna", "Bram", "Daan", "Emma"),
      сцена_с_ролью="{a} zaten op de tafel. {b} kwamen op de tafel. hoeveel katten zitten er nu op de tafel? {t}: {na} + {nb} = {nt}.",
      без_сцены="{a} kosten {деньги}. hoeveel kost er één? {one}: {nb} ÷ {na} = {one_n}.",
+     клауза_без_носителя="{и1} had {a} en gaf {c} weg. hoeveel {род_мн} heeft {и1} nu? {ост}: {na} − {nc} = {n_ост}.",
      число_первое="{a} zaten op de tafel. {b} kwamen erbij. hoeveel katten zitten er nu op de tafel? {t}: {na} + {nb} = {nt}.",
      опенер="er liggen {a} op de tafel. er worden {b} bij gelegd. hoeveel boeken liggen er nu op de tafel? {t}: {na} + {nb} = {nt}.",
      если="als {a} op de tafel liggen en er {b} bij worden gelegd, hoeveel boeken liggen er op de tafel? {t}: {na} + {nb} = {nt}.",
@@ -215,6 +227,7 @@ def счёт(язык, понятие, n):
      глагол_пришли={"one": "przyszedł", "few": "przyszły", "many": "przyszło"},
      сцена_с_ролью="{a} {гл_с} na stole. {b} {гл_п} na stół. ile kotów jest teraz na stole? {t}: {na} + {nb} = {nt}.",
      без_сцены="{a} kosztują {деньги}. ile kosztuje jedna? {one}: {nb} ÷ {na} = {one_n}.",
+     клауза_без_носителя="{и1} {имел} {a} i {отдал} {c}. ile {род_мн} ma teraz {и1}? {ост}: {na} − {nc} = {n_ост}.",
      число_первое="{a} {гл_с} na stole. {b} {гл_п}. ile kotów jest teraz na stole? {t}: {na} + {nb} = {nt}.",
      опенер="na stole leży {a}. kładzie się jeszcze {b}. ile książek leży teraz na stole? {t}: {na} + {nb} = {nt}.",
      если="jeśli na stole leży {a}, a kładzie się jeszcze {b}, ile książek leży na stole? {t}: {na} + {nb} = {nt}.",
@@ -230,8 +243,12 @@ def счёт(язык, понятие, n):
 #     берущий последнее слово число-первого предложения за сцену, на странице «5 яблок
 #     стоят 10 рублей» возьмёт сценой РУБЛИ — и это ровно та стена, ради которой рамка
 #     контраста и написана: у неё сцены нет вовсе, а последнее слово есть мера цены.
+
+ИМЕЛ = {'ru': ('держал', 'держала'), 'en': ('had', 'had'), 'de': ('hatte', 'hatte'), 'fr': ('avait', 'avait'), 'es': ('tenía', 'tenía'), 'it': ('aveva', 'aveva'), 'pt': ('tinha', 'tinha'), 'nl': ('had', 'had'), 'pl': ('miał', 'miała')}
+ОТДАЛ = {'ru': ('отдал', 'отдала'), 'en': ('gave away', 'gave away'), 'de': ('gab weg', 'gab weg'), 'fr': ('a donné', 'a donné'), 'es': ('dio', 'dio'), 'it': ('ha dato', 'ha dato'), 'pt': ('deu', 'deu'), 'nl': ('gaf weg', 'gaf weg'), 'pl': ('oddał', 'oddała')}
+
 ФОРМЫ = ("число_первое", "опенер", "если", "клаузы_один", "клаузы_два", "клауза_одна",
-         "список", "сцена_с_ролью", "без_сцены")
+         "список", "сцена_с_ролью", "без_сцены", "клауза_без_носителя")
 for _я in ЯЗЫКИ:
     assert set(ФОРМЫ) <= set(Р[_я]), (_я, "рамка не объявлена")
     assert len(Р[_я]["имена"]) >= 2, (_я, "носителей меньше LAW")
@@ -262,9 +279,25 @@ def показы(pi):
         # РАМКА БЕЗ СЦЕНЫ ДЕЛИТ НАЦЕЛО, ИНАЧЕ ЛЕДЖЕР СОЛГАЛ БЫ: цена берётся кратной
         if форма == "без_сцены":
             nb = na * ((основа + i) % 8 + 2)
+        # ВТОРОЙ АКТ РАСХОДНЫЙ: съедено не больше, чем было
+        if форма == "клауза_без_носителя":
+            nb = (основа + i * 5) % max(1, na - 1) + 1
         one_n = nb // na if na else nb
         поля = dict(a=a, b=b, c=c, t=t, na=na, nb=nb, nc=nb, nt=na + nb,
                     one=one_n, one_n=one_n, деньги=деньги(язык, nb))
+        if форма == "клауза_без_носителя":
+            поля["c"] = счёт(язык, ТОВАР_A, nb)
+            поля["ост"] = счёт(язык, ТОВАР_A, na - nb)
+            поля["n_ост"] = na - nb
+            # РОД ВО МНОЖЕСТВЕННОМ ДЛЯ ВОПРОСА — та же ячейка «many», что у счёта
+            поля["род_мн"] = счёт(язык, ТОВАР_A, 5).split(" ", 1)[1]
+            # РОД НОСИТЕЛЯ — У ПАКЕТА, а не по имени наугад
+            род = ((_ПАК[язык].get("person_forms") or {}).get(и1) or {}).get("gender", "m")
+            поля["имел"] = ИМЕЛ[язык][0 if род == "m" else 1]
+            # РОДИТЕЛЬНЫЙ ИМЕНИ — У ПАКЕТА («у Вани», не «у Ваня»): русский пакет
+            # объявляет `person_forms[имя]["gen"]`, и падеж берётся оттуда, а не правилом.
+            поля["род_и1"] = ((_ПАК[язык].get("person_forms") or {}).get(и1) or {}).get("gen", и1)
+            поля["отдал"] = ОТДАЛ[язык][0 if род == "m" else 1]
         поля["и1"], поля["и2"] = и1, и2
         # ГЛАГОЛ ПО ТОЙ ЖЕ ЯЧЕЙКЕ, ЧТО И ИМЯ — там, где язык его двигает
         if "глагол_сидели" in рамка:
