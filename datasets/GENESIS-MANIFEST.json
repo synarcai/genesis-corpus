@@ -4734,10 +4734,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 19988342,
+      "size": 20071516,
       "tiers": [],
       "text": "mix",
-      "lines": 263748
+      "lines": 264640
     },
     {
       "name": "full",
@@ -4752,10 +4752,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 34045042,
+      "size": 34128216,
       "tiers": [],
       "text": "mix",
-      "lines": 380901
+      "lines": 381793
     },
     {
       "name": "minimal",
@@ -9835,6 +9835,26 @@
       "act": [
         "name",
         "translate"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "unnamed"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
+    },
+    {
+      "name": "wordorder",
+      "file": "datasets/genesis_wordorder.txt",
+      "genre": "where the verb stands: the place named by COUNT, not by the label «SOV» — the verb's index and the sentence's word count, checkable by splitting the quoted sentence (290 sentences of the layers, 11 languages)",
+      "act": [
+        "name"
       ],
       "oracle": [
         "recompute"
