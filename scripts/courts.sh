@@ -63,7 +63,7 @@ COURTS=("courts/arith_court.py" "courts/algo_court.py"
         # ЛОВУШКА НАЧАЛА — суд, зовущий строку ложной по её НАЧАЛУ, молчит до
         # дня, когда сосед напишет первую такую строку, и тогда ломает СОСЕДА.
         # Сличением показов не виден: показов, которые его тронут, ещё нет.
-        "scripts/prefix_traps.py" "scripts/sign_traps.py" "scripts/strat_slice.py" "scripts/house_rejects.py" "scripts/root_passport.py" "scripts/pack_singular_risk.py"
+        "scripts/prefix_traps.py" "scripts/sign_traps.py" "scripts/strat_slice.py" "scripts/house_rejects.py" "scripts/root_passport.py" "scripts/pack_singular_risk.py" "scripts/cell_shown.py"
         # ПЕРЕПИСЬ ПОРОГОВ — пай аудита «меры и пороги»: всякое число в роли
         # рубежа с ответом «объявлено / храповик / вкус». Печатает число, не падает.
         "scripts/threshold_census.py"

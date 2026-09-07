@@ -763,20 +763,28 @@ def gen_kind(pack, kind_name, kind, pass_i):
                 if cls.get(
                     "plural_by_count"
                 ):
+                    # СЧЁТНАЯ ЯЧЕЙКА, ЕСЛИ ОНА ОБЪЯВЛЕНА, СТОИТ ПРИ ЧИСЛЕ — ДЛЯ ТОГО ОНА И
+                    # ОБЪЯВЛЕНА (07.09). Семь пакетов получили в этот день ячейки
+                    # `count_one`/`count_many`: у романских и нидерландского это ГОЛАЯ форма
+                    # без артикля («livres» против «les livres»), у немецкого — с ПРОПИСНОЙ,
+                    # как пишется имя. Движок же брал основную ячейку, и немецкий слой писал
+                    # «ich zähle 6 wörter» строчными, а романский, если бы считал, дал бы
+                    # «5 les livres».
+                    #
+                    #     ЯЧЕЙКА, ОБЪЯВЛЕННАЯ ДЛЯ СЧЁТА И НЕ ВЗЯТАЯ ПРИ СЧЁТЕ, ЕСТЬ
+                    #     ОБЪЯВЛЕНИЕ БЕЗ ПОКАЗА. Прежние читатели не сдвинуты: пакет без
+                    #     `count_*` берёт основную ячейку, как и брал.
+                    def _счётная(k, cells=fnames, row=forms):
+                        i = count_form_index(pack, cls, k)
+                        имя_сч = f"count_{cells[i]}"
+                        return row[cells.index(имя_сч)] if имя_сч in cells else row[i]
+
                     ctx[
                         f"lex:{cls_name}:by_n"
-                    ] = forms[
-                        count_form_index(
-                            pack, cls, n
-                        )
-                    ]
+                    ] = _счётная(n)
                     ctx[
                         f"lex:{cls_name}:by_sum"
-                    ] = forms[
-                        count_form_index(
-                            pack, cls, n + m
-                        )
-                    ]
+                    ] = _счётная(n + m)
             s = instantiate(template, ctx)
             if "{" in s:
                 # ДЫРА, ОСТАВШАЯСЯ ПОСЛЕ ПОДСТАНОВКИ, НАЗЫВАЕТСЯ ПО ИМЕНИ
