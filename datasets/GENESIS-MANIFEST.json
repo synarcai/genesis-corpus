@@ -9793,6 +9793,23 @@
       ],
       "actors": "",
       "text": "shows"
+    },
+    {
+      "name": "totalsubj",
+      "file": "datasets/genesis_totalsubj.txt",
+      "genre": "THE TOTAL AS SUBJECT AND THE CONTAINER AS A UNIT OF COUNT (07.09). The atlas of the reader's unread numbers (tomograph st48, omega-ad) holds its largest unsorted class — «other», 151 stories — and holon-f9 named two of its shapes. A census of the свод answers both: «there are a total of N X on the P» stands ZERO times — the phrase «a total of» is in the свод (16 lines) but ALWAYS as an ANSWER («how many eggs does carlos have? a total of 32 eggs») and never as a SUBJECT with a scene; and «got a box of N X» stands 8 times, all eight about ONE goods (crayons), in one frame, in one house. Two readings the свод never showed. A TOTAL STANDING AS SUBJECT IS A COUNT OF THINGS, NOT AN ANSWER: «a total of 10 action figures» at the head of a sentence names what is THERE and something is then done with it, while the same phrase in the tail names what was COMPUTED; a reader that met it only as an answer does not recognise it in first place — for it «a total of» is a word of the result, not a word of quantity. A CONTAINER IS A UNIT OF COUNT, AND ONE MAY COUNT EITHER IT OR WHAT IS IN IT: «a box of 20 crayons and a box of 8 crayons» carries THREE numbers — twenty, eight and TWO (the boxes) — and which of them is asked is decided by the question; a house that wrote only «how many crayons» showed one reading of two. Four frames: the total-subject with a scene, gaining and losing; two containers with two DIFFERENT goods and the question about the THINGS, where the joint «and» stands between two numeric phrases and the ledger sums the pair (a witness of the list word, М-710); and the question about the CONTAINERS, a gate against answering by magnitude — a reader that takes the larger number lies there. The containers are THE SAME WORDS the house of measure declares, and that is deliberate: one word in two houses and two readings — a measure («3 cups of sugar», the number at the vessel) and a container («a box of 20 crayons», the number at the things inside) — is exactly what separates the ROLE OF THE PLACE from the word. Scenes carry their own preposition, declared and not derived: «on the shelf» but «in the box» (tools/totalsubj.py). CLOSED world.",
+      "act": [
+        "recount",
+        "translate"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
     }
   ]
 }
