@@ -22,6 +22,16 @@
 
     python3 tools/roleforms.py    # самопроверка с мутантами
 """
+# ШЕСТОЕ ВЕЩЕСТВО КУПЛЕНО ЗАКОНОМ ПОВТОРЕНИЯ (08.09). Причастие, объявленное при вещи,
+# исправило двенадцать ложных строк — и оставило португальское «feito» стоять в своде ОДИН
+# раз: из пяти вещей португальского четыре женского рода. Прибор `word_once` назвал это в
+# тот же час.
+#
+#     ПОЧИН, ВЕРНЫЙ ПО РЕЧИ, БЫВАЕТ ДОЛГОМ ПО ЗАКОНУ ПОВТОРЕНИЯ: правильная форма, стоящая
+#     однажды, не показана.
+#
+# Шестая вещь — книга из бумаги — взята мужского рода там, где язык его даёт, и тем ставит
+# вторую опору под каждое мужское причастие.
 ТИПЫ = ("орудие", "место", "вещество")
 
 ЯЗЫКИ = {
@@ -33,7 +43,7 @@
                ("учат детей", "в школе"), ("варят еду", "на кухне"), ("хранят книги", "в библиотеке")),
         вещество=(("сделан стол", "из дерева"), ("сделано окно", "из стекла"),
                   ("сделан ключ", "из металла"), ("испечён хлеб", "из муки"),
-                  ("связан свитер", "из шерсти")),
+                  ("связан свитер", "из шерсти"), ("сделана книга", "из бумаги")),
     ),
     "en": dict(
         орудие_воп="what do people {д} with? {о}.", место_воп="where do people {д}? {о}.",
@@ -44,7 +54,7 @@
                ("teach children", "in a school"), ("cook food", "in a kitchen"),
                ("keep books", "in a library")),
         вещество=(("a table", "of wood"), ("a window", "of glass"), ("a key", "of metal"),
-                  ("bread", "of flour"), ("a sweater", "of wool")),
+                  ("bread", "of flour"), ("a sweater", "of wool"), ("a book", "of paper")),
     ),
     "de": dict(
         # ПОРЯДОК СЛОВ ЯЗЫКА ЖИВЁТ В ОБЪЯВЛЕНИИ, А НЕ В РАМКЕ: немецкий и
@@ -61,7 +71,7 @@
                ("unterrichtet man Kinder", "in einer Schule"), ("kocht man Essen", "in einer Küche"),
                ("bewahrt man Bücher auf", "in einer Bibliothek")),
         вещество=(("ein Tisch", "aus Holz"), ("ein Fenster", "aus Glas"), ("ein Schlüssel", "aus Metall"),
-                  ("Brot", "aus Mehl"), ("ein Pullover", "aus Wolle")),
+                  ("Brot", "aus Mehl"), ("ein Pullover", "aus Wolle"), ("ein Buch", "aus Papier")),
     ),
     "fr": dict(
         # ЭВФОНИЧЕСКОЕ «-T-» ОБЪЯВЛЕНО ПРИ ГЛАГОЛЕ, А НЕ ДОПИСАНО РАМКОЙ:
@@ -70,51 +80,55 @@
         # («écrit-on»). Рамка, дописывавшая «-t-on» всякому, дала «écrit-t-on» —
         # тот же род, что немецкий порядок слов: строй языка живёт в объявлении.
         орудие_воп="avec quoi {д} ? {о}.", место_воп="où {д} ? {о}.",
-        вещество_воп="en quoi est fait {д} ? {о}.",
+        вещество_воп="en quoi est {пр} {д} ? {о}.",
         орудие=(("écrit-on", "avec un stylo"), ("coupe-t-on le pain", "avec un couteau"),
                 ("mange-t-on la soupe", "avec une cuillère"), ("dessine-t-on", "avec un crayon"),
                 ("creuse-t-on la terre", "avec une bêche")),
         место=(("achète-t-on le pain", "dans un magasin"), ("soigne-t-on les malades", "dans un hôpital"),
                ("enseigne-t-on aux enfants", "dans une école"), ("cuisine-t-on", "dans une cuisine"),
                ("garde-t-on les livres", "dans une bibliothèque")),
-        вещество=(("une table", "en bois"), ("une fenêtre", "en verre"), ("une clé", "en métal"),
-                  ("le pain", "en farine"), ("un pull", "en laine")),
+        вещество=(("une table", "en bois", "faite"), ("une fenêtre", "en verre", "faite"),
+                  ("une clé", "en métal", "faite"), ("le pain", "en farine", "fait"),
+                  ("un pull", "en laine", "fait"), ("un livre", "en papier", "fait")),
     ),
     "es": dict(
         орудие_воп="¿con qué se {д}? {о}.", место_воп="¿dónde se {д}? {о}.",
-        вещество_воп="¿de qué está hecho {д}? {о}.",
+        вещество_воп="¿de qué está {пр} {д}? {о}.",
         орудие=(("escribe", "con un bolígrafo"), ("corta el pan", "con un cuchillo"),
                 ("come la sopa", "con una cuchara"), ("dibuja", "con un lápiz"),
                 ("cava la tierra", "con una pala")),
         место=(("compra el pan", "en una tienda"), ("cura a los enfermos", "en un hospital"),
                ("enseña a los niños", "en una escuela"), ("cocina la comida", "en una cocina"),
                ("guardan los libros", "en una biblioteca")),
-        вещество=(("una mesa", "de madera"), ("una ventana", "de vidrio"), ("una llave", "de metal"),
-                  ("el pan", "de harina"), ("un jersey", "de lana")),
+        вещество=(("una mesa", "de madera", "hecha"), ("una ventana", "de vidrio", "hecha"),
+                  ("una llave", "de metal", "hecha"), ("el pan", "de harina", "hecho"),
+                  ("un jersey", "de lana", "hecho"), ("un libro", "de papel", "hecho")),
     ),
     "it": dict(
         орудие_воп="con che cosa si {д}? {о}.", место_воп="dove si {д}? {о}.",
-        вещество_воп="di che cosa è fatto {д}? {о}.",
+        вещество_воп="di che cosa è {пр} {д}? {о}.",
         орудие=(("scrive", "con una penna"), ("taglia il pane", "con un coltello"),
                 ("mangia la zuppa", "con un cucchiaio"), ("disegna", "con una matita"),
                 ("scava la terra", "con una vanga")),
         место=(("compra il pane", "in un negozio"), ("curano i malati", "in un ospedale"),
                ("insegna ai bambini", "in una scuola"), ("cucina il cibo", "in una cucina"),
                ("conservano i libri", "in una biblioteca")),
-        вещество=(("un tavolo", "di legno"), ("una finestra", "di vetro"), ("una chiave", "di metallo"),
-                  ("il pane", "di farina"), ("un maglione", "di lana")),
+        вещество=(("un tavolo", "di legno", "fatto"), ("una finestra", "di vetro", "fatta"),
+                  ("una chiave", "di metallo", "fatta"), ("il pane", "di farina", "fatto"),
+                  ("un maglione", "di lana", "fatto"), ("un libro", "di carta", "fatto")),
     ),
     "pt": dict(
         орудие_воп="com que se {д}? {о}.", место_воп="onde se {д}? {о}.",
-        вещество_воп="de que é feito {д}? {о}.",
+        вещество_воп="de que é {пр} {д}? {о}.",
         орудие=(("escreve", "com uma caneta"), ("corta o pão", "com uma faca"),
                 ("come a sopa", "com uma colher"), ("desenha", "com um lápis"),
                 ("cava a terra", "com uma pá")),
         место=(("compra o pão", "numa loja"), ("tratam os doentes", "num hospital"),
                ("ensina as crianças", "numa escola"), ("cozinha a comida", "numa cozinha"),
                ("guardam os livros", "numa biblioteca")),
-        вещество=(("uma mesa", "de madeira"), ("uma janela", "de vidro"), ("uma chave", "de metal"),
-                  ("o pão", "de farinha"), ("uma camisola", "de lã")),
+        вещество=(("uma mesa", "de madeira", "feita"), ("uma janela", "de vidro", "feita"),
+                  ("uma chave", "de metal", "feita"), ("o pão", "de farinha", "feito"),
+                  ("uma camisola", "de lã", "feita"), ("um livro", "de papel", "feito")),
     ),
     "nl": dict(
         орудие_воп="waarmee {д}? {о}.", место_воп="waar {д}? {о}.",
@@ -126,7 +140,7 @@
                ("onderwijst men kinderen", "in een school"), ("kookt men eten", "in een keuken"),
                ("bewaart men boeken", "in een bibliotheek")),
         вещество=(("een tafel", "van hout"), ("een raam", "van glas"), ("een sleutel", "van metaal"),
-                  ("brood", "van meel"), ("een trui", "van wol")),
+                  ("brood", "van meel"), ("een trui", "van wol"), ("een boek", "van papier")),
     ),
     "pl": dict(
         орудие_воп="czym się {д}? {о}.", место_воп="gdzie się {д}? {о}.",
@@ -138,7 +152,7 @@
                ("przechowuje książki", "w bibliotece")),
         вещество=(("zrobiony stół", "z drewna"), ("zrobione okno", "ze szkła"),
                   ("zrobiony klucz", "z metalu"), ("upieczony chleb", "z mąki"),
-                  ("zrobiony sweter", "z wełny")),
+                  ("zrobiony sweter", "z wełny"), ("zrobiona książka", "z papieru")),
     ),
 }
 
@@ -148,10 +162,27 @@ for _яз, _я in ЯЗЫКИ.items():
         assert len(_я[_т]) == len(ЯЗЫКИ["ru"][_т]), (_яз, _т, len(_я[_т]))
 
 
+# ПРИЧАСТИЕ ОБЪЯВЛЕНО ПРИ ВЕЩИ, А НЕ В РАМКЕ (08.09).
+#
+# Рамка вещества четырёх романских языков держала причастие ЛИТЕРАЛОМ — «est fait», «está
+# hecho», «è fatto», «é feito», — и оно не согласовывалось с родом вещи: «en quoi est fait
+# une table ?», «¿de qué está hecho una mesa?», «di che cosa è fatto una finestra?», «de que
+# é feito uma camisola?». Двенадцать страниц из двадцати были ложны по речи.
+#
+# РУССКИЙ И ПОЛЬСКИЙ БЫЛИ ПРАВЫ ВО ВСЕХ ПЯТИ, и не по удаче: они объявили причастие ВНУТРИ
+# пары («сделан стол», «сделано окно», «zrobiony stół», «zrobione okno») — там, где стои́т
+# вещь, чей род оно берёт.
+#
+#     ПРИЧАСТИЕ, ВЫНЕСЕННОЕ В РАМКУ, ПЕРЕСТАЁТ СОГЛАСОВЫВАТЬСЯ С ВЕЩЬЮ: рамка одна на все
+#     вещи, а род у каждой свой.
+#
+# Пара, объявившая третье поле, отдаёт его дыре «{пр}»; пара из двух полей живёт как жила.
 def показ(язык, тип, i):
     я = ЯЗЫКИ[язык]
-    д, о = я[тип][i % len(я[тип])]
-    return я[f"{тип}_воп"].format(д=д, о=о)
+    ряд = я[тип][i % len(я[тип])]
+    д, о = ряд[0], ряд[1]
+    пр = ряд[2] if len(ряд) > 2 else ""
+    return я[f"{тип}_воп"].format(д=д, о=о, пр=пр)
 
 
 def _все_показы():
@@ -176,8 +207,10 @@ def _все_показы():
 # после точки — нет.
 _ОБРАЗЦЫ = tuple(
     __import__("re").compile(
-        __import__("re").escape(я[f"{тип}_воп"].format(д=д, о="\x00")).replace("\x00", "[^.?!]+"))
-    for язык, я in ЯЗЫКИ.items() for тип in ТИПЫ for д, _ in я[тип])
+        __import__("re").escape(
+            я[f"{тип}_воп"].format(д=ряд[0], о="\x00", пр=(ряд[2] if len(ряд) > 2 else ""))
+        ).replace("\x00", "[^.?!]+"))
+    for язык, я in ЯЗЫКИ.items() for тип in ТИПЫ for ряд in я[тип])
 
 
 def судить(строка):
@@ -197,7 +230,7 @@ def _самопроверка():
             с = показ(язык, тип, 0)
             assert судить(с) == (True, True), (язык, тип, с)
         # МУТАНТ: ответ ЧУЖОГО типа при своём вопросе
-        д, _ = я["орудие"][0]
+        д = я["орудие"][0][0]
         _, чужой = я["место"][0]
         битая = я["орудие_воп"].format(д=д, о=чужой)
         assert судить(битая) == (True, False), (язык, битая)
