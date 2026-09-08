@@ -61,9 +61,12 @@ def числа(s):
      lambda k, n, r: math.comb(int(n), int(k)) == int(r)),
     (r"^выбор (\d+) из (\d+) даёт (\d+) способ\S*$",
      lambda k, n, r: math.comb(int(n), int(k)) == int(r)),
-    (r"^arranging (\d+) items gives (\d+) orders?$",
+    # ЕДИНИЦА ОБНАЖИЛА ДВА ОБРАЗЦА, ТРЕБОВАВШИХ МНОЖЕСТВЕННОГО (08.09): «arranging 1 item»
+    # и «1 порядок». Ряд расстановок шёл от трёх, и единица не выпадала ни разу — образец
+    # стоял непроверенным ровно до дня, когда дом показал границу.
+    (r"^arranging (\d+) items? gives (\d+) orders?$",
      lambda p, r: math.factorial(int(p)) == int(r)),
-    (r"^расстановка (\d+) предмет\S* даёт (\d+) порядк\S*$",
+    (r"^расстановка (\d+) предмет\S* даёт (\d+) порядо?к\S*$",
      lambda p, r: math.factorial(int(p)) == int(r)),
     (r"^choosing is not arranging: (\d+) from (\d+) gives (\d+), "
      r"arranging \1 of them gives (\d+)$",
