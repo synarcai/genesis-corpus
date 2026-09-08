@@ -66,8 +66,12 @@ def ру(слово, k):
 ШАГИ = [2, 3, 4, 5, 6]
 ЧИСЛО_ШАГОВ = [3, 2, 5, 4, 6, 1, 7]
 НАЧАЛА = [4, 3, 5, 1, 6, 2, 8, 7, 9, 10, 11]
+# ЕДИНИЦА СТОИ́Т В РЯДУ, И ЭТО ПОКАЗ, А НЕ КРАЙНИЙ СЛУЧАЙ: мера «единственное при единице»
+# назвала «disturbance» именем, показанным своду только во множественном (330 «disturbances»,
+# ни одного «1 disturbance»). Регулятор с ОДНИМ состоянием различает ОДНО возмущение — закон
+# необходимого разнообразия верен и здесь, и говорит о нуле бит.
 СОСТОЯНИЙ = [2, 4, 8, 16, 3, 5, 6, 10, 32, 12, 7, 9, 11, 13, 14, 15, 17,
-             18, 20, 24, 64, 25, 28]
+             18, 20, 24, 64, 25, 28, 1]
 ШИРИНА = 10
 
 
@@ -78,6 +82,9 @@ def контур(k):
     нач = НАЧАЛА[k % len(НАЧАЛА)]
     return нач + m * шаг, нач, шаг
 МАШИНЫ = [
+    # МАШИНА С ОДНИМ ПЕРЕХОДОМ — чтобы «1 transition» было ПОКАЗАНО, а не выведено
+    # («transitions» стояло в своде 12 раз, «1 transition» — ни разу).
+    (("A", "B"), (("A", "1", "B"),), "A", "1", "B"),
     (("A", "B", "C"), (("A", "1", "B"), ("B", "1", "C")), "A", "1 1", "C"),
     (("A", "B", "C"), (("A", "1", "B"), ("B", "0", "A")), "A", "1 0", "A"),
     (("A", "B", "C", "D"),
@@ -188,13 +195,20 @@ def pass_shows(pass_i):
         out.append(f"machine {' '.join(состояния)}; {текст}; from {старт} "
                    f"the input {вход} leads to {конец}.")
         out.append(f"machine {' '.join(состояния)}; {текст}; this machine "
-                   f"has {len(состояния)} states and {len(переходы)} "
-                   f"transitions.")
+                   f"has {len(состояния)} {by_count(len(состояния), 'states')} "
+                   f"and {len(переходы)} {by_count(len(переходы), 'transitions')}.")
         # --- закон необходимого разнообразия
-        бит = math.ceil(math.log2(n)) if n > 1 else 1
-        рег_en = f"a regulator with {n} states"
-        рег_ru = f"регулятор с {n} состояниями"
-        утв_р_en = f"{рег_en} can distinguish {n} disturbances."
+        # НОЛЬ БИТ ЕСТЬ ЧЕСТНЫЙ ОТВЕТ, А НЕ КРАЙНИЙ СЛУЧАЙ (08.09). Прежде здесь стояло
+        # «если n > 1, иначе 1» — оговорка на случай, которого жребий не давал: состояний
+        # было от двух. Ныне единица в ряду, и закон необходимого разнообразия говорит о ней
+        # прямо: чтобы различить ОДНО возмущение, регулятору не нужно НИ ОДНОГО бита.
+        бит = math.ceil(math.log2(n))
+        рег_en = f"a regulator with {n} {by_count(n, 'states')}"
+        # ТВОРИТЕЛЬНЫЙ ПРИ ЕДИНИЦЕ ОБЪЯВЛЕН, А НЕ ВЫВЕДЕН: «с 1 состоянием», а не
+        # «с 1 состояниями». Русская сторона держала здесь ЛИТЕРАЛ множественного, и
+        # правота его была та же, что у английской, — жребий не давал единицы.
+        рег_ru = f"регулятор с {n} {'состоянием' if n == 1 else 'состояниями'}"
+        утв_р_en = f"{рег_en} can distinguish {n} {by_count(n, 'disturbances')}."
         утв_р_ru = f"{рег_ru} различает {n} {ру('возмущение', n)}."
         out.append(утв_р_en)
         out.append(утв_р_ru)
@@ -205,16 +219,20 @@ def pass_shows(pass_i):
         # executor — an echo masks ignorance): two regulators in series
         # distinguish the PRODUCT of their states.
         m = 2 + (n + pass_i) % 5
-        out.append(f"two regulators with {n} and {m} states together distinguish {n * m} disturbances: {n} × {m} = {n * m}.")
+        out.append(f"two regulators with {n} and {m} {by_count(m, 'states')} together "
+                   f"distinguish {n * m} {by_count(n * m, 'disturbances')}: "
+                   f"{n} × {m} = {n * m}.")
         out.append(f"how many disturbances do two regulators with {n} and {m} states distinguish together? two regulators with {n} and {m} states together distinguish {n * m} disturbances: {n} × {m} = {n * m}.")
-        out.append(f"два регулятора с {n} и {m} состояниями вместе различают {n * m} {ру('возмущение', n * m)}: {n} × {m} = {n * m}.")
+        out.append(f"два регулятора с {n} и {m} "
+                   f"{'состоянием' if m == 1 else 'состояниями'} вместе различают "
+                   f"{n * m} {ру('возмущение', n * m)}: {n} × {m} = {n * m}.")
         out.append(f"сколько возмущений различают вместе два регулятора с {n} и {m} состояниями? два регулятора с {n} и {m} состояниями вместе различают {n * m} {ру('возмущение', n * m)}: {n} × {m} = {n * m}.")
         # THE PURPOSE IS A TAIL, NOT A SUBJECT: «how many bits does to distinguish
         # 2 disturbances a regulator need?» (holon's TSV 04.09) — the question
         # inverted a subject that was a clause; the subject is the regulator.
         # The statement fronts the purpose with a comma so that the answer
         # opens with the question's quantity (the house of the pair, М-145).
-        цель_en = f"to distinguish {n} disturbances"
+        цель_en = f"to distinguish {n} {by_count(n, 'disturbances')}"
         утв_б_en = f"{цель_en}, a regulator needs {бит} {by_count(бит, 'bits')}."
         out.append(утв_б_en)
         out.append(f"how many bits does a regulator need {цель_en}? {утв_б_en}")

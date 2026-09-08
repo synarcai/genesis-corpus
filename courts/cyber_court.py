@@ -71,25 +71,36 @@ from genesis import Unreadable, worlds  # noqa: E402
 ПЕРЕХОД = re.compile(r"on (\S+) ([A-Z]) goes to ([A-Z])")
 ВЕДЁТ = re.compile(r"^from ([A-Z]) the input ([\d ]+) leads to ([A-Z])$")
 СЧЁТ = re.compile(
-    r"^this machine has (\d+) states and (\d+) transitions$")
+    r"^this machine has (\d+) states? and (\d+) transitions?$")
 РАЗНООБРАЗИЕ = re.compile(
-    r"^(?:a regulator with (\d+) states can distinguish (\d+) disturbances"
-    r"|регулятор с (\d+) состояниями различает (\d+) \S+)$")
+    r"^(?:a regulator with (\d+) states? can distinguish (\d+) disturbances?"
+    r"|регулятор с (\d+) состояни\w+ различает (\d+) \S+)$")
 # ДВА РЕГУЛЯТОРА ВМЕСТЕ — ПРОИЗВЕДЕНИЕ СОСТОЯНИЙ (04.09): ответ считается.
 ДВА_РЕГУЛЯТОРА = re.compile(
-    r"^(?:two regulators with (\d+) and (\d+) states together distinguish (\d+) disturbances"
-    r"|два регулятора с (\d+) и (\d+) состояниями вместе различают (\d+) \S+): (\d+) × (\d+) = (\d+)\.?$")
+    r"^(?:two regulators with (\d+) and (\d+) states? together distinguish (\d+) disturbances?"
+    r"|два регулятора с (\d+) и (\d+) состояни\w+ вместе различают (\d+) \S+): (\d+) × (\d+) = (\d+)\.?$")
 БИТЫ = re.compile(
-    r"^(?:to distinguish (\d+) disturbances, a regulator needs (\d+) bits?"
+    r"^(?:to distinguish (\d+) disturbances?, a regulator needs (\d+) bits?"
     r"|чтобы различить (\d+) \S+, регулятору нужно (\d+) \S+)$")
 
 
 # РАЗНООБРАЗИЕ РЕГУЛЯТОРА ЕСТЬ ЛОГАРИФМ ЧИСЛА ВОЗМУЩЕНИЙ — закон
 # Эшби, и он СЧИТАЕТСЯ, а не принимается: чтобы различить N возмущений,
 # нужно ⌈log₂ N⌉ бит, и ни битом меньше.
+# ЕДИНИЦА ОБНАЖИЛА РАСХОЖДЕНИЕ ЗАГОЛОВКА СО СЧЁТОМ (08.09).
+#
+# Образец требовал МНОЖЕСТВЕННОГО («различить N возмущений», «N disturbances»), а счёт держал
+# пол в один бит — `max(1, …)`. Ни то, ни другое не проверялось: состояний в доме было от
+# двух, и единица не выпадала НИ РАЗУ. Когда дом стал показывать единицу — «чтобы различить
+# 1 возмущение, регулятору нужно 0 бит», — суд назвал ложью строку, верную по его же
+# объявленному закону ⌈log₂ N⌉.
+#
+#     ЗАКОН, ОБЪЯВЛЕННЫЙ В ЗАГОЛОВКЕ, И ЗАКОН, ЗАПИСАННЫЙ В СЧЁТЕ, РАЗОШЛИСЬ НА ЕДИНИЦЕ —
+#     И РАЗОШЛИСЬ МОЛЧА, ИБО ЕДИНИЦА НЕ ВЫПАДАЛА. Оговорка, поставленная «на всякий случай»,
+#     живёт непроверенной ровно до дня, когда случай настанет.
 РАЗЛИЧИТЬ = re.compile(
-    r"^(?:to distinguish (\d+) disturbances, a regulator needs (\d+) bits?"
-    r"|чтобы различить (\d+) возмущений, регулятору нужно (\d+) бит\w*)\.$")
+    r"^(?:to distinguish (\d+) disturbances?, a regulator needs (\d+) bits?"
+    r"|чтобы различить (\d+) возмущени\w*, регулятору нужно (\d+) бит\w*)\.$")
 
 
 def бит_хватает(строка):
@@ -101,7 +112,7 @@ def бит_хватает(строка):
     возмущений, бит = int(группы[0]), int(группы[1])
     if возмущений < 1:
         return None
-    нужно = max(1, (возмущений - 1).bit_length())
+    нужно = (возмущений - 1).bit_length()      # ⌈log₂ N⌉, и при N = 1 это НОЛЬ
     return бит == нужно
 
 
