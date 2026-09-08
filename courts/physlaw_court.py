@@ -77,8 +77,8 @@ def объявленные_размерности():
 # и всё, что не «давление»/«pressure» при этом отношении, есть ложь.
 ДАВЛЕНИЕ = re.compile(
     r"^(?:(\w+) = сила ÷ площадь; (\d+) \S+ ÷ (\d+) [^=]+= (\d+) \S+"
-    r"|(\w+) = force ÷ area; (\d+) newtons ÷ (\d+) square metres "
-    r"= (\d+) pascals)\.$")
+    r"|(\w+) = force ÷ area; (\d+) newtons? ÷ (\d+) square metres? "
+    r"= (\d+) pascals?)\.$")
 ИМЕНА_ДАВЛЕНИЯ = {"давление", "pressure"}
 # ЦЕЛОСТЬ — ВЕРДИКТ С ОСНОВАНИЕМ: «да» несёт частное, «нет» — остаток;
 # суд считает деление, а не верит слову.
@@ -87,8 +87,8 @@ def объявленные_размерности():
     r"(\d+) ÷ (\d+) = (\d+) паскал\S*"
     r"|нет: (\d+) ньютон\S* на (\d+) квадратн\S+ метр\S* не да[её]?т?ю?т? "
     r"целого давления, (\d+) не делится на (\d+) нацело"
-    r"|yes: (\d+) newtons over (\d+) square metres give (\d+) ÷ (\d+) = (\d+) pascals"
-    r"|no: (\d+) newtons over (\d+) square metres do not give a whole pressure, "
+    r"|yes: (\d+) newtons? over (\d+) square metres? give (\d+) ÷ (\d+) = (\d+) pascals?"
+    r"|no: (\d+) newtons? over (\d+) square metres? do not give a whole pressure, "
     r"(\d+) is not divisible by (\d+))\.$")
 ВОЛНА = re.compile(
     r"^(?:период — (\d+) \S+; частота — (\d+) [^;]+; (\d+) × (\d+) = 60"
@@ -108,9 +108,9 @@ from closedworld import Слой  # noqa: E402 — палата подаёт и�
 ЗАКОНЫ = laws.свод("physlaws")
 ЗАКОН_ДАВЛЕНИЯ = {"en": laws.ЗАКОНЫ["physlaws"][0][2], "ru": laws.ЗАКОНЫ["physlaws"][0][3]}
 ВОПРОС_ДАВЛЕНИЯ = re.compile(
-    r"^(?:what is the pressure of (\d+) newtons on (\d+) square metres"
+    r"^(?:what is the pressure of (\d+) newtons? on (\d+) square metres?"
     r"|каково давление силы (\d+) \S+ на (\d+) квадратн\S+ метр\S*"
-    r"|why is the pressure of (\d+) newtons on (\d+) square metres equal to (\d+) pascals"
+    r"|why is the pressure of (\d+) newtons? on (\d+) square metres? equal to (\d+) pascals"
     r"|почему давление силы (\d+) \S+ на (\d+) квадратн\S+ метр\S* равно (\d+) \S+)$")
 СВИД_ДАВЛЕНИЯ = re.compile(r"^(\d+) (?:newtons|\S+) ÷ (\d+) (?:square metres|квадратн\S+ метр\S*) = (\d+) (?:pascals|\S+)$")
 ВЫВОД_ДАВЛЕНИЯ = re.compile(r"^(?:the pressure is (\d+) pascals|давление — (\d+) \S+)$")

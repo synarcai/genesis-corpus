@@ -57,6 +57,7 @@ import sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import rugram  # noqa: E402
 import verbthings  # noqa: E402
+from plural import by_count  # noqa: E402
 from layer import emit_grouped  # noqa: E402
 
 ЦЕЛЬ = "datasets/genesis_everyday.txt"
@@ -716,11 +717,13 @@ def покупка(шаг):
         # ЗВЕНО ЦЕПИ (compose, e9): сумма покупки сказана звеном «а + б = всего».
         вон.append(f"{кто_en} bought {а} {по_счёту(а, en1)} and "
                    f"{б} {по_счёту(б, en2)} at the {место}; "
-                   f"{кто_en} bought {а + б} things in all: {а} + {б} = {а + б}.")
+                   f"{кто_en} bought {а + б} {by_count(а + б, 'things')} in all: "
+                   f"{а} + {б} = {а + б}.")
         вон.append(f"{кто_en} bought {а} {по_счёту(а, en1)} and "
                    f"{б} {по_счёту(б, en2)} at the {место}. "
                    f"how many things did {кто_en} buy? "
-                   f"{кто_en} bought {а + б} things in all: {а} + {б} = {а + б}.")
+                   f"{кто_en} bought {а + б} {by_count(а + б, 'things')} in all: "
+                   f"{а} + {б} = {а + б}.")
         вон.append(f"{кто_ru} купил{сф} {а} {_ру(ru1, а)} и "
                    f"{б} {_ру(ru2, б)} {предлог_ru(место)} "
                    f"{местный_ru(место)}; всего {кто_ru} купил{сф} "
@@ -850,8 +853,10 @@ def порядок_времени(шаг):
                    f"{друг_ru} отдыхал{сф2} {СУТКИ_RU[а][2]}; они "
                    f"делали это в одно время.")
     (широкое, много), (узкое, мало) = ДЛИТЕЛЬНОСТИ
-    вон.append(f"the {широкое} has {много} days and the {узкое} has "
-               f"{мало} days; the {широкое} has {много - мало} days "
+    вон.append(f"the {широкое} has {много} {by_count(много, 'days')} "
+                   f"and the {узкое} has "
+               f"{мало} {by_count(мало, 'days')}; the {широкое} has "
+                   f"{много - мало} {by_count(много - мало, 'days')} "
                f"more than the {узкое}.")
     вон.append(f"в неделе {много} {_ру('день', много)}, а в выходных "
                f"{мало} {_ру('день', мало)}; в неделе на "
@@ -1117,14 +1122,14 @@ def деньги_быта(шаг):
         сф = суффикс_рода(женский)
         вон.append(f"{кто_en} earned {плата} coins and paid {билет} "
                    f"{по_счёту(билет, 'coin')} for a ticket; "
-                   f"{кто_en} saved {осталось} coins.")
+                   f"{кто_en} saved {осталось} {by_count(осталось, 'coins')}.")
         вон.append(f"{кто_en} earns {плата} coins and pays {билет} "
                    f"{по_счёту(билет, 'coin')} for a ticket; "
-                   f"{кто_en} saves {осталось} coins.")
+                   f"{кто_en} saves {осталось} {by_count(осталось, 'coins')}.")
         вон.append(f"{кто_en} earned {плата} coins and paid {билет} "
                    f"{по_счёту(билет, 'coin')} for a ticket. how "
                    f"many coins did {кто_en} save? {кто_en} saved "
-                   f"{осталось} coins.")
+                   f"{осталось} {by_count(осталось, 'coins')}.")
         вон.append(f"{кто_ru} заработал{сф} {плата} "
                    f"{_ру('рубль', плата)} и заплатил{сф} {билет} "
                    f"{_ру('рубль', билет)} за билет; {кто_ru} "
@@ -1143,13 +1148,21 @@ def кванторы(шаг):
         for сколько in (0, 1, сколько_всех):
             if сколько > сколько_всех:
                 continue
-            вон.append(f"{сколько_всех} students are in the class, "
+            вон.append(f"{сколько_всех} {by_count(сколько_всех, 'students')} are in the class, "
                        f"and {сколько} "
                        f"{по_счёту(сколько, 'student')} "
                        f"{иметь(сколько)} a key; "
-                       f"{квантор(сколько, сколько_всех)} students "
+                       # СЛОВО ПОСЛЕ КВАНТОРА СОГЛАСУЕТСЯ С КВАНТОРОМ, А НЕ С ЧИСЛОМ (08.09).
+                   #
+                   # Правка законом дала «some student have a key» при одном ученике: имя
+                   # после «some» стои́т во множественном, каково бы ни было число. Ворота
+                   # это пропустили бы — сличение с прежним миром не пропустило.
+                   #
+                   #     НЕ ВСЯКОЕ ИМЯ РЯДОМ С ЧИСЛОМ ЕСТЬ ИМЯ СЧЁТНОЕ. Мера половинчатого
+                   #     закона считает МЕСТА, а не приговоры, и это одно из них.
+                   f"{квантор(сколько, сколько_всех)} students "
                        f"have a key.")
-            вон.append(f"{сколько_всех} students are in the class, "
+            вон.append(f"{сколько_всех} {by_count(сколько_всех, 'students')} are in the class, "
                        f"and {сколько} "
                        f"{по_счёту(сколько, 'student')} "
                        f"{иметь(сколько)} a key; "
@@ -1160,19 +1173,19 @@ def кванторы(шаг):
                        f"{_ру('книга', сколько)} прочитаны; "
                        f"{квантор_ru(сколько, сколько_всех)}.")
         по_книг = 1 + (шаг + i) % 4
-        вон.append(f"{сколько_всех} students are in the class, and "
+        вон.append(f"{сколько_всех} {by_count(сколько_всех, 'students')} are in the class, and "
                    f"each student has {по_книг} "
                    f"{по_счёту(по_книг, 'book')}; the class has "
-                   f"{сколько_всех * по_книг} books.")
-        вон.append(f"{сколько_всех} students are in the class, and "
+                   f"{сколько_всех * по_книг} {by_count(сколько_всех * по_книг, 'books')}.")
+        вон.append(f"{сколько_всех} {by_count(сколько_всех, 'students')} are in the class, and "
                    f"every student has {по_книг} "
                    f"{по_счёту(по_книг, 'book')}; the class has "
-                   f"{сколько_всех * по_книг} books.")
-        вон.append(f"{сколько_всех} students are in the class, and "
+                   f"{сколько_всех * по_книг} {by_count(сколько_всех * по_книг, 'books')}.")
+        вон.append(f"{сколько_всех} {by_count(сколько_всех, 'students')} are in the class, and "
                    f"each student has {по_книг} "
                    f"{по_счёту(по_книг, 'book')}. how many books "
                    f"does the class have? the class has "
-                   f"{сколько_всех * по_книг} books.")
+                   f"{сколько_всех * по_книг} {by_count(сколько_всех * по_книг, 'books')}.")
         en, ru = ВЕЩИ_РУССКИЕ[(шаг * 3 + i * 5) % len(ВЕЩИ_РУССКИЕ)]
         кто_en, _кто_ru, кто_род, _женский = _кто(шаг, i)
         # ГЛАГОЛ ИДЁТ ЗА ВЕЩЬЮ, А НЕ ВЕЩЬ ЗА ГЛАГОЛОМ (04.09). Рамка здесь
@@ -1299,7 +1312,7 @@ def люди_ролями(шаг):
     члены = [en for en, _ru in СЕМЬЯ]
     члены_ru = [ru for _en, ru in СЕМЬЯ]
     вон.append(f"the family has a {члены[0]}, a {члены[1]} and a "
-               f"{члены[2]}; the family has {len(СЕМЬЯ)} people.")
+               f"{члены[2]}; the family has {len(СЕМЬЯ)} {by_count(len(СЕМЬЯ), 'people')}.")
     вон.append(f"в семье {члены_ru[0]}, {члены_ru[1]} и "
                f"{члены_ru[2]}; в семье {len(СЕМЬЯ)} человека.")
     return вон
@@ -1316,7 +1329,7 @@ def частота_дел(шаг):
         кто_en, кто_ru, _род, женский = _кто(шаг, i)
         сф = суффикс_рода(женский)
         вон.append(f"{кто_en} worked on {сколько} "
-                   f"{по_счёту(сколько, 'day')} of {всего} days; "
+                   f"{по_счёту(сколько, 'day')} of {всего} {by_count(всего, 'days')}; "
                    f"{кто_en} {частота(сколько, всего)}.")
         вон.append(f"{кто_ru} работал{сф} {сколько} "
                    f"{_ру('день', сколько)} из {всего}; {кто_ru} "
