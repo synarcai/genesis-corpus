@@ -30,6 +30,7 @@ import sys
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
 import asking  # noqa: E402
 from genesis import Unreadable, worlds  # noqa: E402
+from plural import by_count  # noqa: E402
 import closedworld  # noqa: E402
 from closedworld import Слой  # noqa: E402 — палата подаёт имя мира
 
@@ -102,12 +103,18 @@ def фибо(n):
      lambda a, b: фибо(int(a)) == int(b)),
     (r"^число фибоначчи номер (\d+) равно (\d+)$",
      lambda a, b: фибо(int(a)) == int(b)),
-    (r"^linear search on (\d+) items? takes at most (\d+) steps?$",
-     lambda a, b: int(a) == int(b)),
+    # ДЫРА БЕЗ ПРОВЕРКИ БЛАГОСЛОВЛЯЕТ (08.09, ловушка согласования). Образцы брали форму
+    # необязательным «s» и не читали её вовсе: «linear search on 16 item» проходило истиной.
+    # Русская половина тех же образцов давно берёт формы перечислением («элемент(?:у|ам)»); ныне
+    # английская сверяет свою со счётом, а русская — с домом счёта.
+    (r"^linear search on (\d+) (items?) takes at most (\d+) (steps?)$",
+     lambda a, и, b, ш: int(a) == int(b) and и == by_count(int(a), "items")
+     and ш == by_count(int(b), "steps")),
     (r"^линейный поиск по (\d+) элемент(?:у|ам) требует не более (\d+) шаг(?:а|ов)$",
      lambda a, b: int(a) == int(b)),
-    (r"^binary search on (\d+) items? takes at most (\d+) steps?$",
-     lambda a, b: (math.ceil(math.log2(int(a))) if int(a) > 1 else 1) == int(b)),
+    (r"^binary search on (\d+) (items?) takes at most (\d+) (steps?)$",
+     lambda a, и, b, ш: (math.ceil(math.log2(int(a))) if int(a) > 1 else 1) == int(b)
+     and и == by_count(int(a), "items") and ш == by_count(int(b), "steps")),
     (r"^двоичный поиск по (\d+) элемент(?:у|ам) требует не более (\d+) шаг(?:а|ов)$",
      lambda a, b: (math.ceil(math.log2(int(a))) if int(a) > 1 else 1) == int(b)),
     (rf"^pushing {Ч} on a stack and popping gives (\d+)$",

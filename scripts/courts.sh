@@ -83,7 +83,7 @@ COURTS=("courts/arith_court.py" "courts/algo_court.py"
         "scripts/key_support.py"
         # ПОЛОВИНЧАТЫЙ ЗАКОН — место, где дом пишет множественное литералом рядом с
         # числом: правота такой строки держится жребием, а не законом.
-        "scripts/half_law.py" "scripts/unknown_name.py" "scripts/stale_world.py"
+        "scripts/half_law.py" "scripts/unknown_name.py" "scripts/stale_world.py" "scripts/agree_traps.py"
         # ПЕРЕПИСЬ ПОРОГОВ — пай аудита «меры и пороги»: всякое число в роли
         # рубежа с ответом «объявлено / храповик / вкус». Печатает число, не падает.
         "scripts/threshold_census.py"
