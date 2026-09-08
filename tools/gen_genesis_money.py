@@ -19,6 +19,7 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import rugram  # noqa: E402
 from layer import emit_grouped  # noqa: E402
 from plural import by_count  # noqa: E402
+from plural import with_article as _арт  # артикль по ЗВУКУ: «an apple»
 
 ЦЕЛЬ = "datasets/genesis_money.txt"
 КОРЕНЬ = pathlib.Path(__file__).resolve().parents[1]
@@ -81,13 +82,13 @@ def цены(шаг):
         p2 = 5 * (2 + (шаг * 5 + i * 13) % 50)
         k = 2 + (шаг + i) % 4
         if i % 2 == 0:
-            вон.append(f"a {т1[0]} costs {p1} {by_count(p1, 'cents')} and a {т2[0]} costs {p2} {by_count(p2, 'cents')}; together they cost {p1 + p2} {by_count(p1 + p2, 'cents')}: {p1} + {p2} = {p1 + p2}.")
+            вон.append(f"{_арт(т1[0])} costs {p1} {by_count(p1, 'cents')} and {_арт(т2[0])} costs {p2} {by_count(p2, 'cents')}; together they cost {p1 + p2} {by_count(p1 + p2, 'cents')}: {p1} + {p2} = {p1 + p2}.")
             вон.append(f"{т1[2]} стоит {p1} {ру('копейка', p1)}, а {т2[2]} стоит {p2} {ру('копейка', p2)}; вместе они стоят {p1 + p2} {ру('копейка', p1 + p2)}: {p1} + {p2} = {p1 + p2}.")
-            вон.append(f"a {т1[0]} costs {p1} {by_count(p1, 'cents')}. how much do {k} {т1[1]} cost? {p1} × {k} = {p1 * k} {by_count(p1 * k, 'cents')}.")
+            вон.append(f"{_арт(т1[0])} costs {p1} {by_count(p1, 'cents')}. how much do {k} {т1[1]} cost? {p1} × {k} = {p1 * k} {by_count(p1 * k, 'cents')}.")
         else:
-            вон.append(f"a {т1[0]} costs {p1} {by_count(p1, 'cents')} and a {т2[0]} costs {p2} {by_count(p2, 'cents')}. how much do they cost together? {p1} + {p2} = {p1 + p2} {by_count(p1 + p2, 'cents')}.")
+            вон.append(f"{_арт(т1[0])} costs {p1} {by_count(p1, 'cents')} and {_арт(т2[0])} costs {p2} {by_count(p2, 'cents')}. how much do they cost together? {p1} + {p2} = {p1 + p2} {by_count(p1 + p2, 'cents')}.")
             вон.append(f"{т1[2]} стоит {p1} {ру('копейка', p1)}, а {т2[2]} стоит {p2} {ру('копейка', p2)}. сколько они стоят вместе? {p1} + {p2} = {p1 + p2} {ру('копейка', p1 + p2)}.")
-            вон.append(f"a {т1[0]} costs {p1} {by_count(p1, 'cents')}; {k} {т1[1]} cost {p1 * k} {by_count(p1 * k, 'cents')}: {p1} × {k} = {p1 * k}.")
+            вон.append(f"{_арт(т1[0])} costs {p1} {by_count(p1, 'cents')}; {k} {т1[1]} cost {p1 * k} {by_count(p1 * k, 'cents')}: {p1} × {k} = {p1 * k}.")
     return вон
 
 
@@ -103,10 +104,10 @@ def сдача(шаг):
         заплатил = "заплатила" if род == "f" else "заплатил"
         получил = "получила" if род == "f" else "получил"
         if i % 2 == 0:
-            вон.append(f"{имя} paid {paid} {by_count(paid, 'cents')} for a {т[0]} that costs {p} {by_count(p, 'cents')}; {имя} got {сдача_} {by_count(сдача_, 'cents')} change: {paid} − {p} = {сдача_}.")
+            вон.append(f"{имя} paid {paid} {by_count(paid, 'cents')} for {_арт(т[0])} that costs {p} {by_count(p, 'cents')}; {имя} got {сдача_} {by_count(сдача_, 'cents')} change: {paid} − {p} = {сдача_}.")
             вон.append(f"{имя_ру} {заплатил} {paid} {ру('копейка', paid)}, а {т[2]} стоила {p} {ру('копейка', p)}; сдача — {сдача_} {ру('копейка', сдача_)}: {paid} − {p} = {сдача_}.")
         else:
-            вон.append(f"{имя} paid {paid} {by_count(paid, 'cents')} for a {т[0]} that costs {p} {by_count(p, 'cents')}. how much change did {имя} get? {paid} − {p} = {сдача_} {by_count(сдача_, 'cents')}.")
+            вон.append(f"{имя} paid {paid} {by_count(paid, 'cents')} for {_арт(т[0])} that costs {p} {by_count(p, 'cents')}. how much change did {имя} get? {paid} − {p} = {сдача_} {by_count(сдача_, 'cents')}.")
             вон.append(f"{имя_ру} {заплатил} {paid} {ру('копейка', paid)}, а {т[2]} стоила {p} {ру('копейка', p)}. сколько сдачи {получил} {имя_ру}? {paid} − {p} = {сдача_} {ру('копейка', сдача_)}.")
     return вон
 

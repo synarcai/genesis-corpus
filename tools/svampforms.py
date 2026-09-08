@@ -23,6 +23,7 @@ import re
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import plural as _plural  # noqa: E402 — английский артикль по звуку
 import plgram as _PL  # noqa: E402 — закон польской связки: один закон, один читатель
 import rugram as _RU  # noqa: E402 — закон русского прошедшего: один закон, один читатель
 _RUG = _RU
@@ -144,7 +145,7 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         время="{В1} {X} had {n} {Тn}. {В2} {он} got {k} more. how many {Тмн} does {он} have now? {s}: {n} + {k} = {s}.",
         кому="{X} had {n} {Тn}. {Он} gave {k} {Тk} to {Y}. how many {Тмн} does {X} have now? {r}: {n} − {k} = {r}.",
         у_него="{X} had {n} {Тn}. {Y} took {k} {Тk} from {него}. how many {Тмн} does {X} have now? {r}: {n} − {k} = {r}.",
-        единица="a {Т1} costs $ {n}. how much do {k} {Тмн} cost? $ {v}: {k} × {n} = {v}.",
+        единица="{Т1а} costs $ {n}. how much do {k} {Тмн} cost? $ {v}: {k} × {n} = {v}.",
         товар="{X} has {a} {Г1a} and {b} {Г2b}. how many {Г3мн} does {он} have in all? {s} {Г3s}: {a} + {b} = {s}.",
     ),
     "ru": dict(
@@ -576,7 +577,9 @@ def _поля(язык, i, j, Т, n, k, форма):
              # (`rugram.прошедшее`), а не собирается здесь.
              НАШЁЛ=(_RU.прошедшее("нашёл", X[1]) if язык == "ru" else ""),
              n=n, k=k, r=n - k, s=n + k, a=n, b=k, m=(k + 1) // 2, t=n + k - (k + 1) // 2,
-             Тn=вещь(n), Тk=вещь(k), Тr=вещь(n - k), Тs=вещь(n + k), Тмн=вещь(5), Т1=вещь(1), Тm=вещь((k + 1) // 2))
+             Тn=вещь(n), Тk=вещь(k), Тr=вещь(n - k), Тs=вещь(n + k), Тмн=вещь(5), Т1=вещь(1), Тm=вещь((k + 1) // 2),
+             # АНГЛИЙСКИЙ АРТИКЛЬ ГНЁТСЯ ЗВУКОМ СЛОВА, А НЕ БУКВОЙ РАМКИ: «a apple» ×8
+             Т1а=(_plural.with_article(вещь(1)) if язык == "en" else вещь(1)))
     # THE YEAR BENDS BY THE COUNT — the numberline house declares its forms (one table, two houses);
     # after the preposition the oblique form where the language bends it («in 5 Jahren»)
     import numberline as _NL
@@ -809,6 +812,7 @@ def _образцы():
                 "СК": alt(_слова_скрытого(язык, "несколько")), "СКЧ": alt(_слова_скрытого(язык, "часть")),
                 "Гn": alt(_годы(язык)), "Гk": alt(_годы(язык)), "Гs": alt(_годы(язык)),
                 "Тn": alt(вещи), "Тk": alt(вещи), "Тr": alt(вещи), "Тs": alt(вещи), "Тмн": alt(вещи), "Т1": alt(вещи1), "Тm": alt(вещи),
+                "Т1а": alt([f"{_plural.article(в)} {в}" for в in вещи1] if язык == "en" else вещи1),
                 "ГОЛОВА": alt(ГОЛОВЫ_ИТОГА[язык]), "Ц1": alt(ЦВЕТА[язык] + ЦВЕТА_М.get(язык, ())), "Ц2": alt(ЦВЕТА[язык] + ЦВЕТА_М.get(язык, ())),
                 "В1": alt(в for в, _ in ВРЕМЯ[язык]), "В2": alt(в for _, в in ВРЕМЯ[язык]),
                 "Г1a": alt(товары), "Г2b": alt(товары), "Г3мн": alt(товары), "Г3s": alt(товары)}

@@ -581,6 +581,36 @@ def count_form_index(pack, cls, k):
     return len(forms) - 1
 
 
+def артикль(pack, слово):
+    """Артикль перед словом — ПО ОБЪЯВЛЕНИЮ ПАКЕТА, а не по правилу движка.
+
+    АРТИКЛЬ ГНЁТСЯ ЗВУКОМ, А НЕ БУКВОЙ, и звук из письма не выводится: английское «u» чаще
+    звучит согласной («a unit», «a user»), а «h» бывает немой («an hour»). Пакет объявляет
+    обе стороны поимённо:
+
+        "article": {"default": "a", "before_vowel": "an",
+                    "vowel_letters": "aeio",
+                    "vowel_sound": ["hour", "honest"],
+                    "consonant_sound": ["unit", "user", "one", "european"]}
+
+    Пакет, `article` не объявивший, дыры артикля не имеет и не платит за неё ничем: движок
+    отдаёт пустую строку, и шаблон без этой дыры живёт как жил.
+    """
+    правило = pack.get("article") or {}
+    if not правило:
+        return ""
+    низ = str(слово).strip().lower()
+    голова = низ.split()[0] if низ else ""
+    if голова in set(правило.get("vowel_sound", ())):
+        return правило.get("before_vowel", "")
+    if голова in set(правило.get("consonant_sound", ())):
+        return правило.get("default", "")
+    гласные = правило.get("vowel_letters", "")
+    if голова[:1] and голова[:1] in гласные:
+        return правило.get("before_vowel", "")
+    return правило.get("default", "")
+
+
 def счётная_форма(pack, cls, формы_лексемы, k):
     """Форма лексемы при счёте k — С УЧЁТОМ ОБЪЯВЛЕННОГО СЧЁТНОГО СТОЛБЦА.
 
@@ -816,6 +846,10 @@ def gen_kind(pack, kind_name, kind, pass_i):
                     ctx[
                         f"lex:{cls_name}:{fname}"
                     ] = forms[fi]
+                    # АРТИКЛЬ ПРИ ЯЧЕЙКЕ, А НЕ ПРИ РАМКЕ: «an apple», «a wheel»
+                    ctx[
+                        f"art:{cls_name}:{fname}"
+                    ] = артикль(pack, forms[fi])
                 if cls.get(
                     "plural_by_count"
                 ):

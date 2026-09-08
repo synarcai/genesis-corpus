@@ -33,6 +33,14 @@ from plural import by_count  # noqa: E402
 ПАКЕТЫ = КОРЕНЬ / "tools" / "langpacks"
 
 
+def _с_артиклем(язык, слово):
+    """Английское слово со своим артиклем; прочие языки рамкой артикля не просят."""
+    if язык != "en":
+        return слово
+    import plural as _plural  # noqa: PLC0415 — дом английского языка
+    return _plural.with_article(слово)
+
+
 def _пакет(язык):
     return json.loads((ПАКЕТЫ / f"{язык}.json").read_text(encoding="utf-8"))
 
@@ -68,12 +76,12 @@ def formы_guess(формы, имя):
         держит={"has": "{X} has {A}.", "holds": "{X} holds {A}."},
         глаголы={"spends": ("−", "spends {B}"), "spent": ("−", "spent {B}"), "pays": ("−", "pays {B}"), "paid": ("−", "paid {B}"),
                  "earns": ("+", "earns {B}"), "earned": ("+", "earned {B}"), "saves": ("+", "saves {B}"), "saved": ("+", "saved {B}")},
-        акт="{он} {V}.", покупка="{он} buys a {Т} for {B}.",
+        акт="{он} {V}.", покупка="{он} buys {Та} for {B}.",
         теперь="how much money does {он} have now?", осталось="how much money is left?", имеет="how much money does {X} have?",
         леджер="{a} {S} {b} = {r} {м}.", мост="{r} {м} is {R}.",
         он={"m": "he", "f": "she"}, вещи=("pen", "book", "apple", "pencil", "cup"),
         # genus 3 of g1 (e9): a rate toward a goal, a sum of products
-        ставка="{X} has {A}. {он} earns {B} per day. a {Ц} costs {C}. how many days does {он} need?",
+        ставка="{X} has {A}. {он} earns {B} per day. {Ца} costs {C}. how many days does {он} need?",
         цели=("bike", "phone", "guitar", "tablet", "camera"),
         покупка1="{X} buys {n1} {Т1} at {P1} each. how much does {он} pay in all?",
         покупка2="{X} buys {n1} {Т1} at {P1} each and {n2} {Т2} at {P2} each. how much does {он} pay in all?",
@@ -195,7 +203,10 @@ def страница(язык, сем, имя, держ=None, k=0, A=None, B=Non
         # whole units: a, b, c in dollars/roubles/euros; the days are whole (c − a divisible by b)
         a, b, c = A[0], B[0], п_C
         r1 = c - a; n = r1 // b
-        утв = я["ставка"].format(A=сумма(язык, a, None, k), B=сумма(язык, b, None, k), C=сумма(язык, c, None, k), Ц=я["цели"][вещь], ему=я.get("ему", {}).get(пол, ""), **з)
+        _цель = я["цели"][вещь]
+        утв = я["ставка"].format(A=сумма(язык, a, None, k), B=сумма(язык, b, None, k),
+                                 C=сумма(язык, c, None, k), Ц=_цель, Ца=_с_артиклем(язык, _цель),
+                                 ему=я.get("ему", {}).get(пол, ""), **з)
         return f"{утв} {я['леджер_ставки'].format(c=c, a=a, r1=r1, b=b, n=n)}"
     if сем == "покупка3":
         # THREE GOODS, THE PRICE OF EACH IN ITS OWN SENTENCE (e9's profile,
@@ -231,7 +242,10 @@ def страница(язык, сем, имя, держ=None, k=0, A=None, B=Non
     b = B[0] * 100 + B[1]
     if сем == "покупка":
         знак = "−"
-        акт = я["покупка"].format(Т=я["вещи"][вещь], B=сумма(язык, *B, k), **з)
+        # АРТИКЛЬ ГНЁТСЯ ЗВУКОМ ВЕЩИ, А НЕ БУКВОЙ РАМКИ: «a apple» ×4
+        _вещь = я["вещи"][вещь]
+        акт = я["покупка"].format(Т=_вещь, Та=_с_артиклем(язык, _вещь),
+                                  B=сумма(язык, *B, k), **з)
     else:
         знак, фраза = _глагол(язык, глагол, пол)
         акт = я["акт"].format(V=фраза.format(B=сумма(язык, *B, k)), **з)
@@ -269,6 +283,10 @@ def _дыры(язык):
             "V": "(" + "|".join(sorted(set(фразы), key=lambda с: (-len(с), с))) + ")", "Т": "(" + _альт(я["вещи"]) + ")",
             "a": r"(\d+)", "b": r"(\d+)", "r": r"(\d+)", "S": r"([−+])", "м": {"ru": r"(копе(?:йка|йки|ек))", "en": r"(cents?)", "de": r"(Cent)"}[язык],
             "C": "(" + _ЦЕЛАЯ[язык] + ")", "Ц": "(" + _альт(я.get("цели", ())) + ")", "ему": "(" + _альт(я.get("ему", {"m": "—"}).values()) + ")",
+            # ВЕЩЬ СО СВОИМ АРТИКЛЕМ — отдельная дыра: артикль гнётся ЗВУКОМ вещи, и образец,
+            # державший «a» литералом, назвал бы «an apple» чужой строкой.
+            "Та": "(" + _альт([_с_артиклем(язык, в) for в in я["вещи"]]) + ")",
+            "Ца": "(" + _альт([_с_артиклем(язык, ц) for ц in я.get("цели", ())]) + ")",
             "c": r"(\d+)", "r1": r"(\d+)", "n": r"(\d+)", "n1": r"(\d+)", "n2": r"(\d+)",
             "Т1": "(" + _альт(товары) + ")", "Т2": "(" + _альт(товары) + ")", "Т3": "(" + _альт(товары) + ")",
             "P1": "(" + _СУММА[язык] + ")", "P2": "(" + _СУММА[язык] + ")", "P3": "(" + _СУММА[язык] + ")", "n3": r"(\d+)",

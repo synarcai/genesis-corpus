@@ -35,6 +35,7 @@ def артикль(слово):
 from layer import emit
 
 
+from plural import with_article as _арт  # английский артикль гнётся ЗВУКОМ: «an hour»
 import json
 import pathlib
 import sys
@@ -67,7 +68,7 @@ for _имя in ПОРЯДОК:
 
 BARE = [
     "the {one} is a unit.",
-    "what is a {one}?",
+    "what is {one_a}?",
     "{ru_bare} — это мера.",
 ]
 
@@ -92,7 +93,7 @@ def pass_shows(pass_i):
         )
     for one, _, _, _, ru_nom, _ in FACTS:
         for tpl in BARE:
-            out.append(tpl.format(one=one, ru_bare=ru_nom))
+            out.append(tpl.format(one=one, one_a=_арт(one), ru_bare=ru_nom))
     return out
 
 

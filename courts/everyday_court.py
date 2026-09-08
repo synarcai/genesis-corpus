@@ -47,6 +47,7 @@
 
 import pathlib
 import re
+import plural as _plural  # английский артикль гнётся ЗВУКОМ: «an apple», «a wheel»
 import sys
 
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
@@ -471,8 +472,11 @@ _вместе, _г = onepattern.вместе, onepattern.захваты
     r"^(\S+) и (\S+) вместе зовутся (\S+)\.$")
 РОЛИ_RU_ВОПРОС = re.compile(
     r"^кто такие (\S+)\? (\S+) и (\S+) вместе зовутся \1\.$")
-РОЛИ_EN_ОБРАЗЕЦ = re.compile(r"^a ([A-Za-z]+) and a ([A-Za-z]+) together are called ([A-Za-z]+)\.$")
-РОЛИ_EN_ВОПРОС = re.compile(r"^what are ([A-Za-z]+)\? a ([A-Za-z]+) and a ([A-Za-z]+) together are called \1\.$")
+# АРТИКЛЬ В ОБРАЗЦЕ ЕСТЬ ДЫРА, А НЕ БУКВА (08.09): английский гнёт его ЗВУКОМ следующего
+# слова — «an apple», «an onion», «an orange», — и образец, державший «a» литералом, назвал
+# бы починенную страницу чужой. Суд читает обе формы и сверяет каждую с законом дома языка.
+РОЛИ_EN_ОБРАЗЕЦ = re.compile(r"^(an?) ([A-Za-z]+) and (an?) ([A-Za-z]+) together are called ([A-Za-z]+)\.$")
+РОЛИ_EN_ВОПРОС = re.compile(r"^what are ([A-Za-z]+)\? (an?) ([A-Za-z]+) and (an?) ([A-Za-z]+) together are called \1\.$")
 # КЛАСС СПИСКОМ: «люди: мужчина, женщина, …» / «people: man, woman, …» —
 # перечень обязан совпасть с объявленными членами класса (дом.РОЛИ) как
 # множество, без повторов.
@@ -1407,16 +1411,18 @@ def судить(строка):
         return True, _РОЛИ_RU[(ру1, ру2)] == целое
     m = РОЛИ_EN_ВОПРОС.match(с)
     if m:
-        целое, ч1, ч2 = m.groups()
+        целое, а1, ч1, а2, ч2 = m.groups()
         if (ч1, ч2) not in _ПАРЫ_EN:
             return False, False
-        return True, _ПАРЫ_EN[(ч1, ч2)] == целое
+        return True, (_ПАРЫ_EN[(ч1, ч2)] == целое
+                      and а1 == _plural.article(ч1) and а2 == _plural.article(ч2))
     m = РОЛИ_EN_ОБРАЗЕЦ.match(с)
     if m:
-        ч1, ч2, целое = m.groups()
+        а1, ч1, а2, ч2, целое = m.groups()
         if (ч1, ч2) not in _ПАРЫ_EN:
             return False, False
-        return True, _ПАРЫ_EN[(ч1, ч2)] == целое
+        return True, (_ПАРЫ_EN[(ч1, ч2)] == целое
+                      and а1 == _plural.article(ч1) and а2 == _plural.article(ч2))
     m = КЛАСС_СПИСКОМ.match(с)
     if m:
         имя, члены = m.group(1), m.group(2).split(", ")

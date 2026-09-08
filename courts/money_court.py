@@ -12,6 +12,7 @@
 import json
 import pathlib
 import re
+import plural as _plural  # английский артикль гнётся ЗВУКОМ следующего слова
 import sys
 
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
@@ -28,6 +29,10 @@ _RU = json.loads((КОРЕНЬ / "tools" / "langpacks" / "ru.json").read_text(en
 ИМЕНА_EN = frozenset(_EN["person_names"])
 ИМЕНА_RU = {n.capitalize(): ф["gender"] for n, ф in _RU["person_forms"].items()}
 Ч = r"(\d+)"
+# АРТИКЛЬ В ОБРАЗЦЕ ЕСТЬ ДЫРА, А НЕ БУКВА: английский гнёт его ЗВУКОМ следующего слова
+# («an apple costs 85 cents»), и образец с литеральным «a» назвал бы починенную страницу
+# ложью. Форму сверяет вердикт законом дома языка, а не образец видом строки.
+А = r"(?:an?)"
 Д = r"(\d+)\.(\d\d)"
 # a price in either writing: «16.50 dollars» or «$16.50» — two number groups either way
 ДЛ = r"(?:\$(\d+)\.(\d\d)|(\d+)\.(\d\d) dollars)"
@@ -59,23 +64,23 @@ def _мост(d, c, всего, d2, s100, s100b, c2, всего2):
      lambda d, р, c, к, d2, s1, s2, c2, в2, к2: _мост(d, c, в2, d2, s1, s2, c2, в2) and _коп(d, р) and _коп(c, к) and _коп(в2, к2)),
     (rf"^{Ч} cents is (?:\$(\d+)\.(\d\d)|(\d+) dollars (\d+) cents): {Ч} × 100 = {Ч}, {Ч} − {Ч} = {Ч}\.$",
      lambda всего, d, c, d2, s1, в2, s2, c2: всего == d * 100 + c and d2 == d and s1 == s2 == d * 100 and в2 == всего and c2 == c),
-    (rf"^a {С} costs {Ч} cents and a {С} costs {Ч} cents; together they cost {Ч} cents: {Ч} \+ {Ч} = {Ч}\.$",
+    (rf"^{А} {С} costs {Ч} cents and {А} {С} costs {Ч} cents; together they cost {Ч} cents: {Ч} \+ {Ч} = {Ч}\.$",
      lambda т1, p1, т2, p2, s, o1, o2, s2: (o1, o2) == (p1, p2) and s == s2 == p1 + p2),
-    (rf"^a {С} costs {Ч} cents and a {С} costs {Ч} cents\. how much do they cost together\? {Ч} \+ {Ч} = {Ч} cents\.$",
+    (rf"^{А} {С} costs {Ч} cents and {А} {С} costs {Ч} cents\. how much do they cost together\? {Ч} \+ {Ч} = {Ч} cents\.$",
      lambda т1, p1, т2, p2, o1, o2, s2: (o1, o2) == (p1, p2) and s2 == p1 + p2),
     (rf"^{СЛ} стоит {Ч} {СЛ}, а {СЛ} стоит {Ч} {СЛ}; вместе они стоят {Ч} {СЛ}: {Ч} \+ {Ч} = {Ч}\.$",
      lambda т1, p1, к1, т2, p2, к2, s, к3, o1, o2, s2: (o1, o2) == (p1, p2) and s == s2 == p1 + p2 and _коп(p1, к1) and _коп(p2, к2) and _коп(s, к3)),
     (rf"^{СЛ} стоит {Ч} {СЛ}, а {СЛ} стоит {Ч} {СЛ}\. сколько они стоят вместе\? {Ч} \+ {Ч} = {Ч} {СЛ}\.$",
      lambda т1, p1, к1, т2, p2, к2, o1, o2, s2, к3: (o1, o2) == (p1, p2) and s2 == p1 + p2 and _коп(p1, к1) and _коп(p2, к2) and _коп(s2, к3)),
-    (rf"^a {С} costs {Ч} cents\. how much do {Ч} {С} cost\? {Ч} × {Ч} = {Ч} cents\.$",
+    (rf"^{А} {С} costs {Ч} cents\. how much do {Ч} {С} cost\? {Ч} × {Ч} = {Ч} cents\.$",
      lambda т, p, k, тs, o1, o2, s: (o1, o2) == (p, k) and s == p * k),
-    (rf"^a {С} costs {Ч} cents; {Ч} {С} cost {Ч} cents: {Ч} × {Ч} = {Ч}\.$",
+    (rf"^{А} {С} costs {Ч} cents; {Ч} {С} cost {Ч} cents: {Ч} × {Ч} = {Ч}\.$",
      lambda т, p, k, тs, s, o1, o2, s2: (o1, o2) == (p, k) and s == s2 == p * k),
     # БЕЗ ОБРАТНЫХ ССЫЛОК: семейство сливает образцы в одно перечисление, и «\1»
     # указывало бы на чужую группу — имя ловится дважды и сверяется судьёй
-    (rf"^{С} paid {Ч} cents for a {С} that costs {Ч} cents; {С} got {Ч} cents change: {Ч} − {Ч} = {Ч}\.$",
+    (rf"^{С} paid {Ч} cents for {А} {С} that costs {Ч} cents; {С} got {Ч} cents change: {Ч} − {Ч} = {Ч}\.$",
      lambda имя, paid, т, p, имя2, сд, o1, o2, сд2: имя in ИМЕНА_EN and имя2 == имя and (o1, o2) == (paid, p) and сд == сд2 == paid - p > 0),
-    (rf"^{С} paid {Ч} cents for a {С} that costs {Ч} cents\. how much change did {С} get\? {Ч} − {Ч} = {Ч} cents\.$",
+    (rf"^{С} paid {Ч} cents for {А} {С} that costs {Ч} cents\. how much change did {С} get\? {Ч} − {Ч} = {Ч} cents\.$",
      lambda имя, paid, т, p, имя2, o1, o2, сд2: имя in ИМЕНА_EN and имя2 == имя and (o1, o2) == (paid, p) and сд2 == paid - p > 0),
     (rf"^([А-ЯЁ][а-яё]+) (заплатил|заплатила) {Ч} {СЛ}, а {СЛ} стоила {Ч} {СЛ}; сдача — {Ч} {СЛ}: {Ч} − {Ч} = {Ч}\.$",
      lambda имя, г, paid, к1, т, p, к2, сд, к3, o1, o2, сд2: имя in ИМЕНА_RU and (г == "заплатила") == (ИМЕНА_RU[имя] == "f") and (o1, o2) == (paid, p) and сд == сд2 == paid - p > 0 and _коп(paid, к1) and _коп(p, к2) and _коп(сд, к3)),
@@ -142,6 +147,10 @@ def _судить(строка):
     for образец, судья in ПРАВИЛА:
         m = образец.match(с)
         if m:
+            # АРТИКЛЬ ЧИТАЕТСЯ ПОСЛЕ ОБРАЗЦА, ИБО В ОБРАЗЦЕ ОН ДЫРА: «a apple costs 85 cents»
+            # прошло бы дырой и было бы ложью по речи. Закон — у дома английского языка.
+            if not _plural.article_ok(с):
+                return True, False
             # ПАРА О ТОМ ЖЕ (дом пары, М-145): ответ открывается первой величиной вопроса
             пара = asking.пара(с)
             if пара and not asking.о_том_же(пара[0], пара[1]):

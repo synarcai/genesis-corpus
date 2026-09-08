@@ -58,6 +58,7 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import rugram  # noqa: E402
 import verbthings  # noqa: E402
 from plural import by_count  # noqa: E402
+from plural import with_article as _арт  # английский артикль гнётся ЗВУКОМ
 from layer import emit_grouped  # noqa: E402
 
 ЦЕЛЬ = "datasets/genesis_everyday.txt"
@@ -1312,14 +1313,14 @@ def люди_ролями(шаг):
         вон.append(f"кто такие {ру_целое}? {ру1} и {ру2} вместе "
                    f"зовутся {ру_целое}.")
         # THE SAME PAIR IN ENGLISH — the question of the class in both languages
-        вон.append(f"a {ч1} and a {ч2} together are called {множественное(целое)}.")
-        вон.append(f"what are {множественное(целое)}? a {ч1} and a {ч2} together are called {множественное(целое)}.")
+        вон.append(f"{_арт(ч1)} and {_арт(ч2)} together are called {множественное(целое)}.")
+        вон.append(f"what are {множественное(целое)}? {_арт(ч1)} and {_арт(ч2)} together are called {множественное(целое)}.")
     # classes of things, five pairs each, the same two forms in both languages
     for ч1, ч2, целое, ру1, ру2, ру_целое in КЛАССЫ:
         вон.append(f"{ру1} и {ру2} вместе зовутся {ру_целое}.")
         вон.append(f"кто такие {ру_целое}? {ру1} и {ру2} вместе зовутся {ру_целое}.")
-        вон.append(f"a {ч1} and a {ч2} together are called {целое}.")
-        вон.append(f"what are {целое}? a {ч1} and a {ч2} together are called {целое}.")
+        вон.append(f"{_арт(ч1)} and {_арт(ч2)} together are called {целое}.")
+        вон.append(f"what are {целое}? {_арт(ч1)} and {_арт(ч2)} together are called {целое}.")
     # THE CLASS AS A LIST, ONE LINE (holon 04.09: «кто такие люди?» answered
     # by fifty different pairs — all true, the tellings diverging by content;
     # the genus «members of a class» wants the class shown whole).

@@ -74,3 +74,61 @@ def by_count(n, plural):
     """The form a count of `n` takes. One is singular; all else plural
     — including zero, which English counts as plural («0 eggs»)."""
     return singular(plural) if abs(n) == 1 else plural
+
+
+# АРТИКЛЬ ГНЁТСЯ ЗВУКОМ, А НЕ БУКВОЙ (08.09).
+#
+# Сто шесть строк свода в семи мирах писали «a apple», «a egg», «a hour», «a insect», «a eye»,
+# «a axe», «a onion», «a orange». Дома ставили артикль ЛИТЕРАЛОМ перед дырой имени — тот же
+# род, что причастие в доме ролей и связка в доме держания: рамка одна на все имена, а звук
+# у каждого свой.
+#
+#     АРТИКЛЬ, ВЫНЕСЕННЫЙ В РАМКУ, ПЕРЕСТАЁТ СЛЫШАТЬ СЛОВО, ПЕРЕД КОТОРЫМ СТОИТ.
+#
+# ЗВУК НЕ ВЫВОДИТСЯ ИЗ ПИСЬМА, И ОБЕ СТОРОНЫ ЭТОГО ОБЪЯВЛЕНЫ ПОИМЁННО:
+#
+#   · буква гласная, звук согласный — «a unit», «a user», «a one-shot», «a European»:
+#     английское «u» чаще звучит как /juː/, и правило по букве дало бы «an unit»;
+#   · буква согласная, звук гласный — «an hour», «an honest answer»: «h» бывает немой.
+#
+# Слово, не названное ни в одном списке, судится ПЕРВОЙ БУКВОЙ, и это честная граница:
+# a/e/i/o в начале английского слова звучат гласной почти всегда, а «u» из признака выведено
+# вовсе — оттого ошибка возможна лишь на слове, которого дом ещё не писал.
+СОГЛАСНЫЙ_ЗВУК = frozenset((
+    "one", "once", "euro", "euros", "european", "unit", "units", "user", "users",
+    "unique", "universal", "university", "uniform", "union", "useful", "usual", "utility",
+))
+ГЛАСНЫЙ_ЗВУК = frozenset(("hour", "hours", "honest", "honestly", "honour", "heir"))
+
+
+def article(word):
+    """«a» или «an» перед словом — по ЗВУКУ, как его объявил английский."""
+    низ = str(word).strip().lower()
+    if not низ:
+        return "a"
+    голова = низ.split()[0].strip("«»\"'(),.;:")
+    if голова in ГЛАСНЫЙ_ЗВУК:
+        return "an"
+    if голова in СОГЛАСНЫЙ_ЗВУК:
+        return "a"
+    return "an" if голова[:1] in "aeio" else "a"
+
+
+def with_article(word):
+    """Слово со своим артиклем: «an eye», «a wheel»."""
+    return f"{article(word)} {word}"
+
+
+_ПАРА_АРТИКЛЯ = __import__("re").compile(r"\b(an?) ([a-z]+)\b")
+
+
+def article_ok(line):
+    """False — в английской строке стои́т «a» там, где звук требует «an» (или наоборот).
+
+    ЧИТАЕТСЯ ПОСЛЕ ВЕРДИКТА, А НЕ В ОБРАЗЦЕ: артикль в образце суда есть ДЫРА (иначе образец
+    не покрыл бы обеих форм), и проверить его может лишь тот, кто знает слово за ним.
+    """
+    for артикль, слово in _ПАРА_АРТИКЛЯ.findall(str(line).lower()):
+        if артикль != article(слово):
+            return False
+    return True

@@ -781,9 +781,18 @@ _ПАКЕТ_EN = json.loads((КОРЕНЬ / "tools" / "langpacks" / "en.json")
 # …AND the connectives of reasoning («so the answer is 16.»): a reasoned answer
 # opens its inference with a declared connective, never a free word
 _СВЯЗКИ_EN = _ПАКЕТ_EN.get("connectives") or {}
+# ОБЕ ФОРМЫ АРТИКЛЯ СУТЬ ОДИН ЗАЧИН (08.09). Пакет объявлял «a» и «the», но не «an», и суд
+# читал вторую форму английского неопределённого артикля как ОБРЕЗОК ИМЕНИ — тот самый закон
+# усечения, ради которого он и написан. «an axe and a spade together are called tools» звалось
+# ложью, покуда стояло «a axe» — и стало ложью ровно тогда, когда его починили.
+#
+#     ЗАЧИН, ОБЪЯВЛЕННЫЙ ОДНОЙ ФОРМОЙ АРТИКЛЯ, ЗОВЁТ ВТОРУЮ ОБРЕЗКОМ ИМЕНИ. Суд, стерегущий
+#     усечение, обязан знать все формы служебного слова, иначе он казнит правописание.
+_АРТИКЛЬ_EN = frozenset(("a", "an"))
 ЗАЧИНЫ_EN = (frozenset(_ПАКЕТ_EN.get("sentence_openers", ()))
              | frozenset(w for w in __import__("asking").ЗАЧИНЫ if w.isascii())
-             | frozenset(list(_СВЯЗКИ_EN.keys()) + list(_СВЯЗКИ_EN.values())))
+             | frozenset(list(_СВЯЗКИ_EN.keys()) + list(_СВЯЗКИ_EN.values()))
+             | _АРТИКЛЬ_EN)
 КРАТНОСТИ_EN = frozenset(_ПАКЕТ_EN.get("compare_words", ()))
 _МЕСТО_ИМЕНИ = re.compile(r"(?:^|(?<=[.?!] ))([a-z]+)|\b(?:does|did|and)\s+([a-z]+)|\bthan\s+([a-z]+)")
 

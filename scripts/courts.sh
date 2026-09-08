@@ -51,7 +51,7 @@ COURTS=("courts/arith_court.py" "courts/algo_court.py"
         # их не считал — ноль с укороченным знаменателем (М-264). Считает.
         "courts/behavior_court.py" "courts/topics_court.py" "courts/nature_court.py" "courts/links_court.py" "courts/scale_court.py" "courts/opposites_court.py" "courts/roles_court.py" "courts/joints_court.py" "courts/dialogue_court.py" "courts/worldfacts_court.py" "courts/infer_court.py" "scripts/circle_probe.py" "scripts/agree_probe.py" "scripts/shelf_declare.py" "scripts/house_reach.py" "scripts/head_census.py" "scripts/form_matrix.py"
         # …и четыре дома рассуждения, севшие 04.09 после снятия заморозки
-        "courts/disj_court.py" "courts/indu_court.py" "courts/houseshows_court.py" "courts/analog_court.py" "courts/reply_court.py"
+        "courts/disj_court.py" "courts/indu_court.py" "courts/houseshows_court.py" "courts/article_court.py" "courts/analog_court.py" "courts/reply_court.py"
         # ПАРА РЕГИСТРА — условие ПОКУПКИ, названное holon: вежливая строка обязана
         # отличаться от неформальной только обращением, иначе анти-унификация
         # вынесет в дыру лишнее и закон выйдет шире дома. Рубеж 0 пороков.
@@ -83,7 +83,7 @@ COURTS=("courts/arith_court.py" "courts/algo_court.py"
         "scripts/key_support.py"
         # ПОЛОВИНЧАТЫЙ ЗАКОН — место, где дом пишет множественное литералом рядом с
         # числом: правота такой строки держится жребием, а не законом.
-        "scripts/half_law.py" "scripts/unknown_name.py" "scripts/stale_world.py" "scripts/agree_traps.py" "scripts/wrong_sign.py" "scripts/debt_mark.py" "scripts/copula_band.py" "scripts/past_gender.py" "scripts/word_once.py"
+        "scripts/half_law.py" "scripts/unknown_name.py" "scripts/stale_world.py" "scripts/agree_traps.py" "scripts/wrong_sign.py" "scripts/debt_mark.py" "scripts/copula_band.py" "scripts/past_gender.py" "scripts/word_once.py" "scripts/article_sound.py"
         # ПЕРЕПИСЬ ПОРОГОВ — пай аудита «меры и пороги»: всякое число в роли
         # рубежа с ответом «объявлено / храповик / вкус». Печатает число, не падает.
         "scripts/threshold_census.py"

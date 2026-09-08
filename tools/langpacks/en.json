@@ -381,9 +381,9 @@
         "the yard is a thing.",
         "the zebra is a thing.",
         "the jar is a thing.",
-        "a {lex:noun_count:one} is a thing.",
-        "a {lex:noun_irreg:one} is a thing.",
-        "what is {lex:noun_count:one}? a {lex:noun_count:one} is a thing."
+        "{art:noun_count:one} {lex:noun_count:one} is a thing.",
+        "{art:noun_irreg:one} {lex:noun_irreg:one} is a thing.",
+        "what is {lex:noun_count:one}? {art:noun_count:one} {lex:noun_count:one} is a thing."
       ]
     },
     "refusals": {
@@ -1819,5 +1819,38 @@
     "t",
     "ve"
   ],
-  "contraction_tails_comment": "THE TAILS OF CONTRACTIONS (03.09): «'d», «'ll», «'m», «'re», «'s», «'t», «'ve» are listed among the function words for the reading of «it's», «don't» — but they never stand alone as words, and as SIGNS of the language they steal ties: Turkish «ve» (and) and the variable «m» read as English. The sign of the language (tools/langsign.py) leaves them out."
+  "contraction_tails_comment": "THE TAILS OF CONTRACTIONS (03.09): «'d», «'ll», «'m», «'re», «'s», «'t», «'ve» are listed among the function words for the reading of «it's», «don't» — but they never stand alone as words, and as SIGNS of the language they steal ties: Turkish «ve» (and) and the variable «m» read as English. The sign of the language (tools/langsign.py) leaves them out.",
+  "article": {
+    "comment": "АРТИКЛЬ ГНЁТСЯ ЗВУКОМ, А НЕ БУКВОЙ. Слой писал «a apple», «a egg», «a hour» — двадцать девять строк, — ибо рамка держала «a» литералом. Обе стороны объявлены поимённо: «u» звучит согласной («a unit», «a user»), «h» бывает немой («an hour»).",
+    "default": "a",
+    "before_vowel": "an",
+    "vowel_letters": "aeio",
+    "vowel_sound": [
+      "hour",
+      "hours",
+      "honest",
+      "honestly",
+      "honour",
+      "heir"
+    ],
+    "consonant_sound": [
+      "one",
+      "once",
+      "euro",
+      "euros",
+      "european",
+      "unit",
+      "units",
+      "user",
+      "users",
+      "unique",
+      "universal",
+      "university",
+      "uniform",
+      "union",
+      "useful",
+      "usual",
+      "utility"
+    ]
+  }
 }
