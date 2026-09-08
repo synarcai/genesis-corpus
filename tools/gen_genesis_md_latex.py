@@ -31,6 +31,7 @@ from fractions import Fraction
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import lexicon  # noqa: E402
 import rugram  # noqa: E402
+from plural import by_count  # noqa: E402
 from layer import emit_grouped  # noqa: E402
 
 # СИНОНИМ НАЗВАН, А НЕ ВЗЯТ МОЛЧА: слой зовёт гору «hill», и дом пар
@@ -77,7 +78,7 @@ def списки(шаг):
                     f"список из {RU_COUNT[1]} пунктов: "
                     f"{' и '.join(ру)}."))
         вон.append(("\n".join(f"{k + 1}. {с}." for k, с in enumerate(ан)),
-                    f"numbered list of {EN_COUNT[1]} items: "
+                    f"numbered list of {EN_COUNT[1]} {by_count(len(ан), 'items')}: "
                     f"{' and '.join(ан)}."))
     return вон
 
@@ -189,7 +190,7 @@ def формулы(шаг):
         вон.append((f"на месте {место} нет ничего: в списке {печать} "
                     f"всего {len(ряд)} элементов.",
                     f"no item at place {место}: the list {печать} has "
-                    f"{len(ряд)} items."))
+                    f"{len(ряд)} {by_count(len(ряд), 'items')}."))
     return вон
 
 

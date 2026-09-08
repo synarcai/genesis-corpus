@@ -33,6 +33,7 @@ import sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import phrases  # noqa: E402
 import rugram  # noqa: E402
+from plural import by_count  # noqa: E402
 
 КОРЕНЬ = pathlib.Path(__file__).resolve().parents[1]
 ПАКЕТЫ = КОРЕНЬ / "tools" / "langpacks"
@@ -95,14 +96,14 @@ def formы_guess(формы, имя):
         обратно_теперь="{X} has {d} {З} than {K} the number of {Т} {Y} has. {X} has {m} {Т}. how many {Т} does {Y} hold now?",
         знаки={"−": "fewer", "+": "more"},
         возраст="{X} is {K} as old as {Y}.", возраст2="{X} is {K} older than {Y}.",
-        возраст_воп_x="{Y} is {n} years old. how old is {X}?", возраст_воп_сум="together they are {N} years old. how old is {Y}?",
+        возраст_воп_x="{Y} is {n} {Л} old. how old is {X}?", возраст_воп_сум="together they are {N} {Л} old. how old is {Y}?",
         сумма_обр="there are {x} {М}. there are {K} as many {Б} as {М}. how many {В} are there in all?",
         трое="together {X}, {Y} and {Z} have {N} {Т}. {X} has {K} as many as {Y}. {Y} has {d} {З} than {Z}. how many {Т} does {W} have?",
         # e9's profile of muteness, genus 4 (03.09): the age AFTER k years,
         # asked forward, backward, and over a multiple
-        через="{X} is {n} years old. how old will {X} be in {k} years?",
-        через_обратно="in {k} years {X} will be {m} years old. how old is {X} now?",
-        кратное_через="{X} is {n} years old. {Y} is {K} as old as {X}. how old will {Y} be in {k} years?",
+        через="{X} is {n} {Л} old. how old will {X} be in {k} {Лk}?",
+        через_обратно="in {k} {Лk} {X} will be {m} {Лm} old. how old is {X} now?",
+        кратное_через="{X} is {n} {Л} old. {Y} is {K} as old as {X}. how old will {Y} be in {k} {Лk}?",
         ответ="so the answer is {r}.",
     ),
     "ru": dict(
@@ -142,12 +143,12 @@ def formы_guess(формы, имя):
         обратно_теперь="{X} hat {d} {Т} {З} als {K} so viele wie {Y}. {X} hat {m} {Т}. wie viele {Т} hat {Y} jetzt?",
         знаки={"−": "weniger", "+": "mehr"},
         возраст="{X} ist {K} so alt wie {Y}.",
-        возраст_воп_x="{Y} ist {n} Jahre alt. wie alt ist {X}?", возраст_воп_сум="zusammen sind sie {N} Jahre alt. wie alt ist {Y}?",
+        возраст_воп_x="{Y} ist {n} {Л} alt. wie alt ist {X}?", возраст_воп_сум="zusammen sind sie {N} {Л} alt. wie alt ist {Y}?",
         сумма_обр="es gibt {x} {М}. es gibt {K} so viele {Б} wie {М}. wie viele {В} gibt es insgesamt?",
         трое="zusammen haben {X}, {Y} und {Z} {N} {Т}. {X} hat {K} so viele wie {Y}. {Y} hat {d} {Т} {З} als {Z}. wie viele {Т} hat {W}?",
-        через="{X} ist {n} Jahre alt. wie alt wird {X} in {k} Jahren sein?",
-        через_обратно="in {k} Jahren wird {X} {m} Jahre alt sein. wie alt ist {X} jetzt?",
-        кратное_через="{X} ist {n} Jahre alt. {Y} ist {K} so alt wie {X}. wie alt wird {Y} in {k} Jahren sein?",
+        через="{X} ist {n} {Л} alt. wie alt wird {X} in {k} {Лдk} sein?",
+        через_обратно="in {k} {Лдk} wird {X} {m} {Лm} alt sein. wie alt ist {X} jetzt?",
+        кратное_через="{X} ist {n} {Л} alt. {Y} ist {K} so alt wie {X}. wie alt wird {Y} in {k} {Лдk} sein?",
         ответ="also ist die Antwort {r}.",
     ),
 }
@@ -165,8 +166,27 @@ def _вещь(язык, i, n):
     return rugram.форма(в, n) if язык == "ru" else в
 
 
-def _лет(n):
-    return rugram.форма("год", n)
+# СЛОВО «ГОД» ПРИ ЧИСЛЕ — ЗАКОНОМ ТОГО ЯЗЫКА, ЧЬЯ СТРАНИЦА ПИШЕТСЯ (08.09). Русская сторона
+# держала форму дырой с самого начала («{n} {Л}»), английская и немецкая — литералом; и правота
+# их держалась не законом, а тем, что возрасты дома до единицы не доходят. Немецкий требует
+# ДВУХ форм — именительной («1 Jahr alt», «3 Jahre alt») и дательной («in 1 Jahr», «in 3
+# Jahren»), — и потому закон берёт вторым доводом падеж.
+# ФОРМЫ ГОДА, ОБЪЯВЛЕННЫЕ РАЗОМ: ими дом ПИШЕТ и ими же суд ЧИТАЕТ дыру. Два списка об одном
+# расходятся не «если», а «когда», — и потому список один.
+ГОД_ФОРМЫ = {"ru": ["год", "года", "лет"],
+             "en": ["year", "years"],
+             "de": ["Jahr", "Jahre", "Jahren"]}
+
+ГОД = {
+    "ru": lambda n, дат: rugram.форма("год", n),
+    "en": lambda n, дат: by_count(n, "years"),
+    "de": lambda n, дат: "Jahr" if n == 1 else ("Jahren" if дат else "Jahre"),
+}
+
+
+def _лет(язык, n, дат=False):
+    """Слово «год» при числе n; `дат` — для немецкого «in {k} Jahren»."""
+    return ГОД.get(язык, ГОД["en"])(n, дат)
 
 
 def страница(язык, форма, **п):
@@ -234,19 +254,21 @@ def страница(язык, форма, **п):
         if форма == "через":
             n, kk = п["n"], п["k"]
             r = n + kk
-            воп = я["через"].format(**з, n=n, k=kk, Л=_лет(n), Лk=_лет(kk))
+            воп = я["через"].format(**з, n=n, k=kk, Л=_лет(язык, n), Лk=_лет(язык, kk),
+                                  Лдk=_лет(язык, kk, дат=True))
             леджер = f"{n} + {kk} = {r}."
         elif форма == "через_обратно":
             m, kk = п["m"], п["k"]
             r = m - kk
-            воп = я["через_обратно"].format(**з, m=m, k=kk, Лm=_лет(m), Лk=_лет(kk))
+            воп = я["через_обратно"].format(**з, m=m, k=kk, Лm=_лет(язык, m), Лk=_лет(язык, kk),
+                                           Лдk=_лет(язык, kk, дат=True))
             леджер = f"{m} − {kk} = {r}."
         else:
             Y, Yр, Yд = _лицо(язык, п["Y"])
             n, kk = п["n"], п["лет"]
             a = k * n
             r = a + kk
-            воп = я["кратное_через"].format(**з, Y=Y, Yр=Yр, Yд=Yд, n=n, k=kk, K=я["кратно"][k], Л=_лет(n), Лk=_лет(kk))
+            воп = я["кратное_через"].format(**з, Y=Y, Yр=Yр, Yд=Yд, n=n, k=kk, K=я["кратно"][k], Л=_лет(язык, n), Лk=_лет(язык, kk), Лдk=_лет(язык, kk, дат=True))
             леджер = f"{k} × {n} = {a}, {a} + {kk} = {r}."
         return f"{воп} {леджер} {я['ответ'].format(r=r)}"
     # ages
@@ -255,11 +277,11 @@ def страница(язык, форма, **п):
     утв = (я["возраст2"] if п.get("идиома") and "возраст2" in я else я["возраст"]).format(X=X, Y=Y, Yр=Yр, K=K)
     if п["спрос"] == "x":
         n = п["n"]; r = k * n
-        воп = я["возраст_воп_x"].format(Y=Y, Yд=Yд, X=X, Xд=Xд, n=n, Л=_лет(n))
+        воп = я["возраст_воп_x"].format(Y=Y, Yд=Yд, X=X, Xд=Xд, n=n, Л=_лет(язык, n))
         леджер = f"{k} × {n} = {r}."
     else:
         x = п["x"]; N = x * (1 + k); r = x
-        воп = я["возраст_воп_сум"].format(Y=Y, Yд=Yд, N=N, Л=_лет(N))
+        воп = я["возраст_воп_сум"].format(Y=Y, Yд=Yд, N=N, Л=_лет(язык, N))
         леджер = f"1 + {k} = {1 + k}, {N} ÷ {1 + k} = {x}."
     return f"{утв} {воп} {леджер} {я['ответ'].format(r=r)}"
 
@@ -283,9 +305,13 @@ def _дыры(язык):
             "Б": _альт(п[0] for п in я["пары"]), "М": _альт(п[1] for п in я["пары"]), "В": _альт(п[2] for п in я["пары"]),
             "K": _альт(list(я["кратно"].values()) + ([k + " the number of" for k in я["кратно"].values()] if язык == "en" else [])),
             "Д": _альт(я["доля"].values()), "У": _альт(я.get("удвоенное", {"": "—"}).values()), "З": _альт(я["знаки"].values()),
-            "Т": _альт(вещи), "Тd": _альт(вещи), "Тn": _альт(вещи), "Тm": _альт(вещи), "Тм": _альт(вещи), "Л": _альт(["год", "года", "лет"]),
+            "Т": _альт(вещи), "Тd": _альт(вещи), "Тn": _альт(вещи), "Тm": _альт(вещи), "Тм": _альт(вещи),
             "N": ч, "n": ч, "d": ч, "m": ч, "r": ч, "x": ч, "y": ч, "k": ч,
-            "Л": _альт(["год", "года", "лет"]), "Лk": _альт(["год", "года", "лет"]), "Лm": _альт(["год", "года", "лет"])}
+            # ДЫРА ГОДА ЧИТАЕТСЯ ФОРМАМИ ТОГО ЖЕ ЯЗЫКА (08.09). Прежде дыра была одна и русская,
+            # ибо только русские образцы её и держали; ныне её держат все три, и очертание дыры
+            # берётся из того же объявления, каким дом пишет слово.
+            "Л": _альт(ГОД_ФОРМЫ[язык]), "Лk": _альт(ГОД_ФОРМЫ[язык]),
+            "Лm": _альт(ГОД_ФОРМЫ[язык]), "Лдk": _альт(ГОД_ФОРМЫ[язык])}
 
 
 def _шаблоны(язык):

@@ -26,6 +26,7 @@ import pathlib
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import rugram  # noqa: E402
 import units  # noqa: E402
+from plural import by_count  # noqa: E402
 from layer import emit_grouped  # noqa: E402
 
 
@@ -107,7 +108,8 @@ def индукция(шаг):
                    f"{верх} чисел равна {сумма}.")
         вон.append(f"induction: the base n = 1 holds, the step from n "
                    f"to n+1 holds, hence it holds up to n = {верх}; the "
-                   f"sum of the first {верх} numbers is {сумма}.")
+                   f"sum of the first {верх} {by_count(верх, 'numbers')} "
+                   f"is {сумма}.")
     return вон
 
 

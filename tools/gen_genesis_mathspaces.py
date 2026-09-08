@@ -19,6 +19,7 @@ import sys
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
 import mathspaces as M  # noqa: E402
 import rugram  # noqa: E402
+from plural import by_count  # noqa: E402
 from layer import emit_grouped  # noqa: E402
 
 ЦЕЛЬ = "datasets/genesis_mathspaces.txt"
@@ -132,7 +133,7 @@ def показы_графов(шаг):
             # СЧЁТНАЯ ФОРМА — ДОМА РУССКОГО СЧЁТА (суд родов 03.09: «3 рёбер»
             # шло мимо суда согласования, ибо форму писал генератор сам).
             вон.append(f"в графе {текст} {len(верш)} {rugram.форма('вершина', len(верш))}." if ru else f"graph {текст} has {len(верш)} vertices.")
-            вон.append(f"в графе {текст} {len(M.рёбра(г))} {rugram.форма('ребро', len(M.рёбра(г)))}." if ru else f"graph {текст} has {len(M.рёбра(г))} edges.")
+            вон.append(f"в графе {текст} {len(M.рёбра(г))} {rugram.форма('ребро', len(M.рёбра(г)))}." if ru else f"graph {текст} has {len(M.рёбра(г))} {by_count(len(M.рёбра(г)), 'edges')}.")
         a, b = верш[0], верш[-1]
         п = M.путь(г, a, b)
         if п is None:

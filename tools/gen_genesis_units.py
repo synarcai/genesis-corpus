@@ -10,6 +10,7 @@ deterministic coprime shuffles, form-feed seams.
 """
 
 import units
+from plural import by_count  # noqa: E402
 from layer import emit_grouped
 
 
@@ -219,8 +220,8 @@ def rate_shows(шаг=0):
                 f"{units.ру_форма(rub, k * p)}."
             )
             out.append(
-                f"{k} items at {p} dollars "
-                f"equal {k * p} dollars."
+                f"{k} {by_count(k, 'items')} at {p} {by_count(p, 'dollars')} "
+                f"equal {k * p} {by_count(k * p, 'dollars')}."
             )
     return out
 
