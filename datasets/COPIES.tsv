@@ -1,5 +1,5 @@
 мир	генератор	через_слой	строк	различных	копий	макс_копий
-datasets/GENESIS-FULL.txt	gen_genesis_full.py	0	386356	278722	107634	473
+datasets/GENESIS-FULL.txt	gen_genesis_full.py	0	387056	279353	107703	473
 datasets/genesis_action_measure.txt	gen_genesis_action_measure.py	1	234	234	0	1
 datasets/genesis_action_measure_langs.txt	gen_genesis_action_measure_langs.py	1	462	462	0	1
 datasets/genesis_action_pages.txt	gen_genesis_action_pages.py	1	4921	4897	24	2
@@ -54,7 +54,7 @@ datasets/genesis_gsmforms.txt	gen_genesis_gsmforms.py	1	2591	2335	256	2
 datasets/genesis_gsmlex.txt	gen_genesis_gsmlex.py	1	400	400	0	1
 datasets/genesis_gsmwide.txt	gen_genesis_gsmwide.py	1	900	840	60	2
 datasets/genesis_heads.txt	gen_genesis_heads.py	1	560	472	88	2
-datasets/genesis_holdforms.txt	gen_genesis_holdforms.py	1	5703	5703	0	1
+datasets/genesis_holdforms.txt	gen_genesis_holdforms.py	1	6054	6054	0	1
 datasets/genesis_holes.txt	gen_genesis_holes.py	1	6640	6640	0	1
 datasets/genesis_hypo.txt	gen_genesis_hypo.py	1	144	144	0	1
 datasets/genesis_indu.txt	gen_genesis_indu.py	1	102	102	0	1
@@ -93,7 +93,7 @@ datasets/genesis_nature.txt	gen_genesis_nature.py	1	868	868	0	1
 datasets/genesis_nomention.txt	gen_genesis_nomention.py	1	2160	2160	0	1
 datasets/genesis_notation.txt	gen_genesis_notation.py	1	1102	599	503	2
 datasets/genesis_notationvar.txt	gen_genesis_notationvar.py	1	5386	5386	0	1
-datasets/genesis_numberline.txt	gen_genesis_numberline.py	1	5256	5256	0	1
+datasets/genesis_numberline.txt	gen_genesis_numberline.py	1	5292	5292	0	1
 datasets/genesis_numbers.txt	gen_genesis_numbers.py	1	4220	4190	30	2
 datasets/genesis_numphrase.txt	gen_genesis_numphrase.py	1	225	225	0	1
 datasets/genesis_object.txt	gen_genesis_object.py	1	272	272	0	1

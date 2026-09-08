@@ -39,7 +39,13 @@ import re
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import plgram as _PL  # noqa: E402 — закон польской связки: один закон, один читатель
 import svampforms as S  # noqa: E402 — the reader of the pack's count-agreement rule
+
+# ЯЗЫКИ, ЧЬЯ СВЯЗКА ГНЁТСЯ ПОЛОСОЙ СЧЁТА. Названы поимённо, а не угаданы: у прочих восьми
+# рамки держат связку буквой законно — она у них одна на все числа от единицы («hay», «há»)
+# или гнётся лишь на единице, которой эта рамка не пишет.
+СВЯЗКА_ЯЗЫКИ = ("pl",)
 
 _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
 ЯЗЫКИ = ("ru", "en", "de", "fr", "es", "it", "pt", "nl", "pl")
@@ -272,14 +278,14 @@ for _я, _зз in ЗАДАЧИ.items():
     "de": "nach Schritt 2 gibt es {f} {Uf}.", "fr": "après l'étape 2 il y a {f} {Uf}.",
     "es": "después del paso 2 hay {f} {Uf}.", "it": "dopo il passo 2 ci sono {f} {Uf}.",
     "pt": "depois do passo 2 há {f} {Uf}.", "nl": "na stap 2 zijn er {f} {Uf}.",
-    "pl": "po kroku 2 jest {f} {Uf}.",
+    "pl": "po kroku 2 {ЕСТЬф} {f} {Uf}.",
 }
 НЕДОСТАЧА = {
     "ru": "{В}: нужно {s} {Us}, есть {f} {Uf}.", "en": "{В}: {s} {Us} needed, {f} {Uf} present.",
     "de": "{В}: {s} {Us} nötig, {f} {Uf} vorhanden.", "fr": "{В} : il faut {s} {Us}, il y a {f} {Uf}.",
     "es": "{В}: hacen falta {s} {Us}, hay {f} {Uf}.", "it": "{В}: servono {s} {Us}, ci sono {f} {Uf}.",
     "pt": "{В}: são precisos {s} {Us}, há {f} {Uf}.", "nl": "{В}: {s} {Us} nodig, er zijn {f} {Uf}.",
-    "pl": "{В}: potrzeba {s} {Us}, jest {f} {Uf}.",
+    "pl": "{В}: potrzeba {s} {Us}, {ЕСТЬф} {f} {Uf}.",
 }
 
 # РАМКИ ФОРМ: план целиком стоит в показе, вопрос спрашивает о шаге или об итоге, ответ —
@@ -360,6 +366,11 @@ def _поля(язык, задача, числа):
         s = a + c
         п.update(a=a, c=c, s=s, f=_недостача(s, a), Ua=_счёт(язык, ед, a), Uc=_счёт(язык, ед, c),
                  Us=_счёт(язык, ед, s), Uf=_счёт(язык, ед, _недостача(s, a)))
+        # СВЯЗКА ПРИ ОСТАТКЕ ГНЁТСЯ ЕГО ЧИСЛОМ (08.09): «po kroku 2 jest 22 książki» было
+        # ложью — при двух-четырёх польский берёт «są». Дом уже гнул СЧЁТНУЮ ФОРМУ единицы
+        # тем же числом (`Uf`) и оставлял глагол буквой; закон один, читателей было два.
+        if язык in СВЯЗКА_ЯЗЫКИ:
+            п["ЕСТЬф"] = _PL.связка("наст", _недостача(s, a))
     return п
 
 
@@ -413,6 +424,8 @@ def _образец(язык, форма, задача):
             "В": alt((ДА[язык], НЕТ[язык])), "ШАГN": alt({S._счёт(ШАГ_СЛОВО[язык], c, язык) for c in (1, 2, 3, 4, 5)}),
             "КОТВ": alt(_короткие(язык, задача)), "a": r"\d+", "b": r"\d+", "c": r"\d+", "s": r"\d+", "f": r"\d+", "N": r"\d+",
             "Uмн": свои, "Uсл": свои, "Ua": свои, "Ub": свои, "Uc": свои, "Us": свои, "Uf": свои}
+    if язык in СВЯЗКА_ЯЗЫКИ:
+        дыры["ЕСТЬф"] = alt(_PL.СВЯЗКА["наст"])
     if ед1:
         свои1 = alt(_формы_единицы(язык, ед1))
         дыры.update({"СК1": alt(КСК.get(язык, (СК_СЛОВО.get(язык, ""),))), "U1мн": свои1, "U1сл": свои1, "U1a": свои1})
@@ -457,6 +470,9 @@ def _вердикт(язык, форма, зi, м):
             return False
     if s is not None and a is not None and c is not None and s != a + c:
         return False                      # the number after step 2 is the sum of steps 1 and 2
+    if "ЕСТЬф" in значения and язык in СВЯЗКА_ЯЗЫКИ:
+        if f is None or значения["ЕСТЬф"] != _PL.связка("наст", f):
+            return False                  # связка при остатке есть связка ЕГО числа
     if форма == "шаг_не_выполнен":
         if f is None or s is None or not (1 <= f < s):
             return False                  # the shortfall falls short — and is named

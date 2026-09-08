@@ -35,6 +35,7 @@ import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import asking  # noqa: E402 — the house of the pair declares which openers a question may wear
+import plgram as _PL  # noqa: E402 — закон польской связки: один закон, один читатель
 import priceforms as P  # noqa: E402 — the apple and the pack's counting rule
 
 ЯЗЫКИ = ("ru", "en", "de", "fr", "es", "it", "pt", "nl", "pl")
@@ -137,11 +138,11 @@ import priceforms as P  # noqa: E402 — the apple and the pack's counting rule
                вопрос_нет="zijn er {ЦВ}?", вопрос_не="hoeveel {Тмн} zijn niet {ЦАИ}?",
                да="ja", нет="nee", ни_одного="geen enkele is {ЦВЕД}", все_они="alle {n} zijn {ЦА}",
                свидетель="{m} zijn {ЦБс}", двоеточие=": "),
-    "pl": dict(корзина="w koszyku jest {n} {Т}: {k} {ЦА} i {m} {ЦБ}.",
-               корзина_все="w koszyku jest {n} {Т}: wszystkie {n} {ЦА}.",
+    "pl": dict(корзина="w koszyku {ЕСТЬ} {n} {Т}: {k} {ЦА} i {m} {ЦБ}.",
+               корзина_все="w koszyku {ЕСТЬ} {n} {Т}: wszystkie {n} {ЦА}.",
                вопрос_все="czy wszystkie {Тмн} są {ЦАИ}?", вопрос_есть="czy są {ЦБ}?",
                вопрос_нет="czy są {ЦВ}?", вопрос_не="ile {Тмн} nie jest {ЦАИ}?",
-               да="tak", нет="nie", ни_одного="ani jedno nie jest {ЦВЕД}", все_они="wszystkie {n} są {ЦА}",
+               да="tak", нет="nie", ни_одного="ani jedno nie jest {ЦВЕД}", все_они="wszystkie {n} {ЕСТЬ} {ЦА}",
                свидетель="{m} {ЦБ}", двоеточие=": "),
 }
 ФОРМЫ = ("все_нет", "все_да", "есть_да", "ни_одного", "сколько_не")
@@ -183,6 +184,18 @@ def рамка(язык, форма, nk=None):
         # ВОПРОС «СКОЛЬКО …» БЕРЁТ СЧЁТНУЮ ФОРМУ, А «ВСЕ ЛИ …» — ИМЕНИТЕЛЬНЫЙ МНОЖЕСТВЕННЫЙ:
         # «ile jabłEK nie jest czerwonych?» против «czy wszystkie jabłKA są czerwone?»
         мн = _вещь(язык, 5) if ключ == "вопрос_не" else ПЛЮРАЛЬ[язык]
+        # СВЯЗКА ГНЁТСЯ ТЕМ ЖЕ ЧИСЛОМ, ЧТО И ЦВЕТ РЯДОМ С НЕЙ (08.09). «w koszyku jest 4
+        # jabłka» было ложью по-польски — при двух-четырёх стои́т «są»; и та же ложь стояла
+        # в ответе «wszystkie 6 są czerwonych», где дом УЖЕ гнул прилагательное по полосе
+        # («czerwone» / «czerwonych») и оставлял глагол буквой.
+        #
+        #     ОДНА ОГОВОРКА, ГНУЩАЯ ПРИЛАГАТЕЛЬНОЕ И НЕ ГНУЩАЯ ГЛАГОЛА, ПРОТИВОРЕЧИТ СЕБЕ
+        #     В ПРЕДЕЛАХ ТРЁХ СЛОВ.
+        #
+        # Закон берётся у дома языка (`plgram.связка`), а не пишется здесь; подмена связки
+        # ловится законом замкнутого мира (`closedworld.ложь_по_связке`), а не рамкой.
+        if "{ЕСТЬ}" in с:
+            с = с.replace("{ЕСТЬ}", _PL.связка("наст", n))
         return с.replace("{Тмн}", мн)
     if форма == "все_да":
         # УНИВЕРСАЛЬНОЕ УТВЕРЖДЕНИЕ, КОТОРОЕ ВЕРНО, ТОЖЕ НЕСЁТ СВИДЕТЕЛЯ — счёт всего набора
@@ -371,6 +384,9 @@ def судить(строка):
     вердикт = _судить_образцом(строка)
     if вердикт[0] is False and _зк.ложь_по_знаку(
             строка, _СКЕЛЕТЫ_ЗНАКА, ПОКАЗЫ, _судить_образцом):
+        return True, False
+    # СВЯЗКА ЕСТЬ ЗНАК СТРОКИ: подмена «jest»↔«są» делает страницу ЛОЖНОЙ, а не чужой
+    if вердикт[0] is False and _зк.ложь_по_связке(строка, ПОКАЗЫ, _PL.ГРУППЫ_СВЯЗКИ):
         return True, False
     return вердикт
 if __name__ == "__main__":
