@@ -461,7 +461,7 @@
     "counting": {
       "sweep_one": ["noun_count"],
       "lexicon": [
-        "totaal",
+        "tel",
         "hier",
         "daar"
       ],
@@ -470,7 +470,7 @@
         "hier is {lex:noun_count:one}.",
         "hier zijn {lex:noun_count:many}.",
         "daar zijn {lex:noun_count:many}.",
-        "{n} {lex:noun_count:by_n} in totaal."
+        "ik tel {n} {lex:noun_count:by_n}."
       ]
     },
     "definition": {
@@ -683,6 +683,7 @@
     "heeft",
     "het",
     "hoeveel",
+    "ik",
     "in",
     "is",
     "met",

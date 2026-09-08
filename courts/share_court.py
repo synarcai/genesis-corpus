@@ -71,6 +71,7 @@ from math import gcd
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "scripts"))
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
+from plural import by_count, singular  # noqa: E402
 import rugram  # noqa: E402
 from genesis import Unreadable, worlds  # noqa: E402
 
@@ -259,7 +260,15 @@ def _сравнение(м, англ):
         return False
     больше, меньше = int(больше), int(меньше)
     if англ:
-        одна_вещь = вещь1 == вещь2 == вещь3
+        # ОДНА ВЕЩЬ ПРИ РАЗНЫХ ЧИСЛАХ ЕСТЬ ОДНА ВЕЩЬ (08.09). Суд требовал ТОЖДЕСТВА БУКВ трёх
+        # мест — и тем запрещал единицу: «5 sweets … 1 sweet … as many sweets» суть одна вещь,
+        # а не три. Русская половина этого суда всегда сводила формы к ключу дома счёта
+        # (`_одна_вещь`); английская сверяется теперь так же — законом, а не буквой.
+        мн = вещь3                      # «as many X as» — родовое множественное
+        одна_вещь = (singular(вещь1) == singular(вещь2) == singular(мн)
+                     and вещь1 == by_count(больше, мн)
+                     and вещь2 == by_count(меньше, мн)
+                     and вещь3 == by_count(2, мн))
     else:
         одна_вещь = _одна_вещь(вещь1, вещь2, вещь3)
     return одна_вещь and меньше * з == больше and меньше > 0
