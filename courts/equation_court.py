@@ -72,6 +72,8 @@ import sys
 
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "scripts"))
+
+import onepattern  # noqa: E402
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
 import discourse  # noqa: E402
 import notation_variants  # noqa: E402
@@ -723,7 +725,10 @@ def _словесное(м):
     (rf"^what is the square root of {Н}\? (.+)$", _вопрос),
     (rf"^чему равен квадратный корень из {Н}\? (.+)$", _вопрос),
 )
-ПРАВИЛА = tuple((re.compile(о), п) for о, п in ОБРАЗЦЫ)
+# ОДИН РОД — ОДИН ОБРАЗЕЦ (tools/onepattern.py): половины языков читаются одним разбором и одним
+# вердиктом, а объявлялись двумя образцами. Слияние идёт ЗАКОНОМ, а не рукой: признак — общий
+# вердикт, и вердикт читает совпадение КАК СОВПАДЕНИЕ СВОЕЙ ВЕТВИ.
+ПРАВИЛА = onepattern.слить_по_вердикту(ОБРАЗЦЫ)
 
 
 # ------------------------------------------------------- РАССУЖДЕНИЕ
@@ -787,7 +792,7 @@ def _судить(строка):
     for образец, проверить in ПРАВИЛА:
         м = образец.match(с)
         if м:
-            return True, bool(проверить(м))
+            return True, bool(проверить(onepattern.как_ветвь(образец, м)))
     return False, False
 
 

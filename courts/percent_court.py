@@ -44,6 +44,8 @@ from fractions import Fraction
 
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
+
+import onepattern  # noqa: E402
 import numerals  # noqa: E402
 import units  # noqa: E402
 from genesis import Unreadable, worlds  # noqa: E402
@@ -225,7 +227,8 @@ def _убыль(м):
     (rf"^(.+?) is {Ч}%\.$", _имя_доли_en),
     (rf"^(.+?) — это {Ч}%\.$", _имя_доли_ru),
 )
-ПРАВИЛА = tuple((re.compile(о), п) for о, п in ОБРАЗЦЫ)
+# ОДИН РОД — ОДИН ОБРАЗЕЦ (tools/onepattern.py): признак слияния — общий вердикт.
+ПРАВИЛА = onepattern.слить_по_вердикту(ОБРАЗЦЫ)
 
 
 def _судить(строка):
@@ -237,7 +240,7 @@ def _судить(строка):
         м = образец.match(с)
         if м is None:
             continue
-        вердикт = проверить(м)
+        вердикт = проверить(onepattern.как_ветвь(образец, м))
         if вердикт is None:
             return False, False
         return True, bool(вердикт)

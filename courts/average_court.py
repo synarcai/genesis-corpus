@@ -42,6 +42,8 @@ import sys
 
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
+
+import onepattern  # noqa: E402
 import numerals  # noqa: E402
 import rugram  # noqa: E402
 from genesis import Unreadable, worlds  # noqa: E402
@@ -193,7 +195,8 @@ def _контрпример(м):
     (rf"^среднее всегда есть одно из чисел — ложь: среднее чисел {РЯД} "
      rf"— это {Ч}, а {Ч} среди них нет\.$", _контрпример),
 )
-ПРАВИЛА = tuple((re.compile(о), п) for о, п in ОБРАЗЦЫ)
+# ОДИН РОД — ОДИН ОБРАЗЕЦ (tools/onepattern.py): признак слияния — общий вердикт.
+ПРАВИЛА = onepattern.слить_по_вердикту(ОБРАЗЦЫ)
 
 
 def _судить(строка):
@@ -204,7 +207,7 @@ def _судить(строка):
     for образец, проверить in ПРАВИЛА:
         м = образец.match(с)
         if м:
-            return True, bool(проверить(м))
+            return True, bool(проверить(onepattern.как_ветвь(образец, м)))
     return False, False
 
 
