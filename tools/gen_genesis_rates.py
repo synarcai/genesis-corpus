@@ -37,7 +37,8 @@ import sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import numerals  # noqa: E402
 import rugram  # noqa: E402
-import units  # noqa: E402
+import units
+from plural import by_count  # noqa: E402  # noqa: E402
 from layer import emit_grouped  # noqa: E402
 
 ЦЕЛЬ = "datasets/genesis_rates.txt"
@@ -208,14 +209,24 @@ def за_штуку(шаг):
         цена = 2 + (шаг + i) % 8
         сколько = 2 + (шаг * 2 + i) % 7
         итог = цена * сколько
-        вон.append(f"each {вещь_en} costs {цена} dollars.")
-        вон.append(f"each {вещь_en} costs {цена} dollars; {сколько} "
-                   f"{вещь_en}s cost {итог} dollars.")
+        # АНГЛИЙСКАЯ СТОРОНА ИДЁТ ЗАКОНОМ, КАК РУССКАЯ (08.09, по показанию прибора
+        # половинчатого закона). Русская здесь звала `units.рус` и `_ру_счёт` с самого
+        # начала; английская держала литерал «dollars» и наивное «{вещь}s».
+        #
+        #     ПРАВКА ЕСТЬ СТРАХОВКА, А НЕ ПОКАЗ: при нынешних числах (цена и счёт от двух)
+        #     закон даёт ровно те литералы, что стояли, и мир не меняется ни на байт. Показ
+        #     единицы здесь стои́т дороже — «how much do 1 books cost?» требует и закона
+        #     СКАЗУЕМОГО («does»), а не только имени, — и делается отдельным решением.
+        вон.append(f"each {вещь_en} costs {цена} {by_count(цена, 'dollars')}.")
+        вон.append(f"each {вещь_en} costs {цена} {by_count(цена, 'dollars')}; {сколько} "
+                   f"{by_count(сколько, вещь_en + 's')} cost {итог} "
+                   f"{by_count(итог, 'dollars')}.")
         # THE QUESTION LINE IS WHOLE: the price per piece stands in it, the
         # answer carries the product as a link (М-147; tellings-differ 04.09).
-        вон.append(f"each {вещь_en} costs {цена} dollars. how much do {сколько} "
-                   f"{вещь_en}s cost? {сколько} {вещь_en}s cost {итог} dollars: "
-                   f"{цена} × {сколько} = {итог}.")
+        вон.append(f"each {вещь_en} costs {цена} {by_count(цена, 'dollars')}. "
+                   f"how much do {сколько} {by_count(сколько, вещь_en + 's')} cost? "
+                   f"{сколько} {by_count(сколько, вещь_en + 's')} cost {итог} "
+                   f"{by_count(итог, 'dollars')}: {цена} × {сколько} = {итог}.")
         вон.append(f"одна {вещь_ru} стоит {цена} {units.рус('rouble', цена)}. "
                    f"сколько стоят {сколько} {_ру_счёт(вещь_ru, сколько)}? "
                    f"{сколько} {_ру_счёт(вещь_ru, сколько)} стоят {итог} "
