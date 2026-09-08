@@ -30,6 +30,8 @@ import asking  # noqa: E402
 from genesis import Unreadable, worlds  # noqa: E402
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import arith_court  # noqa: E402
+import rugram  # noqa: E402
+from plural import by_count  # noqa: E402
 
 _СЛОВАРЬ = None
 
@@ -47,7 +49,8 @@ def словари():
 # ПУСТОЙ-ОБХОД: no-such-corpus-file
 
 # число, названное словом, на четырёх языках — ровно те, что слой пишет
-СЛОВОМ = {"two": 2, "два": 2, "zwei": 2, "二": 2,
+СЛОВОМ = {"one": 1, "одно": 1, "eine": 1, "一": 1,
+          "two": 2, "два": 2, "zwei": 2, "二": 2,
           "three": 3, "три": 3, "drei": 3, "三": 3,
           "four": 4, "четыре": 4, "vier": 4, "四": 4,
           "five": 5, "пять": 5, "fünf": 5, "五": 5}
@@ -610,13 +613,37 @@ def тождество_держится(запись, словарь):
         if not истинно:
             return False
     return судимо_хоть_раз or None
-УЗЛЫ_EN = re.compile(r"^this graph has (\d+) nodes and (\d+) edges$")
-УЗЛЫ_RU = re.compile(r"^этот граф имеет (\d+) узл\w+ и (\d+) р[её]б\w+$")
+# ИМЯ ПРИ ЧИСЛЕ ЧИТАЕТСЯ ДЫРОЙ И СВЕРЯЕТСЯ (08.09). Прежде английский образец держал «nodes»
+# и «edges» буквой множественного — и ЗАМОЛЧАЛ БЫ о графе с одним ребром; русский же брал хвост
+# вольно («р[её]б\w+») и ПРОПУСТИЛ БЫ «2 ребро». Дыра без проверки благословляет.
+УЗЛЫ_EN = re.compile(r"^this graph has (\d+) (nodes?) and (\d+) (edges?)$")
+УЗЛЫ_RU = re.compile(r"^этот граф имеет (\d+) (узл\w+) и (\d+) (р[её]б\w+)$")
+
+
+def _счёт_узлов(м, узлы, рёбра):
+    """Числа сходятся с графом И формы имён — со своими числами."""
+    у, сл_у, р, сл_р = int(м.group(1)), м.group(2), int(м.group(3)), м.group(4)
+    if len(узлы) != у or len(рёбра) != р:
+        return False
+    if сл_у.startswith("узл"):
+        return (сл_у == rugram.форма("узел", у)) and (сл_р == rugram.форма("ребро", р))
+    return сл_у == by_count(у, "nodes") and сл_р == by_count(р, "edges")
 ПУТЬ_EN = re.compile(
     r"^in this graph (\w+) reaches (\w+) in (\d+) steps?$")
 РЁБЕР_СЛОВОМ = re.compile(
     r"^(?:the diagram has|диаграмма имеет|das diagramm hat)\s+(\S+)\s+"
-    r"(?:edges|ребра|рёбер|kanten)\.?$")
+    r"(edges?|ребро|ребра|рёбер|kanten?)\.?$")
+# ФОРМА ИМЕНИ ПРИ СЛОВЕ-ЧИСЛЕ. Английская и русская стороны сверяются законом своего дома счёта;
+# немецкая — объявленной здесь парой, ибо пакет немецкого «kante» не объявляет (тот же долг,
+# что назван в доме).
+_РЁБРА_ПО_ЧИСЛУ = {"en": lambda n: by_count(n, "edges"),
+                   "ru": lambda n: rugram.форма("ребро", n),
+                   "de": lambda n: "kante" if n == 1 else "kanten"}
+
+
+def _ребро_согласовано(слово, сколько):
+    язык = "de" if слово.startswith("kante") else ("ru" if слово[0] in "рё" else "en")
+    return слово == _РЁБРА_ПО_ЧИСЛУ[язык](сколько)
 РЁБЕР_ZH = re.compile(r"^这个图有(\S)条边$")
 
 
@@ -728,8 +755,7 @@ def судить(строка, граф=None, слой=None):
         узлы, рёбра = граф
         m = УЗЛЫ_EN.match(с) or УЗЛЫ_RU.match(с)
         if m:
-            return True, (len(узлы) == int(m.group(1))
-                          and len(рёбра) == int(m.group(2)))
+            return True, _счёт_узлов(m, узлы, рёбра)
         m = ПУТЬ_EN.match(с)
         if m:
             д = путь(рёбра, m.group(1), m.group(2))
@@ -738,7 +764,9 @@ def судить(строка, граф=None, слой=None):
         if m:
             сколько = СЛОВОМ.get(m.group(1))
             if сколько is not None:
-                return True, сколько == len(рёбра)
+                return True, (сколько == len(рёбра)
+                              and (m.re is РЁБЕР_ZH
+                                   or _ребро_согласовано(m.group(2), сколько)))
     return False, True
 
 
