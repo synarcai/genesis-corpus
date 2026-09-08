@@ -193,6 +193,7 @@
       }
     },
     "noun_count": {
+      "plural_by_count": true,
       "forms": [
         "one",
         "many",
@@ -508,6 +509,7 @@
       ]
     },
     "counting": {
+      "sweep_one": ["noun_count"],
       "lexicon": [
         "hay",
         "aquí",
@@ -519,7 +521,8 @@
       "templates": [
         "aquí está {lex:noun_count:one}.",
         "aquí están {lex:noun_count:many}.",
-        "hay {lex:noun_count:many} aquí."
+        "hay {lex:noun_count:many} aquí.",
+        "aquí hay {n} {lex:noun_count:by_n}."
       ]
     },
     "agreement": {

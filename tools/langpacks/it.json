@@ -191,6 +191,7 @@
       }
     },
     "noun_count": {
+      "plural_by_count": true,
       "forms": [
         "one",
         "many",
@@ -498,6 +499,7 @@
       ]
     },
     "counting": {
+      "sweep_one": ["noun_count"],
       "lexicon": [
         "ecco",
         "qui"
@@ -506,7 +508,8 @@
       "templates": [
         "ecco {lex:noun_count:one}.",
         "ecco {lex:noun_count:many}.",
-        "qui {lex:noun_count:many}."
+        "qui {lex:noun_count:many}.",
+        "ecco {n} {lex:noun_count:by_n}."
       ]
     },
     "definition": {

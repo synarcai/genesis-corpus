@@ -169,6 +169,7 @@
       }
     },
     "noun_count": {
+      "plural_by_count": true,
       "forms": [
         "one",
         "many",
@@ -458,7 +459,9 @@
       ]
     },
     "counting": {
+      "sweep_one": ["noun_count"],
       "lexicon": [
+        "totaal",
         "hier",
         "daar"
       ],
@@ -466,7 +469,8 @@
       "templates": [
         "hier is {lex:noun_count:one}.",
         "hier zijn {lex:noun_count:many}.",
-        "daar zijn {lex:noun_count:many}."
+        "daar zijn {lex:noun_count:many}.",
+        "{n} {lex:noun_count:by_n} in totaal."
       ]
     },
     "definition": {

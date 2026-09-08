@@ -191,6 +191,7 @@
       }
     },
     "noun_count": {
+      "plural_by_count": true,
       "forms": [
         "one",
         "many",
@@ -522,6 +523,7 @@
       ]
     },
     "counting": {
+      "sweep_one": ["noun_count"],
       "lexicon": [
         "aqui",
         "há",
@@ -531,7 +533,8 @@
       "templates": [
         "aqui está {lex:noun_count:one}.",
         "aqui estão {lex:noun_count:many}.",
-        "há {lex:noun_count:many} aqui."
+        "há {lex:noun_count:many} aqui.",
+        "aqui há {n} {lex:noun_count:by_n}."
       ]
     },
     "definition": {

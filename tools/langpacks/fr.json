@@ -214,6 +214,7 @@
       }
     },
     "noun_count": {
+      "plural_by_count": true,
       "forms": [
         "one",
         "many",
@@ -515,6 +516,7 @@
       ]
     },
     "counting": {
+      "sweep_one": ["noun_count"],
       "lexicon": [
         "voici",
         "voilà"
@@ -523,7 +525,8 @@
       "templates": [
         "voici {lex:noun_count:one}.",
         "voici {lex:noun_count:many}.",
-        "voilà {lex:noun_count:many}."
+        "voilà {lex:noun_count:many}.",
+        "voici {n} {lex:noun_count:by_n}."
       ]
     },
     "definition": {
