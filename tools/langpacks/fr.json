@@ -493,8 +493,12 @@
         "{num:sum} moins {num:m} égale {num:n}.",
         "{num:n} fois {num:m} égale {num:prod}.",
         "{num:prod} divisé {num:m} égale {num:n}.",
-        "combien font {num:n} plus {num:m} ? {num:n} plus {num:m} égale {num:sum}."
-      ]
+        "combien font {num:n} plus {num:m} ? {num:n} plus {num:m} égale {num:sum}.",
+        "combien font {num:sum} moins {num:m} ? {num:sum} moins {num:m} égale {num:n}.",
+        "combien font {num:n} fois {num:m} ? {num:n} fois {num:m} égale {num:prod}.",
+        "combien font {num:prod} divisé {num:m} ? {num:prod} divisé {num:m} égale {num:n}."
+      ],
+      "comment_ask": "ВОПРОС СТОЯЛ ТОЛЬКО НА СЛОЖЕНИИ, И ЭТО БЫЛ ДОЛГ ВСЕХ ДВАДЦАТИ ДЕВЯТИ ПАКЕТОВ (08.09). Мера ширины вопроса насчитала 94 рода арифметики словами без вопросной поверхности — пятая часть всего долга свода, — и все они суть вычитание, умножение и деление: пласт УТВЕРЖДАЛ «семь минус три равно четыре» и не спрашивал этого ни разу. НИ ОДНОГО НОВОГО СЛОВА НЕ ВВЕДЕНО: приставка вопроса, знак, разделитель и само утверждение взяты у вопроса сложения, который пакет уже объявил и который уже прошёл его ворота. Пакет, вопроса сложения не имеющий, оставлен с заказом, а не дописан наугад — язык, которого проверить нечем, не пишут."
     },
     "conjugation": {
       "lexicon": [
@@ -516,7 +520,9 @@
       ]
     },
     "counting": {
-      "sweep_one": ["noun_count"],
+      "sweep_one": [
+        "noun_count"
+      ],
       "lexicon": [
         "voici",
         "voilà"

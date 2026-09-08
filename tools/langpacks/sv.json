@@ -242,8 +242,12 @@
         "{num:sum} minus {num:m} blir {num:n}.",
         "{num:n} gånger {num:m} blir {num:prod}.",
         "{num:prod} delat {num:m} blir {num:n}.",
-        "hur mycket är {num:n} plus {num:m}? {num:n} plus {num:m} blir {num:sum}."
-      ]
+        "hur mycket är {num:n} plus {num:m}? {num:n} plus {num:m} blir {num:sum}.",
+        "hur mycket är {num:sum} minus {num:m}? {num:sum} minus {num:m} blir {num:n}.",
+        "hur mycket är {num:n} gånger {num:m}? {num:n} gånger {num:m} blir {num:prod}.",
+        "hur mycket är {num:prod} delat {num:m}? {num:prod} delat {num:m} blir {num:n}."
+      ],
+      "comment_ask": "ВОПРОС СТОЯЛ ТОЛЬКО НА СЛОЖЕНИИ, И ЭТО БЫЛ ДОЛГ ВСЕХ ДВАДЦАТИ ДЕВЯТИ ПАКЕТОВ (08.09). Мера ширины вопроса насчитала 94 рода арифметики словами без вопросной поверхности — пятая часть всего долга свода, — и все они суть вычитание, умножение и деление: пласт УТВЕРЖДАЛ «семь минус три равно четыре» и не спрашивал этого ни разу. НИ ОДНОГО НОВОГО СЛОВА НЕ ВВЕДЕНО: приставка вопроса, знак, разделитель и само утверждение взяты у вопроса сложения, который пакет уже объявил и который уже прошёл его ворота. Пакет, вопроса сложения не имеющий, оставлен с заказом, а не дописан наугад — язык, которого проверить нечем, не пишут."
     },
     "conjugation": {
       "lexicon": [

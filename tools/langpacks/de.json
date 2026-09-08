@@ -636,8 +636,12 @@
         "{num:sum} minus {num:m} gleich {num:n}.",
         "{num:n} mal {num:m} gleich {num:prod}.",
         "{num:prod} durch {num:m} gleich {num:n}.",
-        "was ist {num:n} plus {num:m}? {num:n} plus {num:m} gleich {num:sum}."
-      ]
+        "was ist {num:n} plus {num:m}? {num:n} plus {num:m} gleich {num:sum}.",
+        "was ist {num:sum} minus {num:m}? {num:sum} minus {num:m} gleich {num:n}.",
+        "was ist {num:n} mal {num:m}? {num:n} mal {num:m} gleich {num:prod}.",
+        "was ist {num:prod} durch {num:m}? {num:prod} durch {num:m} gleich {num:n}."
+      ],
+      "comment_ask": "ВОПРОС СТОЯЛ ТОЛЬКО НА СЛОЖЕНИИ, И ЭТО БЫЛ ДОЛГ ВСЕХ ДВАДЦАТИ ДЕВЯТИ ПАКЕТОВ (08.09). Мера ширины вопроса насчитала 94 рода арифметики словами без вопросной поверхности — пятая часть всего долга свода, — и все они суть вычитание, умножение и деление: пласт УТВЕРЖДАЛ «семь минус три равно четыре» и не спрашивал этого ни разу. НИ ОДНОГО НОВОГО СЛОВА НЕ ВВЕДЕНО: приставка вопроса, знак, разделитель и само утверждение взяты у вопроса сложения, который пакет уже объявил и который уже прошёл его ворота. Пакет, вопроса сложения не имеющий, оставлен с заказом, а не дописан наугад — язык, которого проверить нечем, не пишут."
     },
     "case_frames": {
       "lexicon": [
@@ -689,7 +693,9 @@
       ]
     },
     "counting": {
-      "sweep_one": ["noun_count"],
+      "sweep_one": [
+        "noun_count"
+      ],
       "lexicon": [
         "zähle",
         "viele"

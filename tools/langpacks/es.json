@@ -486,8 +486,12 @@
         "{num:sum} menos {num:m} es {num:n}.",
         "{num:n} por {num:m} es {num:prod}.",
         "{num:prod} entre {num:m} es {num:n}.",
-        "¿cuánto es {num:n} más {num:m}? {num:n} más {num:m} es {num:sum}."
-      ]
+        "¿cuánto es {num:n} más {num:m}? {num:n} más {num:m} es {num:sum}.",
+        "¿cuánto es {num:sum} menos {num:m}? {num:sum} menos {num:m} es {num:n}.",
+        "¿cuánto es {num:n} por {num:m}? {num:n} por {num:m} es {num:prod}.",
+        "¿cuánto es {num:prod} entre {num:m}? {num:prod} entre {num:m} es {num:n}."
+      ],
+      "comment_ask": "ВОПРОС СТОЯЛ ТОЛЬКО НА СЛОЖЕНИИ, И ЭТО БЫЛ ДОЛГ ВСЕХ ДВАДЦАТИ ДЕВЯТИ ПАКЕТОВ (08.09). Мера ширины вопроса насчитала 94 рода арифметики словами без вопросной поверхности — пятая часть всего долга свода, — и все они суть вычитание, умножение и деление: пласт УТВЕРЖДАЛ «семь минус три равно четыре» и не спрашивал этого ни разу. НИ ОДНОГО НОВОГО СЛОВА НЕ ВВЕДЕНО: приставка вопроса, знак, разделитель и само утверждение взяты у вопроса сложения, который пакет уже объявил и который уже прошёл его ворота. Пакет, вопроса сложения не имеющий, оставлен с заказом, а не дописан наугад — язык, которого проверить нечем, не пишут."
     },
     "conjugation": {
       "lexicon": [
@@ -509,7 +513,9 @@
       ]
     },
     "counting": {
-      "sweep_one": ["noun_count"],
+      "sweep_one": [
+        "noun_count"
+      ],
       "lexicon": [
         "hay",
         "aquí",
