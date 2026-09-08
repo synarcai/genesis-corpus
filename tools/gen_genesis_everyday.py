@@ -816,12 +816,25 @@ def порядок_времени(шаг):
         вон.append(f"the {б} comes next after the {а}.")
         вон.append(f"what comes before the {б}? the {а} comes before "
                    f"the {б}.")
+        # ВОПРОС О ТОМ, ЧТО ПОЗЖЕ, — РОВНЯ ВОПРОСУ О ТОМ, ЧТО РАНЬШЕ (08.09). Дом спрашивал
+        # только об одной стороне порядка; прибор ширины назвал вторую родом без вопросной
+        # поверхности, и был прав: показать порядок и спросить лишь об одном его конце значит
+        # спрашивать вполовину.
+        вон.append(f"what comes after the {а}? the {б} comes after "
+                   f"the {а}.")
+        вон.append(f"что позже {СУТКИ_RU[а][1]}? {СУТКИ_RU[б][0]} "
+                   f"позже {СУТКИ_RU[а][1]}.")
         вон.append(f"что раньше {СУТКИ_RU[б][1]}? {СУТКИ_RU[а][0]} "
                    f"раньше {СУТКИ_RU[б][1]}.")
     вон.append(f"the {СУТКИ[0]} comes first and the {СУТКИ[-1]} "
                f"comes last.")
     вон.append(f"the {СУТКИ[0]} comes early and the {СУТКИ[-1]} "
                f"comes late.")
+    # КРАЯ СУТОК ТОЖЕ СПРАШИВАЮТСЯ: два рода письма стояли без вопроса вовсе.
+    вон.append(f"which comes first and which comes last? the {СУТКИ[0]} "
+               f"comes first and the {СУТКИ[-1]} comes last.")
+    вон.append(f"which comes early and which comes late? the {СУТКИ[0]} "
+               f"comes early and the {СУТКИ[-1]} comes late.")
     for i in range(1, len(ДНИ)):
         вон.append(f"{ДНИ[i - 1]} comes before {ДНИ[i]}.")
         вон.append(f"{ДНИ[i]} comes after {ДНИ[i - 1]}.")

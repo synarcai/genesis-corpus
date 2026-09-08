@@ -218,16 +218,22 @@ _вместе, _г = onepattern.вместе, onepattern.захваты
     r"^(\S+) не (в|на) (\S+): (\S+) не на пути от (\S+) до (\S+)\.$")
 
 ВРЕМЯ_ДО = re.compile(r"^the ([A-Za-z]+) comes before the ([A-Za-z]+)\.$")
-ВРЕМЯ_ПОСЛЕ = re.compile(r"^the ([A-Za-z]+) comes after the ([A-Za-z]+)\.$")
+# ВОПРОСНАЯ ПРИСТАВКА — ТОТ ЖЕ ОБРАЗЕЦ (08.09): рассказ и вопрос об одном есть один род,
+# и приставка объявляется НЕОБЯЗАТЕЛЬНОЙ, а не вторым образцом.
+ВРЕМЯ_ПОСЛЕ = re.compile(
+    r"^(?:what comes after the ([A-Za-z]+)\? )?"
+    r"the ([A-Za-z]+) comes after the ([A-Za-z]+)\.$")
 ВРЕМЯ_СЛЕД = re.compile(
     r"^the ([A-Za-z]+) comes next after the ([A-Za-z]+)\.$")
 ВРЕМЯ_ВОПРОС = re.compile(
     r"^what comes before the ([A-Za-z]+)\? the ([A-Za-z]+) comes before "
     r"the \1\.$")
 ВРЕМЯ_КРАЙ = re.compile(
-    r"^the ([A-Za-z]+) comes first and the ([A-Za-z]+) comes last\.$")
+    r"^(?:which comes first and which comes last\? )?"
+    r"the ([A-Za-z]+) comes first and the ([A-Za-z]+) comes last\.$")
 ВРЕМЯ_РАНО = re.compile(
-    r"^the ([A-Za-z]+) comes early and the ([A-Za-z]+) comes late\.$")
+    r"^(?:which comes early and which comes late\? )?"
+    r"the ([A-Za-z]+) comes early and the ([A-Za-z]+) comes late\.$")
 ВРЕМЯ_РАБОТА = re.compile(
     r"^([A-Za-z]+) worked (in|during) the ([A-Za-z]+) and rested "
     r"(in|during) the ([A-Za-z]+); \1 worked before \1 rested\.$")
@@ -247,7 +253,9 @@ _вместе, _г = onepattern.вместе, onepattern.захваты
     r"^the ([A-Za-z]+) has (\d+) days and the ([A-Za-z]+) has (\d+) days; "
     r"the \1 has (\d+) days more than the \3\.$")
 ВРЕМЯ_RU_ДО = re.compile(r"^(\S+) раньше (\S+)\.$")
-ВРЕМЯ_RU_ПОСЛЕ = re.compile(r"^(\S+) позже (\S+)\.$")
+# ВОПРОСНАЯ ПРИСТАВКА — ТОТ ЖЕ ОБРАЗЕЦ и по-русски: «что позже утра? день позже утра».
+ВРЕМЯ_RU_ПОСЛЕ = re.compile(
+    r"^(?:что позже (\S+)\? )?(\S+) позже (\S+)\.$")
 ВРЕМЯ_RU_ВОПРОС = re.compile(
     r"^что раньше (\S+)\? (\S+) раньше \1\.$")
 ВРЕМЯ_RU_РАБОТА = re.compile(
@@ -689,7 +697,14 @@ def судить(строка):
         return (False, False) if пара is None else (True, пара[0] < пара[1])
     m = ВРЕМЯ_ПОСЛЕ.match(с)
     if m:
-        пара = _ряд_суток(*m.groups())
+        # ВОПРОСНАЯ ПРИСТАВКА СВЕРЯЕТСЯ С ОТВЕТОМ, А НЕ ОТБРАСЫВАЕТСЯ: «what comes after the
+        # evening? the night comes after the morning» ложно тем, что спрошено об одном, а
+        # отвечено о другом. Приставка необязательна, и потому читается захватами без пустых.
+        г = _г(m)
+        спрошен, б, а = (г[0], г[1], г[2]) if len(г) == 3 else (None, г[0], г[1])
+        if спрошен is not None and спрошен != а:
+            return True, False
+        пара = _ряд_суток(б, а)
         return (False, False) if пара is None else (True, пара[0] > пара[1])
     m = ВРЕМЯ_СЛЕД.match(с)
     if m:
@@ -704,13 +719,13 @@ def судить(строка):
                 else (True, пара[0] + 1 == пара[1]))
     m = ВРЕМЯ_КРАЙ.match(с)
     if m:
-        а, б = m.groups()
+        а, б = _г(m)
         if а not in _МЕСТО_В_СУТКАХ or б not in _МЕСТО_В_СУТКАХ:
             return False, False
         return True, (а == дом.СУТКИ[0] and б == дом.СУТКИ[-1])
     m = ВРЕМЯ_РАНО.match(с)
     if m:
-        пара = _ряд_суток(*m.groups())
+        пара = _ряд_суток(*_г(m))
         if пара is None:
             return False, False
         рано, поздно = пара
@@ -779,7 +794,10 @@ def судить(строка):
                       < _МЕСТО_В_СУТКАХ[_СУТКИ_ПО_РОД[род]])
     m = ВРЕМЯ_RU_ПОСЛЕ.match(с)
     if m:
-        им, род = m.groups()
+        г = _г(m)
+        спрошен, им, род = (г[0], г[1], г[2]) if len(г) == 3 else (None, г[0], г[1])
+        if спрошен is not None and спрошен != род:
+            return True, False
         if им not in _СУТКИ_ПО_ИМ or род not in _СУТКИ_ПО_РОД:
             return False, False
         return True, (_МЕСТО_В_СУТКАХ[_СУТКИ_ПО_ИМ[им]]
