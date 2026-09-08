@@ -111,7 +111,7 @@ def показы(pi):
                 f"{имя} got a {вмест} of {n} {by_count(n, мн)} and "
                 f"a {вмест} of {m} {by_count(m, мн2)}. "
                 f"how many things did {имя} get? "
-                f"{n + m} things: {n} + {m} = {n + m}.")
+                f"{n + m} {by_count(n + m, 'things')}: {n} + {m} = {n + m}.")
         else:
             # ВОПРОС О ВМЕСТИЛИЩАХ, А НЕ О ВЕЩАХ — затвор против ответа по величине
             вон.append(

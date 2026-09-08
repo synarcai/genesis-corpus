@@ -100,9 +100,9 @@ def сохранение(шаг):
         вон.append(f"энергия сохраняется: {целое} "
                    f"{rugram.форма('джоуль', целое)} разделились на {часть} и "
                    f"{остаток} {rugram.форма('джоуль', остаток)}.")
-        вон.append(f"energy is conserved: {max(e1, e2)} joules split "
+        вон.append(f"energy is conserved: {max(e1, e2)} {by_count(max(e1, e2), 'joules')} split "
                    f"into {min(e1, e2)} and "
-                   f"{max(e1, e2) - min(e1, e2)} joules.")
+                   f"{max(e1, e2) - min(e1, e2)} {by_count(max(e1, e2) - min(e1, e2), 'joules')}.")
     return вон
 
 
@@ -148,7 +148,7 @@ def давление(шаг):
                       f"{rugram.форма('квадратный метр', площадь)} "
                       f"{'даёт' if один else 'дают'} {целая} ÷ {площадь} = "
                       f"{частное} {rugram.форма('паскаль', частное)}.")
-            отв_en = (f"yes: {целая} newtons over {площадь} square metres give "
+            отв_en = (f"yes: {целая} {by_count(целая, 'newtons')} over {площадь} square metres give "
                       f"{целая} ÷ {площадь} = {частное} "
                       f"{by_count(частное, 'pascals')}.")
         else:
@@ -156,7 +156,7 @@ def давление(шаг):
                       f"{rugram.форма('квадратный метр', площадь)} "
                       f"{'не даёт' if один else 'не дают'} целого давления, "
                       f"{целая} не делится на {площадь} нацело.")
-            отв_en = (f"no: {целая} newtons over {площадь} square metres do not "
+            отв_en = (f"no: {целая} {by_count(целая, 'newtons')} over {площадь} square metres do not "
                       f"give a whole pressure, {целая} is not divisible by {площадь}.")
         вон.append(спросить("целое", отв_ru, закон="давление = сила ÷ площадь", x=целая, y=площадь))
         вон.append(спросить("whole", отв_en, закон="pressure = force ÷ area", x=целая, y=площадь))
@@ -187,9 +187,9 @@ def волна(шаг):
                    f"{rugram.форма('метр', длина)} ÷ {период} "
                    f"{rugram.форма('секунда', период)} = {скорость} "
                    f"{rugram.форма('метр', скорость)} в секунду.")
-        вон.append(f"wave speed = length ÷ period; {длина} metres ÷ "
+        вон.append(f"wave speed = length ÷ period; {длина} {by_count(длина, 'metres')} ÷ "
                    f"{период} {'second' if период == 1 else 'seconds'} "
-                   f"= {скорость} metres per second.")
+                   f"= {скорость} {by_count(скорость, 'metres')} per second.")
     return вон
 
 
@@ -209,14 +209,14 @@ def рассужд_давление(шаг):
                  f"{площадь} {by_count(площадь, 'square metres')} = "
                  f"{p} {by_count(p, 'pascals')}")
         св_ru = f"{сила} {rugram.форма('ньютон', сила)} ÷ {площадь} {rugram.форма('квадратный метр', площадь)} = {p} {rugram.форма('паскаль', p)}"
-        выв_en = f"the pressure is {p} pascals"
+        выв_en = f"the pressure is {p} {by_count(p, 'pascals')}"
         выв_ru = f"давление — {p} {rugram.форма('паскаль', p)}"
         зак_en, зак_ru = laws.ЗАКОНЫ["physlaws"][0][2], laws.ЗАКОНЫ["physlaws"][0][3]
         if i % 2 == 0:
-            вон.append(discourse.рассуждение_величины("en", f"what is the pressure of {сила} newtons on {площадь} square metres", св_en, выв_en, зак_en))
+            вон.append(discourse.рассуждение_величины("en", f"what is the pressure of {сила} {by_count(сила, 'newtons')} on {площадь} square metres", св_en, выв_en, зак_en))
             вон.append(discourse.рассуждение_величины("ru", f"каково давление силы {сила} {rugram.форма('ньютон', сила)} на {площадь} {rugram.форма('квадратный метр', площадь)}", св_ru, выв_ru, зак_ru))
         else:
-            вон.append(discourse.почему("en", f"why is the pressure of {сила} newtons on {площадь} square metres equal to {p} pascals", св_en, выв_en, зак_en))
+            вон.append(discourse.почему("en", f"why is the pressure of {сила} {by_count(сила, 'newtons')} on {площадь} square metres equal to {p} {by_count(p, 'pascals')}", св_en, выв_en, зак_en))
             вон.append(discourse.почему("ru", f"почему давление силы {сила} {rugram.форма('ньютон', сила)} на {площадь} {rugram.форма('квадратный метр', площадь)} равно {p} {rugram.форма('паскаль', p)}", св_ru, выв_ru, зак_ru))
     return вон
 

@@ -1120,13 +1120,13 @@ def деньги_быта(шаг):
         осталось = плата - билет
         кто_en, кто_ru, _род, женский = _кто(шаг, i)
         сф = суффикс_рода(женский)
-        вон.append(f"{кто_en} earned {плата} coins and paid {билет} "
+        вон.append(f"{кто_en} earned {плата} {by_count(плата, 'coins')} and paid {билет} "
                    f"{по_счёту(билет, 'coin')} for a ticket; "
                    f"{кто_en} saved {осталось} {by_count(осталось, 'coins')}.")
-        вон.append(f"{кто_en} earns {плата} coins and pays {билет} "
+        вон.append(f"{кто_en} earns {плата} {by_count(плата, 'coins')} and pays {билет} "
                    f"{по_счёту(билет, 'coin')} for a ticket; "
                    f"{кто_en} saves {осталось} {by_count(осталось, 'coins')}.")
-        вон.append(f"{кто_en} earned {плата} coins and paid {билет} "
+        вон.append(f"{кто_en} earned {плата} {by_count(плата, 'coins')} and paid {билет} "
                    f"{по_счёту(билет, 'coin')} for a ticket. how "
                    f"many coins did {кто_en} save? {кто_en} saved "
                    f"{осталось} {by_count(осталось, 'coins')}.")

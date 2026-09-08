@@ -118,7 +118,7 @@ def pass_shows(pi):
                 f"{by_count(b2, 'eggs')} "
                 f"more. how many eggs do the "
                 f"{pet} hold now? the {pet} "
-                f"holds {a2 + b2} eggs"
+                f"holds {a2 + b2} {by_count(a2 + b2, 'eggs')}"
                 f"{f': {a2} + {b2} = {a2 + b2}' if forge else ''}."
             )
     return out

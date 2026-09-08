@@ -151,8 +151,8 @@ def pass_shows(pass_i):
         out.append(спросить("значение", сдв_ru, f"{сдв_ru} это {s << k}."))
         # --- ширина
         out.append(f"a {имя} holds {бит} {by_count(бит, 'bits')} and "
-                   f"{2 ** бит} values.")
-        out.append(f"with {бит} bits you can write {2 ** бит} "
+                   f"{2 ** бит} {by_count(2 ** бит, 'values')}.")
+        out.append(f"with {бит} {by_count(бит, 'bits')} you can write {2 ** бит} "
                    f"{by_count(2 ** бит, 'numbers')}.")
         out.append(f"{имя} держит {бит} {ру('бит', бит)} и "
                    f"{2 ** бит} {ру('значение', 2 ** бит)}.")

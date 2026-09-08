@@ -222,7 +222,7 @@ def pass_shows(pass_i):
         out.append(f"two regulators with {n} and {m} {by_count(m, 'states')} together "
                    f"distinguish {n * m} {by_count(n * m, 'disturbances')}: "
                    f"{n} × {m} = {n * m}.")
-        out.append(f"how many disturbances do two regulators with {n} and {m} states distinguish together? two regulators with {n} and {m} states together distinguish {n * m} disturbances: {n} × {m} = {n * m}.")
+        out.append(f"how many disturbances do two regulators with {n} and {m} {by_count(m, 'states')} distinguish together? two regulators with {n} and {m} {by_count(m, 'states')} together distinguish {n * m} {by_count(n * m, 'disturbances')}: {n} × {m} = {n * m}.")
         out.append(f"два регулятора с {n} и {m} "
                    f"{'состоянием' if m == 1 else 'состояниями'} вместе различают "
                    f"{n * m} {ру('возмущение', n * m)}: {n} × {m} = {n * m}.")

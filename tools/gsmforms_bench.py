@@ -45,62 +45,62 @@ def факты_и_вопрос(семья, п):
              ("d", f"it {'fell' if п['падение'] else 'rose'} by {п['d']} {G.by_count(п['d'], 'degrees')}")]
         return f, "what is the temperature in degrees now?", (lambda d: d["t0"] - d["d"]) if п["падение"] else (lambda d: d["t0"] + d["d"]), {"t0": п["t0"], "d": п["d"]}, {"t0": "the starting temperature", "d": "by how many degrees it changed"}
     if семья == "процент":
-        f = [("всего", f"the class has {п['всего']} pupils"), ("часть", f"{п['часть']} of them are girls")]
+        f = [("всего", f"the class has {п['всего']} {G.by_count(п['всего'], 'pupils')}"), ("часть", f"{п['часть']} of them are girls")]
         return f, "what percentage of the class are girls?", lambda d: d["часть"] * 100 // d["всего"] if d["часть"] * 100 % d["всего"] == 0 else None, {"всего": п["всего"], "часть": п["часть"]}, {"всего": "how many pupils the class has", "часть": "how many of them are girls"}
     if семья == "фунты":
-        f = [("унц", f"the parcel weighs {п['унц']} ounces"), ("правило", "a pound is 16 ounces")]
+        f = [("унц", f"the parcel weighs {п['унц']} {G.by_count(п['унц'], 'ounces')}"), ("правило", "a pound is 16 ounces")]
         return f, "what is the weight in pounds?", lambda d: d["унц"] // 16 if d["унц"] % 16 == 0 else None, {"унц": п["унц"]}, {"унц": "the weight in ounces", "правило": "how many ounces make a pound"}
     if семья == "глубина":
-        f = [("w", f"the tank is {п['w']} feet wide"), ("l", f"it is {п['l']} feet long"), ("v", f"it holds {п['v']} cubic feet of water")]
+        f = [("w", f"the tank is {п['w']} {G.by_count(п['w'], 'feet')} wide"), ("l", f"it is {п['l']} {G.by_count(п['l'], 'feet')} long"), ("v", f"it holds {п['v']} cubic feet of water")]
         return f, "what is the tank's water depth in feet?", lambda d: d["v"] // (d["w"] * d["l"]) if d["v"] % (d["w"] * d["l"]) == 0 else None, {"w": п["w"], "l": п["l"], "v": п["v"]}, {"w": "the width of the tank", "l": "the length of the tank", "v": "how much water the tank holds"}
     if семья == "вероятность":
         f = [("r", f"a bag holds {п['r']} red {G.by_count(п['r'], 'marbles')}"), ("b", f"it holds {п['b']} blue {G.by_count(п['b'], 'marbles')}")]
         return f, "what is the probability of drawing a red marble, expressed as a fraction?", lambda d: f"{d['r']}/{d['r'] + d['b']}", {"r": п["r"], "b": п["b"]}, {"r": "how many red marbles the bag holds", "b": "how many blue marbles the bag holds"}
     if семья == "четверти":
-        f = [("часть", f"{п['часть']} pupils are {п['слово']} of the class")]
+        f = [("часть", f"{п['часть']} {G.by_count(п['часть'], 'pupils')} are {п['слово']} of the class")]
         return f, "how many pupils does the class have?", lambda d: d["часть"] * 4 // п["k"] if d["часть"] * 4 % п["k"] == 0 else None, {"часть": п["часть"]}, {"часть": f"how many pupils are {п['слово']} of the class"}
     if семья == "дополнение":
         род = п["род"]
         if род == 0:
-            f = [("было", f"there were originally {п['было']} cars in the lot"), ("ушло", f"{п['ушло']} drove away")]
+            f = [("было", f"there were originally {п['было']} {G.by_count(п['было'], 'cars')} in the lot"), ("ушло", f"{п['ушло']} drove away")]
             return f, "how many cars remain?", lambda d: d["было"] - d["ушло"], {"было": п["было"], "ушло": п["ушло"]}, {"было": "how many cars there were originally", "ушло": "how many cars drove away"}
         if род == 1:
-            f = [("было", f"the set has {п['было']} pieces"), ("осталось", f"{п['было'] - п['ушло']} pieces are in the box")]
+            f = [("было", f"the set has {п['было']} {G.by_count(п['было'], 'pieces')}"), ("осталось", f"{п['было'] - п['ушло']} {G.by_count(п['было'] - п['ушло'], 'pieces')} are in the box")]
             return f, "how many pieces are missing?", lambda d: d["было"] - d["осталось"], {"было": п["было"], "осталось": п["было"] - п["ушло"]}, {"было": "how many pieces the set has", "осталось": "how many pieces are in the box"}
-        f = [("было", f"there were {п['было']} people on the bus"), ("ушло", f"{п['ушло']} got off")]
+        f = [("было", f"there were {п['было']} {G.by_count(п['было'], 'people')} on the bus"), ("ушло", f"{п['ушло']} got off")]
         return f, "how many people are on the bus now?", lambda d: d["было"] - d["ушло"], {"было": п["было"], "ушло": п["ушло"]}, {"было": "how many people were on the bus", "ушло": "how many got off"}
     # ---- ВТОРОЙ СЛОЙ (03.09): семейства 9–17 и роды SVAMP; словесные
     # величины (доля, кратность) не входят в данные — их факт не
     # удаляется и не возмущается, программа замыкает их число.
     if семья == "население":
         доля = п["доля"]
-        f = [("всего", f"the town has {п['всего']} people"), ("доля", f"{п['слово']} of the whole population lives in the centre")]
+        f = [("всего", f"the town has {п['всего']} {G.by_count(п['всего'], 'people')}"), ("доля", f"{п['слово']} of the whole population lives in the centre")]
         return f, "how many people live in the centre?", lambda d: d["всего"] // доля if d["всего"] % доля == 0 else None, {"всего": п["всего"]}, {"всего": "how many people the town has", "доля": "what part of the population lives in the centre"}
     if семья == "команда":
         f = [("м", f"the number of boys on the team is {п['м']}"), ("д", f"the number of girls is {п['д']}")]
         return f, "how many players does the team have?", lambda d: d["м"] + d["д"], {"м": п["м"], "д": п["д"]}, {"м": "how many boys are on the team", "д": "how many girls are on the team"}
     if семья == "кратно":
         k = п["k"]
-        f = [("цена", f"the car cost {п['цена']} dollars"), ("k", f"the house cost {п['слово']} as much as the car")]
+        f = [("цена", f"the car cost {п['цена']} {G.by_count(п['цена'], 'dollars')}"), ("k", f"the house cost {п['слово']} as much as the car")]
         return f, "how much did the house cost in dollars?", lambda d: d["цена"] * k, {"цена": п["цена"]}, {"цена": "how much the car cost", "k": "how many times as much the house cost"}
     if семья == "проект":
         k = п["k"]
         f = [("старт", f"the design started with {п['старт']} panels"), ("k", f"it was {'doubled' if k == 2 else 'tripled'}"), ("минус", f"then it was reduced by {п['минус']}")]
         return f, "how many panels does the final design have?", lambda d: d["старт"] * k - d["минус"] if d["старт"] * k > d["минус"] else None, {"старт": п["старт"], "минус": п["минус"]}, {"старт": "how many panels the design started with", "k": "how many times the design grew", "минус": "by how many panels the design was reduced"}
     if семья == "окружность":
-        f = [("длина", f"the circumference of the earth is taken as {п['длина']} miles"), ("скорость", f"the plane flies {п['скорость']} miles per hour")]
+        f = [("длина", f"the circumference of the earth is taken as {п['длина']} {G.by_count(п['длина'], 'miles')}"), ("скорость", f"the plane flies {п['скорость']} {G.by_count(п['скорость'], 'miles')} per hour")]
         return f, "how many hours does the flight around the earth take?", lambda d: d["длина"] // d["скорость"] if d["длина"] % d["скорость"] == 0 else None, {"длина": п["длина"], "скорость": п["скорость"]}, {"длина": "the circumference of the earth", "скорость": "how fast the plane flies"}
     if семья == "верёвки":
-        f = [("всего", f"the total length of the ropes is {п['всего']} meters"), ("n", f"there are {п['n']} ropes")]
+        f = [("всего", f"the total length of the ropes is {п['всего']} {G.by_count(п['всего'], 'meters')}"), ("n", f"there are {п['n']} ropes")]
         return f, "how long is the average rope in meters?", lambda d: d["всего"] // d["n"] if d["всего"] % d["n"] == 0 else None, {"всего": п["всего"], "n": п["n"]}, {"всего": "the total length of the ropes", "n": "how many ropes there are"}
     if семья == "трое":
         k = п["k"]
         x, y, z = G.ИМЕНА_EN[п["a"] % len(G.ИМЕНА_EN)], G.ИМЕНА_EN[(п["a"] + 1) % len(G.ИМЕНА_EN)], G.ИМЕНА_EN[(п["a"] + 2) % len(G.ИМЕНА_EN)]
-        f = [("a", f"{x} has {п['a']} books"), ("больше", f"{y} has {п['больше']} more books than {x}"), ("k", f"{z} has {'twice' if k == 2 else 'three times'} as many books as {x}")]
+        f = [("a", f"{x} has {п['a']} {G.by_count(п['a'], 'books')}"), ("больше", f"{y} has {п['больше']} more books than {x}"), ("k", f"{z} has {'twice' if k == 2 else 'three times'} as many books as {x}")]
         return f, "how many books do they have together?", lambda d: d["a"] + (d["a"] + d["больше"]) + k * d["a"], {"a": п["a"], "больше": п["больше"]}, {"a": f"how many books {x} has", "больше": f"how many more books {y} has than {x}", "k": f"how many times as many books {z} has as {x}"}
     if семья == "ставка":
         x = G.ИМЕНА_EN[п["часы"] % len(G.ИМЕНА_EN)]
-        f = [("в_час", f"{x} makes {п['в_час']} candles an hour"), ("часы", f"{x} works {п['часы']} hours")]
+        f = [("в_час", f"{x} makes {п['в_час']} candles an hour"), ("часы", f"{x} works {п['часы']} {G.by_count(п['часы'], 'hours')}")]
         return f, f"how many candles does {x} make?", lambda d: d["в_час"] * d["часы"], {"в_час": п["в_час"], "часы": п["часы"]}, {"в_час": f"how many candles {x} makes an hour", "часы": f"how many hours {x} works"}
     if семья == "листки":
         x = G.ИМЕНА_EN[п["раз"] % len(G.ИМЕНА_EN)]
@@ -108,10 +108,10 @@ def факты_и_вопрос(семья, п):
         return f, f"how many post-it notes does {x} have left?", lambda d: d["было"] - d["раз"] - d["два"] if d["было"] >= d["раз"] + d["два"] else None, {"было": п["было"], "раз": п["раз"], "два": п["два"]}, {"было": f"how many post-it notes {x} had", "раз": "how many went on the fridge", "два": "how many went on the door"}
     if семья == "разница":
         x = G.ИМЕНА_EN[п["x"] % len(G.ИМЕНА_EN)]
-        f = [("x", f"{x} planted {п['x']} trees in the morning"), ("y", f"{x} planted {п['y']} trees in the afternoon")]
+        f = [("x", f"{x} planted {п['x']} {G.by_count(п['x'], 'trees')} in the morning"), ("y", f"{x} planted {п['y']} {G.by_count(п['y'], 'trees')} in the afternoon")]
         return f, f"how many more trees did {x} plant in the morning than in the afternoon?", lambda d: d["x"] - d["y"] if d["x"] > d["y"] else None, {"x": п["x"], "y": п["y"]}, {"x": "how many trees were planted in the morning", "y": "how many trees were planted in the afternoon"}
     if семья == "скидка":
-        f = [("цена", f"each pack costs {п['цена']} dollars"), ("скидка", f"there is a discount of {п['скидка']} dollars on each pack")]
+        f = [("цена", f"each pack costs {п['цена']} {G.by_count(п['цена'], 'dollars')}"), ("скидка", f"there is a discount of {п['скидка']} {G.by_count(п['скидка'], 'dollars')} on each pack")]
         return f, "how much do you have to pay for each pack in dollars?", lambda d: d["цена"] - d["скидка"] if d["цена"] > d["скидка"] else None, {"цена": п["цена"], "скидка": п["скидка"]}, {"цена": "how much each pack costs", "скидка": "how big the discount is"}
     if семья == "всего":
         x = G.ИМЕНА_EN[п["x"] % len(G.ИМЕНА_EN)]
@@ -124,7 +124,7 @@ def факты_и_вопрос(семья, п):
         f = [("x", f"{x} has {п['x']} {G.by_count(п['x'], en)} in one box"), ("y", f"{x} has {п['y']} {G.by_count(п['y'], en)} in another box")]
         return f, f"how many {en} does {x} have {слово}?", lambda d: d["x"] + d["y"], {"x": п["x"], "y": п["y"]}, {"x": f"how many {en} are in the first box", "y": f"how many {en} are in the second box"}
     if семья == "группы":
-        f = [("всего", f"there are {п['всего']} pupils"), ("n", f"they stand in groups of {п['n']}")]
+        f = [("всего", f"there are {п['всего']} {G.by_count(п['всего'], 'pupils')}"), ("n", f"they stand in groups of {п['n']}")]
         return f, "how many groups are there?", lambda d: d["всего"] // d["n"] if d["всего"] % d["n"] == 0 else None, {"всего": п["всего"], "n": п["n"]}, {"всего": "how many pupils there are", "n": "how big each group is"}
     # ---- ТРЕТИЙ СЛОЙ (03.09): роды SVAMP по массе e9 и остаток g1
     if семья == "полосы":
@@ -151,7 +151,7 @@ def факты_и_вопрос(семья, п):
             вопрос = f"how many more {a} than {b} were there?"
         else:
             на1, на2 = сл[0], сл[1]
-            f = [("x", f"{имя} spent {п['x']} dollars {на1}"), ("y", f"{имя} spent {п['y']} dollars {на2}")]
+            f = [("x", f"{имя} spent {п['x']} {G.by_count(п['x'], 'dollars')} {на1}"), ("y", f"{имя} spent {п['y']} {G.by_count(п['y'], 'dollars')} {на2}")]
             вопрос = f"how much more money did {имя} spend {на1} than {на2}?"
         нужды = {"x": f[0][1].replace(str(п["x"]), "how many", 1) if оч != 3 else f"how much money {имя} spent {сл[0]}",
                  "y": f[1][1].replace(str(п["y"]), "how many", 1) if оч != 3 else f"how much money {имя} spent {сл[1]}"}
@@ -165,34 +165,34 @@ def факты_и_вопрос(семья, п):
         return f, f"how many {в} did {имя} {г0} {когда}?", lambda d: d[ключ], {"a": п["a"], "b": п["b"], "c": п["c"]}, {"a": f"how many {в} {имя} {г} in the morning", "b": f"how many {в} {имя} {г} in the afternoon", "c": f"how many {в} {имя} {г} in the evening"}
     if семья == "остаток":
         что = "cakes" if п["свои"] else "pastries"
-        f = [("n", f"the baker made {п['n']} cakes"), ("m", f"the baker made {п['m']} pastries"), ("k", f"the baker sold {п['k']} {что}")]
+        f = [("n", f"the baker made {п['n']} {G.by_count(п['n'], 'cakes')}"), ("m", f"the baker made {п['m']} pastries"), ("k", f"the baker sold {п['k']} {что}")]
         return f, "how many cakes would the baker still have?", (lambda d: d["n"] - d["k"] if d["n"] >= d["k"] else None) if п["свои"] else (lambda d: d["n"]), {"n": п["n"], "m": п["m"], "k": п["k"]}, {"n": "how many cakes the baker made", "m": "how many pastries the baker made", "k": f"how many {что} the baker sold"}
     if семья == "класс":
         if п["род"] == 0:
-            f = [("g", f"there are {п['g']} girls in the class"), ("b", f"there are {п['b']} boys in the class")]
+            f = [("g", f"there are {п['g']} {G.by_count(п['g'], 'girls')} in the class"), ("b", f"there are {п['b']} {G.by_count(п['b'], 'boys')} in the class")]
             return f, "how many pupils are there in the class?", lambda d: d["g"] + d["b"], {"g": п["g"], "b": п["b"]}, {"g": "how many girls are in the class", "b": "how many boys are in the class"}
-        f = [("s", f"there are {п['s']} pupils in the class"), ("g", f"{п['g']} of them are girls")]
+        f = [("s", f"there are {п['s']} {G.by_count(п['s'], 'pupils')} in the class"), ("g", f"{п['g']} of them are girls")]
         return f, "how many boys are there in the class?", lambda d: d["s"] - d["g"] if d["s"] > d["g"] else None, {"s": п["s"], "g": п["g"]}, {"s": "how many pupils are in the class", "g": "how many of them are girls"}
     if семья == "деньги":
         имя = G.ИМЕНА_EN[п["n"] % len(G.ИМЕНА_EN)]
         en = G.ВЕЩИ[п["p"] % len(G.ВЕЩИ)][0]
         if п["род"] == 0:
-            f = [("n", f"{имя} bought {п['n']} {en}"), ("p", f"each of the {en} cost {п['p']} dollars")]
+            f = [("n", f"{имя} bought {п['n']} {en}"), ("p", f"each of the {en} cost {п['p']} {G.by_count(п['p'], 'dollars')}")]
             return f, f"how much money did {имя} spend?", lambda d: d["n"] * d["p"], {"n": п["n"], "p": п["p"]}, {"n": f"how many {en} {имя} bought", "p": f"how much each of the {en} cost"}
-        f = [("a", f"{имя} had {п['a']} dollars"), ("b", f"{имя} spent {п['b']} dollars")]
+        f = [("a", f"{имя} had {п['a']} {G.by_count(п['a'], 'dollars')}"), ("b", f"{имя} spent {п['b']} {G.by_count(п['b'], 'dollars')}")]
         return f, "how much money is left?", lambda d: d["a"] - d["b"] if d["a"] > d["b"] else None, {"a": п["a"], "b": п["b"]}, {"a": f"how much money {имя} had", "b": f"how much money {имя} spent"}
     if семья == "сдача":
         имя = G.ИМЕНА_EN[п["p"] % len(G.ИМЕНА_EN)]
-        f = [("n", f"{имя} gave the craftsman {п['n']} bills"), ("b", f"each bill is {п['b']} dollars"), ("p", f"the hat is worth {п['p']} dollars")]
+        f = [("n", f"{имя} gave the craftsman {п['n']} bills"), ("b", f"each bill is {п['b']} {G.by_count(п['b'], 'dollars')}"), ("p", f"the hat is worth {п['p']} {G.by_count(п['p'], 'dollars')}")]
         return f, f"how much change did {имя} get?", lambda d: d["n"] * d["b"] - d["p"] if d["n"] * d["b"] > d["p"] else None, {"n": п["n"], "b": п["b"], "p": п["p"]}, {"n": f"how many bills {имя} gave", "b": "how many dollars each bill is", "p": "how much the hat is worth"}
     if семья == "прибыль":
         имя = G.ИМЕНА_EN[п["p"] % len(G.ИМЕНА_EN)]
         a, b = п["a"], п["b"]
-        f = [("p", f"{имя} bought the magazines at {п['p']} dollars"), ("дробь", f"{имя} sells them at {a}/{b} of the price")]
+        f = [("p", f"{имя} bought the magazines at {п['p']} {G.by_count(п['p'], 'dollars')}"), ("дробь", f"{имя} sells them at {a}/{b} of the price")]
         return f, "what is the profit in dollars?", lambda d: d["p"] * a // b - d["p"] if d["p"] % b == 0 else None, {"p": п["p"]}, {"p": "how much the magazines were bought at", "дробь": "at what part of the price they are sold"}
     if семья == "завышение":
         имя = G.ИМЕНА_EN[п["n"] % len(G.ИМЕНА_EN)]
-        f = [("n", f"{имя} reported {п['n']} people at the concert"), ("q", f"the number was overstated by {п['q']} percent")]
+        f = [("n", f"{имя} reported {п['n']} {G.by_count(п['n'], 'people')} at the concert"), ("q", f"the number was overstated by {п['q']} percent")]
         return f, "how many people really attended?", lambda d: d["n"] * 100 // (100 + d["q"]) if d["n"] * 100 % (100 + d["q"]) == 0 else None, {"n": п["n"], "q": п["q"]}, {"n": "how many people were reported", "q": "by how many percent the number was overstated"}
     if семья == "половина":
         k, делить = п["k"], п["делить"]

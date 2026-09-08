@@ -247,9 +247,9 @@ def pass_shows(pass_i):
         чётный = spaced(list(нечёт) + [max(нечёт) + 1])
         сколько = len(нечёт) + 1
         нечётн = spaced(нечёт)
-        out.append(f"is there a single median of {нечётн}? yes: {нечётн} has {len(нечёт)} items, and {len(нечёт)} is odd.")
+        out.append(f"is there a single median of {нечётн}? yes: {нечётн} has {len(нечёт)} {by_count(len(нечёт), 'items')}, and {len(нечёт)} is odd.")
         out.append(f"есть ли единственная медиана у {нечётн}? да: у {нечётн} элементов {len(нечёт)}, а это нечётное число.")
-        out.append(f"is there a single median of {чётный}? no: {чётный} has {сколько} items, and {сколько} is even.")
+        out.append(f"is there a single median of {чётный}? no: {чётный} has {сколько} {by_count(сколько, 'items')}, and {сколько} is even.")
         out.append(f"есть ли единственная медиана у {чётный}? нет: у {чётный} элементов {сколько}, а это чётное число.")
         # --- счёт способов
         выб_en, выб_ru = f"{k} from {n}", f"{k} из {n}"
@@ -275,7 +275,7 @@ def pass_shows(pass_i):
                    f"{сочетаний}, arranging {k} of them gives "
                    f"{сочетаний * math.factorial(k)}.")
         # --- случай как счёт исходов
-        out.append(f"a trial has {всего} outcomes; {чему} happens in "
+        out.append(f"a trial has {всего} {by_count(всего, 'outcomes')}; {чему} happens in "
                    f"{благо} of them.")
         out.append(f"испытание имеет {всего} "
                    f"{rugram.форма('исход', всего)}; благоприятных "

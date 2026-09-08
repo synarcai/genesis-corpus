@@ -98,13 +98,13 @@ def отказ_алфавита(шаг):
             # степень двойки отвечает тем же вопросом ценой в битах.
             b = n.bit_length() - 1
             вон.append(f"how many bits does a sign of an alphabet of {n} "
-                       f"signs cost? a sign of an alphabet of {n} signs "
-                       f"costs {b} bits: 2^{b} = {n}.")
+                       f"signs cost? a sign of an alphabet of {n} {by_count(n, 'signs')} "
+                       f"costs {b} {by_count(b, 'bits')}: 2^{b} = {n}.")
             вон.append(f"сколько бит стоит знак алфавита в {n} "
                        f"{rugram.форма('знак', n)}? знак алфавита в {n} "
                        f"{rugram.форма('знак', n)} стоит {b} "
                        f"{rugram.форма('бит', b)}: 2^{b} = {n}.")
-            вон.append(спросить("whole_cost", f"{n} signs",
+            вон.append(спросить("whole_cost", f"{n} {by_count(n, 'signs')}",
                                 f"yes: {n} = 2^{b}, a sign costs {b} {by_count(b, 'bits')}."))
             вон.append(спросить("целая_цена", f"{n} {rugram.форма('знак', n)}",
                                 f"да: {n} = 2^{b}, знак стоит {b} {rugram.форма('бит', b)}."))
@@ -114,7 +114,7 @@ def отказ_алфавита(шаг):
         # frame with one polarity). The value question keeps its value
         # answers; wholeness is asked as its own question, and both answers
         # lie side by side — «yes» with the whole value, «no» with the reason.
-        вон.append(спросить("whole_cost", f"{n} signs", f"no: {n} is not a power of two."))
+        вон.append(спросить("whole_cost", f"{n} {by_count(n, 'signs')}", f"no: {n} is not a power of two."))
         вон.append(спросить("целая_цена", f"{n} {rugram.форма('знак', n)}",
                             f"нет: {n} {rugram.форма('знак', n)} — это не степень двойки."))
     return вон
@@ -290,7 +290,7 @@ def модель(шаг):
                    f"{rugram.форма('состояние', состояний)}; наблюдатель "
                    f"различает {различает}: управление "
                    f"{'возможно' if можно else 'невозможно'}.")
-        вон.append(f"the model of the system has {состояний} states; "
+        вон.append(f"the model of the system has {состояний} {by_count(состояний, 'states')}; "
                    f"the observer tells apart {различает}: control is "
                    f"{'possible' if можно else 'impossible'}.")
     return вон

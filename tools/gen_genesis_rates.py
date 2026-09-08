@@ -250,11 +250,11 @@ def трата(шаг):
         было = 20 + (шаг * 7 + i * 5) % 60
         потрачено = 3 + (шаг + i * 3) % 15
         осталось = было - потрачено
-        вон.append(f"he had {было} dollars and spent {потрачено} "
-                   f"dollars; he has {осталось} dollars left.")
+        вон.append(f"he had {было} {by_count(было, 'dollars')} and spent {потрачено} "
+                   f"dollars; he has {осталось} {by_count(осталось, 'dollars')} left.")
         вон.append(f"how much does he have left after spending "
-                   f"{потрачено} dollars of {было} dollars? he has "
-                   f"{осталось} dollars left.")
+                   f"{потрачено} {by_count(потрачено, 'dollars')} of {было} {by_count(было, 'dollars')}? he has "
+                   f"{осталось} {by_count(осталось, 'dollars')} left.")
         вон.append(f"у него было {было} "
                    f"{units.рус('rouble', было)}, он потратил "
                    f"{потрачено} {units.рус('rouble', потрачено)}; у "
@@ -271,9 +271,9 @@ def вместе_стоят(шаг):
         б = 4 + (шаг + i * 5) % 30
         (одна, ру_а), (вторая, ру_б) = (ВЕЩИ[i % len(ВЕЩИ)],
                                         ВЕЩИ[(i + 1) % len(ВЕЩИ)])
-        вон.append(f"the {одна} costs {а} dollars and the {вторая} "
-                   f"costs {б} dollars; the {одна} and the {вторая} "
-                   f"cost {а + б} dollars.")
+        вон.append(f"the {одна} costs {а} {by_count(а, 'dollars')} and the {вторая} "
+                   f"costs {б} {by_count(б, 'dollars')}; the {одна} and the {вторая} "
+                   f"cost {а + б} {by_count(а + б, 'dollars')}.")
         вон.append(f"{ру_а} стоит {а} {units.рус('rouble', а)}, а "
                    f"{ру_б} стоит {б} {units.рус('rouble', б)}; "
                    f"вместе они стоят {а + б} "
@@ -290,10 +290,10 @@ def доллары_и_центы(шаг):
         ц = 5 + (шаг * 7 + i * 11) % 90
         всего = д * k + ц
         дс, цс = _по_счёту(д, "dollar"), _по_счёту(ц, "cent")
-        вон.append(f"{д} {дс} and {ц} {цс} are {всего} cents.")
-        вон.append(f"{всего} cents are {д} {дс} and {ц} {цс}.")
+        вон.append(f"{д} {дс} and {ц} {цс} are {всего} {by_count(всего, 'cents')}.")
+        вон.append(f"{всего} {by_count(всего, 'cents')} are {д} {дс} and {ц} {цс}.")
         вон.append(f"how many cents are {д} {дс} and {ц} {цс}? "
-                   f"{д} {дс} and {ц} {цс} are {всего} cents.")
+                   f"{д} {дс} and {ц} {цс} are {всего} {by_count(всего, 'cents')}.")
         вон.append(f"{д} {units.рус('rouble', д)} {ц} "
                    f"{units.рус('kopeck', ц)} — это {всего} "
                    f"{units.рус('kopeck', всего)}.")

@@ -417,7 +417,7 @@ def показ_рамки(н):
         стоил_б = rugram.краткое(СТОИЛ, ру_бол)
         стоил_м = rugram.краткое(СТОИЛ, ру_мал)
         строки.append(
-            f"the {бол} cost {k * ц} dollars and the {мал} cost {ц} "
+            f"the {бол} cost {k * ц} {by_count(k * ц, 'dollars')} and the {мал} cost {ц} "
             f"dollars; the {бол} cost {фраза(k)} as much as the {мал}.")
         строки.append(
             f"{ру_бол} {стоил_б} {k * ц} {при_счёте('доллар', k * ц, True)}, "
@@ -425,7 +425,7 @@ def показ_рамки(н):
             f"{ру_бол} {стоил_б} {в_раза(k)} дороже, чем {ру_мал}.")
     else:
         строки.append(
-            f"the {бол} holds {a} cups of water and the {мал} holds {b} "
+            f"the {бол} holds {a} {by_count(a, 'cups')} of water and the {мал} holds {b} "
             f"{by_count(b, 'cups')} of water; the {бол} holds "
             f"{фраза(k)} as much water as the {мал}.")
         строки.append(
@@ -636,9 +636,9 @@ def показ_цены(н):
     долл_м = при_счёте("доллар", ц, True)
     return "\n".join([
         f"the {бол} cost {фраза(k)} as much as the {мал}; the "
-        f"{мал} cost {ц} dollars, so the {бол} cost {k * ц} dollars.",
-        f"the {мал} cost {ц} dollars and the {бол} cost {фраза(k)} as "
-        f"much; how much did the {бол} cost? {k * ц} dollars.",
+        f"{мал} cost {ц} {by_count(ц, 'dollars')}, so the {бол} cost {k * ц} {by_count(k * ц, 'dollars')}.",
+        f"the {мал} cost {ц} {by_count(ц, 'dollars')} and the {бол} cost {фраза(k)} as "
+        f"much; how much did the {бол} cost? {k * ц} {by_count(k * ц, 'dollars')}.",
         f"{ру_бол} {стоил_б} {НАРЕЧИЯ[k]} дороже, чем {ру_мал}; "
         f"{ру_мал} {стоил_м} {ц} {долл_м}, значит {ру_бол} {стоил_б} "
         f"{k * ц} {долл_б}.",

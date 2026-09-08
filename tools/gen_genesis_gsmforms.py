@@ -167,7 +167,7 @@ def процент(шаг, i):
     всего, часть, p = п["всего"], п["часть"], п["ответ"]
     ф = (шаг + i) % 4
     if ф == 0:
-        return (f"the class has {всего} pupils and {часть} of them are girls; the percentage of girls is {p} %: "
+        return (f"the class has {всего} {by_count(всего, 'pupils')} and {часть} of them are girls; the percentage of girls is {p} %: "
                 f"{часть} ÷ {всего} × 100 = {p}.")
     if ф == 1 and _ру_вопрос(шаг, i):
         return (f"если в классе {всего} {ру('ученик', всего)}, из них {часть} — {ру('девочка', часть)}, какова доля девочек в процентах? "
@@ -176,9 +176,9 @@ def процент(шаг, i):
         return (f"в классе {всего} {ру('ученик', всего)}, из них {часть} — {ру('девочка', часть)}; доля девочек — {p} %: "
                 f"{часть} ÷ {всего} × 100 = {p}.")
     if ф == 2:
-        return (f"the class has {всего} pupils and {часть} of them are girls; the percentage of girls is not {p + 5} %: it is {p} %.")
-    return (f"the class has {всего} pupils and {часть} of them are girls. what percentage of the class are girls? "
-            f"{всего} pupils and {часть} girls: {часть} ÷ {всего} × 100 = {p} %.")
+        return (f"the class has {всего} {by_count(всего, 'pupils')} and {часть} of them are girls; the percentage of girls is not {p + 5} %: it is {p} %.")
+    return (f"the class has {всего} {by_count(всего, 'pupils')} and {часть} of them are girls. what percentage of the class are girls? "
+            f"{всего} {by_count(всего, 'pupils')} and {часть} {by_count(часть, 'girls')}: {часть} ÷ {всего} × 100 = {p} %.")
 
 
 # ---------- 4. weight in pounds ----------
@@ -192,15 +192,15 @@ def фунты(шаг, i):
     унц, ф_ = п["унц"], п["ответ"]
     ф = (шаг + i) % 4
     if ф == 0:
-        return f"the parcel weighs {унц} ounces and a pound is 16 ounces; the weight in pounds is {ф_}: {унц} ÷ 16 = {ф_}."
+        return f"the parcel weighs {унц} {by_count(унц, 'ounces')} and a pound is 16 ounces; the weight in pounds is {ф_}: {унц} ÷ 16 = {ф_}."
     if ф == 1 and _ру_вопрос(шаг, i):
         return f"если посылка весит {унц} {ру('унция', унц)}, а в фунте 16 унций, каков вес в фунтах? {унц} ÷ 16 = {ф_}."
     if ф == 1:
         return (f"посылка весит {унц} {ру('унция', унц)}, а в фунте 16 унций; вес в фунтах — {ф_} {ру('фунт', ф_)}: "
                 f"{унц} ÷ 16 = {ф_}.")
     if ф == 2:
-        return f"the parcel weighs {унц} ounces and a pound is 16 ounces; the weight in pounds is not {ф_ + 1}: it is {ф_}."
-    return f"the parcel weighs {унц} ounces and a pound is 16 ounces. what is the weight in pounds? {унц} ounces: {унц} ÷ 16 = {ф_}."
+        return f"the parcel weighs {унц} {by_count(унц, 'ounces')} and a pound is 16 ounces; the weight in pounds is not {ф_ + 1}: it is {ф_}."
+    return f"the parcel weighs {унц} {by_count(унц, 'ounces')} and a pound is 16 ounces. what is the weight in pounds? {унц} {by_count(унц, 'ounces')}: {унц} ÷ 16 = {ф_}."
 
 
 # ---------- 5. water depth ----------
@@ -215,7 +215,7 @@ def глубина(шаг, i):
     w, l, v, h = п["w"], п["l"], п["v"], п["ответ"]
     ф = (шаг + i) % 4
     if ф == 0:
-        return (f"the tank is {w} feet wide and {l} feet long and holds {v} cubic feet of water; "
+        return (f"the tank is {w} {by_count(w, 'feet')} wide and {l} {by_count(l, 'feet')} long and holds {v} cubic feet of water; "
                 f"the tank's water depth is {h} {by_count(h, 'feet')}: {v} ÷ ({w} × {l}) = {h}.")
     if ф == 1 and _ру_вопрос(шаг, i):
         return (f"если бак шириной {w} {ру('фут', w)} и длиной {l} {ру('фут', l)} вмещает {v} кубических футов воды, "
@@ -224,9 +224,9 @@ def глубина(шаг, i):
         return (f"бак шириной {w} {ру('фут', w)} и длиной {l} {ру('фут', l)} вмещает {v} кубических футов воды; "
                 f"глубина воды в баке — {h} {ру('фут', h)}: {v} ÷ ({w} × {l}) = {h}.")
     if ф == 2:
-        return (f"the tank is {w} feet wide and {l} feet long and holds {v} cubic feet of water; "
-                f"the tank's water depth is not {h + 1} feet: it is {h} {by_count(h, 'feet')}.")
-    return (f"the tank is {w} feet wide and {l} feet long and holds {v} cubic feet of water. "
+        return (f"the tank is {w} {by_count(w, 'feet')} wide and {l} {by_count(l, 'feet')} long and holds {v} cubic feet of water; "
+                f"the tank's water depth is not {h + 1} {by_count(h + 1, 'feet')}: it is {h} {by_count(h, 'feet')}.")
+    return (f"the tank is {w} {by_count(w, 'feet')} wide and {l} {by_count(l, 'feet')} long and holds {v} cubic feet of water. "
             f"what is the tank's water depth? {w} by {l} holding {v}: {v} ÷ ({w} × {l}) = {h} {by_count(h, 'feet')}.")
 
 
@@ -273,13 +273,13 @@ def четверти(шаг, i):
     k, часть, целое, слово, ру_слово = п["k"], п["часть"], п["ответ"], п["слово"], п["ру_слово"]
     ф = (шаг + i) % 4
     if ф == 0:
-        return f"if {часть} is {слово} of the class, the class has {целое} pupils: {часть} ÷ {k} × 4 = {целое}."
+        return f"if {часть} is {слово} of the class, the class has {целое} {by_count(целое, 'pupils')}: {часть} ÷ {k} × 4 = {целое}."
     if ф == 1 and _ру_вопрос(шаг, i):
         return f"если {часть} — это {ру_слово} класса, сколько учеников в классе? {часть} ÷ {k} × 4 = {целое}."
     if ф == 1:
         return f"если {часть} — это {ру_слово} класса, в классе {целое} {ру('ученик', целое)}: {часть} ÷ {k} × 4 = {целое}."
     if ф == 2:
-        return f"if {часть} is {слово} of the class, the class does not have {целое + 4} pupils: it has {целое}."
+        return f"if {часть} is {слово} of the class, the class does not have {целое + 4} {by_count(целое + 4, 'pupils')}: it has {целое}."
     return f"if {часть} is {слово} of the class, how many pupils does the class have? {часть} ÷ {k} × 4 = {целое}."
 
 
@@ -299,33 +299,33 @@ def дополнение(шаг, i):
     ф = (шаг + i) % 4
     if род == 0:
         if ф == 0:
-            return f"there were originally {было} cars in the lot and {ушло} drove away; {осталось} {by_count(осталось, 'cars')} remain: {было} − {ушло} = {осталось}."
+            return f"there were originally {было} {by_count(было, 'cars')} in the lot and {ушло} drove away; {осталось} {by_count(осталось, 'cars')} remain: {было} − {ушло} = {осталось}."
         if ф == 1 and _ру_вопрос(шаг, i):
             return f"если на стоянке изначально было {было} {ру('машина', было)}, а {ушло} уехали, сколько машин осталось? {было} − {ушло} = {осталось}."
         if ф == 1:
             return f"на стоянке изначально было {было} {ру('машина', было)}, {ушло} уехали; осталось {осталось} {ру('машина', осталось)}: {было} − {ушло} = {осталось}."
         if ф == 2:
-            return f"there were originally {было} cars in the lot and {ушло} drove away; {осталось + 1} cars do not remain: {осталось} remain."
-        return f"if there were originally {было} cars in the lot and {ушло} drove away, how many cars remain? {было} − {ушло} = {осталось}."
+            return f"there were originally {было} {by_count(было, 'cars')} in the lot and {ушло} drove away; {осталось + 1} {by_count(осталось + 1, 'cars')} do not remain: {осталось} remain."
+        return f"if there were originally {было} {by_count(было, 'cars')} in the lot and {ушло} drove away, how many cars remain? {было} − {ушло} = {осталось}."
     if род == 1:
         if ф == 0:
-            return f"the set has {было} pieces and {осталось} are in the box; {ушло} {by_count(ушло, 'pieces')} {'are' if ушло != 1 else 'is'} missing: {было} − {осталось} = {ушло}."
+            return f"the set has {было} {by_count(было, 'pieces')} and {осталось} are in the box; {ушло} {by_count(ушло, 'pieces')} {'are' if ушло != 1 else 'is'} missing: {было} − {осталось} = {ушло}."
         if ф == 1 and _ру_вопрос(шаг, i):
             return f"если в наборе {было} {ру('деталь', было)}, а в коробке {осталось} {ру('деталь', осталось)}, сколько деталей не хватает? {было} − {осталось} = {ушло}."
         if ф == 1:
             return f"в наборе {было} {ру('деталь', было)}, в коробке {осталось} {ру('деталь', осталось)}; не хватает {ушло} {ру('деталь', ушло)}: {было} − {осталось} = {ушло}."
         if ф == 2:
-            return f"the set has {было} pieces and {осталось} are in the box; {ушло + 1} pieces are not missing: {ушло} {'are' if ушло != 1 else 'is'} missing."
-        return f"the set has {было} pieces and {осталось} are in the box. how many pieces are missing? {было} − {осталось} = {ушло}."
+            return f"the set has {было} {by_count(было, 'pieces')} and {осталось} are in the box; {ушло + 1} {by_count(ушло + 1, 'pieces')} are not missing: {ушло} {'are' if ушло != 1 else 'is'} missing."
+        return f"the set has {было} {by_count(было, 'pieces')} and {осталось} are in the box. how many pieces are missing? {было} − {осталось} = {ушло}."
     if ф == 0:
-        return f"there were {было} people on the bus and {ушло} got off; {осталось} people are on the bus now: {было} − {ушло} = {осталось}."
+        return f"there were {было} {by_count(было, 'people')} on the bus and {ушло} got off; {осталось} {by_count(осталось, 'people')} are on the bus now: {было} − {ушло} = {осталось}."
     if ф == 1 and _ру_вопрос(шаг, i):
         return f"если в автобусе было {было} {ру('человек', было)}, а {ушло} вышли, сколько человек в автобусе теперь? {было} − {ушло} = {осталось}."
     if ф == 1:
         return f"в автобусе было {было} {ру('человек', было)}, {ушло} вышли; теперь в автобусе {осталось} {ру('человек', осталось)}: {было} − {ушло} = {осталось}."
     if ф == 2:
-        return f"there were {было} people on the bus and {ушло} got off; the number of people on the bus now is not {осталось + 1}: it is {осталось}."
-    return f"if there were {было} people on the bus and {ушло} got off, how many people are on the bus now? {было} − {ушло} = {осталось}."
+        return f"there were {было} {by_count(было, 'people')} on the bus and {ушло} got off; the number of people on the bus now is not {осталось + 1}: it is {осталось}."
+    return f"if there were {было} {by_count(было, 'people')} on the bus and {ушло} got off, how many people are on the bus now? {было} − {ушло} = {осталось}."
 
 
 # ---------- 9. whole population lives in ----------
@@ -342,14 +342,14 @@ def население(шаг, i):
     всего, доля, часть, слово, ру_слово = п["всего"], п["доля"], п["ответ"], п["слово"], п["ру_слово"]
     ф = (шаг + i) % 4
     if ф == 0:
-        return f"the town has {всего} people and {слово} of the whole population lives in the centre; {часть} people live in the centre: {всего} ÷ {доля} = {часть}."
+        return f"the town has {всего} {by_count(всего, 'people')} and {слово} of the whole population lives in the centre; {часть} {by_count(часть, 'people')} live in the centre: {всего} ÷ {доля} = {часть}."
     if ф == 1 and _ру_вопрос(шаг, i):
         return f"если в городе {всего} {ру('человек', всего)}, и {ру_слово} всего населения живёт в центре, сколько человек живёт в центре? {всего} ÷ {доля} = {часть}."
     if ф == 1:
         return f"в городе {всего} {ру('человек', всего)}, и {ру_слово} всего населения живёт в центре; в центре живёт {часть} {ру('человек', часть)}: {всего} ÷ {доля} = {часть}."
     if ф == 2:
-        return f"the town has {всего} people and {слово} of the whole population lives in the centre; the number living in the centre is not {часть + 100}: it is {часть}."
-    return f"if the town has {всего} people and {слово} of the whole population lives in the centre, how many people live in the centre? {всего} people: {всего} ÷ {доля} = {часть}."
+        return f"the town has {всего} {by_count(всего, 'people')} and {слово} of the whole population lives in the centre; the number living in the centre is not {часть + 100}: it is {часть}."
+    return f"if the town has {всего} {by_count(всего, 'people')} and {слово} of the whole population lives in the centre, how many people live in the centre? {всего} {by_count(всего, 'people')}: {всего} ÷ {доля} = {часть}."
 
 
 # ---------- 10. number of boys on ----------
@@ -363,13 +363,13 @@ def команда(шаг, i):
     м, д, s = п["м"], п["д"], п["ответ"]
     ф = (шаг + i) % 4
     if ф == 0:
-        return f"the number of boys on the team is {м} and the number of girls is {д}; the team has {s} players: {м} + {д} = {s}."
+        return f"the number of boys on the team is {м} and the number of girls is {д}; the team has {s} {by_count(s, 'players')}: {м} + {д} = {s}."
     if ф == 1 and _ру_вопрос(шаг, i):
         return f"если в команде {м} {ру('мальчик', м)} и {д} {ру('девочка', д)}, сколько человек в команде? {м} + {д} = {s}."
     if ф == 1:
         return f"в команде {м} {ру('мальчик', м)} и {д} {ру('девочка', д)}; всего в команде {s} {ру('человек', s)}: {м} + {д} = {s}."
     if ф == 2:
-        return f"the number of boys on the team is {м} and the number of girls is {д}; the team does not have {s + 1} players: it has {s}."
+        return f"the number of boys on the team is {м} and the number of girls is {д}; the team does not have {s + 1} {by_count(s + 1, 'players')}: it has {s}."
     return f"if the number of boys on the team is {м} and the number of girls is {д}, how many players does the team have? {м} + {д} = {s}."
 
 
@@ -386,14 +386,14 @@ def кратно(шаг, i):
     k, цена, дом, слово, ру_ = п["k"], п["цена"], п["ответ"], п["слово"], п["ру_слово"]
     ф = (шаг + i) % 4
     if ф == 0:
-        return f"the car cost {цена} dollars and the house cost {слово} as much as the car; the house cost {дом} dollars: {цена} × {k} = {дом}."
+        return f"the car cost {цена} {by_count(цена, 'dollars')} and the house cost {слово} as much as the car; the house cost {дом} {by_count(дом, 'dollars')}: {цена} × {k} = {дом}."
     if ф == 1 and _ру_вопрос(шаг, i):
         return f"если машина стоила {цена} {ру('доллар', цена)}, а дом стоил {ру_} дороже машины, сколько стоил дом? {цена} {ру('доллар', цена)}: {цена} × {k} = {дом}."
     if ф == 1:
         return f"машина стоила {цена} {ру('доллар', цена)}, а дом стоил {ру_} дороже машины; дом стоил {дом} {ру('доллар', дом)}: {цена} × {k} = {дом}."
     if ф == 2:
-        return f"the car cost {цена} dollars and the house cost {слово} as much as the car; the house did not cost {дом + цена} dollars: it cost {дом}."
-    return f"if the car cost {цена} dollars and the house cost {слово} as much as the car, how much did the house cost? {цена} × {k} = {дом} dollars."
+        return f"the car cost {цена} {by_count(цена, 'dollars')} and the house cost {слово} as much as the car; the house did not cost {дом + цена} {by_count(дом + цена, 'dollars')}: it cost {дом}."
+    return f"if the car cost {цена} {by_count(цена, 'dollars')} and the house cost {слово} as much as the car, how much did the house cost? {цена} × {k} = {дом} {by_count(дом, 'dollars')}."
 
 
 # ---------- 12. final design ----------
@@ -433,14 +433,14 @@ def окружность(шаг, i):
     L, v, t = п["длина"], п["скорость"], п["ответ"]
     ф = (шаг + i) % 4
     if ф == 0:
-        return f"the circumference of the earth is taken as {L} miles and the plane flies {v} miles per hour; the flight around the earth takes {t} hours: {L} ÷ {v} = {t}."
+        return f"the circumference of the earth is taken as {L} {by_count(L, 'miles')} and the plane flies {v} {by_count(v, 'miles')} per hour; the flight around the earth takes {t} {by_count(t, 'hours')}: {L} ÷ {v} = {t}."
     if ф == 1 and _ру_вопрос(шаг, i):
         return f"если длину окружности земли берут за {L} {ру('миля', L)}, а самолёт летит {v} {ру('миля', v)} в час, сколько часов занимает полёт вокруг земли? {L} ÷ {v} = {t}."
     if ф == 1:
         return f"длину окружности земли берут за {L} {ру('миля', L)}, самолёт летит {v} {ру('миля', v)} в час; полёт вокруг земли занимает {t} {ру('час', t)}: {L} ÷ {v} = {t}."
     if ф == 2:
-        return f"the circumference of the earth is taken as {L} miles and the plane flies {v} miles per hour; the flight around the earth does not take {t + 1} hours: it takes {t}."
-    return f"if the circumference of the earth is {L} miles and the plane flies {v} miles per hour, how many hours does the flight around the earth take? {L} ÷ {v} = {t}."
+        return f"the circumference of the earth is taken as {L} {by_count(L, 'miles')} and the plane flies {v} {by_count(v, 'miles')} per hour; the flight around the earth does not take {t + 1} {by_count(t + 1, 'hours')}: it takes {t}."
+    return f"if the circumference of the earth is {L} {by_count(L, 'miles')} and the plane flies {v} {by_count(v, 'miles')} per hour, how many hours does the flight around the earth take? {L} ÷ {v} = {t}."
 
 
 # ---------- 14. ropes: total and average ----------
@@ -455,14 +455,14 @@ def верёвки(шаг, i):
     n, a, всего = п["n"], п["ответ"], п["всего"]
     ф = (шаг + i) % 4
     if ф == 0:
-        return f"the {n} ropes had a total length of {всего} meters; the average rope is {a} meters long: {всего} ÷ {n} = {a}."
+        return f"the {n} ropes had a total length of {всего} {by_count(всего, 'meters')}; the average rope is {a} {by_count(a, 'meters')} long: {всего} ÷ {n} = {a}."
     if ф == 1 and _ру_вопрос(шаг, i):
         return f"если общая длина верёвок {всего} {ру('метр', всего)}, а верёвок {n}, какова длина средней верёвки? {всего} ÷ {n} = {a}."
     if ф == 1:
         return f"{n} {ру('верёвка', n)} имели общую длину {всего} {ру('метр', всего)}; средняя верёвка длиной {a} {ру('метр', a)}: {всего} ÷ {n} = {a}."
     if ф == 2:
-        return f"the {n} ropes had a total length of {всего} meters; the average rope is not {a + 1} meters long: it is {a} meters."
-    return f"if the total length of the ropes is {всего} meters and there are {n} ropes, how long is the average rope? {всего} ÷ {n} = {a} meters."
+        return f"the {n} ropes had a total length of {всего} {by_count(всего, 'meters')}; the average rope is not {a + 1} {by_count(a + 1, 'meters')} long: it is {a} {by_count(a, 'meters')}."
+    return f"if the total length of the ropes is {всего} {by_count(всего, 'meters')} and there are {n} ropes, how long is the average rope? {всего} ÷ {n} = {a} {by_count(a, 'meters')}."
 
 
 # ---------- 15. together A, B and C ----------
@@ -482,14 +482,14 @@ def трое(шаг, i):
     ру_ = "вдвое" if k == 2 else "втрое"
     ф = (шаг + i) % 4
     if ф == 0:
-        return f"{x} has {a} books, {y} has {б} more books than {x}, and {z} has {слово} as many books as {x}; together {x}, {y} and {z} have {s} books: {a} + ({a} + {б}) + {k} × {a} = {s}."
+        return f"{x} has {a} {by_count(a, 'books')}, {y} has {б} more books than {x}, and {z} has {слово} as many books as {x}; together {x}, {y} and {z} have {s} {by_count(s, 'books')}: {a} + ({a} + {б}) + {k} × {a} = {s}."
     if ф == 1 and _ру_вопрос(шаг, i):
         return f"если {рx} имеет {a} {ру('книга', a)}, {рy} имеет на {б} {ру('книга', б)} больше, чем {рx}, а {рz} имеет {ру_} больше книг, чем {рx}, сколько книг у них вместе? {a} + ({a} + {б}) + {k} × {a} = {s}."
     if ф == 1:
         return f"{рx} имеет {a} {ру('книга', a)}, {рy} имеет на {б} {ру('книга', б)} больше, чем {рx}, а {рz} имеет {ру_} больше книг, чем {рx}; вместе у них {s} {ру('книга', s)}: {a} + ({a} + {б}) + {k} × {a} = {s}."
     if ф == 2:
-        return f"{x} has {a} books, {y} has {б} more books than {x}, and {z} has {слово} as many books as {x}; together they do not have {s + 1} books: they have {s}."
-    return f"if {x} has {a} books, {y} has {б} more books than {x}, and {z} has {слово} as many books as {x}, how many books do they have together? {a} + ({a} + {б}) + {k} × {a} = {s}."
+        return f"{x} has {a} {by_count(a, 'books')}, {y} has {б} more books than {x}, and {z} has {слово} as many books as {x}; together they do not have {s + 1} {by_count(s + 1, 'books')}: they have {s}."
+    return f"if {x} has {a} {by_count(a, 'books')}, {y} has {б} more books than {x}, and {z} has {слово} as many books as {x}, how many books do they have together? {a} + ({a} + {б}) + {k} × {a} = {s}."
 
 
 # ---------- 16. makes # candles: rate × time ----------
@@ -505,14 +505,14 @@ def ставка(шаг, i):
     имя, ру_имя = ИМЕНА_EN[(шаг + i) % len(ИМЕНА_EN)], ИМЕНА_RU[(шаг + i) % len(ИМЕНА_RU)]
     ф = (шаг + i) % 4
     if ф == 0:
-        return f"{имя} makes {r} candles an hour and works {t} hours; {имя} makes {s} candles: {r} × {t} = {s}."
+        return f"{имя} makes {r} candles an hour and works {t} {by_count(t, 'hours')}; {имя} makes {s} candles: {r} × {t} = {s}."
     if ф == 1 and _ру_вопрос(шаг, i):
         return f"если {ру_имя} делает {r} {ру('свеча', r)} в час и работает {t} {ру('час', t)}, сколько свечей делает {ру_имя}? {r} × {t} = {s}."
     if ф == 1:
         return f"{ру_имя} делает {r} {ру('свеча', r)} в час и работает {t} {ру('час', t)}; {ру_имя} делает {s} {ру('свеча', s)}: {r} × {t} = {s}."
     if ф == 2:
-        return f"{имя} makes {r} candles an hour and works {t} hours; {имя} does not make {s + r} candles: {имя} makes {s}."
-    return f"if {имя} makes {r} candles an hour and works {t} hours, how many candles does {имя} make? {r} × {t} = {s}."
+        return f"{имя} makes {r} candles an hour and works {t} {by_count(t, 'hours')}; {имя} does not make {s + r} candles: {имя} makes {s}."
+    return f"if {имя} makes {r} candles an hour and works {t} {by_count(t, 'hours')}, how many candles does {имя} make? {r} × {t} = {s}."
 
 
 # ---------- 17. post-it notes: several subtractions ----------
@@ -555,14 +555,14 @@ def разница(шаг, i):
     имя, ру_имя = ИМЕНА_EN[(шаг + i) % len(ИМЕНА_EN)], ИМЕНА_RU[(шаг + i) % len(ИМЕНА_RU)]
     ф = (шаг + i) % 4
     if ф == 0:
-        return f"{имя} planted {x} trees in the morning and {y} trees in the afternoon; {имя} planted {d} more trees in the morning than in the afternoon: {x} − {y} = {d}."
+        return f"{имя} planted {x} {by_count(x, 'trees')} in the morning and {y} {by_count(y, 'trees')} in the afternoon; {имя} planted {d} more trees in the morning than in the afternoon: {x} − {y} = {d}."
     if ф == 1 and _ру_вопрос(шаг, i):
         return f"если {ру_имя} утром {гл(ру_имя, 'посадил')} {x} {ру('дерево', x)}, а днём {y} {ру('дерево', y)}, на сколько деревьев больше утром, чем днём? {x} − {y} = {d}."
     if ф == 1:
         return f"{ру_имя} утром {гл(ру_имя, 'посадил')} {x} {ру('дерево', x)}, а днём {y} {ру('дерево', y)}; утром на {d} {ру('дерево', d)} больше, чем днём: {x} − {y} = {d}."
     if ф == 2:
-        return f"{имя} planted {x} trees in the morning and {y} trees in the afternoon; {имя} did not plant {d + 1} more trees in the morning than in the afternoon: {d} more."
-    return f"if {имя} planted {x} trees in the morning and {y} trees in the afternoon, how many more trees did {имя} plant in the morning than in the afternoon? {x} − {y} = {d}."
+        return f"{имя} planted {x} {by_count(x, 'trees')} in the morning and {y} {by_count(y, 'trees')} in the afternoon; {имя} did not plant {d + 1} more trees in the morning than in the afternoon: {d} more."
+    return f"if {имя} planted {x} {by_count(x, 'trees')} in the morning and {y} {by_count(y, 'trees')} in the afternoon, how many more trees did {имя} plant in the morning than in the afternoon? {x} − {y} = {d}."
 
 
 # ---------- SVAMP: price, discount, how much to pay ----------
@@ -577,14 +577,14 @@ def скидка(шаг, i):
     ц, с, п_ = п["цена"], п["скидка"], п["ответ"]
     ф = (шаг + i) % 4
     if ф == 0:
-        return f"each pack costs {ц} dollars and there is a discount of {с} dollars on each pack; you have to pay {п_} dollars for each pack: {ц} − {с} = {п_}."
+        return f"each pack costs {ц} {by_count(ц, 'dollars')} and there is a discount of {с} {by_count(с, 'dollars')} on each pack; you have to pay {п_} {by_count(п_, 'dollars')} for each pack: {ц} − {с} = {п_}."
     if ф == 1 and _ру_вопрос(шаг, i):
         return f"если каждая пачка стоит {ц} {ру('доллар', ц)}, и на каждую пачку скидка {с} {ру('доллар', с)}, сколько надо заплатить за каждую пачку? {ц} − {с} = {п_}."
     if ф == 1:
         return f"каждая пачка стоит {ц} {ру('доллар', ц)}, и на каждую пачку скидка {с} {ру('доллар', с)}; за каждую пачку надо заплатить {п_} {ру('доллар', п_)}: {ц} − {с} = {п_}."
     if ф == 2:
-        return f"each pack costs {ц} dollars and there is a discount of {с} dollars on each pack; you do not have to pay {ц} dollars for each pack: you pay {п_}."
-    return f"if each pack costs {ц} dollars and there is a discount of {с} dollars on each pack, how much do you have to pay for each pack? {ц} dollars: {ц} − {с} = {п_} dollars."
+        return f"each pack costs {ц} {by_count(ц, 'dollars')} and there is a discount of {с} {by_count(с, 'dollars')} on each pack; you do not have to pay {ц} {by_count(ц, 'dollars')} for each pack: you pay {п_}."
+    return f"if each pack costs {ц} {by_count(ц, 'dollars')} and there is a discount of {с} {by_count(с, 'dollars')} on each pack, how much do you have to pay for each pack? {ц} {by_count(ц, 'dollars')}: {ц} − {с} = {п_} {by_count(п_, 'dollars')}."
 
 
 # ---------- SVAMP: left / in all / altogether ----------
@@ -637,14 +637,14 @@ def группы(шаг, i):
     n, всего_, g = п["n"], п["всего"], п["ответ"]
     ф = (шаг + i) % 4
     if ф == 0:
-        return f"there are {всего_} pupils and they stand in groups of {n}; there are {g} groups: {всего_} ÷ {n} = {g}."
+        return f"there are {всего_} {by_count(всего_, 'pupils')} and they stand in groups of {n}; there are {g} groups: {всего_} ÷ {n} = {g}."
     if ф == 1 and _ру_вопрос(шаг, i):
         return f"если {всего_} {ру('ученик', всего_)} стоят группами по {n}, сколько групп? {всего_} ÷ {n} = {g}."
     if ф == 1:
         return f"{всего_} {ру('ученик', всего_)} стоят группами по {n}; групп {g}: {всего_} ÷ {n} = {g}."
     if ф == 2:
-        return f"there are {всего_} pupils and they stand in groups of {n}; there are not {g + 1} groups: there are {g}."
-    return f"if there are {всего_} pupils and they stand in groups of {n}, how many groups are there? {всего_} ÷ {n} = {g}."
+        return f"there are {всего_} {by_count(всего_, 'pupils')} and they stand in groups of {n}; there are not {g + 1} groups: there are {g}."
+    return f"if there are {всего_} {by_count(всего_, 'pupils')} and they stand in groups of {n}, how many groups are there? {всего_} ÷ {n} = {g}."
 
 
 # ---------- ОСТАТОК ДЕЛЕНИЯ: группы не всегда полны ----------
@@ -676,7 +676,7 @@ def остаток_деления(шаг, i):
     # спрашивать не о том, что показано.
     ф = (шаг + i) % 4
     if ф == 0:
-        return (f"there are {T} pupils and they stand in groups of {n}; there are {g} groups and "
+        return (f"there are {T} {by_count(T, 'pupils')} and they stand in groups of {n}; there are {g} groups and "
                 f"{r} {by_count(r, 'pupils')} left over: {n} × {g} = {ng}, {T} − {ng} = {r}.")
     if ф == 1:
         return (f"{T} {ру('ученик', T)} стоят группами по {n}; групп {g}, вне групп "
@@ -684,7 +684,7 @@ def остаток_деления(шаг, i):
     if ф == 2:
         return (f"если {T} {ру('ученик', T)} стоят группами по {n}, сколько учеников вне групп? "
                 f"{n} × {g} = {ng}, {T} − {ng} = {r}.")
-    return (f"if there are {T} pupils and they stand in groups of {n}, how many pupils are left "
+    return (f"if there are {T} {by_count(T, 'pupils')} and they stand in groups of {n}, how many pupils are left "
             f"over? {n} × {g} = {ng}, {T} − {ng} = {r}.")
 
 
@@ -825,14 +825,14 @@ def больше(шаг, i):
         return f"if {д1} {г} {x} {в} and {д2} {г} {y} {в}, how many more {в} did {д1} {г0} than {д2}? {x} − {y} = {d}."
     на1, на2, р1, р2 = п["слова"]
     if ф == 0:
-        return f"{имя} spent {x} dollars {на1} and {y} dollars {на2}; {имя} spent {d} {by_count(d, 'dollars')} more {на1} than {на2}: {x} − {y} = {d}."
+        return f"{имя} spent {x} {by_count(x, 'dollars')} {на1} and {y} {by_count(y, 'dollars')} {на2}; {имя} spent {d} {by_count(d, 'dollars')} more {на1} than {на2}: {x} − {y} = {d}."
     if ф == 1 and _ру_вопрос(шаг, i):
         return f"если {ру_имя} {гл(ру_имя, 'потратил')} {x} {ру('доллар', x)} {р1} и {y} {ру('доллар', y)} {р2}, на сколько долларов больше потрачено {р1}, чем {р2}? {x} − {y} = {d}."
     if ф == 1:
         return f"{ру_имя} {гл(ру_имя, 'потратил')} {x} {ру('доллар', x)} {р1} и {y} {ру('доллар', y)} {р2}; {р1} на {d} {ру('доллар', d)} больше, чем {р2}: {x} − {y} = {d}."
     if ф == 2:
-        return f"{имя} spent {x} dollars {на1} and {y} dollars {на2}; {имя} did not spend {d + 1} dollars more {на1} than {на2}: {d} more."
-    return f"if {имя} spent {x} dollars {на1} and {y} dollars {на2}, how much more money did {имя} spend {на1} than {на2}? {x} − {y} = {d} {by_count(d, 'dollars')}."
+        return f"{имя} spent {x} {by_count(x, 'dollars')} {на1} and {y} {by_count(y, 'dollars')} {на2}; {имя} did not spend {d + 1} {by_count(d + 1, 'dollars')} more {на1} than {на2}: {d} more."
+    return f"if {имя} spent {x} {by_count(x, 'dollars')} {на1} and {y} {by_count(y, 'dollars')} {на2}, how much more money did {имя} spend {на1} than {на2}? {x} − {y} = {d} {by_count(d, 'dollars')}."
 
 
 # --- 23. отбор среди отвлекающих чисел: how many X did A V in the afternoon ---
@@ -895,7 +895,7 @@ def остаток(шаг, i):
     основание = f"{n} − {k} = {r}" if свои else "the pastries sold are not cakes"
     ф = ((шаг + i) // 2 + шаг) % 4
     if ф == 0:
-        return f"the baker made {n} cakes and {m} pastries and sold {k} {что}; the baker still has {r} cakes: {основание}."
+        return f"the baker made {n} {by_count(n, 'cakes')} and {m} pastries and sold {k} {что}; the baker still has {r} {by_count(r, 'cakes')}: {основание}."
     if ф == 1 and _ру_вопрос(шаг, i):
         return (f"если пекарь испёк {n} {ру('торт', n)} и {m} {ру('булочка', m)} и продал {k} {что_ру}, сколько тортов осталось? "
                 f"{n} {ру('торт', n)}; {m} {ру('булочка', m)} не в счёт; {n} − {k} = {r}." if свои else
@@ -905,10 +905,10 @@ def остаток(шаг, i):
         осн_ру = f"{n} − {k} = {r}" if свои else "проданы булочки, не торты"
         return f"пекарь испёк {n} {ру('торт', n)} и {m} {ру('булочка', m)} и продал {k} {что_ру}; тортов осталось {r}: {осн_ру}."
     if ф == 2:
-        return f"the baker made {n} cakes and {m} pastries and sold {k} {что}; the baker does not still have {r + 1} cakes: the baker has {r}."
+        return f"the baker made {n} {by_count(n, 'cakes')} and {m} pastries and sold {k} {что}; the baker does not still have {r + 1} {by_count(r + 1, 'cakes')}: the baker has {r}."
     if свои:
-        return f"if the baker made {n} cakes and {m} pastries and sold {k} cakes, how many cakes would the baker still have? {n} cakes; the {m} pastries do not count; {n} − {k} = {r}."
-    return f"if the baker made {n} cakes and {m} pastries and sold {k} pastries, how many cakes would the baker still have? {n} cakes; the pastries sold are not cakes."
+        return f"if the baker made {n} {by_count(n, 'cakes')} and {m} pastries and sold {k} {by_count(k, 'cakes')}, how many cakes would the baker still have? {n} {by_count(n, 'cakes')}; the {m} pastries do not count; {n} − {k} = {r}."
+    return f"if the baker made {n} {by_count(n, 'cakes')} and {m} pastries and sold {k} pastries, how many cakes would the baker still have? {n} {by_count(n, 'cakes')}; the pastries sold are not cakes."
 
 
 # --- 25. класс: сумма и разность носителей ---
@@ -924,23 +924,23 @@ def класс(шаг, i):
     ф = ((шаг + i) // 2 + шаг) % 4
     if род == 0:
         if ф == 0:
-            return f"there are {g} girls and {b} boys in the class; the class has {s} pupils: {g} + {b} = {s}."
+            return f"there are {g} {by_count(g, 'girls')} and {b} {by_count(b, 'boys')} in the class; the class has {s} {by_count(s, 'pupils')}: {g} + {b} = {s}."
         if ф == 1 and _ру_вопрос(шаг, i):
             return f"если в классе {g} {ру('девочка', g)} и {b} {ру('мальчик', b)}, сколько учеников в классе? {g} + {b} = {s}."
         if ф == 1:
             return f"в классе {g} {ру('девочка', g)} и {b} {ру('мальчик', b)}; в классе {s} {ру('ученик', s)}: {g} + {b} = {s}."
         if ф == 2:
-            return f"there are {g} girls and {b} boys in the class; the class does not have {s + 1} pupils: it has {s}."
-        return f"if there are {g} girls and {b} boys in the class, how many pupils are there in the class? {g} + {b} = {s}."
+            return f"there are {g} {by_count(g, 'girls')} and {b} {by_count(b, 'boys')} in the class; the class does not have {s + 1} {by_count(s + 1, 'pupils')}: it has {s}."
+        return f"if there are {g} {by_count(g, 'girls')} and {b} {by_count(b, 'boys')} in the class, how many pupils are there in the class? {g} + {b} = {s}."
     if ф == 0:
-        return f"there are {s} pupils in the class and {g} of them are girls; there are {b} boys in the class: {s} − {g} = {b}."
+        return f"there are {s} {by_count(s, 'pupils')} in the class and {g} of them are girls; there are {b} {by_count(b, 'boys')} in the class: {s} − {g} = {b}."
     if ф == 1 and _ру_вопрос(шаг, i):
         return f"если в классе {s} {ру('ученик', s)}, из них {g} {ру('девочка', g)}, сколько мальчиков в классе? {s} − {g} = {b}."
     if ф == 1:
         return f"в классе {s} {ру('ученик', s)}, из них {g} {ру('девочка', g)}; в классе {b} {ру('мальчик', b)}: {s} − {g} = {b}."
     if ф == 2:
-        return f"there are {s} pupils in the class and {g} of them are girls; there are not {b + 1} boys in the class: there are {b}."
-    return f"if there are {s} pupils in the class and {g} of them are girls, how many boys are there in the class? {s} − {g} = {b}."
+        return f"there are {s} {by_count(s, 'pupils')} in the class and {g} of them are girls; there are not {b + 1} {by_count(b + 1, 'boys')} in the class: there are {b}."
+    return f"if there are {s} {by_count(s, 'pupils')} in the class and {g} of them are girls, how many boys are there in the class? {s} − {g} = {b}."
 
 
 # --- 26. деньги: потратил n × p; осталось a − b ---
@@ -960,23 +960,23 @@ def деньги(шаг, i):
     ф = ((шаг + i) // 2 + шаг) % 4
     if род == 0:
         if ф == 0:
-            return f"{имя} bought {n} {by_count(n, en)} at {p} dollars each; {имя} spent {отв} dollars: {n} × {p} = {отв}."
+            return f"{имя} bought {n} {by_count(n, en)} at {p} {by_count(p, 'dollars')} each; {имя} spent {отв} {by_count(отв, 'dollars')}: {n} × {p} = {отв}."
         if ф == 1 and _ру_вопрос(шаг, i):
             return f"если {ру_имя} {гл(ру_имя, 'купил')} {n} {ру(вещь, n)} по {p} {ру('доллар', p)}, сколько денег {ру_имя} {гл(ру_имя, 'потратил')}? {n} × {p} = {отв}."
         if ф == 1:
             return f"{ру_имя} {гл(ру_имя, 'купил')} {n} {ру(вещь, n)} по {p} {ру('доллар', p)}; {ру_имя} {гл(ру_имя, 'потратил')} {отв} {ру('доллар', отв)}: {n} × {p} = {отв}."
         if ф == 2:
-            return f"{имя} bought {n} {by_count(n, en)} at {p} dollars each; {имя} did not spend {отв + p} dollars: {имя} spent {отв}."
-        return f"if {имя} bought {n} {by_count(n, en)} at {p} dollars each, how much money did {имя} spend? {n} × {p} = {отв} dollars."
+            return f"{имя} bought {n} {by_count(n, en)} at {p} {by_count(p, 'dollars')} each; {имя} did not spend {отв + p} {by_count(отв + p, 'dollars')}: {имя} spent {отв}."
+        return f"if {имя} bought {n} {by_count(n, en)} at {p} {by_count(p, 'dollars')} each, how much money did {имя} spend? {n} × {p} = {отв} {by_count(отв, 'dollars')}."
     if ф == 0:
-        return f"{имя} had {a} dollars and spent {b} dollars; {имя} has {отв} dollars left: {a} − {b} = {отв}."
+        return f"{имя} had {a} {by_count(a, 'dollars')} and spent {b} {by_count(b, 'dollars')}; {имя} has {отв} {by_count(отв, 'dollars')} left: {a} − {b} = {отв}."
     if ф == 1 and _ру_вопрос(шаг, i):
         return f"если у {кого(ру_имя)} было {a} {ру('доллар', a)}, а {ру_имя} {гл(ру_имя, 'потратил')} {b} {ру('доллар', b)}, сколько денег осталось? {a} − {b} = {отв}."
     if ф == 1:
         return f"у {кого(ру_имя)} было {a} {ру('доллар', a)}, {ру_имя} {гл(ру_имя, 'потратил')} {b} {ру('доллар', b)}; осталось {отв} {ру('доллар', отв)}: {a} − {b} = {отв}."
     if ф == 2:
-        return f"{имя} had {a} dollars and spent {b} dollars; {имя} does not have {отв + 1} dollars left: {имя} has {отв}."
-    return f"if {имя} had {a} dollars and spent {b} dollars, how much money is left? {a} − {b} = {отв} dollars."
+        return f"{имя} had {a} {by_count(a, 'dollars')} and spent {b} {by_count(b, 'dollars')}; {имя} does not have {отв + 1} {by_count(отв + 1, 'dollars')} left: {имя} has {отв}."
+    return f"if {имя} had {a} {by_count(a, 'dollars')} and spent {b} {by_count(b, 'dollars')}, how much money is left? {a} − {b} = {отв} {by_count(отв, 'dollars')}."
 
 
 # --- 27. сдача: n купюр по b за вещь ценой p (g1.38) ---
@@ -993,14 +993,14 @@ def сдача(шаг, i):
     имя, ру_имя = ИМЕНА_EN[(шаг + i) % len(ИМЕНА_EN)], ИМЕНА_RU[(шаг + i) % len(ИМЕНА_RU)]
     ф = (шаг + i) % 4
     if ф == 0:
-        return f"{имя} gave the craftsman {n} {b}-dollar bills for a hat worth {p} dollars; the change is {c} dollars: {n} × {b} − {p} = {c}."
+        return f"{имя} gave the craftsman {n} {b}-dollar bills for a hat worth {p} {by_count(p, 'dollars')}; the change is {c} {by_count(c, 'dollars')}: {n} × {b} − {p} = {c}."
     if ф == 1 and _ру_вопрос(шаг, i):
         return f"если {ру_имя} {гл(ру_имя, 'дал')} мастеру {n} {ру('купюра', n)} по {b} {ру('доллар', b)} за шляпу ценой {p} {ру('доллар', p)}, какова сдача? {n} × {b} − {p} = {c}."
     if ф == 1:
         return f"{ру_имя} {гл(ру_имя, 'дал')} мастеру {n} {ру('купюра', n)} по {b} {ру('доллар', b)} за шляпу ценой {p} {ру('доллар', p)}; сдача {c} {ру('доллар', c)}: {n} × {b} − {p} = {c}."
     if ф == 2:
-        return f"{имя} gave the craftsman {n} {b}-dollar bills for a hat worth {p} dollars; the change is not {c + 1} dollars: it is {c}."
-    return f"if {имя} gave the craftsman {n} {b}-dollar bills for a hat worth {p} dollars, how much change did {имя} get? {n} × {b} − {p} = {c} dollars."
+        return f"{имя} gave the craftsman {n} {b}-dollar bills for a hat worth {p} {by_count(p, 'dollars')}; the change is not {c + 1} {by_count(c + 1, 'dollars')}: it is {c}."
+    return f"if {имя} gave the craftsman {n} {b}-dollar bills for a hat worth {p} {by_count(p, 'dollars')}, how much change did {имя} get? {n} × {b} − {p} = {c} {by_count(c, 'dollars')}."
 
 
 # --- 28. прибыль при цене a/b от закупочной (g1.58) ---
@@ -1019,14 +1019,14 @@ def прибыль(шаг, i):
     имя, ру_имя = ИМЕНА_EN[(шаг + i) % len(ИМЕНА_EN)], ИМЕНА_RU[(шаг + i) % len(ИМЕНА_RU)]
     ф = (шаг + i) % 4
     if ф == 0:
-        return f"{имя} bought the magazines at {p} dollars and sells them at {a}/{b} of the price; the profit is {r} dollars: {p} × {a} ÷ {b} − {p} = {r}."
+        return f"{имя} bought the magazines at {p} {by_count(p, 'dollars')} and sells them at {a}/{b} of the price; the profit is {r} {by_count(r, 'dollars')}: {p} × {a} ÷ {b} − {p} = {r}."
     if ф == 1 and _ру_вопрос(шаг, i):
         return f"если {ру_имя} {гл(ру_имя, 'купил')} журналы за {p} {ру('доллар', p)} и продаёт их за {a}/{b} цены, какова прибыль? {p} × {a} ÷ {b} − {p} = {r}."
     if ф == 1:
         return f"{ру_имя} {гл(ру_имя, 'купил')} журналы за {p} {ру('доллар', p)} и продаёт их за {a}/{b} цены; прибыль {r} {ру('доллар', r)}: {p} × {a} ÷ {b} − {p} = {r}."
     if ф == 2:
-        return f"{имя} bought the magazines at {p} dollars and sells them at {a}/{b} of the price; the profit is not {r + 1} dollars: it is {r}."
-    return f"if {имя} bought the magazines at {p} dollars and sells them at {a}/{b} of the price, what is the profit? {p} × {a} ÷ {b} − {p} = {r} dollars."
+        return f"{имя} bought the magazines at {p} {by_count(p, 'dollars')} and sells them at {a}/{b} of the price; the profit is not {r + 1} {by_count(r + 1, 'dollars')}: it is {r}."
+    return f"if {имя} bought the magazines at {p} {by_count(p, 'dollars')} and sells them at {a}/{b} of the price, what is the profit? {p} × {a} ÷ {b} − {p} = {r} {by_count(r, 'dollars')}."
 
 
 # --- 29. завышение на q процентов (g1.45) ---
@@ -1045,14 +1045,14 @@ def завышение(шаг, i):
     имя, ру_имя = ИМЕНА_EN[(шаг + i) % len(ИМЕНА_EN)], ИМЕНА_RU[(шаг + i) % len(ИМЕНА_RU)]
     ф = (шаг + i) % 4
     if ф == 0:
-        return f"{имя} reported {n} people at the concert, overstating the number by {q} percent; {r} people really attended: {n} × 100 ÷ (100 + {q}) = {r}."
+        return f"{имя} reported {n} {by_count(n, 'people')} at the concert, overstating the number by {q} percent; {r} {by_count(r, 'people')} really attended: {n} × 100 ÷ (100 + {q}) = {r}."
     if ф == 1 and _ру_вопрос(шаг, i):
         return f"если {ру_имя} {гл(ру_имя, 'сообщил')}, что на концерте было {n} {ру('человек', n)}, завысив число на {q} {ру('процент', q)}, сколько человек было на самом деле? {n} × 100 ÷ (100 + {q}) = {r}."
     if ф == 1:
         return f"{ру_имя} {гл(ру_имя, 'сообщил')}, что на концерте было {n} {ру('человек', n)}, завысив число на {q} {ру('процент', q)}; на самом деле было {r} {ру('человек', r)}: {n} × 100 ÷ (100 + {q}) = {r}."
     if ф == 2:
-        return f"{имя} reported {n} people at the concert, overstating the number by {q} percent; the real number is not {n}: it is {r}."
-    return f"if {имя} reported {n} people at the concert, overstating the number by {q} percent, how many people really attended? {n} × 100 ÷ (100 + {q}) = {r}."
+        return f"{имя} reported {n} {by_count(n, 'people')} at the concert, overstating the number by {q} percent; the real number is not {n}: it is {r}."
+    return f"if {имя} reported {n} {by_count(n, 'people')} at the concert, overstating the number by {q} percent, how many people really attended? {n} × 100 ÷ (100 + {q}) = {r}."
 
 
 # --- 30. половина / кратно и всего (g1.10) ---
@@ -1098,20 +1098,25 @@ def части(шаг, i):
     k, лот, дом, всего, слово, ру_ = п["k"], п["лот"], п["дом"], п["всего"], п["слово"], п["ру_слово"]
     # the whole opens the ledger (М-145: the answer opens with the question's
     # first quantity); the link «k + 1» that made the divisor stands after it
+    # ДВА МЕСТА ЗАКОНУ НЕ ОТДАНЫ, И СКАЗАНО ПОЧЕМУ (08.09). Ниже слово «dollars» стои́т ПОСЛЕ
+    # ЛЕДЖЕРА, а не после счёта: «…how much did the lot cost? 330 ÷ 3 = 110, 2 + 1 = 3 dollars».
+    # Числом, правящим формой, было бы 110 — ответ, — а не 3, последнее число цепи. Позвать сюда
+    # закон значило бы согласовать имя с ЧУЖИМ числом, и прибор половинчатого закона считает эти
+    # два места по праву: долг тут не в вызове, а в самой фразе, где мера прилипла к леджеру.
     лот_осн = f"{всего} ÷ {k + 1} = {лот}, {k} + 1 = {k + 1}"
     дом_осн = f"{всего} ÷ {k + 1} = {лот}, {лот} × {k} = {дом}"
     ф = (шаг + i) % 4
     if ф == 0:
-        return f"a house and a lot cost {всего} dollars and the house cost {слово} as much as the lot; the lot cost {лот} dollars: {лот_осн}."
+        return f"a house and a lot cost {всего} {by_count(всего, 'dollars')} and the house cost {слово} as much as the lot; the lot cost {лот} {by_count(лот, 'dollars')}: {лот_осн}."
     if ф == 1 and _ру_вопрос(шаг, i):
         return f"если дом и участок стоили {всего} {ру('доллар', всего)}, а дом стоил {ру_} дороже участка, сколько стоил участок? {лот} {ру('доллар', лот)}: {лот_осн}."
     if ф == 1:
         return f"дом и участок стоили {всего} {ру('доллар', всего)}, а дом стоил {ру_} дороже участка; участок стоил {лот} {ру('доллар', лот)}: {лот_осн}."
     if ф == 2:
-        return f"a house and a lot cost {всего} dollars and the house cost {слово} as much as the lot; the house cost {дом} dollars: {дом_осн}."
+        return f"a house and a lot cost {всего} {by_count(всего, 'dollars')} and the house cost {слово} as much as the lot; the house cost {дом} {by_count(дом, 'dollars')}: {дом_осн}."
     if ((шаг + i) // 4) % 2 == 0:
-        return f"if a house and a lot cost {всего} dollars and the house cost {слово} as much as the lot, how much did the lot cost? {лот_осн} dollars."
-    return f"if a house and a lot cost {всего} dollars and the house cost {слово} as much as the lot, how much did the house cost? {дом_осн} dollars."
+        return f"if a house and a lot cost {всего} {by_count(всего, 'dollars')} and the house cost {слово} as much as the lot, how much did the lot cost? {лот_осн} dollars."
+    return f"if a house and a lot cost {всего} {by_count(всего, 'dollars')} and the house cost {слово} as much as the lot, how much did the house cost? {дом_осн} dollars."
 
 
 # ФОРМУЛЫ СЕМЕЙСТВ — ЗАКОН ОТВЕТА ОТ ВЕЛИЧИН ВОПРОСА (заказ holon 03.09: таблица

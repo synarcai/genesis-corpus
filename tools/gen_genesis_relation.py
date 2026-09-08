@@ -147,7 +147,7 @@ def иерархия(шаг):
             вон.append(f"в дереве родов узел {узел} не содержит узел "
                        f"{чужой}: узел {чужой} лежит в узле {где}.")
     n, m = len(о.ИМЕНА), len(о.ИМЕНА) - 1
-    вон.append(f"the tree of kinds is a hierarchy of {n} nodes and {m} "
+    вон.append(f"the tree of kinds is a hierarchy of {n} {by_count(n, 'nodes')} and {m} "
                f"edges: each node except the root lies in exactly one "
                f"node.")
     вон.append(f"дерево родов есть иерархия из {n} {ру_узел(n)} и {m} "
@@ -290,7 +290,7 @@ def эквивалентности(шаг):
                    f"{о.ру('класс', len(куски))}.")
         вон.append(f"the classes of remainder modulo {модуль} among the "
                    f"numbers from 1 to {предел} do not meet and together "
-                   f"give all {предел} numbers.")
+                   f"give all {предел} {by_count(предел, 'numbers')}.")
         вон.append(f"классы остатка по модулю {модуль} среди чисел от 1 "
                    f"до {предел} не пересекаются и вместе дают все "
                    f"{предел} {ру_число(предел)}.")
@@ -496,7 +496,7 @@ def связь(шаг):
                                f"{ру_узел(len(дошли))}, и {куда} среди "
                                f"них нет.")
     n, m = len(о.УЗЛЫ), len(о.РЁБРА)
-    вон.append(f"the declared graph is a structure of {n} nodes and {m} "
+    вон.append(f"the declared graph is a structure of {n} {by_count(n, 'nodes')} and {m} "
                f"edges.")
     вон.append(f"объявленный граф есть структура из {n} {ру_узел(n)} и "
                f"{m} {ру_ребро(m)}.")

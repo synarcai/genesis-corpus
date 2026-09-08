@@ -132,7 +132,7 @@ def pass_shows(pass_i):
         # дробь: запятая и точка — одно число
         out.append(f"{ц}.{дроб} and {ц},{дроб} are one number.")
         out.append(f"{ц},{дроб} и {ц}.{дроб} — одно число.")
-        out.append(f"{ц}.{дроб} means {ц} and {дроб} hundredths."
+        out.append(f"{ц}.{дроб} means {ц} and {дроб} {by_count(дроб, 'hundredths')}."
                    if дроб > 9 else f"{ц}.{дроб} means {ц} and {дроб} tenths.")
         out.append(f"{ц},{дроб} значит {ц} и {дроб} "
                    + ("сотых." if дроб > 9 else "десятых."))

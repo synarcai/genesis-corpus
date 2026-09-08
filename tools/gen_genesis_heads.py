@@ -88,8 +88,8 @@ def pass_shows(pi):
         # HEAD-2 how much: rate pay
         out.append(
             f"{nm} bought {k} {by_count(k, it)} "
-            f"at {p} dollars each. how much did "
-            f"{nm} pay? {nm} paid {k * p} dollars"
+            f"at {p} {by_count(p, 'dollars')} each. how much did "
+            f"{nm} pay? {nm} paid {k * p} {by_count(k * p, 'dollars')}"
             f"{f': {k} × {p} = {k * p}' if forge else ''}."
         )
         # HEAD-2 how much: unit rate over time. THE VERB FOLLOWS THE UNIT
@@ -98,7 +98,7 @@ def pass_shows(pi):
         verb, un_r = СТАВКА_ГЛАГОЛ[un]
         out.append(
             f"{nm} {verb} {p} {by_count(p, un_r)} "
-            f"every day. how much in {k} days? "
+            f"every day. how much in {k} {by_count(k, 'days')}? "
             f"{k * p} {un_r}"
             f"{f': {p} × {k} = {k * p}' if forge else ''}."
         )

@@ -134,12 +134,15 @@ def сумма(язык, d, c, k=0):
     копеек», «5,20 Euro»."""
     if c is None:   # a whole amount («$10 per day», «10 рублей», «10 Euro» — genus 3 of g1 counts in units)
         if язык == "en":
-            return f"${d}" if k % 2 else f"{d} dollars"
+            return f"${d}" if k % 2 else f"{d} {by_count(d, 'dollars')}"
         if язык == "ru":
             return f"{d} {rugram.форма('рубль', d)}"
         return f"{d} Euro"
     if язык == "en":
-        return f"${d}.{c:02d}" if k % 2 else f"{d}.{c:02d} dollars"
+        # ВЕЛИЧИНА, А НЕ ЗАПИСЬ, ПРАВИТ ФОРМОЙ — тот же довод, что в доме денег: «{d}.{c:02d}»
+        # есть письмо, а число здесь d + c/100, и оно верно на обоих концах.
+        return (f"${d}.{c:02d}" if k % 2 else
+                f"{d}.{c:02d} {by_count(d + c / 100, 'dollars')}")
     if язык == "ru":
         return f"{d} {rugram.форма('рубль', d)} {c} {rugram.форма('копейка', c)}"
     return f"{d},{c:02d} Euro"

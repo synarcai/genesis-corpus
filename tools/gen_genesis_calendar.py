@@ -189,7 +189,7 @@ def месяцы(шаг):
     вон = []
     for i in range(12):
         вон.append(f"{МЕСЯЦЫ_EN[i]} is month number {i + 1} "
-                   f"and has {ДЛИНЫ[i]} days.")
+                   f"and has {ДЛИНЫ[i]} {by_count(ДЛИНЫ[i], 'days')}.")
         вон.append(f"{МЕСЯЦЫ_RU[i]} — месяц номер {i + 1}, в нём "
                    f"{ДЛИНЫ[i]} {units.ру_форма(ДЕНЬ_СЧЁТ, ДЛИНЫ[i])}.")
         сл = (i + 1) % 12
@@ -208,8 +208,8 @@ def годом(шаг):
         # «the first 2 months … have» — суд английского числа нашёл в
         # этом мире «the first 1 months», единственную ложь языка свода.
         вон.append(("the first month of a common year has" if i == 0 else
-                    f"the first {i + 1} months of a common year have")
-                   + f" {сумма} days in all.")
+                    f"the first {i + 1} {by_count(i + 1, 'months')} of a common year have")
+                   + f" {сумма} {by_count(сумма, 'days')} in all.")
         сколько = i + 1
         вон.append(f"{ПЕРВЫЕ[0] if сколько == 1 else ПЕРВЫЕ[1]} {сколько} "
                    f"{units.ру_форма(МЕСЯЦ_СЧЁТ, сколько)} обычного года "

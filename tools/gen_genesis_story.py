@@ -142,7 +142,7 @@ def story_rate(nrec, ne, it, enp, k, price):
         f"{verb('заплатил', fem)} {total} "
         f"{ru_form(rub, total)}.",
         f"how many dollars did {ne} pay? "
-        f"{ne} paid {total} dollars.",
+        f"{ne} paid {total} {by_count(total, 'dollars')}.",
     ]
 
 
