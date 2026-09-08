@@ -62,6 +62,8 @@ import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import asking  # noqa: E402 — the house of the pair declares which openers a question may wear
+import actionpages as _A  # noqa: E402 — объявленные лица и их род
+import closedworld as _зк  # noqa: E402 — закон замкнутого мира
 import priceforms as P  # noqa: E402 — the goods and the pack's counting rule
 
 ЯЗЫКИ = ("ru", "en", "de", "fr", "es", "it", "pt", "nl", "pl")
@@ -470,6 +472,15 @@ def _вердикт(язык, форма, i, зн):
     return зн["N"] == вещь(n) and зн["K"] == вещь(k) and зн["S"] == вещь(итог)
 
 
+
+# РОД ПРОШЕДШЕГО СУДИТСЯ ЗАКОНОМ ЗАМКНУТОГО МИРА, А НЕ ДЫРОЙ В КАЖДОЙ РАМКЕ (08.09).
+# Окончание глагола стои́т в образце дырой, принимающей любую букву, и подменённая
+# строка не совпадает с образцом ВОВСЕ — суд говорит «не моя» вместо «ложь».
+#
+#     ФОРМА, ОТЛИЧАЮЩАЯСЯ ОТ ПОКАЗА ОДНОЙ БУКВОЙ РОДА, ЕСТЬ ЭТОТ ЖЕ ПОКАЗ ИСПОРЧЕННЫЙ.
+_РОДЫ_ЛИЦ = {л[0]: л[1] for л in _A.ЛИЦА.get("ru", ()) if len(л) > 1 and л[1] in ("m", "f")}
+
+
 def судить(строка):
     """(судимо, истинно): a page whose bearer is a possessive relative that ACTS."""
     с = строка.strip()
@@ -483,6 +494,9 @@ def судить(строка):
         if зн is None:
             return True, False
         return True, _вердикт(язык, форма, i, зн)
+    # РОД ПРОШЕДШЕГО — ЗАКОНОМ ЗАМКНУТОГО МИРА: «Аня дал» есть показ с испорченным родом
+    if _зк.ложь_по_роду(с, ПОКАЗЫ, _РОДЫ_ЛИЦ):
+        return True, False
     return False, False
 
 

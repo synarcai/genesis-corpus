@@ -38,6 +38,7 @@ import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import actionpages as A  # noqa: E402
+import rugram as _RUG  # noqa: E402 — закон русского прошедшего: род формы при лице
 import svampforms as S  # noqa: E402 — the bearer's face, the deed goods and their count forms
 
 ЯЗЫКИ = ("ru", "en", "de", "fr", "es", "it", "pt", "nl", "pl")
@@ -514,6 +515,19 @@ def _вердикт(язык, группа, форма, м):
     return True
 
 
+
+# РОД ПРОШЕДШЕГО СВЕРЯЕТСЯ С ЛИЦОМ ПОСЛЕ ВЕРДИКТА (08.09). Окончание глагола стои́т в
+# образце ДЫРОЙ, принимающей любую букву, — иначе образец не покрыл бы обоих родов, —
+# и вердикт о нём не спрашивал. Подмена «Анна сделала» → «Анна сделал» проходила
+# образцом и звалась ИСТИНОЙ.
+#
+#     СУД, МОЛЧАЩИЙ О ПОРЧЕ, БЕРЁТ ИСТИНУ У СОСЕДА. СУД, ЗОВУЩИЙ ПОРЧУ ИСТИНОЙ,
+#     ОТНИМАЕТ ЕЁ У ВСЕХ: палата видит зелёный вердикт и дальше не смотрит.
+#
+# Закон берётся у дома языка (`rugram.не_по_роду`), лица — у себя: ни один из двух
+# не может проверить страницу один.
+_РОДЫ_ЛИЦ = {л[0]: л[1] for л in A.ЛИЦА.get("ru", ()) if len(л) > 1 and л[1] in ("m", "f")}
+
 def судить(строка):
     """(судимо, истинно): a page of a frame of the house whose holes agree and whose ledger
     recomputes; silence on anything else (the closed world's gate makes it a lie)."""
@@ -523,7 +537,10 @@ def судить(строка):
     for образ, язык, группа, форма in ОБРАЗЦЫ:
         м = образ.match(с)
         if м:
-            return True, _вердикт(язык, группа, форма, м)
+            если = _вердикт(язык, группа, форма, м)
+            if если and язык == "ru" and _RUG.не_по_роду(с, _РОДЫ_ЛИЦ):
+                return True, False
+            return True, если
     return False, False
 
 
