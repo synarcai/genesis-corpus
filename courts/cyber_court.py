@@ -27,6 +27,7 @@ import sys
 
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
+import onepattern  # noqa: E402
 import asking  # noqa: E402
 from genesis import Unreadable, worlds  # noqa: E402
 
@@ -82,6 +83,10 @@ from genesis import Unreadable, worlds  # noqa: E402
 БИТЫ = re.compile(
     r"^(?:to distinguish (\d+) disturbances?, a regulator needs (\d+) bits?"
     r"|чтобы различить (\d+) \S+, регулятору нужно (\d+) \S+)$")
+# ОДИН РОД — ОДИН ОБРАЗЕЦ: половины языков суд читает одним разбором (см. tools/onepattern.py)
+ШАГ_ОБА = onepattern.вместе(ШАГ_EN, ШАГ_RU)
+# ОДИН РОД — ОДИН ОБРАЗЕЦ: половины языков суд читает одним разбором (см. tools/onepattern.py)
+СХОД_ОБА = onepattern.вместе(СХОД_EN, СХОД_RU)
 
 
 # РАЗНООБРАЗИЕ РЕГУЛЯТОРА ЕСТЬ ЛОГАРИФМ ЧИСЛА ВОЗМУЩЕНИЙ — закон
@@ -102,6 +107,13 @@ from genesis import Unreadable, worlds  # noqa: E402
     r"^(?:to distinguish (\d+) disturbances?, a regulator needs (\d+) bits?"
     r"|чтобы различить (\d+) возмущени\w*, регулятору нужно (\d+) бит\w*)\.$")
 
+
+
+# ВЕТВЬ СЛИТОГО ОБРАЗЦА НЕ ЕСТЬ РОД (08.09). Слив рассказ с вопросом (или половины языков) в один
+# образец, ветви оставляем стоять — они читаемы и нужны при чтении кода, — но родом больше не
+# считаются: род есть слитый образец, и считать ветви значило бы считать один род дважды или
+# трижды. Прибор ширины не гадает, что род: суд объявляет это сам.
+НЕ_РОДЫ = ('ШАГ_EN', 'ШАГ_RU', 'СХОД_EN', 'СХОД_RU')
 
 def бит_хватает(строка):
     """Верно ли названо число бит; None — не наше."""
@@ -181,13 +193,13 @@ def _судить(строка):
     if m:
         ц, з, о = (int(x) for x in m.groups())
         return True, ц - з == о
-    m = ШАГ_EN.match(с) or ШАГ_RU.match(с)
+    m = ШАГ_ОБА.match(с)
     if m:
-        ц, з, шаг, знач, ош = (int(x) for x in m.groups())
+        ц, з, шаг, знач, ош = (int(x) for x in onepattern.захваты(m))
         return True, знач == з + шаг and ош == ц - знач
-    m = СХОД_EN.match(с) or СХОД_RU.match(с)
+    m = СХОД_ОБА.match(с)
     if m:
-        нач, ц, шаг, дошли, шагов = (int(x) for x in m.groups())
+        нач, ц, шаг, дошли, шагов = (int(x) for x in onepattern.захваты(m))
         if шаг == 0:
             return True, False
         # СЧЁТ МОДЕЛИРУЕТСЯ, а не берётся на веру

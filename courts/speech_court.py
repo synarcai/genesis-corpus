@@ -31,6 +31,8 @@ import sys
 
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
+
+import onepattern  # noqa: E402
 from actors import Слой  # noqa: E402 — деятели мира из манифеста
 import asking  # noqa: E402
 from genesis import Unreadable, worlds  # noqa: E402
@@ -43,6 +45,9 @@ import closedworld  # noqa: E402
 
 ГЕНЕРАТОР = КОРЕНЬ / "tools/gen_genesis_speech.py"
 
+
+# ВЕТВЬ СЛИТОГО ОБРАЗЦА НЕ ЕСТЬ РОД: род есть слитый образец, ветви лишь читаемы (08.09).
+НЕ_РОДЫ = ('ЗНАЧИТ', 'СЛЕДУЕТ')
 
 def _объявленные_лица():
     """{имя или его родительный: местоимение} — из объявления слоя.
@@ -147,6 +152,8 @@ def счёта_нет(строка):
     r"^(?:делимости на 2 достаточно для чётности и она необходима для неё"
     r"|divisibility by 2 is sufficient for evenness and necessary "
     r"for it)\.$")
+# ОДИН РОД — ОДИН ОБРАЗЕЦ (tools/onepattern.py)
+ЗНАЧИТ_ОБА = onepattern.вместе(ЗНАЧИТ, СЛЕДУЕТ)
 
 
 ПРОСТЫЕ_ОБЫЧНО = re.compile(
@@ -338,7 +345,7 @@ def _судить(строка, слой=None):
     if m:
         n, d, n2, d2 = (int(x) for x in m.groups() if x is not None)
         return True, (n, d) == (n2, d2) and d > 0 and n % d != 0
-    m = ЗНАЧИТ.match(с) or СЛЕДУЕТ.match(с)
+    m = ЗНАЧИТ_ОБА.match(с)
     if m:
         г = [x for x in m.groups() if x is not None]
         # СВИДЕТЕЛЬ — НОВОЕ ЧИСЛО: названное частное обязано быть частным

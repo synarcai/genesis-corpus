@@ -29,6 +29,8 @@ import sys
 
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
+
+import onepattern  # noqa: E402
 import asking  # noqa: E402
 import universals  # noqa: E402
 from genesis import Unreadable, worlds  # noqa: E402
@@ -43,6 +45,9 @@ _СЛОВАРЬ = None
 
 # ПУСТОЙ-ОБХОД: no-such-corpus-file
 
+
+# ВЕТВЬ СЛИТОГО ОБРАЗЦА НЕ ЕСТЬ РОД: род есть слитый образец, ветви лишь читаемы (08.09).
+НЕ_РОДЫ = ('ШАГ_EN', 'ШАГ_RU', 'ПРЯМОЕ_EN', 'ПРЯМОЕ_RU', 'КОНТР', 'ВОПРОС_КОНТР')
 
 def просто(n):
     return n > 1 and all(n % d for d in range(2, int(n ** 0.5) + 1))
@@ -101,6 +106,12 @@ def квадрат(n):
 ПРЯМОЕ_ДВОЙКОЙ = re.compile(
     r"^(?:yes: (\d+) is even and (\d+) = 2 × (\d+), which is even"
     r"|да: (\d+) чётно и (\d+) = 2 × (\d+), что чётно)$")
+# ОДИН РОД — ОДИН ОБРАЗЕЦ (tools/onepattern.py)
+ШАГ_EN_ОБА = onepattern.вместе(ШАГ_EN, ШАГ_RU)
+# ОДИН РОД — ОДИН ОБРАЗЕЦ (tools/onepattern.py)
+ПРЯМОЕ_EN_ОБА = onepattern.вместе(ПРЯМОЕ_EN, ПРЯМОЕ_RU)
+# ОДИН РОД — ОДИН ОБРАЗЕЦ (tools/onepattern.py)
+КОНТР_ОБА = onepattern.вместе(КОНТР, ВОПРОС_КОНТР)
 
 
 # ШАГ ИНДУКЦИИ НЕСЁТ СВОЮ ЦЕПЬ, И ЦЕПЬ ОБЯЗАНА КОНЧАТЬСЯ ТАМ, КУДА
@@ -219,9 +230,9 @@ def судить(строка):
         return True, исчерпано
 
     с = строка.strip().rstrip(".")
-    m = ШАГ_EN.match(с) or ШАГ_RU.match(с)
+    m = ШАГ_EN_ОБА.match(с)
     if m:
-        n, следом, слева, добавка, справа = (int(x) for x in m.groups())
+        n, следом, слева, добавка, справа = (int(x) for x in onepattern.захваты(m))
         # ШАГ ПРОВЕРЯЕТСЯ ОБЕИМИ СТОРОНАМИ, а не только итогом
         return True, (следом == n + 1
                       and слева == n * (n + 1) // 2
@@ -259,15 +270,16 @@ def судить(строка):
         n, чёт, половина = (int(x) for x in m.groups() if x is not None)
         # посылка выполнена, итог чётен, и его половина названа верно
         return True, n % 2 == 0 and чёт % 2 == 0 and чёт == 2 * половина
-    m = ПРЯМОЕ_EN.match(с) or ПРЯМОЕ_RU.match(с)
+    m = ПРЯМОЕ_EN_ОБА.match(с)
     if m:
-        n, квадратик = (int(x) for x in m.groups())
+        n, квадратик = (int(x) for x in onepattern.захваты(m))
         # ПОСЫЛКА ОБЯЗАНА БЫТЬ ВЫПОЛНЕНА, иначе показ ничему не учит
         return True, (n % 2 == 0 and квадратик == n * n
                       and квадратик % 2 == 0)
-    m = КОНТР.match(с) or ВОПРОС_КОНТР.match(с)
+    m = КОНТР_ОБА.match(с)
     if m:
-        утверждение, свидетель = m.group(1).strip(), m.group(2).strip()
+        г = onepattern.захваты(m)
+        утверждение, свидетель = г[0].strip(), г[1].strip()
         если = СВИДЕТЕЛИ.get(свидетель)
         если_ложно = ЛОЖНЫЕ.get(утверждение)
         if если is None or если_ложно is None:

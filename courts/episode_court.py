@@ -31,6 +31,8 @@ import sys
 
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
+
+import onepattern  # noqa: E402
 from genesis import Unreadable, worlds  # noqa: E402
 from gsm_items import ANIMATE, ITEMS, PACKAGEABLE  # noqa: E402
 from plural import singular
@@ -64,6 +66,13 @@ import units  # noqa: E402
     rf"how many ({С}) does \1 (?:keep|still know)\? "
     rf"\1 \w+ (\d+) ({С}){ЗВЕНО_ИТОГА}\.$")
 
+
+
+# ВЕТВЬ СЛИТОГО ОБРАЗЦА НЕ ЕСТЬ РОД (08.09). Слив рассказ с вопросом (или половины языков) в один
+# образец, ветви оставляем стоять — они читаемы и нужны при чтении кода, — но родом больше не
+# считаются: род есть слитый образец, и считать ветви значило бы считать один род дважды или
+# трижды. Прибор ширины не гадает, что род: суд объявляет это сам.
+НЕ_РОДЫ = ('ОСТАТОК_EN', 'ОСТАТОК_RU', 'КОНВЕРСИЯ', 'ДЕРЖИТ')
 
 def _звено_итога(m, a, b, знак, итог):
     """The optional link after the total names the same operation."""
@@ -747,6 +756,10 @@ def впитать_ставки(путь):
 # dollar has 100 cents», слой вместилищ — «a pack holds 4 apples», и
 # суд, знавший один глагол, молчал о другом.
 ДЕРЖИТ = re.compile(rf"^a ({С}) (?:holds|has) (\d+) ({С})\.$")
+# ОДИН РОД — ОДИН ОБРАЗЕЦ (tools/onepattern.py): суд читает обе ветви одним разбором
+ОСТАТОК_EN_ОБА = onepattern.вместе(ОСТАТОК_EN, ОСТАТОК_RU)
+# ОДИН РОД — ОДИН ОБРАЗЕЦ (tools/onepattern.py): суд читает обе ветви одним разбором
+КОНВЕРСИЯ_ОБА = onepattern.вместе(КОНВЕРСИЯ, ДЕРЖИТ)
 
 
 # ДОМ ИМЁН (М-131): деятель читается группой и сверяется с пакетом. Замер по
@@ -1082,9 +1095,9 @@ def _судить(строка, слой=None):
     if m:
         a, b, q, r = (int(г) for г in m.groups() if г is not None)
         return True, b > 0 and a == b * q + r and 0 <= r < b
-    m = ОСТАТОК_EN.match(с) or ОСТАТОК_RU.match(с)
+    m = ОСТАТОК_EN_ОБА.match(с)
     if m:
-        a, b, q, r = (int(x) for x in m.groups())
+        a, b, q, r = (int(x) for x in onepattern.захваты(m))
         return True, b != 0 and divmod(a, b) == (q, r)
     m = СТАВКА_ШТУК.match(с)
     if m:
@@ -1112,13 +1125,14 @@ def _судить(строка, слой=None):
     if m:
         k, итог = int(m.group(2)), int(m.group(4))
         return True, k > 0 and итог % k == 0
-    m = КОНВЕРСИЯ.match(с) or ДЕРЖИТ.match(с)
+    m = КОНВЕРСИЯ_ОБА.match(с)
     if m:
         # ОБЪЯВЛЕНИЕ СВЕРЯЕТСЯ С ОБЪЯВЛЕНИЕМ. Прежде суд говорил
         # «судить нечего»: показ САМ объявляет отношение. Но отношение
         # объявлено и в генераторе, и расхождение между ними есть
         # дрейф — тот самый, ради которого суды и написаны.
-        один, ставка, много = m.group(1), int(m.group(2)), m.group(3)
+        г = onepattern.захваты(m)
+        один, ставка, много = г[0], int(г[1]), г[2]
         объявлено = ОТНОШЕНИЯ.get((один.rstrip("s"), много))
         if объявлено is not None:
             return True, объявлено == ставка

@@ -21,6 +21,8 @@ import sys
 
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
+
+import onepattern  # noqa: E402
 import notation_variants as НВ  # noqa: E402
 from genesis import worlds  # noqa: E402
 import closedworld  # noqa: E402
@@ -40,24 +42,31 @@ from closedworld import Слой  # noqa: E402 — палата подаёт и�
 НЕРАВЕНСТВО = re.compile(
     r"^«(\d+) (<=|>=|!=|≤|≥|≠) (\d+)» (верно|неверно), "
     r"и «(\d+) (<=|>=|!=|≤|≥|≠) (\d+)» говорит то же\.?$")
+# ОДИН РОД — ОДИН ОБРАЗЕЦ (tools/onepattern.py)
+ПАРА_ОБА = onepattern.вместе(ПАРА, ПАРА_EN)
+# ОДИН РОД — ОДИН ОБРАЗЕЦ (tools/onepattern.py)
+ВОПРОС_ОБА = onepattern.вместе(ВОПРОС, ВОПРОС_EN)
 
 ДЕЙСТВИЕ = {"<=": lambda a, b: a <= b, "≤": lambda a, b: a <= b,
             ">=": lambda a, b: a >= b, "≥": lambda a, b: a >= b,
             "!=": lambda a, b: a != b, "≠": lambda a, b: a != b}
 
 
+# ВЕТВЬ СЛИТОГО ОБРАЗЦА НЕ ЕСТЬ РОД: род есть слитый образец, ветви лишь читаемы (08.09).
+НЕ_РОДЫ = ("ПАРА", "ПАРА_EN", "ВОПРОС", "ВОПРОС_EN")
+
 def _судить(строка):
     с = строка.strip()
-    m = ПАРА.match(с) or ПАРА_EN.match(с)
+    m = ПАРА_ОБА.match(с)
     if m:
-        а, б = m.groups()
+        а, б = onepattern.захваты(m)
         # ДВЕ ЗАПИСИ ОДНОЙ ВЕЩИ ОБЯЗАНЫ РАЗЛИЧАТЬСЯ. Показ ««x^2» и
         # «x^2» суть одна запись» истинен по букве и пуст по делу: он
         # не учит второму начертанию. Тождество здесь есть ложь.
         return True, а != б and НВ.канон(а) == НВ.канон(б)
-    m = ВОПРОС.match(с) or ВОПРОС_EN.match(с)
+    m = ВОПРОС_ОБА.match(с)
     if m:
-        дано, ответ = m.groups()
+        дано, ответ = onepattern.захваты(m)
         двойник = НВ.двойник(дано)
         if двойник is None:
             двойник = НВ.канон(дано)
