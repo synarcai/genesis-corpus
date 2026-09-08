@@ -23,14 +23,14 @@
 законов с вещественными постоянными в слое нет вовсе, потому судить их
 нечем и не о чем.
 """
-import langsign  # noqa: E402
-import plural
 import pathlib
 import re
 import sys
 
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
+import langsign  # noqa: E402 — знак языка
+import plural  # noqa: E402 — английский счёт
 import asking  # noqa: E402
 from genesis import Unreadable, worlds  # noqa: E402
 

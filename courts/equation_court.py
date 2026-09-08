@@ -72,9 +72,9 @@ import sys
 
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "scripts"))
+sys.path.insert(0, str(КОРЕНЬ / "tools"))
 
 import onepattern  # noqa: E402
-sys.path.insert(0, str(КОРЕНЬ / "tools"))
 import discourse  # noqa: E402
 import notation_variants  # noqa: E402
 from genesis import Unreadable, worlds  # noqa: E402
