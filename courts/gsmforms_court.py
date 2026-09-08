@@ -411,6 +411,24 @@ def _рамка(закон):
      _рамка(lambda T, n, ч, и: T == n * и and ч != и)),
     (rf"^if there are {Ч} pupils and they stand in groups of {Ч}, how many groups are there\? {Ч} ÷ {Ч} = {Ч}\.$",
      _рамка(lambda T, n, oT, on, g: (oT, on) == (T, n) and T == n * g)),
+    # ОСТАТОК ДЕЛЕНИЯ (08.09): группы не полны — и ФОРМУ ИМЕНИ ПРИ ОСТАТКЕ СУД ЧИТАЕТ САМ.
+    # Половинчатый закон завёлся бы здесь в один шаг: довольно было написать «pupils» буквой
+    # в образце, и «1 pupils» прошло бы мимо своего суда, оставшись на соседе (engram). Слово
+    # взято дырой и сверено со счётом — по-английски прямо, по-русски через `_форма_ru`.
+    (rf"^there are {Ч} pupils and they stand in groups of {Ч}; there are {Ч} groups and {Ч} "
+     rf"(pupil|pupils) left over: {Ч} × {Ч} = {Ч}, {Ч} − {Ч} = {Ч}\.$",
+     _рамка(lambda T, n, g, r, сл, on, og, ng, oT, ong, orr:
+            (on, og, oT, ong, orr) == (n, g, T, ng, r) and ng == n * g and T == ng + r
+            and 0 < r < n and сл == ("pupil" if r == 1 else "pupils"))),
+    (rf"^{Ч} (учени(?:к|ка|ков)) стоят группами по {Ч}; групп {Ч}, вне групп {Ч} "
+     rf"(учени(?:к|ка|ков)): {Ч} × {Ч} = {Ч}, {Ч} − {Ч} = {Ч}\.$",
+     _рамка(lambda T, сT, n, g, r, сr, on, og, ng, oT, ong, orr:
+            (on, og, oT, ong, orr) == (n, g, T, ng, r) and ng == n * g and T == ng + r
+            and 0 < r < n and _форма_ru(сT, T) and _форма_ru(сr, r))),
+    (rf"^if there are {Ч} pupils and they stand in groups of {Ч}, how many pupils are left "
+     rf"over\? {Ч} × {Ч} = {Ч}, {Ч} − {Ч} = {Ч}\.$",
+     _рамка(lambda T, n, on, og, ng, oT, ong, r:
+            (on, oT, ong) == (n, T, ng) and ng == on * og and T == ng + r and 0 < r < n)),
 )
 # ТРЕТИЙ СЛОЙ (03.09): роды SVAMP по массе e9 и остаток g1. Слова родов —
 # замкнутые множества суда (своё чтение таблиц генератора); закон — над числами.
@@ -687,6 +705,7 @@ _СЕМЕЙСТВА_ОСНОВА = (
     ("скидка", ОБРАЗЦЫ_2[40:44]),
     ("всего", ОБРАЗЦЫ_2[44:52]),
     ("группы", ОБРАЗЦЫ_2[52:56]),
+    ("остаток_деления", ОБРАЗЦЫ_2[56:59]),
     ("больше_A", ОБРАЗЦЫ_3[0:5]),
     ("больше_B", ОБРАЗЦЫ_3[5:10]),
     ("больше_C", ОБРАЗЦЫ_3[10:15]),
