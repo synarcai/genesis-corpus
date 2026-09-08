@@ -30,6 +30,7 @@ neighbouring world and are not written here.
 """
 import pathlib
 import re
+import frgram as _fr  # французская элизия: один закон, два читателя
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
@@ -223,7 +224,7 @@ def страница(язык, форма, Т, n, k=0, m=1, М=None):
     п = _поля(язык, форма, Т, n, k, m)
     if М is not None:
         п["М"] = МЕСТА[язык][М % len(МЕСТА[язык])]
-    return РАМКИ[язык][форма].format(**п)
+    return _fr.элизия(РАМКИ[язык][форма].format(**п)) if язык == "fr" else РАМКИ[язык][форма].format(**п)
 
 
 def _пара(n):
@@ -299,7 +300,7 @@ def _образец(язык, рамка):
             счёт[дыра] = счёт.get(дыра, 0) + 1
             куски.append(f"(?P<h_{дыра}__{счёт[дыра]}>{дыры[дыра]})")
         else:
-            куски.append(re.escape(кусок))
+            куски.append(_fr.в_образце(кусок) if язык == "fr" else re.escape(кусок))
     return re.compile("^" + "".join(куски) + "$")
 
 

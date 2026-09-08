@@ -40,6 +40,7 @@ over time (that is the growth ledger's, not a page's), and any prediction about 
 """
 import pathlib
 import re
+import frgram as _fr  # французская элизия: один закон, два читателя
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
@@ -204,7 +205,7 @@ def страница(язык, форма, Т, n=0, m=0, сдвиг=1, М=None):
     М = М if М is not None else T.МЕСТА[язык][Т % len(T.МЕСТА[язык])]
     if форма == "предсказал_незнание":
         поля = dict(ПЛ=ПЛЮРАЛЬ[язык][Т % len(ПЛЮРАЛЬ[язык])], Тмн=_вещь(язык, Т, 5))
-        return рамка(язык, форма, М, Т).format(**поля)
+        return _fr.элизия(рамка(язык, форма, М, Т).format(**поля)) if язык == "fr" else рамка(язык, форма, М, Т).format(**поля)
     v = n + m
     p = v if форма == "сбылось" else v + сдвиг
     поля = dict(n=n, m1=m, v=v, p=p, e=abs(p - v), Тn=_вещь(язык, Т, n), Тm1=_вещь(язык, Т, m),
@@ -212,7 +213,7 @@ def страница(язык, форма, Т, n=0, m=0, сдвиг=1, М=None):
     if язык in T.ЕСТЬ:
         поля["ЕСТЬn"] = T._есть(язык, n)
         поля["ЕСТЬv"] = T._есть(язык, p if форма == "сбылось" else v)
-    return рамка(язык, форма, М, Т).format(**поля)
+    return _fr.элизия(рамка(язык, форма, М, Т).format(**поля)) if язык == "fr" else рамка(язык, форма, М, Т).format(**поля)
 
 
 def _показы():
@@ -258,7 +259,7 @@ def _образец(язык, шаблон):
             счёт[дыра] = счёт.get(дыра, 0) + 1
             куски.append(f"(?P<h_{дыра}__{счёт[дыра]}>{дыры[дыра]})")
         else:
-            куски.append(re.escape(кусок))
+            куски.append(_fr.в_образце(кусок) if язык == "fr" else re.escape(кусок))
     return re.compile("^" + "".join(куски) + "$")
 
 

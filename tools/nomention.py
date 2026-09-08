@@ -38,6 +38,7 @@ entity is named by a pronoun with no antecedent — that is the anaphora market'
 """
 import pathlib
 import re
+import frgram as _fr  # французская элизия: один закон, два читателя
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
@@ -126,7 +127,7 @@ def страница(язык, форма, где, спрошено, Т, n, Тс
         поля["n%s" % номер] = число
         поля["Тn%s" % номер] = _вещь(язык, Т, число)
         поля["ЕСТЬ%s" % номер] = T._есть(язык, число) if язык in T.ЕСТЬ else ""
-    return рамка(язык, форма, где, спрошено, Т, Тспр).format(**поля)
+    return _fr.элизия(рамка(язык, форма, где, спрошено, Т, Тспр).format(**поля)) if язык == "fr" else рамка(язык, форма, где, спрошено, Т, Тспр).format(**поля)
 
 
 def _показы():
@@ -175,7 +176,7 @@ def _образец(язык, шаблон):
             узор = дыры[дыра]
             куски.append(f"(?P<h_{дыра}__{счёт[дыра]}>{узор})" if узор else "")
         else:
-            куски.append(re.escape(кусок))
+            куски.append(_fr.в_образце(кусок) if язык == "fr" else re.escape(кусок))
     return re.compile("^" + "".join(куски) + "$")
 
 

@@ -38,6 +38,7 @@ import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import actionpages as A  # noqa: E402
+import frgram as _fr  # noqa: E402 — французская элизия: один закон, два читателя
 import rugram as _RUG  # noqa: E402 — закон русского прошедшего: род формы при лице
 import svampforms as S  # noqa: E402 — the bearer's face, the deed goods and their count forms
 
@@ -360,7 +361,10 @@ def страница(язык, группа, форма, i, j, ключ, n, k, m
         п["W"], п["Wр"] = W[0], W[2]
         if язык in ГЛАГОЛ_ДЕЛА:
             п["ВW"] = ГЛАГОЛ_ДЕЛА[язык] + A._а(язык, W[1])
-    return РАМКИ[язык][группа][форма].format(**п)
+    готовая = РАМКИ[язык][группа][форма].format(**п)
+    # ФРАНЦУЗСКАЯ ЭЛИЗИЯ ДЕЛАЕТСЯ ПОСЛЕ ПОДСТАНОВКИ: рамка держит «de» целым, ибо не знает,
+    # что за ним встанет («combien de abdos» → «combien d'abdos»). Закон — у дома языка.
+    return _fr.элизия(готовая) if язык == "fr" else готовая
 
 
 def _показы():
@@ -449,7 +453,7 @@ def _образец(язык, рамка):
             счёт[дыра] = счёт.get(дыра, 0) + 1
             куски.append(f"(?P<h_{дыра}__{счёт[дыра]}>{дыры[дыра]})")
         else:
-            куски.append(re.escape(кусок))
+            куски.append(_fr.в_образце(кусок) if язык == "fr" else re.escape(кусок))
     return re.compile("^" + "".join(куски) + "$")
 
 
