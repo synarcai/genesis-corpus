@@ -1,5 +1,5 @@
 мир	генератор	через_слой	строк	различных	копий	макс_копий
-datasets/GENESIS-FULL.txt	gen_genesis_full.py	0	383747	276876	106871	473
+datasets/GENESIS-FULL.txt	gen_genesis_full.py	0	383901	276997	106904	473
 datasets/genesis_action_measure.txt	gen_genesis_action_measure.py	1	234	234	0	1
 datasets/genesis_action_measure_langs.txt	gen_genesis_action_measure_langs.py	1	462	462	0	1
 datasets/genesis_action_pages.txt	gen_genesis_action_pages.py	1	4921	4897	24	2
@@ -15,7 +15,7 @@ datasets/genesis_average.txt	gen_genesis_average.py	1	1300	1300	0	1
 datasets/genesis_beforetails.txt	gen_genesis_beforetails.py	1	3600	3600	0	1
 datasets/genesis_behavior.txt	gen_genesis_behavior.py	1	1608	1608	0	1
 datasets/genesis_bignum.txt	gen_genesis_bignum.py	1	937	888	49	2
-datasets/genesis_calendar.txt	gen_genesis_calendar.py	1	846	423	423	2
+datasets/genesis_calendar.txt	gen_genesis_calendar.py	1	902	451	451	2
 datasets/genesis_calendar_langs.txt	gen_genesis_calendar_langs.py	1	1120	840	280	2
 datasets/genesis_chains_langs.txt	gen_genesis_chains_langs.py	1	3092	2889	203	2
 datasets/genesis_clockforms.txt	gen_genesis_clockforms.py	1	1053	1053	0	1
@@ -50,7 +50,7 @@ datasets/genesis_genus_diff.txt	gen_genesis_genus_diff.py	1	1485	1485	0	1
 datasets/genesis_geometry.txt	gen_genesis_geometry.py	1	2344	1598	746	2
 datasets/genesis_geometry_langs.txt	gen_genesis_geometry_langs.py	1	960	816	144	2
 datasets/genesis_glyphs.txt	gen_genesis_glyphs.py	1	1101	984	117	2
-datasets/genesis_gsmforms.txt	gen_genesis_gsmforms.py	1	2511	2260	251	2
+datasets/genesis_gsmforms.txt	gen_genesis_gsmforms.py	1	2591	2335	256	2
 datasets/genesis_gsmlex.txt	gen_genesis_gsmlex.py	1	400	400	0	1
 datasets/genesis_gsmwide.txt	gen_genesis_gsmwide.py	1	900	840	60	2
 datasets/genesis_heads.txt	gen_genesis_heads.py	1	560	472	88	2
@@ -85,7 +85,7 @@ datasets/genesis_md_latex.txt	gen_genesis_md_latex.py	1	3260	1613	1647	420
 datasets/genesis_md_structures.txt	gen_genesis_md_structures.py	1	1056	460	596	4
 datasets/genesis_measure_story.txt	gen_genesis_measure_story.py	1	1104	912	192	2
 datasets/genesis_metalang.txt	gen_genesis_metalang.py	1	1849	1754	95	2
-datasets/genesis_mixedunits.txt	gen_genesis_mixedunits.py	1	864	864	0	1
+datasets/genesis_mixedunits.txt	gen_genesis_mixedunits.py	1	882	882	0	1
 datasets/genesis_money.txt	gen_genesis_money.py	1	450	450	0	1
 datasets/genesis_money_langs.txt	gen_genesis_money_langs.py	1	1188	1179	9	2
 datasets/genesis_money_story.txt	gen_genesis_money_story.py	1	795	795	0	1
