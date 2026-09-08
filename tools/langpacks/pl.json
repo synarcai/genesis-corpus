@@ -469,8 +469,15 @@
         "on {lex:verb_pres:s3}.",
         "my {lex:verb_pres:p1}.",
         "wy {lex:verb_pres:p2}.",
-        "oni {lex:verb_pres:p3}."
-      ]
+        "oni {lex:verb_pres:p3}.",
+        "ja {lex:verb_pres:s1}. kto {lex:verb_pres:s3}? ja {lex:verb_pres:s1}.",
+        "ty {lex:verb_pres:s2}. kto {lex:verb_pres:s3}? ty {lex:verb_pres:s2}.",
+        "on {lex:verb_pres:s3}. kto {lex:verb_pres:s3}? on {lex:verb_pres:s3}.",
+        "my {lex:verb_pres:p1}. kto {lex:verb_pres:s3}? my {lex:verb_pres:p1}.",
+        "wy {lex:verb_pres:p2}. kto {lex:verb_pres:s3}? wy {lex:verb_pres:p2}.",
+        "oni {lex:verb_pres:p3}. kto {lex:verb_pres:s3}? oni {lex:verb_pres:p3}."
+      ],
+      "comment_ask": "ЛИЦО СПРЯЖЕНИЯ УТВЕРЖДАЛОСЬ И НЕ СПРАШИВАЛОСЬ НИ РАЗУ (08.09). Мера ширины, увидевшая образцы всех шаблонов, назвала это долгом: спрягаемый глагол двадцати девяти языков пишется утверждением и вопроса не имеет. Вопрос собран ИЗ СОБСТВЕННЫХ ЧАСТЕЙ ПАКЕТА — вопросного слова «кто», объявленного в ask_words, и ячейки третьего лица, объявленной в verb_pres, — и не вводит ни одного нового слова. Он же учит различию: ВОПРОС СТАВИТ ГЛАГОЛ В ТРЕТЬЕ ЛИЦО, А ОТВЕТ ВОЗВРАЩАЕТ ЕГО В СВОЁ («я читаю. кто читает? я читаю»). Турецкий НЕ ВЗЯТ: его вопросное слово стои́т в КОНЦЕ, и «кто читает?» по-турецки требует причастия («okuyan kim?»), которого пакет не объявлял."
     },
     "counting": {
       "sweep_one": [
