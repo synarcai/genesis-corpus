@@ -19,6 +19,7 @@ import pathlib
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import units  # noqa: E402
+from plural import by_count  # noqa: E402
 from layer import emit_grouped  # noqa: E402
 
 # ПАДЕЖ НАЗЫВАЕТСЯ, А НЕ ОТСЕКАЕТСЯ. «после понедельник» и «через 3
@@ -100,7 +101,7 @@ def дни(шаг):
             # THE LEDGER OF THE CYCLE (holon's word 03.09, wave 70 cf96e016
             # «the show is the head before the colon»: the market of cycles
             # reads the head, the chain after the colon is its witness)
-            вон.append(f"{k} {'day' if k == 1 else 'days'} after "
+            вон.append(f"{k} {by_count(k, 'days')} after "
                        f"{ДНИ_EN[i]} comes {ДНИ_EN[j]}: {леджер_круга(i, k, 'en')}.")
             вон.append(f"через {k} {units.ру_форма(ДЕНЬ_СЧЁТ, k)} после "
                        f"{ДНИ_RU_РОД[i]} наступает {ДНИ_RU[j]}: {леджер_круга(i, k, 'ru')}.")
@@ -156,10 +157,17 @@ def вопросы(шаг):
                    f"{ДНИ_RU_РОД[i]} — {ДНИ_RU[сл]}.")
         вон.append(f"какой день перед {ДНИ_RU_ТВОР[i]}? перед "
                    f"{ДНИ_RU_ТВОР[i]} — {ДНИ_RU[пр]}.")
-        for k in (2, 3, 4, 5):
+        # ВОПРОС ШИРЕ РАССКАЗА БЫТЬ НЕ ОБЯЗАН, НО У́ЖЕ — НАПРАСНО (08.09). Рассказ ходил по
+        # кругу от 1 до 6, вопрос — от 2 до 5, и вопросная половина мира не знала ни единицы,
+        # ни полного круга без одного. Единица здесь не крайний случай, а ОБЫЧНЫЙ ДЕНЬ: «what
+        # day is 1 day after monday». Заодно снят литерал «days»: закон счёта зовётся тем же
+        # `by_count`, каким писан рассказ, — половинчатый закон в этом доме стоял ровно между
+        # двумя его половинами.
+        for k in (1, 2, 3, 4, 5, 6):
             j = (i + k) % 7
-            вон.append(f"what day is {k} days after {ДНИ_EN[i]}? "
-                       f"{k} days after {ДНИ_EN[i]} comes {ДНИ_EN[j]}: {леджер_круга(i, k, 'en')}.")
+            вон.append(f"what day is {k} {by_count(k, 'days')} after {ДНИ_EN[i]}? "
+                       f"{k} {by_count(k, 'days')} after {ДНИ_EN[i]} comes {ДНИ_EN[j]}: "
+                       f"{леджер_круга(i, k, 'en')}.")
             ф = units.ру_форма(ДЕНЬ_СЧЁТ, k)
             вон.append(f"какой день через {k} {ф} после "
                        f"{ДНИ_RU_РОД[i]}? через {k} {ф} после "
