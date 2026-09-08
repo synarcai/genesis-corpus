@@ -31,6 +31,7 @@ this world asks only whether a frame is READ, which is the prototype's first que
 import json
 import pathlib
 import re
+import frgram as _fr  # французская элизия: один закон, два читателя
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
@@ -241,7 +242,10 @@ def _поля(язык, i, j, Т, n, k, М=0, Т2=None, m=None):
 
 
 def страница(язык, форма, i, j, Т, n, k=None, М=0, Т2=None, m=None):
-    return РАМКИ[язык][форма].format(**_поля(язык, i, j, Т, n, k if k is not None else n, М, Т2, m))
+    # ФРАНЦУЗСКАЯ ЭЛИЗИЯ ДЕЛАЕТСЯ ПОСЛЕ ПОДСТАНОВКИ: рамка держит «de» целым, ибо не знает,
+    # что за ним встанет («de œufs» → «d'œufs»). Закон — у дома языка.
+    готовая = РАМКИ[язык][форма].format(**_поля(язык, i, j, Т, n, k if k is not None else n, М, Т2, m))
+    return _fr.элизия(готовая) if язык == "fr" else готовая
 
 
 def _пара(n):
@@ -352,7 +356,7 @@ def _образец(язык, рамка):
             счёт[дыра] = счёт.get(дыра, 0) + 1
             куски.append(f"(?P<{_имя(дыра)}__{счёт[дыра]}>{дыры[дыра]})")
         else:
-            куски.append(re.escape(кусок))
+            куски.append(_fr.в_образце(кусок) if язык == "fr" else re.escape(кусок))
     return re.compile("^" + "".join(куски) + "$")
 
 

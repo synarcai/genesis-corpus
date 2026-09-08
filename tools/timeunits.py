@@ -15,6 +15,7 @@ and both forms. The world is CLOSED.
 import json
 import pathlib
 import re
+import frgram as _fr  # французская элизия: один закон, два читателя
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
@@ -124,7 +125,9 @@ def страница(язык, i, k, словом=True, рамка="рамка")
     большие = я["большие2"] if рамка == "рамка2" else я["большие"]
     п = dict(М=я["малые"][м]["вопрос"], k=K, Б=форма(язык, я["большие"][б], k), Б2=форма(язык, большие[б], k), v=v, k_=k, f=f, зн="×")
     воп, отв = я[рамка]
-    return f"{воп.format(**п)} {отв.format(**п)}"
+    # ЭЛИЗИЯ ПОСЛЕ ПОДСТАНОВКИ: «combien de heures» → «combien d'heures»
+    готовая = f"{воп.format(**п)} {отв.format(**п)}"
+    return _fr.элизия(готовая) if язык == "fr" else готовая
 
 
 def _показы():
@@ -161,7 +164,7 @@ def _образцы():
                     имя = кусок[1:-1]
                     куски.append(f"(?P={имя})" if имя in видены else дыры[имя]); видены.add(имя)
                 else:
-                    куски.append(re.escape(кусок))
+                    куски.append(_fr.в_образце(кусок) if язык == "fr" else re.escape(кусок))
             вон.append((re.compile("^" + "".join(куски) + "$"), язык, рамка))
     return вон
 

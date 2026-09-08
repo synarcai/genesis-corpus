@@ -175,6 +175,8 @@ can could should has have will shall must may might would ought need any anythin
 взаимно есть ли если во на это
 wenn wie was ist sind welche welcher wo wann warum wieviel wer wen wem
 stimmt stimmst stimmen meinst meinen bist wozu womit woraus wovon wodurch worauf kann darf haben hat verhält etwas gibt kennst kannst lebst weißt wissen
+tens tem estás está concordas concorda sabes sabe podes pode segue-se
+folgt volgt ¿se sigue aterrou ¿aterrizó aterrizó wurde
 que quel quelle quels combien comment pourquoi est qu'est-ce est-il lequel laquelle lesquels peux-tu c'est qu'ont
 est-elle est-ce si y et tu es-tu êtes-vous vous quoi des rien ça sais-tu savez-vous
 cual cuanto cuantos que es hay donde se ¿es ¿son ¿cuál ¿cuánto ¿qué ¿cómo ¿quién ¿puede ¿tienen ¿tiene
@@ -352,6 +354,17 @@ def зачин_объявлен(вопрос):
     # languages): a Cyrillic question is a question of the Cyrillic pack
     if КИРИЛЛИЦА.search(вопрос):
         кандидаты = ["ru"]
+    # ЗНАК В ОДНО СЛОВО НЕ ЕСТЬ ЗНАК ЯЗЫКА (09.09). Турецкое «tek sayının karesi tektir demek
+    # doğru mudur?» получило знак ВЕНГЕРСКИЙ — одно слово совпало, и одного хватило, чтобы
+    # турецкий выпал из кандидатов вместе со своим «mudur». Тот же закон, что у единоличности
+    # слова: СЛОВО, ЖИВУЩЕЕ В ДВУХ ЯЗЫКАХ, НЕ РЕШАЕТ ЗА ОБА.
+    #
+    #     ЗНАК, ДЕРЖАЩИЙСЯ ОДНИМ СЛОВОМ, ЕСТЬ ДОГАДКА, А НЕ ЗНАК: при нём кандидатами берутся
+    #     ВСЕ объявленные языки, и вопрос судится союзом их зачинов.
+    #
+    # Ход этот может лишь ПРИНЯТЬ больше, но не отвергнуть: союз шире всякого своего члена.
+    if верх <= 1 and not КИРИЛЛИЦА.search(вопрос):
+        кандидаты = list(ЗАЧИНЫ_ПО_ЯЗЫКУ)
     if not кандидаты and not КИРИЛЛИЦА.search(вопрос) and ДИАКРИТИКА.search(вопрос):
         # a diacritic question with no sign of any language («quant dá 9 + 10?»):
         # every declared front-position language is a candidate

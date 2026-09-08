@@ -44,6 +44,7 @@ read, which is the frame market's first question.
 import json
 import pathlib
 import re
+import frgram as _fr  # французская элизия: один закон, два читателя
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
@@ -257,7 +258,9 @@ def _поля(язык, Т, n, m=None, Т2=None, М=0, М2=1, i=0, ц=0, к=0):
 
 
 def страница(язык, форма, Т, n, **чем):
-    return РАМКИ[язык][форма].format(**_поля(язык, Т, n, **чем))
+    # ЭЛИЗИЯ ПОСЛЕ ПОДСТАНОВКИ: «de œufs» → «d'œufs»
+    готовая = РАМКИ[язык][форма].format(**_поля(язык, Т, n, **чем))
+    return _fr.элизия(готовая) if язык == "fr" else готовая
 
 
 def _пара(n):
@@ -338,7 +341,7 @@ def _образец(язык, рамка):
             счёт[дыра] = счёт.get(дыра, 0) + 1
             куски.append(f"(?P<h_{дыра}__{счёт[дыра]}>{дыры[дыра]})")
         else:
-            куски.append(re.escape(кусок))
+            куски.append(_fr.в_образце(кусок) if язык == "fr" else re.escape(кусок))
     return re.compile("^" + "".join(куски) + "$")
 
 
