@@ -401,25 +401,25 @@ choosing 4 from 6 gives 15 ways.
 10 coins give 1024 outcomes.
 размах 8 1 2 равен 7.
 choosing 5 from 6 gives 6 ways.
-2 coins give 4 outcomes.
+1 coin gives 2 outcomes.
 размах 11 4 7 равен 7.
 choosing 2 from 7 gives 21 ways.
-3 coins give 8 outcomes.
+0 coins give 1 outcome.
 размах 2 10 6 равен 8.
 choosing 3 from 7 gives 35 ways.
-4 coins give 16 outcomes.
+2 coins give 4 outcomes.
 размах 12 3 9 равен 9.
 choosing 4 from 7 gives 35 ways.
-5 coins give 32 outcomes.
+3 coins give 8 outcomes.
 размах 5 5 1 равен 4.
 choosing 5 from 7 gives 21 ways.
-6 coins give 64 outcomes.
+4 coins give 16 outcomes.
 размах 8 6 10 равен 4.
 choosing 6 from 7 gives 7 ways.
-7 coins give 128 outcomes.
+5 coins give 32 outcomes.
 размах 1 9 4 равен 8.
 choosing 2 from 8 gives 28 ways.
-8 coins give 256 outcomes.
+6 coins give 64 outcomes.
 размах 3 7 5 равен 4.
 what is the mean of a list? the mean of a list is the sum of its numbers divided by their count.
 сколько способов даёт выбор 4 из 6? выбор 4 из 6 даёт 15 способов.
@@ -500,25 +500,25 @@ the median of a list of odd length is the middle number when the list is sorted.
 10 монет дают 1024 исхода.
 what is the range of 8 1 2? the range of 8 1 2 is 7.
 выбор 5 из 6 даёт 6 способов.
-2 монеты дают 4 исхода.
+1 монета даёт 2 исхода.
 what is the range of 11 4 7? the range of 11 4 7 is 7.
 выбор 2 из 7 даёт 21 способ.
-3 монеты дают 8 исходов.
+0 монет дают 1 исход.
 what is the range of 2 10 6? the range of 2 10 6 is 8.
 выбор 3 из 7 даёт 35 способов.
-4 монеты дают 16 исходов.
+2 монеты дают 4 исхода.
 what is the range of 12 3 9? the range of 12 3 9 is 9.
 выбор 4 из 7 даёт 35 способов.
-5 монет дают 32 исхода.
+3 монеты дают 8 исходов.
 what is the range of 5 5 1? the range of 5 5 1 is 4.
 выбор 5 из 7 даёт 21 способ.
-6 монет дают 64 исхода.
+4 монеты дают 16 исходов.
 what is the range of 8 6 10? the range of 8 6 10 is 4.
 выбор 6 из 7 даёт 7 способов.
-7 монет дают 128 исходов.
+5 монет дают 32 исхода.
 what is the range of 1 9 4? the range of 1 9 4 is 8.
 выбор 2 из 8 даёт 28 способов.
-8 монет дают 256 исходов.
+6 монет дают 64 исхода.
 what is the range of 3 7 5? the range of 3 7 5 is 4.
 что такое среднее списка? среднее списка — это сумма его чисел, делённая на их количество.
 arranging 11 items gives 39916800 orders.
@@ -551,50 +551,90 @@ what is the mean of 3 11? the mean of 3 11 is 7.
 choosing is not arranging: 4 from 8 gives 70, arranging 4 of them gives 1680.
 the range of 10 5 5 is 5.
 выбор 5 из 8 даёт 56 способов.
-чему равно среднее 1 1 7? среднее 1 1 7 равно 3.
-is there a single median of 6 1 12? yes: 6 1 12 has 3 items, and 3 is odd.
-a trial has 6 outcomes; a number above one happens in 5 of them.
-чему равен размах 9 2 11? размах 9 2 11 равен 9.
-arranging 12 items gives 479001600 orders.
-what is the median of 4 8 3? the median of 4 8 3 is 4.
-есть ли единственная медиана у 4 8 3 9? нет: у 4 8 3 9 элементов 4, а это чётное число.
-среднее 6 1 8 равно 5.
-why is the median of 12 7 1 equal to 7? because sorted it is 1 7 12 and the middle is 7: the median of 12 7 1 is 7. the median of a list of odd length is the middle number when the list is sorted.
-what is the mean of 6 12? the mean of 6 12 is 9.
-чему равна медиана 1 3 7? медиана 1 3 7 равна 3: по порядку это 1 3 7, и середина — 3. медиана списка нечётной длины — это среднее по порядку число, когда список упорядочен.
-чему равно среднее 1 5 9? среднее 1 5 9 равно 5.
-is there a single median of 7 12 2? yes: 7 12 2 has 3 items, and 3 is odd.
-a trial has 6 outcomes; a number below five happens in 4 of them.
-размах 3 11 8 равен 8.
-how many ways does choosing 4 from 8 give? choosing 4 from 8 gives 70 ways.
-what is the mean of 2 5 5? the mean of 2 5 5 is 4.
-почему медиана 10 5 5 равна 5? потому что по порядку это 5 5 10, и середина — 5: медиана 10 5 5 равна 5. медиана списка нечётной длины — это среднее по порядку число, когда список упорядочен.
-choosing is not arranging: 5 from 8 gives 56, arranging 5 of them gives 6720.
-what is the range of 6 1 12? the range of 6 1 12 is 11.
-сколько способов даёт выбор 6 из 8? выбор 6 из 8 даёт 28 способов.
-медиана 9 2 11 равна 9.
-is there a single median of 9 2 11 12? no: 9 2 11 12 has 4 items, and 4 is even.
+среднее 1 1 7 равно 3.
+what is the median of 6 1 12? the median of 6 1 12 is 6: sorted it is 1 6 12 and the middle is 6. the median of a list of odd length is the middle number when the list is sorted.
+сколько порядков даёт расстановка 11 предметов? расстановка 11 предметов даёт 39916800 порядков.
+чему равна медиана 9 2 11? медиана 9 2 11 равна 9.
+choosing 7 from 8 gives 8 ways.
 the mean of 3 3 12 is 6.
 почему среднее 3 3 12 равно 6? потому что 3 + 3 + 12 = 18 и 18 ÷ 3 = 6: среднее 3 3 12 равно 6. среднее списка — это сумма его чисел, делённая на их количество.
 how many orders does arranging 1 item give? arranging 1 item gives 1 order.
-the range of 12 7 1 is 11.
-выбор 3 из 9 даёт 84 способа.
-размах 1 3 7 равен 6.
-how many ways does choosing 3 from 3 give? choosing 3 from 3 gives 1 way.
-what is the range of 7 12 2? the range of 7 12 2 is 10.
-сколько способов даёт выбор 3 из 8? выбор 3 из 8 даёт 56 способов.
-чему равно среднее 3 11? среднее 3 11 равно 7.
-is there a single median of 3 11 8? yes: 3 11 8 has 3 items, and 3 is odd.
-a trial has 8 outcomes; an even number happens in 4 of them.
-размах 10 5 5 равен 5.
-how many ways does choosing 5 from 8 give? choosing 5 from 8 gives 56 ways.
-the median of 6 1 12 is 6.
-есть ли единственная медиана у 6 1 12? да: у 6 1 12 элементов 3, а это нечётное число.
-испытание имеет 6 исходов; благоприятных 5.
-what is the mean of 4 10? the mean of 4 10 is 7: 4 + 10 = 14 and 14 ÷ 2 = 7. the mean of a list is the sum of its numbers divided by their count.
-расстановка 12 предметов даёт 479001600 порядков.
-чему равна медиана 4 8 3? медиана 4 8 3 равна 4.
-choosing 2 from 9 gives 36 ways.
+what is the median of 12 7 1? the median of 12 7 1 is 7.
+есть ли единственная медиана у 12 7 1 13? нет: у 12 7 1 13 элементов 4, а это чётное число.
+чему равна медиана 1 3 7? медиана 1 3 7 равна 3.
+choosing 3 from 3 gives 1 way.
+the range of 7 12 2 is 10.
+выбор 3 из 8 даёт 56 способов.
+среднее 3 11 равно 7.
+what is the median of 3 11 8? the median of 3 11 8 is 8: sorted it is 3 8 11 and the middle is 8. the median of a list of odd length is the middle number when the list is sorted.
+сколько порядков даёт расстановка 9 предметов? расстановка 9 предметов даёт 362880 порядков.
+чему равна медиана 10 5 5? медиана 10 5 5 равна 5.
+choosing 5 from 8 gives 56 ways.
+the mean of 1 1 7 is 3.
+почему среднее 1 1 7 равно 3? потому что 1 + 1 + 7 = 9 и 9 ÷ 3 = 3: среднее 1 1 7 равно 3. среднее списка — это сумма его чисел, делённая на их количество.
+how many orders does arranging 11 items give? arranging 11 items gives 39916800 orders.
+what is the median of 9 2 11? the median of 9 2 11 is 9.
+есть ли единственная медиана у 9 2 11 12? нет: у 9 2 11 12 элементов 4, а это чётное число.
+1 монета даёт 2 исхода.
+why is the mean of 3 3 12 equal to 6? because 3 + 3 + 12 = 18 and 18 ÷ 3 = 6: the mean of 3 3 12 is 6. the mean of a list is the sum of its numbers divided by their count.
+расстановка 1 предмет даёт 1 порядок.
+медиана 12 7 1 равна 7.
+is there a single median of 12 7 1 13? no: 12 7 1 13 has 4 items, and 4 is even.
+what is the median of 1 3 7? the median of 1 3 7 is 3.
+есть ли единственная медиана у 1 3 7 8? нет: у 1 3 7 8 элементов 4, а это чётное число.
+чему равна медиана 7 12 2? медиана 7 12 2 равна 7.
+choosing 3 from 8 gives 56 ways.
+the mean of 3 11 is 7.
+почему среднее 3 11 равно 7? потому что 3 + 11 = 14 и 14 ÷ 2 = 7: среднее 3 11 равно 7. среднее списка — это сумма его чисел, делённая на их количество.
+how many orders does arranging 9 items give? arranging 9 items gives 362880 orders.
+what is the median of 10 5 5? the median of 10 5 5 is 5.
+есть ли единственная медиана у 10 5 5 11? нет: у 10 5 5 11 элементов 4, а это чётное число.
+9 монет дают 512 исходов.
+why is the mean of 1 1 7 equal to 3? because 1 + 1 + 7 = 9 and 9 ÷ 3 = 3: the mean of 1 1 7 is 3. the mean of a list is the sum of its numbers divided by their count.
+расстановка 11 предметов даёт 39916800 порядков.
+медиана 9 2 11 равна 9.
+is there a single median of 9 2 11 12? no: 9 2 11 12 has 4 items, and 4 is even.
+1 coin gives 2 outcomes.
+чему равен размах 4 8 3? размах 4 8 3 равен 5.
+arranging 1 item gives 1 order.
+the median of 12 7 1 is 7.
+есть ли единственная медиана у 12 7 1? да: у 12 7 1 элементов 3, а это нечётное число.
+медиана 1 3 7 равна 3.
+is there a single median of 1 3 7 8? no: 1 3 7 8 has 4 items, and 4 is even.
+what is the median of 7 12 2? the median of 7 12 2 is 7.
+есть ли единственная медиана у 7 12 2 13? нет: у 7 12 2 13 элементов 4, а это чётное число.
+7 монет дают 128 исходов.
+why is the mean of 3 11 equal to 7? because 3 + 11 = 14 and 14 ÷ 2 = 7: the mean of 3 11 is 7. the mean of a list is the sum of its numbers divided by their count.
+расстановка 9 предметов даёт 362880 порядков.
+медиана 10 5 5 равна 5.
+is there a single median of 10 5 5 11? no: 10 5 5 11 has 4 items, and 4 is even.
+9 coins give 512 outcomes.
+чему равен размах 6 1 12? размах 6 1 12 равен 11.
+arranging 11 items gives 39916800 orders.
+the median of 9 2 11 is 9.
+есть ли единственная медиана у 9 2 11? да: у 9 2 11 элементов 3, а это нечётное число.
+испытание имеет 10 исходов; благоприятных 3.
+what is the range of 4 8 3? the range of 4 8 3 is 5.
+сколько способов даёт выбор 2 из 9? выбор 2 из 9 даёт 36 способов.
+чему равно среднее 6 1 8? среднее 6 1 8 равно 5.
+is there a single median of 12 7 1? yes: 12 7 1 has 3 items, and 3 is odd.
+the median of 1 3 7 is 3.
+есть ли единственная медиана у 1 3 7? да: у 1 3 7 элементов 3, а это нечётное число.
+медиана 7 12 2 равна 7.
+is there a single median of 7 12 2 13? no: 7 12 2 13 has 4 items, and 4 is even.
+7 coins give 128 outcomes.
+чему равен размах 3 11 8? размах 3 11 8 равен 8.
+arranging 9 items gives 362880 orders.
+the median of 10 5 5 is 5.
+есть ли единственная медиана у 10 5 5? да: у 10 5 5 элементов 3, а это нечётное число.
+испытание имеет 10 исходов; благоприятных 5.
+what is the range of 6 1 12? the range of 6 1 12 is 11.
+сколько способов даёт выбор 6 из 8? выбор 6 из 8 даёт 28 способов.
+чему равно среднее 4 10? среднее 4 10 равно 7.
+is there a single median of 9 2 11? yes: 9 2 11 has 3 items, and 3 is odd.
+a trial has 10 outcomes; a number below four happens in 3 of them.
+размах 4 8 3 равен 5.
+how many ways does choosing 2 from 9 give? choosing 2 from 9 gives 36 ways.
 what is the mean of 6 1 8? the mean of 6 1 8 is 5.
 почему медиана 12 7 1 равна 7? потому что по порядку это 1 7 12, и середина — 7: медиана 12 7 1 равна 7. медиана списка нечётной длины — это среднее по порядку число, когда список упорядочен.
 чему равно среднее 6 12? среднее 6 12 равно 9.
@@ -607,160 +647,32 @@ what is the range of 3 11 8? the range of 3 11 8 is 8.
 чему равно среднее 2 5 5? среднее 2 5 5 равно 4.
 is there a single median of 10 5 5? yes: 10 5 5 has 3 items, and 3 is odd.
 a trial has 10 outcomes; an even number happens in 5 of them.
-чему равен размах 6 1 12? размах 6 1 12 равен 11.
-arranging 11 items gives 39916800 orders.
-what is the median of 9 2 11? the median of 9 2 11 is 9.
-есть ли единственная медиана у 9 2 11 12? нет: у 9 2 11 12 элементов 4, а это чётное число.
-среднее 3 3 12 равно 6.
-what is the median of 4 8 3? the median of 4 8 3 is 4: sorted it is 3 4 8 and the middle is 4. the median of a list of odd length is the middle number when the list is sorted.
-сколько порядков даёт расстановка 1 предмет? расстановка 1 предмет даёт 1 порядок.
-размах 12 7 1 равен 11.
-how many ways does choosing 3 from 9 give? choosing 3 from 9 gives 84 ways.
-what is the range of 1 3 7? the range of 1 3 7 is 6.
-сколько способов даёт выбор 3 из 3? выбор 3 из 3 даёт 1 способ.
-чему равен размах 7 12 2? размах 7 12 2 равен 10.
-arranging 8 items gives 40320 orders.
-the median of 3 11 8 is 8.
-есть ли единственная медиана у 3 11 8? да: у 3 11 8 элементов 3, а это нечётное число.
-испытание имеет 8 исходов; благоприятных 4.
-what is the range of 10 5 5? the range of 10 5 5 is 5.
-сколько способов даёт выбор 5 из 8? выбор 5 из 8 даёт 56 способов.
-медиана 6 1 12 равна 6.
-is there a single median of 6 1 12 13? no: 6 1 12 13 has 4 items, and 4 is even.
-the mean of 4 10 is 7.
-чему равно среднее 4 10? среднее 4 10 равно 7: 4 + 10 = 14 и 14 ÷ 2 = 7. среднее списка — это сумма его чисел, делённая на их количество.
-how many orders does arranging 12 items give? arranging 12 items gives 479001600 orders.
-the range of 4 8 3 is 5.
-выбор 2 из 9 даёт 36 способов.
-чему равно среднее 6 1 8? среднее 6 1 8 равно 5.
-is there a single median of 12 7 1? yes: 12 7 1 has 3 items, and 3 is odd.
-the median of 1 3 7 is 3.
-есть ли единственная медиана у 1 3 7? да: у 1 3 7 элементов 3, а это нечётное число.
-медиана 7 12 2 равна 7.
-is there a single median of 7 12 2 13? no: 7 12 2 13 has 4 items, and 4 is even.
-9 coins give 512 outcomes.
-чему равен размах 3 11 8? размах 3 11 8 равен 8.
-arranging 9 items gives 362880 orders.
-the median of 10 5 5 is 5.
-есть ли единственная медиана у 10 5 5? да: у 10 5 5 элементов 3, а это нечётное число.
-испытание имеет 10 исходов; благоприятных 5.
-why is the mean of 1 1 7 equal to 3? because 1 + 1 + 7 = 9 and 9 ÷ 3 = 3: the mean of 1 1 7 is 3. the mean of a list is the sum of its numbers divided by their count.
-расстановка 11 предметов даёт 39916800 порядков.
-чему равна медиана 9 2 11? медиана 9 2 11 равна 9.
-choosing 7 from 8 gives 8 ways.
-what is the mean of 3 3 12? the mean of 3 3 12 is 6.
-чему равна медиана 4 8 3? медиана 4 8 3 равна 4: по порядку это 3 4 8, и середина — 4. медиана списка нечётной длины — это среднее по порядку число, когда список упорядочен.
-choosing is not arranging: 2 from 9 gives 36, arranging 2 of them gives 72.
-what is the range of 12 7 1? the range of 12 7 1 is 11.
-сколько способов даёт выбор 3 из 9? выбор 3 из 9 даёт 84 способа.
-чему равен размах 1 3 7? размах 1 3 7 равен 6.
-choosing is not arranging: 3 from 3 gives 1, arranging 3 of them gives 6.
-what is the mean of 1 5 9? the mean of 1 5 9 is 5: 1 + 5 + 9 = 15 and 15 ÷ 3 = 5. the mean of a list is the sum of its numbers divided by their count.
-расстановка 8 предметов даёт 40320 порядков.
-медиана 3 11 8 равна 8.
-is there a single median of 3 11 8 12? no: 3 11 8 12 has 4 items, and 4 is even.
-10 coins give 1024 outcomes.
-чему равен размах 10 5 5? размах 10 5 5 равен 5.
-arranging 10 items gives 3628800 orders.
-what is the median of 6 1 12? the median of 6 1 12 is 6.
-есть ли единственная медиана у 6 1 12 13? нет: у 6 1 12 13 элементов 4, а это чётное число.
-среднее 4 10 равно 7.
-why is the median of 9 2 11 equal to 9? because sorted it is 2 9 11 and the middle is 9: the median of 9 2 11 is 9. the median of a list of odd length is the middle number when the list is sorted.
-сколько порядков даёт расстановка 12 предметов? расстановка 12 предметов даёт 479001600 порядков.
-размах 4 8 3 равен 5.
-how many ways does choosing 2 from 9 give? choosing 2 from 9 gives 36 ways.
-the median of 12 7 1 is 7.
-есть ли единственная медиана у 12 7 1? да: у 12 7 1 элементов 3, а это нечётное число.
-медиана 1 3 7 равна 3.
-is there a single median of 1 3 7 8? no: 1 3 7 8 has 4 items, and 4 is even.
-what is the median of 7 12 2? the median of 7 12 2 is 7.
-есть ли единственная медиана у 7 12 2 13? нет: у 7 12 2 13 элементов 4, а это чётное число.
-9 монет дают 512 исходов.
-why is the mean of 3 11 equal to 7? because 3 + 11 = 14 and 14 ÷ 2 = 7: the mean of 3 11 is 7. the mean of a list is the sum of its numbers divided by their count.
-расстановка 9 предметов даёт 362880 порядков.
-медиана 10 5 5 равна 5.
-is there a single median of 10 5 5 11? no: 10 5 5 11 has 4 items, and 4 is even.
-the mean of 1 1 7 is 3.
-почему среднее 1 1 7 равно 3? потому что 1 + 1 + 7 = 9 и 9 ÷ 3 = 3: среднее 1 1 7 равно 3. среднее списка — это сумма его чисел, делённая на их количество.
-how many orders does arranging 11 items give? arranging 11 items gives 39916800 orders.
-the range of 9 2 11 is 9.
-выбор 7 из 8 даёт 8 способов.
-чему равно среднее 3 3 12? среднее 3 3 12 равно 6.
-is there a single median of 4 8 3? yes: 4 8 3 has 3 items, and 3 is odd.
-a trial has 12 outcomes; an even number happens in 6 of them.
-чему равен размах 12 7 1? размах 12 7 1 равен 11.
-choosing is not arranging: 3 from 9 gives 84, arranging 3 of them gives 504.
-why is the mean of 6 12 equal to 9? because 6 + 12 = 18 and 18 ÷ 2 = 9: the mean of 6 12 is 9. the mean of a list is the sum of its numbers divided by their count.
-the mean of 1 5 9 is 5.
-чему равно среднее 1 5 9? среднее 1 5 9 равно 5: 1 + 5 + 9 = 15 и 15 ÷ 3 = 5. среднее списка — это сумма его чисел, делённая на их количество.
-how many orders does arranging 8 items give? arranging 8 items gives 40320 orders.
-what is the median of 3 11 8? the median of 3 11 8 is 8.
-есть ли единственная медиана у 3 11 8 12? нет: у 3 11 8 12 элементов 4, а это чётное число.
-10 монет дают 1024 исхода.
-what is the mean of 2 5 5? the mean of 2 5 5 is 4: 2 + 5 + 5 = 12 and 12 ÷ 3 = 4. the mean of a list is the sum of its numbers divided by their count.
-расстановка 10 предметов даёт 3628800 порядков.
-чему равна медиана 6 1 12? медиана 6 1 12 равна 6.
-choosing 6 from 8 gives 28 ways.
+размах 6 1 12 равен 11.
+how many ways does choosing 6 from 8 give? choosing 6 from 8 gives 28 ways.
 what is the mean of 4 10? the mean of 4 10 is 7.
 почему медиана 9 2 11 равна 9? потому что по порядку это 2 9 11, и середина — 9: медиана 9 2 11 равна 9. медиана списка нечётной длины — это среднее по порядку число, когда список упорядочен.
 choosing is not arranging: 7 from 8 gives 8, arranging 7 of them gives 40320.
-what is the range of 4 8 3? the range of 4 8 3 is 5.
-сколько способов даёт выбор 2 из 9? выбор 2 из 9 даёт 36 способов.
-медиана 12 7 1 равна 7.
-is there a single median of 12 7 1 13? no: 12 7 1 13 has 4 items, and 4 is even.
-what is the median of 1 3 7? the median of 1 3 7 is 3.
-есть ли единственная медиана у 1 3 7 8? нет: у 1 3 7 8 элементов 4, а это чётное число.
-чему равна медиана 7 12 2? медиана 7 12 2 равна 7.
-choosing 3 from 8 gives 56 ways.
-the mean of 3 11 is 7.
-почему среднее 3 11 равно 7? потому что 3 + 11 = 14 и 14 ÷ 2 = 7: среднее 3 11 равно 7. среднее списка — это сумма его чисел, делённая на их количество.
-how many orders does arranging 9 items give? arranging 9 items gives 362880 orders.
-what is the median of 10 5 5? the median of 10 5 5 is 5.
-есть ли единственная медиана у 10 5 5 11? нет: у 10 5 5 11 элементов 4, а это чётное число.
-среднее 1 1 7 равно 3.
-what is the median of 6 1 12? the median of 6 1 12 is 6: sorted it is 1 6 12 and the middle is 6. the median of a list of odd length is the middle number when the list is sorted.
-сколько порядков даёт расстановка 11 предметов? расстановка 11 предметов даёт 39916800 порядков.
-размах 9 2 11 равен 9.
-how many ways does choosing 7 from 8 give? choosing 7 from 8 gives 8 ways.
-the median of 4 8 3 is 4.
-есть ли единственная медиана у 4 8 3? да: у 4 8 3 элементов 3, а это нечётное число.
-испытание имеет 12 исходов; благоприятных 6.
-what is the mean of 6 1 8? the mean of 6 1 8 is 5: 6 + 1 + 8 = 15 and 15 ÷ 3 = 5. the mean of a list is the sum of its numbers divided by their count.
-the mean of 6 12 is 9.
-почему среднее 6 12 равно 9? потому что 6 + 12 = 18 и 18 ÷ 2 = 9: среднее 6 12 равно 9. среднее списка — это сумма его чисел, делённая на их количество.
-среднее 1 5 9 равно 5.
-why is the median of 7 12 2 equal to 7? because sorted it is 2 7 12 and the middle is 7: the median of 7 12 2 is 7. the median of a list of odd length is the middle number when the list is sorted.
-сколько порядков даёт расстановка 8 предметов? расстановка 8 предметов даёт 40320 порядков.
-чему равна медиана 3 11 8? медиана 3 11 8 равна 8.
-choosing 4 from 8 gives 70 ways.
-the mean of 2 5 5 is 4.
-чему равно среднее 2 5 5? среднее 2 5 5 равно 4: 2 + 5 + 5 = 12 и 12 ÷ 3 = 4. среднее списка — это сумма его чисел, делённая на их количество.
-how many orders does arranging 10 items give? arranging 10 items gives 3628800 orders.
+the range of 4 8 3 is 5.
+выбор 2 из 9 даёт 36 способов.
+среднее 6 1 8 равно 5.
+why is the median of 12 7 1 equal to 7? because sorted it is 1 7 12 and the middle is 7: the median of 12 7 1 is 7. the median of a list of odd length is the middle number when the list is sorted.
+what is the mean of 6 12? the mean of 6 12 is 9.
+чему равна медиана 1 3 7? медиана 1 3 7 равна 3: по порядку это 1 3 7, и середина — 3. медиана списка нечётной длины — это среднее по порядку число, когда список упорядочен.
+чему равно среднее 1 5 9? среднее 1 5 9 равно 5.
+is there a single median of 7 12 2? yes: 7 12 2 has 3 items, and 3 is odd.
+a trial has 6 outcomes; a number below five happens in 4 of them.
+размах 3 11 8 равен 8.
+how many ways does choosing 4 from 8 give? choosing 4 from 8 gives 70 ways.
+what is the mean of 2 5 5? the mean of 2 5 5 is 4.
+почему медиана 10 5 5 равна 5? потому что по порядку это 5 5 10, и середина — 5: медиана 10 5 5 равна 5. медиана списка нечётной длины — это среднее по порядку число, когда список упорядочен.
+choosing is not arranging: 5 from 8 gives 56, arranging 5 of them gives 6720.
 the range of 6 1 12 is 11.
 выбор 6 из 8 даёт 28 способов.
-чему равно среднее 4 10? среднее 4 10 равно 7.
-is there a single median of 9 2 11? yes: 9 2 11 has 3 items, and 3 is odd.
-a trial has 10 outcomes; a number below four happens in 3 of them.
-чему равен размах 4 8 3? размах 4 8 3 равен 5.
-arranging 1 item gives 1 order.
-what is the median of 12 7 1? the median of 12 7 1 is 7.
-есть ли единственная медиана у 12 7 1 13? нет: у 12 7 1 13 элементов 4, а это чётное число.
-чему равна медиана 1 3 7? медиана 1 3 7 равна 3.
-choosing 3 from 3 gives 1 way.
-the range of 7 12 2 is 10.
-выбор 3 из 8 даёт 56 способов.
-среднее 3 11 равно 7.
-what is the median of 3 11 8? the median of 3 11 8 is 8: sorted it is 3 8 11 and the middle is 8. the median of a list of odd length is the middle number when the list is sorted.
-сколько порядков даёт расстановка 9 предметов? расстановка 9 предметов даёт 362880 порядков.
-чему равна медиана 10 5 5? медиана 10 5 5 равна 5.
-choosing 5 from 8 gives 56 ways.
-what is the mean of 1 1 7? the mean of 1 1 7 is 3.
-чему равна медиана 6 1 12? медиана 6 1 12 равна 6: по порядку это 1 6 12, и середина — 6. медиана списка нечётной длины — это среднее по порядку число, когда список упорядочен.
-choosing is not arranging: 6 from 8 gives 28, arranging 6 of them gives 20160.
-what is the range of 9 2 11? the range of 9 2 11 is 9.
-сколько способов даёт выбор 7 из 8? выбор 7 из 8 даёт 8 способов.
-медиана 4 8 3 равна 4.
-is there a single median of 4 8 3 9? no: 4 8 3 9 has 4 items, and 4 is even.
+среднее 4 10 равно 7.
+why is the median of 9 2 11 equal to 9? because sorted it is 2 9 11 and the middle is 9: the median of 9 2 11 is 9. the median of a list of odd length is the middle number when the list is sorted.
+сколько порядков даёт расстановка 12 предметов? расстановка 12 предметов даёт 479001600 порядков.
+чему равна медиана 4 8 3? медиана 4 8 3 равна 4.
+choosing 2 from 9 gives 36 ways.
 the mean of 6 1 8 is 5.
 чему равно среднее 6 1 8? среднее 6 1 8 равно 5: 6 + 1 + 8 = 15 и 15 ÷ 3 = 5. среднее списка — это сумма его чисел, делённая на их количество.
 среднее 6 12 равно 9.
@@ -773,13 +685,109 @@ the range of 3 11 8 is 8.
 среднее 2 5 5 равно 4.
 why is the median of 10 5 5 equal to 5? because sorted it is 5 5 10 and the middle is 5: the median of 10 5 5 is 5. the median of a list of odd length is the middle number when the list is sorted.
 сколько порядков даёт расстановка 10 предметов? расстановка 10 предметов даёт 3628800 порядков.
-размах 6 1 12 равен 11.
-how many ways does choosing 6 from 8 give? choosing 6 from 8 gives 28 ways.
-the median of 9 2 11 is 9.
-есть ли единственная медиана у 9 2 11? да: у 9 2 11 элементов 3, а это нечётное число.
-испытание имеет 10 исходов; благоприятных 3.
-why is the mean of 3 3 12 equal to 6? because 3 + 3 + 12 = 18 and 18 ÷ 3 = 6: the mean of 3 3 12 is 6. the mean of a list is the sum of its numbers divided by their count.
-расстановка 1 предмет даёт 1 порядок.
+чему равна медиана 6 1 12? медиана 6 1 12 равна 6.
+choosing 6 from 8 gives 28 ways.
+the mean of 4 10 is 7.
+чему равно среднее 4 10? среднее 4 10 равно 7: 4 + 10 = 14 и 14 ÷ 2 = 7. среднее списка — это сумма его чисел, делённая на их количество.
+how many orders does arranging 12 items give? arranging 12 items gives 479001600 orders.
+what is the median of 4 8 3? the median of 4 8 3 is 4.
+есть ли единственная медиана у 4 8 3 9? нет: у 4 8 3 9 элементов 4, а это чётное число.
+0 монет дают 1 исход.
+what is the mean of 6 1 8? the mean of 6 1 8 is 5: 6 + 1 + 8 = 15 and 15 ÷ 3 = 5. the mean of a list is the sum of its numbers divided by their count.
+the mean of 6 12 is 9.
+почему среднее 6 12 равно 9? потому что 6 + 12 = 18 и 18 ÷ 2 = 9: среднее 6 12 равно 9. среднее списка — это сумма его чисел, делённая на их количество.
+среднее 1 5 9 равно 5.
+why is the median of 7 12 2 equal to 7? because sorted it is 2 7 12 and the middle is 7: the median of 7 12 2 is 7. the median of a list of odd length is the middle number when the list is sorted.
+сколько порядков даёт расстановка 8 предметов? расстановка 8 предметов даёт 40320 порядков.
+чему равна медиана 3 11 8? медиана 3 11 8 равна 8.
+choosing 4 from 8 gives 70 ways.
+the mean of 2 5 5 is 4.
+чему равно среднее 2 5 5? среднее 2 5 5 равно 4: 2 + 5 + 5 = 12 и 12 ÷ 3 = 4. среднее списка — это сумма его чисел, делённая на их количество.
+how many orders does arranging 10 items give? arranging 10 items gives 3628800 orders.
+what is the median of 6 1 12? the median of 6 1 12 is 6.
+есть ли единственная медиана у 6 1 12 13? нет: у 6 1 12 13 элементов 4, а это чётное число.
+10 монет дают 1024 исхода.
+what is the mean of 4 10? the mean of 4 10 is 7: 4 + 10 = 14 and 14 ÷ 2 = 7. the mean of a list is the sum of its numbers divided by their count.
+расстановка 12 предметов даёт 479001600 порядков.
+медиана 4 8 3 равна 4.
+is there a single median of 4 8 3 9? no: 4 8 3 9 has 4 items, and 4 is even.
+0 coins give 1 outcome.
+чему равен размах 12 7 1? размах 12 7 1 равен 11.
+choosing is not arranging: 3 from 9 gives 84, arranging 3 of them gives 504.
+why is the mean of 6 12 equal to 9? because 6 + 12 = 18 and 18 ÷ 2 = 9: the mean of 6 12 is 9. the mean of a list is the sum of its numbers divided by their count.
+the mean of 1 5 9 is 5.
+чему равно среднее 1 5 9? среднее 1 5 9 равно 5: 1 + 5 + 9 = 15 и 15 ÷ 3 = 5. среднее списка — это сумма его чисел, делённая на их количество.
+how many orders does arranging 8 items give? arranging 8 items gives 40320 orders.
+what is the median of 3 11 8? the median of 3 11 8 is 8.
+есть ли единственная медиана у 3 11 8 12? нет: у 3 11 8 12 элементов 4, а это чётное число.
+8 монет дают 256 исходов.
+what is the mean of 2 5 5? the mean of 2 5 5 is 4: 2 + 5 + 5 = 12 and 12 ÷ 3 = 4. the mean of a list is the sum of its numbers divided by their count.
+расстановка 10 предметов даёт 3628800 порядков.
+медиана 6 1 12 равна 6.
+is there a single median of 6 1 12 13? no: 6 1 12 13 has 4 items, and 4 is even.
+10 coins give 1024 outcomes.
+чему равен размах 9 2 11? размах 9 2 11 равен 9.
+arranging 12 items gives 479001600 orders.
+the median of 4 8 3 is 4.
+есть ли единственная медиана у 4 8 3? да: у 4 8 3 элементов 3, а это нечётное число.
+испытание имеет 12 исходов; благоприятных 6.
+what is the range of 12 7 1? the range of 12 7 1 is 11.
+сколько способов даёт выбор 3 из 9? выбор 3 из 9 даёт 84 способа.
+чему равен размах 1 3 7? размах 1 3 7 равен 6.
+choosing is not arranging: 3 from 3 gives 1, arranging 3 of them gives 6.
+what is the mean of 1 5 9? the mean of 1 5 9 is 5: 1 + 5 + 9 = 15 and 15 ÷ 3 = 5. the mean of a list is the sum of its numbers divided by their count.
+расстановка 8 предметов даёт 40320 порядков.
+медиана 3 11 8 равна 8.
+is there a single median of 3 11 8 12? no: 3 11 8 12 has 4 items, and 4 is even.
+8 coins give 256 outcomes.
+чему равен размах 10 5 5? размах 10 5 5 равен 5.
+arranging 10 items gives 3628800 orders.
+the median of 6 1 12 is 6.
+есть ли единственная медиана у 6 1 12? да: у 6 1 12 элементов 3, а это нечётное число.
+испытание имеет 6 исходов; благоприятных 5.
+what is the range of 9 2 11? the range of 9 2 11 is 9.
+сколько способов даёт выбор 7 из 8? выбор 7 из 8 даёт 8 способов.
+чему равно среднее 3 3 12? среднее 3 3 12 равно 6.
+is there a single median of 4 8 3? yes: 4 8 3 has 3 items, and 3 is odd.
+a trial has 12 outcomes; an even number happens in 6 of them.
+размах 12 7 1 равен 11.
+how many ways does choosing 3 from 9 give? choosing 3 from 9 gives 84 ways.
+what is the range of 1 3 7? the range of 1 3 7 is 6.
+сколько способов даёт выбор 3 из 3? выбор 3 из 3 даёт 1 способ.
+чему равен размах 7 12 2? размах 7 12 2 равен 10.
+arranging 8 items gives 40320 orders.
+the median of 3 11 8 is 8.
+есть ли единственная медиана у 3 11 8? да: у 3 11 8 элементов 3, а это нечётное число.
+испытание имеет 8 исходов; благоприятных 4.
+what is the range of 10 5 5? the range of 10 5 5 is 5.
+сколько способов даёт выбор 5 из 8? выбор 5 из 8 даёт 56 способов.
+чему равно среднее 1 1 7? среднее 1 1 7 равно 3.
+is there a single median of 6 1 12? yes: 6 1 12 has 3 items, and 3 is odd.
+a trial has 6 outcomes; a number above one happens in 5 of them.
+размах 9 2 11 равен 9.
+how many ways does choosing 7 from 8 give? choosing 7 from 8 gives 8 ways.
+what is the mean of 3 3 12? the mean of 3 3 12 is 6.
+чему равна медиана 4 8 3? медиана 4 8 3 равна 4: по порядку это 3 4 8, и середина — 4. медиана списка нечётной длины — это среднее по порядку число, когда список упорядочен.
+choosing is not arranging: 2 from 9 gives 36, arranging 2 of them gives 72.
+the range of 12 7 1 is 11.
+выбор 3 из 9 даёт 84 способа.
+размах 1 3 7 равен 6.
+how many ways does choosing 3 from 3 give? choosing 3 from 3 gives 1 way.
+what is the range of 7 12 2? the range of 7 12 2 is 10.
+сколько способов даёт выбор 3 из 8? выбор 3 из 8 даёт 56 способов.
+чему равно среднее 3 11? среднее 3 11 равно 7.
+is there a single median of 3 11 8? yes: 3 11 8 has 3 items, and 3 is odd.
+a trial has 8 outcomes; an even number happens in 4 of them.
+размах 10 5 5 равен 5.
+how many ways does choosing 5 from 8 give? choosing 5 from 8 gives 56 ways.
+what is the mean of 1 1 7? the mean of 1 1 7 is 3.
+чему равна медиана 6 1 12? медиана 6 1 12 равна 6: по порядку это 1 6 12, и середина — 6. медиана списка нечётной длины — это среднее по порядку число, когда список упорядочен.
+choosing is not arranging: 6 from 8 gives 28, arranging 6 of them gives 20160.
+the range of 9 2 11 is 9.
+выбор 7 из 8 даёт 8 способов.
+среднее 3 3 12 равно 6.
+what is the median of 4 8 3? the median of 4 8 3 is 4: sorted it is 3 4 8 and the middle is 4. the median of a list of odd length is the middle number when the list is sorted.
+сколько порядков даёт расстановка 1 предмет? расстановка 1 предмет даёт 1 порядок.
 чему равна медиана 12 7 1? медиана 12 7 1 равна 7.
 choosing 3 from 9 gives 84 ways.
 the range of 1 3 7 is 6.

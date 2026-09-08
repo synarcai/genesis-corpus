@@ -445,23 +445,27 @@ the numbers 3 and 1 stand in different classes modulo 4: the remainders are 3 an
 соответствие «номер в обходе» на узлах дерева родов взаимно-однозначно: 18 элементов и 18 значений.
 the correspondence «level» on the nodes of the tree of kinds is not one-to-one: the elements body and sign go to one and the same value 1.
 в соответствии «остаток по модулю 3» элемент 1 переходит в значение 1.
-in the correspondence «walk number» the element body goes to the value 2, and the value 2 goes back to the element body.
-соответствие «уровень» на узлах дерева родов не взаимно-однозначно: элементы body и sign переходят в одно и то же значение 1.
-the correspondence «square» on the set {1, 2, 3, 4} is one-to-one: 4 elements and 4 values.
-в соответствии «номер в обходе» элемент body переходит в значение 2, а значение 2 возвращается в элемент body.
-in the correspondence «level» the element body goes to the value 1.
-соответствие «квадрат» на множестве {1, 2, 3, 4} взаимно-однозначно: 4 элемента и 4 значения.
-the correspondence «name in Russian» on the nodes of the tree of kinds is one-to-one: 18 elements and 18 values.
-в соответствии «уровень» элемент body переходит в значение 1.
 in the correspondence «square» the element 1 goes to the value 1, and the value 1 goes back to the element 1.
 соответствие «имя по-русски» на узлах дерева родов взаимно-однозначно: 18 элементов и 18 значений.
 the correspondence «remainder modulo 3» on the numbers from 1 to 12 is not one-to-one: the elements 1 and 4 go to one and the same value 1.
+в соответствии «уровень корня» элемент thing переходит в значение 0, а значение 0 возвращается в элемент thing.
+in the correspondence «walk number» the element body goes to the value 2, and the value 2 goes back to the element body.
+соответствие «уровень» на узлах дерева родов не взаимно-однозначно: элементы body и sign переходят в одно и то же значение 1.
+the correspondence «level of the root» on the root of the tree of kinds is one-to-one: 1 element and 1 value.
 в соответствии «квадрат» элемент 1 переходит в значение 1, а значение 1 возвращается в элемент 1.
 in the correspondence «name in Russian» the element body goes to the value тело, and the value тело goes back to the element body.
 соответствие «остаток по модулю 3» на числах от 1 до 12 не взаимно-однозначно: элементы 1 и 4 переходят в одно и то же значение 1.
+the correspondence «square» on the set {1, 2, 3, 4} is one-to-one: 4 elements and 4 values.
+в соответствии «номер в обходе» элемент body переходит в значение 2, а значение 2 возвращается в элемент body.
+in the correspondence «level» the element body goes to the value 1.
+соответствие «уровень корня» на корне дерева родов взаимно-однозначно: 1 элемент и 1 значение.
 the correspondence «walk number» on the nodes of the tree of kinds is one-to-one: 18 elements and 18 values.
 в соответствии «имя по-русски» элемент body переходит в значение тело, а значение тело возвращается в элемент body.
 in the correspondence «remainder modulo 3» the element 1 goes to the value 1.
+соответствие «квадрат» на множестве {1, 2, 3, 4} взаимно-однозначно: 4 элемента и 4 значения.
+the correspondence «name in Russian» on the nodes of the tree of kinds is one-to-one: 18 elements and 18 values.
+в соответствии «уровень» элемент body переходит в значение 1.
+in the correspondence «level of the root» the element thing goes to the value 0, and the value 0 goes back to the element thing.
 
 в порядке «не больше» на множестве {1, 2, 3, 4} цепь 1 - 2 - 3 - 4 имеет длину 4: каждый элемент стоит ниже следующего.
 in the order «divides» on the set {1, 2, 3, 4, 6, 8, 12} the elements 2 and 3 are incomparable: neither stands below the other.
@@ -1183,24 +1187,28 @@ the numbers 6 and 9 stand in one class modulo 3.
 
 in the correspondence «walk number» the element chalk goes to the value 6, and the value 6 goes back to the element chalk.
 соответствие «остаток по модулю 3» на числах от 1 до 12 не взаимно-однозначно: элементы 1 и 4 переходят в одно и то же значение 1.
-the correspondence «name in Russian» on the nodes of the tree of kinds is one-to-one: 18 elements and 18 values.
-в соответствии «остаток по модулю 3» элемент 10 переходит в значение 1.
-in the correspondence «name in Russian» the element chalk goes to the value мел, and the value мел goes back to the element chalk.
-соответствие «квадрат» на множестве {1, 2, 3, 4} взаимно-однозначно: 4 элемента и 4 значения.
-the correspondence «level» on the nodes of the tree of kinds is not one-to-one: the elements body and sign go to one and the same value 1.
-в соответствии «квадрат» элемент 2 переходит в значение 4, а значение 4 возвращается в элемент 2.
-in the correspondence «level» the element chalk goes to the value 4.
-соответствие «номер в обходе» на узлах дерева родов взаимно-однозначно: 18 элементов и 18 значений.
-the correspondence «remainder modulo 3» on the numbers from 1 to 12 is not one-to-one: the elements 1 and 4 go to one and the same value 1.
-в соответствии «номер в обходе» элемент chalk переходит в значение 6, а значение 6 возвращается в элемент chalk.
-in the correspondence «remainder modulo 3» the element 10 goes to the value 1.
-соответствие «имя по-русски» на узлах дерева родов взаимно-однозначно: 18 элементов и 18 значений.
-the correspondence «square» on the set {1, 2, 3, 4} is one-to-one: 4 elements and 4 values.
-в соответствии «имя по-русски» элемент chalk переходит в значение мел, а значение мел возвращается в элемент chalk.
-in the correspondence «square» the element 2 goes to the value 4, and the value 4 goes back to the element 2.
-соответствие «уровень» на узлах дерева родов не взаимно-однозначно: элементы body и sign переходят в одно и то же значение 1.
 the correspondence «walk number» on the nodes of the tree of kinds is one-to-one: 18 elements and 18 values.
 в соответствии «уровень» элемент chalk переходит в значение 4.
+in the correspondence «square» the element 2 goes to the value 4, and the value 4 goes back to the element 2.
+соответствие «уровень» на узлах дерева родов не взаимно-однозначно: элементы body и sign переходят в одно и то же значение 1.
+the correspondence «square» on the set {1, 2, 3, 4} is one-to-one: 4 elements and 4 values.
+в соответствии «имя по-русски» элемент chalk переходит в значение мел, а значение мел возвращается в элемент chalk.
+in the correspondence «level of the root» the element thing goes to the value 0, and the value 0 goes back to the element thing.
+соответствие «имя по-русски» на узлах дерева родов взаимно-однозначно: 18 элементов и 18 значений.
+the correspondence «level of the root» on the root of the tree of kinds is one-to-one: 1 element and 1 value.
+в соответствии «номер в обходе» элемент chalk переходит в значение 6, а значение 6 возвращается в элемент chalk.
+in the correspondence «remainder modulo 3» the element 10 goes to the value 1.
+соответствие «номер в обходе» на узлах дерева родов взаимно-однозначно: 18 элементов и 18 значений.
+the correspondence «remainder modulo 3» on the numbers from 1 to 12 is not one-to-one: the elements 1 and 4 go to one and the same value 1.
+в соответствии «квадрат» элемент 2 переходит в значение 4, а значение 4 возвращается в элемент 2.
+in the correspondence «level» the element chalk goes to the value 4.
+соответствие «квадрат» на множестве {1, 2, 3, 4} взаимно-однозначно: 4 элемента и 4 значения.
+the correspondence «level» on the nodes of the tree of kinds is not one-to-one: the elements body and sign go to one and the same value 1.
+в соответствии «уровень корня» элемент thing переходит в значение 0, а значение 0 возвращается в элемент thing.
+in the correspondence «name in Russian» the element chalk goes to the value мел, and the value мел goes back to the element chalk.
+соответствие «уровень корня» на корне дерева родов взаимно-однозначно: 1 элемент и 1 значение.
+the correspondence «name in Russian» on the nodes of the tree of kinds is one-to-one: 18 elements and 18 values.
+в соответствии «остаток по модулю 3» элемент 10 переходит в значение 1.
 
 in the order «divides» on the set {1, 2, 3, 4, 6, 8, 12} the elements 3 and 4 are incomparable: neither stands below the other.
 в порядке «делит» на множестве {1, 2, 3, 4, 6, 8, 12} элемент 12 максимален: ни один элемент не стоит выше него.
@@ -2106,7 +2114,7 @@ in the declared graph there is no edge from F to E.
 in what class modulo 4 does the number 35 stand? the number 35 stands in the class of remainder 3 modulo 4.
 транзитивно ли отношение «делит» на множестве {1, 2, 3, 4}? на множестве {1, 2, 3, 4} отношение «делит» транзитивно: если a относится к b и b относится к c, то a относится к c.
 what is the distance between E and F in the space of the declared graph? in the space of the declared graph the distance between E and F is 1.
-взаимно-однозначно ли соответствие «квадрат» на множестве {1, 2, 3, 4}? соответствие «квадрат» на множестве {1, 2, 3, 4} взаимно-однозначно: 4 элемента и 4 значения.
+взаимно-однозначно ли соответствие «уровень корня» на корне дерева родов? соответствие «уровень корня» на корне дерева родов взаимно-однозначно: 1 элемент и 1 значение.
 in what class modulo 3 does the number 23 stand? the number 23 stands in the class of remainder 2 modulo 3.
 содержит ли узел solid узел iron? в дереве родов узел solid содержит узел iron.
 how long is the shortest path from G to A in the declared graph? in the declared graph the shortest path from G to A has length 1.
@@ -2121,7 +2129,7 @@ are the elements 2 and 4 comparable in the order «at most»? in the order «at 
 в каком классе по модулю 3 стоит число 23? число 23 стоит в классе остатка 2 по модулю 3.
 is the relation «divides» on the set {1, 2, 3, 4} transitive? on the set {1, 2, 3, 4} the relation «divides» is transitive: if a stands to b and b stands to c, then a stands to c.
 какова длина кратчайшего пути из G в A в объявленном графе? в объявленном графе кратчайший путь из G в A имеет длину 1.
-is the correspondence «square» on the set {1, 2, 3, 4} one-to-one? the correspondence «square» on the set {1, 2, 3, 4} is one-to-one: 4 elements and 4 values.
+is the correspondence «level of the root» on the root of the tree of kinds one-to-one? the correspondence «level of the root» on the root of the tree of kinds is one-to-one: 1 element and 1 value.
 стоит ли пара (2, 4) в транзитивном замыкании отношения «сосед»? пара (2, 4) не стоит в отношении «сосед», но стоит в его транзитивном замыкании: цепь 2 - 3 - 4.
 does the node solid contain the node iron? in the tree of kinds the node solid contains the node iron.
 есть ли путь из G в A в объявленном графе? в объявленном графе есть связь из G в A: путь G - A длины 1.

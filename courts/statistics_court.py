@@ -26,6 +26,7 @@ import sys
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
 import asking  # noqa: E402
 import discourse  # noqa: E402
+import rugram  # noqa: E402
 from genesis import Unreadable, worlds  # noqa: E402
 import closedworld  # noqa: E402
 from closedworld import Слой  # noqa: E402 — палата подаёт имя мира
@@ -76,10 +77,20 @@ def числа(s):
      lambda n, k: 0 <= int(k) <= int(n)),
     (r"^испытание имеет (\d+) исход\S*; благоприятных (\d+)$",
      lambda n, k: 0 <= int(k) <= int(n)),
-    (r"^(\d+) coins give (\d+) outcomes$",
-     lambda n, r: 2 ** int(n) == int(r)),
-    (r"^(\d+) монет\S* дают (\d+) исход\S*$",
-     lambda n, r: 2 ** int(n) == int(r)),
+    # ИМЯ И СКАЗУЕМОЕ ЧИТАЮТСЯ ДЫРОЙ И СВЕРЯЮТСЯ СО СЧЁТОМ (08.09). Прежде образец держал
+    # «coins give … outcomes» буквой, а русский — свободным хвостом «монет\S* дают»: первый
+    # ЗАМОЛЧАЛ БЫ на «1 coin gives 2 outcomes», второй ПРОПУСТИЛ БЫ «1 монет дают». Дыра без
+    # проверки не слепа — она благословляет; здесь обе стороны сверены с числом.
+    (r"^(\d+) (coins?) (give|gives) (\d+) (outcomes?)$",
+     lambda n, сл, гл, r, сли: 2 ** int(n) == int(r)
+     and сл == ("coin" if int(n) == 1 else "coins")
+     and гл == ("gives" if int(n) == 1 else "give")
+     and сли == ("outcome" if int(r) == 1 else "outcomes")),
+    (r"^(\d+) (монет\S*) (даёт|дают) (\d+) (исход\S*)$",
+     lambda n, сл, гл, r, сли: 2 ** int(n) == int(r)
+     and сл == rugram.форма("монета", int(n))
+     and гл == ("даёт" if int(n) % 10 == 1 and int(n) % 100 != 11 else "дают")
+     and сли == rugram.форма("исход", int(r))),
     # ОТКАЗ ЕСТЬ ТАКОЕ ЖЕ УТВЕРЖДЕНИЕ: «единственной середины нет»
     # истинно ровно тогда, когда названное число элементов и вправду
     # число элементов И оно чётно. Суд считает оба, а не верит слову.
