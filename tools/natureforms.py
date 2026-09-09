@@ -74,6 +74,8 @@ import rugram  # noqa: E402
     "ru": dict(
         утв="у {б} {n} {в}.",
         часть="у {б} {n} {в}. {в1} — часть {б}.",
+        пара_обратно="у {бп} {r} {вr}. сколько {ва} у {б}? {n} {в}: {r} ÷ 2 = {n}.",
+        часть_воп="у {б} {n} {в}. что — часть {б}? {в1} — часть {б}.",
         сезон="после {a} идёт {b}.", сезон_воп="после {a} идёт {b}. что идёт после {a}? {b}.",
         времена=(("зима", "зимы"), ("весна", "весны"), ("лето", "лета"), ("осень", "осени")),
         дни=(("понедельник", "понедельника"), ("вторник", "вторника"), ("среда", "среды"),
@@ -103,6 +105,8 @@ import rugram  # noqa: E402
     "en": dict(
         утв="{ба} has {n} {в}.",
         часть="{ба} has {n} {в}. {в1а} is a part of {ба}.",
+        пара_обратно="{бп} have {r} {вr}. how many {ва} does {ба} have? {n} {в}: {r} ÷ 2 = {n}.",
+        часть_воп="{ба} has {n} {в}. what is a part of {ба}? {в1а} is a part of {ба}.",
         сезон="after {a} comes {b}.", сезон_воп="after {a} comes {b}. what comes after {a}? {b}.",
         времена=(("winter", "winter"), ("spring", "spring"), ("summer", "summer"), ("autumn", "autumn")),
         дни=(("monday", "monday"), ("tuesday", "tuesday"), ("wednesday", "wednesday"),
@@ -133,6 +137,8 @@ import rugram  # noqa: E402
     "de": dict(
         утв="{б} hat {n} {в}.",
         часть="{б} hat {n} {в}. {в1а} ist ein Teil davon.",
+        пара_обратно="{бп} haben {r} {вr}. wie viele {ва} hat {б}? {n} {в}: {r} ÷ 2 = {n}.",
+        часть_воп="{б} hat {n} {в}. was ist ein Teil davon? {в1а} ist ein Teil davon.",
         сезон="nach {a} kommt {b}.", сезон_воп="nach {a} kommt {b}. was kommt nach {a}? {b}.",
         времена=(("der Winter", "dem Winter"), ("der Frühling", "dem Frühling"),
                  ("der Sommer", "dem Sommer"), ("der Herbst", "dem Herbst")),
@@ -165,6 +171,8 @@ import rugram  # noqa: E402
     "fr": dict(
         утв="{б} a {n} {в}.",
         часть="{б} a {n} {в}. {в1а} en est une partie.",
+        пара_обратно="{бп} ont {r} {вr}. combien de {ва} a {б} ? {n} {в} : {r} ÷ 2 = {n}.",
+        часть_воп="{б} a {n} {в}. qu'est-ce qui en est une partie ? {в1а} en est une partie.",
         сезон="après {a} vient {b}.", сезон_воп="après {a} vient {b}. qu'est-ce qui vient après {a} ? {b}.",
         времена=(("l'hiver", "l'hiver"), ("le printemps", "le printemps"),
                  ("l'été", "l'été"), ("l'automne", "l'automne")),
@@ -195,6 +203,8 @@ import rugram  # noqa: E402
     "es": dict(
         утв="{б} tiene {n} {в}.",
         часть="{б} tiene {n} {в}. {в1а} forma parte de ello.",
+        пара_обратно="{бп} tienen {r} {вr}. ¿cuántas {ва} tiene {б}? {n} {в}: {r} ÷ 2 = {n}.",
+        часть_воп="{б} tiene {n} {в}. ¿qué forma parte de ello? {в1а} forma parte de ello.",
         сезон="después {a} viene {b}.", сезон_воп="después {a} viene {b}. ¿qué viene después {a}? {b}.",
         времена=(("el invierno", "del invierno"), ("la primavera", "de la primavera"),
                  ("el verano", "del verano"), ("el otoño", "del otoño")),
@@ -224,6 +234,8 @@ import rugram  # noqa: E402
     "it": dict(
         утв="{б} ha {n} {в}.",
         часть="{б} ha {n} {в}. {в1а} ne è una parte.",
+        пара_обратно="{бп} hanno {r} {вr}. quante {ва} ha {б}? {n} {в}: {r} ÷ 2 = {n}.",
+        часть_воп="{б} ha {n} {в}. che cosa ne è una parte? {в1а} ne è una parte.",
         сезон="dopo {a} viene {b}.", сезон_воп="dopo {a} viene {b}. che cosa viene dopo {a}? {b}.",
         времена=(("l'inverno", "l'inverno"), ("la primavera", "la primavera"),
                  ("l'estate", "l'estate"), ("l'autunno", "l'autunno")),
@@ -253,6 +265,8 @@ import rugram  # noqa: E402
     "pt": dict(
         утв="{б} tem {n} {в}.",
         часть="{б} tem {n} {в}. {в1а} faz parte disso.",
+        пара_обратно="{бп} têm {r} {вr}. quantas {ва} tem {б}? {n} {в}: {r} ÷ 2 = {n}.",
+        часть_воп="{б} tem {n} {в}. o que faz parte disso? {в1а} faz parte disso.",
         сезон="depois {a} vem {b}.", сезон_воп="depois {a} vem {b}. o que vem depois {a}? {b}.",
         времена=(("o inverno", "do inverno"), ("a primavera", "da primavera"),
                  ("o verão", "do verão"), ("o outono", "do outono")),
@@ -283,6 +297,8 @@ import rugram  # noqa: E402
     "nl": dict(
         утв="{б} heeft {n} {в}.",
         часть="{б} heeft {n} {в}. {в1а} is er een deel van.",
+        пара_обратно="{бп} hebben {r} {вr}. hoeveel {ва} heeft {б}? {n} {в}: {r} ÷ 2 = {n}.",
+        часть_воп="{б} heeft {n} {в}. wat is er een deel van? {в1а} is er een deel van.",
         сезон="na {a} komt {b}.", сезон_воп="na {a} komt {b}. wat komt na {a}? {b}.",
         времена=(("de winter", "de winter"), ("de lente", "de lente"),
                  ("de zomer", "de zomer"), ("de herfst", "de herfst")),
@@ -312,6 +328,8 @@ import rugram  # noqa: E402
     "pl": dict(
         утв="{б} ma {n} {в}.",
         часть="{б} ma {n} {в}. {в1} jest jego częścią.",
+        пара_обратно="{бп} mają {r} {вr}. ile {ва} ma {б}? {n} {в}: {r} ÷ 2 = {n}.",
+        часть_воп="{б} ma {n} {в}. co jest jego częścią? {в1} jest jego częścią.",
         сезон="po {a} przychodzi {b}.", сезон_воп="po {a} przychodzi {b}. co przychodzi po {a}? {b}.",
         времена=(("zima", "zimie"), ("wiosna", "wiośnie"), ("lato", "lecie"), ("jesień", "jesieni")),
         дни=(("poniedziałek", "poniedziałku"), ("wtorek", "wtorku"), ("środa", "środzie"),
@@ -339,7 +357,23 @@ import rugram  # noqa: E402
         градус="stopień",
     ),
 }
-ФОРМЫ = ("утв", "воп", "пара", "часть", "опроверж", "пример", "темп", "темп_воп") + tuple(ЦИКЛ_ФОРМЫ)
+
+# ДВЕ ВТОРЫЕ ПОВЕРХНОСТИ (09.09) — И ОБЕ ВЫВЕДЕНЫ ИЗ УЖЕ ОБЪЯВЛЕННЫХ ДЫР.
+#
+# Прибор [СЛОВО ОДНАЖДЫ] держал сорок девять слов этого дома, и они двух семей:
+#   · МНОЖЕСТВЕННОЕ ЦЕЛОГО («araignées», «aranhas», «biciclette») — оно стои́т только в парном
+#     показе, и только раз;
+#   · ЕДИНСТВЕННОЕ ЧАСТИ («Zahn», «aile», «dent») — оно стои́т только в показе части.
+#
+# ОБРАТНЫЙ ХОД гасит первую семью и учит ОБРАТИМОСТИ: умножение показано, деление не было
+# показано ни разу, хотя это то же отношение с другой стороны. ВОПРОС К ЧАСТИ гасит вторую и
+# даёт вопросную поверхность роду, у которого её не было; ответ его есть УЖЕ ОБЪЯВЛЕННЫЙ хвост
+# показа части, слово в слово.
+#
+#     ВТОРАЯ ПОВЕРХНОСТЬ ЕСТЬ НЕ ПОВТОР, А ДРУГАЯ СТОРОНА ТОГО ЖЕ ОТНОШЕНИЯ.
+
+ФОРМЫ = ("утв", "воп", "пара", "пара_обратно", "часть", "часть_воп",
+         "опроверж", "пример", "темп", "темп_воп") + tuple(ЦИКЛ_ФОРМЫ)
 
 
 def вещь(язык, в, n):
@@ -458,7 +492,7 @@ def показ(язык, форма, i):
     поля = dict(б=б, бп=бп, n=n, в=вещь(язык, в, n), ва=вещь(язык, в, 5),
                 в1=вещь(язык, в, 1), в1а=с_артиклем(язык, в), r=n * 2, вr=вещь(язык, в, n * 2),
                 ба=(_plural.with_article(б) if язык == "en" else б))
-    if форма == "пара" and бп is None:
+    if форма in ("пара", "пара_обратно") and бп is None:
         return None          # носитель без парной формы парного показа не пишет
     return я[форма].format(**поля)
 
@@ -471,7 +505,7 @@ def _все_показы():
                 с = показ(язык, форма, i)
                 if с:
                     вон[с] = (язык, форма)
-        for форма in ("утв", "воп", "пара", "часть"):
+        for форма in ("утв", "воп", "пара", "пара_обратно", "часть", "часть_воп"):
             for i in range(len(я["факты"])):
                 с = показ(язык, форма, i)
                 if с:
