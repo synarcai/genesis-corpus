@@ -117,6 +117,31 @@ import worldfacts as W  # noqa: E402
 }
 
 ЯЗЫКИ = tuple(РАМКИ)
+
+# ТРЕТЬЯ ФОРМА: ФАКТ И МНЕНИЕ РЯДОМ, В ОДНОЙ СТРОКЕ (09.09).
+#
+#     РАЗЛИЧИЕ ПОКУПАЕТСЯ ПАРОЙ, А НЕ ДВУМЯ СТРАНИЦАМИ ПОРОЗНЬ. Дом учит отличать факт от
+#     мнения — и показывал их врозь, каждое своей страницей. Пара ставит их рядом при одном
+#     вопросе, и различие видно НЕ ИЗ ОТВЕТА, А ИЗ САМОГО ПОЛОЖЕНИЯ.
+#
+# ПОВОД ИЗМЕРЕН: прибор [СЛОВО ОДНАЖДЫ] держал двадцать восемь слов этого дома — сами оценочные
+# слова (belle, bello, buena, gemütlich, gezellig, interesting), каждое показанное РОВНО РАЗ,
+# ибо мнение стои́т одной страницей на язык. Вторая поверхность гасит их все.
+#
+# ВОПРОС ПРИ ПАРЕ ОБЯЗАТЕЛЕН, И ЭТО НЕ УКРАШЕНИЕ: род без вопросной поверхности есть долг
+# прибора [ШИРОТА ВОПРОСА], и форма, закрывшая один долг ценою другого, ничего не закрыла.
+ПАРА = {
+    "ru": ("что тут факт, а что мнение?", "{ф} — это факт, а {м} — мнение."),
+    "en": ("which is a fact and which is an opinion?", "{ф} — that is a fact, and {м} — that is an opinion."),
+    "de": ("was ist hier eine Tatsache und was eine Meinung?", "{ф} — das ist eine Tatsache, und {м} — das ist eine Meinung."),
+    "fr": ("qu'est-ce qui est un fait et qu'est-ce qui est une opinion ?", "{ф} — c'est un fait, et {м} — c'est une opinion."),
+    "es": ("¿qué es un hecho y qué es una opinión?", "{ф} — eso es un hecho, y {м} — eso es una opinión."),
+    "it": ("che cosa è un fatto e che cosa è un'opinione?", "{ф} — questo è un fatto, e {м} — questa è un'opinione."),
+    "pt": ("o que é um facto e o que é uma opinião?", "{ф} — isso é um facto, e {м} — isso é uma opinião."),
+    "nl": ("wat is een feit en wat is een mening?", "{ф} — dat is een feit, en {м} — dat is een mening."),
+    "pl": ("co jest faktem, a co opinią?", "{ф} — to jest fakt, a {м} — to jest opinia."),
+}
+
 ФОРМЫ = ("факт", "мнение")
 
 for _яз in ЯЗЫКИ:
@@ -137,6 +162,14 @@ def страница(язык, форма, i, поверхность="вопро
     return f"{я[поверхность].format(у=утверждение(язык, форма, i))} {я[форма]}"
 
 
+def страница_пары(язык, i):
+    """Факт и мнение рядом при одном вопросе."""
+    воп, отв = ПАРА[язык]
+    ф = утверждение(язык, "факт", i)
+    м = утверждение(язык, "мнение", i)
+    return f"{воп} {отв.format(ф=ф, м=м)}"
+
+
 def _показы():
     вон = {}
     for язык in ЯЗЫКИ:
@@ -145,6 +178,8 @@ def _показы():
                 for поверхность in ("вопрос", "вопрос2"):
                     if поверхность in РАМКИ[язык]:
                         вон[страница(язык, форма, i, поверхность)] = (язык, форма)
+        for i in range(min(ФАКТОВ, len(МНЕНИЯ[язык]))):
+            вон[страница_пары(язык, i)] = (язык, "пара")
     return вон
 
 
