@@ -101,6 +101,11 @@ def by_count(n, plural):
 ГЛАСНЫЙ_ЗВУК = frozenset(("hour", "hours", "honest", "honestly", "honour", "heir"))
 
 
+# НАБОР БУКВ, А НЕ СТРОКА: имя из одних знаков препинания даёт пустую голову, а
+# «'' in "aeio"» есть ИСТИНА — такое имя получало бы «an» ни за что.
+ГЛАСНЫЕ_БУКВЫ = frozenset("aeio")
+
+
 def article(word):
     """«a» или «an» перед словом — по ЗВУКУ, как его объявил английский."""
     низ = str(word).strip().lower()
@@ -111,7 +116,7 @@ def article(word):
         return "an"
     if голова in СОГЛАСНЫЙ_ЗВУК:
         return "a"
-    return "an" if голова[:1] in "aeio" else "a"
+    return "an" if голова[:1] in ГЛАСНЫЕ_БУКВЫ else "a"
 
 
 def with_article(word):

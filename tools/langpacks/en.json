@@ -332,6 +332,7 @@
       "instances_per_pass": 24,
       "templates": [
         "i count {n} {lex:noun_count:by_n}.",
+        "how many do i count? i count {n} {lex:noun_count:by_n}.",
         "i count {sum} {lex:noun_count:by_sum}.",
         "i count {n} {lex:noun_irreg:by_n}.",
         "i count {sum} {lex:noun_irreg:by_sum}."

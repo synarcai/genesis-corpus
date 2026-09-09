@@ -547,7 +547,8 @@
         "aqui está {lex:noun_count:one}.",
         "aqui estão {lex:noun_count:many}.",
         "há {lex:noun_count:many} aqui.",
-        "aqui há {n} {lex:noun_count:by_n}."
+        "aqui há {n} {lex:noun_count:by_n}.",
+        "o que há aqui? aqui há {n} {lex:noun_count:by_n}."
       ]
     },
     "definition": {

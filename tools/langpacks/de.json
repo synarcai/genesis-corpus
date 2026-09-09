@@ -710,6 +710,7 @@
       "instances_per_pass": 25,
       "templates": [
         "ich zähle {n} {lex:noun_count:by_n}.",
+        "wie viele zähle ich? ich zähle {n} {lex:noun_count:by_n}.",
         "ich zähle {sum} {lex:noun_count:by_sum}."
       ],
       "instances_comment": "инстансов 25 при 19 лексемах noun_count (07.09): движок берёт лексему по кольцу, и при инстансах меньше лексем часть кольца проходится однажды — закон «всякое объявленное слово живёт не менее LAW раз» падает не на слове, а на СЧЁТЕ МЕСТ"

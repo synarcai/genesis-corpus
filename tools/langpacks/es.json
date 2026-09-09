@@ -535,7 +535,8 @@
         "aquí está {lex:noun_count:one}.",
         "aquí están {lex:noun_count:many}.",
         "hay {lex:noun_count:many} aquí.",
-        "aquí hay {n} {lex:noun_count:by_n}."
+        "aquí hay {n} {lex:noun_count:by_n}.",
+        "¿qué hay aquí? aquí hay {n} {lex:noun_count:by_n}."
       ]
     },
     "agreement": {
