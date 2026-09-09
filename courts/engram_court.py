@@ -23,6 +23,7 @@ import sys
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
 
+import foreign  # noqa: E402 — закон чужого текста: полка и проза судятся своим договором
 import langsign  # noqa: E402
 import closedworld  # noqa: E402
 ПАКЕТ = json.loads((КОРЕНЬ / "tools" / "langpacks" / "en.json")
@@ -72,40 +73,12 @@ def форма(n, слово):
 # сборке, и мера показов ему не судья — он судится своей (договор полки). Суд, читающий его
 # своим правилом, даёт «возражение вне подсудности»: не находку, а шум, за которым не видно
 # настоящих двенадцати.
-РОД_ТЕКСТА = "shows"
 
 
-def _прозаические():
-    """Имена миров, чей объявленный род текста НЕ «показы»."""
-    try:
-        import genesis
-        показы = {pathlib.Path(п).stem for п in genesis.worlds(existing=False, kind=РОД_ТЕКСТА)}
-        все = {pathlib.Path(п).stem for п in genesis.worlds(existing=False)}
-    except Exception:
-        return frozenset()
-    return frozenset(все - показы)
+# ЗАКОН ЧУЖОГО ТЕКСТА ВЫНЕСЕН В `tools/foreign.py` (09.09): он оказался нужен второму суду
+# счёта, а закон, живущий в одном суде, не есть закон корпуса. Здесь остаётся ЗОВ.
 
 
-_ПРОЗА = _прозаические()
-
-
-def _договор(путь):
-    """Имена судов, названных договором полки для ЭТОЙ книги («судится» манифеста)."""
-    global _ДОГОВОРЫ
-    if _ДОГОВОРЫ is None:
-        _ДОГОВОРЫ = {}
-        try:
-            import genesis
-            for м in genesis.manifest()["worlds"]:
-                с = м.get("судится")
-                if с:
-                    _ДОГОВОРЫ[pathlib.Path(м.get("file", "")).stem] = frozenset(с)
-        except Exception:
-            pass
-    return _ДОГОВОРЫ.get(pathlib.Path(путь).stem, frozenset())
-
-
-_ДОГОВОРЫ = None
 
 
 class Слой(closedworld.Слой):
@@ -127,9 +100,7 @@ class Слой(closedworld.Слой):
 
     def впитать(self, путь):
         super().впитать(путь)   # имя мира из манифеста — для закона замкнутости
-        основа = pathlib.Path(путь).stem
-        чужой = ("shelf" in pathlib.Path(путь).parts) or (основа in _ПРОЗА)
-        self.полка = чужой and self.ИМЯ_СУДА not in _договор(путь)
+        self.полка = foreign.чужой(путь, self.ИМЯ_СУДА)
 
 
 def _судить(строка, слой=None):
