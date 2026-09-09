@@ -34,7 +34,7 @@ COURTS=("courts/arith_court.py" "courts/algo_court.py"
         "courts/markup_court.py" "courts/langlayer_court.py"
         "courts/langform_court.py"
         "tools/gsm_census.py --court"
-        "scripts/reproducible.py" "scripts/bash32_court.py" "scripts/empty_in_court.py"
+        "scripts/reproducible.py" "scripts/bash32_court.py" "scripts/empty_in_court.py" "scripts/lawfirst_court.py"
         "scripts/manifest_court.py" "scripts/prose_court.py" "tools/mutants.py" "scripts/lexicon_reach.py"
         "courts/inquiry_pt_nl_court.py" "courts/inquiry_pl_tr_court.py"
         "courts/metalang_court.py" "courts/glyph_court.py" "courts/space_court.py" "courts/stenogram_court.py"
@@ -161,6 +161,7 @@ trap 'rm -rf "$TMPDIR_SUITE"' EXIT
 mkdir -p reports
 
 is_solo() {
+  local probe s
   set -- $1; probe="$1"
   for s in "${SOLO[@]}"; do
     [ "$probe" = "$s" ] && return 0
@@ -169,6 +170,7 @@ is_solo() {
 }
 
 run_one() {
+  local idx entry tool out rc
   idx="$1"; entry="$2"
   set -- $entry; tool="$1"; shift
   out=$(python3 "$tool" "$@" 2>&1); rc=$?
@@ -182,6 +184,16 @@ run_one() {
 FELL=0
 # СБОР ПАЧКИ: вывод по порядку индексов, строка леджера — здесь же, из родителя.
 flush_range() {
+  # ИМЕНА ЗДЕСЬ МЕСТНЫЕ, И ЭТО НЕ ВКУС (09.09). Глобальная `entry` этой сборки ЗАТИРАЛА
+  # `entry` цикла, а одиночная ветвь звала `run_one "$i" "$entry"` ПОСЛЕ сборки — и гоняла
+  # НЕ ТОТ ПРИБОР: вместо одиночки второй раз шёл сосед, а его вердикт ложился в леджер под
+  # именем одиночки. В SOLO стоя́т пять самых тяжёлых приборов корпуса; всякий из них,
+  # ставший после непустой пачки, НЕ ГОНЯЛСЯ ВОВСЕ, и набор об этом молчал зелёным.
+  #
+  #     ПРИБОР, ЧЕЙ ВЕРДИКТ ПРИНАДЛЕЖИТ СОСЕДУ, ХУЖЕ НЕ ЗАПУЩЕННОГО: не запущенный оставляет
+  #     пустоту, а этот оставляет ЧУЖОЙ ЗЕЛЁНЫЙ. Найдено ледждером: 09.09 `prosetree_court.py`
+  #     записан с вердиктом `notationvar_court.py`, слово в слово, при своём коде 0.
+  local k last_idx entry tool rc stamp out last
   k="$1"; last_idx="$2"
   while [ "$k" -le "$last_idx" ]; do
     entry="${COURTS[$k]}"
