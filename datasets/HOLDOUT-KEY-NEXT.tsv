@@ -1383,13 +1383,13 @@ Lena	Lena hat 52 Eier. wer hat 52 Eier?	Lena.
 auf dem Tisch	auf dem Tisch sind 44 Bücher. wo sind die 44 Bücher?	auf dem Tisch.
 in der Kiste	in der Kiste sind 52 Eier. wo sind die 52 Eier?	in der Kiste.
 44	Louis a 44 livres. combien de livres a Louis ?	Louis a 44 livres.
-52	Marie a 52 œufs. combien de œufs a Marie ?	Marie a 52 œufs.
+52	Marie a 52 œufs. combien d'œufs a Marie ?	Marie a 52 œufs.
 44	Louis a 44 ans. quel âge a Louis ?	Louis a 44 ans.
 52	Marie a 52 ans. quel âge a Marie ?	Marie a 52 ans.
 32	Louis a 44 livres et Léa a 32 livres. combien de livres a Léa ?	Léa a 32 livres.
-8	Marie a 52 œufs et Hugo a 8 œufs. combien de œufs a Hugo ?	Hugo a 8 œufs.
+8	Marie a 52 œufs et Hugo a 8 œufs. combien d'œufs a Hugo ?	Hugo a 8 œufs.
 44	il y a 44 livres sur la table. combien de livres y a-t-il sur la table ?	il y a 44 livres sur la table.
-52	il y a 52 œufs dans la boîte. combien de œufs y a-t-il dans la boîte ?	il y a 52 œufs dans la boîte.
+52	il y a 52 œufs dans la boîte. combien d'œufs y a-t-il dans la boîte ?	il y a 52 œufs dans la boîte.
 32	Louis a 44 livres et 32 cartes. combien de cartes a Louis ?	Louis a 32 cartes.
 8	Marie a 52 œufs et 8 stylos. combien de stylos a Marie ?	Marie a 8 stylos.
 Louis	Louis a 44 livres. qui a 44 livres ?	Louis.
@@ -2412,9 +2412,9 @@ tak: żadna zasada nie zabrania przenoszenia	pierwsza zasada: nie usuwaj plików
 31	personnalité : détaillée. il y a 23 fichiers dans le dossier. le premier acte crée 8 fichiers. combien de fichiers y a-t-il dans le dossier ?	il y a 31 fichiers dans le dossier : 23 + 8 = 31.
 31	il y a 23 fichiers dans le dossier. le premier acte crée 8 fichiers. combien de fichiers y a-t-il dans le dossier ? brève personnalité répond 31. détaillée personnalité répond : il y a 31 fichiers dans le dossier : 23 + 8 = 31. est-ce le même nombre ?	oui : 31 et 31 — un seul nombre.
 8	personnalité : prudente. il y a 23 fichiers dans le dossier. deux chemins : supprimer 8 fichiers ou déplacer 8 fichiers. les deux laissent 15 fichiers dans le dossier : 23 − 8 = 15. quel chemin est choisi ?	déplacer 8 fichiers : une personnalité prudente ne supprime pas.
-40	personnalité : brève. il y a 31 enregistrements dans la boîte. le premier acte crée 9 enregistrements. combien de enregistrements y a-t-il dans la boîte ?	40.
-40	personnalité : détaillée. il y a 31 enregistrements dans la boîte. le premier acte crée 9 enregistrements. combien de enregistrements y a-t-il dans la boîte ?	il y a 40 enregistrements dans la boîte : 31 + 9 = 40.
-40	il y a 31 enregistrements dans la boîte. le premier acte crée 9 enregistrements. combien de enregistrements y a-t-il dans la boîte ? brève personnalité répond 40. détaillée personnalité répond : il y a 40 enregistrements dans la boîte : 31 + 9 = 40. est-ce le même nombre ?	oui : 40 et 40 — un seul nombre.
+40	personnalité : brève. il y a 31 enregistrements dans la boîte. le premier acte crée 9 enregistrements. combien d'enregistrements y a-t-il dans la boîte ?	40.
+40	personnalité : détaillée. il y a 31 enregistrements dans la boîte. le premier acte crée 9 enregistrements. combien d'enregistrements y a-t-il dans la boîte ?	il y a 40 enregistrements dans la boîte : 31 + 9 = 40.
+40	il y a 31 enregistrements dans la boîte. le premier acte crée 9 enregistrements. combien d'enregistrements y a-t-il dans la boîte ? brève personnalité répond 40. détaillée personnalité répond : il y a 40 enregistrements dans la boîte : 31 + 9 = 40. est-ce le même nombre ?	oui : 40 et 40 — un seul nombre.
 9	personnalité : prudente. il y a 31 enregistrements dans la boîte. deux chemins : supprimer 9 enregistrements ou déplacer 9 enregistrements. les deux laissent 22 enregistrements dans la boîte : 31 − 9 = 22. quel chemin est choisi ?	déplacer 9 enregistrements : une personnalité prudente ne supprime pas.
 31	personalidad: breve. hay 23 archivos en la carpeta. el primer acto crea 8 archivos. ¿cuántos archivos hay en la carpeta?	31.
 31	personalidad: detallada. hay 23 archivos en la carpeta. el primer acto crea 8 archivos. ¿cuántos archivos hay en la carpeta?	hay 31 archivos en la carpeta: 23 + 8 = 31.
@@ -2484,9 +2484,9 @@ tak: żadna zasada nie zabrania przenoszenia	pierwsza zasada: nie usuwaj plików
 31	il y a 23 fichiers dans le dossier. le premier acte crée 8 fichiers. je pense que je répondrai 32. combien de fichiers y a-t-il dans le dossier ?	il y a 31 fichiers dans le dossier : 23 + 8 = 31. la prédiction ne s'est pas réalisée : je pensais 32, et la réponse est 31.
 1	il y a 23 fichiers dans le dossier. le premier acte crée 8 fichiers. je pense que je répondrai 32. combien de fichiers y a-t-il dans le dossier ? il y a 31 fichiers dans le dossier : 23 + 8 = 31. de combien me suis-je trompé ?	de 1 : 32 − 31 = 1.
 31	il y a 23 fichiers dans le dossier. le premier acte crée 8 fichiers. je pensais 32, et la réponse est 31. qu'est-ce qui est vrai ?	il y a 31 fichiers dans le dossier : 23 + 8 = 31. ma pensée ne change pas le fait.
-40	il y a 31 enregistrements dans la boîte. le premier acte crée 9 enregistrements. je pense que je répondrai 40. combien de enregistrements y a-t-il dans la boîte ?	il y a 40 enregistrements dans la boîte : 31 + 9 = 40. la prédiction s'est réalisée.
-40	il y a 31 enregistrements dans la boîte. le premier acte crée 9 enregistrements. je pense que je répondrai 42. combien de enregistrements y a-t-il dans la boîte ?	il y a 40 enregistrements dans la boîte : 31 + 9 = 40. la prédiction ne s'est pas réalisée : je pensais 42, et la réponse est 40.
-2	il y a 31 enregistrements dans la boîte. le premier acte crée 9 enregistrements. je pense que je répondrai 42. combien de enregistrements y a-t-il dans la boîte ? il y a 40 enregistrements dans la boîte : 31 + 9 = 40. de combien me suis-je trompé ?	de 2 : 42 − 40 = 2.
+40	il y a 31 enregistrements dans la boîte. le premier acte crée 9 enregistrements. je pense que je répondrai 40. combien d'enregistrements y a-t-il dans la boîte ?	il y a 40 enregistrements dans la boîte : 31 + 9 = 40. la prédiction s'est réalisée.
+40	il y a 31 enregistrements dans la boîte. le premier acte crée 9 enregistrements. je pense que je répondrai 42. combien d'enregistrements y a-t-il dans la boîte ?	il y a 40 enregistrements dans la boîte : 31 + 9 = 40. la prédiction ne s'est pas réalisée : je pensais 42, et la réponse est 40.
+2	il y a 31 enregistrements dans la boîte. le premier acte crée 9 enregistrements. je pense que je répondrai 42. combien d'enregistrements y a-t-il dans la boîte ? il y a 40 enregistrements dans la boîte : 31 + 9 = 40. de combien me suis-je trompé ?	de 2 : 42 − 40 = 2.
 40	il y a 31 enregistrements dans la boîte. le premier acte crée 9 enregistrements. je pensais 42, et la réponse est 40. qu'est-ce qui est vrai ?	il y a 40 enregistrements dans la boîte : 31 + 9 = 40. ma pensée ne change pas le fait.
 31	hay 23 archivos en la carpeta. el primer acto crea 8 archivos. creo que responderé 31. ¿cuántos archivos hay en la carpeta?	hay 31 archivos en la carpeta: 23 + 8 = 31. la predicción se cumplió.
 31	hay 23 archivos en la carpeta. el primer acto crea 8 archivos. creo que responderé 32. ¿cuántos archivos hay en la carpeta?	hay 31 archivos en la carpeta: 23 + 8 = 31. la predicción no se cumplió: pensaba 32, y la respuesta es 31.
@@ -2752,12 +2752,12 @@ ich weiß es nicht: über Nachrichten ist nichts gesagt	in der Kiste sind 33 Ein
 ich weiß es nicht: über das Regal ist nichts gesagt	in der Kiste sind 33 Einträge. in der Liste sind 37 Einträge. wie viele Einträge sind im Regal?	ich weiß es nicht: über das Regal ist nichts gesagt.
 27	dans le dossier il y a 27 fichiers. combien de fichiers y a-t-il dans le dossier ?	dans le dossier il y a 27 fichiers.
 je ne sais pas : rien n'est dit sur la boîte	dans le dossier il y a 27 fichiers. combien de fichiers y a-t-il dans la boîte ?	je ne sais pas : rien n'est dit sur la boîte.
-je ne sais pas : rien n'est dit sur les enregistrements	dans le dossier il y a 27 fichiers. combien de enregistrements y a-t-il dans le dossier ?	je ne sais pas : rien n'est dit sur les enregistrements.
+je ne sais pas : rien n'est dit sur les enregistrements	dans le dossier il y a 27 fichiers. combien d'enregistrements y a-t-il dans le dossier ?	je ne sais pas : rien n'est dit sur les enregistrements.
 je ne sais pas : rien n'est dit sur la liste	dans le dossier il y a 27 fichiers. dans la boîte il y a 31 fichiers. combien de fichiers y a-t-il dans la liste ?	je ne sais pas : rien n'est dit sur la liste.
-33	dans la boîte il y a 33 enregistrements. combien de enregistrements y a-t-il dans la boîte ?	dans la boîte il y a 33 enregistrements.
-je ne sais pas : rien n'est dit sur la liste	dans la boîte il y a 33 enregistrements. combien de enregistrements y a-t-il dans la liste ?	je ne sais pas : rien n'est dit sur la liste.
+33	dans la boîte il y a 33 enregistrements. combien d'enregistrements y a-t-il dans la boîte ?	dans la boîte il y a 33 enregistrements.
+je ne sais pas : rien n'est dit sur la liste	dans la boîte il y a 33 enregistrements. combien d'enregistrements y a-t-il dans la liste ?	je ne sais pas : rien n'est dit sur la liste.
 je ne sais pas : rien n'est dit sur les messages	dans la boîte il y a 33 enregistrements. combien de messages y a-t-il dans la boîte ?	je ne sais pas : rien n'est dit sur les messages.
-je ne sais pas : rien n'est dit sur l'étagère	dans la boîte il y a 33 enregistrements. dans la liste il y a 37 enregistrements. combien de enregistrements y a-t-il sur l'étagère ?	je ne sais pas : rien n'est dit sur l'étagère.
+je ne sais pas : rien n'est dit sur l'étagère	dans la boîte il y a 33 enregistrements. dans la liste il y a 37 enregistrements. combien d'enregistrements y a-t-il sur l'étagère ?	je ne sais pas : rien n'est dit sur l'étagère.
 27	en la carpeta hay 27 archivos. ¿cuántos archivos hay en la carpeta?	en la carpeta hay 27 archivos.
 no lo sé: no se dice nada de la caja	en la carpeta hay 27 archivos. ¿cuántos archivos hay en la caja?	no lo sé: no se dice nada de la caja.
 no lo sé: no se dice nada de los registros	en la carpeta hay 27 archivos. ¿cuántos registros hay en la carpeta?	no lo sé: no se dice nada de los registros.
