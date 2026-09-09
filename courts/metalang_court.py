@@ -68,8 +68,8 @@ import sys
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "scripts"))
 
-import onepattern  # noqa: E402
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
+import onepattern  # noqa: E402 — слияние образцов живёт в tools
 from genesis import Unreadable, worlds  # noqa: E402
 import closedworld  # noqa: E402
 from closedworld import Слой  # noqa: E402 — палата подаёт имя мира

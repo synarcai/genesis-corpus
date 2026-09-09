@@ -1,5 +1,5 @@
 мир	генератор	через_слой	строк	различных	копий	макс_копий
-datasets/GENESIS-FULL.txt	gen_genesis_full.py	0	391566	280975	110591	473
+datasets/GENESIS-FULL.txt	gen_genesis_full.py	0	398510	281469	117041	473
 datasets/genesis_action_measure.txt	gen_genesis_action_measure.py	1	234	234	0	1
 datasets/genesis_action_measure_langs.txt	gen_genesis_action_measure_langs.py	1	462	462	0	1
 datasets/genesis_action_pages.txt	gen_genesis_action_pages.py	1	4921	4897	24	2
@@ -171,7 +171,7 @@ datasets/genesis_valence.txt	gen_genesis_valence.py	1	1256	1176	80	2
 datasets/genesis_verbal.txt	gen_genesis_verbal.py	1	557	479	78	2
 datasets/genesis_verbs.txt	gen_genesis_verbs.py	1	620	620	0	1
 datasets/genesis_verifyforms.txt	gen_genesis_verifyforms.py	1	3285	3285	0	1
-datasets/genesis_wordorder.txt	gen_genesis_wordorder.py	1	892	636	256	2
+datasets/genesis_wordorder.txt	gen_genesis_wordorder.py	1	876	624	252	2
 datasets/genesis_wordparts.txt	gen_genesis_wordparts.py	1	4767	4627	140	2
 datasets/genesis_worldfacts.txt	gen_genesis_worldfacts.py	1	2779	2779	0	1
 datasets/school_biling_v2c.txt	gen_genesis_school_biling_v2c.py	1	11380	6622	4758	2

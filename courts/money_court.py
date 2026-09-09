@@ -12,11 +12,11 @@
 import json
 import pathlib
 import re
-import plural as _plural  # английский артикль гнётся ЗВУКОМ следующего слова
 import sys
 
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
+import plural as _plural  # noqa: E402 — английский артикль гнётся ЗВУКОМ следующего слова
 import asking  # noqa: E402
 import families  # noqa: E402
 import rugram  # noqa: E402
