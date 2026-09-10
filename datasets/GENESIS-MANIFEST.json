@@ -1243,6 +1243,30 @@
       "actors": []
     },
     {
+      "name": "cmpshare",
+      "file": "datasets/genesis_cmpshare.txt",
+      "genre": "COMPARING SHARES — which share is greater, and why the denominator behaves THE OTHER WAY ROUND. Measured 11.09 across the show worlds: «1/3 больше 1/…», «which is greater: 1/…» — NONE; «общий знаменатель», «common denominator» — NONE; «subtract fractions», «improper fraction» — NONE. The house of reducing knows the equality of shares, the house of one share their identity, and which of two is GREATER nobody says. A NUMBER THAT CANNOT BE COMPARED IS NOT A MAGNITUDE: a share of which only its equal is known stays a name and does not take its place in a row with others. Four genera, and the second is the chief trap of counting: SAME DENOMINATOR («3/8 and 5/8: the denominator is the same, and the greater share is the one with the greater numerator»); SAME NUMERATOR («1/3 and 1/5: the numerator is the same, and the greater share is the one with the SMALLER denominator») — THE OTHER WAY ROUND; COMMON DENOMINATOR («2/3 and 3/5: bring them to 15: 2 × 5 = 10, and 3 × 3 = 9 …»); EQUAL. The second genus runs against habit, and the house is built for its sake: everywhere a greater number means more, and only in the denominator the reverse — the more parts the whole is cut into, the smaller each. A reader who has seen only the first genus will generalise it and decide that 1/5 is greater than 1/3. THE FIRST AND SECOND ARE A MINIMAL PAIR BY DIRECTION, and both pages are built alike so that the difference reads in one word. The third is the general case to which the first two reduce, and it is shown AFTER them and not instead: the particular rules are cheaper and worth knowing, but they rest on the general. The fourth closes the row: shares can be equal, and then the comparison ends not in «greater» but in «equal» — otherwise a reader would expect every comparison to yield a winner. The common denominator is the product of the two, or the greater of them when it divides by the smaller: THE LEAST COMMON MULTIPLE IS ANOTHER HOUSE'S SUBJECT, and taking it here would teach two laws on one page. The denominators stay below thirty so that the bringing is read by eye.",
+      "act": [
+        "recount",
+        "compare",
+        "generalize"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "opchoice",
       "file": "datasets/genesis_opchoice.txt",
       "genre": "CHOOSING THE OPERATION — which sign the SITUATION itself requires, and why that one. The corpus taught counting, and it taught naming the operation WHEN THE QUESTION NAMES IT («what is 20 plus 5?», «compute 20 plus 5»): the sign stands in the question and there is nothing to choose. The sweep of the canon against its own reader held eight lies at a threshold of zero, and four of them were ONE hole: the reader COUNTS RIGHT and TAKES THE WRONG OPERATION — «Ира нашла 11 орехов. она потеряла 9» answered 11 + 9 = 20; «Ivan shared 6 coins among 3 friends» answered 18. The law here is bought by a MINIMAL PAIR, not by an example: two pages with THE SAME NUMBERS differing in exactly one word — the word that decides the sign — and the reason for the difference is named IN THE LINE itself. Three forks, each taken from a reader's error rather than from the completeness of a table: finding/losing (+ or −), sharing equally/repeating (÷ or ×), more by/fewer by (+ or −). The fourth error (a fraction leaving: 36 ÷ 4 = 9, then 36 − 9 = 27) is a CHAIN of two operations and is not closed here — that is said, not left silent. The deciding word is declared by a table read by the court, and a swapped sign or a swapped word is caught mechanically.",
@@ -5070,10 +5094,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 21807237,
+      "size": 21929570,
       "tiers": [],
       "text": "mix",
-      "lines": 289252
+      "lines": 289958
     },
     {
       "name": "full",
@@ -5088,10 +5112,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 35890514,
+      "size": 36012847,
       "tiers": [],
       "text": "mix",
-      "lines": 406790
+      "lines": 407496
     },
     {
       "name": "minimal",
