@@ -1,0 +1,205 @@
+нужно число чётное и большее 20. подходит ли 29? 29 нечётно: 29 = 2 × 14 + 1, хотя 29 больше 20. первое условие не выполнено, и 29 не подходит.
+нужно число чётное и большее 10. подходит ли 21? 21 нечётно: 21 = 2 × 10 + 1, хотя 21 больше 10. первое условие не выполнено, и 21 не подходит.
+нужно число чётное и большее 30. подходит ли 37? 37 нечётно: 37 = 2 × 18 + 1, хотя 37 больше 30. первое условие не выполнено, и 37 не подходит.
+нужно число чётное и большее 30. подходит ли 8? 8 чётно: 8 = 2 × 4, но 8 не больше 30. второе условие не выполнено, и 8 не подходит.
+нужно число чётное и большее 20. подходит ли 10? 10 чётно: 10 = 2 × 5, но 10 не больше 20. второе условие не выполнено, и 10 не подходит.
+нужно число чётное и большее 10. подходит ли 2? 2 чётно: 2 = 2 × 1, но 2 не больше 10. второе условие не выполнено, и 2 не подходит.
+нужно число чётное и большее 30. подходит ли 18? 18 чётно: 18 = 2 × 9, но 18 не больше 30. второе условие не выполнено, и 18 не подходит.
+нужно число чётное и большее 20. подходит ли 20? 20 чётно: 20 = 2 × 10, но 20 не больше 20. второе условие не выполнено, и 20 не подходит.
+нужно число чётное и большее 10. подходит ли 11? 11 нечётно: 11 = 2 × 5 + 1, хотя 11 больше 10. первое условие не выполнено, и 11 не подходит.
+нужно число чётное и большее 30. подходит ли 28? 28 чётно: 28 = 2 × 14, но 28 не больше 30. второе условие не выполнено, и 28 не подходит.
+
+нужно число чётное и большее 30. подходит ли 3? 3 нечётно: 3 = 2 × 1 + 1, и 3 не больше 30. ни одно условие не выполнено, и 3 не подходит.
+нужно число чётное и большее 20. подходит ли 13? 13 нечётно: 13 = 2 × 6 + 1, и 13 не больше 20. ни одно условие не выполнено, и 13 не подходит.
+нужно число чётное и большее 10. подходит ли 14? во-первых, 14 чётно: 14 = 2 × 7. во-вторых, 14 больше 10. оба условия выполнены, и 14 подходит.
+нужно число чётное и большее 30. подходит ли 34? во-первых, 34 чётно: 34 = 2 × 17. во-вторых, 34 больше 30. оба условия выполнены, и 34 подходит.
+нужно число чётное и большее 30. подходит ли 13? 13 нечётно: 13 = 2 × 6 + 1, и 13 не больше 30. ни одно условие не выполнено, и 13 не подходит.
+нужно число чётное и большее 20. подходит ли 24? во-первых, 24 чётно: 24 = 2 × 12. во-вторых, 24 больше 20. оба условия выполнены, и 24 подходит.
+нужно число чётное и большее 20. подходит ли 3? 3 нечётно: 3 = 2 × 1 + 1, и 3 не больше 20. ни одно условие не выполнено, и 3 не подходит.
+нужно число чётное и большее 10. подходит ли 3? 3 нечётно: 3 = 2 × 1 + 1, и 3 не больше 10. ни одно условие не выполнено, и 3 не подходит.
+нужно число чётное и большее 30. подходит ли 23? 23 нечётно: 23 = 2 × 11 + 1, и 23 не больше 30. ни одно условие не выполнено, и 23 не подходит.
+
+a number must be even and greater than 20. does 29 fit? 29 is odd: 29 = 2 × 14 + 1, though 29 is greater than 20. the first condition fails, and 29 does not fit.
+a number must be even and greater than 10. does 21 fit? 21 is odd: 21 = 2 × 10 + 1, though 21 is greater than 10. the first condition fails, and 21 does not fit.
+a number must be even and greater than 30. does 37 fit? 37 is odd: 37 = 2 × 18 + 1, though 37 is greater than 30. the first condition fails, and 37 does not fit.
+a number must be even and greater than 30. does 8 fit? 8 is even: 8 = 2 × 4, but 8 is not greater than 30. the second condition fails, and 8 does not fit.
+a number must be even and greater than 20. does 10 fit? 10 is even: 10 = 2 × 5, but 10 is not greater than 20. the second condition fails, and 10 does not fit.
+a number must be even and greater than 10. does 2 fit? 2 is even: 2 = 2 × 1, but 2 is not greater than 10. the second condition fails, and 2 does not fit.
+a number must be even and greater than 30. does 18 fit? 18 is even: 18 = 2 × 9, but 18 is not greater than 30. the second condition fails, and 18 does not fit.
+a number must be even and greater than 20. does 20 fit? 20 is even: 20 = 2 × 10, but 20 is not greater than 20. the second condition fails, and 20 does not fit.
+a number must be even and greater than 10. does 11 fit? 11 is odd: 11 = 2 × 5 + 1, though 11 is greater than 10. the first condition fails, and 11 does not fit.
+a number must be even and greater than 30. does 28 fit? 28 is even: 28 = 2 × 14, but 28 is not greater than 30. the second condition fails, and 28 does not fit.
+
+a number must be even and greater than 30. does 3 fit? 3 is odd: 3 = 2 × 1 + 1, and 3 is not greater than 30. neither condition holds, and 3 does not fit.
+a number must be even and greater than 20. does 13 fit? 13 is odd: 13 = 2 × 6 + 1, and 13 is not greater than 20. neither condition holds, and 13 does not fit.
+a number must be even and greater than 10. does 14 fit? first, 14 is even: 14 = 2 × 7. second, 14 is greater than 10. both conditions hold, and 14 fits.
+a number must be even and greater than 30. does 34 fit? first, 34 is even: 34 = 2 × 17. second, 34 is greater than 30. both conditions hold, and 34 fits.
+a number must be even and greater than 30. does 13 fit? 13 is odd: 13 = 2 × 6 + 1, and 13 is not greater than 30. neither condition holds, and 13 does not fit.
+a number must be even and greater than 20. does 24 fit? first, 24 is even: 24 = 2 × 12. second, 24 is greater than 20. both conditions hold, and 24 fits.
+a number must be even and greater than 20. does 3 fit? 3 is odd: 3 = 2 × 1 + 1, and 3 is not greater than 20. neither condition holds, and 3 does not fit.
+a number must be even and greater than 10. does 3 fit? 3 is odd: 3 = 2 × 1 + 1, and 3 is not greater than 10. neither condition holds, and 3 does not fit.
+a number must be even and greater than 30. does 23 fit? 23 is odd: 23 = 2 × 11 + 1, and 23 is not greater than 30. neither condition holds, and 23 does not fit.
+
+нужно число чётное и большее 20. подходит ли 2? 2 чётно: 2 = 2 × 1, но 2 не больше 20. второе условие не выполнено, и 2 не подходит.
+нужно число чётное и большее 20. подходит ли 12? 12 чётно: 12 = 2 × 6, но 12 не больше 20. второе условие не выполнено, и 12 не подходит.
+нужно число чётное и большее 20. подходит ли 21? 21 нечётно: 21 = 2 × 10 + 1, хотя 21 больше 20. первое условие не выполнено, и 21 не подходит.
+нужно число чётное и большее 20. подходит ли 31? 31 нечётно: 31 = 2 × 15 + 1, хотя 31 больше 20. первое условие не выполнено, и 31 не подходит.
+нужно число чётное и большее 30. подходит ли 10? 10 чётно: 10 = 2 × 5, но 10 не больше 30. второе условие не выполнено, и 10 не подходит.
+нужно число чётное и большее 30. подходит ли 20? 20 чётно: 20 = 2 × 10, но 20 не больше 30. второе условие не выполнено, и 20 не подходит.
+нужно число чётное и большее 30. подходит ли 30? 30 чётно: 30 = 2 × 15, но 30 не больше 30. второе условие не выполнено, и 30 не подходит.
+нужно число чётное и большее 30. подходит ли 39? 39 нечётно: 39 = 2 × 19 + 1, хотя 39 больше 30. первое условие не выполнено, и 39 не подходит.
+нужно число чётное и большее 10. подходит ли 4? 4 чётно: 4 = 2 × 2, но 4 не больше 10. второе условие не выполнено, и 4 не подходит.
+нужно число чётное и большее 10. подходит ли 13? 13 нечётно: 13 = 2 × 6 + 1, хотя 13 больше 10. первое условие не выполнено, и 13 не подходит.
+
+нужно число чётное и большее 20. подходит ли 5? 5 нечётно: 5 = 2 × 2 + 1, и 5 не больше 20. ни одно условие не выполнено, и 5 не подходит.
+нужно число чётное и большее 20. подходит ли 26? во-первых, 26 чётно: 26 = 2 × 13. во-вторых, 26 больше 20. оба условия выполнены, и 26 подходит.
+нужно число чётное и большее 30. подходит ли 15? 15 нечётно: 15 = 2 × 7 + 1, и 15 не больше 30. ни одно условие не выполнено, и 15 не подходит.
+нужно число чётное и большее 30. подходит ли 36? во-первых, 36 чётно: 36 = 2 × 18. во-вторых, 36 больше 30. оба условия выполнены, и 36 подходит.
+нужно число чётное и большее 10. подходит ли 16? во-первых, 16 чётно: 16 = 2 × 8. во-вторых, 16 больше 10. оба условия выполнены, и 16 подходит.
+нужно число чётное и большее 20. подходит ли 15? 15 нечётно: 15 = 2 × 7 + 1, и 15 не больше 20. ни одно условие не выполнено, и 15 не подходит.
+нужно число чётное и большее 30. подходит ли 5? 5 нечётно: 5 = 2 × 2 + 1, и 5 не больше 30. ни одно условие не выполнено, и 5 не подходит.
+нужно число чётное и большее 30. подходит ли 25? 25 нечётно: 25 = 2 × 12 + 1, и 25 не больше 30. ни одно условие не выполнено, и 25 не подходит.
+нужно число чётное и большее 10. подходит ли 5? 5 нечётно: 5 = 2 × 2 + 1, и 5 не больше 10. ни одно условие не выполнено, и 5 не подходит.
+
+a number must be even and greater than 20. does 2 fit? 2 is even: 2 = 2 × 1, but 2 is not greater than 20. the second condition fails, and 2 does not fit.
+a number must be even and greater than 20. does 12 fit? 12 is even: 12 = 2 × 6, but 12 is not greater than 20. the second condition fails, and 12 does not fit.
+a number must be even and greater than 20. does 21 fit? 21 is odd: 21 = 2 × 10 + 1, though 21 is greater than 20. the first condition fails, and 21 does not fit.
+a number must be even and greater than 20. does 31 fit? 31 is odd: 31 = 2 × 15 + 1, though 31 is greater than 20. the first condition fails, and 31 does not fit.
+a number must be even and greater than 30. does 10 fit? 10 is even: 10 = 2 × 5, but 10 is not greater than 30. the second condition fails, and 10 does not fit.
+a number must be even and greater than 30. does 20 fit? 20 is even: 20 = 2 × 10, but 20 is not greater than 30. the second condition fails, and 20 does not fit.
+a number must be even and greater than 30. does 30 fit? 30 is even: 30 = 2 × 15, but 30 is not greater than 30. the second condition fails, and 30 does not fit.
+a number must be even and greater than 30. does 39 fit? 39 is odd: 39 = 2 × 19 + 1, though 39 is greater than 30. the first condition fails, and 39 does not fit.
+a number must be even and greater than 10. does 4 fit? 4 is even: 4 = 2 × 2, but 4 is not greater than 10. the second condition fails, and 4 does not fit.
+a number must be even and greater than 10. does 13 fit? 13 is odd: 13 = 2 × 6 + 1, though 13 is greater than 10. the first condition fails, and 13 does not fit.
+
+a number must be even and greater than 20. does 5 fit? 5 is odd: 5 = 2 × 2 + 1, and 5 is not greater than 20. neither condition holds, and 5 does not fit.
+a number must be even and greater than 20. does 26 fit? first, 26 is even: 26 = 2 × 13. second, 26 is greater than 20. both conditions hold, and 26 fits.
+a number must be even and greater than 30. does 15 fit? 15 is odd: 15 = 2 × 7 + 1, and 15 is not greater than 30. neither condition holds, and 15 does not fit.
+a number must be even and greater than 30. does 36 fit? first, 36 is even: 36 = 2 × 18. second, 36 is greater than 30. both conditions hold, and 36 fits.
+a number must be even and greater than 10. does 16 fit? first, 16 is even: 16 = 2 × 8. second, 16 is greater than 10. both conditions hold, and 16 fits.
+a number must be even and greater than 20. does 15 fit? 15 is odd: 15 = 2 × 7 + 1, and 15 is not greater than 20. neither condition holds, and 15 does not fit.
+a number must be even and greater than 30. does 5 fit? 5 is odd: 5 = 2 × 2 + 1, and 5 is not greater than 30. neither condition holds, and 5 does not fit.
+a number must be even and greater than 30. does 25 fit? 25 is odd: 25 = 2 × 12 + 1, and 25 is not greater than 30. neither condition holds, and 25 does not fit.
+a number must be even and greater than 10. does 5 fit? 5 is odd: 5 = 2 × 2 + 1, and 5 is not greater than 10. neither condition holds, and 5 does not fit.
+
+нужно число чётное и большее 30. подходит ли 41? 41 нечётно: 41 = 2 × 20 + 1, хотя 41 больше 30. первое условие не выполнено, и 41 не подходит.
+нужно число чётное и большее 20. подходит ли 4? 4 чётно: 4 = 2 × 2, но 4 не больше 20. второе условие не выполнено, и 4 не подходит.
+нужно число чётное и большее 30. подходит ли 2? 2 чётно: 2 = 2 × 1, но 2 не больше 30. второе условие не выполнено, и 2 не подходит.
+нужно число чётное и большее 30. подходит ли 31? 31 нечётно: 31 = 2 × 15 + 1, хотя 31 больше 30. первое условие не выполнено, и 31 не подходит.
+нужно число чётное и большее 10. подходит ли 15? 15 нечётно: 15 = 2 × 7 + 1, хотя 15 больше 10. первое условие не выполнено, и 15 не подходит.
+нужно число чётное и большее 20. подходит ли 23? 23 нечётно: 23 = 2 × 11 + 1, хотя 23 больше 20. первое условие не выполнено, и 23 не подходит.
+нужно число чётное и большее 30. подходит ли 22? 22 чётно: 22 = 2 × 11, но 22 не больше 30. второе условие не выполнено, и 22 не подходит.
+нужно число чётное и большее 10. подходит ли 6? 6 чётно: 6 = 2 × 3, но 6 не больше 10. второе условие не выполнено, и 6 не подходит.
+нужно число чётное и большее 20. подходит ли 14? 14 чётно: 14 = 2 × 7, но 14 не больше 20. второе условие не выполнено, и 14 не подходит.
+нужно число чётное и большее 30. подходит ли 12? 12 чётно: 12 = 2 × 6, но 12 не больше 30. второе условие не выполнено, и 12 не подходит.
+
+нужно число чётное и большее 10. подходит ли 7? 7 нечётно: 7 = 2 × 3 + 1, и 7 не больше 10. ни одно условие не выполнено, и 7 не подходит.
+нужно число чётное и большее 20. подходит ли 28? во-первых, 28 чётно: 28 = 2 × 14. во-вторых, 28 больше 20. оба условия выполнены, и 28 подходит.
+нужно число чётное и большее 30. подходит ли 38? во-первых, 38 чётно: 38 = 2 × 19. во-вторых, 38 больше 30. оба условия выполнены, и 38 подходит.
+нужно число чётное и большее 20. подходит ли 17? 17 нечётно: 17 = 2 × 8 + 1, и 17 не больше 20. ни одно условие не выполнено, и 17 не подходит.
+нужно число чётное и большее 30. подходит ли 27? 27 нечётно: 27 = 2 × 13 + 1, и 27 не больше 30. ни одно условие не выполнено, и 27 не подходит.
+нужно число чётное и большее 20. подходит ли 7? 7 нечётно: 7 = 2 × 3 + 1, и 7 не больше 20. ни одно условие не выполнено, и 7 не подходит.
+нужно число чётное и большее 30. подходит ли 17? 17 нечётно: 17 = 2 × 8 + 1, и 17 не больше 30. ни одно условие не выполнено, и 17 не подходит.
+нужно число чётное и большее 10. подходит ли 18? во-первых, 18 чётно: 18 = 2 × 9. во-вторых, 18 больше 10. оба условия выполнены, и 18 подходит.
+нужно число чётное и большее 30. подходит ли 7? 7 нечётно: 7 = 2 × 3 + 1, и 7 не больше 30. ни одно условие не выполнено, и 7 не подходит.
+
+a number must be even and greater than 30. does 41 fit? 41 is odd: 41 = 2 × 20 + 1, though 41 is greater than 30. the first condition fails, and 41 does not fit.
+a number must be even and greater than 20. does 4 fit? 4 is even: 4 = 2 × 2, but 4 is not greater than 20. the second condition fails, and 4 does not fit.
+a number must be even and greater than 30. does 2 fit? 2 is even: 2 = 2 × 1, but 2 is not greater than 30. the second condition fails, and 2 does not fit.
+a number must be even and greater than 30. does 31 fit? 31 is odd: 31 = 2 × 15 + 1, though 31 is greater than 30. the first condition fails, and 31 does not fit.
+a number must be even and greater than 10. does 15 fit? 15 is odd: 15 = 2 × 7 + 1, though 15 is greater than 10. the first condition fails, and 15 does not fit.
+a number must be even and greater than 20. does 23 fit? 23 is odd: 23 = 2 × 11 + 1, though 23 is greater than 20. the first condition fails, and 23 does not fit.
+a number must be even and greater than 30. does 22 fit? 22 is even: 22 = 2 × 11, but 22 is not greater than 30. the second condition fails, and 22 does not fit.
+a number must be even and greater than 10. does 6 fit? 6 is even: 6 = 2 × 3, but 6 is not greater than 10. the second condition fails, and 6 does not fit.
+a number must be even and greater than 20. does 14 fit? 14 is even: 14 = 2 × 7, but 14 is not greater than 20. the second condition fails, and 14 does not fit.
+a number must be even and greater than 30. does 12 fit? 12 is even: 12 = 2 × 6, but 12 is not greater than 30. the second condition fails, and 12 does not fit.
+
+a number must be even and greater than 10. does 7 fit? 7 is odd: 7 = 2 × 3 + 1, and 7 is not greater than 10. neither condition holds, and 7 does not fit.
+a number must be even and greater than 20. does 28 fit? first, 28 is even: 28 = 2 × 14. second, 28 is greater than 20. both conditions hold, and 28 fits.
+a number must be even and greater than 30. does 38 fit? first, 38 is even: 38 = 2 × 19. second, 38 is greater than 30. both conditions hold, and 38 fits.
+a number must be even and greater than 20. does 17 fit? 17 is odd: 17 = 2 × 8 + 1, and 17 is not greater than 20. neither condition holds, and 17 does not fit.
+a number must be even and greater than 30. does 27 fit? 27 is odd: 27 = 2 × 13 + 1, and 27 is not greater than 30. neither condition holds, and 27 does not fit.
+a number must be even and greater than 20. does 7 fit? 7 is odd: 7 = 2 × 3 + 1, and 7 is not greater than 20. neither condition holds, and 7 does not fit.
+a number must be even and greater than 30. does 17 fit? 17 is odd: 17 = 2 × 8 + 1, and 17 is not greater than 30. neither condition holds, and 17 does not fit.
+a number must be even and greater than 10. does 18 fit? first, 18 is even: 18 = 2 × 9. second, 18 is greater than 10. both conditions hold, and 18 fits.
+a number must be even and greater than 30. does 7 fit? 7 is odd: 7 = 2 × 3 + 1, and 7 is not greater than 30. neither condition holds, and 7 does not fit.
+
+нужно число чётное и большее 20. подходит ли 25? 25 нечётно: 25 = 2 × 12 + 1, хотя 25 больше 20. первое условие не выполнено, и 25 не подходит.
+нужно число чётное и большее 20. подходит ли 16? 16 чётно: 16 = 2 × 8, но 16 не больше 20. второе условие не выполнено, и 16 не подходит.
+нужно число чётное и большее 20. подходит ли 6? 6 чётно: 6 = 2 × 3, но 6 не больше 20. второе условие не выполнено, и 6 не подходит.
+нужно число чётное и большее 10. подходит ли 17? 17 нечётно: 17 = 2 × 8 + 1, хотя 17 больше 10. первое условие не выполнено, и 17 не подходит.
+нужно число чётное и большее 10. подходит ли 8? 8 чётно: 8 = 2 × 4, но 8 не больше 10. второе условие не выполнено, и 8 не подходит.
+нужно число чётное и большее 30. подходит ли 33? 33 нечётно: 33 = 2 × 16 + 1, хотя 33 больше 30. первое условие не выполнено, и 33 не подходит.
+нужно число чётное и большее 30. подходит ли 24? 24 чётно: 24 = 2 × 12, но 24 не больше 30. второе условие не выполнено, и 24 не подходит.
+нужно число чётное и большее 30. подходит ли 14? 14 чётно: 14 = 2 × 7, но 14 не больше 30. второе условие не выполнено, и 14 не подходит.
+нужно число чётное и большее 30. подходит ли 4? 4 чётно: 4 = 2 × 2, но 4 не больше 30. второе условие не выполнено, и 4 не подходит.
+
+нужно число чётное и большее 20. подходит ли 30? во-первых, 30 чётно: 30 = 2 × 15. во-вторых, 30 больше 20. оба условия выполнены, и 30 подходит.
+нужно число чётное и большее 20. подходит ли 19? 19 нечётно: 19 = 2 × 9 + 1, и 19 не больше 20. ни одно условие не выполнено, и 19 не подходит.
+нужно число чётное и большее 20. подходит ли 9? 9 нечётно: 9 = 2 × 4 + 1, и 9 не больше 20. ни одно условие не выполнено, и 9 не подходит.
+нужно число чётное и большее 10. подходит ли 20? во-первых, 20 чётно: 20 = 2 × 10. во-вторых, 20 больше 10. оба условия выполнены, и 20 подходит.
+нужно число чётное и большее 10. подходит ли 9? 9 нечётно: 9 = 2 × 4 + 1, и 9 не больше 10. ни одно условие не выполнено, и 9 не подходит.
+нужно число чётное и большее 30. подходит ли 40? во-первых, 40 чётно: 40 = 2 × 20. во-вторых, 40 больше 30. оба условия выполнены, и 40 подходит.
+нужно число чётное и большее 30. подходит ли 29? 29 нечётно: 29 = 2 × 14 + 1, и 29 не больше 30. ни одно условие не выполнено, и 29 не подходит.
+нужно число чётное и большее 30. подходит ли 19? 19 нечётно: 19 = 2 × 9 + 1, и 19 не больше 30. ни одно условие не выполнено, и 19 не подходит.
+нужно число чётное и большее 30. подходит ли 9? 9 нечётно: 9 = 2 × 4 + 1, и 9 не больше 30. ни одно условие не выполнено, и 9 не подходит.
+
+a number must be even and greater than 20. does 25 fit? 25 is odd: 25 = 2 × 12 + 1, though 25 is greater than 20. the first condition fails, and 25 does not fit.
+a number must be even and greater than 20. does 16 fit? 16 is even: 16 = 2 × 8, but 16 is not greater than 20. the second condition fails, and 16 does not fit.
+a number must be even and greater than 20. does 6 fit? 6 is even: 6 = 2 × 3, but 6 is not greater than 20. the second condition fails, and 6 does not fit.
+a number must be even and greater than 10. does 17 fit? 17 is odd: 17 = 2 × 8 + 1, though 17 is greater than 10. the first condition fails, and 17 does not fit.
+a number must be even and greater than 10. does 8 fit? 8 is even: 8 = 2 × 4, but 8 is not greater than 10. the second condition fails, and 8 does not fit.
+a number must be even and greater than 30. does 33 fit? 33 is odd: 33 = 2 × 16 + 1, though 33 is greater than 30. the first condition fails, and 33 does not fit.
+a number must be even and greater than 30. does 24 fit? 24 is even: 24 = 2 × 12, but 24 is not greater than 30. the second condition fails, and 24 does not fit.
+a number must be even and greater than 30. does 14 fit? 14 is even: 14 = 2 × 7, but 14 is not greater than 30. the second condition fails, and 14 does not fit.
+a number must be even and greater than 30. does 4 fit? 4 is even: 4 = 2 × 2, but 4 is not greater than 30. the second condition fails, and 4 does not fit.
+
+a number must be even and greater than 20. does 30 fit? first, 30 is even: 30 = 2 × 15. second, 30 is greater than 20. both conditions hold, and 30 fits.
+a number must be even and greater than 20. does 19 fit? 19 is odd: 19 = 2 × 9 + 1, and 19 is not greater than 20. neither condition holds, and 19 does not fit.
+a number must be even and greater than 20. does 9 fit? 9 is odd: 9 = 2 × 4 + 1, and 9 is not greater than 20. neither condition holds, and 9 does not fit.
+a number must be even and greater than 10. does 20 fit? first, 20 is even: 20 = 2 × 10. second, 20 is greater than 10. both conditions hold, and 20 fits.
+a number must be even and greater than 10. does 9 fit? 9 is odd: 9 = 2 × 4 + 1, and 9 is not greater than 10. neither condition holds, and 9 does not fit.
+a number must be even and greater than 30. does 40 fit? first, 40 is even: 40 = 2 × 20. second, 40 is greater than 30. both conditions hold, and 40 fits.
+a number must be even and greater than 30. does 29 fit? 29 is odd: 29 = 2 × 14 + 1, and 29 is not greater than 30. neither condition holds, and 29 does not fit.
+a number must be even and greater than 30. does 19 fit? 19 is odd: 19 = 2 × 9 + 1, and 19 is not greater than 30. neither condition holds, and 19 does not fit.
+a number must be even and greater than 30. does 9 fit? 9 is odd: 9 = 2 × 4 + 1, and 9 is not greater than 30. neither condition holds, and 9 does not fit.
+
+нужно число чётное и большее 20. подходит ли 18? 18 чётно: 18 = 2 × 9, но 18 не больше 20. второе условие не выполнено, и 18 не подходит.
+нужно число чётное и большее 20. подходит ли 27? 27 нечётно: 27 = 2 × 13 + 1, хотя 27 больше 20. первое условие не выполнено, и 27 не подходит.
+нужно число чётное и большее 30. подходит ли 6? 6 чётно: 6 = 2 × 3, но 6 не больше 30. второе условие не выполнено, и 6 не подходит.
+нужно число чётное и большее 30. подходит ли 16? 16 чётно: 16 = 2 × 8, но 16 не больше 30. второе условие не выполнено, и 16 не подходит.
+нужно число чётное и большее 30. подходит ли 26? 26 чётно: 26 = 2 × 13, но 26 не больше 30. второе условие не выполнено, и 26 не подходит.
+нужно число чётное и большее 30. подходит ли 35? 35 нечётно: 35 = 2 × 17 + 1, хотя 35 больше 30. первое условие не выполнено, и 35 не подходит.
+нужно число чётное и большее 10. подходит ли 10? 10 чётно: 10 = 2 × 5, но 10 не больше 10. второе условие не выполнено, и 10 не подходит.
+нужно число чётное и большее 10. подходит ли 19? 19 нечётно: 19 = 2 × 9 + 1, хотя 19 больше 10. первое условие не выполнено, и 19 не подходит.
+нужно число чётное и большее 20. подходит ли 8? 8 чётно: 8 = 2 × 4, но 8 не больше 20. второе условие не выполнено, и 8 не подходит.
+
+нужно число чётное и большее 20. подходит ли 22? во-первых, 22 чётно: 22 = 2 × 11. во-вторых, 22 больше 20. оба условия выполнены, и 22 подходит.
+нужно число чётное и большее 20. подходит ли 32? во-первых, 32 чётно: 32 = 2 × 16. во-вторых, 32 больше 20. оба условия выполнены, и 32 подходит.
+нужно число чётное и большее 30. подходит ли 11? 11 нечётно: 11 = 2 × 5 + 1, и 11 не больше 30. ни одно условие не выполнено, и 11 не подходит.
+нужно число чётное и большее 30. подходит ли 21? 21 нечётно: 21 = 2 × 10 + 1, и 21 не больше 30. ни одно условие не выполнено, и 21 не подходит.
+нужно число чётное и большее 30. подходит ли 32? во-первых, 32 чётно: 32 = 2 × 16. во-вторых, 32 больше 30. оба условия выполнены, и 32 подходит.
+нужно число чётное и большее 30. подходит ли 42? во-первых, 42 чётно: 42 = 2 × 21. во-вторых, 42 больше 30. оба условия выполнены, и 42 подходит.
+нужно число чётное и большее 10. подходит ли 12? во-первых, 12 чётно: 12 = 2 × 6. во-вторых, 12 больше 10. оба условия выполнены, и 12 подходит.
+нужно число чётное и большее 10. подходит ли 22? во-первых, 22 чётно: 22 = 2 × 11. во-вторых, 22 больше 10. оба условия выполнены, и 22 подходит.
+нужно число чётное и большее 20. подходит ли 11? 11 нечётно: 11 = 2 × 5 + 1, и 11 не больше 20. ни одно условие не выполнено, и 11 не подходит.
+
+a number must be even and greater than 20. does 18 fit? 18 is even: 18 = 2 × 9, but 18 is not greater than 20. the second condition fails, and 18 does not fit.
+a number must be even and greater than 20. does 27 fit? 27 is odd: 27 = 2 × 13 + 1, though 27 is greater than 20. the first condition fails, and 27 does not fit.
+a number must be even and greater than 30. does 6 fit? 6 is even: 6 = 2 × 3, but 6 is not greater than 30. the second condition fails, and 6 does not fit.
+a number must be even and greater than 30. does 16 fit? 16 is even: 16 = 2 × 8, but 16 is not greater than 30. the second condition fails, and 16 does not fit.
+a number must be even and greater than 30. does 26 fit? 26 is even: 26 = 2 × 13, but 26 is not greater than 30. the second condition fails, and 26 does not fit.
+a number must be even and greater than 30. does 35 fit? 35 is odd: 35 = 2 × 17 + 1, though 35 is greater than 30. the first condition fails, and 35 does not fit.
+a number must be even and greater than 10. does 10 fit? 10 is even: 10 = 2 × 5, but 10 is not greater than 10. the second condition fails, and 10 does not fit.
+a number must be even and greater than 10. does 19 fit? 19 is odd: 19 = 2 × 9 + 1, though 19 is greater than 10. the first condition fails, and 19 does not fit.
+a number must be even and greater than 20. does 8 fit? 8 is even: 8 = 2 × 4, but 8 is not greater than 20. the second condition fails, and 8 does not fit.
+
+a number must be even and greater than 20. does 22 fit? first, 22 is even: 22 = 2 × 11. second, 22 is greater than 20. both conditions hold, and 22 fits.
+a number must be even and greater than 20. does 32 fit? first, 32 is even: 32 = 2 × 16. second, 32 is greater than 20. both conditions hold, and 32 fits.
+a number must be even and greater than 30. does 11 fit? 11 is odd: 11 = 2 × 5 + 1, and 11 is not greater than 30. neither condition holds, and 11 does not fit.
+a number must be even and greater than 30. does 21 fit? 21 is odd: 21 = 2 × 10 + 1, and 21 is not greater than 30. neither condition holds, and 21 does not fit.
+a number must be even and greater than 30. does 32 fit? first, 32 is even: 32 = 2 × 16. second, 32 is greater than 30. both conditions hold, and 32 fits.
+a number must be even and greater than 30. does 42 fit? first, 42 is even: 42 = 2 × 21. second, 42 is greater than 30. both conditions hold, and 42 fits.
+a number must be even and greater than 10. does 12 fit? first, 12 is even: 12 = 2 × 6. second, 12 is greater than 10. both conditions hold, and 12 fits.
+a number must be even and greater than 10. does 22 fit? first, 22 is even: 22 = 2 × 11. second, 22 is greater than 10. both conditions hold, and 22 fits.
+a number must be even and greater than 20. does 11 fit? 11 is odd: 11 = 2 × 5 + 1, and 11 is not greater than 20. neither condition holds, and 11 does not fit.

@@ -1075,6 +1075,30 @@
       "actors": []
     },
     {
+      "name": "both",
+      "file": "datasets/genesis_both.txt",
+      "genre": "TWO CONDITIONS — an inference for which ONE ground is not enough. All the reasoning of the canon runs from a single premise: the house of strict inference says «12 is divisible by 4, therefore 12 is divisible by 2» — one premise; the house of exclusion narrows a range by denials, but its conclusion rests on exhaustion, not on ADDING grounds. Measured 10.09 over the connectives of reasoning: «во-первых» — NONE, «во-вторых» — NONE, «например» — NONE, «однако» — NONE. The canon does not enumerate grounds, because one has always sufficed. AN INFERENCE THAT NEEDS ONE GROUND DOES NOT TEACH CHECKING THE SECOND — and in life the conditions are two and more, each able to fail on its own. Four genera, and they are the FULL TRUTH TABLE OF CONJUNCTION SHOWN BY COUNTING, not by letters: BOTH («does 14 fit? first, 14 is even: 14 = 2 × 7. second, 14 is greater than 10. both conditions hold»); FIRST FAILS («15 is odd: 15 = 2 × 7 + 1, though 15 is greater than 10»); SECOND FAILS («8 is even: 8 = 2 × 4, but 8 is not greater than 10»); NEITHER («7 is odd … and 7 is not greater than 10»). The second and third are a minimal pair, without which the house would be half of itself: now one condition fails, now the other, and the verdict is the same — a reader who sees both cannot decide that only the beginning of the check matters. The fourth is not superfluous though it seems obvious: without it the table is incomplete, and an incomplete table teaches guessing the missing cell. The words «though» and «but» stand not for ornament: they carry CONCESSION — the acknowledgement of a ground that still does not save. Both conditions are checked BY COUNTING and not by declaration: parity by the writing «n = 2 × k» or «n = 2 × k + 1», magnitude by comparison with the threshold. There are three thresholds, and that was bought by the measure of mass: with a single threshold of 10 the cells «second fails» and «neither» gathered five and four pages — fewer than nine, that is UNBUYABLE, for there are only nine numbers below ten. A TABLE WHOSE CELL IS SHOWN FOUR TIMES TEACHES THREE CELLS OUT OF FOUR.",
+      "act": [
+        "recount",
+        "decide",
+        "generalize"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "opchoice",
       "file": "datasets/genesis_opchoice.txt",
       "genre": "CHOOSING THE OPERATION — which sign the SITUATION itself requires, and why that one. The corpus taught counting, and it taught naming the operation WHEN THE QUESTION NAMES IT («what is 20 plus 5?», «compute 20 plus 5»): the sign stands in the question and there is nothing to choose. The sweep of the canon against its own reader held eight lies at a threshold of zero, and four of them were ONE hole: the reader COUNTS RIGHT and TAKES THE WRONG OPERATION — «Ира нашла 11 орехов. она потеряла 9» answered 11 + 9 = 20; «Ivan shared 6 coins among 3 friends» answered 18. The law here is bought by a MINIMAL PAIR, not by an example: two pages with THE SAME NUMBERS differing in exactly one word — the word that decides the sign — and the reason for the difference is named IN THE LINE itself. Three forks, each taken from a reader's error rather than from the completeness of a table: finding/losing (+ or −), sharing equally/repeating (÷ or ×), more by/fewer by (+ or −). The fourth error (a fraction leaving: 36 ÷ 4 = 9, then 36 − 9 = 27) is a CHAIN of two operations and is not closed here — that is said, not left silent. The deciding word is declared by a table read by the court, and a swapped sign or a swapped word is caught mechanically.",
@@ -4902,10 +4926,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 21461538,
+      "size": 21497551,
       "tiers": [],
       "text": "mix",
-      "lines": 286864
+      "lines": 287050
     },
     {
       "name": "full",
@@ -4920,10 +4944,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 35544815,
+      "size": 35580828,
       "tiers": [],
       "text": "mix",
-      "lines": 404402
+      "lines": 404588
     },
     {
       "name": "minimal",
