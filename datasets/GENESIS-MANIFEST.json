@@ -1171,6 +1171,30 @@
       "actors": []
     },
     {
+      "name": "amend",
+      "file": "datasets/genesis_amend.txt",
+      "genre": "SELF-CORRECTION — check YOUR OWN answer and say whether you were wrong. Measured 11.09: «я ошибся» stands in the canon ONLY AS AN APOLOGY — in the dialogue world and the self-model house («извини, я ошибся. всё в порядке», «what is «извини, я ошибся»? — an apology»). An admission of error IN COUNTING, with a check and the right answer, is made by not one line; «была ошибка», «верный ответ», «i was wrong» occur NOT ONCE. AN ORGANISM THAT CAN APOLOGISE AND CANNOT RECOUNT APOLOGISES INSTEAD OF CORRECTING. Three genera, all checked by recomputing both steps: WRONG («i was asked what 2 + 3 × 4 is, and i said 20. i check: multiplication goes before addition, and 3 × 4 = 12, and 2 + 12 = 14. i was wrong: it is 14»); NOT WRONG (the SAME check with the other outcome); and REASONING («i said 14. that is right, but my reasoning was wrong: i said addition goes first, while multiplication goes first»). The first two are a minimal pair: the check is ONE AND THE SAME and its outcome differs — without the second the house would teach that a check always ends in repentance, and the check would become a rite. A CHECK THAT ALWAYS FINDS AN ERROR IS NOT A CHECK. The third is deeper than the first two and the house is built three-fold for its sake: the answer is right and the reasoning is wrong, AND THAT DOES NOT COUNT. One who got fourteen by adding before multiplying got it by accident, and will err the next time. A RIGHT ANSWER DOES NOT JUSTIFY A WRONG PATH. The mistaken answer is named BY A NUMBER and not by an equation, and that was bought by the arithmetic court: the first draft wrote «i said that 2 + 3 × 4 = 20» and was called false — rightly, for that is an ASSERTED equation and not one quoted by a question, and the court's quotation window opens only on a question. Now the error stands as a number, and no false equation appears in the canon at all. TO SHOW AN ERROR ONE NEED NOT ASSERT IT. The numbers are taken from the house of the order of operations: the left-to-right error is the very one that house was built for, and here it gains a second surface — not «how it should be» but «i checked myself».",
+      "act": [
+        "recount",
+        "refute",
+        "expound"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "opchoice",
       "file": "datasets/genesis_opchoice.txt",
       "genre": "CHOOSING THE OPERATION — which sign the SITUATION itself requires, and why that one. The corpus taught counting, and it taught naming the operation WHEN THE QUESTION NAMES IT («what is 20 plus 5?», «compute 20 plus 5»): the sign stands in the question and there is nothing to choose. The sweep of the canon against its own reader held eight lies at a threshold of zero, and four of them were ONE hole: the reader COUNTS RIGHT and TAKES THE WRONG OPERATION — «Ира нашла 11 орехов. она потеряла 9» answered 11 + 9 = 20; «Ivan shared 6 coins among 3 friends» answered 18. The law here is bought by a MINIMAL PAIR, not by an example: two pages with THE SAME NUMBERS differing in exactly one word — the word that decides the sign — and the reason for the difference is named IN THE LINE itself. Three forks, each taken from a reader's error rather than from the completeness of a table: finding/losing (+ or −), sharing equally/repeating (÷ or ×), more by/fewer by (+ or −). The fourth error (a fraction leaving: 36 ÷ 4 = 9, then 36 − 9 = 27) is a CHAIN of two operations and is not closed here — that is said, not left silent. The deciding word is declared by a table read by the court, and a swapped sign or a swapped word is caught mechanically.",
@@ -4998,10 +5022,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 21609867,
+      "size": 21649177,
       "tiers": [],
       "text": "mix",
-      "lines": 287890
+      "lines": 288082
     },
     {
       "name": "full",
@@ -5016,10 +5040,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 35693144,
+      "size": 35732454,
       "tiers": [],
       "text": "mix",
-      "lines": 405428
+      "lines": 405620
     },
     {
       "name": "minimal",

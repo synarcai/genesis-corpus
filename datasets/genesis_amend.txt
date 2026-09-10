@@ -1,0 +1,211 @@
+меня спросили, сколько будет 2 + 5 × 2, и я сказал 12. проверяю: умножение идёт прежде сложения, и 5 × 2 = 10, и 2 + 10 = 12. я не ошибся: верно 12.
+меня спросили, сколько будет 3 + 3 × 4, и я сказал 24. проверяю: умножение идёт прежде сложения, и 3 × 4 = 12, и 3 + 12 = 15. я ошибся: верно 15.
+меня спросили, сколько будет 2 + 5 × 5, и я сказал 35. проверяю: умножение идёт прежде сложения, и 5 × 5 = 25, и 2 + 25 = 27. я ошибся: верно 27.
+меня спросили, сколько будет 2 + 2 × 2, и я сказал 8. проверяю: умножение идёт прежде сложения, и 2 × 2 = 4, и 2 + 4 = 6. я ошибся: верно 6.
+меня спросили, сколько будет 2 + 6 × 3, и я сказал 20. проверяю: умножение идёт прежде сложения, и 6 × 3 = 18, и 2 + 18 = 20. я не ошибся: верно 20.
+меня спросили, сколько будет 2 + 2 × 4, и я сказал 10. проверяю: умножение идёт прежде сложения, и 2 × 4 = 8, и 2 + 8 = 10. я не ошибся: верно 10.
+меня спросили, сколько будет 2 + 7 × 2, и я сказал 18. проверяю: умножение идёт прежде сложения, и 7 × 2 = 14, и 2 + 14 = 16. я ошибся: верно 16.
+меня спросили, сколько будет 2 + 3 × 3, и я сказал 15. проверяю: умножение идёт прежде сложения, и 3 × 3 = 9, и 2 + 9 = 11. я ошибся: верно 11.
+меня спросили, сколько будет 2 + 7 × 4, и я сказал 30. проверяю: умножение идёт прежде сложения, и 7 × 4 = 28, и 2 + 28 = 30. я не ошибся: верно 30.
+меня спросили, сколько будет 2 + 3 × 5, и я сказал 17. проверяю: умножение идёт прежде сложения, и 3 × 5 = 15, и 2 + 15 = 17. я не ошибся: верно 17.
+меня спросили, сколько будет 3 + 2 × 3, и я сказал 15. проверяю: умножение идёт прежде сложения, и 2 × 3 = 6, и 3 + 6 = 9. я ошибся: верно 9.
+меня спросили, сколько будет 2 + 4 × 4, и я сказал 24. проверяю: умножение идёт прежде сложения, и 4 × 4 = 16, и 2 + 16 = 18. я ошибся: верно 18.
+меня спросили, сколько будет 3 + 2 × 5, и я сказал 13. проверяю: умножение идёт прежде сложения, и 2 × 5 = 10, и 3 + 10 = 13. я не ошибся: верно 13.
+
+меня спросили, сколько будет 3 + 2 × 3, и я сказал 9. это верно, но объяснил я неверно: я сказал, что сложение идёт прежде, а прежде идёт умножение: 2 × 3 = 6, и 3 + 6 = 9.
+меня спросили, сколько будет 3 + 3 × 4, и я сказал 15. это верно, но объяснил я неверно: я сказал, что сложение идёт прежде, а прежде идёт умножение: 3 × 4 = 12, и 3 + 12 = 15.
+меня спросили, сколько будет 2 + 2 × 2, и я сказал 6. это верно, но объяснил я неверно: я сказал, что сложение идёт прежде, а прежде идёт умножение: 2 × 2 = 4, и 2 + 4 = 6.
+меня спросили, сколько будет 2 + 3 × 3, и я сказал 11. это верно, но объяснил я неверно: я сказал, что сложение идёт прежде, а прежде идёт умножение: 3 × 3 = 9, и 2 + 9 = 11.
+меня спросили, сколько будет 2 + 4 × 4, и я сказал 18. это верно, но объяснил я неверно: я сказал, что сложение идёт прежде, а прежде идёт умножение: 4 × 4 = 16, и 2 + 16 = 18.
+меня спросили, сколько будет 2 + 5 × 5, и я сказал 27. это верно, но объяснил я неверно: я сказал, что сложение идёт прежде, а прежде идёт умножение: 5 × 5 = 25, и 2 + 25 = 27.
+меня спросили, сколько будет 2 + 7 × 2, и я сказал 16. это верно, но объяснил я неверно: я сказал, что сложение идёт прежде, а прежде идёт умножение: 7 × 2 = 14, и 2 + 14 = 16.
+
+i was asked what 2 + 5 × 2 is, and i said 12. i check: multiplication goes before addition, and 5 × 2 = 10, and 2 + 10 = 12. i was not wrong: it is 12.
+i was asked what 3 + 3 × 4 is, and i said 24. i check: multiplication goes before addition, and 3 × 4 = 12, and 3 + 12 = 15. i was wrong: it is 15.
+i was asked what 2 + 5 × 5 is, and i said 35. i check: multiplication goes before addition, and 5 × 5 = 25, and 2 + 25 = 27. i was wrong: it is 27.
+i was asked what 2 + 2 × 2 is, and i said 8. i check: multiplication goes before addition, and 2 × 2 = 4, and 2 + 4 = 6. i was wrong: it is 6.
+i was asked what 2 + 6 × 3 is, and i said 20. i check: multiplication goes before addition, and 6 × 3 = 18, and 2 + 18 = 20. i was not wrong: it is 20.
+i was asked what 2 + 2 × 4 is, and i said 10. i check: multiplication goes before addition, and 2 × 4 = 8, and 2 + 8 = 10. i was not wrong: it is 10.
+i was asked what 2 + 7 × 2 is, and i said 18. i check: multiplication goes before addition, and 7 × 2 = 14, and 2 + 14 = 16. i was wrong: it is 16.
+i was asked what 2 + 3 × 3 is, and i said 15. i check: multiplication goes before addition, and 3 × 3 = 9, and 2 + 9 = 11. i was wrong: it is 11.
+i was asked what 2 + 7 × 4 is, and i said 30. i check: multiplication goes before addition, and 7 × 4 = 28, and 2 + 28 = 30. i was not wrong: it is 30.
+i was asked what 2 + 3 × 5 is, and i said 17. i check: multiplication goes before addition, and 3 × 5 = 15, and 2 + 15 = 17. i was not wrong: it is 17.
+i was asked what 3 + 2 × 3 is, and i said 15. i check: multiplication goes before addition, and 2 × 3 = 6, and 3 + 6 = 9. i was wrong: it is 9.
+i was asked what 2 + 4 × 4 is, and i said 24. i check: multiplication goes before addition, and 4 × 4 = 16, and 2 + 16 = 18. i was wrong: it is 18.
+i was asked what 3 + 2 × 5 is, and i said 13. i check: multiplication goes before addition, and 2 × 5 = 10, and 3 + 10 = 13. i was not wrong: it is 13.
+
+i was asked what 3 + 2 × 3 is, and i said 9. that is right, but my reasoning was wrong: i said addition goes first, while multiplication goes first: 2 × 3 = 6, and 3 + 6 = 9.
+i was asked what 3 + 3 × 4 is, and i said 15. that is right, but my reasoning was wrong: i said addition goes first, while multiplication goes first: 3 × 4 = 12, and 3 + 12 = 15.
+i was asked what 2 + 2 × 2 is, and i said 6. that is right, but my reasoning was wrong: i said addition goes first, while multiplication goes first: 2 × 2 = 4, and 2 + 4 = 6.
+i was asked what 2 + 3 × 3 is, and i said 11. that is right, but my reasoning was wrong: i said addition goes first, while multiplication goes first: 3 × 3 = 9, and 2 + 9 = 11.
+i was asked what 2 + 4 × 4 is, and i said 18. that is right, but my reasoning was wrong: i said addition goes first, while multiplication goes first: 4 × 4 = 16, and 2 + 16 = 18.
+i was asked what 2 + 5 × 5 is, and i said 27. that is right, but my reasoning was wrong: i said addition goes first, while multiplication goes first: 5 × 5 = 25, and 2 + 25 = 27.
+i was asked what 2 + 7 × 2 is, and i said 16. that is right, but my reasoning was wrong: i said addition goes first, while multiplication goes first: 7 × 2 = 14, and 2 + 14 = 16.
+
+меня спросили, сколько будет 2 + 3 × 3, и я сказал 11. проверяю: умножение идёт прежде сложения, и 3 × 3 = 9, и 2 + 9 = 11. я не ошибся: верно 11.
+меня спросили, сколько будет 2 + 2 × 2, и я сказал 6. проверяю: умножение идёт прежде сложения, и 2 × 2 = 4, и 2 + 4 = 6. я не ошибся: верно 6.
+меня спросили, сколько будет 3 + 3 × 2, и я сказал 12. проверяю: умножение идёт прежде сложения, и 3 × 2 = 6, и 3 + 6 = 9. я ошибся: верно 9.
+меня спросили, сколько будет 2 + 7 × 5, и я сказал 45. проверяю: умножение идёт прежде сложения, и 7 × 5 = 35, и 2 + 35 = 37. я ошибся: верно 37.
+меня спросили, сколько будет 2 + 6 × 4, и я сказал 32. проверяю: умножение идёт прежде сложения, и 6 × 4 = 24, и 2 + 24 = 26. я ошибся: верно 26.
+меня спросили, сколько будет 2 + 5 × 3, и я сказал 21. проверяю: умножение идёт прежде сложения, и 5 × 3 = 15, и 2 + 15 = 17. я ошибся: верно 17.
+меня спросили, сколько будет 2 + 4 × 2, и я сказал 12. проверяю: умножение идёт прежде сложения, и 4 × 2 = 8, и 2 + 8 = 10. я ошибся: верно 10.
+меня спросили, сколько будет 2 + 2 × 5, и я сказал 20. проверяю: умножение идёт прежде сложения, и 2 × 5 = 10, и 2 + 10 = 12. я ошибся: верно 12.
+меня спросили, сколько будет 3 + 3 × 4, и я сказал 15. проверяю: умножение идёт прежде сложения, и 3 × 4 = 12, и 3 + 12 = 15. я не ошибся: верно 15.
+меня спросили, сколько будет 3 + 2 × 3, и я сказал 9. проверяю: умножение идёт прежде сложения, и 2 × 3 = 6, и 3 + 6 = 9. я не ошибся: верно 9.
+меня спросили, сколько будет 2 + 7 × 2, и я сказал 16. проверяю: умножение идёт прежде сложения, и 7 × 2 = 14, и 2 + 14 = 16. я не ошибся: верно 16.
+меня спросили, сколько будет 2 + 5 × 5, и я сказал 27. проверяю: умножение идёт прежде сложения, и 5 × 5 = 25, и 2 + 25 = 27. я не ошибся: верно 27.
+меня спросили, сколько будет 2 + 4 × 4, и я сказал 18. проверяю: умножение идёт прежде сложения, и 4 × 4 = 16, и 2 + 16 = 18. я не ошибся: верно 18.
+
+меня спросили, сколько будет 2 + 4 × 5, и я сказал 22. это верно, но объяснил я неверно: я сказал, что сложение идёт прежде, а прежде идёт умножение: 4 × 5 = 20, и 2 + 20 = 22.
+меня спросили, сколько будет 3 + 3 × 5, и я сказал 18. это верно, но объяснил я неверно: я сказал, что сложение идёт прежде, а прежде идёт умножение: 3 × 5 = 15, и 3 + 15 = 18.
+меня спросили, сколько будет 2 + 6 × 2, и я сказал 14. это верно, но объяснил я неверно: я сказал, что сложение идёт прежде, а прежде идёт умножение: 6 × 2 = 12, и 2 + 12 = 14.
+меня спросили, сколько будет 2 + 2 × 3, и я сказал 8. это верно, но объяснил я неверно: я сказал, что сложение идёт прежде, а прежде идёт умножение: 2 × 3 = 6, и 2 + 6 = 8.
+меня спросили, сколько будет 2 + 7 × 3, и я сказал 23. это верно, но объяснил я неверно: я сказал, что сложение идёт прежде, а прежде идёт умножение: 7 × 3 = 21, и 2 + 21 = 23.
+меня спросили, сколько будет 2 + 3 × 4, и я сказал 14. это верно, но объяснил я неверно: я сказал, что сложение идёт прежде, а прежде идёт умножение: 3 × 4 = 12, и 2 + 12 = 14.
+меня спросили, сколько будет 3 + 2 × 4, и я сказал 11. это верно, но объяснил я неверно: я сказал, что сложение идёт прежде, а прежде идёт умножение: 2 × 4 = 8, и 3 + 8 = 11.
+
+i was asked what 2 + 3 × 3 is, and i said 11. i check: multiplication goes before addition, and 3 × 3 = 9, and 2 + 9 = 11. i was not wrong: it is 11.
+i was asked what 2 + 2 × 2 is, and i said 6. i check: multiplication goes before addition, and 2 × 2 = 4, and 2 + 4 = 6. i was not wrong: it is 6.
+i was asked what 3 + 3 × 2 is, and i said 12. i check: multiplication goes before addition, and 3 × 2 = 6, and 3 + 6 = 9. i was wrong: it is 9.
+i was asked what 2 + 7 × 5 is, and i said 45. i check: multiplication goes before addition, and 7 × 5 = 35, and 2 + 35 = 37. i was wrong: it is 37.
+i was asked what 2 + 6 × 4 is, and i said 32. i check: multiplication goes before addition, and 6 × 4 = 24, and 2 + 24 = 26. i was wrong: it is 26.
+i was asked what 2 + 5 × 3 is, and i said 21. i check: multiplication goes before addition, and 5 × 3 = 15, and 2 + 15 = 17. i was wrong: it is 17.
+i was asked what 2 + 4 × 2 is, and i said 12. i check: multiplication goes before addition, and 4 × 2 = 8, and 2 + 8 = 10. i was wrong: it is 10.
+i was asked what 2 + 2 × 5 is, and i said 20. i check: multiplication goes before addition, and 2 × 5 = 10, and 2 + 10 = 12. i was wrong: it is 12.
+i was asked what 3 + 3 × 4 is, and i said 15. i check: multiplication goes before addition, and 3 × 4 = 12, and 3 + 12 = 15. i was not wrong: it is 15.
+i was asked what 3 + 2 × 3 is, and i said 9. i check: multiplication goes before addition, and 2 × 3 = 6, and 3 + 6 = 9. i was not wrong: it is 9.
+i was asked what 2 + 7 × 2 is, and i said 16. i check: multiplication goes before addition, and 7 × 2 = 14, and 2 + 14 = 16. i was not wrong: it is 16.
+i was asked what 2 + 5 × 5 is, and i said 27. i check: multiplication goes before addition, and 5 × 5 = 25, and 2 + 25 = 27. i was not wrong: it is 27.
+i was asked what 2 + 4 × 4 is, and i said 18. i check: multiplication goes before addition, and 4 × 4 = 16, and 2 + 16 = 18. i was not wrong: it is 18.
+
+i was asked what 2 + 4 × 5 is, and i said 22. that is right, but my reasoning was wrong: i said addition goes first, while multiplication goes first: 4 × 5 = 20, and 2 + 20 = 22.
+i was asked what 3 + 3 × 5 is, and i said 18. that is right, but my reasoning was wrong: i said addition goes first, while multiplication goes first: 3 × 5 = 15, and 3 + 15 = 18.
+i was asked what 2 + 6 × 2 is, and i said 14. that is right, but my reasoning was wrong: i said addition goes first, while multiplication goes first: 6 × 2 = 12, and 2 + 12 = 14.
+i was asked what 2 + 2 × 3 is, and i said 8. that is right, but my reasoning was wrong: i said addition goes first, while multiplication goes first: 2 × 3 = 6, and 2 + 6 = 8.
+i was asked what 2 + 7 × 3 is, and i said 23. that is right, but my reasoning was wrong: i said addition goes first, while multiplication goes first: 7 × 3 = 21, and 2 + 21 = 23.
+i was asked what 2 + 3 × 4 is, and i said 14. that is right, but my reasoning was wrong: i said addition goes first, while multiplication goes first: 3 × 4 = 12, and 2 + 12 = 14.
+i was asked what 3 + 2 × 4 is, and i said 11. that is right, but my reasoning was wrong: i said addition goes first, while multiplication goes first: 2 × 4 = 8, and 3 + 8 = 11.
+
+меня спросили, сколько будет 2 + 7 × 5, и я сказал 37. проверяю: умножение идёт прежде сложения, и 7 × 5 = 35, и 2 + 35 = 37. я не ошибся: верно 37.
+меня спросили, сколько будет 3 + 2 × 4, и я сказал 20. проверяю: умножение идёт прежде сложения, и 2 × 4 = 8, и 3 + 8 = 11. я ошибся: верно 11.
+меня спросили, сколько будет 3 + 3 × 2, и я сказал 9. проверяю: умножение идёт прежде сложения, и 3 × 2 = 6, и 3 + 6 = 9. я не ошибся: верно 9.
+меня спросили, сколько будет 3 + 3 × 5, и я сказал 30. проверяю: умножение идёт прежде сложения, и 3 × 5 = 15, и 3 + 15 = 18. я ошибся: верно 18.
+меня спросили, сколько будет 2 + 2 × 3, и я сказал 12. проверяю: умножение идёт прежде сложения, и 2 × 3 = 6, и 2 + 6 = 8. я ошибся: верно 8.
+меня спросили, сколько будет 2 + 2 × 5, и я сказал 12. проверяю: умножение идёт прежде сложения, и 2 × 5 = 10, и 2 + 10 = 12. я не ошибся: верно 12.
+меня спросили, сколько будет 2 + 3 × 4, и я сказал 20. проверяю: умножение идёт прежде сложения, и 3 × 4 = 12, и 2 + 12 = 14. я ошибся: верно 14.
+меня спросили, сколько будет 2 + 4 × 2, и я сказал 10. проверяю: умножение идёт прежде сложения, и 4 × 2 = 8, и 2 + 8 = 10. я не ошибся: верно 10.
+меня спросили, сколько будет 2 + 4 × 5, и я сказал 30. проверяю: умножение идёт прежде сложения, и 4 × 5 = 20, и 2 + 20 = 22. я ошибся: верно 22.
+меня спросили, сколько будет 2 + 5 × 3, и я сказал 17. проверяю: умножение идёт прежде сложения, и 5 × 3 = 15, и 2 + 15 = 17. я не ошибся: верно 17.
+меня спросили, сколько будет 2 + 6 × 2, и я сказал 16. проверяю: умножение идёт прежде сложения, и 6 × 2 = 12, и 2 + 12 = 14. я ошибся: верно 14.
+меня спросили, сколько будет 2 + 6 × 4, и я сказал 26. проверяю: умножение идёт прежде сложения, и 6 × 4 = 24, и 2 + 24 = 26. я не ошибся: верно 26.
+меня спросили, сколько будет 2 + 7 × 3, и я сказал 27. проверяю: умножение идёт прежде сложения, и 7 × 3 = 21, и 2 + 21 = 23. я ошибся: верно 23.
+
+меня спросили, сколько будет 2 + 6 × 3, и я сказал 20. это верно, но объяснил я неверно: я сказал, что сложение идёт прежде, а прежде идёт умножение: 6 × 3 = 18, и 2 + 18 = 20.
+меня спросили, сколько будет 2 + 7 × 4, и я сказал 30. это верно, но объяснил я неверно: я сказал, что сложение идёт прежде, а прежде идёт умножение: 7 × 4 = 28, и 2 + 28 = 30.
+меня спросили, сколько будет 3 + 2 × 5, и я сказал 13. это верно, но объяснил я неверно: я сказал, что сложение идёт прежде, а прежде идёт умножение: 2 × 5 = 10, и 3 + 10 = 13.
+меня спросили, сколько будет 2 + 2 × 4, и я сказал 10. это верно, но объяснил я неверно: я сказал, что сложение идёт прежде, а прежде идёт умножение: 2 × 4 = 8, и 2 + 8 = 10.
+меня спросили, сколько будет 2 + 3 × 5, и я сказал 17. это верно, но объяснил я неверно: я сказал, что сложение идёт прежде, а прежде идёт умножение: 3 × 5 = 15, и 2 + 15 = 17.
+меня спросили, сколько будет 2 + 5 × 2, и я сказал 12. это верно, но объяснил я неверно: я сказал, что сложение идёт прежде, а прежде идёт умножение: 5 × 2 = 10, и 2 + 10 = 12.
+
+i was asked what 2 + 7 × 5 is, and i said 37. i check: multiplication goes before addition, and 7 × 5 = 35, and 2 + 35 = 37. i was not wrong: it is 37.
+i was asked what 3 + 2 × 4 is, and i said 20. i check: multiplication goes before addition, and 2 × 4 = 8, and 3 + 8 = 11. i was wrong: it is 11.
+i was asked what 3 + 3 × 2 is, and i said 9. i check: multiplication goes before addition, and 3 × 2 = 6, and 3 + 6 = 9. i was not wrong: it is 9.
+i was asked what 3 + 3 × 5 is, and i said 30. i check: multiplication goes before addition, and 3 × 5 = 15, and 3 + 15 = 18. i was wrong: it is 18.
+i was asked what 2 + 2 × 3 is, and i said 12. i check: multiplication goes before addition, and 2 × 3 = 6, and 2 + 6 = 8. i was wrong: it is 8.
+i was asked what 2 + 2 × 5 is, and i said 12. i check: multiplication goes before addition, and 2 × 5 = 10, and 2 + 10 = 12. i was not wrong: it is 12.
+i was asked what 2 + 3 × 4 is, and i said 20. i check: multiplication goes before addition, and 3 × 4 = 12, and 2 + 12 = 14. i was wrong: it is 14.
+i was asked what 2 + 4 × 2 is, and i said 10. i check: multiplication goes before addition, and 4 × 2 = 8, and 2 + 8 = 10. i was not wrong: it is 10.
+i was asked what 2 + 4 × 5 is, and i said 30. i check: multiplication goes before addition, and 4 × 5 = 20, and 2 + 20 = 22. i was wrong: it is 22.
+i was asked what 2 + 5 × 3 is, and i said 17. i check: multiplication goes before addition, and 5 × 3 = 15, and 2 + 15 = 17. i was not wrong: it is 17.
+i was asked what 2 + 6 × 2 is, and i said 16. i check: multiplication goes before addition, and 6 × 2 = 12, and 2 + 12 = 14. i was wrong: it is 14.
+i was asked what 2 + 6 × 4 is, and i said 26. i check: multiplication goes before addition, and 6 × 4 = 24, and 2 + 24 = 26. i was not wrong: it is 26.
+i was asked what 2 + 7 × 3 is, and i said 27. i check: multiplication goes before addition, and 7 × 3 = 21, and 2 + 21 = 23. i was wrong: it is 23.
+
+i was asked what 2 + 6 × 3 is, and i said 20. that is right, but my reasoning was wrong: i said addition goes first, while multiplication goes first: 6 × 3 = 18, and 2 + 18 = 20.
+i was asked what 2 + 7 × 4 is, and i said 30. that is right, but my reasoning was wrong: i said addition goes first, while multiplication goes first: 7 × 4 = 28, and 2 + 28 = 30.
+i was asked what 3 + 2 × 5 is, and i said 13. that is right, but my reasoning was wrong: i said addition goes first, while multiplication goes first: 2 × 5 = 10, and 3 + 10 = 13.
+i was asked what 2 + 2 × 4 is, and i said 10. that is right, but my reasoning was wrong: i said addition goes first, while multiplication goes first: 2 × 4 = 8, and 2 + 8 = 10.
+i was asked what 2 + 3 × 5 is, and i said 17. that is right, but my reasoning was wrong: i said addition goes first, while multiplication goes first: 3 × 5 = 15, and 2 + 15 = 17.
+i was asked what 2 + 5 × 2 is, and i said 12. that is right, but my reasoning was wrong: i said addition goes first, while multiplication goes first: 5 × 2 = 10, and 2 + 10 = 12.
+
+меня спросили, сколько будет 2 + 4 × 5, и я сказал 22. проверяю: умножение идёт прежде сложения, и 4 × 5 = 20, и 2 + 20 = 22. я не ошибся: верно 22.
+меня спросили, сколько будет 2 + 7 × 3, и я сказал 23. проверяю: умножение идёт прежде сложения, и 7 × 3 = 21, и 2 + 21 = 23. я не ошибся: верно 23.
+меня спросили, сколько будет 3 + 3 × 5, и я сказал 18. проверяю: умножение идёт прежде сложения, и 3 × 5 = 15, и 3 + 15 = 18. я не ошибся: верно 18.
+меня спросили, сколько будет 2 + 4 × 3, и я сказал 18. проверяю: умножение идёт прежде сложения, и 4 × 3 = 12, и 2 + 12 = 14. я ошибся: верно 14.
+меня спросили, сколько будет 2 + 6 × 5, и я сказал 40. проверяю: умножение идёт прежде сложения, и 6 × 5 = 30, и 2 + 30 = 32. я ошибся: верно 32.
+меня спросили, сколько будет 3 + 3 × 3, и я сказал 18. проверяю: умножение идёт прежде сложения, и 3 × 3 = 9, и 3 + 9 = 12. я ошибся: верно 12.
+меня спросили, сколько будет 2 + 3 × 4, и я сказал 14. проверяю: умножение идёт прежде сложения, и 3 × 4 = 12, и 2 + 12 = 14. я не ошибся: верно 14.
+меня спросили, сколько будет 2 + 6 × 2, и я сказал 14. проверяю: умножение идёт прежде сложения, и 6 × 2 = 12, и 2 + 12 = 14. я не ошибся: верно 14.
+меня спросили, сколько будет 3 + 2 × 4, и я сказал 11. проверяю: умножение идёт прежде сложения, и 2 × 4 = 8, и 3 + 8 = 11. я не ошибся: верно 11.
+меня спросили, сколько будет 2 + 3 × 2, и я сказал 10. проверяю: умножение идёт прежде сложения, и 3 × 2 = 6, и 2 + 6 = 8. я ошибся: верно 8.
+меня спросили, сколько будет 2 + 5 × 4, и я сказал 28. проверяю: умножение идёт прежде сложения, и 5 × 4 = 20, и 2 + 20 = 22. я ошибся: верно 22.
+меня спросили, сколько будет 3 + 2 × 2, и я сказал 10. проверяю: умножение идёт прежде сложения, и 2 × 2 = 4, и 3 + 4 = 7. я ошибся: верно 7.
+меня спросили, сколько будет 2 + 2 × 3, и я сказал 8. проверяю: умножение идёт прежде сложения, и 2 × 3 = 6, и 2 + 6 = 8. я не ошибся: верно 8.
+
+меня спросили, сколько будет 2 + 7 × 5, и я сказал 37. это верно, но объяснил я неверно: я сказал, что сложение идёт прежде, а прежде идёт умножение: 7 × 5 = 35, и 2 + 35 = 37.
+меня спросили, сколько будет 2 + 6 × 4, и я сказал 26. это верно, но объяснил я неверно: я сказал, что сложение идёт прежде, а прежде идёт умножение: 6 × 4 = 24, и 2 + 24 = 26.
+меня спросили, сколько будет 2 + 5 × 3, и я сказал 17. это верно, но объяснил я неверно: я сказал, что сложение идёт прежде, а прежде идёт умножение: 5 × 3 = 15, и 2 + 15 = 17.
+меня спросили, сколько будет 2 + 4 × 2, и я сказал 10. это верно, но объяснил я неверно: я сказал, что сложение идёт прежде, а прежде идёт умножение: 4 × 2 = 8, и 2 + 8 = 10.
+меня спросили, сколько будет 2 + 2 × 5, и я сказал 12. это верно, но объяснил я неверно: я сказал, что сложение идёт прежде, а прежде идёт умножение: 2 × 5 = 10, и 2 + 10 = 12.
+меня спросили, сколько будет 3 + 3 × 2, и я сказал 9. это верно, но объяснил я неверно: я сказал, что сложение идёт прежде, а прежде идёт умножение: 3 × 2 = 6, и 3 + 6 = 9.
+
+i was asked what 2 + 4 × 5 is, and i said 22. i check: multiplication goes before addition, and 4 × 5 = 20, and 2 + 20 = 22. i was not wrong: it is 22.
+i was asked what 2 + 7 × 3 is, and i said 23. i check: multiplication goes before addition, and 7 × 3 = 21, and 2 + 21 = 23. i was not wrong: it is 23.
+i was asked what 3 + 3 × 5 is, and i said 18. i check: multiplication goes before addition, and 3 × 5 = 15, and 3 + 15 = 18. i was not wrong: it is 18.
+i was asked what 2 + 4 × 3 is, and i said 18. i check: multiplication goes before addition, and 4 × 3 = 12, and 2 + 12 = 14. i was wrong: it is 14.
+i was asked what 2 + 6 × 5 is, and i said 40. i check: multiplication goes before addition, and 6 × 5 = 30, and 2 + 30 = 32. i was wrong: it is 32.
+i was asked what 3 + 3 × 3 is, and i said 18. i check: multiplication goes before addition, and 3 × 3 = 9, and 3 + 9 = 12. i was wrong: it is 12.
+i was asked what 2 + 3 × 4 is, and i said 14. i check: multiplication goes before addition, and 3 × 4 = 12, and 2 + 12 = 14. i was not wrong: it is 14.
+i was asked what 2 + 6 × 2 is, and i said 14. i check: multiplication goes before addition, and 6 × 2 = 12, and 2 + 12 = 14. i was not wrong: it is 14.
+i was asked what 3 + 2 × 4 is, and i said 11. i check: multiplication goes before addition, and 2 × 4 = 8, and 3 + 8 = 11. i was not wrong: it is 11.
+i was asked what 2 + 3 × 2 is, and i said 10. i check: multiplication goes before addition, and 3 × 2 = 6, and 2 + 6 = 8. i was wrong: it is 8.
+i was asked what 2 + 5 × 4 is, and i said 28. i check: multiplication goes before addition, and 5 × 4 = 20, and 2 + 20 = 22. i was wrong: it is 22.
+i was asked what 3 + 2 × 2 is, and i said 10. i check: multiplication goes before addition, and 2 × 2 = 4, and 3 + 4 = 7. i was wrong: it is 7.
+i was asked what 2 + 2 × 3 is, and i said 8. i check: multiplication goes before addition, and 2 × 3 = 6, and 2 + 6 = 8. i was not wrong: it is 8.
+
+i was asked what 2 + 7 × 5 is, and i said 37. that is right, but my reasoning was wrong: i said addition goes first, while multiplication goes first: 7 × 5 = 35, and 2 + 35 = 37.
+i was asked what 2 + 6 × 4 is, and i said 26. that is right, but my reasoning was wrong: i said addition goes first, while multiplication goes first: 6 × 4 = 24, and 2 + 24 = 26.
+i was asked what 2 + 5 × 3 is, and i said 17. that is right, but my reasoning was wrong: i said addition goes first, while multiplication goes first: 5 × 3 = 15, and 2 + 15 = 17.
+i was asked what 2 + 4 × 2 is, and i said 10. that is right, but my reasoning was wrong: i said addition goes first, while multiplication goes first: 4 × 2 = 8, and 2 + 8 = 10.
+i was asked what 2 + 2 × 5 is, and i said 12. that is right, but my reasoning was wrong: i said addition goes first, while multiplication goes first: 2 × 5 = 10, and 2 + 10 = 12.
+i was asked what 3 + 3 × 2 is, and i said 9. that is right, but my reasoning was wrong: i said addition goes first, while multiplication goes first: 3 × 2 = 6, and 3 + 6 = 9.
+
+меня спросили, сколько будет 2 + 2 × 4, и я сказал 16. проверяю: умножение идёт прежде сложения, и 2 × 4 = 8, и 2 + 8 = 10. я ошибся: верно 10.
+меня спросили, сколько будет 2 + 6 × 5, и я сказал 32. проверяю: умножение идёт прежде сложения, и 6 × 5 = 30, и 2 + 30 = 32. я не ошибся: верно 32.
+меня спросили, сколько будет 2 + 3 × 5, и я сказал 25. проверяю: умножение идёт прежде сложения, и 3 × 5 = 15, и 2 + 15 = 17. я ошибся: верно 17.
+меня спросили, сколько будет 3 + 2 × 2, и я сказал 7. проверяю: умножение идёт прежде сложения, и 2 × 2 = 4, и 3 + 4 = 7. я не ошибся: верно 7.
+меня спросили, сколько будет 2 + 5 × 2, и я сказал 14. проверяю: умножение идёт прежде сложения, и 5 × 2 = 10, и 2 + 10 = 12. я ошибся: верно 12.
+меня спросили, сколько будет 3 + 3 × 3, и я сказал 12. проверяю: умножение идёт прежде сложения, и 3 × 3 = 9, и 3 + 9 = 12. я не ошибся: верно 12.
+меня спросили, сколько будет 2 + 6 × 3, и я сказал 24. проверяю: умножение идёт прежде сложения, и 6 × 3 = 18, и 2 + 18 = 20. я ошибся: верно 20.
+меня спросили, сколько будет 2 + 3 × 2, и я сказал 8. проверяю: умножение идёт прежде сложения, и 3 × 2 = 6, и 2 + 6 = 8. я не ошибся: верно 8.
+меня спросили, сколько будет 2 + 7 × 4, и я сказал 36. проверяю: умножение идёт прежде сложения, и 7 × 4 = 28, и 2 + 28 = 30. я ошибся: верно 30.
+меня спросили, сколько будет 2 + 4 × 3, и я сказал 14. проверяю: умножение идёт прежде сложения, и 4 × 3 = 12, и 2 + 12 = 14. я не ошибся: верно 14.
+меня спросили, сколько будет 3 + 2 × 5, и я сказал 25. проверяю: умножение идёт прежде сложения, и 2 × 5 = 10, и 3 + 10 = 13. я ошибся: верно 13.
+меня спросили, сколько будет 2 + 5 × 4, и я сказал 22. проверяю: умножение идёт прежде сложения, и 5 × 4 = 20, и 2 + 20 = 22. я не ошибся: верно 22.
+
+меня спросили, сколько будет 2 + 3 × 2, и я сказал 8. это верно, но объяснил я неверно: я сказал, что сложение идёт прежде, а прежде идёт умножение: 3 × 2 = 6, и 2 + 6 = 8.
+меня спросили, сколько будет 2 + 4 × 3, и я сказал 14. это верно, но объяснил я неверно: я сказал, что сложение идёт прежде, а прежде идёт умножение: 4 × 3 = 12, и 2 + 12 = 14.
+меня спросили, сколько будет 2 + 5 × 4, и я сказал 22. это верно, но объяснил я неверно: я сказал, что сложение идёт прежде, а прежде идёт умножение: 5 × 4 = 20, и 2 + 20 = 22.
+меня спросили, сколько будет 2 + 6 × 5, и я сказал 32. это верно, но объяснил я неверно: я сказал, что сложение идёт прежде, а прежде идёт умножение: 6 × 5 = 30, и 2 + 30 = 32.
+меня спросили, сколько будет 3 + 2 × 2, и я сказал 7. это верно, но объяснил я неверно: я сказал, что сложение идёт прежде, а прежде идёт умножение: 2 × 2 = 4, и 3 + 4 = 7.
+меня спросили, сколько будет 3 + 3 × 3, и я сказал 12. это верно, но объяснил я неверно: я сказал, что сложение идёт прежде, а прежде идёт умножение: 3 × 3 = 9, и 3 + 9 = 12.
+
+i was asked what 2 + 2 × 4 is, and i said 16. i check: multiplication goes before addition, and 2 × 4 = 8, and 2 + 8 = 10. i was wrong: it is 10.
+i was asked what 2 + 6 × 5 is, and i said 32. i check: multiplication goes before addition, and 6 × 5 = 30, and 2 + 30 = 32. i was not wrong: it is 32.
+i was asked what 2 + 3 × 5 is, and i said 25. i check: multiplication goes before addition, and 3 × 5 = 15, and 2 + 15 = 17. i was wrong: it is 17.
+i was asked what 3 + 2 × 2 is, and i said 7. i check: multiplication goes before addition, and 2 × 2 = 4, and 3 + 4 = 7. i was not wrong: it is 7.
+i was asked what 2 + 5 × 2 is, and i said 14. i check: multiplication goes before addition, and 5 × 2 = 10, and 2 + 10 = 12. i was wrong: it is 12.
+i was asked what 3 + 3 × 3 is, and i said 12. i check: multiplication goes before addition, and 3 × 3 = 9, and 3 + 9 = 12. i was not wrong: it is 12.
+i was asked what 2 + 6 × 3 is, and i said 24. i check: multiplication goes before addition, and 6 × 3 = 18, and 2 + 18 = 20. i was wrong: it is 20.
+i was asked what 2 + 3 × 2 is, and i said 8. i check: multiplication goes before addition, and 3 × 2 = 6, and 2 + 6 = 8. i was not wrong: it is 8.
+i was asked what 2 + 7 × 4 is, and i said 36. i check: multiplication goes before addition, and 7 × 4 = 28, and 2 + 28 = 30. i was wrong: it is 30.
+i was asked what 2 + 4 × 3 is, and i said 14. i check: multiplication goes before addition, and 4 × 3 = 12, and 2 + 12 = 14. i was not wrong: it is 14.
+i was asked what 3 + 2 × 5 is, and i said 25. i check: multiplication goes before addition, and 2 × 5 = 10, and 3 + 10 = 13. i was wrong: it is 13.
+i was asked what 2 + 5 × 4 is, and i said 22. i check: multiplication goes before addition, and 5 × 4 = 20, and 2 + 20 = 22. i was not wrong: it is 22.
+
+i was asked what 2 + 3 × 2 is, and i said 8. that is right, but my reasoning was wrong: i said addition goes first, while multiplication goes first: 3 × 2 = 6, and 2 + 6 = 8.
+i was asked what 2 + 4 × 3 is, and i said 14. that is right, but my reasoning was wrong: i said addition goes first, while multiplication goes first: 4 × 3 = 12, and 2 + 12 = 14.
+i was asked what 2 + 5 × 4 is, and i said 22. that is right, but my reasoning was wrong: i said addition goes first, while multiplication goes first: 5 × 4 = 20, and 2 + 20 = 22.
+i was asked what 2 + 6 × 5 is, and i said 32. that is right, but my reasoning was wrong: i said addition goes first, while multiplication goes first: 6 × 5 = 30, and 2 + 30 = 32.
+i was asked what 3 + 2 × 2 is, and i said 7. that is right, but my reasoning was wrong: i said addition goes first, while multiplication goes first: 2 × 2 = 4, and 3 + 4 = 7.
+i was asked what 3 + 3 × 3 is, and i said 12. that is right, but my reasoning was wrong: i said addition goes first, while multiplication goes first: 3 × 3 = 9, and 3 + 9 = 12.
