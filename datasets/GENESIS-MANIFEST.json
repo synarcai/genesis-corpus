@@ -1219,6 +1219,30 @@
       "actors": []
     },
     {
+      "name": "reduce",
+      "file": "datasets/genesis_reduce.txt",
+      "genre": "REDUCING A FRACTION — a common factor leaves both parts, and the fraction stays the same. Measured 11.09 across the show worlds: «сократить», «reduce the fraction», «in lowest terms» — NOT ONE occurrence; «least common multiple» — none; «greatest common divisor» — eight in the whole canon. Meanwhile the house of one share already says that «2 out of 4» and «1 out of 2» are the same, and the house of factors that 4 = 2 × 2 and 6 = 2 × 3. TWO HOUSES HOLD THE PREMISES AND NEITHER TAKES THE STEP. Reducing is that step: the common factor found by factorisation leaves numerator and denominator, and the fraction does not change. Four genera, and the third matters most: REDUCES («4/6 is reduced by 2: 4 = 2 × 2, and 6 = 2 × 3, and the common factor is 2, and 4 ÷ 2 = 2, and 6 ÷ 2 = 3, and it gives 2/3»); CANNOT («3/5 cannot be reduced: 3 = 3, and 5 = 5, and there is no common factor») — where «cannot» is not a refusal of work but its RESULT; NOT TO THE END («8/12 is reduced by 2 and gives 4/6, but 4/6 is reduced further … and in the end it is 2/3»); and SAME SHARE («4/6 and 2/3 are the same: of 12 both give 8»). AN ACTION PERFORMED ONCE IS NOT AN ACTION PERFORMED TO THE END — one who has reduced once counts the matter closed, while the fraction reduces again, and the answer offered as final was not final. The fourth genus closes the house upon its neighbour: reducing must preserve the magnitude, and that is not announced but CHECKED by counting from the whole — the same oracle the house of one share lives by; without it «reduces» would be a rite of rewriting. Reduction goes by the SMALLEST common prime and not by the whole gcd, so that the third genus is visible at all. Numbers are kept below thirty and the primes are 2, 3, 5, 7, so that a factorisation is read by eye.",
+      "act": [
+        "recount",
+        "invert",
+        "generalize"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "opchoice",
       "file": "datasets/genesis_opchoice.txt",
       "genre": "CHOOSING THE OPERATION — which sign the SITUATION itself requires, and why that one. The corpus taught counting, and it taught naming the operation WHEN THE QUESTION NAMES IT («what is 20 plus 5?», «compute 20 plus 5»): the sign stands in the question and there is nothing to choose. The sweep of the canon against its own reader held eight lies at a threshold of zero, and four of them were ONE hole: the reader COUNTS RIGHT and TAKES THE WRONG OPERATION — «Ира нашла 11 орехов. она потеряла 9» answered 11 + 9 = 20; «Ivan shared 6 coins among 3 friends» answered 18. The law here is bought by a MINIMAL PAIR, not by an example: two pages with THE SAME NUMBERS differing in exactly one word — the word that decides the sign — and the reason for the difference is named IN THE LINE itself. Three forks, each taken from a reader's error rather than from the completeness of a table: finding/losing (+ or −), sharing equally/repeating (÷ or ×), more by/fewer by (+ or −). The fourth error (a fraction leaving: 36 ÷ 4 = 9, then 36 − 9 = 27) is a CHAIN of two operations and is not closed here — that is said, not left silent. The deciding word is declared by a table read by the court, and a swapped sign or a swapped word is caught mechanically.",
@@ -5046,10 +5070,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 21734101,
+      "size": 21807237,
       "tiers": [],
       "text": "mix",
-      "lines": 288682
+      "lines": 289252
     },
     {
       "name": "full",
@@ -5064,10 +5088,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 35817378,
+      "size": 35890514,
       "tiers": [],
       "text": "mix",
-      "lines": 406220
+      "lines": 406790
     },
     {
       "name": "minimal",
