@@ -44,7 +44,7 @@ COURTS=("courts/arith_court.py" "courts/algo_court.py"
         "scripts/concept_reach.py"
         "scripts/ask_reach.py" "scripts/band_reach.py" "scripts/biblio_reach.py" "courts/ruverbs_court.py" "courts/script_court.py" "scripts/word_mutants.py" "scripts/verdict_cover.py" "scripts/sentence_cover.py" "scripts/bench_leak.py" "scripts/shelf_court.py" "scripts/ask_width.py" "courts/notationvar_court.py"
         "courts/prosetree_court.py" "courts/longdiv_court.py"
-        "scripts/form_census.py" "scripts/houses_census.py" "scripts/verbthings_court.py"
+        "scripts/form_census.py" "scripts/houses_census.py" "scripts/mass_census.py" "scripts/verbthings_court.py"
         "scripts/coverage.py"
         # ДОМА РАЗГОВОРА И РАССУЖДЕНИЯ (04.09). Их суды жили в палате и стерегли
         # ВОРОТА, но в этом списке не стояли, и потому вердикт «пало 0 из 103»
