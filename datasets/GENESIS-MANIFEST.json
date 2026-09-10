@@ -1314,6 +1314,30 @@
       "actors": []
     },
     {
+      "name": "mulshare",
+      "file": "datasets/genesis_mulshare.txt",
+      "genre": "MULTIPLYING SHARES — multiplication DOES NOT ALWAYS INCREASE, and that is shown by counting. Measured 11.09 across the show worlds: «2/5 × 3», «n × a/b» — NOT ONE occurrence; «a share of a share», «half of a third» — NONE; division by a share — NONE. The house of adding shares already brings them to a common denominator, the house of comparing knows their order, and to multiply two shares nobody can. THE SECOND GENUS IS THE POINT, AND IT RUNS AGAINST HABIT: everywhere multiplication increases; half of a third is a SIXTH — less than both the half and the third. A reader who knows multiplication only on whole numbers expects growth and gets decrease. Four genera: BY A NUMBER («2/5 × 3: the numerator is multiplied and the denominator stays: 2 × 3 = 6, and it gives 6/5») — here it grows; SHARE OF A SHARE («1/2 × 1/3: both numerators and denominators are multiplied … and 1/6 is less than both 1/2 and 1/3») — here it shrinks; ONE («1/3 × 3 … and that is exactly one») — the return to the whole; GREATER («3/4 × 3 … 9 = 4 × 2 + 1»). The first two are a MINIMAL PAIR BY DIRECTION, as «same denominator» and «same numerator» are in the house of comparing, and the difference is visible in one place: whether the DENOMINATOR is multiplied. Multiplied by a whole — the denominator stays and the share grows; multiplied by a share — the denominator grows and the share shrinks. THE DECREASE IS NOT ANNOUNCED BUT SHOWN: «1/6 is less than both 1/2 and 1/3» stands in the line, and the court checks that comparison by cross-multiplication. The third genus closes a circle: a share multiplied by its own denominator gives a whole — and therefore a share is not another breed of number but the same number, only divided. The fourth joins the house to its neighbour: the product runs past the unit, and the split is taken by the same ledger the house of the fraction and the unit lives by. The rows are narrowed by the measure of mass: at a full sweep «share of a share» gave 441 pages against 14 for «exactly one» — a thirtyfold skew, and the house would read as a house of one genus with three appendices.",
+      "act": [
+        "recount",
+        "compare",
+        "generalize"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "opchoice",
       "file": "datasets/genesis_opchoice.txt",
       "genre": "CHOOSING THE OPERATION — which sign the SITUATION itself requires, and why that one. The corpus taught counting, and it taught naming the operation WHEN THE QUESTION NAMES IT («what is 20 plus 5?», «compute 20 plus 5»): the sign stands in the question and there is nothing to choose. The sweep of the canon against its own reader held eight lies at a threshold of zero, and four of them were ONE hole: the reader COUNTS RIGHT and TAKES THE WRONG OPERATION — «Ира нашла 11 орехов. она потеряла 9» answered 11 + 9 = 20; «Ivan shared 6 coins among 3 friends» answered 18. The law here is bought by a MINIMAL PAIR, not by an example: two pages with THE SAME NUMBERS differing in exactly one word — the word that decides the sign — and the reason for the difference is named IN THE LINE itself. Three forks, each taken from a reader's error rather than from the completeness of a table: finding/losing (+ or −), sharing equally/repeating (÷ or ×), more by/fewer by (+ or −). The fourth error (a fraction leaving: 36 ÷ 4 = 9, then 36 − 9 = 27) is a CHAIN of two operations and is not closed here — that is said, not left silent. The deciding word is declared by a table read by the court, and a swapped sign or a swapped word is caught mechanically.",
@@ -5141,10 +5165,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 22139303,
+      "size": 22265933,
       "tiers": [],
       "text": "mix",
-      "lines": 291376
+      "lines": 292186
     },
     {
       "name": "full",
@@ -5159,10 +5183,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 36222580,
+      "size": 36349210,
       "tiers": [],
       "text": "mix",
-      "lines": 408914
+      "lines": 409724
     },
     {
       "name": "minimal",

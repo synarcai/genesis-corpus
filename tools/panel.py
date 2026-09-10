@@ -201,6 +201,7 @@ recache.установить()
            "cmpshare_court",
            "wholeshare_court",
            "addshare_court",
+           "mulshare_court",
            # …и ПОДОБИЕ: аналогия и её ПРОВЕРКА перекрёстным произведением
            "analog_court",
            # …и ОТКЛИК: совет собеседнику, чей закон суд сличает с домом
