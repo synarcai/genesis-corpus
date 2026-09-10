@@ -1291,6 +1291,29 @@
       "actors": []
     },
     {
+      "name": "addshare",
+      "file": "datasets/genesis_addshare.txt",
+      "genre": "ADDING SHARES — shares add only when brought to one denominator. Measured 11.09 across the show worlds: «1/2 + 1/3», «1/3 + 1/4» — NOT ONE occurrence; subtracting shares — NONE; the least common multiple — NONE. Adding shares with the SAME denominator is there (108 lines), and that makes the hole the more dangerous: the easy case is shown and the hard one — where the rule actually lives — is not shown at all. A READER WHO HAS SEEN ONLY «1/5 + 2/5 = 3/5» WILL ADD «1/2 + 1/3» THE SAME WAY AND GET «2/5». A rule shown only where it is not needed teaches one not to know it. Four genera, and the first is here for the sake of the second: SAME («1/5 + 2/5: the denominator is the same, and the NUMERATORS are added: 1 + 2 = 3, and it gives 3/5»); DIFFERENT («1/2 + 1/3: bring them to the common denominator 6: 1 × 3 = 3, and 1 × 2 = 2, and 3 + 2 = 5, and it gives 5/6»); SUBTRACT; GREATER («2/3 + 3/4: … 8 + 9 = 17, and it gives 17/12, and that is greater than one: 17 = 12 × 1 + 5»). The fourth joins the house to its neighbour: a sum of shares often runs past the unit, and without showing this the house would suggest that shares always add up to a share; the split into whole and remainder is taken by the same ledger the house of the fraction and the unit lives by. DENOMINATORS ARE NOT ADDED, AND THAT IS SHOWN RATHER THAN FORBIDDEN: in the first genus one sees the move «numerators are added» with the denominator unchanged; in the second, that the denominators must first be made equal — the prohibition follows from these two pages by itself. Subtraction is written only where the result is positive: negative shares are another house's subject. The common denominator is taken as in the house of comparing shares — the greater if it divides by the smaller, else the product; the least common multiple would be a second law on one page.",
+      "act": [
+        "recount",
+        "generalize"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "opchoice",
       "file": "datasets/genesis_opchoice.txt",
       "genre": "CHOOSING THE OPERATION — which sign the SITUATION itself requires, and why that one. The corpus taught counting, and it taught naming the operation WHEN THE QUESTION NAMES IT («what is 20 plus 5?», «compute 20 plus 5»): the sign stands in the question and there is nothing to choose. The sweep of the canon against its own reader held eight lies at a threshold of zero, and four of them were ONE hole: the reader COUNTS RIGHT and TAKES THE WRONG OPERATION — «Ира нашла 11 орехов. она потеряла 9» answered 11 + 9 = 20; «Ivan shared 6 coins among 3 friends» answered 18. The law here is bought by a MINIMAL PAIR, not by an example: two pages with THE SAME NUMBERS differing in exactly one word — the word that decides the sign — and the reason for the difference is named IN THE LINE itself. Three forks, each taken from a reader's error rather than from the completeness of a table: finding/losing (+ or −), sharing equally/repeating (÷ or ×), more by/fewer by (+ or −). The fourth error (a fraction leaving: 36 ÷ 4 = 9, then 36 − 9 = 27) is a CHAIN of two operations and is not closed here — that is said, not left silent. The deciding word is declared by a table read by the court, and a swapped sign or a swapped word is caught mechanically.",
@@ -5118,10 +5141,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 22046471,
+      "size": 22139303,
       "tiers": [],
       "text": "mix",
-      "lines": 290786
+      "lines": 291376
     },
     {
       "name": "full",
@@ -5136,10 +5159,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 36129748,
+      "size": 36222580,
       "tiers": [],
       "text": "mix",
-      "lines": 408324
+      "lines": 408914
     },
     {
       "name": "minimal",
