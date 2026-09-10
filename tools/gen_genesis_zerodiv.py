@@ -17,7 +17,8 @@ import zerodivforms as F  # noqa: E402
 from layer import emit_grouped, PASSES  # noqa: E402
 
 ЦЕЛЬ = "datasets/genesis_zerodiv.txt"
-ГРУППЫ = (("деление", "ноль сверху"), ("ноль снизу", "ноль на ноль"))
+ГРУППЫ = (("деление", "ноль сверху"), ("ноль снизу", "ноль на ноль"),
+          ("проверка нельзя", "проверка всякое"))
 
 
 def pass_groups(шаг):

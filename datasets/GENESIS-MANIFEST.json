@@ -1002,6 +1002,31 @@
       "actors": []
     },
     {
+      "name": "bound",
+      "file": "datasets/genesis_bound.txt",
+      "genre": "THE BOUND OF A MAGNITUDE — not every valid subtraction is a possible action. Measured 10.09 across all show worlds: the canon holds 997 tasks of the shape «there were N, M were given away», and IN NOT ONE is M greater than N. It carefully avoids the impossible situation and so never teaches it to be RECOGNISED: there is not a single negative count of things, and the words «cannot take», «impossible to give» do not occur at all. THIS IS A DIFFERENT KIND OF REFUSAL THAN DIVISION BY ZERO, and the difference is the point. There the action did not exist at all: no number multiplied by zero gives six. Here the action exists and the arithmetic is right — «12 − 15 = −3» is true in the world of numbers, and the signed world shows it 360 times. But there are never minus three nuts. A MAGNITUDE HAS A BOUND, AND ARITHMETIC DOES NOT KNOW IT. Four genera, all checked by TWO computations — a comparison and a subtraction: POSSIBLE («taking 5 out of 12 is possible: 5 is less than 12, and 7 nuts remain: 12 − 5 = 7»); EXACTLY ALL («taking 12 out of 12 is possible: 12 is not greater than 12, and 0 nuts remain») — the bound shown FROM THE INSIDE, without which the reader may decide that «as many as there are» is forbidden too; IMPOSSIBLE («taking 15 out of 12 is impossible: 15 is greater than 12»); and NUMBER («in numbers 12 − 15 = −3, but there are never −3 nuts, and so taking 15 out of 12 is impossible») — the only genus that says WHY it is impossible while the arithmetic is right. TWO TRUE STATEMENTS MAY CONTRADICT EACH OTHER IF THEY ARE ABOUT DIFFERENT THINGS. The comparison comes BEFORE the action, and that is the whole subject of the house: the first genus does not repeat the story world («there were 12, 5 were given, 7 remain») — it adds the step that world lacks, a check of possibility BEFORE the count; without it the third genus would be a prohibition from nowhere and the fourth a sophism. Things are masculine only and the action impersonal («взяли»): a feminine noun would bend the adjective the house does not declare, and a person would demand verb agreement by gender, which is the subject of other houses. The English verb agrees with the count («1 nut was taken», «3 nuts were taken») — the first draft wrote «were» as a literal and produced «1 nut were taken»; Russian had nothing to agree here, and so the error was visible only in the other language.",
+      "act": [
+        "recount",
+        "compare",
+        "refuse",
+        "generalize"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "opchoice",
       "file": "datasets/genesis_opchoice.txt",
       "genre": "CHOOSING THE OPERATION — which sign the SITUATION itself requires, and why that one. The corpus taught counting, and it taught naming the operation WHEN THE QUESTION NAMES IT («what is 20 plus 5?», «compute 20 plus 5»): the sign stands in the question and there is nothing to choose. The sweep of the canon against its own reader held eight lies at a threshold of zero, and four of them were ONE hole: the reader COUNTS RIGHT and TAKES THE WRONG OPERATION — «Ира нашла 11 орехов. она потеряла 9» answered 11 + 9 = 20; «Ivan shared 6 coins among 3 friends» answered 18. The law here is bought by a MINIMAL PAIR, not by an example: two pages with THE SAME NUMBERS differing in exactly one word — the word that decides the sign — and the reason for the difference is named IN THE LINE itself. Three forks, each taken from a reader's error rather than from the completeness of a table: finding/losing (+ or −), sharing equally/repeating (÷ or ×), more by/fewer by (+ or −). The fourth error (a fraction leaving: 36 ÷ 4 = 9, then 36 − 9 = 27) is a CHAIN of two operations and is not closed here — that is said, not left silent. The deciding word is declared by a table read by the court, and a swapped sign or a swapped word is caught mechanically.",
@@ -4829,10 +4854,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 21358044,
+      "size": 21396614,
       "tiers": [],
       "text": "mix",
-      "lines": 286086
+      "lines": 286372
     },
     {
       "name": "full",
@@ -4847,10 +4872,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 35441321,
+      "size": 35479891,
       "tiers": [],
       "text": "mix",
-      "lines": 403624
+      "lines": 403910
     },
     {
       "name": "minimal",
