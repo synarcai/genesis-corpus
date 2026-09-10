@@ -1195,6 +1195,30 @@
       "actors": []
     },
     {
+      "name": "divrule",
+      "file": "datasets/genesis_divrule.txt",
+      "genre": "RULES OF DIVISIBILITY — to know a divisor WITHOUT DIVIDING, and to check it by dividing on the same page. Measured 11.09 across the show worlds: «делится на 3, когда» occurs 160 times (the inquiry world), while «делится на 5, когда», «на 9», «на 10», «на 4» occur NONE each; the last digit as a sign is mentioned TWICE in the whole canon. A RULE SHOWN IN ONE CASE OUT OF SIX READS AS A PECULIARITY OF THREE AND NOT AS A GENUS. Yet the signs are of three KINDS and are built differently: one looks at the TAIL of the number, another at the SUM of its digits, a third at a tail of TWO digits. Six genera — three kinds, each with its own yes and its own no: TAIL YES («250 is divisible by 5, because the last digit is 0, and a number is divisible by 5 when its last digit is 0 or 5: 250 ÷ 5 = 50»); TAIL NO («117 is not divisible by 2 … 117 = 2 × 58 + 1»); SUM YES («117 is divisible by 9, because the digit sum 1 + 1 + 7 = 9, and 9 is divisible by 9»); SUM NO; PAIR YES («116 is divisible by 4, because the last two digits give 16»); PAIR NO. THE RULE AND ITS CHECK STAND ON ONE PAGE, and therein lies the whole house: a rule saves labour, but it is no incantation — beside it stands the division that confirms it. A RULE SHOWN WITHOUT A CHECK IS REMEMBERED AS A CUSTOM; SHOWN WITH ONE, AS A CONSEQUENCE. The three kinds are taken not for the completeness of a table but because they are DIFFERENTLY BUILT: showing only the tail, the house would teach that a sign always lies in the last digit. The refusal is shown BY A REMAINDER and not by a word alone. The numbers are taken FROM THE DIVISORS — twelve multiples and twelve non-multiples for each — and that was bought by the measure of mass: the first draft took every number from 102 to 259 and gave 1896 pages with a threefold skew (349 refusals against 125 assents, for in the nature of numbers misses are indeed more common), and the genus «pair yes» gathered SIX pages, fewer than nine, that is UNBUYABLE. A HOUSE WHERE REFUSALS ARE THRICE THE ASSENTS TEACHES CAUTION INSTEAD OF A RULE.",
+      "act": [
+        "recount",
+        "decide",
+        "generalize"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "opchoice",
       "file": "datasets/genesis_opchoice.txt",
       "genre": "CHOOSING THE OPERATION — which sign the SITUATION itself requires, and why that one. The corpus taught counting, and it taught naming the operation WHEN THE QUESTION NAMES IT («what is 20 plus 5?», «compute 20 plus 5»): the sign stands in the question and there is nothing to choose. The sweep of the canon against its own reader held eight lies at a threshold of zero, and four of them were ONE hole: the reader COUNTS RIGHT and TAKES THE WRONG OPERATION — «Ира нашла 11 орехов. она потеряла 9» answered 11 + 9 = 20; «Ivan shared 6 coins among 3 friends» answered 18. The law here is bought by a MINIMAL PAIR, not by an example: two pages with THE SAME NUMBERS differing in exactly one word — the word that decides the sign — and the reason for the difference is named IN THE LINE itself. Three forks, each taken from a reader's error rather than from the completeness of a table: finding/losing (+ or −), sharing equally/repeating (÷ or ×), more by/fewer by (+ or −). The fourth error (a fraction leaving: 36 ÷ 4 = 9, then 36 − 9 = 27) is a CHAIN of two operations and is not closed here — that is said, not left silent. The deciding word is declared by a table read by the court, and a swapped sign or a swapped word is caught mechanically.",
@@ -5022,10 +5046,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 21650377,
+      "size": 21734101,
       "tiers": [],
       "text": "mix",
-      "lines": 288082
+      "lines": 288682
     },
     {
       "name": "full",
@@ -5040,10 +5064,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 35733654,
+      "size": 35817378,
       "tiers": [],
       "text": "mix",
-      "lines": 405620
+      "lines": 406220
     },
     {
       "name": "minimal",
