@@ -4,75 +4,75 @@
 {"id": "ho0004", "ask": "what is 7 or 3?", "expect": {"kind": "value", "n": 7}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
 {"id": "ho0005", "ask": "what is 60 and 15?", "expect": {"kind": "value", "n": 12}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
 {"id": "ho0006", "ask": "what is 100 in hex?", "expect": {"kind": "value", "n": 64}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
-{"id": "ho0007", "ask": "what is 88 shifted right by 3?", "expect": {"kind": "value", "n": 11}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
+{"id": "ho0007", "ask": "what is 44 shifted right by 2?", "expect": {"kind": "value", "n": 11}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
 {"id": "ho0008", "ask": "what is 31 in binary?", "expect": {"kind": "value", "n": 11111}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
-{"id": "ho0009", "ask": "what is 100 xor 36?", "expect": {"kind": "value", "n": 64}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
-{"id": "ho0010", "ask": "what is 2 shifted left by 5?", "expect": {"kind": "value", "n": 64}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
-{"id": "ho0011", "ask": "what is 255 in octal?", "expect": {"kind": "value", "n": 377}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
-{"id": "ho0012", "ask": "what is 17 shifted left by 2?", "expect": {"kind": "value", "n": 68}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
-{"id": "ho0013", "ask": "what is 12 in octal?", "expect": {"kind": "value", "n": 14}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
-{"id": "ho0014", "ask": "what is 13 shifted left by 2?", "expect": {"kind": "value", "n": 52}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
-{"id": "ho0015", "ask": "what is 9 in octal?", "expect": {"kind": "value", "n": 11}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
-{"id": "ho0016", "ask": "чему равно 19 по модулю 6?", "expect": {"kind": "value", "n": 1}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
-{"id": "ho0017", "ask": "чему равно 40 по модулю 6?", "expect": {"kind": "value", "n": 4}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
-{"id": "ho0018", "ask": "чему равно 61 по модулю 6?", "expect": {"kind": "value", "n": 1}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
-{"id": "ho0019", "ask": "чему равно 10 по модулю 3?", "expect": {"kind": "value", "n": 1}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
-{"id": "ho0020", "ask": "чему равно 31 по модулю 3?", "expect": {"kind": "value", "n": 1}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
-{"id": "ho0021", "ask": "чему равно 52 по модулю 3?", "expect": {"kind": "value", "n": 1}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
-{"id": "ho0022", "ask": "чему равно 73 по модулю 3?", "expect": {"kind": "value", "n": 1}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
-{"id": "ho0023", "ask": "чему равно 22 по модулю 7?", "expect": {"kind": "value", "n": 1}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
-{"id": "ho0024", "ask": "чему равно 43 по модулю 7?", "expect": {"kind": "value", "n": 1}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
-{"id": "ho0025", "ask": "чему равно 64 по модулю 7?", "expect": {"kind": "value", "n": 1}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
-{"id": "ho0026", "ask": "чему равно 13 по модулю 4?", "expect": {"kind": "value", "n": 1}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
-{"id": "ho0027", "ask": "чему равно 34 по модулю 4?", "expect": {"kind": "value", "n": 2}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
+{"id": "ho0009", "ask": "what is 70 xor 6?", "expect": {"kind": "value", "n": 64}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
+{"id": "ho0010", "ask": "what is 2 shifted left by 4?", "expect": {"kind": "value", "n": 32}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
+{"id": "ho0011", "ask": "what is 255 in binary?", "expect": {"kind": "value", "n": 11111111}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
+{"id": "ho0012", "ask": "what is 544 shifted right by 5?", "expect": {"kind": "value", "n": 17}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
+{"id": "ho0013", "ask": "what is 14 or 9?", "expect": {"kind": "value", "n": 15}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
+{"id": "ho0014", "ask": "what is 22 xor 15?", "expect": {"kind": "value", "n": 25}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
+{"id": "ho0015", "ask": "what is 12 and 10?", "expect": {"kind": "value", "n": 8}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
+{"id": "ho0016", "ask": "what is tell me whether 1 is prime. 1 is neither prime nor composite: its only divisor?", "expect": {"kind": "value", "n": 1}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
+{"id": "ho0017", "ask": "чему равно 13 и 18 не сравнимы по модулю 4: 13 по модулю 4 равно 1, 18 по модулю 4?", "expect": {"kind": "value", "n": 2}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
+{"id": "ho0018", "ask": "чему равно 22 по модулю 7?", "expect": {"kind": "value", "n": 1}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
+{"id": "ho0019", "ask": "чему равно 34 и 7 не сравнимы по модулю 4: 34 по модулю 4 равно 2, 7 по модулю 4?", "expect": {"kind": "value", "n": 3}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
+{"id": "ho0020", "ask": "чему равно 43 по модулю 7?", "expect": {"kind": "value", "n": 1}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
+{"id": "ho0021", "ask": "чему равно 55 и 10 не сравнимы по модулю 4: 55 по модулю 4 равно 3, 10 по модулю 4?", "expect": {"kind": "value", "n": 2}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
+{"id": "ho0022", "ask": "чему равно 64 по модулю 7?", "expect": {"kind": "value", "n": 1}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
+{"id": "ho0023", "ask": "чему равно 76 и 13 не сравнимы по модулю 4: 76 по модулю 4 равно 0, 13 по модулю 4?", "expect": {"kind": "value", "n": 1}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
+{"id": "ho0024", "ask": "чему равно 13 по модулю 4?", "expect": {"kind": "value", "n": 1}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
+{"id": "ho0025", "ask": "чему равно 25 и 10 не сравнимы по модулю 8: 25 по модулю 8 равно 1, 10 по модулю 8?", "expect": {"kind": "value", "n": 2}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
+{"id": "ho0026", "ask": "чему равно 34 по модулю 4?", "expect": {"kind": "value", "n": 2}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
+{"id": "ho0027", "ask": "чему равно 46 и 23 не сравнимы по модулю 8: 46 по модулю 8 равно 6, 23 по модулю 8?", "expect": {"kind": "value", "n": 7}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
 {"id": "ho0028", "ask": "чему равно 55 по модулю 4?", "expect": {"kind": "value", "n": 3}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
-{"id": "ho0029", "ask": "чему равно 76 по модулю 4?", "expect": {"kind": "value", "n": 0}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
-{"id": "ho0030", "ask": "чему равно 25 по модулю 8?", "expect": {"kind": "value", "n": 1}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
-{"id": "ho0031", "ask": "чему равно 9 в степени 3?", "expect": {"kind": "value", "n": 729}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
-{"id": "ho0032", "ask": "чему равно 32 в степени 3?", "expect": {"kind": "value", "n": 32768}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
-{"id": "ho0033", "ask": "чему равно 27 в степени 2?", "expect": {"kind": "value", "n": 729}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
-{"id": "ho0034", "ask": "чему равно 4 в степени 5?", "expect": {"kind": "value", "n": 1024}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
-{"id": "ho0035", "ask": "чему равно 16 в степени 2?", "expect": {"kind": "value", "n": 256}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
-{"id": "ho0036", "ask": "чему равно 36 в степени 2?", "expect": {"kind": "value", "n": 1296}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
-{"id": "ho0037", "ask": "чему равно 8 в степени 4?", "expect": {"kind": "value", "n": 4096}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
-{"id": "ho0038", "ask": "чему равно 100 в степени 2?", "expect": {"kind": "value", "n": 10000}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
-{"id": "ho0039", "ask": "чему равно 16 в степени 3?", "expect": {"kind": "value", "n": 4096}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
-{"id": "ho0040", "ask": "чему равно 25 в степени 2?", "expect": {"kind": "value", "n": 625}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
-{"id": "ho0041", "ask": "чему равно 27 в степени 2?", "expect": {"kind": "value", "n": 729}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
-{"id": "ho0042", "ask": "чему равно 100 в степени 2?", "expect": {"kind": "value", "n": 10000}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
-{"id": "ho0043", "ask": "чему равно 32 в степени 3?", "expect": {"kind": "value", "n": 32768}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
-{"id": "ho0044", "ask": "чему равно 36 в степени 2?", "expect": {"kind": "value", "n": 1296}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
-{"id": "ho0045", "ask": "чему равно 8 в степени 4?", "expect": {"kind": "value", "n": 4096}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
-{"id": "ho0046", "ask": "чему равен член номер 5 прогрессии от 2 с шагом 2?", "expect": {"kind": "value", "n": 10}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
-{"id": "ho0047", "ask": "чему равна сумма 4 8 12 16?", "expect": {"kind": "value", "n": 40}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
-{"id": "ho0048", "ask": "what is term number 5 of the progression from 5 with step 5?", "expect": {"kind": "value", "n": 25}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
-{"id": "ho0049", "ask": "what is the sum of 7 9 11 13?", "expect": {"kind": "value", "n": 40}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
-{"id": "ho0050", "ask": "чему равен член номер 5 прогрессии от 9 с шагом 4?", "expect": {"kind": "value", "n": 25}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
-{"id": "ho0051", "ask": "чему равна сумма 11 17 23 29?", "expect": {"kind": "value", "n": 80}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
-{"id": "ho0052", "ask": "what is term number 5 of the progression from 12 with step 2?", "expect": {"kind": "value", "n": 20}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
-{"id": "ho0053", "ask": "what is the sum of 14 18 22 26?", "expect": {"kind": "value", "n": 80}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
-{"id": "ho0054", "ask": "чему равен член номер 5 прогрессии от 16 с шагом 6?", "expect": {"kind": "value", "n": 40}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
-{"id": "ho0055", "ask": "чему равна сумма 18 21 24 27?", "expect": {"kind": "value", "n": 90}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
-{"id": "ho0056", "ask": "what is term number 5 of the progression from 19 with step 4?", "expect": {"kind": "value", "n": 35}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
-{"id": "ho0057", "ask": "what is the sum of 21 27 33 39?", "expect": {"kind": "value", "n": 120}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
-{"id": "ho0058", "ask": "чему равен член номер 5 прогрессии от 23 с шагом 3?", "expect": {"kind": "value", "n": 35}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
-{"id": "ho0059", "ask": "чему равна сумма 25 30 35 40?", "expect": {"kind": "value", "n": 130}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
-{"id": "ho0060", "ask": "what is term number 5 of the progression from 2 with step 2?", "expect": {"kind": "value", "n": 10}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
+{"id": "ho0029", "ask": "чему равно 67 и 28 не сравнимы по модулю 8: 67 по модулю 8 равно 3, 28 по модулю 8?", "expect": {"kind": "value", "n": 4}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
+{"id": "ho0030", "ask": "чему равно 76 по модулю 4?", "expect": {"kind": "value", "n": 0}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
+{"id": "ho0031", "ask": "чему равно 8 в степени 4?", "expect": {"kind": "value", "n": 4096}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
+{"id": "ho0032", "ask": "чему равно 9 в степени 3?", "expect": {"kind": "value", "n": 729}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
+{"id": "ho0033", "ask": "чему равно 16807 в степени 3?", "expect": {"kind": "value", "n": 4747561509943}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
+{"id": "ho0034", "ask": "чему равно 100 в степени 5?", "expect": {"kind": "value", "n": 10000000000}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
+{"id": "ho0035", "ask": "чему равно 625 в степени 2?", "expect": {"kind": "value", "n": 390625}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
+{"id": "ho0036", "ask": "чему равно 5 в степени 2?", "expect": {"kind": "value", "n": 25}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
+{"id": "ho0037", "ask": "чему равно 4 в степени 4?", "expect": {"kind": "value", "n": 256}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
+{"id": "ho0038", "ask": "чему равно 216 в степени 2?", "expect": {"kind": "value", "n": 46656}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
+{"id": "ho0039", "ask": "чему равно 16 в степени 2?", "expect": {"kind": "value", "n": 256}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
+{"id": "ho0040", "ask": "чему равно 27 в степени 3?", "expect": {"kind": "value", "n": 19683}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
+{"id": "ho0041", "ask": "чему равно 125 в степени 2?", "expect": {"kind": "value", "n": 15625}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
+{"id": "ho0042", "ask": "чему равно 1024 в степени 3?", "expect": {"kind": "value", "n": 1073741824}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
+{"id": "ho0043", "ask": "чему равно 100 в степени 4?", "expect": {"kind": "value", "n": 100000000}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
+{"id": "ho0044", "ask": "чему равно 216 в степени 3?", "expect": {"kind": "value", "n": 10077696}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
+{"id": "ho0045", "ask": "чему равно 256 в степени 3?", "expect": {"kind": "value", "n": 16777216}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
+{"id": "ho0046", "ask": "чему равна производная t^2 в точке 1?", "expect": {"kind": "value", "n": 2}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
+{"id": "ho0047", "ask": "what is for f(t) = t^2 the change from 2 to 3?", "expect": {"kind": "value", "n": 5}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
+{"id": "ho0048", "ask": "чему равна производная t^3 в точке 3?", "expect": {"kind": "value", "n": 27}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
+{"id": "ho0049", "ask": "what is the derivative of t^2 at 4?", "expect": {"kind": "value", "n": 8}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
+{"id": "ho0050", "ask": "чему равно для f(t) = t^2 изменение от 6 до 7?", "expect": {"kind": "value", "n": 13}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
+{"id": "ho0051", "ask": "what is the derivative of t^3 at 6?", "expect": {"kind": "value", "n": 108}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
+{"id": "ho0052", "ask": "чему равна производная t^2 в точке 8?", "expect": {"kind": "value", "n": 16}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
+{"id": "ho0053", "ask": "what is for f(t) = t^2 the change from 1 to 2?", "expect": {"kind": "value", "n": 3}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
+{"id": "ho0054", "ask": "чему равна производная t^3 в точке 2?", "expect": {"kind": "value", "n": 12}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
+{"id": "ho0055", "ask": "what is the derivative of t^2 at 3?", "expect": {"kind": "value", "n": 6}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
+{"id": "ho0056", "ask": "чему равно для f(t) = t^2 изменение от 5 до 6?", "expect": {"kind": "value", "n": 11}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
+{"id": "ho0057", "ask": "what is the derivative of t^3 at 5?", "expect": {"kind": "value", "n": 75}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
+{"id": "ho0058", "ask": "чему равна производная t^2 в точке 7?", "expect": {"kind": "value", "n": 14}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
+{"id": "ho0059", "ask": "what is for f(t) = t^2 the change from 8 to 9?", "expect": {"kind": "value", "n": 17}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
+{"id": "ho0060", "ask": "чему равна производная t^3 в точке 1?", "expect": {"kind": "value", "n": 3}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
 {"id": "ho0061", "ask": "чему равна медиана 1 3 7?", "expect": {"kind": "value", "n": 3}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
-{"id": "ho0062", "ask": "what is the mean of 4 8?", "expect": {"kind": "value", "n": 6}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
-{"id": "ho0063", "ask": "чему равно среднее 2 2 8?", "expect": {"kind": "value", "n": 4}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
-{"id": "ho0064", "ask": "what is the range of 10 1 6?", "expect": {"kind": "value", "n": 9}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
-{"id": "ho0065", "ask": "чему равен размах 7 3 3?", "expect": {"kind": "value", "n": 4}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
-{"id": "ho0066", "ask": "what is the median of 9 9 1?", "expect": {"kind": "value", "n": 9}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
-{"id": "ho0067", "ask": "чему равна медиана 6 2 4?", "expect": {"kind": "value", "n": 4}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
-{"id": "ho0068", "ask": "what is the mean of 1 3 5?", "expect": {"kind": "value", "n": 3}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
-{"id": "ho0069", "ask": "чему равно среднее 4 8?", "expect": {"kind": "value", "n": 6}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
-{"id": "ho0070", "ask": "what is the range of 4 4 8?", "expect": {"kind": "value", "n": 4}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
-{"id": "ho0071", "ask": "чему равен размах 10 1 6?", "expect": {"kind": "value", "n": 9}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
-{"id": "ho0072", "ask": "what is the median of 2 8 5?", "expect": {"kind": "value", "n": 5}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
-{"id": "ho0073", "ask": "чему равна медиана 9 9 1?", "expect": {"kind": "value", "n": 9}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
-{"id": "ho0074", "ask": "what is the mean of 2 4 6?", "expect": {"kind": "value", "n": 4}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
-{"id": "ho0075", "ask": "чему равно среднее 1 3 5?", "expect": {"kind": "value", "n": 3}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
+{"id": "ho0062", "ask": "чему равно среднее 4 8?", "expect": {"kind": "value", "n": 6}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
+{"id": "ho0063", "ask": "what is the range of 4 4 8?", "expect": {"kind": "value", "n": 4}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
+{"id": "ho0064", "ask": "чему равна медиана 7 3 3?", "expect": {"kind": "value", "n": 3}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
+{"id": "ho0065", "ask": "what is the mean of 3 9?", "expect": {"kind": "value", "n": 6}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
+{"id": "ho0066", "ask": "чему равен размах 9 9 1?", "expect": {"kind": "value", "n": 8}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
+{"id": "ho0067", "ask": "what is the median of 6 2 4?", "expect": {"kind": "value", "n": 4}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
+{"id": "ho0068", "ask": "what is the mean of 2 4 6?", "expect": {"kind": "value", "n": 4}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
+{"id": "ho0069", "ask": "чему равен размах 4 4 8?", "expect": {"kind": "value", "n": 4}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
+{"id": "ho0070", "ask": "what is the median of 10 1 6?", "expect": {"kind": "value", "n": 6}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
+{"id": "ho0071", "ask": "чему равно среднее 3 9?", "expect": {"kind": "value", "n": 6}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
+{"id": "ho0072", "ask": "what is the range of 2 8 5?", "expect": {"kind": "value", "n": 6}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
+{"id": "ho0073", "ask": "чему равна медиана 6 2 4?", "expect": {"kind": "value", "n": 4}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
+{"id": "ho0074", "ask": "what is the mean of 2 2 8?", "expect": {"kind": "value", "n": 4}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
+{"id": "ho0075", "ask": "чему равно среднее 2 4 6?", "expect": {"kind": "value", "n": 4}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
 {"id": "ho0076", "ask": "чему равна сумма первых 2 нечётных чисел?", "expect": {"kind": "value", "n": 4}, "tags": ["held_out_form:false", "genus:genesis_inquiry", "source:corpus"]}
 {"id": "ho0077", "ask": "what is the sum of the first 6 odd numbers?", "expect": {"kind": "value", "n": 36}, "tags": ["held_out_form:false", "genus:genesis_inquiry", "source:corpus"]}
 {"id": "ho0078", "ask": "чему равна сумма первых 9 нечётных чисел?", "expect": {"kind": "value", "n": 81}, "tags": ["held_out_form:false", "genus:genesis_inquiry", "source:corpus"]}
@@ -138,63 +138,63 @@
 {"id": "ho0138", "ask": "what is the distance between C and D in the space of the declared graph?", "expect": {"kind": "value", "n": 1}, "tags": ["held_out_form:false", "genus:genesis_relation", "source:corpus"]}
 {"id": "ho0139", "ask": "what is the distance between D and E in the space of the declared graph?", "expect": {"kind": "value", "n": 2}, "tags": ["held_out_form:false", "genus:genesis_relation", "source:corpus"]}
 {"id": "ho0140", "ask": "what is the distance between E and F in the space of the declared graph?", "expect": {"kind": "value", "n": 1}, "tags": ["held_out_form:false", "genus:genesis_relation", "source:corpus"]}
-{"id": "ho0141", "ask": "is 60 a prime number?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
-{"id": "ho0142", "ask": "is 95 a prime number?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
-{"id": "ho0143", "ask": "is 50 a prime number?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
-{"id": "ho0144", "ask": "is 85 a prime number?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
-{"id": "ho0145", "ask": "is 40 a prime number?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
-{"id": "ho0146", "ask": "is 75 a prime number?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
-{"id": "ho0147", "ask": "is 65 a prime number?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
-{"id": "ho0148", "ask": "is 100 a prime number?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
-{"id": "ho0149", "ask": "is 55 a prime number?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
-{"id": "ho0150", "ask": "is 90 a prime number?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
-{"id": "ho0151", "ask": "is 45 a prime number?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
-{"id": "ho0152", "ask": "is 80 a prime number?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
-{"id": "ho0153", "ask": "is 70 a prime number?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
-{"id": "ho0154", "ask": "is 105 a prime number?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
-{"id": "ho0155", "ask": "is 136 divisible by 7?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:divisibility", "source:inverted"]}
-{"id": "ho0156", "ask": "is 199 divisible by 6?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:divisibility", "source:inverted"]}
-{"id": "ho0157", "ask": "is 118 divisible by 5?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:divisibility", "source:inverted"]}
-{"id": "ho0158", "ask": "is 181 divisible by 4?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:divisibility", "source:inverted"]}
-{"id": "ho0159", "ask": "is 100 divisible by 3?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:divisibility", "source:inverted"]}
-{"id": "ho0160", "ask": "is 163 divisible by 10?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:divisibility", "source:inverted"]}
-{"id": "ho0161", "ask": "is 145 divisible by 8?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:divisibility", "source:inverted"]}
-{"id": "ho0162", "ask": "is 208 divisible by 7?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:divisibility", "source:inverted"]}
-{"id": "ho0163", "ask": "is 127 divisible by 6?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:divisibility", "source:inverted"]}
+{"id": "ho0141", "ask": "is 55 a prime number?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
+{"id": "ho0142", "ask": "is 101 a prime number?", "expect": {"kind": "verdict", "v": "yes"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
+{"id": "ho0143", "ask": "is 83 a prime number?", "expect": {"kind": "verdict", "v": "yes"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
+{"id": "ho0144", "ask": "is 61 a prime number?", "expect": {"kind": "verdict", "v": "yes"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
+{"id": "ho0145", "ask": "is 105 a prime number?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
+{"id": "ho0146", "ask": "is 41 a prime number?", "expect": {"kind": "verdict", "v": "yes"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
+{"id": "ho0147", "ask": "is 85 a prime number?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
+{"id": "ho0148", "ask": "is 65 a prime number?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
+{"id": "ho0149", "ask": "is 45 a prime number?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
+{"id": "ho0150", "ask": "is 97 a prime number?", "expect": {"kind": "verdict", "v": "yes"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
+{"id": "ho0151", "ask": "is 71 a prime number?", "expect": {"kind": "verdict", "v": "yes"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
+{"id": "ho0152", "ask": "is 53 a prime number?", "expect": {"kind": "verdict", "v": "yes"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
+{"id": "ho0153", "ask": "is 95 a prime number?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
+{"id": "ho0154", "ask": "is 75 a prime number?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
+{"id": "ho0155", "ask": "is 127 divisible by 6?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:divisibility", "source:inverted"]}
+{"id": "ho0156", "ask": "is 208 divisible by 7?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:divisibility", "source:inverted"]}
+{"id": "ho0157", "ask": "is 172 divisible by 3?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:divisibility", "source:inverted"]}
+{"id": "ho0158", "ask": "is 136 divisible by 7?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:divisibility", "source:inverted"]}
+{"id": "ho0159", "ask": "is 217 divisible by 8?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:divisibility", "source:inverted"]}
+{"id": "ho0160", "ask": "is 100 divisible by 3?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:divisibility", "source:inverted"]}
+{"id": "ho0161", "ask": "is 181 divisible by 4?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:divisibility", "source:inverted"]}
+{"id": "ho0162", "ask": "is 145 divisible by 8?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:divisibility", "source:inverted"]}
+{"id": "ho0163", "ask": "is 109 divisible by 4?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:divisibility", "source:inverted"]}
 {"id": "ho0164", "ask": "is 190 divisible by 5?", "expect": {"kind": "verdict", "v": "yes"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:divisibility", "source:inverted"]}
-{"id": "ho0165", "ask": "is 109 divisible by 4?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:divisibility", "source:inverted"]}
-{"id": "ho0166", "ask": "is 172 divisible by 3?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:divisibility", "source:inverted"]}
-{"id": "ho0167", "ask": "is 154 divisible by 9?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:divisibility", "source:inverted"]}
-{"id": "ho0168", "ask": "is 217 divisible by 8?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:divisibility", "source:inverted"]}
-{"id": "ho0169", "ask": "if n is even, is n + 2 even?", "expect": {"kind": "verdict", "v": "yes"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:conditional", "source:inverted"]}
-{"id": "ho0170", "ask": "if n is even, is n + 9 even?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:conditional", "source:inverted"]}
-{"id": "ho0171", "ask": "if n is even, is n + 3 even?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:conditional", "source:inverted"]}
-{"id": "ho0172", "ask": "if n is even, is n + 1 even?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:conditional", "source:inverted"]}
-{"id": "ho0173", "ask": "if n is even, is n + 4 even?", "expect": {"kind": "verdict", "v": "yes"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:conditional", "source:inverted"]}
-{"id": "ho0174", "ask": "if n is even, is n + 5 even?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:conditional", "source:inverted"]}
-{"id": "ho0175", "ask": "if n is even, is n + 6 even?", "expect": {"kind": "verdict", "v": "yes"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:conditional", "source:inverted"]}
-{"id": "ho0176", "ask": "if n is even, is n + 7 even?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:conditional", "source:inverted"]}
-{"id": "ho0177", "ask": "if n is even, is n + 1 even?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:conditional", "source:inverted"]}
-{"id": "ho0178", "ask": "if n is even, is n + 8 even?", "expect": {"kind": "verdict", "v": "yes"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:conditional", "source:inverted"]}
+{"id": "ho0165", "ask": "is 154 divisible by 9?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:divisibility", "source:inverted"]}
+{"id": "ho0166", "ask": "is 118 divisible by 5?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:divisibility", "source:inverted"]}
+{"id": "ho0167", "ask": "is 199 divisible by 6?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:divisibility", "source:inverted"]}
+{"id": "ho0168", "ask": "is 163 divisible by 10?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:divisibility", "source:inverted"]}
+{"id": "ho0169", "ask": "if n is even, is n + 4 even?", "expect": {"kind": "verdict", "v": "yes"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:conditional", "source:inverted"]}
+{"id": "ho0170", "ask": "if n is even, is n + 5 even?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:conditional", "source:inverted"]}
+{"id": "ho0171", "ask": "if n is even, is n + 6 even?", "expect": {"kind": "verdict", "v": "yes"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:conditional", "source:inverted"]}
+{"id": "ho0172", "ask": "if n is even, is n + 7 even?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:conditional", "source:inverted"]}
+{"id": "ho0173", "ask": "if n is even, is n + 1 even?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:conditional", "source:inverted"]}
+{"id": "ho0174", "ask": "if n is even, is n + 8 even?", "expect": {"kind": "verdict", "v": "yes"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:conditional", "source:inverted"]}
+{"id": "ho0175", "ask": "if n is even, is n + 2 even?", "expect": {"kind": "verdict", "v": "yes"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:conditional", "source:inverted"]}
+{"id": "ho0176", "ask": "if n is even, is n + 9 even?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:conditional", "source:inverted"]}
+{"id": "ho0177", "ask": "if n is even, is n + 3 even?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:conditional", "source:inverted"]}
+{"id": "ho0178", "ask": "if n is even, is n + 1 even?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:conditional", "source:inverted"]}
 {"id": "ho0179", "ask": "is f(x) = x × 1 injective on 1, 2, 3?", "expect": {"kind": "verdict", "v": "yes"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:injectivity", "source:inverted"]}
 {"id": "ho0180", "ask": "is f(x) = x × 2 injective on 1, 2, 3?", "expect": {"kind": "verdict", "v": "yes"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:injectivity", "source:inverted"]}
-{"id": "ho0181", "ask": "is f(x) = x × 2 injective on 1, 2, 3?", "expect": {"kind": "verdict", "v": "yes"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:injectivity", "source:inverted"]}
-{"id": "ho0182", "ask": "is f(x) = x × 3 injective on 1, 2, 3?", "expect": {"kind": "verdict", "v": "yes"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:injectivity", "source:inverted"]}
-{"id": "ho0183", "ask": "is f(x) = x × 3 injective on 1, 2, 3?", "expect": {"kind": "verdict", "v": "yes"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:injectivity", "source:inverted"]}
-{"id": "ho0184", "ask": "is f(x) = x × 4 injective on 1, 2, 3?", "expect": {"kind": "verdict", "v": "yes"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:injectivity", "source:inverted"]}
-{"id": "ho0185", "ask": "is f(x) = x × 5 injective on 1, 2, 3?", "expect": {"kind": "verdict", "v": "yes"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:injectivity", "source:inverted"]}
-{"id": "ho0186", "ask": "is f(x) = x × 0 injective on 1, 2, 3?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:injectivity", "source:inverted"]}
-{"id": "ho0187", "ask": "is f(x) = x × 0 injective on 1, 2, 3?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:injectivity", "source:inverted"]}
-{"id": "ho0188", "ask": "is f(x) = x × 1 injective on 1, 2, 3?", "expect": {"kind": "verdict", "v": "yes"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:injectivity", "source:inverted"]}
-{"id": "ho0189", "ask": "is 67 a prime number?", "expect": {"kind": "verdict", "v": "yes"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
-{"id": "ho0190", "ask": "is 52 a prime number?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
-{"id": "ho0191", "ask": "is 107 a prime number?", "expect": {"kind": "verdict", "v": "yes"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
-{"id": "ho0192", "ask": "is 92 a prime number?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
-{"id": "ho0193", "ask": "is 77 a prime number?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
-{"id": "ho0194", "ask": "is 62 a prime number?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
-{"id": "ho0195", "ask": "is 47 a prime number?", "expect": {"kind": "verdict", "v": "yes"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
-{"id": "ho0196", "ask": "is 102 a prime number?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
-{"id": "ho0197", "ask": "is 87 a prime number?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
-{"id": "ho0198", "ask": "is 72 a prime number?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
-{"id": "ho0199", "ask": "is 57 a prime number?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
-{"id": "ho0200", "ask": "is 112 a prime number?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
+{"id": "ho0181", "ask": "is f(x) = x × 4 injective on 1, 2, 3?", "expect": {"kind": "verdict", "v": "yes"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:injectivity", "source:inverted"]}
+{"id": "ho0182", "ask": "is f(x) = x × 0 injective on 1, 2, 3?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:injectivity", "source:inverted"]}
+{"id": "ho0183", "ask": "is f(x) = x × 1 injective on 1, 2, 3?", "expect": {"kind": "verdict", "v": "yes"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:injectivity", "source:inverted"]}
+{"id": "ho0184", "ask": "is f(x) = x × 3 injective on 1, 2, 3?", "expect": {"kind": "verdict", "v": "yes"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:injectivity", "source:inverted"]}
+{"id": "ho0185", "ask": "is f(x) = x × 0 injective on 1, 2, 3?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:injectivity", "source:inverted"]}
+{"id": "ho0186", "ask": "is f(x) = x × 2 injective on 1, 2, 3?", "expect": {"kind": "verdict", "v": "yes"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:injectivity", "source:inverted"]}
+{"id": "ho0187", "ask": "is f(x) = x × 3 injective on 1, 2, 3?", "expect": {"kind": "verdict", "v": "yes"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:injectivity", "source:inverted"]}
+{"id": "ho0188", "ask": "is f(x) = x × 5 injective on 1, 2, 3?", "expect": {"kind": "verdict", "v": "yes"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:injectivity", "source:inverted"]}
+{"id": "ho0189", "ask": "is 92 a prime number?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
+{"id": "ho0190", "ask": "is 79 a prime number?", "expect": {"kind": "verdict", "v": "yes"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
+{"id": "ho0191", "ask": "is 62 a prime number?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
+{"id": "ho0192", "ask": "is 47 a prime number?", "expect": {"kind": "verdict", "v": "yes"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
+{"id": "ho0193", "ask": "is 102 a prime number?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
+{"id": "ho0194", "ask": "is 89 a prime number?", "expect": {"kind": "verdict", "v": "yes"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
+{"id": "ho0195", "ask": "is 72 a prime number?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
+{"id": "ho0196", "ask": "is 59 a prime number?", "expect": {"kind": "verdict", "v": "yes"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
+{"id": "ho0197", "ask": "is 112 a prime number?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
+{"id": "ho0198", "ask": "is 97 a prime number?", "expect": {"kind": "verdict", "v": "yes"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
+{"id": "ho0199", "ask": "is 82 a prime number?", "expect": {"kind": "verdict", "v": "no"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
+{"id": "ho0200", "ask": "is 67 a prime number?", "expect": {"kind": "verdict", "v": "yes"}, "tags": ["held_out_form:true", "narrative_shown:true", "genus:primality", "source:inverted"]}
