@@ -199,6 +199,7 @@ recache.установить()
            "divrule_court",
            "reduce_court",
            "cmpshare_court",
+           "wholeshare_court",
            # …и ПОДОБИЕ: аналогия и её ПРОВЕРКА перекрёстным произведением
            "analog_court",
            # …и ОТКЛИК: совет собеседнику, чей закон суд сличает с домом

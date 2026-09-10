@@ -1267,6 +1267,30 @@
       "actors": []
     },
     {
+      "name": "wholeshare",
+      "file": "datasets/genesis_wholeshare.txt",
+      "genre": "THE FRACTION AND THE UNIT — a fraction can be greater than a whole, and then it CONTAINS wholes. Measured 11.09 across the show worlds: «improper fraction» — NONE; «mixed number» — NONE; «a fraction is a division» — NONE. The share house says «two thirds of 12», the comparing house says which share is greater, and neither shows a fraction whose numerator is GREATER than its denominator. A SHARE SHOWN ONLY BELOW THE UNIT READS AS A PART AND NOT AS A NUMBER: a reader who has seen only those will take «7/3» for a slip of the pen. Four genera, all resting on ONE ledger — division with a remainder: GREATER («7/3 is greater than one, because the numerator 7 is greater than the denominator 3: 7 = 3 × 2 + 1»); LESS («2/3 … and there are no wholes at all: 2 = 3 × 0 + 2»); EXACTLY («3/3 is exactly one: 3 = 3 × 1 + 0»); WHOLES («7/3 is 2 wholes and 1/3, because 7 = 3 × 2 + 1: there are as many wholes as times the denominator went into the numerator, and the remainder gives the share»). The first three are the FULL row of comparison with the unit, and the third is not superfluous: without it a reader splits fractions in two — less and greater — and «3/3» falls between two stools. The fourth is what the house is built for: it says WHAT «greater than one» means — not a strange writing but two wholes and a third more — and says it by the very same ledger: the quotient gives the wholes, the remainder gives the share. ONE DIVISION WITH A REMAINDER ANSWERS BOTH QUESTIONS: how many wholes are here, and what is left of them. The ledger is written even where the quotient is zero («2 = 3 × 0 + 2») and where the remainder is zero («3 = 3 × 1 + 0»): a page where a step is dropped «as obvious» teaches dropping it where it is needed. The wholes-and-share genus is written only at a NON-zero remainder: at a zero one the fraction is a whole number, and «2 wholes and 0/3» would teach a share that is not there. Denominators run to twelve, and that was bought by the measure of mass: «exactly one» is possible once per denominator, and with eight of them it gathered EIGHT pages — fewer than nine, that is unbuyable.",
+      "act": [
+        "recount",
+        "compare",
+        "invert"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "opchoice",
       "file": "datasets/genesis_opchoice.txt",
       "genre": "CHOOSING THE OPERATION — which sign the SITUATION itself requires, and why that one. The corpus taught counting, and it taught naming the operation WHEN THE QUESTION NAMES IT («what is 20 plus 5?», «compute 20 plus 5»): the sign stands in the question and there is nothing to choose. The sweep of the canon against its own reader held eight lies at a threshold of zero, and four of them were ONE hole: the reader COUNTS RIGHT and TAKES THE WRONG OPERATION — «Ира нашла 11 орехов. она потеряла 9» answered 11 + 9 = 20; «Ivan shared 6 coins among 3 friends» answered 18. The law here is bought by a MINIMAL PAIR, not by an example: two pages with THE SAME NUMBERS differing in exactly one word — the word that decides the sign — and the reason for the difference is named IN THE LINE itself. Three forks, each taken from a reader's error rather than from the completeness of a table: finding/losing (+ or −), sharing equally/repeating (÷ or ×), more by/fewer by (+ or −). The fourth error (a fraction leaving: 36 ÷ 4 = 9, then 36 − 9 = 27) is a CHAIN of two operations and is not closed here — that is said, not left silent. The deciding word is declared by a table read by the court, and a swapped sign or a swapped word is caught mechanically.",
@@ -5094,10 +5118,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 21929570,
+      "size": 22046471,
       "tiers": [],
       "text": "mix",
-      "lines": 289958
+      "lines": 290786
     },
     {
       "name": "full",
@@ -5112,10 +5136,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 36012847,
+      "size": 36129748,
       "tiers": [],
       "text": "mix",
-      "lines": 407496
+      "lines": 408324
     },
     {
       "name": "minimal",
