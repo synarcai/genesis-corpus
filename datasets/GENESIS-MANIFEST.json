@@ -1147,6 +1147,30 @@
       "actors": []
     },
     {
+      "name": "factor",
+      "file": "datasets/genesis_factor.txt",
+      "genre": "FACTORS AND DIVISIBILITY — a factorisation names ALL the divisors at once. The canon factorises into primes and judges divisibility separately, tying neither to the other. Measured 11.09: lines of the shape «84 = 2 × 2 × 3 × 7» number 256 in the canon; lines about divisibility («7 is not divisible by 3, so 7 is not divisible by 6») number hundreds. And the words «и потому делится», «so it is divisible» occur NOT ONCE. A FACTORISATION UNTIED FROM DIVISIBILITY IS A TRICK: the number was taken apart and nothing was thereby decided. Yet it decides EVERYTHING — every divisor is a product of some of the factors, and so one factorisation answers all questions about divisors at once. Four genera, and the last two are a minimal pair BY THE REASON FOR REFUSAL: FACTOR («12 = 2 × 2 × 3, and two is among the factors, and so 12 is divisible by 2: 12 ÷ 2 = 6»); SET («12 = 2 × 2 × 3, and 6 = 2 × 3, and every factor of 6 is in 12, and so 12 is divisible by 6») — a divisor made of PART of the factors; NONE AT ALL («five is not among the factors, and so 12 is not divisible by 5: 12 = 5 × 2 + 2»); NOT ENOUGH («8 = 2 × 2 × 2, but there is no third two in 12, and so 12 is not divisible by 8: 12 = 8 × 1 + 4»). The third and fourth differ not in verdict but in REASON, and without that distinction the house would teach half the matter: «there is no five» and «there are too few twos» are different troubles, and the second is far more treacherous — the factor is VISIBLE and divisibility is absent. The same move as in the house of division by zero: two refusals with opposite reasons teach more than ten with one. The refusal is shown BY A REMAINDER and not by a word alone («12 = 5 × 2 + 2»), and the court recomputes it: «is not divisible» without a remainder would be an announcement. WHAT IS SAID IN WORDS LET IT BE SHOWN IN NUMBER. Numbers are small and composite: a factorisation must be read by eye, not taken on trust — primes 2, 3, 5, 7 and a whole below a hundred.",
+      "act": [
+        "recount",
+        "decide",
+        "generalize"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "opchoice",
       "file": "datasets/genesis_opchoice.txt",
       "genre": "CHOOSING THE OPERATION — which sign the SITUATION itself requires, and why that one. The corpus taught counting, and it taught naming the operation WHEN THE QUESTION NAMES IT («what is 20 plus 5?», «compute 20 plus 5»): the sign stands in the question and there is nothing to choose. The sweep of the canon against its own reader held eight lies at a threshold of zero, and four of them were ONE hole: the reader COUNTS RIGHT and TAKES THE WRONG OPERATION — «Ира нашла 11 орехов. она потеряла 9» answered 11 + 9 = 20; «Ivan shared 6 coins among 3 friends» answered 18. The law here is bought by a MINIMAL PAIR, not by an example: two pages with THE SAME NUMBERS differing in exactly one word — the word that decides the sign — and the reason for the difference is named IN THE LINE itself. Three forks, each taken from a reader's error rather than from the completeness of a table: finding/losing (+ or −), sharing equally/repeating (÷ or ×), more by/fewer by (+ or −). The fourth error (a fraction leaving: 36 ÷ 4 = 9, then 36 − 9 = 27) is a CHAIN of two operations and is not closed here — that is said, not left silent. The deciding word is declared by a table read by the court, and a swapped sign or a swapped word is caught mechanically.",
@@ -4974,10 +4998,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 21553305,
+      "size": 21609867,
       "tiers": [],
       "text": "mix",
-      "lines": 287434
+      "lines": 287890
     },
     {
       "name": "full",
@@ -4992,10 +5016,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 35636582,
+      "size": 35693144,
       "tiers": [],
       "text": "mix",
-      "lines": 404972
+      "lines": 405428
     },
     {
       "name": "minimal",
