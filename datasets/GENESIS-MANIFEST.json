@@ -978,6 +978,30 @@
       "actors": []
     },
     {
+      "name": "zerodiv",
+      "file": "datasets/genesis_zerodiv.txt",
+      "genre": "DIVISION BY ZERO — a refusal that HAS A REASON, and the reason is COMPUTED. Measured 10.09 across all 216 show worlds: multiplication by zero appears 696 times, zero as the dividend («0 ÷ 3») 644 times, and the expression «n ÷ 0» NOT ONCE. The canon teaches that one may multiply by zero and that zero may be divided, and says nothing of the third case — the one where there is no answer at all. THE ABSENCE WAS NOT AN OVERSIGHT: the gate would not pass it. The arithmetic court holds the law of the PAIR — a question of the value form must be answered ABOUT THE SAME THING, with the same magnitudes in the same order — and «what is 6 ÷ 0? you cannot divide by zero» breaks it: six and zero in the question, one zero in the answer, and the court calls the line false without reading its sense. A REFUSAL THAT DOES NOT REPEAT THE QUESTION IS INDISTINGUISHABLE FROM EVASION — for the court and for the reader alike. So the canon itself taught this house its form: «dividing 6 by 0 is impossible». The same move already lives in the svamp world («how many flowers does Carla have? I do not know: how many flowers Carla has is not said»). Four genera, all four checked by ONE AND THE SAME recomputation — multiplication: DIVISION («what is 12 ÷ 3? 12 ÷ 3 = 4, because 4 × 3 = 12») says what dividing MEANS — to find the number that, multiplied by the divisor, gives the dividend; ZERO ABOVE («0 ÷ 6 = 0, because 0 × 6 = 0») is the same law on other numbers; ZERO BELOW («dividing 6 by 0 is impossible: 0 × 1 = 0, and 0 × 2 = 0, and no product equals 6») refuses because NOT ONE number fits; ZERO BY ZERO («dividing 0 by 0 has no single answer: 0 × 1 = 0, and 0 × 7 = 0, and every number fits») refuses because EVERY number does. The first genus is the GROUND of the other three, not a repetition of the known: having said aloud what division is, the house earns the right to three refusals, each of them a SEARCH that ended with nothing or ended with everything. Without it «impossible» would be a prohibition announced by an adult rather than a consequence of counting. The third and fourth are a minimal pair BY REASON: both say «impossible», and the reasons are OPPOSITE — not one number fits against every number fits. TWO REFUSALS WITH DIFFERENT REASONS TEACH MORE THAN TEN REFUSALS WITH ONE. Witnesses are chosen, not taken in order: at «impossible» the two smallest products (0 × 1, 0 × 2) so the reader sees the matter is not one of magnitude; at «every» two far apart (0 × 1, 0 × 7) so «every» reads as every and not as neighbouring.",
+      "act": [
+        "recount",
+        "refuse",
+        "generalize"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "opchoice",
       "file": "datasets/genesis_opchoice.txt",
       "genre": "CHOOSING THE OPERATION — which sign the SITUATION itself requires, and why that one. The corpus taught counting, and it taught naming the operation WHEN THE QUESTION NAMES IT («what is 20 plus 5?», «compute 20 plus 5»): the sign stands in the question and there is nothing to choose. The sweep of the canon against its own reader held eight lies at a threshold of zero, and four of them were ONE hole: the reader COUNTS RIGHT and TAKES THE WRONG OPERATION — «Ира нашла 11 орехов. она потеряла 9» answered 11 + 9 = 20; «Ivan shared 6 coins among 3 friends» answered 18. The law here is bought by a MINIMAL PAIR, not by an example: two pages with THE SAME NUMBERS differing in exactly one word — the word that decides the sign — and the reason for the difference is named IN THE LINE itself. Three forks, each taken from a reader's error rather than from the completeness of a table: finding/losing (+ or −), sharing equally/repeating (÷ or ×), more by/fewer by (+ or −). The fourth error (a fraction leaving: 36 ÷ 4 = 9, then 36 − 9 = 27) is a CHAIN of two operations and is not closed here — that is said, not left silent. The deciding word is declared by a table read by the court, and a swapped sign or a swapped word is caught mechanically.",
@@ -4805,10 +4829,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 21341475,
+      "size": 21358044,
       "tiers": [],
       "text": "mix",
-      "lines": 285882
+      "lines": 286086
     },
     {
       "name": "full",
@@ -4823,10 +4847,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 35424752,
+      "size": 35441321,
       "tiers": [],
       "text": "mix",
-      "lines": 403420
+      "lines": 403624
     },
     {
       "name": "minimal",
