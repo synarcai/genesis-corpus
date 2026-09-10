@@ -1051,6 +1051,30 @@
       "actors": []
     },
     {
+      "name": "estim",
+      "file": "datasets/genesis_estim.txt",
+      "genre": "THE ESTIMATE — round BEFORE counting, and catch the gross error by it. Measured 10.09 across the show worlds: the sign «≈» occurs 34 times, and every one of them is the NAME of the sign («≈ называется приближённо», «≈ heisst ungefähr»). The everyday world can round ONE number («Маша насчитала 21 карту; это примерно 20 карт»), the rounding house knows the rule of the half — but there is NOT ONE computation over rounded numbers. AN ESTIMATE IS NOT LAZINESS BUT A CHECK: one who has estimated «about four hundred» will not accept the answer «three thousand nine hundred and ninety» — he catches an error of TEN TIMES before he begins to count. An organism that cannot estimate believes every answer of its own. Four genera, and the fourth is the point: PRODUCT («what is roughly 19 × 21? it is about 400, because 19 ≈ 20, and 21 ≈ 20, and 20 × 20 = 400»); SUM (the same move over addition); EXACT («the estimate gave 400, and exactly 19 × 21 = 399, and the estimate is greater by 1») — the PRICE of the estimate named as a number, without which the fourth genus would be a trick: a reader may fairly ask why «about 400» rejects 3990 and does not reject 399; and CATCHES («is it true that 19 × 21 = 3990? no: … 20 × 20 = 400, and 3990 has 4 digits while 400 has 3»). AN ESTIMATE REJECTS BY THE ORDER OF MAGNITUDE, NOT BY THE EXACT NUMBER, and that boundary is SHOWN rather than announced. The first draft said «3990 is ten times more» — but ten times more than the EXACT number, while it stands in the line beside the ESTIMATE, and a reader might take 3990 for 400 × 10; the count of digits is checked by eye and by court alike, and it is the very substance of estimating. Numbers are chosen so that the estimate differs from the exact by NO MORE THAN A TENTH: the first selection took any number near a ten and produced «18 × 19: estimate 400, exactly 342» — a difference of seventeen hundredths, a page teaching not estimation but carelessness, for rounding BOTH factors the same way doubles the error. The gross error of the fourth genus is exactly tenfold: it is what an appended zero gives — the commonest slip in the world, and therefore the most worth catching. The question opens with a DECLARED question word, and that was bought by the script court: the first draft asked «roughly what is 19 × 21?» and was called false by writing, since a question must open with a word the language pack declares.",
+      "act": [
+        "recount",
+        "compare",
+        "refute"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "opchoice",
       "file": "datasets/genesis_opchoice.txt",
       "genre": "CHOOSING THE OPERATION — which sign the SITUATION itself requires, and why that one. The corpus taught counting, and it taught naming the operation WHEN THE QUESTION NAMES IT («what is 20 plus 5?», «compute 20 plus 5»): the sign stands in the question and there is nothing to choose. The sweep of the canon against its own reader held eight lies at a threshold of zero, and four of them were ONE hole: the reader COUNTS RIGHT and TAKES THE WRONG OPERATION — «Ира нашла 11 орехов. она потеряла 9» answered 11 + 9 = 20; «Ivan shared 6 coins among 3 friends» answered 18. The law here is bought by a MINIMAL PAIR, not by an example: two pages with THE SAME NUMBERS differing in exactly one word — the word that decides the sign — and the reason for the difference is named IN THE LINE itself. Three forks, each taken from a reader's error rather than from the completeness of a table: finding/losing (+ or −), sharing equally/repeating (÷ or ×), more by/fewer by (+ or −). The fourth error (a fraction leaving: 36 ÷ 4 = 9, then 36 − 9 = 27) is a CHAIN of two operations and is not closed here — that is said, not left silent. The deciding word is declared by a table read by the court, and a swapped sign or a swapped word is caught mechanically.",
@@ -4878,10 +4902,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 21434626,
+      "size": 21461538,
       "tiers": [],
       "text": "mix",
-      "lines": 286636
+      "lines": 286864
     },
     {
       "name": "full",
@@ -4896,10 +4920,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 35517903,
+      "size": 35544815,
       "tiers": [],
       "text": "mix",
-      "lines": 404174
+      "lines": 404402
     },
     {
       "name": "minimal",
