@@ -1099,6 +1099,30 @@
       "actors": []
     },
     {
+      "name": "likely",
+      "file": "datasets/genesis_likely.txt",
+      "genre": "THE SCALE OF LIKELIHOOD — a word of degree is the NAME OF A RATIO, not a feeling. The chance house computes «3 out of 5» and calls it nothing at all. Measured 10.09 across the show worlds: «наверняка», «вряд ли», «скорее всего», «маловероятно», «почти наверняка» — NOT ONE occurrence; «likely» and «unlikely» stand only in the computing world and in drafts. The canon can obtain the number and cannot say what it means. A NUMBER WITHOUT A NAME DOES NOT ENTER SPEECH: an organism that computes «1 out of 10» and does not know this is «unlikely» will not understand a person who speaks in words, and will itself give a number where a word is wanted. THE BOUNDARY OF THE SCALE IS DECLARED, NOT FELT, and that is the chief decision of the house: «unlikely» begins where the ratio is less than half, «likely» where it is more, and exactly half is «equally likely». The rule is SAID ON EVERY PAGE («which is less than half»), so the reader takes a measure and not a habit. A SCALE WHOSE BOUNDARY IS NOT NAMED TEACHES GUESSING; a named one teaches counting. Three genera, all checked by the same recomputation as the chance house: UNLIKELY, LIKELY, and EQUALLY LIKELY — the last being the boundary itself and not a middle for completeness: without it a reader may decide the scale has two steps and the half goes to one of them at random. The EDGES of the scale (impossible and certain) are NOT repeated here: the chance house shows them («0 out of 5», «5 out of 5»), and writing them twice would teach one thing twice. This house takes exactly what is missing there — the MIDDLE and its NAMES. Halves are compared WITHOUT FRACTIONS, by doubling the numerator: a fraction here would be another house's work and a source of error of its own. The numbers are chosen so that every degree gathers its own mass, and that was bought by the measure: the first selection took six totals and left «equally likely» with SIX pages — equality of parts is possible only at an even total, and six evens are too few for a whole scale.",
+      "act": [
+        "recount",
+        "name",
+        "compare"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "opchoice",
       "file": "datasets/genesis_opchoice.txt",
       "genre": "CHOOSING THE OPERATION — which sign the SITUATION itself requires, and why that one. The corpus taught counting, and it taught naming the operation WHEN THE QUESTION NAMES IT («what is 20 plus 5?», «compute 20 plus 5»): the sign stands in the question and there is nothing to choose. The sweep of the canon against its own reader held eight lies at a threshold of zero, and four of them were ONE hole: the reader COUNTS RIGHT and TAKES THE WRONG OPERATION — «Ира нашла 11 орехов. она потеряла 9» answered 11 + 9 = 20; «Ivan shared 6 coins among 3 friends» answered 18. The law here is bought by a MINIMAL PAIR, not by an example: two pages with THE SAME NUMBERS differing in exactly one word — the word that decides the sign — and the reason for the difference is named IN THE LINE itself. Three forks, each taken from a reader's error rather than from the completeness of a table: finding/losing (+ or −), sharing equally/repeating (÷ or ×), more by/fewer by (+ or −). The fourth error (a fraction leaving: 36 ÷ 4 = 9, then 36 − 9 = 27) is a CHAIN of two operations and is not closed here — that is said, not left silent. The deciding word is declared by a table read by the court, and a swapped sign or a swapped word is caught mechanically.",
@@ -4926,10 +4950,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 21497551,
+      "size": 21531658,
       "tiers": [],
       "text": "mix",
-      "lines": 287050
+      "lines": 287234
     },
     {
       "name": "full",
@@ -4944,10 +4968,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 35580828,
+      "size": 35614935,
       "tiers": [],
       "text": "mix",
-      "lines": 404588
+      "lines": 404772
     },
     {
       "name": "minimal",

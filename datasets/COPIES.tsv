@@ -1,5 +1,5 @@
 мир	генератор	через_слой	строк	различных	копий	макс_копий
-datasets/GENESIS-FULL.txt	gen_genesis_full.py	0	402470	283749	118721	473
+datasets/GENESIS-FULL.txt	gen_genesis_full.py	0	404772	286051	118721	473
 datasets/genesis_action_measure.txt	gen_genesis_action_measure.py	1	234	234	0	1
 datasets/genesis_action_measure_langs.txt	gen_genesis_action_measure_langs.py	1	462	462	0	1
 datasets/genesis_action_pages.txt	gen_genesis_action_pages.py	1	4921	4897	24	2
@@ -15,9 +15,12 @@ datasets/genesis_average.txt	gen_genesis_average.py	1	1300	1300	0	1
 datasets/genesis_beforetails.txt	gen_genesis_beforetails.py	1	3600	3600	0	1
 datasets/genesis_behavior.txt	gen_genesis_behavior.py	1	1635	1635	0	1
 datasets/genesis_bignum.txt	gen_genesis_bignum.py	1	937	888	49	2
+datasets/genesis_both.txt	gen_genesis_both.py	1	186	186	0	1
+datasets/genesis_bound.txt	gen_genesis_bound.py	1	144	144	0	1
 datasets/genesis_calendar.txt	gen_genesis_calendar.py	1	902	451	451	2
 datasets/genesis_calendar_langs.txt	gen_genesis_calendar_langs.py	1	1120	840	280	2
 datasets/genesis_chains_langs.txt	gen_genesis_chains_langs.py	1	3092	2889	203	2
+datasets/genesis_chance.txt	gen_genesis_chance.py	1	224	224	0	1
 datasets/genesis_clockforms.txt	gen_genesis_clockforms.py	1	1053	1053	0	1
 datasets/genesis_clockwords.txt	gen_genesis_clockwords.py	1	378	378	0	1
 datasets/genesis_cmpframes.txt	gen_genesis_cmpframes.py	1	6480	6480	0	1
@@ -41,6 +44,7 @@ datasets/genesis_doctree.txt	gen_genesis_doctree.py	1	516	258	258	2
 datasets/genesis_enough.txt	gen_genesis_enough.py	1	324	324	0	1
 datasets/genesis_episodeforms.txt	gen_genesis_episodeforms.py	1	5229	5229	0	1
 datasets/genesis_equation.txt	gen_genesis_equation.py	1	1366	1210	156	2
+datasets/genesis_estim.txt	gen_genesis_estim.py	1	228	228	0	1
 datasets/genesis_everyday.txt	gen_genesis_everyday.py	1	4578	3960	618	2
 datasets/genesis_formula_lang.txt	gen_genesis_formula_lang.py	1	2583	2488	95	2
 datasets/genesis_formulas.txt	gen_genesis_formulas.py	1	1122	913	209	2
@@ -73,6 +77,8 @@ datasets/genesis_l3_eng_proof.txt	gen_genesis_eng_proof.py	1	153	119	34	2
 datasets/genesis_l3_prog.txt	gen_genesis_prog.py	1	182	144	38	2
 datasets/genesis_l4.txt	gen_genesis_l4.py	0	500	100	400	5
 datasets/genesis_letters.txt	gen_genesis_letters.py	1	360	360	0	1
+datasets/genesis_lever.txt	gen_genesis_lever.py	1	726	726	0	1
+datasets/genesis_likely.txt	gen_genesis_likely.py	1	184	184	0	1
 datasets/genesis_linalg.txt	gen_genesis_linalg.py	1	3606	3122	484	2
 datasets/genesis_links.txt	gen_genesis_links.py	1	17566	17566	0	1
 datasets/genesis_longdiv.txt	gen_genesis_longdiv.py	1	674	624	50	2
@@ -110,6 +116,7 @@ datasets/genesis_physlaws.txt	gen_genesis_physlaws.py	1	830	514	316	2
 datasets/genesis_place.txt	gen_genesis_place.py	1	1296	1296	0	1
 datasets/genesis_plan.txt	gen_genesis_plan.py	1	576	576	0	1
 datasets/genesis_planforms.txt	gen_genesis_planforms.py	1	2520	2520	0	1
+datasets/genesis_prec.txt	gen_genesis_prec.py	1	264	264	0	1
 datasets/genesis_price.txt	gen_genesis_price.py	1	378	378	0	1
 datasets/genesis_primes_langs.txt	gen_genesis_primes_langs.py	1	400	400	0	1
 datasets/genesis_proform.txt	gen_genesis_proform.py	1	288	288	0	1
@@ -175,5 +182,6 @@ datasets/genesis_verifyforms.txt	gen_genesis_verifyforms.py	1	3285	3285	0	1
 datasets/genesis_wordorder.txt	gen_genesis_wordorder.py	1	876	624	252	2
 datasets/genesis_wordparts.txt	gen_genesis_wordparts.py	1	4767	4627	140	2
 datasets/genesis_worldfacts.txt	gen_genesis_worldfacts.py	1	2779	2779	0	1
+datasets/genesis_zerodiv.txt	gen_genesis_zerodiv.py	1	346	346	0	1
 datasets/school_biling_v2c.txt	gen_genesis_school_biling_v2c.py	1	11380	6622	4758	2
 datasets/school_ruler_dense.txt	gen_genesis_ruler_dense.py	1	637	378	259	2

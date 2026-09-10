@@ -126,6 +126,7 @@ def заполнители_домов():
     try:
         import holes, calforms, cmpforms, unitforms, physforms, shareforms, moneyforms, searchforms, moneystory, fracforms, relstory
         import defforms, countforms, measurestory, actionpages
+        import boundforms, chanceforms, leverforms, likelyforms
     except Exception:
         return вон
     _добавить(searchforms.ЧАСТИ)
@@ -199,6 +200,21 @@ def заполнители_домов():
     for я in calforms.ЯЗЫКИ.values():
         _добавить(я.get("дни")); _добавить(я.get("косв"))
     _добавить(cmpforms.ВЕЩИ); _добавить(cmpforms.КРАТНО)
+    # ДОМА СЧЁТНЫХ ОТНОШЕНИЙ ОБЪЯВЛЯЮТ СВОИ ВЕЩИ, ЦВЕТА И МЕСТА, и здесь они читаются как
+    # дыры. Долг найден мерой массы 11.09: дом шкалы уверенности дал тридцать родов, из них
+    # ДВАДЦАТЬ ШЕСТЬ непокупаемых — «a bag holds # black ※» и «a bag holds # ※ ※» считались
+    # разными рамками, ибо «black» и «white» не стояли ни в одной таблице, отданной домами.
+    #
+    #     МЕРА ФОРМЫ, НЕ ЗНАЮЩАЯ ЗАПОЛНИТЕЛЕЙ ДОМА, МЕРЯЕТ НЕ ФОРМУ, А СЛОВАРЬ.
+    for _дом in (chanceforms, likelyforms, leverforms, boundforms):
+        for _цвета in getattr(_дом, "ЦВЕТА", {}).values():
+            for _пара in _цвета:
+                _добавить(list(_пара))
+        for _вещи in getattr(_дом, "ВЕЩИ", {}).values():
+            for _в in _вещи:
+                _добавить(list(_в) if isinstance(_в, (list, tuple)) else _в)
+        for _места in getattr(_дом, "МЕСТА", {}).values():
+            _добавить(list(_места))
     _добавить(unitforms.ЕДИНИЦЫ); _добавить(physforms.ЕДИНИЦЫ); _добавить(shareforms.ИМЕНА)
     for я in moneyforms.ЯЗЫКИ.values():
         _добавить(я.get("б")); _добавить(я.get("м"))
