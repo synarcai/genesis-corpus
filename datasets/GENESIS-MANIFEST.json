@@ -1125,7 +1125,7 @@
     {
       "name": "sameshare",
       "file": "datasets/genesis_sameshare.txt",
-      "genre": "ONE SHARE IN DIFFERENT WRITINGS — «1 out of 4», «one quarter» and «1/4» are one number. THREE HOUSES SPEAK OF THE SAME THING AND DO NOT KNOW EACH OTHER: the chance house writes «the chance is 1 out of 4»; the share house writes «one quarter is 1/4» and «one quarter of 24 is 6»; the rewriting house ties arithmetic writings («3 × 8» and «8 × 3») but says nothing of shares. Measured 11.09: the link between «1 out of 4» and «one quarter» is made by NOT ONE LINE. ONE NUMBER NAMED BY THREE NAMES AND NEVER IDENTIFIED IS THREE DIFFERENT NUMBERS FOR THE READER. Four genera, all checked by ONE oracle — counting from the whole: NAME («1 out of 4 and one quarter are the same: of 12 both give 3, because 12 ÷ 4 = 3»); EQUAL («2 out of 4 and 1 out of 2 — the same? yes: of 12 both give 6») — different writings, one number; DIFFERENT («1 out of 2 and 1 out of 3 — the same? no: of 12 the first gives 6, the second 4») — alike in writing, unlike in number; and FRACTION («1 out of 4 is written 1/4»). The second and third are a minimal pair, without which the house would teach half the matter: «2 out of 4» and «1 out of 2» differ in every digit and are one; «1 out of 2» and «1 out of 3» differ in one digit and are two. LIKENESS OF WRITING IS NOT EQUALITY OF NUMBER, AND DIFFERENCE OF WRITING IS NOT DIFFERENCE OF NUMBER — the COUNT FROM THE WHOLE decides, and it is shown on every page. The whole is taken so that it divides by both denominators, else the count would give a fraction, which is another house's work; and the whole is NAMED IN THE LINE («of 12»), which is no trifle: a share without a whole is not a number, and two shares are comparable only under one whole. The names of shares are taken from the share house (`fracforms.доля_слово`) and not written here: a house that repeats another's table diverges from it at the first correction.",
+      "genre": "ONE SHARE IN DIFFERENT WRITINGS — «1 out of 4», «one quarter» and «1/4» are one number. THREE HOUSES SPEAK OF THE SAME THING AND DO NOT KNOW EACH OTHER: the chance house writes «the chance is 1 out of 4»; the share house writes «one quarter is 1/4» and «one quarter of 24 is 6»; the rewriting house ties arithmetic writings («3 × 8» and «8 × 3») but says nothing of shares. Measured 11.09: the link between «1 out of 4» and «one quarter» is made by NOT ONE LINE. ONE NUMBER NAMED BY THREE NAMES AND NEVER IDENTIFIED IS THREE DIFFERENT NUMBERS FOR THE READER. Four genera, all checked by ONE oracle — counting from the whole: NAME («1 out of 4 and one quarter are the same: of 12 both give 3, because 12 ÷ 4 = 3»); EQUAL («2 out of 4 and 1 out of 2 — the same? yes: of 12 both give 6») — different writings, one number; DIFFERENT («1 out of 2 and 1 out of 3 — the same? no: of 12 the first gives 6, the second 4») — alike in writing, unlike in number; and FRACTION («1 out of 4 is written 1/4»). The second and third are a minimal pair, without which the house would teach half the matter: «2 out of 4» and «1 out of 2» differ in every digit and are one; «1 out of 2» and «1 out of 3» differ in one digit and are two. LIKENESS OF WRITING IS NOT EQUALITY OF NUMBER, AND DIFFERENCE OF WRITING IS NOT DIFFERENCE OF NUMBER — the COUNT FROM THE WHOLE decides, and it is shown on every page. The whole is taken so that it divides by both denominators, else the count would give a fraction, which is another house's work; and the whole is NAMED IN THE LINE («of 12»), which is no trifle: a share without a whole is not a number, and two shares are comparable only under one whole. The names of shares are taken from the share house (`fracforms.доля_слово`) and not written here: a house that repeats another's table diverges from it at the first correction. A FIFTH GENUS — PERCENT — was added the same day and by the same measure: the percent world computes «1% of 200 is 2», the share world «one quarter of 24 is 6», and the link «25 % and one quarter» is made by not one line of the canon. A HOUSE WHOSE SUBJECT IS ALREADY DECLARED GROWS BY A GENUS, NOT BY A TWIN: the oracle is the same — the count from the whole — and it is shown TWICE, since the percent is computed its own way (multiply, then divide by a hundred). A third is not written as a percent («33.333…»), and putting it here would teach rounding under the guise of identity — the work of another house.",
       "act": [
         "recount",
         "compare",
@@ -4974,10 +4974,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 21548086,
+      "size": 21553305,
       "tiers": [],
       "text": "mix",
-      "lines": 287394
+      "lines": 287434
     },
     {
       "name": "full",
@@ -4992,10 +4992,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 35631363,
+      "size": 35636582,
       "tiers": [],
       "text": "mix",
-      "lines": 404932
+      "lines": 404972
     },
     {
       "name": "minimal",

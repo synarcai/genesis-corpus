@@ -16,7 +16,7 @@ import sameshareforms as F  # noqa: E402
 from layer import emit_grouped, PASSES  # noqa: E402
 
 ЦЕЛЬ = "datasets/genesis_sameshare.txt"
-ГРУППЫ = (("равные", "разные"), ("имя", "дробь"))
+ГРУППЫ = (("равные", "разные"), ("имя", "дробь", "процент"))
 
 
 def pass_groups(шаг):
