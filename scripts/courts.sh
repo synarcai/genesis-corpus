@@ -44,14 +44,14 @@ COURTS=("courts/arith_court.py" "courts/algo_court.py"
         "scripts/concept_reach.py"
         "scripts/ask_reach.py" "scripts/band_reach.py" "scripts/biblio_reach.py" "courts/ruverbs_court.py" "courts/script_court.py" "scripts/word_mutants.py" "scripts/verdict_cover.py" "scripts/sentence_cover.py" "scripts/bench_leak.py" "scripts/shelf_court.py" "scripts/ask_width.py" "courts/notationvar_court.py"
         "courts/prosetree_court.py" "courts/longdiv_court.py"
-        "scripts/form_census.py" "scripts/verbthings_court.py"
+        "scripts/form_census.py" "scripts/houses_census.py" "scripts/verbthings_court.py"
         "scripts/coverage.py"
         # ДОМА РАЗГОВОРА И РАССУЖДЕНИЯ (04.09). Их суды жили в палате и стерегли
         # ВОРОТА, но в этом списке не стояли, и потому вердикт «пало 0 из 103»
         # их не считал — ноль с укороченным знаменателем (М-264). Считает.
         "courts/behavior_court.py" "courts/topics_court.py" "courts/nature_court.py" "courts/links_court.py" "courts/scale_court.py" "courts/opposites_court.py" "courts/roles_court.py" "courts/joints_court.py" "courts/dialogue_court.py" "courts/worldfacts_court.py" "courts/infer_court.py" "scripts/circle_probe.py" "scripts/agree_probe.py" "scripts/shelf_declare.py" "scripts/house_reach.py" "scripts/head_census.py" "scripts/form_matrix.py"
         # …и четыре дома рассуждения, севшие 04.09 после снятия заморозки
-        "courts/disj_court.py" "courts/indu_court.py" "courts/houseshows_court.py" "courts/article_court.py" "courts/rowframe_court.py" "courts/opchoice_court.py" "courts/chance_court.py" "courts/analog_court.py" "courts/reply_court.py"
+        "courts/disj_court.py" "courts/indu_court.py" "courts/houseshows_court.py" "courts/article_court.py" "courts/rowframe_court.py" "courts/opchoice_court.py" "courts/chance_court.py" "courts/lever_court.py" "courts/analog_court.py" "courts/reply_court.py"
         # ПАРА РЕГИСТРА — условие ПОКУПКИ, названное holon: вежливая строка обязана
         # отличаться от неформальной только обращением, иначе анти-унификация
         # вынесет в дыру лишнее и закон выйдет шире дома. Рубеж 0 пороков.
@@ -193,10 +193,24 @@ is_solo() {
 }
 
 run_one() {
-  local idx entry tool out rc
+  # ЦЕНА ПРИБОРА ЗАПИСЫВАЕТСЯ, А НЕ УГАДЫВАЕТСЯ (10.09). Набор из 216 приборов идёт часами и
+  # до сего дня не мог назвать СВОЙ САМЫЙ ДОРОГОЙ: ни леджер, ни след времени не хранили.
+  # Рука узнавала цену только через `ps`, и то лишь пока прибор ещё жив; многопроцессный
+  # прибор при этом врал вдвойне — время родителя у него ноль, а работают дети.
+  #
+  #     НАБОР, НЕ ЗНАЮЩИЙ СВОЕЙ ЦЕНЫ, НЕ МОЖЕТ ЕЁ И УБАВИТЬ.
+  #
+  # РАЗРЕШЕНИЕ — ЦЕЛАЯ СЕКУНДА, И ЭТО ГРАНИЦА, А НЕ НЕДОСМОТР: bash 3.2 (тот, что несёт
+  # macOS) не знает `EPOCHREALTIME`, а BSD `date` не знает `%N`. Прибор, идущий доли
+  # секунды, ляжет здесь нулём или единицей — и пусть: он ставится ради тех, что идут
+  # МИНУТАМИ, а их целая секунда меряет с избытком.
+  local idx entry tool out rc t0 t1
   idx="$1"; entry="$2"
   set -- $entry; tool="$1"; shift
+  t0=$(date +%s)
   out=$(python3 "$tool" "$@" 2>&1); rc=$?
+  t1=$(date +%s)
+  printf '%s\n' "$((t1 - t0))" > "$TMPDIR_SUITE/$idx.sec"
   printf '%s
 ' "$out" > "$TMPDIR_SUITE/$idx.out"
   printf '%s
@@ -216,7 +230,7 @@ flush_range() {
   #     ПРИБОР, ЧЕЙ ВЕРДИКТ ПРИНАДЛЕЖИТ СОСЕДУ, ХУЖЕ НЕ ЗАПУЩЕННОГО: не запущенный оставляет
   #     пустоту, а этот оставляет ЧУЖОЙ ЗЕЛЁНЫЙ. Найдено ледждером: 09.09 `prosetree_court.py`
   #     записан с вердиктом `notationvar_court.py`, слово в слово, при своём коде 0.
-  local k last_idx entry tool rc stamp out last
+  local k last_idx entry tool rc stamp out last sec
   k="$1"; last_idx="$2"
   while [ "$k" -le "$last_idx" ]; do
     entry="${COURTS[$k]}"
@@ -244,6 +258,11 @@ flush_range() {
     [ -z "$last" ] && last=$(printf '%s
 ' "$out" | tail -1)
     printf '%s\t%s\t%s\t%s\n' "$stamp" "$(basename "$tool")" "$rc" "$last" >> reports/ledger.tsv
+    # ЦЕНА ИДЁТ В СВОЙ СЛЕД, А НЕ ПЯТЫМ ПОЛЕМ ЛЕДЖЕРА: леджер читают `crystal.py` и
+    # `denominator_census.py`, и новое поле в нём было бы правкой чужого договора.
+    sec=$(cat "$TMPDIR_SUITE/$k.sec" 2>/dev/null || echo -1)
+    printf '%s\t%s\t%s\n' "$stamp" "$(basename "$tool")" "$sec" >> "$TMPDIR_SUITE/cost"
+    printf '%s\t%s\t%s\n' "$stamp" "$(basename "$tool")" "$sec" >> reports/SUITE-COST.tsv
     if [ "$rc" = 0 ]; then
       printf 'СУД ЦЕЛ   %-26s %s\n' "$(basename "$tool")" "$last"
     else
@@ -292,6 +311,14 @@ if [ "$FELL" = 0 ]; then
 else
   echo "СУДЫ КОРПУСА: ПАЛО $FELL из ${#COURTS[@]}"
 fi
+# ПЯТЬ САМЫХ ДОРОГИХ ПРИБОРОВ ЭТОГО НАБОРА — чтобы цена была видна тому, кто ждал.
+if [ -s "$TMPDIR_SUITE/cost" ]; then
+  echo "--- дороже всех (секунд):"
+  sort -t"$(printf '\t')" -k3,3nr "$TMPDIR_SUITE/cost" | head -5 \
+    | while IFS="$(printf '\t')" read -r _ nm sc; do printf '    %-28s %6s\n' "$nm" "$sc"; done
+  awk -F"\t" '{s+=$3} END {printf "    %-28s %6d\n", "ВСЕГО МАШИННЫХ СЕКУНД", s}' "$TMPDIR_SUITE/cost"
+fi
+
 # СЛЕД НАБОРА — ПРОТИВ МОЛЧАЛИВОГО ПАДЕНИЯ (09.09).
 #
 # Дважды за два дня прибор набора оказывался красным месяцами, и оба раза число нашлось лишь
