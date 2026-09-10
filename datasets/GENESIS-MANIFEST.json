@@ -1027,6 +1027,30 @@
       "actors": []
     },
     {
+      "name": "prec",
+      "file": "datasets/genesis_prec.txt",
+      "genre": "THE ORDER OF OPERATIONS — the rule by which the canon ALWAYS computed and NEVER named. Measured 10.09 across the show worlds: expressions of mixed precedence («3 × 63 + 1 = 190», «1 + 4 × 5 = 21») number 1258 in twelve worlds, while the words «порядок действий», «сначала умножение», «order of operations», «brackets change» occur NOT ONCE. A RULE THAT IS USED IN COUNTING AND NEVER NAMED THE READER IS FORCED TO GUESS — and he guesses left to right: «2 + 3 × 4» → 20 instead of 14, the first error of school. The house is made by the same move as the house of choosing the operation: there the canon computed rightly but did not say WHY that sign; here it does not say WHY that order. Four genera, each checked by recomputing BOTH steps: PRECEDENCE («2 + 3 × 4 = 14, because multiplication goes before addition: 3 × 4 = 12, and 2 + 12 = 14»); BRACKETS («( 2 + 3 ) × 4 = 20, because brackets go before all») — the rule overruled; EQUALS («12 ÷ 4 × 3 = 9, because division and multiplication are equal in precedence and go left to right»); and ERROR («is it true that 2 + 3 × 4 = 20? no: left to right would give 20, but multiplication goes before addition»). The first two are a minimal pair and no better one exists here: THE NUMBERS ARE THE SAME, the answers differ, and the whole difference is two brackets — a reader who sees this pair cannot take brackets for decoration. The fourth shows the ERROR ITSELF and not only the right move, brother to «conversion» in the house of strict inference; its 20 is not invented — it is exactly what left-to-right gives, and it is also the TRUE answer of the second genus, where the brackets stand. ONE AND THE SAME NUMBER IS BOTH AN ANSWER AND AN ERROR, ACCORDING TO WHAT WAS ASKED. The third closes the hole the first two leave: having learned that multiplication precedes addition, a reader may decide that division precedes multiplication — it does not, they are equal, and the order between them is given by the writing, not by precedence. The answer repeats the question's expression, and that is not verbosity: the arithmetic court holds the law of the PAIR, and an answer opening with «multiplication goes before» breaks it — the first draft of the house was called false before it was born. The present form is read BY THE ARITHMETIC COURT alongside the house's own court: the page is held by two, not by one.",
+      "act": [
+        "recount",
+        "refute",
+        "generalize"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "opchoice",
       "file": "datasets/genesis_opchoice.txt",
       "genre": "CHOOSING THE OPERATION — which sign the SITUATION itself requires, and why that one. The corpus taught counting, and it taught naming the operation WHEN THE QUESTION NAMES IT («what is 20 plus 5?», «compute 20 plus 5»): the sign stands in the question and there is nothing to choose. The sweep of the canon against its own reader held eight lies at a threshold of zero, and four of them were ONE hole: the reader COUNTS RIGHT and TAKES THE WRONG OPERATION — «Ира нашла 11 орехов. она потеряла 9» answered 11 + 9 = 20; «Ivan shared 6 coins among 3 friends» answered 18. The law here is bought by a MINIMAL PAIR, not by an example: two pages with THE SAME NUMBERS differing in exactly one word — the word that decides the sign — and the reason for the difference is named IN THE LINE itself. Three forks, each taken from a reader's error rather than from the completeness of a table: finding/losing (+ or −), sharing equally/repeating (÷ or ×), more by/fewer by (+ or −). The fourth error (a fraction leaving: 36 ÷ 4 = 9, then 36 − 9 = 27) is a CHAIN of two operations and is not closed here — that is said, not left silent. The deciding word is declared by a table read by the court, and a swapped sign or a swapped word is caught mechanically.",
@@ -4854,10 +4878,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 21396614,
+      "size": 21434626,
       "tiers": [],
       "text": "mix",
-      "lines": 286372
+      "lines": 286636
     },
     {
       "name": "full",
@@ -4872,10 +4896,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 35479891,
+      "size": 35517903,
       "tiers": [],
       "text": "mix",
-      "lines": 403910
+      "lines": 404174
     },
     {
       "name": "minimal",
