@@ -930,6 +930,29 @@
       "actors": []
     },
     {
+      "name": "chance",
+      "file": "datasets/genesis_chance.txt",
+      "genre": "CHANCE AS A RATIO OF COUNTS — the corpus DEFINED probability and never once COMPUTED it. The definitions world quotes the dictionary («probability is the ratio of the number of cases favourable to an event to the whole number of cases»): twenty-three such lines, and not one where the ratio is worked out. The form census says the last slice of the canon yields ZERO new frames and ZERO new genera per thousand lines — the canon is saturated, and its growth has become repetition; so what has to grow is GENERA, not volume. A walk of all 214 worlds found the statistics world knowing mean and median, the computing world knowing bits from equally likely outcomes, and probability as a RATIO nowhere. Four genera, all four checked by recounting: the share («a bag holds 3 red balls and 2 blue balls. what is the chance of drawing a red one? 3 + 2 = 5, and the chance is 3 out of 5»), its COMPLEMENT with the same numbers, the IMPOSSIBLE event (0 out of 5) and the CERTAIN one (5 out of 5). Share and complement are a minimal pair: the numbers are the same, the question differs, and the answer differs for that reason alone. The impossible and the certain are the EDGES of the range — without them chance would look forever fractional, and it is also zero and one. Numbers are chosen for the Russian count and the noun form is taken from the Russian grammar house, not written by eye; things are masculine only, because with feminine ones the adjective would bend too and the house declares no adjective paradigm.",
+      "act": [
+        "recount",
+        "name"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "opchoice",
       "file": "datasets/genesis_opchoice.txt",
       "genre": "CHOOSING THE OPERATION — which sign the SITUATION itself requires, and why that one. The corpus taught counting, and it taught naming the operation WHEN THE QUESTION NAMES IT («what is 20 plus 5?», «compute 20 plus 5»): the sign stands in the question and there is nothing to choose. The sweep of the canon against its own reader held eight lies at a threshold of zero, and four of them were ONE hole: the reader COUNTS RIGHT and TAKES THE WRONG OPERATION — «Ира нашла 11 орехов. она потеряла 9» answered 11 + 9 = 20; «Ivan shared 6 coins among 3 friends» answered 18. The law here is bought by a MINIMAL PAIR, not by an example: two pages with THE SAME NUMBERS differing in exactly one word — the word that decides the sign — and the reason for the difference is named IN THE LINE itself. Three forks, each taken from a reader's error rather than from the completeness of a table: finding/losing (+ or −), sharing equally/repeating (÷ or ×), more by/fewer by (+ or −). The fourth error (a fraction leaving: 36 ÷ 4 = 9, then 36 − 9 = 27) is a CHAIN of two operations and is not closed here — that is said, not left silent. The deciding word is declared by a table read by the court, and a swapped sign or a swapped word is caught mechanically.",
@@ -4757,10 +4780,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 21122710,
+      "size": 21160932,
       "tiers": [],
       "text": "mix",
-      "lines": 284932
+      "lines": 285156
     },
     {
       "name": "full",
@@ -4775,10 +4798,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 35205987,
+      "size": 35244209,
       "tiers": [],
       "text": "mix",
-      "lines": 402470
+      "lines": 402694
     },
     {
       "name": "minimal",
