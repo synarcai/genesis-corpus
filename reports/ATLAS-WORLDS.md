@@ -282,7 +282,7 @@
 - **`prec`** (264 строк; recompute, whole_only)  
   **THE ORDER OF OPERATIONS** — the rule by which the canon ALWAYS computed and NEVER named.
 - **`algebra_units`** (261 строк; recompute, unsigned_only)  
-  foundations: linear equations, fractions, unit conversion
+  **РАННИЙ СМЕШАННЫЙ МИР, ДО ДОМОВ: линейное уравнение одного шага («task: x plus 7 equals 10. solution: x = 10 − 7 = 3»), перевод единиц («7 м = 700 см»), сумма долей до единицы («4/10 + 6/10 = 1»), десятичная запись доли («3/4 = 0.75»), чтение знака словом …
 - **`joint2`** (255 строк; recompute, whole_only)  
   **JOINT COUNT** — «i have», «you have», «we have».
 - **`remainders`** (248 строк; recompute, whole_only)  
@@ -568,14 +568,13 @@
     ОБЪЯВЛЕНИЕ В ТРИДЦАТЬ ЗНАКОВ НЕ ЛЖЁТ И НЕ ГОВОРИТ: читатель узнаёт имя мира
     и ничего сверх него.
 
-Миров: **41** из 257.
+Миров: **40** из 257.
 
 - `genesis_bignum` — 27 знаков
 - `prog` — 47 знаков
 - `rates` — 49 знаков
 - `eng_proof` — 54 знаков
 - `fractions` — 54 знаков
-- `algebra_units` — 57 знаков
 - `depletion` — 59 знаков
 - `conversions` — 64 знаков
 - `physics` — 64 знаков
