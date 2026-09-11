@@ -1602,6 +1602,30 @@
       "actors": []
     },
     {
+      "name": "parity",
+      "file": "datasets/genesis_parity.txt",
+      "genre": "THE PARITY OF OPERATIONS — A LAW ABOUT CLASSES, NOT ABOUT NUMBERS. Measured 11.09 across the 242 show worlds: «чётное + чётное», «even plus even» — NONE; «odd with odd» — NONE. Yet the word «чётный» occurs 3614 times: the corpus can say WHETHER A NUMBER IS EVEN and never once says what happens to PARITY under an operation. THE CORPUS KNOWS THE TEST AND NOT THE LAW. THE FOURTEENTH TRAP OF THE SERIES: ODD WITH ODD GIVES EVEN. The reader expects the property to pass to the total — «two odds will give an odd» — and gets the opposite. Parity is NOT INHERITED, it is ADDED: two remainders of one make a two, and the two goes into evenness. A PROPERTY OF THE PARTS DOES NOT PASS TO THE WHOLE BY ITSELF, AND IT IS EXACTLY HERE THAT THE READER BELIEVES IT DOES. Four genera: EVEN AND EVEN («even with even gives even: 4 = 2 × 2, and 6 = 2 × 3, and 4 + 6 = 10, and 10 = 2 × 5»); ODD AND ODD («odd with odd gives even, and not odd: 3 = 2 × 1 + 1, and 5 = 2 × 2 + 1, and 3 + 5 = 8, and 8 = 2 × 4») — the trap; EVEN AND ODD; THE FACTOR («an even factor makes the product even»). The first three are THE COMPLETE SWEEP OF ADDITION, and that is not excess: a law about classes is proved only by completeness of cases — two genera would make a rule, three make A LAW. A LAW ABOUT CLASSES SHOWN BY NOT ALL CASES IS A RULE WITH AN UNNAMED HOLE, and the house's self-check guards that completeness. The fourth genus speaks of another operation and therefore of another law: in multiplication ONE even factor suffices, where addition needs both; apart, the reader would carry the law of addition over to multiplication, and that would be a fifteenth trap, which this house extinguishes by its own presence. PARITY IS SHOWN BY THE WRITING AND NOT ANNOUNCED BY A WORD: «4 = 2 × 2» and «5 = 2 × 2 + 1» are the definition of even and odd given by counting; the court therefore checks not the word «even» but THE DECOMPOSITION, and substituting «= 2 × 2» by «= 2 × 3» breaks the page. All 358 pages are read and confirmed by the court of arithmetic as well.",
+      "act": [
+        "recount",
+        "compare",
+        "generalize"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "opchoice",
       "file": "datasets/genesis_opchoice.txt",
       "genre": "CHOOSING THE OPERATION — which sign the SITUATION itself requires, and why that one. The corpus taught counting, and it taught naming the operation WHEN THE QUESTION NAMES IT («what is 20 plus 5?», «compute 20 plus 5»): the sign stands in the question and there is nothing to choose. The sweep of the canon against its own reader held eight lies at a threshold of zero, and four of them were ONE hole: the reader COUNTS RIGHT and TAKES THE WRONG OPERATION — «Ира нашла 11 орехов. она потеряла 9» answered 11 + 9 = 20; «Ivan shared 6 coins among 3 friends» answered 18. The law here is bought by a MINIMAL PAIR, not by an example: two pages with THE SAME NUMBERS differing in exactly one word — the word that decides the sign — and the reason for the difference is named IN THE LINE itself. Three forks, each taken from a reader's error rather than from the completeness of a table: finding/losing (+ or −), sharing equally/repeating (÷ or ×), more by/fewer by (+ or −). The fourth error (a fraction leaving: 36 ÷ 4 = 9, then 36 − 9 = 27) is a CHAIN of two operations and is not closed here — that is said, not left silent. The deciding word is declared by a table read by the court, and a swapped sign or a swapped word is caught mechanically.",
@@ -5429,10 +5453,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 22920309,
+      "size": 22961678,
       "tiers": [],
       "text": "mix",
-      "lines": 298716
+      "lines": 299074
     },
     {
       "name": "full",
@@ -5447,10 +5471,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 37003586,
+      "size": 37044955,
       "tiers": [],
       "text": "mix",
-      "lines": 416254
+      "lines": 416612
     },
     {
       "name": "minimal",
