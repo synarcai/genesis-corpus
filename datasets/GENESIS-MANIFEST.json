@@ -1722,6 +1722,30 @@
       "actors": []
     },
     {
+      "name": "plaus",
+      "file": "datasets/genesis_plaus.txt",
+      "genre": "PLAUSIBILITY — THE COUNTING ADDS UP AND THE ANSWER IS IMPOSSIBLE. Measured 11.09 across the 247 show worlds: «может ли быть», «правдоподобн», «plausible» — NONE. The world of estimation counts approximately, the world of facts declares facts, the world of sufficiency decides whether the money is enough — and none of them asks whether the answer obtained is POSSIBLE AT ALL. THE NINETEENTH TRAP OF THE SERIES, AND IT IS THE OWN SISTER OF THE THIRTEENTH: a pupil weighing three hundred kilograms comes out of a perfectly correct calculation. The house of the remainder showed an equality that adds up with a wrong answer; here EVERYTHING adds up and the answer is impossible by the nature of the thing. A CHECK OF THE COUNTING IS NOT A CHECK OF THE ANSWER: A NUMBER CAN BE RIGHT AND IMPOSSIBLE AT ONCE. Four genera: PLAUSIBLE («a pupil weighs 33 kilograms, and that is plausible: 33 is greater than 10, and 33 is less than 100»); TOO MUCH («a pupil cannot weigh 363 kilograms, for that is 11 usual ones: 363 ÷ 33 = 11») — the trap; TOO LITTLE — for the impossible also comes from below, and a reader guarding one side would miss the other; THE COUNTING ADDS UP («the counting adds up and the answer is impossible: 3 × 121 = 363, and 363 is greater than 100») — the law of the house shown as a deed: the calculation is written out in full and correct, and beside it stands the comparison with the boundary that rejects it. THE BOUNDS OF THINGS ARE DECLARED BY A TABLE AND NOT DERIVED, AND THAT IS SAID ALOUD: how much a pupil weighs and how many hours a child sleeps is knowledge about the world, not a consequence of counting; there is nowhere to derive it from, and the house does not pretend to derive it. By the same law live the counting triples of Russian in `rugram` and the names of the shares: A FACT THAT CANNOT BE DERIVED IS DECLARED BY NAME. A BOUNDARY TAKEN FROM THE WORLD IS HONESTER THAN A BOUNDARY TAKEN FROM THE AIR, IF IT IS SAID WHERE IT CAME FROM. The things are only those declared in the counting table of the language: the first version took «комната», which is not in `rugram`, and the forging fell with a KeyError — A HOUSE THAT NEEDS AN UNDECLARED WORD CHOOSES BETWEEN TWO HONEST MOVES: TAKE ANOTHER WORD OR DECLARE THIS ONE IN THE LANGUAGE; THERE IS NO THIRD.",
+      "act": [
+        "recount",
+        "compare",
+        "generalize"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "opchoice",
       "file": "datasets/genesis_opchoice.txt",
       "genre": "CHOOSING THE OPERATION — which sign the SITUATION itself requires, and why that one. The corpus taught counting, and it taught naming the operation WHEN THE QUESTION NAMES IT («what is 20 plus 5?», «compute 20 plus 5»): the sign stands in the question and there is nothing to choose. The sweep of the canon against its own reader held eight lies at a threshold of zero, and four of them were ONE hole: the reader COUNTS RIGHT and TAKES THE WRONG OPERATION — «Ира нашла 11 орехов. она потеряла 9» answered 11 + 9 = 20; «Ivan shared 6 coins among 3 friends» answered 18. The law here is bought by a MINIMAL PAIR, not by an example: two pages with THE SAME NUMBERS differing in exactly one word — the word that decides the sign — and the reason for the difference is named IN THE LINE itself. Three forks, each taken from a reader's error rather than from the completeness of a table: finding/losing (+ or −), sharing equally/repeating (÷ or ×), more by/fewer by (+ or −). The fourth error (a fraction leaving: 36 ÷ 4 = 9, then 36 − 9 = 27) is a CHAIN of two operations and is not closed here — that is said, not left silent. The deciding word is declared by a table read by the court, and a swapped sign or a swapped word is caught mechanically.",
@@ -5549,10 +5573,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 23253134,
+      "size": 23336355,
       "tiers": [],
       "text": "mix",
-      "lines": 301542
+      "lines": 302340
     },
     {
       "name": "full",
@@ -5567,10 +5591,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 37336411,
+      "size": 37419632,
       "tiers": [],
       "text": "mix",
-      "lines": 419080
+      "lines": 419878
     },
     {
       "name": "minimal",
