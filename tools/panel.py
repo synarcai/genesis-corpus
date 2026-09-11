@@ -216,6 +216,7 @@ recache.установить()
            "parity_court",
            "pctchange_court",
            "pctdiff_court",
+           "mapscale_court",
            # …и ПОДОБИЕ: аналогия и её ПРОВЕРКА перекрёстным произведением
            "analog_court",
            # …и ОТКЛИК: совет собеседнику, чей закон суд сличает с домом

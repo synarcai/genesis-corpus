@@ -1674,6 +1674,30 @@
       "actors": []
     },
     {
+      "name": "mapscale",
+      "file": "datasets/genesis_mapscale.txt",
+      "genre": "THE MAP SCALE — THE GREATER THE NUMBER IN THE SCALE, THE SMALLER THE MAP. Measured 11.09 across the 245 show worlds: «масштаб карты», «scale of the map», the writing «1 : 1000» — NONE. The word «масштаб» occurs 43 times and all of it in PROSE: in Dahl («a measuring rod»), in definitions, and in the physics worlds about the scale of degrees. THE WORD IS THERE, THE DEED IS NOT: the corpus can say WHAT a scale is and never once converts a length by one. THE SEVENTEENTH TRAP OF THE SERIES, AND IT IS THE OWN SISTER OF THE FIRST: A SCALE OF 1 : 2000 IS SMALLER THAN A SCALE OF 1 : 1000, ALTHOUGH 2000 IS GREATER THAN 1000. The same inversion as with shares — the denominator grows, the share shrinks — only called by another word and living on a map. ONE INVERSION MET IN TWO AREAS IS ONE LAW, NOT TWO COINCIDENCES. Four genera: TO THE GROUND («a scale of 1 : 1000, and 3 centimetres on the map are 30 metres on the ground: 3 × 1000 = 3000, and 3000 ÷ 100 = 30»); TO THE MAP — the reverse move; SMALLER — the trap; HOW MANY TIMES («on a map of scale 1 : 1000 every length is reduced 1000 times») — what the writing itself means. The first and the second are a minimal pair by the direction of the move: the same numbers, the same scale, and the difference in one place — whether one multiplies by the scale or divides by it; apart, the reader would learn one direction and be stuck on the reverse task. The fourth genus says what the writing MEANS, and without it the first three would be devices without a notion: «1 : 1000» is not a pair of numbers but A RATIO — the very thing the house of proportion showed a day earlier. A SCALE IS A PROPORTION APPLIED TO THE GROUND. The units are converted through a hundred, and that is SHOWN BY COUNTING and not announced: «3000 ÷ 100 = 30» stands on the page, for the world of units has already declared «one metre equals 100 centimetres», and the house does not start a second declaration where the corpus holds the first. The scales are the common ones and all multiples of a hundred: otherwise the conversion into metres would give a fraction and the house would speak of the decimal writing — the subject of a neighbour.",
+      "act": [
+        "recount",
+        "compare",
+        "generalize"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "opchoice",
       "file": "datasets/genesis_opchoice.txt",
       "genre": "CHOOSING THE OPERATION — which sign the SITUATION itself requires, and why that one. The corpus taught counting, and it taught naming the operation WHEN THE QUESTION NAMES IT («what is 20 plus 5?», «compute 20 plus 5»): the sign stands in the question and there is nothing to choose. The sweep of the canon against its own reader held eight lies at a threshold of zero, and four of them were ONE hole: the reader COUNTS RIGHT and TAKES THE WRONG OPERATION — «Ира нашла 11 орехов. она потеряла 9» answered 11 + 9 = 20; «Ivan shared 6 coins among 3 friends» answered 18. The law here is bought by a MINIMAL PAIR, not by an example: two pages with THE SAME NUMBERS differing in exactly one word — the word that decides the sign — and the reason for the difference is named IN THE LINE itself. Three forks, each taken from a reader's error rather than from the completeness of a table: finding/losing (+ or −), sharing equally/repeating (÷ or ×), more by/fewer by (+ or −). The fourth error (a fraction leaving: 36 ÷ 4 = 9, then 36 − 9 = 27) is a CHAIN of two operations and is not closed here — that is said, not left silent. The deciding word is declared by a table read by the court, and a swapped sign or a swapped word is caught mechanically.",
@@ -5501,10 +5525,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 23100150,
+      "size": 23190132,
       "tiers": [],
       "text": "mix",
-      "lines": 300194
+      "lines": 300914
     },
     {
       "name": "full",
@@ -5519,10 +5543,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 37183427,
+      "size": 37273409,
       "tiers": [],
       "text": "mix",
-      "lines": 417732
+      "lines": 418452
     },
     {
       "name": "minimal",
