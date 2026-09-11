@@ -16,7 +16,7 @@
 - **`links`** (17566 строк; declared, whole_only)  
   **CONVERSATION LINKS** — a question whose subject stands in the PREVIOUS reply (the owner's order, 04.09, item 5; the BESEDA band measures this genus mute 15 of 15).
 - **`school_biling_v2c`** (11380 строк; recompute, whole_only)  
-  arithmetic school (3 surfaces)
+  **THE SCHOOL OF ARITHMETIC IN THREE SURFACES** — the largest show world of the corpus (11 380 lines, 470 858 bytes) and, until 12.09, the one that said least about itself: thirty characters of declaration, «arithmetic school (3 surfaces)».
 - **`svamp`** (6794 строк; recompute, whole_only)  
   **SVAMP SHAPES** — the eight shapes of the live SVAMP band that no frame of the corpus held (d5, 06.09, by weight on 726 tacts): the hidden quantity «some» and the heads of the total (in all, altogether, in total, a total of, now has N left); the oblique pr…
 - **`holes`** (6640 строк; recompute, unsigned_only)  
@@ -34,7 +34,7 @@
 - **`everyday`** (4578 строк; recompute, declared, whole_only, unsigned_only)  
   **everyday life, and every line of it CARRIES A COMPUTABLE GROUND: things counted, containment walked through a declared tree, time ordered by a declared row, the past of a verb by rule with irregulars named, comparison by subtraction, and what remains afte…
 - **`numbers`** (4220 строк; recompute, whole_only)  
-  number theory: primes, unique factorisation, divisors, congruence modulo n, coprimality
+  **NUMBER THEORY AS FIVE QUESTIONS, EACH ANSWERED WITH ITS WITNESS** — declared until 12.09 in eleven words.
 - **`cross`** (4052 строк; recompute, whole_only)  
   **CROSSING** — the question head and the NOTATION OF THE OPERATION are two independent axes, and the corpus showed them locked together. holon's finding on the live canon: the organism answers «what is 17 plus 25», «how much is 17 + 25», «17 plus 25 equals?…
 - **`sceneforms`** (3818 строк; declared, whole_only)  
@@ -58,7 +58,7 @@
 - **`joints`** (2700 строк; declared, whole_only)  
   **THE JOINT BETWEEN TWO NUMERIC PHRASES** — a fan of words in ONE position, and that position with NO word at all (32's number of 04.09).
 - **`genesis_story`** (2686 строк; recompute, whole_only, unsigned_only)  
-  story as third surface (verb algebra)
+  **THE STORY AS A THIRD SURFACE** — THE OPERATION IS CARRIED BY THE VERB AND NOT BY A SIGN, declared until 12.09 in five words: «story as third surface (verb algebra)».
 - **`gsmforms`** (2591 строк; recompute, exact_only)  
   **school forms of GSM8K (owner's word 03.09: band g1 to 100 %; e9's FORM-MUTE named the question families whose form with an answer lives in no world)** — first layer of eight families: the total number of X (sum over carriers), temperature in degrees below…
 - **`planforms`** (2520 строк; recompute, whole_only)  
@@ -110,9 +110,9 @@
 - **`measureof`** (1254 строк; recompute, whole_only)  
   **THE MEASURE THROUGH «of»** — the number counts the VESSEL and the goods stand behind the preposition (07.09).
 - **`genesis_units`** (1218 строк; recompute, whole_only)  
-  quantities, units, fractions
+  **QUANTITIES, UNITS AND SHARES** — one world doing three deeds, declared until 12.09 in three words: «quantities, units, fractions».
 - **`statistics`** (1192 строк; recompute, whole_only)  
-  counting, chance and the middle of a set
+  **THE MIDDLE OF A LIST** — MEAN, MEDIAN AND RANGE, EACH DEFINED BEFORE IT IS ASKED. Declared until 12.09 in five words.
 - **`money_langs`** (1188 строк; recompute, unsigned_only)  
   **MONEY WITH THE DECIMAL COMMA in nine languages (the owner's word: every language in surplus; the money world wrote «16.50 dollars»/«$16.50» and «16 рублей 50 копеек»** — Europe writes the comma): the bridge «16,50 Euro sind 1650 Cent: 16 × 100 = 1600, 160…
 - **`ceilfloor`** (1186 строк; recompute, whole_only)  
@@ -248,7 +248,7 @@
 - **`roundforms`** (432 строк; declared, whole_only)  
   **ROUNDING** — the rule of the half is DECLARED, not derived (06.09).
 - **`aggregate`** (430 строк; recompute, whole_only, unsigned_only)  
-  aggregate genus: a fact of a plural bearer
+  **THE AGGREGATE** — A FACT OF SEVERAL BEARERS AND THE FOUR HEADS THAT ASK FOR IT, declared until 12.09 in six words: «aggregate genus: a fact of a plural bearer».
 - **`timeunits`** (420 строк; recompute, whole_only)  
   **TIME UNITS IN NINE LANGUAGES** — «сколько минут в двух часах? 120: 2 × 60 = 120.», hour → minutes, minute → seconds, week → days, day → hours, for two to five of the larger unit, the count in words for two to four in the case the phrase needs (в двух часа…
 - **`gsmlex`** (400 строк; recompute, whole_only, unsigned_only)  
@@ -327,21 +327,21 @@
 Миров 34, строк 109701.
 
 - **`lang_de`** (8274 строк; declared, whole_only)  
-  german as a LANGUAGE: four cases on the article, six persons
+  **THE GERMAN LAYER** — FOUR CASES CARRIED BY THE ARTICLE, EACH IN ITS OWN FRAME. Declared until 12.09 in nine words.
 - **`lang_es`** (6776 строк; declared, whole_only)  
   es as a LANGUAGE: numerals, six-person present, noun with article in two numbers, refusal pairs (tier 1: structure green, forms agree with the pack's own rules)
 - **`lang_sw`** (5820 строк; declared, tier1_unverified, whole_only)  
   **swahili: NOUN CLASSES, where the class of the noun governs the PREFIX of verb, adjective and numeral alike** — agreement that changes the BEGINNING of a word, not its end (tier 1: structure green, forms agree with the pack's own rules)
 - **`lang_zh`** (5470 строк; declared, whole_only)  
-  chinese as a LANGUAGE: aspect particles and measure words, no alphabet
+  **THE CHINESE LAYER** — A LANGUAGE THAT COUNTS WITHOUT INFLECTING. Declared until 12.09 in ten words.
 - **`lang_ru`** (5136 строк; declared, whole_only)  
-  russian as a LANGUAGE: paradigms, graphemes, irregulars
+  **THE RUSSIAN LAYER** — WHAT THE PACK DECLARES AND WHAT THIS WORLD ACTUALLY SHOWS, declared until 12.09 as «russian as a LANGUAGE: paradigms, graphemes, irregulars».
 - **`lang_pl`** (4569 строк; declared, tier1_unverified, whole_only)  
   polish: the slavic count law on a latin alphabet, nine diacritics (tier 1: structure green, forms agree with the pack's own rules)
 - **`lang_pt`** (4270 строк; declared, tier1_unverified, whole_only)  
   pt as a LANGUAGE: numerals, six-person present, noun with article in two numbers, refusal pairs (tier 1: structure green, forms agree with the pack's own rules)
 - **`lang_en`** (4196 строк; declared, whole_only)  
-  english as a LANGUAGE: the third-person -s and the plurals that obey nothing
+  **THE ENGLISH LAYER** — THE THIRD-PERSON -s AND THE PLURALS THAT OBEY NOTHING. Declared until 12.09 in eleven words; measured 12.09 they hold up, and here are the numbers behind them. 4196 lines, 1507 asking.
 - **`lang_id`** (4135 строк; declared, tier1_unverified, whole_only)  
   **indonesian: the SIMPLEST of them all, and that is its value** — no tense, no gender, no case, no agreement at all; the plural is the word said TWICE (buku-buku).
 - **`lang_it`** (4044 строк; declared, tier1_unverified, whole_only)  
@@ -389,7 +389,7 @@
 - **`unit_counts`** (720 строк; declared, whole_only)  
   **COUNTED UNITS** — «1 day, 2 days, 5 days» IN ONE FRAME (32's tomograph of the rate, 03.09): the market of count forms buys the pair «day / days» only inside ONE frame carrying at least three different numbers, and the corpus said «worked on 1 day» in one …
 - **`verbs`** (620 строк; declared, recompute, whole_only, unsigned_only)  
-  benchmark verbs and the perfect shown beside its past
+  **THE VERB FORM OVER ONE FACT** — declared until 12.09 in eight words.
 - **`ruverbs`** (355 строк; declared, whole_only, unsigned_only)  
   **russian verb frames at the mass of the english ones: present, past with the actor's gender, echo question, sum frame, and anaphora** — the missing link of ru-anaphora named by measurement
 - **`degrees`** (270 строк; declared, unnamed)  
@@ -402,11 +402,11 @@
 - **`notationvar`** (5386 строк; recompute, reversibility, declared_pairs_only)  
   **one sign, two scripts: the same record written in ASCII and in typography, and the court reduces both to one canon. The corpus knew every sign in ONE script only, and in different signs** — in DIFFERENT ones: «x^2» 1702 times and «x²» ZERO, «≤» 351 and «<…
 - **`wordparts`** (4767 строк; recompute, unnamed)  
-  **what a word is made of: «talo + ssa = talossa»** — the composition of forms the packs already declare, shown only where the stem stands unchanged (684 forms in 22 languages)
+  **MORPHOLOGY WRITTEN AS ADDITION** — «ei + er = eier».
 - **`inquiry`** (3902 строк; recompute, whole_only)  
   **the ladder of inquiry: for six genera** — primality, divisibility, the sum of odd numbers, the conditional, injectivity, the square — four rungs are shown, definition then a decided case with its ground then a counterexample then the law; both tongues, ev…
 - **`items`** (2357 строк; recompute, declared, whole_only, unsigned_only)  
-  living item lexicon of GSM8K: item role and number-free life
+  **THE THING NAMED BEFORE IT IS COUNTED** — declared until 12.09 in eight words.
 - **`definitions`** (2141 строк; declared, whole_only, unsigned_only)  
   **definitions from the dictionaries of the shelf (holon's order 02.09: the organism is mute on «what is entropy» / «что такое сознание»** — no line of the corpus defined anything): «X is <quote>: Webster's Unabridged Dictionary, 1913.» and «X — это <цитата>…
 - **`inquiry_pt_nl`** (2108 строк; recompute, whole_only)  
@@ -467,7 +467,7 @@
 - **`plan`** (576 строк; recompute, whole_only, unsigned_only)  
   order-row with a condition and the REPORT of its execution: the ledger of observation (files, runs, exit, millis) and a verdict that FOLLOWS from comparing the ledger with the condition (nine languages, both branches)
 - **`proof`** (520 строк; recompute, whole_only)  
-  the forms of a proof: induction, cases, counterexample, direct
+  **THE FORMS OF PROOF, EACH SHOWN ON AN INSTANCE** — declared until 12.09 in eight words.
 - **`doctree`** (516 строк; declared, reversibility, unnamed)  
   **document structure: a link is an EDGE and is judged by RESOLUTION against a declared tree** — relative paths counted from the document's own folder, anchors into a document, slugification of a heading into an anchor, order by sidebar_position, and links t…
 - **`opchoice`** (432 строк; recompute, whole_only)  
@@ -504,7 +504,7 @@
 - **`speech`** (1910 строк; declared, recompute, whole_only)  
   connected speech: anaphora across a sentence, the inference connective, the relative clause, quantifier with domain, nominalisation, sufficient and necessary
 - **`formulas`** (1122 строк; recompute, whole_only)  
-  formulas and mermaid diagrams, described in four languages
+  **FORMULA AND DIAGRAM AS RECORDS TO BE EXECUTED** — declared until 12.09 in eight words.
 - **`notation`** (1102 строк; recompute, unsigned_only)  
   how a number is written: per cent, money, mixed numbers, ascii signs
 - **`dataformat`** (640 строк; same_object, flat_only)  
@@ -529,7 +529,7 @@
 - **`compare_mult`** (2759 строк; recompute, whole_only, unsigned_only)  
   **multiple comparison, and the two frames English keeps apart standing SIDE BY SIDE ON THE SAME NUMBERS: «as many as» for the countable and «as much as» for the uncountable** — the organism had bought one and not the other because they never stood together;…
 - **`genesis_compare`** (1440 строк; recompute, whole_only, unsigned_only)  
-  comparative genus (times-as / more-than / fewer-than)
+  **COMPARISON BY DIFFERENCE, BY RATIO, AND BY BOTH AT ONCE** — declared until 12.09 in eight words.
 - **`digitlen`** (998 строк; recompute, whole_only)  
   **THE LENGTH OF THE WRITING** — FOR WHOLE NUMBERS, A LONGER WRITING MEANS A GREATER NUMBER. The trap of a neighbour stands on a rule the corpus never stated: the world of the decimal share (`dec`) says outright that «a reader who knows whole numbers compare…
 - **`unitcmp`** (908 строк; recompute, declared, whole_only)  
@@ -568,45 +568,30 @@
     ОБЪЯВЛЕНИЕ В ТРИДЦАТЬ ЗНАКОВ НЕ ЛЖЁТ И НЕ ГОВОРИТ: читатель узнаёт имя мира
     и ничего сверх него.
 
-Миров: **63** из 257.
+Миров: **47** из 257.
 
 - `ruler_dense` — 15 знаков
 - `genesis_l4` — 20 знаков
 - `genesis_bignum` — 27 знаков
 - `md_structures` — 27 знаков
-- `genesis_units` — 28 знаков
-- `school_biling_v2c` — 30 знаков
-- `genesis_story` — 37 знаков
-- `statistics` — 40 знаков
-- `aggregate` — 42 знаков
 - `md_latex` — 47 знаков
 - `prog` — 47 знаков
 - `rates` — 49 знаков
-- `genesis_compare` — 53 знаков
-- `verbs` — 53 знаков
 - `eng_proof` — 54 знаков
 - `fractions` — 54 знаков
-- `lang_ru` — 55 знаков
 - `algebra_units` — 57 знаков
-- `formulas` — 58 знаков
 - `depletion` — 59 знаков
-- `items` — 60 знаков
-- `lang_de` — 60 знаков
-- `proof` — 62 знаков
 - `conversions` — 64 знаков
 - `logic_sets` — 64 знаков
 - `physics` — 64 знаков
 - `notation` — 68 знаков
 - `remainders` — 69 знаков
-- `lang_zh` — 70 знаков
 - `machine` — 70 знаков
 - `programs` — 74 знаков
 - `cybernetics` — 75 знаков
 - `algebra` — 76 знаков
-- `lang_en` — 76 знаков
 - `algorithms` — 81 знаков
 - `gsmwide` — 87 знаков
-- `numbers` — 87 знаков
 - `realverbs` — 87 знаков
 - `geometry` — 90 знаков
 - `gsmlex` — 91 знаков
@@ -627,7 +612,6 @@
 - `lang_ja` — 160 знаков
 - `lang_pt` — 160 знаков
 - `compsci` — 169 знаков
-- `wordparts` — 171 знаков
 - `mathfound` — 185 знаков
 - `ruverbs` — 185 знаков
 - `lang_ko` — 191 знаков

@@ -7,10 +7,11 @@
     {
       "name": "school_biling_v2c",
       "file": "datasets/school_biling_v2c.txt",
-      "genre": "arithmetic school (3 surfaces)",
+      "genre": "THE SCHOOL OF ARITHMETIC IN THREE SURFACES — the largest show world of the corpus (11 380 lines, 470 858 bytes) and, until 12.09, the one that said least about itself: thirty characters of declaration, «arithmetic school (3 surfaces)». Measured 12.09 line by line: 4766 lines in Russian, 5096 in English, the rest shared; 7884 lines carry an equals sign and 5300 ask a question, and every question carries its own answer on the SAME line. THE THREE SURFACES ARE THE THREE DRESSES OF ONE COUNTING, and they are counted: BY DIGITS — 7934 lines («вычисли 9 × 9. 9 × 9 = 81.», «how much is 20 − 13? 20 − 13 = 7.»); BY WORDS — 3146 lines, where not one digit appears and the whole counting is spoken («чему равно пять умножить на три? пять умножить на три равно пятнадцать.», «семь плюс ноль равно семь.»); BY READING — 262 lines that bridge the written sign to its spoken name («число 12 читается как двенадцать», «the sign ( is read as open bracket», «the letter y is read as wy»). ONE AND THE SAME COUNTING WEARS THREE DRESSES, AND A READER WHO KNOWS ONLY ONE CANNOT READ THE OTHER TWO: a reader trained on «9 × 9 = 81» meets «девять умножить на девять равно восемьдесят один» and has nothing to recompute, for there is no digit in it. The third surface is the smallest and the deepest: THE SPOKEN NAME OF A SIGN IS DECLARED, NOT DERIVED — no counting yields the fact that «(» is called an open bracket or that «12» is spoken «двенадцать»; it is knowledge about writing, and the world states it rather than pretending to deduce it. By that same law live the counting triples of `rugram` and the bounds of things in `plaus`: A FACT THAT CANNOT BE DERIVED IS DECLARED BY NAME. The operations are named in words 3180 times — плюс 1164, минус 872, умножить 672, делить 472 — and «равно» stands 4224 times: the word of the equals sign is itself part of what is taught. Boundary: whole numbers only, and no negative value in 11 380 lines — both measured by the manifest's own detectors, not asserted. AND THE WORLD REFUSES FIFTY-THREE TIMES WITHOUT EVER DECLARING IT: «делится ли 85 на 9 нацело? нет: 9 × 9 = 81, остаток 4» is a refusal BY SUBSTANCE — the question asks whether a whole quotient EXISTS, and the answer denies it and names the ground on the same line. The act of refusal is declared from 12.09, and the manifest court now checks it: a world declaring refusal is bound to show one. AN ACT PERFORMED FIFTY-THREE TIMES AND NEVER DECLARED IS A DEED WITHOUT A NAME, AND WHAT HAS NO NAME CANNOT BE ASKED FOR: a reader looking for worlds that teach refusal would not have found the largest one. Its nearest neighbour by the word SURFACE is `surfaces`, and the difference is what wears the dress: there an ACT is said three ways (a nominalisation, a named result, a question to each), here a NUMBER is — by digits, by words, by its spoken name. ONE DRESSES THE OPERATION, THE OTHER DRESSES THE NUMBER.",
       "act": [
         "recount",
-        "translate"
+        "translate",
+        "refuse"
       ],
       "oracle": [
         "recompute"
@@ -68,7 +69,7 @@
     {
       "name": "genesis_units",
       "file": "datasets/genesis_units.txt",
-      "genre": "quantities, units, fractions",
+      "genre": "QUANTITIES, UNITS AND SHARES — one world doing three deeds, declared until 12.09 in three words: «quantities, units, fractions». Measured 12.09: 1218 lines, 559 in Russian and 659 in English, 240 of them asking and answering on the same line. THE FIRST DEED IS CONVERSION, and it runs on FIVE DECLARED BASES, each counted: sixty (hours→minutes, minutes→seconds, 120 lines), a thousand (kilometres→metres, kilograms→grams, 120), a hundred (metres→centimetres, roubles→kopecks, 60), seven (weeks→days, 60) and twelve (60). THE BASE OF A CONVERSION IS A PROPERTY OF THE PAIR OF UNITS AND NOT OF THE NUMBER — the law that `unitcmp` says outright and this world SPENDS on every line: «2 hours equal 120 minutes: 2 × 60 = 120», «5 километров равно 5000 метров: 5 × 1000 = 5000». WHAT ONE HOUSE DECLARES, ANOTHER SPENDS. THE SECOND DEED IS A SHARE OF A NUMBER — 200 lines, «половина от 72 равно 36», «a quarter of 36 equals 9»: the share is named by a WORD and the answer by a number, and no fraction sign appears. THE THIRD IS BARE DIVISION — 100 lines of «6 ÷ 2 = 3», the inverse move of the conversion written without any unit at all. The three stand together and not apart because a conversion IS a multiplication by a declared base and a share IS a division by one: A WORLD THAT SHOWS THE OPERATION AND HIDES ITS NAKED FORM TEACHES A RITUAL; one that shows both teaches the operation. Boundary: whole totals only and no negative value in 1218 lines, both measured by the manifest's own detectors. Its neighbour by the base is `mixedunits`, and the two deeds are opposite sides of one law: THIS world MULTIPLIES by the base and crosses nothing («2 hours equal 120 minutes»), THAT one CARRIES ACROSS it and never leaves the mixed writing («2 kg 300 g + …»). A BASE IS SPENT TWICE: once to convert, once to carry.",
       "act": [
         "recount"
       ],
@@ -85,7 +86,7 @@
     {
       "name": "genesis_story",
       "file": "datasets/genesis_story.txt",
-      "genre": "story as third surface (verb algebra)",
+      "genre": "THE STORY AS A THIRD SURFACE — THE OPERATION IS CARRIED BY THE VERB AND NOT BY A SIGN, declared until 12.09 in five words: «story as third surface (verb algebra)». Measured 12.09: 2686 lines, 1308 in Russian and 1378 in English, 1176 of them asking — and ONLY SEVENTY carry an equals sign. The whole arithmetic of the world is spoken: «у Коли было 9 книг. Коля отдал 4 книги. у Коли осталось 5 книг.» THE VERB IS THE OPERATOR: «отдал», «gave» take away; «получил», «купил», «bought» add; «было»/«had» opens the ledger and «осталось»/«стало»/«left» closes it. Counted: было 480, стало 480, осталось 480, had 480, left 480, gave 240, отдал 240, bought 240, купил 240 — the frame is one and the verbs are its two directions. A READER WHO KNOWS THE SIGNS AND NOT THE VERBS CANNOT COUNT THIS WORLD AT ALL: there is nothing to recompute in a line that holds no operator, and the court of arithmetic is nearly blind here by construction, not by neglect — seventy lines of 2686. That is why the world exists: THE THIRD SURFACE IS NOT A DRESS OF THE SECOND BUT ITS OWN LANGUAGE, and a corpus that shows only «9 − 4 = 5» teaches a reader who will stand mute before «отдал четыре». The ledger is always THREE STEPS — opening, movement, close — and the question stands after it, so that the answer is bought by the ledger and not by memory. Boundary: whole totals only and no negative value in 2686 lines, both measured by the manifest's own detectors; a holding never goes below zero, for a person cannot give away more than he has. Its twin in Russian is `ru_story`, and the difference is bought and named there: that world states the bearer EXPLICITLY in the closing fact («у пети осталось 5 яблок»), because a market law is bought only inside ONE episode; this one is bilingual and shows THE FRAME itself — opening, movement, close — in both tongues. ONE BUYS THE BEARER, THE OTHER BUYS THE FRAME.",
       "act": [
         "recount",
         "translate"
@@ -143,7 +144,7 @@
     {
       "name": "lang_ru",
       "file": "datasets/genesis_lang_ru.txt",
-      "genre": "russian as a LANGUAGE: paradigms, graphemes, irregulars",
+      "genre": "THE RUSSIAN LAYER — WHAT THE PACK DECLARES AND WHAT THIS WORLD ACTUALLY SHOWS, declared until 12.09 as «russian as a LANGUAGE: paradigms, graphemes, irregulars». Measured 12.09 line by line: 5136 lines, median five words. THE PACK `ru.json` DECLARES FORTY-THREE FIELDS AND THIS WORLD EMITS ONLY PART OF THEM, and the difference is said here rather than left for the reader to discover: graphemes ARE declared by the pack and are spent NOT HERE but in `glyphs` (493 lines carrying «буква») and by the script court — this world holds ZERO lines about a letter, a sound, a syllable or a stress. A DECLARATION THAT NAMES WHAT THE PACK HOLDS AND NOT WHAT THE WORLD SHOWS SENDS THE READER WHERE IT IS EMPTY. What the world does show, counted: questions with «кто / что / сколько / какой / где / когда» — 1366; the person of the verb, six persons from «я» to «они» — 1260; counting SPOKEN IN WORDS, with «плюс», «минус», «умножить», «делить», «равно» and no digit at all — 1056; definitions of the shape «X это Y» — 525; the denial of existence «нет комнаты» — 210; the dative of the glad («маша рада книге») — 210; and the IRREGULAR PAST — 189 lines carrying «шёл», «нёс», «принёс», «нашёл», «мог», the very verbs whose feminine form `rugram` declares by name because no rule yields it. AN EXCEPTION IS DECLARED, IT DOES NOT KEEP SILENT: an irregular verb does not break the rule — it is named in a list, and that is KNOWLEDGE ABOUT THE LANGUAGE and not a hole in it. Only 135 lines of 5136 carry an equals sign and 675 carry a digit: this is a world of SPEECH, and the courts that read it are those of generation and of form, not of counting. AND TWENTY-FIVE LINES SHOW WHAT THE LANGUAGE DOES NOT ALLOW, marked with the pack's own sign «¬»: «¬ пять книга» (the counting form is wrong), «¬ маша получил зонт» (the past tense does not agree in gender), «¬ книга плюс дом равно?» (a counting asked of things that are not counted). Each stands beside its lawful twin, and that is why it is readable at all. A LANGUAGE IS TAUGHT BY ITS BOUNDARY AS MUCH AS BY ITS RULE: a reader who has seen only the sayable does not know where it ends. Boundary: whole totals only and no negative value, both measured.",
       "act": [
         "inflect"
       ],
@@ -165,7 +166,7 @@
     {
       "name": "genesis_compare",
       "file": "datasets/genesis_compare.txt",
-      "genre": "comparative genus (times-as / more-than / fewer-than)",
+      "genre": "COMPARISON BY DIFFERENCE, BY RATIO, AND BY BOTH AT ONCE — declared until 12.09 in eight words. Measured 12.09: 1440 lines, English only, and EVERY ONE asks; 720 carry the arithmetic beside the answer. Four shapes, counted: MORE BY A NUMBER — 144 («Felix has 1 more cookie than Carla. Carla has 3 cookies»); FEWER BY A NUMBER — 143, the same shape run downward, without which a reader would take comparison for addition; SO MANY TIMES — 192 («Ben has 2 times the amount of eggs that Elena has»); AND THE TWO WELDED — 288, the largest genus of the world («Felix has 1 more than twice the number of cards that Ben has»). A DIFFERENCE ANSWERS «BY HOW MUCH» AND A RATIO ANSWERS «HOW MANY TIMES», AND THE WELDED SHAPE ASKS BOTH IN ONE BREATH — that is why it is the largest here: a reader who has learned each apart still stumbles where they stand together, for the order of the two operations decides the answer. The signs bear this out: 434 lines multiply, 288 add and 143 subtract. Eight bearers carry the frame and the thing is always the same on both sides, so that nothing but the comparison is in question. Boundary: whole totals only and no negative value in 1440 lines, both measured — a holding is never fewer than none. Its neighbour is `relcompare`, and the two divide one subject cleanly: THIS world shows the FORMS of comparison and asks for the absolute holding they imply; THAT one teaches that the comparison NUMBER ITSELF belongs to the difference and to NEITHER BEARER — «458 more girls than boys» names no count of girls. ONE BUYS THE SHAPE OF THE QUESTION, THE OTHER BUYS WHOSE THE NUMBER IS.",
       "act": [
         "compare"
       ],
@@ -186,7 +187,7 @@
     {
       "name": "lang_de",
       "file": "datasets/genesis_lang_de.txt",
-      "genre": "german as a LANGUAGE: four cases on the article, six persons",
+      "genre": "THE GERMAN LAYER — FOUR CASES CARRIED BY THE ARTICLE, EACH IN ITS OWN FRAME. Declared until 12.09 in nine words. Measured 12.09: 8274 lines, the largest language layer of the corpus. THE CASE IS NOT NAMED, IT IS PUT TO WORK, and each case has a frame that forces it: the NOMINATIVE under «hier steht der / die / das» — 675 lines; the ACCUSATIVE under «ich sehe den / die / das» — 905; the DATIVE under «neben dem / der» — 675; the GENITIVE under «wegen des / der» — 900. A CASE SHOWN WITHOUT A FRAME THAT DEMANDS IT IS A LABEL, NOT A LAW: the article changes because the preposition or the verb requires it, and the reader sees the requirement on the same line. Beside them: 2502 lines put the verb through its six persons, 1810 count IN WORDS («sechs plus fünf gleich elf» — 225 lines carry an equals sign and the rest speak it), and 1010 ask «was ist …?». Twenty-five lines are marked «¬» — forms the language does NOT allow, each standing beside its lawful twin: A LANGUAGE IS TAUGHT BY ITS BOUNDARY AS MUCH AS BY ITS RULE. The layer is a consequence of the pack `de.json`: every line is generated from declared templates and declared words, and the courts of generation and of form judge it by REPRODUCING it — not by agreeing with it. Its nearest kin is `lang_ru`, and the two make one lesson by their difference: RUSSIAN CARRIES THE CASE ON THE NOUN ITSELF, GERMAN CARRIES IT ON THE ARTICLE BEFORE IT — «книге» against «der Frau». A reader who has learned that a case is a noun's ending will look for it in the wrong word here, and a reader taught only German will look for an article that Russian does not have. ONE GRAMMAR IS NOT A TRANSLATION OF ANOTHER: the same office is done by a different part of speech. Boundary: whole totals only, measured.",
       "act": [
         "inflect"
       ],
@@ -208,7 +209,7 @@
     {
       "name": "items",
       "file": "datasets/genesis_items.txt",
-      "genre": "living item lexicon of GSM8K: item role and number-free life",
+      "genre": "THE THING NAMED BEFORE IT IS COUNTED — declared until 12.09 in eight words. Measured 12.09: 2357 lines, English only; 1391 asking and 1253 carrying an equals sign. The world does two deeds and the first pays for the second. IT NAMES: 812 lines where a thing simply IS somewhere or is liked or looked at («the apples are on the table», «umar likes the apps», «vera looks at the year»), 228 opening with «there are» and 122 asking «what are the …?» — a bare inventory with no arithmetic in it at all. IT COUNTS: 305 lines run a ledger of three steps over the very same things («ida made 3 roses. ida sold 1 of them. then ida made 1 more roses»), and 1253 ask «how many». A READER CANNOT COUNT WHAT HE CANNOT NAME: the naming half is not filler but the ground of the counting half, and that is why the act of this world is `name` though half its lines add and subtract. The things are deliberately strange — acres, apps, calories, vlogs — so that the answer cannot come from knowing the noun. Boundary: whole totals only and no negative value in 2357 lines, both measured; 650 lines add and 908 subtract, and a holding never falls below none.",
       "act": [
         "name"
       ],
@@ -2581,7 +2582,7 @@
     {
       "name": "aggregate",
       "file": "datasets/genesis_aggregate.txt",
-      "genre": "aggregate genus: a fact of a plural bearer",
+      "genre": "THE AGGREGATE — A FACT OF SEVERAL BEARERS AND THE FOUR HEADS THAT ASK FOR IT, declared until 12.09 in six words: «aggregate genus: a fact of a plural bearer». Measured 12.09: 430 lines, English only, and EVERY ONE of them asks — 430 questions, 215 carrying the arithmetic beside the answer. The frame is one: two bearers hold the same kind of thing, and the question is their TOTAL («Carla has 9 paintings. Felix has 6 paintings. how many paintings do Carla and Felix have in all?»). What the world buys is not the addition — the corpus adds in a hundred worlds — but THE HEAD OF THE QUESTION, and the heads are four and counted: «together» 216, «altogether» 110, «in all» 101, «in total» 71. A READER TRAINED ON ONE HEAD STANDS MUTE BEFORE THE OTHER THREE: the arithmetic is the same and the phrase is not, and it is the phrase that is asked. The holding is said three ways as well — «has» 430, «hold» 151, «have» 135 — so that the bearer's verb is not a single habit either. AND THE BEARERS ARE NOT ALWAYS TWO: 360 lines hold two and SEVENTY hold three («Carla has 5 balloons. Grace has 3 balloons. Felix has 1 balloon…»). This measurement corrected the first draft of THIS VERY DECLARATION, which said «two bearers» from memory — the probe `tools/world_probe.py`, forged out of five identical measurements made by hand, caught the sixth on its first run. A TOOL BUILT FROM THE HAND'S REPETITION PAYS FOR ITSELF THE FIRST TIME THE HAND IS WRONG. Eight bearers (Ava, Ben, Carla, Dan, Elena, Felix, Grace, Hugo) and 125 distinct things carry the frame, and the things are deliberately odd — chimichangas, vlogs, calories, seconds — so that no reader can answer from the meaning of the noun instead of the counting: A THING WHOSE NAME TELLS NOTHING FORCES THE ANSWER TO COME FROM THE NUMBER. Boundary: whole totals only and no negative value in 430 lines, both measured by the manifest's own detectors.",
       "act": [
         "recount"
       ],
@@ -2647,7 +2648,7 @@
     {
       "name": "lang_en",
       "file": "datasets/genesis_lang_en.txt",
-      "genre": "english as a LANGUAGE: the third-person -s and the plurals that obey nothing",
+      "genre": "THE ENGLISH LAYER — THE THIRD-PERSON -s AND THE PLURALS THAT OBEY NOTHING. Declared until 12.09 in eleven words; measured 12.09 they hold up, and here are the numbers behind them. 4196 lines, 1507 asking. THE RULE AND ITS EXCEPTIONS STAND IN ONE WORLD AND ARE COUNTED: 2956 lines carry a regular plural in -s, and 158 carry one that obeys no rule at all — feet, mice, children, men, women, teeth, geese, oxen. AN EXCEPTION IS DECLARED BY NAME, NOT DERIVED: no rule yields «feet» from «foot», and a layer that showed only the regular plural would teach a reader to invent «foots». The third person adds its -s in 410 lines, and the tense is contrasted on the same frame — «today they …» 135 lines against «yesterday she …» 135 — so that what changes is visible beside what does not. The largest genus is not grammar but COUNTING IN WORDS: 1375 lines spell the arithmetic out («six plus five equals eleven»), of which only 161 carry an equals sign — ENGLISH IS TAUGHT HERE AS A LANGUAGE IN WHICH ONE COUNTS, not as a grammar beside a separate arithmetic. Twenty-five lines are marked «¬» — forms the language does not allow — each beside its lawful twin. The layer is a consequence of the pack `en.json` and is judged by REPRODUCTION. Its kin are `lang_ru`, `lang_de` and `lang_zh`, and the four together make one lesson: Russian carries agreement on the noun, German on the article, Chinese on a separate measure word, and English on almost nothing — a single -s in the third person and a handful of plurals that must be remembered. Boundary: whole totals only, measured.",
       "act": [
         "inflect"
       ],
@@ -2712,7 +2713,7 @@
     {
       "name": "lang_zh",
       "file": "datasets/genesis_lang_zh.txt",
-      "genre": "chinese as a LANGUAGE: aspect particles and measure words, no alphabet",
+      "genre": "THE CHINESE LAYER — A LANGUAGE THAT COUNTS WITHOUT INFLECTING. Declared until 12.09 in ten words. Measured 12.09: 5470 lines, not one of them in Latin or Cyrillic script. WHAT THE OTHER LAYERS TEACH BY ENDINGS, THIS ONE TEACHES BY WORD ORDER AND BY PARTICLES, and the difference is the lesson: 1085 lines turn on the copula 是 («我是人。», «你是人。», «他是人。», «她是人。» — the person changes and the verb does NOT), and 710 carry the MEASURE WORD 个, which neither `lang_ru` nor `lang_de` has at all — a word that must stand between a number and a noun and belongs to neither. A READER TAUGHT THAT NUMBER AGREEMENT LIVES IN AN ENDING WILL LOOK FOR IT WHERE THERE IS NONE: Chinese does not inflect, and the office done elsewhere by a case or a plural is done here by a separate word. Eight hundred and seventy lines count in Chinese words («六加五等于十一。» — six plus five equals eleven), of which 215 carry an equals sign and the rest speak it. Twenty-five lines are marked «¬» — what the language does not allow — each beside its lawful twin. The layer is a consequence of the pack `zh.json` and is judged by REPRODUCTION: the court regenerates the line from declared templates and declared words, and a line it cannot regenerate is false. Boundary: whole totals only, measured.",
       "act": [
         "inflect"
       ],
@@ -2860,7 +2861,7 @@
     {
       "name": "verbs",
       "file": "datasets/genesis_verbs.txt",
-      "genre": "benchmark verbs and the perfect shown beside its past",
+      "genre": "THE VERB FORM OVER ONE FACT — declared until 12.09 in eight words. Measured 12.09: 620 lines, English only, 310 asking and 310 carrying an addition. THE FACT IS ONE AND THE FORM IS MANY, and the world says the same holding twice in a row so that the two forms stand side by side: «Tara has baked 8 batches. Tara baked 8 batches.» Counted: the perfect «has baked» — 140; the simple past — 70; the third person singular with «every day» — 155; the plural «they» over the same fact — 155 («Sven delivers 9 meals every day. they deliver 9 meals every day.»); and the question with «did» — 240. A READER WHO KNOWS ONE FORM OF A VERB DOES NOT KNOW THE FACT: «did Vera plant» and «Vera planted» carry one event, and a corpus that shows only the second leaves the first unread. THE PAIR STANDS IN ONE LINE ON PURPOSE — two forms of one fact apart would be two facts, and the reader would have nothing to match. The arithmetic underneath is plain addition («Vera planted 4 flowers. Vera planted 4 flowers more. how many flowers did Vera plant in all?»), and it is plain deliberately: WHEN THE FORM IS WHAT IS TAUGHT, THE COUNTING MUST NOT COMPETE FOR THE READER. Boundary: whole totals only and no negative value in 620 lines, both measured.",
       "act": [
         "inflect"
       ],
@@ -3064,7 +3065,7 @@
     {
       "name": "numbers",
       "file": "datasets/genesis_numbers.txt",
-      "genre": "number theory: primes, unique factorisation, divisors, congruence modulo n, coprimality",
+      "genre": "NUMBER THEORY AS FIVE QUESTIONS, EACH ANSWERED WITH ITS WITNESS — declared until 12.09 in eleven words. Measured 12.09: 4220 lines, exactly half Russian and half English (2110 each), 2112 asking. Five families, counted: CONGRUENCE MODULO N — 968 lines, the largest («сравнимы ли …»); THE DIVISORS OF A NUMBER — 878; FACTORISATION INTO PRIMES — 720; PRIMALITY — 426 («является ли 2 простым числом? да: 2 простое; его делители — 1 и 2»); and COPRIMALITY — 408. AND NINE HUNDRED AND TWO LINES ARE REFUSALS WITH A GROUND — «скажи, простое ли 4. нет: 4 составное; 4 = 2 × 2» — more refusals than any other world of the corpus carries. A DENIAL ABOUT A NUMBER IS BOUGHT BY A WITNESS: «not prime» is not an opinion, it is a factorisation written on the same line, and 1408 lines carry the multiplication that buys it. THE ANSWER «NO» IS WORTH AS MUCH AS «YES» ONLY WHEN IT CARRIES ITS REASON. What this world declares as theory — unique factorisation and the divisors that follow from it — the world `factor` shows as a DEED on concrete numbers, and `reduce` SPENDS when it cancels a common factor; here the theory itself is asked and answered. Boundary: whole totals only, measured; no negative value in 4220 lines.",
       "act": [
         "recount",
         "decide"
@@ -3168,7 +3169,7 @@
     {
       "name": "formulas",
       "file": "datasets/genesis_formulas.txt",
-      "genre": "formulas and mermaid diagrams, described in four languages",
+      "genre": "FORMULA AND DIAGRAM AS RECORDS TO BE EXECUTED — declared until 12.09 in eight words. Measured 12.09: 1122 lines, 480 Russian and 522 English, 492 asking. FOUR FAMILIES, counted: THE AREA — 400 lines («the area of a rectangle 3 by 4 is 12», «целое ли число площадь треугольника с основанием 6 и высотой 4? да: 6 × 4 = 24, 24 ÷ 2 = 12»), where the formula is not recited but SPENT and the halving is written out; THE POWER — 450 («2 to the power 3 is 8»); THE ALGEBRAIC IDENTITY — 130 («a^2 + …», «(a + b)…»), the only family here whose letters no counting can check, and it is judged by substitution rather than by arithmetic; and THE DIAGRAM — 112 lines of «graph td;», a mermaid record that is not a picture but a WALK: nodes and edges that a court traverses. A FORMULA AND A DIAGRAM ARE SIGNS AND NOT ORNAMENT, and a corpus that shows them owes the same proof on them as on numbers — which is why they stand in a world with a court that EXECUTES them: substitution for the formula, traversal for the diagram. Forty lines carry a negative value and forty a refusal with a ground. Boundary: whole totals only, measured; the world declares no unsigned bound, for a signed coefficient belongs to an identity as much as to a number.",
       "act": [
         "translate"
       ],
@@ -3287,7 +3288,7 @@
     {
       "name": "statistics",
       "file": "datasets/genesis_statistics.txt",
-      "genre": "counting, chance and the middle of a set",
+      "genre": "THE MIDDLE OF A LIST — MEAN, MEDIAN AND RANGE, EACH DEFINED BEFORE IT IS ASKED. Declared until 12.09 in five words. Measured 12.09: 1192 lines, 576 Russian and 616 English, 692 asking. Counted: the MEDIAN — 408 lines, the MEAN — 292, the RANGE — 160, and 296 lines that are pure DEFINITION («медиана списка нечётной длины — это среднее по порядку число, когда список упорядочен»). THE DEFINITION STANDS BEFORE THE QUESTION AND NOT AFTER IT: a middle is not something a reader can guess from the numbers, and a world that asks for it without saying what it is teaches a ritual. The mean carries its whole arithmetic on the page («the mean of 2 2 8 is 4: 2 + 2 + 8 = 12 and 12 ÷ 3 = 4»), and it is the only place in this world where a division appears — eighty lines. Eighty more are REFUSALS WITH A GROUND, for a list can fail to have what is asked of it. THE MODE IS ABSENT, and that is the world's own boundary, named here for the first time: zero lines carry it. A MIDDLE NAMED THREE WAYS AND NOT FOUR IS A DECLARED LIMIT, NOT A FORGOTTEN ONE — but only once it is written down. Boundary: whole totals only, measured; the mean is asked only where it comes out whole, so that the world never utters a share it has not taught.",
       "act": [
         "recount"
       ],
@@ -3307,7 +3308,7 @@
     {
       "name": "proof",
       "file": "datasets/genesis_proof.txt",
-      "genre": "the forms of a proof: induction, cases, counterexample, direct",
+      "genre": "THE FORMS OF PROOF, EACH SHOWN ON AN INSTANCE — declared until 12.09 in eight words. Measured 12.09: 520 lines, 251 Russian and 269 English, 342 asking; 162 answer «yes/да» and 54 answer «no/нет», and 116 of the answers are REFUSALS WITH A GROUND. Four shapes, counted: THE EXHAUSTIVE CASE SPLIT with its witness — 136 («всякое целое чётно или нечётно; 13 нечётно», «is 20 even or odd? even: 20 = 2 × 10»), where the division is complete and the instance shows which side it fell on; THE IMPLICATION WITH AN INSTANCE — 232 («if 12 is even, is 32 even? yes: 12 is even and 32 = 2 × 16, which is even»), the step never asserted but SHOWN on a pair of numbers; THE UNIVERSAL — 70 lines opening with «every» or «всякое»; and NON-EXISTENCE WITH A REASON («чётного простого между 3 и 256 нет: у всякого чётного там есть делитель 2, кроме 1 и самого себя») — the denial that names WHY, not merely that. A FORM WITHOUT AN INSTANCE IS A WORD: mathematics is made not by theorems but by the FORMS in which truth is shown, and every page here carries a checkable case which the court recomputes. Sixty-eight lines carry the square («если n чётно, то n в квадрате чётно: 4 чётно и 16 чётно»), and forty carry a NEGATIVE value («положительно ли −16? нет: −16 < 0») — which is why this world declares only whole totals and NOT unsigned: the decision about a sign needs a signed number to decide about. Boundary: whole totals only, measured.",
       "act": [
         "decide",
         "refute",
@@ -10725,7 +10726,7 @@
     {
       "name": "wordparts",
       "file": "datasets/genesis_wordparts.txt",
-      "genre": "what a word is made of: «talo + ssa = talossa» — the composition of forms the packs already declare, shown only where the stem stands unchanged (684 forms in 22 languages)",
+      "genre": "MORPHOLOGY WRITTEN AS ADDITION — «ei + er = eier». Declared until 12.09 in one line. Measured 12.09: 4767 lines, 2263 Russian and 2325 English, 179 in other scripts; 2724 asking. THE WORD IS A SUM AND THE WORLD WRITES IT SO: 1635 lines are literally «stem + ending = word», 2043 carry an equals sign and 2043 a plus. Two questions stand over that sum: «OF WHAT IS IT MADE?» — 1362 lines taking the word apart («из чего состои́т tische? tische — это tisch с окончанием -e») — and «HOW MUCH IS IT?» — 681 lines putting it together with the very words the arithmetic worlds use, «сколько будет». A FORM IS NOT A WHOLE THING BUT A SUM OF DECLARED PARTS, and writing it with a plus is not a metaphor: the parts are named, the order matters, and the result is checked by joining them. The scripts are deliberately many — Arabic 259 lines, Hebrew 175, Devanagari 49, Ethiopic 28, Georgian 14 — so that the law is not read as a property of the Latin alphabet: «what is ጠረጴዛዎች made of? ጠረጴዛዎች is ጠረጴዛ with the ending -ዎች». A LAW SHOWN IN ONE SCRIPT IS READ AS A PROPERTY OF THAT SCRIPT. This world is read by ONE court and no other — its own — and that is the honest reason it must carry its whole proof on the page: a stem, an ending, and the joined word, all three visible.",
       "act": [
         "name",
         "translate"
