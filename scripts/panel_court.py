@@ -55,7 +55,7 @@ import panel  # noqa: E402
 
 # ПУСТОЙ-ОБХОД: --набор no-such-roster
 НАБОР = КОРЕНЬ / "scripts" / "courts.sh"
-ПРИЗНАК = "ПУСТОЙ-ОБХОД"
+ПРИЗНАК = re.compile(r"^#\s*ПУСТОЙ-ОБХОД:", re.M)  # ПОМЕТА, А НЕ УПОМИНАНИЕ
 ГДЕ = ("scripts", "courts", "tools")
 В_НАБОРЕ = re.compile(r'"([a-z_]+/[a-z0-9_]+\.py)')
 
@@ -65,7 +65,7 @@ def приборы():
     вон = set()
     for где in ГДЕ:
         for путь in sorted((КОРЕНЬ / где).glob("*.py")):
-            if ПРИЗНАК in путь.read_text(encoding="utf-8"):
+            if ПРИЗНАК.search(путь.read_text(encoding="utf-8")):
                 вон.add(f"{где}/{путь.name}")
     return вон
 
