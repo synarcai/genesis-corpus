@@ -21,10 +21,17 @@ rebuilt from nothing and re-judged by anyone.
 
 | | |
 |---|---|
-| **169 worlds of shows + 213 of prose** | declared in `datasets/GENESIS-MANIFEST.json`; 71 prose worlds are public-domain books on the shelf (`shelf/`, contract `declarations/SHELF.md`) |
+| **253 worlds of shows + 207 of prose + 6 mixed** | declared in `datasets/GENESIS-MANIFEST.json`; 71 prose worlds are public-domain books on the shelf (`shelf/`, contract `declarations/SHELF.md`) |
 | **29 languages** | one pack each in `tools/langpacks/`, zero engine edits |
-| **126 courts + 88 instruments** | every line re-executed by a court; the corpus as a whole measured by judgeability, reproducibility, manifest, shelf, band, library, concept reach, mutation catch |
-| **0** | false or blind lines among ~291 000 judged (after the repetition ceiling LAW = 2 per show and world, М-402: ~65 000 copies gone, no show lost) |
+| **208 courts + 167 instruments** | every line re-executed by a court; the corpus as a whole measured by judgeability, reproducibility, manifest, shelf, band, library, concept reach, mutation catch |
+| **0 lies, 0 blind** | of 404 772 lines across 222 worlds — the last completed reach of the whole panel (`court_reach.py`, ledger 2026-09-10T22:42:15Z) |
+
+These numbers are not written by hand: `scripts/readme_court.py` re-measures every one of them
+against the manifest, the language packs, the panel, the roster and the ledger, and fails when a
+row and the tree disagree.
+
+    A TABLE OF NUMBERS WITHOUT A KEEPER GOES STALE IN SILENCE. Before this court, the first row
+    said «169 worlds of shows + 213 of prose» while the manifest held 253 and 207.
 
 The corpus is a **knowledge engine**, not a text dump: worlds are
 functions of the manifest, courts re-execute every claim, executor

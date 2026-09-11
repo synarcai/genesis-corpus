@@ -52,7 +52,7 @@ COURTS=("courts/arith_court.py" "courts/algo_court.py"
         "courts/markup_court.py" "courts/langlayer_court.py"
         "courts/langform_court.py"
         "tools/gsm_census.py --court"
-        "scripts/reproducible.py" "scripts/bash32_court.py" "scripts/empty_in_court.py" "scripts/lawfirst_court.py" "scripts/broken_law.py" "scripts/house_api.py" "scripts/json_hand.py" "scripts/house_selfcheck.py"
+        "scripts/reproducible.py" "scripts/bash32_court.py" "scripts/empty_in_court.py" "scripts/lawfirst_court.py" "scripts/broken_law.py" "scripts/house_api.py" "scripts/json_hand.py" "scripts/suite_resume.py" "scripts/readme_court.py" "scripts/arith_debt.py" "scripts/house_selfcheck.py"
         "scripts/manifest_court.py" "scripts/prose_court.py" "tools/mutants.py" "scripts/lexicon_reach.py"
         "courts/inquiry_pt_nl_court.py" "courts/inquiry_pl_tr_court.py"
         "courts/metalang_court.py" "courts/glyph_court.py" "courts/space_court.py" "courts/stenogram_court.py"
@@ -301,7 +301,7 @@ flush_range() {
 SKIP_LIST=""
 SKIPPED=0
 if [ "$RESUME" = 1 ]; then
-  SKIP_LIST=$(python3 scripts/suite_resume.py 2>/dev/null || true)
+  SKIP_LIST=$(python3 scripts/suite_resume.py --пропустить 2>/dev/null || true)
   printf 'ПРОДОЛЖЕНИЕ: %s\n' "$(python3 scripts/suite_resume.py --метка 2>/dev/null || echo 'метки нет')"
   printf 'ПРОДОЛЖЕНИЕ: зелены на этом дереве и не гонятся — %s\n' \
     "$(printf '%s\n' "$SKIP_LIST" | grep -c . || true)"
