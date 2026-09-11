@@ -191,7 +191,7 @@
   **UNIT CONVERSIONS IN EIGHT LANGUAGES (the owner's word: every language in surplus; the conversion worlds say them in en/ru): eight conversions** — hour→minute, day→hour, week→day, year→month, kilometre→metre, metre→centimetre, kilogram→gram, minute→second …
 - **`pctdiff`** (640 строк; recompute, whole_only)  
   **THE PERCENT DIFFERENCE** — «GREATER BY SO MUCH» AND «LESS BY SO MUCH» ARE DIFFERENT NUMBERS. Measured 11.09 across the 244 show worlds: «на сколько процентов», «by what percent» — NONE; «greater by N %» — NONE; «less by N %» — NONE; «what fraction», «what…
-- **`ruler_dense`** (637 строк; recompute, unnamed)  
+- **`ruler_dense`** (637 строк; recompute, whole_only, unsigned_only)  
   dense ±1 rulers
 - **`divsense`** (628 строк; recompute, whole_only)  
   **THE TWO MEANINGS OF DIVISION** — ONE EQUALITY ANSWERS TWO DIFFERENT QUESTIONS. The distinction is nowhere in the corpus: measured 11.09 across the 246 show worlds, «два смысла», «two meanings», «по скольку каждому» — NONE. Yet BOTH KINDS of task have long…
@@ -384,7 +384,7 @@
   **amharic: the sixth script, ethiopic, where a sign carries the consonant TOGETHER WITH its vowel** — not a mark beside it but part of the sign itself, and there are some 270 of them (tier 1: structure green, forms agree with the pack's own rules)
 - **`lang_ta`** (1830 строк; declared, tier1_unverified, whole_only)  
   **tamil: an abugida like hindi but with its OWN marks** — the direct second test of the law that a combining mark is a letter by office; it passed with plain spaced cutting and NO change to the instrument.
-- **`genderverb`** (999 строк; recompute, unnamed)  
+- **`genderverb`** (999 строк; recompute, additive_only)  
   **the gender ending of the past tense: «сделал + а = сделала», the ending named as a gender and TIED TO THE BEARER'S declared gender** — the place of the bearer where the subject is dropped (ru and pl only: seven of nine languages have no gender in the past)
 - **`unit_counts`** (720 строк; declared, whole_only)  
   **COUNTED UNITS** — «1 day, 2 days, 5 days» IN ONE FRAME (32's tomograph of the rate, 03.09): the market of count forms buys the pair «day / days» only inside ONE frame carrying at least three different numbers, and the corpus said «worked on 1 day» in one …
@@ -392,7 +392,7 @@
   **THE VERB FORM OVER ONE FACT** — declared until 12.09 in eight words.
 - **`ruverbs`** (355 строк; declared, whole_only, unsigned_only)  
   **russian verb frames at the mass of the english ones: present, past with the actor's gender, echo question, sum frame, and anaphora** — the missing link of ru-anaphora named by measurement
-- **`degrees`** (270 строк; declared, unnamed)  
+- **`degrees`** (270 строк; declared, declared_table_only)  
   **THE DEGREES OF COMPARISON** — the same property said three times, and the irregular said aloud (06.09).
 
 ## АКТ «name» — назвать: что вещь ЕСТЬ и как она зовётся
@@ -401,7 +401,7 @@
 
 - **`notationvar`** (5386 строк; recompute, reversibility, declared_pairs_only)  
   **one sign, two scripts: the same record written in ASCII and in typography, and the court reduces both to one canon. The corpus knew every sign in ONE script only, and in different signs** — in DIFFERENT ones: «x^2» 1702 times and «x²» ZERO, «≤» 351 and «<…
-- **`wordparts`** (4767 строк; recompute, unnamed)  
+- **`wordparts`** (4767 строк; recompute, additive_only)  
   **MORPHOLOGY WRITTEN AS ADDITION** — «ei + er = eier».
 - **`inquiry`** (3902 строк; recompute, whole_only)  
   **the ladder of inquiry: for six genera** — primality, divisibility, the sum of odd numbers, the conditional, injectivity, the square — four rungs are shown, definition then a decided case with its ground then a counterexample then the law; both tongues, ev…
@@ -433,7 +433,7 @@
   **EVERYDAY TOPICS** — what a person asks about first (the owner's order, 04.09, item 4; the BESEDA band measures this genus mute 16 of 20, and names its cause: SUBJ-UNKNOWN — the reader does not know the SUBJECT of the question.
 - **`glyphs`** (1101 строк; declared, declared_pairs_only)  
   **the glyph world v0 (embodied-reasoning mandate 02.09, L5): every symbol** — digits, Latin and Cyrillic letters of both cases, signs — as a 5×7 bit grid with a name (tools/glyphs.py, one font table that is also the court's law); shows «grid → symbol», «sym…
-- **`mathfound`** (1066 строк; declared, recompute, unnamed)  
+- **`mathfound`** (1066 строк; declared, recompute, finite_explicit_only)  
   foundations of mathematics and the named case: function as one object, injection by witness, cardinality and countability, proof by contradiction, induction, the six Russian cases named
 - **`wordorder`** (876 строк; recompute, whole_only, unsigned_only)  
   **where the verb stands: the place named by COUNT, not by the label «SOV»** — the verb's index and the sentence's word count, checkable by splitting the quoted sentence (290 sentences of the layers, 11 languages)
@@ -441,11 +441,11 @@
   **THE NUMBER AS A NAME** — ONE AND THE SAME NUMBER CALLS A THING AND MEASURES IT, AND THESE ARE TWO DIFFERENT DEEDS. Measured 11.09 across the 256 show worlds: «дом 5», «автобус 12», «квартира 7» — NONE; «номер не складывают», «labels are not added» — NONE;…
 - **`opposites`** (648 строк; declared, whole_only)  
   **OPPOSITES** — the first relation in the corpus of a WORD TO A WORD, not of a word to a thing, and there was not one show of it in the whole svod.
-- **`genesis_l4`** (500 строк; declared, unnamed)  
+- **`genesis_l4`** (500 строк; declared, declared_table_only)  
   copula/science links
 - **`clockwords`** (378 строк; declared, declared_pairs_only)  
   **THE HOUR SAID IN WORDS** — one time, and nine ways to divide it (06.09).
-- **`logic_sets`** (292 строк; recompute, unnamed)  
+- **`logic_sets`** (292 строк; recompute, finite_explicit_only)  
   foundations: sets, boolean connectives, membership, modus ponens
 - **`roles`** (144 строк; declared, whole_only)  
   **ROLE QUESTIONS** — a question BY THE TYPE OF ITS HOLE: with what, where, of what.
@@ -460,7 +460,7 @@
   **WORLD FACTS** — why and what next about THINGS, not about numbers.
 - **`mandateforms`** (2268 строк; recompute, whole_only)  
   **THE MANDATE** — a standing rule against an order (05.09, the agent architecture, the sixth market): one or two rules the agent was told once, an order of one act, and a verdict that never stands bare — «no: the rule forbids deleting», «yes: the rule forbi…
-- **`place`** (1296 строк; recompute, unnamed)  
+- **`place`** (1296 строк; recompute, named_relations_only)  
   **PLACE** — where a thing stands, and the three laws of standing (06.09).
 - **`infer`** (1080 строк; recompute, whole_only)  
   **STRICT INFERENCE** — modus ponens, modus tollens, and TWO FALLACIES named as fallacies.
@@ -468,7 +468,7 @@
   order-row with a condition and the REPORT of its execution: the ledger of observation (files, runs, exit, millis) and a verdict that FOLLOWS from comparing the ledger with the condition (nine languages, both branches)
 - **`proof`** (520 строк; recompute, whole_only)  
   **THE FORMS OF PROOF, EACH SHOWN ON AN INSTANCE** — declared until 12.09 in eight words.
-- **`doctree`** (516 строк; declared, reversibility, unnamed)  
+- **`doctree`** (516 строк; declared, reversibility, declared_table_only)  
   **document structure: a link is an EDGE and is judged by RESOLUTION against a declared tree** — relative paths counted from the document's own folder, anchors into a document, slugification of a heading into an anchor, order by sidebar_position, and links t…
 - **`opchoice`** (432 строк; recompute, whole_only)  
   **CHOOSING THE OPERATION** — which sign the SITUATION itself requires, and why that one.
@@ -560,7 +560,7 @@
 
 Миров 1, строк 1056.
 
-- **`md_structures`** (1056 строк; declared, recompute, unnamed)  
+- **`md_structures`** (1056 строк; declared, recompute, declared_table_only)  
   markdown/mermaid structures
 
 ## БЕДНЫЕ ОБЪЯВЛЕНИЯ — короче 200 знаков

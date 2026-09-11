@@ -41,7 +41,8 @@
         "recompute"
       ],
       "boundary": [
-        "unnamed"
+        "whole_only",
+        "unsigned_only"
       ],
       "size": 63483,
       "tiers": [],
@@ -58,7 +59,7 @@
         "declared"
       ],
       "boundary": [
-        "unnamed"
+        "declared_table_only"
       ],
       "size": 13793,
       "tiers": [
@@ -135,7 +136,7 @@
         "recompute"
       ],
       "boundary": [
-        "unnamed"
+        "declared_table_only"
       ],
       "size": 99968,
       "tiers": [],
@@ -2895,7 +2896,7 @@
         "recompute"
       ],
       "boundary": [
-        "unnamed"
+        "finite_explicit_only"
       ],
       "size": 16379,
       "tiers": [],
@@ -3450,7 +3451,7 @@
         "recompute"
       ],
       "boundary": [
-        "unnamed"
+        "finite_explicit_only"
       ],
       "size": 172630,
       "tiers": [],
@@ -3911,7 +3912,7 @@
         "reversibility"
       ],
       "boundary": [
-        "unnamed"
+        "declared_table_only"
       ],
       "size": 149903,
       "tiers": [],
@@ -10463,7 +10464,7 @@
         "recompute"
       ],
       "boundary": [
-        "unnamed"
+        "named_relations_only"
       ],
       "actors": "",
       "text": "shows"
@@ -10516,7 +10517,7 @@
         "declared"
       ],
       "boundary": [
-        "unnamed"
+        "declared_table_only"
       ],
       "actors": "",
       "text": "shows"
@@ -10735,7 +10736,7 @@
         "recompute"
       ],
       "boundary": [
-        "unnamed"
+        "additive_only"
       ],
       "size": 0,
       "tiers": [],
@@ -10799,7 +10800,7 @@
         "recompute"
       ],
       "boundary": [
-        "unnamed"
+        "additive_only"
       ],
       "size": 0,
       "tiers": [],
