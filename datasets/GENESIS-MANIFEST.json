@@ -10845,6 +10845,31 @@
         "school"
       ],
       "actors": []
+    },
+    {
+      "name": "carry",
+      "file": "datasets/genesis_carry.txt",
+      "genre": "THE NAMED NUMBER — THE BASE OF THE CARRY IS DECLARED BY THE UNIT, NOT BY THE NUMBER. Measured 11.09 across the 251 show worlds (429 194 lines): «N м N см», «N км N м», «N кг N г» — NONE. A carry across a non-decimal base does exist in the corpus, and exactly once: the house of the clock (`clockforms`) adds and subtracts time 117 times — «11 часов 45 минут + 2 часа 35 минут = 14 часов 20 минут». Sixty minutes to an hour, and the carry goes through sixty. Nowhere else. A LAW SHOWN ON THE CLOCK ALONE IS READ AS A PROPERTY OF CLOCKS: a reader who has seen the carry only through 60 will conclude that 60 IS the rule, and will err in a metre, where there are a hundred centimetres. This house takes the neighbour's law and asks WHOSE it is — the clock's or the carry's; the answer is given as a deed, on four measures with THREE different bases (100 centimetres to a metre, 100 kopecks to a rouble, 1000 metres to a kilometre, 1000 grams to a kilogram). Four genera: CARRY («2 metres 60 centimetres and 1 metre 90 centimetres come to 4 metres 50 centimetres, for 60 + 90 = 150, and in a metre there are 100 centimetres: 150 − 100 = 50»); NO CARRY — the CONTROL, without which a reader would conclude that a carry always happens; BORROW — the same law run backwards, where the base is not added but taken apart; THE BASE («in a metre there are 100 centimetres, and in a kilometre there are 1000 metres, and THE SAME NUMBERS give a different carry: 20 + 90 = 110, and 110 is greater than 100, but 110 is less than 1000») — the law said as a deed, and said in the only way a law about the base can be shown at all: by two measures on the very same numbers. ONE MEASURE SHOWS A CARRY; TWO MEASURES WITH DIFFERENT BASES SHOW THAT THE BASE IS A PROPERTY OF THE MEASURE. THE NAMED SUM IS WRITTEN WITH A WORD AND NOT WITH AN EQUALS SIGN, and that was bought by measurement: the neighbour's writing — «3 метра 40 сантиметров + 1 метр 80 сантиметров = 5 метров 20 сантиметров» — the court of arithmetic DOES NOT READ AT ALL (a probe of four such lines gave «0 false of 0 judged, 4 unparsed»); rewritten with a word («дают вместе»), the same pages gave «0 false of 3 judged, 1 unparsed». AN EQUALITY NO NEIGHBOUR READS IS AN ASSERTION UNDER THE GUARD OF A SINGLE HOUSE; a word in place of the sign hands the page to the common court, and every equals sign on it is then read. THE NEIGHBOUR'S WRITING IS NOT AMENDED: the house of the clock lives as it lived, and to rewrite it for the sake of uniformity would be to edit a foreign house for one's own convenience. The bases are declared by a table and not derived — how many centimetres are in a metre is knowledge about the world, not a consequence of counting; by the same law live the counting triples of `rugram` and the bounds of things in `plaus`. Two errors were paid on the way: a fold that did not look leftward read «1 + 1 = 4» inside «2 + 1 + 1 = 4» and called 1692 honest pages false; and «от 4 метра» was a lie about the language — after «от» stands the genitive, which the counting form does not give, so the phrase was rebuilt («было … отняли … осталось») to keep the counting form of the number itself everywhere.",
+      "act": [
+        "recount",
+        "translate",
+        "generalize"
+      ],
+      "oracle": [
+        "recompute",
+        "declared"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
     }
   ]
 }
