@@ -1650,6 +1650,30 @@
       "actors": []
     },
     {
+      "name": "pctdiff",
+      "file": "datasets/genesis_pctdiff.txt",
+      "genre": "THE PERCENT DIFFERENCE — «GREATER BY SO MUCH» AND «LESS BY SO MUCH» ARE DIFFERENT NUMBERS. Measured 11.09 across the 244 show worlds: «на сколько процентов», «by what percent» — NONE; «greater by N %» — NONE; «less by N %» — NONE; «what fraction», «what percent» — NONE. The world of percent takes a percent OF a number, the house of change by percent changes a number BY a percent, and neither answers the question OF COMPARISON. HOW MANY TIMES the corpus asks 268 times, BY WHAT PERCENT not once. THE SIXTEENTH TRAP OF THE SERIES, AND IT IS THE FIFTEENTH TAKEN FROM THE OTHER SIDE: 100 IS GREATER THAN 80 BY 25 PERCENT, AND 80 IS LESS THAN 100 BY 20. One and the same difference of twenty units gives twenty-five percent one way and twenty the other, for it is divided by DIFFERENT BASES. COMPARISON BY PERCENT IS NOT SYMMETRIC, AND THAT IS NOT A SPECIAL CASE BUT THE VERY MAKE OF THE PERCENT. Comparison by difference is symmetric, comparison by ratio is symmetric through reciprocals, and the percent one is NOT — and a reader used to the first carries it over. Four genera, all four on THE SAME PAIR of numbers so that one lesson is seen from four sides: A SHARE IN PERCENT («5 of 20 is 25 percent») — the reverse move of the world of percent, which asked only «what is N % of a number»; GREATER BY; LESS BY («20 is less than 25 not by 25 percent but by 20») — the trap, named by a denial on the page itself, for a trap not said aloud catches both the reader and the corpus; THE BASE («one and the same excess is divided by different bases, and so the percents differ: 500 ÷ 20 = 25, and 500 ÷ 25 = 20») — the cause in its purest form. The pairs are those where BOTH percents are whole and not above a hundred: a fractional percent would drag the house to the decimal writing, and a growth above a hundred to multiplicity, of which a neighbour speaks. The part is always less than the whole, or the first genus would show a share equal to its whole, where there is nothing to show.",
+      "act": [
+        "recount",
+        "compare",
+        "generalize"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "opchoice",
       "file": "datasets/genesis_opchoice.txt",
       "genre": "CHOOSING THE OPERATION — which sign the SITUATION itself requires, and why that one. The corpus taught counting, and it taught naming the operation WHEN THE QUESTION NAMES IT («what is 20 plus 5?», «compute 20 plus 5»): the sign stands in the question and there is nothing to choose. The sweep of the canon against its own reader held eight lies at a threshold of zero, and four of them were ONE hole: the reader COUNTS RIGHT and TAKES THE WRONG OPERATION — «Ира нашла 11 орехов. она потеряла 9» answered 11 + 9 = 20; «Ivan shared 6 coins among 3 friends» answered 18. The law here is bought by a MINIMAL PAIR, not by an example: two pages with THE SAME NUMBERS differing in exactly one word — the word that decides the sign — and the reason for the difference is named IN THE LINE itself. Three forks, each taken from a reader's error rather than from the completeness of a table: finding/losing (+ or −), sharing equally/repeating (÷ or ×), more by/fewer by (+ or −). The fourth error (a fraction leaving: 36 ÷ 4 = 9, then 36 − 9 = 27) is a CHAIN of two operations and is not closed here — that is said, not left silent. The deciding word is declared by a table read by the court, and a swapped sign or a swapped word is caught mechanically.",
@@ -5477,10 +5501,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 23025622,
+      "size": 23100150,
       "tiers": [],
       "text": "mix",
-      "lines": 299554
+      "lines": 300194
     },
     {
       "name": "full",
@@ -5495,10 +5519,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 37108899,
+      "size": 37183427,
       "tiers": [],
       "text": "mix",
-      "lines": 417092
+      "lines": 417732
     },
     {
       "name": "minimal",
