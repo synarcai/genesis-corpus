@@ -1338,6 +1338,30 @@
       "actors": []
     },
     {
+      "name": "divshare",
+      "file": "datasets/genesis_divshare.txt",
+      "genre": "DIVIDING BY A SHARE — division DOES NOT ALWAYS DECREASE, and the question itself sounds different. Measured 11.09 across the show worlds: «÷ 1/2», «divided by 1/2» — NOT ONE occurrence. The house of multiplying shares showed that multiplication by a share DECREASES; the backward move was not shown at all. DIVISION BY A SHARE INCREASES, AND THAT IS THE THIRD TRAP OF THE SERIES: multiplied by a share — less; divided by a share — more. THE QUESTION HERE SOUNDS OTHER THAN IN WHOLE NUMBERS, AND THAT IS THE WHOLE HOUSE: «3 ÷ 1/2» does not mean «split three in half» — it means HOW MANY HALVES ARE IN THREE. To divide by a share is to ask how many times the share fits into the whole. AN OPERATION WHOSE NAME IS FAMILIAR AND WHOSE QUESTION IS OTHER IS MORE DANGEROUS THAN AN UNFAMILIAR ONE. Four genera: WHOLE BY A SHARE («3 ÷ 1/2: how many halves are in 3? one whole holds 2 halves, and 3 × 2 = 6, and it gives 6, and 6 is greater than 3») — here it grows; SHARE BY A SHARE («1/2 ÷ 1/4: how many quarters are in 1/2? 1/2 is 2/4, and it holds 2 quarters»); SHARE BY A NUMBER («6/7 ÷ 3: the numerator is divided and the denominator stays: 6 ÷ 3 = 2, and it gives 2/7») — here it shrinks; CHECK («let us check backwards: 6 halves are 6 ÷ 2 = 3 wholes, and so 3 wholes hold 6 halves»). The first and the third are a MINIMAL PAIR BY DIRECTION, and the difference is again in one place: what is divided by — a SHARE or a NUMBER; the same move that told growth from decrease in the house of multiplying shares. The fourth genus is AN ORACLE SAID ALOUD: division is checked by the backward move, and that check is not appended from outside but shown on the page — without it «three wholes hold six halves» would be a claim the reader has nothing to verify by. The notation «6 × 1/2 = 3» is NOT taken here, and that is bought by the court of arithmetic: it reads such a line through the fraction bar and calls it false; the check therefore runs in words and whole numbers, and the court accepts it.",
+      "act": [
+        "recount",
+        "compare",
+        "generalize"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "opchoice",
       "file": "datasets/genesis_opchoice.txt",
       "genre": "CHOOSING THE OPERATION — which sign the SITUATION itself requires, and why that one. The corpus taught counting, and it taught naming the operation WHEN THE QUESTION NAMES IT («what is 20 plus 5?», «compute 20 plus 5»): the sign stands in the question and there is nothing to choose. The sweep of the canon against its own reader held eight lies at a threshold of zero, and four of them were ONE hole: the reader COUNTS RIGHT and TAKES THE WRONG OPERATION — «Ира нашла 11 орехов. она потеряла 9» answered 11 + 9 = 20; «Ivan shared 6 coins among 3 friends» answered 18. The law here is bought by a MINIMAL PAIR, not by an example: two pages with THE SAME NUMBERS differing in exactly one word — the word that decides the sign — and the reason for the difference is named IN THE LINE itself. Three forks, each taken from a reader's error rather than from the completeness of a table: finding/losing (+ or −), sharing equally/repeating (÷ or ×), more by/fewer by (+ or −). The fourth error (a fraction leaving: 36 ÷ 4 = 9, then 36 − 9 = 27) is a CHAIN of two operations and is not closed here — that is said, not left silent. The deciding word is declared by a table read by the court, and a swapped sign or a swapped word is caught mechanically.",
@@ -5165,10 +5189,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 22265933,
+      "size": 22324202,
       "tiers": [],
       "text": "mix",
-      "lines": 292186
+      "lines": 292652
     },
     {
       "name": "full",
@@ -5183,10 +5207,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 36349210,
+      "size": 36407479,
       "tiers": [],
       "text": "mix",
-      "lines": 409724
+      "lines": 410190
     },
     {
       "name": "minimal",
