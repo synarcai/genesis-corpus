@@ -1746,6 +1746,30 @@
       "actors": []
     },
     {
+      "name": "point",
+      "file": "datasets/genesis_point.txt",
+      "genre": "THE POINT ON A PLANE — A PAIR OF NUMBERS IN WHICH THE ORDER MEANS SOMETHING. Measured 11.09 across the 248 show worlds: «точка (3, 2)», «point (3, 2)», «right and up» — NONE. The writing «(a, b)» occurs 4141 times, and all of it in the worlds of vectors, rotations and relations, where the pair is ALREADY understood by the reader: the corpus counts with coordinates without ever saying what they mean. THE CORPUS COUNTS IN PAIRS AND DOES NOT TEACH HOW TO READ THEM. THE TWENTIETH TRAP OF THE SERIES, AND IT IS THE FIRST WHERE THE FALSEHOOD IS NOT IN THE NUMBER BUT IN THE ORDER: the points (3, 2) and (2, 3) are DIFFERENT, although the numbers in them are the same. Everything the corpus taught before was about magnitude; here the magnitudes are equal and the things differ. A PAIR IS NOT A SET: IN IT NOT ONLY WHAT MATTERS BUT ALSO WHERE. Four genera: READING THE PAIR («in the point (3, 2) the first number 3 goes right and the second 2 goes up: 3 − 2 = 1»); ORDER («the points (3, 2) and (2, 3) are different, although the numbers are the same») — the trap; RIGHT («from (3, 2) to (7, 2) there are 4 steps right, and the height is the same: 7 − 3 = 4»); UP. The third and the fourth are a minimal pair BY DIRECTION: the same move, the same numbers, and the difference in one place — which of the two numbers changes; apart, the reader would decide that the first number IS the distance and the second an appendix to it. The second genus rests on the first: until it is said WHAT each number of the pair means, «are different» would be a declaration without ground — and that is why the first genus stands first: it gives the pair its meaning, the second gives the law. The numbers of the pair are different wherever the order matters, and only there: in the genus of the move the destination (5, 5) is a legitimate point, and a guard accusing it would be the fourth accusation by form without regard to connection in one shift. The step is counted by the form of the language: «1 шаг», «2 шага», «7 шагов» are taken from the counting table, not written by hand.",
+      "act": [
+        "recount",
+        "compare",
+        "generalize"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "opchoice",
       "file": "datasets/genesis_opchoice.txt",
       "genre": "CHOOSING THE OPERATION — which sign the SITUATION itself requires, and why that one. The corpus taught counting, and it taught naming the operation WHEN THE QUESTION NAMES IT («what is 20 plus 5?», «compute 20 plus 5»): the sign stands in the question and there is nothing to choose. The sweep of the canon against its own reader held eight lies at a threshold of zero, and four of them were ONE hole: the reader COUNTS RIGHT and TAKES THE WRONG OPERATION — «Ира нашла 11 орехов. она потеряла 9» answered 11 + 9 = 20; «Ivan shared 6 coins among 3 friends» answered 18. The law here is bought by a MINIMAL PAIR, not by an example: two pages with THE SAME NUMBERS differing in exactly one word — the word that decides the sign — and the reason for the difference is named IN THE LINE itself. Three forks, each taken from a reader's error rather than from the completeness of a table: finding/losing (+ or −), sharing equally/repeating (÷ or ×), more by/fewer by (+ or −). The fourth error (a fraction leaving: 36 ÷ 4 = 9, then 36 − 9 = 27) is a CHAIN of two operations and is not closed here — that is said, not left silent. The deciding word is declared by a table read by the court, and a swapped sign or a swapped word is caught mechanically.",
@@ -5573,10 +5597,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 23336355,
+      "size": 23399477,
       "tiers": [],
       "text": "mix",
-      "lines": 302340
+      "lines": 302904
     },
     {
       "name": "full",
@@ -5591,10 +5615,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 37419632,
+      "size": 37482754,
       "tiers": [],
       "text": "mix",
-      "lines": 419878
+      "lines": 420442
     },
     {
       "name": "minimal",
