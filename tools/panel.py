@@ -208,6 +208,11 @@ recache.установить()
            "opslaw_court",
            "signadd_court",
            "pow_court",
+           "dec_court",
+           "abs_court",
+           "handy_court",
+           "prop_court",
+           "rem_court",
            # …и ПОДОБИЕ: аналогия и её ПРОВЕРКА перекрёстным произведением
            "analog_court",
            # …и ОТКЛИК: совет собеседнику, чей закон суд сличает с домом

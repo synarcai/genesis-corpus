@@ -1482,6 +1482,126 @@
       "actors": []
     },
     {
+      "name": "dec",
+      "file": "datasets/genesis_dec.txt",
+      "genre": "THE DECIMAL WRITING OF A SHARE — THE SAME NUMBER WRITTEN OTHERWISE. Measured 11.09 across the 237 show worlds: the equality «0,5 = 1/2» or «3/4 = 0.75» occurs SIXTEEN times, and all sixteen stand in one world of algebraic units, as a line without derivation («1/4 = 0.25. четверть. quarter.»). Yet the corpus writes decimal numbers 1842 times — and all of them in prices: «$29.95», «3,10 рубля». THE CORPUS CAN WRITE A DECIMAL NUMBER AND CANNOT SAY WHAT IT IS. THE NINTH TRAP OF THE SERIES: 0,25 IS LESS THAN 0,5, ALTHOUGH 25 IS GREATER THAN 5. A reader who knows whole numbers compares by the length of the writing and by the digits — and errs exactly where the writings differ in length. Four genera: THE WRITING OF A SHARE («0,75 = 3/4: in hundredths this is 75/100, and 75 = 3 × 25, and 100 = 4 × 25»); COMPARISON («0,25 is less than 0,5, although 25 is greater than 5: in hundredths this is 25/100 and 50/100, and 25 is less than 50») — the trap; THE EXTRA ZERO («0,5 = 0,50: the appended zero stands in the hundredths, and 50 = 5 × 10»); THE BOUNDARY («1/6 has no finite decimal writing: 6 = 2 × 3, and among its factors there is 3, and not only twos and fives»). The second genus is cured by ONE MOVE — bring both to THE SAME PLACE — the very move by which the house of comparing shares brought fractions to a common denominator; and that is no coincidence: a hundredth IS the denominator 100, and bringing to hundredths is bringing to a common denominator said otherwise. ONE MOVE REPEATED IN TWO WRITINGS IS ONE LAW, NOT TWO RULES. The third genus says the opposite of the habit of whole numbers: there an appended zero multiplies by ten, here it changes nothing; the first and the third are a minimal pair by the PLACE of the zero — before the point and after it. The fourth names the boundary of the law, and without it the house would lie by half: not every share is written as a decimal. A finite writing is given only by denominators decomposed into twos and fives — for ten is 2 × 5, and the place has nowhere else to take its factors. THE SEPARATOR FOLLOWS THE LANGUAGE OF THE WRITING, AND THAT IS NOT THE HOUSE'S CHOICE BUT THE CORPUS'S CUSTOM: the world of money writes «$29.95» in English and «3,10 рубля» in Russian, and the world of notation declares it outright — «0,5 и 0.5 — одно число». Measured: the comma in 279 Russian lines and 2248 other-language ones (European money), the dot in 983 English ones.",
+      "act": [
+        "recount",
+        "compare",
+        "generalize"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "finite_decimal_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
+      "name": "abs",
+      "file": "datasets/genesis_abs.txt",
+      "genre": "THE MODULUS OF A NUMBER — THE DISTANCE TO ZERO, WHICH HAS NO SIGN. Measured 11.09 across the 237 show worlds: the writing «|−5|» — NONE; «distance from zero» — NONE. The word «модуль» occurs 2540 times and ALWAYS ABOUT SOMETHING ELSE: it is the remainder modulo n («7 по модулю 2 равно 1»), the arithmetic of residues, not the size of a number. Another 297 times the modulus is read in the world of formula notation, but in LaTeX and as THE NAME OF A SIGN, not as a number. A WORD OCCUPIED BY ANOTHER CONCEPT IS NOT A SHOWN CONCEPT. This house closes the signed area with a fourth member and gives a name to what three earlier houses showed without one: the house of order measured STEPS TO THE LEFT OF ZERO, the house of signed addition showed that opposites sum to zero — and both spoke of the DISTANCE TO ZERO. Its name is the modulus. WHAT IS SHOWN THRICE WITHOUT A NAME MUST BE GIVEN A NAME, OR THE READER WILL NOT RECOGNISE IT THE FOURTH TIME. Four genera: DISTANCE («|−5| = 5: from −5 to zero there are 5 steps, and from 5 to zero just as many»); EQUAL MODULI («|−5| = |5|, although −5 and 5 are different numbers»); THE MODULUS OF A SUM («|−5 + 3| = 2, and |−5| + |3| = 8: the modulus of a sum is not the sum of moduli») — the tenth trap of the series: the action and the modulus DO NOT COMMUTE, and a reader used to opening brackets term by term will open this one too and get eight instead of two; ORDER («−5 is less than −2, although |−5| is greater than |−2|: farther to the left means less») — a seam with the house of order and its second trap: the smaller number has the GREATER modulus. The second genus states the boundary of the reverse move: equality of moduli is NOT equality of numbers — the modulus loses the sign, and from «five steps to zero» it does not follow in which direction. The sign of the modulus is the plain bar «|», and the number inside is written with the minus «−», as in the whole signed area of the corpus.",
+      "act": [
+        "recount",
+        "compare",
+        "generalize"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
+      "name": "handy",
+      "file": "datasets/genesis_handy.txt",
+      "genre": "HANDY COUNTING — A LAW APPLIED FOR THE SAKE OF EASE. Measured 11.09 across the 237 show worlds: «удобно», «перегруппиру», «дополнение до десятка» — NONE. The corpus counts in columns and by rule, but nowhere shows that counting can be MADE EASIER by moving addends toward a round number. This house stands on the house of the laws of operation built in the same shift: there the associative law is declared and shown («the bracket does not change the sum»), here it WORKS. A law shown without application reads as ornament; an application without a law, as a trick. A LAW AND ITS APPLICATION ARE TWO HALVES OF ONE KNOWLEDGE, AND APART EACH IS USELESS. THE ELEVENTH TRAP OF THE SERIES IS THE SECOND GENUS: IN SUBTRACTION THE EXTRA IS GIVEN BACK, NOT TAKEN AWAY. Whoever borrowed three in addition returns three from the second addend; whoever subtracted two too many ADDS two back. The direction of the correction reverses, and that is exactly where mental arithmetic breaks most often. Four genera: BY ADDITION («complete 37 to 40 and return the difference: 48 − 3 = 45, and 40 + 45 = 85, and 37 + 48 = 85»); BY SUBTRACTION («subtract 40 instead of 38 and return the extra: 85 − 40 = 45, and 45 + 2 = 47, and 85 − 38 = 47») — the trap; THE LAW («regrouping is lawful, for the bracket does not change the sum: (37 + 3) + 45 = 85, and 37 + (3 + 45) = 85») — the ground; THE COMPLEMENT («the complement of 37 to a ten: 40 − 37 = 3, and 37 + 3 = 40»). The first and the second are a minimal pair by the DIRECTION of the correction. THE SHAPE OF THE PAGE IS BOUGHT BY A MEASURE OF THE PALATA, AND THE MEASURE NAMED THE LAW OF A FOREIGN INSTRUMENT: THE COURT OF ARITHMETIC READS WHAT STANDS AFTER THE COLON. Verified directly: «48 − 3 = 45: дополним 37 до 40.» — the palata is SILENT; «дополним 37 до 40: и 48 − 3 = 45.» — it reads and recomputes. Therefore every page of this house keeps WORDS BEFORE THE COLON and EQUALITIES AFTER — and all 1022 of them are read and confirmed by the court of arithmetic, so each is checked twice. A HOUSE WRITTEN FOR A FOREIGN INSTRUMENT IS CHECKED TWICE; A HOUSE WRITTEN PAST IT, ONCE. The rows are levelled by measure and not by eye: the first sweep gave the genus of addition 648 pages against 24 for the complement — a twenty-sevenfold skew, and the house would have read as a house of one genus with three appendices.",
+      "act": [
+        "recount",
+        "compare",
+        "generalize"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
+      "name": "prop",
+      "file": "datasets/genesis_prop.txt",
+      "genre": "THE PROPORTION — AN EQUALITY OF RATIOS THAT IS NOT AN EQUALITY OF DIFFERENCES. Measured 11.09 across the 237 show worlds: the word «пропорция» occurs 29 times, and ALL 29 stand in the world of definitions, in prose and in English; the writing «a : b = c : d» does not occur at all, and cross products are shown not once. THE TWELFTH TRAP OF THE SERIES IS THE THIRD GENUS: THE RATIO IS KEPT, THE DIFFERENCE IS NOT. Whoever reads «4 : 2 = 6 : 3» as «the same distance between the numbers» will get 2 and 3 and be surprised. A ratio answers HOW MANY TIMES, a difference answers BY HOW MUCH, and these are different questions about one pair. TWO QUESTIONS ABOUT ONE PAIR GIVE TWO DIFFERENT ANSWERS, AND THEY ARE CONFUSED MOST OFTEN WHERE ONE OF THEM IS PRESERVED. Four genera: RATIOS («in the proportion 4 : 2 = 6 : 3 both ratios equal 2: 4 = 2 × 2, and 6 = 3 × 2»); CROSSWISE («the cross products are equal: 4 × 3 = 12, and 2 × 6 = 12») — the oracle of the house; DIFFERENCE («the ratio is kept and the difference is not: 4 − 2 = 2, and 6 − 3 = 3») — the trap; THE UNKNOWN MEMBER («the unknown member of 4 : 2 = x : 3 is found crosswise: 4 × 3 = 12, and 12 ÷ 2 = 6»). The second genus is AN ORACLE SAID ALOUD: a proportion is checked by cross products, and that check is shown on the page rather than appended from outside; the fourth finds the unknown by the same move — the oracle and the tool are one rule taken in two directions. The first and the third are a minimal pair BY THE QUESTION: the same proportion, the same four numbers, and the difference in one place — whether one asks «how many times» or «by how much». The second members are always DIFFERENT, for with equal ones the differences would coincide and the third genus would show the opposite of what it is written for. THE SHAPE OF THE PAGE KEEPS THE LAW OF A FOREIGN INSTRUMENT: the words and the writing «4 : 2 = 6 : 3» stand BEFORE the last colon and the equalities AFTER it, and so the court of arithmetic reads every page of this house and recomputes it — all 764 of them.",
+      "act": [
+        "recount",
+        "compare",
+        "generalize"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
+      "name": "rem",
+      "file": "datasets/genesis_rem.txt",
+      "genre": "DIVISION WITH A REMAINDER — THE SUM ADDS UP AND THE DIVISION IS NOT FINISHED. Measured 11.09 across the 237 show worlds: «остаток меньше делителя», «remainder is less than» — NONE; «dividend = divisor × quotient + remainder» — NONE. Yet the corpus does write division with a remainder: the house of the fraction and the unit derives «5 = 4 × 1 + 1», the divisibility rules count remainders, the world of numbers holds congruences modulo n. THE CORPUS COUNTS REMAINDERS AND NEVER SAYS WHAT MAKES A REMAINDER DIFFERENT FROM JUST A NUMBER. THE THIRTEENTH TRAP OF THE SERIES, AND FINER THAN THE OTHERS: THE EQUALITY HOLDS AND THE ANSWER IS WRONG. «17 ÷ 5 = 2 with a remainder of 7?» — 5 × 2 = 10, and 10 + 7 = 17: THE SUM IS CORRECT. And still it is not the answer: 7 is not less than 5, and one more five would come out of the remainder. Every earlier trap was caught by recounting — substitute a number and the equality falls apart. THIS one is not caught by recounting at all: the check of the sum PASSES it, and therefore the law of the remainder is not an ornament to division but THE ONLY thing that makes the answer unique. A CHECK THAT A WRONG ANSWER ALSO PASSES IS NOT A CHECK OF THE ANSWER. Four genera: WITH A REMAINDER («17 ÷ 5 gives 3 and a remainder of 2: 5 × 3 = 15, and 15 + 2 = 17»); NOT FINISHED («17 ÷ 5 does not give 2 and a remainder of 7, for 7 is not less than 5: 5 × 2 = 10, and 10 + 7 = 17») — the trap; ONE MORE («the remainder 7 would yield one more 5, and 2 would be left: 7 − 5 = 2, and 5 × 3 = 15, and 15 + 2 = 17») — the cause; EXACTLY («20 ÷ 5 gives 4 and a remainder of 0, and that is an exact division») — the lower boundary: a zero remainder is a remainder too, and exact division is a special case of the same law, not another operation. The second and the third stand on the same numbers: the first shows a WRONG answer that passed the check, the second shows WHY it is wrong; apart, the second would be a quibble and the third a rule without occasion. The shape keeps the law of a foreign instrument — words before the last colon, equalities after — and the court of arithmetic reads every page; IT WILL ALSO CONFIRM THE TRAP, since «10 + 7 = 17» is true, and therein lies its whole point.",
+      "act": [
+        "recount",
+        "compare",
+        "generalize"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "opchoice",
       "file": "datasets/genesis_opchoice.txt",
       "genre": "CHOOSING THE OPERATION — which sign the SITUATION itself requires, and why that one. The corpus taught counting, and it taught naming the operation WHEN THE QUESTION NAMES IT («what is 20 plus 5?», «compute 20 plus 5»): the sign stands in the question and there is nothing to choose. The sweep of the canon against its own reader held eight lies at a threshold of zero, and four of them were ONE hole: the reader COUNTS RIGHT and TAKES THE WRONG OPERATION — «Ира нашла 11 орехов. она потеряла 9» answered 11 + 9 = 20; «Ivan shared 6 coins among 3 friends» answered 18. The law here is bought by a MINIMAL PAIR, not by an example: two pages with THE SAME NUMBERS differing in exactly one word — the word that decides the sign — and the reason for the difference is named IN THE LINE itself. Three forks, each taken from a reader's error rather than from the completeness of a table: finding/losing (+ or −), sharing equally/repeating (÷ or ×), more by/fewer by (+ or −). The fourth error (a fraction leaving: 36 ÷ 4 = 9, then 36 − 9 = 27) is a CHAIN of two operations and is not closed here — that is said, not left silent. The deciding word is declared by a table read by the court, and a swapped sign or a swapped word is caught mechanically.",
@@ -5309,10 +5429,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 22554035,
+      "size": 22920309,
       "tiers": [],
       "text": "mix",
-      "lines": 295236
+      "lines": 298716
     },
     {
       "name": "full",
@@ -5327,10 +5447,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 36637312,
+      "size": 37003586,
       "tiers": [],
       "text": "mix",
-      "lines": 412774
+      "lines": 416254
     },
     {
       "name": "minimal",
