@@ -5597,10 +5597,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 23883316,
+      "size": 24054036,
       "tiers": [],
       "text": "mix",
-      "lines": 306282
+      "lines": 307374
     },
     {
       "name": "full",
@@ -5615,10 +5615,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 37966593,
+      "size": 38137313,
       "tiers": [],
       "text": "mix",
-      "lines": 423820
+      "lines": 424912
     },
     {
       "name": "minimal",
@@ -10858,6 +10858,30 @@
       "oracle": [
         "recompute",
         "declared"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
+      "name": "placeval",
+      "file": "datasets/genesis_placeval.txt",
+      "genre": "PLACE VALUE — THE PLACE OF A DIGIT IS ITS WEIGHT. THE CORPUS ROUNDS TO HUNDREDS AND NEVER ONCE SAYS WHAT HUNDREDS ARE. Measured 11.09 across the 253 show worlds: the decomposition of a number by places («300 + 40 + 7 = 347») — NONE; «the digit stands in the … place», «in the … place» — NONE; «the same digits, different numbers» — NONE. The words «десятки» and «сотни» do occur, 180 times, and every one of them is about something else: `roundforms` rounds TO hundreds (48), `handy` completes TO a ten (72), `rem` takes one more ten out of a remainder (15); the rest are foreign words of the same letters — Portuguese «tens» means «you have», and a Russian-written probe catches it alongside its own. A PROBE LOOKING FOR A WORD IN A CORPUS OF TWENTY-NINE LANGUAGES FINDS FOREIGN WORDS OF THE SAME LETTERS. The corpus counts in decimal notation across hundreds of thousands of lines and never says why that notation is built as it is: it rounds TO a place, completes TO a ten, carries across a base — and the place of a digit stays a silent understanding between the writer and the reader. The twenty-fifth trap of the series: 347 AND 374 ARE MADE OF THE SAME DIGITS AND THE NUMBERS DIFFER. The difference is not in the digits but in their places — the same law as in the pair of coordinates (`point`), but lying deeper: there the order is declared by the writing, here by THE NOTATION ITSELF. A DIGIT WITHOUT A PLACE IS NOT A NUMBER; THE PLACE OF A DIGIT IS ITS WEIGHT, AND THAT WEIGHT GROWS TENFOLD WITH EVERY STEP LEFTWARD. Four genera: DECOMPOSITION («in the number 347 the digit 3 stands in the hundreds place … 300 + 40 + 7 = 347»), shown only where the places do DIFFERENT work — for 111 the decomposition is true and teaches nothing; THE SAME DIGITS — the trap; THE WEIGHT OF A PLACE («in the number 217 the digit 2 means 200, and in the number 712 the same digit means 2: 200 ÷ 2 = 100»), never with the digit 1, where the quotient is degenerate; THE ZERO HOLDS («in the number 101 a zero stands in the tens place, and without it 11 would come out: 101 − 11 = 90») — the heart of the house. A ZERO IN THE WRITING OF A NUMBER COUNTS NOTHING AND IS STILL NECESSARY: IT SAYS NOT «HOW MANY» BUT «NOTHING HERE, AND THE NEXT ONE DOES NOT TAKE THIS PLACE». The corpus knows zero as the result of a subtraction and as the impossible divisor, and does not know it as the HOLDER OF A PLACE. THE HOUSE ASKS THE LANGUAGE FOR NO COUNTING FORMS OF THE PLACE WORDS, AND THAT WAS BOUGHT BY AN ERROR: the first edition wrote «три сотни, четыре десятка, семь единиц» and required declaring «десяток» in `rugram`; the declaration instantly called FIFTEEN honest lines of the remainder house false, for that house writes «вышла бы ещё одна деся́тка» — a feminine word with the same form as the masculine «деся́ток». A WORD THAT EXISTS TWICE IN A LANGUAGE CANNOT BE DECLARED ONCE: a table that knows one will call a line about the other false. The language was left untouched and the house rebuilt on turns where there is no agreement at all: «на месте сотен» is a genitive plural in a fixed phrase, and «цифра 3» puts the number AFTER the word. A HOUSE THAT DEMANDS AN EDIT OF THE LANGUAGE FOR ONE PHRASE IS BOUND TO LOOK FIRST FOR ANOTHER PHRASE.",
+      "act": [
+        "recount",
+        "name",
+        "generalize"
+      ],
+      "oracle": [
+        "recompute"
       ],
       "boundary": [
         "whole_only"
