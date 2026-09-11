@@ -192,7 +192,7 @@
 - **`pctdiff`** (640 строк; recompute, whole_only)  
   **THE PERCENT DIFFERENCE** — «GREATER BY SO MUCH» AND «LESS BY SO MUCH» ARE DIFFERENT NUMBERS. Measured 11.09 across the 244 show worlds: «на сколько процентов», «by what percent» — NONE; «greater by N %» — NONE; «less by N %» — NONE; «what fraction», «what…
 - **`ruler_dense`** (637 строк; recompute, whole_only, unsigned_only)  
-  dense ±1 rulers
+  **ПЛОТНАЯ ЛИНЕЙКА ±1: сосед числа назван сложением и вычитанием единицы, на двух языках и словом и знаком** — «6 − 1 = 5», «twelve minus one equals eleven».
 - **`divsense`** (628 строк; recompute, whole_only)  
   **THE TWO MEANINGS OF DIVISION** — ONE EQUALITY ANSWERS TWO DIFFERENT QUESTIONS. The distinction is nowhere in the corpus: measured 11.09 across the 246 show worlds, «два смысла», «two meanings», «по скольку каждому» — NONE. Yet BOTH KINDS of task have long…
 - **`divrule`** (600 строк; recompute, whole_only)  
@@ -442,11 +442,11 @@
 - **`opposites`** (648 строк; declared, whole_only)  
   **OPPOSITES** — the first relation in the corpus of a WORD TO A WORD, not of a word to a thing, and there was not one show of it in the whole svod.
 - **`genesis_l4`** (500 строк; declared, declared_table_only)  
-  copula/science links
+  **СВЯЗКА И ССЫЛКА: звено объявленной таблицы, сказанное связкой на двух языках** — «железо — это металл», «ядро — часть клетки», «атом содержит протоны».
 - **`clockwords`** (378 строк; declared, declared_pairs_only)  
   **THE HOUR SAID IN WORDS** — one time, and nine ways to divide it (06.09).
 - **`logic_sets`** (292 строк; recompute, finite_explicit_only)  
-  foundations: sets, boolean connectives, membership, modus ponens
+  **ОСНОВАНИЯ БЕЗ БЕСКОНЕЧНОГО: включение и принадлежность на множествах мощности 1–4, выписанных поимённо («{b c} ⊂ {b c e} = T»); чтение знаков словом («знак ¬ читается как не»); modus ponens «из P и P → S следует S». Ни квантора, ни многоточия, ни слова о …
 - **`roles`** (144 строк; declared, whole_only)  
   **ROLE QUESTIONS** — a question BY THE TYPE OF ITS HOLE: with what, where, of what.
 
@@ -561,19 +561,16 @@
 Миров 1, строк 1056.
 
 - **`md_structures`** (1056 строк; declared, recompute, declared_table_only)  
-  markdown/mermaid structures
+  **СТРОЕНИЕ РАЗМЕТКИ, СКАЗАННОЕ ЕЩЁ И СЛОВОМ: заголовок трёх уровней, пункт списка, встроенная формула «$ 2 + 1 $ равно 3» и ребро графа mermaid** — и всякий разбор повторён прозой («заголовок уровня два: сила», «раздел число содержит точка»).
 
 ## БЕДНЫЕ ОБЪЯВЛЕНИЯ — короче 200 знаков
 
     ОБЪЯВЛЕНИЕ В ТРИДЦАТЬ ЗНАКОВ НЕ ЛЖЁТ И НЕ ГОВОРИТ: читатель узнаёт имя мира
     и ничего сверх него.
 
-Миров: **45** из 257.
+Миров: **41** из 257.
 
-- `ruler_dense` — 15 знаков
-- `genesis_l4` — 20 знаков
 - `genesis_bignum` — 27 знаков
-- `md_structures` — 27 знаков
 - `prog` — 47 знаков
 - `rates` — 49 знаков
 - `eng_proof` — 54 знаков
@@ -581,7 +578,6 @@
 - `algebra_units` — 57 знаков
 - `depletion` — 59 знаков
 - `conversions` — 64 знаков
-- `logic_sets` — 64 знаков
 - `physics` — 64 знаков
 - `notation` — 68 знаков
 - `remainders` — 69 знаков
