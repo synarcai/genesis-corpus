@@ -1698,6 +1698,30 @@
       "actors": []
     },
     {
+      "name": "divsense",
+      "file": "datasets/genesis_divsense.txt",
+      "genre": "THE TWO MEANINGS OF DIVISION — ONE EQUALITY ANSWERS TWO DIFFERENT QUESTIONS. The distinction is nowhere in the corpus: measured 11.09 across the 246 show worlds, «два смысла», «two meanings», «по скольку каждому» — NONE. Yet BOTH KINDS of task have long been written: the everyday world divides among friends («each got 4 cards», 30 lines), the world of measure counts how many parts came out (313 lines). THE CORPUS SOLVES BOTH TASKS AND NEVER SAYS THEY ARE DIFFERENT. THE EIGHTEENTH TRAP OF THE SERIES, AND IT IS NOT IN THE COUNTING BUT IN THE MEANING: 12 ÷ 4 = 3 MEANS BOTH «three each for four» AND «three boxes of four». The number of the answer is one and the things behind it differ: in the first case three SWEETS, in the second three BOXES. THE NUMBER OF THE ANSWER IS NOT THE ANSWER: AN ANSWER IS A NUMBER WITH A THING, AND DIVISION IS TOLD APART EXACTLY BY THE THING. Four genera: BY PARTS («12 sweets for 4 pupils is 3 sweets each: 12 ÷ 4 = 3, and 4 × 3 = 12»); BY CONTENT («12 sweets packed 3 to a box is 4 boxes»); TWO MEANINGS — the only place in the corpus where the two kinds meet in one line; THE THING OF THE ANSWER («the number is one and the things differ — 3 sweets and 3 boxes») — the cause: the thing is taken from THE QUESTION and not from the counting. The first and the second are a minimal pair BY THE QUESTION: the same three numbers, the same operation, and the difference in one place — whether the NUMBER OF PARTS or the SIZE OF A PART is known; apart, the reader would decide that division is one and be stuck on a task of the other kind. The counting forms of the things are taken from the language, and the house writes no endings of its own where the corpus holds the table of Russian counting — so this house is read by the counting courts of both languages as well as by the court of arithmetic.",
+      "act": [
+        "recount",
+        "compare",
+        "generalize"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "opchoice",
       "file": "datasets/genesis_opchoice.txt",
       "genre": "CHOOSING THE OPERATION — which sign the SITUATION itself requires, and why that one. The corpus taught counting, and it taught naming the operation WHEN THE QUESTION NAMES IT («what is 20 plus 5?», «compute 20 plus 5»): the sign stands in the question and there is nothing to choose. The sweep of the canon against its own reader held eight lies at a threshold of zero, and four of them were ONE hole: the reader COUNTS RIGHT and TAKES THE WRONG OPERATION — «Ира нашла 11 орехов. она потеряла 9» answered 11 + 9 = 20; «Ivan shared 6 coins among 3 friends» answered 18. The law here is bought by a MINIMAL PAIR, not by an example: two pages with THE SAME NUMBERS differing in exactly one word — the word that decides the sign — and the reason for the difference is named IN THE LINE itself. Three forks, each taken from a reader's error rather than from the completeness of a table: finding/losing (+ or −), sharing equally/repeating (÷ or ×), more by/fewer by (+ or −). The fourth error (a fraction leaving: 36 ÷ 4 = 9, then 36 − 9 = 27) is a CHAIN of two operations and is not closed here — that is said, not left silent. The deciding word is declared by a table read by the court, and a swapped sign or a swapped word is caught mechanically.",
@@ -5525,10 +5549,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 23190132,
+      "size": 23253134,
       "tiers": [],
       "text": "mix",
-      "lines": 300914
+      "lines": 301542
     },
     {
       "name": "full",
@@ -5543,10 +5567,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 37273409,
+      "size": 37336411,
       "tiers": [],
       "text": "mix",
-      "lines": 418452
+      "lines": 419080
     },
     {
       "name": "minimal",
