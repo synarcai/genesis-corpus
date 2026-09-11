@@ -10821,6 +10821,30 @@
         "school"
       ],
       "actors": []
+    },
+    {
+      "name": "ceilfloor",
+      "file": "datasets/genesis_ceilfloor.txt",
+      "genre": "TWO ANSWERS TO ONE DIVISION — THE REMAINDER DECIDES WHICH WAY TO ROUND, AND THE QUESTION DECIDES THE REMAINDER'S USE. Measured 11.09 across the 251 show worlds (429 194 lines): «не хватит», «понадобится ещё», «нужно N коробок», «потребуется» — NONE; «сколько полных», «полностью заполн», «full boxes» — NONE. The corpus knows division with a remainder — 966 pages of the house `remdiv` and 320 of `remainders_langs` — and never once asks WHAT TO DO with that remainder. It declares the remainder and stops there. THE REMAINDER IS COUNTED AND NOT USED: THE CORPUS CARRIES THE DIVISION TO ITS END AND HALTS BEFORE THE QUESTION FOR WHOSE SAKE IT DIVIDED. The twenty-third trap of the series, and it differs from every earlier one in having TWO RIGHT ANSWERS: 53 sweets at 20 to a box is both 2 boxes and 3 boxes, according to what was asked. Every earlier trap of the series parted the right from the false; this one parts the right from ANOTHER RIGHT. ONE DIVISION, TWO QUESTIONS, TWO DIFFERENT RIGHT ANSWERS: THE DIFFERENCE IS MADE BY THE QUESTION, NOT BY THE NUMBER. Four genera: UP («53 sweets are put 20 to a box; to fit them all one needs 3 boxes, for 53 ÷ 20 gives 2 and a remainder of 13»); DOWN («2 boxes will be filled to the top, and 13 sweets will be left over») — the trap; NO REMAINDER («40 sweets at 20: one needs 2 boxes, and 2 boxes will be filled, for there is no remainder»); TWO ANSWERS («one division, two questions … 3 − 2 = 1»). The third genus is the CONTROL over the first two: without it a reader would conclude that the two questions ALWAYS give different answers, and that would be false — at remainder 0 they agree. A TRAP SHOWN WITHOUT ITS OWN EXCEPTION BECOMES A NEW SUPERSTITION; A RULE WITHOUT ITS EXCEPTION IS READ AS A LAW AND IS FALSE EXACTLY WHERE THE EXCEPTION IS. The control is forged on the SAME divisors as the trap — different numbers would have driven the rule and its exception apart into different tasks. The fourth genus states the law AS A DEED: both halves of one division stand side by side and their difference is written as an equality, «3 − 2 = 1» — the single unit by which the answers part. A QUOTIENT WITH A REMAINDER IS NOT WRITTEN WITH AN EQUALS SIGN, and that is a law of the corpus and not a taste of this house: «53 ÷ 20 = 2» is FALSE, and the court of arithmetic would rightly call it so. It is written «gives 2 and a remainder of 13», and the check is set down in true equalities: 20 × 2 = 40, and 40 + 13 = 53 — the same writing by which the house `remdiv` lives. The counting forms are taken from the table of the language («2 коробки», «13 конфет», «1 книга»), and the verb beside the remainder stands in the singular («останется»), for it must stand rightly at 1 as well as at 13.",
+      "act": [
+        "recount",
+        "decide",
+        "generalize"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
     }
   ]
 }
