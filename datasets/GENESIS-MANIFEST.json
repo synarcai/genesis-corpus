@@ -5597,10 +5597,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 24054036,
+      "size": 24197623,
       "tiers": [],
       "text": "mix",
-      "lines": 307374
+      "lines": 308372
     },
     {
       "name": "full",
@@ -5615,10 +5615,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 38137313,
+      "size": 38281060,
       "tiers": [],
       "text": "mix",
-      "lines": 424912
+      "lines": 425910
     },
     {
       "name": "minimal",
@@ -10878,6 +10878,30 @@
       "act": [
         "recount",
         "name",
+        "generalize"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
+      "name": "digitlen",
+      "file": "datasets/genesis_digitlen.txt",
+      "genre": "THE LENGTH OF THE WRITING — FOR WHOLE NUMBERS, A LONGER WRITING MEANS A GREATER NUMBER. The trap of a neighbour stands on a rule the corpus never stated: the world of the decimal share (`dec`) says outright that «a reader who knows whole numbers compares BY THE LENGTH OF THE WRITING and by the digits — and errs exactly where the writings differ in length». It catches the reader on that habit and teaches that for decimals the habit lies. The rule itself — true for whole numbers — the corpus has never once said. Measured 11.09 across the 254 show worlds: «сколько цифр», «больше цифр», «more digits», «длиннее запись» — NONE. The corpus USES the length of a writing (the world of estimation rejects an answer: «3990 has 4 digits while 400 has 3») and does not DECLARE it. A TRAP STANDING ON A RULE THE CORPUS NEVER SAID CATCHES THE READER ON A BORROWED HABIT AND NOT ON ITS OWN LESSON. The twenty-sixth trap of the series: 1000 IS GREATER THAN 999, THOUGH EVERY DIGIT OF 999 IS GREATER THAN EVERY DIGIT OF 1000. A reader comparing digits will err; a reader comparing lengths will not. DIGITS ARE COMPARED ONLY AFTER THE LENGTHS HAVE BEEN COMPARED; THE LENGTH DECIDES FIRST, AND DECIDES ALONE WHEN IT DIFFERS. Four genera: LONGER («100 is greater than 22, though every digit of 22 is greater: the writing 100 has 3 digits and the writing 22 has 2») — the trap, forged only where EVERY digit of the smaller exceeds every digit of the greater, for otherwise the trap does not catch; EQUALLY MANY («103 and 130: the digits are equally many, and the leftmost place where they differ decides»); HOW MANY DIGITS («the number 26 has 2 digits, for 26 is greater than 9 and less than 100») — the boundary of a length named from both sides; WHEN THE LENGTH IS ENOUGH («1000 and 999 differ in length, and the length is enough; 103 and 130 are of one length, and the length is not enough») — the law said as a deed together with its boundary, on the SAME pair that the second genus uses, so that the rule and its silence are seen at once. A RULE THAT HAS NOT SAID WHERE IT IS SILENT WILL BE APPLIED WHERE IT IS SILENT. The house asks the language for no counting forms of the word «цифра»: «в записи 1000 цифр 4» puts the number AFTER the word and there is no agreement to get wrong — the same move by which the house of place value went around an undeclared word, taken deliberately, for an edit of the language for the sake of one phrase already cost fifteen honest lines of a neighbour once today. The equality stands LAST, after a colon, so that the common court of arithmetic reads it: a house whose equalities only it reads guards them alone.",
+      "act": [
+        "compare",
+        "recount",
         "generalize"
       ],
       "oracle": [
