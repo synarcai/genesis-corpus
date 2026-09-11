@@ -42,7 +42,7 @@
 - **`opforms`** (3780 строк; recompute, whole_only)  
   **THE OPERATOR WORD IN AN ORDER** — «divide 14 by 2. what do you get? 7.» (05.09, a defect measured on the held-out key: the reader answered 28, having multiplied).
 - **`linalg`** (3606 строк; recompute, exact_only)  
-  linear algebra: vector sum and scale, exact length, dot product, determinant and the action of a matrix
+  **THE VECTOR AS A PAIR THAT ADDS PLACE BY PLACE** — declared until 12.09 in fifteen words.
 - **`beforetails`** (3600 строк; recompute, whole_only)  
   **THE TAIL THAT POINTS BACKWARD** — «how many did I have TO BEGIN WITH?» (05.09, the third gate of the silence atlas by d5's measure: 24 rows of the grove and 23 of the reader stop at an unbought before-tail).
 - **`readnum`** (3240 строк; recompute, whole_only)  
@@ -493,10 +493,12 @@
 
 ## АКТ «translate» — сказать то же другой поверхностью, языком, записью
 
-Миров 12, строк 14501.
+Миров 13, строк 17761.
 
 - **`markdown`** (3428 строк; reversibility, reversible_only)  
   **markdown in full: thirty-two constructs of CommonMark, GFM and MDX/Docusaurus, each on four surfaces** — the record itself, its meaning in English and in Russian, and the question that asks for it; the oracle is REVERSIBILITY (a construct declares how to …
+- **`md_latex`** (3260 строк; declared, recompute, whole_only)  
+  **THE MARKUP RECORD AND ITS READING** — ONE THING SAID IN TWO SURFACES. Declared until 12.09 in six words, and with NO ACT AT ALL: the field stood «unnamed» while the world translated on every page.
 - **`formula_lang`** (2583 строк; same_object, reversibility, reversible_only)  
   formula and speech, converted both ways at any depth: ONE expression TREE with four surfaces (LaTeX, glyphs, English words, Russian words) and four inverse walks written apart; a compound argument is always spoken in brackets, which is what makes speech par…
 - **`surfaces`** (2200 строк; declared, whole_only, unsigned_only)  
@@ -556,10 +558,8 @@
 
 ## АКТ «unnamed» — проза называет тему и молчит об акте
 
-Миров 2, строк 4316.
+Миров 1, строк 1056.
 
-- **`md_latex`** (3260 строк; declared, recompute, whole_only)  
-  structures: markdown, links, code blocks, latex
 - **`md_structures`** (1056 строк; declared, recompute, unnamed)  
   markdown/mermaid structures
 
@@ -568,13 +568,12 @@
     ОБЪЯВЛЕНИЕ В ТРИДЦАТЬ ЗНАКОВ НЕ ЛЖЁТ И НЕ ГОВОРИТ: читатель узнаёт имя мира
     и ничего сверх него.
 
-Миров: **47** из 257.
+Миров: **45** из 257.
 
 - `ruler_dense` — 15 знаков
 - `genesis_l4` — 20 знаков
 - `genesis_bignum` — 27 знаков
 - `md_structures` — 27 знаков
-- `md_latex` — 47 знаков
 - `prog` — 47 знаков
 - `rates` — 49 знаков
 - `eng_proof` — 54 знаков
@@ -599,7 +598,6 @@
 - `verbal` — 98 знаков
 - `heads` — 99 знаков
 - `sequences` — 101 знаков
-- `linalg` — 103 знаков
 - `lang_nl` — 109 знаков
 - `lang_sv` — 124 знаков
 - `physlaws` — 126 знаков

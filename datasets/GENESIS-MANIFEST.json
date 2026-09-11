@@ -3029,9 +3029,9 @@
     {
       "name": "md_latex",
       "file": "datasets/genesis_md_latex.txt",
-      "genre": "structures: markdown, links, code blocks, latex",
+      "genre": "THE MARKUP RECORD AND ITS READING — ONE THING SAID IN TWO SURFACES. Declared until 12.09 in six words, and with NO ACT AT ALL: the field stood «unnamed» while the world translated on every page. Measured 12.09: 3260 lines, 1073 Russian and 1431 English, 756 in neither — the records themselves. Counted: the READING of a record — 368 lines («заголовок уровня два: схема» standing for «## схема», «the sign \\cdot is read as times»); the CODE BLOCK — 210; the TABLE — 210; LaTeX with «frac» and «cdot» — 244; the LINK — 105; the HEADING — 88. A MARKUP RECORD IS NOT ORNAMENT BUT A RECORD WITH A STRICT MEANING, and that is why it can be judged at all: the court EXECUTES the markup — it looks into the layer and asks whether the line «### поле» is really there and whether the level matches the COUNT OF HASHES rather than the word beside them. The act of this world is `translate` from 12.09: to say the same thing by another surface is a deed, and a deed performed on 3260 lines deserves a name. AN ACT LEFT UNNAMED IS NOT A MODEST ACT BUT AN UNASKABLE ONE: a reader looking for worlds that translate between notations would not have found this one. Boundary: whole totals only, measured; thirty lines carry a negative value and 120 a refusal with a ground.",
       "act": [
-        "unnamed"
+        "translate"
       ],
       "oracle": [
         "declared",
@@ -3149,7 +3149,7 @@
     {
       "name": "linalg",
       "file": "datasets/genesis_linalg.txt",
-      "genre": "linear algebra: vector sum and scale, exact length, dot product, determinant and the action of a matrix",
+      "genre": "THE VECTOR AS A PAIR THAT ADDS PLACE BY PLACE — declared until 12.09 in fifteen words. Measured 12.09: 3606 lines, 1443 Russian and 1683 English, 2110 asking and 3110 carrying an equals sign. Six families, counted: MULTIPLICATION BY A NUMBER — 960 («3 умножить на (2, 3) даёт (6, 9)»); THE DOT PRODUCT — 728, the one operation here whose answer is NOT a pair but a single number; THE MATRIX — 480; ADDITION — 360 and SUBTRACTION — 360, the minimal pair by direction on the same pairs; and the LENGTH — 91. A VECTOR IS ADDED PLACE BY PLACE AND A DOT PRODUCT IS NOT: the first two families teach that the places never mix, and the third teaches the one deed where they do and the pair collapses into a number. That is why the dot product is second by size and not last: a reader who has learned only place-by-place work will carry it into the one place it fails. Four hundred and thirty-five lines carry a NEGATIVE value — subtraction of pairs makes them unavoidable — and 94 are refusals with a ground. Boundary: EXACT VALUES ONLY, declared and measured: no line of this world utters an approximation, and the length is asked only where it comes out whole, for a root that is not whole would drag the world into a notation it has not taught.",
       "act": [
         "recount"
       ],
