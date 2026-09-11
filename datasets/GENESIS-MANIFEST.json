@@ -1458,6 +1458,30 @@
       "actors": []
     },
     {
+      "name": "pow",
+      "file": "datasets/genesis_pow.txt",
+      "genre": "THE POWER BEYOND ZERO — THE LADDER CONTINUED PAST ZERO. Measured 11.09 across the 236 show worlds: «^0» — NONE; «⁰» — NONE; «to the power of zero» — NONE; and the negative exponent has no precedent at all: «^-», «^−», «⁻» — NONE in the whole corpus. Yet powers are written abundantly: the caret occurs 1796 times in eight worlds, and the world of algebra holds the law of adding exponents — «5^1 × 5^2 = 5^3» (650 lines). That law is declared FOR POSITIVE exponents and stops at one: what happens at exponent 0 and below is not said. THE SEVENTH AND EIGHTH TRAPS OF THE SERIES, both waiting at zero: 5^0 = 1, NOT 0; and 2^-3 = 1/8, NOT −8. A MINUS IN THE EXPONENT GIVES A SHARE, NOT A SIGN. Four genera: THE LADDER («a step down divides by 5: 5^3 = 125, and 125 ÷ 5 = 25, and 5^2 = 25») — the oracle; ZERO («5^0 = 1, and not 0: 5^1 = 5, and 5 ÷ 5 = 1»); NEGATIVE («2^-3 = 1/8, and not −8: 2^3 = 8»); THE LOCK («the exponents 3 and −3 add up to 0, and so 2^3 × 2^-3 = 8 × 1/8 = 1»). The first genus is the cause SHOWN AS A LADDER — the same move by which the house of the rule of signs derived «a minus by a minus»: descending by one, the power is DIVIDED by the base every time; reaching the first power and stepping further it must divide once more, and so it gives one, not zero. Stepping once more it goes into shares: thus the ladder SEWS THIS HOUSE TO THE FRACTIONAL ONE. The fourth genus continues the law of the algebra world past its boundary — exponents add on the other side of zero too — and ties the house to the signed area: there opposite NUMBERS summed to zero, here opposite EXPONENTS multiply to one; the same annihilation said on another floor. THE NOTATION IS CHOSEN BY MEASURE, NOT BY TASTE: superscripts other than «²» and «³» occur NOT ONCE in the corpus, and «⁰» is absent altogether; the power is written with a CARET, including in worlds where typographic «× ÷ −» stand beside it. The caret is MACHINE notation, and the minus inside it is a hyphen («2^-3»), as the hyphen lives in matrices and LaTeX; the typographic minus «−» stands at the NUMBER being spoken of («and not −8»). THE EQUALITY STANDS LAST, AND THAT IS BOUGHT BY MEASURE: the court of arithmetic reads a line WHOLE or not at all, and a reason appended in words after the last equality extinguishes the check of the ENTIRE line — measured by the palata: with the clause trailing, the substitution «8 × 1/8 = 2» passes in silence; with the clause in front, the page is read and the substitution caught. THE BOUNDARY OF THE ARITHMETIC COURT IS NAMED BY MEASURE: it reads the witness («2^3 = 8») but does not compute the negative power at all — «2^-3 = 1/9» passes it as true. That half is recounted by this house's own court, and so every page is checked twice by different instruments. NOT TAKEN HERE: 0^0, which is a convention and not a calculation — showing a convention as a derivation would lie about the nature of the rule; and 1^n, a degenerate case on which the ladder shows nothing.",
+      "act": [
+        "recount",
+        "compare",
+        "generalize"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "opchoice",
       "file": "datasets/genesis_opchoice.txt",
       "genre": "CHOOSING THE OPERATION — which sign the SITUATION itself requires, and why that one. The corpus taught counting, and it taught naming the operation WHEN THE QUESTION NAMES IT («what is 20 plus 5?», «compute 20 plus 5»): the sign stands in the question and there is nothing to choose. The sweep of the canon against its own reader held eight lies at a threshold of zero, and four of them were ONE hole: the reader COUNTS RIGHT and TAKES THE WRONG OPERATION — «Ира нашла 11 орехов. она потеряла 9» answered 11 + 9 = 20; «Ivan shared 6 coins among 3 friends» answered 18. The law here is bought by a MINIMAL PAIR, not by an example: two pages with THE SAME NUMBERS differing in exactly one word — the word that decides the sign — and the reason for the difference is named IN THE LINE itself. Three forks, each taken from a reader's error rather than from the completeness of a table: finding/losing (+ or −), sharing equally/repeating (÷ or ×), more by/fewer by (+ or −). The fourth error (a fraction leaving: 36 ÷ 4 = 9, then 36 − 9 = 27) is a CHAIN of two operations and is not closed here — that is said, not left silent. The deciding word is declared by a table read by the court, and a swapped sign or a swapped word is caught mechanically.",
@@ -5285,10 +5309,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 22533518,
+      "size": 22554035,
       "tiers": [],
       "text": "mix",
-      "lines": 294896
+      "lines": 295236
     },
     {
       "name": "full",
@@ -5303,10 +5327,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 36616795,
+      "size": 36637312,
       "tiers": [],
       "text": "mix",
-      "lines": 412434
+      "lines": 412774
     },
     {
       "name": "minimal",
