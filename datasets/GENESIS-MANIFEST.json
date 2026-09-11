@@ -10772,6 +10772,55 @@
       "assemblies": [
         "school"
       ]
+    },
+    {
+      "name": "need",
+      "file": "datasets/genesis_need.txt",
+      "genre": "THE CONDITIONS OF A TASK — WHAT IS NEEDED FOR AN ANSWER, AND WHAT IS NOT. Measured 11.09 across the 249 show worlds: «не хватает данных», «нельзя ответить», «not enough data» — NONE; «лишнее условие», «не нужно для ответа» — NONE. Every task of the corpus is COMPLETE: it holds exactly as many numbers as are needed and not one more. THE CORPUS TEACHES HOW TO SOLVE AND DOES NOT TEACH HOW TO LOOK WHETHER THERE IS ANYTHING TO SOLVE. The twenty-first trap of the series, and it takes away from the reader a habit: IF A TASK HOLDS TWO NUMBERS, THEY MUST BE ADDED. The habit holds exactly until the first task where a number is superfluous or where one is missing, and neither case the corpus ever showed. A NUMBER IN THE CONDITION IS NOT AN ORDER TO COUNT: FIRST ONE LOOKS WHETHER IT IS ABOUT WHAT THE QUESTION ASKS. Four genera: ENOUGH («on the shelf 5 books, in the cupboard 3 books; how many books in all? the data are enough: 5 + 3 = 8»); NOT ENOUGH («on the shelf 5 books; how many books in all? there is no answer: nothing is said about the cupboard») — a REFUSAL, and it is declared by the act of the world; SUPERFLUOUS («on the table 2 apples … the apples are superfluous: 5 + 3 = 8») — the trap; WHICH IS SUPERFLUOUS («the superfluous number here is 2, for it counts apples and the question is about books»). The first two are a MINIMAL PAIR BY COMPLETENESS: the same task, the same question, and the difference in one place — whether the second addend is said. The third and the fourth are a pair by deed: one shows the superfluous, the other names it and says why; apart, the first would be a verdict without a hearing. A REFUSAL WITHOUT A GROUND IS SILENCE; A REFUSAL WITH A GROUND IS AN ANSWER — the corpus knows refusal in the worlds of language and of the boundary, but never once refused FOR WANT OF A CONDITION. THE SUPERFLUOUS NUMBER IS ALWAYS ABOUT ANOTHER THING, NOT ABOUT THE SAME ONE: «2 apples» in a question about books are superfluous not because they are few but because they are not books; a number of the same thing is never superfluous — it is either an addend or part of the answer. The court verifies the refusal AS A REFUSAL: a page saying «there is no answer» is bound to carry exactly one number and no sum, for a refusal on which an answer stands denies itself. The counting forms of the things are taken from the table of the language, not written by hand.",
+      "act": [
+        "recount",
+        "decide",
+        "refuse"
+      ],
+      "oracle": [
+        "recompute",
+        "declared"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
+      "name": "inverse",
+      "file": "datasets/genesis_inverse.txt",
+      "genre": "THE INVERSE TASK — THE SAME THREE NUMBERS, AND THE QUESTION FROM THE OTHER END. Measured 11.09 across the 249 show worlds: «обратная задача», «inverse task» — NONE. The corpus solves thousands of direct tasks and 123 times CHECKS an answer by the inverse move («let us check by the inverse move: 6 halves is 6 ÷ 2 = 3 wholes»), but never once SETS the inverse task AS A TASK. TO CHECK BY THE INVERSE MOVE AND TO SOLVE AN INVERSE TASK ARE DIFFERENT DEEDS: the first confirms a known answer, the second seeks an unknown condition. The twenty-second trap of the series, and it lies IN THE SIGN OF THE OPERATION: a task which says «were added» is solved by SUBTRACTION if what is asked is not the total but an addend. A reader used to taking the operation from the word of the condition will take addition and err. THE OPERATION IS TAKEN FROM THE QUESTION, NOT FROM THE WORD OF THE CONDITION. Four genera in two pairs: DIRECT SUM («on the shelf 5 books, in the cupboard 3 books; in all 8 books: 5 + 3 = 8»); INVERSE SUM («in all 8 books, on the shelf 5 books; in the cupboard 3 books: 8 − 5 = 3») — the trap; DIRECT DIVISION («in 3 boxes 4 sweets each; in all 12 sweets: 3 × 4 = 12»); INVERSE DIVISION («in all 12 sweets in 3 boxes; in each 4 sweets: 12 ÷ 3 = 4»). The first pair and the second stand on ONE LAW: the inverse of addition is subtraction, the inverse of multiplication is division, and an inverse task is solved by the INVERSE operation. A LAW SHOWN ON ONE OPERATION IS READ AS A PROPERTY OF THAT OPERATION — that is why two pairs stand where one would have sufficed for a rule about addition. THE THREE NUMBERS OF THE DIRECT AND THE INVERSE TASK ARE THE SAME, AND THAT IS SEEN ON THE PAGE: the known and the sought change places, and the numbers remain; hence the pairs are forged on ONE triple — different triples would have driven apart the two sides of one deed. The counting forms of the things are taken from the table of the language: «4 конфеты», «7 конфет», «3 книги» are inflected, not written by hand.",
+      "act": [
+        "recount",
+        "invert",
+        "generalize"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
     }
   ]
 }

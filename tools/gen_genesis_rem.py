@@ -13,7 +13,7 @@ import pathlib
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-import remforms as F  # noqa: E402
+import remdivforms as F  # noqa: E402
 from layer import emit_grouped, PASSES  # noqa: E402
 
 ЦЕЛЬ = "datasets/genesis_rem.txt"

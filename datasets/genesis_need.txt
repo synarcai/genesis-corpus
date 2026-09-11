@@ -1,0 +1,559 @@
+в шкафу 6 карандашей; сколько карандашей всего? ответа нет: про полку ничего не сказано.
+на полке 8 яблок; сколько яблок всего? ответа нет: про шкаф ничего не сказано.
+на полке 5 карандашей, в шкафу 5 карандашей; сколько карандашей всего? данных хватает: 5 + 5 = 10.
+на полке 3 яблока, в шкафу 7 яблок; сколько яблок всего? данных хватает: 3 + 7 = 10.
+на полке 4 карандаша; сколько карандашей всего? ответа нет: про шкаф ничего не сказано.
+в шкафу 5 яблок; сколько яблок всего? ответа нет: про полку ничего не сказано.
+на полке 3 карандаша, в шкафу 7 карандашей; сколько карандашей всего? данных хватает: 3 + 7 = 10.
+на полке 2 яблока, в шкафу 4 яблока; сколько яблок всего? данных хватает: 2 + 4 = 6.
+в шкафу 9 книг; сколько книг всего? ответа нет: про полку ничего не сказано.
+на полке 3 яблока; сколько яблок всего? ответа нет: про шкаф ничего не сказано.
+на полке 2 карандаша, в шкафу 4 карандаша; сколько карандашей всего? данных хватает: 2 + 4 = 6.
+на полке 7 конфет, в шкафу 7 конфет; сколько конфет всего? данных хватает: 7 + 7 = 14.
+на полке 7 книг; сколько книг всего? ответа нет: про шкаф ничего не сказано.
+в шкафу 8 конфет; сколько конфет всего? ответа нет: про полку ничего не сказано.
+на полке 7 книг, в шкафу 7 книг; сколько книг всего? данных хватает: 7 + 7 = 14.
+на полке 5 конфет, в шкафу 5 конфет; сколько конфет всего? данных хватает: 5 + 5 = 10.
+в шкафу 4 книги; сколько книг всего? ответа нет: про полку ничего не сказано.
+на полке 6 конфет; сколько конфет всего? ответа нет: про шкаф ничего не сказано.
+на полке 5 книг, в шкафу 5 книг; сколько книг всего? данных хватает: 5 + 5 = 10.
+на полке 3 конфеты, в шкафу 7 конфет; сколько конфет всего? данных хватает: 3 + 7 = 10.
+на полке 2 книги; сколько книг всего? ответа нет: про шкаф ничего не сказано.
+в шкафу 3 конфеты; сколько конфет всего? ответа нет: про полку ничего не сказано.
+на полке 3 книги, в шкафу 7 книг; сколько книг всего? данных хватает: 3 + 7 = 10.
+на полке 2 конфеты, в шкафу 4 конфеты; сколько конфет всего? данных хватает: 2 + 4 = 6.
+на полке 7 яблок, в шкафу 7 яблок; сколько яблок всего? данных хватает: 7 + 7 = 14.
+на полке 9 карандашей; сколько карандашей всего? ответа нет: про шкаф ничего не сказано.
+на полке 2 книги, в шкафу 4 книги; сколько книг всего? данных хватает: 2 + 4 = 6.
+на полке 7 карандашей, в шкафу 7 карандашей; сколько карандашей всего? данных хватает: 7 + 7 = 14.
+на полке 5 яблок, в шкафу 5 яблок; сколько яблок всего? данных хватает: 5 + 5 = 10.
+
+лишнее число здесь 2: оно считает книги, а вопрос про карандаши: 3 + 9 = 12.
+на полке 9 конфет, в шкафу 7 конфет, на столе 2 книги; сколько конфет всего? книги лишние: 9 + 7 = 16.
+лишнее число здесь 3: оно считает книги, а вопрос про яблоки: 4 + 2 = 6.
+на полке 2 книги, в шкафу 8 книг, на столе 3 карандаша; сколько книг всего? карандаши лишние: 2 + 8 = 10.
+лишнее число здесь 2: оно считает конфеты, а вопрос про карандаши: 6 + 8 = 14.
+на полке 7 конфет, в шкафу 7 конфет, на столе 2 карандаша; сколько конфет всего? карандаши лишние: 7 + 7 = 14.
+лишнее число здесь 2: оно считает карандаши, а вопрос про яблоки: 3 + 5 = 8.
+на полке 3 книги, в шкафу 3 книги, на столе 2 конфеты; сколько книг всего? конфеты лишние: 3 + 3 = 6.
+лишнее число здесь 2: оно считает яблоки, а вопрос про карандаши: 8 + 6 = 14.
+на полке 7 конфет, в шкафу 3 конфеты, на столе 2 яблока; сколько конфет всего? яблоки лишние: 7 + 3 = 10.
+лишнее число здесь 3: оно считает конфеты, а вопрос про яблоки: 2 + 4 = 6.
+на полке 4 книги, в шкафу 4 книги, на столе 2 яблока; сколько книг всего? яблоки лишние: 4 + 4 = 8.
+лишнее число здесь 2: оно считает книги, а вопрос про конфеты: 7 + 5 = 12.
+на полке 2 яблока, в шкафу 4 яблока, на столе 3 книги; сколько яблок всего? книги лишние: 2 + 4 = 6.
+лишнее число здесь 2: оно считает конфеты, а вопрос про яблоки: 8 + 8 = 16.
+на полке 9 карандашей, в шкафу 3 карандаша, на столе 2 книги; сколько карандашей всего? книги лишние: 9 + 3 = 12.
+лишнее число здесь 2: оно считает карандаши, а вопрос про конфеты: 5 + 7 = 12.
+на полке 8 яблок, в шкафу 8 яблок, на столе 2 книги; сколько яблок всего? книги лишние: 8 + 8 = 16.
+лишнее число здесь 2: оно считает карандаши, а вопрос про книги: 4 + 4 = 8.
+на полке 3 карандаша, в шкафу 9 карандашей, на столе 2 яблока; сколько карандашей всего? яблоки лишние: 3 + 9 = 12.
+лишнее число здесь 2: оно считает карандаши, а вопрос про конфеты: 9 + 7 = 16.
+на полке 6 яблок, в шкафу 6 яблок, на столе 2 карандаша; сколько яблок всего? карандаши лишние: 6 + 6 = 12.
+лишнее число здесь 3: оно считает конфеты, а вопрос про книги: 8 + 2 = 10.
+на полке 5 конфет, в шкафу 7 конфет, на столе 2 книги; сколько конфет всего? книги лишние: 5 + 7 = 12.
+лишнее число здесь 2: оно считает яблоки, а вопрос про конфеты: 7 + 7 = 14.
+на полке 5 яблок, в шкафу 3 яблока, на столе 2 конфеты; сколько яблок всего? конфеты лишние: 5 + 3 = 8.
+
+in the cupboard there are 6 pencils; how many  in all? there is no answer: nothing is said about the shelf.
+on the shelf there are 8 apples; how many  in all? there is no answer: nothing is said about the cupboard.
+on the shelf there are 5 pencils, in the cupboard there are 5 pencils; how many  in all? the data is enough: 5 + 5 = 10.
+on the shelf there are 3 apples, in the cupboard there are 7 apples; how many  in all? the data is enough: 3 + 7 = 10.
+on the shelf there are 4 pencils; how many  in all? there is no answer: nothing is said about the cupboard.
+in the cupboard there are 5 apples; how many  in all? there is no answer: nothing is said about the shelf.
+on the shelf there are 3 pencils, in the cupboard there are 7 pencils; how many  in all? the data is enough: 3 + 7 = 10.
+on the shelf there are 2 apples, in the cupboard there are 4 apples; how many  in all? the data is enough: 2 + 4 = 6.
+in the cupboard there are 9 books; how many  in all? there is no answer: nothing is said about the shelf.
+on the shelf there are 3 apples; how many  in all? there is no answer: nothing is said about the cupboard.
+on the shelf there are 2 pencils, in the cupboard there are 4 pencils; how many  in all? the data is enough: 2 + 4 = 6.
+on the shelf there are 7 sweets, in the cupboard there are 7 sweets; how many  in all? the data is enough: 7 + 7 = 14.
+on the shelf there are 7 books; how many  in all? there is no answer: nothing is said about the cupboard.
+in the cupboard there are 8 sweets; how many  in all? there is no answer: nothing is said about the shelf.
+on the shelf there are 7 books, in the cupboard there are 7 books; how many  in all? the data is enough: 7 + 7 = 14.
+on the shelf there are 5 sweets, in the cupboard there are 5 sweets; how many  in all? the data is enough: 5 + 5 = 10.
+in the cupboard there are 4 books; how many  in all? there is no answer: nothing is said about the shelf.
+on the shelf there are 6 sweets; how many  in all? there is no answer: nothing is said about the cupboard.
+on the shelf there are 5 books, in the cupboard there are 5 books; how many  in all? the data is enough: 5 + 5 = 10.
+on the shelf there are 3 sweets, in the cupboard there are 7 sweets; how many  in all? the data is enough: 3 + 7 = 10.
+on the shelf there are 2 books; how many  in all? there is no answer: nothing is said about the cupboard.
+in the cupboard there are 3 sweets; how many  in all? there is no answer: nothing is said about the shelf.
+on the shelf there are 3 books, in the cupboard there are 7 books; how many  in all? the data is enough: 3 + 7 = 10.
+on the shelf there are 2 sweets, in the cupboard there are 4 sweets; how many  in all? the data is enough: 2 + 4 = 6.
+on the shelf there are 7 apples, in the cupboard there are 7 apples; how many  in all? the data is enough: 7 + 7 = 14.
+on the shelf there are 9 pencils; how many  in all? there is no answer: nothing is said about the cupboard.
+on the shelf there are 2 books, in the cupboard there are 4 books; how many  in all? the data is enough: 2 + 4 = 6.
+on the shelf there are 7 pencils, in the cupboard there are 7 pencils; how many  in all? the data is enough: 7 + 7 = 14.
+on the shelf there are 5 apples, in the cupboard there are 5 apples; how many  in all? the data is enough: 5 + 5 = 10.
+
+the extra number here is 2: it counts books, and the question is about pencils: 3 + 9 = 12.
+on the shelf there are 9 sweets, in the cupboard there are 7 sweets, on the table there are 2 books; how many sweets in all? the books are not needed: 9 + 7 = 16.
+the extra number here is 3: it counts books, and the question is about apples: 4 + 2 = 6.
+on the shelf there are 2 books, in the cupboard there are 8 books, on the table there are 3 pencils; how many books in all? the pencils are not needed: 2 + 8 = 10.
+the extra number here is 2: it counts sweets, and the question is about pencils: 6 + 8 = 14.
+on the shelf there are 7 sweets, in the cupboard there are 7 sweets, on the table there are 2 pencils; how many sweets in all? the pencils are not needed: 7 + 7 = 14.
+the extra number here is 2: it counts pencils, and the question is about apples: 3 + 5 = 8.
+on the shelf there are 3 books, in the cupboard there are 3 books, on the table there are 2 sweets; how many books in all? the sweets are not needed: 3 + 3 = 6.
+the extra number here is 2: it counts apples, and the question is about pencils: 8 + 6 = 14.
+on the shelf there are 7 sweets, in the cupboard there are 3 sweets, on the table there are 2 apples; how many sweets in all? the apples are not needed: 7 + 3 = 10.
+the extra number here is 3: it counts sweets, and the question is about apples: 2 + 4 = 6.
+on the shelf there are 4 books, in the cupboard there are 4 books, on the table there are 2 apples; how many books in all? the apples are not needed: 4 + 4 = 8.
+the extra number here is 2: it counts books, and the question is about sweets: 7 + 5 = 12.
+on the shelf there are 2 apples, in the cupboard there are 4 apples, on the table there are 3 books; how many apples in all? the books are not needed: 2 + 4 = 6.
+the extra number here is 2: it counts sweets, and the question is about apples: 8 + 8 = 16.
+on the shelf there are 9 pencils, in the cupboard there are 3 pencils, on the table there are 2 books; how many pencils in all? the books are not needed: 9 + 3 = 12.
+the extra number here is 2: it counts pencils, and the question is about sweets: 5 + 7 = 12.
+on the shelf there are 8 apples, in the cupboard there are 8 apples, on the table there are 2 books; how many apples in all? the books are not needed: 8 + 8 = 16.
+the extra number here is 2: it counts pencils, and the question is about books: 4 + 4 = 8.
+on the shelf there are 3 pencils, in the cupboard there are 9 pencils, on the table there are 2 apples; how many pencils in all? the apples are not needed: 3 + 9 = 12.
+the extra number here is 2: it counts pencils, and the question is about sweets: 9 + 7 = 16.
+on the shelf there are 6 apples, in the cupboard there are 6 apples, on the table there are 2 pencils; how many apples in all? the pencils are not needed: 6 + 6 = 12.
+the extra number here is 3: it counts sweets, and the question is about books: 8 + 2 = 10.
+on the shelf there are 5 sweets, in the cupboard there are 7 sweets, on the table there are 2 books; how many sweets in all? the books are not needed: 5 + 7 = 12.
+the extra number here is 2: it counts apples, and the question is about sweets: 7 + 7 = 14.
+on the shelf there are 5 apples, in the cupboard there are 3 apples, on the table there are 2 sweets; how many apples in all? the sweets are not needed: 5 + 3 = 8.
+
+в шкафу 7 книг; сколько книг всего? ответа нет: про полку ничего не сказано.
+на полке 2 книги, в шкафу 6 книг; сколько книг всего? данных хватает: 2 + 6 = 8.
+на полке 7 конфет, в шкафу 9 конфет; сколько конфет всего? данных хватает: 7 + 9 = 16.
+в шкафу 9 карандашей; сколько карандашей всего? ответа нет: про полку ничего не сказано.
+на полке 2 карандаша, в шкафу 6 карандашей; сколько карандашей всего? данных хватает: 2 + 6 = 8.
+на полке 7 яблок, в шкафу 9 яблок; сколько яблок всего? данных хватает: 7 + 9 = 16.
+в шкафу 3 яблока; сколько яблок всего? ответа нет: про полку ничего не сказано.
+на полке 2 конфеты, в шкафу 6 конфет; сколько конфет всего? данных хватает: 2 + 6 = 8.
+на полке 2 карандаша; сколько карандашей всего? ответа нет: про шкаф ничего не сказано.
+на полке 3 книги, в шкафу 9 книг; сколько книг всего? данных хватает: 3 + 9 = 12.
+на полке 2 яблока, в шкафу 6 яблок; сколько яблок всего? данных хватает: 2 + 6 = 8.
+на полке 4 конфеты; сколько конфет всего? ответа нет: про шкаф ничего не сказано.
+на полке 3 карандаша, в шкафу 9 карандашей; сколько карандашей всего? данных хватает: 3 + 9 = 12.
+в шкафу 2 книги; сколько книг всего? ответа нет: про полку ничего не сказано.
+на полке 6 яблок; сколько яблок всего? ответа нет: про шкаф ничего не сказано.
+на полке 3 конфеты, в шкафу 9 конфет; сколько конфет всего? данных хватает: 3 + 9 = 12.
+в шкафу 4 карандаша; сколько карандашей всего? ответа нет: про полку ничего не сказано.
+на полке 5 книг, в шкафу 7 книг; сколько книг всего? данных хватает: 5 + 7 = 12.
+на полке 3 яблока, в шкафу 9 яблок; сколько яблок всего? данных хватает: 3 + 9 = 12.
+в шкафу 6 конфет; сколько конфет всего? ответа нет: про полку ничего не сказано.
+на полке 5 карандашей, в шкафу 7 карандашей; сколько карандашей всего? данных хватает: 5 + 7 = 12.
+на полке 5 книг; сколько книг всего? ответа нет: про шкаф ничего не сказано.
+в шкафу 8 яблок; сколько яблок всего? ответа нет: про полку ничего не сказано.
+на полке 5 конфет, в шкафу 7 конфет; сколько конфет всего? данных хватает: 5 + 7 = 12.
+на полке 7 карандашей; сколько карандашей всего? ответа нет: про шкаф ничего не сказано.
+на полке 7 книг, в шкафу 9 книг; сколько книг всего? данных хватает: 7 + 9 = 16.
+на полке 5 яблок, в шкафу 7 яблок; сколько яблок всего? данных хватает: 5 + 7 = 12.
+на полке 9 конфет; сколько конфет всего? ответа нет: про шкаф ничего не сказано.
+на полке 7 карандашей, в шкафу 9 карандашей; сколько карандашей всего? данных хватает: 7 + 9 = 16.
+
+лишнее число здесь 2: оно считает конфеты, а вопрос про книги: 3 + 3 = 6.
+на полке 7 конфет, в шкафу 3 конфеты, на столе 2 карандаша; сколько конфет всего? карандаши лишние: 7 + 3 = 10.
+лишнее число здесь 2: оно считает конфеты, а вопрос про яблоки: 5 + 3 = 8.
+лишнее число здесь 2: оно считает книги, а вопрос про конфеты: 5 + 7 = 12.
+на полке 4 яблока, в шкафу 2 яблока, на столе 3 карандаша; сколько яблок всего? карандаши лишние: 4 + 2 = 6.
+на полке 8 карандашей, в шкафу 6 карандашей, на столе 2 конфеты; сколько карандашей всего? конфеты лишние: 8 + 6 = 14.
+лишнее число здесь 3: оно считает книги, а вопрос про яблоки: 2 + 4 = 6.
+лишнее число здесь 2: оно считает яблоки, а вопрос про книги: 4 + 4 = 8.
+на полке 3 конфеты, в шкафу 7 конфет, на столе 2 яблока; сколько конфет всего? яблоки лишние: 3 + 7 = 10.
+на полке 8 книг, в шкафу 2 книги, на столе 3 карандаша; сколько книг всего? карандаши лишние: 8 + 2 = 10.
+лишнее число здесь 2: оно считает книги, а вопрос про конфеты: 9 + 7 = 16.
+на полке 3 яблока, в шкафу 5 яблок, на столе 2 конфеты; сколько яблок всего? конфеты лишние: 3 + 5 = 8.
+на полке 9 карандашей, в шкафу 3 карандаша, на столе 2 яблока; сколько карандашей всего? яблоки лишние: 9 + 3 = 12.
+лишнее число здесь 2: оно считает книги, а вопрос про яблоки: 8 + 8 = 16.
+лишнее число здесь 2: оно считает книги, а вопрос про карандаши: 9 + 3 = 12.
+на полке 7 конфет, в шкафу 9 конфет, на столе 2 яблока; сколько конфет всего? яблоки лишние: 7 + 9 = 16.
+на полке 2 книги, в шкафу 8 книг, на столе 3 яблока; сколько книг всего? яблоки лишние: 2 + 8 = 10.
+лишнее число здесь 2: оно считает карандаши, а вопрос про конфеты: 7 + 7 = 14.
+лишнее число здесь 3: оно считает карандаши, а вопрос про книги: 2 + 8 = 10.
+на полке 7 конфет, в шкафу 7 конфет, на столе 2 книги; сколько конфет всего? книги лишние: 7 + 7 = 14.
+лишнее число здесь 2: оно считает карандаши, а вопрос про яблоки: 6 + 6 = 12.
+лишнее число здесь 2: оно считает яблоки, а вопрос про карандаши: 3 + 9 = 12.
+на полке 5 яблок, в шкафу 3 яблока, на столе 2 книги; сколько яблок всего? книги лишние: 5 + 3 = 8.
+на полке 6 карандашей, в шкафу 8 карандашей, на столе 2 книги; сколько карандашей всего? книги лишние: 6 + 8 = 14.
+лишнее число здесь 2: оно считает яблоки, а вопрос про конфеты: 7 + 3 = 10.
+
+in the cupboard there are 7 books; how many  in all? there is no answer: nothing is said about the shelf.
+on the shelf there are 2 books, in the cupboard there are 6 books; how many  in all? the data is enough: 2 + 6 = 8.
+on the shelf there are 7 sweets, in the cupboard there are 9 sweets; how many  in all? the data is enough: 7 + 9 = 16.
+in the cupboard there are 9 pencils; how many  in all? there is no answer: nothing is said about the shelf.
+on the shelf there are 2 pencils, in the cupboard there are 6 pencils; how many  in all? the data is enough: 2 + 6 = 8.
+on the shelf there are 7 apples, in the cupboard there are 9 apples; how many  in all? the data is enough: 7 + 9 = 16.
+in the cupboard there are 3 apples; how many  in all? there is no answer: nothing is said about the shelf.
+on the shelf there are 2 sweets, in the cupboard there are 6 sweets; how many  in all? the data is enough: 2 + 6 = 8.
+on the shelf there are 2 pencils; how many  in all? there is no answer: nothing is said about the cupboard.
+on the shelf there are 3 books, in the cupboard there are 9 books; how many  in all? the data is enough: 3 + 9 = 12.
+on the shelf there are 2 apples, in the cupboard there are 6 apples; how many  in all? the data is enough: 2 + 6 = 8.
+on the shelf there are 4 sweets; how many  in all? there is no answer: nothing is said about the cupboard.
+on the shelf there are 3 pencils, in the cupboard there are 9 pencils; how many  in all? the data is enough: 3 + 9 = 12.
+in the cupboard there are 2 books; how many  in all? there is no answer: nothing is said about the shelf.
+on the shelf there are 6 apples; how many  in all? there is no answer: nothing is said about the cupboard.
+on the shelf there are 3 sweets, in the cupboard there are 9 sweets; how many  in all? the data is enough: 3 + 9 = 12.
+in the cupboard there are 4 pencils; how many  in all? there is no answer: nothing is said about the shelf.
+on the shelf there are 5 books, in the cupboard there are 7 books; how many  in all? the data is enough: 5 + 7 = 12.
+on the shelf there are 3 apples, in the cupboard there are 9 apples; how many  in all? the data is enough: 3 + 9 = 12.
+in the cupboard there are 6 sweets; how many  in all? there is no answer: nothing is said about the shelf.
+on the shelf there are 5 pencils, in the cupboard there are 7 pencils; how many  in all? the data is enough: 5 + 7 = 12.
+on the shelf there are 5 books; how many  in all? there is no answer: nothing is said about the cupboard.
+in the cupboard there are 8 apples; how many  in all? there is no answer: nothing is said about the shelf.
+on the shelf there are 5 sweets, in the cupboard there are 7 sweets; how many  in all? the data is enough: 5 + 7 = 12.
+on the shelf there are 7 pencils; how many  in all? there is no answer: nothing is said about the cupboard.
+on the shelf there are 7 books, in the cupboard there are 9 books; how many  in all? the data is enough: 7 + 9 = 16.
+on the shelf there are 5 apples, in the cupboard there are 7 apples; how many  in all? the data is enough: 5 + 7 = 12.
+on the shelf there are 9 sweets; how many  in all? there is no answer: nothing is said about the cupboard.
+on the shelf there are 7 pencils, in the cupboard there are 9 pencils; how many  in all? the data is enough: 7 + 9 = 16.
+
+the extra number here is 2: it counts sweets, and the question is about books: 3 + 3 = 6.
+on the shelf there are 7 sweets, in the cupboard there are 3 sweets, on the table there are 2 pencils; how many sweets in all? the pencils are not needed: 7 + 3 = 10.
+the extra number here is 2: it counts sweets, and the question is about apples: 5 + 3 = 8.
+the extra number here is 2: it counts books, and the question is about sweets: 5 + 7 = 12.
+on the shelf there are 4 apples, in the cupboard there are 2 apples, on the table there are 3 pencils; how many apples in all? the pencils are not needed: 4 + 2 = 6.
+on the shelf there are 8 pencils, in the cupboard there are 6 pencils, on the table there are 2 sweets; how many pencils in all? the sweets are not needed: 8 + 6 = 14.
+the extra number here is 3: it counts books, and the question is about apples: 2 + 4 = 6.
+the extra number here is 2: it counts apples, and the question is about books: 4 + 4 = 8.
+on the shelf there are 3 sweets, in the cupboard there are 7 sweets, on the table there are 2 apples; how many sweets in all? the apples are not needed: 3 + 7 = 10.
+on the shelf there are 8 books, in the cupboard there are 2 books, on the table there are 3 pencils; how many books in all? the pencils are not needed: 8 + 2 = 10.
+the extra number here is 2: it counts books, and the question is about sweets: 9 + 7 = 16.
+on the shelf there are 3 apples, in the cupboard there are 5 apples, on the table there are 2 sweets; how many apples in all? the sweets are not needed: 3 + 5 = 8.
+on the shelf there are 9 pencils, in the cupboard there are 3 pencils, on the table there are 2 apples; how many pencils in all? the apples are not needed: 9 + 3 = 12.
+the extra number here is 2: it counts books, and the question is about apples: 8 + 8 = 16.
+the extra number here is 2: it counts books, and the question is about pencils: 9 + 3 = 12.
+on the shelf there are 7 sweets, in the cupboard there are 9 sweets, on the table there are 2 apples; how many sweets in all? the apples are not needed: 7 + 9 = 16.
+on the shelf there are 2 books, in the cupboard there are 8 books, on the table there are 3 apples; how many books in all? the apples are not needed: 2 + 8 = 10.
+the extra number here is 2: it counts pencils, and the question is about sweets: 7 + 7 = 14.
+the extra number here is 3: it counts pencils, and the question is about books: 2 + 8 = 10.
+on the shelf there are 7 sweets, in the cupboard there are 7 sweets, on the table there are 2 books; how many sweets in all? the books are not needed: 7 + 7 = 14.
+the extra number here is 2: it counts pencils, and the question is about apples: 6 + 6 = 12.
+the extra number here is 2: it counts apples, and the question is about pencils: 3 + 9 = 12.
+on the shelf there are 5 apples, in the cupboard there are 3 apples, on the table there are 2 books; how many apples in all? the books are not needed: 5 + 3 = 8.
+on the shelf there are 6 pencils, in the cupboard there are 8 pencils, on the table there are 2 books; how many pencils in all? the books are not needed: 6 + 8 = 14.
+the extra number here is 2: it counts apples, and the question is about sweets: 7 + 3 = 10.
+
+в шкафу 9 конфет; сколько конфет всего? ответа нет: про полку ничего не сказано.
+на полке 4 конфеты, в шкафу 4 конфеты; сколько конфет всего? данных хватает: 4 + 4 = 8.
+на полке 2 конфеты; сколько конфет всего? ответа нет: про шкаф ничего не сказано.
+на полке 5 карандашей, в шкафу 9 карандашей; сколько карандашей всего? данных хватает: 5 + 9 = 14.
+в шкафу 2 карандаша; сколько карандашей всего? ответа нет: про полку ничего не сказано.
+на полке 8 книг, в шкафу 8 книг; сколько книг всего? данных хватает: 8 + 8 = 16.
+на полке 3 книги; сколько книг всего? ответа нет: про шкаф ничего не сказано.
+на полке 2 книги, в шкафу 8 книг; сколько книг всего? данных хватает: 2 + 8 = 10.
+на полке 4 яблока, в шкафу 4 яблока; сколько яблок всего? данных хватает: 4 + 4 = 8.
+на полке 4 яблока; сколько яблок всего? ответа нет: про шкаф ничего не сказано.
+на полке 5 конфет, в шкафу 9 конфет; сколько конфет всего? данных хватает: 5 + 9 = 14.
+в шкафу 4 конфеты; сколько конфет всего? ответа нет: про полку ничего не сказано.
+на полке 8 карандашей, в шкафу 8 карандашей; сколько карандашей всего? данных хватает: 8 + 8 = 16.
+на полке 5 карандашей; сколько карандашей всего? ответа нет: про шкаф ничего не сказано.
+на полке 2 карандаша, в шкафу 8 карандашей; сколько карандашей всего? данных хватает: 2 + 8 = 10.
+в шкафу 5 книг; сколько книг всего? ответа нет: про полку ничего не сказано.
+на полке 4 книги, в шкафу 4 книги; сколько книг всего? данных хватает: 4 + 4 = 8.
+на полке 5 яблок, в шкафу 9 яблок; сколько яблок всего? данных хватает: 5 + 9 = 14.
+в шкафу 6 яблок; сколько яблок всего? ответа нет: про полку ничего не сказано.
+на полке 8 конфет, в шкафу 8 конфет; сколько конфет всего? данных хватает: 8 + 8 = 16.
+на полке 7 конфет; сколько конфет всего? ответа нет: про шкаф ничего не сказано.
+на полке 2 конфеты, в шкафу 8 конфет; сколько конфет всего? данных хватает: 2 + 8 = 10.
+в шкафу 7 карандашей; сколько карандашей всего? ответа нет: про полку ничего не сказано.
+на полке 4 карандаша, в шкафу 4 карандаша; сколько карандашей всего? данных хватает: 4 + 4 = 8.
+на полке 8 книг; сколько книг всего? ответа нет: про шкаф ничего не сказано.
+на полке 5 книг, в шкафу 9 книг; сколько книг всего? данных хватает: 5 + 9 = 14.
+на полке 8 яблок, в шкафу 8 яблок; сколько яблок всего? данных хватает: 8 + 8 = 16.
+на полке 9 яблок; сколько яблок всего? ответа нет: про шкаф ничего не сказано.
+на полке 2 яблока, в шкафу 8 яблок; сколько яблок всего? данных хватает: 2 + 8 = 10.
+
+лишнее число здесь 2: оно считает яблоки, а вопрос про карандаши: 9 + 3 = 12.
+на полке 8 яблок, в шкафу 8 яблок, на столе 2 карандаша; сколько яблок всего? карандаши лишние: 8 + 8 = 16.
+на полке 7 конфет, в шкафу 3 конфеты, на столе 2 книги; сколько конфет всего? книги лишние: 7 + 3 = 10.
+лишнее число здесь 2: оно считает конфеты, а вопрос про яблоки: 3 + 5 = 8.
+лишнее число здесь 2: оно считает книги, а вопрос про конфеты: 7 + 7 = 14.
+на полке 6 яблок, в шкафу 6 яблок, на столе 2 конфеты; сколько яблок всего? конфеты лишние: 6 + 6 = 12.
+на полке 3 конфеты, в шкафу 7 конфет, на столе 2 карандаша; сколько конфет всего? карандаши лишние: 3 + 7 = 10.
+на полке 3 книги, в шкафу 3 книги, на столе 2 карандаша; сколько книг всего? карандаши лишние: 3 + 3 = 6.
+лишнее число здесь 2: оно считает карандаши, а вопрос про конфеты: 7 + 3 = 10.
+лишнее число здесь 3: оно считает карандаши, а вопрос про книги: 8 + 2 = 10.
+на полке 7 конфет, в шкафу 9 конфет, на столе 2 карандаша; сколько конфет всего? карандаши лишние: 7 + 9 = 16.
+на полке 4 книги, в шкафу 4 книги, на столе 2 конфеты; сколько книг всего? конфеты лишние: 4 + 4 = 8.
+лишнее число здесь 2: оно считает яблоки, а вопрос про конфеты: 3 + 7 = 10.
+лишнее число здесь 3: оно считает яблоки, а вопрос про книги: 2 + 8 = 10.
+на полке 7 конфет, в шкафу 5 конфет, на столе 2 яблока; сколько конфет всего? яблоки лишние: 7 + 5 = 12.
+на полке 8 книг, в шкафу 2 книги, на столе 3 яблока; сколько книг всего? яблоки лишние: 8 + 2 = 10.
+лишнее число здесь 2: оно считает яблоки, а вопрос про конфеты: 7 + 9 = 16.
+лишнее число здесь 2: оно считает книги, а вопрос про карандаши: 6 + 8 = 14.
+на полке 3 яблока, в шкафу 5 яблок, на столе 2 книги; сколько яблок всего? книги лишние: 3 + 5 = 8.
+на полке 3 карандаша, в шкафу 9 карандашей, на столе 2 конфеты; сколько карандашей всего? конфеты лишние: 3 + 9 = 12.
+лишнее число здесь 2: оно считает книги, а вопрос про яблоки: 5 + 3 = 8.
+лишнее число здесь 2: оно считает конфеты, а вопрос про карандаши: 8 + 6 = 14.
+на полке 2 яблока, в шкафу 4 яблока, на столе 3 карандаша; сколько яблок всего? карандаши лишние: 2 + 4 = 6.
+на полке 6 карандашей, в шкафу 8 карандашей, на столе 2 яблока; сколько карандашей всего? яблоки лишние: 6 + 8 = 14.
+лишнее число здесь 3: оно считает карандаши, а вопрос про яблоки: 4 + 2 = 6.
+
+in the cupboard there are 9 sweets; how many  in all? there is no answer: nothing is said about the shelf.
+on the shelf there are 4 sweets, in the cupboard there are 4 sweets; how many  in all? the data is enough: 4 + 4 = 8.
+on the shelf there are 2 sweets; how many  in all? there is no answer: nothing is said about the cupboard.
+on the shelf there are 5 pencils, in the cupboard there are 9 pencils; how many  in all? the data is enough: 5 + 9 = 14.
+in the cupboard there are 2 pencils; how many  in all? there is no answer: nothing is said about the shelf.
+on the shelf there are 8 books, in the cupboard there are 8 books; how many  in all? the data is enough: 8 + 8 = 16.
+on the shelf there are 3 books; how many  in all? there is no answer: nothing is said about the cupboard.
+on the shelf there are 2 books, in the cupboard there are 8 books; how many  in all? the data is enough: 2 + 8 = 10.
+on the shelf there are 4 apples, in the cupboard there are 4 apples; how many  in all? the data is enough: 4 + 4 = 8.
+on the shelf there are 4 apples; how many  in all? there is no answer: nothing is said about the cupboard.
+on the shelf there are 5 sweets, in the cupboard there are 9 sweets; how many  in all? the data is enough: 5 + 9 = 14.
+in the cupboard there are 4 sweets; how many  in all? there is no answer: nothing is said about the shelf.
+on the shelf there are 8 pencils, in the cupboard there are 8 pencils; how many  in all? the data is enough: 8 + 8 = 16.
+on the shelf there are 5 pencils; how many  in all? there is no answer: nothing is said about the cupboard.
+on the shelf there are 2 pencils, in the cupboard there are 8 pencils; how many  in all? the data is enough: 2 + 8 = 10.
+in the cupboard there are 5 books; how many  in all? there is no answer: nothing is said about the shelf.
+on the shelf there are 4 books, in the cupboard there are 4 books; how many  in all? the data is enough: 4 + 4 = 8.
+on the shelf there are 5 apples, in the cupboard there are 9 apples; how many  in all? the data is enough: 5 + 9 = 14.
+in the cupboard there are 6 apples; how many  in all? there is no answer: nothing is said about the shelf.
+on the shelf there are 8 sweets, in the cupboard there are 8 sweets; how many  in all? the data is enough: 8 + 8 = 16.
+on the shelf there are 7 sweets; how many  in all? there is no answer: nothing is said about the cupboard.
+on the shelf there are 2 sweets, in the cupboard there are 8 sweets; how many  in all? the data is enough: 2 + 8 = 10.
+in the cupboard there are 7 pencils; how many  in all? there is no answer: nothing is said about the shelf.
+on the shelf there are 4 pencils, in the cupboard there are 4 pencils; how many  in all? the data is enough: 4 + 4 = 8.
+on the shelf there are 8 books; how many  in all? there is no answer: nothing is said about the cupboard.
+on the shelf there are 5 books, in the cupboard there are 9 books; how many  in all? the data is enough: 5 + 9 = 14.
+on the shelf there are 8 apples, in the cupboard there are 8 apples; how many  in all? the data is enough: 8 + 8 = 16.
+on the shelf there are 9 apples; how many  in all? there is no answer: nothing is said about the cupboard.
+on the shelf there are 2 apples, in the cupboard there are 8 apples; how many  in all? the data is enough: 2 + 8 = 10.
+
+the extra number here is 2: it counts apples, and the question is about pencils: 9 + 3 = 12.
+on the shelf there are 8 apples, in the cupboard there are 8 apples, on the table there are 2 pencils; how many apples in all? the pencils are not needed: 8 + 8 = 16.
+on the shelf there are 7 sweets, in the cupboard there are 3 sweets, on the table there are 2 books; how many sweets in all? the books are not needed: 7 + 3 = 10.
+the extra number here is 2: it counts sweets, and the question is about apples: 3 + 5 = 8.
+the extra number here is 2: it counts books, and the question is about sweets: 7 + 7 = 14.
+on the shelf there are 6 apples, in the cupboard there are 6 apples, on the table there are 2 sweets; how many apples in all? the sweets are not needed: 6 + 6 = 12.
+on the shelf there are 3 sweets, in the cupboard there are 7 sweets, on the table there are 2 pencils; how many sweets in all? the pencils are not needed: 3 + 7 = 10.
+on the shelf there are 3 books, in the cupboard there are 3 books, on the table there are 2 pencils; how many books in all? the pencils are not needed: 3 + 3 = 6.
+the extra number here is 2: it counts pencils, and the question is about sweets: 7 + 3 = 10.
+the extra number here is 3: it counts pencils, and the question is about books: 8 + 2 = 10.
+on the shelf there are 7 sweets, in the cupboard there are 9 sweets, on the table there are 2 pencils; how many sweets in all? the pencils are not needed: 7 + 9 = 16.
+on the shelf there are 4 books, in the cupboard there are 4 books, on the table there are 2 sweets; how many books in all? the sweets are not needed: 4 + 4 = 8.
+the extra number here is 2: it counts apples, and the question is about sweets: 3 + 7 = 10.
+the extra number here is 3: it counts apples, and the question is about books: 2 + 8 = 10.
+on the shelf there are 7 sweets, in the cupboard there are 5 sweets, on the table there are 2 apples; how many sweets in all? the apples are not needed: 7 + 5 = 12.
+on the shelf there are 8 books, in the cupboard there are 2 books, on the table there are 3 apples; how many books in all? the apples are not needed: 8 + 2 = 10.
+the extra number here is 2: it counts apples, and the question is about sweets: 7 + 9 = 16.
+the extra number here is 2: it counts books, and the question is about pencils: 6 + 8 = 14.
+on the shelf there are 3 apples, in the cupboard there are 5 apples, on the table there are 2 books; how many apples in all? the books are not needed: 3 + 5 = 8.
+on the shelf there are 3 pencils, in the cupboard there are 9 pencils, on the table there are 2 sweets; how many pencils in all? the sweets are not needed: 3 + 9 = 12.
+the extra number here is 2: it counts books, and the question is about apples: 5 + 3 = 8.
+the extra number here is 2: it counts sweets, and the question is about pencils: 8 + 6 = 14.
+on the shelf there are 2 apples, in the cupboard there are 4 apples, on the table there are 3 pencils; how many apples in all? the pencils are not needed: 2 + 4 = 6.
+on the shelf there are 6 pencils, in the cupboard there are 8 pencils, on the table there are 2 apples; how many pencils in all? the apples are not needed: 6 + 8 = 14.
+the extra number here is 3: it counts pencils, and the question is about apples: 4 + 2 = 6.
+
+в шкафу 5 карандашей; сколько карандашей всего? ответа нет: про полку ничего не сказано.
+на полке 3 конфеты, в шкафу 3 конфеты; сколько конфет всего? данных хватает: 3 + 3 = 6.
+на полке 2 яблока; сколько яблок всего? ответа нет: про шкаф ничего не сказано.
+на полке 4 яблока, в шкафу 6 яблок; сколько яблок всего? данных хватает: 4 + 6 = 10.
+на полке 4 книги, в шкафу 6 книг; сколько книг всего? данных хватает: 4 + 6 = 10.
+в шкафу 8 книг; сколько книг всего? ответа нет: про полку ничего не сказано.
+на полке 6 карандашей, в шкафу 6 карандашей; сколько карандашей всего? данных хватает: 6 + 6 = 12.
+на полке 5 конфет; сколько конфет всего? ответа нет: про шкаф ничего не сказано.
+на полке 9 конфет, в шкафу 9 конфет; сколько конфет всего? данных хватает: 9 + 9 = 18.
+в шкафу 9 яблок; сколько яблок всего? ответа нет: про полку ничего не сказано.
+в шкафу 3 книги; сколько книг всего? ответа нет: про полку ничего не сказано.
+на полке 3 карандаша, в шкафу 3 карандаша; сколько карандашей всего? данных хватает: 3 + 3 = 6.
+на полке 8 карандашей; сколько карандашей всего? ответа нет: про шкаф ничего не сказано.
+на полке 4 конфеты, в шкафу 6 конфет; сколько конфет всего? данных хватает: 4 + 6 = 10.
+в шкафу 4 яблока; сколько яблок всего? ответа нет: про полку ничего не сказано.
+на полке 6 яблок, в шкафу 6 яблок; сколько яблок всего? данных хватает: 6 + 6 = 12.
+на полке 6 книг, в шкафу 6 книг; сколько книг всего? данных хватает: 6 + 6 = 12.
+на полке 3 карандаша; сколько карандашей всего? ответа нет: про шкаф ничего не сказано.
+на полке 9 карандашей, в шкафу 9 карандашей; сколько карандашей всего? данных хватает: 9 + 9 = 18.
+в шкафу 7 конфет; сколько конфет всего? ответа нет: про полку ничего не сказано.
+на полке 3 яблока, в шкафу 3 яблока; сколько яблок всего? данных хватает: 3 + 3 = 6.
+на полке 3 книги, в шкафу 3 книги; сколько книг всего? данных хватает: 3 + 3 = 6.
+на полке 6 книг; сколько книг всего? ответа нет: про шкаф ничего не сказано.
+на полке 4 карандаша, в шкафу 6 карандашей; сколько карандашей всего? данных хватает: 4 + 6 = 10.
+в шкафу 2 конфеты; сколько конфет всего? ответа нет: про полку ничего не сказано.
+на полке 6 конфет, в шкафу 6 конфет; сколько конфет всего? данных хватает: 6 + 6 = 12.
+на полке 7 яблок; сколько яблок всего? ответа нет: про шкаф ничего не сказано.
+на полке 9 яблок, в шкафу 9 яблок; сколько яблок всего? данных хватает: 9 + 9 = 18.
+на полке 9 книг, в шкафу 9 книг; сколько книг всего? данных хватает: 9 + 9 = 18.
+
+лишнее число здесь 3: оно считает яблоки, а вопрос про книги: 8 + 2 = 10.
+на полке 5 яблок, в шкафу 3 яблока, на столе 2 карандаша; сколько яблок всего? карандаши лишние: 5 + 3 = 8.
+на полке 7 конфет, в шкафу 5 конфет, на столе 2 карандаша; сколько конфет всего? карандаши лишние: 7 + 5 = 12.
+на полке 8 карандашей, в шкафу 6 карандашей, на столе 2 книги; сколько карандашей всего? книги лишние: 8 + 6 = 14.
+лишнее число здесь 2: оно считает карандаши, а вопрос про яблоки: 8 + 8 = 16.
+лишнее число здесь 2: оно считает карандаши, а вопрос про конфеты: 7 + 9 = 16.
+лишнее число здесь 2: оно считает конфеты, а вопрос про карандаши: 3 + 9 = 12.
+на полке 4 яблока, в шкафу 2 яблока, на столе 3 конфеты; сколько яблок всего? конфеты лишние: 4 + 2 = 6.
+на полке 5 конфет, в шкафу 7 конфет, на столе 2 яблока; сколько конфет всего? яблоки лишние: 5 + 7 = 12.
+на полке 9 карандашей, в шкафу 3 карандаша, на столе 2 конфеты; сколько карандашей всего? конфеты лишние: 9 + 3 = 12.
+лишнее число здесь 2: оно считает конфеты, а вопрос про яблоки: 6 + 6 = 12.
+лишнее число здесь 2: оно считает яблоки, а вопрос про конфеты: 7 + 5 = 12.
+лишнее число здесь 2: оно считает яблоки, а вопрос про карандаши: 6 + 8 = 14.
+лишнее число здесь 2: оно считает карандаши, а вопрос про книги: 3 + 3 = 6.
+на полке 9 конфет, в шкафу 7 конфет, на столе 2 яблока; сколько конфет всего? яблоки лишние: 9 + 7 = 16.
+на полке 3 конфеты, в шкафу 7 конфет, на столе 2 книги; сколько конфет всего? книги лишние: 3 + 7 = 10.
+на полке 2 книги, в шкафу 8 книг, на столе 3 конфеты; сколько книг всего? конфеты лишние: 2 + 8 = 10.
+лишнее число здесь 2: оно считает книги, а вопрос про яблоки: 3 + 5 = 8.
+лишнее число здесь 2: оно считает книги, а вопрос про конфеты: 7 + 3 = 10.
+лишнее число здесь 2: оно считает конфеты, а вопрос про книги: 4 + 4 = 8.
+на полке 6 яблок, в шкафу 6 яблок, на столе 2 книги; сколько яблок всего? книги лишние: 6 + 6 = 12.
+на полке 7 конфет, в шкафу 9 конфет, на столе 2 книги; сколько конфет всего? книги лишние: 7 + 9 = 16.
+на полке 3 книги, в шкафу 3 книги, на столе 2 яблока; сколько книг всего? яблоки лишние: 3 + 3 = 6.
+лишнее число здесь 3: оно считает карандаши, а вопрос про яблоки: 2 + 4 = 6.
+лишнее число здесь 2: оно считает карандаши, а вопрос про конфеты: 3 + 7 = 10.
+
+in the cupboard there are 5 pencils; how many  in all? there is no answer: nothing is said about the shelf.
+on the shelf there are 3 sweets, in the cupboard there are 3 sweets; how many  in all? the data is enough: 3 + 3 = 6.
+on the shelf there are 2 apples; how many  in all? there is no answer: nothing is said about the cupboard.
+on the shelf there are 4 apples, in the cupboard there are 6 apples; how many  in all? the data is enough: 4 + 6 = 10.
+on the shelf there are 4 books, in the cupboard there are 6 books; how many  in all? the data is enough: 4 + 6 = 10.
+in the cupboard there are 8 books; how many  in all? there is no answer: nothing is said about the shelf.
+on the shelf there are 6 pencils, in the cupboard there are 6 pencils; how many  in all? the data is enough: 6 + 6 = 12.
+on the shelf there are 5 sweets; how many  in all? there is no answer: nothing is said about the cupboard.
+on the shelf there are 9 sweets, in the cupboard there are 9 sweets; how many  in all? the data is enough: 9 + 9 = 18.
+in the cupboard there are 9 apples; how many  in all? there is no answer: nothing is said about the shelf.
+in the cupboard there are 3 books; how many  in all? there is no answer: nothing is said about the shelf.
+on the shelf there are 3 pencils, in the cupboard there are 3 pencils; how many  in all? the data is enough: 3 + 3 = 6.
+on the shelf there are 8 pencils; how many  in all? there is no answer: nothing is said about the cupboard.
+on the shelf there are 4 sweets, in the cupboard there are 6 sweets; how many  in all? the data is enough: 4 + 6 = 10.
+in the cupboard there are 4 apples; how many  in all? there is no answer: nothing is said about the shelf.
+on the shelf there are 6 apples, in the cupboard there are 6 apples; how many  in all? the data is enough: 6 + 6 = 12.
+on the shelf there are 6 books, in the cupboard there are 6 books; how many  in all? the data is enough: 6 + 6 = 12.
+on the shelf there are 3 pencils; how many  in all? there is no answer: nothing is said about the cupboard.
+on the shelf there are 9 pencils, in the cupboard there are 9 pencils; how many  in all? the data is enough: 9 + 9 = 18.
+in the cupboard there are 7 sweets; how many  in all? there is no answer: nothing is said about the shelf.
+on the shelf there are 3 apples, in the cupboard there are 3 apples; how many  in all? the data is enough: 3 + 3 = 6.
+on the shelf there are 3 books, in the cupboard there are 3 books; how many  in all? the data is enough: 3 + 3 = 6.
+on the shelf there are 6 books; how many  in all? there is no answer: nothing is said about the cupboard.
+on the shelf there are 4 pencils, in the cupboard there are 6 pencils; how many  in all? the data is enough: 4 + 6 = 10.
+in the cupboard there are 2 sweets; how many  in all? there is no answer: nothing is said about the shelf.
+on the shelf there are 6 sweets, in the cupboard there are 6 sweets; how many  in all? the data is enough: 6 + 6 = 12.
+on the shelf there are 7 apples; how many  in all? there is no answer: nothing is said about the cupboard.
+on the shelf there are 9 apples, in the cupboard there are 9 apples; how many  in all? the data is enough: 9 + 9 = 18.
+on the shelf there are 9 books, in the cupboard there are 9 books; how many  in all? the data is enough: 9 + 9 = 18.
+
+the extra number here is 3: it counts apples, and the question is about books: 8 + 2 = 10.
+on the shelf there are 5 apples, in the cupboard there are 3 apples, on the table there are 2 pencils; how many apples in all? the pencils are not needed: 5 + 3 = 8.
+on the shelf there are 7 sweets, in the cupboard there are 5 sweets, on the table there are 2 pencils; how many sweets in all? the pencils are not needed: 7 + 5 = 12.
+on the shelf there are 8 pencils, in the cupboard there are 6 pencils, on the table there are 2 books; how many pencils in all? the books are not needed: 8 + 6 = 14.
+the extra number here is 2: it counts pencils, and the question is about apples: 8 + 8 = 16.
+the extra number here is 2: it counts pencils, and the question is about sweets: 7 + 9 = 16.
+the extra number here is 2: it counts sweets, and the question is about pencils: 3 + 9 = 12.
+on the shelf there are 4 apples, in the cupboard there are 2 apples, on the table there are 3 sweets; how many apples in all? the sweets are not needed: 4 + 2 = 6.
+on the shelf there are 5 sweets, in the cupboard there are 7 sweets, on the table there are 2 apples; how many sweets in all? the apples are not needed: 5 + 7 = 12.
+on the shelf there are 9 pencils, in the cupboard there are 3 pencils, on the table there are 2 sweets; how many pencils in all? the sweets are not needed: 9 + 3 = 12.
+the extra number here is 2: it counts sweets, and the question is about apples: 6 + 6 = 12.
+the extra number here is 2: it counts apples, and the question is about sweets: 7 + 5 = 12.
+the extra number here is 2: it counts apples, and the question is about pencils: 6 + 8 = 14.
+the extra number here is 2: it counts pencils, and the question is about books: 3 + 3 = 6.
+on the shelf there are 9 sweets, in the cupboard there are 7 sweets, on the table there are 2 apples; how many sweets in all? the apples are not needed: 9 + 7 = 16.
+on the shelf there are 3 sweets, in the cupboard there are 7 sweets, on the table there are 2 books; how many sweets in all? the books are not needed: 3 + 7 = 10.
+on the shelf there are 2 books, in the cupboard there are 8 books, on the table there are 3 sweets; how many books in all? the sweets are not needed: 2 + 8 = 10.
+the extra number here is 2: it counts books, and the question is about apples: 3 + 5 = 8.
+the extra number here is 2: it counts books, and the question is about sweets: 7 + 3 = 10.
+the extra number here is 2: it counts sweets, and the question is about books: 4 + 4 = 8.
+on the shelf there are 6 apples, in the cupboard there are 6 apples, on the table there are 2 books; how many apples in all? the books are not needed: 6 + 6 = 12.
+on the shelf there are 7 sweets, in the cupboard there are 9 sweets, on the table there are 2 books; how many sweets in all? the books are not needed: 7 + 9 = 16.
+on the shelf there are 3 books, in the cupboard there are 3 books, on the table there are 2 apples; how many books in all? the apples are not needed: 3 + 3 = 6.
+the extra number here is 3: it counts pencils, and the question is about apples: 2 + 4 = 6.
+the extra number here is 2: it counts pencils, and the question is about sweets: 3 + 7 = 10.
+
+на полке 2 книги, в шкафу 2 книги; сколько книг всего? данных хватает: 2 + 2 = 4.
+в шкафу 3 карандаша; сколько карандашей всего? ответа нет: про полку ничего не сказано.
+на полке 4 конфеты, в шкафу 8 конфет; сколько конфет всего? данных хватает: 4 + 8 = 12.
+на полке 3 книги, в шкафу 5 книг; сколько книг всего? данных хватает: 3 + 5 = 8.
+на полке 6 карандашей; сколько карандашей всего? ответа нет: про шкаф ничего не сказано.
+на полке 6 конфет, в шкафу 8 конфет; сколько конфет всего? данных хватает: 6 + 8 = 14.
+на полке 4 книги, в шкафу 8 книг; сколько книг всего? данных хватает: 4 + 8 = 12.
+в шкафу 8 карандашей; сколько карандашей всего? ответа нет: про полку ничего не сказано.
+на полке 2 яблока, в шкафу 2 яблока; сколько яблок всего? данных хватает: 2 + 2 = 4.
+на полке 6 книг, в шкафу 8 книг; сколько книг всего? данных хватает: 6 + 8 = 14.
+на полке 3 конфеты; сколько конфет всего? ответа нет: про шкаф ничего не сказано.
+на полке 3 яблока, в шкафу 5 яблок; сколько яблок всего? данных хватает: 3 + 5 = 8.
+на полке 2 карандаша, в шкафу 2 карандаша; сколько карандашей всего? данных хватает: 2 + 2 = 4.
+в шкафу 5 конфет; сколько конфет всего? ответа нет: про полку ничего не сказано.
+на полке 4 яблока, в шкафу 8 яблок; сколько яблок всего? данных хватает: 4 + 8 = 12.
+на полке 3 карандаша, в шкафу 5 карандашей; сколько карандашей всего? данных хватает: 3 + 5 = 8.
+на полке 8 конфет; сколько конфет всего? ответа нет: про шкаф ничего не сказано.
+на полке 6 яблок, в шкафу 8 яблок; сколько яблок всего? данных хватает: 6 + 8 = 14.
+на полке 4 карандаша, в шкафу 8 карандашей; сколько карандашей всего? данных хватает: 4 + 8 = 12.
+в шкафу 2 яблока; сколько яблок всего? ответа нет: про полку ничего не сказано.
+на полке 4 книги; сколько книг всего? ответа нет: про шкаф ничего не сказано.
+на полке 6 карандашей, в шкафу 8 карандашей; сколько карандашей всего? данных хватает: 6 + 8 = 14.
+на полке 5 яблок; сколько яблок всего? ответа нет: про шкаф ничего не сказано.
+в шкафу 6 книг; сколько книг всего? ответа нет: про полку ничего не сказано.
+на полке 2 конфеты, в шкафу 2 конфеты; сколько конфет всего? данных хватает: 2 + 2 = 4.
+в шкафу 7 яблок; сколько яблок всего? ответа нет: про полку ничего не сказано.
+на полке 9 книг; сколько книг всего? ответа нет: про шкаф ничего не сказано.
+на полке 3 конфеты, в шкафу 5 конфет; сколько конфет всего? данных хватает: 3 + 5 = 8.
+
+на полке 5 конфет, в шкафу 7 конфет, на столе 2 карандаша; сколько конфет всего? карандаши лишние: 5 + 7 = 12.
+на полке 6 карандашей, в шкафу 8 карандашей, на столе 2 конфеты; сколько карандашей всего? конфеты лишние: 6 + 8 = 14.
+на полке 4 книги, в шкафу 4 книги, на столе 2 карандаша; сколько книг всего? карандаши лишние: 4 + 4 = 8.
+лишнее число здесь 2: оно считает книги, а вопрос про яблоки: 6 + 6 = 12.
+лишнее число здесь 2: оно считает карандаши, а вопрос про конфеты: 7 + 5 = 12.
+лишнее число здесь 2: оно считает конфеты, а вопрос про карандаши: 9 + 3 = 12.
+лишнее число здесь 3: оно считает конфеты, а вопрос про книги: 2 + 8 = 10.
+на полке 3 яблока, в шкафу 5 яблок, на столе 2 карандаша; сколько яблок всего? карандаши лишние: 3 + 5 = 8.
+на полке 9 конфет, в шкафу 7 конфет, на столе 2 карандаша; сколько конфет всего? карандаши лишние: 9 + 7 = 16.
+на полке 8 карандашей, в шкафу 6 карандашей, на столе 2 яблока; сколько карандашей всего? яблоки лишние: 8 + 6 = 14.
+на полке 8 книг, в шкафу 2 книги, на столе 3 конфеты; сколько книг всего? конфеты лишние: 8 + 2 = 10.
+лишнее число здесь 2: оно считает карандаши, а вопрос про яблоки: 5 + 3 = 8.
+лишнее число здесь 2: оно считает яблоки, а вопрос про конфеты: 5 + 7 = 12.
+лишнее число здесь 2: оно считает книги, а вопрос про конфеты: 3 + 7 = 10.
+лишнее число здесь 2: оно считает яблоки, а вопрос про книги: 3 + 3 = 6.
+на полке 2 яблока, в шкафу 4 яблока, на столе 3 конфеты; сколько яблок всего? конфеты лишние: 2 + 4 = 6.
+на полке 7 конфет, в шкафу 7 конфет, на столе 2 яблока; сколько конфет всего? яблоки лишние: 7 + 7 = 14.
+на полке 7 конфет, в шкафу 5 конфет, на столе 2 книги; сколько конфет всего? книги лишние: 7 + 5 = 12.
+на полке 3 карандаша, в шкафу 9 карандашей, на столе 2 книги; сколько карандашей всего? книги лишние: 3 + 9 = 12.
+лишнее число здесь 3: оно считает конфеты, а вопрос про яблоки: 4 + 2 = 6.
+лишнее число здесь 2: оно считает яблоки, а вопрос про конфеты: 9 + 7 = 16.
+лишнее число здесь 2: оно считает книги, а вопрос про конфеты: 7 + 9 = 16.
+лишнее число здесь 2: оно считает книги, а вопрос про карандаши: 8 + 6 = 14.
+на полке 8 яблок, в шкафу 8 яблок, на столе 2 конфеты; сколько яблок всего? конфеты лишние: 8 + 8 = 16.
+на полке 4 яблока, в шкафу 2 яблока, на столе 3 книги; сколько яблок всего? книги лишние: 4 + 2 = 6.
+
+on the shelf there are 2 books, in the cupboard there are 2 books; how many  in all? the data is enough: 2 + 2 = 4.
+in the cupboard there are 3 pencils; how many  in all? there is no answer: nothing is said about the shelf.
+on the shelf there are 4 sweets, in the cupboard there are 8 sweets; how many  in all? the data is enough: 4 + 8 = 12.
+on the shelf there are 3 books, in the cupboard there are 5 books; how many  in all? the data is enough: 3 + 5 = 8.
+on the shelf there are 6 pencils; how many  in all? there is no answer: nothing is said about the cupboard.
+on the shelf there are 6 sweets, in the cupboard there are 8 sweets; how many  in all? the data is enough: 6 + 8 = 14.
+on the shelf there are 4 books, in the cupboard there are 8 books; how many  in all? the data is enough: 4 + 8 = 12.
+in the cupboard there are 8 pencils; how many  in all? there is no answer: nothing is said about the shelf.
+on the shelf there are 2 apples, in the cupboard there are 2 apples; how many  in all? the data is enough: 2 + 2 = 4.
+on the shelf there are 6 books, in the cupboard there are 8 books; how many  in all? the data is enough: 6 + 8 = 14.
+on the shelf there are 3 sweets; how many  in all? there is no answer: nothing is said about the cupboard.
+on the shelf there are 3 apples, in the cupboard there are 5 apples; how many  in all? the data is enough: 3 + 5 = 8.
+on the shelf there are 2 pencils, in the cupboard there are 2 pencils; how many  in all? the data is enough: 2 + 2 = 4.
+in the cupboard there are 5 sweets; how many  in all? there is no answer: nothing is said about the shelf.
+on the shelf there are 4 apples, in the cupboard there are 8 apples; how many  in all? the data is enough: 4 + 8 = 12.
+on the shelf there are 3 pencils, in the cupboard there are 5 pencils; how many  in all? the data is enough: 3 + 5 = 8.
+on the shelf there are 8 sweets; how many  in all? there is no answer: nothing is said about the cupboard.
+on the shelf there are 6 apples, in the cupboard there are 8 apples; how many  in all? the data is enough: 6 + 8 = 14.
+on the shelf there are 4 pencils, in the cupboard there are 8 pencils; how many  in all? the data is enough: 4 + 8 = 12.
+in the cupboard there are 2 apples; how many  in all? there is no answer: nothing is said about the shelf.
+on the shelf there are 4 books; how many  in all? there is no answer: nothing is said about the cupboard.
+on the shelf there are 6 pencils, in the cupboard there are 8 pencils; how many  in all? the data is enough: 6 + 8 = 14.
+on the shelf there are 5 apples; how many  in all? there is no answer: nothing is said about the cupboard.
+in the cupboard there are 6 books; how many  in all? there is no answer: nothing is said about the shelf.
+on the shelf there are 2 sweets, in the cupboard there are 2 sweets; how many  in all? the data is enough: 2 + 2 = 4.
+in the cupboard there are 7 apples; how many  in all? there is no answer: nothing is said about the shelf.
+on the shelf there are 9 books; how many  in all? there is no answer: nothing is said about the cupboard.
+on the shelf there are 3 sweets, in the cupboard there are 5 sweets; how many  in all? the data is enough: 3 + 5 = 8.
+
+on the shelf there are 5 sweets, in the cupboard there are 7 sweets, on the table there are 2 pencils; how many sweets in all? the pencils are not needed: 5 + 7 = 12.
+on the shelf there are 6 pencils, in the cupboard there are 8 pencils, on the table there are 2 sweets; how many pencils in all? the sweets are not needed: 6 + 8 = 14.
+on the shelf there are 4 books, in the cupboard there are 4 books, on the table there are 2 pencils; how many books in all? the pencils are not needed: 4 + 4 = 8.
+the extra number here is 2: it counts books, and the question is about apples: 6 + 6 = 12.
+the extra number here is 2: it counts pencils, and the question is about sweets: 7 + 5 = 12.
+the extra number here is 2: it counts sweets, and the question is about pencils: 9 + 3 = 12.
+the extra number here is 3: it counts sweets, and the question is about books: 2 + 8 = 10.
+on the shelf there are 3 apples, in the cupboard there are 5 apples, on the table there are 2 pencils; how many apples in all? the pencils are not needed: 3 + 5 = 8.
+on the shelf there are 9 sweets, in the cupboard there are 7 sweets, on the table there are 2 pencils; how many sweets in all? the pencils are not needed: 9 + 7 = 16.
+on the shelf there are 8 pencils, in the cupboard there are 6 pencils, on the table there are 2 apples; how many pencils in all? the apples are not needed: 8 + 6 = 14.
+on the shelf there are 8 books, in the cupboard there are 2 books, on the table there are 3 sweets; how many books in all? the sweets are not needed: 8 + 2 = 10.
+the extra number here is 2: it counts pencils, and the question is about apples: 5 + 3 = 8.
+the extra number here is 2: it counts apples, and the question is about sweets: 5 + 7 = 12.
+the extra number here is 2: it counts books, and the question is about sweets: 3 + 7 = 10.
+the extra number here is 2: it counts apples, and the question is about books: 3 + 3 = 6.
+on the shelf there are 2 apples, in the cupboard there are 4 apples, on the table there are 3 sweets; how many apples in all? the sweets are not needed: 2 + 4 = 6.
+on the shelf there are 7 sweets, in the cupboard there are 7 sweets, on the table there are 2 apples; how many sweets in all? the apples are not needed: 7 + 7 = 14.
+on the shelf there are 7 sweets, in the cupboard there are 5 sweets, on the table there are 2 books; how many sweets in all? the books are not needed: 7 + 5 = 12.
+on the shelf there are 3 pencils, in the cupboard there are 9 pencils, on the table there are 2 books; how many pencils in all? the books are not needed: 3 + 9 = 12.
+the extra number here is 3: it counts sweets, and the question is about apples: 4 + 2 = 6.
+the extra number here is 2: it counts apples, and the question is about sweets: 9 + 7 = 16.
+the extra number here is 2: it counts books, and the question is about sweets: 7 + 9 = 16.
+the extra number here is 2: it counts books, and the question is about pencils: 8 + 6 = 14.
+on the shelf there are 8 apples, in the cupboard there are 8 apples, on the table there are 2 sweets; how many apples in all? the sweets are not needed: 8 + 8 = 16.
+on the shelf there are 4 apples, in the cupboard there are 2 apples, on the table there are 3 books; how many apples in all? the books are not needed: 4 + 2 = 6.
