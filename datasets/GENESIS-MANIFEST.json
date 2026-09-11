@@ -1626,6 +1626,30 @@
       "actors": []
     },
     {
+      "name": "pctchange",
+      "file": "datasets/genesis_pctchange.txt",
+      "genre": "CHANGE BY A PERCENT — THE PERCENT IS TAKEN FROM WHAT STANDS NOW. Measured 11.09 across the 243 show worlds: «increased by N %» — NONE; «decreased by N %» — NONE; «by what percent» — NONE. The world of percent shows ONLY «N % of a number» (120 lines), and the world of discount counts the discount IN ROUBLES, not in percent. THE CORPUS CAN TAKE A PERCENT OF A NUMBER AND CANNOT CHANGE A NUMBER BY A PERCENT. THE FIFTEENTH TRAP OF THE SERIES, AND IT LIVES ON EVERY PRICE TAG: GREW BY 10 % AND FELL BY 10 % — AND CAME OUT BELOW THE OLD ONE. Two hundred became two hundred and twenty, and then one hundred and ninety-eight. A PERCENT IS NOT A NUMBER: IT IS A SHARE OF WHAT STANDS BEFORE IT, AND THEREFORE TWO EQUAL PERCENTS ARE DIFFERENT QUANTITIES. Four genera: GROWTH, FALL, THERE-AND-BACK (the trap), and THE BASE («the second percent is taken from 220 and not from 200, and so it is bigger») — the cause. The third and the fourth stand on the same numbers: the first shows WHAT came out, the second WHY; apart, the third would be a trick and the fourth arithmetic without occasion. The first and the second are a minimal pair by direction — the same numbers, the same percent, and the difference in one sign — and they give the reader what the whole corpus lacks: A CHANGE, not the taking of a share. The counting goes BY THE SAME MOVE AS IN THE WORLD OF PERCENT: multiply by the number of percents and divide by a hundred. The house does not start its own arithmetic where the corpus has already shown one — it continues the move past the place where the world of percent stopped. A HOUSE CONTINUING A FOREIGN MOVE MUST GO BY THE SAME MOVE, OR THE READER LEARNS TWO RULES INSTEAD OF ONE. The percents are those that give whole shares TWICE IN A ROW (10, 20, 50 at a price multiple of a hundred): otherwise the second share would come out fractional and the house would speak of the decimal writing — the subject of a neighbour, not its own.",
+      "act": [
+        "recount",
+        "compare",
+        "generalize"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "shows",
+      "assemblies": [
+        "full",
+        "school"
+      ],
+      "actors": []
+    },
+    {
       "name": "opchoice",
       "file": "datasets/genesis_opchoice.txt",
       "genre": "CHOOSING THE OPERATION — which sign the SITUATION itself requires, and why that one. The corpus taught counting, and it taught naming the operation WHEN THE QUESTION NAMES IT («what is 20 plus 5?», «compute 20 plus 5»): the sign stands in the question and there is nothing to choose. The sweep of the canon against its own reader held eight lies at a threshold of zero, and four of them were ONE hole: the reader COUNTS RIGHT and TAKES THE WRONG OPERATION — «Ира нашла 11 орехов. она потеряла 9» answered 11 + 9 = 20; «Ivan shared 6 coins among 3 friends» answered 18. The law here is bought by a MINIMAL PAIR, not by an example: two pages with THE SAME NUMBERS differing in exactly one word — the word that decides the sign — and the reason for the difference is named IN THE LINE itself. Three forks, each taken from a reader's error rather than from the completeness of a table: finding/losing (+ or −), sharing equally/repeating (÷ or ×), more by/fewer by (+ or −). The fourth error (a fraction leaving: 36 ÷ 4 = 9, then 36 − 9 = 27) is a CHAIN of two operations and is not closed here — that is said, not left silent. The deciding word is declared by a table read by the court, and a swapped sign or a swapped word is caught mechanically.",
@@ -5453,10 +5477,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 22961678,
+      "size": 23025622,
       "tiers": [],
       "text": "mix",
-      "lines": 299074
+      "lines": 299554
     },
     {
       "name": "full",
@@ -5471,10 +5495,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 37044955,
+      "size": 37108899,
       "tiers": [],
       "text": "mix",
-      "lines": 416612
+      "lines": 417092
     },
     {
       "name": "minimal",
