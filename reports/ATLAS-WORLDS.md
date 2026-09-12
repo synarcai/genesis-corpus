@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 268 миров, 429863 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 269 миров, 429923 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -446,6 +446,53 @@
 - **`roles`** (144 строк; declared, whole_only)  
   **ROLE QUESTIONS** — a question BY THE TYPE OF ITS HOLE: with what, where, of what.
 
+## АКТ «compare» — сравнить двоих: больше, меньше, во столько же раз
+
+Миров 21, строк 16144.
+
+- **`cmpframes`** (6480 строк; recompute, whole_only)  
+  **FRAMES OF COMPARISON** — the largest class of the reader's lies on the held-out key (05.09: twelve of fifteen — «9 flexiones más que», «in più/in meno di», «meer/minder dan», «więcej/mniej niż»: the marker is not bought and the answer takes a neighbouring…
+- **`compare_mult`** (2759 строк; recompute, whole_only, unsigned_only)  
+  **multiple comparison, and the two frames English keeps apart standing SIDE BY SIDE ON THE SAME NUMBERS: «as many as» for the countable and «as much as» for the uncountable** — the organism had bought one and not the other because they never stood together;…
+- **`genesis_compare`** (1440 строк; recompute, whole_only, unsigned_only)  
+  **COMPARISON BY DIFFERENCE, BY RATIO, AND BY BOTH AT ONCE** — declared until 12.09 in eight words.
+- **`digitlen`** (1064 строк; recompute, whole_only)  
+  **THE LENGTH OF THE WRITING** — FOR WHOLE NUMBERS, A LONGER WRITING MEANS A GREATER NUMBER. The trap of a neighbour stands on a rule the corpus never stated: the world of the decimal share (`dec`) says outright that «a reader who knows whole numbers compare…
+- **`unitcmp`** (908 строк; recompute, declared, whole_only)  
+  **THE COMPARISON OF NAMED QUANTITIES** — THE GREATER NUMBER NAMES THE LESSER QUANTITY. Measured 11.09 across the 256 show worlds: a question of comparison carrying TWO DIFFERENT MEASURES — NONE. The corpus can do everything the answer needs and never asks t…
+- **`scale`** (747 строк; declared, whole_only)  
+  **THE SCALE** — a comparison of THINGS THEMSELVES and TRANSITIVITY as a checkable INFERENCE. The compare world compares the NUMBERS at things («dan has 2 apples more»); here the things themselves are compared — «an elephant is bigger than a dog» — and there…
+- **`opslaw`** (710 строк; recompute, whole_only)  
+  **THE LAWS OF OPERATION** — AND THE MAIN THING IN THIS HOUSE IS THE LAW'S BOUNDARY. Measured 11.09 across the 234 show worlds: «переместительный», «commutative» — NONE; «сочетательный», «associative» — NONE; «распределительный», «раскрыть скобки», «distribu…
+- **`dist`** (400 строк; recompute, whole_only, exact_only)  
+  **ТРИ ЗАКОНА РАССТОЯНИЯ** — ЧТО ДЕЛАЕТ РАССТОЯНИЕ РАССТОЯНИЕМ. Свод считал расстояния сотнями страниц («расстояние между (−1, 2) и (−16, 10) — 17: 15² + 8² = 17²») и нигде не называл их законов: замер 12.09 нашёл симметрию показанной, а «ноль только до себя…
+- **`orderlaw`** (280 строк; recompute, whole_only, exact_only)  
+  **ЗАКОНЫ ПОРЯДКА** — СВОД СРАВНИВАЛ ЧИСЛА ДЕВЯТЬ ТЫСЯЧ РАЗ И НИ РАЗУ НЕ СДЕЛАЛ ВЫВОДА. Замер 12.09: 980 строк несут цепь «a меньше b, и b меньше c» («билет 4 стои́т между 1 и 7: 1 меньше 4, и 4 меньше 7»), и НИ ОДНА не договаривает «значит, 1 меньше 7».
+- **`propcompare`** (200 строк; recompute, whole_only)  
+  **PROPERTY COMPARISON IN NINE LANGUAGES** — «which is heavier: a stone or a feather? a stone.», «what is lighter: a feather or a stone? a feather.» Born from the fifth band of conversation (BESEDA-5, 05.09): «что тяжелее: камень или перо?» was mute in all n…
+- **`ru_compare`** (168 строк; recompute, declared, whole_only, exact_only)  
+  **multiplicative against differential comparison in Russian: «во сколько раз больше» is DIVISION and «на сколько больше» is SUBTRACTION, two frames a speaker confuses more often than any other, shown on the SAME pair of numbers side by side with the differe…
+- **`gender`** (160 строк; declared, declared_table_only)  
+  **РОД В ЧУЖОМ ЯЗЫКЕ** — СВОД СТАВИЛ АРТИКЛЬ ТРИ ТЫСЯЧИ РАЗ И НИ РАЗУ НЕ СКАЗАЛ, ЧТО ЭТО РОД. Замер 12.09: русский род свод называет 624 строками («Анна женского рода, и потому Анна получила»), а в немецком мире 2940 артиклей и НОЛЬ упоминаний рода; во всех …
+- **`rewrite`** (144 строк; recompute, whole_only)  
+  **REWRITING** — one number written two ways. d5 named sixty-two starving collections of the organism, and `rewrite_facts` was among them: the corpus had no rewriting shows at all.
+- **`analog`** (144 строк; recompute, whole_only)  
+  **LIKENESS** — analogy and its CHECK, not its feeling.
+- **`negquant`** (110 строк; recompute, whole_only, exact_only)  
+  **ОТРИЦАНИЕ КВАНТОРА** — «НЕ ВСЕ КРАСНЫЕ» И «ВСЕ НЕ КРАСНЫЕ» СУТЬ РАЗНЫЕ ВЫСКАЗЫВАНИЯ. Замер 12.09 по девятому десятку понятий: «не все ≠ все не» — ноль упоминаний и ноль показов; «отрицание квантора» — ноль и ноль.
+- **`dim`** (110 строк; recompute, declared, whole_only, exact_only, declared_table_only)  
+  **РАЗМЕРНОСТЬ** — ЧТО СКЛАДЫВАТЬ МОЖНО, ЧТО НЕЛЬЗЯ, И ЧТО РОЖДАЕТСЯ ОТ УМНОЖЕНИЯ. Замер 12.09 по одиннадцатому десятку понятий: «единицы не складываются» — ноль упоминаний и ноль показов; «масса и вес» — ноль и ноль.
+- **`measureprec`** (96 строк; recompute, finite_decimal_only)  
+  **ИЗМЕРЕНИЕ И ЕГО ТОЧНОСТЬ** — СВОД МЕРИЛ ВСЁ И НИ РАЗУ НЕ СКАЗАЛ, ЧТО ИЗМЕРЕНИЕ НЕТОЧНО. Замер 12.09 по шестому десятку понятий: «погрешность» — ноль упоминаний и ноль показов; «значащие цифры» — ноль и ноль; «цена деления» — ноль и ноль; «повторное измере…
+- **`chancetrap`** (62 строк; recompute, whole_only, exact_only)  
+  **ЛОВУШКИ СЛУЧАЯ И СРЕДНЕГО** — СВОД СЧИТАЛ ТО И ДРУГОЕ И НИ РАЗУ НЕ СКАЗАЛ, ГДЕ ОНИ ЛГУТ. Замер 12.09 по седьмому десятку понятий: свод считает среднее 1339 строками и вероятность 446, и все они верны, — а о том, что с этими числами делают дальше, ни слова…
+- **`fence`** (60 строк; recompute, whole_only, exact_only)  
+  **СЧЁТ ВКЛЮЧИТЕЛЬНО** — «С ТРЕТЬЕГО ПО СЕДЬМОЕ» ЕСТЬ ПЯТЬ ДНЕЙ, А НЕ ЧЕТЫРЕ. Замер 12.09 по двенадцатому десятку понятий: «счёт включительно» — ноль упоминаний и ноль показов; «интервал между датами» — ноль и ноль; «возраст и год рождения» — ноль и ноль.
+- **`measuregrow`** (52 строк; recompute, whole_only, exact_only)  
+  **РОСТ МЕРЫ** — «ВДВОЕ БОЛЬШЕ» ЗНАЧИТ РАЗНОЕ ДЛЯ ДЛИНЫ, ПЛОЩАДИ И ОБЪЁМА. Замер 12.09 по десятому десятку понятий: «площадь растёт как квадрат» — ноль упоминаний и ноль показов; «сумма углов треугольника» — ноль и ноль; «периметр и площадь вместе» — ноль и …
+- **`ratetrap`** (50 строк; recompute, whole_only, exact_only)  
+  **ЛОВУШКИ ОТНОШЕНИЯ** — ГДЕ СРЕДНЕЕ ЛЖЁТ, А СЛОЖЕНИЕ НЕ ДЕЙСТВУЕТ ВОВСЕ. Замер 12.09 по восьмому десятку понятий: «средняя скорость» ноль и ноль, «совместная работа» ноль и ноль, «сложные проценты» ноль и ноль, «наценка» ноль и ноль, — а скорости, проценты …
+
 ## АКТ «decide» — решить случай: вердикт с основанием рядом
 
 Миров 21, строк 16228.
@@ -492,51 +539,6 @@
   **TESTING A HYPOTHESIS** — and THE CHIEF ASYMMETRY of knowledge.
 - **`reply`** (54 строк; declared, whole_only)  
   **REPLY** — advice to the interlocutor RESTING ON A DECLARED LAW. The owner's order about «basic behavioural and psychological laws» was half closed: the behaviour house gives the LAW but not its APPLICATION TO THE PERSON SPEAKING. Here a person names their…
-
-## АКТ «compare» — сравнить двоих: больше, меньше, во столько же раз
-
-Миров 20, строк 16084.
-
-- **`cmpframes`** (6480 строк; recompute, whole_only)  
-  **FRAMES OF COMPARISON** — the largest class of the reader's lies on the held-out key (05.09: twelve of fifteen — «9 flexiones más que», «in più/in meno di», «meer/minder dan», «więcej/mniej niż»: the marker is not bought and the answer takes a neighbouring…
-- **`compare_mult`** (2759 строк; recompute, whole_only, unsigned_only)  
-  **multiple comparison, and the two frames English keeps apart standing SIDE BY SIDE ON THE SAME NUMBERS: «as many as» for the countable and «as much as» for the uncountable** — the organism had bought one and not the other because they never stood together;…
-- **`genesis_compare`** (1440 строк; recompute, whole_only, unsigned_only)  
-  **COMPARISON BY DIFFERENCE, BY RATIO, AND BY BOTH AT ONCE** — declared until 12.09 in eight words.
-- **`digitlen`** (1064 строк; recompute, whole_only)  
-  **THE LENGTH OF THE WRITING** — FOR WHOLE NUMBERS, A LONGER WRITING MEANS A GREATER NUMBER. The trap of a neighbour stands on a rule the corpus never stated: the world of the decimal share (`dec`) says outright that «a reader who knows whole numbers compare…
-- **`unitcmp`** (908 строк; recompute, declared, whole_only)  
-  **THE COMPARISON OF NAMED QUANTITIES** — THE GREATER NUMBER NAMES THE LESSER QUANTITY. Measured 11.09 across the 256 show worlds: a question of comparison carrying TWO DIFFERENT MEASURES — NONE. The corpus can do everything the answer needs and never asks t…
-- **`scale`** (747 строк; declared, whole_only)  
-  **THE SCALE** — a comparison of THINGS THEMSELVES and TRANSITIVITY as a checkable INFERENCE. The compare world compares the NUMBERS at things («dan has 2 apples more»); here the things themselves are compared — «an elephant is bigger than a dog» — and there…
-- **`opslaw`** (710 строк; recompute, whole_only)  
-  **THE LAWS OF OPERATION** — AND THE MAIN THING IN THIS HOUSE IS THE LAW'S BOUNDARY. Measured 11.09 across the 234 show worlds: «переместительный», «commutative» — NONE; «сочетательный», «associative» — NONE; «распределительный», «раскрыть скобки», «distribu…
-- **`dist`** (400 строк; recompute, whole_only, exact_only)  
-  **ТРИ ЗАКОНА РАССТОЯНИЯ** — ЧТО ДЕЛАЕТ РАССТОЯНИЕ РАССТОЯНИЕМ. Свод считал расстояния сотнями страниц («расстояние между (−1, 2) и (−16, 10) — 17: 15² + 8² = 17²») и нигде не называл их законов: замер 12.09 нашёл симметрию показанной, а «ноль только до себя…
-- **`orderlaw`** (280 строк; recompute, whole_only, exact_only)  
-  **ЗАКОНЫ ПОРЯДКА** — СВОД СРАВНИВАЛ ЧИСЛА ДЕВЯТЬ ТЫСЯЧ РАЗ И НИ РАЗУ НЕ СДЕЛАЛ ВЫВОДА. Замер 12.09: 980 строк несут цепь «a меньше b, и b меньше c» («билет 4 стои́т между 1 и 7: 1 меньше 4, и 4 меньше 7»), и НИ ОДНА не договаривает «значит, 1 меньше 7».
-- **`propcompare`** (200 строк; recompute, whole_only)  
-  **PROPERTY COMPARISON IN NINE LANGUAGES** — «which is heavier: a stone or a feather? a stone.», «what is lighter: a feather or a stone? a feather.» Born from the fifth band of conversation (BESEDA-5, 05.09): «что тяжелее: камень или перо?» was mute in all n…
-- **`ru_compare`** (168 строк; recompute, declared, whole_only, exact_only)  
-  **multiplicative against differential comparison in Russian: «во сколько раз больше» is DIVISION and «на сколько больше» is SUBTRACTION, two frames a speaker confuses more often than any other, shown on the SAME pair of numbers side by side with the differe…
-- **`gender`** (160 строк; declared, declared_table_only)  
-  **РОД В ЧУЖОМ ЯЗЫКЕ** — СВОД СТАВИЛ АРТИКЛЬ ТРИ ТЫСЯЧИ РАЗ И НИ РАЗУ НЕ СКАЗАЛ, ЧТО ЭТО РОД. Замер 12.09: русский род свод называет 624 строками («Анна женского рода, и потому Анна получила»), а в немецком мире 2940 артиклей и НОЛЬ упоминаний рода; во всех …
-- **`rewrite`** (144 строк; recompute, whole_only)  
-  **REWRITING** — one number written two ways. d5 named sixty-two starving collections of the organism, and `rewrite_facts` was among them: the corpus had no rewriting shows at all.
-- **`analog`** (144 строк; recompute, whole_only)  
-  **LIKENESS** — analogy and its CHECK, not its feeling.
-- **`negquant`** (110 строк; recompute, whole_only, exact_only)  
-  **ОТРИЦАНИЕ КВАНТОРА** — «НЕ ВСЕ КРАСНЫЕ» И «ВСЕ НЕ КРАСНЫЕ» СУТЬ РАЗНЫЕ ВЫСКАЗЫВАНИЯ. Замер 12.09 по девятому десятку понятий: «не все ≠ все не» — ноль упоминаний и ноль показов; «отрицание квантора» — ноль и ноль.
-- **`dim`** (110 строк; recompute, declared, whole_only, exact_only, declared_table_only)  
-  **РАЗМЕРНОСТЬ** — ЧТО СКЛАДЫВАТЬ МОЖНО, ЧТО НЕЛЬЗЯ, И ЧТО РОЖДАЕТСЯ ОТ УМНОЖЕНИЯ. Замер 12.09 по одиннадцатому десятку понятий: «единицы не складываются» — ноль упоминаний и ноль показов; «масса и вес» — ноль и ноль.
-- **`measureprec`** (96 строк; recompute, finite_decimal_only)  
-  **ИЗМЕРЕНИЕ И ЕГО ТОЧНОСТЬ** — СВОД МЕРИЛ ВСЁ И НИ РАЗУ НЕ СКАЗАЛ, ЧТО ИЗМЕРЕНИЕ НЕТОЧНО. Замер 12.09 по шестому десятку понятий: «погрешность» — ноль упоминаний и ноль показов; «значащие цифры» — ноль и ноль; «цена деления» — ноль и ноль; «повторное измере…
-- **`chancetrap`** (62 строк; recompute, whole_only, exact_only)  
-  **ЛОВУШКИ СЛУЧАЯ И СРЕДНЕГО** — СВОД СЧИТАЛ ТО И ДРУГОЕ И НИ РАЗУ НЕ СКАЗАЛ, ГДЕ ОНИ ЛГУТ. Замер 12.09 по седьмому десятку понятий: свод считает среднее 1339 строками и вероятность 446, и все они верны, — а о том, что с этими числами делают дальше, ни слова…
-- **`measuregrow`** (52 строк; recompute, whole_only, exact_only)  
-  **РОСТ МЕРЫ** — «ВДВОЕ БОЛЬШЕ» ЗНАЧИТ РАЗНОЕ ДЛЯ ДЛИНЫ, ПЛОЩАДИ И ОБЪЁМА. Замер 12.09 по десятому десятку понятий: «площадь растёт как квадрат» — ноль упоминаний и ноль показов; «сумма углов треугольника» — ноль и ноль; «периметр и площадь вместе» — ноль и …
-- **`ratetrap`** (50 строк; recompute, whole_only, exact_only)  
-  **ЛОВУШКИ ОТНОШЕНИЯ** — ГДЕ СРЕДНЕЕ ЛЖЁТ, А СЛОЖЕНИЕ НЕ ДЕЙСТВУЕТ ВОВСЕ. Замер 12.09 по восьмому десятку понятий: «средняя скорость» ноль и ноль, «совместная работа» ноль и ноль, «сложные проценты» ноль и ноль, «наценка» ноль и ноль, — а скорости, проценты …
 
 ## АКТ «translate» — сказать то же другой поверхностью, языком, записью
 
@@ -590,5 +592,5 @@
     ОБЪЯВЛЕНИЕ В ТРИДЦАТЬ ЗНАКОВ НЕ ЛЖЁТ И НЕ ГОВОРИТ: читатель узнаёт имя мира
     и ничего сверх него.
 
-Миров: **0** из 268.
+Миров: **0** из 269.
 

@@ -1,0 +1,89 @@
+с 14-го по 25-е — это 12 дней, а не 11: 25 − 14 = 11 считает ПРОМЕЖУТКИ между днями, а дней на один больше, ибо считаем ОБА конца. 11 + 1 = 12.
+с 3-го по 7-е — это 5 дней, а не 4: 7 − 3 = 4 считает ПРОМЕЖУТКИ между днями, а дней на один больше, ибо считаем ОБА конца. 4 + 1 = 5.
+
+с 1-го этажа на 6-й ведут 5 маршей: 6 − 1 = 5. Кто считает марши этажами, поднимется на один выше, чем надо.
+5 столбов держат 4 пролёта: между первым и вторым один, между вторым и третьим ещё один, и так до последнего — 5 − 1 = 4. ПРОЛЁТОВ НА ОДИН МЕНЬШЕ, ЧЕМ СТОЛБОВ.
+4 столба держат 3 пролёта: между первым и вторым один, между вторым и третьим ещё один, и так до последнего — 4 − 1 = 3. ПРОЛЁТОВ НА ОДИН МЕНЬШЕ, ЧЕМ СТОЛБОВ.
+бревно распилили на 10 частей — распилов было 9, а не 10: 10 − 1 = 9. Последний кусок отделяется тем же распилом, что и предпоследний.
+
+сколько дней с 14-го по 25-е включительно? 12: 25 − 14 = 11, и 11 + 1 = 12, ибо считаем оба конца.
+сколько дней с 3-го по 7-е включительно? 5: 7 − 3 = 4, и 4 + 1 = 5, ибо считаем оба конца.
+
+from the 14th to the 25th is 12 days, not 11: 25 − 14 = 11 counts the GAPS between days, and the days are one more, for both ends are counted. 11 + 1 = 12.
+from the 3th to the 7th is 5 days, not 4: 7 − 3 = 4 counts the GAPS between days, and the days are one more, for both ends are counted. 4 + 1 = 5.
+
+from floor 1 to floor 6 there are 5 flights: 6 − 1 = 5. Whoever counts flights as floors will climb one floor too high.
+5 posts hold 4 spans: one between the first and the second, one more between the second and the third, and so to the last — 5 − 1 = 4. THERE IS ONE FEWER SPAN THAN POSTS.
+4 posts hold 3 spans: one between the first and the second, one more between the second and the third, and so to the last — 4 − 1 = 3. THERE IS ONE FEWER SPAN THAN POSTS.
+a log was sawn into 10 pieces — there were 9 cuts, not 10: 10 − 1 = 9. The last piece is parted by the same cut as the one before it.
+
+how many days are there from the 14th to the 25th inclusive? 12: 25 − 14 = 11, and 11 + 1 = 12, for both ends are counted.
+how many days are there from the 3th to the 7th inclusive? 5: 7 − 3 = 4, and 4 + 1 = 5, for both ends are counted.
+
+с 5-го по 12-е — это 8 дней, а не 7: 12 − 5 = 7 считает ПРОМЕЖУТКИ между днями, а дней на один больше, ибо считаем ОБА конца. 7 + 1 = 8.
+
+с 1-го этажа на 10-й ведут 9 маршей: 10 − 1 = 9. Кто считает марши этажами, поднимется на один выше, чем надо.
+8 столбов держат 7 пролётов: между первым и вторым один, между вторым и третьим ещё один, и так до последнего — 8 − 1 = 7. ПРОЛЁТОВ НА ОДИН МЕНЬШЕ, ЧЕМ СТОЛБОВ.
+бревно распилили на 5 частей — распилов было 4, а не 5: 5 − 1 = 4. Последний кусок отделяется тем же распилом, что и предпоследний.
+бревно распилили на 4 части — распилов было 3, а не 4: 4 − 1 = 3. Последний кусок отделяется тем же распилом, что и предпоследний.
+
+сколько дней с 5-го по 12-е включительно? 8: 12 − 5 = 7, и 7 + 1 = 8, ибо считаем оба конца.
+
+from the 5th to the 12th is 8 days, not 7: 12 − 5 = 7 counts the GAPS between days, and the days are one more, for both ends are counted. 7 + 1 = 8.
+
+from floor 1 to floor 10 there are 9 flights: 10 − 1 = 9. Whoever counts flights as floors will climb one floor too high.
+8 posts hold 7 spans: one between the first and the second, one more between the second and the third, and so to the last — 8 − 1 = 7. THERE IS ONE FEWER SPAN THAN POSTS.
+a log was sawn into 5 pieces — there were 4 cuts, not 5: 5 − 1 = 4. The last piece is parted by the same cut as the one before it.
+a log was sawn into 4 pieces — there were 3 cuts, not 4: 4 − 1 = 3. The last piece is parted by the same cut as the one before it.
+
+how many days are there from the 5th to the 12th inclusive? 8: 12 − 5 = 7, and 7 + 1 = 8, for both ends are counted.
+
+с 1-го по 9-е — это 9 дней, а не 8: 9 − 1 = 8 считает ПРОМЕЖУТКИ между днями, а дней на один больше, ибо считаем ОБА конца. 8 + 1 = 9.
+
+бревно распилили на 8 частей — распилов было 7, а не 8: 8 − 1 = 7. Последний кусок отделяется тем же распилом, что и предпоследний.
+12 столбов держат 11 пролётов: между первым и вторым один, между вторым и третьим ещё один, и так до последнего — 12 − 1 = 11. ПРОЛЁТОВ НА ОДИН МЕНЬШЕ, ЧЕМ СТОЛБОВ.
+с 1-го этажа на 4-й ведут 3 марша: 4 − 1 = 3. Кто считает марши этажами, поднимется на один выше, чем надо.
+с 1-го этажа на 5-й ведут 4 марша: 5 − 1 = 4. Кто считает марши этажами, поднимется на один выше, чем надо.
+
+сколько дней с 1-го по 9-е включительно? 9: 9 − 1 = 8, и 8 + 1 = 9, ибо считаем оба конца.
+
+from the 1th to the 9th is 9 days, not 8: 9 − 1 = 8 counts the GAPS between days, and the days are one more, for both ends are counted. 8 + 1 = 9.
+
+a log was sawn into 8 pieces — there were 7 cuts, not 8: 8 − 1 = 7. The last piece is parted by the same cut as the one before it.
+12 posts hold 11 spans: one between the first and the second, one more between the second and the third, and so to the last — 12 − 1 = 11. THERE IS ONE FEWER SPAN THAN POSTS.
+from floor 1 to floor 4 there are 3 flights: 4 − 1 = 3. Whoever counts flights as floors will climb one floor too high.
+from floor 1 to floor 5 there are 4 flights: 5 − 1 = 4. Whoever counts flights as floors will climb one floor too high.
+
+how many days are there from the 1th to the 9th inclusive? 9: 9 − 1 = 8, and 8 + 1 = 9, for both ends are counted.
+
+с 10-го по 20-е — это 11 дней, а не 10: 20 − 10 = 10 считает ПРОМЕЖУТКИ между днями, а дней на один больше, ибо считаем ОБА конца. 10 + 1 = 11.
+
+с 1-го этажа на 8-й ведут 7 маршей: 8 − 1 = 7. Кто считает марши этажами, поднимется на один выше, чем надо.
+6 столбов держат 5 пролётов: между первым и вторым один, между вторым и третьим ещё один, и так до последнего — 6 − 1 = 5. ПРОЛЁТОВ НА ОДИН МЕНЬШЕ, ЧЕМ СТОЛБОВ.
+бревно распилили на 12 частей — распилов было 11, а не 12: 12 − 1 = 11. Последний кусок отделяется тем же распилом, что и предпоследний.
+
+сколько дней с 10-го по 20-е включительно? 11: 20 − 10 = 10, и 10 + 1 = 11, ибо считаем оба конца.
+
+from the 10th to the 20th is 11 days, not 10: 20 − 10 = 10 counts the GAPS between days, and the days are one more, for both ends are counted. 10 + 1 = 11.
+
+from floor 1 to floor 8 there are 7 flights: 8 − 1 = 7. Whoever counts flights as floors will climb one floor too high.
+6 posts hold 5 spans: one between the first and the second, one more between the second and the third, and so to the last — 6 − 1 = 5. THERE IS ONE FEWER SPAN THAN POSTS.
+a log was sawn into 12 pieces — there were 11 cuts, not 12: 12 − 1 = 11. The last piece is parted by the same cut as the one before it.
+
+how many days are there from the 10th to the 20th inclusive? 11: 20 − 10 = 10, and 10 + 1 = 11, for both ends are counted.
+
+с 2-го по 6-е — это 5 дней, а не 4: 6 − 2 = 4 считает ПРОМЕЖУТКИ между днями, а дней на один больше, ибо считаем ОБА конца. 4 + 1 = 5.
+
+бревно распилили на 6 частей — распилов было 5, а не 6: 6 − 1 = 5. Последний кусок отделяется тем же распилом, что и предпоследний.
+10 столбов держат 9 пролётов: между первым и вторым один, между вторым и третьим ещё один, и так до последнего — 10 − 1 = 9. ПРОЛЁТОВ НА ОДИН МЕНЬШЕ, ЧЕМ СТОЛБОВ.
+с 1-го этажа на 12-й ведут 11 маршей: 12 − 1 = 11. Кто считает марши этажами, поднимется на один выше, чем надо.
+
+сколько дней с 2-го по 6-е включительно? 5: 6 − 2 = 4, и 4 + 1 = 5, ибо считаем оба конца.
+
+from the 2th to the 6th is 5 days, not 4: 6 − 2 = 4 counts the GAPS between days, and the days are one more, for both ends are counted. 4 + 1 = 5.
+
+a log was sawn into 6 pieces — there were 5 cuts, not 6: 6 − 1 = 5. The last piece is parted by the same cut as the one before it.
+10 posts hold 9 spans: one between the first and the second, one more between the second and the third, and so to the last — 10 − 1 = 9. THERE IS ONE FEWER SPAN THAN POSTS.
+from floor 1 to floor 12 there are 11 flights: 12 − 1 = 11. Whoever counts flights as floors will climb one floor too high.
+
+how many days are there from the 2th to the 6th inclusive? 5: 6 − 2 = 4, and 4 + 1 = 5, for both ends are counted.
