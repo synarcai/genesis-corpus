@@ -6,7 +6,7 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 5077 разных законов на 6041 упоминаний; сказанных однажды — 4796, и они остаются при своём месте.
+Всего в дереве 5090 разных законов на 6063 упоминаний; сказанных однажды — 4809, и они остаются при своём месте.
 
 
 ## Держат 70 файлов
@@ -108,6 +108,10 @@
   tools/chancetrapforms.py, tools/dimforms.py, tools/genderforms.py, tools/measuregrowforms.py, tools/measureprecforms.py, tools/negquantforms.py … и ещё 2
 - **РЕГИСТР ИМЕНИ ЧИТАЕТСЯ ИЗ ПАКЕТА**  
   tools/gen_genesis_aggregate.py, tools/gen_genesis_compare.py, tools/gen_genesis_gsmlex.py, tools/gen_genesis_gsmwide.py, tools/gen_genesis_heads.py, tools/gen_genesis_realverbs.py … и ещё 2
+- **РЕЧЬ, СОВПАВШУЮ С НИМ ФОРМОЙ**  
+  courts/deplur_court.py, courts/hay_court.py, tools/countlawforms.py, tools/deplurforms.py, tools/elisionforms.py, tools/hayforms.py … и ещё 2
+- **СУД, ЧИТАЮЩИЙ ПО ПРИЗНАКУ, А НЕ ПО ПРИНАДЛЕЖНОСТИ К СВОЕМУ НАБОРУ, ЗОВЁТ ЛОЖЬЮ ЧУЖУЮ**  
+  courts/deplur_court.py, courts/hay_court.py, tools/countlawforms.py, tools/deplurforms.py, tools/elisionforms.py, tools/hayforms.py … и ещё 2
 - **ЭТОТ ДОМ ЧИТАЕТСЯ И СУДОМ АРИФМЕТИКИ**  
   courts/divsense_court.py, courts/handy_court.py, courts/mapscale_court.py, courts/parity_court.py, courts/pctchange_court.py, courts/pctdiff_court.py … и ещё 2
 
@@ -126,16 +130,18 @@
 
 - **ВОПРОС И ЕГО ОТВЕТ СВЯЗАНЫ РОДОМ, А НЕ СОСЕДСТВОМ**  
   courts/equation_court.py, courts/inquiry_court.py, courts/inquiry_de_fr_court.py, courts/inquiry_es_it_court.py, courts/inquiry_pl_tr_court.py, courts/inquiry_pt_nl_court.py
+- **ЗНАНИЕ, ЗАПИСАННОЕ ДАННЫМИ И КОДОМ, НО НЕ СТРАНИЦЕЙ, ЕСТЬ ЗНАНИЕ ПИШУЩЕГО, А НЕ ЧИТАЮЩЕГО**  
+  tools/countlawforms.py, tools/deplurforms.py, tools/elisionforms.py, tools/hayforms.py, tools/plcopulaforms.py, tools/soundarticleforms.py
 - **МУТАНТ ПО ЧИСЛУ В КАЖДОМ РОДЕ, ГДЕ ЕСТЬ ЗАПИСЬ**  
   tools/condforms.py, tools/leapforms.py, tools/medianforms.py, tools/numlineforms.py, tools/pctbaseforms.py, tools/tzoneforms.py
-- **РЕЧЬ, СОВПАВШУЮ С НИМ ФОРМОЙ**  
-  courts/hay_court.py, tools/countlawforms.py, tools/elisionforms.py, tools/hayforms.py, tools/plcopulaforms.py, tools/soundarticleforms.py
+- **МУТАНТОВ НЕ ПОСТРОЕНО ВОВСЕ**  
+  tools/countlawforms.py, tools/deplurforms.py, tools/elisionforms.py, tools/hayforms.py, tools/plcopulaforms.py, tools/soundarticleforms.py
+- **ПРАВИЛО, ДАННОЕ БЕЗ СВОИХ ЛОЖНЫХ СЛЕДСТВИЙ, УЧИТ ИМ НАРАВНЕ С СОБОЮ**  
+  tools/gen_genesis_countlaw.py, tools/gen_genesis_deplur.py, tools/gen_genesis_elision.py, tools/gen_genesis_gender.py, tools/gen_genesis_hay.py, tools/gen_genesis_plcopula.py
 - **САМАЯ ДЛИННАЯ ЗАДАЧА ЕСТЬ ДНО СРОКА**  
   courts/arith_court.py, scripts/claims_court.py, scripts/court_reach.py, scripts/coverage.py, scripts/prose_court.py, tools/panel.py
 - **СЛУЖЕБНОЕ СЛОВО, СТОЯЩЕЕ В РАМКЕ ЦЕЛЫМ, НЕ СЛЫШИТ ТОГО, ЧТО ЗА НИМ ПОДСТАВЯТ**  
   scripts/elision.py, tools/cmpforms.py, tools/frgram.py, tools/romgram.py, tools/timeunits.py, tools/topicforms.py
-- **СУД, ЧИТАЮЩИЙ ПО ПРИЗНАКУ, А НЕ ПО ПРИНАДЛЕЖНОСТИ К СВОЕМУ НАБОРУ, ЗОВЁТ ЛОЖЬЮ ЧУЖУЮ**  
-  courts/hay_court.py, tools/countlawforms.py, tools/elisionforms.py, tools/hayforms.py, tools/plcopulaforms.py, tools/soundarticleforms.py
 
 ## Держат 5 файлов
 
@@ -143,14 +149,8 @@
   tools/gen_genesis_inquiry.py, tools/gen_genesis_inquiry_de_fr.py, tools/gen_genesis_inquiry_es_it.py, tools/gen_genesis_inquiry_pl_tr.py, tools/gen_genesis_inquiry_pt_nl.py
 - **ГРАНИЦА ОБЪЯВЛЕНИЯ СКАЗАНА ПРЯМО**  
   tools/countlawforms.py, tools/elisionforms.py, tools/genderforms.py, tools/plcopulaforms.py, tools/soundarticleforms.py
-- **ЗНАНИЕ, ЗАПИСАННОЕ ДАННЫМИ И КОДОМ, НО НЕ СТРАНИЦЕЙ, ЕСТЬ ЗНАНИЕ ПИШУЩЕГО, А НЕ ЧИТАЮЩЕГО**  
-  tools/countlawforms.py, tools/elisionforms.py, tools/hayforms.py, tools/plcopulaforms.py, tools/soundarticleforms.py
 - **ЛОВУШКА ПРОВЕРЯЕТСЯ КАК ЛОВУШКА**  
   courts/divsense_court.py, courts/mapscale_court.py, courts/pctchange_court.py, courts/pctdiff_court.py, scripts/broken_law.py
-- **МУТАНТОВ НЕ ПОСТРОЕНО ВОВСЕ**  
-  tools/countlawforms.py, tools/elisionforms.py, tools/hayforms.py, tools/plcopulaforms.py, tools/soundarticleforms.py
-- **ПРАВИЛО, ДАННОЕ БЕЗ СВОИХ ЛОЖНЫХ СЛЕДСТВИЙ, УЧИТ ИМ НАРАВНЕ С СОБОЮ**  
-  tools/gen_genesis_countlaw.py, tools/gen_genesis_elision.py, tools/gen_genesis_gender.py, tools/gen_genesis_hay.py, tools/gen_genesis_plcopula.py
 - **РАМКА ПОРОДИЛА СТРАНИЦУ — ОСТАЛСЯ СЧЁТ, И СЧИТАЕТСЯ ТОЛЬКО ОТВЕЧАЮЩАЯ ЧАСТЬ**  
   tools/bothforms.py, tools/estimforms.py, tools/precforms.py, tools/sameshareforms.py, tools/zerodivforms.py
 - **РУБЕЖ ОБЪЯВЛЕН ПО ДОСТИГНУТОМУ**  
@@ -170,6 +170,8 @@
   scripts/elision.py, tools/behaviorforms.py, tools/linkforms.py, tools/topicforms.py
 - **ЛОВУШКА ОБЯЗАНА БЫТЬ ЛОВУШКОЙ**  
   tools/decforms.py, tools/measuregrowforms.py, tools/ratetrapforms.py, tools/remdivforms.py
+- **МУТАНТ ЕСТЬ ПОРЧА СВОЕЙ СТРАНИЦЫ ОДНИМ СЛОВОМ**  
+  tools/deplurforms.py, tools/hayforms.py, tools/plcopulaforms.py, tools/soundarticleforms.py
 - **ПОВОД — ЗАМЕР, А НЕ ЗАМЫСЕЛ**  
   tools/chanceforms.py, tools/closureforms.py, tools/distforms.py, tools/opchoiceforms.py
 - **ПОДСАДКИ ПИСАНЫ ПОРЧЕЙ ЖИВЫХ СТРАНИЦ**  
@@ -184,6 +186,8 @@
   tools/behaviorforms.py, tools/closedworld.py, tools/kinbearer.py, tools/linkforms.py
 - **ЧЕГО ПРИБОР НЕ ВИДИТ, НАЗВАНО ЧЕСТНО**  
   courts/agreement_court.py, scripts/bash32_court.py, scripts/orphans.py, scripts/verbthings_court.py
+- **ЧЕТЫРЕ ЛОЖНЫХ ВЫВОДА, ОТНИМАЕМЫХ У ЧИТАТЕЛЯ**  
+  tools/deplurforms.py, tools/hayforms.py, tools/plcopulaforms.py, tools/soundarticleforms.py
 - **ЯДРО ДОСЛОВНО ВО ВСЕХ ПРОХОДАХ, ХОД — ЧИСЛАМИ ПО ПРОХОДУ**  
   tools/gen_genesis_inquiry_es_it.py, tools/gen_genesis_inquiry_pl_tr.py, tools/gen_genesis_longdiv.py, tools/gen_genesis_share.py
 
@@ -203,8 +207,6 @@
   tools/condforms.py, tools/gen_genesis_cond.py, tools/wmeanforms.py
 - **ЗНАК ПЕРЕД ЧИСЛОМ ГОВОРИТ, ЧЕЙ ЭТО ЧЛЕН**  
   courts/opslaw_court.py, tools/absforms.py, tools/opslawforms.py
-- **МУТАНТ ЕСТЬ ПОРЧА СВОЕЙ СТРАНИЦЫ ОДНИМ СЛОВОМ**  
-  tools/hayforms.py, tools/plcopulaforms.py, tools/soundarticleforms.py
 - **ОБЁРТКА СПРАШИВАЕТ, ЕСТЬ ЛИ ЧТО ОБЁРТЫВАТЬ**  
   tools/scaleforms.py, tools/svampforms.py, tools/worldfacts.py
 - **ОБЕ ПОЛЯРНОСТИ ОДНОЙ РАМКОЙ**  
@@ -257,8 +259,6 @@
   courts/formula_court.py, courts/geometry_court.py, courts/physlaw_court.py
 - **ЧЕГО ЭТОТ ПРИБОР НЕ МЕРИТ, И ЭТО ОБЪЯВЛЕНО ПРЯМО**  
   scripts/ask_width.py, scripts/sentence_cover.py, scripts/verdict_cover.py
-- **ЧЕТЫРЕ ЛОЖНЫХ ВЫВОДА, ОТНИМАЕМЫХ У ЧИТАТЕЛЯ**  
-  tools/hayforms.py, tools/plcopulaforms.py, tools/soundarticleforms.py
 - **ЧИСЛА ПРОВЕРЯЮТСЯ ПРИ ВВОЗЕ**  
   tools/induforms.py, tools/inferforms.py, tools/rewriteforms.py
 - **ЧИСЛО ИЗ ПРОШЛОГО ЗАМЕРА ЧЕСТНО РОВНО ТОГДА, КОГДА НАЗВАН ДЕНЬ ЗАМЕРА**  

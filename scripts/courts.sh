@@ -172,6 +172,9 @@ COURTS=("courts/arith_court.py" "courts/algo_court.py"
         # ШЕСТОЙ ДОМ: испанское «hay» не меняется при числе, а польский сосед
         # меняется — ловушка на ПЕРЕНОСЕ, и она ловит выучившего соседа.
         "courts/hay_court.py"
+        # СЕДЬМОЙ ДОМ: немецкое множественное без одного правила — ловушка на
+        # НЕЗНАНИИ, и потому она стои́т после ловушки на переносе.
+        "courts/deplur_court.py"
         # ПОЛОВИНЧАТЫЙ ЗАКОН — место, где дом пишет множественное литералом рядом с
         # числом: правота такой строки держится жребием, а не законом.
         "scripts/half_law.py" "scripts/unknown_name.py" "scripts/stale_world.py" "scripts/agree_traps.py" "scripts/wrong_sign.py" "scripts/debt_mark.py" "scripts/copula_band.py" "scripts/past_gender.py" "scripts/word_once.py" "scripts/article_sound.py" "scripts/elision.py"
