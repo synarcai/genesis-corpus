@@ -11,7 +11,7 @@
 
 ## АКТ «recount» — пересчитать величину: строка утверждает число
 
-Миров 154, строк 225101.
+Миров 153, строк 224701.
 
 - **`links`** (17566 строк; declared, whole_only)  
   **CONVERSATION LINKS** — a question whose subject stands in the PREVIOUS reply (the owner's order, 04.09, item 5; the BESEDA band measures this genus mute 15 of 15).
@@ -255,8 +255,6 @@
   **THE PARITY OF OPERATIONS** — A LAW ABOUT CLASSES, NOT ABOUT NUMBERS. Measured 11.09 across the 242 show worlds: «чётное + чётное», «even plus even» — NONE; «odd with odd» — NONE. Yet the word «чётный» occurs 3614 times: the corpus can say WHETHER A NUMBER…
 - **`gsmlex`** (400 строк; recompute, whole_only, unsigned_only)  
   **ШАГ В ЕДИНИЦУ, СКАЗАННЫЙ ШИРОКИМ СЛОВАРЁМ ДЕЙСТВИЙ: «Felix makes 12 points. Felix uses 1 point away. how many points does Felix keep? Felix keeps 11 points». Одно и то же прибавление или убавление единицы, названное ДЕСЯТКАМИ РАЗНЫХ ГЛАГОЛОВ** — makes, ha…
-- **`dist`** (400 строк; recompute, whole_only, exact_only)  
-  **ТРИ ЗАКОНА РАССТОЯНИЯ** — ЧТО ДЕЛАЕТ РАССТОЯНИЕ РАССТОЯНИЕМ. Свод считал расстояния сотнями страниц («расстояние между (−1, 2) и (−16, 10) — 17: 15² + 8² = 17²») и нигде не называл их законов: замер 12.09 нашёл симметрию показанной, а «ноль только до себя…
 - **`dec`** (388 строк; recompute, finite_decimal_only)  
   **THE DECIMAL WRITING OF A SHARE** — THE SAME NUMBER WRITTEN OTHERWISE. Measured 11.09 across the 237 show worlds: the equality «0,5 = 1/2» or «3/4 = 0.75» occurs SIXTEEN times, and all sixteen stand in one world of algebraic units, as a line without deriva…
 - **`price`** (378 строк; recompute, whole_only)  
@@ -528,7 +526,7 @@
 
 ## АКТ «compare» — сравнить двоих: больше, меньше, во столько же раз
 
-Миров 10, строк 14054.
+Миров 11, строк 14454.
 
 - **`cmpframes`** (6480 строк; recompute, whole_only)  
   **FRAMES OF COMPARISON** — the largest class of the reader's lies on the held-out key (05.09: twelve of fifteen — «9 flexiones más que», «in più/in meno di», «meer/minder dan», «więcej/mniej niż»: the marker is not bought and the answer takes a neighbouring…
@@ -542,6 +540,8 @@
   **THE COMPARISON OF NAMED QUANTITIES** — THE GREATER NUMBER NAMES THE LESSER QUANTITY. Measured 11.09 across the 256 show worlds: a question of comparison carrying TWO DIFFERENT MEASURES — NONE. The corpus can do everything the answer needs and never asks t…
 - **`scale`** (747 строк; declared, whole_only)  
   **THE SCALE** — a comparison of THINGS THEMSELVES and TRANSITIVITY as a checkable INFERENCE. The compare world compares the NUMBERS at things («dan has 2 apples more»); here the things themselves are compared — «an elephant is bigger than a dog» — and there…
+- **`dist`** (400 строк; recompute, whole_only, exact_only)  
+  **ТРИ ЗАКОНА РАССТОЯНИЯ** — ЧТО ДЕЛАЕТ РАССТОЯНИЕ РАССТОЯНИЕМ. Свод считал расстояния сотнями страниц («расстояние между (−1, 2) и (−16, 10) — 17: 15² + 8² = 17²») и нигде не называл их законов: замер 12.09 нашёл симметрию показанной, а «ноль только до себя…
 - **`propcompare`** (200 строк; recompute, whole_only)  
   **PROPERTY COMPARISON IN NINE LANGUAGES** — «which is heavier: a stone or a feather? a stone.», «what is lighter: a feather or a stone? a feather.» Born from the fifth band of conversation (BESEDA-5, 05.09): «что тяжелее: камень или перо?» was mute in all n…
 - **`ru_compare`** (168 строк; recompute, declared, whole_only, exact_only)  
