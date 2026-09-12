@@ -76,7 +76,7 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
         "сочетание": "({a} + {b}) + {c} = {s} and {a} + ({b} + {c}) = {s}: the bracket does not change the sum; this law is called ASSOCIATIVE.",
         "раскрытие скобки": "({a} + {b}) × {c} = {p} and {a} × {c} + {b} × {c} = {p}: the multiplier reaches every addend; this law is called DISTRIBUTIVE.",
         "нейтральное": "{a} + 0 = {a} and {a} × 1 = {a}: zero adds nothing and one multiplies by nothing; such numbers are called NEUTRAL — zero for addition, one for multiplication.",
-        "обратное": "{a} + (−{a}) = 0: every number has an ADDITIVE INVERSE — the one that brings it back to zero, and it is called the opposite; and {a} × 1 = {a} shows that one leaves the number itself.",
+        "обратное": "{a} + (−{a}) = 0: every number has an ADDITIVE INVERSE — the one that brings it back to zero, and it is called the opposite; and {a} × 1 = {a} shows that the unit leaves the number itself.",
     },
 }
 
