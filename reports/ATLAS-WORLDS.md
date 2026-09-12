@@ -327,7 +327,7 @@
 - **`lang_de`** (8274 строк; declared, whole_only)  
   **THE GERMAN LAYER** — FOUR CASES CARRIED BY THE ARTICLE, EACH IN ITS OWN FRAME. Declared until 12.09 in nine words.
 - **`lang_es`** (6776 строк; declared, whole_only)  
-  es as a LANGUAGE: numerals, six-person present, noun with article in two numbers, refusal pairs (tier 1: structure green, forms agree with the pack's own rules)
+  **Мир пакета: имя с определителем, признак, число, счёт на своём языке, лицо глагола** — и ПЯТЬ НЕВОЗМОЖНЫХ ФРАЗ, помеченных «¬», из коих три о грамматике и две о смысле.
 - **`lang_sw`** (5820 строк; declared, tier1_unverified, whole_only)  
   **swahili: NOUN CLASSES, where the class of the noun governs the PREFIX of verb, adjective and numeral alike** — agreement that changes the BEGINNING of a word, not its end (tier 1: structure green, forms agree with the pack's own rules)
 - **`lang_zh`** (5470 строк; declared, whole_only)  
@@ -335,27 +335,27 @@
 - **`lang_ru`** (5136 строк; declared, whole_only)  
   **THE RUSSIAN LAYER** — WHAT THE PACK DECLARES AND WHAT THIS WORLD ACTUALLY SHOWS, declared until 12.09 as «russian as a LANGUAGE: paradigms, graphemes, irregulars».
 - **`lang_pl`** (4569 строк; declared, tier1_unverified, whole_only)  
-  polish: the slavic count law on a latin alphabet, nine diacritics (tier 1: structure green, forms agree with the pack's own rules)
+  **Мир пакета: имя с определителем, признак, число, счёт на своём языке, лицо глагола** — и ПЯТЬ НЕВОЗМОЖНЫХ ФРАЗ, помеченных «¬», из коих три о грамматике и две о смысле.
 - **`lang_pt`** (4270 строк; declared, tier1_unverified, whole_only)  
-  pt as a LANGUAGE: numerals, six-person present, noun with article in two numbers, refusal pairs (tier 1: structure green, forms agree with the pack's own rules)
+  **Мир пакета: имя с определителем, признак, число, счёт на своём языке, лицо глагола** — и ПЯТЬ НЕВОЗМОЖНЫХ ФРАЗ, помеченных «¬», из коих три о грамматике и две о смысле.
 - **`lang_en`** (4196 строк; declared, whole_only)  
   **THE ENGLISH LAYER** — THE THIRD-PERSON -s AND THE PLURALS THAT OBEY NOTHING. Declared until 12.09 in eleven words; measured 12.09 they hold up, and here are the numbers behind them. 4196 lines, 1507 asking.
 - **`lang_id`** (4135 строк; declared, tier1_unverified, whole_only)  
   **indonesian: the SIMPLEST of them all, and that is its value** — no tense, no gender, no case, no agreement at all; the plural is the word said TWICE (buku-buku).
 - **`lang_it`** (4044 строк; declared, tier1_unverified, whole_only)  
-  it as a LANGUAGE: numerals, six-person present, noun with article in two numbers, refusal pairs (tier 1: structure green, forms agree with the pack's own rules)
+  **Мир пакета: имя с определителем, признак, число, счёт на своём языке, лицо глагола** — и ПЯТЬ НЕВОЗМОЖНЫХ ФРАЗ, помеченных «¬», из коих три о грамматике и две о смысле.
 - **`lang_hi`** (4010 строк; declared, tier1_unverified, whole_only)  
   **hindi: devanagari, the corpus's first ABUGIDA** — a vowel is a MARK ON the consonant, not a letter beside it; the pack is declared SPACED, which is the truth about the language, and the instrument was taught to read a combining mark as a letter by office …
 - **`lang_fr`** (3970 строк; declared, tier1_unverified, whole_only)  
-  fr as a LANGUAGE: numerals, six-person present, noun with article in two numbers, refusal pairs (tier 1: structure green, forms agree with the pack's own rules)
+  **Мир пакета: имя с определителем, признак, число, счёт на своём языке, лицо глагола** — и ПЯТЬ НЕВОЗМОЖНЫХ ФРАЗ, помеченных «¬», из коих три о грамматике и две о смысле.
 - **`lang_nl`** (3642 строк; declared, tier1_unverified, whole_only)  
-  dutch: three distinct present cells, not six (tier 1: structure green, forms agree with the pack's own rules)
+  **Мир пакета: имя с определителем, признак, число, счёт на своём языке, лицо глагола** — и ПЯТЬ НЕВОЗМОЖНЫХ ФРАЗ, помеченных «¬», из коих три о грамматике и две о смысле.
 - **`lang_tr`** (3425 строк; declared, tier1_unverified, whole_only)  
   **turkish: agglutination, vowel harmony in four classes, teens as two words, and NO count agreement** — the noun stays singular after a numeral (tier 1: structure green, forms agree with the pack's own rules)
 - **`lang_uk`** (3395 строк; declared, tier1_unverified, whole_only)  
-  ukrainian: cyrillic with four letters russian lacks, apostrophe inside the word (tier 1: structure green, forms agree with the pack's own rules)
+  **Мир пакета: имя с определителем, признак, число, счёт на своём языке, лицо глагола** — и ПЯТЬ НЕВОЗМОЖНЫХ ФРАЗ, помеченных «¬», из коих три о грамматике и две о смысле.
 - **`lang_sv`** (3215 строк; declared, tier1_unverified, whole_only)  
-  **swedish: NO person agreement at all** — the paradigm is tense (tier 1: structure green, forms agree with the pack's own rules)
+  **Мир пакета: имя с определителем, признак, число, счёт на своём языке, лицо глагола** — и ПЯТЬ НЕВОЗМОЖНЫХ ФРАЗ, помеченных «¬», из коих три о грамматике и две о смысле.
 - **`lang_ka`** (3055 строк; declared, tier1_unverified, whole_only)  
   **georgian: the corpus's fifth script (mkhedruli), WITH NO CAPITAL LETTERS AT ALL** — a probe on every place we lower a case or compare one — and a verb carrying BOTH subject and object in one form (tier 1: structure green, forms agree with the pack's own r…
 - **`lang_fi`** (2995 строк; declared, tier1_unverified, whole_only)  
@@ -363,19 +363,19 @@
 - **`lang_vi`** (2935 строк; declared, tier1_unverified, whole_only)  
   vietnamese: six tones by diacritic, where ma, mà, má, mả, mã, mạ are six different words; a word written in syllables separated by spaces (tier 1: structure green, forms agree with the pack's own rules)
 - **`lang_ja`** (2890 строк; declared, tier1_unverified, whole_only)  
-  japanese: three scripts in one line, counters instead of number agreement, and NO plural at all (tier 1: structure green, forms agree with the pack's own rules)
+  **Мир пакета: имя с определителем, признак, число, счёт на своём языке, лицо глагола** — и ПЯТЬ НЕВОЗМОЖНЫХ ФРАЗ, помеченных «¬», из коих три о грамматике и две о смысле.
 - **`lang_el`** (2680 строк; declared, tier1_unverified, whole_only)  
-  **greek: the corpus's third alphabet, three genders, and the accent as an OBLIGATORY sign** — a word without it is a different word (tier 1: structure green, forms agree with the pack's own rules)
+  **Мир пакета: имя с определителем, признак, число, счёт на своём языке, лицо глагола** — и ПЯТЬ НЕВОЗМОЖНЫХ ФРАЗ, помеченных «¬», из коих три о грамматике и две о смысле.
 - **`lang_fa`** (2645 строк; declared, tier1_unverified, whole_only)  
   **persian: the ARABIC SCRIPT on an INDO-EUROPEAN language** — the probe that asks whether we tied a language to its writing; no dual, no arabic 3–10 agreement, four letters of its own (tier 1: structure green, forms agree with the pack's own rules)
 - **`lang_he`** (2525 строк; declared, tier1_unverified, whole_only)  
   **hebrew: written right to left and WITHOUT VOWELS in ordinary writing** — the opposite pole of the abugida, where a vowel is a mark ON the consonant; a dual on some words and gender on the numerals (tier 1: structure green, forms agree with the pack's own …
 - **`lang_ar`** (2365 строк; declared, tier1_unverified, whole_only)  
-  **arabic: written RIGHT TO LEFT, with a DUAL number** — a third count form beside singular and plural — and teens said as two words (tier 1: structure green, forms agree with the pack's own rules)
+  **Мир пакета: имя с определителем, признак, число, счёт на своём языке, лицо глагола** — и ПЯТЬ НЕВОЗМОЖНЫХ ФРАЗ, помеченных «¬», из коих три о грамматике и две о смысле.
 - **`lang_hu`** (2240 строк; declared, tier1_unverified, whole_only)  
   **hungarian: vowel harmony in three sets, possessive suffixes instead of possessive pronouns, and DEFINITE VS INDEFINITE CONJUGATION** — the verb changes by the DEFINITENESS OF ITS OBJECT, which no other tongue of the corpus has (tier 1: structure green, fo…
 - **`lang_ko`** (2215 строк; declared, tier1_unverified, whole_only)  
-  korean: hangul, where a sign is BUILT from letters; particles instead of cases, chosen by whether the word ends in a consonant (tier 1: structure green, forms agree with the pack's own rules)
+  **Мир пакета: имя с определителем, признак, число, счёт на своём языке, лицо глагола** — и ПЯТЬ НЕВОЗМОЖНЫХ ФРАЗ, помеченных «¬», из коих три о грамматике и две о смысле.
 - **`lang_th`** (2085 строк; declared, tier1_unverified, whole_only)  
   **thai: written without spaces between words but WITH spaces between sentences** — a third case the segmenter did not have; tone marks above the consonant and vowels written before it (tier 1: structure green, forms agree with the pack's own rules)
 - **`lang_am`** (1930 строк; declared, tier1_unverified, whole_only)  
@@ -568,17 +568,5 @@
     ОБЪЯВЛЕНИЕ В ТРИДЦАТЬ ЗНАКОВ НЕ ЛЖЁТ И НЕ ГОВОРИТ: читатель узнаёт имя мира
     и ничего сверх него.
 
-Миров: **12** из 257.
+Миров: **0** из 257.
 
-- `lang_nl` — 109 знаков
-- `lang_sv` — 124 знаков
-- `lang_pl` — 130 знаков
-- `lang_uk` — 144 знаков
-- `lang_es` — 160 знаков
-- `lang_fr` — 160 знаков
-- `lang_it` — 160 знаков
-- `lang_ja` — 160 знаков
-- `lang_pt` — 160 знаков
-- `lang_ko` — 191 знаков
-- `lang_ar` — 192 знаков
-- `lang_el` — 192 знаков

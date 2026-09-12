@@ -3582,7 +3582,7 @@
     {
       "name": "lang_es",
       "file": "datasets/genesis_lang_es.txt",
-      "genre": "es as a LANGUAGE: numerals, six-person present, noun with article in two numbers, refusal pairs (tier 1: structure green, forms agree with the pack's own rules)",
+      "genre": "Мир пакета: имя с определителем, признак, число, счёт на своём языке, лицо глагола — и ПЯТЬ НЕВОЗМОЖНЫХ ФРАЗ, помеченных «¬», из коих три о грамматике и две о смысле. Испанский невозможен так: «la gato es grande» (род определителя не тот), «los flor son bonitas» (число врозь), «yo cantas» (лицо врозь) — и два о смысле: «libro más casa es ?» (книгу к дому не прибавляют) и «¿cuál es el color de siete?» (у числа нет цвета). ЕДИНСТВЕННЫЙ ИЗ ДВАДЦАТИ ДЕВЯТИ, ЧЕЙ ЯРУС НЕ ПЕРВЫЙ: строение его проверено носителем, и потому граница «tier1_unverified» здесь не объявлена.",
       "act": [
         "inflect",
         "refuse"
@@ -3605,7 +3605,7 @@
     {
       "name": "lang_fr",
       "file": "datasets/genesis_lang_fr.txt",
-      "genre": "fr as a LANGUAGE: numerals, six-person present, noun with article in two numbers, refusal pairs (tier 1: structure green, forms agree with the pack's own rules)",
+      "genre": "Мир пакета: имя с определителем, признак, число, счёт на своём языке, лицо глагола — и ПЯТЬ НЕВОЗМОЖНЫХ ФРАЗ, помеченных «¬», из коих три о грамматике и две о смысле. Французский невозможен так: «la livre est petit» (род определителя), «les maison sont grandes» (число), «je parles» (лицо) — и «livre plus maison égale ?», «quelle est la couleur de sept ?». Строение зелено, носителем не проверено.",
       "act": [
         "inflect",
         "refuse"
@@ -3629,7 +3629,7 @@
     {
       "name": "lang_it",
       "file": "datasets/genesis_lang_it.txt",
-      "genre": "it as a LANGUAGE: numerals, six-person present, noun with article in two numbers, refusal pairs (tier 1: structure green, forms agree with the pack's own rules)",
+      "genre": "Мир пакета: имя с определителем, признак, число, счёт на своём языке, лицо глагола — и ПЯТЬ НЕВОЗМОЖНЫХ ФРАЗ, помеченных «¬», из коих три о грамматике и две о смысле. Итальянский невозможен так: «la libro è piccolo» (род), «le casa sono grandi» (число), «io parli» (лицо) — и «libro più casa fa ?», «qual è il colore di sette ?». Строение зелено, носителем не проверено.",
       "act": [
         "inflect",
         "refuse"
@@ -3653,7 +3653,7 @@
     {
       "name": "lang_pt",
       "file": "datasets/genesis_lang_pt.txt",
-      "genre": "pt as a LANGUAGE: numerals, six-person present, noun with article in two numbers, refusal pairs (tier 1: structure green, forms agree with the pack's own rules)",
+      "genre": "Мир пакета: имя с определителем, признак, число, счёт на своём языке, лицо глагола — и ПЯТЬ НЕВОЗМОЖНЫХ ФРАЗ, помеченных «¬», из коих три о грамматике и две о смысле. Португальский невозможен так: «a livro é pequeno» (род), «os casa são grandes» (число), «eu falas» (лицо) — и «livro mais casa é ?», «qual é a cor de sete ?». Строение зелено, носителем не проверено.",
       "act": [
         "inflect",
         "refuse"
@@ -3718,7 +3718,7 @@
     {
       "name": "lang_nl",
       "file": "datasets/genesis_lang_nl.txt",
-      "genre": "dutch: three distinct present cells, not six (tier 1: structure green, forms agree with the pack's own rules)",
+      "genre": "Мир пакета: имя с определителем, признак, число, счёт на своём языке, лицо глагола — и ПЯТЬ НЕВОЗМОЖНЫХ ФРАЗ, помеченных «¬», из коих три о грамматике и две о смысле. Нидерландский невозможен ИНАЧЕ, ЧЕМ РОМАНСКИЕ: у него не род, а ДВА ОПРЕДЕЛИТЕЛЯ — «de boek is klein» неверно, ибо книга среднего рода и требует «het». Прочее: «de huis zijn groot» (число), «ik werkt» (лицо), «boek plus huis is ?», «welke kleur heeft zeven ?». Строение зелено, носителем не проверено.",
       "act": [
         "inflect",
         "refuse"
@@ -3742,7 +3742,7 @@
     {
       "name": "lang_sv",
       "file": "datasets/genesis_lang_sv.txt",
-      "genre": "swedish: NO person agreement at all — the paradigm is tense (tier 1: structure green, forms agree with the pack's own rules)",
+      "genre": "Мир пакета: имя с определителем, признак, число, счёт на своём языке, лицо глагола — и ПЯТЬ НЕВОЗМОЖНЫХ ФРАЗ, помеченных «¬», из коих три о грамматике и две о смысле. Шведский невозможен ДВУМЯ РОДАМИ СРАЗУ: «ett bok är liten» и «en hus är stora» — общий род и средний перепутаны в обе стороны, чего нет ни у одного соседа. Прочее: «jag talarar» (лицо), «bok plus hus blir ?», «vilken färg har sju ?». Строение зелено, носителем не проверено.",
       "act": [
         "inflect",
         "refuse"
@@ -3766,7 +3766,7 @@
     {
       "name": "lang_pl",
       "file": "datasets/genesis_lang_pl.txt",
-      "genre": "polish: the slavic count law on a latin alphabet, nine diacritics (tier 1: structure green, forms agree with the pack's own rules)",
+      "genre": "Мир пакета: имя с определителем, признак, число, счёт на своём языке, лицо глагола — и ПЯТЬ НЕВОЗМОЖНЫХ ФРАЗ, помеченных «¬», из коих три о грамматике и две о смысле. Польский невозможен ПАДЕЖОМ ПРИ ЧИСЛЕ, а не родом определителя: «dwa kot» и «pięć koty» — после двух и после пяти форма разная, и обе тут неверны. Прочее: «ja czytasz» (лицо), «dom plus kot równa ?», «jaki kolor ma siedem ?». Строение зелено, носителем не проверено. БЛИЖАЙШИЙ СОСЕД ВО ВСЁМ СВОДЕ — `lang_uk` (0.444): та же беда падежа при числе, сказанная другими словами. Два пакета держатся порознь нарочно: читатель, выучивший «dwa koty», не выучил «два коти», и обратное тоже.",
       "act": [
         "inflect",
         "refuse"
@@ -3790,7 +3790,7 @@
     {
       "name": "lang_uk",
       "file": "datasets/genesis_lang_uk.txt",
-      "genre": "ukrainian: cyrillic with four letters russian lacks, apostrophe inside the word (tier 1: structure green, forms agree with the pack's own rules)",
+      "genre": "Мир пакета: имя с определителем, признак, число, счёт на своём языке, лицо глагола — и ПЯТЬ НЕВОЗМОЖНЫХ ФРАЗ, помеченных «¬», из коих три о грамматике и две о смысле. Украинский невозможен тем же, чем `lang_pl`, — падежом при числе: «два кіт» и «п'ять коти». Прочее: «я читаєш» (лицо), «дім плюс кіт дорівнює ?», «який колір має сім ?». Строение зелено, носителем не проверено. БЛИЖАЙШИЙ СОСЕД ВО ВСЁМ СВОДЕ — `lang_pl` (0.444, теснее всякой другой пары): два славянских пакета показывают одно различение разными словами, и потому стоя́т порознь, а не слиты в один.",
       "act": [
         "inflect",
         "refuse"
@@ -4184,7 +4184,7 @@
     {
       "name": "lang_el",
       "file": "datasets/genesis_lang_el.txt",
-      "genre": "greek: the corpus's third alphabet, three genders, and the accent as an OBLIGATORY sign — a word without it is a different word (tier 1: structure green, forms agree with the pack's own rules)",
+      "genre": "Мир пакета: имя с определителем, признак, число, счёт на своём языке, лицо глагола — и ПЯТЬ НЕВОЗМОЖНЫХ ФРАЗ, помеченных «¬», из коих три о грамматике и две о смысле. Греческий невозможен так: «δύο βιβλίο» и «τρία σπίτι» (число после числительного), «εγώ διαβάζεις» (лицо) — и «σπίτι συν γάτα ίσον ;», «τι χρώμα έχει το εφτά ;». Письмо своё, не латинское. Строение зелено, носителем не проверено.",
       "act": [
         "inflect",
         "refuse"
@@ -4208,7 +4208,7 @@
     {
       "name": "lang_ar",
       "file": "datasets/genesis_lang_ar.txt",
-      "genre": "arabic: written RIGHT TO LEFT, with a DUAL number — a third count form beside singular and plural — and teens said as two words (tier 1: structure green, forms agree with the pack's own rules)",
+      "genre": "Мир пакета: имя с определителем, признак, число, счёт на своём языке, лицо глагола — и ПЯТЬ НЕВОЗМОЖНЫХ ФРАЗ, помеченных «¬», из коих три о грамматике и две о смысле. Арабский невозможен так: «اثنان كتاب» и «ثلاثة كتاب» (число при числительном — у арабского оно особое и после трёх иное, чем после двух), «أنا تكتب» (лицо) — и «بيت زائد قطة يساوي ؟», «ما لون سبعة ؟». Письмо справа налево. Строение зелено, носителем не проверено.",
       "act": [
         "inflect",
         "refuse"
@@ -4256,7 +4256,7 @@
     {
       "name": "lang_ja",
       "file": "datasets/genesis_lang_ja.txt",
-      "genre": "japanese: three scripts in one line, counters instead of number agreement, and NO plural at all (tier 1: structure green, forms agree with the pack's own rules)",
+      "genre": "Мир пакета: имя с определителем, признак, число, счёт на своём языке, лицо глагола — и ПЯТЬ НЕВОЗМОЖНЫХ ФРАЗ, помеченных «¬», из коих три о грамматике и две о смысле. Японский невозможен СЧЁТНЫМ СЛОВОМ, которого нет у европейских: «三冊の猫» (кошек не считают счётным словом книг) и «三台の本» (книг не считают счётным словом машин). Прочее: «本を三冊があります» (падеж), «本 足す 猫 は», «七は何色ですか». Строение зелено, носителем не проверено.",
       "act": [
         "inflect",
         "refuse"
@@ -4280,7 +4280,7 @@
     {
       "name": "lang_ko",
       "file": "datasets/genesis_lang_ko.txt",
-      "genre": "korean: hangul, where a sign is BUILT from letters; particles instead of cases, chosen by whether the word ends in a consonant (tier 1: structure green, forms agree with the pack's own rules)",
+      "genre": "Мир пакета: имя с определителем, признак, число, счёт на своём языке, лицо глагола — и ПЯТЬ НЕВОЗМОЖНЫХ ФРАЗ, помеченных «¬», из коих три о грамматике и две о смысле. Корейский невозможен ЧАСТИЦЕЙ ПО ЗВУКУ ПРЕДЫДУЩЕГО СЛОГА: «책가 있어요» и «나무이 있어요» — после согласной надо «이», после гласной «가», и обе фразы взяли не ту; «저는 책를 봐요» — та же беда с винительным. Прочее: «책 더하기 고양이 답은?», «칠은 무슨 색이에요?». Строение зелено, носителем не проверено.",
       "act": [
         "inflect",
         "refuse"
