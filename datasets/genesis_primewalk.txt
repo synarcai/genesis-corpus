@@ -1,0 +1,431 @@
+107 ПРОСТОЕ, и вот весь обход — пробы: 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет, 8 — нет, 9 — нет, 10 — нет; дальше пробовать нечего, ибо 11 × 11 = 121 больше 107; ни одна проба не удалась, делителя нет.
+5 ПРОСТОЕ, и вот весь обход — пробы: 2 — нет; дальше пробовать нечего, ибо 3 × 3 = 9 больше 5; ни одна проба не удалась, делителя нет.
+51 НЕ ПРОСТОЕ, и обход оборвался — пробы: 2 — нет, 3 — ДА: 51 = 3 × 17; дальше идти незачем, ибо ОДНОГО ДЕЛИТЕЛЯ ДОВОЛЬНО.
+41 ПРОСТОЕ, и вот весь обход — пробы: 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет; дальше пробовать нечего, ибо 7 × 7 = 49 больше 41; ни одна проба не удалась, делителя нет.
+115 НЕ ПРОСТОЕ, и обход оборвался — пробы: 2 — нет, 3 — нет, 4 — нет, 5 — ДА: 115 = 5 × 23; дальше идти незачем, ибо ОДНОГО ДЕЛИТЕЛЯ ДОВОЛЬНО.
+83 ПРОСТОЕ, и вот весь обход — пробы: 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет, 8 — нет, 9 — нет; дальше пробовать нечего, ибо 10 × 10 = 100 больше 83; ни одна проба не удалась, делителя нет.
+221 НЕ ПРОСТОЕ, и обход оборвался — пробы: 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет, 8 — нет, 9 — нет, 10 — нет, 11 — нет, 12 — нет, 13 — ДА: 221 = 13 × 17; дальше идти незачем, ибо ОДНОГО ДЕЛИТЕЛЯ ДОВОЛЬНО.
+21 НЕ ПРОСТОЕ, и обход оборвался — пробы: 2 — нет, 3 — ДА: 21 = 3 × 7; дальше идти незачем, ибо ОДНОГО ДЕЛИТЕЛЯ ДОВОЛЬНО.
+19 ПРОСТОЕ, и вот весь обход — пробы: 2 — нет, 3 — нет, 4 — нет; дальше пробовать нечего, ибо 5 × 5 = 25 больше 19; ни одна проба не удалась, делителя нет.
+85 НЕ ПРОСТОЕ, и обход оборвался — пробы: 2 — нет, 3 — нет, 4 — нет, 5 — ДА: 85 = 5 × 17; дальше идти незачем, ибо ОДНОГО ДЕЛИТЕЛЯ ДОВОЛЬНО.
+61 ПРОСТОЕ, и вот весь обход — пробы: 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет; дальше пробовать нечего, ибо 8 × 8 = 64 больше 61; ни одна проба не удалась, делителя нет.
+161 НЕ ПРОСТОЕ, и обход оборвался — пробы: 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — ДА: 161 = 7 × 23; дальше идти незачем, ибо ОДНОГО ДЕЛИТЕЛЯ ДОВОЛЬНО.
+
+чтобы узнать, простое ли 107, обойти надо делители от 2 до 10, и число их — 9, ибо 11 × 11 = 121 больше 107; а обход до самого числа взял бы делители от 2 до 106, и число их — 105, и 105 больше 9.
+чтобы узнать, простое ли 5, обойти надо делители от 2 до 2, и число их — 1, ибо 3 × 3 = 9 больше 5; а обход до самого числа взял бы делители от 2 до 4, и число их — 3, и 3 больше 1.
+51 = 3 × 17, и меньший множитель 3: 3 × 3 = 9, а 9 не больше 51. Будь ОБА множителя больше 7, произведение было бы не меньше 8 × 8 = 64, а 64 больше 51 — такой пары нет; потому у составного числа МЕНЬШИЙ ДЕЛИТЕЛЬ НЕ БОЛЬШЕ КОРНЯ, и обход кончается там.
+чтобы узнать, простое ли 41, обойти надо делители от 2 до 6, и число их — 5, ибо 7 × 7 = 49 больше 41; а обход до самого числа взял бы делители от 2 до 40, и число их — 39, и 39 больше 5.
+115 = 5 × 23, и меньший множитель 5: 5 × 5 = 25, а 25 не больше 115. Будь ОБА множителя больше 10, произведение было бы не меньше 11 × 11 = 121, а 121 больше 115 — такой пары нет; потому у составного числа МЕНЬШИЙ ДЕЛИТЕЛЬ НЕ БОЛЬШЕ КОРНЯ, и обход кончается там.
+чтобы узнать, простое ли 83, обойти надо делители от 2 до 9, и число их — 8, ибо 10 × 10 = 100 больше 83; а обход до самого числа взял бы делители от 2 до 82, и число их — 81, и 81 больше 8.
+221 = 13 × 17, и меньший множитель 13: 13 × 13 = 169, а 169 не больше 221. Будь ОБА множителя больше 14, произведение было бы не меньше 15 × 15 = 225, а 225 больше 221 — такой пары нет; потому у составного числа МЕНЬШИЙ ДЕЛИТЕЛЬ НЕ БОЛЬШЕ КОРНЯ, и обход кончается там.
+21 = 3 × 7, и меньший множитель 3: 3 × 3 = 9, а 9 не больше 21. Будь ОБА множителя больше 4, произведение было бы не меньше 5 × 5 = 25, а 25 больше 21 — такой пары нет; потому у составного числа МЕНЬШИЙ ДЕЛИТЕЛЬ НЕ БОЛЬШЕ КОРНЯ, и обход кончается там.
+чтобы узнать, простое ли 19, обойти надо делители от 2 до 4, и число их — 3, ибо 5 × 5 = 25 больше 19; а обход до самого числа взял бы делители от 2 до 18, и число их — 17, и 17 больше 3.
+85 = 5 × 17, и меньший множитель 5: 5 × 5 = 25, а 25 не больше 85. Будь ОБА множителя больше 9, произведение было бы не меньше 10 × 10 = 100, а 100 больше 85 — такой пары нет; потому у составного числа МЕНЬШИЙ ДЕЛИТЕЛЬ НЕ БОЛЬШЕ КОРНЯ, и обход кончается там.
+чтобы узнать, простое ли 61, обойти надо делители от 2 до 7, и число их — 6, ибо 8 × 8 = 64 больше 61; а обход до самого числа взял бы делители от 2 до 60, и число их — 59, и 59 больше 6.
+161 = 7 × 23, и меньший множитель 7: 7 × 7 = 49, а 49 не больше 161. Будь ОБА множителя больше 12, произведение было бы не меньше 13 × 13 = 169, а 169 больше 161 — такой пары нет; потому у составного числа МЕНЬШИЙ ДЕЛИТЕЛЬ НЕ БОЛЬШЕ КОРНЯ, и обход кончается там.
+
+чтобы сказать «203 не простое», довольно ОДНОГО свидетеля: 203 = 7 × 29. Чтобы сказать «107 простое», свидетеля нет вовсе: обойти надо все делители от 2 до 10, и вот они для 107 — 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет, 8 — нет, 9 — нет, 10 — нет; каждая проба обязана не удаться. ОДИН СВИДЕТЕЛЬ ПРОТИВ ПОЛНОГО ОБХОДА — оттого два ответа об одном предмете стоят разного труда.
+чтобы сказать «9 не простое», довольно ОДНОГО свидетеля: 9 = 3 × 3. Чтобы сказать «5 простое», свидетеля нет вовсе: обойти надо все делители от 2 до 2, и вот они для 5 — 2 — нет; каждая проба обязана не удаться. ОДИН СВИДЕТЕЛЬ ПРОТИВ ПОЛНОГО ОБХОДА — оттого два ответа об одном предмете стоят разного труда.
+чтобы сказать «35 не простое», довольно ОДНОГО свидетеля: 35 = 5 × 7. Чтобы сказать «19 простое», свидетеля нет вовсе: обойти надо все делители от 2 до 4, и вот они для 19 — 2 — нет, 3 — нет, 4 — нет; каждая проба обязана не удаться. ОДИН СВИДЕТЕЛЬ ПРОТИВ ПОЛНОГО ОБХОДА — оттого два ответа об одном предмете стоят разного труда.
+чтобы сказать «65 не простое», довольно ОДНОГО свидетеля: 65 = 5 × 13. Чтобы сказать «41 простое», свидетеля нет вовсе: обойти надо все делители от 2 до 6, и вот они для 41 — 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет; каждая проба обязана не удаться. ОДИН СВИДЕТЕЛЬ ПРОТИВ ПОЛНОГО ОБХОДА — оттого два ответа об одном предмете стоят разного труда.
+чтобы сказать «93 не простое», довольно ОДНОГО свидетеля: 93 = 3 × 31. Чтобы сказать «61 простое», свидетеля нет вовсе: обойти надо все делители от 2 до 7, и вот они для 61 — 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет; каждая проба обязана не удаться. ОДИН СВИДЕТЕЛЬ ПРОТИВ ПОЛНОГО ОБХОДА — оттого два ответа об одном предмете стоят разного труда.
+чтобы сказать «133 не простое», довольно ОДНОГО свидетеля: 133 = 7 × 19. Чтобы сказать «83 простое», свидетеля нет вовсе: обойти надо все делители от 2 до 9, и вот они для 83 — 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет, 8 — нет, 9 — нет; каждая проба обязана не удаться. ОДИН СВИДЕТЕЛЬ ПРОТИВ ПОЛНОГО ОБХОДА — оттого два ответа об одном предмете стоят разного труда.
+
+простое ли 107? да: обход 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет, 8 — нет, 9 — нет, 10 — нет; ни одна проба не удалась, а дальше пробовать нечего, ибо 11 × 11 = 121 больше 107.
+простое ли 5? да: обход 2 — нет; ни одна проба не удалась, а дальше пробовать нечего, ибо 3 × 3 = 9 больше 5.
+простое ли 51? нет: 51 = 3 × 17, и одного свидетеля довольно.
+простое ли 41? да: обход 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет; ни одна проба не удалась, а дальше пробовать нечего, ибо 7 × 7 = 49 больше 41.
+простое ли 115? нет: 115 = 5 × 23, и одного свидетеля довольно.
+простое ли 83? да: обход 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет, 8 — нет, 9 — нет; ни одна проба не удалась, а дальше пробовать нечего, ибо 10 × 10 = 100 больше 83.
+простое ли 221? нет: 221 = 13 × 17, и одного свидетеля довольно.
+простое ли 21? нет: 21 = 3 × 7, и одного свидетеля довольно.
+простое ли 19? да: обход 2 — нет, 3 — нет, 4 — нет; ни одна проба не удалась, а дальше пробовать нечего, ибо 5 × 5 = 25 больше 19.
+простое ли 85? нет: 85 = 5 × 17, и одного свидетеля довольно.
+простое ли 61? да: обход 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет; ни одна проба не удалась, а дальше пробовать нечего, ибо 8 × 8 = 64 больше 61.
+простое ли 161? нет: 161 = 7 × 23, и одного свидетеля довольно.
+
+107 is PRIME, and here is the whole walk — tries: 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no, 8 — no, 9 — no, 10 — no; there is nothing further to try, for 11 × 11 = 121 is greater than 107; not one try succeeded, there is no divisor.
+5 is PRIME, and here is the whole walk — tries: 2 — no; there is nothing further to try, for 3 × 3 = 9 is greater than 5; not one try succeeded, there is no divisor.
+51 is NOT PRIME, and the walk broke off — tries: 2 — no, 3 — YES: 51 = 3 × 17; there is no point going further, for ONE DIVISOR IS ENOUGH.
+41 is PRIME, and here is the whole walk — tries: 2 — no, 3 — no, 4 — no, 5 — no, 6 — no; there is nothing further to try, for 7 × 7 = 49 is greater than 41; not one try succeeded, there is no divisor.
+115 is NOT PRIME, and the walk broke off — tries: 2 — no, 3 — no, 4 — no, 5 — YES: 115 = 5 × 23; there is no point going further, for ONE DIVISOR IS ENOUGH.
+83 is PRIME, and here is the whole walk — tries: 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no, 8 — no, 9 — no; there is nothing further to try, for 10 × 10 = 100 is greater than 83; not one try succeeded, there is no divisor.
+221 is NOT PRIME, and the walk broke off — tries: 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no, 8 — no, 9 — no, 10 — no, 11 — no, 12 — no, 13 — YES: 221 = 13 × 17; there is no point going further, for ONE DIVISOR IS ENOUGH.
+21 is NOT PRIME, and the walk broke off — tries: 2 — no, 3 — YES: 21 = 3 × 7; there is no point going further, for ONE DIVISOR IS ENOUGH.
+19 is PRIME, and here is the whole walk — tries: 2 — no, 3 — no, 4 — no; there is nothing further to try, for 5 × 5 = 25 is greater than 19; not one try succeeded, there is no divisor.
+85 is NOT PRIME, and the walk broke off — tries: 2 — no, 3 — no, 4 — no, 5 — YES: 85 = 5 × 17; there is no point going further, for ONE DIVISOR IS ENOUGH.
+61 is PRIME, and here is the whole walk — tries: 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no; there is nothing further to try, for 8 × 8 = 64 is greater than 61; not one try succeeded, there is no divisor.
+161 is NOT PRIME, and the walk broke off — tries: 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — YES: 161 = 7 × 23; there is no point going further, for ONE DIVISOR IS ENOUGH.
+
+to learn whether 107 is prime, the divisors to walk are those from 2 to 10, and their number is 9, for 11 × 11 = 121 is greater than 107; a walk up to the number itself would take the divisors from 2 to 106, and their number is 105, and 105 is greater than 9.
+to learn whether 5 is prime, the divisors to walk are those from 2 to 2, and their number is 1, for 3 × 3 = 9 is greater than 5; a walk up to the number itself would take the divisors from 2 to 4, and their number is 3, and 3 is greater than 1.
+51 = 3 × 17, and the smaller factor is 3: 3 × 3 = 9, and 9 is not greater than 51. Were BOTH factors greater than 7, the product would be at least 8 × 8 = 64, and 64 is greater than 51 — there is no such pair; so a composite number has its SMALLER DIVISOR NOT GREATER THAN THE ROOT, and the walk ends there.
+to learn whether 41 is prime, the divisors to walk are those from 2 to 6, and their number is 5, for 7 × 7 = 49 is greater than 41; a walk up to the number itself would take the divisors from 2 to 40, and their number is 39, and 39 is greater than 5.
+115 = 5 × 23, and the smaller factor is 5: 5 × 5 = 25, and 25 is not greater than 115. Were BOTH factors greater than 10, the product would be at least 11 × 11 = 121, and 121 is greater than 115 — there is no such pair; so a composite number has its SMALLER DIVISOR NOT GREATER THAN THE ROOT, and the walk ends there.
+to learn whether 83 is prime, the divisors to walk are those from 2 to 9, and their number is 8, for 10 × 10 = 100 is greater than 83; a walk up to the number itself would take the divisors from 2 to 82, and their number is 81, and 81 is greater than 8.
+221 = 13 × 17, and the smaller factor is 13: 13 × 13 = 169, and 169 is not greater than 221. Were BOTH factors greater than 14, the product would be at least 15 × 15 = 225, and 225 is greater than 221 — there is no such pair; so a composite number has its SMALLER DIVISOR NOT GREATER THAN THE ROOT, and the walk ends there.
+21 = 3 × 7, and the smaller factor is 3: 3 × 3 = 9, and 9 is not greater than 21. Were BOTH factors greater than 4, the product would be at least 5 × 5 = 25, and 25 is greater than 21 — there is no such pair; so a composite number has its SMALLER DIVISOR NOT GREATER THAN THE ROOT, and the walk ends there.
+to learn whether 19 is prime, the divisors to walk are those from 2 to 4, and their number is 3, for 5 × 5 = 25 is greater than 19; a walk up to the number itself would take the divisors from 2 to 18, and their number is 17, and 17 is greater than 3.
+85 = 5 × 17, and the smaller factor is 5: 5 × 5 = 25, and 25 is not greater than 85. Were BOTH factors greater than 9, the product would be at least 10 × 10 = 100, and 100 is greater than 85 — there is no such pair; so a composite number has its SMALLER DIVISOR NOT GREATER THAN THE ROOT, and the walk ends there.
+to learn whether 61 is prime, the divisors to walk are those from 2 to 7, and their number is 6, for 8 × 8 = 64 is greater than 61; a walk up to the number itself would take the divisors from 2 to 60, and their number is 59, and 59 is greater than 6.
+161 = 7 × 23, and the smaller factor is 7: 7 × 7 = 49, and 49 is not greater than 161. Were BOTH factors greater than 12, the product would be at least 13 × 13 = 169, and 169 is greater than 161 — there is no such pair; so a composite number has its SMALLER DIVISOR NOT GREATER THAN THE ROOT, and the walk ends there.
+
+to say «203 is not prime», ONE witness is enough: 203 = 7 × 29. To say «107 is prime», there is no witness at all: every divisor from 2 to 10 must be walked, and here they are for 107 — 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no, 8 — no, 9 — no, 10 — no; every try is bound to fail. ONE WITNESS AGAINST A FULL WALK — that is why two answers about one thing cost different labour.
+to say «9 is not prime», ONE witness is enough: 9 = 3 × 3. To say «5 is prime», there is no witness at all: every divisor from 2 to 2 must be walked, and here they are for 5 — 2 — no; every try is bound to fail. ONE WITNESS AGAINST A FULL WALK — that is why two answers about one thing cost different labour.
+to say «35 is not prime», ONE witness is enough: 35 = 5 × 7. To say «19 is prime», there is no witness at all: every divisor from 2 to 4 must be walked, and here they are for 19 — 2 — no, 3 — no, 4 — no; every try is bound to fail. ONE WITNESS AGAINST A FULL WALK — that is why two answers about one thing cost different labour.
+to say «65 is not prime», ONE witness is enough: 65 = 5 × 13. To say «41 is prime», there is no witness at all: every divisor from 2 to 6 must be walked, and here they are for 41 — 2 — no, 3 — no, 4 — no, 5 — no, 6 — no; every try is bound to fail. ONE WITNESS AGAINST A FULL WALK — that is why two answers about one thing cost different labour.
+to say «93 is not prime», ONE witness is enough: 93 = 3 × 31. To say «61 is prime», there is no witness at all: every divisor from 2 to 7 must be walked, and here they are for 61 — 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no; every try is bound to fail. ONE WITNESS AGAINST A FULL WALK — that is why two answers about one thing cost different labour.
+to say «133 is not prime», ONE witness is enough: 133 = 7 × 19. To say «83 is prime», there is no witness at all: every divisor from 2 to 9 must be walked, and here they are for 83 — 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no, 8 — no, 9 — no; every try is bound to fail. ONE WITNESS AGAINST A FULL WALK — that is why two answers about one thing cost different labour.
+
+is 107 prime? yes: the walk is 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no, 8 — no, 9 — no, 10 — no; not one try succeeded, and there is nothing further to try, for 11 × 11 = 121 is greater than 107.
+is 5 prime? yes: the walk is 2 — no; not one try succeeded, and there is nothing further to try, for 3 × 3 = 9 is greater than 5.
+is 51 prime? no: 51 = 3 × 17, and one witness is enough.
+is 41 prime? yes: the walk is 2 — no, 3 — no, 4 — no, 5 — no, 6 — no; not one try succeeded, and there is nothing further to try, for 7 × 7 = 49 is greater than 41.
+is 115 prime? no: 115 = 5 × 23, and one witness is enough.
+is 83 prime? yes: the walk is 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no, 8 — no, 9 — no; not one try succeeded, and there is nothing further to try, for 10 × 10 = 100 is greater than 83.
+is 221 prime? no: 221 = 13 × 17, and one witness is enough.
+is 21 prime? no: 21 = 3 × 7, and one witness is enough.
+is 19 prime? yes: the walk is 2 — no, 3 — no, 4 — no; not one try succeeded, and there is nothing further to try, for 5 × 5 = 25 is greater than 19.
+is 85 prime? no: 85 = 5 × 17, and one witness is enough.
+is 61 prime? yes: the walk is 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no; not one try succeeded, and there is nothing further to try, for 8 × 8 = 64 is greater than 61.
+is 161 prime? no: 161 = 7 × 23, and one witness is enough.
+
+43 ПРОСТОЕ, и вот весь обход — пробы: 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет; дальше пробовать нечего, ибо 7 × 7 = 49 больше 43; ни одна проба не удалась, делителя нет.
+67 ПРОСТОЕ, и вот весь обход — пробы: 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет, 8 — нет; дальше пробовать нечего, ибо 9 × 9 = 81 больше 67; ни одна проба не удалась, делителя нет.
+89 ПРОСТОЕ, и вот весь обход — пробы: 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет, 8 — нет, 9 — нет; дальше пробовать нечего, ибо 10 × 10 = 100 больше 89; ни одна проба не удалась, делителя нет.
+109 ПРОСТОЕ, и вот весь обход — пробы: 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет, 8 — нет, 9 — нет, 10 — нет; дальше пробовать нечего, ибо 11 × 11 = 121 больше 109; ни одна проба не удалась, делителя нет.
+25 НЕ ПРОСТОЕ, и обход оборвался — пробы: 2 — нет, 3 — нет, 4 — нет, 5 — ДА: 25 = 5 × 5; дальше идти незачем, ибо ОДНОГО ДЕЛИТЕЛЯ ДОВОЛЬНО.
+55 НЕ ПРОСТОЕ, и обход оборвался — пробы: 2 — нет, 3 — нет, 4 — нет, 5 — ДА: 55 = 5 × 11; дальше идти незачем, ибо ОДНОГО ДЕЛИТЕЛЯ ДОВОЛЬНО.
+87 НЕ ПРОСТОЕ, и обход оборвался — пробы: 2 — нет, 3 — ДА: 87 = 3 × 29; дальше идти незачем, ибо ОДНОГО ДЕЛИТЕЛЯ ДОВОЛЬНО.
+119 НЕ ПРОСТОЕ, и обход оборвался — пробы: 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — ДА: 119 = 7 × 17; дальше идти незачем, ибо ОДНОГО ДЕЛИТЕЛЯ ДОВОЛЬНО.
+169 НЕ ПРОСТОЕ, и обход оборвался — пробы: 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет, 8 — нет, 9 — нет, 10 — нет, 11 — нет, 12 — нет, 13 — ДА: 169 = 13 × 13; дальше идти незачем, ибо ОДНОГО ДЕЛИТЕЛЯ ДОВОЛЬНО.
+7 ПРОСТОЕ, и вот весь обход — пробы: 2 — нет; дальше пробовать нечего, ибо 3 × 3 = 9 больше 7; ни одна проба не удалась, делителя нет.
+23 ПРОСТОЕ, и вот весь обход — пробы: 2 — нет, 3 — нет, 4 — нет; дальше пробовать нечего, ибо 5 × 5 = 25 больше 23; ни одна проба не удалась, делителя нет.
+
+чтобы узнать, простое ли 43, обойти надо делители от 2 до 6, и число их — 5, ибо 7 × 7 = 49 больше 43; а обход до самого числа взял бы делители от 2 до 42, и число их — 41, и 41 больше 5.
+чтобы узнать, простое ли 67, обойти надо делители от 2 до 8, и число их — 7, ибо 9 × 9 = 81 больше 67; а обход до самого числа взял бы делители от 2 до 66, и число их — 65, и 65 больше 7.
+чтобы узнать, простое ли 89, обойти надо делители от 2 до 9, и число их — 8, ибо 10 × 10 = 100 больше 89; а обход до самого числа взял бы делители от 2 до 88, и число их — 87, и 87 больше 8.
+чтобы узнать, простое ли 109, обойти надо делители от 2 до 10, и число их — 9, ибо 11 × 11 = 121 больше 109; а обход до самого числа взял бы делители от 2 до 108, и число их — 107, и 107 больше 9.
+25 = 5 × 5, и меньший множитель 5: 5 × 5 = 25, а 25 не больше 25. Будь ОБА множителя больше 5, произведение было бы не меньше 6 × 6 = 36, а 36 больше 25 — такой пары нет; потому у составного числа МЕНЬШИЙ ДЕЛИТЕЛЬ НЕ БОЛЬШЕ КОРНЯ, и обход кончается там.
+55 = 5 × 11, и меньший множитель 5: 5 × 5 = 25, а 25 не больше 55. Будь ОБА множителя больше 7, произведение было бы не меньше 8 × 8 = 64, а 64 больше 55 — такой пары нет; потому у составного числа МЕНЬШИЙ ДЕЛИТЕЛЬ НЕ БОЛЬШЕ КОРНЯ, и обход кончается там.
+87 = 3 × 29, и меньший множитель 3: 3 × 3 = 9, а 9 не больше 87. Будь ОБА множителя больше 9, произведение было бы не меньше 10 × 10 = 100, а 100 больше 87 — такой пары нет; потому у составного числа МЕНЬШИЙ ДЕЛИТЕЛЬ НЕ БОЛЬШЕ КОРНЯ, и обход кончается там.
+119 = 7 × 17, и меньший множитель 7: 7 × 7 = 49, а 49 не больше 119. Будь ОБА множителя больше 10, произведение было бы не меньше 11 × 11 = 121, а 121 больше 119 — такой пары нет; потому у составного числа МЕНЬШИЙ ДЕЛИТЕЛЬ НЕ БОЛЬШЕ КОРНЯ, и обход кончается там.
+169 = 13 × 13, и меньший множитель 13: 13 × 13 = 169, а 169 не больше 169. Будь ОБА множителя больше 13, произведение было бы не меньше 14 × 14 = 196, а 196 больше 169 — такой пары нет; потому у составного числа МЕНЬШИЙ ДЕЛИТЕЛЬ НЕ БОЛЬШЕ КОРНЯ, и обход кончается там.
+чтобы узнать, простое ли 7, обойти надо делители от 2 до 2, и число их — 1, ибо 3 × 3 = 9 больше 7; а обход до самого числа взял бы делители от 2 до 6, и число их — 5, и 5 больше 1.
+чтобы узнать, простое ли 23, обойти надо делители от 2 до 4, и число их — 3, ибо 5 × 5 = 25 больше 23; а обход до самого числа взял бы делители от 2 до 22, и число их — 21, и 21 больше 3.
+
+чтобы сказать «77 не простое», довольно ОДНОГО свидетеля: 77 = 7 × 11. Чтобы сказать «43 простое», свидетеля нет вовсе: обойти надо все делители от 2 до 6, и вот они для 43 — 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет; каждая проба обязана не удаться. ОДИН СВИДЕТЕЛЬ ПРОТИВ ПОЛНОГО ОБХОДА — оттого два ответа об одном предмете стоят разного труда.
+чтобы сказать «49 не простое», довольно ОДНОГО свидетеля: 49 = 7 × 7. Чтобы сказать «23 простое», свидетеля нет вовсе: обойти надо все делители от 2 до 4, и вот они для 23 — 2 — нет, 3 — нет, 4 — нет; каждая проба обязана не удаться. ОДИН СВИДЕТЕЛЬ ПРОТИВ ПОЛНОГО ОБХОДА — оттого два ответа об одном предмете стоят разного труда.
+чтобы сказать «15 не простое», довольно ОДНОГО свидетеля: 15 = 3 × 5. Чтобы сказать «7 простое», свидетеля нет вовсе: обойти надо все делители от 2 до 2, и вот они для 7 — 2 — нет; каждая проба обязана не удаться. ОДИН СВИДЕТЕЛЬ ПРОТИВ ПОЛНОГО ОБХОДА — оттого два ответа об одном предмете стоят разного труда.
+чтобы сказать «209 не простое», довольно ОДНОГО свидетеля: 209 = 11 × 19. Чтобы сказать «109 простое», свидетеля нет вовсе: обойти надо все делители от 2 до 10, и вот они для 109 — 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет, 8 — нет, 9 — нет, 10 — нет; каждая проба обязана не удаться. ОДИН СВИДЕТЕЛЬ ПРОТИВ ПОЛНОГО ОБХОДА — оттого два ответа об одном предмете стоят разного труда.
+чтобы сказать «143 не простое», довольно ОДНОГО свидетеля: 143 = 11 × 13. Чтобы сказать «89 простое», свидетеля нет вовсе: обойти надо все делители от 2 до 9, и вот они для 89 — 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет, 8 — нет, 9 — нет; каждая проба обязана не удаться. ОДИН СВИДЕТЕЛЬ ПРОТИВ ПОЛНОГО ОБХОДА — оттого два ответа об одном предмете стоят разного труда.
+чтобы сказать «95 не простое», довольно ОДНОГО свидетеля: 95 = 5 × 19. Чтобы сказать «67 простое», свидетеля нет вовсе: обойти надо все делители от 2 до 8, и вот они для 67 — 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет, 8 — нет; каждая проба обязана не удаться. ОДИН СВИДЕТЕЛЬ ПРОТИВ ПОЛНОГО ОБХОДА — оттого два ответа об одном предмете стоят разного труда.
+
+простое ли 43? да: обход 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет; ни одна проба не удалась, а дальше пробовать нечего, ибо 7 × 7 = 49 больше 43.
+простое ли 67? да: обход 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет, 8 — нет; ни одна проба не удалась, а дальше пробовать нечего, ибо 9 × 9 = 81 больше 67.
+простое ли 89? да: обход 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет, 8 — нет, 9 — нет; ни одна проба не удалась, а дальше пробовать нечего, ибо 10 × 10 = 100 больше 89.
+простое ли 109? да: обход 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет, 8 — нет, 9 — нет, 10 — нет; ни одна проба не удалась, а дальше пробовать нечего, ибо 11 × 11 = 121 больше 109.
+простое ли 25? нет: 25 = 5 × 5, и одного свидетеля довольно.
+простое ли 55? нет: 55 = 5 × 11, и одного свидетеля довольно.
+простое ли 87? нет: 87 = 3 × 29, и одного свидетеля довольно.
+простое ли 119? нет: 119 = 7 × 17, и одного свидетеля довольно.
+простое ли 169? нет: 169 = 13 × 13, и одного свидетеля довольно.
+простое ли 7? да: обход 2 — нет; ни одна проба не удалась, а дальше пробовать нечего, ибо 3 × 3 = 9 больше 7.
+простое ли 23? да: обход 2 — нет, 3 — нет, 4 — нет; ни одна проба не удалась, а дальше пробовать нечего, ибо 5 × 5 = 25 больше 23.
+
+43 is PRIME, and here is the whole walk — tries: 2 — no, 3 — no, 4 — no, 5 — no, 6 — no; there is nothing further to try, for 7 × 7 = 49 is greater than 43; not one try succeeded, there is no divisor.
+67 is PRIME, and here is the whole walk — tries: 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no, 8 — no; there is nothing further to try, for 9 × 9 = 81 is greater than 67; not one try succeeded, there is no divisor.
+89 is PRIME, and here is the whole walk — tries: 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no, 8 — no, 9 — no; there is nothing further to try, for 10 × 10 = 100 is greater than 89; not one try succeeded, there is no divisor.
+109 is PRIME, and here is the whole walk — tries: 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no, 8 — no, 9 — no, 10 — no; there is nothing further to try, for 11 × 11 = 121 is greater than 109; not one try succeeded, there is no divisor.
+25 is NOT PRIME, and the walk broke off — tries: 2 — no, 3 — no, 4 — no, 5 — YES: 25 = 5 × 5; there is no point going further, for ONE DIVISOR IS ENOUGH.
+55 is NOT PRIME, and the walk broke off — tries: 2 — no, 3 — no, 4 — no, 5 — YES: 55 = 5 × 11; there is no point going further, for ONE DIVISOR IS ENOUGH.
+87 is NOT PRIME, and the walk broke off — tries: 2 — no, 3 — YES: 87 = 3 × 29; there is no point going further, for ONE DIVISOR IS ENOUGH.
+119 is NOT PRIME, and the walk broke off — tries: 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — YES: 119 = 7 × 17; there is no point going further, for ONE DIVISOR IS ENOUGH.
+169 is NOT PRIME, and the walk broke off — tries: 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no, 8 — no, 9 — no, 10 — no, 11 — no, 12 — no, 13 — YES: 169 = 13 × 13; there is no point going further, for ONE DIVISOR IS ENOUGH.
+7 is PRIME, and here is the whole walk — tries: 2 — no; there is nothing further to try, for 3 × 3 = 9 is greater than 7; not one try succeeded, there is no divisor.
+23 is PRIME, and here is the whole walk — tries: 2 — no, 3 — no, 4 — no; there is nothing further to try, for 5 × 5 = 25 is greater than 23; not one try succeeded, there is no divisor.
+
+to learn whether 43 is prime, the divisors to walk are those from 2 to 6, and their number is 5, for 7 × 7 = 49 is greater than 43; a walk up to the number itself would take the divisors from 2 to 42, and their number is 41, and 41 is greater than 5.
+to learn whether 67 is prime, the divisors to walk are those from 2 to 8, and their number is 7, for 9 × 9 = 81 is greater than 67; a walk up to the number itself would take the divisors from 2 to 66, and their number is 65, and 65 is greater than 7.
+to learn whether 89 is prime, the divisors to walk are those from 2 to 9, and their number is 8, for 10 × 10 = 100 is greater than 89; a walk up to the number itself would take the divisors from 2 to 88, and their number is 87, and 87 is greater than 8.
+to learn whether 109 is prime, the divisors to walk are those from 2 to 10, and their number is 9, for 11 × 11 = 121 is greater than 109; a walk up to the number itself would take the divisors from 2 to 108, and their number is 107, and 107 is greater than 9.
+25 = 5 × 5, and the smaller factor is 5: 5 × 5 = 25, and 25 is not greater than 25. Were BOTH factors greater than 5, the product would be at least 6 × 6 = 36, and 36 is greater than 25 — there is no such pair; so a composite number has its SMALLER DIVISOR NOT GREATER THAN THE ROOT, and the walk ends there.
+55 = 5 × 11, and the smaller factor is 5: 5 × 5 = 25, and 25 is not greater than 55. Were BOTH factors greater than 7, the product would be at least 8 × 8 = 64, and 64 is greater than 55 — there is no such pair; so a composite number has its SMALLER DIVISOR NOT GREATER THAN THE ROOT, and the walk ends there.
+87 = 3 × 29, and the smaller factor is 3: 3 × 3 = 9, and 9 is not greater than 87. Were BOTH factors greater than 9, the product would be at least 10 × 10 = 100, and 100 is greater than 87 — there is no such pair; so a composite number has its SMALLER DIVISOR NOT GREATER THAN THE ROOT, and the walk ends there.
+119 = 7 × 17, and the smaller factor is 7: 7 × 7 = 49, and 49 is not greater than 119. Were BOTH factors greater than 10, the product would be at least 11 × 11 = 121, and 121 is greater than 119 — there is no such pair; so a composite number has its SMALLER DIVISOR NOT GREATER THAN THE ROOT, and the walk ends there.
+169 = 13 × 13, and the smaller factor is 13: 13 × 13 = 169, and 169 is not greater than 169. Were BOTH factors greater than 13, the product would be at least 14 × 14 = 196, and 196 is greater than 169 — there is no such pair; so a composite number has its SMALLER DIVISOR NOT GREATER THAN THE ROOT, and the walk ends there.
+to learn whether 7 is prime, the divisors to walk are those from 2 to 2, and their number is 1, for 3 × 3 = 9 is greater than 7; a walk up to the number itself would take the divisors from 2 to 6, and their number is 5, and 5 is greater than 1.
+to learn whether 23 is prime, the divisors to walk are those from 2 to 4, and their number is 3, for 5 × 5 = 25 is greater than 23; a walk up to the number itself would take the divisors from 2 to 22, and their number is 21, and 21 is greater than 3.
+
+to say «77 is not prime», ONE witness is enough: 77 = 7 × 11. To say «43 is prime», there is no witness at all: every divisor from 2 to 6 must be walked, and here they are for 43 — 2 — no, 3 — no, 4 — no, 5 — no, 6 — no; every try is bound to fail. ONE WITNESS AGAINST A FULL WALK — that is why two answers about one thing cost different labour.
+to say «49 is not prime», ONE witness is enough: 49 = 7 × 7. To say «23 is prime», there is no witness at all: every divisor from 2 to 4 must be walked, and here they are for 23 — 2 — no, 3 — no, 4 — no; every try is bound to fail. ONE WITNESS AGAINST A FULL WALK — that is why two answers about one thing cost different labour.
+to say «15 is not prime», ONE witness is enough: 15 = 3 × 5. To say «7 is prime», there is no witness at all: every divisor from 2 to 2 must be walked, and here they are for 7 — 2 — no; every try is bound to fail. ONE WITNESS AGAINST A FULL WALK — that is why two answers about one thing cost different labour.
+to say «209 is not prime», ONE witness is enough: 209 = 11 × 19. To say «109 is prime», there is no witness at all: every divisor from 2 to 10 must be walked, and here they are for 109 — 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no, 8 — no, 9 — no, 10 — no; every try is bound to fail. ONE WITNESS AGAINST A FULL WALK — that is why two answers about one thing cost different labour.
+to say «143 is not prime», ONE witness is enough: 143 = 11 × 13. To say «89 is prime», there is no witness at all: every divisor from 2 to 9 must be walked, and here they are for 89 — 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no, 8 — no, 9 — no; every try is bound to fail. ONE WITNESS AGAINST A FULL WALK — that is why two answers about one thing cost different labour.
+to say «95 is not prime», ONE witness is enough: 95 = 5 × 19. To say «67 is prime», there is no witness at all: every divisor from 2 to 8 must be walked, and here they are for 67 — 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no, 8 — no; every try is bound to fail. ONE WITNESS AGAINST A FULL WALK — that is why two answers about one thing cost different labour.
+
+is 43 prime? yes: the walk is 2 — no, 3 — no, 4 — no, 5 — no, 6 — no; not one try succeeded, and there is nothing further to try, for 7 × 7 = 49 is greater than 43.
+is 67 prime? yes: the walk is 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no, 8 — no; not one try succeeded, and there is nothing further to try, for 9 × 9 = 81 is greater than 67.
+is 89 prime? yes: the walk is 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no, 8 — no, 9 — no; not one try succeeded, and there is nothing further to try, for 10 × 10 = 100 is greater than 89.
+is 109 prime? yes: the walk is 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no, 8 — no, 9 — no, 10 — no; not one try succeeded, and there is nothing further to try, for 11 × 11 = 121 is greater than 109.
+is 25 prime? no: 25 = 5 × 5, and one witness is enough.
+is 55 prime? no: 55 = 5 × 11, and one witness is enough.
+is 87 prime? no: 87 = 3 × 29, and one witness is enough.
+is 119 prime? no: 119 = 7 × 17, and one witness is enough.
+is 169 prime? no: 169 = 13 × 13, and one witness is enough.
+is 7 prime? yes: the walk is 2 — no; not one try succeeded, and there is nothing further to try, for 3 × 3 = 9 is greater than 7.
+is 23 prime? yes: the walk is 2 — no, 3 — no, 4 — no; not one try succeeded, and there is nothing further to try, for 5 × 5 = 25 is greater than 23.
+
+121 НЕ ПРОСТОЕ, и обход оборвался — пробы: 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет, 8 — нет, 9 — нет, 10 — нет, 11 — ДА: 121 = 11 × 11; дальше идти незачем, ибо ОДНОГО ДЕЛИТЕЛЯ ДОВОЛЬНО.
+11 ПРОСТОЕ, и вот весь обход — пробы: 2 — нет, 3 — нет; дальше пробовать нечего, ибо 4 × 4 = 16 больше 11; ни одна проба не удалась, делителя нет.
+47 ПРОСТОЕ, и вот весь обход — пробы: 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет; дальше пробовать нечего, ибо 7 × 7 = 49 больше 47; ни одна проба не удалась, делителя нет.
+97 ПРОСТОЕ, и вот весь обход — пробы: 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет, 8 — нет, 9 — нет; дальше пробовать нечего, ибо 10 × 10 = 100 больше 97; ни одна проба не удалась, делителя нет.
+33 НЕ ПРОСТОЕ, и обход оборвался — пробы: 2 — нет, 3 — ДА: 33 = 3 × 11; дальше идти незачем, ибо ОДНОГО ДЕЛИТЕЛЯ ДОВОЛЬНО.
+91 НЕ ПРОСТОЕ, и обход оборвался — пробы: 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — ДА: 91 = 7 × 13; дальше идти незачем, ибо ОДНОГО ДЕЛИТЕЛЯ ДОВОЛЬНО.
+187 НЕ ПРОСТОЕ, и обход оборвался — пробы: 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет, 8 — нет, 9 — нет, 10 — нет, 11 — ДА: 187 = 11 × 17; дальше идти незачем, ибо ОДНОГО ДЕЛИТЕЛЯ ДОВОЛЬНО.
+29 ПРОСТОЕ, и вот весь обход — пробы: 2 — нет, 3 — нет, 4 — нет, 5 — нет; дальше пробовать нечего, ибо 6 × 6 = 36 больше 29; ни одна проба не удалась, делителя нет.
+71 ПРОСТОЕ, и вот весь обход — пробы: 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет, 8 — нет; дальше пробовать нечего, ибо 9 × 9 = 81 больше 71; ни одна проба не удалась, делителя нет.
+113 ПРОСТОЕ, и вот весь обход — пробы: 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет, 8 — нет, 9 — нет, 10 — нет; дальше пробовать нечего, ибо 11 × 11 = 121 больше 113; ни одна проба не удалась, делителя нет.
+57 НЕ ПРОСТОЕ, и обход оборвался — пробы: 2 — нет, 3 — ДА: 57 = 3 × 19; дальше идти незачем, ибо ОДНОГО ДЕЛИТЕЛЯ ДОВОЛЬНО.
+
+121 = 11 × 11, и меньший множитель 11: 11 × 11 = 121, а 121 не больше 121. Будь ОБА множителя больше 11, произведение было бы не меньше 12 × 12 = 144, а 144 больше 121 — такой пары нет; потому у составного числа МЕНЬШИЙ ДЕЛИТЕЛЬ НЕ БОЛЬШЕ КОРНЯ, и обход кончается там.
+чтобы узнать, простое ли 11, обойти надо делители от 2 до 3, и число их — 2, ибо 4 × 4 = 16 больше 11; а обход до самого числа взял бы делители от 2 до 10, и число их — 9, и 9 больше 2.
+чтобы узнать, простое ли 47, обойти надо делители от 2 до 6, и число их — 5, ибо 7 × 7 = 49 больше 47; а обход до самого числа взял бы делители от 2 до 46, и число их — 45, и 45 больше 5.
+чтобы узнать, простое ли 97, обойти надо делители от 2 до 9, и число их — 8, ибо 10 × 10 = 100 больше 97; а обход до самого числа взял бы делители от 2 до 96, и число их — 95, и 95 больше 8.
+33 = 3 × 11, и меньший множитель 3: 3 × 3 = 9, а 9 не больше 33. Будь ОБА множителя больше 5, произведение было бы не меньше 6 × 6 = 36, а 36 больше 33 — такой пары нет; потому у составного числа МЕНЬШИЙ ДЕЛИТЕЛЬ НЕ БОЛЬШЕ КОРНЯ, и обход кончается там.
+91 = 7 × 13, и меньший множитель 7: 7 × 7 = 49, а 49 не больше 91. Будь ОБА множителя больше 9, произведение было бы не меньше 10 × 10 = 100, а 100 больше 91 — такой пары нет; потому у составного числа МЕНЬШИЙ ДЕЛИТЕЛЬ НЕ БОЛЬШЕ КОРНЯ, и обход кончается там.
+187 = 11 × 17, и меньший множитель 11: 11 × 11 = 121, а 121 не больше 187. Будь ОБА множителя больше 13, произведение было бы не меньше 14 × 14 = 196, а 196 больше 187 — такой пары нет; потому у составного числа МЕНЬШИЙ ДЕЛИТЕЛЬ НЕ БОЛЬШЕ КОРНЯ, и обход кончается там.
+чтобы узнать, простое ли 29, обойти надо делители от 2 до 5, и число их — 4, ибо 6 × 6 = 36 больше 29; а обход до самого числа взял бы делители от 2 до 28, и число их — 27, и 27 больше 4.
+чтобы узнать, простое ли 71, обойти надо делители от 2 до 8, и число их — 7, ибо 9 × 9 = 81 больше 71; а обход до самого числа взял бы делители от 2 до 70, и число их — 69, и 69 больше 7.
+чтобы узнать, простое ли 113, обойти надо делители от 2 до 10, и число их — 9, ибо 11 × 11 = 121 больше 113; а обход до самого числа взял бы делители от 2 до 112, и число их — 111, и 111 больше 9.
+57 = 3 × 19, и меньший множитель 3: 3 × 3 = 9, а 9 не больше 57. Будь ОБА множителя больше 7, произведение было бы не меньше 8 × 8 = 64, а 64 больше 57 — такой пары нет; потому у составного числа МЕНЬШИЙ ДЕЛИТЕЛЬ НЕ БОЛЬШЕ КОРНЯ, и обход кончается там.
+
+чтобы сказать «115 не простое», довольно ОДНОГО свидетеля: 115 = 5 × 23. Чтобы сказать «71 простое», свидетеля нет вовсе: обойти надо все делители от 2 до 8, и вот они для 71 — 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет, 8 — нет; каждая проба обязана не удаться. ОДИН СВИДЕТЕЛЬ ПРОТИВ ПОЛНОГО ОБХОДА — оттого два ответа об одном предмете стоят разного труда.
+чтобы сказать «161 не простое», довольно ОДНОГО свидетеля: 161 = 7 × 23. Чтобы сказать «97 простое», свидетеля нет вовсе: обойти надо все делители от 2 до 9, и вот они для 97 — 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет, 8 — нет, 9 — нет; каждая проба обязана не удаться. ОДИН СВИДЕТЕЛЬ ПРОТИВ ПОЛНОГО ОБХОДА — оттого два ответа об одном предмете стоят разного труда.
+чтобы сказать «221 не простое», довольно ОДНОГО свидетеля: 221 = 13 × 17. Чтобы сказать «113 простое», свидетеля нет вовсе: обойти надо все делители от 2 до 10, и вот они для 113 — 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет, 8 — нет, 9 — нет, 10 — нет; каждая проба обязана не удаться. ОДИН СВИДЕТЕЛЬ ПРОТИВ ПОЛНОГО ОБХОДА — оттого два ответа об одном предмете стоят разного труда.
+чтобы сказать «21 не простое», довольно ОДНОГО свидетеля: 21 = 3 × 7. Чтобы сказать «11 простое», свидетеля нет вовсе: обойти надо все делители от 2 до 3, и вот они для 11 — 2 — нет, 3 — нет; каждая проба обязана не удаться. ОДИН СВИДЕТЕЛЬ ПРОТИВ ПОЛНОГО ОБХОДА — оттого два ответа об одном предмете стоят разного труда.
+чтобы сказать «51 не простое», довольно ОДНОГО свидетеля: 51 = 3 × 17. Чтобы сказать «29 простое», свидетеля нет вовсе: обойти надо все делители от 2 до 5, и вот они для 29 — 2 — нет, 3 — нет, 4 — нет, 5 — нет; каждая проба обязана не удаться. ОДИН СВИДЕТЕЛЬ ПРОТИВ ПОЛНОГО ОБХОДА — оттого два ответа об одном предмете стоят разного труда.
+чтобы сказать «85 не простое», довольно ОДНОГО свидетеля: 85 = 5 × 17. Чтобы сказать «47 простое», свидетеля нет вовсе: обойти надо все делители от 2 до 6, и вот они для 47 — 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет; каждая проба обязана не удаться. ОДИН СВИДЕТЕЛЬ ПРОТИВ ПОЛНОГО ОБХОДА — оттого два ответа об одном предмете стоят разного труда.
+
+простое ли 121? нет: 121 = 11 × 11, и одного свидетеля довольно.
+простое ли 11? да: обход 2 — нет, 3 — нет; ни одна проба не удалась, а дальше пробовать нечего, ибо 4 × 4 = 16 больше 11.
+простое ли 47? да: обход 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет; ни одна проба не удалась, а дальше пробовать нечего, ибо 7 × 7 = 49 больше 47.
+простое ли 97? да: обход 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет, 8 — нет, 9 — нет; ни одна проба не удалась, а дальше пробовать нечего, ибо 10 × 10 = 100 больше 97.
+простое ли 33? нет: 33 = 3 × 11, и одного свидетеля довольно.
+простое ли 91? нет: 91 = 7 × 13, и одного свидетеля довольно.
+простое ли 187? нет: 187 = 11 × 17, и одного свидетеля довольно.
+простое ли 29? да: обход 2 — нет, 3 — нет, 4 — нет, 5 — нет; ни одна проба не удалась, а дальше пробовать нечего, ибо 6 × 6 = 36 больше 29.
+простое ли 71? да: обход 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет, 8 — нет; ни одна проба не удалась, а дальше пробовать нечего, ибо 9 × 9 = 81 больше 71.
+простое ли 113? да: обход 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет, 8 — нет, 9 — нет, 10 — нет; ни одна проба не удалась, а дальше пробовать нечего, ибо 11 × 11 = 121 больше 113.
+простое ли 57? нет: 57 = 3 × 19, и одного свидетеля довольно.
+
+121 is NOT PRIME, and the walk broke off — tries: 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no, 8 — no, 9 — no, 10 — no, 11 — YES: 121 = 11 × 11; there is no point going further, for ONE DIVISOR IS ENOUGH.
+11 is PRIME, and here is the whole walk — tries: 2 — no, 3 — no; there is nothing further to try, for 4 × 4 = 16 is greater than 11; not one try succeeded, there is no divisor.
+47 is PRIME, and here is the whole walk — tries: 2 — no, 3 — no, 4 — no, 5 — no, 6 — no; there is nothing further to try, for 7 × 7 = 49 is greater than 47; not one try succeeded, there is no divisor.
+97 is PRIME, and here is the whole walk — tries: 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no, 8 — no, 9 — no; there is nothing further to try, for 10 × 10 = 100 is greater than 97; not one try succeeded, there is no divisor.
+33 is NOT PRIME, and the walk broke off — tries: 2 — no, 3 — YES: 33 = 3 × 11; there is no point going further, for ONE DIVISOR IS ENOUGH.
+91 is NOT PRIME, and the walk broke off — tries: 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — YES: 91 = 7 × 13; there is no point going further, for ONE DIVISOR IS ENOUGH.
+187 is NOT PRIME, and the walk broke off — tries: 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no, 8 — no, 9 — no, 10 — no, 11 — YES: 187 = 11 × 17; there is no point going further, for ONE DIVISOR IS ENOUGH.
+29 is PRIME, and here is the whole walk — tries: 2 — no, 3 — no, 4 — no, 5 — no; there is nothing further to try, for 6 × 6 = 36 is greater than 29; not one try succeeded, there is no divisor.
+71 is PRIME, and here is the whole walk — tries: 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no, 8 — no; there is nothing further to try, for 9 × 9 = 81 is greater than 71; not one try succeeded, there is no divisor.
+113 is PRIME, and here is the whole walk — tries: 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no, 8 — no, 9 — no, 10 — no; there is nothing further to try, for 11 × 11 = 121 is greater than 113; not one try succeeded, there is no divisor.
+57 is NOT PRIME, and the walk broke off — tries: 2 — no, 3 — YES: 57 = 3 × 19; there is no point going further, for ONE DIVISOR IS ENOUGH.
+
+121 = 11 × 11, and the smaller factor is 11: 11 × 11 = 121, and 121 is not greater than 121. Were BOTH factors greater than 11, the product would be at least 12 × 12 = 144, and 144 is greater than 121 — there is no such pair; so a composite number has its SMALLER DIVISOR NOT GREATER THAN THE ROOT, and the walk ends there.
+to learn whether 11 is prime, the divisors to walk are those from 2 to 3, and their number is 2, for 4 × 4 = 16 is greater than 11; a walk up to the number itself would take the divisors from 2 to 10, and their number is 9, and 9 is greater than 2.
+to learn whether 47 is prime, the divisors to walk are those from 2 to 6, and their number is 5, for 7 × 7 = 49 is greater than 47; a walk up to the number itself would take the divisors from 2 to 46, and their number is 45, and 45 is greater than 5.
+to learn whether 97 is prime, the divisors to walk are those from 2 to 9, and their number is 8, for 10 × 10 = 100 is greater than 97; a walk up to the number itself would take the divisors from 2 to 96, and their number is 95, and 95 is greater than 8.
+33 = 3 × 11, and the smaller factor is 3: 3 × 3 = 9, and 9 is not greater than 33. Were BOTH factors greater than 5, the product would be at least 6 × 6 = 36, and 36 is greater than 33 — there is no such pair; so a composite number has its SMALLER DIVISOR NOT GREATER THAN THE ROOT, and the walk ends there.
+91 = 7 × 13, and the smaller factor is 7: 7 × 7 = 49, and 49 is not greater than 91. Were BOTH factors greater than 9, the product would be at least 10 × 10 = 100, and 100 is greater than 91 — there is no such pair; so a composite number has its SMALLER DIVISOR NOT GREATER THAN THE ROOT, and the walk ends there.
+187 = 11 × 17, and the smaller factor is 11: 11 × 11 = 121, and 121 is not greater than 187. Were BOTH factors greater than 13, the product would be at least 14 × 14 = 196, and 196 is greater than 187 — there is no such pair; so a composite number has its SMALLER DIVISOR NOT GREATER THAN THE ROOT, and the walk ends there.
+to learn whether 29 is prime, the divisors to walk are those from 2 to 5, and their number is 4, for 6 × 6 = 36 is greater than 29; a walk up to the number itself would take the divisors from 2 to 28, and their number is 27, and 27 is greater than 4.
+to learn whether 71 is prime, the divisors to walk are those from 2 to 8, and their number is 7, for 9 × 9 = 81 is greater than 71; a walk up to the number itself would take the divisors from 2 to 70, and their number is 69, and 69 is greater than 7.
+to learn whether 113 is prime, the divisors to walk are those from 2 to 10, and their number is 9, for 11 × 11 = 121 is greater than 113; a walk up to the number itself would take the divisors from 2 to 112, and their number is 111, and 111 is greater than 9.
+57 = 3 × 19, and the smaller factor is 3: 3 × 3 = 9, and 9 is not greater than 57. Were BOTH factors greater than 7, the product would be at least 8 × 8 = 64, and 64 is greater than 57 — there is no such pair; so a composite number has its SMALLER DIVISOR NOT GREATER THAN THE ROOT, and the walk ends there.
+
+to say «115 is not prime», ONE witness is enough: 115 = 5 × 23. To say «71 is prime», there is no witness at all: every divisor from 2 to 8 must be walked, and here they are for 71 — 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no, 8 — no; every try is bound to fail. ONE WITNESS AGAINST A FULL WALK — that is why two answers about one thing cost different labour.
+to say «161 is not prime», ONE witness is enough: 161 = 7 × 23. To say «97 is prime», there is no witness at all: every divisor from 2 to 9 must be walked, and here they are for 97 — 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no, 8 — no, 9 — no; every try is bound to fail. ONE WITNESS AGAINST A FULL WALK — that is why two answers about one thing cost different labour.
+to say «221 is not prime», ONE witness is enough: 221 = 13 × 17. To say «113 is prime», there is no witness at all: every divisor from 2 to 10 must be walked, and here they are for 113 — 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no, 8 — no, 9 — no, 10 — no; every try is bound to fail. ONE WITNESS AGAINST A FULL WALK — that is why two answers about one thing cost different labour.
+to say «21 is not prime», ONE witness is enough: 21 = 3 × 7. To say «11 is prime», there is no witness at all: every divisor from 2 to 3 must be walked, and here they are for 11 — 2 — no, 3 — no; every try is bound to fail. ONE WITNESS AGAINST A FULL WALK — that is why two answers about one thing cost different labour.
+to say «51 is not prime», ONE witness is enough: 51 = 3 × 17. To say «29 is prime», there is no witness at all: every divisor from 2 to 5 must be walked, and here they are for 29 — 2 — no, 3 — no, 4 — no, 5 — no; every try is bound to fail. ONE WITNESS AGAINST A FULL WALK — that is why two answers about one thing cost different labour.
+to say «85 is not prime», ONE witness is enough: 85 = 5 × 17. To say «47 is prime», there is no witness at all: every divisor from 2 to 6 must be walked, and here they are for 47 — 2 — no, 3 — no, 4 — no, 5 — no, 6 — no; every try is bound to fail. ONE WITNESS AGAINST A FULL WALK — that is why two answers about one thing cost different labour.
+
+is 121 prime? no: 121 = 11 × 11, and one witness is enough.
+is 11 prime? yes: the walk is 2 — no, 3 — no; not one try succeeded, and there is nothing further to try, for 4 × 4 = 16 is greater than 11.
+is 47 prime? yes: the walk is 2 — no, 3 — no, 4 — no, 5 — no, 6 — no; not one try succeeded, and there is nothing further to try, for 7 × 7 = 49 is greater than 47.
+is 97 prime? yes: the walk is 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no, 8 — no, 9 — no; not one try succeeded, and there is nothing further to try, for 10 × 10 = 100 is greater than 97.
+is 33 prime? no: 33 = 3 × 11, and one witness is enough.
+is 91 prime? no: 91 = 7 × 13, and one witness is enough.
+is 187 prime? no: 187 = 11 × 17, and one witness is enough.
+is 29 prime? yes: the walk is 2 — no, 3 — no, 4 — no, 5 — no; not one try succeeded, and there is nothing further to try, for 6 × 6 = 36 is greater than 29.
+is 71 prime? yes: the walk is 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no, 8 — no; not one try succeeded, and there is nothing further to try, for 9 × 9 = 81 is greater than 71.
+is 113 prime? yes: the walk is 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no, 8 — no, 9 — no, 10 — no; not one try succeeded, and there is nothing further to try, for 11 × 11 = 121 is greater than 113.
+is 57 prime? no: 57 = 3 × 19, and one witness is enough.
+
+101 ПРОСТОЕ, и вот весь обход — пробы: 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет, 8 — нет, 9 — нет, 10 — нет; дальше пробовать нечего, ибо 11 × 11 = 121 больше 101; ни одна проба не удалась, делителя нет.
+203 НЕ ПРОСТОЕ, и обход оборвался — пробы: 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — ДА: 203 = 7 × 29; дальше идти незачем, ибо ОДНОГО ДЕЛИТЕЛЯ ДОВОЛЬНО.
+9 НЕ ПРОСТОЕ, и обход оборвался — пробы: 2 — нет, 3 — ДА: 9 = 3 × 3; дальше идти незачем, ибо ОДНОГО ДЕЛИТЕЛЯ ДОВОЛЬНО.
+13 ПРОСТОЕ, и вот весь обход — пробы: 2 — нет, 3 — нет; дальше пробовать нечего, ибо 4 × 4 = 16 больше 13; ни одна проба не удалась, делителя нет.
+35 НЕ ПРОСТОЕ, и обход оборвался — пробы: 2 — нет, 3 — нет, 4 — нет, 5 — ДА: 35 = 5 × 7; дальше идти незачем, ибо ОДНОГО ДЕЛИТЕЛЯ ДОВОЛЬНО.
+31 ПРОСТОЕ, и вот весь обход — пробы: 2 — нет, 3 — нет, 4 — нет, 5 — нет; дальше пробовать нечего, ибо 6 × 6 = 36 больше 31; ни одна проба не удалась, делителя нет.
+65 НЕ ПРОСТОЕ, и обход оборвался — пробы: 2 — нет, 3 — нет, 4 — нет, 5 — ДА: 65 = 5 × 13; дальше идти незачем, ибо ОДНОГО ДЕЛИТЕЛЯ ДОВОЛЬНО.
+53 ПРОСТОЕ, и вот весь обход — пробы: 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет; дальше пробовать нечего, ибо 8 × 8 = 64 больше 53; ни одна проба не удалась, делителя нет.
+93 НЕ ПРОСТОЕ, и обход оборвался — пробы: 2 — нет, 3 — ДА: 93 = 3 × 31; дальше идти незачем, ибо ОДНОГО ДЕЛИТЕЛЯ ДОВОЛЬНО.
+73 ПРОСТОЕ, и вот весь обход — пробы: 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет, 8 — нет; дальше пробовать нечего, ибо 9 × 9 = 81 больше 73; ни одна проба не удалась, делителя нет.
+133 НЕ ПРОСТОЕ, и обход оборвался — пробы: 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — ДА: 133 = 7 × 19; дальше идти незачем, ибо ОДНОГО ДЕЛИТЕЛЯ ДОВОЛЬНО.
+
+чтобы узнать, простое ли 101, обойти надо делители от 2 до 10, и число их — 9, ибо 11 × 11 = 121 больше 101; а обход до самого числа взял бы делители от 2 до 100, и число их — 99, и 99 больше 9.
+203 = 7 × 29, и меньший множитель 7: 7 × 7 = 49, а 49 не больше 203. Будь ОБА множителя больше 14, произведение было бы не меньше 15 × 15 = 225, а 225 больше 203 — такой пары нет; потому у составного числа МЕНЬШИЙ ДЕЛИТЕЛЬ НЕ БОЛЬШЕ КОРНЯ, и обход кончается там.
+9 = 3 × 3, и меньший множитель 3: 3 × 3 = 9, а 9 не больше 9. Будь ОБА множителя больше 3, произведение было бы не меньше 4 × 4 = 16, а 16 больше 9 — такой пары нет; потому у составного числа МЕНЬШИЙ ДЕЛИТЕЛЬ НЕ БОЛЬШЕ КОРНЯ, и обход кончается там.
+чтобы узнать, простое ли 13, обойти надо делители от 2 до 3, и число их — 2, ибо 4 × 4 = 16 больше 13; а обход до самого числа взял бы делители от 2 до 12, и число их — 11, и 11 больше 2.
+35 = 5 × 7, и меньший множитель 5: 5 × 5 = 25, а 25 не больше 35. Будь ОБА множителя больше 5, произведение было бы не меньше 6 × 6 = 36, а 36 больше 35 — такой пары нет; потому у составного числа МЕНЬШИЙ ДЕЛИТЕЛЬ НЕ БОЛЬШЕ КОРНЯ, и обход кончается там.
+чтобы узнать, простое ли 31, обойти надо делители от 2 до 5, и число их — 4, ибо 6 × 6 = 36 больше 31; а обход до самого числа взял бы делители от 2 до 30, и число их — 29, и 29 больше 4.
+65 = 5 × 13, и меньший множитель 5: 5 × 5 = 25, а 25 не больше 65. Будь ОБА множителя больше 8, произведение было бы не меньше 9 × 9 = 81, а 81 больше 65 — такой пары нет; потому у составного числа МЕНЬШИЙ ДЕЛИТЕЛЬ НЕ БОЛЬШЕ КОРНЯ, и обход кончается там.
+чтобы узнать, простое ли 53, обойти надо делители от 2 до 7, и число их — 6, ибо 8 × 8 = 64 больше 53; а обход до самого числа взял бы делители от 2 до 52, и число их — 51, и 51 больше 6.
+93 = 3 × 31, и меньший множитель 3: 3 × 3 = 9, а 9 не больше 93. Будь ОБА множителя больше 9, произведение было бы не меньше 10 × 10 = 100, а 100 больше 93 — такой пары нет; потому у составного числа МЕНЬШИЙ ДЕЛИТЕЛЬ НЕ БОЛЬШЕ КОРНЯ, и обход кончается там.
+чтобы узнать, простое ли 73, обойти надо делители от 2 до 8, и число их — 7, ибо 9 × 9 = 81 больше 73; а обход до самого числа взял бы делители от 2 до 72, и число их — 71, и 71 больше 7.
+133 = 7 × 19, и меньший множитель 7: 7 × 7 = 49, а 49 не больше 133. Будь ОБА множителя больше 11, произведение было бы не меньше 12 × 12 = 144, а 144 больше 133 — такой пары нет; потому у составного числа МЕНЬШИЙ ДЕЛИТЕЛЬ НЕ БОЛЬШЕ КОРНЯ, и обход кончается там.
+
+чтобы сказать «169 не простое», довольно ОДНОГО свидетеля: 169 = 13 × 13. Чтобы сказать «101 простое», свидетеля нет вовсе: обойти надо все делители от 2 до 10, и вот они для 101 — 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет, 8 — нет, 9 — нет, 10 — нет; каждая проба обязана не удаться. ОДИН СВИДЕТЕЛЬ ПРОТИВ ПОЛНОГО ОБХОДА — оттого два ответа об одном предмете стоят разного труда.
+чтобы сказать «55 не простое», довольно ОДНОГО свидетеля: 55 = 5 × 11. Чтобы сказать «31 простое», свидетеля нет вовсе: обойти надо все делители от 2 до 5, и вот они для 31 — 2 — нет, 3 — нет, 4 — нет, 5 — нет; каждая проба обязана не удаться. ОДИН СВИДЕТЕЛЬ ПРОТИВ ПОЛНОГО ОБХОДА — оттого два ответа об одном предмете стоят разного труда.
+чтобы сказать «119 не простое», довольно ОДНОГО свидетеля: 119 = 7 × 17. Чтобы сказать «73 простое», свидетеля нет вовсе: обойти надо все делители от 2 до 8, и вот они для 73 — 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет, 8 — нет; каждая проба обязана не удаться. ОДИН СВИДЕТЕЛЬ ПРОТИВ ПОЛНОГО ОБХОДА — оттого два ответа об одном предмете стоят разного труда.
+чтобы сказать «25 не простое», довольно ОДНОГО свидетеля: 25 = 5 × 5. Чтобы сказать «13 простое», свидетеля нет вовсе: обойти надо все делители от 2 до 3, и вот они для 13 — 2 — нет, 3 — нет; каждая проба обязана не удаться. ОДИН СВИДЕТЕЛЬ ПРОТИВ ПОЛНОГО ОБХОДА — оттого два ответа об одном предмете стоят разного труда.
+чтобы сказать «87 не простое», довольно ОДНОГО свидетеля: 87 = 3 × 29. Чтобы сказать «53 простое», свидетеля нет вовсе: обойти надо все делители от 2 до 7, и вот они для 53 — 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет; каждая проба обязана не удаться. ОДИН СВИДЕТЕЛЬ ПРОТИВ ПОЛНОГО ОБХОДА — оттого два ответа об одном предмете стоят разного труда.
+
+простое ли 101? да: обход 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет, 8 — нет, 9 — нет, 10 — нет; ни одна проба не удалась, а дальше пробовать нечего, ибо 11 × 11 = 121 больше 101.
+простое ли 203? нет: 203 = 7 × 29, и одного свидетеля довольно.
+простое ли 9? нет: 9 = 3 × 3, и одного свидетеля довольно.
+простое ли 13? да: обход 2 — нет, 3 — нет; ни одна проба не удалась, а дальше пробовать нечего, ибо 4 × 4 = 16 больше 13.
+простое ли 35? нет: 35 = 5 × 7, и одного свидетеля довольно.
+простое ли 31? да: обход 2 — нет, 3 — нет, 4 — нет, 5 — нет; ни одна проба не удалась, а дальше пробовать нечего, ибо 6 × 6 = 36 больше 31.
+простое ли 65? нет: 65 = 5 × 13, и одного свидетеля довольно.
+простое ли 53? да: обход 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет; ни одна проба не удалась, а дальше пробовать нечего, ибо 8 × 8 = 64 больше 53.
+простое ли 93? нет: 93 = 3 × 31, и одного свидетеля довольно.
+простое ли 73? да: обход 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет, 8 — нет; ни одна проба не удалась, а дальше пробовать нечего, ибо 9 × 9 = 81 больше 73.
+простое ли 133? нет: 133 = 7 × 19, и одного свидетеля довольно.
+
+101 is PRIME, and here is the whole walk — tries: 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no, 8 — no, 9 — no, 10 — no; there is nothing further to try, for 11 × 11 = 121 is greater than 101; not one try succeeded, there is no divisor.
+203 is NOT PRIME, and the walk broke off — tries: 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — YES: 203 = 7 × 29; there is no point going further, for ONE DIVISOR IS ENOUGH.
+9 is NOT PRIME, and the walk broke off — tries: 2 — no, 3 — YES: 9 = 3 × 3; there is no point going further, for ONE DIVISOR IS ENOUGH.
+13 is PRIME, and here is the whole walk — tries: 2 — no, 3 — no; there is nothing further to try, for 4 × 4 = 16 is greater than 13; not one try succeeded, there is no divisor.
+35 is NOT PRIME, and the walk broke off — tries: 2 — no, 3 — no, 4 — no, 5 — YES: 35 = 5 × 7; there is no point going further, for ONE DIVISOR IS ENOUGH.
+31 is PRIME, and here is the whole walk — tries: 2 — no, 3 — no, 4 — no, 5 — no; there is nothing further to try, for 6 × 6 = 36 is greater than 31; not one try succeeded, there is no divisor.
+65 is NOT PRIME, and the walk broke off — tries: 2 — no, 3 — no, 4 — no, 5 — YES: 65 = 5 × 13; there is no point going further, for ONE DIVISOR IS ENOUGH.
+53 is PRIME, and here is the whole walk — tries: 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no; there is nothing further to try, for 8 × 8 = 64 is greater than 53; not one try succeeded, there is no divisor.
+93 is NOT PRIME, and the walk broke off — tries: 2 — no, 3 — YES: 93 = 3 × 31; there is no point going further, for ONE DIVISOR IS ENOUGH.
+73 is PRIME, and here is the whole walk — tries: 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no, 8 — no; there is nothing further to try, for 9 × 9 = 81 is greater than 73; not one try succeeded, there is no divisor.
+133 is NOT PRIME, and the walk broke off — tries: 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — YES: 133 = 7 × 19; there is no point going further, for ONE DIVISOR IS ENOUGH.
+
+to learn whether 101 is prime, the divisors to walk are those from 2 to 10, and their number is 9, for 11 × 11 = 121 is greater than 101; a walk up to the number itself would take the divisors from 2 to 100, and their number is 99, and 99 is greater than 9.
+203 = 7 × 29, and the smaller factor is 7: 7 × 7 = 49, and 49 is not greater than 203. Were BOTH factors greater than 14, the product would be at least 15 × 15 = 225, and 225 is greater than 203 — there is no such pair; so a composite number has its SMALLER DIVISOR NOT GREATER THAN THE ROOT, and the walk ends there.
+9 = 3 × 3, and the smaller factor is 3: 3 × 3 = 9, and 9 is not greater than 9. Were BOTH factors greater than 3, the product would be at least 4 × 4 = 16, and 16 is greater than 9 — there is no such pair; so a composite number has its SMALLER DIVISOR NOT GREATER THAN THE ROOT, and the walk ends there.
+to learn whether 13 is prime, the divisors to walk are those from 2 to 3, and their number is 2, for 4 × 4 = 16 is greater than 13; a walk up to the number itself would take the divisors from 2 to 12, and their number is 11, and 11 is greater than 2.
+35 = 5 × 7, and the smaller factor is 5: 5 × 5 = 25, and 25 is not greater than 35. Were BOTH factors greater than 5, the product would be at least 6 × 6 = 36, and 36 is greater than 35 — there is no such pair; so a composite number has its SMALLER DIVISOR NOT GREATER THAN THE ROOT, and the walk ends there.
+to learn whether 31 is prime, the divisors to walk are those from 2 to 5, and their number is 4, for 6 × 6 = 36 is greater than 31; a walk up to the number itself would take the divisors from 2 to 30, and their number is 29, and 29 is greater than 4.
+65 = 5 × 13, and the smaller factor is 5: 5 × 5 = 25, and 25 is not greater than 65. Were BOTH factors greater than 8, the product would be at least 9 × 9 = 81, and 81 is greater than 65 — there is no such pair; so a composite number has its SMALLER DIVISOR NOT GREATER THAN THE ROOT, and the walk ends there.
+to learn whether 53 is prime, the divisors to walk are those from 2 to 7, and their number is 6, for 8 × 8 = 64 is greater than 53; a walk up to the number itself would take the divisors from 2 to 52, and their number is 51, and 51 is greater than 6.
+93 = 3 × 31, and the smaller factor is 3: 3 × 3 = 9, and 9 is not greater than 93. Were BOTH factors greater than 9, the product would be at least 10 × 10 = 100, and 100 is greater than 93 — there is no such pair; so a composite number has its SMALLER DIVISOR NOT GREATER THAN THE ROOT, and the walk ends there.
+to learn whether 73 is prime, the divisors to walk are those from 2 to 8, and their number is 7, for 9 × 9 = 81 is greater than 73; a walk up to the number itself would take the divisors from 2 to 72, and their number is 71, and 71 is greater than 7.
+133 = 7 × 19, and the smaller factor is 7: 7 × 7 = 49, and 49 is not greater than 133. Were BOTH factors greater than 11, the product would be at least 12 × 12 = 144, and 144 is greater than 133 — there is no such pair; so a composite number has its SMALLER DIVISOR NOT GREATER THAN THE ROOT, and the walk ends there.
+
+to say «169 is not prime», ONE witness is enough: 169 = 13 × 13. To say «101 is prime», there is no witness at all: every divisor from 2 to 10 must be walked, and here they are for 101 — 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no, 8 — no, 9 — no, 10 — no; every try is bound to fail. ONE WITNESS AGAINST A FULL WALK — that is why two answers about one thing cost different labour.
+to say «55 is not prime», ONE witness is enough: 55 = 5 × 11. To say «31 is prime», there is no witness at all: every divisor from 2 to 5 must be walked, and here they are for 31 — 2 — no, 3 — no, 4 — no, 5 — no; every try is bound to fail. ONE WITNESS AGAINST A FULL WALK — that is why two answers about one thing cost different labour.
+to say «119 is not prime», ONE witness is enough: 119 = 7 × 17. To say «73 is prime», there is no witness at all: every divisor from 2 to 8 must be walked, and here they are for 73 — 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no, 8 — no; every try is bound to fail. ONE WITNESS AGAINST A FULL WALK — that is why two answers about one thing cost different labour.
+to say «25 is not prime», ONE witness is enough: 25 = 5 × 5. To say «13 is prime», there is no witness at all: every divisor from 2 to 3 must be walked, and here they are for 13 — 2 — no, 3 — no; every try is bound to fail. ONE WITNESS AGAINST A FULL WALK — that is why two answers about one thing cost different labour.
+to say «87 is not prime», ONE witness is enough: 87 = 3 × 29. To say «53 is prime», there is no witness at all: every divisor from 2 to 7 must be walked, and here they are for 53 — 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no; every try is bound to fail. ONE WITNESS AGAINST A FULL WALK — that is why two answers about one thing cost different labour.
+
+is 101 prime? yes: the walk is 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no, 8 — no, 9 — no, 10 — no; not one try succeeded, and there is nothing further to try, for 11 × 11 = 121 is greater than 101.
+is 203 prime? no: 203 = 7 × 29, and one witness is enough.
+is 9 prime? no: 9 = 3 × 3, and one witness is enough.
+is 13 prime? yes: the walk is 2 — no, 3 — no; not one try succeeded, and there is nothing further to try, for 4 × 4 = 16 is greater than 13.
+is 35 prime? no: 35 = 5 × 7, and one witness is enough.
+is 31 prime? yes: the walk is 2 — no, 3 — no, 4 — no, 5 — no; not one try succeeded, and there is nothing further to try, for 6 × 6 = 36 is greater than 31.
+is 65 prime? no: 65 = 5 × 13, and one witness is enough.
+is 53 prime? yes: the walk is 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no; not one try succeeded, and there is nothing further to try, for 8 × 8 = 64 is greater than 53.
+is 93 prime? no: 93 = 3 × 31, and one witness is enough.
+is 73 prime? yes: the walk is 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no, 8 — no; not one try succeeded, and there is nothing further to try, for 9 × 9 = 81 is greater than 73.
+is 133 prime? no: 133 = 7 × 19, and one witness is enough.
+
+37 ПРОСТОЕ, и вот весь обход — пробы: 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет; дальше пробовать нечего, ибо 7 × 7 = 49 больше 37; ни одна проба не удалась, делителя нет.
+143 НЕ ПРОСТОЕ, и обход оборвался — пробы: 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет, 8 — нет, 9 — нет, 10 — нет, 11 — ДА: 143 = 11 × 13; дальше идти незачем, ибо ОДНОГО ДЕЛИТЕЛЯ ДОВОЛЬНО.
+49 НЕ ПРОСТОЕ, и обход оборвался — пробы: 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — ДА: 49 = 7 × 7; дальше идти незачем, ибо ОДНОГО ДЕЛИТЕЛЯ ДОВОЛЬНО.
+79 ПРОСТОЕ, и вот весь обход — пробы: 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет, 8 — нет; дальше пробовать нечего, ибо 9 × 9 = 81 больше 79; ни одна проба не удалась, делителя нет.
+17 ПРОСТОЕ, и вот весь обход — пробы: 2 — нет, 3 — нет, 4 — нет; дальше пробовать нечего, ибо 5 × 5 = 25 больше 17; ни одна проба не удалась, делителя нет.
+95 НЕ ПРОСТОЕ, и обход оборвался — пробы: 2 — нет, 3 — нет, 4 — нет, 5 — ДА: 95 = 5 × 19; дальше идти незачем, ибо ОДНОГО ДЕЛИТЕЛЯ ДОВОЛЬНО.
+15 НЕ ПРОСТОЕ, и обход оборвался — пробы: 2 — нет, 3 — ДА: 15 = 3 × 5; дальше идти незачем, ибо ОДНОГО ДЕЛИТЕЛЯ ДОВОЛЬНО.
+59 ПРОСТОЕ, и вот весь обход — пробы: 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет; дальше пробовать нечего, ибо 8 × 8 = 64 больше 59; ни одна проба не удалась, делителя нет.
+209 НЕ ПРОСТОЕ, и обход оборвался — пробы: 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет, 8 — нет, 9 — нет, 10 — нет, 11 — ДА: 209 = 11 × 19; дальше идти незачем, ибо ОДНОГО ДЕЛИТЕЛЯ ДОВОЛЬНО.
+77 НЕ ПРОСТОЕ, и обход оборвался — пробы: 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — ДА: 77 = 7 × 11; дальше идти незачем, ибо ОДНОГО ДЕЛИТЕЛЯ ДОВОЛЬНО.
+103 ПРОСТОЕ, и вот весь обход — пробы: 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет, 8 — нет, 9 — нет, 10 — нет; дальше пробовать нечего, ибо 11 × 11 = 121 больше 103; ни одна проба не удалась, делителя нет.
+
+чтобы узнать, простое ли 37, обойти надо делители от 2 до 6, и число их — 5, ибо 7 × 7 = 49 больше 37; а обход до самого числа взял бы делители от 2 до 36, и число их — 35, и 35 больше 5.
+143 = 11 × 13, и меньший множитель 11: 11 × 11 = 121, а 121 не больше 143. Будь ОБА множителя больше 11, произведение было бы не меньше 12 × 12 = 144, а 144 больше 143 — такой пары нет; потому у составного числа МЕНЬШИЙ ДЕЛИТЕЛЬ НЕ БОЛЬШЕ КОРНЯ, и обход кончается там.
+49 = 7 × 7, и меньший множитель 7: 7 × 7 = 49, а 49 не больше 49. Будь ОБА множителя больше 7, произведение было бы не меньше 8 × 8 = 64, а 64 больше 49 — такой пары нет; потому у составного числа МЕНЬШИЙ ДЕЛИТЕЛЬ НЕ БОЛЬШЕ КОРНЯ, и обход кончается там.
+чтобы узнать, простое ли 79, обойти надо делители от 2 до 8, и число их — 7, ибо 9 × 9 = 81 больше 79; а обход до самого числа взял бы делители от 2 до 78, и число их — 77, и 77 больше 7.
+чтобы узнать, простое ли 17, обойти надо делители от 2 до 4, и число их — 3, ибо 5 × 5 = 25 больше 17; а обход до самого числа взял бы делители от 2 до 16, и число их — 15, и 15 больше 3.
+95 = 5 × 19, и меньший множитель 5: 5 × 5 = 25, а 25 не больше 95. Будь ОБА множителя больше 9, произведение было бы не меньше 10 × 10 = 100, а 100 больше 95 — такой пары нет; потому у составного числа МЕНЬШИЙ ДЕЛИТЕЛЬ НЕ БОЛЬШЕ КОРНЯ, и обход кончается там.
+15 = 3 × 5, и меньший множитель 3: 3 × 3 = 9, а 9 не больше 15. Будь ОБА множителя больше 3, произведение было бы не меньше 4 × 4 = 16, а 16 больше 15 — такой пары нет; потому у составного числа МЕНЬШИЙ ДЕЛИТЕЛЬ НЕ БОЛЬШЕ КОРНЯ, и обход кончается там.
+чтобы узнать, простое ли 59, обойти надо делители от 2 до 7, и число их — 6, ибо 8 × 8 = 64 больше 59; а обход до самого числа взял бы делители от 2 до 58, и число их — 57, и 57 больше 6.
+209 = 11 × 19, и меньший множитель 11: 11 × 11 = 121, а 121 не больше 209. Будь ОБА множителя больше 14, произведение было бы не меньше 15 × 15 = 225, а 225 больше 209 — такой пары нет; потому у составного числа МЕНЬШИЙ ДЕЛИТЕЛЬ НЕ БОЛЬШЕ КОРНЯ, и обход кончается там.
+77 = 7 × 11, и меньший множитель 7: 7 × 7 = 49, а 49 не больше 77. Будь ОБА множителя больше 8, произведение было бы не меньше 9 × 9 = 81, а 81 больше 77 — такой пары нет; потому у составного числа МЕНЬШИЙ ДЕЛИТЕЛЬ НЕ БОЛЬШЕ КОРНЯ, и обход кончается там.
+чтобы узнать, простое ли 103, обойти надо делители от 2 до 10, и число их — 9, ибо 11 × 11 = 121 больше 103; а обход до самого числа взял бы делители от 2 до 102, и число их — 101, и 101 больше 9.
+
+чтобы сказать «91 не простое», довольно ОДНОГО свидетеля: 91 = 7 × 13. Чтобы сказать «59 простое», свидетеля нет вовсе: обойти надо все делители от 2 до 7, и вот они для 59 — 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет; каждая проба обязана не удаться. ОДИН СВИДЕТЕЛЬ ПРОТИВ ПОЛНОГО ОБХОДА — оттого два ответа об одном предмете стоят разного труда.
+чтобы сказать «57 не простое», довольно ОДНОГО свидетеля: 57 = 3 × 19. Чтобы сказать «37 простое», свидетеля нет вовсе: обойти надо все делители от 2 до 6, и вот они для 37 — 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет; каждая проба обязана не удаться. ОДИН СВИДЕТЕЛЬ ПРОТИВ ПОЛНОГО ОБХОДА — оттого два ответа об одном предмете стоят разного труда.
+чтобы сказать «33 не простое», довольно ОДНОГО свидетеля: 33 = 3 × 11. Чтобы сказать «17 простое», свидетеля нет вовсе: обойти надо все делители от 2 до 4, и вот они для 17 — 2 — нет, 3 — нет, 4 — нет; каждая проба обязана не удаться. ОДИН СВИДЕТЕЛЬ ПРОТИВ ПОЛНОГО ОБХОДА — оттого два ответа об одном предмете стоят разного труда.
+чтобы сказать «187 не простое», довольно ОДНОГО свидетеля: 187 = 11 × 17. Чтобы сказать «103 простое», свидетеля нет вовсе: обойти надо все делители от 2 до 10, и вот они для 103 — 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет, 8 — нет, 9 — нет, 10 — нет; каждая проба обязана не удаться. ОДИН СВИДЕТЕЛЬ ПРОТИВ ПОЛНОГО ОБХОДА — оттого два ответа об одном предмете стоят разного труда.
+чтобы сказать «121 не простое», довольно ОДНОГО свидетеля: 121 = 11 × 11. Чтобы сказать «79 простое», свидетеля нет вовсе: обойти надо все делители от 2 до 8, и вот они для 79 — 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет, 8 — нет; каждая проба обязана не удаться. ОДИН СВИДЕТЕЛЬ ПРОТИВ ПОЛНОГО ОБХОДА — оттого два ответа об одном предмете стоят разного труда.
+
+простое ли 37? да: обход 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет; ни одна проба не удалась, а дальше пробовать нечего, ибо 7 × 7 = 49 больше 37.
+простое ли 143? нет: 143 = 11 × 13, и одного свидетеля довольно.
+простое ли 49? нет: 49 = 7 × 7, и одного свидетеля довольно.
+простое ли 79? да: обход 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет, 8 — нет; ни одна проба не удалась, а дальше пробовать нечего, ибо 9 × 9 = 81 больше 79.
+простое ли 17? да: обход 2 — нет, 3 — нет, 4 — нет; ни одна проба не удалась, а дальше пробовать нечего, ибо 5 × 5 = 25 больше 17.
+простое ли 95? нет: 95 = 5 × 19, и одного свидетеля довольно.
+простое ли 15? нет: 15 = 3 × 5, и одного свидетеля довольно.
+простое ли 59? да: обход 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет; ни одна проба не удалась, а дальше пробовать нечего, ибо 8 × 8 = 64 больше 59.
+простое ли 209? нет: 209 = 11 × 19, и одного свидетеля довольно.
+простое ли 77? нет: 77 = 7 × 11, и одного свидетеля довольно.
+простое ли 103? да: обход 2 — нет, 3 — нет, 4 — нет, 5 — нет, 6 — нет, 7 — нет, 8 — нет, 9 — нет, 10 — нет; ни одна проба не удалась, а дальше пробовать нечего, ибо 11 × 11 = 121 больше 103.
+
+37 is PRIME, and here is the whole walk — tries: 2 — no, 3 — no, 4 — no, 5 — no, 6 — no; there is nothing further to try, for 7 × 7 = 49 is greater than 37; not one try succeeded, there is no divisor.
+143 is NOT PRIME, and the walk broke off — tries: 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no, 8 — no, 9 — no, 10 — no, 11 — YES: 143 = 11 × 13; there is no point going further, for ONE DIVISOR IS ENOUGH.
+49 is NOT PRIME, and the walk broke off — tries: 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — YES: 49 = 7 × 7; there is no point going further, for ONE DIVISOR IS ENOUGH.
+79 is PRIME, and here is the whole walk — tries: 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no, 8 — no; there is nothing further to try, for 9 × 9 = 81 is greater than 79; not one try succeeded, there is no divisor.
+17 is PRIME, and here is the whole walk — tries: 2 — no, 3 — no, 4 — no; there is nothing further to try, for 5 × 5 = 25 is greater than 17; not one try succeeded, there is no divisor.
+95 is NOT PRIME, and the walk broke off — tries: 2 — no, 3 — no, 4 — no, 5 — YES: 95 = 5 × 19; there is no point going further, for ONE DIVISOR IS ENOUGH.
+15 is NOT PRIME, and the walk broke off — tries: 2 — no, 3 — YES: 15 = 3 × 5; there is no point going further, for ONE DIVISOR IS ENOUGH.
+59 is PRIME, and here is the whole walk — tries: 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no; there is nothing further to try, for 8 × 8 = 64 is greater than 59; not one try succeeded, there is no divisor.
+209 is NOT PRIME, and the walk broke off — tries: 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no, 8 — no, 9 — no, 10 — no, 11 — YES: 209 = 11 × 19; there is no point going further, for ONE DIVISOR IS ENOUGH.
+77 is NOT PRIME, and the walk broke off — tries: 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — YES: 77 = 7 × 11; there is no point going further, for ONE DIVISOR IS ENOUGH.
+103 is PRIME, and here is the whole walk — tries: 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no, 8 — no, 9 — no, 10 — no; there is nothing further to try, for 11 × 11 = 121 is greater than 103; not one try succeeded, there is no divisor.
+
+to learn whether 37 is prime, the divisors to walk are those from 2 to 6, and their number is 5, for 7 × 7 = 49 is greater than 37; a walk up to the number itself would take the divisors from 2 to 36, and their number is 35, and 35 is greater than 5.
+143 = 11 × 13, and the smaller factor is 11: 11 × 11 = 121, and 121 is not greater than 143. Were BOTH factors greater than 11, the product would be at least 12 × 12 = 144, and 144 is greater than 143 — there is no such pair; so a composite number has its SMALLER DIVISOR NOT GREATER THAN THE ROOT, and the walk ends there.
+49 = 7 × 7, and the smaller factor is 7: 7 × 7 = 49, and 49 is not greater than 49. Were BOTH factors greater than 7, the product would be at least 8 × 8 = 64, and 64 is greater than 49 — there is no such pair; so a composite number has its SMALLER DIVISOR NOT GREATER THAN THE ROOT, and the walk ends there.
+to learn whether 79 is prime, the divisors to walk are those from 2 to 8, and their number is 7, for 9 × 9 = 81 is greater than 79; a walk up to the number itself would take the divisors from 2 to 78, and their number is 77, and 77 is greater than 7.
+to learn whether 17 is prime, the divisors to walk are those from 2 to 4, and their number is 3, for 5 × 5 = 25 is greater than 17; a walk up to the number itself would take the divisors from 2 to 16, and their number is 15, and 15 is greater than 3.
+95 = 5 × 19, and the smaller factor is 5: 5 × 5 = 25, and 25 is not greater than 95. Were BOTH factors greater than 9, the product would be at least 10 × 10 = 100, and 100 is greater than 95 — there is no such pair; so a composite number has its SMALLER DIVISOR NOT GREATER THAN THE ROOT, and the walk ends there.
+15 = 3 × 5, and the smaller factor is 3: 3 × 3 = 9, and 9 is not greater than 15. Were BOTH factors greater than 3, the product would be at least 4 × 4 = 16, and 16 is greater than 15 — there is no such pair; so a composite number has its SMALLER DIVISOR NOT GREATER THAN THE ROOT, and the walk ends there.
+to learn whether 59 is prime, the divisors to walk are those from 2 to 7, and their number is 6, for 8 × 8 = 64 is greater than 59; a walk up to the number itself would take the divisors from 2 to 58, and their number is 57, and 57 is greater than 6.
+209 = 11 × 19, and the smaller factor is 11: 11 × 11 = 121, and 121 is not greater than 209. Were BOTH factors greater than 14, the product would be at least 15 × 15 = 225, and 225 is greater than 209 — there is no such pair; so a composite number has its SMALLER DIVISOR NOT GREATER THAN THE ROOT, and the walk ends there.
+77 = 7 × 11, and the smaller factor is 7: 7 × 7 = 49, and 49 is not greater than 77. Were BOTH factors greater than 8, the product would be at least 9 × 9 = 81, and 81 is greater than 77 — there is no such pair; so a composite number has its SMALLER DIVISOR NOT GREATER THAN THE ROOT, and the walk ends there.
+to learn whether 103 is prime, the divisors to walk are those from 2 to 10, and their number is 9, for 11 × 11 = 121 is greater than 103; a walk up to the number itself would take the divisors from 2 to 102, and their number is 101, and 101 is greater than 9.
+
+to say «91 is not prime», ONE witness is enough: 91 = 7 × 13. To say «59 is prime», there is no witness at all: every divisor from 2 to 7 must be walked, and here they are for 59 — 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no; every try is bound to fail. ONE WITNESS AGAINST A FULL WALK — that is why two answers about one thing cost different labour.
+to say «57 is not prime», ONE witness is enough: 57 = 3 × 19. To say «37 is prime», there is no witness at all: every divisor from 2 to 6 must be walked, and here they are for 37 — 2 — no, 3 — no, 4 — no, 5 — no, 6 — no; every try is bound to fail. ONE WITNESS AGAINST A FULL WALK — that is why two answers about one thing cost different labour.
+to say «33 is not prime», ONE witness is enough: 33 = 3 × 11. To say «17 is prime», there is no witness at all: every divisor from 2 to 4 must be walked, and here they are for 17 — 2 — no, 3 — no, 4 — no; every try is bound to fail. ONE WITNESS AGAINST A FULL WALK — that is why two answers about one thing cost different labour.
+to say «187 is not prime», ONE witness is enough: 187 = 11 × 17. To say «103 is prime», there is no witness at all: every divisor from 2 to 10 must be walked, and here they are for 103 — 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no, 8 — no, 9 — no, 10 — no; every try is bound to fail. ONE WITNESS AGAINST A FULL WALK — that is why two answers about one thing cost different labour.
+to say «121 is not prime», ONE witness is enough: 121 = 11 × 11. To say «79 is prime», there is no witness at all: every divisor from 2 to 8 must be walked, and here they are for 79 — 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no, 8 — no; every try is bound to fail. ONE WITNESS AGAINST A FULL WALK — that is why two answers about one thing cost different labour.
+
+is 37 prime? yes: the walk is 2 — no, 3 — no, 4 — no, 5 — no, 6 — no; not one try succeeded, and there is nothing further to try, for 7 × 7 = 49 is greater than 37.
+is 143 prime? no: 143 = 11 × 13, and one witness is enough.
+is 49 prime? no: 49 = 7 × 7, and one witness is enough.
+is 79 prime? yes: the walk is 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no, 8 — no; not one try succeeded, and there is nothing further to try, for 9 × 9 = 81 is greater than 79.
+is 17 prime? yes: the walk is 2 — no, 3 — no, 4 — no; not one try succeeded, and there is nothing further to try, for 5 × 5 = 25 is greater than 17.
+is 95 prime? no: 95 = 5 × 19, and one witness is enough.
+is 15 prime? no: 15 = 3 × 5, and one witness is enough.
+is 59 prime? yes: the walk is 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no; not one try succeeded, and there is nothing further to try, for 8 × 8 = 64 is greater than 59.
+is 209 prime? no: 209 = 11 × 19, and one witness is enough.
+is 77 prime? no: 77 = 7 × 11, and one witness is enough.
+is 103 prime? yes: the walk is 2 — no, 3 — no, 4 — no, 5 — no, 6 — no, 7 — no, 8 — no, 9 — no, 10 — no; not one try succeeded, and there is nothing further to try, for 11 × 11 = 121 is greater than 103.

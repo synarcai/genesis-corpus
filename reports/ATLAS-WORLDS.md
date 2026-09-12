@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 259 миров, 428317 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 260 миров, 428709 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -448,7 +448,7 @@
 
 ## АКТ «decide» — решить случай: вердикт с основанием рядом
 
-Миров 20, строк 15674.
+Миров 21, строк 16066.
 
 - **`verifyforms`** (3285 строк; recompute, whole_only)  
   **VERIFICATION** — «claim · check · verdict», and the pages where the instrument is OBLIGED to refuse (05.09, the agent architecture, the fourth market): a true claim checked by ANOTHER action cannot be confirmed — the verdict is «not verified», and the gro…
@@ -472,6 +472,8 @@
   **THE DIALOGUE ACT** — the organism's own turn, with confirmation and observation (06.09).
 - **`primes_langs`** (400 строк; recompute, unsigned_only)  
   **PRIME AND COMPOSITE IN EIGHT LANGUAGES (the owner's word: every language in surplus; the numbers world says it in en/ru): «97 ist eine Primzahl; ihre Teiler sind 1 und 97.», «91 ist keine Primzahl: 91 = 7 × 13.», «ist 91 eine Primzahl? nein: 91 ist keine …
+- **`primewalk`** (392 строк; recompute, whole_only, exact_only, finite_explicit_only)  
+  **ОБХОД ПРОСТОТЫ** — СОСТАВНОСТЬ ДОКАЗЫВАЕТСЯ ОДНИМ СВИДЕТЕЛЕМ, ПРОСТОТА — ОБХОДОМ ВСЕХ. Замер 12.09 по третьему десятку свойств: «простота числа» названа в восемнадцати мирах и НИ В ОДНОМ не показана — свод пишет «13 is prime.» и рядом, на той же странице,…
 - **`onestep`** (350 строк; recompute, whole_only, unsigned_only)  
   **ОДНОШАГОВОЕ УРАВНЕНИЕ** — НЕИЗВЕСТНОЕ НАХОДИТСЯ ОБРАТНЫМ ДЕЙСТВИЕМ: чтобы узнать слагаемое, вычитают; чтобы узнать множитель, делят.
 - **`enough`** (324 строк; recompute, exact_only)  
@@ -572,5 +574,5 @@
     ОБЪЯВЛЕНИЕ В ТРИДЦАТЬ ЗНАКОВ НЕ ЛЖЁТ И НЕ ГОВОРИТ: читатель узнаёт имя мира
     и ничего сверх него.
 
-Миров: **0** из 259.
+Миров: **0** из 260.
 
