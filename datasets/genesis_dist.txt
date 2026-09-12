@@ -1,0 +1,429 @@
+расстояние от (10, 24) до (10, 24) — 0, и только до себя оно ноль: до (10, 25) уже 1, ибо 25 − 24 = 1.
+расстояние от (0, 0) до (13, 84) — 85, и от (13, 84) до (0, 0) тоже 85: 13² + 84² = 85².
+расстояние от (0, 0) до (24, 7) — 25, и от (24, 7) до (0, 0) тоже 25: 24² + 7² = 25².
+расстояние от (33, 56) до (33, 56) — 0, и только до себя оно ноль: до (33, 57) уже 1, ибо 57 − 56 = 1.
+расстояние от (0, 0) до (12, 16) — 20, и от (12, 16) до (0, 0) тоже 20: 12² + 16² = 20².
+расстояние от (0, 0) до (60, 11) — 61, и от (60, 11) до (0, 0) тоже 61: 60² + 11² = 61².
+расстояние от (9, 12) до (9, 12) — 0, и только до себя оно ноль: до (9, 13) уже 1, ибо 13 − 12 = 1.
+расстояние от (0, 0) до (24, 32) — 40, и от (24, 32) до (0, 0) тоже 40: 24² + 32² = 40².
+расстояние от (0, 0) до (8, 6) — 10, и от (8, 6) до (0, 0) тоже 10: 8² + 6² = 10².
+расстояние от (18, 24) до (18, 24) — 0, и только до себя оно ноль: до (18, 25) уже 1, ибо 25 − 24 = 1.
+расстояние от (0, 0) до (3, 4) — 5, и от (3, 4) до (0, 0) тоже 5: 3² + 4² = 5².
+расстояние от (0, 0) до (35, 12) — 37, и от (35, 12) до (0, 0) тоже 37: 35² + 12² = 37².
+расстояние от (65, 72) до (65, 72) — 0, и только до себя оно ноль: до (65, 73) уже 1, ибо 73 − 72 = 1.
+расстояние от (0, 0) до (9, 40) — 41, и от (9, 40) до (0, 0) тоже 41: 9² + 40² = 41².
+расстояние от (0, 0) до (77, 36) — 85, и от (77, 36) до (0, 0) тоже 85: 77² + 36² = 85².
+
+и через другой угол не короче: от (0, 0) до (10, 24) прямо 26, а через (0, 24) — 24 + 10 = 34, и 34 больше 26.
+путь через третью точку не короче прямого: от (0, 0) до (13, 84) прямо 85, а через (13, 0) — 13 + 84 = 97, и 97 больше 85.
+а когда третья точка лежит НА пути, путь равен прямому: от (0, 0) до (14, 48) прямо 50, а через (7, 24) — 25 + 25 = 50.
+и через другой угол не короче: от (0, 0) до (33, 56) прямо 65, а через (0, 56) — 56 + 33 = 89, и 89 больше 65.
+путь через третью точку не короче прямого: от (0, 0) до (12, 16) прямо 20, а через (12, 0) — 12 + 16 = 28, и 28 больше 20.
+а когда третья точка лежит НА пути, путь равен прямому: от (0, 0) до (22, 120) прямо 122, а через (11, 60) — 61 + 61 = 122.
+и через другой угол не короче: от (0, 0) до (9, 12) прямо 15, а через (0, 12) — 12 + 9 = 21, и 21 больше 15.
+путь через третью точку не короче прямого: от (0, 0) до (24, 32) прямо 40, а через (24, 0) — 24 + 32 = 56, и 56 больше 40.
+а когда третья точка лежит НА пути, путь равен прямому: от (0, 0) до (12, 16) прямо 20, а через (6, 8) — 10 + 10 = 20.
+и через другой угол не короче: от (0, 0) до (18, 24) прямо 30, а через (0, 24) — 24 + 18 = 42, и 42 больше 30.
+путь через третью точку не короче прямого: от (0, 0) до (3, 4) прямо 5, а через (3, 0) — 3 + 4 = 7, и 7 больше 5.
+а когда третья точка лежит НА пути, путь равен прямому: от (0, 0) до (24, 70) прямо 74, а через (12, 35) — 37 + 37 = 74.
+и через другой угол не короче: от (0, 0) до (65, 72) прямо 97, а через (0, 72) — 72 + 65 = 137, и 137 больше 97.
+путь через третью точку не короче прямого: от (0, 0) до (9, 40) прямо 41, а через (9, 0) — 9 + 40 = 49, и 49 больше 41.
+а когда третья точка лежит НА пути, путь равен прямому: от (0, 0) до (72, 154) прямо 170, а через (36, 77) — 85 + 85 = 170.
+
+каково расстояние от (0, 0) до (30, 16)? 34, ибо 30² + 16² = 34².
+каково расстояние от (0, 0) до (12, 16)? 20, ибо 12² + 16² = 20².
+каково расстояние от (0, 0) до (80, 39)? 89, ибо 80² + 39² = 89².
+каково расстояние от (0, 0) до (24, 32)? 40, ибо 24² + 32² = 40².
+каково расстояние от (0, 0) до (21, 20)? 29, ибо 21² + 20² = 29².
+каково расстояние от (0, 0) до (3, 4)? 5, ибо 3² + 4² = 5².
+каково расстояние от (0, 0) до (45, 28)? 53, ибо 45² + 28² = 53².
+каково расстояние от (0, 0) до (9, 40)? 41, ибо 9² + 40² = 41².
+каково расстояние от (0, 0) до (12, 5)? 13, ибо 12² + 5² = 13².
+каково расстояние от (0, 0) до (13, 84)? 85, ибо 13² + 84² = 85².
+
+the distance from (10, 24) to (10, 24) is 0, and only to itself it is zero: to (10, 25) it is already 1, for 25 − 24 = 1.
+the distance from (0, 0) to (13, 84) is 85, and from (13, 84) to (0, 0) it is 85 as well: 13² + 84² = 85².
+the distance from (0, 0) to (24, 7) is 25, and from (24, 7) to (0, 0) it is 25 as well: 24² + 7² = 25².
+the distance from (33, 56) to (33, 56) is 0, and only to itself it is zero: to (33, 57) it is already 1, for 57 − 56 = 1.
+the distance from (0, 0) to (12, 16) is 20, and from (12, 16) to (0, 0) it is 20 as well: 12² + 16² = 20².
+the distance from (0, 0) to (60, 11) is 61, and from (60, 11) to (0, 0) it is 61 as well: 60² + 11² = 61².
+the distance from (9, 12) to (9, 12) is 0, and only to itself it is zero: to (9, 13) it is already 1, for 13 − 12 = 1.
+the distance from (0, 0) to (24, 32) is 40, and from (24, 32) to (0, 0) it is 40 as well: 24² + 32² = 40².
+the distance from (0, 0) to (8, 6) is 10, and from (8, 6) to (0, 0) it is 10 as well: 8² + 6² = 10².
+the distance from (18, 24) to (18, 24) is 0, and only to itself it is zero: to (18, 25) it is already 1, for 25 − 24 = 1.
+the distance from (0, 0) to (3, 4) is 5, and from (3, 4) to (0, 0) it is 5 as well: 3² + 4² = 5².
+the distance from (0, 0) to (35, 12) is 37, and from (35, 12) to (0, 0) it is 37 as well: 35² + 12² = 37².
+the distance from (65, 72) to (65, 72) is 0, and only to itself it is zero: to (65, 73) it is already 1, for 73 − 72 = 1.
+the distance from (0, 0) to (9, 40) is 41, and from (9, 40) to (0, 0) it is 41 as well: 9² + 40² = 41².
+the distance from (0, 0) to (77, 36) is 85, and from (77, 36) to (0, 0) it is 85 as well: 77² + 36² = 85².
+
+and through the other corner it is not shorter either: from (0, 0) to (10, 24) straight is 26, and through (0, 24) it is 24 + 10 = 34, and 34 is greater than 26.
+a way through a third point is not shorter than the straight one: from (0, 0) to (13, 84) straight is 85, and through (13, 0) it is 13 + 84 = 97, and 97 is greater than 85.
+and when the third point lies ON the way, the way equals the straight one: from (0, 0) to (14, 48) straight is 50, and through (7, 24) it is 25 + 25 = 50.
+and through the other corner it is not shorter either: from (0, 0) to (33, 56) straight is 65, and through (0, 56) it is 56 + 33 = 89, and 89 is greater than 65.
+a way through a third point is not shorter than the straight one: from (0, 0) to (12, 16) straight is 20, and through (12, 0) it is 12 + 16 = 28, and 28 is greater than 20.
+and when the third point lies ON the way, the way equals the straight one: from (0, 0) to (22, 120) straight is 122, and through (11, 60) it is 61 + 61 = 122.
+and through the other corner it is not shorter either: from (0, 0) to (9, 12) straight is 15, and through (0, 12) it is 12 + 9 = 21, and 21 is greater than 15.
+a way through a third point is not shorter than the straight one: from (0, 0) to (24, 32) straight is 40, and through (24, 0) it is 24 + 32 = 56, and 56 is greater than 40.
+and when the third point lies ON the way, the way equals the straight one: from (0, 0) to (12, 16) straight is 20, and through (6, 8) it is 10 + 10 = 20.
+and through the other corner it is not shorter either: from (0, 0) to (18, 24) straight is 30, and through (0, 24) it is 24 + 18 = 42, and 42 is greater than 30.
+a way through a third point is not shorter than the straight one: from (0, 0) to (3, 4) straight is 5, and through (3, 0) it is 3 + 4 = 7, and 7 is greater than 5.
+and when the third point lies ON the way, the way equals the straight one: from (0, 0) to (24, 70) straight is 74, and through (12, 35) it is 37 + 37 = 74.
+and through the other corner it is not shorter either: from (0, 0) to (65, 72) straight is 97, and through (0, 72) it is 72 + 65 = 137, and 137 is greater than 97.
+a way through a third point is not shorter than the straight one: from (0, 0) to (9, 40) straight is 41, and through (9, 0) it is 9 + 40 = 49, and 49 is greater than 41.
+and when the third point lies ON the way, the way equals the straight one: from (0, 0) to (72, 154) straight is 170, and through (36, 77) it is 85 + 85 = 170.
+
+what is the distance from (0, 0) to (30, 16)? 34, for 30² + 16² = 34².
+what is the distance from (0, 0) to (12, 16)? 20, for 12² + 16² = 20².
+what is the distance from (0, 0) to (80, 39)? 89, for 80² + 39² = 89².
+what is the distance from (0, 0) to (24, 32)? 40, for 24² + 32² = 40².
+what is the distance from (0, 0) to (21, 20)? 29, for 21² + 20² = 29².
+what is the distance from (0, 0) to (3, 4)? 5, for 3² + 4² = 5².
+what is the distance from (0, 0) to (45, 28)? 53, for 45² + 28² = 53².
+what is the distance from (0, 0) to (9, 40)? 41, for 9² + 40² = 41².
+what is the distance from (0, 0) to (12, 5)? 13, for 12² + 5² = 13².
+what is the distance from (0, 0) to (13, 84)? 85, for 13² + 84² = 85².
+
+расстояние от (0, 0) до (12, 9) — 15, и от (12, 9) до (0, 0) тоже 15: 12² + 9² = 15².
+расстояние от (0, 0) до (39, 80) — 89, и от (39, 80) до (0, 0) тоже 89: 39² + 80² = 89².
+расстояние от (24, 32) до (24, 32) — 0, и только до себя оно ноль: до (24, 33) уже 1, ибо 33 − 32 = 1.
+расстояние от (0, 0) до (24, 10) — 26, и от (24, 10) до (0, 0) тоже 26: 24² + 10² = 26².
+расстояние от (0, 0) до (5, 12) — 13, и от (5, 12) до (0, 0) тоже 13: 5² + 12² = 13².
+расстояние от (13, 84) до (13, 84) — 0, и только до себя оно ноль: до (13, 85) уже 1, ибо 85 − 84 = 1.
+расстояние от (0, 0) до (24, 18) — 30, и от (24, 18) до (0, 0) тоже 30: 24² + 18² = 30².
+расстояние от (0, 0) до (20, 21) — 29, и от (20, 21) до (0, 0) тоже 29: 20² + 21² = 29².
+расстояние от (3, 4) до (3, 4) — 0, и только до себя оно ноль: до (3, 5) уже 1, ибо 5 − 4 = 1.
+расстояние от (0, 0) до (56, 33) — 65, и от (56, 33) до (0, 0) тоже 65: 56² + 33² = 65².
+расстояние от (0, 0) до (16, 30) — 34, и от (16, 30) до (0, 0) тоже 34: 16² + 30² = 34².
+расстояние от (12, 16) до (12, 16) — 0, и только до себя оно ноль: до (12, 17) уже 1, ибо 17 − 16 = 1.
+расстояние от (0, 0) до (72, 65) — 97, и от (72, 65) до (0, 0) тоже 97: 72² + 65² = 97².
+расстояние от (0, 0) до (28, 45) — 53, и от (28, 45) до (0, 0) тоже 53: 28² + 45² = 53².
+расстояние от (9, 40) до (9, 40) — 0, и только до себя оно ноль: до (9, 41) уже 1, ибо 41 − 40 = 1.
+
+а когда третья точка лежит НА пути, путь равен прямому: от (0, 0) до (18, 24) прямо 30, а через (9, 12) — 15 + 15 = 30.
+путь через третью точку не короче прямого: от (0, 0) до (39, 80) прямо 89, а через (39, 0) — 39 + 80 = 119, и 119 больше 89.
+и через другой угол не короче: от (0, 0) до (24, 32) прямо 40, а через (0, 32) — 32 + 24 = 56, и 56 больше 40.
+а когда третья точка лежит НА пути, путь равен прямому: от (0, 0) до (20, 48) прямо 52, а через (10, 24) — 26 + 26 = 52.
+путь через третью точку не короче прямого: от (0, 0) до (5, 12) прямо 13, а через (5, 0) — 5 + 12 = 17, и 17 больше 13.
+и через другой угол не короче: от (0, 0) до (13, 84) прямо 85, а через (0, 84) — 84 + 13 = 97, и 97 больше 85.
+а когда третья точка лежит НА пути, путь равен прямому: от (0, 0) до (36, 48) прямо 60, а через (18, 24) — 30 + 30 = 60.
+путь через третью точку не короче прямого: от (0, 0) до (20, 21) прямо 29, а через (20, 0) — 20 + 21 = 41, и 41 больше 29.
+и через другой угол не короче: от (0, 0) до (3, 4) прямо 5, а через (0, 4) — 4 + 3 = 7, и 7 больше 5.
+а когда третья точка лежит НА пути, путь равен прямому: от (0, 0) до (66, 112) прямо 130, а через (33, 56) — 65 + 65 = 130.
+путь через третью точку не короче прямого: от (0, 0) до (16, 30) прямо 34, а через (16, 0) — 16 + 30 = 46, и 46 больше 34.
+и через другой угол не короче: от (0, 0) до (12, 16) прямо 20, а через (0, 16) — 16 + 12 = 28, и 28 больше 20.
+а когда третья точка лежит НА пути, путь равен прямому: от (0, 0) до (130, 144) прямо 194, а через (65, 72) — 97 + 97 = 194.
+путь через третью точку не короче прямого: от (0, 0) до (28, 45) прямо 53, а через (28, 0) — 28 + 45 = 73, и 73 больше 53.
+и через другой угол не короче: от (0, 0) до (9, 40) прямо 41, а через (0, 40) — 40 + 9 = 49, и 49 больше 41.
+
+каково расстояние от (0, 0) до (16, 12)? 20, ибо 16² + 12² = 20².
+каково расстояние от (0, 0) до (10, 24)? 26, ибо 10² + 24² = 26².
+каково расстояние от (0, 0) до (40, 9)? 41, ибо 40² + 9² = 41².
+каково расстояние от (0, 0) до (18, 24)? 30, ибо 18² + 24² = 30².
+каково расстояние от (0, 0) до (32, 24)? 40, ибо 32² + 24² = 40².
+каково расстояние от (0, 0) до (33, 56)? 65, ибо 33² + 56² = 65².
+каково расстояние от (0, 0) до (84, 13)? 85, ибо 84² + 13² = 85².
+каково расстояние от (0, 0) до (65, 72)? 97, ибо 65² + 72² = 97².
+каково расстояние от (0, 0) до (4, 3)? 5, ибо 4² + 3² = 5².
+каково расстояние от (0, 0) до (9, 12)? 15, ибо 9² + 12² = 15².
+
+the distance from (0, 0) to (12, 9) is 15, and from (12, 9) to (0, 0) it is 15 as well: 12² + 9² = 15².
+the distance from (0, 0) to (39, 80) is 89, and from (39, 80) to (0, 0) it is 89 as well: 39² + 80² = 89².
+the distance from (24, 32) to (24, 32) is 0, and only to itself it is zero: to (24, 33) it is already 1, for 33 − 32 = 1.
+the distance from (0, 0) to (24, 10) is 26, and from (24, 10) to (0, 0) it is 26 as well: 24² + 10² = 26².
+the distance from (0, 0) to (5, 12) is 13, and from (5, 12) to (0, 0) it is 13 as well: 5² + 12² = 13².
+the distance from (13, 84) to (13, 84) is 0, and only to itself it is zero: to (13, 85) it is already 1, for 85 − 84 = 1.
+the distance from (0, 0) to (24, 18) is 30, and from (24, 18) to (0, 0) it is 30 as well: 24² + 18² = 30².
+the distance from (0, 0) to (20, 21) is 29, and from (20, 21) to (0, 0) it is 29 as well: 20² + 21² = 29².
+the distance from (3, 4) to (3, 4) is 0, and only to itself it is zero: to (3, 5) it is already 1, for 5 − 4 = 1.
+the distance from (0, 0) to (56, 33) is 65, and from (56, 33) to (0, 0) it is 65 as well: 56² + 33² = 65².
+the distance from (0, 0) to (16, 30) is 34, and from (16, 30) to (0, 0) it is 34 as well: 16² + 30² = 34².
+the distance from (12, 16) to (12, 16) is 0, and only to itself it is zero: to (12, 17) it is already 1, for 17 − 16 = 1.
+the distance from (0, 0) to (72, 65) is 97, and from (72, 65) to (0, 0) it is 97 as well: 72² + 65² = 97².
+the distance from (0, 0) to (28, 45) is 53, and from (28, 45) to (0, 0) it is 53 as well: 28² + 45² = 53².
+the distance from (9, 40) to (9, 40) is 0, and only to itself it is zero: to (9, 41) it is already 1, for 41 − 40 = 1.
+
+and when the third point lies ON the way, the way equals the straight one: from (0, 0) to (18, 24) straight is 30, and through (9, 12) it is 15 + 15 = 30.
+a way through a third point is not shorter than the straight one: from (0, 0) to (39, 80) straight is 89, and through (39, 0) it is 39 + 80 = 119, and 119 is greater than 89.
+and through the other corner it is not shorter either: from (0, 0) to (24, 32) straight is 40, and through (0, 32) it is 32 + 24 = 56, and 56 is greater than 40.
+and when the third point lies ON the way, the way equals the straight one: from (0, 0) to (20, 48) straight is 52, and through (10, 24) it is 26 + 26 = 52.
+a way through a third point is not shorter than the straight one: from (0, 0) to (5, 12) straight is 13, and through (5, 0) it is 5 + 12 = 17, and 17 is greater than 13.
+and through the other corner it is not shorter either: from (0, 0) to (13, 84) straight is 85, and through (0, 84) it is 84 + 13 = 97, and 97 is greater than 85.
+and when the third point lies ON the way, the way equals the straight one: from (0, 0) to (36, 48) straight is 60, and through (18, 24) it is 30 + 30 = 60.
+a way through a third point is not shorter than the straight one: from (0, 0) to (20, 21) straight is 29, and through (20, 0) it is 20 + 21 = 41, and 41 is greater than 29.
+and through the other corner it is not shorter either: from (0, 0) to (3, 4) straight is 5, and through (0, 4) it is 4 + 3 = 7, and 7 is greater than 5.
+and when the third point lies ON the way, the way equals the straight one: from (0, 0) to (66, 112) straight is 130, and through (33, 56) it is 65 + 65 = 130.
+a way through a third point is not shorter than the straight one: from (0, 0) to (16, 30) straight is 34, and through (16, 0) it is 16 + 30 = 46, and 46 is greater than 34.
+and through the other corner it is not shorter either: from (0, 0) to (12, 16) straight is 20, and through (0, 16) it is 16 + 12 = 28, and 28 is greater than 20.
+and when the third point lies ON the way, the way equals the straight one: from (0, 0) to (130, 144) straight is 194, and through (65, 72) it is 97 + 97 = 194.
+a way through a third point is not shorter than the straight one: from (0, 0) to (28, 45) straight is 53, and through (28, 0) it is 28 + 45 = 73, and 73 is greater than 53.
+and through the other corner it is not shorter either: from (0, 0) to (9, 40) straight is 41, and through (0, 40) it is 40 + 9 = 49, and 49 is greater than 41.
+
+what is the distance from (0, 0) to (16, 12)? 20, for 16² + 12² = 20².
+what is the distance from (0, 0) to (10, 24)? 26, for 10² + 24² = 26².
+what is the distance from (0, 0) to (40, 9)? 41, for 40² + 9² = 41².
+what is the distance from (0, 0) to (18, 24)? 30, for 18² + 24² = 30².
+what is the distance from (0, 0) to (32, 24)? 40, for 32² + 24² = 40².
+what is the distance from (0, 0) to (33, 56)? 65, for 33² + 56² = 65².
+what is the distance from (0, 0) to (84, 13)? 85, for 84² + 13² = 85².
+what is the distance from (0, 0) to (65, 72)? 97, for 65² + 72² = 97².
+what is the distance from (0, 0) to (4, 3)? 5, for 4² + 3² = 5².
+what is the distance from (0, 0) to (9, 12)? 15, for 9² + 12² = 15².
+
+расстояние от (0, 0) до (32, 24) — 40, и от (32, 24) до (0, 0) тоже 40: 32² + 24² = 40².
+расстояние от (16, 30) до (16, 30) — 0, и только до себя оно ноль: до (16, 31) уже 1, ибо 31 − 30 = 1.
+расстояние от (0, 0) до (15, 20) — 25, и от (15, 20) до (0, 0) тоже 25: 15² + 20² = 25².
+расстояние от (0, 0) до (16, 12) — 20, и от (16, 12) до (0, 0) тоже 20: 16² + 12² = 20².
+расстояние от (5, 12) до (5, 12) — 0, и только до себя оно ноль: до (5, 13) уже 1, ибо 13 − 12 = 1.
+расстояние от (0, 0) до (20, 48) — 52, и от (20, 48) до (0, 0) тоже 52: 20² + 48² = 52².
+расстояние от (0, 0) до (84, 13) — 85, и от (84, 13) до (0, 0) тоже 85: 84² + 13² = 85².
+расстояние от (28, 45) до (28, 45) — 0, и только до себя оно ноль: до (28, 46) уже 1, ибо 46 − 45 = 1.
+расстояние от (0, 0) до (21, 28) — 35, и от (21, 28) до (0, 0) тоже 35: 21² + 28² = 35².
+расстояние от (0, 0) до (40, 9) — 41, и от (40, 9) до (0, 0) тоже 41: 40² + 9² = 41².
+расстояние от (20, 21) до (20, 21) — 0, и только до себя оно ноль: до (20, 22) уже 1, ибо 22 − 21 = 1.
+расстояние от (0, 0) до (8, 15) — 17, и от (8, 15) до (0, 0) тоже 17: 8² + 15² = 17².
+расстояние от (0, 0) до (4, 3) — 5, и от (4, 3) до (0, 0) тоже 5: 4² + 3² = 5².
+расстояние от (39, 80) до (39, 80) — 0, и только до себя оно ноль: до (39, 81) уже 1, ибо 81 − 80 = 1.
+расстояние от (0, 0) до (16, 63) — 65, и от (16, 63) до (0, 0) тоже 65: 16² + 63² = 65².
+
+а когда третья точка лежит НА пути, путь равен прямому: от (0, 0) до (48, 64) прямо 80, а через (24, 32) — 40 + 40 = 80.
+и через другой угол не короче: от (0, 0) до (16, 30) прямо 34, а через (0, 30) — 30 + 16 = 46, и 46 больше 34.
+путь через третью точку не короче прямого: от (0, 0) до (15, 20) прямо 25, а через (15, 0) — 15 + 20 = 35, и 35 больше 25.
+а когда третья точка лежит НА пути, путь равен прямому: от (0, 0) до (24, 32) прямо 40, а через (12, 16) — 20 + 20 = 40.
+и через другой угол не короче: от (0, 0) до (5, 12) прямо 13, а через (0, 12) — 12 + 5 = 17, и 17 больше 13.
+путь через третью точку не короче прямого: от (0, 0) до (20, 48) прямо 52, а через (20, 0) — 20 + 48 = 68, и 68 больше 52.
+а когда третья точка лежит НА пути, путь равен прямому: от (0, 0) до (26, 168) прямо 170, а через (13, 84) — 85 + 85 = 170.
+и через другой угол не короче: от (0, 0) до (28, 45) прямо 53, а через (0, 45) — 45 + 28 = 73, и 73 больше 53.
+путь через третью точку не короче прямого: от (0, 0) до (21, 28) прямо 35, а через (21, 0) — 21 + 28 = 49, и 49 больше 35.
+а когда третья точка лежит НА пути, путь равен прямому: от (0, 0) до (18, 80) прямо 82, а через (9, 40) — 41 + 41 = 82.
+и через другой угол не короче: от (0, 0) до (20, 21) прямо 29, а через (0, 21) — 21 + 20 = 41, и 41 больше 29.
+путь через третью точку не короче прямого: от (0, 0) до (8, 15) прямо 17, а через (8, 0) — 8 + 15 = 23, и 23 больше 17.
+а когда третья точка лежит НА пути, путь равен прямому: от (0, 0) до (6, 8) прямо 10, а через (3, 4) — 5 + 5 = 10.
+и через другой угол не короче: от (0, 0) до (39, 80) прямо 89, а через (0, 80) — 80 + 39 = 119, и 119 больше 89.
+путь через третью точку не короче прямого: от (0, 0) до (16, 63) прямо 65, а через (16, 0) — 16 + 63 = 79, и 79 больше 65.
+
+каково расстояние от (0, 0) до (72, 65)? 97, ибо 72² + 65² = 97².
+каково расстояние от (0, 0) до (7, 24)? 25, ибо 7² + 24² = 25².
+каково расстояние от (0, 0) до (24, 18)? 30, ибо 24² + 18² = 30².
+каково расстояние от (0, 0) до (36, 77)? 85, ибо 36² + 77² = 85².
+каково расстояние от (0, 0) до (12, 9)? 15, ибо 12² + 9² = 15².
+каково расстояние от (0, 0) до (12, 35)? 37, ибо 12² + 35² = 37².
+каково расстояние от (0, 0) до (56, 33)? 65, ибо 56² + 33² = 65².
+каково расстояние от (0, 0) до (6, 8)? 10, ибо 6² + 8² = 10².
+каково расстояние от (0, 0) до (24, 10)? 26, ибо 24² + 10² = 26².
+каково расстояние от (0, 0) до (11, 60)? 61, ибо 11² + 60² = 61².
+
+the distance from (0, 0) to (32, 24) is 40, and from (32, 24) to (0, 0) it is 40 as well: 32² + 24² = 40².
+the distance from (16, 30) to (16, 30) is 0, and only to itself it is zero: to (16, 31) it is already 1, for 31 − 30 = 1.
+the distance from (0, 0) to (15, 20) is 25, and from (15, 20) to (0, 0) it is 25 as well: 15² + 20² = 25².
+the distance from (0, 0) to (16, 12) is 20, and from (16, 12) to (0, 0) it is 20 as well: 16² + 12² = 20².
+the distance from (5, 12) to (5, 12) is 0, and only to itself it is zero: to (5, 13) it is already 1, for 13 − 12 = 1.
+the distance from (0, 0) to (20, 48) is 52, and from (20, 48) to (0, 0) it is 52 as well: 20² + 48² = 52².
+the distance from (0, 0) to (84, 13) is 85, and from (84, 13) to (0, 0) it is 85 as well: 84² + 13² = 85².
+the distance from (28, 45) to (28, 45) is 0, and only to itself it is zero: to (28, 46) it is already 1, for 46 − 45 = 1.
+the distance from (0, 0) to (21, 28) is 35, and from (21, 28) to (0, 0) it is 35 as well: 21² + 28² = 35².
+the distance from (0, 0) to (40, 9) is 41, and from (40, 9) to (0, 0) it is 41 as well: 40² + 9² = 41².
+the distance from (20, 21) to (20, 21) is 0, and only to itself it is zero: to (20, 22) it is already 1, for 22 − 21 = 1.
+the distance from (0, 0) to (8, 15) is 17, and from (8, 15) to (0, 0) it is 17 as well: 8² + 15² = 17².
+the distance from (0, 0) to (4, 3) is 5, and from (4, 3) to (0, 0) it is 5 as well: 4² + 3² = 5².
+the distance from (39, 80) to (39, 80) is 0, and only to itself it is zero: to (39, 81) it is already 1, for 81 − 80 = 1.
+the distance from (0, 0) to (16, 63) is 65, and from (16, 63) to (0, 0) it is 65 as well: 16² + 63² = 65².
+
+and when the third point lies ON the way, the way equals the straight one: from (0, 0) to (48, 64) straight is 80, and through (24, 32) it is 40 + 40 = 80.
+and through the other corner it is not shorter either: from (0, 0) to (16, 30) straight is 34, and through (0, 30) it is 30 + 16 = 46, and 46 is greater than 34.
+a way through a third point is not shorter than the straight one: from (0, 0) to (15, 20) straight is 25, and through (15, 0) it is 15 + 20 = 35, and 35 is greater than 25.
+and when the third point lies ON the way, the way equals the straight one: from (0, 0) to (24, 32) straight is 40, and through (12, 16) it is 20 + 20 = 40.
+and through the other corner it is not shorter either: from (0, 0) to (5, 12) straight is 13, and through (0, 12) it is 12 + 5 = 17, and 17 is greater than 13.
+a way through a third point is not shorter than the straight one: from (0, 0) to (20, 48) straight is 52, and through (20, 0) it is 20 + 48 = 68, and 68 is greater than 52.
+and when the third point lies ON the way, the way equals the straight one: from (0, 0) to (26, 168) straight is 170, and through (13, 84) it is 85 + 85 = 170.
+and through the other corner it is not shorter either: from (0, 0) to (28, 45) straight is 53, and through (0, 45) it is 45 + 28 = 73, and 73 is greater than 53.
+a way through a third point is not shorter than the straight one: from (0, 0) to (21, 28) straight is 35, and through (21, 0) it is 21 + 28 = 49, and 49 is greater than 35.
+and when the third point lies ON the way, the way equals the straight one: from (0, 0) to (18, 80) straight is 82, and through (9, 40) it is 41 + 41 = 82.
+and through the other corner it is not shorter either: from (0, 0) to (20, 21) straight is 29, and through (0, 21) it is 21 + 20 = 41, and 41 is greater than 29.
+a way through a third point is not shorter than the straight one: from (0, 0) to (8, 15) straight is 17, and through (8, 0) it is 8 + 15 = 23, and 23 is greater than 17.
+and when the third point lies ON the way, the way equals the straight one: from (0, 0) to (6, 8) straight is 10, and through (3, 4) it is 5 + 5 = 10.
+and through the other corner it is not shorter either: from (0, 0) to (39, 80) straight is 89, and through (0, 80) it is 80 + 39 = 119, and 119 is greater than 89.
+a way through a third point is not shorter than the straight one: from (0, 0) to (16, 63) straight is 65, and through (16, 0) it is 16 + 63 = 79, and 79 is greater than 65.
+
+what is the distance from (0, 0) to (72, 65)? 97, for 72² + 65² = 97².
+what is the distance from (0, 0) to (7, 24)? 25, for 7² + 24² = 25².
+what is the distance from (0, 0) to (24, 18)? 30, for 24² + 18² = 30².
+what is the distance from (0, 0) to (36, 77)? 85, for 36² + 77² = 85².
+what is the distance from (0, 0) to (12, 9)? 15, for 12² + 9² = 15².
+what is the distance from (0, 0) to (12, 35)? 37, for 12² + 35² = 37².
+what is the distance from (0, 0) to (56, 33)? 65, for 56² + 33² = 65².
+what is the distance from (0, 0) to (6, 8)? 10, for 6² + 8² = 10².
+what is the distance from (0, 0) to (24, 10)? 26, for 24² + 10² = 26².
+what is the distance from (0, 0) to (11, 60)? 61, for 11² + 60² = 61².
+
+расстояние от (0, 0) до (21, 20) — 29, и от (21, 20) до (0, 0) тоже 29: 21² + 20² = 29².
+расстояние от (0, 0) до (12, 35) — 37, и от (12, 35) до (0, 0) тоже 37: 12² + 35² = 37².
+расстояние от (21, 28) до (21, 28) — 0, и только до себя оно ноль: до (21, 29) уже 1, ибо 29 − 28 = 1.
+расстояние от (0, 0) до (45, 28) — 53, и от (45, 28) до (0, 0) тоже 53: 45² + 28² = 53².
+расстояние от (0, 0) до (36, 77) — 85, и от (36, 77) до (0, 0) тоже 85: 36² + 77² = 85².
+расстояние от (20, 48) до (20, 48) — 0, и только до себя оно ноль: до (20, 49) уже 1, ибо 49 − 48 = 1.
+расстояние от (0, 0) до (12, 5) — 13, и от (12, 5) до (0, 0) тоже 13: 12² + 5² = 13².
+расстояние от (0, 0) до (7, 24) — 25, и от (7, 24) до (0, 0) тоже 25: 7² + 24² = 25².
+расстояние от (15, 20) до (15, 20) — 0, и только до себя оно ноль: до (15, 21) уже 1, ибо 21 − 20 = 1.
+расстояние от (0, 0) до (30, 16) — 34, и от (30, 16) до (0, 0) тоже 34: 30² + 16² = 34².
+расстояние от (0, 0) до (11, 60) — 61, и от (11, 60) до (0, 0) тоже 61: 11² + 60² = 61².
+расстояние от (16, 63) до (16, 63) — 0, и только до себя оно ноль: до (16, 64) уже 1, ибо 64 − 63 = 1.
+расстояние от (0, 0) до (80, 39) — 89, и от (80, 39) до (0, 0) тоже 89: 80² + 39² = 89².
+расстояние от (0, 0) до (6, 8) — 10, и от (6, 8) до (0, 0) тоже 10: 6² + 8² = 10².
+расстояние от (8, 15) до (8, 15) — 0, и только до себя оно ноль: до (8, 16) уже 1, ибо 16 − 15 = 1.
+
+а когда третья точка лежит НА пути, путь равен прямому: от (0, 0) до (40, 42) прямо 58, а через (20, 21) — 29 + 29 = 58.
+путь через третью точку не короче прямого: от (0, 0) до (12, 35) прямо 37, а через (12, 0) — 12 + 35 = 47, и 47 больше 37.
+и через другой угол не короче: от (0, 0) до (21, 28) прямо 35, а через (0, 28) — 28 + 21 = 49, и 49 больше 35.
+а когда третья точка лежит НА пути, путь равен прямому: от (0, 0) до (56, 90) прямо 106, а через (28, 45) — 53 + 53 = 106.
+путь через третью точку не короче прямого: от (0, 0) до (36, 77) прямо 85, а через (36, 0) — 36 + 77 = 113, и 113 больше 85.
+и через другой угол не короче: от (0, 0) до (20, 48) прямо 52, а через (0, 48) — 48 + 20 = 68, и 68 больше 52.
+а когда третья точка лежит НА пути, путь равен прямому: от (0, 0) до (10, 24) прямо 26, а через (5, 12) — 13 + 13 = 26.
+путь через третью точку не короче прямого: от (0, 0) до (7, 24) прямо 25, а через (7, 0) — 7 + 24 = 31, и 31 больше 25.
+и через другой угол не короче: от (0, 0) до (15, 20) прямо 25, а через (0, 20) — 20 + 15 = 35, и 35 больше 25.
+а когда третья точка лежит НА пути, путь равен прямому: от (0, 0) до (32, 60) прямо 68, а через (16, 30) — 34 + 34 = 68.
+путь через третью точку не короче прямого: от (0, 0) до (11, 60) прямо 61, а через (11, 0) — 11 + 60 = 71, и 71 больше 61.
+и через другой угол не короче: от (0, 0) до (16, 63) прямо 65, а через (0, 63) — 63 + 16 = 79, и 79 больше 65.
+а когда третья точка лежит НА пути, путь равен прямому: от (0, 0) до (78, 160) прямо 178, а через (39, 80) — 89 + 89 = 178.
+путь через третью точку не короче прямого: от (0, 0) до (6, 8) прямо 10, а через (6, 0) — 6 + 8 = 14, и 14 больше 10.
+и через другой угол не короче: от (0, 0) до (8, 15) прямо 17, а через (0, 15) — 15 + 8 = 23, и 23 больше 17.
+
+каково расстояние от (0, 0) до (35, 12)? 37, ибо 35² + 12² = 37².
+каково расстояние от (0, 0) до (8, 15)? 17, ибо 8² + 15² = 17².
+каково расстояние от (0, 0) до (77, 36)? 85, ибо 77² + 36² = 85².
+каково расстояние от (0, 0) до (21, 28)? 35, ибо 21² + 28² = 35².
+каково расстояние от (0, 0) до (24, 7)? 25, ибо 24² + 7² = 25².
+каково расстояние от (0, 0) до (20, 48)? 52, ибо 20² + 48² = 52².
+каково расстояние от (0, 0) до (60, 11)? 61, ибо 60² + 11² = 61².
+каково расстояние от (0, 0) до (15, 20)? 25, ибо 15² + 20² = 25².
+каково расстояние от (0, 0) до (8, 6)? 10, ибо 8² + 6² = 10².
+каково расстояние от (0, 0) до (16, 63)? 65, ибо 16² + 63² = 65².
+
+the distance from (0, 0) to (21, 20) is 29, and from (21, 20) to (0, 0) it is 29 as well: 21² + 20² = 29².
+the distance from (0, 0) to (12, 35) is 37, and from (12, 35) to (0, 0) it is 37 as well: 12² + 35² = 37².
+the distance from (21, 28) to (21, 28) is 0, and only to itself it is zero: to (21, 29) it is already 1, for 29 − 28 = 1.
+the distance from (0, 0) to (45, 28) is 53, and from (45, 28) to (0, 0) it is 53 as well: 45² + 28² = 53².
+the distance from (0, 0) to (36, 77) is 85, and from (36, 77) to (0, 0) it is 85 as well: 36² + 77² = 85².
+the distance from (20, 48) to (20, 48) is 0, and only to itself it is zero: to (20, 49) it is already 1, for 49 − 48 = 1.
+the distance from (0, 0) to (12, 5) is 13, and from (12, 5) to (0, 0) it is 13 as well: 12² + 5² = 13².
+the distance from (0, 0) to (7, 24) is 25, and from (7, 24) to (0, 0) it is 25 as well: 7² + 24² = 25².
+the distance from (15, 20) to (15, 20) is 0, and only to itself it is zero: to (15, 21) it is already 1, for 21 − 20 = 1.
+the distance from (0, 0) to (30, 16) is 34, and from (30, 16) to (0, 0) it is 34 as well: 30² + 16² = 34².
+the distance from (0, 0) to (11, 60) is 61, and from (11, 60) to (0, 0) it is 61 as well: 11² + 60² = 61².
+the distance from (16, 63) to (16, 63) is 0, and only to itself it is zero: to (16, 64) it is already 1, for 64 − 63 = 1.
+the distance from (0, 0) to (80, 39) is 89, and from (80, 39) to (0, 0) it is 89 as well: 80² + 39² = 89².
+the distance from (0, 0) to (6, 8) is 10, and from (6, 8) to (0, 0) it is 10 as well: 6² + 8² = 10².
+the distance from (8, 15) to (8, 15) is 0, and only to itself it is zero: to (8, 16) it is already 1, for 16 − 15 = 1.
+
+and when the third point lies ON the way, the way equals the straight one: from (0, 0) to (40, 42) straight is 58, and through (20, 21) it is 29 + 29 = 58.
+a way through a third point is not shorter than the straight one: from (0, 0) to (12, 35) straight is 37, and through (12, 0) it is 12 + 35 = 47, and 47 is greater than 37.
+and through the other corner it is not shorter either: from (0, 0) to (21, 28) straight is 35, and through (0, 28) it is 28 + 21 = 49, and 49 is greater than 35.
+and when the third point lies ON the way, the way equals the straight one: from (0, 0) to (56, 90) straight is 106, and through (28, 45) it is 53 + 53 = 106.
+a way through a third point is not shorter than the straight one: from (0, 0) to (36, 77) straight is 85, and through (36, 0) it is 36 + 77 = 113, and 113 is greater than 85.
+and through the other corner it is not shorter either: from (0, 0) to (20, 48) straight is 52, and through (0, 48) it is 48 + 20 = 68, and 68 is greater than 52.
+and when the third point lies ON the way, the way equals the straight one: from (0, 0) to (10, 24) straight is 26, and through (5, 12) it is 13 + 13 = 26.
+a way through a third point is not shorter than the straight one: from (0, 0) to (7, 24) straight is 25, and through (7, 0) it is 7 + 24 = 31, and 31 is greater than 25.
+and through the other corner it is not shorter either: from (0, 0) to (15, 20) straight is 25, and through (0, 20) it is 20 + 15 = 35, and 35 is greater than 25.
+and when the third point lies ON the way, the way equals the straight one: from (0, 0) to (32, 60) straight is 68, and through (16, 30) it is 34 + 34 = 68.
+a way through a third point is not shorter than the straight one: from (0, 0) to (11, 60) straight is 61, and through (11, 0) it is 11 + 60 = 71, and 71 is greater than 61.
+and through the other corner it is not shorter either: from (0, 0) to (16, 63) straight is 65, and through (0, 63) it is 63 + 16 = 79, and 79 is greater than 65.
+and when the third point lies ON the way, the way equals the straight one: from (0, 0) to (78, 160) straight is 178, and through (39, 80) it is 89 + 89 = 178.
+a way through a third point is not shorter than the straight one: from (0, 0) to (6, 8) straight is 10, and through (6, 0) it is 6 + 8 = 14, and 14 is greater than 10.
+and through the other corner it is not shorter either: from (0, 0) to (8, 15) straight is 17, and through (0, 15) it is 15 + 8 = 23, and 23 is greater than 17.
+
+what is the distance from (0, 0) to (35, 12)? 37, for 35² + 12² = 37².
+what is the distance from (0, 0) to (8, 15)? 17, for 8² + 15² = 17².
+what is the distance from (0, 0) to (77, 36)? 85, for 77² + 36² = 85².
+what is the distance from (0, 0) to (21, 28)? 35, for 21² + 28² = 35².
+what is the distance from (0, 0) to (24, 7)? 25, for 24² + 7² = 25².
+what is the distance from (0, 0) to (20, 48)? 52, for 20² + 48² = 52².
+what is the distance from (0, 0) to (60, 11)? 61, for 60² + 11² = 61².
+what is the distance from (0, 0) to (15, 20)? 25, for 15² + 20² = 25².
+what is the distance from (0, 0) to (8, 6)? 10, for 8² + 6² = 10².
+what is the distance from (0, 0) to (16, 63)? 65, for 16² + 63² = 65².
+
+расстояние от (36, 77) до (36, 77) — 0, и только до себя оно ноль: до (36, 78) уже 1, ибо 78 − 77 = 1.
+расстояние от (0, 0) до (9, 12) — 15, и от (9, 12) до (0, 0) тоже 15: 9² + 12² = 15².
+расстояние от (0, 0) до (20, 15) — 25, и от (20, 15) до (0, 0) тоже 25: 20² + 15² = 25².
+расстояние от (11, 60) до (11, 60) — 0, и только до себя оно ноль: до (11, 61) уже 1, ибо 61 − 60 = 1.
+расстояние от (0, 0) до (65, 72) — 97, и от (65, 72) до (0, 0) тоже 97: 65² + 72² = 97².
+расстояние от (0, 0) до (15, 8) — 17, и от (15, 8) до (0, 0) тоже 17: 15² + 8² = 17².
+расстояние от (12, 35) до (12, 35) — 0, и только до себя оно ноль: до (12, 36) уже 1, ибо 36 − 35 = 1.
+расстояние от (0, 0) до (33, 56) — 65, и от (33, 56) до (0, 0) тоже 65: 33² + 56² = 65².
+расстояние от (0, 0) до (48, 20) — 52, и от (48, 20) до (0, 0) тоже 52: 48² + 20² = 52².
+расстояние от (7, 24) до (7, 24) — 0, и только до себя оно ноль: до (7, 25) уже 1, ибо 25 − 24 = 1.
+расстояние от (0, 0) до (18, 24) — 30, и от (18, 24) до (0, 0) тоже 30: 18² + 24² = 30².
+расстояние от (0, 0) до (63, 16) — 65, и от (63, 16) до (0, 0) тоже 65: 63² + 16² = 65².
+расстояние от (6, 8) до (6, 8) — 0, и только до себя оно ноль: до (6, 9) уже 1, ибо 9 − 8 = 1.
+расстояние от (0, 0) до (10, 24) — 26, и от (10, 24) до (0, 0) тоже 26: 10² + 24² = 26².
+расстояние от (0, 0) до (28, 21) — 35, и от (28, 21) до (0, 0) тоже 35: 28² + 21² = 35².
+
+и через другой угол не короче: от (0, 0) до (36, 77) прямо 85, а через (0, 77) — 77 + 36 = 113, и 113 больше 85.
+путь через третью точку не короче прямого: от (0, 0) до (9, 12) прямо 15, а через (9, 0) — 9 + 12 = 21, и 21 больше 15.
+а когда третья точка лежит НА пути, путь равен прямому: от (0, 0) до (30, 40) прямо 50, а через (15, 20) — 25 + 25 = 50.
+и через другой угол не короче: от (0, 0) до (11, 60) прямо 61, а через (0, 60) — 60 + 11 = 71, и 71 больше 61.
+путь через третью точку не короче прямого: от (0, 0) до (65, 72) прямо 97, а через (65, 0) — 65 + 72 = 137, и 137 больше 97.
+а когда третья точка лежит НА пути, путь равен прямому: от (0, 0) до (16, 30) прямо 34, а через (8, 15) — 17 + 17 = 34.
+и через другой угол не короче: от (0, 0) до (12, 35) прямо 37, а через (0, 35) — 35 + 12 = 47, и 47 больше 37.
+путь через третью точку не короче прямого: от (0, 0) до (33, 56) прямо 65, а через (33, 0) — 33 + 56 = 89, и 89 больше 65.
+а когда третья точка лежит НА пути, путь равен прямому: от (0, 0) до (40, 96) прямо 104, а через (20, 48) — 52 + 52 = 104.
+и через другой угол не короче: от (0, 0) до (7, 24) прямо 25, а через (0, 24) — 24 + 7 = 31, и 31 больше 25.
+путь через третью точку не короче прямого: от (0, 0) до (18, 24) прямо 30, а через (18, 0) — 18 + 24 = 42, и 42 больше 30.
+а когда третья точка лежит НА пути, путь равен прямому: от (0, 0) до (32, 126) прямо 130, а через (16, 63) — 65 + 65 = 130.
+и через другой угол не короче: от (0, 0) до (6, 8) прямо 10, а через (0, 8) — 8 + 6 = 14, и 14 больше 10.
+путь через третью точку не короче прямого: от (0, 0) до (10, 24) прямо 26, а через (10, 0) — 10 + 24 = 34, и 34 больше 26.
+а когда третья точка лежит НА пути, путь равен прямому: от (0, 0) до (42, 56) прямо 70, а через (21, 28) — 35 + 35 = 70.
+
+каково расстояние от (0, 0) до (20, 21)? 29, ибо 20² + 21² = 29².
+каково расстояние от (0, 0) до (15, 8)? 17, ибо 15² + 8² = 17².
+каково расстояние от (0, 0) до (5, 12)? 13, ибо 5² + 12² = 13².
+каково расстояние от (0, 0) до (48, 20)? 52, ибо 48² + 20² = 52².
+каково расстояние от (0, 0) до (39, 80)? 89, ибо 39² + 80² = 89².
+каково расстояние от (0, 0) до (63, 16)? 65, ибо 63² + 16² = 65².
+каково расстояние от (0, 0) до (28, 45)? 53, ибо 28² + 45² = 53².
+каково расстояние от (0, 0) до (28, 21)? 35, ибо 28² + 21² = 35².
+каково расстояние от (0, 0) до (16, 30)? 34, ибо 16² + 30² = 34².
+каково расстояние от (0, 0) до (20, 15)? 25, ибо 20² + 15² = 25².
+
+the distance from (36, 77) to (36, 77) is 0, and only to itself it is zero: to (36, 78) it is already 1, for 78 − 77 = 1.
+the distance from (0, 0) to (9, 12) is 15, and from (9, 12) to (0, 0) it is 15 as well: 9² + 12² = 15².
+the distance from (0, 0) to (20, 15) is 25, and from (20, 15) to (0, 0) it is 25 as well: 20² + 15² = 25².
+the distance from (11, 60) to (11, 60) is 0, and only to itself it is zero: to (11, 61) it is already 1, for 61 − 60 = 1.
+the distance from (0, 0) to (65, 72) is 97, and from (65, 72) to (0, 0) it is 97 as well: 65² + 72² = 97².
+the distance from (0, 0) to (15, 8) is 17, and from (15, 8) to (0, 0) it is 17 as well: 15² + 8² = 17².
+the distance from (12, 35) to (12, 35) is 0, and only to itself it is zero: to (12, 36) it is already 1, for 36 − 35 = 1.
+the distance from (0, 0) to (33, 56) is 65, and from (33, 56) to (0, 0) it is 65 as well: 33² + 56² = 65².
+the distance from (0, 0) to (48, 20) is 52, and from (48, 20) to (0, 0) it is 52 as well: 48² + 20² = 52².
+the distance from (7, 24) to (7, 24) is 0, and only to itself it is zero: to (7, 25) it is already 1, for 25 − 24 = 1.
+the distance from (0, 0) to (18, 24) is 30, and from (18, 24) to (0, 0) it is 30 as well: 18² + 24² = 30².
+the distance from (0, 0) to (63, 16) is 65, and from (63, 16) to (0, 0) it is 65 as well: 63² + 16² = 65².
+the distance from (6, 8) to (6, 8) is 0, and only to itself it is zero: to (6, 9) it is already 1, for 9 − 8 = 1.
+the distance from (0, 0) to (10, 24) is 26, and from (10, 24) to (0, 0) it is 26 as well: 10² + 24² = 26².
+the distance from (0, 0) to (28, 21) is 35, and from (28, 21) to (0, 0) it is 35 as well: 28² + 21² = 35².
+
+and through the other corner it is not shorter either: from (0, 0) to (36, 77) straight is 85, and through (0, 77) it is 77 + 36 = 113, and 113 is greater than 85.
+a way through a third point is not shorter than the straight one: from (0, 0) to (9, 12) straight is 15, and through (9, 0) it is 9 + 12 = 21, and 21 is greater than 15.
+and when the third point lies ON the way, the way equals the straight one: from (0, 0) to (30, 40) straight is 50, and through (15, 20) it is 25 + 25 = 50.
+and through the other corner it is not shorter either: from (0, 0) to (11, 60) straight is 61, and through (0, 60) it is 60 + 11 = 71, and 71 is greater than 61.
+a way through a third point is not shorter than the straight one: from (0, 0) to (65, 72) straight is 97, and through (65, 0) it is 65 + 72 = 137, and 137 is greater than 97.
+and when the third point lies ON the way, the way equals the straight one: from (0, 0) to (16, 30) straight is 34, and through (8, 15) it is 17 + 17 = 34.
+and through the other corner it is not shorter either: from (0, 0) to (12, 35) straight is 37, and through (0, 35) it is 35 + 12 = 47, and 47 is greater than 37.
+a way through a third point is not shorter than the straight one: from (0, 0) to (33, 56) straight is 65, and through (33, 0) it is 33 + 56 = 89, and 89 is greater than 65.
+and when the third point lies ON the way, the way equals the straight one: from (0, 0) to (40, 96) straight is 104, and through (20, 48) it is 52 + 52 = 104.
+and through the other corner it is not shorter either: from (0, 0) to (7, 24) straight is 25, and through (0, 24) it is 24 + 7 = 31, and 31 is greater than 25.
+a way through a third point is not shorter than the straight one: from (0, 0) to (18, 24) straight is 30, and through (18, 0) it is 18 + 24 = 42, and 42 is greater than 30.
+and when the third point lies ON the way, the way equals the straight one: from (0, 0) to (32, 126) straight is 130, and through (16, 63) it is 65 + 65 = 130.
+and through the other corner it is not shorter either: from (0, 0) to (6, 8) straight is 10, and through (0, 8) it is 8 + 6 = 14, and 14 is greater than 10.
+a way through a third point is not shorter than the straight one: from (0, 0) to (10, 24) straight is 26, and through (10, 0) it is 10 + 24 = 34, and 34 is greater than 26.
+and when the third point lies ON the way, the way equals the straight one: from (0, 0) to (42, 56) straight is 70, and through (21, 28) it is 35 + 35 = 70.
+
+what is the distance from (0, 0) to (20, 21)? 29, for 20² + 21² = 29².
+what is the distance from (0, 0) to (15, 8)? 17, for 15² + 8² = 17².
+what is the distance from (0, 0) to (5, 12)? 13, for 5² + 12² = 13².
+what is the distance from (0, 0) to (48, 20)? 52, for 48² + 20² = 52².
+what is the distance from (0, 0) to (39, 80)? 89, for 39² + 80² = 89².
+what is the distance from (0, 0) to (63, 16)? 65, for 63² + 16² = 65².
+what is the distance from (0, 0) to (28, 45)? 53, for 28² + 45² = 53².
+what is the distance from (0, 0) to (28, 21)? 35, for 28² + 21² = 35².
+what is the distance from (0, 0) to (16, 30)? 34, for 16² + 30² = 34².
+what is the distance from (0, 0) to (20, 15)? 25, for 20² + 15² = 25².
