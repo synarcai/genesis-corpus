@@ -40,6 +40,7 @@ import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import rugram  # noqa: E402 — счётная форма объявлена пакетом, а не домом
+from plural import by_count, ordinal  # noqa: E402 — английские законы числа и порядка
 
 ЯЗЫКИ = ("ru", "en")
 РОДЫ = ("дни включительно", "столбы и пролёты", "распилы", "этажи и марши", "спрошенное")
@@ -56,7 +57,20 @@ import rugram  # noqa: E402 — счётная форма объявлена п�
 
 
 def _ф(ключ, n, язык, ан):
-    return rugram.форма(ключ, n) if язык == "ru" else (ан if n == 1 else ан + "s")
+    """Счётная форма имени — ОБА языка по своему закону, и ни один по догадке.
+
+    Первая редакция знала русский закон (`rugram.форма`) и склеивала английский как
+    «ан + s»: прибор ПОЛОВИНЧАТЫЙ ЗАКОН назвал дом БЕЗЗАКОННЫМ — ни разу не звавшим
+    `by_count`, — и был прав вдвойне. Склейка «+ s» верна лишь там, где угадала:
+    «piece» → «pieces» да, «foot» → «foots» нет.
+
+        ПРАВОТА, ДЕРЖАЩАЯСЯ НА ТОМ, ЧТО ЖРЕБИЙ НЕ ДАЛ ИСКЛЮЧЕНИЯ, НЕ ЕСТЬ ПРАВОТА —
+        ОНА НЕ ПРОВЕРЕНА.
+
+    Ныне множественное объявлено, а единственное выводит дом числа тем же законом,
+    каким его выводят все прочие дома свода.
+    """
+    return rugram.форма(ключ, n) if язык == "ru" else by_count(n, ан)
 
 
 РАМКИ = {
@@ -75,18 +89,18 @@ def _ф(ключ, n, язык, ан):
                       "{разн}, и {разн} + 1 = {дней}, ибо считаем оба конца.",
     },
     "en": {
-        "дни включительно": "from the {a}th to the {b}th is {дней} days, not {разн}: "
+        "дни включительно": "from the {aп} to the {bп} is {дней} {д}, not {разн}: "
                             "{b} − {a} = {разн} counts the GAPS between days, and the days "
                             "are one more, for both ends are counted. {разн} + 1 = {дней}.",
         "столбы и пролёты": "{n} posts hold {m} spans: one between the first and the second, "
                             "one more between the second and the third, and so to the last — "
                             "{n} − 1 = {m}. THERE IS ONE FEWER SPAN THAN POSTS.",
-        "распилы": "a log was sawn into {n} pieces — there were {m} cuts, not {n}: "
+        "распилы": "a log was sawn into {n} {ч} — there were {m} cuts, not {n}: "
                    "{n} − 1 = {m}. The last piece is parted by the same cut as the one "
                    "before it.",
         "этажи и марши": "from floor 1 to floor {n} there are {m} flights: {n} − 1 = {m}. "
                          "Whoever counts flights as floors will climb one floor too high.",
-        "спрошенное": "how many days are there from the {a}th to the {b}th inclusive? "
+        "спрошенное": "how many {д} are there from the {aп} to the {bп} inclusive? "
                       "{дней}: {b} − {a} = {разн}, and {разн} + 1 = {дней}, for both ends "
                       "are counted.",
     },
@@ -100,18 +114,21 @@ def страницы():
         for a, b in ДНИ:
             разн, дней = b - a, b - a + 1
             общ = dict(a=a, b=b, разн=разн, дней=дней,
-                       д=_ф("день", дней, язык, "day"))
+                       д=_ф("день", дней, язык, "days"),
+                       # ПОРЯДКОВОЕ — ЗАКОНОМ ДОМА ЧИСЛА, А НЕ СКЛЕЙКОЙ «+ th»:
+                       # «3rd», а не «3th»; «11th» вопреки последней цифре.
+                       aп=ordinal(a), bп=ordinal(b))
             вон[рамки["дни включительно"].format(**общ)] = (язык, "дни включительно")
             вон[рамки["спрошенное"].format(**общ)] = (язык, "спрошенное")
         for n in РЯДЫ:
             m = n - 1
             вон[рамки["столбы и пролёты"].format(
-                n=n, m=m, с=_ф("столб", n, язык, "post"),
-                п=_ф("пролёт", m, язык, "span"))] = (язык, "столбы и пролёты")
+                n=n, m=m, с=_ф("столб", n, язык, "posts"),
+                п=_ф("пролёт", m, язык, "spans"))] = (язык, "столбы и пролёты")
             вон[рамки["распилы"].format(
-                n=n, m=m, ч=_ф("часть", n, язык, "piece"))] = (язык, "распилы")
+                n=n, m=m, ч=_ф("часть", n, язык, "pieces"))] = (язык, "распилы")
             вон[рамки["этажи и марши"].format(
-                n=n, m=m, мар=_ф("марш", m, язык, "flight"))] = (язык, "этажи и марши")
+                n=n, m=m, мар=_ф("марш", m, язык, "flights"))] = (язык, "этажи и марши")
     return вон
 
 

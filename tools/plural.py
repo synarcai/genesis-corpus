@@ -70,6 +70,25 @@ def singular(plural):
     return plural[:-1] if plural.endswith("s") else plural
 
 
+def ordinal(n):
+    """Английское порядковое числительное: 1st, 2nd, 3rd, 4th … 21st, 22nd, 23rd.
+
+    ЗАКОН ХВОСТА ЕСТЬ ЗАКОН ДВУХ ПОСЛЕДНИХ ЦИФР, А НЕ ОДНОЙ (12.09). Дом счёта
+    включительно писал «from the 3th to the 7th» — склейкой «+ th», верной для
+    четырёх из каждых десяти чисел и ложной для трёх.
+
+        ХВОСТ, ПРИСТАВЛЕННЫЙ КО ВСЯКОМУ ЧИСЛУ ОДИНАКОВО, ВЕРЕН ЛИШЬ ТАМ, ГДЕ
+        УГАДАЛ; ВТОРОЙ ДЕСЯТОК ОТМЕНЯЕТ ПРАВИЛО ПОСЛЕДНЕЙ ЦИФРЫ.
+
+    Одиннадцать, двенадцать и тринадцать берут «th» вопреки своей последней цифре —
+    ровно как русские «одиннадцать градусов» вопреки «один градус».
+    """
+    n = abs(int(n))
+    if 11 <= n % 100 <= 13:
+        return f"{n}th"
+    return f"{n}{ {1: 'st', 2: 'nd', 3: 'rd'}.get(n % 10, 'th') }".replace(" ", "")
+
+
 def by_count(n, plural):
     """The form a count of `n` takes. One is singular; all else plural
     — including zero, which English counts as plural («0 eggs»)."""

@@ -11,7 +11,7 @@
 сколько дней с 3-го по 7-е включительно? 5: 7 − 3 = 4, и 4 + 1 = 5, ибо считаем оба конца.
 
 from the 14th to the 25th is 12 days, not 11: 25 − 14 = 11 counts the GAPS between days, and the days are one more, for both ends are counted. 11 + 1 = 12.
-from the 3th to the 7th is 5 days, not 4: 7 − 3 = 4 counts the GAPS between days, and the days are one more, for both ends are counted. 4 + 1 = 5.
+from the 3rd to the 7th is 5 days, not 4: 7 − 3 = 4 counts the GAPS between days, and the days are one more, for both ends are counted. 4 + 1 = 5.
 
 5 posts hold 4 spans: one between the first and the second, one more between the second and the third, and so to the last — 5 − 1 = 4. THERE IS ONE FEWER SPAN THAN POSTS.
 a log was sawn into 10 pieces — there were 9 cuts, not 10: 10 − 1 = 9. The last piece is parted by the same cut as the one before it.
@@ -20,7 +20,7 @@ from floor 1 to floor 6 there are 5 flights: 6 − 1 = 5. Whoever counts flights
 4 posts hold 3 spans: one between the first and the second, one more between the second and the third, and so to the last — 4 − 1 = 3. THERE IS ONE FEWER SPAN THAN POSTS.
 
 how many days are there from the 14th to the 25th inclusive? 12: 25 − 14 = 11, and 11 + 1 = 12, for both ends are counted.
-how many days are there from the 3th to the 7th inclusive? 5: 7 − 3 = 4, and 4 + 1 = 5, for both ends are counted.
+how many days are there from the 3rd to the 7th inclusive? 5: 7 − 3 = 4, and 4 + 1 = 5, for both ends are counted.
 
 с 5-го по 12-е — это 8 дней, а не 7: 12 − 5 = 7 считает ПРОМЕЖУТКИ между днями, а дней на один больше, ибо считаем ОБА конца. 7 + 1 = 8.
 
@@ -49,14 +49,14 @@ how many days are there from the 5th to the 12th inclusive? 8: 12 − 5 = 7, and
 
 сколько дней с 1-го по 9-е включительно? 9: 9 − 1 = 8, и 8 + 1 = 9, ибо считаем оба конца.
 
-from the 1th to the 9th is 9 days, not 8: 9 − 1 = 8 counts the GAPS between days, and the days are one more, for both ends are counted. 8 + 1 = 9.
+from the 1st to the 9th is 9 days, not 8: 9 − 1 = 8 counts the GAPS between days, and the days are one more, for both ends are counted. 8 + 1 = 9.
 
 a log was sawn into 8 pieces — there were 7 cuts, not 8: 8 − 1 = 7. The last piece is parted by the same cut as the one before it.
 12 posts hold 11 spans: one between the first and the second, one more between the second and the third, and so to the last — 12 − 1 = 11. THERE IS ONE FEWER SPAN THAN POSTS.
 from floor 1 to floor 4 there are 3 flights: 4 − 1 = 3. Whoever counts flights as floors will climb one floor too high.
 from floor 1 to floor 5 there are 4 flights: 5 − 1 = 4. Whoever counts flights as floors will climb one floor too high.
 
-how many days are there from the 1th to the 9th inclusive? 9: 9 − 1 = 8, and 8 + 1 = 9, for both ends are counted.
+how many days are there from the 1st to the 9th inclusive? 9: 9 − 1 = 8, and 8 + 1 = 9, for both ends are counted.
 
 с 10-го по 20-е — это 11 дней, а не 10: 20 − 10 = 10 считает ПРОМЕЖУТКИ между днями, а дней на один больше, ибо считаем ОБА конца. 10 + 1 = 11.
 
@@ -85,11 +85,11 @@ how many days are there from the 10th to the 20th inclusive? 11: 20 − 10 = 10,
 
 сколько дней с 2-го по 6-е включительно? 5: 6 − 2 = 4, и 4 + 1 = 5, ибо считаем оба конца.
 
-from the 2th to the 6th is 5 days, not 4: 6 − 2 = 4 counts the GAPS between days, and the days are one more, for both ends are counted. 4 + 1 = 5.
+from the 2nd to the 6th is 5 days, not 4: 6 − 2 = 4 counts the GAPS between days, and the days are one more, for both ends are counted. 4 + 1 = 5.
 
 a log was sawn into 6 pieces — there were 5 cuts, not 6: 6 − 1 = 5. The last piece is parted by the same cut as the one before it.
 a log was sawn into 3 pieces — there were 2 cuts, not 3: 3 − 1 = 2. The last piece is parted by the same cut as the one before it.
 from floor 1 to floor 12 there are 11 flights: 12 − 1 = 11. Whoever counts flights as floors will climb one floor too high.
 10 posts hold 9 spans: one between the first and the second, one more between the second and the third, and so to the last — 10 − 1 = 9. THERE IS ONE FEWER SPAN THAN POSTS.
 
-how many days are there from the 2th to the 6th inclusive? 5: 6 − 2 = 4, and 4 + 1 = 5, for both ends are counted.
+how many days are there from the 2nd to the 6th inclusive? 5: 6 − 2 = 4, and 4 + 1 = 5, for both ends are counted.
