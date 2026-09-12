@@ -23,7 +23,7 @@ rebuilt from nothing and re-judged by anyone.
 |---|---|
 | **269 worlds of shows + 207 of prose + 6 mixed** | declared in `datasets/GENESIS-MANIFEST.json`; 71 prose worlds are public-domain books on the shelf (`shelf/`, contract `declarations/SHELF.md`) |
 | **29 languages** | one pack each in `tools/langpacks/`, zero engine edits |
-| **225 courts + 197 instruments** | every line re-executed by a court; the corpus as a whole measured by judgeability, reproducibility, manifest, shelf, band, library, concept reach, mutation catch |
+| **225 courts + 198 instruments** | every line re-executed by a court; the corpus as a whole measured by judgeability, reproducibility, manifest, shelf, band, library, concept reach, mutation catch |
 | **0 lies, 0 blind** | of 428 709 lines across 260 worlds — the last completed reach of the whole panel (`court_reach.py`, ledger 2026-09-12T06:33:16Z) |
 
 These numbers are not written by hand: `scripts/readme_court.py` re-measures every one of them
@@ -41,7 +41,9 @@ itself by instruments whose verdicts are kept in a ledger — see
 the college) and `python3 scripts/crystal.py`. The signs the corpus writes
 with — `×` and not `*`, `−` and not a hyphen, `«»` in every language — are
 declared in `declarations/WRITING.md`, together with the worlds where a
-machine record is the subject and therefore lawful.
+machine record is the subject and therefore lawful. Every report and
+declaration of the corpus is listed in `reports/INDEX.md`, assembled from
+the records themselves by `scripts/reports_index.py`.
 
 The foundations covered: **language** (paradigms shown in frames that
 determine the form, never in tables), **mathematics** (arithmetic,
