@@ -63,10 +63,16 @@ from closedworld import Слой  # noqa: E402 — палата подаёт и�
     r"|the even numbers are countable: (\d+) maps to (\d+), and this "
     r"is a bijection with the naturals)\.$")
 ПРОТИВНОЕ = re.compile(
+    # ИМЯ ХОДА ЕСТЬ ХВОСТ СТРАНИЦЫ, А НЕ ЕЁ ЧАСТЬ (12.09): суд читает рассуждение и
+    # пропускает объявленное имя, ибо имя не пересчитывается — оно объявлено.
     r"^(?:допустим, (\d+) чётно\. тогда (\d+) = 2k для целого k\. но "
     r"(\d+) = 2 × (\d+) \+ (\d+)\. противоречие: (\d+) нечётно"
+    r"(?:\. такой ход зовётся ДОКАЗАТЕЛЬСТВОМ ОТ ПРОТИВНОГО: допущенное "
+    r"привело к противоречию, и потому оно ложно)?"
     r"|suppose (\d+) is even\. then (\d+) = 2k for a whole k\. but "
-    r"(\d+) = 2 × (\d+) \+ (\d+)\. contradiction: (\d+) is odd)\.$")
+    r"(\d+) = 2 × (\d+) \+ (\d+)\. contradiction: (\d+) is odd"
+    r"(?:\. this step is called PROOF BY CONTRADICTION: what was assumed "
+    r"led to a contradiction, and so it is false)?)\.$")
 ИНДУКЦИЯ = re.compile(
     r"^(?:индукция: основание n = 1 верно, шаг от n к n\+1 верен, "
     r"значит верно до n = (\d+); сумма первых (\d+) чисел равна (\d+)"

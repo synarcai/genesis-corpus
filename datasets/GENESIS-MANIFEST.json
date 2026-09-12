@@ -668,7 +668,7 @@
     {
       "name": "infer",
       "file": "datasets/genesis_infer.txt",
-      "genre": "STRICT INFERENCE — modus ponens, modus tollens, and TWO FALLACIES named as fallacies. The map of reasoning forms (reports/REASONING-2026-09-04.md) named modus tollens the corpus's chief debt: the corpus showed the step from premise to consequence and never the step from the denial of the consequence to the denial of the premise. The debt was named together with its condition: build it not on facts of the world («ice is not seen on the surface → ice does not float» is a strict implication the world does not give) but on a row of conditionals each of which is strict. The row chosen is arithmetic, and it is chosen FOR THE ORACLE: «if a number is divisible by 4, it is divisible by 2» is strict by division, not by declaration, and so every show of this world is checked by RECOUNTING — the court knows nothing of what the house meant to say, and catches a swapped number by counting. The last two forms matter more than the first three: «6 is divisible by 2. does it follow that 6 is divisible by 4? no: 6 is not divisible by 4» shows an INVALID step together with its refutation. A corpus that shows only valid steps teaches a pattern; a corpus that shows an invalid step with its counterexample teaches the difference. The witness of both fallacies is THE SAME number — one observation destroys both wrong steps at once. Nine languages.",
+      "genre": "STRICT INFERENCE — modus ponens, modus tollens, and TWO FALLACIES named as fallacies. The map of reasoning forms (reports/REASONING-2026-09-04.md) named modus tollens the corpus's chief debt: the corpus showed the step from premise to consequence and never the step from the denial of the consequence to the denial of the premise. The debt was named together with its condition: build it not on facts of the world («ice is not seen on the surface → ice does not float» is a strict implication the world does not give) but on a row of conditionals each of which is strict. The row chosen is arithmetic, and it is chosen FOR THE ORACLE: «if a number is divisible by 4, it is divisible by 2» is strict by division, not by declaration, and so every show of this world is checked by RECOUNTING — the court knows nothing of what the house meant to say, and catches a swapped number by counting. The last two forms matter more than the first three: «6 is divisible by 2. does it follow that 6 is divisible by 4? no: 6 is not divisible by 4» shows an INVALID step together with its refutation. A corpus that shows only valid steps teaches a pattern; a corpus that shows an invalid step with its counterexample teaches the difference. The witness of both fallacies is THE SAME number — one observation destroys both wrong steps at once. Nine languages. ИМЕНА ХОДОВ СТОЯ́Т НА САМОЙ СТРАНИЦЕ (12.09), и куплено это замером: прибор [СВОЙСТВО НАЗВАНО] спросил о десяти ходах рассуждения и нашёл ШЕСТЬ показанных и не названных — а четыре из них показывал ЭТОТ дом. Имена жили в его коде («поненс», «толленс», «обращение», «отрицание») и в его заголовке, который обещал «modus ponens, modus tollens и ДВЕ ОШИБКИ, названные так», — и ни одно не доходило до читателя. ИМЯ, ЖИВУЩЕЕ В КОДЕ ДОМА И НЕ ДОШЕДШЕЕ ДО СТРАНИЦЫ, ЕСТЬ ЗНАНИЕ КУЗНЕЦА, А НЕ ЧИТАТЕЛЯ. Ныне на всех девяти языках: «этот ход зовётся УТВЕРЖДАЮЩИМ — modus ponens», «ОТРИЦАЮЩИМ — modus tollens», «эта ошибка зовётся ОБРАЩЕНИЕМ ИМПЛИКАЦИИ: из следствия не выводят посылки», «ОТРИЦАНИЕМ ПОСЫЛКИ». Латинское имя идёт РЯДОМ с местным, ибо оно одно во всех языках, и читатель, встретив его в чужой книге, узнает свой ход. И сам закон называет ныне свои части — ПОСЫЛКУ и СЛЕДСТВИЕ, — без которых имена ошибок были бы словами о неизвестном. ШЕСТАЯ ФОРМА — КОНТРАПОЗИЦИЯ (12.09), и она не имя, а НОВЫЙ ПРЕДМЕТ: дом показывал ХОД от отрицания следствия к отрицанию посылки и никогда — РАВНОСИЛЬНОСТЬ двух записей одного высказывания. «„если число делится на 4, оно делится на 2“ и „если число не делится на 2, оно не делится на 4“ суть ОДНО высказывание в двух видах, и второе зовётся КОНТРАПОЗИЦИЕЙ первого. Вот 7: оно не делится на 2 и не делится на 4. А вот 12: оно делится на 4 и делится на 2. Числа, которое делится на 4 и не делится на 2, нет вовсе — и потому обе записи запрещают ровно одно и то же». ХОД ПОКАЗЫВАЕТСЯ ОДНИМ СЛУЧАЕМ, РАВНОСИЛЬНОСТЬ — ДВУМЯ СРАЗУ: одним, где обе записи молчат, и одним, где обе говорят; оттого эта форма берёт двух свидетелей из разных рядов, тогда как прочие довольствуются одним. Дом 1080 → 1242 страницы.",
       "act": [
         "decide",
         "refute",
@@ -681,7 +681,7 @@
       "boundary": [
         "whole_only"
       ],
-      "size": 0,
+      "size": 255904,
       "tiers": [],
       "text": "shows",
       "assemblies": [
@@ -3368,7 +3368,7 @@
     {
       "name": "proof",
       "file": "datasets/genesis_proof.txt",
-      "genre": "THE FORMS OF PROOF, EACH SHOWN ON AN INSTANCE — declared until 12.09 in eight words. Measured 12.09: 520 lines, 251 Russian and 269 English, 342 asking; 162 answer «yes/да» and 54 answer «no/нет», and 116 of the answers are REFUSALS WITH A GROUND. Four shapes, counted: THE EXHAUSTIVE CASE SPLIT with its witness — 136 («всякое целое чётно или нечётно; 13 нечётно», «is 20 even or odd? even: 20 = 2 × 10»), where the division is complete and the instance shows which side it fell on; THE IMPLICATION WITH AN INSTANCE — 232 («if 12 is even, is 32 even? yes: 12 is even and 32 = 2 × 16, which is even»), the step never asserted but SHOWN on a pair of numbers; THE UNIVERSAL — 70 lines opening with «every» or «всякое»; and NON-EXISTENCE WITH A REASON («чётного простого между 3 и 256 нет: у всякого чётного там есть делитель 2, кроме 1 и самого себя») — the denial that names WHY, not merely that. A FORM WITHOUT AN INSTANCE IS A WORD: mathematics is made not by theorems but by the FORMS in which truth is shown, and every page here carries a checkable case which the court recomputes. Sixty-eight lines carry the square («если n чётно, то n в квадрате чётно: 4 чётно и 16 чётно»), and forty carry a NEGATIVE value («положительно ли −16? нет: −16 < 0») — which is why this world declares only whole totals and NOT unsigned: the decision about a sign needs a signed number to decide about. Boundary: whole totals only, measured.",
+      "genre": "THE FORMS OF PROOF, EACH SHOWN ON AN INSTANCE — declared until 12.09 in eight words. Measured 12.09: 520 lines, 251 Russian and 269 English, 342 asking; 162 answer «yes/да» and 54 answer «no/нет», and 116 of the answers are REFUSALS WITH A GROUND. Four shapes, counted: THE EXHAUSTIVE CASE SPLIT with its witness — 136 («всякое целое чётно или нечётно; 13 нечётно», «is 20 even or odd? even: 20 = 2 × 10»), where the division is complete and the instance shows which side it fell on; THE IMPLICATION WITH AN INSTANCE — 232 («if 12 is even, is 32 even? yes: 12 is even and 32 = 2 × 16, which is even»), the step never asserted but SHOWN on a pair of numbers; THE UNIVERSAL — 70 lines opening with «every» or «всякое»; and NON-EXISTENCE WITH A REASON («чётного простого между 3 и 256 нет: у всякого чётного там есть делитель 2, кроме 1 и самого себя») — the denial that names WHY, not merely that. A FORM WITHOUT AN INSTANCE IS A WORD: mathematics is made not by theorems but by the FORMS in which truth is shown, and every page here carries a checkable case which the court recomputes. Sixty-eight lines carry the square («если n чётно, то n в квадрате чётно: 4 чётно и 16 чётно»), and forty carry a NEGATIVE value («положительно ли −16? нет: −16 < 0») — which is why this world declares only whole totals and NOT unsigned: the decision about a sign needs a signed number to decide about. Boundary: whole totals only, measured. ИМЯ ХОДА СТОИ́Т НА СТРАНИЦЕ (12.09): «такой ход зовётся ПОЛНЫМ РАЗБОРОМ СЛУЧАЕВ: случаи не оставляют третьего, и потому свидетель решает дело». Полнота названа прямо, ибо она и есть то, чем разбор случаев доказывает.",
       "act": [
         "decide",
         "refute",
@@ -3380,7 +3380,7 @@
       "boundary": [
         "whole_only"
       ],
-      "size": 74028,
+      "size": 49083,
       "tiers": [],
       "text": "shows",
       "assemblies": [
@@ -3497,7 +3497,7 @@
     {
       "name": "mathfound",
       "file": "datasets/genesis_mathfound.txt",
-      "genre": "ОСНОВАНИЯ МАТЕМАТИКИ И НАЗВАННЫЙ ПАДЕЖ — ОДИН МИР, И ЭТО НЕ СЛУЧАЙНОСТЬ: функция как ОДИН ПРЕДМЕТ («функция f на множестве {1 2 3} задана правилом f(x) = 4x; f(1) = 4»), инъекция свидетелем, счётность, доказательство от противного, индукция — и рядом шесть русских падежей и число имени. Общее у них — ИМЕНОВАНИЕ СЛУЧАЯ: и падеж, и вид доказательства суть имена, данные положению вещей, и мир учит их различать. Половина строк о падеже (516 из 1066), и потому мир читает `case`, а не `arith` (замер 12.09: 240 равенств, 114 вопросов).",
+      "genre": "ОСНОВАНИЯ МАТЕМАТИКИ И НАЗВАННЫЙ ПАДЕЖ — ОДИН МИР, И ЭТО НЕ СЛУЧАЙНОСТЬ: функция как ОДИН ПРЕДМЕТ («функция f на множестве {1 2 3} задана правилом f(x) = 4x; f(1) = 4»), инъекция свидетелем, счётность, доказательство от противного, индукция — и рядом шесть русских падежей и число имени. Общее у них — ИМЕНОВАНИЕ СЛУЧАЯ: и падеж, и вид доказательства суть имена, данные положению вещей, и мир учит их различать. Половина строк о падеже (516 из 1066), и потому мир читает `case`, а не `arith` (замер 12.09: 240 равенств, 114 вопросов). ИМЯ ХОДА СТОИ́Т НА СТРАНИЦЕ (12.09): «такой ход зовётся ДОКАЗАТЕЛЬСТВОМ ОТ ПРОТИВНОГО: допущенное привело к противоречию, и потому оно ложно». Куплено замером прибора [СВОЙСТВО НАЗВАНО]: ход был показан в одном мире и не назван нигде.",
       "act": [
         "name",
         "decide",
@@ -3512,7 +3512,7 @@
       "boundary": [
         "finite_explicit_only"
       ],
-      "size": 172630,
+      "size": 86359,
       "tiers": [],
       "text": "shows",
       "assemblies": [
@@ -5695,10 +5695,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 31624076,
+      "size": 31796135,
       "tiers": [],
       "text": "mix",
-      "lines": 384479
+      "lines": 384641
     },
     {
       "name": "full",
@@ -5713,10 +5713,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 38872984,
+      "size": 39045043,
       "tiers": [],
       "text": "mix",
-      "lines": 428989
+      "lines": 429151
     },
     {
       "name": "minimal",

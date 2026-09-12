@@ -72,10 +72,16 @@ def pass_shows(pass_i):
                    f"{сумма_n} + {m} = {сумма_m}.")
         out.append("основание и шаг вместе дают всё натуральное.")
         # --- разбор случаев: исчерпывающее деление со свидетелем
+        # ИМЯ ХОДА СТОИ́Т НА СТРАНИЦЕ (12.09): деление названо ПОЛНЫМ, и это не
+        # украшение — полнота есть то самое, чем разбор случаев доказывает.
         out.append(f"every whole number is even or odd; {x} is "
-                   f"{'even' if x % 2 == 0 else 'odd'}.")
+                   f"{'even' if x % 2 == 0 else 'odd'}. this step is called a "
+                   f"COMPLETE CASE SPLIT: the cases leave no third, and so the "
+                   f"witness settles the matter.")
         out.append(f"всякое целое чётно или нечётно; {x} "
-                   f"{'чётно' if x % 2 == 0 else 'нечётно'}.")
+                   f"{'чётно' if x % 2 == 0 else 'нечётно'}. такой ход зовётся "
+                   f"ПОЛНЫМ РАЗБОРОМ СЛУЧАЕВ: случаи не оставляют третьего, и "
+                   f"потому свидетель решает дело.")
         # --- контрпример: одно свидетельство убивает всеобщее
         out.append(f"{ложь} is false: {свидетель}.")
         # A UNIVERSAL IS ASKED BY ITS OWN «IS IT TRUE THAT» (tools/universals.py, М-149).

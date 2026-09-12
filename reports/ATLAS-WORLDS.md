@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 261 миров, 428989 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 261 миров, 429151 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -448,7 +448,7 @@
 
 ## АКТ «decide» — решить случай: вердикт с основанием рядом
 
-Миров 21, строк 16066.
+Миров 21, строк 16228.
 
 - **`verifyforms`** (3285 строк; recompute, whole_only)  
   **VERIFICATION** — «claim · check · verdict», and the pages where the instrument is OBLIGED to refuse (05.09, the agent architecture, the fourth market): a true claim checked by ANOTHER action cannot be confirmed — the verdict is «not verified», and the gro…
@@ -458,7 +458,7 @@
   **THE MANDATE** — a standing rule against an order (05.09, the agent architecture, the sixth market): one or two rules the agent was told once, an order of one act, and a verdict that never stands bare — «no: the rule forbids deleting», «yes: the rule forbi…
 - **`place`** (1296 строк; recompute, named_relations_only)  
   **PLACE** — where a thing stands, and the three laws of standing (06.09).
-- **`infer`** (1080 строк; recompute, whole_only)  
+- **`infer`** (1242 строк; recompute, whole_only)  
   **STRICT INFERENCE** — modus ponens, modus tollens, and TWO FALLACIES named as fallacies.
 - **`plan`** (576 строк; recompute, whole_only, unsigned_only)  
   order-row with a condition and the REPORT of its execution: the ledger of observation (files, runs, exit, millis) and a verdict that FOLLOWS from comparing the ledger with the condition (nine languages, both branches)

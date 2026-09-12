@@ -97,26 +97,26 @@ the even numbers are countable: 5 maps to 10, and this is a bijection with the n
 the cardinality of the set {a b c d e f g h} is 8.
 чётные числа счётны: 5 отвечает 10, и это биекция с натуральными.
 
-suppose 7 is even. then 7 = 2k for a whole k. but 7 = 2 × 3 + 1. contradiction: 7 is odd.
-допустим, 3 чётно. тогда 3 = 2k для целого k. но 3 = 2 × 1 + 1. противоречие: 3 нечётно.
-suppose 9 is even. then 9 = 2k for a whole k. but 9 = 2 × 4 + 1. contradiction: 9 is odd.
-допустим, 9 чётно. тогда 9 = 2k для целого k. но 9 = 2 × 4 + 1. противоречие: 9 нечётно.
-suppose 3 is even. then 3 = 2k for a whole k. but 3 = 2 × 1 + 1. contradiction: 3 is odd.
-допустим, 3 чётно. тогда 3 = 2k для целого k. но 3 = 2 × 1 + 1. противоречие: 3 нечётно.
-suppose 9 is even. then 9 = 2k for a whole k. but 9 = 2 × 4 + 1. contradiction: 9 is odd.
-допустим, 5 чётно. тогда 5 = 2k для целого k. но 5 = 2 × 2 + 1. противоречие: 5 нечётно.
-suppose 3 is even. then 3 = 2k for a whole k. but 3 = 2 × 1 + 1. contradiction: 3 is odd.
-допустим, 11 чётно. тогда 11 = 2k для целого k. но 11 = 2 × 5 + 1. противоречие: 11 нечётно.
-suppose 5 is even. then 5 = 2k for a whole k. but 5 = 2 × 2 + 1. contradiction: 5 is odd.
-допустим, 5 чётно. тогда 5 = 2k для целого k. но 5 = 2 × 2 + 1. противоречие: 5 нечётно.
-suppose 11 is even. then 11 = 2k for a whole k. but 11 = 2 × 5 + 1. contradiction: 11 is odd.
-допустим, 7 чётно. тогда 7 = 2k для целого k. но 7 = 2 × 3 + 1. противоречие: 7 нечётно.
-suppose 5 is even. then 5 = 2k for a whole k. but 5 = 2 × 2 + 1. contradiction: 5 is odd.
-допустим, 13 чётно. тогда 13 = 2k для целого k. но 13 = 2 × 6 + 1. противоречие: 13 нечётно.
-suppose 7 is even. then 7 = 2k for a whole k. but 7 = 2 × 3 + 1. contradiction: 7 is odd.
-допустим, 7 чётно. тогда 7 = 2k для целого k. но 7 = 2 × 3 + 1. противоречие: 7 нечётно.
-suppose 13 is even. then 13 = 2k for a whole k. but 13 = 2 × 6 + 1. contradiction: 13 is odd.
-допустим, 9 чётно. тогда 9 = 2k для целого k. но 9 = 2 × 4 + 1. противоречие: 9 нечётно.
+suppose 7 is even. then 7 = 2k for a whole k. but 7 = 2 × 3 + 1. contradiction: 7 is odd. this step is called PROOF BY CONTRADICTION: what was assumed led to a contradiction, and so it is false.
+допустим, 3 чётно. тогда 3 = 2k для целого k. но 3 = 2 × 1 + 1. противоречие: 3 нечётно. такой ход зовётся ДОКАЗАТЕЛЬСТВОМ ОТ ПРОТИВНОГО: допущенное привело к противоречию, и потому оно ложно.
+suppose 9 is even. then 9 = 2k for a whole k. but 9 = 2 × 4 + 1. contradiction: 9 is odd. this step is called PROOF BY CONTRADICTION: what was assumed led to a contradiction, and so it is false.
+допустим, 9 чётно. тогда 9 = 2k для целого k. но 9 = 2 × 4 + 1. противоречие: 9 нечётно. такой ход зовётся ДОКАЗАТЕЛЬСТВОМ ОТ ПРОТИВНОГО: допущенное привело к противоречию, и потому оно ложно.
+suppose 3 is even. then 3 = 2k for a whole k. but 3 = 2 × 1 + 1. contradiction: 3 is odd. this step is called PROOF BY CONTRADICTION: what was assumed led to a contradiction, and so it is false.
+допустим, 3 чётно. тогда 3 = 2k для целого k. но 3 = 2 × 1 + 1. противоречие: 3 нечётно. такой ход зовётся ДОКАЗАТЕЛЬСТВОМ ОТ ПРОТИВНОГО: допущенное привело к противоречию, и потому оно ложно.
+suppose 9 is even. then 9 = 2k for a whole k. but 9 = 2 × 4 + 1. contradiction: 9 is odd. this step is called PROOF BY CONTRADICTION: what was assumed led to a contradiction, and so it is false.
+допустим, 5 чётно. тогда 5 = 2k для целого k. но 5 = 2 × 2 + 1. противоречие: 5 нечётно. такой ход зовётся ДОКАЗАТЕЛЬСТВОМ ОТ ПРОТИВНОГО: допущенное привело к противоречию, и потому оно ложно.
+suppose 3 is even. then 3 = 2k for a whole k. but 3 = 2 × 1 + 1. contradiction: 3 is odd. this step is called PROOF BY CONTRADICTION: what was assumed led to a contradiction, and so it is false.
+допустим, 11 чётно. тогда 11 = 2k для целого k. но 11 = 2 × 5 + 1. противоречие: 11 нечётно. такой ход зовётся ДОКАЗАТЕЛЬСТВОМ ОТ ПРОТИВНОГО: допущенное привело к противоречию, и потому оно ложно.
+suppose 5 is even. then 5 = 2k for a whole k. but 5 = 2 × 2 + 1. contradiction: 5 is odd. this step is called PROOF BY CONTRADICTION: what was assumed led to a contradiction, and so it is false.
+допустим, 5 чётно. тогда 5 = 2k для целого k. но 5 = 2 × 2 + 1. противоречие: 5 нечётно. такой ход зовётся ДОКАЗАТЕЛЬСТВОМ ОТ ПРОТИВНОГО: допущенное привело к противоречию, и потому оно ложно.
+suppose 11 is even. then 11 = 2k for a whole k. but 11 = 2 × 5 + 1. contradiction: 11 is odd. this step is called PROOF BY CONTRADICTION: what was assumed led to a contradiction, and so it is false.
+допустим, 7 чётно. тогда 7 = 2k для целого k. но 7 = 2 × 3 + 1. противоречие: 7 нечётно. такой ход зовётся ДОКАЗАТЕЛЬСТВОМ ОТ ПРОТИВНОГО: допущенное привело к противоречию, и потому оно ложно.
+suppose 5 is even. then 5 = 2k for a whole k. but 5 = 2 × 2 + 1. contradiction: 5 is odd. this step is called PROOF BY CONTRADICTION: what was assumed led to a contradiction, and so it is false.
+допустим, 13 чётно. тогда 13 = 2k для целого k. но 13 = 2 × 6 + 1. противоречие: 13 нечётно. такой ход зовётся ДОКАЗАТЕЛЬСТВОМ ОТ ПРОТИВНОГО: допущенное привело к противоречию, и потому оно ложно.
+suppose 7 is even. then 7 = 2k for a whole k. but 7 = 2 × 3 + 1. contradiction: 7 is odd. this step is called PROOF BY CONTRADICTION: what was assumed led to a contradiction, and so it is false.
+допустим, 7 чётно. тогда 7 = 2k для целого k. но 7 = 2 × 3 + 1. противоречие: 7 нечётно. такой ход зовётся ДОКАЗАТЕЛЬСТВОМ ОТ ПРОТИВНОГО: допущенное привело к противоречию, и потому оно ложно.
+suppose 13 is even. then 13 = 2k for a whole k. but 13 = 2 × 6 + 1. contradiction: 13 is odd. this step is called PROOF BY CONTRADICTION: what was assumed led to a contradiction, and so it is false.
+допустим, 9 чётно. тогда 9 = 2k для целого k. но 9 = 2 × 4 + 1. противоречие: 9 нечётно. такой ход зовётся ДОКАЗАТЕЛЬСТВОМ ОТ ПРОТИВНОГО: допущенное привело к противоречию, и потому оно ложно.
 
 induction: the base n = 1 holds, the step from n to n+1 holds, hence it holds up to n = 5; the sum of the first 5 numbers is 15.
 индукция: основание n = 1 верно, шаг от n к n+1 верен, значит верно до n = 3; сумма первых 3 чисел равна 6.
@@ -568,10 +568,10 @@ the even numbers are countable: 5 maps to 10, and this is a bijection with the n
 мощность множества {a b c d e} равна 5.
 the even numbers are countable: 2 maps to 4, and this is a bijection with the naturals.
 
-допустим, 13 чётно. тогда 13 = 2k для целого k. но 13 = 2 × 6 + 1. противоречие: 13 нечётно.
-suppose 11 is even. then 11 = 2k for a whole k. but 11 = 2 × 5 + 1. contradiction: 11 is odd.
-допустим, 11 чётно. тогда 11 = 2k для целого k. но 11 = 2 × 5 + 1. противоречие: 11 нечётно.
-suppose 13 is even. then 13 = 2k for a whole k. but 13 = 2 × 6 + 1. contradiction: 13 is odd.
+допустим, 13 чётно. тогда 13 = 2k для целого k. но 13 = 2 × 6 + 1. противоречие: 13 нечётно. такой ход зовётся ДОКАЗАТЕЛЬСТВОМ ОТ ПРОТИВНОГО: допущенное привело к противоречию, и потому оно ложно.
+suppose 11 is even. then 11 = 2k for a whole k. but 11 = 2 × 5 + 1. contradiction: 11 is odd. this step is called PROOF BY CONTRADICTION: what was assumed led to a contradiction, and so it is false.
+допустим, 11 чётно. тогда 11 = 2k для целого k. но 11 = 2 × 5 + 1. противоречие: 11 нечётно. такой ход зовётся ДОКАЗАТЕЛЬСТВОМ ОТ ПРОТИВНОГО: допущенное привело к противоречию, и потому оно ложно.
+suppose 13 is even. then 13 = 2k for a whole k. but 13 = 2 × 6 + 1. contradiction: 13 is odd. this step is called PROOF BY CONTRADICTION: what was assumed led to a contradiction, and so it is false.
 
 индукция: основание n = 1 верно, шаг от n к n+1 верен, значит верно до n = 4; сумма первых 4 чисел равна 10.
 induction: the base n = 1 holds, the step from n to n+1 holds, hence it holds up to n = 3; the sum of the first 3 numbers is 6.
