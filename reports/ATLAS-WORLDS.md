@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 265 миров, 429591 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 266 миров, 429701 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -495,7 +495,7 @@
 
 ## АКТ «compare» — сравнить двоих: больше, меньше, во столько же раз
 
-Миров 17, строк 15812.
+Миров 18, строк 15922.
 
 - **`cmpframes`** (6480 строк; recompute, whole_only)  
   **FRAMES OF COMPARISON** — the largest class of the reader's lies on the held-out key (05.09: twelve of fifteen — «9 flexiones más que», «in più/in meno di», «meer/minder dan», «więcej/mniej niż»: the marker is not bought and the answer takes a neighbouring…
@@ -525,6 +525,8 @@
   **REWRITING** — one number written two ways. d5 named sixty-two starving collections of the organism, and `rewrite_facts` was among them: the corpus had no rewriting shows at all.
 - **`analog`** (144 строк; recompute, whole_only)  
   **LIKENESS** — analogy and its CHECK, not its feeling.
+- **`negquant`** (110 строк; recompute, whole_only, exact_only)  
+  **ОТРИЦАНИЕ КВАНТОРА** — «НЕ ВСЕ КРАСНЫЕ» И «ВСЕ НЕ КРАСНЫЕ» СУТЬ РАЗНЫЕ ВЫСКАЗЫВАНИЯ. Замер 12.09 по девятому десятку понятий: «не все ≠ все не» — ноль упоминаний и ноль показов; «отрицание квантора» — ноль и ноль.
 - **`measureprec`** (96 строк; recompute, finite_decimal_only)  
   **ИЗМЕРЕНИЕ И ЕГО ТОЧНОСТЬ** — СВОД МЕРИЛ ВСЁ И НИ РАЗУ НЕ СКАЗАЛ, ЧТО ИЗМЕРЕНИЕ НЕТОЧНО. Замер 12.09 по шестому десятку понятий: «погрешность» — ноль упоминаний и ноль показов; «значащие цифры» — ноль и ноль; «цена деления» — ноль и ноль; «повторное измере…
 - **`chancetrap`** (62 строк; recompute, whole_only, exact_only)  
@@ -584,5 +586,5 @@
     ОБЪЯВЛЕНИЕ В ТРИДЦАТЬ ЗНАКОВ НЕ ЛЖЁТ И НЕ ГОВОРИТ: читатель узнаёт имя мира
     и ничего сверх него.
 
-Миров: **0** из 265.
+Миров: **0** из 266.
 

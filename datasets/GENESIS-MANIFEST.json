@@ -5695,10 +5695,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 31878758,
+      "size": 31909228,
       "tiers": [],
       "text": "mix",
-      "lines": 385009
+      "lines": 385119
     },
     {
       "name": "full",
@@ -5713,10 +5713,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 39134354,
+      "size": 39164824,
       "tiers": [],
       "text": "mix",
-      "lines": 429591
+      "lines": 429701
     },
     {
       "name": "minimal",
@@ -6071,6 +6071,31 @@
         "school"
       ],
       "size": 12940,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
+      "name": "negquant",
+      "file": "datasets/genesis_negquant.txt",
+      "genre": "ОТРИЦАНИЕ КВАНТОРА — «НЕ ВСЕ КРАСНЫЕ» И «ВСЕ НЕ КРАСНЫЕ» СУТЬ РАЗНЫЕ ВЫСКАЗЫВАНИЯ. Замер 12.09 по девятому десятку понятий: «не все ≠ все не» — ноль упоминаний и ноль показов; «отрицание квантора» — ноль и ноль. ОТРИЦАНИЕ, ПОСТАВЛЕННОЕ В ДРУГОЕ МЕСТО, ЕСТЬ ДРУГОЕ ВЫСКАЗЫВАНИЕ, ХОТЯ СЛОВА ТЕ ЖЕ И ПОРЯДОК ИХ ПОЧТИ ТОТ ЖЕ. Пять родов, 110 страниц. Три равносильности («неверно, что ВСЕ красные» ≡ «ХОТЯ БЫ ОДИН не красный»; «неверно, что ХОТЯ БЫ ОДИН» ≡ «НИ ОДИН не»; «неверно, что НИ ОДИН» ≡ «ХОТЯ БЫ ОДИН») — и ОДНО РАЗЛИЧИЕ, ради которого дом построен. Оно показано ТРЕМЯ МЕШКАМИ, а не одним: смешанный (2 из 4 красных) — «не все» истинно, «все не» ложно, и вот где они расходятся; пустой (0 из 4) — оба истинны; полный (4 из 4) — оба ложны. ДВА ВЫСКАЗЫВАНИЯ, СОВПАДАЮЩИЕ В ДВУХ СЛУЧАЯХ ИЗ ТРЁХ, РАЗЛИЧАЮТСЯ ИМЕННО В ТРЕТЬЕМ, И ПОКАЗАТЬ НАДО ВСЕ ТРИ: читатель, видевший лишь совпадения, решит, что это одно высказывание, и будет прав ровно до первого смешанного мешка. СОСЕД И РАЗЛИЧИЕ: `quantforms` тоже считает красные и зелёные в корзине, но предмет его есть СЧЁТ при кванторе — сколько их и каков свидетель; здесь же предмет есть ПРЕОБРАЗОВАНИЕ отрицания, а счёт лишь свидетель. Всякое утверждение несёт свой счёт и потому проверяется пересчётом.",
+      "act": [
+        "compare",
+        "decide",
+        "expound",
+        "name",
+        "refute"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only",
+        "exact_only"
+      ],
+      "assemblies": [
+        "school"
+      ],
+      "size": 30468,
       "tiers": [],
       "text": "shows"
     },
@@ -10696,7 +10721,7 @@
     {
       "name": "quantforms",
       "file": "datasets/genesis_quantforms.txt",
-      "genre": "THE QUANTIFIER — «all», «some», «none» over a set that is COUNTED (06.09). The census found four lines of «every one of» in the whole свод. Five claims over one basket, and every answer carries its counted WITNESS: all are red (refuted by «no: 2 are green», or true and witnessed by the whole count), some are green, none are blue (the colour the basket never carried, refused with its ground), and the complement counted («how many are not red? 4: 9 − 5 = 4») — negation as subtraction, where a quantifier meets arithmetic. The colour is declared in THREE cases, because the languages need three (after a numeral, as a predicate — German does not inflect it — and after a negation), and the counting form does not replace the nominative plural (tools/quantforms.py). CLOSED world.",
+      "genre": "THE QUANTIFIER — «all», «some», «none» over a set that is COUNTED (06.09). The census found four lines of «every one of» in the whole свод. Five claims over one basket, and every answer carries its counted WITNESS: all are red (refuted by «no: 2 are green», or true and witnessed by the whole count), some are green, none are blue (the colour the basket never carried, refused with its ground), and the complement counted («how many are not red? 4: 9 − 5 = 4») — negation as subtraction, where a quantifier meets arithmetic. The colour is declared in THREE cases, because the languages need three (after a numeral, as a predicate — German does not inflect it — and after a negation), and the counting form does not replace the nominative plural (tools/quantforms.py). CLOSED world. СОСЕД И РАЗЛИЧИЕ (12.09): `negquant` тоже берёт мешок с двумя цветами, но предмет его есть ПРЕОБРАЗОВАНИЕ отрицания — «не все красные» против «все не красные», — тогда как здесь предмет есть СЧЁТ при кванторе и его свидетель.",
       "act": [
         "recount",
         "decide"
