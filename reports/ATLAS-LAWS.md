@@ -6,7 +6,7 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 4436 разных законов на 5090 упоминаний; сказанных однажды — 4200, и они остаются при своём месте.
+Всего в дереве 4442 разных законов на 5099 упоминаний; сказанных однажды — 4206, и они остаются при своём месте.
 
 
 ## Держат 56 файлов
@@ -62,6 +62,10 @@
   scripts/trap_series.py, tools/chancetrapforms.py, tools/dimforms.py, tools/fenceforms.py, tools/genderforms.py, tools/measuregrowforms.py … и ещё 4
 - **ОТВЕТ И ЕГО КУЗНИЦА — ДВЕ ПОВЕРХНОСТИ ОДНОГО ФАКТА**  
   tools/gen_genesis_aggregate.py, tools/gen_genesis_compare.py, tools/gen_genesis_depletion.py, tools/gen_genesis_gsmlex.py, tools/gen_genesis_gsmwide.py, tools/gen_genesis_heads.py … и ещё 4
+- **ПРИБОР, ЗЕЛЕНЕЮЩИЙ ОТ НУЛЯ НАХОДОК, ОБЯЗАН ДОКАЗАТЬ, ЧТО УМЕЕТ НАХОДИТЬ**  
+  scripts/build_dated.py, scripts/genre_measured.py, scripts/ladder_full.py, scripts/margin_census.py, scripts/name_crossed.py, scripts/permuted_fresh.py … и ещё 4
+- **ПРОБА НА ЗАВЕДОМО ИЗВЕСТНОМ**  
+  scripts/build_dated.py, scripts/genre_measured.py, scripts/ladder_full.py, scripts/margin_census.py, scripts/name_crossed.py, scripts/permuted_fresh.py … и ещё 4
 - **ФОРМУЛЫ РОДОВ — ЗАКОН ОТВЕТА ОТ ВЕЛИЧИН ВОПРОСА**  
   tools/gen_genesis_compsci.py, tools/gen_genesis_geometry.py, tools/gen_genesis_linalg.py, tools/gen_genesis_machine.py, tools/gen_genesis_numbers.py, tools/gen_genesis_physics.py … и ещё 4
 
@@ -69,10 +73,6 @@
 
 - **ОТКАЗ ЕСТЬ ТАКОЕ ЖЕ УТВЕРЖДЕНИЕ**  
   courts/algo_court.py, courts/compsci_court.py, courts/formula_court.py, courts/linalg_court.py, courts/machine_court.py, courts/sequence_court.py … и ещё 3
-- **ПРИБОР, ЗЕЛЕНЕЮЩИЙ ОТ НУЛЯ НАХОДОК, ОБЯЗАН ДОКАЗАТЬ, ЧТО УМЕЕТ НАХОДИТЬ**  
-  scripts/build_dated.py, scripts/genre_measured.py, scripts/ladder_full.py, scripts/margin_census.py, scripts/name_crossed.py, scripts/permuted_fresh.py … и ещё 3
-- **ПРОБА НА ЗАВЕДОМО ИЗВЕСТНОМ**  
-  scripts/build_dated.py, scripts/genre_measured.py, scripts/ladder_full.py, scripts/margin_census.py, scripts/name_crossed.py, scripts/permuted_fresh.py … и ещё 3
 
 ## Держат 8 файлов
 
@@ -171,6 +171,8 @@
   scripts/agree_traps.py, scripts/copula_band.py, scripts/sign_traps.py
 - **ПРАВИЛО, РАЗЛУЧЁННОЕ СО СВОЕЙ ГРАНИЦЕЙ, БУДЕТ ПРИМЕНЕНО ТАМ, ГДЕ ГРАНИЦА МОЛЧИТ**  
   tools/gen_genesis_dist.py, tools/gen_genesis_orderlaw.py, tools/orderlawforms.py
+- **ПРИЗНАК, ИЩУЩИЙ НЕВОЗМОЖНОЕ, ВЕДЁТ СЕБЯ КАК ПРИЗНАК, ИЩУЩИЙ РЕДКОЕ**  
+  scripts/arith_debt.py, scripts/probe_present.py, scripts/property_named.py
 - **ПРОВЕРКА, ИДУЩАЯ ИНЫМ ПУТЁМ, ЧЕМ ДЕЛО, ПРОВЕРЯЕТ НЕ ДЕЛО**  
   scripts/house_selfcheck.py, tools/behaviorforms.py, tools/linkforms.py
 - **РАМКА, СОБРАННАЯ ИЗ ЦЕЛЫХ СЛОВ, НЕ ЗНАЕТ, ЧТО ДВА ИЗ НИХ СЛИВАЮТСЯ**  
@@ -382,8 +384,6 @@
   scripts/agree_traps.py, scripts/sign_traps.py
 - **ПРИЗНАК, ИСКОМЫЙ ПОДСТРОКОЙ, НАХОДИТСЯ В ТОМ, КТО О НЁМ ГОВОРИТ**  
   scripts/sign_intact.py, tools/court_atlas.py
-- **ПРИЗНАК, ИЩУЩИЙ НЕВОЗМОЖНОЕ, ВЕДЁТ СЕБЯ КАК ПРИЗНАК, ИЩУЩИЙ РЕДКОЕ**  
-  scripts/arith_debt.py, scripts/property_named.py
 - **ПРИЗНАК, ЧИТАЮЩИЙ ЗВЕНО ЦЕПИ КАК ЦЕЛОЕ РАВЕНСТВО, НАХОДИТ ЛОЖЬ В СВОЁМ ЖЕ ЧТЕНИИ**  
   courts/closure_court.py, tools/closureforms.py
 - **ПРОБА, НЕДОСЧИТЫВАЮЩАЯ СУЩЕСТВУЮЩЕЕ, ЛЖЁТ О ПРОБЕЛЕ**  
