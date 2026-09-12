@@ -1346,6 +1346,29 @@
       "actors": []
     },
     {
+      "name": "decase",
+      "file": "datasets/genesis_decase.txt",
+      "genre": "НЕМЕЦКИЙ ПРЕДЛОГ ДВУХ ПАДЕЖЕЙ — СВОД ПИСАЛ «im» 4 775 РАЗ И НЕ СКАЗАЛ, ЧТО ЭТО ВЫБОР. Замер 12.09 ПО СВОДУ, ПОРОЗНЬ: «im» (= in dem, дательный) 4 775 строк, «am» (= an dem) 1 721, «auf dem / auf das» 1 000, «ins» (= in das, винительный) 28, «ans» 13; строк о выборе падежа — НОЛЬ. СВОД, ПОКАЗЫВАЮЩИЙ ОДНУ СТОРОНУ ЗАКОНА В СТО РАЗ ЧАЩЕ ДРУГОЙ, УЧИТ НЕ ЗАКОНУ, А ЕГО ПОЛОВИНЕ — и половина эта выглядит целым правилом: читатель выучивает «im» как слово «в» и пишет «*ich gehe im Haus». ЗНАНИЕ, ЗАПИСАННОЕ ДАННЫМИ И КОДОМ, НО НЕ СТРАНИЦЕЙ, ЕСТЬ ЗНАНИЕ ПИШУЩЕГО, А НЕ ЧИТАЮЩЕГО. Пять родов и четыре ложных вывода: «im есть просто в» (это «in» + ДАТЕЛЬНЫЙ, и дательный значит МЕСТО), «падеж выбирает предлог» (девять предлогов берут ОБА, и выбирает СМЫСЛ — «где» или «куда»), «так ведут себя все предлоги» (mit, aus, von берут только дательный; für, durch, ohne — только винительный), «это особенность немецкого» (русский различает то же самое тем же способом: «в доме» — предложный, «в дом» — винительный; английский — РАЗНЫМИ ПРЕДЛОГАМИ: in / into). ОДНО РАЗЛИЧЕНИЕ, ТРИ СПОСОБА, и знающий один не узнаёт его в другом и считает прихотью чужого языка. Признак выбора назван прямо: «wo?» отвечает дательный, «wohin?» — винительный. This is the sixty-second trap of the series — «the preposition itself chooses the case», and the nine German ones break it. Дом не знает немецкого: предлоги, артикли по падежам, слитные формы и глаголы места и направления объявлены рукой, и сказано, что рукой; о множественном, о родительном и о переносных значениях дом молчит, а не угадывает.",
+      "act": [
+        "compare",
+        "expound",
+        "inflect",
+        "refute"
+      ],
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "declared_table_only"
+      ],
+      "assemblies": [
+        "school"
+      ],
+      "size": 30498,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
       "name": "definitions",
       "file": "datasets/genesis_definitions.txt",
       "genre": "definitions from the dictionaries of the shelf (holon's order 02.09: the organism is mute on «what is entropy» / «что такое сознание» — no line of the corpus defined anything): «X is <quote>: Webster's Unabridged Dictionary, 1913.» and «X — это <цитата>: ЭСБЕ, статья «X»» (Даль for words ЭСБЕ lacks), the question «what is X? X is …» on a quarter of shows; concepts declared in declarations/CONCEPTS.txt (owner's list, then the top of unshown concepts by concept_reach, then the sciences named by neighbouring worlds), the quote found by the generator in the article itself, first sense cut at a sentence boundary, never written by hand; no negation — a definition is not a verdict; the court (courts/definitions_court.py) finds the quote in the named article as a substring, the concept word in its heading and the source on the shelf with its year, sharing the article cutter (tools/definitions.py) but not the selection rules НАПИСАНИЕ ИСТОЧНИКА СОХРАНЕНО, ВКЛЮЧАЯ «Е» ВМЕСТО «Ё» (объявлено 12.09): словари ЭСБЕ и Даля буквы ё не печатали, и оттого здесь «дает», «ее», «счет», «трех», «нем», «лед» — там, где весь прочий свод пишет «даёт», «её», «счёт». ЦИТАТА, ПОПРАВЛЕННАЯ В НАПИСАНИИ, ЕСТЬ УЖЕ НЕ ЦИТАТА, — и потому разнобой этот не долг, а ГРАНИЦА, и сказана она здесь, чтобы читатель не счёл его небрежностью.",
@@ -2462,10 +2485,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 40185749,
+      "size": 40255870,
       "tiers": [],
       "text": "mix",
-      "lines": 436198
+      "lines": 436478
     },
     {
       "name": "fuseprep",
@@ -2486,7 +2509,7 @@
       "assemblies": [
         "school"
       ],
-      "size": 29490,
+      "size": 37488,
       "tiers": [],
       "text": "shows"
     },
@@ -8129,7 +8152,7 @@
       "assemblies": [
         "school"
       ],
-      "size": 34769,
+      "size": 38863,
       "tiers": [],
       "text": "shows"
     },
@@ -10515,10 +10538,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 32930153,
+      "size": 33000274,
       "tiers": [],
       "text": "mix",
-      "lines": 391616
+      "lines": 391896
     },
     {
       "name": "school_biling_v2c",
@@ -10702,7 +10725,7 @@
       "assemblies": [
         "school"
       ],
-      "size": 29533,
+      "size": 35401,
       "tiers": [],
       "text": "shows"
     },
@@ -11183,6 +11206,29 @@
         "school"
       ],
       "actors": []
+    },
+    {
+      "name": "swclass",
+      "file": "datasets/genesis_swclass.txt",
+      "genre": "КЛАСС В СУАХИЛИ — СВОД ОТВЕРГАЛ «kitabu mmoja» ПЯТНАДЦАТЬЮ СТРОКАМИ И НЕ СКАЗАЛ ПОЧЕМУ. Замер 12.09 ПО ПЛАСТУ СУАХИЛИ (5 820 строк): «ninaona kitabu kimoja» и подобных — сотни строк; отказов «¬ ninaona kitabu mmoja», «¬ ninaona mtu kimoja», «¬ ninaona vitabu wawili» — 15; строк, объясняющих КЛАСС ИМЕНИ, — НОЛЬ. ПОКАЗ ОТКАЗА УЧИТ, ЧТО ТАК НЕЛЬЗЯ, И НЕ УЧИТ, ПОЧЕМУ: ученик запоминает список запретов вместо одного правила — и первый же случай вне списка берёт наугад. Причина одна и проста: числительное в суахили согласуется не с числом и не с родом, а с КЛАССОМ имени. ЯЗЫК, СОГЛАСУЮЩИЙ ЧИСЛО С КЛАССОМ, ТРЕБУЕТ ЗНАТЬ КЛАСС ПРЕЖДЕ, ЧЕМ СЧИТАТЬ: «один» здесь не одно слово, а несколько — mmoja, kimoja, moja, — и выбор между ними делает ИМЯ, а не говорящий. Пять родов и четыре ложных вывода: «числительное неизменно» (свод это отвергает, а причины не даёт), «класс есть род» (его ищут в смысле — люди или вещи, — а «mti» и «mtu» берут одну приставку «m-», и множественное у них разное: miti и watu), «множественное меняет хвост» (суахили меняет ПРИСТАВКУ: kitabu → vitabu, mtu → watu, gari → magari, а хвост стои́т неподвижно), «класс виден всегда» (класс 9/10 НЕ МЕНЯЕТ ИМЕНИ ВОВСЕ: nyumba moja — один дом, nyumba mbili — два, и число несёт ТОЛЬКО числительное). ЗНАТЬ КЛАСС ЗНАЧИТ ЗНАТЬ ИМЯ, А НЕ ДОГАДЫВАТЬСЯ О НЁМ. This is the sixty-third trap of the series — «the numeral does not change», and Swahili breaks it. Дом не знает суахили: имена, их классы, множественные формы и числительные объявлены рукой, и сказано, что рукой; взяты только те имена, что СТОЯ́Т В ПЛАСТЕ СВОДА рядом с числительными, и только классы 1/2, 3/4, 5/6, 7/8, 9/10; о согласовании глагола и прилагательного с классом дом молчит, а не угадывает.",
+      "act": [
+        "compare",
+        "expound",
+        "inflect",
+        "refute"
+      ],
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "declared_table_only"
+      ],
+      "assemblies": [
+        "school"
+      ],
+      "size": 21659,
+      "tiers": [],
+      "text": "shows"
     },
     {
       "name": "task",

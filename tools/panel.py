@@ -370,6 +370,12 @@ recache.установить()
            # НИДЕРЛАНДСКИЙ АРТИКЛЬ (12.09, одиннадцатый дом): два артикля вместо трёх немецких,
            # выбор по слову не угадать — и два правила без исключений среди непредсказуемого.
            "nlarticle_court",
+           # НЕМЕЦКИЙ ПРЕДЛОГ ДВУХ ПАДЕЖЕЙ (12.09, двенадцатый дом): выбирает не предлог, а
+           # смысл — «где» или «куда», — и свод показывал одну сторону в сто раз чаще другой.
+           "decase_court",
+           # КЛАСС В СУАХИЛИ (12.09, тринадцатый дом): свод отвергал неверное согласование
+           # пятнадцатью строками и НЕ ГОВОРИЛ ПОЧЕМУ — дом даёт причину, а не запрет.
+           "swclass_court",
            # ЭПИЗОД (05.09, архитектура агента: лента актов, префикс леджера, ничья шагов)
            "episodeforms_court", "summaryforms_court", "opforms_court", "readnum_court", "mandateforms_court", "personforms_court", "selfmodelforms_court", "signedworld_court", "beforetails_court", "discountroad_court", "nomention_court", "clockforms_court", "mixedunits_court", "dateforms_court", "clockwords_court", "speedforms_court", "enough_court", "numphrase_court", "kinbearer_court", "pronobject_court", "proform_court", "degrees_court", "actturn_court", "tempscale_court", "unitfrac_court", "place_court", "roman_court", "quantforms_court", "orderforms_court", "roundforms_court")
 
