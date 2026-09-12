@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 261 миров, 429151 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 262 миров, 429311 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -495,7 +495,7 @@
 
 ## АКТ «compare» — сравнить двоих: больше, меньше, во столько же раз
 
-Миров 13, строк 15444.
+Миров 14, строк 15604.
 
 - **`cmpframes`** (6480 строк; recompute, whole_only)  
   **FRAMES OF COMPARISON** — the largest class of the reader's lies on the held-out key (05.09: twelve of fifteen — «9 flexiones más que», «in più/in meno di», «meer/minder dan», «więcej/mniej niż»: the marker is not bought and the answer takes a neighbouring…
@@ -519,6 +519,8 @@
   **PROPERTY COMPARISON IN NINE LANGUAGES** — «which is heavier: a stone or a feather? a stone.», «what is lighter: a feather or a stone? a feather.» Born from the fifth band of conversation (BESEDA-5, 05.09): «что тяжелее: камень или перо?» was mute in all n…
 - **`ru_compare`** (168 строк; recompute, declared, whole_only, exact_only)  
   **multiplicative against differential comparison in Russian: «во сколько раз больше» is DIVISION and «на сколько больше» is SUBTRACTION, two frames a speaker confuses more often than any other, shown on the SAME pair of numbers side by side with the differe…
+- **`gender`** (160 строк; declared, declared_table_only)  
+  **РОД В ЧУЖОМ ЯЗЫКЕ** — СВОД СТАВИЛ АРТИКЛЬ ТРИ ТЫСЯЧИ РАЗ И НИ РАЗУ НЕ СКАЗАЛ, ЧТО ЭТО РОД. Замер 12.09: русский род свод называет 624 строками («Анна женского рода, и потому Анна получила»), а в немецком мире 2940 артиклей и НОЛЬ упоминаний рода; во всех …
 - **`rewrite`** (144 строк; recompute, whole_only)  
   **REWRITING** — one number written two ways. d5 named sixty-two starving collections of the organism, and `rewrite_facts` was among them: the corpus had no rewriting shows at all.
 - **`analog`** (144 строк; recompute, whole_only)  
@@ -576,5 +578,5 @@
     ОБЪЯВЛЕНИЕ В ТРИДЦАТЬ ЗНАКОВ НЕ ЛЖЁТ И НЕ ГОВОРИТ: читатель узнаёт имя мира
     и ничего сверх него.
 
-Миров: **0** из 261.
+Миров: **0** из 262.
 
