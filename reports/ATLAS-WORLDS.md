@@ -64,15 +64,15 @@
 - **`planforms`** (2520 строк; recompute, whole_only)  
   **THE PLAN** — «task · steps · checkable end» (05.09, the agent architecture, the third market and its critical path): a plan is a chain whose EVERY step is checked by a number, and whose end is a verdict about the task.
 - **`sequences`** (2432 строк; recompute, whole_only, unsigned_only)  
-  sequences: arithmetic and geometric progression, limit of a series, rate of change and the power rule
+  **ПРОГРЕССИЯ** — ЧЛЕН ПО НОМЕРУ И СУММА ПО КОНЦАМ, И ОБА ВЫВЕДЕНЫ НА СТРАНИЦЕ: «член номер 5 прогрессии от 2 с шагом 2 равен 10: 5 − 1 = 4, 4 × 2 = 8, 2 + 8 = 10» и «сумма 3 6 9 12 равна 30: 3 + 12 = 15, 4 × 15 = 60, 60 ÷ 2 = 30».
 - **`relcompare`** (2400 строк; recompute, whole_only)  
   **THE RELATIVE FACT** — a number that belongs to the DIFFERENCE and to neither bearer (07.09).
 - **`geometry`** (2344 строк; recompute, exact_only)  
-  geometry: area and perimeter, volume and surface, the Pythagorean theorem on exact triples
+  **ПЛОЩАДЬ И ПЕРИМЕТР, ВЫВЕДЕННЫЕ, А НЕ ОБЪЯВЛЕННЫЕ: «прямоугольник 2 на 3 имеет периметр 2 + 3 = 5, 2 × 5 = 10». Прямоугольник, треугольник, коробка** — и всякий раз формула проходится числами: сложение сторон, удвоение, умножение.
 - **`space`** (2301 строк; recompute, exact_only)  
   **the spatial world v0 (mandate 02.09, L3): square grids 3×3..5×5 with a figure of filled cells, derived by residues, and executions over them** — rotation (90/180/270 clockwise), reflection (left-right, top-bottom), shift without loss, side-neighbour count…
 - **`algorithms`** (2264 строк; recompute, whole_only)  
-  foundations of algorithms: order, number theory, complexity, structures, notation
+  **ДЕЙСТВИЕ НАД СПИСКОМ, НАЗВАННОЕ И ПОКАЗАННОЕ: «разворот 3 1 2 даёт 2 1 3», «what is the minimum of 3 1 2?», «чему равна длина 3 1 2?», наибольший общий делитель. Мир не пишет программы, а называет ЧТО ДАЁТ действие на этом самом списке** — и потому провер…
 - **`task`** (2196 строк; recompute, whole_only)  
   **TASK IN WORDS** — an imperative head with the operation written as a WORD. holon's map of cells called «calculate × sign» and «find × sign» full and the word column empty; the measure over the svod said the same from this side: the imperative head stands …
 - **`nomention`** (2160 строк; recompute, whole_only)  
@@ -140,7 +140,7 @@
 - **`genesis_bignum`** (937 строк; recompute, whole_only)  
   **БОЛЬШОЕ ЧИСЛО ТЕМИ ЖЕ ЧЕТЫРЬМЯ ДЕЙСТВИЯМИ: сложение, вычитание, умножение и деление на сотнях и тысячах** — «сколько будет 200 − 100?», «what is 610 + 10?», «compute 950 − 100».
 - **`calendar`** (902 строк; recompute, whole_only, unsigned_only)  
-  calendar: the week as congruence modulo 7, month order and length, the year as a sum of months
+  **ДЕНЬ ЧЕРЕЗ ДЕНЬ, И ШАГ ДОКАЗАН СЛОЖЕНИЕМ ПО НОМЕРУ: «через 3 дня после понедельника наступает четверг: 1 + 3 = 4, день 4** — четверг».
 - **`gsmwide`** (900 строк; recompute, whole_only, unsigned_only)  
   GSM wide frames: possessive bearers and herd subjects (working layer of the band stand)
 - **`age`** (900 строк; recompute, whole_only, unsigned_only)  
@@ -568,7 +568,7 @@
     ОБЪЯВЛЕНИЕ В ТРИДЦАТЬ ЗНАКОВ НЕ ЛЖЁТ И НЕ ГОВОРИТ: читатель узнаёт имя мира
     и ничего сверх него.
 
-Миров: **32** из 257.
+Миров: **28** из 257.
 
 - `physics` — 64 знаков
 - `notation` — 68 знаков
@@ -576,15 +576,11 @@
 - `programs` — 74 знаков
 - `cybernetics` — 75 знаков
 - `algebra` — 76 знаков
-- `algorithms` — 81 знаков
 - `gsmwide` — 87 знаков
 - `realverbs` — 87 знаков
-- `geometry` — 90 знаков
 - `gsmlex` — 91 знаков
-- `calendar` — 94 знаков
 - `verbal` — 98 знаков
 - `heads` — 99 знаков
-- `sequences` — 101 знаков
 - `lang_nl` — 109 знаков
 - `lang_sv` — 124 знаков
 - `physlaws` — 126 знаков
