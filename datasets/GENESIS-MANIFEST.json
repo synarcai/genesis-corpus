@@ -3190,7 +3190,7 @@
     {
       "name": "algebra",
       "file": "datasets/genesis_algebra.txt",
-      "genre": "signs of mathematics, identities and simplification, checked by substitution",
+      "genre": "ЗНАК МАТЕМАТИКИ, НАЗВАННЫЙ НА ТРЁХ ЯЗЫКАХ, И ТОЖДЕСТВО, ПРОВЕРЕННОЕ ПОДСТАНОВКОЙ: «\\gamma называется гамма», «\\Gamma heisst grosses gamma», «\\emptyset is called empty set» — и рядом «при x = …», «чему равно …». Имя знака есть ОБЪЯВЛЕНИЕ традиции, а не правило; тождество же покупается счётом: подставь число и пересчитай. Потому мир держит русский, английский и немецкий разом (замер 12.09: 1744 строки, 956 равенств, 604 сложения, 452 умножения, 549 вопросов; 164 раза «называется/heisst/called»; читают formula, arith, indu).",
       "act": [
         "name",
         "recount"
@@ -3212,7 +3212,7 @@
     {
       "name": "physics",
       "file": "datasets/genesis_physics.txt",
-      "genre": "foundations of physics: seven integer laws, prefixes, dimensions",
+      "genre": "ЗАКОН ФИЗИКИ, СКАЗАННЫЙ ФОРМУЛОЙ И ТУТ ЖЕ ПРОЙДЕННЫЙ ЧИСЛАМИ С ЕДИНИЦАМИ: «что даёт работа = сила × путь при 20 и 3? работа = сила × путь; 20 ньютонов × 3 метра = 60 джоулей», «напряжение = ток × сопротивление; 3 ампера × 12 ом = 36 вольт». Формула стои́т первой, подстановка второй, и ЕДИНИЦА НЕСЁТСЯ ЧЕРЕЗ ВСЁ ДЕЙСТВИЕ — ньютон на метр даёт джоуль, ампер на ом даёт вольт (замер 12.09: 1468 строк, 1154 равенства, 740 умножений, 50 отказов; читают physics, langcount, engram, rugram).",
       "act": [
         "recount",
         "generalize"
@@ -3233,7 +3233,7 @@
     {
       "name": "cybernetics",
       "file": "datasets/genesis_cybernetics.txt",
-      "genre": "foundations of cybernetics: error, convergence, machines, requisite variety",
+      "genre": "УПРАВЛЕНИЕ, СЧИТАННОЕ ШАГАМИ ДО ЦЕЛИ, И ЗАКОН НЕОБХОДИМОГО РАЗНООБРАЗИЯ: «почему начав с 3 при цели 9 и шаге 3, значение достигает цели за 2 шага? потому что 3 + 2 × 3 = 9», «requisite variety is the law that a regulator can distinguish no more disturbances than it has states», «замкнутый контур … делает шаг, пока ошибка не 0». Понятие объявляется словом, а его следствие ПЕРЕСЧИТЫВАЕТСЯ: сколько шагов, сколько возмущений различит регулятор (замер 12.09: 1288 строк, 560 вопросов, 400 равенств, 50 отказов; читают cyber, engram, langcount, arith).",
       "act": [
         "recount"
       ],
@@ -3250,7 +3250,7 @@
     {
       "name": "notation",
       "file": "datasets/genesis_notation.txt",
-      "genre": "how a number is written: per cent, money, mixed numbers, ascii signs",
+      "genre": "ЧУЖАЯ ЗАПИСЬ ЧИСЛА, ПЕРЕВЕДЁННАЯ В СВОЮ: «какое число 0x1F? это 31», проценты, копейки и центы, доли. Мир переводит между СИСТЕМАМИ ЗАПИСИ — шестнадцатеричной, процентной, денежной — и всякий перевод есть счёт, а не соглашение: 0x1F пересчитывается, а не объявляется. Единственный из беднейших, где дробная запись стои́т НАРОЧНО (174 строки), ибо доля денег и процента без неё не пишется (замер 12.09: 1102 строки, 400 вопросов, 284 равенства, 160 знаков процента; читают notation, langcount, rugram, engram).",
       "act": [
         "translate",
         "name"

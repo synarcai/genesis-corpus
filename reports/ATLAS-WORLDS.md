@@ -88,7 +88,7 @@
 - **`ninelang`** (1800 строк; recompute, whole_only)  
   **THREE SHAPES IN NINE LANGUAGES** — one place, nine different words (07.09).
 - **`physics`** (1468 строк; recompute, whole_only)  
-  foundations of physics: seven integer laws, prefixes, dimensions
+  **ЗАКОН ФИЗИКИ, СКАЗАННЫЙ ФОРМУЛОЙ И ТУТ ЖЕ ПРОЙДЕННЫЙ ЧИСЛАМИ С ЕДИНИЦАМИ: «что даёт работа = сила × путь при 20 и 3? работа = сила × путь; 20 ньютонов × 3 метра = 60 джоулей», «напряжение = ток × сопротивление; 3 ампера × 12 ом = 36 вольт». Формула стои́т…
 - **`totalsubj`** (1440 строк; recompute, whole_only)  
   **THE TOTAL AS SUBJECT AND THE CONTAINER AS A UNIT OF COUNT (07.09). The atlas of the reader's unread numbers (tomograph st48, omega-ad) holds its largest unsorted class** — «other», 151 stories — and holon-f9 named two of its shapes.
 - **`arith_langs`** (1400 строк; recompute, unsigned_only)  
@@ -102,7 +102,7 @@
 - **`signedworld`** (1296 строк; recompute, whole_only, crossing_only)  
   **THE SIGNED WORLD** — a number below zero is still a number (05.09, Д-5 of the ranked defects).
 - **`cybernetics`** (1288 строк; recompute, whole_only)  
-  foundations of cybernetics: error, convergence, machines, requisite variety
+  УПРАВЛЕНИЕ, СЧИТАННОЕ ШАГАМИ ДО ЦЕЛИ, И ЗАКОН НЕОБХОДИМОГО РАЗНООБРАЗИЯ: «почему начав с 3 при цели 9 и шаге 3, значение достигает цели за 2 шага? потому что 3 + 2 × 3 = 9», «requisite variety is the law that a regulator can distinguish no more disturbances…
 - **`search_langs`** (1280 строк; recompute, unsigned_only)  
   **SEARCH WITH ITS LEDGER IN TEN LANGUAGES (holon's order for the market of reasoning, 03.09** — ONE-CARRIER: the ledger is the program is the proof): an answer that is FOUND by a bounded walk shows the walk step by primitive step — «the smallest prime great…
 - **`valence`** (1256 строк; recompute, declared, whole_only)  
@@ -418,7 +418,7 @@
 - **`metalang`** (1849 строк; recompute, declared, whole_only, exact_only, unsigned_only)  
   the METALANGUAGE OF PROOF in both tongues, where every word stands at content the court recomputes: a THEOREM with its CONDITION and CONCLUSION named at numbers, a DEFINITION with a case under it and a case refused, an AXIOM taken without proof, a LEMMA sho…
 - **`algebra`** (1744 строк; recompute, whole_only, unsigned_only)  
-  signs of mathematics, identities and simplification, checked by substitution
+  **ЗНАК МАТЕМАТИКИ, НАЗВАННЫЙ НА ТРЁХ ЯЗЫКАХ, И ТОЖДЕСТВО, ПРОВЕРЕННОЕ ПОДСТАНОВКОЙ: «\gamma называется гамма», «\Gamma heisst grosses gamma», «\emptyset is called empty set»** — и рядом «при x = …», «чему равно …».
 - **`inquiry_pl_tr`** (1537 строк; recompute, declared, whole_only)  
   **the ladder of inquiry in POLISH and TURKISH, where the QUESTION ITSELF STOPS BEING PUNCTUATION: Polish asks with a WORD («czy»), Turkish with a SEPARATE PARTICLE at the end that AGREES BY VOWEL HARMONY with the word before it** — four written forms of one…
 - **`genus_diff`** (1485 строк; declared, whole_only)  
@@ -508,7 +508,7 @@
 - **`formulas`** (1122 строк; recompute, whole_only)  
   **FORMULA AND DIAGRAM AS RECORDS TO BE EXECUTED** — declared until 12.09 in eight words.
 - **`notation`** (1102 строк; recompute, unsigned_only)  
-  how a number is written: per cent, money, mixed numbers, ascii signs
+  **ЧУЖАЯ ЗАПИСЬ ЧИСЛА, ПЕРЕВЕДЁННАЯ В СВОЮ: «какое число 0x1F? это 31», проценты, копейки и центы, доли. Мир переводит между СИСТЕМАМИ ЗАПИСИ** — шестнадцатеричной, процентной, денежной — и всякий перевод есть счёт, а не соглашение: 0x1F пересчитывается, а н…
 - **`dataformat`** (640 строк; same_object, flat_only)  
   **data formats: ONE flat record written in JSON, YAML, TOML and CSV and said in two tongues, with the conversion between them as the show; the court parses both sides with its own readers and requires the SAME RECORD, not the same string** — two writings di…
 - **`verbal`** (557 строк; recompute, whole_only, unsigned_only)  
@@ -568,14 +568,10 @@
     ОБЪЯВЛЕНИЕ В ТРИДЦАТЬ ЗНАКОВ НЕ ЛЖЁТ И НЕ ГОВОРИТ: читатель узнаёт имя мира
     и ничего сверх него.
 
-Миров: **28** из 257.
+Миров: **24** из 257.
 
-- `physics` — 64 знаков
-- `notation` — 68 знаков
 - `machine` — 70 знаков
 - `programs` — 74 знаков
-- `cybernetics` — 75 знаков
-- `algebra` — 76 знаков
 - `gsmwide` — 87 знаков
 - `realverbs` — 87 знаков
 - `gsmlex` — 91 знаков
