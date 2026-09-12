@@ -151,6 +151,10 @@ COURTS=("courts/arith_court.py" "courts/algo_court.py"
         # КЛЮЧ БЕЗ ОПОРЫ — вопрос удержанного ключа, чей род свод пишет реже LAW³ = 8
         # раз: отказ читателя на таком роде есть свидетельство о своде, а не о нём.
         "scripts/key_support.py"
+        # УЛОВ СУДА — сколько строк суд ловит ЕДИНСТВЕННЫЙ. Цена есть половина вопроса,
+        # вторая — что пропадёт, если снять. Печатает числа и сайдкар, не падает: снятие
+        # суда есть дело руки, а не прибора (`declarations/COURT-WORTH.md`).
+        "scripts/court_catch.py"
         # ПЕРЕКОС СОГЛАСОВАНИЯ — две формы ОДНОГО слова, показанные врозь: «quantos tem»
         # 2 страницы против «quantas tem» 6. Ключ видит такое лишь там, где СПРАШИВАЕТ;
         # этот прибор считает формы порознь по всему своду и не ждёт вопроса.
@@ -165,6 +169,9 @@ COURTS=("courts/arith_court.py" "courts/algo_court.py"
         # сверяют страницу с домом языка и своего закона не заводят.
         "courts/countlaw_court.py" "courts/elision_court.py"
         "courts/soundarticle_court.py" "courts/plcopula_court.py"
+        # ШЕСТОЙ ДОМ: испанское «hay» не меняется при числе, а польский сосед
+        # меняется — ловушка на ПЕРЕНОСЕ, и она ловит выучившего соседа.
+        "courts/hay_court.py"
         # ПОЛОВИНЧАТЫЙ ЗАКОН — место, где дом пишет множественное литералом рядом с
         # числом: правота такой строки держится жребием, а не законом.
         "scripts/half_law.py" "scripts/unknown_name.py" "scripts/stale_world.py" "scripts/agree_traps.py" "scripts/wrong_sign.py" "scripts/debt_mark.py" "scripts/copula_band.py" "scripts/past_gender.py" "scripts/word_once.py" "scripts/article_sound.py" "scripts/elision.py"

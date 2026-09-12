@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 287 миров, 434251 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 288 миров, 435058 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -11,7 +11,7 @@
 
 ## АКТ «recount» — пересчитать величину: строка утверждает число
 
-Миров 152, строк 226547.
+Миров 152, строк 227294.
 
 - **`links`** (17566 строк; declared, whole_only)  
   **CONVERSATION LINKS** — a question whose subject stands in the PREVIOUS reply (the owner's order, 04.09, item 5; the BESEDA band measures this genus mute 15 of 15).
@@ -25,14 +25,14 @@
   **the HOLE MARKET** — one fact frame and every role of it asked in turn (holon's Д-1, REVISION 02.09: a question in the organism is a per-genus surface, not an operation over a bought fact frame; the census of the svod: the number hole carries ~20 000 quest…
 - **`summaryforms`** (6102 строк; recompute, whole_only)  
   **THE SUMMARY** — what a COMPACTED record keeps and what it lost (05.09, the agent architecture, the fifth market): an episode of states and the note that keeps some of them, with questions about THE NOTE — what it says about a place it keeps, what it says …
+- **`opforms`** (5346 строк; recompute, whole_only)  
+  **THE OPERATOR WORD IN AN ORDER** — «divide 14 by 2. what do you get? 7.» (05.09, a defect measured on the held-out key: the reader answered 28, having multiplied).
 - **`numberline`** (5292 строк; recompute, whole_only)  
   **THE NUMBER LINE IN NINE LANGUAGES** — the simplest questions a person checks a speaker with, all mute in all nine languages on the third band of conversation (BESEDA-3, 05.09): «what number comes after 9? after 9 comes 10.», «which is bigger: 7 or 9? 9 is…
 - **`episodeforms`** (5229 строк; recompute, whole_only)  
   **THE EPISODE** — a TAPE of acts over one state (05.09, the agent architecture, the first market): three acts in a row and the question about the state after the whole tape; the question about the state after the SECOND step (the ledger's prefix); which act…
 - **`action_pages`** (4921 строк; recompute, whole_only)  
   **A LEDGER FOR EVERY COUNTABLE ACT** — NEW PAGES, OLD WORLDS UNTOUCHED (the collegium of a hundred per cent, owner 03.09; holon's first task, e9's condition «add new pages, do not rewrite old ones»): the reader's worlds answer computable questions with a va…
-- **`opforms`** (4599 строк; recompute, whole_only)  
-  **THE OPERATOR WORD IN AN ORDER** — «divide 14 by 2. what do you get? 7.» (05.09, a defect measured on the held-out key: the reader answered 28, having multiplied).
 - **`everyday`** (4578 строк; recompute, declared, whole_only, unsigned_only)  
   **everyday life, and every line of it CARRIES A COMPUTABLE GROUND: things counted, containment walked through a declared tree, time ordered by a declared row, the past of a verb by rule with irregulars named, comparison by subtraction, and what remains afte…
 - **`numbers`** (4220 строк; recompute, whole_only)  
@@ -320,7 +320,7 @@
 
 ## АКТ «compare» — сравнить двоих: больше, меньше, во столько же раз
 
-Миров 39, строк 17848.
+Миров 40, строк 17908.
 
 - **`cmpframes`** (6480 строк; recompute, whole_only)  
   **FRAMES OF COMPARISON** — the largest class of the reader's lies on the held-out key (05.09: twelve of fifteen — «9 flexiones más que», «in più/in meno di», «meer/minder dan», «więcej/mniej niż»: the marker is not bought and the answer takes a neighbouring…
@@ -394,6 +394,8 @@
   **ЛОВУШКИ СЛУЧАЯ И СРЕДНЕГО** — СВОД СЧИТАЛ ТО И ДРУГОЕ И НИ РАЗУ НЕ СКАЗАЛ, ГДЕ ОНИ ЛГУТ. Замер 12.09 по седьмому десятку понятий: свод считает среднее 1339 строками и вероятность 446, и все они верны, — а о том, что с этими числами делают дальше, ни слова…
 - **`plcopula`** (60 строк; declared, declared_table_only)  
   **ПОЛЬСКАЯ СВЯЗКА** — СВОД СТАВИЛ «jest» И «są» ПОЧТИ СЕМЬ ТЫСЯЧ РАЗ И НИ РАЗУ НЕ СКАЗАЛ, ПО КАКОМУ ЗАКОНУ ОНИ МЕНЯЮТСЯ. Замер 12.09 ПО СВОДУ, ПОРОЗНЬ: «jest» 6 578 строк, «są» 1 185 (вместе 6 953), а слов о связке в своде два, и оба о другом.
+- **`hay`** (60 строк; declared, declared_table_only)  
+  **ИСПАНСКОЕ «hay»** — СВОД СТАВИЛ ЕГО ТРИ ТЫСЯЧИ РАЗ И НИ РАЗУ НЕ СКАЗАЛ, ЧТО ОНО НЕ МЕНЯЕТСЯ. Замер 12.09 ПО СВОДУ: «hay» стои́т 3 316 строками, и «hay 1 libro» с «hay 5 libros» лежат рядом тысячами строк, ни одна из которых не говорит, что глагол НЕ ШЕВЕЛ…
 - **`soundarticle`** (54 строк; declared, declared_table_only)  
   **АРТИКЛЬ ПО ЗВУКУ** — СВОД ПИСАЛ «an hour» И «a university» ЧЕТЫРЕСТА СОРОК СЕМЬ РАЗ И НИ РАЗУ НЕ СКАЗАЛ, ЧТО ПРАВИЛО ЧИТАЕТСЯ ПО ЗВУКУ. Замер 12.09 ПО СВОДУ: слов «по звуку» НОЛЬ, «a book» 231 строка, «an hour» 107, «an apple» 84, «a unit» 22 — а «a unive…
 - **`ratetrap`** (50 строк; recompute, whole_only, exact_only)  
@@ -628,5 +630,5 @@
     ОБЪЯВЛЕНИЕ В ТРИДЦАТЬ ЗНАКОВ НЕ ЛЖЁТ И НЕ ГОВОРИТ: читатель узнаёт имя мира
     и ничего сверх него.
 
-Миров: **0** из 287.
+Миров: **0** из 288.
 
