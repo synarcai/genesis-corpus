@@ -382,6 +382,9 @@ recache.установить()
            # КИТАЙСКОЕ СЧЁТНОЕ СЛОВО (12.09, пятнадцатый дом): между числом и именем ОБЯЗАНО
            # стоять третье слово, и выбирает его имя — тот же закон, что у классов суахили.
            "zhclass_court",
+           # ТУРЕЦКАЯ ГАРМОНИЯ (12.09, шестнадцатый дом): «-lar» и «-ler» суть ОДИН суффикс,
+           # и выбирает его обличье ПОСЛЕДНЯЯ гласная основы, а при числе его нет вовсе.
+           "trharm_court",
            # ЭПИЗОД (05.09, архитектура агента: лента актов, префикс леджера, ничья шагов)
            "episodeforms_court", "summaryforms_court", "opforms_court", "readnum_court", "mandateforms_court", "personforms_court", "selfmodelforms_court", "signedworld_court", "beforetails_court", "discountroad_court", "nomention_court", "clockforms_court", "mixedunits_court", "dateforms_court", "clockwords_court", "speedforms_court", "enough_court", "numphrase_court", "kinbearer_court", "pronobject_court", "proform_court", "degrees_court", "actturn_court", "tempscale_court", "unitfrac_court", "place_court", "roman_court", "quantforms_court", "orderforms_court", "roundforms_court")
 
