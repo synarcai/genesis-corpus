@@ -253,6 +253,7 @@ recache.установить()
            "orderlaw_court",
            "gender_court",
            "measureprec_court",
+           "chancetrap_court",
            # …и НЕОБХОДИМОЕ С ДОСТАТОЧНЫМ: полная таблица двух свойств условия,
            # показанная делимостью, где оба ответа покупаются счётом
            "nesuf_court",
