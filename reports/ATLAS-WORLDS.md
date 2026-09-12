@@ -138,7 +138,7 @@
 - **`geometry_langs`** (960 строк; recompute, unsigned_only)  
   **AREA AND PERIMETER IN EIGHT LANGUAGES (the owner's word: every language in surplus; the geometry world says them in en/ru): the four facts of the geometry world** — the area and the perimeter of a rectangle, the perimeter and the area of a square — as sta…
 - **`genesis_bignum`** (937 строк; recompute, whole_only)  
-  large numbers, place rulers
+  **БОЛЬШОЕ ЧИСЛО ТЕМИ ЖЕ ЧЕТЫРЬМЯ ДЕЙСТВИЯМИ: сложение, вычитание, умножение и деление на сотнях и тысячах** — «сколько будет 200 − 100?», «what is 610 + 10?», «compute 950 − 100».
 - **`calendar`** (902 строк; recompute, whole_only, unsigned_only)  
   calendar: the week as congruence modulo 7, month order and length, the year as a sum of months
 - **`gsmwide`** (900 строк; recompute, whole_only, unsigned_only)  
@@ -184,7 +184,7 @@
 - **`opslaw`** (670 строк; recompute, whole_only)  
   **THE LAWS OF OPERATION** — AND THE MAIN THING IN THIS HOUSE IS THE LAW'S BOUNDARY. Measured 11.09 across the 234 show worlds: «переместительный», «commutative» — NONE; «сочетательный», «associative» — NONE; «распределительный», «раскрыть скобки», «distribu…
 - **`rates`** (667 строк; recompute, whole_only, unsigned_only)  
-  temporal unfoldings: rate over a period (genus 8)
+  **ЦЕНА, ЗАРАБОТОК И СКОРОСТЬ** — СКОЛЬКО ПРИХОДИТСЯ НА ОДНО И СКОЛЬКО НА МНОГО: «водитель зарабатывает … в час», «a driver earns …», «у него осталось …», «60 минут составляют час».
 - **`quantforms`** (648 строк; recompute, whole_only)  
   **THE QUANTIFIER** — «all», «some», «none» over a set that is COUNTED (06.09).
 - **`units_langs`** (640 строк; recompute, unsigned_only)  
@@ -302,7 +302,7 @@
 - **`amend`** (192 строк; recompute, whole_only)  
   **SELF-CORRECTION** — check YOUR OWN answer and say whether you were wrong.
 - **`fractions`** (188 строк; recompute, whole_only)  
-  parts of a whole: half/third/quarter on three surfaces
+  **ДОЛЯ ОТ ЧИСЛА, СКАЗАННАЯ СЛОВОМ И ЗНАКОМ РАЗОМ: «половина шести** — три», «a third of nine is three», «три четверти», «three quarters» — и тут же то же деление цифрами «18 ÷ 2 = 9».
 - **`both`** (186 строк; recompute, whole_only)  
   **TWO CONDITIONS** — an inference for which ONE ground is not enough.
 - **`likely`** (184 строк; recompute, whole_only)  
@@ -520,7 +520,7 @@
 - **`tempscale`** (198 строк; recompute, reversibility, exact_only)  
   **THE TEMPERATURE SCALE** — one quantity, two scales, and a formula with an INVERSE (06.09).
 - **`conversions`** (176 строк; recompute, whole_only, unsigned_only)  
-  conversions (genus 10): one unit told in another, three surfaces
+  **ПЕРЕВОД ОДНОЙ МЕРЫ В ДРУГУЮ ПО ОБЪЯВЛЕННОМУ ОТНОШЕНИЮ: «1 hour = 60 minutes», «в минуте 60 секунд», «5 weeks», «8 feet»** — время, длина и деньги, и всякий перевод есть умножение на число, которое мир называет вслух («a dollar is 100 cents»).
 
 ## АКТ «compare» — сравнить двоих: больше, меньше, во столько же раз
 
@@ -568,15 +568,11 @@
     ОБЪЯВЛЕНИЕ В ТРИДЦАТЬ ЗНАКОВ НЕ ЛЖЁТ И НЕ ГОВОРИТ: читатель узнаёт имя мира
     и ничего сверх него.
 
-Миров: **40** из 257.
+Миров: **36** из 257.
 
-- `genesis_bignum` — 27 знаков
 - `prog` — 47 знаков
-- `rates` — 49 знаков
 - `eng_proof` — 54 знаков
-- `fractions` — 54 знаков
 - `depletion` — 59 знаков
-- `conversions` — 64 знаков
 - `physics` — 64 знаков
 - `notation` — 68 знаков
 - `remainders` — 69 знаков
