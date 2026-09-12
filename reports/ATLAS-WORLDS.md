@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 269 миров, 430748 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 269 миров, 430856 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -542,7 +542,7 @@
 
 ## АКТ «translate» — сказать то же другой поверхностью, языком, записью
 
-Миров 13, строк 17833.
+Миров 13, строк 17941.
 
 - **`markdown`** (3428 строк; reversibility, reversible_only)  
   **markdown in full: thirty-two constructs of CommonMark, GFM and MDX/Docusaurus, each on four surfaces** — the record itself, its meaning in English and in Russian, and the question that asks for it; the oracle is REVERSIBILITY (a construct declares how to …
@@ -564,10 +564,10 @@
   **ДЕЙСТВИЕ, НАЗВАННОЕ СЛОВОМ ВМЕСТО ЗНАКА: «9 minus …», «8 plus …», «13 times …»** — и рядом то же знаком «3 - 3 = 0».
 - **`roman`** (387 строк; recompute, reversibility, whole_only)  
   **THE ROMAN NUMERAL** — a third notation, and the law that the ORDER of two signs decides the sign of their arithmetic (06.09).
+- **`tempscale`** (306 строк; recompute, reversibility, exact_only)  
+  **THE TEMPERATURE SCALE** — one quantity, two scales, and a formula with an INVERSE (06.09).
 - **`unitfrac`** (198 строк; recompute, reversibility, whole_only)  
   **THE NAMED FRACTION OF A UNIT** — «полчаса» is a WORD and a COMPUTATION (06.09).
-- **`tempscale`** (198 строк; recompute, reversibility, exact_only)  
-  **THE TEMPERATURE SCALE** — one quantity, two scales, and a formula with an INVERSE (06.09).
 - **`conversions`** (176 строк; recompute, whole_only, unsigned_only)  
   **ПЕРЕВОД ОДНОЙ МЕРЫ В ДРУГУЮ ПО ОБЪЯВЛЕННОМУ ОТНОШЕНИЮ: «1 hour = 60 minutes», «в минуте 60 секунд», «5 weeks», «8 feet»** — время, длина и деньги, и всякий перевод есть умножение на число, которое мир называет вслух («a dollar is 100 cents»).
 

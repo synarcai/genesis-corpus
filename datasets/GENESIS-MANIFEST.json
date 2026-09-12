@@ -5695,10 +5695,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 32002211,
+      "size": 32015381,
       "tiers": [],
       "text": "mix",
-      "lines": 386166
+      "lines": 386274
     },
     {
       "name": "full",
@@ -5713,10 +5713,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 39257807,
+      "size": 39270977,
       "tiers": [],
       "text": "mix",
-      "lines": 430748
+      "lines": 430856
     },
     {
       "name": "minimal",
@@ -10920,7 +10920,7 @@
     {
       "name": "tempscale",
       "file": "datasets/genesis_tempscale.txt",
-      "genre": "THE TEMPERATURE SCALE — one quantity, two scales, and a formula with an INVERSE (06.09). The census found ZERO lines carrying «по Цельсию», «Celsius» or «Fahrenheit» in the whole свод. Every conversion the corpus knows is ONE factor (kilometres to metres, hours to minutes); the two temperature scales differ by a factor AND AN OFFSET, and that is the first conversion here that cannot be done by one multiplication. Three frames: the road forward in two written steps (the factor, then the offset), the road BACK in the OPPOSITE order (the offset first, then the inverted factor — a reader that undoes the steps in the order they were done gets a wrong number), and the two anchors tied to facts the corpus already holds (water freezes at zero Celsius = thirty-two Fahrenheit, boils at a hundred = two hundred twelve). The constants of the law (nine fifths, thirty-two) stand in HOLES and are judged as numbers of the page, so a page that multiplies by five ninths is a lie and not a silence; negative temperatures are shown because the offset is where a sign is easiest to lose (tools/tempscale.py). CLOSED world.",
+      "genre": "THE TEMPERATURE SCALE — one quantity, two scales, and a formula with an INVERSE (06.09). The census found ZERO lines carrying «по Цельсию», «Celsius» or «Fahrenheit» in the whole свод. Every conversion the corpus knows is ONE factor (kilometres to metres, hours to minutes); the two temperature scales differ by a factor AND AN OFFSET, and that is the first conversion here that cannot be done by one multiplication. Three frames: the road forward in two written steps (the factor, then the offset), the road BACK in the OPPOSITE order (the offset first, then the inverted factor — a reader that undoes the steps in the order they were done gets a wrong number), and the two anchors tied to facts the corpus already holds (water freezes at zero Celsius = thirty-two Fahrenheit, boils at a hundred = two hundred twelve). The constants of the law (nine fifths, thirty-two) stand in HOLES and are judged as numbers of the page, so a page that multiplies by five ninths is a lie and not a silence; negative temperatures are shown because the offset is where a sign is easiest to lose (tools/tempscale.py). CLOSED world. ШЕСТЬ НОВЫХ ЦЕЛЬСИЕВ (12.09), и куплены они прибором КЛЮЧ БЕЗ ОПОРЫ: русское «N градуса по» и польское «N stopnie Fahrenheita» держали вопросы удержанного ключа при массе два. Оба рода возникают, когда ФАРЕНГЕЙТ кончается на 2, 3 или 4 (кроме второго десятка), — а прежних десяти цельсиев такими были лишь два. Прибавлены −30, −20, 0, 50, 90, 95: масса обоих родов 2 → 8, мир 190 → 306 страниц. РОД, ВОЗНИКАЮЩИЙ ЛИШЬ ПРИ НЕКОТОРЫХ ЧИСЛАХ ТАБЛИЦЫ, ЖИВЁТ РОВНО СТОЛЬКО РАЗ, СКОЛЬКО ТАКИХ ЧИСЕЛ В НЕЙ, — И ЧИСЛА ЭТИ ОТБИРАЮТСЯ, А НЕ ВЫПАДАЮТ.",
       "act": [
         "translate",
         "recount"
@@ -10936,7 +10936,8 @@
         "school"
       ],
       "actors": "",
-      "text": "shows"
+      "text": "shows",
+      "size": 36666
     },
     {
       "name": "actturn",
