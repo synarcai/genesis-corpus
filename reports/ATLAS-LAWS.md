@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 179 законов
+# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 193 законов
 
 Собран из докстрингов и комментариев `tools`, `courts`, `scripts` орудием
 `tools/law_atlas.py`. Взяты ОБЩИЕ законы — те, что держатся не одним файлом.
@@ -6,20 +6,23 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 3889 разных законов на 4399 упоминаний; сказанных однажды — 3710, и они остаются при своём месте.
+Всего в дереве 4011 разных законов на 4549 упоминаний; сказанных однажды — 3818, и они остаются при своём месте.
 
+
+## Держат 46 файлов
+
+- **СУД, ПИШУЩИЙ ЗАКОН ВТОРОЙ РАЗ, РАСХОДИТСЯ С ДОМОМ НА ПЕРВОЙ ЖЕ ПРАВКЕ**  
+  courts/abs_court.py, courts/addshare_court.py, courts/amend_court.py, courts/both_court.py, courts/bound_court.py, courts/ceilfloor_court.py … и ещё 40
+
+## Держат 45 файлов
+
+- **СТРАНИЦА, КОТОРУЮ РАМКА НЕ ПОРОЖДАЕТ, НЕ ЕСТЬ ЛОЖЬ ЭТОГО СУДА**  
+  tools/absforms.py, tools/addshareforms.py, tools/amendforms.py, tools/bothforms.py, tools/boundforms.py, tools/ceilfloorforms.py … и ещё 39
 
 ## Держат 44 файлов
 
 - **МИР ЗАМКНУТ, И ЭТО ПРОВЕРЕНО ДЕЛОМ, А НЕ ОБЪЯВЛЕНО МНЕНИЕМ**  
   courts/age_court.py, courts/algo_court.py, courts/average_court.py, courts/calendar_court.py, courts/case_court.py, courts/compare_mult_court.py … и ещё 38
-- **СУД, ПИШУЩИЙ ЗАКОН ВТОРОЙ РАЗ, РАСХОДИТСЯ С ДОМОМ НА ПЕРВОЙ ЖЕ ПРАВКЕ**  
-  courts/abs_court.py, courts/addshare_court.py, courts/amend_court.py, courts/both_court.py, courts/bound_court.py, courts/ceilfloor_court.py … и ещё 38
-
-## Держат 43 файлов
-
-- **СТРАНИЦА, КОТОРУЮ РАМКА НЕ ПОРОЖДАЕТ, НЕ ЕСТЬ ЛОЖЬ ЭТОГО СУДА**  
-  tools/absforms.py, tools/addshareforms.py, tools/amendforms.py, tools/bothforms.py, tools/boundforms.py, tools/ceilfloorforms.py … и ещё 37
 
 ## Держат 28 файлов
 
@@ -71,6 +74,8 @@
 
 - **ВЕТВЬ СЛИТОГО ОБРАЗЦА НЕ ЕСТЬ РОД**  
   courts/cyber_court.py, courts/episode_court.py, courts/everyday_court.py, courts/markup_court.py, courts/notationvar_court.py, courts/proof_court.py … и ещё 1
+- **МИР БЕЗ ВОПРОСНОЙ ПОВЕРХНОСТИ ПОКАЗЫВАЕТ ОТВЕТ, НЕ ПОКАЗЫВАЯ ЗАДАЧИ**  
+  tools/digitlenforms.py, tools/numlabelforms.py, tools/onestepforms.py, tools/parityforms.py, tools/placevalforms.py, tools/powforms.py … и ещё 1
 - **СУД НЕ СМЕЕТ ЧИТАТЬ ЧУЖОЙ РОД**  
   courts/equation_court.py, courts/inquiry_es_it_court.py, courts/inquiry_pl_tr_court.py, courts/longdiv_court.py, courts/metalang_court.py, courts/relation_court.py … и ещё 1
 
@@ -78,6 +83,8 @@
 
 - **ВОПРОС И ЕГО ОТВЕТ СВЯЗАНЫ РОДОМ, А НЕ СОСЕДСТВОМ**  
   courts/equation_court.py, courts/inquiry_court.py, courts/inquiry_de_fr_court.py, courts/inquiry_es_it_court.py, courts/inquiry_pl_tr_court.py, courts/inquiry_pt_nl_court.py
+- **САМАЯ ДЛИННАЯ ЗАДАЧА ЕСТЬ ДНО СРОКА**  
+  courts/arith_court.py, scripts/claims_court.py, scripts/court_reach.py, scripts/coverage.py, scripts/prose_court.py, tools/panel.py
 
 ## Держат 5 файлов
 
@@ -135,6 +142,8 @@
   courts/need_court.py, tools/needforms.py, tools/unitcmpforms.py
 - **ОТКАЗ С ОСНОВАНИЕМ ЕСТЬ ОТВЕТ**  
   courts/need_court.py, tools/needforms.py, tools/unitcmpforms.py
+- **ПОВОД — ЗАМЕР, А НЕ ЗАМЫСЕЛ**  
+  tools/chanceforms.py, tools/closureforms.py, tools/opchoiceforms.py
 - **ПОДСУДНОСТЬ ОБЪЯВЛЯЕТСЯ РОДОМ ТЕКСТА МИРА, А НЕ ПУТЁМ ФАЙЛА**  
   courts/engram_court.py, courts/halves_court.py, tools/foreign.py
 - **ПОРЧА, КОТОРУЮ СУД НЕ ВИДИТ, ЕСТЬ ПОРЧА, КОТОРОЙ ЕГО РУБЕЖ НЕ КАСАЕТСЯ**  
@@ -204,6 +213,8 @@
   courts/calendar_court.py, tools/gen_genesis_calendar.py
 - **ВЫБРАННЫЙ ЧЛЕН ОТКРЫВАЕТ ОТВЕТ**  
   courts/valence_court.py, tools/gen_genesis_valence.py
+- **ГРАНИЦА БЕЗ ПРИЗНАКА ДЕЛА ЕСТЬ СЛОВО, А НЕ МЕРА**  
+  scripts/manifest_court.py, tools/manifest_kinds.py
 - **ГРАНИЦА ОБЪЯВЛЕНА ЗДЕСЬ, А НЕ СПРЯТАНА**  
   courts/langform_court.py, courts/langrule_court.py
 - **ДЕЙСТВИЕ БЕРЁТСЯ ИЗ ВОПРОСА, А НЕ ИЗ СЛОВА УСЛОВИЯ**  
@@ -214,6 +225,10 @@
   tools/factorforms.py, tools/reduceforms.py
 - **ДЛИННОЕ ИМЯ ПРОБУЕТСЯ ПЕРВЫМ**  
   courts/rugram_court.py, courts/share_court.py
+- **ДОЛГ, НАЗВАННЫЙ ОДНИМ ЧИСЛОМ, НЕЧЕМ ПЛАТИТЬ**  
+  scripts/concept_reach.py, scripts/repeat_census.py
+- **ДОЛГ, НАЗВАННЫЙ ЧИСЛОМ, НЕЧЕМ ПЛАТИТЬ**  
+  scripts/oracle_named.py, tools/manifest_kinds.py
 - **ДОМ ОТ ЭТОГО НЕ ПАДАЕТ, ИБО ДЫРА БЫЛА ИЗМЕРЕНА ОТДЕЛЬНО И НЕ ПЕРЕПИСЬЮ**  
   tools/chanceforms.py, tools/leverforms.py
 - **ДОМ, УЧАЩИЙ ПРАВИЛУ, УЧИЛ ЕГО НА ТОМ САМОМ ГЛАГОЛЕ, НА КОТОРОМ ПРАВИЛО ЛОМАЕТСЯ**  
@@ -288,8 +303,6 @@
   tools/measureof.py, tools/totalsubj.py
 - **ПЕРВЫЙ И ВТОРОЙ СУТЬ МИНИМАЛЬНАЯ ПАРА ПО НАПРАВЛЕНИЮ**  
   tools/mulshareforms.py, tools/pctchangeforms.py
-- **ПОВОД — ЗАМЕР, А НЕ ЗАМЫСЕЛ**  
-  tools/chanceforms.py, tools/opchoiceforms.py
 - **ПОНЯТИЕ, НАЗВАННОЕ СЛОВАРЁМ И НЕ ПОКАЗАННОЕ СЧЁТОМ, ЕСТЬ ПОНЯТИЕ НЕПОКАЗАННОЕ**  
   tools/chanceforms.py, tools/leverforms.py
 - **ПОРЧА СЛОВА НЕОТЛИЧИМА ОТ СЛОВОИЗМЕНЕНИЯ БЕЗ ОБЪЯВЛЕННОГО СЛОВАРЯ ЯЗЫКА**  
@@ -306,6 +319,10 @@
   courts/compare_mult_court.py, tools/gen_genesis_compare_mult.py
 - **ПРИЗНАК ЧИСТ И НЕ СПРАШИВАЕТ ОБ ИСТИНЕ**  
   scripts/agree_traps.py, scripts/sign_traps.py
+- **ПРИЗНАК, ИСКОМЫЙ ПОДСТРОКОЙ, НАХОДИТСЯ В ТОМ, КТО О НЁМ ГОВОРИТ**  
+  scripts/sign_intact.py, tools/court_atlas.py
+- **ПРИЗНАК, ЧИТАЮЩИЙ ЗВЕНО ЦЕПИ КАК ЦЕЛОЕ РАВЕНСТВО, НАХОДИТ ЛОЖЬ В СВОЁМ ЖЕ ЧТЕНИИ**  
+  courts/closure_court.py, tools/closureforms.py
 - **ПРОБА, НЕДОСЧИТЫВАЮЩАЯ СУЩЕСТВУЮЩЕЕ, ЛЖЁТ О ПРОБЕЛЕ**  
   tools/rhetoric.py, tools/syllabus.py
 - **ПРОВЕРКА ИДЁТ ТЕМ ЖЕ ПУТЁМ, ЧТО И ДЕЛО**  
@@ -328,6 +345,10 @@
   tools/gen_genesis_compare_mult.py, tools/gen_genesis_percent.py
 - **РОД ТОВАРА ТАМ, ГДЕ ВОПРОСНОЕ СЛОВО ЕГО ДЕРЖИТ**  
   tools/discountroad.py, tools/readnum.py
+- **СБОРКА В ПОРЯДКЕ МАНИФЕСТА И СТРОК**  
+  scripts/coverage.py, scripts/prose_court.py
+- **СБОРКА В ПОРЯДКЕ ОБХОДА И СТРОК**  
+  courts/arith_court.py, scripts/claims_court.py
 - **СВЯЗКА МЕСТА ГНЁТСЯ ПО ЧИСЛУ**  
   tools/episodeforms.py, tools/toolforms.py
 - **СЛОВА ПОСЛЕ ПОСЛЕДНЕГО ДВОЕТОЧИЯ**  
@@ -358,6 +379,8 @@
   courts/physics_court.py, courts/physlaw_court.py
 - **СУДЫ ПОКАЗОВ ЧИТАЮТ ЧИСЛА, А СЛОВА У НИХ ДЕКОРАЦИЯ**  
   courts/rowframe_court.py, scripts/word_mutants.py
+- **СУЖЕНИЕ ОБЪЯВЛЕНО ЗАДАЧЕЙ, А НЕ УНАСЛЕДОВАНО**  
+  scripts/claims_court.py, scripts/court_reach.py
 - **СЧЁТНАЯ ФОРМА БЕРЁТСЯ У ЯЗЫКА**  
   tools/divsenseforms.py, tools/mapscaleforms.py
 - **СЧЁТНАЯ ФОРМА ЕСТЬ ФОРМА СВОЕГО ЧИСЛА, И ВСЕ ФОРМЫ СТРАНИЦЫ — ФОРМЫ ОДНОЙ ВЕЩИ**  
@@ -368,12 +391,20 @@
   tools/absforms.py, tools/pctchangeforms.py
 - **СЧЁТНАЯ ФОРМА СУДИТСЯ НАРАВНЕ С ЧИСЛОМ**  
   courts/ru_compare_court.py, courts/ru_story_court.py
+- **Т НА ПРАВИЛЕ, КОТОРОГО СВОД НЕ ГОВОРИЛ**  
+  tools/closureforms.py, tools/digitlenforms.py
+- **Т ПОСЛЕДНИМ В КАЖДОМ ЗВЕНЕ, ЧТОБЫ ЕГО ПРОЧЁЛ ОБЩИЙ СУД**  
+  tools/closureforms.py, tools/onestepforms.py
+- **УКАЗАТЕЛЬ, ЗАВИСЯЩИЙ ОТ ВСЯКОЙ СТРОКИ ДЕРЕВА, НЕ МОЖЕТ БЫТЬ СУДОМ**  
+  tools/court_atlas.py, tools/law_atlas.py
 - **ФОРМА ВЕЩИ ПРИ ЧИСЛЕ БЕРЁТСЯ У ДОМА ПРИРОДЫ**  
   tools/anaphoraforms.py, tools/jointforms2.py
 - **ФОРМА, НЕ ПОКАЗАННАЯ ПРИ ЕДИНИЦЕ, НЕ КУПЛЕНА**  
   scripts/one_singular.py, tools/gen_genesis_physics.py
 - **ФРАНЦУЗСКАЯ ЭЛИЗИЯ ДЕЛАЕТСЯ ПОСЛЕ ПОДСТАНОВКИ**  
   tools/cmpframes.py, tools/holdforms.py
+- **ХВОСТ СТРОКИ ЕСТЬ ЧАСТЬ СТРОКИ, ПОКА СУД НЕ СКАЗАЛ ИНОГО**  
+  courts/arith_court.py, scripts/claims_court.py
 - **ХОДЫ СВЕРЯЮТСЯ ПЕРЕД ПОКАЗОМ**  
   tools/gen_genesis_dataformat.py, tools/gen_genesis_formula_lang.py
 - **ЦЕЛЬ ОБЪЯВЛЕНА ИМЕНЕМ МОДУЛЯ, А НЕ ПЕРЕМЕННОЙ ВНУТРИ ТЕЛА**  
