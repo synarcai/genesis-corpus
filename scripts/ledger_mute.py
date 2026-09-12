@@ -37,6 +37,8 @@
 
     python3 scripts/ledger_mute.py
 """
+# ПУСТОЙ-ОБХОД: --леджер no-such-ledger
+import argparse
 import pathlib
 import re
 import sys
@@ -112,14 +114,20 @@ def main():
             print(f"  ПРОБА ПАЛА: {б}")
         print(f"НЕМОЙ ПРИБОР ОТКАЗ: обрыв от вердикта не отличён ({len(беды)} бед)")
         return 2
-    if not НАБОР.is_file() or not ЛЕДЖЕР.is_file():
-        нет = НАБОР if not НАБОР.is_file() else ЛЕДЖЕР
-        print(f"НЕМОЙ ПРИБОР ОТКАЗ: нет «{нет.relative_to(КОРЕНЬ)}»")
+    ап = argparse.ArgumentParser()
+    ап.add_argument("--леджер", default=None)
+    ап.add_argument("--набор", default=None)
+    дов = ап.parse_args()
+    леджер = pathlib.Path(дов.леджер) if дов.леджер else ЛЕДЖЕР
+    набор = pathlib.Path(дов.набор) if дов.набор else НАБОР
+    if not набор.is_file() or not леджер.is_file():
+        нет = набор if not набор.is_file() else леджер
+        print(f"НЕМОЙ ПРИБОР ОТКАЗ: нет «{нет}»")
         return 2
     в_наборе = {pathlib.Path(п).name
-                for п in В_НАБОРЕ.findall(НАБОР.read_text(encoding="utf-8"))}
+                for п in В_НАБОРЕ.findall(набор.read_text(encoding="utf-8"))}
     вердиктов, обрывов = разбор(
-        ЛЕДЖЕР.read_text(encoding="utf-8", errors="replace").splitlines())
+        леджер.read_text(encoding="utf-8", errors="replace").splitlines())
     немые = sorted(и for и in в_наборе if и in обрывов and и not in вердиктов)
     незнаемые = sorted(и for и in в_наборе if и not in обрывов and и not in вердиктов)
     for и in немые:

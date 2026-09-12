@@ -55,6 +55,8 @@
 
     python3 scripts/partial_guard.py
 """
+# ПУСТОЙ-ОБХОД: --след no-such-trace
+import argparse
 import pathlib
 import sys
 
@@ -162,11 +164,15 @@ def main():
             print(f"  ПРОБА ПАЛА: {б}")
         print(f"ЧАСТНЫЙ ИТОГ ОТКАЗ: счёт срока не доказан ({len(беды)} бед)")
         return 2
-    if not СЛЕД.is_file():
-        print(f"ЧАСТНЫЙ ИТОГ ОТКАЗ: следа нет — {СЛЕД.relative_to(КОРЕНЬ)}; "
+    ап = argparse.ArgumentParser()
+    ап.add_argument("--след", default=None)
+    дов = ап.parse_args()
+    путь = pathlib.Path(дов.след) if дов.след else СЛЕД
+    if not путь.is_file():
+        print(f"ЧАСТНЫЙ ИТОГ ОТКАЗ: следа нет — {путь}; "
               "его пишет scripts/courts.sh по ходу набора")
         return 2
-    записи = след(СЛЕД.read_text(encoding="utf-8", errors="replace").splitlines())
+    записи = след(путь.read_text(encoding="utf-8", errors="replace").splitlines())
     имена, дорогие = молчащие(записи)
     for и, всего, первая, строк, почему in имена:
         print(f"  БЕЗ ЧАСТНОГО ИТОГА {и}: шёл {всего} с, {почему}, строк вывода {строк}")

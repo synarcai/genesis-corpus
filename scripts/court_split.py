@@ -44,8 +44,9 @@
 есть долг. Он может значить и дубль, и то, что выборка не добралась до рода
 этого суда. Рубеж здесь поставила бы рука, спутавшая незнание с виной.
 
-    python3 scripts/court_split.py [--проб N] [--подробно]
+    python3 scripts/court_split.py [--проб N] [--манифест ПУТЬ] [--подробно]
 """
+# ПУСТОЙ-ОБХОД: --манифест no-such-manifest
 import argparse
 import collections
 import json
@@ -172,12 +173,14 @@ def main():
         return 2
     ап = argparse.ArgumentParser()
     ап.add_argument("--проб", type=int, default=ПРОБ_НА_МИР)
+    ап.add_argument("--манифест", default=None)
     ап.add_argument("--подробно", action="store_true")
     дов = ап.parse_args()
-    if not МАНИФЕСТ.is_file():
-        print(f"РАЗНОГЛАСИЕ СУДОВ ОТКАЗ: нет манифеста {МАНИФЕСТ.name}")
+    манифест = pathlib.Path(дов.манифест) if дов.манифест else МАНИФЕСТ
+    if not манифест.is_file():
+        print(f"РАЗНОГЛАСИЕ СУДОВ ОТКАЗ: нет манифеста {манифест}")
         return 2
-    м = json.loads(МАНИФЕСТ.read_text(encoding="utf-8"))
+    м = json.loads(манифест.read_text(encoding="utf-8"))
     судит, поймал, один, порч, пойманных, разобрано, примеры = обойти(
         м["worlds"], м.get("external_root"), дов.проб, дов.подробно)
     if not порч:
