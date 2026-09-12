@@ -118,7 +118,7 @@ for _яз, _ц in ЦВЕТА.items():
         класс="{ч} is {к}. what is {ч}? {ч} is {к}.",
         два_места="{ЕСТЬn} {n} {Тn} {М} and {ЕСТЬm} {m} {Тm} {М2}. where are there more {Тмн}? {МБ}.",
         цвет="{X} has {n} {Ц} {Тn}. what colour are the {Тмн}? {ЦП}.",
-        принадлежность="{n} {Тn} are {М}. where are the {n} {Тn}? {М}.",
+        принадлежность="{n} {Тn} {ЕСТЬ2n} {М}. where {ЕСТЬ2n} the {n} {Тn}? {М}.",
         есть_ли="{ЕСТЬn} {n} {Тn} {М}. are there any {Тмн} {М}? {ДА}, {ЕСТЬn} {n} {Тn} {М}.",
         нет_ли="there are no {Тмн} {М}. are there any {Тмн} {М}? {НЕТ}, there are no {Тмн} {М}."),
     "de": dict(
