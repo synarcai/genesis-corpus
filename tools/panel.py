@@ -376,6 +376,12 @@ recache.установить()
            # КЛАСС В СУАХИЛИ (12.09, тринадцатый дом): свод отвергал неверное согласование
            # пятнадцатью строками и НЕ ГОВОРИЛ ПОЧЕМУ — дом даёт причину, а не запрет.
            "swclass_court",
+           # ИНДОНЕЗИЙСКОЕ УДВОЕНИЕ (12.09, четырнадцатый дом): множественное делается
+           # ПОВТОРОМ СЛОВА, а при числительном повтор становится лишним и запрещённым.
+           "idredup_court",
+           # КИТАЙСКОЕ СЧЁТНОЕ СЛОВО (12.09, пятнадцатый дом): между числом и именем ОБЯЗАНО
+           # стоять третье слово, и выбирает его имя — тот же закон, что у классов суахили.
+           "zhclass_court",
            # ЭПИЗОД (05.09, архитектура агента: лента актов, префикс леджера, ничья шагов)
            "episodeforms_court", "summaryforms_court", "opforms_court", "readnum_court", "mandateforms_court", "personforms_court", "selfmodelforms_court", "signedworld_court", "beforetails_court", "discountroad_court", "nomention_court", "clockforms_court", "mixedunits_court", "dateforms_court", "clockwords_court", "speedforms_court", "enough_court", "numphrase_court", "kinbearer_court", "pronobject_court", "proform_court", "degrees_court", "actturn_court", "tempscale_court", "unitfrac_court", "place_court", "roman_court", "quantforms_court", "orderforms_court", "roundforms_court")
 
