@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 269 миров, 429929 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 269 миров, 430748 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -11,7 +11,7 @@
 
 ## АКТ «recount» — пересчитать величину: строка утверждает число
 
-Миров 152, строк 224031.
+Миров 152, строк 224850.
 
 - **`links`** (17566 строк; declared, whole_only)  
   **CONVERSATION LINKS** — a question whose subject stands in the PREVIOUS reply (the owner's order, 04.09, item 5; the BESEDA band measures this genus mute 15 of 15).
@@ -31,6 +31,8 @@
   **THE EPISODE** — a TAPE of acts over one state (05.09, the agent architecture, the first market): three acts in a row and the question about the state after the whole tape; the question about the state after the SECOND step (the ledger's prefix); which act…
 - **`action_pages`** (4921 строк; recompute, whole_only)  
   **A LEDGER FOR EVERY COUNTABLE ACT** — NEW PAGES, OLD WORLDS UNTOUCHED (the collegium of a hundred per cent, owner 03.09; holon's first task, e9's condition «add new pages, do not rewrite old ones»): the reader's worlds answer computable questions with a va…
+- **`opforms`** (4599 строк; recompute, whole_only)  
+  **THE OPERATOR WORD IN AN ORDER** — «divide 14 by 2. what do you get? 7.» (05.09, a defect measured on the held-out key: the reader answered 28, having multiplied).
 - **`everyday`** (4578 строк; recompute, declared, whole_only, unsigned_only)  
   **everyday life, and every line of it CARRIES A COMPUTABLE GROUND: things counted, containment walked through a declared tree, time ordered by a declared row, the past of a verb by rule with irregulars named, comparison by subtraction, and what remains afte…
 - **`numbers`** (4220 строк; recompute, whole_only)  
@@ -39,8 +41,6 @@
   **CROSSING** — the question head and the NOTATION OF THE OPERATION are two independent axes, and the corpus showed them locked together. holon's finding on the live canon: the organism answers «what is 17 plus 25», «how much is 17 + 25», «17 plus 25 equals?…
 - **`sceneforms`** (3818 строк; declared, whole_only)  
   **THE SCENE** — six frames without a verb of action (05.09, the measure of the day: story holdings are bought in English only — nought right in eight languages while the shows stand in all nine; the market of frames needs the VOLUME of different frames, not…
-- **`opforms`** (3780 строк; recompute, whole_only)  
-  **THE OPERATOR WORD IN AN ORDER** — «divide 14 by 2. what do you get? 7.» (05.09, a defect measured on the held-out key: the reader answered 28, having multiplied).
 - **`linalg`** (3606 строк; recompute, exact_only)  
   **THE VECTOR AS A PAIR THAT ADDS PLACE BY PLACE** — declared until 12.09 in fifteen words.
 - **`beforetails`** (3600 строк; recompute, whole_only)  
