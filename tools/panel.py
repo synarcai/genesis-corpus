@@ -361,6 +361,9 @@ recache.установить()
            # ДВА «БЫТЬ» (12.09, восьмой дом): испанский делит надвое то, что русский и
            # английский держат одним словом, и выбор МЕНЯЕТ СМЫСЛ, а не только оттенок.
            "serestar_court",
+           # АНГЛИЙСКОЕ «do» (12.09, девятый дом): вопрос делается не перестановкой, а НОВЫМ
+           # СЛОВОМ, и два рода из пяти показывают ГРАНИЦЫ этого закона.
+           "dosupport_court",
            # ЭПИЗОД (05.09, архитектура агента: лента актов, префикс леджера, ничья шагов)
            "episodeforms_court", "summaryforms_court", "opforms_court", "readnum_court", "mandateforms_court", "personforms_court", "selfmodelforms_court", "signedworld_court", "beforetails_court", "discountroad_court", "nomention_court", "clockforms_court", "mixedunits_court", "dateforms_court", "clockwords_court", "speedforms_court", "enough_court", "numphrase_court", "kinbearer_court", "pronobject_court", "proform_court", "degrees_court", "actturn_court", "tempscale_court", "unitfrac_court", "place_court", "roman_court", "quantforms_court", "orderforms_court", "roundforms_court")
 

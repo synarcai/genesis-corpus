@@ -1792,6 +1792,29 @@
       ]
     },
     {
+      "name": "dosupport",
+      "file": "datasets/genesis_dosupport.txt",
+      "genre": "АНГЛИЙСКОЕ «do» — СВОД СПРАШИВАЛ ИМ ДЕСЯТЬ ТЫСЯЧ РАЗ И НИ РАЗУ НЕ СКАЗАЛ, ОТКУДА ОНО ВЗЯЛОСЬ. Замер 12.09 ПО СВОДУ, ПОРОЗНЬ: «how many … do/does …» 10 489 строк, «did …» 5 317, «are you / can you …» 1 350 (и здесь «do» НЕ СТОИ́Т), «who has / who is …» 387 (и здесь его тоже нет); строк, объясняющих «do», — НОЛЬ. Пять случаев, все пять свод пишет, и обо всех пяти молчит. ЗНАНИЕ, ЗАПИСАННОЕ ДАННЫМИ И КОДОМ, НО НЕ СТРАНИЦЕЙ, ЕСТЬ ЗНАНИЕ ПИШУЩЕГО, А НЕ ЧИТАЮЩЕГО. Читатель, пришедший из русского («сколько у тебя книг?») или немецкого («wie viele Bücher hast du?»), делает вопрос ПЕРЕСТАНОВКОЙ: глагол сам идёт вперёд. Английский требует слова, которого в утверждении не было вовсе. ЯЗЫК, ТРЕБУЮЩИЙ В ВОПРОСЕ СЛОВА, КОТОРОГО НЕТ В УТВЕРЖДЕНИИ, НЕ ПЕРЕСТАВЛЯЕТ СЛОВА, А ВВОДИТ НОВОЕ. Пять родов и пять ложных выводов: «вопрос делается перестановкой» (*Knows he the answer?), «do есть украшение» (*Does he knows — лицо УШЛО на does, и ОДНО ОКОНЧАНИЕ НА ДВОИХ НЕ ДЕЛИТСЯ), «время остаётся на глаголе» (*Did she saw), «do нужен всегда» (*Do you be ready? — связка и модальные идут в вопрос САМИ), «do нужен во всяком вопросе» (*Who does have the book? — вопрос о ПОДЛЕЖАЩЕМ порядка слов не ломает, и вспомогательному нет работы). ЧЕТВЁРТЫЙ И ПЯТЫЙ ВЫВОДЫ ВАЖНЕЕ ПРОЧИХ, ИБО ПОКАЗЫВАЮТ ГРАНИЦУ ЗАКОНА: ПРАВИЛО, ДАННОЕ БЕЗ СВОИХ ГРАНИЦ, ЛОЖНО РОВНО ЗА ИХ ПРЕДЕЛАМИ — и ученик переходит их тем увереннее, чем лучше выучил правило. ЗАПРЕЩЁННОЕ ПОКАЗАНО СО ЗВЁЗДОЧКОЙ, и звёздочку читает суд пятым своим законом. This is the fifty-ninth trap of the series — «a question is made by reordering», and English «do» breaks it. Дом не знает английского: лица, глаголы и их формы объявлены рукой, и сказано, что рукой; о временах составных, об усилительном «do» и о вопросах с предлогом на конце дом молчит, а не угадывает.",
+      "act": [
+        "compare",
+        "expound",
+        "inflect",
+        "refute"
+      ],
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "declared_table_only"
+      ],
+      "assemblies": [
+        "school"
+      ],
+      "size": 214568,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
       "name": "ecampus_ju_neuroscience",
       "file": "shelf/en/ecampus_ju_neuroscience.txt",
       "genre": "Neuroscience: Canadian 1st Edition Open Textbook, units 2–4: Neurodegeneration; Fundamental Neuroscience Techniques; Emergent Topics in Neuroscience — Dr William Ju; ed. Georgia Bains, Ingrid Barany, Maksym Shcherbina, Summer Lee; eCampusOntario 2018 под CC BY 4.0",
@@ -2439,10 +2462,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 39906916,
+      "size": 40121486,
       "tiers": [],
       "text": "mix",
-      "lines": 435312
+      "lines": 435972
     },
     {
       "name": "gender",
@@ -10446,10 +10469,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 32651320,
+      "size": 32865890,
       "tiers": [],
       "text": "mix",
-      "lines": 390730
+      "lines": 391390
     },
     {
       "name": "school_biling_v2c",
