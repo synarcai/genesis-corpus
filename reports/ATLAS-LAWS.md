@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 308 законов
+# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 310 законов
 
 Собран из докстрингов и комментариев `tools`, `courts`, `scripts` орудием
 `tools/law_atlas.py`. Взяты ОБЩИЕ законы — те, что держатся не одним файлом.
@@ -6,7 +6,7 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 5319 разных законов на 6425 упоминаний; сказанных однажды — 5011, и они остаются при своём месте.
+Всего в дереве 5329 разных законов на 6446 упоминаний; сказанных однажды — 5019, и они остаются при своём месте.
 
 
 ## Держат 71 файлов
@@ -103,6 +103,8 @@
   tools/angleforms.py, tools/condforms.py, tools/directforms.py, tools/homoforms.py, tools/measureforms.py, tools/medianforms.py … и ещё 5
 - **ПРИНАДЛЕЖНОСТИ К СВОЕМУ НАБОРУ**  
   tools/decaseforms.py, tools/dosupportforms.py, tools/fuseprepforms.py, tools/idredupforms.py, tools/koparticleforms.py, tools/nlarticleforms.py … и ещё 5
+- **СЛОВО, ПОКАЗАННОЕ ОДИН РАЗ, ЕСТЬ СЛОВО НЕПОКАЗАННОЕ**  
+  scripts/word_once.py, tools/angleforms.py, tools/directforms.py, tools/elisionforms.py, tools/idredupforms.py, tools/koparticleforms.py … и ещё 5
 
 ## Держат 10 файлов
 
@@ -324,6 +326,8 @@
   tools/gen_genesis_school_biling_v2c.py, tools/inverting.py
 - **ВОПРОСНОЕ СЛОВО ПО РОДУ ВЕЩИ**  
   tools/episodeforms.py, tools/toolforms.py
+- **ВОПРОСНЫЙ РОД БЕРЁТ ПОСЛЕДНЕЕ ЧИСЛО РЯДА, А НЕ ПЕРВОЕ**  
+  tools/idredupforms.py, tools/trharmforms.py
 - **ВСПОМНЯТ, И ОТСТАЁТ РОВНО НА СТОЛЬКО, НА СКОЛЬКО О НЁМ ЗАБЫЛИ**  
   tools/court_atlas.py, tools/law_atlas.py
 - **ВТОРАЯ ПОВЕРХНОСТЬ ЕСТЬ НЕ ПОВТОР, А ДРУГАЯ СТОРОНА ТОГО ЖЕ ОТНОШЕНИЯ**  

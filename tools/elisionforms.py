@@ -101,10 +101,11 @@ import frgram  # noqa: E402 — французская элизия: один з
                                     "ПО БУКВЕ ПРАВИЛА НЕ УЗНАТЬ: слова с немым «h» заучиваются "
                                     "поимённо.",
         "своя граница у одного слова": "si + il даёт «{si_il}», а si + elle остаётся целым: "
-                                       "«{si_elle}». У «si» граница У́ЖЕ общей — оно сокращается "
-                                       "ТОЛЬКО перед «il» и «ils». ОБЩЕЕ ПРАВИЛО НЕ ОТМЕНЯЕТ "
-                                       "ЧАСТНОГО.",
-        "апостроф не есть буква": "«{si_il}» есть ДВА слова: «si» и «il». Апостроф стои́т на "
+                                       "«{si_elle}». У «si» правило не общее: оно теряет "
+                                       "гласную ТОЛЬКО перед «il» и «ils». ОБЩЕЕ ПРАВИЛО НЕ "
+                                       "ОТМЕНЯЕТ ЧАСТНОГО ПРАВИЛА.",
+        "апостроф не есть буква": "«{сокр}» ({перевод_гл}) есть ДВА слова: «{ц}» и «{гл}». Апостроф "
+                                  "стои́т на "
                                   "месте утраченной гласной, а не склеивает слова в одно. "
                                   "СЧИТАЮЩИЙ СЛОВА ПО ПРОБЕЛАМ СОЧТЁТ ИХ ОДНИМ И ОШИБЁТСЯ.",
     },
@@ -120,14 +121,15 @@ import frgram  # noqa: E402 — французская элизия: один з
                                     "vowel. But le + {придых} stays whole: «le {придых}» — the same letter, "
                                     "another word. THE LETTER DOES NOT TELL THE RULE: words with "
                                     "a mute «h» are learnt one by one.",
-        "своя граница у одного слова": "si + il gives «{si_il}», while si + elle stays "
-                                       "whole: «{si_elle}». The boundary of «si» is NARROWER "
-                                       "than the common one — it contracts ONLY before «il» and "
-                                       "«ils». A GENERAL RULE DOES NOT ABOLISH A PARTICULAR ONE.",
-        "апостроф не есть буква": "«{si_il}» is TWO words: «si» and «il». The apostrophe stands "
-                                  "where the vowel was; it does not glue two words into one. "
-                                  "WHOEVER COUNTS WORDS BY SPACES WILL COUNT THEM AS ONE AND "
-                                  "BE WRONG.",
+        "своя граница у одного слова": "si + il gives «{si_il}», while si + elle stays whole: "
+                                       "«{si_elle}». The rule of «si» is not the common rule: it "
+                                       "loses its vowel ONLY before «il» and «ils». A COMMON "
+                                       "RULE DOES NOT CANCEL A NARROW RULE.",
+        "апостроф не есть буква": "«{сокр}» ({перевод_гл}) is TWO words: «{ц}» and «{гл}». The "
+                                  "apostrophe "
+                                  "stands where the vowel was; it does not glue two words into "
+                                  "one. WHOEVER COUNTS WORDS BY SPACES WILL COUNT THEM AS ONE "
+                                  "AND BE WRONG.",
     },
 }
 
@@ -145,6 +147,14 @@ def страницы():
                        перевод_сг=п_сг_ru if язык == "ru" else п_сг_en)
             вон[рамки["сокращение названо"].format(**общ)] = (язык, "сокращение названо")
             вон[рамки["граница правила"].format(**общ)] = (язык, "граница правила")
+            # РОД «АПОСТРОФ НЕ ЕСТЬ БУКВА» ИДЁТ ПО КАЖДОМУ СЛУЧАЮ, А НЕ ОДИН НА ЯЗЫК
+            # (13.09, куплено прибором «слово однажды»): страница, написанная единожды,
+            # оставляла восемь своих слов во всём своде РОВНО РАЗ.
+            #
+            #     СЛОВО, ПОКАЗАННОЕ ОДИН РАЗ, ЕСТЬ СЛОВО НЕПОКАЗАННОЕ. Довод, сказанный
+            #     однажды, разделяет его участь.
+            вон[рамки["апостроф не есть буква"].format(**общ)] = (
+                язык, "апостроф не есть буква")
         for глухое in ГЛУХИЕ:
             for придых in ПРИДЫХАТЕЛЬНЫЕ:
                 вон[рамки["буква h молчит не всегда"].format(
@@ -153,8 +163,6 @@ def страницы():
                     язык, "буква h молчит не всегда")
         вон[рамки["своя граница у одного слова"].format(si_il=si_il, si_elle=si_elle)] = (
             язык, "своя граница у одного слова")
-        вон[рамки["апостроф не есть буква"].format(si_il=si_il)] = (
-            язык, "апостроф не есть буква")
     return вон
 
 
