@@ -252,6 +252,7 @@ recache.установить()
            "primewalk_court",
            "orderlaw_court",
            "gender_court",
+           "measureprec_court",
            # …и НЕОБХОДИМОЕ С ДОСТАТОЧНЫМ: полная таблица двух свойств условия,
            # показанная делимостью, где оба ответа покупаются счётом
            "nesuf_court",
