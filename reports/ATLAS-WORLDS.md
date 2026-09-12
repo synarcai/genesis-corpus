@@ -84,7 +84,7 @@
 - **`relations_story`** (1989 строк; recompute, unsigned_only)  
   **A MULTIPLE, A DIFFERENCE AND A SUM** — SCHOOL PAGES IN THREE LANGUAGES (e9's order 03.09, G1-ATTACK genus 1 «multiplicative relation + sum», 21 tasks of g1): «there are twice as many worker bees as baby bees. there are 750 bees in all. how many baby bees …
 - **`machine`** (1814 строк; recompute, whole_only, unsigned_only)  
-  how a machine holds a number: bases, bitwise operations, shifts, width
+  **ЧИСЛО В ЧУЖИХ ОСНОВАНИЯХ И ПОБИТОВОЕ ДЕЙСТВИЕ: «what is 13 in octal? 13 in octal is 15», «чему равно 13 в двоичной записи? 13 в двоичной записи это 1101», «13 xor 6 is 11», сдвиги. Одно и то же число, записанное тремя способами,** — и всякая запись перево…
 - **`ninelang`** (1800 строк; recompute, whole_only)  
   **THREE SHAPES IN NINE LANGUAGES** — one place, nine different words (07.09).
 - **`physics`** (1468 строк; recompute, whole_only)  
@@ -94,7 +94,7 @@
 - **`arith_langs`** (1400 строк; recompute, unsigned_only)  
   **the VALUE ASKED IN TEN LANGUAGES (the owner's word: every language in surplus; the svod asked the value of an expression only in en/ru): «was ist 3 + 4? 3 + 4 = 7.», «wie viel ist 12 − 5? …», «berechne 6 × 7. 6 × 7 = 42.» (de); «combien font 3 + 4 ? …», «…
 - **`compsci`** (1372 строк; recompute, whole_only)  
-  foundations of informatics and control: entropy in bits, finite automaton, formal grammar, decidability, type of a value, loop invariant, homeostasis, model and observer
+  **ЦЕНА ЗНАКА В БИТАХ И ЭНТРОПИЯ РАВНОВОЗМОЖНЫХ ИСХОДОВ, ДОКАЗАННЫЕ СТЕПЕНЬЮ ДВОЙКИ: «сколько бит стоит знак алфавита в 32 знака? знак алфавита в 32 знака стоит 5 битов: 2^5 = 32». И ТУТ ЖЕ ОТКАЗ, КОГДА ЦЕЛОГО ОТВЕТА НЕТ: «стоит ли знак алфавита в 5 знаков ц…
 - **`shares_percent`** (1320 строк; recompute, whole_only)  
   **SHARES AND PERCENTS OVER QUANTITIES** — GENUS 2 OF THE g1 BAND (holon's word 03.09, G1-ATTACK): five forms whose ledger is a chain of primitives whole on the axis, en/ru/de — «what is two thirds of 24? two thirds of 24 is 16: 24 ÷ 3 = 8, 8 × 2 = 16.» (den…
 - **`average`** (1300 строк; recompute, whole_only)  
@@ -152,7 +152,7 @@
 - **`pronobject`** (864 строк; recompute, whole_only)  
   **TRANSFER WITH A PRONOUN OBJECT** — the receiver named once, then only pointed at (06.09).
 - **`physlaws`** (830 строк; recompute, whole_only)  
-  physical laws: dimension of a quantity, conservation of momentum and energy, pressure as force over area, period and frequency
+  **ЗАКОН СОХРАНЕНИЯ И РАЗМЕРНОСТЬ, СПРОШЕННЫЕ ДА-ИЛИ-НЕТ: «импульс сохраняется: …», «does pressure …?», «даёт ли …?», «давление = сила ÷ площадь», и размерность названа отдельно от единицы** — «the dimension of force is M L / T^2; it is measured in newton».
 - **`wholeshare`** (828 строк; recompute, whole_only)  
   **THE FRACTION AND THE UNIT** — a fraction can be greater than a whole, and then it CONTAINS wholes.
 - **`mathspaces`** (814 строк; recompute, exact_only)  
@@ -168,7 +168,7 @@
 - **`orderforms`** (792 строк; recompute, whole_only)  
   **ORDER** — sorting is not comparing twice (06.09).
 - **`programs`** (784 строк; recompute, whole_only, unsigned_only)  
-  semantics of a program: binding, branch, bounded loop, function, recursion
+  **ПРОГРАММА КАК УТВЕРЖДЕНИЕ О СВОЁМ ИТОГЕ: «sum for i from 1 to 4 is 10», «if 3 < 5 then y = 1 else y = 2; y = 1», произведение по счётчику** — и ГРАНИЦА РЕКУРСИИ, сказанная прямо: «рекурсия без основания есть зависание, а не программа; factorial(0) = 1».
 - **`prop`** (764 строк; recompute, whole_only)  
   **THE PROPORTION** — AN EQUALITY OF RATIOS THAT IS NOT AN EQUALITY OF DIFFERENCES. Measured 11.09 across the 237 show worlds: the word «пропорция» occurs 29 times, and ALL 29 stand in the world of definitions, in prose and in English; the writing «a : b = c…
 - **`inverse`** (744 строк; recompute, whole_only)  
@@ -210,7 +210,7 @@
 - **`percent`** (560 строк; recompute, whole_only)  
   **percent on three surfaces (glyph, word, both tongues): «20% of 80 is 16», the conversion percent<->hundredths, the inverse question «16 is 20% of 80», and growth and cut by a percent; only whole results are uttered** — a percent that does not come out who…
 - **`heads`** (560 строк; recompute, whole_only, unsigned_only)  
-  GSM question heads: left-over, have-now, price-each, rate-per-day (working layer of the band stand)
+  **ОДИН ЯЗЫК, ОДИН НОСИТЕЛЬ, ОДНО ДЕЙСТВИЕ: «Peter had 8 coins. Peter gave 4 coins away. how many coins are left? Peter keeps 4 coins: 8 − 4 = 4». Английский без русского, имя носителя повторено в вопросе и в ответе, и всякий показ несёт вопрос (560 вопросов…
 - **`signrul`** (556 строк; recompute, whole_only)  
   **THE RULE OF SIGNS** — TWO NUMBERS LESS THAN ZERO GIVE ONE GREATER THAN ZERO. Measured 11.09 across the 233 show worlds: «минус на минус», «two minuses» — NONE; «(−a) × (−b)» — NONE; division with signs — NONE. Multiplication with ONE minus occurs 36 times…
 - **`stenogram`** (550 строк; recompute, exact_only)  
@@ -432,7 +432,7 @@
 - **`glyphs`** (1101 строк; declared, declared_pairs_only)  
   **the glyph world v0 (embodied-reasoning mandate 02.09, L5): every symbol** — digits, Latin and Cyrillic letters of both cases, signs — as a 5×7 bit grid with a name (tools/glyphs.py, one font table that is also the court's law); shows «grid → symbol», «sym…
 - **`mathfound`** (1066 строк; declared, recompute, finite_explicit_only)  
-  foundations of mathematics and the named case: function as one object, injection by witness, cardinality and countability, proof by contradiction, induction, the six Russian cases named
+  **ОСНОВАНИЯ МАТЕМАТИКИ И НАЗВАННЫЙ ПАДЕЖ** — ОДИН МИР, И ЭТО НЕ СЛУЧАЙНОСТЬ: функция как ОДИН ПРЕДМЕТ («функция f на множестве {1 2 3} задана правилом f(x) = 4x; f(1) = 4»), инъекция свидетелем, счётность, доказательство от противного, индукция — и рядом ше…
 - **`wordorder`** (876 строк; recompute, whole_only, unsigned_only)  
   **where the verb stands: the place named by COUNT, not by the label «SOV»** — the verb's index and the sentence's word count, checkable by splitting the quoted sentence (290 sentences of the layers, 11 languages)
 - **`numlabel`** (756 строк; recompute, whole_only)  
@@ -504,7 +504,7 @@
 - **`surfaces`** (2200 строк; declared, whole_only, unsigned_only)  
   **the surfaces of an act: the same arithmetic fact said as a nominalisation («сложение 7 и 6 даёт 13», «the addition of 7 and 6 gives 13»), as a named result («сумма … равна», «произведение … равно»** — the copula agrees with gender), as a question to each,…
 - **`speech`** (1910 строк; declared, recompute, whole_only)  
-  connected speech: anaphora across a sentence, the inference connective, the relative clause, quantifier with domain, nominalisation, sufficient and necessary
+  **РЕЧЬ О СЧЁТЕ, ГДЕ ОТКАЗ СТОИ́Т НАРАВНЕ С ОТВЕТОМ: «у Марии было 6 ручек. она отдала 3 ручки. у неё осталось 3 ручки»** — и рядом «Vera had 4 apples. she gave away 5 apples — there is no such count: 5 is greater than 4».
 - **`formulas`** (1122 строк; recompute, whole_only)  
   **FORMULA AND DIAGRAM AS RECORDS TO BE EXECUTED** — declared until 12.09 in eight words.
 - **`notation`** (1102 строк; recompute, unsigned_only)  
@@ -512,7 +512,7 @@
 - **`dataformat`** (640 строк; same_object, flat_only)  
   **data formats: ONE flat record written in JSON, YAML, TOML and CSV and said in two tongues, with the conversion between them as the show; the court parses both sides with its own readers and requires the SAME RECORD, not the same string** — two writings di…
 - **`verbal`** (557 строк; recompute, whole_only, unsigned_only)  
-  verbal equality with the copula «is» beside «equals», and the past tense in the market's own frame
+  **ДЕЙСТВИЕ, НАЗВАННОЕ СЛОВОМ ВМЕСТО ЗНАКА: «9 minus …», «8 plus …», «13 times …»** — и рядом то же знаком «3 - 3 = 0».
 - **`roman`** (387 строк; recompute, reversibility, whole_only)  
   **THE ROMAN NUMERAL** — a third notation, and the law that the ORDER of two signs decides the sign of their arithmetic (06.09).
 - **`unitfrac`** (198 строк; recompute, reversibility, whole_only)  
@@ -568,28 +568,20 @@
     ОБЪЯВЛЕНИЕ В ТРИДЦАТЬ ЗНАКОВ НЕ ЛЖЁТ И НЕ ГОВОРИТ: читатель узнаёт имя мира
     и ничего сверх него.
 
-Миров: **24** из 257.
+Миров: **16** из 257.
 
-- `machine` — 70 знаков
-- `programs` — 74 знаков
 - `gsmwide` — 87 знаков
 - `realverbs` — 87 знаков
 - `gsmlex` — 91 знаков
-- `verbal` — 98 знаков
-- `heads` — 99 знаков
 - `lang_nl` — 109 знаков
 - `lang_sv` — 124 знаков
-- `physlaws` — 126 знаков
 - `lang_pl` — 130 знаков
 - `lang_uk` — 144 знаков
-- `speech` — 157 знаков
 - `lang_es` — 160 знаков
 - `lang_fr` — 160 знаков
 - `lang_it` — 160 знаков
 - `lang_ja` — 160 знаков
 - `lang_pt` — 160 знаков
-- `compsci` — 169 знаков
-- `mathfound` — 185 знаков
 - `ruverbs` — 185 знаков
 - `lang_ko` — 191 знаков
 - `lang_ar` — 192 знаков

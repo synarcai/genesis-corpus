@@ -3271,7 +3271,7 @@
     {
       "name": "programs",
       "file": "datasets/genesis_programs.txt",
-      "genre": "semantics of a program: binding, branch, bounded loop, function, recursion",
+      "genre": "ПРОГРАММА КАК УТВЕРЖДЕНИЕ О СВОЁМ ИТОГЕ: «sum for i from 1 to 4 is 10», «if 3 < 5 then y = 1 else y = 2; y = 1», произведение по счётчику — и ГРАНИЦА РЕКУРСИИ, сказанная прямо: «рекурсия без основания есть зависание, а не программа; factorial(0) = 1». Мир не исполняет, а НАЗЫВАЕТ ИТОГ, и потому всякая строка пересчитывается без запуска. Восемьдесят отказов — те случаи, где итога нет (замер 12.09: 784 строки, 306 равенств, 280 вопросов; читает почти один `program`).",
       "act": [
         "recount"
       ],
@@ -3331,7 +3331,7 @@
     {
       "name": "machine",
       "file": "datasets/genesis_machine.txt",
-      "genre": "how a machine holds a number: bases, bitwise operations, shifts, width",
+      "genre": "ЧИСЛО В ЧУЖИХ ОСНОВАНИЯХ И ПОБИТОВОЕ ДЕЙСТВИЕ: «what is 13 in octal? 13 in octal is 15», «чему равно 13 в двоичной записи? 13 в двоичной записи это 1101», «13 xor 6 is 11», сдвиги. Одно и то же число, записанное тремя способами, — и всякая запись переводится СЧЁТОМ, а не таблицей. Вопросов здесь больше, чем равенств, вчетырнадцатеро (882 против 60): мир спрашивает и отвечает в одной строке, без знака равенства (замер 12.09: 1814 строк, 16 отказов; читают machine и algo).",
       "act": [
         "recount",
         "translate"
@@ -3376,7 +3376,7 @@
     {
       "name": "speech",
       "file": "datasets/genesis_speech.txt",
-      "genre": "connected speech: anaphora across a sentence, the inference connective, the relative clause, quantifier with domain, nominalisation, sufficient and necessary",
+      "genre": "РЕЧЬ О СЧЁТЕ, ГДЕ ОТКАЗ СТОИ́Т НАРАВНЕ С ОТВЕТОМ: «у Марии было 6 ручек. она отдала 3 ручки. у неё осталось 3 ручки» — и рядом «Vera had 4 apples. she gave away 5 apples — there is no such count: 5 is greater than 4». Мир учит не только считать, но и ОТКАЗЫВАТЬ, когда условие невозможно, и отказ его ОБОСНОВАН сравнением, а не объявлен. Двести сорок отказов на 1910 строк — каждая восьмая (замер 12.09: 316 равенств, 440 вопросов; русских и английских ровно поровну — по 955; читают speech, langcount, rugram, engram, arith).",
       "act": [
         "translate",
         "decide"
@@ -3401,7 +3401,7 @@
     {
       "name": "physlaws",
       "file": "datasets/genesis_physlaws.txt",
-      "genre": "physical laws: dimension of a quantity, conservation of momentum and energy, pressure as force over area, period and frequency",
+      "genre": "ЗАКОН СОХРАНЕНИЯ И РАЗМЕРНОСТЬ, СПРОШЕННЫЕ ДА-ИЛИ-НЕТ: «импульс сохраняется: …», «does pressure …?», «даёт ли …?», «давление = сила ÷ площадь», и размерность названа отдельно от единицы — «the dimension of force is M L / T^2; it is measured in newton». Мир отличает РАЗМЕРНОСТЬ от ЕДИНИЦЫ и проверяет закон вопросом, на который есть «нет»: 72 отказа на 830 строк (замер 12.09: 542 равенства, 518 делений, 366 вопросов; русских и английских поровну — по 415; читают physlaw, langcount, engram, rugram).",
       "act": [
         "recount",
         "generalize"
@@ -3419,7 +3419,7 @@
     {
       "name": "compsci",
       "file": "datasets/genesis_compsci.txt",
-      "genre": "foundations of informatics and control: entropy in bits, finite automaton, formal grammar, decidability, type of a value, loop invariant, homeostasis, model and observer",
+      "genre": "ЦЕНА ЗНАКА В БИТАХ И ЭНТРОПИЯ РАВНОВОЗМОЖНЫХ ИСХОДОВ, ДОКАЗАННЫЕ СТЕПЕНЬЮ ДВОЙКИ: «сколько бит стоит знак алфавита в 32 знака? знак алфавита в 32 знака стоит 5 битов: 2^5 = 32». И ТУТ ЖЕ ОТКАЗ, КОГДА ЦЕЛОГО ОТВЕТА НЕТ: «стоит ли знак алфавита в 5 знаков целое число бит? нет: 5 знаков — это не степень двойки». Мир не округляет и не молчит — он называет причину отказа (замер 12.09: 1372 строки, 36 отказов, 420 вопросов, 236 равенств; русских и английских ровно поровну — по 686; читают compsci, rugram, engram, langcount).",
       "act": [
         "recount",
         "decide",
@@ -3438,7 +3438,7 @@
     {
       "name": "mathfound",
       "file": "datasets/genesis_mathfound.txt",
-      "genre": "foundations of mathematics and the named case: function as one object, injection by witness, cardinality and countability, proof by contradiction, induction, the six Russian cases named",
+      "genre": "ОСНОВАНИЯ МАТЕМАТИКИ И НАЗВАННЫЙ ПАДЕЖ — ОДИН МИР, И ЭТО НЕ СЛУЧАЙНОСТЬ: функция как ОДИН ПРЕДМЕТ («функция f на множестве {1 2 3} задана правилом f(x) = 4x; f(1) = 4»), инъекция свидетелем, счётность, доказательство от противного, индукция — и рядом шесть русских падежей и число имени. Общее у них — ИМЕНОВАНИЕ СЛУЧАЯ: и падеж, и вид доказательства суть имена, данные положению вещей, и мир учит их различать. Половина строк о падеже (516 из 1066), и потому мир читает `case`, а не `arith` (замер 12.09: 240 равенств, 114 вопросов).",
       "act": [
         "name",
         "decide",
@@ -3511,7 +3511,7 @@
     {
       "name": "heads",
       "file": "datasets/genesis_heads.txt",
-      "genre": "GSM question heads: left-over, have-now, price-each, rate-per-day (working layer of the band stand)",
+      "genre": "ОДИН ЯЗЫК, ОДИН НОСИТЕЛЬ, ОДНО ДЕЙСТВИЕ: «Peter had 8 coins. Peter gave 4 coins away. how many coins are left? Peter keeps 4 coins: 8 − 4 = 4». Английский без русского, имя носителя повторено в вопросе и в ответе, и всякий показ несёт вопрос (560 вопросов на 560 строк). Мир нарочно ОДНОЯЗЫЧЕН — им проверяется, что счёт не зависит от языка, на котором о нём говорят (замер 12.09: 0 кириллицы на 50736 байт, 280 равенств; читают engram, langcount, episode, arith).",
       "act": [
         "recount"
       ],
@@ -3559,7 +3559,7 @@
     {
       "name": "verbal",
       "file": "datasets/genesis_verbal.txt",
-      "genre": "verbal equality with the copula «is» beside «equals», and the past tense in the market's own frame",
+      "genre": "ДЕЙСТВИЕ, НАЗВАННОЕ СЛОВОМ ВМЕСТО ЗНАКА: «9 minus …», «8 plus …», «13 times …» — и рядом то же знаком «3 - 3 = 0». Мир связывает АНГЛИЙСКОЕ ИМЯ ДЕЙСТВИЯ с его знаком, и связь эта проверяется счётом, а не словарём. Одноязычен, как и `heads`, и по той же причине (замер 12.09: 557 строк, 0 кириллицы, 144 равенства, 119 раз «equals», 100 вопросов; читают arith, engram, langcount, langgen, episode).",
       "act": [
         "translate",
         "inflect",
