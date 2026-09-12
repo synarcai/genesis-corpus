@@ -276,7 +276,7 @@
 - **`countfacts`** (315 строк; recompute, whole_only)  
   **COUNT FACTS IN NINE LANGUAGES** — a thing defined or asked by the ONE number a court can recount: «what is a triangle? a triangle is a shape with three sides.», «how many sides does a pentagon have? a pentagon has five sides.», «how many legs does a dog h…
 - **`depletion`** (304 строк; recompute, whole_only)  
-  a fraction of a total goes and a part remains (g1.36 shape)
+  **УБЫВАНИЕ ЗАПАСА, СЧИТАННОЕ ДО КОНЦА: «у иды было 70 книг. половина книг ушла. сколько книг осталось? осталось 35 книг: 70 ÷ 2 = 35». Имя носителя, начальный запас, доля или число ушедшего** — и остаток, ДОКАЗАННЫЙ действием, а не объявленный.
 - **`proform`** (288 строк; recompute, whole_only)  
   **THE PRO-FORM OF THE GOODS** — the thing named once, then stood in for (06.09).
 - **`prec`** (264 строк; recompute, whole_only)  
@@ -284,7 +284,7 @@
 - **`joint2`** (255 строк; recompute, whole_only)  
   **JOINT COUNT** — «i have», «you have», «we have».
 - **`remainders`** (248 строк; recompute, whole_only)  
-  division with a remainder (genus 9): four surfaces, self-judging weld
+  **ДЕЛЕНИЕ С ОСТАТКОМ, ГДЕ ОСТАТОК ДОКАЗАН УМНОЖЕНИЕМ И ВЫЧИТАНИЕМ: «17 divided by 5 is 3 remainder 2: 5 × 3 = 15, 17 − 15 = 2»** — и та же правда в обратной записи «14 = 3 × 4 + 2».
 - **`realverbs`** (240 строк; recompute, whole_only, unsigned_only)  
   real verbs of the benchmark in their canonical frames (working layer of the band stand)
 - **`action_measure`** (234 строк; recompute, whole_only)  
@@ -308,9 +308,9 @@
 - **`likely`** (184 строк; recompute, whole_only)  
   **THE SCALE OF LIKELIHOOD** — a word of degree is the NAME OF A RATIO, not a feeling.
 - **`prog`** (182 строк; recompute, whole_only, unsigned_only)  
-  foundations: bindings, sorting, list operations
+  **ПРОГРАММА, ПРОЧИТАННАЯ КАК УТВЕРЖДЕНИЕ О ВХОДЕ И ВЫХОДЕ: «если x > 4 то y = 1 иначе y = 0. вход x = 8. выход y = 1», «массив [7 9 3]. длина = 3. первый = 7. последний = 3», «пусть a = …», сортировка, факториал** — и чтение знаков словом («знак ; читается …
 - **`eng_proof`** (153 строк; recompute, whole_only, unsigned_only)  
-  foundations: functions, flowcharts, probability shares
+  **ИНЖЕНЕРНАЯ ЗАПИСЬ, СКАЗАННАЯ ДВАЖДЫ** — КОДОМ И РЕЧЬЮ: «function add(a, b) return a + b», «what does … give?», условный переход рядом со своим графом mermaid «if x > 0 then B else C. code: graph TD; A{x > 0}; A-->|yes|B;», таблица строк и доля исходов «ис…
 - **`bound`** (144 строк; recompute, whole_only)  
   **THE BOUND OF A MAGNITUDE** — not every valid subtraction is a possible action.
 - **`ru_story`** (109 строк; recompute, declared, whole_only, unsigned_only)  
@@ -568,14 +568,10 @@
     ОБЪЯВЛЕНИЕ В ТРИДЦАТЬ ЗНАКОВ НЕ ЛЖЁТ И НЕ ГОВОРИТ: читатель узнаёт имя мира
     и ничего сверх него.
 
-Миров: **36** из 257.
+Миров: **32** из 257.
 
-- `prog` — 47 знаков
-- `eng_proof` — 54 знаков
-- `depletion` — 59 знаков
 - `physics` — 64 знаков
 - `notation` — 68 знаков
-- `remainders` — 69 знаков
 - `machine` — 70 знаков
 - `programs` — 74 знаков
 - `cybernetics` — 75 знаков
