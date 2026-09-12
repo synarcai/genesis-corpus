@@ -256,6 +256,7 @@ recache.установить()
            "chancetrap_court",
            "ratetrap_court",
            "negquant_court",
+           "measuregrow_court",
            # …и НЕОБХОДИМОЕ С ДОСТАТОЧНЫМ: полная таблица двух свойств условия,
            # показанная делимостью, где оба ответа покупаются счётом
            "nesuf_court",
