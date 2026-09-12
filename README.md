@@ -21,9 +21,9 @@ rebuilt from nothing and re-judged by anyone.
 
 | | |
 |---|---|
-| **283 worlds of shows + 207 of prose + 6 mixed** | declared in `datasets/GENESIS-MANIFEST.json`; 71 prose worlds are public-domain books on the shelf (`shelf/`, contract `declarations/SHELF.md`) |
+| **287 worlds of shows + 207 of prose + 6 mixed** | declared in `datasets/GENESIS-MANIFEST.json`; 71 prose worlds are public-domain books on the shelf (`shelf/`, contract `declarations/SHELF.md`) |
 | **29 languages** | one pack each in `tools/langpacks/`, zero engine edits |
-| **239 courts + 218 instruments** | every line re-executed by a court; the corpus as a whole measured by judgeability, reproducibility, manifest, shelf, band, library, concept reach, mutation catch |
+| **243 courts + 224 instruments** | every line re-executed by a court; the corpus as a whole measured by judgeability, reproducibility, manifest, shelf, band, library, concept reach, mutation catch |
 | **0 lies, 0 blind** | of 428 709 lines across 260 worlds — the last completed reach of the whole panel (`court_reach.py`, ledger 2026-09-12T06:33:16Z) |
 
 These numbers are not written by hand: `scripts/readme_court.py` re-measures every one of them
@@ -125,6 +125,20 @@ without spaces; that is written down rather than smoothed over.
   `declarations/BOTH-SIDES.md`, together with what it does *not* demand —
   an equal number of pages per side, since the proportion is a fact of the
   subject and forcing it would lie about how often the mistake occurs.
+- **Support is owed to each form, not to their sum.** An agreeing word is
+  not one word but as many as it has forms, and the law of support (eight
+  pages to a genus) is owed to every one of them separately: a reader who
+  must produce `24 книги` is not helped by the fifteen pages of its sibling
+  `24 книг`, nor one who must produce `quantos tem` by the six pages of
+  `quantas tem`. A house that hands things to numbers along a diagonal
+  cannot control which form each thing meets — the counting form is a
+  property of the *number*, the gender of the question word a property of
+  the *table* — and so the Portuguese row, holding two masculine things out
+  of eight, wrote its masculine question a quarter as often as its feminine
+  one. The law is written down in `declarations/EACH-FORM.md`; the
+  instrument that keeps the count is `scripts/agree_skew.py`, which counts
+  the forms apart over the whole corpus, where `scripts/key_support.py`
+  sees the same fault only where the held-out key happens to ask.
 
 ## Licence
 

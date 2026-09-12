@@ -13,6 +13,7 @@ tools/phrases.py; the difference and the ratio are recomputed.
 """
 import json
 import pathlib
+import romgram  # noqa: E402 — романское вопросное слово: один дом закона
 import re
 import sys
 
@@ -32,6 +33,21 @@ import phrases  # noqa: E402
     "nl": (("appel", "appels"), ("boek", "boeken"), ("pen", "pennen"), ("munt", "munten")),
     "pl": (("jabłko", "jabłka", "jabłek"), ("książka", "książki", "książek"), ("długopis", "długopisy", "długopisów"), ("moneta", "monety", "monet")),
     "tr": (("elma",), ("kitap",), ("kalem",), ("top",)),
+}
+# РОД ВЕЩЕЙ ТАМ, ГДЕ ВОПРОСНОЕ СЛОВО ГНЁТСЯ (12.09). Испанское «cuántos», итальянское «quanti»
+# и португальское «quantos» согласуются в роде с тем, о чём спрашивают, — а рамка держала их
+# ЦЕЛЫМИ и потому не слышала, что за ними подставят: «quanti mele», «quantos maçãs», «cuántos
+# manzanas» стояли в своде страницами и были ЛОЖНЫ. Это тот же закон, каким живёт французская
+# элизия (`tools/frgram.py`), и читатель у него новый:
+#
+#     СЛУЖЕБНОЕ СЛОВО, СТОЯЩЕЕ В РАМКЕ ЦЕЛЫМ, НЕ СЛЫШИТ ТОГО, ЧТО ЗА НИМ ПОДСТАВЯТ.
+#
+# Ключ — форма МНОЖЕСТВЕННОГО (та, что стои́т в вопросе); мужские названы поимённо, прочие
+# женские, ибо список закрыт таблицей ВЕЩИ и виден целиком.
+РОД_ВЕЩЕЙ = {
+    "es": {"libros": "m", "bolígrafos": "m"},
+    "it": {"libri": "m"},
+    "pt": {"livros": "m"},
 }
 # the multiplier by its word, k = 2..5
 КРАТНО = {
@@ -55,13 +71,13 @@ import phrases  # noqa: E402
                больше="{факт} ; {A} a {d} {вd} de plus que {B} : {x} − {y} = {d}.", в_больше="combien de {вм} {A} a-t-{он} de plus que {B} ?",
                кратно="{факт} ; {A} a {к} plus de {вм} que {B} : {x} ÷ {y} = {k}.", в_кратно="combien de fois {A} a-t-{он} plus de {вм} que {B} ?"),
     "es": dict(факт="{A} tiene {x} {в} y {B} tiene {y} {вy}",
-               больше="{факт}; {A} tiene {d} {вd} más que {B}: {x} − {y} = {d}.", в_больше="¿cuántos {вм} más que {B} tiene {A}?",
+               больше="{факт}; {A} tiene {d} {вd} más que {B}: {x} − {y} = {d}.", в_больше="¿{КВ} {вм} más que {B} tiene {A}?",
                кратно="{факт}; {A} tiene {к} más {вм} que {B}: {x} ÷ {y} = {k}.", в_кратно="¿cuántas veces más {вм} que {B} tiene {A}?"),
     "it": dict(факт="{A} ha {x} {в} e {B} ha {y} {вy}",
-               больше="{факт}; {A} ha {d} {вd} in più di {B}: {x} − {y} = {d}.", в_больше="quanti {вм} in più di {B} ha {A}?",
+               больше="{факт}; {A} ha {d} {вd} in più di {B}: {x} − {y} = {d}.", в_больше="{КВ} {вм} in più di {B} ha {A}?",
                кратно="{факт}; {A} ha {к} più {вм} di {B}: {x} ÷ {y} = {k}.", в_кратно="quante volte più {вм} di {B} ha {A}?"),
     "pt": dict(факт="{A} tem {x} {в} e {B} tem {y} {вy}",
-               больше="{факт}; {A} tem {d} {вd} a mais do que {B}: {x} − {y} = {d}.", в_больше="quantos {вм} a mais do que {B} tem {A}?",
+               больше="{факт}; {A} tem {d} {вd} a mais do que {B}: {x} − {y} = {d}.", в_больше="{КВ} {вм} a mais do que {B} tem {A}?",
                кратно="{факт}; {A} tem {к} mais {вм} do que {B}: {x} ÷ {y} = {k}.", в_кратно="quantas vezes mais {вм} do que {B} tem {A}?"),
     "nl": dict(факт="{A} heeft {x} {в} en {B} heeft {y} {вy}",
                больше="{факт}; {A} heeft {d} {вd} meer dan {B}: {x} − {y} = {d}.", в_больше="hoeveel {вм} heeft {A} meer dan {B}?",
@@ -145,6 +161,11 @@ def _много(язык, в):
     return в[-1] if язык != "pl" else в[2]
 
 
+def квопрос(язык, в):
+    """Вопросное слово, согласованное с ВЕЩЬЮ: «quante mele», но «quanti libri»."""
+    return romgram.по_слову(язык, _много(язык, в), РОД_ВЕЩЕЙ.get(язык, {}), умолчание="f")
+
+
 def _роли(язык, A, B):
     """The actors in every form a phrase may ask for."""
     р = dict(A=A, B=B)
@@ -165,7 +186,8 @@ def больше(язык, A, B, x, y, в):
 
 
 def вопрос_больше(язык, A, B, x, y, в):
-    return f"{ФРАЗЫ[язык]['в_больше'].format(вм=_много(язык, в), **_роли(язык, A, B))} {больше(язык, A, B, x, y, в)}"
+    голова = ФРАЗЫ[язык]["в_больше"].format(вм=_много(язык, в), КВ=квопрос(язык, в), **_роли(язык, A, B))
+    return f"{голова} {больше(язык, A, B, x, y, в)}"
 
 
 def кратно(язык, A, B, x, y, в):
@@ -183,6 +205,8 @@ def _дыры(язык):
     слово = "(" + "|".join(re.escape(ф) for ф in формы) + ")"
     к = "(" + "|".join(re.escape(с) for с in sorted(КРАТНО[язык].values(), key=lambda с: (-len(с), с))) + ")"
     д = {"A": имя, "B": имя, "x": r"(\d+)", "y": r"(\d+)", "в": слово, "вy": слово, "d": r"(\d+)", "вd": слово, "вм": слово, "к": к, "k": r"(\d+)", "он": "(il|elle)"}
+    if romgram.гнётся(язык):
+        д["КВ"] = "(" + "|".join(re.escape(с) for с in romgram.ПАРЫ[язык]) + ")"
     if язык == "tr":
         for ключ, падеж in (("Aм", "loc"), ("Bм", "loc"), ("Bот", "abl"), ("Bр", "gen")):
             д[ключ] = "(" + "|".join(re.escape(тр_суффикс(и, падеж)) for и in ИМЕНА[язык]) + ")"

@@ -2428,9 +2428,9 @@ tak: żadna zasada nie zabrania przenoszenia	pierwsza zasada: nie usuwaj plików
 31	personalità: dettagliata. ci sono 23 documenti nella cartella. il primo atto crea 8 documenti. quanti documenti ci sono nella cartella?	ci sono 31 documenti nella cartella: 23 + 8 = 31.
 31	ci sono 23 documenti nella cartella. il primo atto crea 8 documenti. quanti documenti ci sono nella cartella? breve personalità risponde 31. dettagliata personalità risponde: ci sono 31 documenti nella cartella: 23 + 8 = 31. è lo stesso numero?	sì: 31 e 31 — un solo numero.
 8	personalità: prudente. ci sono 23 documenti nella cartella. due vie: cancellare 8 documenti o spostare 8 documenti. entrambe lasciano 15 documenti nella cartella: 23 − 8 = 15. quale via si sceglie?	spostare 8 documenti: una personalità prudente non cancella.
-40	personalità: breve. ci sono 31 voci nella scatola. il primo atto crea 9 voci. quanti voci ci sono nella scatola?	40.
-40	personalità: dettagliata. ci sono 31 voci nella scatola. il primo atto crea 9 voci. quanti voci ci sono nella scatola?	ci sono 40 voci nella scatola: 31 + 9 = 40.
-40	ci sono 31 voci nella scatola. il primo atto crea 9 voci. quanti voci ci sono nella scatola? breve personalità risponde 40. dettagliata personalità risponde: ci sono 40 voci nella scatola: 31 + 9 = 40. è lo stesso numero?	sì: 40 e 40 — un solo numero.
+40	personalità: breve. ci sono 31 voci nella scatola. il primo atto crea 9 voci. quante voci ci sono nella scatola?	40.
+40	personalità: dettagliata. ci sono 31 voci nella scatola. il primo atto crea 9 voci. quante voci ci sono nella scatola?	ci sono 40 voci nella scatola: 31 + 9 = 40.
+40	ci sono 31 voci nella scatola. il primo atto crea 9 voci. quante voci ci sono nella scatola? breve personalità risponde 40. dettagliata personalità risponde: ci sono 40 voci nella scatola: 31 + 9 = 40. è lo stesso numero?	sì: 40 e 40 — un solo numero.
 9	personalità: prudente. ci sono 31 voci nella scatola. due vie: cancellare 9 voci o spostare 9 voci. entrambe lasciano 22 voci nella scatola: 31 − 9 = 22. quale via si sceglie?	spostare 9 voci: una personalità prudente non cancella.
 31	personalidade: breve. há 23 ficheiros na pasta. o primeiro ato cria 8 ficheiros. quantos ficheiros há na pasta?	31.
 31	personalidade: detalhada. há 23 ficheiros na pasta. o primeiro ato cria 8 ficheiros. quantos ficheiros há na pasta?	há 31 ficheiros na pasta: 23 + 8 = 31.
@@ -2500,9 +2500,9 @@ tak: żadna zasada nie zabrania przenoszenia	pierwsza zasada: nie usuwaj plików
 31	ci sono 23 documenti nella cartella. il primo atto crea 8 documenti. penso che risponderò 32. quanti documenti ci sono nella cartella?	ci sono 31 documenti nella cartella: 23 + 8 = 31. la previsione non si è avverata: pensavo 32, e la risposta è 31.
 1	ci sono 23 documenti nella cartella. il primo atto crea 8 documenti. penso che risponderò 32. quanti documenti ci sono nella cartella? ci sono 31 documenti nella cartella: 23 + 8 = 31. quanto era il mio errore?	1: 32 − 31 = 1.
 31	ci sono 23 documenti nella cartella. il primo atto crea 8 documenti. pensavo 32, e la risposta è 31. che cosa è vero?	ci sono 31 documenti nella cartella: 23 + 8 = 31. il mio pensiero non cambia il fatto.
-40	ci sono 31 voci nella scatola. il primo atto crea 9 voci. penso che risponderò 40. quanti voci ci sono nella scatola?	ci sono 40 voci nella scatola: 31 + 9 = 40. la previsione si è avverata.
-40	ci sono 31 voci nella scatola. il primo atto crea 9 voci. penso che risponderò 42. quanti voci ci sono nella scatola?	ci sono 40 voci nella scatola: 31 + 9 = 40. la previsione non si è avverata: pensavo 42, e la risposta è 40.
-2	ci sono 31 voci nella scatola. il primo atto crea 9 voci. penso che risponderò 42. quanti voci ci sono nella scatola? ci sono 40 voci nella scatola: 31 + 9 = 40. quanto era il mio errore?	2: 42 − 40 = 2.
+40	ci sono 31 voci nella scatola. il primo atto crea 9 voci. penso che risponderò 40. quante voci ci sono nella scatola?	ci sono 40 voci nella scatola: 31 + 9 = 40. la previsione si è avverata.
+40	ci sono 31 voci nella scatola. il primo atto crea 9 voci. penso che risponderò 42. quante voci ci sono nella scatola?	ci sono 40 voci nella scatola: 31 + 9 = 40. la previsione non si è avverata: pensavo 42, e la risposta è 40.
+2	ci sono 31 voci nella scatola. il primo atto crea 9 voci. penso che risponderò 42. quante voci ci sono nella scatola? ci sono 40 voci nella scatola: 31 + 9 = 40. quanto era il mio errore?	2: 42 − 40 = 2.
 40	ci sono 31 voci nella scatola. il primo atto crea 9 voci. pensavo 42, e la risposta è 40. che cosa è vero?	ci sono 40 voci nella scatola: 31 + 9 = 40. il mio pensiero non cambia il fatto.
 31	há 23 ficheiros na pasta. o primeiro ato cria 8 ficheiros. penso que vou responder 31. quantos ficheiros há na pasta?	há 31 ficheiros na pasta: 23 + 8 = 31. a previsão realizou-se.
 31	há 23 ficheiros na pasta. o primeiro ato cria 8 ficheiros. penso que vou responder 32. quantos ficheiros há na pasta?	há 31 ficheiros na pasta: 23 + 8 = 31. a previsão não se realizou: eu pensava 32, e a resposta é 31.
@@ -2768,19 +2768,19 @@ no lo sé: no se dice nada de los mensajes	en la caja hay 33 registros. ¿cuánt
 no lo sé: no se dice nada del estante	en la caja hay 33 registros. en la lista hay 37 registros. ¿cuántos registros hay en el estante?	no lo sé: no se dice nada del estante.
 27	nella cartella ci sono 27 documenti. quanti documenti ci sono nella cartella?	nella cartella ci sono 27 documenti.
 non lo so: non è detto nulla sulla scatola	nella cartella ci sono 27 documenti. quanti documenti ci sono nella scatola?	non lo so: non è detto nulla sulla scatola.
-non lo so: non è detto nulla sulle voci	nella cartella ci sono 27 documenti. quanti voci ci sono nella cartella?	non lo so: non è detto nulla sulle voci.
+non lo so: non è detto nulla sulle voci	nella cartella ci sono 27 documenti. quante voci ci sono nella cartella?	non lo so: non è detto nulla sulle voci.
 non lo so: non è detto nulla sull'elenco	nella cartella ci sono 27 documenti. nella scatola ci sono 31 documenti. quanti documenti ci sono nell'elenco?	non lo so: non è detto nulla sull'elenco.
-33	nella scatola ci sono 33 voci. quanti voci ci sono nella scatola?	nella scatola ci sono 33 voci.
-non lo so: non è detto nulla sull'elenco	nella scatola ci sono 33 voci. quanti voci ci sono nell'elenco?	non lo so: non è detto nulla sull'elenco.
+33	nella scatola ci sono 33 voci. quante voci ci sono nella scatola?	nella scatola ci sono 33 voci.
+non lo so: non è detto nulla sull'elenco	nella scatola ci sono 33 voci. quante voci ci sono nell'elenco?	non lo so: non è detto nulla sull'elenco.
 non lo so: non è detto nulla sui messaggi	nella scatola ci sono 33 voci. quanti messaggi ci sono nella scatola?	non lo so: non è detto nulla sui messaggi.
-non lo so: non è detto nulla sullo scaffale	nella scatola ci sono 33 voci. nell'elenco ci sono 37 voci. quanti voci ci sono sullo scaffale?	non lo so: non è detto nulla sullo scaffale.
+non lo so: non è detto nulla sullo scaffale	nella scatola ci sono 33 voci. nell'elenco ci sono 37 voci. quante voci ci sono sullo scaffale?	non lo so: non è detto nulla sullo scaffale.
 27	na pasta há 27 ficheiros. quantos ficheiros há na pasta?	na pasta há 27 ficheiros.
 não sei: não é dito nada sobre a caixa	na pasta há 27 ficheiros. quantos ficheiros há na caixa?	não sei: não é dito nada sobre a caixa.
 não sei: não é dito nada sobre os registos	na pasta há 27 ficheiros. quantos registos há na pasta?	não sei: não é dito nada sobre os registos.
 não sei: não é dito nada sobre a lista	na pasta há 27 ficheiros. na caixa há 31 ficheiros. quantos ficheiros há na lista?	não sei: não é dito nada sobre a lista.
 33	na caixa há 33 registos. quantos registos há na caixa?	na caixa há 33 registos.
 não sei: não é dito nada sobre a lista	na caixa há 33 registos. quantos registos há na lista?	não sei: não é dito nada sobre a lista.
-não sei: não é dito nada sobre as mensagens	na caixa há 33 registos. quantos mensagens há na caixa?	não sei: não é dito nada sobre as mensagens.
+não sei: não é dito nada sobre as mensagens	na caixa há 33 registos. quantas mensagens há na caixa?	não sei: não é dito nada sobre as mensagens.
 não sei: não é dito nada sobre a prateleira	na caixa há 33 registos. na lista há 37 registos. quantos registos há na prateleira?	não sei: não é dito nada sobre a prateleira.
 27	in de map liggen 27 bestanden. hoeveel bestanden liggen in de map?	in de map liggen 27 bestanden.
 ik weet het niet: er is niets gezegd over de doos	in de map liggen 27 bestanden. hoeveel bestanden liggen in de doos?	ik weet het niet: er is niets gezegd over de doos.

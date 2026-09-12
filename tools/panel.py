@@ -345,6 +345,13 @@ recache.установить()
            "verifyforms_court",
            # ПЛАН (05.09, архитектура агента: шаг проверяется числом, итог — вердиктом)
            "planforms_court",
+           # ЧЕТЫРЕ ДОМА НЕНАЗВАННОГО ЗАКОНА (12.09, ночь): свод пользовался этими законами
+           # тысячами строк и НИ РАЗУ их не называл — счётная форма имени при числе, французская
+           # элизия, английский артикль по звуку и польская связка по счётной ячейке.
+           "countlaw_court",
+           "elision_court",
+           "soundarticle_court",
+           "plcopula_court",
            # ЭПИЗОД (05.09, архитектура агента: лента актов, префикс леджера, ничья шагов)
            "episodeforms_court", "summaryforms_court", "opforms_court", "readnum_court", "mandateforms_court", "personforms_court", "selfmodelforms_court", "signedworld_court", "beforetails_court", "discountroad_court", "nomention_court", "clockforms_court", "mixedunits_court", "dateforms_court", "clockwords_court", "speedforms_court", "enough_court", "numphrase_court", "kinbearer_court", "pronobject_court", "proform_court", "degrees_court", "actturn_court", "tempscale_court", "unitfrac_court", "place_court", "roman_court", "quantforms_court", "orderforms_court", "roundforms_court")
 

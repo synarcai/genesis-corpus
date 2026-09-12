@@ -14,6 +14,7 @@ and both forms. The world is CLOSED.
 """
 import json
 import pathlib
+import romgram  # noqa: E402 — романское вопросное слово: один дом закона
 import re
 import frgram as _fr  # французская элизия: один закон, два читателя
 import sys
@@ -54,27 +55,27 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
                       "день": dict(вопрос="jours", one="jour", many="jours"), "час": dict(вопрос="heures", one="heure", many="heures")},
                словом={2: "deux", 3: "trois", 4: "quatre"},
                рамка=("combien de {М} y a-t-il dans {k} {Б} ?", "{v} : {k_} {зн} {f} = {v}.")),
-    "es": dict(рамка2=("¿cuántos {М} tienen {k} {Б2}?", "{v}: {k_} {зн} {f} = {v}."),
+    "es": dict(рамка2=("¿{КВ} {М} tienen {k} {Б2}?", "{v}: {k_} {зн} {f} = {v}."),
                большие2={"час": dict(many="horas"), "минута": dict(many="minutos"), "неделя": dict(many="semanas"), "сутки": dict(many="días")},
                большие={"час": dict(many="horas"), "минута": dict(many="minutos"), "неделя": dict(many="semanas"), "сутки": dict(many="días")},
                малые={"минута": dict(вопрос="minutos", one="minuto", many="minutos"), "секунда": dict(вопрос="segundos", one="segundo", many="segundos"),
                       "день": dict(вопрос="días", one="día", many="días"), "час": dict(вопрос="horas", one="hora", many="horas")},
                словом={2: "dos", 3: "tres", 4: "cuatro"},
-               рамка=("¿cuántos {М} hay en {k} {Б}?", "{v}: {k_} {зн} {f} = {v}.")),
-    "it": dict(рамка2=("quanti {М} hanno {k} {Б2}?", "{v}: {k_} {зн} {f} = {v}."),
+               рамка=("¿{КВ} {М} hay en {k} {Б}?", "{v}: {k_} {зн} {f} = {v}.")),
+    "it": dict(рамка2=("{КВ} {М} hanno {k} {Б2}?", "{v}: {k_} {зн} {f} = {v}."),
                большие2={"час": dict(many="ore"), "минута": dict(many="minuti"), "неделя": dict(many="settimane"), "сутки": dict(many="giorni")},
                большие={"час": dict(many="ore"), "минута": dict(many="minuti"), "неделя": dict(many="settimane"), "сутки": dict(many="giorni")},
                малые={"минута": dict(вопрос="minuti", one="minuto", many="minuti"), "секунда": dict(вопрос="secondi", one="secondo", many="secondi"),
                       "день": dict(вопрос="giorni", one="giorno", many="giorni"), "час": dict(вопрос="ore", one="ora", many="ore")},
                словом={2: "due", 3: "tre", 4: "quattro"},
-               рамка=("quanti {М} ci sono in {k} {Б}?", "{v}: {k_} {зн} {f} = {v}.")),
-    "pt": dict(рамка2=("quantos {М} têm {k} {Б2}?", "{v}: {k_} {зн} {f} = {v}."),
+               рамка=("{КВ} {М} ci sono in {k} {Б}?", "{v}: {k_} {зн} {f} = {v}.")),
+    "pt": dict(рамка2=("{КВ} {М} têm {k} {Б2}?", "{v}: {k_} {зн} {f} = {v}."),
                большие2={"час": dict(many="horas"), "минута": dict(many="minutos"), "неделя": dict(many="semanas"), "сутки": dict(many="dias")},
                большие={"час": dict(many="horas"), "минута": dict(many="minutos"), "неделя": dict(many="semanas"), "сутки": dict(many="dias")},
                малые={"минута": dict(вопрос="minutos", one="minuto", many="minutos"), "секунда": dict(вопрос="segundos", one="segundo", many="segundos"),
                       "день": dict(вопрос="dias", one="dia", many="dias"), "час": dict(вопрос="horas", one="hora", many="horas")},
                словом={2: "duas", 3: "três", 4: "quatro"},
-               рамка=("quantos {М} há em {k} {Б}?", "{v}: {k_} {зн} {f} = {v}.")),
+               рамка=("{КВ} {М} há em {k} {Б}?", "{v}: {k_} {зн} {f} = {v}.")),
     "nl": dict(рамка2=("hoeveel {М} hebben {k} {Б2}?", "{v}: {k_} {зн} {f} = {v}."),
                большие2={"час": dict(many="uur"), "минута": dict(many="minuten"), "неделя": dict(many="weken"), "сутки": dict(many="dagen")},
                большие={"час": dict(many="uur"), "минута": dict(many="minuten"), "неделя": dict(many="weken"), "сутки": dict(many="dagen")},
@@ -102,6 +103,24 @@ def _пакет(язык):
     return _ПАКЕТ[язык]
 
 
+# РОД МАЛОЙ ЕДИНИЦЫ ТАМ, ГДЕ ВОПРОСНОЕ СЛОВО ГНЁТСЯ (12.09). «¿cuántos horas tienen 2 días?»
+# стояло в своде пятнадцатью страницами: рамка держала вопросное слово ЦЕЛЫМ и не слышала, что
+# за ним подставят, — а «hora», «ora» и «hora» женского рода во всех трёх языках.
+#
+#     СЛУЖЕБНОЕ СЛОВО, СТОЯЩЕЕ В РАМКЕ ЦЕЛЫМ, НЕ СЛЫШИТ ТОГО, ЧТО ЗА НИМ ПОДСТАВЯТ.
+#
+# Ключ — ВОПРОСНАЯ форма малой единицы (та, что стои́т в вопросе); объявлены ВСЕ, а не
+# меньшинство: умолчание, угаданное однажды, молчит и там, где угадано неверно.
+РОД_МАЛОЙ = {
+    "es": {"horas": "f", "minutos": "m", "segundos": "m", "días": "m"},
+    "it": {"ore": "f", "minuti": "m", "secondi": "m", "giorni": "m"},
+    "pt": {"horas": "f", "minutos": "m", "segundos": "m", "dias": "m"},
+}
+def квопрос(язык, м):
+    """Вопросное слово, согласованное с малой единицей: «cuántas horas», но «cuántos minutos»."""
+    return romgram.по_слову(язык, м, РОД_МАЛОЙ.get(язык, {}))
+
+
 def форма(язык, таблица, k):
     формы = [ф for ф in ("one", "few", "many") if ф in таблица]
     i = langpack.count_form_index(_пакет(язык), {"forms": формы}, k)
@@ -123,7 +142,7 @@ def страница(язык, i, k, словом=True, рамка="рамка")
     сл = _слово(язык, б, k, рамка)
     K = сл if словом and сл else str(k)
     большие = я["большие2"] if рамка == "рамка2" else я["большие"]
-    п = dict(М=я["малые"][м]["вопрос"], k=K, Б=форма(язык, я["большие"][б], k), Б2=форма(язык, большие[б], k), v=v, k_=k, f=f, зн="×")
+    п = dict(М=я["малые"][м]["вопрос"], КВ=квопрос(язык, я["малые"][м]["вопрос"]), k=K, Б=форма(язык, я["большие"][б], k), Б2=форма(язык, большие[б], k), v=v, k_=k, f=f, зн="×")
     воп, отв = я[рамка]
     # ЭЛИЗИЯ ПОСЛЕ ПОДСТАНОВКИ: «combien de heures» → «combien d'heures»
     готовая = f"{воп.format(**п)} {отв.format(**п)}"
@@ -157,6 +176,8 @@ def _образцы():
                 # ЗНАК ДЕЙСТВИЯ — ДЫРА, А НЕ БУКВА (М-489): «2 ÷ 60 = 120» обязано быть ЛОЖЬЮ,
                 # а не немотой, иначе суд слеп ровно на той порче, ради которой поставлен
                 "зн": r"(?P<zn>[+−×÷])"}
+        if romgram.гнётся(язык):
+            дыры["КВ"] = "(?P<КВ>" + "|".join(re.escape(с) for с in romgram.ПАРЫ[язык]) + ")"
         for рамка in (("рамка", "рамка2") if "рамка2" in я else ("рамка",)):
             видены, куски = set(), []
             for кусок in re.split(r"(\{[^}]+\})", " ".join(я[рамка])):

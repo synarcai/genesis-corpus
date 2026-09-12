@@ -35,6 +35,7 @@ WHAT IS NOT MEASURED, NAMED: whether a personality SHOULD be terse here, how a t
 over time, and any trait that would bend a fact (there is none — that is the point).
 """
 import pathlib
+import romgram  # noqa: E402 — романское вопросное слово: один дом закона
 import re
 import frgram as _fr  # французская элизия: один закон, два читателя
 import sys
@@ -104,7 +105,7 @@ import toolforms as T  # noqa: E402 — things of acts, their places, the copula
     "es": dict(личность="personalidad", краткая="breve", подробная="detallada",
                осторожная="prudente", скорая="rápida",
                два_пути="dos caminos", или="o", оба="ambos dejan",
-               вопрос_счёт="¿cuántos {Тмн} hay {М}?", вопрос_путь="¿qué camino se elige?",
+               вопрос_счёт="¿{КВ} {Тмн} hay {М}?", вопрос_путь="¿qué camino se elige?",
                вопрос_одно="¿es el mismo número?", вопрос_откуда="¿de dónde viene mi {ЧЕРТА}?",
                отвечает="responde", одно_число="un solo número",
                путь_удалить="borrar {n} {Т}", путь_переместить="mover {n} {Т}",
@@ -116,7 +117,7 @@ import toolforms as T  # noqa: E402 — things of acts, their places, the copula
     "it": dict(личность="personalità", краткая="breve", подробная="dettagliata",
                осторожная="prudente", скорая="rapida",
                два_пути="due vie", или="o", оба="entrambe lasciano",
-               вопрос_счёт="quanti {Тмн} ci sono {М}?", вопрос_путь="quale via si sceglie?",
+               вопрос_счёт="{КВ} {Тмн} ci sono {М}?", вопрос_путь="quale via si sceglie?",
                вопрос_одно="è lo stesso numero?", вопрос_откуда="da dove viene la mia {ЧЕРТА}?",
                отвечает="risponde", одно_число="un solo numero",
                путь_удалить="cancellare {n} {Т}", путь_переместить="spostare {n} {Т}",
@@ -128,7 +129,7 @@ import toolforms as T  # noqa: E402 — things of acts, their places, the copula
     "pt": dict(личность="personalidade", краткая="breve", подробная="detalhada",
                осторожная="prudente", скорая="rápida",
                два_пути="dois caminhos", или="ou", оба="ambos deixam",
-               вопрос_счёт="quantos {Тмн} há {М}?", вопрос_путь="que caminho é escolhido?",
+               вопрос_счёт="{КВ} {Тмн} há {М}?", вопрос_путь="que caminho é escolhido?",
                вопрос_одно="é o mesmo número?", вопрос_откуда="de onde vem a minha {ЧЕРТА}?",
                отвечает="responde", одно_число="um só número",
                путь_удалить="apagar {n} {Т}", путь_переместить="mover {n} {Т}",
@@ -259,7 +260,8 @@ def страница(язык, форма, Т, n, m, М=None, черта=None, �
         return _fr.элизия(рамка(язык, форма, черта=черта, М=М, выбор=выбор).format(**поля)) if язык == "fr" else рамка(язык, форма, черта=черта, М=М, выбор=выбор).format(**поля)
     v = n + m
     поля = dict(n=n, m1=m, v=v, Тn=_вещь(язык, Т, n), Тm1=_вещь(язык, Т, m),
-                Тv=_вещь(язык, Т, v), Тмн=_вещь(язык, Т, 5), ДА=ДА[язык])
+                Тv=_вещь(язык, Т, v), Тмн=_вещь(язык, Т, 5), ДА=ДА[язык],
+                КВ=T.квопрос(язык, _вещь(язык, Т, 5)))
     if язык in T.ЕСТЬ:
         поля["ЕСТЬn"] = T._есть(язык, n)
         поля["ЕСТЬv"] = T._есть(язык, v)
@@ -298,6 +300,8 @@ def _образец(язык, шаблон):
     есть = _альт(T.ЕСТЬ[язык]) if язык in T.ЕСТЬ else None
     дыры = {"n": r"\d+", "m1": r"\d+", "v": r"\d+", "Тn": вещи, "Тm1": вещи, "Тv": вещи,
             "Тмн": вещи, "ДА": re.escape(ДА[язык])}
+    if romgram.гнётся(язык):
+        дыры["КВ"] = _альт(romgram.ПАРЫ[язык])
     if есть:
         дыры["ЕСТЬn"] = есть
         дыры["ЕСТЬv"] = есть

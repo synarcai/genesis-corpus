@@ -24,7 +24,8 @@ import sys
 # вердикт каждого из них, и день, когда список разойдётся с делом, есть день молчаливой
 # порчи трёх миров разом.
 ЧИТАЮТ = ("overlapforms", "wmeanforms", "condforms", "numlineforms", "squnitforms",
-          "pctbaseforms", "growfigforms", "leapforms")
+          "pctbaseforms", "leapforms", "angleforms", "homoforms", "medianforms",
+          "tzoneforms")
 
 # ЗАПИСЬ ЕСТЬ ЦЕПЬ РАВНЫХ ЗВЕНЬЕВ, А НЕ ПАРА «ВЫРАЖЕНИЕ = ЧИСЛО». Справа от знака равенства
 # стои́т выражение так же часто, как слева: «4 × 25 = 10 × 10» есть одно утверждение о двух

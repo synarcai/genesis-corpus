@@ -16,6 +16,7 @@ The world is CLOSED.
 """
 import json
 import pathlib
+import romgram  # noqa: E402 — романское вопросное слово: один дом закона
 import re
 import sys
 
@@ -64,7 +65,7 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
                          (("niño", "niños"), "en el autobús", ("había",), ("subieron",), ("bajaron",)),
                          (("barco", "barcos"), "en el puerto", ("había",), ("llegaron",), ("se fueron",))),
                было="{БЫЛИ} {n} {Нn} {ГДЕ}.", прибыль="{ПРИШЛИ} {k} {Нk} más.", убыль="{УШЛИ} {k} {Нk}.",
-               носители_вопрос="¿cuántos {Нмн} hay {ГДЕ} ahora?", носители_ответ="{r} {Нr}: {n} {знак} {k} = {r}."),
+               носители_вопрос="¿{КВ} {Нмн} hay {ГДЕ} ahora?", носители_ответ="{r} {Нr}: {n} {знак} {k} = {r}."),
     "it": dict(деятели=(("la rana", "f"), ("il canguro", "m"), ("il cane", "m"), ("il gatto", "m")),
                глаголы=(("ha saltato", "saltare", "длина"), ("pesava", "pesare", "вес")),
                единицы={"длина": (("centimetro", "centimetri"), ("metro", "metri")), "вес": (("chilogrammo", "chilogrammi"), ("grammo", "grammi"))}, пр={},
@@ -75,7 +76,7 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
                          (("bambino", "bambini"), "sull'autobus", ("c'erano",), ("sono saliti altri",), ("sono scesi",)),
                          (("barca", "barche"), "nel porto", ("c'erano",), ("sono arrivate altre",), ("sono partite",))),
                было="{БЫЛИ} {n} {Нn} {ГДЕ}.", прибыль="{ПРИШЛИ} {k} {Нk}.", убыль="{k} {Нk} {УШЛИ}.",
-               носители_вопрос="quanti {Нмн} ci sono {ГДЕ} adesso?", носители_ответ="{r} {Нr}: {n} {знак} {k} = {r}."),
+               носители_вопрос="{КВ} {Нмн} ci sono {ГДЕ} adesso?", носители_ответ="{r} {Нr}: {n} {знак} {k} = {r}."),
     "pt": dict(деятели=(("a rã", "f"), ("o canguru", "m"), ("o cão", "m"), ("o gato", "m")),
                глаголы=(("saltou", "saltar", "длина"), ("pesava", "pesar", "вес")),
                единицы={"длина": (("centímetro", "centímetros"), ("metro", "metros")), "вес": (("quilograma", "quilogramas"), ("grama", "gramas"))}, пр={},
@@ -86,7 +87,7 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
                          (("criança", "crianças"), "no autocarro", ("havia",), ("entraram mais",), ("saíram",)),
                          (("barco", "barcos"), "no porto", ("havia",), ("chegaram mais",), ("partiram",))),
                было="{БЫЛИ} {n} {Нn} {ГДЕ}.", прибыль="{ПРИШЛИ} {k} {Нk}.", убыль="{k} {Нk} {УШЛИ}.",
-               носители_вопрос="quantos {Нмн} há {ГДЕ} agora?", носители_ответ="{r} {Нr}: {n} {знак} {k} = {r}."),
+               носители_вопрос="{КВ} {Нмн} há {ГДЕ} agora?", носители_ответ="{r} {Нr}: {n} {знак} {k} = {r}."),
     "nl": dict(деятели=(("de kikker", "m"), ("de kangoeroe", "m"), ("de hond", "m"), ("de kat", "f")),
                глаголы=(("sprong", "springen", "длина"), ("woog", "wegen", "вес")),
                единицы={"длина": (("centimeter",), ("meter",)), "вес": (("kilogram",), ("gram",))}, пр={},
@@ -176,9 +177,27 @@ def страница(язык, форма, i):
            else я["убыль"].format(k=k, Нk=счётная(язык, формы_н, k), УШЛИ=гл(ушли, k)))
     # French «de» contracts before a vowel: «combien d'oiseaux», «combien de bateaux» — declared rule
     ДЕ = ("d'" if формы_н[-1][:1].lower() in "aeiouyhéèê" else "de ") if язык == "fr" else ""
-    воп = я["носители_вопрос"].format(Нмн=формы_н[-1], ГДЕ=ГДЕ, ДЕ=ДЕ)
+    воп = я["носители_вопрос"].format(Нмн=формы_н[-1], ГДЕ=ГДЕ, ДЕ=ДЕ, КВ=квопрос(язык, формы_н[-1]))
     отв = я["носители_ответ"].format(r=r, Нr=счётная(язык, формы_н, r), n=n, знак="+" if прибыль else "−", k=k)
     return f"{было} {ход} {воп} {отв}"
+
+
+# РОД НОСИТЕЛЯ ТАМ, ГДЕ ВОПРОСНОЕ СЛОВО ГНЁТСЯ (12.09). Рамка держала «quantos», «quanti»,
+# «cuántos» ЦЕЛЫМИ — и «quantos crianças há no autocarro agora?» стояло в своде страницами,
+# ложное согласованием при верном счёте. Итальянский ряд несёт ту же беду на «barche», и она
+# НЕ ВИДНА даже прибору двуродого имени: слово стои́т лишь после неверной формы, и сестры, с
+# которой его сличить, в своде нет.
+#
+#     ЛОЖЬ, СКАЗАННАЯ ВСЕГДА ОДИНАКОВО, НЕ ИМЕЕТ СЕСТРЫ — И МЕРА, ЖИВУЩАЯ СЛИЧЕНИЕМ, МОЛЧИТ
+#     О НЕЙ. Оттого род объявлен ПОИМЁННО и целиком, а не выведен умолчанием.
+РОД_НОСИТЕЛЯ = {
+    "es": {"pájaros": "m", "niños": "m", "barcos": "m"},
+    "it": {"uccelli": "m", "bambini": "m", "barche": "f"},
+    "pt": {"pássaros": "m", "crianças": "f", "barcos": "m"},
+}
+def квопрос(язык, мн):
+    """Вопросное слово, согласованное с НОСИТЕЛЕМ: «quante barche», но «quanti uccelli»."""
+    return romgram.по_слову(язык, мн, РОД_НОСИТЕЛЯ.get(язык, {}))
 
 
 def _показы():
@@ -213,6 +232,8 @@ def _образцы():
                 "ГДЕ": "(" + _alt(н[1] for н in я["носители"]) + ")", "БЫЛИ": "(" + _alt(ф for н in я["носители"] for ф in н[2]) + ")",
                 "ПРИШЛИ": "(" + _alt(ф for н in я["носители"] for ф in н[3]) + ")", "УШЛИ": "(" + _alt(ф for н in я["носители"] for ф in н[4]) + ")",
                 "знак": "([+−])", "ДЕ": "(?:de |d')"}
+        if romgram.гнётся(язык):
+            дыры["КВ"] = "(" + "|".join(re.escape(с) for с in romgram.ПАРЫ[язык]) + ")"
         for вид in ("длина", "вес"):
             мера = я["факт"] + " " + я["вопрос"][вид] + " " + я["ответ"]
             сумма = я["сумма_факт"] + " " + я["сумма_вопрос"][вид] + " " + я["сумма_ответ"]

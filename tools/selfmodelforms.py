@@ -39,6 +39,7 @@ over time (that is the growth ledger's, not a page's), and any prediction about 
 — this house is about the one who answers.
 """
 import pathlib
+import romgram  # noqa: E402 — романское вопросное слово: один дом закона
 import re
 import frgram as _fr  # французская элизия: один закон, два читателя
 import sys
@@ -106,34 +107,34 @@ import toolforms as T  # noqa: E402 — things of acts, their places, the copula
                основание="combien de {Тмн} il y a {М} n'est pas dit",
                двоеточие=" : ", вопрос_знак=" ?"),
     "es": dict(думаю="creo que responderé {p}.", не_отвечу="creo que no responderé.",
-               вопрос="¿cuántos {Тмн} hay {М}?", вопрос_ошибка="¿por cuánto me equivoqué?",
+               вопрос="¿{КВ} {Тмн} hay {М}?", вопрос_ошибка="¿por cuánto me equivoqué?",
                вопрос_верно="¿qué es verdad?",
                сбылось="la predicción se cumplió.",
                не_сбылось="la predicción no se cumplió: pensaba {p}, y la respuesta es {v}.",
                ошибка="por {e}", думал="pensaba {p}, y la respuesta es {v}.",
                не_меняет="mi pensamiento no cambia el hecho",
                есть_вещи="hay {ПЛ} {М}.", не_сказано="cuántos, no se dice.",
-               основание="no se dice cuántos {Тмн} hay {М}",
+               основание="no se dice {КВ} {Тмн} hay {М}",
                двоеточие=": ", вопрос_знак="?"),
     "it": dict(думаю="penso che risponderò {p}.", не_отвечу="penso che non risponderò.",
-               вопрос="quanti {Тмн} ci sono {М}?", вопрос_ошибка="quanto era il mio errore?",
+               вопрос="{КВ} {Тмн} ci sono {М}?", вопрос_ошибка="quanto era il mio errore?",
                вопрос_верно="che cosa è vero?",
                сбылось="la previsione si è avverata.",
                не_сбылось="la previsione non si è avverata: pensavo {p}, e la risposta è {v}.",
                ошибка="{e}", думал="pensavo {p}, e la risposta è {v}.",
                не_меняет="il mio pensiero non cambia il fatto",
                есть_вещи="{М} ci sono {ПЛ}.", не_сказано="quanti, non è detto.",
-               основание="non è detto quanti {Тмн} ci sono {М}",
+               основание="non è detto {КВ} {Тмн} ci sono {М}",
                двоеточие=": ", вопрос_знак="?"),
     "pt": dict(думаю="penso que vou responder {p}.", не_отвечу="penso que não vou responder.",
-               вопрос="quantos {Тмн} há {М}?", вопрос_ошибка="de quanto me enganei?",
+               вопрос="{КВ} {Тмн} há {М}?", вопрос_ошибка="de quanto me enganei?",
                вопрос_верно="o que é verdade?",
                сбылось="a previsão realizou-se.",
                не_сбылось="a previsão não se realizou: eu pensava {p}, e a resposta é {v}.",
                ошибка="de {e}", думал="eu pensava {p}, e a resposta é {v}.",
                не_меняет="o meu pensamento não muda o facto",
                есть_вещи="há {ПЛ} {М}.", не_сказано="quantos, não é dito.",
-               основание="não é dito quantos {Тмн} há {М}",
+               основание="não é dito {КВ} {Тмн} há {М}",
                двоеточие=": ", вопрос_знак="?"),
     "nl": dict(думаю="ik denk dat ik {p} zal antwoorden.", не_отвечу="ik denk dat ik niet zal antwoorden.",
                вопрос="hoeveel {Тмн} liggen {М}?", вопрос_ошибка="hoeveel was mijn fout?",
@@ -204,12 +205,14 @@ def страница(язык, форма, Т, n=0, m=0, сдвиг=1, М=None):
     р = РЕЧЬ[язык]
     М = М if М is not None else T.МЕСТА[язык][Т % len(T.МЕСТА[язык])]
     if форма == "предсказал_незнание":
-        поля = dict(ПЛ=ПЛЮРАЛЬ[язык][Т % len(ПЛЮРАЛЬ[язык])], Тмн=_вещь(язык, Т, 5))
+        поля = dict(ПЛ=ПЛЮРАЛЬ[язык][Т % len(ПЛЮРАЛЬ[язык])], Тмн=_вещь(язык, Т, 5),
+                    КВ=T.квопрос(язык, _вещь(язык, Т, 5)))
         return _fr.элизия(рамка(язык, форма, М, Т).format(**поля)) if язык == "fr" else рамка(язык, форма, М, Т).format(**поля)
     v = n + m
     p = v if форма == "сбылось" else v + сдвиг
     поля = dict(n=n, m1=m, v=v, p=p, e=abs(p - v), Тn=_вещь(язык, Т, n), Тm1=_вещь(язык, Т, m),
-                Тv=_вещь(язык, Т, v), Тp=_вещь(язык, Т, p), Тмн=_вещь(язык, Т, 5))
+                Тv=_вещь(язык, Т, v), Тp=_вещь(язык, Т, p), Тмн=_вещь(язык, Т, 5),
+                КВ=T.квопрос(язык, _вещь(язык, Т, 5)))
     if язык in T.ЕСТЬ:
         поля["ЕСТЬn"] = T._есть(язык, n)
         поля["ЕСТЬv"] = T._есть(язык, p if форма == "сбылось" else v)
@@ -249,6 +252,8 @@ def _образец(язык, шаблон):
     дыры = {"n": r"\d+", "m1": r"\d+", "v": r"\d+", "p": r"\d+", "e": r"\d+",
             "Тn": вещи, "Тm1": вещи, "Тv": вещи, "Тp": вещи, "Тмн": вещи,
             "ПЛ": _альт(ПЛЮРАЛЬ[язык])}
+    if romgram.гнётся(язык):
+        дыры["КВ"] = _альт(romgram.ПАРЫ[язык])
     if есть:
         дыры["ЕСТЬn"] = есть
         дыры["ЕСТЬv"] = есть

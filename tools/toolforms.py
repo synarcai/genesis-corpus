@@ -34,6 +34,7 @@ import frgram as _fr  # французская элизия: один закон
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import romgram  # noqa: E402 — романское вопросное слово: один дом закона
 import svampforms as S  # noqa: E402 — the count cell of a pack and the gendered question words
 
 ЯЗЫКИ = ("ru", "en", "de", "fr", "es", "it", "pt", "nl", "pl")
@@ -186,6 +187,21 @@ import svampforms as S  # noqa: E402 — the count cell of a pack and the gender
     "it": {"documenti": "m", "voci": "f", "messaggi": "m", "righe": "f"},
     "pt": {"ficheiros": "m", "registos": "m", "mensagens": "f", "linhas": "f"},
 }
+
+
+# ВОПРОСНОЕ СЛОВО ПО РОДУ ВЕЩИ — ОДНО ОБЪЯВЛЕНИЕ НА ВСЕХ, КТО БЕРЁТ ЗДЕСЬ ВЕЩИ (12.09). Дома
+# личности, самомодели и умолчания берут вещи акта у этого дома, а вопросное слово вписывали
+# в рамку ЦЕЛЫМ — и «quanti voci», «quantos mensagens» стояли в своде сотнями страниц, ложные
+# согласованием при верном счёте. Род объявлен ЗДЕСЬ (`РОД`), и слово, им управляемое, — тоже.
+#
+#     ЗАКОН, ОБЪЯВЛЕННЫЙ В ОДНОМ ДОМЕ И ПЕРЕПИСАННЫЙ В ТРЁХ, РАСХОДИТСЯ В ЧЕТЫРЁХ.
+def квопрос(язык, мн):
+    """Вопросное слово, согласованное с вещью: «quante voci», но «quanti documenti».
+
+    ПАРЫ ОБЪЯВЛЕНЫ ДОМОМ ЯЗЫКА (`tools/romgram.py`), род вещи — ЗДЕСЬ: дом языка знает язык,
+    дом вещей знает вещи. Язык без гнутья получает пустую строку: его рамка дыры не держит.
+    """
+    return romgram.по_слову(язык, мн, РОД.get(язык, {}), умолчание="f")
 
 
 def _вещь(язык, форма, Т, c):

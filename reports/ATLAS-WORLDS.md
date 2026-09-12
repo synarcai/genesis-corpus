@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 283 миров, 432210 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 287 миров, 434251 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -11,20 +11,20 @@
 
 ## АКТ «recount» — пересчитать величину: строка утверждает число
 
-Миров 152, строк 224850.
+Миров 152, строк 226547.
 
 - **`links`** (17566 строк; declared, whole_only)  
   **CONVERSATION LINKS** — a question whose subject stands in the PREVIOUS reply (the owner's order, 04.09, item 5; the BESEDA band measures this genus mute 15 of 15).
 - **`school_biling_v2c`** (11380 строк; recompute, whole_only)  
   **THE SCHOOL OF ARITHMETIC IN THREE SURFACES** — the largest show world of the corpus (11 380 lines, 470 858 bytes) and, until 12.09, the one that said least about itself: thirty characters of declaration, «arithmetic school (3 surfaces)».
-- **`svamp`** (6794 строк; recompute, whole_only)  
+- **`svamp`** (7768 строк; recompute, whole_only)  
   **SVAMP SHAPES** — the eight shapes of the live SVAMP band that no frame of the corpus held (d5, 06.09, by weight on 726 tacts): the hidden quantity «some» and the heads of the total (in all, altogether, in total, a total of, now has N left); the oblique pr…
+- **`holdforms`** (6777 строк; declared, whole_only)  
+  **HOLDINGS WITHOUT A VERB** — the first show «only by frames» (05.09, the owner's word through holon: prototype ONE BEARER, a story read only by frames).
 - **`holes`** (6640 строк; recompute, unsigned_only)  
   **the HOLE MARKET** — one fact frame and every role of it asked in turn (holon's Д-1, REVISION 02.09: a question in the organism is a per-genus surface, not an operation over a bought fact frame; the census of the svod: the number hole carries ~20 000 quest…
 - **`summaryforms`** (6102 строк; recompute, whole_only)  
   **THE SUMMARY** — what a COMPACTED record keeps and what it lost (05.09, the agent architecture, the fifth market): an episode of states and the note that keeps some of them, with questions about THE NOTE — what it says about a place it keeps, what it says …
-- **`holdforms`** (6054 строк; declared, whole_only)  
-  **HOLDINGS WITHOUT A VERB** — the first show «only by frames» (05.09, the owner's word through holon: prototype ONE BEARER, a story read only by frames).
 - **`numberline`** (5292 строк; recompute, whole_only)  
   **THE NUMBER LINE IN NINE LANGUAGES** — the simplest questions a person checks a speaker with, all mute in all nine languages on the third band of conversation (BESEDA-3, 05.09): «what number comes after 9? after 9 comes 10.», «which is bigger: 7 or 9? 9 is…
 - **`episodeforms`** (5229 строк; recompute, whole_only)  
@@ -320,7 +320,7 @@
 
 ## АКТ «compare» — сравнить двоих: больше, меньше, во столько же раз
 
-Миров 35, строк 17504.
+Миров 39, строк 17848.
 
 - **`cmpframes`** (6480 строк; recompute, whole_only)  
   **FRAMES OF COMPARISON** — the largest class of the reader's lies on the held-out key (05.09: twelve of fifteen — «9 flexiones más que», «in più/in meno di», «meer/minder dan», «więcej/mniej niż»: the marker is not bought and the answer takes a neighbouring…
@@ -339,15 +339,15 @@
 - **`dist`** (400 строк; recompute, whole_only, exact_only)  
   **ТРИ ЗАКОНА РАССТОЯНИЯ** — ЧТО ДЕЛАЕТ РАССТОЯНИЕ РАССТОЯНИЕМ. Свод считал расстояния сотнями страниц («расстояние между (−1, 2) и (−16, 10) — 17: 15² + 8² = 17²») и нигде не называл их законов: замер 12.09 нашёл симметрию показанной, а «ноль только до себя…
 - **`orderlaw`** (280 строк; recompute, whole_only, exact_only)  
-  **ЗАКОНЫ ПОРЯДКА** — СВОД СРАВНИВАЛ ЧИСЛА ДЕВЯТЬ ТЫСЯЧ РАЗ И НИ РАЗУ НЕ СДЕЛАЛ ВЫВОДА. Замер 12.09: 980 строк несут цепь «a меньше b, и b меньше c» («билет 4 стои́т между 1 и 7: 1 меньше 4, и 4 меньше 7»), и НИ ОДНА не договаривает «значит, 1 меньше 7».
+  **ЗАКОНЫ ПОРЯДКА** — СВОД СРАВНИВАЛ ЧИСЛА ДЕВЯТЬ ТЫСЯЧ РАЗ И НИ РАЗУ НЕ СДЕЛАЛ ВЫВОДА. Замер 12.09 ПО СВОДУ: 980 строк несут цепь «a меньше b, и b меньше c» («билет 4 стои́т между 1 и 7: 1 меньше 4, и 4 меньше 7»), и НИ ОДНА не договаривает «значит, 1 меньш…
 - **`squnit`** (260 строк; recompute, whole_only, exact_only)  
   **КВАДРАТНЫЕ И КУБИЧЕСКИЕ ЕДИНИЦЫ** — МНОЖИТЕЛЬ ДЛИНЫ ВОЗВОДИТСЯ В СТЕПЕНЬ ВМЕСТЕ С НЕЮ. Замер 12.09 по всему своду в 39 МБ: «квадратных сантиметров» — НОЛЬ вхождений, «square centimetres» — ноль, «кубических сантиметров» — ноль; свод переводит длины множес…
+- **`gender`** (210 строк; declared, declared_table_only)  
+  **РОД В ЧУЖОМ ЯЗЫКЕ** — СВОД СТАВИЛ АРТИКЛЬ ТРИ ТЫСЯЧИ РАЗ И НИ РАЗУ НЕ СКАЗАЛ, ЧТО ЭТО РОД. Замер 12.09: русский род свод называет 624 строками («Анна женского рода, и потому Анна получила»), а в немецком мире 2940 артиклей и НОЛЬ упоминаний рода; во всех …
 - **`propcompare`** (200 строк; recompute, whole_only)  
   **PROPERTY COMPARISON IN NINE LANGUAGES** — «which is heavier: a stone or a feather? a stone.», «what is lighter: a feather or a stone? a feather.» Born from the fifth band of conversation (BESEDA-5, 05.09): «что тяжелее: камень или перо?» was mute in all n…
 - **`ru_compare`** (168 строк; recompute, declared, whole_only, exact_only)  
   **multiplicative against differential comparison in Russian: «во сколько раз больше» is DIVISION and «на сколько больше» is SUBTRACTION, two frames a speaker confuses more often than any other, shown on the SAME pair of numbers side by side with the differe…
-- **`gender`** (160 строк; declared, declared_table_only)  
-  **РОД В ЧУЖОМ ЯЗЫКЕ** — СВОД СТАВИЛ АРТИКЛЬ ТРИ ТЫСЯЧИ РАЗ И НИ РАЗУ НЕ СКАЗАЛ, ЧТО ЭТО РОД. Замер 12.09: русский род свод называет 624 строками («Анна женского рода, и потому Анна получила»), а в немецком мире 2940 артиклей и НОЛЬ упоминаний рода; во всех …
 - **`rewrite`** (144 строк; recompute, whole_only)  
   **REWRITING** — one number written two ways. d5 named sixty-two starving collections of the organism, and `rewrite_facts` was among them: the corpus had no rewriting shows at all.
 - **`analog`** (144 строк; recompute, whole_only)  
@@ -364,6 +364,8 @@
   **ДВА КРУЖКА** — КТО СКЛАДЫВАЕТ ГРУППЫ, НЕ ВЫЧИТАЯ ОБЩЕГО, СЧИТАЕТ ОБЩЕЕ ДВАЖДЫ. Замер 12.09 по всему своду: «и то и другое» встречается восемь раз, и все восемь — о двух записях ОДНОГО числа («3 × 8 и 8 × 3, и то и другое есть 24»); о двух группах, имеющих…
 - **`wmean`** (104 строк; recompute, whole_only, exact_only)  
   **ВЗВЕШЕННОЕ СРЕДНЕЕ** — СРЕДНЕЕ ДВУХ СРЕДНИХ НЕ ЕСТЬ СРЕДНЕЕ ЦЕЛОГО. Замер 12.09 по всему своду в 39 МБ: «взвешенное среднее» — НОЛЬ вхождений.
+- **`countlaw`** (100 строк; declared, declared_table_only)  
+  **ЗАКОН СЧЁТНОЙ ФОРМЫ** — СВОД МЕНЯЛ ФОРМУ ИМЕНИ ПРИ ЧИСЛЕ СОТНЯМИ СТРОК И НИ РАЗУ НЕ СКАЗАЛ, ПО КАКОМУ ЗАКОНУ. Замер 12.09 ПО СВОДУ: все три ячейки стоя́т тысячами строк — «1 книга» 211, «2 книги» 424, «5 книг» 573, — а правило «1 / 2—4 / 5+» живёт лишь в …
 - **`measureprec`** (96 строк; recompute, finite_decimal_only)  
   **ИЗМЕРЕНИЕ И ЕГО ТОЧНОСТЬ** — СВОД МЕРИЛ ВСЁ И НИ РАЗУ НЕ СКАЗАЛ, ЧТО ИЗМЕРЕНИЕ НЕТОЧНО. Замер 12.09 по шестому десятку понятий: «погрешность» — ноль упоминаний и ноль показов; «значащие цифры» — ноль и ноль; «цена деления» — ноль и ноль; «повторное измере…
 - **`measuregrow`** (84 строк; recompute, whole_only, exact_only)  
@@ -372,6 +374,8 @@
   **ОСНОВАНИЕ ПРОЦЕНТА** — ПРОЦЕНТ БЕЗ ОСНОВАНИЯ НЕ ЕСТЬ ЧИСЛО. Замер 12.09 по всему своду: «база процента» — НОЛЬ вхождений, «от чего процент» — ноль; свод берёт процент от числа тысячами страниц и знает процентную разницу (`pctdiff`), но ни разу не спрашива…
 - **`median`** (80 строк; recompute, whole_only, exact_only)  
   **МЕДИАНА И СРЕДНЕЕ** — ОДИН ВЫБРОС ДВИГАЕТ СРЕДНЕЕ И НЕ ДВИГАЕТ МЕДИАНЫ. Замер 12.09 по всему своду в 39 МБ: «медиана не есть среднее» — НОЛЬ вхождений; свод считает медиану 204 строками мира статистики и среднее тысячами, знает и слово «выброс» (57 строк)…
+- **`elision`** (80 строк; declared, declared_table_only)  
+  **ЭЛИЗИЯ** — СВОД СОКРАЩАЛ СЛУЖЕБНОЕ СЛОВО ПЕРЕД ГЛАСНОЙ ДЕВЯТЬ ТЫСЯЧ РАЗ И НИ РАЗУ НЕ СКАЗАЛ, ПОЧЕМУ. Замер 12.09 ПО СВОДУ, ПОРОЗНЬ: «l'» 4 662 строки, «d'» 2 064, «n'» 1 817, «qu'» 1 800, «j'» 1 198, из них «s'il» 457; а слово «сокращение» есть в своде 13…
 - **`numline`** (74 строк; recompute, whole_only, exact_only)  
   **ЧИСЛОВАЯ ПРЯМАЯ** — ЧИСЛО, СТОЯЩЕЕ ЛЕВЕЕ, МЕНЬШЕ, И ЭТО ЕДИНСТВЕННОЕ ПРАВИЛО ПОРЯДКА. Замер 12.09 по всему своду в 39 МБ: «числовая прямая» — НОЛЬ вхождений, «левее» — ноль, «правее» — ноль.
 - **`cond`** (74 строк; recompute, whole_only, exact_only)  
@@ -388,6 +392,10 @@
   **ОМОГРАФ** — ОДНО ПИСЬМО У ДВУХ ЯЗЫКОВ, И ПОЧЕМУ ЗНАК В ОДНО СЛОВО СЛИШКОМ ТОНОК. Замер 12.09 по всему своду в 39 МБ: «омоним» — НОЛЬ вхождений, «синоним» — ноль, «часть речи» — ноль.
 - **`chancetrap`** (62 строк; recompute, whole_only, exact_only)  
   **ЛОВУШКИ СЛУЧАЯ И СРЕДНЕГО** — СВОД СЧИТАЛ ТО И ДРУГОЕ И НИ РАЗУ НЕ СКАЗАЛ, ГДЕ ОНИ ЛГУТ. Замер 12.09 по седьмому десятку понятий: свод считает среднее 1339 строками и вероятность 446, и все они верны, — а о том, что с этими числами делают дальше, ни слова…
+- **`plcopula`** (60 строк; declared, declared_table_only)  
+  **ПОЛЬСКАЯ СВЯЗКА** — СВОД СТАВИЛ «jest» И «są» ПОЧТИ СЕМЬ ТЫСЯЧ РАЗ И НИ РАЗУ НЕ СКАЗАЛ, ПО КАКОМУ ЗАКОНУ ОНИ МЕНЯЮТСЯ. Замер 12.09 ПО СВОДУ, ПОРОЗНЬ: «jest» 6 578 строк, «są» 1 185 (вместе 6 953), а слов о связке в своде два, и оба о другом.
+- **`soundarticle`** (54 строк; declared, declared_table_only)  
+  **АРТИКЛЬ ПО ЗВУКУ** — СВОД ПИСАЛ «an hour» И «a university» ЧЕТЫРЕСТА СОРОК СЕМЬ РАЗ И НИ РАЗУ НЕ СКАЗАЛ, ЧТО ПРАВИЛО ЧИТАЕТСЯ ПО ЗВУКУ. Замер 12.09 ПО СВОДУ: слов «по звуку» НОЛЬ, «a book» 231 строка, «an hour» 107, «an apple» 84, «a unit» 22 — а «a unive…
 - **`ratetrap`** (50 строк; recompute, whole_only, exact_only)  
   **ЛОВУШКИ ОТНОШЕНИЯ** — ГДЕ СРЕДНЕЕ ЛЖЁТ, А СЛОЖЕНИЕ НЕ ДЕЙСТВУЕТ ВОВСЕ. Замер 12.09 по восьмому десятку понятий: «средняя скорость» ноль и ноль, «совместная работа» ноль и ноль, «сложные проценты» ноль и ноль, «наценка» ноль и ноль, — а скорости, проценты …
 - **`direct`** (28 строк; recompute, whole_only, exact_only)  
@@ -620,5 +628,5 @@
     ОБЪЯВЛЕНИЕ В ТРИДЦАТЬ ЗНАКОВ НЕ ЛЖЁТ И НЕ ГОВОРИТ: читатель узнаёт имя мира
     и ничего сверх него.
 
-Миров: **0** из 283.
+Миров: **0** из 287.
 
