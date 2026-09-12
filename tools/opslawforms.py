@@ -55,7 +55,7 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 
 ЯЗЫКИ = ("ru", "en")
 РОДЫ = ("перестановка суммы", "перестановка произведения", "граница закона",
-        "сочетание", "раскрытие скобки")
+        "сочетание", "раскрытие скобки", "нейтральное", "обратное")
 
 РАМКИ = {
     "ru": {
@@ -65,6 +65,8 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
         "граница деления": "{a} ÷ {b} = {k}, а {b} ÷ {a} = 1/{k}: деление перемены мест не терпит, и ответ стал долей; ПЕРЕМЕСТИТЕЛЬНЫЙ закон здесь не действует.",
         "сочетание": "({a} + {b}) + {c} = {s} и {a} + ({b} + {c}) = {s}: скобка сумму не меняет; этот закон зовётся СОЧЕТАТЕЛЬНЫМ.",
         "раскрытие скобки": "({a} + {b}) × {c} = {p} и {a} × {c} + {b} × {c} = {p}: множитель достаётся каждому слагаемому; этот закон зовётся РАСПРЕДЕЛИТЕЛЬНЫМ.",
+        "нейтральное": "{a} + 0 = {a} и {a} × 1 = {a}: ноль ничего не прибавляет, единица ничего не умножает; такие числа зовутся НЕЙТРАЛЬНЫМИ — ноль по сложению, единица по умножению.",
+        "обратное": "{a} + (−{a}) = 0: у всякого числа есть ОБРАТНОЕ ПО СЛОЖЕНИЮ — то, что возвращает к нулю, и зовут его противоположным; а {a} × 1 = {a} показывает, что единица оставляет число собой.",
     },
     "en": {
         "перестановка суммы": "{a} + {b} = {s} and {b} + {a} = {s}: changing the order of addends does not change the sum; this law is called COMMUTATIVE.",
@@ -73,6 +75,8 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
         "граница деления": "{a} ÷ {b} = {k}, but {b} ÷ {a} = 1/{k}: division does not allow changing the order, and the answer became a share; the COMMUTATIVE law does not hold here.",
         "сочетание": "({a} + {b}) + {c} = {s} and {a} + ({b} + {c}) = {s}: the bracket does not change the sum; this law is called ASSOCIATIVE.",
         "раскрытие скобки": "({a} + {b}) × {c} = {p} and {a} × {c} + {b} × {c} = {p}: the multiplier reaches every addend; this law is called DISTRIBUTIVE.",
+        "нейтральное": "{a} + 0 = {a} and {a} × 1 = {a}: zero adds nothing and one multiplies by nothing; such numbers are called NEUTRAL — zero for addition, one for multiplication.",
+        "обратное": "{a} + (−{a}) = 0: every number has an ADDITIVE INVERSE — the one that brings it back to zero, and it is called the opposite; and {a} × 1 = {a} shows that one leaves the number itself.",
     },
 }
 
@@ -98,6 +102,16 @@ def страницы():
                 if (a + b) % 2 == 0:
                     вон[рамки["граница вычитания"].format(
                         **dict(ПУСТО, a=b, b=a, d=b - a))] = (язык, "граница закона")
+        # НЕЙТРАЛЬНОЕ И ОБРАТНОЕ: два свойства, показанные сводом в тридцати девяти мирах
+        # и НЕ НАЗВАННЫЕ НИ РАЗУ (замер 12.09). «a + 0 = a» стои́т всюду, а слова
+        # «нейтральный» нет нигде; «a + (−a) = 0» — то же с «обратным».
+        #
+        #     СВОЙСТВО, ПОКАЗАННОЕ И НЕ НАЗВАННОЕ, ЕСТЬ УРОК БЕЗ СЛОВА.
+        for a in range(1, 21):
+            if a % 2:
+                вон[рамки["нейтральное"].format(**dict(ПУСТО, a=a))] = (язык, "нейтральное")
+            else:
+                вон[рамки["обратное"].format(**dict(ПУСТО, a=a))] = (язык, "обратное")
         # ГРАНИЦА ДЕЛЕНИЯ: делимое кратно делителю, и обратное частное есть ЕДИНИЧНАЯ доля
         # 1/k — то самое, чем живёт дом доли единицы.
         for b in range(2, 13):

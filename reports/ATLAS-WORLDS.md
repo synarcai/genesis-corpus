@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 259 миров, 428277 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 259 миров, 428317 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -524,7 +524,7 @@
 
 ## АКТ «compare» — сравнить двоих: больше, меньше, во столько же раз
 
-Миров 12, строк 15124.
+Миров 12, строк 15164.
 
 - **`cmpframes`** (6480 строк; recompute, whole_only)  
   **FRAMES OF COMPARISON** — the largest class of the reader's lies on the held-out key (05.09: twelve of fifteen — «9 flexiones más que», «in più/in meno di», «meer/minder dan», «więcej/mniej niż»: the marker is not bought and the answer takes a neighbouring…
@@ -538,7 +538,7 @@
   **THE COMPARISON OF NAMED QUANTITIES** — THE GREATER NUMBER NAMES THE LESSER QUANTITY. Measured 11.09 across the 256 show worlds: a question of comparison carrying TWO DIFFERENT MEASURES — NONE. The corpus can do everything the answer needs and never asks t…
 - **`scale`** (747 строк; declared, whole_only)  
   **THE SCALE** — a comparison of THINGS THEMSELVES and TRANSITIVITY as a checkable INFERENCE. The compare world compares the NUMBERS at things («dan has 2 apples more»); here the things themselves are compared — «an elephant is bigger than a dog» — and there…
-- **`opslaw`** (670 строк; recompute, whole_only)  
+- **`opslaw`** (710 строк; recompute, whole_only)  
   **THE LAWS OF OPERATION** — AND THE MAIN THING IN THIS HOUSE IS THE LAW'S BOUNDARY. Measured 11.09 across the 234 show worlds: «переместительный», «commutative» — NONE; «сочетательный», «associative» — NONE; «распределительный», «раскрыть скобки», «distribu…
 - **`dist`** (400 строк; recompute, whole_only, exact_only)  
   **ТРИ ЗАКОНА РАССТОЯНИЯ** — ЧТО ДЕЛАЕТ РАССТОЯНИЕ РАССТОЯНИЕМ. Свод считал расстояния сотнями страниц («расстояние между (−1, 2) и (−16, 10) — 17: 15² + 8² = 17²») и нигде не называл их законов: замер 12.09 нашёл симметрию показанной, а «ноль только до себя…
