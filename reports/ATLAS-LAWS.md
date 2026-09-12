@@ -6,7 +6,7 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 5090 разных законов на 6063 упоминаний; сказанных однажды — 4809, и они остаются при своём месте.
+Всего в дереве 5099 разных законов на 6074 упоминаний; сказанных однажды — 4818, и они остаются при своём месте.
 
 
 ## Держат 70 файлов
@@ -19,15 +19,15 @@
 - **СУД, ПИШУЩИЙ ЗАКОН ВТОРОЙ РАЗ, РАСХОДИТСЯ С ДОМОМ НА ПЕРВОЙ ЖЕ ПРАВКЕ**  
   courts/abs_court.py, courts/addshare_court.py, courts/amend_court.py, courts/angle_court.py, courts/both_court.py, courts/bound_court.py … и ещё 62
 
-## Держат 65 файлов
+## Держат 66 файлов
 
 - **ПРОБА НА ЗАВЕДОМО ИЗВЕСТНОМ**  
-  scripts/agree_skew.py, scripts/agree_traps.py, scripts/article_sound.py, scripts/bench_leak.py, scripts/broken_law.py, scripts/build_dated.py … и ещё 59
+  scripts/agree_skew.py, scripts/agree_traps.py, scripts/article_sound.py, scripts/bench_leak.py, scripts/broken_law.py, scripts/build_dated.py … и ещё 60
 
-## Держат 61 файлов
+## Держат 62 файлов
 
 - **ПРОБА ИДЁТ ПРИ ВСЯКОМ ПРОГОНЕ, А НЕ ПО ПРОСЬБЕ**  
-  scripts/agree_skew.py, scripts/agree_traps.py, scripts/article_sound.py, scripts/bench_leak.py, scripts/broken_law.py, scripts/build_dated.py … и ещё 55
+  scripts/agree_skew.py, scripts/agree_traps.py, scripts/article_sound.py, scripts/bench_leak.py, scripts/broken_law.py, scripts/build_dated.py … и ещё 56
 
 ## Держат 44 файлов
 
