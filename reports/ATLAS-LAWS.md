@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 251 законов
+# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 255 законов
 
 Собран из докстрингов и комментариев `tools`, `courts`, `scripts` орудием
 `tools/law_atlas.py`. Взяты ОБЩИЕ законы — те, что держатся не одним файлом.
@@ -6,18 +6,18 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 4705 разных законов на 5521 упоминаний; сказанных однажды — 4454, и они остаются при своём месте.
+Всего в дереве 4787 разных законов на 5646 упоминаний; сказанных однажды — 4532, и они остаются при своём месте.
 
 
-## Держат 62 файлов
+## Держат 66 файлов
 
 - **СТРАНИЦА, КОТОРУЮ РАМКА НЕ ПОРОЖДАЕТ, НЕ ЕСТЬ ЛОЖЬ ЭТОГО СУДА**  
-  tools/absforms.py, tools/addshareforms.py, tools/amendforms.py, tools/bothforms.py, tools/boundforms.py, tools/ceilfloorforms.py … и ещё 56
+  tools/absforms.py, tools/addshareforms.py, tools/amendforms.py, tools/bothforms.py, tools/boundforms.py, tools/ceilfloorforms.py … и ещё 60
 
-## Держат 61 файлов
+## Держат 65 файлов
 
 - **СУД, ПИШУЩИЙ ЗАКОН ВТОРОЙ РАЗ, РАСХОДИТСЯ С ДОМОМ НА ПЕРВОЙ ЖЕ ПРАВКЕ**  
-  courts/abs_court.py, courts/addshare_court.py, courts/amend_court.py, courts/both_court.py, courts/bound_court.py, courts/ceilfloor_court.py … и ещё 55
+  courts/abs_court.py, courts/addshare_court.py, courts/amend_court.py, courts/both_court.py, courts/bound_court.py, courts/ceilfloor_court.py … и ещё 59
 
 ## Держат 58 файлов
 
@@ -44,12 +44,20 @@
 - **ЗНАК ДЕЙСТВИЯ СУДИТСЯ ЗАКОНОМ ЗАМКНУТОГО МИРА, А НЕ ДЫРОЙ В КАЖДОЙ РАМКЕ**  
   tools/actionmeasure.py, tools/actturn.py, tools/beforetails.py, tools/dateforms.py, tools/dialogueforms.py, tools/discountroad.py … и ещё 17
 
-## Держат 16 файлов
+## Держат 20 файлов
 
 - **А ЧИТАЮЩИЙ ДОМ МАНИФЕСТА НЕ ЧИТАЕТ**  
-  scripts/trap_series.py, tools/chancetrapforms.py, tools/condforms.py, tools/dimforms.py, tools/fenceforms.py, tools/genderforms.py … и ещё 10
+  scripts/trap_series.py, tools/chancetrapforms.py, tools/condforms.py, tools/dimforms.py, tools/fenceforms.py, tools/genderforms.py … и ещё 14
+
+## Держат 16 файлов
+
 - **ИМЕНА РОДОВ ДЛЯ ПЕРЕПИСИ ДОМОВ**  
   tools/calforms.py, tools/chainforms.py, tools/cmpforms.py, tools/countforms.py, tools/geoforms.py, tools/moneyforms.py … и ещё 10
+
+## Держат 15 файлов
+
+- **МУТАНТ ПО ЧИСЛУ В КАЖДОМ РОДЕ**  
+  tools/chancetrapforms.py, tools/closureforms.py, tools/dimforms.py, tools/distforms.py, tools/fenceforms.py, tools/measureforms.py … и ещё 9
 
 ## Держат 14 файлов
 
@@ -57,8 +65,6 @@
   courts/algo_court.py, courts/compsci_court.py, courts/cyber_court.py, courts/formula_court.py, courts/linalg_court.py, courts/machine_court.py … и ещё 8
 - **ИСКОМОЕ ОБЪЯВЛЯЕТ СВОЙ ВОПРОС ОДИН РАЗ**  
   tools/gen_genesis_algebra.py, tools/gen_genesis_algorithms.py, tools/gen_genesis_compsci.py, tools/gen_genesis_cybernetics.py, tools/gen_genesis_formulas.py, tools/gen_genesis_geometry.py … и ещё 8
-- **МУТАНТ ПО ЧИСЛУ В КАЖДОМ РОДЕ**  
-  tools/chancetrapforms.py, tools/closureforms.py, tools/dimforms.py, tools/distforms.py, tools/fenceforms.py, tools/measureforms.py … и ещё 8
 
 ## Держат 13 файлов
 
@@ -67,8 +73,15 @@
 
 ## Держат 12 файлов
 
+- **ДОМ, НЕ ЗНАЮЩИЙ СВОЕГО МЕСТА В РЯДУ, УЗНАЁТ О НЁМ ИЗ ЧУЖОГО ОБЪЯВЛЕНИЯ**  
+  scripts/trap_series.py, tools/condforms.py, tools/fenceforms.py, tools/growfigforms.py, tools/leapforms.py, tools/measureforms.py … и ещё 6
 - **ПРИБОР, ЗЕЛЕНЕЮЩИЙ ОТ НУЛЯ НАХОДОК, ОБЯЗАН ДОКАЗАТЬ, ЧТО УМЕЕТ НАХОДИТЬ**  
   scripts/broken_law.py, scripts/build_dated.py, scripts/genre_measured.py, scripts/ladder_full.py, scripts/margin_census.py, scripts/name_crossed.py … и ещё 6
+
+## Держат 11 файлов
+
+- **САМОПРОВЕРКА ДОМА СТЕРЕЖЁТ ТО, ЧЕГО СУДУ НЕ ВИДНО**  
+  courts/cond_court.py, courts/fence_court.py, courts/growfig_court.py, courts/leap_court.py, courts/measure_court.py, courts/numline_court.py … и ещё 5
 
 ## Держат 10 файлов
 
@@ -86,8 +99,8 @@
 
 - **ДОМ, НЕ ЗНАЮЩИЙ СВОЕГО МЕСТА В РЯДУ, УЗНАЁТ О НЁМ ИЗ ЧУЖОГО**  
   tools/chancetrapforms.py, tools/dimforms.py, tools/genderforms.py, tools/measuregrowforms.py, tools/measureprecforms.py, tools/negquantforms.py … и ещё 2
-- **ДОМ, НЕ ЗНАЮЩИЙ СВОЕГО МЕСТА В РЯДУ, УЗНАЁТ О НЁМ ИЗ ЧУЖОГО ОБЪЯВЛЕНИЯ**  
-  scripts/trap_series.py, tools/condforms.py, tools/fenceforms.py, tools/measureforms.py, tools/numlineforms.py, tools/overlapforms.py … и ещё 2
+- **ЕСЛИ ВСЯКАЯ ЗАПИСЬ В НЕЙ ПЕРЕСЧИТЫВАЕТСЯ РАЗБОРОМ**  
+  tools/condforms.py, tools/growfigforms.py, tools/leapforms.py, tools/numlineforms.py, tools/overlapforms.py, tools/pctbaseforms.py … и ещё 2
 - **РЕГИСТР ИМЕНИ ЧИТАЕТСЯ ИЗ ПАКЕТА**  
   tools/gen_genesis_aggregate.py, tools/gen_genesis_compare.py, tools/gen_genesis_gsmlex.py, tools/gen_genesis_gsmwide.py, tools/gen_genesis_heads.py, tools/gen_genesis_realverbs.py … и ещё 2
 - **ЭТОТ ДОМ ЧИТАЕТСЯ И СУДОМ АРИФМЕТИКИ**  
@@ -101,8 +114,12 @@
   tools/fenceforms.py, tools/gen_genesis_measuregrow.py, tools/gen_genesis_ratetrap.py, tools/measureforms.py, tools/measuregrowforms.py, tools/ratetrapforms.py … и ещё 1
 - **МИР БЕЗ ВОПРОСНОЙ ПОВЕРХНОСТИ ПОКАЗЫВАЕТ ОТВЕТ, НЕ ПОКАЗЫВАЯ ЗАДАЧИ**  
   tools/digitlenforms.py, tools/numlabelforms.py, tools/onestepforms.py, tools/parityforms.py, tools/placevalforms.py, tools/powforms.py … и ещё 1
-- **САМОПРОВЕРКА ДОМА СТЕРЕЖЁТ ТО, ЧЕГО СУДУ НЕ ВИДНО**  
-  courts/cond_court.py, courts/fence_court.py, courts/measure_court.py, courts/numline_court.py, courts/overlap_court.py, courts/turn_court.py … и ещё 1
+- **ОБЕ СТОРОНЫ ЛОВУШКИ ИДУТ ОДНОЙ ГРУППОЙ**  
+  tools/gen_genesis_measure.py, tools/gen_genesis_numline.py, tools/gen_genesis_overlap.py, tools/gen_genesis_pctbase.py, tools/gen_genesis_squnit.py, tools/gen_genesis_turn.py … и ещё 1
+- **ОБЕ СТОРОНЫ ЛОВУШКИ ОБЯЗАНЫ БЫТЬ ПОКАЗАНЫ**  
+  tools/condforms.py, tools/growfigforms.py, tools/numlineforms.py, tools/overlapforms.py, tools/pctbaseforms.py, tools/squnitforms.py … и ещё 1
+- **ПОЧЕМУ ОБЕ СТОРОНЫ ОБЯЗАТЕЛЬНЫ**  
+  tools/condforms.py, tools/growfigforms.py, tools/measureforms.py, tools/numlineforms.py, tools/pctbaseforms.py, tools/squnitforms.py … и ещё 1
 - **СУД НЕ СМЕЕТ ЧИТАТЬ ЧУЖОЙ РОД**  
   courts/equation_court.py, courts/inquiry_es_it_court.py, courts/inquiry_pl_tr_court.py, courts/longdiv_court.py, courts/metalang_court.py, courts/relation_court.py … и ещё 1
 
@@ -110,6 +127,8 @@
 
 - **ВОПРОС И ЕГО ОТВЕТ СВЯЗАНЫ РОДОМ, А НЕ СОСЕДСТВОМ**  
   courts/equation_court.py, courts/inquiry_court.py, courts/inquiry_de_fr_court.py, courts/inquiry_es_it_court.py, courts/inquiry_pl_tr_court.py, courts/inquiry_pt_nl_court.py
+- **ВОСЕМЬ РОДОВ, И ДВА ИЗ НИХ СУТЬ ОДНА ЛОВУШКА, ПОКАЗАННАЯ ОБЕИМИ СТОРОНАМИ**  
+  tools/growfigforms.py, tools/numlineforms.py, tools/overlapforms.py, tools/pctbaseforms.py, tools/squnitforms.py, tools/turnforms.py
 - **САМАЯ ДЛИННАЯ ЗАДАЧА ЕСТЬ ДНО СРОКА**  
   courts/arith_court.py, scripts/claims_court.py, scripts/court_reach.py, scripts/coverage.py, scripts/prose_court.py, tools/panel.py
 
@@ -119,8 +138,8 @@
   tools/gen_genesis_inquiry.py, tools/gen_genesis_inquiry_de_fr.py, tools/gen_genesis_inquiry_es_it.py, tools/gen_genesis_inquiry_pl_tr.py, tools/gen_genesis_inquiry_pt_nl.py
 - **ЛОВУШКА ПРОВЕРЯЕТСЯ КАК ЛОВУШКА**  
   courts/divsense_court.py, courts/mapscale_court.py, courts/pctchange_court.py, courts/pctdiff_court.py, scripts/broken_law.py
-- **ОБЕ СТОРОНЫ ЛОВУШКИ ИДУТ ОДНОЙ ГРУППОЙ**  
-  tools/gen_genesis_measure.py, tools/gen_genesis_numline.py, tools/gen_genesis_overlap.py, tools/gen_genesis_turn.py, tools/gen_genesis_wmean.py
+- **МУТАНТ ПО ЧИСЛУ В КАЖДОМ РОДЕ, ГДЕ ЕСТЬ ЗАПИСЬ**  
+  tools/condforms.py, tools/growfigforms.py, tools/leapforms.py, tools/numlineforms.py, tools/pctbaseforms.py
 - **РАМКА ПОРОДИЛА СТРАНИЦУ — ОСТАЛСЯ СЧЁТ, И СЧИТАЕТСЯ ТОЛЬКО ОТВЕЧАЮЩАЯ ЧАСТЬ**  
   tools/bothforms.py, tools/estimforms.py, tools/precforms.py, tools/sameshareforms.py, tools/zerodivforms.py
 - **РУБЕЖ ОБЪЯВЛЕН ПО ДОСТИГНУТОМУ**  
@@ -136,20 +155,14 @@
   courts/mathspaces_court.py, courts/number_court.py, courts/physics_court.py, courts/sequence_court.py
 - **ДРОБНАЯ ЧЕРТА ЕСТЬ ГРАНИЦА ЧИСЛА**  
   tools/addshareforms.py, tools/divshareforms.py, tools/mulshareforms.py, tools/wholeshareforms.py
-- **ЕСЛИ ВСЯКАЯ ЗАПИСЬ В НЕЙ ПЕРЕСЧИТЫВАЕТСЯ РАЗБОРОМ**  
-  tools/condforms.py, tools/numlineforms.py, tools/overlapforms.py, tools/wmeanforms.py
 - **ЗАКОН, КАСАЮЩИЙСЯ ВСЯКОЙ СТРАНИЦЫ, ЗОВЁТСЯ ТАМ, ГДЕ ВСЯКАЯ СТРАНИЦА ПРОХОДИТ**  
   scripts/elision.py, tools/behaviorforms.py, tools/linkforms.py, tools/topicforms.py
 - **ЛОВУШКА ОБЯЗАНА БЫТЬ ЛОВУШКОЙ**  
   tools/decforms.py, tools/measuregrowforms.py, tools/ratetrapforms.py, tools/remdivforms.py
-- **ОБЕ СТОРОНЫ ЛОВУШКИ ОБЯЗАНЫ БЫТЬ ПОКАЗАНЫ**  
-  tools/condforms.py, tools/numlineforms.py, tools/overlapforms.py, tools/wmeanforms.py
 - **ПОВОД — ЗАМЕР, А НЕ ЗАМЫСЕЛ**  
   tools/chanceforms.py, tools/closureforms.py, tools/distforms.py, tools/opchoiceforms.py
 - **ПОДСАДКИ ПИСАНЫ ПОРЧЕЙ ЖИВЫХ СТРАНИЦ**  
   courts/kinbearer_court.py, courts/numphrase_court.py, courts/proform_court.py, courts/pronobject_court.py
-- **ПОЧЕМУ ОБЕ СТОРОНЫ ОБЯЗАТЕЛЬНЫ**  
-  tools/condforms.py, tools/measureforms.py, tools/numlineforms.py, tools/wmeanforms.py
 - **ТАБЛИЦЫ ОБЯЗАНЫ БЫТЬ ТЕМ, ЧЕМ НАЗВАНЫ, — ИНАЧЕ ЛОВУШКА ПОКАЗАНА НЕ ТА**  
   tools/condforms.py, tools/measureforms.py, tools/numlineforms.py, tools/overlapforms.py
 - **УНИВЕРСАЛИЯ СПРАШИВАЕТСЯ СВОИМ «ВЕРНО ЛИ, ЧТО**  
@@ -165,8 +178,6 @@
 
 - **АРТИКЛЬ, ВЫНЕСЕННЫЙ В РАМКУ, ПЕРЕСТАЁТ СЛЫШАТЬ СЛОВО, ПЕРЕД КОТОРЫМ СТОИТ**  
   courts/article_court.py, scripts/article_sound.py, tools/plural.py
-- **ВОСЕМЬ РОДОВ, И ДВА ИЗ НИХ СУТЬ ОДНА ЛОВУШКА, ПОКАЗАННАЯ ОБЕИМИ СТОРОНАМИ**  
-  tools/numlineforms.py, tools/overlapforms.py, tools/turnforms.py
 - **ВТОРАЯ ПОЛЯРНОСТЬ ТОЙ ЖЕ РАМКОЙ**  
   tools/gen_genesis_numbers.py, tools/gen_genesis_proof.py, tools/gen_genesis_speech.py
 - **ГРАНИЦА ДОМА ЕСТЬ ГРАНИЦА ЕГО ПРЕДМЕТА, А НЕ УДОБСТВО СЧЁТА**  
@@ -336,8 +347,8 @@
   courts/episode_court.py, courts/speech_court.py
 - **МНОЖИТЕЛЬ БЕЗ ЧИСЛОВОГО ТОКЕНА**  
   courts/episode_court.py, tools/gen_genesis_compare.py
-- **МУТАНТ ПО ЧИСЛУ В КАЖДОМ РОДЕ, ГДЕ ЕСТЬ ЗАПИСЬ**  
-  tools/condforms.py, tools/numlineforms.py
+- **МНОЖИТЕЛЬ ЕСТЬ ОДИН И ТОТ ЖЕ**  
+  tools/gen_genesis_squnit.py, tools/squnitforms.py
 - **НЕ ВСЯКОЕ ИМЯ РЯДОМ С ЧИСЛОМ ЕСТЬ ИМЯ СЧЁТНОЕ**  
   scripts/half_law.py, tools/gen_genesis_everyday.py
 - **НЕ ИЗ ОТВЕТА, А ИЗ САМОГО ПОЛОЖЕНИЯ**  
@@ -382,6 +393,8 @@
   tools/measureof.py, tools/totalsubj.py
 - **ПЕРВЫЙ И ВТОРОЙ СУТЬ МИНИМАЛЬНАЯ ПАРА ПО НАПРАВЛЕНИЮ**  
   tools/mulshareforms.py, tools/pctchangeforms.py
+- **ПЕРИМЕТР НЕ ОПРЕДЕЛЯЕТ ПЛОЩАДИ**  
+  tools/growfigforms.py, tools/measuregrowforms.py
 - **ПОКАЗ БЕЗ ИМЕНИ УЧИТ ДЕЛУ И НЕ ДАЁТ СЛОВА, КОТОРЫМ О НЁМ ГОВОРЯТ**  
   scripts/property_named.py, tools/distforms.py
 - **ПОНЯТИЕ, НАЗВАННОЕ СЛОВАРЁМ И НЕ ПОКАЗАННОЕ СЧЁТОМ, ЕСТЬ ПОНЯТИЕ НЕПОКАЗАННОЕ**  
@@ -394,6 +407,8 @@
   tools/gen_genesis_conversions.py, tools/gen_genesis_units.py
 - **ПОСЛЕДНИЕ ДВА ЗЕРКАЛЬНЫ И ОТТОГО ИДУТ ВМЕСТЕ**  
   tools/measuregrowforms.py, tools/ratetrapforms.py
+- **ПРАВИЛО С ИСКЛЮЧЕНИЕМ, ПОКАЗАННОЕ БЕЗ ИСКЛЮЧЕНИЯ, ЕСТЬ ЛОЖЬ О ПРАВИЛЕ, А НЕ ЕГО ПРОСТОЙ**  
+  tools/gen_genesis_leap.py, tools/leapforms.py
 - **ПРАВИЛО ЧИСЛА ЧИТАЕТСЯ ИЗ ПАКЕТА**  
   scripts/second_copy.py, tools/gen_genesis_machine.py
 - **ПРАВИЛО, ВЕРНОЕ НА ПОЛОВИНЕ СЛУЧАЕВ, НЕ ЕСТЬ ПОЛОВИНА ПРАВИЛА — ОНО ЕСТЬ ДРУГОЕ**  
@@ -432,6 +447,8 @@
   courts/rem_court.py, tools/remdivforms.py
 - **ПРОМЕЖУТОЧНЫЕ ВЕЛИЧИНЫ В ОТВЕТЕ**  
   courts/geometry_court.py, tools/gen_genesis_geometry.py
+- **ПРОЦЕНТ ЕСТЬ ОТНОШЕНИЕ, А НЕ ЧИСЛО**  
+  tools/gen_genesis_pctbase.py, tools/pctbaseforms.py
 - **ПРОЦЕНТЫ ВЗЯТЫ ТЕ, ЧТО ДАЮТ ЦЕЛЫЕ ДОЛИ ДВАЖДЫ ПОДРЯД**  
   courts/pctchange_court.py, tools/pctchangeforms.py
 - **РАБОТА ИДЁТ НАД СЫРЫМ ТЕКСТОМ, А НЕ НАД ЭКРАНИРОВАННЫМ**  

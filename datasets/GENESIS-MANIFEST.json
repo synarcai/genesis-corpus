@@ -2322,10 +2322,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 39393180,
+      "size": 39483212,
       "tiers": [],
       "text": "mix",
-      "lines": 431454
+      "lines": 431944
     },
     {
       "name": "gender",
@@ -2673,6 +2673,30 @@
       "происхождение": "wikisource-ru:prefix:Детство (Горький)/",
       "held_out": "shelf/ru/gorky_detstvo_ru.holdout.txt",
       "судится": []
+    },
+    {
+      "name": "growfig",
+      "file": "datasets/genesis_growfig.txt",
+      "genre": "РОСТ ФИГУРЫ — ПЕРИМЕТР НЕ ОПРЕДЕЛЯЕТ ПЛОЩАДИ, И РАСТУТ ОНИ ПО РАЗНЫМ ЗАКОНАМ. Замер 12.09 по всему своду: «удвоив сторону» — НОЛЬ вхождений, «одинаковый периметр» — ноль, «same perimeter» — ноль; свод знает периметр (349 строк) и площадь (974) и считает их верно, но ни разу не говорит, что одно НЕ СЛЕДУЕТ из другого. Удвоив сторону, учетверяешь площадь, а периметр вырастет лишь вдвое. Восемь родов, 78 страниц, два языка. ОБЕ НЕЗАВИСИМОСТИ ПОКАЗАНЫ С ДВУХ КОНЦОВ: «6 × 2 и 4 × 4 — периметр 16 у обоих, площади 12 и 16» рядом с «1 × 12 и 3 × 4 — площадь 12 у обоих, периметры 26 и 14». ДВЕ ВЕЛИЧИНЫ ОДНОЙ ФИГУРЫ РАСТУТ ПО РАЗНЫМ ЗАКОНАМ, И ЗНАТЬ ОДИН ЗНАЧИТ НЕ ЗНАТЬ ДРУГОГО: ЛИНЕЙНОЕ И КВАДРАТИЧНОЕ НЕ ЕСТЬ «БОЛЬШЕ» И «ЕЩЁ БОЛЬШЕ». Есть род, который не объявляет, а ДОКАЗЫВАЕТ: при полупериметре 8 целых прямоугольников четыре, площади их 7, 12, 15, 16, и наибольшая — у квадрата; пересчитано перебором. Это the forty-sixth trap of the series — периметр, принятый за меру площади. БЛИЗКАЯ РОДНЯ, НАЗВАННАЯ С РАЗЛИЧИЕМ: `squnit` берёт ту же степень у ЕДИНИЦЫ, `dim` говорит о рождении площади от умножения длин.",
+      "act": [
+        "compare",
+        "decide",
+        "expound",
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only",
+        "exact_only"
+      ],
+      "assemblies": [
+        "school"
+      ],
+      "size": 17136,
+      "tiers": [],
+      "text": "shows"
     },
     {
       "name": "gsmforms",
@@ -6854,6 +6878,30 @@
       ]
     },
     {
+      "name": "leap",
+      "file": "datasets/genesis_leap.txt",
+      "genre": "ВИСОКОСНЫЙ ГОД — ПРАВИЛО, ВНУТРИ КОТОРОГО ДВА ИСКЛЮЧЕНИЯ, И ВТОРОЕ ОТМЕНЯЕТ ПЕРВОЕ. Замер 12.09 по всему своду в 39 МБ: «високосн» — НОЛЬ вхождений; свод знает названия месяцев и их порядок, знает перенос через месяц и считает дни единицей — и ни разу не говорит, отчего год бывает длиннее года. 1900 ДЕЛИТСЯ НА ЧЕТЫРЕ И НЕ ВИСОКОСЕН; 2000 ДЕЛИТСЯ НА СТО И ВИСОКОСЕН. Восемь родов, 72 страницы, два языка, и ТРИ СЛОЯ правила показаны ВМЕСТЕ: делится на четыре, век не високосен, четырёхсотый високосен. ПРАВИЛО С ИСКЛЮЧЕНИЕМ, ПОКАЗАННОЕ БЕЗ ИСКЛЮЧЕНИЯ, ЕСТЬ ЛОЖЬ О ПРАВИЛЕ, А НЕ ЕГО ПРОСТОЙ ВИД; И ЧЕМ РЕЖЕ ИСКЛЮЧЕНИЕ, ТЕМ ДОРОЖЕ ОБХОДИТСЯ ЕГО НЕЗНАНИЕ, ИБО ТЕМ ДОЛЬШЕ ОШИБКА ОСТАЁТСЯ НЕЗАМЕЧЕННОЙ. Следствия названы числом: 365 или 366 дней в году, 28 или 29 в феврале. И есть род, доказывающий счётом: с 1801 по 1900 високосных 24, с 1901 по 2000 — 25, пересчитано перебором ста лет. Это the forty-seventh trap of the series — делимость на четыре, принятая за весь закон високосности.",
+      "act": [
+        "compare",
+        "decide",
+        "expound",
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only",
+        "exact_only"
+      ],
+      "assemblies": [
+        "school"
+      ],
+      "size": 12953,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
       "name": "lermontov_geroy_ru",
       "file": "shelf/ru/lermontov_geroy_ru.txt",
       "genre": "Лермонтов, Михаил Юрьевич, «Герой нашего времени (1840)» (1840): словарь постатейно с Викитеки",
@@ -8650,6 +8698,30 @@
       "судится": []
     },
     {
+      "name": "pctbase",
+      "file": "datasets/genesis_pctbase.txt",
+      "genre": "ОСНОВАНИЕ ПРОЦЕНТА — ПРОЦЕНТ БЕЗ ОСНОВАНИЯ НЕ ЕСТЬ ЧИСЛО. Замер 12.09 по всему своду: «база процента» — НОЛЬ вхождений, «от чего процент» — ноль; свод берёт процент от числа тысячами страниц и знает процентную разницу (`pctdiff`), но ни разу не спрашивает, ОТ ЧЕГО взят процент. 50 % БОЛЬШЕ 10 %, НО 50 % ОТ 20 ЕСТЬ 10, А 10 % ОТ 500 ЕСТЬ 50. Восемь родов, 80 страниц, два языка: процент от основания, обратная дорога («10 из 500 есть 2 %»), люди а не доли, несложимость процентов от разных оснований. ДВА РОДА СУТЬ ОДНА ЛОВУШКА, ПОКАЗАННАЯ ОБЕИМИ СТОРОНАМИ: «основания разны — и сравнение процентов лжёт» рядом с «при одном основании оно верно, и верно ЛИШЬ ПОТОМУ, что основание одно». ПРОЦЕНТ ЕСТЬ ОТНОШЕНИЕ, А НЕ ЧИСЛО; ДВА ОТНОШЕНИЯ СРАВНИМЫ ЛИШЬ ПРИ ОБЩЕМ ОСНОВАНИИ, И ПОТОМУ ПРОЦЕНТ, СКАЗАННЫЙ БЕЗ НЕГО, НЕ ЛОЖЕН — ОН ПРОСТО НИЧЕГО НЕ ГОВОРИТ. Это the forty-fifth trap of the series — сравнение процентов при разных основаниях. Путь счёта идёт УМНОЖЕНИЕМ ВПЕРЁД («20 × 50 ÷ 100»), ибо «20 ÷ 100 × 50» выходит из целых чисел на первом же шаге: ЗАПИСЬ, ЧЕСТНАЯ ПО ЗНАЧЕНИЮ, МОЖЕТ БЫТЬ НЕЧЕСТНОЙ ПО ПУТИ.",
+      "act": [
+        "compare",
+        "decide",
+        "expound",
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only",
+        "exact_only"
+      ],
+      "assemblies": [
+        "school"
+      ],
+      "size": 14358,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
       "name": "pctchange",
       "file": "datasets/genesis_pctchange.txt",
       "genre": "CHANGE BY A PERCENT — THE PERCENT IS TAKEN FROM WHAT STANDS NOW. Measured 11.09 across the 243 show worlds: «increased by N %» — NONE; «decreased by N %» — NONE; «by what percent» — NONE. The world of percent shows ONLY «N % of a number» (120 lines), and the world of discount counts the discount IN ROUBLES, not in percent. THE CORPUS CAN TAKE A PERCENT OF A NUMBER AND CANNOT CHANGE A NUMBER BY A PERCENT. THE FIFTEENTH TRAP OF THE SERIES, AND IT LIVES ON EVERY PRICE TAG: GREW BY 10 % AND FELL BY 10 % — AND CAME OUT BELOW THE OLD ONE. Two hundred became two hundred and twenty, and then one hundred and ninety-eight. A PERCENT IS NOT A NUMBER: IT IS A SHARE OF WHAT STANDS BEFORE IT, AND THEREFORE TWO EQUAL PERCENTS ARE DIFFERENT QUANTITIES. Four genera: GROWTH, FALL, THERE-AND-BACK (the trap), and THE BASE («the second percent is taken from 220 and not from 200, and so it is bigger») — the cause. The third and the fourth stand on the same numbers: the first shows WHAT came out, the second WHY; apart, the third would be a trick and the fourth arithmetic without occasion. The first and the second are a minimal pair by direction — the same numbers, the same percent, and the difference in one sign — and they give the reader what the whole corpus lacks: A CHANGE, not the taking of a share. The counting goes BY THE SAME MOVE AS IN THE WORLD OF PERCENT: multiply by the number of percents and divide by a hundred. The house does not start its own arithmetic where the corpus has already shown one — it continues the move past the place where the world of percent stopped. A HOUSE CONTINUING A FOREIGN MOVE MUST GO BY THE SAME MOVE, OR THE READER LEARNS TWO RULES INSTEAD OF ONE. The percents are those that give whole shares TWICE IN A ROW (10, 20, 50 at a price multiple of a hundred): otherwise the second share would come out fractional and the house would speak of the decimal writing — the subject of a neighbour, not its own.",
@@ -10187,10 +10259,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 32137584,
+      "size": 32227616,
       "tiers": [],
       "text": "mix",
-      "lines": 386872
+      "lines": 387362
     },
     {
       "name": "school_biling_v2c",
@@ -10613,6 +10685,30 @@
         "school"
       ],
       "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "squnit",
+      "file": "datasets/genesis_squnit.txt",
+      "genre": "КВАДРАТНЫЕ И КУБИЧЕСКИЕ ЕДИНИЦЫ — МНОЖИТЕЛЬ ДЛИНЫ ВОЗВОДИТСЯ В СТЕПЕНЬ ВМЕСТЕ С НЕЮ. Замер 12.09 по всему своду в 39 МБ: «квадратных сантиметров» — НОЛЬ вхождений, «square centimetres» — ноль, «кубических сантиметров» — ноль; свод переводит длины множеством страниц, знает площадь (974 строки) и объём (315) — и ни разу не переводит одну квадратную единицу в другую. 1 м = 100 см, НО 1 м² = 10 000 см², А 1 м³ = 1 000 000 см³: кто перенёс множитель длины на площадь, ошибётся в СТО РАЗ. Восемь родов, 260 страниц, два языка, пять пар единиц: длина прямо, площадь в квадрате, объём в кубе, дорога обратно делением. ДВА РОДА СУТЬ ОДНА ЛОВУШКА, ПОКАЗАННАЯ ОБЕИМИ СТОРОНАМИ: «3 м² — это НЕ 300 см², а 30000 см²» рядом с «3 м = 300 см, и множитель здесь ПРОСТОЙ — верен ровно потому, что степень первая». МНОЖИТЕЛЬ ЕСТЬ ОДИН И ТОТ ЖЕ; В СТЕПЕНЬ ЕГО ВОЗВОДИТ НЕ ЕДИНИЦА, А РАЗМЕРНОСТЬ. Есть и род ОСНОВАНИЯ, а не правила: квадрат со стороной 1 м есть квадрат со стороной 100 см, и клеток в нём 100 × 100 = 10000 — это не правило, а СЧЁТ КЛЕТОК. Это the forty-fourth trap of the series — множитель длины, применённый к площади. БЛИЗКАЯ РОДНЯ, НАЗВАННАЯ С РАЗЛИЧИЕМ: `growfig` берёт ту же степень у ФИГУРЫ (там меняется сама фигура, мера одна), здесь фигура одна, а меняется МЕРА; `dim` говорит, что площадь рождается от умножения длин.",
+      "act": [
+        "compare",
+        "decide",
+        "expound",
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only",
+        "exact_only"
+      ],
+      "assemblies": [
+        "school"
+      ],
+      "size": 45580,
+      "tiers": [],
       "text": "shows"
     },
     {

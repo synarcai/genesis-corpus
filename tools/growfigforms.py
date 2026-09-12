@@ -79,12 +79,13 @@ def _перебор(полупериметр):
         "сторона и объём": "ребро куба {a} стало {b}, в {k} {рk}; объём был {va}, стал {vb}: "
                            "в {kkk} {рkkk}. ОБЪЁМ РАСТЁТ КАК КУБ РЕБРА: {k} × {k} × {k} = "
                            "{kkk}, и {va} × {kkk} = {vb}.",
-        "тот же периметр": "у прямоугольника {a1} × {b1} периметр {p}, и у {a2} × {b2} он тот "
-                           "же {p}. А площади разные: {s1} и {s2}. ПЕРИМЕТР НЕ ОПРЕДЕЛЯЕТ "
-                           "ПЛОЩАДИ.",
-        "та же площадь": "у прямоугольника {a1} × {b1} площадь {s}, и у {a2} × {b2} она та же "
-                         "{s}. А периметры разные: {p1} и {p2}. ПЛОЩАДЬ НЕ ОПРЕДЕЛЯЕТ "
-                         "ПЕРИМЕТРА, И ЭТО ТО ЖЕ НЕЗНАНИЕ, ВЗЯТОЕ С ДРУГОГО КОНЦА.",
+        "тот же периметр": "прямоугольник со сторонами {a1} и {b1} имеет периметр {p}, и со "
+                           "сторонами {a2} и {b2} — тот же {p}. А площади разные: {s1} и "
+                           "{s2}. ПЕРИМЕТР НЕ ОПРЕДЕЛЯЕТ ПЛОЩАДИ.",
+        "та же площадь": "прямоугольник со сторонами {a1} и {b1} имеет площадь {s}, и со "
+                         "сторонами {a2} и {b2} — ту же {s}. А периметры разные: {p1} и "
+                         "{p2}. ПЛОЩАДЬ НЕ ОПРЕДЕЛЯЕТ ПЕРИМЕТРА, И ЭТО ТО ЖЕ НЕЗНАНИЕ, "
+                         "ВЗЯТОЕ С ДРУГОГО КОНЦА.",
         "квадрат наибольший": "при полупериметре {h} целых прямоугольников {сколько}, и "
                               "площади их {ряд}. НАИБОЛЬШАЯ — {макс}, у квадрата {s} × {s}. "
                               "Это не объявлено, а ПЕРЕСЧИТАНО: чем ближе стороны, тем больше "
@@ -96,25 +97,25 @@ def _перебор(полупериметр):
                       "{рkk}: {k} × {k} = {kk}, а не в {k} — во столько вырос периметр.",
     },
     "en": {
-        "сторона и площадь": "the side of a square went from {a} to {b}, {k} times over; the "
-                             "area was {sa} and became {sb}: {kk} times over. AREA GROWS AS "
-                             "THE SQUARE OF THE SIDE: {k} × {k} = {kk}, and {sa} × {kk} = "
-                             "{sb}.",
-        "сторона и периметр": "the side of a square went from {a} to {b}, {k} times over; the "
-                              "perimeter was {pa} and became {pb}: {k} times over as well. A "
-                              "PERIMETER GROWS AS THE SIDE ITSELF, AND THEREIN IT DIFFERS "
-                              "FROM AREA: {pa} × {k} = {pb}.",
-        "сторона и объём": "the edge of a cube went from {a} to {b}, {k} times over; the "
-                           "volume was {va} and became {vb}: {kkk} times over. VOLUME GROWS "
-                           "AS THE CUBE OF THE EDGE: {k} × {k} × {k} = {kkk}, and {va} × "
-                           "{kkk} = {vb}.",
-        "тот же периметр": "the rectangle {a1} × {b1} has perimeter {p}, and {a2} × {b2} has "
-                           "the same {p}. Yet the areas differ: {s1} and {s2}. A PERIMETER "
-                           "DOES NOT DETERMINE AN AREA.",
-        "та же площадь": "the rectangle {a1} × {b1} has area {s}, and {a2} × {b2} has the same "
-                         "{s}. Yet the perimeters differ: {p1} and {p2}. AN AREA DOES NOT "
-                         "DETERMINE A PERIMETER, AND THAT IS THE SAME IGNORANCE TAKEN FROM "
-                         "THE OTHER END.",
+        "сторона и площадь": "the side of a square went from {a} to {b}, multiplied by {k}; "
+                             "the area was {sa} and became {sb}, multiplied by {kk}. AREA "
+                             "GROWS AS THE SQUARE OF THE SIDE: {k} × {k} = {kk}, and "
+                             "{sa} × {kk} = {sb}.",
+        "сторона и периметр": "the side of a square went from {a} to {b}, multiplied by {k}; "
+                              "the perimeter was {pa} and became {pb}, multiplied by {k} as "
+                              "well. A PERIMETER GROWS AS THE SIDE ITSELF, AND THEREIN IT "
+                              "DIFFERS FROM AREA: {pa} × {k} = {pb}.",
+        "сторона и объём": "the edge of a cube went from {a} to {b}, multiplied by {k}; the "
+                           "volume was {va} and became {vb}, multiplied by {kkk}. VOLUME "
+                           "GROWS AS THE CUBE OF THE EDGE: {k} × {k} × {k} = {kkk}, and "
+                           "{va} × {kkk} = {vb}.",
+        "тот же периметр": "the rectangle with sides {a1} and {b1} has perimeter {p}, and the "
+                           "one with sides {a2} and {b2} has the same {p}. Yet the areas "
+                           "differ: {s1} and {s2}. A PERIMETER DOES NOT DETERMINE AN AREA.",
+        "та же площадь": "the rectangle with sides {a1} and {b1} has area {s}, and the one "
+                         "with sides {a2} and {b2} has the same {s}. Yet the perimeters "
+                         "differ: {p1} and {p2}. AN AREA DOES NOT DETERMINE A PERIMETER, AND "
+                         "THAT IS THE SAME IGNORANCE TAKEN FROM THE OTHER END.",
         "квадрат наибольший": "at half-perimeter {h} there are {сколько} whole rectangles, and "
                               "their areas are {ряд}. THE LARGEST IS {макс}, at the square {s} "
                               "× {s}. This is not declared but COUNTED OUT: the closer the "
@@ -122,9 +123,9 @@ def _перебор(полупериметр):
         "почему так": "a square of side {b} holds {kk} squares of side {a}: {k} in a row and "
                       "{k} rows, {k} × {k} = {kk}. THIS IS NOT A RULE BUT A COUNT, and that "
                       "is why area grows as the square of the side.",
-        "спрошенное": "the side grew {k} times over — how many times over did the area grow? "
-                      "{kk}: {k} × {k} = {kk}, and not {k} — that is how much the perimeter "
-                      "grew.",
+        "спрошенное": "the side was multiplied by {k} — by what was the area multiplied? by "
+                      "{kk}: {k} × {k} = {kk}, and not by {k} — that is what the perimeter "
+                      "was multiplied by.",
     },
 }
 
