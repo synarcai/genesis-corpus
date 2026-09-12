@@ -142,7 +142,7 @@
 - **`calendar`** (902 строк; recompute, whole_only, unsigned_only)  
   **ДЕНЬ ЧЕРЕЗ ДЕНЬ, И ШАГ ДОКАЗАН СЛОЖЕНИЕМ ПО НОМЕРУ: «через 3 дня после понедельника наступает четверг: 1 + 3 = 4, день 4** — четверг».
 - **`gsmwide`** (900 строк; recompute, whole_only, unsigned_only)  
-  GSM wide frames: possessive bearers and herd subjects (working layer of the band stand)
+  **ТОТ ЖЕ ШАГ В ЕДИНИЦУ, НО ШИРОКИМ СЛОВАРЁМ ПРЕДМЕТОВ: eggs, degrees, packs, dollars, days, pounds** — «Iris weighs 7 pounds.
 - **`age`** (900 строк; recompute, whole_only, unsigned_only)  
   **age and the shift of time: the difference between two ages does NOT change when both move forward or back** — the law a corpus of single facts cannot teach; ages now, the shift in both directions, the multiple relation with its ground, the multiple in the…
 - **`story_chain`** (890 строк; recompute, declared, whole_only, unsigned_only)  
@@ -252,7 +252,7 @@
 - **`timeunits`** (420 строк; recompute, whole_only)  
   **TIME UNITS IN NINE LANGUAGES** — «сколько минут в двух часах? 120: 2 × 60 = 120.», hour → minutes, minute → seconds, week → days, day → hours, for two to five of the larger unit, the count in words for two to four in the case the phrase needs (в двух часа…
 - **`gsmlex`** (400 строк; recompute, whole_only, unsigned_only)  
-  GSM lexicon drill: possession verbs over the item lexicon (working layer of the band stand)
+  **ШАГ В ЕДИНИЦУ, СКАЗАННЫЙ ШИРОКИМ СЛОВАРЁМ ДЕЙСТВИЙ: «Felix makes 12 points. Felix uses 1 point away. how many points does Felix keep? Felix keeps 11 points». Одно и то же прибавление или убавление единицы, названное ДЕСЯТКАМИ РАЗНЫХ ГЛАГОЛОВ** — makes, ha…
 - **`dec`** (388 строк; recompute, finite_decimal_only)  
   **THE DECIMAL WRITING OF A SHARE** — THE SAME NUMBER WRITTEN OTHERWISE. Measured 11.09 across the 237 show worlds: the equality «0,5 = 1/2» or «3/4 = 0.75» occurs SIXTEEN times, and all sixteen stand in one world of algebraic units, as a line without deriva…
 - **`price`** (378 строк; recompute, whole_only)  
@@ -286,7 +286,7 @@
 - **`remainders`** (248 строк; recompute, whole_only)  
   **ДЕЛЕНИЕ С ОСТАТКОМ, ГДЕ ОСТАТОК ДОКАЗАН УМНОЖЕНИЕМ И ВЫЧИТАНИЕМ: «17 divided by 5 is 3 remainder 2: 5 × 3 = 15, 17 − 15 = 2»** — и та же правда в обратной записи «14 = 3 × 4 + 2».
 - **`realverbs`** (240 строк; recompute, whole_only, unsigned_only)  
-  real verbs of the benchmark in their canonical frames (working layer of the band stand)
+  **ТОТ ЖЕ ШАГ В ЕДИНИЦУ, НО ГЛАГОЛАМИ РЕМЕСЛА: baked, collected, packed, wrote** — «Carlos baked 11 cookies.
 - **`action_measure`** (234 строк; recompute, whole_only)  
   **ACTION MEASURE** — the number that MEASURES the act, not counts the goods, and the number that counts the BEARERS, not the things.
 - **`estim`** (228 строк; recompute, whole_only)  
@@ -389,7 +389,7 @@
 - **`verbs`** (620 строк; declared, recompute, whole_only, unsigned_only)  
   **THE VERB FORM OVER ONE FACT** — declared until 12.09 in eight words.
 - **`ruverbs`** (355 строк; declared, whole_only, unsigned_only)  
-  **russian verb frames at the mass of the english ones: present, past with the actor's gender, echo question, sum frame, and anaphora** — the missing link of ru-anaphora named by measurement
+  **РУССКИЙ ГЛАГОЛ, УПРАВЛЯЮЩИЙ ПАДЕЖОМ СЧЁТА: «Юрий ест 8 яблок», «где лежат …», «где стоят …», «у Петра …»** — и форма имени при числе берётся не наугад, а по объявлению языка.
 - **`degrees`** (270 строк; declared, declared_table_only)  
   **THE DEGREES OF COMPARISON** — the same property said three times, and the irregular said aloud (06.09).
 
@@ -568,11 +568,8 @@
     ОБЪЯВЛЕНИЕ В ТРИДЦАТЬ ЗНАКОВ НЕ ЛЖЁТ И НЕ ГОВОРИТ: читатель узнаёт имя мира
     и ничего сверх него.
 
-Миров: **16** из 257.
+Миров: **12** из 257.
 
-- `gsmwide` — 87 знаков
-- `realverbs` — 87 знаков
-- `gsmlex` — 91 знаков
 - `lang_nl` — 109 знаков
 - `lang_sv` — 124 знаков
 - `lang_pl` — 130 знаков
@@ -582,7 +579,6 @@
 - `lang_it` — 160 знаков
 - `lang_ja` — 160 знаков
 - `lang_pt` — 160 знаков
-- `ruverbs` — 185 знаков
 - `lang_ko` — 191 знаков
 - `lang_ar` — 192 знаков
 - `lang_el` — 192 знаков

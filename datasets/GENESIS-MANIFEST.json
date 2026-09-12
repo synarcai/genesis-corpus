@@ -597,7 +597,7 @@
     {
       "name": "nature",
       "file": "datasets/genesis_nature.txt",
-      "genre": "NATURE — the counted facts about the living and about things, and temperature (the owner asked for a partner able «to talk on different topics»; the topics house gave definitions and the calendar, this one gives what a person KNOWS about the world and what a child asks about: how many legs a spider has, how many teeth a person has, at what temperature water boils). Every show is CHECKABLE, and doubly: the count form of the thing follows its number (the houses rugram and plgram for the Slavic languages, a declared singular/plural pair for the rest), and the DERIVED show carries its forge — «how many legs do two spiders have? 16 legs: 8 × 2 = 16». The second matters more than the first: a fact of nature that is COUNTED OVER stops being a memorised string and becomes a premise. Nine languages of the attack; the facts are declared, not derived, and every one of them is true about the world.",
+      "genre": "NATURE — the counted facts about the living and about things, and temperature (the owner asked for a partner able «to talk on different topics»; the topics house gave definitions and the calendar, this one gives what a person KNOWS about the world and what a child asks about: how many legs a spider has, how many teeth a person has, at what temperature water boils). Every show is CHECKABLE, and doubly: the count form of the thing follows its number (the houses rugram and plgram for the Slavic languages, a declared singular/plural pair for the rest), and the DERIVED show carries its forge — «how many legs do two spiders have? 16 legs: 8 × 2 = 16». The second matters more than the first: a fact of nature that is COUNTED OVER stops being a memorised string and becomes a premise. Nine languages of the attack; the facts are declared, not derived, and every one of them is true about the world. БЛИЖАЙШИЙ СОСЕД — `worldfacts`, и различие их стои́т дороже сходства: ЗДЕСЬ ФАКТ СЧИТАЕТСЯ («у паука 8 ног. сколько ног у паука? 8 ног»), ТАМ ФАКТ ОБЪЯСНЯЕТСЯ («огонь горячий. и что потом? рядом с огнём тепло»). Один мир отвечает на «сколько», другой — на «почему» и «что дальше», и предметы у них общие нарочно.",
       "act": [
         "recount",
         "name",
@@ -621,7 +621,7 @@
     {
       "name": "worldfacts",
       "file": "datasets/genesis_worldfacts.txt",
-      "genre": "WORLD FACTS — why and what next about THINGS, not about numbers. The links house («ann has 5 coins. why? because she had 5 and gave away 1») speaks only over arithmetic facts, and the seven mute lines left in the LINKS-OF-A-TALK genus of the conversation band all had this one nature: a person asks the same conversational moves over facts of the WORLD («water boils at one hundred degrees. why?», «it is raining. what next?», «do you agree that water is wet?»). Six declared facts per language, each with its GROUND and its CONSEQUENCE, plus class membership on its own line, plus the two agreement frames. The shape was agreed with holon BEFORE the world was built and his word changed it twice: the question stands BETWEEN the fact and the ground (a line of two short statements without a number is the frame of his exchange market, and the question mark keeps it out without a single new feature — and, more importantly, «the ground becomes an ANSWER rather than a neighbour: a line without a question teaches juxtaposition, a line with a question teaches transition»), and membership stands on its OWN line, because a fact is checked by observation and a membership by other knowledge. Five languages; the rest is a named debt, by the same law as the definitions of the topics house.",
+      "genre": "WORLD FACTS — why and what next about THINGS, not about numbers. The links house («ann has 5 coins. why? because she had 5 and gave away 1») speaks only over arithmetic facts, and the seven mute lines left in the LINKS-OF-A-TALK genus of the conversation band all had this one nature: a person asks the same conversational moves over facts of the WORLD («water boils at one hundred degrees. why?», «it is raining. what next?», «do you agree that water is wet?»). Six declared facts per language, each with its GROUND and its CONSEQUENCE, plus class membership on its own line, plus the two agreement frames. The shape was agreed with holon BEFORE the world was built and his word changed it twice: the question stands BETWEEN the fact and the ground (a line of two short statements without a number is the frame of his exchange market, and the question mark keeps it out without a single new feature — and, more importantly, «the ground becomes an ANSWER rather than a neighbour: a line without a question teaches juxtaposition, a line with a question teaches transition»), and membership stands on its OWN line, because a fact is checked by observation and a membership by other knowledge. Five languages; the rest is a named debt, by the same law as the definitions of the topics house. БЛИЖАЙШИЙ СОСЕД — `nature`, и общие у них ПРЕДМЕТЫ, а не вопросы: там о пауке спрашивают «сколько ног», здесь — «почему» и «что потом». Мир счёта и мир причины стоя́т на одном наборе вещей нарочно, чтобы читатель видел: об одном предмете спрашивают по-разному, и ответы эти разного рода.",
       "act": [
         "decide",
         "name",
@@ -3463,7 +3463,7 @@
     {
       "name": "gsmlex",
       "file": "datasets/genesis_gsmlex.txt",
-      "genre": "GSM lexicon drill: possession verbs over the item lexicon (working layer of the band stand)",
+      "genre": "ШАГ В ЕДИНИЦУ, СКАЗАННЫЙ ШИРОКИМ СЛОВАРЁМ ДЕЙСТВИЙ: «Felix makes 12 points. Felix uses 1 point away. how many points does Felix keep? Felix keeps 11 points». Одно и то же прибавление или убавление единицы, названное ДЕСЯТКАМИ РАЗНЫХ ГЛАГОЛОВ — makes, has, takes, sold, adds, — и всякий раз итог пересчитан. Мир проверяет, что счёт НЕ ЗАВИСИТ ОТ ГЛАГОЛА, которым о нём сказано. Отличается от `gsmwide` узостью ПРЕДМЕТОВ при широте глаголов, а от `realverbs` — тем, что глаголы здесь общие, а не ремесленные (замер 12.09: 400 строк, 400 вопросов, 200 равенств, ни одной кириллицы).",
       "act": [
         "recount"
       ],
@@ -3487,7 +3487,7 @@
     {
       "name": "gsmwide",
       "file": "datasets/genesis_gsmwide.txt",
-      "genre": "GSM wide frames: possessive bearers and herd subjects (working layer of the band stand)",
+      "genre": "ТОТ ЖЕ ШАГ В ЕДИНИЦУ, НО ШИРОКИМ СЛОВАРЁМ ПРЕДМЕТОВ: eggs, degrees, packs, dollars, days, pounds — «Iris weighs 7 pounds. Iris loses 1 pound away. how many pounds does Iris save?». Где `gsmlex` множит ГЛАГОЛЫ при немногих предметах, здесь множатся ПРЕДМЕТЫ, и вместе они показывают, что счёт не зависит ни от того, ни от другого. Мир вдвое больше соседа (замер 12.09: 900 строк и 900 вопросов, 450 равенств, ни одной кириллицы).",
       "act": [
         "recount"
       ],
@@ -3535,7 +3535,7 @@
     {
       "name": "realverbs",
       "file": "datasets/genesis_realverbs.txt",
-      "genre": "real verbs of the benchmark in their canonical frames (working layer of the band stand)",
+      "genre": "ТОТ ЖЕ ШАГ В ЕДИНИЦУ, НО ГЛАГОЛАМИ РЕМЕСЛА: baked, collected, packed, wrote — «Carlos baked 11 cookies. Carlos sold 1 cookie away. how many cookies does Carlos keep?». Третий в семье с `gsmlex` и `gsmwide`, и отличие его в том, что действие здесь НАСТОЯЩЕЕ, а не общее: печь, собирать, паковать, писать — и предмет всякий раз тот, который этим действием и делается. Мир меньше обоих соседей и нарочно (замер 12.09: 240 строк, 240 вопросов, 120 равенств, ни одной кириллицы).",
       "act": [
         "recount"
       ],
@@ -3696,7 +3696,7 @@
     {
       "name": "ruverbs",
       "file": "datasets/genesis_ruverbs.txt",
-      "genre": "russian verb frames at the mass of the english ones: present, past with the actor's gender, echo question, sum frame, and anaphora — the missing link of ru-anaphora named by measurement",
+      "genre": "РУССКИЙ ГЛАГОЛ, УПРАВЛЯЮЩИЙ ПАДЕЖОМ СЧЁТА: «Юрий ест 8 яблок», «где лежат …», «где стоят …», «у Петра …» — и форма имени при числе берётся не наугад, а по объявлению языка. Мир английских близнецов (`gsmlex`, `gsmwide`, `realverbs`) проверяет, что счёт не зависит от глагола; этот проверяет ОБРАТНОЕ — что РУССКАЯ ФОРМА от глагола и числа ЗАВИСИТ, и потому оракул его «объявлено», а не «пересчитано». Тридцать пять отказов — там, где формы нет (замер 12.09: 355 строк, 170 вопросов, 25 равенств, ни одной латиницы; читают rugram, ruverbs, langcount, rowframe).",
       "act": [
         "inflect",
         "recount"
