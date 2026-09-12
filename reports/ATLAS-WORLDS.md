@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 257 миров, 426911 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 257 миров, 426963 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -450,7 +450,7 @@
 
 ## АКТ «decide» — решить случай: вердикт с основанием рядом
 
-Миров 19, строк 15256.
+Миров 19, строк 15308.
 
 - **`verifyforms`** (3285 строк; recompute, whole_only)  
   **VERIFICATION** — «claim · check · verdict», and the pages where the instrument is OBLIGED to refuse (05.09, the agent architecture, the fourth market): a true claim checked by ANOTHER action cannot be confirmed — the verdict is «not verified», and the gro…
@@ -476,12 +476,12 @@
   **PRIME AND COMPOSITE IN EIGHT LANGUAGES (the owner's word: every language in surplus; the numbers world says it in en/ru): «97 ist eine Primzahl; ihre Teiler sind 1 und 97.», «91 ist keine Primzahl: 91 = 7 × 13.», «ist 91 eine Primzahl? nein: 91 ist keine …
 - **`enough`** (324 строк; recompute, exact_only)  
   **SUFFICIENCY** — the yes-or-no that is bought by arithmetic (06.09).
+- **`onestep`** (282 строк; recompute, whole_only, unsigned_only)  
+  **ОДНОШАГОВОЕ УРАВНЕНИЕ** — НЕИЗВЕСТНОЕ НАХОДИТСЯ ОБРАТНЫМ ДЕЙСТВИЕМ: чтобы узнать слагаемое, вычитают; чтобы узнать множитель, делят.
 - **`nesuf`** (276 строк; recompute, whole_only)  
   **THE NECESSARY AND THE SUFFICIENT** — TWO QUESTIONS ABOUT ONE CONDITION, AND THEIR ANSWERS DIFFER. Measured 11.09 across the 255 show worlds and across the declarations of all worlds: «необходимо и достаточно», «necessary and sufficient» — NONE. The corpus…
 - **`object`** (272 строк; recompute, whole_only)  
   **OBJECTION** — what to do with what somebody else said.
-- **`onestep`** (230 строк; recompute, whole_only, unsigned_only)  
-  **ОДНОШАГОВОЕ УРАВНЕНИЕ** — НЕИЗВЕСТНОЕ НАХОДИТСЯ ОБРАТНЫМ ДЕЙСТВИЕМ: чтобы узнать слагаемое, вычитают; чтобы узнать множитель, делят.
 - **`disj`** (216 строк; recompute, whole_only)  
   **EXCLUSION** — the disjunctive syllogism over an EXHAUSTIVE row.
 - **`opinion`** (174 строк; declared, whole_only)  
