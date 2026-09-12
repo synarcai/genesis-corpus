@@ -2322,10 +2322,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 39379272,
+      "size": 39393180,
       "tiers": [],
       "text": "mix",
-      "lines": 431380
+      "lines": 431454
     },
     {
       "name": "gender",
@@ -7984,6 +7984,30 @@
       "actors": []
     },
     {
+      "name": "numline",
+      "file": "datasets/genesis_numline.txt",
+      "genre": "ЧИСЛОВАЯ ПРЯМАЯ — ЧИСЛО, СТОЯЩЕЕ ЛЕВЕЕ, МЕНЬШЕ, И ЭТО ЕДИНСТВЕННОЕ ПРАВИЛО ПОРЯДКА. Замер 12.09 по всему своду в 39 МБ: «числовая прямая» — НОЛЬ вхождений, «левее» — ноль, «правее» — ноль. Свод знает отрицательные числа (60 строк), знает модуль и знаки действий — и ни разу не показывает, ГДЕ число стои́т, а порядок чисел есть первое, что берётся глазом, и последнее, что берётся правилом. СРАВНЕНИЕ ЦИФР БЕЗ ЗНАКА ДАЁТ ОБРАТНЫЙ ОТВЕТ РОВНО ТАМ, ГДЕ ОБА ЧИСЛА ОТРИЦАТЕЛЬНЫ: 5 больше 3, а −5 МЕНЬШЕ −3. Восемь родов, 74 страницы, два языка: левее значит меньше, шаг вправо прибавляет («от −3 на 3 шага вправо — и мы в 0»), расстояние без знака («от −5 до 3 — 8 шагов: 3 − (−5) = 8, и обратно столько же»), противоположные («−4 и 4 отстоят от нуля поровну»), между. ДВА РОДА СУТЬ ОДНА ЛОВУШКА, ПОКАЗАННАЯ ОБЕИМИ СТОРОНАМИ: «5 больше 3, а −5 меньше −3» рядом с «5 больше 3, и здесь сравнение цифр ВЕРНО — верно лишь потому, что оба числа положительны». ПРАВИЛО, ВЕРНОЕ НА ПОЛОВИНЕ СЛУЧАЕВ, НЕ ЕСТЬ ПОЛОВИНА ПРАВИЛА — ОНО ЕСТЬ ДРУГОЕ ПРАВИЛО, И ОШИБАЕТСЯ ОНО НЕ ИНОГДА, А РОВНО В ПОЛОВИНЕ ВСЕХ. Это the forty-third trap of the series — сравнение цифр, принятое за сравнение чисел. Минус пишется знаком «−» (U+2212), а не дефисом, по объявлению письма свода, и общий разбор записи читает ОДНОМЕСТНЫЙ минус тем же законом: запись, которую разбор не берёт, объявляется ложной, а не непонятной.",
+      "act": [
+        "compare",
+        "decide",
+        "expound",
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only",
+        "exact_only"
+      ],
+      "assemblies": [
+        "school"
+      ],
+      "size": 13906,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
       "name": "numphrase",
       "file": "datasets/genesis_numphrase.txt",
       "genre": "THE NUMBER'S PHRASE — the number that hangs on a FORM, not on a digit (06.09). The measure of the executor (d5, band p156) named the debt exactly: of 423 tacts where the reader does not read a number, 409 carry PLAIN DIGITS — the trouble is not the shape of the number but the shape of the PHRASE it hangs on. The census of the свод says why: eight lines carry «N pages long», six carry a progressive with a counted subject, and ZERO carry «N more … but N fewer». Four frames, each a different way for a number to sit in a sentence: the measure as what the text HAS («the first chapter has 48 pages», and Russian with no verb at all — «в первой главе 48 страниц»); THE SAME FACT as a PREDICATE OF LENGTH («is 48 pages long»), shown beside the first in ALL NINE languages, because a house that gives a language one of the two sells the market that one — and the languages part company on whether the predicate takes a verb of its own (ru, en, de, fr, it, nl) or a tail on the verb of possession (es, pt, pl: «tiene 48 páginas de largo», «ma 48 stron długości»), which parting is itself a shown fact; in both, the answer must repeat the number in the same COUNT FORM the language gives it («48 stron», never «48 strony»), and each frame carries ITS OWN question, so «how many pages does it have?» is never «how long is it?»; the counted subject with a verb, where the NUMBER GOVERNS THE VERB and the boundary is NOT THE LAST DIGIT — eleven ends in one and takes the plural, twenty-one does not, and BOTH SIDES ARE SHOWN, because a rule shown on one side only is indistinguishable from the rule of the last digit and the reader would buy the counterfeit; and two comparisons of OPPOSITE direction in one sentence, where the second number must not be dragged after the first and the answer is taken from the number that was ASKED about. The verb's form is asked of the LANGUAGE PACK — the same cell that decides the noun's count form — so verb and noun cannot disagree, and it is judged ONLY in a language that moves it (Russian alone of the nine): marking the other eight would call an honest English page a lie («52 children were riding») and would catch a mutant FOR FREE, by its number rather than by its damage. The goods and the counting rule are the house of price's own; declared here are the chapter and the page, the child and the verb of riding, and the two comparison frames (tools/numphrase.py). CLOSED world.",
@@ -10163,10 +10187,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 32123676,
+      "size": 32137584,
       "tiers": [],
       "text": "mix",
-      "lines": 386798
+      "lines": 386872
     },
     {
       "name": "school_biling_v2c",
