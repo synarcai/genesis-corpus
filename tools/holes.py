@@ -28,6 +28,7 @@ import re
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import frgram as _fr  # noqa: E402 — французская элизия: один закон, два читателя
 import rugram  # noqa: E402
 
 КОРЕНЬ = pathlib.Path(__file__).resolve().parents[1]
@@ -453,13 +454,19 @@ def дыры(язык, день, имя, род, k, n, вещь, место):
     прич = р["прич"][1 if вещь[1] == "f" else 0]    # agreed with the fronted object
     он = "elle" if род == "f" else "il"
     что = "qu'est-ce qu'" if имя[0].lower() in "aeiouhéè" else "qu'est-ce que "
-    return (
+    # ЭЛИЗИЯ БЕРЁТСЯ У ДОМА ЯЗЫКА, А НЕ ПРОВЕРЯЕТСЯ ПО МЕСТУ (12.09). Дом делал её рукою
+    # для «qu'est-ce que» и не делал для «combien de»: «combien de histoires» стои́т в
+    # своде двенадцать раз и есть французская ОШИБКА, а не вариант.
+    #
+    #     ЗАКОН ЯЗЫКА, ПРИМЕНЁННЫЙ В ОДНОМ МЕСТЕ РУКОЮ, НЕ ПРИМЕНЁН В ОСТАЛЬНЫХ.
+    сырые = (
         (f"qui {гл} {n} {в} {место} {день} ?", f"{имя}."),
         (f"combien de {в} {имя} a-t-{он} {прич} {место} {день} ?", f"{n}."),
         (f"{что}{имя} {гл} {место} {день} ?", f"{n} {в}."),
         (f"où {имя} a-t-{он} {осн} {n} {в} {день} ?", f"{место}."),
         (f"quand {имя} a-t-{он} {осн} {n} {в} {место} ?", f"{день}."),
     )
+    return tuple((_fr.элизия(в_), _fr.элизия(о_)) for в_, о_ in сырые)
 
 
 def _alt(слова):
