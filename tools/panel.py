@@ -398,6 +398,9 @@ recache.установить()
            # УКРАИНСКАЯ СЧЁТНАЯ ЯЧЕЙКА (13.09, девятнадцатый дом): три формы, а не две, и
            # вторая устроена ИНАЧЕ, чем русская, — сходство зовёт переносить.
            "ukcount_court",
+           # ЯПОНСКОЕ СЧЁТНОЕ (13.09, двадцатый дом): четвёртый язык разрядов и четвёртое их
+           # устройство; знак «本» служит и именем, и счётным — читается по месту.
+           "jaclass_court",
            # ЭПИЗОД (05.09, архитектура агента: лента актов, префикс леджера, ничья шагов)
            "episodeforms_court", "summaryforms_court", "opforms_court", "readnum_court", "mandateforms_court", "personforms_court", "selfmodelforms_court", "signedworld_court", "beforetails_court", "discountroad_court", "nomention_court", "clockforms_court", "mixedunits_court", "dateforms_court", "clockwords_court", "speedforms_court", "enough_court", "numphrase_court", "kinbearer_court", "pronobject_court", "proform_court", "degrees_court", "actturn_court", "tempscale_court", "unitfrac_court", "place_court", "roman_court", "quantforms_court", "orderforms_court", "roundforms_court")
 
