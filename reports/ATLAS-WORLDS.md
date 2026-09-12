@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 264 миров, 429469 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 264 миров, 429541 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -424,7 +424,7 @@
 - **`inquiry_es_it`** (1480 строк; recompute, whole_only)  
   the ladder of inquiry in SPANISH and ITALIAN, with the marks those tongues require and no others: the inverted question mark that opens a Spanish question, and the accent that separates «sí» from «si»
 - **`equation`** (1366 строк; recompute, whole_only)  
-  the ladder of inquiry on equations: what a root IS, a case DECIDED by substitution with the arithmetic beside the verdict, Vieta shown as sum and product of the roots rather than a formula recited, a refusal with its ground («no whole root between 0 and 10:…
+  **the ladder of inquiry on equations: what a root IS, a case DECIDED by substitution with the arithmetic beside the verdict, Vieta shown as sum and product of the roots rather than a formula recited, a refusal with its ground («no whole root between 0 and 1…
 - **`topics`** (1104 строк; declared, whole_only)  
   **EVERYDAY TOPICS** — what a person asks about first (the owner's order, 04.09, item 4; the BESEDA band measures this genus mute 16 of 20, and names its cause: SUBJ-UNKNOWN — the reader does not know the SUBJECT of the question.
 - **`glyphs`** (1101 строк; declared, declared_pairs_only)  
@@ -532,11 +532,11 @@
 
 ## АКТ «translate» — сказать то же другой поверхностью, языком, записью
 
-Миров 13, строк 17761.
+Миров 13, строк 17833.
 
 - **`markdown`** (3428 строк; reversibility, reversible_only)  
   **markdown in full: thirty-two constructs of CommonMark, GFM and MDX/Docusaurus, each on four surfaces** — the record itself, its meaning in English and in Russian, and the question that asks for it; the oracle is REVERSIBILITY (a construct declares how to …
-- **`md_latex`** (3260 строк; declared, recompute, whole_only)  
+- **`md_latex`** (3332 строк; declared, recompute, whole_only)  
   **THE MARKUP RECORD AND ITS READING** — ONE THING SAID IN TWO SURFACES. Declared until 12.09 in six words, and with NO ACT AT ALL: the field stood «unnamed» while the world translated on every page.
 - **`formula_lang`** (2583 строк; same_object, reversibility, reversible_only)  
   formula and speech, converted both ways at any depth: ONE expression TREE with four surfaces (LaTeX, glyphs, English words, Russian words) and four inverse walks written apart; a compound argument is always spoken in brackets, which is what makes speech par…

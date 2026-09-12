@@ -3089,7 +3089,7 @@
     {
       "name": "md_latex",
       "file": "datasets/genesis_md_latex.txt",
-      "genre": "THE MARKUP RECORD AND ITS READING — ONE THING SAID IN TWO SURFACES. Declared until 12.09 in six words, and with NO ACT AT ALL: the field stood «unnamed» while the world translated on every page. Measured 12.09: 3260 lines, 1073 Russian and 1431 English, 756 in neither — the records themselves. Counted: the READING of a record — 368 lines («заголовок уровня два: схема» standing for «## схема», «the sign \\cdot is read as times»); the CODE BLOCK — 210; the TABLE — 210; LaTeX with «frac» and «cdot» — 244; the LINK — 105; the HEADING — 88. A MARKUP RECORD IS NOT ORNAMENT BUT A RECORD WITH A STRICT MEANING, and that is why it can be judged at all: the court EXECUTES the markup — it looks into the layer and asks whether the line «### поле» is really there and whether the level matches the COUNT OF HASHES rather than the word beside them. The act of this world is `translate` from 12.09: to say the same thing by another surface is a deed, and a deed performed on 3260 lines deserves a name. AN ACT LEFT UNNAMED IS NOT A MODEST ACT BUT AN UNASKABLE ONE: a reader looking for worlds that translate between notations would not have found this one. Boundary: whole totals only, measured; thirty lines carry a negative value and 120 a refusal with a ground.",
+      "genre": "THE MARKUP RECORD AND ITS READING — ONE THING SAID IN TWO SURFACES. Declared until 12.09 in six words, and with NO ACT AT ALL: the field stood «unnamed» while the world translated on every page. Measured 12.09: 3332 lines, 1073 Russian and 1431 English, 756 in neither — the records themselves. Counted: the READING of a record — 368 lines («заголовок уровня два: схема» standing for «## схема», «the sign \\cdot is read as times»); the CODE BLOCK — 210; the TABLE — 210; LaTeX with «frac» and «cdot» — 244; the LINK — 105; the HEADING — 88. A MARKUP RECORD IS NOT ORNAMENT BUT A RECORD WITH A STRICT MEANING, and that is why it can be judged at all: the court EXECUTES the markup — it looks into the layer and asks whether the line «### поле» is really there and whether the level matches the COUNT OF HASHES rather than the word beside them. The act of this world is `translate` from 12.09: to say the same thing by another surface is a deed, and a deed performed on 3260 lines deserves a name. AN ACT LEFT UNNAMED IS NOT A MODEST ACT BUT AN UNASKABLE ONE: a reader looking for worlds that translate between notations would not have found this one. Boundary: whole totals only, measured; thirty lines carry a negative value and 120 a refusal with a ground. МАШИННАЯ ЗАПИСЬ ДЕЙСТВИЯ ПОКАЗАНА РЯДОМ С ОБЫЧНОЙ (12.09): «знак * есть машинное умножение: 4 * 5 = 20, и 4 × 5 = 20 говорит то же», и так же о / и о дефисе. Куплено замером: в своде 9137 звёздочек и 7207 дефисов-минусов — в мирах уравнений, формул и разметки, где запись машинная, — а читать «*» свод учил ТОЛЬКО как разметку курсива («*круг* читается как курсивный круг»), как умножение же ни разу. ОДИН ЗНАК, ДВА ДЕЛА, И НИ ОДНО НЕ ОБЪЯВЛЕНО, — ЧИТАТЕЛЬ ВЫУЧИТ ПЕРВОЕ И СПОТКНЁТСЯ О ВТОРОМ. Обе записи стоят на одной странице и сверяются счётом, ибо равенство в них одно.",
       "act": [
         "translate"
       ],
@@ -3100,7 +3100,7 @@
       "boundary": [
         "whole_only"
       ],
-      "size": 182852,
+      "size": 113203,
       "tiers": [],
       "text": "shows"
     },
@@ -3292,7 +3292,7 @@
     {
       "name": "cybernetics",
       "file": "datasets/genesis_cybernetics.txt",
-      "genre": "УПРАВЛЕНИЕ, СЧИТАННОЕ ШАГАМИ ДО ЦЕЛИ, И ЗАКОН НЕОБХОДИМОГО РАЗНООБРАЗИЯ: «почему начав с 3 при цели 9 и шаге 3, значение достигает цели за 2 шага? потому что 3 + 2 × 3 = 9», «requisite variety is the law that a regulator can distinguish no more disturbances than it has states», «замкнутый контур … делает шаг, пока ошибка не 0». Понятие объявляется словом, а его следствие ПЕРЕСЧИТЫВАЕТСЯ: сколько шагов, сколько возмущений различит регулятор (замер 12.09: 1288 строк, 560 вопросов, 400 равенств, 50 отказов; читают cyber, engram, langcount, arith). ВТОРАЯ КОПИЯ СЧЁТНЫХ ФОРМ УБРАНА (12.09): дом держал свою таблицу и писал «5 бит» там, где пакет говорит «5 битов», — расходясь с миром `compsci`, читавшим пакет честно. ДОМ, ПРЕДУПРЕДИВШИЙ О ВТОРОЙ КОПИИ И ДЕРЖАЩИЙ ЕЁ, ПРЕДУПРЕДИЛ О СЕБЕ.",
+      "genre": "УПРАВЛЕНИЕ, СЧИТАННОЕ ШАГАМИ ДО ЦЕЛИ, И ЗАКОН НЕОБХОДИМОГО РАЗНООБРАЗИЯ: «почему начав с 3 при цели 9 и шаге 3, значение достигает цели за 2 шага? потому что 3 + 2 × 3 = 9», «requisite variety is the law that a regulator can distinguish no more disturbances than it has states», «замкнутый контур … делает шаг, пока ошибка не 0». Понятие объявляется словом, а его следствие ПЕРЕСЧИТЫВАЕТСЯ: сколько шагов, сколько возмущений различит регулятор (замер 12.09: 1288 строк, 560 вопросов, 400 равенств, 50 отказов; читают cyber, engram, langcount, arith). ВТОРАЯ КОПИЯ СЧЁТНЫХ ФОРМ УБРАНА (12.09): дом держал таблицу четырёх слов — шаг, бит, возмущение, состояние — и писал «5 бит» там, где пакет говорит «5 битов». «Возмущение» пакету было незнакомо и вписано в него, а не оставлено здесь. СОСЕД И РАЗЛИЧИЕ: `machine` тоже считает биты, но биты ШИРИНЫ СЛОВА машины — 8, 16, 32, — тогда как здесь бит есть МЕРА РАЗНООБРАЗИЯ, и число их берётся логарифмом от числа возмущений.",
       "act": [
         "recount"
       ],
@@ -3390,7 +3390,7 @@
     {
       "name": "machine",
       "file": "datasets/genesis_machine.txt",
-      "genre": "ЧИСЛО В ЧУЖИХ ОСНОВАНИЯХ И ПОБИТОВОЕ ДЕЙСТВИЕ: «what is 13 in octal? 13 in octal is 15», «чему равно 13 в двоичной записи? 13 в двоичной записи это 1101», «13 xor 6 is 11», сдвиги. Одно и то же число, записанное тремя способами, — и всякая запись переводится СЧЁТОМ, а не таблицей. Вопросов здесь больше, чем равенств, вчетырнадцатеро (882 против 60): мир спрашивает и отвечает в одной строке, без знака равенства (замер 12.09: 1814 строк, 16 отказов; читают machine и algo). ВТОРАЯ КОПИЯ СЧЁТНЫХ ФОРМ УБРАНА (12.09): дом держал свою таблицу и писал «5 бит» там, где пакет говорит «5 битов», — расходясь с миром `compsci`, читавшим пакет честно. ДОМ, ПРЕДУПРЕДИВШИЙ О ВТОРОЙ КОПИИ И ДЕРЖАЩИЙ ЕЁ, ПРЕДУПРЕДИЛ О СЕБЕ.",
+      "genre": "ЧИСЛО В ЧУЖИХ ОСНОВАНИЯХ И ПОБИТОВОЕ ДЕЙСТВИЕ: «what is 13 in octal? 13 in octal is 15», «чему равно 13 в двоичной записи? 13 в двоичной записи это 1101», «13 xor 6 is 11», сдвиги. Одно и то же число, записанное тремя способами, — и всякая запись переводится СЧЁТОМ, а не таблицей. Вопросов здесь больше, чем равенств, вчетырнадцатеро (882 против 60): мир спрашивает и отвечает в одной строке, без знака равенства (замер 12.09: 1814 строк, 16 отказов; читают machine и algo). ВТОРАЯ КОПИЯ СЧЁТНЫХ ФОРМ УБРАНА (12.09): дом писал в заголовке «правило числа читается из пакета, а не переписывается» и держал СВОЮ таблицу, разошедшуюся с пакетом на «битах». ДОМ, НАПИСАВШИЙ В ЗАГОЛОВКЕ «ЧИТАЕТСЯ ИЗ ПАКЕТА» И ОБЪЯВИВШИЙ СВОЮ ТАБЛИЦУ, ЧИТАЕТ НЕ ПАКЕТ, А СЕБЯ. СОСЕД И РАЗЛИЧИЕ: `cybernetics` тоже считает биты, но как МЕРУ РАЗНООБРАЗИЯ по закону необходимого разнообразия; здесь же бит есть ШИРИНА СЛОВА машины, и число значений его — степень двойки.",
       "act": [
         "recount",
         "translate"
@@ -3983,7 +3983,7 @@
     {
       "name": "formula_lang",
       "file": "datasets/genesis_formula_lang.txt",
-      "genre": "formula and speech, converted both ways at any depth: ONE expression TREE with four surfaces (LaTeX, glyphs, English words, Russian words) and four inverse walks written apart; a compound argument is always spoken in brackets, which is what makes speech parsable at any depth; the court parses BOTH sides of a conversion and requires the SAME TREE, and the home's oracle proves all eight walks agree on six thousand trees to depth five",
+      "genre": "formula and speech, converted both ways at any depth: ONE expression TREE with four surfaces (LaTeX, glyphs, English words, Russian words) and four inverse walks written apart; a compound argument is always spoken in brackets, which is what makes speech parsable at any depth; the court parses BOTH sides of a conversion and requires the SAME TREE, and the home's oracle proves all eight walks agree on six thousand trees to depth five ЗАПИСЬ ЗДЕСЬ МАШИННАЯ, И ЭТО ОБЪЯВЛЕНО (12.09): дефис вместо знака минус, звёздочка вместо ×, косая черта вместо ÷. Читать обе записи учит мир `md_latex`.",
       "act": [
         "translate",
         "invert"
@@ -3995,7 +3995,7 @@
       "boundary": [
         "reversible_only"
       ],
-      "size": 573595,
+      "size": 572620,
       "tiers": [],
       "text": "shows",
       "assemblies": [
@@ -4050,7 +4050,7 @@
     {
       "name": "equation",
       "file": "datasets/genesis_equation.txt",
-      "genre": "the ladder of inquiry on equations: what a root IS, a case DECIDED by substitution with the arithmetic beside the verdict, Vieta shown as sum and product of the roots rather than a formula recited, a refusal with its ground («no whole root between 0 and 10: every value leaves a remainder»), and the square root as the INVERSE surface of the square; coefficients derived from the roots, numbers by range and not by case",
+      "genre": "the ladder of inquiry on equations: what a root IS, a case DECIDED by substitution with the arithmetic beside the verdict, Vieta shown as sum and product of the roots rather than a formula recited, a refusal with its ground («no whole root between 0 and 10: every value leaves a remainder»), and the square root as the INVERSE surface of the square; coefficients derived from the roots, numbers by range and not by case ЗАПИСЬ ЗДЕСЬ МАШИННАЯ, И ЭТО ОБЪЯВЛЕНО (12.09): «x^2 - 8 x = 0», «4 * 5 = 20» — дефис вместо знака минус, звёздочка вместо ×, как пишут в коде. Читать обе записи учит мир `md_latex`, где они стоят рядом на одной странице.",
       "act": [
         "name",
         "decide",
@@ -4064,7 +4064,7 @@
       "boundary": [
         "whole_only"
       ],
-      "size": 187650,
+      "size": 176820,
       "tiers": [],
       "text": "shows",
       "assemblies": [
@@ -4074,7 +4074,7 @@
     {
       "name": "equation_signed",
       "file": "datasets/genesis_equation_signed.txt",
-      "genre": "the same ladder of equations where roots may be NEGATIVE or zero — kept a world apart, not because the mathematics differs but because a frame is bought only when ONE performer speaks on EVERY show of it: a solver living in the unsigned world cannot reproduce «is -6 a root», and one such show kills the purchase of the whole frame The ladder it repeats is that of `equation`, and the mathematics is the same; what differs is only the range of the roots, and the world is kept apart for the sake of the performer, not of the theorem.",
+      "genre": "the same ladder of equations where roots may be NEGATIVE or zero — kept a world apart, not because the mathematics differs but because a frame is bought only when ONE performer speaks on EVERY show of it: a solver living in the unsigned world cannot reproduce «is -6 a root», and one such show kills the purchase of the whole frame The ladder it repeats is that of `equation`, and the mathematics is the same; what differs is only the range of the roots, and the world is kept apart for the sake of the performer, not of the theorem. ЗАПИСЬ ЗДЕСЬ МАШИННАЯ, И ЭТО ОБЪЯВЛЕНО (12.09): дефис вместо знака минус, звёздочка вместо ×. Читать обе записи учит мир `md_latex`.",
       "act": [
         "name",
         "decide",
@@ -4091,7 +4091,7 @@
       "assemblies": [
         "school"
       ],
-      "size": 261714,
+      "size": 250884,
       "tiers": [],
       "text": "shows"
     },
@@ -5713,10 +5713,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 39114797,
+      "size": 39121413,
       "tiers": [],
       "text": "mix",
-      "lines": 429469
+      "lines": 429541
     },
     {
       "name": "minimal",
@@ -6103,7 +6103,7 @@
     {
       "name": "definitions",
       "file": "datasets/genesis_definitions.txt",
-      "genre": "definitions from the dictionaries of the shelf (holon's order 02.09: the organism is mute on «what is entropy» / «что такое сознание» — no line of the corpus defined anything): «X is <quote>: Webster's Unabridged Dictionary, 1913.» and «X — это <цитата>: ЭСБЕ, статья «X»» (Даль for words ЭСБЕ lacks), the question «what is X? X is …» on a quarter of shows; concepts declared in declarations/CONCEPTS.txt (owner's list, then the top of unshown concepts by concept_reach, then the sciences named by neighbouring worlds), the quote found by the generator in the article itself, first sense cut at a sentence boundary, never written by hand; no negation — a definition is not a verdict; the court (courts/definitions_court.py) finds the quote in the named article as a substring, the concept word in its heading and the source on the shelf with its year, sharing the article cutter (tools/definitions.py) but not the selection rules",
+      "genre": "definitions from the dictionaries of the shelf (holon's order 02.09: the organism is mute on «what is entropy» / «что такое сознание» — no line of the corpus defined anything): «X is <quote>: Webster's Unabridged Dictionary, 1913.» and «X — это <цитата>: ЭСБЕ, статья «X»» (Даль for words ЭСБЕ lacks), the question «what is X? X is …» on a quarter of shows; concepts declared in declarations/CONCEPTS.txt (owner's list, then the top of unshown concepts by concept_reach, then the sciences named by neighbouring worlds), the quote found by the generator in the article itself, first sense cut at a sentence boundary, never written by hand; no negation — a definition is not a verdict; the court (courts/definitions_court.py) finds the quote in the named article as a substring, the concept word in its heading and the source on the shelf with its year, sharing the article cutter (tools/definitions.py) but not the selection rules НАПИСАНИЕ ИСТОЧНИКА СОХРАНЕНО, ВКЛЮЧАЯ «Е» ВМЕСТО «Ё» (объявлено 12.09): словари ЭСБЕ и Даля буквы ё не печатали, и оттого здесь «дает», «ее», «счет», «трех», «нем», «лед» — там, где весь прочий свод пишет «даёт», «её», «счёт». ЦИТАТА, ПОПРАВЛЕННАЯ В НАПИСАНИИ, ЕСТЬ УЖЕ НЕ ЦИТАТА, — и потому разнобой этот не долг, а ГРАНИЦА, и сказана она здесь, чтобы читатель не счёл его небрежностью.",
       "act": [
         "name",
         "expound"
@@ -6115,7 +6115,7 @@
         "whole_only",
         "unsigned_only"
       ],
-      "size": 638746,
+      "size": 461975,
       "tiers": [
         "t5_definitions"
       ],
