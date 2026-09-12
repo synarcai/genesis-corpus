@@ -1,5 +1,5 @@
 мир	генератор	через_слой	строк	различных	копий	макс_копий
-datasets/GENESIS-FULL.txt	gen_genesis_full.py	0	431202	312561	118641	473
+datasets/GENESIS-FULL.txt	gen_genesis_full.py	0	432050	313409	118641	473
 datasets/genesis_abs.txt	gen_genesis_abs.py	1	340	340	0	1
 datasets/genesis_action_measure.txt	gen_genesis_action_measure.py	1	234	234	0	1
 datasets/genesis_action_measure_langs.txt	gen_genesis_action_measure_langs.py	1	462	462	0	1
@@ -96,6 +96,7 @@ datasets/genesis_l1_logic_sets.txt	gen_genesis_logic_sets.py	1	292	214	78	2
 datasets/genesis_l3_eng_proof.txt	gen_genesis_eng_proof.py	1	153	119	34	2
 datasets/genesis_l3_prog.txt	gen_genesis_prog.py	1	182	144	38	2
 datasets/genesis_l4.txt	gen_genesis_l4.py	0	500	100	400	5
+datasets/genesis_leap.txt	gen_genesis_leap.py	1	72	72	0	1
 datasets/genesis_letters.txt	gen_genesis_letters.py	1	360	360	0	1
 datasets/genesis_lever.txt	gen_genesis_lever.py	1	726	726	0	1
 datasets/genesis_likely.txt	gen_genesis_likely.py	1	184	184	0	1
@@ -112,8 +113,9 @@ datasets/genesis_md_latex.txt	gen_genesis_md_latex.py	1	3332	1649	1683	420
 datasets/genesis_md_structures.txt	gen_genesis_md_structures.py	1	1056	460	596	4
 datasets/genesis_measure.txt	gen_genesis_measure.py	1	128	128	0	1
 datasets/genesis_measure_story.txt	gen_genesis_measure_story.py	1	1104	912	192	2
-datasets/genesis_measuregrow.txt	gen_genesis_measuregrow.py	1	52	52	0	1
+datasets/genesis_measuregrow.txt	gen_genesis_measuregrow.py	1	84	84	0	1
 datasets/genesis_measureprec.txt	gen_genesis_measureprec.py	1	96	96	0	1
+datasets/genesis_median.txt	gen_genesis_median.py	1	80	80	0	1
 datasets/genesis_metalang.txt	gen_genesis_metalang.py	1	1849	1754	95	2
 datasets/genesis_mixedunits.txt	gen_genesis_mixedunits.py	1	882	882	0	1
 datasets/genesis_money.txt	gen_genesis_money.py	1	450	450	0	1
@@ -131,6 +133,7 @@ datasets/genesis_notationvar.txt	gen_genesis_notationvar.py	1	5386	5386	0	1
 datasets/genesis_numberline.txt	gen_genesis_numberline.py	1	5292	5292	0	1
 datasets/genesis_numbers.txt	gen_genesis_numbers.py	1	4220	4190	30	2
 datasets/genesis_numlabel.txt	gen_genesis_numlabel.py	1	828	828	0	1
+datasets/genesis_numline.txt	gen_genesis_numline.py	1	74	74	0	1
 datasets/genesis_numphrase.txt	gen_genesis_numphrase.py	1	225	225	0	1
 datasets/genesis_object.txt	gen_genesis_object.py	1	272	272	0	1
 datasets/genesis_onestep.txt	gen_genesis_onestep.py	1	350	350	0	1
@@ -143,6 +146,7 @@ datasets/genesis_orderforms.txt	gen_genesis_orderforms.py	1	792	792	0	1
 datasets/genesis_orderlaw.txt	gen_genesis_orderlaw.py	1	280	280	0	1
 datasets/genesis_overlap.txt	gen_genesis_overlap.py	1	106	106	0	1
 datasets/genesis_parity.txt	gen_genesis_parity.py	1	414	414	0	1
+datasets/genesis_pctbase.txt	gen_genesis_pctbase.py	1	80	80	0	1
 datasets/genesis_pctchange.txt	gen_genesis_pctchange.py	1	480	480	0	1
 datasets/genesis_pctdiff.txt	gen_genesis_pctdiff.py	1	640	640	0	1
 datasets/genesis_percent.txt	gen_genesis_percent.py	1	560	520	40	2
@@ -205,6 +209,7 @@ datasets/genesis_signrul.txt	gen_genesis_signrul.py	1	596	596	0	1
 datasets/genesis_space.txt	gen_genesis_space.py	1	2301	1761	540	2
 datasets/genesis_speech.txt	gen_genesis_speech.py	1	1910	1390	520	2
 datasets/genesis_speedforms.txt	gen_genesis_speedforms.py	1	432	432	0	1
+datasets/genesis_squnit.txt	gen_genesis_squnit.py	1	260	260	0	1
 datasets/genesis_statistics.txt	gen_genesis_statistics.py	1	1192	734	458	2
 datasets/genesis_stats_langs.txt	gen_genesis_stats_langs.py	1	480	384	96	2
 datasets/genesis_stenogram.txt	gen_genesis_stenogram.py	1	550	526	24	3
@@ -221,6 +226,7 @@ datasets/genesis_topics.txt	gen_genesis_topics.py	1	1104	1104	0	1
 datasets/genesis_translate.txt	gen_genesis_translate.py	1	792	792	0	1
 datasets/genesis_turn.txt	gen_genesis_turn.py	1	112	112	0	1
 datasets/genesis_two_kinds.txt	gen_genesis_two_kinds.py	1	360	360	0	1
+datasets/genesis_tzone.txt	gen_genesis_tzone.py	1	72	72	0	1
 datasets/genesis_unit_counts.txt	gen_genesis_unit_counts.py	1	720	720	0	1
 datasets/genesis_unitcmp.txt	gen_genesis_unitcmp.py	1	908	908	0	1
 datasets/genesis_unitfrac.txt	gen_genesis_unitfrac.py	1	198	198	0	1
