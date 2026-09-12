@@ -48,8 +48,8 @@ import sys
 МАНИФЕСТ = КОРЕНЬ / "datasets" / "GENESIS-MANIFEST.json"
 ГДЕ = ("tools", "scripts")
 
-# РУБЕЖ-ДОЛГА: СИРОТ_РУБЕЖ = 1
-СИРОТ_РУБЕЖ = 1
+# РУБЕЖ-ДОЛГА: СИРОТ_РУБЕЖ = 0
+СИРОТ_РУБЕЖ = 0
 
 ЦЕЛЬ = re.compile(r"^datasets/[^/]+\.txt$")
 

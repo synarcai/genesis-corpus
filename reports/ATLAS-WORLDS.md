@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 257 миров, 426942 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 257 миров, 426911 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -11,7 +11,7 @@
 
 ## АКТ «recount» — пересчитать величину: строка утверждает число
 
-Миров 154, строк 224552.
+Миров 153, строк 224291.
 
 - **`links`** (17566 строк; declared, whole_only)  
   **CONVERSATION LINKS** — a question whose subject stands in the PREVIOUS reply (the owner's order, 04.09, item 5; the BESEDA band measures this genus mute 15 of 15).
@@ -281,8 +281,6 @@
   **THE PRO-FORM OF THE GOODS** — the thing named once, then stood in for (06.09).
 - **`prec`** (264 строк; recompute, whole_only)  
   **THE ORDER OF OPERATIONS** — the rule by which the canon ALWAYS computed and NEVER named.
-- **`algebra_units`** (261 строк; recompute, unsigned_only)  
-  **РАННИЙ СМЕШАННЫЙ МИР, ДО ДОМОВ: линейное уравнение одного шага («task: x plus 7 equals 10. solution: x = 10 − 7 = 3»), перевод единиц («7 м = 700 см»), сумма долей до единицы («4/10 + 6/10 = 1»), десятичная запись доли («3/4 = 0.75»), чтение знака словом …
 - **`joint2`** (255 строк; recompute, whole_only)  
   **JOINT COUNT** — «i have», «you have», «we have».
 - **`remainders`** (248 строк; recompute, whole_only)  
@@ -452,7 +450,7 @@
 
 ## АКТ «decide» — решить случай: вердикт с основанием рядом
 
-Миров 18, строк 15026.
+Миров 19, строк 15256.
 
 - **`verifyforms`** (3285 строк; recompute, whole_only)  
   **VERIFICATION** — «claim · check · verdict», and the pages where the instrument is OBLIGED to refuse (05.09, the agent architecture, the fourth market): a true claim checked by ANOTHER action cannot be confirmed — the verdict is «not verified», and the gro…
@@ -482,6 +480,8 @@
   **THE NECESSARY AND THE SUFFICIENT** — TWO QUESTIONS ABOUT ONE CONDITION, AND THEIR ANSWERS DIFFER. Measured 11.09 across the 255 show worlds and across the declarations of all worlds: «необходимо и достаточно», «necessary and sufficient» — NONE. The corpus…
 - **`object`** (272 строк; recompute, whole_only)  
   **OBJECTION** — what to do with what somebody else said.
+- **`onestep`** (230 строк; recompute, whole_only, unsigned_only)  
+  **ОДНОШАГОВОЕ УРАВНЕНИЕ** — НЕИЗВЕСТНОЕ НАХОДИТСЯ ОБРАТНЫМ ДЕЙСТВИЕМ: чтобы узнать слагаемое, вычитают; чтобы узнать множитель, делят.
 - **`disj`** (216 строк; recompute, whole_only)  
   **EXCLUSION** — the disjunctive syllogism over an EXHAUSTIVE row.
 - **`opinion`** (174 строк; declared, whole_only)  
