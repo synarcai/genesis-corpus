@@ -104,6 +104,16 @@ without spaces; that is written down rather than smoothed over.
 - **Approximation is a genus of its own.** Nothing here is rounded: a
   corpus stating `3.14` as the value of a circle teaches a rounding as a
   truth.
+- **A green instrument must prove it can find.** An instrument whose
+  frontier is zero is green for two different reasons, and from outside
+  they look the same: either the tree carries no fault of its kind, or the
+  instrument cannot see its kind at all. Every such instrument runs a probe
+  on a known case at every invocation and *refuses* (exit 2) rather than
+  passing when the probe fails — see `declarations/PROBE.md`, and
+  `scripts/probe_present.py`, which keeps the count at zero. The law was
+  paid on the day it was declared: 47 instruments owed a probe, and one of
+  the first probes found a real blindness — the writing-integrity check
+  knew only one of the two flavours of mojibake.
 
 ## Licence
 
