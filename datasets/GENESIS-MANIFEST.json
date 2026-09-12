@@ -2298,10 +2298,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 39296877,
+      "size": 39336822,
       "tiers": [],
       "text": "mix",
-      "lines": 430984
+      "lines": 431202
     },
     {
       "name": "gender",
@@ -8502,6 +8502,30 @@
       "text": "shows"
     },
     {
+      "name": "overlap",
+      "file": "datasets/genesis_overlap.txt",
+      "genre": "ДВА КРУЖКА — КТО СКЛАДЫВАЕТ ГРУППЫ, НЕ ВЫЧИТАЯ ОБЩЕГО, СЧИТАЕТ ОБЩЕЕ ДВАЖДЫ. Замер 12.09 по всему своду: «и то и другое» встречается восемь раз, и все восемь — о двух записях ОДНОГО числа («3 × 8 и 8 × 3, и то и другое есть 24»); о двух группах, имеющих общих членов, свод не говорит ни разу, а дом двух условий знает конъюнкцию лишь как таблицу истинности. ЦЕЛОЕ СКЛАДЫВАЕТСЯ ИЗ ТРЁХ ЧАСТЕЙ, А НЕ ИЗ ДВУХ: только первое, только второе и то, что принадлежит обоим; ОБЩЕЕ ЕСТЬ ЧАСТЬ КАЖДОЙ ГРУППЫ, А НЕ ТРЕТЬЯ ГРУППА РЯДОМ С НИМИ. Восемь родов, 106 страниц, два языка: сумма с перекрытием («12 + 9 − 5 = 16, а не 21»), ни в одном («20 − 16 = 4»), только одно («только шахматы 7, только футбол 4, и 7 + 4 + 5 = 16»), общее есть часть, без перекрытия. ДВА РОДА СУТЬ ОДНА ЛОВУШКА, ПОКАЗАННАЯ ОБЕИМИ СТОРОНАМИ, И ВТОРАЯ СТОРОНА ЗДЕСЬ ВАЖНЕЕ ПЕРВОЙ: превышение суммы над целым есть признак ДОСТАТОЧНЫЙ, но не необходимый — «12 + 4 = 16, и это не больше 20, — а перекрытие всё равно есть». ПРИЗНАК ДОСТАТОЧНЫЙ, ПОКАЗАННЫЙ БЕЗ СВОЕЙ ГРАНИЦЫ, ЧИТАЕТСЯ КАК НЕОБХОДИМЫЙ; И ТОТ, КТО ВЫУЧИЛ ЕГО ТАК, ОШИБЁТСЯ НЕ В РЕДКОМ СЛУЧАЕ, А В ПОЛОВИНЕ ВСЕХ. Это the fortieth trap of the series — сумма групп, принятая за число занятых. Судья считает запись РАЗБОРОМ со скобками, а не парами чисел: в «20 − (12 + 9 − 5) = 4» читающий пары нашёл бы «9 − 5 = 4» — истину не на своём месте — и обманулся бы вдвойне.",
+      "act": [
+        "compare",
+        "decide",
+        "expound",
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only",
+        "exact_only"
+      ],
+      "assemblies": [
+        "school"
+      ],
+      "size": 18714,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
       "name": "parity",
       "file": "datasets/genesis_parity.txt",
       "genre": "THE PARITY OF OPERATIONS — A LAW ABOUT CLASSES, NOT ABOUT NUMBERS. Measured 11.09 across the 242 show worlds: «чётное + чётное», «even plus even» — NONE; «odd with odd» — NONE. Yet the word «чётный» occurs 3614 times: the corpus can say WHETHER A NUMBER IS EVEN and never once says what happens to PARITY under an operation. THE CORPUS KNOWS THE TEST AND NOT THE LAW. THE FOURTEENTH TRAP OF THE SERIES: ODD WITH ODD GIVES EVEN. The reader expects the property to pass to the total — «two odds will give an odd» — and gets the opposite. Parity is NOT INHERITED, it is ADDED: two remainders of one make a two, and the two goes into evenness. A PROPERTY OF THE PARTS DOES NOT PASS TO THE WHOLE BY ITSELF, AND IT IS EXACTLY HERE THAT THE READER BELIEVES IT DOES. Four genera: EVEN AND EVEN («even with even gives even: 4 = 2 × 2, and 6 = 2 × 3, and 4 + 6 = 10, and 10 = 2 × 5»); ODD AND ODD («odd with odd gives even, and not odd: 3 = 2 × 1 + 1, and 5 = 2 × 2 + 1, and 3 + 5 = 8, and 8 = 2 × 4») — the trap; EVEN AND ODD; THE FACTOR («an even factor makes the product even»). The first three are THE COMPLETE SWEEP OF ADDITION, and that is not excess: a law about classes is proved only by completeness of cases — two genera would make a rule, three make A LAW. A LAW ABOUT CLASSES SHOWN BY NOT ALL CASES IS A RULE WITH AN UNNAMED HOLE, and the house's self-check guards that completeness. The fourth genus speaks of another operation and therefore of another law: in multiplication ONE even factor suffices, where addition needs both; apart, the reader would carry the law of addition over to multiplication, and that would be a fifteenth trap, which this house extinguishes by its own presence. PARITY IS SHOWN BY THE WRITING AND NOT ANNOUNCED BY A WORD: «4 = 2 × 2» and «5 = 2 × 2 + 1» are the definition of even and odd given by counting; the court therefore checks not the word «even» but THE DECOMPOSITION, and substituting «= 2 × 2» by «= 2 × 3» breaks the page. All 358 pages are read and confirmed by the court of arithmetic as well. ВОПРОСНЫЙ РОД ДОБАВЛЕН 12.09 ПО УКАЗАНИЮ ПРИБОРА ШИРОТЫ: мир нёс НОЛЬ вопросительных знаков — он только утверждал. МИР БЕЗ ВОПРОСНОЙ ПОВЕРХНОСТИ ПОКАЗЫВАЕТ ОТВЕТ, НЕ ПОКАЗЫВАЯ ЗАДАЧИ.",
@@ -10115,10 +10139,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 32041281,
+      "size": 32081226,
       "tiers": [],
       "text": "mix",
-      "lines": 386402
+      "lines": 386620
     },
     {
       "name": "school_biling_v2c",
@@ -10942,6 +10966,30 @@
       "происхождение": "wikisource-ru:prefix:Отцы и дети (Тургенев)/",
       "held_out": "shelf/ru/turgenev_otcy_ru.holdout.txt",
       "судится": []
+    },
+    {
+      "name": "turn",
+      "file": "datasets/genesis_turn.txt",
+      "genre": "СТОРОНЫ И ПОВОРОТЫ — «НАЛЕВО» ЕСТЬ НЕ СТОРОНА СВЕТА, А ПОВОРОТ. Замер 12.09 по всему своду в 39 МБ: слово «север» встречается ДВАЖДЫ, «повернуть налево» — НИ РАЗУ; свод вращает решётки на 90° в двух мирах и не говорит ни слова о том, куда смотрит повернувшийся, — а это первое пространственное знание, какое берёт всякий, кто ходит по земле. НАПРАВЛЕНИЕ ОТНОСИТЕЛЬНОЕ НЕ ЕСТЬ НАПРАВЛЕНИЕ АБСОЛЮТНОЕ, И ПЕРЕВОД МЕЖДУ НИМИ ЗАВИСИТ ОТ ТОГО, КУДА СМОТРЯТ. Девять родов, 112 страниц, два языка: поворот направо и налево («смотрящий на север повернул направо и смотрит на восток: север → восток»), кругом, четыре поворота («север → восток → юг → запад → север: ЧЕТЫРЕ ПОВОРОТА ЕСТЬ НИ ОДНОГО»), сложение поворотов, путь из трёх звеньев. ДВА РОДА СУТЬ ОДНА ЛОВУШКА, ПОКАЗАННАЯ ОБЕИМИ СТОРОНАМИ: «смотрящий на ЮГ, повернув налево, смотрит на ВОСТОК, а НЕ на запад» рядом с «смотрящий на СЕВЕР, повернув налево, смотрит на запад — и совпало это ЛИШЬ ПОТОМУ, ЧТО СМОТРЕЛИ НА СЕВЕР». Одна сторона света из четырёх даёт совпадение, три не дают, и самопроверка дома требует именно такой доли: встретивший только первое выучит равенство «налево = запад» и будет прав в четверти случаев, встретивший только второе выучит, что относительное НИКОГДА не совпадает с абсолютным, — и будет неправ в той же четверти. Это the thirty-ninth trap of the series — относительное направление, принятое за сторону света. Судья считает цепь сторон по поворотам, названным в ТОЙ ЖЕ строке, и берёт повороты лишь СТРОЧНЫМ написанием: ЗАКОН, СКАЗАННЫЙ ПРОПИСЬЮ, ЕСТЬ РЕЧЬ О ПОВОРОТЕ, А НЕ САМ ПОВОРОТ.",
+      "act": [
+        "compare",
+        "decide",
+        "expound",
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only",
+        "exact_only"
+      ],
+      "assemblies": [
+        "school"
+      ],
+      "size": 21228,
+      "tiers": [],
+      "text": "shows"
     },
     {
       "name": "two_kinds",
