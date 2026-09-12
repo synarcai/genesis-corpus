@@ -15,7 +15,7 @@ import pathlib
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-import wmeanforms as W  # noqa: E402
+import wmeanforms as F  # noqa: E402
 from layer import emit_grouped, PASSES  # noqa: E402
 
 ЦЕЛЬ = "datasets/genesis_wmean.txt"
@@ -27,9 +27,9 @@ from layer import emit_grouped, PASSES  # noqa: E402
 
 def pass_groups(шаг):
     вон = []
-    for язык in W.ЯЗЫКИ:
+    for язык in F.ЯЗЫКИ:
         for роды in ГРУППЫ:
-            свои = [с for с, (л, р) in W.ПОКАЗЫ.items() if л == язык and р in роды]
+            свои = [с for с, (л, р) in F.ПОКАЗЫ.items() if л == язык and р in роды]
             вон.append(свои[шаг::len(PASSES)])
     return вон
 
