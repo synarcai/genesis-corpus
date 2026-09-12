@@ -1421,11 +1421,12 @@
     {
       "name": "opslaw",
       "file": "datasets/genesis_opslaw.txt",
-      "genre": "THE LAWS OF OPERATION — AND THE MAIN THING IN THIS HOUSE IS THE LAW'S BOUNDARY. Measured 11.09 across the 234 show worlds: «переместительный», «commutative» — NONE; «сочетательный», «associative» — NONE; «распределительный», «раскрыть скобки», «distributive» — NONE; the bracket «(a + b) × c» — NONE. The corpus counts across thousands of pages and has never once said that a + b = b + a. One world shows it as a BARE EQUALITY — 78 lines of the form «1 + 3 = 3 + 1», with no name and no cause — and among them stands «1 + 1 = 1 + 1». AN EXAMPLE WITH NOTHING TO SWAP DOES NOT SHOW A SWAP; therefore in the commutation genera here the numbers are ALWAYS different: the degenerate case is not an example of the law but its empty shadow. Five genera: COMMUTATION OF A SUM, COMMUTATION OF A PRODUCT, THE BOUNDARY OF THE LAW («5 − 3 = 2, but 3 − 5 = −2: subtraction does not allow changing the order, and the answer became the opposite» and «6 ÷ 3 = 2, but 3 ÷ 6 = 1/2 … and the answer became a share»), ASSOCIATION, and OPENING THE BRACKET. THE HEART IS THE THIRD GENUS: A LAW WITHOUT A BOUNDARY IS A LIE TOLD HALFWAY. A reader who has learnt «the order does not matter» on addition and multiplication will apply it to subtraction and division unless shown WHAT COMES OUT there — and what is shown is not «you must not», but the result: the answer becomes THE OPPOSITE under subtraction and A SHARE under division. Both boundaries lead into neighbouring houses — the signed one and the fractional one — and this house stands on them rather than beside them. The first and the third are a MINIMAL PAIR BY OPERATION: the same numbers, the same swap, and the difference in one place — which operation stands between them. THE FIFTH GENUS IS THE ONLY PLACE IN THE CORPUS WHERE A BRACKET IS OPENED: until now the bracket could only change precedence (the house of precedence); here it shows that multiplication is DIVIDED among the addends — no longer an order of counting but a law about the operations themselves. A multiplier equal to one of the addends is excluded: on «1 × 2 + 2 × 2» the two twos play different roles and the eye cannot tell them apart — the page stays true but stops showing.",
+      "genre": "THE LAWS OF OPERATION — AND THE MAIN THING IN THIS HOUSE IS THE LAW'S BOUNDARY. Measured 11.09 across the 234 show worlds: «переместительный», «commutative» — NONE; «сочетательный», «associative» — NONE; «распределительный», «раскрыть скобки», «distributive» — NONE; the bracket «(a + b) × c» — NONE. The corpus counts across thousands of pages and has never once said that a + b = b + a. One world shows it as a BARE EQUALITY — 78 lines of the form «1 + 3 = 3 + 1», with no name and no cause — and among them stands «1 + 1 = 1 + 1». AN EXAMPLE WITH NOTHING TO SWAP DOES NOT SHOW A SWAP; therefore in the commutation genera here the numbers are ALWAYS different: the degenerate case is not an example of the law but its empty shadow. Five genera: COMMUTATION OF A SUM, COMMUTATION OF A PRODUCT, THE BOUNDARY OF THE LAW («5 − 3 = 2, but 3 − 5 = −2: subtraction does not allow changing the order, and the answer became the opposite» and «6 ÷ 3 = 2, but 3 ÷ 6 = 1/2 … and the answer became a share»), ASSOCIATION, and OPENING THE BRACKET. THE HEART IS THE THIRD GENUS: A LAW WITHOUT A BOUNDARY IS A LIE TOLD HALFWAY. A reader who has learnt «the order does not matter» on addition and multiplication will apply it to subtraction and division unless shown WHAT COMES OUT there — and what is shown is not «you must not», but the result: the answer becomes THE OPPOSITE under subtraction and A SHARE under division. Both boundaries lead into neighbouring houses — the signed one and the fractional one — and this house stands on them rather than beside them. The first and the third are a MINIMAL PAIR BY OPERATION: the same numbers, the same swap, and the difference in one place — which operation stands between them. THE FIFTH GENUS IS THE ONLY PLACE IN THE CORPUS WHERE A BRACKET IS OPENED: until now the bracket could only change precedence (the house of precedence); here it shows that multiplication is DIVIDED among the addends — no longer an order of counting but a law about the operations themselves. A multiplier equal to one of the addends is excluded: on «1 × 2 + 2 × 2» the two twos play different roles and the eye cannot tell them apart — the page stays true but stops showing. ИМЕНА ЗАКОНОВ ДАНЫ 12.09: замер нашёл, что все три закона арифметики свод ПОКАЗЫВАЕТ и НИ ОДНОГО не называет — «от перемены мест слагаемых сумма не меняется» стояло без слова «переместительный», «скобка сумму не меняет» без «сочетательный», «множитель достаётся каждому слагаемому» без «распределительный». Ныне всякая страница несёт имя, и границы тоже: «ПЕРЕМЕСТИТЕЛЬНЫЙ закон здесь не действует». ПОКАЗ БЕЗ ИМЕНИ УЧИТ ДЕЛУ И НЕ ДАЁТ СЛОВА, КОТОРЫМ О НЁМ ГОВОРЯТ.",
       "act": [
-        "recount",
         "compare",
-        "generalize"
+        "generalize",
+        "name",
+        "recount"
       ],
       "oracle": [
         "recompute"
@@ -1433,7 +1434,7 @@
       "boundary": [
         "whole_only"
       ],
-      "size": 0,
+      "size": 102814,
       "tiers": [],
       "text": "shows",
       "assemblies": [
@@ -5649,7 +5650,7 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 24434105,
+      "size": 24469139,
       "tiers": [],
       "text": "mix",
       "lines": 309952
@@ -5667,7 +5668,7 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 38645860,
+      "size": 38680894,
       "tiers": [],
       "text": "mix",
       "lines": 428277

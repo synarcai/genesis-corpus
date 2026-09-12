@@ -59,20 +59,20 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 
 РАМКИ = {
     "ru": {
-        "перестановка суммы": "{a} + {b} = {s} и {b} + {a} = {s}: от перемены мест слагаемых сумма не меняется.",
-        "перестановка произведения": "{a} × {b} = {p} и {b} × {a} = {p}: от перемены мест множителей произведение не меняется.",
-        "граница вычитания": "{a} − {b} = {d}, а {b} − {a} = −{d}: вычитание перемены мест не терпит, и ответ стал противоположным.",
-        "граница деления": "{a} ÷ {b} = {k}, а {b} ÷ {a} = 1/{k}: деление перемены мест не терпит, и ответ стал долей.",
-        "сочетание": "({a} + {b}) + {c} = {s} и {a} + ({b} + {c}) = {s}: скобка сумму не меняет.",
-        "раскрытие скобки": "({a} + {b}) × {c} = {p} и {a} × {c} + {b} × {c} = {p}: множитель достаётся каждому слагаемому.",
+        "перестановка суммы": "{a} + {b} = {s} и {b} + {a} = {s}: от перемены мест слагаемых сумма не меняется; этот закон зовётся ПЕРЕМЕСТИТЕЛЬНЫМ.",
+        "перестановка произведения": "{a} × {b} = {p} и {b} × {a} = {p}: от перемены мест множителей произведение не меняется; и это тот же ПЕРЕМЕСТИТЕЛЬНЫЙ закон.",
+        "граница вычитания": "{a} − {b} = {d}, а {b} − {a} = −{d}: вычитание перемены мест не терпит, и ответ стал противоположным; ПЕРЕМЕСТИТЕЛЬНЫЙ закон здесь не действует.",
+        "граница деления": "{a} ÷ {b} = {k}, а {b} ÷ {a} = 1/{k}: деление перемены мест не терпит, и ответ стал долей; ПЕРЕМЕСТИТЕЛЬНЫЙ закон здесь не действует.",
+        "сочетание": "({a} + {b}) + {c} = {s} и {a} + ({b} + {c}) = {s}: скобка сумму не меняет; этот закон зовётся СОЧЕТАТЕЛЬНЫМ.",
+        "раскрытие скобки": "({a} + {b}) × {c} = {p} и {a} × {c} + {b} × {c} = {p}: множитель достаётся каждому слагаемому; этот закон зовётся РАСПРЕДЕЛИТЕЛЬНЫМ.",
     },
     "en": {
-        "перестановка суммы": "{a} + {b} = {s} and {b} + {a} = {s}: changing the order of addends does not change the sum.",
-        "перестановка произведения": "{a} × {b} = {p} and {b} × {a} = {p}: changing the order of factors does not change the product.",
-        "граница вычитания": "{a} − {b} = {d}, but {b} − {a} = −{d}: subtraction does not allow changing the order, and the answer became the opposite.",
-        "граница деления": "{a} ÷ {b} = {k}, but {b} ÷ {a} = 1/{k}: division does not allow changing the order, and the answer became a share.",
-        "сочетание": "({a} + {b}) + {c} = {s} and {a} + ({b} + {c}) = {s}: the bracket does not change the sum.",
-        "раскрытие скобки": "({a} + {b}) × {c} = {p} and {a} × {c} + {b} × {c} = {p}: the multiplier reaches every addend.",
+        "перестановка суммы": "{a} + {b} = {s} and {b} + {a} = {s}: changing the order of addends does not change the sum; this law is called COMMUTATIVE.",
+        "перестановка произведения": "{a} × {b} = {p} and {b} × {a} = {p}: changing the order of factors does not change the product; and it is the same COMMUTATIVE law.",
+        "граница вычитания": "{a} − {b} = {d}, but {b} − {a} = −{d}: subtraction does not allow changing the order, and the answer became the opposite; the COMMUTATIVE law does not hold here.",
+        "граница деления": "{a} ÷ {b} = {k}, but {b} ÷ {a} = 1/{k}: division does not allow changing the order, and the answer became a share; the COMMUTATIVE law does not hold here.",
+        "сочетание": "({a} + {b}) + {c} = {s} and {a} + ({b} + {c}) = {s}: the bracket does not change the sum; this law is called ASSOCIATIVE.",
+        "раскрытие скобки": "({a} + {b}) × {c} = {p} and {a} × {c} + {b} × {c} = {p}: the multiplier reaches every addend; this law is called DISTRIBUTIVE.",
     },
 }
 

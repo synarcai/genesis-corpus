@@ -11,7 +11,7 @@
 
 ## АКТ «recount» — пересчитать величину: строка утверждает число
 
-Миров 153, строк 224701.
+Миров 152, строк 224031.
 
 - **`links`** (17566 строк; declared, whole_only)  
   **CONVERSATION LINKS** — a question whose subject stands in the PREVIOUS reply (the owner's order, 04.09, item 5; the BESEDA band measures this genus mute 15 of 15).
@@ -181,8 +181,6 @@
   **COMPARING SHARES** — which share is greater, and why the denominator behaves THE OTHER WAY ROUND. Measured 11.09 across the show worlds: «1/3 больше 1/…», «which is greater: 1/…» — NONE; «общий знаменатель», «common denominator» — NONE; «subtract fraction…
 - **`longdiv`** (674 строк; recompute, reversibility, whole_only, exact_only, unsigned_only)  
   **LONG DIVISION AS A WALK, NOT A NUMBER** — ordered by the band, not by us: `band_reach` found that atlas asks «391 ÷ 17 =» and «5236 ÷ 17 =» while neither number stood once in 194392 lines of shows.
-- **`opslaw`** (670 строк; recompute, whole_only)  
-  **THE LAWS OF OPERATION** — AND THE MAIN THING IN THIS HOUSE IS THE LAW'S BOUNDARY. Measured 11.09 across the 234 show worlds: «переместительный», «commutative» — NONE; «сочетательный», «associative» — NONE; «распределительный», «раскрыть скобки», «distribu…
 - **`rates`** (667 строк; recompute, whole_only, unsigned_only)  
   **ЦЕНА, ЗАРАБОТОК И СКОРОСТЬ** — СКОЛЬКО ПРИХОДИТСЯ НА ОДНО И СКОЛЬКО НА МНОГО: «водитель зарабатывает … в час», «a driver earns …», «у него осталось …», «60 минут составляют час».
 - **`quantforms`** (648 строк; recompute, whole_only)  
@@ -526,7 +524,7 @@
 
 ## АКТ «compare» — сравнить двоих: больше, меньше, во столько же раз
 
-Миров 11, строк 14454.
+Миров 12, строк 15124.
 
 - **`cmpframes`** (6480 строк; recompute, whole_only)  
   **FRAMES OF COMPARISON** — the largest class of the reader's lies on the held-out key (05.09: twelve of fifteen — «9 flexiones más que», «in più/in meno di», «meer/minder dan», «więcej/mniej niż»: the marker is not bought and the answer takes a neighbouring…
@@ -540,6 +538,8 @@
   **THE COMPARISON OF NAMED QUANTITIES** — THE GREATER NUMBER NAMES THE LESSER QUANTITY. Measured 11.09 across the 256 show worlds: a question of comparison carrying TWO DIFFERENT MEASURES — NONE. The corpus can do everything the answer needs and never asks t…
 - **`scale`** (747 строк; declared, whole_only)  
   **THE SCALE** — a comparison of THINGS THEMSELVES and TRANSITIVITY as a checkable INFERENCE. The compare world compares the NUMBERS at things («dan has 2 apples more»); here the things themselves are compared — «an elephant is bigger than a dog» — and there…
+- **`opslaw`** (670 строк; recompute, whole_only)  
+  **THE LAWS OF OPERATION** — AND THE MAIN THING IN THIS HOUSE IS THE LAW'S BOUNDARY. Measured 11.09 across the 234 show worlds: «переместительный», «commutative» — NONE; «сочетательный», «associative» — NONE; «распределительный», «раскрыть скобки», «distribu…
 - **`dist`** (400 строк; recompute, whole_only, exact_only)  
   **ТРИ ЗАКОНА РАССТОЯНИЯ** — ЧТО ДЕЛАЕТ РАССТОЯНИЕ РАССТОЯНИЕМ. Свод считал расстояния сотнями страниц («расстояние между (−1, 2) и (−16, 10) — 17: 15² + 8² = 17²») и нигде не называл их законов: замер 12.09 нашёл симметрию показанной, а «ноль только до себя…
 - **`propcompare`** (200 строк; recompute, whole_only)  
