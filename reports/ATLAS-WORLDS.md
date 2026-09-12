@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 260 миров, 428709 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 261 миров, 428989 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -493,6 +493,37 @@
 - **`reply`** (54 строк; declared, whole_only)  
   **REPLY** — advice to the interlocutor RESTING ON A DECLARED LAW. The owner's order about «basic behavioural and psychological laws» was half closed: the behaviour house gives the LAW but not its APPLICATION TO THE PERSON SPEAKING. Here a person names their…
 
+## АКТ «compare» — сравнить двоих: больше, меньше, во столько же раз
+
+Миров 13, строк 15444.
+
+- **`cmpframes`** (6480 строк; recompute, whole_only)  
+  **FRAMES OF COMPARISON** — the largest class of the reader's lies on the held-out key (05.09: twelve of fifteen — «9 flexiones más que», «in più/in meno di», «meer/minder dan», «więcej/mniej niż»: the marker is not bought and the answer takes a neighbouring…
+- **`compare_mult`** (2759 строк; recompute, whole_only, unsigned_only)  
+  **multiple comparison, and the two frames English keeps apart standing SIDE BY SIDE ON THE SAME NUMBERS: «as many as» for the countable and «as much as» for the uncountable** — the organism had bought one and not the other because they never stood together;…
+- **`genesis_compare`** (1440 строк; recompute, whole_only, unsigned_only)  
+  **COMPARISON BY DIFFERENCE, BY RATIO, AND BY BOTH AT ONCE** — declared until 12.09 in eight words.
+- **`digitlen`** (1064 строк; recompute, whole_only)  
+  **THE LENGTH OF THE WRITING** — FOR WHOLE NUMBERS, A LONGER WRITING MEANS A GREATER NUMBER. The trap of a neighbour stands on a rule the corpus never stated: the world of the decimal share (`dec`) says outright that «a reader who knows whole numbers compare…
+- **`unitcmp`** (908 строк; recompute, declared, whole_only)  
+  **THE COMPARISON OF NAMED QUANTITIES** — THE GREATER NUMBER NAMES THE LESSER QUANTITY. Measured 11.09 across the 256 show worlds: a question of comparison carrying TWO DIFFERENT MEASURES — NONE. The corpus can do everything the answer needs and never asks t…
+- **`scale`** (747 строк; declared, whole_only)  
+  **THE SCALE** — a comparison of THINGS THEMSELVES and TRANSITIVITY as a checkable INFERENCE. The compare world compares the NUMBERS at things («dan has 2 apples more»); here the things themselves are compared — «an elephant is bigger than a dog» — and there…
+- **`opslaw`** (710 строк; recompute, whole_only)  
+  **THE LAWS OF OPERATION** — AND THE MAIN THING IN THIS HOUSE IS THE LAW'S BOUNDARY. Measured 11.09 across the 234 show worlds: «переместительный», «commutative» — NONE; «сочетательный», «associative» — NONE; «распределительный», «раскрыть скобки», «distribu…
+- **`dist`** (400 строк; recompute, whole_only, exact_only)  
+  **ТРИ ЗАКОНА РАССТОЯНИЯ** — ЧТО ДЕЛАЕТ РАССТОЯНИЕ РАССТОЯНИЕМ. Свод считал расстояния сотнями страниц («расстояние между (−1, 2) и (−16, 10) — 17: 15² + 8² = 17²») и нигде не называл их законов: замер 12.09 нашёл симметрию показанной, а «ноль только до себя…
+- **`orderlaw`** (280 строк; recompute, whole_only, exact_only)  
+  **ЗАКОНЫ ПОРЯДКА** — СВОД СРАВНИВАЛ ЧИСЛА ДЕВЯТЬ ТЫСЯЧ РАЗ И НИ РАЗУ НЕ СДЕЛАЛ ВЫВОДА. Замер 12.09: 980 строк несут цепь «a меньше b, и b меньше c» («билет 4 стои́т между 1 и 7: 1 меньше 4, и 4 меньше 7»), и НИ ОДНА не договаривает «значит, 1 меньше 7».
+- **`propcompare`** (200 строк; recompute, whole_only)  
+  **PROPERTY COMPARISON IN NINE LANGUAGES** — «which is heavier: a stone or a feather? a stone.», «what is lighter: a feather or a stone? a feather.» Born from the fifth band of conversation (BESEDA-5, 05.09): «что тяжелее: камень или перо?» was mute in all n…
+- **`ru_compare`** (168 строк; recompute, declared, whole_only, exact_only)  
+  **multiplicative against differential comparison in Russian: «во сколько раз больше» is DIVISION and «на сколько больше» is SUBTRACTION, two frames a speaker confuses more often than any other, shown on the SAME pair of numbers side by side with the differe…
+- **`rewrite`** (144 строк; recompute, whole_only)  
+  **REWRITING** — one number written two ways. d5 named sixty-two starving collections of the organism, and `rewrite_facts` was among them: the corpus had no rewriting shows at all.
+- **`analog`** (144 строк; recompute, whole_only)  
+  **LIKENESS** — analogy and its CHECK, not its feeling.
+
 ## АКТ «translate» — сказать то же другой поверхностью, языком, записью
 
 Миров 13, строк 17761.
@@ -524,35 +555,6 @@
 - **`conversions`** (176 строк; recompute, whole_only, unsigned_only)  
   **ПЕРЕВОД ОДНОЙ МЕРЫ В ДРУГУЮ ПО ОБЪЯВЛЕННОМУ ОТНОШЕНИЮ: «1 hour = 60 minutes», «в минуте 60 секунд», «5 weeks», «8 feet»** — время, длина и деньги, и всякий перевод есть умножение на число, которое мир называет вслух («a dollar is 100 cents»).
 
-## АКТ «compare» — сравнить двоих: больше, меньше, во столько же раз
-
-Миров 12, строк 15164.
-
-- **`cmpframes`** (6480 строк; recompute, whole_only)  
-  **FRAMES OF COMPARISON** — the largest class of the reader's lies on the held-out key (05.09: twelve of fifteen — «9 flexiones más que», «in più/in meno di», «meer/minder dan», «więcej/mniej niż»: the marker is not bought and the answer takes a neighbouring…
-- **`compare_mult`** (2759 строк; recompute, whole_only, unsigned_only)  
-  **multiple comparison, and the two frames English keeps apart standing SIDE BY SIDE ON THE SAME NUMBERS: «as many as» for the countable and «as much as» for the uncountable** — the organism had bought one and not the other because they never stood together;…
-- **`genesis_compare`** (1440 строк; recompute, whole_only, unsigned_only)  
-  **COMPARISON BY DIFFERENCE, BY RATIO, AND BY BOTH AT ONCE** — declared until 12.09 in eight words.
-- **`digitlen`** (1064 строк; recompute, whole_only)  
-  **THE LENGTH OF THE WRITING** — FOR WHOLE NUMBERS, A LONGER WRITING MEANS A GREATER NUMBER. The trap of a neighbour stands on a rule the corpus never stated: the world of the decimal share (`dec`) says outright that «a reader who knows whole numbers compare…
-- **`unitcmp`** (908 строк; recompute, declared, whole_only)  
-  **THE COMPARISON OF NAMED QUANTITIES** — THE GREATER NUMBER NAMES THE LESSER QUANTITY. Measured 11.09 across the 256 show worlds: a question of comparison carrying TWO DIFFERENT MEASURES — NONE. The corpus can do everything the answer needs and never asks t…
-- **`scale`** (747 строк; declared, whole_only)  
-  **THE SCALE** — a comparison of THINGS THEMSELVES and TRANSITIVITY as a checkable INFERENCE. The compare world compares the NUMBERS at things («dan has 2 apples more»); here the things themselves are compared — «an elephant is bigger than a dog» — and there…
-- **`opslaw`** (710 строк; recompute, whole_only)  
-  **THE LAWS OF OPERATION** — AND THE MAIN THING IN THIS HOUSE IS THE LAW'S BOUNDARY. Measured 11.09 across the 234 show worlds: «переместительный», «commutative» — NONE; «сочетательный», «associative» — NONE; «распределительный», «раскрыть скобки», «distribu…
-- **`dist`** (400 строк; recompute, whole_only, exact_only)  
-  **ТРИ ЗАКОНА РАССТОЯНИЯ** — ЧТО ДЕЛАЕТ РАССТОЯНИЕ РАССТОЯНИЕМ. Свод считал расстояния сотнями страниц («расстояние между (−1, 2) и (−16, 10) — 17: 15² + 8² = 17²») и нигде не называл их законов: замер 12.09 нашёл симметрию показанной, а «ноль только до себя…
-- **`propcompare`** (200 строк; recompute, whole_only)  
-  **PROPERTY COMPARISON IN NINE LANGUAGES** — «which is heavier: a stone or a feather? a stone.», «what is lighter: a feather or a stone? a feather.» Born from the fifth band of conversation (BESEDA-5, 05.09): «что тяжелее: камень или перо?» was mute in all n…
-- **`ru_compare`** (168 строк; recompute, declared, whole_only, exact_only)  
-  **multiplicative against differential comparison in Russian: «во сколько раз больше» is DIVISION and «на сколько больше» is SUBTRACTION, two frames a speaker confuses more often than any other, shown on the SAME pair of numbers side by side with the differe…
-- **`rewrite`** (144 строк; recompute, whole_only)  
-  **REWRITING** — one number written two ways. d5 named sixty-two starving collections of the organism, and `rewrite_facts` was among them: the corpus had no rewriting shows at all.
-- **`analog`** (144 строк; recompute, whole_only)  
-  **LIKENESS** — analogy and its CHECK, not its feeling.
-
 ## АКТ «generalize» — назвать закон над случаями
 
 Миров 2, строк 1737.
@@ -574,5 +576,5 @@
     ОБЪЯВЛЕНИЕ В ТРИДЦАТЬ ЗНАКОВ НЕ ЛЖЁТ И НЕ ГОВОРИТ: читатель узнаёт имя мира
     и ничего сверх него.
 
-Миров: **0** из 260.
+Миров: **0** из 261.
 

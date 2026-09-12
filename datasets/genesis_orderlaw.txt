@@ -1,0 +1,319 @@
+о двух числах −12 и 7 верно РОВНО ОДНО из трёх: «−12 меньше 7», «−12 равно 7», «−12 больше 7». Верно первое, ибо 7 − −12 = 19, а 19 больше нуля; и потому «−12 равно 7» ложно, и «−12 больше 7» ложно. Это свойство зовётся ТРИХОТОМИЕЙ.
+−5 меньше −2, и −2 меньше 3; ЗНАЧИТ, −5 меньше 3 — и проверить можно: 3 − −5 = 8, а 8 больше нуля. Это свойство порядка зовётся ТРАНЗИТИВНОСТЬЮ: цепь сравнений даёт вывод о крайних.
+о двух числах 6 и 17 верно РОВНО ОДНО из трёх: «6 меньше 17», «6 равно 17», «6 больше 17». Верно первое, ибо 17 − 6 = 11, а 11 больше нуля; и потому «6 равно 17» ложно, и «6 больше 17» ложно. Это свойство зовётся ТРИХОТОМИЕЙ.
+7 меньше 12, и 12 меньше 20; ЗНАЧИТ, 7 меньше 20 — и проверить можно: 20 − 7 = 13, а 13 больше нуля. Это свойство порядка зовётся ТРАНЗИТИВНОСТЬЮ: цепь сравнений даёт вывод о крайних.
+о двух числах 2 и 11 верно РОВНО ОДНО из трёх: «2 меньше 11», «2 равно 11», «2 больше 11». Верно первое, ибо 11 − 2 = 9, а 9 больше нуля; и потому «2 равно 11» ложно, и «2 больше 11» ложно. Это свойство зовётся ТРИХОТОМИЕЙ.
+1 меньше 4, и 4 меньше 7; ЗНАЧИТ, 1 меньше 7 — и проверить можно: 7 − 1 = 6, а 6 больше нуля. Это свойство порядка зовётся ТРАНЗИТИВНОСТЬЮ: цепь сравнений даёт вывод о крайних.
+о двух числах −6 и 14 верно РОВНО ОДНО из трёх: «−6 меньше 14», «−6 равно 14», «−6 больше 14». Верно первое, ибо 14 − −6 = 20, а 20 больше нуля; и потому «−6 равно 14» ложно, и «−6 больше 14» ложно. Это свойство зовётся ТРИХОТОМИЕЙ.
+−15 меньше −8, и −8 меньше −2; ЗНАЧИТ, −15 меньше −2 — и проверить можно: −2 − −15 = 13, а 13 больше нуля. Это свойство порядка зовётся ТРАНЗИТИВНОСТЬЮ: цепь сравнений даёт вывод о крайних.
+
+−12 меньше 7; прибавим к обоим 4: −8 и 11, и −8 меньше 11 — порядок СОХРАНЁН, ибо разность не изменилась: 11 − −8 = 19, как и было. Это свойство зовётся МОНОТОННОСТЬЮ порядка по сложению.
+3 больше −5, и ПОТОМУ «−5 больше 3» ложно: двух сразу не бывает, ибо 3 − −5 = 8 и −5 − 3 = −8, а оба разом положительными быть не могут. Это свойство зовётся АНТИСИММЕТРИЕЙ порядка.
+6 меньше 17; прибавим к обоим −6: 0 и 11, и 0 меньше 11 — порядок СОХРАНЁН, ибо разность не изменилась: 11 − 0 = 11, как и было. Это свойство зовётся МОНОТОННОСТЬЮ порядка по сложению.
+20 больше 7, и ПОТОМУ «7 больше 20» ложно: двух сразу не бывает, ибо 20 − 7 = 13 и 7 − 20 = −13, а оба разом положительными быть не могут. Это свойство зовётся АНТИСИММЕТРИЕЙ порядка.
+2 меньше 11; прибавим к обоим −3: −1 и 8, и −1 меньше 8 — порядок СОХРАНЁН, ибо разность не изменилась: 8 − −1 = 9, как и было. Это свойство зовётся МОНОТОННОСТЬЮ порядка по сложению.
+7 больше 1, и ПОТОМУ «1 больше 7» ложно: двух сразу не бывает, ибо 7 − 1 = 6 и 1 − 7 = −6, а оба разом положительными быть не могут. Это свойство зовётся АНТИСИММЕТРИЕЙ порядка.
+−6 меньше 14; прибавим к обоим 7: 1 и 21, и 1 меньше 21 — порядок СОХРАНЁН, ибо разность не изменилась: 21 − 1 = 20, как и было. Это свойство зовётся МОНОТОННОСТЬЮ порядка по сложению.
+−2 больше −15, и ПОТОМУ «−15 больше −2» ложно: двух сразу не бывает, ибо −2 − −15 = 13 и −15 − −2 = −13, а оба разом положительными быть не могут. Это свойство зовётся АНТИСИММЕТРИЕЙ порядка.
+
+−12 меньше 7; а теперь умножим оба на −2, и −2 МЕНЬШЕ нуля: 24 и −14, и 24 БОЛЬШЕ −14 — ЗНАК ПЕРЕВЕРНУЛСЯ. Умножение на отрицательное меняет порядок на обратный, и правило о сохранении порядка здесь НЕ ДЕЙСТВУЕТ.
+−5 меньше 3; умножим оба на 4, и 4 больше нуля: −20 и 12, и −20 меньше 12 — порядок СОХРАНЁН. Это МОНОТОННОСТЬ по умножению, и она верна лишь для ПОЛОЖИТЕЛЬНОГО множителя.
+6 меньше 17; а теперь умножим оба на −5, и −5 МЕНЬШЕ нуля: −30 и −85, и −30 БОЛЬШЕ −85 — ЗНАК ПЕРЕВЕРНУЛСЯ. Умножение на отрицательное меняет порядок на обратный, и правило о сохранении порядка здесь НЕ ДЕЙСТВУЕТ.
+7 меньше 20; умножим оба на 3, и 3 больше нуля: 21 и 60, и 21 меньше 60 — порядок СОХРАНЁН. Это МОНОТОННОСТЬ по умножению, и она верна лишь для ПОЛОЖИТЕЛЬНОГО множителя.
+2 меньше 11; а теперь умножим оба на −4, и −4 МЕНЬШЕ нуля: −8 и −44, и −8 БОЛЬШЕ −44 — ЗНАК ПЕРЕВЕРНУЛСЯ. Умножение на отрицательное меняет порядок на обратный, и правило о сохранении порядка здесь НЕ ДЕЙСТВУЕТ.
+1 меньше 7; умножим оба на 2, и 2 больше нуля: 2 и 14, и 2 меньше 14 — порядок СОХРАНЁН. Это МОНОТОННОСТЬ по умножению, и она верна лишь для ПОЛОЖИТЕЛЬНОГО множителя.
+−6 меньше 14; а теперь умножим оба на −3, и −3 МЕНЬШЕ нуля: 18 и −42, и 18 БОЛЬШЕ −42 — ЗНАК ПЕРЕВЕРНУЛСЯ. Умножение на отрицательное меняет порядок на обратный, и правило о сохранении порядка здесь НЕ ДЕЙСТВУЕТ.
+−15 меньше −2; умножим оба на 5, и 5 больше нуля: −75 и −10, и −75 меньше −10 — порядок СОХРАНЁН. Это МОНОТОННОСТЬ по умножению, и она верна лишь для ПОЛОЖИТЕЛЬНОГО множителя.
+
+7 меньше 12, а 12 меньше 20; что отсюда следует о 7 и 20? 7 меньше 20, ибо 20 − 7 = 13, а 13 больше нуля.
+1 меньше 4, а 4 меньше 7; что отсюда следует о 1 и 7? 1 меньше 7, ибо 7 − 1 = 6, а 6 больше нуля.
+−15 меньше −8, а −8 меньше −2; что отсюда следует о −15 и −2? −15 меньше −2, ибо −2 − −15 = 13, а 13 больше нуля.
+−5 меньше −2, а −2 меньше 3; что отсюда следует о −5 и 3? −5 меньше 3, ибо 3 − −5 = 8, а 8 больше нуля.
+
+of two numbers −12 and 7 EXACTLY ONE of three holds: «−12 is less than 7», «−12 equals 7», «−12 is greater than 7». The first holds, for 7 − −12 = 19, and 19 is greater than zero; and so «−12 equals 7» is false, and «−12 is greater than 7» is false. This property is called TRICHOTOMY.
+−5 is less than −2, and −2 is less than 3; SO −5 is less than 3 — and it can be checked: 3 − −5 = 8, and 8 is greater than zero. This property of order is called TRANSITIVITY: a chain of comparisons yields a verdict on the ends.
+of two numbers 6 and 17 EXACTLY ONE of three holds: «6 is less than 17», «6 equals 17», «6 is greater than 17». The first holds, for 17 − 6 = 11, and 11 is greater than zero; and so «6 equals 17» is false, and «6 is greater than 17» is false. This property is called TRICHOTOMY.
+7 is less than 12, and 12 is less than 20; SO 7 is less than 20 — and it can be checked: 20 − 7 = 13, and 13 is greater than zero. This property of order is called TRANSITIVITY: a chain of comparisons yields a verdict on the ends.
+of two numbers 2 and 11 EXACTLY ONE of three holds: «2 is less than 11», «2 equals 11», «2 is greater than 11». The first holds, for 11 − 2 = 9, and 9 is greater than zero; and so «2 equals 11» is false, and «2 is greater than 11» is false. This property is called TRICHOTOMY.
+1 is less than 4, and 4 is less than 7; SO 1 is less than 7 — and it can be checked: 7 − 1 = 6, and 6 is greater than zero. This property of order is called TRANSITIVITY: a chain of comparisons yields a verdict on the ends.
+of two numbers −6 and 14 EXACTLY ONE of three holds: «−6 is less than 14», «−6 equals 14», «−6 is greater than 14». The first holds, for 14 − −6 = 20, and 20 is greater than zero; and so «−6 equals 14» is false, and «−6 is greater than 14» is false. This property is called TRICHOTOMY.
+−15 is less than −8, and −8 is less than −2; SO −15 is less than −2 — and it can be checked: −2 − −15 = 13, and 13 is greater than zero. This property of order is called TRANSITIVITY: a chain of comparisons yields a verdict on the ends.
+
+−12 is less than 7; add 4 to both: −8 and 11, and −8 is less than 11 — the order is KEPT, for the difference did not change: 11 − −8 = 19, as before. This property is called the MONOTONICITY of order under addition.
+3 is greater than −5, and THEREFORE «−5 is greater than 3» is false: both at once do not happen, for 3 − −5 = 8 and −5 − 3 = −8, and the two cannot be positive together. This property is called the ANTISYMMETRY of order.
+6 is less than 17; add −6 to both: 0 and 11, and 0 is less than 11 — the order is KEPT, for the difference did not change: 11 − 0 = 11, as before. This property is called the MONOTONICITY of order under addition.
+20 is greater than 7, and THEREFORE «7 is greater than 20» is false: both at once do not happen, for 20 − 7 = 13 and 7 − 20 = −13, and the two cannot be positive together. This property is called the ANTISYMMETRY of order.
+2 is less than 11; add −3 to both: −1 and 8, and −1 is less than 8 — the order is KEPT, for the difference did not change: 8 − −1 = 9, as before. This property is called the MONOTONICITY of order under addition.
+7 is greater than 1, and THEREFORE «1 is greater than 7» is false: both at once do not happen, for 7 − 1 = 6 and 1 − 7 = −6, and the two cannot be positive together. This property is called the ANTISYMMETRY of order.
+−6 is less than 14; add 7 to both: 1 and 21, and 1 is less than 21 — the order is KEPT, for the difference did not change: 21 − 1 = 20, as before. This property is called the MONOTONICITY of order under addition.
+−2 is greater than −15, and THEREFORE «−15 is greater than −2» is false: both at once do not happen, for −2 − −15 = 13 and −15 − −2 = −13, and the two cannot be positive together. This property is called the ANTISYMMETRY of order.
+
+−12 is less than 7; now multiply both by −2, and −2 is LESS than zero: 24 and −14, and 24 is GREATER than −14 — THE SIGN TURNED OVER. Multiplying by a negative reverses the order, and the rule about keeping it does NOT hold here.
+−5 is less than 3; multiply both by 4, and 4 is greater than zero: −20 and 12, and −20 is less than 12 — the order is KEPT. This is MONOTONICITY under multiplication, and it holds only for a POSITIVE multiplier.
+6 is less than 17; now multiply both by −5, and −5 is LESS than zero: −30 and −85, and −30 is GREATER than −85 — THE SIGN TURNED OVER. Multiplying by a negative reverses the order, and the rule about keeping it does NOT hold here.
+7 is less than 20; multiply both by 3, and 3 is greater than zero: 21 and 60, and 21 is less than 60 — the order is KEPT. This is MONOTONICITY under multiplication, and it holds only for a POSITIVE multiplier.
+2 is less than 11; now multiply both by −4, and −4 is LESS than zero: −8 and −44, and −8 is GREATER than −44 — THE SIGN TURNED OVER. Multiplying by a negative reverses the order, and the rule about keeping it does NOT hold here.
+1 is less than 7; multiply both by 2, and 2 is greater than zero: 2 and 14, and 2 is less than 14 — the order is KEPT. This is MONOTONICITY under multiplication, and it holds only for a POSITIVE multiplier.
+−6 is less than 14; now multiply both by −3, and −3 is LESS than zero: 18 and −42, and 18 is GREATER than −42 — THE SIGN TURNED OVER. Multiplying by a negative reverses the order, and the rule about keeping it does NOT hold here.
+−15 is less than −2; multiply both by 5, and 5 is greater than zero: −75 and −10, and −75 is less than −10 — the order is KEPT. This is MONOTONICITY under multiplication, and it holds only for a POSITIVE multiplier.
+
+7 is less than 12, and 12 is less than 20; what follows about 7 and 20? 7 is less than 20, for 20 − 7 = 13, and 13 is greater than zero.
+1 is less than 4, and 4 is less than 7; what follows about 1 and 7? 1 is less than 7, for 7 − 1 = 6, and 6 is greater than zero.
+−15 is less than −8, and −8 is less than −2; what follows about −15 and −2? −15 is less than −2, for −2 − −15 = 13, and 13 is greater than zero.
+−5 is less than −2, and −2 is less than 3; what follows about −5 and 3? −5 is less than 3, for 3 − −5 = 8, and 8 is greater than zero.
+
+о двух числах 7 и 20 верно РОВНО ОДНО из трёх: «7 меньше 20», «7 равно 20», «7 больше 20». Верно первое, ибо 20 − 7 = 13, а 13 больше нуля; и потому «7 равно 20» ложно, и «7 больше 20» ложно. Это свойство зовётся ТРИХОТОМИЕЙ.
+−3 меньше 2, и 2 меньше 8; ЗНАЧИТ, −3 меньше 8 — и проверить можно: 8 − −3 = 11, а 11 больше нуля. Это свойство порядка зовётся ТРАНЗИТИВНОСТЬЮ: цепь сравнений даёт вывод о крайних.
+о двух числах 1 и 7 верно РОВНО ОДНО из трёх: «1 меньше 7», «1 равно 7», «1 больше 7». Верно первое, ибо 7 − 1 = 6, а 6 больше нуля; и потому «1 равно 7» ложно, и «1 больше 7» ложно. Это свойство зовётся ТРИХОТОМИЕЙ.
+11 меньше 19, и 19 меньше 28; ЗНАЧИТ, 11 меньше 28 — и проверить можно: 28 − 11 = 17, а 17 больше нуля. Это свойство порядка зовётся ТРАНЗИТИВНОСТЬЮ: цепь сравнений даёт вывод о крайних.
+о двух числах −15 и −2 верно РОВНО ОДНО из трёх: «−15 меньше −2», «−15 равно −2», «−15 больше −2». Верно первое, ибо −2 − −15 = 13, а 13 больше нуля; и потому «−15 равно −2» ложно, и «−15 больше −2» ложно. Это свойство зовётся ТРИХОТОМИЕЙ.
+5 меньше 8, и 8 меньше 13; ЗНАЧИТ, 5 меньше 13 — и проверить можно: 13 − 5 = 8, а 8 больше нуля. Это свойство порядка зовётся ТРАНЗИТИВНОСТЬЮ: цепь сравнений даёт вывод о крайних.
+о двух числах −5 и 3 верно РОВНО ОДНО из трёх: «−5 меньше 3», «−5 равно 3», «−5 больше 3». Верно первое, ибо 3 − −5 = 8, а 8 больше нуля; и потому «−5 равно 3» ложно, и «−5 больше 3» ложно. Это свойство зовётся ТРИХОТОМИЕЙ.
+−1 меньше 3, и 3 меньше 10; ЗНАЧИТ, −1 меньше 10 — и проверить можно: 10 − −1 = 11, а 11 больше нуля. Это свойство порядка зовётся ТРАНЗИТИВНОСТЬЮ: цепь сравнений даёт вывод о крайних.
+
+7 меньше 20; прибавим к обоим 7: 14 и 27, и 14 меньше 27 — порядок СОХРАНЁН, ибо разность не изменилась: 27 − 14 = 13, как и было. Это свойство зовётся МОНОТОННОСТЬЮ порядка по сложению.
+8 больше −3, и ПОТОМУ «−3 больше 8» ложно: двух сразу не бывает, ибо 8 − −3 = 11 и −3 − 8 = −11, а оба разом положительными быть не могут. Это свойство зовётся АНТИСИММЕТРИЕЙ порядка.
+1 меньше 7; прибавим к обоим 4: 5 и 11, и 5 меньше 11 — порядок СОХРАНЁН, ибо разность не изменилась: 11 − 5 = 6, как и было. Это свойство зовётся МОНОТОННОСТЬЮ порядка по сложению.
+28 больше 11, и ПОТОМУ «11 больше 28» ложно: двух сразу не бывает, ибо 28 − 11 = 17 и 11 − 28 = −17, а оба разом положительными быть не могут. Это свойство зовётся АНТИСИММЕТРИЕЙ порядка.
+−15 меньше −2; прибавим к обоим −6: −21 и −8, и −21 меньше −8 — порядок СОХРАНЁН, ибо разность не изменилась: −8 − −21 = 13, как и было. Это свойство зовётся МОНОТОННОСТЬЮ порядка по сложению.
+13 больше 5, и ПОТОМУ «5 больше 13» ложно: двух сразу не бывает, ибо 13 − 5 = 8 и 5 − 13 = −8, а оба разом положительными быть не могут. Это свойство зовётся АНТИСИММЕТРИЕЙ порядка.
+−5 меньше 3; прибавим к обоим −3: −8 и 0, и −8 меньше 0 — порядок СОХРАНЁН, ибо разность не изменилась: 0 − −8 = 8, как и было. Это свойство зовётся МОНОТОННОСТЬЮ порядка по сложению.
+10 больше −1, и ПОТОМУ «−1 больше 10» ложно: двух сразу не бывает, ибо 10 − −1 = 11 и −1 − 10 = −11, а оба разом положительными быть не могут. Это свойство зовётся АНТИСИММЕТРИЕЙ порядка.
+
+7 меньше 20; а теперь умножим оба на −3, и −3 МЕНЬШЕ нуля: −21 и −60, и −21 БОЛЬШЕ −60 — ЗНАК ПЕРЕВЕРНУЛСЯ. Умножение на отрицательное меняет порядок на обратный, и правило о сохранении порядка здесь НЕ ДЕЙСТВУЕТ.
+−3 меньше 8; умножим оба на 3, и 3 больше нуля: −9 и 24, и −9 меньше 24 — порядок СОХРАНЁН. Это МОНОТОННОСТЬ по умножению, и она верна лишь для ПОЛОЖИТЕЛЬНОГО множителя.
+1 меньше 7; а теперь умножим оба на −2, и −2 МЕНЬШЕ нуля: −2 и −14, и −2 БОЛЬШЕ −14 — ЗНАК ПЕРЕВЕРНУЛСЯ. Умножение на отрицательное меняет порядок на обратный, и правило о сохранении порядка здесь НЕ ДЕЙСТВУЕТ.
+11 меньше 28; умножим оба на 2, и 2 больше нуля: 22 и 56, и 22 меньше 56 — порядок СОХРАНЁН. Это МОНОТОННОСТЬ по умножению, и она верна лишь для ПОЛОЖИТЕЛЬНОГО множителя.
+−15 меньше −2; а теперь умножим оба на −5, и −5 МЕНЬШЕ нуля: 75 и 10, и 75 БОЛЬШЕ 10 — ЗНАК ПЕРЕВЕРНУЛСЯ. Умножение на отрицательное меняет порядок на обратный, и правило о сохранении порядка здесь НЕ ДЕЙСТВУЕТ.
+5 меньше 13; умножим оба на 5, и 5 больше нуля: 25 и 65, и 25 меньше 65 — порядок СОХРАНЁН. Это МОНОТОННОСТЬ по умножению, и она верна лишь для ПОЛОЖИТЕЛЬНОГО множителя.
+−5 меньше 3; а теперь умножим оба на −4, и −4 МЕНЬШЕ нуля: 20 и −12, и 20 БОЛЬШЕ −12 — ЗНАК ПЕРЕВЕРНУЛСЯ. Умножение на отрицательное меняет порядок на обратный, и правило о сохранении порядка здесь НЕ ДЕЙСТВУЕТ.
+−1 меньше 10; умножим оба на 4, и 4 больше нуля: −4 и 40, и −4 меньше 40 — порядок СОХРАНЁН. Это МОНОТОННОСТЬ по умножению, и она верна лишь для ПОЛОЖИТЕЛЬНОГО множителя.
+
+−9 меньше −4, а −4 меньше 1; что отсюда следует о −9 и 1? −9 меньше 1, ибо 1 − −9 = 10, а 10 больше нуля.
+4 меньше 15, а 15 меньше 23; что отсюда следует о 4 и 23? 4 меньше 23, ибо 23 − 4 = 19, а 19 больше нуля.
+3 меньше 5, а 5 меньше 9; что отсюда следует о 3 и 9? 3 меньше 9, ибо 9 − 3 = 6, а 6 больше нуля.
+−20 меньше −11, а −11 меньше −4; что отсюда следует о −20 и −4? −20 меньше −4, ибо −4 − −20 = 16, а 16 больше нуля.
+
+of two numbers 7 and 20 EXACTLY ONE of three holds: «7 is less than 20», «7 equals 20», «7 is greater than 20». The first holds, for 20 − 7 = 13, and 13 is greater than zero; and so «7 equals 20» is false, and «7 is greater than 20» is false. This property is called TRICHOTOMY.
+−3 is less than 2, and 2 is less than 8; SO −3 is less than 8 — and it can be checked: 8 − −3 = 11, and 11 is greater than zero. This property of order is called TRANSITIVITY: a chain of comparisons yields a verdict on the ends.
+of two numbers 1 and 7 EXACTLY ONE of three holds: «1 is less than 7», «1 equals 7», «1 is greater than 7». The first holds, for 7 − 1 = 6, and 6 is greater than zero; and so «1 equals 7» is false, and «1 is greater than 7» is false. This property is called TRICHOTOMY.
+11 is less than 19, and 19 is less than 28; SO 11 is less than 28 — and it can be checked: 28 − 11 = 17, and 17 is greater than zero. This property of order is called TRANSITIVITY: a chain of comparisons yields a verdict on the ends.
+of two numbers −15 and −2 EXACTLY ONE of three holds: «−15 is less than −2», «−15 equals −2», «−15 is greater than −2». The first holds, for −2 − −15 = 13, and 13 is greater than zero; and so «−15 equals −2» is false, and «−15 is greater than −2» is false. This property is called TRICHOTOMY.
+5 is less than 8, and 8 is less than 13; SO 5 is less than 13 — and it can be checked: 13 − 5 = 8, and 8 is greater than zero. This property of order is called TRANSITIVITY: a chain of comparisons yields a verdict on the ends.
+of two numbers −5 and 3 EXACTLY ONE of three holds: «−5 is less than 3», «−5 equals 3», «−5 is greater than 3». The first holds, for 3 − −5 = 8, and 8 is greater than zero; and so «−5 equals 3» is false, and «−5 is greater than 3» is false. This property is called TRICHOTOMY.
+−1 is less than 3, and 3 is less than 10; SO −1 is less than 10 — and it can be checked: 10 − −1 = 11, and 11 is greater than zero. This property of order is called TRANSITIVITY: a chain of comparisons yields a verdict on the ends.
+
+7 is less than 20; add 7 to both: 14 and 27, and 14 is less than 27 — the order is KEPT, for the difference did not change: 27 − 14 = 13, as before. This property is called the MONOTONICITY of order under addition.
+8 is greater than −3, and THEREFORE «−3 is greater than 8» is false: both at once do not happen, for 8 − −3 = 11 and −3 − 8 = −11, and the two cannot be positive together. This property is called the ANTISYMMETRY of order.
+1 is less than 7; add 4 to both: 5 and 11, and 5 is less than 11 — the order is KEPT, for the difference did not change: 11 − 5 = 6, as before. This property is called the MONOTONICITY of order under addition.
+28 is greater than 11, and THEREFORE «11 is greater than 28» is false: both at once do not happen, for 28 − 11 = 17 and 11 − 28 = −17, and the two cannot be positive together. This property is called the ANTISYMMETRY of order.
+−15 is less than −2; add −6 to both: −21 and −8, and −21 is less than −8 — the order is KEPT, for the difference did not change: −8 − −21 = 13, as before. This property is called the MONOTONICITY of order under addition.
+13 is greater than 5, and THEREFORE «5 is greater than 13» is false: both at once do not happen, for 13 − 5 = 8 and 5 − 13 = −8, and the two cannot be positive together. This property is called the ANTISYMMETRY of order.
+−5 is less than 3; add −3 to both: −8 and 0, and −8 is less than 0 — the order is KEPT, for the difference did not change: 0 − −8 = 8, as before. This property is called the MONOTONICITY of order under addition.
+10 is greater than −1, and THEREFORE «−1 is greater than 10» is false: both at once do not happen, for 10 − −1 = 11 and −1 − 10 = −11, and the two cannot be positive together. This property is called the ANTISYMMETRY of order.
+
+7 is less than 20; now multiply both by −3, and −3 is LESS than zero: −21 and −60, and −21 is GREATER than −60 — THE SIGN TURNED OVER. Multiplying by a negative reverses the order, and the rule about keeping it does NOT hold here.
+−3 is less than 8; multiply both by 3, and 3 is greater than zero: −9 and 24, and −9 is less than 24 — the order is KEPT. This is MONOTONICITY under multiplication, and it holds only for a POSITIVE multiplier.
+1 is less than 7; now multiply both by −2, and −2 is LESS than zero: −2 and −14, and −2 is GREATER than −14 — THE SIGN TURNED OVER. Multiplying by a negative reverses the order, and the rule about keeping it does NOT hold here.
+11 is less than 28; multiply both by 2, and 2 is greater than zero: 22 and 56, and 22 is less than 56 — the order is KEPT. This is MONOTONICITY under multiplication, and it holds only for a POSITIVE multiplier.
+−15 is less than −2; now multiply both by −5, and −5 is LESS than zero: 75 and 10, and 75 is GREATER than 10 — THE SIGN TURNED OVER. Multiplying by a negative reverses the order, and the rule about keeping it does NOT hold here.
+5 is less than 13; multiply both by 5, and 5 is greater than zero: 25 and 65, and 25 is less than 65 — the order is KEPT. This is MONOTONICITY under multiplication, and it holds only for a POSITIVE multiplier.
+−5 is less than 3; now multiply both by −4, and −4 is LESS than zero: 20 and −12, and 20 is GREATER than −12 — THE SIGN TURNED OVER. Multiplying by a negative reverses the order, and the rule about keeping it does NOT hold here.
+−1 is less than 10; multiply both by 4, and 4 is greater than zero: −4 and 40, and −4 is less than 40 — the order is KEPT. This is MONOTONICITY under multiplication, and it holds only for a POSITIVE multiplier.
+
+−9 is less than −4, and −4 is less than 1; what follows about −9 and 1? −9 is less than 1, for 1 − −9 = 10, and 10 is greater than zero.
+4 is less than 15, and 15 is less than 23; what follows about 4 and 23? 4 is less than 23, for 23 − 4 = 19, and 19 is greater than zero.
+3 is less than 5, and 5 is less than 9; what follows about 3 and 9? 3 is less than 9, for 9 − 3 = 6, and 6 is greater than zero.
+−20 is less than −11, and −11 is less than −4; what follows about −20 and −4? −20 is less than −4, for −4 − −20 = 16, and 16 is greater than zero.
+
+о двух числах 5 и 13 верно РОВНО ОДНО из трёх: «5 меньше 13», «5 равно 13», «5 больше 13». Верно первое, ибо 13 − 5 = 8, а 8 больше нуля; и потому «5 равно 13» ложно, и «5 больше 13» ложно. Это свойство зовётся ТРИХОТОМИЕЙ.
+−20 меньше −11, и −11 меньше −4; ЗНАЧИТ, −20 меньше −4 — и проверить можно: −4 − −20 = 16, а 16 больше нуля. Это свойство порядка зовётся ТРАНЗИТИВНОСТЬЮ: цепь сравнений даёт вывод о крайних.
+о двух числах 11 и 28 верно РОВНО ОДНО из трёх: «11 меньше 28», «11 равно 28», «11 больше 28». Верно первое, ибо 28 − 11 = 17, а 17 больше нуля; и потому «11 равно 28» ложно, и «11 больше 28» ложно. Это свойство зовётся ТРИХОТОМИЕЙ.
+3 меньше 5, и 5 меньше 9; ЗНАЧИТ, 3 меньше 9 — и проверить можно: 9 − 3 = 6, а 6 больше нуля. Это свойство порядка зовётся ТРАНЗИТИВНОСТЬЮ: цепь сравнений даёт вывод о крайних.
+о двух числах −3 и 8 верно РОВНО ОДНО из трёх: «−3 меньше 8», «−3 равно 8», «−3 больше 8». Верно первое, ибо 8 − −3 = 11, а 11 больше нуля; и потому «−3 равно 8» ложно, и «−3 больше 8» ложно. Это свойство зовётся ТРИХОТОМИЕЙ.
+4 меньше 15, и 15 меньше 23; ЗНАЧИТ, 4 меньше 23 — и проверить можно: 23 − 4 = 19, а 19 больше нуля. Это свойство порядка зовётся ТРАНЗИТИВНОСТЬЮ: цепь сравнений даёт вывод о крайних.
+о двух числах −1 и 10 верно РОВНО ОДНО из трёх: «−1 меньше 10», «−1 равно 10», «−1 больше 10». Верно первое, ибо 10 − −1 = 11, а 11 больше нуля; и потому «−1 равно 10» ложно, и «−1 больше 10» ложно. Это свойство зовётся ТРИХОТОМИЕЙ.
+−9 меньше −4, и −4 меньше 1; ЗНАЧИТ, −9 меньше 1 — и проверить можно: 1 − −9 = 10, а 10 больше нуля. Это свойство порядка зовётся ТРАНЗИТИВНОСТЬЮ: цепь сравнений даёт вывод о крайних.
+
+5 меньше 13; прибавим к обоим −6: −1 и 7, и −1 меньше 7 — порядок СОХРАНЁН, ибо разность не изменилась: 7 − −1 = 8, как и было. Это свойство зовётся МОНОТОННОСТЬЮ порядка по сложению.
+−4 больше −20, и ПОТОМУ «−20 больше −4» ложно: двух сразу не бывает, ибо −4 − −20 = 16 и −20 − −4 = −16, а оба разом положительными быть не могут. Это свойство зовётся АНТИСИММЕТРИЕЙ порядка.
+11 меньше 28; прибавим к обоим 4: 15 и 32, и 15 меньше 32 — порядок СОХРАНЁН, ибо разность не изменилась: 32 − 15 = 17, как и было. Это свойство зовётся МОНОТОННОСТЬЮ порядка по сложению.
+9 больше 3, и ПОТОМУ «3 больше 9» ложно: двух сразу не бывает, ибо 9 − 3 = 6 и 3 − 9 = −6, а оба разом положительными быть не могут. Это свойство зовётся АНТИСИММЕТРИЕЙ порядка.
+−3 меньше 8; прибавим к обоим 7: 4 и 15, и 4 меньше 15 — порядок СОХРАНЁН, ибо разность не изменилась: 15 − 4 = 11, как и было. Это свойство зовётся МОНОТОННОСТЬЮ порядка по сложению.
+23 больше 4, и ПОТОМУ «4 больше 23» ложно: двух сразу не бывает, ибо 23 − 4 = 19 и 4 − 23 = −19, а оба разом положительными быть не могут. Это свойство зовётся АНТИСИММЕТРИЕЙ порядка.
+−1 меньше 10; прибавим к обоим −3: −4 и 7, и −4 меньше 7 — порядок СОХРАНЁН, ибо разность не изменилась: 7 − −4 = 11, как и было. Это свойство зовётся МОНОТОННОСТЬЮ порядка по сложению.
+1 больше −9, и ПОТОМУ «−9 больше 1» ложно: двух сразу не бывает, ибо 1 − −9 = 10 и −9 − 1 = −10, а оба разом положительными быть не могут. Это свойство зовётся АНТИСИММЕТРИЕЙ порядка.
+
+5 меньше 13; а теперь умножим оба на −5, и −5 МЕНЬШЕ нуля: −25 и −65, и −25 БОЛЬШЕ −65 — ЗНАК ПЕРЕВЕРНУЛСЯ. Умножение на отрицательное меняет порядок на обратный, и правило о сохранении порядка здесь НЕ ДЕЙСТВУЕТ.
+−20 меньше −4; умножим оба на 2, и 2 больше нуля: −40 и −8, и −40 меньше −8 — порядок СОХРАНЁН. Это МОНОТОННОСТЬ по умножению, и она верна лишь для ПОЛОЖИТЕЛЬНОГО множителя.
+11 меньше 28; а теперь умножим оба на −2, и −2 МЕНЬШЕ нуля: −22 и −56, и −22 БОЛЬШЕ −56 — ЗНАК ПЕРЕВЕРНУЛСЯ. Умножение на отрицательное меняет порядок на обратный, и правило о сохранении порядка здесь НЕ ДЕЙСТВУЕТ.
+3 меньше 9; умножим оба на 3, и 3 больше нуля: 9 и 27, и 9 меньше 27 — порядок СОХРАНЁН. Это МОНОТОННОСТЬ по умножению, и она верна лишь для ПОЛОЖИТЕЛЬНОГО множителя.
+−3 меньше 8; а теперь умножим оба на −3, и −3 МЕНЬШЕ нуля: 9 и −24, и 9 БОЛЬШЕ −24 — ЗНАК ПЕРЕВЕРНУЛСЯ. Умножение на отрицательное меняет порядок на обратный, и правило о сохранении порядка здесь НЕ ДЕЙСТВУЕТ.
+4 меньше 23; умножим оба на 4, и 4 больше нуля: 16 и 92, и 16 меньше 92 — порядок СОХРАНЁН. Это МОНОТОННОСТЬ по умножению, и она верна лишь для ПОЛОЖИТЕЛЬНОГО множителя.
+−1 меньше 10; а теперь умножим оба на −4, и −4 МЕНЬШЕ нуля: 4 и −40, и 4 БОЛЬШЕ −40 — ЗНАК ПЕРЕВЕРНУЛСЯ. Умножение на отрицательное меняет порядок на обратный, и правило о сохранении порядка здесь НЕ ДЕЙСТВУЕТ.
+−9 меньше 1; умножим оба на 5, и 5 больше нуля: −45 и 5, и −45 меньше 5 — порядок СОХРАНЁН. Это МОНОТОННОСТЬ по умножению, и она верна лишь для ПОЛОЖИТЕЛЬНОГО множителя.
+
+6 меньше 9, а 9 меньше 17; что отсюда следует о 6 и 17? 6 меньше 17, ибо 17 − 6 = 11, а 11 больше нуля.
+−12 меньше 0, а 0 меньше 7; что отсюда следует о −12 и 7? −12 меньше 7, ибо 7 − −12 = 19, а 19 больше нуля.
+−6 меньше 5, а 5 меньше 14; что отсюда следует о −6 и 14? −6 меньше 14, ибо 14 − −6 = 20, а 20 больше нуля.
+2 меньше 6, а 6 меньше 11; что отсюда следует о 2 и 11? 2 меньше 11, ибо 11 − 2 = 9, а 9 больше нуля.
+
+of two numbers 5 and 13 EXACTLY ONE of three holds: «5 is less than 13», «5 equals 13», «5 is greater than 13». The first holds, for 13 − 5 = 8, and 8 is greater than zero; and so «5 equals 13» is false, and «5 is greater than 13» is false. This property is called TRICHOTOMY.
+−20 is less than −11, and −11 is less than −4; SO −20 is less than −4 — and it can be checked: −4 − −20 = 16, and 16 is greater than zero. This property of order is called TRANSITIVITY: a chain of comparisons yields a verdict on the ends.
+of two numbers 11 and 28 EXACTLY ONE of three holds: «11 is less than 28», «11 equals 28», «11 is greater than 28». The first holds, for 28 − 11 = 17, and 17 is greater than zero; and so «11 equals 28» is false, and «11 is greater than 28» is false. This property is called TRICHOTOMY.
+3 is less than 5, and 5 is less than 9; SO 3 is less than 9 — and it can be checked: 9 − 3 = 6, and 6 is greater than zero. This property of order is called TRANSITIVITY: a chain of comparisons yields a verdict on the ends.
+of two numbers −3 and 8 EXACTLY ONE of three holds: «−3 is less than 8», «−3 equals 8», «−3 is greater than 8». The first holds, for 8 − −3 = 11, and 11 is greater than zero; and so «−3 equals 8» is false, and «−3 is greater than 8» is false. This property is called TRICHOTOMY.
+4 is less than 15, and 15 is less than 23; SO 4 is less than 23 — and it can be checked: 23 − 4 = 19, and 19 is greater than zero. This property of order is called TRANSITIVITY: a chain of comparisons yields a verdict on the ends.
+of two numbers −1 and 10 EXACTLY ONE of three holds: «−1 is less than 10», «−1 equals 10», «−1 is greater than 10». The first holds, for 10 − −1 = 11, and 11 is greater than zero; and so «−1 equals 10» is false, and «−1 is greater than 10» is false. This property is called TRICHOTOMY.
+−9 is less than −4, and −4 is less than 1; SO −9 is less than 1 — and it can be checked: 1 − −9 = 10, and 10 is greater than zero. This property of order is called TRANSITIVITY: a chain of comparisons yields a verdict on the ends.
+
+5 is less than 13; add −6 to both: −1 and 7, and −1 is less than 7 — the order is KEPT, for the difference did not change: 7 − −1 = 8, as before. This property is called the MONOTONICITY of order under addition.
+−4 is greater than −20, and THEREFORE «−20 is greater than −4» is false: both at once do not happen, for −4 − −20 = 16 and −20 − −4 = −16, and the two cannot be positive together. This property is called the ANTISYMMETRY of order.
+11 is less than 28; add 4 to both: 15 and 32, and 15 is less than 32 — the order is KEPT, for the difference did not change: 32 − 15 = 17, as before. This property is called the MONOTONICITY of order under addition.
+9 is greater than 3, and THEREFORE «3 is greater than 9» is false: both at once do not happen, for 9 − 3 = 6 and 3 − 9 = −6, and the two cannot be positive together. This property is called the ANTISYMMETRY of order.
+−3 is less than 8; add 7 to both: 4 and 15, and 4 is less than 15 — the order is KEPT, for the difference did not change: 15 − 4 = 11, as before. This property is called the MONOTONICITY of order under addition.
+23 is greater than 4, and THEREFORE «4 is greater than 23» is false: both at once do not happen, for 23 − 4 = 19 and 4 − 23 = −19, and the two cannot be positive together. This property is called the ANTISYMMETRY of order.
+−1 is less than 10; add −3 to both: −4 and 7, and −4 is less than 7 — the order is KEPT, for the difference did not change: 7 − −4 = 11, as before. This property is called the MONOTONICITY of order under addition.
+1 is greater than −9, and THEREFORE «−9 is greater than 1» is false: both at once do not happen, for 1 − −9 = 10 and −9 − 1 = −10, and the two cannot be positive together. This property is called the ANTISYMMETRY of order.
+
+5 is less than 13; now multiply both by −5, and −5 is LESS than zero: −25 and −65, and −25 is GREATER than −65 — THE SIGN TURNED OVER. Multiplying by a negative reverses the order, and the rule about keeping it does NOT hold here.
+−20 is less than −4; multiply both by 2, and 2 is greater than zero: −40 and −8, and −40 is less than −8 — the order is KEPT. This is MONOTONICITY under multiplication, and it holds only for a POSITIVE multiplier.
+11 is less than 28; now multiply both by −2, and −2 is LESS than zero: −22 and −56, and −22 is GREATER than −56 — THE SIGN TURNED OVER. Multiplying by a negative reverses the order, and the rule about keeping it does NOT hold here.
+3 is less than 9; multiply both by 3, and 3 is greater than zero: 9 and 27, and 9 is less than 27 — the order is KEPT. This is MONOTONICITY under multiplication, and it holds only for a POSITIVE multiplier.
+−3 is less than 8; now multiply both by −3, and −3 is LESS than zero: 9 and −24, and 9 is GREATER than −24 — THE SIGN TURNED OVER. Multiplying by a negative reverses the order, and the rule about keeping it does NOT hold here.
+4 is less than 23; multiply both by 4, and 4 is greater than zero: 16 and 92, and 16 is less than 92 — the order is KEPT. This is MONOTONICITY under multiplication, and it holds only for a POSITIVE multiplier.
+−1 is less than 10; now multiply both by −4, and −4 is LESS than zero: 4 and −40, and 4 is GREATER than −40 — THE SIGN TURNED OVER. Multiplying by a negative reverses the order, and the rule about keeping it does NOT hold here.
+−9 is less than 1; multiply both by 5, and 5 is greater than zero: −45 and 5, and −45 is less than 5 — the order is KEPT. This is MONOTONICITY under multiplication, and it holds only for a POSITIVE multiplier.
+
+6 is less than 9, and 9 is less than 17; what follows about 6 and 17? 6 is less than 17, for 17 − 6 = 11, and 11 is greater than zero.
+−12 is less than 0, and 0 is less than 7; what follows about −12 and 7? −12 is less than 7, for 7 − −12 = 19, and 19 is greater than zero.
+−6 is less than 5, and 5 is less than 14; what follows about −6 and 14? −6 is less than 14, for 14 − −6 = 20, and 20 is greater than zero.
+2 is less than 6, and 6 is less than 11; what follows about 2 and 11? 2 is less than 11, for 11 − 2 = 9, and 9 is greater than zero.
+
+о двух числах −9 и 1 верно РОВНО ОДНО из трёх: «−9 меньше 1», «−9 равно 1», «−9 больше 1». Верно первое, ибо 1 − −9 = 10, а 10 больше нуля; и потому «−9 равно 1» ложно, и «−9 больше 1» ложно. Это свойство зовётся ТРИХОТОМИЕЙ.
+−7 меньше −1, и −1 меньше 6; ЗНАЧИТ, −7 меньше 6 — и проверить можно: 6 − −7 = 13, а 13 больше нуля. Это свойство порядка зовётся ТРАНЗИТИВНОСТЬЮ: цепь сравнений даёт вывод о крайних.
+о двух числах −20 и −4 верно РОВНО ОДНО из трёх: «−20 меньше −4», «−20 равно −4», «−20 больше −4». Верно первое, ибо −4 − −20 = 16, а 16 больше нуля; и потому «−20 равно −4» ложно, и «−20 больше −4» ложно. Это свойство зовётся ТРИХОТОМИЕЙ.
+−18 меньше −9, и −9 меньше 0; ЗНАЧИТ, −18 меньше 0 — и проверить можно: 0 − −18 = 18, а 18 больше нуля. Это свойство порядка зовётся ТРАНЗИТИВНОСТЬЮ: цепь сравнений даёт вывод о крайних.
+о двух числах 3 и 9 верно РОВНО ОДНО из трёх: «3 меньше 9», «3 равно 9», «3 больше 9». Верно первое, ибо 9 − 3 = 6, а 6 больше нуля; и потому «3 равно 9» ложно, и «3 больше 9» ложно. Это свойство зовётся ТРИХОТОМИЕЙ.
+10 меньше 14, и 14 меньше 21; ЗНАЧИТ, 10 меньше 21 — и проверить можно: 21 − 10 = 11, а 11 больше нуля. Это свойство порядка зовётся ТРАНЗИТИВНОСТЬЮ: цепь сравнений даёт вывод о крайних.
+о двух числах 4 и 23 верно РОВНО ОДНО из трёх: «4 меньше 23», «4 равно 23», «4 больше 23». Верно первое, ибо 23 − 4 = 19, а 19 больше нуля; и потому «4 равно 23» ложно, и «4 больше 23» ложно. Это свойство зовётся ТРИХОТОМИЕЙ.
+8 меньше 16, и 16 меньше 25; ЗНАЧИТ, 8 меньше 25 — и проверить можно: 25 − 8 = 17, а 17 больше нуля. Это свойство порядка зовётся ТРАНЗИТИВНОСТЬЮ: цепь сравнений даёт вывод о крайних.
+
+−9 меньше 1; прибавим к обоим −6: −15 и −5, и −15 меньше −5 — порядок СОХРАНЁН, ибо разность не изменилась: −5 − −15 = 10, как и было. Это свойство зовётся МОНОТОННОСТЬЮ порядка по сложению.
+6 больше −7, и ПОТОМУ «−7 больше 6» ложно: двух сразу не бывает, ибо 6 − −7 = 13 и −7 − 6 = −13, а оба разом положительными быть не могут. Это свойство зовётся АНТИСИММЕТРИЕЙ порядка.
+−20 меньше −4; прибавим к обоим 4: −16 и 0, и −16 меньше 0 — порядок СОХРАНЁН, ибо разность не изменилась: 0 − −16 = 16, как и было. Это свойство зовётся МОНОТОННОСТЬЮ порядка по сложению.
+0 больше −18, и ПОТОМУ «−18 больше 0» ложно: двух сразу не бывает, ибо 0 − −18 = 18 и −18 − 0 = −18, а оба разом положительными быть не могут. Это свойство зовётся АНТИСИММЕТРИЕЙ порядка.
+3 меньше 9; прибавим к обоим 7: 10 и 16, и 10 меньше 16 — порядок СОХРАНЁН, ибо разность не изменилась: 16 − 10 = 6, как и было. Это свойство зовётся МОНОТОННОСТЬЮ порядка по сложению.
+21 больше 10, и ПОТОМУ «10 больше 21» ложно: двух сразу не бывает, ибо 21 − 10 = 11 и 10 − 21 = −11, а оба разом положительными быть не могут. Это свойство зовётся АНТИСИММЕТРИЕЙ порядка.
+4 меньше 23; прибавим к обоим −3: 1 и 20, и 1 меньше 20 — порядок СОХРАНЁН, ибо разность не изменилась: 20 − 1 = 19, как и было. Это свойство зовётся МОНОТОННОСТЬЮ порядка по сложению.
+25 больше 8, и ПОТОМУ «8 больше 25» ложно: двух сразу не бывает, ибо 25 − 8 = 17 и 8 − 25 = −17, а оба разом положительными быть не могут. Это свойство зовётся АНТИСИММЕТРИЕЙ порядка.
+
+−9 меньше 1; а теперь умножим оба на −5, и −5 МЕНЬШЕ нуля: 45 и −5, и 45 БОЛЬШЕ −5 — ЗНАК ПЕРЕВЕРНУЛСЯ. Умножение на отрицательное меняет порядок на обратный, и правило о сохранении порядка здесь НЕ ДЕЙСТВУЕТ.
+−7 меньше 6; умножим оба на 4, и 4 больше нуля: −28 и 24, и −28 меньше 24 — порядок СОХРАНЁН. Это МОНОТОННОСТЬ по умножению, и она верна лишь для ПОЛОЖИТЕЛЬНОГО множителя.
+−20 меньше −4; а теперь умножим оба на −2, и −2 МЕНЬШЕ нуля: 40 и 8, и 40 БОЛЬШЕ 8 — ЗНАК ПЕРЕВЕРНУЛСЯ. Умножение на отрицательное меняет порядок на обратный, и правило о сохранении порядка здесь НЕ ДЕЙСТВУЕТ.
+−18 меньше 0; умножим оба на 5, и 5 больше нуля: −90 и 0, и −90 меньше 0 — порядок СОХРАНЁН. Это МОНОТОННОСТЬ по умножению, и она верна лишь для ПОЛОЖИТЕЛЬНОГО множителя.
+3 меньше 9; а теперь умножим оба на −3, и −3 МЕНЬШЕ нуля: −9 и −27, и −9 БОЛЬШЕ −27 — ЗНАК ПЕРЕВЕРНУЛСЯ. Умножение на отрицательное меняет порядок на обратный, и правило о сохранении порядка здесь НЕ ДЕЙСТВУЕТ.
+10 меньше 21; умножим оба на 2, и 2 больше нуля: 20 и 42, и 20 меньше 42 — порядок СОХРАНЁН. Это МОНОТОННОСТЬ по умножению, и она верна лишь для ПОЛОЖИТЕЛЬНОГО множителя.
+4 меньше 23; а теперь умножим оба на −4, и −4 МЕНЬШЕ нуля: −16 и −92, и −16 БОЛЬШЕ −92 — ЗНАК ПЕРЕВЕРНУЛСЯ. Умножение на отрицательное меняет порядок на обратный, и правило о сохранении порядка здесь НЕ ДЕЙСТВУЕТ.
+8 меньше 25; умножим оба на 3, и 3 больше нуля: 24 и 75, и 24 меньше 75 — порядок СОХРАНЁН. Это МОНОТОННОСТЬ по умножению, и она верна лишь для ПОЛОЖИТЕЛЬНОГО множителя.
+
+5 меньше 8, а 8 меньше 13; что отсюда следует о 5 и 13? 5 меньше 13, ибо 13 − 5 = 8, а 8 больше нуля.
+11 меньше 19, а 19 меньше 28; что отсюда следует о 11 и 28? 11 меньше 28, ибо 28 − 11 = 17, а 17 больше нуля.
+−3 меньше 2, а 2 меньше 8; что отсюда следует о −3 и 8? −3 меньше 8, ибо 8 − −3 = 11, а 11 больше нуля.
+−1 меньше 3, а 3 меньше 10; что отсюда следует о −1 и 10? −1 меньше 10, ибо 10 − −1 = 11, а 11 больше нуля.
+
+of two numbers −9 and 1 EXACTLY ONE of three holds: «−9 is less than 1», «−9 equals 1», «−9 is greater than 1». The first holds, for 1 − −9 = 10, and 10 is greater than zero; and so «−9 equals 1» is false, and «−9 is greater than 1» is false. This property is called TRICHOTOMY.
+−7 is less than −1, and −1 is less than 6; SO −7 is less than 6 — and it can be checked: 6 − −7 = 13, and 13 is greater than zero. This property of order is called TRANSITIVITY: a chain of comparisons yields a verdict on the ends.
+of two numbers −20 and −4 EXACTLY ONE of three holds: «−20 is less than −4», «−20 equals −4», «−20 is greater than −4». The first holds, for −4 − −20 = 16, and 16 is greater than zero; and so «−20 equals −4» is false, and «−20 is greater than −4» is false. This property is called TRICHOTOMY.
+−18 is less than −9, and −9 is less than 0; SO −18 is less than 0 — and it can be checked: 0 − −18 = 18, and 18 is greater than zero. This property of order is called TRANSITIVITY: a chain of comparisons yields a verdict on the ends.
+of two numbers 3 and 9 EXACTLY ONE of three holds: «3 is less than 9», «3 equals 9», «3 is greater than 9». The first holds, for 9 − 3 = 6, and 6 is greater than zero; and so «3 equals 9» is false, and «3 is greater than 9» is false. This property is called TRICHOTOMY.
+10 is less than 14, and 14 is less than 21; SO 10 is less than 21 — and it can be checked: 21 − 10 = 11, and 11 is greater than zero. This property of order is called TRANSITIVITY: a chain of comparisons yields a verdict on the ends.
+of two numbers 4 and 23 EXACTLY ONE of three holds: «4 is less than 23», «4 equals 23», «4 is greater than 23». The first holds, for 23 − 4 = 19, and 19 is greater than zero; and so «4 equals 23» is false, and «4 is greater than 23» is false. This property is called TRICHOTOMY.
+8 is less than 16, and 16 is less than 25; SO 8 is less than 25 — and it can be checked: 25 − 8 = 17, and 17 is greater than zero. This property of order is called TRANSITIVITY: a chain of comparisons yields a verdict on the ends.
+
+−9 is less than 1; add −6 to both: −15 and −5, and −15 is less than −5 — the order is KEPT, for the difference did not change: −5 − −15 = 10, as before. This property is called the MONOTONICITY of order under addition.
+6 is greater than −7, and THEREFORE «−7 is greater than 6» is false: both at once do not happen, for 6 − −7 = 13 and −7 − 6 = −13, and the two cannot be positive together. This property is called the ANTISYMMETRY of order.
+−20 is less than −4; add 4 to both: −16 and 0, and −16 is less than 0 — the order is KEPT, for the difference did not change: 0 − −16 = 16, as before. This property is called the MONOTONICITY of order under addition.
+0 is greater than −18, and THEREFORE «−18 is greater than 0» is false: both at once do not happen, for 0 − −18 = 18 and −18 − 0 = −18, and the two cannot be positive together. This property is called the ANTISYMMETRY of order.
+3 is less than 9; add 7 to both: 10 and 16, and 10 is less than 16 — the order is KEPT, for the difference did not change: 16 − 10 = 6, as before. This property is called the MONOTONICITY of order under addition.
+21 is greater than 10, and THEREFORE «10 is greater than 21» is false: both at once do not happen, for 21 − 10 = 11 and 10 − 21 = −11, and the two cannot be positive together. This property is called the ANTISYMMETRY of order.
+4 is less than 23; add −3 to both: 1 and 20, and 1 is less than 20 — the order is KEPT, for the difference did not change: 20 − 1 = 19, as before. This property is called the MONOTONICITY of order under addition.
+25 is greater than 8, and THEREFORE «8 is greater than 25» is false: both at once do not happen, for 25 − 8 = 17 and 8 − 25 = −17, and the two cannot be positive together. This property is called the ANTISYMMETRY of order.
+
+−9 is less than 1; now multiply both by −5, and −5 is LESS than zero: 45 and −5, and 45 is GREATER than −5 — THE SIGN TURNED OVER. Multiplying by a negative reverses the order, and the rule about keeping it does NOT hold here.
+−7 is less than 6; multiply both by 4, and 4 is greater than zero: −28 and 24, and −28 is less than 24 — the order is KEPT. This is MONOTONICITY under multiplication, and it holds only for a POSITIVE multiplier.
+−20 is less than −4; now multiply both by −2, and −2 is LESS than zero: 40 and 8, and 40 is GREATER than 8 — THE SIGN TURNED OVER. Multiplying by a negative reverses the order, and the rule about keeping it does NOT hold here.
+−18 is less than 0; multiply both by 5, and 5 is greater than zero: −90 and 0, and −90 is less than 0 — the order is KEPT. This is MONOTONICITY under multiplication, and it holds only for a POSITIVE multiplier.
+3 is less than 9; now multiply both by −3, and −3 is LESS than zero: −9 and −27, and −9 is GREATER than −27 — THE SIGN TURNED OVER. Multiplying by a negative reverses the order, and the rule about keeping it does NOT hold here.
+10 is less than 21; multiply both by 2, and 2 is greater than zero: 20 and 42, and 20 is less than 42 — the order is KEPT. This is MONOTONICITY under multiplication, and it holds only for a POSITIVE multiplier.
+4 is less than 23; now multiply both by −4, and −4 is LESS than zero: −16 and −92, and −16 is GREATER than −92 — THE SIGN TURNED OVER. Multiplying by a negative reverses the order, and the rule about keeping it does NOT hold here.
+8 is less than 25; multiply both by 3, and 3 is greater than zero: 24 and 75, and 24 is less than 75 — the order is KEPT. This is MONOTONICITY under multiplication, and it holds only for a POSITIVE multiplier.
+
+5 is less than 8, and 8 is less than 13; what follows about 5 and 13? 5 is less than 13, for 13 − 5 = 8, and 8 is greater than zero.
+11 is less than 19, and 19 is less than 28; what follows about 11 and 28? 11 is less than 28, for 28 − 11 = 17, and 17 is greater than zero.
+−3 is less than 2, and 2 is less than 8; what follows about −3 and 8? −3 is less than 8, for 8 − −3 = 11, and 11 is greater than zero.
+−1 is less than 3, and 3 is less than 10; what follows about −1 and 10? −1 is less than 10, for 10 − −1 = 11, and 11 is greater than zero.
+
+−12 меньше 0, и 0 меньше 7; ЗНАЧИТ, −12 меньше 7 — и проверить можно: 7 − −12 = 19, а 19 больше нуля. Это свойство порядка зовётся ТРАНЗИТИВНОСТЬЮ: цепь сравнений даёт вывод о крайних.
+о двух числах −18 и 0 верно РОВНО ОДНО из трёх: «−18 меньше 0», «−18 равно 0», «−18 больше 0». Верно первое, ибо 0 − −18 = 18, а 18 больше нуля; и потому «−18 равно 0» ложно, и «−18 больше 0» ложно. Это свойство зовётся ТРИХОТОМИЕЙ.
+6 меньше 9, и 9 меньше 17; ЗНАЧИТ, 6 меньше 17 — и проверить можно: 17 − 6 = 11, а 11 больше нуля. Это свойство порядка зовётся ТРАНЗИТИВНОСТЬЮ: цепь сравнений даёт вывод о крайних.
+о двух числах −7 и 6 верно РОВНО ОДНО из трёх: «−7 меньше 6», «−7 равно 6», «−7 больше 6». Верно первое, ибо 6 − −7 = 13, а 13 больше нуля; и потому «−7 равно 6» ложно, и «−7 больше 6» ложно. Это свойство зовётся ТРИХОТОМИЕЙ.
+2 меньше 6, и 6 меньше 11; ЗНАЧИТ, 2 меньше 11 — и проверить можно: 11 − 2 = 9, а 9 больше нуля. Это свойство порядка зовётся ТРАНЗИТИВНОСТЬЮ: цепь сравнений даёт вывод о крайних.
+о двух числах 8 и 25 верно РОВНО ОДНО из трёх: «8 меньше 25», «8 равно 25», «8 больше 25». Верно первое, ибо 25 − 8 = 17, а 17 больше нуля; и потому «8 равно 25» ложно, и «8 больше 25» ложно. Это свойство зовётся ТРИХОТОМИЕЙ.
+−6 меньше 5, и 5 меньше 14; ЗНАЧИТ, −6 меньше 14 — и проверить можно: 14 − −6 = 20, а 20 больше нуля. Это свойство порядка зовётся ТРАНЗИТИВНОСТЬЮ: цепь сравнений даёт вывод о крайних.
+о двух числах 10 и 21 верно РОВНО ОДНО из трёх: «10 меньше 21», «10 равно 21», «10 больше 21». Верно первое, ибо 21 − 10 = 11, а 11 больше нуля; и потому «10 равно 21» ложно, и «10 больше 21» ложно. Это свойство зовётся ТРИХОТОМИЕЙ.
+
+7 больше −12, и ПОТОМУ «−12 больше 7» ложно: двух сразу не бывает, ибо 7 − −12 = 19 и −12 − 7 = −19, а оба разом положительными быть не могут. Это свойство зовётся АНТИСИММЕТРИЕЙ порядка.
+−18 меньше 0; прибавим к обоим −6: −24 и −6, и −24 меньше −6 — порядок СОХРАНЁН, ибо разность не изменилась: −6 − −24 = 18, как и было. Это свойство зовётся МОНОТОННОСТЬЮ порядка по сложению.
+17 больше 6, и ПОТОМУ «6 больше 17» ложно: двух сразу не бывает, ибо 17 − 6 = 11 и 6 − 17 = −11, а оба разом положительными быть не могут. Это свойство зовётся АНТИСИММЕТРИЕЙ порядка.
+−7 меньше 6; прибавим к обоим −3: −10 и 3, и −10 меньше 3 — порядок СОХРАНЁН, ибо разность не изменилась: 3 − −10 = 13, как и было. Это свойство зовётся МОНОТОННОСТЬЮ порядка по сложению.
+11 больше 2, и ПОТОМУ «2 больше 11» ложно: двух сразу не бывает, ибо 11 − 2 = 9 и 2 − 11 = −9, а оба разом положительными быть не могут. Это свойство зовётся АНТИСИММЕТРИЕЙ порядка.
+8 меньше 25; прибавим к обоим 7: 15 и 32, и 15 меньше 32 — порядок СОХРАНЁН, ибо разность не изменилась: 32 − 15 = 17, как и было. Это свойство зовётся МОНОТОННОСТЬЮ порядка по сложению.
+14 больше −6, и ПОТОМУ «−6 больше 14» ложно: двух сразу не бывает, ибо 14 − −6 = 20 и −6 − 14 = −20, а оба разом положительными быть не могут. Это свойство зовётся АНТИСИММЕТРИЕЙ порядка.
+10 меньше 21; прибавим к обоим 4: 14 и 25, и 14 меньше 25 — порядок СОХРАНЁН, ибо разность не изменилась: 25 − 14 = 11, как и было. Это свойство зовётся МОНОТОННОСТЬЮ порядка по сложению.
+
+−12 меньше 7; умножим оба на 2, и 2 больше нуля: −24 и 14, и −24 меньше 14 — порядок СОХРАНЁН. Это МОНОТОННОСТЬ по умножению, и она верна лишь для ПОЛОЖИТЕЛЬНОГО множителя.
+−18 меньше 0; а теперь умножим оба на −5, и −5 МЕНЬШЕ нуля: 90 и 0, и 90 БОЛЬШЕ 0 — ЗНАК ПЕРЕВЕРНУЛСЯ. Умножение на отрицательное меняет порядок на обратный, и правило о сохранении порядка здесь НЕ ДЕЙСТВУЕТ.
+6 меньше 17; умножим оба на 5, и 5 больше нуля: 30 и 85, и 30 меньше 85 — порядок СОХРАНЁН. Это МОНОТОННОСТЬ по умножению, и она верна лишь для ПОЛОЖИТЕЛЬНОГО множителя.
+−7 меньше 6; а теперь умножим оба на −4, и −4 МЕНЬШЕ нуля: 28 и −24, и 28 БОЛЬШЕ −24 — ЗНАК ПЕРЕВЕРНУЛСЯ. Умножение на отрицательное меняет порядок на обратный, и правило о сохранении порядка здесь НЕ ДЕЙСТВУЕТ.
+2 меньше 11; умножим оба на 4, и 4 больше нуля: 8 и 44, и 8 меньше 44 — порядок СОХРАНЁН. Это МОНОТОННОСТЬ по умножению, и она верна лишь для ПОЛОЖИТЕЛЬНОГО множителя.
+8 меньше 25; а теперь умножим оба на −3, и −3 МЕНЬШЕ нуля: −24 и −75, и −24 БОЛЬШЕ −75 — ЗНАК ПЕРЕВЕРНУЛСЯ. Умножение на отрицательное меняет порядок на обратный, и правило о сохранении порядка здесь НЕ ДЕЙСТВУЕТ.
+−6 меньше 14; умножим оба на 3, и 3 больше нуля: −18 и 42, и −18 меньше 42 — порядок СОХРАНЁН. Это МОНОТОННОСТЬ по умножению, и она верна лишь для ПОЛОЖИТЕЛЬНОГО множителя.
+10 меньше 21; а теперь умножим оба на −2, и −2 МЕНЬШЕ нуля: −20 и −42, и −20 БОЛЬШЕ −42 — ЗНАК ПЕРЕВЕРНУЛСЯ. Умножение на отрицательное меняет порядок на обратный, и правило о сохранении порядка здесь НЕ ДЕЙСТВУЕТ.
+
+10 меньше 14, а 14 меньше 21; что отсюда следует о 10 и 21? 10 меньше 21, ибо 21 − 10 = 11, а 11 больше нуля.
+−18 меньше −9, а −9 меньше 0; что отсюда следует о −18 и 0? −18 меньше 0, ибо 0 − −18 = 18, а 18 больше нуля.
+−7 меньше −1, а −1 меньше 6; что отсюда следует о −7 и 6? −7 меньше 6, ибо 6 − −7 = 13, а 13 больше нуля.
+8 меньше 16, а 16 меньше 25; что отсюда следует о 8 и 25? 8 меньше 25, ибо 25 − 8 = 17, а 17 больше нуля.
+
+−12 is less than 0, and 0 is less than 7; SO −12 is less than 7 — and it can be checked: 7 − −12 = 19, and 19 is greater than zero. This property of order is called TRANSITIVITY: a chain of comparisons yields a verdict on the ends.
+of two numbers −18 and 0 EXACTLY ONE of three holds: «−18 is less than 0», «−18 equals 0», «−18 is greater than 0». The first holds, for 0 − −18 = 18, and 18 is greater than zero; and so «−18 equals 0» is false, and «−18 is greater than 0» is false. This property is called TRICHOTOMY.
+6 is less than 9, and 9 is less than 17; SO 6 is less than 17 — and it can be checked: 17 − 6 = 11, and 11 is greater than zero. This property of order is called TRANSITIVITY: a chain of comparisons yields a verdict on the ends.
+of two numbers −7 and 6 EXACTLY ONE of three holds: «−7 is less than 6», «−7 equals 6», «−7 is greater than 6». The first holds, for 6 − −7 = 13, and 13 is greater than zero; and so «−7 equals 6» is false, and «−7 is greater than 6» is false. This property is called TRICHOTOMY.
+2 is less than 6, and 6 is less than 11; SO 2 is less than 11 — and it can be checked: 11 − 2 = 9, and 9 is greater than zero. This property of order is called TRANSITIVITY: a chain of comparisons yields a verdict on the ends.
+of two numbers 8 and 25 EXACTLY ONE of three holds: «8 is less than 25», «8 equals 25», «8 is greater than 25». The first holds, for 25 − 8 = 17, and 17 is greater than zero; and so «8 equals 25» is false, and «8 is greater than 25» is false. This property is called TRICHOTOMY.
+−6 is less than 5, and 5 is less than 14; SO −6 is less than 14 — and it can be checked: 14 − −6 = 20, and 20 is greater than zero. This property of order is called TRANSITIVITY: a chain of comparisons yields a verdict on the ends.
+of two numbers 10 and 21 EXACTLY ONE of three holds: «10 is less than 21», «10 equals 21», «10 is greater than 21». The first holds, for 21 − 10 = 11, and 11 is greater than zero; and so «10 equals 21» is false, and «10 is greater than 21» is false. This property is called TRICHOTOMY.
+
+7 is greater than −12, and THEREFORE «−12 is greater than 7» is false: both at once do not happen, for 7 − −12 = 19 and −12 − 7 = −19, and the two cannot be positive together. This property is called the ANTISYMMETRY of order.
+−18 is less than 0; add −6 to both: −24 and −6, and −24 is less than −6 — the order is KEPT, for the difference did not change: −6 − −24 = 18, as before. This property is called the MONOTONICITY of order under addition.
+17 is greater than 6, and THEREFORE «6 is greater than 17» is false: both at once do not happen, for 17 − 6 = 11 and 6 − 17 = −11, and the two cannot be positive together. This property is called the ANTISYMMETRY of order.
+−7 is less than 6; add −3 to both: −10 and 3, and −10 is less than 3 — the order is KEPT, for the difference did not change: 3 − −10 = 13, as before. This property is called the MONOTONICITY of order under addition.
+11 is greater than 2, and THEREFORE «2 is greater than 11» is false: both at once do not happen, for 11 − 2 = 9 and 2 − 11 = −9, and the two cannot be positive together. This property is called the ANTISYMMETRY of order.
+8 is less than 25; add 7 to both: 15 and 32, and 15 is less than 32 — the order is KEPT, for the difference did not change: 32 − 15 = 17, as before. This property is called the MONOTONICITY of order under addition.
+14 is greater than −6, and THEREFORE «−6 is greater than 14» is false: both at once do not happen, for 14 − −6 = 20 and −6 − 14 = −20, and the two cannot be positive together. This property is called the ANTISYMMETRY of order.
+10 is less than 21; add 4 to both: 14 and 25, and 14 is less than 25 — the order is KEPT, for the difference did not change: 25 − 14 = 11, as before. This property is called the MONOTONICITY of order under addition.
+
+−12 is less than 7; multiply both by 2, and 2 is greater than zero: −24 and 14, and −24 is less than 14 — the order is KEPT. This is MONOTONICITY under multiplication, and it holds only for a POSITIVE multiplier.
+−18 is less than 0; now multiply both by −5, and −5 is LESS than zero: 90 and 0, and 90 is GREATER than 0 — THE SIGN TURNED OVER. Multiplying by a negative reverses the order, and the rule about keeping it does NOT hold here.
+6 is less than 17; multiply both by 5, and 5 is greater than zero: 30 and 85, and 30 is less than 85 — the order is KEPT. This is MONOTONICITY under multiplication, and it holds only for a POSITIVE multiplier.
+−7 is less than 6; now multiply both by −4, and −4 is LESS than zero: 28 and −24, and 28 is GREATER than −24 — THE SIGN TURNED OVER. Multiplying by a negative reverses the order, and the rule about keeping it does NOT hold here.
+2 is less than 11; multiply both by 4, and 4 is greater than zero: 8 and 44, and 8 is less than 44 — the order is KEPT. This is MONOTONICITY under multiplication, and it holds only for a POSITIVE multiplier.
+8 is less than 25; now multiply both by −3, and −3 is LESS than zero: −24 and −75, and −24 is GREATER than −75 — THE SIGN TURNED OVER. Multiplying by a negative reverses the order, and the rule about keeping it does NOT hold here.
+−6 is less than 14; multiply both by 3, and 3 is greater than zero: −18 and 42, and −18 is less than 42 — the order is KEPT. This is MONOTONICITY under multiplication, and it holds only for a POSITIVE multiplier.
+10 is less than 21; now multiply both by −2, and −2 is LESS than zero: −20 and −42, and −20 is GREATER than −42 — THE SIGN TURNED OVER. Multiplying by a negative reverses the order, and the rule about keeping it does NOT hold here.
+
+10 is less than 14, and 14 is less than 21; what follows about 10 and 21? 10 is less than 21, for 21 − 10 = 11, and 11 is greater than zero.
+−18 is less than −9, and −9 is less than 0; what follows about −18 and 0? −18 is less than 0, for 0 − −18 = 18, and 18 is greater than zero.
+−7 is less than −1, and −1 is less than 6; what follows about −7 and 6? −7 is less than 6, for 6 − −7 = 13, and 13 is greater than zero.
+8 is less than 16, and 16 is less than 25; what follows about 8 and 25? 8 is less than 25, for 25 − 8 = 17, and 17 is greater than zero.
