@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 280 миров, 432016 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 280 миров, 432050 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -393,7 +393,7 @@
 
 ## АКТ «compare» — сравнить двоих: больше, меньше, во столько же раз
 
-Миров 32, строк 17310.
+Миров 32, строк 17344.
 
 - **`cmpframes`** (6480 строк; recompute, whole_only)  
   **FRAMES OF COMPARISON** — the largest class of the reader's lies on the held-out key (05.09: twelve of fifteen — «9 flexiones más que», «in più/in meno di», «meer/minder dan», «więcej/mniej niż»: the marker is not bought and the answer takes a neighbouring…
@@ -439,10 +439,12 @@
   **ВЗВЕШЕННОЕ СРЕДНЕЕ** — СРЕДНЕЕ ДВУХ СРЕДНИХ НЕ ЕСТЬ СРЕДНЕЕ ЦЕЛОГО. Замер 12.09 по всему своду в 39 МБ: «взвешенное среднее» — НОЛЬ вхождений.
 - **`measureprec`** (96 строк; recompute, finite_decimal_only)  
   **ИЗМЕРЕНИЕ И ЕГО ТОЧНОСТЬ** — СВОД МЕРИЛ ВСЁ И НИ РАЗУ НЕ СКАЗАЛ, ЧТО ИЗМЕРЕНИЕ НЕТОЧНО. Замер 12.09 по шестому десятку понятий: «погрешность» — ноль упоминаний и ноль показов; «значащие цифры» — ноль и ноль; «цена деления» — ноль и ноль; «повторное измере…
+- **`measuregrow`** (84 строк; recompute, whole_only, exact_only)  
+  **РОСТ МЕРЫ** — «ВДВОЕ БОЛЬШЕ» ЗНАЧИТ РАЗНОЕ ДЛЯ ДЛИНЫ, ПЛОЩАДИ И ОБЪЁМА. Замер 12.09 по десятому десятку понятий: «площадь растёт как квадрат» — ноль упоминаний и ноль показов; «сумма углов треугольника» — ноль и ноль; «периметр и площадь вместе» — ноль и …
 - **`pctbase`** (80 строк; recompute, whole_only, exact_only)  
   **ОСНОВАНИЕ ПРОЦЕНТА** — ПРОЦЕНТ БЕЗ ОСНОВАНИЯ НЕ ЕСТЬ ЧИСЛО. Замер 12.09 по всему своду: «база процента» — НОЛЬ вхождений, «от чего процент» — ноль; свод берёт процент от числа тысячами страниц и знает процентную разницу (`pctdiff`), но ни разу не спрашива…
-- **`growfig`** (78 строк; recompute, whole_only, exact_only)  
-  **РОСТ ФИГУРЫ** — ПЕРИМЕТР НЕ ОПРЕДЕЛЯЕТ ПЛОЩАДИ, И РАСТУТ ОНИ ПО РАЗНЫМ ЗАКОНАМ. Замер 12.09 по всему своду: «удвоив сторону» — НОЛЬ вхождений, «одинаковый периметр» — ноль, «same perimeter» — ноль; свод знает периметр (349 строк) и площадь (974) и считает…
+- **`median`** (80 строк; recompute, whole_only, exact_only)  
+  **МЕДИАНА И СРЕДНЕЕ** — ОДИН ВЫБРОС ДВИГАЕТ СРЕДНЕЕ И НЕ ДВИГАЕТ МЕДИАНЫ. Замер 12.09 по всему своду в 39 МБ: «медиана не есть среднее» — НОЛЬ вхождений; свод считает медиану 204 строками мира статистики и среднее тысячами, знает и слово «выброс» (57 строк)…
 - **`numline`** (74 строк; recompute, whole_only, exact_only)  
   **ЧИСЛОВАЯ ПРЯМАЯ** — ЧИСЛО, СТОЯЩЕЕ ЛЕВЕЕ, МЕНЬШЕ, И ЭТО ЕДИНСТВЕННОЕ ПРАВИЛО ПОРЯДКА. Замер 12.09 по всему своду в 39 МБ: «числовая прямая» — НОЛЬ вхождений, «левее» — ноль, «правее» — ноль.
 - **`cond`** (74 строк; recompute, whole_only, exact_only)  
@@ -455,8 +457,6 @@
   **СЧЁТ ВКЛЮЧИТЕЛЬНО** — «С ТРЕТЬЕГО ПО СЕДЬМОЕ» ЕСТЬ ПЯТЬ ДНЕЙ, А НЕ ЧЕТЫРЕ. Замер 12.09 по двенадцатому десятку понятий: «счёт включительно» — ноль упоминаний и ноль показов; «интервал между датами» — ноль и ноль; «возраст и год рождения» — ноль и ноль.
 - **`chancetrap`** (62 строк; recompute, whole_only, exact_only)  
   **ЛОВУШКИ СЛУЧАЯ И СРЕДНЕГО** — СВОД СЧИТАЛ ТО И ДРУГОЕ И НИ РАЗУ НЕ СКАЗАЛ, ГДЕ ОНИ ЛГУТ. Замер 12.09 по седьмому десятку понятий: свод считает среднее 1339 строками и вероятность 446, и все они верны, — а о том, что с этими числами делают дальше, ни слова…
-- **`measuregrow`** (52 строк; recompute, whole_only, exact_only)  
-  **РОСТ МЕРЫ** — «ВДВОЕ БОЛЬШЕ» ЗНАЧИТ РАЗНОЕ ДЛЯ ДЛИНЫ, ПЛОЩАДИ И ОБЪЁМА. Замер 12.09 по десятому десятку понятий: «площадь растёт как квадрат» — ноль упоминаний и ноль показов; «сумма углов треугольника» — ноль и ноль; «периметр и площадь вместе» — ноль и …
 - **`ratetrap`** (50 строк; recompute, whole_only, exact_only)  
   **ЛОВУШКИ ОТНОШЕНИЯ** — ГДЕ СРЕДНЕЕ ЛЖЁТ, А СЛОЖЕНИЕ НЕ ДЕЙСТВУЕТ ВОВСЕ. Замер 12.09 по восьмому десятку понятий: «средняя скорость» ноль и ноль, «совместная работа» ноль и ноль, «сложные проценты» ноль и ноль, «наценка» ноль и ноль, — а скорости, проценты …
 
@@ -571,7 +571,7 @@
 - **`md_latex`** (3332 строк; declared, recompute, whole_only)  
   **THE MARKUP RECORD AND ITS READING** — ONE THING SAID IN TWO SURFACES. Declared until 12.09 in six words, and with NO ACT AT ALL: the field stood «unnamed» while the world translated on every page.
 - **`formula_lang`** (2583 строк; same_object, reversibility, reversible_only)  
-  formula and speech, converted both ways at any depth: ONE expression TREE with four surfaces (LaTeX, glyphs, English words, Russian words) and four inverse walks written apart; a compound argument is always spoken in brackets, which is what makes speech par…
+  **formula and speech, converted both ways at any depth: ONE expression TREE with four surfaces (LaTeX, glyphs, English words, Russian words) and four inverse walks written apart; a compound argument is always spoken in brackets, which is what makes speech p…
 - **`surfaces`** (2200 строк; declared, whole_only, unsigned_only)  
   **the surfaces of an act: the same arithmetic fact said as a nominalisation («сложение 7 и 6 даёт 13», «the addition of 7 and 6 gives 13»), as a named result («сумма … равна», «произведение … равно»** — the copula agrees with gender), as a question to each,…
 - **`speech`** (1910 строк; declared, recompute, whole_only)  

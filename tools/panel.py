@@ -267,9 +267,9 @@ recache.установить()
            "numline_court",
            "squnit_court",
            "pctbase_court",
-           "growfig_court",
            "leap_court",
            "tzone_court",
+           "median_court",
            # …и НЕОБХОДИМОЕ С ДОСТАТОЧНЫМ: полная таблица двух свойств условия,
            # показанная делимостью, где оба ответа покупаются счётом
            "nesuf_court",
