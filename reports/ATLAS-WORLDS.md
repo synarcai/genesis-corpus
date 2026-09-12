@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 257 миров, 426963 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 258 миров, 427809 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -11,7 +11,7 @@
 
 ## АКТ «recount» — пересчитать величину: строка утверждает число
 
-Миров 153, строк 224291.
+Миров 153, строк 224701.
 
 - **`links`** (17566 строк; declared, whole_only)  
   **CONVERSATION LINKS** — a question whose subject stands in the PREVIOUS reply (the owner's order, 04.09, item 5; the BESEDA band measures this genus mute 15 of 15).
@@ -95,6 +95,8 @@
   **the VALUE ASKED IN TEN LANGUAGES (the owner's word: every language in surplus; the svod asked the value of an expression only in en/ru): «was ist 3 + 4? 3 + 4 = 7.», «wie viel ist 12 − 5? …», «berechne 6 × 7. 6 × 7 = 42.» (de); «combien font 3 + 4 ? …», «…
 - **`compsci`** (1372 строк; recompute, whole_only)  
   **ЦЕНА ЗНАКА В БИТАХ И ЭНТРОПИЯ РАВНОВОЗМОЖНЫХ ИСХОДОВ, ДОКАЗАННЫЕ СТЕПЕНЬЮ ДВОЙКИ: «сколько бит стоит знак алфавита в 32 знака? знак алфавита в 32 знака стоит 5 битов: 2^5 = 32». И ТУТ ЖЕ ОТКАЗ, КОГДА ЦЕЛОГО ОТВЕТА НЕТ: «стоит ли знак алфавита в 5 знаков ц…
+- **`ceilfloor`** (1340 строк; recompute, whole_only)  
+  **TWO ANSWERS TO ONE DIVISION** — THE REMAINDER DECIDES WHICH WAY TO ROUND, AND THE QUESTION DECIDES THE REMAINDER'S USE. Measured 11.09 across the 251 show worlds (429 194 lines): «не хватит», «понадобится ещё», «нужно N коробок», «потребуется» — NONE; «ск…
 - **`shares_percent`** (1320 строк; recompute, whole_only)  
   **SHARES AND PERCENTS OVER QUANTITIES** — GENUS 2 OF THE g1 BAND (holon's word 03.09, G1-ATTACK): five forms whose ledger is a chain of primitives whole on the axis, en/ru/de — «what is two thirds of 24? two thirds of 24 is 16: 24 ÷ 3 = 8, 8 × 2 = 16.» (den…
 - **`average`** (1300 строк; recompute, whole_only)  
@@ -109,22 +111,20 @@
   valence with its ground: sign of dP/dtau, strength of feeling, fear at the irreversible threshold P_crit=2/7, calm, the computable triple of emotion, awareness gated by R and Phi, arena proxies with a DECLARED projection onto P, and the canonical names of c…
 - **`measureof`** (1254 строк; recompute, whole_only)  
   **THE MEASURE THROUGH «of»** — the number counts the VESSEL and the goods stand behind the preposition (07.09).
+- **`placeval`** (1220 строк; recompute, whole_only)  
+  **PLACE VALUE** — THE PLACE OF A DIGIT IS ITS WEIGHT. THE CORPUS ROUNDS TO HUNDREDS AND NEVER ONCE SAYS WHAT HUNDREDS ARE. Measured 11.09 across the 253 show worlds: the decomposition of a number by places («300 + 40 + 7 = 347») — NONE; «the digit stands in…
 - **`genesis_units`** (1218 строк; recompute, whole_only)  
   **QUANTITIES, UNITS AND SHARES** — one world doing three deeds, declared until 12.09 in three words: «quantities, units, fractions».
 - **`statistics`** (1192 строк; recompute, whole_only)  
   **THE MIDDLE OF A LIST** — MEAN, MEDIAN AND RANGE, EACH DEFINED BEFORE IT IS ASKED. Declared until 12.09 in five words.
 - **`money_langs`** (1188 строк; recompute, unsigned_only)  
   **MONEY WITH THE DECIMAL COMMA in nine languages (the owner's word: every language in surplus; the money world wrote «16.50 dollars»/«$16.50» and «16 рублей 50 копеек»** — Europe writes the comma): the bridge «16,50 Euro sind 1650 Cent: 16 × 100 = 1600, 160…
-- **`ceilfloor`** (1186 строк; recompute, whole_only)  
-  **TWO ANSWERS TO ONE DIVISION** — THE REMAINDER DECIDES WHICH WAY TO ROUND, AND THE QUESTION DECIDES THE REMAINDER'S USE. Measured 11.09 across the 251 show worlds (429 194 lines): «не хватит», «понадобится ещё», «нужно N коробок», «потребуется» — NONE; «ск…
 - **`calendar_langs`** (1120 строк; recompute, unsigned_only)  
   **THE WEEK IN EIGHT LANGUAGES (the owner's word: every language in surplus; the calendar world's cycle shows «3 days after tuesday comes friday» are the shows from which the organism buys the weekly cycle without names and without the seven** — holon's ЦИКЛ…
 - **`subjcount`** (1105 строк; recompute, whole_only)  
   **THE COUNT OF THE SUBJECT** — the number stands with WHO ACTS, not with what is owned (07.09).
 - **`measure_story`** (1104 строк; recompute, whole_only)  
   **MEASURED STORIES** — A DISTANCE COMPARED BY ITS VERB, AND A PAIR PRICED BY ITS MULTIPLE (holon's orders from the last lines of the attack, 03.09).
-- **`placeval`** (1092 строк; recompute, whole_only)  
-  **PLACE VALUE** — THE PLACE OF A DIGIT IS ITS WEIGHT. THE CORPUS ROUNDS TO HUNDREDS AND NEVER ONCE SAYS WHAT HUNDREDS ARE. Measured 11.09 across the 253 show worlds: the decomposition of a number by places («300 + 40 + 7 = 347») — NONE; «the digit stands in…
 - **`clockforms`** (1053 строк; recompute, whole_only, exact_only)  
   **THE CLOCK** — the carry that is sixty, not ten (06.09).
 - **`nature`** (1050 строк; declared, whole_only)  
@@ -197,6 +197,8 @@
   **THE TWO MEANINGS OF DIVISION** — ONE EQUALITY ANSWERS TWO DIFFERENT QUESTIONS. The distinction is nowhere in the corpus: measured 11.09 across the 246 show worlds, «два смысла», «two meanings», «по скольку каждому» — NONE. Yet BOTH KINDS of task have long…
 - **`divrule`** (600 строк; recompute, whole_only)  
   **RULES OF DIVISIBILITY** — to know a divisor WITHOUT DIVIDING, and to check it by dividing on the same page.
+- **`signrul`** (596 строк; recompute, whole_only)  
+  **THE RULE OF SIGNS** — TWO NUMBERS LESS THAN ZERO GIVE ONE GREATER THAN ZERO. Measured 11.09 across the 233 show worlds: «минус на минус», «two minuses» — NONE; «(−a) × (−b)» — NONE; division with signs — NONE. Multiplication with ONE minus occurs 36 times…
 - **`addshare`** (590 строк; recompute, whole_only)  
   **ADDING SHARES** — shares add only when brought to one denominator.
 - **`signadd`** (576 строк; recompute, whole_only)  
@@ -211,8 +213,6 @@
   **percent on three surfaces (glyph, word, both tongues): «20% of 80 is 16», the conversion percent<->hundredths, the inverse question «16 is 20% of 80», and growth and cut by a percent; only whole results are uttered** — a percent that does not come out who…
 - **`heads`** (560 строк; recompute, whole_only, unsigned_only)  
   **ОДИН ЯЗЫК, ОДИН НОСИТЕЛЬ, ОДНО ДЕЙСТВИЕ: «Peter had 8 coins. Peter gave 4 coins away. how many coins are left? Peter keeps 4 coins: 8 − 4 = 4». Английский без русского, имя носителя повторено в вопросе и в ответе, и всякий показ несёт вопрос (560 вопросов…
-- **`signrul`** (556 строк; recompute, whole_only)  
-  **THE RULE OF SIGNS** — TWO NUMBERS LESS THAN ZERO GIVE ONE GREATER THAN ZERO. Measured 11.09 across the 233 show worlds: «минус на минус», «two minuses» — NONE; «(−a) × (−b)» — NONE; division with signs — NONE. Multiplication with ONE minus occurs 36 times…
 - **`stenogram`** (550 строк; recompute, exact_only)  
   **interaction transcripts v0 (mandate 02.09, L5: «обучать и интерактиву»): one show in several lines by the declared form declarations/STENOGRAM.md** — header with the environment (a grid), steps «action → response» where the response is the environment's w…
 - **`need`** (540 строк; recompute, declared, whole_only)  
@@ -251,22 +251,22 @@
   **THE AGGREGATE** — A FACT OF SEVERAL BEARERS AND THE FOUR HEADS THAT ASK FOR IT, declared until 12.09 in six words: «aggregate genus: a fact of a plural bearer».
 - **`timeunits`** (420 строк; recompute, whole_only)  
   **TIME UNITS IN NINE LANGUAGES** — «сколько минут в двух часах? 120: 2 × 60 = 120.», hour → minutes, minute → seconds, week → days, day → hours, for two to five of the larger unit, the count in words for two to four in the case the phrase needs (в двух часа…
+- **`parity`** (414 строк; recompute, whole_only)  
+  **THE PARITY OF OPERATIONS** — A LAW ABOUT CLASSES, NOT ABOUT NUMBERS. Measured 11.09 across the 242 show worlds: «чётное + чётное», «even plus even» — NONE; «odd with odd» — NONE. Yet the word «чётный» occurs 3614 times: the corpus can say WHETHER A NUMBER…
 - **`gsmlex`** (400 строк; recompute, whole_only, unsigned_only)  
   **ШАГ В ЕДИНИЦУ, СКАЗАННЫЙ ШИРОКИМ СЛОВАРЁМ ДЕЙСТВИЙ: «Felix makes 12 points. Felix uses 1 point away. how many points does Felix keep? Felix keeps 11 points». Одно и то же прибавление или убавление единицы, названное ДЕСЯТКАМИ РАЗНЫХ ГЛАГОЛОВ** — makes, ha…
 - **`dec`** (388 строк; recompute, finite_decimal_only)  
   **THE DECIMAL WRITING OF A SHARE** — THE SAME NUMBER WRITTEN OTHERWISE. Measured 11.09 across the 237 show worlds: the equality «0,5 = 1/2» or «3/4 = 0.75» occurs SIXTEEN times, and all sixteen stand in one world of algebraic units, as a line without deriva…
 - **`price`** (378 строк; recompute, whole_only)  
   **PRICE IN NINE LANGUAGES** — «one apple costs 2 dollars. how much do 3 apples cost? 6 dollars: 3 × 2 = 6.» Born from the seventh band of conversation (BESEDA-7, 06.09): the price of several things at one price was answered only by the ru/en money worlds.
+- **`pow`** (372 строк; recompute, whole_only)  
+  **THE POWER BEYOND ZERO** — THE LADDER CONTINUED PAST ZERO. Measured 11.09 across the 236 show worlds: «^0» — NONE; «⁰» — NONE; «to the power of zero» — NONE; and the negative exponent has no precedent at all: «^-», «^−», «⁻» — NONE in the whole corpus.
 - **`two_kinds`** (360 строк; recompute, whole_only)  
   **TWO KINDS AND A SUM OF WEIGHTS** — THE SYSTEM OF TWO UNKNOWNS WITH ITS CHAIN (e9's order 03.09, the profile of muteness of the g1 band, genus 5): the band asked «there are 20 animals … 70 legs, how many cows?» and the organism was mute not for the arithme…
 - **`letters`** (360 строк; recompute, whole_only)  
   **LETTERS OF A WORD IN NINE LANGUAGES** — «how many letters are there in the word cat? 3: c, a, t.», «what is the first letter of the word cat? c.», the last letter likewise (the word stands in the quotes of its language).
-- **`parity`** (358 строк; recompute, whole_only)  
-  **THE PARITY OF OPERATIONS** — A LAW ABOUT CLASSES, NOT ABOUT NUMBERS. Measured 11.09 across the 242 show worlds: «чётное + чётное», «even plus even» — NONE; «odd with odd» — NONE. Yet the word «чётный» occurs 3614 times: the corpus can say WHETHER A NUMBER…
 - **`zerodiv`** (346 строк; recompute, whole_only)  
   **DIVISION BY ZERO** — a refusal that HAS A REASON, and the reason is COMPUTED. Measured 10.09 across all 216 show worlds: multiplication by zero appears 696 times, zero as the dividend («0 ÷ 3») 644 times, and the expression «n ÷ 0» NOT ONCE. The canon tea…
-- **`pow`** (340 строк; recompute, whole_only)  
-  **THE POWER BEYOND ZERO** — THE LADDER CONTINUED PAST ZERO. Measured 11.09 across the 236 show worlds: «^0» — NONE; «⁰» — NONE; «to the power of zero» — NONE; and the negative exponent has no precedent at all: «^-», «^−», «⁻» — NONE in the whole corpus.
 - **`abs`** (340 строк; recompute, whole_only)  
   **THE MODULUS OF A NUMBER** — THE DISTANCE TO ZERO, WHICH HAS NO SIGN. Measured 11.09 across the 237 show worlds: the writing «|−5|» — NONE; «distance from zero» — NONE. The word «модуль» occurs 2540 times and ALWAYS ABOUT SOMETHING ELSE: it is the remainde…
 - **`sequences_langs`** (320 строк; recompute, unsigned_only)  
@@ -395,7 +395,7 @@
 
 ## АКТ «name» — назвать: что вещь ЕСТЬ и как она зовётся
 
-Миров 25, строк 43121.
+Миров 25, строк 43193.
 
 - **`notationvar`** (5386 строк; recompute, reversibility, declared_pairs_only)  
   **one sign, two scripts: the same record written in ASCII and in typography, and the court reduces both to one canon. The corpus knew every sign in ONE script only, and in different signs** — in DIFFERENT ones: «x^2» 1702 times and «x²» ZERO, «≤» 351 and «<…
@@ -435,7 +435,7 @@
   **ОСНОВАНИЯ МАТЕМАТИКИ И НАЗВАННЫЙ ПАДЕЖ** — ОДИН МИР, И ЭТО НЕ СЛУЧАЙНОСТЬ: функция как ОДИН ПРЕДМЕТ («функция f на множестве {1 2 3} задана правилом f(x) = 4x; f(1) = 4»), инъекция свидетелем, счётность, доказательство от противного, индукция — и рядом ше…
 - **`wordorder`** (876 строк; recompute, whole_only, unsigned_only)  
   **where the verb stands: the place named by COUNT, not by the label «SOV»** — the verb's index and the sentence's word count, checkable by splitting the quoted sentence (290 sentences of the layers, 11 languages)
-- **`numlabel`** (756 строк; recompute, whole_only)  
+- **`numlabel`** (828 строк; recompute, whole_only)  
   **THE NUMBER AS A NAME** — ONE AND THE SAME NUMBER CALLS A THING AND MEASURES IT, AND THESE ARE TWO DIFFERENT DEEDS. Measured 11.09 across the 256 show worlds: «дом 5», «автобус 12», «квартира 7» — NONE; «номер не складывают», «labels are not added» — NONE;…
 - **`opposites`** (648 строк; declared, whole_only)  
   **OPPOSITES** — the first relation in the corpus of a WORD TO A WORD, not of a word to a thing, and there was not one show of it in the whole svod.
@@ -450,7 +450,7 @@
 
 ## АКТ «decide» — решить случай: вердикт с основанием рядом
 
-Миров 19, строк 15308.
+Миров 20, строк 15606.
 
 - **`verifyforms`** (3285 строк; recompute, whole_only)  
   **VERIFICATION** — «claim · check · verdict», and the pages where the instrument is OBLIGED to refuse (05.09, the agent architecture, the fourth market): a true claim checked by ANOTHER action cannot be confirmed — the verdict is «not verified», and the gro…
@@ -476,6 +476,8 @@
   **PRIME AND COMPOSITE IN EIGHT LANGUAGES (the owner's word: every language in surplus; the numbers world says it in en/ru): «97 ist eine Primzahl; ihre Teiler sind 1 und 97.», «91 ist keine Primzahl: 91 = 7 × 13.», «ist 91 eine Primzahl? nein: 91 ist keine …
 - **`enough`** (324 строк; recompute, exact_only)  
   **SUFFICIENCY** — the yes-or-no that is bought by arithmetic (06.09).
+- **`closure`** (298 строк; recompute, declared, whole_only, unsigned_only)  
+  **ЗАМКНУТОСТЬ** — ОСТАНЕТСЯ ЛИ ИТОГ ТАМ ЖЕ, ГДЕ СЛАГАЕМЫЕ, и главное здесь — НЕСИММЕТРИЧНОСТЬ ДОКАЗАТЕЛЬСТВА. «Чётные замкнуты относительно сложения: 6 = 2 × 3, и 4 = 2 × 2, и 6 + 4 = 2 × 5 = 10» — итог чётен ПО РАЗБОРУ, а не по примеру; «нечётные НЕ замкну…
 - **`onestep`** (282 строк; recompute, whole_only, unsigned_only)  
   **ОДНОШАГОВОЕ УРАВНЕНИЕ** — НЕИЗВЕСТНОЕ НАХОДИТСЯ ОБРАТНЫМ ДЕЙСТВИЕМ: чтобы узнать слагаемое, вычитают; чтобы узнать множитель, делят.
 - **`nesuf`** (276 строк; recompute, whole_only)  
@@ -524,7 +526,7 @@
 
 ## АКТ «compare» — сравнить двоих: больше, меньше, во столько же раз
 
-Миров 10, строк 13988.
+Миров 10, строк 14054.
 
 - **`cmpframes`** (6480 строк; recompute, whole_only)  
   **FRAMES OF COMPARISON** — the largest class of the reader's lies on the held-out key (05.09: twelve of fifteen — «9 flexiones más que», «in più/in meno di», «meer/minder dan», «więcej/mniej niż»: the marker is not bought and the answer takes a neighbouring…
@@ -532,7 +534,7 @@
   **multiple comparison, and the two frames English keeps apart standing SIDE BY SIDE ON THE SAME NUMBERS: «as many as» for the countable and «as much as» for the uncountable** — the organism had bought one and not the other because they never stood together;…
 - **`genesis_compare`** (1440 строк; recompute, whole_only, unsigned_only)  
   **COMPARISON BY DIFFERENCE, BY RATIO, AND BY BOTH AT ONCE** — declared until 12.09 in eight words.
-- **`digitlen`** (998 строк; recompute, whole_only)  
+- **`digitlen`** (1064 строк; recompute, whole_only)  
   **THE LENGTH OF THE WRITING** — FOR WHOLE NUMBERS, A LONGER WRITING MEANS A GREATER NUMBER. The trap of a neighbour stands on a rule the corpus never stated: the world of the decimal share (`dec`) says outright that «a reader who knows whole numbers compare…
 - **`unitcmp`** (908 строк; recompute, declared, whole_only)  
   **THE COMPARISON OF NAMED QUANTITIES** — THE GREATER NUMBER NAMES THE LESSER QUANTITY. Measured 11.09 across the 256 show worlds: a question of comparison carrying TWO DIFFERENT MEASURES — NONE. The corpus can do everything the answer needs and never asks t…
@@ -568,5 +570,5 @@
     ОБЪЯВЛЕНИЕ В ТРИДЦАТЬ ЗНАКОВ НЕ ЛЖЁТ И НЕ ГОВОРИТ: читатель узнаёт имя мира
     и ничего сверх него.
 
-Миров: **0** из 257.
+Миров: **0** из 258.
 

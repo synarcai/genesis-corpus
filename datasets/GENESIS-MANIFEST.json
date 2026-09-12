@@ -1633,6 +1633,28 @@
       "actors": []
     },
     {
+      "name": "closure",
+      "file": "datasets/genesis_closure.txt",
+      "genre": "ЗАМКНУТОСТЬ — ОСТАНЕТСЯ ЛИ ИТОГ ТАМ ЖЕ, ГДЕ СЛАГАЕМЫЕ, и главное здесь — НЕСИММЕТРИЧНОСТЬ ДОКАЗАТЕЛЬСТВА. «Чётные замкнуты относительно сложения: 6 = 2 × 3, и 4 = 2 × 2, и 6 + 4 = 2 × 5 = 10» — итог чётен ПО РАЗБОРУ, а не по примеру; «нечётные НЕ замкнуты относительно сложения: 3 + 5 = 8, и 8 = 2 × 4» — одного свидетеля довольно. Третий род говорит о самом доказательстве: тысяча согласных примеров замкнутости не доказывает, а один противный опровергает. ПОВОД — ЗАМЕР: свод показывает замкнутость в десятке миров (чётность, правило знаков, степень) и не называл её НИ РАЗУ, тогда как наша же проза называет её двенадцать раз. МНОЖЕСТВА БЕРУТСЯ ПОЛОЖИТЕЛЬНЫЕ, и это сказано прямо: множество, чьи границы не названы, даёт два разных ответа на один вопрос.",
+      "act": [
+        "decide",
+        "generalize",
+        "refute",
+        "recount"
+      ],
+      "oracle": [
+        "recompute",
+        "declared"
+      ],
+      "boundary": [
+        "whole_only",
+        "unsigned_only"
+      ],
+      "size": 35109,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
       "name": "pctchange",
       "file": "datasets/genesis_pctchange.txt",
       "genre": "CHANGE BY A PERCENT — THE PERCENT IS TAKEN FROM WHAT STANDS NOW. Measured 11.09 across the 243 show worlds: «increased by N %» — NONE; «decreased by N %» — NONE; «by what percent» — NONE. The world of percent shows ONLY «N % of a number» (120 lines), and the world of discount counts the discount IN ROUBLES, not in percent. THE CORPUS CAN TAKE A PERCENT OF A NUMBER AND CANNOT CHANGE A NUMBER BY A PERCENT. THE FIFTEENTH TRAP OF THE SERIES, AND IT LIVES ON EVERY PRICE TAG: GREW BY 10 % AND FELL BY 10 % — AND CAME OUT BELOW THE OLD ONE. Two hundred became two hundred and twenty, and then one hundred and ninety-eight. A PERCENT IS NOT A NUMBER: IT IS A SHARE OF WHAT STANDS BEFORE IT, AND THEREFORE TWO EQUAL PERCENTS ARE DIFFERENT QUANTITIES. Four genera: GROWTH, FALL, THERE-AND-BACK (the trap), and THE BASE («the second percent is taken from 220 and not from 200, and so it is bigger») — the cause. The third and the fourth stand on the same numbers: the first shows WHAT came out, the second WHY; apart, the third would be a trick and the fourth arithmetic without occasion. The first and the second are a minimal pair by direction — the same numbers, the same percent, and the difference in one sign — and they give the reader what the whole corpus lacks: A CHANGE, not the taking of a share. The counting goes BY THE SAME MOVE AS IN THE WORLD OF PERCENT: multiply by the number of percents and divide by a hundred. The house does not start its own arithmetic where the corpus has already shown one — it continues the move past the place where the world of percent stopped. A HOUSE CONTINUING A FOREIGN MOVE MUST GO BY THE SAME MOVE, OR THE READER LEARNS TWO RULES INSTEAD OF ONE. The percents are those that give whole shares TWICE IN A ROW (10, 20, 50 at a price multiple of a hundred): otherwise the second share would come out fractional and the house would speak of the decimal writing — the subject of a neighbour, not its own.",
@@ -5640,10 +5662,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 38526665,
+      "size": 38561776,
       "tiers": [],
       "text": "mix",
-      "lines": 427511
+      "lines": 427809
     },
     {
       "name": "minimal",
