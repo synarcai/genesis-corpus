@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 281 законов
+# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 282 законов
 
 Собран из докстрингов и комментариев `tools`, `courts`, `scripts` орудием
 `tools/law_atlas.py`. Взяты ОБЩИЕ законы — те, что держатся не одним файлом.
@@ -6,7 +6,7 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 5099 разных законов на 6074 упоминаний; сказанных однажды — 4818, и они остаются при своём месте.
+Всего в дереве 5117 разных законов на 6096 упоминаний; сказанных однажды — 4835, и они остаются при своём месте.
 
 
 ## Держат 70 файлов
@@ -16,18 +16,15 @@
 
 ## Держат 68 файлов
 
+- **ПРОБА НА ЗАВЕДОМО ИЗВЕСТНОМ**  
+  scripts/agree_skew.py, scripts/agree_traps.py, scripts/article_sound.py, scripts/bench_leak.py, scripts/broken_law.py, scripts/build_dated.py … и ещё 62
 - **СУД, ПИШУЩИЙ ЗАКОН ВТОРОЙ РАЗ, РАСХОДИТСЯ С ДОМОМ НА ПЕРВОЙ ЖЕ ПРАВКЕ**  
   courts/abs_court.py, courts/addshare_court.py, courts/amend_court.py, courts/angle_court.py, courts/both_court.py, courts/bound_court.py … и ещё 62
 
-## Держат 66 файлов
-
-- **ПРОБА НА ЗАВЕДОМО ИЗВЕСТНОМ**  
-  scripts/agree_skew.py, scripts/agree_traps.py, scripts/article_sound.py, scripts/bench_leak.py, scripts/broken_law.py, scripts/build_dated.py … и ещё 60
-
-## Держат 62 файлов
+## Держат 63 файлов
 
 - **ПРОБА ИДЁТ ПРИ ВСЯКОМ ПРОГОНЕ, А НЕ ПО ПРОСЬБЕ**  
-  scripts/agree_skew.py, scripts/agree_traps.py, scripts/article_sound.py, scripts/bench_leak.py, scripts/broken_law.py, scripts/build_dated.py … и ещё 56
+  scripts/agree_skew.py, scripts/agree_traps.py, scripts/article_sound.py, scripts/bench_leak.py, scripts/broken_law.py, scripts/build_dated.py … и ещё 57
 
 ## Держат 44 файлов
 
@@ -386,6 +383,8 @@
   scripts/half_law.py, tools/gen_genesis_everyday.py
 - **НЕ ИЗ ОТВЕТА, А ИЗ САМОГО ПОЛОЖЕНИЯ**  
   scripts/word_once.py, tools/opinionforms.py
+- **НУЛЬ ЗРЯЧЕГО ОБЯЗАН ОТЛИЧАТЬСЯ ОТ НУЛЯ СЛЕПОГО**  
+  scripts/ledger_mute.py, scripts/partial_guard.py
 - **ОБЕ ВЕТВИ ВЕРДИКТА ОБЯЗАНЫ ЗВУЧАТЬ, И ЭТО ПРОВЕРЕНО ЧИСЛОМ**  
   tools/gen_genesis_inquiry_de_fr.py, tools/gen_genesis_inquiry_pt_nl.py
 - **ОБЕЩАНИЕ ДОМА О СЕБЕ ЕСТЬ УТВЕРЖДЕНИЕ О СЕБЕ, И ПОТОМУ ПОДСУДНО**  

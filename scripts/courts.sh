@@ -188,6 +188,9 @@ COURTS=("courts/arith_court.py" "courts/algo_court.py"
         # ЧИСЛО БЕЗ ЗНАМЕНАТЕЛЯ — последняя строка каждого прибора леджера: сказано
         # ли, из скольких. Ноль без объёма — FAIL (закон holon).
         "scripts/denominator_census.py"
+        # НЕМОЙ ПРИБОР — кто стои́т в наборе, а вердикта в леджере не оставил НИ РАЗУ,
+        # хотя обрывы его там есть. Двадцать два суда молчали шесть дней ценою в 38 с.
+        "scripts/ledger_mute.py"
         # ПЕРЕПИСЬ ПОВТОРОВ — сколько строк свода суть точные копии (05.09: 50 %,
         # сверх LAW 40 %). Число, а не рубеж: потолок повтора — решение владельца.
         "scripts/repeat_census.py --свод"
@@ -207,7 +210,13 @@ COURTS=("courts/arith_court.py" "courts/algo_court.py"
         # таблиц дома; 0 прожитых строк; переписывается на каждой точке (ворота посадки читателя).
         "scripts/holdout_key.py"
         # МЕРА ДЕЙСТВИЯ — число меряет действие или считает носителей (род d5, 05.09)
-        "courts/holdforms_court.py" "courts/cmpframes_court.py" "courts/sceneforms_court.py" "courts/toolforms_court.py" "courts/verifyforms_court.py" "courts/planforms_court.py" "courts/episodeforms_court.py" "courts/summaryforms_court.py" "courts/opforms_court.py" "courts/readnum_court.py" "courts/mandateforms_court.py" "courts/personforms_court.py" "courts/selfmodelforms_court.py" "courts/signedworld_court.py" "courts/beforetails_court.py" "courts/discountroad_court.py" "courts/nomention_court.py" "courts/clockforms_court.py" "courts/mixedunits_court.py" "courts/dateforms_court.py" "courts/clockwords_court.py" "courts/speedforms_court.py" "courts/roundforms_court.py" "courts/orderforms_court.py" "courts/quantforms_court.py" "courts/roman_court.py" "courts/place_court.py" "courts/unitfrac_court.py" "courts/enough_court.py" "courts/numphrase_court.py" "courts/kinbearer_court.py" "courts/pronobject_court.py" "courts/proform_court.py" "courts/degrees_court.py" "courts/actturn_court.py" "courts/tempscale_court.py" "courts/action_measure_court.py" "courts/numberline_court.py" "courts/countfacts_court.py" "courts/letters_court.py" "courts/langcount_court.py" "courts/propcompare_court.py" "courts/price_court.py" "courts/translate_court.py" "courts/timeunits_court.py" "courts/svamp_court.py" "courts/measure_langs_court.py")
+        "courts/holdforms_court.py" "courts/cmpframes_court.py" "courts/sceneforms_court.py" "courts/toolforms_court.py" "courts/verifyforms_court.py" "courts/planforms_court.py" "courts/episodeforms_court.py" "courts/summaryforms_court.py" "courts/opforms_court.py" "courts/readnum_court.py" "courts/mandateforms_court.py" "courts/personforms_court.py" "courts/selfmodelforms_court.py" "courts/signedworld_court.py" "courts/beforetails_court.py" "courts/discountroad_court.py" "courts/nomention_court.py" "courts/clockforms_court.py" "courts/mixedunits_court.py" "courts/dateforms_court.py" "courts/clockwords_court.py" "courts/speedforms_court.py" "courts/roundforms_court.py" "courts/orderforms_court.py" "courts/quantforms_court.py" "courts/roman_court.py" "courts/place_court.py" "courts/unitfrac_court.py" "courts/enough_court.py" "courts/numphrase_court.py" "courts/kinbearer_court.py" "courts/pronobject_court.py" "courts/proform_court.py" "courts/degrees_court.py" "courts/actturn_court.py" "courts/tempscale_court.py" "courts/action_measure_court.py" "courts/numberline_court.py" "courts/countfacts_court.py" "courts/letters_court.py" "courts/langcount_court.py" "courts/propcompare_court.py" "courts/price_court.py" "courts/translate_court.py" "courts/timeunits_court.py" "courts/svamp_court.py" "courts/measure_langs_court.py"
+        # СТРАЖ ЧАСТНОГО ИТОГА — ПОСЛЕДНИМ, И ЭТО НЕ ПОРЯДОК, А УСЛОВИЕ МЕРЫ: он
+        # судит СЛЕД ЭТОГО ЖЕ ПРОГОНА (reports/SUITE-TRACE.tsv, пишется по ходу), и
+        # всякое место раньше конца дало бы ему неполный след. Дорогой прибор,
+        # молчащий до самого вердикта, при обрыве отдаёт своду ноль байт за все
+        # свои часы.
+        "scripts/partial_guard.py")
 # ПРИБОРЫ ИДУТ ПАЧКАМИ, А ВЕРДИКТ ОСТАЁТСЯ ОДНОЙ ЛЕНТОЙ (05.09).
 #
 # Набор шёл в один поток — 70 минут по меткам леджера на 144 прибора, — и точка
@@ -317,15 +326,40 @@ run_one() {
   # и я его нарушил, а прежние опыты дали от того числа 84 и 93 вместо истины.
   #
   #     СКРИПТ ПИШЕТСЯ ТЕМ ЯЗЫКОМ, КОТОРЫЙ ЕГО ЧИТАЕТ, А НЕ ТЕМ, КОТОРЫМ ЕГО ДУМАЮТ.
-  local idx entry tool rc t0 t1 pypid
+  # ВЫВОД ИДЁТ НЕБУФЕРИЗОВАННЫМ (`-u`), И ЭТО КУПЛЕНО ЗАМЕРОМ (12.09).
+  #
+  # CPython, чей stdout перенаправлен в ФАЙЛ, буферизует его блоками по 8 КБ.
+  # Замер: скрипт, печатающий строку каждые 50 мс, снятый через две секунды,
+  # оставил РОВНО НОЛЬ БАЙТ; он же под `-u` — 34 строки и 3 424 байта.
+  #
+  #     ОБОРВАННЫЙ ПРИБОР ТЕРЯЛ НЕ ТОЛЬКО ВЕРДИКТ, НО И ВСЮ РАБОТУ — даже тот,
+  #     что честно печатал по ходу дела. Буфер стирал частный итог вернее, чем
+  #     привычка печатать в конце: та хоть видна в исходнике, а этот невидим.
+  #
+  # Отсюда же поправка к ночному закону «прибор, печатающий только в конце,
+  # оставляет по обрыве 0 байт»: печатать по ходу было НЕДОСТАТОЧНО, покуда
+  # набор не просил вывода без буфера.
+  local idx entry tool rc t0 t1 pypid watchpid
   idx="$1"; entry="$2"
   set -- $entry; tool="$1"; shift
   t0=$(date +%s)
-  python3 "$tool" "$@" > "$TMPDIR_SUITE/$idx.out" 2>&1 &
+  python3 -u "$tool" "$@" > "$TMPDIR_SUITE/$idx.out" 2>&1 &
   pypid=$!
+  # СТОРОЖ ПЕРВОЙ СТРОКИ: сколько секунд прибор молчал, прежде чем сказал первое
+  # слово. Число это — мера ЧАСТНОГО ИТОГА: прибор, молчащий до самого конца,
+  # при обрыве не оставляет ничего, сколько бы часов он ни шёл. Судит его
+  # `scripts/partial_guard.py`; здесь лишь замер, и он идёт на настоящем прогоне,
+  # а не на лишнем — мера, требующая второго прогона, меряет второй прогон.
+  ( while kill -0 "$pypid" 2>/dev/null; do
+      [ -s "$TMPDIR_SUITE/$idx.out" ] && break
+      sleep 1
+    done
+    printf '%s\n' "$(( $(date +%s) - t0 ))" > "$TMPDIR_SUITE/$idx.first" ) &
+  watchpid=$!
   trap 'kill -TERM '"$pypid"' 2>/dev/null; exit 143' TERM INT
   wait "$pypid"; rc=$?
   trap - TERM INT
+  wait "$watchpid" 2>/dev/null
   t1=$(date +%s)
   printf '%s\n' "$((t1 - t0))" > "$TMPDIR_SUITE/$idx.sec"
   printf '%s
@@ -334,6 +368,7 @@ run_one() {
 }
 
 FELL=0
+TORN=0
 # СБОР ПАЧКИ: вывод по порядку индексов, строка леджера — здесь же, из родителя.
 flush_range() {
   # ИМЕНА ЗДЕСЬ МЕСТНЫЕ, И ЭТО НЕ ВКУС (09.09). Глобальная `entry` этой сборки ЗАТИРАЛА
@@ -345,7 +380,7 @@ flush_range() {
   #     ПРИБОР, ЧЕЙ ВЕРДИКТ ПРИНАДЛЕЖИТ СОСЕДУ, ХУЖЕ НЕ ЗАПУЩЕННОГО: не запущенный оставляет
   #     пустоту, а этот оставляет ЧУЖОЙ ЗЕЛЁНЫЙ. Найдено ледждером: 09.09 `prosetree_court.py`
   #     записан с вердиктом `notationvar_court.py`, слово в слово, при своём коде 0.
-  local k last_idx entry tool rc stamp out last sec
+  local k last_idx entry tool rc stamp out last sec first lines
   k="$1"; last_idx="$2"
   while [ "$k" -le "$last_idx" ]; do
     entry="${COURTS[$k]}"
@@ -356,7 +391,32 @@ flush_range() {
       k=$((k+1))
       continue
     fi
-    rc=$(cat "$TMPDIR_SUITE/$k.rc" 2>/dev/null || echo 2)
+    # ОБРЫВ НЕ ЕСТЬ СУД, И В ЛЕДЖЕР НЕ ИДЁТ (12.09).
+    #
+    # Файла `.rc` нет ровно в одном случае: `run_one` не дожил до его записи — прибор
+    # убит сигналом, либо набор прерван рукой. Прежде здесь стояло `|| echo 2`, и
+    # родитель писал в леджер СТРОКУ СУДА: код 2, вердикт пуст. Замер 12.09: строк
+    # леджера 7 997, из них с ПУСТЫМ вердиктом 1 982 (24%), из них 1 966 — за один
+    # день; приборов, чья ПОСЛЕДНЯЯ строка есть такой обрыв, — 221 из 316, при девяти
+    # действительно павших. Читатели леджера (`crystal.py`, `denominator_census.py`,
+    # точка) принимали это за вердикт: точка объявила «пало 311 из 311» о наборе,
+    # который не судил НИ РАЗУ.
+    #
+    #     ЗАПИСЬ ОБ ОБРЫВЕ, НЕОТЛИЧИМАЯ ОТ ЗАПИСИ О СУДЕ, ХУЖЕ МОЛЧАНИЯ: молчание
+    #     видно, а такая запись КРАСНА И ПРАВДОПОДОБНА. Это тот же род беды, что
+    #     «вердикт, принадлежащий соседу», — но наоборот: не чужой зелёный, а СВОЙ
+    #     КРАСНЫЙ ЗА РАБОТУ, КОТОРОЙ НЕ БЫЛО.
+    #
+    # Ныне обрыв называется вслух, считается отдельно и в леджер не пишется: леджер
+    # есть запись СУДОВ. Прибор, оборванный на дереве, где его прежний вердикт зелён,
+    # при следующем `--продолжить` законно пропустится — дерево не двигалось.
+    if [ ! -f "$TMPDIR_SUITE/$k.rc" ]; then
+      printf 'СУД ОБОРВАН %-24s (кода не оставил — прерван, не судил)\n' "$(basename "$tool")"
+      TORN=$((TORN+1))
+      k=$((k+1))
+      continue
+    fi
+    rc=$(cat "$TMPDIR_SUITE/$k.rc")
     stamp=$(cat "$TMPDIR_SUITE/$k.ts" 2>/dev/null || date -u +%Y-%m-%dT%H:%M:%SZ)
     out=$(cat "$TMPDIR_SUITE/$k.out" 2>/dev/null)
     # ЛЕДЖЕР БЕРЁТ ВЕРДИКТ, А НЕ ПОСЛЕДНЮЮ СТРОКУ (07.09).
@@ -384,6 +444,13 @@ flush_range() {
     sec=$(cat "$TMPDIR_SUITE/$k.sec" 2>/dev/null || echo -1)
     printf '%s\t%s\t%s\n' "$stamp" "$(basename "$tool")" "$sec" >> "$TMPDIR_SUITE/cost"
     printf '%s\t%s\t%s\n' "$stamp" "$(basename "$tool")" "$sec" >> reports/SUITE-COST.tsv
+    # СЛЕД ЧАСТНОГО ИТОГА — СВОЙ ФАЙЛ, А НЕ ПЯТОЕ ПОЛЕ ЧУЖОГО: у следа цены свой
+    # договор о трёх полях, и `court_catch` с `crystal` читают его по местам.
+    # Поля: метка, имя, секунд всего, секунд до ПЕРВОЙ строки, строк вывода.
+    first=$(cat "$TMPDIR_SUITE/$k.first" 2>/dev/null || echo -1)
+    lines=$(printf '%s\n' "$out" | grep -c . || true)
+    printf '%s\t%s\t%s\t%s\t%s\n' "$stamp" "$(basename "$tool")" "$sec" "$first" "$lines" \
+      >> reports/SUITE-TRACE.tsv
     if [ "$rc" = 0 ]; then
       printf 'СУД ЦЕЛ   %-26s %s\n' "$(basename "$tool")" "$last"
     else
@@ -501,6 +568,11 @@ fi
 if [ "$SKIPPED" -gt 0 ]; then
   echo "СУДЫ КОРПУСА: пропущено по леджеру $SKIPPED (зелены на этом же дереве)"
 fi
+# ОБОРВАННОЕ НАЗЫВАЕТСЯ ВСЛУХ ТОЧНО ТАК ЖЕ, И ПО ТОЙ ЖЕ ПРИЧИНЕ: прогон, молчащий об
+# оборванном, отчитывается за работу, которой не было, — только красным, а не зелёным.
+if [ "$TORN" -gt 0 ]; then
+  echo "СУДЫ КОРПУСА: ОБОРВАНО $TORN из ${#COURTS[@]} — не судили и в леджер не писаны"
+fi
 # ПЯТЬ САМЫХ ДОРОГИХ ПРИБОРОВ ЭТОГО НАБОРА — чтобы цена была видна тому, кто ждал.
 if [ -s "$TMPDIR_SUITE/cost" ]; then
   echo "--- дороже всех (секунд):"
@@ -522,7 +594,11 @@ fi
 #
 # След пишется ВСЕГДА — и при целости, и при падении: след, пишущийся лишь при удаче, лжёт
 # молчанием так же, как прибор.
+# ПОЗА СЛЕДА РАЗЛИЧАЕТ ПАДЕНИЕ И ОБРЫВ: «ПАЛО» есть суд, сказавший FAIL; «ОБОРВАН»
+# есть набор, не досчитанный до конца. Полей по-прежнему четыре — договор со `point.sh`
+# не тронут, третье поле остаётся числом ПАВШИХ, а не суммой павших с оборванными.
 printf '%s\t%s\t%s\t%s\n' "$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
-  "$([ "$FELL" = 0 ] && echo ЦЕЛ || echo ПАЛО)" "$FELL" "${#COURTS[@]}" \
+  "$([ "$FELL" != 0 ] && echo ПАЛО || { [ "$TORN" != 0 ] && echo ОБОРВАН || echo ЦЕЛ; })" \
+  "$FELL" "${#COURTS[@]}" \
   > reports/SUITE-LAST.tsv
-exit $((FELL > 0))
+exit $(( (FELL > 0) || (TORN > 0) ))
