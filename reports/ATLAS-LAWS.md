@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 235 законов
+# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 236 законов
 
 Собран из докстрингов и комментариев `tools`, `courts`, `scripts` орудием
 `tools/law_atlas.py`. Взяты ОБЩИЕ законы — те, что держатся не одним файлом.
@@ -6,7 +6,7 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 4436 разных законов на 5083 упоминаний; сказанных однажды — 4201, и они остаются при своём месте.
+Всего в дереве 4436 разных законов на 5090 упоминаний; сказанных однажды — 4200, и они остаются при своём месте.
 
 
 ## Держат 56 файлов
@@ -69,6 +69,10 @@
 
 - **ОТКАЗ ЕСТЬ ТАКОЕ ЖЕ УТВЕРЖДЕНИЕ**  
   courts/algo_court.py, courts/compsci_court.py, courts/formula_court.py, courts/linalg_court.py, courts/machine_court.py, courts/sequence_court.py … и ещё 3
+- **ПРИБОР, ЗЕЛЕНЕЮЩИЙ ОТ НУЛЯ НАХОДОК, ОБЯЗАН ДОКАЗАТЬ, ЧТО УМЕЕТ НАХОДИТЬ**  
+  scripts/build_dated.py, scripts/genre_measured.py, scripts/ladder_full.py, scripts/margin_census.py, scripts/name_crossed.py, scripts/permuted_fresh.py … и ещё 3
+- **ПРОБА НА ЗАВЕДОМО ИЗВЕСТНОМ**  
+  scripts/build_dated.py, scripts/genre_measured.py, scripts/ladder_full.py, scripts/margin_census.py, scripts/name_crossed.py, scripts/permuted_fresh.py … и ещё 3
 
 ## Держат 8 файлов
 
@@ -85,10 +89,8 @@
   courts/cyber_court.py, courts/episode_court.py, courts/everyday_court.py, courts/markup_court.py, courts/notationvar_court.py, courts/proof_court.py … и ещё 1
 - **МИР БЕЗ ВОПРОСНОЙ ПОВЕРХНОСТИ ПОКАЗЫВАЕТ ОТВЕТ, НЕ ПОКАЗЫВАЯ ЗАДАЧИ**  
   tools/digitlenforms.py, tools/numlabelforms.py, tools/onestepforms.py, tools/parityforms.py, tools/placevalforms.py, tools/powforms.py … и ещё 1
-- **ПРИБОР, ЗЕЛЕНЕЮЩИЙ ОТ НУЛЯ НАХОДОК, ОБЯЗАН ДОКАЗАТЬ, ЧТО УМЕЕТ НАХОДИТЬ**  
-  scripts/build_dated.py, scripts/genre_measured.py, scripts/ladder_full.py, scripts/margin_census.py, scripts/name_crossed.py, scripts/permuted_fresh.py … и ещё 1
-- **ПРОБА НА ЗАВЕДОМО ИЗВЕСТНОМ**  
-  scripts/build_dated.py, scripts/genre_measured.py, scripts/ladder_full.py, scripts/margin_census.py, scripts/name_crossed.py, scripts/permuted_fresh.py … и ещё 1
+- **ПРОБА ИДЁТ ПРИ ВСЯКОМ ПРОГОНЕ, А НЕ ПО ПРОСЬБЕ**  
+  scripts/build_dated.py, scripts/genre_measured.py, scripts/ladder_full.py, scripts/margin_census.py, scripts/name_crossed.py, scripts/property_named.py … и ещё 1
 - **СУД НЕ СМЕЕТ ЧИТАТЬ ЧУЖОЙ РОД**  
   courts/equation_court.py, courts/inquiry_es_it_court.py, courts/inquiry_pl_tr_court.py, courts/longdiv_court.py, courts/metalang_court.py, courts/relation_court.py … и ещё 1
 
@@ -107,8 +109,6 @@
   courts/divsense_court.py, courts/mapscale_court.py, courts/pctchange_court.py, courts/pctdiff_court.py, scripts/broken_law.py
 - **ЛОВУШКА, ПОКАЗАННАЯ ОДНОЙ СТОРОНОЙ, УЧИТ НОВОЙ ЛОВУШКЕ**  
   tools/fenceforms.py, tools/gen_genesis_measuregrow.py, tools/gen_genesis_ratetrap.py, tools/measuregrowforms.py, tools/ratetrapforms.py
-- **ПРОБА ИДЁТ ПРИ ВСЯКОМ ПРОГОНЕ, А НЕ ПО ПРОСЬБЕ**  
-  scripts/build_dated.py, scripts/genre_measured.py, scripts/ladder_full.py, scripts/margin_census.py, scripts/name_crossed.py
 - **РАМКА ПОРОДИЛА СТРАНИЦУ — ОСТАЛСЯ СЧЁТ, И СЧИТАЕТСЯ ТОЛЬКО ОТВЕЧАЮЩАЯ ЧАСТЬ**  
   tools/bothforms.py, tools/estimforms.py, tools/precforms.py, tools/sameshareforms.py, tools/zerodivforms.py
 - **РУБЕЖ ОБЪЯВЛЕН ПО ДОСТИГНУТОМУ**  
@@ -382,6 +382,8 @@
   scripts/agree_traps.py, scripts/sign_traps.py
 - **ПРИЗНАК, ИСКОМЫЙ ПОДСТРОКОЙ, НАХОДИТСЯ В ТОМ, КТО О НЁМ ГОВОРИТ**  
   scripts/sign_intact.py, tools/court_atlas.py
+- **ПРИЗНАК, ИЩУЩИЙ НЕВОЗМОЖНОЕ, ВЕДЁТ СЕБЯ КАК ПРИЗНАК, ИЩУЩИЙ РЕДКОЕ**  
+  scripts/arith_debt.py, scripts/property_named.py
 - **ПРИЗНАК, ЧИТАЮЩИЙ ЗВЕНО ЦЕПИ КАК ЦЕЛОЕ РАВЕНСТВО, НАХОДИТ ЛОЖЬ В СВОЁМ ЖЕ ЧТЕНИИ**  
   courts/closure_court.py, tools/closureforms.py
 - **ПРОБА, НЕДОСЧИТЫВАЮЩАЯ СУЩЕСТВУЮЩЕЕ, ЛЖЁТ О ПРОБЕЛЕ**  
