@@ -848,8 +848,9 @@ def _образцы():
                         поверхности.append(двойник)
             for рамка in поверхности:
                 куски = []
+                _эк = _fr.в_образце if язык == "fr" else re.escape
                 for кусок in re.split(r"(\{[^}]+\})", рамка):
-                    куски.append(дыры[кусок[1:-1]] if кусок.startswith("{") else re.escape(кусок))
+                    куски.append(дыры[кусок[1:-1]] if кусок.startswith("{") else _эк(кусок))
                 вон.append((re.compile("^" + "".join(куски) + "$"), язык, форма))
     return вон
 
@@ -1322,7 +1323,11 @@ def _образцы_актов():
             for р in поверхности:
                 if р is None:
                     continue
-                куски = [дыры[к[1:-1]] if к.startswith("{") else re.escape(к) for к in re.split(r"(\{[^}]+\})", р)]
+                # ЭЛИЗИЯ СТОИТ НА СТЫКЕ КУСКА И ДЫРЫ, И ПОТОМУ ЭКРАНИРОВАНИЕ ЗНАЕТ О НЕЙ:
+                # рамка говорит «de plus que {Y}», страница — «de plus qu'Anne», и образец,
+                # писанный `re.escape`, не совпал бы с собственной страницей дома.
+                _эк = _fr.в_образце if язык == "fr" else re.escape
+                куски = [дыры[к[1:-1]] if к.startswith("{") else _эк(к) for к in re.split(r"(\{[^}]+\})", р)]
                 вон.append((re.compile("^" + "".join(куски) + "$"), язык, форма))
     return вон
 

@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 269 миров, 430856 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 270 миров, 430984 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -448,7 +448,7 @@
 
 ## АКТ «compare» — сравнить двоих: больше, меньше, во столько же раз
 
-Миров 21, строк 16150.
+Миров 22, строк 16278.
 
 - **`cmpframes`** (6480 строк; recompute, whole_only)  
   **FRAMES OF COMPARISON** — the largest class of the reader's lies on the held-out key (05.09: twelve of fifteen — «9 flexiones más que», «in più/in meno di», «meer/minder dan», «więcej/mniej niż»: the marker is not bought and the answer takes a neighbouring…
@@ -478,6 +478,8 @@
   **REWRITING** — one number written two ways. d5 named sixty-two starving collections of the organism, and `rewrite_facts` was among them: the corpus had no rewriting shows at all.
 - **`analog`** (144 строк; recompute, whole_only)  
   **LIKENESS** — analogy and its CHECK, not its feeling.
+- **`measure`** (128 строк; recompute, whole_only, exact_only)  
+  **ОБЩАЯ МЕРА** — НАИБОЛЬШИЙ ОБЩИЙ ДЕЛИТЕЛЬ ДЕЛИТСЯ НА КАЖДЫЙ ОБЩИЙ ДЕЛИТЕЛЬ, И ПОТОМУ СЛОВО «НАИБОЛЬШИЙ» СКАЗЫВАЕТ О НЁМ МЕНЬШЕ, ЧЕМ ПРАВДА. Замер 12.09: «наибольший общий делитель» живёт в своде двумя строками пласта алгоритмов и восемью рамками взаимной п…
 - **`negquant`** (110 строк; recompute, whole_only, exact_only)  
   **ОТРИЦАНИЕ КВАНТОРА** — «НЕ ВСЕ КРАСНЫЕ» И «ВСЕ НЕ КРАСНЫЕ» СУТЬ РАЗНЫЕ ВЫСКАЗЫВАНИЯ. Замер 12.09 по девятому десятку понятий: «не все ≠ все не» — ноль упоминаний и ноль показов; «отрицание квантора» — ноль и ноль.
 - **`dim`** (110 строк; recompute, declared, whole_only, exact_only, declared_table_only)  
@@ -592,5 +594,5 @@
     ОБЪЯВЛЕНИЕ В ТРИДЦАТЬ ЗНАКОВ НЕ ЛЖЁТ И НЕ ГОВОРИТ: читатель узнаёт имя мира
     и ничего сверх него.
 
-Миров: **0** из 269.
+Миров: **0** из 270.
 
