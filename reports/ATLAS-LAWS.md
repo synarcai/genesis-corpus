@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 230 законов
+# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 231 законов
 
 Собран из докстрингов и комментариев `tools`, `courts`, `scripts` орудием
 `tools/law_atlas.py`. Взяты ОБЩИЕ законы — те, что держатся не одним файлом.
@@ -6,7 +6,7 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 4402 разных законов на 5030 упоминаний; сказанных однажды — 4172, и они остаются при своём месте.
+Всего в дереве 4403 разных законов на 5033 упоминаний; сказанных однажды — 4172, и они остаются при своём месте.
 
 
 ## Держат 56 файлов
@@ -197,6 +197,8 @@
   scripts/ask_width.py, scripts/sentence_cover.py, scripts/verdict_cover.py
 - **ЧИСЛА ПРОВЕРЯЮТСЯ ПРИ ВВОЗЕ**  
   tools/induforms.py, tools/inferforms.py, tools/rewriteforms.py
+- **ЧИСЛО ИЗ ПРОШЛОГО ЗАМЕРА ЧЕСТНО РОВНО ТОГДА, КОГДА НАЗВАН ДЕНЬ ЗАМЕРА**  
+  scripts/margin_census.py, scripts/readme_court.py, tools/court_atlas.py
 - **ЧТО СУД НЕ ЧИТАЕТ, ТО ОН ПОДПИСЫВАЕТ**  
   scripts/sentence_cover.py, scripts/verdict_cover.py, tools/panel.py
 
@@ -240,6 +242,8 @@
   scripts/manifest_court.py, tools/manifest_kinds.py
 - **ГРАНИЦА ОБЪЯВЛЕНА ЗДЕСЬ, А НЕ СПРЯТАНА**  
   courts/langform_court.py, courts/langrule_court.py
+- **ДАТА БЕРЁТСЯ ВМЕСТЕ С ВЕРДИКТОМ**  
+  scripts/margin_census.py, tools/court_atlas.py
 - **ДЕЙСТВИЕ БЕРЁТСЯ ИЗ ВОПРОСА, А НЕ ИЗ СЛОВА УСЛОВИЯ**  
   courts/inverse_court.py, tools/inverseforms.py
 - **ДЕЛИМОСТЬ СТРОИТСЯ ОТ ОТВЕТА, А НЕ ВЫПАДАЕТ ПО УДАЧЕ**  
@@ -494,8 +498,6 @@
   tools/chanceforms.py, tools/likelyforms.py
 - **ЧИСЛА ВЫВОДЯТСЯ ДИАПАЗОНАМИ, А НЕ ПЕРЕЧИСЛЯЮТСЯ**  
   tools/gen_genesis_metalang.py, tools/gen_genesis_ru_compare.py
-- **ЧИСЛО ИЗ ПРОШЛОГО ЗАМЕРА ЧЕСТНО РОВНО ТОГДА, КОГДА НАЗВАН ДЕНЬ ЗАМЕРА**  
-  scripts/readme_court.py, tools/court_atlas.py
 - **ЧИСЛО НОВОЕ НЕСРАВНИМО СО СТАРЫМ**  
   scripts/ask_width.py, scripts/word_mutants.py
 - **ЧИСЛО ОБЪЯВЛЕНО ПОСЛЕ ЗАМЕРА, А НЕ ДО**  
