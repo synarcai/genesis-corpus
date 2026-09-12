@@ -38,7 +38,10 @@ functions of the manifest, courts re-execute every claim, executor
 houses are shared by generator and court, and the whole is closed on
 itself by instruments whose verdicts are kept in a ledger — see
 `declarations/KNOWLEDGE-ENGINE.md` (in Russian, the working language of
-the college) and `python3 scripts/crystal.py`.
+the college) and `python3 scripts/crystal.py`. The signs the corpus writes
+with — `×` and not `*`, `−` and not a hyphen, `«»` in every language — are
+declared in `declarations/WRITING.md`, together with the worlds where a
+machine record is the subject and therefore lawful.
 
 The foundations covered: **language** (paradigms shown in frames that
 determine the form, never in tables), **mathematics** (arithmetic,
