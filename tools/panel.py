@@ -385,6 +385,9 @@ recache.установить()
            # ТУРЕЦКАЯ ГАРМОНИЯ (12.09, шестнадцатый дом): «-lar» и «-ler» суть ОДИН суффикс,
            # и выбирает его обличье ПОСЛЕДНЯЯ гласная основы, а при числе его нет вовсе.
            "trharm_court",
+           # ВЬЕТНАМСКОЕ СЧЁТНОЕ (13.09, семнадцатый дом): третий язык разрядов в своде, и
+           # набор его НЕ СОВПАДАЕТ с китайским — «con dao» ломает догадку о смысле.
+           "viclass_court",
            # ЭПИЗОД (05.09, архитектура агента: лента актов, префикс леджера, ничья шагов)
            "episodeforms_court", "summaryforms_court", "opforms_court", "readnum_court", "mandateforms_court", "personforms_court", "selfmodelforms_court", "signedworld_court", "beforetails_court", "discountroad_court", "nomention_court", "clockforms_court", "mixedunits_court", "dateforms_court", "clockwords_court", "speedforms_court", "enough_court", "numphrase_court", "kinbearer_court", "pronobject_court", "proform_court", "degrees_court", "actturn_court", "tempscale_court", "unitfrac_court", "place_court", "roman_court", "quantforms_court", "orderforms_court", "roundforms_court")
 
