@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 258 миров, 427809 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 258 миров, 427877 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -450,7 +450,7 @@
 
 ## АКТ «decide» — решить случай: вердикт с основанием рядом
 
-Миров 20, строк 15606.
+Миров 20, строк 15674.
 
 - **`verifyforms`** (3285 строк; recompute, whole_only)  
   **VERIFICATION** — «claim · check · verdict», and the pages where the instrument is OBLIGED to refuse (05.09, the agent architecture, the fourth market): a true claim checked by ANOTHER action cannot be confirmed — the verdict is «not verified», and the gro…
@@ -474,12 +474,12 @@
   **THE DIALOGUE ACT** — the organism's own turn, with confirmation and observation (06.09).
 - **`primes_langs`** (400 строк; recompute, unsigned_only)  
   **PRIME AND COMPOSITE IN EIGHT LANGUAGES (the owner's word: every language in surplus; the numbers world says it in en/ru): «97 ist eine Primzahl; ihre Teiler sind 1 und 97.», «91 ist keine Primzahl: 91 = 7 × 13.», «ist 91 eine Primzahl? nein: 91 ist keine …
+- **`onestep`** (350 строк; recompute, whole_only, unsigned_only)  
+  **ОДНОШАГОВОЕ УРАВНЕНИЕ** — НЕИЗВЕСТНОЕ НАХОДИТСЯ ОБРАТНЫМ ДЕЙСТВИЕМ: чтобы узнать слагаемое, вычитают; чтобы узнать множитель, делят.
 - **`enough`** (324 строк; recompute, exact_only)  
   **SUFFICIENCY** — the yes-or-no that is bought by arithmetic (06.09).
 - **`closure`** (298 строк; recompute, declared, whole_only, unsigned_only)  
   **ЗАМКНУТОСТЬ** — ОСТАНЕТСЯ ЛИ ИТОГ ТАМ ЖЕ, ГДЕ СЛАГАЕМЫЕ, и главное здесь — НЕСИММЕТРИЧНОСТЬ ДОКАЗАТЕЛЬСТВА. «Чётные замкнуты относительно сложения: 6 = 2 × 3, и 4 = 2 × 2, и 6 + 4 = 2 × 5 = 10» — итог чётен ПО РАЗБОРУ, а не по примеру; «нечётные НЕ замкну…
-- **`onestep`** (282 строк; recompute, whole_only, unsigned_only)  
-  **ОДНОШАГОВОЕ УРАВНЕНИЕ** — НЕИЗВЕСТНОЕ НАХОДИТСЯ ОБРАТНЫМ ДЕЙСТВИЕМ: чтобы узнать слагаемое, вычитают; чтобы узнать множитель, делят.
 - **`nesuf`** (276 строк; recompute, whole_only)  
   **THE NECESSARY AND THE SUFFICIENT** — TWO QUESTIONS ABOUT ONE CONDITION, AND THEIR ANSWERS DIFFER. Measured 11.09 across the 255 show worlds and across the declarations of all worlds: «необходимо и достаточно», «necessary and sufficient» — NONE. The corpus…
 - **`object`** (272 строк; recompute, whole_only)  
