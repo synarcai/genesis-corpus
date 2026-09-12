@@ -358,6 +358,9 @@ recache.установить()
            # НЕМЕЦКОЕ МНОЖЕСТВЕННОЕ (12.09, седьмой дом): шесть способов в восемнадцати
            # словах, и ни слово, ни род не говорят, который взять.
            "deplur_court",
+           # ДВА «БЫТЬ» (12.09, восьмой дом): испанский делит надвое то, что русский и
+           # английский держат одним словом, и выбор МЕНЯЕТ СМЫСЛ, а не только оттенок.
+           "serestar_court",
            # ЭПИЗОД (05.09, архитектура агента: лента актов, префикс леджера, ничья шагов)
            "episodeforms_court", "summaryforms_court", "opforms_court", "readnum_court", "mandateforms_court", "personforms_court", "selfmodelforms_court", "signedworld_court", "beforetails_court", "discountroad_court", "nomention_court", "clockforms_court", "mixedunits_court", "dateforms_court", "clockwords_court", "speedforms_court", "enough_court", "numphrase_court", "kinbearer_court", "pronobject_court", "proform_court", "degrees_court", "actturn_court", "tempscale_court", "unitfrac_court", "place_court", "roman_court", "quantforms_court", "orderforms_court", "roundforms_court")
 
