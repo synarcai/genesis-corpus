@@ -2382,6 +2382,29 @@
       "text": "shows"
     },
     {
+      "name": "fipart",
+      "file": "datasets/genesis_fipart.txt",
+      "genre": "ФИНСКИЙ ПАРТИТИВ — СВОД ОТВЕРГАЛ «kaksi talo» И НЕ СКАЗАЛ, ЧТО ПОСЛЕ ЧИСЛА СТОИ́Т ЕДИНСТВЕННОЕ. Замер 13.09 ПО ПЛАСТУ ФИНСКОГО (2 995 строк): talo 40 / taloa 38 / talot 24; kukka 38 / kukkaa 34 / kukat 24; kirja 39 / kirjaa 34 / kirjat 24; kauppa 33 / kauppaa 32 / kaupat 24; пары «kaksi taloa» 17, «kaksi kukkaa» 13, «kaksi kirjaa» 12; отказ «¬ Minä näen kaksi talo» — есть; строк, объясняющих ПАРТИТИВ, — НОЛЬ. Все три формы свод пишет десятками строк и ни одной не говорит, ЧТО ЭТО ТРИ РАЗНЫЕ ФОРМЫ и когда берётся которая. Пять родов и четыре ложных вывода: «после числа стои́т именительный» (стои́т ПАРТИТИВ), «партитив есть множественное» (это ЕДИНСТВЕННОЕ число в особом падеже; множественное «talot» после числа НЕ СТОИ́Т), «при единице то же самое» (при «yksi» — именительный, партитив приходит со ДВУХ), «сосед делает так же» (русский «два дома» и английский «two houses» ставят МНОЖЕСТВЕННОЕ). ЯЗЫК, СТАВЯЩИЙ ПОСЛЕ ЧИСЛА ЕДИНСТВЕННОЕ ЧИСЛО, НЕ СЧИТАЕТ ХУЖЕ СОСЕДА — он говорит о ЧАСТИ, а не о собрании, и падеж этот зовётся частичным недаром. ПАДЕЖ И ЧИСЛО — ДВЕ РАЗНЫЕ ВЕЩИ, И ЗДЕСЬ РАБОТАЕТ ПЕРВОЕ. This is the seventy-first trap of the series — «the plural stands after a number», and Finnish breaks it. Дом не знает финского: тройки форм и переводы объявлены рукой, и сказано, что рукой; русская форма при числе берётся у дома единиц; взяты только те слова, чьи ВСЕ ТРИ формы стоя́т в пласте свода; о партитиве при отрицании, при глаголах незавершённого действия и о чередовании согласных дом молчит.",
+      "act": [
+        "compare",
+        "expound",
+        "inflect",
+        "refute"
+      ],
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "declared_table_only"
+      ],
+      "assemblies": [
+        "school"
+      ],
+      "size": 40420,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
       "name": "formula_lang",
       "file": "datasets/genesis_formula_lang.txt",
       "genre": "formula and speech, converted both ways at any depth: ONE expression TREE with four surfaces (LaTeX, glyphs, English words, Russian words) and four inverse walks written apart; a compound argument is always spoken in brackets, which is what makes speech parsable at any depth; the court parses BOTH sides of a conversion and requires the SAME TREE, and the home's oracle proves all eight walks agree on six thousand trees to depth five ЗАПИСЬ ЗДЕСЬ МАШИННАЯ, И ЭТО ОБЪЯВЛЕНО (12.09): дефис вместо знака минус, звёздочка вместо ×, косая черта вместо ÷. Читать обе записи учит мир `md_latex`. БЛИЗКАЯ РОДНЯ, НАЗВАННАЯ С РАЗЛИЧИЕМ: `equation` спрашивает, ИСТИННО ли утверждение о корне, и решает подстановкой. Здесь истина не спрашивается вовсе: одно и то же дерево выражения записывается ЧЕТЫРЬМЯ способами, и проверяется обратимость перевода. И `equation_signed` — та же лестница на отрицательных корнях: там спрошена ИСТИНА утверждения при одной поверхности, здесь — ОБРАТИМОСТЬ перевода при четырёх.",
@@ -2485,10 +2508,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 40615261,
+      "size": 40655683,
       "tiers": [],
       "text": "mix",
-      "lines": 437872
+      "lines": 438022
     },
     {
       "name": "fuseprep",
@@ -10607,10 +10630,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 33359665,
+      "size": 33400087,
       "tiers": [],
       "text": "mix",
-      "lines": 393290
+      "lines": 393440
     },
     {
       "name": "school_biling_v2c",

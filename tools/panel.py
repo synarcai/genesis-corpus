@@ -401,6 +401,9 @@ recache.установить()
            # ЯПОНСКОЕ СЧЁТНОЕ (13.09, двадцатый дом): четвёртый язык разрядов и четвёртое их
            # устройство; знак «本» служит и именем, и счётным — читается по месту.
            "jaclass_court",
+           # ФИНСКИЙ ПАРТИТИВ (13.09, двадцать первый дом): после числа стои́т ЕДИНСТВЕННОЕ в
+           # частичном падеже, а не множественное, — падеж работает там, где сосед берёт число.
+           "fipart_court",
            # ЭПИЗОД (05.09, архитектура агента: лента актов, префикс леджера, ничья шагов)
            "episodeforms_court", "summaryforms_court", "opforms_court", "readnum_court", "mandateforms_court", "personforms_court", "selfmodelforms_court", "signedworld_court", "beforetails_court", "discountroad_court", "nomention_court", "clockforms_court", "mixedunits_court", "dateforms_court", "clockwords_court", "speedforms_court", "enough_court", "numphrase_court", "kinbearer_court", "pronobject_court", "proform_court", "degrees_court", "actturn_court", "tempscale_court", "unitfrac_court", "place_court", "roman_court", "quantforms_court", "orderforms_court", "roundforms_court")
 
