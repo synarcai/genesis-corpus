@@ -1483,6 +1483,30 @@
       "text": "shows"
     },
     {
+      "name": "direct",
+      "file": "datasets/genesis_direct.txt",
+      "genre": "ПРЯМАЯ РЕЧЬ — ЗНАК ПРИ НЕЙ СТАВИТСЯ ПРАВИЛОМ, А НЕ НА СЛУХ. Замер 12.09 по всему своду в 39 МБ: «прямая речь» — НОЛЬ вхождений, «слова автора» — ноль, «— сказал» — ноль; свод несёт мир диалога и мир сцены, где люди говорят, — но ни разу не показывает, ПО КАКОМУ ПРАВИЛУ речь отделяется от слов автора. СВОД, ПИШУЩИЙ РЕЧЬ И НЕ ПОКАЗЫВАЮЩИЙ ЕЁ ЗНАКА, УЧИТ ПОДРАЖАНИЮ ВМЕСТО ПРАВИЛА. Семь родов, 28 страниц, русское письмо: речь впереди («Иди сюда», — сказал он), автор впереди (Он сказал: «Иди сюда»), речь разорвана («Иди, — сказал он, — сюда»), кавычки ёлочкой как объявленное письмо свода. ДВА РОДА СУТЬ ОДНА ЛОВУШКА, ПОКАЗАННАЯ ОБЕИМИ СТОРОНАМИ: «точка речи СНЯТА, и на её место встала запятая» рядом с «речь кончается вопросительным знаком, и он ОСТАЁТСЯ, А ЗАПЯТОЙ НЕТ ВОВСЕ». ПРАВИЛО, СКАЗАННОЕ БЕЗ СВОЕГО ИСКЛЮЧЕНИЯ, ПРИМЕНЯЕТСЯ И ТАМ, ГДЕ ИСКЛЮЧЕНИЕ; А ИСКЛЮЧЕНИЕ БЕЗ ПРАВИЛА СТАНОВИТСЯ ПРАВИЛОМ. Это the fifty-first trap of the series — знак конца речи, снятый там, где он остаётся. Граница названа: дом показывает РУССКОЕ письмо прямой речи. Знак называется ИМЕНЕМ, а не ставится сам: суд письма прочёл бы поставленный «вопросительный знак» как настоящий вопрос строки — МЕРА, СЧИТАЮЩАЯ УПОМИНАНИЕ УПОТРЕБЛЕНИЕМ, НАКАЗЫВАЕТ ЗА ТО, ЧЕМУ УЧИТ. БЛИЗКАЯ РОДНЯ, НАЗВАННАЯ С РАЗЛИЧИЕМ: `speech` есть суд СВЯЗИ речи — он исполняет соединение, а не читает его; здесь же речь не соединяется, а ОТДЕЛЯЕТСЯ от слов автора.",
+      "act": [
+        "compare",
+        "decide",
+        "expound",
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only",
+        "exact_only"
+      ],
+      "assemblies": [
+        "school"
+      ],
+      "size": 9950,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
       "name": "discountroad",
       "file": "datasets/genesis_discountroad.txt",
       "genre": "THE MONEY ROAD WITH A DISCOUNT (05.09, the SECOND gate of the silence atlas by d5's measure: 72–76 turns of the grove stop on the money road). A price, a discount ON EACH item, and FOUR questions over one and the same pair of numbers: the price after the discount («how much is paid for one pack? $51: 76 − 25 = 51»), the bill for several («for 5 packs? $255: 5 × 51 = 255» — the discounted price multiplies, not the full one), how many items fit into a sum at the FULL price («for $380? 5: 380 ÷ 76 = 5») and how many at the DISCOUNTED price («for $255? 5: 255 ÷ 51 = 5»). The four stand over one pair on purpose: the market must buy the QUESTION, the arithmetic it already has. The currency sign stands where the language puts it, and the accusative is written where the language bends it («на каждую пачку», «na każdą paczkę») (tools/discountroad.py). CLOSED world.",
@@ -2346,10 +2370,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 39531490,
+      "size": 39541442,
       "tiers": [],
       "text": "mix",
-      "lines": 432182
+      "lines": 432210
     },
     {
       "name": "gender",
@@ -10307,10 +10331,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 32275894,
+      "size": 32285846,
       "tiers": [],
       "text": "mix",
-      "lines": 387600
+      "lines": 387628
     },
     {
       "name": "school_biling_v2c",
