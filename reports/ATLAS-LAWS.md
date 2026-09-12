@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 231 законов
+# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 235 законов
 
 Собран из докстрингов и комментариев `tools`, `courts`, `scripts` орудием
 `tools/law_atlas.py`. Взяты ОБЩИЕ законы — те, что держатся не одним файлом.
@@ -6,7 +6,7 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 4419 разных законов на 5049 упоминаний; сказанных однажды — 4188, и они остаются при своём месте.
+Всего в дереве 4433 разных законов на 5071 упоминаний; сказанных однажды — 4198, и они остаются при своём месте.
 
 
 ## Держат 56 файлов
@@ -126,6 +126,10 @@
   tools/chanceforms.py, tools/closureforms.py, tools/distforms.py, tools/opchoiceforms.py
 - **ПОДСАДКИ ПИСАНЫ ПОРЧЕЙ ЖИВЫХ СТРАНИЦ**  
   courts/kinbearer_court.py, courts/numphrase_court.py, courts/proform_court.py, courts/pronobject_court.py
+- **ПРИБОР, ЗЕЛЕНЕЮЩИЙ ОТ НУЛЯ НАХОДОК, ОБЯЗАН ДОКАЗАТЬ, ЧТО УМЕЕТ НАХОДИТЬ**  
+  scripts/genre_measured.py, scripts/name_crossed.py, scripts/permuted_fresh.py, scripts/second_copy.py
+- **ПРОБА НА ЗАВЕДОМО ИЗВЕСТНОМ**  
+  scripts/genre_measured.py, scripts/name_crossed.py, scripts/permuted_fresh.py, scripts/second_copy.py
 - **УНИВЕРСАЛИЯ СПРАШИВАЕТСЯ СВОИМ «ВЕРНО ЛИ, ЧТО**  
   courts/inquiry_de_fr_court.py, courts/inquiry_es_it_court.py, courts/inquiry_pl_tr_court.py, courts/inquiry_pt_nl_court.py
 - **ФОРМА, ОТЛИЧАЮЩАЯСЯ ОТ ПОКАЗА ОДНОЙ БУКВОЙ РОДА, ЕСТЬ ЭТОТ ЖЕ ПОКАЗ ИСПОРЧЕННЫЙ**  
@@ -378,8 +382,12 @@
   scripts/sign_intact.py, tools/court_atlas.py
 - **ПРИЗНАК, ЧИТАЮЩИЙ ЗВЕНО ЦЕПИ КАК ЦЕЛОЕ РАВЕНСТВО, НАХОДИТ ЛОЖЬ В СВОЁМ ЖЕ ЧТЕНИИ**  
   courts/closure_court.py, tools/closureforms.py
+- **ПРОБА ИДЁТ ПРИ ВСЯКОМ ПРОГОНЕ, А НЕ ПО ПРОСЬБЕ**  
+  scripts/genre_measured.py, scripts/name_crossed.py
 - **ПРОБА, НЕДОСЧИТЫВАЮЩАЯ СУЩЕСТВУЮЩЕЕ, ЛЖЁТ О ПРОБЕЛЕ**  
   tools/rhetoric.py, tools/syllabus.py
+- **ПРОБА, СДЕЛАННАЯ РУКОЮ И НЕ ЗАПИСАННАЯ, ДОКАЗЫВАЕТ ПРИБОР ОДНАЖДЫ И НЕ**  
+  scripts/permuted_fresh.py, scripts/second_copy.py
 - **ПРОВЕРКА ИДЁТ ТЕМ ЖЕ ПУТЁМ, ЧТО И ДЕЛО**  
   tools/behaviorforms.py, tools/linkforms.py
 - **ПРОВЕРКА МЕРЫ ПРИКЛАДЫВАЕТСЯ ЛИШЬ К ТОМУ, ЧТО СУД УЖЕ ПРИЗНАЛ СВОИМ**  
