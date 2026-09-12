@@ -114,6 +114,17 @@ without spaces; that is written down rather than smoothed over.
   paid on the day it was declared: 47 instruments owed a probe, and one of
   the first probes found a real blindness — the writing-integrity check
   knew only one of the two flavours of mojibake.
+- **A trap is shown from both sides.** Where a world shows a mistake, it
+  must also show the case where the mistaken rule gives the *right* answer,
+  and say why it is right there: `50 % of 20 is less than 10 % of 500`
+  stands beside `at one and the same base the larger percentage does win`.
+  A rule true in half the cases is not half a rule — it is a different
+  rule, and it fails not occasionally but in exactly half of all cases.
+  The traps are numbered, and the series is kept gapless and without
+  repeats by `scripts/trap_series.py`; the law itself is written down in
+  `declarations/BOTH-SIDES.md`, together with what it does *not* demand —
+  an equal number of pages per side, since the proportion is a fact of the
+  subject and forcing it would lie about how often the mistake occurs.
 
 ## Licence
 
