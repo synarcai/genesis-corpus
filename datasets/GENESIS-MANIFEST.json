@@ -5695,10 +5695,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 31920951,
+      "size": 31943591,
       "tiers": [],
       "text": "mix",
-      "lines": 385171
+      "lines": 385281
     },
     {
       "name": "full",
@@ -5713,10 +5713,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 39176547,
+      "size": 39199187,
       "tiers": [],
       "text": "mix",
-      "lines": 429753
+      "lines": 429863
     },
     {
       "name": "minimal",
@@ -6120,6 +6120,33 @@
         "school"
       ],
       "size": 11721,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
+      "name": "dim",
+      "file": "datasets/genesis_dim.txt",
+      "genre": "РАЗМЕРНОСТЬ — ЧТО СКЛАДЫВАТЬ МОЖНО, ЧТО НЕЛЬЗЯ, И ЧТО РОЖДАЕТСЯ ОТ УМНОЖЕНИЯ. Замер 12.09 по одиннадцатому десятку понятий: «единицы не складываются» — ноль упоминаний и ноль показов; «масса и вес» — ноль и ноль. А складывает свод непрестанно, и всё, что он складывает, однородно: читатель, видевший тысячи сложений и ни одного ОТКАЗА, выучит, что складывать можно всё. ПРАВИЛО, ВЫПОЛНЯЕМОЕ ВЕЗДЕ И НИГДЕ НЕ НАЗВАННОЕ, ЧИТАЕТСЯ КАК ОТСУТСТВИЕ ПРАВИЛА. Шесть родов, 110 страниц, два языка. Сложение однородного и ОТКАЗ разнородному («3 м и 4 кг — сложить НЕЛЬЗЯ: первое меряет длину, второе массу, и это не ноль и не ошибка счёта, а вопрос без предмета»); умножение и деление, рождающие НОВУЮ единицу («3 м × 4 м = 12 м²», «12 м ÷ 4 с = 3 м/с»); и сравнение, дающее ТРЕТИЙ ответ — «несравнимы», — которого у сравнения обычно нет. СЛОЖЕНИЕ ТРЕБУЕТ ОДНОРОДНОГО, УМНОЖЕНИЕ ЕГО НЕ ТРЕБУЕТ ВОВСЕ, И ПОТОМУ «3 м + 4 кг» НЕ ЗНАЧИТ НИЧЕГО, А «3 м × 4 м» ЗНАЧИТ ПЛОЩАДЬ. ОТКАЗ, НЕ ПОКАЗАННЫЙ РЯДОМ С ПРАВИЛОМ, ЧИТАЕТСЯ КАК НЕДОСМОТР, А НЕ КАК ГРАНИЦА. Единица пишется своим письмом — «4 Н × 5 м» по-русски и «4 N × 5 m» по-английски. СОСЕД И РАЗЛИЧИЕ: `mixedunits` складывает ИМЕНОВАННЫЕ числа одного рода, и предмет его — перенос через сто; здесь предмет — САМА ВОЗМОЖНОСТЬ действия: не как сложить, а можно ли. Это the thirty-sixth trap of the series — сложение, применённое там, где предмета для него нет.",
+      "act": [
+        "compare",
+        "decide",
+        "expound",
+        "name",
+        "refuse"
+      ],
+      "oracle": [
+        "recompute",
+        "declared"
+      ],
+      "boundary": [
+        "whole_only",
+        "exact_only",
+        "declared_table_only"
+      ],
+      "assemblies": [
+        "school"
+      ],
+      "size": 22639,
       "tiers": [],
       "text": "shows"
     },
@@ -10626,7 +10653,7 @@
     {
       "name": "mixedunits",
       "file": "datasets/genesis_mixedunits.txt",
-      "genre": "THE MIXED MEASURE — the carry that is a thousand, and the one that is a hundred (06.09). The census that found no clock in the свод found no mixed measure either: ZERO lines carrying «2 kg 300 g» or «2 m 30 cm». Four movements, two of them borrowing: grams overflowing into kilograms and taken back out of them, centimetres into metres and out. EVERY page crosses the unit — a sum whose grams stay under a thousand teaches nothing plain addition did not. The judge holds the measure's own law: the small part is UNDER its base, so «4 kg 1100 g» is a carry left unfinished and not another spelling of «4 kg 100 g» plus a kilogram (tools/mixedunits.py). CLOSED world. The census that found no clock also found no mixed measure, and the two houses were born of it together: `clockforms` carries by sixty, this one by a hundred and by a thousand. THE CARRY IS ONE LAW AND THE BASE IS A PROPERTY OF THE MEASURE — which `unitcmp` says outright.",
+      "genre": "THE MIXED MEASURE — the carry that is a thousand, and the one that is a hundred (06.09). The census that found no clock in the свод found no mixed measure either: ZERO lines carrying «2 kg 300 g» or «2 m 30 cm». Four movements, two of them borrowing: grams overflowing into kilograms and taken back out of them, centimetres into metres and out. EVERY page crosses the unit — a sum whose grams stay under a thousand teaches nothing plain addition did not. The judge holds the measure's own law: the small part is UNDER its base, so «4 kg 1100 g» is a carry left unfinished and not another spelling of «4 kg 100 g» plus a kilogram (tools/mixedunits.py). CLOSED world. The census that found no clock also found no mixed measure, and the two houses were born of it together: `clockforms` carries by sixty, this one by a hundred and by a thousand. THE CARRY IS ONE LAW AND THE BASE IS A PROPERTY OF THE MEASURE — which `unitcmp` says outright. СОСЕД И РАЗЛИЧИЕ (12.09): `dim` тоже берёт метры и килограммы, но предмет его есть САМА ВОЗМОЖНОСТЬ действия — можно ли сложить, — тогда как здесь предмет есть ПЕРЕНОС через сто и тысячу при сложении однородного.",
       "act": [
         "recount"
       ],
