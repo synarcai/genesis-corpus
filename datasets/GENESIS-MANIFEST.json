@@ -2462,10 +2462,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 40150978,
+      "size": 40185749,
       "tiers": [],
       "text": "mix",
-      "lines": 436088
+      "lines": 436198
     },
     {
       "name": "fuseprep",
@@ -8111,6 +8111,29 @@
       "text": "shows"
     },
     {
+      "name": "nlarticle",
+      "file": "datasets/genesis_nlarticle.txt",
+      "genre": "НИДЕРЛАНДСКИЙ АРТИКЛЬ — СВОД СТАВИЛ «de» И «het» ВОСЕМЬ ТЫСЯЧ РАЗ И НЕ СКАЗАЛ, ЧЕМ ОНИ РАЗНЯТСЯ. Замер 12.09 ПО СВОДУ: «het» стои́т 6 358 раз при 147 разных словах, «de» в нидерландских мирах — 1 523 раза; строк, объясняющих ВЫБОР между ними, — ни одной. ЗНАНИЕ, ЗАПИСАННОЕ ДАННЫМИ И КОДОМ, НО НЕ СТРАНИЦЕЙ, ЕСТЬ ЗНАНИЕ ПИШУЩЕГО, А НЕ ЧИТАЮЩЕГО. Читатель видит два слова там, где его язык имеет одно («the») или ни одного (русский), и не знает, что выбор обязателен и словом не подсказан. Пять родов и четыре ложных вывода: «de и het разнятся смыслом» (а «het kind» — ребёнок, «de tafel» — стол, и смысл ни при чём), «выбор виден по слову» (НЕ УГАДАТЬ: артикль заучивается вместе со словом, как род в немецком), «правил нет вовсе» (два есть, и оба БЕЗ ИСКЛЮЧЕНИЙ: уменьшительное всегда «het», множественное всегда «de» — во множественном выбор ИСЧЕЗАЕТ), «это то же, что у немца» (артиклей там ТРИ). ЯЗЫК, У КОТОРОГО ДВА РОДА ТАМ, ГДЕ У СОСЕДА ТРИ, НЕ ПОТЕРЯЛ ОДИН, А СЛИЛ ДВА: «der Tisch» и «die Frau» оба дают «de», а «das Buch» отвечает «het» один к одному. ДВА ПРАВИЛА БЕЗ ИСКЛЮЧЕНИЙ ВАЖНЕЕ ОСТАЛЬНОГО, ИБО ТАМ, ГДЕ ПРАВИЛ НЕТ, УЧЕНИК ПЕРЕСТАЁТ ИХ ИСКАТЬ ВОВСЕ: ПРАВИЛО, СТОЯЩЕЕ СРЕДИ НЕПРЕДСКАЗУЕМОГО, НЕЗАМЕТНО ВДВОЙНЕ. Запрещённое показано со звёздочкой, и звёздочку читает суд четвёртым своим законом. This is the sixty-first trap of the series — «the article is visible in the word», and Dutch breaks it. Дом не знает нидерландского: слова, их артикли, уменьшительные, множественные и немецкие соответствия объявлены рукой, и сказано, что рукой; о неопределённом «een», о склонении прилагательного и о словах с двумя артиклями дом молчит, а не угадывает.",
+      "act": [
+        "compare",
+        "expound",
+        "inflect",
+        "refute"
+      ],
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "declared_table_only"
+      ],
+      "assemblies": [
+        "school"
+      ],
+      "size": 34769,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
       "name": "nomention",
       "file": "datasets/genesis_nomention.txt",
       "genre": "WHAT WAS NEVER SAID — the fourth gate of the silence atlas (06.09, d5's measure: unknown-entity, the question names a thing the story never carried). The honest answer is a refusal WITH ITS GROUND — «I do not know: nothing is said about the box», «nie wiem: o wpisach nie powiedziano» — and the ground names the very place or kind the question asked, so the refusal is CHECKABLE. Beside it stands the positive twin (the question about the place the story DID name, answered by the count): a market shown only refusals buys refusal. Four shapes over one and two stated places, plus the question about another KIND of thing. Places in three cases come from the summary house, things from the tool house, the word of not-knowing from the pair house; declared here is the about-case of a thing, which no neighbour had (tools/nomention.py). CLOSED world.",
@@ -10492,10 +10515,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 32895382,
+      "size": 32930153,
       "tiers": [],
       "text": "mix",
-      "lines": 391506
+      "lines": 391616
     },
     {
       "name": "school_biling_v2c",
