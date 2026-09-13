@@ -227,6 +227,20 @@ def кормит(двор):
     import ast                                           # noqa: PLC0415
     import re as _re                                     # noqa: PLC0415
     вон = {}
+    # МОДУЛЬ, САМ СЕБЕ КУЗНИЦА, СВЯЗАН СО СВОИМ МИРОМ НАПРЯМУЮ (13.09). Не всякий мир кован
+    # файлом `gen_genesis_*`: `relcompare.py` объявляет цель и пишет её сам, будучи домом и
+    # кузницей разом. Обход, искавший только кузницы по имени, звал такой дом БЕЗ МИРА.
+    #
+    #     ДОМ, КУЮЩИЙ СВОЙ МИР САМ, СВЯЗАН С НИМ КРЕПЧЕ ВСЯКОГО ВВОЗА — и не увидеть этой
+    #     связи может лишь тот, кто ищет её по имени файла.
+    for п in sorted(pathlib.Path(двор).glob("*.py")):
+        if п.stem.startswith("gen_genesis_"):
+            continue
+        цели_свои = _re.findall(
+            r'^[А-ЯЁ_]+\s*=\s*"datasets/genesis_([a-z_0-9]+)\.txt"',
+            п.read_text(encoding="utf-8", errors="replace"), _re.M)
+        if цели_свои:
+            вон.setdefault(п.stem, set()).update(цели_свои)
     for п in sorted(pathlib.Path(двор).glob("gen_genesis_*.py")):
         текст = п.read_text(encoding="utf-8", errors="replace")
         # КУЗНИЦА МОЖЕТ КОВАТЬ НЕ ОДИН МИР, И ВТОРОЙ НАЗЫВАЕТСЯ НЕ `ЦЕЛЬ` (13.09).
