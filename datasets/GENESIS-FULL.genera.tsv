@@ -2,16 +2,16 @@
 # sha256	861dd9a514f80b8a38d62bfb08905f2b7ae868f5b0c5660f74233cf500b919c8
 # строк в файле	454890
 # строк непустых	444960
-# покрыто	358679
-# доля от непустых	80.6
-# имён от домов	239951
+# покрыто	360980
+# доля от непустых	81.1
+# имён от домов	241712
 # имён от пластов	17781
-# миров без рода	58
-# строк в них	54256
+# миров без рода	57
+# строк в них	51955
 # из них с домом, объявившим роды	13 миров, 10776 строк — ждут переезда перебора в дом
-# из них без дома вовсе	45 миров, 43480 строк — ждут дома
+# из них без дома вовсе	44 миров, 41179 строк — ждут дома
 # крупнейшие с домом	chains_langs 3092, money_langs 1188, calendar_langs 1120, geometry_langs 960, unit_counts 720, units_langs 640
-# крупнейшие без дома	gsmforms 2591, relcompare 2400, space 2301, inquiry_de_fr 2108, inquiry_pt_nl 2108, equation_signed 1974
+# крупнейшие без дома	gsmforms 2591, relcompare 2400, inquiry_de_fr 2108, inquiry_pt_nl 2108, equation_signed 1974, ninelang 1800
 # столбцы	номер строки файла (с единицы, пустые считаются)	дом · род
 # имена дословно те же, что в reports/ATLAS-GENERA.json
 # имён, решённых МИРОМ строки, а не телом	96
@@ -313933,6 +313933,2307 @@
 397736	soundarticleforms · правило названо
 397738	soundarticleforms · буква гласная, звук согласный
 397740	soundarticleforms · правило смотрит за себя
+397742	spaceforms · законы
+397743	spaceforms · законы
+397744	spaceforms · законы
+397745	spaceforms · соседи
+397746	spaceforms · сдвиг
+397747	spaceforms · сдвиг
+397748	spaceforms · поворот
+397749	spaceforms · сдвиг
+397750	spaceforms · поворот
+397751	spaceforms · соседи
+397752	spaceforms · сдвиг
+397753	spaceforms · соседи
+397754	spaceforms · сдвиг
+397755	spaceforms · сдвиг
+397756	spaceforms · поворот
+397757	spaceforms · путь
+397758	spaceforms · поворот
+397759	spaceforms · путь
+397760	spaceforms · сдвиг
+397761	spaceforms · счёт
+397762	spaceforms · отражение
+397763	spaceforms · счёт
+397764	spaceforms · отражение
+397765	spaceforms · сдвиг
+397766	spaceforms · отражение
+397767	spaceforms · путь
+397768	spaceforms · сдвиг
+397769	spaceforms · сдвиг
+397770	spaceforms · отражение
+397771	spaceforms · сдвиг
+397772	spaceforms · отражение
+397773	spaceforms · сдвиг
+397774	spaceforms · сдвиг
+397775	spaceforms · поворот
+397776	spaceforms · путь
+397777	spaceforms · поворот
+397778	spaceforms · сдвиг
+397779	spaceforms · поворот
+397780	spaceforms · соседи
+397781	spaceforms · сдвиг
+397782	spaceforms · сдвиг
+397783	spaceforms · сдвиг
+397784	spaceforms · путь
+397785	spaceforms · сдвиг
+397786	spaceforms · сдвиг
+397787	spaceforms · соседи
+397788	spaceforms · счёт
+397789	spaceforms · сдвиг
+397790	spaceforms · поворот
+397791	spaceforms · соседи
+397792	spaceforms · сдвиг
+397793	spaceforms · соседи
+397794	spaceforms · сдвиг
+397795	spaceforms · сдвиг
+397796	spaceforms · сдвиг
+397797	spaceforms · сдвиг
+397798	spaceforms · отражение
+397799	spaceforms · сдвиг
+397800	spaceforms · поворот
+397801	spaceforms · сдвиг
+397802	spaceforms · поворот
+397803	spaceforms · соседи
+397804	spaceforms · соседи
+397805	spaceforms · счёт
+397806	spaceforms · соседи
+397807	spaceforms · сдвиг
+397808	spaceforms · сдвиг сжатой фигуры
+397809	spaceforms · сдвиг сжатой фигуры
+397810	spaceforms · сдвиг сжатой фигуры
+397811	spaceforms · сдвиг сжатой фигуры
+397812	spaceforms · сдвиг сжатой фигуры
+397813	spaceforms · сдвиг сжатой фигуры
+397814	spaceforms · сдвиг сжатой фигуры
+397815	spaceforms · сдвиг сжатой фигуры
+397816	spaceforms · сдвиг сжатой фигуры
+397817	spaceforms · сдвиг сжатой фигуры
+397818	spaceforms · сдвиг сжатой фигуры
+397819	spaceforms · сдвиг сжатой фигуры
+397820	spaceforms · законы
+397821	spaceforms · законы
+397822	spaceforms · законы
+397823	spaceforms · путь
+397824	spaceforms · сдвиг
+397825	spaceforms · сдвиг
+397826	spaceforms · отражение
+397827	spaceforms · сдвиг
+397828	spaceforms · отражение
+397829	spaceforms · путь
+397830	spaceforms · сдвиг
+397831	spaceforms · путь
+397832	spaceforms · сдвиг
+397833	spaceforms · сдвиг
+397834	spaceforms · отражение
+397835	spaceforms · счёт
+397836	spaceforms · отражение
+397837	spaceforms · счёт
+397838	spaceforms · сдвиг
+397839	spaceforms · поворот
+397840	spaceforms · сдвиг
+397841	spaceforms · поворот
+397842	spaceforms · соседи
+397843	spaceforms · сдвиг
+397844	spaceforms · соседи
+397845	spaceforms · счёт
+397846	spaceforms · соседи
+397847	spaceforms · сдвиг
+397848	spaceforms · соседи
+397849	spaceforms · сдвиг
+397850	spaceforms · сдвиг
+397851	spaceforms · сдвиг
+397852	spaceforms · сдвиг
+397853	spaceforms · отражение
+397854	spaceforms · счёт
+397855	spaceforms · отражение
+397856	spaceforms · сдвиг
+397857	spaceforms · отражение
+397858	spaceforms · путь
+397859	spaceforms · сдвиг
+397860	spaceforms · сдвиг
+397861	spaceforms · соседи
+397862	spaceforms · счёт
+397863	spaceforms · соседи
+397864	spaceforms · сдвиг
+397865	spaceforms · путь
+397866	spaceforms · поворот
+397867	spaceforms · сдвиг
+397868	spaceforms · отражение
+397869	spaceforms · путь
+397870	spaceforms · сдвиг
+397871	spaceforms · путь
+397872	spaceforms · сдвиг
+397873	spaceforms · сдвиг
+397874	spaceforms · соседи
+397875	spaceforms · сдвиг
+397876	spaceforms · соседи
+397877	spaceforms · сдвиг
+397878	spaceforms · отражение
+397879	spaceforms · сдвиг
+397880	spaceforms · отражение
+397881	spaceforms · путь
+397882	spaceforms · путь
+397883	spaceforms · поворот
+397884	spaceforms · путь
+397885	spaceforms · сдвиг
+397886	spaceforms · сдвиг сжатой фигуры
+397887	spaceforms · сдвиг сжатой фигуры
+397888	spaceforms · сдвиг сжатой фигуры
+397889	spaceforms · сдвиг сжатой фигуры
+397890	spaceforms · сдвиг сжатой фигуры
+397891	spaceforms · сдвиг сжатой фигуры
+397892	spaceforms · сдвиг сжатой фигуры
+397893	spaceforms · сдвиг сжатой фигуры
+397894	spaceforms · сдвиг сжатой фигуры
+397895	spaceforms · сдвиг сжатой фигуры
+397896	spaceforms · сдвиг сжатой фигуры
+397897	spaceforms · законы
+397898	spaceforms · законы
+397899	spaceforms · законы
+397900	spaceforms · законы
+397901	spaceforms · счёт
+397902	spaceforms · соседи
+397903	spaceforms · сдвиг
+397904	spaceforms · соседи
+397905	spaceforms · сдвиг
+397906	spaceforms · соседи
+397907	spaceforms · счёт
+397908	spaceforms · соседи
+397909	spaceforms · счёт
+397910	spaceforms · соседи
+397911	spaceforms · сдвиг
+397912	spaceforms · сдвиг
+397913	spaceforms · поворот
+397914	spaceforms · сдвиг
+397915	spaceforms · поворот
+397916	spaceforms · сдвиг
+397917	spaceforms · отражение
+397918	spaceforms · сдвиг
+397919	spaceforms · отражение
+397920	spaceforms · путь
+397921	spaceforms · сдвиг
+397922	spaceforms · путь
+397923	spaceforms · поворот
+397924	spaceforms · путь
+397925	spaceforms · сдвиг
+397926	spaceforms · путь
+397927	spaceforms · сдвиг
+397928	spaceforms · сдвиг
+397929	spaceforms · соседи
+397930	spaceforms · сдвиг
+397931	spaceforms · сдвиг
+397932	spaceforms · поворот
+397933	spaceforms · соседи
+397934	spaceforms · сдвиг
+397935	spaceforms · соседи
+397936	spaceforms · счёт
+397937	spaceforms · соседи
+397938	spaceforms · сдвиг
+397939	spaceforms · путь
+397940	spaceforms · поворот
+397941	spaceforms · путь
+397942	spaceforms · сдвиг
+397943	spaceforms · счёт
+397944	spaceforms · отражение
+397945	spaceforms · сдвиг
+397946	spaceforms · соседи
+397947	spaceforms · счёт
+397948	spaceforms · соседи
+397949	spaceforms · счёт
+397950	spaceforms · соседи
+397951	spaceforms · сдвиг
+397952	spaceforms · путь
+397953	spaceforms · сдвиг
+397954	spaceforms · путь
+397955	spaceforms · сдвиг
+397956	spaceforms · соседи
+397957	spaceforms · сдвиг
+397958	spaceforms · соседи
+397959	spaceforms · счёт
+397960	spaceforms · счёт
+397961	spaceforms · отражение
+397962	spaceforms · счёт
+397963	spaceforms · соседи
+397964	spaceforms · сдвиг сжатой фигуры
+397965	spaceforms · сдвиг сжатой фигуры
+397966	spaceforms · сдвиг сжатой фигуры
+397967	spaceforms · сдвиг сжатой фигуры
+397968	spaceforms · сдвиг сжатой фигуры
+397969	spaceforms · сдвиг сжатой фигуры
+397970	spaceforms · сдвиг сжатой фигуры
+397971	spaceforms · сдвиг сжатой фигуры
+397972	spaceforms · сдвиг сжатой фигуры
+397973	spaceforms · сдвиг сжатой фигуры
+397974	spaceforms · сдвиг сжатой фигуры
+397975	spaceforms · законы
+397976	spaceforms · законы
+397977	spaceforms · законы
+397978	spaceforms · законы
+397979	spaceforms · поворот
+397980	spaceforms · путь
+397981	spaceforms · сдвиг
+397982	spaceforms · путь
+397983	spaceforms · сдвиг
+397984	spaceforms · путь
+397985	spaceforms · поворот
+397986	spaceforms · путь
+397987	spaceforms · поворот
+397988	spaceforms · путь
+397989	spaceforms · сдвиг
+397990	spaceforms · сдвиг
+397991	spaceforms · отражение
+397992	spaceforms · сдвиг
+397993	spaceforms · отражение
+397994	spaceforms · сдвиг
+397995	spaceforms · соседи
+397996	spaceforms · сдвиг
+397997	spaceforms · соседи
+397998	spaceforms · счёт
+397999	spaceforms · соседи
+398000	spaceforms · счёт
+398001	spaceforms · отражение
+398002	spaceforms · счёт
+398003	spaceforms · соседи
+398004	spaceforms · счёт
+398005	spaceforms · соседи
+398006	spaceforms · сдвиг
+398007	spaceforms · путь
+398008	spaceforms · сдвиг
+398009	spaceforms · сдвиг
+398010	spaceforms · отражение
+398011	spaceforms · путь
+398012	spaceforms · сдвиг
+398013	spaceforms · путь
+398014	spaceforms · поворот
+398015	spaceforms · путь
+398016	spaceforms · сдвиг
+398017	spaceforms · счёт
+398018	spaceforms · отражение
+398019	spaceforms · счёт
+398020	spaceforms · сдвиг
+398021	spaceforms · поворот
+398022	spaceforms · сдвиг
+398023	spaceforms · сдвиг
+398024	spaceforms · путь
+398025	spaceforms · поворот
+398026	spaceforms · путь
+398027	spaceforms · поворот
+398028	spaceforms · путь
+398029	spaceforms · сдвиг
+398030	spaceforms · счёт
+398031	spaceforms · соседи
+398032	spaceforms · счёт
+398033	spaceforms · сдвиг
+398034	spaceforms · путь
+398035	spaceforms · сдвиг
+398036	spaceforms · путь
+398037	spaceforms · отражение
+398038	spaceforms · поворот
+398039	spaceforms · сдвиг
+398040	spaceforms · поворот
+398041	spaceforms · путь
+398042	spaceforms · сдвиг сжатой фигуры
+398043	spaceforms · сдвиг сжатой фигуры
+398044	spaceforms · сдвиг сжатой фигуры
+398045	spaceforms · сдвиг сжатой фигуры
+398046	spaceforms · сдвиг сжатой фигуры
+398047	spaceforms · сдвиг сжатой фигуры
+398048	spaceforms · сдвиг сжатой фигуры
+398049	spaceforms · сдвиг сжатой фигуры
+398050	spaceforms · сдвиг сжатой фигуры
+398051	spaceforms · сдвиг сжатой фигуры
+398052	spaceforms · сдвиг сжатой фигуры
+398053	spaceforms · законы
+398054	spaceforms · законы
+398055	spaceforms · законы
+398056	spaceforms · законы
+398057	spaceforms · отражение
+398058	spaceforms · счёт
+398059	spaceforms · соседи
+398060	spaceforms · счёт
+398061	spaceforms · соседи
+398062	spaceforms · счёт
+398063	spaceforms · отражение
+398064	spaceforms · счёт
+398065	spaceforms · отражение
+398066	spaceforms · счёт
+398067	spaceforms · соседи
+398068	spaceforms · сдвиг
+398069	spaceforms · соседи
+398070	spaceforms · сдвиг
+398071	spaceforms · сдвиг
+398072	spaceforms · сдвиг
+398073	spaceforms · путь
+398074	spaceforms · сдвиг
+398075	spaceforms · путь
+398076	spaceforms · поворот
+398077	spaceforms · путь
+398078	spaceforms · поворот
+398079	spaceforms · сдвиг
+398080	spaceforms · поворот
+398081	spaceforms · путь
+398082	spaceforms · поворот
+398083	spaceforms · путь
+398084	spaceforms · сдвиг
+398085	spaceforms · счёт
+398086	spaceforms · соседи
+398087	spaceforms · сдвиг
+398088	spaceforms · соседи
+398089	spaceforms · счёт
+398090	spaceforms · соседи
+398091	spaceforms · счёт
+398092	spaceforms · отражение
+398093	spaceforms · счёт
+398094	spaceforms · сдвиг
+398095	spaceforms · поворот
+398096	spaceforms · сдвиг
+398097	spaceforms · поворот
+398098	spaceforms · сдвиг
+398099	spaceforms · отражение
+398100	spaceforms · сдвиг
+398101	spaceforms · соседи
+398102	spaceforms · счёт
+398103	spaceforms · отражение
+398104	spaceforms · счёт
+398105	spaceforms · отражение
+398106	spaceforms · счёт
+398107	spaceforms · сдвиг
+398108	spaceforms · поворот
+398109	spaceforms · путь
+398110	spaceforms · путь
+398111	spaceforms · соседи
+398112	spaceforms · счёт
+398113	spaceforms · соседи
+398114	spaceforms · счёт
+398115	spaceforms · путь
+398116	spaceforms · отражение
+398117	spaceforms · сдвиг
+398118	spaceforms · отражение
+398119	spaceforms · счёт
+398120	spaceforms · сдвиг сжатой фигуры
+398121	spaceforms · сдвиг сжатой фигуры
+398122	spaceforms · сдвиг сжатой фигуры
+398123	spaceforms · сдвиг сжатой фигуры
+398124	spaceforms · сдвиг сжатой фигуры
+398125	spaceforms · сдвиг сжатой фигуры
+398126	spaceforms · сдвиг сжатой фигуры
+398127	spaceforms · сдвиг сжатой фигуры
+398128	spaceforms · сдвиг сжатой фигуры
+398129	spaceforms · сдвиг сжатой фигуры
+398130	spaceforms · сдвиг сжатой фигуры
+398131	spaceforms · законы
+398132	spaceforms · законы
+398133	spaceforms · законы
+398134	spaceforms · поворот
+398135	spaceforms · сдвиг
+398136	spaceforms · поворот
+398137	spaceforms · путь
+398138	spaceforms · поворот
+398139	spaceforms · путь
+398140	spaceforms · поворот
+398141	spaceforms · сдвиг
+398142	spaceforms · поворот
+398143	spaceforms · сдвиг
+398144	spaceforms · поворот
+398145	spaceforms · путь
+398146	spaceforms · сдвиг
+398147	spaceforms · путь
+398148	spaceforms · сдвиг
+398149	spaceforms · сдвиг
+398150	spaceforms · соседи
+398151	spaceforms · счёт
+398152	spaceforms · соседи
+398153	spaceforms · счёт
+398154	spaceforms · отражение
+398155	spaceforms · счёт
+398156	spaceforms · отражение
+398157	spaceforms · сдвиг
+398158	spaceforms · отражение
+398159	spaceforms · счёт
+398160	spaceforms · отражение
+398161	spaceforms · счёт
+398162	spaceforms · сдвиг
+398163	spaceforms · поворот
+398164	spaceforms · путь
+398165	spaceforms · сдвиг
+398166	spaceforms · путь
+398167	spaceforms · поворот
+398168	spaceforms · путь
+398169	spaceforms · поворот
+398170	spaceforms · сдвиг
+398171	spaceforms · поворот
+398172	spaceforms · сдвиг
+398173	spaceforms · отражение
+398174	spaceforms · сдвиг
+398175	spaceforms · отражение
+398176	spaceforms · сдвиг
+398177	spaceforms · соседи
+398178	spaceforms · сдвиг
+398179	spaceforms · путь
+398180	spaceforms · поворот
+398181	spaceforms · сдвиг
+398182	spaceforms · поворот
+398183	spaceforms · сдвиг
+398184	spaceforms · поворот
+398185	spaceforms · сдвиг
+398186	spaceforms · отражение
+398187	spaceforms · счёт
+398188	spaceforms · поворот
+398189	spaceforms · путь
+398190	spaceforms · поворот
+398191	spaceforms · путь
+398192	spaceforms · поворот
+398193	spaceforms · поворот
+398194	spaceforms · соседи
+398195	spaceforms · сдвиг
+398196	spaceforms · сдвиг
+398197	spaceforms · сдвиг сжатой фигуры
+398198	spaceforms · сдвиг сжатой фигуры
+398199	spaceforms · сдвиг сжатой фигуры
+398200	spaceforms · сдвиг сжатой фигуры
+398201	spaceforms · сдвиг сжатой фигуры
+398202	spaceforms · сдвиг сжатой фигуры
+398203	spaceforms · сдвиг сжатой фигуры
+398204	spaceforms · сдвиг сжатой фигуры
+398205	spaceforms · сдвиг сжатой фигуры
+398206	spaceforms · сдвиг сжатой фигуры
+398207	spaceforms · сдвиг сжатой фигуры
+398208	spaceforms · сдвиг сжатой фигуры
+398209	spaceforms · законы
+398210	spaceforms · законы
+398211	spaceforms · законы
+398212	spaceforms · отражение
+398213	spaceforms · сдвиг
+398214	spaceforms · отражение
+398215	spaceforms · счёт
+398216	spaceforms · отражение
+398217	spaceforms · счёт
+398218	spaceforms · отражение
+398219	spaceforms · сдвиг
+398220	spaceforms · отражение
+398221	spaceforms · сдвиг
+398222	spaceforms · отражение
+398223	spaceforms · счёт
+398224	spaceforms · соседи
+398225	spaceforms · счёт
+398226	spaceforms · соседи
+398227	spaceforms · сдвиг
+398228	spaceforms · путь
+398229	spaceforms · поворот
+398230	spaceforms · путь
+398231	spaceforms · поворот
+398232	spaceforms · сдвиг
+398233	spaceforms · поворот
+398234	spaceforms · соседи
+398235	spaceforms · сдвиг
+398236	spaceforms · сдвиг
+398237	spaceforms · поворот
+398238	spaceforms · сдвиг
+398239	spaceforms · поворот
+398240	spaceforms · сдвиг
+398241	spaceforms · отражение
+398242	spaceforms · счёт
+398243	spaceforms · соседи
+398244	spaceforms · счёт
+398245	spaceforms · отражение
+398246	spaceforms · счёт
+398247	spaceforms · отражение
+398248	spaceforms · сдвиг
+398249	spaceforms · отражение
+398250	spaceforms · сдвиг
+398251	spaceforms · соседи
+398252	spaceforms · сдвиг
+398253	spaceforms · сдвиг
+398254	spaceforms · сдвиг
+398255	spaceforms · путь
+398256	spaceforms · сдвиг
+398257	spaceforms · счёт
+398258	spaceforms · отражение
+398259	spaceforms · сдвиг
+398260	spaceforms · отражение
+398261	spaceforms · сдвиг
+398262	spaceforms · отражение
+398263	spaceforms · сдвиг
+398264	spaceforms · сдвиг
+398265	spaceforms · поворот
+398266	spaceforms · отражение
+398267	spaceforms · счёт
+398268	spaceforms · отражение
+398269	spaceforms · счёт
+398270	spaceforms · отражение
+398271	spaceforms · отражение
+398272	spaceforms · путь
+398273	spaceforms · сдвиг
+398274	spaceforms · сдвиг
+398275	spaceforms · сдвиг сжатой фигуры
+398276	spaceforms · сдвиг сжатой фигуры
+398277	spaceforms · сдвиг сжатой фигуры
+398278	spaceforms · сдвиг сжатой фигуры
+398279	spaceforms · сдвиг сжатой фигуры
+398280	spaceforms · сдвиг сжатой фигуры
+398281	spaceforms · сдвиг сжатой фигуры
+398282	spaceforms · сдвиг сжатой фигуры
+398283	spaceforms · сдвиг сжатой фигуры
+398284	spaceforms · сдвиг сжатой фигуры
+398285	spaceforms · сдвиг сжатой фигуры
+398286	spaceforms · сдвиг сжатой фигуры
+398288	spaceforms · законы
+398289	spaceforms · законы
+398290	spaceforms · поворот
+398291	spaceforms · отражение
+398292	spaceforms · сдвиг
+398293	spaceforms · поворот
+398294	spaceforms · соседи
+398295	spaceforms · сдвиг
+398296	spaceforms · сдвиг
+398297	spaceforms · соседи
+398298	spaceforms · путь
+398299	spaceforms · сдвиг
+398300	spaceforms · отражение
+398301	spaceforms · путь
+398302	spaceforms · сдвиг
+398303	spaceforms · сдвиг
+398304	spaceforms · счёт
+398305	spaceforms · соседи
+398306	spaceforms · счёт
+398307	spaceforms · отражение
+398308	spaceforms · путь
+398309	spaceforms · счёт
+398310	spaceforms · отражение
+398311	spaceforms · путь
+398312	spaceforms · сдвиг
+398313	spaceforms · отражение
+398314	spaceforms · сдвиг
+398315	spaceforms · поворот
+398316	spaceforms · соседи
+398317	spaceforms · сдвиг
+398318	spaceforms · сдвиг
+398319	spaceforms · соседи
+398320	spaceforms · путь
+398321	spaceforms · путь
+398322	spaceforms · поворот
+398323	spaceforms · отражение
+398324	spaceforms · счёт
+398325	spaceforms · сдвиг сжатой фигуры
+398326	spaceforms · сдвиг сжатой фигуры
+398327	spaceforms · сдвиг сжатой фигуры
+398328	spaceforms · сдвиг сжатой фигуры
+398329	spaceforms · сдвиг сжатой фигуры
+398330	spaceforms · сдвиг сжатой фигуры
+398331	spaceforms · сдвиг сжатой фигуры
+398332	spaceforms · сдвиг сжатой фигуры
+398333	spaceforms · законы
+398334	spaceforms · законы
+398335	spaceforms · соседи
+398336	spaceforms · счёт
+398337	spaceforms · отражение
+398338	spaceforms · путь
+398339	spaceforms · счёт
+398340	spaceforms · отражение
+398341	spaceforms · путь
+398342	spaceforms · счёт
+398343	spaceforms · поворот
+398344	spaceforms · соседи
+398345	spaceforms · счёт
+398346	spaceforms · поворот
+398347	spaceforms · путь
+398348	spaceforms · поворот
+398349	spaceforms · путь
+398350	spaceforms · сдвиг
+398351	spaceforms · соседи
+398352	spaceforms · сдвиг
+398353	spaceforms · поворот
+398354	spaceforms · соседи
+398355	spaceforms · счёт
+398356	spaceforms · поворот
+398357	spaceforms · соседи
+398358	spaceforms · счёт
+398359	spaceforms · отражение
+398360	spaceforms · путь
+398361	spaceforms · счёт
+398362	spaceforms · отражение
+398363	spaceforms · путь
+398364	spaceforms · счёт
+398365	spaceforms · отражение
+398366	spaceforms · сдвиг
+398367	spaceforms · соседи
+398368	spaceforms · сдвиг
+398369	spaceforms · отражение
+398370	spaceforms · сдвиг сжатой фигуры
+398371	spaceforms · сдвиг сжатой фигуры
+398372	spaceforms · сдвиг сжатой фигуры
+398373	spaceforms · сдвиг сжатой фигуры
+398374	spaceforms · сдвиг сжатой фигуры
+398375	spaceforms · сдвиг сжатой фигуры
+398376	spaceforms · сдвиг сжатой фигуры
+398377	spaceforms · законы
+398378	spaceforms · законы
+398379	spaceforms · путь
+398380	spaceforms · сдвиг
+398381	spaceforms · соседи
+398382	spaceforms · сдвиг
+398383	spaceforms · поворот
+398384	spaceforms · соседи
+398385	spaceforms · счёт
+398386	spaceforms · поворот
+398387	spaceforms · отражение
+398388	spaceforms · путь
+398389	spaceforms · сдвиг
+398390	spaceforms · отражение
+398391	spaceforms · сдвиг
+398392	spaceforms · сдвиг
+398393	spaceforms · путь
+398394	spaceforms · поворот
+398395	spaceforms · сдвиг
+398396	spaceforms · счёт
+398397	spaceforms · отражение
+398398	spaceforms · сдвиг
+398399	spaceforms · сдвиг
+398400	spaceforms · отражение
+398401	spaceforms · путь
+398402	spaceforms · сдвиг
+398403	spaceforms · соседи
+398404	spaceforms · сдвиг
+398405	spaceforms · поворот
+398406	spaceforms · соседи
+398407	spaceforms · счёт
+398408	spaceforms · поворот
+398409	spaceforms · отражение
+398410	spaceforms · отражение
+398411	spaceforms · путь
+398412	spaceforms · сдвиг
+398413	spaceforms · отражение
+398414	spaceforms · сдвиг сжатой фигуры
+398415	spaceforms · сдвиг сжатой фигуры
+398416	spaceforms · сдвиг сжатой фигуры
+398417	spaceforms · сдвиг сжатой фигуры
+398418	spaceforms · сдвиг сжатой фигуры
+398419	spaceforms · сдвиг сжатой фигуры
+398420	spaceforms · сдвиг сжатой фигуры
+398421	spaceforms · законы
+398422	spaceforms · законы
+398423	spaceforms · законы
+398424	spaceforms · поворот
+398425	spaceforms · сдвиг
+398426	spaceforms · счёт
+398427	spaceforms · отражение
+398428	spaceforms · сдвиг
+398429	spaceforms · сдвиг
+398430	spaceforms · отражение
+398431	spaceforms · соседи
+398432	spaceforms · сдвиг
+398433	spaceforms · поворот
+398434	spaceforms · соседи
+398435	spaceforms · сдвиг
+398436	spaceforms · отражение
+398437	spaceforms · путь
+398438	spaceforms · отражение
+398439	spaceforms · путь
+398440	spaceforms · поворот
+398441	spaceforms · соседи
+398442	spaceforms · путь
+398443	spaceforms · поворот
+398444	spaceforms · соседи
+398445	spaceforms · сдвиг
+398446	spaceforms · поворот
+398447	spaceforms · сдвиг
+398448	spaceforms · счёт
+398449	spaceforms · отражение
+398450	spaceforms · сдвиг
+398451	spaceforms · сдвиг
+398452	spaceforms · отражение
+398453	spaceforms · соседи
+398454	spaceforms · соседи
+398455	spaceforms · счёт
+398456	spaceforms · поворот
+398457	spaceforms · путь
+398458	spaceforms · сдвиг сжатой фигуры
+398459	spaceforms · сдвиг сжатой фигуры
+398460	spaceforms · сдвиг сжатой фигуры
+398461	spaceforms · сдвиг сжатой фигуры
+398462	spaceforms · сдвиг сжатой фигуры
+398463	spaceforms · сдвиг сжатой фигуры
+398464	spaceforms · сдвиг сжатой фигуры
+398465	spaceforms · сдвиг сжатой фигуры
+398466	spaceforms · законы
+398467	spaceforms · законы
+398468	spaceforms · отражение
+398469	spaceforms · путь
+398470	spaceforms · поворот
+398471	spaceforms · соседи
+398472	spaceforms · путь
+398473	spaceforms · поворот
+398474	spaceforms · соседи
+398475	spaceforms · путь
+398476	spaceforms · счёт
+398477	spaceforms · отражение
+398478	spaceforms · путь
+398479	spaceforms · счёт
+398480	spaceforms · соседи
+398481	spaceforms · счёт
+398482	spaceforms · соседи
+398483	spaceforms · сдвиг
+398484	spaceforms · сдвиг
+398485	spaceforms · сдвиг
+398486	spaceforms · счёт
+398487	spaceforms · сдвиг
+398488	spaceforms · путь
+398489	spaceforms · счёт
+398490	spaceforms · отражение
+398491	spaceforms · путь
+398492	spaceforms · поворот
+398493	spaceforms · соседи
+398494	spaceforms · путь
+398495	spaceforms · поворот
+398496	spaceforms · соседи
+398497	spaceforms · путь
+398498	spaceforms · счёт
+398499	spaceforms · сдвиг
+398500	spaceforms · отражение
+398501	spaceforms · сдвиг
+398502	spaceforms · счёт
+398503	spaceforms · сдвиг сжатой фигуры
+398504	spaceforms · сдвиг сжатой фигуры
+398505	spaceforms · сдвиг сжатой фигуры
+398506	spaceforms · сдвиг сжатой фигуры
+398507	spaceforms · сдвиг сжатой фигуры
+398508	spaceforms · сдвиг сжатой фигуры
+398509	spaceforms · сдвиг сжатой фигуры
+398510	spaceforms · законы
+398511	spaceforms · законы
+398512	spaceforms · соседи
+398513	spaceforms · сдвиг
+398514	spaceforms · сдвиг
+398515	spaceforms · сдвиг
+398516	spaceforms · счёт
+398517	spaceforms · сдвиг
+398518	spaceforms · путь
+398519	spaceforms · счёт
+398520	spaceforms · поворот
+398521	spaceforms · соседи
+398522	spaceforms · сдвиг
+398523	spaceforms · поворот
+398524	spaceforms · сдвиг
+398525	spaceforms · сдвиг
+398526	spaceforms · соседи
+398527	spaceforms · счёт
+398528	spaceforms · отражение
+398529	spaceforms · путь
+398530	spaceforms · поворот
+398531	spaceforms · отражение
+398532	spaceforms · сдвиг
+398533	spaceforms · поворот
+398534	spaceforms · соседи
+398535	spaceforms · сдвиг
+398536	spaceforms · сдвиг
+398537	spaceforms · сдвиг
+398538	spaceforms · счёт
+398539	spaceforms · сдвиг
+398540	spaceforms · путь
+398541	spaceforms · счёт
+398542	spaceforms · поворот
+398543	spaceforms · поворот
+398544	spaceforms · соседи
+398545	spaceforms · сдвиг
+398546	spaceforms · поворот
+398547	spaceforms · сдвиг сжатой фигуры
+398548	spaceforms · сдвиг сжатой фигуры
+398549	spaceforms · сдвиг сжатой фигуры
+398550	spaceforms · сдвиг сжатой фигуры
+398551	spaceforms · сдвиг сжатой фигуры
+398552	spaceforms · сдвиг сжатой фигуры
+398553	spaceforms · сдвиг сжатой фигуры
+398554	spaceforms · законы
+398555	spaceforms · законы
+398556	spaceforms · законы
+398557	spaceforms · счёт
+398558	spaceforms · отражение
+398559	spaceforms · путь
+398560	spaceforms · поворот
+398561	spaceforms · отражение
+398562	spaceforms · сдвиг
+398563	spaceforms · поворот
+398564	spaceforms · отражение
+398565	spaceforms · сдвиг
+398566	spaceforms · счёт
+398567	spaceforms · отражение
+398568	spaceforms · сдвиг
+398569	spaceforms · поворот
+398570	spaceforms · соседи
+398571	spaceforms · поворот
+398572	spaceforms · соседи
+398573	spaceforms · счёт
+398574	spaceforms · сдвиг
+398575	spaceforms · соседи
+398576	spaceforms · счёт
+398577	spaceforms · отражение
+398578	spaceforms · сдвиг
+398579	spaceforms · счёт
+398580	spaceforms · отражение
+398581	spaceforms · путь
+398582	spaceforms · поворот
+398583	spaceforms · отражение
+398584	spaceforms · сдвиг
+398585	spaceforms · поворот
+398586	spaceforms · отражение
+398587	spaceforms · отражение
+398588	spaceforms · путь
+398589	spaceforms · счёт
+398590	spaceforms · соседи
+398591	spaceforms · путь
+398592	spaceforms · сдвиг сжатой фигуры
+398593	spaceforms · сдвиг сжатой фигуры
+398594	spaceforms · сдвиг сжатой фигуры
+398595	spaceforms · сдвиг сжатой фигуры
+398596	spaceforms · сдвиг сжатой фигуры
+398597	spaceforms · сдвиг сжатой фигуры
+398598	spaceforms · сдвиг сжатой фигуры
+398599	spaceforms · законы
+398600	spaceforms · законы
+398601	spaceforms · поворот
+398602	spaceforms · соседи
+398603	spaceforms · счёт
+398604	spaceforms · сдвиг
+398605	spaceforms · соседи
+398606	spaceforms · счёт
+398607	spaceforms · отражение
+398608	spaceforms · соседи
+398609	spaceforms · путь
+398610	spaceforms · поворот
+398611	spaceforms · соседи
+398612	spaceforms · путь
+398613	spaceforms · сдвиг
+398614	spaceforms · путь
+398615	spaceforms · отражение
+398616	spaceforms · сдвиг
+398617	spaceforms · сдвиг
+398618	spaceforms · отражение
+398619	spaceforms · путь
+398620	spaceforms · сдвиг
+398621	spaceforms · соседи
+398622	spaceforms · путь
+398623	spaceforms · поворот
+398624	spaceforms · соседи
+398625	spaceforms · счёт
+398626	spaceforms · сдвиг
+398627	spaceforms · соседи
+398628	spaceforms · счёт
+398629	spaceforms · отражение
+398630	spaceforms · соседи
+398631	spaceforms · путь
+398632	spaceforms · сдвиг
+398633	spaceforms · поворот
+398634	spaceforms · сдвиг
+398635	spaceforms · путь
+398636	spaceforms · сдвиг сжатой фигуры
+398637	spaceforms · сдвиг сжатой фигуры
+398638	spaceforms · сдвиг сжатой фигуры
+398639	spaceforms · сдвиг сжатой фигуры
+398640	spaceforms · сдвиг сжатой фигуры
+398641	spaceforms · сдвиг сжатой фигуры
+398642	spaceforms · сдвиг сжатой фигуры
+398643	spaceforms · законы
+398644	spaceforms · законы
+398645	spaceforms · отражение
+398646	spaceforms · сдвиг
+398647	spaceforms · сдвиг
+398648	spaceforms · отражение
+398649	spaceforms · путь
+398650	spaceforms · сдвиг
+398651	spaceforms · соседи
+398652	spaceforms · путь
+398653	spaceforms · счёт
+398654	spaceforms · сдвиг
+398655	spaceforms · сдвиг
+398656	spaceforms · счёт
+398657	spaceforms · сдвиг
+398658	spaceforms · сдвиг
+398659	spaceforms · отражение
+398660	spaceforms · путь
+398661	spaceforms · поворот
+398662	spaceforms · соседи
+398663	spaceforms · счёт
+398664	spaceforms · поворот
+398665	spaceforms · сдвиг
+398666	spaceforms · счёт
+398667	spaceforms · сдвиг
+398668	spaceforms · сдвиг
+398669	spaceforms · сдвиг
+398670	spaceforms · отражение
+398671	spaceforms · путь
+398672	spaceforms · сдвиг
+398673	spaceforms · соседи
+398674	spaceforms · путь
+398675	spaceforms · счёт
+398676	spaceforms · счёт
+398677	spaceforms · отражение
+398678	spaceforms · сдвиг
+398679	spaceforms · путь
+398680	spaceforms · сдвиг сжатой фигуры
+398681	spaceforms · сдвиг сжатой фигуры
+398682	spaceforms · сдвиг сжатой фигуры
+398683	spaceforms · сдвиг сжатой фигуры
+398684	spaceforms · сдвиг сжатой фигуры
+398685	spaceforms · сдвиг сжатой фигуры
+398686	spaceforms · сдвиг сжатой фигуры
+398687	spaceforms · сдвиг сжатой фигуры
+398688	spaceforms · законы
+398689	spaceforms · законы
+398690	spaceforms · путь
+398691	spaceforms · поворот
+398692	spaceforms · соседи
+398693	spaceforms · счёт
+398694	spaceforms · поворот
+398695	spaceforms · сдвиг
+398696	spaceforms · счёт
+398697	spaceforms · поворот
+398698	spaceforms · отражение
+398699	spaceforms · путь
+398700	spaceforms · поворот
+398701	spaceforms · отражение
+398702	spaceforms · счёт
+398703	spaceforms · отражение
+398704	spaceforms · счёт
+398705	spaceforms · сдвиг
+398706	spaceforms · путь
+398707	spaceforms · сдвиг
+398708	spaceforms · отражение
+398709	spaceforms · путь
+398710	spaceforms · поворот
+398711	spaceforms · отражение
+398712	spaceforms · путь
+398713	spaceforms · поворот
+398714	spaceforms · соседи
+398715	spaceforms · счёт
+398716	spaceforms · поворот
+398717	spaceforms · сдвиг
+398718	spaceforms · счёт
+398719	spaceforms · поворот
+398720	spaceforms · поворот
+398721	spaceforms · соседи
+398722	spaceforms · путь
+398723	spaceforms · сдвиг
+398724	spaceforms · соседи
+398725	spaceforms · сдвиг сжатой фигуры
+398726	spaceforms · сдвиг сжатой фигуры
+398727	spaceforms · сдвиг сжатой фигуры
+398728	spaceforms · сдвиг сжатой фигуры
+398729	spaceforms · сдвиг сжатой фигуры
+398730	spaceforms · сдвиг сжатой фигуры
+398731	spaceforms · сдвиг сжатой фигуры
+398732	spaceforms · законы
+398733	spaceforms · законы
+398734	spaceforms · счёт
+398735	spaceforms · сдвиг
+398736	spaceforms · путь
+398737	spaceforms · сдвиг
+398738	spaceforms · отражение
+398739	spaceforms · путь
+398740	spaceforms · поворот
+398741	spaceforms · отражение
+398742	spaceforms · соседи
+398743	spaceforms · счёт
+398744	spaceforms · сдвиг
+398745	spaceforms · соседи
+398746	spaceforms · сдвиг
+398747	spaceforms · соседи
+398748	spaceforms · поворот
+398749	spaceforms · отражение
+398750	spaceforms · сдвиг
+398751	spaceforms · поворот
+398752	spaceforms · соседи
+398753	spaceforms · сдвиг
+398754	spaceforms · сдвиг
+398755	spaceforms · соседи
+398756	spaceforms · счёт
+398757	spaceforms · сдвиг
+398758	spaceforms · путь
+398759	spaceforms · сдвиг
+398760	spaceforms · отражение
+398761	spaceforms · путь
+398762	spaceforms · поворот
+398763	spaceforms · отражение
+398764	spaceforms · соседи
+398765	spaceforms · сдвиг
+398766	spaceforms · счёт
+398767	spaceforms · сдвиг
+398768	spaceforms · соседи
+398769	spaceforms · сдвиг сжатой фигуры
+398770	spaceforms · сдвиг сжатой фигуры
+398771	spaceforms · сдвиг сжатой фигуры
+398772	spaceforms · сдвиг сжатой фигуры
+398773	spaceforms · сдвиг сжатой фигуры
+398774	spaceforms · сдвиг сжатой фигуры
+398775	spaceforms · сдвиг сжатой фигуры
+398777	spaceforms · сдвиг
+398778	spaceforms · счёт
+398779	spaceforms · путь
+398780	spaceforms · отражение
+398781	spaceforms · сдвиг
+398782	spaceforms · счёт
+398783	spaceforms · соседи
+398784	spaceforms · отражение
+398785	spaceforms · поворот
+398786	spaceforms · счёт
+398787	spaceforms · путь
+398788	spaceforms · отражение
+398789	spaceforms · счёт
+398790	spaceforms · соседи
+398791	spaceforms · поворот
+398792	spaceforms · счёт
+398793	spaceforms · соседи
+398794	spaceforms · сдвиг
+398795	spaceforms · поворот
+398796	spaceforms · счёт
+398797	spaceforms · путь
+398798	spaceforms · счёт
+398799	spaceforms · сдвиг
+398800	spaceforms · счёт
+398801	spaceforms · сдвиг
+398802	spaceforms · путь
+398803	spaceforms · сдвиг сжатой фигуры
+398804	spaceforms · сдвиг сжатой фигуры
+398805	spaceforms · сдвиг сжатой фигуры
+398806	spaceforms · сдвиг сжатой фигуры
+398807	spaceforms · сдвиг сжатой фигуры
+398808	spaceforms · сдвиг сжатой фигуры
+398809	spaceforms · сдвиг
+398810	spaceforms · поворот
+398811	spaceforms · счёт
+398812	spaceforms · сдвиг
+398813	spaceforms · соседи
+398814	spaceforms · поворот
+398815	spaceforms · путь
+398816	spaceforms · соседи
+398817	spaceforms · отражение
+398818	spaceforms · поворот
+398819	spaceforms · счёт
+398820	spaceforms · соседи
+398821	spaceforms · поворот
+398822	spaceforms · путь
+398823	spaceforms · отражение
+398824	spaceforms · поворот
+398825	spaceforms · путь
+398826	spaceforms · сдвиг
+398827	spaceforms · отражение
+398828	spaceforms · поворот
+398829	spaceforms · счёт
+398830	spaceforms · поворот
+398831	spaceforms · соседи
+398832	spaceforms · путь
+398833	spaceforms · сдвиг
+398834	spaceforms · сдвиг сжатой фигуры
+398835	spaceforms · сдвиг сжатой фигуры
+398836	spaceforms · сдвиг сжатой фигуры
+398837	spaceforms · сдвиг сжатой фигуры
+398838	spaceforms · сдвиг сжатой фигуры
+398839	spaceforms · сдвиг сжатой фигуры
+398840	spaceforms · сдвиг сжатой фигуры
+398841	spaceforms · соседи
+398842	spaceforms · отражение
+398843	spaceforms · поворот
+398844	spaceforms · сдвиг
+398845	spaceforms · путь
+398846	spaceforms · отражение
+398847	spaceforms · счёт
+398848	spaceforms · путь
+398849	spaceforms · сдвиг
+398850	spaceforms · отражение
+398851	spaceforms · поворот
+398852	spaceforms · путь
+398853	spaceforms · отражение
+398854	spaceforms · счёт
+398855	spaceforms · соседи
+398856	spaceforms · отражение
+398857	spaceforms · счёт
+398858	spaceforms · сдвиг
+398859	spaceforms · сдвиг
+398860	spaceforms · отражение
+398861	spaceforms · поворот
+398862	spaceforms · отражение
+398863	spaceforms · путь
+398864	spaceforms · поворот
+398865	spaceforms · соседи
+398866	spaceforms · сдвиг сжатой фигуры
+398867	spaceforms · сдвиг сжатой фигуры
+398868	spaceforms · сдвиг сжатой фигуры
+398869	spaceforms · сдвиг сжатой фигуры
+398870	spaceforms · сдвиг сжатой фигуры
+398871	spaceforms · сдвиг сжатой фигуры
+398872	spaceforms · сдвиг сжатой фигуры
+398873	spaceforms · путь
+398874	spaceforms · соседи
+398875	spaceforms · отражение
+398876	spaceforms · сдвиг
+398877	spaceforms · счёт
+398878	spaceforms · соседи
+398879	spaceforms · поворот
+398880	spaceforms · счёт
+398881	spaceforms · сдвиг
+398882	spaceforms · соседи
+398883	spaceforms · отражение
+398884	spaceforms · счёт
+398885	spaceforms · соседи
+398886	spaceforms · поворот
+398887	spaceforms · путь
+398888	spaceforms · соседи
+398889	spaceforms · поворот
+398890	spaceforms · соседи
+398891	spaceforms · сдвиг
+398892	spaceforms · соседи
+398893	spaceforms · отражение
+398894	spaceforms · соседи
+398895	spaceforms · счёт
+398896	spaceforms · отражение
+398897	spaceforms · путь
+398898	spaceforms · сдвиг сжатой фигуры
+398899	spaceforms · сдвиг сжатой фигуры
+398900	spaceforms · сдвиг сжатой фигуры
+398901	spaceforms · сдвиг сжатой фигуры
+398902	spaceforms · сдвиг сжатой фигуры
+398903	spaceforms · сдвиг сжатой фигуры
+398904	spaceforms · поворот
+398905	spaceforms · счёт
+398906	spaceforms · путь
+398907	spaceforms · соседи
+398908	spaceforms · сдвиг
+398909	spaceforms · поворот
+398910	spaceforms · путь
+398911	spaceforms · отражение
+398912	spaceforms · поворот
+398913	spaceforms · сдвиг
+398914	spaceforms · путь
+398915	spaceforms · соседи
+398916	spaceforms · поворот
+398917	spaceforms · путь
+398918	spaceforms · отражение
+398919	spaceforms · счёт
+398920	spaceforms · путь
+398921	spaceforms · отражение
+398922	spaceforms · путь
+398923	spaceforms · сдвиг
+398924	spaceforms · путь
+398925	spaceforms · соседи
+398926	spaceforms · путь
+398927	spaceforms · поворот
+398928	spaceforms · соседи
+398929	spaceforms · счёт
+398930	spaceforms · сдвиг сжатой фигуры
+398931	spaceforms · сдвиг сжатой фигуры
+398932	spaceforms · сдвиг сжатой фигуры
+398933	spaceforms · сдвиг сжатой фигуры
+398934	spaceforms · сдвиг сжатой фигуры
+398935	spaceforms · сдвиг сжатой фигуры
+398936	spaceforms · отражение
+398937	spaceforms · поворот
+398938	spaceforms · счёт
+398939	spaceforms · путь
+398940	spaceforms · соседи
+398941	spaceforms · отражение
+398942	spaceforms · счёт
+398943	spaceforms · сдвиг
+398944	spaceforms · отражение
+398945	spaceforms · сдвиг
+398946	spaceforms · счёт
+398947	spaceforms · путь
+398948	spaceforms · отражение
+398949	spaceforms · счёт
+398950	spaceforms · соседи
+398951	spaceforms · поворот
+398952	spaceforms · счёт
+398953	spaceforms · соседи
+398954	spaceforms · счёт
+398955	spaceforms · сдвиг
+398956	spaceforms · счёт
+398957	spaceforms · путь
+398958	spaceforms · счёт
+398959	spaceforms · отражение
+398960	spaceforms · путь
+398961	spaceforms · поворот
+398962	spaceforms · сдвиг сжатой фигуры
+398963	spaceforms · сдвиг сжатой фигуры
+398964	spaceforms · сдвиг сжатой фигуры
+398965	spaceforms · сдвиг сжатой фигуры
+398966	spaceforms · сдвиг сжатой фигуры
+398967	spaceforms · сдвиг сжатой фигуры
+398968	spaceforms · соседи
+398969	spaceforms · отражение
+398970	spaceforms · поворот
+398971	spaceforms · счёт
+398972	spaceforms · путь
+398973	spaceforms · соседи
+398974	spaceforms · поворот
+398975	spaceforms · сдвиг
+398976	spaceforms · сдвиг
+398977	spaceforms · соседи
+398978	spaceforms · поворот
+398979	spaceforms · счёт
+398980	spaceforms · соседи
+398981	spaceforms · поворот
+398982	spaceforms · путь
+398983	spaceforms · отражение
+398984	spaceforms · поворот
+398985	spaceforms · путь
+398986	spaceforms · поворот
+398987	spaceforms · соседи
+398988	spaceforms · поворот
+398989	spaceforms · счёт
+398990	spaceforms · отражение
+398991	spaceforms · соседи
+398992	spaceforms · счёт
+398993	spaceforms · отражение
+398994	spaceforms · сдвиг сжатой фигуры
+398995	spaceforms · сдвиг сжатой фигуры
+398996	spaceforms · сдвиг сжатой фигуры
+398997	spaceforms · сдвиг сжатой фигуры
+398998	spaceforms · сдвиг сжатой фигуры
+398999	spaceforms · сдвиг сжатой фигуры
+399000	spaceforms · путь
+399001	spaceforms · сдвиг
+399002	spaceforms · отражение
+399003	spaceforms · поворот
+399004	spaceforms · счёт
+399005	spaceforms · путь
+399006	spaceforms · отражение
+399007	spaceforms · сдвиг
+399008	spaceforms · сдвиг
+399009	spaceforms · путь
+399010	spaceforms · отражение
+399011	spaceforms · поворот
+399012	spaceforms · путь
+399013	spaceforms · отражение
+399014	spaceforms · счёт
+399015	spaceforms · сдвиг
+399016	spaceforms · отражение
+399017	spaceforms · счёт
+399018	spaceforms · отражение
+399019	spaceforms · путь
+399020	spaceforms · отражение
+399021	spaceforms · отражение
+399022	spaceforms · путь
+399023	spaceforms · путь
+399024	spaceforms · отражение
+399025	spaceforms · соседи
+399026	spaceforms · сдвиг сжатой фигуры
+399027	spaceforms · сдвиг сжатой фигуры
+399028	spaceforms · сдвиг сжатой фигуры
+399029	spaceforms · сдвиг сжатой фигуры
+399030	spaceforms · сдвиг сжатой фигуры
+399031	spaceforms · сдвиг сжатой фигуры
+399032	spaceforms · счёт
+399033	spaceforms · сдвиг
+399034	spaceforms · сдвиг
+399035	spaceforms · отражение
+399036	spaceforms · поворот
+399037	spaceforms · счёт
+399038	spaceforms · соседи
+399039	spaceforms · сдвиг
+399040	spaceforms · сдвиг
+399041	spaceforms · счёт
+399042	spaceforms · сдвиг
+399043	spaceforms · отражение
+399044	spaceforms · счёт
+399045	spaceforms · соседи
+399046	spaceforms · поворот
+399047	spaceforms · сдвиг
+399048	spaceforms · соседи
+399049	spaceforms · отражение
+399050	spaceforms · соседи
+399051	spaceforms · счёт
+399052	spaceforms · сдвиг
+399053	spaceforms · путь
+399054	spaceforms · поворот
+399055	spaceforms · счёт
+399056	spaceforms · путь
+399057	spaceforms · путь
+399058	spaceforms · сдвиг сжатой фигуры
+399059	spaceforms · сдвиг сжатой фигуры
+399060	spaceforms · сдвиг сжатой фигуры
+399061	spaceforms · сдвиг сжатой фигуры
+399062	spaceforms · сдвиг сжатой фигуры
+399063	spaceforms · сдвиг сжатой фигуры
+399064	spaceforms · поворот
+399065	spaceforms · сдвиг
+399066	spaceforms · сдвиг
+399067	spaceforms · соседи
+399068	spaceforms · отражение
+399069	spaceforms · поворот
+399070	spaceforms · путь
+399071	spaceforms · соседи
+399072	spaceforms · сдвиг
+399073	spaceforms · поворот
+399074	spaceforms · сдвиг
+399075	spaceforms · соседи
+399076	spaceforms · поворот
+399077	spaceforms · путь
+399078	spaceforms · отражение
+399079	spaceforms · сдвиг
+399080	spaceforms · путь
+399081	spaceforms · путь
+399082	spaceforms · путь
+399083	spaceforms · поворот
+399084	spaceforms · сдвиг
+399085	spaceforms · поворот
+399086	spaceforms · отражение
+399087	spaceforms · поворот
+399088	spaceforms · поворот
+399089	spaceforms · счёт
+399090	spaceforms · сдвиг сжатой фигуры
+399091	spaceforms · сдвиг сжатой фигуры
+399092	spaceforms · сдвиг сжатой фигуры
+399093	spaceforms · сдвиг сжатой фигуры
+399094	spaceforms · сдвиг сжатой фигуры
+399095	spaceforms · сдвиг сжатой фигуры
+399096	spaceforms · отражение
+399097	spaceforms · сдвиг
+399098	spaceforms · сдвиг
+399099	spaceforms · путь
+399100	spaceforms · сдвиг
+399101	spaceforms · отражение
+399102	spaceforms · счёт
+399103	spaceforms · путь
+399104	spaceforms · соседи
+399105	spaceforms · отражение
+399106	spaceforms · сдвиг
+399107	spaceforms · путь
+399108	spaceforms · отражение
+399109	spaceforms · счёт
+399110	spaceforms · соседи
+399111	spaceforms · сдвиг
+399112	spaceforms · счёт
+399113	spaceforms · поворот
+399114	spaceforms · счёт
+399115	spaceforms · отражение
+399116	spaceforms · сдвиг
+399117	spaceforms · отражение
+399118	spaceforms · сдвиг
+399119	spaceforms · отражение
+399120	spaceforms · отражение
+399121	spaceforms · отражение
+399122	spaceforms · сдвиг сжатой фигуры
+399123	spaceforms · сдвиг сжатой фигуры
+399124	spaceforms · сдвиг сжатой фигуры
+399125	spaceforms · сдвиг сжатой фигуры
+399126	spaceforms · сдвиг сжатой фигуры
+399127	spaceforms · сдвиг сжатой фигуры
+399128	spaceforms · сдвиг
+399129	spaceforms · соседи
+399130	spaceforms · сдвиг
+399131	spaceforms · счёт
+399132	spaceforms · сдвиг
+399133	spaceforms · соседи
+399134	spaceforms · поворот
+399135	spaceforms · счёт
+399136	spaceforms · путь
+399137	spaceforms · соседи
+399138	spaceforms · сдвиг
+399139	spaceforms · счёт
+399140	spaceforms · соседи
+399141	spaceforms · поворот
+399142	spaceforms · путь
+399143	spaceforms · соседи
+399144	spaceforms · поворот
+399145	spaceforms · отражение
+399146	spaceforms · отражение
+399147	spaceforms · соседи
+399148	spaceforms · сдвиг
+399149	spaceforms · соседи
+399150	spaceforms · сдвиг
+399151	spaceforms · соседи
+399152	spaceforms · сдвиг
+399153	spaceforms · путь
+399154	spaceforms · сдвиг сжатой фигуры
+399155	spaceforms · сдвиг сжатой фигуры
+399156	spaceforms · сдвиг сжатой фигуры
+399157	spaceforms · сдвиг сжатой фигуры
+399158	spaceforms · сдвиг сжатой фигуры
+399159	spaceforms · сдвиг сжатой фигуры
+399160	spaceforms · сдвиг
+399161	spaceforms · путь
+399162	spaceforms · соседи
+399163	spaceforms · поворот
+399164	spaceforms · сдвиг
+399165	spaceforms · путь
+399166	spaceforms · отражение
+399167	spaceforms · поворот
+399168	spaceforms · счёт
+399169	spaceforms · путь
+399170	spaceforms · соседи
+399171	spaceforms · поворот
+399172	spaceforms · путь
+399173	spaceforms · отражение
+399174	spaceforms · счёт
+399175	spaceforms · путь
+399176	spaceforms · отражение
+399177	spaceforms · сдвиг
+399178	spaceforms · путь
+399179	spaceforms · путь
+399180	spaceforms · соседи
+399181	spaceforms · путь
+399182	spaceforms · сдвиг
+399183	spaceforms · путь
+399184	spaceforms · сдвиг
+399185	spaceforms · отражение
+399186	spaceforms · сдвиг сжатой фигуры
+399187	spaceforms · сдвиг сжатой фигуры
+399188	spaceforms · сдвиг сжатой фигуры
+399189	spaceforms · сдвиг сжатой фигуры
+399190	spaceforms · сдвиг сжатой фигуры
+399191	spaceforms · сдвиг сжатой фигуры
+399193	spaceforms · сдвиг
+399194	spaceforms · путь
+399195	spaceforms · соседи
+399196	spaceforms · поворот
+399197	spaceforms · сдвиг
+399198	spaceforms · соседи
+399199	spaceforms · соседи
+399200	spaceforms · счёт
+399201	spaceforms · поворот
+399202	spaceforms · поворот
+399203	spaceforms · сдвиг
+399204	spaceforms · путь
+399205	spaceforms · отражение
+399206	spaceforms · соседи
+399207	spaceforms · сдвиг
+399208	spaceforms · счёт
+399209	spaceforms · отражение
+399210	spaceforms · сдвиг
+399211	spaceforms · сдвиг
+399212	spaceforms · поворот
+399213	spaceforms · сдвиг сжатой фигуры
+399214	spaceforms · сдвиг сжатой фигуры
+399215	spaceforms · сдвиг сжатой фигуры
+399216	spaceforms · сдвиг сжатой фигуры
+399217	spaceforms · сдвиг сжатой фигуры
+399218	spaceforms · путь
+399219	spaceforms · отражение
+399220	spaceforms · сдвиг
+399221	spaceforms · путь
+399222	spaceforms · отражение
+399223	spaceforms · сдвиг
+399224	spaceforms · сдвиг
+399225	spaceforms · отражение
+399226	spaceforms · поворот
+399227	spaceforms · соседи
+399228	spaceforms · путь
+399229	spaceforms · отражение
+399230	spaceforms · соседи
+399231	spaceforms · сдвиг
+399232	spaceforms · соседи
+399233	spaceforms · отражение
+399234	spaceforms · поворот
+399235	spaceforms · отражение
+399236	spaceforms · отражение
+399237	spaceforms · путь
+399238	spaceforms · сдвиг сжатой фигуры
+399239	spaceforms · сдвиг сжатой фигуры
+399240	spaceforms · сдвиг сжатой фигуры
+399241	spaceforms · сдвиг сжатой фигуры
+399242	spaceforms · сдвиг
+399243	spaceforms · соседи
+399244	spaceforms · сдвиг
+399245	spaceforms · счёт
+399246	spaceforms · сдвиг
+399247	spaceforms · отражение
+399248	spaceforms · отражение
+399249	spaceforms · путь
+399250	spaceforms · счёт
+399251	spaceforms · счёт
+399252	spaceforms · сдвиг
+399253	spaceforms · соседи
+399254	spaceforms · поворот
+399255	spaceforms · сдвиг
+399256	spaceforms · отражение
+399257	spaceforms · путь
+399258	spaceforms · поворот
+399259	spaceforms · сдвиг
+399260	spaceforms · сдвиг
+399261	spaceforms · путь
+399262	spaceforms · сдвиг сжатой фигуры
+399263	spaceforms · сдвиг сжатой фигуры
+399264	spaceforms · сдвиг сжатой фигуры
+399265	spaceforms · сдвиг сжатой фигуры
+399266	spaceforms · сдвиг сжатой фигуры
+399267	spaceforms · соседи
+399268	spaceforms · поворот
+399269	spaceforms · сдвиг
+399270	spaceforms · соседи
+399271	spaceforms · поворот
+399272	spaceforms · сдвиг
+399273	spaceforms · сдвиг
+399274	spaceforms · поворот
+399275	spaceforms · счёт
+399276	spaceforms · сдвиг
+399277	spaceforms · отражение
+399278	spaceforms · поворот
+399279	spaceforms · отражение
+399280	spaceforms · отражение
+399281	spaceforms · сдвиг
+399282	spaceforms · поворот
+399283	spaceforms · путь
+399284	spaceforms · поворот
+399285	spaceforms · счёт
+399286	spaceforms · соседи
+399287	spaceforms · сдвиг сжатой фигуры
+399288	spaceforms · сдвиг сжатой фигуры
+399289	spaceforms · сдвиг сжатой фигуры
+399290	spaceforms · сдвиг сжатой фигуры
+399291	spaceforms · сдвиг
+399292	spaceforms · сдвиг
+399293	spaceforms · сдвиг
+399294	spaceforms · путь
+399295	spaceforms · сдвиг
+399296	spaceforms · поворот
+399297	spaceforms · поворот
+399298	spaceforms · соседи
+399299	spaceforms · путь
+399300	spaceforms · путь
+399301	spaceforms · сдвиг
+399302	spaceforms · отражение
+399303	spaceforms · счёт
+399304	spaceforms · сдвиг
+399305	spaceforms · поворот
+399306	spaceforms · соседи
+399307	spaceforms · счёт
+399308	spaceforms · сдвиг
+399309	spaceforms · сдвиг
+399310	spaceforms · счёт
+399311	spaceforms · сдвиг сжатой фигуры
+399312	spaceforms · сдвиг сжатой фигуры
+399313	spaceforms · сдвиг сжатой фигуры
+399314	spaceforms · сдвиг сжатой фигуры
+399315	spaceforms · сдвиг сжатой фигуры
+399316	spaceforms · отражение
+399317	spaceforms · счёт
+399318	spaceforms · сдвиг
+399319	spaceforms · отражение
+399320	spaceforms · счёт
+399321	spaceforms · сдвиг
+399322	spaceforms · сдвиг
+399323	spaceforms · путь
+399324	spaceforms · путь
+399325	spaceforms · сдвиг
+399326	spaceforms · счёт
+399327	spaceforms · счёт
+399328	spaceforms · поворот
+399329	spaceforms · поворот
+399330	spaceforms · сдвиг
+399331	spaceforms · отражение
+399332	spaceforms · путь
+399333	spaceforms · путь
+399334	spaceforms · путь
+399335	spaceforms · отражение
+399336	spaceforms · сдвиг сжатой фигуры
+399337	spaceforms · сдвиг сжатой фигуры
+399338	spaceforms · сдвиг сжатой фигуры
+399339	spaceforms · сдвиг сжатой фигуры
+399340	spaceforms · отражение
+399341	spaceforms · сдвиг
+399342	spaceforms · сдвиг
+399343	spaceforms · соседи
+399344	spaceforms · сдвиг
+399345	spaceforms · путь
+399346	spaceforms · путь
+399347	spaceforms · отражение
+399348	spaceforms · соседи
+399349	spaceforms · соседи
+399350	spaceforms · сдвиг
+399351	spaceforms · поворот
+399352	spaceforms · путь
+399353	spaceforms · сдвиг
+399354	spaceforms · счёт
+399355	spaceforms · отражение
+399356	spaceforms · путь
+399357	spaceforms · сдвиг
+399358	spaceforms · сдвиг
+399359	spaceforms · путь
+399360	spaceforms · сдвиг сжатой фигуры
+399361	spaceforms · сдвиг сжатой фигуры
+399362	spaceforms · сдвиг сжатой фигуры
+399363	spaceforms · сдвиг сжатой фигуры
+399364	spaceforms · сдвиг сжатой фигуры
+399365	spaceforms · поворот
+399366	spaceforms · путь
+399367	spaceforms · сдвиг
+399368	spaceforms · поворот
+399369	spaceforms · путь
+399370	spaceforms · сдвиг
+399371	spaceforms · сдвиг
+399372	spaceforms · счёт
+399373	spaceforms · соседи
+399374	spaceforms · сдвиг
+399375	spaceforms · путь
+399376	spaceforms · путь
+399377	spaceforms · отражение
+399378	spaceforms · путь
+399379	spaceforms · сдвиг
+399380	spaceforms · счёт
+399381	spaceforms · отражение
+399382	spaceforms · отражение
+399383	spaceforms · соседи
+399384	spaceforms · поворот
+399385	spaceforms · сдвиг сжатой фигуры
+399386	spaceforms · сдвиг сжатой фигуры
+399387	spaceforms · сдвиг сжатой фигуры
+399388	spaceforms · сдвиг сжатой фигуры
+399389	spaceforms · поворот
+399390	spaceforms · сдвиг
+399391	spaceforms · сдвиг
+399392	spaceforms · отражение
+399393	spaceforms · сдвиг
+399394	spaceforms · отражение
+399395	spaceforms · отражение
+399396	spaceforms · поворот
+399397	spaceforms · отражение
+399398	spaceforms · сдвиг
+399399	spaceforms · сдвиг
+399400	spaceforms · счёт
+399401	spaceforms · соседи
+399402	spaceforms · сдвиг
+399403	spaceforms · путь
+399404	spaceforms · поворот
+399405	spaceforms · соседи
+399406	spaceforms · сдвиг
+399407	spaceforms · отражение
+399408	spaceforms · соседи
+399409	spaceforms · сдвиг сжатой фигуры
+399410	spaceforms · сдвиг сжатой фигуры
+399411	spaceforms · сдвиг сжатой фигуры
+399412	spaceforms · сдвиг сжатой фигуры
+399413	spaceforms · сдвиг сжатой фигуры
+399414	spaceforms · счёт
+399415	spaceforms · соседи
+399416	spaceforms · отражение
+399417	spaceforms · счёт
+399418	spaceforms · соседи
+399419	spaceforms · отражение
+399420	spaceforms · отражение
+399421	spaceforms · путь
+399422	spaceforms · отражение
+399423	spaceforms · сдвиг
+399424	spaceforms · соседи
+399425	spaceforms · соседи
+399426	spaceforms · поворот
+399427	spaceforms · отражение
+399428	spaceforms · сдвиг
+399429	spaceforms · путь
+399430	spaceforms · поворот
+399431	spaceforms · поворот
+399432	spaceforms · сдвиг
+399433	spaceforms · счёт
+399434	spaceforms · сдвиг сжатой фигуры
+399435	spaceforms · сдвиг сжатой фигуры
+399436	spaceforms · сдвиг сжатой фигуры
+399437	spaceforms · сдвиг сжатой фигуры
+399438	spaceforms · сдвиг сжатой фигуры
+399439	spaceforms · сдвиг
+399440	spaceforms · сдвиг
+399441	spaceforms · поворот
+399442	spaceforms · отражение
+399443	spaceforms · поворот
+399444	spaceforms · поворот
+399445	spaceforms · отражение
+399446	spaceforms · поворот
+399447	spaceforms · сдвиг
+399448	spaceforms · отражение
+399449	spaceforms · путь
+399450	spaceforms · сдвиг
+399451	spaceforms · отражение
+399452	spaceforms · соседи
+399453	spaceforms · путь
+399454	spaceforms · сдвиг
+399455	spaceforms · сдвиг
+399456	spaceforms · поворот
+399457	spaceforms · отражение
+399458	spaceforms · сдвиг сжатой фигуры
+399459	spaceforms · сдвиг сжатой фигуры
+399460	spaceforms · сдвиг сжатой фигуры
+399461	spaceforms · сдвиг сжатой фигуры
+399462	spaceforms · сдвиг сжатой фигуры
+399463	spaceforms · путь
+399464	spaceforms · отражение
+399465	spaceforms · поворот
+399466	spaceforms · путь
+399467	spaceforms · сдвиг
+399468	spaceforms · поворот
+399469	spaceforms · поворот
+399470	spaceforms · соседи
+399471	spaceforms · поворот
+399472	spaceforms · отражение
+399473	spaceforms · сдвиг
+399474	spaceforms · отражение
+399475	spaceforms · счёт
+399476	spaceforms · поворот
+399477	spaceforms · сдвиг
+399478	spaceforms · соседи
+399479	spaceforms · счёт
+399480	spaceforms · счёт
+399481	spaceforms · сдвиг
+399482	spaceforms · путь
+399483	spaceforms · сдвиг сжатой фигуры
+399484	spaceforms · сдвиг сжатой фигуры
+399485	spaceforms · сдвиг сжатой фигуры
+399486	spaceforms · сдвиг сжатой фигуры
+399487	spaceforms · сдвиг сжатой фигуры
+399488	spaceforms · отражение
+399489	spaceforms · сдвиг
+399490	spaceforms · счёт
+399491	spaceforms · поворот
+399492	spaceforms · счёт
+399493	spaceforms · счёт
+399494	spaceforms · счёт
+399495	spaceforms · счёт
+399496	spaceforms · сдвиг
+399497	spaceforms · поворот
+399498	spaceforms · соседи
+399499	spaceforms · сдвиг
+399500	spaceforms · поворот
+399501	spaceforms · сдвиг
+399502	spaceforms · отражение
+399503	spaceforms · сдвиг
+399504	spaceforms · сдвиг
+399505	spaceforms · счёт
+399506	spaceforms · поворот
+399507	spaceforms · сдвиг сжатой фигуры
+399508	spaceforms · сдвиг сжатой фигуры
+399509	spaceforms · сдвиг сжатой фигуры
+399510	spaceforms · сдвиг сжатой фигуры
+399511	spaceforms · сдвиг сжатой фигуры
+399512	spaceforms · соседи
+399513	spaceforms · поворот
+399514	spaceforms · счёт
+399515	spaceforms · соседи
+399516	spaceforms · сдвиг
+399517	spaceforms · счёт
+399518	spaceforms · счёт
+399519	spaceforms · отражение
+399520	spaceforms · путь
+399521	spaceforms · поворот
+399522	spaceforms · сдвиг
+399523	spaceforms · поворот
+399524	spaceforms · путь
+399525	spaceforms · счёт
+399526	spaceforms · сдвиг
+399527	spaceforms · отражение
+399528	spaceforms · путь
+399529	spaceforms · путь
+399530	spaceforms · сдвиг
+399531	spaceforms · соседи
+399532	spaceforms · сдвиг сжатой фигуры
+399533	spaceforms · сдвиг сжатой фигуры
+399534	spaceforms · сдвиг сжатой фигуры
+399535	spaceforms · сдвиг сжатой фигуры
+399536	spaceforms · сдвиг сжатой фигуры
+399537	spaceforms · поворот
+399538	spaceforms · сдвиг
+399539	spaceforms · путь
+399540	spaceforms · отражение
+399541	spaceforms · путь
+399542	spaceforms · путь
+399543	spaceforms · путь
+399544	spaceforms · путь
+399545	spaceforms · сдвиг
+399546	spaceforms · счёт
+399547	spaceforms · отражение
+399548	spaceforms · сдвиг
+399549	spaceforms · счёт
+399550	spaceforms · сдвиг
+399551	spaceforms · счёт
+399552	spaceforms · сдвиг
+399553	spaceforms · сдвиг
+399554	spaceforms · путь
+399555	spaceforms · путь
+399556	spaceforms · сдвиг сжатой фигуры
+399557	spaceforms · сдвиг сжатой фигуры
+399558	spaceforms · сдвиг сжатой фигуры
+399559	spaceforms · сдвиг сжатой фигуры
+399560	spaceforms · сдвиг сжатой фигуры
+399561	spaceforms · сдвиг
+399562	spaceforms · счёт
+399563	spaceforms · путь
+399564	spaceforms · отражение
+399565	spaceforms · сдвиг
+399566	spaceforms · путь
+399567	spaceforms · путь
+399568	spaceforms · поворот
+399569	spaceforms · отражение
+399570	spaceforms · отражение
+399571	spaceforms · сдвиг
+399572	spaceforms · счёт
+399573	spaceforms · соседи
+399574	spaceforms · путь
+399575	spaceforms · сдвиг
+399576	spaceforms · поворот
+399577	spaceforms · соседи
+399578	spaceforms · соседи
+399579	spaceforms · сдвиг
+399580	spaceforms · отражение
+399581	spaceforms · сдвиг сжатой фигуры
+399582	spaceforms · сдвиг сжатой фигуры
+399583	spaceforms · сдвиг сжатой фигуры
+399584	spaceforms · сдвиг сжатой фигуры
+399585	spaceforms · сдвиг сжатой фигуры
+399586	spaceforms · счёт
+399587	spaceforms · сдвиг
+399588	spaceforms · соседи
+399589	spaceforms · счёт
+399590	spaceforms · соседи
+399591	spaceforms · соседи
+399592	spaceforms · соседи
+399593	spaceforms · соседи
+399594	spaceforms · отражение
+399595	spaceforms · путь
+399596	spaceforms · поворот
+399597	spaceforms · сдвиг
+399598	spaceforms · путь
+399599	spaceforms · сдвиг
+399600	spaceforms · путь
+399601	spaceforms · сдвиг
+399602	spaceforms · отражение
+399603	spaceforms · соседи
+399604	spaceforms · отражение
+399605	spaceforms · счёт
+399606	spaceforms · сдвиг сжатой фигуры
+399607	spaceforms · сдвиг сжатой фигуры
+399608	spaceforms · сдвиг сжатой фигуры
+399609	spaceforms · сдвиг сжатой фигуры
+399611	spaceforms · путь
+399612	spaceforms · соседи
+399613	spaceforms · соседи
+399614	spaceforms · сдвиг
+399615	spaceforms · соседи
+399616	spaceforms · путь
+399617	spaceforms · путь
+399618	spaceforms · сдвиг
+399619	spaceforms · счёт
+399620	spaceforms · путь
+399621	spaceforms · сдвиг
+399622	spaceforms · путь
+399623	spaceforms · соседи
+399624	spaceforms · соседи
+399625	spaceforms · соседи
+399626	spaceforms · путь
+399627	spaceforms · отражение
+399628	spaceforms · счёт
+399629	spaceforms · путь
+399630	spaceforms · сдвиг сжатой фигуры
+399631	spaceforms · сдвиг сжатой фигуры
+399632	spaceforms · сдвиг сжатой фигуры
+399633	spaceforms · сдвиг сжатой фигуры
+399634	spaceforms · счёт
+399635	spaceforms · путь
+399636	spaceforms · путь
+399637	spaceforms · сдвиг
+399638	spaceforms · путь
+399639	spaceforms · счёт
+399640	spaceforms · счёт
+399641	spaceforms · сдвиг
+399642	spaceforms · поворот
+399643	spaceforms · счёт
+399644	spaceforms · сдвиг
+399645	spaceforms · счёт
+399646	spaceforms · путь
+399647	spaceforms · путь
+399648	spaceforms · путь
+399649	spaceforms · счёт
+399650	spaceforms · поворот
+399651	spaceforms · поворот
+399652	spaceforms · счёт
+399653	spaceforms · сдвиг сжатой фигуры
+399654	spaceforms · сдвиг сжатой фигуры
+399655	spaceforms · сдвиг сжатой фигуры
+399656	spaceforms · сдвиг сжатой фигуры
+399657	spaceforms · поворот
+399658	spaceforms · счёт
+399659	spaceforms · счёт
+399660	spaceforms · сдвиг
+399661	spaceforms · поворот
+399662	spaceforms · поворот
+399663	spaceforms · поворот
+399664	spaceforms · сдвиг
+399665	spaceforms · отражение
+399666	spaceforms · поворот
+399667	spaceforms · сдвиг
+399668	spaceforms · поворот
+399669	spaceforms · счёт
+399670	spaceforms · счёт
+399671	spaceforms · счёт
+399672	spaceforms · поворот
+399673	spaceforms · отражение
+399674	spaceforms · отражение
+399675	spaceforms · сдвиг сжатой фигуры
+399676	spaceforms · сдвиг сжатой фигуры
+399677	spaceforms · сдвиг сжатой фигуры
+399678	spaceforms · сдвиг сжатой фигуры
+399679	spaceforms · сдвиг сжатой фигуры
+399680	spaceforms · отражение
+399681	spaceforms · поворот
+399682	spaceforms · поворот
+399683	spaceforms · сдвиг
+399684	spaceforms · отражение
+399685	spaceforms · отражение
+399686	spaceforms · отражение
+399687	spaceforms · соседи
+399688	spaceforms · соседи
+399689	spaceforms · отражение
+399690	spaceforms · соседи
+399691	spaceforms · отражение
+399692	spaceforms · поворот
+399693	spaceforms · поворот
+399694	spaceforms · поворот
+399695	spaceforms · отражение
+399696	spaceforms · соседи
+399697	spaceforms · соседи
+399698	spaceforms · сдвиг сжатой фигуры
+399699	spaceforms · сдвиг сжатой фигуры
+399700	spaceforms · сдвиг сжатой фигуры
+399701	spaceforms · сдвиг сжатой фигуры
+399702	spaceforms · сдвиг сжатой фигуры
+399703	spaceforms · соседи
+399704	spaceforms · отражение
+399705	spaceforms · отражение
+399706	spaceforms · соседи
+399707	spaceforms · соседи
+399708	spaceforms · соседи
+399709	spaceforms · сдвиг
+399710	spaceforms · путь
+399711	spaceforms · путь
+399712	spaceforms · сдвиг
+399713	spaceforms · путь
+399714	spaceforms · соседи
+399715	spaceforms · отражение
+399716	spaceforms · отражение
+399717	spaceforms · отражение
+399718	spaceforms · сдвиг
+399719	spaceforms · путь
+399720	spaceforms · путь
+399721	spaceforms · сдвиг сжатой фигуры
+399722	spaceforms · сдвиг сжатой фигуры
+399723	spaceforms · сдвиг сжатой фигуры
+399724	spaceforms · сдвиг сжатой фигуры
+399725	spaceforms · сдвиг сжатой фигуры
+399726	spaceforms · путь
+399727	spaceforms · сдвиг
+399728	spaceforms · соседи
+399729	spaceforms · путь
+399730	spaceforms · путь
+399731	spaceforms · путь
+399732	spaceforms · сдвиг
+399733	spaceforms · счёт
+399734	spaceforms · счёт
+399735	spaceforms · сдвиг
+399736	spaceforms · счёт
+399737	spaceforms · путь
+399738	spaceforms · соседи
+399739	spaceforms · соседи
+399740	spaceforms · соседи
+399741	spaceforms · сдвиг
+399742	spaceforms · счёт
+399743	spaceforms · счёт
+399744	spaceforms · сдвиг сжатой фигуры
+399745	spaceforms · сдвиг сжатой фигуры
+399746	spaceforms · сдвиг сжатой фигуры
+399747	spaceforms · сдвиг сжатой фигуры
+399748	spaceforms · сдвиг сжатой фигуры
+399749	spaceforms · счёт
+399750	spaceforms · сдвиг
+399751	spaceforms · путь
+399752	spaceforms · счёт
+399753	spaceforms · счёт
+399754	spaceforms · счёт
+399755	spaceforms · сдвиг
+399756	spaceforms · поворот
+399757	spaceforms · поворот
+399758	spaceforms · сдвиг
+399759	spaceforms · поворот
+399760	spaceforms · счёт
+399761	spaceforms · путь
+399762	spaceforms · путь
+399763	spaceforms · путь
+399764	spaceforms · сдвиг
+399765	spaceforms · поворот
+399766	spaceforms · поворот
+399767	spaceforms · сдвиг сжатой фигуры
+399768	spaceforms · сдвиг сжатой фигуры
+399769	spaceforms · сдвиг сжатой фигуры
+399770	spaceforms · сдвиг сжатой фигуры
+399771	spaceforms · поворот
+399772	spaceforms · поворот
+399773	spaceforms · сдвиг
+399774	spaceforms · счёт
+399775	spaceforms · поворот
+399776	spaceforms · поворот
+399777	spaceforms · поворот
+399778	spaceforms · сдвиг
+399779	spaceforms · отражение
+399780	spaceforms · отражение
+399781	spaceforms · сдвиг
+399782	spaceforms · отражение
+399783	spaceforms · поворот
+399784	spaceforms · счёт
+399785	spaceforms · счёт
+399786	spaceforms · счёт
+399787	spaceforms · сдвиг
+399788	spaceforms · отражение
+399789	spaceforms · отражение
+399790	spaceforms · сдвиг сжатой фигуры
+399791	spaceforms · сдвиг сжатой фигуры
+399792	spaceforms · сдвиг сжатой фигуры
+399793	spaceforms · сдвиг сжатой фигуры
+399794	spaceforms · отражение
+399795	spaceforms · отражение
+399796	spaceforms · сдвиг
+399797	spaceforms · поворот
+399798	spaceforms · отражение
+399799	spaceforms · отражение
+399800	spaceforms · отражение
+399801	spaceforms · соседи
+399802	spaceforms · сдвиг
+399803	spaceforms · соседи
+399804	spaceforms · соседи
+399805	spaceforms · соседи
+399806	spaceforms · отражение
+399807	spaceforms · поворот
+399808	spaceforms · поворот
+399809	spaceforms · поворот
+399810	spaceforms · соседи
+399811	spaceforms · соседи
+399812	spaceforms · соседи
+399813	spaceforms · сдвиг сжатой фигуры
+399814	spaceforms · сдвиг сжатой фигуры
+399815	spaceforms · сдвиг сжатой фигуры
+399816	spaceforms · сдвиг сжатой фигуры
+399817	spaceforms · сдвиг
+399818	spaceforms · соседи
+399819	spaceforms · соседи
+399820	spaceforms · отражение
+399821	spaceforms · соседи
+399822	spaceforms · соседи
+399823	spaceforms · соседи
+399824	spaceforms · путь
+399825	spaceforms · сдвиг
+399826	spaceforms · путь
+399827	spaceforms · путь
+399828	spaceforms · путь
+399829	spaceforms · соседи
+399830	spaceforms · отражение
+399831	spaceforms · отражение
+399832	spaceforms · отражение
+399833	spaceforms · путь
+399834	spaceforms · путь
+399835	spaceforms · путь
+399836	spaceforms · сдвиг сжатой фигуры
+399837	spaceforms · сдвиг сжатой фигуры
+399838	spaceforms · сдвиг сжатой фигуры
+399839	spaceforms · сдвиг сжатой фигуры
+399840	spaceforms · сдвиг
+399841	spaceforms · путь
+399842	spaceforms · путь
+399843	spaceforms · соседи
+399844	spaceforms · путь
+399845	spaceforms · путь
+399846	spaceforms · путь
+399847	spaceforms · счёт
+399848	spaceforms · сдвиг
+399849	spaceforms · счёт
+399850	spaceforms · счёт
+399851	spaceforms · счёт
+399852	spaceforms · путь
+399853	spaceforms · соседи
+399854	spaceforms · соседи
+399855	spaceforms · сдвиг
+399856	spaceforms · счёт
+399857	spaceforms · счёт
+399858	spaceforms · счёт
+399859	spaceforms · сдвиг сжатой фигуры
+399860	spaceforms · сдвиг сжатой фигуры
+399861	spaceforms · сдвиг сжатой фигуры
+399862	spaceforms · сдвиг сжатой фигуры
+399863	spaceforms · сдвиг
+399864	spaceforms · счёт
+399865	spaceforms · счёт
+399866	spaceforms · путь
+399867	spaceforms · счёт
+399868	spaceforms · счёт
+399869	spaceforms · счёт
+399870	spaceforms · поворот
+399871	spaceforms · сдвиг
+399872	spaceforms · поворот
+399873	spaceforms · поворот
+399874	spaceforms · поворот
+399875	spaceforms · счёт
+399876	spaceforms · путь
+399877	spaceforms · путь
+399878	spaceforms · сдвиг
+399879	spaceforms · поворот
+399880	spaceforms · поворот
+399881	spaceforms · поворот
+399882	spaceforms · сдвиг сжатой фигуры
+399883	spaceforms · сдвиг сжатой фигуры
+399884	spaceforms · сдвиг сжатой фигуры
+399885	spaceforms · сдвиг сжатой фигуры
+399886	spaceforms · сдвиг
+399887	spaceforms · поворот
+399888	spaceforms · поворот
+399889	spaceforms · счёт
+399890	spaceforms · поворот
+399891	spaceforms · поворот
+399892	spaceforms · поворот
+399893	spaceforms · отражение
+399894	spaceforms · соседи
+399895	spaceforms · отражение
+399896	spaceforms · отражение
+399897	spaceforms · отражение
+399898	spaceforms · поворот
+399899	spaceforms · счёт
+399900	spaceforms · счёт
+399901	spaceforms · сдвиг
+399902	spaceforms · отражение
+399903	spaceforms · отражение
+399904	spaceforms · отражение
+399905	spaceforms · сдвиг сжатой фигуры
+399906	spaceforms · сдвиг сжатой фигуры
+399907	spaceforms · сдвиг сжатой фигуры
+399908	spaceforms · сдвиг сжатой фигуры
+399909	spaceforms · соседи
+399910	spaceforms · отражение
+399911	spaceforms · отражение
+399912	spaceforms · поворот
+399913	spaceforms · отражение
+399914	spaceforms · отражение
+399915	spaceforms · отражение
+399916	spaceforms · соседи
+399917	spaceforms · путь
+399918	spaceforms · соседи
+399919	spaceforms · соседи
+399920	spaceforms · соседи
+399921	spaceforms · отражение
+399922	spaceforms · поворот
+399923	spaceforms · поворот
+399924	spaceforms · сдвиг
+399925	spaceforms · соседи
+399926	spaceforms · сдвиг
+399927	spaceforms · соседи
+399928	spaceforms · сдвиг сжатой фигуры
+399929	spaceforms · сдвиг сжатой фигуры
+399930	spaceforms · сдвиг сжатой фигуры
+399931	spaceforms · сдвиг сжатой фигуры
+399932	spaceforms · путь
+399933	spaceforms · соседи
+399934	spaceforms · соседи
+399935	spaceforms · отражение
+399936	spaceforms · соседи
+399937	spaceforms · сдвиг
+399938	spaceforms · сдвиг
+399939	spaceforms · путь
+399940	spaceforms · счёт
+399941	spaceforms · путь
+399942	spaceforms · путь
+399943	spaceforms · путь
+399944	spaceforms · соседи
+399945	spaceforms · отражение
+399946	spaceforms · отражение
+399947	spaceforms · сдвиг
+399948	spaceforms · путь
+399949	spaceforms · сдвиг
+399950	spaceforms · путь
+399951	spaceforms · сдвиг сжатой фигуры
+399952	spaceforms · сдвиг сжатой фигуры
+399953	spaceforms · сдвиг сжатой фигуры
+399954	spaceforms · сдвиг сжатой фигуры
+399955	spaceforms · счёт
+399956	spaceforms · путь
+399957	spaceforms · путь
+399958	spaceforms · сдвиг
+399959	spaceforms · путь
+399960	spaceforms · сдвиг
+399961	spaceforms · сдвиг
+399962	spaceforms · счёт
+399963	spaceforms · поворот
+399964	spaceforms · счёт
+399965	spaceforms · счёт
+399966	spaceforms · счёт
+399967	spaceforms · путь
+399968	spaceforms · сдвиг
+399969	spaceforms · сдвиг
+399970	spaceforms · сдвиг
+399971	spaceforms · счёт
+399972	spaceforms · сдвиг
+399973	spaceforms · счёт
+399974	spaceforms · сдвиг сжатой фигуры
+399975	spaceforms · сдвиг сжатой фигуры
+399976	spaceforms · сдвиг сжатой фигуры
+399977	spaceforms · сдвиг сжатой фигуры
+399978	spaceforms · поворот
+399979	spaceforms · счёт
+399980	spaceforms · счёт
+399981	spaceforms · сдвиг
+399982	spaceforms · счёт
+399983	spaceforms · сдвиг
+399984	spaceforms · сдвиг
+399985	spaceforms · поворот
+399986	spaceforms · отражение
+399987	spaceforms · поворот
+399988	spaceforms · поворот
+399989	spaceforms · поворот
+399990	spaceforms · счёт
+399991	spaceforms · сдвиг
+399992	spaceforms · сдвиг
+399993	spaceforms · сдвиг
+399994	spaceforms · отражение
+399995	spaceforms · сдвиг
+399996	spaceforms · поворот
+399997	spaceforms · сдвиг сжатой фигуры
+399998	spaceforms · сдвиг сжатой фигуры
+399999	spaceforms · сдвиг сжатой фигуры
+400000	spaceforms · сдвиг сжатой фигуры
+400001	spaceforms · отражение
+400002	spaceforms · поворот
+400003	spaceforms · поворот
+400004	spaceforms · сдвиг
+400005	spaceforms · поворот
+400006	spaceforms · сдвиг
+400007	spaceforms · сдвиг
+400008	spaceforms · отражение
+400009	spaceforms · соседи
+400010	spaceforms · отражение
+400011	spaceforms · отражение
+400012	spaceforms · отражение
+400013	spaceforms · поворот
+400014	spaceforms · сдвиг
+400015	spaceforms · сдвиг
+400016	spaceforms · сдвиг
+400017	spaceforms · соседи
+400018	spaceforms · соседи
+400019	spaceforms · отражение
+400020	spaceforms · сдвиг сжатой фигуры
+400021	spaceforms · сдвиг сжатой фигуры
+400022	spaceforms · сдвиг сжатой фигуры
+400023	spaceforms · сдвиг сжатой фигуры
+400024	spaceforms · соседи
+400025	spaceforms · отражение
+400026	spaceforms · отражение
+400027	spaceforms · сдвиг
+400028	spaceforms · отражение
+400029	spaceforms · соседи
+400030	spaceforms · соседи
+400031	spaceforms · сдвиг
+400032	spaceforms · путь
+400033	spaceforms · соседи
+400034	spaceforms · сдвиг
+400035	spaceforms · соседи
+400036	spaceforms · отражение
+400037	spaceforms · сдвиг
+400038	spaceforms · сдвиг
+400039	spaceforms · соседи
+400040	spaceforms · путь
+400041	spaceforms · путь
+400042	spaceforms · соседи
+400043	spaceforms · сдвиг сжатой фигуры
+400044	spaceforms · сдвиг сжатой фигуры
+400045	spaceforms · сдвиг сжатой фигуры
+400046	spaceforms · сдвиг сжатой фигуры
 400048	speechforms · отказ счёта
 400049	speechforms · анафора
 400050	speechforms · анафора
