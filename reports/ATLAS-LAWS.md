@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 323 законов
+# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 327 законов
 
 Собран из докстрингов и комментариев `tools`, `courts`, `scripts` орудием
 `tools/law_atlas.py`. Взяты ОБЩИЕ законы — те, что держатся не одним файлом.
@@ -6,7 +6,7 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 5464 разных законов на 6640 упоминаний; сказанных однажды — 5141, и они остаются при своём месте.
+Всего в дереве 5483 разных законов на 6673 упоминаний; сказанных однажды — 5156, и они остаются при своём месте.
 
 
 ## Держат 72 файлов
@@ -49,22 +49,22 @@
 - **ЗНАК ДЕЙСТВИЯ СУДИТСЯ ЗАКОНОМ ЗАМКНУТОГО МИРА, А НЕ ДЫРОЙ В КАЖДОЙ РАМКЕ**  
   tools/actionmeasure.py, tools/actturn.py, tools/beforetails.py, tools/dateforms.py, tools/dialogueforms.py, tools/discountroad.py … и ещё 17
 
-## Держат 21 файлов
+## Держат 22 файлов
 
 - **МУТАНТОВ НЕ ПОСТРОЕНО ВОВСЕ**  
+  tools/countlawforms.py, tools/decaseforms.py, tools/deplurforms.py, tools/dosupportforms.py, tools/elisionforms.py, tools/fipartforms.py … и ещё 16
+
+## Держат 21 файлов
+
+- **ПРАВИЛО, ДАННОЕ БЕЗ СВОИХ ЛОЖНЫХ СЛЕДСТВИЙ, УЧИТ ИМ НАРАВНЕ С СОБОЮ**  
+  tools/gen_genesis_countlaw.py, tools/gen_genesis_decase.py, tools/gen_genesis_deplur.py, tools/gen_genesis_elision.py, tools/gen_genesis_fipart.py, tools/gen_genesis_fuseprep.py … и ещё 15
+- **ЯЗЫК, ЧЕЙ ЗАКОН ЗДЕСЬ НАЗВАН**  
   tools/countlawforms.py, tools/decaseforms.py, tools/deplurforms.py, tools/dosupportforms.py, tools/elisionforms.py, tools/fipartforms.py … и ещё 15
 
 ## Держат 20 файлов
 
-- **ПРАВИЛО, ДАННОЕ БЕЗ СВОИХ ЛОЖНЫХ СЛЕДСТВИЙ, УЧИТ ИМ НАРАВНЕ С СОБОЮ**  
-  tools/gen_genesis_countlaw.py, tools/gen_genesis_decase.py, tools/gen_genesis_deplur.py, tools/gen_genesis_elision.py, tools/gen_genesis_fipart.py, tools/gen_genesis_fuseprep.py … и ещё 14
-- **ЯЗЫК, ЧЕЙ ЗАКОН ЗДЕСЬ НАЗВАН**  
-  tools/countlawforms.py, tools/decaseforms.py, tools/deplurforms.py, tools/dosupportforms.py, tools/elisionforms.py, tools/fipartforms.py … и ещё 14
-
-## Держат 19 файлов
-
 - **СТРАНИЦА, КОТОРУЮ ДОМ НЕ ПОРОЖДАЕТ, НЕ ЕСТЬ ЛОЖЬ ЭТОГО СУДА**  
-  tools/countlawforms.py, tools/decaseforms.py, tools/dosupportforms.py, tools/elisionforms.py, tools/fipartforms.py, tools/fuseprepforms.py … и ещё 13
+  tools/countlawforms.py, tools/decaseforms.py, tools/dosupportforms.py, tools/elisionforms.py, tools/fipartforms.py, tools/fuseprepforms.py … и ещё 14
 
 ## Держат 16 файлов
 
@@ -74,20 +74,20 @@
   tools/calforms.py, tools/chainforms.py, tools/cmpforms.py, tools/countforms.py, tools/geoforms.py, tools/moneyforms.py … и ещё 10
 - **МУТАНТ ПО ЧИСЛУ В КАЖДОМ РОДЕ**  
   tools/angleforms.py, tools/chancetrapforms.py, tools/closureforms.py, tools/dimforms.py, tools/distforms.py, tools/fenceforms.py … и ещё 10
+- **ПРИНАДЛЕЖНОСТИ К СВОЕМУ НАБОРУ**  
+  tools/decaseforms.py, tools/dosupportforms.py, tools/fipartforms.py, tools/fuseprepforms.py, tools/huobjforms.py, tools/idredupforms.py … и ещё 10
 - **ЧЕТЫРЕ ЛОЖНЫХ ВЫВОДА, ОТНИМАЕМЫХ У ЧИТАТЕЛЯ**  
   tools/decaseforms.py, tools/deplurforms.py, tools/fipartforms.py, tools/hayforms.py, tools/idredupforms.py, tools/jaclassforms.py … и ещё 10
 
 ## Держат 15 файлов
 
-- **ПРИНАДЛЕЖНОСТИ К СВОЕМУ НАБОРУ**  
-  tools/decaseforms.py, tools/dosupportforms.py, tools/fipartforms.py, tools/fuseprepforms.py, tools/idredupforms.py, tools/jaclassforms.py … и ещё 9
+- **ГРУППЫ СЛОЖЕНЫ ПО ТОМУ, ЧТО ИМЕННО ОНИ ОТНИМАЮТ**  
+  tools/gen_genesis_decase.py, tools/gen_genesis_dosupport.py, tools/gen_genesis_fipart.py, tools/gen_genesis_fuseprep.py, tools/gen_genesis_huobj.py, tools/gen_genesis_idredup.py … и ещё 9
 
 ## Держат 14 файлов
 
 - **ВОПРОС СУДИТСЯ СВОИМ ОТВЕТОМ, А РОД ОПРЕДЕЛЯЕТСЯ ОТВЕТОМ**  
   courts/algo_court.py, courts/compsci_court.py, courts/cyber_court.py, courts/formula_court.py, courts/linalg_court.py, courts/machine_court.py … и ещё 8
-- **ГРУППЫ СЛОЖЕНЫ ПО ТОМУ, ЧТО ИМЕННО ОНИ ОТНИМАЮТ**  
-  tools/gen_genesis_decase.py, tools/gen_genesis_dosupport.py, tools/gen_genesis_fipart.py, tools/gen_genesis_fuseprep.py, tools/gen_genesis_idredup.py, tools/gen_genesis_jaclass.py … и ещё 8
 - **ИСКОМОЕ ОБЪЯВЛЯЕТ СВОЙ ВОПРОС ОДИН РАЗ**  
   tools/gen_genesis_algebra.py, tools/gen_genesis_algorithms.py, tools/gen_genesis_compsci.py, tools/gen_genesis_cybernetics.py, tools/gen_genesis_formulas.py, tools/gen_genesis_geometry.py … и ещё 8
 - **САМОПРОВЕРКА ДОМА СТЕРЕЖЁТ ТО, ЧЕГО СУДУ НЕ ВИДНО**  
@@ -109,6 +109,8 @@
 
 - **ЕСЛИ ВСЯКАЯ ЗАПИСЬ В НЕЙ ПЕРЕСЧИТЫВАЕТСЯ РАЗБОРОМ**  
   tools/angleforms.py, tools/condforms.py, tools/homoforms.py, tools/leapforms.py, tools/medianforms.py, tools/numlineforms.py … и ещё 5
+- **ПОКАЗ ОТКАЗА УЧИТ, ЧТО ТАК НЕЛЬЗЯ, И НЕ УЧИТ, ПОЧЕМУ**  
+  scripts/refusal_reason.py, tools/fipartforms.py, tools/huobjforms.py, tools/idredupforms.py, tools/jaclassforms.py, tools/koparticleforms.py … и ещё 5
 - **ПОЧЕМУ ОБЕ СТОРОНЫ ОБЯЗАТЕЛЬНЫ**  
   tools/angleforms.py, tools/condforms.py, tools/directforms.py, tools/homoforms.py, tools/measureforms.py, tools/medianforms.py … и ещё 5
 - **СЛОВО, ПОКАЗАННОЕ ОДИН РАЗ, ЕСТЬ СЛОВО НЕПОКАЗАННОЕ**  
@@ -122,8 +124,6 @@
   tools/angleforms.py, tools/condforms.py, tools/homoforms.py, tools/medianforms.py, tools/numlineforms.py, tools/overlapforms.py … и ещё 4
 - **ОТВЕТ И ЕГО КУЗНИЦА — ДВЕ ПОВЕРХНОСТИ ОДНОГО ФАКТА**  
   tools/gen_genesis_aggregate.py, tools/gen_genesis_compare.py, tools/gen_genesis_depletion.py, tools/gen_genesis_gsmlex.py, tools/gen_genesis_gsmwide.py, tools/gen_genesis_heads.py … и ещё 4
-- **ПОКАЗ ОТКАЗА УЧИТ, ЧТО ТАК НЕЛЬЗЯ, И НЕ УЧИТ, ПОЧЕМУ**  
-  scripts/refusal_reason.py, tools/fipartforms.py, tools/idredupforms.py, tools/jaclassforms.py, tools/koparticleforms.py, tools/personplaceforms.py … и ещё 4
 - **ФОРМУЛЫ РОДОВ — ЗАКОН ОТВЕТА ОТ ВЕЛИЧИН ВОПРОСА**  
   tools/gen_genesis_compsci.py, tools/gen_genesis_geometry.py, tools/gen_genesis_linalg.py, tools/gen_genesis_machine.py, tools/gen_genesis_numbers.py, tools/gen_genesis_physics.py … и ещё 4
 
@@ -166,10 +166,14 @@
   courts/equation_court.py, courts/inquiry_court.py, courts/inquiry_de_fr_court.py, courts/inquiry_es_it_court.py, courts/inquiry_pl_tr_court.py, courts/inquiry_pt_nl_court.py
 - **МУТАНТ ПО ЧИСЛУ В КАЖДОМ РОДЕ, ГДЕ ЕСТЬ ЗАПИСЬ**  
   tools/condforms.py, tools/leapforms.py, tools/medianforms.py, tools/numlineforms.py, tools/pctbaseforms.py, tools/tzoneforms.py
+- **ПЯТЬ ЛОЖНЫХ ВЫВОДОВ, ОТНИМАЕМЫХ У ЧИТАТЕЛЯ**  
+  tools/countlawforms.py, tools/dosupportforms.py, tools/elisionforms.py, tools/fuseprepforms.py, tools/huobjforms.py, tools/personplaceforms.py
 - **САМАЯ ДЛИННАЯ ЗАДАЧА ЕСТЬ ДНО СРОКА**  
   courts/arith_court.py, scripts/claims_court.py, scripts/court_reach.py, scripts/coverage.py, scripts/prose_court.py, tools/panel.py
 - **СЛУЖЕБНОЕ СЛОВО, СТОЯЩЕЕ В РАМКЕ ЦЕЛЫМ, НЕ СЛЫШИТ ТОГО, ЧТО ЗА НИМ ПОДСТАВЯТ**  
   scripts/elision.py, tools/cmpforms.py, tools/frgram.py, tools/romgram.py, tools/timeunits.py, tools/topicforms.py
+- **СУД ЧИТАЕТ ДВА ЗАКОНА, И ОБА СОДЕРЖАТЕЛЬНЫ**  
+  tools/fipartforms.py, tools/huobjforms.py, tools/jaclassforms.py, tools/koparticleforms.py, tools/personplaceforms.py, tools/ukcountforms.py
 
 ## Держат 5 файлов
 
@@ -183,16 +187,12 @@
   tools/deplurforms.py, tools/hayforms.py, tools/plcopulaforms.py, tools/serestarforms.py, tools/soundarticleforms.py
 - **НУЛЬ ЗРЯЧЕГО ОБЯЗАН ОТЛИЧАТЬСЯ ОТ НУЛЯ СЛЕПОГО**  
   scripts/court_split.py, scripts/house_skew.py, scripts/ledger_mute.py, scripts/partial_guard.py, scripts/refusal_reason.py
-- **ПЯТЬ ЛОЖНЫХ ВЫВОДОВ, ОТНИМАЕМЫХ У ЧИТАТЕЛЯ**  
-  tools/countlawforms.py, tools/dosupportforms.py, tools/elisionforms.py, tools/fuseprepforms.py, tools/personplaceforms.py
 - **РАМКА ПОРОДИЛА СТРАНИЦУ — ОСТАЛСЯ СЧЁТ, И СЧИТАЕТСЯ ТОЛЬКО ОТВЕЧАЮЩАЯ ЧАСТЬ**  
   tools/bothforms.py, tools/estimforms.py, tools/precforms.py, tools/sameshareforms.py, tools/zerodivforms.py
 - **РУБЕЖ ОБЪЯВЛЕН ПО ДОСТИГНУТОМУ**  
   scripts/half_law.py, scripts/key_support.py, scripts/one_singular.py, scripts/operator_share.py, scripts/template_word.py
 - **СЛОВА ДО ПОСЛЕДНЕГО ДВОЕТОЧИЯ, РАВЕНСТВА ПОСЛЕ**  
   tools/divsenseforms.py, tools/mapscaleforms.py, tools/pctdiffforms.py, tools/propforms.py, tools/remdivforms.py
-- **СУД ЧИТАЕТ ДВА ЗАКОНА, И ОБА СОДЕРЖАТЕЛЬНЫ**  
-  tools/fipartforms.py, tools/jaclassforms.py, tools/koparticleforms.py, tools/personplaceforms.py, tools/ukcountforms.py
 - **ЧЕТВЁРКА В ЗАПИСИ ЕСТЬ БУКВА ЗАКОНА, А НЕ ВЕЛИЧИНА РЯДА**  
   courts/inquiry_court.py, courts/inquiry_de_fr_court.py, courts/inquiry_es_it_court.py, courts/inquiry_pl_tr_court.py, courts/inquiry_pt_nl_court.py
 
@@ -303,6 +303,8 @@
   tools/behaviorforms.py, tools/linkforms.py, tools/topicforms.py
 - **ЦЕЛОСТЬ — ВЕРДИКТ С ОСНОВАНИЕМ**  
   courts/formula_court.py, courts/geometry_court.py, courts/physlaw_court.py
+- **ЦИТАТА СОСЕДА НЕ ЕСТЬ ЦИТАТА ЯЗЫКА ДОМА**  
+  tools/huobjforms.py, tools/personplaceforms.py, tools/zhclassforms.py
 - **ЧЕГО ЭТОТ ПРИБОР НЕ МЕРИТ, И ЭТО ОБЪЯВЛЕНО ПРЯМО**  
   scripts/ask_width.py, scripts/sentence_cover.py, scripts/verdict_cover.py
 - **ЧИСЛА ПРОВЕРЯЮТСЯ ПРИ ВВОЗЕ**  
@@ -358,6 +360,8 @@
   courts/calendar_court.py, tools/gen_genesis_calendar.py
 - **ВЫБРАННЫЙ ЧЛЕН ОТКРЫВАЕТ ОТВЕТ**  
   courts/valence_court.py, tools/gen_genesis_valence.py
+- **ГЛАГОЛ СОГЛАСУЕТСЯ НЕ ТОЛЬКО С ЛИЦОМ ГОВОРЯЩЕГО, НО И С ОПРЕДЕЛЁННОСТЬЮ ПРЕДМЕТА**  
+  courts/huobj_court.py, tools/huobjforms.py
 - **ГРАНИЦА БЕЗ ПРИЗНАКА ДЕЛА ЕСТЬ СЛОВО, А НЕ МЕРА**  
   scripts/manifest_court.py, tools/manifest_kinds.py
 - **ГРАНИЦА ОБЪЯВЛЕНА ЗДЕСЬ, А НЕ СПРЯТАНА**  
@@ -368,8 +372,12 @@
   courts/ukcount_court.py, tools/ukcountforms.py
 - **ДВА ОБЪЯВЛЕНИЯ ОДНОГО ЗАКОНА ЖИВУТ, ПОКА ИХ СВЕРЯЮТ**  
   tools/actionpages.py, tools/svampforms.py
+- **ДВЕ СТРАНИЦЫ ОДНОГО ТЕКСТА ЕСТЬ ОДНА СТРАНИЦА**  
+  tools/huobjforms.py, tools/jaclassforms.py
 - **ДЕЙСТВИЕ БЕРЁТСЯ ИЗ ВОПРОСА, А НЕ ИЗ СЛОВА УСЛОВИЯ**  
   courts/inverse_court.py, tools/inverseforms.py
+- **ДЕЙСТВИЯ, — И ТОГДА ОДНО ЛИЦО ИМЕЕТ ДВА ОКОНЧАНИЯ, А НЕ ОДНО**  
+  courts/huobj_court.py, tools/huobjforms.py
 - **ДЕЛИМОСТЬ СТРОИТСЯ ОТ ОТВЕТА, А НЕ ВЫПАДАЕТ ПО УДАЧЕ**  
   tools/gen_genesis_inquiry_de_fr.py, tools/gen_genesis_inquiry_pt_nl.py
 - **ДЛИНА РАЗЛОЖЕНИЯ ЕСТЬ ЧАСТЬ ФОРМЫ, И ПОТОМУ ОГРАНИЧЕНА**  
@@ -388,6 +396,8 @@
   tools/elisionforms.py, tools/soundarticleforms.py
 - **ДОМ, ПРЕДУПРЕДИВШИЙ О ВТОРОЙ КОПИИ И ДЕРЖАЩИЙ ЕЁ, ПРЕДУПРЕДИЛ О СЕБЕ**  
   scripts/second_copy.py, tools/gen_genesis_cybernetics.py
+- **ДОМ, УТВЕРЖДАЮЩИЙ О СВОДЕ, ДОЛЖЕН УМЕТЬ ЭТО ПРОВЕРИТЬ ПО САМОМУ СВОДУ**  
+  tools/huobjforms.py, tools/personplaceforms.py
 - **ДОМ, УЧАЩИЙ ПРАВИЛУ, УЧИЛ ЕГО НА ТОМ САМОМ ГЛАГОЛЕ, НА КОТОРОМ ПРАВИЛО ЛОМАЕТСЯ**  
   scripts/past_gender.py, tools/rugram.py
 - **ДЫРА, НАЙДЕННАЯ ОДНИМ НАПИСАНИЕМ, ЕСТЬ ДЫРА В ЗАПРОСЕ**  
@@ -686,8 +696,6 @@
   tools/gen_genesis_l4.py, tools/gen_genesis_percent.py
 - **ЦЕНА ЗАМЕРЕНА, А НЕ ОБЕЩАНА**  
   courts/agreement_court.py, tools/panel.py
-- **ЦИТАТА СОСЕДА НЕ ЕСТЬ ЦИТАТА ЯЗЫКА ДОМА**  
-  tools/personplaceforms.py, tools/zhclassforms.py
 - **ЧЁТНОЕ НЕ-КВАДРАТ ГОВОРИТ «ДА» ТОЮ ЖЕ РАМКОЙ**  
   courts/proof_court.py, tools/gen_genesis_proof.py
 - **ЧАСОВОЙ ПОЯС ЕСТЬ ИМЕННО ТО МНОЖЕСТВО МЕСТ, ГДЕ ЧАС ОДИН И ТОТ ЖЕ**  

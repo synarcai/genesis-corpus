@@ -2428,6 +2428,29 @@
       "text": "shows"
     },
     {
+      "name": "huobj",
+      "file": "datasets/genesis_huobj.txt",
+      "genre": "ВЕНГЕРСКОЕ ОБЪЕКТНОЕ СПРЯЖЕНИЕ — СВОД ОТВЕРГАЛ «én látok azt» И НЕ СКАЗАЛ, ЧТО ГЛАГОЛ ПОМНИТ ПРЕДМЕТ. Замер 13.09 ПО ПЛАСТУ ВЕНГЕРСКОГО (2 240 строк): пар «неопределённое / определённое» 48 (восемь глаголов на шесть лиц), по 10 строк каждая — «látok valamit, és látom azt», «látsz valamit, és látod azt», «lát valamit, és látja azt»; отказы «¬ én látok azt» и «¬ én látom valamit» — есть оба; строк, объясняющих ДВА РЯДА ОКОНЧАНИЙ, — НОЛЬ. ПОКАЗ ОТКАЗА УЧИТ, ЧТО ТАК НЕЛЬЗЯ, И НЕ УЧИТ, ПОЧЕМУ. Венгерский глагол согласуется не только с ЛИЦОМ говорящего, но и с ОПРЕДЕЛЁННОСТЬЮ предмета действия: «látok valamit» — вижу нечто, «látom azt» — вижу ЭТО; лицо одно, время одно, наклонение одно, а окончание разное. ГЛАГОЛ СОГЛАСУЕТСЯ НЕ ТОЛЬКО С ЛИЦОМ ГОВОРЯЩЕГО, НО И С ОПРЕДЕЛЁННОСТЬЮ ПРЕДМЕТА ДЕЙСТВИЯ, — И ТОГДА ОДНО ЛИЦО ИМЕЕТ ДВА ОКОНЧАНИЯ, А НЕ ОДНО. Шесть родов и пять ложных выводов: «глагол помнит только своё лицо», «два ряда — два времени» (оба суть настоящее изъявительное), «определённость сказана однажды» (по-венгерски дважды — словом и окончанием, и обе половины обязаны сойтись), «это описка одной буквы» (расхождение систематично: шесть лиц, восемь глаголов, сорок восемь пар), «выбирает говорящий» (выбирает ПРЕДМЕТ). This is the seventy-third trap of the series — «the verb remembers only the one who speaks», and Hungarian breaks it. Дом не знает венгерского: пары форм и переводы объявлены рукой, и сказано, что рукой; взяты пять глаголов, чьи все двенадцать форм стоя́т в пласте свода, и самопроверка падает, если хоть одной пары в нём нет (сверено 30); о гармонии гласных во множественном, о множественном после числа, о притяжательном спряжении и о приставочных глаголах дом молчит — то свои законы и свои дома.",
+      "act": [
+        "compare",
+        "expound",
+        "inflect",
+        "refute"
+      ],
+      "oracle": [
+        "declared"
+      ],
+      "boundary": [
+        "declared_table_only"
+      ],
+      "assemblies": [
+        "school"
+      ],
+      "size": 63051,
+      "tiers": [],
+      "text": "shows"
+    },
+    {
       "name": "formula_lang",
       "file": "datasets/genesis_formula_lang.txt",
       "genre": "formula and speech, converted both ways at any depth: ONE expression TREE with four surfaces (LaTeX, glyphs, English words, Russian words) and four inverse walks written apart; a compound argument is always spoken in brackets, which is what makes speech parsable at any depth; the court parses BOTH sides of a conversion and requires the SAME TREE, and the home's oracle proves all eight walks agree on six thousand trees to depth five ЗАПИСЬ ЗДЕСЬ МАШИННАЯ, И ЭТО ОБЪЯВЛЕНО (12.09): дефис вместо знака минус, звёздочка вместо ×, косая черта вместо ÷. Читать обе записи учит мир `md_latex`. БЛИЗКАЯ РОДНЯ, НАЗВАННАЯ С РАЗЛИЧИЕМ: `equation` спрашивает, ИСТИННО ли утверждение о корне, и решает подстановкой. Здесь истина не спрашивается вовсе: одно и то же дерево выражения записывается ЧЕТЫРЬМЯ способами, и проверяется обратимость перевода. И `equation_signed` — та же лестница на отрицательных корнях: там спрошена ИСТИНА утверждения при одной поверхности, здесь — ОБРАТИМОСТЬ перевода при четырёх.",
@@ -2531,10 +2554,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 40777515,
+      "size": 40840568,
       "tiers": [],
       "text": "mix",
-      "lines": 438754
+      "lines": 439014
     },
     {
       "name": "fuseprep",
@@ -10653,10 +10676,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 33521919,
+      "size": 33584972,
       "tiers": [],
       "text": "mix",
-      "lines": 394172
+      "lines": 394432
     },
     {
       "name": "school_biling_v2c",
