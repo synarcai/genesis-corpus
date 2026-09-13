@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 385 законов
+# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 389 законов
 
 Собран из докстрингов и комментариев `tools`, `courts`, `scripts` орудием
 `tools/law_atlas.py`. Взяты ОБЩИЕ законы — те, что держатся не одним файлом.
@@ -6,7 +6,7 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 6149 разных законов на 7580 упоминаний; сказанных однажды — 5764, и они остаются при своём месте.
+Всего в дереве 6154 разных законов на 7636 упоминаний; сказанных однажды — 5765, и они остаются при своём месте.
 
 
 ## Держат 81 файлов
@@ -96,13 +96,21 @@
   courts/algo_court.py, courts/compsci_court.py, courts/cyber_court.py, courts/formula_court.py, courts/linalg_court.py, courts/machine_court.py … и ещё 8
 - **ИСКОМОЕ ОБЪЯВЛЯЕТ СВОЙ ВОПРОС ОДИН РАЗ**  
   tools/compsciforms.py, tools/gen_genesis_algebra.py, tools/gen_genesis_algorithms.py, tools/gen_genesis_cybernetics.py, tools/gen_genesis_formulas.py, tools/gen_genesis_machine.py … и ещё 8
+- **ОСТАЛЬНАЯ СТРАНИЦА У НЕГО НЕ**  
+  scripts/house_mutant.py, tools/absforms.py, tools/deplurforms.py, tools/elisionforms.py, tools/genderforms.py, tools/hayforms.py … и ещё 8
+- **ПРОВЕРЯЕТСЯ, А ЛИШЬ ЧИСЛИТСЯ**  
+  scripts/house_mutant.py, tools/absforms.py, tools/deplurforms.py, tools/elisionforms.py, tools/genderforms.py, tools/hayforms.py … и ещё 8
 - **САМОПРОВЕРКА ДОМА СТЕРЕЖЁТ ТО, ЧЕГО СУДУ НЕ ВИДНО**  
   courts/angle_court.py, courts/cond_court.py, courts/direct_court.py, courts/fence_court.py, courts/homo_court.py, courts/leap_court.py … и ещё 8
+- **СУД, ЧИТАЮЩИЙ ЛИШЬ ЦИТАТЫ, СТЕРЕЖЁТ ЛИШЬ ЦИТАТЫ**  
+  scripts/house_mutant.py, tools/absforms.py, tools/deplurforms.py, tools/elisionforms.py, tools/genderforms.py, tools/hayforms.py … и ещё 8
 
 ## Держат 13 файлов
 
 - **РАМКА ПОРОДИЛА СТРАНИЦУ — ОСТАЛСЯ СЧЁТ**  
   tools/addshareforms.py, tools/amendforms.py, tools/boundforms.py, tools/chanceforms.py, tools/cmpshareforms.py, tools/divruleforms.py … и ещё 7
+- **СКЕЛЕТ СТРАНИЦЫ ОБЯЗАН БЫТЬ ОДНИМ ИЗ ОБЪЯВЛЕННЫХ**  
+  tools/absforms.py, tools/deplurforms.py, tools/elisionforms.py, tools/genderforms.py, tools/hayforms.py, tools/homoforms.py … и ещё 7
 
 ## Держат 12 файлов
 
