@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 312 миров, 443386 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 312 миров, 444844 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -579,7 +579,7 @@
 
 ## АКТ «decide» — решить случай: вердикт с основанием рядом
 
-Миров 21, строк 16228.
+Миров 21, строк 17686.
 
 - **`verifyforms`** (3285 строк; recompute, whole_only)  
   **VERIFICATION** — «claim · check · verdict», and the pages where the instrument is OBLIGED to refuse (05.09, the agent architecture, the fourth market): a true claim checked by ANOTHER action cannot be confirmed — the verdict is «not verified», and the gro…
@@ -587,6 +587,8 @@
   **WORLD FACTS** — why and what next about THINGS, not about numbers.
 - **`mandateforms`** (2268 строк; recompute, whole_only)  
   **THE MANDATE** — a standing rule against an order (05.09, the agent architecture, the sixth market): one or two rules the agent was told once, an order of one act, and a verdict that never stands bare — «no: the rule forbids deleting», «yes: the rule forbi…
+- **`actturn`** (1872 строк; recompute, whole_only)  
+  **THE DIALOGUE ACT** — the organism's own turn, with confirmation and observation (06.09).
 - **`place`** (1296 строк; recompute, named_relations_only)  
   **PLACE** — where a thing stands, and the three laws of standing (06.09).
 - **`infer`** (1242 строк; recompute, whole_only)  
@@ -599,8 +601,6 @@
   **document structure: a link is an EDGE and is judged by RESOLUTION against a declared tree** — relative paths counted from the document's own folder, anchors into a document, slugification of a heading into an anchor, order by sidebar_position, and links t…
 - **`opchoice`** (432 строк; recompute, whole_only)  
   **CHOOSING THE OPERATION** — which sign the SITUATION itself requires, and why that one.
-- **`actturn`** (414 строк; recompute, whole_only)  
-  **THE DIALOGUE ACT** — the organism's own turn, with confirmation and observation (06.09).
 - **`primes_langs`** (400 строк; recompute, unsigned_only)  
   **PRIME AND COMPOSITE IN EIGHT LANGUAGES (the owner's word: every language in surplus; the numbers world says it in en/ru): «97 ist eine Primzahl; ihre Teiler sind 1 und 97.», «91 ist keine Primzahl: 91 = 7 × 13.», «ist 91 eine Primzahl? nein: 91 ist keine …
 - **`primewalk`** (392 строк; recompute, whole_only, exact_only, finite_explicit_only)  
