@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 338 законов
+# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 341 законов
 
 Собран из докстрингов и комментариев `tools`, `courts`, `scripts` орудием
 `tools/law_atlas.py`. Взяты ОБЩИЕ законы — те, что держатся не одним файлом.
@@ -6,23 +6,20 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 5656 разных законов на 6906 упоминаний; сказанных однажды — 5318, и они остаются при своём месте.
+Всего в дереве 5668 разных законов на 6923 упоминаний; сказанных однажды — 5327, и они остаются при своём месте.
 
 
-## Держат 77 файлов
+## Держат 78 файлов
 
 - **ПРОБА НА ЗАВЕДОМО ИЗВЕСТНОМ**  
-  scripts/agree_skew.py, scripts/agree_traps.py, scripts/article_sound.py, scripts/asked_uncounted.py, scripts/bench_leak.py, scripts/broken_law.py … и ещё 71
+  scripts/agree_skew.py, scripts/agree_traps.py, scripts/article_sound.py, scripts/asked_uncounted.py, scripts/bench_leak.py, scripts/broken_law.py … и ещё 72
 
 ## Держат 70 файлов
 
+- **ПРОБА ИДЁТ ПРИ ВСЯКОМ ПРОГОНЕ, А НЕ ПО ПРОСЬБЕ**  
+  scripts/agree_skew.py, scripts/agree_traps.py, scripts/article_sound.py, scripts/asked_uncounted.py, scripts/bench_leak.py, scripts/broken_law.py … и ещё 64
 - **СТРАНИЦА, КОТОРУЮ РАМКА НЕ ПОРОЖДАЕТ, НЕ ЕСТЬ ЛОЖЬ ЭТОГО СУДА**  
   tools/absforms.py, tools/addshareforms.py, tools/amendforms.py, tools/angleforms.py, tools/bothforms.py, tools/boundforms.py … и ещё 64
-
-## Держат 69 файлов
-
-- **ПРОБА ИДЁТ ПРИ ВСЯКОМ ПРОГОНЕ, А НЕ ПО ПРОСЬБЕ**  
-  scripts/agree_skew.py, scripts/agree_traps.py, scripts/article_sound.py, scripts/asked_uncounted.py, scripts/bench_leak.py, scripts/broken_law.py … и ещё 63
 
 ## Держат 68 файлов
 
@@ -562,6 +559,8 @@
   scripts/empty_in_court.py, scripts/past_gender.py
 - **ПРИБОР, СЧИТАЮЩИЙ ЛИШЬ ТЕХ, КОГО УЗНАЛ, МОЛЧИТ О НЕУЗНАННЫХ**  
   scripts/agree_skew.py, scripts/twogender.py
+- **ПРИЗНАК «БУКВА», ВЗЯТЫЙ У ДВИЖКА, РЕЖЕТ ПО ЛАТИНСКОЙ МЕРКЕ**  
+  scripts/refusal_ground.py, scripts/refusal_only_word.py
 - **ПРИЗНАК ДОСТАТОЧНЫЙ, ПОКАЗАННЫЙ БЕЗ СВОЕЙ ГРАНИЦЫ, ЧИТАЕТСЯ КАК НЕОБХОДИМЫЙ**  
   tools/gen_genesis_overlap.py, tools/overlapforms.py
 - **ПРИЗНАК ЧИСТ И НЕ СПРАШИВАЕТ ОБ ИСТИНЕ**  
@@ -634,6 +633,8 @@
   scripts/key_support.py, tools/tempscale.py
 - **СЛОВА ПОСЛЕ ПОСЛЕДНЕГО ДВОЕТОЧИЯ**  
   tools/propforms.py, tools/remdivforms.py
+- **СЛОВО ОТРЕЗАЕТСЯ ПРОБЕЛОМ, А НЕ ПРИЗНАКОМ «БУКВА**  
+  scripts/refusal_ground.py, scripts/refusal_only_word.py
 - **СЛОВО, ЗАИМСТВОВАННОЕ ЯЗЫКОМ, ОБЪЯВЛЕНО НЕ ИМ**  
   scripts/signless_census.py, tools/langsign.py
 - **СЛОЙ ОДИН, А ПОЛЕЙ У НЕГО ДВА**  
@@ -744,6 +745,8 @@
   courts/measureprec_court.py, tools/measureprecforms.py
 - **ЧИСЛО ЧИТАЕТСЯ СО СВОИМ ЗНАКОМ**  
   courts/orderlaw_court.py, tools/orderlawforms.py
+- **ЧИСЛО ЭТО — ОТЧЁТ, А НЕ РУБЕЖ**  
+  scripts/court_split.py, scripts/refusal_ground.py
 - **ЧИСТКА СТРУКТУРНАЯ, А НЕ СЛОВАРНАЯ**  
   tools/shelf_fetch.py, tools/shelf_open.py
 - **ЧТО ПИШЕТ ЭТОТ ДОМ, И ПОЧЕМУ ИМЕННО ТАК**  
