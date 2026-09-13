@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 312 миров, 444844 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 312 миров, 444960 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -11,7 +11,7 @@
 
 ## АКТ «recount» — пересчитать величину: строка утверждает число
 
-Миров 152, строк 229956.
+Миров 152, строк 230072.
 
 - **`links`** (17566 строк; declared, whole_only)  
   **CONVERSATION LINKS** — a question whose subject stands in the PREVIOUS reply (the owner's order, 04.09, item 5; the BESEDA band measures this genus mute 15 of 15).
@@ -267,6 +267,8 @@
   **DIVISION BY ZERO** — a refusal that HAS A REASON, and the reason is COMPUTED. Measured 10.09 across all 216 show worlds: multiplication by zero appears 696 times, zero as the dividend («0 ÷ 3») 644 times, and the expression «n ÷ 0» NOT ONCE. The canon tea…
 - **`abs`** (340 строк; recompute, whole_only)  
   **THE MODULUS OF A NUMBER** — THE DISTANCE TO ZERO, WHICH HAS NO SIGN. Measured 11.09 across the 237 show worlds: the writing «|−5|» — NONE; «distance from zero» — NONE. The word «модуль» occurs 2540 times and ALWAYS ABOUT SOMETHING ELSE: it is the remainde…
+- **`anaphora`** (324 строк; recompute, whole_only)  
+  **ANAPHORA** — the second mention of a person, and TWO WAYS of carrying it.
 - **`sequences_langs`** (320 строк; recompute, unsigned_only)  
   **THE k-TH TERM OF A PROGRESSION IN EIGHT LANGUAGES (the owner's word: every language in surplus; the sequences world says it in en/ru): «das Glied Nummer 3 der Folge ab 5 mit Schritt 6 ist 17: 3 − 1 = 2, 2 × 6 = 12, 5 + 12 = 17.», «quel est le terme numéro…
 - **`remainders_langs`** (320 строк; recompute, unsigned_only)  
@@ -293,8 +295,6 @@
   **THE NUMBER'S PHRASE** — the number that hangs on a FORM, not on a digit (06.09).
 - **`chance`** (224 строк; recompute, whole_only)  
   **CHANCE AS A RATIO OF COUNTS** — the corpus DEFINED probability and never once COMPUTED it.
-- **`anaphora`** (216 строк; recompute, whole_only)  
-  **ANAPHORA** — the second mention of a person, and TWO WAYS of carrying it.
 - **`sameshare`** (200 строк; recompute, whole_only)  
   **ONE SHARE IN DIFFERENT WRITINGS** — «1 out of 4», «one quarter» and «1/4» are one number.
 - **`amend`** (192 строк; recompute, whole_only)  
@@ -315,7 +315,7 @@
   Russian word problems as EPISODES: one bearer, one thing, an action and a total, where the third fact names its bearer EXPLICITLY («у пети осталось 5 яблок») because a market law is bought only inside one episode; loss and gain share one structure with oppo…
 - **`ru_conversions`** (68 строк; recompute, declared, reversibility, whole_only, exact_only)  
   **unit conversion in the RUSSIAN question frame: «сколько минут в двух часах?»** — the numeral stands in an oblique case and the unit after it in the prepositional, forms the corpus never showed; every answer carries its GROUND beside the verdict («в часе 6…
-- **`selfmeasure`** (59 строк; recompute, declared, whole_only, unsigned_only)  
+- **`selfmeasure`** (67 строк; recompute, declared, whole_only, unsigned_only)  
   **the organism speaking about ITSELF, where a self-report is a DATED MEASUREMENT and never an impression (TELOS-DESIGN §4): four genera** — state as a fraction bounded by exact integer multiplication, boundary named by number with its complement summing to …
 
 ## АКТ «compare» — сравнить двоих: больше, меньше, во столько же раз
