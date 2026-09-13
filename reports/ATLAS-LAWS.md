@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 314 законов
+# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 319 законов
 
 Собран из докстрингов и комментариев `tools`, `courts`, `scripts` орудием
 `tools/law_atlas.py`. Взяты ОБЩИЕ законы — те, что держатся не одним файлом.
@@ -6,13 +6,13 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 5373 разных законов на 6523 упоминаний; сказанных однажды — 5059, и они остаются при своём месте.
+Всего в дереве 5440 разных законов на 6603 упоминаний; сказанных однажды — 5121, и они остаются при своём месте.
 
 
-## Держат 71 файлов
+## Держат 72 файлов
 
 - **ПРОБА НА ЗАВЕДОМО ИЗВЕСТНОМ**  
-  scripts/agree_skew.py, scripts/agree_traps.py, scripts/article_sound.py, scripts/bench_leak.py, scripts/broken_law.py, scripts/build_dated.py … и ещё 65
+  scripts/agree_skew.py, scripts/agree_traps.py, scripts/article_sound.py, scripts/asked_uncounted.py, scripts/bench_leak.py, scripts/broken_law.py … и ещё 66
 
 ## Держат 70 файлов
 
@@ -24,10 +24,10 @@
 - **СУД, ПИШУЩИЙ ЗАКОН ВТОРОЙ РАЗ, РАСХОДИТСЯ С ДОМОМ НА ПЕРВОЙ ЖЕ ПРАВКЕ**  
   courts/abs_court.py, courts/addshare_court.py, courts/amend_court.py, courts/angle_court.py, courts/both_court.py, courts/bound_court.py … и ещё 62
 
-## Держат 63 файлов
+## Держат 64 файлов
 
 - **ПРОБА ИДЁТ ПРИ ВСЯКОМ ПРОГОНЕ, А НЕ ПО ПРОСЬБЕ**  
-  scripts/agree_skew.py, scripts/agree_traps.py, scripts/article_sound.py, scripts/bench_leak.py, scripts/broken_law.py, scripts/build_dated.py … и ещё 57
+  scripts/agree_skew.py, scripts/agree_traps.py, scripts/article_sound.py, scripts/asked_uncounted.py, scripts/bench_leak.py, scripts/broken_law.py … и ещё 58
 
 ## Держат 44 файлов
 
@@ -197,6 +197,8 @@
   tools/addshareforms.py, tools/divshareforms.py, tools/mulshareforms.py, tools/wholeshareforms.py
 - **ЗАКОН, КАСАЮЩИЙСЯ ВСЯКОЙ СТРАНИЦЫ, ЗОВЁТСЯ ТАМ, ГДЕ ВСЯКАЯ СТРАНИЦА ПРОХОДИТ**  
   scripts/elision.py, tools/behaviorforms.py, tools/linkforms.py, tools/topicforms.py
+- **ЗАКОН, ПРОВЕРЯЮЩИЙ ЛИШЬ ТО, ЧТО РАСПОЗНАЛ, СЛЕП К ПОРЧЕ, СДЕЛАВШЕЙ ЦИТАТУ**  
+  tools/jaclassforms.py, tools/koparticleforms.py, tools/viclassforms.py, tools/zhclassforms.py
 - **ЛОВУШКА ОБЯЗАНА БЫТЬ ЛОВУШКОЙ**  
   tools/decforms.py, tools/measuregrowforms.py, tools/ratetrapforms.py, tools/remdivforms.py
 - **ПОВОД — ЗАМЕР, А НЕ ЗАМЫСЕЛ**  
@@ -205,6 +207,8 @@
   courts/kinbearer_court.py, courts/numphrase_court.py, courts/proform_court.py, courts/pronobject_court.py
 - **ПЯТЬ ЛОЖНЫХ ВЫВОДОВ, ОТНИМАЕМЫХ У ЧИТАТЕЛЯ**  
   tools/countlawforms.py, tools/dosupportforms.py, tools/elisionforms.py, tools/fuseprepforms.py
+- **СТЕРЕГУЩИМ НАБОРОМ, А НЕ ЗАКОНОМ**  
+  tools/jaclassforms.py, tools/koparticleforms.py, tools/viclassforms.py, tools/zhclassforms.py
 - **СУД ЧИТАЕТ ДВА ЗАКОНА, И ОБА СОДЕРЖАТЕЛЬНЫ**  
   tools/fipartforms.py, tools/jaclassforms.py, tools/koparticleforms.py, tools/ukcountforms.py
 - **ТАБЛИЦЫ ОБЯЗАНЫ БЫТЬ ТЕМ, ЧЕМ НАЗВАНЫ, — ИНАЧЕ ЛОВУШКА ПОКАЗАНА НЕ ТА**  
@@ -213,6 +217,8 @@
   courts/inquiry_de_fr_court.py, courts/inquiry_es_it_court.py, courts/inquiry_pl_tr_court.py, courts/inquiry_pt_nl_court.py
 - **ФОРМА, ОТЛИЧАЮЩАЯСЯ ОТ ПОКАЗА ОДНОЙ БУКВОЙ РОДА, ЕСТЬ ЭТОТ ЖЕ ПОКАЗ ИСПОРЧЕННЫЙ**  
   tools/behaviorforms.py, tools/closedworld.py, tools/kinbearer.py, tools/linkforms.py
+- **ЦИТАТА ЕСТЬ РЕЧЬ ОБЪЯВЛЕННОГО ЯЗЫКА, И ВСЯКИЙ ЕЁ КУСОК СТОИ**  
+  tools/jaclassforms.py, tools/koparticleforms.py, tools/viclassforms.py, tools/zhclassforms.py
 - **ЧЕГО ПРИБОР НЕ ВИДИТ, НАЗВАНО ЧЕСТНО**  
   courts/agreement_court.py, scripts/bash32_court.py, scripts/orphans.py, scripts/verbthings_court.py
 - **ЯДРО ДОСЛОВНО ВО ВСЕХ ПРОХОДАХ, ХОД — ЧИСЛАМИ ПО ПРОХОДУ**  
@@ -411,6 +417,8 @@
   tools/gen_genesis_notation.py, tools/holes.py
 - **ИМЯ ХОДА ЕСТЬ ХВОСТ СТРАНИЦЫ, А НЕ ЕЁ ЧАСТЬ**  
   courts/case_court.py, courts/proof_court.py
+- **ИМЯ, СПРОШЕННОЕ КЛАССОМ И ОТВЕЧЕННОЕ ГОЛЫМ ЧИСЛОМ, НИ РАЗУ НЕ СТОИ**  
+  scripts/asked_uncounted.py, tools/svampforms.py
 - **ИСКЛЮЧЕНИЕ БЕЗ ПРАВИЛА СТАНОВИТСЯ ПРАВИЛОМ**  
   tools/directforms.py, tools/gen_genesis_direct.py
 - **ЛОВУШКА ОБЯЗАНА ЛОВИТЬ, И ЭТО ТОЖЕ ПРОВЕРЯЕТСЯ**  
@@ -703,6 +711,8 @@
   courts/dosupport_court.py, courts/serestar_court.py
 - **ЭТОТ ПОВОД ОКАЗАЛСЯ ЛОЖЕН, И ЭТО ЗАПИСАНО, А НЕ ЗАМАЗАНО**  
   tools/chanceforms.py, tools/leverforms.py
+- **ЭТОТ ПРИБОР ЗЕЛЕНЕЕТ ОТ НУЛЯ НАХОДОК**  
+  scripts/asked_uncounted.py, scripts/lawfirst_court.py
 - **ЯЗЫК ЕСТЬ ЧАСТЬ ФАКТА, А НЕ ЕГО ОДЕЖДА**  
   tools/gen_genesis_inquiry_de_fr.py, tools/gen_genesis_inquiry_pt_nl.py
 - **ЯЗЫК, НА КОТОРОМ НАПИСАНЫ ВСЕ ОСТАЛЬНЫЕ**  

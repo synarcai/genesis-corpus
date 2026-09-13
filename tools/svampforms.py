@@ -931,16 +931,26 @@ def _образцы():
     "en": {"отжимания": ("push-up", "push-ups"), "скручивания": ("crunch", "crunches"), "приложения": ("app", "apps"),
            "фигурки": ("action figure", "action figures"), "крышки": ("bottle cap", "bottle caps"), "розы": ("rose", "roses"),
            "посетители": ("visitor", "visitors"), "дети": ("child", "children"), "игры": ("game", "games"), "часы": ("hour", "hours"),
-           "мелки": ("crayon", "crayons"), "страницы": ("page", "pages")},
+           "мелки": ("crayon", "crayons"), "страницы": ("page", "pages"),
+           # КЛАСС НАД ТОВАРАМИ ОБЪЯВЛЕН ТОВАРОМ, И ОТТОГО СЧИТАЕТСЯ ЗАКОНОМ (13.09).
+           # Рамка «сделал» спрашивала «how many exercises in all? 28» — и слова «28
+           # exercises» в своде не стояло НИ РАЗУ ни на одном из девяти языков. Класс был
+           # спрошен и отвечен голой цифрой.
+           #     ИМЯ, СПРОШЕННОЕ КЛАССОМ И ОТВЕЧЕННОЕ ГОЛЫМ ЧИСЛОМ, НИ РАЗУ НЕ СТОИ́Т ПРИ
+           #     ЧИСЛЕ — и читатель, выучивший вопрос, не выучил ответа.
+           # Найдено чужим прибором (holon-f9, рынок классовых слов) и подтверждено своим
+           # (`scripts/asked_uncounted.py`).
+           "упражнения": ("exercise", "exercises")},
     "ru": {"отжимания": ("отжимание", "отжимания", "отжиманий"), "скручивания": ("скручивание", "скручивания", "скручиваний"),
            "приложения": ("приложение", "приложения", "приложений"), "фигурки": ("фигурка", "фигурки", "фигурок"),
            "крышки": ("крышка", "крышки", "крышек"), "розы": ("роза", "розы", "роз"), "посетители": ("посетитель", "посетителя", "посетителей"),
            "дети": ("ребёнок", "ребёнка", "детей"), "игры": ("игра", "игры", "игр"), "часы": ("час", "часа", "часов"),
-           "мелки": ("мелок", "мелка", "мелков"), "страницы": ("страница", "страницы", "страниц")},
+           "мелки": ("мелок", "мелка", "мелков"), "страницы": ("страница", "страницы", "страниц"),
+           "упражнения": ("упражнение", "упражнения", "упражнений")},
 }
 РАМКИ_АКТОВ = {
     "en": dict(
-        сделал="{X} did {n} {ОТЖn} and {k} {СКРk}. how many {ОТЖмн} did {X} do? {n}. how many exercises in all? {s}: {n} + {k} = {s}.",
+        сделал="{X} did {n} {ОТЖn} and {k} {СКРk}. how many {ОТЖмн} did {X} do? {n}. how many {УПРмн} in all? {s} {УПРs}: {n} + {k} = {s}.",
         больше_чем="{X} did {n} {ОТЖn}. {Y} did {k} more {ОТЖмн} than {X}. how many {ОТЖмн} did {Y} do? {s}: {n} + {k} = {s}.",
         меньше_чем="{X} did {n} {ОТЖn}. {Y} did {k} {ОТЖмн} less than {X}. how many {ОТЖмн} did {Y} do? {r}: {n} − {k} = {r}.",
         # THE p156 FEED (d5, 05.09): sold; joined them; were living / moved out; suggested / removed … of them;
@@ -967,7 +977,7 @@ def _образцы():
         две_клаузы="{X} had {n} {ИГРn} and {Y} had {k} {ИГРмн}. how many {ИГРмн} did they have together? {s}: {n} + {k} = {s}.",
     ),
     "ru": dict(
-        сделал="{X} сделал{а} {n} {ОТЖn} и {k} {СКРk}. сколько {ОТЖмн} сделал{а} {X}? {n}. сколько упражнений всего? {s}: {n} + {k} = {s}.",
+        сделал="{X} сделал{а} {n} {ОТЖn} и {k} {СКРk}. сколько {ОТЖмн} сделал{а} {X}? {n}. сколько {УПРмн} всего? {s} {УПРs}: {n} + {k} = {s}.",
         больше_чем="{X} сделал{а} {n} {ОТЖn}. {Y} сделал{аY} на {k} {ОТЖk} больше, чем {X}. сколько {ОТЖмн} сделал{аY} {Y}? {s}: {n} + {k} = {s}.",
         меньше_чем="{X} сделал{а} {n} {ОТЖn}. {Y} сделал{аY} на {k} {ОТЖk} меньше, чем {X}. сколько {ОТЖмн} сделал{аY} {Y}? {r}: {n} − {k} = {r}.",
         вещи3="у {Xр} {n} {ФИГn}, {k} {МЕЛk} и {m} {ИГРm}. сколько всего предметов у {Xр}? {t}: {n} + {k} + {m} = {t}.",
@@ -1010,16 +1020,16 @@ def _образцы():
     "pl": {"мелки": "kredkami"},
     "de": {"мелки": "Buntstiften"},
 }
-_ТОВАР_ПО_ДЫРЕ = {"ОТЖ": "отжимания", "СКР": "скручивания", "ПРИЛ": "приложения", "ФИГ": "фигурки", "КРЫШ": "крышки", "РОЗ": "розы",
+_ТОВАР_ПО_ДЫРЕ = {"УПР": "упражнения", "ОТЖ": "отжимания", "СКР": "скручивания", "ПРИЛ": "приложения", "ФИГ": "фигурки", "КРЫШ": "крышки", "РОЗ": "розы",
                   "ПОС": "посетители", "ДЕТ": "дети", "ИГР": "игры", "ЧАС": "часы", "МЕЛ": "мелки", "СТР": "страницы"}
 ТОВАРЫ_АКТОВ.update({
-    "de": {"отжимания": ("Liegestütz", "Liegestütze"), "скручивания": ("Sit-up", "Sit-ups"), "приложения": ("App", "Apps"), "фигурки": ("Actionfigur", "Actionfiguren"), "крышки": ("Kronkorken", "Kronkorken"), "розы": ("Rose", "Rosen"), "посетители": ("Besucher", "Besucher"), "дети": ("Kind", "Kinder"), "игры": ("Spiel", "Spiele"), "часы": ("Stunde", "Stunden"), "мелки": ("Buntstift", "Buntstifte"), "страницы": ("Seite", "Seiten")},
-    "fr": {"отжимания": ("pompe", "pompes"), "скручивания": ("abdo", "abdos"), "приложения": ("application", "applications"), "фигурки": ("figurine", "figurines"), "крышки": ("capsule", "capsules"), "розы": ("rose", "roses"), "посетители": ("visiteur", "visiteurs"), "дети": ("enfant", "enfants"), "игры": ("partie", "parties"), "часы": ("heure", "heures"), "мелки": ("crayon", "crayons"), "страницы": ("page", "pages")},
-    "es": {"отжимания": ("flexión", "flexiones"), "скручивания": ("abdominal", "abdominales"), "приложения": ("aplicación", "aplicaciones"), "фигурки": ("figura", "figuras"), "крышки": ("chapa", "chapas"), "розы": ("rosa", "rosas"), "посетители": ("visitante", "visitantes"), "дети": ("niño", "niños"), "игры": ("partida", "partidas"), "часы": ("hora", "horas"), "мелки": ("lápiz de color", "lápices de colores"), "страницы": ("página", "páginas")},
-    "it": {"отжимания": ("flessione", "flessioni"), "скручивания": ("addominale", "addominali"), "приложения": ("app", "app"), "фигурки": ("statuina", "statuine"), "крышки": ("tappo", "tappi"), "розы": ("rosa", "rose"), "посетители": ("visitatore", "visitatori"), "дети": ("bambino", "bambini"), "игры": ("partita", "partite"), "часы": ("ora", "ore"), "мелки": ("pastello", "pastelli"), "страницы": ("pagina", "pagine")},
-    "pt": {"отжимания": ("flexão", "flexões"), "скручивания": ("abdominal", "abdominais"), "приложения": ("aplicação", "aplicações"), "фигурки": ("boneco", "bonecos"), "крышки": ("tampa", "tampas"), "розы": ("rosa", "rosas"), "посетители": ("visitante", "visitantes"), "дети": ("criança", "crianças"), "игры": ("jogo", "jogos"), "часы": ("hora", "horas"), "мелки": ("lápis de cor", "lápis de cor"), "страницы": ("página", "páginas")},
-    "nl": {"отжимания": ("push-up", "push-ups"), "скручивания": ("sit-up", "sit-ups"), "приложения": ("app", "apps"), "фигурки": ("actiefiguur", "actiefiguren"), "крышки": ("dop", "doppen"), "розы": ("roos", "rozen"), "посетители": ("bezoeker", "bezoekers"), "дети": ("kind", "kinderen"), "игры": ("spel", "spellen"), "часы": ("uur", "uur"), "мелки": ("kleurpotlood", "kleurpotloden"), "страницы": ("pagina", "pagina's")},
-    "pl": {"отжимания": ("pompka", "pompki", "pompek"), "скручивания": ("brzuszek", "brzuszki", "brzuszków"), "приложения": ("aplikacja", "aplikacje", "aplikacji"), "фигурки": ("figurka", "figurki", "figurek"), "крышки": ("kapsel", "kapsle", "kapsli"), "розы": ("róża", "róże", "róż"), "посетители": ("gość", "goście", "gości"), "дети": ("dziecko", "dzieci", "dzieci"), "игры": ("gra", "gry", "gier"), "часы": ("godzina", "godziny", "godzin"), "мелки": ("kredka", "kredki", "kredek"), "страницы": ("strona", "strony", "stron")},
+    "de": {"отжимания": ("Liegestütz", "Liegestütze"), "скручивания": ("Sit-up", "Sit-ups"), "приложения": ("App", "Apps"), "фигурки": ("Actionfigur", "Actionfiguren"), "крышки": ("Kronkorken", "Kronkorken"), "розы": ("Rose", "Rosen"), "посетители": ("Besucher", "Besucher"), "дети": ("Kind", "Kinder"), "игры": ("Spiel", "Spiele"), "часы": ("Stunde", "Stunden"), "мелки": ("Buntstift", "Buntstifte"), "страницы": ("Seite", "Seiten"), "упражнения": ("Übung", "Übungen")},
+    "fr": {"отжимания": ("pompe", "pompes"), "скручивания": ("abdo", "abdos"), "приложения": ("application", "applications"), "фигурки": ("figurine", "figurines"), "крышки": ("capsule", "capsules"), "розы": ("rose", "roses"), "посетители": ("visiteur", "visiteurs"), "дети": ("enfant", "enfants"), "игры": ("partie", "parties"), "часы": ("heure", "heures"), "мелки": ("crayon", "crayons"), "страницы": ("page", "pages"), "упражнения": ("exercice", "exercices")},
+    "es": {"отжимания": ("flexión", "flexiones"), "скручивания": ("abdominal", "abdominales"), "приложения": ("aplicación", "aplicaciones"), "фигурки": ("figura", "figuras"), "крышки": ("chapa", "chapas"), "розы": ("rosa", "rosas"), "посетители": ("visitante", "visitantes"), "дети": ("niño", "niños"), "игры": ("partida", "partidas"), "часы": ("hora", "horas"), "мелки": ("lápiz de color", "lápices de colores"), "страницы": ("página", "páginas"), "упражнения": ("ejercicio", "ejercicios")},
+    "it": {"отжимания": ("flessione", "flessioni"), "скручивания": ("addominale", "addominali"), "приложения": ("app", "app"), "фигурки": ("statuina", "statuine"), "крышки": ("tappo", "tappi"), "розы": ("rosa", "rose"), "посетители": ("visitatore", "visitatori"), "дети": ("bambino", "bambini"), "игры": ("partita", "partite"), "часы": ("ora", "ore"), "мелки": ("pastello", "pastelli"), "страницы": ("pagina", "pagine"), "упражнения": ("esercizio", "esercizi")},
+    "pt": {"отжимания": ("flexão", "flexões"), "скручивания": ("abdominal", "abdominais"), "приложения": ("aplicação", "aplicações"), "фигурки": ("boneco", "bonecos"), "крышки": ("tampa", "tampas"), "розы": ("rosa", "rosas"), "посетители": ("visitante", "visitantes"), "дети": ("criança", "crianças"), "игры": ("jogo", "jogos"), "часы": ("hora", "horas"), "мелки": ("lápis de cor", "lápis de cor"), "страницы": ("página", "páginas"), "упражнения": ("exercício", "exercícios")},
+    "nl": {"отжимания": ("push-up", "push-ups"), "скручивания": ("sit-up", "sit-ups"), "приложения": ("app", "apps"), "фигурки": ("actiefiguur", "actiefiguren"), "крышки": ("dop", "doppen"), "розы": ("roos", "rozen"), "посетители": ("bezoeker", "bezoekers"), "дети": ("kind", "kinderen"), "игры": ("spel", "spellen"), "часы": ("uur", "uur"), "мелки": ("kleurpotlood", "kleurpotloden"), "страницы": ("pagina", "pagina's"), "упражнения": ("oefening", "oefeningen")},
+    "pl": {"отжимания": ("pompka", "pompki", "pompek"), "скручивания": ("brzuszek", "brzuszki", "brzuszków"), "приложения": ("aplikacja", "aplikacje", "aplikacji"), "фигурки": ("figurka", "figurki", "figurek"), "крышки": ("kapsel", "kapsle", "kapsli"), "розы": ("róża", "róże", "róż"), "посетители": ("gość", "goście", "gości"), "дети": ("dziecko", "dzieci", "dzieci"), "игры": ("gra", "gry", "gier"), "часы": ("godzina", "godziny", "godzin"), "мелки": ("kredka", "kredki", "kredek"), "страницы": ("strona", "strony", "stron"), "упражнения": ("ćwiczenie", "ćwiczenia", "ćwiczeń")},
 })
 # GOODS OF THE p156 FEED (d5, reader traces, 05.09): girls / boys, cups, tenants — with count forms
 for _яз, _новые in {
@@ -1050,7 +1060,7 @@ _ТОВАР_ПО_ДЫРЕ.update({"ДЕВ": "девочки", "МАЛ": "мал�
                коробка="{X} bekam eine Schachtel mit {n} {МЕЛпр} und eine Schachtel mit {k} {МЕЛпр}. wie viele {МЕЛмн} hat {X}? {s}: {n} + {k} = {s}.",
                главы="ein Buch hat 2 Kapitel. das erste Kapitel ist {n} {СТРn} lang und das zweite {k} {СТРмн}. wie viele {СТРмн} hat das Buch insgesamt? {s}: {n} + {k} = {s}.",
                две_клаузы="{X} hatte {n} {ИГРn} und {Y} hatte {k} {ИГРмн}. wie viele {ИГРмн} hatten sie zusammen? {s}: {n} + {k} = {s}.",
-               сделал="{X} machte {n} {ОТЖn} und {k} {СКРk}. wie viele {ОТЖмн} machte {X}? {n}. wie viele Übungen insgesamt? {s}: {n} + {k} = {s}.",
+               сделал="{X} machte {n} {ОТЖn} und {k} {СКРk}. wie viele {ОТЖмн} machte {X}? {n}. wie viele {УПРмн} insgesamt? {s} {УПРs}: {n} + {k} = {s}.",
                вещи3="{X} hat {n} {ФИГn}, {k} {МЕЛk} und {m} {ИГРm}. wie viele Dinge hat {X} insgesamt? {t}: {n} + {k} + {m} = {t}.",
                продал="{X} hatte {n} {РОЗn}. {Он} verkaufte {k} {РОЗk}. wie viele {РОЗмн} hat {он} noch? {r}: {n} − {k} = {r}.",
                присоединились="auf dem Spielplatz waren {n} {ДЕТn}. {k} weitere {ДЕТk} kamen dazu. wie viele {ДЕТмн} sind jetzt auf dem Spielplatz? {s}: {n} + {k} = {s}.",
@@ -1074,7 +1084,7 @@ _ТОВАР_ПО_ДЫРЕ.update({"ДЕВ": "девочки", "МАЛ": "мал�
                коробка="{X} a reçu une boîte de {n} {МЕЛn} et une boîte de {k} {МЕЛмн}. combien de {МЕЛмн} {X} a-t-{он} ? {s} : {n} + {k} = {s}.",
                главы="un livre a 2 chapitres. le premier chapitre fait {n} {СТРn} et le second {k} {СТРмн}. combien de {СТРмн} le livre a-t-il en tout ? {s} : {n} + {k} = {s}.",
                две_клаузы="{X} avait {n} {ИГРn} et {Y} avait {k} {ИГРмн}. combien de {ИГРмн} avaient-ils ensemble ? {s} : {n} + {k} = {s}.",
-               сделал="{X} a fait {n} {ОТЖn} et {k} {СКРk}. combien de {ОТЖмн} {X} a-t-{он} faites ? {n}. combien d'exercices en tout ? {s} : {n} + {k} = {s}.",
+               сделал="{X} a fait {n} {ОТЖn} et {k} {СКРk}. combien de {ОТЖмн} {X} a-t-{он} faites ? {n}. combien d'{УПРмн} en tout ? {s} {УПРs} : {n} + {k} = {s}.",
                вещи3="{X} a {n} {ФИГn}, {k} {МЕЛk} et {m} {ИГРm}. combien d'objets a {X} en tout ? {t} : {n} + {k} + {m} = {t}.",
                продал="{X} avait {n} {РОЗn}. {Он} a vendu {k} {РОЗk}. combien de {РОЗмн} lui reste-t-il ? {r} : {n} − {k} = {r}.",
                присоединились="il y avait {n} {ДЕТn} sur le terrain de jeu. {k} autres {ДЕТk} les ont rejoints. combien d'{ДЕТмн} y a-t-il maintenant sur le terrain de jeu ? {s} : {n} + {k} = {s}.",
@@ -1098,7 +1108,7 @@ _ТОВАР_ПО_ДЫРЕ.update({"ДЕВ": "девочки", "МАЛ": "мал�
                коробка="{X} recibió una caja de {n} {МЕЛn} y una caja de {k} {МЕЛмн}. ¿cuántos {МЕЛмн} tiene {X}? {s}: {n} + {k} = {s}.",
                главы="un libro tiene 2 capítulos. el primer capítulo tiene {n} {СТРn} y el segundo {k} {СТРмн}. ¿cuántas {СТРмн} tiene el libro en total? {s}: {n} + {k} = {s}.",
                две_клаузы="{X} tenía {n} {ИГРn} y {Y} tenía {k} {ИГРмн}. ¿cuántas {ИГРмн} tenían juntos? {s}: {n} + {k} = {s}.",
-               сделал="{X} hizo {n} {ОТЖn} y {k} {СКРk}. ¿cuántas {ОТЖмн} hizo {X}? {n}. ¿cuántos ejercicios en total? {s}: {n} + {k} = {s}.",
+               сделал="{X} hizo {n} {ОТЖn} y {k} {СКРk}. ¿cuántas {ОТЖмн} hizo {X}? {n}. ¿cuántos {УПРмн} en total? {s} {УПРs}: {n} + {k} = {s}.",
                вещи3="{X} tiene {n} {ФИГn}, {k} {МЕЛk} y {m} {ИГРm}. ¿cuántas cosas tiene {X} en total? {t}: {n} + {k} + {m} = {t}.",
                продал="{X} tenía {n} {РОЗn}. vendió {k} {РОЗk}. ¿cuántas {РОЗмн} le quedan? {r}: {n} − {k} = {r}.",
                присоединились="había {n} {ДЕТn} en el patio. se les unieron {k} {ДЕТk} más. ¿cuántos {ДЕТмн} hay ahora en el patio? {s}: {n} + {k} = {s}.",
@@ -1122,7 +1132,7 @@ _ТОВАР_ПО_ДЫРЕ.update({"ДЕВ": "девочки", "МАЛ": "мал�
                коробка="{X} ha ricevuto una scatola di {n} {МЕЛn} e una scatola di {k} {МЕЛмн}. quanti {МЕЛмн} ha {X}? {s}: {n} + {k} = {s}.",
                главы="un libro ha 2 capitoli. il primo capitolo è di {n} {СТРn} e il secondo di {k} {СТРмн}. quante {СТРмн} ha il libro in tutto? {s}: {n} + {k} = {s}.",
                две_клаузы="{X} aveva {n} {ИГРn} e {Y} aveva {k} {ИГРмн}. quante {ИГРмн} avevano insieme? {s}: {n} + {k} = {s}.",
-               сделал="{X} ha fatto {n} {ОТЖn} e {k} {СКРk}. quante {ОТЖмн} ha fatto {X}? {n}. quanti esercizi in tutto? {s}: {n} + {k} = {s}.",
+               сделал="{X} ha fatto {n} {ОТЖn} e {k} {СКРk}. quante {ОТЖмн} ha fatto {X}? {n}. quanti {УПРмн} in tutto? {s} {УПРs}: {n} + {k} = {s}.",
                вещи3="{X} ha {n} {ФИГn}, {k} {МЕЛk} e {m} {ИГРm}. quante cose ha {X} in tutto? {t}: {n} + {k} + {m} = {t}.",
                продал="{X} aveva {n} {РОЗn}. ha venduto {k} {РОЗk}. quante {РОЗмн} ha ancora? {r}: {n} − {k} = {r}.",
                присоединились="c'erano {n} {ДЕТn} nel cortile. si sono uniti a loro altri {k} {ДЕТk}. quanti {ДЕТмн} ci sono ora nel cortile? {s}: {n} + {k} = {s}.",
@@ -1146,7 +1156,7 @@ _ТОВАР_ПО_ДЫРЕ.update({"ДЕВ": "девочки", "МАЛ": "мал�
                коробка="{X} recebeu uma caixa com {n} {МЕЛn} e uma caixa com {k} {МЕЛмн}. quantos {МЕЛмн} tem {X}? {s}: {n} + {k} = {s}.",
                главы="um livro tem 2 capítulos. o primeiro capítulo tem {n} {СТРn} e o segundo {k} {СТРмн}. quantas {СТРмн} tem o livro no total? {s}: {n} + {k} = {s}.",
                две_клаузы="{X} tinha {n} {ИГРn} e {Y} tinha {k} {ИГРмн}. quantos {ИГРмн} tinham juntos? {s}: {n} + {k} = {s}.",
-               сделал="{X} fez {n} {ОТЖn} e {k} {СКРk}. quantas {ОТЖмн} fez {X}? {n}. quantos exercícios no total? {s}: {n} + {k} = {s}.",
+               сделал="{X} fez {n} {ОТЖn} e {k} {СКРk}. quantas {ОТЖмн} fez {X}? {n}. quantos {УПРмн} no total? {s} {УПРs}: {n} + {k} = {s}.",
                вещи3="{X} tem {n} {ФИГn}, {k} {МЕЛk} e {m} {ИГРm}. quantas coisas tem {X} ao todo? {t}: {n} + {k} + {m} = {t}.",
                продал="{X} tinha {n} {РОЗn}. vendeu {k} {РОЗk}. quantas {РОЗмн} lhe restam? {r}: {n} − {k} = {r}.",
                присоединились="havia {n} {ДЕТn} no recreio. juntaram-se a elas mais {k} {ДЕТk}. quantas {ДЕТмн} há agora no recreio? {s}: {n} + {k} = {s}.",
@@ -1170,7 +1180,7 @@ _ТОВАР_ПО_ДЫРЕ.update({"ДЕВ": "девочки", "МАЛ": "мал�
                коробка="{X} kreeg een doos met {n} {МЕЛn} en een doos met {k} {МЕЛмн}. hoeveel {МЕЛмн} heeft {X}? {s}: {n} + {k} = {s}.",
                главы="een boek heeft 2 hoofdstukken. het eerste hoofdstuk is {n} {СТРn} lang en het tweede {k} {СТРмн}. hoeveel {СТРмн} heeft het boek in totaal? {s}: {n} + {k} = {s}.",
                две_клаузы="{X} had {n} {ИГРn} en {Y} had {k} {ИГРмн}. hoeveel {ИГРмн} hadden ze samen? {s}: {n} + {k} = {s}.",
-               сделал="{X} deed {n} {ОТЖn} en {k} {СКРk}. hoeveel {ОТЖмн} deed {X}? {n}. hoeveel oefeningen in totaal? {s}: {n} + {k} = {s}.",
+               сделал="{X} deed {n} {ОТЖn} en {k} {СКРk}. hoeveel {ОТЖмн} deed {X}? {n}. hoeveel {УПРмн} in totaal? {s} {УПРs}: {n} + {k} = {s}.",
                вещи3="{X} heeft {n} {ФИГn}, {k} {МЕЛk} en {m} {ИГРm}. hoeveel dingen heeft {X} in totaal? {t}: {n} + {k} + {m} = {t}.",
                продал="{X} had {n} {РОЗn}. {он} verkocht {k} {РОЗk}. hoeveel {РОЗмн} heeft {он} nog? {r}: {n} − {k} = {r}.",
                присоединились="er waren {n} {ДЕТn} op de speelplaats. er kwamen nog {k} {ДЕТk} bij. hoeveel {ДЕТмн} zijn er nu op de speelplaats? {s}: {n} + {k} = {s}.",
@@ -1194,7 +1204,7 @@ _ТОВАР_ПО_ДЫРЕ.update({"ДЕВ": "девочки", "МАЛ": "мал�
                коробка="{X} dostał{а} pudełko z {n} {МЕЛпр} i pudełko z {k} {МЕЛпр}. ile {МЕЛмн} ma {X}? {s}: {n} + {k} = {s}.",
                главы="książka ma 2 rozdziały. pierwszy rozdział ma {n} {СТРn}, a drugi {k} {СТРk}. ile {СТРмн} ma książka razem? {s}: {n} + {k} = {s}.",
                две_клаузы="{X} miał{а} {n} {ИГРn}, a {Y} miał{аY} {k} {ИГРk}. ile {ИГРмн} mieli razem? {s}: {n} + {k} = {s}.",
-               сделал="{X} zrobił{а} {n} {ОТЖn} i {k} {СКРk}. ile {ОТЖмн} zrobił{а} {X}? {n}. ile ćwiczeń razem? {s}: {n} + {k} = {s}.",
+               сделал="{X} zrobił{а} {n} {ОТЖn} i {k} {СКРk}. ile {ОТЖмн} zrobił{а} {X}? {n}. ile {УПРмн} razem? {s} {УПРs}: {n} + {k} = {s}.",
                вещи3="{X} ma {n} {ФИГn}, {k} {МЕЛk} i {m} {ИГРm}. ile rzeczy ma {X} razem? {t}: {n} + {k} + {m} = {t}.",
                продал="{X} miał{а} {n} {РОЗn}. sprzedał{а} {k} {РОЗk}. ile {РОЗмн} ma teraz? {r}: {n} − {k} = {r}.",
                присоединились="na placu zabaw było {n} {ДЕТn}. dołączyło do nich jeszcze {k} {ДЕТk}. ile {ДЕТмн} jest teraz na placu zabaw? {s}: {n} + {k} = {s}.",
