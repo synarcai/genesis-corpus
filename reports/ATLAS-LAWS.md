@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 389 законов
+# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 390 законов
 
 Собран из докстрингов и комментариев `tools`, `courts`, `scripts` орудием
 `tools/law_atlas.py`. Взяты ОБЩИЕ законы — те, что держатся не одним файлом.
@@ -6,7 +6,7 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 6154 разных законов на 7636 упоминаний; сказанных однажды — 5765, и они остаются при своём месте.
+Всего в дереве 6156 разных законов на 7644 упоминаний; сказанных однажды — 5766, и они остаются при своём месте.
 
 
 ## Держат 81 файлов
@@ -118,9 +118,13 @@
   tools/countlawforms.py, tools/decaseforms.py, tools/deplurforms.py, tools/dosupportforms.py, tools/elisionforms.py, tools/fuseprepforms.py … и ещё 6
 - **ПРИБОР, ЗЕЛЕНЕЮЩИЙ ОТ НУЛЯ НАХОДОК, ОБЯЗАН ДОКАЗАТЬ, ЧТО УМЕЕТ НАХОДИТЬ**  
   scripts/broken_law.py, scripts/build_dated.py, scripts/genre_measured.py, scripts/ladder_full.py, scripts/margin_census.py, scripts/name_crossed.py … и ещё 6
+- **РОД, ЧЬЁ ЧИСЛО СТРАНИЦ ЕСТЬ ФАКТ О ПРЕДМЕТЕ, НЕ ПОДЛЕЖИТ МЕРЕ РОВНОСТИ — НО ОБЯЗАН**  
+  tools/compsciforms.py, tools/geomforms.py, tools/homoforms.py, tools/linalgforms.py, tools/mathspaceforms.py, tools/notationforms.py … и ещё 6
 
 ## Держат 11 файлов
 
+- **БЫТЬ ОБЪЯВЛЕН ТАКОВЫМ, ИНАЧЕ ПОД ЭТИМ ИМЕНЕМ СПРЯЧЕТСЯ ВСЯКИЙ НЕДОПИСАННЫЙ**  
+  tools/compsciforms.py, tools/geomforms.py, tools/homoforms.py, tools/linalgforms.py, tools/mathspaceforms.py, tools/notationforms.py … и ещё 5
 - **ЕСЛИ ВСЯКАЯ ЗАПИСЬ В НЕЙ ПЕРЕСЧИТЫВАЕТСЯ РАЗБОРОМ**  
   tools/angleforms.py, tools/condforms.py, tools/homoforms.py, tools/leapforms.py, tools/medianforms.py, tools/numlineforms.py … и ещё 5
 - **ПОЧЕМУ ОБЕ СТОРОНЫ ОБЯЗАТЕЛЬНЫ**  
@@ -132,8 +136,6 @@
 
 ## Держат 10 файлов
 
-- **БЫТЬ ОБЪЯВЛЕН ТАКОВЫМ, ИНАЧЕ ПОД ЭТИМ ИМЕНЕМ СПРЯЧЕТСЯ ВСЯКИЙ НЕДОПИСАННЫЙ**  
-  tools/compsciforms.py, tools/geomforms.py, tools/homoforms.py, tools/linalgforms.py, tools/mathspaceforms.py, tools/notationforms.py … и ещё 4
 - **ОБЕ СТОРОНЫ ЛОВУШКИ ИДУТ ОДНОЙ ГРУППОЙ**  
   tools/gen_genesis_homo.py, tools/gen_genesis_measure.py, tools/gen_genesis_median.py, tools/gen_genesis_numline.py, tools/gen_genesis_overlap.py, tools/gen_genesis_pctbase.py … и ещё 4
 - **ОБЕ СТОРОНЫ ЛОВУШКИ ОБЯЗАНЫ БЫТЬ ПОКАЗАНЫ**  
@@ -142,8 +144,6 @@
   tools/gen_genesis_aggregate.py, tools/gen_genesis_compare.py, tools/gen_genesis_depletion.py, tools/gen_genesis_gsmlex.py, tools/gen_genesis_gsmwide.py, tools/gen_genesis_heads.py … и ещё 4
 - **ПЯТЬ ЛОЖНЫХ ВЫВОДОВ, ОТНИМАЕМЫХ У ЧИТАТЕЛЯ**  
   tools/countlawforms.py, tools/deaccforms.py, tools/dosupportforms.py, tools/elisionforms.py, tools/fuseprepforms.py, tools/huobjforms.py … и ещё 4
-- **РОД, ЧЬЁ ЧИСЛО СТРАНИЦ ЕСТЬ ФАКТ О ПРЕДМЕТЕ, НЕ ПОДЛЕЖИТ МЕРЕ РОВНОСТИ — НО ОБЯЗАН**  
-  tools/compsciforms.py, tools/geomforms.py, tools/homoforms.py, tools/linalgforms.py, tools/mathspaceforms.py, tools/notationforms.py … и ещё 4
 - **ФОРМУЛЫ РОДОВ — ЗАКОН ОТВЕТА ОТ ВЕЛИЧИН ВОПРОСА**  
   tools/compsciforms.py, tools/gen_genesis_machine.py, tools/gen_genesis_physics.py, tools/gen_genesis_statistics.py, tools/gen_genesis_units.py, tools/geomforms.py … и ещё 4
 
@@ -250,6 +250,8 @@
   tools/jaclassforms.py, tools/koparticleforms.py, tools/viclassforms.py, tools/zhclassforms.py
 - **ЛОВУШКА ОБЯЗАНА БЫТЬ ЛОВУШКОЙ**  
   tools/decforms.py, tools/measuregrowforms.py, tools/ratetrapforms.py, tools/remdivforms.py
+- **ОБЪЯВЛЕНИЕ, КОТОРОЕ НЕ ПАДАЕТ, ЕСТЬ УКРАШЕНИЕ**  
+  scripts/house_skew.py, tools/numnounforms.py, tools/refusalwhyforms.py, tools/zerodivforms.py
 - **ОДИН ЗНАК, ДВА НАЧЕРТАНИЯ — ОБА ЖИВУТ, ИЛИ ОРГАНИЗМ ЗНАЕТ ОДНО**  
   courts/notationvar_court.py, tools/gen_genesis_notationvar.py, tools/notation_variants.py, tools/notationforms.py
 - **ПЕРЕБОР ЖИВЁТ В ДОМЕ, А НЕ ЗДЕСЬ**  
@@ -552,8 +554,6 @@
   courts/valence_court.py, tools/valforms.py
 - **ОБЪЯВЛЕНИЕ ПЕРЕЕХАЛО В ДОМ, И ЧИТАТЕЛЬ ПОШЁЛ ЗА НИМ**  
   courts/calendar_court.py, courts/physlaw_court.py
-- **ОБЪЯВЛЕНИЕ, КОТОРОЕ НЕ ПАДАЕТ, ЕСТЬ УКРАШЕНИЕ**  
-  scripts/house_skew.py, tools/numnounforms.py
 - **ОБЪЯВЛЕННОЕ ЗНАНИЕ ЕСТЬ РОД ЭТОГО СУДА**  
   courts/program_court.py, courts/proof_court.py
 - **ОДИН СЧЁТ НА ДВА ЯЗЫКА, И В ЭТОМ ВЕСЬ СМЫСЛ**  
@@ -696,6 +696,8 @@
   scripts/key_support.py, tools/tempscale.py
 - **РОД, РАЗРЕЗАННЫЙ ПО ЖИВОМУ СЛОВУ, ЕСТЬ НЕ РОД, А СЛЕД ПРИЗНАКА**  
   scripts/key_support.py, tools/elisionforms.py
+- **РОД, ЧЬЁ ЧИСЛО СТРАНИЦ ЕСТЬ ФАКТ О ПРЕДМЕТЕ, А НЕ ВЫБОР ДОМА**  
+  tools/numnounforms.py, tools/zerodivforms.py
 - **РУБЕЖ НОЛЬ И ДОСТИГНУТ В ТОТ ЖЕ ЧАС**  
   scripts/contrast_real.py, scripts/genre_kinds.py
 - **РУБЕЖ, НЕ ОПУЩЕННЫЙ ЗА УЛУЧШЕНИЕМ, ЕСТЬ ЗАПАС НА УХУДШЕНИЕ**  
