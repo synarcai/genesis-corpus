@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 397 законов
+# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 398 законов
 
 Собран из докстрингов и комментариев `tools`, `courts`, `scripts` орудием
 `tools/law_atlas.py`. Взяты ОБЩИЕ законы — те, что держатся не одним файлом.
@@ -6,7 +6,7 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 6183 разных законов на 7681 упоминаний; сказанных однажды — 5786, и они остаются при своём месте.
+Всего в дереве 6190 разных законов на 7691 упоминаний; сказанных однажды — 5792, и они остаются при своём месте.
 
 
 ## Держат 81 файлов
@@ -252,6 +252,8 @@
   tools/jaclassforms.py, tools/koparticleforms.py, tools/viclassforms.py, tools/zhclassforms.py
 - **ЛОВУШКА ОБЯЗАНА БЫТЬ ЛОВУШКОЙ**  
   tools/decforms.py, tools/measuregrowforms.py, tools/ratetrapforms.py, tools/remdivforms.py
+- **МИР, ЧЬИ СТРАНИЦЫ НЕ НАЗВАНЫ РОДОМ, ЧИТАЕТСЯ ТОЛЬКО ТЕМ, КТО ЧИТАЕТ КУЗНИЦУ**  
+  tools/gen_genesis_markdown.py, tools/gen_genesis_wordparts.py, tools/markdownforms.py, tools/wordpartforms.py
 - **ОДИН ЗНАК, ДВА НАЧЕРТАНИЯ — ОБА ЖИВУТ, ИЛИ ОРГАНИЗМ ЗНАЕТ ОДНО**  
   courts/notationvar_court.py, tools/gen_genesis_notationvar.py, tools/notation_variants.py, tools/notationforms.py
 - **ПЕРЕБОР ЖИВЁТ В ДОМЕ, А НЕ ЗДЕСЬ**  
@@ -538,8 +540,6 @@
   scripts/refusal_house.py, scripts/refusal_reason.py
 - **МИР ЗАМКНУТ, И ЭТО ПРОВЕРЕНО ДЕЛОМ**  
   courts/episode_court.py, courts/speech_court.py
-- **МИР, ЧЬИ СТРАНИЦЫ НЕ НАЗВАНЫ РОДОМ, ЧИТАЕТСЯ ТОЛЬКО ТЕМ, КТО ЧИТАЕТ КУЗНИЦУ**  
-  tools/gen_genesis_wordparts.py, tools/wordpartforms.py
 - **МНОЖИТЕЛЬ БЕЗ ЧИСЛОВОГО ТОКЕНА**  
   courts/episode_court.py, tools/gen_genesis_compare.py
 - **МНОЖИТЕЛЬ ЕСТЬ ОДИН И ТОТ ЖЕ**  
@@ -690,6 +690,8 @@
   tools/overlapforms.py, tools/wmeanforms.py
 - **РАЗБОР НЕ СПУТАЕТ ПРОЗУ С ВВОЗОМ**  
   scripts/houses_census.py, tools/genus_atlas.py
+- **РАЗДЕЛЯЯ ВЕЛИКАНА, ЛЕГКО СЛОЖИТЬ НОВОГО**  
+  tools/markdownforms.py, tools/wordpartforms.py
 - **РАЗЛИЧЕНИЕ ЛИЦА ЕСТЬ НЕ «ДА ИЛИ НЕТ», А ЛЕСТНИЦА ОТ ШЕСТИ ДО ОДНОГО**  
   courts/persondist_court.py, tools/persondistforms.py
 - **РАССКАЗ И ВОПРОС — ОДИН ОБРАЗЕЦ, А НЕ ДВА**  
