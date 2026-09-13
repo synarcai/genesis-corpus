@@ -6,7 +6,7 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 6194 разных законов на 7698 упоминаний; сказанных однажды — 5795, и они остаются при своём месте.
+Всего в дереве 6198 разных законов на 7704 упоминаний; сказанных однажды — 5799, и они остаются при своём месте.
 
 
 ## Держат 81 файлов
@@ -164,6 +164,8 @@
   tools/gen_genesis_action_pages.py, tools/gen_genesis_holes.py, tools/gen_genesis_joints.py, tools/gen_genesis_linalg.py, tools/gen_genesis_notationvar.py, tools/gen_genesis_numbers.py … и ещё 2
 - **ДОМ, НЕ ЗНАЮЩИЙ СВОЕГО МЕСТА В РЯДУ, УЗНАЁТ О НЁМ ИЗ ЧУЖОГО**  
   tools/chancetrapforms.py, tools/dimforms.py, tools/genderforms.py, tools/measuregrowforms.py, tools/measureprecforms.py, tools/negquantforms.py … и ещё 2
+- **МИР, ЧЬИ СТРАНИЦЫ НЕ НАЗВАНЫ РОДОМ, ЧИТАЕТСЯ ТОЛЬКО ТЕМ, КТО ЧИТАЕТ КУЗНИЦУ**  
+  tools/cmpmultforms.py, tools/gen_genesis_compare_mult.py, tools/gen_genesis_definitions.py, tools/gen_genesis_formula_lang.py, tools/gen_genesis_markdown.py, tools/gen_genesis_wordparts.py … и ещё 2
 - **РЕГИСТР ИМЕНИ ЧИТАЕТСЯ ИЗ ПАКЕТА**  
   tools/gen_genesis_aggregate.py, tools/gen_genesis_compare.py, tools/gen_genesis_gsmlex.py, tools/gen_genesis_gsmwide.py, tools/gen_genesis_heads.py, tools/gen_genesis_realverbs.py … и ещё 2
 - **РЕЧЬ, СОВПАВШУЮ С НИМ ФОРМОЙ**  
@@ -194,8 +196,6 @@
   tools/countfacts.py, tools/dialogueforms.py, tools/genus_atlas.py, tools/linkforms.py, tools/opinionforms.py, tools/svampforms.py
 - **ДОМ, ПРОВЕРЯЮЩИЙ ЛИШЬ ТОТ ЯЗЫК, О КОТОРОМ УЧИТ, ЛЖЁТ НА ТОМ, НА КОТОРОМ ОБЪЯСНЯЕТ**  
   tools/dosupportforms.py, tools/idredupforms.py, tools/personplaceforms.py, tools/romgenderforms.py, tools/svgenderforms.py, tools/zhclassforms.py
-- **МИР, ЧЬИ СТРАНИЦЫ НЕ НАЗВАНЫ РОДОМ, ЧИТАЕТСЯ ТОЛЬКО ТЕМ, КТО ЧИТАЕТ КУЗНИЦУ**  
-  tools/cmpmultforms.py, tools/gen_genesis_compare_mult.py, tools/gen_genesis_markdown.py, tools/gen_genesis_wordparts.py, tools/markdownforms.py, tools/wordpartforms.py
 - **МУТАНТ ПО ЧИСЛУ В КАЖДОМ РОДЕ, ГДЕ ЕСТЬ ЗАПИСЬ**  
   tools/condforms.py, tools/leapforms.py, tools/medianforms.py, tools/numlineforms.py, tools/pctbaseforms.py, tools/tzoneforms.py
 - **РОДЫ ЕСТЬ ФОРМЫ — И ЭТО НЕ ПОВТОР, А РАЗРЕШЕНИЕ ДВУСМЫСЛЕННОСТИ**  
@@ -823,7 +823,7 @@
 - **ХВОСТ СТРОКИ ЕСТЬ ЧАСТЬ СТРОКИ, ПОКА СУД НЕ СКАЗАЛ ИНОГО**  
   courts/arith_court.py, scripts/claims_court.py
 - **ХОДЫ СВЕРЯЮТСЯ ПЕРЕД ПОКАЗОМ**  
-  tools/gen_genesis_dataformat.py, tools/gen_genesis_formula_lang.py
+  tools/formulaforms.py, tools/gen_genesis_dataformat.py
 - **ЦЕЛЬ ОБЪЯВЛЕНА ИМЕНЕМ МОДУЛЯ, А НЕ ПЕРЕМЕННОЙ ВНУТРИ ТЕЛА**  
   tools/gen_genesis_l4.py, tools/gen_genesis_percent.py
 - **ЦЕНА ЗАМЕРЕНА, А НЕ ОБЕЩАНА**  
