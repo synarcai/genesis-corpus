@@ -27,7 +27,8 @@ import sys
 
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
-import gen_genesis_story_chain as дом  # noqa: E402
+# ЧИТАТЕЛЬ ПОШЁЛ ЗА ОБЪЯВЛЕНИЕМ (13.09): ТРОЙКИ_EN, ТРОЙКИ_RU, ВЕЩИ_EN переехали в дом.
+import story_chainforms as дом  # noqa: E402
 import rugram  # noqa: E402
 from genesis import Unreadable, worlds  # noqa: E402
 import closedworld  # noqa: E402

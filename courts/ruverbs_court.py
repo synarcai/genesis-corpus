@@ -26,7 +26,8 @@ import sys
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
 import rugram  # noqa: E402
 from actors import Слой  # noqa: E402
-import gen_genesis_ruverbs as Г  # noqa: E402
+# ЧИТАТЕЛЬ ПОШЁЛ ЗА ОБЪЯВЛЕНИЕМ (13.09): ЛИЦА, ГЛАГОЛЫ переехали в дом.
+import ruverbsforms as Г  # noqa: E402
 from genesis import worlds  # noqa: E402
 
 # РУБЕЖ-ДОЛГА: ЛОЖНЫХ_РУБЕЖ = 0

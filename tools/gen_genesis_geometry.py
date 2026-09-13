@@ -28,251 +28,26 @@ in words is …»).
 объявлен, и потому судим тем же ходом, что и утверждение.
 """
 
-import sys
 import pathlib
-import math
+import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import geomforms as F  # noqa: E402
 from layer import emit_grouped  # noqa: E402
 
-# exact leg pairs — the «yes» of the wholeness question
-ТОЧНЫЕ_КАТЕТЫ = [(3, 4), (6, 8), (5, 12), (8, 15), (9, 12), (12, 16), (7, 24), (20, 21), (15, 20), (10, 24)]
+# ЦЕЛЬ ОБЪЯВЛЯЕТСЯ СТРОКОЙ, А НЕ ВПИСЫВАЕТСЯ В ВЫЗОВ: указатель родов ищет
+# МИР ДОМА по этой самой строке и по ввозу кузницы. Путь, отданный литералом
+# внутрь `emit_grouped`, оставляет дом БЕЗ МИРА, и указатель честно пишет None.
+#
+#     ВВОЗ ЕСТЬ СВЯЗЬ, НО НАЙТИ ЕЁ УКАЗАТЕЛЬ МОЖЕТ ЛИШЬ ТАМ, ГДЕ ОБЪЯВЛЕНА ЦЕЛЬ.
+ЦЕЛЬ = "datasets/genesis_geometry.txt"
 
-# ИСКОМОЕ ОБЪЯВЛЯЕТ СВОЙ ВОПРОС ОДИН РАЗ. Русский вопрос ставит предмет
-# в родительный, английский — как есть; связка идёт за родом имени меры
-# («чему равнА площадь», «чему равЕН периметр»), и потому вопрос
-# объявляется при мере, а не при фигуре.
-СПРОСИТЬ = {
-    "area": "what is the area of {предмет}?",
-    "perimeter": "what is the perimeter of {предмет}?",
-    "volume": "what is the volume of {предмет}?",
-    "surface": "what is the surface of {предмет}?",
-    "hypotenuse": "what is the hypotenuse of {предмет}?",
-    "площадь": "чему равна площадь {предмет}?",
-    "периметр": "чему равен периметр {предмет}?",
-    "объём": "чему равен объём {предмет}?",
-    "поверхность": "чему равна поверхность {предмет}?",
-    "гипотенуза": "чему равна гипотенуза {предмет}?",
-    "whole_hypotenuse": "is the hypotenuse of {предмет} a whole number?",
-    "целая_гипотенуза": "целое ли число гипотенуза {предмет}?",
-}
-
-# ФОРМУЛЫ РОДОВ — ЗАКОН ОТВЕТА ОТ ВЕЛИЧИН ВОПРОСА, объявлен при каждом вопросе
-# (таблица родов declarations/GENERA.json — эталон суда охвата, holon 03.09).
-ФОРМУЛЫ = {
-    "area": "площадь = a × b",
-    "perimeter": "периметр = 2 × (a + b)",
-    "volume": "объём = a × b × c",
-    "surface": "поверхность = 2 × (ab + bc + ca)",
-    "hypotenuse": "c = √(a² + b²)",
-    "площадь": "площадь = a × b",
-    "периметр": "периметр = 2 × (a + b)",
-    "объём": "объём = a × b × c",
-    "поверхность": "поверхность = 2 × (ab + bc + ca)",
-    "гипотенуза": "c = √(a² + b²)",
-    "whole_hypotenuse": "целость: a² + b² — полный квадрат?",
-    "целая_гипотенуза": "целость: a² + b² — полный квадрат?",
-}
-assert set(ФОРМУЛЫ) == set(СПРОСИТЬ), "формула у каждого вопроса"
-
-
-def спросить(мера, предмет, ответ):
-    """Вопрос об искомой мере ПРЕДМЕТА и ответ о нём же — одной строкой.
-
-    Предмет приходит сюда той же строкой, какой он стоит в ответе:
-    источник у вопроса и ответа один, и разойтись им негде.
-    """
-    return f"{СПРОСИТЬ[мера].format(предмет=предмет)} {ответ}"
-
-
-# ТРОЙКИ НАЗВАНЫ, А НЕ НАЙДЕНЫ ПЕРЕБОРОМ: каждая проверена здесь же.
-ТРОЙКИ = ((3, 4, 5), (6, 8, 10), (5, 12, 13), (9, 12, 15),
-          (8, 15, 17), (7, 24, 25), (20, 21, 29), (12, 16, 20))
-assert all(a * a + b * b == c * c for a, b, c in ТРОЙКИ)
-
-
-def прямоугольники(шаг):
-    вон = []
-    for i in range(24):
-        a, b = 2 + (i % 9) + шаг, 3 + (i % 7)
-        en, ru = f"a rectangle {a} by {b}", f"прямоугольник {a} на {b}"
-        ru_род = f"прямоугольника {a} на {b}"
-        # ПРОМЕЖУТОЧНЫЕ ВЕЛИЧИНЫ В ОТВЕТЕ (коллегия 03.09, П-1): без «7 × 8 = 56» и
-        # «2 × (7 + 8) = 30» композиция глубины два невыводима из показов.
-        утв_en = f"{en} has area {a} × {b} = {a * b} and perimeter {a} + {b} = {a + b}, 2 × {a + b} = {2 * (a + b)}."
-        утв_ru = (f"{ru} имеет площадь {a} × {b} = {a * b} "
-                  f"и периметр {a} + {b} = {a + b}, 2 × {a + b} = {2 * (a + b)}.")
-        # THE ANSWER NAMES THE ASKED QUANTITY ONLY (holon 03.09, executors-tied:
-        # «area?» and «perimeter?» were answered by the same two-quantity
-        # sentence, so the two executors could not be told apart by any show).
-        # The fact sentence keeps both quantities; each question gets its own.
-        пл_en = f"{en} has area {a} × {b} = {a * b}."
-        пер_en = f"{en} has perimeter {a} + {b} = {a + b}, 2 × {a + b} = {2 * (a + b)}."
-        пл_ru = f"{ru} имеет площадь {a} × {b} = {a * b}."
-        пер_ru = f"{ru} имеет периметр {a} + {b} = {a + b}, 2 × {a + b} = {2 * (a + b)}."
-        вон.append(утв_en)
-        вон.append(утв_ru)
-        вон.append(спросить("area", en, пл_en))
-        вон.append(спросить("perimeter", en, пер_en))
-        вон.append(спросить("площадь", ru_род, пл_ru))
-        вон.append(спросить("периметр", ru_род, пер_ru))
-        # РАССУЖДЕНИЕ МИРА (дом речи): звено — свидетель, утверждение — вывод, закон — из дома законов.
-        if i % 3 == 0:
-            вон.append(discourse.рассуждение_мира("en", f"what is the area of {en}", f"{a} × {b} = {a * b}", пл_en, laws.закон("geometry", 0, "en")))
-            вон.append(discourse.рассуждение_мира("ru", f"чему равна площадь {ru_род}", f"{a} × {b} = {a * b}", пл_ru, laws.закон("geometry", 0, "ru")))
-        elif i % 3 == 1:
-            вон.append(discourse.почему_мира("en", f"why is the perimeter of {en} equal to {2 * (a + b)}", f"{a} + {b} = {a + b}", пер_en, laws.закон("geometry", 1, "en")))
-            вон.append(discourse.почему_мира("ru", f"почему периметр {ru_род} равен {2 * (a + b)}", f"{a} + {b} = {a + b}", пер_ru, laws.закон("geometry", 1, "ru")))
-    return вон
-
-
-def квадраты(шаг):
-    вон = []
-    for i in range(16):
-        a = 2 + (i % 12) + шаг
-        en, ru = f"a square with side {a}", f"квадрат со стороной {a}"
-        ru_род = f"квадрата со стороной {a}"
-        утв_en = f"{en} has area {a} × {a} = {a * a} and perimeter 4 × {a} = {4 * a}."
-        утв_ru = f"{ru} имеет площадь {a} × {a} = {a * a} и периметр 4 × {a} = {4 * a}."
-        пл_en = f"{en} has area {a} × {a} = {a * a}."
-        пер_en = f"{en} has perimeter 4 × {a} = {4 * a}."
-        пл_ru = f"{ru} имеет площадь {a} × {a} = {a * a}."
-        пер_ru = f"{ru} имеет периметр 4 × {a} = {4 * a}."
-        вон.append(утв_en)
-        вон.append(утв_ru)
-        вон.append(спросить("area", en, пл_en))
-        вон.append(спросить("perimeter", en, пер_en))
-        вон.append(спросить("площадь", ru_род, пл_ru))
-        вон.append(спросить("периметр", ru_род, пер_ru))
-    return вон
-
-
-def треугольники(шаг):
-    """Площадь через основание и высоту — только при чётном произведении."""
-    вон = []
-    for i in range(20):
-        b, h = 2 + (i % 10) + шаг, 4 + (i % 6)
-        if (b * h) % 2:
-            b += 1
-        en = f"a triangle with base {b} and height {h}"
-        ru = f"треугольник с основанием {b} и высотой {h}"
-        ru_род = f"треугольника с основанием {b} и высотой {h}"
-        утв_en = f"{en} has area {b} × {h} ÷ 2 = {b * h // 2}."
-        утв_ru = f"{ru} имеет площадь {b} × {h} ÷ 2 = {b * h // 2}."
-        вон.append(утв_en)
-        вон.append(утв_ru)
-        вон.append(спросить("area", en, утв_en))
-        вон.append(спросить("площадь", ru_род, утв_ru))
-    return вон
-
-
-def пифагор(шаг):
-    вон = []
-    for a, b, c in ТРОЙКИ:
-        en = f"a right triangle with legs {a} and {b}"
-        ru = f"прямоугольный треугольник с катетами {a} и {b}"
-        ru_род = f"прямоугольного треугольника с катетами {a} и {b}"
-        цепь = f"{a} × {a} = {a * a}, {b} × {b} = {b * b}, {a * a} + {b * b} = {a * a + b * b}, {c} × {c} = {c * c}"
-        утв_en = f"{en} has hypotenuse {c}: {цепь}."
-        утв_ru = f"{ru} имеет гипотенузу {c}: {цепь}."
-        вон.append(утв_en)
-        вон.append(утв_ru)
-        вон.append(f"{a}^2 + {b}^2 = {c}^2.")
-        вон.append(спросить("hypotenuse", en, утв_en))
-        вон.append(спросить("гипотенуза", ru_род, утв_ru))
-        вон.append(discourse.почему_мира("en", f"why is the hypotenuse of {en} equal to {c}", f"{a} × {a} = {a * a}", утв_en, laws.закон("geometry", 2, "en")))
-        вон.append(discourse.почему_мира("ru", f"почему гипотенуза {ru_род} равна {c}", f"{a} × {a} = {a * a}", утв_ru, laws.закон("geometry", 2, "ru")))
-    return вон
-
-
-def _полный_квадрат(n):
-    """Целое ли число корень: суд отказа считает то же самое сам."""
-    к = int(n ** 0.5)
-    while к * к < n:
-        к += 1
-    return к * к == n
-
-
-def отказ_гипотенузы(шаг):
-    """Вопрос, чей честный ответ — «целого нет, и вот почему».
-
-    МИР, УМЕЮЩИЙ ТОЛЬКО УТВЕРЖДАТЬ, УЧИТ СОГЛАШАТЬСЯ. Гипотенуза при
-    катетах 2 и 3 существует, но целым числом не выражается, и корпус
-    её не пишет — таков объявленный закон этого мира. Отказ называет
-    ОСНОВАНИЕ числом: сумма квадратов и то, что она не полный квадрат.
-    """
-    вон = []
-    for i in range(20):
-        a = 2 + (шаг + i) % 9
-        b = a + 1 + (шаг * 2 + i) % 7
-        # WHOLENESS IS A YES/NO QUESTION (holon 03.09, value-not-verdict: a
-        # question for a VALUE answered by a refusal looked like a verdict
-        # frame with one polarity). The value question keeps its value
-        # answers; wholeness is asked as its own question, and both answers
-        # lie side by side — «yes» with the whole value, «no» with the reason.
-        if i % 3 == 0:
-            a, b = ТОЧНЫЕ_КАТЕТЫ[(шаг + i) % len(ТОЧНЫЕ_КАТЕТЫ)]
-        с = a * a + b * b
-        if _полный_квадрат(с):
-            c = math.isqrt(с)
-            вон.append(спросить("whole_hypotenuse", f"a right triangle with legs {a} and {b}",
-                                f"yes: {a}^2 + {b}^2 = {с} = {c}^2, the hypotenuse is {c}."))
-            вон.append(спросить("целая_гипотенуза", f"прямоугольного треугольника с катетами {a} и {b}",
-                                f"да: {a}^2 + {b}^2 = {с} = {c}^2, гипотенуза равна {c}."))
-        else:
-            вон.append(спросить("whole_hypotenuse", f"a right triangle with legs {a} and {b}",
-                                f"no: {a}^2 + {b}^2 = {с}, and {с} is not a perfect square."))
-            вон.append(спросить("целая_гипотенуза", f"прямоугольного треугольника с катетами {a} и {b}",
-                                f"нет: {a}^2 + {b}^2 = {с}, а {с} не полный квадрат."))
-    return вон
-
-
-def тела(шаг):
-    вон = []
-    for i in range(20):
-        a, b, c = 2 + (i % 5) + шаг, 3 + (i % 4), 2 + (i % 6)
-        en_к, ru_к = f"a box {a} by {b} by {c}", f"коробка {a} на {b} на {c}"
-        ru_к_род = f"коробки {a} на {b} на {c}"
-        пов = f"{a} × {b} = {a * b}, {b} × {c} = {b * c}, {a} × {c} = {a * c}, {a * b} + {b * c} + {a * c} = {a * b + b * c + a * c}, 2 × {a * b + b * c + a * c} = {2 * (a * b + b * c + a * c)}"
-        утв_к_en = (f"{en_к} has volume {a} × {b} = {a * b}, {a * b} × {c} = {a * b * c} and surface {пов}.")
-        утв_к_ru = (f"{ru_к} имеет объём {a} × {b} = {a * b}, {a * b} × {c} = {a * b * c} и поверхность {пов}.")
-        en_куб, ru_куб = f"a cube with edge {a}", f"куб с ребром {a}"
-        ru_куб_род = f"куба с ребром {a}"
-        утв_куб_en = f"{en_куб} has volume {a} × {a} = {a * a}, {a * a} × {a} = {a ** 3}."
-        утв_куб_ru = f"{ru_куб} имеет объём {a} × {a} = {a * a}, {a * a} × {a} = {a ** 3}."
-        вон.append(утв_к_en)
-        вон.append(утв_к_ru)
-        вон.append(утв_куб_en)
-        вон.append(утв_куб_ru)
-        # THE ANSWER NAMES THE ASKED QUANTITY ONLY (М-148; the box as the
-        # rectangle): the fact keeps both, each question gets its own.
-        об_en = f"{en_к} has volume {a} × {b} = {a * b}, {a * b} × {c} = {a * b * c}."
-        пов_en = f"{en_к} has surface {пов}."
-        об_ru = f"{ru_к} имеет объём {a} × {b} = {a * b}, {a * b} × {c} = {a * b * c}."
-        пов_ru = f"{ru_к} имеет поверхность {пов}."
-        вон.append(спросить("volume", en_к, об_en))
-        вон.append(спросить("surface", en_к, пов_en))
-        вон.append(спросить("объём", ru_к_род, об_ru))
-        вон.append(спросить("поверхность", ru_к_род, пов_ru))
-        вон.append(спросить("volume", en_куб, утв_куб_en))
-        вон.append(спросить("объём", ru_куб_род, утв_куб_ru))
-    return вон
-
-
-ГРУППЫ = (прямоугольники, квадраты, треугольники, пифагор,
-          отказ_гипотенузы, тела)
-
-
-import discourse  # noqa: E402
-import laws  # noqa: E402
-
-
-def pass_groups(pass_i):
-    return [сделать(pass_i) for сделать in ГРУППЫ] + [laws.ступень("geometry")]
+# ПЕРЕБОР ЖИВЁТ В ДОМЕ (13.09). Ступень законов, стоявшая ПОДЛЕ кортежа, объявлена там
+# отдельным родом, а не потеряна.
 
 
 def main():
-    emit_grouped("datasets/genesis_geometry.txt", pass_groups)
+    emit_grouped(ЦЕЛЬ, F.группы)
 
 
 if __name__ == "__main__":

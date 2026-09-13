@@ -52,7 +52,9 @@ import sys
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
 import plural as _plural  # noqa: E402 — английский артикль гнётся ЗВУКОМ: «an apple», «a wheel»
-import gen_genesis_everyday as дом  # noqa: E402
+# ЧИТАТЕЛЬ ПОШЁЛ ЗА ОБЪЯВЛЕНИЕМ (13.09): пять имён — ВЕЩИ, РОЛИ, МЕСТА, множественное,
+# по_счёту — переехали из кузницы в дом `tools/everydayforms.py`.
+import everydayforms as дом  # noqa: E402
 import onepattern  # noqa: E402
 import rugram  # noqa: E402
 from genesis import Unreadable, worlds  # noqa: E402
