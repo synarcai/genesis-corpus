@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 398 законов
+# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 399 законов
 
 Собран из докстрингов и комментариев `tools`, `courts`, `scripts` орудием
 `tools/law_atlas.py`. Взяты ОБЩИЕ законы — те, что держатся не одним файлом.
@@ -6,7 +6,7 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 6190 разных законов на 7691 упоминаний; сказанных однажды — 5792, и они остаются при своём месте.
+Всего в дереве 6194 разных законов на 7698 упоминаний; сказанных однажды — 5795, и они остаются при своём месте.
 
 
 ## Держат 81 файлов
@@ -194,6 +194,8 @@
   tools/countfacts.py, tools/dialogueforms.py, tools/genus_atlas.py, tools/linkforms.py, tools/opinionforms.py, tools/svampforms.py
 - **ДОМ, ПРОВЕРЯЮЩИЙ ЛИШЬ ТОТ ЯЗЫК, О КОТОРОМ УЧИТ, ЛЖЁТ НА ТОМ, НА КОТОРОМ ОБЪЯСНЯЕТ**  
   tools/dosupportforms.py, tools/idredupforms.py, tools/personplaceforms.py, tools/romgenderforms.py, tools/svgenderforms.py, tools/zhclassforms.py
+- **МИР, ЧЬИ СТРАНИЦЫ НЕ НАЗВАНЫ РОДОМ, ЧИТАЕТСЯ ТОЛЬКО ТЕМ, КТО ЧИТАЕТ КУЗНИЦУ**  
+  tools/cmpmultforms.py, tools/gen_genesis_compare_mult.py, tools/gen_genesis_markdown.py, tools/gen_genesis_wordparts.py, tools/markdownforms.py, tools/wordpartforms.py
 - **МУТАНТ ПО ЧИСЛУ В КАЖДОМ РОДЕ, ГДЕ ЕСТЬ ЗАПИСЬ**  
   tools/condforms.py, tools/leapforms.py, tools/medianforms.py, tools/numlineforms.py, tools/pctbaseforms.py, tools/tzoneforms.py
 - **РОДЫ ЕСТЬ ФОРМЫ — И ЭТО НЕ ПОВТОР, А РАЗРЕШЕНИЕ ДВУСМЫСЛЕННОСТИ**  
@@ -252,8 +254,6 @@
   tools/jaclassforms.py, tools/koparticleforms.py, tools/viclassforms.py, tools/zhclassforms.py
 - **ЛОВУШКА ОБЯЗАНА БЫТЬ ЛОВУШКОЙ**  
   tools/decforms.py, tools/measuregrowforms.py, tools/ratetrapforms.py, tools/remdivforms.py
-- **МИР, ЧЬИ СТРАНИЦЫ НЕ НАЗВАНЫ РОДОМ, ЧИТАЕТСЯ ТОЛЬКО ТЕМ, КТО ЧИТАЕТ КУЗНИЦУ**  
-  tools/gen_genesis_markdown.py, tools/gen_genesis_wordparts.py, tools/markdownforms.py, tools/wordpartforms.py
 - **ОДИН ЗНАК, ДВА НАЧЕРТАНИЯ — ОБА ЖИВУТ, ИЛИ ОРГАНИЗМ ЗНАЕТ ОДНО**  
   courts/notationvar_court.py, tools/gen_genesis_notationvar.py, tools/notation_variants.py, tools/notationforms.py
 - **ПЕРЕБОР ЖИВЁТ В ДОМЕ, А НЕ ЗДЕСЬ**  
@@ -538,6 +538,8 @@
   scripts/past_gender.py, tools/directforms.py
 - **МЕРА, ТРЕБУЮЩАЯ ПОЛНОТЫ ОТ ТОГО, ЧТО РАСТЁТ ПО ОДНОМУ, ТОРОПИТ ПИСЦА И ПОРТИТ РАБОТУ**  
   scripts/refusal_house.py, scripts/refusal_reason.py
+- **МЕРА, ЧИТАЮЩАЯ СТРОКУ, НЕ НАЙДЁТ ИМЕНИ, ПОЛОЖЕННОГО ПОД ПОКАЗ**  
+  tools/cmpmultforms.py, tools/markdownforms.py
 - **МИР ЗАМКНУТ, И ЭТО ПРОВЕРЕНО ДЕЛОМ**  
   courts/episode_court.py, courts/speech_court.py
 - **МНОЖИТЕЛЬ БЕЗ ЧИСЛОВОГО ТОКЕНА**  
@@ -643,7 +645,7 @@
 - **ПРЕДЛОЖНЫЙ ПАДЕЖ НАЗВАН, А НЕ ВЫВЕДЕН**  
   tools/physlawforms.py, tools/units.py
 - **ПРИ ДВОЙКЕ АНГЛИЙСКИЙ ГОВОРИТ ОДНИМ СЛОВОМ**  
-  courts/compare_mult_court.py, tools/gen_genesis_compare_mult.py
+  courts/compare_mult_court.py, tools/cmpmultforms.py
 - **ПРИБОР СТОИТ НА НУЛЕ И ЗЕЛЕНЕЕТ ОТ НУЛЯ**  
   scripts/empty_in_court.py, scripts/past_gender.py
 - **ПРИБОР, СЧИТАЮЩИЙ ЛИШЬ ТЕХ, КОГО УЗНАЛ, МОЛЧИТ О НЕУЗНАННЫХ**  
@@ -701,7 +703,7 @@
 - **РОД ИМЕНИ СКАЗАН АРТИКЛЕМ, А НЕ ВЫВЕДЕН ИЗ СЛОВА**  
   courts/romgender_court.py, tools/romgenderforms.py
 - **РОД ОБЪЯВЛЯЕТ ИМЯ И СВОЙ ПОКАЗ, И НИЧЕГО БОЛЬШЕ**  
-  tools/gen_genesis_compare_mult.py, tools/gen_genesis_percent.py
+  tools/cmpmultforms.py, tools/gen_genesis_percent.py
 - **РОД СЛОВА НЕ ВЫВОДИТСЯ НИ ИЗ ЧЕГО**  
   courts/gender_court.py, tools/genderforms.py
 - **РОД ТОВАРА ТАМ, ГДЕ ВОПРОСНОЕ СЛОВО ЕГО ДЕРЖИТ**  
