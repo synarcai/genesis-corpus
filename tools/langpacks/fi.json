@@ -404,7 +404,7 @@
         ]
       }
     },
-    "adj_forms": {
+    "noun_case": {
       "forms": [
         "nominative",
         "genitive",
@@ -591,8 +591,8 @@
       "templates": [
         "Tässä on yksi {lex:noun_count:one}.",
         "Tässä ovat {lex:noun_count:many}.",
-        "Tässä on kaksi {lex:adj_forms:partitive}.",
-        "Tässä on {num:sum} {lex:adj_forms:partitive}."
+        "Tässä on kaksi {lex:noun_case:partitive}.",
+        "Tässä on {num:sum} {lex:noun_case:partitive}."
       ]
     },
     "definition": {
@@ -654,18 +654,18 @@
       ],
       "instances_per_pass": 12,
       "templates": [
-        "{lex:adj_forms:nominative} on tässä.",
-        "Tämä on {lex:adj_forms:genitive} väri.",
-        "Minä katson {lex:adj_forms:partitive}.",
-        "Minä olen {lex:adj_forms:inessive}.",
-        "Minä tulen {lex:adj_forms:elative}.",
-        "Minä menen {lex:adj_forms:illative}.",
-        "Se on {lex:adj_forms:adessive}.",
-        "Minä otan sen {lex:adj_forms:ablative}.",
-        "Minä menen {lex:adj_forms:allative}.",
-        "Se on hyvä {lex:adj_forms:essive}.",
-        "Se muuttui {lex:adj_forms:translative}.",
-        "Minä olen {lex:adj_forms:abessive}."
+        "{lex:noun_case:nominative} on tässä.",
+        "Tämä on {lex:noun_case:genitive} väri.",
+        "Minä katson {lex:noun_case:partitive}.",
+        "Minä olen {lex:noun_case:inessive}.",
+        "Minä tulen {lex:noun_case:elative}.",
+        "Minä menen {lex:noun_case:illative}.",
+        "Se on {lex:noun_case:adessive}.",
+        "Minä otan sen {lex:noun_case:ablative}.",
+        "Minä menen {lex:noun_case:allative}.",
+        "Se on hyvä {lex:noun_case:essive}.",
+        "Se muuttui {lex:noun_case:translative}.",
+        "Minä olen {lex:noun_case:abessive}."
       ]
     }
   },

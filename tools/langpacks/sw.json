@@ -231,7 +231,7 @@
         ]
       }
     },
-    "adj_forms": {
+    "noun_class_agree": {
       "forms": [
         "one",
         "two",
@@ -400,9 +400,9 @@
       ],
       "instances_per_pass": 36,
       "templates": [
-        "hapa kuna {lex:adj_forms:one}.",
-        "hapa kuna {lex:adj_forms:two}.",
-        "hapa kuna {lex:adj_forms:big}."
+        "hapa kuna {lex:noun_class_agree:one}.",
+        "hapa kuna {lex:noun_class_agree:two}.",
+        "hapa kuna {lex:noun_class_agree:big}."
       ]
     }
   },

@@ -271,7 +271,7 @@
         ]
       }
     },
-    "adj_forms": {
+    "verb_definite": {
       "forms": [
         "def_s1",
         "def_s2",
@@ -474,12 +474,12 @@
       ],
       "instances_per_pass": 12,
       "templates": [
-        "{lex:verb_pres:s1} valamit, és {lex:adj_forms:def_s1} azt.",
-        "{lex:verb_pres:s2} valamit, és {lex:adj_forms:def_s2} azt.",
-        "{lex:verb_pres:s3} valamit, és {lex:adj_forms:def_s3} azt.",
-        "{lex:verb_pres:p1} valamit, és {lex:adj_forms:def_p1} azt.",
-        "{lex:verb_pres:p2} valamit, és {lex:adj_forms:def_p2} azt.",
-        "{lex:verb_pres:p3} valamit, és {lex:adj_forms:def_p3} azt."
+        "{lex:verb_pres:s1} valamit, és {lex:verb_definite:def_s1} azt.",
+        "{lex:verb_pres:s2} valamit, és {lex:verb_definite:def_s2} azt.",
+        "{lex:verb_pres:s3} valamit, és {lex:verb_definite:def_s3} azt.",
+        "{lex:verb_pres:p1} valamit, és {lex:verb_definite:def_p1} azt.",
+        "{lex:verb_pres:p2} valamit, és {lex:verb_definite:def_p2} azt.",
+        "{lex:verb_pres:p3} valamit, és {lex:verb_definite:def_p3} azt."
       ]
     }
   },

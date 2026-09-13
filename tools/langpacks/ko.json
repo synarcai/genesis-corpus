@@ -247,7 +247,7 @@
         ]
       }
     },
-    "adj_forms": {
+    "noun_case": {
       "forms": [
         "bare",
         "subject",
@@ -386,7 +386,7 @@
       "instances_per_pass": 24,
       "templates": [
         "{lex:noun_count:one} 물건이에요.",
-        "저것도 {lex:adj_forms:copula}."
+        "저것도 {lex:noun_case:copula}."
       ]
     },
     "refusals": {
@@ -431,10 +431,10 @@
       ],
       "instances_per_pass": 12,
       "templates": [
-        "{lex:adj_forms:bare} 있어요.",
-        "{lex:adj_forms:subject} 많아요.",
-        "저는 {lex:adj_forms:object} 좋아해요.",
-        "이것은 {lex:adj_forms:copula}."
+        "{lex:noun_case:bare} 있어요.",
+        "{lex:noun_case:subject} 많아요.",
+        "저는 {lex:noun_case:object} 좋아해요.",
+        "이것은 {lex:noun_case:copula}."
       ]
     }
   },
