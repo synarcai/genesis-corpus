@@ -47,52 +47,16 @@ from layer import PASSES, emit  # noqa: E402
 ПАКЕТЫ = КОРЕНЬ / "tools" / "langpacks"
 
 
-def составы():
-    """(язык, лемма, часть, слово) для каждой объявленной формы, наращивающей лемму."""
-    вон = []
-    for п in sorted(ПАКЕТЫ.glob("*.json")):
-        пак = json.loads(п.read_text(encoding="utf-8"))
-        я = пак.get("lang", п.stem)
-        # ПИСЬМО БЕЗ ПРОБЕЛОВ НЕ РЕЖЕТСЯ ПО КРАЮ СЛОВА, и шов в нём — иной вопрос
-        if пак.get("segmentation") == "longest-match":
-            continue
-        видано = set()
-        for _имя, кл in (пак.get("morph_classes") or {}).items():
-            for лемма, формы in (кл.get("lexemes") or {}).items():
-                for ф in формы:
-                    ф = str(ф)
-                    if ф == лемма or not ф.startswith(лемма) or len(ф) <= len(лемма):
-                        continue
-                    часть = ф[len(лемма):]
-                    if " " in часть or " " in лемма:
-                        continue          # пробел есть граница слова, а не шов
-                    ключ = (я, лемма, часть)
-                    if ключ in видано:
-                        continue
-                    видано.add(ключ)
-                    вон.append((я, лемма, часть, ф))
-    return вон
-
-
-СОСТАВЫ = составы()
+# ДОМ ОТДЕЛЁН ОТ КУЗНИЦЫ (13.09): составы, роды и словарь показов живут в
+# `tools/wordpartforms.py`, а кузница берёт у него ряд страниц. Мир был САМЫМ БОЛЬШИМ
+# БЕЗДОМНЫМ МИРОМ СВОДА — 4 767 строк без объявленного рода.
+#
+#     МИР, ЧЬИ СТРАНИЦЫ НЕ НАЗВАНЫ РОДОМ, ЧИТАЕТСЯ ТОЛЬКО ТЕМ, КТО ЧИТАЕТ КУЗНИЦУ.
+import wordpartforms as F  # noqa: E402
 
 
 def pass_shows(pass_i):
-    из = [с for k, с in enumerate(СОСТАВЫ) if k % len(PASSES) == pass_i]
-    out = []
-    for я, лемма, часть, слово in из:
-        out.append(f"{лемма} + {часть} = {слово}.")
-        out.append(f"what is {лемма} + {часть}? {лемма} + {часть} = {слово}.")
-        out.append(f"сколько будет {лемма} + {часть}? {лемма} + {часть} = {слово}.")
-        out.append(f"{слово} is {лемма} with the ending -{часть}.")
-        out.append(f"{слово} — это {лемма} с окончанием -{часть}.")
-        out.append(f"what is {слово} made of? {слово} is {лемма} with the ending -{часть}.")
-        out.append(f"из чего состои́т {слово}? {слово} — это {лемма} "
-                   f"с окончанием -{часть}.")
-    return out
-
-
-
+    return F.страницы(pass_i)
 
 
 def main():
