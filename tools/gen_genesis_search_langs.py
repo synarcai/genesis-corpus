@@ -26,25 +26,12 @@ from layer import emit_grouped  # noqa: E402
 ЦЕЛЬ = "datasets/genesis_search_langs.txt"
 # the numbers whose walk to the next prime is at most eight steps (the walk
 # 113 → 127 would be a line of fourteen witnesses)
-КАНДИДАТЫ = tuple(n for n in range(8, 113) if F.следующее_простое(n) - n <= 8)
+# ПЕРЕБОР ЖИВЁТ В ДОМЕ (13.09). ДВА ПЕРЕБОРА ОДНОГО ПРОСТРАНСТВА РАЗОЙДУТСЯ.
+КАНДИДАТЫ = F.КАНДИДАТЫ
 
 
 def язык_группа(шаг, язык):
-    вон = []
-    for i in range(16):
-        j = шаг * 16 + i
-        род = F.РОДЫ[i % 4]
-        спросить = (i // 4) % 2 == 1
-        if род in ("прост1", "прост2"):
-            з = dict(n=КАНДИДАТЫ[(шаг * 53 + i * 17 + (род == "прост2") * 29) % len(КАНДИДАТЫ)])
-        elif род == "множ":
-            a = 3 + (j * 7 + шаг) % 10
-            k = 1 + (j * 3 + шаг * 2) % 7
-            з = dict(a=a, b=a * k + j % a)
-        else:
-            з = dict(k=2 + (j * 5 + шаг) % 9, v=2 + (j * 11 + шаг * 3) % 20)
-        вон.append(F.вопрос(язык, род, **з) if спросить else F.утверждение(язык, род, **з))
-    return вон
+    return [с for с, _род in F.перебор(шаг, язык)]
 
 
 def pass_groups(шаг):

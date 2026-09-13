@@ -23,6 +23,7 @@ that stays WHOLE on the axis, ≥ 10 shows per form and language, en/ru/de:
 Generator and court read one table through tools/phrases.py (М-159); the
 court reads the fraction words back to their numbers and recomputes.
 """
+import math
 import pathlib
 import re
 import sys
@@ -211,3 +212,92 @@ def судить(строка):
             except (KeyError, ValueError, ZeroDivisionError):
                 return True, False
     return False, False
+
+
+# СЛОВАРЬ СТРАНИЦ ДОМА ДОЛЕЙ (13.09, седьмой переезд того же вида). Пять дверей, и род у
+# каждой стои́т БУКВОЙ вторым доводом — «доля», «проц», «дополн», «число», «проц_обр», — и эти
+# же пять имён объявлены здесь в `ФОРМЫ`. Переносчик читал, а не выбирал.
+#
+# ВВОЗ ЕДЕТ С ПЕРЕБОРОМ ТОЖЕ: помощник `_процент` зовёт `math.gcd`, и дом, не ввозивший
+# `math`, не ввёзся вовсе. ПЕРЕЕЗЖАЕТ ЗАМЫКАНИЕ ЦЕЛИКОМ — и то, что функция зовёт, и то,
+# чем она это зовёт.
+#
+# ПОМОЩНИКИ ПЕРЕЕХАЛИ ВМЕСТЕ С ПЕРЕБОРОМ, И ЭТО КУПЛЕНО ОШИБКОЙ: первая попытка взяла одну
+# `язык_группа`, а та зовёт `_доля_слова`, `_доля` и `_процент`, оставшихся в кузнице, — дом
+# не ввёзся вовсе. ПЕРЕЕЗЖАЕТ НЕ ФУНКЦИЯ, А ЗАМЫКАНИЕ: всё, что она зовёт и что не живёт в
+# доме, едет с нею.
+def _доля(j):
+    """The (numerator, denominator) of show j — the walk covers EVERY declared
+    pair before repeating, so no word of a fraction stays with two shows while
+    another has ten (holon 03.09: «one tenth», «sevenths», «ninth» were refused
+    by the market for want of LAW² different shows per WORD)."""
+    return ДОЛИ[(j * 7) % len(ДОЛИ)]
+
+
+def _доля_слова(j):
+    """Every DECLARED WORD in turn: the pairs are walked so that each word of a
+    fraction gets its own shows, not only the pairs of small denominators."""
+    return ДОЛИ[j % len(ДОЛИ)]
+
+
+def _процент(j):
+    """(p, N) with N·p divisible by 100 — the answer whole: N is a multiple of
+    100 ÷ gcd(p, 100)."""
+    p = ПРОЦЕНТЫ[j % len(ПРОЦЕНТЫ)]
+    шаг = 100 // math.gcd(p, 100)
+    return p, шаг * (2 + (j * 3) % 12)
+
+
+def перебор(шаг, язык):
+    вон = []
+    j = шаг * 29
+    # the share of a quantity: eight per pass, statement and question in turn
+    for i in range(36):
+        n, d = _доля_слова(шаг * 36 + i)
+        q = 2 + (шаг * 5 + i * 7 + j) % 25
+        while q * n == d or q * d == d:   # the given must not be the denominator itself
+            q += 1
+        вон.append((страница(язык, "доля", n=n, d=d, q=q, вопрос=(i + шаг) % 2 == 1), "доля"))
+    j += 8
+    # the percent of a quantity: six per pass
+    for i in range(6):
+        p, N = _процент(j + i)
+        вон.append((страница(язык, "проц", p=p, N=N, вопрос=(i + шаг) % 2 == 0), "проц"))
+    j += 6
+    # the complement («three quarters have; 20 do not»): five per pass
+    for i in range(5):
+        n, d = _доля(j + i * 3)
+        if d - n < 1:
+            n, d = 1, d
+        q = 2 + (шаг * 7 + i * 5 + j) % 18
+        while q * n == d:                 # the given must not be the denominator
+            q += 1
+        вон.append((страница(язык, "дополн", n=n, d=d, q=q, вещь=(шаг + i) % 5), "дополн"))
+    j += 4
+    # the number from its share: five per pass (mass 20+ buys depth-3 chains)
+    for i in range(36):
+        n, d = _доля_слова(шаг * 36 + i + 20)
+        q = 2 + (шаг * 3 + i * 11 + j) % 20
+        while q * n == d:                 # the share given must not be the denominator
+            q += 1
+        вон.append((страница(язык, "число", n=n, d=d, q=q), "число"))
+    j += 3
+    # the number from its percent: five per pass
+    for i in range(5):
+        p, N = _процент(j + i * 4)
+        вон.append((страница(язык, "проц_обр", p=p, N=N), "проц_обр"))
+    return вон
+
+
+def _показы():
+    from layer import PASSES                              # noqa: PLC0415
+    вон = {}
+    for шаг in range(len(PASSES)):
+        for язык in ЯЗЫКИ:
+            for с, род in перебор(шаг, язык):
+                if с:
+                    вон.setdefault(с, (язык, род))
+    return вон
+
+
+ПОКАЗЫ = _показы()

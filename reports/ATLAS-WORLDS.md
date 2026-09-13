@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 310 миров, 440554 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 312 миров, 442600 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -11,13 +11,13 @@
 
 ## АКТ «recount» — пересчитать величину: строка утверждает число
 
-Миров 152, строк 227744.
+Миров 152, строк 229496.
 
 - **`links`** (17566 строк; declared, whole_only)  
   **CONVERSATION LINKS** — a question whose subject stands in the PREVIOUS reply (the owner's order, 04.09, item 5; the BESEDA band measures this genus mute 15 of 15).
 - **`school_biling_v2c`** (11380 строк; recompute, whole_only)  
   **THE SCHOOL OF ARITHMETIC IN THREE SURFACES** — the largest show world of the corpus (11 380 lines, 470 858 bytes) and, until 12.09, the one that said least about itself: thirty characters of declaration, «arithmetic school (3 surfaces)».
-- **`svamp`** (7768 строк; recompute, whole_only)  
+- **`svamp`** (9520 строк; recompute, whole_only)  
   **SVAMP SHAPES** — the eight shapes of the live SVAMP band that no frame of the corpus held (d5, 06.09, by weight on 726 tacts): the hidden quantity «some» and the heads of the total (in all, altogether, in total, a total of, now has N left); the oblique pr…
 - **`holdforms`** (6777 строк; declared, whole_only)  
   **HOLDINGS WITHOUT A VERB** — the first show «only by frames» (05.09, the owner's word through holon: prototype ONE BEARER, a story read only by frames).
@@ -320,7 +320,7 @@
 
 ## АКТ «compare» — сравнить двоих: больше, меньше, во столько же раз
 
-Миров 61, строк 22344.
+Миров 63, строк 22638.
 
 - **`cmpframes`** (6480 строк; recompute, whole_only)  
   **FRAMES OF COMPARISON** — the largest class of the reader's lies on the held-out key (05.09: twelve of fifteen — «9 flexiones más que», «in più/in meno di», «meer/minder dan», «więcej/mniej niż»: the marker is not bought and the answer takes a neighbouring…
@@ -368,6 +368,8 @@
   **multiplicative against differential comparison in Russian: «во сколько раз больше» is DIVISION and «на сколько больше» is SUBTRACTION, two frames a speaker confuses more often than any other, shown on the SAME pair of numbers side by side with the differe…
 - **`idredup`** (168 строк; declared, declared_table_only)  
   **ИНДОНЕЗИЙСКОЕ УДВОЕНИЕ** — СВОД ОТВЕРГАЛ «dua buku-buku» И НЕ СКАЗАЛ ПОЧЕМУ. Замер 12.09 ПО ПЛАСТУ ИНДОНЕЗИЙСКОГО (4 135 строк): удвоений вида «buku-buku» 885 при 42 различных словах (buku-buku 27, kucing-kucing 25, rumah-rumah 25, apel-apel 22…); отказов…
+- **`numnoun`** (160 строк; declared, declared_table_only)  
+  **ИМЯ ПОСЛЕ ЧИСЛИТЕЛЬНОГО** — ЧЕТЫРЕ НЕСОВМЕСТИМЫХ ОТВЕТА НА ОДИН ВОПРОС, И СВОД ОТВЕРГАЛ ПЕРЕНОС МЕЖДУ НИМИ ТРИДЦАТЬ ЧЕТЫРЕ РАЗА, НИ РАЗУ НЕ СКАЗАВ, ЧТО ОТВЕТОВ НЕСКОЛЬКО. Мера 13.09 (`scripts/refusal_house.py`) нашла 45 отказов пакетов, ждущих дома своего…
 - **`fuseprep`** (158 строк; declared, declared_table_only)  
   **СЛИЯНИЕ ПРЕДЛОГА С АРТИКЛЕМ** — ЧЕТЫРЕ ЯЗЫКА СВОДА СЛИВАЮТ ИХ, И ВСЕ ЧЕТЫРЕ ПО-РАЗНОМУ, А СКАЗАНО ОБ ЭТОМ НЕ БЫЛО НИ РАЗУ. Замер 12.09 ПО СВОДУ, ПОРОЗНЬ: итальянских слитных форм (nel, della, sugli, dalle …) 10 286, испанских «al» и «del» 2 523, французск…
 - **`deplur`** (156 строк; declared, declared_table_only)  
@@ -382,6 +384,8 @@
   **REWRITING** — one number written two ways. d5 named sixty-two starving collections of the organism, and `rewrite_facts` was among them: the corpus had no rewriting shows at all.
 - **`analog`** (144 строк; recompute, whole_only)  
   **LIKENESS** — analogy and its CHECK, not its feeling.
+- **`numplace`** (134 строк; declared, declared_table_only)  
+  **МЕСТО ЧИСЛА В ИМЕНИ** — ДЕВЯТЬ МЕСТ В ДВАДЦАТИ СЕМИ ПЛАСТАХ, И СВОД ПОКАЗЫВАЕТ ОБЕ ФОРМЫ КАЖДОГО ИМЕНИ ТЫСЯЧАМИ СТРОК, НИ РАЗУ НЕ СКАЗАВ, ЧЕМ ИМЕННО ОНИ РАЗЛИЧНЫ. ЧИСЛО ЖИВЁТ В ИМЕНИ — В ХВОСТЕ СЛОВА, В ЕГО ГОЛОВЕ, ВНУТРИ НЕГО, В СЛУЖЕБНОМ СЛОВЕ ПРИ НЁМ, …
 - **`nlarticle`** (132 строк; declared, declared_table_only)  
   **НИДЕРЛАНДСКИЙ АРТИКЛЬ** — СВОД СТАВИЛ «de» И «het» ВОСЕМЬ ТЫСЯЧ РАЗ И НЕ СКАЗАЛ, ЧЕМ ОНИ РАЗНЯТСЯ. Замер 12.09 ПО СВОДУ: «het» стои́т 6 358 раз при 147 разных словах, «de» в нидерландских мирах — 1 523 раза; строк, объясняющих ВЫБОР между ними, — ни одной.
 - **`measure`** (128 строк; recompute, whole_only, exact_only)  
@@ -679,5 +683,5 @@
     ОБЪЯВЛЕНИЕ В ТРИДЦАТЬ ЗНАКОВ НЕ ЛЖЁТ И НЕ ГОВОРИТ: читатель узнаёт имя мира
     и ничего сверх него.
 
-Миров: **0** из 310.
+Миров: **0** из 312.
 

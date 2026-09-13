@@ -233,13 +233,21 @@ COURTS=("courts/arith_court.py" "courts/algo_court.py"
         "courts/jaclass_court.py"
         # ДВАДЦАТЬ ПЕРВЫЙ ДОМ: финский партитив. Падеж и число суть разные вещи, и после
         # числа работает падеж: «kaksi taloa» — единственное, а не множественное.
-        "courts/fipart_court.py" "courts/personplace_court.py" "courts/persondist_court.py" "courts/huobj_court.py" "courts/refusalwhy_court.py" "courts/deacc_court.py" "courts/svgender_court.py" "courts/romgender_court.py"
+        "courts/fipart_court.py" "courts/personplace_court.py" "courts/persondist_court.py" "courts/huobj_court.py" "courts/refusalwhy_court.py" "courts/deacc_court.py" "courts/svgender_court.py" "courts/romgender_court.py" "courts/numnoun_court.py" "courts/numplace_court.py"
         # СЕДЬМОЙ ДОМ: немецкое множественное без одного правила — ловушка на
         # НЕЗНАНИИ, и потому она стои́т после ловушки на переносе.
         "courts/deplur_court.py"
         # ПОЛОВИНЧАТЫЙ ЗАКОН — место, где дом пишет множественное литералом рядом с
         # числом: правота такой строки держится жребием, а не законом.
         "scripts/half_law.py" "scripts/unknown_name.py" "scripts/stale_world.py" "scripts/agree_traps.py" "scripts/wrong_sign.py" "scripts/debt_mark.py" "scripts/copula_band.py" "scripts/past_gender.py" "scripts/word_once.py" "scripts/article_sound.py" "scripts/elision.py"
+        # ИМЯ КЛАССА — одна лексема, объявленная в одном пакете и именем, и глаголом.
+        # Прибор не судит о части речи и не умеет; он спрашивает у ПАКЕТА О ПАКЕТЕ,
+        # не стоит ли одна лексема в двух классах, чьи имена обещают разные части речи.
+        "scripts/class_name_honest.py"
+        # МИР НЕИЗМЕНЕН — подпись мира до правки против подписи после. В наборе он
+        # идёт ПРОБОЙ: судить ему нечего, покуда никто не объявил переезда, — но
+        # доказать, что он умеет находить подсадку, он обязан всякий раз.
+        "scripts/worlds_unchanged.py --проба"
         # ПЕРЕПИСЬ ПОРОГОВ — пай аудита «меры и пороги»: всякое число в роли
         # рубежа с ответом «объявлено / храповик / вкус». Печатает число, не падает.
         "scripts/threshold_census.py"

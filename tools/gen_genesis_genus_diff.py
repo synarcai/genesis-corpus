@@ -36,17 +36,12 @@ from layer import PASSES, emit_grouped  # noqa: E402
 ЦЕЛЬ = "datasets/genesis_genus_diff.txt"
 # the choice question of a thing is asked against three declared genera, not
 # all nine: three suffice to say that the answer is the thing's own genus
-ЧУЖИХ_РОДОВ = 3
+ЧУЖИХ_РОДОВ = F.ЧУЖИХ_РОДОВ   # объявлено домом, а не здесь
 
 
+# ПЕРЕБОР ЖИВЁТ В ДОМЕ (13.09). ДВА ПЕРЕБОРА ОДНОГО ПРОСТРАНСТВА РАЗОЙДУТСЯ.
 def строки(язык):
-    """Every distinct line of the world, in the order of the table."""
-    вон = []
-    for i in range(len(F.ЯЗЫКИ[язык]["определения"])):
-        for форма in F.ФОРМЫ:
-            сдвиги = range(ЧУЖИХ_РОДОВ) if форма.startswith("род") else (0,)
-            вон += [F.показ(язык, форма, i, с) for с in сдвиги]
-    return вон
+    return [с for с, _род in F.перебор(язык)]
 
 
 ВСЕ = {язык: строки(язык) for язык in F.ЯЗЫКИ}

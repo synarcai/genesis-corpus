@@ -1,0 +1,189 @@
+какую форму берёт имя после числа? имя остаётся в ЕДИНСТВЕННОМ — так отвечает японский (ja), и так же отвечают персидский, финский, венгерский, индонезийский, тайский, турецкий, вьетнамский и китайский. ОТВЕТОВ ЧЕТЫРЕ, И ОНИ ДРУГ ДРУГА ОТРИЦАЮТ: то, чего требует один лагерь, другой запрещает.
+какую форму берёт имя после числа? имя остаётся в ЕДИНСТВЕННОМ — так отвечает персидский (fa), и так же отвечают финский, венгерский, индонезийский, японский, тайский, турецкий, вьетнамский и китайский. ОТВЕТОВ ЧЕТЫРЕ, И ОНИ ДРУГ ДРУГА ОТРИЦАЮТ: то, чего требует один лагерь, другой запрещает.
+вьетнамский отвергает «*hai con bàn» и требует «hai cái bàn». Ошибка эта не своя: она есть ОТВЕТ ДРУГОГО ЛАГЕРЯ, принесённый сюда. ЧИТАТЕЛЬ, ВЫУЧИВШИЙ ОДИН ЛАГЕРЬ, БУДЕТ ОТВЕРГНУТ В ДРУГОМ ЗА ТО САМОЕ, ЧЕМУ ЕГО НАУЧИЛИ.
+польский отвергает «*dwa kot» и требует «dwa koty». Ошибка эта не своя: она есть ОТВЕТ ДРУГОГО ЛАГЕРЯ, принесённый сюда. ЧИТАТЕЛЬ, ВЫУЧИВШИЙ ОДИН ЛАГЕРЬ, БУДЕТ ОТВЕРГНУТ В ДРУГОМ ЗА ТО САМОЕ, ЧЕМУ ЕГО НАУЧИЛИ.
+какую форму берёт имя после числа? имя встаёт во МНОЖЕСТВЕННОЕ — так отвечает иврит (he), и так же отвечают немецкий, греческий, английский и хинди. ОТВЕТОВ ЧЕТЫРЕ, И ОНИ ДРУГ ДРУГА ОТРИЦАЮТ: то, чего требует один лагерь, другой запрещает.
+какую форму берёт имя после числа? имя идёт лестницей и ВОЗВРАЩАЕТСЯ к единственному — так отвечает арабский (ar), и так отвечает он ОДИН из всех. ОТВЕТОВ ЧЕТЫРЕ, И ОНИ ДРУГ ДРУГА ОТРИЦАЮТ: то, чего требует один лагерь, другой запрещает.
+тайский отвергает «*ผมเห็นหนังสือสองตัว» и требует «ผมเห็นหนังสือสองเล่ม». Ошибка эта не своя: она есть ОТВЕТ ДРУГОГО ЛАГЕРЯ, принесённый сюда. ЧИТАТЕЛЬ, ВЫУЧИВШИЙ ОДИН ЛАГЕРЬ, БУДЕТ ОТВЕРГНУТ В ДРУГОМ ЗА ТО САМОЕ, ЧЕМУ ЕГО НАУЧИЛИ.
+венгерский отвергает «*két házak vannak itt» и требует «két ház van itt». Ошибка эта не своя: она есть ОТВЕТ ДРУГОГО ЛАГЕРЯ, принесённый сюда. ЧИТАТЕЛЬ, ВЫУЧИВШИЙ ОДИН ЛАГЕРЬ, БУДЕТ ОТВЕРГНУТ В ДРУГОМ ЗА ТО САМОЕ, ЧЕМУ ЕГО НАУЧИЛИ.
+греческий отвергает «*δύο βιβλίο» и требует «δύο βιβλία». Ошибка эта не своя: она есть ОТВЕТ ДРУГОГО ЛАГЕРЯ, принесённый сюда. ЧИТАТЕЛЬ, ВЫУЧИВШИЙ ОДИН ЛАГЕРЬ, БУДЕТ ОТВЕРГНУТ В ДРУГОМ ЗА ТО САМОЕ, ЧЕМУ ЕГО НАУЧИЛИ.
+турецкий отвергает «*iki eviniz» и требует «iki ev». Ошибка эта не своя: она есть ОТВЕТ ДРУГОГО ЛАГЕРЯ, принесённый сюда. ЧИТАТЕЛЬ, ВЫУЧИВШИЙ ОДИН ЛАГЕРЬ, БУДЕТ ОТВЕРГНУТ В ДРУГОМ ЗА ТО САМОЕ, ЧЕМУ ЕГО НАУЧИЛИ.
+
+турецкий объявляет правило form: one — и то же слово стои́т ещё у 8 языков. Но здесь оно значит одно: имя стои́т голым, — а у соседа другое. ОДНА СТРОКА ПРАВИЛА, ОБЩАЯ У 9 ЯЗЫКОВ, СКРЫВАЕТ ТРИ ЗАКОНА, и объявление их не различает.
+арабский идёт лестницей и не растёт, а ВОЗВРАЩАЕТСЯ: один — единственное, два — форма самого имени, от трёх до десяти — множественное, а выше десяти ЕДИНСТВЕННОЕ. Кто читал её как рост — ОШИБЁТСЯ на числе одиннадцать.
+при двойке иврит не ставит ни единственного, ни множественного: он берёт ОСОБУЮ ФОРМУ ИМЕНИ. «*שתיים שעות» отвергнуто, а сказать надо «שעתיים» — и числительное там не нужно вовсе. ФОРМА, ЗАМЕНЯЮЩАЯ СЛОВОСОЧЕТАНИЕ, НЕ ЕСТЬ ЯЧЕЙКА ТОЙ ЖЕ ТАБЛИЦЫ.
+
+какую форму берёт имя после числа в языке fi? имя остаётся в ЕДИНСТВЕННОМ. Правило объявлено самим пластом: {'form': 'one'}.
+какую форму берёт имя после числа в языке ar? имя идёт лестницей и ВОЗВРАЩАЕТСЯ к единственному. Правило объявлено самим пластом: {'in': [1], 'form': 'one'}; {'in': [2], 'form': 'two'}; {'in': [3, 4, 5, 6, 7, 8, 9, 10], 'form': 'many'}; {'form': 'one'}.
+какую форму берёт имя после числа в языке uk? имя берёт одну из ТРЁХ форм по хвосту числа. Правило объявлено самим пластом: {'mod': 100, 'in': [11, 12, 13, 14], 'form': 'many'}; {'mod': 10, 'in': [1], 'form': 'one'}; {'mod': 10, 'in': [2, 3, 4], 'form': 'few'}; {'form': 'many'}.
+какую форму берёт имя после числа в языке ja? имя остаётся в ЕДИНСТВЕННОМ. Правило объявлено самим пластом: {'form': 'one'}.
+
+what form does the noun take after a number? the noun stays SINGULAR — so answers Japanese (ja), and so do Persian, Finnish, Hungarian, Indonesian, Thai, Turkish, Vietnamese and Chinese. THERE ARE FOUR ANSWERS AND THEY DENY ONE ANOTHER: what one camp demands, another forbids.
+what form does the noun take after a number? the noun stays SINGULAR — so answers Persian (fa), and so do Finnish, Hungarian, Indonesian, Japanese, Thai, Turkish, Vietnamese and Chinese. THERE ARE FOUR ANSWERS AND THEY DENY ONE ANOTHER: what one camp demands, another forbids.
+Vietnamese rejects «*hai con bàn» and requires «hai cái bàn». The mistake is not its own: it is ANOTHER CAMP'S ANSWER carried here. A READER WHO LEARNED ONE CAMP WILL BE REJECTED IN ANOTHER FOR THE VERY THING HE WAS TAUGHT.
+Polish rejects «*dwa kot» and requires «dwa koty». The mistake is not its own: it is ANOTHER CAMP'S ANSWER carried here. A READER WHO LEARNED ONE CAMP WILL BE REJECTED IN ANOTHER FOR THE VERY THING HE WAS TAUGHT.
+what form does the noun take after a number? the noun goes into the PLURAL — so answers Hebrew (he), and so do German, Greek, English and Hindi. THERE ARE FOUR ANSWERS AND THEY DENY ONE ANOTHER: what one camp demands, another forbids.
+what form does the noun take after a number? the noun climbs a ladder and RETURNS to the singular — so answers Arabic (ar), and it answers so ALONE among all. THERE ARE FOUR ANSWERS AND THEY DENY ONE ANOTHER: what one camp demands, another forbids.
+Thai rejects «*ผมเห็นหนังสือสองตัว» and requires «ผมเห็นหนังสือสองเล่ม». The mistake is not its own: it is ANOTHER CAMP'S ANSWER carried here. A READER WHO LEARNED ONE CAMP WILL BE REJECTED IN ANOTHER FOR THE VERY THING HE WAS TAUGHT.
+Hungarian rejects «*két házak vannak itt» and requires «két ház van itt». The mistake is not its own: it is ANOTHER CAMP'S ANSWER carried here. A READER WHO LEARNED ONE CAMP WILL BE REJECTED IN ANOTHER FOR THE VERY THING HE WAS TAUGHT.
+Greek rejects «*δύο βιβλίο» and requires «δύο βιβλία». The mistake is not its own: it is ANOTHER CAMP'S ANSWER carried here. A READER WHO LEARNED ONE CAMP WILL BE REJECTED IN ANOTHER FOR THE VERY THING HE WAS TAUGHT.
+Turkish rejects «*iki eviniz» and requires «iki ev». The mistake is not its own: it is ANOTHER CAMP'S ANSWER carried here. A READER WHO LEARNED ONE CAMP WILL BE REJECTED IN ANOTHER FOR THE VERY THING HE WAS TAUGHT.
+
+Turkish declares the rule form: one — and the same word stands at 8 other languages. Here it means one thing: the noun stands bare; at the neighbour's, another. ONE LINE OF RULE, SHARED BY 9 LANGUAGES, HIDES THREE LAWS, and the declaration does not tell them apart.
+the ladder of Arabic does not grow, it RETURNS: one — singular, two — a form of its own, three to ten — plural, and above ten the singular once more. Whoever read it as growth will be wrong at the number eleven.
+at two, Hebrew puts neither singular nor plural: it takes A FORM OF THE NOUN ITSELF. «*שתיים שעות» is rejected, and one must say «שעתיים» — with no numeral at all. A FORM THAT REPLACES A PHRASE IS NOT A CELL OF THE SAME TABLE.
+
+what form does the noun take after a number in fi? the noun stays SINGULAR. The rule is declared by the layer itself: {'form': 'one'}.
+what form does the noun take after a number in ar? the noun climbs a ladder and RETURNS to the singular. The rule is declared by the layer itself: {'in': [1], 'form': 'one'}; {'in': [2], 'form': 'two'}; {'in': [3, 4, 5, 6, 7, 8, 9, 10], 'form': 'many'}; {'form': 'one'}.
+what form does the noun take after a number in uk? the noun takes one of THREE forms by the tail of the number. The rule is declared by the layer itself: {'mod': 100, 'in': [11, 12, 13, 14], 'form': 'many'}; {'mod': 10, 'in': [1], 'form': 'one'}; {'mod': 10, 'in': [2, 3, 4], 'form': 'few'}; {'form': 'many'}.
+what form does the noun take after a number in ja? the noun stays SINGULAR. The rule is declared by the layer itself: {'form': 'one'}.
+
+персидский отвергает «*سه کتاب‌ها» и требует «سه کتاب». Ошибка эта не своя: она есть ОТВЕТ ДРУГОГО ЛАГЕРЯ, принесённый сюда. ЧИТАТЕЛЬ, ВЫУЧИВШИЙ ОДИН ЛАГЕРЬ, БУДЕТ ОТВЕРГНУТ В ДРУГОМ ЗА ТО САМОЕ, ЧЕМУ ЕГО НАУЧИЛИ.
+какую форму берёт имя после числа? имя встаёт во МНОЖЕСТВЕННОЕ — так отвечает хинди (hi), и так же отвечают немецкий, греческий, английский и иврит. ОТВЕТОВ ЧЕТЫРЕ, И ОНИ ДРУГ ДРУГА ОТРИЦАЮТ: то, чего требует один лагерь, другой запрещает.
+какую форму берёт имя после числа? имя остаётся в ЕДИНСТВЕННОМ — так отвечает индонезийский (id), и так же отвечают персидский, финский, венгерский, японский, тайский, турецкий, вьетнамский и китайский. ОТВЕТОВ ЧЕТЫРЕ, И ОНИ ДРУГ ДРУГА ОТРИЦАЮТ: то, чего требует один лагерь, другой запрещает.
+японский отвергает «*三冊の猫» и требует «三匹の猫». Ошибка эта не своя: она есть ОТВЕТ ДРУГОГО ЛАГЕРЯ, принесённый сюда. ЧИТАТЕЛЬ, ВЫУЧИВШИЙ ОДИН ЛАГЕРЬ, БУДЕТ ОТВЕРГНУТ В ДРУГОМ ЗА ТО САМОЕ, ЧЕМУ ЕГО НАУЧИЛИ.
+польский отвергает «*pięć koty» и требует «pięć kotów». Ошибка эта не своя: она есть ОТВЕТ ДРУГОГО ЛАГЕРЯ, принесённый сюда. ЧИТАТЕЛЬ, ВЫУЧИВШИЙ ОДИН ЛАГЕРЬ, БУДЕТ ОТВЕРГНУТ В ДРУГОМ ЗА ТО САМОЕ, ЧЕМУ ЕГО НАУЧИЛИ.
+тайский отвергает «*ผมเห็นแก้วสองเล่ม» и требует «ผมเห็นแก้วสองใบ». Ошибка эта не своя: она есть ОТВЕТ ДРУГОГО ЛАГЕРЯ, принесённый сюда. ЧИТАТЕЛЬ, ВЫУЧИВШИЙ ОДИН ЛАГЕРЬ, БУДЕТ ОТВЕРГНУТ В ДРУГОМ ЗА ТО САМОЕ, ЧЕМУ ЕГО НАУЧИЛИ.
+какую форму берёт имя после числа? имя берёт одну из ТРЁХ форм по хвосту числа — так отвечает украинский (uk), и так же отвечают польский и русский. ОТВЕТОВ ЧЕТЫРЕ, И ОНИ ДРУГ ДРУГА ОТРИЦАЮТ: то, чего требует один лагерь, другой запрещает.
+вьетнамский отвергает «*ba quả mèo» и требует «ba con mèo». Ошибка эта не своя: она есть ОТВЕТ ДРУГОГО ЛАГЕРЯ, принесённый сюда. ЧИТАТЕЛЬ, ВЫУЧИВШИЙ ОДИН ЛАГЕРЬ, БУДЕТ ОТВЕРГНУТ В ДРУГОМ ЗА ТО САМОЕ, ЧЕМУ ЕГО НАУЧИЛИ.
+арабский отвергает «*ثلاثة كتاب» и требует «ثلاثة كتب». Ошибка эта не своя: она есть ОТВЕТ ДРУГОГО ЛАГЕРЯ, принесённый сюда. ЧИТАТЕЛЬ, ВЫУЧИВШИЙ ОДИН ЛАГЕРЬ, БУДЕТ ОТВЕРГНУТ В ДРУГОМ ЗА ТО САМОЕ, ЧЕМУ ЕГО НАУЧИЛИ.
+греческий отвергает «*τρία σπίτι» и требует «τρία σπίτια». Ошибка эта не своя: она есть ОТВЕТ ДРУГОГО ЛАГЕРЯ, принесённый сюда. ЧИТАТЕЛЬ, ВЫУЧИВШИЙ ОДИН ЛАГЕРЬ, БУДЕТ ОТВЕРГНУТ В ДРУГОМ ЗА ТО САМОЕ, ЧЕМУ ЕГО НАУЧИЛИ.
+
+вьетнамский объявляет правило form: one — и то же слово стои́т ещё у 8 языков. Но здесь оно значит одно: имя стои́т при счётном слове, — а у соседа другое. ОДНА СТРОКА ПРАВИЛА, ОБЩАЯ У 9 ЯЗЫКОВ, СКРЫВАЕТ ТРИ ЗАКОНА, и объявление их не различает.
+венгерский объявляет правило form: one — и то же слово стои́т ещё у 8 языков. Но здесь оно значит одно: имя стои́т голым, — а у соседа другое. ОДНА СТРОКА ПРАВИЛА, ОБЩАЯ У 9 ЯЗЫКОВ, СКРЫВАЕТ ТРИ ЗАКОНА, и объявление их не различает.
+при двойке арабский не ставит ни единственного, ни множественного: он берёт ОСОБУЮ ФОРМУ ИМЕНИ. «*اثنان كتاب» отвергнуто, а сказать надо «كتابان» — и числительное там не нужно вовсе. ФОРМА, ЗАМЕНЯЮЩАЯ СЛОВОСОЧЕТАНИЕ, НЕ ЕСТЬ ЯЧЕЙКА ТОЙ ЖЕ ТАБЛИЦЫ.
+
+какую форму берёт имя после числа в языке pl? имя берёт одну из ТРЁХ форм по хвосту числа. Правило объявлено самим пластом: {'mod': 100, 'in': [11, 12, 13, 14], 'form': 'many'}; {'in': [1], 'form': 'one'}; {'mod': 10, 'in': [2, 3, 4], 'form': 'few'}; {'form': 'many'}.
+какую форму берёт имя после числа в языке he? имя встаёт во МНОЖЕСТВЕННОЕ. Правило объявлено самим пластом: {'in': [1], 'form': 'one'}; {'form': 'many'}.
+какую форму берёт имя после числа в языке de? имя встаёт во МНОЖЕСТВЕННОЕ. Правило объявлено самим пластом: {'in': [1], 'form': 'one'}; {'form': 'many'}.
+какую форму берёт имя после числа в языке vi? имя остаётся в ЕДИНСТВЕННОМ. Правило объявлено самим пластом: {'form': 'one'}.
+
+Persian rejects «*سه کتاب‌ها» and requires «سه کتاب». The mistake is not its own: it is ANOTHER CAMP'S ANSWER carried here. A READER WHO LEARNED ONE CAMP WILL BE REJECTED IN ANOTHER FOR THE VERY THING HE WAS TAUGHT.
+what form does the noun take after a number? the noun goes into the PLURAL — so answers Hindi (hi), and so do German, Greek, English and Hebrew. THERE ARE FOUR ANSWERS AND THEY DENY ONE ANOTHER: what one camp demands, another forbids.
+what form does the noun take after a number? the noun stays SINGULAR — so answers Indonesian (id), and so do Persian, Finnish, Hungarian, Japanese, Thai, Turkish, Vietnamese and Chinese. THERE ARE FOUR ANSWERS AND THEY DENY ONE ANOTHER: what one camp demands, another forbids.
+Japanese rejects «*三冊の猫» and requires «三匹の猫». The mistake is not its own: it is ANOTHER CAMP'S ANSWER carried here. A READER WHO LEARNED ONE CAMP WILL BE REJECTED IN ANOTHER FOR THE VERY THING HE WAS TAUGHT.
+Polish rejects «*pięć koty» and requires «pięć kotów». The mistake is not its own: it is ANOTHER CAMP'S ANSWER carried here. A READER WHO LEARNED ONE CAMP WILL BE REJECTED IN ANOTHER FOR THE VERY THING HE WAS TAUGHT.
+Thai rejects «*ผมเห็นแก้วสองเล่ม» and requires «ผมเห็นแก้วสองใบ». The mistake is not its own: it is ANOTHER CAMP'S ANSWER carried here. A READER WHO LEARNED ONE CAMP WILL BE REJECTED IN ANOTHER FOR THE VERY THING HE WAS TAUGHT.
+what form does the noun take after a number? the noun takes one of THREE forms by the tail of the number — so answers Ukrainian (uk), and so do Polish and Russian. THERE ARE FOUR ANSWERS AND THEY DENY ONE ANOTHER: what one camp demands, another forbids.
+Vietnamese rejects «*ba quả mèo» and requires «ba con mèo». The mistake is not its own: it is ANOTHER CAMP'S ANSWER carried here. A READER WHO LEARNED ONE CAMP WILL BE REJECTED IN ANOTHER FOR THE VERY THING HE WAS TAUGHT.
+Arabic rejects «*ثلاثة كتاب» and requires «ثلاثة كتب». The mistake is not its own: it is ANOTHER CAMP'S ANSWER carried here. A READER WHO LEARNED ONE CAMP WILL BE REJECTED IN ANOTHER FOR THE VERY THING HE WAS TAUGHT.
+Greek rejects «*τρία σπίτι» and requires «τρία σπίτια». The mistake is not its own: it is ANOTHER CAMP'S ANSWER carried here. A READER WHO LEARNED ONE CAMP WILL BE REJECTED IN ANOTHER FOR THE VERY THING HE WAS TAUGHT.
+
+Vietnamese declares the rule form: one — and the same word stands at 8 other languages. Here it means one thing: the noun stands with a classifier; at the neighbour's, another. ONE LINE OF RULE, SHARED BY 9 LANGUAGES, HIDES THREE LAWS, and the declaration does not tell them apart.
+Hungarian declares the rule form: one — and the same word stands at 8 other languages. Here it means one thing: the noun stands bare; at the neighbour's, another. ONE LINE OF RULE, SHARED BY 9 LANGUAGES, HIDES THREE LAWS, and the declaration does not tell them apart.
+at two, Arabic puts neither singular nor plural: it takes A FORM OF THE NOUN ITSELF. «*اثنان كتاب» is rejected, and one must say «كتابان» — with no numeral at all. A FORM THAT REPLACES A PHRASE IS NOT A CELL OF THE SAME TABLE.
+
+what form does the noun take after a number in pl? the noun takes one of THREE forms by the tail of the number. The rule is declared by the layer itself: {'mod': 100, 'in': [11, 12, 13, 14], 'form': 'many'}; {'in': [1], 'form': 'one'}; {'mod': 10, 'in': [2, 3, 4], 'form': 'few'}; {'form': 'many'}.
+what form does the noun take after a number in he? the noun goes into the PLURAL. The rule is declared by the layer itself: {'in': [1], 'form': 'one'}; {'form': 'many'}.
+what form does the noun take after a number in de? the noun goes into the PLURAL. The rule is declared by the layer itself: {'in': [1], 'form': 'one'}; {'form': 'many'}.
+what form does the noun take after a number in vi? the noun stays SINGULAR. The rule is declared by the layer itself: {'form': 'one'}.
+
+какую форму берёт имя после числа? имя остаётся в ЕДИНСТВЕННОМ — так отвечает китайский (zh), и так же отвечают персидский, финский, венгерский, индонезийский, японский, тайский, турецкий и вьетнамский. ОТВЕТОВ ЧЕТЫРЕ, И ОНИ ДРУГ ДРУГА ОТРИЦАЮТ: то, чего требует один лагерь, другой запрещает.
+персидский отвергает «*دو گل‌ها» и требует «دو گل». Ошибка эта не своя: она есть ОТВЕТ ДРУГОГО ЛАГЕРЯ, принесённый сюда. ЧИТАТЕЛЬ, ВЫУЧИВШИЙ ОДИН ЛАГЕРЬ, БУДЕТ ОТВЕРГНУТ В ДРУГОМ ЗА ТО САМОЕ, ЧЕМУ ЕГО НАУЧИЛИ.
+японский отвергает «*三台の本» и требует «三冊の本». Ошибка эта не своя: она есть ОТВЕТ ДРУГОГО ЛАГЕРЯ, принесённый сюда. ЧИТАТЕЛЬ, ВЫУЧИВШИЙ ОДИН ЛАГЕРЬ, БУДЕТ ОТВЕРГНУТ В ДРУГОМ ЗА ТО САМОЕ, ЧЕМУ ЕГО НАУЧИЛИ.
+украинский отвергает «*два кіт» и требует «два коти». Ошибка эта не своя: она есть ОТВЕТ ДРУГОГО ЛАГЕРЯ, принесённый сюда. ЧИТАТЕЛЬ, ВЫУЧИВШИЙ ОДИН ЛАГЕРЬ, БУДЕТ ОТВЕРГНУТ В ДРУГОМ ЗА ТО САМОЕ, ЧЕМУ ЕГО НАУЧИЛИ.
+какую форму берёт имя после числа? имя встаёт во МНОЖЕСТВЕННОЕ — так отвечает английский (en), и так же отвечают немецкий, греческий, иврит и хинди. ОТВЕТОВ ЧЕТЫРЕ, И ОНИ ДРУГ ДРУГА ОТРИЦАЮТ: то, чего требует один лагерь, другой запрещает.
+индонезийский отвергает «*dua buku-buku» и требует «dua buku». Ошибка эта не своя: она есть ОТВЕТ ДРУГОГО ЛАГЕРЯ, принесённый сюда. ЧИТАТЕЛЬ, ВЫУЧИВШИЙ ОДИН ЛАГЕРЬ, БУДЕТ ОТВЕРГНУТ В ДРУГОМ ЗА ТО САМОЕ, ЧЕМУ ЕГО НАУЧИЛИ.
+тайский отвергает «*ผมเห็นสองหนังสือ» и требует «ผมเห็นหนังสือสองเล่ม». Ошибка эта не своя: она есть ОТВЕТ ДРУГОГО ЛАГЕРЯ, принесённый сюда. ЧИТАТЕЛЬ, ВЫУЧИВШИЙ ОДИН ЛАГЕРЬ, БУДЕТ ОТВЕРГНУТ В ДРУГОМ ЗА ТО САМОЕ, ЧЕМУ ЕГО НАУЧИЛИ.
+какую форму берёт имя после числа? имя встаёт во МНОЖЕСТВЕННОЕ — так отвечает немецкий (de), и так же отвечают греческий, английский, иврит и хинди. ОТВЕТОВ ЧЕТЫРЕ, И ОНИ ДРУГ ДРУГА ОТРИЦАЮТ: то, чего требует один лагерь, другой запрещает.
+хинди отвергает «*दो किताब» и требует «दो किताबें». Ошибка эта не своя: она есть ОТВЕТ ДРУГОГО ЛАГЕРЯ, принесённый сюда. ЧИТАТЕЛЬ, ВЫУЧИВШИЙ ОДИН ЛАГЕРЬ, БУДЕТ ОТВЕРГНУТ В ДРУГОМ ЗА ТО САМОЕ, ЧЕМУ ЕГО НАУЧИЛИ.
+какую форму берёт имя после числа? имя берёт одну из ТРЁХ форм по хвосту числа — так отвечает русский (ru), и так же отвечают польский и украинский. ОТВЕТОВ ЧЕТЫРЕ, И ОНИ ДРУГ ДРУГА ОТРИЦАЮТ: то, чего требует один лагерь, другой запрещает.
+
+персидский объявляет правило form: one — и то же слово стои́т ещё у 8 языков. Но здесь оно значит одно: имя стои́т голым, — а у соседа другое. ОДНА СТРОКА ПРАВИЛА, ОБЩАЯ У 9 ЯЗЫКОВ, СКРЫВАЕТ ТРИ ЗАКОНА, и объявление их не различает.
+индонезийский объявляет правило form: one — и то же слово стои́т ещё у 8 языков. Но здесь оно значит одно: имя стои́т голым, — а у соседа другое. ОДНА СТРОКА ПРАВИЛА, ОБЩАЯ У 9 ЯЗЫКОВ, СКРЫВАЕТ ТРИ ЗАКОНА, и объявление их не различает.
+китайский объявляет правило form: one — и то же слово стои́т ещё у 8 языков. Но здесь оно значит одно: имя стои́т при счётном слове, — а у соседа другое. ОДНА СТРОКА ПРАВИЛА, ОБЩАЯ У 9 ЯЗЫКОВ, СКРЫВАЕТ ТРИ ЗАКОНА, и объявление их не различает.
+
+какую форму берёт имя после числа в языке hi? имя встаёт во МНОЖЕСТВЕННОЕ. Правило объявлено самим пластом: {'in': [1], 'form': 'one'}; {'form': 'many'}.
+какую форму берёт имя после числа в языке ru? имя берёт одну из ТРЁХ форм по хвосту числа. Правило объявлено самим пластом: {'mod': 100, 'in': [11, 12, 13, 14], 'form': 'many'}; {'mod': 10, 'in': [1], 'form': 'one'}; {'mod': 10, 'in': [2, 3, 4], 'form': 'few'}; {'form': 'many'}.
+какую форму берёт имя после числа в языке zh? имя остаётся в ЕДИНСТВЕННОМ. Правило объявлено самим пластом: {'form': 'one'}.
+какую форму берёт имя после числа в языке el? имя встаёт во МНОЖЕСТВЕННОЕ. Правило объявлено самим пластом: {'in': [1], 'form': 'one'}; {'form': 'many'}.
+
+what form does the noun take after a number? the noun stays SINGULAR — so answers Chinese (zh), and so do Persian, Finnish, Hungarian, Indonesian, Japanese, Thai, Turkish and Vietnamese. THERE ARE FOUR ANSWERS AND THEY DENY ONE ANOTHER: what one camp demands, another forbids.
+Persian rejects «*دو گل‌ها» and requires «دو گل». The mistake is not its own: it is ANOTHER CAMP'S ANSWER carried here. A READER WHO LEARNED ONE CAMP WILL BE REJECTED IN ANOTHER FOR THE VERY THING HE WAS TAUGHT.
+Japanese rejects «*三台の本» and requires «三冊の本». The mistake is not its own: it is ANOTHER CAMP'S ANSWER carried here. A READER WHO LEARNED ONE CAMP WILL BE REJECTED IN ANOTHER FOR THE VERY THING HE WAS TAUGHT.
+Ukrainian rejects «*два кіт» and requires «два коти». The mistake is not its own: it is ANOTHER CAMP'S ANSWER carried here. A READER WHO LEARNED ONE CAMP WILL BE REJECTED IN ANOTHER FOR THE VERY THING HE WAS TAUGHT.
+what form does the noun take after a number? the noun goes into the PLURAL — so answers English (en), and so do German, Greek, Hebrew and Hindi. THERE ARE FOUR ANSWERS AND THEY DENY ONE ANOTHER: what one camp demands, another forbids.
+Indonesian rejects «*dua buku-buku» and requires «dua buku». The mistake is not its own: it is ANOTHER CAMP'S ANSWER carried here. A READER WHO LEARNED ONE CAMP WILL BE REJECTED IN ANOTHER FOR THE VERY THING HE WAS TAUGHT.
+Thai rejects «*ผมเห็นสองหนังสือ» and requires «ผมเห็นหนังสือสองเล่ม». The mistake is not its own: it is ANOTHER CAMP'S ANSWER carried here. A READER WHO LEARNED ONE CAMP WILL BE REJECTED IN ANOTHER FOR THE VERY THING HE WAS TAUGHT.
+what form does the noun take after a number? the noun goes into the PLURAL — so answers German (de), and so do Greek, English, Hebrew and Hindi. THERE ARE FOUR ANSWERS AND THEY DENY ONE ANOTHER: what one camp demands, another forbids.
+Hindi rejects «*दो किताब» and requires «दो किताबें». The mistake is not its own: it is ANOTHER CAMP'S ANSWER carried here. A READER WHO LEARNED ONE CAMP WILL BE REJECTED IN ANOTHER FOR THE VERY THING HE WAS TAUGHT.
+what form does the noun take after a number? the noun takes one of THREE forms by the tail of the number — so answers Russian (ru), and so do Polish and Ukrainian. THERE ARE FOUR ANSWERS AND THEY DENY ONE ANOTHER: what one camp demands, another forbids.
+
+Persian declares the rule form: one — and the same word stands at 8 other languages. Here it means one thing: the noun stands bare; at the neighbour's, another. ONE LINE OF RULE, SHARED BY 9 LANGUAGES, HIDES THREE LAWS, and the declaration does not tell them apart.
+Indonesian declares the rule form: one — and the same word stands at 8 other languages. Here it means one thing: the noun stands bare; at the neighbour's, another. ONE LINE OF RULE, SHARED BY 9 LANGUAGES, HIDES THREE LAWS, and the declaration does not tell them apart.
+Chinese declares the rule form: one — and the same word stands at 8 other languages. Here it means one thing: the noun stands with a classifier; at the neighbour's, another. ONE LINE OF RULE, SHARED BY 9 LANGUAGES, HIDES THREE LAWS, and the declaration does not tell them apart.
+
+what form does the noun take after a number in hi? the noun goes into the PLURAL. The rule is declared by the layer itself: {'in': [1], 'form': 'one'}; {'form': 'many'}.
+what form does the noun take after a number in ru? the noun takes one of THREE forms by the tail of the number. The rule is declared by the layer itself: {'mod': 100, 'in': [11, 12, 13, 14], 'form': 'many'}; {'mod': 10, 'in': [1], 'form': 'one'}; {'mod': 10, 'in': [2, 3, 4], 'form': 'few'}; {'form': 'many'}.
+what form does the noun take after a number in zh? the noun stays SINGULAR. The rule is declared by the layer itself: {'form': 'one'}.
+what form does the noun take after a number in el? the noun goes into the PLURAL. The rule is declared by the layer itself: {'in': [1], 'form': 'one'}; {'form': 'many'}.
+
+индонезийский отвергает «*lima kucing-kucing» и требует «lima kucing». Ошибка эта не своя: она есть ОТВЕТ ДРУГОГО ЛАГЕРЯ, принесённый сюда. ЧИТАТЕЛЬ, ВЫУЧИВШИЙ ОДИН ЛАГЕРЬ, БУДЕТ ОТВЕРГНУТ В ДРУГОМ ЗА ТО САМОЕ, ЧЕМУ ЕГО НАУЧИЛИ.
+английский отвергает «*two book» и требует «two books». Ошибка эта не своя: она есть ОТВЕТ ДРУГОГО ЛАГЕРЯ, принесённый сюда. ЧИТАТЕЛЬ, ВЫУЧИВШИЙ ОДИН ЛАГЕРЬ, БУДЕТ ОТВЕРГНУТ В ДРУГОМ ЗА ТО САМОЕ, ЧЕМУ ЕГО НАУЧИЛИ.
+украинский отвергает «*п'ять коти» и требует «п'ять котів». Ошибка эта не своя: она есть ОТВЕТ ДРУГОГО ЛАГЕРЯ, принесённый сюда. ЧИТАТЕЛЬ, ВЫУЧИВШИЙ ОДИН ЛАГЕРЬ, БУДЕТ ОТВЕРГНУТ В ДРУГОМ ЗА ТО САМОЕ, ЧЕМУ ЕГО НАУЧИЛИ.
+японский отвергает «*本を三冊があります» и требует «本が三冊あります». Ошибка эта не своя: она есть ОТВЕТ ДРУГОГО ЛАГЕРЯ, принесённый сюда. ЧИТАТЕЛЬ, ВЫУЧИВШИЙ ОДИН ЛАГЕРЬ, БУДЕТ ОТВЕРГНУТ В ДРУГОМ ЗА ТО САМОЕ, ЧЕМУ ЕГО НАУЧИЛИ.
+какую форму берёт имя после числа? имя остаётся в ЕДИНСТВЕННОМ — так отвечает финский (fi), и так же отвечают персидский, венгерский, индонезийский, японский, тайский, турецкий, вьетнамский и китайский. ОТВЕТОВ ЧЕТЫРЕ, И ОНИ ДРУГ ДРУГА ОТРИЦАЮТ: то, чего требует один лагерь, другой запрещает.
+китайский отвергает «*三本猫» и требует «三只猫». Ошибка эта не своя: она есть ОТВЕТ ДРУГОГО ЛАГЕРЯ, принесённый сюда. ЧИТАТЕЛЬ, ВЫУЧИВШИЙ ОДИН ЛАГЕРЬ, БУДЕТ ОТВЕРГНУТ В ДРУГОМ ЗА ТО САМОЕ, ЧЕМУ ЕГО НАУЧИЛИ.
+русский отвергает «*двадцать два час» и требует «двадцать два часа». Ошибка эта не своя: она есть ОТВЕТ ДРУГОГО ЛАГЕРЯ, принесённый сюда. ЧИТАТЕЛЬ, ВЫУЧИВШИЙ ОДИН ЛАГЕРЬ, БУДЕТ ОТВЕРГНУТ В ДРУГОМ ЗА ТО САМОЕ, ЧЕМУ ЕГО НАУЧИЛИ.
+хинди отвергает «*पाँच कुर्सी» и требует «पाँच कुर्सियाँ». Ошибка эта не своя: она есть ОТВЕТ ДРУГОГО ЛАГЕРЯ, принесённый сюда. ЧИТАТЕЛЬ, ВЫУЧИВШИЙ ОДИН ЛАГЕРЬ, БУДЕТ ОТВЕРГНУТ В ДРУГОМ ЗА ТО САМОЕ, ЧЕМУ ЕГО НАУЧИЛИ.
+немецкий отвергает «*zwei buch» и требует «zwei bücher». Ошибка эта не своя: она есть ОТВЕТ ДРУГОГО ЛАГЕРЯ, принесённый сюда. ЧИТАТЕЛЬ, ВЫУЧИВШИЙ ОДИН ЛАГЕРЬ, БУДЕТ ОТВЕРГНУТ В ДРУГОМ ЗА ТО САМОЕ, ЧЕМУ ЕГО НАУЧИЛИ.
+какую форму берёт имя после числа? имя остаётся в ЕДИНСТВЕННОМ — так отвечает турецкий (tr), и так же отвечают персидский, финский, венгерский, индонезийский, японский, тайский, вьетнамский и китайский. ОТВЕТОВ ЧЕТЫРЕ, И ОНИ ДРУГ ДРУГА ОТРИЦАЮТ: то, чего требует один лагерь, другой запрещает.
+
+финский объявляет правило form: one — и то же слово стои́т ещё у 8 языков. Но здесь оно значит одно: имя берёт партитив, — а у соседа другое. ОДНА СТРОКА ПРАВИЛА, ОБЩАЯ У 9 ЯЗЫКОВ, СКРЫВАЕТ ТРИ ЗАКОНА, и объявление их не различает.
+японский объявляет правило form: one — и то же слово стои́т ещё у 8 языков. Но здесь оно значит одно: имя стои́т при счётном слове, — а у соседа другое. ОДНА СТРОКА ПРАВИЛА, ОБЩАЯ У 9 ЯЗЫКОВ, СКРЫВАЕТ ТРИ ЗАКОНА, и объявление их не различает.
+
+какую форму берёт имя после числа в языке hu? имя остаётся в ЕДИНСТВЕННОМ. Правило объявлено самим пластом: {'form': 'one'}.
+какую форму берёт имя после числа в языке en? имя встаёт во МНОЖЕСТВЕННОЕ. Правило объявлено самим пластом: {'in': [1], 'form': 'one'}; {'form': 'many'}.
+какую форму берёт имя после числа в языке th? имя остаётся в ЕДИНСТВЕННОМ. Правило объявлено самим пластом: {'form': 'one'}.
+
+Indonesian rejects «*lima kucing-kucing» and requires «lima kucing». The mistake is not its own: it is ANOTHER CAMP'S ANSWER carried here. A READER WHO LEARNED ONE CAMP WILL BE REJECTED IN ANOTHER FOR THE VERY THING HE WAS TAUGHT.
+English rejects «*two book» and requires «two books». The mistake is not its own: it is ANOTHER CAMP'S ANSWER carried here. A READER WHO LEARNED ONE CAMP WILL BE REJECTED IN ANOTHER FOR THE VERY THING HE WAS TAUGHT.
+Ukrainian rejects «*п'ять коти» and requires «п'ять котів». The mistake is not its own: it is ANOTHER CAMP'S ANSWER carried here. A READER WHO LEARNED ONE CAMP WILL BE REJECTED IN ANOTHER FOR THE VERY THING HE WAS TAUGHT.
+Japanese rejects «*本を三冊があります» and requires «本が三冊あります». The mistake is not its own: it is ANOTHER CAMP'S ANSWER carried here. A READER WHO LEARNED ONE CAMP WILL BE REJECTED IN ANOTHER FOR THE VERY THING HE WAS TAUGHT.
+what form does the noun take after a number? the noun stays SINGULAR — so answers Finnish (fi), and so do Persian, Hungarian, Indonesian, Japanese, Thai, Turkish, Vietnamese and Chinese. THERE ARE FOUR ANSWERS AND THEY DENY ONE ANOTHER: what one camp demands, another forbids.
+Chinese rejects «*三本猫» and requires «三只猫». The mistake is not its own: it is ANOTHER CAMP'S ANSWER carried here. A READER WHO LEARNED ONE CAMP WILL BE REJECTED IN ANOTHER FOR THE VERY THING HE WAS TAUGHT.
+Russian rejects «*двадцать два час» and requires «двадцать два часа». The mistake is not its own: it is ANOTHER CAMP'S ANSWER carried here. A READER WHO LEARNED ONE CAMP WILL BE REJECTED IN ANOTHER FOR THE VERY THING HE WAS TAUGHT.
+Hindi rejects «*पाँच कुर्सी» and requires «पाँच कुर्सियाँ». The mistake is not its own: it is ANOTHER CAMP'S ANSWER carried here. A READER WHO LEARNED ONE CAMP WILL BE REJECTED IN ANOTHER FOR THE VERY THING HE WAS TAUGHT.
+German rejects «*zwei buch» and requires «zwei bücher». The mistake is not its own: it is ANOTHER CAMP'S ANSWER carried here. A READER WHO LEARNED ONE CAMP WILL BE REJECTED IN ANOTHER FOR THE VERY THING HE WAS TAUGHT.
+what form does the noun take after a number? the noun stays SINGULAR — so answers Turkish (tr), and so do Persian, Finnish, Hungarian, Indonesian, Japanese, Thai, Vietnamese and Chinese. THERE ARE FOUR ANSWERS AND THEY DENY ONE ANOTHER: what one camp demands, another forbids.
+
+Finnish declares the rule form: one — and the same word stands at 8 other languages. Here it means one thing: the noun takes the partitive; at the neighbour's, another. ONE LINE OF RULE, SHARED BY 9 LANGUAGES, HIDES THREE LAWS, and the declaration does not tell them apart.
+Japanese declares the rule form: one — and the same word stands at 8 other languages. Here it means one thing: the noun stands with a classifier; at the neighbour's, another. ONE LINE OF RULE, SHARED BY 9 LANGUAGES, HIDES THREE LAWS, and the declaration does not tell them apart.
+
+what form does the noun take after a number in hu? the noun stays SINGULAR. The rule is declared by the layer itself: {'form': 'one'}.
+what form does the noun take after a number in en? the noun goes into the PLURAL. The rule is declared by the layer itself: {'in': [1], 'form': 'one'}; {'form': 'many'}.
+what form does the noun take after a number in th? the noun stays SINGULAR. The rule is declared by the layer itself: {'form': 'one'}.
+
+какую форму берёт имя после числа? имя остаётся в ЕДИНСТВЕННОМ — так отвечает венгерский (hu), и так же отвечают персидский, финский, индонезийский, японский, тайский, турецкий, вьетнамский и китайский. ОТВЕТОВ ЧЕТЫРЕ, И ОНИ ДРУГ ДРУГА ОТРИЦАЮТ: то, чего требует один лагерь, другой запрещает.
+индонезийский отвергает «*tiga rumah-rumah» и требует «tiga rumah». Ошибка эта не своя: она есть ОТВЕТ ДРУГОГО ЛАГЕРЯ, принесённый сюда. ЧИТАТЕЛЬ, ВЫУЧИВШИЙ ОДИН ЛАГЕРЬ, БУДЕТ ОТВЕРГНУТ В ДРУГОМ ЗА ТО САМОЕ, ЧЕМУ ЕГО НАУЧИЛИ.
+какую форму берёт имя после числа? имя берёт одну из ТРЁХ форм по хвосту числа — так отвечает польский (pl), и так же отвечают русский и украинский. ОТВЕТОВ ЧЕТЫРЕ, И ОНИ ДРУГ ДРУГА ОТРИЦАЮТ: то, чего требует один лагерь, другой запрещает.
+какую форму берёт имя после числа? имя остаётся в ЕДИНСТВЕННОМ — так отвечает тайский (th), и так же отвечают персидский, финский, венгерский, индонезийский, японский, турецкий, вьетнамский и китайский. ОТВЕТОВ ЧЕТЫРЕ, И ОНИ ДРУГ ДРУГА ОТРИЦАЮТ: то, чего требует один лагерь, другой запрещает.
+турецкий отвергает «*beş kediler» и требует «beş kedi». Ошибка эта не своя: она есть ОТВЕТ ДРУГОГО ЛАГЕРЯ, принесённый сюда. ЧИТАТЕЛЬ, ВЫУЧИВШИЙ ОДИН ЛАГЕРЬ, БУДЕТ ОТВЕРГНУТ В ДРУГОМ ЗА ТО САМОЕ, ЧЕМУ ЕГО НАУЧИЛИ.
+какую форму берёт имя после числа? имя остаётся в ЕДИНСТВЕННОМ — так отвечает вьетнамский (vi), и так же отвечают персидский, финский, венгерский, индонезийский, японский, тайский, турецкий и китайский. ОТВЕТОВ ЧЕТЫРЕ, И ОНИ ДРУГ ДРУГА ОТРИЦАЮТ: то, чего требует один лагерь, другой запрещает.
+какую форму берёт имя после числа? имя встаёт во МНОЖЕСТВЕННОЕ — так отвечает греческий (el), и так же отвечают немецкий, английский, иврит и хинди. ОТВЕТОВ ЧЕТЫРЕ, И ОНИ ДРУГ ДРУГА ОТРИЦАЮТ: то, чего требует один лагерь, другой запрещает.
+английский отвергает «*three childs» и требует «three children». Ошибка эта не своя: она есть ОТВЕТ ДРУГОГО ЛАГЕРЯ, принесённый сюда. ЧИТАТЕЛЬ, ВЫУЧИВШИЙ ОДИН ЛАГЕРЬ, БУДЕТ ОТВЕРГНУТ В ДРУГОМ ЗА ТО САМОЕ, ЧЕМУ ЕГО НАУЧИЛИ.
+финский отвергает «*Minä näen kaksi talo» и требует «Minä näen kaksi taloa». Ошибка эта не своя: она есть ОТВЕТ ДРУГОГО ЛАГЕРЯ, принесённый сюда. ЧИТАТЕЛЬ, ВЫУЧИВШИЙ ОДИН ЛАГЕРЬ, БУДЕТ ОТВЕРГНУТ В ДРУГОМ ЗА ТО САМОЕ, ЧЕМУ ЕГО НАУЧИЛИ.
+
+иврит отвергает «*שלוש ספרים» и требует «שלושה ספרים» — и НЕ ИМЯ здесь меняет форму, а ЧИСЛИТЕЛЬНОЕ: оно сходится с именем, а не имя с ним. Кто ищет ошибку в имени, ищет там, где её нет: имя стои́т верно, и правило идёт ОБРАТНО.
+тайский объявляет правило form: one — и то же слово стои́т ещё у 8 языков. Но здесь оно значит одно: имя стои́т при счётном слове, — а у соседа другое. ОДНА СТРОКА ПРАВИЛА, ОБЩАЯ У 9 ЯЗЫКОВ, СКРЫВАЕТ ТРИ ЗАКОНА, и объявление их не различает.
+
+какую форму берёт имя после числа в языке fa? имя остаётся в ЕДИНСТВЕННОМ. Правило объявлено самим пластом: {'form': 'one'}.
+какую форму берёт имя после числа в языке id? имя остаётся в ЕДИНСТВЕННОМ. Правило объявлено самим пластом: {'form': 'one'}.
+какую форму берёт имя после числа в языке tr? имя остаётся в ЕДИНСТВЕННОМ. Правило объявлено самим пластом: {'form': 'one'}.
+
+what form does the noun take after a number? the noun stays SINGULAR — so answers Hungarian (hu), and so do Persian, Finnish, Indonesian, Japanese, Thai, Turkish, Vietnamese and Chinese. THERE ARE FOUR ANSWERS AND THEY DENY ONE ANOTHER: what one camp demands, another forbids.
+Indonesian rejects «*tiga rumah-rumah» and requires «tiga rumah». The mistake is not its own: it is ANOTHER CAMP'S ANSWER carried here. A READER WHO LEARNED ONE CAMP WILL BE REJECTED IN ANOTHER FOR THE VERY THING HE WAS TAUGHT.
+what form does the noun take after a number? the noun takes one of THREE forms by the tail of the number — so answers Polish (pl), and so do Russian and Ukrainian. THERE ARE FOUR ANSWERS AND THEY DENY ONE ANOTHER: what one camp demands, another forbids.
+what form does the noun take after a number? the noun stays SINGULAR — so answers Thai (th), and so do Persian, Finnish, Hungarian, Indonesian, Japanese, Turkish, Vietnamese and Chinese. THERE ARE FOUR ANSWERS AND THEY DENY ONE ANOTHER: what one camp demands, another forbids.
+Turkish rejects «*beş kediler» and requires «beş kedi». The mistake is not its own: it is ANOTHER CAMP'S ANSWER carried here. A READER WHO LEARNED ONE CAMP WILL BE REJECTED IN ANOTHER FOR THE VERY THING HE WAS TAUGHT.
+what form does the noun take after a number? the noun stays SINGULAR — so answers Vietnamese (vi), and so do Persian, Finnish, Hungarian, Indonesian, Japanese, Thai, Turkish and Chinese. THERE ARE FOUR ANSWERS AND THEY DENY ONE ANOTHER: what one camp demands, another forbids.
+what form does the noun take after a number? the noun goes into the PLURAL — so answers Greek (el), and so do German, English, Hebrew and Hindi. THERE ARE FOUR ANSWERS AND THEY DENY ONE ANOTHER: what one camp demands, another forbids.
+English rejects «*three childs» and requires «three children». The mistake is not its own: it is ANOTHER CAMP'S ANSWER carried here. A READER WHO LEARNED ONE CAMP WILL BE REJECTED IN ANOTHER FOR THE VERY THING HE WAS TAUGHT.
+Finnish rejects «*Minä näen kaksi talo» and requires «Minä näen kaksi taloa». The mistake is not its own: it is ANOTHER CAMP'S ANSWER carried here. A READER WHO LEARNED ONE CAMP WILL BE REJECTED IN ANOTHER FOR THE VERY THING HE WAS TAUGHT.
+
+Hebrew rejects «*שלוש ספרים» and requires «שלושה ספרים» — and it is NOT THE NOUN that changes form here but THE NUMERAL: it must agree with the noun, not the noun with it. Whoever looks for the error in the noun finds nothing: the noun stands right, and the rule runs backwards.
+Thai declares the rule form: one — and the same word stands at 8 other languages. Here it means one thing: the noun stands with a classifier; at the neighbour's, another. ONE LINE OF RULE, SHARED BY 9 LANGUAGES, HIDES THREE LAWS, and the declaration does not tell them apart.
+
+what form does the noun take after a number in fa? the noun stays SINGULAR. The rule is declared by the layer itself: {'form': 'one'}.
+what form does the noun take after a number in id? the noun stays SINGULAR. The rule is declared by the layer itself: {'form': 'one'}.
+what form does the noun take after a number in tr? the noun stays SINGULAR. The rule is declared by the layer itself: {'form': 'one'}.

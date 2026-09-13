@@ -29,67 +29,9 @@ from layer import emit_grouped  # noqa: E402
 ЦЕЛЬ = "datasets/genesis_shares_percent.txt"
 
 
-def _доля(j):
-    """The (numerator, denominator) of show j — the walk covers EVERY declared
-    pair before repeating, so no word of a fraction stays with two shows while
-    another has ten (holon 03.09: «one tenth», «sevenths», «ninth» were refused
-    by the market for want of LAW² different shows per WORD)."""
-    return F.ДОЛИ[(j * 7) % len(F.ДОЛИ)]
-
-
-def _доля_слова(j):
-    """Every DECLARED WORD in turn: the pairs are walked so that each word of a
-    fraction gets its own shows, not only the pairs of small denominators."""
-    return F.ДОЛИ[j % len(F.ДОЛИ)]
-
-
-def _процент(j):
-    """(p, N) with N·p divisible by 100 — the answer whole: N is a multiple of
-    100 ÷ gcd(p, 100)."""
-    p = F.ПРОЦЕНТЫ[j % len(F.ПРОЦЕНТЫ)]
-    шаг = 100 // math.gcd(p, 100)
-    return p, шаг * (2 + (j * 3) % 12)
-
-
+# ПЕРЕБОР ЖИВЁТ В ДОМЕ (13.09) ВМЕСТЕ СО СВОИМИ ПОМОЩНИКАМИ.
 def язык_группа(шаг, язык):
-    вон = []
-    j = шаг * 29
-    # the share of a quantity: eight per pass, statement and question in turn
-    for i in range(36):
-        n, d = _доля_слова(шаг * 36 + i)
-        q = 2 + (шаг * 5 + i * 7 + j) % 25
-        while q * n == d or q * d == d:   # the given must not be the denominator itself
-            q += 1
-        вон.append(F.страница(язык, "доля", n=n, d=d, q=q, вопрос=(i + шаг) % 2 == 1))
-    j += 8
-    # the percent of a quantity: six per pass
-    for i in range(6):
-        p, N = _процент(j + i)
-        вон.append(F.страница(язык, "проц", p=p, N=N, вопрос=(i + шаг) % 2 == 0))
-    j += 6
-    # the complement («three quarters have; 20 do not»): five per pass
-    for i in range(5):
-        n, d = _доля(j + i * 3)
-        if d - n < 1:
-            n, d = 1, d
-        q = 2 + (шаг * 7 + i * 5 + j) % 18
-        while q * n == d:                 # the given must not be the denominator
-            q += 1
-        вон.append(F.страница(язык, "дополн", n=n, d=d, q=q, вещь=(шаг + i) % 5))
-    j += 4
-    # the number from its share: five per pass (mass 20+ buys depth-3 chains)
-    for i in range(36):
-        n, d = _доля_слова(шаг * 36 + i + 20)
-        q = 2 + (шаг * 3 + i * 11 + j) % 20
-        while q * n == d:                 # the share given must not be the denominator
-            q += 1
-        вон.append(F.страница(язык, "число", n=n, d=d, q=q))
-    j += 3
-    # the number from its percent: five per pass
-    for i in range(5):
-        p, N = _процент(j + i * 4)
-        вон.append(F.страница(язык, "проц_обр", p=p, N=N))
-    return вон
+    return [с for с, _род in F.перебор(шаг, язык)]
 
 
 def pass_groups(шаг):

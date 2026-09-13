@@ -1,11 +1,11 @@
-# суд	судит	один	ломтей 303/303	строк 438022
-langcount	127619	0
+# суд	судит	один	ломтей 310/310	строк 440554
+langcount	127647	0
 langform	83433	0
-engram	42411	0
+engram	42439	0
 script	20966	0
 rowframe	19849	0
 langmath	17736	0
-indu	9009	0
+indu	9027	0
 cross	8786	0
 houseshows	8480	0
 summaryforms	6102	0
@@ -15,7 +15,7 @@ beforetails	3600	0
 joints	3365	0
 discountroad	2808	0
 nomention	2160	0
-article	2029	0
+article	2040	0
 relations_story	1989	0
 shares_percent	1400	0
 ceilfloor	1340	0
@@ -114,7 +114,7 @@ numline	82	52
 homo	62	55
 quantforms	648	56
 measure	128	60
-rugram	26455	70
+rugram	26463	70
 median	80	70
 measureprec	96	72
 swclass	80	75
@@ -134,12 +134,14 @@ chance	224	112
 serestar	124	112
 turn	112	112
 both	186	114
+svgender	120	116
+persondist	116	116
 fipart	150	117
 unit_counts	720	120
 measure_langs	462	120
 neg	442	120
 onestep	350	120
-zhclass	210	123
+zhclass	210	129
 zerodiv	346	132
 nlarticle	132	132
 squnit	260	135
@@ -169,10 +171,13 @@ viclass	250	219
 orderlaw	280	220
 physlaw	830	221
 primewalk	392	224
+romgender	262	246
+huobj	260	260
 placeval	1220	264
 share	2396	270
 degrees	270	270
 dec	388	273
+deacc	280	280
 compare_mult	2797	284
 action_pages	5341	290
 mixedunits	882	300
@@ -188,10 +193,12 @@ clockwords	378	378
 cyber	1288	388
 letters	414	388
 doctree	516	408
+personplace	434	434
 dosupport	660	440
 search_langs	1280	452
 calendar	902	466
 copula	500	500
+refusalwhy	606	541
 opslaw	710	546
 stenogram	550	550
 dataformat	640	560
@@ -217,7 +224,7 @@ wordorder	876	876
 notation	1254	894
 program	1078	902
 inquiry_es_it	1480	904
-genderverb	941	941
+genderverb	945	945
 topics	1118	980
 inquiry_pl_tr	1537	1005
 case	1066	1030
@@ -231,9 +238,9 @@ place	1296	1296
 episode	10226	1380
 planforms	2520	1420
 genus_diff	1485	1437
-opforms	5346	1512
 machine	1846	1546
 behavior	1635	1559
+opforms	5796	1638
 inquiry	3915	1676
 everyday	4556	1682
 algo	2990	1744
@@ -248,7 +255,7 @@ dialogue	2052	2043
 space	2301	2088
 definitions	2141	2132
 linalg	3726	2176
-arith	169630	2188
+arith	170002	2188
 markdown	3848	2588
 numberline	5330	2647
 markup	3830	2690
