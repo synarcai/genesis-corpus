@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 327 законов
+# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 328 законов
 
 Собран из докстрингов и комментариев `tools`, `courts`, `scripts` орудием
 `tools/law_atlas.py`. Взяты ОБЩИЕ законы — те, что держатся не одним файлом.
@@ -6,13 +6,13 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 5483 разных законов на 6673 упоминаний; сказанных однажды — 5156, и они остаются при своём месте.
+Всего в дереве 5498 разных законов на 6692 упоминаний; сказанных однажды — 5170, и они остаются при своём месте.
 
 
-## Держат 72 файлов
+## Держат 73 файлов
 
 - **ПРОБА НА ЗАВЕДОМО ИЗВЕСТНОМ**  
-  scripts/agree_skew.py, scripts/agree_traps.py, scripts/article_sound.py, scripts/asked_uncounted.py, scripts/bench_leak.py, scripts/broken_law.py … и ещё 66
+  scripts/agree_skew.py, scripts/agree_traps.py, scripts/article_sound.py, scripts/asked_uncounted.py, scripts/bench_leak.py, scripts/broken_law.py … и ещё 67
 
 ## Держат 70 файлов
 
@@ -24,10 +24,10 @@
 - **СУД, ПИШУЩИЙ ЗАКОН ВТОРОЙ РАЗ, РАСХОДИТСЯ С ДОМОМ НА ПЕРВОЙ ЖЕ ПРАВКЕ**  
   courts/abs_court.py, courts/addshare_court.py, courts/amend_court.py, courts/angle_court.py, courts/both_court.py, courts/bound_court.py … и ещё 62
 
-## Держат 64 файлов
+## Держат 65 файлов
 
 - **ПРОБА ИДЁТ ПРИ ВСЯКОМ ПРОГОНЕ, А НЕ ПО ПРОСЬБЕ**  
-  scripts/agree_skew.py, scripts/agree_traps.py, scripts/article_sound.py, scripts/asked_uncounted.py, scripts/bench_leak.py, scripts/broken_law.py … и ещё 58
+  scripts/agree_skew.py, scripts/agree_traps.py, scripts/article_sound.py, scripts/asked_uncounted.py, scripts/bench_leak.py, scripts/broken_law.py … и ещё 59
 
 ## Держат 44 файлов
 
@@ -317,6 +317,8 @@
   tools/jaclassforms.py, tools/viclassforms.py, tools/zhclassforms.py
 - **ЧТО СУД НЕ ЧИТАЕТ, ТО ОН ПОДПИСЫВАЕТ**  
   scripts/sentence_cover.py, scripts/verdict_cover.py, tools/panel.py
+- **ЭТОТ ПРИБОР ЗЕЛЕНЕЕТ ОТ НУЛЯ НАХОДОК**  
+  scripts/asked_uncounted.py, scripts/lawfirst_court.py, scripts/refusal_only_word.py
 
 ## Держат 2 файлов
 
@@ -720,6 +722,8 @@
   courts/measureprec_court.py, tools/measureprecforms.py
 - **ЧИСЛО ЧИТАЕТСЯ СО СВОИМ ЗНАКОМ**  
   courts/orderlaw_court.py, tools/orderlawforms.py
+- **ЧИСЛО ЭТО — ОТЧЁТ, А НЕ РУБЕЖ, И СКАЗАНО ПОЧЕМУ**  
+  scripts/refusal_only_word.py, scripts/refusal_reason.py
 - **ЧИСТКА СТРУКТУРНАЯ, А НЕ СЛОВАРНАЯ**  
   tools/shelf_fetch.py, tools/shelf_open.py
 - **ЧТО ПИШЕТ ЭТОТ ДОМ, И ПОЧЕМУ ИМЕННО ТАК**  
@@ -730,8 +734,6 @@
   courts/dosupport_court.py, courts/serestar_court.py
 - **ЭТОТ ПОВОД ОКАЗАЛСЯ ЛОЖЕН, И ЭТО ЗАПИСАНО, А НЕ ЗАМАЗАНО**  
   tools/chanceforms.py, tools/leverforms.py
-- **ЭТОТ ПРИБОР ЗЕЛЕНЕЕТ ОТ НУЛЯ НАХОДОК**  
-  scripts/asked_uncounted.py, scripts/lawfirst_court.py
 - **ЯЗЫК ЕСТЬ ЧАСТЬ ФАКТА, А НЕ ЕГО ОДЕЖДА**  
   tools/gen_genesis_inquiry_de_fr.py, tools/gen_genesis_inquiry_pt_nl.py
 - **ЯЗЫК, НА КОТОРОМ НАПИСАНЫ ВСЕ ОСТАЛЬНЫЕ**  
