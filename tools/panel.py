@@ -405,6 +405,7 @@ recache.установить()
            # частичном падеже, а не множественное, — падеж работает там, где сосед берёт число.
            "fipart_court",
            "personplace_court",
+           "persondist_court",
            "huobj_court",
            "refusalwhy_court",
            "deacc_court",

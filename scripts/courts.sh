@@ -233,7 +233,7 @@ COURTS=("courts/arith_court.py" "courts/algo_court.py"
         "courts/jaclass_court.py"
         # ДВАДЦАТЬ ПЕРВЫЙ ДОМ: финский партитив. Падеж и число суть разные вещи, и после
         # числа работает падеж: «kaksi taloa» — единственное, а не множественное.
-        "courts/fipart_court.py" "courts/personplace_court.py" "courts/huobj_court.py" "courts/refusalwhy_court.py" "courts/deacc_court.py" "courts/svgender_court.py" "courts/romgender_court.py"
+        "courts/fipart_court.py" "courts/personplace_court.py" "courts/persondist_court.py" "courts/huobj_court.py" "courts/refusalwhy_court.py" "courts/deacc_court.py" "courts/svgender_court.py" "courts/romgender_court.py"
         # СЕДЬМОЙ ДОМ: немецкое множественное без одного правила — ловушка на
         # НЕЗНАНИИ, и потому она стои́т после ловушки на переносе.
         "courts/deplur_court.py"

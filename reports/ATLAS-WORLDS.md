@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 309 миров, 440342 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 310 миров, 440554 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -320,7 +320,7 @@
 
 ## АКТ «compare» — сравнить двоих: больше, меньше, во столько же раз
 
-Миров 60, строк 22136.
+Миров 61, строк 22344.
 
 - **`cmpframes`** (6480 строк; recompute, whole_only)  
   **FRAMES OF COMPARISON** — the largest class of the reader's lies on the held-out key (05.09: twelve of fifteen — «9 flexiones más que», «in più/in meno di», «meer/minder dan», «więcej/mniej niż»: the marker is not bought and the answer takes a neighbouring…
@@ -338,10 +338,10 @@
   **THE LAWS OF OPERATION** — AND THE MAIN THING IN THIS HOUSE IS THE LAW'S BOUNDARY. Measured 11.09 across the 234 show worlds: «переместительный», «commutative» — NONE; «сочетательный», «associative» — NONE; «распределительный», «раскрыть скобки», «distribu…
 - **`dosupport`** (660 строк; declared, declared_table_only)  
   **АНГЛИЙСКОЕ «do»** — СВОД СПРАШИВАЛ ИМ ДЕСЯТЬ ТЫСЯЧ РАЗ И НИ РАЗУ НЕ СКАЗАЛ, ОТКУДА ОНО ВЗЯЛОСЬ. Замер 12.09 ПО СВОДУ, ПОРОЗНЬ: «how many … do/does …» 10 489 строк, «did …» 5 317, «are you / can you …» 1 350 (и здесь «do» НЕ СТОИ́Т), «who has / who is …» 3…
+- **`personplace`** (434 строк; declared, declared_table_only)  
+  **МЕСТО ЛИЦА В ГЛАГОЛЕ** — ДЕВЯТЬ ПЛАСТОВ ОТВЕРГАЮТ «Я + ОН-ФОРМУ» И НИ ОДИН НЕ ГОВОРИТ, ГДЕ В СЛОВЕ ЛИЦО. Замер 13.09 по пластам грузинского, арабского, амхарского, греческого, персидского, тамильского, хинди, шведского и древнееврейского: отказы «¬ მე წერ…
 - **`dist`** (400 строк; recompute, whole_only, exact_only)  
   **ТРИ ЗАКОНА РАССТОЯНИЯ** — ЧТО ДЕЛАЕТ РАССТОЯНИЕ РАССТОЯНИЕМ. Свод считал расстояния сотнями страниц («расстояние между (−1, 2) и (−16, 10) — 17: 15² + 8² = 17²») и нигде не называл их законов: замер 12.09 нашёл симметрию показанной, а «ноль только до себя…
-- **`personplace`** (342 строк; declared, declared_table_only)  
-  **МЕСТО ЛИЦА В ГЛАГОЛЕ** — ДЕВЯТЬ ПЛАСТОВ ОТВЕРГАЮТ «Я + ОН-ФОРМУ» И НИ ОДИН НЕ ГОВОРИТ, ГДЕ В СЛОВЕ ЛИЦО. Замер 13.09 по пластам грузинского, арабского, амхарского, греческого, персидского, тамильского, хинди, шведского и древнееврейского: отказы «¬ მე წერ…
 - **`orderlaw`** (280 строк; recompute, whole_only, exact_only)  
   **ЗАКОНЫ ПОРЯДКА** — СВОД СРАВНИВАЛ ЧИСЛА ДЕВЯТЬ ТЫСЯЧ РАЗ И НИ РАЗУ НЕ СДЕЛАЛ ВЫВОДА. Замер 12.09 ПО СВОДУ: 980 строк несут цепь «a меньше b, и b меньше c» («билет 4 стои́т между 1 и 7: 1 меньше 4, и 4 меньше 7»), и НИ ОДНА не договаривает «значит, 1 меньш…
 - **`deacc`** (280 строк; declared, declared_table_only)  
@@ -390,6 +390,8 @@
   **ДВА «БЫТЬ»** — СВОД СТАВИЛ «es» ДВАДЦАТЬ ТЫСЯЧ РАЗ И НИ РАЗУ НЕ СКАЗАЛ, ЧТО РЯДОМ ЖИВЁТ ВТОРОЙ ГЛАГОЛ. Замер 12.09 ПО СВОДУ, ПОРОЗНЬ: «es» 20 316 раз (14 531 строка), «está» 2 731 раз (1 886 строк), португальское «é» 11 149 раз; строк, где «ser» и «estar»…
 - **`svgender`** (120 строк; declared, declared_table_only)  
   **ШВЕДСКИЙ РОД** — СВОД ОТВЕРГАЛ «*ett bok» И «*en hus» И НЕ СКАЗАЛ, ЧТО РОДОВ ДВА. Замер 13.09 ПО ПЛАСТУ ШВЕДСКОГО (3 215 строк), и шёл он мерой: шведский встал ВТОРЫМ из семидесяти восьми необъяснённых отказов — 543 родственных строки.
+- **`persondist`** (116 строк; declared, declared_table_only)  
+  **РАЗЛИЧЕНИЕ ЛИЦА** — СКОЛЬКО ИЗ ШЕСТИ ЛИЦ ГЛАГОЛ РАЗЛИЧАЕТ СОБОЮ, И СВОД НЕ СКАЗАЛ НИ РАЗУ. Замер 13.09 показал ДЕСЯТЬ ЯЗЫКОВ ПОДРЯД с одним и тем же необъяснённым отказом — местоимение одного лица при форме другого: «*yo cantas», «*je parles», «*io parli»…
 - **`turn`** (112 строк; recompute, whole_only, exact_only)  
   **СТОРОНЫ И ПОВОРОТЫ** — «НАЛЕВО» ЕСТЬ НЕ СТОРОНА СВЕТА, А ПОВОРОТ. Замер 12.09 по всему своду в 39 МБ: слово «север» встречается ДВАЖДЫ, «повернуть налево» — НИ РАЗУ; свод вращает решётки на 90° в двух мирах и не говорит ни слова о том, куда смотрит поверн…
 - **`negquant`** (110 строк; recompute, whole_only, exact_only)  
@@ -445,7 +447,7 @@
 
 ## АКТ «inflect» — поставить слово в форму по объявленному правилу
 
-Миров 34, строк 109701.
+Миров 34, строк 109705.
 
 - **`lang_de`** (8274 строк; declared, whole_only)  
   **THE GERMAN LAYER** — FOUR CASES CARRIED BY THE ARTICLE, EACH IN ITS OWN FRAME. Declared until 12.09 in nine words.
@@ -505,7 +507,7 @@
   **amharic: the sixth script, ethiopic, where a sign carries the consonant TOGETHER WITH its vowel** — not a mark beside it but part of the sign itself, and there are some 270 of them (tier 1: structure green, forms agree with the pack's own rules)
 - **`lang_ta`** (1830 строк; declared, tier1_unverified, whole_only)  
   **tamil: an abugida like hindi but with its OWN marks** — the direct second test of the law that a combining mark is a letter by office; it passed with plain spaced cutting and NO change to the instrument.
-- **`genderverb`** (999 строк; recompute, additive_only)  
+- **`genderverb`** (1003 строк; recompute, additive_only)  
   **the gender ending of the past tense: «сделал + а = сделала», the ending named as a gender and TIED TO THE BEARER'S declared gender** — the place of the bearer where the subject is dropped (ru and pl only: seven of nine languages have no gender in the past)
 - **`unit_counts`** (720 строк; declared, whole_only)  
   **COUNTED UNITS** — «1 day, 2 days, 5 days» IN ONE FRAME (32's tomograph of the rate, 03.09): the market of count forms buys the pair «day / days» only inside ONE frame carrying at least three different numbers, and the corpus said «worked on 1 day» in one …
@@ -677,5 +679,5 @@
     ОБЪЯВЛЕНИЕ В ТРИДЦАТЬ ЗНАКОВ НЕ ЛЖЁТ И НЕ ГОВОРИТ: читатель узнаёт имя мира
     и ничего сверх него.
 
-Миров: **0** из 309.
+Миров: **0** из 310.
 
