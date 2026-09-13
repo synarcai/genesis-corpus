@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 312 миров, 442926 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 312 миров, 443386 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -11,7 +11,7 @@
 
 ## АКТ «recount» — пересчитать величину: строка утверждает число
 
-Миров 152, строк 229496.
+Миров 152, строк 229956.
 
 - **`links`** (17566 строк; declared, whole_only)  
   **CONVERSATION LINKS** — a question whose subject stands in the PREVIOUS reply (the owner's order, 04.09, item 5; the BESEDA band measures this genus mute 15 of 15).
@@ -95,6 +95,8 @@
   **the VALUE ASKED IN TEN LANGUAGES (the owner's word: every language in surplus; the svod asked the value of an expression only in en/ru): «was ist 3 + 4? 3 + 4 = 7.», «wie viel ist 12 − 5? …», «berechne 6 × 7. 6 × 7 = 42.» (de); «combien font 3 + 4 ? …», «…
 - **`compsci`** (1372 строк; recompute, whole_only)  
   **ЦЕНА ЗНАКА В БИТАХ И ЭНТРОПИЯ РАВНОВОЗМОЖНЫХ ИСХОДОВ, ДОКАЗАННЫЕ СТЕПЕНЬЮ ДВОЙКИ: «сколько бит стоит знак алфавита в 32 знака? знак алфавита в 32 знака стоит 5 битов: 2^5 = 32». И ТУТ ЖЕ ОТКАЗ, КОГДА ЦЕЛОГО ОТВЕТА НЕТ: «стоит ли знак алфавита в 5 знаков ц…
+- **`age`** (1360 строк; recompute, whole_only, unsigned_only)  
+  **age and the shift of time: the difference between two ages does NOT change when both move forward or back** — the law a corpus of single facts cannot teach; ages now, the shift in both directions, the multiple relation with its ground, the multiple in the…
 - **`ceilfloor`** (1340 строк; recompute, whole_only)  
   **TWO ANSWERS TO ONE DIVISION** — THE REMAINDER DECIDES WHICH WAY TO ROUND, AND THE QUESTION DECIDES THE REMAINDER'S USE. Measured 11.09 across the 251 show worlds (429 194 lines): «не хватит», «понадобится ещё», «нужно N коробок», «потребуется» — NONE; «ск…
 - **`shares_percent`** (1320 строк; recompute, whole_only)  
@@ -143,8 +145,6 @@
   **ДЕНЬ ЧЕРЕЗ ДЕНЬ, И ШАГ ДОКАЗАН СЛОЖЕНИЕМ ПО НОМЕРУ: «через 3 дня после понедельника наступает четверг: 1 + 3 = 4, день 4** — четверг».
 - **`gsmwide`** (900 строк; recompute, whole_only, unsigned_only)  
   **ТОТ ЖЕ ШАГ В ЕДИНИЦУ, НО ШИРОКИМ СЛОВАРЁМ ПРЕДМЕТОВ: eggs, degrees, packs, dollars, days, pounds** — «Iris weighs 7 pounds.
-- **`age`** (900 строк; recompute, whole_only, unsigned_only)  
-  **age and the shift of time: the difference between two ages does NOT change when both move forward or back** — the law a corpus of single facts cannot teach; ages now, the shift in both directions, the multiple relation with its ground, the multiple in the…
 - **`story_chain`** (890 строк; recompute, declared, whole_only, unsigned_only)  
   **the three-part chain: one bearer, one thing, THREE different verbs in ONE show** — «Tom picked 12 apples and gave away 5; Tom keeps 7 apples».
 - **`mixedunits`** (882 строк; recompute, whole_only, exact_only)  

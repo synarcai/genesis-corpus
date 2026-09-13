@@ -72,7 +72,8 @@ def законы_миров():
 
 
 def рассуждения():
-    import gen_genesis_inquiry as I
+    # ЧИТАТЕЛЬ ПОШЁЛ ЗА ОБЪЯВЛЕНИЕМ (13.09): строители и определения переехали в дом.
+    import inquiryforms as I
     import gen_genesis_equation as E
     import gen_genesis_statistics as S
     E._СО_ЗНАКОМ = False

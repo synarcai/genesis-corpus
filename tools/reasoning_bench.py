@@ -12,7 +12,8 @@ import sys
 
 КОРЕНЬ = pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
-import gen_genesis_inquiry as I  # noqa: E402
+# ЧИТАТЕЛЬ ПОШЁЛ ЗА ОБЪЯВЛЕНИЕМ (13.09): строители и определения переехали в дом.
+import inquiryforms as I  # noqa: E402
 import gen_genesis_equation as E  # noqa: E402
 import gen_genesis_statistics as S  # noqa: E402
 
