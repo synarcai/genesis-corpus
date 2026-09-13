@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 392 законов
+# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 396 законов
 
 Собран из докстрингов и комментариев `tools`, `courts`, `scripts` орудием
 `tools/law_atlas.py`. Взяты ОБЩИЕ законы — те, что держатся не одним файлом.
@@ -6,7 +6,7 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 6171 разных законов на 7663 упоминаний; сказанных однажды — 5779, и они остаются при своём месте.
+Всего в дереве 6177 разных законов на 7674 упоминаний; сказанных однажды — 5781, и они остаются при своём месте.
 
 
 ## Держат 81 файлов
@@ -333,6 +333,8 @@
   tools/behaviorforms.py, tools/kinbearer.py, tools/linkforms.py
 - **РОД ТОВАРА И СОГЛАСОВАНИЕ ПО НЕМУ — ОБЪЯВЛЕНЫ**  
   tools/kinbearer.py, tools/proform.py, tools/pronobject.py
+- **РОД-ВЕЛИКАН РАЗДЕЛЁН ПО ДЕЛУ СТРОИТЕЛЯ**  
+  tools/linalgforms.py, tools/seriesforms.py, tools/speechforms.py
 - **РОСТ И УБЫЛЬ ИДУТ В ОДНОМ ПРОХОДЕ**  
   tools/gen_genesis_divshare.py, tools/gen_genesis_mulshare.py, tools/gen_genesis_pctchange.py
 - **СЕМЬ РОДОВ, И ДВА ИЗ НИХ СУТЬ ОДНА ЛОВУШКА, ПОКАЗАННАЯ ОБЕИМИ СТОРОНАМИ**  
@@ -386,6 +388,8 @@
   tools/langpack.py, tools/plural.py
 - **АРТИКЛЬ ИДЁТ ЗА ЗВУКОМ, А НЕ ЗА БУКВОЙ**  
   tools/everydayforms.py, tools/ratesforms.py
+- **БОЛЬШЕ РОДОВ, ЧЕМ У НЕГО СТРОИТЕЛЕЙ**  
+  tools/linalgforms.py, tools/seriesforms.py
 - **БЮДЖЕТ ВЫБОРКИ ФИКСИРОВАН НА МИР**  
   scripts/sentence_cover.py, scripts/verdict_cover.py
 - **В ОТДЕЛЬНОМ СЛОВЕ ПРИ НЁМ — ИЛИ НЕ ЖИВЁТ ВОВСЕ**  
@@ -666,6 +670,8 @@
   courts/plaus_court.py, tools/plausforms.py
 - **ПРОВЕРКА, КОТОРУЮ ПРОХОДИТ И НЕВЕРНЫЙ ОТВЕТ, НЕ ЕСТЬ ПРОВЕРКА ОТВЕТА**  
   courts/rem_court.py, tools/remdivforms.py
+- **ПРОВЕРКА, ТРЕБУЮЩАЯ ОТ ИМЕНИ РОДА БЫТЬ ИМЕНЕМ ФУНКЦИИ, ЗАПРЕЩАЕТ ДОМУ НАЗЫВАТЬ**  
+  tools/linalgforms.py, tools/seriesforms.py
 - **ПРОМЕЖУТОЧНЫЕ ВЕЛИЧИНЫ В ОТВЕТЕ**  
   courts/geometry_court.py, tools/geomforms.py
 - **ПРОПУСК, О КОТОРОМ НЕ СКАЗАНО, ЕСТЬ ЛОЖЬ О ПОЛНОТЕ**  
@@ -714,6 +720,8 @@
   scripts/coverage.py, scripts/prose_court.py
 - **СБОРКА В ПОРЯДКЕ ОБХОДА И СТРОК**  
   courts/arith_court.py, scripts/claims_court.py
+- **СВЕРЯЕТСЯ ДЕЛО, А НЕ ИМЕНА ФУНКЦИЙ**  
+  tools/linalgforms.py, tools/speechforms.py
 - **СВОД, ПОКАЗЫВАЮЩИЙ ОДНУ СТОРОНУ ЗАКОНА В СТО РАЗ ЧАЩЕ ДРУГОЙ, УЧИТ НЕ ЗАКОНУ, А ЕГО**  
   scripts/house_skew.py, tools/decaseforms.py
 - **СВОЙСТВО, ПОКАЗАННОЕ И НЕ НАЗВАННОЕ, ЕСТЬ УРОК БЕЗ СЛОВА**  
