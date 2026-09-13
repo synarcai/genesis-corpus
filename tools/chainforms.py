@@ -304,3 +304,209 @@ def перебор(язык, n):
 assert callable(цепи) and callable(перебор), "строителя рода не стало, а имя рода осталось"
 РОДЫ = ("цепь из двух шагов: ответ первого есть вход второго",
         "цепь вглубь: от трёх до шести шагов, покуда числительные языка позволяют")
+
+
+# ------------------------------------------------------------------ СТРАНИЦЫ МИРА
+#
+# СТРОИТЕЛИ ПЕРЕЕХАЛИ ИЗ КУЗНИЦЫ В ДОМ (13.09). Роды этот дом объявлял с первого дня, а
+# страниц не отдавал: они строились в кузнице, и указатель родов не мог назвать ни одной из
+# 3 092 строк мира.
+#
+#     ДОМ, ОБЪЯВИВШИЙ РОДЫ И НЕ ОТДАВШИЙ СТРАНИЦ, ОБЕЩАЕТ ИМЕНА, КОТОРЫХ НЕКОМУ ПРИЛОЖИТЬ.
+#
+# Кузница по-прежнему кует — она лишь берёт готовые группы отсюда.
+
+def _пара(язык, шаг, i):
+    """(a, b) whose sum and difference the language can say."""
+    т = sorted(v for v in ЧИСЛА[язык] if v >= 1)
+    for сдвиг in range(len(т)):
+        a = т[(шаг * 7 + i * 5 + сдвиг) % len(т)]
+        b = т[(шаг * 3 + i * 11 + сдвиг * 3) % len(т)]
+        if a < 1 or b < 1 or (a + b) not in ЧИСЛА[язык]:
+            continue
+        return a, b
+    return None
+
+
+def _тройка(язык, шаг, i, оп):
+    """(a, b) whose product (or quotient) and the next step the language can say."""
+    т = sorted(v for v in ЧИСЛА[язык] if v >= 1)
+    for сдвиг in range(len(т)):
+        a = т[(шаг * 5 + i * 3 + сдвиг) % len(т)]
+        b = т[(шаг * 11 + i * 7 + сдвиг * 2) % len(т)]
+        if a < 2 or b < 2:
+            continue
+        p = a * b if оп == "×" else None
+        if p is None or p not in ЧИСЛА[язык]:
+            continue
+        return a, b
+    return None
+
+
+def язык_группа(шаг, язык):
+    вон = []
+    если = умеет
+    if not (если(язык, "+") and если(язык, "−")):
+        return вон
+    # six chains (+, −): the sum is spent by a subtraction
+    for i in range(6):
+        п = _пара(язык, шаг, i)
+        if п is None:
+            continue
+        a, b = п
+        s = a + b
+        for c in sorted(v for v in ЧИСЛА[язык] if 1 <= v < s):
+            if (s - c) in ЧИСЛА[язык] and c != b:
+                вон.append(цепь(язык, (("+", a, b, s), ("−", s, c, s - c))))
+                break
+    # three chains (×, +): the product is grown by an addition
+    if если(язык, "×"):
+        for i in range(3):
+            п = _тройка(язык, шаг, i, "×")
+            if п is None:
+                continue
+            a, b = п
+            p = a * b
+            for c in sorted(v for v in ЧИСЛА[язык] if v >= 1):
+                if (p + c) in ЧИСЛА[язык] and c != a:
+                    вон.append(цепь(язык, (("×", a, b, p), ("+", p, c, p + c))))
+                    break
+    # chains of THREE and FOUR steps: the ledger of the market of reasoning, and
+    # the food of the library of chains (holon 03.09: a bought chain becomes a
+    # step of another, so depth is what the library eats)
+    for i in range(6):
+        цепочка = _вглубь(язык, шаг, i + 3, шагов=3)
+        if цепочка:
+            вон.append(цепь(язык, цепочка))
+    for i in range(4):
+        цепочка = _вглубь(язык, шаг, i + 9, шагов=4)
+        if цепочка:
+            вон.append(цепь(язык, цепочка))
+    # ГЛУБЖЕ ЧЕТЫРЁХ (мандат владельца о цепочках вглубь): пять и шесть шагов
+    # там, где объявленные числа языка позволяют пройти их — строитель
+    # возвращает ничто, если пути нет, и язык с бедной таблицей просто не
+    # пишет глубокой цепи вместо того, чтобы выдумать число.
+    for i in range(3):
+        цепочка = _вглубь(язык, шаг, i + 13, шагов=5)
+        if цепочка:
+            вон.append(цепь(язык, цепочка))
+    for i in range(2):
+        цепочка = _вглубь(язык, шаг, i + 16, шагов=6)
+        if цепочка:
+            вон.append(цепь(язык, цепочка))
+    # THE SEARCH AS A CHAIN WITHOUT A SEAM (the collegium's task 2, way «б»
+    # chosen by holon 03.09): the walk to the next prime, every candidate
+    # rejected by its own witness, the last standing beside one — the predicate
+    # said without a word for it, so a pack that never declared «prime» still
+    # shows the search
+    for i in range(4):
+        n = 2 + (шаг * 7 + i * 5) % 60
+        for сдвиг in range(60):
+            ш = перебор(язык, n + сдвиг)
+            if ш and 2 <= len(ш) <= 6:
+                вон.append(цепь(язык, ш))
+                break
+    return вон
+
+
+def _вглубь(язык, шаг, i, шагов):
+    """A chain of `шагов` steps: every intermediate number is one the language
+    declares, and every step spends the previous result."""
+    т = sorted(v for v in ЧИСЛА[язык] if v >= 1)
+    п = _пара(язык, шаг, i)
+    if п is None:
+        return None
+    a, b = п
+    s = a + b
+    цепочка = [("+", a, b, s)]
+    текущее = s
+    # the operations walk in turn: −, ×, −, ÷ … — each taking the running number
+    порядок = ("−", "×", "−", "+")
+    for k in range(шагов - 1):
+        оп = порядок[(k + шаг) % len(порядок)]
+        нашли = False
+        if оп == "−":
+            for c in sorted(v for v in т if 1 <= v < текущее):
+                if (текущее - c) in ЧИСЛА[язык] and (текущее - c) >= 2:
+                    цепочка.append(("−", текущее, c, текущее - c)); текущее -= c; нашли = True
+                    break
+        elif оп == "×" and умеет(язык, "×"):
+            for d in sorted(v for v in т if v >= 2):
+                if (текущее * d) in ЧИСЛА[язык]:
+                    цепочка.append(("×", текущее, d, текущее * d)); текущее *= d; нашли = True
+                    break
+        else:
+            for c in sorted(v for v in т if v >= 1):
+                if (текущее + c) in ЧИСЛА[язык]:
+                    цепочка.append(("+", текущее, c, текущее + c)); текущее += c; нашли = True
+                    break
+        if not нашли:
+            # the language cannot say the next number — the chain stops honestly
+            return цепочка if len(цепочка) >= шагов - 1 and len(цепочка) >= 2 else None
+    return цепочка
+
+
+def язык_группа_меченая(шаг, язык):
+    """[(страница, род)] — та же группа языка, но каждая страница под своим именем.
+
+    РОД БЕРЁТСЯ У СТРОИТЕЛЯ: пары и тройки суть цепь из двух шагов, «вглубь» — цепь вглубь.
+    Разбирать готовую строку не нужно — строитель знает, что он писал.
+    """
+    вон = []
+    если = умеет
+    if not (если(язык, "+") and если(язык, "−")):
+        return вон
+    двух, вглубь = РОДЫ
+    for с in язык_группа(шаг, язык):
+        вон.append((с, вглубь if с.count(".") > 2 else двух))
+    return вон
+
+
+def группы(шаг):
+    """[[страница]] — ровно те группы и в том порядке, какими кузница кормит `emit_grouped`."""
+    return [язык_группа(шаг, язык) for язык in ЯЗЫКИ]
+
+
+def перебор_страниц(шаг):
+    """[(страница, род)] — те же группы, но каждая страница под своим именем.
+
+    ИМЯ ВЗЯТО ДЛИННОЕ НАРОЧНО: `перебор` в этом доме занято с первого дня — им зовётся ХОД
+    от числа к ближайшему простому, строитель второго рода. Дать одно имя двум разным делам
+    значило бы затенить строителя сборщиком и уронить дом на первом же ввозе (так и вышло).
+    #
+        ИМЯ, ЗАНЯТОЕ В ДОМЕ, НЕ ОСВОБОЖДАЕТСЯ ОТТОГО, ЧТО ЕГО ЖДЁТ ОБЩИЙ ОБЫЧАЙ.
+    """
+    вон = []
+    for язык in ЯЗЫКИ:
+        вон.extend(язык_группа_меченая(шаг, язык))
+    return вон
+
+
+ЗАЧЕМ_РОДА = {р: р for р in РОДЫ}
+
+
+def _показы():
+    """{строка свода: род} — ПОСТРОЧНО, ибо свод построчен."""
+    from layer import PASSES                              # noqa: PLC0415
+    вон = {}
+    for шаг in range(len(PASSES)):
+        for с, род in перебор_страниц(шаг):
+            for строка in с.split("\n"):
+                if строка.rstrip():
+                    вон.setdefault(строка.rstrip(), род)
+    return вон
+
+
+ПОКАЗЫ = _показы()
+
+
+def _самопроверка_страниц():
+    assert all("\n" not in к for к in ПОКАЗЫ), "словарь показов обязан быть построчным"
+    пустые = set(РОДЫ) - set(ПОКАЗЫ.values())
+    assert not пустые, f"род объявлен и не кован: {sorted(пустые)}"
+    из_перебора = sorted(с for с, _р in перебор_страниц(0))
+    из_групп = sorted(с for г in группы(0) for с in г)
+    assert из_перебора == из_групп, "пересборка потеряла или выдумала страницы"
+
+
+_самопроверка_страниц()
