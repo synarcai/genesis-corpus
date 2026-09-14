@@ -20,7 +20,7 @@ coprime shuffles, form-feed seams, glyph pair beside
 every story block.
 """
 
-from layer import emit
+from layer import Сбор, emit
 
 
 from plural import by_count
@@ -151,6 +151,13 @@ def story_rate(nrec, ne, it, enp, k, price):
     ]
 
 
+# ТРИ РОДА НАЗВАНЫ В ИМЕНАХ СТРОИТЕЛЕЙ И НЕ ВЫШЛИ НАРУЖУ. Действие НЕСЁТ ГЛАГОЛ, а не знак,
+# — в том и весь замысел мира, — и потому глагол же и есть род.
+ОТДАЛ = "отдал: убыль, несомая глаголом, а не знаком"
+ПОЛУЧИЛ = "получил: прибыль, несомая глаголом"
+ПО_ЦЕНЕ = "купил k по цене p: умножение, несомое глаголом"
+
+
 def pass_shows(pi):
     """Shows of one pass — instances shifted, not reordered.
 
@@ -161,21 +168,72 @@ def pass_shows(pi):
     kind-frequency over DIFFERENT shows and twin lines stay near the
     lawful two.
     """
-    shows = []
+    shows = Сбор()
     i = pi * 11
     for (nrec, ne) in zip(NAMES_RU, NAMES_EN):
         for (it, enp) in ITEMS:
             a = (i * 3) % 9 + 6      # 6..14
             b = (i * 2) % 5 + 1      # 1..5
-            shows += story_gave(nrec, ne, it, enp, a, b)
+            shows.род = ОТДАЛ
+            shows.extend(story_gave(nrec, ne, it, enp, a, b))
             a2 = (i * 5) % 8 + 2     # 2..9
             b2 = (i * 3) % 6 + 1     # 1..6
-            shows += story_got(nrec, ne, it, enp, a2, b2)
+            shows.род = ПОЛУЧИЛ
+            shows.extend(story_got(nrec, ne, it, enp, a2, b2))
             k = (i % 4) + 2          # 2..5
             price = (i % 3) + 2      # 2..4
-            shows += story_rate(nrec, ne, it, enp, k, price)
+            shows.род = ПО_ЦЕНЕ
+            shows.extend(story_rate(nrec, ne, it, enp, k, price))
             i += 1
     return shows
+
+
+# --------------------------------------------------------------- ОБЪЯВЛЕНИЕ ДОМА
+
+РОДЫ = (ОТДАЛ, ПОЛУЧИЛ, ПО_ЦЕНЕ)
+
+ЗАЧЕМ_РОДА = {
+    ОТДАЛ: "«у Маши было 6 яблок. Маша отдала 2 яблока» — минус сказан ГЛАГОЛОМ",
+    ПОЛУЧИЛ: "тот же рассказ в прибыль: плюс тоже сказан глаголом",
+    ПО_ЦЕНЕ: "«купила 3 по 4» — умножение, сказанное историей, а не знаком ×",
+}
+
+
+def страницы(pi):
+    return pass_shows(pi)
+
+
+def перебор_страниц(pi):
+    return pass_shows(pi).парами
+
+
+def группы(pi):
+    return [страницы(pi)]
+
+
+def _показы():
+    from layer import PASSES                             # noqa: PLC0415
+    вон = {}
+    for шаг in range(len(PASSES)):
+        for с, род in перебор_страниц(шаг):
+            for строка in с.split("\n"):
+                if строка.rstrip():
+                    вон.setdefault(строка.rstrip(), род)
+    return вон
+
+
+ПОКАЗЫ = _показы()
+
+
+def _самопроверка_дома():
+    assert set(ЗАЧЕМ_РОДА) == set(РОДЫ), "глосса рода разошлась с объявлением"
+    сбор = pass_shows(0)
+    assert len(сбор) == len(сбор.роды), "показ остался без рода"
+    пустые = set(РОДЫ) - set(ПОКАЗЫ.values())
+    assert not пустые, f"род объявлен и не кован: {sorted(пустые)}"
+
+
+_самопроверка_дома()
 
 
 def main():
