@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 341 миров, 451807 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 342 миров, 451837 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -463,7 +463,7 @@
 
 ## АКТ «decide» — решить случай: вердикт с основанием рядом
 
-Миров 38, строк 21009.
+Миров 39, строк 21039.
 
 - **`verifyforms`** (3285 строк; recompute, whole_only)  
   **VERIFICATION** — «claim · check · verdict», and the pages where the instrument is OBLIGED to refuse (05.09, the agent architecture, the fourth market): a true claim checked by ANOTHER action cannot be confirmed — the verdict is «not verified», and the gro…
@@ -541,6 +541,8 @@
   **A SHARE AND ITS BASE (14.09, bought by a zero of the probe). Measured: «условная вероятность» / «conditional probability»** — 6 lines in 451 367, and all six MENTION the words.
 - **`adhominem`** (36 строк; recompute, whole_only)  
   **AN ARGUMENT ABOUT THE SPEAKER (14.09, the last zero of the probe's sixty-five families). Measured: «к человеку» / «ad hominem» / «переход на личность»** — ZERO lines.
+- **`dilemma`** (30 строк; recompute, whole_only)  
+  **THE FALSE DILEMMA** — THE LIST, NOT THE CONNECTIVE (14.09, the last zero of the probe's sixty-six families).
 
 ## АКТ «inflect» — поставить слово в форму по объявленному правилу
 
@@ -761,5 +763,5 @@
     ОБЪЯВЛЕНИЕ В ТРИДЦАТЬ ЗНАКОВ НЕ ЛЖЁТ И НЕ ГОВОРИТ: читатель узнаёт имя мира
     и ничего сверх него.
 
-Миров: **0** из 341.
+Миров: **0** из 342.
 

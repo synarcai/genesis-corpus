@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 482 законов
+# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 486 законов
 
 Собран из докстрингов и комментариев `tools`, `courts`, `scripts` орудием
 `tools/law_atlas.py`. Взяты ОБЩИЕ законы — те, что держатся не одним файлом.
@@ -6,7 +6,7 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 6639 разных законов на 8360 упоминаний; сказанных однажды — 6157, и они остаются при своём месте.
+Всего в дереве 6653 разных законов на 8380 упоминаний; сказанных однажды — 6167, и они остаются при своём месте.
 
 
 ## Держат 81 файлов
@@ -31,15 +31,17 @@
 - **МИР ЗАМКНУТ, И ЭТО ПРОВЕРЕНО ДЕЛОМ, А НЕ ОБЪЯВЛЕНО МНЕНИЕМ**  
   courts/age_court.py, courts/algo_court.py, courts/average_court.py, courts/calendar_court.py, courts/case_court.py, courts/compare_mult_court.py … и ещё 38
 
-## Держат 30 файлов
+## Держат 31 файлов
 
 - **НЕ ПОЙМАНА» ИМЕЕТ ДВЕ ПРИЧИНЫ, И ОНИ ТРЕБУЮТ РАЗНОГО**  
-  courts/adhominem_court.py, courts/alphaorder_court.py, courts/badground_court.py, courts/bicond_court.py, courts/boolexpr_court.py, courts/bothlists_court.py … и ещё 24
+  courts/adhominem_court.py, courts/alphaorder_court.py, courts/badground_court.py, courts/bicond_court.py, courts/boolexpr_court.py, courts/bothlists_court.py … и ещё 25
 
 ## Держат 29 файлов
 
 - **МУТАНТОВ НЕ ПОСТРОЕНО ВОВСЕ**  
   tools/countlawforms.py, tools/deaccforms.py, tools/decaseforms.py, tools/deplurforms.py, tools/dosupportforms.py, tools/elisionforms.py … и ещё 23
+- **ПОДСАДКИ ОБЪЯВЛЕНЫ ЗДЕСЬ, И СУД БЕРЁТ ИХ ОТСЮДА ЖЕ**  
+  tools/adhominem.py, tools/alphaorder.py, tools/badground.py, tools/bicondforms.py, tools/boolforms.py, tools/bothlists.py … и ещё 23
 - **ПУТЬ, СКАЗАННЫЙ ТОЛЬКО В ЗОВЕ, ЕСТЬ ПУТЬ, О КОТОРОМ НЕ ОБЪЯВЛЕНО**  
   tools/gen_genesis_aggregate.py, tools/gen_genesis_algebra.py, tools/gen_genesis_algorithms.py, tools/gen_genesis_bignum.py, tools/gen_genesis_conversions.py, tools/gen_genesis_cybernetics.py … и ещё 23
 
@@ -47,8 +49,6 @@
 
 - **ЗАЧИН ВОПРОСА ОБЪЯВЛЕН ДОМОМ ПАРЫ**  
   tools/actturn.py, tools/clockforms.py, tools/clockwords.py, tools/dateforms.py, tools/degrees.py, tools/discountroad.py … и ещё 22
-- **ПОДСАДКИ ОБЪЯВЛЕНЫ ЗДЕСЬ, И СУД БЕРЁТ ИХ ОТСЮДА ЖЕ**  
-  tools/adhominem.py, tools/alphaorder.py, tools/badground.py, tools/bicondforms.py, tools/boolforms.py, tools/bothlists.py … и ещё 22
 - **ПРАВИЛО, ДАННОЕ БЕЗ СВОИХ ЛОЖНЫХ СЛЕДСТВИЙ, УЧИТ ИМ НАРАВНЕ С СОБОЮ**  
   tools/gen_genesis_countlaw.py, tools/gen_genesis_deacc.py, tools/gen_genesis_decase.py, tools/gen_genesis_deplur.py, tools/gen_genesis_elision.py, tools/gen_genesis_fipart.py … и ещё 22
 
@@ -586,6 +586,8 @@
   courts/adhominem_court.py, tools/adhominem.py
 - **ИЗБЫТОЧНОЕ УСЛОВИЕ НЕ УЧИТ НИЧЕМУ**  
   courts/whodwells_court.py, tools/whodwells.py
+- **ИЛИ ТО, ИЛИ ЭТО» ЕСТЬ УТВЕРЖДЕНИЕ О МИРЕ, А НЕ О ЛОГИКЕ**  
+  courts/dilemma_court.py, tools/dilemma.py
 - **ИМЯ ПЕРЕМЕННОЙ НЕ ЗАНИМАЕТ ЧУЖОГО МЕСТА**  
   tools/gen_genesis_notation.py, tools/holes.py
 - **ИМЯ РОДА ЕСТЬ ТО, ЧЕМ ПОМЕЧЕНА СТРАНИЦА, А ПРОЗА — ЭТО «ЗАЧЕМ**  
@@ -650,6 +652,8 @@
   courts/langform_court.py, courts/langgen_court.py
 - **ОБРАТИМОСТЬ — СВОЙСТВО ПЕРЕХОДА, А НЕ ЗНАК ВЕЛИЧИНЫ**  
   courts/valence_court.py, tools/valforms.py
+- **ОБЪЯВИТЬ РОД УПРАЖНЕНИЕМ — ЗНАЧИТ ВЗЯТЬ НА СЕБЯ, А НЕ УКЛОНИТЬСЯ**  
+  tools/onestepforms.py, tools/valforms.py
 - **ОБЪЯВЛЕНИЕ ПЕРЕЕХАЛО В ДОМ, И ЧИТАТЕЛЬ ПОШЁЛ ЗА НИМ**  
   courts/calendar_court.py, courts/physlaw_court.py
 - **ОБЪЯВЛЕННОЕ ЗНАНИЕ ЕСТЬ РОД ЭТОГО СУДА**  
@@ -852,6 +856,8 @@
   tools/idredupforms.py, tools/zhclassforms.py
 - **РУССКОЕ СОГЛАСОВАНИЕ НЕ ПЕРЕПИСАНО, А ПРОЧИТАНО**  
   scripts/second_copy.py, tools/gen_genesis_cybernetics.py
+- **САМ ПЕРЕЧЕНЬ ВЫХОДОВ БЫВАЕТ НЕПОЛОН**  
+  tools/dilemma.py, tools/gen_genesis_dilemma.py
 - **СБОРКА В ПОРЯДКЕ МАНИФЕСТА И СТРОК**  
   scripts/coverage.py, scripts/prose_court.py
 - **СБОРКА В ПОРЯДКЕ ОБХОДА И СТРОК**  
@@ -918,6 +924,8 @@
   courts/adhominem_court.py, tools/adhominem.py
 - **СУД НЕ ПОНИМАЕТ СМЫСЛА И НЕ БЕРЁТСЯ**  
   courts/homonym_court.py, tools/homonym.py
+- **СУД НЕ РЕШАЕТ, ПОЛОН ЛИ СПИСОК ВООБЩЕ**  
+  courts/dilemma_court.py, tools/dilemma.py
 - **СУД ПЕРЕСЧИТЫВАЕТ, А НЕ СВЕРЯЕТ СО СТРОИТЕЛЕМ**  
   courts/goal_court.py, tools/goalturn.py
 - **СУД ПО НАЧАЛУ СТРОКИ ЕСТЬ ЛОВУШКА, ВЗВЕДЁННАЯ НА БУДУЩЕЕ**  
