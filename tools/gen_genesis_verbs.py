@@ -30,7 +30,7 @@ import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from gsm_items import ANIMATE, ITEMS  # noqa: E402
-from layer import emit  # noqa: E402
+from layer import Сбор, emit  # noqa: E402
 from plural import by_count  # noqa: E402
 
 # ПУТЬ, СКАЗАННЫЙ ТОЛЬКО В ЗОВЕ, ЕСТЬ ПУТЬ, О КОТОРОМ НЕ ОБЪЯВЛЕНО (14.09): указатель
@@ -125,8 +125,17 @@ def вопрос_суммы(base, past, s3, a, it, n):
     return (f"how many {it} did {a} {base} in all? ", f"{a} {past} {n} ")
 
 
+# ЧЕТЫРЕ РОДА БЫЛИ НАЗВАНЫ КОММЕНТАРИЯМИ НАД ВЕТВЯМИ И НЕ ВЫШЛИ НАРУЖУ. Род здесь — ВРЕМЯ
+# И ЕГО РАБОТА, а не поверхность речи: вопрос о сумме живёт внутри прошедшего, ибо он и есть
+# прошедшее, спрошенное.
+ПРОШЕДШЕЕ = "прошедшее: сложение при четырёх местах"
+ПЕРФЕКТ_И_ПРОШЕДШЕЕ = "перфект рядом со своим прошедшим: пара показана, а не предположена"
+ПЕРФЕКТ_В_СРАВНЕНИИ = "перфект внутри сравнения: больше на столько-то"
+НАСТОЯЩЕЕ = "настоящее: основа и третье лицо живут оба"
+
+
 def pass_shows(pass_i):
-    out = []
+    out = Сбор()
     unknown = [w for _, _, _, _, its in VERBS for w in its
                if w not in ITEMS]
     assert not unknown, unknown
@@ -150,6 +159,7 @@ def pass_shows(pass_i):
         #     поверхность без шага не поручена никому.
         forge = f": {n} + {m} = {n + m}"
         # the four-place discipline, in the past
+        out.род = ПРОШЕДШЕЕ
         воп, отв = вопрос_суммы(base, past, s3, a, it, n + m)
         out.append(
             f"{a} {past} {n} {by_count(n, it)}. "
@@ -158,11 +168,13 @@ def pass_shows(pass_i):
             f"{отв}{by_count(n + m, it)}{forge}."
         )
         # THE PERFECT BESIDE ITS PAST: the pair is shown, not assumed
+        out.род = ПЕРФЕКТ_И_ПРОШЕДШЕЕ
         out.append(
             f"{a} has {done} {n} {by_count(n, it)}. "
             f"{a} {past} {n} {by_count(n, it)}."
         )
         # g1.46's own shape: the perfect inside a comparison
+        out.род = ПЕРФЕКТ_В_СРАВНЕНИИ
         воп2, отв2 = вопрос_суммы(base, past, s3, a, it, n + m)
         out.append(
             f"{b} has {done} {m} {by_count(m, it)}. "
@@ -171,11 +183,64 @@ def pass_shows(pass_i):
             f"{отв2}{by_count(n + m, it)}{forge}."
         )
         # the present, so base and third person live too
+        out.род = НАСТОЯЩЕЕ
         out.append(
             f"{a} {s3} {n} {by_count(n, it)} every day. "
             f"they {base} {n} {by_count(n, it)} every day."
         )
     return out
+
+
+# --------------------------------------------------------------- ОБЪЯВЛЕНИЕ ДОМА
+
+РОДЫ = (ПРОШЕДШЕЕ, ПЕРФЕКТ_И_ПРОШЕДШЕЕ, ПЕРФЕКТ_В_СРАВНЕНИИ, НАСТОЯЩЕЕ)
+
+ЗАЧЕМ_РОДА = {
+    ПРОШЕДШЕЕ: "«a взял n, a взял ещё m» — вопрос и ответ со своей кузницей n + m",
+    ПЕРФЕКТ_И_ПРОШЕДШЕЕ: "«has done n» и «did n» стоят рядом: читатель видит пару, а не "
+                         "угадывает её",
+    ПЕРФЕКТ_В_СРАВНЕНИИ: "перфект несёт сравнение «на n больше, чем b», и счёт идёт поверх",
+    НАСТОЯЩЕЕ: "«a does n every day» и «they do n every day»: третье лицо и основа",
+}
+
+
+def страницы(pass_i):
+    return pass_shows(pass_i)
+
+
+def перебор_страниц(pass_i):
+    return pass_shows(pass_i).парами
+
+
+def группы(pass_i):
+    return [страницы(pass_i)]
+
+
+def _показы():
+    from layer import PASSES                             # noqa: PLC0415
+    вон = {}
+    for шаг in range(len(PASSES)):
+        for с, род in перебор_страниц(шаг):
+            for строка in с.split("\n"):
+                if строка.rstrip():
+                    вон.setdefault(строка.rstrip(), род)
+    return вон
+
+
+ПОКАЗЫ = _показы()
+
+
+def _самопроверка_дома():
+    assert set(ЗАЧЕМ_РОДА) == set(РОДЫ), "глосса рода разошлась с объявлением"
+    сбор = pass_shows(0)
+    assert len(сбор) == len(сбор.роды), "показ остался без рода"
+    вне = {р for _с, р in сбор.парами} - set(РОДЫ)
+    assert not вне, f"род кован и не объявлен: {sorted(вне)}"
+    пустые = set(РОДЫ) - set(ПОКАЗЫ.values())
+    assert not пустые, f"род объявлен и не кован: {sorted(пустые)}"
+
+
+_самопроверка_дома()
 
 
 def main():

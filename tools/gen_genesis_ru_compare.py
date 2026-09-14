@@ -41,7 +41,9 @@ import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import rugram  # noqa: E402
-from gen_genesis_compare_mult import в_раза  # noqa: E402  — одна форма множителя словом на весь корпус
+# ВВОЗ ИДЁТ В ДОМ, А НЕ В КУЗНИЦУ, ИЗ КОТОРОЙ ДОМ ВЫЕХАЛ (14.09): форма множителя
+# словом переехала в `cmpmultforms`, и ввоз остался на старом адресе.
+from cmpmultforms import в_раза  # noqa: E402  — одна форма множителя словом на весь корпус
 from layer import emit_grouped  # noqa: E402
 
 ЦЕЛЬ = "datasets/genesis_ru_compare.txt"

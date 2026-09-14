@@ -10,7 +10,7 @@ agents the episode; the owner rides as color. Shows
 are OUR stories on OUR numbers.
 """
 
-from layer import emit
+from layer import Сбор, emit
 import verbthings  # noqa: E402
 
 
@@ -60,9 +60,17 @@ ASKS_SUB = [("keep", "keeps"),
             ("save", "saves")]
 
 
+# РОД ЗДЕСЬ БЫЛ НАЗВАН КОММЕНТАРИЕМ («possessive genus: the acting noun agents») И НЕ ВЫШЕЛ
+# НАРУЖУ. Два прочих — две ветви `if add`, и это ДЕЛО, а не поверхность: прибавка и убыль
+# берут разные пары глаголов и разные вопросы.
+ПРИБАВКА = "прибавка: к своему прибавлено ещё"
+УБЫЛЬ = "убыль: от своего отдано"
+ПРИТЯЖАТЕЛЬНЫЙ = "притяжательный носитель: несёт питомец хозяина"
+
+
 def pass_shows(pi):
     base = pi * 41
-    out = []
+    out = Сбор()
     for i in range(len(NAMES) * 12):
         nm = NAMES[
             (base + i + (i // 8) * 5)
@@ -81,6 +89,7 @@ def pass_shows(pi):
         # разряд её свободен от разрядов глагола, вопроса и знака.
         forge = ((base + i) // 8) % 2 == 0
         if add:
+            out.род = ПРИБАВКА
             (v1, v2) = ADD_PAIRS[pick]
             (ask, av) = ASKS_ADD[
                 ((base + i) // 4) % 2
@@ -95,6 +104,7 @@ def pass_shows(pi):
                 f"{f': {a} + {b} = {c}' if forge else ''}."
             )
         else:
+            out.род = УБЫЛЬ
             (v1, v2) = SUB_PAIRS[pick]
             (ask, av) = ASKS_SUB[
                 ((base + i) // 4) % 2
@@ -111,6 +121,7 @@ def pass_shows(pi):
         # possessive genus: the acting noun
         # agents; lay/give live here
         if i % 4 == 0:
+            out.род = ПРИТЯЖАТЕЛЬНЫЙ
             pet = PETS[
                 (base + i) % len(PETS)
             ]
@@ -127,6 +138,58 @@ def pass_shows(pi):
                 f"{f': {a2} + {b2} = {a2 + b2}' if forge else ''}."
             )
     return out
+
+
+# --------------------------------------------------------------- ОБЪЯВЛЕНИЕ ДОМА
+
+РОДЫ = (ПРИБАВКА, УБЫЛЬ, ПРИТЯЖАТЕЛЬНЫЙ)
+
+ЗАЧЕМ_РОДА = {
+    ПРИБАВКА: "a + b, где оба глагола пары суть «взял» и «взял ещё»",
+    УБЫЛЬ: "a − b, где второй глагол уносит",
+    ПРИТЯЖАТЕЛЬНЫЙ: "подлежащее есть ЧУЖОЙ питомец («{имя} s {питомец}»), и сказуемое "
+                    "согласуется с ним, а не с хозяином",
+}
+
+
+def страницы(pi):
+    return pass_shows(pi)
+
+
+def перебор_страниц(pi):
+    """[(строка, род)] — ТОТ ЖЕ ОБХОД, что и у кузницы, прочтённый вторым столбцом."""
+    return pass_shows(pi).парами
+
+
+def группы(pi):
+    return [страницы(pi)]
+
+
+def _показы():
+    from layer import PASSES                             # noqa: PLC0415
+    вон = {}
+    for шаг in range(len(PASSES)):
+        for с, род in перебор_страниц(шаг):
+            for строка in с.split("\n"):
+                if строка.rstrip():
+                    вон.setdefault(строка.rstrip(), род)
+    return вон
+
+
+ПОКАЗЫ = _показы()
+
+
+def _самопроверка_дома():
+    assert set(ЗАЧЕМ_РОДА) == set(РОДЫ), "глосса рода разошлась с объявлением"
+    сбор = pass_shows(0)
+    assert len(сбор) == len(сбор.роды), "показ остался без рода"
+    вне = {р for _с, р in сбор.парами} - set(РОДЫ)
+    assert not вне, f"род кован и не объявлен: {sorted(вне)}"
+    пустые = set(РОДЫ) - set(ПОКАЗЫ.values())
+    assert not пустые, f"род объявлен и не кован: {sorted(пустые)}"
+
+
+_самопроверка_дома()
 
 
 def main():

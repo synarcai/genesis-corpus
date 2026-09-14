@@ -14,7 +14,9 @@ import sys
 
 КОРЕНЬ = pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
-import gen_genesis_space as П  # noqa: E402
+# ВВОЗ ИДЁТ В ДОМ, А НЕ В КУЗНИЦУ, ИЗ КОТОРОЙ ДОМ ВЫЕХАЛ (14.09): сетка пространства
+# переехала в `spaceforms`.
+import spaceforms as П  # noqa: E402
 import spacegrid as S  # noqa: E402
 from layer import emit  # noqa: E402
 
