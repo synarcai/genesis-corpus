@@ -6,7 +6,7 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 6218 разных законов на 7732 упоминаний; сказанных однажды — 5815, и они остаются при своём месте.
+Всего в дереве 6221 разных законов на 7736 упоминаний; сказанных однажды — 5818, и они остаются при своём месте.
 
 
 ## Держат 81 файлов
@@ -347,6 +347,8 @@
   courts/fuseprep_court.py, tools/gen_genesis_fuseprep.py, tools/panel.py
 - **СЛОВА ДО ДВОЕТОЧИЯ, РАВЕНСТВА ПОСЛЕ**  
   tools/parityforms.py, tools/pctchangeforms.py, tools/plausforms.py
+- **СТРОИТЕЛЬ ПЕРЕЕХАЛ ИЗ КУЗНИЦЫ В ДОМ**  
+  tools/calforms.py, tools/countforms.py, tools/geoforms.py
 - **СУД, ВЫВОДЯЩИЙ ФОРМУ ТЕМ ЖЕ ПРАВИЛОМ, ЧТО И ДОМ, НЕ ПРОВЕРЯЕТ ДОМ — ОН ЕМУ ВТОРИТ**  
   courts/genderverb_court.py, courts/story_chain_court.py, scripts/past_gender.py
 - **СУД, СВЕРЯЮЩИЙ ФОРМУ С ЗАКОНОМ ДОМА ЯЗЫКА, СИЛЁН РОВНО ТЕМ, ЧТО САМ ЯЗЫКА НЕ ЗНАЕТ**  
@@ -764,8 +766,6 @@
   tools/opslawforms.py, tools/pointforms.py
 - **СТРАНИЦА, ПОКАЗЫВАЮЩАЯ ЗАПРЕЩЁННОЕ, ОБЯЗАНА ПОМЕЧАТЬ ЕГО ЗНАКОМ, КОТОРЫЙ ЧИТАЕТ СУД**  
   courts/dosupport_court.py, courts/serestar_court.py
-- **СТРОИТЕЛЬ ПЕРЕЕХАЛ ИЗ КУЗНИЦЫ В ДОМ**  
-  tools/calforms.py, tools/countforms.py
 - **СТРОКА БЕЗ ЕДИНОГО ОБЪЯВЛЕННОГО СЛОВА БЕЗЗАЩИТНА: ЕЁ СУДИТ ВСЯКИЙ, КТО УЗНАЛ В НЕЙ**  
   scripts/signless_census.py, scripts/template_word.py
 - **СУД АРИФМЕТИКИ ЧИТАЕТ ТО, ЧТО СТОИ**  
