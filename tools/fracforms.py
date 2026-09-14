@@ -74,6 +74,99 @@ import phrases  # noqa: E402
         проц_обр="{r} sind {p} Prozent welcher Zahl? {r} sind {p} Prozent von {N}: {л}.",
         связка=("ist", "sind"),
     ),
+    # ЧЕТЫРЕ РОМАНСКИХ ЯЗЫКА (15.09) — И КОВКА ЭТА ЗАКАЗАНА ЧУЖИМ ДОЛГОМ.
+    #
+    # Прибор щербатости, впервые прочтя весь двор, назвал тринадцать немых форм дома
+    # действий на es/fr/it/pt, и среди них род `доля`. Чинить его в доме действий
+    # оказалось нечем: `actionpages` зовёт `fracforms.доля_слово`, а дом долей знал три
+    # языка. Дыра стояла не там, где была видна.
+    #
+    #     ЩЕРБАТОСТЬ ОДНОГО ДОМА БЫВАЕТ НЕМОТОЙ ДРУГОГО. Прибор называет клетку, где
+    #     молчание ВИДНО, а не ту, где оно НАЧИНАЕТСЯ; и правило чинки одно — идти по
+    #     зову вглубь, пока не найдётся дом, который молчит сам собою, а не по чужой вине.
+    #
+    # СВЯЗКА СОГЛАСУЕТСЯ С ЧИСЛИТЕЛЕМ ВО ВСЕХ ЧЕТЫРЁХ: «la mitad de 24 es 12», но «dos
+    # tercios de 24 son 16». Это тот же закон, что у русского («треть равна» / «две трети
+    # равны») и немецкого, и он уже держится слотом `{С}`.
+    #
+    # ФРАНЦУЗСКИЙ ВОПРОС НЕ БЕРЁТ СВЯЗКИ, И ЭТО НЕ ЛЕНЬ. «combien est la moitié» ложно, а
+    # «combien font» требует иного глагола, нежели утверждение; вопрос спрашивает о
+    # ВЕЛИЧИНЕ — «quelle est la valeur de deux tiers de 24 ?», — и согласование там стои́т
+    # при слове «valeur», одном для всех долей. Рамка вопроса просто не держит слота `{С}`,
+    # и это законно: `format` лишнего довода не требует.
+    #
+    # ВЕЩИ ДОПОЛНЕНИЯ ВЫБРАНЫ ПОД АРТИКЛЬ, А НЕ ПОД СЛОВАРЬ. Итальянский берёт «degli» перед
+    # гласной и s+согласной, «dei» перед прочими, — и все пять его вещей взяты первого рода
+    # («degli alunni», «degli operai», «degli amici»), ибо рамка дома ОДНА на все вещи.
+    # Французские вещи начинаются с согласной ради «de joueurs» без элизии; португальские
+    # взяты мужского рода ради «dos», и «crianças» отвергнуты именно поэтому.
+    "es": dict(
+        числ={1: "una", 2: "dos", 3: "tres", 4: "cuatro", 5: "cinco", 6: "seis", 7: "siete", 8: "ocho", 9: "nueve"},
+        знам={2: ("la mitad", "mitades"), 3: ("un tercio", "tercios"), 4: ("un cuarto", "cuartos"), 5: ("un quinto", "quintos"),
+              6: ("un sexto", "sextos"), 7: ("un séptimo", "séptimos"), 8: ("un octavo", "octavos"), 9: ("un noveno", "novenos"),
+              10: ("un décimo", "décimos")},
+        доля_утв="{Ч} de {N} {С} {r}: {л}.", доля_воп="¿cuánto {С} {Ч} de {N}?",
+        проц_утв="el {p} por ciento de {N} es {r}: {л}.", проц_воп="¿cuánto es el {p} por ciento de {N}?",
+        дополн="{Ч} de los {В} {Г} un bolígrafo; {m} no. ¿cuántos {В} hay? {m} {С2} {Ч2} de {N}: {л}. hay {N} {В} en total.",
+        имеют=("tiene", "tienen"),
+        вещи=("alumnos", "estudiantes", "niños", "trabajadores", "jugadores"),
+        число_утв="{Ч} de un número {С} {r}. ¿qué número es? {r} {С} {Ч} de {N}: {л}.",
+        проц_обр="¿{r} es el {p} por ciento de qué número? {r} es el {p} por ciento de {N}: {л}.",
+        связка=("es", "son"),
+    ),
+    "fr": dict(
+        числ={1: "un", 2: "deux", 3: "trois", 4: "quatre", 5: "cinq", 6: "six", 7: "sept", 8: "huit", 9: "neuf"},
+        знам={2: ("la moitié", "moitiés"), 3: ("un tiers", "tiers"), 4: ("un quart", "quarts"), 5: ("un cinquième", "cinquièmes"),
+              6: ("un sixième", "sixièmes"), 7: ("un septième", "septièmes"), 8: ("un huitième", "huitièmes"),
+              9: ("un neuvième", "neuvièmes"), 10: ("un dixième", "dixièmes")},
+        доля_утв="{Ч} de {N} {С} {r} : {л}.", доля_воп="quelle est la valeur de {Ч} de {N} ?",
+        проц_утв="{p} pour cent de {N} font {r} : {л}.", проц_воп="combien font {p} pour cent de {N} ?",
+        дополн="{Ч} des {В} {Г} un stylo ; {m} n'en ont pas. combien y a-t-il de {В} ? {m} {С2} {Ч2} de {N} : {л}. il y a {N} {В} en tout.",
+        имеют=("a", "ont"),
+        вещи=("joueurs", "garçons", "voisins", "clients", "danseurs"),
+        число_утв="{Ч} d'un nombre {С} {r}. quel est ce nombre ? {r} {С} {Ч} de {N} : {л}.",
+        проц_обр="{r} représente {p} pour cent de quel nombre ? {r} représente {p} pour cent de {N} : {л}.",
+        связка=("est", "sont"),
+    ),
+    "it": dict(
+        числ={1: "uno", 2: "due", 3: "tre", 4: "quattro", 5: "cinque", 6: "sei", 7: "sette", 8: "otto", 9: "nove"},
+        знам={2: ("la metà", "metà"), 3: ("un terzo", "terzi"), 4: ("un quarto", "quarti"), 5: ("un quinto", "quinti"),
+              6: ("un sesto", "sesti"), 7: ("un settimo", "settimi"), 8: ("un ottavo", "ottavi"), 9: ("un nono", "noni"),
+              10: ("un decimo", "decimi")},
+        доля_утв="{Ч} di {N} {С} {r}: {л}.", доля_воп="quanto {С} {Ч} di {N}?",
+        проц_утв="il {p} per cento di {N} è {r}: {л}.", проц_воп="quanto è il {p} per cento di {N}?",
+        дополн="{Ч} degli {В} {Г} una penna; {m} no. quanti {В} ci sono? {m} {С2} {Ч2} di {N}: {л}. ci sono {N} {В} in tutto.",
+        имеют=("ha", "hanno"),
+        вещи=("alunni", "studenti", "operai", "amici", "atleti"),
+        число_утв="{Ч} di un numero {С} {r}. qual è questo numero? {r} {С} {Ч} di {N}: {л}.",
+        проц_обр="{r} è il {p} per cento di quale numero? {r} è il {p} per cento di {N}: {л}.",
+        связка=("è", "sono"),
+    ),
+    "pt": dict(
+        числ={1: "um", 2: "dois", 3: "três", 4: "quatro", 5: "cinco", 6: "seis", 7: "sete", 8: "oito", 9: "nove"},
+        знам={2: ("metade", "metades"), 3: ("um terço", "terços"), 4: ("um quarto", "quartos"), 5: ("um quinto", "quintos"),
+              6: ("um sexto", "sextos"), 7: ("um sétimo", "sétimos"), 8: ("um oitavo", "oitavos"), 9: ("um nono", "nonos"),
+              10: ("um décimo", "décimos")},
+        доля_утв="{Ч} de {N} {С} {r}: {л}.", доля_воп="quanto {С} {Ч} de {N}?",
+        проц_утв="{p} por cento de {N} é {r}: {л}.", проц_воп="quanto é {p} por cento de {N}?",
+        дополн="{Ч} dos {В} {Г} uma caneta; {m} não têm. quantos {В} há? {m} {С2} {Ч2} de {N}: {л}. há {N} {В} no total.",
+        имеют=("tem", "têm"),
+        вещи=("alunos", "estudantes", "meninos", "trabalhadores", "jogadores"),
+        число_утв="{Ч} de um número {С} {r}. que número é esse? {r} {С} {Ч} de {N}: {л}.",
+        # ДВА ЧИСЛА ЧЕРЕЗ СВЯЗКУ СУТЬ РАВЕНСТВО, И СУД АРИФМЕТИКИ ЧИТАЕТ ИХ ИМЕННО ТАК (15.09).
+        # Первая редакция вопроса шла «{r} é {p} por cento de que número?» — и ворота отказали
+        # двадцати пяти страницам: «12 é 40» для суда арифметики есть «12 = 40», и он прав, ибо
+        # португальская связка одна на все случаи. Утверждение за вопросом его переубеждало —
+        # но вопрос, взятый сам собою, оставался ложью, а ворота судят КАЖДУЮ строку.
+        #
+        #     ЧУЖОЙ СУД, НАЗВАВШИЙ ЛОЖЬ, БЫВАЕТ ПРАВ, И ТОГДА ЧИНИТСЯ НЕ СУД, А ДОМ. Испанский
+        #     и итальянский той же беды не знают: у них меж числом и числом стои́т артикль
+        #     процента («el 40 por ciento», «il 40 per cento»), и связка не смыкает два числа.
+        #     Португальский артикля не ставит — и потому берёт другой глагол, как и французский,
+        #     писавший «représente» по своей причине.
+        проц_обр="{r} corresponde a {p} por cento de que número? {r} é {p} por cento de {N}: {л}.",
+        связка=("é", "são"),
+    ),
 }
 ФОРМЫ = ("доля", "проц", "дополн", "число", "проц_обр")
 
@@ -113,6 +206,23 @@ def _связка(язык, n):
     return я["связка"][0] if n == 1 else я["связка"][1]
 
 
+def _имеют(язык, n):
+    """ГЛАГОЛ ВЛАДЕНИЯ СОГЛАСУЕТСЯ С ДОЛЕЙ ТАК ЖЕ, КАК СВЯЗКА (15.09).
+
+    «la metà degli alunni HA una penna», но «tre quarti degli alunni HANNO»; «metade dos
+    alunos TEM» — «dois terços TÊM». Это тот же закон, что у связки, и потому он взят тем же
+    устройством, а не переписыванием рамок: пара при ключе `имеют`, выбор по числителю.
+
+    Язык, не объявивший ключа, получает пустую строку, и рамка его этого слота не держит —
+    так стои́т у трёх старших языков дома, чьи рамки писаны до этого закона и чьи миры
+    правкой не двинуты.
+    """
+    пара = ЯЗЫКИ[язык].get("имеют")
+    if not пара:
+        return ""
+    return пара[0] if n == 1 else пара[1]
+
+
 def _все_доли():
     вон = []
     for d in range(2, 11):
@@ -144,7 +254,8 @@ def страница(язык, форма, **п):
         n, d, q = п["n"], п["d"], п["q"]           # q per share; without = q·(d − n); total = q·d
         m, N = q * (d - n), q * d
         л = f"{d} − {n} = {d - n}, {m} ÷ {d - n} = {q}, {q} × {d} = {N}"
-        return я["дополн"].format(Ч=доля_слово(язык, n, d), В=я["вещи"][п["вещь"]], m=m, Ч2=доля_слово(язык, d - n, d), N=N, л=л, С2=_связка(язык, d - n))
+        return я["дополн"].format(Ч=доля_слово(язык, n, d), В=я["вещи"][п["вещь"]], m=m, Ч2=доля_слово(язык, d - n, d), N=N, л=л,
+                                  С2=_связка(язык, d - n), Г=_имеют(язык, n))
     if форма == "число":
         n, d, q = п["n"], п["d"], п["q"]           # r = q·n is the share, N = q·d the number
         r, N = q * n, q * d
@@ -166,6 +277,7 @@ def _дыры(язык):
     доли = [доля_слово(язык, n, d) for n, d in ДОЛИ]
     return {"Ч": _альт(доли), "Ч2": _альт(доли), "N": r"(\d+)", "r": r"(\d+)", "m": r"(\d+)", "p": r"(\d+)",
             "В": _альт(я["вещи"]), "С": _альт(я["связка"]), "С2": _альт(я["связка"]),
+            "Г": _альт(я.get("имеют") or ("",)),
             "л": r"((?:\d+ [÷×−] \d+ = \d+(?:, )?)+)"}
 
 

@@ -158,6 +158,7 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         некоторые="у {Xр} было {n} {Тn}. {Он} отдал{а} несколько. теперь у {него} осталось {r} {Тr}. сколько {Тмн} {он} отдал{а}? {k}: {n} − {r} = {k}.",
         итог="у {Xр} {a} {Ц1} {Тмн} и {b} {Ц2} {Тмн}. сколько {Тмн} у {Xр} {ГОЛОВА}? {s} {Тs}: {a} + {b} = {s}.",
         итог_всего="у {Xр} {a} {Ц1} {Тмн} и {b} {Ц2} {Тмн}. сколько {Тмн} у {Xр}? всего {s} {Тs}: {a} + {b} = {s}.",
+        единица="1 {Т1} стоит {n} ₽. сколько стоят {k} {Тk}? {v} ₽: {k} × {n} = {v}.",
         осталось="у {Xр} было {n} {Тn}. {Он} отдал{а} {k}. сколько у {него} теперь? теперь у {него} осталось {r}: {n} − {k} = {r}.",
         из_них="у {Xр} было {n} {Тn}. {Он} отдал{а} {k} из них {Yд}. сколько {Тмн} у {него} теперь? {r}: {n} − {k} = {r}.",
         ему="у {Xр} было {n} {Тn}. {Y} дал{аY} {ему} ещё {k}. сколько {Тмн} у {него} теперь? {s}: {n} + {k} = {s}.",
@@ -254,6 +255,8 @@ for _язык, _пара in romgram.ПАРЫ.items():
         взял_скрыто="{X} hatte {n} {Тn}. {Y} nahm {ему} {СК} {Тмн} weg. jetzt hat {он} {r} {Тr}. wie viele {Тмн} nahm {Y} weg? {k}: {n} − {r} = {k}.",
         некоторые="{X} hatte {n} {Тn}. {Он} gab einige weg. jetzt hat {он} noch {r} {Тr}. wie viele {Тмн} gab {он} weg? {k}: {n} − {r} = {k}.",
         итог="{X} hat {a} {Ц1} {Тмн} und {b} {Ц2} {Тмн}. wie viele {Тмн} hat {X} {ГОЛОВА}? {s} {Тs}: {a} + {b} = {s}.",
+        итог_всего="{X} hat {a} {Ц1} {Тмн} und {b} {Ц2} {Тмн}. wie viele {Тмн} hat {X}? insgesamt {s} {Тs}: {a} + {b} = {s}.",
+        единица="1 {Т1} kostet {n} €. wie viel kosten {k} {Тk}? {v} €: {k} × {n} = {v}.",
         из_них="{X} hatte {n} {Тn}. {Он} gab {k} davon an {Y}. wie viele {Тмн} hat {он} jetzt? {r}: {n} − {k} = {r}.",
         три="{X} sammelte {n} {Тn}. {X} kaufte noch {k}. {он} verlor {m} davon. wie viele {Тмн} hat {X} noch? {t}: {n} + {k} − {m} = {t}.",
         три_шаги="{X} sammelte {n} {Тn}. {X} kaufte noch {k}. {он} verlor {m} davon. wie viele {Тмн} hat {X} noch? Schritt 1: {n} + {k} = {s}. Schritt 2: {s} − {m} = {t}. Ergebnis: {t}.",
@@ -288,6 +291,8 @@ for _язык, _пара in romgram.ПАРЫ.items():
         взял_скрыто="{X} avait {n} {Тn}. {Y} {ему} en a pris {СК}. maintenant {он} a {r} {Тr}. combien {Y} en a-t-{онY} pris ? {k} : {n} − {r} = {k}.",
         некоторые="{X} avait {n} {Тn}. {Он} en a donné quelques-unes. maintenant il {ему} en reste {r}. combien de {Тмн} a-t-{он} données ? {k} : {n} − {r} = {k}.",
         итог="{X} a {a} {Тмн} {Ц1} et {b} {Тмн} {Ц2}. combien de {Тмн} {X} a-t-{он} {ГОЛОВА} ? {s} {Тs} : {a} + {b} = {s}.",
+        итог_всего="{X} a {a} {Тмн} {Ц1} et {b} {Тмн} {Ц2}. combien de {Тмн} {X} a-t-{он} ? au total {s} {Тs} : {a} + {b} = {s}.",
+        единица="1 {Т1} coûte {n} €. combien coûtent {k} {Тk} ? {v} € : {k} × {n} = {v}.",
         из_них="{X} avait {n} {Тn}. {Он} en a donné {k} à {Y}. combien de {Тмн} a-t-{он} maintenant ? {r} : {n} − {k} = {r}.",
         три="{X} a ramassé {n} {Тn}. {X} en a acheté {k} de plus. {он} en a perdu {m}. combien de {Тмн} reste-t-il à {X} ? {t} : {n} + {k} − {m} = {t}.",
         три_шаги="{X} a ramassé {n} {Тn}. {X} en a acheté {k} de plus. {он} en a perdu {m}. combien de {Тмн} reste-t-il à {X} ? étape 1 : {n} + {k} = {s}. étape 2 : {s} − {m} = {t}. total : {t}.",
@@ -330,6 +335,8 @@ for _язык, _пара in romgram.ПАРЫ.items():
         взял_скрыто="{X} tenía {n} {Тn}. {Y} {ему} quitó {СК} {Тмн}. ahora tiene {r} {Тr}. ¿{кск} {Тмн} quitó {Y}? {k}: {n} − {r} = {k}.",
         некоторые="{X} tenía {n} {Тn}. dio {algunas}. ahora le quedan {r} {Тr}. ¿{кск} {Тмн} dio? {k}: {n} − {r} = {k}.",
         итог="{X} tiene {a} {Тмн} {Ц1} y {b} {Тмн} {Ц2}. ¿{кск} {Тмн} tiene {X} {ГОЛОВА}? {s} {Тs}: {a} + {b} = {s}.",
+        итог_всего="{X} tiene {a} {Тмн} {Ц1} y {b} {Тмн} {Ц2}. ¿{кск} {Тмн} tiene {X}? en total {s} {Тs}: {a} + {b} = {s}.",
+        единица="1 {Т1} cuesta {n} €. ¿cuánto cuestan {k} {Тk}? {v} €: {k} × {n} = {v}.",
         из_них="{X} tenía {n} {Тn}. dio {k} de {ellas} a {Y}. ¿{кск} {Тмн} tiene ahora? {r}: {n} − {k} = {r}.",
         три="{X} recogió {n} {Тn}. {X} compró {k} más. {он} perdió {m}. ¿qué cantidad de {Тмн} le queda a {X}? {t}: {n} + {k} − {m} = {t}.",
         три_шаги="{X} recogió {n} {Тn}. {X} compró {k} más. {он} perdió {m}. ¿qué cantidad de {Тмн} le queda a {X}? paso 1: {n} + {k} = {s}. paso 2: {s} − {m} = {t}. total: {t}.",
@@ -364,6 +371,8 @@ for _язык, _пара in romgram.ПАРЫ.items():
         взял_скрыто="{X} aveva {n} {Тn}. {Y} {ему} ha preso {СК} {Тмн}. ora ha {r} {Тr}. {quante} {Тмн} ha preso {Y}? {k}: {n} − {r} = {k}.",
         некоторые="{X} aveva {n} {Тn}. ne ha {date} {alcune}. ora {ему} restano {r} {Тr}. {quante} {Тмн} ha dato? {k}: {n} − {r} = {k}.",
         итог="{X} ha {a} {Тмн} {Ц1} e {b} {Тмн} {Ц2}. {quante} {Тмн} ha {X} {ГОЛОВА}? {s} {Тs}: {a} + {b} = {s}.",
+        итог_всего="{X} ha {a} {Тмн} {Ц1} e {b} {Тмн} {Ц2}. {quante} {Тмн} ha {X}? in tutto {s} {Тs}: {a} + {b} = {s}.",
+        единица="1 {Т1} costa {n} €. quanto costano {k} {Тk}? {v} €: {k} × {n} = {v}.",
         из_них="{X} aveva {n} {Тn}. ne ha {date} {k} a {Y}. {quante} {Тмн} ha adesso? {r}: {n} − {k} = {r}.",
         три="{X} ha raccolto {n} {Тn}. {X} ha comprato {altre} {k} {Тk}. {он} ha perso {m} {Тm}. che quantità di {Тмн} resta a {X}? {t}: {n} + {k} − {m} = {t}.",
         три_шаги="{X} ha raccolto {n} {Тn}. {X} ha comprato {altre} {k} {Тk}. {он} ha perso {m} {Тm}. che quantità di {Тмн} resta a {X}? passo 1: {n} + {k} = {s}. passo 2: {s} − {m} = {t}. totale: {t}.",
@@ -398,6 +407,8 @@ for _язык, _пара in romgram.ПАРЫ.items():
         взял_скрыто="{X} tinha {n} {Тn}. {Y} tirou-{ему} {СК} {Тмн}. agora tem {r} {Тr}. {quantas} {Тмн} tirou {Y}? {k}: {n} − {r} = {k}.",
         некоторые="{X} tinha {n} {Тn}. deu {algumas}. agora tem {r} {Тr}. {quantas} {Тмн} deu? {k}: {n} − {r} = {k}.",
         итог="{X} tem {a} {Тмн} {Ц1} e {b} {Тмн} {Ц2}. {quantas} {Тмн} tem {X} {ГОЛОВА}? {s} {Тs}: {a} + {b} = {s}.",
+        итог_всего="{X} tem {a} {Тмн} {Ц1} e {b} {Тмн} {Ц2}. {quantas} {Тмн} tem {X}? no total {s} {Тs}: {a} + {b} = {s}.",
+        единица="1 {Т1} custa {n} €. quanto custam {k} {Тk}? {v} €: {k} × {n} = {v}.",
         из_них="{X} tinha {n} {Тn}. deu {k} {delas} {Yд}. {quantas} {Тмн} tem agora? {r}: {n} − {k} = {r}.",
         три="{X} apanhou {n} {Тn}. {X} comprou mais {k}. {он} perdeu {m}. que quantidade de {Тмн} resta {Xд}? {t}: {n} + {k} − {m} = {t}.",
         три_шаги="{X} apanhou {n} {Тn}. {X} comprou mais {k}. {он} perdeu {m}. que quantidade de {Тмн} resta {Xд}? passo 1: {n} + {k} = {s}. passo 2: {s} − {m} = {t}. total: {t}.",
@@ -433,6 +444,8 @@ for _язык, _пара in romgram.ПАРЫ.items():
         взял_скрыто="{X} had {n} {Тn}. {Y} nam er {СК} van {него}. nu heeft {он} {r} {Тr}. hoeveel {Тмн} nam {Y}? {k}: {n} − {r} = {k}.",
         некоторые="{X} had {n} {Тn}. {он} gaf er een paar weg. nu heeft {он} er nog {r}. hoeveel {Тмн} gaf {он} weg? {k}: {n} − {r} = {k}.",
         итог="{X} heeft {a} {Ц1} {Тмн} en {b} {Ц2} {Тмн}. hoeveel {Тмн} heeft {X} {ГОЛОВА}? {s} {Тs}: {a} + {b} = {s}.",
+        итог_всего="{X} heeft {a} {Ц1} {Тмн} en {b} {Ц2} {Тмн}. hoeveel {Тмн} heeft {X}? in totaal {s} {Тs}: {a} + {b} = {s}.",
+        единица="1 {Т1} kost {n} €. hoeveel kosten {k} {Тk}? {v} €: {k} × {n} = {v}.",
         из_них="{X} had {n} {Тn}. {он} gaf er {k} aan {Y}. hoeveel {Тмн} heeft {он} nu? {r}: {n} − {k} = {r}.",
         три="{X} verzamelde {n} {Тn}. {X} kocht er nog {k} bij. {он} verloor er {m}. hoeveel {Тмн} heeft {X} nog? {t}: {n} + {k} − {m} = {t}.",
         три_шаги="{X} verzamelde {n} {Тn}. {X} kocht er nog {k} bij. {он} verloor er {m}. hoeveel {Тмн} heeft {X} nog? stap 1: {n} + {k} = {s}. stap 2: {s} − {m} = {t}. totaal: {t}.",
@@ -467,6 +480,8 @@ for _язык, _пара in romgram.ПАРЫ.items():
         взял_скрыто="{X} miał{а} {n} {Тn}. {Y} zabrał{аY} {ему} {СК} {Тмн}. teraz ma {r} {Тr}. ile {Тмн} zabrał{аY} {Y}? {k}: {n} − {r} = {k}.",
         некоторые="{X} miał{а} {n} {Тn}. oddał{а} kilka. teraz ma {r} {Тr}. ile {Тмн} oddał{а}? {k}: {n} − {r} = {k}.",
         итог="{X} ma {a} {Ц1} {Тмн} i {b} {Ц2} {Тмн}. ile {Тмн} ma {X} {ГОЛОВА}? {s} {Тs}: {a} + {b} = {s}.",
+        итог_всего="{X} ma {a} {Ц1} {Тмн} i {b} {Ц2} {Тмн}. ile {Тмн} ma {X}? łącznie {s} {Тs}: {a} + {b} = {s}.",
+        единица="1 {Т1} kosztuje {n} zł. ile kosztują {k} {Тk}? {v} zł: {k} × {n} = {v}.",
         из_них="{X} miał{а} {n} {Тn}. oddał{а} {k} z nich {Yд}. ile {Тмн} ma teraz? {r}: {n} − {k} = {r}.",
         три="{X} zebrał{а} {n} {Тn}. {X} kupił{а} jeszcze {k}. {он} zgubił{а} {m} z nich. ile {Тмн} zostało {Xд}? {t}: {n} + {k} − {m} = {t}.",
         три_шаги="{X} zebrał{а} {n} {Тn}. {X} kupił{а} jeszcze {k}. {он} zgubił{а} {m} z nich. ile {Тмн} zostało {Xд}? krok 1: {n} + {k} = {s}. krok 2: {s} − {m} = {t}. razem: {t}.",
@@ -511,7 +526,10 @@ for _язык, _пара in romgram.ПАРЫ.items():
                        # Marta» в бразильской, а pt-свод писан европейским.
                        "гнездо_датива": frozenset({"ru", "en", "de", "fr", "it", "pt",
                                                    "nl", "pl"}),
-                       "единица": frozenset({"ru"}),
+                       # ПРОПУСК СНЯТ (15.09): русская рамка цены написана, и прибор
+                       # щербатости назвал это объявление ЧАСТИЧНЫМ — оно называло одним
+                       # русским то, что молчало на восьми языках из девяти.
+
                        # «possess» — второй английский глагол владения; у других языков один
                        "владеет2": frozenset({"ru", "de", "fr", "es", "it", "pt", "nl", "pl"}),
                        # hold / keep — английские глаголы держания (holon: own/hold/keep становятся
@@ -744,7 +762,15 @@ def _страница_сырая(язык, форма, i, j, Т, n, k, вари�
         п.update(В1=в1, В2=в2)
     if форма == "единица":
         n_, k_ = ЦЕНЫ[вариант % len(ЦЕНЫ)]
-        п.update(n=n_, k=k_, v=n_ * k_, Тмн=A._вещь(язык, Т, 5))
+        # ФОРМА ВЕЩИ ИДЁТ ЗА ЧИСЛОМ, А ЧИСЛО ЗДЕСЬ ПОДМЕНЯЕТСЯ (15.09). Пара цены берётся из
+        # своего ряда и кладётся поверх `k`, а `Тk` был сочтён выше по СТАРОМУ числу — и
+        # английская рамка того не замечала, ибо берёт `Тмн`, одну на все числа. Славянская
+        # рамка замечает сразу: «сколько стоят 4 монет» вместо «4 монеты».
+        #
+        #     ЧИСЛО, ПОДМЕНЁННОЕ ПОСЛЕ СЧЁТА ФОРМЫ, ОСТАВЛЯЕТ ФОРМУ ОТ ПРЕЖНЕГО ЧИСЛА. Это
+        #     видно лишь тому языку, что гнёт вещь счётом, и потому молчало, пока рамка была
+        #     одна.
+        п.update(n=n_, k=k_, v=n_ * k_, Тмн=A._вещь(язык, Т, 5), Тk=A._вещь(язык, Т, k_))
     if форма == "товар":
         г1, г2, г3 = ТОВАРЫ[язык][вариант % len(ТОВАРЫ[язык])]
         п.update(Г1a=_счёт(г1, n, язык), Г2b=_счёт(г2, k, язык), Г3мн=г3[-1], Г3s=_счёт(г3, n + k, язык))
