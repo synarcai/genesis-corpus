@@ -6,7 +6,7 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 6231 разных законов на 7777 упоминаний; сказанных однажды — 5823, и они остаются при своём месте.
+Всего в дереве 6233 разных законов на 7779 упоминаний; сказанных однажды — 5825, и они остаются при своём месте.
 
 
 ## Держат 81 файлов
@@ -340,7 +340,7 @@
 - **РАМКА, СОБРАННАЯ ИЗ ЦЕЛЫХ СЛОВ, НЕ ЗНАЕТ, ЧТО ДВА ИЗ НИХ СЛИВАЮТСЯ**  
   tools/scaleforms.py, tools/svampforms.py, tools/worldfacts.py
 - **РОД ОБЪЯВЛЯЕТ ЧЕТВЁРКУ И НИЧЕГО БОЛЬШЕ**  
-  tools/gen_genesis_equation.py, tools/inqesit.py, tools/inqpltr.py
+  tools/eqforms.py, tools/inqesit.py, tools/inqpltr.py
 - **РОД ОБЪЯВЛЯЕТ ЧЕТЫРЕ СТУПЕНИ И НИЧЕГО БОЛЬШЕ**  
   tools/inqdefr.py, tools/inqptnl.py, tools/inquiryforms.py
 - **РОД ПРОШЕДШЕГО СУДИТСЯ ЗАКОНОМ ЗАМКНУТОГО МИРА, А НЕ ДЫРОЙ В КАЖДОЙ РАМКЕ**  
@@ -497,7 +497,7 @@
 - **ДЫРА, НАЙДЕННАЯ ОДНИМ НАПИСАНИЕМ, ЕСТЬ ДЫРА В ЗАПРОСЕ**  
   scripts/twin_world.py, tools/unitcmpforms.py
 - **ЕДИНИЦА ПРИ БУКВЕ НЕ ПИШЕТСЯ**  
-  courts/equation_court.py, tools/gen_genesis_equation.py
+  courts/equation_court.py, tools/eqforms.py
 - **ЕДИНСТВЕННЫЙ РАЗ, ЗАКРЫВАЕТ ДОРОГУ ДОМУ, КОТОРЫЙ ЕГО ОБЪЯСНИЛ БЫ**  
   scripts/refusal_only_word.py, tools/persondistforms.py
 - **ЗАКОН БЕЗ ГРАНИЦЫ ЕСТЬ ЛОЖЬ, СКАЗАННАЯ НАПОЛОВИНУ**  
