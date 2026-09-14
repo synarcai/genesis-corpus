@@ -6,7 +6,7 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 6233 разных законов на 7779 упоминаний; сказанных однажды — 5825, и они остаются при своём месте.
+Всего в дереве 6234 разных законов на 7781 упоминаний; сказанных однажды — 5826, и они остаются при своём месте.
 
 
 ## Держат 81 файлов
@@ -90,14 +90,17 @@
 - **ПОКАЗ ОТКАЗА УЧИТ, ЧТО ТАК НЕЛЬЗЯ, И НЕ УЧИТ, ПОЧЕМУ**  
   scripts/refusal_reason.py, tools/deaccforms.py, tools/fipartforms.py, tools/huobjforms.py, tools/idredupforms.py, tools/jaclassforms.py … и ещё 10
 
+## Держат 15 файлов
+
+- **МИР, ЧЬИ СТРАНИЦЫ НЕ НАЗВАНЫ РОДОМ, ЧИТАЕТСЯ ТОЛЬКО ТЕМ, КТО ЧИТАЕТ КУЗНИЦУ**  
+  tools/cmpmultforms.py, tools/gen_genesis_compare_mult.py, tools/gen_genesis_definitions.py, tools/gen_genesis_formula_lang.py, tools/gen_genesis_markdown.py, tools/gen_genesis_space.py … и ещё 9
+
 ## Держат 14 файлов
 
 - **ВОПРОС СУДИТСЯ СВОИМ ОТВЕТОМ, А РОД ОПРЕДЕЛЯЕТСЯ ОТВЕТОМ**  
   courts/algo_court.py, courts/compsci_court.py, courts/cyber_court.py, courts/formula_court.py, courts/linalg_court.py, courts/machine_court.py … и ещё 8
 - **ИСКОМОЕ ОБЪЯВЛЯЕТ СВОЙ ВОПРОС ОДИН РАЗ**  
   tools/compsciforms.py, tools/gen_genesis_algebra.py, tools/gen_genesis_algorithms.py, tools/gen_genesis_cybernetics.py, tools/gen_genesis_formulas.py, tools/gen_genesis_machine.py … и ещё 8
-- **МИР, ЧЬИ СТРАНИЦЫ НЕ НАЗВАНЫ РОДОМ, ЧИТАЕТСЯ ТОЛЬКО ТЕМ, КТО ЧИТАЕТ КУЗНИЦУ**  
-  tools/cmpmultforms.py, tools/gen_genesis_compare_mult.py, tools/gen_genesis_definitions.py, tools/gen_genesis_formula_lang.py, tools/gen_genesis_markdown.py, tools/gen_genesis_space.py … и ещё 8
 - **ОСТАЛЬНАЯ СТРАНИЦА У НЕГО НЕ**  
   scripts/house_mutant.py, tools/absforms.py, tools/deplurforms.py, tools/elisionforms.py, tools/genderforms.py, tools/hayforms.py … и ещё 8
 - **ПРОВЕРЯЕТСЯ, А ЛИШЬ ЧИСЛИТСЯ**  

@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ РОДОВ — 1446 объявленных родов показа в 230 домах
+# УКАЗАТЕЛЬ РОДОВ — 1479 объявленных родов показа в 231 домах
 
 Собран из дерева орудием `tools/genus_atlas.py`. Род объявляется домом в таблице
 `РОДЫ` — или, у домов старшего устройства, в таблице `ФОРМЫ`, — и всякая его
@@ -19,8 +19,8 @@
 Мера по страницам живёт в сайдкаре `datasets/GENESIS-FULL.genera.tsv`: номер
 строки свода → «дом · род», 290 002 строки из 442 600.
 
-**Родов 1446, различных имён 1200, страниц под ними 263236.**
-Объявлено словом `РОДЫ` в 173 домах, словом `ФОРМЫ` — в 57.
+**Родов 1479, различных имён 1221, страниц под ними 265571.**
+Объявлено словом `РОДЫ` в 174 домах, словом `ФОРМЫ` — в 57.
 Домов без своего мира показов — 0. Мир дома узнаётся ПО ВВОЗУ КУЗНИЦЫ,
 а не по окончанию имени файла: догадка «срезать forms» лгала о сорока одном доме.
 Домов, строящих страницу ПО ЗАПРОСУ и не держащих её набором, —
@@ -32,8 +32,8 @@
 **Страниц вне объявления — 0 в 0 домах** (рубеж долга 0): дом кует род, которого не объявил, и у страниц его нет
 имени. Число это обязано убывать.
 
-**ИМЯ РОДА НЕ ЕСТЬ КЛЮЧ — ключ есть пара `дом · род`.** Имён 1200, из них
-107 носят по нескольку домов, и родов под ними 353. Имя
+**ИМЯ РОДА НЕ ЕСТЬ КЛЮЧ — ключ есть пара `дом · род`.** Имён 1221, из них
+114 носят по нескольку домов, и родов под ними 372. Имя
 «спрошенное» стоит в тридцати с лишним домах, «спрошено и отвечено» — в двух
 десятках: это ИДИОМА ДОМА, а не один род, разбросанный по дереву.
 
@@ -1177,6 +1177,108 @@
 - **законы** — страниц 12
   зачем: ступень определений фразами рода
   образец: the area of a rectangle is the product of its two sides.
+
+## `gsmtaskforms` → мир `gsmforms`
+
+- **сумма** — страниц 80
+  зачем: семейство задач «сумма»: вопрос с ответом-уравнением
+  образец: Ann has 2 pens and Ben has 2 pens; the total number of pens is 4: 2 + 2 = 4.
+- **температура** — страниц 80
+  зачем: семейство задач «температура»: вопрос с ответом-уравнением
+  образец: the temperature was −6 degrees and fell by 2 degrees; the temperature in degrees is now −8: −6 − 2 = −8.
+- **процент** — страниц 80
+  зачем: семейство задач «процент»: вопрос с ответом-уравнением
+  образец: the class has 20 pupils and 1 of them are girls; the percentage of girls is 5 %: 1 ÷ 20 × 100 = 5.
+- **фунты** — страниц 45
+  зачем: семейство задач «фунты»: вопрос с ответом-уравнением
+  образец: the parcel weighs 16 ounces and a pound is 16 ounces; the weight in pounds is 1: 16 ÷ 16 = 1.
+- **глубина** — страниц 80
+  зачем: семейство задач «глубина»: вопрос с ответом-уравнением
+  образец: the tank is 2 feet wide and 2 feet long and holds 4 cubic feet of water; the tank's water depth is 1 foot: 4 ÷ (2 × 2) =
+- **вероятность** — страниц 72
+  зачем: семейство задач «вероятность»: вопрос с ответом-уравнением
+  образец: a bag holds 1 red marble and 1 blue marble; the probability of drawing a red marble, expressed as a fraction, is 1/2: 1 
+- **четверти** — страниц 70
+  зачем: семейство задач «четверти»: вопрос с ответом-уравнением
+  образец: if 3 is one quarter of the class, the class has 12 pupils: 3 ÷ 1 × 4 = 12.
+- **дополнение** — страниц 80
+  зачем: семейство задач «дополнение»: вопрос с ответом-уравнением
+  образец: there were originally 10 cars in the lot and 1 drove away; 9 cars remain: 10 − 1 = 9.
+- **население** — страниц 45
+  зачем: семейство задач «население»: вопрос с ответом-уравнением
+  образец: the town has 400 people and half of the whole population lives in the centre; 200 people live in the centre: 400 ÷ 2 = 2
+- **команда** — страниц 44
+  зачем: семейство задач «команда»: вопрос с ответом-уравнением
+  образец: the number of boys on the team is 3 and the number of girls is 2; the team has 5 players: 3 + 2 = 5.
+- **кратно** — страниц 74
+  зачем: семейство задач «кратно»: вопрос с ответом-уравнением
+  образец: the car cost 5000 dollars and the house cost twice as much as the car; the house cost 10000 dollars: 5000 × 2 = 10000.
+- **проект** — страниц 68
+  зачем: семейство задач «проект»: вопрос с ответом-уравнением
+  образец: the design started with 4 panels, was doubled and then reduced by 1; the final design has 7 panels: 4 × 2 − 1 = 7.
+- **окружность** — страниц 56
+  зачем: семейство задач «окружность»: вопрос с ответом-уравнением
+  образец: the circumference of the earth is taken as 4000 miles and the plane flies 400 miles per hour; the flight around the eart
+- **верёвки** — страниц 29
+  зачем: семейство задач «верёвки»: вопрос с ответом-уравнением
+  образец: the 2 ropes had a total length of 6 meters; the average rope is 3 meters long: 6 ÷ 2 = 3.
+- **трое** — страниц 80
+  зачем: семейство задач «трое»: вопрос с ответом-уравнением
+  образец: Ann has 3 books, Ben has 2 more books than Ann, and Carla has twice as many books as Ann; together Ann, Ben and Carla ha
+- **ставка** — страниц 80
+  зачем: семейство задач «ставка»: вопрос с ответом-уравнением
+  образец: Ann makes 2 candles an hour and works 2 hours; Ann makes 4 candles: 2 × 2 = 4.
+- **листки** — страниц 80
+  зачем: семейство задач «листки»: вопрос с ответом-уравнением
+  образец: Ann had 60 post-it notes, used 5 on the fridge and 3 on the door; Ann has 52 post-it notes left: 60 − 5 − 3 = 52.
+- **разница** — страниц 73
+  зачем: семейство задач «разница»: вопрос с ответом-уравнением
+  образец: Ann planted 4 trees in the morning and 2 trees in the afternoon; Ann planted 2 more trees in the morning than in the aft
+- **скидка** — страниц 80
+  зачем: семейство задач «скидка»: вопрос с ответом-уравнением
+  образец: each pack costs 20 dollars and there is a discount of 5 dollars on each pack; you have to pay 15 dollars for each pack: 
+- **всего** — страниц 80
+  зачем: семейство задач «всего»: вопрос с ответом-уравнением
+  образец: Ann has 3 pens in one box and 2 pens in another; Ann has 5 pens in all: 3 + 2 = 5.
+- **группы** — страниц 70
+  зачем: семейство задач «группы»: вопрос с ответом-уравнением
+  образец: there are 4 pupils and they stand in groups of 2; there are 2 groups: 4 ÷ 2 = 2.
+- **остаток_деления** — страниц 75
+  зачем: семейство задач «остаток_деления»: вопрос с ответом-уравнением
+  образец: there are 7 pupils and they stand in groups of 3; there are 2 groups and 1 pupil left over: 3 × 2 = 6, 7 − 6 = 1.
+- **больше** — страниц 80
+  зачем: семейство задач «больше»: вопрос с ответом-уравнением
+  образец: Ann received 4 emails in the morning and 2 emails in the afternoon; Ann received 2 more emails in the morning than in th
+- **отбор** — страниц 80
+  зачем: семейство задач «отбор»: вопрос с ответом-уравнением
+  образец: Ann received 3 emails in the morning, 4 in the afternoon and 2 in the evening; in the morning Ann received 3 emails.
+- **остаток** — страниц 80
+  зачем: семейство задач «остаток»: вопрос с ответом-уравнением
+  образец: the baker made 10 cakes and 5 pastries and sold 2 pastries; the baker still has 10 cakes: the pastries sold are not cake
+- **класс** — страниц 80
+  зачем: семейство задач «класс»: вопрос с ответом-уравнением
+  образец: there are 5 girls and 4 boys in the class; the class has 9 pupils: 5 + 4 = 9.
+- **деньги** — страниц 80
+  зачем: семейство задач «деньги»: вопрос с ответом-уравнением
+  образец: Ann bought 2 pens at 3 dollars each; Ann spent 6 dollars: 2 × 3 = 6.
+- **сдача** — страниц 69
+  зачем: семейство задач «сдача»: вопрос с ответом-уравнением
+  образец: Ann gave the craftsman 2 5-dollar bills for a hat worth 8 dollars; the change is 2 dollars: 2 × 5 − 8 = 2.
+- **прибыль** — страниц 80
+  зачем: семейство задач «прибыль»: вопрос с ответом-уравнением
+  образец: Ann bought the magazines at 24 dollars and sells them at 11/8 of the price; the profit is 9 dollars: 24 × 11 ÷ 8 − 24 = 
+- **завышение** — страниц 56
+  зачем: семейство задач «завышение»: вопрос с ответом-уравнением
+  образец: Ann reported 24 people at the concert, overstating the number by 20 percent; 20 people really attended: 24 × 100 ÷ (100 
+- **половина** — страниц 65
+  зачем: семейство задач «половина»: вопрос с ответом-уравнением
+  образец: there were 6 ants and half as many bugs as ants in the garden; there were 9 insects in all: 6 + 6 ÷ 2 = 9.
+- **части** — страниц 64
+  зачем: семейство задач «части»: вопрос с ответом-уравнением
+  образец: a house and a lot cost 60 dollars and the house cost twice as much as the lot; the lot cost 20 dollars: 60 ÷ 3 = 20, 2 +
+- **полосы** — страниц 80
+  зачем: семейство задач «полосы»: вопрос с ответом-уравнением
+  образец: the grasshopper jumped 4 inches. the mouse jumped 2 inches. the grasshopper jumped 2 more inches than the mouse: 4 − 2 =
 
 ## `handyforms` → мир `handy`
 
