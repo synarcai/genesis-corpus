@@ -1,0 +1,169 @@
+если число делится на 12, то оно делится на 4. вот 24: оно делится на 12 и оно делится на 4. что доказывает один случай? ничего: общее одним случаем не доказывается.
+«если число делится на 3, то оно делится на 6» — неверно. вот 9: оно делится на 3 и оно не делится на 6. что опровергает один случай? всё: общее одним случаем опровергается.
+если число делится на 9, то оно делится на 3. на ряду от 1 до 60 таких чисел 6, и у всех них делится на 3. что доказывает обход всего ряда? для этого ряда — всё: непроверенного не осталось.
+если число делится на 9, то оно имеет сумму цифр, кратную 9. вот 27: оно делится на 9 и оно имеет сумму цифр, кратную 9. что доказывает один случай? ничего: общее одним случаем не доказывается.
+если число делится на 6, то оно делится на 3. вот 12: оно делится на 6 и оно делится на 3. что доказывает один случай? ничего: общее одним случаем не доказывается.
+если число делится на 5, то оно кончается на 0 или на 5. вот 5: оно делится на 5 и оно кончается на 0 или на 5. что доказывает один случай? ничего: общее одним случаем не доказывается.
+«если число делится на 4, то оно делится на 12» — неверно. вот 8: оно делится на 4 и оно не делится на 12. что опровергает один случай? всё: общее одним случаем опровергается.
+если число делится на 9, то оно имеет сумму цифр, кратную 3. вот 27: оно делится на 9 и оно имеет сумму цифр, кратную 3. что доказывает один случай? ничего: общее одним случаем не доказывается.
+«если число делится на 3, то оно делится на 9» — неверно. вот 3: оно делится на 3 и оно не делится на 9. что опровергает один случай? всё: общее одним случаем опровергается.
+если число больше 30, то оно больше 10. вот 31: оно больше 30 и оно больше 10. что доказывает один случай? ничего: общее одним случаем не доказывается.
+если число больше 30, то оно не меньше 31. на ряду от 1 до 60 таких чисел 30, и у всех них не меньше 31. что доказывает обход всего ряда? для этого ряда — всё: непроверенного не осталось.
+если число делится на 10, то оно делится на 5. вот 30: оно делится на 10 и оно делится на 5. что доказывает один случай? ничего: общее одним случаем не доказывается.
+если число делится на 3, то оно имеет сумму цифр, кратную 3. вот 6: оно делится на 3 и оно имеет сумму цифр, кратную 3. что доказывает один случай? ничего: общее одним случаем не доказывается.
+если число делится на 4, то оно делится на 2. вот 4: оно делится на 4 и оно делится на 2. что доказывает один случай? ничего: общее одним случаем не доказывается.
+если число чётное, то оно делится на 2. на ряду от 1 до 60 таких чисел 30, и у всех них делится на 2. что доказывает обход всего ряда? для этого ряда — всё: непроверенного не осталось.
+«если число делится на 5, то оно делится на 15» — неверно. вот 20: оно делится на 5 и оно не делится на 15. что опровергает один случай? всё: общее одним случаем опровергается.
+
+if a number is divisible by 12, then it is divisible by 4. take 24: it is divisible by 12 and it is divisible by 4. what does one case prove? nothing: a general claim is not proved by one case.
+«if a number is divisible by 3, then it is divisible by 6» is false. take 9: it is divisible by 3 and it is not divisible by 6. what does one case refute? everything: a general claim is refuted by one case.
+if a number is divisible by 9, then it is divisible by 3. on the range from 1 to 60 there are 6 such numbers, and all of them is divisible by 3. what does walking the whole range prove? for this range — everything: nothing is left unchecked.
+if a number is divisible by 9, then it has a digit sum divisible by 9. take 27: it is divisible by 9 and it has a digit sum divisible by 9. what does one case prove? nothing: a general claim is not proved by one case.
+if a number is divisible by 6, then it is divisible by 3. take 12: it is divisible by 6 and it is divisible by 3. what does one case prove? nothing: a general claim is not proved by one case.
+if a number is divisible by 5, then it ends in 0 or 5. take 5: it is divisible by 5 and it ends in 0 or 5. what does one case prove? nothing: a general claim is not proved by one case.
+«if a number is divisible by 4, then it is divisible by 12» is false. take 8: it is divisible by 4 and it is not divisible by 12. what does one case refute? everything: a general claim is refuted by one case.
+if a number is divisible by 9, then it has a digit sum divisible by 3. take 27: it is divisible by 9 and it has a digit sum divisible by 3. what does one case prove? nothing: a general claim is not proved by one case.
+«if a number is divisible by 3, then it is divisible by 9» is false. take 3: it is divisible by 3 and it is not divisible by 9. what does one case refute? everything: a general claim is refuted by one case.
+if a number is greater than 30, then it is greater than 10. take 31: it is greater than 30 and it is greater than 10. what does one case prove? nothing: a general claim is not proved by one case.
+if a number is greater than 30, then it is at least 31. on the range from 1 to 60 there are 30 such numbers, and all of them is at least 31. what does walking the whole range prove? for this range — everything: nothing is left unchecked.
+if a number is divisible by 10, then it is divisible by 5. take 30: it is divisible by 10 and it is divisible by 5. what does one case prove? nothing: a general claim is not proved by one case.
+if a number is divisible by 3, then it has a digit sum divisible by 3. take 6: it is divisible by 3 and it has a digit sum divisible by 3. what does one case prove? nothing: a general claim is not proved by one case.
+if a number is divisible by 4, then it is divisible by 2. take 4: it is divisible by 4 and it is divisible by 2. what does one case prove? nothing: a general claim is not proved by one case.
+if a number is even, then it is divisible by 2. on the range from 1 to 60 there are 30 such numbers, and all of them is divisible by 2. what does walking the whole range prove? for this range — everything: nothing is left unchecked.
+«if a number is divisible by 5, then it is divisible by 15» is false. take 20: it is divisible by 5 and it is not divisible by 15. what does one case refute? everything: a general claim is refuted by one case.
+
+если число делится на 10, то оно делится на 5. на ряду от 1 до 60 таких чисел 6, и у всех них делится на 5. что доказывает обход всего ряда? для этого ряда — всё: непроверенного не осталось.
+«если число делится на 3, то оно делится на 9» — неверно. вот 6: оно делится на 3 и оно не делится на 9. что опровергает один случай? всё: общее одним случаем опровергается.
+если число делится на 5, то оно кончается на 0 или на 5. вот 10: оно делится на 5 и оно кончается на 0 или на 5. что доказывает один случай? ничего: общее одним случаем не доказывается.
+если число делится на 15, то оно делится на 5. вот 15: оно делится на 15 и оно делится на 5. что доказывает один случай? ничего: общее одним случаем не доказывается.
+«если число больше 10, то оно больше 30» — неверно. вот 11: оно больше 10 и оно не больше 30. что опровергает один случай? всё: общее одним случаем опровергается.
+если число делится на 3, то оно имеет сумму цифр, кратную 3. вот 9: оно делится на 3 и оно имеет сумму цифр, кратную 3. что доказывает один случай? ничего: общее одним случаем не доказывается.
+если число больше 30, то оно больше 10. вот 32: оно больше 30 и оно больше 10. что доказывает один случай? ничего: общее одним случаем не доказывается.
+«если число делится на 4, то оно делится на 12» — неверно. вот 16: оно делится на 4 и оно не делится на 12. что опровергает один случай? всё: общее одним случаем опровергается.
+если число делится на 9, то оно имеет сумму цифр, кратную 9. на ряду от 1 до 60 таких чисел 6, и у всех них имеет сумму цифр, кратную 9. что доказывает обход всего ряда? для этого ряда — всё: непроверенного не осталось.
+если число делится на 12, то оно делится на 4. вот 36: оно делится на 12 и оно делится на 4. что доказывает один случай? ничего: общее одним случаем не доказывается.
+если число делится на 4, то оно делится на 2. вот 8: оно делится на 4 и оно делится на 2. что доказывает один случай? ничего: общее одним случаем не доказывается.
+«если число делится на 2, то оно делится на 4» — неверно. вот 2: оно делится на 2 и оно не делится на 4. что опровергает один случай? всё: общее одним случаем опровергается.
+если число делится на 9, то оно имеет сумму цифр, кратную 3. на ряду от 1 до 60 таких чисел 6, и у всех них имеет сумму цифр, кратную 3. что доказывает обход всего ряда? для этого ряда — всё: непроверенного не осталось.
+если число делится на 6, то оно делится на 3. вот 18: оно делится на 6 и оно делится на 3. что доказывает один случай? ничего: общее одним случаем не доказывается.
+«если число делится на 3, то оно делится на 6» — неверно. вот 15: оно делится на 3 и оно не делится на 6. что опровергает один случай? всё: общее одним случаем опровергается.
+если число делится на 10, то оно кончается на 0. вот 10: оно делится на 10 и оно кончается на 0. что доказывает один случай? ничего: общее одним случаем не доказывается.
+
+if a number is divisible by 10, then it is divisible by 5. on the range from 1 to 60 there are 6 such numbers, and all of them is divisible by 5. what does walking the whole range prove? for this range — everything: nothing is left unchecked.
+«if a number is divisible by 3, then it is divisible by 9» is false. take 6: it is divisible by 3 and it is not divisible by 9. what does one case refute? everything: a general claim is refuted by one case.
+if a number is divisible by 5, then it ends in 0 or 5. take 10: it is divisible by 5 and it ends in 0 or 5. what does one case prove? nothing: a general claim is not proved by one case.
+if a number is divisible by 15, then it is divisible by 5. take 15: it is divisible by 15 and it is divisible by 5. what does one case prove? nothing: a general claim is not proved by one case.
+«if a number is greater than 10, then it is greater than 30» is false. take 11: it is greater than 10 and it is not greater than 30. what does one case refute? everything: a general claim is refuted by one case.
+if a number is divisible by 3, then it has a digit sum divisible by 3. take 9: it is divisible by 3 and it has a digit sum divisible by 3. what does one case prove? nothing: a general claim is not proved by one case.
+if a number is greater than 30, then it is greater than 10. take 32: it is greater than 30 and it is greater than 10. what does one case prove? nothing: a general claim is not proved by one case.
+«if a number is divisible by 4, then it is divisible by 12» is false. take 16: it is divisible by 4 and it is not divisible by 12. what does one case refute? everything: a general claim is refuted by one case.
+if a number is divisible by 9, then it has a digit sum divisible by 9. on the range from 1 to 60 there are 6 such numbers, and all of them has a digit sum divisible by 9. what does walking the whole range prove? for this range — everything: nothing is left unchecked.
+if a number is divisible by 12, then it is divisible by 4. take 36: it is divisible by 12 and it is divisible by 4. what does one case prove? nothing: a general claim is not proved by one case.
+if a number is divisible by 4, then it is divisible by 2. take 8: it is divisible by 4 and it is divisible by 2. what does one case prove? nothing: a general claim is not proved by one case.
+«if a number is divisible by 2, then it is divisible by 4» is false. take 2: it is divisible by 2 and it is not divisible by 4. what does one case refute? everything: a general claim is refuted by one case.
+if a number is divisible by 9, then it has a digit sum divisible by 3. on the range from 1 to 60 there are 6 such numbers, and all of them has a digit sum divisible by 3. what does walking the whole range prove? for this range — everything: nothing is left unchecked.
+if a number is divisible by 6, then it is divisible by 3. take 18: it is divisible by 6 and it is divisible by 3. what does one case prove? nothing: a general claim is not proved by one case.
+«if a number is divisible by 3, then it is divisible by 6» is false. take 15: it is divisible by 3 and it is not divisible by 6. what does one case refute? everything: a general claim is refuted by one case.
+if a number is divisible by 10, then it ends in 0. take 10: it is divisible by 10 and it ends in 0. what does one case prove? nothing: a general claim is not proved by one case.
+
+если число делится на 3, то оно имеет сумму цифр, кратную 3. на ряду от 1 до 60 таких чисел 20, и у всех них имеет сумму цифр, кратную 3. что доказывает обход всего ряда? для этого ряда — всё: непроверенного не осталось.
+если число чётное, то оно делится на 2. вот 2: оно чётное и оно делится на 2. что доказывает один случай? ничего: общее одним случаем не доказывается.
+если число делится на 15, то оно делится на 5. вот 30: оно делится на 15 и оно делится на 5. что доказывает один случай? ничего: общее одним случаем не доказывается.
+если число делится на 4, то оно делится на 2. вот 12: оно делится на 4 и оно делится на 2. что доказывает один случай? ничего: общее одним случаем не доказывается.
+«если число делится на 3, то оно делится на 9» — неверно. вот 12: оно делится на 3 и оно не делится на 9. что опровергает один случай? всё: общее одним случаем опровергается.
+если число больше 30, то оно не меньше 31. вот 31: оно больше 30 и оно не меньше 31. что доказывает один случай? ничего: общее одним случаем не доказывается.
+если число делится на 10, то оно кончается на 0. вот 20: оно делится на 10 и оно кончается на 0. что доказывает один случай? ничего: общее одним случаем не доказывается.
+если число больше 30, то оно больше 10. вот 33: оно больше 30 и оно больше 10. что доказывает один случай? ничего: общее одним случаем не доказывается.
+если число делится на 6, то оно делится на 3. на ряду от 1 до 60 таких чисел 10, и у всех них делится на 3. что доказывает обход всего ряда? для этого ряда — всё: непроверенного не осталось.
+«если число больше 10, то оно больше 30» — неверно. вот 12: оно больше 10 и оно не больше 30. что опровергает один случай? всё: общее одним случаем опровергается.
+«если число делится на 2, то оно делится на 4» — неверно. вот 6: оно делится на 2 и оно не делится на 4. что опровергает один случай? всё: общее одним случаем опровергается.
+если число делится на 5, то оно кончается на 0 или на 5. вот 15: оно делится на 5 и оно кончается на 0 или на 5. что доказывает один случай? ничего: общее одним случаем не доказывается.
+если число делится на 12, то оно делится на 4. на ряду от 1 до 60 таких чисел 5, и у всех них делится на 4. что доказывает обход всего ряда? для этого ряда — всё: непроверенного не осталось.
+если число делится на 9, то оно делится на 3. вот 9: оно делится на 9 и оно делится на 3. что доказывает один случай? ничего: общее одним случаем не доказывается.
+«если число имеет сумму цифр, кратную 3, то оно делится на 9» — неверно. вот 3: оно имеет сумму цифр, кратную 3 и оно не делится на 9. что опровергает один случай? всё: общее одним случаем опровергается.
+«если число делится на 5, то оно делится на 10» — неверно. вот 5: оно делится на 5 и оно не делится на 10. что опровергает один случай? всё: общее одним случаем опровергается.
+
+if a number is divisible by 3, then it has a digit sum divisible by 3. on the range from 1 to 60 there are 20 such numbers, and all of them has a digit sum divisible by 3. what does walking the whole range prove? for this range — everything: nothing is left unchecked.
+if a number is even, then it is divisible by 2. take 2: it is even and it is divisible by 2. what does one case prove? nothing: a general claim is not proved by one case.
+if a number is divisible by 15, then it is divisible by 5. take 30: it is divisible by 15 and it is divisible by 5. what does one case prove? nothing: a general claim is not proved by one case.
+if a number is divisible by 4, then it is divisible by 2. take 12: it is divisible by 4 and it is divisible by 2. what does one case prove? nothing: a general claim is not proved by one case.
+«if a number is divisible by 3, then it is divisible by 9» is false. take 12: it is divisible by 3 and it is not divisible by 9. what does one case refute? everything: a general claim is refuted by one case.
+if a number is greater than 30, then it is at least 31. take 31: it is greater than 30 and it is at least 31. what does one case prove? nothing: a general claim is not proved by one case.
+if a number is divisible by 10, then it ends in 0. take 20: it is divisible by 10 and it ends in 0. what does one case prove? nothing: a general claim is not proved by one case.
+if a number is greater than 30, then it is greater than 10. take 33: it is greater than 30 and it is greater than 10. what does one case prove? nothing: a general claim is not proved by one case.
+if a number is divisible by 6, then it is divisible by 3. on the range from 1 to 60 there are 10 such numbers, and all of them is divisible by 3. what does walking the whole range prove? for this range — everything: nothing is left unchecked.
+«if a number is greater than 10, then it is greater than 30» is false. take 12: it is greater than 10 and it is not greater than 30. what does one case refute? everything: a general claim is refuted by one case.
+«if a number is divisible by 2, then it is divisible by 4» is false. take 6: it is divisible by 2 and it is not divisible by 4. what does one case refute? everything: a general claim is refuted by one case.
+if a number is divisible by 5, then it ends in 0 or 5. take 15: it is divisible by 5 and it ends in 0 or 5. what does one case prove? nothing: a general claim is not proved by one case.
+if a number is divisible by 12, then it is divisible by 4. on the range from 1 to 60 there are 5 such numbers, and all of them is divisible by 4. what does walking the whole range prove? for this range — everything: nothing is left unchecked.
+if a number is divisible by 9, then it is divisible by 3. take 9: it is divisible by 9 and it is divisible by 3. what does one case prove? nothing: a general claim is not proved by one case.
+«if a number has a digit sum divisible by 3, then it is divisible by 9» is false. take 3: it has a digit sum divisible by 3 and it is not divisible by 9. what does one case refute? everything: a general claim is refuted by one case.
+«if a number is divisible by 5, then it is divisible by 10» is false. take 5: it is divisible by 5 and it is not divisible by 10. what does one case refute? everything: a general claim is refuted by one case.
+
+если число больше 30, то оно больше 10. на ряду от 1 до 60 таких чисел 30, и у всех них больше 10. что доказывает обход всего ряда? для этого ряда — всё: непроверенного не осталось.
+если число делится на 9, то оно имеет сумму цифр, кратную 3. вот 9: оно делится на 9 и оно имеет сумму цифр, кратную 3. что доказывает один случай? ничего: общее одним случаем не доказывается.
+если число чётное, то оно делится на 2. вот 4: оно чётное и оно делится на 2. что доказывает один случай? ничего: общее одним случаем не доказывается.
+если число делится на 10, то оно кончается на 0. вот 30: оно делится на 10 и оно кончается на 0. что доказывает один случай? ничего: общее одним случаем не доказывается.
+если число делится на 5, то оно кончается на 0 или на 5. на ряду от 1 до 60 таких чисел 12, и у всех них кончается на 0 или на 5. что доказывает обход всего ряда? для этого ряда — всё: непроверенного не осталось.
+если число делится на 9, то оно имеет сумму цифр, кратную 9. вот 9: оно делится на 9 и оно имеет сумму цифр, кратную 9. что доказывает один случай? ничего: общее одним случаем не доказывается.
+если число больше 30, то оно не меньше 31. вот 32: оно больше 30 и оно не меньше 31. что доказывает один случай? ничего: общее одним случаем не доказывается.
+«если число делится на 2, то оно делится на 4» — неверно. вот 10: оно делится на 2 и оно не делится на 4. что опровергает один случай? всё: общее одним случаем опровергается.
+«если число делится на 5, то оно делится на 10» — неверно. вот 15: оно делится на 5 и оно не делится на 10. что опровергает один случай? всё: общее одним случаем опровергается.
+«если число делится на 5, то оно делится на 15» — неверно. вот 5: оно делится на 5 и оно не делится на 15. что опровергает один случай? всё: общее одним случаем опровергается.
+«если число больше 10, то оно больше 30» — неверно. вот 13: оно больше 10 и оно не больше 30. что опровергает один случай? всё: общее одним случаем опровергается.
+«если число имеет сумму цифр, кратную 3, то оно делится на 9» — неверно. вот 6: оно имеет сумму цифр, кратную 3 и оно не делится на 9. что опровергает один случай? всё: общее одним случаем опровергается.
+если число делится на 4, то оно делится на 2. на ряду от 1 до 60 таких чисел 15, и у всех них делится на 2. что доказывает обход всего ряда? для этого ряда — всё: непроверенного не осталось.
+если число делится на 10, то оно делится на 5. вот 10: оно делится на 10 и оно делится на 5. что доказывает один случай? ничего: общее одним случаем не доказывается.
+если число делится на 9, то оно делится на 3. вот 18: оно делится на 9 и оно делится на 3. что доказывает один случай? ничего: общее одним случаем не доказывается.
+если число делится на 15, то оно делится на 5. вот 45: оно делится на 15 и оно делится на 5. что доказывает один случай? ничего: общее одним случаем не доказывается.
+
+if a number is greater than 30, then it is greater than 10. on the range from 1 to 60 there are 30 such numbers, and all of them is greater than 10. what does walking the whole range prove? for this range — everything: nothing is left unchecked.
+if a number is divisible by 9, then it has a digit sum divisible by 3. take 9: it is divisible by 9 and it has a digit sum divisible by 3. what does one case prove? nothing: a general claim is not proved by one case.
+if a number is even, then it is divisible by 2. take 4: it is even and it is divisible by 2. what does one case prove? nothing: a general claim is not proved by one case.
+if a number is divisible by 10, then it ends in 0. take 30: it is divisible by 10 and it ends in 0. what does one case prove? nothing: a general claim is not proved by one case.
+if a number is divisible by 5, then it ends in 0 or 5. on the range from 1 to 60 there are 12 such numbers, and all of them ends in 0 or 5. what does walking the whole range prove? for this range — everything: nothing is left unchecked.
+if a number is divisible by 9, then it has a digit sum divisible by 9. take 9: it is divisible by 9 and it has a digit sum divisible by 9. what does one case prove? nothing: a general claim is not proved by one case.
+if a number is greater than 30, then it is at least 31. take 32: it is greater than 30 and it is at least 31. what does one case prove? nothing: a general claim is not proved by one case.
+«if a number is divisible by 2, then it is divisible by 4» is false. take 10: it is divisible by 2 and it is not divisible by 4. what does one case refute? everything: a general claim is refuted by one case.
+«if a number is divisible by 5, then it is divisible by 10» is false. take 15: it is divisible by 5 and it is not divisible by 10. what does one case refute? everything: a general claim is refuted by one case.
+«if a number is divisible by 5, then it is divisible by 15» is false. take 5: it is divisible by 5 and it is not divisible by 15. what does one case refute? everything: a general claim is refuted by one case.
+«if a number is greater than 10, then it is greater than 30» is false. take 13: it is greater than 10 and it is not greater than 30. what does one case refute? everything: a general claim is refuted by one case.
+«if a number has a digit sum divisible by 3, then it is divisible by 9» is false. take 6: it has a digit sum divisible by 3 and it is not divisible by 9. what does one case refute? everything: a general claim is refuted by one case.
+if a number is divisible by 4, then it is divisible by 2. on the range from 1 to 60 there are 15 such numbers, and all of them is divisible by 2. what does walking the whole range prove? for this range — everything: nothing is left unchecked.
+if a number is divisible by 10, then it is divisible by 5. take 10: it is divisible by 10 and it is divisible by 5. what does one case prove? nothing: a general claim is not proved by one case.
+if a number is divisible by 9, then it is divisible by 3. take 18: it is divisible by 9 and it is divisible by 3. what does one case prove? nothing: a general claim is not proved by one case.
+if a number is divisible by 15, then it is divisible by 5. take 45: it is divisible by 15 and it is divisible by 5. what does one case prove? nothing: a general claim is not proved by one case.
+
+«если число делится на 5, то оно делится на 10» — неверно. вот 25: оно делится на 5 и оно не делится на 10. что опровергает один случай? всё: общее одним случаем опровергается.
+«если число имеет сумму цифр, кратную 3, то оно делится на 9» — неверно. вот 12: оно имеет сумму цифр, кратную 3 и оно не делится на 9. что опровергает один случай? всё: общее одним случаем опровергается.
+если число делится на 9, то оно делится на 3. вот 27: оно делится на 9 и оно делится на 3. что доказывает один случай? ничего: общее одним случаем не доказывается.
+если число делится на 9, то оно имеет сумму цифр, кратную 3. вот 18: оно делится на 9 и оно имеет сумму цифр, кратную 3. что доказывает один случай? ничего: общее одним случаем не доказывается.
+если число делится на 3, то оно имеет сумму цифр, кратную 3. вот 3: оно делится на 3 и оно имеет сумму цифр, кратную 3. что доказывает один случай? ничего: общее одним случаем не доказывается.
+«если число делится на 3, то оно делится на 6» — неверно. вот 3: оно делится на 3 и оно не делится на 6. что опровергает один случай? всё: общее одним случаем опровергается.
+«если число делится на 4, то оно делится на 12» — неверно. вот 4: оно делится на 4 и оно не делится на 12. что опровергает один случай? всё: общее одним случаем опровергается.
+если число делится на 10, то оно делится на 5. вот 20: оно делится на 10 и оно делится на 5. что доказывает один случай? ничего: общее одним случаем не доказывается.
+если число делится на 12, то оно делится на 4. вот 12: оно делится на 12 и оно делится на 4. что доказывает один случай? ничего: общее одним случаем не доказывается.
+если число делится на 10, то оно кончается на 0. на ряду от 1 до 60 таких чисел 6, и у всех них кончается на 0. что доказывает обход всего ряда? для этого ряда — всё: непроверенного не осталось.
+если число больше 30, то оно не меньше 31. вот 33: оно больше 30 и оно не меньше 31. что доказывает один случай? ничего: общее одним случаем не доказывается.
+«если число делится на 5, то оно делится на 15» — неверно. вот 10: оно делится на 5 и оно не делится на 15. что опровергает один случай? всё: общее одним случаем опровергается.
+если число делится на 6, то оно делится на 3. вот 6: оно делится на 6 и оно делится на 3. что доказывает один случай? ничего: общее одним случаем не доказывается.
+если число делится на 15, то оно делится на 5. на ряду от 1 до 60 таких чисел 4, и у всех них делится на 5. что доказывает обход всего ряда? для этого ряда — всё: непроверенного не осталось.
+если число чётное, то оно делится на 2. вот 6: оно чётное и оно делится на 2. что доказывает один случай? ничего: общее одним случаем не доказывается.
+если число делится на 9, то оно имеет сумму цифр, кратную 9. вот 18: оно делится на 9 и оно имеет сумму цифр, кратную 9. что доказывает один случай? ничего: общее одним случаем не доказывается.
+
+«if a number is divisible by 5, then it is divisible by 10» is false. take 25: it is divisible by 5 and it is not divisible by 10. what does one case refute? everything: a general claim is refuted by one case.
+«if a number has a digit sum divisible by 3, then it is divisible by 9» is false. take 12: it has a digit sum divisible by 3 and it is not divisible by 9. what does one case refute? everything: a general claim is refuted by one case.
+if a number is divisible by 9, then it is divisible by 3. take 27: it is divisible by 9 and it is divisible by 3. what does one case prove? nothing: a general claim is not proved by one case.
+if a number is divisible by 9, then it has a digit sum divisible by 3. take 18: it is divisible by 9 and it has a digit sum divisible by 3. what does one case prove? nothing: a general claim is not proved by one case.
+if a number is divisible by 3, then it has a digit sum divisible by 3. take 3: it is divisible by 3 and it has a digit sum divisible by 3. what does one case prove? nothing: a general claim is not proved by one case.
+«if a number is divisible by 3, then it is divisible by 6» is false. take 3: it is divisible by 3 and it is not divisible by 6. what does one case refute? everything: a general claim is refuted by one case.
+«if a number is divisible by 4, then it is divisible by 12» is false. take 4: it is divisible by 4 and it is not divisible by 12. what does one case refute? everything: a general claim is refuted by one case.
+if a number is divisible by 10, then it is divisible by 5. take 20: it is divisible by 10 and it is divisible by 5. what does one case prove? nothing: a general claim is not proved by one case.
+if a number is divisible by 12, then it is divisible by 4. take 12: it is divisible by 12 and it is divisible by 4. what does one case prove? nothing: a general claim is not proved by one case.
+if a number is divisible by 10, then it ends in 0. on the range from 1 to 60 there are 6 such numbers, and all of them ends in 0. what does walking the whole range prove? for this range — everything: nothing is left unchecked.
+if a number is greater than 30, then it is at least 31. take 33: it is greater than 30 and it is at least 31. what does one case prove? nothing: a general claim is not proved by one case.
+«if a number is divisible by 5, then it is divisible by 15» is false. take 10: it is divisible by 5 and it is not divisible by 15. what does one case refute? everything: a general claim is refuted by one case.
+if a number is divisible by 6, then it is divisible by 3. take 6: it is divisible by 6 and it is divisible by 3. what does one case prove? nothing: a general claim is not proved by one case.
+if a number is divisible by 15, then it is divisible by 5. on the range from 1 to 60 there are 4 such numbers, and all of them is divisible by 5. what does walking the whole range prove? for this range — everything: nothing is left unchecked.
+if a number is even, then it is divisible by 2. take 6: it is even and it is divisible by 2. what does one case prove? nothing: a general claim is not proved by one case.
+if a number is divisible by 9, then it has a digit sum divisible by 9. take 18: it is divisible by 9 and it has a digit sum divisible by 9. what does one case prove? nothing: a general claim is not proved by one case.

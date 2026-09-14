@@ -352,6 +352,151 @@
       "text": "shows"
     },
     {
+      "name": "pctchain",
+      "file": "datasets/genesis_pctchain.txt",
+      "genre": "TWO PERCENTS IN A ROW (14.09, bought by a zero of the probe). Measured: «процент от процента» / «percent of a percent» — ZERO lines. The percent world takes ONE percent of a number; what happens when a percent is taken TWICE the corpus says nowhere — and that is exactly where everyone errs. PERCENTS DO NOT ADD, BECAUSE THE SECOND IS TAKEN OF A DIFFERENT NUMBER: «minus ten and another minus ten» is minus nineteen, the second tenth taken off 180 and not off 200; and «plus ten, then minus ten» DOES NOT COME BACK. Three genera: they do not add, it does not come back, and THE ORDER DOES NOT MATTER — the positive side of the same law, since multiplication commutes. THE MISTAKE IS NAMED ON THE PAGE, NOT WALKED AROUND: the page says «it became 162» and also «and not 160», and the court demands the naive answer be computed correctly AS NAIVE and DIFFER from the true one — where it coincides there is no mistake to show. A declared boundary: only numbers where EVERY step is whole.",
+      "act": [
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "roadpath",
+      "file": "datasets/genesis_roadpath.txt",
+      "genre": "A PATH ALONG ROADS — CONNECTION PASSES ON, NEARNESS DOES NOT (14.09, bought by a zero of the probe). Measured: «как пройти от» / «how to get from» — ZERO lines. The corpus knows DISTANCE (the world of speed and path), ORDER (alphabet, dates) and the LINK OF TWO (the two-way link), but a NETWORK of links, where one place is reached THROUGH another, it knows nowhere. «A is joined to B» and «B to C» gives «from A one can reach C» — but not «A is joined to C»: a reader who learned connection as a property of a PAIR will not walk two steps. Three genera: DIRECTLY (the road is there), THROUGH (no direct road but a path exists — the SHORTEST is named and named entire) and NOT AT ALL, where the deed is to REFUSE and prove the refusal: the whole circle of places reachable from the start is named. A REFUSAL WITHOUT ITS CIRCLE IS A WORD, NOT AN ARGUMENT. And a question with two answers is not a question: the THROUGH genus is built only where the shortest path is UNIQUE.",
+      "act": [
+        "retrace"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "cooccur",
+      "file": "datasets/genesis_cooccur.txt",
+      "genre": "COINCIDENCE AND CAUSE — NUMBERS SAY WHAT WAS AND ARE SILENT ON WHY (14.09, bought by a zero of the probe). Measured: «совпадение, а не причина» / «correlation is not» — ZERO lines. The corpus can ask «why?» and answer with a ground, but that FROM THE JOINT MOVEMENT OF TWO NUMBERS A CAUSE DOES NOT FOLLOW it says nowhere — and that is the first thing anyone who reads numbers is taught. «Both rose» is a FACT and is checked by subtraction; «one raised the other» is a CAUSE and follows from those same numbers by nothing. The house shows the first and REFUSES the second, and that refusal is the main thing it teaches. Three genera: both rose; they diverged (one rose, the other fell — the refusal is the same and the arithmetic is not, so the reader does not learn that a cause is refused only under agreeing movement); and A THIRD, which rose along with both and is named — then the refusal is STRONGER, for there is something to explain both at once. THE COURT COUNTS FACTS AND DOES NOT JUDGE CAUSES: it checks the numbers, the differences and the direction, and matches the refusal against the DECLARED wording without deciding whether it is right — a cause cannot be checked by subtraction, and an instrument that undertook to check one would lie about its own power.",
+      "act": [
+        "decide"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "notenough",
+      "file": "datasets/genesis_notenough.txt",
+      "genre": "NOT ENOUGH DATA — THE DEAREST ZERO OF THE DAY (14.09). Measured against the свод of 448 335 lines: «лишнее число в задаче» / «is not needed for the answer» — 63 lines, THERE; «данных не хватает» / «cannot be determined» — ZERO. THE CORPUS TAUGHT DISCARDING THE SUPERFLUOUS AND NEVER ONCE TAUGHT STOPPING. A reader for whom every problem is solvable answers where there IS no answer, and answers confidently, because there is nothing for that confidence to break against. This is not a gap in arithmetic but a gap in HONESTY, and it is more dangerous than any arithmetical error, because an arithmetical error can be seen. Three genera: ENOUGH (the data determine the answer and it is given — the genus is needed not for completeness but because without it the reader learns to REFUSE ALWAYS, which is the same trouble from the other end); NOT ENOUGH (the needed number is absent and the page names EXACTLY IT: «it is not said how many were given away»); and SUPERFLUOUS (a number not needed for the answer, with the answer given and the extra NAMED as extra, so the reader does not learn that every number in a problem must enter the count). A REFUSAL WITHOUT NAMING WHAT IS MISSING IS EVASION: anyone can say «unknown»; only one who has read the problem can say what is not in it. The court decides for itself whether the data suffice and matches its decision against the page — a refusal where the data suffice is a lie exactly as much as an answer where they do not.",
+      "act": [
+        "decide"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "onecase",
+      "file": "datasets/genesis_onecase.txt",
+      "genre": "ONE CASE — WHAT AN EXAMPLE IS WORTH (14.09, bought by a zero of the probe). Measured: «пример не доказывает» / «one example does not prove» — ZERO lines, against 6 about a counterexample. The corpus shows examples by the thousand and never once says what an example is WORTH. ONE CASE DOES NOT PROVE A GENERAL CLAIM AND REFUTES IT ENTIRELY. This is NOT a symmetry: to affirm «every» the whole range is needed; to fell it, one is enough. A reader who learned «an example is an argument» will affirm from one case; one who learned «an example is not an argument» will not refute even from a hundred. AND THERE IS A THIRD THING THAT DISSOLVES THE APPARENT CONTRADICTION: on a DECLARED FINITE RANGE, walking the whole range IS a proof. The asymmetry lives not in the logic of the example but in the INFINITY of the domain; name the domain finite and walk it, and «every» is proved. Three genera: an example that fits and proves nothing; a counterexample that fells the claim; and a walk of the whole range with the count of checked numbers named — «all were checked» without the count is a word and not a walk. The properties and the range are taken from the two-way-link world and not declared a second time; the FALSE pairs are the CONVERSES of its one-way links, which is exactly where the two worlds meet.",
+      "act": [
+        "decide"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "spread",
+      "file": "datasets/genesis_spread.txt",
+      "genre": "THE MEAN AND THE SPREAD — WHAT ONE NUMBER ABOUT MANY LOSES (14.09, bought by a zero of the probe). Measured: «среднее скрывает разброс» / «the average hides» — ZERO lines. The world of the average COMPUTES the mean and does it well; what the mean HIDES the corpus says nowhere — and it is precisely by that that the mean is abused. A MEAN IS ONE NUMBER ABOUT MANY AND IT LOSES THEIR DIFFERENCES: two rows with the SAME mean can diverge as widely as you like; two rows with the same SPREAD can stand as far apart as you like; and worst of all, a mean can be a number NOBODY HAS — «the mean is 4» for the row 1, 1, 10 is true and describes no one. Three genera: the mean is the same and the spreads differ; the spreads are the same and the means differ; and the mean is not any of the row's numbers. BOTH NUMBERS ARE NAMED AND BOTH ARE CHECKABLE: the house does not say «the mean deceives» — that would be an opinion and no court could check it. It puts two recomputable numbers side by side and the difference shows itself. A declared boundary: every row's mean is whole — a fractional mean is another deed and lives in the world of the unit fraction.",
+      "act": [
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "noanswer",
+      "file": "datasets/genesis_noanswer.txt",
+      "genre": "TWO REFUSALS, AND WHAT SEPARATES THEM (14.09, bought by a zero of the probe and REBUILT THE SAME HOUR, when the zero turned out to be a zero of WORDS and not of DEEDS). The history of this world is its main lesson. The probe said «деление на ноль» — 0 lines, «division by zero» — 0, and a house was bought on that. An hour later the shapes instrument named `zerodivforms` — a house living since earlier days, 346 shows, saying exactly the same in OTHER WORDS: «сколько будет 4 ÷ 0? делить 4 на 0 нельзя: 0 × 1 = 0, и 0 × 2 = 0, и ни одно произведение не равно 4». THE ZERO PROBE MEASURES WORDS, NOT DEEDS: a zero of words is not a zero of deed, for a house may do the same thing calling it otherwise, and the probe will not see it. A find of the probe is therefore GROUND TO ASK, NOT LICENCE TO BUILD. Two of this world's three genera repeated `zerodivforms` and were removed the same hour. What remains is what is nowhere: THE DIFFERENCE OF TWO REFUSALS. «12 ÷ 0» has no answer BY NUMBER — there is no number which multiplied by zero would give twelve. «Give away 5 apples out of 3» is impossible NOT BY NUMBER — the number is there and it is −2 — but BY THE WORLD: minus two apples do not exist. A refusal that does not distinguish the two teaches fear of both alike and understanding of neither. Three genera, all about the difference and none about the refusals apart: by number; by the world (with the difference PRODUCED as a number); and both side by side, with what separates them said aloud — without which the first two would teach two prohibitions instead of one distinction.",
+      "act": [
+        "decide"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "unitmix",
+      "file": "datasets/genesis_unitmix.txt",
+      "genre": "MEASURES THAT DO NOT REDUCE TO ONE ANOTHER (14.09, bought by a zero of the probe). Measured: «нельзя сложить» / «cannot be added» — ZERO lines; «метры и килограммы» — ZERO. The mixed-measure world (`mixedunits`) can do «2 kg 300 g» and the carry between steps of ONE measure; that there are measures between which there is NO carry at all the corpus says nowhere. A NUMBER WITHOUT A MEASURE IS NOT A QUANTITY: «30» by itself means nothing — 30 cm and 30 m are different things and the second is a hundred times the first. ONLY LIKE MAY BE ADDED, AND THAT IS NOT A RULE OF WRITING BUT A PROPERTY OF THE WORLD: between length and mass there is no factor by which one would become the other, so the refusal here is not a prohibition but a consequence — a reader who learned «add the numbers» will add metres to kilograms and get a number that does not exist. Three genera: reduce and add (same kind, different steps — the factor is NAMED on the page and not implied); cannot be added (different kinds — the refusal says WHAT EACH MEASURES); and the same number under different measures, with how many times they differ named. The steps are declared as NUMBERS and not as names, so «100 cm in a metre» follows by counting and not by memory.",
+      "act": [
+        "decide",
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "badground",
+      "file": "datasets/genesis_badground.txt",
+      "genre": "AN UNFIT GROUND — TRUE AND USELESS AT ONCE (14.09, bought by a zero of the probe). Measured: «круг в доказательстве» / «circular reasoning» — ZERO lines. The inference world names two FORMAL fallacies — converting and denying — and checks them by counting. That a ground can be UNFIT WITHOUT BEING FALSE the corpus says nowhere. A GROUND CAN BE TRUE AND USELESS AT ONCE: «12 is divisible by 2 because it is even» — both statements are true and the second proves nothing, being THE SAME THING said twice; «12 is divisible by 4 because it is divisible by 2» — both true again, and the second is WEAKER than the first, so the first does not follow from it. Falsehood has nothing to do with it, and therefore NO COURT OVER TRUTH WOULD EVER CATCH THIS. Three genera by THE STRENGTH OF THE GROUND, all decided by WALKING THE DECLARED RANGE and not by instinct: a CIRCLE (ground and claim are equivalent — the same thing in other words, adding exactly nothing); NO ARGUMENT (the claim does not follow from the ground, which is wider, and an example is named — the commonest error of living reasoning); and an ARGUMENT (the claim follows always and not the other way round, the ground being strictly stronger). The third genus is not there for completeness: without it a reader learns to reject EVERY ground, which is the same trouble from the other end. The properties, the range and the kind of link are taken from the two-way-link world — ONE HOUSE OF WORDS, not three similar declarations. A witness must BE a witness: the number named to prove weakness must satisfy the ground and not the claim; the one named to prove strictness, the reverse.",
+      "act": [
+        "decide"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
       "name": "addshare",
       "file": "datasets/genesis_addshare.txt",
       "genre": "ADDING SHARES — shares add only when brought to one denominator. Measured 11.09 across the show worlds: «1/2 + 1/3», «1/3 + 1/4» — NOT ONE occurrence; subtracting shares — NONE; the least common multiple — NONE. Adding shares with the SAME denominator is there (108 lines), and that makes the hole the more dangerous: the easy case is shown and the hard one — where the rule actually lives — is not shown at all. A READER WHO HAS SEEN ONLY «1/5 + 2/5 = 3/5» WILL ADD «1/2 + 1/3» THE SAME WAY AND GET «2/5». A rule shown only where it is not needed teaches one not to know it. Four genera, and the first is here for the sake of the second: SAME («1/5 + 2/5: the denominator is the same, and the NUMERATORS are added: 1 + 2 = 3, and it gives 3/5»); DIFFERENT («1/2 + 1/3: bring them to the common denominator 6: 1 × 3 = 3, and 1 × 2 = 2, and 3 + 2 = 5, and it gives 5/6»); SUBTRACT; GREATER («2/3 + 3/4: … 8 + 9 = 17, and it gives 17/12, and that is greater than one: 17 = 12 × 1 + 5»). The fourth joins the house to its neighbour: a sum of shares often runs past the unit, and without showing this the house would suggest that shares always add up to a share; the split into whole and remainder is taken by the same ledger the house of the fraction and the unit lives by. DENOMINATORS ARE NOT ADDED, AND THAT IS SHOWN RATHER THAN FORBIDDEN: in the first genus one sees the move «numerators are added» with the denominator unchanged; in the second, that the denominators must first be made equal — the prohibition follows from these two pages by itself. Subtraction is written only where the result is positive: negative shares are another house's subject. The common denominator is taken as in the house of comparing shares — the greater if it divides by the smaller, else the product; the least common multiple would be a second law on one page.",
@@ -2945,10 +3090,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 42553016,
+      "size": 43055711,
       "tiers": [],
       "text": "mix",
-      "lines": 448335
+      "lines": 451367
     },
     {
       "name": "fuseprep",

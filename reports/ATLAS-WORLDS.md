@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 326 миров, 448335 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 335 миров, 451367 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -11,7 +11,7 @@
 
 ## АКТ «recount» — пересчитать величину: строка утверждает число
 
-Миров 156, строк 231146.
+Миров 158, строк 232550.
 
 - **`links`** (17566 строк; declared, whole_only)  
   **CONVERSATION LINKS** — a question whose subject stands in the PREVIOUS reply (the owner's order, 04.09, item 5; the BESEDA band measures this genus mute 15 of 15).
@@ -105,6 +105,8 @@
   the summary of a row: average with its GROUND beside it (the sum and the count named separately), largest and smallest, the law that the average lies between them, and the counterexample that the average need not be one of the numbers
 - **`signedworld`** (1296 строк; recompute, whole_only, crossing_only)  
   **THE SIGNED WORLD** — a number below zero is still a number (05.09, Д-5 of the ranked defects).
+- **`pctchain`** (1294 строк; recompute, whole_only)  
+  **TWO PERCENTS IN A ROW (14.09, bought by a zero of the probe). Measured: «процент от процента» / «percent of a percent»** — ZERO lines.
 - **`cybernetics`** (1288 строк; recompute, whole_only)  
   **УПРАВЛЕНИЕ, СЧИТАННОЕ ШАГАМИ ДО ЦЕЛИ, И ЗАКОН НЕОБХОДИМОГО РАЗНООБРАЗИЯ: «почему начав с 3 при цели 9 и шаге 3, значение достигает цели за 2 шага? потому что 3 + 2 × 3 = 9», «requisite variety is the law that a regulator can distinguish no more disturbanc…
 - **`search_langs`** (1280 строк; recompute, unsigned_only)  
@@ -319,6 +321,8 @@
   **BOOLEAN EXPRESSIONS** — THE ORDER OF STEPS, NOT ONE STEP (14.09, rung two, asked for by holon-f9 for BBH's `boolean_expressions`).
 - **`nestcalc`** (128 строк; recompute, whole_only)  
   **MULTI-STEP ARITHMETIC** — THE PATH, NOT ONLY THE TOTAL (14.09, rung two, asked for by holon-f9 for BBH's `multistep_arithmetic_two`).
+- **`spread`** (110 строк; recompute, whole_only)  
+  **THE MEAN AND THE SPREAD** — WHAT ONE NUMBER ABOUT MANY LOSES (14.09, bought by a zero of the probe).
 - **`ru_story`** (109 строк; recompute, declared, whole_only, unsigned_only)  
   Russian word problems as EPISODES: one bearer, one thing, an action and a total, where the third fact names its bearer EXPLICITLY («у пети осталось 5 яблок») because a market law is bought only inside one episode; loss and gain share one structure with oppo…
 - **`ru_conversions`** (68 строк; recompute, declared, reversibility, whole_only, exact_only)  
@@ -532,7 +536,7 @@
 
 ## АКТ «decide» — решить случай: вердикт с основанием рядом
 
-Миров 26, строк 19281.
+Миров 32, строк 20569.
 
 - **`verifyforms`** (3285 строк; recompute, whole_only)  
   **VERIFICATION** — «claim · check · verdict», and the pages where the instrument is OBLIGED to refuse (05.09, the agent architecture, the fourth market): a true claim checked by ANOTHER action cannot be confirmed — the verdict is «not verified», and the gro…
@@ -560,6 +564,8 @@
   **PRIME AND COMPOSITE IN EIGHT LANGUAGES (the owner's word: every language in surplus; the numbers world says it in en/ru): «97 ist eine Primzahl; ihre Teiler sind 1 und 97.», «91 ist keine Primzahl: 91 = 7 × 13.», «ist 91 eine Primzahl? nein: 91 ist keine …
 - **`primewalk`** (392 строк; recompute, whole_only, exact_only, finite_explicit_only)  
   **ОБХОД ПРОСТОТЫ** — СОСТАВНОСТЬ ДОКАЗЫВАЕТСЯ ОДНИМ СВИДЕТЕЛЕМ, ПРОСТОТА — ОБХОДОМ ВСЕХ. Замер 12.09 по третьему десятку свойств: «простота числа» названа в восемнадцати мирах и НИ В ОДНОМ не показана — свод пишет «13 is prime.» и рядом, на той же странице,…
+- **`notenough`** (384 строк; recompute, whole_only)  
+  **NOT ENOUGH DATA** — THE DEAREST ZERO OF THE DAY (14.09).
 - **`datecmp`** (364 строк; recompute, whole_only)  
   **COMPARING TWO DATES** — A KEY WHOSE FIELDS HAVE DIFFERENT WEIGHTS (14.09, bought by a zero of the probe).
 - **`onestep`** (350 строк; recompute, whole_only, unsigned_only)  
@@ -572,6 +578,10 @@
   **THE NECESSARY AND THE SUFFICIENT** — TWO QUESTIONS ABOUT ONE CONDITION, AND THEIR ANSWERS DIFFER. Measured 11.09 across the 255 show worlds and across the declarations of all worlds: «необходимо и достаточно», «necessary and sufficient» — NONE. The corpus…
 - **`object`** (272 строк; recompute, whole_only)  
   **OBJECTION** — what to do with what somebody else said.
+- **`cooccur`** (264 строк; recompute, whole_only)  
+  **COINCIDENCE AND CAUSE** — NUMBERS SAY WHAT WAS AND ARE SILENT ON WHY (14.09, bought by a zero of the probe).
+- **`unitmix`** (252 строк; recompute, whole_only)  
+  **MEASURES THAT DO NOT REDUCE TO ONE ANOTHER (14.09, bought by a zero of the probe). Measured: «нельзя сложить» / «cannot be added»** — ZERO lines; «метры и килограммы» — ZERO. The mixed-measure world (`mixedunits`) can do «2 kg 300 g» and the carry between…
 - **`disj`** (216 строк; recompute, whole_only)  
   **EXCLUSION** — the disjunctive syllogism over an EXHAUSTIVE row.
 - **`opinion`** (174 строк; declared, whole_only)  
@@ -580,10 +590,16 @@
   **SEATING BY CONSTRAINTS** — SIMULTANEITY, NOT A CHAIN OF STEPS (14.09, bought by a zero of the probe).
 - **`bicond`** (168 строк; recompute, whole_only)  
   **THE TWO-WAY LINK** — «only if», «if and only if», NECESSARY AND SUFFICIENT (14.09).
+- **`badground`** (168 строк; recompute, whole_only)  
+  **AN UNFIT GROUND** — TRUE AND USELESS AT ONCE (14.09, bought by a zero of the probe).
+- **`onecase`** (160 строк; recompute, whole_only)  
+  **ONE CASE** — WHAT AN EXAMPLE IS WORTH (14.09, bought by a zero of the probe).
 - **`hypo`** (144 строк; recompute, whole_only)  
   **TESTING A HYPOTHESIS** — and THE CHIEF ASYMMETRY of knowledge.
 - **`roundneed`** (112 строк; recompute, whole_only)  
   **ROUNDING THAT THE DEED DECIDES (14.09, bought by a zero of the probe). Measured against the свод of 447 451 lines: rounding UP is there** — 77 lines of «коробок нужно» and 77 of «are needed»; rounding DOWN — «сколько целых» / «how many whole» — ZERO and Z…
+- **`noanswer`** (60 строк; recompute, whole_only)  
+  **TWO REFUSALS, AND WHAT SEPARATES THEM (14.09, bought by a zero of the probe and REBUILT THE SAME HOUR, when the zero turned out to be a zero of WORDS and not of DEEDS). The history of this world is its main lesson. The probe said «деление на ноль»** — 0 l…
 - **`reply`** (54 строк; declared, whole_only)  
   **REPLY** — advice to the interlocutor RESTING ON A DECLARED LAW. The owner's order about «basic behavioural and psychological laws» was half closed: the behaviour house gives the LAW but not its APPLICATION TO THE PERSON SPEAKING. Here a person names their…
 
@@ -691,6 +707,15 @@
 - **`grid`** (144 строк; recompute, whole_only)  
   **READING A TABLE** — TWO COORDINATES, NOT TWO LOOKUPS IN A ROW (14.09, bought by a zero of the probe).
 
+## АКТ «retrace» — словарём не объявлен
+
+Миров 2, строк 538.
+
+- **`roadpath`** (340 строк; recompute, whole_only)  
+  **A PATH ALONG ROADS** — CONNECTION PASSES ON, NEARNESS DOES NOT (14.09, bought by a zero of the probe).
+- **`handover`** (198 строк; replay, whole_only)  
+  **TRACKING THINGS THROUGH SWAPS (14.09, rung two, asked for by holon-f9 for BBH's `tracking_shuffled_objects`). Measured against the свод that day: lines containing «меняются», «обменял», «swap» or «traded»** — ZERO. The corpus knew that a thing PASSES («an…
+
 ## АКТ «expound» — изложить связной речью (свод прозы)
 
 Миров 1, строк 606.
@@ -704,13 +729,6 @@
 
 - **`alphaorder`** (120 строк; recompute, whole_only)  
   **ALPHABETICAL ORDER** — THE ORDER OF THE LETTERS, DECLARED AND NOT TAKEN FROM THE ENCODING (14.09, rung two, asked for by holon-f9 for BBH's `word_sorting`).
-
-## АКТ «retrace» — словарём не объявлен
-
-Миров 1, строк 198.
-
-- **`handover`** (198 строк; replay, whole_only)  
-  **TRACKING THINGS THROUGH SWAPS (14.09, rung two, asked for by holon-f9 for BBH's `tracking_shuffled_objects`). Measured against the свод that day: lines containing «меняются», «обменял», «swap» or «traded»** — ZERO. The corpus knew that a thing PASSES («an…
 
 ## АКТ «transform» — словарём не объявлен
 
@@ -731,5 +749,5 @@
     ОБЪЯВЛЕНИЕ В ТРИДЦАТЬ ЗНАКОВ НЕ ЛЖЁТ И НЕ ГОВОРИТ: читатель узнаёт имя мира
     и ничего сверх него.
 
-Миров: **0** из 326.
+Миров: **0** из 335.
 

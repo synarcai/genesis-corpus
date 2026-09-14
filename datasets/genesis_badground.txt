@@ -1,0 +1,177 @@
+32 больше 30. основание: оно не меньше 31. это КРУГ: «не меньше 31» и «больше 30» суть одно и то же — из всякого числа ряда, какое не меньше 31, следует больше 30, и обратно тоже.
+31 больше 10. основание: оно больше 30. это ДОВОД: из «больше 30» следует «больше 10» всегда, а обратное неверно — вот 11: оно больше 10 и оно не больше 30.
+6 имеет сумму цифр, кратную 3. основание: оно делится на 3. это КРУГ: «делится на 3» и «имеет сумму цифр, кратную 3» суть одно и то же — из всякого числа ряда, какое делится на 3, следует имеет сумму цифр, кратную 3, и обратно тоже.
+9 делится на 9. основание: оно делится на 3. это НЕ ДОВОД: из «делится на 3» не следует «делится на 9» — вот 3: оно делится на 3 и оно не делится на 9.
+27 делится на 3. основание: оно делится на 9. это ДОВОД: из «делится на 9» следует «делится на 3» всегда, а обратное неверно — вот 3: оно делится на 3 и оно не делится на 9.
+9 делится на 9. основание: оно имеет сумму цифр, кратную 9. это КРУГ: «имеет сумму цифр, кратную 9» и «делится на 9» суть одно и то же — из всякого числа ряда, какое имеет сумму цифр, кратную 9, следует делится на 9, и обратно тоже.
+30 делится на 5. основание: оно делится на 10. это ДОВОД: из «делится на 10» следует «делится на 5» всегда, а обратное неверно — вот 5: оно делится на 5 и оно не делится на 10.
+9 имеет сумму цифр, кратную 9. основание: оно делится на 9. это КРУГ: «делится на 9» и «имеет сумму цифр, кратную 9» суть одно и то же — из всякого числа ряда, какое делится на 9, следует имеет сумму цифр, кратную 9, и обратно тоже.
+36 делится на 12. основание: оно делится на 4. это НЕ ДОВОД: из «делится на 4» не следует «делится на 12» — вот 4: оно делится на 4 и оно не делится на 12.
+31 не меньше 31. основание: оно больше 30. это КРУГ: «больше 30» и «не меньше 31» суть одно и то же — из всякого числа ряда, какое больше 30, следует не меньше 31, и обратно тоже.
+6 делится на 2. основание: оно чётное. это КРУГ: «чётное» и «делится на 2» суть одно и то же — из всякого числа ряда, какое чётное, следует делится на 2, и обратно тоже.
+30 делится на 5. основание: оно делится на 15. это ДОВОД: из «делится на 15» следует «делится на 5» всегда, а обратное неверно — вот 5: оно делится на 5 и оно не делится на 15.
+30 делится на 10. основание: оно кончается на 0. это КРУГ: «кончается на 0» и «делится на 10» суть одно и то же — из всякого числа ряда, какое кончается на 0, следует делится на 10, и обратно тоже.
+30 делится на 15. основание: оно делится на 5. это НЕ ДОВОД: из «делится на 5» не следует «делится на 15» — вот 5: оно делится на 5 и оно не делится на 15.
+30 кончается на 0. основание: оно делится на 10. это КРУГ: «делится на 10» и «кончается на 0» суть одно и то же — из всякого числа ряда, какое делится на 10, следует кончается на 0, и обратно тоже.
+8 делится на 4. основание: оно делится на 2. это НЕ ДОВОД: из «делится на 2» не следует «делится на 4» — вот 2: оно делится на 2 и оно не делится на 4.
+6 делится на 3. основание: оно делится на 6. это ДОВОД: из «делится на 6» следует «делится на 3» всегда, а обратное неверно — вот 3: оно делится на 3 и оно не делится на 6.
+
+32 is greater than 30. the ground: it is at least 31. this is a CIRCLE: «is at least 31» and «is greater than 30» are one and the same — every number of the range that is at least 31 also is greater than 30, and the other way round too.
+31 is greater than 10. the ground: it is greater than 30. this is an ARGUMENT: «is greater than 10» follows from «is greater than 30» always, and not the other way round — take 11: it is greater than 10 and it is not greater than 30.
+6 has a digit sum divisible by 3. the ground: it is divisible by 3. this is a CIRCLE: «is divisible by 3» and «has a digit sum divisible by 3» are one and the same — every number of the range that is divisible by 3 also has a digit sum divisible by 3, and the other way round too.
+9 is divisible by 9. the ground: it is divisible by 3. this is NO ARGUMENT: «is divisible by 9» does not follow from «is divisible by 3» — take 3: it is divisible by 3 and it is not divisible by 9.
+27 is divisible by 3. the ground: it is divisible by 9. this is an ARGUMENT: «is divisible by 3» follows from «is divisible by 9» always, and not the other way round — take 3: it is divisible by 3 and it is not divisible by 9.
+9 is divisible by 9. the ground: it has a digit sum divisible by 9. this is a CIRCLE: «has a digit sum divisible by 9» and «is divisible by 9» are one and the same — every number of the range that has a digit sum divisible by 9 also is divisible by 9, and the other way round too.
+30 is divisible by 5. the ground: it is divisible by 10. this is an ARGUMENT: «is divisible by 5» follows from «is divisible by 10» always, and not the other way round — take 5: it is divisible by 5 and it is not divisible by 10.
+9 has a digit sum divisible by 9. the ground: it is divisible by 9. this is a CIRCLE: «is divisible by 9» and «has a digit sum divisible by 9» are one and the same — every number of the range that is divisible by 9 also has a digit sum divisible by 9, and the other way round too.
+36 is divisible by 12. the ground: it is divisible by 4. this is NO ARGUMENT: «is divisible by 12» does not follow from «is divisible by 4» — take 4: it is divisible by 4 and it is not divisible by 12.
+31 is at least 31. the ground: it is greater than 30. this is a CIRCLE: «is greater than 30» and «is at least 31» are one and the same — every number of the range that is greater than 30 also is at least 31, and the other way round too.
+6 is divisible by 2. the ground: it is even. this is a CIRCLE: «is even» and «is divisible by 2» are one and the same — every number of the range that is even also is divisible by 2, and the other way round too.
+30 is divisible by 5. the ground: it is divisible by 15. this is an ARGUMENT: «is divisible by 5» follows from «is divisible by 15» always, and not the other way round — take 5: it is divisible by 5 and it is not divisible by 15.
+30 is divisible by 10. the ground: it ends in 0. this is a CIRCLE: «ends in 0» and «is divisible by 10» are one and the same — every number of the range that ends in 0 also is divisible by 10, and the other way round too.
+30 is divisible by 15. the ground: it is divisible by 5. this is NO ARGUMENT: «is divisible by 15» does not follow from «is divisible by 5» — take 5: it is divisible by 5 and it is not divisible by 15.
+30 ends in 0. the ground: it is divisible by 10. this is a CIRCLE: «is divisible by 10» and «ends in 0» are one and the same — every number of the range that is divisible by 10 also ends in 0, and the other way round too.
+8 is divisible by 4. the ground: it is divisible by 2. this is NO ARGUMENT: «is divisible by 4» does not follow from «is divisible by 2» — take 2: it is divisible by 2 and it is not divisible by 4.
+6 is divisible by 3. the ground: it is divisible by 6. this is an ARGUMENT: «is divisible by 3» follows from «is divisible by 6» always, and not the other way round — take 3: it is divisible by 3 and it is not divisible by 6.
+
+9 имеет сумму цифр, кратную 3. основание: оно делится на 3. это КРУГ: «делится на 3» и «имеет сумму цифр, кратную 3» суть одно и то же — из всякого числа ряда, какое делится на 3, следует имеет сумму цифр, кратную 3, и обратно тоже.
+12 делится на 4. основание: оно делится на 12. это ДОВОД: из «делится на 12» следует «делится на 4» всегда, а обратное неверно — вот 4: оно делится на 4 и оно не делится на 12.
+31 больше 30. основание: оно больше 10. это НЕ ДОВОД: из «больше 10» не следует «больше 30» — вот 11: оно больше 10 и оно не больше 30.
+2 чётное. основание: оно делится на 2. это КРУГ: «делится на 2» и «чётное» суть одно и то же — из всякого числа ряда, какое делится на 2, следует чётное, и обратно тоже.
+32 больше 10. основание: оно больше 30. это ДОВОД: из «больше 30» следует «больше 10» всегда, а обратное неверно — вот 11: оно больше 10 и оно не больше 30.
+18 делится на 9. основание: оно имеет сумму цифр, кратную 9. это КРУГ: «имеет сумму цифр, кратную 9» и «делится на 9» суть одно и то же — из всякого числа ряда, какое имеет сумму цифр, кратную 9, следует делится на 9, и обратно тоже.
+32 не меньше 31. основание: оно больше 30. это КРУГ: «больше 30» и «не меньше 31» суть одно и то же — из всякого числа ряда, какое больше 30, следует не меньше 31, и обратно тоже.
+45 делится на 15. основание: оно делится на 5. это НЕ ДОВОД: из «делится на 5» не следует «делится на 15» — вот 5: оно делится на 5 и оно не делится на 15.
+33 больше 30. основание: оно не меньше 31. это КРУГ: «не меньше 31» и «больше 30» суть одно и то же — из всякого числа ряда, какое не меньше 31, следует больше 30, и обратно тоже.
+9 имеет сумму цифр, кратную 3. основание: оно делится на 9. это ДОВОД: из «делится на 9» следует «имеет сумму цифр, кратную 3» всегда, а обратное неверно — вот 3: оно имеет сумму цифр, кратную 3 и оно не делится на 9.
+10 делится на 10. основание: оно делится на 5. это НЕ ДОВОД: из «делится на 5» не следует «делится на 10» — вот 5: оно делится на 5 и оно не делится на 10.
+5 делится на 5. основание: оно кончается на 0 или на 5. это КРУГ: «кончается на 0 или на 5» и «делится на 5» суть одно и то же — из всякого числа ряда, какое кончается на 0 или на 5, следует делится на 5, и обратно тоже.
+12 делится на 3. основание: оно делится на 6. это ДОВОД: из «делится на 6» следует «делится на 3» всегда, а обратное неверно — вот 3: оно делится на 3 и оно не делится на 6.
+18 делится на 9. основание: оно делится на 3. это НЕ ДОВОД: из «делится на 3» не следует «делится на 9» — вот 3: оно делится на 3 и оно не делится на 9.
+18 имеет сумму цифр, кратную 9. основание: оно делится на 9. это КРУГ: «делится на 9» и «имеет сумму цифр, кратную 9» суть одно и то же — из всякого числа ряда, какое делится на 9, следует имеет сумму цифр, кратную 9, и обратно тоже.
+45 делится на 5. основание: оно делится на 15. это ДОВОД: из «делится на 15» следует «делится на 5» всегда, а обратное неверно — вот 5: оно делится на 5 и оно не делится на 15.
+12 делится на 4. основание: оно делится на 2. это НЕ ДОВОД: из «делится на 2» не следует «делится на 4» — вот 2: оно делится на 2 и оно не делится на 4.
+
+9 has a digit sum divisible by 3. the ground: it is divisible by 3. this is a CIRCLE: «is divisible by 3» and «has a digit sum divisible by 3» are one and the same — every number of the range that is divisible by 3 also has a digit sum divisible by 3, and the other way round too.
+12 is divisible by 4. the ground: it is divisible by 12. this is an ARGUMENT: «is divisible by 4» follows from «is divisible by 12» always, and not the other way round — take 4: it is divisible by 4 and it is not divisible by 12.
+31 is greater than 30. the ground: it is greater than 10. this is NO ARGUMENT: «is greater than 30» does not follow from «is greater than 10» — take 11: it is greater than 10 and it is not greater than 30.
+2 is even. the ground: it is divisible by 2. this is a CIRCLE: «is divisible by 2» and «is even» are one and the same — every number of the range that is divisible by 2 also is even, and the other way round too.
+32 is greater than 10. the ground: it is greater than 30. this is an ARGUMENT: «is greater than 10» follows from «is greater than 30» always, and not the other way round — take 11: it is greater than 10 and it is not greater than 30.
+18 is divisible by 9. the ground: it has a digit sum divisible by 9. this is a CIRCLE: «has a digit sum divisible by 9» and «is divisible by 9» are one and the same — every number of the range that has a digit sum divisible by 9 also is divisible by 9, and the other way round too.
+32 is at least 31. the ground: it is greater than 30. this is a CIRCLE: «is greater than 30» and «is at least 31» are one and the same — every number of the range that is greater than 30 also is at least 31, and the other way round too.
+45 is divisible by 15. the ground: it is divisible by 5. this is NO ARGUMENT: «is divisible by 15» does not follow from «is divisible by 5» — take 5: it is divisible by 5 and it is not divisible by 15.
+33 is greater than 30. the ground: it is at least 31. this is a CIRCLE: «is at least 31» and «is greater than 30» are one and the same — every number of the range that is at least 31 also is greater than 30, and the other way round too.
+9 has a digit sum divisible by 3. the ground: it is divisible by 9. this is an ARGUMENT: «has a digit sum divisible by 3» follows from «is divisible by 9» always, and not the other way round — take 3: it has a digit sum divisible by 3 and it is not divisible by 9.
+10 is divisible by 10. the ground: it is divisible by 5. this is NO ARGUMENT: «is divisible by 10» does not follow from «is divisible by 5» — take 5: it is divisible by 5 and it is not divisible by 10.
+5 is divisible by 5. the ground: it ends in 0 or 5. this is a CIRCLE: «ends in 0 or 5» and «is divisible by 5» are one and the same — every number of the range that ends in 0 or 5 also is divisible by 5, and the other way round too.
+12 is divisible by 3. the ground: it is divisible by 6. this is an ARGUMENT: «is divisible by 3» follows from «is divisible by 6» always, and not the other way round — take 3: it is divisible by 3 and it is not divisible by 6.
+18 is divisible by 9. the ground: it is divisible by 3. this is NO ARGUMENT: «is divisible by 9» does not follow from «is divisible by 3» — take 3: it is divisible by 3 and it is not divisible by 9.
+18 has a digit sum divisible by 9. the ground: it is divisible by 9. this is a CIRCLE: «is divisible by 9» and «has a digit sum divisible by 9» are one and the same — every number of the range that is divisible by 9 also has a digit sum divisible by 9, and the other way round too.
+45 is divisible by 5. the ground: it is divisible by 15. this is an ARGUMENT: «is divisible by 5» follows from «is divisible by 15» always, and not the other way round — take 5: it is divisible by 5 and it is not divisible by 15.
+12 is divisible by 4. the ground: it is divisible by 2. this is NO ARGUMENT: «is divisible by 4» does not follow from «is divisible by 2» — take 2: it is divisible by 2 and it is not divisible by 4.
+
+27 делится на 9. основание: оно делится на 3. это НЕ ДОВОД: из «делится на 3» не следует «делится на 9» — вот 3: оно делится на 3 и оно не делится на 9.
+3 делится на 3. основание: оно имеет сумму цифр, кратную 3. это КРУГ: «имеет сумму цифр, кратную 3» и «делится на 3» суть одно и то же — из всякого числа ряда, какое имеет сумму цифр, кратную 3, следует делится на 3, и обратно тоже.
+4 чётное. основание: оно делится на 2. это КРУГ: «делится на 2» и «чётное» суть одно и то же — из всякого числа ряда, какое делится на 2, следует чётное, и обратно тоже.
+4 делится на 2. основание: оно делится на 4. это ДОВОД: из «делится на 4» следует «делится на 2» всегда, а обратное неверно — вот 2: оно делится на 2 и оно не делится на 4.
+20 делится на 10. основание: оно делится на 5. это НЕ ДОВОД: из «делится на 5» не следует «делится на 10» — вот 5: оно делится на 5 и оно не делится на 10.
+27 делится на 9. основание: оно имеет сумму цифр, кратную 9. это КРУГ: «имеет сумму цифр, кратную 9» и «делится на 9» суть одно и то же — из всякого числа ряда, какое имеет сумму цифр, кратную 9, следует делится на 9, и обратно тоже.
+5 кончается на 0 или на 5. основание: оно делится на 5. это КРУГ: «делится на 5» и «кончается на 0 или на 5» суть одно и то же — из всякого числа ряда, какое делится на 5, следует кончается на 0 или на 5, и обратно тоже.
+18 делится на 3. основание: оно делится на 6. это ДОВОД: из «делится на 6» следует «делится на 3» всегда, а обратное неверно — вот 3: оно делится на 3 и оно не делится на 6.
+9 делится на 9. основание: оно имеет сумму цифр, кратную 3. это НЕ ДОВОД: из «имеет сумму цифр, кратную 3» не следует «делится на 9» — вот 3: оно имеет сумму цифр, кратную 3 и оно не делится на 9.
+32 больше 30. основание: оно больше 10. это НЕ ДОВОД: из «больше 10» не следует «больше 30» — вот 11: оно больше 10 и оно не больше 30.
+27 имеет сумму цифр, кратную 9. основание: оно делится на 9. это КРУГ: «делится на 9» и «имеет сумму цифр, кратную 9» суть одно и то же — из всякого числа ряда, какое делится на 9, следует имеет сумму цифр, кратную 9, и обратно тоже.
+18 имеет сумму цифр, кратную 3. основание: оно делится на 9. это ДОВОД: из «делится на 9» следует «имеет сумму цифр, кратную 3» всегда, а обратное неверно — вот 3: оно имеет сумму цифр, кратную 3 и оно не делится на 9.
+33 больше 10. основание: оно больше 30. это ДОВОД: из «больше 30» следует «больше 10» всегда, а обратное неверно — вот 11: оно больше 10 и оно не больше 30.
+6 делится на 6. основание: оно делится на 3. это НЕ ДОВОД: из «делится на 3» не следует «делится на 6» — вот 3: оно делится на 3 и оно не делится на 6.
+10 делится на 5. основание: оно кончается на 0 или на 5. это КРУГ: «кончается на 0 или на 5» и «делится на 5» суть одно и то же — из всякого числа ряда, какое кончается на 0 или на 5, следует делится на 5, и обратно тоже.
+33 не меньше 31. основание: оно больше 30. это КРУГ: «больше 30» и «не меньше 31» суть одно и то же — из всякого числа ряда, какое больше 30, следует не меньше 31, и обратно тоже.
+24 делится на 4. основание: оно делится на 12. это ДОВОД: из «делится на 12» следует «делится на 4» всегда, а обратное неверно — вот 4: оно делится на 4 и оно не делится на 12.
+
+27 is divisible by 9. the ground: it is divisible by 3. this is NO ARGUMENT: «is divisible by 9» does not follow from «is divisible by 3» — take 3: it is divisible by 3 and it is not divisible by 9.
+3 is divisible by 3. the ground: it has a digit sum divisible by 3. this is a CIRCLE: «has a digit sum divisible by 3» and «is divisible by 3» are one and the same — every number of the range that has a digit sum divisible by 3 also is divisible by 3, and the other way round too.
+4 is even. the ground: it is divisible by 2. this is a CIRCLE: «is divisible by 2» and «is even» are one and the same — every number of the range that is divisible by 2 also is even, and the other way round too.
+4 is divisible by 2. the ground: it is divisible by 4. this is an ARGUMENT: «is divisible by 2» follows from «is divisible by 4» always, and not the other way round — take 2: it is divisible by 2 and it is not divisible by 4.
+20 is divisible by 10. the ground: it is divisible by 5. this is NO ARGUMENT: «is divisible by 10» does not follow from «is divisible by 5» — take 5: it is divisible by 5 and it is not divisible by 10.
+27 is divisible by 9. the ground: it has a digit sum divisible by 9. this is a CIRCLE: «has a digit sum divisible by 9» and «is divisible by 9» are one and the same — every number of the range that has a digit sum divisible by 9 also is divisible by 9, and the other way round too.
+5 ends in 0 or 5. the ground: it is divisible by 5. this is a CIRCLE: «is divisible by 5» and «ends in 0 or 5» are one and the same — every number of the range that is divisible by 5 also ends in 0 or 5, and the other way round too.
+18 is divisible by 3. the ground: it is divisible by 6. this is an ARGUMENT: «is divisible by 3» follows from «is divisible by 6» always, and not the other way round — take 3: it is divisible by 3 and it is not divisible by 6.
+9 is divisible by 9. the ground: it has a digit sum divisible by 3. this is NO ARGUMENT: «is divisible by 9» does not follow from «has a digit sum divisible by 3» — take 3: it has a digit sum divisible by 3 and it is not divisible by 9.
+32 is greater than 30. the ground: it is greater than 10. this is NO ARGUMENT: «is greater than 30» does not follow from «is greater than 10» — take 11: it is greater than 10 and it is not greater than 30.
+27 has a digit sum divisible by 9. the ground: it is divisible by 9. this is a CIRCLE: «is divisible by 9» and «has a digit sum divisible by 9» are one and the same — every number of the range that is divisible by 9 also has a digit sum divisible by 9, and the other way round too.
+18 has a digit sum divisible by 3. the ground: it is divisible by 9. this is an ARGUMENT: «has a digit sum divisible by 3» follows from «is divisible by 9» always, and not the other way round — take 3: it has a digit sum divisible by 3 and it is not divisible by 9.
+33 is greater than 10. the ground: it is greater than 30. this is an ARGUMENT: «is greater than 10» follows from «is greater than 30» always, and not the other way round — take 11: it is greater than 10 and it is not greater than 30.
+6 is divisible by 6. the ground: it is divisible by 3. this is NO ARGUMENT: «is divisible by 6» does not follow from «is divisible by 3» — take 3: it is divisible by 3 and it is not divisible by 6.
+10 is divisible by 5. the ground: it ends in 0 or 5. this is a CIRCLE: «ends in 0 or 5» and «is divisible by 5» are one and the same — every number of the range that ends in 0 or 5 also is divisible by 5, and the other way round too.
+33 is at least 31. the ground: it is greater than 30. this is a CIRCLE: «is greater than 30» and «is at least 31» are one and the same — every number of the range that is greater than 30 also is at least 31, and the other way round too.
+24 is divisible by 4. the ground: it is divisible by 12. this is an ARGUMENT: «is divisible by 4» follows from «is divisible by 12» always, and not the other way round — take 4: it is divisible by 4 and it is not divisible by 12.
+
+15 делится на 5. основание: оно кончается на 0 или на 5. это КРУГ: «кончается на 0 или на 5» и «делится на 5» суть одно и то же — из всякого числа ряда, какое кончается на 0 или на 5, следует делится на 5, и обратно тоже.
+6 делится на 3. основание: оно имеет сумму цифр, кратную 3. это КРУГ: «имеет сумму цифр, кратную 3» и «делится на 3» суть одно и то же — из всякого числа ряда, какое имеет сумму цифр, кратную 3, следует делится на 3, и обратно тоже.
+2 делится на 2. основание: оно чётное. это КРУГ: «чётное» и «делится на 2» суть одно и то же — из всякого числа ряда, какое чётное, следует делится на 2, и обратно тоже.
+33 больше 30. основание: оно больше 10. это НЕ ДОВОД: из «больше 10» не следует «больше 30» — вот 11: оно больше 10 и оно не больше 30.
+12 делится на 6. основание: оно делится на 3. это НЕ ДОВОД: из «делится на 3» не следует «делится на 6» — вот 3: оно делится на 3 и оно не делится на 6.
+12 делится на 12. основание: оно делится на 4. это НЕ ДОВОД: из «делится на 4» не следует «делится на 12» — вот 4: оно делится на 4 и оно не делится на 12.
+30 делится на 10. основание: оно делится на 5. это НЕ ДОВОД: из «делится на 5» не следует «делится на 10» — вот 5: оно делится на 5 и оно не делится на 10.
+18 делится на 9. основание: оно имеет сумму цифр, кратную 3. это НЕ ДОВОД: из «имеет сумму цифр, кратную 3» не следует «делится на 9» — вот 3: оно имеет сумму цифр, кратную 3 и оно не делится на 9.
+10 делится на 5. основание: оно делится на 10. это ДОВОД: из «делится на 10» следует «делится на 5» всегда, а обратное неверно — вот 5: оно делится на 5 и оно не делится на 10.
+36 делится на 4. основание: оно делится на 12. это ДОВОД: из «делится на 12» следует «делится на 4» всегда, а обратное неверно — вот 4: оно делится на 4 и оно не делится на 12.
+8 делится на 2. основание: оно делится на 4. это ДОВОД: из «делится на 4» следует «делится на 2» всегда, а обратное неверно — вот 2: оно делится на 2 и оно не делится на 4.
+9 делится на 3. основание: оно делится на 9. это ДОВОД: из «делится на 9» следует «делится на 3» всегда, а обратное неверно — вот 3: оно делится на 3 и оно не делится на 9.
+27 имеет сумму цифр, кратную 3. основание: оно делится на 9. это ДОВОД: из «делится на 9» следует «имеет сумму цифр, кратную 3» всегда, а обратное неверно — вот 3: оно имеет сумму цифр, кратную 3 и оно не делится на 9.
+10 кончается на 0. основание: оно делится на 10. это КРУГ: «делится на 10» и «кончается на 0» суть одно и то же — из всякого числа ряда, какое делится на 10, следует кончается на 0, и обратно тоже.
+6 чётное. основание: оно делится на 2. это КРУГ: «делится на 2» и «чётное» суть одно и то же — из всякого числа ряда, какое делится на 2, следует чётное, и обратно тоже.
+10 кончается на 0 или на 5. основание: оно делится на 5. это КРУГ: «делится на 5» и «кончается на 0 или на 5» суть одно и то же — из всякого числа ряда, какое делится на 5, следует кончается на 0 или на 5, и обратно тоже.
+10 делится на 10. основание: оно кончается на 0. это КРУГ: «кончается на 0» и «делится на 10» суть одно и то же — из всякого числа ряда, какое кончается на 0, следует делится на 10, и обратно тоже.
+
+15 is divisible by 5. the ground: it ends in 0 or 5. this is a CIRCLE: «ends in 0 or 5» and «is divisible by 5» are one and the same — every number of the range that ends in 0 or 5 also is divisible by 5, and the other way round too.
+6 is divisible by 3. the ground: it has a digit sum divisible by 3. this is a CIRCLE: «has a digit sum divisible by 3» and «is divisible by 3» are one and the same — every number of the range that has a digit sum divisible by 3 also is divisible by 3, and the other way round too.
+2 is divisible by 2. the ground: it is even. this is a CIRCLE: «is even» and «is divisible by 2» are one and the same — every number of the range that is even also is divisible by 2, and the other way round too.
+33 is greater than 30. the ground: it is greater than 10. this is NO ARGUMENT: «is greater than 30» does not follow from «is greater than 10» — take 11: it is greater than 10 and it is not greater than 30.
+12 is divisible by 6. the ground: it is divisible by 3. this is NO ARGUMENT: «is divisible by 6» does not follow from «is divisible by 3» — take 3: it is divisible by 3 and it is not divisible by 6.
+12 is divisible by 12. the ground: it is divisible by 4. this is NO ARGUMENT: «is divisible by 12» does not follow from «is divisible by 4» — take 4: it is divisible by 4 and it is not divisible by 12.
+30 is divisible by 10. the ground: it is divisible by 5. this is NO ARGUMENT: «is divisible by 10» does not follow from «is divisible by 5» — take 5: it is divisible by 5 and it is not divisible by 10.
+18 is divisible by 9. the ground: it has a digit sum divisible by 3. this is NO ARGUMENT: «is divisible by 9» does not follow from «has a digit sum divisible by 3» — take 3: it has a digit sum divisible by 3 and it is not divisible by 9.
+10 is divisible by 5. the ground: it is divisible by 10. this is an ARGUMENT: «is divisible by 5» follows from «is divisible by 10» always, and not the other way round — take 5: it is divisible by 5 and it is not divisible by 10.
+36 is divisible by 4. the ground: it is divisible by 12. this is an ARGUMENT: «is divisible by 4» follows from «is divisible by 12» always, and not the other way round — take 4: it is divisible by 4 and it is not divisible by 12.
+8 is divisible by 2. the ground: it is divisible by 4. this is an ARGUMENT: «is divisible by 2» follows from «is divisible by 4» always, and not the other way round — take 2: it is divisible by 2 and it is not divisible by 4.
+9 is divisible by 3. the ground: it is divisible by 9. this is an ARGUMENT: «is divisible by 3» follows from «is divisible by 9» always, and not the other way round — take 3: it is divisible by 3 and it is not divisible by 9.
+27 has a digit sum divisible by 3. the ground: it is divisible by 9. this is an ARGUMENT: «has a digit sum divisible by 3» follows from «is divisible by 9» always, and not the other way round — take 3: it has a digit sum divisible by 3 and it is not divisible by 9.
+10 ends in 0. the ground: it is divisible by 10. this is a CIRCLE: «is divisible by 10» and «ends in 0» are one and the same — every number of the range that is divisible by 10 also ends in 0, and the other way round too.
+6 is even. the ground: it is divisible by 2. this is a CIRCLE: «is divisible by 2» and «is even» are one and the same — every number of the range that is divisible by 2 also is even, and the other way round too.
+10 ends in 0 or 5. the ground: it is divisible by 5. this is a CIRCLE: «is divisible by 5» and «ends in 0 or 5» are one and the same — every number of the range that is divisible by 5 also ends in 0 or 5, and the other way round too.
+10 is divisible by 10. the ground: it ends in 0. this is a CIRCLE: «ends in 0» and «is divisible by 10» are one and the same — every number of the range that ends in 0 also is divisible by 10, and the other way round too.
+
+20 делится на 5. основание: оно делится на 10. это ДОВОД: из «делится на 10» следует «делится на 5» всегда, а обратное неверно — вот 5: оно делится на 5 и оно не делится на 10.
+18 делится на 3. основание: оно делится на 9. это ДОВОД: из «делится на 9» следует «делится на 3» всегда, а обратное неверно — вот 3: оно делится на 3 и оно не делится на 9.
+15 кончается на 0 или на 5. основание: оно делится на 5. это КРУГ: «делится на 5» и «кончается на 0 или на 5» суть одно и то же — из всякого числа ряда, какое делится на 5, следует кончается на 0 или на 5, и обратно тоже.
+9 делится на 3. основание: оно имеет сумму цифр, кратную 3. это КРУГ: «имеет сумму цифр, кратную 3» и «делится на 3» суть одно и то же — из всякого числа ряда, какое имеет сумму цифр, кратную 3, следует делится на 3, и обратно тоже.
+18 делится на 6. основание: оно делится на 3. это НЕ ДОВОД: из «делится на 3» не следует «делится на 6» — вот 3: оно делится на 3 и оно не делится на 6.
+27 делится на 9. основание: оно имеет сумму цифр, кратную 3. это НЕ ДОВОД: из «имеет сумму цифр, кратную 3» не следует «делится на 9» — вот 3: оно имеет сумму цифр, кратную 3 и оно не делится на 9.
+12 делится на 2. основание: оно делится на 4. это ДОВОД: из «делится на 4» следует «делится на 2» всегда, а обратное неверно — вот 2: оно делится на 2 и оно не делится на 4.
+3 имеет сумму цифр, кратную 3. основание: оно делится на 3. это КРУГ: «делится на 3» и «имеет сумму цифр, кратную 3» суть одно и то же — из всякого числа ряда, какое делится на 3, следует имеет сумму цифр, кратную 3, и обратно тоже.
+31 больше 30. основание: оно не меньше 31. это КРУГ: «не меньше 31» и «больше 30» суть одно и то же — из всякого числа ряда, какое не меньше 31, следует больше 30, и обратно тоже.
+4 делится на 4. основание: оно делится на 2. это НЕ ДОВОД: из «делится на 2» не следует «делится на 4» — вот 2: оно делится на 2 и оно не делится на 4.
+15 делится на 15. основание: оно делится на 5. это НЕ ДОВОД: из «делится на 5» не следует «делится на 15» — вот 5: оно делится на 5 и оно не делится на 15.
+15 делится на 5. основание: оно делится на 15. это ДОВОД: из «делится на 15» следует «делится на 5» всегда, а обратное неверно — вот 5: оно делится на 5 и оно не делится на 15.
+20 кончается на 0. основание: оно делится на 10. это КРУГ: «делится на 10» и «кончается на 0» суть одно и то же — из всякого числа ряда, какое делится на 10, следует кончается на 0, и обратно тоже.
+20 делится на 10. основание: оно кончается на 0. это КРУГ: «кончается на 0» и «делится на 10» суть одно и то же — из всякого числа ряда, какое кончается на 0, следует делится на 10, и обратно тоже.
+4 делится на 2. основание: оно чётное. это КРУГ: «чётное» и «делится на 2» суть одно и то же — из всякого числа ряда, какое чётное, следует делится на 2, и обратно тоже.
+24 делится на 12. основание: оно делится на 4. это НЕ ДОВОД: из «делится на 4» не следует «делится на 12» — вот 4: оно делится на 4 и оно не делится на 12.
+
+20 is divisible by 5. the ground: it is divisible by 10. this is an ARGUMENT: «is divisible by 5» follows from «is divisible by 10» always, and not the other way round — take 5: it is divisible by 5 and it is not divisible by 10.
+18 is divisible by 3. the ground: it is divisible by 9. this is an ARGUMENT: «is divisible by 3» follows from «is divisible by 9» always, and not the other way round — take 3: it is divisible by 3 and it is not divisible by 9.
+15 ends in 0 or 5. the ground: it is divisible by 5. this is a CIRCLE: «is divisible by 5» and «ends in 0 or 5» are one and the same — every number of the range that is divisible by 5 also ends in 0 or 5, and the other way round too.
+9 is divisible by 3. the ground: it has a digit sum divisible by 3. this is a CIRCLE: «has a digit sum divisible by 3» and «is divisible by 3» are one and the same — every number of the range that has a digit sum divisible by 3 also is divisible by 3, and the other way round too.
+18 is divisible by 6. the ground: it is divisible by 3. this is NO ARGUMENT: «is divisible by 6» does not follow from «is divisible by 3» — take 3: it is divisible by 3 and it is not divisible by 6.
+27 is divisible by 9. the ground: it has a digit sum divisible by 3. this is NO ARGUMENT: «is divisible by 9» does not follow from «has a digit sum divisible by 3» — take 3: it has a digit sum divisible by 3 and it is not divisible by 9.
+12 is divisible by 2. the ground: it is divisible by 4. this is an ARGUMENT: «is divisible by 2» follows from «is divisible by 4» always, and not the other way round — take 2: it is divisible by 2 and it is not divisible by 4.
+3 has a digit sum divisible by 3. the ground: it is divisible by 3. this is a CIRCLE: «is divisible by 3» and «has a digit sum divisible by 3» are one and the same — every number of the range that is divisible by 3 also has a digit sum divisible by 3, and the other way round too.
+31 is greater than 30. the ground: it is at least 31. this is a CIRCLE: «is at least 31» and «is greater than 30» are one and the same — every number of the range that is at least 31 also is greater than 30, and the other way round too.
+4 is divisible by 4. the ground: it is divisible by 2. this is NO ARGUMENT: «is divisible by 4» does not follow from «is divisible by 2» — take 2: it is divisible by 2 and it is not divisible by 4.
+15 is divisible by 15. the ground: it is divisible by 5. this is NO ARGUMENT: «is divisible by 15» does not follow from «is divisible by 5» — take 5: it is divisible by 5 and it is not divisible by 15.
+15 is divisible by 5. the ground: it is divisible by 15. this is an ARGUMENT: «is divisible by 5» follows from «is divisible by 15» always, and not the other way round — take 5: it is divisible by 5 and it is not divisible by 15.
+20 ends in 0. the ground: it is divisible by 10. this is a CIRCLE: «is divisible by 10» and «ends in 0» are one and the same — every number of the range that is divisible by 10 also ends in 0, and the other way round too.
+20 is divisible by 10. the ground: it ends in 0. this is a CIRCLE: «ends in 0» and «is divisible by 10» are one and the same — every number of the range that ends in 0 also is divisible by 10, and the other way round too.
+4 is divisible by 2. the ground: it is even. this is a CIRCLE: «is even» and «is divisible by 2» are one and the same — every number of the range that is even also is divisible by 2, and the other way round too.
+24 is divisible by 12. the ground: it is divisible by 4. this is NO ARGUMENT: «is divisible by 12» does not follow from «is divisible by 4» — take 4: it is divisible by 4 and it is not divisible by 12.

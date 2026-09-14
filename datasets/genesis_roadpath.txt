@@ -1,0 +1,349 @@
+дороги: А—Б, Б—В, В—Г, Д—Е. как пройти от А до Б? прямо: А—Б.
+дороги: А—Б, А—В, Б—Г, Д—Е. как пройти от Б до А? прямо: Б—А.
+дороги: А—Б, Б—В, В—Г, Г—Д. как пройти от В до А? через Б: В—Б, Б—А.
+дороги: А—В, В—Д, Б—Г, Г—Е. как пройти от Д до А? через В: Д—В, В—А.
+дороги: А—Б, Б—Г, Г—Е, В—Д. как пройти от Е до А? через Г и Б: Е—Г, Г—Б, Б—А.
+дороги: А—Б, Б—В, В—Г, Д—Е. как пройти от Б до А? прямо: Б—А.
+дороги: А—Б, А—В, Б—Г, Д—Е. как пройти от В до А? прямо: В—А.
+дороги: А—Б, Б—В, В—Г, Г—Д. как пройти от Г до А? через В и Б: Г—В, В—Б, Б—А.
+дороги: А—В, В—Д, Б—Г, Г—Е. как пройти от Е до А? никак: от Е можно дойти только до Б и Г.
+дороги: А—Б, Б—В, Г—Д. как пройти от А до Б? прямо: А—Б.
+дороги: А—Б, Б—В, В—Г, Д—Е. как пройти от В до А? через Б: В—Б, Б—А.
+дороги: А—Б, А—В, Б—Г, Д—Е. как пройти от Г до А? через Б: Г—Б, Б—А.
+дороги: А—Б, Б—В, В—Г, Г—Д. как пройти от Д до А? через Г и В и Б: Д—Г, Г—В, В—Б, Б—А.
+дороги: А—Б, Б—Г, Г—Е, В—Д. как пройти от А до Б? прямо: А—Б.
+дороги: А—Б, Б—В, Г—Д. как пройти от Б до А? прямо: Б—А.
+дороги: А—Б, Б—В, В—Г, Д—Е. как пройти от Г до А? через В и Б: Г—В, В—Б, Б—А.
+дороги: А—Б, А—В, Б—Г, Д—Е. как пройти от Д до А? никак: от Д можно дойти только до Е.
+дороги: А—В, В—Д, Б—Г, Г—Е. как пройти от А до Б? никак: от А можно дойти только до В и Д.
+дороги: А—Б, Б—Г, Г—Е, В—Д. как пройти от Б до А? прямо: Б—А.
+дороги: А—Б, Б—В, Г—Д. как пройти от В до А? через Б: В—Б, Б—А.
+дороги: А—Б, Б—В, В—Г, Д—Е. как пройти от Д до А? никак: от Д можно дойти только до Е.
+дороги: А—Б, А—В, Б—Г, Д—Е. как пройти от Е до А? никак: от Е можно дойти только до Д.
+дороги: А—В, В—Д, Б—Г, Г—Е. как пройти от Б до А? никак: от Б можно дойти только до Г и Е.
+дороги: А—Б, Б—Г, Г—Е, В—Д. как пройти от В до А? никак: от В можно дойти только до Д.
+дороги: А—Б, Б—В, Г—Д. как пройти от Г до А? никак: от Г можно дойти только до Д.
+дороги: А—Б, Б—В, В—Г, Д—Е. как пройти от Е до А? никак: от Е можно дойти только до Д.
+дороги: А—Б, Б—В, В—Г, Г—Д. как пройти от А до Б? прямо: А—Б.
+дороги: А—В, В—Д, Б—Г, Г—Е. как пройти от В до А? прямо: В—А.
+дороги: А—Б, Б—Г, Г—Е, В—Д. как пройти от Г до А? через Б: Г—Б, Б—А.
+дороги: А—Б, Б—В, Г—Д. как пройти от Д до А? никак: от Д можно дойти только до Г.
+дороги: А—Б, А—В, Б—Г, Д—Е. как пройти от А до Б? прямо: А—Б.
+дороги: А—Б, Б—В, В—Г, Г—Д. как пройти от Б до А? прямо: Б—А.
+дороги: А—В, В—Д, Б—Г, Г—Е. как пройти от Г до А? никак: от Г можно дойти только до Б и Е.
+дороги: А—Б, Б—Г, Г—Е, В—Д. как пройти от Д до А? никак: от Д можно дойти только до В.
+
+roads: A—B, B—C, C—D, E—F. how to get from A to B? directly: A—B.
+roads: A—B, A—C, B—D, E—F. how to get from B to A? directly: B—A.
+roads: A—B, B—C, C—D, D—E. how to get from C to A? through B: C—B, B—A.
+roads: A—C, C—E, B—D, D—F. how to get from E to A? through C: E—C, C—A.
+roads: A—B, B—D, D—F, C—E. how to get from F to A? through D и B: F—D, D—B, B—A.
+roads: A—B, B—C, C—D, E—F. how to get from B to A? directly: B—A.
+roads: A—B, A—C, B—D, E—F. how to get from C to A? directly: C—A.
+roads: A—B, B—C, C—D, D—E. how to get from D to A? through C и B: D—C, C—B, B—A.
+roads: A—C, C—E, B—D, D—F. how to get from F to A? not at all: from F one can reach only B и D.
+roads: A—B, B—C, D—E. how to get from A to B? directly: A—B.
+roads: A—B, B—C, C—D, E—F. how to get from C to A? through B: C—B, B—A.
+roads: A—B, A—C, B—D, E—F. how to get from D to A? through B: D—B, B—A.
+roads: A—B, B—C, C—D, D—E. how to get from E to A? through D и C и B: E—D, D—C, C—B, B—A.
+roads: A—B, B—D, D—F, C—E. how to get from A to B? directly: A—B.
+roads: A—B, B—C, D—E. how to get from B to A? directly: B—A.
+roads: A—B, B—C, C—D, E—F. how to get from D to A? through C и B: D—C, C—B, B—A.
+roads: A—B, A—C, B—D, E—F. how to get from E to A? not at all: from E one can reach only F.
+roads: A—C, C—E, B—D, D—F. how to get from A to B? not at all: from A one can reach only C и E.
+roads: A—B, B—D, D—F, C—E. how to get from B to A? directly: B—A.
+roads: A—B, B—C, D—E. how to get from C to A? through B: C—B, B—A.
+roads: A—B, B—C, C—D, E—F. how to get from E to A? not at all: from E one can reach only F.
+roads: A—B, A—C, B—D, E—F. how to get from F to A? not at all: from F one can reach only E.
+roads: A—C, C—E, B—D, D—F. how to get from B to A? not at all: from B one can reach only D и F.
+roads: A—B, B—D, D—F, C—E. how to get from C to A? not at all: from C one can reach only E.
+roads: A—B, B—C, D—E. how to get from D to A? not at all: from D one can reach only E.
+roads: A—B, B—C, C—D, E—F. how to get from F to A? not at all: from F one can reach only E.
+roads: A—B, B—C, C—D, D—E. how to get from A to B? directly: A—B.
+roads: A—C, C—E, B—D, D—F. how to get from C to A? directly: C—A.
+roads: A—B, B—D, D—F, C—E. how to get from D to A? through B: D—B, B—A.
+roads: A—B, B—C, D—E. how to get from E to A? not at all: from E one can reach only D.
+roads: A—B, A—C, B—D, E—F. how to get from A to B? directly: A—B.
+roads: A—B, B—C, C—D, D—E. how to get from B to A? directly: B—A.
+roads: A—C, C—E, B—D, D—F. how to get from D to A? not at all: from D one can reach only B и F.
+roads: A—B, B—D, D—F, C—E. how to get from E to A? not at all: from E one can reach only C.
+
+дороги: А—Б, Б—В, Г—Д. как пройти от В до Б? прямо: В—Б.
+дороги: А—Б, А—В, Б—Г, Д—Е. как пройти от В до Б? через А: В—А, А—Б.
+дороги: А—В, В—Д, Б—Г, Г—Е. как пройти от В до Б? никак: от В можно дойти только до А и Д.
+дороги: А—Б, Б—В, Г—Д. как пройти от Б до В? прямо: Б—В.
+дороги: А—Б, А—В, Б—Г, Д—Е. как пройти от Б до В? через А: Б—А, А—В.
+дороги: А—В, В—Д, Б—Г, Г—Е. как пройти от Б до В? никак: от Б можно дойти только до Г и Е.
+дороги: А—Б, Б—В, Г—Д. как пройти от А до В? через Б: А—Б, Б—В.
+дороги: А—Б, А—В, Б—Г, Д—Е. как пройти от А до В? прямо: А—В.
+дороги: А—В, В—Д, Б—Г, Г—Е. как пройти от А до В? прямо: А—В.
+дороги: А—Б, Б—Г, Г—Е, В—Д. как пройти от Е до Б? через Г: Е—Г, Г—Б.
+дороги: А—Б, Б—В, В—Г, Д—Е. как пройти от Е до Б? никак: от Е можно дойти только до Д.
+дороги: А—Б, Б—В, В—Г, Г—Д. как пройти от Д до Б? через Г и В: Д—Г, Г—В, В—Б.
+дороги: А—Б, Б—Г, Г—Е, В—Д. как пройти от Д до Б? никак: от Д можно дойти только до В.
+дороги: А—Б, Б—В, В—Г, Д—Е. как пройти от Д до Б? никак: от Д можно дойти только до Е.
+дороги: А—Б, Б—В, В—Г, Г—Д. как пройти от Г до Б? через В: Г—В, В—Б.
+дороги: А—Б, Б—Г, Г—Е, В—Д. как пройти от Г до Б? прямо: Г—Б.
+дороги: А—Б, Б—В, В—Г, Д—Е. как пройти от Г до Б? через В: Г—В, В—Б.
+дороги: А—Б, Б—В, В—Г, Г—Д. как пройти от В до Б? прямо: В—Б.
+дороги: А—Б, Б—Г, Г—Е, В—Д. как пройти от В до Б? никак: от В можно дойти только до Д.
+дороги: А—Б, Б—В, В—Г, Д—Е. как пройти от В до Б? прямо: В—Б.
+дороги: А—Б, Б—В, В—Г, Г—Д. как пройти от Б до В? прямо: Б—В.
+дороги: А—Б, Б—Г, Г—Е, В—Д. как пройти от Б до В? никак: от Б можно дойти только до А и Г и Е.
+дороги: А—Б, Б—В, В—Г, Д—Е. как пройти от Б до В? прямо: Б—В.
+дороги: А—Б, Б—В, В—Г, Г—Д. как пройти от А до В? через Б: А—Б, Б—В.
+дороги: А—Б, Б—Г, Г—Е, В—Д. как пройти от А до В? никак: от А можно дойти только до Б и Г и Е.
+дороги: А—Б, Б—В, В—Г, Д—Е. как пройти от А до В? через Б: А—Б, Б—В.
+дороги: А—Б, А—В, Б—Г, Д—Е. как пройти от Е до Б? никак: от Е можно дойти только до Д.
+дороги: А—В, В—Д, Б—Г, Г—Е. как пройти от Е до Б? через Г: Е—Г, Г—Б.
+дороги: А—Б, Б—В, Г—Д. как пройти от Д до Б? никак: от Д можно дойти только до Г.
+дороги: А—Б, А—В, Б—Г, Д—Е. как пройти от Д до Б? никак: от Д можно дойти только до Е.
+дороги: А—В, В—Д, Б—Г, Г—Е. как пройти от Д до Б? никак: от Д можно дойти только до А и В.
+дороги: А—Б, Б—В, Г—Д. как пройти от Г до Б? никак: от Г можно дойти только до Д.
+дороги: А—Б, А—В, Б—Г, Д—Е. как пройти от Г до Б? прямо: Г—Б.
+дороги: А—В, В—Д, Б—Г, Г—Е. как пройти от Г до Б? прямо: Г—Б.
+
+roads: A—B, B—C, D—E. how to get from C to B? directly: C—B.
+roads: A—B, A—C, B—D, E—F. how to get from C to B? through A: C—A, A—B.
+roads: A—C, C—E, B—D, D—F. how to get from C to B? not at all: from C one can reach only A и E.
+roads: A—B, B—C, D—E. how to get from B to C? directly: B—C.
+roads: A—B, A—C, B—D, E—F. how to get from B to C? through A: B—A, A—C.
+roads: A—C, C—E, B—D, D—F. how to get from B to C? not at all: from B one can reach only D и F.
+roads: A—B, B—C, D—E. how to get from A to C? through B: A—B, B—C.
+roads: A—B, A—C, B—D, E—F. how to get from A to C? directly: A—C.
+roads: A—C, C—E, B—D, D—F. how to get from A to C? directly: A—C.
+roads: A—B, B—D, D—F, C—E. how to get from F to B? through D: F—D, D—B.
+roads: A—B, B—C, C—D, E—F. how to get from F to B? not at all: from F one can reach only E.
+roads: A—B, B—C, C—D, D—E. how to get from E to B? through D и C: E—D, D—C, C—B.
+roads: A—B, B—D, D—F, C—E. how to get from E to B? not at all: from E one can reach only C.
+roads: A—B, B—C, C—D, E—F. how to get from E to B? not at all: from E one can reach only F.
+roads: A—B, B—C, C—D, D—E. how to get from D to B? through C: D—C, C—B.
+roads: A—B, B—D, D—F, C—E. how to get from D to B? directly: D—B.
+roads: A—B, B—C, C—D, E—F. how to get from D to B? through C: D—C, C—B.
+roads: A—B, B—C, C—D, D—E. how to get from C to B? directly: C—B.
+roads: A—B, B—D, D—F, C—E. how to get from C to B? not at all: from C one can reach only E.
+roads: A—B, B—C, C—D, E—F. how to get from C to B? directly: C—B.
+roads: A—B, B—C, C—D, D—E. how to get from B to C? directly: B—C.
+roads: A—B, B—D, D—F, C—E. how to get from B to C? not at all: from B one can reach only A и D и F.
+roads: A—B, B—C, C—D, E—F. how to get from B to C? directly: B—C.
+roads: A—B, B—C, C—D, D—E. how to get from A to C? through B: A—B, B—C.
+roads: A—B, B—D, D—F, C—E. how to get from A to C? not at all: from A one can reach only B и D и F.
+roads: A—B, B—C, C—D, E—F. how to get from A to C? through B: A—B, B—C.
+roads: A—B, A—C, B—D, E—F. how to get from F to B? not at all: from F one can reach only E.
+roads: A—C, C—E, B—D, D—F. how to get from F to B? through D: F—D, D—B.
+roads: A—B, B—C, D—E. how to get from E to B? not at all: from E one can reach only D.
+roads: A—B, A—C, B—D, E—F. how to get from E to B? not at all: from E one can reach only F.
+roads: A—C, C—E, B—D, D—F. how to get from E to B? not at all: from E one can reach only A и C.
+roads: A—B, B—C, D—E. how to get from D to B? not at all: from D one can reach only E.
+roads: A—B, A—C, B—D, E—F. how to get from D to B? directly: D—B.
+roads: A—C, C—E, B—D, D—F. how to get from D to B? directly: D—B.
+
+дороги: А—Б, Б—В, В—Г, Д—Е. как пройти от Д до В? никак: от Д можно дойти только до Е.
+дороги: А—В, В—Д, Б—Г, Г—Е. как пройти от А до Г? никак: от А можно дойти только до В и Д.
+дороги: А—Б, Б—В, Г—Д. как пройти от Б до Г? никак: от Б можно дойти только до А и В.
+дороги: А—Б, А—В, Б—Г, Д—Е. как пройти от Г до В? через Б и А: Г—Б, Б—А, А—В.
+дороги: А—В, В—Д, Б—Г, Г—Е. как пройти от Е до В? никак: от Е можно дойти только до Б и Г.
+дороги: А—Б, Б—В, В—Г, Д—Е. как пройти от Б до Г? через В: Б—В, В—Г.
+дороги: А—Б, Б—В, В—Г, Г—Д. как пройти от В до Г? прямо: В—Г.
+дороги: А—Б, Б—Г, Г—Е, В—Д. как пройти от Д до В? прямо: Д—В.
+дороги: А—Б, А—В, Б—Г, Д—Е. как пройти от А до Г? через Б: А—Б, Б—Г.
+дороги: А—В, В—Д, Б—Г, Г—Е. как пройти от В до Г? никак: от В можно дойти только до А и Д.
+дороги: А—Б, Б—В, Г—Д. как пройти от Г до В? никак: от Г можно дойти только до Д.
+дороги: А—Б, А—В, Б—Г, Д—Е. как пройти от Е до В? никак: от Е можно дойти только до Д.
+дороги: А—Б, Б—Г, Г—Е, В—Д. как пройти от Б до Г? прямо: Б—Г.
+дороги: А—Б, Б—В, В—Г, Д—Е. как пройти от Г до В? прямо: Г—В.
+дороги: А—Б, Б—В, В—Г, Г—Д. как пройти от Д до В? через Г: Д—Г, Г—В.
+дороги: А—Б, Б—В, Г—Д. как пройти от А до Г? никак: от А можно дойти только до Б и В.
+дороги: А—Б, А—В, Б—Г, Д—Е. как пройти от В до Г? через А и Б: В—А, А—Б, Б—Г.
+дороги: А—В, В—Д, Б—Г, Г—Е. как пройти от Д до В? прямо: Д—В.
+дороги: А—Б, Б—В, В—Г, Д—Е. как пройти от А до Г? через Б и В: А—Б, Б—В, В—Г.
+дороги: А—Б, Б—В, В—Г, Г—Д. как пройти от Б до Г? через В: Б—В, В—Г.
+дороги: А—Б, Б—Г, Г—Е, В—Д. как пройти от Г до В? никак: от Г можно дойти только до А и Б и Е.
+дороги: А—Б, Б—В, В—Г, Д—Е. как пройти от Е до В? никак: от Е можно дойти только до Д.
+дороги: А—В, В—Д, Б—Г, Г—Е. как пройти от Б до Г? прямо: Б—Г.
+дороги: А—Б, Б—В, Г—Д. как пройти от В до Г? никак: от В можно дойти только до А и Б.
+дороги: А—Б, А—В, Б—Г, Д—Е. как пройти от Д до В? никак: от Д можно дойти только до Е.
+дороги: А—Б, Б—Г, Г—Е, В—Д. как пройти от А до Г? через Б: А—Б, Б—Г.
+дороги: А—Б, Б—В, В—Г, Д—Е. как пройти от В до Г? прямо: В—Г.
+дороги: А—Б, Б—В, В—Г, Г—Д. как пройти от Г до В? прямо: Г—В.
+дороги: А—Б, Б—Г, Г—Е, В—Д. как пройти от Е до В? никак: от Е можно дойти только до А и Б и Г.
+дороги: А—Б, А—В, Б—Г, Д—Е. как пройти от Б до Г? прямо: Б—Г.
+дороги: А—В, В—Д, Б—Г, Г—Е. как пройти от Г до В? никак: от Г можно дойти только до Б и Е.
+дороги: А—Б, Б—В, Г—Д. как пройти от Д до В? никак: от Д можно дойти только до Г.
+дороги: А—Б, Б—В, В—Г, Г—Д. как пройти от А до Г? через Б и В: А—Б, Б—В, В—Г.
+дороги: А—Б, Б—Г, Г—Е, В—Д. как пройти от В до Г? никак: от В можно дойти только до Д.
+
+roads: A—B, B—C, C—D, E—F. how to get from E to C? not at all: from E one can reach only F.
+roads: A—C, C—E, B—D, D—F. how to get from A to D? not at all: from A one can reach only C и E.
+roads: A—B, B—C, D—E. how to get from B to D? not at all: from B one can reach only A и C.
+roads: A—B, A—C, B—D, E—F. how to get from D to C? through B и A: D—B, B—A, A—C.
+roads: A—C, C—E, B—D, D—F. how to get from F to C? not at all: from F one can reach only B и D.
+roads: A—B, B—C, C—D, E—F. how to get from B to D? through C: B—C, C—D.
+roads: A—B, B—C, C—D, D—E. how to get from C to D? directly: C—D.
+roads: A—B, B—D, D—F, C—E. how to get from E to C? directly: E—C.
+roads: A—B, A—C, B—D, E—F. how to get from A to D? through B: A—B, B—D.
+roads: A—C, C—E, B—D, D—F. how to get from C to D? not at all: from C one can reach only A и E.
+roads: A—B, B—C, D—E. how to get from D to C? not at all: from D one can reach only E.
+roads: A—B, A—C, B—D, E—F. how to get from F to C? not at all: from F one can reach only E.
+roads: A—B, B—D, D—F, C—E. how to get from B to D? directly: B—D.
+roads: A—B, B—C, C—D, E—F. how to get from D to C? directly: D—C.
+roads: A—B, B—C, C—D, D—E. how to get from E to C? through D: E—D, D—C.
+roads: A—B, B—C, D—E. how to get from A to D? not at all: from A one can reach only B и C.
+roads: A—B, A—C, B—D, E—F. how to get from C to D? through A и B: C—A, A—B, B—D.
+roads: A—C, C—E, B—D, D—F. how to get from E to C? directly: E—C.
+roads: A—B, B—C, C—D, E—F. how to get from A to D? through B и C: A—B, B—C, C—D.
+roads: A—B, B—C, C—D, D—E. how to get from B to D? through C: B—C, C—D.
+roads: A—B, B—D, D—F, C—E. how to get from D to C? not at all: from D one can reach only A и B и F.
+roads: A—B, B—C, C—D, E—F. how to get from F to C? not at all: from F one can reach only E.
+roads: A—C, C—E, B—D, D—F. how to get from B to D? directly: B—D.
+roads: A—B, B—C, D—E. how to get from C to D? not at all: from C one can reach only A и B.
+roads: A—B, A—C, B—D, E—F. how to get from E to C? not at all: from E one can reach only F.
+roads: A—B, B—D, D—F, C—E. how to get from A to D? through B: A—B, B—D.
+roads: A—B, B—C, C—D, E—F. how to get from C to D? directly: C—D.
+roads: A—B, B—C, C—D, D—E. how to get from D to C? directly: D—C.
+roads: A—B, B—D, D—F, C—E. how to get from F to C? not at all: from F one can reach only A и B и D.
+roads: A—B, A—C, B—D, E—F. how to get from B to D? directly: B—D.
+roads: A—C, C—E, B—D, D—F. how to get from D to C? not at all: from D one can reach only B и F.
+roads: A—B, B—C, D—E. how to get from E to C? not at all: from E one can reach only D.
+roads: A—B, B—C, C—D, D—E. how to get from A to D? through B и C: A—B, B—C, C—D.
+roads: A—B, B—D, D—F, C—E. how to get from C to D? not at all: from C one can reach only E.
+
+дороги: А—Б, Б—В, Г—Д. как пройти от Д до Г? прямо: Д—Г.
+дороги: А—В, В—Д, Б—Г, Г—Е. как пройти от Б до Д? никак: от Б можно дойти только до Г и Е.
+дороги: А—Б, Б—В, В—Г, Д—Е. как пройти от Г до Д? никак: от Г можно дойти только до А и Б и В.
+дороги: А—В, В—Д, Б—Г, Г—Е. как пройти от Е до Г? прямо: Е—Г.
+дороги: А—Б, А—В, Б—Г, Д—Е. как пройти от Б до Д? никак: от Б можно дойти только до А и В и Г.
+дороги: А—Б, Б—Г, Г—Е, В—Д. как пройти от Г до Д? никак: от Г можно дойти только до А и Б и Е.
+дороги: А—Б, А—В, Б—Г, Д—Е. как пройти от Е до Г? никак: от Е можно дойти только до Д.
+дороги: А—Б, Б—В, Г—Д. как пройти от Б до Д? никак: от Б можно дойти только до А и В.
+дороги: А—Б, Б—В, В—Г, Г—Д. как пройти от Г до Д? прямо: Г—Д.
+дороги: А—Б, Б—В, В—Г, Д—Е. как пройти от А до Д? никак: от А можно дойти только до Б и В и Г.
+дороги: А—В, В—Д, Б—Г, Г—Е. как пройти от В до Д? прямо: В—Д.
+дороги: А—Б, Б—В, В—Г, Д—Е. как пройти от Д до Г? никак: от Д можно дойти только до Е.
+дороги: А—Б, Б—Г, Г—Е, В—Д. как пройти от А до Д? никак: от А можно дойти только до Б и Г и Е.
+дороги: А—Б, А—В, Б—Г, Д—Е. как пройти от В до Д? никак: от В можно дойти только до А и Б и Г.
+дороги: А—Б, Б—Г, Г—Е, В—Д. как пройти от Д до Г? никак: от Д можно дойти только до В.
+дороги: А—Б, Б—В, В—Г, Г—Д. как пройти от А до Д? через Б и В и Г: А—Б, Б—В, В—Г, Г—Д.
+дороги: А—Б, Б—В, Г—Д. как пройти от В до Д? никак: от В можно дойти только до А и Б.
+дороги: А—Б, Б—В, В—Г, Г—Д. как пройти от Д до Г? прямо: Д—Г.
+дороги: А—Б, Б—В, В—Г, Д—Е. как пройти от Б до Д? никак: от Б можно дойти только до А и В и Г.
+дороги: А—В, В—Д, Б—Г, Г—Е. как пройти от Г до Д? никак: от Г можно дойти только до Б и Е.
+дороги: А—Б, Б—В, В—Г, Д—Е. как пройти от Е до Г? никак: от Е можно дойти только до Д.
+дороги: А—Б, Б—Г, Г—Е, В—Д. как пройти от Б до Д? никак: от Б можно дойти только до А и Г и Е.
+дороги: А—Б, А—В, Б—Г, Д—Е. как пройти от Г до Д? никак: от Г можно дойти только до А и Б и В.
+дороги: А—Б, Б—Г, Г—Е, В—Д. как пройти от Е до Г? прямо: Е—Г.
+дороги: А—Б, Б—В, В—Г, Г—Д. как пройти от Б до Д? через В и Г: Б—В, В—Г, Г—Д.
+дороги: А—Б, Б—В, Г—Д. как пройти от Г до Д? прямо: Г—Д.
+дороги: А—В, В—Д, Б—Г, Г—Е. как пройти от А до Д? через В: А—В, В—Д.
+дороги: А—Б, Б—В, В—Г, Д—Е. как пройти от В до Д? никак: от В можно дойти только до А и Б и Г.
+дороги: А—В, В—Д, Б—Г, Г—Е. как пройти от Д до Г? никак: от Д можно дойти только до А и В.
+дороги: А—Б, А—В, Б—Г, Д—Е. как пройти от А до Д? никак: от А можно дойти только до Б и В и Г.
+дороги: А—Б, Б—Г, Г—Е, В—Д. как пройти от В до Д? прямо: В—Д.
+дороги: А—Б, А—В, Б—Г, Д—Е. как пройти от Д до Г? никак: от Д можно дойти только до Е.
+дороги: А—Б, Б—В, Г—Д. как пройти от А до Д? никак: от А можно дойти только до Б и В.
+дороги: А—Б, Б—В, В—Г, Г—Д. как пройти от В до Д? через Г: В—Г, Г—Д.
+
+roads: A—B, B—C, D—E. how to get from E to D? directly: E—D.
+roads: A—C, C—E, B—D, D—F. how to get from B to E? not at all: from B one can reach only D и F.
+roads: A—B, B—C, C—D, E—F. how to get from D to E? not at all: from D one can reach only A и B и C.
+roads: A—C, C—E, B—D, D—F. how to get from F to D? directly: F—D.
+roads: A—B, A—C, B—D, E—F. how to get from B to E? not at all: from B one can reach only A и C и D.
+roads: A—B, B—D, D—F, C—E. how to get from D to E? not at all: from D one can reach only A и B и F.
+roads: A—B, A—C, B—D, E—F. how to get from F to D? not at all: from F one can reach only E.
+roads: A—B, B—C, D—E. how to get from B to E? not at all: from B one can reach only A и C.
+roads: A—B, B—C, C—D, D—E. how to get from D to E? directly: D—E.
+roads: A—B, B—C, C—D, E—F. how to get from A to E? not at all: from A one can reach only B и C и D.
+roads: A—C, C—E, B—D, D—F. how to get from C to E? directly: C—E.
+roads: A—B, B—C, C—D, E—F. how to get from E to D? not at all: from E one can reach only F.
+roads: A—B, B—D, D—F, C—E. how to get from A to E? not at all: from A one can reach only B и D и F.
+roads: A—B, A—C, B—D, E—F. how to get from C to E? not at all: from C one can reach only A и B и D.
+roads: A—B, B—D, D—F, C—E. how to get from E to D? not at all: from E one can reach only C.
+roads: A—B, B—C, C—D, D—E. how to get from A to E? through B и C и D: A—B, B—C, C—D, D—E.
+roads: A—B, B—C, D—E. how to get from C to E? not at all: from C one can reach only A и B.
+roads: A—B, B—C, C—D, D—E. how to get from E to D? directly: E—D.
+roads: A—B, B—C, C—D, E—F. how to get from B to E? not at all: from B one can reach only A и C и D.
+roads: A—C, C—E, B—D, D—F. how to get from D to E? not at all: from D one can reach only B и F.
+roads: A—B, B—C, C—D, E—F. how to get from F to D? not at all: from F one can reach only E.
+roads: A—B, B—D, D—F, C—E. how to get from B to E? not at all: from B one can reach only A и D и F.
+roads: A—B, A—C, B—D, E—F. how to get from D to E? not at all: from D one can reach only A и B и C.
+roads: A—B, B—D, D—F, C—E. how to get from F to D? directly: F—D.
+roads: A—B, B—C, C—D, D—E. how to get from B to E? through C и D: B—C, C—D, D—E.
+roads: A—B, B—C, D—E. how to get from D to E? directly: D—E.
+roads: A—C, C—E, B—D, D—F. how to get from A to E? through C: A—C, C—E.
+roads: A—B, B—C, C—D, E—F. how to get from C to E? not at all: from C one can reach only A и B и D.
+roads: A—C, C—E, B—D, D—F. how to get from E to D? not at all: from E one can reach only A и C.
+roads: A—B, A—C, B—D, E—F. how to get from A to E? not at all: from A one can reach only B и C и D.
+roads: A—B, B—D, D—F, C—E. how to get from C to E? directly: C—E.
+roads: A—B, A—C, B—D, E—F. how to get from E to D? not at all: from E one can reach only F.
+roads: A—B, B—C, D—E. how to get from A to E? not at all: from A one can reach only B и C.
+roads: A—B, B—C, C—D, D—E. how to get from C to E? through D: C—D, D—E.
+
+дороги: А—Б, А—В, Б—Г, Д—Е. как пройти от Б до Е? никак: от Б можно дойти только до А и В и Г.
+дороги: А—Б, Б—Г, Г—Е, В—Д. как пройти от Г до Е? прямо: Г—Е.
+дороги: А—Б, А—В, Б—Г, Д—Е. как пройти от Е до Д? прямо: Е—Д.
+дороги: А—Б, Б—В, Г—Д. как пройти от Б до Е? никак: от Б можно дойти только до А и В.
+дороги: А—Б, Б—В, В—Г, Г—Д. как пройти от Г до Е? никак: от Г можно дойти только до А и Б и В и Д.
+дороги: А—Б, Б—В, В—Г, Д—Е. как пройти от А до Е? никак: от А можно дойти только до Б и В и Г.
+дороги: А—В, В—Д, Б—Г, Г—Е. как пройти от В до Е? никак: от В можно дойти только до А и Д.
+дороги: А—Б, Б—В, В—Г, Д—Е. как пройти от Д до Е? прямо: Д—Е.
+дороги: А—Б, Б—Г, Г—Е, В—Д. как пройти от А до Е? через Б и Г: А—Б, Б—Г, Г—Е.
+дороги: А—Б, А—В, Б—Г, Д—Е. как пройти от В до Е? никак: от В можно дойти только до А и Б и Г.
+дороги: А—Б, Б—Г, Г—Е, В—Д. как пройти от Д до Е? никак: от Д можно дойти только до В.
+дороги: А—Б, Б—В, В—Г, Г—Д. как пройти от А до Е? никак: от А можно дойти только до Б и В и Г и Д.
+дороги: А—Б, Б—В, Г—Д. как пройти от В до Е? никак: от В можно дойти только до А и Б.
+дороги: А—Б, Б—В, В—Г, Г—Д. как пройти от Д до Е? никак: от Д можно дойти только до А и Б и В и Г.
+дороги: А—Б, Б—В, В—Г, Д—Е. как пройти от Б до Е? никак: от Б можно дойти только до А и В и Г.
+дороги: А—В, В—Д, Б—Г, Г—Е. как пройти от Г до Е? прямо: Г—Е.
+дороги: А—Б, Б—В, В—Г, Д—Е. как пройти от Е до Д? прямо: Е—Д.
+дороги: А—Б, Б—Г, Г—Е, В—Д. как пройти от Б до Е? через Г: Б—Г, Г—Е.
+дороги: А—Б, А—В, Б—Г, Д—Е. как пройти от Г до Е? никак: от Г можно дойти только до А и Б и В.
+дороги: А—Б, Б—Г, Г—Е, В—Д. как пройти от Е до Д? никак: от Е можно дойти только до А и Б и Г.
+дороги: А—Б, Б—В, В—Г, Г—Д. как пройти от Б до Е? никак: от Б можно дойти только до А и В и Г и Д.
+дороги: А—Б, Б—В, Г—Д. как пройти от Г до Е? никак: от Г можно дойти только до Д.
+дороги: А—В, В—Д, Б—Г, Г—Е. как пройти от А до Е? никак: от А можно дойти только до В и Д.
+дороги: А—Б, Б—В, В—Г, Д—Е. как пройти от В до Е? никак: от В можно дойти только до А и Б и Г.
+дороги: А—В, В—Д, Б—Г, Г—Е. как пройти от Д до Е? никак: от Д можно дойти только до А и В.
+дороги: А—Б, А—В, Б—Г, Д—Е. как пройти от А до Е? никак: от А можно дойти только до Б и В и Г.
+дороги: А—Б, Б—Г, Г—Е, В—Д. как пройти от В до Е? никак: от В можно дойти только до Д.
+дороги: А—Б, А—В, Б—Г, Д—Е. как пройти от Д до Е? прямо: Д—Е.
+дороги: А—Б, Б—В, Г—Д. как пройти от А до Е? никак: от А можно дойти только до Б и В.
+дороги: А—Б, Б—В, В—Г, Г—Д. как пройти от В до Е? никак: от В можно дойти только до А и Б и Г и Д.
+дороги: А—Б, Б—В, Г—Д. как пройти от Д до Е? никак: от Д можно дойти только до Г.
+дороги: А—В, В—Д, Б—Г, Г—Е. как пройти от Б до Е? через Г: Б—Г, Г—Е.
+дороги: А—Б, Б—В, В—Г, Д—Е. как пройти от Г до Е? никак: от Г можно дойти только до А и Б и В.
+дороги: А—В, В—Д, Б—Г, Г—Е. как пройти от Е до Д? никак: от Е можно дойти только до Б и Г.
+
+roads: A—B, A—C, B—D, E—F. how to get from B to F? not at all: from B one can reach only A и C и D.
+roads: A—B, B—D, D—F, C—E. how to get from D to F? directly: D—F.
+roads: A—B, A—C, B—D, E—F. how to get from F to E? directly: F—E.
+roads: A—B, B—C, D—E. how to get from B to F? not at all: from B one can reach only A и C.
+roads: A—B, B—C, C—D, D—E. how to get from D to F? not at all: from D one can reach only A и B и C и E.
+roads: A—B, B—C, C—D, E—F. how to get from A to F? not at all: from A one can reach only B и C и D.
+roads: A—C, C—E, B—D, D—F. how to get from C to F? not at all: from C one can reach only A и E.
+roads: A—B, B—C, C—D, E—F. how to get from E to F? directly: E—F.
+roads: A—B, B—D, D—F, C—E. how to get from A to F? through B и D: A—B, B—D, D—F.
+roads: A—B, A—C, B—D, E—F. how to get from C to F? not at all: from C one can reach only A и B и D.
+roads: A—B, B—D, D—F, C—E. how to get from E to F? not at all: from E one can reach only C.
+roads: A—B, B—C, C—D, D—E. how to get from A to F? not at all: from A one can reach only B и C и D и E.
+roads: A—B, B—C, D—E. how to get from C to F? not at all: from C one can reach only A и B.
+roads: A—B, B—C, C—D, D—E. how to get from E to F? not at all: from E one can reach only A и B и C и D.
+roads: A—B, B—C, C—D, E—F. how to get from B to F? not at all: from B one can reach only A и C и D.
+roads: A—C, C—E, B—D, D—F. how to get from D to F? directly: D—F.
+roads: A—B, B—C, C—D, E—F. how to get from F to E? directly: F—E.
+roads: A—B, B—D, D—F, C—E. how to get from B to F? through D: B—D, D—F.
+roads: A—B, A—C, B—D, E—F. how to get from D to F? not at all: from D one can reach only A и B и C.
+roads: A—B, B—D, D—F, C—E. how to get from F to E? not at all: from F one can reach only A и B и D.
+roads: A—B, B—C, C—D, D—E. how to get from B to F? not at all: from B one can reach only A и C и D и E.
+roads: A—B, B—C, D—E. how to get from D to F? not at all: from D one can reach only E.
+roads: A—C, C—E, B—D, D—F. how to get from A to F? not at all: from A one can reach only C и E.
+roads: A—B, B—C, C—D, E—F. how to get from C to F? not at all: from C one can reach only A и B и D.
+roads: A—C, C—E, B—D, D—F. how to get from E to F? not at all: from E one can reach only A и C.
+roads: A—B, A—C, B—D, E—F. how to get from A to F? not at all: from A one can reach only B и C и D.
+roads: A—B, B—D, D—F, C—E. how to get from C to F? not at all: from C one can reach only E.
+roads: A—B, A—C, B—D, E—F. how to get from E to F? directly: E—F.
+roads: A—B, B—C, D—E. how to get from A to F? not at all: from A one can reach only B и C.
+roads: A—B, B—C, C—D, D—E. how to get from C to F? not at all: from C one can reach only A и B и D и E.
+roads: A—B, B—C, D—E. how to get from E to F? not at all: from E one can reach only D.
+roads: A—C, C—E, B—D, D—F. how to get from B to F? through D: B—D, D—F.
+roads: A—B, B—C, C—D, E—F. how to get from D to F? not at all: from D one can reach only A и B и C.
+roads: A—C, C—E, B—D, D—F. how to get from F to E? not at all: from F one can reach only B и D.
