@@ -295,6 +295,45 @@ COURTS=("courts/arith_court.py" "courts/algo_court.py"
         "scripts/holdout_key.py"
         # МЕРА ДЕЙСТВИЯ — число меряет действие или считает носителей (род d5, 05.09)
         "courts/holdforms_court.py" "courts/cmpframes_court.py" "courts/sceneforms_court.py" "courts/toolforms_court.py" "courts/verifyforms_court.py" "courts/planforms_court.py" "courts/episodeforms_court.py" "courts/summaryforms_court.py" "courts/opforms_court.py" "courts/readnum_court.py" "courts/mandateforms_court.py" "courts/personforms_court.py" "courts/selfmodelforms_court.py" "courts/signedworld_court.py" "courts/beforetails_court.py" "courts/discountroad_court.py" "courts/nomention_court.py" "courts/clockforms_court.py" "courts/mixedunits_court.py" "courts/dateforms_court.py" "courts/clockwords_court.py" "courts/speedforms_court.py" "courts/roundforms_court.py" "courts/orderforms_court.py" "courts/quantforms_court.py" "courts/roman_court.py" "courts/place_court.py" "courts/unitfrac_court.py" "courts/enough_court.py" "courts/numphrase_court.py" "courts/kinbearer_court.py" "courts/pronobject_court.py" "courts/proform_court.py" "courts/degrees_court.py" "courts/actturn_court.py" "courts/tempscale_court.py" "courts/action_measure_court.py" "courts/numberline_court.py" "courts/countfacts_court.py" "courts/letters_court.py" "courts/langcount_court.py" "courts/propcompare_court.py" "courts/price_court.py" "courts/translate_court.py" "courts/timeunits_court.py" "courts/svamp_court.py" "courts/measure_langs_court.py"
+        # ВОСЕМЬ МИРОВ ЛЕСТНИЦЫ (14.09, ступени 1 и 2, просьба holon-f9): цель, сказанная
+        # речью; деление как дело без носителя; скобки; булевы выражения; азбучный порядок;
+        # слежение за вещами через обмен; многошаговый счёт; DROP одним миром. Всякий из них
+        # замкнут на себя (`closedworld`) и всякий ловит подсадки, объявленные в самом суде.
+        "courts/goal_court.py" "courts/equalshare_court.py" "courts/dyck_court.py"
+        "courts/boolexpr_court.py" "courts/alphaorder_court.py" "courts/handover_court.py"
+        "courts/nestcalc_court.py" "courts/drop_court.py"
+        # ДВУСТОРОННЯЯ СВЯЗЬ — «только если» и «тогда и только тогда», купленные нулём:
+        # корпус 162 раза звал обращение импликации ошибкой и ни разу не показал, когда
+        # оно верно. Суд выводит вид связи ОБХОДОМ РЯДА, а не берёт его у дома.
+        "courts/bicond_court.py"
+        # ЧТЕНИЕ ТАБЛИЦЫ — ещё один ноль пробы: «на пересечении» 0 строк при 3 085
+        # упоминаниях слова «таблица» как имени чужой вещи. Суд строит таблицу заново
+        # по записи и отказывает вопросу, у какого два ответа.
+        "courts/grid_court.py"
+        # ОКРУГЛЕНИЕ ПО ДЕЛУ — третий ноль пробы: округление ВВЕРХ в своде было (77 строк),
+        # ВНИЗ не было вовсе, а обе стороны рядом — нигде. Суд не знает рода страницы: он
+        # смотрит, какая рамка совпала, и тем узнаёт, что́ обещано.
+        "courts/roundneed_court.py"
+        # СРАВНЕНИЕ ДАТ — четвёртый ноль пробы: «какая дата» 0 строк при 480 страницах
+        # счёта дней. Суд собирает страницу заново ЦЕЛИКОМ — и раннюю дату, и причину:
+        # ответ без причины не есть ответ.
+        "courts/datecmp_court.py"
+        # ДЕЛО НАД БУКВАМИ — пятый ноль пробы: палиндром, анаграмма и сдвиг — по нулю
+        # строк при 360 страницах СЧЁТА букв. Азбука взята у дома азбучного порядка, а
+        # не объявлена вторым списком; перенос через край азбуки показан, а не умолчан.
+        "courts/letterwork_court.py"
+        # РАССАДКА ПО ОГРАНИЧЕНИЯМ — шестой ноль пробы: «кто где живёт» 0 строк. Суд
+        # перебирает все шесть рассадок и требует ЕДИНСТВЕННОСТИ и НАИМЕНЬШЕГО набора:
+        # задача с двумя решениями не есть задача, а лишнее условие не учит ничему.
+        "courts/whodwells_court.py"
+        # ПОДСАДКИ ВНЕ РАМКИ — прибор, купленный этой самой потерей: суд скобок доложил
+        # «поймано 4 из 7», умолчав, что три строки он больше НЕ ЧИТАЕТ. Прибор читает все
+        # объявления подсадок деревом разбора и спрашивает судимость у ПАЛАТЫ.
+        "scripts/plants_read.py"
+        # ПРОБА НА НОЛЬ — семейства дел, о каких свод не говорит ни строки. Рубеж здесь
+        # РАСТЁТ: купленное не смеет вернуться в ноль. Мир, снятый с ковки или сломанный
+        # переездом дома, уносит целое УМЕНИЕ, а покрытие считает строки и молчит.
+        "scripts/zero_probe.py"
         # СТРАЖ ЧАСТНОГО ИТОГА — ПОСЛЕДНИМ, И ЭТО НЕ ПОРЯДОК, А УСЛОВИЕ МЕРЫ: он
         # судит СЛЕД ЭТОГО ЖЕ ПРОГОНА (reports/SUITE-TRACE.tsv, пишется по ходу), и
         # всякое место раньше конца дало бы ему неполный след. Дорогой прибор,

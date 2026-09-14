@@ -1,0 +1,171 @@
+чем закрыть ряд «[ ] { [ ] { [ ] { [ ]»? закрывают «} } }».
+ряд ( { } вложен на 2.
+чем закрыть ряд «[ ] { [ ] { [»? закрывают «] } }».
+ряд ( { } ( { } ( { не уравновешен: открытых без пары 4.
+ряд { [ ( ) [ ( ) [ ( ) [ ( вложен на 6.
+ряд ( { } ( { не уравновешен: открытых без пары 3.
+ряд { [ ( ) [ ( ) [ вложен на 4.
+чем закрыть ряд «( { } ( { } (»? закрывают «) ) )».
+ряд { [ ( ) [ ( ) [ ( ) [ не уравновешен: открытых без пары 5.
+чем закрыть ряд «( {»? закрывают «} )».
+ряд { [ ( ) [ не уравновешен: открытых без пары 3.
+ряд [ ] { [ ] { [ ] вложен на 3.
+чем закрыть ряд «{ [ ( ) [ ( ) [ ( )»? закрывают «] ] ] }».
+ряд [ ] { вложен на 1.
+чем закрыть ряд «{ [ ( ) [ ( )»? закрывают «] ] }».
+ряд [ ] { [ ] не уравновешен: открытых без пары 1.
+ряд ( { } ( { } ( { } вложен на 4.
+
+how is the row «[ ] { [ ] { [ ] { [ ]» closed? it is closed by «} } }».
+the row ( { } nests 2 deep.
+how is the row «[ ] { [ ] { [» closed? it is closed by «] } }».
+the row ( { } ( { } ( { is not balanced: 4 open without a pair.
+the row { [ ( ) [ ( ) [ ( ) [ ( nests 6 deep.
+the row ( { } ( { is not balanced: 3 open without a pair.
+the row { [ ( ) [ ( ) [ nests 4 deep.
+how is the row «( { } ( { } (» closed? it is closed by «) ) )».
+the row { [ ( ) [ ( ) [ ( ) [ is not balanced: 5 open without a pair.
+how is the row «( {» closed? it is closed by «} )».
+the row { [ ( ) [ is not balanced: 3 open without a pair.
+the row [ ] { [ ] { [ ] nests 3 deep.
+how is the row «{ [ ( ) [ ( ) [ ( )» closed? it is closed by «] ] ] }».
+the row [ ] { nests 1 deep.
+how is the row «{ [ ( ) [ ( )» closed? it is closed by «] ] }».
+the row [ ] { [ ] is not balanced: 1 open without a pair.
+the row ( { } ( { } ( { } nests 4 deep.
+
+чем закрыть ряд «{ [ ( ) [ ( ) [»? закрывают «] ] ] }».
+ряд ( { } ( вложен на 2.
+ряд { [ ( ) [ ( не уравновешен: открытых без пары 4.
+чем закрыть ряд «[ ] { [ ] { [ ]»? закрывают «} }».
+ряд { [ ( ) [ ( ) [ ( вложен на 5.
+ряд [ ] { [ ] { [ ] { не уравновешен: открытых без пары 3.
+чем закрыть ряд «( { } ( { } ( { }»? закрывают «) ) )».
+ряд [ ] { [ ] { [ ] { [ вложен на 4.
+ряд ( { } ( { } ( { } ( не уравновешен: открытых без пары 4.
+чем закрыть ряд «{ [ ( ) [ ( ) [ ( ) [ (»? закрывают «) ] ] ] ] }».
+чем закрыть ряд «[ ] {»? закрывают «}».
+ряд { [ ( ) вложен на 3.
+ряд [ ] { [ ] { не уравновешен: открытых без пары 2.
+чем закрыть ряд «( { }»? закрывают «)».
+ряд [ ] { [ вложен на 2.
+ряд ( { } ( { } не уравновешен: открытых без пары 2.
+
+how is the row «{ [ ( ) [ ( ) [» closed? it is closed by «] ] ] }».
+the row ( { } ( nests 2 deep.
+the row { [ ( ) [ ( is not balanced: 4 open without a pair.
+how is the row «[ ] { [ ] { [ ]» closed? it is closed by «} }».
+the row { [ ( ) [ ( ) [ ( nests 5 deep.
+the row [ ] { [ ] { [ ] { is not balanced: 3 open without a pair.
+how is the row «( { } ( { } ( { }» closed? it is closed by «) ) )».
+the row [ ] { [ ] { [ ] { [ nests 4 deep.
+the row ( { } ( { } ( { } ( is not balanced: 4 open without a pair.
+how is the row «{ [ ( ) [ ( ) [ ( ) [ (» closed? it is closed by «) ] ] ] ] }».
+how is the row «[ ] {» closed? it is closed by «}».
+the row { [ ( ) nests 3 deep.
+the row [ ] { [ ] { is not balanced: 2 open without a pair.
+how is the row «( { }» closed? it is closed by «)».
+the row [ ] { [ nests 2 deep.
+the row ( { } ( { } is not balanced: 2 open without a pair.
+
+ряд { [ ( ) [ ( ) [ ( ) не уравновешен: открытых без пары 4.
+ряд { [ ( ) [ ( ) не уравновешен: открытых без пары 3.
+чем закрыть ряд «{ [ ( ) [ ( ) [ (»? закрывают «) ] ] ] }».
+чем закрыть ряд «{ [ ( )»? закрывают «] }».
+ряд [ ] { [ ] вложен на 2.
+ряд [ ] { [ ] { [ ] { [ ] не уравновешен: открытых без пары 3.
+ряд [ ] { [ ] { [ не уравновешен: открытых без пары 3.
+чем закрыть ряд «[ ] { [ ] { [ ] { [»? закрывают «] } } }».
+чем закрыть ряд «[ ] { [»? закрывают «] }».
+ряд ( { } ( { } ( { вложен на 4.
+ряд ( { } ( { вложен на 3.
+ряд ( { } ( { } ( не уравновешен: открытых без пары 3.
+ряд ( { не уравновешен: открытых без пары 2.
+чем закрыть ряд «( { } (»? закрывают «) )».
+ряд { [ ( ) [ ( ) [ ( ) [ вложен на 5.
+ряд { [ ( ) [ вложен на 3.
+
+the row { [ ( ) [ ( ) [ ( ) is not balanced: 4 open without a pair.
+the row { [ ( ) [ ( ) is not balanced: 3 open without a pair.
+how is the row «{ [ ( ) [ ( ) [ (» closed? it is closed by «) ] ] ] }».
+how is the row «{ [ ( )» closed? it is closed by «] }».
+the row [ ] { [ ] nests 2 deep.
+the row [ ] { [ ] { [ ] { [ ] is not balanced: 3 open without a pair.
+the row [ ] { [ ] { [ is not balanced: 3 open without a pair.
+how is the row «[ ] { [ ] { [ ] { [» closed? it is closed by «] } } }».
+how is the row «[ ] { [» closed? it is closed by «] }».
+the row ( { } ( { } ( { nests 4 deep.
+the row ( { } ( { nests 3 deep.
+the row ( { } ( { } ( is not balanced: 3 open without a pair.
+the row ( { is not balanced: 2 open without a pair.
+how is the row «( { } (» closed? it is closed by «) )».
+the row { [ ( ) [ ( ) [ ( ) [ nests 5 deep.
+the row { [ ( ) [ nests 3 deep.
+
+чем закрыть ряд «{ [ ( ) [ ( ) [ ( ) [»? закрывают «] ] ] ] }».
+ряд [ ] { не уравновешен: открытых без пары 1.
+ряд ( { } не уравновешен: открытых без пары 1.
+ряд { [ ( ) [ ( ) [ не уравновешен: открытых без пары 4.
+ряд [ ] { [ ] { [ ] не уравновешен: открытых без пары 2.
+ряд ( { } ( { } ( { } не уравновешен: открытых без пары 3.
+ряд { [ ( ) [ ( ) [ ( ) [ ( не уравновешен: открытых без пары 6.
+ряд [ ] { [ ] { вложен на 2.
+ряд ( { } ( { } вложен на 3.
+ряд { [ ( ) [ ( вложен на 4.
+ряд [ ] { [ ] { [ ] { вложен на 3.
+ряд ( { } ( { } ( { } ( вложен на 4.
+чем закрыть ряд «( { } ( {»? закрывают «} ) )».
+чем закрыть ряд «{ [ ( ) [»? закрывают «] ] }».
+чем закрыть ряд «[ ] { [ ]»? закрывают «}».
+чем закрыть ряд «( { } ( { } ( {»? закрывают «} ) ) )».
+
+how is the row «{ [ ( ) [ ( ) [ ( ) [» closed? it is closed by «] ] ] ] }».
+the row [ ] { is not balanced: 1 open without a pair.
+the row ( { } is not balanced: 1 open without a pair.
+the row { [ ( ) [ ( ) [ is not balanced: 4 open without a pair.
+the row [ ] { [ ] { [ ] is not balanced: 2 open without a pair.
+the row ( { } ( { } ( { } is not balanced: 3 open without a pair.
+the row { [ ( ) [ ( ) [ ( ) [ ( is not balanced: 6 open without a pair.
+the row [ ] { [ ] { nests 2 deep.
+the row ( { } ( { } nests 3 deep.
+the row { [ ( ) [ ( nests 4 deep.
+the row [ ] { [ ] { [ ] { nests 3 deep.
+the row ( { } ( { } ( { } ( nests 4 deep.
+how is the row «( { } ( {» closed? it is closed by «} ) )».
+how is the row «{ [ ( ) [» closed? it is closed by «] ] }».
+how is the row «[ ] { [ ]» closed? it is closed by «}».
+how is the row «( { } ( { } ( {» closed? it is closed by «} ) ) )».
+
+ряд [ ] { [ ] { [ вложен на 3.
+ряд [ ] { [ ] { [ ] { [ ] вложен на 4.
+чем закрыть ряд «{ [ ( ) [ (»? закрывают «) ] ] }».
+ряд { [ ( ) не уравновешен: открытых без пары 2.
+ряд { [ ( ) [ ( ) [ ( не уравновешен: открытых без пары 5.
+ряд { [ ( ) [ ( ) вложен на 4.
+ряд { [ ( ) [ ( ) [ ( ) вложен на 5.
+чем закрыть ряд «( { } ( { }»? закрывают «) )».
+чем закрыть ряд «( { } ( { } ( { } (»? закрывают «) ) ) )».
+ряд ( { } ( не уравновешен: открытых без пары 2.
+ряд ( { вложен на 2.
+ряд ( { } ( { } ( вложен на 3.
+чем закрыть ряд «[ ] { [ ] {»? закрывают «} }».
+чем закрыть ряд «[ ] { [ ] { [ ] {»? закрывают «} } }».
+ряд [ ] { [ не уравновешен: открытых без пары 2.
+ряд [ ] { [ ] { [ ] { [ не уравновешен: открытых без пары 4.
+
+the row [ ] { [ ] { [ nests 3 deep.
+the row [ ] { [ ] { [ ] { [ ] nests 4 deep.
+how is the row «{ [ ( ) [ (» closed? it is closed by «) ] ] }».
+the row { [ ( ) is not balanced: 2 open without a pair.
+the row { [ ( ) [ ( ) [ ( is not balanced: 5 open without a pair.
+the row { [ ( ) [ ( ) nests 4 deep.
+the row { [ ( ) [ ( ) [ ( ) nests 5 deep.
+how is the row «( { } ( { }» closed? it is closed by «) )».
+how is the row «( { } ( { } ( { } (» closed? it is closed by «) ) ) )».
+the row ( { } ( is not balanced: 2 open without a pair.
+the row ( { nests 2 deep.
+the row ( { } ( { } ( nests 3 deep.
+how is the row «[ ] { [ ] {» closed? it is closed by «} }».
+how is the row «[ ] { [ ] { [ ] {» closed? it is closed by «} } }».
+the row [ ] { [ is not balanced: 2 open without a pair.
+the row [ ] { [ ] { [ ] { [ is not balanced: 4 open without a pair.

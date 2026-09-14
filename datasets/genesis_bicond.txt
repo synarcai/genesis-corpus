@@ -1,0 +1,177 @@
+число чётное тогда и только тогда, когда оно делится на 2. вот 4: оно чётное, и оно делится на 2; а вот 3: оно нечётное, и оно не делится на 2.
+число делится на 12 только если оно делится на 4. «делится на 4» — условие НЕОБХОДИМОЕ, но не ДОСТАТОЧНОЕ: вот 4 — оно делится на 4, но оно не делится на 12.
+если число делится на 9, то оно делится на 3. обратное неверно: вот 6 — оно делится на 3, но оно не делится на 9.
+число делится на 6 только если оно делится на 3. «делится на 3» — условие НЕОБХОДИМОЕ, но не ДОСТАТОЧНОЕ: вот 3 — оно делится на 3, но оно не делится на 6.
+число делится на 9 только если оно сумма его цифр делится на 9. «сумма его цифр делится на 9» — условие НЕОБХОДИМОЕ И ДОСТАТОЧНОЕ: вот 27 — оно сумма его цифр делится на 9, и оно делится на 9.
+число делится на 5 тогда и только тогда, когда оно кончается на 0 или на 5. вот 5: оно делится на 5, и оно кончается на 0 или на 5; а вот 1: оно не делится на 5, и оно не кончается ни на 0, ни на 5.
+число делится на 9 только если оно сумма его цифр делится на 3. «сумма его цифр делится на 3» — условие НЕОБХОДИМОЕ, но не ДОСТАТОЧНОЕ: вот 12 — оно сумма его цифр делится на 3, но оно не делится на 9.
+если число больше 30, то оно больше 10. обратное неверно: вот 11 — оно больше 10, но оно не больше 30.
+число делится на 10 только если оно делится на 5. «делится на 5» — условие НЕОБХОДИМОЕ, но не ДОСТАТОЧНОЕ: вот 25 — оно делится на 5, но оно не делится на 10.
+если число делится на 4, то оно делится на 2. обратное неверно: вот 2 — оно делится на 2, но оно не делится на 4.
+число делится на 3 тогда и только тогда, когда оно сумма его цифр делится на 3. вот 9: оно делится на 3, и оно сумма его цифр делится на 3; а вот 4: оно не делится на 3, и оно сумма его цифр не делится на 3.
+число делится на 10 только если оно кончается на 0. «кончается на 0» — условие НЕОБХОДИМОЕ И ДОСТАТОЧНОЕ: вот 20 — оно кончается на 0, и оно делится на 10.
+если число делится на 12, то оно делится на 4. обратное неверно: вот 16 — оно делится на 4, но оно не делится на 12.
+число делится на 15 только если оно делится на 5. «делится на 5» — условие НЕОБХОДИМОЕ, но не ДОСТАТОЧНОЕ: вот 10 — оно делится на 5, но оно не делится на 15.
+если число делится на 6, то оно делится на 3. обратное неверно: вот 15 — оно делится на 3, но оно не делится на 6.
+число больше 30 тогда и только тогда, когда оно не меньше 31. вот 32: оно больше 30, и оно не меньше 31; а вот 2: оно не больше 30, и оно меньше 31.
+число делится на 3 только если оно сумма его цифр делится на 3. «сумма его цифр делится на 3» — условие НЕОБХОДИМОЕ И ДОСТАТОЧНОЕ: вот 3 — оно сумма его цифр делится на 3, и оно делится на 3.
+
+a number is even if and only if it is divisible by 2. take 4: it is even, and it is divisible by 2; and take 3: it is odd, and it is not divisible by 2.
+a number is divisible by 12 only if it is divisible by 4. «is divisible by 4» is a NECESSARY condition but not a SUFFICIENT one: take 4 — it is divisible by 4, but it is not divisible by 12.
+if a number is divisible by 9, then it is divisible by 3. the converse is false: take 6 — it is divisible by 3, but it is not divisible by 9.
+a number is divisible by 6 only if it is divisible by 3. «is divisible by 3» is a NECESSARY condition but not a SUFFICIENT one: take 3 — it is divisible by 3, but it is not divisible by 6.
+a number is divisible by 9 only if it has a digit sum divisible by 9. «has a digit sum divisible by 9» is a NECESSARY AND SUFFICIENT condition: take 27 — it has a digit sum divisible by 9, and it is divisible by 9.
+a number is divisible by 5 if and only if it ends in 0 or 5. take 5: it is divisible by 5, and it ends in 0 or 5; and take 1: it is not divisible by 5, and it ends in neither 0 nor 5.
+a number is divisible by 9 only if it has a digit sum divisible by 3. «has a digit sum divisible by 3» is a NECESSARY condition but not a SUFFICIENT one: take 12 — it has a digit sum divisible by 3, but it is not divisible by 9.
+if a number is greater than 30, then it is greater than 10. the converse is false: take 11 — it is greater than 10, but it is not greater than 30.
+a number is divisible by 10 only if it is divisible by 5. «is divisible by 5» is a NECESSARY condition but not a SUFFICIENT one: take 25 — it is divisible by 5, but it is not divisible by 10.
+if a number is divisible by 4, then it is divisible by 2. the converse is false: take 2 — it is divisible by 2, but it is not divisible by 4.
+a number is divisible by 3 if and only if it has a digit sum divisible by 3. take 9: it is divisible by 3, and it has a digit sum divisible by 3; and take 4: it is not divisible by 3, and it has a digit sum not divisible by 3.
+a number is divisible by 10 only if it ends in 0. «ends in 0» is a NECESSARY AND SUFFICIENT condition: take 20 — it ends in 0, and it is divisible by 10.
+if a number is divisible by 12, then it is divisible by 4. the converse is false: take 16 — it is divisible by 4, but it is not divisible by 12.
+a number is divisible by 15 only if it is divisible by 5. «is divisible by 5» is a NECESSARY condition but not a SUFFICIENT one: take 10 — it is divisible by 5, but it is not divisible by 15.
+if a number is divisible by 6, then it is divisible by 3. the converse is false: take 15 — it is divisible by 3, but it is not divisible by 6.
+a number is greater than 30 if and only if it is at least 31. take 32: it is greater than 30, and it is at least 31; and take 2: it is not greater than 30, and it is less than 31.
+a number is divisible by 3 only if it has a digit sum divisible by 3. «has a digit sum divisible by 3» is a NECESSARY AND SUFFICIENT condition: take 3 — it has a digit sum divisible by 3, and it is divisible by 3.
+
+если число делится на 9, то оно делится на 3. обратное неверно: вот 12 — оно делится на 3, но оно не делится на 9.
+число чётное только если оно делится на 2. «делится на 2» — условие НЕОБХОДИМОЕ И ДОСТАТОЧНОЕ: вот 2 — оно делится на 2, и оно чётное.
+число делится на 9 тогда и только тогда, когда оно сумма его цифр делится на 9. вот 9: оно делится на 9, и оно сумма его цифр делится на 9; а вот 1: оно не делится на 9, и оно сумма его цифр не делится на 9.
+если число делится на 10, то оно делится на 5. обратное неверно: вот 5 — оно делится на 5, но оно не делится на 10.
+число делится на 12 только если оно делится на 4. «делится на 4» — условие НЕОБХОДИМОЕ, но не ДОСТАТОЧНОЕ: вот 8 — оно делится на 4, но оно не делится на 12.
+число делится на 5 тогда и только тогда, когда оно кончается на 0 или на 5. вот 10: оно делится на 5, и оно кончается на 0 или на 5; а вот 2: оно не делится на 5, и оно не кончается ни на 0, ни на 5.
+если число делится на 4, то оно делится на 2. обратное неверно: вот 6 — оно делится на 2, но оно не делится на 4.
+число делится на 15 только если оно делится на 5. «делится на 5» — условие НЕОБХОДИМОЕ, но не ДОСТАТОЧНОЕ: вот 20 — оно делится на 5, но оно не делится на 15.
+число чётное тогда и только тогда, когда оно делится на 2. вот 6: оно чётное, и оно делится на 2; а вот 5: оно нечётное, и оно не делится на 2.
+число больше 30 только если оно не меньше 31. «не меньше 31» — условие НЕОБХОДИМОЕ И ДОСТАТОЧНОЕ: вот 31 — оно не меньше 31, и оно больше 30.
+число делится на 9 только если оно делится на 3. «делится на 3» — условие НЕОБХОДИМОЕ, но не ДОСТАТОЧНОЕ: вот 3 — оно делится на 3, но оно не делится на 9.
+если число делится на 9, то оно сумма его цифр делится на 3. обратное неверно: вот 3 — оно сумма его цифр делится на 3, но оно не делится на 9.
+число делится на 3 только если оно сумма его цифр делится на 3. «сумма его цифр делится на 3» — условие НЕОБХОДИМОЕ И ДОСТАТОЧНОЕ: вот 6 — оно сумма его цифр делится на 3, и оно делится на 3.
+число делится на 6 только если оно делится на 3. «делится на 3» — условие НЕОБХОДИМОЕ, но не ДОСТАТОЧНОЕ: вот 9 — оно делится на 3, но оно не делится на 6.
+если число больше 30, то оно больше 10. обратное неверно: вот 12 — оно больше 10, но оно не больше 30.
+число делится на 10 только если оно кончается на 0. «кончается на 0» — условие НЕОБХОДИМОЕ И ДОСТАТОЧНОЕ: вот 30 — оно кончается на 0, и оно делится на 10.
+число больше 30 тогда и только тогда, когда оно не меньше 31. вот 33: оно больше 30, и оно не меньше 31; а вот 3: оно не больше 30, и оно меньше 31.
+
+if a number is divisible by 9, then it is divisible by 3. the converse is false: take 12 — it is divisible by 3, but it is not divisible by 9.
+a number is even only if it is divisible by 2. «is divisible by 2» is a NECESSARY AND SUFFICIENT condition: take 2 — it is divisible by 2, and it is even.
+a number is divisible by 9 if and only if it has a digit sum divisible by 9. take 9: it is divisible by 9, and it has a digit sum divisible by 9; and take 1: it is not divisible by 9, and it has a digit sum not divisible by 9.
+if a number is divisible by 10, then it is divisible by 5. the converse is false: take 5 — it is divisible by 5, but it is not divisible by 10.
+a number is divisible by 12 only if it is divisible by 4. «is divisible by 4» is a NECESSARY condition but not a SUFFICIENT one: take 8 — it is divisible by 4, but it is not divisible by 12.
+a number is divisible by 5 if and only if it ends in 0 or 5. take 10: it is divisible by 5, and it ends in 0 or 5; and take 2: it is not divisible by 5, and it ends in neither 0 nor 5.
+if a number is divisible by 4, then it is divisible by 2. the converse is false: take 6 — it is divisible by 2, but it is not divisible by 4.
+a number is divisible by 15 only if it is divisible by 5. «is divisible by 5» is a NECESSARY condition but not a SUFFICIENT one: take 20 — it is divisible by 5, but it is not divisible by 15.
+a number is even if and only if it is divisible by 2. take 6: it is even, and it is divisible by 2; and take 5: it is odd, and it is not divisible by 2.
+a number is greater than 30 only if it is at least 31. «is at least 31» is a NECESSARY AND SUFFICIENT condition: take 31 — it is at least 31, and it is greater than 30.
+a number is divisible by 9 only if it is divisible by 3. «is divisible by 3» is a NECESSARY condition but not a SUFFICIENT one: take 3 — it is divisible by 3, but it is not divisible by 9.
+if a number is divisible by 9, then it has a digit sum divisible by 3. the converse is false: take 3 — it has a digit sum divisible by 3, but it is not divisible by 9.
+a number is divisible by 3 only if it has a digit sum divisible by 3. «has a digit sum divisible by 3» is a NECESSARY AND SUFFICIENT condition: take 6 — it has a digit sum divisible by 3, and it is divisible by 3.
+a number is divisible by 6 only if it is divisible by 3. «is divisible by 3» is a NECESSARY condition but not a SUFFICIENT one: take 9 — it is divisible by 3, but it is not divisible by 6.
+if a number is greater than 30, then it is greater than 10. the converse is false: take 12 — it is greater than 10, but it is not greater than 30.
+a number is divisible by 10 only if it ends in 0. «ends in 0» is a NECESSARY AND SUFFICIENT condition: take 30 — it ends in 0, and it is divisible by 10.
+a number is greater than 30 if and only if it is at least 31. take 33: it is greater than 30, and it is at least 31; and take 3: it is not greater than 30, and it is less than 31.
+
+число делится на 6 только если оно делится на 3. «делится на 3» — условие НЕОБХОДИМОЕ, но не ДОСТАТОЧНОЕ: вот 15 — оно делится на 3, но оно не делится на 6.
+число делится на 10 тогда и только тогда, когда оно кончается на 0. вот 10: оно делится на 10, и оно кончается на 0; а вот 1: оно не делится на 10, и оно не кончается на 0.
+если число делится на 10, то оно делится на 5. обратное неверно: вот 15 — оно делится на 5, но оно не делится на 10.
+число делится на 5 только если оно кончается на 0 или на 5. «кончается на 0 или на 5» — условие НЕОБХОДИМОЕ И ДОСТАТОЧНОЕ: вот 5 — оно кончается на 0 или на 5, и оно делится на 5.
+число делится на 9 только если оно делится на 3. «делится на 3» — условие НЕОБХОДИМОЕ, но не ДОСТАТОЧНОЕ: вот 6 — оно делится на 3, но оно не делится на 9.
+число делится на 5 тогда и только тогда, когда оно кончается на 0 или на 5. вот 15: оно делится на 5, и оно кончается на 0 или на 5; а вот 3: оно не делится на 5, и оно не кончается ни на 0, ни на 5.
+если число делится на 15, то оно делится на 5. обратное неверно: вот 5 — оно делится на 5, но оно не делится на 15.
+число делится на 3 только если оно сумма его цифр делится на 3. «сумма его цифр делится на 3» — условие НЕОБХОДИМОЕ И ДОСТАТОЧНОЕ: вот 9 — оно сумма его цифр делится на 3, и оно делится на 3.
+число больше 30 только если оно больше 10. «больше 10» — условие НЕОБХОДИМОЕ, но не ДОСТАТОЧНОЕ: вот 11 — оно больше 10, но оно не больше 30.
+число делится на 9 тогда и только тогда, когда оно сумма его цифр делится на 9. вот 18: оно делится на 9, и оно сумма его цифр делится на 9; а вот 2: оно не делится на 9, и оно сумма его цифр не делится на 9.
+если число больше 30, то оно больше 10. обратное неверно: вот 13 — оно больше 10, но оно не больше 30.
+число больше 30 только если оно не меньше 31. «не меньше 31» — условие НЕОБХОДИМОЕ И ДОСТАТОЧНОЕ: вот 32 — оно не меньше 31, и оно больше 30.
+число делится на 12 только если оно делится на 4. «делится на 4» — условие НЕОБХОДИМОЕ, но не ДОСТАТОЧНОЕ: вот 16 — оно делится на 4, но оно не делится на 12.
+число делится на 4 только если оно делится на 2. «делится на 2» — условие НЕОБХОДИМОЕ, но не ДОСТАТОЧНОЕ: вот 2 — оно делится на 2, но оно не делится на 4.
+если число делится на 9, то оно сумма его цифр делится на 3. обратное неверно: вот 6 — оно сумма его цифр делится на 3, но оно не делится на 9.
+если число делится на 4, то оно делится на 2. обратное неверно: вот 10 — оно делится на 2, но оно не делится на 4.
+число чётное только если оно делится на 2. «делится на 2» — условие НЕОБХОДИМОЕ И ДОСТАТОЧНОЕ: вот 4 — оно делится на 2, и оно чётное.
+
+a number is divisible by 6 only if it is divisible by 3. «is divisible by 3» is a NECESSARY condition but not a SUFFICIENT one: take 15 — it is divisible by 3, but it is not divisible by 6.
+a number is divisible by 10 if and only if it ends in 0. take 10: it is divisible by 10, and it ends in 0; and take 1: it is not divisible by 10, and it does not end in 0.
+if a number is divisible by 10, then it is divisible by 5. the converse is false: take 15 — it is divisible by 5, but it is not divisible by 10.
+a number is divisible by 5 only if it ends in 0 or 5. «ends in 0 or 5» is a NECESSARY AND SUFFICIENT condition: take 5 — it ends in 0 or 5, and it is divisible by 5.
+a number is divisible by 9 only if it is divisible by 3. «is divisible by 3» is a NECESSARY condition but not a SUFFICIENT one: take 6 — it is divisible by 3, but it is not divisible by 9.
+a number is divisible by 5 if and only if it ends in 0 or 5. take 15: it is divisible by 5, and it ends in 0 or 5; and take 3: it is not divisible by 5, and it ends in neither 0 nor 5.
+if a number is divisible by 15, then it is divisible by 5. the converse is false: take 5 — it is divisible by 5, but it is not divisible by 15.
+a number is divisible by 3 only if it has a digit sum divisible by 3. «has a digit sum divisible by 3» is a NECESSARY AND SUFFICIENT condition: take 9 — it has a digit sum divisible by 3, and it is divisible by 3.
+a number is greater than 30 only if it is greater than 10. «is greater than 10» is a NECESSARY condition but not a SUFFICIENT one: take 11 — it is greater than 10, but it is not greater than 30.
+a number is divisible by 9 if and only if it has a digit sum divisible by 9. take 18: it is divisible by 9, and it has a digit sum divisible by 9; and take 2: it is not divisible by 9, and it has a digit sum not divisible by 9.
+if a number is greater than 30, then it is greater than 10. the converse is false: take 13 — it is greater than 10, but it is not greater than 30.
+a number is greater than 30 only if it is at least 31. «is at least 31» is a NECESSARY AND SUFFICIENT condition: take 32 — it is at least 31, and it is greater than 30.
+a number is divisible by 12 only if it is divisible by 4. «is divisible by 4» is a NECESSARY condition but not a SUFFICIENT one: take 16 — it is divisible by 4, but it is not divisible by 12.
+a number is divisible by 4 only if it is divisible by 2. «is divisible by 2» is a NECESSARY condition but not a SUFFICIENT one: take 2 — it is divisible by 2, but it is not divisible by 4.
+if a number is divisible by 9, then it has a digit sum divisible by 3. the converse is false: take 6 — it has a digit sum divisible by 3, but it is not divisible by 9.
+if a number is divisible by 4, then it is divisible by 2. the converse is false: take 10 — it is divisible by 2, but it is not divisible by 4.
+a number is even only if it is divisible by 2. «is divisible by 2» is a NECESSARY AND SUFFICIENT condition: take 4 — it is divisible by 2, and it is even.
+
+если число делится на 9, то оно сумма его цифр делится на 3. обратное неверно: вот 12 — оно сумма его цифр делится на 3, но оно не делится на 9.
+число делится на 10 тогда и только тогда, когда оно кончается на 0. вот 20: оно делится на 10, и оно кончается на 0; а вот 2: оно не делится на 10, и оно не кончается на 0.
+число делится на 3 тогда и только тогда, когда оно сумма его цифр делится на 3. вот 3: оно делится на 3, и оно сумма его цифр делится на 3; а вот 1: оно не делится на 3, и оно сумма его цифр не делится на 3.
+число делится на 9 тогда и только тогда, когда оно сумма его цифр делится на 9. вот 27: оно делится на 9, и оно сумма его цифр делится на 9; а вот 3: оно не делится на 9, и оно сумма его цифр не делится на 9.
+число делится на 4 только если оно делится на 2. «делится на 2» — условие НЕОБХОДИМОЕ, но не ДОСТАТОЧНОЕ: вот 6 — оно делится на 2, но оно не делится на 4.
+число делится на 10 только если оно делится на 5. «делится на 5» — условие НЕОБХОДИМОЕ, но не ДОСТАТОЧНОЕ: вот 5 — оно делится на 5, но оно не делится на 10.
+число делится на 9 только если оно делится на 3. «делится на 3» — условие НЕОБХОДИМОЕ, но не ДОСТАТОЧНОЕ: вот 12 — оно делится на 3, но оно не делится на 9.
+число больше 30 только если оно больше 10. «больше 10» — условие НЕОБХОДИМОЕ, но не ДОСТАТОЧНОЕ: вот 12 — оно больше 10, но оно не больше 30.
+число делится на 9 только если оно сумма его цифр делится на 3. «сумма его цифр делится на 3» — условие НЕОБХОДИМОЕ, но не ДОСТАТОЧНОЕ: вот 3 — оно сумма его цифр делится на 3, но оно не делится на 9.
+число чётное только если оно делится на 2. «делится на 2» — условие НЕОБХОДИМОЕ И ДОСТАТОЧНОЕ: вот 6 — оно делится на 2, и оно чётное.
+число делится на 5 только если оно кончается на 0 или на 5. «кончается на 0 или на 5» — условие НЕОБХОДИМОЕ И ДОСТАТОЧНОЕ: вот 10 — оно кончается на 0 или на 5, и оно делится на 5.
+число делится на 9 только если оно сумма его цифр делится на 9. «сумма его цифр делится на 9» — условие НЕОБХОДИМОЕ И ДОСТАТОЧНОЕ: вот 9 — оно сумма его цифр делится на 9, и оно делится на 9.
+число больше 30 только если оно не меньше 31. «не меньше 31» — условие НЕОБХОДИМОЕ И ДОСТАТОЧНОЕ: вот 33 — оно не меньше 31, и оно больше 30.
+если число делится на 6, то оно делится на 3. обратное неверно: вот 3 — оно делится на 3, но оно не делится на 6.
+если число делится на 10, то оно делится на 5. обратное неверно: вот 25 — оно делится на 5, но оно не делится на 10.
+если число делится на 15, то оно делится на 5. обратное неверно: вот 10 — оно делится на 5, но оно не делится на 15.
+если число делится на 12, то оно делится на 4. обратное неверно: вот 4 — оно делится на 4, но оно не делится на 12.
+
+if a number is divisible by 9, then it has a digit sum divisible by 3. the converse is false: take 12 — it has a digit sum divisible by 3, but it is not divisible by 9.
+a number is divisible by 10 if and only if it ends in 0. take 20: it is divisible by 10, and it ends in 0; and take 2: it is not divisible by 10, and it does not end in 0.
+a number is divisible by 3 if and only if it has a digit sum divisible by 3. take 3: it is divisible by 3, and it has a digit sum divisible by 3; and take 1: it is not divisible by 3, and it has a digit sum not divisible by 3.
+a number is divisible by 9 if and only if it has a digit sum divisible by 9. take 27: it is divisible by 9, and it has a digit sum divisible by 9; and take 3: it is not divisible by 9, and it has a digit sum not divisible by 9.
+a number is divisible by 4 only if it is divisible by 2. «is divisible by 2» is a NECESSARY condition but not a SUFFICIENT one: take 6 — it is divisible by 2, but it is not divisible by 4.
+a number is divisible by 10 only if it is divisible by 5. «is divisible by 5» is a NECESSARY condition but not a SUFFICIENT one: take 5 — it is divisible by 5, but it is not divisible by 10.
+a number is divisible by 9 only if it is divisible by 3. «is divisible by 3» is a NECESSARY condition but not a SUFFICIENT one: take 12 — it is divisible by 3, but it is not divisible by 9.
+a number is greater than 30 only if it is greater than 10. «is greater than 10» is a NECESSARY condition but not a SUFFICIENT one: take 12 — it is greater than 10, but it is not greater than 30.
+a number is divisible by 9 only if it has a digit sum divisible by 3. «has a digit sum divisible by 3» is a NECESSARY condition but not a SUFFICIENT one: take 3 — it has a digit sum divisible by 3, but it is not divisible by 9.
+a number is even only if it is divisible by 2. «is divisible by 2» is a NECESSARY AND SUFFICIENT condition: take 6 — it is divisible by 2, and it is even.
+a number is divisible by 5 only if it ends in 0 or 5. «ends in 0 or 5» is a NECESSARY AND SUFFICIENT condition: take 10 — it ends in 0 or 5, and it is divisible by 5.
+a number is divisible by 9 only if it has a digit sum divisible by 9. «has a digit sum divisible by 9» is a NECESSARY AND SUFFICIENT condition: take 9 — it has a digit sum divisible by 9, and it is divisible by 9.
+a number is greater than 30 only if it is at least 31. «is at least 31» is a NECESSARY AND SUFFICIENT condition: take 33 — it is at least 31, and it is greater than 30.
+if a number is divisible by 6, then it is divisible by 3. the converse is false: take 3 — it is divisible by 3, but it is not divisible by 6.
+if a number is divisible by 10, then it is divisible by 5. the converse is false: take 25 — it is divisible by 5, but it is not divisible by 10.
+if a number is divisible by 15, then it is divisible by 5. the converse is false: take 10 — it is divisible by 5, but it is not divisible by 15.
+if a number is divisible by 12, then it is divisible by 4. the converse is false: take 4 — it is divisible by 4, but it is not divisible by 12.
+
+число делится на 9 только если оно сумма его цифр делится на 3. «сумма его цифр делится на 3» — условие НЕОБХОДИМОЕ, но не ДОСТАТОЧНОЕ: вот 6 — оно сумма его цифр делится на 3, но оно не делится на 9.
+число делится на 9 только если оно сумма его цифр делится на 9. «сумма его цифр делится на 9» — условие НЕОБХОДИМОЕ И ДОСТАТОЧНОЕ: вот 18 — оно сумма его цифр делится на 9, и оно делится на 9.
+если число делится на 15, то оно делится на 5. обратное неверно: вот 20 — оно делится на 5, но оно не делится на 15.
+число делится на 10 тогда и только тогда, когда оно кончается на 0. вот 30: оно делится на 10, и оно кончается на 0; а вот 3: оно не делится на 10, и оно не кончается на 0.
+число делится на 4 только если оно делится на 2. «делится на 2» — условие НЕОБХОДИМОЕ, но не ДОСТАТОЧНОЕ: вот 10 — оно делится на 2, но оно не делится на 4.
+число больше 30 только если оно больше 10. «больше 10» — условие НЕОБХОДИМОЕ, но не ДОСТАТОЧНОЕ: вот 13 — оно больше 10, но оно не больше 30.
+число делится на 5 только если оно кончается на 0 или на 5. «кончается на 0 или на 5» — условие НЕОБХОДИМОЕ И ДОСТАТОЧНОЕ: вот 15 — оно кончается на 0 или на 5, и оно делится на 5.
+если число делится на 9, то оно делится на 3. обратное неверно: вот 3 — оно делится на 3, но оно не делится на 9.
+число чётное тогда и только тогда, когда оно делится на 2. вот 2: оно чётное, и оно делится на 2; а вот 1: оно нечётное, и оно не делится на 2.
+число больше 30 тогда и только тогда, когда оно не меньше 31. вот 31: оно больше 30, и оно не меньше 31; а вот 1: оно не больше 30, и оно меньше 31.
+число делится на 15 только если оно делится на 5. «делится на 5» — условие НЕОБХОДИМОЕ, но не ДОСТАТОЧНОЕ: вот 5 — оно делится на 5, но оно не делится на 15.
+число делится на 10 только если оно кончается на 0. «кончается на 0» — условие НЕОБХОДИМОЕ И ДОСТАТОЧНОЕ: вот 10 — оно кончается на 0, и оно делится на 10.
+если число делится на 6, то оно делится на 3. обратное неверно: вот 9 — оно делится на 3, но оно не делится на 6.
+если число делится на 12, то оно делится на 4. обратное неверно: вот 8 — оно делится на 4, но оно не делится на 12.
+число делится на 3 тогда и только тогда, когда оно сумма его цифр делится на 3. вот 6: оно делится на 3, и оно сумма его цифр делится на 3; а вот 2: оно не делится на 3, и оно сумма его цифр не делится на 3.
+число делится на 10 только если оно делится на 5. «делится на 5» — условие НЕОБХОДИМОЕ, но не ДОСТАТОЧНОЕ: вот 15 — оно делится на 5, но оно не делится на 10.
+
+a number is divisible by 9 only if it has a digit sum divisible by 3. «has a digit sum divisible by 3» is a NECESSARY condition but not a SUFFICIENT one: take 6 — it has a digit sum divisible by 3, but it is not divisible by 9.
+a number is divisible by 9 only if it has a digit sum divisible by 9. «has a digit sum divisible by 9» is a NECESSARY AND SUFFICIENT condition: take 18 — it has a digit sum divisible by 9, and it is divisible by 9.
+if a number is divisible by 15, then it is divisible by 5. the converse is false: take 20 — it is divisible by 5, but it is not divisible by 15.
+a number is divisible by 10 if and only if it ends in 0. take 30: it is divisible by 10, and it ends in 0; and take 3: it is not divisible by 10, and it does not end in 0.
+a number is divisible by 4 only if it is divisible by 2. «is divisible by 2» is a NECESSARY condition but not a SUFFICIENT one: take 10 — it is divisible by 2, but it is not divisible by 4.
+a number is greater than 30 only if it is greater than 10. «is greater than 10» is a NECESSARY condition but not a SUFFICIENT one: take 13 — it is greater than 10, but it is not greater than 30.
+a number is divisible by 5 only if it ends in 0 or 5. «ends in 0 or 5» is a NECESSARY AND SUFFICIENT condition: take 15 — it ends in 0 or 5, and it is divisible by 5.
+if a number is divisible by 9, then it is divisible by 3. the converse is false: take 3 — it is divisible by 3, but it is not divisible by 9.
+a number is even if and only if it is divisible by 2. take 2: it is even, and it is divisible by 2; and take 1: it is odd, and it is not divisible by 2.
+a number is greater than 30 if and only if it is at least 31. take 31: it is greater than 30, and it is at least 31; and take 1: it is not greater than 30, and it is less than 31.
+a number is divisible by 15 only if it is divisible by 5. «is divisible by 5» is a NECESSARY condition but not a SUFFICIENT one: take 5 — it is divisible by 5, but it is not divisible by 15.
+a number is divisible by 10 only if it ends in 0. «ends in 0» is a NECESSARY AND SUFFICIENT condition: take 10 — it ends in 0, and it is divisible by 10.
+if a number is divisible by 6, then it is divisible by 3. the converse is false: take 9 — it is divisible by 3, but it is not divisible by 6.
+if a number is divisible by 12, then it is divisible by 4. the converse is false: take 8 — it is divisible by 4, but it is not divisible by 12.
+a number is divisible by 3 if and only if it has a digit sum divisible by 3. take 6: it is divisible by 3, and it has a digit sum divisible by 3; and take 2: it is not divisible by 3, and it has a digit sum not divisible by 3.
+a number is divisible by 10 only if it is divisible by 5. «is divisible by 5» is a NECESSARY condition but not a SUFFICIENT one: take 15 — it is divisible by 5, but it is not divisible by 10.

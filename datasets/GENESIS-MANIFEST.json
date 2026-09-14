@@ -156,6 +156,202 @@
       "text": "shows"
     },
     {
+      "name": "dyck",
+      "file": "datasets/genesis_dyck.txt",
+      "genre": "THE ROW THAT MUST BE CLOSED (14.09, rung two of the ladder, asked for by holon-f9 for BBH's `dyck_languages`). The corpus showed brackets only as a SIGN INSIDE A FORMULA; a row that must be CLOSED it never showed once. A BRACKET IN A FORMULA IS A SIGN BESIDE NUMBERS; A BRACKET IN A ROW IS MEMORY OF WHAT WAS OPENED — two different skills, and the corpus taught the second with nothing. Three genera by deed: the TAIL («( [ { } ] — how is it closed? ) » — write exactly what closes what is open, in reverse order, and the answer SHOWS the stack rather than guessing it); BALANCED OR NOT (yes with the number of pairs, no with the number left open); and DEPTH (the number the stack held at its deepest — the row's memory as a number, without which closing is guessing). The rows are built BY A STACK, so every show is true by construction; the court trusts no construction and counts the stack again.",
+      "act": [
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only",
+        "unsigned_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "boolexpr",
+      "file": "datasets/genesis_boolexpr.txt",
+      "genre": "BOOLEAN EXPRESSIONS — THE ORDER OF STEPS, NOT ONE STEP (14.09, rung two, asked for by holon-f9 for BBH's `boolean_expressions`). The corpus knew the connectives only as a TABLE («T ∧ T = T» in the world of logic and sets) and never showed an EXPRESSION where there are several and their order decides everything. A TABLE OF A CONNECTIVE TEACHES ONE STEP; AN EXPRESSION TEACHES THE ORDER OF STEPS — and the second follows from the first by nothing: «not True and False» is False while «not ( True and False )» is True, and the table is silent about that. Three genera by deed: ONE CONNECTIVE over literals; TWO CONNECTIVES WITHOUT BRACKETS, where precedence decides (not > and > or, declared and not implied); and BRACKETS THAT CHANGE THE ANSWER, where both sides stand side by side — otherwise the reader learns that brackets mean nothing. Four bracket shapes, not one: a bracket that changes the answer only under «not» would teach that under «and» and «or» it is idle. The court does not know the tree the house built: it parses the WRITING by precedence and computes the value itself.",
+      "act": [
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "alphaorder",
+      "file": "datasets/genesis_alphaorder.txt",
+      "genre": "ALPHABETICAL ORDER — THE ORDER OF THE LETTERS, DECLARED AND NOT TAKEN FROM THE ENCODING (14.09, rung two, asked for by holon-f9 for BBH's `word_sorting`). Measured against the свод that day: lines containing «по алфавиту» or «alphabetical» — ZERO. The world `orderforms` puts NUMBERS in order and knows «по возрастанию»; that LETTERS also have an order, and that it does not follow from counting, the corpus said nowhere. THE ORDER OF THE LETTERS IS DECLARED, NOT TAKEN FROM THE ENCODING: in Unicode «ё» (U+0451) stands AFTER «я» (U+044F), so anyone sorting strings by codepoint gets «ящик, ёлка» and calls it the alphabet — one of the court's planted falsehoods is exactly that mistake. Three genera by WHERE THE ORDER IS DECIDED: distinct first letters (decided at step one); a shared head, where the decision slides to the second letter and further; and A WORD INSIDE A WORD («дом, дома, домик»), where the letters never diverge and THE END OF THE WORD decides — the shorter goes first. The third is where letter-by-letter comparison is silent by itself, and so it is a genus and not a case of the second. A nest is three words and gives five shows: every permutation EXCEPT the already-correct one, because a show with nothing to reorder teaches copying the answer off the question.",
+      "act": [
+        "reorder"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "handover",
+      "file": "datasets/genesis_handover.txt",
+      "genre": "TRACKING THINGS THROUGH SWAPS (14.09, rung two, asked for by holon-f9 for BBH's `tracking_shuffled_objects`). Measured against the свод that day: lines containing «меняются», «обменял», «swap» or «traded» — ZERO. The corpus knew that a thing PASSES («ann gave away 1 coin») and counted the remainder, but not the SWAP, where nothing is created or lost and only the hand changes. COUNTING A REMAINDER AND TRACKING A THING ARE DIFFERENT DEEDS: in the first the thing is faceless and its QUANTITY matters; in the second there is one thing, the quantity never changes, and only WHERE it is matters — the second follows from subtraction by nothing. Three genera by WHAT THE ANSWER DEMANDS: PAST (no swap touched the one asked about, so the answer is the BEGINNING — and a reader who learned «named means changed» fails here); ONE SWAP (the answer is the partner's starting thing); and A CHAIN (the state must be carried forward, because by the time of their swap the partner no longer holds what they started with). The same swap done twice belongs to the chain: the things come back, and «named twice» does not mean «changed twice». The genus is READ OFF THE DEED, not assigned: the house walks every declared run of swaps and every person asked, then looks at what came out and names the genus by that. The things are declared in the ACCUSATIVE, because the frame stands on «держит» — «мяч» and «ключ» coincide with the nominative and «книгу», «ленту» do not, which is exactly why the form is declared and not cut off an ending.",
+      "act": [
+        "retrace"
+      ],
+      "oracle": [
+        "replay"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "nestcalc",
+      "file": "datasets/genesis_nestcalc.txt",
+      "genre": "MULTI-STEP ARITHMETIC — THE PATH, NOT ONLY THE TOTAL (14.09, rung two, asked for by holon-f9 for BBH's `multistep_arithmetic_two`). Measured against the свод that day: lines with A BRACKET INSIDE A BRACKET — ZERO. A bracket with two signs the corpus has (334 lines, «(8 + 5) + 3 × 8 = 45»), a nested one not once; and nowhere is it said IN WHAT ORDER the steps go — only the total is said. THE TOTAL IS NOT THE PATH: «((3 + 5) × 2) − 7 = 9» is true and teaches nothing, because it does not show what was counted first. This world names THE STEPS — «сначала 3 + 5 = 8, потом 8 × 2 = 16, потом 16 − 7 = 9» — and every step is a number checkable on its own, by the same law under which the world of the plan demands a step end in a checkable number. Three genera by WHAT DECIDES THE ORDER OF STEPS: a bracket inside a bracket (inward, then outward, then the rest); two independent brackets counted apart and only then joined; and a bracket plus PRECEDENCE («×» before «−»), where a reader counting left to right gets a different number and sees it here. The court checks both: the expression is re-parsed by precedence, and every step must be arithmetically true, must take BOTH its operands either from the expression's own numbers or from earlier steps' results, the count of steps must equal the count of signs, and the last result must equal the stated answer. A step that took a number from nowhere is a lie even when the total agrees. A declared boundary: the numbers are small and no step goes below zero — negatives exist in the corpus (464 lines) but they are another deed, and mixing them with the order of steps would teach two things at once.",
+      "act": [
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "drop",
+      "file": "datasets/genesis_drop.txt",
+      "genre": "A PASSAGE AND A QUESTION TO IT — DROP AS ONE WORLD (14.09, rung two, asked for by holon-f9 in exactly this shape: «span plus arithmetic, one world»). The DROP market puts questions OF DIFFERENT NATURE to one passage, and that is the whole point: one answer LIES IN THE TEXT and must be copied out, another is WRITTEN NOWHERE in it and must be computed. Splitting the genera into separate worlds would stop being DROP, because the market stands on the reader NOT KNOWING IN ADVANCE which kind of question was asked. THE ANSWER THAT IS IN THE TEXT AND THE ANSWER THAT IS NOT ARE DIFFERENT DEEDS: the first is a CHOICE among what is written, the second a COUNT over it. The corpus could do each apart, but nowhere put them to THE SAME passage, and so nowhere taught TELLING THEM APART. One passage, six questions, three genera: SPAN (the answer is a word of the passage, copied letter for letter), COUNT (no answer in the passage, but no arithmetic either — count the ones that fit) and DIFFERENCE (the answer cannot be in the passage: it is born of subtracting two written numbers). The months stand in the nominative and only there, because a span answer must be a word of the passage letter for letter — say «в марте» in the passage and «март» in the answer and the genus lies by its own name. A declared boundary: the numbers end in 0 or 5, so the noun after them is always genitive plural — numeral agreement is the deed of ANOTHER house (`numnounforms`), and mixing two deeds in one show teaches both by halves.",
+      "act": [
+        "read_off",
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "bicond",
+      "file": "datasets/genesis_bicond.txt",
+      "genre": "THE TWO-WAY LINK — «only if», «if and only if», NECESSARY AND SUFFICIENT (14.09). Measured against the свод of 447 283 lines that day: «тогда и только тогда» / «if and only if» — ZERO lines; «только если» / «only if» — ZERO; «необходимое условие» and «достаточное условие» — ZERO and ZERO. Meanwhile the world of inference (`inferforms`) teaches in 162 shows that CONVERTING AN IMPLICATION IS AN ERROR: «6 is divisible by 2. does it follow that 6 is divisible by 4? no». THE CORPUS CALLS THE CONVERSE AN ERROR ONE HUNDRED AND SIXTY-TWO TIMES AND NEVER ONCE SHOWS WHEN IT IS RIGHT. A reader who learned «one does not infer the premise from the consequent» will fail exactly where the link is TWO-WAY — and such are every divisibility rule, every definition, and every «if and only if». A prohibition without its boundary teaches not caution but blindness. Three genera by deed: ONE WAY (refuse the backward step and prove the refusal BY EXAMPLE); BOTH WAYS (walk the link in both directions where the one-way link refuses — the divisibility rules live here: the digit sum is divisible by 3 IF AND ONLY IF the number is); and NECESSARY/SUFFICIENT (name WHICH OF THE TWO HALVES holds). ONE-WAYNESS IS PROVED BY AN EXAMPLE, TWO-WAYNESS BY WALKING THE WHOLE DECLARED RANGE: the house does not declare the kind of link in words — it derives it by walking `РЯД` entire, and refuses to build a page whose kind disagrees. The court does the same, apart. The number named on the page must BE that example and not any number at all: «take 2 — it is divisible by 2 but not by 4» is true, «take 8» is a lie, though 8 is also divisible by 2.",
+      "act": [
+        "decide"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "grid",
+      "file": "datasets/genesis_grid.txt",
+      "genre": "READING A TABLE — TWO COORDINATES, NOT TWO LOOKUPS IN A ROW (14.09, bought by a zero of the probe). Measured against the свод of 447 451 lines: «на пересечении» / «at the intersection of» — ZERO lines. The word «таблица» is in the свод 3 085 times and «ячейка» 710, but ALWAYS as the NAME OF SOMETHING ELSE — a table of a connective, of cases, of measures — and never once as a DEED: here is a table, here are two coordinates, name the number. The passage world (`passagedrop`) holds ONE coordinate, a name against a number; here there are two names and neither gives an answer by itself. Three genera by WHERE THE READING GOES: INTERSECTION (two coordinates inward, and the answer LIES in the table); TOTAL (no answer in the table — it is born of adding a whole row or column); and BACKWARD (given the value, the coordinate is asked — and here a reader who learned the inward move cannot move at all). A QUESTION WITH TWO ANSWERS IS NOT A QUESTION: the backward reading is built only where the value is UNIQUE in its column, and a table where one number stands twice in a column yields fewer pages — which is right, for the second would be a lie wearing the face of truth. The court refuses such a page even when the row named does carry the number.",
+      "act": [
+        "read_off",
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "roundneed",
+      "file": "datasets/genesis_roundneed.txt",
+      "genre": "ROUNDING THAT THE DEED DECIDES (14.09, bought by a zero of the probe). Measured against the свод of 447 451 lines: rounding UP is there — 77 lines of «коробок нужно» and 77 of «are needed»; rounding DOWN — «сколько целых» / «how many whole» — ZERO and ZERO; and the two sides on ONE page — nowhere. The rounding world (`roundforms`) rounds a NUMBER to tens by nearness, a rule that lives inside the number itself. Here the rounding does not live in the number: ONE DIVISION, TWO ANSWERS, AND IT IS NOT THE NUMBER THAT DECIDES BUT THE DEED. «Passengers 95, a bus holds 40: 3 buses are wanted». «Cloth 95, a dress takes 40: 2 dresses come out». The same 95 ÷ 40 = 2 remainder 15, and the answers differ — because in the first the remainder DEMANDS one more container, and in the second it is LEFT OVER and yields no whole thing. Three genera: UP, DOWN, and BOTH SIDE BY SIDE — the same dividend, the same divisor, both answers on one page, and what separates them said aloud. Without the third genus the first two would teach two turns of speech («нужно» and «выйдет») rather than one deed. A ZERO REMAINDER ERASES THE DIFFERENCE: on such numbers both answers coincide, so the up and down genera do not take them and the court refuses such a page; the third genus takes them DELIBERATELY and says the two sides agree — the boundary is shown, not passed over.",
+      "act": [
+        "decide",
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "datecmp",
+      "file": "datasets/genesis_datecmp.txt",
+      "genre": "COMPARING TWO DATES — A KEY WHOSE FIELDS HAVE DIFFERENT WEIGHTS (14.09, bought by a zero of the probe). Measured against the свод of 447 451 lines: «какая дата» / «which date» — ZERO. The word «раньше» is there 152 times, but all of it is the TIME OF DAY — «left in the morning and arrived in the afternoon»; which of two DATES is earlier the corpus says nowhere. The date world (`dateforms`, 480 shows) can count forwards and backwards across the edge of a month and never once COMPARES. A DATE HAS THREE NUMBERS AND THEIR WEIGHTS DIFFER: the year is heavier than the month, the month than the day, and THE HEAVIEST OF THE DIFFERING ONES decides. «31 december 2023 is earlier than 1 january 2024» although 31 is greater than 1: the day decides nothing here, because the year diverged — and a reader who compares the first number they see fails exactly here. This is the same law as in the alphabet world and a different one: there the composite key is by PLACE («дом» before «дома», the letters having run out), here by WEIGHT. Place and weight are different things, and so the world is separate. Three genera by WHAT DECIDED: the year, the month, the day. AN ANSWER WITHOUT ITS REASON IS NOT AN ANSWER: the page names not only the earlier date but WHAT decided, and saying «the day decides» where the year diverged is a lie even when the date named is right. The court rebuilds the page entire and matches it letter for letter.",
+      "act": [
+        "decide"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "letterwork",
+      "file": "datasets/genesis_letterwork.txt",
+      "genre": "DEEDS UPON LETTERS — A WORD AS A ROW, NOT ONLY AS A MEANING (14.09, bought by a zero of the probe). Measured against the свод of 447 451 lines: «палиндром» / «palindrome» — ZERO, «анаграмма» / «anagram» — ZERO, a shift of letters — ZERO. The letters world (`letters`, 360 shows) can COUNT the letters of a word («сколько букв в слове „кот“? 3: к, о, т») and only count them. A WORD IS A ROW OF LETTERS, NOT ONLY A MEANING: the corpus knew the word by meaning (translation, morphology, definition) and by length, but that the row can be TURNED, SORTED and SHIFTED it showed nowhere. All three deeds ask nothing of the sense: «шалаш» is a palindrome not because it is a hut. Three genera: BACKWARDS (read the row right to left and compare it with itself), SAME LETTERS (compare two words by their SET of letters and not by order — and the negative case is PROVED on the page, naming the letter that is in one and not the other), and SHIFT (move every letter N places along the alphabet — here a letter becomes a NUMBER, its place in the declared row). The alphabet is taken from the alphabetical-order world and not declared a second time: two similar declarations drift apart silently, one has nothing to drift from. THE ALPHABET IS CLOSED INTO A RING: the shift carries «я» past the end and it returns to the start — the same CARRY as in clocks and dates, only its base is 33 and not 60 or 12. A page where the carry happened says so aloud, and the court refuses both silence about a carry that happened and a claim of one that did not.",
+      "act": [
+        "transform"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "whodwells",
+      "file": "datasets/genesis_whodwells.txt",
+      "genre": "SEATING BY CONSTRAINTS — SIMULTANEITY, NOT A CHAIN OF STEPS (14.09, bought by a zero of the probe). Measured against the свод: «кто где живёт» / «who lives where» — ZERO lines. The inference world (`inferforms`) holds ONE move — from a premise, a consequence; the strict-inference world knows ponens, tollens and two fallacies. But INFERENCE FROM SEVERAL CONSTRAINTS AT ONCE, where no single one decides anything, the corpus showed nowhere. ONE MOVE AND AN INTERSECTION OF PROHIBITIONS ARE DIFFERENT DEEDS: modus ponens takes one premise and makes one step; here no constraint gives an answer alone, and the answer is born of WHAT IS LEFT when every prohibition is laid over the others. This is not a long chain of steps but SIMULTANEITY. Three genera by WHAT THE CONSTRAINTS CUT WITH: pure prohibition («X is not in the first»), pure order («X is to the right of Y»), and MIXED — where NEITHER KIND DECIDES ALONE, which the house VERIFIES rather than declares: remove the prohibitions and more than one seating remains; remove the relations and the same. A PROBLEM WITH TWO SOLUTIONS IS NOT A PROBLEM: the house builds a page only where the seating is UNIQUE, and the court walks all six seatings to check it. AN EXCESS CONSTRAINT TEACHES NOTHING: a set from which a constraint can be dropped with the seating still unique is not taken — a spare constraint teaches that constraints may go unread, and a reader who learns that will miss where there are no spares. Mixed sets are taken only as PAIRS: there were seven times more mixed triples than pure sets, which is their NUMBER and not their importance, and a mixed triple is a mixed pair plus a third constraint already shown in the pure genera.",
+      "act": [
+        "decide"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
       "name": "addshare",
       "file": "datasets/genesis_addshare.txt",
       "genre": "ADDING SHARES — shares add only when brought to one denominator. Measured 11.09 across the show worlds: «1/2 + 1/3», «1/3 + 1/4» — NOT ONE occurrence; subtracting shares — NONE; the least common multiple — NONE. Adding shares with the SAME denominator is there (108 lines), and that makes the hole the more dangerous: the easy case is shown and the hard one — where the rule actually lives — is not shown at all. A READER WHO HAS SEEN ONLY «1/5 + 2/5 = 3/5» WILL ADD «1/2 + 1/3» THE SAME WAY AND GET «2/5». A rule shown only where it is not needed teaches one not to know it. Four genera, and the first is here for the sake of the second: SAME («1/5 + 2/5: the denominator is the same, and the NUMERATORS are added: 1 + 2 = 3, and it gives 3/5»); DIFFERENT («1/2 + 1/3: bring them to the common denominator 6: 1 × 3 = 3, and 1 × 2 = 2, and 3 + 2 = 5, and it gives 5/6»); SUBTRACT; GREATER («2/3 + 3/4: … 8 + 9 = 17, and it gives 17/12, and that is greater than one: 17 = 12 × 1 + 5»). The fourth joins the house to its neighbour: a sum of shares often runs past the unit, and without showing this the house would suggest that shares always add up to a share; the split into whole and remainder is taken by the same ledger the house of the fraction and the unit lives by. DENOMINATORS ARE NOT ADDED, AND THAT IS SHOWN RATHER THAN FORBIDDEN: in the first genus one sees the move «numerators are added» with the denominator unchanged; in the second, that the denominators must first be made equal — the prohibition follows from these two pages by itself. Subtraction is written only where the result is positive: negative shares are another house's subject. The common denominator is taken as in the house of comparing shares — the greater if it divides by the smaller, else the product; the least common multiple would be a second law on one page.",
@@ -2749,10 +2945,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 42247874,
+      "size": 42553016,
       "tiers": [],
       "text": "mix",
-      "lines": 446251
+      "lines": 448335
     },
     {
       "name": "fuseprep",
