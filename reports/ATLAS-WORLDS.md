@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 335 миров, 451367 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 341 миров, 451807 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -461,6 +461,87 @@
 - **`ratetrap`** (50 строк; recompute, whole_only, exact_only)  
   **ЛОВУШКИ ОТНОШЕНИЯ** — ГДЕ СРЕДНЕЕ ЛЖЁТ, А СЛОЖЕНИЕ НЕ ДЕЙСТВУЕТ ВОВСЕ. Замер 12.09 по восьмому десятку понятий: «средняя скорость» ноль и ноль, «совместная работа» ноль и ноль, «сложные проценты» ноль и ноль, «наценка» ноль и ноль, — а скорости, проценты …
 
+## АКТ «decide» — решить случай: вердикт с основанием рядом
+
+Миров 38, строк 21009.
+
+- **`verifyforms`** (3285 строк; recompute, whole_only)  
+  **VERIFICATION** — «claim · check · verdict», and the pages where the instrument is OBLIGED to refuse (05.09, the agent architecture, the fourth market): a true claim checked by ANOTHER action cannot be confirmed — the verdict is «not verified», and the gro…
+- **`worldfacts`** (2779 строк; declared, whole_only)  
+  **WORLD FACTS** — why and what next about THINGS, not about numbers.
+- **`mandateforms`** (2268 строк; recompute, whole_only)  
+  **THE MANDATE** — a standing rule against an order (05.09, the agent architecture, the sixth market): one or two rules the agent was told once, an order of one act, and a verdict that never stands bare — «no: the rule forbids deleting», «yes: the rule forbi…
+- **`actturn`** (1872 строк; recompute, whole_only)  
+  **THE DIALOGUE ACT** — the organism's own turn, with confirmation and observation (06.09).
+- **`place`** (1296 строк; recompute, named_relations_only)  
+  **PLACE** — where a thing stands, and the three laws of standing (06.09).
+- **`infer`** (1242 строк; recompute, whole_only)  
+  **STRICT INFERENCE** — modus ponens, modus tollens, and TWO FALLACIES named as fallacies.
+- **`goal`** (783 строк; recompute, whole_only, unsigned_only)  
+  **THE GOAL SPOKEN IN SPEECH, NOT TYPED AS A COMMAND (14.09, asked for by omega-ad). The organism already reaches a goal on the world's ledger by itself** — it reads, searches the world's declaration, proposes, waits for a word, acts and checks by reading ag…
+- **`plan`** (576 строк; recompute, whole_only, unsigned_only)  
+  order-row with a condition and the REPORT of its execution: the ledger of observation (files, runs, exit, millis) and a verdict that FOLLOWS from comparing the ledger with the condition (nine languages, both branches)
+- **`proof`** (520 строк; recompute, whole_only)  
+  **THE FORMS OF PROOF, EACH SHOWN ON AN INSTANCE** — declared until 12.09 in eight words.
+- **`doctree`** (516 строк; declared, reversibility, declared_table_only)  
+  **document structure: a link is an EDGE and is judged by RESOLUTION against a declared tree** — relative paths counted from the document's own folder, anchors into a document, slugification of a heading into an anchor, order by sidebar_position, and links t…
+- **`opchoice`** (432 строк; recompute, whole_only)  
+  **CHOOSING THE OPERATION** — which sign the SITUATION itself requires, and why that one.
+- **`primes_langs`** (400 строк; recompute, unsigned_only)  
+  **PRIME AND COMPOSITE IN EIGHT LANGUAGES (the owner's word: every language in surplus; the numbers world says it in en/ru): «97 ist eine Primzahl; ihre Teiler sind 1 und 97.», «91 ist keine Primzahl: 91 = 7 × 13.», «ist 91 eine Primzahl? nein: 91 ist keine …
+- **`primewalk`** (392 строк; recompute, whole_only, exact_only, finite_explicit_only)  
+  **ОБХОД ПРОСТОТЫ** — СОСТАВНОСТЬ ДОКАЗЫВАЕТСЯ ОДНИМ СВИДЕТЕЛЕМ, ПРОСТОТА — ОБХОДОМ ВСЕХ. Замер 12.09 по третьему десятку свойств: «простота числа» названа в восемнадцати мирах и НИ В ОДНОМ не показана — свод пишет «13 is prime.» и рядом, на той же странице,…
+- **`notenough`** (384 строк; recompute, whole_only)  
+  **NOT ENOUGH DATA** — THE DEAREST ZERO OF THE DAY (14.09).
+- **`datecmp`** (364 строк; recompute, whole_only)  
+  **COMPARING TWO DATES** — A KEY WHOSE FIELDS HAVE DIFFERENT WEIGHTS (14.09, bought by a zero of the probe).
+- **`onestep`** (350 строк; recompute, whole_only, unsigned_only)  
+  **ОДНОШАГОВОЕ УРАВНЕНИЕ** — НЕИЗВЕСТНОЕ НАХОДИТСЯ ОБРАТНЫМ ДЕЙСТВИЕМ: чтобы узнать слагаемое, вычитают; чтобы узнать множитель, делят.
+- **`enough`** (324 строк; recompute, exact_only)  
+  **SUFFICIENCY** — the yes-or-no that is bought by arithmetic (06.09).
+- **`closure`** (298 строк; recompute, declared, whole_only, unsigned_only)  
+  **ЗАМКНУТОСТЬ** — ОСТАНЕТСЯ ЛИ ИТОГ ТАМ ЖЕ, ГДЕ СЛАГАЕМЫЕ, и главное здесь — НЕСИММЕТРИЧНОСТЬ ДОКАЗАТЕЛЬСТВА. «Чётные замкнуты относительно сложения: 6 = 2 × 3, и 4 = 2 × 2, и 6 + 4 = 2 × 5 = 10» — итог чётен ПО РАЗБОРУ, а не по примеру; «нечётные НЕ замкну…
+- **`nesuf`** (276 строк; recompute, whole_only)  
+  **THE NECESSARY AND THE SUFFICIENT** — TWO QUESTIONS ABOUT ONE CONDITION, AND THEIR ANSWERS DIFFER. Measured 11.09 across the 255 show worlds and across the declarations of all worlds: «необходимо и достаточно», «necessary and sufficient» — NONE. The corpus…
+- **`object`** (272 строк; recompute, whole_only)  
+  **OBJECTION** — what to do with what somebody else said.
+- **`cooccur`** (264 строк; recompute, whole_only)  
+  **COINCIDENCE AND CAUSE** — NUMBERS SAY WHAT WAS AND ARE SILENT ON WHY (14.09, bought by a zero of the probe).
+- **`unitmix`** (252 строк; recompute, whole_only)  
+  **MEASURES THAT DO NOT REDUCE TO ONE ANOTHER (14.09, bought by a zero of the probe). Measured: «нельзя сложить» / «cannot be added»** — ZERO lines; «метры и килограммы» — ZERO. The mixed-measure world (`mixedunits`) can do «2 kg 300 g» and the carry between…
+- **`disj`** (216 строк; recompute, whole_only)  
+  **EXCLUSION** — the disjunctive syllogism over an EXHAUSTIVE row.
+- **`opinion`** (174 строк; declared, whole_only)  
+  **FACT AND OPINION** — what can be checked and what cannot.
+- **`whodwells`** (168 строк; recompute, whole_only)  
+  **SEATING BY CONSTRAINTS** — SIMULTANEITY, NOT A CHAIN OF STEPS (14.09, bought by a zero of the probe).
+- **`bicond`** (168 строк; recompute, whole_only)  
+  **THE TWO-WAY LINK** — «only if», «if and only if», NECESSARY AND SUFFICIENT (14.09).
+- **`badground`** (168 строк; recompute, whole_only)  
+  **AN UNFIT GROUND** — TRUE AND USELESS AT ONCE (14.09, bought by a zero of the probe).
+- **`onecase`** (160 строк; recompute, whole_only)  
+  **ONE CASE** — WHAT AN EXAMPLE IS WORTH (14.09, bought by a zero of the probe).
+- **`rolemark`** (144 строк; recompute, whole_only)  
+  **THE MARK OF THE ROLE** — PLACE OR ENDING, AND THE LANGUAGES PART EXACTLY HERE (14.09, bought by a zero of the probe).
+- **`hypo`** (144 строк; recompute, whole_only)  
+  **TESTING A HYPOTHESIS** — and THE CHIEF ASYMMETRY of knowledge.
+- **`roundneed`** (112 строк; recompute, whole_only)  
+  **ROUNDING THAT THE DEED DECIDES (14.09, bought by a zero of the probe). Measured against the свод of 447 451 lines: rounding UP is there** — 77 lines of «коробок нужно» and 77 of «are needed»; rounding DOWN — «сколько целых» / «how many whole» — ZERO and Z…
+- **`homonym`** (84 строк; recompute, whole_only)  
+  **ONE WORD IN TWO SENSES** — TOLD APART BY THE NEIGHBOURS, NOT BY THE WORD (14.09, bought by a zero of the probe).
+- **`twokeys`** (70 строк; recompute, whole_only)  
+  **TWO KEYS** — THE SECOND IS SILENT WHILE THE FIRST SPEAKS (14.09, bought by a zero of the probe).
+- **`noanswer`** (60 строк; recompute, whole_only)  
+  **TWO REFUSALS, AND WHAT SEPARATES THEM (14.09, bought by a zero of the probe and REBUILT THE SAME HOUR, when the zero turned out to be a zero of WORDS and not of DEEDS). The history of this world is its main lesson. The probe said «деление на ноль»** — 0 l…
+- **`bothlists`** (60 строк; recompute, whole_only)  
+  **TWO LISTS** — «AND» OVER MEMBERSHIP (14.09, bought by a zero of the probe).
+- **`reply`** (54 строк; declared, whole_only)  
+  **REPLY** — advice to the interlocutor RESTING ON A DECLARED LAW. The owner's order about «basic behavioural and psychological laws» was half closed: the behaviour house gives the LAW but not its APPLICATION TO THE PERSON SPEAKING. Here a person names their…
+- **`condprob`** (46 строк; recompute, whole_only)  
+  **A SHARE AND ITS BASE (14.09, bought by a zero of the probe). Measured: «условная вероятность» / «conditional probability»** — 6 lines in 451 367, and all six MENTION the words.
+- **`adhominem`** (36 строк; recompute, whole_only)  
+  **AN ARGUMENT ABOUT THE SPEAKER (14.09, the last zero of the probe's sixty-five families). Measured: «к человеку» / «ad hominem» / «переход на личность»** — ZERO lines.
+
 ## АКТ «inflect» — поставить слово в форму по объявленному правилу
 
 Миров 34, строк 109705.
@@ -533,75 +614,6 @@
   **РУССКИЙ ГЛАГОЛ, УПРАВЛЯЮЩИЙ ПАДЕЖОМ СЧЁТА: «Юрий ест 8 яблок», «где лежат …», «где стоят …», «у Петра …»** — и форма имени при числе берётся не наугад, а по объявлению языка.
 - **`degrees`** (270 строк; declared, declared_table_only)  
   **THE DEGREES OF COMPARISON** — the same property said three times, and the irregular said aloud (06.09).
-
-## АКТ «decide» — решить случай: вердикт с основанием рядом
-
-Миров 32, строк 20569.
-
-- **`verifyforms`** (3285 строк; recompute, whole_only)  
-  **VERIFICATION** — «claim · check · verdict», and the pages where the instrument is OBLIGED to refuse (05.09, the agent architecture, the fourth market): a true claim checked by ANOTHER action cannot be confirmed — the verdict is «not verified», and the gro…
-- **`worldfacts`** (2779 строк; declared, whole_only)  
-  **WORLD FACTS** — why and what next about THINGS, not about numbers.
-- **`mandateforms`** (2268 строк; recompute, whole_only)  
-  **THE MANDATE** — a standing rule against an order (05.09, the agent architecture, the sixth market): one or two rules the agent was told once, an order of one act, and a verdict that never stands bare — «no: the rule forbids deleting», «yes: the rule forbi…
-- **`actturn`** (1872 строк; recompute, whole_only)  
-  **THE DIALOGUE ACT** — the organism's own turn, with confirmation and observation (06.09).
-- **`place`** (1296 строк; recompute, named_relations_only)  
-  **PLACE** — where a thing stands, and the three laws of standing (06.09).
-- **`infer`** (1242 строк; recompute, whole_only)  
-  **STRICT INFERENCE** — modus ponens, modus tollens, and TWO FALLACIES named as fallacies.
-- **`goal`** (783 строк; recompute, whole_only, unsigned_only)  
-  **THE GOAL SPOKEN IN SPEECH, NOT TYPED AS A COMMAND (14.09, asked for by omega-ad). The organism already reaches a goal on the world's ledger by itself** — it reads, searches the world's declaration, proposes, waits for a word, acts and checks by reading ag…
-- **`plan`** (576 строк; recompute, whole_only, unsigned_only)  
-  order-row with a condition and the REPORT of its execution: the ledger of observation (files, runs, exit, millis) and a verdict that FOLLOWS from comparing the ledger with the condition (nine languages, both branches)
-- **`proof`** (520 строк; recompute, whole_only)  
-  **THE FORMS OF PROOF, EACH SHOWN ON AN INSTANCE** — declared until 12.09 in eight words.
-- **`doctree`** (516 строк; declared, reversibility, declared_table_only)  
-  **document structure: a link is an EDGE and is judged by RESOLUTION against a declared tree** — relative paths counted from the document's own folder, anchors into a document, slugification of a heading into an anchor, order by sidebar_position, and links t…
-- **`opchoice`** (432 строк; recompute, whole_only)  
-  **CHOOSING THE OPERATION** — which sign the SITUATION itself requires, and why that one.
-- **`primes_langs`** (400 строк; recompute, unsigned_only)  
-  **PRIME AND COMPOSITE IN EIGHT LANGUAGES (the owner's word: every language in surplus; the numbers world says it in en/ru): «97 ist eine Primzahl; ihre Teiler sind 1 und 97.», «91 ist keine Primzahl: 91 = 7 × 13.», «ist 91 eine Primzahl? nein: 91 ist keine …
-- **`primewalk`** (392 строк; recompute, whole_only, exact_only, finite_explicit_only)  
-  **ОБХОД ПРОСТОТЫ** — СОСТАВНОСТЬ ДОКАЗЫВАЕТСЯ ОДНИМ СВИДЕТЕЛЕМ, ПРОСТОТА — ОБХОДОМ ВСЕХ. Замер 12.09 по третьему десятку свойств: «простота числа» названа в восемнадцати мирах и НИ В ОДНОМ не показана — свод пишет «13 is prime.» и рядом, на той же странице,…
-- **`notenough`** (384 строк; recompute, whole_only)  
-  **NOT ENOUGH DATA** — THE DEAREST ZERO OF THE DAY (14.09).
-- **`datecmp`** (364 строк; recompute, whole_only)  
-  **COMPARING TWO DATES** — A KEY WHOSE FIELDS HAVE DIFFERENT WEIGHTS (14.09, bought by a zero of the probe).
-- **`onestep`** (350 строк; recompute, whole_only, unsigned_only)  
-  **ОДНОШАГОВОЕ УРАВНЕНИЕ** — НЕИЗВЕСТНОЕ НАХОДИТСЯ ОБРАТНЫМ ДЕЙСТВИЕМ: чтобы узнать слагаемое, вычитают; чтобы узнать множитель, делят.
-- **`enough`** (324 строк; recompute, exact_only)  
-  **SUFFICIENCY** — the yes-or-no that is bought by arithmetic (06.09).
-- **`closure`** (298 строк; recompute, declared, whole_only, unsigned_only)  
-  **ЗАМКНУТОСТЬ** — ОСТАНЕТСЯ ЛИ ИТОГ ТАМ ЖЕ, ГДЕ СЛАГАЕМЫЕ, и главное здесь — НЕСИММЕТРИЧНОСТЬ ДОКАЗАТЕЛЬСТВА. «Чётные замкнуты относительно сложения: 6 = 2 × 3, и 4 = 2 × 2, и 6 + 4 = 2 × 5 = 10» — итог чётен ПО РАЗБОРУ, а не по примеру; «нечётные НЕ замкну…
-- **`nesuf`** (276 строк; recompute, whole_only)  
-  **THE NECESSARY AND THE SUFFICIENT** — TWO QUESTIONS ABOUT ONE CONDITION, AND THEIR ANSWERS DIFFER. Measured 11.09 across the 255 show worlds and across the declarations of all worlds: «необходимо и достаточно», «necessary and sufficient» — NONE. The corpus…
-- **`object`** (272 строк; recompute, whole_only)  
-  **OBJECTION** — what to do with what somebody else said.
-- **`cooccur`** (264 строк; recompute, whole_only)  
-  **COINCIDENCE AND CAUSE** — NUMBERS SAY WHAT WAS AND ARE SILENT ON WHY (14.09, bought by a zero of the probe).
-- **`unitmix`** (252 строк; recompute, whole_only)  
-  **MEASURES THAT DO NOT REDUCE TO ONE ANOTHER (14.09, bought by a zero of the probe). Measured: «нельзя сложить» / «cannot be added»** — ZERO lines; «метры и килограммы» — ZERO. The mixed-measure world (`mixedunits`) can do «2 kg 300 g» and the carry between…
-- **`disj`** (216 строк; recompute, whole_only)  
-  **EXCLUSION** — the disjunctive syllogism over an EXHAUSTIVE row.
-- **`opinion`** (174 строк; declared, whole_only)  
-  **FACT AND OPINION** — what can be checked and what cannot.
-- **`whodwells`** (168 строк; recompute, whole_only)  
-  **SEATING BY CONSTRAINTS** — SIMULTANEITY, NOT A CHAIN OF STEPS (14.09, bought by a zero of the probe).
-- **`bicond`** (168 строк; recompute, whole_only)  
-  **THE TWO-WAY LINK** — «only if», «if and only if», NECESSARY AND SUFFICIENT (14.09).
-- **`badground`** (168 строк; recompute, whole_only)  
-  **AN UNFIT GROUND** — TRUE AND USELESS AT ONCE (14.09, bought by a zero of the probe).
-- **`onecase`** (160 строк; recompute, whole_only)  
-  **ONE CASE** — WHAT AN EXAMPLE IS WORTH (14.09, bought by a zero of the probe).
-- **`hypo`** (144 строк; recompute, whole_only)  
-  **TESTING A HYPOTHESIS** — and THE CHIEF ASYMMETRY of knowledge.
-- **`roundneed`** (112 строк; recompute, whole_only)  
-  **ROUNDING THAT THE DEED DECIDES (14.09, bought by a zero of the probe). Measured against the свод of 447 451 lines: rounding UP is there** — 77 lines of «коробок нужно» and 77 of «are needed»; rounding DOWN — «сколько целых» / «how many whole» — ZERO and Z…
-- **`noanswer`** (60 строк; recompute, whole_only)  
-  **TWO REFUSALS, AND WHAT SEPARATES THEM (14.09, bought by a zero of the probe and REBUILT THE SAME HOUR, when the zero turned out to be a zero of WORDS and not of DEEDS). The history of this world is its main lesson. The probe said «деление на ноль»** — 0 l…
-- **`reply`** (54 строк; declared, whole_only)  
-  **REPLY** — advice to the interlocutor RESTING ON A DECLARED LAW. The owner's order about «basic behavioural and psychological laws» was half closed: the behaviour house gives the LAW but not its APPLICATION TO THE PERSON SPEAKING. Here a person names their…
 
 ## АКТ «name» — назвать: что вещь ЕСТЬ и как она зовётся
 
@@ -749,5 +761,5 @@
     ОБЪЯВЛЕНИЕ В ТРИДЦАТЬ ЗНАКОВ НЕ ЛЖЁТ И НЕ ГОВОРИТ: читатель узнаёт имя мира
     и ничего сверх него.
 
-Миров: **0** из 335.
+Миров: **0** из 341.
 

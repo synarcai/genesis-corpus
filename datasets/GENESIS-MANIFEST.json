@@ -497,6 +497,102 @@
       "text": "shows"
     },
     {
+      "name": "bothlists",
+      "file": "datasets/genesis_bothlists.txt",
+      "genre": "TWO LISTS — «AND» OVER MEMBERSHIP (14.09, bought by a zero of the probe). Measured: «и там и там» / «in both lists» — ZERO lines. The sets world (`logic_sets`) knows the SIGNS — «{b c} ⊂ {b c e} = T» — and their reading in words; that two lists of names be given in prose and «who is in both» be asked, the corpus says nowhere. «AND» OVER TRUTH AND «AND» OVER MEMBERSHIP ARE ONE LAW AND TWO DEEDS: the boolean world forged this same morning teaches the first — «True and False is False»; here the same «and» walks the lists and the answer is not «yes» or «no» but NAMES. Three genera: in both (intersection), in at least one (union), and in the first and not the second (difference). THE ORDER OF THE ANSWER IS DECLARED, NOT ACCIDENTAL — first by the first list, then the new ones from the second; without a declared order a question would have as many answers as permutations and every one would be right. AN EMPTY ANSWER IS AN ANSWER AND IS SAID IN A WORD: «nobody» is checked as strictly as a list of names, for a reader who has never seen an empty answer will either fall silent before one or invent a name. AND WHERE AN EMPTY ANSWER IS IMPOSSIBLE, THAT IS SAID AND NOT PASSED OVER: the union of two non-empty lists is never empty, and demanding one there would spoil the house for the evenness of a law.",
+      "act": [
+        "decide"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "twokeys",
+      "file": "datasets/genesis_twokeys.txt",
+      "genre": "TWO KEYS — THE SECOND IS SILENT WHILE THE FIRST SPEAKS (14.09, bought by a zero of the probe). Measured: «по двум признакам» / «by two keys» — ZERO lines. The corpus orders numbers (`orderforms`), letters (`alphaorder`) and dates (`datecmp`), and every time the key is ONE, composite though it may be. That there are TWO keys and the second enters only where the first says «equal» is said nowhere. THE SECOND KEY IS SILENT WHILE THE FIRST SPEAKS — and therein lies the whole trap: a reader who learned «compare by the second» will reorder where the first has already decided; one who learned «compare by the first» will stand still among equals. The second key is not a SPARE but a SUBORDINATE. THIS IS NOT THE SAME AS THE WEIGHT OF FIELDS IN A DATE: there three numbers belong to ONE thing and the heaviest decides; here two DIFFERENT marks of different kinds — a number and a word — are bound only by a declared order. Three genera by WHAT DECIDED: the first (the numbers differ and the names are never reached); the second (the numbers are equal and the alphabet decides); and BOTH EQUAL — the records are INDISTINGUISHABLE by these keys, and that is said in a word, not settled in silence: a key that does not tell two records apart must admit it aloud. The court checks not only WHICH comes first but WHO DECIDED: to say «the alphabet decided» where the numbers differ is a lie even when the earlier record is named rightly. The alphabet is taken from the alphabetical-order world, not declared a second time.",
+      "act": [
+        "decide"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "rolemark",
+      "file": "datasets/genesis_rolemark.txt",
+      "genre": "THE MARK OF THE ROLE — PLACE OR ENDING, AND THE LANGUAGES PART EXACTLY HERE (14.09, bought by a zero of the probe). Measured: «порядок слов меняет смысл» / «word order changes the meaning» — ZERO lines. The word-order world (`wordorder`) knows WHERE THE VERB STANDS and measures it by count; what marks WHO ACTS the corpus says nowhere. «The cat sees the dog» and «the dog sees the cat» are TWO events: in english the PLACE marks the role. «Кошка видит собаку» and «собаку видит кошка» are ONE event: in russian the ENDING marks the role and the place is free. HERE THE LANGUAGE IS THE SUBJECT OF THE SHOW AND NOT ITS SURFACE: the corpus holds a law that a language is not a genus and one genus walks all languages, and this world is a DECLARED EXCEPTION — it is about WHAT SEPARATES the languages, so two of its genera live each in its own. The exception is named aloud and not slipped in silently: a silent exception grows, a declared one is counted. Three genera: place decides (two arrangements, two events); ending decides (two arrangements, one event); and WHO ACTS — a question put to the SWAPPED arrangement, where a reader either follows the mark of their language or misses. The court finds the actor ITSELF by the mark of the language and does not read the claim on the page. The frames carry NO PRONOUN: a pronoun needs a gender the house never declared, and «кошка… он» or «mother… it» would be errors no court here would catch.",
+      "act": [
+        "decide"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "homonym",
+      "file": "datasets/genesis_homonym.txt",
+      "genre": "ONE WORD IN TWO SENSES — TOLD APART BY THE NEIGHBOURS, NOT BY THE WORD (14.09, bought by a zero of the probe). Measured: «омоним» — 4 lines in 451 367, and all four MENTION the word instead of showing the deed. The corpus translates words, declines them and counts their letters, and nowhere says that ONE word can be TWO things. «Коса» in the row of tools and «коса» in the row of hairstyles — one spelling and two things, and the choice can be made ONLY by looking at what stands beside it; a reader who learned the word as a key to the sense will always miss. THE COURT DOES NOT UNDERSTAND SENSE AND DOES NOT UNDERTAKE TO: it checks MEMBERSHIP IN DECLARED ROWS — «коса» is declared in tools and in hairstyles, «топор» only in tools — so everything is checkable by counting and no page asks the instrument for understanding. Three genera: the word stands in TWO declared rows, and both are named; it stands in ONE, so it has one sense and saying «two» would be a lie; and BY THE NEIGHBOURS, where the word is given inside a row and the row is asked — the neighbours are taken UNAMBIGUOUS on purpose, for otherwise there would be nothing to decide by and the question would have two answers. Two strictnesses beyond the answer: the two rows must be exactly those and exactly ALL — naming two of four is passing over two; and the neighbours must belong to the named row and be unambiguous themselves.",
+      "act": [
+        "decide"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "condprob",
+      "file": "datasets/genesis_condprob.txt",
+      "genre": "A SHARE AND ITS BASE (14.09, bought by a zero of the probe). Measured: «условная вероятность» / «conditional probability» — 6 lines in 451 367, and all six MENTION the words. The probability world counts shares (460 lines) and the base is always the same — EVERYONE. That a share can be taken OF A PART, and that everything depends on the choice of base, the corpus says nowhere. A SHARE WITHOUT ITS BASE IS NOT A NUMBER: «nine» by itself is no share, and «9 out of 20» and «9 out of 12» are different shares OF THE SAME COUNT. AND THE MAIN THING: TWO CONDITIONAL SHARES ARE NOT EQUAL TO EACH OTHER — «nine of the twelve girls wear glasses» and «nine of the fifteen glasses-wearers are girls» stand on one number above and different ones below, and a reader who learned the first as the second errs the more surely the more confidently they count. Three genera by the base: the whole set; a PART of the set, said outright («the base is not 20 but 12»); and both conditional shares side by side with their inequality said aloud. Every page carries ALL FOUR numbers of the table and the court recomputes. The numbers of the tail are read as SEPARATE holes and not as references to the opening — with references the frame itself would refuse a page whose base is wrong, and the strongest lie would become UNJUDGEABLE instead of false; a court must be able to call it a lie, not fall silent about it.",
+      "act": [
+        "decide"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
+      "name": "adhominem",
+      "file": "datasets/genesis_adhominem.txt",
+      "genre": "AN ARGUMENT ABOUT THE SPEAKER (14.09, the last zero of the probe's sixty-five families). Measured: «к человеку» / «ad hominem» / «переход на личность» — ZERO lines. The unfit-ground world forged the same day catches the WEAK argument and the CIRCULAR one — both taken about the matter. An argument taken NOT ABOUT THE MATTER AT ALL the corpus names nowhere. AN ARGUMENT ABOUT THE SPEAKER CAN BE TRUE AND STILL NOT TOUCH THE MATTER: «he was wrong yesterday» may be plain truth and says nothing of whether today's statement holds. Falsehood has nothing to do with it — as with the circle and the weak ground — for the unfitness lies not in the argument's truth but in WHAT IT IS ABOUT. THE COURT DOES NOT UNDERSTAND «IS IT RELEVANT» AND DOES NOT UNDERTAKE TO: it looks at WHICH DECLARED ROW the argument was taken from — the properties of the THING or the properties of the SPEAKER — and that is enough. Three genera: about the matter; about the speaker and not touching it; and ABOUT THE SPEAKER BUT TO THE MATTER — the boundary without which the house would teach trusting no one: some properties of a speaker DO bear on the matter — he stood on the bridge during the test, he held the bucket and counted aloud — and that is testimony, not a turn upon the person. Without the third genus a reader learns to reject every reference to the speaker, which is the same trouble from the other end: then no witnesses, no eyewitnesses and no counters remain.",
+      "act": [
+        "decide"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows"
+    },
+    {
       "name": "addshare",
       "file": "datasets/genesis_addshare.txt",
       "genre": "ADDING SHARES — shares add only when brought to one denominator. Measured 11.09 across the show worlds: «1/2 + 1/3», «1/3 + 1/4» — NOT ONE occurrence; subtracting shares — NONE; the least common multiple — NONE. Adding shares with the SAME denominator is there (108 lines), and that makes the hole the more dangerous: the easy case is shown and the hard one — where the rule actually lives — is not shown at all. A READER WHO HAS SEEN ONLY «1/5 + 2/5 = 3/5» WILL ADD «1/2 + 1/3» THE SAME WAY AND GET «2/5». A rule shown only where it is not needed teaches one not to know it. Four genera, and the first is here for the sake of the second: SAME («1/5 + 2/5: the denominator is the same, and the NUMERATORS are added: 1 + 2 = 3, and it gives 3/5»); DIFFERENT («1/2 + 1/3: bring them to the common denominator 6: 1 × 3 = 3, and 1 × 2 = 2, and 3 + 2 = 5, and it gives 5/6»); SUBTRACT; GREATER («2/3 + 3/4: … 8 + 9 = 17, and it gives 17/12, and that is greater than one: 17 = 12 × 1 + 5»). The fourth joins the house to its neighbour: a sum of shares often runs past the unit, and without showing this the house would suggest that shares always add up to a share; the split into whole and remainder is taken by the same ledger the house of the fraction and the unit lives by. DENOMINATORS ARE NOT ADDED, AND THAT IS SHOWN RATHER THAN FORBIDDEN: in the first genus one sees the move «numerators are added» with the denominator unchanged; in the second, that the denominators must first be made equal — the prohibition follows from these two pages by itself. Subtraction is written only where the result is positive: negative shares are another house's subject. The common denominator is taken as in the house of comparing shares — the greater if it divides by the smaller, else the product; the least common multiple would be a second law on one page.",
@@ -3090,10 +3186,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 43055711,
+      "size": 43140783,
       "tiers": [],
       "text": "mix",
-      "lines": 451367
+      "lines": 451807
     },
     {
       "name": "fuseprep",
