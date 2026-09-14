@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 312 миров, 444820 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 314 миров, 446251 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -11,7 +11,7 @@
 
 ## АКТ «recount» — пересчитать величину: строка утверждает число
 
-Миров 152, строк 230072.
+Миров 153, строк 230720.
 
 - **`links`** (17566 строк; declared, whole_only)  
   **CONVERSATION LINKS** — a question whose subject stands in the PREVIOUS reply (the owner's order, 04.09, item 5; the BESEDA band measures this genus mute 15 of 15).
@@ -185,6 +185,8 @@
   **ЦЕНА, ЗАРАБОТОК И СКОРОСТЬ** — СКОЛЬКО ПРИХОДИТСЯ НА ОДНО И СКОЛЬКО НА МНОГО: «водитель зарабатывает … в час», «a driver earns …», «у него осталось …», «60 минут составляют час».
 - **`quantforms`** (648 строк; recompute, whole_only)  
   **THE QUANTIFIER** — «all», «some», «none» over a set that is COUNTED (06.09).
+- **`equalshare`** (648 строк; recompute, whole_only, unsigned_only)  
+  **DIVISION AS AN ACT WITHOUT A BEARER (14.09, asked for by holon-f9). The key's «поровну» family was MUTE ENTIRELY** — eighteen lines of eighteen — and the reason was measured, not guessed: in the whole corpus division lives WITH A BEARER and WITH GOODS («И…
 - **`units_langs`** (640 строк; recompute, unsigned_only)  
   **UNIT CONVERSIONS IN EIGHT LANGUAGES (the owner's word: every language in surplus; the conversion worlds say them in en/ru): eight conversions** — hour→minute, day→hour, week→day, year→month, kilometre→metre, metre→centimetre, kilogram→gram, minute→second …
 - **`pctdiff`** (640 строк; recompute, whole_only)  
@@ -579,7 +581,7 @@
 
 ## АКТ «decide» — решить случай: вердикт с основанием рядом
 
-Миров 21, строк 17686.
+Миров 22, строк 18469.
 
 - **`verifyforms`** (3285 строк; recompute, whole_only)  
   **VERIFICATION** — «claim · check · verdict», and the pages where the instrument is OBLIGED to refuse (05.09, the agent architecture, the fourth market): a true claim checked by ANOTHER action cannot be confirmed — the verdict is «not verified», and the gro…
@@ -593,6 +595,8 @@
   **PLACE** — where a thing stands, and the three laws of standing (06.09).
 - **`infer`** (1242 строк; recompute, whole_only)  
   **STRICT INFERENCE** — modus ponens, modus tollens, and TWO FALLACIES named as fallacies.
+- **`goal`** (783 строк; recompute, whole_only, unsigned_only)  
+  **THE GOAL SPOKEN IN SPEECH, NOT TYPED AS A COMMAND (14.09, asked for by omega-ad). The organism already reaches a goal on the world's ledger by itself** — it reads, searches the world's declaration, proposes, waits for a word, acts and checks by reading ag…
 - **`plan`** (576 строк; recompute, whole_only, unsigned_only)  
   order-row with a condition and the REPORT of its execution: the ledger of observation (files, runs, exit, millis) and a verdict that FOLLOWS from comparing the ledger with the condition (nine languages, both branches)
 - **`proof`** (520 строк; recompute, whole_only)  
@@ -683,5 +687,5 @@
     ОБЪЯВЛЕНИЕ В ТРИДЦАТЬ ЗНАКОВ НЕ ЛЖЁТ И НЕ ГОВОРИТ: читатель узнаёт имя мира
     и ничего сверх него.
 
-Миров: **0** из 312.
+Миров: **0** из 314.
 

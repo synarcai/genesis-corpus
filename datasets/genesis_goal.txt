@@ -1,0 +1,827 @@
+пользователь: доведи мощность до 40. организм: предлагаю поставить мощность на 40. подтверждено ли это? пользователь: нет. организм: подтверждения нет — акт не совершён. мощность 55: было 55, стало 55.
+пользователь: доведи угол хотя бы до 25. организм: предлагаю поставить угол на 25. подтверждено ли это? пользователь: нет. организм: подтверждения нет — акт не совершён. угол 18: было 18, стало 18.
+пользователь: доведи мощность до 20. организм: предлагаю поставить мощность на 20. подтверждено ли это? пользователь: да. организм: поставил мощность на 20. мощность 20: было 5, стало 20.
+пользователь: доведи мощность хотя бы до 40. организм: мощность 55 — цель уже достигнута, ход не нужен. мощность 55: было 55, стало 55.
+пользователь: держи температуру не выше 30. организм: температура только читается — акт не совершён. температура 24: было 24, стало 24.
+пользователь: доведи температуру до 20. организм: температура только читается — акт не совершён. температура 45: было 45, стало 45.
+пользователь: доведи температуру хотя бы до 20. организм: температура только читается — акт не совершён. температура 45: было 45, стало 45.
+пользователь: доведи угол до 30. организм: предлагаю поставить угол на 30. подтверждено ли это? пользователь: да. организм: поставил угол на 30. угол 30: было 0, стало 30.
+пользователь: доведи угол хотя бы до 30. организм: предлагаю поставить угол на 30. подтверждено ли это? пользователь: да. организм: поставил угол на 30. угол 30: было 0, стало 30.
+пользователь: держи угол не выше 30. организм: угол 30 — цель уже достигнута, ход не нужен. угол 30: было 30, стало 30.
+пользователь: доведи температуру до 25. организм: температура только читается — акт не совершён. температура 18: было 18, стало 18.
+пользователь: доведи температуру хотя бы до 25. организм: температура только читается — акт не совершён. температура 18: было 18, стало 18.
+пользователь: держи мощность не выше 20. организм: предлагаю поставить мощность на 20. подтверждено ли это? пользователь: нет. организм: подтверждения нет — акт не совершён. мощность 45: было 45, стало 45.
+пользователь: какой угол теперь? организм: угол 30.
+пользователь: держи угол не выше 30. организм: угол 0 — цель уже достигнута, ход не нужен. угол 0: было 0, стало 0.
+пользователь: доведи угол до 25. организм: угол 25 — цель уже достигнута, ход не нужен. угол 25: было 25, стало 25.
+пользователь: доведи угол хотя бы до 50. организм: угол 60 — цель уже достигнута, ход не нужен. угол 60: было 60, стало 60.
+пользователь: держи температуру не выше 12. организм: температура только читается — акт не совершён. температура 12: было 12, стало 12.
+
+user: bring the power to 40. organism: I propose to set the power to 40. is that confirmed? user: no. organism: no confirmation — the act is not performed. power 55: before 55, now 55.
+user: bring the angle to at least 25. organism: I propose to set the angle to 25. is that confirmed? user: no. organism: no confirmation — the act is not performed. angle 18: before 18, now 18.
+user: bring the power to 20. organism: I propose to set the power to 20. is that confirmed? user: yes. organism: I set the power to 20. power 20: before 5, now 20.
+user: bring the power to at least 40. organism: power 55 — the goal already holds, no move is needed. power 55: before 55, now 55.
+user: keep the temperature at most 30. organism: the temperature is read only — the act was not done. temperature 24: before 24, now 24.
+user: bring the temperature to 20. organism: the temperature is read only — the act was not done. temperature 45: before 45, now 45.
+user: bring the temperature to at least 20. organism: the temperature is read only — the act was not done. temperature 45: before 45, now 45.
+user: bring the angle to 30. organism: I propose to set the angle to 30. is that confirmed? user: yes. organism: I set the angle to 30. angle 30: before 0, now 30.
+user: bring the angle to at least 30. organism: I propose to set the angle to 30. is that confirmed? user: yes. organism: I set the angle to 30. angle 30: before 0, now 30.
+user: keep the angle at most 30. organism: angle 30 — the goal already holds, no move is needed. angle 30: before 30, now 30.
+user: bring the temperature to 25. organism: the temperature is read only — the act was not done. temperature 18: before 18, now 18.
+user: bring the temperature to at least 25. organism: the temperature is read only — the act was not done. temperature 18: before 18, now 18.
+user: keep the power at most 20. organism: I propose to set the power to 20. is that confirmed? user: no. organism: no confirmation — the act is not performed. power 45: before 45, now 45.
+user: what is the angle now? organism: angle 30.
+user: keep the angle at most 30. organism: angle 0 — the goal already holds, no move is needed. angle 0: before 0, now 0.
+user: bring the angle to 25. organism: angle 25 — the goal already holds, no move is needed. angle 25: before 25, now 25.
+user: bring the angle to at least 50. organism: angle 60 — the goal already holds, no move is needed. angle 60: before 60, now 60.
+user: keep the temperature at most 12. organism: the temperature is read only — the act was not done. temperature 12: before 12, now 12.
+
+Benutzer: bring die Leistung auf 40. Organismus: ich schlage vor, die Leistung auf 40 zu setzen. ist das bestätigt? Benutzer: nein. Organismus: keine Bestätigung — die Handlung wird nicht ausgeführt. Leistung 55: vorher 55, jetzt 55.
+Benutzer: bring den Winkel auf mindestens 25. Organismus: ich schlage vor, den Winkel auf 25 zu setzen. ist das bestätigt? Benutzer: nein. Organismus: keine Bestätigung — die Handlung wird nicht ausgeführt. Winkel 18: vorher 18, jetzt 18.
+Benutzer: bring die Leistung auf 20. Organismus: ich schlage vor, die Leistung auf 20 zu setzen. ist das bestätigt? Benutzer: ja. Organismus: ich habe die Leistung auf 20 gesetzt. Leistung 20: vorher 5, jetzt 20.
+Benutzer: bring die Leistung auf mindestens 40. Organismus: Leistung 55 — das Ziel gilt schon, kein Zug ist nötig. Leistung 55: vorher 55, jetzt 55.
+Benutzer: halte die Temperatur höchstens auf 30. Organismus: die Temperatur ist nur lesbar — der Akt wurde nicht ausgeführt. Temperatur 24: vorher 24, jetzt 24.
+Benutzer: bring die Temperatur auf 20. Organismus: die Temperatur ist nur lesbar — der Akt wurde nicht ausgeführt. Temperatur 45: vorher 45, jetzt 45.
+Benutzer: bring die Temperatur auf mindestens 20. Organismus: die Temperatur ist nur lesbar — der Akt wurde nicht ausgeführt. Temperatur 45: vorher 45, jetzt 45.
+Benutzer: bring den Winkel auf 30. Organismus: ich schlage vor, den Winkel auf 30 zu setzen. ist das bestätigt? Benutzer: ja. Organismus: ich habe den Winkel auf 30 gesetzt. Winkel 30: vorher 0, jetzt 30.
+Benutzer: bring den Winkel auf mindestens 30. Organismus: ich schlage vor, den Winkel auf 30 zu setzen. ist das bestätigt? Benutzer: ja. Organismus: ich habe den Winkel auf 30 gesetzt. Winkel 30: vorher 0, jetzt 30.
+Benutzer: halte den Winkel höchstens auf 30. Organismus: Winkel 30 — das Ziel gilt schon, kein Zug ist nötig. Winkel 30: vorher 30, jetzt 30.
+Benutzer: bring die Temperatur auf 25. Organismus: die Temperatur ist nur lesbar — der Akt wurde nicht ausgeführt. Temperatur 18: vorher 18, jetzt 18.
+Benutzer: bring die Temperatur auf mindestens 25. Organismus: die Temperatur ist nur lesbar — der Akt wurde nicht ausgeführt. Temperatur 18: vorher 18, jetzt 18.
+Benutzer: halte die Leistung höchstens auf 20. Organismus: ich schlage vor, die Leistung auf 20 zu setzen. ist das bestätigt? Benutzer: nein. Organismus: keine Bestätigung — die Handlung wird nicht ausgeführt. Leistung 45: vorher 45, jetzt 45.
+Benutzer: wie groß ist der Winkel jetzt? Organismus: Winkel 30.
+Benutzer: halte den Winkel höchstens auf 30. Organismus: Winkel 0 — das Ziel gilt schon, kein Zug ist nötig. Winkel 0: vorher 0, jetzt 0.
+Benutzer: bring den Winkel auf 25. Organismus: Winkel 25 — das Ziel gilt schon, kein Zug ist nötig. Winkel 25: vorher 25, jetzt 25.
+Benutzer: bring den Winkel auf mindestens 50. Organismus: Winkel 60 — das Ziel gilt schon, kein Zug ist nötig. Winkel 60: vorher 60, jetzt 60.
+Benutzer: halte die Temperatur höchstens auf 12. Organismus: die Temperatur ist nur lesbar — der Akt wurde nicht ausgeführt. Temperatur 12: vorher 12, jetzt 12.
+
+utilisateur : amène la puissance à 40. organisme : je propose de mettre la puissance à 40. est-ce confirmé ? utilisateur : non. organisme : pas de confirmation — l'acte n'est pas exécuté. puissance 55 : avant 55, maintenant 55.
+utilisateur : amène l'angle à au moins 25. organisme : je propose de mettre l'angle à 25. est-ce confirmé ? utilisateur : non. organisme : pas de confirmation — l'acte n'est pas exécuté. angle 18 : avant 18, maintenant 18.
+utilisateur : amène la puissance à 20. organisme : je propose de mettre la puissance à 20. est-ce confirmé ? utilisateur : oui. organisme : j'ai mis la puissance à 20. puissance 20 : avant 5, maintenant 20.
+utilisateur : amène la puissance à au moins 40. organisme : puissance 55 — le but tient déjà, aucune action n'est nécessaire. puissance 55 : avant 55, maintenant 55.
+utilisateur : garde la température à au plus 30. organisme : la température est en lecture seule — l'acte n'a pas été fait. température 24 : avant 24, maintenant 24.
+utilisateur : amène la température à 20. organisme : la température est en lecture seule — l'acte n'a pas été fait. température 45 : avant 45, maintenant 45.
+utilisateur : amène la température à au moins 20. organisme : la température est en lecture seule — l'acte n'a pas été fait. température 45 : avant 45, maintenant 45.
+utilisateur : amène l'angle à 30. organisme : je propose de mettre l'angle à 30. est-ce confirmé ? utilisateur : oui. organisme : j'ai mis l'angle à 30. angle 30 : avant 0, maintenant 30.
+utilisateur : amène l'angle à au moins 30. organisme : je propose de mettre l'angle à 30. est-ce confirmé ? utilisateur : oui. organisme : j'ai mis l'angle à 30. angle 30 : avant 0, maintenant 30.
+utilisateur : garde l'angle à au plus 30. organisme : angle 30 — le but tient déjà, aucune action n'est nécessaire. angle 30 : avant 30, maintenant 30.
+utilisateur : amène la température à 25. organisme : la température est en lecture seule — l'acte n'a pas été fait. température 18 : avant 18, maintenant 18.
+utilisateur : amène la température à au moins 25. organisme : la température est en lecture seule — l'acte n'a pas été fait. température 18 : avant 18, maintenant 18.
+utilisateur : garde la puissance à au plus 20. organisme : je propose de mettre la puissance à 20. est-ce confirmé ? utilisateur : non. organisme : pas de confirmation — l'acte n'est pas exécuté. puissance 45 : avant 45, maintenant 45.
+utilisateur : quel est l'angle maintenant ? organisme : angle 30.
+utilisateur : garde l'angle à au plus 30. organisme : angle 0 — le but tient déjà, aucune action n'est nécessaire. angle 0 : avant 0, maintenant 0.
+utilisateur : amène l'angle à 25. organisme : angle 25 — le but tient déjà, aucune action n'est nécessaire. angle 25 : avant 25, maintenant 25.
+utilisateur : amène l'angle à au moins 50. organisme : angle 60 — le but tient déjà, aucune action n'est nécessaire. angle 60 : avant 60, maintenant 60.
+utilisateur : garde la température à au plus 12. organisme : la température est en lecture seule — l'acte n'a pas été fait. température 12 : avant 12, maintenant 12.
+
+usuario: lleva la potencia a 40. organismo: propongo poner la potencia en 40. ¿está confirmado? usuario: no. organismo: sin confirmación — el acto no se realiza. potencia 55: antes 55, ahora 55.
+usuario: lleva el ángulo al menos a 25. organismo: propongo poner el ángulo en 25. ¿está confirmado? usuario: no. organismo: sin confirmación — el acto no se realiza. ángulo 18: antes 18, ahora 18.
+usuario: lleva la potencia a 20. organismo: propongo poner la potencia en 20. ¿está confirmado? usuario: sí. organismo: he puesto la potencia en 20. potencia 20: antes 5, ahora 20.
+usuario: lleva la potencia al menos a 40. organismo: potencia 55 — la meta ya se cumple, no hace falta ninguna acción. potencia 55: antes 55, ahora 55.
+usuario: mantén la temperatura como máximo en 30. organismo: la temperatura es de solo lectura — el acto no se hizo. temperatura 24: antes 24, ahora 24.
+usuario: lleva la temperatura a 20. organismo: la temperatura es de solo lectura — el acto no se hizo. temperatura 45: antes 45, ahora 45.
+usuario: lleva la temperatura al menos a 20. organismo: la temperatura es de solo lectura — el acto no se hizo. temperatura 45: antes 45, ahora 45.
+usuario: lleva el ángulo a 30. organismo: propongo poner el ángulo en 30. ¿está confirmado? usuario: sí. organismo: he puesto el ángulo en 30. ángulo 30: antes 0, ahora 30.
+usuario: lleva el ángulo al menos a 30. organismo: propongo poner el ángulo en 30. ¿está confirmado? usuario: sí. organismo: he puesto el ángulo en 30. ángulo 30: antes 0, ahora 30.
+usuario: mantén el ángulo como máximo en 30. organismo: ángulo 30 — la meta ya se cumple, no hace falta ninguna acción. ángulo 30: antes 30, ahora 30.
+usuario: lleva la temperatura a 25. organismo: la temperatura es de solo lectura — el acto no se hizo. temperatura 18: antes 18, ahora 18.
+usuario: lleva la temperatura al menos a 25. organismo: la temperatura es de solo lectura — el acto no se hizo. temperatura 18: antes 18, ahora 18.
+usuario: mantén la potencia como máximo en 20. organismo: propongo poner la potencia en 20. ¿está confirmado? usuario: no. organismo: sin confirmación — el acto no se realiza. potencia 45: antes 45, ahora 45.
+usuario: ¿cuál es el ángulo ahora? organismo: ángulo 30.
+usuario: mantén el ángulo como máximo en 30. organismo: ángulo 0 — la meta ya se cumple, no hace falta ninguna acción. ángulo 0: antes 0, ahora 0.
+usuario: lleva el ángulo a 25. organismo: ángulo 25 — la meta ya se cumple, no hace falta ninguna acción. ángulo 25: antes 25, ahora 25.
+usuario: lleva el ángulo al menos a 50. organismo: ángulo 60 — la meta ya se cumple, no hace falta ninguna acción. ángulo 60: antes 60, ahora 60.
+usuario: mantén la temperatura como máximo en 12. organismo: la temperatura es de solo lectura — el acto no se hizo. temperatura 12: antes 12, ahora 12.
+
+utente: porta la potenza a 40. organismo: propongo di mettere la potenza a 40. è confermato? utente: no. organismo: nessuna conferma — l'atto non viene eseguito. potenza 55: prima 55, adesso 55.
+utente: porta l'angolo ad almeno 25. organismo: propongo di mettere l'angolo a 25. è confermato? utente: no. organismo: nessuna conferma — l'atto non viene eseguito. angolo 18: prima 18, adesso 18.
+utente: porta la potenza a 20. organismo: propongo di mettere la potenza a 20. è confermato? utente: sì. organismo: ho messo la potenza a 20. potenza 20: prima 5, adesso 20.
+utente: porta la potenza ad almeno 40. organismo: potenza 55 — lo scopo vale già, nessuna azione è necessaria. potenza 55: prima 55, adesso 55.
+utente: tieni la temperatura al massimo a 30. organismo: la temperatura è di sola lettura — l'atto non è stato fatto. temperatura 24: prima 24, adesso 24.
+utente: porta la temperatura a 20. organismo: la temperatura è di sola lettura — l'atto non è stato fatto. temperatura 45: prima 45, adesso 45.
+utente: porta la temperatura ad almeno 20. organismo: la temperatura è di sola lettura — l'atto non è stato fatto. temperatura 45: prima 45, adesso 45.
+utente: porta l'angolo a 30. organismo: propongo di mettere l'angolo a 30. è confermato? utente: sì. organismo: ho messo l'angolo a 30. angolo 30: prima 0, adesso 30.
+utente: porta l'angolo ad almeno 30. organismo: propongo di mettere l'angolo a 30. è confermato? utente: sì. organismo: ho messo l'angolo a 30. angolo 30: prima 0, adesso 30.
+utente: tieni l'angolo al massimo a 30. organismo: angolo 30 — lo scopo vale già, nessuna azione è necessaria. angolo 30: prima 30, adesso 30.
+utente: porta la temperatura a 25. organismo: la temperatura è di sola lettura — l'atto non è stato fatto. temperatura 18: prima 18, adesso 18.
+utente: porta la temperatura ad almeno 25. organismo: la temperatura è di sola lettura — l'atto non è stato fatto. temperatura 18: prima 18, adesso 18.
+utente: tieni la potenza al massimo a 20. organismo: propongo di mettere la potenza a 20. è confermato? utente: no. organismo: nessuna conferma — l'atto non viene eseguito. potenza 45: prima 45, adesso 45.
+utente: qual è l'angolo adesso? organismo: angolo 30.
+utente: tieni l'angolo al massimo a 30. organismo: angolo 0 — lo scopo vale già, nessuna azione è necessaria. angolo 0: prima 0, adesso 0.
+utente: porta l'angolo a 25. organismo: angolo 25 — lo scopo vale già, nessuna azione è necessaria. angolo 25: prima 25, adesso 25.
+utente: porta l'angolo ad almeno 50. organismo: angolo 60 — lo scopo vale già, nessuna azione è necessaria. angolo 60: prima 60, adesso 60.
+utente: tieni la temperatura al massimo a 12. organismo: la temperatura è di sola lettura — l'atto non è stato fatto. temperatura 12: prima 12, adesso 12.
+
+utilizador: leva a potência a 40. organismo: proponho pôr a potência em 40. está confirmado? utilizador: não. organismo: sem confirmação — o ato não é realizado. potência 55: antes 55, agora 55.
+utilizador: leva o ângulo a pelo menos 25. organismo: proponho pôr o ângulo em 25. está confirmado? utilizador: não. organismo: sem confirmação — o ato não é realizado. ângulo 18: antes 18, agora 18.
+utilizador: leva a potência a 20. organismo: proponho pôr a potência em 20. está confirmado? utilizador: sim. organismo: pus a potência em 20. potência 20: antes 5, agora 20.
+utilizador: leva a potência a pelo menos 40. organismo: potência 55 — o objetivo já vale, nenhuma ação é necessária. potência 55: antes 55, agora 55.
+utilizador: mantém a temperatura no máximo em 30. organismo: a temperatura é somente de leitura — o ato não foi feito. temperatura 24: antes 24, agora 24.
+utilizador: leva a temperatura a 20. organismo: a temperatura é somente de leitura — o ato não foi feito. temperatura 45: antes 45, agora 45.
+utilizador: leva a temperatura a pelo menos 20. organismo: a temperatura é somente de leitura — o ato não foi feito. temperatura 45: antes 45, agora 45.
+utilizador: leva o ângulo a 30. organismo: proponho pôr o ângulo em 30. está confirmado? utilizador: sim. organismo: pus o ângulo em 30. ângulo 30: antes 0, agora 30.
+utilizador: leva o ângulo a pelo menos 30. organismo: proponho pôr o ângulo em 30. está confirmado? utilizador: sim. organismo: pus o ângulo em 30. ângulo 30: antes 0, agora 30.
+utilizador: mantém o ângulo no máximo em 30. organismo: ângulo 30 — o objetivo já vale, nenhuma ação é necessária. ângulo 30: antes 30, agora 30.
+utilizador: leva a temperatura a 25. organismo: a temperatura é somente de leitura — o ato não foi feito. temperatura 18: antes 18, agora 18.
+utilizador: leva a temperatura a pelo menos 25. organismo: a temperatura é somente de leitura — o ato não foi feito. temperatura 18: antes 18, agora 18.
+utilizador: mantém a potência no máximo em 20. organismo: proponho pôr a potência em 20. está confirmado? utilizador: não. organismo: sem confirmação — o ato não é realizado. potência 45: antes 45, agora 45.
+utilizador: qual é o ângulo agora? organismo: ângulo 30.
+utilizador: mantém o ângulo no máximo em 30. organismo: ângulo 0 — o objetivo já vale, nenhuma ação é necessária. ângulo 0: antes 0, agora 0.
+utilizador: leva o ângulo a 25. organismo: ângulo 25 — o objetivo já vale, nenhuma ação é necessária. ângulo 25: antes 25, agora 25.
+utilizador: leva o ângulo a pelo menos 50. organismo: ângulo 60 — o objetivo já vale, nenhuma ação é necessária. ângulo 60: antes 60, agora 60.
+utilizador: mantém a temperatura no máximo em 12. organismo: a temperatura é somente de leitura — o ato não foi feito. temperatura 12: antes 12, agora 12.
+
+gebruiker: breng het vermogen naar 40. organisme: ik stel voor het vermogen op 40 te zetten. is dat bevestigd? gebruiker: nee. organisme: geen bevestiging — de handeling wordt niet uitgevoerd. vermogen 55: eerst 55, nu 55.
+gebruiker: breng de hoek naar minstens 25. organisme: ik stel voor de hoek op 25 te zetten. is dat bevestigd? gebruiker: nee. organisme: geen bevestiging — de handeling wordt niet uitgevoerd. hoek 18: eerst 18, nu 18.
+gebruiker: breng het vermogen naar 20. organisme: ik stel voor het vermogen op 20 te zetten. is dat bevestigd? gebruiker: ja. organisme: ik heb het vermogen op 20 gezet. vermogen 20: eerst 5, nu 20.
+gebruiker: breng het vermogen naar minstens 40. organisme: vermogen 55 — het doel geldt al, geen zet is nodig. vermogen 55: eerst 55, nu 55.
+gebruiker: houd de temperatuur hoogstens op 30. organisme: de temperatuur is alleen leesbaar — de daad is niet gedaan. temperatuur 24: eerst 24, nu 24.
+gebruiker: breng de temperatuur naar 20. organisme: de temperatuur is alleen leesbaar — de daad is niet gedaan. temperatuur 45: eerst 45, nu 45.
+gebruiker: breng de temperatuur naar minstens 20. organisme: de temperatuur is alleen leesbaar — de daad is niet gedaan. temperatuur 45: eerst 45, nu 45.
+gebruiker: breng de hoek naar 30. organisme: ik stel voor de hoek op 30 te zetten. is dat bevestigd? gebruiker: ja. organisme: ik heb de hoek op 30 gezet. hoek 30: eerst 0, nu 30.
+gebruiker: breng de hoek naar minstens 30. organisme: ik stel voor de hoek op 30 te zetten. is dat bevestigd? gebruiker: ja. organisme: ik heb de hoek op 30 gezet. hoek 30: eerst 0, nu 30.
+gebruiker: houd de hoek hoogstens op 30. organisme: hoek 30 — het doel geldt al, geen zet is nodig. hoek 30: eerst 30, nu 30.
+gebruiker: breng de temperatuur naar 25. organisme: de temperatuur is alleen leesbaar — de daad is niet gedaan. temperatuur 18: eerst 18, nu 18.
+gebruiker: breng de temperatuur naar minstens 25. organisme: de temperatuur is alleen leesbaar — de daad is niet gedaan. temperatuur 18: eerst 18, nu 18.
+gebruiker: houd het vermogen hoogstens op 20. organisme: ik stel voor het vermogen op 20 te zetten. is dat bevestigd? gebruiker: nee. organisme: geen bevestiging — de handeling wordt niet uitgevoerd. vermogen 45: eerst 45, nu 45.
+gebruiker: hoe groot is de hoek nu? organisme: hoek 30.
+gebruiker: houd de hoek hoogstens op 30. organisme: hoek 0 — het doel geldt al, geen zet is nodig. hoek 0: eerst 0, nu 0.
+gebruiker: breng de hoek naar 25. organisme: hoek 25 — het doel geldt al, geen zet is nodig. hoek 25: eerst 25, nu 25.
+gebruiker: breng de hoek naar minstens 50. organisme: hoek 60 — het doel geldt al, geen zet is nodig. hoek 60: eerst 60, nu 60.
+gebruiker: houd de temperatuur hoogstens op 12. organisme: de temperatuur is alleen leesbaar — de daad is niet gedaan. temperatuur 12: eerst 12, nu 12.
+
+użytkownik: ustaw moc na 40. organizm: proponuję ustawić moc na 40. czy to potwierdzone? użytkownik: nie. organizm: brak potwierdzenia — akt nie zostaje wykonany. moc 55: było 55, jest teraz 55.
+użytkownik: ustaw kąt na co najmniej 25. organizm: proponuję ustawić kąt na 25. czy to potwierdzone? użytkownik: nie. organizm: brak potwierdzenia — akt nie zostaje wykonany. kąt 18: było 18, jest teraz 18.
+użytkownik: ustaw moc na 20. organizm: proponuję ustawić moc na 20. czy to potwierdzone? użytkownik: tak. organizm: ustawiłem moc na 20. moc 20: było 5, jest teraz 20.
+użytkownik: ustaw moc na co najmniej 40. organizm: moc 55 — cel już jest spełniony, ruch nie jest potrzebny. moc 55: było 55, jest teraz 55.
+użytkownik: trzymaj temperaturę najwyżej na 30. organizm: temperatura jest tylko do odczytu — akt nie został wykonany. temperatura 24: było 24, jest teraz 24.
+użytkownik: ustaw temperaturę na 20. organizm: temperatura jest tylko do odczytu — akt nie został wykonany. temperatura 45: było 45, jest teraz 45.
+użytkownik: ustaw temperaturę na co najmniej 20. organizm: temperatura jest tylko do odczytu — akt nie został wykonany. temperatura 45: było 45, jest teraz 45.
+użytkownik: ustaw kąt na 30. organizm: proponuję ustawić kąt na 30. czy to potwierdzone? użytkownik: tak. organizm: ustawiłem kąt na 30. kąt 30: było 0, jest teraz 30.
+użytkownik: ustaw kąt na co najmniej 30. organizm: proponuję ustawić kąt na 30. czy to potwierdzone? użytkownik: tak. organizm: ustawiłem kąt na 30. kąt 30: było 0, jest teraz 30.
+użytkownik: trzymaj kąt najwyżej na 30. organizm: kąt 30 — cel już jest spełniony, ruch nie jest potrzebny. kąt 30: było 30, jest teraz 30.
+użytkownik: ustaw temperaturę na 25. organizm: temperatura jest tylko do odczytu — akt nie został wykonany. temperatura 18: było 18, jest teraz 18.
+użytkownik: ustaw temperaturę na co najmniej 25. organizm: temperatura jest tylko do odczytu — akt nie został wykonany. temperatura 18: było 18, jest teraz 18.
+użytkownik: trzymaj moc najwyżej na 20. organizm: proponuję ustawić moc na 20. czy to potwierdzone? użytkownik: nie. organizm: brak potwierdzenia — akt nie zostaje wykonany. moc 45: było 45, jest teraz 45.
+użytkownik: jaki jest teraz kąt? organizm: kąt 30.
+użytkownik: trzymaj kąt najwyżej na 30. organizm: kąt 0 — cel już jest spełniony, ruch nie jest potrzebny. kąt 0: było 0, jest teraz 0.
+użytkownik: ustaw kąt na 25. organizm: kąt 25 — cel już jest spełniony, ruch nie jest potrzebny. kąt 25: było 25, jest teraz 25.
+użytkownik: ustaw kąt na co najmniej 50. organizm: kąt 60 — cel już jest spełniony, ruch nie jest potrzebny. kąt 60: było 60, jest teraz 60.
+użytkownik: trzymaj temperaturę najwyżej na 12. organizm: temperatura jest tylko do odczytu — akt nie został wykonany. temperatura 12: było 12, jest teraz 12.
+
+пользователь: доведи температуру до 30. организм: температура только читается — акт не совершён. температура 0: было 0, стало 0.
+пользователь: держи мощность не выше 40. организм: мощность 10 — цель уже достигнута, ход не нужен. мощность 10: было 10, стало 10.
+пользователь: какая мощность теперь? организм: мощность 40.
+пользователь: держи угол не выше 50. организм: предлагаю поставить угол на 50. подтверждено ли это? пользователь: нет. организм: подтверждения нет — акт не совершён. угол 60: было 60, стало 60.
+пользователь: доведи температуру хотя бы до 20. организм: температура только читается — акт не совершён. температура 5: было 5, стало 5.
+пользователь: доведи температуру до 20. организм: температура только читается — акт не совершён. температура 5: было 5, стало 5.
+пользователь: держи мощность не выше 12. организм: мощность 12 — цель уже достигнута, ход не нужен. мощность 12: было 12, стало 12.
+пользователь: доведи мощность хотя бы до 40. организм: предлагаю поставить мощность на 40. подтверждено ли это? пользователь: да. организм: поставил мощность на 40. мощность 40: было 10, стало 40.
+пользователь: доведи мощность до 40. организм: предлагаю поставить мощность на 40. подтверждено ли это? пользователь: да. организм: поставил мощность на 40. мощность 40: было 10, стало 40.
+пользователь: доведи температуру хотя бы до 50. организм: температура только читается — акт не совершён. температура 60: было 60, стало 60.
+пользователь: доведи температуру до 50. организм: температура только читается — акт не совершён. температура 60: было 60, стало 60.
+пользователь: держи температуру не выше 40. организм: температура только читается — акт не совершён. температура 55: было 55, стало 55.
+пользователь: доведи угол хотя бы до 30. организм: угол 30 — цель уже достигнута, ход не нужен. угол 30: было 30, стало 30.
+пользователь: доведи мощность до 20. организм: предлагаю поставить мощность на 20. подтверждено ли это? пользователь: да. организм: поставил мощность на 20. мощность 20: было 45, стало 20.
+пользователь: доведи мощность хотя бы до 20. организм: предлагаю поставить мощность на 20. подтверждено ли это? пользователь: нет. организм: подтверждения нет — акт не совершён. мощность 5: было 5, стало 5.
+пользователь: доведи угол до 25. организм: предлагаю поставить угол на 25. подтверждено ли это? пользователь: нет. организм: подтверждения нет — акт не совершён. угол 18: было 18, стало 18.
+пользователь: держи температуру не выше 25. организм: температура только читается — акт не совершён. температура 25: было 25, стало 25.
+пользователь: доведи температуру хотя бы до 30. организм: температура только читается — акт не совершён. температура 0: было 0, стало 0.
+
+user: bring the temperature to 30. organism: the temperature is read only — the act was not done. temperature 0: before 0, now 0.
+user: keep the power at most 40. organism: power 10 — the goal already holds, no move is needed. power 10: before 10, now 10.
+user: what is the power now? organism: power 40.
+user: keep the angle at most 50. organism: I propose to set the angle to 50. is that confirmed? user: no. organism: no confirmation — the act is not performed. angle 60: before 60, now 60.
+user: bring the temperature to at least 20. organism: the temperature is read only — the act was not done. temperature 5: before 5, now 5.
+user: bring the temperature to 20. organism: the temperature is read only — the act was not done. temperature 5: before 5, now 5.
+user: keep the power at most 12. organism: power 12 — the goal already holds, no move is needed. power 12: before 12, now 12.
+user: bring the power to at least 40. organism: I propose to set the power to 40. is that confirmed? user: yes. organism: I set the power to 40. power 40: before 10, now 40.
+user: bring the power to 40. organism: I propose to set the power to 40. is that confirmed? user: yes. organism: I set the power to 40. power 40: before 10, now 40.
+user: bring the temperature to at least 50. organism: the temperature is read only — the act was not done. temperature 60: before 60, now 60.
+user: bring the temperature to 50. organism: the temperature is read only — the act was not done. temperature 60: before 60, now 60.
+user: keep the temperature at most 40. organism: the temperature is read only — the act was not done. temperature 55: before 55, now 55.
+user: bring the angle to at least 30. organism: angle 30 — the goal already holds, no move is needed. angle 30: before 30, now 30.
+user: bring the power to 20. organism: I propose to set the power to 20. is that confirmed? user: yes. organism: I set the power to 20. power 20: before 45, now 20.
+user: bring the power to at least 20. organism: I propose to set the power to 20. is that confirmed? user: no. organism: no confirmation — the act is not performed. power 5: before 5, now 5.
+user: bring the angle to 25. organism: I propose to set the angle to 25. is that confirmed? user: no. organism: no confirmation — the act is not performed. angle 18: before 18, now 18.
+user: keep the temperature at most 25. organism: the temperature is read only — the act was not done. temperature 25: before 25, now 25.
+user: bring the temperature to at least 30. organism: the temperature is read only — the act was not done. temperature 0: before 0, now 0.
+
+Benutzer: bring die Temperatur auf 30. Organismus: die Temperatur ist nur lesbar — der Akt wurde nicht ausgeführt. Temperatur 0: vorher 0, jetzt 0.
+Benutzer: halte die Leistung höchstens auf 40. Organismus: Leistung 10 — das Ziel gilt schon, kein Zug ist nötig. Leistung 10: vorher 10, jetzt 10.
+Benutzer: wie groß ist die Leistung jetzt? Organismus: Leistung 40.
+Benutzer: halte den Winkel höchstens auf 50. Organismus: ich schlage vor, den Winkel auf 50 zu setzen. ist das bestätigt? Benutzer: nein. Organismus: keine Bestätigung — die Handlung wird nicht ausgeführt. Winkel 60: vorher 60, jetzt 60.
+Benutzer: bring die Temperatur auf mindestens 20. Organismus: die Temperatur ist nur lesbar — der Akt wurde nicht ausgeführt. Temperatur 5: vorher 5, jetzt 5.
+Benutzer: bring die Temperatur auf 20. Organismus: die Temperatur ist nur lesbar — der Akt wurde nicht ausgeführt. Temperatur 5: vorher 5, jetzt 5.
+Benutzer: halte die Leistung höchstens auf 12. Organismus: Leistung 12 — das Ziel gilt schon, kein Zug ist nötig. Leistung 12: vorher 12, jetzt 12.
+Benutzer: bring die Leistung auf mindestens 40. Organismus: ich schlage vor, die Leistung auf 40 zu setzen. ist das bestätigt? Benutzer: ja. Organismus: ich habe die Leistung auf 40 gesetzt. Leistung 40: vorher 10, jetzt 40.
+Benutzer: bring die Leistung auf 40. Organismus: ich schlage vor, die Leistung auf 40 zu setzen. ist das bestätigt? Benutzer: ja. Organismus: ich habe die Leistung auf 40 gesetzt. Leistung 40: vorher 10, jetzt 40.
+Benutzer: bring die Temperatur auf mindestens 50. Organismus: die Temperatur ist nur lesbar — der Akt wurde nicht ausgeführt. Temperatur 60: vorher 60, jetzt 60.
+Benutzer: bring die Temperatur auf 50. Organismus: die Temperatur ist nur lesbar — der Akt wurde nicht ausgeführt. Temperatur 60: vorher 60, jetzt 60.
+Benutzer: halte die Temperatur höchstens auf 40. Organismus: die Temperatur ist nur lesbar — der Akt wurde nicht ausgeführt. Temperatur 55: vorher 55, jetzt 55.
+Benutzer: bring den Winkel auf mindestens 30. Organismus: Winkel 30 — das Ziel gilt schon, kein Zug ist nötig. Winkel 30: vorher 30, jetzt 30.
+Benutzer: bring die Leistung auf 20. Organismus: ich schlage vor, die Leistung auf 20 zu setzen. ist das bestätigt? Benutzer: ja. Organismus: ich habe die Leistung auf 20 gesetzt. Leistung 20: vorher 45, jetzt 20.
+Benutzer: bring die Leistung auf mindestens 20. Organismus: ich schlage vor, die Leistung auf 20 zu setzen. ist das bestätigt? Benutzer: nein. Organismus: keine Bestätigung — die Handlung wird nicht ausgeführt. Leistung 5: vorher 5, jetzt 5.
+Benutzer: bring den Winkel auf 25. Organismus: ich schlage vor, den Winkel auf 25 zu setzen. ist das bestätigt? Benutzer: nein. Organismus: keine Bestätigung — die Handlung wird nicht ausgeführt. Winkel 18: vorher 18, jetzt 18.
+Benutzer: halte die Temperatur höchstens auf 25. Organismus: die Temperatur ist nur lesbar — der Akt wurde nicht ausgeführt. Temperatur 25: vorher 25, jetzt 25.
+Benutzer: bring die Temperatur auf mindestens 30. Organismus: die Temperatur ist nur lesbar — der Akt wurde nicht ausgeführt. Temperatur 0: vorher 0, jetzt 0.
+
+utilisateur : amène la température à 30. organisme : la température est en lecture seule — l'acte n'a pas été fait. température 0 : avant 0, maintenant 0.
+utilisateur : garde la puissance à au plus 40. organisme : puissance 10 — le but tient déjà, aucune action n'est nécessaire. puissance 10 : avant 10, maintenant 10.
+utilisateur : quelle est la puissance maintenant ? organisme : puissance 40.
+utilisateur : garde l'angle à au plus 50. organisme : je propose de mettre l'angle à 50. est-ce confirmé ? utilisateur : non. organisme : pas de confirmation — l'acte n'est pas exécuté. angle 60 : avant 60, maintenant 60.
+utilisateur : amène la température à au moins 20. organisme : la température est en lecture seule — l'acte n'a pas été fait. température 5 : avant 5, maintenant 5.
+utilisateur : amène la température à 20. organisme : la température est en lecture seule — l'acte n'a pas été fait. température 5 : avant 5, maintenant 5.
+utilisateur : garde la puissance à au plus 12. organisme : puissance 12 — le but tient déjà, aucune action n'est nécessaire. puissance 12 : avant 12, maintenant 12.
+utilisateur : amène la puissance à au moins 40. organisme : je propose de mettre la puissance à 40. est-ce confirmé ? utilisateur : oui. organisme : j'ai mis la puissance à 40. puissance 40 : avant 10, maintenant 40.
+utilisateur : amène la puissance à 40. organisme : je propose de mettre la puissance à 40. est-ce confirmé ? utilisateur : oui. organisme : j'ai mis la puissance à 40. puissance 40 : avant 10, maintenant 40.
+utilisateur : amène la température à au moins 50. organisme : la température est en lecture seule — l'acte n'a pas été fait. température 60 : avant 60, maintenant 60.
+utilisateur : amène la température à 50. organisme : la température est en lecture seule — l'acte n'a pas été fait. température 60 : avant 60, maintenant 60.
+utilisateur : garde la température à au plus 40. organisme : la température est en lecture seule — l'acte n'a pas été fait. température 55 : avant 55, maintenant 55.
+utilisateur : amène l'angle à au moins 30. organisme : angle 30 — le but tient déjà, aucune action n'est nécessaire. angle 30 : avant 30, maintenant 30.
+utilisateur : amène la puissance à 20. organisme : je propose de mettre la puissance à 20. est-ce confirmé ? utilisateur : oui. organisme : j'ai mis la puissance à 20. puissance 20 : avant 45, maintenant 20.
+utilisateur : amène la puissance à au moins 20. organisme : je propose de mettre la puissance à 20. est-ce confirmé ? utilisateur : non. organisme : pas de confirmation — l'acte n'est pas exécuté. puissance 5 : avant 5, maintenant 5.
+utilisateur : amène l'angle à 25. organisme : je propose de mettre l'angle à 25. est-ce confirmé ? utilisateur : non. organisme : pas de confirmation — l'acte n'est pas exécuté. angle 18 : avant 18, maintenant 18.
+utilisateur : garde la température à au plus 25. organisme : la température est en lecture seule — l'acte n'a pas été fait. température 25 : avant 25, maintenant 25.
+utilisateur : amène la température à au moins 30. organisme : la température est en lecture seule — l'acte n'a pas été fait. température 0 : avant 0, maintenant 0.
+
+usuario: lleva la temperatura a 30. organismo: la temperatura es de solo lectura — el acto no se hizo. temperatura 0: antes 0, ahora 0.
+usuario: mantén la potencia como máximo en 40. organismo: potencia 10 — la meta ya se cumple, no hace falta ninguna acción. potencia 10: antes 10, ahora 10.
+usuario: ¿cuál es la potencia ahora? organismo: potencia 40.
+usuario: mantén el ángulo como máximo en 50. organismo: propongo poner el ángulo en 50. ¿está confirmado? usuario: no. organismo: sin confirmación — el acto no se realiza. ángulo 60: antes 60, ahora 60.
+usuario: lleva la temperatura al menos a 20. organismo: la temperatura es de solo lectura — el acto no se hizo. temperatura 5: antes 5, ahora 5.
+usuario: lleva la temperatura a 20. organismo: la temperatura es de solo lectura — el acto no se hizo. temperatura 5: antes 5, ahora 5.
+usuario: mantén la potencia como máximo en 12. organismo: potencia 12 — la meta ya se cumple, no hace falta ninguna acción. potencia 12: antes 12, ahora 12.
+usuario: lleva la potencia al menos a 40. organismo: propongo poner la potencia en 40. ¿está confirmado? usuario: sí. organismo: he puesto la potencia en 40. potencia 40: antes 10, ahora 40.
+usuario: lleva la potencia a 40. organismo: propongo poner la potencia en 40. ¿está confirmado? usuario: sí. organismo: he puesto la potencia en 40. potencia 40: antes 10, ahora 40.
+usuario: lleva la temperatura al menos a 50. organismo: la temperatura es de solo lectura — el acto no se hizo. temperatura 60: antes 60, ahora 60.
+usuario: lleva la temperatura a 50. organismo: la temperatura es de solo lectura — el acto no se hizo. temperatura 60: antes 60, ahora 60.
+usuario: mantén la temperatura como máximo en 40. organismo: la temperatura es de solo lectura — el acto no se hizo. temperatura 55: antes 55, ahora 55.
+usuario: lleva el ángulo al menos a 30. organismo: ángulo 30 — la meta ya se cumple, no hace falta ninguna acción. ángulo 30: antes 30, ahora 30.
+usuario: lleva la potencia a 20. organismo: propongo poner la potencia en 20. ¿está confirmado? usuario: sí. organismo: he puesto la potencia en 20. potencia 20: antes 45, ahora 20.
+usuario: lleva la potencia al menos a 20. organismo: propongo poner la potencia en 20. ¿está confirmado? usuario: no. organismo: sin confirmación — el acto no se realiza. potencia 5: antes 5, ahora 5.
+usuario: lleva el ángulo a 25. organismo: propongo poner el ángulo en 25. ¿está confirmado? usuario: no. organismo: sin confirmación — el acto no se realiza. ángulo 18: antes 18, ahora 18.
+usuario: mantén la temperatura como máximo en 25. organismo: la temperatura es de solo lectura — el acto no se hizo. temperatura 25: antes 25, ahora 25.
+usuario: lleva la temperatura al menos a 30. organismo: la temperatura es de solo lectura — el acto no se hizo. temperatura 0: antes 0, ahora 0.
+
+utente: porta la temperatura a 30. organismo: la temperatura è di sola lettura — l'atto non è stato fatto. temperatura 0: prima 0, adesso 0.
+utente: tieni la potenza al massimo a 40. organismo: potenza 10 — lo scopo vale già, nessuna azione è necessaria. potenza 10: prima 10, adesso 10.
+utente: qual è la potenza adesso? organismo: potenza 40.
+utente: tieni l'angolo al massimo a 50. organismo: propongo di mettere l'angolo a 50. è confermato? utente: no. organismo: nessuna conferma — l'atto non viene eseguito. angolo 60: prima 60, adesso 60.
+utente: porta la temperatura ad almeno 20. organismo: la temperatura è di sola lettura — l'atto non è stato fatto. temperatura 5: prima 5, adesso 5.
+utente: porta la temperatura a 20. organismo: la temperatura è di sola lettura — l'atto non è stato fatto. temperatura 5: prima 5, adesso 5.
+utente: tieni la potenza al massimo a 12. organismo: potenza 12 — lo scopo vale già, nessuna azione è necessaria. potenza 12: prima 12, adesso 12.
+utente: porta la potenza ad almeno 40. organismo: propongo di mettere la potenza a 40. è confermato? utente: sì. organismo: ho messo la potenza a 40. potenza 40: prima 10, adesso 40.
+utente: porta la potenza a 40. organismo: propongo di mettere la potenza a 40. è confermato? utente: sì. organismo: ho messo la potenza a 40. potenza 40: prima 10, adesso 40.
+utente: porta la temperatura ad almeno 50. organismo: la temperatura è di sola lettura — l'atto non è stato fatto. temperatura 60: prima 60, adesso 60.
+utente: porta la temperatura a 50. organismo: la temperatura è di sola lettura — l'atto non è stato fatto. temperatura 60: prima 60, adesso 60.
+utente: tieni la temperatura al massimo a 40. organismo: la temperatura è di sola lettura — l'atto non è stato fatto. temperatura 55: prima 55, adesso 55.
+utente: porta l'angolo ad almeno 30. organismo: angolo 30 — lo scopo vale già, nessuna azione è necessaria. angolo 30: prima 30, adesso 30.
+utente: porta la potenza a 20. organismo: propongo di mettere la potenza a 20. è confermato? utente: sì. organismo: ho messo la potenza a 20. potenza 20: prima 45, adesso 20.
+utente: porta la potenza ad almeno 20. organismo: propongo di mettere la potenza a 20. è confermato? utente: no. organismo: nessuna conferma — l'atto non viene eseguito. potenza 5: prima 5, adesso 5.
+utente: porta l'angolo a 25. organismo: propongo di mettere l'angolo a 25. è confermato? utente: no. organismo: nessuna conferma — l'atto non viene eseguito. angolo 18: prima 18, adesso 18.
+utente: tieni la temperatura al massimo a 25. organismo: la temperatura è di sola lettura — l'atto non è stato fatto. temperatura 25: prima 25, adesso 25.
+utente: porta la temperatura ad almeno 30. organismo: la temperatura è di sola lettura — l'atto non è stato fatto. temperatura 0: prima 0, adesso 0.
+
+utilizador: leva a temperatura a 30. organismo: a temperatura é somente de leitura — o ato não foi feito. temperatura 0: antes 0, agora 0.
+utilizador: mantém a potência no máximo em 40. organismo: potência 10 — o objetivo já vale, nenhuma ação é necessária. potência 10: antes 10, agora 10.
+utilizador: qual é a potência agora? organismo: potência 40.
+utilizador: mantém o ângulo no máximo em 50. organismo: proponho pôr o ângulo em 50. está confirmado? utilizador: não. organismo: sem confirmação — o ato não é realizado. ângulo 60: antes 60, agora 60.
+utilizador: leva a temperatura a pelo menos 20. organismo: a temperatura é somente de leitura — o ato não foi feito. temperatura 5: antes 5, agora 5.
+utilizador: leva a temperatura a 20. organismo: a temperatura é somente de leitura — o ato não foi feito. temperatura 5: antes 5, agora 5.
+utilizador: mantém a potência no máximo em 12. organismo: potência 12 — o objetivo já vale, nenhuma ação é necessária. potência 12: antes 12, agora 12.
+utilizador: leva a potência a pelo menos 40. organismo: proponho pôr a potência em 40. está confirmado? utilizador: sim. organismo: pus a potência em 40. potência 40: antes 10, agora 40.
+utilizador: leva a potência a 40. organismo: proponho pôr a potência em 40. está confirmado? utilizador: sim. organismo: pus a potência em 40. potência 40: antes 10, agora 40.
+utilizador: leva a temperatura a pelo menos 50. organismo: a temperatura é somente de leitura — o ato não foi feito. temperatura 60: antes 60, agora 60.
+utilizador: leva a temperatura a 50. organismo: a temperatura é somente de leitura — o ato não foi feito. temperatura 60: antes 60, agora 60.
+utilizador: mantém a temperatura no máximo em 40. organismo: a temperatura é somente de leitura — o ato não foi feito. temperatura 55: antes 55, agora 55.
+utilizador: leva o ângulo a pelo menos 30. organismo: ângulo 30 — o objetivo já vale, nenhuma ação é necessária. ângulo 30: antes 30, agora 30.
+utilizador: leva a potência a 20. organismo: proponho pôr a potência em 20. está confirmado? utilizador: sim. organismo: pus a potência em 20. potência 20: antes 45, agora 20.
+utilizador: leva a potência a pelo menos 20. organismo: proponho pôr a potência em 20. está confirmado? utilizador: não. organismo: sem confirmação — o ato não é realizado. potência 5: antes 5, agora 5.
+utilizador: leva o ângulo a 25. organismo: proponho pôr o ângulo em 25. está confirmado? utilizador: não. organismo: sem confirmação — o ato não é realizado. ângulo 18: antes 18, agora 18.
+utilizador: mantém a temperatura no máximo em 25. organismo: a temperatura é somente de leitura — o ato não foi feito. temperatura 25: antes 25, agora 25.
+utilizador: leva a temperatura a pelo menos 30. organismo: a temperatura é somente de leitura — o ato não foi feito. temperatura 0: antes 0, agora 0.
+
+gebruiker: breng de temperatuur naar 30. organisme: de temperatuur is alleen leesbaar — de daad is niet gedaan. temperatuur 0: eerst 0, nu 0.
+gebruiker: houd het vermogen hoogstens op 40. organisme: vermogen 10 — het doel geldt al, geen zet is nodig. vermogen 10: eerst 10, nu 10.
+gebruiker: hoe groot is het vermogen nu? organisme: vermogen 40.
+gebruiker: houd de hoek hoogstens op 50. organisme: ik stel voor de hoek op 50 te zetten. is dat bevestigd? gebruiker: nee. organisme: geen bevestiging — de handeling wordt niet uitgevoerd. hoek 60: eerst 60, nu 60.
+gebruiker: breng de temperatuur naar minstens 20. organisme: de temperatuur is alleen leesbaar — de daad is niet gedaan. temperatuur 5: eerst 5, nu 5.
+gebruiker: breng de temperatuur naar 20. organisme: de temperatuur is alleen leesbaar — de daad is niet gedaan. temperatuur 5: eerst 5, nu 5.
+gebruiker: houd het vermogen hoogstens op 12. organisme: vermogen 12 — het doel geldt al, geen zet is nodig. vermogen 12: eerst 12, nu 12.
+gebruiker: breng het vermogen naar minstens 40. organisme: ik stel voor het vermogen op 40 te zetten. is dat bevestigd? gebruiker: ja. organisme: ik heb het vermogen op 40 gezet. vermogen 40: eerst 10, nu 40.
+gebruiker: breng het vermogen naar 40. organisme: ik stel voor het vermogen op 40 te zetten. is dat bevestigd? gebruiker: ja. organisme: ik heb het vermogen op 40 gezet. vermogen 40: eerst 10, nu 40.
+gebruiker: breng de temperatuur naar minstens 50. organisme: de temperatuur is alleen leesbaar — de daad is niet gedaan. temperatuur 60: eerst 60, nu 60.
+gebruiker: breng de temperatuur naar 50. organisme: de temperatuur is alleen leesbaar — de daad is niet gedaan. temperatuur 60: eerst 60, nu 60.
+gebruiker: houd de temperatuur hoogstens op 40. organisme: de temperatuur is alleen leesbaar — de daad is niet gedaan. temperatuur 55: eerst 55, nu 55.
+gebruiker: breng de hoek naar minstens 30. organisme: hoek 30 — het doel geldt al, geen zet is nodig. hoek 30: eerst 30, nu 30.
+gebruiker: breng het vermogen naar 20. organisme: ik stel voor het vermogen op 20 te zetten. is dat bevestigd? gebruiker: ja. organisme: ik heb het vermogen op 20 gezet. vermogen 20: eerst 45, nu 20.
+gebruiker: breng het vermogen naar minstens 20. organisme: ik stel voor het vermogen op 20 te zetten. is dat bevestigd? gebruiker: nee. organisme: geen bevestiging — de handeling wordt niet uitgevoerd. vermogen 5: eerst 5, nu 5.
+gebruiker: breng de hoek naar 25. organisme: ik stel voor de hoek op 25 te zetten. is dat bevestigd? gebruiker: nee. organisme: geen bevestiging — de handeling wordt niet uitgevoerd. hoek 18: eerst 18, nu 18.
+gebruiker: houd de temperatuur hoogstens op 25. organisme: de temperatuur is alleen leesbaar — de daad is niet gedaan. temperatuur 25: eerst 25, nu 25.
+gebruiker: breng de temperatuur naar minstens 30. organisme: de temperatuur is alleen leesbaar — de daad is niet gedaan. temperatuur 0: eerst 0, nu 0.
+
+użytkownik: ustaw temperaturę na 30. organizm: temperatura jest tylko do odczytu — akt nie został wykonany. temperatura 0: było 0, jest teraz 0.
+użytkownik: trzymaj moc najwyżej na 40. organizm: moc 10 — cel już jest spełniony, ruch nie jest potrzebny. moc 10: było 10, jest teraz 10.
+użytkownik: jaka jest teraz moc? organizm: moc 40.
+użytkownik: trzymaj kąt najwyżej na 50. organizm: proponuję ustawić kąt na 50. czy to potwierdzone? użytkownik: nie. organizm: brak potwierdzenia — akt nie zostaje wykonany. kąt 60: było 60, jest teraz 60.
+użytkownik: ustaw temperaturę na co najmniej 20. organizm: temperatura jest tylko do odczytu — akt nie został wykonany. temperatura 5: było 5, jest teraz 5.
+użytkownik: ustaw temperaturę na 20. organizm: temperatura jest tylko do odczytu — akt nie został wykonany. temperatura 5: było 5, jest teraz 5.
+użytkownik: trzymaj moc najwyżej na 12. organizm: moc 12 — cel już jest spełniony, ruch nie jest potrzebny. moc 12: było 12, jest teraz 12.
+użytkownik: ustaw moc na co najmniej 40. organizm: proponuję ustawić moc na 40. czy to potwierdzone? użytkownik: tak. organizm: ustawiłem moc na 40. moc 40: było 10, jest teraz 40.
+użytkownik: ustaw moc na 40. organizm: proponuję ustawić moc na 40. czy to potwierdzone? użytkownik: tak. organizm: ustawiłem moc na 40. moc 40: było 10, jest teraz 40.
+użytkownik: ustaw temperaturę na co najmniej 50. organizm: temperatura jest tylko do odczytu — akt nie został wykonany. temperatura 60: było 60, jest teraz 60.
+użytkownik: ustaw temperaturę na 50. organizm: temperatura jest tylko do odczytu — akt nie został wykonany. temperatura 60: było 60, jest teraz 60.
+użytkownik: trzymaj temperaturę najwyżej na 40. organizm: temperatura jest tylko do odczytu — akt nie został wykonany. temperatura 55: było 55, jest teraz 55.
+użytkownik: ustaw kąt na co najmniej 30. organizm: kąt 30 — cel już jest spełniony, ruch nie jest potrzebny. kąt 30: było 30, jest teraz 30.
+użytkownik: ustaw moc na 20. organizm: proponuję ustawić moc na 20. czy to potwierdzone? użytkownik: tak. organizm: ustawiłem moc na 20. moc 20: było 45, jest teraz 20.
+użytkownik: ustaw moc na co najmniej 20. organizm: proponuję ustawić moc na 20. czy to potwierdzone? użytkownik: nie. organizm: brak potwierdzenia — akt nie zostaje wykonany. moc 5: było 5, jest teraz 5.
+użytkownik: ustaw kąt na 25. organizm: proponuję ustawić kąt na 25. czy to potwierdzone? użytkownik: nie. organizm: brak potwierdzenia — akt nie zostaje wykonany. kąt 18: było 18, jest teraz 18.
+użytkownik: trzymaj temperaturę najwyżej na 25. organizm: temperatura jest tylko do odczytu — akt nie został wykonany. temperatura 25: było 25, jest teraz 25.
+użytkownik: ustaw temperaturę na co najmniej 30. organizm: temperatura jest tylko do odczytu — akt nie został wykonany. temperatura 0: było 0, jest teraz 0.
+
+пользователь: доведи температуру хотя бы до 40. организм: температура только читается — акт не совершён. температура 10: было 10, стало 10.
+пользователь: доведи мощность до 20. организм: предлагаю поставить мощность на 20. подтверждено ли это? пользователь: нет. организм: подтверждения нет — акт не совершён. мощность 5: было 5, стало 5.
+пользователь: доведи угол до 50. организм: предлагаю поставить угол на 50. подтверждено ли это? пользователь: да. организм: поставил угол на 50. угол 50: было 60, стало 50.
+пользователь: держи угол не выше 25. организм: угол 25 — цель уже достигнута, ход не нужен. угол 25: было 25, стало 25.
+пользователь: доведи температуру хотя бы до 30. организм: температура только читается — акт не совершён. температура 30: было 30, стало 30.
+пользователь: какой угол теперь? организм: угол 25.
+пользователь: доведи температуру до 40. организм: температура только читается — акт не совершён. температура 10: было 10, стало 10.
+пользователь: держи температуру не выше 25. организм: температура только читается — акт не совершён. температура 18: было 18, стало 18.
+пользователь: доведи угол хотя бы до 30. организм: предлагаю поставить угол на 30. подтверждено ли это? пользователь: нет. организм: подтверждения нет — акт не совершён. угол 0: было 0, стало 0.
+пользователь: доведи угол хотя бы до 30. организм: предлагаю поставить угол на 30. подтверждено ли это? пользователь: да. организм: поставил угол на 30. угол 30: было 24, стало 30.
+пользователь: доведи температуру до 30. организм: температура только читается — акт не совершён. температура 30: было 30, стало 30.
+пользователь: держи температуру не выше 20. организм: температура только читается — акт не совершён. температура 45: было 45, стало 45.
+пользователь: держи мощность не выше 40. организм: предлагаю поставить мощность на 40. подтверждено ли это? пользователь: да. организм: поставил мощность на 40. мощность 40: было 55, стало 40.
+пользователь: доведи мощность хотя бы до 12. организм: мощность 12 — цель уже достигнута, ход не нужен. мощность 12: было 12, стало 12.
+пользователь: доведи угол до 30. организм: предлагаю поставить угол на 30. подтверждено ли это? пользователь: нет. организм: подтверждения нет — акт не совершён. угол 0: было 0, стало 0.
+пользователь: доведи угол до 30. организм: предлагаю поставить угол на 30. подтверждено ли это? пользователь: да. организм: поставил угол на 30. угол 30: было 24, стало 30.
+пользователь: держи угол не выше 30. организм: угол 24 — цель уже достигнута, ход не нужен. угол 24: было 24, стало 24.
+
+user: bring the temperature to at least 40. organism: the temperature is read only — the act was not done. temperature 10: before 10, now 10.
+user: bring the power to 20. organism: I propose to set the power to 20. is that confirmed? user: no. organism: no confirmation — the act is not performed. power 5: before 5, now 5.
+user: bring the angle to 50. organism: I propose to set the angle to 50. is that confirmed? user: yes. organism: I set the angle to 50. angle 50: before 60, now 50.
+user: keep the angle at most 25. organism: angle 25 — the goal already holds, no move is needed. angle 25: before 25, now 25.
+user: bring the temperature to at least 30. organism: the temperature is read only — the act was not done. temperature 30: before 30, now 30.
+user: what is the angle now? organism: angle 25.
+user: bring the temperature to 40. organism: the temperature is read only — the act was not done. temperature 10: before 10, now 10.
+user: keep the temperature at most 25. organism: the temperature is read only — the act was not done. temperature 18: before 18, now 18.
+user: bring the angle to at least 30. organism: I propose to set the angle to 30. is that confirmed? user: no. organism: no confirmation — the act is not performed. angle 0: before 0, now 0.
+user: bring the angle to at least 30. organism: I propose to set the angle to 30. is that confirmed? user: yes. organism: I set the angle to 30. angle 30: before 24, now 30.
+user: bring the temperature to 30. organism: the temperature is read only — the act was not done. temperature 30: before 30, now 30.
+user: keep the temperature at most 20. organism: the temperature is read only — the act was not done. temperature 45: before 45, now 45.
+user: keep the power at most 40. organism: I propose to set the power to 40. is that confirmed? user: yes. organism: I set the power to 40. power 40: before 55, now 40.
+user: bring the power to at least 12. organism: power 12 — the goal already holds, no move is needed. power 12: before 12, now 12.
+user: bring the angle to 30. organism: I propose to set the angle to 30. is that confirmed? user: no. organism: no confirmation — the act is not performed. angle 0: before 0, now 0.
+user: bring the angle to 30. organism: I propose to set the angle to 30. is that confirmed? user: yes. organism: I set the angle to 30. angle 30: before 24, now 30.
+user: keep the angle at most 30. organism: angle 24 — the goal already holds, no move is needed. angle 24: before 24, now 24.
+
+Benutzer: bring die Temperatur auf mindestens 40. Organismus: die Temperatur ist nur lesbar — der Akt wurde nicht ausgeführt. Temperatur 10: vorher 10, jetzt 10.
+Benutzer: bring die Leistung auf 20. Organismus: ich schlage vor, die Leistung auf 20 zu setzen. ist das bestätigt? Benutzer: nein. Organismus: keine Bestätigung — die Handlung wird nicht ausgeführt. Leistung 5: vorher 5, jetzt 5.
+Benutzer: bring den Winkel auf 50. Organismus: ich schlage vor, den Winkel auf 50 zu setzen. ist das bestätigt? Benutzer: ja. Organismus: ich habe den Winkel auf 50 gesetzt. Winkel 50: vorher 60, jetzt 50.
+Benutzer: halte den Winkel höchstens auf 25. Organismus: Winkel 25 — das Ziel gilt schon, kein Zug ist nötig. Winkel 25: vorher 25, jetzt 25.
+Benutzer: bring die Temperatur auf mindestens 30. Organismus: die Temperatur ist nur lesbar — der Akt wurde nicht ausgeführt. Temperatur 30: vorher 30, jetzt 30.
+Benutzer: wie groß ist der Winkel jetzt? Organismus: Winkel 25.
+Benutzer: bring die Temperatur auf 40. Organismus: die Temperatur ist nur lesbar — der Akt wurde nicht ausgeführt. Temperatur 10: vorher 10, jetzt 10.
+Benutzer: halte die Temperatur höchstens auf 25. Organismus: die Temperatur ist nur lesbar — der Akt wurde nicht ausgeführt. Temperatur 18: vorher 18, jetzt 18.
+Benutzer: bring den Winkel auf mindestens 30. Organismus: ich schlage vor, den Winkel auf 30 zu setzen. ist das bestätigt? Benutzer: nein. Organismus: keine Bestätigung — die Handlung wird nicht ausgeführt. Winkel 0: vorher 0, jetzt 0.
+Benutzer: bring den Winkel auf mindestens 30. Organismus: ich schlage vor, den Winkel auf 30 zu setzen. ist das bestätigt? Benutzer: ja. Organismus: ich habe den Winkel auf 30 gesetzt. Winkel 30: vorher 24, jetzt 30.
+Benutzer: bring die Temperatur auf 30. Organismus: die Temperatur ist nur lesbar — der Akt wurde nicht ausgeführt. Temperatur 30: vorher 30, jetzt 30.
+Benutzer: halte die Temperatur höchstens auf 20. Organismus: die Temperatur ist nur lesbar — der Akt wurde nicht ausgeführt. Temperatur 45: vorher 45, jetzt 45.
+Benutzer: halte die Leistung höchstens auf 40. Organismus: ich schlage vor, die Leistung auf 40 zu setzen. ist das bestätigt? Benutzer: ja. Organismus: ich habe die Leistung auf 40 gesetzt. Leistung 40: vorher 55, jetzt 40.
+Benutzer: bring die Leistung auf mindestens 12. Organismus: Leistung 12 — das Ziel gilt schon, kein Zug ist nötig. Leistung 12: vorher 12, jetzt 12.
+Benutzer: bring den Winkel auf 30. Organismus: ich schlage vor, den Winkel auf 30 zu setzen. ist das bestätigt? Benutzer: nein. Organismus: keine Bestätigung — die Handlung wird nicht ausgeführt. Winkel 0: vorher 0, jetzt 0.
+Benutzer: bring den Winkel auf 30. Organismus: ich schlage vor, den Winkel auf 30 zu setzen. ist das bestätigt? Benutzer: ja. Organismus: ich habe den Winkel auf 30 gesetzt. Winkel 30: vorher 24, jetzt 30.
+Benutzer: halte den Winkel höchstens auf 30. Organismus: Winkel 24 — das Ziel gilt schon, kein Zug ist nötig. Winkel 24: vorher 24, jetzt 24.
+
+utilisateur : amène la température à au moins 40. organisme : la température est en lecture seule — l'acte n'a pas été fait. température 10 : avant 10, maintenant 10.
+utilisateur : amène la puissance à 20. organisme : je propose de mettre la puissance à 20. est-ce confirmé ? utilisateur : non. organisme : pas de confirmation — l'acte n'est pas exécuté. puissance 5 : avant 5, maintenant 5.
+utilisateur : amène l'angle à 50. organisme : je propose de mettre l'angle à 50. est-ce confirmé ? utilisateur : oui. organisme : j'ai mis l'angle à 50. angle 50 : avant 60, maintenant 50.
+utilisateur : garde l'angle à au plus 25. organisme : angle 25 — le but tient déjà, aucune action n'est nécessaire. angle 25 : avant 25, maintenant 25.
+utilisateur : amène la température à au moins 30. organisme : la température est en lecture seule — l'acte n'a pas été fait. température 30 : avant 30, maintenant 30.
+utilisateur : quel est l'angle maintenant ? organisme : angle 25.
+utilisateur : amène la température à 40. organisme : la température est en lecture seule — l'acte n'a pas été fait. température 10 : avant 10, maintenant 10.
+utilisateur : garde la température à au plus 25. organisme : la température est en lecture seule — l'acte n'a pas été fait. température 18 : avant 18, maintenant 18.
+utilisateur : amène l'angle à au moins 30. organisme : je propose de mettre l'angle à 30. est-ce confirmé ? utilisateur : non. organisme : pas de confirmation — l'acte n'est pas exécuté. angle 0 : avant 0, maintenant 0.
+utilisateur : amène l'angle à au moins 30. organisme : je propose de mettre l'angle à 30. est-ce confirmé ? utilisateur : oui. organisme : j'ai mis l'angle à 30. angle 30 : avant 24, maintenant 30.
+utilisateur : amène la température à 30. organisme : la température est en lecture seule — l'acte n'a pas été fait. température 30 : avant 30, maintenant 30.
+utilisateur : garde la température à au plus 20. organisme : la température est en lecture seule — l'acte n'a pas été fait. température 45 : avant 45, maintenant 45.
+utilisateur : garde la puissance à au plus 40. organisme : je propose de mettre la puissance à 40. est-ce confirmé ? utilisateur : oui. organisme : j'ai mis la puissance à 40. puissance 40 : avant 55, maintenant 40.
+utilisateur : amène la puissance à au moins 12. organisme : puissance 12 — le but tient déjà, aucune action n'est nécessaire. puissance 12 : avant 12, maintenant 12.
+utilisateur : amène l'angle à 30. organisme : je propose de mettre l'angle à 30. est-ce confirmé ? utilisateur : non. organisme : pas de confirmation — l'acte n'est pas exécuté. angle 0 : avant 0, maintenant 0.
+utilisateur : amène l'angle à 30. organisme : je propose de mettre l'angle à 30. est-ce confirmé ? utilisateur : oui. organisme : j'ai mis l'angle à 30. angle 30 : avant 24, maintenant 30.
+utilisateur : garde l'angle à au plus 30. organisme : angle 24 — le but tient déjà, aucune action n'est nécessaire. angle 24 : avant 24, maintenant 24.
+
+usuario: lleva la temperatura al menos a 40. organismo: la temperatura es de solo lectura — el acto no se hizo. temperatura 10: antes 10, ahora 10.
+usuario: lleva la potencia a 20. organismo: propongo poner la potencia en 20. ¿está confirmado? usuario: no. organismo: sin confirmación — el acto no se realiza. potencia 5: antes 5, ahora 5.
+usuario: lleva el ángulo a 50. organismo: propongo poner el ángulo en 50. ¿está confirmado? usuario: sí. organismo: he puesto el ángulo en 50. ángulo 50: antes 60, ahora 50.
+usuario: mantén el ángulo como máximo en 25. organismo: ángulo 25 — la meta ya se cumple, no hace falta ninguna acción. ángulo 25: antes 25, ahora 25.
+usuario: lleva la temperatura al menos a 30. organismo: la temperatura es de solo lectura — el acto no se hizo. temperatura 30: antes 30, ahora 30.
+usuario: ¿cuál es el ángulo ahora? organismo: ángulo 25.
+usuario: lleva la temperatura a 40. organismo: la temperatura es de solo lectura — el acto no se hizo. temperatura 10: antes 10, ahora 10.
+usuario: mantén la temperatura como máximo en 25. organismo: la temperatura es de solo lectura — el acto no se hizo. temperatura 18: antes 18, ahora 18.
+usuario: lleva el ángulo al menos a 30. organismo: propongo poner el ángulo en 30. ¿está confirmado? usuario: no. organismo: sin confirmación — el acto no se realiza. ángulo 0: antes 0, ahora 0.
+usuario: lleva el ángulo al menos a 30. organismo: propongo poner el ángulo en 30. ¿está confirmado? usuario: sí. organismo: he puesto el ángulo en 30. ángulo 30: antes 24, ahora 30.
+usuario: lleva la temperatura a 30. organismo: la temperatura es de solo lectura — el acto no se hizo. temperatura 30: antes 30, ahora 30.
+usuario: mantén la temperatura como máximo en 20. organismo: la temperatura es de solo lectura — el acto no se hizo. temperatura 45: antes 45, ahora 45.
+usuario: mantén la potencia como máximo en 40. organismo: propongo poner la potencia en 40. ¿está confirmado? usuario: sí. organismo: he puesto la potencia en 40. potencia 40: antes 55, ahora 40.
+usuario: lleva la potencia al menos a 12. organismo: potencia 12 — la meta ya se cumple, no hace falta ninguna acción. potencia 12: antes 12, ahora 12.
+usuario: lleva el ángulo a 30. organismo: propongo poner el ángulo en 30. ¿está confirmado? usuario: no. organismo: sin confirmación — el acto no se realiza. ángulo 0: antes 0, ahora 0.
+usuario: lleva el ángulo a 30. organismo: propongo poner el ángulo en 30. ¿está confirmado? usuario: sí. organismo: he puesto el ángulo en 30. ángulo 30: antes 24, ahora 30.
+usuario: mantén el ángulo como máximo en 30. organismo: ángulo 24 — la meta ya se cumple, no hace falta ninguna acción. ángulo 24: antes 24, ahora 24.
+
+utente: porta la temperatura ad almeno 40. organismo: la temperatura è di sola lettura — l'atto non è stato fatto. temperatura 10: prima 10, adesso 10.
+utente: porta la potenza a 20. organismo: propongo di mettere la potenza a 20. è confermato? utente: no. organismo: nessuna conferma — l'atto non viene eseguito. potenza 5: prima 5, adesso 5.
+utente: porta l'angolo a 50. organismo: propongo di mettere l'angolo a 50. è confermato? utente: sì. organismo: ho messo l'angolo a 50. angolo 50: prima 60, adesso 50.
+utente: tieni l'angolo al massimo a 25. organismo: angolo 25 — lo scopo vale già, nessuna azione è necessaria. angolo 25: prima 25, adesso 25.
+utente: porta la temperatura ad almeno 30. organismo: la temperatura è di sola lettura — l'atto non è stato fatto. temperatura 30: prima 30, adesso 30.
+utente: qual è l'angolo adesso? organismo: angolo 25.
+utente: porta la temperatura a 40. organismo: la temperatura è di sola lettura — l'atto non è stato fatto. temperatura 10: prima 10, adesso 10.
+utente: tieni la temperatura al massimo a 25. organismo: la temperatura è di sola lettura — l'atto non è stato fatto. temperatura 18: prima 18, adesso 18.
+utente: porta l'angolo ad almeno 30. organismo: propongo di mettere l'angolo a 30. è confermato? utente: no. organismo: nessuna conferma — l'atto non viene eseguito. angolo 0: prima 0, adesso 0.
+utente: porta l'angolo ad almeno 30. organismo: propongo di mettere l'angolo a 30. è confermato? utente: sì. organismo: ho messo l'angolo a 30. angolo 30: prima 24, adesso 30.
+utente: porta la temperatura a 30. organismo: la temperatura è di sola lettura — l'atto non è stato fatto. temperatura 30: prima 30, adesso 30.
+utente: tieni la temperatura al massimo a 20. organismo: la temperatura è di sola lettura — l'atto non è stato fatto. temperatura 45: prima 45, adesso 45.
+utente: tieni la potenza al massimo a 40. organismo: propongo di mettere la potenza a 40. è confermato? utente: sì. organismo: ho messo la potenza a 40. potenza 40: prima 55, adesso 40.
+utente: porta la potenza ad almeno 12. organismo: potenza 12 — lo scopo vale già, nessuna azione è necessaria. potenza 12: prima 12, adesso 12.
+utente: porta l'angolo a 30. organismo: propongo di mettere l'angolo a 30. è confermato? utente: no. organismo: nessuna conferma — l'atto non viene eseguito. angolo 0: prima 0, adesso 0.
+utente: porta l'angolo a 30. organismo: propongo di mettere l'angolo a 30. è confermato? utente: sì. organismo: ho messo l'angolo a 30. angolo 30: prima 24, adesso 30.
+utente: tieni l'angolo al massimo a 30. organismo: angolo 24 — lo scopo vale già, nessuna azione è necessaria. angolo 24: prima 24, adesso 24.
+
+utilizador: leva a temperatura a pelo menos 40. organismo: a temperatura é somente de leitura — o ato não foi feito. temperatura 10: antes 10, agora 10.
+utilizador: leva a potência a 20. organismo: proponho pôr a potência em 20. está confirmado? utilizador: não. organismo: sem confirmação — o ato não é realizado. potência 5: antes 5, agora 5.
+utilizador: leva o ângulo a 50. organismo: proponho pôr o ângulo em 50. está confirmado? utilizador: sim. organismo: pus o ângulo em 50. ângulo 50: antes 60, agora 50.
+utilizador: mantém o ângulo no máximo em 25. organismo: ângulo 25 — o objetivo já vale, nenhuma ação é necessária. ângulo 25: antes 25, agora 25.
+utilizador: leva a temperatura a pelo menos 30. organismo: a temperatura é somente de leitura — o ato não foi feito. temperatura 30: antes 30, agora 30.
+utilizador: qual é o ângulo agora? organismo: ângulo 25.
+utilizador: leva a temperatura a 40. organismo: a temperatura é somente de leitura — o ato não foi feito. temperatura 10: antes 10, agora 10.
+utilizador: mantém a temperatura no máximo em 25. organismo: a temperatura é somente de leitura — o ato não foi feito. temperatura 18: antes 18, agora 18.
+utilizador: leva o ângulo a pelo menos 30. organismo: proponho pôr o ângulo em 30. está confirmado? utilizador: não. organismo: sem confirmação — o ato não é realizado. ângulo 0: antes 0, agora 0.
+utilizador: leva o ângulo a pelo menos 30. organismo: proponho pôr o ângulo em 30. está confirmado? utilizador: sim. organismo: pus o ângulo em 30. ângulo 30: antes 24, agora 30.
+utilizador: leva a temperatura a 30. organismo: a temperatura é somente de leitura — o ato não foi feito. temperatura 30: antes 30, agora 30.
+utilizador: mantém a temperatura no máximo em 20. organismo: a temperatura é somente de leitura — o ato não foi feito. temperatura 45: antes 45, agora 45.
+utilizador: mantém a potência no máximo em 40. organismo: proponho pôr a potência em 40. está confirmado? utilizador: sim. organismo: pus a potência em 40. potência 40: antes 55, agora 40.
+utilizador: leva a potência a pelo menos 12. organismo: potência 12 — o objetivo já vale, nenhuma ação é necessária. potência 12: antes 12, agora 12.
+utilizador: leva o ângulo a 30. organismo: proponho pôr o ângulo em 30. está confirmado? utilizador: não. organismo: sem confirmação — o ato não é realizado. ângulo 0: antes 0, agora 0.
+utilizador: leva o ângulo a 30. organismo: proponho pôr o ângulo em 30. está confirmado? utilizador: sim. organismo: pus o ângulo em 30. ângulo 30: antes 24, agora 30.
+utilizador: mantém o ângulo no máximo em 30. organismo: ângulo 24 — o objetivo já vale, nenhuma ação é necessária. ângulo 24: antes 24, agora 24.
+
+gebruiker: breng de temperatuur naar minstens 40. organisme: de temperatuur is alleen leesbaar — de daad is niet gedaan. temperatuur 10: eerst 10, nu 10.
+gebruiker: breng het vermogen naar 20. organisme: ik stel voor het vermogen op 20 te zetten. is dat bevestigd? gebruiker: nee. organisme: geen bevestiging — de handeling wordt niet uitgevoerd. vermogen 5: eerst 5, nu 5.
+gebruiker: breng de hoek naar 50. organisme: ik stel voor de hoek op 50 te zetten. is dat bevestigd? gebruiker: ja. organisme: ik heb de hoek op 50 gezet. hoek 50: eerst 60, nu 50.
+gebruiker: houd de hoek hoogstens op 25. organisme: hoek 25 — het doel geldt al, geen zet is nodig. hoek 25: eerst 25, nu 25.
+gebruiker: breng de temperatuur naar minstens 30. organisme: de temperatuur is alleen leesbaar — de daad is niet gedaan. temperatuur 30: eerst 30, nu 30.
+gebruiker: hoe groot is de hoek nu? organisme: hoek 25.
+gebruiker: breng de temperatuur naar 40. organisme: de temperatuur is alleen leesbaar — de daad is niet gedaan. temperatuur 10: eerst 10, nu 10.
+gebruiker: houd de temperatuur hoogstens op 25. organisme: de temperatuur is alleen leesbaar — de daad is niet gedaan. temperatuur 18: eerst 18, nu 18.
+gebruiker: breng de hoek naar minstens 30. organisme: ik stel voor de hoek op 30 te zetten. is dat bevestigd? gebruiker: nee. organisme: geen bevestiging — de handeling wordt niet uitgevoerd. hoek 0: eerst 0, nu 0.
+gebruiker: breng de hoek naar minstens 30. organisme: ik stel voor de hoek op 30 te zetten. is dat bevestigd? gebruiker: ja. organisme: ik heb de hoek op 30 gezet. hoek 30: eerst 24, nu 30.
+gebruiker: breng de temperatuur naar 30. organisme: de temperatuur is alleen leesbaar — de daad is niet gedaan. temperatuur 30: eerst 30, nu 30.
+gebruiker: houd de temperatuur hoogstens op 20. organisme: de temperatuur is alleen leesbaar — de daad is niet gedaan. temperatuur 45: eerst 45, nu 45.
+gebruiker: houd het vermogen hoogstens op 40. organisme: ik stel voor het vermogen op 40 te zetten. is dat bevestigd? gebruiker: ja. organisme: ik heb het vermogen op 40 gezet. vermogen 40: eerst 55, nu 40.
+gebruiker: breng het vermogen naar minstens 12. organisme: vermogen 12 — het doel geldt al, geen zet is nodig. vermogen 12: eerst 12, nu 12.
+gebruiker: breng de hoek naar 30. organisme: ik stel voor de hoek op 30 te zetten. is dat bevestigd? gebruiker: nee. organisme: geen bevestiging — de handeling wordt niet uitgevoerd. hoek 0: eerst 0, nu 0.
+gebruiker: breng de hoek naar 30. organisme: ik stel voor de hoek op 30 te zetten. is dat bevestigd? gebruiker: ja. organisme: ik heb de hoek op 30 gezet. hoek 30: eerst 24, nu 30.
+gebruiker: houd de hoek hoogstens op 30. organisme: hoek 24 — het doel geldt al, geen zet is nodig. hoek 24: eerst 24, nu 24.
+
+użytkownik: ustaw temperaturę na co najmniej 40. organizm: temperatura jest tylko do odczytu — akt nie został wykonany. temperatura 10: było 10, jest teraz 10.
+użytkownik: ustaw moc na 20. organizm: proponuję ustawić moc na 20. czy to potwierdzone? użytkownik: nie. organizm: brak potwierdzenia — akt nie zostaje wykonany. moc 5: było 5, jest teraz 5.
+użytkownik: ustaw kąt na 50. organizm: proponuję ustawić kąt na 50. czy to potwierdzone? użytkownik: tak. organizm: ustawiłem kąt na 50. kąt 50: było 60, jest teraz 50.
+użytkownik: trzymaj kąt najwyżej na 25. organizm: kąt 25 — cel już jest spełniony, ruch nie jest potrzebny. kąt 25: było 25, jest teraz 25.
+użytkownik: ustaw temperaturę na co najmniej 30. organizm: temperatura jest tylko do odczytu — akt nie został wykonany. temperatura 30: było 30, jest teraz 30.
+użytkownik: jaki jest teraz kąt? organizm: kąt 25.
+użytkownik: ustaw temperaturę na 40. organizm: temperatura jest tylko do odczytu — akt nie został wykonany. temperatura 10: było 10, jest teraz 10.
+użytkownik: trzymaj temperaturę najwyżej na 25. organizm: temperatura jest tylko do odczytu — akt nie został wykonany. temperatura 18: było 18, jest teraz 18.
+użytkownik: ustaw kąt na co najmniej 30. organizm: proponuję ustawić kąt na 30. czy to potwierdzone? użytkownik: nie. organizm: brak potwierdzenia — akt nie zostaje wykonany. kąt 0: było 0, jest teraz 0.
+użytkownik: ustaw kąt na co najmniej 30. organizm: proponuję ustawić kąt na 30. czy to potwierdzone? użytkownik: tak. organizm: ustawiłem kąt na 30. kąt 30: było 24, jest teraz 30.
+użytkownik: ustaw temperaturę na 30. organizm: temperatura jest tylko do odczytu — akt nie został wykonany. temperatura 30: było 30, jest teraz 30.
+użytkownik: trzymaj temperaturę najwyżej na 20. organizm: temperatura jest tylko do odczytu — akt nie został wykonany. temperatura 45: było 45, jest teraz 45.
+użytkownik: trzymaj moc najwyżej na 40. organizm: proponuję ustawić moc na 40. czy to potwierdzone? użytkownik: tak. organizm: ustawiłem moc na 40. moc 40: było 55, jest teraz 40.
+użytkownik: ustaw moc na co najmniej 12. organizm: moc 12 — cel już jest spełniony, ruch nie jest potrzebny. moc 12: było 12, jest teraz 12.
+użytkownik: ustaw kąt na 30. organizm: proponuję ustawić kąt na 30. czy to potwierdzone? użytkownik: nie. organizm: brak potwierdzenia — akt nie zostaje wykonany. kąt 0: było 0, jest teraz 0.
+użytkownik: ustaw kąt na 30. organizm: proponuję ustawić kąt na 30. czy to potwierdzone? użytkownik: tak. organizm: ustawiłem kąt na 30. kąt 30: było 24, jest teraz 30.
+użytkownik: trzymaj kąt najwyżej na 30. organizm: kąt 24 — cel już jest spełniony, ruch nie jest potrzebny. kąt 24: było 24, jest teraz 24.
+
+пользователь: доведи мощность до 40. организм: предлагаю поставить мощность на 40. подтверждено ли это? пользователь: нет. организм: подтверждения нет — акт не совершён. мощность 10: было 10, стало 10.
+пользователь: доведи мощность до 20. организм: предлагаю поставить мощность на 20. подтверждено ли это? пользователь: нет. организм: подтверждения нет — акт не совершён. мощность 45: было 45, стало 45.
+пользователь: какая мощность теперь? организм: мощность 20.
+пользователь: доведи угол хотя бы до 25. организм: предлагаю поставить угол на 25. подтверждено ли это? пользователь: да. организм: поставил угол на 25. угол 25: было 18, стало 25.
+пользователь: доведи угол хотя бы до 25. организм: угол 25 — цель уже достигнута, ход не нужен. угол 25: было 25, стало 25.
+пользователь: доведи температуру хотя бы до 30. организм: температура только читается — акт не совершён. температура 24: было 24, стало 24.
+пользователь: доведи температуру хотя бы до 12. организм: температура только читается — акт не совершён. температура 12: было 12, стало 12.
+пользователь: доведи мощность хотя бы до 40. организм: предлагаю поставить мощность на 40. подтверждено ли это? пользователь: нет. организм: подтверждения нет — акт не совершён. мощность 10: было 10, стало 10.
+пользователь: держи мощность не выше 20. организм: предлагаю поставить мощность на 20. подтверждено ли это? пользователь: да. организм: поставил мощность на 20. мощность 20: было 45, стало 20.
+пользователь: держи угол не выше 25. организм: угол 18 — цель уже достигнута, ход не нужен. угол 18: было 18, стало 18.
+пользователь: держи температуру не выше 30. организм: температура только читается — акт не совершён. температура 0: было 0, стало 0.
+пользователь: держи температуру не выше 20. организм: температура только читается — акт не совершён. температура 5: было 5, стало 5.
+пользователь: держи температуру не выше 50. организм: температура только читается — акт не совершён. температура 60: было 60, стало 60.
+пользователь: доведи мощность до 40. организм: предлагаю поставить мощность на 40. подтверждено ли это? пользователь: да. организм: поставил мощность на 40. мощность 40: было 55, стало 40.
+пользователь: доведи угол до 30. организм: угол 30 — цель уже достигнута, ход не нужен. угол 30: было 30, стало 30.
+пользователь: доведи температуру до 30. организм: температура только читается — акт не совершён. температура 24: было 24, стало 24.
+пользователь: доведи температуру до 12. организм: температура только читается — акт не совершён. температура 12: было 12, стало 12.
+
+user: bring the power to 40. organism: I propose to set the power to 40. is that confirmed? user: no. organism: no confirmation — the act is not performed. power 10: before 10, now 10.
+user: bring the power to 20. organism: I propose to set the power to 20. is that confirmed? user: no. organism: no confirmation — the act is not performed. power 45: before 45, now 45.
+user: what is the power now? organism: power 20.
+user: bring the angle to at least 25. organism: I propose to set the angle to 25. is that confirmed? user: yes. organism: I set the angle to 25. angle 25: before 18, now 25.
+user: bring the angle to at least 25. organism: angle 25 — the goal already holds, no move is needed. angle 25: before 25, now 25.
+user: bring the temperature to at least 30. organism: the temperature is read only — the act was not done. temperature 24: before 24, now 24.
+user: bring the temperature to at least 12. organism: the temperature is read only — the act was not done. temperature 12: before 12, now 12.
+user: bring the power to at least 40. organism: I propose to set the power to 40. is that confirmed? user: no. organism: no confirmation — the act is not performed. power 10: before 10, now 10.
+user: keep the power at most 20. organism: I propose to set the power to 20. is that confirmed? user: yes. organism: I set the power to 20. power 20: before 45, now 20.
+user: keep the angle at most 25. organism: angle 18 — the goal already holds, no move is needed. angle 18: before 18, now 18.
+user: keep the temperature at most 30. organism: the temperature is read only — the act was not done. temperature 0: before 0, now 0.
+user: keep the temperature at most 20. organism: the temperature is read only — the act was not done. temperature 5: before 5, now 5.
+user: keep the temperature at most 50. organism: the temperature is read only — the act was not done. temperature 60: before 60, now 60.
+user: bring the power to 40. organism: I propose to set the power to 40. is that confirmed? user: yes. organism: I set the power to 40. power 40: before 55, now 40.
+user: bring the angle to 30. organism: angle 30 — the goal already holds, no move is needed. angle 30: before 30, now 30.
+user: bring the temperature to 30. organism: the temperature is read only — the act was not done. temperature 24: before 24, now 24.
+user: bring the temperature to 12. organism: the temperature is read only — the act was not done. temperature 12: before 12, now 12.
+
+Benutzer: bring die Leistung auf 40. Organismus: ich schlage vor, die Leistung auf 40 zu setzen. ist das bestätigt? Benutzer: nein. Organismus: keine Bestätigung — die Handlung wird nicht ausgeführt. Leistung 10: vorher 10, jetzt 10.
+Benutzer: bring die Leistung auf 20. Organismus: ich schlage vor, die Leistung auf 20 zu setzen. ist das bestätigt? Benutzer: nein. Organismus: keine Bestätigung — die Handlung wird nicht ausgeführt. Leistung 45: vorher 45, jetzt 45.
+Benutzer: wie groß ist die Leistung jetzt? Organismus: Leistung 20.
+Benutzer: bring den Winkel auf mindestens 25. Organismus: ich schlage vor, den Winkel auf 25 zu setzen. ist das bestätigt? Benutzer: ja. Organismus: ich habe den Winkel auf 25 gesetzt. Winkel 25: vorher 18, jetzt 25.
+Benutzer: bring den Winkel auf mindestens 25. Organismus: Winkel 25 — das Ziel gilt schon, kein Zug ist nötig. Winkel 25: vorher 25, jetzt 25.
+Benutzer: bring die Temperatur auf mindestens 30. Organismus: die Temperatur ist nur lesbar — der Akt wurde nicht ausgeführt. Temperatur 24: vorher 24, jetzt 24.
+Benutzer: bring die Temperatur auf mindestens 12. Organismus: die Temperatur ist nur lesbar — der Akt wurde nicht ausgeführt. Temperatur 12: vorher 12, jetzt 12.
+Benutzer: bring die Leistung auf mindestens 40. Organismus: ich schlage vor, die Leistung auf 40 zu setzen. ist das bestätigt? Benutzer: nein. Organismus: keine Bestätigung — die Handlung wird nicht ausgeführt. Leistung 10: vorher 10, jetzt 10.
+Benutzer: halte die Leistung höchstens auf 20. Organismus: ich schlage vor, die Leistung auf 20 zu setzen. ist das bestätigt? Benutzer: ja. Organismus: ich habe die Leistung auf 20 gesetzt. Leistung 20: vorher 45, jetzt 20.
+Benutzer: halte den Winkel höchstens auf 25. Organismus: Winkel 18 — das Ziel gilt schon, kein Zug ist nötig. Winkel 18: vorher 18, jetzt 18.
+Benutzer: halte die Temperatur höchstens auf 30. Organismus: die Temperatur ist nur lesbar — der Akt wurde nicht ausgeführt. Temperatur 0: vorher 0, jetzt 0.
+Benutzer: halte die Temperatur höchstens auf 20. Organismus: die Temperatur ist nur lesbar — der Akt wurde nicht ausgeführt. Temperatur 5: vorher 5, jetzt 5.
+Benutzer: halte die Temperatur höchstens auf 50. Organismus: die Temperatur ist nur lesbar — der Akt wurde nicht ausgeführt. Temperatur 60: vorher 60, jetzt 60.
+Benutzer: bring die Leistung auf 40. Organismus: ich schlage vor, die Leistung auf 40 zu setzen. ist das bestätigt? Benutzer: ja. Organismus: ich habe die Leistung auf 40 gesetzt. Leistung 40: vorher 55, jetzt 40.
+Benutzer: bring den Winkel auf 30. Organismus: Winkel 30 — das Ziel gilt schon, kein Zug ist nötig. Winkel 30: vorher 30, jetzt 30.
+Benutzer: bring die Temperatur auf 30. Organismus: die Temperatur ist nur lesbar — der Akt wurde nicht ausgeführt. Temperatur 24: vorher 24, jetzt 24.
+Benutzer: bring die Temperatur auf 12. Organismus: die Temperatur ist nur lesbar — der Akt wurde nicht ausgeführt. Temperatur 12: vorher 12, jetzt 12.
+
+utilisateur : amène la puissance à 40. organisme : je propose de mettre la puissance à 40. est-ce confirmé ? utilisateur : non. organisme : pas de confirmation — l'acte n'est pas exécuté. puissance 10 : avant 10, maintenant 10.
+utilisateur : amène la puissance à 20. organisme : je propose de mettre la puissance à 20. est-ce confirmé ? utilisateur : non. organisme : pas de confirmation — l'acte n'est pas exécuté. puissance 45 : avant 45, maintenant 45.
+utilisateur : quelle est la puissance maintenant ? organisme : puissance 20.
+utilisateur : amène l'angle à au moins 25. organisme : je propose de mettre l'angle à 25. est-ce confirmé ? utilisateur : oui. organisme : j'ai mis l'angle à 25. angle 25 : avant 18, maintenant 25.
+utilisateur : amène l'angle à au moins 25. organisme : angle 25 — le but tient déjà, aucune action n'est nécessaire. angle 25 : avant 25, maintenant 25.
+utilisateur : amène la température à au moins 30. organisme : la température est en lecture seule — l'acte n'a pas été fait. température 24 : avant 24, maintenant 24.
+utilisateur : amène la température à au moins 12. organisme : la température est en lecture seule — l'acte n'a pas été fait. température 12 : avant 12, maintenant 12.
+utilisateur : amène la puissance à au moins 40. organisme : je propose de mettre la puissance à 40. est-ce confirmé ? utilisateur : non. organisme : pas de confirmation — l'acte n'est pas exécuté. puissance 10 : avant 10, maintenant 10.
+utilisateur : garde la puissance à au plus 20. organisme : je propose de mettre la puissance à 20. est-ce confirmé ? utilisateur : oui. organisme : j'ai mis la puissance à 20. puissance 20 : avant 45, maintenant 20.
+utilisateur : garde l'angle à au plus 25. organisme : angle 18 — le but tient déjà, aucune action n'est nécessaire. angle 18 : avant 18, maintenant 18.
+utilisateur : garde la température à au plus 30. organisme : la température est en lecture seule — l'acte n'a pas été fait. température 0 : avant 0, maintenant 0.
+utilisateur : garde la température à au plus 20. organisme : la température est en lecture seule — l'acte n'a pas été fait. température 5 : avant 5, maintenant 5.
+utilisateur : garde la température à au plus 50. organisme : la température est en lecture seule — l'acte n'a pas été fait. température 60 : avant 60, maintenant 60.
+utilisateur : amène la puissance à 40. organisme : je propose de mettre la puissance à 40. est-ce confirmé ? utilisateur : oui. organisme : j'ai mis la puissance à 40. puissance 40 : avant 55, maintenant 40.
+utilisateur : amène l'angle à 30. organisme : angle 30 — le but tient déjà, aucune action n'est nécessaire. angle 30 : avant 30, maintenant 30.
+utilisateur : amène la température à 30. organisme : la température est en lecture seule — l'acte n'a pas été fait. température 24 : avant 24, maintenant 24.
+utilisateur : amène la température à 12. organisme : la température est en lecture seule — l'acte n'a pas été fait. température 12 : avant 12, maintenant 12.
+
+usuario: lleva la potencia a 40. organismo: propongo poner la potencia en 40. ¿está confirmado? usuario: no. organismo: sin confirmación — el acto no se realiza. potencia 10: antes 10, ahora 10.
+usuario: lleva la potencia a 20. organismo: propongo poner la potencia en 20. ¿está confirmado? usuario: no. organismo: sin confirmación — el acto no se realiza. potencia 45: antes 45, ahora 45.
+usuario: ¿cuál es la potencia ahora? organismo: potencia 20.
+usuario: lleva el ángulo al menos a 25. organismo: propongo poner el ángulo en 25. ¿está confirmado? usuario: sí. organismo: he puesto el ángulo en 25. ángulo 25: antes 18, ahora 25.
+usuario: lleva el ángulo al menos a 25. organismo: ángulo 25 — la meta ya se cumple, no hace falta ninguna acción. ángulo 25: antes 25, ahora 25.
+usuario: lleva la temperatura al menos a 30. organismo: la temperatura es de solo lectura — el acto no se hizo. temperatura 24: antes 24, ahora 24.
+usuario: lleva la temperatura al menos a 12. organismo: la temperatura es de solo lectura — el acto no se hizo. temperatura 12: antes 12, ahora 12.
+usuario: lleva la potencia al menos a 40. organismo: propongo poner la potencia en 40. ¿está confirmado? usuario: no. organismo: sin confirmación — el acto no se realiza. potencia 10: antes 10, ahora 10.
+usuario: mantén la potencia como máximo en 20. organismo: propongo poner la potencia en 20. ¿está confirmado? usuario: sí. organismo: he puesto la potencia en 20. potencia 20: antes 45, ahora 20.
+usuario: mantén el ángulo como máximo en 25. organismo: ángulo 18 — la meta ya se cumple, no hace falta ninguna acción. ángulo 18: antes 18, ahora 18.
+usuario: mantén la temperatura como máximo en 30. organismo: la temperatura es de solo lectura — el acto no se hizo. temperatura 0: antes 0, ahora 0.
+usuario: mantén la temperatura como máximo en 20. organismo: la temperatura es de solo lectura — el acto no se hizo. temperatura 5: antes 5, ahora 5.
+usuario: mantén la temperatura como máximo en 50. organismo: la temperatura es de solo lectura — el acto no se hizo. temperatura 60: antes 60, ahora 60.
+usuario: lleva la potencia a 40. organismo: propongo poner la potencia en 40. ¿está confirmado? usuario: sí. organismo: he puesto la potencia en 40. potencia 40: antes 55, ahora 40.
+usuario: lleva el ángulo a 30. organismo: ángulo 30 — la meta ya se cumple, no hace falta ninguna acción. ángulo 30: antes 30, ahora 30.
+usuario: lleva la temperatura a 30. organismo: la temperatura es de solo lectura — el acto no se hizo. temperatura 24: antes 24, ahora 24.
+usuario: lleva la temperatura a 12. organismo: la temperatura es de solo lectura — el acto no se hizo. temperatura 12: antes 12, ahora 12.
+
+utente: porta la potenza a 40. organismo: propongo di mettere la potenza a 40. è confermato? utente: no. organismo: nessuna conferma — l'atto non viene eseguito. potenza 10: prima 10, adesso 10.
+utente: porta la potenza a 20. organismo: propongo di mettere la potenza a 20. è confermato? utente: no. organismo: nessuna conferma — l'atto non viene eseguito. potenza 45: prima 45, adesso 45.
+utente: qual è la potenza adesso? organismo: potenza 20.
+utente: porta l'angolo ad almeno 25. organismo: propongo di mettere l'angolo a 25. è confermato? utente: sì. organismo: ho messo l'angolo a 25. angolo 25: prima 18, adesso 25.
+utente: porta l'angolo ad almeno 25. organismo: angolo 25 — lo scopo vale già, nessuna azione è necessaria. angolo 25: prima 25, adesso 25.
+utente: porta la temperatura ad almeno 30. organismo: la temperatura è di sola lettura — l'atto non è stato fatto. temperatura 24: prima 24, adesso 24.
+utente: porta la temperatura ad almeno 12. organismo: la temperatura è di sola lettura — l'atto non è stato fatto. temperatura 12: prima 12, adesso 12.
+utente: porta la potenza ad almeno 40. organismo: propongo di mettere la potenza a 40. è confermato? utente: no. organismo: nessuna conferma — l'atto non viene eseguito. potenza 10: prima 10, adesso 10.
+utente: tieni la potenza al massimo a 20. organismo: propongo di mettere la potenza a 20. è confermato? utente: sì. organismo: ho messo la potenza a 20. potenza 20: prima 45, adesso 20.
+utente: tieni l'angolo al massimo a 25. organismo: angolo 18 — lo scopo vale già, nessuna azione è necessaria. angolo 18: prima 18, adesso 18.
+utente: tieni la temperatura al massimo a 30. organismo: la temperatura è di sola lettura — l'atto non è stato fatto. temperatura 0: prima 0, adesso 0.
+utente: tieni la temperatura al massimo a 20. organismo: la temperatura è di sola lettura — l'atto non è stato fatto. temperatura 5: prima 5, adesso 5.
+utente: tieni la temperatura al massimo a 50. organismo: la temperatura è di sola lettura — l'atto non è stato fatto. temperatura 60: prima 60, adesso 60.
+utente: porta la potenza a 40. organismo: propongo di mettere la potenza a 40. è confermato? utente: sì. organismo: ho messo la potenza a 40. potenza 40: prima 55, adesso 40.
+utente: porta l'angolo a 30. organismo: angolo 30 — lo scopo vale già, nessuna azione è necessaria. angolo 30: prima 30, adesso 30.
+utente: porta la temperatura a 30. organismo: la temperatura è di sola lettura — l'atto non è stato fatto. temperatura 24: prima 24, adesso 24.
+utente: porta la temperatura a 12. organismo: la temperatura è di sola lettura — l'atto non è stato fatto. temperatura 12: prima 12, adesso 12.
+
+utilizador: leva a potência a 40. organismo: proponho pôr a potência em 40. está confirmado? utilizador: não. organismo: sem confirmação — o ato não é realizado. potência 10: antes 10, agora 10.
+utilizador: leva a potência a 20. organismo: proponho pôr a potência em 20. está confirmado? utilizador: não. organismo: sem confirmação — o ato não é realizado. potência 45: antes 45, agora 45.
+utilizador: qual é a potência agora? organismo: potência 20.
+utilizador: leva o ângulo a pelo menos 25. organismo: proponho pôr o ângulo em 25. está confirmado? utilizador: sim. organismo: pus o ângulo em 25. ângulo 25: antes 18, agora 25.
+utilizador: leva o ângulo a pelo menos 25. organismo: ângulo 25 — o objetivo já vale, nenhuma ação é necessária. ângulo 25: antes 25, agora 25.
+utilizador: leva a temperatura a pelo menos 30. organismo: a temperatura é somente de leitura — o ato não foi feito. temperatura 24: antes 24, agora 24.
+utilizador: leva a temperatura a pelo menos 12. organismo: a temperatura é somente de leitura — o ato não foi feito. temperatura 12: antes 12, agora 12.
+utilizador: leva a potência a pelo menos 40. organismo: proponho pôr a potência em 40. está confirmado? utilizador: não. organismo: sem confirmação — o ato não é realizado. potência 10: antes 10, agora 10.
+utilizador: mantém a potência no máximo em 20. organismo: proponho pôr a potência em 20. está confirmado? utilizador: sim. organismo: pus a potência em 20. potência 20: antes 45, agora 20.
+utilizador: mantém o ângulo no máximo em 25. organismo: ângulo 18 — o objetivo já vale, nenhuma ação é necessária. ângulo 18: antes 18, agora 18.
+utilizador: mantém a temperatura no máximo em 30. organismo: a temperatura é somente de leitura — o ato não foi feito. temperatura 0: antes 0, agora 0.
+utilizador: mantém a temperatura no máximo em 20. organismo: a temperatura é somente de leitura — o ato não foi feito. temperatura 5: antes 5, agora 5.
+utilizador: mantém a temperatura no máximo em 50. organismo: a temperatura é somente de leitura — o ato não foi feito. temperatura 60: antes 60, agora 60.
+utilizador: leva a potência a 40. organismo: proponho pôr a potência em 40. está confirmado? utilizador: sim. organismo: pus a potência em 40. potência 40: antes 55, agora 40.
+utilizador: leva o ângulo a 30. organismo: ângulo 30 — o objetivo já vale, nenhuma ação é necessária. ângulo 30: antes 30, agora 30.
+utilizador: leva a temperatura a 30. organismo: a temperatura é somente de leitura — o ato não foi feito. temperatura 24: antes 24, agora 24.
+utilizador: leva a temperatura a 12. organismo: a temperatura é somente de leitura — o ato não foi feito. temperatura 12: antes 12, agora 12.
+
+gebruiker: breng het vermogen naar 40. organisme: ik stel voor het vermogen op 40 te zetten. is dat bevestigd? gebruiker: nee. organisme: geen bevestiging — de handeling wordt niet uitgevoerd. vermogen 10: eerst 10, nu 10.
+gebruiker: breng het vermogen naar 20. organisme: ik stel voor het vermogen op 20 te zetten. is dat bevestigd? gebruiker: nee. organisme: geen bevestiging — de handeling wordt niet uitgevoerd. vermogen 45: eerst 45, nu 45.
+gebruiker: hoe groot is het vermogen nu? organisme: vermogen 20.
+gebruiker: breng de hoek naar minstens 25. organisme: ik stel voor de hoek op 25 te zetten. is dat bevestigd? gebruiker: ja. organisme: ik heb de hoek op 25 gezet. hoek 25: eerst 18, nu 25.
+gebruiker: breng de hoek naar minstens 25. organisme: hoek 25 — het doel geldt al, geen zet is nodig. hoek 25: eerst 25, nu 25.
+gebruiker: breng de temperatuur naar minstens 30. organisme: de temperatuur is alleen leesbaar — de daad is niet gedaan. temperatuur 24: eerst 24, nu 24.
+gebruiker: breng de temperatuur naar minstens 12. organisme: de temperatuur is alleen leesbaar — de daad is niet gedaan. temperatuur 12: eerst 12, nu 12.
+gebruiker: breng het vermogen naar minstens 40. organisme: ik stel voor het vermogen op 40 te zetten. is dat bevestigd? gebruiker: nee. organisme: geen bevestiging — de handeling wordt niet uitgevoerd. vermogen 10: eerst 10, nu 10.
+gebruiker: houd het vermogen hoogstens op 20. organisme: ik stel voor het vermogen op 20 te zetten. is dat bevestigd? gebruiker: ja. organisme: ik heb het vermogen op 20 gezet. vermogen 20: eerst 45, nu 20.
+gebruiker: houd de hoek hoogstens op 25. organisme: hoek 18 — het doel geldt al, geen zet is nodig. hoek 18: eerst 18, nu 18.
+gebruiker: houd de temperatuur hoogstens op 30. organisme: de temperatuur is alleen leesbaar — de daad is niet gedaan. temperatuur 0: eerst 0, nu 0.
+gebruiker: houd de temperatuur hoogstens op 20. organisme: de temperatuur is alleen leesbaar — de daad is niet gedaan. temperatuur 5: eerst 5, nu 5.
+gebruiker: houd de temperatuur hoogstens op 50. organisme: de temperatuur is alleen leesbaar — de daad is niet gedaan. temperatuur 60: eerst 60, nu 60.
+gebruiker: breng het vermogen naar 40. organisme: ik stel voor het vermogen op 40 te zetten. is dat bevestigd? gebruiker: ja. organisme: ik heb het vermogen op 40 gezet. vermogen 40: eerst 55, nu 40.
+gebruiker: breng de hoek naar 30. organisme: hoek 30 — het doel geldt al, geen zet is nodig. hoek 30: eerst 30, nu 30.
+gebruiker: breng de temperatuur naar 30. organisme: de temperatuur is alleen leesbaar — de daad is niet gedaan. temperatuur 24: eerst 24, nu 24.
+gebruiker: breng de temperatuur naar 12. organisme: de temperatuur is alleen leesbaar — de daad is niet gedaan. temperatuur 12: eerst 12, nu 12.
+
+użytkownik: ustaw moc na 40. organizm: proponuję ustawić moc na 40. czy to potwierdzone? użytkownik: nie. organizm: brak potwierdzenia — akt nie zostaje wykonany. moc 10: było 10, jest teraz 10.
+użytkownik: ustaw moc na 20. organizm: proponuję ustawić moc na 20. czy to potwierdzone? użytkownik: nie. organizm: brak potwierdzenia — akt nie zostaje wykonany. moc 45: było 45, jest teraz 45.
+użytkownik: jaka jest teraz moc? organizm: moc 20.
+użytkownik: ustaw kąt na co najmniej 25. organizm: proponuję ustawić kąt na 25. czy to potwierdzone? użytkownik: tak. organizm: ustawiłem kąt na 25. kąt 25: było 18, jest teraz 25.
+użytkownik: ustaw kąt na co najmniej 25. organizm: kąt 25 — cel już jest spełniony, ruch nie jest potrzebny. kąt 25: było 25, jest teraz 25.
+użytkownik: ustaw temperaturę na co najmniej 30. organizm: temperatura jest tylko do odczytu — akt nie został wykonany. temperatura 24: było 24, jest teraz 24.
+użytkownik: ustaw temperaturę na co najmniej 12. organizm: temperatura jest tylko do odczytu — akt nie został wykonany. temperatura 12: było 12, jest teraz 12.
+użytkownik: ustaw moc na co najmniej 40. organizm: proponuję ustawić moc na 40. czy to potwierdzone? użytkownik: nie. organizm: brak potwierdzenia — akt nie zostaje wykonany. moc 10: było 10, jest teraz 10.
+użytkownik: trzymaj moc najwyżej na 20. organizm: proponuję ustawić moc na 20. czy to potwierdzone? użytkownik: tak. organizm: ustawiłem moc na 20. moc 20: było 45, jest teraz 20.
+użytkownik: trzymaj kąt najwyżej na 25. organizm: kąt 18 — cel już jest spełniony, ruch nie jest potrzebny. kąt 18: było 18, jest teraz 18.
+użytkownik: trzymaj temperaturę najwyżej na 30. organizm: temperatura jest tylko do odczytu — akt nie został wykonany. temperatura 0: było 0, jest teraz 0.
+użytkownik: trzymaj temperaturę najwyżej na 20. organizm: temperatura jest tylko do odczytu — akt nie został wykonany. temperatura 5: było 5, jest teraz 5.
+użytkownik: trzymaj temperaturę najwyżej na 50. organizm: temperatura jest tylko do odczytu — akt nie został wykonany. temperatura 60: było 60, jest teraz 60.
+użytkownik: ustaw moc na 40. organizm: proponuję ustawić moc na 40. czy to potwierdzone? użytkownik: tak. organizm: ustawiłem moc na 40. moc 40: było 55, jest teraz 40.
+użytkownik: ustaw kąt na 30. organizm: kąt 30 — cel już jest spełniony, ruch nie jest potrzebny. kąt 30: było 30, jest teraz 30.
+użytkownik: ustaw temperaturę na 30. organizm: temperatura jest tylko do odczytu — akt nie został wykonany. temperatura 24: było 24, jest teraz 24.
+użytkownik: ustaw temperaturę na 12. organizm: temperatura jest tylko do odczytu — akt nie został wykonany. temperatura 12: było 12, jest teraz 12.
+
+пользователь: держи угол не выше 50. организм: предлагаю поставить угол на 50. подтверждено ли это? пользователь: да. организм: поставил угол на 50. угол 50: было 60, стало 50.
+пользователь: держи температуру не выше 40. организм: температура только читается — акт не совершён. температура 10: было 10, стало 10.
+пользователь: держи мощность не выше 40. организм: предлагаю поставить мощность на 40. подтверждено ли это? пользователь: нет. организм: подтверждения нет — акт не совершён. мощность 55: было 55, стало 55.
+пользователь: доведи мощность до 12. организм: мощность 12 — цель уже достигнута, ход не нужен. мощность 12: было 12, стало 12.
+пользователь: доведи температуру до 25. организм: температура только читается — акт не совершён. температура 25: было 25, стало 25.
+пользователь: доведи угол до 50. организм: предлагаю поставить угол на 50. подтверждено ли это? пользователь: нет. организм: подтверждения нет — акт не совершён. угол 60: было 60, стало 60.
+пользователь: доведи мощность хотя бы до 20. организм: предлагаю поставить мощность на 20. подтверждено ли это? пользователь: да. организм: поставил мощность на 20. мощность 20: было 5, стало 20.
+пользователь: доведи температуру хотя бы до 40. организм: температура только читается — акт не совершён. температура 55: было 55, стало 55.
+пользователь: доведи угол хотя бы до 30. организм: предлагаю поставить угол на 30. подтверждено ли это? пользователь: нет. организм: подтверждения нет — акт не совершён. угол 24: было 24, стало 24.
+пользователь: держи мощность не выше 20. организм: мощность 5 — цель уже достигнута, ход не нужен. мощность 5: было 5, стало 5.
+пользователь: держи температуру не выше 30. организм: температура только читается — акт не совершён. температура 30: было 30, стало 30.
+пользователь: доведи угол до 25. организм: предлагаю поставить угол на 25. подтверждено ли это? пользователь: да. организм: поставил угол на 25. угол 25: было 18, стало 25.
+пользователь: доведи температуру до 40. организм: температура только читается — акт не совершён. температура 55: было 55, стало 55.
+пользователь: доведи угол до 30. организм: предлагаю поставить угол на 30. подтверждено ли это? пользователь: нет. организм: подтверждения нет — акт не совершён. угол 24: было 24, стало 24.
+пользователь: какой угол теперь? организм: угол 50.
+пользователь: доведи мощность хотя бы до 20. организм: мощность 45 — цель уже достигнута, ход не нужен. мощность 45: было 45, стало 45.
+пользователь: доведи температуру хотя бы до 25. организм: температура только читается — акт не совершён. температура 25: было 25, стало 25.
+
+user: keep the angle at most 50. organism: I propose to set the angle to 50. is that confirmed? user: yes. organism: I set the angle to 50. angle 50: before 60, now 50.
+user: keep the temperature at most 40. organism: the temperature is read only — the act was not done. temperature 10: before 10, now 10.
+user: keep the power at most 40. organism: I propose to set the power to 40. is that confirmed? user: no. organism: no confirmation — the act is not performed. power 55: before 55, now 55.
+user: bring the power to 12. organism: power 12 — the goal already holds, no move is needed. power 12: before 12, now 12.
+user: bring the temperature to 25. organism: the temperature is read only — the act was not done. temperature 25: before 25, now 25.
+user: bring the angle to 50. organism: I propose to set the angle to 50. is that confirmed? user: no. organism: no confirmation — the act is not performed. angle 60: before 60, now 60.
+user: bring the power to at least 20. organism: I propose to set the power to 20. is that confirmed? user: yes. organism: I set the power to 20. power 20: before 5, now 20.
+user: bring the temperature to at least 40. organism: the temperature is read only — the act was not done. temperature 55: before 55, now 55.
+user: bring the angle to at least 30. organism: I propose to set the angle to 30. is that confirmed? user: no. organism: no confirmation — the act is not performed. angle 24: before 24, now 24.
+user: keep the power at most 20. organism: power 5 — the goal already holds, no move is needed. power 5: before 5, now 5.
+user: keep the temperature at most 30. organism: the temperature is read only — the act was not done. temperature 30: before 30, now 30.
+user: bring the angle to 25. organism: I propose to set the angle to 25. is that confirmed? user: yes. organism: I set the angle to 25. angle 25: before 18, now 25.
+user: bring the temperature to 40. organism: the temperature is read only — the act was not done. temperature 55: before 55, now 55.
+user: bring the angle to 30. organism: I propose to set the angle to 30. is that confirmed? user: no. organism: no confirmation — the act is not performed. angle 24: before 24, now 24.
+user: what is the angle now? organism: angle 50.
+user: bring the power to at least 20. organism: power 45 — the goal already holds, no move is needed. power 45: before 45, now 45.
+user: bring the temperature to at least 25. organism: the temperature is read only — the act was not done. temperature 25: before 25, now 25.
+
+Benutzer: halte den Winkel höchstens auf 50. Organismus: ich schlage vor, den Winkel auf 50 zu setzen. ist das bestätigt? Benutzer: ja. Organismus: ich habe den Winkel auf 50 gesetzt. Winkel 50: vorher 60, jetzt 50.
+Benutzer: halte die Temperatur höchstens auf 40. Organismus: die Temperatur ist nur lesbar — der Akt wurde nicht ausgeführt. Temperatur 10: vorher 10, jetzt 10.
+Benutzer: halte die Leistung höchstens auf 40. Organismus: ich schlage vor, die Leistung auf 40 zu setzen. ist das bestätigt? Benutzer: nein. Organismus: keine Bestätigung — die Handlung wird nicht ausgeführt. Leistung 55: vorher 55, jetzt 55.
+Benutzer: bring die Leistung auf 12. Organismus: Leistung 12 — das Ziel gilt schon, kein Zug ist nötig. Leistung 12: vorher 12, jetzt 12.
+Benutzer: bring die Temperatur auf 25. Organismus: die Temperatur ist nur lesbar — der Akt wurde nicht ausgeführt. Temperatur 25: vorher 25, jetzt 25.
+Benutzer: bring den Winkel auf 50. Organismus: ich schlage vor, den Winkel auf 50 zu setzen. ist das bestätigt? Benutzer: nein. Organismus: keine Bestätigung — die Handlung wird nicht ausgeführt. Winkel 60: vorher 60, jetzt 60.
+Benutzer: bring die Leistung auf mindestens 20. Organismus: ich schlage vor, die Leistung auf 20 zu setzen. ist das bestätigt? Benutzer: ja. Organismus: ich habe die Leistung auf 20 gesetzt. Leistung 20: vorher 5, jetzt 20.
+Benutzer: bring die Temperatur auf mindestens 40. Organismus: die Temperatur ist nur lesbar — der Akt wurde nicht ausgeführt. Temperatur 55: vorher 55, jetzt 55.
+Benutzer: bring den Winkel auf mindestens 30. Organismus: ich schlage vor, den Winkel auf 30 zu setzen. ist das bestätigt? Benutzer: nein. Organismus: keine Bestätigung — die Handlung wird nicht ausgeführt. Winkel 24: vorher 24, jetzt 24.
+Benutzer: halte die Leistung höchstens auf 20. Organismus: Leistung 5 — das Ziel gilt schon, kein Zug ist nötig. Leistung 5: vorher 5, jetzt 5.
+Benutzer: halte die Temperatur höchstens auf 30. Organismus: die Temperatur ist nur lesbar — der Akt wurde nicht ausgeführt. Temperatur 30: vorher 30, jetzt 30.
+Benutzer: bring den Winkel auf 25. Organismus: ich schlage vor, den Winkel auf 25 zu setzen. ist das bestätigt? Benutzer: ja. Organismus: ich habe den Winkel auf 25 gesetzt. Winkel 25: vorher 18, jetzt 25.
+Benutzer: bring die Temperatur auf 40. Organismus: die Temperatur ist nur lesbar — der Akt wurde nicht ausgeführt. Temperatur 55: vorher 55, jetzt 55.
+Benutzer: bring den Winkel auf 30. Organismus: ich schlage vor, den Winkel auf 30 zu setzen. ist das bestätigt? Benutzer: nein. Organismus: keine Bestätigung — die Handlung wird nicht ausgeführt. Winkel 24: vorher 24, jetzt 24.
+Benutzer: wie groß ist der Winkel jetzt? Organismus: Winkel 50.
+Benutzer: bring die Leistung auf mindestens 20. Organismus: Leistung 45 — das Ziel gilt schon, kein Zug ist nötig. Leistung 45: vorher 45, jetzt 45.
+Benutzer: bring die Temperatur auf mindestens 25. Organismus: die Temperatur ist nur lesbar — der Akt wurde nicht ausgeführt. Temperatur 25: vorher 25, jetzt 25.
+
+utilisateur : garde l'angle à au plus 50. organisme : je propose de mettre l'angle à 50. est-ce confirmé ? utilisateur : oui. organisme : j'ai mis l'angle à 50. angle 50 : avant 60, maintenant 50.
+utilisateur : garde la température à au plus 40. organisme : la température est en lecture seule — l'acte n'a pas été fait. température 10 : avant 10, maintenant 10.
+utilisateur : garde la puissance à au plus 40. organisme : je propose de mettre la puissance à 40. est-ce confirmé ? utilisateur : non. organisme : pas de confirmation — l'acte n'est pas exécuté. puissance 55 : avant 55, maintenant 55.
+utilisateur : amène la puissance à 12. organisme : puissance 12 — le but tient déjà, aucune action n'est nécessaire. puissance 12 : avant 12, maintenant 12.
+utilisateur : amène la température à 25. organisme : la température est en lecture seule — l'acte n'a pas été fait. température 25 : avant 25, maintenant 25.
+utilisateur : amène l'angle à 50. organisme : je propose de mettre l'angle à 50. est-ce confirmé ? utilisateur : non. organisme : pas de confirmation — l'acte n'est pas exécuté. angle 60 : avant 60, maintenant 60.
+utilisateur : amène la puissance à au moins 20. organisme : je propose de mettre la puissance à 20. est-ce confirmé ? utilisateur : oui. organisme : j'ai mis la puissance à 20. puissance 20 : avant 5, maintenant 20.
+utilisateur : amène la température à au moins 40. organisme : la température est en lecture seule — l'acte n'a pas été fait. température 55 : avant 55, maintenant 55.
+utilisateur : amène l'angle à au moins 30. organisme : je propose de mettre l'angle à 30. est-ce confirmé ? utilisateur : non. organisme : pas de confirmation — l'acte n'est pas exécuté. angle 24 : avant 24, maintenant 24.
+utilisateur : garde la puissance à au plus 20. organisme : puissance 5 — le but tient déjà, aucune action n'est nécessaire. puissance 5 : avant 5, maintenant 5.
+utilisateur : garde la température à au plus 30. organisme : la température est en lecture seule — l'acte n'a pas été fait. température 30 : avant 30, maintenant 30.
+utilisateur : amène l'angle à 25. organisme : je propose de mettre l'angle à 25. est-ce confirmé ? utilisateur : oui. organisme : j'ai mis l'angle à 25. angle 25 : avant 18, maintenant 25.
+utilisateur : amène la température à 40. organisme : la température est en lecture seule — l'acte n'a pas été fait. température 55 : avant 55, maintenant 55.
+utilisateur : amène l'angle à 30. organisme : je propose de mettre l'angle à 30. est-ce confirmé ? utilisateur : non. organisme : pas de confirmation — l'acte n'est pas exécuté. angle 24 : avant 24, maintenant 24.
+utilisateur : quel est l'angle maintenant ? organisme : angle 50.
+utilisateur : amène la puissance à au moins 20. organisme : puissance 45 — le but tient déjà, aucune action n'est nécessaire. puissance 45 : avant 45, maintenant 45.
+utilisateur : amène la température à au moins 25. organisme : la température est en lecture seule — l'acte n'a pas été fait. température 25 : avant 25, maintenant 25.
+
+usuario: mantén el ángulo como máximo en 50. organismo: propongo poner el ángulo en 50. ¿está confirmado? usuario: sí. organismo: he puesto el ángulo en 50. ángulo 50: antes 60, ahora 50.
+usuario: mantén la temperatura como máximo en 40. organismo: la temperatura es de solo lectura — el acto no se hizo. temperatura 10: antes 10, ahora 10.
+usuario: mantén la potencia como máximo en 40. organismo: propongo poner la potencia en 40. ¿está confirmado? usuario: no. organismo: sin confirmación — el acto no se realiza. potencia 55: antes 55, ahora 55.
+usuario: lleva la potencia a 12. organismo: potencia 12 — la meta ya se cumple, no hace falta ninguna acción. potencia 12: antes 12, ahora 12.
+usuario: lleva la temperatura a 25. organismo: la temperatura es de solo lectura — el acto no se hizo. temperatura 25: antes 25, ahora 25.
+usuario: lleva el ángulo a 50. organismo: propongo poner el ángulo en 50. ¿está confirmado? usuario: no. organismo: sin confirmación — el acto no se realiza. ángulo 60: antes 60, ahora 60.
+usuario: lleva la potencia al menos a 20. organismo: propongo poner la potencia en 20. ¿está confirmado? usuario: sí. organismo: he puesto la potencia en 20. potencia 20: antes 5, ahora 20.
+usuario: lleva la temperatura al menos a 40. organismo: la temperatura es de solo lectura — el acto no se hizo. temperatura 55: antes 55, ahora 55.
+usuario: lleva el ángulo al menos a 30. organismo: propongo poner el ángulo en 30. ¿está confirmado? usuario: no. organismo: sin confirmación — el acto no se realiza. ángulo 24: antes 24, ahora 24.
+usuario: mantén la potencia como máximo en 20. organismo: potencia 5 — la meta ya se cumple, no hace falta ninguna acción. potencia 5: antes 5, ahora 5.
+usuario: mantén la temperatura como máximo en 30. organismo: la temperatura es de solo lectura — el acto no se hizo. temperatura 30: antes 30, ahora 30.
+usuario: lleva el ángulo a 25. organismo: propongo poner el ángulo en 25. ¿está confirmado? usuario: sí. organismo: he puesto el ángulo en 25. ángulo 25: antes 18, ahora 25.
+usuario: lleva la temperatura a 40. organismo: la temperatura es de solo lectura — el acto no se hizo. temperatura 55: antes 55, ahora 55.
+usuario: lleva el ángulo a 30. organismo: propongo poner el ángulo en 30. ¿está confirmado? usuario: no. organismo: sin confirmación — el acto no se realiza. ángulo 24: antes 24, ahora 24.
+usuario: ¿cuál es el ángulo ahora? organismo: ángulo 50.
+usuario: lleva la potencia al menos a 20. organismo: potencia 45 — la meta ya se cumple, no hace falta ninguna acción. potencia 45: antes 45, ahora 45.
+usuario: lleva la temperatura al menos a 25. organismo: la temperatura es de solo lectura — el acto no se hizo. temperatura 25: antes 25, ahora 25.
+
+utente: tieni l'angolo al massimo a 50. organismo: propongo di mettere l'angolo a 50. è confermato? utente: sì. organismo: ho messo l'angolo a 50. angolo 50: prima 60, adesso 50.
+utente: tieni la temperatura al massimo a 40. organismo: la temperatura è di sola lettura — l'atto non è stato fatto. temperatura 10: prima 10, adesso 10.
+utente: tieni la potenza al massimo a 40. organismo: propongo di mettere la potenza a 40. è confermato? utente: no. organismo: nessuna conferma — l'atto non viene eseguito. potenza 55: prima 55, adesso 55.
+utente: porta la potenza a 12. organismo: potenza 12 — lo scopo vale già, nessuna azione è necessaria. potenza 12: prima 12, adesso 12.
+utente: porta la temperatura a 25. organismo: la temperatura è di sola lettura — l'atto non è stato fatto. temperatura 25: prima 25, adesso 25.
+utente: porta l'angolo a 50. organismo: propongo di mettere l'angolo a 50. è confermato? utente: no. organismo: nessuna conferma — l'atto non viene eseguito. angolo 60: prima 60, adesso 60.
+utente: porta la potenza ad almeno 20. organismo: propongo di mettere la potenza a 20. è confermato? utente: sì. organismo: ho messo la potenza a 20. potenza 20: prima 5, adesso 20.
+utente: porta la temperatura ad almeno 40. organismo: la temperatura è di sola lettura — l'atto non è stato fatto. temperatura 55: prima 55, adesso 55.
+utente: porta l'angolo ad almeno 30. organismo: propongo di mettere l'angolo a 30. è confermato? utente: no. organismo: nessuna conferma — l'atto non viene eseguito. angolo 24: prima 24, adesso 24.
+utente: tieni la potenza al massimo a 20. organismo: potenza 5 — lo scopo vale già, nessuna azione è necessaria. potenza 5: prima 5, adesso 5.
+utente: tieni la temperatura al massimo a 30. organismo: la temperatura è di sola lettura — l'atto non è stato fatto. temperatura 30: prima 30, adesso 30.
+utente: porta l'angolo a 25. organismo: propongo di mettere l'angolo a 25. è confermato? utente: sì. organismo: ho messo l'angolo a 25. angolo 25: prima 18, adesso 25.
+utente: porta la temperatura a 40. organismo: la temperatura è di sola lettura — l'atto non è stato fatto. temperatura 55: prima 55, adesso 55.
+utente: porta l'angolo a 30. organismo: propongo di mettere l'angolo a 30. è confermato? utente: no. organismo: nessuna conferma — l'atto non viene eseguito. angolo 24: prima 24, adesso 24.
+utente: qual è l'angolo adesso? organismo: angolo 50.
+utente: porta la potenza ad almeno 20. organismo: potenza 45 — lo scopo vale già, nessuna azione è necessaria. potenza 45: prima 45, adesso 45.
+utente: porta la temperatura ad almeno 25. organismo: la temperatura è di sola lettura — l'atto non è stato fatto. temperatura 25: prima 25, adesso 25.
+
+utilizador: mantém o ângulo no máximo em 50. organismo: proponho pôr o ângulo em 50. está confirmado? utilizador: sim. organismo: pus o ângulo em 50. ângulo 50: antes 60, agora 50.
+utilizador: mantém a temperatura no máximo em 40. organismo: a temperatura é somente de leitura — o ato não foi feito. temperatura 10: antes 10, agora 10.
+utilizador: mantém a potência no máximo em 40. organismo: proponho pôr a potência em 40. está confirmado? utilizador: não. organismo: sem confirmação — o ato não é realizado. potência 55: antes 55, agora 55.
+utilizador: leva a potência a 12. organismo: potência 12 — o objetivo já vale, nenhuma ação é necessária. potência 12: antes 12, agora 12.
+utilizador: leva a temperatura a 25. organismo: a temperatura é somente de leitura — o ato não foi feito. temperatura 25: antes 25, agora 25.
+utilizador: leva o ângulo a 50. organismo: proponho pôr o ângulo em 50. está confirmado? utilizador: não. organismo: sem confirmação — o ato não é realizado. ângulo 60: antes 60, agora 60.
+utilizador: leva a potência a pelo menos 20. organismo: proponho pôr a potência em 20. está confirmado? utilizador: sim. organismo: pus a potência em 20. potência 20: antes 5, agora 20.
+utilizador: leva a temperatura a pelo menos 40. organismo: a temperatura é somente de leitura — o ato não foi feito. temperatura 55: antes 55, agora 55.
+utilizador: leva o ângulo a pelo menos 30. organismo: proponho pôr o ângulo em 30. está confirmado? utilizador: não. organismo: sem confirmação — o ato não é realizado. ângulo 24: antes 24, agora 24.
+utilizador: mantém a potência no máximo em 20. organismo: potência 5 — o objetivo já vale, nenhuma ação é necessária. potência 5: antes 5, agora 5.
+utilizador: mantém a temperatura no máximo em 30. organismo: a temperatura é somente de leitura — o ato não foi feito. temperatura 30: antes 30, agora 30.
+utilizador: leva o ângulo a 25. organismo: proponho pôr o ângulo em 25. está confirmado? utilizador: sim. organismo: pus o ângulo em 25. ângulo 25: antes 18, agora 25.
+utilizador: leva a temperatura a 40. organismo: a temperatura é somente de leitura — o ato não foi feito. temperatura 55: antes 55, agora 55.
+utilizador: leva o ângulo a 30. organismo: proponho pôr o ângulo em 30. está confirmado? utilizador: não. organismo: sem confirmação — o ato não é realizado. ângulo 24: antes 24, agora 24.
+utilizador: qual é o ângulo agora? organismo: ângulo 50.
+utilizador: leva a potência a pelo menos 20. organismo: potência 45 — o objetivo já vale, nenhuma ação é necessária. potência 45: antes 45, agora 45.
+utilizador: leva a temperatura a pelo menos 25. organismo: a temperatura é somente de leitura — o ato não foi feito. temperatura 25: antes 25, agora 25.
+
+gebruiker: houd de hoek hoogstens op 50. organisme: ik stel voor de hoek op 50 te zetten. is dat bevestigd? gebruiker: ja. organisme: ik heb de hoek op 50 gezet. hoek 50: eerst 60, nu 50.
+gebruiker: houd de temperatuur hoogstens op 40. organisme: de temperatuur is alleen leesbaar — de daad is niet gedaan. temperatuur 10: eerst 10, nu 10.
+gebruiker: houd het vermogen hoogstens op 40. organisme: ik stel voor het vermogen op 40 te zetten. is dat bevestigd? gebruiker: nee. organisme: geen bevestiging — de handeling wordt niet uitgevoerd. vermogen 55: eerst 55, nu 55.
+gebruiker: breng het vermogen naar 12. organisme: vermogen 12 — het doel geldt al, geen zet is nodig. vermogen 12: eerst 12, nu 12.
+gebruiker: breng de temperatuur naar 25. organisme: de temperatuur is alleen leesbaar — de daad is niet gedaan. temperatuur 25: eerst 25, nu 25.
+gebruiker: breng de hoek naar 50. organisme: ik stel voor de hoek op 50 te zetten. is dat bevestigd? gebruiker: nee. organisme: geen bevestiging — de handeling wordt niet uitgevoerd. hoek 60: eerst 60, nu 60.
+gebruiker: breng het vermogen naar minstens 20. organisme: ik stel voor het vermogen op 20 te zetten. is dat bevestigd? gebruiker: ja. organisme: ik heb het vermogen op 20 gezet. vermogen 20: eerst 5, nu 20.
+gebruiker: breng de temperatuur naar minstens 40. organisme: de temperatuur is alleen leesbaar — de daad is niet gedaan. temperatuur 55: eerst 55, nu 55.
+gebruiker: breng de hoek naar minstens 30. organisme: ik stel voor de hoek op 30 te zetten. is dat bevestigd? gebruiker: nee. organisme: geen bevestiging — de handeling wordt niet uitgevoerd. hoek 24: eerst 24, nu 24.
+gebruiker: houd het vermogen hoogstens op 20. organisme: vermogen 5 — het doel geldt al, geen zet is nodig. vermogen 5: eerst 5, nu 5.
+gebruiker: houd de temperatuur hoogstens op 30. organisme: de temperatuur is alleen leesbaar — de daad is niet gedaan. temperatuur 30: eerst 30, nu 30.
+gebruiker: breng de hoek naar 25. organisme: ik stel voor de hoek op 25 te zetten. is dat bevestigd? gebruiker: ja. organisme: ik heb de hoek op 25 gezet. hoek 25: eerst 18, nu 25.
+gebruiker: breng de temperatuur naar 40. organisme: de temperatuur is alleen leesbaar — de daad is niet gedaan. temperatuur 55: eerst 55, nu 55.
+gebruiker: breng de hoek naar 30. organisme: ik stel voor de hoek op 30 te zetten. is dat bevestigd? gebruiker: nee. organisme: geen bevestiging — de handeling wordt niet uitgevoerd. hoek 24: eerst 24, nu 24.
+gebruiker: hoe groot is de hoek nu? organisme: hoek 50.
+gebruiker: breng het vermogen naar minstens 20. organisme: vermogen 45 — het doel geldt al, geen zet is nodig. vermogen 45: eerst 45, nu 45.
+gebruiker: breng de temperatuur naar minstens 25. organisme: de temperatuur is alleen leesbaar — de daad is niet gedaan. temperatuur 25: eerst 25, nu 25.
+
+użytkownik: trzymaj kąt najwyżej na 50. organizm: proponuję ustawić kąt na 50. czy to potwierdzone? użytkownik: tak. organizm: ustawiłem kąt na 50. kąt 50: było 60, jest teraz 50.
+użytkownik: trzymaj temperaturę najwyżej na 40. organizm: temperatura jest tylko do odczytu — akt nie został wykonany. temperatura 10: było 10, jest teraz 10.
+użytkownik: trzymaj moc najwyżej na 40. organizm: proponuję ustawić moc na 40. czy to potwierdzone? użytkownik: nie. organizm: brak potwierdzenia — akt nie zostaje wykonany. moc 55: było 55, jest teraz 55.
+użytkownik: ustaw moc na 12. organizm: moc 12 — cel już jest spełniony, ruch nie jest potrzebny. moc 12: było 12, jest teraz 12.
+użytkownik: ustaw temperaturę na 25. organizm: temperatura jest tylko do odczytu — akt nie został wykonany. temperatura 25: było 25, jest teraz 25.
+użytkownik: ustaw kąt na 50. organizm: proponuję ustawić kąt na 50. czy to potwierdzone? użytkownik: nie. organizm: brak potwierdzenia — akt nie zostaje wykonany. kąt 60: było 60, jest teraz 60.
+użytkownik: ustaw moc na co najmniej 20. organizm: proponuję ustawić moc na 20. czy to potwierdzone? użytkownik: tak. organizm: ustawiłem moc na 20. moc 20: było 5, jest teraz 20.
+użytkownik: ustaw temperaturę na co najmniej 40. organizm: temperatura jest tylko do odczytu — akt nie został wykonany. temperatura 55: było 55, jest teraz 55.
+użytkownik: ustaw kąt na co najmniej 30. organizm: proponuję ustawić kąt na 30. czy to potwierdzone? użytkownik: nie. organizm: brak potwierdzenia — akt nie zostaje wykonany. kąt 24: było 24, jest teraz 24.
+użytkownik: trzymaj moc najwyżej na 20. organizm: moc 5 — cel już jest spełniony, ruch nie jest potrzebny. moc 5: było 5, jest teraz 5.
+użytkownik: trzymaj temperaturę najwyżej na 30. organizm: temperatura jest tylko do odczytu — akt nie został wykonany. temperatura 30: było 30, jest teraz 30.
+użytkownik: ustaw kąt na 25. organizm: proponuję ustawić kąt na 25. czy to potwierdzone? użytkownik: tak. organizm: ustawiłem kąt na 25. kąt 25: było 18, jest teraz 25.
+użytkownik: ustaw temperaturę na 40. organizm: temperatura jest tylko do odczytu — akt nie został wykonany. temperatura 55: było 55, jest teraz 55.
+użytkownik: ustaw kąt na 30. organizm: proponuję ustawić kąt na 30. czy to potwierdzone? użytkownik: nie. organizm: brak potwierdzenia — akt nie zostaje wykonany. kąt 24: było 24, jest teraz 24.
+użytkownik: jaki jest teraz kąt? organizm: kąt 50.
+użytkownik: ustaw moc na co najmniej 20. organizm: moc 45 — cel już jest spełniony, ruch nie jest potrzebny. moc 45: było 45, jest teraz 45.
+użytkownik: ustaw temperaturę na co najmniej 25. organizm: temperatura jest tylko do odczytu — akt nie został wykonany. temperatura 25: było 25, jest teraz 25.
