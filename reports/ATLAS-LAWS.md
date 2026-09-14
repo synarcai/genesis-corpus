@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 401 законов
+# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 403 законов
 
 Собран из докстрингов и комментариев `tools`, `courts`, `scripts` орудием
 `tools/law_atlas.py`. Взяты ОБЩИЕ законы — те, что держатся не одним файлом.
@@ -6,7 +6,7 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 6213 разных законов на 7723 упоминаний; сказанных однажды — 5812, и они остаются при своём месте.
+Всего в дереве 6218 разных законов на 7732 упоминаний; сказанных однажды — 5815, и они остаются при своём месте.
 
 
 ## Держат 81 файлов
@@ -100,6 +100,8 @@
   scripts/house_mutant.py, tools/absforms.py, tools/deplurforms.py, tools/elisionforms.py, tools/genderforms.py, tools/hayforms.py … и ещё 8
 - **ПРОВЕРЯЕТСЯ, А ЛИШЬ ЧИСЛИТСЯ**  
   scripts/house_mutant.py, tools/absforms.py, tools/deplurforms.py, tools/elisionforms.py, tools/genderforms.py, tools/hayforms.py … и ещё 8
+- **РОД, ЧЬЁ ЧИСЛО СТРАНИЦ ЕСТЬ ФАКТ О ПРЕДМЕТЕ, НЕ ПОДЛЕЖИТ МЕРЕ РОВНОСТИ — НО ОБЯЗАН**  
+  tools/compsciforms.py, tools/geomforms.py, tools/homoforms.py, tools/linalgforms.py, tools/mathspaceforms.py, tools/moneyforms.py … и ещё 8
 - **САМОПРОВЕРКА ДОМА СТЕРЕЖЁТ ТО, ЧЕГО СУДУ НЕ ВИДНО**  
   courts/angle_court.py, courts/cond_court.py, courts/direct_court.py, courts/fence_court.py, courts/homo_court.py, courts/leap_court.py … и ещё 8
 - **СУД, ЧИТАЮЩИЙ ЛИШЬ ЦИТАТЫ, СТЕРЕЖЁТ ЛИШЬ ЦИТАТЫ**  
@@ -109,8 +111,6 @@
 
 - **РАМКА ПОРОДИЛА СТРАНИЦУ — ОСТАЛСЯ СЧЁТ**  
   tools/addshareforms.py, tools/amendforms.py, tools/boundforms.py, tools/chanceforms.py, tools/cmpshareforms.py, tools/divruleforms.py … и ещё 7
-- **РОД, ЧЬЁ ЧИСЛО СТРАНИЦ ЕСТЬ ФАКТ О ПРЕДМЕТЕ, НЕ ПОДЛЕЖИТ МЕРЕ РОВНОСТИ — НО ОБЯЗАН**  
-  tools/compsciforms.py, tools/geomforms.py, tools/homoforms.py, tools/linalgforms.py, tools/mathspaceforms.py, tools/notationforms.py … и ещё 7
 - **СКЕЛЕТ СТРАНИЦЫ ОБЯЗАН БЫТЬ ОДНИМ ИЗ ОБЪЯВЛЕННЫХ**  
   tools/absforms.py, tools/deplurforms.py, tools/elisionforms.py, tools/genderforms.py, tools/hayforms.py, tools/homoforms.py … и ещё 7
 
@@ -299,6 +299,8 @@
   scripts/cell_shown.py, tools/langpack.py, tools/subjcount.py
 - **ДОЛГ, РАЗ ОБЪЯВЛЕННЫЙ, ОПУСКАЕТСЯ ДО ДОСТИГНУТОГО В ТОТ ЖЕ ЧАС**  
   courts/prosetree_court.py, scripts/prose_court.py, scripts/word_mutants.py
+- **ДОМ, ОБЪЯВИВШИЙ РОДЫ И НЕ ОТДАВШИЙ СТРАНИЦ, ОБЕЩАЕТ ИМЕНА, КОТОРЫХ НЕКОМУ ПРИЛОЖИТЬ**  
+  tools/calforms.py, tools/chainforms.py, tools/countforms.py
 - **ЗАКОН, ПОКАЗАННЫЙ В ОДНОЙ ОДЕЖДЕ, ЕСТЬ ЗНАНИЕ ОБ ЭТОЙ ОДЕЖДЕ**  
   tools/condforms.py, tools/gen_genesis_cond.py, tools/wmeanforms.py
 - **ЗНАК ПЕРЕД ЧИСЛОМ ГОВОРИТ, ЧЕЙ ЭТО ЧЛЕН**  
@@ -470,8 +472,6 @@
   tools/chanceforms.py, tools/leverforms.py
 - **ДОМ, КУЮЩИЙ СВОЙ МИР САМ, СВЯЗАН С НИМ КРЕПЧЕ ВСЯКОГО ВВОЗА**  
   tools/genus_atlas.py, tools/ninelang.py
-- **ДОМ, ОБЪЯВИВШИЙ РОДЫ И НЕ ОТДАВШИЙ СТРАНИЦ, ОБЕЩАЕТ ИМЕНА, КОТОРЫХ НЕКОМУ ПРИЛОЖИТЬ**  
-  tools/calforms.py, tools/chainforms.py
 - **ДОМ, ОБЪЯСНЯЮЩИЙ ЗАКОН ОТКАЗА, НО НЕ ЦИТИРУЮЩИЙ САМОГО ОТКАЗА, ЗАКРЫВАЕТ УРОК И НЕ**  
   tools/deaccforms.py, tools/gen_genesis_genderverb.py
 - **ДОМ, ОБЪЯСНЯЮЩИЙ ОТКАЗ, ОБЯЗАН ПРОЦИТИРОВАТЬ ТОТ САМЫЙ ОТКАЗ, А НЕ ПОХОЖИЙ НА НЕГО**  
@@ -764,6 +764,8 @@
   tools/opslawforms.py, tools/pointforms.py
 - **СТРАНИЦА, ПОКАЗЫВАЮЩАЯ ЗАПРЕЩЁННОЕ, ОБЯЗАНА ПОМЕЧАТЬ ЕГО ЗНАКОМ, КОТОРЫЙ ЧИТАЕТ СУД**  
   courts/dosupport_court.py, courts/serestar_court.py
+- **СТРОИТЕЛЬ ПЕРЕЕХАЛ ИЗ КУЗНИЦЫ В ДОМ**  
+  tools/calforms.py, tools/countforms.py
 - **СТРОКА БЕЗ ЕДИНОГО ОБЪЯВЛЕННОГО СЛОВА БЕЗЗАЩИТНА: ЕЁ СУДИТ ВСЯКИЙ, КТО УЗНАЛ В НЕЙ**  
   scripts/signless_census.py, scripts/template_word.py
 - **СУД АРИФМЕТИКИ ЧИТАЕТ ТО, ЧТО СТОИ**  
@@ -876,6 +878,8 @@
   courts/svgender_court.py, tools/svgenderforms.py
 - **ЭТОТ ПОВОД ОКАЗАЛСЯ ЛОЖЕН, И ЭТО ЗАПИСАНО, А НЕ ЗАМАЗАНО**  
   tools/chanceforms.py, tools/leverforms.py
+- **ЯДРО ДОСЛОВНЫХ ПОВТОРОВ ЕСТЬ ЗАКОН КОРПУСА, А НЕ НЕДОСМОТР**  
+  scripts/house_skew.py, tools/moneyforms.py
 - **ЯЗЫК ЕСТЬ ЧАСТЬ ФАКТА, А НЕ ЕГО ОДЕЖДА**  
   tools/gen_genesis_inquiry_de_fr.py, tools/gen_genesis_inquiry_pt_nl.py
 - **ЯЗЫК, ВВЕДЁННЫЙ ДЕВЯТЫМ, ПРОВЕРЯЕТ ВОСЕМЬ ПРЕЖНИХ**  

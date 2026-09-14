@@ -23,25 +23,9 @@ from layer import emit_grouped  # noqa: E402
 ШИРИНА = 8
 
 
-def язык_группа(шаг, язык):
-    вон = [M.КУРС[язык], M.КУРС[язык]]     # the rate as a sentence, ten times over the passes
-    # …and at two whole numbers per pass, ten different ones over the passes
-    # (holon 03.09: the market of conversions wants ≥ 2 different pairs)
-    for h in range(2):
-        вон.append(M.курс_целый(язык, 2 + (шаг * 2 + h + (шаг >= 3)) % 11))
-    for i in range(ШИРИНА):
-        d = 3 + (шаг * 7 + i * 5) % 40
-        c = 5 * ((шаг * 3 + i * 7) % 18 + 2)          # 10..95, as the money world
-        вон.append(M.мост(язык, d, c) if i % 2 == 0 else M.вопрос(язык, d, c))
-        вон.append(M.обратно(язык, d, c))
-        a, ac = 2 + (шаг * 5 + i * 3) % 30, 5 * ((шаг + i * 3) % 19 + 1)
-        b, bc = 1 + (шаг * 3 + i * 7) % 20, 5 * ((шаг * 7 + i) % 19 + 1)
-        вон.append(M.сумма(язык, a, ac, b, bc))
-    return вон
-
-
 def pass_groups(шаг):
-    return [язык_группа(шаг, язык) for язык in M.ЯЗЫКИ]
+    """Одна группа на ЯЗЫК — сборка живёт в доме, кузница её лишь зовёт."""
+    return M.группы(шаг)
 
 
 def main():

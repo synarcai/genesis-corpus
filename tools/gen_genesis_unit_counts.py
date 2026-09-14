@@ -25,29 +25,9 @@ from layer import PASSES, emit_grouped  # noqa: E402
 ЦЕЛЬ = "datasets/genesis_unit_counts.txt"
 
 
-def показы(язык):
-    """Показ-парадигма (одна рамка со всеми счётами) и показ-вопрос (тот же
-    факт, спрошенный в той же строке): мир, говорящий одними утверждениями,
-    учит отвечать молчанием — это сказал прибор широты вопроса."""
-    я = F.ЯЗЫКИ[язык]
-    вон = [F.показ(язык, рамка, единица)
-           for рамка in range(len(я["рамки"]))
-           for единица in range(len(я["единицы"]))]
-    вон += [F.показ_вопросом(язык, рамка, единица, n)
-            for рамка in range(len(я["рамки"]))
-            for единица in range(len(я["единицы"]))
-            for n in F.СЧЁТЫ]
-    return вон
-
-
-ВСЕ = {язык: показы(язык) for язык in F.ЯЗЫКИ}
-
-
 def pass_groups(шаг):
-    """Each pass takes its share of the shows: the house is finite, and saying
-    it five times over would be weight, not knowledge."""
-    return [[с for j, с in enumerate(ВСЕ[язык]) if j % len(PASSES) == шаг]
-            for язык in F.ЯЗЫКИ]
+    """Доля прохода на каждый язык — сборка живёт в доме, кузница её лишь зовёт."""
+    return F.группы(шаг)
 
 
 def main():
