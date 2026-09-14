@@ -20,27 +20,9 @@ from layer import emit_grouped  # noqa: E402
 ЦЕЛЬ = "datasets/genesis_calendar_langs.txt"
 
 
-def язык_группа(шаг, язык):
-    """Every start day once per pass as a statement and once as a question;
-    the count k of a start day walks 1..6 with the pass (2·day + pass mod 6),
-    so a question frame carries five distinct k over the five passes
-    (М-148 (1); holon's TSV 21e865b: mass<4-distinct)."""
-    вон = []
-    for j in range(7):
-        i = (шаг * 3 + j) % 7
-        вон.append(F.утверждение(язык, i, 1 + (2 * i + шаг) % 6))
-        i2 = (i + 3) % 7
-        вон.append(F.вопрос(язык, i2, 1 + (2 * i2 + шаг + 3) % 6))
-        вон.append(F.сосед(язык, (j + шаг) % 7))
-        вон.append(F.вчера(язык, (j + шаг) % 7, "вчера"))
-        вон.append(F.вчера(язык, (j + шаг) % 7, "завтра"))
-        вон.append(F.вчера(язык, (j + шаг) % 7, "послезавтра"))
-        вон.append(F.вчера(язык, (j + шаг) % 7, "позавчера"))
-    return вон
-
-
 def pass_groups(шаг):
-    return [язык_группа(шаг, язык) for язык in F.ЯЗЫКИ]
+    """Одна группа на ЯЗЫК — сборка живёт в доме, кузница её лишь зовёт."""
+    return F.группы(шаг)
 
 
 def main():
