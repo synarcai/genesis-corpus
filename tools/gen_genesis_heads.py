@@ -13,7 +13,7 @@ lexicon (hours/miles/days/pounds — 32: units are
 lexicon, not construction). Instances vary by pass.
 """
 
-from layer import emit
+from layer import Сбор, emit
 
 
 from plural import by_count
@@ -47,9 +47,18 @@ UNITS = ["hours", "miles", "days", "pounds",
                  "pounds": ("lifts", "pounds"), "days": ("reads", "pages")}
 
 
+# ЧЕТЫРЕ ГОЛОВЫ НАЗВАНЫ КОММЕНТАРИЯМИ «HEAD-1/HEAD-2» И НЕ ВЫШЛИ НАРУЖУ. Голова здесь —
+# ВОПРОСНОЕ СЛОВО («how many» против «how much»), а род — ДЕЛО под ним: прибавка, убыль,
+# цена за штуку, ставка за день. Две головы, четыре дела.
+ПРИБАВКА = "прибавка: было столько, получено ещё"
+УБЫЛЬ = "убыль: было столько, отдано столько, и больше своего не отдают"
+ЦЕНА_ЗА_ШТУКУ = "цена за штуку: сколько заплачено за k штук по p"
+СТАВКА_ЗА_ДЕНЬ = "ставка за день: сколько за k дней, и глагол идёт за единицей"
+
+
 def pass_shows(pi):
     base = pi * 29
-    out = []
+    out = Сбор()
     for i in range(len(NAMES) * 4):
         nm = NAMES[(base + i) % len(NAMES)]
         it = ITEMS[(base + i * 3) % len(ITEMS)]
@@ -67,6 +76,7 @@ def pass_shows(pi):
         # HEAD-1 how many: got-more (three verbs
         # share one (agent, item) key — the
         # episodic algebra needs the full triple)
+        out.род = ПРИБАВКА
         out.append(
             f"{nm} had {a} {by_count(a, it)}. "
             f"{nm} got {b} {by_count(b, it)}. "
@@ -82,6 +92,7 @@ def pass_shows(pi):
         # about the world, not about arithmetic.
         # Zero stays — a remainder of none is true.
         gave = min(a, b)
+        out.род = УБЫЛЬ
         out.append(
             f"{nm} had {a} {by_count(a, it)}. "
             f"{nm} gave {gave} {by_count(gave, it)} "
@@ -91,6 +102,7 @@ def pass_shows(pi):
             f"{f': {a} − {gave} = {a - gave}' if forge else ''}."
         )
         # HEAD-2 how much: rate pay
+        out.род = ЦЕНА_ЗА_ШТУКУ
         out.append(
             f"{nm} bought {k} {by_count(k, it)} "
             f"at {p} {by_count(p, 'dollars')} each. how much did "
@@ -101,6 +113,7 @@ def pass_shows(pi):
         # (03.09): «walks 2 pounds every day», «walks 5 days every day» were
         # nonsense wearing the frame — a rate is a verb with its own unit.
         verb, un_r = СТАВКА_ГЛАГОЛ[un]
+        out.род = СТАВКА_ЗА_ДЕНЬ
         out.append(
             f"{nm} {verb} {p} {by_count(p, un_r)} "
             f"every day. how much in {k} {by_count(k, 'days')}? "
@@ -108,6 +121,59 @@ def pass_shows(pi):
             f"{f': {p} × {k} = {k * p}' if forge else ''}."
         )
     return out
+
+
+# --------------------------------------------------------------- ОБЪЯВЛЕНИЕ ДОМА
+
+РОДЫ = (ПРИБАВКА, УБЫЛЬ, ЦЕНА_ЗА_ШТУКУ, СТАВКА_ЗА_ДЕНЬ)
+
+ЗАЧЕМ_РОДА = {
+    ПРИБАВКА: "a + b под вопросом «how many», и кузница ответа стои́т рядом через раз",
+    УБЫЛЬ: "a − b, где отданное НЕ БОЛЬШЕ своего: «keeps −1 coins» есть ложь о мире, "
+           "а не об арифметике",
+    ЦЕНА_ЗА_ШТУКУ: "k × p под вопросом «how much»: умножение, где оба множителя названы",
+    СТАВКА_ЗА_ДЕНЬ: "p за день, сколько за k дней — и сказуемое согласовано с ЕДИНИЦЕЙ, "
+                    "а не с вещью",
+}
+
+
+def страницы(pi):
+    return pass_shows(pi)
+
+
+def перебор_страниц(pi):
+    return pass_shows(pi).парами
+
+
+def группы(pi):
+    return [страницы(pi)]
+
+
+def _показы():
+    from layer import PASSES                             # noqa: PLC0415
+    вон = {}
+    for шаг in range(len(PASSES)):
+        for с, род in перебор_страниц(шаг):
+            for строка in с.split("\n"):
+                if строка.rstrip():
+                    вон.setdefault(строка.rstrip(), род)
+    return вон
+
+
+ПОКАЗЫ = _показы()
+
+
+def _самопроверка_дома():
+    assert set(ЗАЧЕМ_РОДА) == set(РОДЫ), "глосса рода разошлась с объявлением"
+    сбор = pass_shows(0)
+    assert len(сбор) == len(сбор.роды), "показ остался без рода"
+    вне = {р for _с, р in сбор.парами} - set(РОДЫ)
+    assert not вне, f"род кован и не объявлен: {sorted(вне)}"
+    пустые = set(РОДЫ) - set(ПОКАЗЫ.values())
+    assert not пустые, f"род объявлен и не кован: {sorted(пустые)}"
+
+
+_самопроверка_дома()
 
 
 def main():

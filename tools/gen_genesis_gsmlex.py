@@ -15,7 +15,7 @@ episodes on one (agent, item) key, both polarities,
 instances vary by pass, no glyph pairs in-layer.
 """
 
-from layer import emit
+from layer import Сбор, emit
 import verbthings  # noqa: E402
 
 
@@ -62,9 +62,16 @@ ASK_SUB = [("keep", "keeps"),
            ("save", "saves")]
 
 
+# ДВА РОДА — ДВЕ ВЕТВИ `if add`: прибавка и убыль берут РАЗНЫЕ пары глаголов и разные
+# вопросы. Лексика здесь и есть предмет мира: один и тот же счёт сказан четырьмя парами
+# глаголов на сторону.
+ПРИБАВКА = "прибавка: своя пара глаголов на каждый оборот"
+УБЫЛЬ = "убыль: своя пара глаголов и свой вопрос"
+
+
 def pass_shows(pi):
     base = pi * 37
-    out = []
+    out = Сбор()
     for i in range(len(NAMES) * 10):
         # name index coprime-decoupled from the
         # pair/polarity systematics (a lockstep
@@ -88,6 +95,7 @@ def pass_shows(pi):
         # свободен от разрядов знака (нулевой) и пары с вопросом (первый).
         forge = ((base + i) // 4) % 2 == 0
         if add:
+            out.род = ПРИБАВКА
             (v1, v2) = ADD_PAIRS[pick]
             (ask, av) = ASK_ADD[
                 ((base + i) // 2) % 2
@@ -102,6 +110,7 @@ def pass_shows(pi):
                 f"{f': {a} + {b} = {c}' if forge else ''}."
             )
         else:
+            out.род = УБЫЛЬ
             (v1, v2) = SUB_PAIRS[pick]
             (ask, av) = ASK_SUB[
                 ((base + i) // 2) % 2
@@ -116,6 +125,53 @@ def pass_shows(pi):
                 f"{f': {a} − {b} = {c}' if forge else ''}."
             )
     return out
+
+
+# --------------------------------------------------------------- ОБЪЯВЛЕНИЕ ДОМА
+
+РОДЫ = (ПРИБАВКА, УБЫЛЬ)
+
+ЗАЧЕМ_РОДА = {
+    ПРИБАВКА: "a + b четырьмя парами глаголов и двумя вопросами — счёт один, слова разные",
+    УБЫЛЬ: "a − b теми же средствами: лексика есть предмет этого мира",
+}
+
+
+def страницы(pi):
+    return pass_shows(pi)
+
+
+def перебор_страниц(pi):
+    return pass_shows(pi).парами
+
+
+def группы(pi):
+    return [страницы(pi)]
+
+
+def _показы():
+    from layer import PASSES                             # noqa: PLC0415
+    вон = {}
+    for шаг in range(len(PASSES)):
+        for с, род in перебор_страниц(шаг):
+            for строка in с.split("\n"):
+                if строка.rstrip():
+                    вон.setdefault(строка.rstrip(), род)
+    return вон
+
+
+ПОКАЗЫ = _показы()
+
+
+def _самопроверка_дома():
+    assert set(ЗАЧЕМ_РОДА) == set(РОДЫ), "глосса рода разошлась с объявлением"
+    сбор = pass_shows(0)
+    assert len(сбор) == len(сбор.роды), "показ остался без рода"
+    пустые = set(РОДЫ) - set(ПОКАЗЫ.values())
+    assert not пустые, f"род объявлен и не кован: {sorted(пустые)}"
+
+
+_самопроверка_дома()
 
 
 def main():

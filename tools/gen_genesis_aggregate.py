@@ -16,7 +16,7 @@ the plural-bearer answer. Singular agreement by
 count (plural.by_count); i//8 decoupling.
 """
 
-from layer import emit
+from layer import Сбор, emit
 
 
 from gsm_items import ANIMATE
@@ -72,9 +72,16 @@ ASKS = [("hold together", "hold", False),
         ("own together", "own", True)]
 
 
+# ДВА РОДА НАЗВАНЫ КОММЕНТАРИЯМИ («the TRIPLE wave… the chain genus, not a second pair»)
+# И НЕ ВЫШЛИ НАРУЖУ. Пара и тройка — разные дела: у пары один шаг сложения, у тройки два,
+# и смежность режется дважды.
+ПАРА = "сумма двоих: один шаг сложения"
+ТРОЙКА = "сумма троих: два шага, и промежуточная сумма показана"
+
+
 def pass_shows(pi):
     base = pi * 47
-    out = []
+    out = Сбор()
     for i in range(len(NAMES) * 9):
         a = NAMES[
             (base + i + (i // 8) * 5)
@@ -110,6 +117,7 @@ def pass_shows(pi):
         # берётся со второго), у тройки — второй, ибо тройка идёт шагом
         # четыре и нулевой разряд в ней постоянен.
         forge = (base + i) % 2 == 0
+        out.род = ПАРА
         out.append(
             f"{a} has {x} {by_count(x, it)}. "
             f"{b} has {y} {by_count(y, it)}. "
@@ -133,6 +141,7 @@ def pass_shows(pi):
                 # ДВА ШАГА: смежность режется дважды, и кузница обязана
                 # показать промежуточную сумму, а не только итог.
                 steps3 = f": {x} + {y} = {x + y}, {x + y} + {z} = {s}"
+                out.род = ТРОЙКА
                 out.append(
                     f"{a} has {x} "
                     f"{by_count(x, it)}. "
@@ -148,6 +157,54 @@ def pass_shows(pi):
                     f"{steps3 if forge3 else ''}."
                 )
     return out
+
+
+# --------------------------------------------------------------- ОБЪЯВЛЕНИЕ ДОМА
+
+РОДЫ = (ПАРА, ТРОЙКА)
+
+ЗАЧЕМ_РОДА = {
+    ПАРА: "«a has x. b has y. how many do they have?» — x + y, и кузница через раз",
+    ТРОЙКА: "третий носитель встаёт СМЕЖНОСТЬЮ (запятая жизни срезана), союз стои́т перед "
+            "последним, и промежуточная сумма показана",
+}
+
+
+def страницы(pi):
+    return pass_shows(pi)
+
+
+def перебор_страниц(pi):
+    return pass_shows(pi).парами
+
+
+def группы(pi):
+    return [страницы(pi)]
+
+
+def _показы():
+    from layer import PASSES                             # noqa: PLC0415
+    вон = {}
+    for шаг in range(len(PASSES)):
+        for с, род in перебор_страниц(шаг):
+            for строка in с.split("\n"):
+                if строка.rstrip():
+                    вон.setdefault(строка.rstrip(), род)
+    return вон
+
+
+ПОКАЗЫ = _показы()
+
+
+def _самопроверка_дома():
+    assert set(ЗАЧЕМ_РОДА) == set(РОДЫ), "глосса рода разошлась с объявлением"
+    сбор = pass_shows(0)
+    assert len(сбор) == len(сбор.роды), "показ остался без рода"
+    пустые = set(РОДЫ) - set(ПОКАЗЫ.values())
+    assert not пустые, f"род объявлен и не кован: {sorted(пустые)}"
+
+
+_самопроверка_дома()
 
 
 def main():

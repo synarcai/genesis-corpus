@@ -1,17 +1,17 @@
-# суд	читает	поймал порч	поймал ОДИН	порч 2053	пойманных 1998	строк 755
+# суд	читает	поймал порч	поймал ОДИН	порч 2056	пойманных 2001	строк 756
 abs	3	9	4
 action_measure	4	12	4
 action_pages	5	12	4
-actturn	4	12	2
+actturn	4	12	6
 addshare	4	9	5
 age	4	12	3
 algo	4	12	2
 amend	4	12	4
 analog	1	3	1
 anaphora	4	12	5
-angle	2	6	3
-arith	500	46	2
-article	12	0	0
+angle	3	9	4
+arith	502	46	2
+article	11	0	0
 average	1	3	1
 beforetails	4	12	7
 both	2	6	2
@@ -21,7 +21,7 @@ calendar_langs	2	6	3
 ceilfloor	4	12	3
 chains_langs	4	4	3
 chance	2	6	3
-chancetrap	3	9	3
+chancetrap	3	9	4
 clockforms	4	12	6
 closure	2	6	2
 cmpframes	2	6	2
@@ -30,7 +30,7 @@ compare_langs	4	12	3
 compare_mult	5	10	6
 compsci	4	3	3
 cond	3	9	4
-corpusword	0	1120	26
+corpusword	0	1118	25
 countlaw	4	11	0
 cross	10	18	4
 cyber	2	4	2
@@ -60,6 +60,7 @@ handy	4	12	5
 hay	1	3	0
 holdforms	4	11	4
 holes	1	3	1
+homo	1	3	1
 houseshows	24	68	30
 idredup	1	2	0
 indu	19	4	1
@@ -72,7 +73,7 @@ jaclass	1	2	0
 joint2	4	12	3
 joints	4	12	2
 kinbearer	4	11	6
-langcount	317	47	0
+langcount	316	45	0
 langform	72	30	0
 langgen	115	162	42
 langmath	25	0	0
@@ -148,7 +149,7 @@ remainders_langs	4	12	4
 reply	1	2	0
 roman	4	12	6
 roundforms	4	12	5
-rowframe	28	4	3
+rowframe	28	4	4
 ru_compare	1	1	1
 ru_conversion	4	12	2
 ru_story	4	8	4
@@ -156,7 +157,7 @@ rugram	110	38	3
 ruverbs	1	1	0
 sameshare	3	9	5
 sceneforms	4	9	1
-script	23	737	0
+script	23	738	0
 search_langs	2	6	2
 selfmodelforms	4	12	6
 sequence	2	6	0
@@ -167,7 +168,7 @@ shares_percent	4	11	5
 signadd	4	12	4
 signedworld	2	6	3
 signrul	4	9	3
-speech	4	6	5
+speech	3	5	4
 speedforms	4	12	5
 squnit	2	5	4
 statistics	1	3	1

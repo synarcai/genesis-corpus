@@ -12,7 +12,7 @@ raw material. Instances vary by pass; no glyph pairs
 in-layer (worlds must not mix inside one file).
 """
 
-from layer import emit
+from layer import Сбор, emit
 import verbthings  # noqa: E402
 
 
@@ -54,9 +54,16 @@ SUB_PAIRS = [
 ]
 
 
+# ДВЕ ПОЛЯРНОСТИ — ДВА РОДА, И ЭТО СКАЗАНО КОММЕНТАРИЕМ НИЖЕ («the change verb v2 ADDS in
+# one genus and REMOVES in another — the algebra buys each law from its own shows»). Слово
+# «genus» стояло в теле и не вышло наружу.
+ПРИБАВКА = "прибавка: второй глагол пары ПРИБАВЛЯЕТ"
+УБЫЛЬ = "убыль: тот же по месту глагол УБАВЛЯЕТ"
+
+
 def pass_shows(pi):
     base = pi * 31
-    out = []
+    out = Сбор()
     for i in range(len(NAMES) * 6):
         nm = NAMES[(base + i) % len(NAMES)]
         # pair choice decoupled from polarity
@@ -84,6 +91,7 @@ def pass_shows(pi):
         # держит знак, первый — пару глаголов.
         forge = ((base + i) // 4) % 2 == 0
         if add:
+            out.род = ПРИБАВКА
             c = a + b
             out.append(
                 f"{nm} {av1} {a} {by_count(a, it)}. "
@@ -94,6 +102,7 @@ def pass_shows(pi):
                 f"{f': {a} + {b} = {c}' if forge else ''}."
             )
         else:
+            out.род = УБЫЛЬ
             c = a - b
             out.append(
                 f"{nm} {sv1} {a} {by_count(a, it)}. "
@@ -104,6 +113,55 @@ def pass_shows(pi):
                 f"{f': {a} − {b} = {c}' if forge else ''}."
             )
     return out
+
+
+# --------------------------------------------------------------- ОБЪЯВЛЕНИЕ ДОМА
+
+РОДЫ = (ПРИБАВКА, УБЫЛЬ)
+
+ЗАЧЕМ_РОДА = {
+    ПРИБАВКА: "«baked … then baked N more» — второй глагол пары прибавляет, и держание "
+              "названо словом hold",
+    УБЫЛЬ: "«baked … then sold N away» — второй глагол уносит, и держание названо keep: "
+           "алгебра покупает каждый закон со СВОИХ показов",
+}
+
+
+def страницы(pi):
+    return pass_shows(pi)
+
+
+def перебор_страниц(pi):
+    return pass_shows(pi).парами
+
+
+def группы(pi):
+    return [страницы(pi)]
+
+
+def _показы():
+    from layer import PASSES                             # noqa: PLC0415
+    вон = {}
+    for шаг in range(len(PASSES)):
+        for с, род in перебор_страниц(шаг):
+            for строка in с.split("\n"):
+                if строка.rstrip():
+                    вон.setdefault(строка.rstrip(), род)
+    return вон
+
+
+ПОКАЗЫ = _показы()
+
+
+def _самопроверка_дома():
+    assert set(ЗАЧЕМ_РОДА) == set(РОДЫ), "глосса рода разошлась с объявлением"
+    сбор = pass_shows(0)
+    assert len(сбор) == len(сбор.роды), "показ остался без рода"
+    пустые = set(РОДЫ) - set(ПОКАЗЫ.values())
+    assert not пустые, f"род объявлен и не кован: {sorted(пустые)}"
+
+
+_самопроверка_дома()
 
 
 def main():

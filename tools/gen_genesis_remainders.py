@@ -31,7 +31,7 @@ import pathlib
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from gsm_items import ANIMATE, ITEMS  # noqa: E402
-from layer import emit  # noqa: E402
+from layer import Сбор, emit  # noqa: E402
 from plural import by_count  # noqa: E402
 
 # ПУТЬ, СКАЗАННЫЙ ТОЛЬКО В ЗОВЕ, ЕСТЬ ПУТЬ, О КОТОРОМ НЕ ОБЪЯВЛЕНО (14.09): указатель
@@ -53,22 +53,34 @@ BARE = [
 ]
 
 
+# ТРИ РОДА: тождество деления, счёт частного с остатком и раздача между носителями.
+# Определение остатка («остаток — это то, что не разделилось») идёт к счёту, который оно
+# делает возможным: четырьмя строками на весь свод оно было бы родом ниже закона массы.
+ТОЖДЕСТВО = "тождество деления: a = b × q + r"
+ДЕЛЕНИЕ = "частное и остаток: сказано, спрошено и определено"
+РАЗДАЧА = "раздача между носителями: что осталось лишним"
+
+
 def pass_shows(pass_i):
-    out = []
+    out = Сбор()
     for i, (a, b) in enumerate(PAIRS):
         q, r = divmod(a, b)
         assert r and a == b * q + r, (a, b)
         thing = THINGS[(pass_i * 5 + i * 3) % len(THINGS)]
         who = SHARERS[(pass_i * 3 + i) % len(SHARERS)]
+        out.род = ТОЖДЕСТВО
         out.append(f"{a} = {b} × {q} + {r}.")
         # THE LEDGER OF THE DIVISION (holon 03.09, ONE-CARRIER: an answer that
         # is computed shows its steps): «5 × 3 = 15, 17 − 15 = 2»
         леджер = f"{b} × {q} = {b * q}, {a} − {b * q} = {r}"
+        out.род = ДЕЛЕНИЕ
         out.append(f"{a} divided by {b} is {q} remainder {r}: {леджер}.")
+        out.род = РАЗДАЧА
         out.append(
             f"{a} {by_count(a, thing)} shared among {b} "
             f"{by_count(b, who)} leaves {r} left over."
         )
+        out.род = ДЕЛЕНИЕ
         out.append(
             f"{a} разделить на {b} будет {q}, остаток {r}: {леджер}."
         )
@@ -81,9 +93,59 @@ def pass_shows(pass_i):
         out.append(
             f"what is {a} divided by {b}? {a} divided by {b} is {q} remainder {r}: {леджер}."
         )
+    out.род = ДЕЛЕНИЕ
     for tpl in BARE:
         out.append(tpl)
     return out
+
+
+# --------------------------------------------------------------- ОБЪЯВЛЕНИЕ ДОМА
+
+РОДЫ = (ТОЖДЕСТВО, ДЕЛЕНИЕ, РАЗДАЧА)
+
+ЗАЧЕМ_РОДА = {
+    ТОЖДЕСТВО: "«17 = 5 × 3 + 2» — равенство, из которого остаток и берётся",
+    ДЕЛЕНИЕ: "«17 разделить на 5 будет 3, остаток 2» с леджером — и «что такое остаток» "
+             "здесь же",
+    РАЗДАЧА: "«17 яблок на 5 друзей — 2 лишних»: тот же счёт в мире вещей",
+}
+
+
+def страницы(pass_i):
+    return pass_shows(pass_i)
+
+
+def перебор_страниц(pass_i):
+    return pass_shows(pass_i).парами
+
+
+def группы(pass_i):
+    return [страницы(pass_i)]
+
+
+def _показы():
+    from layer import PASSES                             # noqa: PLC0415
+    вон = {}
+    for шаг in range(len(PASSES)):
+        for с, род in перебор_страниц(шаг):
+            for строка in с.split("\n"):
+                if строка.rstrip():
+                    вон.setdefault(строка.rstrip(), род)
+    return вон
+
+
+ПОКАЗЫ = _показы()
+
+
+def _самопроверка_дома():
+    assert set(ЗАЧЕМ_РОДА) == set(РОДЫ), "глосса рода разошлась с объявлением"
+    сбор = pass_shows(0)
+    assert len(сбор) == len(сбор.роды), "показ остался без рода"
+    пустые = set(РОДЫ) - set(ПОКАЗЫ.values())
+    assert not пустые, f"род объявлен и не кован: {sorted(пустые)}"
+
+
+_самопроверка_дома()
 
 
 def main():

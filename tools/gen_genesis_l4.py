@@ -8,6 +8,7 @@ import pathlib as _pathlib
 
 sys.path.insert(0, str(_pathlib.Path(__file__).resolve().parent))
 import layer  # noqa: E402
+from layer import Сбор  # noqa: E402
 
 # (RU-subject, RU-object) with EN twins; facts are schoolbook-safe.
 FACTS = {
@@ -60,14 +61,28 @@ FACTS = {
 }
 
 
+# РОД — СВЯЗКА, А НЕ ЯЗЫК И НЕ ПОВЕРХНОСТЬ РЕЧИ (14.09). Четыре связки этого мира суть
+# четыре РАЗНЫХ отношения между вещами; «что вызывает X?» есть та же причинность,
+# спрошенная, а русская и английская стороны — одно отношение, сказанное дважды.
+ОПРЕДЕЛЕНИЕ = "связка «это»: вещь названа своим родом"
+ПРИЧИНА = "связка «вызывает»: причина и следствие"
+ВМЕЩЕНИЕ = "связка «содержит»: вместилище и вмещаемое"
+ЧАСТЬ = "связка «часть»: часть и целое"
+СВЯЗКИ = {"def": ОПРЕДЕЛЕНИЕ, "cause": ПРИЧИНА, "contain": ВМЕЩЕНИЕ, "part": ЧАСТЬ}
+
+
 def ru_lines(rng):
-    out = []
+    out = Сбор()
+    out.род = ОПРЕДЕЛЕНИЕ
     for (s, o), _ in FACTS["def"]:
         out.append(f"{s} — это {o}.")
+    out.род = ПРИЧИНА
     for (s, o), _ in FACTS["cause"]:
         out.append(f"{s} вызывает {o}.")
+    out.род = ВМЕЩЕНИЕ
     for (s, o), _ in FACTS["contain"]:
         out.append(f"{s} содержит {o}.")
+    out.род = ЧАСТЬ
     for (s, o), _ in FACTS["part"]:
         out.append(f"{s} — часть {o}.")
     # ВОПРОС У КАЖДОГО РОДА СВЯЗКИ, А НЕ У ОДНОГО (прибор широты вопроса
@@ -76,34 +91,46 @@ def ru_lines(rng):
     # Вопрос назван словом своего рода: «что вызывает», «что содержит», «часть
     # чего», — и ответ повторяет утверждение целиком, как велит закон пары.
     qs = rng.sample(FACTS["def"], 4)
+    out.род = ОПРЕДЕЛЕНИЕ
     for (s, o), _ in qs:
         out.append(f"что такое {s}? {s} — это {o}.")
+    out.род = ПРИЧИНА
     for (s, o), _ in rng.sample(FACTS["cause"], 4):
         out.append(f"что вызывает {o}? {s} вызывает {o}.")
+    out.род = ВМЕЩЕНИЕ
     for (s, o), _ in rng.sample(FACTS["contain"], 4):
         out.append(f"что содержит {s}? {s} содержит {o}.")
+    out.род = ЧАСТЬ
     for (s, o), _ in rng.sample(FACTS["part"], 4):
         out.append(f"часть чего {s}? {s} — часть {o}.")
     return out
 
 
 def en_lines(rng):
-    out = []
+    out = Сбор()
+    out.род = ОПРЕДЕЛЕНИЕ
     for _, (s, o) in FACTS["def"]:
         out.append(f"{s} is {o}.")
+    out.род = ПРИЧИНА
     for _, (s, o) in FACTS["cause"]:
         out.append(f"{s} causes {o}.")
+    out.род = ВМЕЩЕНИЕ
     for _, (s, o) in FACTS["contain"]:
         out.append(f"{s} contains {o}.")
+    out.род = ЧАСТЬ
     for _, (s, o) in FACTS["part"]:
         out.append(f"{s} is part of {o}.")
     qs = rng.sample(FACTS["def"], 4)
+    out.род = ОПРЕДЕЛЕНИЕ
     for _, (s, o) in qs:
         out.append(f"what is {s}? {s} is {o}.")
+    out.род = ПРИЧИНА
     for _, (s, o) in rng.sample(FACTS["cause"], 4):
         out.append(f"what causes {o}? {s} causes {o}.")
+    out.род = ВМЕЩЕНИЕ
     for _, (s, o) in rng.sample(FACTS["contain"], 4):
         out.append(f"what does {s} contain? {s} contains {o}.")
+    out.род = ЧАСТЬ
     for _, (s, o) in rng.sample(FACTS["part"], 4):
         out.append(f"what is {s} part of? {s} is part of {o}.")
     return out
@@ -142,6 +169,43 @@ def main():
     with open(path, "w", encoding="utf-8") as f:
         f.write(text)
     print(f"L4: RU={len(ru)} EN={len(en)} строк-базы, файл={path}, байт={len(text.encode('utf-8'))}")
+
+
+# --------------------------------------------------------------- ОБЪЯВЛЕНИЕ ДОМА
+
+РОДЫ = (ОПРЕДЕЛЕНИЕ, ПРИЧИНА, ВМЕЩЕНИЕ, ЧАСТЬ)
+
+ЗАЧЕМ_РОДА = {
+    ОПРЕДЕЛЕНИЕ: "«собака — это животное»: вещь названа своим родом, и вопрос «что такое» "
+                 "отвечен тем же утверждением",
+    ПРИЧИНА: "«дождь вызывает лужи»: причина названа причиной, а не соседством",
+    ВМЕЩЕНИЕ: "«коробка содержит книги»: вместилище и вмещаемое",
+    ЧАСТЬ: "«колесо — часть машины»: часть и целое, и это НЕ вмещение",
+}
+
+# ПОСТРОЧНЫЙ СЛОВАРЬ СТРОИТСЯ ТЕМ ЖЕ ЗЕРНОМ, ЧТО И МИР: `random.Random(41)` — то же
+# число, каким кует `main`, и выборка вопросов совпадает строка в строку. Двум зёрнам
+# разойтись негде, ибо оно одно.
+def _показы():
+    вон = {}
+    rng = random.Random(41)
+    for сбор in (ru_lines(rng), en_lines(rng)):
+        for с, род in сбор.парами:
+            if с.rstrip():
+                вон.setdefault(с.rstrip(), род)
+    return вон
+
+
+ПОКАЗЫ = _показы()
+
+
+def _самопроверка_дома():
+    assert set(ЗАЧЕМ_РОДА) == set(РОДЫ), "глосса рода разошлась с объявлением"
+    пустые = set(РОДЫ) - set(ПОКАЗЫ.values())
+    assert not пустые, f"род объявлен и не кован: {sorted(пустые)}"
+
+
+_самопроверка_дома()
 
 
 if __name__ == "__main__":
