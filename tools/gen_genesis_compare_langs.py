@@ -19,25 +19,8 @@ from layer import emit_grouped  # noqa: E402
 ЦЕЛЬ = "datasets/genesis_compare_langs.txt"
 
 
-def язык_группа(шаг, язык):
-    вон = []
-    имена = F.ИМЕНА[язык]
-    for i in range(6):
-        A = имена[(шаг * 3 + i * 2) % len(имена)]
-        B = имена[(шаг * 3 + i * 2 + 1) % len(имена)]
-        в = F.ВЕЩИ[язык][(шаг + i) % 4]
-        y = 2 + (шаг * 5 + i * 3) % 9
-        d = 1 + (шаг * 2 + i * 5) % 8
-        x = y + d
-        вон.append(F.больше(язык, A, B, x, y, в) if i % 2 == 0 else F.вопрос_больше(язык, A, B, x, y, в))
-        k = 2 + (шаг + i) % 4
-        y2 = 2 + (шаг * 7 + i) % 6
-        вон.append(F.вопрос_кратно(язык, A, B, y2 * k, y2, в) if i % 2 == 0 else F.кратно(язык, A, B, y2 * k, y2, в))
-    return вон
-
-
 def pass_groups(шаг):
-    return [язык_группа(шаг, язык) for язык in F.ФРАЗЫ]
+    return F.группы(шаг)
 
 
 def main():
