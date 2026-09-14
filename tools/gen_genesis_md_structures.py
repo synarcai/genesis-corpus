@@ -183,14 +183,70 @@ def refusal_shows():
     return out
 
 
+# ВОСЕМЬ СТРОИТЕЛЕЙ ЕСТЬ ВОСЕМЬ РОДОВ, И ИМЯ КАЖДОГО СТОЯЛО В ИМЕНИ ФУНКЦИИ (14.09).
+# Таблица связывает их поимённо: прибавить род — значит объявить пару, а не дописать
+# восьмой вызов в список.
+КУЗНЕЦЫ = (
+    ("заголовок разметки и его пересказ прозой", heading_shows),
+    ("список разметки и его пересказ прозой", list_shows),
+    ("вложение разделов: раздел содержит раздел", nesting_shows),
+    ("переход диаграммы: стрелка и её пересказ", mermaid_transit_shows),
+    ("рисунок разметки", draw_shows),
+    ("шаг формулы в разметке", formula_step_shows),
+    ("вопрос о разметке", question_shows),
+    ("отказ с основанием в разметке", refusal_shows),
+)
+
+
 def pass_groups(_pi):
     """The kinds of a pass — the same eight in every pass; declared at module level so
     an instrument (the copies census) can read the shows' shape without writing."""
-    return [
-        heading_shows(), list_shows(), nesting_shows(),
-        mermaid_transit_shows(), draw_shows(),
-        formula_step_shows(), question_shows(), refusal_shows(),
-    ]
+    return [строить() for _имя, строить in КУЗНЕЦЫ]
+
+
+# --------------------------------------------------------------- ОБЪЯВЛЕНИЕ ДОМА
+
+РОДЫ = tuple(имя for имя, _строить in КУЗНЕЦЫ)
+
+ЗАЧЕМ_РОДА = {имя: f"страницы, какие строит `{строить.__name__}`" for имя, строить in КУЗНЕЦЫ}
+
+
+def группы(pi):
+    return pass_groups(pi)
+
+
+def страницы(pi):
+    return [с for г in группы(pi) for с in г]
+
+
+def перебор_страниц(_pi):
+    """[(строка, род)] — ТА ЖЕ ТАБЛИЦА, прочтённая обоими столбцами."""
+    return [(с, имя) for имя, строить in КУЗНЕЦЫ for с in строить()]
+
+
+def _показы():
+    вон = {}
+    for с, род in перебор_страниц(0):
+        for строка in с.split("\n"):
+            if строка.rstrip():
+                вон.setdefault(строка.rstrip(), род)
+    return вон
+
+
+ПОКАЗЫ = _показы()
+
+
+def _самопроверка_дома():
+    assert set(ЗАЧЕМ_РОДА) == set(РОДЫ), "глосса рода разошлась с объявлением"
+    assert len(set(РОДЫ)) == len(РОДЫ), "имя рода названо дважды"
+    из_групп = [с for г in группы(0) for с in г]
+    if из_групп != [с for с, _р in перебор_страниц(0)]:
+        raise AssertionError("перебор разошёлся с группами")
+    пустые = set(РОДЫ) - set(ПОКАЗЫ.values())
+    assert not пустые, f"род объявлен и не кован: {sorted(пустые)}"
+
+
+_самопроверка_дома()
 
 
 def main():

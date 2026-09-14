@@ -31,7 +31,7 @@ import sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import rugram
 from plural import by_count  # noqa: E402
-from layer import emit  # noqa: E402
+from layer import Сбор, emit  # noqa: E402
 import mass  # noqa: E402
 
 # ПУТЬ, СКАЗАННЫЙ ТОЛЬКО В ЗОВЕ, ЕСТЬ ПУТЬ, О КОТОРОМ НЕ ОБЪЯВЛЕНО (14.09): указатель
@@ -118,8 +118,17 @@ def спросить(искомое, предмет, ответ):
     return f"{СПРОСИТЬ[искомое].format(предмет=предмет, равно=_равно(предмет))} {ответ}"
 
 
+# ШЕСТЬ РОДОВ НАЗВАНЫ РАЗДЕЛАМИ «# ---» И НЕ ВЫШЛИ НАРУЖУ.
+ПИФАГОР = "теорема Пифагора: правило и его подстановка числами"
+ПЛОЩАДИ = "площади прямоугольника и треугольника"
+БИНОМ = "тождества бинома, подставленные числами"
+СУММА_ПЕРВЫХ = "сумма первых n чисел"
+РОСТ = "геометрический рост: степень и её значение"
+ДИАГРАММА = "диаграмма: формула, записанная рисунком"
+
+
 def pass_shows(pass_i):
-    out = []
+    out = Сбор()
     for i in range(WIDTH):
         k0 = mass.шаг(pass_i, i, WIDTH)
         a, b, c = TRIPLES[k0 % len(TRIPLES)]
@@ -128,6 +137,7 @@ def pass_shows(pass_i):
         p, q = mass.пара(k0, FIRSTS, SECONDS)
         n = SUMS[k0 % len(SUMS)]
         g, k = mass.пара(k0, BASES_G, EXPONENTS)
+        out.род = ПИФАГОР
         # --- Pythagoras
         пиф_en = f"a^2 + b^2 = c^2 with a = {a} and b = {b}"
         пиф_ru = f"формула a^2 + b^2 = c^2 при a = {a} и b = {b}"
@@ -139,6 +149,7 @@ def pass_shows(pass_i):
         out.append(спросить("катет", пиф_ru, утв_п_ru))
         out.append(f"die formel a^2 + b^2 = c^2 mit a = {a} und b = {b} "
                    f"ergibt c = {c}.")
+        out.род = ПЛОЩАДИ
         # --- rectangle and triangle areas
         пр_en, пр_ru = f"a rectangle {w} by {h}", f"прямоугольника {w} на {h}"
         утв_пр_en = f"the area of {пр_en} is {w * h}."
@@ -172,6 +183,7 @@ def pass_shows(pass_i):
             отв_ru = f"да: {нб} × {нв} = {произв}, {произв} ÷ 2 = {произв // 2}."
         out.append(спросить("whole_area", f"a triangle with base {нб} and height {нв}", отв_en))
         out.append(спросить("целая_площадь", f"треугольника с основанием {нб} и высотой {нв}", отв_ru))
+        out.род = БИНОМ
         # --- binomial identities, instantiated
         out.append(f"( {p} + {q} )^2 = {p}^2 + 2 × {p} × {q} + {q}^2 = "
                    f"{(p + q) ** 2}.")
@@ -181,6 +193,7 @@ def pass_shows(pass_i):
                             f"{квадрат} = {(p + q) ** 2}."))
         out.append(f"{p}^2 − {q}^2 = ( {p} − {q} ) × ( {p} + {q} ) = "
                    f"{p * p - q * q}.")
+        out.род = СУММА_ПЕРВЫХ
         # --- the sum of the first n
         сум_en = f"the sum of the first {n} {by_count(n, 'numbers')}"
         сум_ru = f"сумма первых {n} чисел"
@@ -190,6 +203,7 @@ def pass_shows(pass_i):
         out.append(утв_с_ru)
         out.append(спросить("value", сум_en, утв_с_en))
         out.append(спросить("значение", сум_ru, утв_с_ru))
+        out.род = РОСТ
         # --- geometric growth
         ст_en, ст_ru = f"{g} to the power {k}", f"{g} в степени {k}"
         утв_ст_en, утв_ст_ru = f"{ст_en} is {g ** k}.", f"{ст_ru} равно {g ** k}."
@@ -197,6 +211,7 @@ def pass_shows(pass_i):
         out.append(утв_ст_ru)
         out.append(спросить("value", ст_en, утв_ст_en))
         out.append(спросить("значение", ст_ru, утв_ст_ru))
+        out.род = ДИАГРАММА
         # --- diagrams
         текст, узлов, рёбер, откуда, куда, шагов = GRAPHS[
             (pass_i * 3 + i) % len(GRAPHS)]
@@ -232,6 +247,57 @@ def pass_shows(pass_i):
                    f"{'kante' if рёбер == 1 else 'kanten'}.")
         out.append(f"{текст} 这个图有{zh}条边。")
     return out
+
+
+# --------------------------------------------------------------- ОБЪЯВЛЕНИЕ ДОМА
+
+РОДЫ = (ПИФАГОР, ПЛОЩАДИ, БИНОМ, СУММА_ПЕРВЫХ, РОСТ, ДИАГРАММА)
+
+ЗАЧЕМ_РОДА = {
+    ПИФАГОР: "a² + b² = c², и тут же тройка, на которой это проверено",
+    ПЛОЩАДИ: "площадь прямоугольника и половина её у треугольника",
+    БИНОМ: "(a + b)² и (a − b)², раскрытые и посчитанные",
+    СУММА_ПЕРВЫХ: "n(n + 1)/2 — формула и её значение",
+    РОСТ: "aⁿ: рост, который надо увидеть числом",
+    ДИАГРАММА: "та же формула, записанная рисунком",
+}
+
+
+def страницы(pass_i):
+    return pass_shows(pass_i)
+
+
+def перебор_страниц(pass_i):
+    return pass_shows(pass_i).парами
+
+
+def группы(pass_i):
+    return [страницы(pass_i)]
+
+
+def _показы():
+    from layer import PASSES                             # noqa: PLC0415
+    вон = {}
+    for шаг in range(len(PASSES)):
+        for с, род in перебор_страниц(шаг):
+            for строка in с.split("\n"):
+                if строка.rstrip():
+                    вон.setdefault(строка.rstrip(), род)
+    return вон
+
+
+ПОКАЗЫ = _показы()
+
+
+def _самопроверка_дома():
+    assert set(ЗАЧЕМ_РОДА) == set(РОДЫ), "глосса рода разошлась с объявлением"
+    сбор = pass_shows(0)
+    assert len(сбор) == len(сбор.роды), "показ остался без рода"
+    пустые = set(РОДЫ) - set(ПОКАЗЫ.values())
+    assert not пустые, f"род объявлен и не кован: {sorted(пустые)}"
+
+
+_самопроверка_дома()
 
 
 def main():

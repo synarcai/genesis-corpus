@@ -34,7 +34,7 @@ import pathlib
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-from layer import emit  # noqa: E402
+from layer import Сбор, emit  # noqa: E402
 import mass  # noqa: E402
 from plural import by_count  # noqa: E402
 
@@ -89,8 +89,21 @@ def spaced(xs):
     return " ".join(str(x) for x in xs)
 
 
+# ДЕСЯТЬ РОДОВ НАЗВАНЫ РАЗДЕЛАМИ «# ---» И НЕ ВЫШЛИ НАРУЖУ. Вопрос идёт в род своего дела:
+# «что даёт сортировка …?» есть сортировка, спрошенная, а не род «вопрос».
+ХОД_НАД_СПИСКОМ = "ход над списком: сортировка и разворот"
+ВЕЛИЧИНА_СПИСКА = "величина списка: максимум, минимум, сумма, длина"
+ОТКАЗ_ПО_МЕСТУ = "отказ с основанием: за концом списка места нет"
+ЧИСЛА = "теория чисел: нод, нок, простота, факториал, степень"
+ФИБОНАЧЧИ = "рекурсия по номеру: число Фибоначчи"
+СЛОЖНОСТЬ = "сложность: сколько шагов на столько-то элементов"
+СТРУКТУРА = "структура данных: что вернётся первым"
+ЗАПИСЬ = "позиционная запись: двоичная"
+ЧАСТНОЕ = "частное и остаток алгоритмической поверхностью"
+
+
 def pass_shows(pass_i):
-    out = []
+    out = Сбор()
     for i in range(WIDTH):
         k0 = mass.шаг(pass_i, i, WIDTH)
         xs = LISTS[k0 % len(LISTS)]
@@ -100,6 +113,7 @@ def pass_shows(pass_i):
         base, exp = mass.пара(k0, BASES, EXPONENTS)
         size = SIZES[k0 % len(SIZES)]
         # --- list operations
+        out.род = ХОД_НАД_СПИСКОМ
         ряд = spaced(xs)
         for пред_en, итог_en, пред_ru, итог_ru in (
                 (f"sorting {ряд}", spaced(sorted(xs)),
@@ -112,6 +126,7 @@ def pass_shows(pass_i):
             out.append(утв_ru)
             out.append(спросить("gives", пред_en, утв_en))
             out.append(спросить("даёт", пред_ru, утв_ru))
+        out.род = ВЕЛИЧИНА_СПИСКА
         for имя_en, имя_ru, связка, значение in (
                 ("the maximum of", "максимум", "равен", max(xs)),
                 ("the minimum of", "минимум", "равен", min(xs)),
@@ -128,6 +143,7 @@ def pass_shows(pass_i):
         # ОТКАЗ С ОСНОВАНИЕМ: места за концом списка нет, и основание
         # вычислимо — длина списка меньше названного места. Мир,
         # умеющий только утверждать, учит соглашаться.
+        out.род = ОТКАЗ_ПО_МЕСТУ
         место = len(xs) + 1 + (len(xs) % 3)
         out.append(f"what is at place {место} of {ряд}? no item at "
                    f"place {место}: the list {ряд} has {len(xs)} "
@@ -136,6 +152,7 @@ def pass_shows(pass_i):
                    f"месте {место} нет ничего: в списке {ряд} всего "
                    f"{len(xs)} элементов.")
         # --- number theory
+        out.род = ЧИСЛА
         out.append(f"the gcd of {a} and {b} is {math.gcd(a, b)}.")
         out.append(f"нод {a} и {b} равен {math.gcd(a, b)}.")
         out.append(f"the lcm of {a} and {b} is {a * b // math.gcd(a, b)}.")
@@ -148,12 +165,14 @@ def pass_shows(pass_i):
         out.append(f"{base} to the power {exp} is {base ** exp}.")
         out.append(f"{base} в степени {exp} равно {base ** exp}.")
         # --- recursion by index
+        out.род = ФИБОНАЧЧИ
         фиб = [0, 1]
         while len(фиб) <= n:
             фиб.append(фиб[-1] + фиб[-2])
         out.append(f"fibonacci number {n} is {фиб[n]}.")
         out.append(f"число фибоначчи номер {n} равно {фиб[n]}.")
         # --- complexity, the first fact of engineering
+        out.род = СЛОЖНОСТЬ
         шагов = math.ceil(math.log2(size)) if size > 1 else 1
         out.append(
             f"linear search on {size} {by_count(size, 'items')} takes at "
@@ -177,6 +196,7 @@ def pass_shows(pass_i):
             f"двоичный поиск по {size} {дат} требует не более "
             f"{шагов} {'шага' if шагов == 1 else 'шагов'}.")
         # --- data structures: what comes back first
+        out.род = СТРУКТУРА
         out.append(
             f"pushing {spaced(xs)} on a stack and popping gives {xs[-1]}.")
         out.append(
@@ -186,9 +206,11 @@ def pass_shows(pass_i):
         out.append(
             f"добавив {spaced(xs)} в очередь и взяв, получаем {xs[0]}.")
         # --- positional notation
+        out.род = ЗАПИСЬ
         out.append(f"{n} in binary is {n:b}.")
         out.append(f"{n} в двоичной записи это {n:b}.")
         # --- quotient and remainder, the algorithmic surface
+        out.род = ЧАСТНОЕ
         q, r = divmod(a, b) if a >= b else divmod(b, a)
         hi, lo = (a, b) if a >= b else (b, a)
         out.append(
@@ -196,6 +218,62 @@ def pass_shows(pass_i):
         out.append(
             f"деление {hi} на {lo} даёт частное {q} и остаток {r}.")
     return out
+
+
+# --------------------------------------------------------------- ОБЪЯВЛЕНИЕ ДОМА
+
+РОДЫ = (ХОД_НАД_СПИСКОМ, ВЕЛИЧИНА_СПИСКА, ОТКАЗ_ПО_МЕСТУ, ЧИСЛА, ФИБОНАЧЧИ, СЛОЖНОСТЬ,
+        СТРУКТУРА, ЗАПИСЬ, ЧАСТНОЕ)
+
+ЗАЧЕМ_РОДА = {
+    ХОД_НАД_СПИСКОМ: "сортировка и разворот: ход назван и его итог показан",
+    ВЕЛИЧИНА_СПИСКА: "четыре величины одного ряда, каждая со своей связкой",
+    ОТКАЗ_ПО_МЕСТУ: "«на месте 7 нет ничего: в списке 5 элементов» — основание вычислимо, "
+                    "а мир, умеющий только утверждать, учит соглашаться",
+    ЧИСЛА: "нод, нок, простота, факториал, степень — счёт над двумя числами и над одним",
+    ФИБОНАЧЧИ: "рекурсия, взятая по номеру, а не по формуле",
+    СЛОЖНОСТЬ: "log₂ N шагов на N элементов — первый факт ремесла",
+    СТРУКТУРА: "стек и очередь: что вернётся первым",
+    ЗАПИСЬ: "то же число в двоичной записи",
+    ЧАСТНОЕ: "частное и остаток, сказанные алгоритмом, а не делением",
+}
+
+
+def страницы(pass_i):
+    return pass_shows(pass_i)
+
+
+def перебор_страниц(pass_i):
+    return pass_shows(pass_i).парами
+
+
+def группы(pass_i):
+    return [страницы(pass_i)]
+
+
+def _показы():
+    from layer import PASSES                             # noqa: PLC0415
+    вон = {}
+    for шаг in range(len(PASSES)):
+        for с, род in перебор_страниц(шаг):
+            for строка in с.split("\n"):
+                if строка.rstrip():
+                    вон.setdefault(строка.rstrip(), род)
+    return вон
+
+
+ПОКАЗЫ = _показы()
+
+
+def _самопроверка_дома():
+    assert set(ЗАЧЕМ_РОДА) == set(РОДЫ), "глосса рода разошлась с объявлением"
+    сбор = pass_shows(0)
+    assert len(сбор) == len(сбор.роды), "показ остался без рода"
+    пустые = set(РОДЫ) - set(ПОКАЗЫ.values())
+    assert not пустые, f"род объявлен и не кован: {sorted(пустые)}"
+
+
+_самопроверка_дома()
 
 
 def main():

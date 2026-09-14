@@ -37,7 +37,7 @@ No glyph pairs in-layer (worlds must not mix inside one file); the
 count chooses the form through the shared `plural` organ.
 """
 
-from layer import emit
+from layer import Сбор, emit
 
 
 from gsm_items import ANIMATE, ITEMS
@@ -96,8 +96,18 @@ BARE_SINGULAR_ANIM = [
 ]
 
 
+# ШЕСТЬ РОДОВ НАЗВАНЫ КОММЕНТАРИЯМИ НАД ВЕТВЯМИ И НЕ ВЫШЛИ НАРУЖУ. Одушевлённость вещи —
+# не род, а ПРЕДМЕТ: она меняет глаголы и вопрос, но не дело.
+ПРИБАВКА = "прибавка: акт и ещё акт того же носителя"
+УБЫЛЬ = "убыль: отдано не больше своего"
+ЦЕПЬ_АКТОВ = "цепь актов: сделал, продал, сделал ещё — на сколько больше сделал"
+БЕЗ_НОСИТЕЛЯ = "держание без носителя: страница открывается МЕСТОМ, а не лицом"
+МНОЖЕСТВЕННОЕ = "голая форма множественного при вещи"
+ЕДИНСТВЕННОЕ = "голая форма единственного при вещи"
+
+
 def pass_shows(pass_i):
-    out = []
+    out = Сбор()
     for i, it in enumerate(ITEMS):
         seed = pass_i * 31 + i * 7
         a = NAMES[seed % len(NAMES)]
@@ -135,6 +145,7 @@ def pass_shows(pass_i):
                 "пишется" % (it, "сложения" if not add else "вычитания"))
         v1, v2 = add[seed % len(add)]
         s1, s2 = sub[seed % len(sub)]
+        out.род = ПРИБАВКА
         out.append(
             f"{a} {v1} {n} {by_count(n, it)}. "
             f"{a} {v2} {m} {by_count(m, it)} more. "
@@ -144,6 +155,7 @@ def pass_shows(pass_i):
         # NOBODY GIVES AWAY MORE THAN THEY HAVE (the heads layer showed
         # «keeps -1 coins» five times before this law was written down)
         gave = min(n, m)
+        out.род = УБЫЛЬ
         out.append(
             f"{b} {s1} {n} {by_count(n, it)}. "
             f"{b} {s2} {gave} {by_count(gave, it)}{tail}. "
@@ -154,6 +166,7 @@ def pass_shows(pass_i):
         # then made N more … how many more did X make than sell?» — оба
         # звена цепью; вещи только неодушевлённые.
         if not anim:
+            out.род = ЦЕПЬ_АКТОВ
             sold = min(n, m)
             # с «more» и без него поровну (e9): иначе «more» купится как
             # условие суммы, а SVAMP пишет обе формы
@@ -168,6 +181,7 @@ def pass_shows(pass_i):
         # opens 44 of 726 problems): the page opens with the place, not with
         # an actor; the three question forms of the decrease alternate.
         if n - m >= 2 and m >= 2:
+            out.род = БЕЗ_НОСИТЕЛЯ
             if anim:
                 место = МЕСТА_ЛЮДЕЙ[seed % len(МЕСТА_ЛЮДЕЙ)]
                 вопрос = ВОПРОСЫ_ДЕРЖАНИЯ[seed % len(ВОПРОСЫ_ДЕРЖАНИЯ)].format(it=it)
@@ -176,13 +190,68 @@ def pass_shows(pass_i):
                 место = МЕСТА_ВЕЩЕЙ[seed % len(МЕСТА_ВЕЩЕЙ)]
                 вопрос = ВОПРОСЫ_ДЕРЖАНИЯ[seed % len(ВОПРОСЫ_ДЕРЖАНИЯ)].format(it=it)
                 out.append(f"there are {n} {it} {место}. {a} took {m} {it}. {вопрос} {n} − {m} = {n - m}.")
+        out.род = МНОЖЕСТВЕННОЕ
         for tpl in (BARE_PLURAL_ANIM if anim
                     else BARE_PLURAL):
             out.append(tpl.format(a=a, it=it))
+        out.род = ЕДИНСТВЕННОЕ
         for tpl in (BARE_SINGULAR_ANIM if anim
                     else BARE_SINGULAR):
             out.append(tpl.format(a=b, one=one))
     return out
+
+
+# --------------------------------------------------------------- ОБЪЯВЛЕНИЕ ДОМА
+
+РОДЫ = (ПРИБАВКА, УБЫЛЬ, ЦЕПЬ_АКТОВ, БЕЗ_НОСИТЕЛЯ, МНОЖЕСТВЕННОЕ, ЕДИНСТВЕННОЕ)
+
+ЗАЧЕМ_РОДА = {
+    ПРИБАВКА: "n + m, и глагол берётся из пар, какие ДАННАЯ вещь принимает",
+    УБЫЛЬ: "n − m, где отданное не больше своего: «keeps −1 coins» есть ложь о мире",
+    ЦЕПЬ_АКТОВ: "два звена цепью: «сделал n, продал столько-то, сделал ещё m — на сколько "
+                "больше сделал, чем продал»",
+    БЕЗ_НОСИТЕЛЯ: "«there were N … » — страница открывается МЕСТОМ, а не лицом: 44 задачи "
+                  "из 726 в SVAMP устроены так",
+    МНОЖЕСТВЕННОЕ: "голая форма множественного числа при этой вещи",
+    ЕДИНСТВЕННОЕ: "голая форма единственного — та, при которой «1» ведёт себя как один",
+}
+
+
+def страницы(pass_i):
+    return pass_shows(pass_i)
+
+
+def перебор_страниц(pass_i):
+    return pass_shows(pass_i).парами
+
+
+def группы(pass_i):
+    return [страницы(pass_i)]
+
+
+def _показы():
+    from layer import PASSES                             # noqa: PLC0415
+    вон = {}
+    for шаг in range(len(PASSES)):
+        for с, род in перебор_страниц(шаг):
+            for строка in с.split("\n"):
+                if строка.rstrip():
+                    вон.setdefault(строка.rstrip(), род)
+    return вон
+
+
+ПОКАЗЫ = _показы()
+
+
+def _самопроверка_дома():
+    assert set(ЗАЧЕМ_РОДА) == set(РОДЫ), "глосса рода разошлась с объявлением"
+    сбор = pass_shows(0)
+    assert len(сбор) == len(сбор.роды), "показ остался без рода"
+    пустые = set(РОДЫ) - set(ПОКАЗЫ.values())
+    assert not пустые, f"род объявлен и не кован: {sorted(пустые)}"
+
+
+_самопроверка_дома()
 
 
 def main():
