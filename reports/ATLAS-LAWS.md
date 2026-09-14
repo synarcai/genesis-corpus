@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 404 законов
+# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 408 законов
 
 Собран из докстрингов и комментариев `tools`, `courts`, `scripts` орудием
 `tools/law_atlas.py`. Взяты ОБЩИЕ законы — те, что держатся не одним файлом.
@@ -6,7 +6,7 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 6227 разных законов на 7757 упоминаний; сказанных однажды — 5823, и они остаются при своём месте.
+Всего в дереве 6231 разных законов на 7777 упоминаний; сказанных однажды — 5823, и они остаются при своём месте.
 
 
 ## Держат 81 файлов
@@ -96,6 +96,8 @@
   courts/algo_court.py, courts/compsci_court.py, courts/cyber_court.py, courts/formula_court.py, courts/linalg_court.py, courts/machine_court.py … и ещё 8
 - **ИСКОМОЕ ОБЪЯВЛЯЕТ СВОЙ ВОПРОС ОДИН РАЗ**  
   tools/compsciforms.py, tools/gen_genesis_algebra.py, tools/gen_genesis_algorithms.py, tools/gen_genesis_cybernetics.py, tools/gen_genesis_formulas.py, tools/gen_genesis_machine.py … и ещё 8
+- **МИР, ЧЬИ СТРАНИЦЫ НЕ НАЗВАНЫ РОДОМ, ЧИТАЕТСЯ ТОЛЬКО ТЕМ, КТО ЧИТАЕТ КУЗНИЦУ**  
+  tools/cmpmultforms.py, tools/gen_genesis_compare_mult.py, tools/gen_genesis_definitions.py, tools/gen_genesis_formula_lang.py, tools/gen_genesis_markdown.py, tools/gen_genesis_space.py … и ещё 8
 - **ОСТАЛЬНАЯ СТРАНИЦА У НЕГО НЕ**  
   scripts/house_mutant.py, tools/absforms.py, tools/deplurforms.py, tools/elisionforms.py, tools/genderforms.py, tools/hayforms.py … и ещё 8
 - **ПРОВЕРЯЕТСЯ, А ЛИШЬ ЧИСЛИТСЯ**  
@@ -138,8 +140,6 @@
 
 - **ДОМ, ОБЪЯВИВШИЙ РОДЫ И НЕ ОТДАВШИЙ СТРАНИЦ, ОБЕЩАЕТ ИМЕНА, КОТОРЫХ НЕКОМУ ПРИЛОЖИТЬ**  
   tools/calforms.py, tools/chainforms.py, tools/cmpforms.py, tools/countforms.py, tools/physforms.py, tools/primeforms.py … и ещё 4
-- **МИР, ЧЬИ СТРАНИЦЫ НЕ НАЗВАНЫ РОДОМ, ЧИТАЕТСЯ ТОЛЬКО ТЕМ, КТО ЧИТАЕТ КУЗНИЦУ**  
-  tools/cmpmultforms.py, tools/gen_genesis_compare_mult.py, tools/gen_genesis_definitions.py, tools/gen_genesis_formula_lang.py, tools/gen_genesis_markdown.py, tools/gen_genesis_space.py … и ещё 4
 - **ОБЕ СТОРОНЫ ЛОВУШКИ ИДУТ ОДНОЙ ГРУППОЙ**  
   tools/gen_genesis_homo.py, tools/gen_genesis_measure.py, tools/gen_genesis_median.py, tools/gen_genesis_numline.py, tools/gen_genesis_overlap.py, tools/gen_genesis_pctbase.py … и ещё 4
 - **ОБЕ СТОРОНЫ ЛОВУШКИ ОБЯЗАНЫ БЫТЬ ПОКАЗАНЫ**  
@@ -218,7 +218,7 @@
 ## Держат 5 файлов
 
 - **БУКВА ПЕРЕМЕННОЙ ЕСТЬ ДЫРА, А НЕ СЛОВО**  
-  tools/gen_genesis_inquiry_de_fr.py, tools/gen_genesis_inquiry_es_it.py, tools/gen_genesis_inquiry_pl_tr.py, tools/gen_genesis_inquiry_pt_nl.py, tools/inquiryforms.py
+  tools/inqdefr.py, tools/inqesit.py, tools/inqpltr.py, tools/inqptnl.py, tools/inquiryforms.py
 - **ВВОЗ ЕСТЬ СВЯЗЬ, НО НАЙТИ ЕЁ УКАЗАТЕЛЬ МОЖЕТ ЛИШЬ ТАМ, ГДЕ ОБЪЯВЛЕНА ЦЕЛЬ**  
   tools/gen_genesis_geometry.py, tools/gen_genesis_linalg.py, tools/gen_genesis_md_latex.py, tools/gen_genesis_numbers.py, tools/gen_genesis_surfaces.py
 - **ГРАНИЦА ОБЪЯВЛЕНИЯ СКАЗАНА ПРЯМО**  
@@ -246,8 +246,12 @@
 
 - **ВОПРОС СУДИТСЯ СВОИМ ОТВЕТОМ**  
   courts/mathspaces_court.py, courts/number_court.py, courts/physics_court.py, courts/sequence_court.py
+- **ГРАНИЦА ПЕРЕЕЗДА, ВЗЯТАЯ ПО ОБЫЧАЮ, А НЕ ПО ФАЙЛУ, ОСТАВЛЯЕТ ПОЗАДИ ТО**  
+  tools/inqdefr.py, tools/inqesit.py, tools/inqpltr.py, tools/inqptnl.py
 - **ГРУППА, ПРИБАВЛЕННАЯ К ПРОХОДУ МИМО КОРТЕЖА, ЕСТЬ РОД, О КОТОРОМ ОБЪЯВЛЕНИЕ МОЛЧИТ**  
   tools/geomforms.py, tools/linalgforms.py, tools/mathspaceforms.py, tools/seriesforms.py
+- **ДВЕ ПОСЛЕДНИЕ ГРУППЫ ПРИХОДЯТ ИЗ ЧУЖИХ ДОМОВ**  
+  tools/inqdefr.py, tools/inqesit.py, tools/inqpltr.py, tools/inqptnl.py
 - **ДОМ, НЕ ЗНАЮЩИЙ СВОИХ СТРАНИЦ, НЕ МОЖЕТ НАЗВАТЬ ИХ РОДА, И РОД ЕГО ЖИВЁТ ОБЪЯВЛЕНИЕМ**  
   tools/actionpages.py, tools/holes.py, tools/jointforms.py, tools/relstory.py
 - **ДРОБНАЯ ЧЕРТА ЕСТЬ ГРАНИЦА ЧИСЛА**  
@@ -272,6 +276,8 @@
   tools/jaclassforms.py, tools/koparticleforms.py, tools/viclassforms.py, tools/zhclassforms.py
 - **ТАБЛИЦЫ ОБЯЗАНЫ БЫТЬ ТЕМ, ЧЕМ НАЗВАНЫ, — ИНАЧЕ ЛОВУШКА ПОКАЗАНА НЕ ТА**  
   tools/condforms.py, tools/measureforms.py, tools/numlineforms.py, tools/overlapforms.py
+- **ТЕЛО ВЗЯТО ОТ ЗАГОЛОВКА, А НЕ ОТ ИМПОРТОВ**  
+  tools/inqdefr.py, tools/inqesit.py, tools/inqpltr.py, tools/inqptnl.py
 - **УНИВЕРСАЛИЯ СПРАШИВАЕТСЯ СВОИМ «ВЕРНО ЛИ, ЧТО**  
   courts/inquiry_de_fr_court.py, courts/inquiry_es_it_court.py, courts/inquiry_pl_tr_court.py, courts/inquiry_pt_nl_court.py
 - **ФОРМА, ОТЛИЧАЮЩАЯСЯ ОТ ПОКАЗА ОДНОЙ БУКВОЙ РОДА, ЕСТЬ ЭТОТ ЖЕ ПОКАЗ ИСПОРЧЕННЫЙ**  
@@ -282,10 +288,12 @@
   courts/agreement_court.py, scripts/bash32_court.py, scripts/orphans.py, scripts/verbthings_court.py
 - **ЧИТАТЕЛЬ ПЯТОГО РОДА НАЗВАН ПОИМЁННО**  
   tools/coinforms.py, tools/ratesforms.py, tools/ruverbsforms.py, tools/story_chainforms.py
+- **ШЕСТЬ РОДОВ СТОЯЛИ В КУЗНИЦЕ КОРТЕЖЕМ ШЕСТЁРОК С ПЕРВОГО ДНЯ**  
+  tools/inqdefr.py, tools/inqesit.py, tools/inqpltr.py, tools/inqptnl.py
 - **ЭТОТ ПРИБОР ЗЕЛЕНЕЕТ ОТ НУЛЯ НАХОДОК**  
   scripts/asked_uncounted.py, scripts/contrast_real.py, scripts/lawfirst_court.py, scripts/refusal_only_word.py
 - **ЯДРО ДОСЛОВНО ВО ВСЕХ ПРОХОДАХ, ХОД — ЧИСЛАМИ ПО ПРОХОДУ**  
-  tools/gen_genesis_inquiry_es_it.py, tools/gen_genesis_inquiry_pl_tr.py, tools/longdivforms.py, tools/sharepartforms.py
+  tools/inqesit.py, tools/inqpltr.py, tools/longdivforms.py, tools/sharepartforms.py
 
 ## Держат 3 файлов
 
@@ -332,9 +340,9 @@
 - **РАМКА, СОБРАННАЯ ИЗ ЦЕЛЫХ СЛОВ, НЕ ЗНАЕТ, ЧТО ДВА ИЗ НИХ СЛИВАЮТСЯ**  
   tools/scaleforms.py, tools/svampforms.py, tools/worldfacts.py
 - **РОД ОБЪЯВЛЯЕТ ЧЕТВЁРКУ И НИЧЕГО БОЛЬШЕ**  
-  tools/gen_genesis_equation.py, tools/gen_genesis_inquiry_es_it.py, tools/gen_genesis_inquiry_pl_tr.py
+  tools/gen_genesis_equation.py, tools/inqesit.py, tools/inqpltr.py
 - **РОД ОБЪЯВЛЯЕТ ЧЕТЫРЕ СТУПЕНИ И НИЧЕГО БОЛЬШЕ**  
-  tools/gen_genesis_inquiry_de_fr.py, tools/gen_genesis_inquiry_pt_nl.py, tools/inquiryforms.py
+  tools/inqdefr.py, tools/inqptnl.py, tools/inquiryforms.py
 - **РОД ПРОШЕДШЕГО СУДИТСЯ ЗАКОНОМ ЗАМКНУТОГО МИРА, А НЕ ДЫРОЙ В КАЖДОЙ РАМКЕ**  
   tools/behaviorforms.py, tools/kinbearer.py, tools/linkforms.py
 - **РОД ТОВАРА И СОГЛАСОВАНИЕ ПО НЕМУ — ОБЪЯВЛЕНЫ**  
@@ -457,7 +465,7 @@
 - **ДЕЙСТВИЯ, — И ТОГДА ОДНО ЛИЦО ИМЕЕТ ДВА ОКОНЧАНИЯ, А НЕ ОДНО**  
   courts/huobj_court.py, tools/huobjforms.py
 - **ДЕЛИМОСТЬ СТРОИТСЯ ОТ ОТВЕТА, А НЕ ВЫПАДАЕТ ПО УДАЧЕ**  
-  tools/gen_genesis_inquiry_de_fr.py, tools/gen_genesis_inquiry_pt_nl.py
+  tools/inqdefr.py, tools/inqptnl.py
 - **ДЛИНА РАЗЛОЖЕНИЯ ЕСТЬ ЧАСТЬ ФОРМЫ, И ПОТОМУ ОГРАНИЧЕНА**  
   tools/factorforms.py, tools/reduceforms.py
 - **ДЛИННОЕ ИМЯ ПРОБУЕТСЯ ПЕРВЫМ**  
@@ -559,7 +567,7 @@
 - **НЕ ИЗ ОТВЕТА, А ИЗ САМОГО ПОЛОЖЕНИЯ**  
   scripts/word_once.py, tools/opinionforms.py
 - **ОБЕ ВЕТВИ ВЕРДИКТА ОБЯЗАНЫ ЗВУЧАТЬ, И ЭТО ПРОВЕРЕНО ЧИСЛОМ**  
-  tools/gen_genesis_inquiry_de_fr.py, tools/gen_genesis_inquiry_pt_nl.py
+  tools/gen_genesis_inquiry_pt_nl.py, tools/inqdefr.py
 - **ОБЕЩАНИЕ ДОМА О СЕБЕ ЕСТЬ УТВЕРЖДЕНИЕ О СЕБЕ, И ПОТОМУ ПОДСУДНО**  
   scripts/second_copy.py, tools/relation.py
 - **ОБРАЗЕЦ, СОБРАННЫЙ ИЗ ШАБЛОНА, ОБЯЗАН ЗНАТЬ ВСЁ, ЧТО ДВИЖОК ДЕЛАЕТ ПОСЛЕ ПОДСТАНОВКИ**  
@@ -841,7 +849,7 @@
 - **ЧАСОВОЙ ПОЯС ЕСТЬ ИМЕННО ТО МНОЖЕСТВО МЕСТ, ГДЕ ЧАС ОДИН И ТОТ ЖЕ**  
   tools/gen_genesis_tzone.py, tools/tzoneforms.py
 - **ЧАСТИЦА ПО ПОСЛЕДНЕЙ ГЛАСНОЙ**  
-  courts/inquiry_pl_tr_court.py, tools/gen_genesis_inquiry_pl_tr.py
+  courts/inquiry_pl_tr_court.py, tools/inqpltr.py
 - **ЧЕГО ПРИБОР НЕ ВИДИТ, НАЗВАНО**  
   courts/algo_court.py, scripts/reproducible.py
 - **ЧЕСТНАЯ СТРАНИЦА НЕДВИЖУЩЕГО ЯЗЫКА С ЧИСЛОМ ВНЕ ОБЪЯВЛЕННОГО НАБОРА НЕ ЕСТЬ ЛОЖЬ**  
