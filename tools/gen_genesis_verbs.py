@@ -33,6 +33,11 @@ from gsm_items import ANIMATE, ITEMS  # noqa: E402
 from layer import emit  # noqa: E402
 from plural import by_count  # noqa: E402
 
+# ПУТЬ, СКАЗАННЫЙ ТОЛЬКО В ЗОВЕ, ЕСТЬ ПУТЬ, О КОТОРОМ НЕ ОБЪЯВЛЕНО (14.09): указатель
+# читает объявление СТРОКОЙ ВЕРХНЕГО УРОВНЯ, и мир, названный лишь внутри `emit`,
+# остаётся не связанным ни с одним домом.
+ЦЕЛЬ = "datasets/genesis_verbs.txt"
+
 NAMES_HOUSE = ["ida", "omar", "pia", "rosa", "sven", "tara", "umar", "vera"]
 # ИМЯ ОБЪЯВЛЕНО ПАКЕТОМ (дом имён, М-131): суд читает имя группой и сверяет
 # с пакетом; имя, которого пакет не знает, не вправе войти в показ.
@@ -174,7 +179,7 @@ def pass_shows(pass_i):
 
 
 def main():
-    emit("datasets/genesis_verbs.txt", pass_shows)
+    emit(ЦЕЛЬ, pass_shows)
 
 
 if __name__ == "__main__":

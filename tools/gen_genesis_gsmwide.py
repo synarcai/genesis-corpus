@@ -16,6 +16,11 @@ import verbthings  # noqa: E402
 
 from plural import by_count
 
+# ПУТЬ, СКАЗАННЫЙ ТОЛЬКО В ЗОВЕ, ЕСТЬ ПУТЬ, О КОТОРОМ НЕ ОБЪЯВЛЕНО (14.09): указатель
+# читает объявление СТРОКОЙ ВЕРХНЕГО УРОВНЯ, и мир, названный лишь внутри `emit`,
+# остаётся не связанным ни с одним домом.
+ЦЕЛЬ = "datasets/genesis_gsmwide.txt"
+
 
 NAMES_HOUSE = ["ava", "ben", "carla", "dan", "elena",
          "felix", "grace", "hugo", "iris",
@@ -125,7 +130,7 @@ def pass_shows(pi):
 
 
 def main():
-    emit("datasets/genesis_gsmwide.txt", pass_shows)
+    emit(ЦЕЛЬ, pass_shows)
 
 
 if __name__ == "__main__":

@@ -108,8 +108,11 @@ def карта(двор):
     import genus_atlas                                    # noqa: PLC0415
     кормит = genus_atlas.кормит(двор)
     for п in sorted(pathlib.Path(двор).glob("*.py")):
-        if п.stem.startswith("gen_"):
-            continue                       # КУЗНИЦА НЕ ЕСТЬ ДОМ
+        # ПРАВИЛО ДОПУСКА ФАЙЛА БЕРЁТСЯ У УКАЗАТЕЛЯ ТОЙ ЖЕ РУКОЙ, ЧТО И ПРАВИЛО ОБЪЯВЛЕНИЯ
+        # (14.09). Здесь стояло своё «КУЗНИЦА НЕ ЕСТЬ ДОМ» по имени файла — третья копия
+        # одного правила при законе, написанном строкой ниже по этому же файлу.
+        if not genus_atlas.дом_ли(п):
+            continue                       # КУЗНИЦА, НИЧЕГО НЕ ОБЪЯВИВШАЯ СОБОЮ
         try:
             м = importlib.import_module(п.stem)
         except Exception:                  # noqa: BLE001

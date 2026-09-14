@@ -18,6 +18,11 @@ weight, not coverage); bare shows; form-feed seams.
 import inverting
 from layer import emit
 
+# ПУТЬ, СКАЗАННЫЙ ТОЛЬКО В ЗОВЕ, ЕСТЬ ПУТЬ, О КОТОРОМ НЕ ОБЪЯВЛЕНО (14.09): указатель
+# читает объявление СТРОКОЙ ВЕРХНЕГО УРОВНЯ, и мир, названный лишь внутри `emit`,
+# остаётся не связанным ни с одним домом.
+ЦЕЛЬ = "datasets/genesis_bignum.txt"
+
 
 def kinds_for_pass(pi):
     base = pi * 17
@@ -66,7 +71,7 @@ def with_asks(pi):
 
 
 def main():
-    emit("datasets/genesis_bignum.txt", with_asks)
+    emit(ЦЕЛЬ, with_asks)
 
 
 if __name__ == "__main__":

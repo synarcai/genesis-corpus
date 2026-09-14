@@ -14,7 +14,12 @@ import sys
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
 # ЧИТАТЕЛЬ ПОШЁЛ ЗА ОБЪЯВЛЕНИЕМ (13.09): строители и определения переехали в дом.
 import inquiryforms as I  # noqa: E402
-import gen_genesis_equation as E  # noqa: E402
+# ВВОЗ ИДЁТ В ДОМ, А НЕ В КУЗНИЦУ, ИЗ КОТОРОЙ ДОМ ВЫЕХАЛ (14.09). Переезд уравнения
+# в `eqforms` оставил здесь имя прежнего места: кузница ещё цела, но `пары`,
+# `по_виете` и свидетели живут уже в доме, и стенд падал `AttributeError`-ом.
+#
+#     ПЕРЕЕЗД ДОМА НЕ ЗАВЕРШЁН, ПОКА ХОТЬ ОДИН ВВОЗ УКАЗЫВАЕТ НА СТАРЫЙ АДРЕС.
+import eqforms as E  # noqa: E402
 import gen_genesis_statistics as S  # noqa: E402
 
 ВЫХОД = КОРЕНЬ.parent / "omega" / "bench" / "suites" / "t9_reasoning.jsonl"

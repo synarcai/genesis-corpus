@@ -3,7 +3,7 @@
 
 Заказ verum/holon (03.09): для многошаговых школьных миров — три вида
 проб на каждую задачу, и все три выводятся из ОДНОЙ функции параметров
-семейства (tools/gen_genesis_gsmforms.п_*), той же, что пишет показы:
+семейства (tools/gsmtaskforms.п_*), той же, что пишет показы:
   · value   — вопрос как в мире, ключ = ответ;
   · refuse  — тот же вопрос с УДАЛЁННЫМ фактом, без которого ответ не
               выводится; ключ — отказ с названной недостающей величиной
@@ -22,7 +22,8 @@ import sys
 
 КОРЕНЬ = pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
-import gen_genesis_gsmforms as G  # noqa: E402
+# ВВОЗ ИДЁТ В ДОМ, А НЕ В КУЗНИЦУ, ИЗ КОТОРОЙ ДОМ ВЫЕХАЛ (14.09).
+import gsmtaskforms as G  # noqa: E402
 
 ВЫХОД = КОРЕНЬ.parent / "omega" / "bench" / "suites" / "t7_gsmforms.jsonl"
 СЕМЯН = 6

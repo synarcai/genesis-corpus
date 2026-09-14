@@ -51,6 +51,11 @@ import pathlib
 from layer import emit
 from plural import by_count
 
+# ПУТЬ, СКАЗАННЫЙ ТОЛЬКО В ЗОВЕ, ЕСТЬ ПУТЬ, О КОТОРОМ НЕ ОБЪЯВЛЕНО (14.09): указатель
+# читает объявление СТРОКОЙ ВЕРХНЕГО УРОВНЯ, и мир, названный лишь внутри `emit`,
+# остаётся не связанным ни с одним домом.
+ЦЕЛЬ = "datasets/genesis_verbbridge.txt"
+
 _ПАКЕТ = json.loads((pathlib.Path(__file__).resolve().parent / "langpacks" / "en.json")
                     .read_text(encoding="utf-8"))
 _ИМЕНА_ПАКЕТА = set(_ПАКЕТ["person_names"])
@@ -157,7 +162,7 @@ def показы(pi):
 
 
 def main():
-    emit("datasets/genesis_verbbridge.txt", показы)
+    emit(ЦЕЛЬ, показы)
 
 
 if __name__ == "__main__":

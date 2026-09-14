@@ -32,6 +32,11 @@ from plural import by_count
 import json as _json
 import pathlib as _pathlib
 from rugram import МЕСТОИМЕНИЯ as _МЕСТ, СУФФИКС_ПРОШЕДШЕГО as _СУФ
+
+# ПУТЬ, СКАЗАННЫЙ ТОЛЬКО В ЗОВЕ, ЕСТЬ ПУТЬ, О КОТОРОМ НЕ ОБЪЯВЛЕНО (14.09): указатель
+# читает объявление СТРОКОЙ ВЕРХНЕГО УРОВНЯ, и мир, названный лишь внутри `emit`,
+# остаётся не связанным ни с одним домом.
+ЦЕЛЬ = "datasets/genesis_story.txt"
 _RU = _json.loads((_pathlib.Path(__file__).resolve().parent / "langpacks" / "ru.json").read_text(encoding="utf-8"))["person_forms"]
 _RU_ПО_СТРОЧНОМУ = {и.lower(): и for и in _RU}
 
@@ -177,7 +182,7 @@ def main():
     # THE COUNT WAS WRONG AND NOBODY SAW IT: this main printed
     # `len(shows)` — the LAST pass — and called it the layer's shows,
     # understating by five. The shared organ counts every pass.
-    emit("datasets/genesis_story.txt", pass_shows)
+    emit(ЦЕЛЬ, pass_shows)
 
 
 if __name__ == "__main__":

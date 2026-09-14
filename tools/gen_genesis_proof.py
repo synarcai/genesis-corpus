@@ -39,6 +39,11 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import universals  # noqa: E402
 from layer import emit  # noqa: E402
 
+# ПУТЬ, СКАЗАННЫЙ ТОЛЬКО В ЗОВЕ, ЕСТЬ ПУТЬ, О КОТОРОМ НЕ ОБЪЯВЛЕНО (14.09): указатель
+# читает объявление СТРОКОЙ ВЕРХНЕГО УРОВНЯ, и мир, названный лишь внутри `emit`,
+# остаётся не связанным ни с одним домом.
+ЦЕЛЬ = "datasets/genesis_proof.txt"
+
 ШАГИ = [(1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8), (2, 3)]
 # ЧЁТНОСТЬ ОТЛИЧИМА ОТ ПРОСТОТЫ С ПЕРВОГО ПОКАЗА (holon 03.09, YN-AMBIGUOUS
 # prime|parity: все нечётные примеры были простыми, и исполнитель простоты
@@ -211,7 +216,7 @@ def положительность(pass_i):
 
 
 def main():
-    emit("datasets/genesis_proof.txt", pass_shows)
+    emit(ЦЕЛЬ, pass_shows)
 
 
 if __name__ == "__main__":

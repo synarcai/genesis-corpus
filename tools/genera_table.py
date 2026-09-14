@@ -31,7 +31,9 @@ def полярность(строка):
 
 
 def семейства_gsmforms():
-    import gen_genesis_gsmforms as G
+    # ВВОЗ ИДЁТ В ДОМ, А НЕ В КУЗНИЦУ, ИЗ КОТОРОЙ ДОМ ВЫЕХАЛ (14.09): семейства
+    # задач переехали в `gsmtaskforms`, а имя прежнего места осталось здесь.
+    import gsmtaskforms as G
     вон = []
     for семья in G.СЕМЕЙСТВА:
         имя = семья.__name__
@@ -74,7 +76,9 @@ def законы_миров():
 def рассуждения():
     # ЧИТАТЕЛЬ ПОШЁЛ ЗА ОБЪЯВЛЕНИЕМ (13.09): строители и определения переехали в дом.
     import inquiryforms as I
-    import gen_genesis_equation as E
+    # ВВОЗ ИДЁТ В ДОМ, А НЕ В КУЗНИЦУ, ИЗ КОТОРОЙ ДОМ ВЫЕХАЛ (14.09):
+    # рассуждения уравнения переехали в `eqforms`.
+    import eqforms as E
     import gen_genesis_statistics as S
     E._СО_ЗНАКОМ = False
     источники = (("inquiry", "простота", "вердикт = простое(n); свидетель n = d × (n ÷ d) | делители 1 и n", lambda ш: I.рассужд_простота(ш)),
@@ -101,11 +105,39 @@ def рассуждения():
 ДЫРКА = re.compile(r"\{[^}]+\}")
 
 
+def дом_вопросов(мир):
+    """Модуль, объявивший вопросы мира, — НАЙДЕН ПО ДЕЛУ, а не по имени кузницы (14.09).
+
+    Здесь стояло `importlib.import_module(f"gen_genesis_{мир}")` — догадка об имени файла.
+    Шесть миров из десяти уже переехали в дома (`numtheoryforms`, `seriesforms`,
+    `geomforms`, `linalgforms`, `physlawforms`, `compsciforms`), и таблица падала
+    `AttributeError`-ом на первом же из них, а прибор, её зовущий, стоял КРАСНЫМ.
+
+        ИМЯ ФАЙЛА ЕСТЬ ДОГАДКА О СВЯЗИ, А ВВОЗ КУЗНИЦЫ ЕСТЬ САМА СВЯЗЬ. Кто кормит мир,
+        знает указатель родов; кто из кормящих объявил вопросы — видно по `СПРОСИТЬ`.
+
+    Связь берётся у `genus_atlas.кормит` — ТОЙ ЖЕ мерой, какой её берут указатель и
+    сайдкар, — и потому переезд дома не ломает таблицу во второй раз.
+    """
+    import importlib                                     # noqa: PLC0415
+    import genus_atlas                                   # noqa: PLC0415
+    кормление = genus_atlas.кормит(str(КОРЕНЬ / "tools"))
+    имена = [и for и, миры in sorted(кормление.items())
+             if мир in миры or f"genesis_{мир}" in миры]
+    for имя in имена:
+        try:
+            м = importlib.import_module(имя)
+        except Exception:                                # noqa: BLE001
+            continue
+        if hasattr(м, "СПРОСИТЬ") and hasattr(м, "ФОРМУЛЫ"):
+            return м
+    raise LookupError(f"мир {мир}: никто из кормящих ({имена}) не объявил СПРОСИТЬ")
+
+
 def роды_спросить():
-    import importlib
     вон = []
     for мир in МИРЫ_СПРОСИТЬ:
-        м = importlib.import_module(f"gen_genesis_{мир}")
+        м = дом_вопросов(мир)
         # ПОКАЗЫ СЧИТАЮТСЯ В МИРЕ, КАК ОН ЛЕЖИТ (datasets/genesis_<мир>.txt):
         # это и есть замер, а не повторное порождение; входы генераторов
         # различны (pass_groups, pass_shows, kinds), мир — один.

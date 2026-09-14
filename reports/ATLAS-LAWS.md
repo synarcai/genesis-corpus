@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 410 законов
+# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 415 законов
 
 Собран из докстрингов и комментариев `tools`, `courts`, `scripts` орудием
 `tools/law_atlas.py`. Взяты ОБЩИЕ законы — те, что держатся не одним файлом.
@@ -6,7 +6,7 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 6235 разных законов на 7784 упоминаний; сказанных однажды — 5825, и они остаются при своём месте.
+Всего в дереве 6263 разных законов на 7845 упоминаний; сказанных однажды — 5848, и они остаются при своём месте.
 
 
 ## Держат 81 файлов
@@ -35,6 +35,8 @@
 
 - **МУТАНТОВ НЕ ПОСТРОЕНО ВОВСЕ**  
   tools/countlawforms.py, tools/deaccforms.py, tools/decaseforms.py, tools/deplurforms.py, tools/dosupportforms.py, tools/elisionforms.py … и ещё 23
+- **ПУТЬ, СКАЗАННЫЙ ТОЛЬКО В ЗОВЕ, ЕСТЬ ПУТЬ, О КОТОРОМ НЕ ОБЪЯВЛЕНО**  
+  tools/gen_genesis_aggregate.py, tools/gen_genesis_algebra.py, tools/gen_genesis_algorithms.py, tools/gen_genesis_bignum.py, tools/gen_genesis_conversions.py, tools/gen_genesis_cybernetics.py … и ещё 23
 
 ## Держат 28 файлов
 
@@ -302,6 +304,8 @@
 
 - **АРТИКЛЬ, ВЫНЕСЕННЫЙ В РАМКУ, ПЕРЕСТАЁТ СЛЫШАТЬ СЛОВО, ПЕРЕД КОТОРЫМ СТОИТ**  
   courts/article_court.py, scripts/article_sound.py, tools/plural.py
+- **ВВОЗ ИДЁТ В ДОМ, А НЕ В КУЗНИЦУ, ИЗ КОТОРОЙ ДОМ ВЫЕХАЛ**  
+  tools/genera_table.py, tools/gsmforms_bench.py, tools/reasoning_bench.py
 - **ВОПРОСНЫЙ РОД ИДЁТ СВОЕЙ ГРУППОЙ**  
   tools/gen_genesis_fuseprep.py, tools/gen_genesis_nlarticle.py, tools/gen_genesis_serestar.py
 - **ВТОРАЯ ПОЛЯРНОСТЬ ТОЙ ЖЕ РАМКОЙ**  
@@ -461,6 +465,8 @@
   scripts/house_promise.py, tools/directforms.py
 - **ДВЕ МЕРЫ, ОБРЕЗАЮЩИЕ ОДНУ СТРОКУ РАЗНЫМИ НАБОРАМИ ЗНАКОВ, НЕ НАЙДУТ ДРУГ ДРУГА**  
   scripts/refusal_house.py, tools/numnounforms.py
+- **ДВЕ МЕРЫ, СУДЯЩИЕ ОБ ОДНОМ ПО РАЗНЫМ ПРАВИЛАМ, ДАЮТ ДВА ЧИСЛА, И ОБА БУДУТ**  
+  scripts/genera_sidecar.py, tools/layer.py
 - **ДВЕ СТРАНИЦЫ ОДНОГО ТЕКСТА ЕСТЬ ОДНА СТРАНИЦА**  
   tools/huobjforms.py, tools/jaclassforms.py
 - **ДЕЙСТВИЕ БЕРЁТСЯ ИЗ ВОПРОСА, А НЕ ИЗ СЛОВА УСЛОВИЯ**  
@@ -543,6 +549,8 @@
   scripts/asked_uncounted.py, tools/svampforms.py
 - **ИСКЛЮЧЕНИЕ БЕЗ ПРАВИЛА СТАНОВИТСЯ ПРАВИЛОМ**  
   tools/directforms.py, tools/gen_genesis_direct.py
+- **КУЗНИЦА, НИЧЕГО НЕ ОБЪЯВИВШАЯ СОБОЮ**  
+  scripts/genera_sidecar.py, tools/genus_atlas.py
 - **ЛИЦО ГОВОРЯЩЕГО ЖИВЁТ В ГЛАГОЛЕ — В ХВОСТЕ СЛОВА, В ГОЛОВЕ СЛОВА, НА ОБОИХ ЕГО КОНЦАХ**  
   courts/personplace_court.py, tools/personplaceforms.py
 - **ЛОВУШКА ОБЯЗАНА ЛОВИТЬ, И ЭТО ТОЖЕ ПРОВЕРЯЕТСЯ**  
@@ -847,6 +855,8 @@
   tools/formulaforms.py, tools/gen_genesis_dataformat.py
 - **ЦЕЛЬ ОБЪЯВЛЕНА ИМЕНЕМ МОДУЛЯ, А НЕ ПЕРЕМЕННОЙ ВНУТРИ ТЕЛА**  
   tools/gen_genesis_l4.py, tools/gen_genesis_percent.py
+- **ЦЕЛЬ ОБЪЯВЛЕНА СТРОКОЙ ВЕРХНЕГО УРОВНЯ**  
+  tools/gen_genesis_compare.py, tools/ninelang.py
 - **ЦЕНА ЗАМЕРЕНА, А НЕ ОБЕЩАНА**  
   courts/agreement_court.py, tools/panel.py
 - **ЦИТАТА ПОД ЗВЁЗДОЧКОЙ НЕ ЕСТЬ РЕЧЬ СТРОКИ, А ОБРАЗЕЦ НЕВОЗМОЖНОЙ РЕЧИ**  

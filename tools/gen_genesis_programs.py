@@ -37,6 +37,11 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from layer import emit  # noqa: E402
 import mass  # noqa: E402
 
+# ПУТЬ, СКАЗАННЫЙ ТОЛЬКО В ЗОВЕ, ЕСТЬ ПУТЬ, О КОТОРОМ НЕ ОБЪЯВЛЕНО (14.09): указатель
+# читает объявление СТРОКОЙ ВЕРХНЕГО УРОВНЯ, и мир, названный лишь внутри `emit`,
+# остаётся не связанным ни с одним домом.
+ЦЕЛЬ = "datasets/genesis_programs.txt"
+
 # МАССА ОТ ПРАВИЛА (tools/mass.py, М-148): каждая связка составляется из
 # двух взаимно простых циклов шагом k — различных показов на рамку до 77–88
 # (было 8: таблицы повторялись каждым проходом). Левый операнд ≥ 10, правый
@@ -135,7 +140,7 @@ def pass_shows(pass_i):
 
 
 def main():
-    emit("datasets/genesis_programs.txt", pass_shows)
+    emit(ЦЕЛЬ, pass_shows)
 
 
 if __name__ == "__main__":

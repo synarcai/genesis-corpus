@@ -27,6 +27,11 @@ word is known only as «what stands beside a number», and the parasite
 
 from layer import emit
 
+# ПУТЬ, СКАЗАННЫЙ ТОЛЬКО В ЗОВЕ, ЕСТЬ ПУТЬ, О КОТОРОМ НЕ ОБЪЯВЛЕНО (14.09): указатель
+# читает объявление СТРОКОЙ ВЕРХНЕГО УРОВНЯ, и мир, названный лишь внутри `emit`,
+# остаётся не связанным ни с одним домом.
+ЦЕЛЬ = "datasets/genesis_fractions.txt"
+
 
 # (english word, russian word, divisor, numerator)
 PARTS = [
@@ -89,7 +94,7 @@ def pass_shows(pass_i):
 
 
 def main():
-    emit("datasets/genesis_fractions.txt", pass_shows)
+    emit(ЦЕЛЬ, pass_shows)
 
 
 if __name__ == "__main__":

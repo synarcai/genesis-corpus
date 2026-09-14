@@ -44,6 +44,11 @@ from gsm_items import ANIMATE, ITEMS
 import verbthings  # noqa: E402
 from plural import by_count, singular
 
+# ПУТЬ, СКАЗАННЫЙ ТОЛЬКО В ЗОВЕ, ЕСТЬ ПУТЬ, О КОТОРОМ НЕ ОБЪЯВЛЕНО (14.09): указатель
+# читает объявление СТРОКОЙ ВЕРХНЕГО УРОВНЯ, и мир, названный лишь внутри `emit`,
+# остаётся не связанным ни с одним домом.
+ЦЕЛЬ = "datasets/genesis_items.txt"
+
 # ИМЕНА, ЧУЖИЕ БЕНЧМАРКУ: агенты не должны совпадать с носителями
 # вопросов, иначе слой начнёт узнаваться по имени, а не по роду.
 NAMES = ["ida", "omar", "pia", "rosa", "sven",
@@ -181,7 +186,7 @@ def pass_shows(pass_i):
 
 
 def main():
-    emit("datasets/genesis_items.txt", pass_shows)
+    emit(ЦЕЛЬ, pass_shows)
 
 
 if __name__ == "__main__":

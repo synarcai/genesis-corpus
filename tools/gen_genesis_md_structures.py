@@ -25,6 +25,11 @@ shared across surfaces (the cross stays verbal).
 import lexicon
 from layer import emit_grouped
 
+# ПУТЬ, СКАЗАННЫЙ ТОЛЬКО В ЗОВЕ, ЕСТЬ ПУТЬ, О КОТОРОМ НЕ ОБЪЯВЛЕНО (14.09): указатель
+# читает объявление СТРОКОЙ ВЕРХНЕГО УРОВНЯ, и мир, названный лишь внутри `emit`,
+# остаётся не связанным ни с одним домом.
+ЦЕЛЬ = "datasets/genesis_md_structures.txt"
+
 
 # СЛОВА ЖИВУТ В ОДНОМ ДОМЕ (`tools/lexicon.py`), а не двумя списками
 # здесь: слой разметки-и-формул держал свои двадцать одну пару, и
@@ -189,7 +194,7 @@ def pass_groups(_pi):
 
 
 def main():
-    emit_grouped("datasets/genesis_md_structures.txt", pass_groups)
+    emit_grouped(ЦЕЛЬ, pass_groups)
 
 
 if __name__ == "__main__":

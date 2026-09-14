@@ -34,6 +34,11 @@ from plural import by_count  # noqa: E402
 from layer import emit  # noqa: E402
 import mass  # noqa: E402
 
+# ПУТЬ, СКАЗАННЫЙ ТОЛЬКО В ЗОВЕ, ЕСТЬ ПУТЬ, О КОТОРОМ НЕ ОБЪЯВЛЕНО (14.09): указатель
+# читает объявление СТРОКОЙ ВЕРХНЕГО УРОВНЯ, и мир, названный лишь внутри `emit`,
+# остаётся не связанным ни с одним домом.
+ЦЕЛЬ = "datasets/genesis_formulas.txt"
+
 # (a, b, c) with a² + b² = c² — whole triples only
 # MASS FROM THE RULE (tools/mass.py, М-148): every pair is composed from
 # two coprime cycles of factors by the step k — up to 77 distinct shows per
@@ -230,7 +235,7 @@ def pass_shows(pass_i):
 
 
 def main():
-    emit("datasets/genesis_formulas.txt", pass_shows)
+    emit(ЦЕЛЬ, pass_shows)
 
 
 if __name__ == "__main__":

@@ -34,6 +34,11 @@ from gsm_items import ANIMATE, ITEMS  # noqa: E402
 from layer import emit  # noqa: E402
 from plural import by_count  # noqa: E402
 
+# ПУТЬ, СКАЗАННЫЙ ТОЛЬКО В ЗОВЕ, ЕСТЬ ПУТЬ, О КОТОРОМ НЕ ОБЪЯВЛЕНО (14.09): указатель
+# читает объявление СТРОКОЙ ВЕРХНЕГО УРОВНЯ, и мир, названный лишь внутри `emit`,
+# остаётся не связанным ни с одним домом.
+ЦЕЛЬ = "datasets/genesis_remainders.txt"
+
 THINGS = [w for w in ITEMS if w not in ANIMATE]
 SHARERS = sorted(ANIMATE)
 # (dividend, divisor) — never exact, and each divisor twice over
@@ -82,7 +87,7 @@ def pass_shows(pass_i):
 
 
 def main():
-    emit("datasets/genesis_remainders.txt", pass_shows)
+    emit(ЦЕЛЬ, pass_shows)
 
 
 if __name__ == "__main__":

@@ -27,6 +27,11 @@ import json
 import pathlib
 import sys
 
+# ПУТЬ, СКАЗАННЫЙ ТОЛЬКО В ЗОВЕ, ЕСТЬ ПУТЬ, О КОТОРОМ НЕ ОБЪЯВЛЕНО (14.09): указатель
+# читает объявление СТРОКОЙ ВЕРХНЕГО УРОВНЯ, и мир, названный лишь внутри `emit`,
+# остаётся не связанным ни с одним домом.
+ЦЕЛЬ = "datasets/genesis_algebra.txt"
+
 ЗДЕСЬ = pathlib.Path(__file__).resolve().parent
 sys.path.insert(0, str(ЗДЕСЬ))
 from layer import PASSES, emit  # noqa: E402
@@ -154,7 +159,7 @@ def pass_shows(pass_i):
 
 
 def main():
-    emit("datasets/genesis_algebra.txt", pass_shows)
+    emit(ЦЕЛЬ, pass_shows)
 
 
 if __name__ == "__main__":

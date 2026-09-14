@@ -42,6 +42,11 @@ from layer import emit  # noqa: E402
 import mass  # noqa: E402
 from plural import by_count  # noqa: E402
 
+# ПУТЬ, СКАЗАННЫЙ ТОЛЬКО В ЗОВЕ, ЕСТЬ ПУТЬ, О КОТОРОМ НЕ ОБЪЯВЛЕНО (14.09): указатель
+# читает объявление СТРОКОЙ ВЕРХНЕГО УРОВНЯ, и мир, названный лишь внутри `emit`,
+# остаётся не связанным ни с одним домом.
+ЦЕЛЬ = "datasets/genesis_machine.txt"
+
 RU_PACK = json.loads(
     (pathlib.Path(__file__).resolve().parent
      / "langpacks/ru.json").read_text(encoding="utf-8"))
@@ -183,7 +188,7 @@ def pass_shows(pass_i):
 
 
 def main():
-    emit("datasets/genesis_machine.txt", pass_shows)
+    emit(ЦЕЛЬ, pass_shows)
 
 
 if __name__ == "__main__":

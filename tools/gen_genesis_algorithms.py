@@ -38,6 +38,11 @@ from layer import emit  # noqa: E402
 import mass  # noqa: E402
 from plural import by_count  # noqa: E402
 
+# ПУТЬ, СКАЗАННЫЙ ТОЛЬКО В ЗОВЕ, ЕСТЬ ПУТЬ, О КОТОРОМ НЕ ОБЪЯВЛЕНО (14.09): указатель
+# читает объявление СТРОКОЙ ВЕРХНЕГО УРОВНЯ, и мир, названный лишь внутри `emit`,
+# остаётся не связанным ни с одним домом.
+ЦЕЛЬ = "datasets/genesis_algorithms.txt"
+
 LISTS = [
     [3, 1, 2], [5, 4], [7, 2, 9, 1], [6, 6, 2], [8, 3, 5, 1, 9],
     [4, 10, 7], [2, 8], [9, 5, 3, 7], [1, 4, 2, 6], [10, 3, 8],
@@ -194,7 +199,7 @@ def pass_shows(pass_i):
 
 
 def main():
-    emit("datasets/genesis_algorithms.txt", pass_shows)
+    emit(ЦЕЛЬ, pass_shows)
 
 
 if __name__ == "__main__":
