@@ -18,21 +18,8 @@ import unitforms as U  # noqa: E402
 from layer import emit_grouped  # noqa: E402
 
 ЦЕЛЬ = "datasets/genesis_units_langs.txt"
-ЧИСЛА = (2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 15, 20)
-
-
-def язык_группа(шаг, язык):
-    вон = []
-    for i, (б, м) in enumerate(U.ПАРЫ):
-        n = ЧИСЛА[(шаг * 5 + i * 3) % len(ЧИСЛА)]
-        вон.append(U.утверждение(язык, б, м, n))
-        n2 = ЧИСЛА[(шаг * 7 + i * 5 + 1) % len(ЧИСЛА)]
-        вон.append(U.вопрос(язык, б, м, n2))
-    return вон
-
-
 def pass_groups(шаг):
-    return [язык_группа(шаг, язык) for язык in U.ЕДИНИЦЫ]
+    return U.группы(шаг)
 
 
 def main():

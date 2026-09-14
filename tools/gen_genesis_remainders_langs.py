@@ -18,19 +18,8 @@ from layer import emit_grouped  # noqa: E402
 ЦЕЛЬ = "datasets/genesis_remainders_langs.txt"
 
 
-def язык_группа(шаг, язык):
-    вон = []
-    for i in range(8):
-        b = 2 + (шаг * 3 + i * 5) % 8                 # 2..9
-        q = 2 + (шаг * 5 + i * 3) % 9                 # 2..10
-        r = 1 + (шаг * 7 + i * 11) % (b - 1)          # 1..b−1 — never zero
-        a = b * q + r
-        вон.append(F.утверждение(язык, a, b) if i % 2 == 0 else F.вопрос(язык, a, b))
-    return вон
-
-
 def pass_groups(шаг):
-    return [язык_группа(шаг, язык) for язык in F.ЯЗЫКИ]
+    return F.группы(шаг)
 
 
 def main():

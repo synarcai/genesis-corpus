@@ -18,18 +18,8 @@ from layer import emit_grouped  # noqa: E402
 ЦЕЛЬ = "datasets/genesis_sequences_langs.txt"
 
 
-def язык_группа(шаг, язык):
-    вон = []
-    for i in range(8):
-        k = 2 + (шаг * 3 + i) % 7
-        a = 2 + (шаг * 5 + i * 3) % 20
-        d = 1 + (шаг * 2 + i * 5) % 9
-        вон.append(F.утверждение(язык, k, a, d) if i % 2 == 0 else F.вопрос(язык, k, a, d))
-    return вон
-
-
 def pass_groups(шаг):
-    return [язык_группа(шаг, язык) for язык in F.ЯЗЫКИ]
+    return F.группы(шаг)
 
 
 def main():
