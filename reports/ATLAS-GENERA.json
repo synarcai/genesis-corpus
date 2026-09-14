@@ -3,8 +3,8 @@
   "домов": 224,
   "родов": 1404,
   "различных": 1188,
-  "страниц": 252308,
-  "домов_без_словаря_страниц": 8,
+  "страниц": 253188,
+  "домов_без_словаря_страниц": 6,
   "по_объявлению": {
     "РОДЫ": 167,
     "ФОРМЫ": 57
@@ -7062,26 +7062,26 @@
       "роды": [
         {
           "род": "скорость с леджером",
-          "страниц": null,
-          "образец": "",
+          "страниц": 120,
+          "образец": "ein Körper, der 4 Meter in 2 Sekunden zurücklegt, hat die Geschwindigkeit 2 Meter pro Sekunde: 4 ÷ 2 = 2.",
           "зачем": null
         },
         {
           "род": "вопрос о скорости",
-          "страниц": null,
-          "образец": "",
+          "страниц": 120,
+          "образец": "wie groß ist die Geschwindigkeit eines Körpers, der 15 Meter in 3 Sekunden zurücklegt? ein Körper, der 15 Meter in 3 Sek",
           "зачем": null
         },
         {
           "род": "давление с леджером",
-          "страниц": null,
-          "образец": "",
+          "страниц": 120,
+          "образец": "eine Kraft von 21 Newton auf 7 Quadratmeter erzeugt den Druck 3 Pascal: 21 ÷ 7 = 3.",
           "зачем": null
         },
         {
           "род": "вопрос о давлении",
-          "страниц": null,
-          "образец": "",
+          "страниц": 120,
+          "образец": "wie groß ist der Druck einer Kraft von 4 Newton auf 2 Quadratmeter? eine Kraft von 4 Newton auf 2 Quadratmeter erzeugt d",
           "зачем": null
         }
       ],
@@ -7465,20 +7465,20 @@
       "роды": [
         {
           "род": "простое с двумя делителями",
-          "страниц": null,
-          "образец": "",
+          "страниц": 50,
+          "образец": "2 ist eine Primzahl; ihre Teiler sind 1 und 2.",
           "зачем": null
         },
         {
           "род": "составное с разложением",
-          "страниц": null,
-          "образец": "",
+          "страниц": 150,
+          "образец": "36 ist keine Primzahl: 36 = 2 × 18.",
           "зачем": null
         },
         {
           "род": "вопрос о простоте, отвечаемый вердиктом впереди свидетеля",
-          "страниц": null,
-          "образец": "",
+          "страниц": 200,
+          "образец": "ist 19 eine Primzahl? ja: 19 ist eine Primzahl; ihre Teiler sind 1 und 19.",
           "зачем": null
         }
       ],

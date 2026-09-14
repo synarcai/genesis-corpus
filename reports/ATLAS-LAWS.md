@@ -6,7 +6,7 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 6221 разных законов на 7736 упоминаний; сказанных однажды — 5818, и они остаются при своём месте.
+Всего в дереве 6222 разных законов на 7741 упоминаний; сказанных однажды — 5819, и они остаются при своём месте.
 
 
 ## Держат 81 файлов
@@ -221,6 +221,8 @@
   tools/countlawforms.py, tools/elisionforms.py, tools/genderforms.py, tools/plcopulaforms.py, tools/soundarticleforms.py
 - **ДОМ, НЕ ЗНАЮЩИЙ СВОИХ СТРАНИЦ, НЕ МОЖЕТ НАЗВАТЬ ИХ РОДА**  
   tools/defforms.py, tools/measurestory.py, tools/notationforms.py, tools/searchforms.py, tools/surfaceforms.py
+- **ДОМ, ОБЪЯВИВШИЙ РОДЫ И НЕ ОТДАВШИЙ СТРАНИЦ, ОБЕЩАЕТ ИМЕНА, КОТОРЫХ НЕКОМУ ПРИЛОЖИТЬ**  
+  tools/calforms.py, tools/chainforms.py, tools/countforms.py, tools/physforms.py, tools/primeforms.py
 - **ЛОВУШКА ПРОВЕРЯЕТСЯ КАК ЛОВУШКА**  
   courts/divsense_court.py, courts/mapscale_court.py, courts/pctchange_court.py, courts/pctdiff_court.py, scripts/broken_law.py
 - **МУТАНТ ЕСТЬ ПОРЧА СВОЕЙ СТРАНИЦЫ ОДНИМ СЛОВОМ**  
@@ -235,6 +237,8 @@
   scripts/half_law.py, scripts/key_support.py, scripts/one_singular.py, scripts/operator_share.py, scripts/template_word.py
 - **СЛОВА ДО ПОСЛЕДНЕГО ДВОЕТОЧИЯ, РАВЕНСТВА ПОСЛЕ**  
   tools/divsenseforms.py, tools/mapscaleforms.py, tools/pctdiffforms.py, tools/propforms.py, tools/remdivforms.py
+- **СТРОИТЕЛЬ ПЕРЕЕХАЛ ИЗ КУЗНИЦЫ В ДОМ**  
+  tools/calforms.py, tools/countforms.py, tools/geoforms.py, tools/physforms.py, tools/primeforms.py
 - **ЧЕТВЁРКА В ЗАПИСИ ЕСТЬ БУКВА ЗАКОНА, А НЕ ВЕЛИЧИНА РЯДА**  
   courts/inquiry_court.py, courts/inquiry_de_fr_court.py, courts/inquiry_es_it_court.py, courts/inquiry_pl_tr_court.py, courts/inquiry_pt_nl_court.py
 
@@ -299,8 +303,6 @@
   scripts/cell_shown.py, tools/langpack.py, tools/subjcount.py
 - **ДОЛГ, РАЗ ОБЪЯВЛЕННЫЙ, ОПУСКАЕТСЯ ДО ДОСТИГНУТОГО В ТОТ ЖЕ ЧАС**  
   courts/prosetree_court.py, scripts/prose_court.py, scripts/word_mutants.py
-- **ДОМ, ОБЪЯВИВШИЙ РОДЫ И НЕ ОТДАВШИЙ СТРАНИЦ, ОБЕЩАЕТ ИМЕНА, КОТОРЫХ НЕКОМУ ПРИЛОЖИТЬ**  
-  tools/calforms.py, tools/chainforms.py, tools/countforms.py
 - **ЗАКОН, ПОКАЗАННЫЙ В ОДНОЙ ОДЕЖДЕ, ЕСТЬ ЗНАНИЕ ОБ ЭТОЙ ОДЕЖДЕ**  
   tools/condforms.py, tools/gen_genesis_cond.py, tools/wmeanforms.py
 - **ЗНАК ПЕРЕД ЧИСЛОМ ГОВОРИТ, ЧЕЙ ЭТО ЧЛЕН**  
@@ -347,8 +349,6 @@
   courts/fuseprep_court.py, tools/gen_genesis_fuseprep.py, tools/panel.py
 - **СЛОВА ДО ДВОЕТОЧИЯ, РАВЕНСТВА ПОСЛЕ**  
   tools/parityforms.py, tools/pctchangeforms.py, tools/plausforms.py
-- **СТРОИТЕЛЬ ПЕРЕЕХАЛ ИЗ КУЗНИЦЫ В ДОМ**  
-  tools/calforms.py, tools/countforms.py, tools/geoforms.py
 - **СУД, ВЫВОДЯЩИЙ ФОРМУ ТЕМ ЖЕ ПРАВИЛОМ, ЧТО И ДОМ, НЕ ПРОВЕРЯЕТ ДОМ — ОН ЕМУ ВТОРИТ**  
   courts/genderverb_court.py, courts/story_chain_court.py, scripts/past_gender.py
 - **СУД, СВЕРЯЮЩИЙ ФОРМУ С ЗАКОНОМ ДОМА ЯЗЫКА, СИЛЁН РОВНО ТЕМ, ЧТО САМ ЯЗЫКА НЕ ЗНАЕТ**  

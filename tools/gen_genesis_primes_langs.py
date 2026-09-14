@@ -22,16 +22,8 @@ from layer import emit_grouped  # noqa: E402
 ЦЕЛЬ = "datasets/genesis_primes_langs.txt"
 
 
-def язык_группа(шаг, язык):
-    вон = []
-    for i in range(10):
-        n = 2 + (шаг * 37 + i * 17 + list(F.ЯЗЫКИ).index(язык) * 11) % 98   # 2..99
-        вон.append(F.утверждение(язык, n) if i % 2 == 0 else F.вопрос(язык, n))
-    return вон
-
-
 def pass_groups(шаг):
-    return [язык_группа(шаг, язык) for язык in F.ЯЗЫКИ]
+    return F.группы(шаг)
 
 
 def main():

@@ -18,20 +18,8 @@ from layer import emit_grouped  # noqa: E402
 ЦЕЛЬ = "datasets/genesis_physics_langs.txt"
 
 
-def язык_группа(шаг, язык):
-    вон = []
-    for i in range(6):
-        t = 2 + (шаг * 3 + i) % 9
-        v = 2 + (шаг * 5 + i * 3) % 11
-        вон.append(F.утверждение(язык, "ск", v * t, t) if i % 2 == 0 else F.вопрос(язык, "ск", v * t, t))
-        A = 2 + (шаг * 2 + i * 5) % 7
-        p = 2 + (шаг * 7 + i) % 9
-        вон.append(F.вопрос(язык, "да", p * A, A) if i % 2 == 0 else F.утверждение(язык, "да", p * A, A))
-    return вон
-
-
 def pass_groups(шаг):
-    return [язык_группа(шаг, язык) for язык in F.ЯЗЫКИ]
+    return F.группы(шаг)
 
 
 def main():
