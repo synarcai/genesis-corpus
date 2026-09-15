@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 342 миров, 456299 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 342 миров, 461609 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -619,9 +619,9 @@
 
 ## АКТ «name» — назвать: что вещь ЕСТЬ и как она зовётся
 
-Миров 25, строк 43053.
+Миров 25, строк 48363.
 
-- **`notationvar`** (5386 строк; recompute, reversibility, declared_pairs_only)  
+- **`notationvar`** (10696 строк; recompute, reversibility, declared_pairs_only)  
   **one sign, two scripts: the same record written in ASCII and in typography, and the court reduces both to one canon. The corpus knew every sign in ONE script only, and in different signs** — in DIFFERENT ones: «x^2» 1702 times and «x²» ZERO, «≤» 351 and «<…
 - **`wordparts`** (4767 строк; recompute, additive_only)  
   **MORPHOLOGY WRITTEN AS ADDITION** — «ei + er = eier».
