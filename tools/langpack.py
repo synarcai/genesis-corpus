@@ -573,6 +573,25 @@ def count_form_index(pack, cls, k):
         or []
     )
     for rule in rules:
+        # A DECIMAL WRITING IS A RULE OF THE PACK, NOT OF THE ENGINE (15.09). Russian after a
+        # decimal figure takes the genitive singular — «2,05 рубля», «0,5 литра», «18,00
+        # рубля» — and the modulo rules cannot express it: 2.05 % 10 is 2.05, which is in no
+        # list of integers, so every fraction silently fell through to the last cell.
+        #
+        #     THE ENGINE ASKED «WHICH REMAINDER» AND NEVER «HOW IS THE NUMBER WRITTEN». A
+        #     language whose agreement turns on the writing could not be declared at all.
+        #
+        # THE RULE READS THE WRITING, NOT THE VALUE, and the caller states the writing by the
+        # TYPE it passes: 18.0 is «18,00», 18 is «18». The two are the same quantity and take
+        # DIFFERENT forms — «18,00 рубля» beside «18 рублей» — and no arithmetic on the value
+        # can tell them apart, because the difference is not in the value at all.
+        if rule.get("fractional") is not None:
+            if bool(rule["fractional"]) != isinstance(k, float):
+                continue
+            name = rule["form"]
+            if name in forms:
+                return forms.index(name)
+            continue
         value = k % rule["mod"] if "mod" in rule else k
         if "in" not in rule or value in rule["in"]:
             name = rule["form"]
