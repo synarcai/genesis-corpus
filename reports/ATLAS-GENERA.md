@@ -19,7 +19,7 @@
 Мера по страницам живёт в сайдкаре `datasets/GENESIS-FULL.genera.tsv`: номер
 строки свода → «дом · род», 290 002 строки из 442 600.
 
-**Родов 1837, различных имён 1551, страниц под ними 315402.**
+**Родов 1837, различных имён 1551, страниц под ними 318796.**
 Объявлено словом `РОДЫ` в 252 домах, словом `ФОРМЫ` — в 57.
 Домов без своего мира показов — 0. Мир дома узнаётся ПО ВВОЗУ КУЗНИЦЫ,
 а не по окончанию имени файла: догадка «срезать forms» лгала о сорока одном доме.
@@ -77,7 +77,7 @@
   образец: Ann had 6 coins. Ann gave 1 coin away. how many coins are left? 6 − 1 = 5. so the answer is 5.
 - **прибавка** — страниц 175
   образец: Anna had 9 books. Anna got 6 books more. how many books does Anna have now? 9 + 6 = 15. so the answer is 15.
-- **доля** — страниц 75
+- **доля** — страниц 175
   образец: Ava had 26 flowers. half of the flowers went. how many flowers are left? 26 ÷ 2 = 13, 26 − 13 = 13. so the answer is 13.
 - **вместе** — страниц 175
   образец: Ben has 17 balls. Carla has 17 balls. how many balls do they have together? 17 + 17 = 34. so the answer is 34.
@@ -85,21 +85,21 @@
   образец: Ava has 54 pens. Ben has 54 pens. Ava and Ben have 108 pens: 54 + 54 = 108. so the answer is 108.
 - **вместе_глагол** — страниц 25
   образец: у Вани 53 ручки. у Веры 53 ручки. Ваня и Вера имеют 106 ручек: 53 + 53 = 106. значит ответ: 106.
-- **кратное** — страниц 125
+- **кратное** — страниц 175
   образец: Carlos has 22 cards. Dan has twice as many cards as Carlos. how many cards does Dan have? 2 × 22 = 44. so the answer is 
-- **место** — страниц 75
+- **место** — страниц 175
   образец: there are 320 coins in the box. 55 of them are red. how many are not red? 320 − 55 = 265. so the answer is 265.
-- **место_эхо** — страниц 75
+- **место_эхо** — страниц 175
   образец: there are 480 balls in the garden. 35 of them are red. how many of them are red? 35 of them are red. so the answer is 35
-- **место_две** — страниц 75
+- **место_две** — страниц 175
   образец: there are 140 books in the park. 2 of them are red, 2 are blue, and the rest are green. how many are green? 140 − 2 = 13
-- **место_п** — страниц 75
+- **место_п** — страниц 175
   образец: there were 80 cards in the room. 25 of them were blue. how many were not blue? 80 − 25 = 55. so the answer is 55.
-- **место_две_п** — страниц 75
+- **место_две_п** — страниц 175
   образец: there were 120 flowers on the shelf. 17 of them were blue, 17 were green, and the rest were new. how many were new? 120 
-- **место_товар** — страниц 75
+- **место_товар** — страниц 175
   образец: there are 100 eggs in the yard. 19 eggs are green. how many eggs are not green? 100 − 19 = 81. so the answer is 81.
-- **место_товар_п** — страниц 75
+- **место_товар_п** — страниц 175
   образец: there were 140 pens in the vase. 12 pens were new. how many pens were not new? 140 − 12 = 128. so the answer is 128.
 - **ставка** — страниц 280
   образец: Cynthia collects 155 eggs every day. how many eggs in 7 days? 155 × 7 = 1085. so the answer is 1085.
@@ -109,17 +109,17 @@
   образец: one coin costs 2 balls. how many balls do 12 coins cost? 12 × 2 = 24. so the answer is 24.
 - **курс_обр** — страниц 140
   образец: 8 balls cost 64 cards. how many cards does one ball cost? 64 ÷ 8 = 8. so the answer is 8.
-- **список_числом** — страниц 81
+- **список_числом** — страниц 189
   образец: the box holds three things: one coin, one ball and one book — 1, 2, 3.
-- **список_итогом** — страниц 105
+- **список_итогом** — страниц 245
   образец: in the shelf there are one card, one egg and one pen — three things.
-- **список_чисел** — страниц 105
+- **список_чисел** — страниц 245
   образец: Ann has 4 coins, 4 cards and 4 eggs — 12 things in all: 4 + 4 = 8, 8 + 4 = 12.
 - **убыль** — страниц 482
   образец: Ava had 45 eggs. Ava ate 12 eggs. how many eggs does Ava have left? 45 − 12 = 33. so the answer is 33.
 - **место_убыло** — страниц 346
   образец: there were 54 coins in the box. 14 coins were taken away. how many coins are there now? 54 − 14 = 40. so the answer is 4
-- **место_ушли** — страниц 80
+- **место_ушли** — страниц 180
   образец: there were 39 kids in the garden. 1 kid left. how many kids are there now? 39 − 1 = 38. so the answer is 38.
 - **список_воп** — страниц 245
   образец: Ann has 3 coins, 3 books and 3 eggs. how many things does Ann have in all? 9 things: 3 + 3 = 6, 6 + 3 = 9.
@@ -127,7 +127,7 @@
   образец: Ann has 139 coins and 137 balls. how many things does Ann have in all? 276 things: 139 + 137 = 276.
 - **список_воп_дом** — страниц 175
   образец: the box holds one coin, one ball and one card. how many things does the box hold? three things: 1, 2, 3.
-- **двое_разность** — страниц 153
+- **двое_разность** — страниц 157
   образец: there were 34 coins and 13 balls in the box. 8 more coins came. how many more coins than balls are there in the box? 34 
 - **двое_сумма** — страниц 174
   образец: there were 40 balls and 21 cards in the garden. 12 more balls came. how many balls and cards are there in the garden? 40
@@ -1238,15 +1238,15 @@
 
 ## `fracforms` → мир `shares_percent`  ·  объявлено словом `ФОРМЫ`
 
-- **доля** — страниц 540
+- **доля** — страниц 1260
   образец: half of 6 is 3: 6 ÷ 2 = 3.
-- **проц** — страниц 60
+- **проц** — страниц 140
   образец: what is 75 percent of 8? 75 percent of 8 is 6: 8 × 75 = 600, 600 ÷ 100 = 6.
-- **дополн** — страниц 75
+- **дополн** — страниц 175
   образец: three fifths of the pupils have a pen; 32 do not. how many pupils are there? 32 is two fifths of 80: 5 − 3 = 2, 32 ÷ 2 =
-- **число** — страниц 540
+- **число** — страниц 1260
   образец: six sevenths of a number is 120. what is the number? 120 is six sevenths of 140: 120 ÷ 6 = 20, 20 × 7 = 140.
-- **проц_обр** — страниц 72
+- **проц_обр** — страниц 168
   образец: 45 is 90 percent of what number? 45 is 90 percent of 50: 45 × 100 = 4500, 4500 ÷ 90 = 50.
 
 ## `fuseprepforms` → мир `fuseprep`
@@ -4822,7 +4822,7 @@
   образец: Ann had 12 coins. she gave some of them away. now she has 7 coins left. how many coins did she give away? 5: 12 − 7 = 5.
 - **итог** — страниц 288
   образец: Ann has 12 red coins and 5 blue coins. how many coins does Ann have in all? 17 coins: 12 + 5 = 17.
-- **итог_всего** — страниц 16
+- **итог_всего** — страниц 96
   образец: Ann has 12 red coins and 5 blue coins. how many coins does Ann have? a total of 17 coins: 12 + 5 = 17.
 - **осталось** — страниц 168
   образец: Ann had 12 coins. she gave away 5. how many does she have now? she now has 7 left: 12 − 5 = 7.
@@ -4840,7 +4840,7 @@
   образец: Ann had 12 coins. she gave 5 coins to Anna. how many coins does Ann have now? 7: 12 − 5 = 7.
 - **у_него** — страниц 136
   образец: Ann had 12 coins. Anna took 5 coins from her. how many coins does Ann have now? 7: 12 − 5 = 7.
-- **единица** — страниц 32
+- **единица** — страниц 288
   образец: a coin costs $ 3. how much do 4 coins cost? $ 12: 4 × 3 = 12.
 - **товар** — страниц 192
   образец: Ann has 12 pages of reading homework and 5 pages of math homework. how many pages of homework does she have in all? 17 p

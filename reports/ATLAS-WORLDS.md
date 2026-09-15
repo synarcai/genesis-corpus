@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 342 миров, 451837 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 342 миров, 455307 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -11,18 +11,20 @@
 
 ## АКТ «recount» — пересчитать величину: строка утверждает число
 
-Миров 158, строк 232550.
+Миров 158, строк 236020.
 
 - **`links`** (17566 строк; declared, whole_only)  
   **CONVERSATION LINKS** — a question whose subject stands in the PREVIOUS reply (the owner's order, 04.09, item 5; the BESEDA band measures this genus mute 15 of 15).
 - **`school_biling_v2c`** (11380 строк; recompute, whole_only)  
   **THE SCHOOL OF ARITHMETIC IN THREE SURFACES** — the largest show world of the corpus (11 380 lines, 470 858 bytes) and, until 12.09, the one that said least about itself: thirty characters of declaration, «arithmetic school (3 surfaces)».
-- **`svamp`** (9520 строк; recompute, whole_only)  
+- **`svamp`** (9856 строк; recompute, whole_only)  
   **SVAMP SHAPES** — the eight shapes of the live SVAMP band that no frame of the corpus held (d5, 06.09, by weight on 726 tacts): the hidden quantity «some» and the heads of the total (in all, altogether, in total, a total of, now has N left); the oblique pr…
 - **`holdforms`** (6777 строк; declared, whole_only)  
   **HOLDINGS WITHOUT A VERB** — the first show «only by frames» (05.09, the owner's word through holon: prototype ONE BEARER, a story read only by frames).
 - **`holes`** (6640 строк; recompute, unsigned_only)  
   **the HOLE MARKET** — one fact frame and every role of it asked in turn (holon's Д-1, REVISION 02.09: a question in the organism is a per-genus surface, not an operation over a bought fact frame; the census of the svod: the number hole carries ~20 000 quest…
+- **`action_pages`** (6295 строк; recompute, whole_only)  
+  **A LEDGER FOR EVERY COUNTABLE ACT** — NEW PAGES, OLD WORLDS UNTOUCHED (the collegium of a hundred per cent, owner 03.09; holon's first task, e9's condition «add new pages, do not rewrite old ones»): the reader's worlds answer computable questions with a va…
 - **`summaryforms`** (6102 строк; recompute, whole_only)  
   **THE SUMMARY** — what a COMPACTED record keeps and what it lost (05.09, the agent architecture, the fifth market): an episode of states and the note that keeps some of them, with questions about THE NOTE — what it says about a place it keeps, what it says …
 - **`opforms`** (5796 строк; recompute, whole_only)  
@@ -31,8 +33,6 @@
   **THE NUMBER LINE IN NINE LANGUAGES** — the simplest questions a person checks a speaker with, all mute in all nine languages on the third band of conversation (BESEDA-3, 05.09): «what number comes after 9? after 9 comes 10.», «which is bigger: 7 or 9? 9 is…
 - **`episodeforms`** (5229 строк; recompute, whole_only)  
   **THE EPISODE** — a TAPE of acts over one state (05.09, the agent architecture, the first market): three acts in a row and the question about the state after the whole tape; the question about the state after the SECOND step (the ledger's prefix); which act…
-- **`action_pages`** (4921 строк; recompute, whole_only)  
-  **A LEDGER FOR EVERY COUNTABLE ACT** — NEW PAGES, OLD WORLDS UNTOUCHED (the collegium of a hundred per cent, owner 03.09; holon's first task, e9's condition «add new pages, do not rewrite old ones»): the reader's worlds answer computable questions with a va…
 - **`everyday`** (4578 строк; recompute, declared, whole_only, unsigned_only)  
   **everyday life, and every line of it CARRIES A COMPUTABLE GROUND: things counted, containment walked through a declared tree, time ordered by a declared row, the past of a verb by rule with irregulars named, comparison by subtraction, and what remains afte…
 - **`numbers`** (4220 строк; recompute, whole_only)  
@@ -51,6 +51,8 @@
   **THE PERSONALITY** — the same fact, another voice (05.09, the agent architecture, the seventh and last market).
 - **`chains_langs`** (3092 строк; recompute, whole_only)  
   **A CHAIN OF TWO AND THREE STEPS IN TWENTY-NINE LANGUAGES (the owner's word: every language in surplus): nineteen declared languages (am, ar, el, fa, fi, he, hi, hu, id, ja, ka, ko, sv, sw, ta, th, uk, vi, zh) carried lexicon and single equalities only and …
+- **`shares_percent`** (3080 строк; recompute, whole_only)  
+  **SHARES AND PERCENTS OVER QUANTITIES** — GENUS 2 OF THE g1 BAND (holon's word 03.09, G1-ATTACK): five forms whose ledger is a chain of primitives whole on the axis, en/ru/de — «what is two thirds of 24? two thirds of 24 is 16: 24 ÷ 3 = 8, 8 × 2 = 16.» (den…
 - **`toolforms`** (2907 строк; recompute, whole_only)  
   **THE TOOL** — «the state before · the call · the state after» (05.09, the agent architecture: a tool is known by what it changes and by what it leaves alone).
 - **`discountroad`** (2808 строк; recompute, whole_only, exact_only)  
@@ -99,8 +101,6 @@
   **age and the shift of time: the difference between two ages does NOT change when both move forward or back** — the law a corpus of single facts cannot teach; ages now, the shift in both directions, the multiple relation with its ground, the multiple in the…
 - **`ceilfloor`** (1340 строк; recompute, whole_only)  
   **TWO ANSWERS TO ONE DIVISION** — THE REMAINDER DECIDES WHICH WAY TO ROUND, AND THE QUESTION DECIDES THE REMAINDER'S USE. Measured 11.09 across the 251 show worlds (429 194 lines): «не хватит», «понадобится ещё», «нужно N коробок», «потребуется» — NONE; «ск…
-- **`shares_percent`** (1320 строк; recompute, whole_only)  
-  **SHARES AND PERCENTS OVER QUANTITIES** — GENUS 2 OF THE g1 BAND (holon's word 03.09, G1-ATTACK): five forms whose ledger is a chain of primitives whole on the axis, en/ru/de — «what is two thirds of 24? two thirds of 24 is 16: 24 ÷ 3 = 8, 8 × 2 = 16.» (den…
 - **`average`** (1300 строк; recompute, whole_only)  
   the summary of a row: average with its GROUND beside it (the sum and the count named separately), largest and smallest, the law that the average lies between them, and the counterexample that the average need not be one of the numbers
 - **`signedworld`** (1296 строк; recompute, whole_only, crossing_only)  
