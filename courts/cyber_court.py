@@ -60,19 +60,26 @@ from genesis import Unreadable, worlds  # noqa: E402
     r"|no: (\d+) − (\d+) = (\d+), (\d+) is not divisible by (\d+)"
     r"|да: (\d+) − (\d+) = (\d+), (\d+) ÷ (\d+) = (\d+)"
     r"|нет: (\d+) − (\d+) = (\d+), (\d+) не делится на (\d+) нацело)$")
+# РУССКИЕ СТОРОНЫ КОНТУРА И МАШИНЫ (15.09): дом сказал их, и суд ПЕРЕСЧИТЫВАЕТ их тем же
+# действием — прогоном машины и сверкой ошибки, а не сличением строки со строкой.
 ЗАМКНУТ = re.compile(
-    r"^target (\d+): a closed loop stops at (\d+) because the error "
-    r"is 0$")
+    r"^(?:target (\d+): a closed loop stops at (\d+) because the error is 0"
+    r"|цель (\d+): замкнутый контур останавливается на (\d+), ибо ошибка равна 0)$")
 РАЗОМКНУТ = re.compile(
-    r"^target (\d+): an open loop takes one step more and reaches "
-    r"(\d+), overshooting by (\d+)$")
+    r"^(?:target (\d+): an open loop takes one step more and reaches "
+    r"(\d+), overshooting by (\d+)"
+    r"|цель (\d+): разомкнутый контур делает ещё один шаг и доходит "
+    r"до (\d+), перелетев на (\d+))$")
 # РЕЖЕТСЯ ПО ПОСЛЕДНЕЙ ТОЧКЕ С ЗАПЯТОЙ, А НЕ ПО ПЕРВОЙ: переходов
 # бывает несколько, и нежадный разбор уносил их в утверждение.
-МАШИНА = re.compile(r"^machine ([A-Z ]+); (.+)$")
-ПЕРЕХОД = re.compile(r"on (\S+) ([A-Z]) goes to ([A-Z])")
-ВЕДЁТ = re.compile(r"^from ([A-Z]) the input ([\d ]+) leads to ([A-Z])$")
+МАШИНА = re.compile(r"^(?:machine|машина) ([A-Z ]+); (.+)$")
+ПЕРЕХОД = re.compile(r"(?:on (\S+) ([A-Z]) goes to ([A-Z])"
+                     r"|по (\S+) ([A-Z]) переходит в ([A-Z]))")
+ВЕДЁТ = re.compile(r"^(?:from ([A-Z]) the input ([\d ]+) leads to ([A-Z])"
+                   r"|из ([A-Z]) вход ([\d ]+) ведёт в ([A-Z]))$")
 СЧЁТ = re.compile(
-    r"^this machine has (\d+) states? and (\d+) transitions?$")
+    r"^(?:this machine has (\d+) states? and (\d+) transitions?"
+    r"|у этой машины (\d+) \S+ и (\d+) \S+)$")
 РАЗНООБРАЗИЕ = re.compile(
     r"^(?:a regulator with (\d+) states? can distinguish (\d+) disturbances?"
     r"|регулятор с (\d+) состояни\w+ различает (\d+) \S+)$")
@@ -218,20 +225,24 @@ def _судить(строка):
         return True, (о == ц - нач and о2 == о and шаг != 0 and о % шаг != 0)
     m = ЗАМКНУТ.match(с)
     if m:
-        return True, int(m.group(1)) == int(m.group(2))
+        ц, стали = (int(x) for x in m.groups() if x is not None)
+        return True, ц == стали
     m = РАЗОМКНУТ.match(с)
     if m:
-        ц, достигли, перелёт = (int(x) for x in m.groups())
+        ц, достигли, перелёт = (int(x) for x in m.groups() if x is not None)
         return True, достигли == ц + перелёт
     m = МАШИНА.match(с)
     if m:
         состояния = m.group(1).split()
         куски = [к.strip() for к in m.group(2).split(";")]
-        переходы = ПЕРЕХОД.findall("; ".join(куски[:-1]))
+        # ДВЕ РАМКИ ПЕРЕХОДА ДАЮТ ШЕСТЬ ГРУПП, И ТРИ ИЗ НИХ ВСЕГДА ПУСТЫ: берутся непустые.
+        переходы = [tuple(г for г in п if г)
+                    for п in ПЕРЕХОД.findall("; ".join(куски[:-1]))]
         хвост = куски[-1].rstrip(".")
         m2 = ВЕДЁТ.match(хвост)
         if m2:
-            узел, вход, ждём = m2.group(1), m2.group(2).split(), m2.group(3)
+            узел, вход, ждём = [г for г in m2.groups() if г is not None]
+            вход = вход.split()
             таблица = {(a, в): b for в, a, b in переходы}
             for знак in вход:
                 узел = таблица.get((узел, знак))
@@ -240,8 +251,8 @@ def _судить(строка):
             return True, узел == ждём
         m2 = СЧЁТ.match(хвост)
         if m2:
-            return True, (len(состояния) == int(m2.group(1))
-                          and len(переходы) == int(m2.group(2)))
+            сост, пер = [int(г) for г in m2.groups() if г is not None]
+            return True, len(состояния) == сост and len(переходы) == пер
         return False, True
     m = РАЗНООБРАЗИЕ.match(с)
     if m:

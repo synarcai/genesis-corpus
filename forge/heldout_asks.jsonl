@@ -1,18 +1,18 @@
-{"id": "ho0001", "ask": "what is 13 xor 6?", "expect": {"kind": "value", "n": 11}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
-{"id": "ho0002", "ask": "what is 5 shifted left by 3?", "expect": {"kind": "value", "n": 40}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
-{"id": "ho0003", "ask": "what is 25 in octal?", "expect": {"kind": "value", "n": 31}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
-{"id": "ho0004", "ask": "what is 7 or 3?", "expect": {"kind": "value", "n": 7}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
+{"id": "ho0001", "ask": "what is 52 shifted right by 2?", "expect": {"kind": "value", "n": 13}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
+{"id": "ho0002", "ask": "what is 7 xor 3?", "expect": {"kind": "value", "n": 4}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
+{"id": "ho0003", "ask": "what is 40 in hex?", "expect": {"kind": "value", "n": 28}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
+{"id": "ho0004", "ask": "what is 25 or 9?", "expect": {"kind": "value", "n": 25}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
 {"id": "ho0005", "ask": "what is 60 and 15?", "expect": {"kind": "value", "n": 12}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
-{"id": "ho0006", "ask": "what is 100 in hex?", "expect": {"kind": "value", "n": 64}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
-{"id": "ho0007", "ask": "what is 44 shifted right by 2?", "expect": {"kind": "value", "n": 11}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
-{"id": "ho0008", "ask": "what is 31 in binary?", "expect": {"kind": "value", "n": 11111}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
-{"id": "ho0009", "ask": "what is 70 xor 6?", "expect": {"kind": "value", "n": 64}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
-{"id": "ho0010", "ask": "what is 2 shifted left by 4?", "expect": {"kind": "value", "n": 32}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
-{"id": "ho0011", "ask": "what is 255 in binary?", "expect": {"kind": "value", "n": 11111111}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
-{"id": "ho0012", "ask": "what is 544 shifted right by 5?", "expect": {"kind": "value", "n": 17}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
-{"id": "ho0013", "ask": "what is 14 or 9?", "expect": {"kind": "value", "n": 15}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
-{"id": "ho0014", "ask": "what is 22 xor 15?", "expect": {"kind": "value", "n": 25}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
-{"id": "ho0015", "ask": "what is 12 and 10?", "expect": {"kind": "value", "n": 8}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
+{"id": "ho0006", "ask": "what is 100 in octal?", "expect": {"kind": "value", "n": 144}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
+{"id": "ho0007", "ask": "what is 11 shifted left by 2?", "expect": {"kind": "value", "n": 44}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
+{"id": "ho0008", "ask": "what is 64 in binary?", "expect": {"kind": "value", "n": 1000000}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
+{"id": "ho0009", "ask": "what is 50 shifted right by 1?", "expect": {"kind": "value", "n": 25}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
+{"id": "ho0010", "ask": "what is 45 or 3?", "expect": {"kind": "value", "n": 47}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
+{"id": "ho0011", "ask": "what is 4 shifted left by 2?", "expect": {"kind": "value", "n": 16}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
+{"id": "ho0012", "ask": "what is 13 in binary?", "expect": {"kind": "value", "n": 1101}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
+{"id": "ho0013", "ask": "what is 6 in binary?", "expect": {"kind": "value", "n": 110}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
+{"id": "ho0014", "ask": "what is 40 shifted right by 3?", "expect": {"kind": "value", "n": 5}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
+{"id": "ho0015", "ask": "what is 25 xor 9?", "expect": {"kind": "value", "n": 16}, "tags": ["held_out_form:true", "genus:genesis_machine", "source:constructed"]}
 {"id": "ho0016", "ask": "what is tell me whether 1 is prime. 1 is neither prime nor composite: its only divisor?", "expect": {"kind": "value", "n": 1}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
 {"id": "ho0017", "ask": "чему равно 13 и 18 не сравнимы по модулю 4: 13 по модулю 4 равно 1, 18 по модулю 4?", "expect": {"kind": "value", "n": 2}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
 {"id": "ho0018", "ask": "чему равно 22 по модулю 7?", "expect": {"kind": "value", "n": 1}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
