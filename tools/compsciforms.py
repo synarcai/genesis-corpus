@@ -138,26 +138,26 @@ def отказ_алфавита(шаг):
             # ОБЕ ПОЛЯРНОСТИ ОДНОЙ РАМКОЙ (аудит покупок holon 03.09):
             # степень двойки отвечает тем же вопросом ценой в битах.
             b = n.bit_length() - 1
-            вон.append(f"how many bits does a sign of an alphabet of {n} "
+            вон.append((f"how many bits does a sign of an alphabet of {n} "
                        f"signs cost? a sign of an alphabet of {n} {by_count(n, 'signs')} "
-                       f"costs {b} {by_count(b, 'bits')}: 2^{b} = {n}.")
-            вон.append(f"сколько бит стоит знак алфавита в {n} "
+                       f"costs {b} {by_count(b, 'bits')}: 2^{b} = {n}.", "en"))
+            вон.append((f"сколько бит стоит знак алфавита в {n} "
                        f"{rugram.форма('знак', n)}? знак алфавита в {n} "
                        f"{rugram.форма('знак', n)} стоит {b} "
-                       f"{rugram.форма('бит', b)}: 2^{b} = {n}.")
-            вон.append(спросить("whole_cost", f"{n} {by_count(n, 'signs')}",
-                                f"yes: {n} = 2^{b}, a sign costs {b} {by_count(b, 'bits')}."))
-            вон.append(спросить("целая_цена", f"{n} {rugram.форма('знак', n)}",
-                                f"да: {n} = 2^{b}, знак стоит {b} {rugram.форма('бит', b)}."))
+                       f"{rugram.форма('бит', b)}: 2^{b} = {n}.", "ru"))
+            вон.append((спросить("whole_cost", f"{n} {by_count(n, 'signs')}",
+                                f"yes: {n} = 2^{b}, a sign costs {b} {by_count(b, 'bits')}."), "en"))
+            вон.append((спросить("целая_цена", f"{n} {rugram.форма('знак', n)}",
+                                f"да: {n} = 2^{b}, знак стоит {b} {rugram.форма('бит', b)}."), "ru"))
             continue
         # WHOLENESS IS A YES/NO QUESTION (holon 03.09, value-not-verdict: a
         # question for a VALUE answered by a refusal looked like a verdict
         # frame with one polarity). The value question keeps its value
         # answers; wholeness is asked as its own question, and both answers
         # lie side by side — «yes» with the whole value, «no» with the reason.
-        вон.append(спросить("whole_cost", f"{n} {by_count(n, 'signs')}", f"no: {n} is not a power of two."))
-        вон.append(спросить("целая_цена", f"{n} {rugram.форма('знак', n)}",
-                            f"нет: {n} {rugram.форма('знак', n)} — это не степень двойки."))
+        вон.append((спросить("whole_cost", f"{n} {by_count(n, 'signs')}", f"no: {n} is not a power of two."), "en"))
+        вон.append((спросить("целая_цена", f"{n} {rugram.форма('знак', n)}",
+                            f"нет: {n} {rugram.форма('знак', n)} — это не степень двойки."), "ru"))
     return вон
 
 
@@ -174,10 +174,10 @@ def энтропия(шаг):
         утв_ru = f"{пред_ru} несут {k} {rugram.форма('бит', k)}."
         утв_en = (f"{пред_en} carry {k} "
                   f"{'bit' if k == 1 else 'bits'}.")
-        вон.append(утв_ru)
-        вон.append(утв_en)
-        вон.append(спросить("несут", пред_ru, утв_ru))
-        вон.append(спросить("carry", пред_en, утв_en))
+        вон.append((утв_ru, "ru"))
+        вон.append((утв_en, "en"))
+        вон.append((спросить("несут", пред_ru, утв_ru), "ru"))
+        вон.append((спросить("carry", пред_en, утв_en), "en"))
         длина = 1 + (k + шаг) % 6
         алфавит = 2 ** (1 + (k * 2 + шаг) % 4)
         цена = длина * (1 + (k * 2 + шаг) % 4)
@@ -190,10 +190,10 @@ def энтропия(шаг):
                  f"alphabet of {алфавит} {by_count(алфавит, 'signs')}")
         утв_сл_ru = f"{сл_ru} стоит {цена} {rugram.форма('бит', цена)}."
         утв_сл_en = f"{сл_en} costs {цена} {by_count(цена, 'bits')}."
-        вон.append(утв_сл_ru)
-        вон.append(утв_сл_en)
-        вон.append(спросить("стоит", сл_ru, утв_сл_ru))
-        вон.append(спросить("cost", сл_en, утв_сл_en))
+        вон.append((утв_сл_ru, "ru"))
+        вон.append((утв_сл_en, "en"))
+        вон.append((спросить("стоит", сл_ru, утв_сл_ru), "ru"))
+        вон.append((спросить("cost", сл_en, утв_сл_en), "en"))
         # ПОНЯТИЕ БЕЗ ИМЕНИ НЕ ВЫУЧЕНО: показать счёт битов и не назвать
         # его энтропией значит оставить читателя без слова, которым он
         # найдёт это знание везде.
@@ -208,10 +208,10 @@ def энтропия(шаг):
                     f"{rugram.форма('бит', k)}.")
         утв_э_en = (f"{пред_en} — entropy {k} "
                     f"{'bit' if k == 1 else 'bits'}.")
-        вон.append(утв_э_ru)
-        вон.append(утв_э_en)
-        вон.append(спросить("энтропия", пред_ru, утв_э_ru))
-        вон.append(спросить("entropy", пред_en, утв_э_en))
+        вон.append((утв_э_ru, "ru"))
+        вон.append((утв_э_en, "en"))
+        вон.append((спросить("энтропия", пред_ru, утв_э_ru), "ru"))
+        вон.append((спросить("entropy", пред_en, утв_э_en), "en"))
     return вон
 
 
@@ -224,10 +224,10 @@ def автомат(шаг):
         единиц = sum(1 for x in вход.split() if x == "1")
         итог = "чётное" if единиц % 2 == 0 else "нечётное"
         итог_en = "even" if единиц % 2 == 0 else "odd"
-        вон.append(f"автомат чётности: вход {вход}; "
-                   f"состояние после — {итог}.")
-        вон.append(f"parity automaton: input {вход}; "
-                   f"the state after is {итог_en}.")
+        вон.append((f"автомат чётности: вход {вход}; "
+                   f"состояние после — {итог}.", "ru"))
+        вон.append((f"parity automaton: input {вход}; "
+                   f"the state after is {итог_en}.", "en"))
     return вон
 
 
@@ -236,15 +236,15 @@ def грамматика(шаг):
     вон = []
     for n in range(1, 7):
         слово = "a " * n + "b " * n
-        вон.append(f"правило S → a S b, применённое {n} "
-                   f"{rugram.форма('раз', n)}, даёт {слово.strip()}.")
-        вон.append(f"the rule S → a S b applied {n} "
+        вон.append((f"правило S → a S b, применённое {n} "
+                   f"{rugram.форма('раз', n)}, даёт {слово.strip()}.", "ru"))
+        вон.append((f"the rule S → a S b applied {n} "
                    f"{'time' if n == 1 else 'times'} gives "
-                   f"{слово.strip()}.")
-        вон.append(f"формальная грамматика с правилом S → a S b "
-                   f"порождает строку {слово.strip()}.")
-        вон.append(f"the formal grammar with rule S → a S b generates "
-                   f"the string {слово.strip()}.")
+                   f"{слово.strip()}.", "en"))
+        вон.append((f"формальная грамматика с правилом S → a S b "
+                   f"порождает строку {слово.strip()}.", "ru"))
+        вон.append((f"the formal grammar with rule S → a S b generates "
+                   f"the string {слово.strip()}.", "en"))
     return вон
 
 
@@ -255,14 +255,14 @@ def разрешимость(шаг):
         a, b = 12 + i * 3 + 18 * шаг, 3 + (i % 4)
         ответ = "да" if a % b == 0 else "нет"
         ответ_en = "yes" if a % b == 0 else "no"
-        вон.append(f"делится ли {a} на {b} — вопрос разрешимый; "
-                   f"ответ {ответ}.")
-        вон.append(f"is {a} divisible by {b} — a decidable question; "
-                   f"the answer is {ответ_en}.")
-    вон.append("остановится ли всякая программа на всяком входе — "
-               "вопрос неразрешимый: общего алгоритма нет.")
-    вон.append("whether every program halts on every input is "
-               "undecidable: there is no general algorithm.")
+        вон.append((f"делится ли {a} на {b} — вопрос разрешимый; "
+                   f"ответ {ответ}.", "ru"))
+        вон.append((f"is {a} divisible by {b} — a decidable question; "
+                   f"the answer is {ответ_en}.", "en"))
+    вон.append(("остановится ли всякая программа на всяком входе — "
+               "вопрос неразрешимый: общего алгоритма нет.", "ru"))
+    вон.append(("whether every program halts on every input is "
+               "undecidable: there is no general algorithm.", "en"))
     return вон
 
 
@@ -274,10 +274,10 @@ def тип(шаг):
         целое = a % b == 0
         род = "целое" if целое else "дробь"
         род_en = "whole" if целое else "a fraction"
-        вон.append(f"тип значения {a} — целое; тип значения "
-                   f"{a} ÷ {b} — {род}.")
-        вон.append(f"the type of {a} is whole; the type of "
-                   f"{a} ÷ {b} is {род_en}.")
+        вон.append((f"тип значения {a} — целое; тип значения "
+                   f"{a} ÷ {b} — {род}.", "ru"))
+        вон.append((f"the type of {a} is whole; the type of "
+                   f"{a} ÷ {b} is {род_en}.", "en"))
     return вон
 
 
@@ -288,12 +288,12 @@ def инвариант(шаг):
         шагов = 2 + i + 10 * шаг
         прибавка = 2
         итог = шагов * прибавка
-        вон.append(f"цикл: x = 0; повторить {шагов} "
+        вон.append((f"цикл: x = 0; повторить {шагов} "
                    f"{rugram.форма('раз', шагов)} x = x + {прибавка}. "
-                   f"инвариант: x чётно на каждом шаге. выход x = {итог}.")
-        вон.append(f"loop: x = 0; repeat {шагов} times x = x + "
+                   f"инвариант: x чётно на каждом шаге. выход x = {итог}.", "ru"))
+        вон.append((f"loop: x = 0; repeat {шагов} times x = x + "
                    f"{прибавка}. invariant: x is even at every step. "
-                   f"exit x = {итог}.")
+                   f"exit x = {итог}.", "en"))
     return вон
 
 
@@ -304,19 +304,19 @@ def гомеостаз(шаг):
         низ, верх = 2 + (i % 4) + 2 * шаг, 8 + (i % 5) + 3 * шаг
         возмущение = низ - 2 - (i % 3) if i % 2 else верх + 1 + (i % 4)
         вернул = min(max(возмущение, низ), верх)
-        вон.append(f"регулятор держит значение между {низ} и {верх}: "
-                   f"при возмущении {возмущение} он вернул {вернул}.")
-        вон.append(f"the regulator holds the value between {низ} and "
-                   f"{верх}: given {возмущение} it returned {вернул}.")
+        вон.append((f"регулятор держит значение между {низ} и {верх}: "
+                   f"при возмущении {возмущение} он вернул {вернул}.", "ru"))
+        вон.append((f"the regulator holds the value between {низ} and "
+                   f"{верх}: given {возмущение} it returned {вернул}.", "en"))
         # ЧИСЛО ПЕРЕД СУЩЕСТВИТЕЛЬНЫМ НЕ ВСЕГДА СЧЁТ: «между 3 и 9
         # значение» — девятка есть предел, а «значение» к ней не
         # относится. Оборот переставлен так, что число стоит ПОСЛЕ
         # имени и ловушки нет вовсе.
-        вон.append(f"гомеостаз есть удержание величины в пределах "
-                   f"от {низ} до {верх}: значение {вернул} допустимо.")
-        вон.append(f"homeostasis is holding a value inside bounds "
+        вон.append((f"гомеостаз есть удержание величины в пределах "
+                   f"от {низ} до {верх}: значение {вернул} допустимо.", "ru"))
+        вон.append((f"homeostasis is holding a value inside bounds "
                    f"from {низ} to {верх}: the value {вернул} "
-                   f"is allowed.")
+                   f"is allowed.", "en"))
     return вон
 
 
@@ -327,13 +327,13 @@ def модель(шаг):
         состояний = 2 + i + 10 * шаг
         различает = состояний if i % 2 == 0 else max(1, состояний - 2)
         можно = различает >= состояний
-        вон.append(f"модель системы имеет {состояний} "
+        вон.append((f"модель системы имеет {состояний} "
                    f"{rugram.форма('состояние', состояний)}; наблюдатель "
                    f"различает {различает}: управление "
-                   f"{'возможно' if можно else 'невозможно'}.")
-        вон.append(f"the model of the system has {состояний} {by_count(состояний, 'states')}; "
+                   f"{'возможно' if можно else 'невозможно'}.", "ru"))
+        вон.append((f"the model of the system has {состояний} {by_count(состояний, 'states')}; "
                    f"the observer tells apart {различает}: control is "
-                   f"{'possible' if можно else 'impossible'}.")
+                   f"{'possible' if можно else 'impossible'}.", "en"))
     return вон
 
 
@@ -349,41 +349,56 @@ def рассужд_энтропия(шаг):
         выв_en = f"{n} equally likely outcomes — entropy {k} {'bit' if k == 1 else 'bits'}"
         выв_ru = f"{n} {rugram.форма('равновозможный исход', n)} — энтропия {k} {rugram.форма('бит', k)}"
         if (k + шаг) % 2 == 0:
-            вон.append(discourse.рассуждение_величины("en", f"what is the entropy of {n} equally likely outcomes", св, выв_en, зак_en))
-            вон.append(discourse.рассуждение_величины("ru", f"чему равна энтропия {n} {rugram.форма('равновозможный исход', n)}", св, выв_ru, зак_ru))
+            вон.append((discourse.рассуждение_величины("en", f"what is the entropy of {n} equally likely outcomes", св, выв_en, зак_en), "en"))
+            вон.append((discourse.рассуждение_величины("ru", f"чему равна энтропия {n} {rugram.форма('равновозможный исход', n)}", св, выв_ru, зак_ru), "ru"))
         else:
-            вон.append(discourse.почему("en", f"why is the entropy of {n} equally likely outcomes {k} {'bit' if k == 1 else 'bits'}", св, выв_en, зак_en))
-            вон.append(discourse.почему("ru", f"почему энтропия {n} {rugram.форма('равновозможный исход', n)} равна {k} {rugram.форма('бит', k)}", св, выв_ru, зак_ru))
+            вон.append((discourse.почему("en", f"why is the entropy of {n} equally likely outcomes {k} {'bit' if k == 1 else 'bits'}", св, выв_en, зак_en), "en"))
+            вон.append((discourse.почему("ru", f"почему энтропия {n} {rugram.форма('равновозможный исход', n)} равна {k} {rugram.форма('бит', k)}", св, выв_ru, зак_ru), "ru"))
     return вон
 
 
 def законы(шаг):
-    return laws.ступень("compsci")
+    # ЯЗЫК СТУПЕНИ БЕРЁТСЯ У ОБЩЕГО ПОМОЩНИКА (15.09).
+    return [(с, я) for с, _k, я in laws.ступень_с_языком("compsci")]
 
 ГРУППЫ = (отказ_алфавита, энтропия, рассужд_энтропия, законы, автомат, грамматика, разрешимость,
           тип, инвариант, гомеостаз, модель)
 
 
 def группы(шаг):
-    """[[страница]] — ровно те группы и в том порядке, какими кузница кормит `emit_grouped`."""
+    """[[(страница, язык)]] — ровно те группы и в том порядке, какими кормится кузница."""
     return [сделать(шаг) for сделать in ГРУППЫ]
+
+
+def группы_страниц(шаг):
+    """[[страница]] — то же без меток: этим кормится `emit_grouped`."""
+    return [[с for с, _я in г] for г in группы(шаг)]
+
+
+def перебор_с_языком(шаг):
+    """[(страница, род, ЯЗЫК)] — язык проставлен при каждой рамке (15.09).
+
+    Дом пишет одну мысль двумя рамками — русской и английской, — и язык был известен рамке,
+    но не ложился в словарь показов.
+    """
+    вон = []
+    for род, группа in zip(РОДЫ, группы(шаг)):
+        for с, язык in группа:
+            вон.append((с, род, язык))
+    return вон
 
 
 def перебор(шаг):
     """[(страница, род)] — те же группы, но каждая под своим именем."""
-    вон = []
-    for род, группа in zip(РОДЫ, группы(шаг)):
-        for с in группа:
-            вон.append((с, род))
-    return вон
+    return [(с, р) for с, р, _я in перебор_с_языком(шаг)]
 
 
 def _показы():
     from layer import PASSES                              # noqa: PLC0415
     вон = {}
     for шаг in range(len(PASSES)):
-        for с, род in перебор(шаг):
-            вон.setdefault(с, род)
+        for с, род, язык in перебор_с_языком(шаг):
+            вон.setdefault(с, (язык, род))
     return вон
 
 
@@ -397,7 +412,7 @@ def _самопроверка():
     сколько = len(группы(0))
     assert сколько == len(РОДЫ), f"проход даёт {сколько} групп при {len(РОДЫ)} родах"
     assert set(ЗАЧЕМ_РОДА) == set(РОДЫ), "глосса рода разошлась с объявлением"
-    пустые = set(РОДЫ) - set(ПОКАЗЫ.values())
+    пустые = set(РОДЫ) - {р for _я, р in ПОКАЗЫ.values()}
     assert not пустые, f"род объявлен и не кован: {sorted(пустые)}"
 
 

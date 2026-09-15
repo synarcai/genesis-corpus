@@ -39,7 +39,7 @@ from layer import emit_grouped  # noqa: E402
 
 
 def main():
-    emit_grouped(ЦЕЛЬ, F.группы)
+    emit_grouped(ЦЕЛЬ, F.группы_страниц)
 
 
 if __name__ == "__main__":

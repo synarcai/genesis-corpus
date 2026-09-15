@@ -97,10 +97,10 @@ def спросить(искомое, ответ, **части):
 def размерности(шаг):
     вон = []
     for ру, en, форм, ру_пред, en_ед in РАЗМЕРНОСТИ:
-        вон.append(f"размерность величины {ру} есть {форм}; "
-                   f"измеряется в {ру_пред}.")
-        вон.append(f"the dimension of {en} is {форм}; "
-                   f"it is measured in {en_ед}.")
+        вон.append((f"размерность величины {ру} есть {форм}; "
+                   f"измеряется в {ру_пред}.", "ru"))
+        вон.append((f"the dimension of {en} is {форм}; "
+                   f"it is measured in {en_ед}.", "en"))
     return вон
 
 
@@ -110,19 +110,19 @@ def сохранение(шаг):
     for i in range(16):
         a, b = 3 + (i + шаг) % 7, 5 + (i * 2 + шаг) % 9
         итог = a + b
-        вон.append(f"импульс сохраняется: было {a} и {b}, стало "
-                   f"{итог}, сумма не изменилась.")
-        вон.append(f"momentum is conserved: {a} and {b} before, "
-                   f"{итог} after, the sum did not change.")
+        вон.append((f"импульс сохраняется: было {a} и {b}, стало "
+                   f"{итог}, сумма не изменилась.", "ru"))
+        вон.append((f"momentum is conserved: {a} and {b} before, "
+                   f"{итог} after, the sum did not change.", "en"))
         e1, e2 = 4 + (i + шаг) % 6, 6 + (i + шаг) % 8
         целое, часть = max(e1, e2), min(e1, e2)
         остаток = целое - часть
-        вон.append(f"энергия сохраняется: {целое} "
+        вон.append((f"энергия сохраняется: {целое} "
                    f"{rugram.форма('джоуль', целое)} разделились на {часть} и "
-                   f"{остаток} {rugram.форма('джоуль', остаток)}.")
-        вон.append(f"energy is conserved: {max(e1, e2)} {by_count(max(e1, e2), 'joules')} split "
+                   f"{остаток} {rugram.форма('джоуль', остаток)}.", "ru"))
+        вон.append((f"energy is conserved: {max(e1, e2)} {by_count(max(e1, e2), 'joules')} split "
                    f"into {min(e1, e2)} and "
-                   f"{max(e1, e2) - min(e1, e2)} {by_count(max(e1, e2) - min(e1, e2), 'joules')}.")
+                   f"{max(e1, e2) - min(e1, e2)} {by_count(max(e1, e2) - min(e1, e2), 'joules')}.", "en"))
     return вон
 
 
@@ -146,14 +146,14 @@ def давление(шаг):
         утв_en = (f"pressure = force ÷ area; {сила} {by_count(сила, 'newtons')} ÷ "
                   f"{площадь} {by_count(площадь, 'square metres')} = "
                   f"{p} {by_count(p, 'pascals')}.")
-        вон.append(утв_ru)
-        вон.append(утв_en)
-        вон.append(спросить("закон", утв_ru,
+        вон.append((утв_ru, "ru"))
+        вон.append((утв_en, "en"))
+        вон.append((спросить("закон", утв_ru,
                             закон="давление = сила ÷ площадь",
-                            x=сила, y=площадь))
-        вон.append(спросить("law", утв_en,
+                            x=сила, y=площадь), "ru"))
+        вон.append((спросить("law", утв_en,
                             закон="pressure = force ÷ area",
-                            x=сила, y=площадь))
+                            x=сила, y=площадь), "en"))
         # WHOLENESS IS A YES/NO QUESTION (holon 03.09, value-not-verdict: a
         # question for a VALUE answered by a refusal looked like a verdict
         # frame with one polarity). The question now asks about wholeness
@@ -178,8 +178,8 @@ def давление(шаг):
                       f"{целая} не делится на {площадь} нацело.")
             отв_en = (f"no: {целая} {by_count(целая, 'newtons')} over {площадь} square metres do not "
                       f"give a whole pressure, {целая} is not divisible by {площадь}.")
-        вон.append(спросить("целое", отв_ru, закон="давление = сила ÷ площадь", x=целая, y=площадь))
-        вон.append(спросить("whole", отв_en, закон="pressure = force ÷ area", x=целая, y=площадь))
+        вон.append((спросить("целое", отв_ru, закон="давление = сила ÷ площадь", x=целая, y=площадь), "ru"))
+        вон.append((спросить("whole", отв_en, закон="pressure = force ÷ area", x=целая, y=площадь), "en"))
     return вон
 
 
@@ -193,23 +193,23 @@ def волна(шаг):
         # ПРЕДЛОГ ТРЕБУЕТ СВОЕГО ПАДЕЖА, и «в 1 секунда» неверно, как
         # неверно «a period of 1 seconds». Оборот выбран такой, где
         # падеж есть именительный счётный, — форма тогда одна и верна.
-        вон.append(f"период — {период} {rugram.форма('секунда', период)}; "
+        вон.append((f"период — {период} {rugram.форма('секунда', период)}; "
                    f"частота — {частота} "
                    f"{rugram.форма('колебание', частота)} в минуту; "
-                   f"{период} × {частота} = 60.")
-        вон.append(f"the period is {период} "
+                   f"{период} × {частота} = 60.", "ru"))
+        вон.append((f"the period is {период} "
                    f"{'second' if период == 1 else 'seconds'}; the "
                    f"frequency is {частота} per minute; "
-                   f"{период} × {частота} = 60.")
+                   f"{период} × {частота} = 60.", "en"))
         скорость = 3 + (i + шаг) % 5
         длина = скорость * период
-        вон.append(f"скорость волны = длина ÷ период; {длина} "
+        вон.append((f"скорость волны = длина ÷ период; {длина} "
                    f"{rugram.форма('метр', длина)} ÷ {период} "
                    f"{rugram.форма('секунда', период)} = {скорость} "
-                   f"{rugram.форма('метр', скорость)} в секунду.")
-        вон.append(f"wave speed = length ÷ period; {длина} {by_count(длина, 'metres')} ÷ "
+                   f"{rugram.форма('метр', скорость)} в секунду.", "ru"))
+        вон.append((f"wave speed = length ÷ period; {длина} {by_count(длина, 'metres')} ÷ "
                    f"{период} {'second' if период == 1 else 'seconds'} "
-                   f"= {скорость} {by_count(скорость, 'metres')} per second.")
+                   f"= {скорость} {by_count(скорость, 'metres')} per second.", "en"))
     return вон
 
 
@@ -233,40 +233,55 @@ def рассужд_давление(шаг):
         выв_ru = f"давление — {p} {rugram.форма('паскаль', p)}"
         зак_en, зак_ru = laws.ЗАКОНЫ["physlaws"][0][2], laws.ЗАКОНЫ["physlaws"][0][3]
         if i % 2 == 0:
-            вон.append(discourse.рассуждение_величины("en", f"what is the pressure of {сила} {by_count(сила, 'newtons')} on {площадь} square metres", св_en, выв_en, зак_en))
-            вон.append(discourse.рассуждение_величины("ru", f"каково давление силы {сила} {rugram.форма('ньютон', сила)} на {площадь} {rugram.форма('квадратный метр', площадь)}", св_ru, выв_ru, зак_ru))
+            вон.append((discourse.рассуждение_величины("en", f"what is the pressure of {сила} {by_count(сила, 'newtons')} on {площадь} square metres", св_en, выв_en, зак_en), "en"))
+            вон.append((discourse.рассуждение_величины("ru", f"каково давление силы {сила} {rugram.форма('ньютон', сила)} на {площадь} {rugram.форма('квадратный метр', площадь)}", св_ru, выв_ru, зак_ru), "ru"))
         else:
-            вон.append(discourse.почему("en", f"why is the pressure of {сила} {by_count(сила, 'newtons')} on {площадь} square metres equal to {p} {by_count(p, 'pascals')}", св_en, выв_en, зак_en))
-            вон.append(discourse.почему("ru", f"почему давление силы {сила} {rugram.форма('ньютон', сила)} на {площадь} {rugram.форма('квадратный метр', площадь)} равно {p} {rugram.форма('паскаль', p)}", св_ru, выв_ru, зак_ru))
+            вон.append((discourse.почему("en", f"why is the pressure of {сила} {by_count(сила, 'newtons')} on {площадь} square metres equal to {p} {by_count(p, 'pascals')}", св_en, выв_en, зак_en), "en"))
+            вон.append((discourse.почему("ru", f"почему давление силы {сила} {rugram.форма('ньютон', сила)} на {площадь} {rugram.форма('квадратный метр', площадь)} равно {p} {rugram.форма('паскаль', p)}", св_ru, выв_ru, зак_ru), "ru"))
     return вон
 
 
 def законы(шаг):
-    return laws.ступень("physlaws")
+    # ЯЗЫК СТУПЕНИ БЕРЁТСЯ У ОБЩЕГО ПОМОЩНИКА (15.09).
+    return [(с, я) for с, _k, я in laws.ступень_с_языком("physlaws")]
 
 ГРУППЫ = (размерности, сохранение, давление, волна, рассужд_давление, законы)
 
 
 def группы(шаг):
-    """[[страница]] — ровно те группы и в том порядке, какими кузница кормит `emit_grouped`."""
+    """[[(страница, язык)]] — ровно те группы и в том порядке, какими кормится кузница."""
     return [сделать(шаг) for сделать in ГРУППЫ]
+
+
+def группы_страниц(шаг):
+    """[[страница]] — то же без меток: этим кормится `emit_grouped`."""
+    return [[с for с, _я in г] for г in группы(шаг)]
+
+
+def перебор_с_языком(шаг):
+    """[(страница, род, ЯЗЫК)] — язык проставлен при каждой рамке (15.09).
+
+    Дом пишет одну мысль двумя рамками — русской и английской, — и язык был известен рамке,
+    но не ложился в словарь показов.
+    """
+    вон = []
+    for род, группа in zip(РОДЫ, группы(шаг)):
+        for с, язык in группа:
+            вон.append((с, род, язык))
+    return вон
 
 
 def перебор(шаг):
     """[(страница, род)] — те же группы, но каждая под своим именем."""
-    вон = []
-    for род, группа in zip(РОДЫ, группы(шаг)):
-        for с in группа:
-            вон.append((с, род))
-    return вон
+    return [(с, р) for с, р, _я in перебор_с_языком(шаг)]
 
 
 def _показы():
     from layer import PASSES                              # noqa: PLC0415
     вон = {}
     for шаг in range(len(PASSES)):
-        for с, род in перебор(шаг):
-            вон.setdefault(с, род)
+        for с, род, язык in перебор_с_языком(шаг):
+            вон.setdefault(с, (язык, род))
     return вон
 
 
@@ -280,7 +295,7 @@ def _самопроверка():
     сколько = len(группы(0))
     assert сколько == len(РОДЫ), f"проход даёт {сколько} групп при {len(РОДЫ)} родах"
     assert set(ЗАЧЕМ_РОДА) == set(РОДЫ), "глосса рода разошлась с объявлением"
-    пустые = set(РОДЫ) - set(ПОКАЗЫ.values())
+    пустые = set(РОДЫ) - {р for _я, р in ПОКАЗЫ.values()}
     assert not пустые, f"род объявлен и не кован: {sorted(пустые)}"
 
 

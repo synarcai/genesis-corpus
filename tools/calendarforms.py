@@ -110,10 +110,10 @@ def дни(шаг):
             # THE LEDGER OF THE CYCLE (holon's word 03.09, wave 70 cf96e016
             # «the show is the head before the colon»: the market of cycles
             # reads the head, the chain after the colon is its witness)
-            вон.append(f"{k} {by_count(k, 'days')} after "
-                       f"{ДНИ_EN[i]} comes {ДНИ_EN[j]}: {леджер_круга(i, k, 'en')}.")
-            вон.append(f"через {k} {units.ру_форма(ДЕНЬ_СЧЁТ, k)} после "
-                       f"{ДНИ_RU_РОД[i]} наступает {ДНИ_RU[j]}: {леджер_круга(i, k, 'ru')}.")
+            вон.append((f"{k} {by_count(k, 'days')} after "
+                       f"{ДНИ_EN[i]} comes {ДНИ_EN[j]}: {леджер_круга(i, k, 'en')}.", "en"))
+            вон.append((f"через {k} {units.ру_форма(ДЕНЬ_СЧЁТ, k)} после "
+                       f"{ДНИ_RU_РОД[i]} наступает {ДНИ_RU[j]}: {леджер_круга(i, k, 'ru')}.", "ru"))
     return вон
 
 
@@ -121,26 +121,26 @@ def соседи(шаг):
     вон = []
     for i in range(7):
         сл, пр = (i + 1) % 7, (i - 1) % 7
-        вон.append(f"the day after {ДНИ_EN[i]} is {ДНИ_EN[сл]}.")
-        вон.append(f"день после {ДНИ_RU_РОД[i]} — это {ДНИ_RU[сл]}.")
+        вон.append((f"the day after {ДНИ_EN[i]} is {ДНИ_EN[сл]}.", "en"))
+        вон.append((f"день после {ДНИ_RU_РОД[i]} — это {ДНИ_RU[сл]}.", "ru"))
         # ВТОРАЯ ПОВЕРХНОСТЬ ВОПРОСА (полоса BESEDA-2, 05.09): человек спрашивает
         # «какой день ИДЁТ после понедельника?» так же часто, как «какой день
         # после понедельника?»; рынок, купивший одну, молчит на другой
-        вон.append(f"какой день идёт после {ДНИ_RU_РОД[i]}? после {ДНИ_RU_РОД[i]} — {ДНИ_RU[сл]}.")
+        вон.append((f"какой день идёт после {ДНИ_RU_РОД[i]}? после {ДНИ_RU_РОД[i]} — {ДНИ_RU[сл]}.", "ru"))
         # ВЧЕРА И ЗАВТРА ОТ НАЗВАННОГО СЕГОДНЯ (шестая полоса беседы, 05.09)
-        вон.append(f"today is {ДНИ_EN[i]}. what day was yesterday? {ДНИ_EN[пр]}.")
-        вон.append(f"today is {ДНИ_EN[i]}. what day will it be tomorrow? {ДНИ_EN[сл]}.")
-        вон.append(f"сегодня {ДНИ_RU[i]}. какой день был вчера? {ДНИ_RU[пр]}.")
-        вон.append(f"сегодня {ДНИ_RU[i]}. какой день будет завтра? {ДНИ_RU[сл]}.")
+        вон.append((f"today is {ДНИ_EN[i]}. what day was yesterday? {ДНИ_EN[пр]}.", "en"))
+        вон.append((f"today is {ДНИ_EN[i]}. what day will it be tomorrow? {ДНИ_EN[сл]}.", "en"))
+        вон.append((f"сегодня {ДНИ_RU[i]}. какой день был вчера? {ДНИ_RU[пр]}.", "ru"))
+        вон.append((f"сегодня {ДНИ_RU[i]}. какой день будет завтра? {ДНИ_RU[сл]}.", "ru"))
         # ПОСЛЕЗАВТРА И ПОЗАВЧЕРА (седьмая полоса, 06.09) — два шага по кругу
-        вон.append(f"today is {ДНИ_EN[i]}. what day will it be the day after tomorrow? {ДНИ_EN[(i + 2) % 7]}.")
-        вон.append(f"today is {ДНИ_EN[i]}. what day was the day before yesterday? {ДНИ_EN[(i - 2) % 7]}.")
-        вон.append(f"сегодня {ДНИ_RU[i]}. какой день будет послезавтра? {ДНИ_RU[(i + 2) % 7]}.")
-        вон.append(f"сегодня {ДНИ_RU[i]}. какой день был позавчера? {ДНИ_RU[(i - 2) % 7]}.")
-        вон.append(f"the day before {ДНИ_EN[i]} is {ДНИ_EN[пр]}.")
-        вон.append(f"день перед {ДНИ_RU[i]} — это {ДНИ_RU[пр]}.")
-        вон.append(f"{ДНИ_EN[i]} is day number {i + 1} of the week.")
-        вон.append(f"{ДНИ_RU[i]} — день номер {i + 1} недели.")
+        вон.append((f"today is {ДНИ_EN[i]}. what day will it be the day after tomorrow? {ДНИ_EN[(i + 2) % 7]}.", "en"))
+        вон.append((f"today is {ДНИ_EN[i]}. what day was the day before yesterday? {ДНИ_EN[(i - 2) % 7]}.", "en"))
+        вон.append((f"сегодня {ДНИ_RU[i]}. какой день будет послезавтра? {ДНИ_RU[(i + 2) % 7]}.", "ru"))
+        вон.append((f"сегодня {ДНИ_RU[i]}. какой день был позавчера? {ДНИ_RU[(i - 2) % 7]}.", "ru"))
+        вон.append((f"the day before {ДНИ_EN[i]} is {ДНИ_EN[пр]}.", "en"))
+        вон.append((f"день перед {ДНИ_RU[i]} — это {ДНИ_RU[пр]}.", "ru"))
+        вон.append((f"{ДНИ_EN[i]} is day number {i + 1} of the week.", "en"))
+        вон.append((f"{ДНИ_RU[i]} — день номер {i + 1} недели.", "ru"))
     return вон
 
 
@@ -158,14 +158,14 @@ def вопросы(шаг):
     вон = []
     for i in range(7):
         сл, пр = (i + 1) % 7, (i - 1) % 7
-        вон.append(f"what day comes after {ДНИ_EN[i]}? after "
-                   f"{ДНИ_EN[i]} comes {ДНИ_EN[сл]}.")
-        вон.append(f"what day comes before {ДНИ_EN[i]}? before "
-                   f"{ДНИ_EN[i]} comes {ДНИ_EN[пр]}.")
-        вон.append(f"какой день после {ДНИ_RU_РОД[i]}? после "
-                   f"{ДНИ_RU_РОД[i]} — {ДНИ_RU[сл]}.")
-        вон.append(f"какой день перед {ДНИ_RU_ТВОР[i]}? перед "
-                   f"{ДНИ_RU_ТВОР[i]} — {ДНИ_RU[пр]}.")
+        вон.append((f"what day comes after {ДНИ_EN[i]}? after "
+                   f"{ДНИ_EN[i]} comes {ДНИ_EN[сл]}.", "en"))
+        вон.append((f"what day comes before {ДНИ_EN[i]}? before "
+                   f"{ДНИ_EN[i]} comes {ДНИ_EN[пр]}.", "en"))
+        вон.append((f"какой день после {ДНИ_RU_РОД[i]}? после "
+                   f"{ДНИ_RU_РОД[i]} — {ДНИ_RU[сл]}.", "ru"))
+        вон.append((f"какой день перед {ДНИ_RU_ТВОР[i]}? перед "
+                   f"{ДНИ_RU_ТВОР[i]} — {ДНИ_RU[пр]}.", "ru"))
         # ВОПРОС ШИРЕ РАССКАЗА БЫТЬ НЕ ОБЯЗАН, НО У́ЖЕ — НАПРАСНО (08.09). Рассказ ходил по
         # кругу от 1 до 6, вопрос — от 2 до 5, и вопросная половина мира не знала ни единицы,
         # ни полного круга без одного. Единица здесь не крайний случай, а ОБЫЧНЫЙ ДЕНЬ: «what
@@ -174,37 +174,37 @@ def вопросы(шаг):
         # двумя его половинами.
         for k in (1, 2, 3, 4, 5, 6):
             j = (i + k) % 7
-            вон.append(f"what day is {k} {by_count(k, 'days')} after {ДНИ_EN[i]}? "
+            вон.append((f"what day is {k} {by_count(k, 'days')} after {ДНИ_EN[i]}? "
                        f"{k} {by_count(k, 'days')} after {ДНИ_EN[i]} comes {ДНИ_EN[j]}: "
-                       f"{леджер_круга(i, k, 'en')}.")
+                       f"{леджер_круга(i, k, 'en')}.", "en"))
             ф = units.ру_форма(ДЕНЬ_СЧЁТ, k)
-            вон.append(f"какой день через {k} {ф} после "
+            вон.append((f"какой день через {k} {ф} после "
                        f"{ДНИ_RU_РОД[i]}? через {k} {ф} после "
-                       f"{ДНИ_RU_РОД[i]} — {ДНИ_RU[j]}: {леджер_круга(i, k, 'ru')}.")
+                       f"{ДНИ_RU_РОД[i]} — {ДНИ_RU[j]}: {леджер_круга(i, k, 'ru')}.", "ru"))
     for i in range(12):
         сл, пр = (i + 1) % 12, (i - 1) % 12
-        вон.append(f"what month comes after {МЕСЯЦЫ_EN[i]}? after "
-                   f"{МЕСЯЦЫ_EN[i]} comes {МЕСЯЦЫ_EN[сл]}.")
-        вон.append(f"what month comes before {МЕСЯЦЫ_EN[i]}? before "
-                   f"{МЕСЯЦЫ_EN[i]} comes {МЕСЯЦЫ_EN[пр]}.")
-        вон.append(f"какой месяц после {МЕСЯЦЫ_RU_РОД[i]}? после "
-                   f"{МЕСЯЦЫ_RU_РОД[i]} — {МЕСЯЦЫ_RU[сл]}.")
-        вон.append(f"какой месяц перед {МЕСЯЦЫ_RU_ТВОР[i]}? перед "
-                   f"{МЕСЯЦЫ_RU_ТВОР[i]} — {МЕСЯЦЫ_RU[пр]}.")
+        вон.append((f"what month comes after {МЕСЯЦЫ_EN[i]}? after "
+                   f"{МЕСЯЦЫ_EN[i]} comes {МЕСЯЦЫ_EN[сл]}.", "en"))
+        вон.append((f"what month comes before {МЕСЯЦЫ_EN[i]}? before "
+                   f"{МЕСЯЦЫ_EN[i]} comes {МЕСЯЦЫ_EN[пр]}.", "en"))
+        вон.append((f"какой месяц после {МЕСЯЦЫ_RU_РОД[i]}? после "
+                   f"{МЕСЯЦЫ_RU_РОД[i]} — {МЕСЯЦЫ_RU[сл]}.", "ru"))
+        вон.append((f"какой месяц перед {МЕСЯЦЫ_RU_ТВОР[i]}? перед "
+                   f"{МЕСЯЦЫ_RU_ТВОР[i]} — {МЕСЯЦЫ_RU[пр]}.", "ru"))
     return вон
 
 
 def месяцы(шаг):
     вон = []
     for i in range(12):
-        вон.append(f"{МЕСЯЦЫ_EN[i]} is month number {i + 1} "
-                   f"and has {ДЛИНЫ[i]} {by_count(ДЛИНЫ[i], 'days')}.")
-        вон.append(f"{МЕСЯЦЫ_RU[i]} — месяц номер {i + 1}, в нём "
-                   f"{ДЛИНЫ[i]} {units.ру_форма(ДЕНЬ_СЧЁТ, ДЛИНЫ[i])}.")
+        вон.append((f"{МЕСЯЦЫ_EN[i]} is month number {i + 1} "
+                   f"and has {ДЛИНЫ[i]} {by_count(ДЛИНЫ[i], 'days')}.", "en"))
+        вон.append((f"{МЕСЯЦЫ_RU[i]} — месяц номер {i + 1}, в нём "
+                   f"{ДЛИНЫ[i]} {units.ру_форма(ДЕНЬ_СЧЁТ, ДЛИНЫ[i])}.", "ru"))
         сл = (i + 1) % 12
-        вон.append(f"the month after {МЕСЯЦЫ_EN[i]} is {МЕСЯЦЫ_EN[сл]}.")
-        вон.append(f"месяц после {МЕСЯЦЫ_RU_РОД[i]} — "
-                   f"это {МЕСЯЦЫ_RU[сл]}.")
+        вон.append((f"the month after {МЕСЯЦЫ_EN[i]} is {МЕСЯЦЫ_EN[сл]}.", "en"))
+        вон.append((f"месяц после {МЕСЯЦЫ_RU_РОД[i]} — "
+                   f"это {МЕСЯЦЫ_RU[сл]}.", "ru"))
     return вон
 
 
@@ -216,15 +216,15 @@ def годом(шаг):
         # СЧЁТ ПРАВИТ ФОРМОЙ И СЛОВА, И ГЛАГОЛА: «the first month … has»,
         # «the first 2 months … have» — суд английского числа нашёл в
         # этом мире «the first 1 months», единственную ложь языка свода.
-        вон.append(("the first month of a common year has" if i == 0 else
+        вон.append((("the first month of a common year has" if i == 0 else
                     f"the first {i + 1} {by_count(i + 1, 'months')} of a common year have")
-                   + f" {сумма} {by_count(сумма, 'days')} in all.")
+                   + f" {сумма} {by_count(сумма, 'days')} in all.", "en"))
         сколько = i + 1
-        вон.append(f"{ПЕРВЫЕ[0] if сколько == 1 else ПЕРВЫЕ[1]} {сколько} "
+        вон.append((f"{ПЕРВЫЕ[0] if сколько == 1 else ПЕРВЫЕ[1]} {сколько} "
                    f"{units.ру_форма(МЕСЯЦ_СЧЁТ, сколько)} обычного года "
-                   f"дают {сумма} {units.ру_форма(ДЕНЬ_СЧЁТ, сумма)} всего.")
-    вон.append("a common year has 365 days and 52 full weeks.")
-    вон.append("обычный год имеет 365 дней и 52 полных недели.")
+                   f"дают {сумма} {units.ру_форма(ДЕНЬ_СЧЁТ, сумма)} всего.", "ru"))
+    вон.append(("a common year has 365 days and 52 full weeks.", "en"))
+    вон.append(("обычный год имеет 365 дней и 52 полных недели.", "ru"))
     return вон
 
 
@@ -240,39 +240,53 @@ def колесо_парой(шаг):
     for i in range(7):
         сл = (i + 1) % 7
         пр = (i - 1) % 7
-        вон.append(f"сегодня {ДНИ_RU[i]}. после {ДНИ_RU_РОД[i]} — "
-                   f"{ДНИ_RU[сл]}.")
-        вон.append(f"сегодня {ДНИ_RU[i]}. перед {ДНИ_RU_ТВОР[i]} "
-                   f"{ДНИ_RU_БЫЛ[пр]} {ДНИ_RU[пр]}.")
-        вон.append(f"today is {ДНИ_EN[i]}. after {ДНИ_EN[i]} comes "
-                   f"{ДНИ_EN[сл]}.")
-        вон.append(f"today is {ДНИ_EN[i]}. before {ДНИ_EN[i]} was "
-                   f"{ДНИ_EN[пр]}.")
+        вон.append((f"сегодня {ДНИ_RU[i]}. после {ДНИ_RU_РОД[i]} — "
+                   f"{ДНИ_RU[сл]}.", "ru"))
+        вон.append((f"сегодня {ДНИ_RU[i]}. перед {ДНИ_RU_ТВОР[i]} "
+                   f"{ДНИ_RU_БЫЛ[пр]} {ДНИ_RU[пр]}.", "ru"))
+        вон.append((f"today is {ДНИ_EN[i]}. after {ДНИ_EN[i]} comes "
+                   f"{ДНИ_EN[сл]}.", "en"))
+        вон.append((f"today is {ДНИ_EN[i]}. before {ДНИ_EN[i]} was "
+                   f"{ДНИ_EN[пр]}.", "en"))
     return вон
 
 ГРУППЫ = (дни, соседи, вопросы, месяцы, годом, колесо_парой)
 
 
 def группы(шаг):
-    """[[страница]] — ровно те группы и в том порядке, какими кузница кормит `emit_grouped`."""
+    """[[(страница, язык)]] — ровно те группы и в том порядке, какими кормится кузница."""
     return [сделать(шаг) for сделать in ГРУППЫ]
+
+
+def группы_страниц(шаг):
+    """[[страница]] — то же без меток: этим кормится `emit_grouped`."""
+    return [[с for с, _я in г] for г in группы(шаг)]
+
+
+def перебор_с_языком(шаг):
+    """[(страница, род, ЯЗЫК)] — язык проставлен при каждой рамке (15.09).
+
+    Дом пишет одну мысль двумя рамками — русской и английской, — и язык был известен рамке,
+    но не ложился в словарь показов.
+    """
+    вон = []
+    for род, группа in zip(РОДЫ, группы(шаг)):
+        for с, язык in группа:
+            вон.append((с, род, язык))
+    return вон
 
 
 def перебор(шаг):
     """[(страница, род)] — те же группы, но каждая под своим именем."""
-    вон = []
-    for род, группа in zip(РОДЫ, группы(шаг)):
-        for с in группа:
-            вон.append((с, род))
-    return вон
+    return [(с, р) for с, р, _я in перебор_с_языком(шаг)]
 
 
 def _показы():
     from layer import PASSES                              # noqa: PLC0415
     вон = {}
     for шаг in range(len(PASSES)):
-        for с, род in перебор(шаг):
-            вон.setdefault(с, род)
+        for с, род, язык in перебор_с_языком(шаг):
+            вон.setdefault(с, (язык, род))
     return вон
 
 
@@ -286,7 +300,7 @@ def _самопроверка():
     сколько = len(группы(0))
     assert сколько == len(РОДЫ), f"проход даёт {сколько} групп при {len(РОДЫ)} родах"
     assert set(ЗАЧЕМ_РОДА) == set(РОДЫ), "глосса рода разошлась с объявлением"
-    пустые = set(РОДЫ) - set(ПОКАЗЫ.values())
+    пустые = set(РОДЫ) - {р for _я, р in ПОКАЗЫ.values()}
     assert not пустые, f"род объявлен и не кован: {sorted(пустые)}"
 
 
