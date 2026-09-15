@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 342 миров, 462013 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 342 миров, 463354 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -463,7 +463,7 @@
 
 ## АКТ «decide» — решить случай: вердикт с основанием рядом
 
-Миров 39, строк 21039.
+Миров 39, строк 22380.
 
 - **`verifyforms`** (3285 строк; recompute, whole_only)  
   **VERIFICATION** — «claim · check · verdict», and the pages where the instrument is OBLIGED to refuse (05.09, the agent architecture, the fourth market): a true claim checked by ANOTHER action cannot be confirmed — the verdict is «not verified», and the gro…
@@ -471,14 +471,14 @@
   **WORLD FACTS** — why and what next about THINGS, not about numbers.
 - **`mandateforms`** (2268 строк; recompute, whole_only)  
   **THE MANDATE** — a standing rule against an order (05.09, the agent architecture, the sixth market): one or two rules the agent was told once, an order of one act, and a verdict that never stands bare — «no: the rule forbids deleting», «yes: the rule forbi…
+- **`goal`** (2124 строк; recompute, whole_only, unsigned_only)  
+  **THE GOAL SPOKEN IN SPEECH, NOT TYPED AS A COMMAND (14.09, asked for by omega-ad). The organism already reaches a goal on the world's ledger by itself** — it reads, searches the world's declaration, proposes, waits for a word, acts and checks by reading ag…
 - **`actturn`** (1872 строк; recompute, whole_only)  
   **THE DIALOGUE ACT** — the organism's own turn, with confirmation and observation (06.09).
 - **`place`** (1296 строк; recompute, named_relations_only)  
   **PLACE** — where a thing stands, and the three laws of standing (06.09).
 - **`infer`** (1242 строк; recompute, whole_only)  
   **STRICT INFERENCE** — modus ponens, modus tollens, and TWO FALLACIES named as fallacies.
-- **`goal`** (783 строк; recompute, whole_only, unsigned_only)  
-  **THE GOAL SPOKEN IN SPEECH, NOT TYPED AS A COMMAND (14.09, asked for by omega-ad). The organism already reaches a goal on the world's ledger by itself** — it reads, searches the world's declaration, proposes, waits for a word, acts and checks by reading ag…
 - **`plan`** (576 строк; recompute, whole_only, unsigned_only)  
   order-row with a condition and the REPORT of its execution: the ledger of observation (files, runs, exit, millis) and a verdict that FOLLOWS from comparing the ledger with the condition (nine languages, both branches)
 - **`proof`** (520 строк; recompute, whole_only)  
@@ -712,7 +712,7 @@
 - **`indu`** (102 строк; recompute, whole_only)  
   **HASTE** — generalisation from cases and the NAMED LIMIT of that step.
 
-## АКТ «read_off» — словарём не объявлен
+## АКТ «read_off» — считать готовое из данного: ответ лежит В тексте или в клетке и выписывается, а не получается счётом
 
 Миров 2, строк 432.
 
@@ -721,7 +721,7 @@
 - **`grid`** (144 строк; recompute, whole_only)  
   **READING A TABLE** — TWO COORDINATES, NOT TWO LOOKUPS IN A ROW (14.09, bought by a zero of the probe).
 
-## АКТ «retrace» — словарём не объявлен
+## АКТ «retrace» — проследить по цепи ходов: вещь через обмены, место через дороги — вперёд по звеньям, а не обратным ходом от итога
 
 Миров 2, строк 538.
 
@@ -737,14 +737,14 @@
 - **`refusalwhy`** (606 строк; declared, declared_table_only)  
   **ПРИЧИНА ОТКАЗА** — СВОД ОТВЕРГАЕТ 150 СТРОК НА 29 ЯЗЫКАХ, И 139 ИЗ НИХ НЕ НАЗВАЛ НИ ОДИН ДОМ. Замер 13.09 по объявлениям пакетов: отказов 150 (agreement 89, unanswerable 32, type_mismatch 29), процитированных хоть одним домом 11, НЕ ПРОЦИТИРОВАННЫХ 139 — …
 
-## АКТ «reorder» — словарём не объявлен
+## АКТ «reorder» — поставить ряд в объявленный порядок: не сравнить двоих, а выстроить многих
 
 Миров 1, строк 120.
 
 - **`alphaorder`** (120 строк; recompute, whole_only)  
   **ALPHABETICAL ORDER** — THE ORDER OF THE LETTERS, DECLARED AND NOT TAKEN FROM THE ENCODING (14.09, rung two, asked for by holon-f9 for BBH's `word_sorting`).
 
-## АКТ «transform» — словарём не объявлен
+## АКТ «transform» — преобразовать саму запись: слово как ряд букв — переставить, обратить, сдвинуть; содержание при этом НЕ сохраняется, и тем акт разнится с переводом
 
 Миров 1, строк 96.
 
