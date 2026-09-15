@@ -81,36 +81,49 @@ def pass_shows(pass_i):
         сумма_m = m * (m + 1) // 2
         # --- индукция: основание и шаг, оба поставленные числами
         out.род = ИНДУКЦИЯ
+        out.язык = "en"
         out.append("the sum of the first n numbers is n × ( n + 1 ) / 2.")
+        out.язык = "en"
         out.append(f"it holds for n = 1: 1 = 1.")
+        out.язык = "en"
         out.append(f"if it holds for n = {n} then it holds for n = {m}: "
                    f"{сумма_n} + {m} = {сумма_m}.")
+        out.язык = "ru"
         out.append(f"если верно для n = {n}, то верно и для n = {m}: "
                    f"{сумма_n} + {m} = {сумма_m}.")
+        out.язык = "ru"
         out.append("основание и шаг вместе дают всё натуральное.")
         # --- разбор случаев: исчерпывающее деление со свидетелем
         out.род = РАЗБОР_СЛУЧАЕВ
         # ИМЯ ХОДА СТОИ́Т НА СТРАНИЦЕ (12.09): деление названо ПОЛНЫМ, и это не
         # украшение — полнота есть то самое, чем разбор случаев доказывает.
+        out.язык = "en"
         out.append(f"every whole number is even or odd; {x} is "
                    f"{'even' if x % 2 == 0 else 'odd'}. this step is called a "
                    f"COMPLETE CASE SPLIT: the cases leave no third, and so the "
                    f"witness settles the matter.")
+        out.язык = "ru"
         out.append(f"всякое целое чётно или нечётно; {x} "
                    f"{'чётно' if x % 2 == 0 else 'нечётно'}. такой ход зовётся "
                    f"ПОЛНЫМ РАЗБОРОМ СЛУЧАЕВ: случаи не оставляют третьего, и "
                    f"потому свидетель решает дело.")
         # --- контрпример: одно свидетельство убивает всеобщее
         out.род = КОНТРПРИМЕР
+        out.язык = "en"
         out.append(f"{ложь} is false: {свидетель}.")
         # A UNIVERSAL IS ASKED BY ITS OWN «IS IT TRUE THAT» (tools/universals.py, М-149).
+        out.язык = "en"
         out.append(universals.вопрос(f"{ложь} is false: {свидетель}.", ("en", "ru")))
+        out.язык = "en"
         out.append("one witness kills a universal claim.")
+        out.язык = "ru"
         out.append("одно свидетельство убивает всеобщее утверждение.")
         # --- прямое доказательство: посылка ВЫПОЛНЕНА, следствие проверено
         out.род = ПРЯМОЕ
+        out.язык = "en"
         out.append(f"if n is even then n squared is even: {e} is even and "
                    f"{e * e} is even.")
+        out.язык = "ru"
         out.append(f"если n чётно, то n в квадрате чётно: {e} чётно и "
                    f"{e * e} чётно.")
         # --- ВОПРОСНАЯ ПОВЕРХНОСТЬ: вопрос ПОРОЖДЁН ответом, а не
@@ -123,8 +136,10 @@ def pass_shows(pass_i):
                   f"{сумма_n} + {m} = {сумма_m}.")
         шаг_ru = (f"если верно для n = {n}, то верно и для n = {m}: "
                   f"{сумма_n} + {m} = {сумма_m}.")
+        out.язык = "en"
         out.append(f"if it holds for n = {n}, does it hold for n = {m}? "
                    f"{шаг_en}")
+        out.язык = "ru"
         out.append(f"если верно для n = {n}, верно ли для n = {m}? "
                    f"{шаг_ru}")
         out.род = РАЗБОР_СЛУЧАЕВ
@@ -137,14 +152,18 @@ def pass_shows(pass_i):
         # word chosen comes first, the witness — the division by two — after.
         чётн = x % 2 == 0
         свид = f"{x} = 2 × {x // 2}" if чётн else f"{x} = 2 × {x // 2} + 1"
+        out.язык = "en"
         out.append(f"is {x} even or odd? {'even' if чётн else 'odd'}: {свид}.")
+        out.язык = "ru"
         out.append(f"чётно или нечётно {x}? {'чётно' if чётн else 'нечётно'}: {свид}.")
         out.род = ПРЯМОЕ
         прямое_en = (f"if n is even then n squared is even: {e} is even "
                      f"and {e * e} is even.")
         прямое_ru = (f"если n чётно, то n в квадрате чётно: {e} чётно и "
                      f"{e * e} чётно.")
+        out.язык = "en"
         out.append(f"if {e} is even, is {e * e} even? yes: {прямое_en}")
+        out.язык = "ru"
         out.append(f"если {e} чётно, чётно ли {e * e}? да: {прямое_ru}")
         # ЧЁТНОЕ НЕ-КВАДРАТ ГОВОРИТ «ДА» ТОЮ ЖЕ РАМКОЙ (holon 03.09, отказ
         # YN-AMBIGUOUS с полного свода): все «да»-показы рамки показывали
@@ -158,15 +177,19 @@ def pass_shows(pass_i):
         сумма = e + друг                      # чётное, и почти никогда не квадрат
         if int(сумма ** 0.5) ** 2 == сумма:
             сумма += 2
+        out.язык = "en"
         out.append(f"if {e} is even, is {сумма} even? yes: {e} is even and "
                    f"{сумма} = 2 × {сумма // 2}, which is even.")
+        out.язык = "ru"
         out.append(f"если {e} чётно, чётно ли {сумма}? да: {e} чётно и "
                    f"{сумма} = 2 × {сумма // 2}, что чётно.")
         # ВТОРАЯ ПОЛЯРНОСТЬ ТОЙ ЖЕ РАМКОЙ (аудит покупок holon 03.09):
         # одни пары (n, n²) учили «ответ всегда да».
         нечёт = e * e + 1
+        out.язык = "en"
         out.append(f"if {e} is even, is {нечёт} even? no: {e} is even "
                    f"and {нечёт} is odd.")
+        out.язык = "ru"
         out.append(f"если {e} чётно, чётно ли {нечёт}? нет: {e} чётно, "
                    f"а {нечёт} нечётно.")
         # --- ОТКАЗ ИСЧЕРПАНИЕМ: контрпример наизнанку. Слой умел
@@ -175,13 +198,17 @@ def pass_shows(pass_i):
         # проходом. Предел взят из своего же материала — квадрат
         # чётного, уже стоящего в прямом доказательстве.
         out.род = ИСЧЕРПАНИЕ
+        out.язык = "en"
         out.append(f"there is no even prime between 3 and {e * e}: every "
                    f"even number there has the divisor 2 besides 1 and "
                    f"itself.")
+        out.язык = "ru"
         out.append(f"чётного простого между 3 и {e * e} нет: у всякого "
                    f"чётного там есть делитель 2, кроме 1 и самого себя.")
     out.род = ПОЛОЖИТЕЛЬНОСТЬ
-    out.extend(положительность(pass_i))
+    for с, яз in положительность(pass_i):
+        out.язык = яз
+        out.append(с)
     return out
 
 
@@ -219,19 +246,22 @@ def _ответ(n):
 
 
 def положительность(pass_i):
-    """Form 0 of ask_forms.positive («is {} positive?») and form 1 («is {} above
-    zero?») — two frames, each over its own signed numbers."""
+    """[(страница, ЯЗЫК)] — form 0 of ask_forms.positive («is {} positive?») and form 1 («is
+    {} above zero?»), two frames, each over its own signed numbers.
+
+    ЯЗЫК СТОИ́Т В ИМЕНИ РЯДА ФОРМ (`формы_en`, `формы_ru`) и отдаётся вместе со страницей.
+    """
     out = []
     формы_en, формы_ru = _формы("en", "positive"), _формы("ru", "positive")
     for i in range(8):
         n = ЧИСЛА_ПОЛОЖ[(pass_i * 5 + i) % len(ЧИСЛА_ПОЛОЖ)]
         з, отв_en, отв_ru = _ответ(n)
-        out.append(f"{формы_en[0].format(з)} {отв_en}")
-        out.append(f"{формы_ru[0].format(з)} {отв_ru}")
+        out.append((f"{формы_en[0].format(з)} {отв_en}", "en"))
+        out.append((f"{формы_ru[0].format(з)} {отв_ru}", "ru"))
         m = ЧИСЛА_ЗНАКА[(pass_i * 3 + i) % len(ЧИСЛА_ЗНАКА)]
         з, отв_en, отв_ru = _ответ(m)
-        out.append(f"{формы_en[1].format(з)} {отв_en}")
-        out.append(f"{формы_ru[1].format(з)} {отв_ru}")
+        out.append((f"{формы_en[1].format(з)} {отв_en}", "en"))
+        out.append((f"{формы_ru[1].format(з)} {отв_ru}", "ru"))
     return out
 
 
@@ -260,6 +290,11 @@ def перебор_страниц(pass_i):
     return pass_shows(pass_i).парами
 
 
+def перебор_с_языком(pass_i):
+    """[(строка, род, ЯЗЫК)] — тот же обход, прочтённый тремя столбцами."""
+    return pass_shows(pass_i).тройками
+
+
 def группы(pass_i):
     return [страницы(pass_i)]
 
@@ -268,10 +303,10 @@ def _показы():
     from layer import PASSES                             # noqa: PLC0415
     вон = {}
     for шаг in range(len(PASSES)):
-        for с, род in перебор_страниц(шаг):
+        for с, род, язык in перебор_с_языком(шаг):
             for строка in с.split("\n"):
                 if строка.rstrip():
-                    вон.setdefault(строка.rstrip(), род)
+                    вон.setdefault(строка.rstrip(), (язык, род))
     return вон
 
 
@@ -284,7 +319,7 @@ def _самопроверка_дома():
     assert len(сбор) == len(сбор.роды), "показ остался без рода"
     вне = {р for _с, р in сбор.парами} - set(РОДЫ)
     assert not вне, f"род кован и не объявлен: {sorted(вне)}"
-    пустые = set(РОДЫ) - set(ПОКАЗЫ.values())
+    пустые = set(РОДЫ) - {р for _я, р in ПОКАЗЫ.values()}
     assert not пустые, f"род объявлен и не кован: {sorted(пустые)}"
 
 
