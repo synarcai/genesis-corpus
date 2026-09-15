@@ -19,7 +19,7 @@
 Мера по страницам живёт в сайдкаре `datasets/GENESIS-FULL.genera.tsv`: номер
 строки свода → «дом · род», 290 002 строки из 442 600.
 
-**Родов 1837, различных имён 1551, страниц под ними 318796.**
+**Родов 1837, различных имён 1551, страниц под ними 319708.**
 Объявлено словом `РОДЫ` в 252 домах, словом `ФОРМЫ` — в 57.
 Домов без своего мира показов — 0. Мир дома узнаётся ПО ВВОЗУ КУЗНИЦЫ,
 а не по окончанию имени файла: догадка «срезать forms» лгала о сорока одном доме.
@@ -190,37 +190,37 @@
 
 ## `ageforms` → мир `age`
 
-- **now** — страниц 86
+- **now** — страниц 172
   зачем: род «now», объявленный построением
   образец: Tom is 12 years old and Ann is 7 years old; Tom is 5 years older than Ann.
-- **forward** — страниц 86
+- **forward** — страниц 172
   зачем: род «forward», объявленный построением
   образец: Tom is 12 and Ann is 7; in 3 years Tom will be 15 and Ann will be 10.
-- **law** — страниц 86
+- **law** — страниц 172
   зачем: род «law», объявленный построением
   образец: Tom is 12 and Ann is 7; in 3 years Tom will be 15 and Ann will be 10, and Tom will still be 5 years older than Ann: the 
-- **backward** — страниц 84
+- **backward** — страниц 168
   зачем: род «backward», объявленный построением
   образец: Tom is 12 and Ann is 7; 3 years ago Tom was 9 and Ann was 4.
-- **multiple** — страниц 66
+- **multiple** — страниц 132
   зачем: род «multiple», объявленный построением
   образец: Tom is 12 and Ann is 4; Tom is three times as old as Ann: 12 = 3 × 4.
-- **multiple-ahead** — страниц 62
+- **multiple-ahead** — страниц 124
   зачем: род «multiple-ahead», объявленный построением
   образец: Tom is 10 and Ann is 4; in 2 years Tom will be 12 and Ann will be 6, and 12 is twice 6.
-- **ask-now** — страниц 76
+- **ask-now** — страниц 152
   зачем: род «ask-now», объявленный построением
   образец: how old is Tom now? Tom is 12 years old.
-- **ask-ahead** — страниц 86
+- **ask-ahead** — страниц 172
   зачем: род «ask-ahead», объявленный построением
   образец: how old will Tom be in 3 years? Tom is 12, so in 3 years Tom will be 15.
-- **ask-back** — страниц 84
+- **ask-back** — страниц 168
   зачем: род «ask-back», объявленный построением
   образец: how old was Tom 3 years ago? Tom is 12, so 3 years ago Tom was 9.
-- **ask-difference** — страниц 86
+- **ask-difference** — страниц 172
   зачем: род «ask-difference», объявленный построением
   образец: how much older is Tom than Ann? Tom is 5 years older than Ann: Tom is 12 and Ann is 7.
-- **given-then-ask** — страниц 86
+- **given-then-ask** — страниц 172
   зачем: род «given-then-ask», объявленный построением
   образец: Tom is 12 years old. how old will Tom be in 3 years? 15 years old.
 - **ask-self** — страниц 108
@@ -229,7 +229,7 @@
 - **ask-you** — страниц 108
   зачем: род «ask-you», объявленный построением
   образец: you are 6 years old. how old will you be in 4 years? 10 years old.
-- **refusal** — страниц 24
+- **refusal** — страниц 48
   зачем: род «refusal», объявленный построением
   образец: how old is Ann's brother? it is not said: nothing is told about a brother.
 

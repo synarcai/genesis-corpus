@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 496 законов
+# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 501 законов
 
 Собран из докстрингов и комментариев `tools`, `courts`, `scripts` орудием
 `tools/law_atlas.py`. Взяты ОБЩИЕ законы — те, что держатся не одним файлом.
@@ -6,7 +6,7 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 6744 разных законов на 8538 упоминаний; сказанных однажды — 6248, и они остаются при своём месте.
+Всего в дереве 6777 разных законов на 8646 упоминаний; сказанных однажды — 6276, и они остаются при своём месте.
 
 
 ## Держат 81 файлов
@@ -81,6 +81,13 @@
 - **ПРИНАДЛЕЖНОСТИ К СВОЕМУ НАБОРУ**  
   tools/deaccforms.py, tools/decaseforms.py, tools/dosupportforms.py, tools/fipartforms.py, tools/fuseprepforms.py, tools/huobjforms.py … и ещё 16
 
+## Держат 19 файлов
+
+- **ДОМ, ПИШУЩИЙ НА ОДНОМ ЯЗЫКЕ, НЕ ДОЛЖЕН ВТОРОГО, И СКАЗАТЬ ОБ ЭТОМ ДЕШЕВЛЕ, ЧЕМ**  
+  tools/gen_genesis_aggregate.py, tools/gen_genesis_compare.py, tools/gen_genesis_gsmlex.py, tools/gen_genesis_gsmwide.py, tools/gen_genesis_heads.py, tools/gen_genesis_items.py … и ещё 13
+- **ПЕРЕПИСЫВАТЬ ПОРОЖДЕНИЕ РАДИ ТОГО, ЧТО И ТАК ИЗВЕСТНО**  
+  tools/gen_genesis_aggregate.py, tools/gen_genesis_compare.py, tools/gen_genesis_gsmlex.py, tools/gen_genesis_gsmwide.py, tools/gen_genesis_heads.py, tools/gen_genesis_items.py … и ещё 13
+
 ## Держат 18 файлов
 
 - **РОД РОВЕН САМ СОБОЮ, КОГДА ЕГО МАТЕРИАЛ МНОГОМЕРЕН**  
@@ -141,6 +148,8 @@
 
 - **ЗНАНИЕ, ЗАПИСАННОЕ ДАННЫМИ И КОДОМ, НО НЕ СТРАНИЦЕЙ, ЕСТЬ ЗНАНИЕ ПИШУЩЕГО, А НЕ ЧИТАЮЩЕГО**  
   tools/countlawforms.py, tools/decaseforms.py, tools/deplurforms.py, tools/dosupportforms.py, tools/elisionforms.py, tools/fuseprepforms.py … и ещё 6
+- **И САМОПРОВЕРКА ЧИТАЕТ ОБЕ ПОЛОВИНЫ**  
+  tools/ageforms.py, tools/calforms.py, tools/chainforms.py, tools/cmpforms.py, tools/countforms.py, tools/geoforms.py … и ещё 6
 - **ПРИБОР, ЗЕЛЕНЕЮЩИЙ ОТ НУЛЯ НАХОДОК, ОБЯЗАН ДОКАЗАТЬ, ЧТО УМЕЕТ НАХОДИТЬ**  
   scripts/broken_law.py, scripts/build_dated.py, scripts/genre_measured.py, scripts/ladder_full.py, scripts/margin_census.py, scripts/name_crossed.py … и ещё 6
 
@@ -156,6 +165,10 @@
   scripts/word_once.py, tools/angleforms.py, tools/directforms.py, tools/elisionforms.py, tools/idredupforms.py, tools/koparticleforms.py … и ещё 5
 - **СУД ЧИТАЕТ ДВА ЗАКОНА, И ОБА СОДЕРЖАТЕЛЬНЫ**  
   tools/deaccforms.py, tools/fipartforms.py, tools/huobjforms.py, tools/jaclassforms.py, tools/koparticleforms.py, tools/persondistforms.py … и ещё 5
+- **ТО, ЧТО НЕ ЛЕГЛО В ОБЪЯВЛЕНИЕ, НЕ**  
+  tools/calforms.py, tools/chainforms.py, tools/cmpforms.py, tools/countforms.py, tools/geoforms.py, tools/moneyforms.py … и ещё 5
+- **ТО, ЧТО СТОИТ В ЗАГОЛОВКЕ ЦИКЛА, ЗНАЕТ СТРОИТЕЛЬ**  
+  tools/calforms.py, tools/chainforms.py, tools/cmpforms.py, tools/countforms.py, tools/geoforms.py, tools/moneyforms.py … и ещё 5
 
 ## Держат 10 файлов
 
@@ -173,6 +186,8 @@
   tools/calforms.py, tools/cmpforms.py, tools/countforms.py, tools/geoforms.py, tools/physforms.py, tools/primeforms.py … и ещё 4
 - **ФОРМУЛЫ РОДОВ — ЗАКОН ОТВЕТА ОТ ВЕЛИЧИН ВОПРОСА**  
   tools/compsciforms.py, tools/gen_genesis_machine.py, tools/gen_genesis_physics.py, tools/gen_genesis_statistics.py, tools/gen_genesis_units.py, tools/geomforms.py … и ещё 4
+- **ЯЗЫК СТОИТ В ЗАГОЛОВКЕ ЦИКЛА И ТЕРЯЛСЯ НА ПОРОГЕ СЛОВАРЯ**  
+  tools/chainforms.py, tools/cmpforms.py, tools/countforms.py, tools/geoforms.py, tools/moneyforms.py, tools/physforms.py … и ещё 4
 
 ## Держат 9 файлов
 
@@ -615,8 +630,6 @@
   tools/priceforms.py, tools/translateforms.py
 - **ИМЯ ХОДА ЕСТЬ ХВОСТ СТРАНИЦЫ, А НЕ ЕЁ ЧАСТЬ**  
   courts/case_court.py, courts/proof_court.py
-- **ИМЯ, ЗАНЯТОЕ В ДОМЕ, НЕ ОСВОБОЖДАЕТСЯ ОТТОГО, ЧТО ЕГО ЖДЁТ ОБЩИЙ ОБЫЧАЙ**  
-  tools/chainforms.py, tools/gen_genesis_notation.py
 - **ИМЯ, СПРОШЕННОЕ КЛАССОМ И ОТВЕЧЕННОЕ ГОЛЫМ ЧИСЛОМ, НИ РАЗУ НЕ СТОИ**  
   scripts/asked_uncounted.py, tools/svampforms.py
 - **ИСКЛЮЧЕНИЕ БЕЗ ПРАВИЛА СТАНОВИТСЯ ПРАВИЛОМ**  

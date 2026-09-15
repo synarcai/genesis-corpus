@@ -139,6 +139,33 @@ def jahren(k):
     return ГОД_DE[0] if _de_один(k) else ГОД_DE[2]
 
 
+# СЛОВА КРАТНОСТИ И РОДСТВА НА ДВУХ ЯЗЫКАХ — ВТОРОЙ РУКОЙ (15.09). Дом объявляет их у себя;
+# суд объявляет заново, как заново объявляет соответствие имён. Немецкий различает «doppelt so
+# alt wie» (о возрасте) и «das Doppelte von» (о числе), и суд держит оба словаря порознь — как
+# и дом, иначе «Tom ist das Doppelte von Ann» прошло бы судом.
+КРАТНЫЕ_ВОЗРАСТА = {2: ("doppelt so alt wie", "twee keer zo oud als"),
+                    3: ("dreimal so alt wie", "drie keer zo oud als"),
+                    4: ("viermal so alt wie", "vier keer zo oud als"),
+                    5: ("fünfmal so alt wie", "vijf keer zo oud als")}
+КРАТНЫЕ_ЧИСЛА = {2: ("das Doppelte von", "het dubbele van"),
+                 3: ("das Dreifache von", "het drievoudige van"),
+                 4: ("das Vierfache von", "het viervoudige van"),
+                 5: ("das Fünffache von", "het vijffoudige van")}
+ПО_ВОЗРАСТУ_DE = {с[0]: к for к, с in КРАТНЫЕ_ВОЗРАСТА.items()}
+ПО_ВОЗРАСТУ_NL = {с[1]: к for к, с in КРАТНЫЕ_ВОЗРАСТА.items()}
+ПО_ЧИСЛУ_DE = {с[0]: к for к, с in КРАТНЫЕ_ЧИСЛА.items()}
+ПО_ЧИСЛУ_NL = {с[1]: к for к, с in КРАТНЫЕ_ЧИСЛА.items()}
+РОДСТВО = (("Bruder", "einen", "broer"), ("Schwester", "eine", "zus"),
+           ("Nachbar", "einen", "buurman"))
+РОДСТВО_DE = {н: а for н, а, _нид in РОДСТВО}
+РОДСТВО_NL = frozenset(нид for _н, _а, нид in РОДСТВО)
+КРАТ_ВОЗР_DE = выбор(ПО_ВОЗРАСТУ_DE)
+КРАТ_ВОЗР_NL = выбор(ПО_ВОЗРАСТУ_NL)
+КРАТ_ЧИСЛ_DE = выбор(ПО_ЧИСЛУ_DE)
+КРАТ_ЧИСЛ_NL = выбор(ПО_ЧИСЛУ_NL)
+ОТН_DE = выбор(РОДСТВО_DE)
+ОТН_NL = выбор(РОДСТВО_NL)
+
 ГОД_DE_RE = выбор(ГОД_DE)
 ГОД_NL_RE = выбор((ГОД_NL, "jaren"))
 Ч = r"\d+"
@@ -435,6 +462,118 @@ def _лицо_nl(г):
             and г["ys"] == ГОД_NL and г["yp"] == ГОД_NL)
 
 
+# ---------------------------------------------------------- НЕМЕЦКОЕ И НИДЕРЛАНДСКОЕ
+#
+# АРИФМЕТИКА У ЧЕТЫРЁХ ЯЗЫКОВ ОДНА, А СЧЁТНАЯ ФОРМА — СВОЯ, и потому проверки разнятся ровно
+# формой года: немецкая при числе «Jahre», после предлога «Jahren»; нидерландское «jaar» не
+# меняется вовсе, и суд проверяет ИМЕННО ЭТО.
+#
+#     ЧЕТЫРЕ ОДИНАКОВЫЕ ФУНКЦИИ РАЗОЙДУТСЯ; ОДНА С ДОВОДОМ — НЕТ. Форма года передаётся парой
+#     «(при числе, после предлога)», и все двенадцать родов обоих языков судятся ею.
+ФОРМЫ_DE = (lambda k: jahre(k), lambda k: jahren(k))
+ФОРМЫ_NL = (lambda k: ГОД_NL, lambda k: ГОД_NL)
+
+
+def _двое(г):
+    """Имена сошлись сами с собою и разошлись друг с другом."""
+    ключи = [(к, к + "2", к + "3") for к in ("a", "b")]
+    for первый, второй, третий in ключи:
+        if второй in г and г[первый] != г[второй]:
+            return False
+        if третий in г and г[первый] != г[третий]:
+            return False
+    return г.get("a") != г.get("b")
+
+
+def _сейчас_язык(г, ф):
+    if not _двое(г):
+        return False
+    ва, вб, р = чис(г, "va", "vb", "r")
+    при = ф[0]
+    return (ва > вб and р == ва - вб and г["ya"] == при(ва)
+            and г["yb"] == при(вб) and г["yr"] == при(р))
+
+
+def _вперёд_язык(г, ф):
+    if not _двое(г):
+        return False
+    ва, вб, с, па, пб = чис(г, "va", "vb", "s", "pa", "pb")
+    return (с >= 1 and па == ва + с and пб == вб + с and г["ys"] == ф[1](с))
+
+
+def _закон_язык(г, ф):
+    if not _вперёд_язык(г, ф):
+        return False
+    ва, вб, р = чис(г, "va", "vb", "r")
+    па, пб = чис(г, "pa", "pb")
+    return р == ва - вб and р == па - пб and г["yr"] == ф[0](р)
+
+
+def _назад_язык(г, ф):
+    if not _двое(г):
+        return False
+    ва, вб, с, па, пб = чис(г, "va", "vb", "s", "pa", "pb")
+    return (с >= 1 and па == ва - с and пб == вб - с and пб >= 1
+            and г["ys"] == ф[1](с))
+
+
+def _кратное_язык(г, таблица):
+    if not _двое(г):
+        return False
+    к = таблица[г["k"]]
+    ва, вб, ва2, кн, вб2 = чис(г, "va", "vb", "va2", "kn", "vb2")
+    return (ва == ва2 and вб == вб2 and кн == к and ва == к * вб and вб >= 1)
+
+
+def _кратное_вперёд_язык(г, ф, таблица):
+    if not _вперёд_язык(г, ф):
+        return False
+    к = таблица[г["k"]]
+    па, пб, па2, пб2 = чис(г, "pa", "pb", "pa2", "pb2")
+    return па == па2 and пб == пб2 and па == к * пб and пб >= 1
+
+
+def _вопрос_сейчас_язык(г, ф):
+    if г["a"] != г["a2"]:
+        return False
+    (ва,) = чис(г, "va")
+    return г["ya"] == ф[0](ва)
+
+
+def _вопрос_сдвига_язык(г, ф, вперёд):
+    """Вопрос вперёд и назад: одно лицо, один сдвиг, названный дважды."""
+    if г["a"] != г["a2"] or г["a"] != г["a3"]:
+        return False
+    ва, с, с2, п = чис(г, "va", "s", "s2", "p")
+    if с != с2 or г["ys"] != ф[1](с) or г["ys2"] != ф[1](с2):
+        return False
+    return с >= 1 and (п == ва + с if вперёд else (п == ва - с and п >= 1))
+
+
+def _вопрос_разницы_язык(г, ф):
+    if not _двое(г):
+        return False
+    ва, вб, р = чис(г, "va", "vb", "r")
+    return ва > вб and р == ва - вб and г["yr"] == ф[0](р)
+
+
+def _дано_язык(г, ф):
+    if г["a"] != г["a2"]:
+        return False
+    ва, с, п = чис(г, "va", "s", "p")
+    return (с >= 1 and п == ва + с and г["ya"] == ф[0](ва)
+            and г["ys"] == ф[1](с) and г["yp"] == ф[0](п))
+
+
+def _отказ_de(г):
+    """Немецкий отказ: артикль винительного объявлен при отношении, а не угадан."""
+    return г["rel"] == г["rel2"] and РОДСТВО_DE.get(г["rel"]) == г["art"]
+
+
+def _отказ_nl(г):
+    return г["rel"] == г["rel2"] and г["rel"] in РОДСТВО_NL
+
+
 def _отказ_en(г):
     """Отказ назван ТЕМ ЖЕ отношением, о котором спрошен."""
     return г["rel"] == г["rel2"]
@@ -574,6 +713,114 @@ def _отказ_ru(г):
     (rf"^сколько лет (?P<rd>{ОТН_ДАТ}) (?P<ga>{ИМЯ_РОД})\? не "
      rf"сказано: (?P<rp>{ОТН_ПРЕД}) ничего не говорится\.$",
      _отказ_ru),
+
+    # ------------------------------------------------ ДВЕНАДЦАТЬ РОДОВ ПО-НЕМЕЦКИ И ПО-НИДЕРЛАНДСКИ
+    # (15.09; прежде эти два языка жили лишь в двух родах из четырнадцати — вопросе к себе и к
+    # собеседнику. Пустоту назвала МЕРА ЩЕРБАТОСТИ в тот час, когда дом объявил язык порядком
+    # выдачи, и ковка пошла вслед за нею.)
+    (rf"^(?P<a>{ИМЯ_EN}) ist (?P<va>{Ч}) (?P<ya>{ГОД_DE_RE}) alt und "
+     rf"(?P<b>{ИМЯ_EN}) ist (?P<vb>{Ч}) (?P<yb>{ГОД_DE_RE}) alt; "
+     rf"(?P<a2>{ИМЯ_EN}) ist (?P<r>{Ч}) (?P<yr>{ГОД_DE_RE}) älter als "
+     rf"(?P<b2>{ИМЯ_EN})\.$", lambda г: _сейчас_язык(г, ФОРМЫ_DE)),
+    (rf"^(?P<a>{ИМЯ_EN}) is (?P<va>{Ч}) (?P<ya>{ГОД_NL_RE}) oud en "
+     rf"(?P<b>{ИМЯ_EN}) is (?P<vb>{Ч}) (?P<yb>{ГОД_NL_RE}) oud; "
+     rf"(?P<a2>{ИМЯ_EN}) is (?P<r>{Ч}) (?P<yr>{ГОД_NL_RE}) ouder dan "
+     rf"(?P<b2>{ИМЯ_EN})\.$", lambda г: _сейчас_язык(г, ФОРМЫ_NL)),
+
+    (rf"^(?P<a>{ИМЯ_EN}) ist (?P<va>{Ч}) und (?P<b>{ИМЯ_EN}) ist (?P<vb>{Ч}); "
+     rf"in (?P<s>{Ч}) (?P<ys>{ГОД_DE_RE}) wird (?P<a2>{ИМЯ_EN}) (?P<pa>{Ч}) sein "
+     rf"und (?P<b2>{ИМЯ_EN}) wird (?P<pb>{Ч}) sein\.$",
+     lambda г: _вперёд_язык(г, ФОРМЫ_DE)),
+    (rf"^(?P<a>{ИМЯ_EN}) is (?P<va>{Ч}) en (?P<b>{ИМЯ_EN}) is (?P<vb>{Ч}); "
+     rf"over (?P<s>{Ч}) (?P<ys>{ГОД_NL_RE}) is (?P<a2>{ИМЯ_EN}) (?P<pa>{Ч}) "
+     rf"en is (?P<b2>{ИМЯ_EN}) (?P<pb>{Ч})\.$",
+     lambda г: _вперёд_язык(г, ФОРМЫ_NL)),
+
+    (rf"^(?P<a>{ИМЯ_EN}) ist (?P<va>{Ч}) und (?P<b>{ИМЯ_EN}) ist (?P<vb>{Ч}); "
+     rf"in (?P<s>{Ч}) (?P<ys>{ГОД_DE_RE}) wird (?P<a2>{ИМЯ_EN}) (?P<pa>{Ч}) sein "
+     rf"und (?P<b2>{ИМЯ_EN}) wird (?P<pb>{Ч}) sein, und (?P<a3>{ИМЯ_EN}) wird "
+     rf"immer noch (?P<r>{Ч}) (?P<yr>{ГОД_DE_RE}) älter als (?P<b3>{ИМЯ_EN}) "
+     rf"sein: der Unterschied ändert sich nicht\.$",
+     lambda г: _закон_язык(г, ФОРМЫ_DE)),
+    (rf"^(?P<a>{ИМЯ_EN}) is (?P<va>{Ч}) en (?P<b>{ИМЯ_EN}) is (?P<vb>{Ч}); "
+     rf"over (?P<s>{Ч}) (?P<ys>{ГОД_NL_RE}) is (?P<a2>{ИМЯ_EN}) (?P<pa>{Ч}) "
+     rf"en is (?P<b2>{ИМЯ_EN}) (?P<pb>{Ч}), en (?P<a3>{ИМЯ_EN}) is nog steeds "
+     rf"(?P<r>{Ч}) (?P<yr>{ГОД_NL_RE}) ouder dan (?P<b3>{ИМЯ_EN}): het verschil "
+     rf"verandert niet\.$", lambda г: _закон_язык(г, ФОРМЫ_NL)),
+
+    (rf"^(?P<a>{ИМЯ_EN}) ist (?P<va>{Ч}) und (?P<b>{ИМЯ_EN}) ist (?P<vb>{Ч}); "
+     rf"vor (?P<s>{Ч}) (?P<ys>{ГОД_DE_RE}) war (?P<a2>{ИМЯ_EN}) (?P<pa>{Ч}) "
+     rf"und (?P<b2>{ИМЯ_EN}) war (?P<pb>{Ч})\.$",
+     lambda г: _назад_язык(г, ФОРМЫ_DE)),
+    (rf"^(?P<a>{ИМЯ_EN}) is (?P<va>{Ч}) en (?P<b>{ИМЯ_EN}) is (?P<vb>{Ч}); "
+     rf"(?P<s>{Ч}) (?P<ys>{ГОД_NL_RE}) geleden was (?P<a2>{ИМЯ_EN}) (?P<pa>{Ч}) "
+     rf"en was (?P<b2>{ИМЯ_EN}) (?P<pb>{Ч})\.$",
+     lambda г: _назад_язык(г, ФОРМЫ_NL)),
+
+    (rf"^(?P<a>{ИМЯ_EN}) ist (?P<va>{Ч}) und (?P<b>{ИМЯ_EN}) ist (?P<vb>{Ч}); "
+     rf"(?P<a2>{ИМЯ_EN}) ist (?P<k>{КРАТ_ВОЗР_DE}) (?P<b2>{ИМЯ_EN}): "
+     rf"(?P<va2>{Ч}) = (?P<kn>{Ч}) × (?P<vb2>{Ч})\.$",
+     lambda г: _кратное_язык(г, ПО_ВОЗРАСТУ_DE)),
+    (rf"^(?P<a>{ИМЯ_EN}) is (?P<va>{Ч}) en (?P<b>{ИМЯ_EN}) is (?P<vb>{Ч}); "
+     rf"(?P<a2>{ИМЯ_EN}) is (?P<k>{КРАТ_ВОЗР_NL}) (?P<b2>{ИМЯ_EN}): "
+     rf"(?P<va2>{Ч}) = (?P<kn>{Ч}) × (?P<vb2>{Ч})\.$",
+     lambda г: _кратное_язык(г, ПО_ВОЗРАСТУ_NL)),
+
+    (rf"^(?P<a>{ИМЯ_EN}) ist (?P<va>{Ч}) und (?P<b>{ИМЯ_EN}) ist (?P<vb>{Ч}); "
+     rf"in (?P<s>{Ч}) (?P<ys>{ГОД_DE_RE}) wird (?P<a2>{ИМЯ_EN}) (?P<pa>{Ч}) sein "
+     rf"und (?P<b2>{ИМЯ_EN}) wird (?P<pb>{Ч}) sein, und (?P<pa2>{Ч}) ist "
+     rf"(?P<k>{КРАТ_ЧИСЛ_DE}) (?P<pb2>{Ч})\.$",
+     lambda г: _кратное_вперёд_язык(г, ФОРМЫ_DE, ПО_ЧИСЛУ_DE)),
+    (rf"^(?P<a>{ИМЯ_EN}) is (?P<va>{Ч}) en (?P<b>{ИМЯ_EN}) is (?P<vb>{Ч}); "
+     rf"over (?P<s>{Ч}) (?P<ys>{ГОД_NL_RE}) is (?P<a2>{ИМЯ_EN}) (?P<pa>{Ч}) "
+     rf"en is (?P<b2>{ИМЯ_EN}) (?P<pb>{Ч}), en (?P<pa2>{Ч}) ist? "
+     rf"(?P<k>{КРАТ_ЧИСЛ_NL}) (?P<pb2>{Ч})\.$",
+     lambda г: _кратное_вперёд_язык(г, ФОРМЫ_NL, ПО_ЧИСЛУ_NL)),
+
+    (rf"^wie alt ist (?P<a>{ИМЯ_EN}) jetzt\? (?P<a2>{ИМЯ_EN}) ist (?P<va>{Ч}) "
+     rf"(?P<ya>{ГОД_DE_RE}) alt\.$", lambda г: _вопрос_сейчас_язык(г, ФОРМЫ_DE)),
+    (rf"^hoe oud is (?P<a>{ИМЯ_EN}) nu\? (?P<a2>{ИМЯ_EN}) is (?P<va>{Ч}) "
+     rf"(?P<ya>{ГОД_NL_RE}) oud\.$", lambda г: _вопрос_сейчас_язык(г, ФОРМЫ_NL)),
+
+    (rf"^wie alt wird (?P<a>{ИМЯ_EN}) in (?P<s>{Ч}) (?P<ys>{ГОД_DE_RE}) sein\? "
+     rf"(?P<a2>{ИМЯ_EN}) ist (?P<va>{Ч}), also wird (?P<a3>{ИМЯ_EN}) in "
+     rf"(?P<s2>{Ч}) (?P<ys2>{ГОД_DE_RE}) (?P<p>{Ч}) sein\.$",
+     lambda г: _вопрос_сдвига_язык(г, ФОРМЫ_DE, True)),
+    (rf"^hoe oud is (?P<a>{ИМЯ_EN}) over (?P<s>{Ч}) (?P<ys>{ГОД_NL_RE})\? "
+     rf"(?P<a2>{ИМЯ_EN}) is (?P<va>{Ч}), dus over (?P<s2>{Ч}) (?P<ys2>{ГОД_NL_RE}) "
+     rf"is (?P<a3>{ИМЯ_EN}) (?P<p>{Ч})\.$",
+     lambda г: _вопрос_сдвига_язык(г, ФОРМЫ_NL, True)),
+
+    (rf"^wie alt war (?P<a>{ИМЯ_EN}) vor (?P<s>{Ч}) (?P<ys>{ГОД_DE_RE})\? "
+     rf"(?P<a2>{ИМЯ_EN}) ist (?P<va>{Ч}), also war (?P<a3>{ИМЯ_EN}) vor "
+     rf"(?P<s2>{Ч}) (?P<ys2>{ГОД_DE_RE}) (?P<p>{Ч})\.$",
+     lambda г: _вопрос_сдвига_язык(г, ФОРМЫ_DE, False)),
+    (rf"^hoe oud was (?P<a>{ИМЯ_EN}) (?P<s>{Ч}) (?P<ys>{ГОД_NL_RE}) geleden\? "
+     rf"(?P<a2>{ИМЯ_EN}) is (?P<va>{Ч}), dus (?P<s2>{Ч}) (?P<ys2>{ГОД_NL_RE}) "
+     rf"geleden was (?P<a3>{ИМЯ_EN}) (?P<p>{Ч})\.$",
+     lambda г: _вопрос_сдвига_язык(г, ФОРМЫ_NL, False)),
+
+    (rf"^um wie viel ist (?P<a>{ИМЯ_EN}) älter als (?P<b>{ИМЯ_EN})\? "
+     rf"(?P<a2>{ИМЯ_EN}) ist (?P<r>{Ч}) (?P<yr>{ГОД_DE_RE}) älter als "
+     rf"(?P<b2>{ИМЯ_EN}): (?P<a3>{ИМЯ_EN}) ist (?P<va>{Ч}) und (?P<b3>{ИМЯ_EN}) "
+     rf"ist (?P<vb>{Ч})\.$", lambda г: _вопрос_разницы_язык(г, ФОРМЫ_DE)),
+    (rf"^hoeveel ouder is (?P<a>{ИМЯ_EN}) dan (?P<b>{ИМЯ_EN})\? "
+     rf"(?P<a2>{ИМЯ_EN}) is (?P<r>{Ч}) (?P<yr>{ГОД_NL_RE}) ouder dan "
+     rf"(?P<b2>{ИМЯ_EN}): (?P<a3>{ИМЯ_EN}) is (?P<va>{Ч}) en (?P<b3>{ИМЯ_EN}) "
+     rf"is (?P<vb>{Ч})\.$", lambda г: _вопрос_разницы_язык(г, ФОРМЫ_NL)),
+
+    (rf"^(?P<a>{ИМЯ_EN}) ist (?P<va>{Ч}) (?P<ya>{ГОД_DE_RE}) alt\. wie alt wird "
+     rf"(?P<a2>{ИМЯ_EN}) in (?P<s>{Ч}) (?P<ys>{ГОД_DE_RE}) sein\? (?P<p>{Ч}) "
+     rf"(?P<yp>{ГОД_DE_RE})\.$", lambda г: _дано_язык(г, ФОРМЫ_DE)),
+    (rf"^(?P<a>{ИМЯ_EN}) is (?P<va>{Ч}) (?P<ya>{ГОД_NL_RE}) oud\. hoe oud is "
+     rf"(?P<a2>{ИМЯ_EN}) over (?P<s>{Ч}) (?P<ys>{ГОД_NL_RE})\? (?P<p>{Ч}) "
+     rf"(?P<yp>{ГОД_NL_RE})\.$", lambda г: _дано_язык(г, ФОРМЫ_NL)),
+
+    (rf"^wie alt ist (?P<a>{ИМЯ_EN})s (?P<rel>{ОТН_DE})\? es ist nicht gesagt: "
+     rf"über (?P<art>einen|eine) (?P<rel2>{ОТН_DE}) wird nichts gesagt\.$",
+     _отказ_de),
+    (rf"^hoe oud is de (?P<rel>{ОТН_NL}) van (?P<a>{ИМЯ_EN})\? dat is niet "
+     rf"gezegd: over een (?P<rel2>{ОТН_NL}) wordt niets gezegd\.$", _отказ_nl),
 )
 ПРАВИЛА = tuple((re.compile(о), п) for о, п in ОБРАЗЦЫ)
 

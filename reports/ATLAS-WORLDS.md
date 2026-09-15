@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 342 миров, 455307 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 342 миров, 456299 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -11,7 +11,7 @@
 
 ## АКТ «recount» — пересчитать величину: строка утверждает число
 
-Миров 158, строк 236020.
+Миров 158, строк 237012.
 
 - **`links`** (17566 строк; declared, whole_only)  
   **CONVERSATION LINKS** — a question whose subject stands in the PREVIOUS reply (the owner's order, 04.09, item 5; the BESEDA band measures this genus mute 15 of 15).
@@ -69,6 +69,8 @@
   **ПРОГРЕССИЯ** — ЧЛЕН ПО НОМЕРУ И СУММА ПО КОНЦАМ, И ОБА ВЫВЕДЕНЫ НА СТРАНИЦЕ: «член номер 5 прогрессии от 2 с шагом 2 равен 10: 5 − 1 = 4, 4 × 2 = 8, 2 + 8 = 10» и «сумма 3 6 9 12 равна 30: 3 + 12 = 15, 4 × 15 = 60, 60 ÷ 2 = 30».
 - **`relcompare`** (2400 строк; recompute, whole_only)  
   **THE RELATIVE FACT** — a number that belongs to the DIFFERENCE and to neither bearer (07.09).
+- **`age`** (2352 строк; recompute, whole_only, unsigned_only)  
+  **age and the shift of time: the difference between two ages does NOT change when both move forward or back** — the law a corpus of single facts cannot teach; ages now, the shift in both directions, the multiple relation with its ground, the multiple in the…
 - **`geometry`** (2344 строк; recompute, exact_only)  
   **ПЛОЩАДЬ И ПЕРИМЕТР, ВЫВЕДЕННЫЕ, А НЕ ОБЪЯВЛЕННЫЕ: «прямоугольник 2 на 3 имеет периметр 2 + 3 = 5, 2 × 5 = 10». Прямоугольник, треугольник, коробка** — и всякий раз формула проходится числами: сложение сторон, удвоение, умножение.
 - **`space`** (2301 строк; recompute, exact_only)  
@@ -97,8 +99,6 @@
   **the VALUE ASKED IN TEN LANGUAGES (the owner's word: every language in surplus; the svod asked the value of an expression only in en/ru): «was ist 3 + 4? 3 + 4 = 7.», «wie viel ist 12 − 5? …», «berechne 6 × 7. 6 × 7 = 42.» (de); «combien font 3 + 4 ? …», «…
 - **`compsci`** (1372 строк; recompute, whole_only)  
   **ЦЕНА ЗНАКА В БИТАХ И ЭНТРОПИЯ РАВНОВОЗМОЖНЫХ ИСХОДОВ, ДОКАЗАННЫЕ СТЕПЕНЬЮ ДВОЙКИ: «сколько бит стоит знак алфавита в 32 знака? знак алфавита в 32 знака стоит 5 битов: 2^5 = 32». И ТУТ ЖЕ ОТКАЗ, КОГДА ЦЕЛОГО ОТВЕТА НЕТ: «стоит ли знак алфавита в 5 знаков ц…
-- **`age`** (1360 строк; recompute, whole_only, unsigned_only)  
-  **age and the shift of time: the difference between two ages does NOT change when both move forward or back** — the law a corpus of single facts cannot teach; ages now, the shift in both directions, the multiple relation with its ground, the multiple in the…
 - **`ceilfloor`** (1340 строк; recompute, whole_only)  
   **TWO ANSWERS TO ONE DIVISION** — THE REMAINDER DECIDES WHICH WAY TO ROUND, AND THE QUESTION DECIDES THE REMAINDER'S USE. Measured 11.09 across the 251 show worlds (429 194 lines): «не хватит», «понадобится ещё», «нужно N коробок», «потребуется» — NONE; «ск…
 - **`average`** (1300 строк; recompute, whole_only)  
