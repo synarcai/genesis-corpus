@@ -145,8 +145,8 @@ def анафора(шаг):
             f"{вещь[4] if ушло == 1 else вещь[5]}. "
             f"{he_she} has {стало} {вещь[4] if стало == 1 else вещь[5]} left."
         )
-        вон.append((ру, "анафора"))
-        вон.append((ан, "анафора"))
+        вон.append((ру, "анафора", "ru"))
+        вон.append((ан, "анафора", "en"))
         # ВОПРОС ПОРОЖДЁН ОТВЕТОМ, А НЕ ПРИПИСАН К НЕМУ. Обе половины
         # строит одна и та же тройка величин, и закон пары
         # (`tools/asking.py`) требует, чтобы числа вопроса были
@@ -156,14 +156,14 @@ def анафора(шаг):
             f"у {род} было {было} {ру_форма(вещь, было)}. "
             f"{он_она} отдал{'а' if он_она == 'она' else ''} "
             f"{ушло} {ру_форма(вещь, ушло, винительный=True)}. "
-            f"сколько {вещь[2]} у {него_неё} осталось? {ру}"
-            , "анафорный вопрос"))
+            f"сколько {вещь[2]} у {него_неё} осталось? {ру}",
+            "анафорный вопрос", "ru"))
         вон.append((
             f"{en} had {было} {вещь[5]}. "
             f"{he_she} gave away {ушло} "
             f"{вещь[4] if ушло == 1 else вещь[5]}. "
-            f"how many {вещь[5]} does {he_she} have left? {ан}"
-            , "анафорный вопрос"))
+            f"how many {вещь[5]} does {he_she} have left? {ан}",
+            "анафорный вопрос", "en"))
         # ОТКАЗ С ОСНОВАНИЕМ: отдать больше, чем было, нельзя. Слой
         # показывал только сходящиеся рассказы и учил, что рассказ
         # сходится всегда; отказ здесь принадлежит РЕЧИ, ибо сказанное
@@ -173,14 +173,14 @@ def анафора(шаг):
             f"у {род} было {было} {ру_форма(вещь, было)}. "
             f"{он_она} отдал{'а' if он_она == 'она' else ''} "
             f"{сверх} {ру_форма(вещь, сверх, винительный=True)} — нет "
-            f"такого счёта: {сверх} больше {было}."
-            , "отказ счёта"))
+            f"такого счёта: {сверх} больше {было}.",
+            "отказ счёта", "ru"))
         вон.append((
             f"{en} had {было} {вещь[5]}. "
             f"{he_she} gave away {сверх} "
             f"{вещь[4] if сверх == 1 else вещь[5]} — there is no such "
-            f"count: {сверх} is greater than {было}."
-            , "отказ счёта"))
+            f"count: {сверх} is greater than {было}.",
+            "отказ счёта", "en"))
     return вон
 
 
@@ -197,33 +197,33 @@ def вывод(шаг):
         утв_ru = f"{n} делится на {d}, частное {n // d}. значит {n} кратно {d}."
         утв_en = (f"{n} is divisible by {d}, the quotient is {n // d}. therefore {n} "
                   f"is a multiple of {d}.")
-        вон.append(утв_ru)
-        вон.append(утв_en)
+        вон.append((утв_ru, "ru"))
+        вон.append((утв_en, "en"))
         # ВОПРОС РОДА «ЗНАЧИТ» — ВОПРОС О СЛЕДСТВИИ (holon 04.09, класс
         # tellings-differ): «делится ли 4 на 2?» — поверхность рода
         # делимости (inquiry), и второй рассказ на неё («да: 4 делится на 2.
         # значит …») был бы вторым рассказом того же вопроса. Род связки
         # спрашивает о своём: что следует из посылки — и ответ есть вывод.
-        вон.append(f"что следует из того, что {n} делится на {d}? {n} кратно {d}.")
-        вон.append(f"what follows from {n} being divisible by {d}? {n} is a multiple of {d}.")
+        вон.append((f"что следует из того, что {n} делится на {d}? {n} кратно {d}.", "ru"))
+        вон.append((f"what follows from {n} being divisible by {d}? {n} is a multiple of {d}.", "en"))
         if n % 2 == 0:
             чёт_ru = f"{n} делится на 2, частное {n // 2}. значит {n} чётно."
             чёт_en = f"{n} is divisible by 2, the quotient is {n // 2}. therefore {n} is even."
-            вон.append(чёт_ru)
-            вон.append(чёт_en)
+            вон.append((чёт_ru, "ru"))
+            вон.append((чёт_en, "en"))
         # ОТКАЗ С ОСНОВАНИЕМ: делимости может и не быть, и тогда честная
         # посылка — «не делится, и вот остаток»; основание вычислимо. Это
         # утверждение, не ответ на «делится ли»: тот вопрос — у рода делимости.
         косой = n + 1
         if косой % d:
-            вон.append(f"{косой} на {d} не делится, остаток {косой % d}.")
-            вон.append(f"{косой} is not divisible by {d}, the remainder is "
-                       f"{косой % d}.")
+            вон.append((f"{косой} на {d} не делится, остаток {косой % d}.", "ru"))
+            вон.append((f"{косой} is not divisible by {d}, the remainder is "
+                       f"{косой % d}.", "en"))
             # ВТОРАЯ ПОЛЯРНОСТЬ ТОЙ ЖЕ РАМКОЙ (holon 04.09): из ложной посылки
             # не следует ничего — и это сказано словом вердикта «ничего» с
             # основанием, чтобы закон двух полярностей купил рамку следствия.
-            вон.append(f"что следует из того, что {косой} делится на {d}? ничего: {косой} не делится на {d}.")
-            вон.append(f"what follows from {косой} being divisible by {d}? nothing: {косой} is not divisible by {d}.")
+            вон.append((f"что следует из того, что {косой} делится на {d}? ничего: {косой} не делится на {d}.", "ru"))
+            вон.append((f"what follows from {косой} being divisible by {d}? nothing: {косой} is not divisible by {d}.", "en"))
     return вон
 
 
@@ -233,10 +233,10 @@ def придаточное(шаг):
     for i in range(20):
         d = 2 + (i % 4)
         n = d * (2 + (i + шаг) % 6)
-        вон.append(f"{n} есть число, которое делится на {d}. "
-                   f"{n} ÷ {d} = {n // d}.")
-        вон.append(f"{n} is a number that is divisible by {d}. "
-                   f"{n} ÷ {d} = {n // d}.")
+        вон.append((f"{n} есть число, которое делится на {d}. "
+                   f"{n} ÷ {d} = {n // d}.", "ru"))
+        вон.append((f"{n} is a number that is divisible by {d}. "
+                   f"{n} ÷ {d} = {n // d}.", "en"))
     return вон
 
 
@@ -248,17 +248,17 @@ def квантор(шаг):
         ряд = [a, a + 2, a + 4]
         один = ряд[(i + шаг) % 3]
         если = ", ".join(str(x) for x in ряд)
-        вон.append(f"все числа {если} чётны. {один} — одно из них. "
-                   f"значит {один} чётно.")
-        вон.append(f"all of {если} are even. {один} is one of them. "
-                   f"therefore {один} is even.")
+        вон.append((f"все числа {если} чётны. {один} — одно из них. "
+                   f"значит {один} чётно.", "ru"))
+        вон.append((f"all of {если} are even. {один} is one of them. "
+                   f"therefore {один} is even.", "en"))
         нечёт = [x + 1 for x in ряд]
         если2 = ", ".join(str(x) for x in нечёт)
         один2 = нечёт[(i + шаг) % 3]
-        вон.append(f"ни одно из чисел {если2} не чётно. "
-                   f"{один2} — одно из них. значит {один2} не чётно.")
-        вон.append(f"none of {если2} are even. {один2} is one of them. "
-                   f"therefore {один2} is not even.")
+        вон.append((f"ни одно из чисел {если2} не чётно. "
+                   f"{один2} — одно из них. значит {один2} не чётно.", "ru"))
+        вон.append((f"none of {если2} are even. {один2} is one of them. "
+                   f"therefore {один2} is not even.", "en"))
     return вон
 
 
@@ -271,10 +271,10 @@ def номинализация(шаг):
     for i in range(20):
         ру, союз, en, by, действие, глиф = имена[(i + шаг) % 2]
         a, b = 2 + (i % 8) + шаг, 3 + (i % 6)
-        вон.append(f"{ру} {a} {союз} {b} даёт {действие(a, b)}. "
-                   f"{a} {глиф} {b} = {действие(a, b)}.")
-        вон.append(f"the {en} of {a} {by} {b} gives {действие(a, b)}. "
-                   f"{a} {глиф} {b} = {действие(a, b)}.")
+        вон.append((f"{ру} {a} {союз} {b} даёт {действие(a, b)}. "
+                   f"{a} {глиф} {b} = {действие(a, b)}.", "ru"))
+        вон.append((f"the {en} of {a} {by} {b} gives {действие(a, b)}. "
+                   f"{a} {глиф} {b} = {действие(a, b)}.", "en"))
     return вон
 
 
@@ -293,19 +293,19 @@ def условия(шаг):
         while свидетель % d == 0:
             свидетель += 2
         кратное = d * (1 + (i + шаг) % 3)
-        вон.append(f"делимости на {d} достаточно для чётности: "
-                   f"{кратное} делится на {d} и {кратное} чётно.")
-        вон.append(f"делимость на {d} не необходима для чётности: "
-                   f"{свидетель} чётно и на {d} не делится.")
-        вон.append(f"divisibility by {d} is sufficient for evenness: "
-                   f"{кратное} is divisible by {d} and {кратное} is even.")
-        вон.append(f"divisibility by {d} is not necessary for evenness: "
-                   f"{свидетель} is even and not divisible by {d}.")
+        вон.append((f"делимости на {d} достаточно для чётности: "
+                   f"{кратное} делится на {d} и {кратное} чётно.", "ru"))
+        вон.append((f"делимость на {d} не необходима для чётности: "
+                   f"{свидетель} чётно и на {d} не делится.", "ru"))
+        вон.append((f"divisibility by {d} is sufficient for evenness: "
+                   f"{кратное} is divisible by {d} and {кратное} is even.", "en"))
+        вон.append((f"divisibility by {d} is not necessary for evenness: "
+                   f"{свидетель} is even and not divisible by {d}.", "en"))
         # ЧЕТВЁРТАЯ КЛЕТКА: и достаточно, и необходимо
-        вон.append("делимости на 2 достаточно для чётности и она "
-                   "необходима для неё.")
-        вон.append("divisibility by 2 is sufficient for evenness and "
-                   "necessary for it.")
+        вон.append(("делимости на 2 достаточно для чётности и она "
+                   "необходима для неё.", "ru"))
+        вон.append(("divisibility by 2 is sufficient for evenness and "
+                   "necessary for it.", "en"))
     return вон
 
 
@@ -336,34 +336,34 @@ def уступка(шаг):
     for i in range(8):
         # ПРАВИЛО НАЗЫВАЕТСЯ ЧИСЛОМ, А ИСКЛЮЧЕНИЕ — ИМЕНЕМ. Без объявленного правила «хотя»
         # неотличимо от «и»; без пересчитанного правила оно неотличимо от заявления.
-        вон.append(f"простые числа обычно нечётны: из {len(простые)} "
-                   f"простых до 60 нечётны {нечётных}.")
-        вон.append(f"хотя 2 простое, 2 чётно.")
-        вон.append(f"primes are usually odd: of {len(простые)} primes "
-                   f"below 60, {нечётных} are odd.")
-        вон.append(f"although 2 is prime, 2 is even.")
+        вон.append((f"простые числа обычно нечётны: из {len(простые)} "
+                   f"простых до 60 нечётны {нечётных}.", "ru"))
+        вон.append((f"хотя 2 простое, 2 чётно.", "ru"))
+        вон.append((f"primes are usually odd: of {len(простые)} primes "
+                   f"below 60, {нечётных} are odd.", "en"))
+        вон.append((f"although 2 is prime, 2 is even.", "en"))
         # ЧИСЛО, СТОЯЩЕЕ ПЕРЕД «IS PRIME», ЧИТАЕТСЯ КАК ПОДЛЕЖАЩЕЕ, А НЕ КАК СЧЁТ: суд
         # поспешности (`indu_court`) прочёл «1 is prime» и назвал строку ложью — по делу.
         # Счёт исключения говорится СЛОВОМ, а проверяется всё так же пересчётом.
         assert простых_чётных == 1, "правило держится на единственном исключении"
-        вон.append(f"чётные числа обычно составны: из {чётных} чётных до 60 "
-                   f"простое ровно одно.")
-        вон.append(f"хотя 2 чётно, 2 простое.")
-        вон.append(f"even numbers are usually composite: of {чётных} even numbers "
-                   f"below 60, exactly one is prime.")
-        вон.append(f"although 2 is even, 2 is prime.")
-        вон.append(f"простые числа обычно не стоят рядом: среди {len(простые)} "
-                   f"простых до 60 соседних пар {соседей}.")
-        вон.append(f"хотя 2 и 3 простые, они соседи.")
-        вон.append(f"primes are usually not adjacent: among {len(простые)} primes "
-                   f"below 60 there is {соседей} adjacent pair.")
-        вон.append(f"although 2 and 3 are prime, they are adjacent.")
-        вон.append(f"у числа обычно чётное число делителей: до 30 таких чисел "
-                   f"{30 - len(нечёт_дел)}, а с нечётным — {len(нечёт_дел)}.")
-        вон.append(f"хотя 9 есть число, делителей у 9 три: 1, 3, 9.")
-        вон.append(f"a number usually has an even count of divisors: below 30, "
-                   f"{30 - len(нечёт_дел)} numbers do and {len(нечёт_дел)} do not.")
-        вон.append(f"although 9 is a number, 9 has three divisors: 1, 3, 9.")
+        вон.append((f"чётные числа обычно составны: из {чётных} чётных до 60 "
+                   f"простое ровно одно.", "ru"))
+        вон.append((f"хотя 2 чётно, 2 простое.", "ru"))
+        вон.append((f"even numbers are usually composite: of {чётных} even numbers "
+                   f"below 60, exactly one is prime.", "en"))
+        вон.append((f"although 2 is even, 2 is prime.", "en"))
+        вон.append((f"простые числа обычно не стоят рядом: среди {len(простые)} "
+                   f"простых до 60 соседних пар {соседей}.", "ru"))
+        вон.append((f"хотя 2 и 3 простые, они соседи.", "ru"))
+        вон.append((f"primes are usually not adjacent: among {len(простые)} primes "
+                   f"below 60 there is {соседей} adjacent pair.", "en"))
+        вон.append((f"although 2 and 3 are prime, they are adjacent.", "en"))
+        вон.append((f"у числа обычно чётное число делителей: до 30 таких чисел "
+                   f"{30 - len(нечёт_дел)}, а с нечётным — {len(нечёт_дел)}.", "ru"))
+        вон.append((f"хотя 9 есть число, делителей у 9 три: 1, 3, 9.", "ru"))
+        вон.append((f"a number usually has an even count of divisors: below 30, "
+                   f"{30 - len(нечёт_дел)} numbers do and {len(нечёт_дел)} do not.", "en"))
+        вон.append((f"although 9 is a number, 9 has three divisors: 1, 3, 9.", "en"))
     return вон
 
 
@@ -375,8 +375,8 @@ def существование(шаг):
         ряд = [a, a + 1, a + 2]
         чётные = [x for x in ряд if x % 2 == 0]
         если = ", ".join(str(x) for x in ряд)
-        вон.append(f"хотя бы одно из чисел {если} чётно: это {чётные[0]}.")
-        вон.append(f"at least one of {если} is even: it is {чётные[0]}.")
+        вон.append((f"хотя бы одно из чисел {если} чётно: это {чётные[0]}.", "ru"))
+        вон.append((f"at least one of {если} is even: it is {чётные[0]}.", "en"))
     return вон
 
 
@@ -386,10 +386,10 @@ def возможность(шаг):
     пары = ((3, 5, 8), (1, 7, 8), (5, 7, 12), (9, 3, 12), (11, 5, 16),
             (13, 3, 16), (7, 9, 16), (1, 3, 4))
     for a, b, c in пары:
-        вон.append(f"сумма двух нечётных может быть кратна 4: "
-                   f"{a} + {b} = {c}.")
-        вон.append(f"the sum of two odd numbers can be a multiple of 4: "
-                   f"{a} + {b} = {c}.")
+        вон.append((f"сумма двух нечётных может быть кратна 4: "
+                   f"{a} + {b} = {c}.", "ru"))
+        вон.append((f"the sum of two odd numbers can be a multiple of 4: "
+                   f"{a} + {b} = {c}.", "en"))
     return вон
 
 
@@ -399,10 +399,10 @@ def долженствование(шаг):
     for i in range(8):
         верх = 10 + i * 2 + шаг
         область = [x for x in range(2, верх, 2)]
-        вон.append(f"сумма двух чётных должна быть чётной: "
-                   f"проверено на всех чётных до {верх}.")
-        вон.append(f"the sum of two even numbers must be even: "
-                   f"checked on all even numbers below {верх}.")
+        вон.append((f"сумма двух чётных должна быть чётной: "
+                   f"проверено на всех чётных до {верх}.", "ru"))
+        вон.append((f"the sum of two even numbers must be even: "
+                   f"checked on all even numbers below {верх}.", "en"))
         assert all((x + y) % 2 == 0 for x in область for y in область)
     return вон
 
@@ -418,12 +418,12 @@ def тезис(шаг):
     for i in range(16):
         n = 6 + 2 * ((i + шаг) % 8)
         d = 2
-        вон.append(f"тезис: {n} составное. шаг: {n} делится на {d}. "
+        вон.append((f"тезис: {n} составное. шаг: {n} делится на {d}. "
                    f"шаг: {d} не равно 1 и {d} не равно {n}. "
-                   f"итог: {n} составное.")
-        вон.append(f"thesis: {n} is composite. step: {n} is divisible "
+                   f"итог: {n} составное.", "ru"))
+        вон.append((f"thesis: {n} is composite. step: {n} is divisible "
                    f"by {d}. step: {d} is not 1 and {d} is not {n}. "
-                   f"hence: {n} is composite.")
+                   f"hence: {n} is composite.", "en"))
     return вон
 
 
@@ -440,42 +440,42 @@ def стыки(шаг):
         вещь = ВЕЩИ[(i + шаг) % 5]
         n = 6 + 2 * i
         # СЛЕДОВАНИЕ над АНАФОРОЙ
-        вон.append(f"у {род} {n} {ру_форма(вещь, n)}. "
-                   f"значит у {него_неё} чётное число предметов.")
-        вон.append(f"{en} has {n} {вещь[5]}. "
-                   f"therefore {he_she} has an even count.")
+        вон.append((f"у {род} {n} {ру_форма(вещь, n)}. "
+                   f"значит у {него_неё} чётное число предметов.", "ru"))
+        вон.append((f"{en} has {n} {вещь[5]}. "
+                   f"therefore {he_she} has an even count.", "en"))
         # КВАНТОР над ПРИДАТОЧНЫМ
         d = 4
         m = d * (2 + i)
-        вон.append(f"все числа, которые делятся на {d}, чётны. "
-                   f"{m} делится на {d}. значит {m} чётно.")
-        вон.append(f"all numbers that are divisible by {d} are even. "
-                   f"{m} is divisible by {d}. therefore {m} is even.")
+        вон.append((f"все числа, которые делятся на {d}, чётны. "
+                   f"{m} делится на {d}. значит {m} чётно.", "ru"))
+        вон.append((f"all numbers that are divisible by {d} are even. "
+                   f"{m} is divisible by {d}. therefore {m} is even.", "en"))
         # СЛЕДОВАНИЕ над СЛЕДОВАНИЕМ
         k = 8 * (1 + i)
-        вон.append(f"{k} делится на 4. значит {k} делится на 2. "
-                   f"значит {k} чётно.")
-        вон.append(f"{k} is divisible by 4. therefore {k} is divisible "
-                   f"by 2. therefore {k} is even.")
+        вон.append((f"{k} делится на 4. значит {k} делится на 2. "
+                   f"значит {k} чётно.", "ru"))
+        вон.append((f"{k} is divisible by 4. therefore {k} is divisible "
+                   f"by 2. therefore {k} is even.", "en"))
         # ОТРИЦАНИЕ над КВАНТОРОМ
         ряд = [2 + 2 * i, 3 + 2 * i, 4 + 2 * i]
         нечёт = [x for x in ряд if x % 2]
         если = ", ".join(str(x) for x in ряд)
-        вон.append(f"не все числа {если} чётны: {нечёт[0]} нечётно.")
-        вон.append(f"not all of {если} are even: {нечёт[0]} is odd.")
+        вон.append((f"не все числа {если} чётны: {нечёт[0]} нечётно.", "ru"))
+        вон.append((f"not all of {если} are even: {нечёт[0]} is odd.", "en"))
         # АНАФОРА над ПЕРЕЧИСЛЕНИЕМ
         чёт = [2 + 2 * i, 4 + 2 * i, 6 + 2 * i]
         если2 = ", ".join(str(x) for x in чёт)
-        вон.append(f"числа {если2} названы. они все чётны.")
-        вон.append(f"the numbers {если2} are named. they are all even.")
+        вон.append((f"числа {если2} названы. они все чётны.", "ru"))
+        вон.append((f"the numbers {если2} are named. they are all even.", "en"))
         # ВОЗМОЖНОСТЬ над СУЩЕСТВОВАНИЕМ
         тройка = [3 + i, 4 + i, 5 + i]
         свид = [x for x in тройка if x % 2 == 0][0]
         если3 = ", ".join(str(x) for x in тройка)
-        вон.append(f"может быть, что хотя бы одно из чисел {если3} "
-                   f"чётно: это {свид}.")
-        вон.append(f"it may be that at least one of {если3} is even: "
-                   f"it is {свид}.")
+        вон.append((f"может быть, что хотя бы одно из чисел {если3} "
+                   f"чётно: это {свид}.", "ru"))
+        вон.append((f"it may be that at least one of {если3} is even: "
+                   f"it is {свид}.", "en"))
     return вон
 
 ГРУППЫ = (анафора, вывод, придаточное, квантор, номинализация, условия,
@@ -486,28 +486,39 @@ def стыки(шаг):
 def группы(шаг):
     """[[страница]] — ровно те группы и в том порядке, какими кузница кормит `emit_grouped`."""
     def без_метки(группа):
-        """Кузнице нужен ряд строк; метка рода — дело указателя, и снимается здесь."""
-        return [с[0] if isinstance(с, tuple) else с for с in группа]
+        """Кузнице нужен ряд строк; метка рода и языка — дело указателя, и снимается здесь."""
+        return [с[0] for с in группа]
 
     return [без_метки(сделать(шаг)) for сделать in ГРУППЫ]
 
 
-def перебор(шаг):
-    """[(страница, род)] — те же группы, но каждая под своим именем."""
+def перебор_с_языком(шаг):
+    """[(страница, род, ЯЗЫК)] — язык проставлен при каждой рамке (15.09).
+
+    Строитель этого дома пишет `утв_ru` и `утв_en` рядом — одну мысль двумя поверхностями, — и
+    язык был известен переменной. Всякая страница выходит отсюда МЕЧЕНОЙ: двойка «(страница,
+    язык)» там, где род берётся по имени строителя, и тройка «(страница, род, язык)» там, где
+    строитель называет род сам.
+    """
     вон = []
     имена = [с.__name__ for с in ГРУППЫ]
     for имя, сделать in zip(имена, ГРУППЫ):
         for с in сделать(шаг):
-            вон.append((с[0], с[1]) if isinstance(с, tuple) else (с, имя))
+            вон.append((с[0], с[1], с[2]) if len(с) == 3 else (с[0], имя, с[1]))
     return вон
+
+
+def перебор(шаг):
+    """[(страница, род)] — те же группы, но каждая под своим именем."""
+    return [(с, р) for с, р, _я in перебор_с_языком(шаг)]
 
 
 def _показы():
     from layer import PASSES                              # noqa: PLC0415
     вон = {}
     for шаг in range(len(PASSES)):
-        for с, род in перебор(шаг):
-            вон.setdefault(с, род)
+        for с, род, язык in перебор_с_языком(шаг):
+            вон.setdefault(с, (язык, род))
     return вон
 
 
@@ -528,7 +539,7 @@ def _самопроверка():
     # ГРУПП МЕНЬШЕ, ЧЕМ РОДОВ, И ЭТО ЗАКОННО: один строитель метит тремя родами. Сверяется
     # не число групп, а страница в страницу — это сделано выше.
     assert set(ЗАЧЕМ_РОДА) == set(РОДЫ), "глосса рода разошлась с объявлением"
-    пустые = set(РОДЫ) - set(ПОКАЗЫ.values())
+    пустые = set(РОДЫ) - {р for _я, р in ПОКАЗЫ.values()}
     assert not пустые, f"род объявлен и не кован: {sorted(пустые)}"
 
 
