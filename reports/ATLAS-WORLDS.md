@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 342 миров, 461973 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 342 миров, 462013 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -11,7 +11,7 @@
 
 ## АКТ «recount» — пересчитать величину: строка утверждает число
 
-Миров 158, строк 237216.
+Миров 158, строк 237256.
 
 - **`links`** (17566 строк; declared, whole_only)  
   **CONVERSATION LINKS** — a question whose subject stands in the PREVIOUS reply (the owner's order, 04.09, item 5; the BESEDA band measures this genus mute 15 of 15).
@@ -115,12 +115,12 @@
   valence with its ground: sign of dP/dtau, strength of feeling, fear at the irreversible threshold P_crit=2/7, calm, the computable triple of emotion, awareness gated by R and Phi, arena proxies with a DECLARED projection onto P, and the canonical names of c…
 - **`measureof`** (1254 строк; recompute, whole_only)  
   **THE MEASURE THROUGH «of»** — the number counts the VESSEL and the goods stand behind the preposition (07.09).
+- **`statistics`** (1232 строк; recompute, whole_only)  
+  **THE MIDDLE OF A LIST** — MEAN, MEDIAN AND RANGE, EACH DEFINED BEFORE IT IS ASKED. Declared until 12.09 in five words.
 - **`placeval`** (1220 строк; recompute, whole_only)  
   **PLACE VALUE** — THE PLACE OF A DIGIT IS ITS WEIGHT. THE CORPUS ROUNDS TO HUNDREDS AND NEVER ONCE SAYS WHAT HUNDREDS ARE. Measured 11.09 across the 253 show worlds: the decomposition of a number by places («300 + 40 + 7 = 347») — NONE; «the digit stands in…
 - **`genesis_units`** (1218 строк; recompute, whole_only)  
   **QUANTITIES, UNITS AND SHARES** — one world doing three deeds, declared until 12.09 in three words: «quantities, units, fractions».
-- **`statistics`** (1192 строк; recompute, whole_only)  
-  **THE MIDDLE OF A LIST** — MEAN, MEDIAN AND RANGE, EACH DEFINED BEFORE IT IS ASKED. Declared until 12.09 in five words.
 - **`money_langs`** (1188 строк; recompute, unsigned_only)  
   **MONEY WITH THE DECIMAL COMMA in nine languages (the owner's word: every language in surplus; the money world wrote «16.50 dollars»/«$16.50» and «16 рублей 50 копеек»** — Europe writes the comma): the bridge «16,50 Euro sind 1650 Cent: 16 × 100 = 1600, 160…
 - **`calendar_langs`** (1120 строк; recompute, unsigned_only)  

@@ -73,6 +73,12 @@ def числа(s):
      r"arranging \1 of them gives (\d+)$",
      lambda k, n, c, a: math.comb(int(n), int(k)) == int(c)
      and math.comb(int(n), int(k)) * math.factorial(int(k)) == int(a)),
+    # РУССКАЯ СТОРОНА ТОГО ЖЕ РОДА (15.09) — И ПРОВЕРКА У НЕЁ ТА ЖЕ: два счёта, сверенные с
+    # числом сочетаний и с числом расстановок.
+    (r"^выбор не есть расстановка: (\d+) из (\d+) даёт (\d+), "
+     r"а расставить \1 из них — (\d+)$",
+     lambda k, n, c, a: math.comb(int(n), int(k)) == int(c)
+     and math.comb(int(n), int(k)) * math.factorial(int(k)) == int(a)),
     (r"^a trial has (\d+) outcomes; .+ happens in (\d+) of them$",
      lambda n, k: 0 <= int(k) <= int(n)),
     (r"^испытание имеет (\d+) исход\S*; благоприятных (\d+)$",

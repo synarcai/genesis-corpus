@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 503 законов
+# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 507 законов
 
 Собран из докстрингов и комментариев `tools`, `courts`, `scripts` орудием
 `tools/law_atlas.py`. Взяты ОБЩИЕ законы — те, что держатся не одним файлом.
@@ -6,7 +6,7 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 6808 разных законов на 8681 упоминаний; сказанных однажды — 6305, и они остаются при своём месте.
+Всего в дереве 6831 разных законов на 8709 упоминаний; сказанных однажды — 6324, и они остаются при своём месте.
 
 
 ## Держат 81 файлов
@@ -115,6 +115,8 @@
 
 ## Держат 15 файлов
 
+- **И САМОПРОВЕРКА ЧИТАЕТ ОБЕ ПОЛОВИНЫ**  
+  tools/ageforms.py, tools/calforms.py, tools/chainforms.py, tools/cmpforms.py, tools/countforms.py, tools/everydayforms.py … и ещё 9
 - **МИР, ЧЬИ СТРАНИЦЫ НЕ НАЗВАНЫ РОДОМ, ЧИТАЕТСЯ ТОЛЬКО ТЕМ, КТО ЧИТАЕТ КУЗНИЦУ**  
   tools/cmpmultforms.py, tools/gen_genesis_compare_mult.py, tools/gen_genesis_definitions.py, tools/gen_genesis_formula_lang.py, tools/gen_genesis_markdown.py, tools/gen_genesis_space.py … и ещё 9
 
@@ -122,8 +124,6 @@
 
 - **ВОПРОС СУДИТСЯ СВОИМ ОТВЕТОМ, А РОД ОПРЕДЕЛЯЕТСЯ ОТВЕТОМ**  
   courts/algo_court.py, courts/compsci_court.py, courts/cyber_court.py, courts/formula_court.py, courts/linalg_court.py, courts/machine_court.py … и ещё 8
-- **И САМОПРОВЕРКА ЧИТАЕТ ОБЕ ПОЛОВИНЫ**  
-  tools/ageforms.py, tools/calforms.py, tools/chainforms.py, tools/cmpforms.py, tools/countforms.py, tools/everydayforms.py … и ещё 8
 - **ИСКОМОЕ ОБЪЯВЛЯЕТ СВОЙ ВОПРОС ОДИН РАЗ**  
   tools/compsciforms.py, tools/gen_genesis_algebra.py, tools/gen_genesis_algorithms.py, tools/gen_genesis_cybernetics.py, tools/gen_genesis_formulas.py, tools/gen_genesis_machine.py … и ещё 8
 - **ОСТАЛЬНАЯ СТРАНИЦА У НЕГО НЕ**  
@@ -1052,6 +1052,8 @@
   courts/algo_court.py, scripts/reproducible.py
 - **ЧЕСТНАЯ СТРАНИЦА НЕДВИЖУЩЕГО ЯЗЫКА С ЧИСЛОМ ВНЕ ОБЪЯВЛЕННОГО НАБОРА НЕ ЕСТЬ ЛОЖЬ**  
   courts/numphrase_court.py, tools/numphrase.py
+- **ЧЕСТНОСТЬ ПЕРЕД ЧЕЛОВЕКОМ НЕ ЕСТЬ ЧЕСТНОСТЬ ПЕРЕД ПРИБОРОМ**  
+  tools/rolemark.py, tools/surfaceforms.py
 - **ЧЕТЫРЕ РОДА, И ВСЕ ЧЕТЫРЕ БЫЛИ В КУЗНИЦЕ С ПЕРВОГО ДНЯ**  
   tools/planbuildforms.py, tools/wordpartforms.py
 - **ЧИСЛА ВЫБРАНЫ ПОД РУССКИЙ СЧЁТ**  
@@ -1094,6 +1096,12 @@
   scripts/house_skew.py, tools/moneyforms.py
 - **ЯЗЫК ЕСТЬ ЧАСТЬ ФАКТА, А НЕ ЕГО ОДЕЖДА**  
   tools/gen_genesis_inquiry_de_fr.py, tools/gen_genesis_inquiry_pt_nl.py
+- **ЯЗЫК РАМКИ ЧИТАЕТСЯ ПО СЛОВАМ, А НЕ ПО БУКВАМ**  
+  scripts/lang_sidecar.py, tools/metalangforms.py
+- **ЯЗЫК СТРАНИЦЫ ЕСТЬ ЯЗЫК ЕЁ ОБЁРТКИ, А НЕ ЕЁ МАТЕРИАЛА**  
+  scripts/lang_sidecar.py, tools/wordpartforms.py
+- **ЯЗЫК СТУПЕНИ БЕРЁТСЯ У ОБЩЕГО ПОМОЩНИКА**  
+  tools/compsciforms.py, tools/physlawforms.py
 - **ЯЗЫК, ВВЕДЁННЫЙ ДЕВЯТЫМ, ПРОВЕРЯЕТ ВОСЕМЬ ПРЕЖНИХ**  
   scripts/contrast_real.py, tools/personplaceforms.py
 - **ЯЗЫК, НА КОТОРОМ НАПИСАНЫ ВСЕ ОСТАЛЬНЫЕ**  
