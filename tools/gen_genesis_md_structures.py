@@ -22,6 +22,7 @@ random), form-feed seams between passes, glyph axis only
 shared across surfaces (the cross stays verbal).
 """
 
+import bilang  # noqa: E402 — язык показа по азбуке
 import lexicon
 from layer import emit_grouped
 
@@ -229,11 +230,14 @@ def _показы():
     for с, род in перебор_страниц(0):
         for строка in с.split("\n"):
             if строка.rstrip():
-                вон.setdefault(строка.rstrip(), род)
+                вон.setdefault(строка.rstrip(), (bilang.азбукой(строка.rstrip()), род))
     return вон
 
 
 ПОКАЗЫ = _показы()
+
+# ЯЗЫК ПОКАЗА НАЗВАН ПЕРВЫМ, РОД — ВТОРЫМ: так читает прибор щербатости.
+РОД_В_ПОКАЗЕ = 1
 
 
 def _самопроверка_дома():
@@ -242,7 +246,7 @@ def _самопроверка_дома():
     из_групп = [с for г in группы(0) for с in г]
     if из_групп != [с for с, _р in перебор_страниц(0)]:
         raise AssertionError("перебор разошёлся с группами")
-    пустые = set(РОДЫ) - set(ПОКАЗЫ.values())
+    пустые = set(РОДЫ) - {р for _я, р in ПОКАЗЫ.values()}
     assert not пустые, f"род объявлен и не кован: {sorted(пустые)}"
 
 

@@ -8,6 +8,7 @@
 судится тем же судом, что и утверждение; порча ловится — проверено
 палатой до записи.
 """
+import bilang  # noqa: E402 — язык показа по азбуке
 import pathlib
 import sys
 
@@ -118,7 +119,7 @@ def _показы_дома():
     for ш in range(len(PASSES)):
         for с, род in перебор_страниц(ш):
             if с.rstrip():
-                вон.setdefault(с.rstrip(), род)
+                вон.setdefault(с.rstrip(), (bilang.азбукой(с.rstrip()), род))
     return вон
 
 
@@ -132,7 +133,7 @@ def _самопроверка_дома():
     строки = [с for с in СЕМЯ.read_text(encoding="utf-8").splitlines() if с.strip()]
     немые = [с for с in строки if род_строки(с) is None]
     assert not немые, f"строк семени без рода: {len(немые)}, первая — {немые[0][:70]}"
-    пустые = set(РОДЫ) - set(ПОКАЗЫ.values())
+    пустые = set(РОДЫ) - {р for _я, р in ПОКАЗЫ.values()}
     assert not пустые, f"род объявлен и не кован: {sorted(пустые)}"
 
 

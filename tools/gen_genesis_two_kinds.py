@@ -21,6 +21,7 @@ MASS FROM THE RULE (М-148, and the measured price of mass): twenty-four pages p
 language per pass — twelve per question — so every (pair, question, language)
 cell holds twenty pages and more.
 """
+import bilang  # noqa: E402 — язык показа по азбуке
 import pathlib
 import sys
 
@@ -39,7 +40,9 @@ from layer import Сбор, emit_grouped  # noqa: E402
 
 
 def язык_группа(шаг, язык):
-    вон = Сбор()
+    # ЯЗЫК БЕРЁТСЯ У СТРОИТЕЛЯ, А НЕ У НАЧЕРТАНИЯ (15.09): дом говорит не на двух языках, и
+    # латиница у него одна на многих. Сбор помнит язык полем, как помнит род.
+    вон = Сбор(язык=язык)
     пар = len(F.ЯЗЫКИ[язык]["пары"])
     j = шаг * 13
     for i in range(24):
@@ -79,26 +82,29 @@ def страницы(шаг):
 
 
 def перебор_страниц(шаг):
-    return [п for г in группы(шаг) for п in г.парами]
+    return [п for г in группы(шаг) for п in г.тройками]
 
 
 def _показы():
     from layer import PASSES                             # noqa: PLC0415
     вон = {}
     for ш in range(len(PASSES)):
-        for с, род in перебор_страниц(ш):
+        for с, род, язык in перебор_страниц(ш):
             for строка in с.split("\n"):
                 if строка.rstrip():
-                    вон.setdefault(строка.rstrip(), род)
+                    вон.setdefault(строка.rstrip(), (язык, род))
     return вон
 
 
 ПОКАЗЫ = _показы()
 
+# ЯЗЫК ПОКАЗА НАЗВАН ПЕРВЫМ, РОД — ВТОРЫМ: так читает прибор щербатости.
+РОД_В_ПОКАЗЕ = 1
+
 
 def _самопроверка_дома():
     assert set(ЗАЧЕМ_РОДА) == set(РОДЫ), "глосса рода разошлась с объявлением"
-    пустые = set(РОДЫ) - set(ПОКАЗЫ.values())
+    пустые = set(РОДЫ) - {р for _я, р in ПОКАЗЫ.values()}
     assert not пустые, f"род объявлен и не кован: {sorted(пустые)}"
 
 

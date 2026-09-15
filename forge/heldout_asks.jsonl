@@ -29,20 +29,20 @@
 {"id": "ho0029", "ask": "чему равно 67 и 28 не сравнимы по модулю 8: 67 по модулю 8 равно 3, 28 по модулю 8?", "expect": {"kind": "value", "n": 4}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
 {"id": "ho0030", "ask": "чему равно 76 по модулю 4?", "expect": {"kind": "value", "n": 0}, "tags": ["held_out_form:true", "genus:genesis_numbers", "source:constructed"]}
 {"id": "ho0031", "ask": "чему равно 8 в степени 4?", "expect": {"kind": "value", "n": 4096}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
-{"id": "ho0032", "ask": "чему равно 9 в степени 3?", "expect": {"kind": "value", "n": 729}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
-{"id": "ho0033", "ask": "чему равно 16807 в степени 3?", "expect": {"kind": "value", "n": 4747561509943}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
+{"id": "ho0032", "ask": "чему равно 625 в степени 2?", "expect": {"kind": "value", "n": 390625}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
+{"id": "ho0033", "ask": "чему равно 5 в степени 2?", "expect": {"kind": "value", "n": 25}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
 {"id": "ho0034", "ask": "чему равно 100 в степени 5?", "expect": {"kind": "value", "n": 10000000000}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
-{"id": "ho0035", "ask": "чему равно 625 в степени 2?", "expect": {"kind": "value", "n": 390625}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
-{"id": "ho0036", "ask": "чему равно 5 в степени 2?", "expect": {"kind": "value", "n": 25}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
-{"id": "ho0037", "ask": "чему равно 4 в степени 4?", "expect": {"kind": "value", "n": 256}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
-{"id": "ho0038", "ask": "чему равно 216 в степени 2?", "expect": {"kind": "value", "n": 46656}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
-{"id": "ho0039", "ask": "чему равно 16 в степени 2?", "expect": {"kind": "value", "n": 256}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
-{"id": "ho0040", "ask": "чему равно 27 в степени 3?", "expect": {"kind": "value", "n": 19683}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
-{"id": "ho0041", "ask": "чему равно 125 в степени 2?", "expect": {"kind": "value", "n": 15625}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
-{"id": "ho0042", "ask": "чему равно 1024 в степени 3?", "expect": {"kind": "value", "n": 1073741824}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
-{"id": "ho0043", "ask": "чему равно 100 в степени 4?", "expect": {"kind": "value", "n": 100000000}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
-{"id": "ho0044", "ask": "чему равно 216 в степени 3?", "expect": {"kind": "value", "n": 10077696}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
-{"id": "ho0045", "ask": "чему равно 256 в степени 3?", "expect": {"kind": "value", "n": 16777216}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
+{"id": "ho0035", "ask": "чему равно 16807 в степени 3?", "expect": {"kind": "value", "n": 4747561509943}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
+{"id": "ho0036", "ask": "чему равно 27 в степени 3?", "expect": {"kind": "value", "n": 19683}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
+{"id": "ho0037", "ask": "чему равно 16 в степени 2?", "expect": {"kind": "value", "n": 256}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
+{"id": "ho0038", "ask": "чему равно 9 в степени 3?", "expect": {"kind": "value", "n": 729}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
+{"id": "ho0039", "ask": "чему равно 216 в степени 2?", "expect": {"kind": "value", "n": 46656}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
+{"id": "ho0040", "ask": "чему равно 4 в степени 4?", "expect": {"kind": "value", "n": 256}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
+{"id": "ho0041", "ask": "чему равно 256 в степени 3?", "expect": {"kind": "value", "n": 16777216}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
+{"id": "ho0042", "ask": "чему равно 1000 в степени 4?", "expect": {"kind": "value", "n": 1000000000000}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
+{"id": "ho0043", "ask": "чему равно 36 в степени 3?", "expect": {"kind": "value", "n": 46656}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
+{"id": "ho0044", "ask": "чему равно 2401 в степени 2?", "expect": {"kind": "value", "n": 5764801}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
+{"id": "ho0045", "ask": "чему равно 4 в степени 2?", "expect": {"kind": "value", "n": 16}, "tags": ["held_out_form:true", "genus:genesis_algebra", "source:constructed"]}
 {"id": "ho0046", "ask": "чему равна производная t^2 в точке 1?", "expect": {"kind": "value", "n": 2}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
 {"id": "ho0047", "ask": "what is for f(t) = t^2 the change from 2 to 3?", "expect": {"kind": "value", "n": 5}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
 {"id": "ho0048", "ask": "чему равна производная t^3 в точке 3?", "expect": {"kind": "value", "n": 27}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}

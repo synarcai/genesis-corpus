@@ -36,6 +36,7 @@ tree would be a lie about CSV. Nesting will come as its own genus when
 there is something true to say about it in all four scripts.
 """
 
+import bilang  # noqa: E402 — язык показа по азбуке
 import pathlib
 import random
 import sys
@@ -71,8 +72,13 @@ def _показы(з):
     for имя, текст in письма.items():
         if "\n" in текст:
             continue
+        # РОД, СКАЗАННЫЙ ОДНИМ ЯЗЫКОМ, ЕСТЬ ПОЛОВИНА РОДА (15.09). Два рода дома — «запись,
+        # названная в json» и «другое письмо → json» — звучали только по-английски, тогда как
+        # обратная сторона («json → другое письмо») говорила обоими языками. Ничего, кроме
+        # рамки речи, тут и не разнилось: запись, письмо и вердикт у обоих языков одни.
         вон.род = ЗАПИСЬ_В_JSON
         вон.append(f"in json this record is {письма['json']}.")
+        вон.append(f"в письме json эта запись есть {письма['json']}.")
         break
     for имя, текст in письма.items():
         if имя == "json":
@@ -82,6 +88,7 @@ def _показы(з):
         вон.append(f"{письма['json']} written in {имя} is {сказано}.")
         вон.род = ПИСЬМО_В_JSON
         вон.append(f"{сказано} written in json is {письма['json']}.")
+        вон.append(f"{сказано} в письме json есть {письма['json']}.")
         вон.род = JSON_В_ПИСЬМО
         вон.append(f"{письма['json']} в письме {имя} есть {сказано}.")
     for язык, связка_ru in (("en", None), ("ru", None)):
@@ -163,7 +170,7 @@ def _показы_дома():
         for с, род in перебор_страниц(шаг):
             for строка in с.split("\n"):
                 if строка.rstrip():
-                    вон.setdefault(строка.rstrip(), род)
+                    вон.setdefault(строка.rstrip(), (bilang.азбукой(строка.rstrip()), род))
     return вон
 
 
@@ -174,7 +181,7 @@ def _самопроверка_дома():
     assert set(ЗАЧЕМ_РОДА) == set(РОДЫ), "глосса рода разошлась с объявлением"
     вне = {р for _с, р in перебор_страниц(0)} - set(РОДЫ)
     assert not вне, f"род кован и не объявлен: {sorted(вне)}"
-    пустые = set(РОДЫ) - set(ПОКАЗЫ.values())
+    пустые = set(РОДЫ) - {р for _я, р in ПОКАЗЫ.values()}
     assert not пустые, f"род объявлен и не кован: {sorted(пустые)}"
 
 

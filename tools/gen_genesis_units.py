@@ -9,6 +9,7 @@ laws: bare shows, three surfaces (glyph / RU / EN),
 deterministic coprime shuffles, form-feed seams.
 """
 
+import bilang  # noqa: E402 — язык показа по азбуке
 import units
 from plural import by_count  # noqa: E402
 from layer import Сбор, emit_grouped
@@ -291,18 +292,21 @@ def _показы():
         for с, род in перебор_страниц(шаг):
             for строка in с.split("\n"):
                 if строка.rstrip():
-                    вон.setdefault(строка.rstrip(), род)
+                    вон.setdefault(строка.rstrip(), (bilang.азбукой(строка.rstrip()), род))
     return вон
 
 
 ПОКАЗЫ = _показы()
+
+# ЯЗЫК ПОКАЗА НАЗВАН ПЕРВЫМ, РОД — ВТОРЫМ: так читает прибор щербатости.
+РОД_В_ПОКАЗЕ = 1
 
 
 def _самопроверка_дома():
     assert set(ЗАЧЕМ_РОДА) == set(РОДЫ), "глосса рода разошлась с объявлением"
     вне = {р for _с, р in перебор_страниц(0)} - set(РОДЫ)
     assert not вне, f"род кован и не объявлен: {sorted(вне)}"
-    пустые = set(РОДЫ) - set(ПОКАЗЫ.values())
+    пустые = set(РОДЫ) - {р for _я, р in ПОКАЗЫ.values()}
     assert not пустые, f"род объявлен и не кован: {sorted(пустые)}"
 
 

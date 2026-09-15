@@ -25,6 +25,7 @@ conversions and are judged as such, and the DIMENSION table, checked
 against its own declaration.
 """
 
+import bilang  # noqa: E402 — язык показа по азбуке
 import pathlib
 import sys
 
@@ -483,11 +484,14 @@ def _показы():
         for с, род in перебор_страниц(шаг):
             for строка in с.split("\n"):
                 if строка.rstrip():
-                    вон.setdefault(строка.rstrip(), род)
+                    вон.setdefault(строка.rstrip(), (bilang.азбукой(строка.rstrip()), род))
     return вон
 
 
 ПОКАЗЫ = _показы()
+
+# ЯЗЫК ПОКАЗА НАЗВАН ПЕРВЫМ, РОД — ВТОРЫМ: так читает прибор щербатости.
+РОД_В_ПОКАЗЕ = 1
 
 
 def _самопроверка_дома():
@@ -497,7 +501,7 @@ def _самопроверка_дома():
     assert len(сбор) == len(сбор.роды), "показ остался без рода"
     вне = {р for _с, р in сбор.парами} - set(РОДЫ)
     assert not вне, f"род кован и не объявлен: {sorted(вне)}"
-    пустые = set(РОДЫ) - set(ПОКАЗЫ.values())
+    пустые = set(РОДЫ) - {р for _я, р in ПОКАЗЫ.values()}
     assert not пустые, f"род объявлен и не кован: {sorted(пустые)}"
 
 

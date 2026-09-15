@@ -15,6 +15,7 @@ Instances vary by pass (32's trail number: repeats buy
 weight, not coverage); bare shows; form-feed seams.
 """
 
+import bilang  # noqa: E402 — язык показа по азбуке
 import inverting
 from layer import Сбор, emit
 
@@ -111,18 +112,21 @@ def _показы():
         for с, род in перебор_страниц(шаг):
             for строка in с.split("\n"):
                 if строка.rstrip():
-                    вон.setdefault(строка.rstrip(), род)
+                    вон.setdefault(строка.rstrip(), (bilang.азбукой(строка.rstrip()), род))
     return вон
 
 
 ПОКАЗЫ = _показы()
+
+# ЯЗЫК ПОКАЗА НАЗВАН ПЕРВЫМ, РОД — ВТОРЫМ: так читает прибор щербатости.
+РОД_В_ПОКАЗЕ = 1
 
 
 def _самопроверка_дома():
     assert set(ЗАЧЕМ_РОДА) == set(РОДЫ), "глосса рода разошлась с объявлением"
     сбор = with_asks(0)
     assert len(сбор) == len(сбор.роды), "показ остался без рода"
-    пустые = set(РОДЫ) - set(ПОКАЗЫ.values())
+    пустые = set(РОДЫ) - {р for _я, р in ПОКАЗЫ.values()}
     assert not пустые, f"род объявлен и не кован: {sorted(пустые)}"
 
 

@@ -36,6 +36,11 @@ from closedworld import Слой  # noqa: E402 — палата подаёт и�
 ПИСЬМА = "|".join(sorted(ЧИТАТЕЛИ))
 
 ЭТО_JSON = re.compile(r"^in json this record is (\{.*\})\.$")
+# РУССКИЕ БЛИЗНЕЦЫ ДВУХ РАМОК (15.09): дом сказал их, и суд обязан прочесть. Рамка «в письме
+# json есть» служит обеим сторонам — записи, названной одним письмом, и переводу ИЗ чужого
+# письма, — и различает их то, что стои́т слева: json или чужая строка.
+ЭТО_JSON_RU = re.compile(r"^в письме json эта запись есть (\{.*\})\.$")
+ИЗ_ПИСЬМА_RU = re.compile(r"^(.+) в письме json есть (\{.*\})\.$")
 В_ПИСЬМЕ = re.compile(
     rf"^(\{{.*\}}) written in ({ПИСЬМА}) is (.+)\.$")
 ИЗ_ПИСЬМА = re.compile(rf"^(.+) written in json is (\{{.*\}})\.$")
@@ -89,7 +94,7 @@ def _судить(строка):
     if м:
         return судить(м.group(1) if м.group(1).endswith(".")
                       else м.group(1) + ".")
-    м = ЭТО_JSON.match(с)
+    м = ЭТО_JSON.match(с) or ЭТО_JSON_RU.match(с)
     if м:
         return True, дф.из_json(м.group(1)) is not None
     for образец, слева, справа in (
@@ -101,7 +106,7 @@ def _судить(строка):
             if левый is None or правый is None:
                 return False, False
             return True, левый == правый
-    м = ИЗ_ПИСЬМА.match(с)
+    м = ИЗ_ПИСЬМА.match(с) or ИЗ_ПИСЬМА_RU.match(с)
     if м:
         левый = _каким_письмом(м.group(1))
         правый = дф.из_json(м.group(2))

@@ -7,6 +7,7 @@ import sys
 import pathlib as _pathlib
 
 sys.path.insert(0, str(_pathlib.Path(__file__).resolve().parent))
+import bilang  # noqa: E402 — язык показа по азбуке
 import layer  # noqa: E402
 from layer import Сбор  # noqa: E402
 
@@ -192,16 +193,19 @@ def _показы():
     for сбор in (ru_lines(rng), en_lines(rng)):
         for с, род in сбор.парами:
             if с.rstrip():
-                вон.setdefault(с.rstrip(), род)
+                вон.setdefault(с.rstrip(), (bilang.азбукой(с.rstrip()), род))
     return вон
 
 
 ПОКАЗЫ = _показы()
 
+# ЯЗЫК ПОКАЗА НАЗВАН ПЕРВЫМ, РОД — ВТОРЫМ: так читает прибор щербатости.
+РОД_В_ПОКАЗЕ = 1
+
 
 def _самопроверка_дома():
     assert set(ЗАЧЕМ_РОДА) == set(РОДЫ), "глосса рода разошлась с объявлением"
-    пустые = set(РОДЫ) - set(ПОКАЗЫ.values())
+    пустые = set(РОДЫ) - {р for _я, р in ПОКАЗЫ.values()}
     assert not пустые, f"род объявлен и не кован: {sorted(пустые)}"
 
 
