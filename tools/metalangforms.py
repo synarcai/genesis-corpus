@@ -219,39 +219,39 @@ def показ_определение(шаг):
         n = d * k + r
         друг = (r + 1 + (шаг + i) % (d - 1)) % d if d > 1 else r
         m = d * k + друг
-        вон.append(f"определение: число {п}, если {чем_ру}. {n} "
+        вон.append((f"определение: число {п}, если {чем_ру}. {n} "
                    f"подпадает под определение: {представление(n, d)}. "
-                   f"{m} не подпадает: {представление(m, d)}.")
-        вон.append(f"definition: a number {а} if {чем_ан}. {n} falls "
+                   f"{m} не подпадает: {представление(m, d)}.", "ru"))
+        вон.append((f"definition: a number {а} if {чем_ан}. {n} falls "
                    f"under the definition: {представление(n, d)}. {m} "
-                   f"does not: {представление(m, d)}.")
-        вон.append(f"что есть определение? определение говорит, что "
+                   f"does not: {представление(m, d)}.", "en"))
+        вон.append((f"что есть определение? определение говорит, что "
                    f"понятие есть, и отделяет подпадающее от "
                    f"неподпадающего: {n} {п}, ибо {представление(n, d)}, "
-                   f"а {m} нет, ибо {представление(m, d)}.")
-        вон.append(f"what is a definition? a definition says what a "
+                   f"а {m} нет, ибо {представление(m, d)}.", "ru"))
+        вон.append((f"what is a definition? a definition says what a "
                    f"notion is and separates what falls under it from "
                    f"what does not: {n} {а}, since {представление(n, d)}, "
-                   f"and {m} does not, since {представление(m, d)}.")
-        вон.append(f"{n} {п} по определению, а {m} нет: "
-                   f"{представление(n, d)}, а {представление(m, d)}.")
-        вон.append(f"в определении названо, при каком остатке число {п}: "
+                   f"and {m} does not, since {представление(m, d)}.", "en"))
+        вон.append((f"{n} {п} по определению, а {m} нет: "
+                   f"{представление(n, d)}, а {представление(m, d)}.", "ru"))
+        вон.append((f"в определении названо, при каком остатке число {п}: "
                    f"{n} даёт остаток {r} при делении на {d}, а {m} "
-                   f"нет: {представление(n, d)}, а {представление(m, d)}.")
-        вон.append(f"определим род числа остатком, и он определяется "
+                   f"нет: {представление(n, d)}, а {представление(m, d)}.", "ru"))
+        вон.append((f"определим род числа остатком, и он определяется "
                    f"делением, а не видом записи: {n} {п}, а {m} нет: "
-                   f"{представление(n, d)}, а {представление(m, d)}.")
-        вон.append(f"{n} {а} by definition, and {m} is not: "
-                   f"{представление(n, d)}, and {представление(m, d)}.")
-        вон.append(f"the definition names at which remainder a number "
+                   f"{представление(n, d)}, а {представление(m, d)}.", "ru"))
+        вон.append((f"{n} {а} by definition, and {m} is not: "
+                   f"{представление(n, d)}, and {представление(m, d)}.", "en"))
+        вон.append((f"the definition names at which remainder a number "
                    f"{а}: {n} leaves remainder {r} when divided by {d}, "
                    f"and {m} does not: {представление(n, d)}, and "
-                   f"{представление(m, d)}.")
-        вон.append(f"let us define the kind of a number by the "
+                   f"{представление(m, d)}.", "en"))
+        вон.append((f"let us define the kind of a number by the "
                    f"remainder, for it is defined by division and not "
                    f"by the look of the record: {n} {а}, and {m} is "
                    f"not: {представление(n, d)}, and "
-                   f"{представление(m, d)}.")
+                   f"{представление(m, d)}.", "en"))
     return вон
 
 
@@ -276,65 +276,65 @@ def показ_аксиома(шаг):
         # 2 * 3, и 0 меньше 2» — про число, которого в записи нет.
         r = 1 + (шаг + i) % (d - 1)
         n = d * k + r
-        вон.append(f"аксиома: для всякого целого a и всякого d больше "
+        вон.append((f"аксиома: для всякого целого a и всякого d больше "
                    f"нуля найдутся k и r, что a = d * k + r и r меньше "
                    f"d. доказательства у аксиомы нет: она принята. "
-                   f"случай: {представление(n, d)}, и {r} меньше {d}.")
-        вон.append(f"axiom: for every whole a and every d greater than "
+                   f"случай: {представление(n, d)}, и {r} меньше {d}.", "ru"))
+        вон.append((f"axiom: for every whole a and every d greater than "
                    f"0 there are k and r with a = d * k + r and r less "
                    f"than d. an axiom has no proof: it is taken. "
                    f"instance: {представление(n, d)}, and {r} is less "
-                   f"than {d}.")
-        вон.append(f"что такое аксиома? аксиома есть утверждение, "
+                   f"than {d}.", "en"))
+        вон.append((f"что такое аксиома? аксиома есть утверждение, "
                    f"принятое без доказательства, и на ней стоят "
                    f"прочие: {представление(n, d)} есть её случай при "
-                   f"d = {d}.")
-        вон.append(f"what is an axiom? an axiom is a statement taken "
+                   f"d = {d}.", "ru"))
+        вон.append((f"what is an axiom? an axiom is a statement taken "
                    f"without proof, and the rest stands on it: "
-                   f"{представление(n, d)} is its instance at d = {d}.")
+                   f"{представление(n, d)} is its instance at d = {d}.", "en"))
         # АКСИОМА ЗАМЕНЫ РАВНОГО ДЕРЖИТ КАЖДУЮ ЦЕПЬ ЭТОГО МИРА.
         # Доказательство ставит «2 * 3» на место шестёрки — и делает
         # это вправе лишь потому, что замена равного объявлена. Опора,
         # которой пользуются молча, учит, что опор не нужно.
         c = 2 + (шаг * 2 + i) % 9
-        вон.append(f"аксиома: равное можно заменить равным. случай: "
+        вон.append((f"аксиома: равное можно заменить равным. случай: "
                    f"{представление(n, d)}, значит {n} + {c} = {d} * "
                    f"{n // d}{f' + {n % d}' if n % d else ''} + {c} = "
-                   f"{n + c}.")
-        вон.append(f"axiom: an equal may be replaced by an equal. "
+                   f"{n + c}.", "ru"))
+        вон.append((f"axiom: an equal may be replaced by an equal. "
                    f"instance: {представление(n, d)}, so {n} + {c} = "
                    f"{d} * {n // d}{f' + {n % d}' if n % d else ''} + "
-                   f"{c} = {n + c}.")
-        вон.append(f"двумя аксиомами держится всякое доказательство "
+                   f"{c} = {n + c}.", "en"))
+        вон.append((f"двумя аксиомами держится всякое доказательство "
                    f"этого мира: деление с остатком даёт "
                    f"{представление(n, d)}, а замена равного ставит "
                    f"{d} * {n // d}{f' + {n % d}' if n % d else ''} на "
-                   f"место числа {n}: {n} + {c} = {n + c}.")
-        вон.append(f"two axioms hold every proof of this world: "
+                   f"место числа {n}: {n} + {c} = {n + c}.", "ru"))
+        вон.append((f"two axioms hold every proof of this world: "
                    f"division with remainder gives {представление(n, d)}, "
                    f"and replacing an equal puts {d} * "
                    f"{n // d}{f' + {n % d}' if n % d else ''} in place "
-                   f"of {n}: {n} + {c} = {n + c}.")
-        вон.append(f"две аксиомы этого мира суть деление с остатком и "
+                   f"of {n}: {n} + {c} = {n + c}.", "en"))
+        вон.append((f"две аксиомы этого мира суть деление с остатком и "
                    f"замена равного: по аксиомам выходит "
                    f"{представление(n, d)}, и потому {n} + {c} = "
-                   f"{n + c}.")
-        вон.append(f"the two axioms of this world are division with "
+                   f"{n + c}.", "ru"))
+        вон.append((f"the two axioms of this world are division with "
                    f"remainder and replacing an equal: by the axioms "
                    f"{представление(n, d)}, and therefore {n} + {c} = "
-                   f"{n + c}.")
+                   f"{n + c}.", "en"))
         # АКСИОМАТИКА ЕСТЬ СВОД АКСИОМ, А НЕ ИМЯ ДЛЯ ВАЖНОСТИ. Свод
         # этого мира короток и назван целиком: две аксиомы, и обе
         # работают в каждом выводе. Слово, при котором стоит счёт,
         # перестаёт быть титулом.
-        вон.append(f"аксиоматика этого мира есть свод из двух аксиом, и "
+        вон.append((f"аксиоматика этого мира есть свод из двух аксиом, и "
                    f"на аксиоматике стоит всякий вывод: "
                    f"{представление(n, d)}, и потому {n} + {c} = "
-                   f"{n + c}.")
-        вон.append(f"the axiomatics of this world is a set of two "
+                   f"{n + c}.", "ru"))
+        вон.append((f"the axiomatics of this world is a set of two "
                    f"axioms, and every derivation rests on that "
                    f"axiomatic ground: {представление(n, d)}, and so "
-                   f"{n} + {c} = {n + c}.")
+                   f"{n} + {c} = {n + c}.", "en"))
     return вон
 
 
@@ -354,44 +354,44 @@ def показ_лемма(шаг):
         п1, а1 = сказуемое(d, r1)
         рус, англ = закон(знак, d, r1, r2)
         a, b = d * k1 + r1, d * k2 + r2
-        вон.append(f"лемма: всякое число, которое {п1}, есть {d} * k"
+        вон.append((f"лемма: всякое число, которое {п1}, есть {d} * k"
                    f"{f' + {r1}' if r1 else ''} при целом k: "
-                   f"{представление(a, d)}.")
-        вон.append(f"lemma: every number that {а1} is {d} * k"
+                   f"{представление(a, d)}.", "ru"))
+        вон.append((f"lemma: every number that {а1} is {d} * k"
                    f"{f' + {r1}' if r1 else ''} for a whole k: "
-                   f"{представление(a, d)}.")
-        вон.append(f"лемма «всякое число, которое {п1}, есть {d} * k"
+                   f"{представление(a, d)}.", "en"))
+        вон.append((f"лемма «всякое число, которое {п1}, есть {d} * k"
                    f"{f' + {r1}' if r1 else ''}» есть случай аксиомы "
                    f"деления с остатком при d = {d}: "
-                   f"{представление(a, d)}.")
-        вон.append(f"the lemma «every number that {а1} is {d} * k"
+                   f"{представление(a, d)}.", "ru"))
+        вон.append((f"the lemma «every number that {а1} is {d} * k"
                    f"{f' + {r1}' if r1 else ''}» is an instance of the "
                    f"axiom of division with remainder at d = {d}: "
-                   f"{представление(a, d)}.")
-        вон.append(f"доказательство теоремы «{рус}» опирается на лемму "
+                   f"{представление(a, d)}.", "en"))
+        вон.append((f"доказательство теоремы «{рус}» опирается на лемму "
                    f"о представлении: {представление(a, d)} и "
                    f"{представление(b, d)}, и потому "
-                   f"{ход(знак, d, r1, r2, k1, k2)}.")
-        вон.append(f"the proof of the theorem «{англ}» uses the lemma "
+                   f"{ход(знак, d, r1, r2, k1, k2)}.", "ru"))
+        вон.append((f"the proof of the theorem «{англ}» uses the lemma "
                    f"on representation: {представление(a, d)} and "
                    f"{представление(b, d)}, and so "
-                   f"{ход(знак, d, r1, r2, k1, k2)}.")
-        вон.append(f"что такое лемма? лемма есть утверждение, взятое "
+                   f"{ход(знак, d, r1, r2, k1, k2)}.", "en"))
+        вон.append((f"что такое лемма? лемма есть утверждение, взятое "
                    f"ради доказательства другого: "
-                   f"{представление(a, d)} служит теореме «{рус}».")
-        вон.append(f"what is a lemma? a lemma is a statement taken for "
+                   f"{представление(a, d)} служит теореме «{рус}».", "ru"))
+        вон.append((f"what is a lemma? a lemma is a statement taken for "
                    f"the sake of proving another: "
                    f"{представление(a, d)} serves the theorem "
-                   f"«{англ}».")
-        вон.append(f"леммой о представлении доказывается первый шаг "
-                   f"теоремы «{рус}»: {представление(a, d)}.")
-        вон.append(f"без леммы о представлении хода к теореме «{рус}» "
-                   f"нет: {представление(a, d)}.")
-        вон.append(f"the lemma on representation proves the first step "
-                   f"of the theorem «{англ}»: {представление(a, d)}.")
-        вон.append(f"without the lemma on representation there is no "
+                   f"«{англ}».", "en"))
+        вон.append((f"леммой о представлении доказывается первый шаг "
+                   f"теоремы «{рус}»: {представление(a, d)}.", "ru"))
+        вон.append((f"без леммы о представлении хода к теореме «{рус}» "
+                   f"нет: {представление(a, d)}.", "ru"))
+        вон.append((f"the lemma on representation proves the first step "
+                   f"of the theorem «{англ}»: {представление(a, d)}.", "en"))
+        вон.append((f"without the lemma on representation there is no "
                    f"move to the theorem «{англ}»: "
-                   f"{представление(a, d)}.")
+                   f"{представление(a, d)}.", "en"))
     return вон
 
 
@@ -425,38 +425,38 @@ def показ_теорема(шаг):
         закл_ру = f"заключение: {a} {знак} {b} = {итог}, и {итог} {пи}"
         закл_ан = (f"conclusion: {a} {знак} {b} = {итог}, and {итог} "
                    f"{аи}")
-        вон.append(f"теорема: {рус}. {усл_ру}. {закл_ру}.")
-        вон.append(f"theorem: {англ}. {усл_ан}. {закл_ан}.")
-        вон.append(f"теорема: {рус}. что есть условие? {усл_ру}.")
-        вон.append(f"theorem: {англ}. what is the condition? {усл_ан}.")
-        вон.append(f"теорема: {рус}. что есть заключение? {закл_ру}.")
-        вон.append(f"theorem: {англ}. what is the conclusion? "
-                   f"{закл_ан}.")
-        вон.append(f"что такое теорема? теорема есть утверждение с "
+        вон.append((f"теорема: {рус}. {усл_ру}. {закл_ру}.", "ru"))
+        вон.append((f"theorem: {англ}. {усл_ан}. {закл_ан}.", "en"))
+        вон.append((f"теорема: {рус}. что есть условие? {усл_ру}.", "ru"))
+        вон.append((f"theorem: {англ}. what is the condition? {усл_ан}.", "en"))
+        вон.append((f"теорема: {рус}. что есть заключение? {закл_ру}.", "ru"))
+        вон.append((f"theorem: {англ}. what is the conclusion? "
+                   f"{закл_ан}.", "en"))
+        вон.append((f"что такое теорема? теорема есть утверждение с "
                    f"доказательством, и у неё есть условие и "
                    f"заключение: {рус}, и при a = {a} и b = {b} выходит "
-                   f"{a} {знак} {b} = {итог}.")
-        вон.append(f"what is a theorem? a theorem is a statement with a "
+                   f"{a} {знак} {b} = {итог}.", "ru"))
+        вон.append((f"what is a theorem? a theorem is a statement with a "
                    f"proof, and it has a condition and a conclusion: "
                    f"{англ}, and at a = {a} and b = {b} it gives "
-                   f"{a} {знак} {b} = {итог}.")
-        вон.append(f"по теореме «{рус}» при a = {a} и b = {b} выходит "
-                   f"{a} {знак} {b} = {итог}.")
-        вон.append(f"by the theorem «{англ}» at a = {a} and b = {b} it "
-                   f"gives {a} {знак} {b} = {итог}.")
-        вон.append(f"теоремой «{рус}» доказано, что {итог} {пи}: "
-                   f"{a} {знак} {b} = {итог}.")
-        вон.append(f"обоих условий требует теорема «{рус}», и без обоих "
+                   f"{a} {знак} {b} = {итог}.", "en"))
+        вон.append((f"по теореме «{рус}» при a = {a} и b = {b} выходит "
+                   f"{a} {знак} {b} = {итог}.", "ru"))
+        вон.append((f"by the theorem «{англ}» at a = {a} and b = {b} it "
+                   f"gives {a} {знак} {b} = {итог}.", "en"))
+        вон.append((f"теоремой «{рус}» доказано, что {итог} {пи}: "
+                   f"{a} {знак} {b} = {итог}.", "ru"))
+        вон.append((f"обоих условий требует теорема «{рус}», и без обоих "
                    f"заключения нет: {a} {п1} и {b} {п2}, и "
-                   f"{a} {знак} {b} = {итог}.")
-        вон.append(f"the theorem «{англ}» proves that {итог} {аи}: "
-                   f"{a} {знак} {b} = {итог}.")
-        вон.append(f"the theorem «{англ}» requires both conditions, and "
+                   f"{a} {знак} {b} = {итог}.", "ru"))
+        вон.append((f"the theorem «{англ}» proves that {итог} {аи}: "
+                   f"{a} {знак} {b} = {итог}.", "en"))
+        вон.append((f"the theorem «{англ}» requires both conditions, and "
                    f"without both there is no conclusion: {a} {а1} and "
-                   f"{b} {а2}, and {a} {знак} {b} = {итог}.")
-        вон.append(f"the premises of the theorem «{англ}» are that {a} "
+                   f"{b} {а2}, and {a} {знак} {b} = {итог}.", "en"))
+        вон.append((f"the premises of the theorem «{англ}» are that {a} "
                    f"{а1} and {b} {а2}, and the conclusion is derivable "
-                   f"from those premises: {a} {знак} {b} = {итог}.")
+                   f"from those premises: {a} {знак} {b} = {итог}.", "en"))
     return вон
 
 
@@ -484,14 +484,14 @@ def показ_условие_нарушено(шаг):
             continue
         итог = счесть(знак, a, плохой)
         пп, ап = сказуемое(d, плохой % d)
-        вон.append(f"условие теоремы «{рус}» не выполнено: {a} {п1}, а "
+        вон.append((f"условие теоремы «{рус}» не выполнено: {a} {п1}, а "
                    f"{плохой} {пп}. заключение не держится: "
                    f"{a} {знак} {плохой} = {итог}, и неверно, что "
-                   f"{итог} {пи}.")
-        вон.append(f"the condition of the theorem «{англ}» fails: {a} "
+                   f"{итог} {пи}.", "ru"))
+        вон.append((f"the condition of the theorem «{англ}» fails: {a} "
                    f"{а1}, but {плохой} {ап}. the conclusion does not "
                    f"hold: {a} {знак} {плохой} = {итог}, and it is "
-                   f"false that {итог} {аи}.")
+                   f"false that {итог} {аи}.", "en"))
     return вон
 
 
@@ -514,49 +514,49 @@ def показ_доказательство(шаг):
         a, b = d * k1 + r1, d * k2 + r2
         итог = счесть(знак, a, b)
         цепь = ход(знак, d, r1, r2, k1, k2)
-        вон.append(f"доказательство теоремы «{рус}»: "
+        вон.append((f"доказательство теоремы «{рус}»: "
                    f"{представление(a, d)} и {представление(b, d)}, "
-                   f"значит {цепь}, и {итог} {пи}.")
-        вон.append(f"proof of the theorem «{англ}»: "
+                   f"значит {цепь}, и {итог} {пи}.", "ru"))
+        вон.append((f"proof of the theorem «{англ}»: "
                    f"{представление(a, d)} and {представление(b, d)}, "
-                   f"so {цепь}, and {итог} {аи}.")
-        вон.append(f"теорема: {рус}. как она доказана? доказательство: "
+                   f"so {цепь}, and {итог} {аи}.", "en"))
+        вон.append((f"теорема: {рус}. как она доказана? доказательство: "
                    f"{представление(a, d)} и {представление(b, d)}, "
-                   f"значит {цепь}.")
-        вон.append(f"theorem: {англ}. how is it proved? proof: "
+                   f"значит {цепь}.", "ru"))
+        вон.append((f"theorem: {англ}. how is it proved? proof: "
                    f"{представление(a, d)} and {представление(b, d)}, "
-                   f"so {цепь}.")
-        вон.append(f"вывод по шагам: {представление(a, d)}, затем "
-                   f"{представление(b, d)}, затем {цепь}.")
-        вон.append(f"derivation step by step: {представление(a, d)}, "
-                   f"then {представление(b, d)}, then {цепь}.")
-        вон.append(f"что такое доказательство? доказательство есть ход "
+                   f"so {цепь}.", "en"))
+        вон.append((f"вывод по шагам: {представление(a, d)}, затем "
+                   f"{представление(b, d)}, затем {цепь}.", "ru"))
+        вон.append((f"derivation step by step: {представление(a, d)}, "
+                   f"then {представление(b, d)}, then {цепь}.", "en"))
+        вон.append((f"что такое доказательство? доказательство есть ход "
                    f"от условия к заключению, и всякий его шаг "
-                   f"пересчитывается: {цепь}.")
-        вон.append(f"what is a proof? a proof is a move from the "
+                   f"пересчитывается: {цепь}.", "ru"))
+        вон.append((f"what is a proof? a proof is a move from the "
                    f"condition to the conclusion, and every step of it "
-                   f"is recomputed: {цепь}.")
-        вон.append(f"что доказать? доказать, что {итог} {пи}, и это "
-                   f"доказуемо ходом: {цепь}.")
-        вон.append(f"первый шаг вывода есть {представление(a, d)}, а "
-                   f"второй шаг вывода есть {цепь}.")
-        вон.append(f"what is to be proved? it is to be proved that "
+                   f"is recomputed: {цепь}.", "en"))
+        вон.append((f"что доказать? доказать, что {итог} {пи}, и это "
+                   f"доказуемо ходом: {цепь}.", "ru"))
+        вон.append((f"первый шаг вывода есть {представление(a, d)}, а "
+                   f"второй шаг вывода есть {цепь}.", "ru"))
+        вон.append((f"what is to be proved? it is to be proved that "
                    f"{итог} {аи}, and it is provable by the move: "
-                   f"{цепь}.")
-        вон.append(f"the first step of the derivation is "
+                   f"{цепь}.", "en"))
+        вон.append((f"the first step of the derivation is "
                    f"{представление(a, d)}, and the second step of the "
-                   f"derivation is {цепь}.")
-        вон.append(f"the conclusion is derived from the condition, and "
+                   f"derivation is {цепь}.", "en"))
+        вон.append((f"the conclusion is derived from the condition, and "
                    f"the proof derives {итог} from {a} and {b}: "
-                   f"{цепь}.")
-        вон.append(f"deriving the conclusion takes two steps, and the "
+                   f"{цепь}.", "en"))
+        вон.append((f"deriving the conclusion takes two steps, and the "
                    f"theorem is proven by them: {представление(a, d)}, "
-                   f"then {цепь}.")
-        вон.append(f"два доказательства одной теоремы: прямым счётом "
-                   f"{a} {знак} {b} = {итог}, и через лемму {цепь}.")
-        вон.append(f"two proofs of one theorem: by direct count "
+                   f"then {цепь}.", "en"))
+        вон.append((f"два доказательства одной теоремы: прямым счётом "
+                   f"{a} {знак} {b} = {итог}, и через лемму {цепь}.", "ru"))
+        вон.append((f"two proofs of one theorem: by direct count "
                    f"{a} {знак} {b} = {итог}, and through the lemma "
-                   f"{цепь}.")
+                   f"{цепь}.", "en"))
     return вон
 
 
@@ -593,35 +593,35 @@ def показ_следствие(шаг):
             итог1 = счесть(знак, a, b)
             итог2 = счесть(знак, итог1, c)
             п3, а3 = сказуемое(d, итог2 % d)
-            вон.append(f"следствие теоремы «{рус}»: если a {п1}, b {п2} "
+            вон.append((f"следствие теоремы «{рус}»: если a {п1}, b {п2} "
                        f"и c {п2}, то a {знак} b {знак} c {п3}, ибо "
                        f"{a} {знак} {b} = {итог1}, и "
-                       f"{итог1} {знак} {c} = {итог2}, и {итог2} {п3}.")
-            вон.append(f"corollary of the theorem «{англ}»: if a {а1}, "
+                       f"{итог1} {знак} {c} = {итог2}, и {итог2} {п3}.", "ru"))
+            вон.append((f"corollary of the theorem «{англ}»: if a {а1}, "
                        f"b {а2} and c {а2}, then a {знак} b {знак} c "
                        f"{а3}, since {a} {знак} {b} = {итог1}, and "
                        f"{итог1} {знак} {c} = {итог2}, and {итог2} "
-                       f"{а3}.")
+                       f"{а3}.", "en"))
         # ЧАСТНЫЙ СЛУЧАЙ: второе число есть первое.
         if r1 == r2:
             свой = счесть(знак, a, a)
             пс, ас = сказуемое(d, свой % d)
-            вон.append(f"следствие теоремы «{рус}»: если a {п1}, то "
+            вон.append((f"следствие теоремы «{рус}»: если a {п1}, то "
                        f"a {знак} a {пс}, ибо {a} {знак} {a} = {свой}, "
-                       f"и {свой} {пс}.")
-            вон.append(f"corollary of the theorem «{англ}»: if a {а1}, "
+                       f"и {свой} {пс}.", "ru"))
+            вон.append((f"corollary of the theorem «{англ}»: if a {а1}, "
                        f"then a {знак} a {ас}, since {a} {знак} {a} = "
-                       f"{свой}, and {свой} {ас}.")
-        вон.append(f"что такое следствие? следствие есть то, что "
+                       f"{свой}, and {свой} {ас}.", "en"))
+        вон.append((f"что такое следствие? следствие есть то, что "
                    f"вытекает из уже доказанного: из теоремы «{рус}» "
                    f"при a = {a} и b = {b} выходит "
                    f"{a} {знак} {b} = {счесть(знак, a, b)}, и "
-                   f"{счесть(знак, a, b)} {пи}.")
-        вон.append(f"what is a corollary? a corollary is what follows "
+                   f"{счесть(знак, a, b)} {пи}.", "ru"))
+        вон.append((f"what is a corollary? a corollary is what follows "
                    f"from what is already proved: from the theorem "
                    f"«{англ}» at a = {a} and b = {b} it gives "
                    f"{a} {знак} {b} = {счесть(знак, a, b)}, and "
-                   f"{счесть(знак, a, b)} {аи}.")
+                   f"{счесть(знак, a, b)} {аи}.", "en"))
     return вон
 
 
@@ -679,13 +679,13 @@ def показ_контрпример(шаг):
         a, b = пара
         итог = счесть(знак, a, b)
         пл, ал = сказуемое(dл, rл)
-        вон.append(f"контрпример: утверждение «{рус}» ложно, ибо при "
+        вон.append((f"контрпример: утверждение «{рус}» ложно, ибо при "
                    f"a = {a} и b = {b} выходит {a} {знак} {b} = {итог}, "
-                   f"а {представление(итог, dл)}.")
-        вон.append(f"counterexample: the statement «{англ}» is false, "
+                   f"а {представление(итог, dл)}.", "ru"))
+        вон.append((f"counterexample: the statement «{англ}» is false, "
                    f"since at a = {a} and b = {b} it gives "
                    f"{a} {знак} {b} = {итог}, while "
-                   f"{представление(итог, dл)}.")
+                   f"{представление(итог, dл)}.", "en"))
         # ПОДТВЕРЖДАЮЩАЯ ПАРА ИЩЕТСЯ ТАМ ЖЕ, ГДЕ И УБИВАЮЩАЯ: без неё
         # показ не строится, ибо закон «случай не спасает» нечем
         # показать, когда подтверждающего случая нет вовсе.
@@ -696,47 +696,47 @@ def показ_контрпример(шаг):
         if добрый is not None:
             c, e = добрый
             итог2 = счесть(знак, c, e)
-            вон.append(f"один контрпример убивает всеобщее утверждение, "
+            вон.append((f"один контрпример убивает всеобщее утверждение, "
                        f"а подтверждающий случай его не спасает: «{рус}» "
                        f"верно при a = {c} и b = {e}, ибо "
                        f"{c} {знак} {e} = {итог2} и "
                        f"{представление(итог2, dл)}, но ложно при "
                        f"a = {a} и b = {b}, ибо {a} {знак} {b} = {итог} "
-                       f"и {представление(итог, dл)}.")
-            вон.append(f"one counterexample kills a universal statement, "
+                       f"и {представление(итог, dл)}.", "ru"))
+            вон.append((f"one counterexample kills a universal statement, "
                        f"and a confirming case does not save it: "
                        f"«{англ}» holds at a = {c} and b = {e}, since "
                        f"{c} {знак} {e} = {итог2} and "
                        f"{представление(итог2, dл)}, but fails at "
                        f"a = {a} and b = {b}, since {a} {знак} {b} = "
-                       f"{итог} and {представление(итог, dл)}.")
-        вон.append(f"что такое контрпример? контрпример есть один "
+                       f"{итог} and {представление(итог, dл)}.", "en"))
+        вон.append((f"что такое контрпример? контрпример есть один "
                    f"свидетель, опровергающий всеобщее утверждение: "
                    f"«{рус}» опровергнуто парой a = {a} и b = {b}, ибо "
                    f"{a} {знак} {b} = {итог}, а "
-                   f"{представление(итог, dл)}.")
-        вон.append(f"what is a counterexample? a counterexample is one "
+                   f"{представление(итог, dл)}.", "ru"))
+        вон.append((f"what is a counterexample? a counterexample is one "
                    f"witness refuting a universal statement: «{англ}» "
                    f"is refuted by a = {a} and b = {b}, since "
                    f"{a} {знак} {b} = {итог}, while "
-                   f"{представление(итог, dл)}.")
-        вон.append(f"сила контрпримера в одном свидетеле: контрпримеры "
+                   f"{представление(итог, dл)}.", "en"))
+        вон.append((f"сила контрпримера в одном свидетеле: контрпримеры "
                    f"опровергают утверждение «{рус}» поодиночке, и "
                    f"первый же довольно: {a} {знак} {b} = {итог}, а "
-                   f"{представление(итог, dл)}.")
-        вон.append(f"the strength of a counterexample is in one "
+                   f"{представление(итог, dл)}.", "ru"))
+        вон.append((f"the strength of a counterexample is in one "
                    f"witness, and counterexamples refute the statement "
                    f"«{англ}» one at a time: {a} {знак} {b} = {итог}, "
-                   f"while {представление(итог, dл)}.")
-        вон.append(f"the refutation is one witness, and it refutes the "
+                   f"while {представление(итог, dл)}.", "en"))
+        вон.append((f"the refutation is one witness, and it refutes the "
                    f"statement «{англ}» alone: {a} {знак} {b} = {итог}, "
-                   f"while {представление(итог, dл)}.")
-        вон.append(f"контрпример опровергает утверждение «{рус}» одним "
+                   f"while {представление(итог, dл)}.", "en"))
+        вон.append((f"контрпример опровергает утверждение «{рус}» одним "
                    f"свидетелем: {a} {знак} {b} = {итог}, а "
-                   f"{представление(итог, dл)}.")
-        вон.append(f"the statement «{англ}» is refutable by one "
+                   f"{представление(итог, dл)}.", "ru"))
+        вон.append((f"the statement «{англ}» is refutable by one "
                    f"witness, and here it is refuted: {a} {знак} {b} = "
-                   f"{итог}, while {представление(итог, dл)}.")
+                   f"{итог}, while {представление(итог, dл)}.", "en"))
     return вон
 
 
@@ -815,29 +815,29 @@ def показ_гипотеза_убита(шаг):
             continue
         значение = счёт(убийца)
         мал = делитель(значение)
-        вон.append(f"гипотеза: {формула} просто {обл_ру}. она верна при "
+        вон.append((f"гипотеза: {формула} просто {обл_ру}. она верна при "
                    f"n от {начало} до {убийца - 1}, но убита "
                    f"контрпримером: при n = {убийца} выходит {значение} "
-                   f"= {мал} * {значение // мал}.")
-        вон.append(f"hypothesis: {формула} is prime {обл_ан}. it holds "
+                   f"= {мал} * {значение // мал}.", "ru"))
+        вон.append((f"hypothesis: {формула} is prime {обл_ан}. it holds "
                    f"for n from {начало} to {убийца - 1}, but a "
                    f"counterexample kills it: at n = {убийца} it gives "
-                   f"{значение} = {мал} * {значение // мал}.")
-        вон.append(f"участь гипотезы: гипотеза «{формула} просто "
+                   f"{значение} = {мал} * {значение // мал}.", "en"))
+        вон.append((f"участь гипотезы: гипотеза «{формула} просто "
                    f"{обл_ру}» опровергнута, ибо при n = {убийца} "
-                   f"выходит {значение} = {мал} * {значение // мал}.")
-        вон.append(f"the fate of a hypothesis: the hypothesis "
+                   f"выходит {значение} = {мал} * {значение // мал}.", "ru"))
+        вон.append((f"the fate of a hypothesis: the hypothesis "
                    f"«{формула} is prime {обл_ан}» is refuted, since at "
                    f"n = {убийца} it gives {значение} = {мал} * "
-                   f"{значение // мал}.")
-        вон.append(f"проверка случаев не есть доказательство: {формула} "
+                   f"{значение // мал}.", "en"))
+        вон.append((f"проверка случаев не есть доказательство: {формула} "
                    f"просто при n от {начало} до {убийца - 1}, а при "
                    f"n = {убийца} выходит {значение} = {мал} * "
-                   f"{значение // мал}.")
-        вон.append(f"checking cases is not a proof: {формула} is prime "
+                   f"{значение // мал}.", "ru"))
+        вон.append((f"checking cases is not a proof: {формула} is prime "
                    f"for n from {начало} to {убийца - 1}, and at "
                    f"n = {убийца} it gives {значение} = {мал} * "
-                   f"{значение // мал}.")
+                   f"{значение // мал}.", "en"))
     return вон
 
 
@@ -863,35 +863,35 @@ def показ_гипотеза_жива(шаг):
         if пара is None:
             continue
         p, q = пара
-        вон.append(f"гипотеза: всякое чётное число больше 2 есть сумма "
+        вон.append((f"гипотеза: всякое чётное число больше 2 есть сумма "
                    f"двух простых. доказательства у неё нет, а случай "
                    f"её подтверждает: {n} = {p} + {q}, и {p} просто, и "
-                   f"{q} просто.")
-        вон.append(f"hypothesis: every even number greater than 2 is a "
+                   f"{q} просто.", "ru"))
+        вон.append((f"hypothesis: every even number greater than 2 is a "
                    f"sum of two primes. it has no proof, and a case "
                    f"confirms it: {n} = {p} + {q}, and {p} is prime, "
-                   f"and {q} is prime.")
-        вон.append(f"участь гипотезы: гипотеза «всякое чётное число "
+                   f"and {q} is prime.", "en"))
+        вон.append((f"участь гипотезы: гипотеза «всякое чётное число "
                    f"больше 2 есть сумма двух простых» не доказана и не "
                    f"опровергнута, а случай её подтверждает: "
-                   f"{n} = {p} + {q}.")
-        вон.append(f"the fate of a hypothesis: the hypothesis «every "
+                   f"{n} = {p} + {q}.", "ru"))
+        вон.append((f"the fate of a hypothesis: the hypothesis «every "
                    f"even number greater than 2 is a sum of two primes» "
                    f"is neither proved nor refuted, and a case confirms "
-                   f"it: {n} = {p} + {q}.")
-        вон.append(f"что такое гипотеза? гипотеза есть утверждение без "
+                   f"it: {n} = {p} + {q}.", "en"))
+        вон.append((f"что такое гипотеза? гипотеза есть утверждение без "
                    f"доказательства, и случай её не доказывает: "
-                   f"{n} = {p} + {q}, и {p} просто, и {q} просто.")
-        вон.append(f"what is a hypothesis? a hypothesis is a statement "
+                   f"{n} = {p} + {q}, и {p} просто, и {q} просто.", "ru"))
+        вон.append((f"what is a hypothesis? a hypothesis is a statement "
                    f"without a proof, and a case does not prove it: "
                    f"{n} = {p} + {q}, and {p} is prime, and {q} is "
-                   f"prime.")
-        вон.append(f"гипотезой зовётся утверждение без доказательства, "
+                   f"prime.", "en"))
+        вон.append((f"гипотезой зовётся утверждение без доказательства, "
                    f"и случай его не доказывает: {n} = {p} + {q}, и "
-                   f"{p} просто, и {q} просто.")
-        вон.append(f"by a hypothesis we call a statement without a "
+                   f"{p} просто, и {q} просто.", "ru"))
+        вон.append((f"by a hypothesis we call a statement without a "
                    f"proof, and a case does not prove it: {n} = {p} + "
-                   f"{q}, and {p} is prime, and {q} is prime.")
+                   f"{q}, and {p} is prime, and {q} is prime.", "en"))
     return вон
 
 
@@ -911,11 +911,11 @@ def показ_утверждение(шаг):
         рус, англ = закон(знак, d, r1, r2)
         a, b = d * k1 + r1, d * k2 + r2
         цепь = ход(знак, d, r1, r2, k1, k2)
-        вон.append(f"утверждение «{рус}» есть теорема, ибо ход от "
-                   f"условия к заключению есть: {цепь}.")
-        вон.append(f"the statement «{англ}» is a theorem, since the "
+        вон.append((f"утверждение «{рус}» есть теорема, ибо ход от "
+                   f"условия к заключению есть: {цепь}.", "ru"))
+        вон.append((f"the statement «{англ}» is a theorem, since the "
                    f"move from the condition to the conclusion exists: "
-                   f"{цепь}.")
+                   f"{цепь}.", "en"))
     # УСЛОВНОЕ УТВЕРЖДЕНИЕ ЕСТЬ ИМЯ ФОРМЫ «ЕСЛИ — ТО», и оно даёт
     # частям мира их собственные имена: условная часть и заключительная.
     # Организм, знающий «условие» лишь как слово в списке, не узнает
@@ -924,23 +924,23 @@ def показ_утверждение(шаг):
         рус, англ = закон(знак, d, r1, r2)
         a, b = d * k1 + r1, d * k2 + r2
         итог = счесть(знак, a, b)
-        вон.append(f"условные утверждения имеют условие и заключение, и "
+        вон.append((f"условные утверждения имеют условие и заключение, и "
                    f"условная часть «{рус}» стоит до слова «то»: при "
-                   f"a = {a} и b = {b} выходит {a} {знак} {b} = {итог}.")
-        вон.append(f"a conditional statement has a condition and a "
+                   f"a = {a} и b = {b} выходит {a} {знак} {b} = {итог}.", "ru"))
+        вон.append((f"a conditional statement has a condition and a "
                    f"conclusion, and the assertion «{англ}» is one of "
                    f"them: at a = {a} and b = {b} it gives {a} {знак} "
-                   f"{b} = {итог}.")
-        вон.append(f"из двух утверждений одно доказано, а другое нет, и "
+                   f"{b} = {итог}.", "en"))
+        вон.append((f"из двух утверждений одно доказано, а другое нет, и "
                    f"первое есть «{рус}»: при a = {a} и b = {b} выходит "
-                   f"{a} {знак} {b} = {итог}.")
-        вон.append(f"of the two assertions one is proved and the other "
+                   f"{a} {знак} {b} = {итог}.", "ru"))
+        вон.append((f"of the two assertions one is proved and the other "
                    f"is not, and the proved one is «{англ}»: at a = {a} "
-                   f"and b = {b} it gives {a} {знак} {b} = {итог}.")
-        вон.append(f"двумя теоремами показано, что {a} + {b} = {a + b} "
-                   f"и {a} * {b} = {a * b}.")
-        вон.append(f"two theorems show that {a} + {b} = {a + b} and "
-                   f"{a} * {b} = {a * b}.")
+                   f"and b = {b} it gives {a} {знак} {b} = {итог}.", "en"))
+        вон.append((f"двумя теоремами показано, что {a} + {b} = {a + b} "
+                   f"и {a} * {b} = {a * b}.", "ru"))
+        вон.append((f"two theorems show that {a} + {b} = {a + b} and "
+                   f"{a} * {b} = {a * b}.", "en"))
     for i in range(2):
         формула, счёт, начало = ПРИТВОРЩИЦЫ[
             (шаг + i) % len(ПРИТВОРЩИЦЫ)]
@@ -951,14 +951,14 @@ def показ_утверждение(шаг):
             continue
         значение = счёт(убийца)
         мал = делитель(значение)
-        вон.append(f"утверждение «{формула} просто {обл_ру}» есть "
+        вон.append((f"утверждение «{формула} просто {обл_ру}» есть "
                    f"гипотеза, а не теорема: доказательства нет, и при "
                    f"n = {убийца} выходит {значение} = {мал} * "
-                   f"{значение // мал}.")
-        вон.append(f"the statement «{формула} is prime {обл_ан}» is a "
+                   f"{значение // мал}.", "ru"))
+        вон.append((f"the statement «{формула} is prime {обл_ан}» is a "
                    f"hypothesis and not a theorem: there is no proof, "
                    f"and at n = {убийца} it gives {значение} = {мал} * "
-                   f"{значение // мал}.")
+                   f"{значение // мал}.", "en"))
     return вон
 
 
@@ -998,24 +998,24 @@ def показ_связь(шаг):
         пр_ру, пр_ан = закон("*", d, r1, r2)
         пс, ас = сказуемое(d, итог_рода("+", d, r1, r2))
         пп, ап = сказуемое(d, итог_рода("*", d, r1, r2))
-        вон.append(f"две теоремы об одной паре: {сум_ру}, и {пр_ру}. при "
+        вон.append((f"две теоремы об одной паре: {сум_ру}, и {пр_ру}. при "
                    f"a = {a} и b = {b} выходят два заключения: "
                    f"{a} + {b} = {a + b}, и {a + b} {пс}; {a} * {b} = "
-                   f"{a * b}, и {a * b} {пп}.")
-        вон.append(f"two theorems about one pair: {сум_ан}, and {пр_ан}. "
+                   f"{a * b}, и {a * b} {пп}.", "ru"))
+        вон.append((f"two theorems about one pair: {сум_ан}, and {пр_ан}. "
                    f"at a = {a} and b = {b} there are two conclusions: "
                    f"{a} + {b} = {a + b}, and {a + b} {ас}; {a} * {b} = "
-                   f"{a * b}, and {a * b} {ап}.")
+                   f"{a * b}, and {a * b} {ап}.", "en"))
         п1, а1 = сказуемое(d, r1)
         п2, а2 = сказуемое(d, r2)
-        вон.append(f"два условия одной теоремы проверяются порознь: в "
+        вон.append((f"два условия одной теоремы проверяются порознь: в "
                    f"«{сум_ру}» первое условие есть {a} {п1}, второе "
                    f"есть {b} {п2}, и оба выполнены: "
-                   f"{представление(a, d)} и {представление(b, d)}.")
-        вон.append(f"the two conditions of one theorem are checked "
+                   f"{представление(a, d)} и {представление(b, d)}.", "ru"))
+        вон.append((f"the two conditions of one theorem are checked "
                    f"apart: in «{сум_ан}» the first condition is {a} "
                    f"{а1}, the second is {b} {а2}, and both hold: "
-                   f"{представление(a, d)} and {представление(b, d)}.")
+                   f"{представление(a, d)} and {представление(b, d)}.", "en"))
     # ДВА ОПРЕДЕЛЕНИЯ, ДЕЛЯЩИЕ ЧИСЛА НАДВОЕ: что принято одним,
     # отвергнуто другим, и обе стороны показаны на одном числе.
     for i in range(2):
@@ -1026,18 +1026,18 @@ def показ_связь(шаг):
         п2, а2 = сказуемое(d, друг)
         k = 3 + (шаг * 2 + i) % 6
         n = d * k + r
-        вон.append(f"два определения делят числа надвое: число {п1}, "
+        вон.append((f"два определения делят числа надвое: число {п1}, "
                    f"если {через_что(d, r)[0]}; число {п2}, если "
                    f"{через_что(d, друг)[0]}. {n} подпадает под первое "
-                   f"и не подпадает под второе: {представление(n, d)}.")
-        вон.append(f"two definitions split the numbers in two: a number "
+                   f"и не подпадает под второе: {представление(n, d)}.", "ru"))
+        вон.append((f"two definitions split the numbers in two: a number "
                    f"{а1} if {через_что(d, r)[1]}; a number {а2} if "
                    f"{через_что(d, друг)[1]}. {n} falls under the first "
-                   f"and not under the second: {представление(n, d)}.")
-        вон.append(f"из двух определений следует, что {n} не подпадает "
-                   f"под второе: {представление(n, d)}.")
-        вон.append(f"from the two definitions it follows that {n} does "
-                   f"not fall under the second: {представление(n, d)}.")
+                   f"and not under the second: {представление(n, d)}.", "en"))
+        вон.append((f"из двух определений следует, что {n} не подпадает "
+                   f"под второе: {представление(n, d)}.", "ru"))
+        вон.append((f"from the two definitions it follows that {n} does "
+                   f"not fall under the second: {представление(n, d)}.", "en"))
     # ДВЕ ЛЕММЫ В ОДНОМ ДОКАЗАТЕЛЬСТВЕ — там, где роды слагаемых
     # РАЗНЫЕ, и лемма о представлении вправду употребляется дважды
     # разная. При одинаковых родах лемма одна, и показа не строится:
@@ -1050,18 +1050,18 @@ def показ_связь(шаг):
         п1, а1 = сказуемое(d, r1)
         п2, а2 = сказуемое(d, r2)
         цепь = ход(знак, d, r1, r2, k1, k2)
-        вон.append(f"доказательство теоремы «{рус}» опирается на две "
+        вон.append((f"доказательство теоремы «{рус}» опирается на две "
                    f"леммы: всякое число, которое {п1}, есть {d} * k"
                    f"{f' + {r1}' if r1 else ''}, и всякое число, "
                    f"которое {п2}, есть {d} * k{f' + {r2}' if r2 else ''}. "
                    f"по ним {представление(a, d)} и {представление(b, d)}, "
-                   f"и {цепь}.")
-        вон.append(f"the proof of the theorem «{англ}» uses two lemmas: "
+                   f"и {цепь}.", "ru"))
+        вон.append((f"the proof of the theorem «{англ}» uses two lemmas: "
                    f"every number that {а1} is {d} * k"
                    f"{f' + {r1}' if r1 else ''}, and every number that "
                    f"{а2} is {d} * k{f' + {r2}' if r2 else ''}. by them "
                    f"{представление(a, d)} and {представление(b, d)}, "
-                   f"and {цепь}.")
+                   f"and {цепь}.", "en"))
         break
     # ДВЕ ГИПОТЕЗЫ РАЗНОЙ УЧАСТИ: убитая и живая рядом. Участь видна
     # только в сравнении: гипотеза, показанная одна, читается как
@@ -1077,32 +1077,32 @@ def показ_связь(шаг):
         значение = счёт(убийца)
         мал = делитель(значение)
         p, q = пара
-        вон.append(f"две гипотезы разной участи: «{формула} просто "
+        вон.append((f"две гипотезы разной участи: «{формула} просто "
                    f"{обл_ру}» убита при n = {убийца}, ибо {значение} = "
                    f"{мал} * {значение // мал}; «всякое чётное число "
                    f"больше 2 есть сумма двух простых» не убита, и "
-                   f"случай её подтверждает: {n} = {p} + {q}.")
-        вон.append(f"two hypotheses of different fate: «{формула} is "
+                   f"случай её подтверждает: {n} = {p} + {q}.", "ru"))
+        вон.append((f"two hypotheses of different fate: «{формула} is "
                    f"prime {обл_ан}» is killed at n = {убийца}, since "
                    f"{значение} = {мал} * {значение // мал}; «every "
                    f"even number greater than 2 is a sum of two "
                    f"primes» is not killed, and a case confirms it: "
-                   f"{n} = {p} + {q}.")
+                   f"{n} = {p} + {q}.", "en"))
         # ДВА УТВЕРЖДЕНИЯ РАЗНОГО РОДА: теорема и гипотеза рядом, и
         # разница между ними названа тем единственным, чем она и есть.
         знак, d, r1, r2, k1, k2 = случаи(шаг, 1)[0]
         рус, англ = закон(знак, d, r1, r2)
         цепь = ход(знак, d, r1, r2, k1, k2)
-        вон.append(f"два утверждения разного рода: «{рус}» есть "
+        вон.append((f"два утверждения разного рода: «{рус}» есть "
                    f"теорема, ибо ход есть: {цепь}; «{формула} просто "
                    f"{обл_ру}» есть гипотеза, и она убита при "
                    f"n = {убийца}: {значение} = {мал} * "
-                   f"{значение // мал}.")
-        вон.append(f"two statements of different kind: «{англ}» is a "
+                   f"{значение // мал}.", "ru"))
+        вон.append((f"two statements of different kind: «{англ}» is a "
                    f"theorem, since the move exists: {цепь}; «{формула} "
                    f"is prime {обл_ан}» is a hypothesis, and it is "
                    f"killed at n = {убийца}: {значение} = {мал} * "
-                   f"{значение // мал}.")
+                   f"{значение // мал}.", "en"))
     # ДВА СЛЕДСТВИЯ ОДНОЙ ТЕОРЕМЫ: повторное применение и частный
     # случай — те же два хода, что показаны порознь, но названные
     # ДВОЙКОЙ, ибо проза считает следствия, а не перечисляет их.
@@ -1115,14 +1115,14 @@ def показ_связь(шаг):
         итог1 = счесть(знак, a, b)
         итог2 = счесть(знак, итог1, c)
         свой = счесть(знак, a, a)
-        вон.append(f"у теоремы «{рус}» два следствия: первое берёт три "
+        вон.append((f"у теоремы «{рус}» два следствия: первое берёт три "
                    f"числа, второе берёт одно дважды. {a} {знак} {b} = "
                    f"{итог1}, и {итог1} {знак} {c} = {итог2}; "
-                   f"{a} {знак} {a} = {свой}.")
-        вон.append(f"the theorem «{англ}» has two corollaries: the "
+                   f"{a} {знак} {a} = {свой}.", "ru"))
+        вон.append((f"the theorem «{англ}» has two corollaries: the "
                    f"first takes three numbers, the second takes one "
                    f"twice. {a} {знак} {b} = {итог1}, and {итог1} "
-                   f"{знак} {c} = {итог2}; {a} {знак} {a} = {свой}.")
+                   f"{знак} {c} = {итог2}; {a} {знак} {a} = {свой}.", "en"))
         break
     # ДВА КОНТРПРИМЕРА К ОДНОМУ УТВЕРЖДЕНИЮ: одного довольно, но их
     # двое, и это видно счётом — свидетели РАЗНЫЕ.
@@ -1140,16 +1140,16 @@ def показ_связь(шаг):
             continue
         c, e = второй
         итог1, итог2 = счесть(знак, a, b), счесть(знак, c, e)
-        вон.append(f"два контрпримера опровергают одно утверждение "
+        вон.append((f"два контрпримера опровергают одно утверждение "
                    f"«{рус}», и довольно было бы одного: {a} {знак} "
                    f"{b} = {итог1}, а {представление(итог1, dл)}; "
                    f"{c} {знак} {e} = {итог2}, а "
-                   f"{представление(итог2, dл)}.")
-        вон.append(f"two counterexamples refute one statement «{англ}», "
+                   f"{представление(итог2, dл)}.", "ru"))
+        вон.append((f"two counterexamples refute one statement «{англ}», "
                    f"and one would have been enough: {a} {знак} {b} = "
                    f"{итог1}, while {представление(итог1, dл)}; "
                    f"{c} {знак} {e} = {итог2}, while "
-                   f"{представление(итог2, dл)}.")
+                   f"{представление(итог2, dл)}.", "en"))
         break
     return вон
 
@@ -1181,45 +1181,45 @@ def показ_отрицание(шаг):
     вон = []
     for i in range(2):
         d = ДЕЛИТЕЛИ[(шаг + i) % len(ДЕЛИТЕЛИ)]
-        вон.append(f"что значит «не делится на {d}»? число не делится "
+        вон.append((f"что значит «не делится на {d}»? число не делится "
                    f"на {d}, если при делении на {d} остаток есть "
                    f"{перечень_остатков(d, 'или')}: отрицание сказуемого "
-                   f"называет все остатки, кроме нуля.")
-        вон.append(f"what does «is not divisible by {d}» mean? a number "
+                   f"называет все остатки, кроме нуля.", "ru"))
+        вон.append((f"what does «is not divisible by {d}» mean? a number "
                    f"is not divisible by {d} if its remainder when "
                    f"divided by {d} is {перечень_остатков(d, 'or')}: "
                    f"the negation of a predicate names every remainder "
-                   f"but zero.")
-        вон.append(f"утверждение «если a не делится на {d} и b делится "
+                   f"but zero.", "en"))
+        вон.append((f"утверждение «если a не делится на {d} и b делится "
                    f"на {d} без остатка, то a + b не делится на {d}» "
                    f"верно, ибо остаток a + b при делении на {d} есть "
-                   f"остаток a, а он не нуль.")
-        вон.append(f"the statement «if a is not divisible by {d} and b "
+                   f"остаток a, а он не нуль.", "ru"))
+        вон.append((f"the statement «if a is not divisible by {d} and b "
                    f"is divisible by {d}, then a + b is not divisible "
                    f"by {d}» is true, since the remainder of a + b when "
                    f"divided by {d} is the remainder of a, and it is "
-                   f"not zero.")
+                   f"not zero.", "en"))
         закон_ru = (f"если a не делится на {d} и b не делится на {d}, "
                     f"то a * b не делится на {d}")
         закон_en = (f"if a is not divisible by {d} and b is not "
                     f"divisible by {d}, then a * b is not divisible "
                     f"by {d}")
         if просто(d):
-            вон.append(f"утверждение «{закон_ru}» верно, ибо {d} просто: "
+            вон.append((f"утверждение «{закон_ru}» верно, ибо {d} просто: "
                        f"произведение не делится на простое, пока ни "
-                       f"один из множителей на него не делится.")
-            вон.append(f"the statement «{закон_en}» is true, since {d} "
+                       f"один из множителей на него не делится.", "ru"))
+            вон.append((f"the statement «{закон_en}» is true, since {d} "
                        f"is prime: a product is not divisible by a "
-                       f"prime unless one of its factors is.")
+                       f"prime unless one of its factors is.", "en"))
         else:
             p = next(i for i in range(2, d) if d % i == 0)
             q = d // p
-            вон.append(f"утверждение «{закон_ru}» ложно, ибо при a = {p} "
+            вон.append((f"утверждение «{закон_ru}» ложно, ибо при a = {p} "
                        f"и b = {q} выходит {p} * {q} = {d}, а {d} "
-                       f"делится на {d} без остатка.")
-            вон.append(f"the statement «{закон_en}» is false, since at "
+                       f"делится на {d} без остатка.", "ru"))
+            вон.append((f"the statement «{закон_en}» is false, since at "
                        f"a = {p} and b = {q} it gives {p} * {q} = {d}, "
-                       f"while {d} is divisible by {d}.")
+                       f"while {d} is divisible by {d}.", "en"))
     return вон
 
 
@@ -1257,25 +1257,43 @@ def показ_отрицание(шаг):
 
 
 def группы(шаг):
-    """[[страница]] — одна группа на СТУПЕНЬ, как кормит `emit_grouped`."""
+    """[[(страница, язык)]] — одна группа на СТУПЕНЬ, как кормится кузница."""
     return [показать(шаг) for _имя, показать in СТУПЕНИ]
+
+
+def группы_страниц(шаг):
+    """[[страница]] — то же без меток: этим кормится `emit_grouped`."""
+    return [[с for с, _я in г] for г in группы(шаг)]
+
+
+def перебор_с_языком(шаг):
+    """[(страница, род, ЯЗЫК)] — язык проставлен при каждой рамке (15.09).
+
+    КИРИЛЛИЦА РЕШАЕТ, А ЛАТИНСКАЯ БУКВА В РУССКОЙ РАМКЕ ЕСТЬ ИМЯ ПЕРЕМЕННОЙ. «аксиома: для
+    всякого целого a и всякого d больше нуля найдутся k и r» — строка русская, хотя латиницы в
+    ней четыре буквы; принять их за второй язык значило бы объявить русскую страницу
+    английской ради имён неизвестных.
+
+        ЯЗЫК РАМКИ ЧИТАЕТСЯ ПО СЛОВАМ, А НЕ ПО БУКВАМ: слово принадлежит языку, буква — письму.
+    """
+    вон = []
+    for род, группа in zip(РОДЫ, группы(шаг)):
+        for с, язык in группа:
+            вон.append((с, род, язык))
+    return вон
 
 
 def перебор(шаг):
     """[(страница, род)] — те же ступени, но каждая под своим именем."""
-    вон = []
-    for род, группа in zip(РОДЫ, группы(шаг)):
-        for с in группа:
-            вон.append((с, род))
-    return вон
+    return [(с, р) for с, р, _я in перебор_с_языком(шаг)]
 
 
 def _показы():
     from layer import PASSES                              # noqa: PLC0415
     вон = {}
     for шаг in range(len(PASSES)):
-        for с, род in перебор(шаг):
-            вон.setdefault(с, род)
+        for с, род, язык in перебор_с_языком(шаг):
+            вон.setdefault(с, (язык, род))
     return вон
 
 
@@ -1287,7 +1305,7 @@ def _самопроверка():
     assert all(isinstance(р, str) for р in РОДЫ), "РОДЫ обязаны быть рядом ИМЁН"
     assert len(группы(0)) == len(РОДЫ), "проход даёт не столько групп, сколько ступеней"
     assert set(ЗАЧЕМ_РОДА) == set(РОДЫ), "глосса рода разошлась с объявлением"
-    пустые = set(РОДЫ) - set(ПОКАЗЫ.values())
+    пустые = set(РОДЫ) - {р for _я, р in ПОКАЗЫ.values()}
     assert not пустые, f"род объявлен и не кован: {sorted(пустые)}"
 
 
