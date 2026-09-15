@@ -59,20 +59,20 @@
 {"id": "ho0059", "ask": "what is for f(t) = t^2 the change from 8 to 9?", "expect": {"kind": "value", "n": 17}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
 {"id": "ho0060", "ask": "чему равна производная t^3 в точке 1?", "expect": {"kind": "value", "n": 3}, "tags": ["held_out_form:true", "genus:genesis_sequences", "source:constructed"]}
 {"id": "ho0061", "ask": "чему равна медиана 1 3 7?", "expect": {"kind": "value", "n": 3}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
-{"id": "ho0062", "ask": "чему равно среднее 4 8?", "expect": {"kind": "value", "n": 6}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
-{"id": "ho0063", "ask": "what is the range of 4 4 8?", "expect": {"kind": "value", "n": 4}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
+{"id": "ho0062", "ask": "what is the range of 5 2 9?", "expect": {"kind": "value", "n": 7}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
+{"id": "ho0063", "ask": "чему равно среднее 4 8?", "expect": {"kind": "value", "n": 6}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
 {"id": "ho0064", "ask": "чему равна медиана 7 3 3?", "expect": {"kind": "value", "n": 3}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
-{"id": "ho0065", "ask": "what is the mean of 3 9?", "expect": {"kind": "value", "n": 6}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
+{"id": "ho0065", "ask": "what is the mean of 2 3 7?", "expect": {"kind": "value", "n": 4}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
 {"id": "ho0066", "ask": "чему равен размах 9 9 1?", "expect": {"kind": "value", "n": 8}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
-{"id": "ho0067", "ask": "what is the median of 6 2 4?", "expect": {"kind": "value", "n": 4}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
-{"id": "ho0068", "ask": "what is the mean of 2 4 6?", "expect": {"kind": "value", "n": 4}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
+{"id": "ho0067", "ask": "what is the median of 1 3 7?", "expect": {"kind": "value", "n": 3}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
+{"id": "ho0068", "ask": "what is the mean of 4 8?", "expect": {"kind": "value", "n": 6}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
 {"id": "ho0069", "ask": "чему равен размах 4 4 8?", "expect": {"kind": "value", "n": 4}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
-{"id": "ho0070", "ask": "what is the median of 10 1 6?", "expect": {"kind": "value", "n": 6}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
-{"id": "ho0071", "ask": "чему равно среднее 3 9?", "expect": {"kind": "value", "n": 6}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
-{"id": "ho0072", "ask": "what is the range of 2 8 5?", "expect": {"kind": "value", "n": 6}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
-{"id": "ho0073", "ask": "чему равна медиана 6 2 4?", "expect": {"kind": "value", "n": 4}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
-{"id": "ho0074", "ask": "what is the mean of 2 2 8?", "expect": {"kind": "value", "n": 4}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
-{"id": "ho0075", "ask": "чему равно среднее 2 4 6?", "expect": {"kind": "value", "n": 4}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
+{"id": "ho0070", "ask": "what is the median of 7 3 3?", "expect": {"kind": "value", "n": 3}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
+{"id": "ho0071", "ask": "what is the range of 9 9 1?", "expect": {"kind": "value", "n": 8}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
+{"id": "ho0072", "ask": "чему равно среднее 5 7 9?", "expect": {"kind": "value", "n": 7}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
+{"id": "ho0073", "ask": "what is the range of 4 4 8?", "expect": {"kind": "value", "n": 4}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
+{"id": "ho0074", "ask": "чему равно среднее 4 4 10?", "expect": {"kind": "value", "n": 6}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
+{"id": "ho0075", "ask": "чему равна медиана 2 8 5?", "expect": {"kind": "value", "n": 5}, "tags": ["held_out_form:true", "genus:genesis_statistics", "source:constructed"]}
 {"id": "ho0076", "ask": "чему равна сумма первых 2 нечётных чисел?", "expect": {"kind": "value", "n": 4}, "tags": ["held_out_form:false", "genus:genesis_inquiry", "source:corpus"]}
 {"id": "ho0077", "ask": "what is the sum of the first 6 odd numbers?", "expect": {"kind": "value", "n": 36}, "tags": ["held_out_form:false", "genus:genesis_inquiry", "source:corpus"]}
 {"id": "ho0078", "ask": "чему равна сумма первых 9 нечётных чисел?", "expect": {"kind": "value", "n": 81}, "tags": ["held_out_form:false", "genus:genesis_inquiry", "source:corpus"]}
