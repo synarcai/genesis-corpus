@@ -954,14 +954,22 @@
    "вопрос": {
     "en": [
      "the grasshopper jumped # inches. the mouse jumped # inches. how many more inches did the grasshopper jump than the mouse?",
-     "@ did # push-ups. @ did # push-ups. how many more push-ups did @ do than @?",
      "@ completed # pages. @ completed # pages. how many more pages did @ complete than @?",
-     "@ watched # movies. @ watched # movies. how many more movies did @ watch than @?"
+     "@ sent # letters. @ sent # letters. how many more letters did @ send than @?",
+     "@ removed # books. @ removed # books. how many more books did @ remove than @?"
+    ],
+    "ru": [
+     "@ прочитала # страниц. @ прочитал # страниц. на сколько страниц больше прочитала @, чем @?",
+     "@ отправил # открыток. @ отправила # открыток. на сколько открыток больше отправил @, чем @?",
+     "@ написала # писем. @ написала # писем. на сколько писем больше написала @, чем @?",
+     "@ нашёл # монет. @ нашёл # монет. на сколько монет больше нашёл @, чем @?"
     ]
    },
    "показов": {
-    "en/вопрос": 20,
-    "en/утверждение": 60
+    "en/вопрос": 10,
+    "en/утверждение": 30,
+    "ru/вопрос": 10,
+    "ru/утверждение": 30
    },
    "всего": 80
   },
