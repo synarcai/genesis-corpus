@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 342 миров, 461853 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 342 миров, 461973 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -11,7 +11,7 @@
 
 ## АКТ «recount» — пересчитать величину: строка утверждает число
 
-Миров 158, строк 237096.
+Миров 158, строк 237216.
 
 - **`links`** (17566 строк; declared, whole_only)  
   **CONVERSATION LINKS** — a question whose subject stands in the PREVIOUS reply (the owner's order, 04.09, item 5; the BESEDA band measures this genus mute 15 of 15).
@@ -33,7 +33,7 @@
   **THE NUMBER LINE IN NINE LANGUAGES** — the simplest questions a person checks a speaker with, all mute in all nine languages on the third band of conversation (BESEDA-3, 05.09): «what number comes after 9? after 9 comes 10.», «which is bigger: 7 or 9? 9 is…
 - **`episodeforms`** (5229 строк; recompute, whole_only)  
   **THE EPISODE** — a TAPE of acts over one state (05.09, the agent architecture, the first market): three acts in a row and the question about the state after the whole tape; the question about the state after the SECOND step (the ledger's prefix); which act…
-- **`everyday`** (4578 строк; recompute, declared, whole_only, unsigned_only)  
+- **`everyday`** (4698 строк; recompute, declared, whole_only, unsigned_only)  
   **everyday life, and every line of it CARRIES A COMPUTABLE GROUND: things counted, containment walked through a declared tree, time ordered by a declared row, the past of a verb by rule with irregulars named, comparison by subtraction, and what remains afte…
 - **`numbers`** (4220 строк; recompute, whole_only)  
   **NUMBER THEORY AS FIVE QUESTIONS, EACH ANSWERED WITH ITS WITNESS** — declared until 12.09 in eleven words.
