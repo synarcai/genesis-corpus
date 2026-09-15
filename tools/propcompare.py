@@ -24,18 +24,31 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 
 # per language: the question frame «which is {C}: {X} or {Y}? {W}.», and per
 # property the comparatives (more, less) and the pair (winner, loser)
+# ДВЕ ВОПРОСНЫЕ ФОРМЫ У КАЖДОГО ЯЗЫКА (15.09). Французский держал вторую рамку с первого дня
+# («qu'est-ce qui est plus chaud» и «lequel est le plus chaud»), прочие восемь — одну, и оттого
+# французских страниц было ВДВОЕ больше при равном числе родов. Назвала это новая мера —
+# ЯЗЫКОВОЙ ПЕРЕКОС ДОМА, считающая страницы по языкам, а не присутствие рода на языке.
+#
+#     РОД, НАПИСАННЫЙ НА ОБОИХ ЯЗЫКАХ ВДВОЕ НЕРОВНО, НЕ ЩЕРБАТ И НЕ РОВЕН: клетка решётки не
+#     пуста — она ХУДА, и мера присутствия о ней сказать не может.
+#
+# Вторая форма спрашивает о ВЫБОРЕ ИЗ ДВУХ НАЗВАННЫХ, тогда как первая — о вещи вообще, и
+# каждый язык говорит её своим оборотом: «what is», «что из двух», «welches ist», «¿cuál»,
+# «quale è», «qual é», «welke van de twee», «które z dwóch». Нидерландское и польское взяты с
+# «из двух» нарочно: «welk/welke» и «które/który» гнутся родом вещи, а «van de twee» и «z
+# dwóch» от рода свободны — дом же рода предметов не объявлял.
 ЯЗЫКИ = {
-    "ru": dict(рамка=("что {C}: {X} или {Y}?", "{W}."),
+    "ru": dict(рамка=("что {C}: {X} или {Y}?", "{W}."), рамка2=("что из двух {C}: {X} или {Y}?", "{W}."),
                сравн={"тяжесть": ("тяжелее", "легче"), "твёрдость": ("твёрже", "мягче"), "жар": ("горячее", "холоднее"),
                       "скорость": ("быстрее", "медленнее"), "рост": ("выше", "ниже")},
                пары={"тяжесть": ("камень", "перо"), "твёрдость": ("камень", "подушка"), "жар": ("огонь", "лёд"),
                      "скорость": ("заяц", "черепаха"), "рост": ("жираф", "кошка")}),
-    "en": dict(рамка=("which is {C}: {X} or {Y}?", "{W}."),
+    "en": dict(рамка=("which is {C}: {X} or {Y}?", "{W}."), рамка2=("what is {C}: {X} or {Y}?", "{W}."),
                сравн={"тяжесть": ("heavier", "lighter"), "твёрдость": ("harder", "softer"), "жар": ("hotter", "colder"),
                       "скорость": ("faster", "slower"), "рост": ("taller", "shorter")},
                пары={"тяжесть": ("a stone", "a feather"), "твёрдость": ("a stone", "a pillow"), "жар": ("fire", "ice"),
                      "скорость": ("a hare", "a tortoise"), "рост": ("a giraffe", "a cat")}),
-    "de": dict(рамка=("was ist {C}: {X} oder {Y}?", "{W}."),
+    "de": dict(рамка=("was ist {C}: {X} oder {Y}?", "{W}."), рамка2=("welches ist {C}: {X} oder {Y}?", "{W}."),
                сравн={"тяжесть": ("schwerer", "leichter"), "твёрдость": ("härter", "weicher"), "жар": ("heißer", "kälter"),
                       "скорость": ("schneller", "langsamer"), "рост": ("höher", "niedriger")},
                пары={"тяжесть": ("ein Stein", "eine Feder"), "твёрдость": ("ein Stein", "ein Kissen"), "жар": ("Feuer", "Eis"),
@@ -45,27 +58,27 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
                       "скорость": ("plus rapide", "plus lent"), "рост": ("plus haut", "plus bas")},
                пары={"тяжесть": ("une pierre", "une plume"), "твёрдость": ("une pierre", "un coussin"), "жар": ("le feu", "la glace"),
                      "скорость": ("un lièvre", "une tortue"), "рост": ("une girafe", "un chat")}),
-    "es": dict(рамка=("¿qué {C}: {X} o {Y}?", "{W}."),
+    "es": dict(рамка=("¿qué {C}: {X} o {Y}?", "{W}."), рамка2=("¿cuál {C}: {X} o {Y}?", "{W}."),
                сравн={"тяжесть": ("pesa más", "pesa menos"), "твёрдость": ("es más duro", "es más blando"), "жар": ("está más caliente", "está más frío"),
                       "скорость": ("es más rápido", "es más lento"), "рост": ("es más alto", "es más bajo")},
                пары={"тяжесть": ("una piedra", "una pluma"), "твёрдость": ("una piedra", "una almohada"), "жар": ("el fuego", "el hielo"),
                      "скорость": ("una liebre", "una tortuga"), "рост": ("una jirafa", "un gato")}),
-    "it": dict(рамка=("cosa è {C}: {X} o {Y}?", "{W}."),
+    "it": dict(рамка=("cosa è {C}: {X} o {Y}?", "{W}."), рамка2=("quale è {C}: {X} o {Y}?", "{W}."),
                сравн={"тяжесть": ("più pesante", "più leggero"), "твёрдость": ("più duro", "più morbido"), "жар": ("più caldo", "più freddo"),
                       "скорость": ("più veloce", "più lento"), "рост": ("più alto", "più basso")},
                пары={"тяжесть": ("una pietra", "una piuma"), "твёрдость": ("una pietra", "un cuscino"), "жар": ("il fuoco", "il ghiaccio"),
                      "скорость": ("una lepre", "una tartaruga"), "рост": ("una giraffa", "un gatto")}),
-    "pt": dict(рамка=("o que é {C}: {X} ou {Y}?", "{W}."),
+    "pt": dict(рамка=("o que é {C}: {X} ou {Y}?", "{W}."), рамка2=("qual é {C}: {X} ou {Y}?", "{W}."),
                сравн={"тяжесть": ("mais pesado", "mais leve"), "твёрдость": ("mais duro", "mais macio"), "жар": ("mais quente", "mais frio"),
                       "скорость": ("mais rápido", "mais lento"), "рост": ("mais alto", "mais baixo")},
                пары={"тяжесть": ("uma pedra", "uma pena"), "твёрдость": ("uma pedra", "uma almofada"), "жар": ("o fogo", "o gelo"),
                      "скорость": ("uma lebre", "uma tartaruga"), "рост": ("uma girafa", "um gato")}),
-    "nl": dict(рамка=("wat is {C}: {X} of {Y}?", "{W}."),
+    "nl": dict(рамка=("wat is {C}: {X} of {Y}?", "{W}."), рамка2=("welke van de twee is {C}: {X} of {Y}?", "{W}."),
                сравн={"тяжесть": ("zwaarder", "lichter"), "твёрдость": ("harder", "zachter"), "жар": ("heter", "kouder"),
                       "скорость": ("sneller", "langzamer"), "рост": ("hoger", "lager")},
                пары={"тяжесть": ("een steen", "een veer"), "твёрдость": ("een steen", "een kussen"), "жар": ("vuur", "ijs"),
                      "скорость": ("een haas", "een schildpad"), "рост": ("een giraf", "een kat")}),
-    "pl": dict(рамка=("co jest {C}: {X} czy {Y}?", "{W}."),
+    "pl": dict(рамка=("co jest {C}: {X} czy {Y}?", "{W}."), рамка2=("które z dwóch jest {C}: {X} czy {Y}?", "{W}."),
                сравн={"тяжесть": ("cięższe", "lżejsze"), "твёрдость": ("twardsze", "bardziej miękkie"), "жар": ("gorętsze", "zimniejsze"),
                       "скорость": ("szybsze", "wolniejsze"), "рост": ("wyższe", "niższe")},
                пары={"тяжесть": ("kamień", "pióro"), "твёрдость": ("kamień", "poduszka"), "жар": ("ogień", "lód"),

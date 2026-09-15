@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 342 миров, 461609 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 342 миров, 461853 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -11,7 +11,7 @@
 
 ## АКТ «recount» — пересчитать величину: строка утверждает число
 
-Миров 158, строк 237012.
+Миров 158, строк 237096.
 
 - **`links`** (17566 строк; declared, whole_only)  
   **CONVERSATION LINKS** — a question whose subject stands in the PREVIOUS reply (the owner's order, 04.09, item 5; the BESEDA band measures this genus mute 15 of 15).
@@ -219,6 +219,8 @@
   **interaction transcripts v0 (mandate 02.09, L5: «обучать и интерактиву»): one show in several lines by the declared form declarations/STENOGRAM.md** — header with the environment (a grid), steps «action → response» where the response is the environment's w…
 - **`need`** (540 строк; recompute, declared, whole_only)  
   **THE CONDITIONS OF A TASK** — WHAT IS NEEDED FOR AN ANSWER, AND WHAT IS NOT. Measured 11.09 across the 249 show worlds: «не хватает данных», «нельзя ответить», «not enough data» — NONE; «лишнее условие», «не нужно для ответа» — NONE. Every task of the corp…
+- **`timeunits`** (504 строк; recompute, whole_only)  
+  **TIME UNITS IN NINE LANGUAGES** — «сколько минут в двух часах? 120: 2 × 60 = 120.», hour → minutes, minute → seconds, week → days, day → hours, for two to five of the larger unit, the count in words for two to four in the case the phrase needs (в двух часа…
 - **`kinbearer`** (486 строк; recompute, whole_only)  
   **THE ACTING RELATIVE** — a bearer that is not a name, and that ACTS (06.09).
 - **`verbbridge`** (480 строк; same_object, whole_only)  
@@ -251,8 +253,6 @@
   **ROUNDING** — the rule of the half is DECLARED, not derived (06.09).
 - **`aggregate`** (430 строк; recompute, whole_only, unsigned_only)  
   **THE AGGREGATE** — A FACT OF SEVERAL BEARERS AND THE FOUR HEADS THAT ASK FOR IT, declared until 12.09 in six words: «aggregate genus: a fact of a plural bearer».
-- **`timeunits`** (420 строк; recompute, whole_only)  
-  **TIME UNITS IN NINE LANGUAGES** — «сколько минут в двух часах? 120: 2 × 60 = 120.», hour → minutes, minute → seconds, week → days, day → hours, for two to five of the larger unit, the count in words for two to four in the case the phrase needs (в двух часа…
 - **`parity`** (414 строк; recompute, whole_only)  
   **THE PARITY OF OPERATIONS** — A LAW ABOUT CLASSES, NOT ABOUT NUMBERS. Measured 11.09 across the 242 show worlds: «чётное + чётное», «even plus even» — NONE; «odd with odd» — NONE. Yet the word «чётный» occurs 3614 times: the corpus can say WHETHER A NUMBER…
 - **`gsmlex`** (400 строк; recompute, whole_only, unsigned_only)  
@@ -332,7 +332,7 @@
 
 ## АКТ «compare» — сравнить двоих: больше, меньше, во столько же раз
 
-Миров 63, строк 22940.
+Миров 63, строк 23100.
 
 - **`cmpframes`** (6480 строк; recompute, whole_only)  
   **FRAMES OF COMPARISON** — the largest class of the reader's lies on the held-out key (05.09: twelve of fifteen — «9 flexiones más que», «in più/in meno di», «meer/minder dan», «więcej/mniej niż»: the marker is not bought and the answer takes a neighbouring…
@@ -354,6 +354,8 @@
   **МЕСТО ЛИЦА В ГЛАГОЛЕ** — ДЕВЯТЬ ПЛАСТОВ ОТВЕРГАЮТ «Я + ОН-ФОРМУ» И НИ ОДИН НЕ ГОВОРИТ, ГДЕ В СЛОВЕ ЛИЦО. Замер 13.09 по пластам грузинского, арабского, амхарского, греческого, персидского, тамильского, хинди, шведского и древнееврейского: отказы «¬ მე წერ…
 - **`dist`** (400 строк; recompute, whole_only, exact_only)  
   **ТРИ ЗАКОНА РАССТОЯНИЯ** — ЧТО ДЕЛАЕТ РАССТОЯНИЕ РАССТОЯНИЕМ. Свод считал расстояния сотнями страниц («расстояние между (−1, 2) и (−16, 10) — 17: 15² + 8² = 17²») и нигде не называл их законов: замер 12.09 нашёл симметрию показанной, а «ноль только до себя…
+- **`propcompare`** (360 строк; recompute, whole_only)  
+  **PROPERTY COMPARISON IN NINE LANGUAGES** — «which is heavier: a stone or a feather? a stone.», «what is lighter: a feather or a stone? a feather.» Born from the fifth band of conversation (BESEDA-5, 05.09): «что тяжелее: камень или перо?» was mute in all n…
 - **`orderlaw`** (280 строк; recompute, whole_only, exact_only)  
   **ЗАКОНЫ ПОРЯДКА** — СВОД СРАВНИВАЛ ЧИСЛА ДЕВЯТЬ ТЫСЯЧ РАЗ И НИ РАЗУ НЕ СДЕЛАЛ ВЫВОДА. Замер 12.09 ПО СВОДУ: 980 строк несут цепь «a меньше b, и b меньше c» («билет 4 стои́т между 1 и 7: 1 меньше 4, и 4 меньше 7»), и НИ ОДНА не договаривает «значит, 1 меньш…
 - **`deacc`** (280 строк; declared, declared_table_only)  
@@ -372,8 +374,6 @@
   **КИТАЙСКОЕ СЧЁТНОЕ СЛОВО** — СВОД ОТВЕРГАЛ «一本笔» И «三本猫» И НЕ СКАЗАЛ ПОЧЕМУ. Замер 12.09 ПО ПЛАСТУ КИТАЙСКОГО (5 470 строк): сочетаний «число + счётное + имя» 468 при девяти парах (只+猫 70, 杯+水 66, 只+狗 66, 个+人 65, 张+纸 64, 本+书 64, 辆+车 63); 个 стои́т 710 раз, …
 - **`gender`** (210 строк; declared, declared_table_only)  
   **РОД В ЧУЖОМ ЯЗЫКЕ** — СВОД СТАВИЛ АРТИКЛЬ ТРИ ТЫСЯЧИ РАЗ И НИ РАЗУ НЕ СКАЗАЛ, ЧТО ЭТО РОД. Замер 12.09: русский род свод называет 624 строками («Анна женского рода, и потому Анна получила»), а в немецком мире 2940 артиклей и НОЛЬ упоминаний рода; во всех …
-- **`propcompare`** (200 строк; recompute, whole_only)  
-  **PROPERTY COMPARISON IN NINE LANGUAGES** — «which is heavier: a stone or a feather? a stone.», «what is lighter: a feather or a stone? a feather.» Born from the fifth band of conversation (BESEDA-5, 05.09): «что тяжелее: камень или перо?» was mute in all n…
 - **`ukcount`** (170 строк; declared, declared_table_only)  
   **УКРАИНСКАЯ СЧЁТНАЯ ЯЧЕЙКА** — СВОД ОТВЕРГАЛ «п'ять коти» И УЧИЛ СЧЁТУ ТОЛЬКО ДО ЧЕТЫРЁХ. Повод двойной, и обе половины замерены 13.09 по пласту украинского (3 395 строк).
 - **`ru_compare`** (168 строк; recompute, declared, whole_only, exact_only)  

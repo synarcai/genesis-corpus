@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 501 законов
+# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 503 законов
 
 Собран из докстрингов и комментариев `tools`, `courts`, `scripts` орудием
 `tools/law_atlas.py`. Взяты ОБЩИЕ законы — те, что держатся не одним файлом.
@@ -6,7 +6,7 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 6781 разных законов на 8650 упоминаний; сказанных однажды — 6280, и они остаются при своём месте.
+Всего в дереве 6800 разных законов на 8673 упоминаний; сказанных однажды — 6297, и они остаются при своём месте.
 
 
 ## Держат 81 файлов
@@ -122,6 +122,8 @@
 
 - **ВОПРОС СУДИТСЯ СВОИМ ОТВЕТОМ, А РОД ОПРЕДЕЛЯЕТСЯ ОТВЕТОМ**  
   courts/algo_court.py, courts/compsci_court.py, courts/cyber_court.py, courts/formula_court.py, courts/linalg_court.py, courts/machine_court.py … и ещё 8
+- **И САМОПРОВЕРКА ЧИТАЕТ ОБЕ ПОЛОВИНЫ**  
+  tools/ageforms.py, tools/calforms.py, tools/chainforms.py, tools/cmpforms.py, tools/countforms.py, tools/everydayforms.py … и ещё 8
 - **ИСКОМОЕ ОБЪЯВЛЯЕТ СВОЙ ВОПРОС ОДИН РАЗ**  
   tools/compsciforms.py, tools/gen_genesis_algebra.py, tools/gen_genesis_algorithms.py, tools/gen_genesis_cybernetics.py, tools/gen_genesis_formulas.py, tools/gen_genesis_machine.py … и ещё 8
 - **ОСТАЛЬНАЯ СТРАНИЦА У НЕГО НЕ**  
@@ -148,8 +150,6 @@
 
 - **ЗНАНИЕ, ЗАПИСАННОЕ ДАННЫМИ И КОДОМ, НО НЕ СТРАНИЦЕЙ, ЕСТЬ ЗНАНИЕ ПИШУЩЕГО, А НЕ ЧИТАЮЩЕГО**  
   tools/countlawforms.py, tools/decaseforms.py, tools/deplurforms.py, tools/dosupportforms.py, tools/elisionforms.py, tools/fuseprepforms.py … и ещё 6
-- **И САМОПРОВЕРКА ЧИТАЕТ ОБЕ ПОЛОВИНЫ**  
-  tools/ageforms.py, tools/calforms.py, tools/chainforms.py, tools/cmpforms.py, tools/countforms.py, tools/geoforms.py … и ещё 6
 - **ПРИБОР, ЗЕЛЕНЕЮЩИЙ ОТ НУЛЯ НАХОДОК, ОБЯЗАН ДОКАЗАТЬ, ЧТО УМЕЕТ НАХОДИТЬ**  
   scripts/broken_law.py, scripts/build_dated.py, scripts/genre_measured.py, scripts/ladder_full.py, scripts/margin_census.py, scripts/name_crossed.py … и ещё 6
 
@@ -564,6 +564,8 @@
   tools/deaccforms.py, tools/gen_genesis_genderverb.py
 - **ДОМ, ОБЪЯСНЯЮЩИЙ ОТКАЗ, ОБЯЗАН ПРОЦИТИРОВАТЬ ТОТ САМЫЙ ОТКАЗ, А НЕ ПОХОЖИЙ НА НЕГО**  
   tools/gen_genesis_personplace.py, tools/personplaceforms.py
+- **ДОМ, ПИШУЩИЙ ДВА ЯЗЫКА ВПЕРЕМЕЖКУ И НЕ МЕТЯЩИЙ ИХ, НЕ ЗАМЕЧАЕТ, ЧТО ПИШЕТ ОДИН**  
+  tools/notationforms.py, tools/numtheoryforms.py
 - **ДОМ, ПИШУЩИЙ ЧУЖУЮ ФОРМУ РУКОЙ, ЗАВОДИТ ВТОРОЕ ОБЪЯВЛЕНИЕ ОДНОГО ЗАКОНА**  
   tools/elisionforms.py, tools/soundarticleforms.py
 - **ДОМ, ПРЕДУПРЕДИВШИЙ О ВТОРОЙ КОПИИ И ДЕРЖАЩИЙ ЕЁ, ПРЕДУПРЕДИЛ О СЕБЕ**  
@@ -946,6 +948,8 @@
   scripts/ask_width.py, scripts/verdict_cover.py
 - **СТРАЖ СМОТРИТ СВОИ РОДЫ, А НЕ ВСЕ**  
   tools/opslawforms.py, tools/pointforms.py
+- **СТРАНИЦА БЕЗ СЛОВ НЕ ПРИНАДЛЕЖИТ ЯЗЫКУ, И ЭТО ФАКТ О НЕЙ, А НЕ ПРОБЕЛ В ОБЪЯВЛЕНИИ**  
+  scripts/form_matrix.py, tools/linalgforms.py
 - **СТРАНИЦА СОБРАНА ЗАНОВО И СВЕРЕНА ЦЕЛИКОМ**  
   tools/datecmp.py, tools/roadpath.py
 - **СТРАНИЦА, ПОКАЗЫВАЮЩАЯ ЗАПРЕЩЁННОЕ, ОБЯЗАНА ПОМЕЧАТЬ ЕГО ЗНАКОМ, КОТОРЫЙ ЧИТАЕТ СУД**  

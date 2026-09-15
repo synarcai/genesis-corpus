@@ -32,13 +32,28 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
 # in the question: «сколько минут»), the numerals in words for 2..4 in the case
 # the phrase needs, and the frame
 ЯЗЫКИ = {
-    "ru": dict(большие={"час": dict(few="часах", many="часах"), "минута": dict(few="минутах", many="минутах"),
+    "ru": dict(рамка2=("сколько {М} составляют {k} {Б2}?", "{v}: {k_} {зн} {f} = {v}."),
+               # ВИНИТЕЛЬНЫЙ ПРИ ЧИСЛЕ: «два часа», «две минуты», «двое суток» — и он РАЗНЫЙ
+               # при двух-четырёх и при прочих, как всякая счётная форма русского.
+               большие2={"час": dict(few="часа", many="часов"), "минута": dict(few="минуты", many="минут"),
+                         "неделя": dict(few="недели", many="недель"), "сутки": dict(few="суток", many="суток")},
+               # ЧИСЛИТЕЛЬНОЕ ВТОРОЙ РАМКИ — ИМЕНИТЕЛЬНОЕ, И У «СУТОК» ОНО СОБИРАТЕЛЬНОЕ.
+               # «два часа», но «двое суток»: слово `сутки` не имеет единственного числа, и
+               # русский считает такие вещи собирательным числительным, а не количественным.
+               # Первая рамка этого не знала: в предложном падеже («в двух сутках») разницы нет.
+               словом2={"час": {2: "два", 3: "три", 4: "четыре"},
+                        "минута": {2: "две", 3: "три", 4: "четыре"},
+                        "неделя": {2: "две", 3: "три", 4: "четыре"},
+                        "сутки": {2: "двое", 3: "трое", 4: "четверо"}},
+               большие={"час": dict(few="часах", many="часах"), "минута": dict(few="минутах", many="минутах"),
                         "неделя": dict(few="неделях", many="неделях"), "сутки": dict(few="сутках", many="сутках")},
                малые={"минута": dict(вопрос="минут", one="минута", few="минуты", many="минут"), "секунда": dict(вопрос="секунд", one="секунда", few="секунды", many="секунд"),
                       "день": dict(вопрос="дней", one="день", few="дня", many="дней"), "час": dict(вопрос="часов", one="час", few="часа", many="часов")},
                словом={2: "двух", 3: "трёх", 4: "четырёх"},
                рамка=("сколько {М} в {k} {Б}?", "{v}: {k_} {зн} {f} = {v}.")),
-    "en": dict(большие={"час": dict(many="hours"), "минута": dict(many="minutes"), "неделя": dict(many="weeks"), "сутки": dict(many="days")},
+    "en": dict(рамка2=("how many {М} do {k} {Б2} have?", "{v}: {k_} {зн} {f} = {v}."),
+               большие2={"час": dict(many="hours"), "минута": dict(many="minutes"), "неделя": dict(many="weeks"), "сутки": dict(many="days")},
+               большие={"час": dict(many="hours"), "минута": dict(many="minutes"), "неделя": dict(many="weeks"), "сутки": dict(many="days")},
                малые={"минута": dict(вопрос="minutes", one="minute", many="minutes"), "секунда": dict(вопрос="seconds", one="second", many="seconds"),
                       "день": dict(вопрос="days", one="day", many="days"), "час": dict(вопрос="hours", one="hour", many="hours")},
                словом={2: "two", 3: "three", 4: "four"},
@@ -50,7 +65,9 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
                       "день": dict(вопрос="Tage", one="Tag", many="Tage"), "час": dict(вопрос="Stunden", one="Stunde", many="Stunden")},
                словом={2: "zwei", 3: "drei", 4: "vier"},
                рамка=("wie viele {М} sind in {k} {Б}?", "{v}: {k_} {зн} {f} = {v}.")),
-    "fr": dict(большие={"час": dict(many="heures"), "минута": dict(many="minutes"), "неделя": dict(many="semaines"), "сутки": dict(many="jours")},
+    "fr": dict(рамка2=("combien de {М} font {k} {Б2} ?", "{v} : {k_} {зн} {f} = {v}."),
+               большие2={"час": dict(many="heures"), "минута": dict(many="minutes"), "неделя": dict(many="semaines"), "сутки": dict(many="jours")},
+               большие={"час": dict(many="heures"), "минута": dict(many="minutes"), "неделя": dict(many="semaines"), "сутки": dict(many="jours")},
                малые={"минута": dict(вопрос="minutes", one="minute", many="minutes"), "секунда": dict(вопрос="secondes", one="seconde", many="secondes"),
                       "день": dict(вопрос="jours", one="jour", many="jours"), "час": dict(вопрос="heures", one="heure", many="heures")},
                словом={2: "deux", 3: "trois", 4: "quatre"},
