@@ -61,7 +61,8 @@ from plural import with_article as _арт  # артикль по ЗВУКУ: «
 РОВНЫ_СОБОЮ = ("сдача",)
 
 
-КОРЕНЬ = pathlib.Path(__file__).resolve().parents[1]
+# КОРЕНЬ ЗАВЕДЁН ВЫШЕ И ЗДЕСЬ НЕ ПОВТОРЯЕТСЯ (16.09): `parent.parent` и `parents[1]` суть
+# один путь, и второе присвоение лишь затеняло первое.
 _EN = json.loads((КОРЕНЬ / "tools" / "langpacks" / "en.json").read_text(encoding="utf-8"))
 _RU = json.loads((КОРЕНЬ / "tools" / "langpacks" / "ru.json").read_text(encoding="utf-8"))
 ИМЕНА_EN = _EN["person_names"][:16]

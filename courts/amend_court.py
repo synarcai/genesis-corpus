@@ -20,6 +20,7 @@ sys.path.insert(0, str(КОРЕНЬ / "tools"))
 
 import amendforms  # noqa: E402 — дом, объявивший рамки самоисправления
 import closedworld  # noqa: E402
+from closedworld import Слой  # noqa: E402 — палата подаёт имя мира лишь тому, кто ввёз Слой
 
 ИМЯ_СУДА = "amend"
 ЗАМКНУТЫЕ_МИРЫ = frozenset({"amend"})

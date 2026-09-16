@@ -23,6 +23,7 @@ import sys
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
 
 import closedworld  # noqa: E402
+from closedworld import Слой  # noqa: E402 — палата подаёт имя мира лишь тому, кто ввёз Слой
 import negforms  # noqa: E402 — дом, объявивший отрицательное число
 
 ИМЯ_СУДА = "neg"

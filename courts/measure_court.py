@@ -22,6 +22,7 @@ import sys
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
 
 import closedworld  # noqa: E402
+from closedworld import Слой  # noqa: E402 — палата подаёт имя мира лишь тому, кто ввёз Слой
 import measureforms  # noqa: E402 — дом, объявивший законы общей меры
 
 ИМЯ_СУДА = "measure"

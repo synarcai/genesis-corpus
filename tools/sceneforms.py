@@ -428,6 +428,7 @@ def _вердикт(язык, форма, м):
     return True
 
 
+
 def судить(строка):
     """(судимо, истинно): a page of a frame of the house whose holes agree; else silence."""
     с = строка.strip()

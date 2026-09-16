@@ -26,6 +26,7 @@ import sys
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
 
 import closedworld  # noqa: E402
+from closedworld import Слой  # noqa: E402 — палата подаёт имя мира лишь тому, кто ввёз Слой
 import numlabelforms  # noqa: E402 — дом, объявивший имена и меры
 
 ИМЯ_СУДА = "numlabel"

@@ -21,6 +21,7 @@ sys.path.insert(0, str(КОРЕНЬ / "tools"))
 
 import addshareforms  # noqa: E402 — дом, объявивший сложение долей
 import closedworld  # noqa: E402
+from closedworld import Слой  # noqa: E402 — палата подаёт имя мира лишь тому, кто ввёз Слой
 
 ИМЯ_СУДА = "addshare"
 ЗАМКНУТЫЕ_МИРЫ = frozenset({"addshare"})

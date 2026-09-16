@@ -19,6 +19,7 @@ import sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1] / "tools"))
 import alphaorder as F  # noqa: E402
 import closedworld  # noqa: E402
+from closedworld import Слой  # noqa: E402 — палата подаёт имя мира лишь тому, кто ввёз Слой
 
 ЗАМКНУТЫЕ_МИРЫ = frozenset({"alphaorder"})
 

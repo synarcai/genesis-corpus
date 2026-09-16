@@ -44,7 +44,7 @@ import gsmtaskforms as ДОМ  # noqa: E402
 
 def pass_groups(шаг):
     """Одна группа на СЕМЕЙСТВО — сборка живёт в доме."""
-    return ДОМ.группы(шаг)
+    return ДОМ.группы_прохода(шаг)
 
 
 def main():

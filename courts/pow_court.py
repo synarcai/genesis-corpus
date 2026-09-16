@@ -24,6 +24,7 @@ import sys
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
 
 import closedworld  # noqa: E402
+from closedworld import Слой  # noqa: E402 — палата подаёт имя мира лишь тому, кто ввёз Слой
 import powforms  # noqa: E402 — дом, объявивший степень за нулём
 
 ИМЯ_СУДА = "pow"

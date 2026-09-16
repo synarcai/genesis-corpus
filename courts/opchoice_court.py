@@ -20,6 +20,7 @@ import sys
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
 
 import closedworld  # noqa: E402
+from closedworld import Слой  # noqa: E402 — палата подаёт имя мира лишь тому, кто ввёз Слой
 import opchoiceforms  # noqa: E402 — дом, объявивший решающее слово и его знак
 
 ИМЯ_СУДА = "opchoice"

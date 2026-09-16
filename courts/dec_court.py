@@ -23,6 +23,7 @@ import sys
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
 
 import closedworld  # noqa: E402
+from closedworld import Слой  # noqa: E402 — палата подаёт имя мира лишь тому, кто ввёз Слой
 import decforms  # noqa: E402 — дом, объявивший десятичную запись доли
 
 ИМЯ_СУДА = "dec"

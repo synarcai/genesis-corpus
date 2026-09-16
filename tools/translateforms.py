@@ -173,6 +173,7 @@ def _образцы():
 ОБРАЗЦЫ = _образцы()
 
 
+
 def судить(строка):
     """(судимо, истинно): the answer is the same word or phrase in the named language."""
     с = строка.strip()
