@@ -538,7 +538,7 @@
 - **`reply`** (54 строк; declared, whole_only)  
   **REPLY** — advice to the interlocutor RESTING ON A DECLARED LAW. The owner's order about «basic behavioural and psychological laws» was half closed: the behaviour house gives the LAW but not its APPLICATION TO THE PERSON SPEAKING. Here a person names their…
 - **`condprob`** (46 строк; recompute, whole_only)  
-  **A SHARE AND ITS BASE (14.09, bought by a zero of the probe). Measured: «условная вероятность» / «conditional probability»** — 6 lines in 451 367, and all six MENTION the words.
+  **A SHARE AND ITS BASE (14.09, bought by a zero of the probe). Measured across the show worlds: «условная вероятность» / «conditional probability»** — 6 lines in 451 367 of the свод, and all six MENTION the words.
 - **`adhominem`** (36 строк; recompute, whole_only)  
   **AN ARGUMENT ABOUT THE SPEAKER (14.09, the last zero of the probe's sixty-five families). Measured: «к человеку» / «ad hominem» / «переход на личность»** — ZERO lines.
 - **`dilemma`** (30 строк; recompute, whole_only)  
