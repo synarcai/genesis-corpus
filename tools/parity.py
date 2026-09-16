@@ -7,6 +7,9 @@ One table names, per language, the question form (a hole for the number)
 and the two words; the generators of the two-language worlds and their
 courts read the same table.
 """
+# ОРУДИЕ, А НЕ ДОМ (16.09): предикат чётности отдаётся домам дознания, и страницы его
+# выходят в свод под их именем. Показов у него нет и быть не должно.
+ОРУДИЕ = "предикат чётности на языках мира — для домов дознания"
 import re
 
 ФОРМЫ = {

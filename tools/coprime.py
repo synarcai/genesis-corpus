@@ -7,6 +7,13 @@ word opens the answer (М-147), the witness is the greatest common divisor,
 which the court recomputes. One table per language: the question form (two
 holes), the two words, the witness form (three holes: a, b, gcd).
 """
+# ОРУДИЕ, А НЕ ДОМ (16.09). Этот модуль не кует мира: он отдаёт ПРЕДИКАТ взаимной простоты
+# домам дознания (`inqdefr`, `inqesit`, `inqpltr`, `inqptnl`), и страницы его выходят в свод
+# под их именем и в их роде. Показов у него нет и быть не должно.
+#
+#     ОРУДИЕ, СЧИТАЕМОЕ ДОЛГОМ МЕРЫ, ЕСТЬ ДОЛГ МЕРЫ, А НЕ ОРУДИЯ. Мера, спрашивающая с
+#     орудия страниц, спрашивает с молотка домов.
+ОРУДИЕ = "предикат взаимной простоты на восьми языках — для домов дознания"
 import re
 from math import gcd
 

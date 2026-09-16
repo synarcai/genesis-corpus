@@ -11,6 +11,10 @@ ledger and the question answered by it (М-153). The share is read back from
 its name, never from the line; the ledger writes the division and, at a
 numerator above one, the multiplication — no action that changes nothing.
 """
+# ОРУДИЕ, А НЕ ДОМ (16.09): рамки долей на девяти языках, читаемые домом
+# `gen_genesis_share_langs` и соседями. Мир куёт тот, кто рамку зовёт, а не тот, кто её
+# объявляет.
+ОРУДИЕ = "рамки долей на девяти языках — для домов, кующих доли"
 import pathlib
 import re
 import sys
