@@ -19,6 +19,7 @@ import re
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import plgram  # noqa: E402 — согласование польской части есть закон языка, а не дома
 
 # per language: the question and the answer of every form; {n} the number,
 # {m} its neighbour, {a}/{b} the two of the question, {c}/{d} the bigger/smaller,
@@ -262,7 +263,7 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
     ),
     "pl": dict(
         половина_половины=("ile to połowa z połowy z {n}?", "{q}: {n} ÷ 2 = {h}, {h} ÷ 2 = {q}."),
-        поровну=("podziel {n} na {k} równe części.", "po {q}: {n} ÷ {k} = {q}."),
+        поровну=("podziel {n} na {k} {Ч}.", "po {q}: {n} ÷ {k} = {q}."),
         не_больше_ли=("czy to prawda, że {c} nie jest większe od {d}?", "nie: {c} jest większe od {d}, {c} − {d} = {r}."),
         не_больше_ли_да=("czy to prawda, że {d} nie jest większe od {c}?", "tak: {d} jest mniejsze od {c}, {c} − {d} = {r}."),
         между=("podaj liczbę między {a} a {c}.", "{b}: {a} < {b} < {c}."),
@@ -433,13 +434,19 @@ def _поля(n=None, m=None, a=None, b=None, ряд=None, язык=None, k=None
     if форма == "половина_половины":
         return dict(n=n, h=n // 2, q=n // 4)
     if форма == "поровну":
-        return dict(n=n, k=k, q=n // k)
+        # ЧАСТЬ ДАЁТ ТОЛЬКО ТОТ ЯЗЫК, ЧЬЯ РАМКА ЕЁ ПРОСИТ: лишний ключ формату не мешает,
+        # но и выдумывать его для восьми языков, где часть не гнётся, незачем.
+        поля = dict(n=n, k=k, q=n // k)
+        if язык == "pl":
+            поля["Ч"] = plgram.равные_части(k)
+        return поля
     if n is not None:
         п.update(n=n, m=m, h=n // 2, IL=_it(n)[0], DEL=_it(n)[1])
         if язык is not None:
             п.update(N=числом(язык, n))
-    if форма == "поровну":
-        return dict(n=n, k=k, q=n // k)
+    # ВТОРАЯ ТА ЖЕ ПРОВЕРКА СТОЯЛА ЗДЕСЬ И БЫЛА МЕРТВА (снята 16.09): первая возвращает
+    # раньше, и до этой строки «поровну» не доходило ни разу. Мёртвая ветка опасна тем, что
+    # ЧИТАЕТСЯ КАК ЖИВАЯ: правку внесли бы в неё — и она не сказалась бы ничем.
     if k is not None:
         s = a + k
         п.update(a=a, k=k, s=s)
@@ -561,7 +568,11 @@ def _показы():
         "ряд": r"(?P<ряд>\d+(?:, \d+)+)", "IL": r"(?:il |l')", "DEL": r"(?:del |dell')", "IM": r"(?:il |l')",
         "k": r"(?P<k>\d+)", "s": r"(?P<s>\d+)", "N": r"(?P<N>[^\W\d_]+(?:[ -][^\W\d_]+)*)",
         "Га": r"(?P<Га>[^\W\d_]+)", "Гk": r"(?P<Гk>[^\W\d_]+)", "Гs": r"(?P<Гs>[^\W\d_]+)",
-        "ш": r"(?P<ш>\d+)", "q": r"(?P<q>\d+)"}
+        "ш": r"(?P<ш>\d+)", "q": r"(?P<q>\d+)",
+        # ЧАСТЬ, СОГЛАСОВАННАЯ С ЧИСЛОМ: два слова, и гнутся оба («równe części» ·
+        # «równych części»). Суд читает её как дыру, а не как букву рамки, — иначе
+        # согласование было бы не проверяемо, а просто написано.
+        "Ч": r"(?P<Ч>[^\W\d_]+ [^\W\d_]+)"}
 
 
 def _образец(шаблон, видены=None, суффикс=""):
@@ -670,6 +681,11 @@ def _верно(форма, k, г, язык):
         return n % 4 == 0 and г["h"] == n // 2 and г["q"] == n // 4
     if форма == "поровну":
         n, k_ = г["n"], г["k"]
+        # ДВА СУДА НА ОДИН ПОКАЗ: счёт и язык. Форма части, не отвечающая числу, есть ложь,
+        # видная в грамматике, и суд обязан её видеть так же ясно, как ложь арифметики.
+        если_часть = г.get("Ч")
+        if если_часть is not None and если_часть != plgram.равные_части(k_):
+            return False
         return k_ > 0 and n % k_ == 0 and г["q"] == n // k_
     if форма in ("не_больше_ли", "не_больше_ли_да"):
         return г["c"] > г["d"] and г["r"] == г["c"] - г["d"]

@@ -44,6 +44,7 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import asking  # noqa: E402 — the house of the pair declares which openers a question may wear
 import numberline as NL  # noqa: E402 — the surface «divide {n} into {k} equal parts»
+import plgram  # noqa: E402 — согласование польской части есть закон языка, а не дома
 import svampforms as S  # noqa: E402 — the pair house's own word of not-knowing
 
 ЯЗЫКИ = ("ru", "en", "de", "fr", "es", "it", "pt", "nl", "pl")
@@ -70,7 +71,10 @@ import svampforms as S  # noqa: E402 — the pair house's own word of not-knowin
     "nl": dict(сложи="tel {a} en {b} op", вычти="trek {b} van {a} af", умножь="vermenigvuldig {a} met {b}",
                раздели="deel {a} door {b}", поровну="verdeel {a} in {b} gelijke delen"),
     "pl": dict(сложи="dodaj {a} i {b}", вычти="odejmij {b} od {a}", умножь="pomnóż {a} przez {b}",
-               раздели="podziel {a} przez {b}", поровну="podziel {a} na {b} równe części"),
+               # ПОВЕРХНОСТЬ «ПОРОВНУ» ЗДЕСЬ МЕРТВА И ОСТАВЛЕНА ПУСТОЙ: цикл ниже
+               # перезаписывает её у всех девяти языков рамкой соседа. Литерал,
+               # который читается как объявление и не действует, лжёт читателю.
+               раздели="podziel {a} przez {b}", поровну=None),
 }
 # ПОВЕРХНОСТЬ «ПОРОВНУ» НЕ ОБЪЯВЛЯЕТСЯ ДВАЖДЫ, А ВЫВОДИТСЯ У ДОМА ЧИСЛОВОГО РЯДА: этот
 # дом добавляет к ней вопрос-эхо, а слова остаются одни — «share {n} equally between {k}»,
@@ -263,7 +267,14 @@ def рамка_ложного_отказа(язык, действие, в):
 def страница(язык, форма, действие, в, a, b=None):
     r = _счёт(действие, a, b) if b is not None else None
     т = рамка(язык, форма, действие, в)
-    return т.format(a=a, b=b, r=r, зн=ЗНАКИ[действие])
+    # ЧАСТЬ, СОГЛАСОВАННАЯ С ЧИСЛОМ, ПРИХОДИТ ВМЕСТЕ С РАМКОЙ (16.09). Поверхность
+    # «поровну» дом берёт у соседа (`NL.ЯЗЫКИ`), и когда сосед выучил польское
+    # согласование, рамка привела с собою дыру `{Ч}` — а дом о ней не знал и пал.
+    #
+    #     КТО БЕРЁТ ЧУЖУЮ РАМКУ, БЕРЁТ И ЧУЖИЕ ДЫРЫ: заимствована поверхность целиком,
+    #     а не одни её буквы.
+    часть = plgram.равные_части(b) if "{Ч}" in т and b is not None else None
+    return т.format(a=a, b=b, r=r, зн=ЗНАКИ[действие], Ч=часть)
 
 
 def _показы():
@@ -290,7 +301,10 @@ def _образец(шаблон):
     """One pattern over the whole page; the i-th occurrence of a hole is «h_<hole>__i»."""
     # ГЛИФ ДЕЙСТВИЯ — ДЫРА, А НЕ БУКВА (М-489): дом о том и поставлен, ЧТО ЗНАЧИТ СЛОВО
     # действия, и подмена глифа есть ложь о слове — она обязана быть ЛОЖЬЮ, а не немотой
-    дыры = {"a": r"\d+", "b": r"\d+", "r": r"\d+", "зн": r"[+−×÷]"}
+    # ЧАСТЬ, СОГЛАСОВАННАЯ С ЧИСЛОМ, — ТОЖЕ ДЫРА, А НЕ БУКВА: иначе «na 6 równe części»
+    # прошло бы немотой, а оно есть ложь языка (16.09, дом равной доли через чужую рамку).
+    дыры = {"a": r"\d+", "b": r"\d+", "r": r"\d+", "зн": r"[+−×÷]",
+            "Ч": r"[^\W\d_]+ [^\W\d_]+"}
     счёт, куски = {}, []
     for кусок in re.split(r"(\{[^}]+\})", шаблон):
         if кусок.startswith("{"):
@@ -336,6 +350,9 @@ def _вердикт(форма, действие, зн):
         return False
     a, b, r = int(зн["a"]), int(зн["b"]), int(зн["r"])
     if b < 1 or a < 1:
+        return False
+    # ДВА СУДА НА ОДИН ПОКАЗ: счёт и язык. Часть, не отвечающая числу, есть ложь грамматики.
+    if "Ч" in зн and зн["Ч"] != plgram.равные_части(b):
         return False
     # ПОРЯДОК ОПЕРАНДОВ — ПРЕДЛОГА, А НЕ ЧТЕНИЯ: «subtract 2 from 9» есть 9 − 2
     свой = _счёт(действие, a, b)
