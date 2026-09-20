@@ -25,6 +25,7 @@ import re
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from plural import by_count  # noqa: E402 — английское множественное законом, а не буквой
 
 ЯЗЫКИ = ("ru", "en")
 РОДЫ = ("хвост", "ровна_ли", "глубина")
@@ -70,7 +71,10 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
            "неровна": "ряд {ряд} не уравновешен: открытых без пары {n}",
            "глубина": "ряд {ряд} вложен на {n}"},
     "en": {"хвост": "how is the row «{ряд}» closed? it is closed by «{хвост}»",
-           "ровна": "the row {ряд} is balanced: {n} pairs",
+           # ИМЯ ГНЁТСЯ ЗАКОНОМ, А НЕ СТОИТ ЛИТЕРАЛОМ (16.09, `scripts/half_law.py`):
+           # «1 pairs» вышло бы при первом же ряде из одной пары, и правота литерала
+           # держалась лишь тем, что такие ряды до сих пор не строились.
+           "ровна": "the row {ряд} is balanced: {n} {Иn}",
            "неровна": "the row {ряд} is not balanced: {n} open without a pair",
            "глубина": "the row {ряд} nests {n} deep"},
 }
@@ -112,7 +116,8 @@ def страница(язык, род, k):
     if род == "ровна_ли":
         if хвост:
             return р["неровна"].format(ряд=ряд, n=len(хвост)) + "."
-        return р["ровна"].format(ряд=ряд, n=len(ряд.split()) // 2) + "."
+        пар = len(ряд.split()) // 2
+        return р["ровна"].format(ряд=ряд, n=пар, Иn=by_count(пар, "pairs")) + "."
     глубина = _глубина(ряд)
     return р["глубина"].format(ряд=ряд, n=глубина) + "."
 
@@ -188,7 +193,7 @@ def судить(строка):
     for язык in ЯЗЫКИ:
         р = РЕЧЬ[язык]
         for ключ in ("хвост", "ровна", "неровна", "глубина"):
-            м = re.fullmatch(_образец(р[ключ], n=r"(\d+)") + r"\.", строка)
+            м = re.fullmatch(_образец(р[ключ], n=r"(\d+)", Иn="[a-z]+") + r"\.", строка)
             if not м:
                 continue
             ряд = м.group(1)

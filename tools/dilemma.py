@@ -32,6 +32,7 @@ import re
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from plural import by_count  # noqa: E402 — английское множественное законом, а не буквой
 
 ЯЗЫКИ = ("ru", "en")
 РОДЫ = ("все_названы", "третий_есть", "середина")
@@ -116,12 +117,12 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
         "третий_есть_воп": "{что}: either {а} or {б}. is this choice complete? no: {n} "
                            "outcomes are declared and two are named; the missed one is {в}.",
         "середина_воп": "{что}: either {а} or {б}. is this choice complete? no: between the "
-                        "edges {а} and {б} lie {n} steps, and a whole row is missed.",
+                        "edges {а} and {б} lie {n} {Иn}, and a whole row is missed.",
         "третий_есть": "{что}: either {а} or {б} — and this is a FALSE DILEMMA: {n} "
                        "outcomes are declared and two are named. here is the missed one: "
                        "{в}.",
         "середина": "{что}: either {а} or {б} — and this is a FALSE DILEMMA OF ANOTHER "
-                    "KIND: {n} steps lie between the edges, and what is missed is not an "
+                    "KIND: {n} {Иn} lie between the edges, and what is missed is not an "
                     "outcome but a whole row.",
     },
 }
@@ -133,7 +134,10 @@ def страница(язык, род, место, пропуск=0, вопро�
     ключ = род + "_воп" if вопросом else род
     if род == "середина":
         что, а, б, ступеней = ШКАЛЫ[язык][место]
-        return рамки[ключ].format(что=что, а=а, б=б, n=ступеней)
+        # АНГЛИЙСКОЕ ИМЯ ГНЁТСЯ ЗАКОНОМ, А НЕ СТОИТ ЛИТЕРАЛОМ (16.09, `scripts/half_law.py`):
+        # правота «steps» держалась тем, что шкалы дома начинаются с двух ступеней.
+        return рамки[ключ].format(что=что, а=а, б=б, n=ступеней,
+                                  Иn=by_count(ступеней, "steps"))
     что, выходы = ВЫБОРЫ[язык][место]
     if род == "все_названы":
         if len(выходы) != 2:
@@ -184,7 +188,7 @@ def _образцы(язык):
         род = ключ[:-4] if ключ.endswith("_воп") else ключ
         о = re.escape(РАМКИ[язык][ключ])
         for дыра, узор in (("что", "[^:.]+"), ("а", "[^,.]+?"), ("б", "[^,.—]+?"),
-                           ("в", "[^.]+"), ("n", r"\d+")):
+                           ("в", "[^.]+"), ("n", r"\d+"), ("Иn", "[a-z]+")):
             метка = re.escape("{" + дыра + "}")
             if метка not in о:
                 continue
@@ -225,6 +229,10 @@ def судить(строка):
                 ступеней = _шкала(язык, что, а, б)
                 if ступеней is None:
                     continue                   # чужая шкала — запись не наша
+                # ДВА СУДА НА ОДИН ПОКАЗ: счёт и язык.
+                если = д.get("Иn")
+                if если is not None and если != by_count(int(д["n"]), "steps"):
+                    return True, False
                 return True, int(д["n"]) == ступеней
             выходы = _набор(язык, что)
             if выходы is None:

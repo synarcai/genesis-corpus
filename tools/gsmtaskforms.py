@@ -1120,8 +1120,8 @@ def части(шаг, i):
     if ф == 2:
         return f"a house and a lot cost {всего} {by_count(всего, 'dollars')} and the house cost {слово} as much as the lot; the house cost {дом} {by_count(дом, 'dollars')}: {дом_осн}."
     if ((шаг + i) // 4) % 2 == 0:
-        return f"if a house and a lot cost {всего} {by_count(всего, 'dollars')} and the house cost {слово} as much as the lot, how much did the lot cost? {лот_осн} dollars."
-    return f"if a house and a lot cost {всего} {by_count(всего, 'dollars')} and the house cost {слово} as much as the lot, how much did the house cost? {дом_осн} dollars."
+        return f"if a house and a lot cost {всего} {by_count(всего, 'dollars')} and the house cost {слово} as much as the lot, how much did the lot cost? {лот_осн} {by_count(лот, 'dollars')}."
+    return f"if a house and a lot cost {всего} {by_count(всего, 'dollars')} and the house cost {слово} as much as the lot, how much did the house cost? {дом_осн} {by_count(дом, 'dollars')}."
 
 
 # ФОРМУЛЫ СЕМЕЙСТВ — ЗАКОН ОТВЕТА ОТ ВЕЛИЧИН ВОПРОСА (заказ holon 03.09: таблица

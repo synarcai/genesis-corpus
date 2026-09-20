@@ -19,6 +19,7 @@ import sys
 
 КОРЕНЬ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
+from plural import by_count as _by_count  # noqa: E402 — английское множественное законом
 
 # РОД-ВЕЛИКАН РАЗДЕЛЁН ПО ДЕЛУ СТРОИТЕЛЯ (13.09): под именем «анафора» стояло 720 страниц
 # против 14 у самого редкого — и три разных дела: рассказ с местоимением, ВОПРОС о нём и
@@ -349,8 +350,10 @@ def уступка(шаг):
         вон.append((f"чётные числа обычно составны: из {чётных} чётных до 60 "
                    f"простое ровно одно.", "ru"))
         вон.append((f"хотя 2 чётно, 2 простое.", "ru"))
-        вон.append((f"even numbers are usually composite: of {чётных} even numbers "
-                   f"below 60, exactly one is prime.", "en"))
+        # ИМЯ ГНЁТСЯ ЗАКОНОМ, А НЕ СТОИТ ЛИТЕРАЛОМ (16.09, `scripts/half_law.py`): число
+        # здесь вычислено, и правота «numbers» держится тем, каков нынче предел.
+        вон.append((f"even numbers are usually composite: of {чётных} even "
+                   f"{_by_count(чётных, 'numbers')} below 60, exactly one is prime.", "en"))
         вон.append((f"although 2 is even, 2 is prime.", "en"))
         вон.append((f"простые числа обычно не стоят рядом: среди {len(простые)} "
                    f"простых до 60 соседних пар {соседей}.", "ru"))
@@ -362,7 +365,8 @@ def уступка(шаг):
                    f"{30 - len(нечёт_дел)}, а с нечётным — {len(нечёт_дел)}.", "ru"))
         вон.append((f"хотя 9 есть число, делителей у 9 три: 1, 3, 9.", "ru"))
         вон.append((f"a number usually has an even count of divisors: below 30, "
-                   f"{30 - len(нечёт_дел)} numbers do and {len(нечёт_дел)} do not.", "en"))
+                   f"{30 - len(нечёт_дел)} {_by_count(30 - len(нечёт_дел), 'numbers')} do "
+                   f"and {len(нечёт_дел)} do not.", "en"))
         вон.append((f"although 9 is a number, 9 has three divisors: 1, 3, 9.", "en"))
     return вон
 

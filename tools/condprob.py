@@ -27,6 +27,7 @@ import re
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from plural import by_count  # noqa: E402 — английское множественное берётся законом, а не буквой
 
 ЯЗЫКИ = ("ru", "en")
 РОДЫ = ("среди_всех", "среди_своих", "две_стороны")
@@ -55,13 +56,13 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
                        "девочки: число сверху одно, основания разные, и доли не равны.",
     },
     "en": {
-        "зачин": "in the class there are {н} children: {д} girls, {а} of them in glasses; "
-                 "{м} boys, {в} of them in glasses.",
+        "зачин": "in the class there are {н} {Ич}: {д} {Ид}, {а} of them in glasses; "
+                 "{м} {Им}, {в} of them in glasses.",
         "среди_всех": " what is the share of children in glasses? {оч1} out of {н1}: the "
                       "base is the whole class.",
         "среди_своих": " what is the share of girls in glasses? {а1} out of {д1}: the base "
                        "is not {н1} but {д2} — the count is among the girls.",
-        "две_стороны": " {а1} out of {д1} girls are in glasses, but {а2} out of {оч1} of "
+        "две_стороны": " {а1} out of {д1} {Ид1} are in glasses, but {а2} out of {оч1} of "
                        "those in glasses are girls: the top number is one, the bases "
                        "differ, and the shares are not equal.",
     },
@@ -83,6 +84,16 @@ def страница(язык, род, таблица):
     ч = числа(таблица)
     if род == "две_стороны" and ч["д"] == ч["оч"]:
         return None            # основания совпали — доли равны, и показывать нечего
+    # АНГЛИЙСКОЕ ИМЯ ГНЁТСЯ ЗАКОНОМ, А НЕ СТОИТ ЛИТЕРАЛОМ (16.09, прибор
+    # `scripts/half_law.py`). Русская сторона дома и так звала закон формы; английская
+    # держала «children», «girls», «boys» буквой, и правота её держалась тем, что числа
+    # дома начинаются с восьми.
+    #
+    #     ПРАВОТА, ДЕРЖАЩАЯСЯ НА ТОМ, ЧТО ЖРЕБИЙ НЕ ДАЛ ЕДИНИЦЫ, НЕ ЕСТЬ ПРАВОТА — ОНА НЕ
+    #     ПРОВЕРЕНА. Закон на одном языке при литерале на другом объявляет второй язык
+    #     второсортным.
+    ч = dict(ч, Ич=by_count(ч["н"], "children"), Ид=by_count(ч["д"], "girls"),
+             Им=by_count(ч["м"], "boys"), Ид1=by_count(ч["д"], "girls"))
     рамки = РАМКИ[язык]
     return рамки["зачин"].format(**ч) + рамки[род].format(**ч)
 
@@ -109,6 +120,10 @@ def _образцы(язык):
     вон = []
     for род in РОДЫ:
         о = re.escape(РАМКИ[язык]["зачин"] + РАМКИ[язык][род])
+        for дыра in ("Ич", "Ид1", "Ид", "Им"):
+            # ИМЯ ЧИТАЕТСЯ ДЫРОЙ, А НЕ БУКВОЙ: подмена формы при числе становится ЛОЖЬЮ,
+            # видимой суду, а не немотой.
+            о = о.replace(re.escape("{" + дыра + "}"), f"(?P<{дыра}>[a-z]+)")
         for дыра in ("оч1", "а1", "а2", "д1", "д2", "н1", "н", "д", "а", "м", "в", "оч"):
             о = о.replace(re.escape("{" + дыра + "}"), f"(?P<{дыра}>\\d+)")
         вон.append((род, re.compile(о + r"$")))
@@ -126,7 +141,16 @@ def судить(строка):
             м = образец.fullmatch(строка)
             if not м:
                 continue
-            д = {к: int(v) for к, v in м.groupdict().items()}
+            гр = м.groupdict()
+            д = {к: int(v) for к, v in гр.items() if not к.startswith("И")}
+            # ДВА СУДА НА ОДИН ПОКАЗ: счёт и язык. Форма имени, не отвечающая числу, есть
+            # ложь грамматики, и суд обязан видеть её так же ясно, как ложь арифметики.
+            for дыра, слово in (("Ич", "children"), ("Ид", "girls"), ("Им", "boys"),
+                                ("Ид1", "girls")):
+                если = гр.get(дыра)
+                число = {"Ич": "н", "Ид": "д", "Им": "м", "Ид1": "д"}[дыра]
+                if если is not None and если != by_count(int(гр[число]), слово):
+                    return True, False
             # ТАБЛИЦА ОБЯЗАНА СХОДИТЬСЯ: части не смеют превышать целого, а целое —
             # расходиться с суммой. Без этого доля считалась бы от выдуманного основания.
             if not (0 < д["а"] <= д["д"] and 0 <= д["в"] <= д["м"]

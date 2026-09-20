@@ -46,6 +46,7 @@ import re
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from plural import by_count  # noqa: E402 — английское множественное законом, а не буквой
 
 ЯЗЫКИ = ("ru", "en")
 РОДЫ = ("по_числу", "по_миру", "оба_рядом")
@@ -74,10 +75,10 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
     "en": {
         "по_числу": "«{n} ÷ 0» has no answer BY NUMBER: there is no number which, "
                     "multiplied by 0, would give {n}.",
-        "по_миру": "«give away {b} apples out of {a}» has no answer BY THE WORLD: the "
-                   "number is there and it is {a} − {b} = −{d}, but minus {d} apples do "
+        "по_миру": "«give away {b} {Иb} out of {a}» has no answer BY THE WORLD: the "
+                   "number is there and it is {a} − {b} = −{d}, but minus {d} {Иd} do "
                    "not exist.",
-        "оба_рядом": "«{n} ÷ 0» and «give away {b} apples out of {a}» both have no answer, "
+        "оба_рядом": "«{n} ÷ 0» and «give away {b} {Иb} out of {a}» both have no answer, "
                      "and differently: the first has no NUMBER, the second has one — {a} − "
                      "{b} = −{d} — and no WORLD for it.",
     },
@@ -91,9 +92,12 @@ def страница(язык, род, n, пара):
         return рамки["по_числу"].format(n=n)
     if надо <= было:
         return None            # отдать столько, сколько есть, можно — отказывать не в чем
+    # АНГЛИЙСКОЕ ИМЯ ГНЁТСЯ ЗАКОНОМ, А НЕ СТОИТ ЛИТЕРАЛОМ (16.09, `scripts/half_law.py`):
+    # правота «apples» держалась тем, что пары чисел дома не дают единицы.
+    имена = dict(Иb=by_count(надо, "apples"), Иd=by_count(надо - было, "apples"))
     if род == "по_миру":
-        return рамки["по_миру"].format(a=было, b=надо, d=надо - было)
-    return рамки["оба_рядом"].format(n=n, a=было, b=надо, d=надо - было)
+        return рамки["по_миру"].format(a=было, b=надо, d=надо - было, **имена)
+    return рамки["оба_рядом"].format(n=n, a=было, b=надо, d=надо - было, **имена)
 
 
 def _показы():
@@ -126,7 +130,9 @@ def _образцы(язык):
     вон = []
     for род in РОДЫ:
         о = re.escape(РАМКИ[язык][род])
-        for дыра, узор in (("n", r"\d+"), ("a", r"\d+"), ("b", r"\d+"), ("d", r"\d+")):
+        for дыра, узор in (("n", r"\d+"), ("a", r"\d+"), ("b", r"\d+"), ("d", r"\d+"),
+                           # ИМЯ — ДЫРА, А НЕ БУКВА: подмена формы при числе есть ложь
+                           ("Иb", "[a-z]+"), ("Иd", "[a-z]+")):
             дыра_о = re.escape("{" + дыра + "}")
             первый = True
             while дыра_о in о:
@@ -203,6 +209,12 @@ def судить(строка):
                 return True, int(д["n"]) > 0
             было, надо, разность = int(д["a"]), int(д["b"]), int(д["d"])
             ладно = надо > было and разность == надо - было
+            # ДВА СУДА НА ОДИН ПОКАЗ: счёт и язык. Форма имени, не отвечающая числу, есть
+            # ложь грамматики, и она видна суду так же ясно, как ложь арифметики.
+            for дыра, счёт in (("Иb", надо), ("Иd", разность)):
+                если = д.get(дыра)
+                if если is not None and если != by_count(счёт, "apples"):
+                    return True, False
             if род == "по_миру":
                 return True, ладно
             return True, ладно and int(д["n"]) > 0
