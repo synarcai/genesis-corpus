@@ -119,6 +119,25 @@
       "text": "shows"
     },
     {
+      "name": "adjorder",
+      "file": "datasets/genesis_adjorder.txt",
+      "genre": "THE ORDER OF ADJECTIVES — WHICH WORD STANDS FIRST AND WHY (16.09, the BBH genus `hyperbaton`). Measured across the corpus: lines with «big red», «adjective order», «порядок прилагательных» — ZERO. The corpus knew the DEGREES of comparison (`degrees`: tall · taller · tallest) and knew the PLACE OF THE PREDICATE (`wordorder`: word 2 of 4), and said nothing of the order of two attributes at one noun. THE ORDER OF ADJECTIVES IS A LAW OF THE LANGUAGE, NOT A TASTE OF THE SPEAKER: «a red big table» is not stylistically worse — it is WRONG, as «na 6 równe części» is wrong; and this is settled not by ear but by the ROW OF RANKS declared by the pack (`en.json → adjective_order`: opinion, size, age, shape, colour, origin, material, purpose). Three genera: CHOICE (two records side by side and the right one named WITH ITS GROUND — «size comes before colour»); WHY (one record and the question of cause, both ranks named by name); TRIPLE (three adjectives, where the order rests on TWO pairs and both are named). The house reads the row and does not derive it; the court reads THE SAME row and recomputes the order itself, and is silent about a word outside the declared row — judging by the look of a word means judging another's page as one's own. THE HOUSE IS MONOLINGUAL BY DECLARATION AND THIS IS NOT A GAP: Russian adjective order is free («большой красный мяч» and «красный большой мяч» are both possible), and a house showing the Russian side would teach a rule the language does not have.",
+      "act": [
+        "decide"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
+    },
+    {
       "name": "goal",
       "file": "datasets/genesis_goal.txt",
       "genre": "THE GOAL SPOKEN IN SPEECH, NOT TYPED AS A COMMAND (14.09, asked for by omega-ad). The organism already reaches a goal on the world's ledger by itself — it reads, searches the world's declaration, proposes, waits for a word, acts and checks by reading again — but the goal was handed to it as «/goal wire angle = 30», and speech about a goal the corpus never showed. THREE COMPARISONS ARE THREE GENERA, and each is a deed: «bring the angle to 30» (=), «bring the power to at least 40» (≥), «keep the temperature at most 30» (≤). Three outcomes are BRANCHES inside a comparison, not genera — «I propose … yes … set», «it already holds, no move is needed» and «read only» are three answers to ONE request, told apart by the state of the world and not by speech. The fourth genus stands apart: THE WORD REFUSES. There the ledger and the comparison are both right and the WORD cancels the move, and the world stays as it was — «before 0, now 0». NO TRANSLATION TABLE ANYWHERE: the ledger's name is what the world itself declares, a Russian device declares «угол» and a German one «Winkel», and the reader checks the word of the proposal against the word of the declaration, not against a foreign dictionary. Nine languages, 783 pages, every one sealed by an observation the court recomputes.",
@@ -3308,10 +3327,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 44879806,
+      "size": 45022751,
       "tiers": [],
       "text": "mix",
-      "lines": 467416
+      "lines": 468571
     },
     {
       "name": "fuseprep",
@@ -11430,10 +11449,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 36778628,
+      "size": 36921573,
       "tiers": [],
       "text": "mix",
-      "lines": 418949
+      "lines": 420104
     },
     {
       "name": "school_biling_v2c",

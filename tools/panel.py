@@ -439,7 +439,9 @@ recache.установить()
            "rolemark_court", "roundneed_court", "spread_court", "twokeys_court",
            "unitmix_court", "whodwells_court",
            # ЦЕПЬ СВИДЕТЕЛЬСТВ (16.09): род BBH `web_of_lies`, какого корпус не знал.
-           "liarchain_court")
+           "liarchain_court",
+           # ПОРЯДОК ПРИЛАГАТЕЛЬНЫХ (16.09): род BBH `hyperbaton`, объявленный пакетом.
+           "adjorder_court")
 
 
 def _взять(модуль):

@@ -1,0 +1,34 @@
+#!/usr/bin/env python3
+"""КУЗНИЦА МИРА ПОРЯДКА ПРИЛАГАТЕЛЬНЫХ.
+
+Перебор живёт в доме (`tools/adjorder.py`), кузница берёт у него готовые группы. ЦЕЛЬ
+объявлена строкой, ИМЯ ПРОХОДА — полем `pass_groups`: перепись копий спрашивает
+порождающего о проходах, и кузница, передавшая функцию доводом и не назвавшая её именем,
+честно отвечает «НЕ ЗНАЮ» (шрам 16.09).
+"""
+import pathlib
+import sys
+
+КОРЕНЬ = pathlib.Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(КОРЕНЬ / "tools"))
+import adjorder as ДОМ  # noqa: E402
+from layer import emit_grouped, PASSES  # noqa: E402
+
+ЦЕЛЬ = "datasets/genesis_adjorder.txt"
+
+
+def pass_groups(шаг):
+    """[[страница]] — по группе на РОД: роды не перемешиваются между собою."""
+    вон = []
+    for род in ДОМ.РОДЫ:
+        свои = [с for с, (_я, р) in ДОМ.ПОКАЗЫ.items() if р == род]
+        вон.append(свои[шаг::len(PASSES)])
+    return вон
+
+
+def main():
+    emit_grouped(ЦЕЛЬ, pass_groups)
+
+
+if __name__ == "__main__":
+    main()

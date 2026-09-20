@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 544 законов
+# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 545 законов
 
 Собран из докстрингов и комментариев `tools`, `courts`, `scripts` орудием
 `tools/law_atlas.py`. Взяты ОБЩИЕ законы — те, что держатся не одним файлом.
@@ -6,7 +6,7 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 7129 разных законов на 9131 упоминаний; сказанных однажды — 6585, и они остаются при своём месте.
+Всего в дереве 7144 разных законов на 9148 упоминаний; сказанных однажды — 6599, и они остаются при своём месте.
 
 
 ## Держат 82 файлов
@@ -40,11 +40,8 @@
 
 - **НЕ ПОЙМАНА» ИМЕЕТ ДВЕ ПРИЧИНЫ, И ОНИ ТРЕБУЮТ РАЗНОГО**  
   courts/adhominem_court.py, courts/alphaorder_court.py, courts/badground_court.py, courts/bicond_court.py, courts/boolexpr_court.py, courts/bothlists_court.py … и ещё 25
-
-## Держат 30 файлов
-
 - **ПОДСАДКИ ОБЪЯВЛЕНЫ ЗДЕСЬ, И СУД БЕРЁТ ИХ ОТСЮДА ЖЕ**  
-  tools/adhominem.py, tools/alphaorder.py, tools/badground.py, tools/bicondforms.py, tools/boolforms.py, tools/bothlists.py … и ещё 24
+  tools/adhominem.py, tools/adjorder.py, tools/alphaorder.py, tools/badground.py, tools/bicondforms.py, tools/boolforms.py … и ещё 25
 
 ## Держат 29 файлов
 
@@ -830,6 +827,8 @@
   courts/rowframe_court.py, scripts/word_mutants.py
 - **ПОРЯДОК БУКВ ОБЪЯВЛЕН, А НЕ ВЗЯТ ИЗ КОДИРОВКИ**  
   courts/alphaorder_court.py, tools/alphaorder.py
+- **ПОРЯДОК ПРИЛАГАТЕЛЬНЫХ ЕСТЬ ЗАКОН ЯЗЫКА, А НЕ ВКУС ГОВОРЯЩЕГО**  
+  courts/adjorder_court.py, tools/adjorder.py
 - **ПОРЯДОК СВОЙ, ОТНОШЕНИЯ ОБЩИЕ**  
   tools/gen_genesis_conversions.py, tools/gen_genesis_units.py
 - **ПОСЛЕДНИЕ ДВА ЗЕРКАЛЬНЫ И ОТТОГО ИДУТ ВМЕСТЕ**  
