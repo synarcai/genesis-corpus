@@ -1,10 +1,10 @@
-# суд	читает	поймал порч	поймал ОДИН	порч 2110	пойманных 2052	строк 778
+# суд	читает	поймал порч	поймал ОДИН	порч 2116	пойманных 2059	строк 780
 abs	3	9	4
 action_measure	4	12	4
 action_pages	5	11	5
 actturn	4	12	6
 addshare	4	9	5
-adhominem	1	3	2
+adhominem	4	12	6
 age	4	12	4
 algo	3	9	1
 amend	4	12	4
@@ -12,7 +12,7 @@ analog	1	3	1
 anaphora	4	12	5
 angle	3	9	4
 arith	506	46	2
-article	11	0	0
+article	13	0	0
 average	1	3	1
 beforetails	4	12	7
 both	2	6	2
@@ -22,7 +22,7 @@ calendar_langs	2	6	3
 ceilfloor	4	12	3
 chains_langs	4	4	3
 chance	2	6	3
-chancetrap	3	9	4
+chancetrap	4	12	5
 clockforms	4	12	6
 closure	2	6	2
 cmpframes	2	6	2
@@ -32,7 +32,7 @@ compare_mult	5	10	6
 compsci	4	3	3
 cond	3	9	4
 condprob	4	12	7
-corpusword	0	1145	33
+corpusword	0	1148	30
 countlaw	4	11	0
 cross	10	18	4
 cyber	2	4	2
@@ -46,8 +46,8 @@ divrule	4	12	5
 divsense	4	12	4
 divshare	4	12	6
 dosupport	2	4	1
-drop	3	0	0
-engram	157	17	0
+drop	3	6	0
+engram	158	17	0
 enough	4	12	8
 episode	41	90	49
 episodeforms	4	9	2
@@ -80,9 +80,9 @@ jaclass	1	2	0
 joint2	4	12	3
 joints	5	13	2
 kinbearer	4	11	6
-langcount	328	46	0
-langform	72	30	0
-langgen	115	162	42
+langcount	327	46	0
+langform	69	30	0
+langgen	112	156	38
 langmath	25	0	0
 leap	3	9	5
 lever	4	12	4
@@ -156,18 +156,18 @@ reduce	3	9	4
 relations_story	4	12	4
 rem	4	12	7
 remainders_langs	4	12	4
-reply	1	2	0
+reply	2	3	1
 roman	4	12	6
 roundforms	4	12	5
 rowframe	30	4	4
 ru_compare	1	1	1
 ru_conversion	4	12	2
 ru_story	4	8	4
-rugram	119	41	3
+rugram	121	43	3
 ruverbs	1	1	0
 sameshare	3	9	5
 sceneforms	4	9	1
-script	23	750	0
+script	20	751	0
 search_langs	2	6	2
 selfmodelforms	4	12	6
 sequence	2	6	0
