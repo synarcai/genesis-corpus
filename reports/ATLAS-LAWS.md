@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 531 законов
+# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 539 законов
 
 Собран из докстрингов и комментариев `tools`, `courts`, `scripts` орудием
 `tools/law_atlas.py`. Взяты ОБЩИЕ законы — те, что держатся не одним файлом.
@@ -6,7 +6,7 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 7059 разных законов на 9043 упоминаний; сказанных однажды — 6528, и они остаются при своём месте.
+Всего в дереве 7106 разных законов на 9100 упоминаний; сказанных однажды — 6567, и они остаются при своём месте.
 
 
 ## Держат 82 файлов
@@ -414,6 +414,8 @@
   tools/gen_genesis_genderverb.py, tools/persondistforms.py, tools/personplaceforms.py
 - **ПОДСУДНОСТЬ ОБЪЯВЛЯЕТСЯ РОДОМ ТЕКСТА МИРА, А НЕ ПУТЁМ ФАЙЛА**  
   courts/engram_court.py, courts/halves_court.py, tools/foreign.py
+- **ПОЛНЫЙ ОБРАЗЕЦ СО ВСЕЯДНОЙ ДЫРОЙ РАВЕН ОБРАЗЦУ БЕЗ КОНЦА**  
+  tools/dyckforms.py, tools/letterwork.py, tools/nestcalc.py
 - **ПОРЧА, КОТОРУЮ СУД НЕ ВИДИТ, ЕСТЬ ПОРЧА, КОТОРОЙ ЕГО РУБЕЖ НЕ КАСАЕТСЯ**  
   scripts/agree_traps.py, scripts/copula_band.py, scripts/sign_traps.py
 - **ПРАВИЛО, РАЗЛУЧЁННОЕ СО СВОЕЙ ГРАНИЦЕЙ, БУДЕТ ПРИМЕНЕНО ТАМ, ГДЕ ГРАНИЦА МОЛЧИТ**  
@@ -450,6 +452,8 @@
   courts/genderverb_court.py, courts/story_chain_court.py, scripts/past_gender.py
 - **СУД, СВЕРЯЮЩИЙ ФОРМУ С ЗАКОНОМ ДОМА ЯЗЫКА, СИЛЁН РОВНО ТЕМ, ЧТО САМ ЯЗЫКА НЕ ЗНАЕТ**  
   courts/elision_court.py, courts/plcopula_court.py, courts/soundarticle_court.py
+- **СУД, ЧИТАЮЩИЙ НАЧАЛО СТРОКИ, ЕСТЬ ЛОВУШКА, ВЗВЕДЁННАЯ НА БУДУЩЕЕ**  
+  tools/chainforms.py, tools/goalturn.py, tools/measurestory.py
 - **СУДИТЬ СЛОВО ПО ЧУЖОМУ ЯЗЫКУ — ХУЖЕ, ЧЕМ МОЛЧАТЬ**  
   courts/episode_court.py, courts/langcount_court.py, courts/physlaw_court.py
 - **СЧЁТНОЕ ГОВОРИТ, ЧТО ИМЕННО**  
@@ -515,6 +519,8 @@
   tools/gen_genesis_geometry.py, tools/gen_genesis_sequences.py
 - **ВОПРОС ПОРОЖДАЕТСЯ ИЗ ОТВЕТА, А НЕ ПИШЕТСЯ РЯДОМ**  
   tools/gen_genesis_school_biling_v2c.py, tools/inverting.py
+- **ВОПРОСНАЯ ПОВЕРХНОСТЬ — ВТОРОЙ ДОВОД О ТОМ ЖЕ ПРЕДМЕТЕ**  
+  tools/adhominem.py, tools/dilemma.py
 - **ВОПРОСНОЕ СЛОВО ПО РОДУ ВЕЩИ**  
   tools/episodeforms.py, tools/toolforms.py
 - **ВОПРОСНЫЙ РОД БЕРЁТ ПОСЛЕДНЕЕ ЧИСЛО РЯДА, А НЕ ПЕРВОЕ**  
@@ -631,6 +637,8 @@
   tools/angleforms.py, tools/directforms.py
 - **ЗАКОН МАССЫ ПРОВЕРЕН ДОМОМ, А НЕ ОТЛОЖЕН НА ПРИБОР**  
   tools/noanswer.py, tools/spread.py
+- **ЗАКОН ПОВТОРЕНИЯ ЕСТЬ ЗАКОН О ТОМ, ЧЕМУ УЧАТ**  
+  scripts/word_once.py, tools/letterwork.py
 - **ЗАКОН ЯЗЫКА, ПРИМЕНЁННЫЙ В ОДНОМ МЕСТЕ РУКОЮ, НЕ ПРИМЕНЁН В ОСТАЛЬНЫХ**  
   scripts/elision.py, tools/holes.py
 - **ЗАКОН, ЖИВУЩИЙ В ОДНОМ СУДЕ, НЕ ЕСТЬ ЗАКОН КОРПУСА**  
@@ -913,6 +921,10 @@
   tools/relcompare.py, tools/totalsubj.py
 - **РОД ИМЕНИ СКАЗАН АРТИКЛЕМ, А НЕ ВЫВЕДЕН ИЗ СЛОВА**  
   courts/romgender_court.py, tools/romgenderforms.py
+- **РОД ОБ ОДНОМ ПРЕДМЕТЕ ДАЁТ ОДНУ СТРАНИЦУ НА ПРЕДМЕТ**  
+  tools/adhominem.py, tools/dilemma.py
+- **РОД ОБ ОДНОМ ЯЗЫКЕ ДАЁТ ОДНУ СТРАНИЦУ НА ЯЗЫК**  
+  scripts/word_once.py, tools/replyforms.py
 - **РОД ОБЪЯВЛЯЕТ ИМЯ И СВОЙ ПОКАЗ, И НИЧЕГО БОЛЬШЕ**  
   tools/cmpmultforms.py, tools/gen_genesis_percent.py
 - **РОД СЛОВА НЕ ВЫВОДИТСЯ НИ ИЗ ЧЕГО**  
@@ -971,6 +983,8 @@
   courts/letterwork_court.py, tools/letterwork.py
 - **СЛОВО ОТРЕЗАЕТСЯ ПРОБЕЛОМ, А НЕ ПРИЗНАКОМ «БУКВА**  
   scripts/refusal_ground.py, scripts/refusal_only_word.py
+- **СЛОВО, ВЫЧИСЛЕННОЕ НА ГЛАЗАХ ЧИТАТЕЛЯ, ЗАКОНУ ПОВТОРЕНИЯ НЕ ПОДЛЕЖИТ**  
+  scripts/word_once.py, tools/letterwork.py
 - **СЛОВО, ЗАИМСТВОВАННОЕ ЯЗЫКОМ, ОБЪЯВЛЕНО НЕ ИМ**  
   scripts/signless_census.py, tools/langsign.py
 - **СЛОВО, СКАЗАННОЕ ОДНАЖДЫ, НЕ ПОКАЗАНО**  
@@ -981,6 +995,8 @@
   tools/actors.py, tools/closedworld.py
 - **СОДЕРЖАТЕЛЬНЫЙ ЗАКОН ПРОБУЕТСЯ ЛОЖНОЙ СТРАНИЦЕЙ, ВПИСАННОЙ В НАБОР**  
   tools/dosupportforms.py, tools/fuseprepforms.py
+- **СПИСОК, КОТОРЫЙ НАДО ПОПОЛНЯТЬ РУКОЙ, РАЗОЙДЁТСЯ С ЖИВУЩИМИ**  
+  scripts/panel_court.py, tools/panel.py
 - **СПИСОК, ПЕРЕПИСАННЫЙ В ДОМ ИЗ ПАКЕТА, РАЗОЙДЁТСЯ С ПАКЕТОМ В ДЕНЬ ПЕРВОЙ ЖЕ ПРАВКИ**  
   courts/homo_court.py, tools/homoforms.py
 - **СРЕДНЕЕ ЕСТЬ ОДНО ЧИСЛО О МНОГИХ, И ОНО ТЕРЯЕТ ИХ РАЗЛИЧИЯ**  
