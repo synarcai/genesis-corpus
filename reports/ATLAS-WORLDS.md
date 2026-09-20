@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 342 миров, 465061 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 342 миров, 466156 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -463,7 +463,7 @@
 
 ## АКТ «decide» — решить случай: вердикт с основанием рядом
 
-Миров 39, строк 22380.
+Миров 39, строк 22500.
 
 - **`verifyforms`** (3285 строк; recompute, whole_only)  
   **VERIFICATION** — «claim · check · verdict», and the pages where the instrument is OBLIGED to refuse (05.09, the agent architecture, the fourth market): a true claim checked by ANOTHER action cannot be confirmed — the verdict is «not verified», and the gro…
@@ -527,30 +527,30 @@
   **TESTING A HYPOTHESIS** — and THE CHIEF ASYMMETRY of knowledge.
 - **`roundneed`** (112 строк; recompute, whole_only)  
   **ROUNDING THAT THE DEED DECIDES (14.09, bought by a zero of the probe). Measured against the свод of 447 451 lines: rounding UP is there** — 77 lines of «коробок нужно» and 77 of «are needed»; rounding DOWN — «сколько целых» / «how many whole» — ZERO and Z…
+- **`reply`** (108 строк; declared, whole_only)  
+  **REPLY** — advice to the interlocutor RESTING ON A DECLARED LAW. The owner's order about «basic behavioural and psychological laws» was half closed: the behaviour house gives the LAW but not its APPLICATION TO THE PERSON SPEAKING. Here a person names their…
 - **`homonym`** (84 строк; recompute, whole_only)  
   **ONE WORD IN TWO SENSES** — TOLD APART BY THE NEIGHBOURS, NOT BY THE WORD (14.09, bought by a zero of the probe).
+- **`adhominem`** (72 строк; recompute, whole_only)  
+  **AN ARGUMENT ABOUT THE SPEAKER (14.09, the last zero of the probe's sixty-five families). Measured: «к человеку» / «ad hominem» / «переход на личность»** — ZERO lines.
 - **`twokeys`** (70 строк; recompute, whole_only)  
   **TWO KEYS** — THE SECOND IS SILENT WHILE THE FIRST SPEAKS (14.09, bought by a zero of the probe).
 - **`noanswer`** (60 строк; recompute, whole_only)  
   **TWO REFUSALS, AND WHAT SEPARATES THEM (14.09, bought by a zero of the probe and REBUILT THE SAME HOUR, when the zero turned out to be a zero of WORDS and not of DEEDS). The history of this world is its main lesson. The probe said «деление на ноль»** — 0 l…
+- **`dilemma`** (60 строк; recompute, whole_only)  
+  **THE FALSE DILEMMA** — THE LIST, NOT THE CONNECTIVE (14.09, the last zero of the probe's sixty-six families).
 - **`bothlists`** (60 строк; recompute, whole_only)  
   **TWO LISTS** — «AND» OVER MEMBERSHIP (14.09, bought by a zero of the probe).
-- **`reply`** (54 строк; declared, whole_only)  
-  **REPLY** — advice to the interlocutor RESTING ON A DECLARED LAW. The owner's order about «basic behavioural and psychological laws» was half closed: the behaviour house gives the LAW but not its APPLICATION TO THE PERSON SPEAKING. Here a person names their…
 - **`condprob`** (46 строк; recompute, whole_only)  
   **A SHARE AND ITS BASE (14.09, bought by a zero of the probe). Measured across the show worlds: «условная вероятность» / «conditional probability»** — 6 lines in 451 367 of the свод, and all six MENTION the words.
-- **`adhominem`** (36 строк; recompute, whole_only)  
-  **AN ARGUMENT ABOUT THE SPEAKER (14.09, the last zero of the probe's sixty-five families). Measured: «к человеку» / «ad hominem» / «переход на личность»** — ZERO lines.
-- **`dilemma`** (30 строк; recompute, whole_only)  
-  **THE FALSE DILEMMA** — THE LIST, NOT THE CONNECTIVE (14.09, the last zero of the probe's sixty-six families).
 
 ## АКТ «inflect» — поставить слово в форму по объявленному правилу
 
-Миров 34, строк 109825.
+Миров 34, строк 110800.
 
 - **`lang_de`** (8274 строк; declared, whole_only)  
   **THE GERMAN LAYER** — FOUR CASES CARRIED BY THE ARTICLE, EACH IN ITS OWN FRAME. Declared until 12.09 in nine words.
-- **`lang_es`** (6776 строк; declared, whole_only)  
+- **`lang_es`** (7039 строк; declared, whole_only)  
   **Мир пакета: имя с определителем, признак, число, счёт на своём языке, лицо глагола** — и ПЯТЬ НЕВОЗМОЖНЫХ ФРАЗ, помеченных «¬», из коих три о грамматике и две о смысле.
 - **`lang_sw`** (5820 строк; declared, tier1_unverified, whole_only)  
   **swahili: NOUN CLASSES, where the class of the noun governs the PREFIX of verb, adjective and numeral alike** — agreement that changes the BEGINNING of a word, not its end (tier 1: structure green, forms agree with the pack's own rules)
@@ -558,16 +558,16 @@
   **THE CHINESE LAYER** — A LANGUAGE THAT COUNTS WITHOUT INFLECTING. Declared until 12.09 in ten words.
 - **`lang_ru`** (5136 строк; declared, whole_only)  
   **THE RUSSIAN LAYER** — WHAT THE PACK DECLARES AND WHAT THIS WORLD ACTUALLY SHOWS, declared until 12.09 as «russian as a LANGUAGE: paradigms, graphemes, irregulars».
+- **`lang_pt`** (4645 строк; declared, tier1_unverified, whole_only)  
+  **Мир пакета: имя с определителем, признак, число, счёт на своём языке, лицо глагола** — и ПЯТЬ НЕВОЗМОЖНЫХ ФРАЗ, помеченных «¬», из коих три о грамматике и две о смысле.
 - **`lang_pl`** (4569 строк; declared, tier1_unverified, whole_only)  
   **Мир пакета: имя с определителем, признак, число, счёт на своём языке, лицо глагола** — и ПЯТЬ НЕВОЗМОЖНЫХ ФРАЗ, помеченных «¬», из коих три о грамматике и две о смысле.
-- **`lang_pt`** (4270 строк; declared, tier1_unverified, whole_only)  
+- **`lang_it`** (4381 строк; declared, tier1_unverified, whole_only)  
   **Мир пакета: имя с определителем, признак, число, счёт на своём языке, лицо глагола** — и ПЯТЬ НЕВОЗМОЖНЫХ ФРАЗ, помеченных «¬», из коих три о грамматике и две о смысле.
 - **`lang_en`** (4196 строк; declared, whole_only)  
   **THE ENGLISH LAYER** — THE THIRD-PERSON -s AND THE PLURALS THAT OBEY NOTHING. Declared until 12.09 in eleven words; measured 12.09 they hold up, and here are the numbers behind them. 4196 lines, 1507 asking.
 - **`lang_id`** (4135 строк; declared, tier1_unverified, whole_only)  
   **indonesian: the SIMPLEST of them all, and that is its value** — no tense, no gender, no case, no agreement at all; the plural is the word said TWICE (buku-buku).
-- **`lang_it`** (4044 строк; declared, tier1_unverified, whole_only)  
-  **Мир пакета: имя с определителем, признак, число, счёт на своём языке, лицо глагола** — и ПЯТЬ НЕВОЗМОЖНЫХ ФРАЗ, помеченных «¬», из коих три о грамматике и две о смысле.
 - **`lang_hi`** (4010 строк; declared, tier1_unverified, whole_only)  
   **hindi: devanagari, the corpus's first ABUGIDA** — a vowel is a MARK ON the consonant, not a letter beside it; the pack is declared SPACED, which is the truth about the language, and the instrument was taught to read a combining mark as a letter by office …
 - **`lang_fr`** (3970 строк; declared, tier1_unverified, whole_only)  
