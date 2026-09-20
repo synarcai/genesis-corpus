@@ -473,6 +473,33 @@
         ]
       },
       "count_comment": "ячейки one/many НАЗЫВАЮТ вещь и несут артикль; count_one/count_many СЧИТАЮТ её и артикля не несут — «5 livres», а не «5 les livres» (07.09)"
+    },
+    "copula": {
+      "comment": "СВЯЗКА ВРЕМЕНИ И ЧИСЛА, ОБЪЯВЛЕННАЯ ПАКЕТОМ (16.09): «3 deles são azuis», «3 deles eram azuis». См. тот же довод у испанского и итальянского пакетов.",
+      "forms": [
+        "sg_pres",
+        "pl_pres",
+        "sg_past",
+        "pl_past"
+      ],
+      "lexemes": {
+        "ser": [
+          "é",
+          "são",
+          "era",
+          "eram"
+        ],
+        "estar": [
+          "está",
+          "estão",
+          "estava",
+          "estavam"
+        ]
+      },
+      "need": 2,
+      "plural_by_count": false,
+      "follows_its_number": false,
+      "comment_position": "СВЯЗКА НЕ СТОИТ ПОСЛЕ СВОЕГО ЧИСЛА, А СТОИТ ПЕРЕД НИМ ЛИБО ПРИ ОПУЩЕННОМ ИМЕНИ."
     }
   },
   "show_kinds": {
@@ -548,7 +575,8 @@
         "aqui estão {lex:noun_count:many}.",
         "há {lex:noun_count:many} aqui.",
         "aqui há {n} {lex:noun_count:by_n}.",
-        "o que há aqui? aqui há {n} {lex:noun_count:by_n}."
+        "o que há aqui? aqui há {n} {lex:noun_count:by_n}.",
+        "antes {lex:copula:pl_past} {n} {lex:noun_count:by_n}."
       ]
     },
     "definition": {

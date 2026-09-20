@@ -457,6 +457,33 @@
           "blancas"
         ]
       }
+    },
+    "copula": {
+      "comment": "СВЯЗКА ВРЕМЕНИ И ЧИСЛА, ОБЪЯВЛЕННАЯ ПАКЕТОМ (16.09). Корпус пишет её на каждой странице дома действий («3 de ellos son azules», «3 de ellos eran azules»), а пакет о ней молчал — и прибор двуродого имени, берущий имя по соседству с числом («5 eran simples»), считал ГЛАГОЛ именем и требовал от него рода. Связка есть клетка парадигмы, а не имя, и объявить её — значит сказать о языке то, что корпус и так показывает.",
+      "forms": [
+        "sg_pres",
+        "pl_pres",
+        "sg_past",
+        "pl_past"
+      ],
+      "lexemes": {
+        "ser": [
+          "es",
+          "son",
+          "era",
+          "eran"
+        ],
+        "estar": [
+          "está",
+          "están",
+          "estaba",
+          "estaban"
+        ]
+      },
+      "need": 2,
+      "plural_by_count": false,
+      "follows_its_number": false,
+      "comment_position": "СВЯЗКА НЕ СТОИТ ПОСЛЕ СВОЕГО ЧИСЛА, А СТОИТ ПЕРЕД НИМ ЛИБО ПРИ ОПУЩЕННОМ ИМЕНИ: «5 eran simples» есть число и связка, а не число и имя. Поле объявляет границу тому, кто ищет имя по соседству с числом."
     }
   },
   "show_kinds": {
@@ -536,7 +563,8 @@
         "aquí están {lex:noun_count:many}.",
         "hay {lex:noun_count:many} aquí.",
         "aquí hay {n} {lex:noun_count:by_n}.",
-        "¿qué hay aquí? aquí hay {n} {lex:noun_count:by_n}."
+        "¿qué hay aquí? aquí hay {n} {lex:noun_count:by_n}.",
+        "antes {lex:copula:pl_past} {n} {lex:noun_count:by_n}."
       ]
     },
     "agreement": {

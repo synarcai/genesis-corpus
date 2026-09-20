@@ -1046,6 +1046,39 @@ def _образцы():
     "pl": {"мелки": "kredkami"},
     "de": {"мелки": "Buntstiften"},
 }
+# РОД ТОВАРА АКТОВ ОБЪЯВЛЕН ПОИМЁННО, И ЭТО ТРЕТИЙ СЛУЧАЙ ОДНОГО ЗАКОНА ЗА ДЕНЬ (16.09,
+# прибор `scripts/twogender.py`: «quante addominali» 16 страниц при «quanti addominali» 48).
+#
+# Рамки актов писали вопросное слово ЛИТЕРАЛОМ — «{ОТЖкск} {ОТЖмн}», — и литерал был верен:
+# отжимания женского рода на всех трёх языках. Но дом умеет ПОДМЕНЯТЬ товар в дыре
+# (`товары={"ОТЖ": "скручивания"}`), и подменённый приносит свой род: «addominali» мужского.
+#
+#     ЛИТЕРАЛ ВОПРОСНОГО СЛОВА ВЕРЕН, ПОКУДА ТОВАР НЕ ПОДМЕНЁН. Правота, держащаяся тем,
+#     что одну дыру всегда заполняет одно слово, есть долг, ещё не предъявленный: подмена
+#     объявлена самим домом — и объявлена раньше, чем литерал стал ложью.
+#
+# Род брался у `вещь(5)` — первого списка вещей, — а в строке стоял товар ВТОРОГО списка.
+#
+#     РОД БЕРЁТСЯ У СЛОВА, КОТОРОЕ СТОИ́Т В СТРОКЕ, А НЕ У СОСЕДА ПО НОМЕРУ.
+#
+# Половину этих родов знал соседний дом (`cmpframes.РОД`) — и снова знание языка лежало у
+# одного дома из двух. Здесь объявлены ВСЕ семнадцать товаров трёх гнущихся языков, и
+# самопроверка ниже не даёт объявлению отстать от таблицы товаров.
+РОД_ТОВАРА_АКТОВ = {
+    "es": {"abdominales": "m", "aplicaciones": "f", "chapas": "f", "ejercicios": "m",
+           "figuras": "f", "flexiones": "f", "horas": "f", "inquilinos": "m",
+           "lápices de colores": "m", "niñas": "f", "niños": "m", "partidas": "f",
+           "páginas": "f", "rosas": "f", "tazas": "f", "visitantes": "m"},
+    "it": {"addominali": "m", "app": "f", "bambine": "f", "bambini": "m", "esercizi": "m",
+           "flessioni": "f", "inquilini": "m", "ore": "f", "pagine": "f", "partite": "f",
+           "pastelli": "m", "rose": "f", "statuine": "f", "tappi": "m", "tazze": "f",
+           "visitatori": "m"},
+    "pt": {"abdominais": "m", "aplicações": "f", "bonecos": "m", "chávenas": "f",
+           "crianças": "f", "exercícios": "m", "flexões": "f", "horas": "f",
+           "inquilinos": "m", "jogos": "m", "lápis de cor": "m", "meninas": "f",
+           "meninos": "m", "páginas": "f", "rosas": "f", "tampas": "f", "visitantes": "m"},
+}
+
 _ТОВАР_ПО_ДЫРЕ = {"УПР": "упражнения", "ОТЖ": "отжимания", "СКР": "скручивания", "ПРИЛ": "приложения", "ФИГ": "фигурки", "КРЫШ": "крышки", "РОЗ": "розы",
                   "ПОС": "посетители", "ДЕТ": "дети", "ИГР": "игры", "ЧАС": "часы", "МЕЛ": "мелки", "СТР": "страницы"}
 ТОВАРЫ_АКТОВ.update({
@@ -1121,77 +1154,77 @@ _ТОВАР_ПО_ДЫРЕ.update({"ДЕВ": "девочки", "МАЛ": "мал�
                теперь_список="{X} avait {n} {ФИГn}. {Он} a aussi reçu {k} {МЕЛk}. maintenant {он} a {n} {ФИГn} et {k} {МЕЛk}. combien d'objets a-t-{он} en tout ? {s} : {n} + {k} = {s}.",
                добавил="{X} avait {n} {ПРИЛn} sur le téléphone. {Он} a ajouté {k} nouvelles {ПРИЛмн}. combien d'{ПРИЛмн} a-t-{он} maintenant ? {s} : {n} + {k} = {s}."),
     "es": dict(
-               больше_чем="{X} hizo {n} {ОТЖn}. {Y} hizo {k} {ОТЖмн} más que {X}. ¿cuántas {ОТЖмн} hizo {Y}? {s}: {n} + {k} = {s}.",
-               меньше_чем="{X} hizo {n} {ОТЖn}. {Y} hizo {k} {ОТЖмн} menos que {X}. ¿cuántas {ОТЖмн} hizo {Y}? {r}: {n} − {k} = {r}.",
-               добавил_на_полку="{X} tenía {n} {ФИГn} en la estantería. luego añadió {k} {ФИГмн} más a la estantería. ¿cuántas {ФИГмн} hay ahora en la estantería? {s}: {n} + {k} = {s}.",
-               выбросил="{X} encontró {n} {КРЫШn} en el parque y tiró {k} viejas. ¿cuántas {КРЫШмн} más encontró de las que tiró? {r}: {n} − {k} = {r}.",
-               выбросил_розы="había {n} {РОЗn} en el jarrón. {X} tiró {k} {РОЗмн} del jarrón. ¿cuántas {РОЗмн} hay ahora en el jarrón? {r}: {n} − {k} = {r}.",
-               узнал="{X} se enteró de que ese día llegaron {n} {ПОСn} al palacio y al día siguiente {k}. ¿cuántos {ПОСмн} llegaron en total? {s}: {n} + {k} = {s}.",
-               сели_вышли="había {n} {ДЕТn} en el autobús. en la parada subieron {k} {ДЕТмн} mientras algunos bajaron. ahora hay {s} {ДЕТмн} en el autobús. ¿cuántos {ДЕТмн} bajaron? {k2}: {n} + {k} − {s} = {k2}.",
-               сыграл="{X} jugó {n} {ИГРn} el lunes y {k} {ИГРмн} el martes. ¿cuántas {ИГРмн} jugó {X} en total? {s}: {n} + {k} = {s}.",
-               потратил="{X} dedicó {n} {ЧАСn} al inglés y {k} {ЧАСмн} al chino. ¿cuántas {ЧАСмн} dedicó {X} en total? un total de {s} {ЧАСмн}: {n} + {k} = {s}.",
-               список="cada día {X} dedica {n} {ЧАСn} al inglés, {k} {ЧАСмн} al chino y {m} {ЧАСмн} al español. ¿cuántas {ЧАСмн} dedica {X} en total? {t}: {n} + {k} + {m} = {t}.",
-               коробка="{X} recibió una caja de {n} {МЕЛn} y una caja de {k} {МЕЛмн}. ¿cuántos {МЕЛмн} tiene {X}? {s}: {n} + {k} = {s}.",
-               главы="un libro tiene 2 capítulos. el primer capítulo tiene {n} {СТРn} y el segundo {k} {СТРмн}. ¿cuántas {СТРмн} tiene el libro en total? {s}: {n} + {k} = {s}.",
-               две_клаузы="{X} tenía {n} {ИГРn} y {Y} tenía {k} {ИГРмн}. ¿cuántas {ИГРмн} tenían juntos? {s}: {n} + {k} = {s}.",
-               сделал="{X} hizo {n} {ОТЖn} y {k} {СКРk}. ¿cuántas {ОТЖмн} hizo {X}? {n}. ¿cuántos {УПРмн} en total? {s} {УПРs}: {n} + {k} = {s}.",
+               больше_чем="{X} hizo {n} {ОТЖn}. {Y} hizo {k} {ОТЖмн} más que {X}. ¿{ОТЖкск} {ОТЖмн} hizo {Y}? {s}: {n} + {k} = {s}.",
+               меньше_чем="{X} hizo {n} {ОТЖn}. {Y} hizo {k} {ОТЖмн} menos que {X}. ¿{ОТЖкск} {ОТЖмн} hizo {Y}? {r}: {n} − {k} = {r}.",
+               добавил_на_полку="{X} tenía {n} {ФИГn} en la estantería. luego añadió {k} {ФИГмн} más a la estantería. ¿{ФИГкск} {ФИГмн} hay ahora en la estantería? {s}: {n} + {k} = {s}.",
+               выбросил="{X} encontró {n} {КРЫШn} en el parque y tiró {k} viejas. ¿{КРЫШкск} {КРЫШмн} más encontró de las que tiró? {r}: {n} − {k} = {r}.",
+               выбросил_розы="había {n} {РОЗn} en el jarrón. {X} tiró {k} {РОЗмн} del jarrón. ¿{РОЗкск} {РОЗмн} hay ahora en el jarrón? {r}: {n} − {k} = {r}.",
+               узнал="{X} se enteró de que ese día llegaron {n} {ПОСn} al palacio y al día siguiente {k}. ¿{ПОСкск} {ПОСмн} llegaron en total? {s}: {n} + {k} = {s}.",
+               сели_вышли="había {n} {ДЕТn} en el autobús. en la parada subieron {k} {ДЕТмн} mientras algunos bajaron. ahora hay {s} {ДЕТмн} en el autobús. ¿{ДЕТкск} {ДЕТмн} bajaron? {k2}: {n} + {k} − {s} = {k2}.",
+               сыграл="{X} jugó {n} {ИГРn} el lunes y {k} {ИГРмн} el martes. ¿{ИГРкск} {ИГРмн} jugó {X} en total? {s}: {n} + {k} = {s}.",
+               потратил="{X} dedicó {n} {ЧАСn} al inglés y {k} {ЧАСмн} al chino. ¿{ЧАСкск} {ЧАСмн} dedicó {X} en total? un total de {s} {ЧАСмн}: {n} + {k} = {s}.",
+               список="cada día {X} dedica {n} {ЧАСn} al inglés, {k} {ЧАСмн} al chino y {m} {ЧАСмн} al español. ¿{ЧАСкск} {ЧАСмн} dedica {X} en total? {t}: {n} + {k} + {m} = {t}.",
+               коробка="{X} recibió una caja de {n} {МЕЛn} y una caja de {k} {МЕЛмн}. ¿{МЕЛкск} {МЕЛмн} tiene {X}? {s}: {n} + {k} = {s}.",
+               главы="un libro tiene 2 capítulos. el primer capítulo tiene {n} {СТРn} y el segundo {k} {СТРмн}. ¿{СТРкск} {СТРмн} tiene el libro en total? {s}: {n} + {k} = {s}.",
+               две_клаузы="{X} tenía {n} {ИГРn} y {Y} tenía {k} {ИГРмн}. ¿{ИГРкск} {ИГРмн} tenían juntos? {s}: {n} + {k} = {s}.",
+               сделал="{X} hizo {n} {ОТЖn} y {k} {СКРk}. ¿{ОТЖкск} {ОТЖмн} hizo {X}? {n}. ¿{УПРкск} {УПРмн} en total? {s} {УПРs}: {n} + {k} = {s}.",
                вещи3="{X} tiene {n} {ФИГn}, {k} {МЕЛk} y {m} {ИГРm}. ¿cuántas cosas tiene {X} en total? {t}: {n} + {k} + {m} = {t}.",
-               продал="{X} tenía {n} {РОЗn}. vendió {k} {РОЗk}. ¿cuántas {РОЗмн} le quedan? {r}: {n} − {k} = {r}.",
-               присоединились="había {n} {ДЕТn} en el patio. se les unieron {k} {ДЕТk} más. ¿cuántos {ДЕТмн} hay ahora en el patio? {s}: {n} + {k} = {s}.",
-               жили="{n} {ЖИЛn} vivían en la casa. {k} {ЖИЛk} se mudaron. ¿cuántos {ЖИЛмн} viven ahora en la casa? {r}: {n} − {k} = {r}.",
-               предложил="{X} propuso {n} {ФИГn} para la estantería. {Y} quitó {k} de ellas. ¿cuántas {ФИГмн} quedan? {r}: {n} − {k} = {r}.",
+               продал="{X} tenía {n} {РОЗn}. vendió {k} {РОЗk}. ¿{РОЗкск} {РОЗмн} le quedan? {r}: {n} − {k} = {r}.",
+               присоединились="había {n} {ДЕТn} en el patio. se les unieron {k} {ДЕТk} más. ¿{ДЕТкск} {ДЕТмн} hay ahora en el patio? {s}: {n} + {k} = {s}.",
+               жили="{n} {ЖИЛn} vivían en la casa. {k} {ЖИЛk} se mudaron. ¿{ЖИЛкск} {ЖИЛмн} viven ahora en la casa? {r}: {n} − {k} = {r}.",
+               предложил="{X} propuso {n} {ФИГn} para la estantería. {Y} quitó {k} de ellas. ¿{ФИГкск} {ФИГмн} quedan? {r}: {n} − {k} = {r}.",
                в_школе="en una escuela hay {n} {ДЕВn} y {k} {МАЛk}. ¿cuántos alumnos hay en la escuela? {s}: {n} + {k} = {s}.",
                рецепт="la receta requiere {n} {ЧАШn} de harina y {k} {ЧАШk} de azúcar. ¿cuántas tazas de harina más que de azúcar requiere? {r}: {n} − {k} = {r}.",
                теперь_список="{X} tenía {n} {ФИГn}. también recibió {k} {МЕЛk}. ahora tiene {n} {ФИГn} y {k} {МЕЛk}. ¿cuántas cosas tiene en total? {s}: {n} + {k} = {s}.",
-               добавил="{X} tenía {n} {ПРИЛn} en el teléfono. añadió {k} {ПРИЛмн} nuevas. ¿cuántas {ПРИЛмн} tiene ahora? {s}: {n} + {k} = {s}."),
+               добавил="{X} tenía {n} {ПРИЛn} en el teléfono. añadió {k} {ПРИЛмн} nuevas. ¿{ПРИЛкск} {ПРИЛмн} tiene ahora? {s}: {n} + {k} = {s}."),
     "it": dict(
-               больше_чем="{X} ha fatto {n} {ОТЖn}. {Y} ha fatto {k} {ОТЖмн} in più di {X}. quante {ОТЖмн} ha fatto {Y}? {s}: {n} + {k} = {s}.",
-               меньше_чем="{X} ha fatto {n} {ОТЖn}. {Y} ha fatto {k} {ОТЖмн} in meno di {X}. quante {ОТЖмн} ha fatto {Y}? {r}: {n} − {k} = {r}.",
-               добавил_на_полку="{X} aveva {n} {ФИГn} sullo scaffale. più tardi ha aggiunto altre {k} {ФИГмн} allo scaffale. quante {ФИГмн} ci sono ora sullo scaffale? {s}: {n} + {k} = {s}.",
-               выбросил="{X} ha trovato {n} {КРЫШn} al parco e ne ha buttati {k} vecchi. quanti {КРЫШмн} in più ha trovato rispetto a quelli buttati? {r}: {n} − {k} = {r}.",
-               выбросил_розы="nel vaso c'erano {n} {РОЗn}. {X} ha buttato {k} {РОЗмн} dal vaso. quante {РОЗмн} ci sono ora nel vaso? {r}: {n} − {k} = {r}.",
-               узнал="{X} ha saputo che quel giorno al palazzo sono venuti {n} {ПОСn} e il giorno dopo {k}. quanti {ПОСмн} sono venuti in tutto? {s}: {n} + {k} = {s}.",
-               сели_вышли="sull'autobus c'erano {n} {ДЕТn}. alla fermata sono saliti {k} {ДЕТмн} mentre alcuni sono scesi. ora ci sono {s} {ДЕТмн} sull'autobus. quanti {ДЕТмн} sono scesi? {k2}: {n} + {k} − {s} = {k2}.",
-               сыграл="{X} ha giocato {n} {ИГРn} lunedì e {k} {ИГРмн} martedì. quante {ИГРмн} ha giocato {X} in tutto? {s}: {n} + {k} = {s}.",
-               потратил="{X} ha dedicato {n} {ЧАСn} all'inglese e {k} {ЧАСмн} al cinese. quante {ЧАСмн} ha dedicato {X} in tutto? un totale di {s} {ЧАСмн}: {n} + {k} = {s}.",
-               список="ogni giorno {X} dedica {n} {ЧАСn} all'inglese, {k} {ЧАСмн} al cinese e {m} {ЧАСмн} allo spagnolo. quante {ЧАСмн} dedica {X} in tutto? {t}: {n} + {k} + {m} = {t}.",
-               коробка="{X} ha ricevuto una scatola di {n} {МЕЛn} e una scatola di {k} {МЕЛмн}. quanti {МЕЛмн} ha {X}? {s}: {n} + {k} = {s}.",
-               главы="un libro ha 2 capitoli. il primo capitolo è di {n} {СТРn} e il secondo di {k} {СТРмн}. quante {СТРмн} ha il libro in tutto? {s}: {n} + {k} = {s}.",
-               две_клаузы="{X} aveva {n} {ИГРn} e {Y} aveva {k} {ИГРмн}. quante {ИГРмн} avevano insieme? {s}: {n} + {k} = {s}.",
-               сделал="{X} ha fatto {n} {ОТЖn} e {k} {СКРk}. quante {ОТЖмн} ha fatto {X}? {n}. quanti {УПРмн} in tutto? {s} {УПРs}: {n} + {k} = {s}.",
+               больше_чем="{X} ha fatto {n} {ОТЖn}. {Y} ha fatto {k} {ОТЖмн} in più di {X}. {ОТЖкск} {ОТЖмн} ha fatto {Y}? {s}: {n} + {k} = {s}.",
+               меньше_чем="{X} ha fatto {n} {ОТЖn}. {Y} ha fatto {k} {ОТЖмн} in meno di {X}. {ОТЖкск} {ОТЖмн} ha fatto {Y}? {r}: {n} − {k} = {r}.",
+               добавил_на_полку="{X} aveva {n} {ФИГn} sullo scaffale. più tardi ha aggiunto altre {k} {ФИГмн} allo scaffale. {ФИГкск} {ФИГмн} ci sono ora sullo scaffale? {s}: {n} + {k} = {s}.",
+               выбросил="{X} ha trovato {n} {КРЫШn} al parco e ne ha buttati {k} vecchi. {КРЫШкск} {КРЫШмн} in più ha trovato rispetto a quelli buttati? {r}: {n} − {k} = {r}.",
+               выбросил_розы="nel vaso c'erano {n} {РОЗn}. {X} ha buttato {k} {РОЗмн} dal vaso. {РОЗкск} {РОЗмн} ci sono ora nel vaso? {r}: {n} − {k} = {r}.",
+               узнал="{X} ha saputo che quel giorno al palazzo sono venuti {n} {ПОСn} e il giorno dopo {k}. {ПОСкск} {ПОСмн} sono venuti in tutto? {s}: {n} + {k} = {s}.",
+               сели_вышли="sull'autobus c'erano {n} {ДЕТn}. alla fermata sono saliti {k} {ДЕТмн} mentre alcuni sono scesi. ora ci sono {s} {ДЕТмн} sull'autobus. {ДЕТкск} {ДЕТмн} sono scesi? {k2}: {n} + {k} − {s} = {k2}.",
+               сыграл="{X} ha giocato {n} {ИГРn} lunedì e {k} {ИГРмн} martedì. {ИГРкск} {ИГРмн} ha giocato {X} in tutto? {s}: {n} + {k} = {s}.",
+               потратил="{X} ha dedicato {n} {ЧАСn} all'inglese e {k} {ЧАСмн} al cinese. {ЧАСкск} {ЧАСмн} ha dedicato {X} in tutto? un totale di {s} {ЧАСмн}: {n} + {k} = {s}.",
+               список="ogni giorno {X} dedica {n} {ЧАСn} all'inglese, {k} {ЧАСмн} al cinese e {m} {ЧАСмн} allo spagnolo. {ЧАСкск} {ЧАСмн} dedica {X} in tutto? {t}: {n} + {k} + {m} = {t}.",
+               коробка="{X} ha ricevuto una scatola di {n} {МЕЛn} e una scatola di {k} {МЕЛмн}. {МЕЛкск} {МЕЛмн} ha {X}? {s}: {n} + {k} = {s}.",
+               главы="un libro ha 2 capitoli. il primo capitolo è di {n} {СТРn} e il secondo di {k} {СТРмн}. {СТРкск} {СТРмн} ha il libro in tutto? {s}: {n} + {k} = {s}.",
+               две_клаузы="{X} aveva {n} {ИГРn} e {Y} aveva {k} {ИГРмн}. {ИГРкск} {ИГРмн} avevano insieme? {s}: {n} + {k} = {s}.",
+               сделал="{X} ha fatto {n} {ОТЖn} e {k} {СКРk}. {ОТЖкск} {ОТЖмн} ha fatto {X}? {n}. {УПРкск} {УПРмн} in tutto? {s} {УПРs}: {n} + {k} = {s}.",
                вещи3="{X} ha {n} {ФИГn}, {k} {МЕЛk} e {m} {ИГРm}. quante cose ha {X} in tutto? {t}: {n} + {k} + {m} = {t}.",
-               продал="{X} aveva {n} {РОЗn}. ha venduto {k} {РОЗk}. quante {РОЗмн} ha ancora? {r}: {n} − {k} = {r}.",
-               присоединились="c'erano {n} {ДЕТn} nel cortile. si sono uniti a loro altri {k} {ДЕТk}. quanti {ДЕТмн} ci sono ora nel cortile? {s}: {n} + {k} = {s}.",
-               жили="{n} {ЖИЛn} abitavano nella casa. {k} {ЖИЛk} si sono trasferiti. quanti {ЖИЛмн} abitano ora nella casa? {r}: {n} − {k} = {r}.",
-               предложил="{X} ha proposto {n} {ФИГn} per lo scaffale. {Y} ne ha tolte {k}. quante {ФИГмн} restano? {r}: {n} − {k} = {r}.",
+               продал="{X} aveva {n} {РОЗn}. ha venduto {k} {РОЗk}. {РОЗкск} {РОЗмн} ha ancora? {r}: {n} − {k} = {r}.",
+               присоединились="c'erano {n} {ДЕТn} nel cortile. si sono uniti a loro altri {k} {ДЕТk}. {ДЕТкск} {ДЕТмн} ci sono ora nel cortile? {s}: {n} + {k} = {s}.",
+               жили="{n} {ЖИЛn} abitavano nella casa. {k} {ЖИЛk} si sono trasferiti. {ЖИЛкск} {ЖИЛмн} abitano ora nella casa? {r}: {n} − {k} = {r}.",
+               предложил="{X} ha proposto {n} {ФИГn} per lo scaffale. {Y} ne ha tolte {k}. {ФИГкск} {ФИГмн} restano? {r}: {n} − {k} = {r}.",
                в_школе="in una scuola ci sono {n} {ДЕВn} e {k} {МАЛk}. quanti alunni ci sono nella scuola? {s}: {n} + {k} = {s}.",
                рецепт="la ricetta richiede {n} {ЧАШn} di farina e {k} {ЧАШk} di zucchero. quante tazze di farina in più rispetto allo zucchero richiede? {r}: {n} − {k} = {r}.",
                теперь_список="{X} aveva {n} {ФИГn}. ha ricevuto anche {k} {МЕЛk}. ora ha {n} {ФИГn} e {k} {МЕЛk}. quante cose ha in tutto? {s}: {n} + {k} = {s}.",
-               добавил="{X} aveva {n} {ПРИЛn} sul telefono. ha aggiunto {k} nuove {ПРИЛмн}. quante {ПРИЛмн} ha adesso? {s}: {n} + {k} = {s}."),
+               добавил="{X} aveva {n} {ПРИЛn} sul telefono. ha aggiunto {k} nuove {ПРИЛмн}. {ПРИЛкск} {ПРИЛмн} ha adesso? {s}: {n} + {k} = {s}."),
     "pt": dict(
-               больше_чем="{X} fez {n} {ОТЖn}. {Y} fez mais {k} {ОТЖмн} do que {X}. quantas {ОТЖмн} fez {Y}? {s}: {n} + {k} = {s}.",
-               меньше_чем="{X} fez {n} {ОТЖn}. {Y} fez menos {k} {ОТЖмн} do que {X}. quantas {ОТЖмн} fez {Y}? {r}: {n} − {k} = {r}.",
-               добавил_на_полку="{X} tinha {n} {ФИГn} na prateleira. mais tarde acrescentou mais {k} {ФИГмн} à prateleira. quantos {ФИГмн} há agora na prateleira? {s}: {n} + {k} = {s}.",
-               выбросил="{X} encontrou {n} {КРЫШn} no parque e deitou fora {k} velhas. quantas {КРЫШмн} a mais encontrou do que deitou fora? {r}: {n} − {k} = {r}.",
-               выбросил_розы="havia {n} {РОЗn} na jarra. {X} deitou fora {k} {РОЗмн} da jarra. quantas {РОЗмн} há agora na jarra? {r}: {n} − {k} = {r}.",
-               узнал="{X} soube que nesse dia vieram {n} {ПОСn} ao palácio e no dia seguinte {k}. quantos {ПОСмн} vieram no total? {s}: {n} + {k} = {s}.",
-               сели_вышли="havia {n} {ДЕТn} no autocarro. na paragem entraram {k} {ДЕТмн} enquanto algumas saíram. agora há {s} {ДЕТмн} no autocarro. quantas {ДЕТмн} saíram? {k2}: {n} + {k} − {s} = {k2}.",
-               сыграл="{X} jogou {n} {ИГРn} na segunda-feira e {k} {ИГРмн} na terça-feira. quantos {ИГРмн} jogou {X} no total? {s}: {n} + {k} = {s}.",
-               потратил="{X} gastou {n} {ЧАСn} com inglês e {k} {ЧАСмн} com chinês. quantas {ЧАСмн} gastou {X} no total? um total de {s} {ЧАСмн}: {n} + {k} = {s}.",
-               список="todos os dias {X} gasta {n} {ЧАСn} com inglês, {k} {ЧАСмн} com chinês e {m} {ЧАСмн} com espanhol. quantas {ЧАСмн} gasta {X} no total? {t}: {n} + {k} + {m} = {t}.",
-               коробка="{X} recebeu uma caixa com {n} {МЕЛn} e uma caixa com {k} {МЕЛмн}. quantos {МЕЛмн} tem {X}? {s}: {n} + {k} = {s}.",
-               главы="um livro tem 2 capítulos. o primeiro capítulo tem {n} {СТРn} e o segundo {k} {СТРмн}. quantas {СТРмн} tem o livro no total? {s}: {n} + {k} = {s}.",
-               две_клаузы="{X} tinha {n} {ИГРn} e {Y} tinha {k} {ИГРмн}. quantos {ИГРмн} tinham juntos? {s}: {n} + {k} = {s}.",
-               сделал="{X} fez {n} {ОТЖn} e {k} {СКРk}. quantas {ОТЖмн} fez {X}? {n}. quantos {УПРмн} no total? {s} {УПРs}: {n} + {k} = {s}.",
+               больше_чем="{X} fez {n} {ОТЖn}. {Y} fez mais {k} {ОТЖмн} do que {X}. {ОТЖкск} {ОТЖмн} fez {Y}? {s}: {n} + {k} = {s}.",
+               меньше_чем="{X} fez {n} {ОТЖn}. {Y} fez menos {k} {ОТЖмн} do que {X}. {ОТЖкск} {ОТЖмн} fez {Y}? {r}: {n} − {k} = {r}.",
+               добавил_на_полку="{X} tinha {n} {ФИГn} na prateleira. mais tarde acrescentou mais {k} {ФИГмн} à prateleira. {ФИГкск} {ФИГмн} há agora na prateleira? {s}: {n} + {k} = {s}.",
+               выбросил="{X} encontrou {n} {КРЫШn} no parque e deitou fora {k} velhas. {КРЫШкск} {КРЫШмн} a mais encontrou do que deitou fora? {r}: {n} − {k} = {r}.",
+               выбросил_розы="havia {n} {РОЗn} na jarra. {X} deitou fora {k} {РОЗмн} da jarra. {РОЗкск} {РОЗмн} há agora na jarra? {r}: {n} − {k} = {r}.",
+               узнал="{X} soube que nesse dia vieram {n} {ПОСn} ao palácio e no dia seguinte {k}. {ПОСкск} {ПОСмн} vieram no total? {s}: {n} + {k} = {s}.",
+               сели_вышли="havia {n} {ДЕТn} no autocarro. na paragem entraram {k} {ДЕТмн} enquanto algumas saíram. agora há {s} {ДЕТмн} no autocarro. {ДЕТкск} {ДЕТмн} saíram? {k2}: {n} + {k} − {s} = {k2}.",
+               сыграл="{X} jogou {n} {ИГРn} na segunda-feira e {k} {ИГРмн} na terça-feira. {ИГРкск} {ИГРмн} jogou {X} no total? {s}: {n} + {k} = {s}.",
+               потратил="{X} gastou {n} {ЧАСn} com inglês e {k} {ЧАСмн} com chinês. {ЧАСкск} {ЧАСмн} gastou {X} no total? um total de {s} {ЧАСмн}: {n} + {k} = {s}.",
+               список="todos os dias {X} gasta {n} {ЧАСn} com inglês, {k} {ЧАСмн} com chinês e {m} {ЧАСмн} com espanhol. {ЧАСкск} {ЧАСмн} gasta {X} no total? {t}: {n} + {k} + {m} = {t}.",
+               коробка="{X} recebeu uma caixa com {n} {МЕЛn} e uma caixa com {k} {МЕЛмн}. {МЕЛкск} {МЕЛмн} tem {X}? {s}: {n} + {k} = {s}.",
+               главы="um livro tem 2 capítulos. o primeiro capítulo tem {n} {СТРn} e o segundo {k} {СТРмн}. {СТРкск} {СТРмн} tem o livro no total? {s}: {n} + {k} = {s}.",
+               две_клаузы="{X} tinha {n} {ИГРn} e {Y} tinha {k} {ИГРмн}. {ИГРкск} {ИГРмн} tinham juntos? {s}: {n} + {k} = {s}.",
+               сделал="{X} fez {n} {ОТЖn} e {k} {СКРk}. {ОТЖкск} {ОТЖмн} fez {X}? {n}. {УПРкск} {УПРмн} no total? {s} {УПРs}: {n} + {k} = {s}.",
                вещи3="{X} tem {n} {ФИГn}, {k} {МЕЛk} e {m} {ИГРm}. quantas coisas tem {X} ao todo? {t}: {n} + {k} + {m} = {t}.",
-               продал="{X} tinha {n} {РОЗn}. vendeu {k} {РОЗk}. quantas {РОЗмн} lhe restam? {r}: {n} − {k} = {r}.",
-               присоединились="havia {n} {ДЕТn} no recreio. juntaram-se a elas mais {k} {ДЕТk}. quantas {ДЕТмн} há agora no recreio? {s}: {n} + {k} = {s}.",
-               жили="{n} {ЖИЛn} moravam na casa. {k} {ЖИЛk} mudaram-se. quantos {ЖИЛмн} moram agora na casa? {r}: {n} − {k} = {r}.",
-               предложил="{X} propôs {n} {ФИГn} para a prateleira. {Y} retirou {k} deles. quantos {ФИГмн} restam? {r}: {n} − {k} = {r}.",
+               продал="{X} tinha {n} {РОЗn}. vendeu {k} {РОЗk}. {РОЗкск} {РОЗмн} lhe restam? {r}: {n} − {k} = {r}.",
+               присоединились="havia {n} {ДЕТn} no recreio. juntaram-se a elas mais {k} {ДЕТk}. {ДЕТкск} {ДЕТмн} há agora no recreio? {s}: {n} + {k} = {s}.",
+               жили="{n} {ЖИЛn} moravam na casa. {k} {ЖИЛk} mudaram-se. {ЖИЛкск} {ЖИЛмн} moram agora na casa? {r}: {n} − {k} = {r}.",
+               предложил="{X} propôs {n} {ФИГn} para a prateleira. {Y} retirou {k} deles. {ФИГкск} {ФИГмн} restam? {r}: {n} − {k} = {r}.",
                в_школе="numa escola há {n} {ДЕВn} e {k} {МАЛk}. quantos alunos há na escola? {s}: {n} + {k} = {s}.",
                рецепт="a receita pede {n} {ЧАШn} de farinha e {k} {ЧАШk} de açúcar. quantas chávenas de farinha a mais do que de açúcar pede? {r}: {n} − {k} = {r}.",
                теперь_список="{X} tinha {n} {ФИГn}. também recebeu {k} {МЕЛk}. agora tem {n} {ФИГn} e {k} {МЕЛk}. quantas coisas tem ao todo? {s}: {n} + {k} = {s}.",
-               добавил="{X} tinha {n} {ПРИЛn} no telemóvel. adicionou {k} {ПРИЛмн} novas. quantas {ПРИЛмн} tem agora? {s}: {n} + {k} = {s}."),
+               добавил="{X} tinha {n} {ПРИЛn} no telemóvel. adicionou {k} {ПРИЛмн} novas. {ПРИЛкск} {ПРИЛмн} tem agora? {s}: {n} + {k} = {s}."),
     "nl": dict(
                больше_чем="{X} deed {n} {ОТЖn}. {Y} deed {k} {ОТЖмн} meer dan {X}. hoeveel {ОТЖмн} deed {Y}? {s}: {n} + {k} = {s}.",
                меньше_чем="{X} deed {n} {ОТЖn}. {Y} deed {k} {ОТЖмн} minder dan {X}. hoeveel {ОТЖмн} deed {Y}? {r}: {n} − {k} = {r}.",
@@ -1401,6 +1434,13 @@ def _поля_акта(язык, i, j, n, k, m, товары=None):
         п[дыра + "n"] = _товар_форма(язык, ключ, n); п[дыра + "k"] = _товар_форма(язык, ключ, k)
         п[дыра + "m"] = _товар_форма(язык, ключ, m); п[дыра + "s"] = _товар_форма(язык, ключ, n + k)
         п[дыра + "мн"] = ТОВАРЫ_АКТОВ[язык][ключ][-1]
+        # ВОПРОСНОЕ СЛОВО ПРИ ТОВАРЕ — ДЫРА, А НЕ БУКВА: род берётся у СЛОВА, СТОЯЩЕГО В
+        # СТРОКЕ, и потому переживает подмену товара. Языков, гнущих его, три; прочие шесть
+        # этой дыры не просят, и лишний ключ формату не мешает.
+        пара = РОДОВЫЕ.get(язык, {}).get({"es": "кск", "it": "quante", "pt": "quantas"}.get(язык))
+        if пара is not None:
+            род_ = РОД_ТОВАРА_АКТОВ[язык][ТОВАРЫ_АКТОВ[язык][ключ][-1]]
+            п[дыра + "кск"] = пара[0] if род_ == "m" else пара[1]
         если = ПРИ_ПРЕДЛОГЕ.get(язык, {}).get(ключ)
         if если is not None:
             п[дыра + "пр"] = если
@@ -1532,6 +1572,16 @@ def _образцы_актов():
             формы = alt(ТОВАРЫ_АКТОВ[язык][ключ])
             for суффикс in ("n", "k", "m", "s", "мн"):
                 дыры[дыра + суффикс] = формы
+            # ВОПРОСНОЕ СЛОВО ПРИ ТОВАРЕ ЧИТАЕТСЯ ОДНОЙ ФОРМОЙ, А НЕ ОБЕИМИ: ячейка образца
+            # принимает ТОЛЬКО тот род, какой объявлен у товара, — и потому подмена рода
+            # становится НЕСУДИМОЙ, а ворота записи её не пропустят.
+            #
+            #     ДЕФЕКТ, СДЕЛАННЫЙ НЕВОЗМОЖНЫМ, ЛУЧШЕ ДЕФЕКТА ОБНАРУЖИМОГО: первый не
+            #     доживает до свода, второй живёт до ближайшего прогона прибора.
+            пара = РОДОВЫЕ.get(язык, {}).get({"es": "кск", "it": "quante", "pt": "quantas"}.get(язык))
+            if пара is not None:
+                род_ = РОД_ТОВАРА_АКТОВ[язык][ТОВАРЫ_АКТОВ[язык][ключ][-1]]
+                дыры[дыра + "кск"] = alt((пара[0] if род_ == "m" else пара[1],))
             если = ПРИ_ПРЕДЛОГЕ.get(язык, {}).get(ключ)
             if если is not None:
                 # НЕ alt(всех форм): падежная ячейка не принимает счётной

@@ -449,6 +449,33 @@
         ]
       },
       "count_comment": "ячейки one/many НАЗЫВАЮТ вещь и несут артикль; count_one/count_many СЧИТАЮТ её и артикля не несут — «5 livres», а не «5 les livres» (07.09)"
+    },
+    "copula": {
+      "comment": "СВЯЗКА ВРЕМЕНИ И ЧИСЛА, ОБЪЯВЛЕННАЯ ПАКЕТОМ (16.09): «3 di loro sono blu», «3 di loro erano blu». См. тот же довод у испанского и португальского пакетов.",
+      "forms": [
+        "sg_pres",
+        "pl_pres",
+        "sg_past",
+        "pl_past"
+      ],
+      "lexemes": {
+        "essere": [
+          "è",
+          "sono",
+          "era",
+          "erano"
+        ],
+        "rimanere": [
+          "rimane",
+          "rimangono",
+          "rimaneva",
+          "rimanevano"
+        ]
+      },
+      "need": 2,
+      "plural_by_count": false,
+      "follows_its_number": false,
+      "comment_position": "СВЯЗКА НЕ СТОИТ ПОСЛЕ СВОЕГО ЧИСЛА, А СТОИТ ПЕРЕД НИМ ЛИБО ПРИ ОПУЩЕННОМ ИМЕНИ."
     }
   },
   "show_kinds": {
@@ -524,7 +551,8 @@
         "ecco {lex:noun_count:many}.",
         "qui {lex:noun_count:many}.",
         "ecco {n} {lex:noun_count:by_n}.",
-        "che cosa c'è? ecco {n} {lex:noun_count:by_n}."
+        "che cosa c'è? ecco {n} {lex:noun_count:by_n}.",
+        "prima {lex:copula:pl_past} {n} {lex:noun_count:by_n}."
       ]
     },
     "definition": {
