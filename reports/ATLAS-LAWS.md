@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 545 законов
+# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 546 законов
 
 Собран из докстрингов и комментариев `tools`, `courts`, `scripts` орудием
 `tools/law_atlas.py`. Взяты ОБЩИЕ законы — те, что держатся не одним файлом.
@@ -6,7 +6,7 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 7148 разных законов на 9153 упоминаний; сказанных однажды — 6603, и они остаются при своём месте.
+Всего в дереве 7151 разных законов на 9160 упоминаний; сказанных однажды — 6605, и они остаются при своём месте.
 
 
 ## Держат 82 файлов
@@ -202,6 +202,10 @@
   courts/algo_court.py, courts/compsci_court.py, courts/formula_court.py, courts/linalg_court.py, courts/machine_court.py, courts/sequence_court.py … и ещё 3
 - **РОДЫ, ЧЬЁ ЧИСЛО СТРАНИЦ ЕСТЬ ФАКТ О ПРЕДМЕТЕ, А НЕ ВЫБОР ДОМА**  
   tools/compsciforms.py, tools/geomforms.py, tools/homoforms.py, tools/linalgforms.py, tools/mathspaceforms.py, tools/notationforms.py … и ещё 3
+- **СКЕЛЕТ ПРОВЕРЯЕТСЯ У СТРОКИ, КОТОРУЮ ДОМ ПРИЗНАЛ СВОЕЙ ПО НАБОРУ**  
+  tools/adhominem.py, tools/adjorder.py, tools/bothlists.py, tools/directforms.py, tools/homonym.py, tools/noanswer.py … и ещё 3
+- **СТРАНИЦА ОБЯЗАНА СОБИРАТЬСЯ ХОТЬ ОДНОЙ ОБЪЯВЛЕННОЙ РАМКОЙ ДОМА**  
+  tools/adhominem.py, tools/adjorder.py, tools/bothlists.py, tools/directforms.py, tools/homonym.py, tools/noanswer.py … и ещё 3
 - **Т ПОД ЕГО ОБЪЯВЛЕНИЕМ, А НЕ НАД НИМ**  
   tools/absforms.py, tools/deplurforms.py, tools/elisionforms.py, tools/genderforms.py, tools/hayforms.py, tools/homoforms.py … и ещё 3
 - **ЧИТАТЕЛЬ ПОШЁЛ ЗА ОБЪЯВЛЕНИЕМ**  
@@ -219,12 +223,8 @@
   tools/gen_genesis_aggregate.py, tools/gen_genesis_compare.py, tools/gen_genesis_gsmlex.py, tools/gen_genesis_gsmwide.py, tools/gen_genesis_heads.py, tools/gen_genesis_realverbs.py … и ещё 2
 - **РЕЧЬ, СОВПАВШУЮ С НИМ ФОРМОЙ**  
   courts/deplur_court.py, courts/hay_court.py, tools/countlawforms.py, tools/deplurforms.py, tools/elisionforms.py, tools/hayforms.py … и ещё 2
-- **СКЕЛЕТ ПРОВЕРЯЕТСЯ У СТРОКИ, КОТОРУЮ ДОМ ПРИЗНАЛ СВОЕЙ ПО НАБОРУ**  
-  tools/adhominem.py, tools/bothlists.py, tools/directforms.py, tools/homonym.py, tools/noanswer.py, tools/planforms.py … и ещё 2
 - **СЛУЧАЙ РЕДКИЙ, И ПОТОМУ НАЗВАН ВСЛУХ**  
   tools/ceilfloorforms.py, tools/gsmtaskforms.py, tools/inquiryforms.py, tools/mulshareforms.py, tools/plausforms.py, tools/primewalkforms.py … и ещё 2
-- **СТРАНИЦА ОБЯЗАНА СОБИРАТЬСЯ ХОТЬ ОДНОЙ ОБЪЯВЛЕННОЙ РАМКОЙ ДОМА**  
-  tools/adhominem.py, tools/bothlists.py, tools/directforms.py, tools/homonym.py, tools/noanswer.py, tools/planforms.py … и ещё 2
 - **СУД, ЧИТАЮЩИЙ ПО ПРИЗНАКУ, А НЕ ПО ПРИНАДЛЕЖНОСТИ К СВОЕМУ НАБОРУ, ЗОВЁТ ЛОЖЬЮ ЧУЖУЮ**  
   courts/deplur_court.py, courts/hay_court.py, tools/countlawforms.py, tools/deplurforms.py, tools/elisionforms.py, tools/hayforms.py … и ещё 2
 - **ЭТОТ ДОМ ЧИТАЕТСЯ И СУДОМ АРИФМЕТИКИ**  
@@ -343,6 +343,8 @@
   tools/chanceforms.py, tools/closureforms.py, tools/distforms.py, tools/opchoiceforms.py
 - **ПОДСАДКИ ПИСАНЫ ПОРЧЕЙ ЖИВЫХ СТРАНИЦ**  
   courts/kinbearer_court.py, courts/numphrase_court.py, courts/proform_court.py, courts/pronobject_court.py
+- **ПОЛНЫЙ ОБРАЗЕЦ СО ВСЕЯДНОЙ ДЫРОЙ РАВЕН ОБРАЗЦУ БЕЗ КОНЦА**  
+  tools/dyckforms.py, tools/letterwork.py, tools/liarchain.py, tools/nestcalc.py
 - **РОД НЕ ДОЛЖЕН ЗАГЛУШАТЬ РОД**  
   tools/notenough.py, tools/twokeys.py, tools/unitmix.py, tools/whodwells.py
 - **РОД, ОБЪЯВЛЕННЫЙ И НЕ КОВАННЫЙ, ЕСТЬ ОБЕЩАНИЕ, А НЕ РОД**  
@@ -416,8 +418,6 @@
   tools/gen_genesis_genderverb.py, tools/persondistforms.py, tools/personplaceforms.py
 - **ПОДСУДНОСТЬ ОБЪЯВЛЯЕТСЯ РОДОМ ТЕКСТА МИРА, А НЕ ПУТЁМ ФАЙЛА**  
   courts/engram_court.py, courts/halves_court.py, tools/foreign.py
-- **ПОЛНЫЙ ОБРАЗЕЦ СО ВСЕЯДНОЙ ДЫРОЙ РАВЕН ОБРАЗЦУ БЕЗ КОНЦА**  
-  tools/dyckforms.py, tools/letterwork.py, tools/nestcalc.py
 - **ПОРЧА, КОТОРУЮ СУД НЕ ВИДИТ, ЕСТЬ ПОРЧА, КОТОРОЙ ЕГО РУБЕЖ НЕ КАСАЕТСЯ**  
   scripts/agree_traps.py, scripts/copula_band.py, scripts/sign_traps.py
 - **ПРАВИЛО, РАЗЛУЧЁННОЕ СО СВОЕЙ ГРАНИЦЕЙ, БУДЕТ ПРИМЕНЕНО ТАМ, ГДЕ ГРАНИЦА МОЛЧИТ**  
@@ -1089,6 +1089,8 @@
   scripts/trap_series.py, tools/measuregrowforms.py
 - **У ДАТЫ ТРИ ЧИСЛА, И ВЕСА ИХ РАЗНЫ**  
   courts/datecmp_court.py, tools/datecmp.py
+- **УДВОЕНИЕ СТРАНИЦЫ ЕСТЬ ДВЕ СТРАНИЦЫ, А НЕ ОДНА ЛОЖНАЯ**  
+  tools/adjorder.py, tools/liarchain.py
 - **УКАЗАТЕЛЬ СУДИТ РАСХОЖДЕНИЕ, А ПИШЕТ ЛИШЬ ПО ПРОСЬБЕ**  
   tools/court_atlas.py, tools/law_atlas.py
 - **УКАЗАТЕЛЬ, ЗАВИСЯЩИЙ ОТ ВСЯКОЙ СТРОКИ ДЕРЕВА, НЕ МОЖЕТ БЫТЬ СУДОМ**  

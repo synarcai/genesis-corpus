@@ -1,7 +1,7 @@
-# суд	судит	один	ломтей 342/342	строк 465061
-langcount	131434	0
-langform	83433	0
-engram	43025	0
+# суд	судит	один	ломтей 344/344	строк 468571
+langcount	132683	0
+langform	84408	0
+engram	43188	0
 script	20966	0
 rowframe	20146	0
 langmath	17736	0
@@ -16,7 +16,7 @@ joints	3365	0
 shares_percent	3345	0
 discountroad	2808	0
 nomention	2160	0
-article	2054	0
+article	2059	0
 relations_story	1989	0
 actturn	1872	0
 ceilfloor	1340	0
@@ -35,9 +35,9 @@ prop	764	0
 inverse	744	0
 lever	726	0
 mapscale	720	0
+pronoun	720	0
 share_langs	660	0
 ru_story	658	0
-pronoun	652	0
 pctdiff	640	0
 units_langs	640	0
 divsense	628	0
@@ -88,9 +88,7 @@ chancetrap	68	10
 rates	758	12
 tempscale	306	14
 tzone	120	15
-adhominem	36	18
 noanswer	60	20
-dilemma	30	20
 leap	86	21
 angle	122	22
 cond	102	22
@@ -102,13 +100,14 @@ closure	298	30
 estim	228	30
 measuregrow	84	35
 prec	264	36
+adhominem	72	36
 unit	626	40
 sameshare	200	40
 selfmeasure	67	40
-hay	60	45
+dilemma	60	40
+hay	60	46
 longdiv	1382	47
 wmean	104	48
-reply	54	48
 overlap	106	50
 dim	110	52
 quantforms	648	56
@@ -117,7 +116,7 @@ measure	128	60
 pctbase	104	60
 bothlists	60	60
 soundarticle	116	68
-rugram	27811	70
+rugram	27888	70
 median	80	70
 twokeys	70	70
 drop	288	72
@@ -129,11 +128,12 @@ divshare	466	89
 toolforms	2907	90
 grid	144	90
 direct	90	90
+homo	102	91
 links	17566	92
-homo	102	92
 svamp	9856	96
 analog	144	96
 rewrite	144	96
+reply	108	96
 elision	96	96
 letterwork	96	96
 money_story	715	100
@@ -146,18 +146,18 @@ serestar	124	112
 roundneed	112	112
 turn	112	112
 both	186	114
-svgender	120	116
 persondist	116	116
 fipart	150	117
+svgender	120	117
 unit_counts	720	120
 measure_langs	462	120
 neg	442	120
 onestep	350	120
 alphaorder	120	120
+numplace	134	125
 zhclass	210	129
 zerodiv	346	132
 nlarticle	132	132
-numplace	134	134
 squnit	260	135
 idredup	168	135
 money_langs	1213	136
@@ -171,6 +171,8 @@ trharm	154	144
 hypo	144	144
 rolemark	144	144
 numphrase	225	147
+gsmforms	2611	154
+mandateforms	2268	156
 deplur	156	156
 numnoun	160	158
 fuseprep	158	158
@@ -192,9 +194,7 @@ disj	216	216
 viclass	250	219
 orderlaw	280	220
 physlaw	830	221
-gsmforms	2679	222
 primewalk	392	224
-mandateforms	2268	228
 notenough	384	240
 romgender	262	246
 huobj	260	260
@@ -242,7 +242,7 @@ dataformat	800	720
 mathspaces	814	733
 wordorder	736	736
 readnum	3240	745
-langgen	112066	767
+langgen	113041	767
 orderforms	792	776
 statistics	1236	780
 translate	792	792
@@ -259,11 +259,13 @@ inquiry_pl_tr	1537	1005
 program	1253	1030
 genderverb	1065	1065
 case	1158	1122
+adjorder	1155	1155
 inquiry_de_fr	2108	1175
 inquiry_pt_nl	2108	1175
 infer	1242	1188
 sequence	2616	1232
 valence	1256	1256
+liarchain	1260	1260
 pctchain	1294	1294
 place	1296	1296
 episode	10406	1380
@@ -287,7 +289,7 @@ goal	2124	2052
 space	2301	2088
 definitions	2141	2132
 linalg	3726	2176
-arith	177184	2236
+arith	177252	2236
 markdown	3848	2588
 numberline	5330	2647
 markup	3830	2690
