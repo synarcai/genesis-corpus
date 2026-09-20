@@ -127,9 +127,21 @@ def заполнители_домов():
         import holes, calforms, cmpforms, unitforms, physforms, shareforms, moneyforms, searchforms, moneystory, fracforms, relstory
         import defforms, countforms, measurestory, actionpages
         import boundforms, chanceforms, factorforms, leverforms, likelyforms
+        # ДОМ МЕСТ ОТДАЁТ СВОИ ВЕЩИ ВО ВСЕХ ПАДЕЖАХ (16.09, прибор `scripts/mass_census.py`).
+        # Дом объявляет `СЛОВА` — таблицу «книга · от книги · книгой» на девяти языках, — и
+        # мера её не читала: «※ находится слева от лампы» и «※ находится слева от ※» были
+        # ДВА рода, хотя «лампа» есть такая же вещь, как «чашка», и отличается лишь тем, что
+        # её падежная форма не стояла ни в одной таблице, отданной прежде.
+        #
+        #     МЕРА ФОРМЫ, НЕ ЗНАЮЩАЯ ЗАПОЛНИТЕЛЕЙ ДОМА, МЕРЯЕТ НЕ ФОРМУ, А СЛОВАРЬ.
+        #
+        # Замер: роды мира мест 1118 → 108, непокупаемых 1106 → 0. Мера не льстит себе —
+        # она перестаёт считать родом то, что есть ДЫРА, заполненная объявленным словом.
+        import placeforms
     except Exception:
         return вон
     _добавить(searchforms.ЧАСТИ)
+    _добавить(placeforms.СЛОВА)
     for я in moneystory.ЯЗЫКИ.values():
         _добавить(я["вещи"]); _добавить(я.get("товары")); _добавить(я.get("цели"))
     # THE WORD OF THE FRACTION IS A HOLE OF ITS OWN GENUS (holon 03.09): «two
