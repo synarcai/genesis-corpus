@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 543 законов
+# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 544 законов
 
 Собран из докстрингов и комментариев `tools`, `courts`, `scripts` орудием
 `tools/law_atlas.py`. Взяты ОБЩИЕ законы — те, что держатся не одним файлом.
@@ -6,7 +6,7 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 7114 разных законов на 9113 упоминаний; сказанных однажды — 6571, и они остаются при своём месте.
+Всего в дереве 7129 разных законов на 9131 упоминаний; сказанных однажды — 6585, и они остаются при своём месте.
 
 
 ## Держат 82 файлов
@@ -41,12 +41,15 @@
 - **НЕ ПОЙМАНА» ИМЕЕТ ДВЕ ПРИЧИНЫ, И ОНИ ТРЕБУЮТ РАЗНОГО**  
   courts/adhominem_court.py, courts/alphaorder_court.py, courts/badground_court.py, courts/bicond_court.py, courts/boolexpr_court.py, courts/bothlists_court.py … и ещё 25
 
+## Держат 30 файлов
+
+- **ПОДСАДКИ ОБЪЯВЛЕНЫ ЗДЕСЬ, И СУД БЕРЁТ ИХ ОТСЮДА ЖЕ**  
+  tools/adhominem.py, tools/alphaorder.py, tools/badground.py, tools/bicondforms.py, tools/boolforms.py, tools/bothlists.py … и ещё 24
+
 ## Держат 29 файлов
 
 - **МУТАНТОВ НЕ ПОСТРОЕНО ВОВСЕ**  
   tools/countlawforms.py, tools/deaccforms.py, tools/decaseforms.py, tools/deplurforms.py, tools/dosupportforms.py, tools/elisionforms.py … и ещё 23
-- **ПОДСАДКИ ОБЪЯВЛЕНЫ ЗДЕСЬ, И СУД БЕРЁТ ИХ ОТСЮДА ЖЕ**  
-  tools/adhominem.py, tools/alphaorder.py, tools/badground.py, tools/bicondforms.py, tools/boolforms.py, tools/bothlists.py … и ещё 23
 - **ПУТЬ, СКАЗАННЫЙ ТОЛЬКО В ЗОВЕ, ЕСТЬ ПУТЬ, О КОТОРОМ НЕ ОБЪЯВЛЕНО**  
   tools/gen_genesis_aggregate.py, tools/gen_genesis_algebra.py, tools/gen_genesis_algorithms.py, tools/gen_genesis_bignum.py, tools/gen_genesis_conversions.py, tools/gen_genesis_cybernetics.py … и ещё 23
 
@@ -248,6 +251,8 @@
   courts/equation_court.py, courts/inquiry_es_it_court.py, courts/inquiry_pl_tr_court.py, courts/longdiv_court.py, courts/metalang_court.py, courts/relation_court.py … и ещё 1
 - **СУД ЧИТАЕТ ТРИ ЗАКОНА, И ВСЕ ТРИ СОДЕРЖАТЕЛЬНЫ**  
   tools/decaseforms.py, tools/fuseprepforms.py, tools/idredupforms.py, tools/swclassforms.py, tools/trharmforms.py, tools/viclassforms.py … и ещё 1
+- **ЦЕЛЬ ОБЪЯВЛЯЕТСЯ СТРОКОЙ, А НЕ ВПИСЫВАЕТСЯ В ВЫЗОВ**  
+  tools/gen_genesis_geometry.py, tools/gen_genesis_liarchain.py, tools/gen_genesis_linalg.py, tools/gen_genesis_md_latex.py, tools/gen_genesis_numbers.py, tools/gen_genesis_sequences.py … и ещё 1
 
 ## Держат 6 файлов
 
@@ -273,8 +278,6 @@
   scripts/elision.py, tools/cmpforms.py, tools/frgram.py, tools/romgram.py, tools/timeunits.py, tools/topicforms.py
 - **ТАМ, ГДЕ МЕРНОСТЬ ОДНА: ЧИСЛА ПРИ НЕИЗМЕННОЙ ЗАПИСИ**  
   tools/divshareforms.py, tools/mathfoundforms.py, tools/numtheoryforms.py, tools/personforms.py, tools/verbalforms.py, tools/wholeshareforms.py
-- **ЦЕЛЬ ОБЪЯВЛЯЕТСЯ СТРОКОЙ, А НЕ ВПИСЫВАЕТСЯ В ВЫЗОВ**  
-  tools/gen_genesis_geometry.py, tools/gen_genesis_linalg.py, tools/gen_genesis_md_latex.py, tools/gen_genesis_numbers.py, tools/gen_genesis_sequences.py, tools/gen_genesis_surfaces.py
 - **ЯЗЫКИ, ЧЕЙ ЗАКОН ЗДЕСЬ НАЗВАН**  
   tools/gen_genesis_genderverb.py, tools/numnounforms.py, tools/numplaceforms.py, tools/persondistforms.py, tools/personplaceforms.py, tools/romgenderforms.py
 
@@ -801,6 +804,8 @@
   courts/calendar_court.py, courts/physlaw_court.py
 - **ПЕРЕЕЗД ИМЕНИ ЕСТЬ ПРАВКА ВСЕХ, КТО ЕГО НАЗЫВАЕТ**  
   scripts/half_law.py, tools/letters.py
+- **ПЕРЕЕЗД, ПОВТОРИВШИЙ ФУНКЦИЮ И НЕ ПОВТОРИВШИЙ СБОРКУ, ПЕРЕВЁЗ ПОЛОВИНУ ДЕЛА**  
+  tools/gen_genesis_liarchain.py, tools/markupforms.py
 - **ПЕРЕКОС, НАЗВАННЫЙ ЧИСЛОМ, ЕСТЬ РАБОТА, ЖДУЩАЯ СВОЕГО ДНЯ**  
   scripts/form_matrix.py, tools/gen_genesis_depletion.py
 - **ПЕРЕКОС, У КОТОРОГО РЕДКИЙ РОД ЗДОРОВ, ЛЕЧИТСЯ НЕ ПРИБАВКОЙ К РЕДКОМУ, А РАЗДЕЛЕНИЕМ**  

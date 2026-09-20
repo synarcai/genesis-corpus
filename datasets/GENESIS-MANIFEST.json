@@ -236,6 +236,25 @@
       ]
     },
     {
+      "name": "liarchain",
+      "file": "datasets/genesis_liarchain.txt",
+      "genre": "THE CHAIN OF WITNESSES — WHO TELLS THE TRUTH WHEN EACH SPEAKS OF THE ONE BEFORE (16.09, the BBH genus `web_of_lies`). Measured across the corpus: lines saying «говорит правду» / «tells the truth» of a PERSON — ZERO. The corpus knew FALSEHOOD AS A PROPERTY OF A LINE (every court calls a page false) and did not know FALSEHOOD AS TESTIMONY ABOUT ANOTHER. A CHAIN OF WITNESSES IS NOT A CHAIN OF CONNECTIVES: «not not true» and «Vera says that Anya lies» are computed alike — a double negation — and teach different things. The first is a rule of NOTATION, the second a rule of TRUST, and from the skill of cancelling negations the skill of asking «and who said that?» does not follow. A WITNESS TELLS THE TRUTH EXACTLY WHEN HIS TESTIMONY MATCHES THE FACT. Four genera: DIRECT (one step, no negation), NEGATION (a witness about a liar is truthful), CHAIN (three and four links, the answer walked and not remembered), and ABOUT THE MIDDLE — the question asks not about the last but about the MIDDLE of the chain, for otherwise a reader learns that the question is always about the edge and answers by position rather than by fact. THE ANSWER CARRIES THE WALK, NOT ONE WORD: «no: Anya lies, so Vera, who spoke truly of her, lies». A bare «yes» teaches to name the outcome, not to walk the chain — AND SUCH A PAGE CANNOT BE CHECKED EXCEPT BY BELIEVING IT. Persons are taken FROM THE LANGUAGE PACK and not declared a second time here: a name outside the declared row makes the line none of this house's business, and the court is silent about it.",
+      "act": [
+        "decide"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
+    },
+    {
       "name": "nestcalc",
       "file": "datasets/genesis_nestcalc.txt",
       "genre": "MULTI-STEP ARITHMETIC — THE PATH, NOT ONLY THE TOTAL (14.09, rung two, asked for by holon-f9 for BBH's `multistep_arithmetic_two`). Measured against the свод that day: lines with A BRACKET INSIDE A BRACKET — ZERO. A bracket with two signs the corpus has (334 lines, «(8 + 5) + 3 × 8 = 45»), a nested one not once; and nowhere is it said IN WHAT ORDER the steps go — only the total is said. THE TOTAL IS NOT THE PATH: «((3 + 5) × 2) − 7 = 9» is true and teaches nothing, because it does not show what was counted first. This world names THE STEPS — «сначала 3 + 5 = 8, потом 8 × 2 = 16, потом 16 − 7 = 9» — and every step is a number checkable on its own, by the same law under which the world of the plan demands a step end in a checkable number. Three genera by WHAT DECIDES THE ORDER OF STEPS: a bracket inside a bracket (inward, then outward, then the rest); two independent brackets counted apart and only then joined; and a bracket plus PRECEDENCE («×» before «−»), where a reader counting left to right gets a different number and sees it here. The court checks both: the expression is re-parsed by precedence, and every step must be arithmetically true, must take BOTH its operands either from the expression's own numbers or from earlier steps' results, the count of steps must equal the count of signs, and the last result must equal the stated answer. A step that took a number from nowhere is a lie even when the total agrees. A declared boundary: the numbers are small and no step goes below zero — negatives exist in the corpus (464 lines) but they are another deed, and mixing them with the order of steps would teach two things at once.",
@@ -3289,10 +3308,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 44566118,
+      "size": 44879806,
       "tiers": [],
       "text": "mix",
-      "lines": 466156
+      "lines": 467416
     },
     {
       "name": "fuseprep",
@@ -11411,10 +11430,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 36464940,
+      "size": 36778628,
       "tiers": [],
       "text": "mix",
-      "lines": 417689
+      "lines": 418949
     },
     {
       "name": "school_biling_v2c",
