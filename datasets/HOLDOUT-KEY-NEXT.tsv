@@ -140,6 +140,8 @@
 9	у Веры было 22 книги. она отдала 13 книг Ивану. сколько книг у Веры теперь?	9: 22 − 13 = 9.	svampforms · кому
 5	у Вани было 14 шаров. Вера взяла у него 9 шаров. сколько шаров у Вани теперь?	5: 14 − 9 = 5.	svampforms · у_него
 9	у Веры было 22 книги. Иван взял у неё 13 книг. сколько книг у Веры теперь?	9: 22 − 13 = 9.	svampforms · у_него
+42	1 шар стоит 7 ₽. сколько стоят 6 шаров?	42 ₽: 6 × 7 = 42.	svampforms · единица
+42	1 книга стоит 7 ₽. сколько стоят 6 книг?	42 ₽: 6 × 7 = 42.	svampforms · единица
 23	у Вани 14 страниц чтения и 9 страниц математики. сколько страниц у него всего?	23 страницы: 14 + 9 = 23.	svampforms · товар
 35	у Веры 22 страницы чтения и 13 страниц математики. сколько страниц у неё всего?	35 страниц: 22 + 13 = 35.	svampforms · товар
 5	у Вани было 14 шаров. он потерял 9 из них. сколько шаров у него осталось?	5: 14 − 9 = 5.	svampforms · потерял
@@ -234,6 +236,8 @@
 13	Paul hatte 22 Bücher. er gab einige weg. jetzt hat er noch 9 Bücher. wie viele Bücher gab er weg?	13: 22 − 9 = 13.	svampforms · некоторые
 23	Lena hat 14 rote Bälle und 9 blaue Bälle. wie viele Bälle hat Lena insgesamt?	23 Bälle: 14 + 9 = 23.	svampforms · итог
 35	Paul hat 22 rote Bücher und 13 blaue Bücher. wie viele Bücher hat Paul insgesamt?	35 Bücher: 22 + 13 = 35.	svampforms · итог
+23	Lena hat 14 rote Bälle und 9 blaue Bälle. wie viele Bälle hat Lena?	insgesamt 23 Bälle: 14 + 9 = 23.	svampforms · итог_всего
+35	Paul hat 22 rote Bücher und 13 blaue Bücher. wie viele Bücher hat Paul?	insgesamt 35 Bücher: 22 + 13 = 35.	svampforms · итог_всего
 5	Lena hatte 14 Bälle. sie gab 9 weg. wie viele hat sie jetzt?	sie hat jetzt noch 5: 14 − 9 = 5.	svampforms · осталось
 9	Paul hatte 22 Bücher. er gab 13 weg. wie viele hat er jetzt?	er hat jetzt noch 9: 22 − 13 = 9.	svampforms · осталось
 5	Lena hatte 14 Bälle. sie gab 9 davon an Paul. wie viele Bälle hat sie jetzt?	5: 14 − 9 = 5.	svampforms · из_них
@@ -250,6 +254,8 @@
 9	Paul hatte 22 Bücher. er gab Felix 13 Bücher. wie viele Bücher hat Paul jetzt?	9: 22 − 13 = 9.	svampforms · кому
 5	Lena hatte 14 Bälle. Paul nahm ihr 9 Bälle weg. wie viele Bälle hat Lena jetzt?	5: 14 − 9 = 5.	svampforms · у_него
 9	Paul hatte 22 Bücher. Felix nahm ihm 13 Bücher weg. wie viele Bücher hat Paul jetzt?	9: 22 − 13 = 9.	svampforms · у_него
+42	1 Ball kostet 7 €. wie viel kosten 6 Bälle?	42 €: 6 × 7 = 42.	svampforms · единица
+42	1 Buch kostet 7 €. wie viel kosten 6 Bücher?	42 €: 6 × 7 = 42.	svampforms · единица
 23	Lena hat 14 Seiten Lesehausaufgaben und 9 Seiten Mathehausaufgaben. wie viele Seiten Hausaufgaben hat sie insgesamt?	23 Seiten Hausaufgaben: 14 + 9 = 23.	svampforms · товар
 35	Paul hat 22 Seiten Lesehausaufgaben und 13 Seiten Mathehausaufgaben. wie viele Seiten Hausaufgaben hat er insgesamt?	35 Seiten Hausaufgaben: 22 + 13 = 35.	svampforms · товар
 5	Lena hatte 14 Bälle. sie verlor 9 davon. wie viele Bälle hat sie noch?	5: 14 − 9 = 5.	svampforms · потерял
@@ -344,6 +350,8 @@
 13	Paul avait 22 livres. il en a donné quelques-unes. maintenant il lui en reste 9. combien de livres a-t-il données ?	13 : 22 − 9 = 13.	svampforms · некоторые
 23	Marie a 14 ballons rouges et 9 ballons bleues. combien de ballons Marie a-t-elle en tout ?	23 ballons : 14 + 9 = 23.	svampforms · итог
 35	Paul a 22 livres rouges et 13 livres bleues. combien de livres Paul a-t-il en tout ?	35 livres : 22 + 13 = 35.	svampforms · итог
+23	Marie a 14 ballons rouges et 9 ballons bleues. combien de ballons Marie a-t-elle ?	au total 23 ballons : 14 + 9 = 23.	svampforms · итог_всего
+35	Paul a 22 livres rouges et 13 livres bleues. combien de livres Paul a-t-il ?	au total 35 livres : 22 + 13 = 35.	svampforms · итог_всего
 5	Marie avait 14 ballons. elle en a donné 9. combien en a-t-elle maintenant ?	il lui en reste 5 : 14 − 9 = 5.	svampforms · осталось
 9	Paul avait 22 livres. il en a donné 13. combien en a-t-il maintenant ?	il lui en reste 9 : 22 − 13 = 9.	svampforms · осталось
 5	Marie avait 14 ballons. elle en a donné 9 à Paul. combien de ballons a-t-elle maintenant ?	5 : 14 − 9 = 5.	svampforms · из_них
@@ -360,6 +368,8 @@
 9	Paul avait 22 livres. il a donné 13 livres à Hugo. combien de livres Paul a-t-il maintenant ?	9 : 22 − 13 = 9.	svampforms · кому
 5	Marie avait 14 ballons. Paul lui a pris 9 ballons. combien de ballons Marie a-t-elle maintenant ?	5 : 14 − 9 = 5.	svampforms · у_него
 9	Paul avait 22 livres. Hugo lui a pris 13 livres. combien de livres Paul a-t-il maintenant ?	9 : 22 − 13 = 9.	svampforms · у_него
+42	1 ballon coûte 7 €. combien coûtent 6 ballons ?	42 € : 6 × 7 = 42.	svampforms · единица
+42	1 livre coûte 7 €. combien coûtent 6 livres ?	42 € : 6 × 7 = 42.	svampforms · единица
 23	Marie a 14 pages de lecture et 9 pages de maths. combien de pages de devoirs a-t-elle en tout ?	23 pages de devoirs : 14 + 9 = 23.	svampforms · товар
 35	Paul a 22 pages de lecture et 13 pages de maths. combien de pages de devoirs a-t-il en tout ?	35 pages de devoirs : 22 + 13 = 35.	svampforms · товар
 5	Marie avait 14 ballons. elle en a perdu 9. combien de ballons lui reste-t-il ?	5 : 14 − 9 = 5.	svampforms · потерял
@@ -456,6 +466,8 @@
 13	Pablo tenía 22 libros. dio algunos. ahora le quedan 9 libros. ¿cuántos libros dio?	13: 22 − 9 = 13.	svampforms · некоторые
 23	Marta tiene 14 balones rojos y 9 balones azules. ¿cuántos balones tiene Marta en total?	23 balones: 14 + 9 = 23.	svampforms · итог
 35	Pablo tiene 22 libros rojos y 13 libros azules. ¿cuántos libros tiene Pablo en total?	35 libros: 22 + 13 = 35.	svampforms · итог
+23	Marta tiene 14 balones rojos y 9 balones azules. ¿cuántos balones tiene Marta?	en total 23 balones: 14 + 9 = 23.	svampforms · итог_всего
+35	Pablo tiene 22 libros rojos y 13 libros azules. ¿cuántos libros tiene Pablo?	en total 35 libros: 22 + 13 = 35.	svampforms · итог_всего
 5	Marta tenía 14 balones. dio 9. ¿cuántos tiene ahora?	ahora le quedan 5: 14 − 9 = 5.	svampforms · осталось
 9	Pablo tenía 22 libros. dio 13. ¿cuántos tiene ahora?	ahora le quedan 9: 22 − 13 = 9.	svampforms · осталось
 5	Marta tenía 14 balones. dio 9 de ellos a Pablo. ¿cuántos balones tiene ahora?	5: 14 − 9 = 5.	svampforms · из_них
@@ -472,6 +484,8 @@
 9	Pablo tenía 22 libros. dio 13 libros a Diego. ¿cuántos libros tiene Pablo ahora?	9: 22 − 13 = 9.	svampforms · кому
 5	Marta tenía 14 balones. Pablo le quitó 9 balones. ¿cuántos balones tiene Marta ahora?	5: 14 − 9 = 5.	svampforms · у_него
 9	Pablo tenía 22 libros. Diego le quitó 13 libros. ¿cuántos libros tiene Pablo ahora?	9: 22 − 13 = 9.	svampforms · у_него
+42	1 balón cuesta 7 €. ¿cuánto cuestan 6 balones?	42 €: 6 × 7 = 42.	svampforms · единица
+42	1 libro cuesta 7 €. ¿cuánto cuestan 6 libros?	42 €: 6 × 7 = 42.	svampforms · единица
 23	Marta tiene 14 páginas de lectura y 9 páginas de matemáticas. ¿cuántas páginas de deberes tiene en total?	23 páginas de deberes: 14 + 9 = 23.	svampforms · товар
 35	Pablo tiene 22 páginas de lectura y 13 páginas de matemáticas. ¿cuántas páginas de deberes tiene en total?	35 páginas de deberes: 22 + 13 = 35.	svampforms · товар
 5	Marta tenía 14 balones. perdió 9. ¿qué cantidad de balones le queda?	5: 14 − 9 = 5.	svampforms · потерял
@@ -566,6 +580,8 @@
 13	Luca aveva 22 libri. ne ha dati alcuni. ora gli restano 9 libri. quanti libri ha dato?	13: 22 − 9 = 13.	svampforms · некоторые
 23	Giulia ha 14 palloni rossi e 9 palloni blu. quanti palloni ha Giulia in tutto?	23 palloni: 14 + 9 = 23.	svampforms · итог
 35	Luca ha 22 libri rossi e 13 libri blu. quanti libri ha Luca in tutto?	35 libri: 22 + 13 = 35.	svampforms · итог
+23	Giulia ha 14 palloni rossi e 9 palloni blu. quanti palloni ha Giulia?	in tutto 23 palloni: 14 + 9 = 23.	svampforms · итог_всего
+35	Luca ha 22 libri rossi e 13 libri blu. quanti libri ha Luca?	in tutto 35 libri: 22 + 13 = 35.	svampforms · итог_всего
 5	Giulia aveva 14 palloni. ne ha dati 9. quanti ne ha adesso?	le ne restano 5: 14 − 9 = 5.	svampforms · осталось
 9	Luca aveva 22 libri. ne ha dati 13. quanti ne ha adesso?	gli ne restano 9: 22 − 13 = 9.	svampforms · осталось
 5	Giulia aveva 14 palloni. ne ha dati 9 a Luca. quanti palloni ha adesso?	5: 14 − 9 = 5.	svampforms · из_них
@@ -582,6 +598,8 @@
 9	Luca aveva 22 libri. ha dato 13 libri a Paolo. quanti libri ha Luca adesso?	9: 22 − 13 = 9.	svampforms · кому
 5	Giulia aveva 14 palloni. Luca le ha preso 9 palloni. quanti palloni ha Giulia adesso?	5: 14 − 9 = 5.	svampforms · у_него
 9	Luca aveva 22 libri. Paolo gli ha preso 13 libri. quanti libri ha Luca adesso?	9: 22 − 13 = 9.	svampforms · у_него
+42	1 pallone costa 7 €. quanto costano 6 palloni?	42 €: 6 × 7 = 42.	svampforms · единица
+42	1 libro costa 7 €. quanto costano 6 libri?	42 €: 6 × 7 = 42.	svampforms · единица
 23	Giulia ha 14 pagine di lettura e 9 pagine di matematica. quante pagine di compiti ha in tutto?	23 pagine di compiti: 14 + 9 = 23.	svampforms · товар
 35	Luca ha 22 pagine di lettura e 13 pagine di matematica. quante pagine di compiti ha in tutto?	35 pagine di compiti: 22 + 13 = 35.	svampforms · товар
 5	Giulia aveva 14 palloni. ha perso 9 palloni. che quantità di palloni ha ancora?	5: 14 − 9 = 5.	svampforms · потерял
@@ -676,6 +694,8 @@
 13	o Pedro tinha 22 livros. deu alguns. agora tem 9 livros. quantos livros deu?	13: 22 − 9 = 13.	svampforms · некоторые
 23	a Maria tem 14 bolas vermelhas e 9 bolas azuis. quantas bolas tem a Maria no total?	23 bolas: 14 + 9 = 23.	svampforms · итог
 35	o Pedro tem 22 livros vermelhos e 13 livros azuis. quantos livros tem o Pedro no total?	35 livros: 22 + 13 = 35.	svampforms · итог
+23	a Maria tem 14 bolas vermelhas e 9 bolas azuis. quantas bolas tem a Maria?	no total 23 bolas: 14 + 9 = 23.	svampforms · итог_всего
+35	o Pedro tem 22 livros vermelhos e 13 livros azuis. quantos livros tem o Pedro?	no total 35 livros: 22 + 13 = 35.	svampforms · итог_всего
 5	a Maria tinha 14 bolas. deu 9. quantas tem agora?	agora tem 5: 14 − 9 = 5.	svampforms · осталось
 9	o Pedro tinha 22 livros. deu 13. quantos tem agora?	agora tem 9: 22 − 13 = 9.	svampforms · осталось
 5	a Maria tinha 14 bolas. deu 9 delas ao Pedro. quantas bolas tem agora?	5: 14 − 9 = 5.	svampforms · из_них
@@ -692,6 +712,8 @@
 9	o Pedro tinha 22 livros. deu 13 livros ao Tiago. quantos livros tem o Pedro agora?	9: 22 − 13 = 9.	svampforms · кому
 5	a Maria tinha 14 bolas. o Pedro tirou-lhe 9 bolas. quantas bolas tem a Maria agora?	5: 14 − 9 = 5.	svampforms · у_него
 9	o Pedro tinha 22 livros. o Tiago tirou-lhe 13 livros. quantos livros tem o Pedro agora?	9: 22 − 13 = 9.	svampforms · у_него
+42	1 bola custa 7 €. quanto custam 6 bolas?	42 €: 6 × 7 = 42.	svampforms · единица
+42	1 livro custa 7 €. quanto custam 6 livros?	42 €: 6 × 7 = 42.	svampforms · единица
 23	a Maria tem 14 páginas de leitura e 9 páginas de matemática. quantas páginas de trabalhos tem no total?	23 páginas de trabalhos: 14 + 9 = 23.	svampforms · товар
 35	o Pedro tem 22 páginas de leitura e 13 páginas de matemática. quantas páginas de trabalhos tem no total?	35 páginas de trabalhos: 22 + 13 = 35.	svampforms · товар
 5	a Maria tinha 14 bolas. perdeu 9. que quantidade de bolas lhe resta?	5: 14 − 9 = 5.	svampforms · потерял
@@ -786,6 +808,8 @@
 13	Sem had 22 boeken. hij gaf er een paar weg. nu heeft hij er nog 9. hoeveel boeken gaf hij weg?	13: 22 − 9 = 13.	svampforms · некоторые
 23	Emma heeft 14 rode ballen en 9 blauwe ballen. hoeveel ballen heeft Emma in totaal?	23 ballen: 14 + 9 = 23.	svampforms · итог
 35	Sem heeft 22 rode boeken en 13 blauwe boeken. hoeveel boeken heeft Sem in totaal?	35 boeken: 22 + 13 = 35.	svampforms · итог
+23	Emma heeft 14 rode ballen en 9 blauwe ballen. hoeveel ballen heeft Emma?	in totaal 23 ballen: 14 + 9 = 23.	svampforms · итог_всего
+35	Sem heeft 22 rode boeken en 13 blauwe boeken. hoeveel boeken heeft Sem?	in totaal 35 boeken: 22 + 13 = 35.	svampforms · итог_всего
 5	Emma had 14 ballen. ze gaf er 9 weg. hoeveel heeft ze nu?	ze heeft er nu nog 5: 14 − 9 = 5.	svampforms · осталось
 9	Sem had 22 boeken. hij gaf er 13 weg. hoeveel heeft hij nu?	hij heeft er nu nog 9: 22 − 13 = 9.	svampforms · осталось
 5	Emma had 14 ballen. ze gaf er 9 aan Sem. hoeveel ballen heeft ze nu?	5: 14 − 9 = 5.	svampforms · из_них
@@ -802,6 +826,8 @@
 9	Sem had 22 boeken. hij gaf 13 boeken aan Bram. hoeveel boeken heeft Sem nu?	9: 22 − 13 = 9.	svampforms · кому
 5	Emma had 14 ballen. Sem nam 9 ballen van haar af. hoeveel ballen heeft Emma nu?	5: 14 − 9 = 5.	svampforms · у_него
 9	Sem had 22 boeken. Bram nam 13 boeken van hem af. hoeveel boeken heeft Sem nu?	9: 22 − 13 = 9.	svampforms · у_него
+42	1 bal kost 7 €. hoeveel kosten 6 ballen?	42 €: 6 × 7 = 42.	svampforms · единица
+42	1 boek kost 7 €. hoeveel kosten 6 boeken?	42 €: 6 × 7 = 42.	svampforms · единица
 23	Emma heeft 14 pagina's leeshuiswerk en 9 pagina's rekenhuiswerk. hoeveel pagina's huiswerk heeft ze in totaal?	23 pagina's huiswerk: 14 + 9 = 23.	svampforms · товар
 35	Sem heeft 22 pagina's leeshuiswerk en 13 pagina's rekenhuiswerk. hoeveel pagina's huiswerk heeft hij in totaal?	35 pagina's huiswerk: 22 + 13 = 35.	svampforms · товар
 5	Emma had 14 ballen. ze verloor er 9. hoeveel ballen heeft ze nog?	5: 14 − 9 = 5.	svampforms · потерял
@@ -896,6 +922,8 @@
 13	Piotr miał 22 książki. oddał kilka. teraz ma 9 książek. ile książek oddał?	13: 22 − 9 = 13.	svampforms · некоторые
 23	Maria ma 14 czerwonych piłek i 9 niebieskich piłek. ile piłek ma Maria razem?	23 piłki: 14 + 9 = 23.	svampforms · итог
 35	Piotr ma 22 czerwonych książek i 13 niebieskich książek. ile książek ma Piotr razem?	35 książek: 22 + 13 = 35.	svampforms · итог
+23	Maria ma 14 czerwonych piłek i 9 niebieskich piłek. ile piłek ma Maria?	łącznie 23 piłki: 14 + 9 = 23.	svampforms · итог_всего
+35	Piotr ma 22 czerwonych książek i 13 niebieskich książek. ile książek ma Piotr?	łącznie 35 książek: 22 + 13 = 35.	svampforms · итог_всего
 5	Maria miała 14 piłek. oddała 9. ile ma teraz?	teraz zostało jej 5: 14 − 9 = 5.	svampforms · осталось
 9	Piotr miał 22 książki. oddał 13. ile ma teraz?	teraz zostało mu 9: 22 − 13 = 9.	svampforms · осталось
 5	Maria miała 14 piłek. oddała 9 z nich Piotrowi. ile piłek ma teraz?	5: 14 − 9 = 5.	svampforms · из_них
@@ -912,6 +940,8 @@
 9	Piotr miał 22 książki. oddał 13 książek Pawłowi. ile książek ma Piotr teraz?	9: 22 − 13 = 9.	svampforms · кому
 5	Maria miała 14 piłek. Piotr zabrał jej 9 piłek. ile piłek ma Maria teraz?	5: 14 − 9 = 5.	svampforms · у_него
 9	Piotr miał 22 książki. Paweł zabrał mu 13 książek. ile książek ma Piotr teraz?	9: 22 − 13 = 9.	svampforms · у_него
+42	1 piłka kosztuje 7 zł. ile kosztują 6 piłek?	42 zł: 6 × 7 = 42.	svampforms · единица
+42	1 książka kosztuje 7 zł. ile kosztują 6 książek?	42 zł: 6 × 7 = 42.	svampforms · единица
 23	Maria ma 14 stron czytania i 9 stron matematyki. ile stron ma razem?	23 strony: 14 + 9 = 23.	svampforms · товар
 35	Piotr ma 22 strony czytania i 13 stron matematyki. ile stron ma razem?	35 stron: 22 + 13 = 35.	svampforms · товар
 5	Maria miała 14 piłek. zgubiła 9 z nich. ile piłek jej zostało?	5: 14 − 9 = 5.	svampforms · потерял
@@ -2198,12 +2228,12 @@ nic: podsumowanie milczy o pudełku	w folderze są 33 wpisy. w pudełku jest 29 
 24	odejmij 28 od 52. ile to jest?	24.	opforms · повеление
 24	odejmij 28 od 52. ile to jest?	24: 52 − 28 = 24.	opforms · повеление_леджер
 24	odejmij 28 od 52. ile to jest?	24: 52 minus 28 = 24, 52 − 28 = 24.	opforms · повеление_равенством
-9	podziel 72 na 8 równe części. ile wychodzi?	9.	opforms · повеление
-9	podziel 72 na 8 równe części. ile wychodzi?	9: 72 ÷ 8 = 9.	opforms · повеление_леджер
-9	podziel 72 na 8 równe części. ile wychodzi?	9: 72 podzielone przez 8 = 9, 72 ÷ 8 = 9.	opforms · повеление_равенством
-13	podziel 65 na 5 równe części. ile to jest?	13.	opforms · повеление
-13	podziel 65 na 5 równe części. ile to jest?	13: 65 ÷ 5 = 13.	opforms · повеление_леджер
-13	podziel 65 na 5 równe części. ile to jest?	13: 65 podzielone przez 5 = 13, 65 ÷ 5 = 13.	opforms · повеление_равенством
+9	podziel 72 na 8 równych części. ile wychodzi?	9.	opforms · повеление
+9	podziel 72 na 8 równych części. ile wychodzi?	9: 72 ÷ 8 = 9.	opforms · повеление_леджер
+9	podziel 72 na 8 równych części. ile wychodzi?	9: 72 podzielone przez 8 = 9, 72 ÷ 8 = 9.	opforms · повеление_равенством
+13	podziel 65 na 5 równych części. ile to jest?	13.	opforms · повеление
+13	podziel 65 na 5 równych części. ile to jest?	13: 65 ÷ 5 = 13.	opforms · повеление_леджер
+13	podziel 65 na 5 równych części. ile to jest?	13: 65 podzielone przez 5 = 13, 65 ÷ 5 = 13.	opforms · повеление_равенством
 7	podziel 56 przez 8. ile wychodzi?	7.	opforms · повеление
 7	podziel 56 przez 8. ile wychodzi?	7: 56 ÷ 8 = 7.	opforms · повеление_леджер
 7	podziel 56 przez 8. ile wychodzi?	7: 56 podzielone przez 8 = 7, 56 ÷ 8 = 7.	opforms · повеление_равенством

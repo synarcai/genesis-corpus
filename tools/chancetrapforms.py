@@ -50,6 +50,7 @@ from fractions import Fraction
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import rugram  # noqa: E402 — счётная форма берётся у пакета корпуса, а не у догадки
+from plural import by_count  # noqa: E402 — английское множественное тем же орудием, что у всех
 
 ЯЗЫКИ = ("ru", "en")
 РОДЫ = ("среднего нет ни у кого", "среднее скрывает разброс", "частота не есть вероятность",
@@ -155,7 +156,7 @@ import rugram  # noqa: E402 — счётная форма берётся у па
                                   "gathered; in {дождливый} — {зд} umbrellas and {гд} "
                                   "mushrooms. They grow together: {зр} more umbrellas, {гр} "
                                   "more mushrooms. But umbrellas do not grow mushrooms: there "
-                                  "were {дс} rainy days in {сухой} and {дд} in {дождливый} — "
+                                  "{был_дс} {дс} rainy {день_дс} in {сухой} and {дд} in {дождливый} — "
                                   "and they are the cause of BOTH. TOGETHER DOES NOT MEAN "
                                   "BECAUSE: two numbers may have a THIRD common cause.",
         "спрошенное": "three {вместилищах} hold {a}, {b} and {c} {счётное}; how many of the "
@@ -209,6 +210,18 @@ def страницы():
                 сухой=сру if язык == "ru" else сан,
                 дождливый=дру if язык == "ru" else дан,
                 зс=зс, зд=зд, гс=гс, гд=гд, дс=дс, дд=дд,
+                # СВЯЗКА И ИМЯ ГНУТСЯ ПО ЧИСЛУ, А НЕ СТОЯТ ЛИТЕРАЛОМ (16.09, прибор
+                # `scripts/copula_band.py`): при одном дождливом дне рамка писала «there
+                # were 1 rainy days» — ложь, стоявшая в своде и видимая простым глазом.
+                #
+                #     ЛИТЕРАЛ МНОЖЕСТВЕННОГО ВЕРЕН, ПОКУДА ЧИСЛО БОЛЬШЕ ОДНОГО, И ЭТО НЕ
+                #     ЗАКОН, А ЖРЕБИЙ: он держится, пока набор чисел не тронут, и падает
+                #     молча в тот день, когда в него вписали единицу.
+                #
+                # Лишние ключи русской рамке не мешают: формат берёт названные, прочие
+                # проходят мимо.
+                был_дс="there was" if дс == 1 else "there were",
+                день_дс=by_count(дс, "days"),
                 зр=зд - зс, гр=гд - гс)] = (язык, "вместе не значит из-за")
     return вон
 

@@ -6,13 +6,13 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 7027 разных законов на 9009 упоминаний; сказанных однажды — 6496, и они остаются при своём месте.
+Всего в дереве 7059 разных законов на 9043 упоминаний; сказанных однажды — 6528, и они остаются при своём месте.
 
 
-## Держат 81 файлов
+## Держат 82 файлов
 
 - **ПРОБА НА ЗАВЕДОМО ИЗВЕСТНОМ**  
-  scripts/agree_skew.py, scripts/agree_traps.py, scripts/article_sound.py, scripts/asked_uncounted.py, scripts/bench_leak.py, scripts/broken_law.py … и ещё 75
+  scripts/agree_skew.py, scripts/agree_traps.py, scripts/article_sound.py, scripts/asked_uncounted.py, scripts/bench_leak.py, scripts/broken_law.py … и ещё 76
 
 ## Держат 70 файлов
 
@@ -146,6 +146,8 @@
 
 ## Держат 13 файлов
 
+- **ПРИБОР, ЗЕЛЕНЕЮЩИЙ ОТ НУЛЯ НАХОДОК, ОБЯЗАН ДОКАЗАТЬ, ЧТО УМЕЕТ НАХОДИТЬ**  
+  scripts/broken_law.py, scripts/build_dated.py, scripts/class_name_honest.py, scripts/genre_measured.py, scripts/ladder_full.py, scripts/margin_census.py … и ещё 7
 - **РАМКА ПОРОДИЛА СТРАНИЦУ — ОСТАЛСЯ СЧЁТ**  
   tools/addshareforms.py, tools/amendforms.py, tools/boundforms.py, tools/chanceforms.py, tools/cmpshareforms.py, tools/divruleforms.py … и ещё 7
 - **СКЕЛЕТ СТРАНИЦЫ ОБЯЗАН БЫТЬ ОДНИМ ИЗ ОБЪЯВЛЕННЫХ**  
@@ -155,8 +157,6 @@
 
 - **ЗНАНИЕ, ЗАПИСАННОЕ ДАННЫМИ И КОДОМ, НО НЕ СТРАНИЦЕЙ, ЕСТЬ ЗНАНИЕ ПИШУЩЕГО, А НЕ ЧИТАЮЩЕГО**  
   tools/countlawforms.py, tools/decaseforms.py, tools/deplurforms.py, tools/dosupportforms.py, tools/elisionforms.py, tools/fuseprepforms.py … и ещё 6
-- **ПРИБОР, ЗЕЛЕНЕЮЩИЙ ОТ НУЛЯ НАХОДОК, ОБЯЗАН ДОКАЗАТЬ, ЧТО УМЕЕТ НАХОДИТЬ**  
-  scripts/broken_law.py, scripts/build_dated.py, scripts/genre_measured.py, scripts/ladder_full.py, scripts/margin_census.py, scripts/name_crossed.py … и ещё 6
 
 ## Держат 11 файлов
 

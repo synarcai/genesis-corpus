@@ -16,8 +16,13 @@ from plural import singular
 # всех этих домов и судов — шрам 06.09, когда семь глаголов моста, внесённых сюда, уронили
 # суд эпизода 986 ложными строками в одиннадцати мирах. Список сверяется прибором
 # `scripts/root_passport.py`, а не памятью.
-ЧИТАЮТ = ("gen_genesis_gsmlex", "gen_genesis_everyday", "gen_genesis_realverbs",
-          "gen_genesis_gsmwide", "gen_genesis_story_chain", "gen_genesis_items",
+# ДВА ИМЕНИ ПЕРЕЕХАЛИ, ПАСПОРТ НЕ ПОШЁЛ ЗА НИМИ (16.09): чтение рода глагола ушло из
+# кузниц `gen_genesis_everyday` и `gen_genesis_story_chain` в дома `everydayforms` и
+# `story_chainforms`. Паспорт звал призраков и молчал о живых читателях — то есть лгал
+# ОБЕИМИ половинами разом, и всякий, кто судил по нему о цене правки корня, судил по
+# выдумке ровно там, где цена и выросла.
+ЧИТАЮТ = ("gen_genesis_gsmlex", "everydayforms", "gen_genesis_realverbs",
+          "gen_genesis_gsmwide", "story_chainforms", "gen_genesis_items",
           "gen_genesis_pronouns", "episode_court", "verbthings_court")
 
 ЕДА = {"apples", "cookies", "cakes", "pastries", "nuts", "eggs", "slices", "bananas", "oranges", "pears", "sweets",

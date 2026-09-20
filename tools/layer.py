@@ -227,7 +227,14 @@ def emit(path, pass_shows, passes=PASSES):
     _ворота(path, body)
     with open(path, "w", encoding="utf-8") as f:
         f.write(body)
-    print(f"written {path}: {len(body)} bytes, {total} shows")
+    # БАЙТ ЕСТЬ БАЙТ, А НЕ ЗНАК (16.09, прибор `scripts/copula_band.py` привёл сюда
+    # косвенно: мир ловушки случая доложил «15520 bytes» при 20154 на диске). Русская
+    # буква весит два байта, и всякий мир с кириллицей отчитывался НИЖЕ своего веса —
+    # тем ниже, чем больше в нём русского.
+    #
+    #     ЧИСЛО, НАЗВАННОЕ БАЙТАМИ, ОБЯЗАНО БЫТЬ БАЙТАМИ: слово отчёта есть обещание
+    #     единицы, и неверная единица лжёт тем вернее, чем внимательнее читатель.
+    print(f"written {path}: {len(body.encode('utf-8'))} bytes, {total} shows")
     return body
 
 
@@ -250,6 +257,13 @@ def emit_grouped(path, pass_groups, passes=PASSES):
     _ворота(path, body)
     with open(path, "w", encoding="utf-8") as f:
         f.write(body)
-    print(f"written {path}: {len(body)} bytes, {total} shows")
+    # БАЙТ ЕСТЬ БАЙТ, А НЕ ЗНАК (16.09, прибор `scripts/copula_band.py` привёл сюда
+    # косвенно: мир ловушки случая доложил «15520 bytes» при 20154 на диске). Русская
+    # буква весит два байта, и всякий мир с кириллицей отчитывался НИЖЕ своего веса —
+    # тем ниже, чем больше в нём русского.
+    #
+    #     ЧИСЛО, НАЗВАННОЕ БАЙТАМИ, ОБЯЗАНО БЫТЬ БАЙТАМИ: слово отчёта есть обещание
+    #     единицы, и неверная единица лжёт тем вернее, чем внимательнее читатель.
+    print(f"written {path}: {len(body.encode('utf-8'))} bytes, {total} shows")
     return body
 
