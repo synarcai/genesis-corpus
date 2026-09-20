@@ -418,7 +418,26 @@ recache.установить()
            "numplace_court",
            "romgender_court",
            # ЭПИЗОД (05.09, архитектура агента: лента актов, префикс леджера, ничья шагов)
-           "episodeforms_court", "summaryforms_court", "opforms_court", "readnum_court", "mandateforms_court", "personforms_court", "selfmodelforms_court", "signedworld_court", "beforetails_court", "discountroad_court", "nomention_court", "clockforms_court", "mixedunits_court", "dateforms_court", "clockwords_court", "speedforms_court", "enough_court", "numphrase_court", "kinbearer_court", "pronobject_court", "proform_court", "degrees_court", "actturn_court", "tempscale_court", "unitfrac_court", "place_court", "roman_court", "quantforms_court", "orderforms_court", "roundforms_court")
+           "episodeforms_court", "summaryforms_court", "opforms_court", "readnum_court", "mandateforms_court", "personforms_court", "selfmodelforms_court", "signedworld_court", "beforetails_court", "discountroad_court", "nomention_court", "clockforms_court", "mixedunits_court", "dateforms_court", "clockwords_court", "speedforms_court", "enough_court", "numphrase_court", "kinbearer_court", "pronobject_court", "proform_court", "degrees_court", "actturn_court", "tempscale_court", "unitfrac_court", "place_court", "roman_court", "quantforms_court", "orderforms_court", "roundforms_court",
+           # ТРИДЦАТЬ СУДОВ ВТОРОЙ СТУПЕНИ, ОБЪЯВЛЕННЫХ 16.09 ПО ЗАМЕРУ СУДА СОСТАВА. Все
+           # тридцать жили, судили и входили в палату ОБХОДОМ КАТАЛОГА — работа их шла, — а
+           # объявление о них молчало: список пополняется рукой, и рука за ступенью не
+           # поспела. Ровно тот случай, ради какого суд состава и поставлен.
+           #
+           #     СПИСОК, КОТОРЫЙ НАДО ПОПОЛНЯТЬ РУКОЙ, РАЗОЙДЁТСЯ С ЖИВУЩИМИ; вопрос лишь
+           #     в том, назовёт ли кто-нибудь день расхождения. Сегодня назвал.
+           #
+           # Объявление это не меняет ни одного вердикта: истина о составе есть КАТАЛОГ, и
+           # палата брала их и прежде. Оно нужно читателю и прибору зависимостей, что
+           # выводит соседей по строкам-литералам, — и потому имена названы целиком.
+           "adhominem_court", "alphaorder_court", "badground_court", "bicond_court",
+           "boolexpr_court", "bothlists_court", "condprob_court", "cooccur_court",
+           "datecmp_court", "dilemma_court", "drop_court", "dyck_court",
+           "equalshare_court", "goal_court", "grid_court", "handover_court",
+           "homonym_court", "letterwork_court", "nestcalc_court", "noanswer_court",
+           "notenough_court", "onecase_court", "pctchain_court", "roadpath_court",
+           "rolemark_court", "roundneed_court", "spread_court", "twokeys_court",
+           "unitmix_court", "whodwells_court")
 
 
 def _взять(модуль):
