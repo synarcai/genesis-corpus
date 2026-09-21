@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 348 миров, 472807 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 348 миров, 473001 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -11,7 +11,7 @@
 
 ## АКТ «recount» — пересчитать величину: строка утверждает число
 
-Миров 158, строк 239088.
+Миров 160, строк 239773.
 
 - **`links`** (17566 строк; declared, whole_only)  
   **CONVERSATION LINKS** — a question whose subject stands in the PREVIOUS reply (the owner's order, 04.09, item 5; the BESEDA band measures this genus mute 15 of 15).
@@ -259,6 +259,8 @@
   **УБЫВАНИЕ ЗАПАСА, СЧИТАННОЕ ДО КОНЦА: «у иды было 70 книг. половина книг ушла. сколько книг осталось? осталось 35 книг: 70 ÷ 2 = 35». Имя носителя, начальный запас, доля или число ушедшего** — и остаток, ДОКАЗАННЫЙ действием, а не объявленный.
 - **`gsmlex`** (400 строк; recompute, whole_only, unsigned_only)  
   **ШАГ В ЕДИНИЦУ, СКАЗАННЫЙ ШИРОКИМ СЛОВАРЁМ ДЕЙСТВИЙ: «Felix makes 12 points. Felix uses 1 point away. how many points does Felix keep? Felix keeps 11 points». Одно и то же прибавление или убавление единицы, названное ДЕСЯТКАМИ РАЗНЫХ ГЛАГОЛОВ** — makes, ha…
+- **`wordnum`** (392 строк; recompute, whole_only)  
+  **NUMBERS OF THE STORY WRITTEN AS WORDS** — «Ann had fifteen coins», not «Ann had 15 coins» (21.09).
 - **`dec`** (388 строк; recompute, finite_decimal_only)  
   **THE DECIMAL WRITING OF A SHARE** — THE SAME NUMBER WRITTEN OTHERWISE. Measured 11.09 across the 237 show worlds: the equality «0,5 = 1/2» or «3/4 = 0.75» occurs SIXTEEN times, and all sixteen stand in one world of algebraic units, as a line without deriva…
 - **`price`** (378 строк; recompute, whole_only)  
@@ -283,6 +285,8 @@
   **DIVISION WITH A REMAINDER IN EIGHT LANGUAGES (the owner's word: every language in surplus; the remainders world says it in en/ru): «17 geteilt durch 5 ist 3 Rest 2: 5 × 3 = 15, 17 − 15 = 2.», «combien font 17 divisé par 5 ? 17 divisé par 5 fait 3 reste 2 …
 - **`countfacts`** (315 строк; recompute, whole_only)  
   **COUNT FACTS IN NINE LANGUAGES** — a thing defined or asked by the ONE number a court can recount: «what is a triangle? a triangle is a shape with three sides.», «how many sides does a pentagon have? a pentagon has five sides.», «how many legs does a dog h…
+- **`wallet`** (293 строк; recompute, whole_only)  
+  **THE WALLET** — MONEY AS A QUANTITY THAT IS SPENT AND THAT REMAINS (21.09).
 - **`proform`** (288 строк; recompute, whole_only)  
   **THE PRO-FORM OF THE GOODS** — the thing named once, then stood in for (06.09).
 - **`prec`** (264 строк; recompute, whole_only)  
@@ -623,7 +627,7 @@
 
 ## АКТ «name» — назвать: что вещь ЕСТЬ и как она зовётся
 
-Миров 25, строк 48547.
+Миров 25, строк 48741.
 
 - **`notationvar`** (10696 строк; recompute, reversibility, declared_pairs_only)  
   **one sign, two scripts: the same record written in ASCII and in typography, and the court reduces both to one canon. The corpus knew every sign in ONE script only, and in different signs** — in DIFFERENT ones: «x^2» 1702 times and «x²» ZERO, «≤» 351 and «<…
@@ -633,14 +637,14 @@
   **the ladder of inquiry: for six genera** — primality, divisibility, the sum of odd numbers, the conditional, injectivity, the square — four rungs are shown, definition then a decided case with its ground then a counterexample then the law; both tongues, ev…
 - **`items`** (2357 строк; recompute, declared, whole_only, unsigned_only)  
   **THE THING NAMED BEFORE IT IS COUNTED** — declared until 12.09 in eight words.
+- **`dialogue`** (2246 строк; declared, whole_only)  
+  **EVERYDAY SPEECH** — the first word a person writes (the owner's order, 04.09).
 - **`definitions`** (2141 строк; declared, whole_only, unsigned_only)  
   **definitions from the dictionaries of the shelf (holon's order 02.09: the organism is mute on «what is entropy» / «что такое сознание»** — no line of the corpus defined anything): «X is <quote>: Webster's Unabridged Dictionary, 1913.» and «X — это <цитата>…
 - **`inquiry_pt_nl`** (2108 строк; recompute, whole_only)  
   **the ladder of inquiry in PORTUGUESE and DUTCH: the same four rungs** — definition, a case decided with its ground beside the verdict, a counterexample, the law — carried into a Romance tongue that marks the question by INTONATION ALONE (no inverted mark, …
 - **`inquiry_de_fr`** (2108 строк; recompute, whole_only)  
   **the ladder of inquiry in GERMAN and FRENCH: the same four rungs** — definition, a case decided with its ground beside the verdict, a counterexample, the law — carried into tongues that until now could only count and decline.
-- **`dialogue`** (2052 строк; declared, whole_only)  
-  **EVERYDAY SPEECH** — the first word a person writes (the owner's order, 04.09).
 - **`equation_signed`** (1974 строк; recompute, whole_only)  
   **the same ladder of equations where roots may be NEGATIVE or zero** — kept a world apart, not because the mathematics differs but because a frame is bought only when ONE performer speaks on EVERY show of it: a solver living in the unsigned world cannot rep…
 - **`metalang`** (1849 строк; recompute, declared, whole_only, exact_only, unsigned_only)  
@@ -678,7 +682,7 @@
 
 ## АКТ «translate» — сказать то же другой поверхностью, языком, записью
 
-Миров 13, строк 18165.
+Миров 14, строк 18489.
 
 - **`markdown`** (3428 строк; reversibility, reversible_only)  
   **markdown in full: thirty-two constructs of CommonMark, GFM and MDX/Docusaurus, each on four surfaces** — the record itself, its meaning in English and in Russian, and the question that asks for it; the oracle is REVERSIBILITY (a construct declares how to …
@@ -700,6 +704,8 @@
   **ДЕЙСТВИЕ, НАЗВАННОЕ СЛОВОМ ВМЕСТО ЗНАКА: «9 minus …», «8 plus …», «13 times …»** — и рядом то же знаком «3 - 3 = 0».
 - **`roman`** (387 строк; recompute, reversibility, whole_only)  
   **THE ROMAN NUMERAL** — a third notation, and the law that the ORDER of two signs decides the sign of their arithmetic (06.09).
+- **`numtwin`** (324 строк; recompute, whole_only)  
+  **THE TWIN OF A NUMBER** — the digit and the word on ONE page as EQUALS: «40 is forty» (21.09).
 - **`tempscale`** (306 строк; recompute, reversibility, exact_only)  
   **THE TEMPERATURE SCALE** — one quantity, two scales, and a formula with an INVERSE (06.09).
 - **`unitfrac`** (198 строк; recompute, reversibility, whole_only)  
@@ -707,18 +713,16 @@
 - **`conversions`** (176 строк; recompute, whole_only, unsigned_only)  
   **ПЕРЕВОД ОДНОЙ МЕРЫ В ДРУГУЮ ПО ОБЪЯВЛЕННОМУ ОТНОШЕНИЮ: «1 hour = 60 minutes», «в минуте 60 секунд», «5 weeks», «8 feet»** — время, длина и деньги, и всякий перевод есть умножение на число, которое мир называет вслух («a dollar is 100 cents»).
 
-## АКТ «compute» — словарём не объявлен
+## АКТ «read_off» — считать готовое из данного: ответ лежит В тексте или в клетке и выписывается, а не получается счётом
 
-Миров 4, строк 1162.
+Миров 3, строк 585.
 
-- **`wordnum`** (392 строк; recompute, whole_only)  
-  **NUMBERS OF THE STORY WRITTEN AS WORDS** — «Ann had fifteen coins», not «Ann had 15 coins» (21.09).
-- **`numtwin`** (324 строк; recompute, whole_only)  
-  **THE TWIN OF A NUMBER** — the digit and the word on ONE page as EQUALS: «40 is forty» (21.09).
-- **`wallet`** (293 строк; recompute, whole_only)  
-  **THE WALLET** — MONEY AS A QUANTITY THAT IS SPENT AND THAT REMAINS (21.09).
+- **`drop`** (288 строк; recompute, whole_only)  
+  **A PASSAGE AND A QUESTION TO IT** — DROP AS ONE WORLD (14.09, rung two, asked for by holon-f9 in exactly this shape: «span plus arithmetic, one world»).
 - **`propmeasure`** (153 строк; recompute, whole_only)  
   **A PROPERTY MEASURED BY A NUMBER** — «the water is three metres deep», not «which is deeper» (21.09).
+- **`grid`** (144 строк; recompute, whole_only)  
+  **READING A TABLE** — TWO COORDINATES, NOT TWO LOOKUPS IN A ROW (14.09, bought by a zero of the probe).
 
 ## АКТ «generalize» — назвать закон над случаями
 
@@ -728,15 +732,6 @@
   **BEHAVIOURAL AND PSYCHOLOGICAL LAWS** — the cause of an act and the question about it (the owner's order, 04.09, item 3: «понимать базовые поведенческие и психологические законы»).
 - **`indu`** (102 строк; recompute, whole_only)  
   **HASTE** — generalisation from cases and the NAMED LIMIT of that step.
-
-## АКТ «read_off» — считать готовое из данного: ответ лежит В тексте или в клетке и выписывается, а не получается счётом
-
-Миров 2, строк 432.
-
-- **`drop`** (288 строк; recompute, whole_only)  
-  **A PASSAGE AND A QUESTION TO IT** — DROP AS ONE WORLD (14.09, rung two, asked for by holon-f9 in exactly this shape: «span plus arithmetic, one world»).
-- **`grid`** (144 строк; recompute, whole_only)  
-  **READING A TABLE** — TWO COORDINATES, NOT TWO LOOKUPS IN A ROW (14.09, bought by a zero of the probe).
 
 ## АКТ «retrace» — проследить по цепи ходов: вещь через обмены, место через дороги — вперёд по звеньям, а не обратным ходом от итога
 
