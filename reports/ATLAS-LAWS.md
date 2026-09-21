@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 562 законов
+# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 563 законов
 
 Собран из докстрингов и комментариев `tools`, `courts`, `scripts` орудием
 `tools/law_atlas.py`. Взяты ОБЩИЕ законы — те, что держатся не одним файлом.
@@ -6,7 +6,7 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 7274 разных законов на 9343 упоминаний; сказанных однажды — 6712, и они остаются при своём месте.
+Всего в дереве 7288 разных законов на 9362 упоминаний; сказанных однажды — 6725, и они остаются при своём месте.
 
 
 ## Держат 82 файлов
@@ -31,10 +31,13 @@
 - **МИР ЗАМКНУТ, И ЭТО ПРОВЕРЕНО ДЕЛОМ, А НЕ ОБЪЯВЛЕНО МНЕНИЕМ**  
   courts/age_court.py, courts/algo_court.py, courts/average_court.py, courts/calendar_court.py, courts/case_court.py, courts/compare_mult_court.py … и ещё 38
 
-## Держат 33 файлов
+## Держат 34 файлов
 
 - **НАБОР ГОВОРИТ, ЧТО ДОМ СТРАНИЦУ НАПИСАЛ, А НЕ ЧТО ОНА ВЕРНА**  
-  scripts/house_mutant.py, tools/actionmeasure.py, tools/beforetails.py, tools/clockforms.py, tools/clockwords.py, tools/closedworld.py … и ещё 27
+  scripts/house_mutant.py, tools/actionmeasure.py, tools/actturn.py, tools/beforetails.py, tools/clockforms.py, tools/clockwords.py … и ещё 28
+
+## Держат 33 файлов
+
 - **ЯЗЫК ПОКАЗА НАЗВАН ПЕРВЫМ, РОД — ВТОРЫМ**  
   tools/cmpmultforms.py, tools/coinforms.py, tools/eqforms.py, tools/gen_genesis_algebra.py, tools/gen_genesis_algorithms.py, tools/gen_genesis_arith_langs.py … и ещё 27
 
@@ -244,6 +247,8 @@
   tools/fenceforms.py, tools/gen_genesis_measuregrow.py, tools/gen_genesis_ratetrap.py, tools/measureforms.py, tools/measuregrowforms.py, tools/ratetrapforms.py … и ещё 1
 - **МИР БЕЗ ВОПРОСНОЙ ПОВЕРХНОСТИ ПОКАЗЫВАЕТ ОТВЕТ, НЕ ПОКАЗЫВАЯ ЗАДАЧИ**  
   tools/digitlenforms.py, tools/numlabelforms.py, tools/onestepforms.py, tools/parityforms.py, tools/placevalforms.py, tools/powforms.py … и ещё 1
+- **ОБРАЗЕЦ, СОВПАВШИЙ ПЕРВЫМ, НЕ ЕСТЬ ОБРАЗЕЦ ВЕРНЫЙ, КОГДА ОБРАЗЦЫ РАЗЛИЧАЮТСЯ НЕ**  
+  scripts/house_mutant.py, tools/actturn.py, tools/dateforms.py, tools/discountroad.py, tools/nomention.py, tools/pronobject.py … и ещё 1
 - **ПОСТАВЛЕННЫЙ ЗА ОПОЗНАНИЕМ РАМКОЙ, НЕ СПРАШИВАЕТСЯ ТАМ, ГДЕ ПОРЧА ЛОМАЕТ РАМКУ**  
   tools/adhominem.py, tools/bothlists.py, tools/directforms.py, tools/homonym.py, tools/noanswer.py, tools/planforms.py … и ещё 1
 - **СУД НЕ СМЕЕТ ЧИТАТЬ ЧУЖОЙ РОД**  
@@ -267,8 +272,6 @@
   tools/cmpmultforms.py, tools/eqforms.py, tools/inqdefr.py, tools/inqesit.py, tools/inqpltr.py, tools/inqptnl.py
 - **МУТАНТ ПО ЧИСЛУ В КАЖДОМ РОДЕ, ГДЕ ЕСТЬ ЗАПИСЬ**  
   tools/condforms.py, tools/leapforms.py, tools/medianforms.py, tools/numlineforms.py, tools/pctbaseforms.py, tools/tzoneforms.py
-- **ОБРАЗЕЦ, СОВПАВШИЙ ПЕРВЫМ, НЕ ЕСТЬ ОБРАЗЕЦ ВЕРНЫЙ, КОГДА ОБРАЗЦЫ РАЗЛИЧАЮТСЯ НЕ**  
-  scripts/house_mutant.py, tools/dateforms.py, tools/discountroad.py, tools/nomention.py, tools/pronobject.py, tools/quantforms.py
 - **РОДЫ ЕСТЬ ФОРМЫ — И ЭТО НЕ ПОВТОР, А РАЗРЕШЕНИЕ ДВУСМЫСЛЕННОСТИ**  
   tools/actionpages.py, tools/defforms.py, tools/jointforms.py, tools/measurestory.py, tools/ninelang.py, tools/relstory.py
 - **САМАЯ ДЛИННАЯ ЗАДАЧА ЕСТЬ ДНО СРОКА**  
@@ -277,6 +280,8 @@
   tools/actionpages.py, tools/defforms.py, tools/jointforms.py, tools/measurestory.py, tools/ninelang.py, tools/relstory.py
 - **СЛУЖЕБНОЕ СЛОВО, СТОЯЩЕЕ В РАМКЕ ЦЕЛЫМ, НЕ СЛЫШИТ ТОГО, ЧТО ЗА НИМ ПОДСТАВЯТ**  
   scripts/elision.py, tools/cmpforms.py, tools/frgram.py, tools/romgram.py, tools/timeunits.py, tools/topicforms.py
+- **СПРАШИВАЮТСЯ ВСЕ СОВПАВШИЕ ОБРАЗЦЫ, А НЕ ПЕРВЫЙ**  
+  tools/actturn.py, tools/dateforms.py, tools/discountroad.py, tools/nomention.py, tools/pronobject.py, tools/quantforms.py
 - **ТАМ, ГДЕ МЕРНОСТЬ ОДНА: ЧИСЛА ПРИ НЕИЗМЕННОЙ ЗАПИСИ**  
   tools/divshareforms.py, tools/mathfoundforms.py, tools/numtheoryforms.py, tools/personforms.py, tools/verbalforms.py, tools/wholeshareforms.py
 - **ЯЗЫКИ, ЧЕЙ ЗАКОН ЗДЕСЬ НАЗВАН**  
@@ -312,8 +317,6 @@
   scripts/half_law.py, scripts/key_support.py, scripts/one_singular.py, scripts/operator_share.py, scripts/template_word.py
 - **СЛОВА ДО ПОСЛЕДНЕГО ДВОЕТОЧИЯ, РАВЕНСТВА ПОСЛЕ**  
   tools/divsenseforms.py, tools/mapscaleforms.py, tools/pctdiffforms.py, tools/propforms.py, tools/remdivforms.py
-- **СПРАШИВАЮТСЯ ВСЕ СОВПАВШИЕ ОБРАЗЦЫ, А НЕ ПЕРВЫЙ**  
-  tools/dateforms.py, tools/discountroad.py, tools/nomention.py, tools/pronobject.py, tools/quantforms.py
 - **ЧЕТВЁРКА В ЗАПИСИ ЕСТЬ БУКВА ЗАКОНА, А НЕ ВЕЛИЧИНА РЯДА**  
   courts/inquiry_court.py, courts/inquiry_de_fr_court.py, courts/inquiry_es_it_court.py, courts/inquiry_pl_tr_court.py, courts/inquiry_pt_nl_court.py
 
@@ -424,6 +427,8 @@
   courts/need_court.py, tools/needforms.py, tools/unitcmpforms.py
 - **ОТКАЗЫ ПАКЕТОВ, ЧЕЙ ЗАКОН ЭТОТ ДОМ ОБЪЯСНЯЕТ**  
   tools/gen_genesis_genderverb.py, tools/persondistforms.py, tools/personplaceforms.py
+- **ПЕРЕЕЗД ИМЕНИ ЕСТЬ ПРАВКА ВСЕХ, КТО ЕГО НАЗЫВАЕТ**  
+  scripts/half_law.py, scripts/mixed_name.py, tools/letters.py
 - **ПОДСУДНОСТЬ ОБЪЯВЛЯЕТСЯ РОДОМ ТЕКСТА МИРА, А НЕ ПУТЁМ ФАЙЛА**  
   courts/engram_court.py, courts/halves_court.py, tools/foreign.py
 - **ПОРЧА, КОТОРУЮ СУД НЕ ВИДИТ, ЕСТЬ ПОРЧА, КОТОРОЙ ЕГО РУБЕЖ НЕ КАСАЕТСЯ**  
@@ -699,6 +704,8 @@
   courts/case_court.py, courts/proof_court.py
 - **ИМЯ, СПРОШЕННОЕ КЛАССОМ И ОТВЕЧЕННОЕ ГОЛЫМ ЧИСЛОМ, НИ РАЗУ НЕ СТОИ**  
   scripts/asked_uncounted.py, tools/svampforms.py
+- **ИМЯ, ЧИТАЕМОЕ ГЛАЗОМ ОДИНАКОВО И МАШИНОЙ ПО-РАЗНОМУ, ЕСТЬ ЛОВУШКА, А НЕ ИМЯ**  
+  scripts/mixed_name.py, tools/actturn.py
 - **ИСКЛЮЧЕНИЕ БЕЗ ПРАВИЛА СТАНОВИТСЯ ПРАВИЛОМ**  
   tools/directforms.py, tools/gen_genesis_direct.py
 - **ИСКЛЮЧЕНИЕ ОБЯЗАНО БЫТЬ ИСКЛЮЧЕНИЕМ**  
@@ -821,8 +828,6 @@
   tools/mulshareforms.py, tools/pctchangeforms.py
 - **ПЕРЕЕЗД ЗАМЫКАНИЯ ОБЯЗАН ПЕРЕВЕЗТИ И ЧИТАТЕЛЕЙ ОБЪЯВЛЕНИЯ, А НЕ ТОЛЬКО ЕГО САМО**  
   courts/calendar_court.py, courts/physlaw_court.py
-- **ПЕРЕЕЗД ИМЕНИ ЕСТЬ ПРАВКА ВСЕХ, КТО ЕГО НАЗЫВАЕТ**  
-  scripts/half_law.py, tools/letters.py
 - **ПЕРЕЕЗД, ПОВТОРИВШИЙ ФУНКЦИЮ И НЕ ПОВТОРИВШИЙ СБОРКУ, ПЕРЕВЁЗ ПОЛОВИНУ ДЕЛА**  
   tools/gen_genesis_liarchain.py, tools/markupforms.py
 - **ПЕРЕКОС, НАЗВАННЫЙ ЧИСЛОМ, ЕСТЬ РАБОТА, ЖДУЩАЯ СВОЕГО ДНЯ**  
