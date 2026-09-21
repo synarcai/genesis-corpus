@@ -6,7 +6,7 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 7288 разных законов на 9362 упоминаний; сказанных однажды — 6725, и они остаются при своём месте.
+Всего в дереве 7292 разных законов на 9368 упоминаний; сказанных однажды — 6729, и они остаются при своём месте.
 
 
 ## Держат 82 файлов
@@ -264,6 +264,8 @@
   courts/equation_court.py, courts/inquiry_court.py, courts/inquiry_de_fr_court.py, courts/inquiry_es_it_court.py, courts/inquiry_pl_tr_court.py, courts/inquiry_pt_nl_court.py
 - **ДВЕ РАМКИ НА ОДНОЙ ЗАПИСИ ДЕЛАЮТ РОД НЕРАЗЛИЧИМЫМ**  
   tools/cooccur.py, tools/noanswer.py, tools/notenough.py, tools/onecase.py, tools/roadpath.py, tools/spread.py
+- **ДОМ ОБЪЯВЛЯЕТ СЕБЯ СУДЯЩИМ ОБЪЯВЛЕНИЕМ**  
+  tools/behaviorforms.py, tools/dialogueforms.py, tools/linkforms.py, tools/natureforms.py, tools/topicforms.py, tools/worldfacts.py
 - **ДОМ, ДЕРЖАЩИЙ СТРАНИЦЫ В ДВУХ ТАБЛИЦАХ, ОБЪЯВЛЯЕТ РОДЫ В ОДНОЙ**  
   tools/countfacts.py, tools/dialogueforms.py, tools/genus_atlas.py, tools/linkforms.py, tools/opinionforms.py, tools/svampforms.py
 - **ДОМ, ПРОВЕРЯЮЩИЙ ЛИШЬ ТОТ ЯЗЫК, О КОТОРОМ УЧИТ, ЛЖЁТ НА ТОМ, НА КОТОРОМ ОБЪЯСНЯЕТ**  
@@ -299,8 +301,6 @@
   courts/grid_court.py, courts/roadpath_court.py, tools/gridread.py, tools/notenough.py, tools/roadpath.py
 - **ГРАНИЦА ОБЪЯВЛЕНИЯ СКАЗАНА ПРЯМО**  
   tools/countlawforms.py, tools/elisionforms.py, tools/genderforms.py, tools/plcopulaforms.py, tools/soundarticleforms.py
-- **ДОМ ОБЪЯВЛЯЕТ СЕБЯ СУДЯЩИМ ОБЪЯВЛЕНИЕМ**  
-  tools/dialogueforms.py, tools/linkforms.py, tools/natureforms.py, tools/topicforms.py, tools/worldfacts.py
 - **ДОМ, НЕ ЗНАЮЩИЙ СВОИХ СТРАНИЦ, НЕ МОЖЕТ НАЗВАТЬ ИХ РОДА**  
   tools/defforms.py, tools/measurestory.py, tools/notationforms.py, tools/searchforms.py, tools/surfaceforms.py
 - **ЛОВУШКА ПРОВЕРЯЕТСЯ КАК ЛОВУШКА**  
@@ -455,6 +455,8 @@
   tools/linalgforms.py, tools/seriesforms.py, tools/speechforms.py
 - **РОСТ И УБЫЛЬ ИДУТ В ОДНОМ ПРОХОДЕ**  
   tools/gen_genesis_divshare.py, tools/gen_genesis_mulshare.py, tools/gen_genesis_pctchange.py
+- **РЯДЫ ДОМА — ЧАСТИ, СТОЯЩИЕ В ЕГО РАМКАХ НА ОДНОМ МЕСТЕ**  
+  tools/behaviorforms.py, tools/natureforms.py, tools/worldfacts.py
 - **СЕМЬ РОДОВ, И ДВА ИЗ НИХ СУТЬ ОДНА ЛОВУШКА, ПОКАЗАННАЯ ОБЕИМИ СТОРОНАМИ**  
   tools/directforms.py, tools/homoforms.py, tools/wmeanforms.py
 - **СЛИЯНИЕ ПРЕДЛОГА С АРТИКЛЕМ**  
@@ -996,8 +998,6 @@
   tools/idredupforms.py, tools/zhclassforms.py
 - **РУССКОЕ СОГЛАСОВАНИЕ НЕ ПЕРЕПИСАНО, А ПРОЧИТАНО**  
   scripts/second_copy.py, tools/gen_genesis_cybernetics.py
-- **РЯДЫ ДОМА — ЧАСТИ, СТОЯЩИЕ В ЕГО РАМКАХ НА ОДНОМ МЕСТЕ**  
-  tools/natureforms.py, tools/worldfacts.py
 - **САМ ПЕРЕЧЕНЬ ВЫХОДОВ БЫВАЕТ НЕПОЛОН**  
   tools/dilemma.py, tools/gen_genesis_dilemma.py
 - **СБОРКА В ПОРЯДКЕ МАНИФЕСТА И СТРОК**  
