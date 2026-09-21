@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 567 законов
+# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 568 законов
 
 Собран из докстрингов и комментариев `tools`, `courts`, `scripts` орудием
 `tools/law_atlas.py`. Взяты ОБЩИЕ законы — те, что держатся не одним файлом.
@@ -6,7 +6,7 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 7310 разных законов на 9391 упоминаний; сказанных однажды — 6743, и они остаются при своём месте.
+Всего в дереве 7317 разных законов на 9404 упоминаний; сказанных однажды — 6749, и они остаются при своём месте.
 
 
 ## Держат 82 файлов
@@ -251,6 +251,8 @@
   scripts/house_mutant.py, tools/actturn.py, tools/dateforms.py, tools/discountroad.py, tools/nomention.py, tools/pronobject.py … и ещё 1
 - **ПОСТАВЛЕННЫЙ ЗА ОПОЗНАНИЕМ РАМКОЙ, НЕ СПРАШИВАЕТСЯ ТАМ, ГДЕ ПОРЧА ЛОМАЕТ РАМКУ**  
   tools/adhominem.py, tools/bothlists.py, tools/directforms.py, tools/homonym.py, tools/noanswer.py, tools/planforms.py … и ещё 1
+- **ПРОЗВИЩЕ, ОБЪЯВЛЕННОЕ ОДИНАКОВО ВО ВСЕХ КУЗНЯХ, ВИДИТ УСТРОЙСТВО**  
+  tools/gen_genesis_equation.py, tools/gen_genesis_gsmforms.py, tools/gen_genesis_inquiry_de_fr.py, tools/gen_genesis_inquiry_es_it.py, tools/gen_genesis_inquiry_pl_tr.py, tools/gen_genesis_inquiry_pt_nl.py … и ещё 1
 - **СУД НЕ СМЕЕТ ЧИТАТЬ ЧУЖОЙ РОД**  
   courts/equation_court.py, courts/inquiry_es_it_court.py, courts/inquiry_pl_tr_court.py, courts/longdiv_court.py, courts/metalang_court.py, courts/relation_court.py … и ещё 1
 - **СУД ЧИТАЕТ ТРИ ЗАКОНА, И ВСЕ ТРИ СОДЕРЖАТЕЛЬНЫ**  

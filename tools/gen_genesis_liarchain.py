@@ -11,12 +11,15 @@
 мира, спрашивая порождающего о проходах, — и кузница, передавшая функцию доводом и не
 назвавшая её именем, честно отвечает «НЕ ЗНАЮ» (шрам 16.09).
 """
+# ПРОЗВИЩЕ ДОМА В КУЗНЕ — `F` (21.09, обычай, читаемый прибором «РОД ДОШЁЛ»):
+# ПРОЗВИЩЕ, ОБЪЯВЛЕННОЕ ОДИНАКОВО ВО ВСЕХ КУЗНЯХ, ВИДИТ УСТРОЙСТВО, а признак по
+# окончанию имени видит лишь обычай. Кузня, звавшая дом иначе, не проверялась вовсе.
 import pathlib
 import sys
 
 КОРЕНЬ = pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
-import liarchain as ДОМ  # noqa: E402
+import liarchain as F  # noqa: E402
 from layer import emit_grouped, PASSES  # noqa: E402
 
 ЦЕЛЬ = "datasets/genesis_liarchain.txt"
@@ -25,8 +28,8 @@ from layer import emit_grouped, PASSES  # noqa: E402
 def pass_groups(шаг):
     """[[страница]] — по группе на РОД: роды не перемешиваются между собою."""
     вон = []
-    for род in ДОМ.РОДЫ:
-        свои = [с for с, (_я, р) in ДОМ.ПОКАЗЫ.items() if р == род]
+    for род in F.РОДЫ:
+        свои = [с for с, (_я, р) in F.ПОКАЗЫ.items() if р == род]
         вон.append(свои[шаг::len(PASSES)])
     return вон
 

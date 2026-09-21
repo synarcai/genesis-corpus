@@ -60,22 +60,25 @@ conclusion. A counterexample that does not refute is the most
 convincing lie a corpus can carry, and its form is always correct.
 """
 
+# ПРОЗВИЩЕ ДОМА В КУЗНЕ — `F` (21.09, обычай, читаемый прибором «РОД ДОШЁЛ»):
+# ПРОЗВИЩЕ, ОБЪЯВЛЕННОЕ ОДИНАКОВО ВО ВСЕХ КУЗНЯХ, ВИДИТ УСТРОЙСТВО, а признак по
+# окончанию имени видит лишь обычай. Кузня, звавшая дом иначе, не проверялась вовсе.
 import pathlib  # noqa: E402
 import sys  # noqa: E402
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from layer import emit_grouped  # noqa: E402
 
-# ДОМ ОТДЕЛЁН ОТ КУЗНИЦЫ (13.09): ступени, роды и словарь показов живут в
+# F ОТДЕЛЁН ОТ КУЗНИЦЫ (13.09): ступени, роды и словарь показов живут в
 # `tools/inqdefr.py`, а кузница берёт у него готовые группы.
-import inqdefr as ДОМ  # noqa: E402
+import inqdefr as F  # noqa: E402
 
 ЦЕЛЬ = "datasets/genesis_inquiry_de_fr.txt"
 
 
 def pass_groups(шаг):
     """Одна группа на РОД — сборка живёт в доме, кузница её лишь зовёт."""
-    return ДОМ.группы(шаг)
+    return F.группы(шаг)
 
 
 def main():

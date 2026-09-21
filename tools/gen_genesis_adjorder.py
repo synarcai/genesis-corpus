@@ -11,7 +11,12 @@ import sys
 
 КОРЕНЬ = pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(КОРЕНЬ / "tools"))
-import adjorder as ДОМ  # noqa: E402
+# ПРОЗВИЩЕ ДОМА В КУЗНЕ — `F`, И ЭТО ОБЪЯВЛЕННЫЙ ОБЫЧАЙ, А НЕ ВКУС (21.09). Прибор «РОД
+# ДОШЁЛ» находит дом кузницы ровно по этому прозвищу и ни по чему иному: ПРИЗНАК ПО
+# ОКОНЧАНИЮ ИМЕНИ ВИДИТ ОБЫЧАЙ, А НЕ УСТРОЙСТВО; ПРОЗВИЩЕ, ОБЪЯВЛЕННОЕ ОДИНАКОВО ВО ВСЕХ
+# КУЗНЯХ, ВИДИТ УСТРОЙСТВО. Эта кузня звала свой дом `ДОМ` — и все её роды не проверялись
+# ВОВСЕ, а прибор был зелен.
+import adjorder as F  # noqa: E402
 from layer import emit_grouped, PASSES  # noqa: E402
 
 ЦЕЛЬ = "datasets/genesis_adjorder.txt"
@@ -20,8 +25,8 @@ from layer import emit_grouped, PASSES  # noqa: E402
 def pass_groups(шаг):
     """[[страница]] — по группе на РОД: роды не перемешиваются между собою."""
     вон = []
-    for род in ДОМ.РОДЫ:
-        свои = [с for с, (_я, р) in ДОМ.ПОКАЗЫ.items() if р == род]
+    for род in F.РОДЫ:
+        свои = [с for с, (_я, р) in F.ПОКАЗЫ.items() if р == род]
         вон.append(свои[шаг::len(PASSES)])
     return вон
 
