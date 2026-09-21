@@ -51,7 +51,8 @@
 
     УКАЗАТЕЛЬ, ЗАВИСЯЩИЙ ОТ ВСЯКОЙ СТРОКИ ДЕРЕВА, НЕ МОЖЕТ БЫТЬ СУДОМ.
 
-    python3 tools/court_atlas.py            # собрать reports/ATLAS-COURTS.md
+    python3 tools/court_atlas.py            # СУДИТЬ: сошёлся ли состав на диске с деревом
+    python3 tools/court_atlas.py --собрать  # собрать reports/ATLAS-COURTS.md
     python3 tools/court_atlas.py --считать  # только числа
 """
 import pathlib

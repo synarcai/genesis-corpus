@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 348 миров, 472767 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 348 миров, 472807 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -623,7 +623,7 @@
 
 ## АКТ «name» — назвать: что вещь ЕСТЬ и как она зовётся
 
-Миров 25, строк 48507.
+Миров 25, строк 48547.
 
 - **`notationvar`** (10696 строк; recompute, reversibility, declared_pairs_only)  
   **one sign, two scripts: the same record written in ASCII and in typography, and the court reduces both to one canon. The corpus knew every sign in ONE script only, and in different signs** — in DIFFERENT ones: «x^2» 1702 times and «x²» ZERO, «≤» 351 and «<…
@@ -655,7 +655,7 @@
   the ladder of inquiry in SPANISH and ITALIAN, with the marks those tongues require and no others: the inverted question mark that opens a Spanish question, and the accent that separates «sí» from «si»
 - **`equation`** (1366 строк; recompute, whole_only)  
   **the ladder of inquiry on equations: what a root IS, a case DECIDED by substitution with the arithmetic beside the verdict, Vieta shown as sum and product of the roots rather than a formula recited, a refusal with its ground («no whole root between 0 and 1…
-- **`mathfound`** (1158 строк; declared, recompute, finite_explicit_only)  
+- **`mathfound`** (1198 строк; declared, recompute, finite_explicit_only)  
   **ОСНОВАНИЯ МАТЕМАТИКИ И НАЗВАННЫЙ ПАДЕЖ** — ОДИН МИР, И ЭТО НЕ СЛУЧАЙНОСТЬ: функция как ОДИН ПРЕДМЕТ («функция f на множестве {1 2 3} задана правилом f(x) = 4x; f(1) = 4»), инъекция свидетелем, счётность, доказательство от противного, индукция — и рядом ше…
 - **`topics`** (1104 строк; declared, whole_only)  
   **EVERYDAY TOPICS** — what a person asks about first (the owner's order, 04.09, item 4; the BESEDA band measures this genus mute 16 of 20, and names its cause: SUBJ-UNKNOWN — the reader does not know the SUBJECT of the question.

@@ -22,7 +22,8 @@
 Потому метки пустого обхода он не несёт, в набор не зовётся и рубежа не держит — он собирается
 рукой, когда рука хочет видеть право свода целиком.
 
-    python3 tools/law_atlas.py            # собрать reports/ATLAS-LAWS.md
+    python3 tools/law_atlas.py            # СУДИТЬ: сошёлся ли указатель на диске с деревом
+    python3 tools/law_atlas.py --собрать  # собрать reports/ATLAS-LAWS.md
     python3 tools/law_atlas.py --считать  # только числа, без записи
 """
 import collections
