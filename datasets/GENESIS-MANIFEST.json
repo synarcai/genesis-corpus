@@ -10543,6 +10543,25 @@
       "actors": []
     },
     {
+      "name": "propmeasure",
+      "file": "datasets/genesis_propmeasure.txt",
+      "genre": "A PROPERTY MEASURED BY A NUMBER — «the water is three metres deep», not «which is deeper» (21.09). THE CORPUS COULD COMPARE A PROPERTY AND COULD NOT MEASURE IT. The house of comparison (`propcompare`, 360 shows, nine languages) asks «which is heavier: a stone or a feather?» — the answer is a NAME, not a number. The house of unit conversion (`unitforms`) computes «2 hours are 120 minutes» — a number with no OBJECT whose property it is. Between them lay a gap. MEASURED ACROSS 471 605 LINES: the form «X is N units deep/long/tall» — 86 lines, and ALL EIGHTY-SIX ENGLISH, and all about one object (the water depth of a tank, house `gsmforms`). Eight languages of nine had it not once. A PROPERTY NAMED BY A NUMBER IS A THIRD THING, NOT THE SUM OF THE FIRST TWO: from the skill of comparing («which is deeper») and the skill of converting units («2 m = 200 cm») the skill of answering «how deep is it» does not follow — there a NAME is asked, here a NUMBER, and that number is the measure of a property, not a count of objects. THE UNITS OF LENGTH OF THE CORPUS ARE SCATTERED ACROSS TWO HOUSES, AND THAT IS A NAMED DEBT: `actionmeasure` declares them for `ru` and `en`; `unitforms` for `de`, `fr`, `es`, `it`, `pt`, `nl`, `pl`. Neither covers nine, and a house needing all must ask BOTH. ONE CONCEPT DECLARED IN TWO HOUSES SEPARATELY WILL DIVERGE ON THE DAY ONE OF THEM IS ADDED TO. Here it is bridged, and the bridge is named — so that whoever unites the houses knows where to look for readers. NEAREST NEIGHBOUR NAMED: `propcompare` — it asks WHICH, this one asks HOW MUCH; the same properties, opposite answers.",
+      "act": [
+        "compute"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
+    },
+    {
       "name": "pushkin_belkin_ru",
       "file": "shelf/ru/pushkin_belkin_ru.txt",
       "genre": "Пушкин, Александр Сергеевич, «Повести Белкина (1831)» (1831): словарь постатейно с Викитеки",
