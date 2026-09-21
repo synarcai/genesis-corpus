@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 550 законов
+# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 558 законов
 
 Собран из докстрингов и комментариев `tools`, `courts`, `scripts` орудием
 `tools/law_atlas.py`. Взяты ОБЩИЕ законы — те, что держатся не одним файлом.
@@ -6,7 +6,7 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 7195 разных законов на 9209 упоминаний; сказанных однажды — 6645, и они остаются при своём месте.
+Всего в дереве 7248 разных законов на 9307 упоминаний; сказанных однажды — 6690, и они остаются при своём месте.
 
 
 ## Держат 82 файлов
@@ -35,6 +35,11 @@
 
 - **ЯЗЫК ПОКАЗА НАЗВАН ПЕРВЫМ, РОД — ВТОРЫМ**  
   tools/cmpmultforms.py, tools/coinforms.py, tools/eqforms.py, tools/gen_genesis_algebra.py, tools/gen_genesis_algorithms.py, tools/gen_genesis_arith_langs.py … и ещё 27
+
+## Держат 32 файлов
+
+- **НАБОР ГОВОРИТ, ЧТО ДОМ СТРАНИЦУ НАПИСАЛ, А НЕ ЧТО ОНА ВЕРНА**  
+  scripts/house_mutant.py, tools/actionmeasure.py, tools/beforetails.py, tools/clockforms.py, tools/clockwords.py, tools/cmpframes.py … и ещё 26
 
 ## Держат 31 файлов
 
@@ -265,6 +270,8 @@
   tools/cmpmultforms.py, tools/eqforms.py, tools/inqdefr.py, tools/inqesit.py, tools/inqpltr.py, tools/inqptnl.py
 - **МУТАНТ ПО ЧИСЛУ В КАЖДОМ РОДЕ, ГДЕ ЕСТЬ ЗАПИСЬ**  
   tools/condforms.py, tools/leapforms.py, tools/medianforms.py, tools/numlineforms.py, tools/pctbaseforms.py, tools/tzoneforms.py
+- **ОБРАЗЕЦ, СОВПАВШИЙ ПЕРВЫМ, НЕ ЕСТЬ ОБРАЗЕЦ ВЕРНЫЙ, КОГДА ОБРАЗЦЫ РАЗЛИЧАЮТСЯ НЕ**  
+  scripts/house_mutant.py, tools/dateforms.py, tools/discountroad.py, tools/nomention.py, tools/pronobject.py, tools/quantforms.py
 - **РОДЫ ЕСТЬ ФОРМЫ — И ЭТО НЕ ПОВТОР, А РАЗРЕШЕНИЕ ДВУСМЫСЛЕННОСТИ**  
   tools/actionpages.py, tools/defforms.py, tools/jointforms.py, tools/measurestory.py, tools/ninelang.py, tools/relstory.py
 - **САМАЯ ДЛИННАЯ ЗАДАЧА ЕСТЬ ДНО СРОКА**  
@@ -306,6 +313,8 @@
   scripts/half_law.py, scripts/key_support.py, scripts/one_singular.py, scripts/operator_share.py, scripts/template_word.py
 - **СЛОВА ДО ПОСЛЕДНЕГО ДВОЕТОЧИЯ, РАВЕНСТВА ПОСЛЕ**  
   tools/divsenseforms.py, tools/mapscaleforms.py, tools/pctdiffforms.py, tools/propforms.py, tools/remdivforms.py
+- **СПРАШИВАЮТСЯ ВСЕ СОВПАВШИЕ ОБРАЗЦЫ, А НЕ ПЕРВЫЙ**  
+  tools/dateforms.py, tools/discountroad.py, tools/nomention.py, tools/pronobject.py, tools/quantforms.py
 - **ЧЕТВЁРКА В ЗАПИСИ ЕСТЬ БУКВА ЗАКОНА, А НЕ ВЕЛИЧИНА РЯДА**  
   courts/inquiry_court.py, courts/inquiry_de_fr_court.py, courts/inquiry_es_it_court.py, courts/inquiry_pl_tr_court.py, courts/inquiry_pt_nl_court.py
 
@@ -545,6 +554,8 @@
   courts/boolexpr_court.py, tools/boolforms.py
 - **ГДЕ ДОМ ГОВОРИТ О ЧУЖОЙ АЗБУКЕ, АЗБУКА ПЕРЕСТАЁТ БЫТЬ ПРИЗНАКОМ ЯЗЫКА**  
   tools/bilang.py, tools/gen_genesis_glyphs.py
+- **ГДЕ ЕЁ ИСКАЛИ И СЧИТАЛИ НАЙДЕННОЙ**  
+  scripts/house_mutant.py, tools/dateforms.py
 - **ГЛАГОЛ СОГЛАСУЕТСЯ НЕ ТОЛЬКО С ЛИЦОМ ГОВОРЯЩЕГО, НО И С ОПРЕДЕЛЁННОСТЬЮ ПРЕДМЕТА**  
   courts/huobj_court.py, tools/huobjforms.py
 - **ГРАНИЦА БЕЗ ПРИЗНАКА ДЕЛА ЕСТЬ СЛОВО, А НЕ МЕРА**  
@@ -651,6 +662,8 @@
   courts/langcount_court.py, tools/foreign.py
 - **ЗАКОН, ПРИМЕНЁННЫЙ К ОДНОМУ СТРОИТЕЛЮ ДОМА, НЕ ПРИМЕНЁН К ДРУГОМУ**  
   scripts/elision.py, tools/svampforms.py
+- **ЗАКОН, ЧИТАЕМЫЙ ДВУМЯ, ДОЛЖЕН ЧИТАТЬСЯ ИМИ ОДИНАКОВО ДО КОНЦА**  
+  tools/nomention.py, tools/scaleforms.py
 - **ЗАМЕР ПИСЬМА НЕ ЕСТЬ ЗАМЕР ДЕЛА**  
   scripts/twin_world.py, tools/unitcmpforms.py
 - **ЗАПЯТАЯ И ТОЧКА СУТЬ ГРАНИЦЫ ЧИСЛА, КАК ДРОБНАЯ ЧЕРТА**  
@@ -861,6 +874,8 @@
   tools/directforms.py, tools/gen_genesis_direct.py
 - **ПРАВИЛО, СТОЯЩЕЕ СРЕДИ НЕПРЕДСКАЗУЕМОГО, НЕЗАМЕТНО ВДВОЙНЕ**  
   tools/gen_genesis_nlarticle.py, tools/nlarticleforms.py
+- **ПРАВКА, ВНЕСЁННАЯ В ПИСЬМО И НЕ ВНЕСЁННАЯ В ЧТЕНИЕ, ОСТАВЛЯЕТ ЛОЖЬ РОВНО ТАМ**  
+  scripts/house_mutant.py, tools/dateforms.py
 - **ПРАВОТА, ДЕРЖАЩАЯСЯ НА ТОМ, ЧТО ЖРЕБИЙ НЕ ДАЛ ЕДИНИЦЫ, НЕ ЕСТЬ ПРАВОТА — ОНА НЕ**  
   scripts/half_law.py, tools/condprob.py
 - **ПРАВОТА, ДЕРЖАЩАЯСЯ НА ТОМ, ЧТО СТРОКА СЛУЧАЙНО НАЧАЛАСЬ ВОПРОСНЫМ СЛОВОМ, НЕ ЕСТЬ**  
@@ -1035,6 +1050,8 @@
   tools/datecmp.py, tools/roadpath.py
 - **СТРАНИЦА, ПОКАЗЫВАЮЩАЯ ЗАПРЕЩЁННОЕ, ОБЯЗАНА ПОМЕЧАТЬ ЕГО ЗНАКОМ, КОТОРЫЙ ЧИТАЕТ СУД**  
   courts/dosupport_court.py, courts/serestar_court.py
+- **СТРАНИЦУ НАПИСАЛ, А НЕ ЧТО ОНА ВЕРНА**  
+  tools/discountroad.py, tools/pronobject.py
 - **СТРОКА БЕЗ ЕДИНОГО ОБЪЯВЛЕННОГО СЛОВА БЕЗЗАЩИТНА: ЕЁ СУДИТ ВСЯКИЙ, КТО УЗНАЛ В НЕЙ**  
   scripts/signless_census.py, scripts/template_word.py
 - **СТРОКА И СТОЛБЕЦ СУТЬ ДВЕ КООРДИНАТЫ, А НЕ ДВА ПОИСКА ПОДРЯД**  
@@ -1061,6 +1078,8 @@
   courts/countlaw_court.py, tools/countlawforms.py
 - **СУД, СУДЯЩИЙ СТРОКУ, НО НЕ ЧИТАЮЩИЙ ПРЕДМЕТА ПОРЧИ, ХУЖЕ МОЛЧАНИЯ**  
   courts/corpusword_court.py, scripts/court_mutants.py
+- **СУД, У КОТОРОГО ИСТИНА ЕСТЬ ОДНО ЛИШЬ ЧЛЕНСТВО В НАБОРЕ, НЕ ЗАКОН, А**  
+  tools/oppositeforms.py, tools/scaleforms.py
 - **СУД, ЧЕЙ ЗАКРЫТЫЙ НАБОР ЛОВИТ ВСЯКУЮ ПОРЧУ РАНЬШЕ СОДЕРЖАТЕЛЬНОЙ ПРОВЕРКИ, ИМЕЕТ ЭТУ**  
   scripts/house_mutant.py, tools/serestarforms.py
 - **СУД, ЧИТАЮЩИЙ ЧИСЛО, МОЛЧИТ О СЛОВЕ, И ЕГО МОЛЧАНИЕ ПАЛАТА ЧИТАЕТ КАК СОГЛАСИЕ**  
