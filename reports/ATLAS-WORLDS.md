@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 347 миров, 472443 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 348 миров, 472767 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -709,10 +709,12 @@
 
 ## АКТ «compute» — словарём не объявлен
 
-Миров 3, строк 838.
+Миров 4, строк 1162.
 
 - **`wordnum`** (392 строк; recompute, whole_only)  
   **NUMBERS OF THE STORY WRITTEN AS WORDS** — «Ann had fifteen coins», not «Ann had 15 coins» (21.09).
+- **`numtwin`** (324 строк; recompute, whole_only)  
+  **THE TWIN OF A NUMBER** — the digit and the word on ONE page as EQUALS: «40 is forty» (21.09).
 - **`wallet`** (293 строк; recompute, whole_only)  
   **THE WALLET** — MONEY AS A QUANTITY THAT IS SPENT AND THAT REMAINS (21.09).
 - **`propmeasure`** (153 строк; recompute, whole_only)  
@@ -778,5 +780,5 @@
     ОБЪЯВЛЕНИЕ В ТРИДЦАТЬ ЗНАКОВ НЕ ЛЖЁТ И НЕ ГОВОРИТ: читатель узнаёт имя мира
     и ничего сверх него.
 
-Миров: **0** из 347.
+Миров: **0** из 348.
 

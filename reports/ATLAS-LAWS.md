@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 572 законов
+# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 575 законов
 
 Собран из докстрингов и комментариев `tools`, `courts`, `scripts` орудием
 `tools/law_atlas.py`. Взяты ОБЩИЕ законы — те, что держатся не одним файлом.
@@ -6,7 +6,7 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 7364 разных законов на 9458 упоминаний; сказанных однажды — 6792, и они остаются при своём месте.
+Всего в дереве 7372 разных законов на 9470 упоминаний; сказанных однажды — 6797, и они остаются при своём месте.
 
 
 ## Держат 82 файлов
@@ -179,6 +179,8 @@
   tools/calforms.py, tools/chainforms.py, tools/cmpforms.py, tools/countforms.py, tools/geoforms.py, tools/moneyforms.py … и ещё 5
 - **ТО, ЧТО СТОИТ В ЗАГОЛОВКЕ ЦИКЛА, ЗНАЕТ СТРОИТЕЛЬ**  
   tools/calforms.py, tools/chainforms.py, tools/cmpforms.py, tools/countforms.py, tools/geoforms.py, tools/moneyforms.py … и ещё 5
+- **ЦЕЛЬ ОБЪЯВЛЯЕТСЯ СТРОКОЙ, А НЕ ВПИСЫВАЕТСЯ В ВЫЗОВ**  
+  tools/gen_genesis_geometry.py, tools/gen_genesis_liarchain.py, tools/gen_genesis_linalg.py, tools/gen_genesis_md_latex.py, tools/gen_genesis_numbers.py, tools/gen_genesis_numtwin.py … и ещё 5
 
 ## Держат 10 файлов
 
@@ -196,8 +198,6 @@
   tools/calforms.py, tools/cmpforms.py, tools/countforms.py, tools/geoforms.py, tools/physforms.py, tools/primeforms.py … и ещё 4
 - **ФОРМУЛЫ РОДОВ — ЗАКОН ОТВЕТА ОТ ВЕЛИЧИН ВОПРОСА**  
   tools/compsciforms.py, tools/gen_genesis_machine.py, tools/gen_genesis_physics.py, tools/gen_genesis_statistics.py, tools/gen_genesis_units.py, tools/geomforms.py … и ещё 4
-- **ЦЕЛЬ ОБЪЯВЛЯЕТСЯ СТРОКОЙ, А НЕ ВПИСЫВАЕТСЯ В ВЫЗОВ**  
-  tools/gen_genesis_geometry.py, tools/gen_genesis_liarchain.py, tools/gen_genesis_linalg.py, tools/gen_genesis_md_latex.py, tools/gen_genesis_numbers.py, tools/gen_genesis_propmeasure.py … и ещё 4
 - **ЯЗЫК СТОИТ В ЗАГОЛОВКЕ ЦИКЛА И ТЕРЯЛСЯ НА ПОРОГЕ СЛОВАРЯ**  
   tools/chainforms.py, tools/cmpforms.py, tools/countforms.py, tools/geoforms.py, tools/moneyforms.py, tools/physforms.py … и ещё 4
 
@@ -692,6 +692,8 @@
   scripts/ask_reach.py, tools/asking.py
 - **ЗНАНИЕ, ЗАПИСАННОЕ ПРОЗОЙ, НЕ ЧИТАЕТСЯ НИКЕМ, КРОМЕ ЧЕЛОВЕКА**  
   tools/elisionforms.py, tools/frgram.py
+- **ЗНАНИЕ, КОТОРОЕ ЧИТАТЕЛЬ ВЫВОДИТ ИЗ ПОРЯДКА, А НЕ ИЗ ПОКАЗА, ДЕРЖИТСЯ РОВНО ДО ПЕРВОЙ**  
+  courts/numtwin_court.py, tools/numtwin.py
 - **И ЕСТЬ ТРЕТЬЕ, ЧТО СНИМАЕТ МНИМОЕ ПРОТИВОРЕЧИЕ**  
   courts/onecase_court.py, tools/onecase.py
 - **И» НАД ИСТИННОСТЬЮ И «И» НАД ПРИНАДЛЕЖНОСТЬЮ — ОДИН ЗАКОН И ДВА ДЕЛА**  
@@ -1154,6 +1156,8 @@
   courts/koparticle_court.py, tools/koparticleforms.py
 - **ФОРМА, НЕ ПОКАЗАННАЯ ПРИ ЕДИНИЦЕ, НЕ КУПЛЕНА**  
   scripts/one_singular.py, tools/gen_genesis_physics.py
+- **ФОРМА, ОБЪЯВЛЕННАЯ ДЛЯ СОСТАВА, НЕ ЕСТЬ ИМЯ ЧИСЛА**  
+  courts/numtwin_court.py, tools/numtwin.py
 - **ФРАНЦУЗСКАЯ ЭЛИЗИЯ ДЕЛАЕТСЯ ПОСЛЕ ПОДСТАНОВКИ**  
   tools/cmpframes.py, tools/holdforms.py
 - **ХВОСТ СТРОКИ ЕСТЬ ЧАСТЬ СТРОКИ, ПОКА СУД НЕ СКАЗАЛ ИНОГО**  
@@ -1170,6 +1174,8 @@
   scripts/house_mutant.py, tools/svampforms.py
 - **ЦИТАТА ПОД ЗВЁЗДОЧКОЙ НЕ ЕСТЬ РЕЧЬ СТРОКИ, А ОБРАЗЕЦ НЕВОЗМОЖНОЙ РЕЧИ**  
   courts/rugram_court.py, tools/starred.py
+- **ЦИФРА И СЛОВО СУТЬ ДВА ПИСЬМА ОДНОГО ЧИСЛА, И РАВЕНСТВО ИХ НАДО ПОКАЗАТЬ, А НЕ ВЫВЕСТИ**  
+  courts/numtwin_court.py, tools/numtwin.py
 - **ЧЁТНОЕ НЕ-КВАДРАТ ГОВОРИТ «ДА» ТОЮ ЖЕ РАМКОЙ**  
   courts/proof_court.py, tools/gen_genesis_proof.py
 - **ЧАСОВОЙ ПОЯС ЕСТЬ ИМЕННО ТО МНОЖЕСТВО МЕСТ, ГДЕ ЧАС ОДИН И ТОТ ЖЕ**  
