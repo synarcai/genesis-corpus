@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 344 миров, 470135 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 344 миров, 471605 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -550,22 +550,22 @@
 
 ## АКТ «inflect» — поставить слово в форму по объявленному правилу
 
-Миров 34, строк 111775.
+Миров 34, строк 113245.
 
 - **`lang_de`** (8274 строк; declared, whole_only)  
   **THE GERMAN LAYER** — FOUR CASES CARRIED BY THE ARTICLE, EACH IN ITS OWN FRAME. Declared until 12.09 in nine words.
-- **`lang_es`** (7302 строк; declared, whole_only)  
+- **`lang_es`** (7692 строк; declared, whole_only)  
   **Мир пакета: имя с определителем, признак, число, счёт на своём языке, лицо глагола** — и ПЯТЬ НЕВОЗМОЖНЫХ ФРАЗ, помеченных «¬», из коих три о грамматике и две о смысле.
 - **`lang_sw`** (5820 строк; declared, tier1_unverified, whole_only)  
   **swahili: NOUN CLASSES, where the class of the noun governs the PREFIX of verb, adjective and numeral alike** — agreement that changes the BEGINNING of a word, not its end (tier 1: structure green, forms agree with the pack's own rules)
+- **`lang_pt`** (5590 строк; declared, tier1_unverified, whole_only)  
+  **Мир пакета: имя с определителем, признак, число, счёт на своём языке, лицо глагола** — и ПЯТЬ НЕВОЗМОЖНЫХ ФРАЗ, помеченных «¬», из коих три о грамматике и две о смысле.
 - **`lang_zh`** (5470 строк; declared, whole_only)  
   **THE CHINESE LAYER** — A LANGUAGE THAT COUNTS WITHOUT INFLECTING. Declared until 12.09 in ten words.
+- **`lang_it`** (5228 строк; declared, tier1_unverified, whole_only)  
+  **Мир пакета: имя с определителем, признак, число, счёт на своём языке, лицо глагола** — и ПЯТЬ НЕВОЗМОЖНЫХ ФРАЗ, помеченных «¬», из коих три о грамматике и две о смысле.
 - **`lang_ru`** (5136 строк; declared, whole_only)  
   **THE RUSSIAN LAYER** — WHAT THE PACK DECLARES AND WHAT THIS WORLD ACTUALLY SHOWS, declared until 12.09 as «russian as a LANGUAGE: paradigms, graphemes, irregulars».
-- **`lang_pt`** (5020 строк; declared, tier1_unverified, whole_only)  
-  **Мир пакета: имя с определителем, признак, число, счёт на своём языке, лицо глагола** — и ПЯТЬ НЕВОЗМОЖНЫХ ФРАЗ, помеченных «¬», из коих три о грамматике и две о смысле.
-- **`lang_it`** (4718 строк; declared, tier1_unverified, whole_only)  
-  **Мир пакета: имя с определителем, признак, число, счёт на своём языке, лицо глагола** — и ПЯТЬ НЕВОЗМОЖНЫХ ФРАЗ, помеченных «¬», из коих три о грамматике и две о смысле.
 - **`lang_pl`** (4569 строк; declared, tier1_unverified, whole_only)  
   **Мир пакета: имя с определителем, признак, число, счёт на своём языке, лицо глагола** — и ПЯТЬ НЕВОЗМОЖНЫХ ФРАЗ, помеченных «¬», из коих три о грамматике и две о смысле.
 - **`lang_en`** (4196 строк; declared, whole_only)  
