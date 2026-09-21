@@ -6,7 +6,7 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 7296 разных законов на 9376 упоминаний; сказанных однажды — 6729, и они остаются при своём месте.
+Всего в дереве 7306 разных законов на 9387 упоминаний; сказанных однажды — 6739, и они остаются при своём месте.
 
 
 ## Держат 82 файлов
@@ -455,6 +455,8 @@
   tools/linalgforms.py, tools/seriesforms.py, tools/speechforms.py
 - **РОСТ И УБЫЛЬ ИДУТ В ОДНОМ ПРОХОДЕ**  
   tools/gen_genesis_divshare.py, tools/gen_genesis_mulshare.py, tools/gen_genesis_pctchange.py
+- **РУБЕЖ, НЕ ОПУЩЕННЫЙ ЗА УЛУЧШЕНИЕМ, ЕСТЬ ЗАПАС НА УХУДШЕНИЕ**  
+  scripts/cell_shown.py, scripts/concept_reach.py, scripts/margin_census.py
 - **РЯДЫ ДОМА — ЧАСТИ, СТОЯЩИЕ В ЕГО РАМКАХ НА ОДНОМ МЕСТЕ**  
   tools/behaviorforms.py, tools/natureforms.py, tools/worldfacts.py
 - **СЕМЬ РОДОВ, И ДВА ИЗ НИХ СУТЬ ОДНА ЛОВУШКА, ПОКАЗАННАЯ ОБЕИМИ СТОРОНАМИ**  
@@ -998,8 +1000,6 @@
   courts/rolemark_court.py, tools/rolemark.py
 - **РУБЕЖ НОЛЬ И ДОСТИГНУТ В ТОТ ЖЕ ЧАС**  
   scripts/contrast_real.py, scripts/genre_kinds.py
-- **РУБЕЖ, НЕ ОПУЩЕННЫЙ ЗА УЛУЧШЕНИЕМ, ЕСТЬ ЗАПАС НА УХУДШЕНИЕ**  
-  scripts/cell_shown.py, scripts/margin_census.py
 - **РУССКАЯ ФОРМА ПРИ ЧИСЛЕ НЕ ПИШЕТСЯ РУКОЙ, А БЕРЁТСЯ У ДОМА ЕДИНИЦ**  
   tools/idredupforms.py, tools/zhclassforms.py
 - **РУССКОЕ СОГЛАСОВАНИЕ НЕ ПЕРЕПИСАНО, А ПРОЧИТАНО**  
