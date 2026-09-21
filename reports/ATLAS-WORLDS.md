@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 344 миров, 468571 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 344 миров, 470135 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -11,13 +11,13 @@
 
 ## АКТ «recount» — пересчитать величину: строка утверждает число
 
-Миров 158, строк 238499.
+Миров 158, строк 239088.
 
 - **`links`** (17566 строк; declared, whole_only)  
   **CONVERSATION LINKS** — a question whose subject stands in the PREVIOUS reply (the owner's order, 04.09, item 5; the BESEDA band measures this genus mute 15 of 15).
 - **`school_biling_v2c`** (11440 строк; recompute, whole_only)  
   **THE SCHOOL OF ARITHMETIC IN THREE SURFACES** — the largest show world of the corpus (11 380 lines, 470 858 bytes) and, until 12.09, the one that said least about itself: thirty characters of declaration, «arithmetic school (3 surfaces)».
-- **`svamp`** (9856 строк; recompute, whole_only)  
+- **`svamp`** (10445 строк; recompute, whole_only)  
   **SVAMP SHAPES** — the eight shapes of the live SVAMP band that no frame of the corpus held (d5, 06.09, by weight on 726 tacts): the hidden quantity «some» and the heads of the total (in all, altogether, in total, a total of, now has N left); the oblique pr…
 - **`holdforms`** (6777 строк; declared, whole_only)  
   **HOLDINGS WITHOUT A VERB** — the first show «only by frames» (05.09, the owner's word through holon: prototype ONE BEARER, a story read only by frames).
@@ -550,11 +550,11 @@
 
 ## АКТ «inflect» — поставить слово в форму по объявленному правилу
 
-Миров 34, строк 110800.
+Миров 34, строк 111775.
 
 - **`lang_de`** (8274 строк; declared, whole_only)  
   **THE GERMAN LAYER** — FOUR CASES CARRIED BY THE ARTICLE, EACH IN ITS OWN FRAME. Declared until 12.09 in nine words.
-- **`lang_es`** (7039 строк; declared, whole_only)  
+- **`lang_es`** (7302 строк; declared, whole_only)  
   **Мир пакета: имя с определителем, признак, число, счёт на своём языке, лицо глагола** — и ПЯТЬ НЕВОЗМОЖНЫХ ФРАЗ, помеченных «¬», из коих три о грамматике и две о смысле.
 - **`lang_sw`** (5820 строк; declared, tier1_unverified, whole_only)  
   **swahili: NOUN CLASSES, where the class of the noun governs the PREFIX of verb, adjective and numeral alike** — agreement that changes the BEGINNING of a word, not its end (tier 1: structure green, forms agree with the pack's own rules)
@@ -562,11 +562,11 @@
   **THE CHINESE LAYER** — A LANGUAGE THAT COUNTS WITHOUT INFLECTING. Declared until 12.09 in ten words.
 - **`lang_ru`** (5136 строк; declared, whole_only)  
   **THE RUSSIAN LAYER** — WHAT THE PACK DECLARES AND WHAT THIS WORLD ACTUALLY SHOWS, declared until 12.09 as «russian as a LANGUAGE: paradigms, graphemes, irregulars».
-- **`lang_pt`** (4645 строк; declared, tier1_unverified, whole_only)  
+- **`lang_pt`** (5020 строк; declared, tier1_unverified, whole_only)  
+  **Мир пакета: имя с определителем, признак, число, счёт на своём языке, лицо глагола** — и ПЯТЬ НЕВОЗМОЖНЫХ ФРАЗ, помеченных «¬», из коих три о грамматике и две о смысле.
+- **`lang_it`** (4718 строк; declared, tier1_unverified, whole_only)  
   **Мир пакета: имя с определителем, признак, число, счёт на своём языке, лицо глагола** — и ПЯТЬ НЕВОЗМОЖНЫХ ФРАЗ, помеченных «¬», из коих три о грамматике и две о смысле.
 - **`lang_pl`** (4569 строк; declared, tier1_unverified, whole_only)  
-  **Мир пакета: имя с определителем, признак, число, счёт на своём языке, лицо глагола** — и ПЯТЬ НЕВОЗМОЖНЫХ ФРАЗ, помеченных «¬», из коих три о грамматике и две о смысле.
-- **`lang_it`** (4381 строк; declared, tier1_unverified, whole_only)  
   **Мир пакета: имя с определителем, признак, число, счёт на своём языке, лицо глагола** — и ПЯТЬ НЕВОЗМОЖНЫХ ФРАЗ, помеченных «¬», из коих три о грамматике и две о смысле.
 - **`lang_en`** (4196 строк; declared, whole_only)  
   **THE ENGLISH LAYER** — THE THIRD-PERSON -s AND THE PLURALS THAT OBEY NOTHING. Declared until 12.09 in eleven words; measured 12.09 they hold up, and here are the numbers behind them. 4196 lines, 1507 asking.

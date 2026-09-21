@@ -19,7 +19,7 @@
 Мера по страницам живёт в сайдкаре `datasets/GENESIS-FULL.genera.tsv`: номер
 строки свода → «дом · род», 290 002 строки из 442 600.
 
-**Родов 1846, различных имён 1556, страниц под ними 330883.**
+**Родов 1846, различных имён 1556, страниц под ними 331472.**
 Объявлено словом `РОДЫ` в 254 домах, словом `ФОРМЫ` — в 57.
 Домов без своего мира показов — 0. Мир дома узнаётся ПО ВВОЗУ КУЗНИЦЫ,
 а не по окончанию имени файла: догадка «срезать forms» лгала о сорока одном доме.
@@ -4849,83 +4849,83 @@
 
 ## `svampforms` → мир `genderverb`, `svamp`
 
-- **гнездо_датива** — страниц 32
+- **гнездо_датива** — страниц 36
   образец: a Ana le quedan 12 monedas. Luis le da 5 más. ¿cuántas le quedan ahora? 17: 12 + 5 = 17.
-- **некоторые** — страниц 168
+- **некоторые** — страниц 189
   образец: Ann had 12 coins. she gave some of them away. now she has 7 coins left. how many coins did she give away? 5: 12 − 7 = 5.
-- **итог** — страниц 288
+- **итог** — страниц 324
   образец: Ann has 12 red coins and 5 blue coins. how many coins does Ann have in all? 17 coins: 12 + 5 = 17.
-- **итог_всего** — страниц 96
+- **итог_всего** — страниц 108
   образец: Ann has 12 red coins and 5 blue coins. how many coins does Ann have? a total of 17 coins: 12 + 5 = 17.
-- **осталось** — страниц 168
+- **осталось** — страниц 189
   образец: Ann had 12 coins. she gave away 5. how many does she have now? she now has 7 left: 12 − 5 = 7.
-- **из_них** — страниц 168
+- **из_них** — страниц 189
   образец: Ann had 12 coins. she gave 5 of them to Anna. how many coins does she have now? 7: 12 − 5 = 7.
-- **ему** — страниц 136
+- **ему** — страниц 153
   образец: Ann had 12 coins. Anna gave her 5 more. how many coins does she have now? 17: 12 + 5 = 17.
-- **если** — страниц 152
+- **если** — страниц 171
   образец: Ann has 12 coins. if she gives away 5, how many will she have? 7: 12 − 5 = 7.
-- **если_придут** — страниц 96
+- **если_придут** — страниц 108
   образец: there are 12 coins in the box. if 5 more are put in, how many will there be? 17: 12 + 5 = 17.
-- **время** — страниц 320
+- **время** — страниц 360
   образец: at first Ann had 12 coins. then she got 5 more. how many coins does she have now? 17: 12 + 5 = 17.
-- **кому** — страниц 136
+- **кому** — страниц 153
   образец: Ann had 12 coins. she gave 5 coins to Anna. how many coins does Ann have now? 7: 12 − 5 = 7.
-- **у_него** — страниц 136
+- **у_него** — страниц 153
   образец: Ann had 12 coins. Anna took 5 coins from her. how many coins does Ann have now? 7: 12 − 5 = 7.
 - **единица** — страниц 288
   образец: a coin costs $ 3. how much do 4 coins cost? $ 12: 4 × 3 = 12.
-- **товар** — страниц 192
+- **товар** — страниц 216
   образец: Ann has 12 pages of reading homework and 5 pages of math homework. how many pages of homework does she have in all? 17 p
-- **потерял** — страниц 152
+- **потерял** — страниц 171
   образец: Ann had 12 coins. she lost 5 of them. how many coins does she have left? 7: 12 − 5 = 7.
-- **купил_ещё** — страниц 144
+- **купил_ещё** — страниц 162
   образец: Ann had 12 coins. she bought 5 more. how many coins does she have now? 17: 12 + 5 = 17.
-- **собрал_у** — страниц 112
+- **собрал_у** — страниц 126
   образец: Ann collected 12 coins. she lost 5 of them. how many coins does Ann have left? 7: 12 − 5 = 7.
-- **три** — страниц 160
+- **три** — страниц 180
   образец: Ann collected 12 coins. Ann bought 5 more. she lost 3 of them. how many coins does Ann have left? 14: 12 + 5 − 3 = 14.
-- **три_шаги** — страниц 160
+- **три_шаги** — страниц 180
   образец: Ann collected 12 coins. Ann bought 5 more. she lost 3 of them. how many coins does Ann have left? step 1: 12 + 5 = 17. s
-- **факт** — страниц 96
+- **факт** — страниц 108
   образец: Ann has 12 coins. how many coins does Ann have? 12.
-- **без_данных** — страниц 96
+- **без_данных** — страниц 99
   образец: how many coins does Ann have? I do not know: how many coins Ann has is not said.
-- **пришло_скрыто** — страниц 168
+- **пришло_скрыто** — страниц 189
   образец: Ann had 12 coins. she got some more coins. now she has 17 coins. how many coins did she get? 5: 17 − 12 = 5.
-- **ушло_скрыто** — страниц 168
+- **ушло_скрыто** — страниц 189
   образец: Ann had 12 coins. she lost some coins. now she has 7 coins. how many coins did she lose? 5: 12 − 7 = 5.
-- **часть_из_них** — страниц 168
+- **часть_из_них** — страниц 189
   образец: Ann had 12 coins. she sold some of them. now she has 7 coins. how many coins did she sell? 5: 12 − 7 = 5.
-- **взял_скрыто** — страниц 136
+- **взял_скрыто** — страниц 153
   образец: Ann had 12 coins. Anna took some coins from her. now she has 7 coins. how many coins did Anna take? 5: 12 − 7 = 5.
-- **владеет** — страниц 96
+- **владеет** — страниц 108
   образец: Ann has 12 coins. how many coins does Ann own? Ann owns 12 coins.
-- **владеет2** — страниц 8
+- **владеет2** — страниц 9
   образец: Ann has 12 coins. how many coins does Ann possess? Ann possesses 12 coins.
-- **владеет_после** — страниц 136
+- **владеет_после** — страниц 153
   образец: Ann has 12 coins. she gives away 5. how many coins does Ann own now? Ann owns 7 coins: 12 − 5 = 7.
-- **держит** — страниц 16
+- **держит** — страниц 18
   образец: Ann has 12 coins. she finds 5 more. how many coins does Ann hold now? Ann holds 17 coins: 12 + 5 = 17.
-- **хранит** — страниц 16
+- **хранит** — страниц 18
   образец: Ann has 12 coins. she gives away 5. how many coins does Ann keep? Ann keeps 7 coins: 12 − 5 = 7.
 - **доля** — страниц 444
   образец: Ann has 12 coins. half of them are red. how many coins are red? 6: 12 ÷ 2 = 6.
 - **доля_не** — страниц 444
   образец: Ann has 12 coins. half of them are red. how many coins are not red? step 1: 12 ÷ 2 = 6. step 2: 12 − 6 = 6. total: 6.
-- **возраст_имя** — страниц 72
+- **возраст_имя** — страниц 81
   образец: Ann is 12 years old. how old will Ann be in 5 years? Ann will be 17 years old: 12 + 5 = 17.
-- **его_вещи** — страниц 96
+- **его_вещи** — страниц 108
   образец: Ann has 12 coins. her mother has 5 coins. how many coins does Ann have? Ann has 12 coins.
-- **вместе_их** — страниц 96
+- **вместе_их** — страниц 108
   образец: Ann has 12 coins. her mother has 5 coins. how many coins do they have together? together they have 17 coins: 12 + 5 = 17
-- **дал_ему** — страниц 136
+- **дал_ему** — страниц 153
   образец: Ann had 12 coins. Anna gave her 5 coins. how many coins does Ann have now? Ann has 17 coins: 12 + 5 = 17.
-- **купил_у_него** — страниц 232
+- **купил_у_него** — страниц 261
   образец: Ann had 12 coins. Anna had some too. she bought 5 coins from her. how many coins does Ann have now? Ann has 17 coins: 12
-- **оставив_ему** — страниц 136
+- **оставив_ему** — страниц 153
   образец: Ann gave 5 coins to Anna, leaving her with 7 coins. how many coins did Ann have at first? Ann had 12 coins: 5 + 7 = 12.
-- **имя_с_с** — страниц 96
+- **имя_с_с** — страниц 108
   образец: Ann's mother has 5 coins. how many coins does Ann's mother have? Ann's mother has 5 coins.
 - **сделал** — страниц 72
   образец: Ann did 12 push-ups and 5 crunches. how many push-ups did Ann do? 12. how many exercises in all? 17 exercises: 12 + 5 = 
