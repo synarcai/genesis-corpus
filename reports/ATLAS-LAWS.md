@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 559 законов
+# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 562 законов
 
 Собран из докстрингов и комментариев `tools`, `courts`, `scripts` орудием
 `tools/law_atlas.py`. Взяты ОБЩИЕ законы — те, что держатся не одним файлом.
@@ -6,7 +6,7 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 7255 разных законов на 9316 упоминаний; сказанных однажды — 6696, и они остаются при своём месте.
+Всего в дереве 7274 разных законов на 9343 упоминаний; сказанных однажды — 6712, и они остаются при своём месте.
 
 
 ## Держат 82 файлов
@@ -33,13 +33,10 @@
 
 ## Держат 33 файлов
 
+- **НАБОР ГОВОРИТ, ЧТО ДОМ СТРАНИЦУ НАПИСАЛ, А НЕ ЧТО ОНА ВЕРНА**  
+  scripts/house_mutant.py, tools/actionmeasure.py, tools/beforetails.py, tools/clockforms.py, tools/clockwords.py, tools/closedworld.py … и ещё 27
 - **ЯЗЫК ПОКАЗА НАЗВАН ПЕРВЫМ, РОД — ВТОРЫМ**  
   tools/cmpmultforms.py, tools/coinforms.py, tools/eqforms.py, tools/gen_genesis_algebra.py, tools/gen_genesis_algorithms.py, tools/gen_genesis_arith_langs.py … и ещё 27
-
-## Держат 32 файлов
-
-- **НАБОР ГОВОРИТ, ЧТО ДОМ СТРАНИЦУ НАПИСАЛ, А НЕ ЧТО ОНА ВЕРНА**  
-  scripts/house_mutant.py, tools/actionmeasure.py, tools/beforetails.py, tools/clockforms.py, tools/clockwords.py, tools/cmpframes.py … и ещё 26
 
 ## Держат 31 файлов
 
@@ -297,6 +294,8 @@
   courts/grid_court.py, courts/roadpath_court.py, tools/gridread.py, tools/notenough.py, tools/roadpath.py
 - **ГРАНИЦА ОБЪЯВЛЕНИЯ СКАЗАНА ПРЯМО**  
   tools/countlawforms.py, tools/elisionforms.py, tools/genderforms.py, tools/plcopulaforms.py, tools/soundarticleforms.py
+- **ДОМ ОБЪЯВЛЯЕТ СЕБЯ СУДЯЩИМ ОБЪЯВЛЕНИЕМ**  
+  tools/dialogueforms.py, tools/linkforms.py, tools/natureforms.py, tools/topicforms.py, tools/worldfacts.py
 - **ДОМ, НЕ ЗНАЮЩИЙ СВОИХ СТРАНИЦ, НЕ МОЖЕТ НАЗВАТЬ ИХ РОДА**  
   tools/defforms.py, tools/measurestory.py, tools/notationforms.py, tools/searchforms.py, tools/surfaceforms.py
 - **ЛОВУШКА ПРОВЕРЯЕТСЯ КАК ЛОВУШКА**  
@@ -483,6 +482,8 @@
   courts/formula_court.py, courts/geometry_court.py, courts/physlaw_court.py
 - **ЦИТАТА СОСЕДА НЕ ЕСТЬ ЦИТАТА ЯЗЫКА ДОМА**  
   tools/huobjforms.py, tools/personplaceforms.py, tools/zhclassforms.py
+- **ЧАСТИ, ОБЪЯВЛЕННЫЕ ВЗАИМОЗАМЕНИМЫМИ ПО МЕСТУ, НЕ ВЗАИМОЗАМЕНИМЫ ПО ИСТИНЕ**  
+  scripts/house_mutant.py, tools/closedworld.py, tools/natureforms.py
 - **ЧЕГО ЭТОТ ПРИБОР НЕ МЕРИТ, И ЭТО ОБЪЯВЛЕНО ПРЯМО**  
   scripts/ask_width.py, scripts/sentence_cover.py, scripts/verdict_cover.py
 - **ЧИСЛА ПРОВЕРЯЮТСЯ ПРИ ВВОЗЕ**  
@@ -990,6 +991,8 @@
   tools/idredupforms.py, tools/zhclassforms.py
 - **РУССКОЕ СОГЛАСОВАНИЕ НЕ ПЕРЕПИСАНО, А ПРОЧИТАНО**  
   scripts/second_copy.py, tools/gen_genesis_cybernetics.py
+- **РЯДЫ ДОМА — ЧАСТИ, СТОЯЩИЕ В ЕГО РАМКАХ НА ОДНОМ МЕСТЕ**  
+  tools/natureforms.py, tools/worldfacts.py
 - **САМ ПЕРЕЧЕНЬ ВЫХОДОВ БЫВАЕТ НЕПОЛОН**  
   tools/dilemma.py, tools/gen_genesis_dilemma.py
 - **СБОРКА В ПОРЯДКЕ МАНИФЕСТА И СТРОК**  
