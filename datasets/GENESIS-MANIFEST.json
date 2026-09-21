@@ -10287,6 +10287,25 @@
       "actors": []
     },
     {
+      "name": "wallet",
+      "file": "datasets/genesis_wallet.txt",
+      "genre": "THE WALLET — MONEY AS A QUANTITY THAT IS SPENT AND THAT REMAINS (21.09). Measured across 471 605 lines before this world: a purchase with money left over («bought X for N dollars … how much money is left») — ZERO lines; the question about money SPENT — ten; about money REMAINING — fifty-four; spending on TWO goods — sixty-two. The first is nothing, the rest below quorum. HOW THIS DIFFERS FROM ITS NEIGHBOURS, AND WHY IT IS NOT SUPERFLUOUS: the world `price` (house `priceforms`) asks HOW MUCH SOMETHING COSTS — the answer is a product. The house of sufficiency (`enoughforms`) asks IS IT ENOUGH — the answer is yes or no with the shortfall. Here it is asked WHAT BECAME OF THE MONEY: it fell by the price of the purchase, and the question about what is left is a subtraction whose minuend, subtrahend AND difference are all MONEY. A QUANTITY THE READER HAS ONLY EVER SEEN AS AN ANSWER IS NOT RECOGNISED BY HIM IN A QUESTION. Money stood in the corpus as PRICE — as that which is given; here it stands also as that which is ASKED. CURRENCY AND GOODS ARE TAKEN WHOLE FROM THE HOUSE OF PRICE with all their count forms («рубль/рубля/рублей», «złoty/złote/złotych»); persons from the house of actions, with gender and genitive. Exactly ONE new thing is declared here: the frames of purchase and spending in nine languages — and with them THE ACCUSATIVE OF THE GOOD, which the house of price does not declare, for there the good stands in the nominative («одна книга стоит 2 рубля») and here it is an object («купил ОДНУ КНИГУ», «kupił jedną książkę», «kaufte einen Apfel»). A CASE THE HOUSE HAS NOT DECLARED IS NOT GUESSED BY RULE: a grammatical lie is caught by NO counting court — its numbers add up. NEAREST NEIGHBOUR NAMED BY ITS WORLD NAME: `price`. They share the currency, the goods and the count forms — and they ask OPPOSITE THINGS. `price` gives the wallet nothing and asks the cost; `wallet` gives the cost and asks what is left of the wallet. A reader who has learnt to multiply a price by a count still does not know that money FALLS when spent.",
+      "act": [
+        "compute"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
+    },
+    {
       "name": "primes_langs",
       "file": "datasets/genesis_primes_langs.txt",
       "genre": "PRIME AND COMPOSITE IN EIGHT LANGUAGES (the owner's word: every language in surplus; the numbers world says it in en/ru): «97 ist eine Primzahl; ihre Teiler sind 1 und 97.», «91 ist keine Primzahl: 91 = 7 × 13.», «ist 91 eine Primzahl? nein: 91 ist keine Primzahl: 91 = 7 × 13.», fr «91 est-il premier ? non: …», es «¿es 91 primo? no: …», it «91 è primo? no: …», pt «91 é primo? não: …», nl «is 91 priem? nee: …», pl «czy 91 jest liczbą pierwszą? nie: …», tr «91 asal mıdır? hayır: 91 asal değildir: 91 = 7 × 13.» — the verdict word opens the answer (М-147), the witness follows (the two divisors of a prime, the least divisor and its cofactor of a composite); the house of prime phrases (tools/primeforms.py) reads its templates through tools/phrases.py, the court finds the least divisor itself",

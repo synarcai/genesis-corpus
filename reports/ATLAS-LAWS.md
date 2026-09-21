@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 569 законов
+# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 571 законов
 
 Собран из докстрингов и комментариев `tools`, `courts`, `scripts` орудием
 `tools/law_atlas.py`. Взяты ОБЩИЕ законы — те, что держатся не одним файлом.
@@ -6,7 +6,7 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 7340 разных законов на 9429 упоминаний; сказанных однажды — 6771, и они остаются при своём месте.
+Всего в дереве 7353 разных законов на 9445 упоминаний; сказанных однажды — 6782, и они остаются при своём месте.
 
 
 ## Держат 82 файлов
@@ -213,6 +213,8 @@
   tools/adhominem.py, tools/adjorder.py, tools/bothlists.py, tools/directforms.py, tools/homonym.py, tools/noanswer.py … и ещё 3
 - **Т ПОД ЕГО ОБЪЯВЛЕНИЕМ, А НЕ НАД НИМ**  
   tools/absforms.py, tools/deplurforms.py, tools/elisionforms.py, tools/genderforms.py, tools/hayforms.py, tools/homoforms.py … и ещё 3
+- **ЦЕЛЬ ОБЪЯВЛЯЕТСЯ СТРОКОЙ, А НЕ ВПИСЫВАЕТСЯ В ВЫЗОВ**  
+  tools/gen_genesis_geometry.py, tools/gen_genesis_liarchain.py, tools/gen_genesis_linalg.py, tools/gen_genesis_md_latex.py, tools/gen_genesis_numbers.py, tools/gen_genesis_sequences.py … и ещё 3
 - **ЧИТАТЕЛЬ ПОШЁЛ ЗА ОБЪЯВЛЕНИЕМ**  
   courts/everyday_court.py, courts/money_court.py, courts/rates_court.py, courts/ru_story_court.py, courts/ruverbs_court.py, courts/speech_court.py … и ещё 3
 
@@ -232,8 +234,6 @@
   tools/ceilfloorforms.py, tools/gsmtaskforms.py, tools/inquiryforms.py, tools/mulshareforms.py, tools/plausforms.py, tools/primewalkforms.py … и ещё 2
 - **СУД, ЧИТАЮЩИЙ ПО ПРИЗНАКУ, А НЕ ПО ПРИНАДЛЕЖНОСТИ К СВОЕМУ НАБОРУ, ЗОВЁТ ЛОЖЬЮ ЧУЖУЮ**  
   courts/deplur_court.py, courts/hay_court.py, tools/countlawforms.py, tools/deplurforms.py, tools/elisionforms.py, tools/hayforms.py … и ещё 2
-- **ЦЕЛЬ ОБЪЯВЛЯЕТСЯ СТРОКОЙ, А НЕ ВПИСЫВАЕТСЯ В ВЫЗОВ**  
-  tools/gen_genesis_geometry.py, tools/gen_genesis_liarchain.py, tools/gen_genesis_linalg.py, tools/gen_genesis_md_latex.py, tools/gen_genesis_numbers.py, tools/gen_genesis_sequences.py … и ещё 2
 - **ЭТОТ ДОМ ЧИТАЕТСЯ И СУДОМ АРИФМЕТИКИ**  
   courts/divsense_court.py, courts/handy_court.py, courts/mapscale_court.py, courts/parity_court.py, courts/pctchange_court.py, courts/pctdiff_court.py … и ещё 2
 
@@ -532,6 +532,8 @@
   scripts/sentence_cover.py, scripts/verdict_cover.py
 - **В ОТДЕЛЬНОМ СЛОВЕ ПРИ НЁМ — ИЛИ НЕ ЖИВЁТ ВОВСЕ**  
   courts/personplace_court.py, tools/personplaceforms.py
+- **ВЕЛИЧИНА, КОТОРУЮ ЧИТАТЕЛЬ ВИДЕЛ ТОЛЬКО ОТВЕТОМ, НЕ ОПОЗНАЁТСЯ ИМ В ВОПРОСЕ**  
+  courts/wallet_court.py, tools/wallet.py
 - **ВЕРНЫЙ ОТВЕТ ПРИ НЕВЕРНОМ ХОДЕ**  
   tools/amendforms.py, tools/gen_genesis_amend.py
 - **ВЕРНЫЙ СЧЁТ НАД ИМЕНАМИ ДАЁТ ВЕРНОЕ ЧИСЛО И НИКАКОЙ ВЕЩИ**  
@@ -1088,6 +1090,8 @@
   scripts/prefix_traps.py, tools/opchoiceforms.py
 - **СУД СЧИТАЕТ ФАКТЫ И НЕ СУДИТ ПРИЧИН**  
   courts/cooccur_court.py, tools/cooccur.py
+- **СУД ТРЕБУЕТ ТРЁХ ВЕЩЕЙ, И ВСЯКАЯ ПРОВЕРЯЕМА БЕЗ НАБОРА**  
+  courts/wallet_court.py, courts/wordnum_court.py
 - **СУД ЭТОТ ОТКАЛИБРОВАН НА ПОКАЗЫ**  
   courts/agreement_court.py, courts/arith_court.py
 - **СУД, МОЛЧАЩИЙ О ПОРЧЕ, БЕРЁТ ИСТИНУ У СОСЕДА**  

@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 345 миров, 471997 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 346 миров, 472290 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -707,6 +707,15 @@
 - **`conversions`** (176 строк; recompute, whole_only, unsigned_only)  
   **ПЕРЕВОД ОДНОЙ МЕРЫ В ДРУГУЮ ПО ОБЪЯВЛЕННОМУ ОТНОШЕНИЮ: «1 hour = 60 minutes», «в минуте 60 секунд», «5 weeks», «8 feet»** — время, длина и деньги, и всякий перевод есть умножение на число, которое мир называет вслух («a dollar is 100 cents»).
 
+## АКТ «compute» — словарём не объявлен
+
+Миров 2, строк 685.
+
+- **`wordnum`** (392 строк; recompute, whole_only)  
+  **NUMBERS OF THE STORY WRITTEN AS WORDS** — «Ann had fifteen coins», not «Ann had 15 coins» (21.09).
+- **`wallet`** (293 строк; recompute, whole_only)  
+  **THE WALLET** — MONEY AS A QUANTITY THAT IS SPENT AND THAT REMAINS (21.09).
+
 ## АКТ «generalize» — назвать закон над случаями
 
 Миров 2, строк 1737.
@@ -733,13 +742,6 @@
   **A PATH ALONG ROADS** — CONNECTION PASSES ON, NEARNESS DOES NOT (14.09, bought by a zero of the probe).
 - **`handover`** (198 строк; replay, whole_only)  
   **TRACKING THINGS THROUGH SWAPS (14.09, rung two, asked for by holon-f9 for BBH's `tracking_shuffled_objects`). Measured against the свод that day: lines containing «меняются», «обменял», «swap» or «traded»** — ZERO. The corpus knew that a thing PASSES («an…
-
-## АКТ «compute» — словарём не объявлен
-
-Миров 1, строк 392.
-
-- **`wordnum`** (392 строк; recompute, whole_only)  
-  **NUMBERS OF THE STORY WRITTEN AS WORDS** — «Ann had fifteen coins», not «Ann had 15 coins» (21.09).
 
 ## АКТ «expound» — изложить связной речью (свод прозы)
 
@@ -774,5 +776,5 @@
     ОБЪЯВЛЕНИЕ В ТРИДЦАТЬ ЗНАКОВ НЕ ЛЖЁТ И НЕ ГОВОРИТ: читатель узнаёт имя мира
     и ничего сверх него.
 
-Миров: **0** из 345.
+Миров: **0** из 346.
 
