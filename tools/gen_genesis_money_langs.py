@@ -16,7 +16,10 @@ import pathlib
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-import moneyforms as M  # noqa: E402
+# ПРОЗВИЩЕ ДОМА В КУЗНЕ — `F` (21.09, обычай, читаемый прибором «РОД ДОШЁЛ»):
+# ПРОЗВИЩЕ, ОБЪЯВЛЕННОЕ ОДИНАКОВО ВО ВСЕХ КУЗНЯХ, ВИДИТ УСТРОЙСТВО. Кузня, звавшая
+# дом иначе, не проверялась ВОВСЕ, а прибор был зелен.
+import moneyforms as F  # noqa: E402
 from layer import emit_grouped  # noqa: E402
 
 ЦЕЛЬ = "datasets/genesis_money_langs.txt"
@@ -25,7 +28,7 @@ from layer import emit_grouped  # noqa: E402
 
 def pass_groups(шаг):
     """Одна группа на ЯЗЫК — сборка живёт в доме, кузница её лишь зовёт."""
-    return M.группы(шаг)
+    return F.группы(шаг)
 
 
 def main():

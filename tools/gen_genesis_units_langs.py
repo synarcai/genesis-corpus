@@ -14,12 +14,15 @@ import pathlib
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-import unitforms as U  # noqa: E402
+# ПРОЗВИЩЕ ДОМА В КУЗНЕ — `F` (21.09, обычай, читаемый прибором «РОД ДОШЁЛ»):
+# ПРОЗВИЩЕ, ОБЪЯВЛЕННОЕ ОДИНАКОВО ВО ВСЕХ КУЗНЯХ, ВИДИТ УСТРОЙСТВО. Кузня, звавшая
+# дом иначе, не проверялась ВОВСЕ, а прибор был зелен.
+import unitforms as F  # noqa: E402
 from layer import emit_grouped  # noqa: E402
 
 ЦЕЛЬ = "datasets/genesis_units_langs.txt"
 def pass_groups(шаг):
-    return U.группы(шаг)
+    return F.группы(шаг)
 
 
 def main():

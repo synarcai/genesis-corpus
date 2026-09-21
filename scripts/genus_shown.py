@@ -90,12 +90,14 @@ def _есть_дом(кузня):
         дерево = ast.parse(текст)
     except (SyntaxError, UnicodeDecodeError):
         return False
-    имена = []
-    for узел in ast.walk(дерево):
-        if isinstance(узел, ast.Import):
-            имена += [и.name for и in узел.names]
-        elif isinstance(узел, ast.ImportFrom) and узел.module:
-            имена.append(узел.module)
+    # ДОМ ВВОЗИТСЯ ЦЕЛИКОМ, ЗАИМСТВОВАНИЕ БЕРЁТ ЧАСТЬ (21.09). `import cmpmultforms` есть
+    # «это мой дом»; `from cmpmultforms import в_раза` — «я взял у соседа одно орудие», и
+    # спрашивать с такой кузни чужие роды значит обвинять её в чужом имуществе.
+    #
+    #     ВВОЗ ЦЕЛОГО ДОМА И ВЫНОС ОДНОЙ ЕГО ФУНКЦИИ — РАЗНЫЕ ОТНОШЕНИЯ, и мера, их
+    #     смешавшая, назовёт долгом соседство.
+    имена = [и.name for узел in ast.walk(дерево) if isinstance(узел, ast.Import)
+             for и in узел.names]
     for имя in имена:
         путь = КОРЕНЬ / "tools" / f"{имя}.py"
         if путь.is_file() and ПОКАЗЫ_В_ДОМЕ.search(путь.read_text(encoding="utf-8",
