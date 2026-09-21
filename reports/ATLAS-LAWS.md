@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 568 законов
+# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 569 законов
 
 Собран из докстрингов и комментариев `tools`, `courts`, `scripts` орудием
 `tools/law_atlas.py`. Взяты ОБЩИЕ законы — те, что держатся не одним файлом.
@@ -6,7 +6,7 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 7319 разных законов на 9406 упоминаний; сказанных однажды — 6751, и они остаются при своём месте.
+Всего в дереве 7340 разных законов на 9429 упоминаний; сказанных однажды — 6771, и они остаются при своём месте.
 
 
 ## Держат 82 файлов
@@ -232,6 +232,8 @@
   tools/ceilfloorforms.py, tools/gsmtaskforms.py, tools/inquiryforms.py, tools/mulshareforms.py, tools/plausforms.py, tools/primewalkforms.py … и ещё 2
 - **СУД, ЧИТАЮЩИЙ ПО ПРИЗНАКУ, А НЕ ПО ПРИНАДЛЕЖНОСТИ К СВОЕМУ НАБОРУ, ЗОВЁТ ЛОЖЬЮ ЧУЖУЮ**  
   courts/deplur_court.py, courts/hay_court.py, tools/countlawforms.py, tools/deplurforms.py, tools/elisionforms.py, tools/hayforms.py … и ещё 2
+- **ЦЕЛЬ ОБЪЯВЛЯЕТСЯ СТРОКОЙ, А НЕ ВПИСЫВАЕТСЯ В ВЫЗОВ**  
+  tools/gen_genesis_geometry.py, tools/gen_genesis_liarchain.py, tools/gen_genesis_linalg.py, tools/gen_genesis_md_latex.py, tools/gen_genesis_numbers.py, tools/gen_genesis_sequences.py … и ещё 2
 - **ЭТОТ ДОМ ЧИТАЕТСЯ И СУДОМ АРИФМЕТИКИ**  
   courts/divsense_court.py, courts/handy_court.py, courts/mapscale_court.py, courts/parity_court.py, courts/pctchange_court.py, courts/pctdiff_court.py … и ещё 2
 
@@ -257,8 +259,6 @@
   courts/equation_court.py, courts/inquiry_es_it_court.py, courts/inquiry_pl_tr_court.py, courts/longdiv_court.py, courts/metalang_court.py, courts/relation_court.py … и ещё 1
 - **СУД ЧИТАЕТ ТРИ ЗАКОНА, И ВСЕ ТРИ СОДЕРЖАТЕЛЬНЫ**  
   tools/decaseforms.py, tools/fuseprepforms.py, tools/idredupforms.py, tools/swclassforms.py, tools/trharmforms.py, tools/viclassforms.py … и ещё 1
-- **ЦЕЛЬ ОБЪЯВЛЯЕТСЯ СТРОКОЙ, А НЕ ВПИСЫВАЕТСЯ В ВЫЗОВ**  
-  tools/gen_genesis_geometry.py, tools/gen_genesis_liarchain.py, tools/gen_genesis_linalg.py, tools/gen_genesis_md_latex.py, tools/gen_genesis_numbers.py, tools/gen_genesis_sequences.py … и ещё 1
 
 ## Держат 6 файлов
 
@@ -1226,6 +1226,8 @@
   scripts/lang_sidecar.py, tools/metalangforms.py
 - **ЯЗЫК СТРАНИЦЫ ЕСТЬ ЯЗЫК ЕЁ ОБЁРТКИ, А НЕ ЕЁ МАТЕРИАЛА**  
   scripts/lang_sidecar.py, tools/wordpartforms.py
+- **ЯЗЫК СТРАНИЦЫ НЕ УГАДЫВАЕТСЯ ПЕРВЫМ СОВПАВШИМ СЛОВОМ**  
+  courts/wordnum_court.py, tools/wordnum.py
 - **ЯЗЫК СТУПЕНИ БЕРЁТСЯ У ОБЩЕГО ПОМОЩНИКА**  
   tools/compsciforms.py, tools/physlawforms.py
 - **ЯЗЫК, ВВЕДЁННЫЙ ДЕВЯТЫМ, ПРОВЕРЯЕТ ВОСЕМЬ ПРЕЖНИХ**  

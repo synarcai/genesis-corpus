@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 344 миров, 471605 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 345 миров, 471997 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -734,6 +734,13 @@
 - **`handover`** (198 строк; replay, whole_only)  
   **TRACKING THINGS THROUGH SWAPS (14.09, rung two, asked for by holon-f9 for BBH's `tracking_shuffled_objects`). Measured against the свод that day: lines containing «меняются», «обменял», «swap» or «traded»** — ZERO. The corpus knew that a thing PASSES («an…
 
+## АКТ «compute» — словарём не объявлен
+
+Миров 1, строк 392.
+
+- **`wordnum`** (392 строк; recompute, whole_only)  
+  **NUMBERS OF THE STORY WRITTEN AS WORDS** — «Ann had fifteen coins», not «Ann had 15 coins» (21.09).
+
 ## АКТ «expound» — изложить связной речью (свод прозы)
 
 Миров 1, строк 606.
@@ -767,5 +774,5 @@
     ОБЪЯВЛЕНИЕ В ТРИДЦАТЬ ЗНАКОВ НЕ ЛЖЁТ И НЕ ГОВОРИТ: читатель узнаёт имя мира
     и ничего сверх него.
 
-Миров: **0** из 344.
+Миров: **0** из 345.
 

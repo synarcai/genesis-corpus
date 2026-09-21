@@ -488,7 +488,7 @@
     {
       "name": "notenough",
       "file": "datasets/genesis_notenough.txt",
-      "genre": "NOT ENOUGH DATA — THE DEAREST ZERO OF THE DAY (14.09). Measured against the свод of 448 335 lines: «лишнее число в задаче» / «is not needed for the answer» — 63 lines, THERE; «данных не хватает» / «cannot be determined» — ZERO. THE CORPUS TAUGHT DISCARDING THE SUPERFLUOUS AND NEVER ONCE TAUGHT STOPPING. A reader for whom every problem is solvable answers where there IS no answer, and answers confidently, because there is nothing for that confidence to break against. This is not a gap in arithmetic but a gap in HONESTY, and it is more dangerous than any arithmetical error, because an arithmetical error can be seen. Three genera: ENOUGH (the data determine the answer and it is given — the genus is needed not for completeness but because without it the reader learns to REFUSE ALWAYS, which is the same trouble from the other end); NOT ENOUGH (the needed number is absent and the page names EXACTLY IT: «it is not said how many were given away»); and SUPERFLUOUS (a number not needed for the answer, with the answer given and the extra NAMED as extra, so the reader does not learn that every number in a problem must enter the count). A REFUSAL WITHOUT NAMING WHAT IS MISSING IS EVASION: anyone can say «unknown»; only one who has read the problem can say what is not in it. The court decides for itself whether the data suffice and matches its decision against the page — a refusal where the data suffice is a lie exactly as much as an answer where they do not.",
+      "genre": "NOT ENOUGH DATA — THE DEAREST ZERO OF THE DAY (14.09). Measured against the свод of 448 335 lines: «лишнее число в задаче» / «is not needed for the answer» — 63 lines, THERE; «данных не хватает» / «cannot be determined» — ZERO. THE CORPUS TAUGHT DISCARDING THE SUPERFLUOUS AND NEVER ONCE TAUGHT STOPPING. A reader for whom every problem is solvable answers where there IS no answer, and answers confidently, because there is nothing for that confidence to break against. This is not a gap in arithmetic but a gap in HONESTY, and it is more dangerous than any arithmetical error, because an arithmetical error can be seen. Three genera: ENOUGH (the data determine the answer and it is given — the genus is needed not for completeness but because without it the reader learns to REFUSE ALWAYS, which is the same trouble from the other end); NOT ENOUGH (the needed number is absent and the page names EXACTLY IT: «it is not said how many were given away»); and SUPERFLUOUS (a number not needed for the answer, with the answer given and the extra NAMED as extra, so the reader does not learn that every number in a problem must enter the count). A REFUSAL WITHOUT NAMING WHAT IS MISSING IS EVASION: anyone can say «unknown»; only one who has read the problem can say what is not in it. The court decides for itself whether the data suffice and matches its decision against the page — a refusal where the data suffice is a lie exactly as much as an answer where they do not. NEAREST NEIGHBOUR NAMED, AND THE DIFFERENCE WITH IT (21.09, court of the close twin): the world `need` stands next to this one — both speak of a task whose data do not fit the question — AND THEY ARE NOT THE SAME WORLD. `need` asks WHICH OF THE GIVEN NUMBERS THE ANSWER USES: the task is solvable, and the skill is to discard the superfluous. This world asks whether an answer EXISTS AT ALL: the task is NOT solvable, and the skill is to stop. A reader who has learnt to discard the superfluous still answers where there is nothing to answer — THE TWO SKILLS DO NOT FOLLOW FROM EACH OTHER, and that is why both worlds stand.",
       "act": [
         "decide"
       ],
@@ -10682,6 +10682,25 @@
       ],
       "actors": "",
       "text": "shows"
+    },
+    {
+      "name": "wordnum",
+      "file": "datasets/genesis_wordnum.txt",
+      "genre": "NUMBERS OF THE STORY WRITTEN AS WORDS — «Ann had fifteen coins», not «Ann had 15 coins» (21.09). Measured across the corpus before this world: lines whose QUANTITY is written as a word — ZERO out of 471 605. The corpus had a house that READS a numeral («12 = twelve», `readnum`, 3 240 shows) and no page where the story itself counts in words. THESE ARE DIFFERENT PURCHASES, AND THE SECOND DOES NOT FOLLOW FROM THE FIRST: a reader who has only ever seen a quantity as a digit does not recognise it as a word. THE LEDGER STAYS IN DIGITS, AND THAT IS NOT NEGLIGENCE: the page teaches the EQUALITY OF TWO WRITINGS — the story says «fifteen», the working says «15 − 3 = 12», and only a reader who knows these are one number walks the page. Write the working in words too and the page stops binding the two writings, beginning to teach just one. FRAMES, PERSONS, GOODS AND COUNT FORMS ARE TAKEN WHOLE FROM THE HOUSE OF ACTIONS (`actionpages`) — exactly one thing changes here, the writing of the number. A HOUSE THAT REWRITES ANOTHER'S FRAME FOR THE SAKE OF ONE CHANGE WILL DIVERGE FROM IT IN EVERYTHING ELSE BY TOMORROW, AND DIVERGE SILENTLY. NUMBERS START AT THREE, AND THE REASON IS NAMED: «one» and «two» inflect for the gender of the noun in almost every language of the corpus, and THE GENDER OF THE NUMERAL IS DECLARED BY NO PACK — one masculine form stands there. WHAT THE PACK HAS NOT DECLARED, THE HOUSE DOES NOT DERIVE BY RULE AND DOES NOT GUESS: one and two in words are this house's NAMED DEBT, paid by declaring numeral gender in the packs, not by guessing here. DECLARED GAP: `pl` and `nl` — the house of actions declares them goods only, with no frames at all, and a frame borrowed from a neighbour would be ANOTHER TONGUE'S SPEECH passed off as Polish.",
+      "act": [
+        "compute"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only"
+      ],
+      "actors": "",
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
     },
     {
       "name": "realverbs",
