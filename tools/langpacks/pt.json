@@ -482,7 +482,7 @@
       ],
       "plural_by_count": true,
       "follows_its_number": false,
-      "comment_position": "СВЯЗКА НЕ СТОИТ ПОСЛЕ СВОЕГО ЧИСЛА, А СТОИТ ПЕРЕД НИМ: «son 3 libros», а не «3 son». Поле объявляет границу суду счёта на языках, читающему пару «ЧИСЛО СЛОВО».",
+      "comment_position": "СВЯЗКА НЕ СТОИТ ПОСЛЕ СВОЕГО ЧИСЛА, А СТОИТ ПЕРЕД НИМ: «son 3 libros», а не «3 son». Поле объявляет границу суду счёта на языках, читающему пару «ЧИСЛО СЛОВО». ЯЧЕЙКА ЕДИНСТВЕННОГО НАЗЫВАЕТСЯ ПРЯМО (16.09, прибор `scripts/pack_singular_risk.py`): класс, у которого единственное выходит ЛИШЬ через счётную ячейку, стои́т на жребии — оно покажется только тогда, когда счётному инстансу выпадет единица. Пакет на волоске падает не в день правки, а в день, когда кто-то объявит ему слово.",
       "lexemes": {
         "ser": [
           "é",
@@ -592,7 +592,9 @@
         "aqui há {n} {lex:noun_count:by_n}.",
         "o que há aqui? aqui há {n} {lex:noun_count:by_n}.",
         "agora {lex:copula:by_n} {n} {lex:noun_count:by_n}.",
-        "antes {lex:copula_past:by_n} {n} {lex:noun_count:by_n}."
+        "antes {lex:copula_past:by_n} {n} {lex:noun_count:by_n}.",
+        "agora {lex:copula:one} 1 {lex:noun_count:count_one}.",
+        "antes {lex:copula_past:one} 1 {lex:noun_count:count_one}."
       ]
     },
     "definition": {
