@@ -6,7 +6,7 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 7439 разных законов на 9550 упоминаний; сказанных однажды — 6855, и они остаются при своём месте.
+Всего в дереве 7444 разных законов на 9556 упоминаний; сказанных однажды — 6860, и они остаются при своём месте.
 
 
 ## Держат 82 файлов
@@ -411,6 +411,8 @@
   scripts/form_matrix.py, tools/gen_genesis_pronouns.py, tools/gen_genesis_remainders.py
 - **ЗАКОН, ПОКАЗАННЫЙ В ОДНОЙ ОДЕЖДЕ, ЕСТЬ ЗНАНИЕ ОБ ЭТОЙ ОДЕЖДЕ**  
   tools/condforms.py, tools/gen_genesis_cond.py, tools/wmeanforms.py
+- **ЗНАК ДЕЙСТВИЯ — ДЫРА, А НЕ БУКВА**  
+  tools/propmeasure.py, tools/speedforms.py, tools/timeunits.py
 - **ЗНАК ПЕРЕД ЧИСЛОМ ГОВОРИТ, ЧЕЙ ЭТО ЧЛЕН**  
   courts/opslaw_court.py, tools/absforms.py, tools/opslawforms.py
 - **МЕРНОСТЬ ОДНА: ЧИСЛА ПРИ НЕИЗМЕННОЙ ЗАПИСИ**  
@@ -692,8 +694,6 @@
   scripts/twin_world.py, tools/unitcmpforms.py
 - **ЗАПЯТАЯ И ТОЧКА СУТЬ ГРАНИЦЫ ЧИСЛА, КАК ДРОБНАЯ ЧЕРТА**  
   courts/dec_court.py, tools/decforms.py
-- **ЗНАК ДЕЙСТВИЯ — ДЫРА, А НЕ БУКВА**  
-  tools/speedforms.py, tools/timeunits.py
 - **ЗНАК, СЛУЖАЩИЙ И ИМЕНЕМ, И СЧЁТНЫМ, ЧИТАЕТСЯ ПО МЕСТУ, А НЕ ПО СЕБЕ**  
   courts/jaclass_court.py, tools/jaclassforms.py
 - **ЗНАНИЕ БЕЗ ВОПРОСНОЙ ПОВЕРХНОСТИ НЕ ОТВЕЧАЕТ — ОНО ТОЛЬКО СООБЩАЕТ**  

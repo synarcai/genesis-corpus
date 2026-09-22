@@ -442,6 +442,12 @@ def pack_vocabulary(pack):
     operator words, and every form of every class.
     """
     words = {str(v) for v in pack.get("numerals", {}).values()}
+    # THE NUMERAL BENT BY GENDER IS A WORD THE PACK DECLARED (22.09): «одна», «две», «dois»
+    # stand in `numeral_gender`, and the layer court called them UNDECLARED — a word the pack
+    # says and does not own. A NEW FIELD IS NOT DECLARED UNTIL EVERY READER OF THE PACK KNOWS
+    # IT: the same field had to be taught to the arithmetic lexicon on the very same day.
+    words |= {str(ф) for формы in (pack.get("numeral_gender") or {}).values()
+              for ф in формы.values()}
     for kind in pack.get("show_kinds", {}).values():
         words |= {str(w) for w in (kind.get("ops") or {})}
         words |= {str(w) for w in kind.get("lexicon", [])}
