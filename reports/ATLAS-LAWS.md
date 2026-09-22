@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 592 законов
+# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 595 законов
 
 Собран из докстрингов и комментариев `tools`, `courts`, `scripts` орудием
 `tools/law_atlas.py`. Взяты ОБЩИЕ законы — те, что держатся не одним файлом.
@@ -6,13 +6,13 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 7532 разных законов на 9656 упоминаний; сказанных однажды — 6940, и они остаются при своём месте.
+Всего в дереве 7539 разных законов на 9667 упоминаний; сказанных однажды — 6944, и они остаются при своём месте.
 
 
-## Держат 83 файлов
+## Держат 84 файлов
 
 - **ПРОБА НА ЗАВЕДОМО ИЗВЕСТНОМ**  
-  scripts/actorplace_market.py, scripts/agree_skew.py, scripts/agree_traps.py, scripts/article_sound.py, scripts/asked_uncounted.py, scripts/bench_leak.py … и ещё 77
+  scripts/actorplace_market.py, scripts/agree_skew.py, scripts/agree_traps.py, scripts/article_sound.py, scripts/asked_uncounted.py, scripts/bench_leak.py … и ещё 78
 
 ## Держат 70 файлов
 
@@ -748,6 +748,10 @@
   scripts/genera_sidecar.py, tools/genus_atlas.py
 - **ЛИЦО ГОВОРЯЩЕГО ЖИВЁТ В ГЛАГОЛЕ — В ХВОСТЕ СЛОВА, В ГОЛОВЕ СЛОВА, НА ОБОИХ ЕГО КОНЦАХ**  
   courts/personplace_court.py, tools/personplaceforms.py
+- **ЛИЦО ПОСЛЕ СЛОВА СТОИТ В ТОМ ПАДЕЖЕ, В КАКОМ СВОД ЕГО ПОСЛЕ ЭТОГО СЛОВА СТАВИЛ**  
+  scripts/personcase_market.py, tools/actors.py
+- **ЛОВЕЦ ПОРЧИ БЕЗ ИСТИНЫ, И ОБЪЯВЛЕНО ЭТО ДВАЖДЫ**  
+  courts/actoropener_court.py, courts/personcase_court.py
 - **ЛОВУШКА ОБЯЗАНА ЛОВИТЬ, И ЭТО ТОЖЕ ПРОВЕРЯЕТСЯ**  
   courts/prop_court.py, courts/rem_court.py
 - **МЕРА ЕГО ЕСТЬ ОБЪЯВЛЕНИЕ, А ПРОВЕРКА — СОГЛАСИЕ**  
@@ -1112,6 +1116,8 @@
   courts/grid_court.py, tools/gridread.py
 - **СУД АРИФМЕТИКИ ЧИТАЕТ ТО, ЧТО СТОИ**  
   tools/handyforms.py, tools/unitcmpforms.py
+- **СУД ЕСТЬ ЛОВЕЦ ПОРЧИ, А НЕ ПОДТВЕРЖДАТЕЛЬ ИСТИНЫ**  
+  courts/actoropener_court.py, courts/personcase_court.py
 - **СУД НЕ ПОНИМАЕТ «ОТНОСИТСЯ ЛИ» И НЕ БЕРЁТСЯ**  
   courts/adhominem_court.py, tools/adhominem.py
 - **СУД НЕ ПОНИМАЕТ СМЫСЛА И НЕ БЕРЁТСЯ**  
