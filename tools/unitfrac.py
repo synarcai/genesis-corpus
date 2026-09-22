@@ -37,6 +37,7 @@ import re
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import unitforms  # noqa: E402 — дверь форм единицы
 import asking  # noqa: E402 — the house of the pair declares which openers a question may wear
 import clockforms as CF  # noqa: E402 — the minute with its count forms
 import mixedunits as MU  # noqa: E402 — the gram and the centimetre with their count forms
@@ -44,10 +45,10 @@ import svampforms as S  # noqa: E402 — the count cell of a pack
 
 ЯЗЫКИ = ("ru", "en", "de", "fr", "es", "it", "pt", "nl", "pl")
 # МЕСЯЦ — единственная малая единица, которой нет у соседей; прочие взяты, а не объявлены вновь
-МЕСЯЦ = {"ru": ("месяц", "месяца", "месяцев"), "en": ("month", "months"),
-         "de": ("Monat", "Monate"), "fr": ("mois", "mois"), "es": ("mes", "meses"),
-         "it": ("mese", "mesi"), "pt": ("mês", "meses"), "nl": ("maand", "maanden"),
-         "pl": ("miesiąc", "miesiące", "miesięcy")}
+# МЕСЯЦ — У ДВЕРИ, А НЕ РУКОЙ (22.09): формы единицы на девяти языках объявлены
+# домом их форм, и дом, писавший их вторыми, был второй дверью.
+МЕСЯЦ = {яз: unitforms.формы_единицы(яз, "month") for яз in
+        ('ru', 'en', 'de', 'fr', 'es', 'it', 'pt', 'nl', 'pl')}
 ОСНОВА = {"час": 60, "килограмм": 1000, "метр": 100, "год": 12}
 МАЛАЯ = {"час": CF.МИНУТА, "килограмм": MU.МАЛАЯ["масса"], "метр": MU.МАЛАЯ["длина"], "год": МЕСЯЦ}
 ЕДИНИЦЫ = ("час", "килограмм", "метр", "год")

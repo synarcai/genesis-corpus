@@ -54,14 +54,8 @@ import svampforms as S  # noqa: E402 — the count cell of a pack
 
 
 def _формы(имя, язык):
-    """Формы единицы на языке — у двери, чья это единица."""
-    if язык == "ru":
-        return tuple(units.ФОРМЫ_ВСЕХ[имя][1][:3])
-    if язык == "en":
-        пары = units.ФОРМЫ_ВСЕХ[имя][0]
-        return tuple(пары.get(ПИСЬМО[имя]) or next(iter(пары.values())))
-    формы = unitforms.ЕДИНИЦЫ[язык][имя]
-    return tuple(ф for ф in формы if ф not in ("m", "f", "n"))
+    """Формы единицы на языке — ОДНОЙ дверью (`unitforms.формы_единицы`), а не своей выборкой."""
+    return unitforms.формы_единицы(язык, имя, ПИСЬМО[имя])
 
 
 БОЛЬШАЯ = {вид: {яз: _формы(крупная, яз) for яз in ЯЗЫКИ}

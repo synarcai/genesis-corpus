@@ -6,7 +6,7 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 7451 разных законов на 9564 упоминаний; сказанных однажды — 6867, и они остаются при своём месте.
+Всего в дереве 7454 разных законов на 9568 упоминаний; сказанных однажды — 6870, и они остаются при своём месте.
 
 
 ## Держат 82 файлов
@@ -336,6 +336,8 @@
   tools/inqdefr.py, tools/inqesit.py, tools/inqpltr.py, tools/inqptnl.py
 - **ДОГАДКА ПО ПИСЬМУ ЕСТЬ МЕРА ПОСЛЕДНЕГО СРЕДСТВА**  
   tools/inqdefr.py, tools/inqesit.py, tools/inqpltr.py, tools/inqptnl.py
+- **ДОМ, БЕРУЩИЙ У ДВЕРИ ПРАВИЛО И ПИШУЩИЙ РУКОЙ ФОРМУ, ЕСТЬ ВТОРАЯ ДВЕРЬ**  
+  scripts/unit_doors.py, tools/clockforms.py, tools/mixedunits.py, tools/rugram.py
 - **ДОМ, НЕ ЗНАЮЩИЙ СВОИХ СТРАНИЦ, НЕ МОЖЕТ НАЗВАТЬ ИХ РОДА, И РОД ЕГО ЖИВЁТ ОБЪЯВЛЕНИЕМ**  
   tools/actionpages.py, tools/holes.py, tools/jointforms.py, tools/relstory.py
 - **ДРОБНАЯ ЧЕРТА ЕСТЬ ГРАНИЦА ЧИСЛА**  
@@ -409,8 +411,6 @@
   courts/prosetree_court.py, scripts/prose_court.py, scripts/word_mutants.py
 - **ДОЛГ, У КОТОРОГО НАЗВАНА ПРИЧИНА, ОТЛИЧИМ ОТ НЕБРЕЖНОСТИ**  
   scripts/form_matrix.py, tools/gen_genesis_pronouns.py, tools/gen_genesis_remainders.py
-- **ДОМ, БЕРУЩИЙ У ДВЕРИ ПРАВИЛО И ПИШУЩИЙ РУКОЙ ФОРМУ, ЕСТЬ ВТОРАЯ ДВЕРЬ**  
-  scripts/unit_doors.py, tools/mixedunits.py, tools/rugram.py
 - **ЗАКОН, ПОКАЗАННЫЙ В ОДНОЙ ОДЕЖДЕ, ЕСТЬ ЗНАНИЕ ОБ ЭТОЙ ОДЕЖДЕ**  
   tools/condforms.py, tools/gen_genesis_cond.py, tools/wmeanforms.py
 - **ЗНАК ДЕЙСТВИЯ — ДЫРА, А НЕ БУКВА**  

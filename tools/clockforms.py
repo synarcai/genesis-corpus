@@ -35,21 +35,18 @@ import re
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import unitforms  # noqa: E402 — дверь форм единицы на девяти языках
 import asking  # noqa: E402 — the house of the pair declares which openers a question may wear
 import svampforms as S  # noqa: E402 — the count cell of a pack
 
 ЯЗЫКИ = ("ru", "en", "de", "fr", "es", "it", "pt", "nl", "pl")
-# ЧАС И МИНУТА СО СВОИМИ СЧЁТНЫМИ ФОРМАМИ — правило счёта берётся у пакета, а не пишется вновь
-ЧАС = {
-    "ru": ("час", "часа", "часов"), "en": ("hour", "hours"), "de": ("Stunde", "Stunden"),
-    "fr": ("heure", "heures"), "es": ("hora", "horas"), "it": ("ora", "ore"),
-    "pt": ("hora", "horas"), "nl": ("uur", "uur"), "pl": ("godzina", "godziny", "godzin"),
-}
-МИНУТА = {
-    "ru": ("минута", "минуты", "минут"), "en": ("minute", "minutes"), "de": ("Minute", "Minuten"),
-    "fr": ("minute", "minutes"), "es": ("minuto", "minutos"), "it": ("minuto", "minuti"),
-    "pt": ("minuto", "minutos"), "nl": ("minuut", "minuten"), "pl": ("minuta", "minuty", "minut"),
-}
+# ЧАС И МИНУТА БЕРУТСЯ У ДВЕРИ (22.09): дом держал 28 форм на девяти языках своей рукой, и все
+# они объявлены — русские и английские у `units`, прочие семь у `unitforms`. Правило счёта дом
+# и прежде брал у пакета; ныне у двери берётся и САМА ФОРМА.
+#
+#     ДОМ, БЕРУЩИЙ У ДВЕРИ ПРАВИЛО И ПИШУЩИЙ РУКОЙ ФОРМУ, ЕСТЬ ВТОРАЯ ДВЕРЬ.
+ЧАС = {яз: unitforms.формы_единицы(яз, "hour") for яз in ЯЗЫКИ}
+МИНУТА = {яз: unitforms.формы_единицы(яз, "minute") for яз in ЯЗЫКИ}
 # ПОЕЗДКИ: (час отправления, минута, часы пути, минуты пути) — минуты ВСЕГДА переваливают за час
 ПОЕЗДКИ = (
     (9, 15, 2, 30), (7, 40, 1, 35), (10, 50, 2, 25), (6, 35, 3, 40), (8, 45, 1, 20),

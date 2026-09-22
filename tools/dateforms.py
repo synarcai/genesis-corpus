@@ -41,6 +41,7 @@ import re
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import unitforms  # noqa: E402 — дверь форм единицы
 import asking  # noqa: E402 — the house of the pair declares which openers a question may wear
 import svampforms as S  # noqa: E402 — the count cell of a pack
 
@@ -72,11 +73,10 @@ import svampforms as S  # noqa: E402 — the count cell of a pack
     "nl": dict(январь="januari heeft", февраль="februari heeft", март="maart heeft", апрель="april heeft", май="mei heeft", июнь="juni heeft"),
     "pl": dict(январь="styczeń ma", февраль="luty ma", март="marzec ma", апрель="kwiecień ma", май="maj ma", июнь="czerwiec ma"),
 }
-ДЕНЬ = {
-    "ru": ("день", "дня", "дней"), "en": ("day", "days"), "fr": ("jour", "jours"),
-    "es": ("día", "días"), "it": ("giorno", "giorni"), "pt": ("dia", "dias"),
-    "nl": ("dag", "dagen"), "pl": ("dzień", "dni", "dni"),
-}
+# ДЕНЬ — У ДВЕРИ, А НЕ РУКОЙ (22.09): формы единицы на девяти языках объявлены
+# домом их форм, и дом, писавший их вторыми, был второй дверью.
+ДЕНЬ = {яз: unitforms.формы_единицы(яз, "day") for яз in
+        ('ru', 'en', 'fr', 'es', 'it', 'pt', 'nl', 'pl')}
 РЕЧЬ = {
     "ru": dict(дата="{D}.", вперёд="через {K}.", назад="{K} назад.",
                вопрос_вперёд="какое будет число?", вопрос_назад="какое было число?",
