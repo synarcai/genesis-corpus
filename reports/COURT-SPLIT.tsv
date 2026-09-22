@@ -1,4 +1,4 @@
-# суд	читает	поймал порч	поймал ОДИН	порч 2160	пойманных 2105	строк 795
+# суд	читает	поймал порч	поймал ОДИН	порч 2172	пойманных 2117	строк 800
 abs	3	9	4
 action_measure	4	12	4
 action_pages	5	11	5
@@ -32,7 +32,7 @@ compare_mult	5	10	6
 compsci	4	3	3
 cond	3	9	4
 condprob	4	12	7
-corpusword	0	1174	30
+corpusword	0	1184	30
 countlaw	4	11	0
 cross	10	18	4
 cyber	2	4	2
@@ -55,7 +55,7 @@ equation	2	6	2
 estim	3	9	3
 factor	4	12	4
 fence	4	12	6
-fipart	1	1	0
+fipart	2	3	0
 formula_lang	2	4	1
 geometry	1	3	1
 glyph	2	3	1
@@ -97,7 +97,7 @@ measure	1	3	1
 measure_langs	4	12	6
 measure_story	4	12	5
 measuregrow	1	3	1
-measureprec	1	3	1
+measureprec	1	3	2
 median	1	3	2
 metalang	3	9	3
 mixedunits	3	9	6
@@ -115,6 +115,7 @@ noanswer	3	7	3
 nomention	4	6	3
 notenough	1	3	1
 numberline	4	9	4
+numgender	10	0	0
 numlabel	1	3	1
 numline	1	3	2
 numphrase	2	6	3
@@ -128,6 +129,7 @@ parity	4	12	3
 pctbase	1	3	2
 pctchange	4	12	4
 pctdiff	4	12	4
+persondist	1	2	0
 personforms	4	12	4
 physics	4	12	4
 physics_langs	4	12	5
@@ -164,11 +166,11 @@ rowframe	30	4	4
 ru_compare	1	1	1
 ru_conversion	4	12	2
 ru_story	4	8	4
-rugram	123	43	3
+rugram	126	43	3
 ruverbs	1	1	0
 sameshare	3	9	5
 sceneforms	4	9	1
-script	20	766	0
+script	20	775	0
 search_langs	2	6	2
 selfmodelforms	4	12	6
 sequence	2	6	0
@@ -191,10 +193,10 @@ task	15	23	4
 tempscale	4	12	6
 timeunits	4	12	5
 toolforms	4	11	3
-trharm	1	1	1
+trharm	2	3	1
 two_kinds	4	11	5
 tzone	2	6	2
-ukcount	1	2	0
+ukcount	3	6	0
 unit	3	5	1
 unit_counts	3	9	4
 unitcmp	4	12	3
@@ -206,4 +208,4 @@ wholeshare	4	12	4
 wmean	1	3	1
 wordnum	4	12	1
 zerodiv	1	3	0
-zhclass	2	2	1
+zhclass	2	4	2
