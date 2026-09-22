@@ -24,7 +24,7 @@ rebuilt from nothing and re-judged by anyone.
 | **348 worlds of shows + 207 of prose + 6 mixed** | declared in `datasets/GENESIS-MANIFEST.json`; 71 prose worlds are public-domain books on the shelf (`shelf/`, contract `declarations/SHELF.md`) |
 | **29 languages** | one pack each in `tools/langpacks/`, zero engine edits |
 | **306 courts + 274 instruments** | every line re-executed by a court; the corpus as a whole measured by judgeability, reproducibility, manifest, shelf, band, library, concept reach, mutation catch |
-| **0 lies, 0 blind** | of 471 605 lines across 344 worlds — the last completed reach of the whole panel (`court_reach.py`, ledger 2026-09-21T13:22:05Z) |
+| **0 lies, 0 blind** | of 472 807 lines across 348 worlds — the last completed reach of the whole panel (`court_reach.py`, ledger 2026-09-22T06:02:42Z) |
 
 These numbers are not written by hand: `scripts/readme_court.py` re-measures every one of them
 against the manifest, the language packs, the panel, the roster and the ledger, and fails when a
