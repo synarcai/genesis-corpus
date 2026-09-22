@@ -130,9 +130,9 @@ def _en_два_акта(м):
 
 
 def _en_два_акта_вопрос(м):
-    a, сд, x, вещь1, a2, пр, y, вещь2, вещь3, он, сдq, прq, ox, oy, od = м.groups()
+    a, сд, x, вещь1, a2, пр, y, вещь2, вещь3, он, сд_q, пр_q, ox, oy, od = м.groups()
     x, y, ox, oy, od = int(x), int(y), int(ox), int(oy), int(od)
-    return (a == a2 and вещь1 == вещь2 == вещь3 and СРАВНЕНИЯ.get((сд, пр)) == (сдq, прq)
+    return (a == a2 and вещь1 == вещь2 == вещь3 and СРАВНЕНИЯ.get((сд, пр)) == (сд_q, пр_q)
             and a in РОД_EN and он == ("she" if РОД_EN[a] == "f" else "he")
             and (ox, oy, od) == (x, y, x - y) and x > y)
 
@@ -363,11 +363,11 @@ def _ru_два_акта(м):
 
 
 def _ru_два_акта_вопрос(м):
-    имя1, сд, a, вещь1, имя2, пр, b, вещь2, вещь3, мест, сдq, прq, a2, b2, d = м.groups()
+    имя1, сд, a, вещь1, имя2, пр, b, вещь2, вещь3, мест, сд_q, пр_q, a2, b2, d = м.groups()
     a, b, a2, b2, d = (int(x) for x in (a, b, a2, b2, d))
     if имя1 != имя2 or not _одна_вещь(вещь1, вещь2, вещь3):
         return False
-    if (сдq, прq) not in СРАВНЕНИЯ_RU_СУД or сдq != сд or прq != пр:
+    if (сд_q, пр_q) not in СРАВНЕНИЯ_RU_СУД or сд_q != сд or пр_q != пр:
         return False
     род = _род_имени(имя1)
     if род is None or (мест == "она") != (род == "f"):

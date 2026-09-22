@@ -357,16 +357,16 @@ def _судить_образцом(строка):
         if м:
             г = м.group(2)
             if язык == "en":
-                a, еда, b, едb, s, едs, a2, b2, s2 = (int(м.group(3)), м.group(4), int(м.group(5)), м.group(6),
+                a, еда, b, ед_b, s, ед_s, a2, b2, s2 = (int(м.group(3)), м.group(4), int(м.group(5)), м.group(6),
                                                      int(м.group(8)), м.group(9), int(м.group(10)), int(м.group(11)), int(м.group(12)))
             else:
-                a, еда, b, едb, s, едs, a2, b2, s2 = (int(м.group(4)), м.group(5), int(м.group(7)), м.group(8),
+                a, еда, b, ед_b, s, ед_s, a2, b2, s2 = (int(м.group(4)), м.group(5), int(м.group(7)), м.group(8),
                                                      int(м.group(11)), м.group(12), int(м.group(13)), int(м.group(14)), int(м.group(15)))
             вид = _вид_по_глаголу(язык, г)
             вид_ед, ряд = _вид_по_единице(язык, еда)
-            return True, (ряд is not None and вид == вид_ед and едb in ряд and едs in ряд
+            return True, (ряд is not None and вид == вид_ед and ед_b in ряд and ед_s in ряд
                           and (a, b) == (a2, b2) and s == s2 == a + b
-                          and счётная(ряд, a) == еда and счётная(ряд, b) == едb and счётная(ряд, s) == едs)
+                          and счётная(ряд, a) == еда and счётная(ряд, b) == ед_b and счётная(ряд, s) == ед_s)
     return False, False
 
 

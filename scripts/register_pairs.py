@@ -68,11 +68,11 @@ def дома_с_регистром():
 
 def дыры(a, b):
     """Блоки, которыми две строки различаются: [(из, в), …] по словам."""
-    сa, сb = a.split(), b.split()
+    с_a, с_b = a.split(), b.split()
     вон = []
-    for тег, i1, i2, j1, j2 in difflib.SequenceMatcher(None, сa, сb).get_opcodes():
+    for тег, i1, i2, j1, j2 in difflib.SequenceMatcher(None, с_a, с_b).get_opcodes():
         if тег != "equal":
-            вон.append((" ".join(сa[i1:i2]), " ".join(сb[j1:j2])))
+            вон.append((" ".join(с_a[i1:i2]), " ".join(с_b[j1:j2])))
     return вон
 
 

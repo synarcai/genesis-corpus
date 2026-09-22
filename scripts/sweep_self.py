@@ -88,7 +88,7 @@ def _пакеты():
         if not п.is_file():
             continue
         пак = json.loads(п.read_text(encoding="utf-8"))
-        сл = pак_слова(пак)
+        сл = пак_слова(пак)
         зачины[я] = (frozenset(сл), (пак.get("ask_words") or {}).get("position", "front"))
         for имя in пак.get("person_names") or ():
             имена.add(str(имя).lower())
@@ -101,7 +101,7 @@ def _пакеты():
     return зачины, frozenset(имена)
 
 
-def pак_слова(пак):
+def пак_слова(пак):
     return [с.lower() for с in (пак.get("ask_words") or {}).get("words", ()) if с != "¬"]
 
 

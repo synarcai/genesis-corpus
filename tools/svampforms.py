@@ -168,7 +168,7 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
         владеет_после="у {Xр} есть {n} {Тn}. {Он} отдаёт {k}. сколько {Тмн} имеет {X} теперь? {X} имеет {r} {Тr}: {n} − {k} = {r}.",
         доля="у {Xр} {n} {Тn}. {ДОЛЯ} из них — {ЦП}. сколько из них {ЦП}? {r}: {n} ÷ {q} = {r}.",
         доля_не="у {Xр} {n} {Тn}. {ДОЛЯ} из них — {ЦП}. сколько из них не {ЦП}? шаг 1: {n} ÷ {q} = {r}. шаг 2: {n} − {r} = {d}. итог: {d}.",
-        возраст_имя="{Xд} {n} {Гn}. сколько лет будет {Xд} через {k} {Гk}? {Xд} будет {s} {Гs}: {n} + {k} = {s}.",
+        возраст_имя="{X_д} {n} {Гn}. сколько лет будет {X_д} через {k} {Гk}? {X_д} будет {s} {Гs}: {n} + {k} = {s}.",
         его_вещи="у {Xр} {n} {Тn}. у {Рр} {k} {Тk}. сколько {Тмн} у {Xр}? у {Xр} {n} {Тn}.",
         вместе_их="у {Xр} {n} {Тn}. у {Рр} {k} {Тk}. сколько {Тмн} у них вместе? вместе у них {s} {Тs}: {n} + {k} = {s}.",
         дал_ему="у {Xр} было {n} {Тn}. {Y} дал{аY} {ему} {k} {Тk}. сколько {Тмн} у {Xр} теперь? у {Xр} {s} {Тs}: {n} + {k} = {s}.",
@@ -410,8 +410,8 @@ for _язык, _пара in romgram.ПАРЫ.items():
         итог_всего="{X} tem {a} {Тмн} {Ц1} e {b} {Тмн} {Ц2}. {quantas} {Тмн} tem {X}? no total {s} {Тs}: {a} + {b} = {s}.",
         единица="1 {Т1} custa {n} €. quanto custam {k} {Тk}? {v} €: {k} × {n} = {v}.",
         из_них="{X} tinha {n} {Тn}. deu {k} {delas} {Yд}. {quantas} {Тмн} tem agora? {r}: {n} − {k} = {r}.",
-        три="{X} apanhou {n} {Тn}. {X} comprou mais {k}. {он} perdeu {m}. que quantidade de {Тмн} resta {Xд}? {t}: {n} + {k} − {m} = {t}.",
-        три_шаги="{X} apanhou {n} {Тn}. {X} comprou mais {k}. {он} perdeu {m}. que quantidade de {Тмн} resta {Xд}? passo 1: {n} + {k} = {s}. passo 2: {s} − {m} = {t}. total: {t}.",
+        три="{X} apanhou {n} {Тn}. {X} comprou mais {k}. {он} perdeu {m}. que quantidade de {Тмн} resta {X_д}? {t}: {n} + {k} − {m} = {t}.",
+        три_шаги="{X} apanhou {n} {Тn}. {X} comprou mais {k}. {он} perdeu {m}. que quantidade de {Тмн} resta {X_д}? passo 1: {n} + {k} = {s}. passo 2: {s} − {m} = {t}. total: {t}.",
         владеет="{X} tem {n} {Тn}. {quantas} {Тмн} possui {X}? {X} possui {n} {Тn}.",
         владеет_после="{X} tem {n} {Тn}. dá {k}. {quantas} {Тмн} possui {X} agora? {X} possui {r} {Тr}: {n} − {k} = {r}.",
         доля="{X} tem {n} {Тn}. {ДОЛЯ} são {ЦП}. {quantas} são {ЦП}? {r}: {n} ÷ {q} = {r}.",
@@ -425,7 +425,7 @@ for _язык, _пара in romgram.ПАРЫ.items():
         имя_с_с="{Рб} {Xде} tem {k} {Тk}. {quantas} {Тмн} tem {Рб} {Xде}? {Рб} {Xде} tem {k} {Тk}.",
         факт="{X} tem {n} {Тn}. {quantas} {Тмн} tem {X}? {n}.",
         без_данных="{quantas} {Тмн} tem {X}? não sei: não é dito {quantas} {Тмн} tem {X}.",
-        собрал_у="{X} apanhou {n} {Тn}. perdeu {k}. que quantidade de {Тмн} resta {Xд}? {r}: {n} − {k} = {r}.",
+        собрал_у="{X} apanhou {n} {Тn}. perdeu {k}. que quantidade de {Тмн} resta {X_д}? {r}: {n} − {k} = {r}.",
         потерял="{X} tinha {n} {Тn}. perdeu {k}. que quantidade de {Тмн} lhe resta? {r}: {n} − {k} = {r}.",
         купил_ещё="{X} tinha {n} {Тn}. comprou mais {k}. que quantidade de {Тмн} tem agora? {s}: {n} + {k} = {s}.",
         если=("{X} tem {n} {Тn}. se der {k}, com {quantas} ficará? {r}: {n} − {k} = {r}.",
@@ -483,8 +483,8 @@ for _язык, _пара in romgram.ПАРЫ.items():
         итог_всего="{X} ma {a} {Ц1} {Тмн} i {b} {Ц2} {Тмн}. ile {Тмн} ma {X}? łącznie {s} {Тs}: {a} + {b} = {s}.",
         единица="1 {Т1} kosztuje {n} zł. ile kosztują {k} {Тk}? {v} zł: {k} × {n} = {v}.",
         из_них="{X} miał{а} {n} {Тn}. oddał{а} {k} z nich {Yд}. ile {Тмн} ma teraz? {r}: {n} − {k} = {r}.",
-        три="{X} zebrał{а} {n} {Тn}. {X} kupił{а} jeszcze {k}. {он} zgubił{а} {m} z nich. ile {Тмн} zostało {Xд}? {t}: {n} + {k} − {m} = {t}.",
-        три_шаги="{X} zebrał{а} {n} {Тn}. {X} kupił{а} jeszcze {k}. {он} zgubił{а} {m} z nich. ile {Тмн} zostało {Xд}? krok 1: {n} + {k} = {s}. krok 2: {s} − {m} = {t}. razem: {t}.",
+        три="{X} zebrał{а} {n} {Тn}. {X} kupił{а} jeszcze {k}. {он} zgubił{а} {m} z nich. ile {Тмн} zostało {X_д}? {t}: {n} + {k} − {m} = {t}.",
+        три_шаги="{X} zebrał{а} {n} {Тn}. {X} kupił{а} jeszcze {k}. {он} zgubił{а} {m} z nich. ile {Тмн} zostało {X_д}? krok 1: {n} + {k} = {s}. krok 2: {s} − {m} = {t}. razem: {t}.",
         владеет="{X} ma {n} {Тn}. ile {Тмн} posiada {X}? {X} posiada {n} {Тn}.",
         владеет_после="{X} ma {n} {Тn}. oddaje {k}. ile {Тмн} posiada {X} teraz? {X} posiada {r} {Тr}: {n} − {k} = {r}.",
         доля="{X} ma {n} {Тn}. {ДОЛЯ} z nich to {ЦП}. ile z nich to {ЦП}? {r}: {n} ÷ {q} = {r}.",
@@ -498,7 +498,7 @@ for _язык, _пара in romgram.ПАРЫ.items():
         имя_с_с="{Рб} {Xде} ma {k} {Тk}. ile {Тмн} ma {Рб} {Xде}? {Рб} {Xде} ma {k} {Тk}.",
         факт="{X} ma {n} {Тn}. ile {Тмн} ma {X}? {n}.",
         без_данных="ile {Тмн} ma {X}? nie wiem: nie powiedziano, ile {Тмн} ma {X}.",
-        собрал_у="{X} zebrał{а} {n} {Тn}. zgubił{а} {k} z nich. ile {Тмн} zostało {Xд}? {r}: {n} − {k} = {r}.",
+        собрал_у="{X} zebrał{а} {n} {Тn}. zgubił{а} {k} z nich. ile {Тмн} zostało {X_д}? {r}: {n} − {k} = {r}.",
         потерял="{X} miał{а} {n} {Тn}. zgubił{а} {k} z nich. ile {Тмн} {ему} zostało? {r}: {n} − {k} = {r}.",
         купил_ещё="{X} miał{а} {n} {Тn}. kupił{а} jeszcze {k}. ile {Тмн} ma teraz? {s}: {n} + {k} = {s}.",
         если="{X} ma {n} {Тn}. jeśli odda {k}, ile {ему} zostanie? {r}: {n} − {k} = {r}.",
@@ -625,9 +625,9 @@ def _поля(язык, i, j, Т, n, k, форма):
     вещь = lambda c: A._вещь(язык, Т, c)
     Yд = (_дательный(Y[0]) if язык == "ru" else ДАТЕЛЬНЫЙ_PL.get(Y[0], Y[0]) if язык == "pl"
           else _дательный_pt(Y) if язык == "pt" else Y[0])
-    Xд = (_дательный(X[0]) if язык == "ru" else ДАТЕЛЬНЫЙ_PL.get(X[0], X[0]) if язык == "pl"
+    X_д = (_дательный(X[0]) if язык == "ru" else ДАТЕЛЬНЫЙ_PL.get(X[0], X[0]) if язык == "pl"
           else _дательный_pt(X) if язык == "pt" else X[0])
-    п = dict(X=X[0], Xр=X[2], Y=Y[0], Yд=Yд, Xд=Xд,
+    п = dict(X=X[0], Xр=X[2], Y=Y[0], Yд=Yд, X_д=X_д,
              он=м["он"], Он=м["он"], него=м["него"], ему=м["ему"],
              а=(("a" if X[1] == "f" else "") if язык == "pl" else A._а(язык, X[1])), аY=(("a" if Y[1] == "f" else "") if язык == "pl" else A._а(язык, Y[1])),
              # ЦЕЛАЯ ФОРМА, А НЕ ОСНОВА С СУФФИКСОМ: «нашёл» + «а» даёт «нашёла» — слова,
@@ -701,7 +701,7 @@ def близнец(рамка):
 # обоими заполнителями.
 #
 # Падеж имени не выводится из падежа местоимения — он ОБЪЯВЛЕН здесь.
-ПАДЕЖ_НОСИТЕЛЯ = {"он": "X", "Он": "X", "него": "Xр", "ему": "Xд",
+ПАДЕЖ_НОСИТЕЛЯ = {"он": "X", "Он": "X", "него": "Xр", "ему": "X_д",
                   "онY": "Y", "негоY": "Yр", "емуY": "Yд"}
 _ДЫРА = re.compile(r"\{([^}]+)\}")
 
@@ -927,7 +927,7 @@ def _образцы():
         вещи1 = [A._вещь(язык, Т, 1) for Т in range(len(A.ЯЗЫКИ[язык]["вещи"]))]
         мест = [v for г in МЕСТОИМЕНИЯ[язык].values() for v in г.values()]
         товары = [ф for ряд in ТОВАРЫ.get(язык, ()) for г in ряд for ф in г]
-        дыры = {"X": alt(имена), "Y": alt(имена), "Xр": alt(род), "Yд": alt(дат), "Xд": alt(дат), "он": alt(мест), "Он": alt(мест), "него": alt(мест), "ему": alt(мест),
+        дыры = {"X": alt(имена), "Y": alt(имена), "Xр": alt(род), "Yд": alt(дат), "X_д": alt(дат), "он": alt(мест), "Он": alt(мест), "него": alt(мест), "ему": alt(мест),
                 "а": "(?:а|о|и|a|)", "аY": "(?:а|о|и|a|)", "НАШЁЛ": "(?:нашёл|нашла)", "n": r"(\d+)", "k": r"(\d+)", "r": r"(\d+)", "s": r"(\d+)", "a": r"(\d+)", "b": r"(\d+)", "v": r"(\d+)",
                 "m": r"(\d+)", "t": r"(\d+)", "q": r"(\d+)", "d": r"(\d+)",
                 "ДОЛЯ": alt(ДОЛИ[язык].values()), "ЦП": alt(ЦВЕТ_ПРЕД[язык]),
@@ -1430,8 +1430,8 @@ def _поля_акта(язык, i, j, n, k, m, товары=None):
     if Y[0] == X[0]:
         Y = _лицо(язык, j + 1)
     мест = МЕСТОИМЕНИЯ[язык][X[1]]
-    местY = МЕСТОИМЕНИЯ[язык][Y[1]]
-    п = dict(X=X[0], Xр=X[2], Y=Y[0], Yр=Y[2], он=мест["он"], Он=мест["он"], него=мест["него"], аY_он=местY["он"],
+    мест_Y = МЕСТОИМЕНИЯ[язык][Y[1]]
+    п = dict(X=X[0], Xр=X[2], Y=Y[0], Yр=Y[2], он=мест["он"], Он=мест["он"], него=мест["него"], аY_он=мест_Y["он"],
              а=(("a" if X[1] == "f" else "") if язык == "pl" else A._а(язык, X[1])), аY=(("a" if Y[1] == "f" else "") if язык == "pl" else A._а(язык, Y[1])),
              # ЦЕЛАЯ ФОРМА, А НЕ ОСНОВА С СУФФИКСОМ: «нашёл» + «а» даёт «нашёла» — слова,
              # которого в русском нет. Дыра суффикса верна для тринадцати основ дома и лжёт

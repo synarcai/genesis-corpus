@@ -169,14 +169,14 @@ def страницы():
                      if г % 100 == 0 else
                      f"{г} ÷ 4 = {г // 4} без остатка, а на сто не делится" if г % 4 == 0 else
                      f"{г} = 4 × {г // 4} + {г % 4}")
-            доводen = (f"{г} ÷ 400 = {г // 400} with no remainder" if г % 400 == 0 else
+            довод_en = (f"{г} ÷ 400 = {г // 400} with no remainder" if г % 400 == 0 else
                        f"{г} ÷ 100 = {г // 100} with no remainder, and it does not divide by "
                        f"four hundred" if г % 100 == 0 else
                        f"{г} ÷ 4 = {г // 4} with no remainder, and it does not divide by a "
                        f"hundred" if г % 4 == 0 else f"{г} = 4 × {г // 4} + {г % 4}")
             вон[рамки["спрошенное"].format(
                 г=г, ответ=ОТВЕТ[язык][если],
-                довод=довод if язык == "ru" else доводen)] = (язык, "спрошенное")
+                довод=довод if язык == "ru" else довод_en)] = (язык, "спрошенное")
     return вон
 
 

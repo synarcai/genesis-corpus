@@ -482,16 +482,16 @@ def трое(шаг, i):
     п = п_трое(шаг, i)
     a, б, k, b, c, s = п["a"], п["больше"], п["k"], п["b"], п["c"], п["ответ"]
     x, y, z = ИМЕНА_EN[(шаг + i) % len(ИМЕНА_EN)], ИМЕНА_EN[(шаг + i + 1) % len(ИМЕНА_EN)], ИМЕНА_EN[(шаг + i + 2) % len(ИМЕНА_EN)]
-    рx, рy, рz = ИМЕНА_RU[(шаг + i) % len(ИМЕНА_RU)], ИМЕНА_RU[(шаг + i + 1) % len(ИМЕНА_RU)], ИМЕНА_RU[(шаг + i + 2) % len(ИМЕНА_RU)]
+    р_x, р_y, р_z = ИМЕНА_RU[(шаг + i) % len(ИМЕНА_RU)], ИМЕНА_RU[(шаг + i + 1) % len(ИМЕНА_RU)], ИМЕНА_RU[(шаг + i + 2) % len(ИМЕНА_RU)]
     слово = "twice" if k == 2 else "three times"
     ру_ = "вдвое" if k == 2 else "втрое"
     ф = (шаг + i) % 4
     if ф == 0:
         return f"{x} has {a} {by_count(a, 'books')}, {y} has {б} more books than {x}, and {z} has {слово} as many books as {x}; together {x}, {y} and {z} have {s} {by_count(s, 'books')}: {a} + ({a} + {б}) + {k} × {a} = {s}."
     if ф == 1 and _ру_вопрос(шаг, i):
-        return f"если {рx} имеет {a} {ру('книга', a)}, {рy} имеет на {б} {ру('книга', б)} больше, чем {рx}, а {рz} имеет {ру_} больше книг, чем {рx}, сколько книг у них вместе? {a} + ({a} + {б}) + {k} × {a} = {s}."
+        return f"если {р_x} имеет {a} {ру('книга', a)}, {р_y} имеет на {б} {ру('книга', б)} больше, чем {р_x}, а {р_z} имеет {ру_} больше книг, чем {р_x}, сколько книг у них вместе? {a} + ({a} + {б}) + {k} × {a} = {s}."
     if ф == 1:
-        return f"{рx} имеет {a} {ру('книга', a)}, {рy} имеет на {б} {ру('книга', б)} больше, чем {рx}, а {рz} имеет {ру_} больше книг, чем {рx}; вместе у них {s} {ру('книга', s)}: {a} + ({a} + {б}) + {k} × {a} = {s}."
+        return f"{р_x} имеет {a} {ру('книга', a)}, {р_y} имеет на {б} {ру('книга', б)} больше, чем {р_x}, а {р_z} имеет {ру_} больше книг, чем {р_x}; вместе у них {s} {ру('книга', s)}: {a} + ({a} + {б}) + {k} × {a} = {s}."
     if ф == 2:
         return f"{x} has {a} {by_count(a, 'books')}, {y} has {б} more books than {x}, and {z} has {слово} as many books as {x}; together they do not have {s + 1} {by_count(s + 1, 'books')}: they have {s}."
     return f"if {x} has {a} {by_count(a, 'books')}, {y} has {б} more books than {x}, and {z} has {слово} as many books as {x}, how many books do they have together? {a} + ({a} + {б}) + {k} × {a} = {s}."

@@ -123,9 +123,9 @@ def _проба():
         (д / "courts").mkdir()
         (д / "scripts").mkdir()
         (д / "tools" / "голая.py").write_text(
-            f'СЧЁТНЫЕ = {{"{слово}": {formы_repr(формы)}}}\n', encoding="utf-8")
+            f'СЧЁТНЫЕ = {{"{слово}": {формы_repr(формы)}}}\n', encoding="utf-8")
         (д / "tools" / "привязанная.py").write_text(
-            f'import rugram\nСЧЁТНЫЕ = {{"{слово}": {formы_repr(формы)}}}\n'
+            f'import rugram\nСЧЁТНЫЕ = {{"{слово}": {формы_repr(формы)}}}\n'
             f'assert СЧЁТНЫЕ["{слово}"] == rugram.СЧЁТНЫЕ["{слово}"]\n', encoding="utf-8")
         (д / "tools" / "иная.py").write_text(
             f'ПАДЕЖИ = {{"{слово}": ("а", "б", "в")}}\n', encoding="utf-8")
@@ -141,7 +141,7 @@ def _проба():
     return беды
 
 
-def formы_repr(формы):
+def формы_repr(формы):
     return "(" + ", ".join(f'"{ф}"' for ф in формы) + ")"
 
 
