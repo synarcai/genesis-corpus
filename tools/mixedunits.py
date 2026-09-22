@@ -29,34 +29,45 @@ import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import asking  # noqa: E402 — the house of the pair declares which openers a question may wear
+import units  # noqa: E402 — дверь единиц: русские и английские формы
+import unitforms  # noqa: E402 — дверь форм единиц на прочих семи языках
 import svampforms as S  # noqa: E402 — the count cell of a pack
 
 ЯЗЫКИ = ("ru", "en", "de", "fr", "es", "it", "pt", "nl", "pl")
 ОСНОВЫ = {"масса": 1000, "длина": 100}
-БОЛЬШАЯ = {
-    "масса": {"ru": ("килограмм", "килограмма", "килограммов"), "en": ("kilogram", "kilograms"),
-              "de": ("Kilogramm", "Kilogramm"), "fr": ("kilogramme", "kilogrammes"),
-              "es": ("kilogramo", "kilogramos"), "it": ("chilogrammo", "chilogrammi"),
-              "pt": ("quilograma", "quilogramas"), "nl": ("kilogram", "kilogram"),
-              "pl": ("kilogram", "kilogramy", "kilogramów")},
-    "длина": {"ru": ("метр", "метра", "метров"), "en": ("metre", "metres"),
-              "de": ("Meter", "Meter"), "fr": ("mètre", "mètres"),
-              "es": ("metro", "metros"), "it": ("metro", "metri"),
-              "pt": ("metro", "metros"), "nl": ("meter", "meter"),
-              "pl": ("metr", "metry", "metrów")},
-}
-МАЛАЯ = {
-    "масса": {"ru": ("грамм", "грамма", "граммов"), "en": ("gram", "grams"),
-              "de": ("Gramm", "Gramm"), "fr": ("gramme", "grammes"),
-              "es": ("gramo", "gramos"), "it": ("grammo", "grammi"),
-              "pt": ("grama", "gramas"), "nl": ("gram", "gram"),
-              "pl": ("gram", "gramy", "gramów")},
-    "длина": {"ru": ("сантиметр", "сантиметра", "сантиметров"), "en": ("centimetre", "centimetres"),
-              "de": ("Zentimeter", "Zentimeter"), "fr": ("centimètre", "centimètres"),
-              "es": ("centímetro", "centímetros"), "it": ("centimetro", "centimetri"),
-              "pt": ("centímetro", "centímetros"), "nl": ("centimeter", "centimeter"),
-              "pl": ("centymetr", "centymetry", "centymetrów")},
-}
+# ФОРМЫ ЕДИНИЦ БЕРУТСЯ У ДВЕРЕЙ, А НЕ ПИШУТСЯ РУКОЙ (22.09). Дом держал 61 форму своей рукой
+# на девяти языках — все до одной уже объявлены: русская и английская у дома единиц
+# (`units`), прочие семь у дома их форм (`unitforms`). Двадцать восемь пар «единица × язык»
+# он объявлял вторыми, и согласны они были ДО БУКВЫ — то есть долг был невидим.
+#
+#     ДОМ, БЕРУЩИЙ У ДВЕРИ ПРАВИЛО И ПИШУЩИЙ РУКОЙ ФОРМУ, ЕСТЬ ВТОРАЯ ДВЕРЬ.
+#
+# ПИСЬМО ОБЪЯВЛЯЕТСЯ ПРИ ЕДИНИЦЕ, А НЕ ПРИ ДОМЕ, И ЭТО КУПЛЕНО СВОЕЙ ЖЕ ОШИБКОЙ (22.09).
+# Первая редакция назвала письмо дома «британским» — и дом написал «kilogrammes», «grammes»
+# там, где всегда писал «kilograms», «grams»: пятьдесят строк сдвинулось, суд пал подсадками.
+# Дверь предупреждала ровно об этом: «второй вариант у метра американский, а у грамма —
+# британский, и порядковый выбор молча дал бы „grammes“ там, где нужен „grams“».
+#
+#     ПИСЬМО ЕСТЬ СВОЙСТВО СЛОВА, А НЕ ДОМА: одно и то же перо пишет «kilogram» и «metre».
+ПИСЬМО = {"kilogram": "amer", "gram": "amer", "metre": "brit", "centimetre": "brit"}
+ЕДИНИЦА_ВИДА = {"масса": ("kilogram", "gram"), "длина": ("metre", "centimetre")}
+
+
+def _формы(имя, язык):
+    """Формы единицы на языке — у двери, чья это единица."""
+    if язык == "ru":
+        return tuple(units.ФОРМЫ_ВСЕХ[имя][1][:3])
+    if язык == "en":
+        пары = units.ФОРМЫ_ВСЕХ[имя][0]
+        return tuple(пары.get(ПИСЬМО[имя]) or next(iter(пары.values())))
+    формы = unitforms.ЕДИНИЦЫ[язык][имя]
+    return tuple(ф for ф in формы if ф not in ("m", "f", "n"))
+
+
+БОЛЬШАЯ = {вид: {яз: _формы(крупная, яз) for яз in ЯЗЫКИ}
+           for вид, (крупная, _) in ЕДИНИЦА_ВИДА.items()}
+МАЛАЯ = {вид: {яз: _формы(мелкая, яз) for яз in ЯЗЫКИ}
+         for вид, (_, мелкая) in ЕДИНИЦА_ВИДА.items()}
 # ПАРЫ (большая, малая) для каждого слагаемого: малые ВСЕГДА переваливают через основание
 МАССЫ = ((2, 300, 1, 800), (3, 450, 2, 700), (1, 250, 3, 900), (4, 600, 1, 550),
          (2, 850, 2, 350), (5, 720, 1, 480), (3, 150, 4, 950), (6, 480, 2, 640),
