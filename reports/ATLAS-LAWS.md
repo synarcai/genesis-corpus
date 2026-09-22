@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 595 законов
+# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 596 законов
 
 Собран из докстрингов и комментариев `tools`, `courts`, `scripts` орудием
 `tools/law_atlas.py`. Взяты ОБЩИЕ законы — те, что держатся не одним файлом.
@@ -6,13 +6,13 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 7539 разных законов на 9667 упоминаний; сказанных однажды — 6944, и они остаются при своём месте.
+Всего в дереве 7549 разных законов на 9681 упоминаний; сказанных однажды — 6953, и они остаются при своём месте.
 
 
-## Держат 84 файлов
+## Держат 85 файлов
 
 - **ПРОБА НА ЗАВЕДОМО ИЗВЕСТНОМ**  
-  scripts/actorplace_market.py, scripts/agree_skew.py, scripts/agree_traps.py, scripts/article_sound.py, scripts/asked_uncounted.py, scripts/bench_leak.py … и ещё 78
+  scripts/actorplace_market.py, scripts/agree_skew.py, scripts/agree_traps.py, scripts/article_sound.py, scripts/asked_uncounted.py, scripts/beforeperson_market.py … и ещё 79
 
 ## Держат 70 файлов
 
@@ -419,6 +419,8 @@
   tools/propmeasure.py, tools/speedforms.py, tools/timeunits.py
 - **ЗНАК ПЕРЕД ЧИСЛОМ ГОВОРИТ, ЧЕЙ ЭТО ЧЛЕН**  
   courts/opslaw_court.py, tools/absforms.py, tools/opslawforms.py
+- **ЛОВЕЦ ПОРЧИ БЕЗ ИСТИНЫ, И ОБЪЯВЛЕНО ЭТО ДВАЖДЫ**  
+  courts/actoropener_court.py, courts/beforeperson_court.py, courts/personcase_court.py
 - **МЕРНОСТЬ ОДНА: ЧИСЛА ПРИ НЕИЗМЕННОЙ ЗАПИСИ**  
   scripts/genus_shapes.py, tools/condforms.py, tools/metalangforms.py
 - **НЕМЕЦКИЙ ПРЕДЛОГ ДВУХ ПАДЕЖЕЙ**  
@@ -477,6 +479,8 @@
   tools/opchoiceforms.py, tools/propcompare.py, tools/timeunits.py
 - **СПИСОК, КОТОРЫЙ НАДО ПОПОЛНЯТЬ РУКОЙ, РАЗОЙДЁТСЯ С ЖИВУЩИМИ**  
   scripts/panel_court.py, tools/langsign.py, tools/panel.py
+- **СУД ЕСТЬ ЛОВЕЦ ПОРЧИ, А НЕ ПОДТВЕРЖДАТЕЛЬ ИСТИНЫ**  
+  courts/actoropener_court.py, courts/beforeperson_court.py, courts/personcase_court.py
 - **СУД, ВЫВОДЯЩИЙ ФОРМУ ТЕМ ЖЕ ПРАВИЛОМ, ЧТО И ДОМ, НЕ ПРОВЕРЯЕТ ДОМ — ОН ЕМУ ВТОРИТ**  
   courts/genderverb_court.py, courts/story_chain_court.py, scripts/past_gender.py
 - **СУД, СВЕРЯЮЩИЙ ФОРМУ С ЗАКОНОМ ДОМА ЯЗЫКА, СИЛЁН РОВНО ТЕМ, ЧТО САМ ЯЗЫКА НЕ ЗНАЕТ**  
@@ -680,6 +684,8 @@
   courts/plaus_court.py, tools/plausforms.py
 - **ЗАКОН ЗАМКНУТОГО МИРА ОБЯЗАН ЗНАТЬ, ЧЕЙ МИР ОН СУДИТ**  
   tools/closedworld.py, tools/panel.py
+- **ЗАКОН ЛОВИТ НЕЗНАКОМОЕ, А НЕ НЕВИДАННОЕ**  
+  courts/beforeperson_court.py, tools/actors.py
 - **ЗАКОН МАССЫ ВЗЯТ У ПЕРЕПИСИ ФОРМ, А НЕ ОБЪЯВЛЕН ЗАНОВО**  
   tools/angleforms.py, tools/directforms.py
 - **ЗАКОН МАССЫ ПРОВЕРЕН ДОМОМ, А НЕ ОТЛОЖЕН НА ПРИБОР**  
@@ -750,8 +756,6 @@
   courts/personplace_court.py, tools/personplaceforms.py
 - **ЛИЦО ПОСЛЕ СЛОВА СТОИТ В ТОМ ПАДЕЖЕ, В КАКОМ СВОД ЕГО ПОСЛЕ ЭТОГО СЛОВА СТАВИЛ**  
   scripts/personcase_market.py, tools/actors.py
-- **ЛОВЕЦ ПОРЧИ БЕЗ ИСТИНЫ, И ОБЪЯВЛЕНО ЭТО ДВАЖДЫ**  
-  courts/actoropener_court.py, courts/personcase_court.py
 - **ЛОВУШКА ОБЯЗАНА ЛОВИТЬ, И ЭТО ТОЖЕ ПРОВЕРЯЕТСЯ**  
   courts/prop_court.py, courts/rem_court.py
 - **МЕРА ЕГО ЕСТЬ ОБЪЯВЛЕНИЕ, А ПРОВЕРКА — СОГЛАСИЕ**  
@@ -1116,8 +1120,6 @@
   courts/grid_court.py, tools/gridread.py
 - **СУД АРИФМЕТИКИ ЧИТАЕТ ТО, ЧТО СТОИ**  
   tools/handyforms.py, tools/unitcmpforms.py
-- **СУД ЕСТЬ ЛОВЕЦ ПОРЧИ, А НЕ ПОДТВЕРЖДАТЕЛЬ ИСТИНЫ**  
-  courts/actoropener_court.py, courts/personcase_court.py
 - **СУД НЕ ПОНИМАЕТ «ОТНОСИТСЯ ЛИ» И НЕ БЕРЁТСЯ**  
   courts/adhominem_court.py, tools/adhominem.py
 - **СУД НЕ ПОНИМАЕТ СМЫСЛА И НЕ БЕРЁТСЯ**  

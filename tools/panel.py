@@ -64,7 +64,7 @@ recache.установить()
           "formula_court", "langlayer_court", "langform_court")
 # Прочие судят строку одним доводом.
 ПРОСТЫЕ = ("wordparts_court", "wordorder_court", "plan_court", "genderverb_court",
-           "actoropener_court", "personcase_court",
+           "actoropener_court", "personcase_court", "beforeperson_court",
            "algo_court",
            "physics_court",
            "cyber_court",
