@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 584 законов
+# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 589 законов
 
 Собран из докстрингов и комментариев `tools`, `courts`, `scripts` орудием
 `tools/law_atlas.py`. Взяты ОБЩИЕ законы — те, что держатся не одним файлом.
@@ -6,13 +6,13 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 7454 разных законов на 9568 упоминаний; сказанных однажды — 6870, и они остаются при своём месте.
+Всего в дереве 7493 разных законов на 9614 упоминаний; сказанных однажды — 6904, и они остаются при своём месте.
 
 
-## Держат 82 файлов
+## Держат 83 файлов
 
 - **ПРОБА НА ЗАВЕДОМО ИЗВЕСТНОМ**  
-  scripts/agree_skew.py, scripts/agree_traps.py, scripts/article_sound.py, scripts/asked_uncounted.py, scripts/bench_leak.py, scripts/broken_law.py … и ещё 76
+  scripts/actorplace_market.py, scripts/agree_skew.py, scripts/agree_traps.py, scripts/article_sound.py, scripts/asked_uncounted.py, scripts/bench_leak.py … и ещё 77
 
 ## Держат 70 файлов
 
@@ -411,6 +411,8 @@
   courts/prosetree_court.py, scripts/prose_court.py, scripts/word_mutants.py
 - **ДОЛГ, У КОТОРОГО НАЗВАНА ПРИЧИНА, ОТЛИЧИМ ОТ НЕБРЕЖНОСТИ**  
   scripts/form_matrix.py, tools/gen_genesis_pronouns.py, tools/gen_genesis_remainders.py
+- **ЗАКОН, ЗАПЕРТЫЙ В ДОМЕ, ОХРАНЯЕТ ЛИШЬ ЭТОТ ДОМ**  
+  courts/actoropener_court.py, scripts/word_mutants.py, tools/actors.py
 - **ЗАКОН, ПОКАЗАННЫЙ В ОДНОЙ ОДЕЖДЕ, ЕСТЬ ЗНАНИЕ ОБ ЭТОЙ ОДЕЖДЕ**  
   tools/condforms.py, tools/gen_genesis_cond.py, tools/wmeanforms.py
 - **ЗНАК ДЕЙСТВИЯ — ДЫРА, А НЕ БУКВА**  
@@ -520,6 +522,8 @@
 
 ## Держат 2 файлов
 
+- **А ЗАКОН, ЗНАЮЩИЙ ЯЗЫК СПИСКОМ**  
+  scripts/word_mutants.py, tools/actors.py
 - **АНГЛИЙСКАЯ СТОРОНА ИДЁТ ЗАКОНОМ, КАК РУССКАЯ**  
   tools/physlawforms.py, tools/ratesforms.py
 - **АНГЛИЙСКИЙ РАЗЛИЧИЯ НЕ ИМЕЕТ**  
@@ -814,6 +818,8 @@
   courts/homonym_court.py, tools/homonym.py
 - **ОЖИДАЕМОЕ СТРОИТСЯ ЗДЕСЬ, А НЕ СВЕРЯЕТСЯ СО СТРОКОЙ**  
   courts/equation_court.py, courts/metalang_court.py
+- **ОНО МОЖЕТ БЫТЬ ОТКРЫТО, ГОВОРЯТ ПОКАЗЫ, А НЕ СПИСОК СЛОВ**  
+  scripts/actorplace_market.py, tools/actors.py
 - **ОПИСАНИЕ ДЕЛА СВЕРЕНО С КОДОМ СУДА, А НЕ НАПИСАНО ПО ПАМЯТИ**  
   scripts/oracle_named.py, tools/genera.py
 - **ОРУДИЕ, СЧИТАЕМОЕ ДОЛГОМ МЕРЫ, ЕСТЬ ДОЛГ МЕРЫ, А НЕ ОРУДИЯ**  
@@ -848,6 +854,8 @@
   tools/dimforms.py, tools/gen_genesis_dim.py
 - **ОТСЕВ ДАЁТ НОВОЕ ИМЯ, А НЕ ЗАТЕНЯЕТ СТАРОЕ**  
   tools/measureof.py, tools/totalsubj.py
+- **ОХРАНЯЕТ ЛИШЬ ТЕ СЛОВА, КАКИЕ РУКА УСПЕЛА ВСПОМНИТЬ**  
+  scripts/word_mutants.py, tools/actors.py
 - **ОШИБКА НАЗВАНА НА СТРАНИЦЕ, А НЕ ОБОЙДЕНА**  
   courts/pctchain_court.py, tools/pctchain.py
 - **ПАРАМЕТР, ПРИВЯЗАННЫЙ К ОДНОМУ ЗНАЧЕНИЮ, НЕОТЛИЧИМ ОТ КОНСТАНТЫ, ПОКА НЕ**  
@@ -1062,6 +1070,8 @@
   scripts/word_once.py, tools/letterwork.py
 - **СЛОВО, ЗАИМСТВОВАННОЕ ЯЗЫКОМ, ОБЪЯВЛЕНО НЕ ИМ**  
   scripts/signless_census.py, tools/langsign.py
+- **СЛОВО, ПЕРЕД КОТОРЫМ СВОД СТАВИТ ТОЛЬКО ЛИЦО, ТРЕБУЕТ ЛИЦА И ВПРЕДЬ**  
+  scripts/actorplace_market.py, tools/actors.py
 - **СЛОВО, СКАЗАННОЕ ОДНАЖДЫ, НЕ ПОКАЗАНО**  
   tools/numnounforms.py, tools/numplaceforms.py
 - **СЛОЖИТЬ МОЖНО ЛИШЬ ОДНОРОДНОЕ, И ЭТО НЕ ПРАВИЛО ЗАПИСИ, А СВОЙСТВО МИРА**  
