@@ -253,7 +253,7 @@
       "boundary": [
         "whole_only"
       ],
-      "actors": "",
+      "actors": [],
       "text": "shows",
       "assemblies": [
         "school"
@@ -272,7 +272,10 @@
       "boundary": [
         "whole_only"
       ],
-      "actors": "",
+      "actors": [
+        "person_names:en",
+        "person_names:ru"
+      ],
       "text": "shows",
       "assemblies": [
         "school"
@@ -2032,7 +2035,7 @@
       "assemblies": [
         "school"
       ],
-      "actors": "",
+      "actors": [],
       "text": "shows"
     },
     {
@@ -3405,6 +3408,10 @@
       "text": "shows",
       "assemblies": [
         "school"
+      ],
+      "actors": [
+        "person_names:pl",
+        "person_names:ru"
       ]
     },
     {
@@ -7143,7 +7150,16 @@
         "full",
         "school"
       ],
-      "actors": []
+      "actors": [
+        "person_names:de",
+        "person_names:en",
+        "person_names:es",
+        "person_names:fr",
+        "person_names:it",
+        "person_names:nl",
+        "person_names:pl",
+        "person_names:pt"
+      ]
     },
     {
       "name": "karamzin_liza_ru",
@@ -7212,7 +7228,7 @@
       "assemblies": [
         "school"
       ],
-      "actors": "",
+      "actors": [],
       "text": "shows"
     },
     {
@@ -7812,6 +7828,9 @@
       "segmentation": "spaced",
       "assemblies": [
         "school"
+      ],
+      "actors": [
+        "person_names:ru"
       ]
     },
     {
@@ -8520,7 +8539,9 @@
       "assemblies": [
         "school"
       ],
-      "actors": "",
+      "actors": [
+        "person_names:en"
+      ],
       "text": "shows"
     },
     {
@@ -9050,7 +9071,17 @@
       "assemblies": [
         "school"
       ],
-      "actors": "",
+      "actors": [
+        "person_names:de",
+        "person_names:en",
+        "person_names:es",
+        "person_names:fr",
+        "person_names:it",
+        "person_names:nl",
+        "person_names:pl",
+        "person_names:pt",
+        "person_names:ru"
+      ],
       "text": "shows"
     },
     {
@@ -10308,7 +10339,17 @@
       "boundary": [
         "whole_only"
       ],
-      "actors": "",
+      "actors": [
+        "person_names:de",
+        "person_names:en",
+        "person_names:es",
+        "person_names:fr",
+        "person_names:it",
+        "person_names:nl",
+        "person_names:pl",
+        "person_names:pt",
+        "person_names:ru"
+      ],
       "text": "shows",
       "assemblies": [
         "school"
@@ -10454,7 +10495,15 @@
       "assemblies": [
         "school"
       ],
-      "actors": "",
+      "actors": [
+        "person_names:de",
+        "person_names:en",
+        "person_names:es",
+        "person_names:fr",
+        "person_names:it",
+        "person_names:nl",
+        "person_names:pl"
+      ],
       "text": "shows"
     },
     {
@@ -10763,7 +10812,14 @@
       "boundary": [
         "whole_only"
       ],
-      "actors": "",
+      "actors": [
+        "person_names:de",
+        "person_names:en",
+        "person_names:es",
+        "person_names:fr",
+        "person_names:it",
+        "person_names:pt"
+      ],
       "text": "shows",
       "assemblies": [
         "school"
@@ -11048,7 +11104,9 @@
       "assemblies": [
         "school"
       ],
-      "actors": "",
+      "actors": [
+        "person_names:en"
+      ],
       "text": "shows"
     },
     {
@@ -12380,7 +12438,9 @@
       "assemblies": [
         "school"
       ],
-      "actors": "",
+      "actors": [
+        "person_names:en"
+      ],
       "text": "shows"
     },
     {
@@ -12787,6 +12847,9 @@
       "text": "shows",
       "assemblies": [
         "school"
+      ],
+      "actors": [
+        "person_names:en"
       ]
     },
     {
@@ -12806,7 +12869,9 @@
       "assemblies": [
         "school"
       ],
-      "actors": "",
+      "actors": [
+        "person_names:en"
+      ],
       "text": "shows"
     },
     {
