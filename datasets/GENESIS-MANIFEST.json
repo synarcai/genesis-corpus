@@ -1,5 +1,5 @@
 {
-  "comment": "v7 genre-shard manifest: a layer is a WORLD (prepped alone, poisoning nothing); the glue is dead (links 1150→620 measured). The layered state (frozen base + genre sessions) turns these worlds into one mind; until the L-1 seam lands, each world answers its own tiers. Each world declares its TEXT KIND: «shows» is generated show-material whose every claim is checkable, «prose» is essay corpus where a hyphen lives inside a name, a power lives in a superscript and a falsehood may be QUOTED to be refuted. A judge calibrated on shows produces false accusations on prose, so jurisdiction is declared, not assumed.",
+  "comment": "v7 genre-shard manifest: a layer is a WORLD (prepped alone, poisoning nothing); the glue is dead (links 1150→620 measured). The layered state (frozen base + genre sessions) turns these worlds into one mind; until the L-1 seam lands, each world answers its own tiers. Each world declares its TEXT KIND: «shows» is generated show-material whose every claim is checkable, «prose» is essay corpus where a hyphen lives inside a name, a power lives in a superscript and a falsehood may be QUOTED to be refuted. A judge calibrated on shows produces false accusations on prose, so jurisdiction is declared, not assumed. «live» (23.09) is a LIVE PROBLEM of a declared natural source whose every line is checked by the world's own court: written in living language, not in the frames of shows, it is judged only by courts that declare the live kind (tools/panel.py `_спросить`), and it enters the full mix beside the shows.",
   "core": "school_biling_v2c",
   "external_root": "../omega",
   "external_root_comment": "Worlds whose file does not resolve inside this repository are looked up here: the prose corpora are built by the architecture repository's own pipeline, and copying them would create a second source of one fact. Override with GENESIS_EXTERNAL_ROOT.",
@@ -280,6 +280,29 @@
       "assemblies": [
         "school"
       ]
+    },
+    {
+      "name": "livemath",
+      "file": "datasets/genesis_livemath.txt",
+      "genre": "LIVE PROBLEMS — word problems of the GSM8K TRAIN split (MIT, openai/grade-school-math), each beside the program of its own solution: every number of a «<<48/2=24>>» step is an INPUT of the condition, the RESULT of an earlier step, or a CONSTANT of the world (60 minutes, 100 percent). A problem is shown nine times — itself and eight variants whose inputs change while its STRUCTURE holds: the order of all quantities, integrality, sign, and the count form of the word at each number (the pack's count_agreement). Census 23.09 (canon/judges/tools/clause_census.py): a sentence frame of the public GSM8K key is shown by the corpus in 2.8% of cases and in 5.6% with the whole train split; a clause in 19.8% and 35.5% — live text does not repeat by frame, the program does. The court reads a line back by the same law (tools/livemath_law.py) and recomputes it; the world is CLOSED.",
+      "act": [
+        "recount"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "exact_only"
+      ],
+      "size": 0,
+      "tiers": [],
+      "text": "live",
+      "assemblies": [
+        "full"
+      ],
+      "actors": [],
+      "источник": "MIT — openai/grade-school-math (GSM8K), train split; datasets/sources/gsm8k/LICENSE",
+      "происхождение": "https://raw.githubusercontent.com/openai/grade-school-math/master/grade_school_math/data/train.jsonl — 7 473 problems; 2 near-duplicates of key problems struck out (datasets/sources/gsm8k/leak_near_duplicate_ids.json); 0 exact matches with any key"
     },
     {
       "name": "nestcalc",
