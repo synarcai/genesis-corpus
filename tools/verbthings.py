@@ -21,9 +21,13 @@ from plural import singular
 # `story_chainforms`. Паспорт звал призраков и молчал о живых читателях — то есть лгал
 # ОБЕИМИ половинами разом, и всякий, кто судил по нему о цене правки корня, судил по
 # выдумке ровно там, где цена и выросла.
+# ДВА НОВЫХ ЧИТАТЕЛЯ (23.09, перепись словаря вещей): словарь `gsm_items` берёт вещи из школьных
+# классов этой двери, а перепись полос `gsm_census` мерит ими покрытие. Прибор паспорта назвал их
+# на вершине вагона 24.09 — дописаны сюда, а не выведены.
 ЧИТАЮТ = ("gen_genesis_gsmlex", "everydayforms", "gen_genesis_realverbs",
           "gen_genesis_gsmwide", "story_chainforms", "gen_genesis_items",
-          "gen_genesis_pronouns", "episode_court", "verbthings_court")
+          "gen_genesis_pronouns", "episode_court", "verbthings_court",
+          "gsm_items", "gsm_census")
 
 ЕДА = {"apples", "cookies", "cakes", "pastries", "nuts", "eggs", "slices", "bananas", "oranges", "pears", "sweets",
        "candies", "sandwiches", "grapes", "plums", "buns", "pies", "loaves", "pancakes", "cherries", "carrots", "calories"}

@@ -3362,10 +3362,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 47180562,
+      "size": 47185248,
       "tiers": [],
       "text": "mix",
-      "lines": 486148
+      "lines": 486164
     },
     {
       "name": "fuseprep",
@@ -7115,7 +7115,12 @@
       "actors": [
         "person_names:en"
       ],
-      "обороты_полос": []
+      "обороты_полос": [
+        {
+          "оборот": "# more marbles how many more marbles did",
+          "страниц": 1
+        }
+      ]
     },
     {
       "name": "jaclass",
@@ -7463,7 +7468,7 @@
     {
       "name": "lang_en",
       "file": "datasets/genesis_lang_en.txt",
-      "genre": "THE ENGLISH LAYER — THE THIRD-PERSON -s AND THE PLURALS THAT OBEY NOTHING. Declared until 12.09 in eleven words; measured 12.09 they hold up, and here are the numbers behind them. 4196 lines, 1507 asking. THE RULE AND ITS EXCEPTIONS STAND IN ONE WORLD AND ARE COUNTED: 2956 lines carry a regular plural in -s, and 158 carry one that obeys no rule at all — feet, mice, children, men, women, teeth, geese, oxen. AN EXCEPTION IS DECLARED BY NAME, NOT DERIVED: no rule yields «feet» from «foot», and a layer that showed only the regular plural would teach a reader to invent «foots». The third person adds its -s in 410 lines, and the tense is contrasted on the same frame — «today they …» 135 lines against «yesterday she …» 135 — so that what changes is visible beside what does not. The largest genus is not grammar but COUNTING IN WORDS: 1375 lines spell the arithmetic out («six plus five equals eleven»), of which only 161 carry an equals sign — ENGLISH IS TAUGHT HERE AS A LANGUAGE IN WHICH ONE COUNTS, not as a grammar beside a separate arithmetic. Twenty-five lines are marked «¬» — forms the language does not allow — each beside its lawful twin. The layer is a consequence of the pack `en.json` and is judged by REPRODUCTION. Its kin are `lang_ru`, `lang_de` and `lang_zh`, and the four together make one lesson: Russian carries agreement on the noun, German on the article, Chinese on a separate measure word, and English on almost nothing — a single -s in the third person and a handful of plurals that must be remembered. Boundary: whole totals only, measured.",
+      "genre": "THE ENGLISH LAYER — THE THIRD-PERSON -s AND THE PLURALS THAT OBEY NOTHING. Declared until 12.09 in eleven words; measured 12.09 they hold up, and here are the numbers behind them. 4212 lines, 1515 asking (re-measured 24.09, when the counting class of the pack took bird, spoon, inch and ounce — nouns whose singular at one no other world showed any more). THE RULE AND ITS EXCEPTIONS STAND IN ONE WORLD AND ARE COUNTED: 2956 lines carry a regular plural in -s, and 158 carry one that obeys no rule at all — feet, mice, children, men, women, teeth, geese, oxen. AN EXCEPTION IS DECLARED BY NAME, NOT DERIVED: no rule yields «feet» from «foot», and a layer that showed only the regular plural would teach a reader to invent «foots». The third person adds its -s in 410 lines, and the tense is contrasted on the same frame — «today they …» 135 lines against «yesterday she …» 135 — so that what changes is visible beside what does not. The largest genus is not grammar but COUNTING IN WORDS: 1375 lines spell the arithmetic out («six plus five equals eleven»), of which only 161 carry an equals sign — ENGLISH IS TAUGHT HERE AS A LANGUAGE IN WHICH ONE COUNTS, not as a grammar beside a separate arithmetic. Twenty-five lines are marked «¬» — forms the language does not allow — each beside its lawful twin. The layer is a consequence of the pack `en.json` and is judged by REPRODUCTION. Its kin are `lang_ru`, `lang_de` and `lang_zh`, and the four together make one lesson: Russian carries agreement on the noun, German on the article, Chinese on a separate measure word, and English on almost nothing — a single -s in the third person and a handful of plurals that must be remembered. Boundary: whole totals only, measured.",
       "act": [
         "inflect",
         "refuse"
@@ -11650,10 +11655,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 39079384,
+      "size": 39084070,
       "tiers": [],
       "text": "mix",
-      "lines": 437681
+      "lines": 437697
     },
     {
       "name": "school_biling_v2c",

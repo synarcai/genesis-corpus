@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 349 миров, 486148 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 349 миров, 486164 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -556,7 +556,7 @@
 
 ## АКТ «inflect» — поставить слово в форму по объявленному правилу
 
-Миров 34, строк 113234.
+Миров 34, строк 113250.
 
 - **`lang_de`** (8274 строк; declared, whole_only)  
   **THE GERMAN LAYER** — FOUR CASES CARRIED BY THE ARTICLE, EACH IN ITS OWN FRAME. Declared until 12.09 in nine words.
@@ -574,8 +574,8 @@
   **THE RUSSIAN LAYER** — WHAT THE PACK DECLARES AND WHAT THIS WORLD ACTUALLY SHOWS, declared until 12.09 as «russian as a LANGUAGE: paradigms, graphemes, irregulars».
 - **`lang_pl`** (4569 строк; declared, tier1_unverified, whole_only)  
   **Мир пакета: имя с определителем, признак, число, счёт на своём языке, лицо глагола** — и ПЯТЬ НЕВОЗМОЖНЫХ ФРАЗ, помеченных «¬», из коих три о грамматике и две о смысле.
-- **`lang_en`** (4196 строк; declared, whole_only)  
-  **THE ENGLISH LAYER** — THE THIRD-PERSON -s AND THE PLURALS THAT OBEY NOTHING. Declared until 12.09 in eleven words; measured 12.09 they hold up, and here are the numbers behind them. 4196 lines, 1507 asking.
+- **`lang_en`** (4212 строк; declared, whole_only)  
+  **THE ENGLISH LAYER** — THE THIRD-PERSON -s AND THE PLURALS THAT OBEY NOTHING. Declared until 12.09 in eleven words; measured 12.09 they hold up, and here are the numbers behind them. 4212 lines, 1515 asking (re-measured 24.09, when the counting class of th…
 - **`lang_id`** (4135 строк; declared, tier1_unverified, whole_only)  
   **indonesian: the SIMPLEST of them all, and that is its value** — no tense, no gender, no case, no agreement at all; the plural is the word said TWICE (buku-buku).
 - **`lang_hi`** (4010 строк; declared, tier1_unverified, whole_only)  

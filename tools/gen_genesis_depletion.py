@@ -56,8 +56,10 @@ NAMES = ["ida", "omar", "pia", "rosa", "sven", "tara", "umar", "vera"]
         (4, "a quarter", "четверть"), (5, "a fifth", "пятая часть")]
 # ГЛАГОЛ УБЫЛИ ОБЪЯВЛЕН СО СВОИМИ ПРЕДМЕТАМИ: съесть можно съедобное,
 # продать — товар, унести — что угодно счётное.
-ЕДА = ["apples", "cookies", "sandwiches", "eggs", "cupcakes",
-       "candies", "bananas", "chimichangas"]
+# «cupcakes» и «chimichangas» были словами переписи публичных полос; с переписью словаря (23.09)
+# пакет их снял, и на их места встала еда двери `verbthings` (24.09) — место в ряду то же.
+ЕДА = ["apples", "cookies", "sandwiches", "eggs", "cakes",
+       "candies", "bananas", "nuts"]
 УБЫЛЬ = [
     ("had gone", "remain", None),
     ("were sold", "are left", None),

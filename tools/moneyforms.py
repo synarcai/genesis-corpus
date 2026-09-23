@@ -23,14 +23,14 @@ import unitforms  # noqa: E402 — и фраза его: «ein Euro hat 100 Cent
 # bridge copula, question of the small unit («how many cents is {}»),
 # «is» for the way back (the small unit as subject), the ledger colon
 ЯЗЫКИ = {
-    "de": dict(б=("Euro", "Euro"), м=("Cent", "Cent", "Cent"), есть="sind", вопрос="wie viel {м} sind {б}?", дв=": "),
-    "fr": dict(б=("euro", "euros"), м=("centime", "centimes", "centimes"), есть="font", вопрос="combien de {м} font {б} ?", дв=" : "),
-    "es": dict(б=("euro", "euros"), м=("céntimo", "céntimos", "céntimos"), есть="son", вопрос="¿cuántos {м} son {б}?", дв=": "),
-    "it": dict(б=("euro", "euro"), м=("centesimo", "centesimi", "centesimi"), есть="sono", вопрос="quanti {м} sono {б}?", дв=": "),
-    "pt": dict(б=("euro", "euros"), м=("cêntimo", "cêntimos", "cêntimos"), есть="são", вопрос="quantos {м} são {б}?", дв=": "),
-    "nl": dict(б=("euro", "euro"), м=("cent", "cent", "cent"), есть="is", вопрос="hoeveel {м} is {б}?", дв=": "),
-    "pl": dict(б=("zł", "zł"), м=("grosz", "grosze", "groszy"), есть="to", вопрос="ile {м} to {б}?", дв=": "),
-    "tr": dict(б=("lira", "lira"), м=("kuruş", "kuruş", "kuruş"), есть="", вопрос="{б} kaç {м}?", дв=": "),
+    "de": dict(б=None, м=None, есть="sind", вопрос="wie viel {м} sind {б}?", дв=": "),
+    "fr": dict(б=None, м=None, есть="font", вопрос="combien de {м} font {б} ?", дв=" : "),
+    "es": dict(б=None, м=None, есть="son", вопрос="¿cuántos {м} son {б}?", дв=": "),
+    "it": dict(б=None, м=None, есть="sono", вопрос="quanti {м} sono {б}?", дв=": "),
+    "pt": dict(б=None, м=None, есть="são", вопрос="quantos {м} são {б}?", дв=": "),
+    "nl": dict(б=None, м=None, есть="is", вопрос="hoeveel {м} is {б}?", дв=": "),
+    "pl": dict(б=("zł", "zł"), м=None, есть="to", вопрос="ile {м} to {б}?", дв=": "),
+    "tr": dict(б=None, м=None, есть="", вопрос="{б} kaç {м}?", дв=": "),
     "ru": dict(б=("рубля", "рубля"), м=("копейка", "копейки", "копеек"), есть="— это", вопрос="сколько {м} в {б}?", дв=": "),
 }
 
@@ -42,11 +42,20 @@ import unitforms  # noqa: E402 — и фраза его: «ein Euro hat 100 Cent
 ВАЛЮТА = {"de": ("euro", "eurocent"), "fr": ("euro", "eurocent"), "es": ("euro", "eurocent"),
           "it": ("euro", "eurocent"), "pt": ("euro", "eurocent"), "nl": ("euro", "eurocent"),
           "pl": ("zloty", "grosz"), "tr": ("lira", "kurus"), "ru": ("rouble", "kopeck")}
+# ФОРМЫ МОНЕТ — У ДВЕРИ, И ТАБЛИЦА ЯЗЫКОВ ИХ НЕ ПИШЕТ (24.09, прибор [ДВЕРИ ЕДИНИЦЫ]): дом держал
+# строкой «céntimo», «kuruş», «Euro» рядом с дверью, какая знает их с того же дня, — девять пар
+# «вдвоём» и пять «врозь». Пишет таблица лишь то, чего дверь не знает: «zł», знак злотого.
 for _я, (_б, _м) in ВАЛЮТА.items():
-    if _я in ("ru", "tr"):
-        continue                        # русская монета — у rugram, турецкая пишется одной формой
-    _формы = unitforms.формы_единицы(_я, _м)
-    ЯЗЫКИ[_я]["м"] = _формы if len(_формы) == 3 else (_формы[0], _формы[1], _формы[1])
+    if _я == "ru":
+        continue                        # русская монета — у rugram
+    _мал, _бол = unitforms.формы_единицы(_я, _м), unitforms.формы_единицы(_я, _б)
+    if _я == "tr":
+        # турецкий не гнёт имя при числе: одна форма на все счёты, вторая у двери — сказуемое
+        ЯЗЫКИ[_я]["м"], ЯЗЫКИ[_я]["б"] = (_мал[0],) * 3, (_бол[0],) * 2
+        continue
+    ЯЗЫКИ[_я]["м"] = _мал if len(_мал) == 3 else (_мал[0], _мал[1], _мал[1])
+    if ЯЗЫКИ[_я]["б"] is None:
+        ЯЗЫКИ[_я]["б"] = _бол[:2]
 _КУРСЫ = {int(units.отношение(б, м)) for б, м in ВАЛЮТА.values()}
 assert len(_КУРСЫ) == 1, _КУРСЫ
 СОТНЯ = _КУРСЫ.pop()
