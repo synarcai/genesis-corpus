@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 349 миров, 486160 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 349 миров, 486198 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -11,7 +11,7 @@
 
 ## АКТ «recount» — пересчитать величину: строка утверждает число
 
-Миров 161, строк 253685.
+Миров 161, строк 253689.
 
 - **`links`** (17566 строк; declared, whole_only)  
   **CONVERSATION LINKS** — a question whose subject stands in the PREVIOUS reply (the owner's order, 04.09, item 5; the BESEDA band measures this genus mute 15 of 15).
@@ -93,7 +93,7 @@
   **A MULTIPLE, A DIFFERENCE AND A SUM** — SCHOOL PAGES IN THREE LANGUAGES (e9's order 03.09 — the G1-ATTACK genus «multiplicative relation + sum»; SCENES REWRITTEN 23.09 by the owner's word: the worker bees of g1.6, the books of g1.32 and the cards of g1.37 …
 - **`ninelang`** (1800 строк; recompute, whole_only)  
   **THREE SHAPES IN NINE LANGUAGES** — one place, nine different words (07.09).
-- **`physics`** (1468 строк; recompute, whole_only)  
+- **`physics`** (1472 строк; recompute, whole_only)  
   **ЗАКОН ФИЗИКИ, СКАЗАННЫЙ ФОРМУЛОЙ И ТУТ ЖЕ ПРОЙДЕННЫЙ ЧИСЛАМИ С ЕДИНИЦАМИ: «что даёт работа = сила × путь при 20 и 3? работа = сила × путь; 20 ньютонов × 3 метра = 60 джоулей», «напряжение = ток × сопротивление; 3 ампера × 12 ом = 36 вольт». Формула стои́т…
 - **`totalsubj`** (1440 строк; recompute, whole_only)  
   **THE TOTAL AS SUBJECT AND THE CONTAINER AS A UNIT OF COUNT (07.09). The atlas of the reader's unread numbers (tomograph st48, omega-ad) holds its largest unsorted class** — «other», 151 stories — and holon-f9 named two of its shapes.
@@ -629,7 +629,7 @@
 
 ## АКТ «name» — назвать: что вещь ЕСТЬ и как она зовётся
 
-Миров 25, строк 47837.
+Миров 25, строк 47871.
 
 - **`notationvar`** (10696 строк; recompute, reversibility, declared_pairs_only)  
   **one sign, two scripts: the same record written in ASCII and in typography, and the court reduces both to one canon. The corpus knew every sign in ONE script only, and in different signs** — in DIFFERENT ones: «x^2» 1702 times and «x²» ZERO, «≤» 351 and «<…
@@ -663,7 +663,7 @@
   **EVERYDAY TOPICS** — what a person asks about first (the owner's order, 04.09, item 4; the BESEDA band measures this genus mute 16 of 20, and names its cause: SUBJ-UNKNOWN — the reader does not know the SUBJECT of the question.
 - **`items`** (1273 строк; recompute, declared, whole_only, unsigned_only)  
   **THE THING NAMED BEFORE IT IS COUNTED** — declared until 12.09 in eight words.
-- **`mathfound`** (1198 строк; declared, recompute, finite_explicit_only)  
+- **`mathfound`** (1232 строк; declared, recompute, finite_explicit_only)  
   **ОСНОВАНИЯ МАТЕМАТИКИ И НАЗВАННЫЙ ПАДЕЖ** — ОДИН МИР, И ЭТО НЕ СЛУЧАЙНОСТЬ: функция как ОДИН ПРЕДМЕТ («функция f на множестве {1 2 3} задана правилом f(x) = 4x; f(1) = 4»), инъекция свидетелем, счётность, доказательство от противного, индукция — и рядом ше…
 - **`glyphs`** (1101 строк; declared, declared_pairs_only)  
   **the glyph world v0 (embodied-reasoning mandate 02.09, L5): every symbol** — digits, Latin and Cyrillic letters of both cases, signs — as a 5×7 bit grid with a name (tools/glyphs.py, one font table that is also the court's law); shows «grid → symbol», «sym…
