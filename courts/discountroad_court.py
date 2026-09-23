@@ -36,16 +36,10 @@ def main():
     from genesis import worlds
     # ПРЕДСТАВЛЕННОЕ «НЕТ» (М-106): скидка не вычтена; счёт взят по полной цене; сумма делена
     # не на ту цену; счётная форма чужого числа.
-    подсадки = (
-        "each pack costs $76. the discount is $25 on each pack. how much is paid for one pack? $76: 76 − 25 = 76.",
-        "each pack costs $76. the discount is $25 on each pack. how much is paid for 5 packs? $380: 5 × 76 = 380.",
-        "each pack costs $76. the discount is $25 on each pack. how many packs can be bought for $380? 5 packs: 380 ÷ 51 = 5.",
-        "each pack costs $76. the discount is $25 on each pack. how many packs can be bought for $255? 5 packs: 255 ÷ 76 = 5.",
-        "каждая пачка стоит 76 ₽. скидка 25 ₽ на каждую пачку. сколько платить за одну пачку? 76 ₽: 76 − 25 = 76.",
-        "каждая пачка стоит 76 ₽. скидка 25 ₽ на каждую пачку. сколько платить за 5 пачек? 256 ₽: 5 × 51 = 256.",
-        "każdy bilet kosztuje 48 zł. rabat wynosi 17 zł na każdy bilet. ile biletów można kupić za 192 zł? 5 biletów: 192 ÷ 48 = 5.",
-        "jede Karte kostet 48 €. der Rabatt beträgt 17 € auf jede Karte. wie viele Karten kann man für 124 € kaufen? 4 Karten: 124 ÷ 48 = 4.",
-    )
+    # С 23.09 подсадки выводит ДОМ из первой пары своей сетки (`discountroad.подсадки`): литералы
+    # прежней сетки — «each pack costs $76. the discount is $25», задача SVAMP chal-1, — после
+    # переписи стали чужими строками, и суд не поймал ни одной — 0 из 8.
+    подсадки = tuple(битая for _, битая in F.подсадки())
     пойманы = sum(1 for п in подсадки if _судить(п) == (True, False))
     if пойманы != len(подсадки):
         for п in подсадки:

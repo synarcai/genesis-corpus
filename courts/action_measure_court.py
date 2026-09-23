@@ -2,10 +2,10 @@
 """[ACTION MEASURE COURT] — the number measures the act, or counts the bearers; the line is the table, or it is a lie.
 
 A show of the action-measure world (tools/actionmeasure.py) is one of four pages:
-a measured act and its question («the frog jumped 12 inches. how far did the frog
-jump? 12 inches.»), two measures summed with their ledger, or bearers counted
-before the subject with an arrival or a departure («6 birds were sitting on the
-fence. 4 more birds came. how many birds are on the fence now? 10 birds: 6 + 4 = 10.»).
+a measured act and its question («the rabbit jumped 14 inches. how far did the rabbit
+jump? 14 inches.»), two measures summed with their ledger, or bearers counted
+before the subject with an arrival or a departure («7 swans were swimming on the
+lake. 5 more swans flew in. how many swans are on the lake now? 12 swans: 7 + 5 = 12.»).
 
 The court reads each page back through the same house: the unit must be of the
 kind the verb measures (jump — length, weigh — weight: «jumped 12 pounds» is a lie
@@ -34,17 +34,11 @@ def _судить(строка):
 def main():
     import collections
     from genesis import worlds
-    # ПРЕДСТАВЛЕННОЕ «НЕТ» (М-106): единица не по глаголу; сумма сложена неверно;
-    # носители сложены неверно; счётная форма не по числу (ru).
-    подсадки = (
-        "the frog jumped 12 pounds. how far did the frog jump? 12 pounds.",
-        "the frog jumped 12 inches and then 8 inches. how far did the frog jump in all? 20 inches: 12 + 8 = 21.",
-        "6 birds were sitting on the fence. 4 more birds came. how many birds are on the fence now? 10 birds: 6 + 4 = 11.",
-        "лягушка прыгнула на 12 сантиметр. на сколько сантиметров прыгнула лягушка? на 12 сантиметр.",
-        # разность родов сложена неверно; экзистенциальная убыль с неверным итогом
-        "there are 12 more girls than boys in the school. there are 20 boys in the school. how many girls are there in the school? 33 girls: 20 + 12 = 33.",
-        "на заборе 6 птиц. улетели 4 птицы. сколько птиц на заборе теперь? 3 птицы: 6 − 4 = 3.",
-    )
+    # ПРЕДСТАВЛЕННОЕ «НЕТ» (М-106): единица не по глаголу; сумма сложена неверно; ответ не по
+    # факту; носители, разность и убыль при бытии сложены неверно. С 23.09 подсадки выводит ДОМ
+    # из своих таблиц (`actionmeasure.подсадки`): литералы прежних сцен после переписи сцен стали
+    # чужими строками, и суд не поймал ни одной — 0 из 6.
+    подсадки = tuple(битая for _, битая in F.подсадки())
     пойманы = sum(1 for п in подсадки if _судить(п) == (True, False))
     if пойманы != len(подсадки):
         for п in подсадки:

@@ -12,6 +12,12 @@ pack's agreement rule. Frames are declared per language and read by the court
 through the same tables (tools/phrases.py); sums and counts are recomputed.
 The world is CLOSED.
 
+SCENES AND NUMBERS REWRITTEN 23.09 with the house of action measure (the owner's word: a band
+is an instrument, never a source): the frog and the kangaroo, the birds on the fence and the
+children on the bus were the band's own scenes, and the numbers were its own — (43, 21) was
+SVAMP chal-4. The numbers are now read from `actionmeasure` (one door for the grid of this
+genus), the actors and bearers are the house's own.
+
     python3 tools/measurelangs.py    # self-check with mutants
 """
 import json
@@ -25,81 +31,81 @@ import langpack  # noqa: E402
 import phrases  # noqa: E402
 
 _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
-ЧИСЛА_МЕРЫ = (12, 5, 27, 8, 15, 31, 9, 20, 46)
-ПАРЫ_СУММЫ = ((12, 8), (5, 9), (27, 13), (15, 6), (31, 19), (9, 4), (20, 25), (46, 14), (8, 8))
-НОСИТЕЛИ_ЧИСЛА = ((6, 4), (43, 21), (12, 5), (9, 3), (28, 14), (7, 6), (15, 8), (30, 12), (11, 9))
+# ОДНА ДВЕРЬ НА СЕТКУ РОДА (23.09): таблицы чисел были переписаны сюда из `actionmeasure` рукой и
+# несли те же числа полосы; ныне они читаются у дома рода, и правка сетки есть правка одного места.
+from actionmeasure import ЧИСЛА_МЕРЫ, ПАРЫ_СУММЫ, НОСИТЕЛИ_ЧИСЛА  # noqa: E402
 
 # per language: actors (name, gender), verbs (past[, past f], bare, kind), units by kind
 # (count forms), prepositions by kind, frames; bearers (forms…, place, was, came, left)
 ЯЗЫКИ = {
-    "de": dict(деятели=(("der Frosch", "m"), ("das Känguru", "n"), ("der Hund", "m"), ("die Katze", "f")),
+    "de": dict(деятели=(("der Hase", "m"), ("die Ziege", "f"), ("das Pony", "n"), ("das Lamm", "n")),
                глаголы=(("sprang", "springen", "длина"), ("wog", "wiegen", "вес")),
                единицы={"длина": (("Zentimeter",), ("Meter",)), "вес": (("Kilogramm",), ("Gramm",))}, пр={},
                факт="{A} {Гп} {ПР}{n} {ЕДn}.", вопрос={"длина": "wie weit {Гп} {A}?", "вес": "wie viel {Гп} {A}?"}, ответ="{ПР}{n} {ЕДn}.",
                сумма_факт="{A} {Гп} {ПР}{a} {ЕДa} und dann {ПР}{b} {ЕДb}.", сумма_вопрос={"длина": "wie weit {Гп} {A} insgesamt?", "вес": "wie viel {Гп} {A} insgesamt?"},
                сумма_ответ="{ПР}{s} {ЕДs}: {a} + {b} = {s}.",
-               носители=((("Vogel", "Vögel"), "auf dem Zaun", ("saßen",), ("kamen dazu",), ("flogen weg",)),
-                         (("Kind", "Kinder"), "im Bus", ("waren",), ("stiegen ein",), ("stiegen aus",)),
+               носители=((("Schwan", "Schwäne"), "auf dem See", ("schwammen",), ("kamen dazu",), ("flogen weg",)),
+                         (("Wanderer", "Wanderer"), "auf dem Weg", ("waren",), ("kamen dazu",), ("kehrten um",)),
                          (("Boot", "Boote"), "im Hafen", ("lagen",), ("kamen an",), ("fuhren weg",))),
                было="{ГДЕ} {БЫЛИ} {n} {Нn}.", прибыль="{k} weitere {Нk} {ПРИШЛИ}.", убыль="{k} {Нk} {УШЛИ}.",
                носители_вопрос="wie viele {Нмн} sind jetzt {ГДЕ}?", носители_ответ="{r} {Нr}: {n} {знак} {k} = {r}."),
-    "fr": dict(деятели=(("la grenouille", "f"), ("le kangourou", "m"), ("le chien", "m"), ("le chat", "m")),
+    "fr": dict(деятели=(("le lapin", "m"), ("la chèvre", "f"), ("le poney", "m"), ("le mouton", "m")),
                глаголы=(("a sauté", "sauter", "длина"), ("pesait", "peser", "вес")),
                единицы={"длина": (("centimètre", "centimètres"), ("mètre", "mètres")), "вес": (("kilogramme", "kilogrammes"), ("gramme", "grammes"))}, пр={"длина": "de "},
                # the question opens with «combien» (the script court's opener), not with the actor
                факт="{A} {Гп} {ПР}{n} {ЕДn}.", вопрос={"длина": "combien de {ЕДмн} {A} {Гп} ?", "вес": "combien de {ЕДмн} {A} {Гп} ?"}, ответ="{ПР}{n} {ЕДn}.",
                сумма_факт="{A} {Гп} {ПР}{a} {ЕДa} puis {ПР}{b} {ЕДb}.", сумма_вопрос={"длина": "combien de {ЕДмн} {A} {Гп} en tout ?", "вес": "combien de {ЕДмн} {A} {Гп} en tout ?"},
                сумма_ответ="{ПР}{s} {ЕДs} : {a} + {b} = {s}.",
-               носители=((("oiseau", "oiseaux"), "sur la clôture", ("étaient perchés",), ("sont arrivés",), ("se sont envolés",)),
-                         (("enfant", "enfants"), "dans le bus", ("étaient",), ("sont montés",), ("sont descendus",)),
+               носители=((("cygne", "cygnes"), "sur le lac", ("nageaient",), ("sont arrivés",), ("se sont envolés",)),
+                         (("randonneur", "randonneurs"), "sur le sentier", ("marchaient",), ("sont arrivés",), ("ont fait demi-tour",)),
                          (("bateau", "bateaux"), "dans le port", ("étaient amarrés",), ("sont arrivés",), ("sont partis",))),
                было="{n} {Нn} {БЫЛИ} {ГДЕ}.", прибыль="{k} {Нk} de plus {ПРИШЛИ}.", убыль="{k} {Нk} {УШЛИ}.",
                носители_вопрос="combien {ДЕ}{Нмн} y a-t-il {ГДЕ} maintenant ?", носители_ответ="{r} {Нr} : {n} {знак} {k} = {r}."),
-    "es": dict(деятели=(("la rana", "f"), ("el canguro", "m"), ("el perro", "m"), ("el gato", "m")),
+    "es": dict(деятели=(("el conejo", "m"), ("la cabra", "f"), ("el poni", "m"), ("el cordero", "m")),
                глаголы=(("saltó", "saltar", "длина"), ("pesaba", "pesar", "вес")),
                единицы={"длина": (("centímetro", "centímetros"), ("metro", "metros")), "вес": (("kilogramo", "kilogramos"), ("gramo", "gramos"))}, пр={},
                факт="{A} {Гп} {ПР}{n} {ЕДn}.", вопрос={"длина": "¿cuánto {Гп} {A}?", "вес": "¿cuánto {Гп} {A}?"}, ответ="{ПР}{n} {ЕДn}.",
                сумма_факт="{A} {Гп} {ПР}{a} {ЕДa} y luego {ПР}{b} {ЕДb}.", сумма_вопрос={"длина": "¿cuánto {Гп} {A} en total?", "вес": "¿cuánto {Гп} {A} en total?"},
                сумма_ответ="{ПР}{s} {ЕДs}: {a} + {b} = {s}.",
-               носители=((("pájaro", "pájaros"), "en la valla", ("había",), ("llegaron",), ("se fueron volando",)),
-                         (("niño", "niños"), "en el autobús", ("había",), ("subieron",), ("bajaron",)),
+               носители=((("cisne", "cisnes"), "en el lago", ("había",), ("llegaron",), ("se fueron volando",)),
+                         (("excursionista", "excursionistas"), "en el sendero", ("había",), ("llegaron",), ("se dieron la vuelta",)),
                          (("barco", "barcos"), "en el puerto", ("había",), ("llegaron",), ("se fueron",))),
                было="{БЫЛИ} {n} {Нn} {ГДЕ}.", прибыль="{ПРИШЛИ} {k} {Нk} más.", убыль="{УШЛИ} {k} {Нk}.",
                носители_вопрос="¿{КВ} {Нмн} hay {ГДЕ} ahora?", носители_ответ="{r} {Нr}: {n} {знак} {k} = {r}."),
-    "it": dict(деятели=(("la rana", "f"), ("il canguro", "m"), ("il cane", "m"), ("il gatto", "m")),
+    "it": dict(деятели=(("il coniglio", "m"), ("la capra", "f"), ("il pony", "m"), ("il vitello", "m")),
                глаголы=(("ha saltato", "saltare", "длина"), ("pesava", "pesare", "вес")),
                единицы={"длина": (("centimetro", "centimetri"), ("metro", "metri")), "вес": (("chilogrammo", "chilogrammi"), ("grammo", "grammi"))}, пр={},
                факт="{A} {Гп} {ПР}{n} {ЕДn}.", вопрос={"длина": "quanto {Гп} {A}?", "вес": "quanto {Гп} {A}?"}, ответ="{ПР}{n} {ЕДn}.",
                сумма_факт="{A} {Гп} {ПР}{a} {ЕДa} e poi {ПР}{b} {ЕДb}.", сумма_вопрос={"длина": "quanto {Гп} {A} in tutto?", "вес": "quanto {Гп} {A} in tutto?"},
                сумма_ответ="{ПР}{s} {ЕДs}: {a} + {b} = {s}.",
-               носители=((("uccello", "uccelli"), "sul recinto", ("c'erano",), ("sono arrivati altri",), ("sono volati via",)),
-                         (("bambino", "bambini"), "sull'autobus", ("c'erano",), ("sono saliti altri",), ("sono scesi",)),
+               носители=((("cigno", "cigni"), "sul lago", ("c'erano",), ("sono arrivati altri",), ("sono volati via",)),
+                         (("escursionista", "escursionisti"), "sul sentiero", ("c'erano",), ("sono arrivati altri",), ("sono tornati indietro",)),
                          (("barca", "barche"), "nel porto", ("c'erano",), ("sono arrivate altre",), ("sono partite",))),
                было="{БЫЛИ} {n} {Нn} {ГДЕ}.", прибыль="{ПРИШЛИ} {k} {Нk}.", убыль="{k} {Нk} {УШЛИ}.",
                носители_вопрос="{КВ} {Нмн} ci sono {ГДЕ} adesso?", носители_ответ="{r} {Нr}: {n} {знак} {k} = {r}."),
-    "pt": dict(деятели=(("a rã", "f"), ("o canguru", "m"), ("o cão", "m"), ("o gato", "m")),
+    "pt": dict(деятели=(("o coelho", "m"), ("a cabra", "f"), ("o pónei", "m"), ("o cordeiro", "m")),
                глаголы=(("saltou", "saltar", "длина"), ("pesava", "pesar", "вес")),
                единицы={"длина": (("centímetro", "centímetros"), ("metro", "metros")), "вес": (("quilograma", "quilogramas"), ("grama", "gramas"))}, пр={},
                факт="{A} {Гп} {ПР}{n} {ЕДn}.", вопрос={"длина": "quanto {Гп} {A}?", "вес": "quanto {Гп} {A}?"}, ответ="{ПР}{n} {ЕДn}.",
                сумма_факт="{A} {Гп} {ПР}{a} {ЕДa} e depois {ПР}{b} {ЕДb}.", сумма_вопрос={"длина": "quanto {Гп} {A} no total?", "вес": "quanto {Гп} {A} no total?"},
                сумма_ответ="{ПР}{s} {ЕДs}: {a} + {b} = {s}.",
-               носители=((("pássaro", "pássaros"), "na vedação", ("havia",), ("chegaram mais",), ("voaram embora",)),
-                         (("criança", "crianças"), "no autocarro", ("havia",), ("entraram mais",), ("saíram",)),
+               носители=((("cisne", "cisnes"), "no lago", ("havia",), ("chegaram mais",), ("voaram embora",)),
+                         (("caminhante", "caminhantes"), "no trilho", ("havia",), ("chegaram mais",), ("voltaram para trás",)),
                          (("barco", "barcos"), "no porto", ("havia",), ("chegaram mais",), ("partiram",))),
                было="{БЫЛИ} {n} {Нn} {ГДЕ}.", прибыль="{ПРИШЛИ} {k} {Нk}.", убыль="{k} {Нk} {УШЛИ}.",
                носители_вопрос="{КВ} {Нмн} há {ГДЕ} agora?", носители_ответ="{r} {Нr}: {n} {знак} {k} = {r}."),
-    "nl": dict(деятели=(("de kikker", "m"), ("de kangoeroe", "m"), ("de hond", "m"), ("de kat", "f")),
+    "nl": dict(деятели=(("het konijn", "n"), ("de geit", "f"), ("de pony", "m"), ("het lam", "n")),
                глаголы=(("sprong", "springen", "длина"), ("woog", "wegen", "вес")),
                единицы={"длина": (("centimeter",), ("meter",)), "вес": (("kilogram",), ("gram",))}, пр={},
                факт="{A} {Гп} {ПР}{n} {ЕДn}.", вопрос={"длина": "hoe ver {Гп} {A}?", "вес": "hoeveel {Гп} {A}?"}, ответ="{ПР}{n} {ЕДn}.",
                сумма_факт="{A} {Гп} {ПР}{a} {ЕДa} en daarna {ПР}{b} {ЕДb}.", сумма_вопрос={"длина": "hoe ver {Гп} {A} in totaal?", "вес": "hoeveel {Гп} {A} in totaal?"},
                сумма_ответ="{ПР}{s} {ЕДs}: {a} + {b} = {s}.",
-               носители=((("vogel", "vogels"), "op het hek", ("zaten",), ("kwamen erbij",), ("vlogen weg",)),
-                         (("kind", "kinderen"), "in de bus", ("zaten",), ("stapten in",), ("stapten uit",)),
+               носители=((("zwaan", "zwanen"), "op het meer", ("zwommen",), ("kwamen erbij",), ("vlogen weg",)),
+                         (("wandelaar", "wandelaars"), "op het pad", ("liepen",), ("kwamen erbij",), ("keerden om",)),
                          (("boot", "boten"), "in de haven", ("lagen",), ("kwamen aan",), ("vertrokken",))),
                было="er {БЫЛИ} {n} {Нn} {ГДЕ}.", прибыль="er {ПРИШЛИ} {k} {Нk}.", убыль="{k} {Нk} {УШЛИ}.",
                носители_вопрос="hoeveel {Нмн} zijn er nu {ГДЕ}?", носители_ответ="{r} {Нr}: {n} {знак} {k} = {r}."),
-    "pl": dict(деятели=(("żaba", "f"), ("kangur", "m"), ("pies", "m"), ("kot", "m")),
+    "pl": dict(деятели=(("królik", "m"), ("koza", "f"), ("kucyk", "m"), ("baran", "m")),
                глаголы=(("skoczył", "skoczyła", "skoczyć", "длина"), ("ważył", "ważyła", "ważyć", "вес")),
                единицы={"длина": (("centymetr", "centymetry", "centymetrów"), ("metr", "metry", "metrów")),
                         "вес": (("kilogram", "kilogramy", "kilogramów"), ("gram", "gramy", "gramów"))}, пр={"длина": "na "},
@@ -107,8 +113,9 @@ _ПАКЕТЫ = pathlib.Path(__file__).resolve().parent / "langpacks"
                сумма_факт="{A} {Гп} {ПР}{a} {ЕДa}, a potem {ПР}{b} {ЕДb}.", сумма_вопрос={"длина": "ile {ЕДмн} {Гп} {A} łącznie?", "вес": "ile {ЕДмн} {Гп} {A} łącznie?"},
                сумма_ответ="{ПР}{s} {ЕДs}: {a} + {b} = {s}.",
                # the verb of the bearers bends with the count form: (few, many)
-               носители=((("ptak", "ptaki", "ptaków"), "na płocie", ("siedziały", "siedziało"), ("przyleciały jeszcze", "przyleciało jeszcze"), ("odleciały", "odleciało")),
-                         (("dziecko", "dzieci", "dzieci"), "w autobusie", ("były", "było"), ("wsiadły jeszcze", "wsiadło jeszcze"), ("wysiadły", "wysiadło")),
+               носители=((("łabędź", "łabędzie", "łabędzi"), "na jeziorze", ("pływały", "pływało"), ("przyleciały jeszcze", "przyleciało jeszcze"), ("odleciały", "odleciało")),
+                         # MĘSKOOSOBOWE: «szli 3 turyści», «szło 5 turystów» — para form czasownika jak u ptaków
+                         (("turysta", "turyści", "turystów"), "na szlaku", ("szli", "szło"), ("dołączyli jeszcze", "dołączyło jeszcze"), ("zawrócili", "zawróciło")),
                          (("łódź", "łodzie", "łodzi"), "w porcie", ("stały", "stało"), ("przypłynęły jeszcze", "przypłynęło jeszcze"), ("odpłynęły", "odpłynęło"))),
                было="{ГДЕ} {БЫЛИ} {n} {Нn}.", прибыль="{ПРИШЛИ} {k} {Нk}.", убыль="{УШЛИ} {k} {Нk}.",
                носители_вопрос="ile {Нмн} jest teraz {ГДЕ}?", носители_ответ="{r} {Нr}: {n} {знак} {k} = {r}."),
@@ -152,6 +159,10 @@ def страница(язык, форма, i):
     я = ЯЗЫКИ[язык]
     if форма in ("мера", "сумма"):
         деятель = i % len(я["деятели"]); г = (i // len(я["деятели"])) % len(я["глаголы"])
+        if форма == "сумма":
+            # СКЛАДЫВАЕТСЯ ДЛИНА, А НЕ ВЕС — закон дома рода (`actionmeasure`), сказанный и здесь
+            длины = [к for к, гл in enumerate(я["глаголы"]) if гл[-1] == "длина"]
+            г = длины[(i // len(я["деятели"])) % len(длины)]
         A = я["деятели"][деятель][0]
         Гп, Гб, вид = _глагол(язык, г, деятель)
         ед = я["единицы"][вид][i % len(я["единицы"][вид])]
@@ -191,9 +202,9 @@ def страница(язык, форма, i):
 #     ЛОЖЬ, СКАЗАННАЯ ВСЕГДА ОДИНАКОВО, НЕ ИМЕЕТ СЕСТРЫ — И МЕРА, ЖИВУЩАЯ СЛИЧЕНИЕМ, МОЛЧИТ
 #     О НЕЙ. Оттого род объявлен ПОИМЁННО и целиком, а не выведен умолчанием.
 РОД_НОСИТЕЛЯ = {
-    "es": {"pájaros": "m", "niños": "m", "barcos": "m"},
-    "it": {"uccelli": "m", "bambini": "m", "barche": "f"},
-    "pt": {"pássaros": "m", "crianças": "f", "barcos": "m"},
+    "es": {"cisnes": "m", "excursionistas": "m", "barcos": "m"},
+    "it": {"cigni": "m", "escursionisti": "m", "barche": "f"},
+    "pt": {"cisnes": "m", "caminhantes": "m", "barcos": "m"},
 }
 def квопрос(язык, мн):
     """Вопросное слово, согласованное с НОСИТЕЛЕМ: «quante barche», но «quanti uccelli»."""
@@ -327,18 +338,41 @@ def _судить_образцом(строка):
     return False, False
 
 
+def подсадки():
+    """ПРЕДСТАВЛЕННОЕ «НЕТ» (М-106), ВЫВЕДЕННОЕ ИЗ ТАБЛИЦ ДОМА (23.09), — [(род порчи, битая строка)].
+
+    Литералы прежних сцен («der Frosch sprang 12 Kilogramm») после переписи сцен стали чужими
+    строками, и суд мира не поймал ни одной — 0 из 4. Порча берётся у страницы, которую дом пишет
+    сейчас: единица не по глаголу, сумма и носители сложены неверно, счётная форма чужого числа."""
+    вон = []
+    n0 = ЧИСЛА_МЕРЫ[0]
+    for язык in ЯЗЫКИ:
+        я = ЯЗЫКИ[язык]
+        с = страница(язык, "мера", 0)
+        ед_длины, ед_веса = я["единицы"]["длина"][0], я["единицы"]["вес"][0]
+        свои = счётная(язык, ед_длины, n0)
+        вон.append(("единица не по глаголу", с, с.replace(свои, счётная(язык, ед_веса, n0))))
+        for род, форма in (("сумма сложена неверно", "сумма"), ("носители сложены неверно", "прибыль")):
+            с2 = страница(язык, форма, 0)
+            вон.append((род, с2, re.sub(r"= (\d+)\.$", lambda м: f"= {int(м.group(1)) + 1}.", с2)))
+        # СЧЁТНАЯ ФОРМА ЧУЖОГО ЧИСЛА — лишь там, где язык её различает: «14 Zentimeter» немецкий
+        # пишет одной формой при всяком числе, и порчи формы у него нет
+        чужая = next((счётная(язык, ед_длины, m) for m in (1, 2, 5, 22)
+                      if счётная(язык, ед_длины, m) != свои), None)
+        if чужая is not None:
+            вон.append(("счётная форма чужого числа", с, с.replace(f"{n0} {свои}", f"{n0} {чужая}")))
+    for род, с, битая in вон:
+        assert битая != с, (род, с)
+    return [(род, битая) for род, _, битая in вон]
+
+
 def _самопроверка():
     for показ, (язык, форма) in ПОКАЗЫ.items():
         assert судить(показ) == (True, True), (язык, форма, показ)
     мутанты = 0
-    for язык in ЯЗЫКИ:
-        с = страница(язык, "сумма", 0)
-        битая = re.sub(r"= (\d+)\.$", lambda м: f"= {int(м.group(1)) + 1}.", с)
-        assert судить(битая) == (True, False), битая
-        с = страница(язык, "прибыль", 0)
-        битая = re.sub(r"= (\d+)\.$", lambda м: f"= {int(м.group(1)) + 1}.", с)
-        assert судить(битая) == (True, False), битая
-        мутанты += 2
+    for род, битая in подсадки():
+        assert судить(битая) == (True, False), (род, битая)
+        мутанты += 1
     for язык in ("de", "fr", "pl"):
         print("  ", страница(язык, "мера", 0)); print("  ", страница(язык, "прибыль", 0))
     print(f"  мутантов поймано: {мутанты}")

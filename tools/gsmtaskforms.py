@@ -7,9 +7,15 @@
 
     МИР, ЧЬИ СТРАНИЦЫ НЕ НАЗВАНЫ РОДОМ, ЧИТАЕТСЯ ТОЛЬКО ТЕМ, КТО ЧИТАЕТ КУЗНИЦУ.
 
-РОД ЗДЕСЬ ЕСТЬ ИМЯ СТРОИТЕЛЯ, и это не лень именования, а факт: всякое семейство есть отдельная
-задача школьной полосы — «сдача», «скидка», «остаток деления» суть разные умения, а не три
+РОД ЗДЕСЬ ЕСТЬ ИМЯ СТРОИТЕЛЯ, и это не лень именования, а факт: всякое семейство есть отдельное
+умение — «сдача», «скидка», «остаток деления» суть разные действия над числами, а не три
 поверхности одного.
+
+СЦЕНЫ ПЕРЕПИСАНЫ 23.09 ПО СЛОВУ ВЛАДЕЛЬЦА: полоса — прибор, а не источник. Семейства родились
+переписью немых конструкций полос (g1, SVAMP), и сцены их были писаны чтением самих задач —
+земля и самолёт, дом и участок, листки на холодильнике, пекарь с булочками. Конструкция и
+формула каждого рода остались; сцена, слова и сетки чисел — свои, выкладка ответа стоит на
+каждой странице, отрицание тоже (подробно — у первого семейства).
 """
 import json
 import pathlib
@@ -98,6 +104,28 @@ def _ру_вопрос(шаг, i):
     return ((шаг + i) // 4) % 2 == 1
 
 
+# СЦЕНЫ ДОМА ПЕРЕПИСАНЫ 23.09 (слово владельца: полоса — прибор, а не источник). Дом был писан
+# чтением задач самих полос — «окружность земли», «листки на холодильнике», «сдача мастеру за
+# шляпу», «журналы за 11/8 цены», «дом и участок», «пекарь продал булочки», «кузнечик прыгнул».
+# Ныне у каждого семейства своя сцена при той же конструкции и той же формуле: пять поверхностей,
+# сетки чисел дома, числа условия в тексте и выкладка ответа на странице. Отрицание несёт свою
+# выкладку («… is not 17: it is 16, because 11 + 5 = 16»): дверь ядра учится на выровненных
+# страницах, и страница без уравнения ей не показ.
+#
+#     КОНСТРУКЦИЯ ОСТАЁТСЯ, СЦЕНА ПОЛОСЫ УХОДИТ: семейство есть действие над числами, а не
+#     история, в которой полоса его однажды рассказала.
+
+
+def _есть(n):
+    """Английская связка при числе: «1 is», «2 are»."""
+    return "is" if abs(n) == 1 else "are"
+
+
+def _ру_ед(n):
+    """Русское единственное при числе: 1, 21, 31 … — но не 11."""
+    return n % 10 == 1 and n % 100 != 11
+
+
 # ---------- 1. total number of ----------
 def п_сумма(шаг, i):
     """ПАРАМЕТРЫ СЕМЕЙСТВА — ОДНА ФУНКЦИЯ на показ, стенд и суд: имена, вещь,
@@ -124,7 +152,8 @@ def сумма(шаг, i):
     if ф == 1:
         return f"{ра} имеет {x} {ру(вещь, x)}, {рб} имеет {y} {ру(вещь, y)}; всего у них {s} {ру(вещь, s)}: {x} + {y} = {s}."
     if ф == 2:
-        return f"{a} has {x} {by_count(x, en)} and {b} has {y} {by_count(y, en)}; the total number of {en} is not {s + 1}: it is {s}."
+        return (f"{a} has {x} {by_count(x, en)} and {b} has {y} {by_count(y, en)}; the total number of {en} is not {s + 1}: "
+                f"it is {s}, because {x} + {y} = {s}.")
     # ОТВЕТ НАЧИНАЕТСЯ ВЕЛИЧИНАМИ ВОПРОСА В ИХ ПОРЯДКЕ (дом пары: величины
     # вопроса суть начальный отрезок величин ответа) и кончается итогом.
     return f"{a} has {x} {by_count(x, en)} and {b} has {y} {by_count(y, en)}. what's the total number of {en}? {x} + {y} = {s}."
@@ -141,25 +170,26 @@ def п_температура(шаг, i):
 def температура(шаг, i):
     п = п_температура(шаг, i)
     t0, d, падение, t1 = п["t0"], п["d"], п["падение"], п["ответ"]
+    знак = "−" if падение else "+"
     ф = (шаг + i) % 4
     if ф == 0:
         return (f"the temperature was {ч(t0)} {by_count(abs(t0), 'degrees')} and {'fell' if падение else 'rose'} by {d} {by_count(d, 'degrees')}; "
-                f"the temperature in degrees is now {ч(t1)}: {ч(t0)} {'−' if падение else '+'} {d} = {ч(t1)}.")
+                f"the temperature in degrees is now {ч(t1)}: {ч(t0)} {знак} {d} = {ч(t1)}.")
     if ф == 1 and _ру_вопрос(шаг, i):
         return (f"если температура была {ч(t0)} {ру('градус', abs(t0))} и {'упала' if падение else 'поднялась'} на {d} {ру('градус', d)}, "
-                f"какова температура теперь? {ч(t0)} {'−' if падение else '+'} {d} = {ч(t1)}.")
+                f"какова температура теперь? {ч(t0)} {знак} {d} = {ч(t1)}.")
     if ф == 1:
         return (f"температура была {ч(t0)} {ру('градус', abs(t0))} и {'упала' if падение else 'поднялась'} на {d} {ру('градус', d)}; "
-                f"теперь температура — {ч(t1)} {ру('градус', abs(t1))}: {ч(t0)} {'−' if падение else '+'} {d} = {ч(t1)}.")
+                f"теперь температура — {ч(t1)} {ру('градус', abs(t1))}: {ч(t0)} {знак} {d} = {ч(t1)}.")
     if ф == 2:
         чуж = t1 + (d if падение else -d)
         return (f"the temperature was {ч(t0)} {by_count(abs(t0), 'degrees')} and {'fell' if падение else 'rose'} by {d} {by_count(d, 'degrees')}; "
-                f"the temperature in degrees is not {ч(чуж)}: it is {ч(t1)}.")
+                f"the temperature in degrees is not {ч(чуж)}: it is {ч(t1)}, because {ч(t0)} {знак} {d} = {ч(t1)}.")
     return (f"the temperature was {ч(t0)} {by_count(abs(t0), 'degrees')} and {'fell' if падение else 'rose'} by {d} {by_count(d, 'degrees')}. "
-            f"what is the temperature in degrees now? {ч(t0)} {'−' if падение else '+'} {d} = {ч(t1)}.")
+            f"what is the temperature in degrees now? {ч(t0)} {знак} {d} = {ч(t1)}.")
 
 
-# ---------- 3. percentage of ----------
+# ---------- 3. percentage of: the orchard and its pear trees ----------
 def п_процент(шаг, i):
     всего = (20, 25, 40, 50, 60, 80, 100)[(шаг + i) % 7]
     доли = [k for k in range(1, всего) if (k * 100) % всего == 0]
@@ -170,23 +200,25 @@ def п_процент(шаг, i):
 def процент(шаг, i):
     п = п_процент(шаг, i)
     всего, часть, p = п["всего"], п["часть"], п["ответ"]
+    груши = "is a pear tree" if часть == 1 else "are pear trees"
     ф = (шаг + i) % 4
     if ф == 0:
-        return (f"the class has {всего} {by_count(всего, 'pupils')} and {часть} of them are girls; the percentage of girls is {p} %: "
+        return (f"the orchard has {всего} {by_count(всего, 'trees')} and {часть} of them {груши}; the percentage of pear trees is {p} %: "
                 f"{часть} ÷ {всего} × 100 = {p}.")
     if ф == 1 and _ру_вопрос(шаг, i):
-        return (f"если в классе {всего} {ру('ученик', всего)}, из них {часть} — {ру('девочка', часть)}, какова доля девочек в процентах? "
-                f"{всего} {ру('ученик', всего)} и {часть} {ру('девочка', часть)}: {часть} ÷ {всего} × 100 = {p}.")
+        return (f"если в саду {всего} {ру('дерево', всего)}, из них {часть} {ру('груша', часть)}, какова доля груш в процентах? "
+                f"{всего} {ру('дерево', всего)} и {часть} {ру('груша', часть)}: {часть} ÷ {всего} × 100 = {p}.")
     if ф == 1:
-        return (f"в классе {всего} {ру('ученик', всего)}, из них {часть} — {ру('девочка', часть)}; доля девочек — {p} %: "
+        return (f"в саду {всего} {ру('дерево', всего)}, из них {часть} {ру('груша', часть)}; доля груш — {p} %: "
                 f"{часть} ÷ {всего} × 100 = {p}.")
     if ф == 2:
-        return (f"the class has {всего} {by_count(всего, 'pupils')} and {часть} of them are girls; the percentage of girls is not {p + 5} %: it is {p} %.")
-    return (f"the class has {всего} {by_count(всего, 'pupils')} and {часть} of them are girls. what percentage of the class are girls? "
-            f"{всего} {by_count(всего, 'pupils')} and {часть} {by_count(часть, 'girls')}: {часть} ÷ {всего} × 100 = {p} %.")
+        return (f"the orchard has {всего} {by_count(всего, 'trees')} and {часть} of them {груши}; the percentage of pear trees is not {p + 5} %: "
+                f"it is {p} %, because {часть} ÷ {всего} × 100 = {p}.")
+    return (f"the orchard has {всего} {by_count(всего, 'trees')} and {часть} of them {груши}. what percentage of the trees are pear trees? "
+            f"{всего} {by_count(всего, 'trees')} and {часть} {by_count(часть, 'pear trees')}: {часть} ÷ {всего} × 100 = {p} %.")
 
 
-# ---------- 4. weight in pounds ----------
+# ---------- 4. weight in pounds: a bag of apples ----------
 def п_фунты(шаг, i):
     ф_ = 1 + (шаг * 3 + i) % 9
     return dict(унц=ф_ * 16, ответ=ф_)
@@ -197,18 +229,20 @@ def фунты(шаг, i):
     унц, ф_ = п["унц"], п["ответ"]
     ф = (шаг + i) % 4
     if ф == 0:
-        return f"the parcel weighs {унц} {by_count(унц, 'ounces')} and a pound is 16 ounces; the weight in pounds is {ф_}: {унц} ÷ 16 = {ф_}."
+        return f"a bag of apples weighs {унц} {by_count(унц, 'ounces')} and a pound is 16 ounces; the weight in pounds is {ф_}: {унц} ÷ 16 = {ф_}."
     if ф == 1 and _ру_вопрос(шаг, i):
-        return f"если посылка весит {унц} {ру('унция', унц)}, а в фунте 16 унций, каков вес в фунтах? {унц} ÷ 16 = {ф_}."
+        return f"если мешок яблок весит {унц} {ру('унция', унц)}, а в фунте 16 унций, каков вес в фунтах? {унц} ÷ 16 = {ф_}."
     if ф == 1:
-        return (f"посылка весит {унц} {ру('унция', унц)}, а в фунте 16 унций; вес в фунтах — {ф_} {ру('фунт', ф_)}: "
+        return (f"мешок яблок весит {унц} {ру('унция', унц)}, а в фунте 16 унций; вес в фунтах — {ф_} {ру('фунт', ф_)}: "
                 f"{унц} ÷ 16 = {ф_}.")
     if ф == 2:
-        return f"the parcel weighs {унц} {by_count(унц, 'ounces')} and a pound is 16 ounces; the weight in pounds is not {ф_ + 1}: it is {ф_}."
-    return f"the parcel weighs {унц} {by_count(унц, 'ounces')} and a pound is 16 ounces. what is the weight in pounds? {унц} {by_count(унц, 'ounces')}: {унц} ÷ 16 = {ф_}."
+        return (f"a bag of apples weighs {унц} {by_count(унц, 'ounces')} and a pound is 16 ounces; the weight in pounds is not {ф_ + 1}: "
+                f"it is {ф_}, because {унц} ÷ 16 = {ф_}.")
+    return (f"a bag of apples weighs {унц} {by_count(унц, 'ounces')} and a pound is 16 ounces. what is the weight in pounds? "
+            f"{унц} {by_count(унц, 'ounces')}: {унц} ÷ 16 = {ф_}.")
 
 
-# ---------- 5. water depth ----------
+# ---------- 5. depth from volume: sand in a pit ----------
 def п_глубина(шаг, i):
     w, l = 2 + (шаг + i) % 5, 2 + (шаг * 2 + i * 3) % 6
     h = 1 + (шаг * 5 + i) % 6
@@ -218,24 +252,24 @@ def п_глубина(шаг, i):
 def глубина(шаг, i):
     п = п_глубина(шаг, i)
     w, l, v, h = п["w"], п["l"], п["v"], п["ответ"]
+    яма = (f"the pit is {w} {by_count(w, 'meters')} wide and {l} {by_count(l, 'meters')} long "
+           f"and holds {v} {by_count(v, 'cubic meters')} of sand")
     ф = (шаг + i) % 4
     if ф == 0:
-        return (f"the tank is {w} {by_count(w, 'feet')} wide and {l} {by_count(l, 'feet')} long and holds {v} cubic feet of water; "
-                f"the tank's water depth is {h} {by_count(h, 'feet')}: {v} ÷ ({w} × {l}) = {h}.")
+        return f"{яма}; the sand in the pit is {h} {by_count(h, 'meters')} deep: {v} ÷ ({w} × {l}) = {h}."
     if ф == 1 and _ру_вопрос(шаг, i):
-        return (f"если бак шириной {w} {ру('фут', w)} и длиной {l} {ру('фут', l)} вмещает {v} кубических футов воды, "
-                f"какова глубина воды в баке? {w} на {l} при {v}: {v} ÷ ({w} × {l}) = {h}.")
+        return (f"если яма шириной {w} {ру('метр', w)} и длиной {l} {ру('метр', l)} вмещает {v} {ру('кубический метр', v)} песка, "
+                f"какой толщины слой песка в яме? {w} на {l} при {v}: {v} ÷ ({w} × {l}) = {h}.")
     if ф == 1:
-        return (f"бак шириной {w} {ру('фут', w)} и длиной {l} {ру('фут', l)} вмещает {v} кубических футов воды; "
-                f"глубина воды в баке — {h} {ру('фут', h)}: {v} ÷ ({w} × {l}) = {h}.")
+        return (f"яма шириной {w} {ру('метр', w)} и длиной {l} {ру('метр', l)} вмещает {v} {ру('кубический метр', v)} песка; "
+                f"слой песка в яме — {h} {ру('метр', h)}: {v} ÷ ({w} × {l}) = {h}.")
     if ф == 2:
-        return (f"the tank is {w} {by_count(w, 'feet')} wide and {l} {by_count(l, 'feet')} long and holds {v} cubic feet of water; "
-                f"the tank's water depth is not {h + 1} {by_count(h + 1, 'feet')}: it is {h} {by_count(h, 'feet')}.")
-    return (f"the tank is {w} {by_count(w, 'feet')} wide and {l} {by_count(l, 'feet')} long and holds {v} cubic feet of water. "
-            f"what is the tank's water depth? {w} by {l} holding {v}: {v} ÷ ({w} × {l}) = {h} {by_count(h, 'feet')}.")
+        return (f"{яма}; the sand in the pit is not {h + 1} {by_count(h + 1, 'meters')} deep: "
+                f"it is {h} {by_count(h, 'meters')} deep, because {v} ÷ ({w} × {l}) = {h}.")
+    return f"{яма}. how deep is the sand in the pit? {w} by {l} holding {v}: {v} ÷ ({w} × {l}) = {h} {by_count(h, 'meters')}."
 
 
-# ---------- 6. probability expressed as ----------
+# ---------- 6. probability as a fraction: buttons in a jar ----------
 def п_вероятность(шаг, i):
     r, b = 1 + (шаг + i) % 6, 1 + (шаг * 3 + i * 2) % 7
     return dict(r=r, b=b, n=r + b, ответ=f"{r}/{r + b}")
@@ -244,27 +278,27 @@ def п_вероятность(шаг, i):
 def вероятность(шаг, i):
     п = п_вероятность(шаг, i)
     r, b, n = п["r"], п["b"], п["n"]
+    банка = f"a jar holds {r} black {by_count(r, 'buttons')} and {b} white {by_count(b, 'buttons')}"
     ф = (шаг + i) % 4
     if ф == 0:
-        return (f"a bag holds {r} red {by_count(r, 'marbles')} and {b} blue {by_count(b, 'marbles')}; "
-                f"the probability of drawing a red marble, expressed as a fraction, is {r}/{n}: {r} red out of {n}.")
+        return (f"{банка}; the probability of taking a black button, written as a fraction, is {r}/{n}: "
+                f"{r} + {b} = {n} buttons, {r} of them black.")
     if ф == 1 and _ру_вопрос(шаг, i):
-        return (f"если в мешке {r} {ру('шар', r)} красных и {b} {ру('шар', b)} синих, какова вероятность вынуть красный шар, "
-                f"выраженная дробью? {r} красных и {b} синих: {r}/{n}.")
+        return (f"если в банке чёрных пуговиц {r}, а белых {b}, какова вероятность взять чёрную пуговицу, "
+                f"записанная дробью? {r} + {b} = {n}: {r}/{n}.")
     if ф == 1:
-        return (f"в мешке {r} {ру('шар', r)} красных и {b} {ру('шар', b)} синих; "
-                f"вероятность вынуть красный шар, выраженная дробью, — {r}/{n}: {r} красных из {n}.")
+        return (f"в банке чёрных пуговиц {r}, а белых {b}; вероятность взять чёрную пуговицу, записанная дробью, — {r}/{n}: "
+                f"{r} + {b} = {n}, из них чёрных {r}.")
     if ф == 2:
-        # ЧУЖАЯ ДОЛЯ — ЧИСЛИТЕЛЕМ СОСЕДА, а не синих: при r = b синих столько
+        # ЧУЖАЯ ДОЛЯ — ЧИСЛИТЕЛЕМ СОСЕДА, а не белых: при r = b белых столько
         # же, и «не b/n» было бы ложью о верной дроби.
         чуж = r + 1 if r + 1 < n else r - 1
-        return (f"a bag holds {r} red {by_count(r, 'marbles')} and {b} blue {by_count(b, 'marbles')}; "
-                f"the probability of drawing a red marble, expressed as a fraction, is not {чуж}/{n}: it is {r}/{n}.")
-    return (f"a bag holds {r} red {by_count(r, 'marbles')} and {b} blue {by_count(b, 'marbles')}. "
-            f"what is the probability of drawing a red marble, expressed as a fraction? {r} red and {b} blue make {n}: {r}/{n}.")
+        return (f"{банка}; the probability of taking a black button, written as a fraction, is not {чуж}/{n}: "
+                f"it is {r}/{n}, because {r} + {b} = {n}.")
+    return f"{банка}. what is the probability of taking a black button, written as a fraction? {r} + {b} = {n}: {r}/{n}."
 
 
-# ---------- 7. # quarters of ----------
+# ---------- 7. # quarters of: pages of a book ----------
 def п_четверти(шаг, i):
     k = (1, 2, 3)[(шаг + i) % 3]
     q = 3 + (шаг * 3 + i) % 9
@@ -278,17 +312,19 @@ def четверти(шаг, i):
     k, часть, целое, слово, ру_слово = п["k"], п["часть"], п["ответ"], п["слово"], п["ру_слово"]
     ф = (шаг + i) % 4
     if ф == 0:
-        return f"if {часть} is {слово} of the class, the class has {целое} {by_count(целое, 'pupils')}: {часть} ÷ {k} × 4 = {целое}."
+        return f"if {часть} pages are {слово} of the book, the book has {целое} pages: {часть} ÷ {k} × 4 = {целое}."
     if ф == 1 and _ру_вопрос(шаг, i):
-        return f"если {часть} — это {ру_слово} класса, сколько учеников в классе? {часть} ÷ {k} × 4 = {целое}."
+        return f"если {часть} {ру('страница', часть)} — это {ру_слово} книги, сколько страниц в книге? {часть} ÷ {k} × 4 = {целое}."
     if ф == 1:
-        return f"если {часть} — это {ру_слово} класса, в классе {целое} {ру('ученик', целое)}: {часть} ÷ {k} × 4 = {целое}."
+        return (f"если {часть} {ру('страница', часть)} — это {ру_слово} книги, в книге {целое} {ру('страница', целое)}: "
+                f"{часть} ÷ {k} × 4 = {целое}.")
     if ф == 2:
-        return f"if {часть} is {слово} of the class, the class does not have {целое + 4} {by_count(целое + 4, 'pupils')}: it has {целое}."
-    return f"if {часть} is {слово} of the class, how many pupils does the class have? {часть} ÷ {k} × 4 = {целое}."
+        return (f"if {часть} pages are {слово} of the book, the book does not have {целое + 4} pages: "
+                f"it has {целое}, because {часть} ÷ {k} × 4 = {целое}.")
+    return f"if {часть} pages are {слово} of the book, how many pages does the book have? {часть} ÷ {k} × 4 = {целое}."
 
 
-# ---------- 8. originally / missing / people on ----------
+# ---------- 8. originally / missing / at the party now ----------
 def п_дополнение(шаг, i):
     было = 10 + (шаг * 7 + i * 3) % 40
     ушло = 1 + (шаг * 3 + i) % 9
@@ -303,37 +339,60 @@ def дополнение(шаг, i):
     осталось = было - ушло
     ф = (шаг + i) % 4
     if род == 0:
+        # утки на пруду: исходное и улетевшие
+        уток = f"{осталось} {by_count(осталось, 'ducks')} {'remains' if осталось == 1 else 'remain'}"
+        улетели = "улетела" if _ру_ед(ушло) else "улетели"
         if ф == 0:
-            return f"there were originally {было} {by_count(было, 'cars')} in the lot and {ушло} drove away; {осталось} {by_count(осталось, 'cars')} remain: {было} − {ушло} = {осталось}."
+            return f"there were originally {было} ducks on the pond and {ушло} flew away; {уток}: {было} − {ушло} = {осталось}."
         if ф == 1 and _ру_вопрос(шаг, i):
-            return f"если на стоянке изначально было {было} {ру('машина', было)}, а {ушло} уехали, сколько машин осталось? {было} − {ушло} = {осталось}."
+            return (f"если на пруду изначально было {было} {ру('утка', было)}, а {ушло} {улетели}, сколько уток осталось? "
+                    f"{было} − {ушло} = {осталось}.")
         if ф == 1:
-            return f"на стоянке изначально было {было} {ру('машина', было)}, {ушло} уехали; осталось {осталось} {ру('машина', осталось)}: {было} − {ушло} = {осталось}."
+            return (f"на пруду изначально было {было} {ру('утка', было)}, {ушло} {улетели}; осталось {осталось} {ру('утка', осталось)}: "
+                    f"{было} − {ушло} = {осталось}.")
         if ф == 2:
-            return f"there were originally {было} {by_count(было, 'cars')} in the lot and {ушло} drove away; {осталось + 1} {by_count(осталось + 1, 'cars')} do not remain: {осталось} remain."
-        return f"if there were originally {было} {by_count(было, 'cars')} in the lot and {ушло} drove away, how many cars remain? {было} − {ушло} = {осталось}."
+            return (f"there were originally {было} ducks on the pond and {ушло} flew away; {осталось + 1} ducks do not remain: "
+                    f"{осталось} {'remains' if осталось == 1 else 'remain'}, because {было} − {ушло} = {осталось}.")
+        return f"if there were originally {было} ducks on the pond and {ушло} flew away, how many ducks remain? {было} − {ушло} = {осталось}."
     if род == 1:
+        # альбом марок: мест и вклеенных, недостающие
+        вклеено = f"{осталось} {_есть(осталось)} glued in"
+        ру_вклеено = "вклеена" if _ру_ед(осталось) else "вклеено"
         if ф == 0:
-            return f"the set has {было} {by_count(было, 'pieces')} and {осталось} are in the box; {ушло} {by_count(ушло, 'pieces')} {'are' if ушло != 1 else 'is'} missing: {было} − {осталось} = {ушло}."
+            return (f"the album has room for {было} stamps and {вклеено}; {ушло} {by_count(ушло, 'stamps')} {_есть(ушло)} missing: "
+                    f"{было} − {осталось} = {ушло}.")
+        # ЧИСЛО МЕСТ СТОИ́Т ПОСЛЕ ИМЕНИ («мест для марок в альбоме 21»): «место для 21 марки» верно
+        # по-русски, но суд счёта (`langcount`) предлога не читает и ждёт счётной формы — страница
+        # строится так, чтобы согласования при этом числе не было вовсе.
         if ф == 1 and _ру_вопрос(шаг, i):
-            return f"если в наборе {было} {ру('деталь', было)}, а в коробке {осталось} {ру('деталь', осталось)}, сколько деталей не хватает? {было} − {осталось} = {ушло}."
+            return (f"если мест для марок в альбоме {было}, а {ру_вклеено} {осталось} {ру('марка', осталось)}, "
+                    f"сколько марок не хватает? {было} − {осталось} = {ушло}.")
         if ф == 1:
-            return f"в наборе {было} {ру('деталь', было)}, в коробке {осталось} {ру('деталь', осталось)}; не хватает {ушло} {ру('деталь', ушло)}: {было} − {осталось} = {ушло}."
+            return (f"мест для марок в альбоме {было}, {ру_вклеено} {осталось} {ру('марка', осталось)}; "
+                    f"не хватает {ушло}: {было} − {осталось} = {ушло}.")
         if ф == 2:
-            return f"the set has {было} {by_count(было, 'pieces')} and {осталось} are in the box; {ушло + 1} {by_count(ушло + 1, 'pieces')} are not missing: {ушло} {'are' if ушло != 1 else 'is'} missing."
-        return f"the set has {было} {by_count(было, 'pieces')} and {осталось} are in the box. how many pieces are missing? {было} − {осталось} = {ушло}."
+            return (f"the album has room for {было} stamps and {вклеено}; {ушло + 1} stamps are not missing: "
+                    f"{ушло} {_есть(ушло)} missing, because {было} − {осталось} = {ушло}.")
+        return f"the album has room for {было} stamps and {вклеено}. how many stamps are missing? {было} − {осталось} = {ушло}."
+    # гости на празднике: были и ушедшие домой
+    ушли = "ушёл" if _ру_ед(ушло) else "ушли"
     if ф == 0:
-        return f"there were {было} {by_count(было, 'people')} on the bus and {ушло} got off; {осталось} {by_count(осталось, 'people')} are on the bus now: {было} − {ушло} = {осталось}."
+        return (f"there were {было} guests at the party and {ушло} went home; {осталось} {by_count(осталось, 'guests')} {_есть(осталось)} "
+                f"at the party now: {было} − {ушло} = {осталось}.")
     if ф == 1 and _ру_вопрос(шаг, i):
-        return f"если в автобусе было {было} {ру('человек', было)}, а {ушло} вышли, сколько человек в автобусе теперь? {было} − {ушло} = {осталось}."
+        return (f"если на празднике было {было} {ру('гость', было)}, а {ушло} {ушли} домой, сколько гостей на празднике теперь? "
+                f"{было} − {ушло} = {осталось}.")
     if ф == 1:
-        return f"в автобусе было {было} {ру('человек', было)}, {ушло} вышли; теперь в автобусе {осталось} {ру('человек', осталось)}: {было} − {ушло} = {осталось}."
+        return (f"на празднике было {было} {ру('гость', было)}, {ушло} {ушли} домой; теперь на празднике {осталось} {ру('гость', осталось)}: "
+                f"{было} − {ушло} = {осталось}.")
     if ф == 2:
-        return f"there were {было} {by_count(было, 'people')} on the bus and {ушло} got off; the number of people on the bus now is not {осталось + 1}: it is {осталось}."
-    return f"if there were {было} {by_count(было, 'people')} on the bus and {ушло} got off, how many people are on the bus now? {было} − {ушло} = {осталось}."
+        return (f"there were {было} guests at the party and {ушло} went home; the number of guests at the party now is not {осталось + 1}: "
+                f"it is {осталось}, because {было} − {ушло} = {осталось}.")
+    return (f"if there were {было} guests at the party and {ушло} went home, how many guests are at the party now? "
+            f"{было} − {ушло} = {осталось}.")
 
 
-# ---------- 9. whole population lives in ----------
+# ---------- 9. a fraction of the whole: books of a library ----------
 def п_население(шаг, i):
     доля = (2, 4, 5, 10)[(шаг + i) % 4]
     часть = 100 * (2 + (шаг * 3 + i) % 9)
@@ -347,17 +406,22 @@ def население(шаг, i):
     всего, доля, часть, слово, ру_слово = п["всего"], п["доля"], п["ответ"], п["слово"], п["ру_слово"]
     ф = (шаг + i) % 4
     if ф == 0:
-        return f"the town has {всего} {by_count(всего, 'people')} and {слово} of the whole population lives in the centre; {часть} {by_count(часть, 'people')} live in the centre: {всего} ÷ {доля} = {часть}."
+        return (f"the library has {всего} books and {слово} of all the books stand in the reading room; "
+                f"{часть} books stand in the reading room: {всего} ÷ {доля} = {часть}.")
     if ф == 1 and _ру_вопрос(шаг, i):
-        return f"если в городе {всего} {ру('человек', всего)}, и {ру_слово} всего населения живёт в центре, сколько человек живёт в центре? {всего} ÷ {доля} = {часть}."
+        return (f"если в библиотеке {всего} {ру('книга', всего)}, и {ру_слово} всех книг стоит в читальном зале, "
+                f"сколько книг стоит в читальном зале? {всего} ÷ {доля} = {часть}.")
     if ф == 1:
-        return f"в городе {всего} {ру('человек', всего)}, и {ру_слово} всего населения живёт в центре; в центре живёт {часть} {ру('человек', часть)}: {всего} ÷ {доля} = {часть}."
+        return (f"в библиотеке {всего} {ру('книга', всего)}, и {ру_слово} всех книг стоит в читальном зале; "
+                f"в читальном зале стоит {часть} {ру('книга', часть)}: {всего} ÷ {доля} = {часть}.")
     if ф == 2:
-        return f"the town has {всего} {by_count(всего, 'people')} and {слово} of the whole population lives in the centre; the number living in the centre is not {часть + 100}: it is {часть}."
-    return f"if the town has {всего} {by_count(всего, 'people')} and {слово} of the whole population lives in the centre, how many people live in the centre? {всего} {by_count(всего, 'people')}: {всего} ÷ {доля} = {часть}."
+        return (f"the library has {всего} books and {слово} of all the books stand in the reading room; "
+                f"the number of books in the reading room is not {часть + 100}: it is {часть}, because {всего} ÷ {доля} = {часть}.")
+    return (f"if the library has {всего} books and {слово} of all the books stand in the reading room, "
+            f"how many books stand in the reading room? {всего} books: {всего} ÷ {доля} = {часть}.")
 
 
-# ---------- 10. number of boys on ----------
+# ---------- 10. the number of … on …: books and magazines on a shelf ----------
 def п_команда(шаг, i):
     м, д = 3 + (шаг * 3 + i) % 10, 2 + (шаг + i * 5) % 9
     return dict(м=м, д=д, ответ=м + д)
@@ -368,17 +432,18 @@ def команда(шаг, i):
     м, д, s = п["м"], п["д"], п["ответ"]
     ф = (шаг + i) % 4
     if ф == 0:
-        return f"the number of boys on the team is {м} and the number of girls is {д}; the team has {s} {by_count(s, 'players')}: {м} + {д} = {s}."
+        return f"the number of books on the shelf is {м} and the number of magazines is {д}; the shelf holds {s} items: {м} + {д} = {s}."
     if ф == 1 and _ру_вопрос(шаг, i):
-        return f"если в команде {м} {ру('мальчик', м)} и {д} {ру('девочка', д)}, сколько человек в команде? {м} + {д} = {s}."
+        return f"если на полке {м} {ру('книга', м)} и {д} {ру('журнал', д)}, сколько всего предметов на полке? {м} + {д} = {s}."
     if ф == 1:
-        return f"в команде {м} {ру('мальчик', м)} и {д} {ру('девочка', д)}; всего в команде {s} {ру('человек', s)}: {м} + {д} = {s}."
+        return f"на полке {м} {ру('книга', м)} и {д} {ру('журнал', д)}; всего на полке {s} {ру('предмет', s)}: {м} + {д} = {s}."
     if ф == 2:
-        return f"the number of boys on the team is {м} and the number of girls is {д}; the team does not have {s + 1} {by_count(s + 1, 'players')}: it has {s}."
-    return f"if the number of boys on the team is {м} and the number of girls is {д}, how many players does the team have? {м} + {д} = {s}."
+        return (f"the number of books on the shelf is {м} and the number of magazines is {д}; the shelf does not hold {s + 1} items: "
+                f"it holds {s}, because {м} + {д} = {s}.")
+    return f"if the number of books on the shelf is {м} and the number of magazines is {д}, how many items does the shelf hold? {м} + {д} = {s}."
 
 
-# ---------- 11. three times as much ----------
+# ---------- 11. three times as much: the tractor and the barn ----------
 def п_кратно(шаг, i):
     k = (2, 3, 4)[(шаг + i) % 3]
     цена = 1000 * (5 + (шаг * 7 + i * 3) % 26)
@@ -388,20 +453,25 @@ def п_кратно(шаг, i):
 
 def кратно(шаг, i):
     п = п_кратно(шаг, i)
-    k, цена, дом, слово, ру_ = п["k"], п["цена"], п["ответ"], п["слово"], п["ру_слово"]
+    k, цена, амбар, слово, ру_ = п["k"], п["цена"], п["ответ"], п["слово"], п["ру_слово"]
     ф = (шаг + i) % 4
     if ф == 0:
-        return f"the car cost {цена} {by_count(цена, 'dollars')} and the house cost {слово} as much as the car; the house cost {дом} {by_count(дом, 'dollars')}: {цена} × {k} = {дом}."
+        return (f"the tractor cost {цена} {by_count(цена, 'dollars')} and the barn cost {слово} as much as the tractor; "
+                f"the barn cost {амбар} {by_count(амбар, 'dollars')}: {цена} × {k} = {амбар}.")
     if ф == 1 and _ру_вопрос(шаг, i):
-        return f"если машина стоила {цена} {ру('доллар', цена)}, а дом стоил {ру_} дороже машины, сколько стоил дом? {цена} {ру('доллар', цена)}: {цена} × {k} = {дом}."
+        return (f"если трактор стоил {цена} {ру('доллар', цена)}, а амбар стоил {ру_} дороже трактора, сколько стоил амбар? "
+                f"{цена} {ру('доллар', цена)}: {цена} × {k} = {амбар}.")
     if ф == 1:
-        return f"машина стоила {цена} {ру('доллар', цена)}, а дом стоил {ру_} дороже машины; дом стоил {дом} {ру('доллар', дом)}: {цена} × {k} = {дом}."
+        return (f"трактор стоил {цена} {ру('доллар', цена)}, а амбар стоил {ру_} дороже трактора; "
+                f"амбар стоил {амбар} {ру('доллар', амбар)}: {цена} × {k} = {амбар}.")
     if ф == 2:
-        return f"the car cost {цена} {by_count(цена, 'dollars')} and the house cost {слово} as much as the car; the house did not cost {дом + цена} {by_count(дом + цена, 'dollars')}: it cost {дом}."
-    return f"if the car cost {цена} {by_count(цена, 'dollars')} and the house cost {слово} as much as the car, how much did the house cost? {цена} × {k} = {дом} {by_count(дом, 'dollars')}."
+        return (f"the tractor cost {цена} {by_count(цена, 'dollars')} and the barn cost {слово} as much as the tractor; "
+                f"the barn did not cost {амбар + цена} {by_count(амбар + цена, 'dollars')}: it cost {амбар}, because {цена} × {k} = {амбар}.")
+    return (f"if the tractor cost {цена} {by_count(цена, 'dollars')} and the barn cost {слово} as much as the tractor, "
+            f"how much did the barn cost? {цена} × {k} = {амбар} {by_count(амбар, 'dollars')}.")
 
 
-# ---------- 12. final design ----------
+# ---------- 12. doubled, then reduced: an order of boxes ----------
 def п_проект(шаг, i):
     старт = 4 + (шаг * 3 + i) % 12
     k = 2 + (шаг + i) % 2
@@ -416,39 +486,50 @@ def проект(шаг, i):
     ру_ = "удвоили" if k == 2 else "утроили"
     ф = (шаг + i) % 4
     if ф == 0:
-        return f"the design started with {старт} panels, was {слово} and then reduced by {минус}; the final design has {итог} panels: {старт} × {k} − {минус} = {итог}."
+        return (f"the order started with {старт} boxes, was {слово} and then reduced by {минус}; "
+                f"the final order has {итог} boxes: {старт} × {k} − {минус} = {итог}.")
     if ф == 1 and _ру_вопрос(шаг, i):
-        return f"если проект начался с {старт} {ру_косв('панель', старт)}, его {ру_} и потом убавили на {минус}, сколько панелей в итоговом проекте? {старт} × {k} − {минус} = {итог}."
+        return (f"если заказ начинался с {старт} {ру_косв('коробка', старт)}, его {ру_} и потом убавили на {минус}, "
+                f"сколько коробок в итоговом заказе? {старт} × {k} − {минус} = {итог}.")
     if ф == 1:
-        return f"проект начался с {старт} {ру_косв('панель', старт)}, его {ру_} и потом убавили на {минус}; в итоговом проекте {итог} {ру('панель', итог)}: {старт} × {k} − {минус} = {итог}."
+        return (f"заказ начинался с {старт} {ру_косв('коробка', старт)}, его {ру_} и потом убавили на {минус}; "
+                f"в итоговом заказе {итог} {ру('коробка', итог)}: {старт} × {k} − {минус} = {итог}.")
     if ф == 2:
-        return f"the design started with {старт} panels, was {слово} and then reduced by {минус}; the final design does not have {итог + минус} panels: it has {итог}."
-    return f"if the design started with {старт} panels, was {слово} and then reduced by {минус}, how many panels does the final design have? {старт} × {k} − {минус} = {итог}."
+        return (f"the order started with {старт} boxes, was {слово} and then reduced by {минус}; "
+                f"the final order does not have {итог + минус} boxes: it has {итог}, because {старт} × {k} − {минус} = {итог}.")
+    return (f"if the order started with {старт} boxes, was {слово} and then reduced by {минус}, "
+            f"how many boxes does the final order have? {старт} × {k} − {минус} = {итог}.")
 
 
-# ---------- 13. circumference of the earth ----------
+# ---------- 13. a loop at a speed: the road around the lake ----------
+# СЕТКА СВОЯ, И ВЕЛИЧИНЫ ВЕРНЫ СЦЕНЕ: велосипедист едет 8…20 километров в час два…девять часов.
 def п_окружность(шаг, i):
-    скорость = 100 * (4 + (шаг * 3 + i) % 9)
-    часы = 10 + (шаг + i * 7) % 40
+    скорость = 8 + (шаг * 3 + i) % 13
+    часы = 2 + (шаг + i * 7) % 8
     return dict(скорость=скорость, ответ=часы, длина=скорость * часы)
 
 
 def окружность(шаг, i):
     п = п_окружность(шаг, i)
     L, v, t = п["длина"], п["скорость"], п["ответ"]
+    дорога = (f"the road around the lake is {L} {by_count(L, 'kilometers')} long and the cyclist rides "
+              f"{v} {by_count(v, 'kilometers')} per hour")
     ф = (шаг + i) % 4
     if ф == 0:
-        return f"the circumference of the earth is taken as {L} {by_count(L, 'miles')} and the plane flies {v} {by_count(v, 'miles')} per hour; the flight around the earth takes {t} {by_count(t, 'hours')}: {L} ÷ {v} = {t}."
+        return f"{дорога}; the ride around the lake takes {t} {by_count(t, 'hours')}: {L} ÷ {v} = {t}."
     if ф == 1 and _ру_вопрос(шаг, i):
-        return f"если длину окружности земли берут за {L} {ру('миля', L)}, а самолёт летит {v} {ру('миля', v)} в час, сколько часов занимает полёт вокруг земли? {L} ÷ {v} = {t}."
+        return (f"если дорога вокруг озера длиной {L} {ру('километр', L)}, а велосипедист едет {v} {ру('километр', v)} в час, "
+                f"сколько часов занимает поездка вокруг озера? {L} ÷ {v} = {t}.")
     if ф == 1:
-        return f"длину окружности земли берут за {L} {ру('миля', L)}, самолёт летит {v} {ру('миля', v)} в час; полёт вокруг земли занимает {t} {ру('час', t)}: {L} ÷ {v} = {t}."
+        return (f"дорога вокруг озера длиной {L} {ру('километр', L)}, велосипедист едет {v} {ру('километр', v)} в час; "
+                f"поездка вокруг озера занимает {t} {ру('час', t)}: {L} ÷ {v} = {t}.")
     if ф == 2:
-        return f"the circumference of the earth is taken as {L} {by_count(L, 'miles')} and the plane flies {v} {by_count(v, 'miles')} per hour; the flight around the earth does not take {t + 1} {by_count(t + 1, 'hours')}: it takes {t}."
-    return f"if the circumference of the earth is {L} {by_count(L, 'miles')} and the plane flies {v} {by_count(v, 'miles')} per hour, how many hours does the flight around the earth take? {L} ÷ {v} = {t}."
+        return (f"{дорога}; the ride around the lake does not take {t + 1} {by_count(t + 1, 'hours')}: "
+                f"it takes {t}, because {L} ÷ {v} = {t}.")
+    return f"if {дорога}, how many hours does the ride around the lake take? {L} ÷ {v} = {t}."
 
 
-# ---------- 14. ropes: total and average ----------
+# ---------- 14. total and average: the height of poles ----------
 def п_верёвки(шаг, i):
     n = 2 + (шаг + i) % 4
     среднее = 3 + (шаг * 3 + i) % 12
@@ -460,17 +541,20 @@ def верёвки(шаг, i):
     n, a, всего = п["n"], п["ответ"], п["всего"]
     ф = (шаг + i) % 4
     if ф == 0:
-        return f"the {n} ropes had a total length of {всего} {by_count(всего, 'meters')}; the average rope is {a} {by_count(a, 'meters')} long: {всего} ÷ {n} = {a}."
+        return f"the {n} poles had a total height of {всего} {by_count(всего, 'meters')}; the average pole is {a} {by_count(a, 'meters')} tall: {всего} ÷ {n} = {a}."
     if ф == 1 and _ру_вопрос(шаг, i):
-        return f"если общая длина верёвок {всего} {ру('метр', всего)}, а верёвок {n}, какова длина средней верёвки? {всего} ÷ {n} = {a}."
+        return f"если общая высота столбов {всего} {ру('метр', всего)}, а столбов {n}, какова высота среднего столба? {всего} ÷ {n} = {a}."
     if ф == 1:
-        return f"{n} {ру('верёвка', n)} имели общую длину {всего} {ру('метр', всего)}; средняя верёвка длиной {a} {ру('метр', a)}: {всего} ÷ {n} = {a}."
+        return (f"{n} {ру('столб', n)} имели общую высоту {всего} {ру('метр', всего)}; средний столб высотой {a} {ру('метр', a)}: "
+                f"{всего} ÷ {n} = {a}.")
     if ф == 2:
-        return f"the {n} ropes had a total length of {всего} {by_count(всего, 'meters')}; the average rope is not {a + 1} {by_count(a + 1, 'meters')} long: it is {a} {by_count(a, 'meters')}."
-    return f"if the total length of the ropes is {всего} {by_count(всего, 'meters')} and there are {n} ropes, how long is the average rope? {всего} ÷ {n} = {a} {by_count(a, 'meters')}."
+        return (f"the {n} poles had a total height of {всего} {by_count(всего, 'meters')}; the average pole is not {a + 1} {by_count(a + 1, 'meters')} tall: "
+                f"it is {a} {by_count(a, 'meters')}, because {всего} ÷ {n} = {a}.")
+    return (f"if the total height of the poles is {всего} {by_count(всего, 'meters')} and there are {n} poles, "
+            f"how tall is the average pole? {всего} ÷ {n} = {a} {by_count(a, 'meters')}.")
 
 
-# ---------- 15. together A, B and C ----------
+# ---------- 15. together A, B and C: shells ----------
 def п_трое(шаг, i):
     a = 3 + (шаг * 3 + i) % 10
     больше = 2 + (шаг + i * 3) % 6
@@ -480,24 +564,30 @@ def п_трое(шаг, i):
 
 def трое(шаг, i):
     п = п_трое(шаг, i)
-    a, б, k, b, c, s = п["a"], п["больше"], п["k"], п["b"], п["c"], п["ответ"]
+    a, б, k, s = п["a"], п["больше"], п["k"], п["ответ"]
     x, y, z = ИМЕНА_EN[(шаг + i) % len(ИМЕНА_EN)], ИМЕНА_EN[(шаг + i + 1) % len(ИМЕНА_EN)], ИМЕНА_EN[(шаг + i + 2) % len(ИМЕНА_EN)]
     р_x, р_y, р_z = ИМЕНА_RU[(шаг + i) % len(ИМЕНА_RU)], ИМЕНА_RU[(шаг + i + 1) % len(ИМЕНА_RU)], ИМЕНА_RU[(шаг + i + 2) % len(ИМЕНА_RU)]
     слово = "twice" if k == 2 else "three times"
     ру_ = "вдвое" if k == 2 else "втрое"
+    выкладка = f"{a} + ({a} + {б}) + {k} × {a} = {s}"
     ф = (шаг + i) % 4
     if ф == 0:
-        return f"{x} has {a} {by_count(a, 'books')}, {y} has {б} more books than {x}, and {z} has {слово} as many books as {x}; together {x}, {y} and {z} have {s} {by_count(s, 'books')}: {a} + ({a} + {б}) + {k} × {a} = {s}."
+        return (f"{x} has {a} {by_count(a, 'shells')}, {y} has {б} more shells than {x}, and {z} has {слово} as many shells as {x}; "
+                f"together {x}, {y} and {z} have {s} {by_count(s, 'shells')}: {выкладка}.")
     if ф == 1 and _ру_вопрос(шаг, i):
-        return f"если {р_x} имеет {a} {ру('книга', a)}, {р_y} имеет на {б} {ру('книга', б)} больше, чем {р_x}, а {р_z} имеет {ру_} больше книг, чем {р_x}, сколько книг у них вместе? {a} + ({a} + {б}) + {k} × {a} = {s}."
+        return (f"если {р_x} имеет {a} {ру('ракушка', a)}, {р_y} имеет на {б} {ру('ракушка', б)} больше, чем {р_x}, "
+                f"а {р_z} имеет {ру_} больше ракушек, чем {р_x}, сколько ракушек у них вместе? {выкладка}.")
     if ф == 1:
-        return f"{р_x} имеет {a} {ру('книга', a)}, {р_y} имеет на {б} {ру('книга', б)} больше, чем {р_x}, а {р_z} имеет {ру_} больше книг, чем {р_x}; вместе у них {s} {ру('книга', s)}: {a} + ({a} + {б}) + {k} × {a} = {s}."
+        return (f"{р_x} имеет {a} {ру('ракушка', a)}, {р_y} имеет на {б} {ру('ракушка', б)} больше, чем {р_x}, "
+                f"а {р_z} имеет {ру_} больше ракушек, чем {р_x}; вместе у них {s} {ру('ракушка', s)}: {выкладка}.")
     if ф == 2:
-        return f"{x} has {a} {by_count(a, 'books')}, {y} has {б} more books than {x}, and {z} has {слово} as many books as {x}; together they do not have {s + 1} {by_count(s + 1, 'books')}: they have {s}."
-    return f"if {x} has {a} {by_count(a, 'books')}, {y} has {б} more books than {x}, and {z} has {слово} as many books as {x}, how many books do they have together? {a} + ({a} + {б}) + {k} × {a} = {s}."
+        return (f"{x} has {a} {by_count(a, 'shells')}, {y} has {б} more shells than {x}, and {z} has {слово} as many shells as {x}; "
+                f"together they do not have {s + 1} {by_count(s + 1, 'shells')}: they have {s}, because {выкладка}.")
+    return (f"if {x} has {a} {by_count(a, 'shells')}, {y} has {б} more shells than {x}, and {z} has {слово} as many shells as {x}, "
+            f"how many shells do they have together? {выкладка}.")
 
 
-# ---------- 16. makes # candles: rate × time ----------
+# ---------- 16. rate × time: postcards signed in an hour ----------
 def п_ставка(шаг, i):
     в_час = 2 + (шаг * 3 + i) % 9
     часы = 2 + (шаг + i * 3) % 7
@@ -510,17 +600,20 @@ def ставка(шаг, i):
     имя, ру_имя = ИМЕНА_EN[(шаг + i) % len(ИМЕНА_EN)], ИМЕНА_RU[(шаг + i) % len(ИМЕНА_RU)]
     ф = (шаг + i) % 4
     if ф == 0:
-        return f"{имя} makes {r} candles an hour and works {t} {by_count(t, 'hours')}; {имя} makes {s} candles: {r} × {t} = {s}."
+        return f"{имя} signs {r} postcards an hour and works {t} {by_count(t, 'hours')}; {имя} signs {s} postcards: {r} × {t} = {s}."
     if ф == 1 and _ру_вопрос(шаг, i):
-        return f"если {ру_имя} делает {r} {ру('свеча', r)} в час и работает {t} {ру('час', t)}, сколько свечей делает {ру_имя}? {r} × {t} = {s}."
+        return (f"если {ру_имя} подписывает {r} {ру('открытка', r)} в час и работает {t} {ру('час', t)}, "
+                f"сколько открыток подписывает {ру_имя}? {r} × {t} = {s}.")
     if ф == 1:
-        return f"{ру_имя} делает {r} {ру('свеча', r)} в час и работает {t} {ру('час', t)}; {ру_имя} делает {s} {ру('свеча', s)}: {r} × {t} = {s}."
+        return (f"{ру_имя} подписывает {r} {ру('открытка', r)} в час и работает {t} {ру('час', t)}; "
+                f"{ру_имя} подписывает {s} {ру('открытка', s)}: {r} × {t} = {s}.")
     if ф == 2:
-        return f"{имя} makes {r} candles an hour and works {t} {by_count(t, 'hours')}; {имя} does not make {s + r} candles: {имя} makes {s}."
-    return f"if {имя} makes {r} candles an hour and works {t} {by_count(t, 'hours')}, how many candles does {имя} make? {r} × {t} = {s}."
+        return (f"{имя} signs {r} postcards an hour and works {t} {by_count(t, 'hours')}; {имя} does not sign {s + r} postcards: "
+                f"{имя} signs {s}, because {r} × {t} = {s}.")
+    return f"if {имя} signs {r} postcards an hour and works {t} {by_count(t, 'hours')}, how many postcards does {имя} sign? {r} × {t} = {s}."
 
 
-# ---------- 17. post-it notes: several subtractions ----------
+# ---------- 17. several subtractions: candies into bowls ----------
 def п_листки(шаг, i):
     было = 60 + (шаг * 7 + i * 3) % 40
     раз = 5 + (шаг + i) % 12
@@ -532,22 +625,30 @@ def листки(шаг, i):
     п = п_листки(шаг, i)
     было, раз, два, s = п["было"], п["раз"], п["два"], п["ответ"]
     имя, ру_имя = ИМЕНА_EN[(шаг + i) % len(ИМЕНА_EN)], ИМЕНА_RU[(шаг + i) % len(ИМЕНА_RU)]
+    выкладка = f"{было} − {раз} − {два} = {s}"
     ф = (шаг + i) % 4
     if ф == 0:
-        return f"{имя} had {было} post-it notes, used {раз} on the fridge and {два} on the door; {имя} has {s} post-it notes left: {было} − {раз} − {два} = {s}."
+        return f"{имя} had {было} candies, put {раз} in the red bowl and {два} in the blue bowl; {имя} has {s} candies left: {выкладка}."
     if ф == 1 and _ру_вопрос(шаг, i):
-        return f"если у {кого(ру_имя)} было {было} {ру('листок', было)}, {раз} ушли на холодильник и {два} на дверь, сколько листков осталось? {было} − {раз} − {два} = {s}."
+        return (f"если у {кого(ру_имя)} было {было} {ру('конфета', было)}, {раз} ушли в красную вазу и {два} в синюю, "
+                f"сколько конфет осталось? {выкладка}.")
     if ф == 1:
-        return f"у {кого(ру_имя)} было {было} {ру('листок', было)}, {раз} ушли на холодильник и {два} на дверь; осталось {s} {ру('листок', s)}: {было} − {раз} − {два} = {s}."
+        return (f"у {кого(ру_имя)} было {было} {ру('конфета', было)}, {раз} ушли в красную вазу и {два} в синюю; "
+                f"осталось {s} {ру('конфета', s)}: {выкладка}.")
     if ф == 2:
-        return f"{имя} had {было} post-it notes, used {раз} on the fridge and {два} on the door; {имя} does not have {s + два} post-it notes left: {имя} has {s}."
-    return f"if {имя} had {было} post-it notes, used {раз} on the fridge and {два} on the door, how many post-it notes does {имя} have left? {было} − {раз} − {два} = {s}."
+        return (f"{имя} had {было} candies, put {раз} in the red bowl and {два} in the blue bowl; {имя} does not have {s + два} candies left: "
+                f"{имя} has {s}, because {выкладка}.")
+    return (f"if {имя} had {было} candies, put {раз} in the red bowl and {два} in the blue bowl, "
+            f"how many candies does {имя} have left? {выкладка}.")
 
 
-# ---------- SVAMP: how many more did A V1 than V2 ----------
+# ---------- 18. how many more on one day than on the other: posts painted ----------
+# «ВЧЕРА» И «СЕГОДНЯ», А НЕ ДНИ НЕДЕЛИ: «Вера в субботу покрасила» закон соседа лица
+# (`actors.порча_соседа`) зовёт порчей — за «лицо в» свод ставил лишь объявленное, и незнакомое
+# «субботу» на этом месте неотличимо от обрезка имени. Закон прав; наречие места не занимает.
 def п_разница(шаг, i):
     x, y = 4 + (шаг * 3 + i) % 12, 2 + (шаг + i * 5) % 9
-    # РАЗНОСТЬ НЕ МЕНЬШЕ ДВУХ: «1 more trees» — ложь согласования, а «1 more»
+    # РАЗНОСТЬ НЕ МЕНЬШЕ ДВУХ: «1 more posts» — ложь согласования, а «1 more»
     # в хвосте суд согласования EN читает как «один при множественном».
     if y >= x - 1:
         y = x - 2
@@ -560,17 +661,22 @@ def разница(шаг, i):
     имя, ру_имя = ИМЕНА_EN[(шаг + i) % len(ИМЕНА_EN)], ИМЕНА_RU[(шаг + i) % len(ИМЕНА_RU)]
     ф = (шаг + i) % 4
     if ф == 0:
-        return f"{имя} planted {x} {by_count(x, 'trees')} in the morning and {y} {by_count(y, 'trees')} in the afternoon; {имя} planted {d} more trees in the morning than in the afternoon: {x} − {y} = {d}."
+        return (f"{имя} painted {x} {by_count(x, 'posts')} yesterday and {y} {by_count(y, 'posts')} today; "
+                f"{имя} painted {d} more posts yesterday than today: {x} − {y} = {d}.")
     if ф == 1 and _ру_вопрос(шаг, i):
-        return f"если {ру_имя} утром {гл(ру_имя, 'посадил')} {x} {ру('дерево', x)}, а днём {y} {ру('дерево', y)}, на сколько деревьев больше утром, чем днём? {x} − {y} = {d}."
+        return (f"если {ру_имя} вчера {гл(ру_имя, 'покрасил')} {x} {ру('столб', x)}, а сегодня {y} {ру('столб', y)}, "
+                f"на сколько столбов больше вчера, чем сегодня? {x} − {y} = {d}.")
     if ф == 1:
-        return f"{ру_имя} утром {гл(ру_имя, 'посадил')} {x} {ру('дерево', x)}, а днём {y} {ру('дерево', y)}; утром на {d} {ру('дерево', d)} больше, чем днём: {x} − {y} = {d}."
+        return (f"{ру_имя} вчера {гл(ру_имя, 'покрасил')} {x} {ру('столб', x)}, а сегодня {y} {ру('столб', y)}; "
+                f"вчера на {d} {ру('столб', d)} больше, чем сегодня: {x} − {y} = {d}.")
     if ф == 2:
-        return f"{имя} planted {x} {by_count(x, 'trees')} in the morning and {y} {by_count(y, 'trees')} in the afternoon; {имя} did not plant {d + 1} more trees in the morning than in the afternoon: {d} more."
-    return f"if {имя} planted {x} {by_count(x, 'trees')} in the morning and {y} {by_count(y, 'trees')} in the afternoon, how many more trees did {имя} plant in the morning than in the afternoon? {x} − {y} = {d}."
+        return (f"{имя} painted {x} {by_count(x, 'posts')} yesterday and {y} {by_count(y, 'posts')} today; "
+                f"{имя} did not paint {d + 1} more posts yesterday than today: {d} more, because {x} − {y} = {d}.")
+    return (f"if {имя} painted {x} {by_count(x, 'posts')} yesterday and {y} {by_count(y, 'posts')} today, "
+            f"how many more posts did {имя} paint yesterday than today? {x} − {y} = {d}.")
 
 
-# ---------- SVAMP: price, discount, how much to pay ----------
+# ---------- 19. price and discount: a ticket for a pupil ----------
 def п_скидка(шаг, i):
     цена = 20 + (шаг * 7 + i * 3) % 80
     скидка = 5 + (шаг + i) % 15
@@ -580,19 +686,24 @@ def п_скидка(шаг, i):
 def скидка(шаг, i):
     п = п_скидка(шаг, i)
     ц, с, п_ = п["цена"], п["скидка"], п["ответ"]
+    билет = (f"a ticket costs {ц} {by_count(ц, 'dollars')} and pupils get a discount of {с} {by_count(с, 'dollars')} "
+             f"on each ticket")
     ф = (шаг + i) % 4
     if ф == 0:
-        return f"each pack costs {ц} {by_count(ц, 'dollars')} and there is a discount of {с} {by_count(с, 'dollars')} on each pack; you have to pay {п_} {by_count(п_, 'dollars')} for each pack: {ц} − {с} = {п_}."
+        return f"{билет}; a pupil pays {п_} {by_count(п_, 'dollars')} for a ticket: {ц} − {с} = {п_}."
     if ф == 1 and _ру_вопрос(шаг, i):
-        return f"если каждая пачка стоит {ц} {ру('доллар', ц)}, и на каждую пачку скидка {с} {ру('доллар', с)}, сколько надо заплатить за каждую пачку? {ц} − {с} = {п_}."
+        return (f"если билет стоит {ц} {ру('доллар', ц)}, и ученикам на каждый билет скидка {с} {ру('доллар', с)}, "
+                f"сколько ученик платит за билет? {ц} − {с} = {п_}.")
     if ф == 1:
-        return f"каждая пачка стоит {ц} {ру('доллар', ц)}, и на каждую пачку скидка {с} {ру('доллар', с)}; за каждую пачку надо заплатить {п_} {ру('доллар', п_)}: {ц} − {с} = {п_}."
+        return (f"билет стоит {ц} {ру('доллар', ц)}, и ученикам на каждый билет скидка {с} {ру('доллар', с)}; "
+                f"ученик платит за билет {п_} {ру('доллар', п_)}: {ц} − {с} = {п_}.")
     if ф == 2:
-        return f"each pack costs {ц} {by_count(ц, 'dollars')} and there is a discount of {с} {by_count(с, 'dollars')} on each pack; you do not have to pay {ц} {by_count(ц, 'dollars')} for each pack: you pay {п_}."
-    return f"if each pack costs {ц} {by_count(ц, 'dollars')} and there is a discount of {с} {by_count(с, 'dollars')} on each pack, how much do you have to pay for each pack? {ц} {by_count(ц, 'dollars')}: {ц} − {с} = {п_} {by_count(п_, 'dollars')}."
+        return f"{билет}; a pupil does not pay {ц} {by_count(ц, 'dollars')} for a ticket: a pupil pays {п_}, because {ц} − {с} = {п_}."
+    return (f"if {билет}, how much does a pupil pay for a ticket? {ц} {by_count(ц, 'dollars')}: "
+            f"{ц} − {с} = {п_} {by_count(п_, 'dollars')}.")
 
 
-# ---------- SVAMP: left / in all / altogether ----------
+# ---------- 20. left / in all / altogether ----------
 def п_всего(шаг, i):
     x, y = 3 + (шаг * 3 + i) % 12, 2 + (шаг + i * 5) % 9
     род = (шаг + i) % 3
@@ -615,7 +726,7 @@ def всего(шаг, i):
         if ф == 1:
             return f"у {кого(ру_имя)} было {x} {ру(вещь, x)}, {ру_имя} {гл(ру_имя, 'отдал')} {y}; осталось {s} {ру(вещь, s)}: {x} − {y} = {s}."
         if ф == 2:
-            return f"{имя} had {x} {by_count(x, en)} and gave away {y}; {имя} does not have {s + 1} {en} left: {имя} has {s}."
+            return f"{имя} had {x} {by_count(x, en)} and gave away {y}; {имя} does not have {s + 1} {en} left: {имя} has {s}, because {x} − {y} = {s}."
         return f"if {имя} had {x} {by_count(x, en)} and gave away {y}, how many {en} are left? {x} − {y} = {s}."
     s = x + y
     слово = "in all" if род == 0 else "altogether"
@@ -626,11 +737,12 @@ def всего(шаг, i):
     if ф == 1:
         return f"у {кого(ру_имя)} {x} {ру(вещь, x)} в одной коробке и {y} {ру(вещь, y)} в другой; всего у {кого(ру_имя)} {s} {ру(вещь, s)}: {x} + {y} = {s}."
     if ф == 2:
-        return f"{имя} has {x} {by_count(x, en)} in one box and {y} {by_count(y, en)} in another; {имя} does not have {s + 1} {en} {слово}: {имя} has {s}."
+        return (f"{имя} has {x} {by_count(x, en)} in one box and {y} {by_count(y, en)} in another; {имя} does not have {s + 1} {en} {слово}: "
+                f"{имя} has {s}, because {x} + {y} = {s}.")
     return f"if {имя} has {x} {by_count(x, en)} in one box and {y} {by_count(y, en)} in another, how many {en} does {имя} have {слово}? {x} + {y} = {s}."
 
 
-# ---------- SVAMP: how many groups of N ----------
+# ---------- 21. how many groups of N: plates stacked in piles ----------
 def п_группы(шаг, i):
     n = 2 + (шаг + i) % 6
     групп = 2 + (шаг * 3 + i) % 9
@@ -641,29 +753,28 @@ def группы(шаг, i):
     п = п_группы(шаг, i)
     n, всего_, g = п["n"], п["всего"], п["ответ"]
     ф = (шаг + i) % 4
+    # «ТАРЕЛОК 21» А НЕ «21 ТАРЕЛКА СЛОЖИЛИ»: число после имени снимает согласование сказуемого,
+    # какого счётная форма не знает («21 тарелку сложили», «21 тарелка стоит»).
     if ф == 0:
-        return f"there are {всего_} {by_count(всего_, 'pupils')} and they stand in groups of {n}; there are {g} groups: {всего_} ÷ {n} = {g}."
+        return f"there are {всего_} plates and they are stacked in piles of {n}; there are {g} piles: {всего_} ÷ {n} = {g}."
     if ф == 1 and _ру_вопрос(шаг, i):
-        return f"если {всего_} {ру('ученик', всего_)} стоят группами по {n}, сколько групп? {всего_} ÷ {n} = {g}."
+        return f"если тарелок {всего_} и их сложили стопками по {n}, сколько стопок? {всего_} ÷ {n} = {g}."
     if ф == 1:
-        return f"{всего_} {ру('ученик', всего_)} стоят группами по {n}; групп {g}: {всего_} ÷ {n} = {g}."
+        return f"тарелок {всего_}, их сложили стопками по {n}; стопок {g}: {всего_} ÷ {n} = {g}."
     if ф == 2:
-        return f"there are {всего_} {by_count(всего_, 'pupils')} and they stand in groups of {n}; there are not {g + 1} groups: there are {g}."
-    return f"if there are {всего_} {by_count(всего_, 'pupils')} and they stand in groups of {n}, how many groups are there? {всего_} ÷ {n} = {g}."
+        return f"there are {всего_} plates and they are stacked in piles of {n}; there are not {g + 1} piles: there are {g}, because {всего_} ÷ {n} = {g}."
+    return f"if there are {всего_} plates and they are stacked in piles of {n}, how many piles are there? {всего_} ÷ {n} = {g}."
 
 
-# ---------- ОСТАТОК ДЕЛЕНИЯ: группы не всегда полны ----------
+# ---------- ОСТАТОК ДЕЛЕНИЯ: коробки не всегда полны ----------
 # ЕДИНИЦА ПОКАЗЫВАЕТСЯ ОСТАТКОМ (08.09). Род «группы» делит НАЦЕЛО и потому не может
-# показать «1 pupil»: всего есть n × g, и при n ≥ 2 остатка нет вовсе. Мера «единственное
-# при единице» держала «pupil» в долгу с 242 показами множественного и ни одним единичным —
-# и долг был не в словах дома, а в ЧИСЛАХ, какие дом умел породить. Здесь деление НЕПОЛНОЕ,
+# показать «1 egg»: всего есть n × g, и при n ≥ 2 остатка нет вовсе. Здесь деление НЕПОЛНОЕ,
 # остаток 1 ≤ r < n, и единица стои́т в нём естественно, а не крайним случаем.
 #
 #     ЧИСЛО, КОТОРОГО ДОМ НЕ ПОРОЖДАЕТ, ЕСТЬ ФОРМА, КОТОРОЙ ОН НЕ ПОКАЗЫВАЕТ.
 #
 # Леджер идёт ДВУМЯ ПРОСТЫМИ ШАГАМИ (n × g, затем всего − ng), ибо суд арифметики читает
-# действие о двух числах; выражение «всего − n × g» он прочёл бы как «n × g = r» и назвал
-# бы ложью истинную строку.
+# действие о двух числах.
 def п_остаток_деления(шаг, i):
     n = 3 + (шаг + i) % 5
     групп = 2 + (шаг * 3 + i) % 8
@@ -675,92 +786,76 @@ def остаток_деления(шаг, i):
     п = п_остаток_деления(шаг, i)
     n, T, g, r = п["n"], п["всего"], п["групп"], п["ответ"]
     ng = n * g
-    # ВОПРОС ОБЕИМ СТОРОНАМ, А НЕ ОДНОЙ (08.09). Род родился с тремя очертаниями — два
-    # рассказа и английский вопрос, — и прибор ширины назвал русскую сторону родом БЕЗ
-    # ВОПРОСНОЙ ПОВЕРХНОСТИ. Он прав: показать по-русски и спросить по-английски значит
-    # спрашивать не о том, что показано.
+    # ВОПРОС ОБЕИМ СТОРОНАМ, А НЕ ОДНОЙ (08.09): русская сторона спрашивает тоже.
     ф = (шаг + i) % 4
     if ф == 0:
-        return (f"there are {T} {by_count(T, 'pupils')} and they stand in groups of {n}; there are {g} groups and "
-                f"{r} {by_count(r, 'pupils')} left over: {n} × {g} = {ng}, {T} − {ng} = {r}.")
+        return (f"there are {T} eggs and they are packed in boxes of {n}; there are {g} full boxes and "
+                f"{r} {by_count(r, 'eggs')} left over: {n} × {g} = {ng}, {T} − {ng} = {r}.")
     if ф == 1:
-        return (f"{T} {ру('ученик', T)} стоят группами по {n}; групп {g}, вне групп "
-                f"{r} {ру('ученик', r)}: {n} × {g} = {ng}, {T} − {ng} = {r}.")
+        return (f"яиц {T}, их разложили по коробкам по {n}; полных коробок {g}, и осталось "
+                f"{r} {ру('яйцо', r)}: {n} × {g} = {ng}, {T} − {ng} = {r}.")
     if ф == 2:
-        return (f"если {T} {ру('ученик', T)} стоят группами по {n}, сколько учеников вне групп? "
+        return (f"если яиц {T} и их разложили по коробкам по {n}, сколько яиц останется? "
                 f"{n} × {g} = {ng}, {T} − {ng} = {r}.")
-    return (f"if there are {T} {by_count(T, 'pupils')} and they stand in groups of {n}, how many pupils are left "
+    return (f"if there are {T} eggs and they are packed in boxes of {n}, how many eggs are left "
             f"over? {n} × {g} = {ng}, {T} − {ng} = {r}.")
 
 
-# ======================= ТРЕТИЙ СЛОЙ (03.09): роды SVAMP по массе e9 и остаток g1 =======================
-# Замер e9 (SVAMP-s1, 726 проб, поставочный FULL 46a6683b): (1) «how many more X … than …»
-# ≈90 проб — крупнейший род; (2) «how many X did A V» при отвлекающих числах — отбор или
-# остаток; (3) «how many pupils/boys are there in the class»; (4) «how much money …».
-# Остаток g1 вне второго слоя: сдача (g1.38), прибыль при дробной цене (g1.58), завышение
-# на процент (g1.45), половина и всего (g1.10). Закон каждой рамки — один на показ, стенд
-# и суд; слова родов — таблицами здесь, суд читает их своим замкнутым множеством.
+# ======================= ТРЕТИЙ СЛОЙ (03.09): роды по массе переписи =======================
+# Перепись e9 назвала конструкции, каких свод не держал: (1) «how many more X … than …» —
+# крупнейший род; (2) «how many X did A V» при отвлекающих числах — отбор или остаток;
+# (3) «how many … are there in …» по частям целого; (4) «how much money …». Дальше —
+# сдача, прибыль при дробной цене, завышение на процент, половина и всего. Закон каждой рамки —
+# один на показ, стенд и суд; слова родов — таблицами здесь, суд читает их своим замкнутым
+# множеством. СЦЕНЫ СВОИ С 23.09: полосы, давшие роду имя, не дают ему больше ни слова.
 
 # --- 22. how many more … than …: четыре очертания одного закона d = x − y > 0 ---
-БОЛЬШЕ_A = (  # одна вещь на двух случаях: (глагол прош., основа, вещь, вещь RU, глагол RU)
-    ("received", "receive", "emails", "письмо", "получил"),
-    ("ate", "eat", "cookies", "печенье", "съел"),
-    ("played with", "play with", "kids", None, None),
-    # ГЛАГОЛЫ ПОЛОС (e9 04.09: перепись SVAMP + g1 — слова перед числом, которых
-    # школа не показывала): jumped, did, completed, watched, won, sent, lost,
-    # removed, raised, grew, threw away — вещи по дому глагол–вещь.
-    ("jumped", "jump", "inches", None, None),
-    ("did", "do", "push-ups", None, None),
-    ("completed", "complete", "pages", "страница", "выполнил"),
-    ("watched", "watch", "movies", "фильм", "посмотрел"),
-    ("won", "win", "games", "игра", "выиграл"),
-    ("sent", "send", "letters", "письмо", "отправил"),
-    ("lost", "lose", "coins", "монета", "потерял"),
-    ("removed", "remove", "books", "книга", "убрал"),
-    ("raised", "raise", "dollars", "доллар", "собрал"),
-    ("grew", "grow", "flowers", "цветок", "вырастил"),
-    ("threw away", "throw away", "caps", None, None),
+БОЛЬШЕ_A = (  # одна вещь на двух сроках: (глагол прош., основа, вещь, вещь RU, глагол RU)
+    ("picked", "pick", "plums", "слива", "собрал"),
+    ("washed", "wash", "plates", "тарелка", "вымыл"),
+    ("wrote", "write", "letters", "письмо", "написал"),
+    ("painted", "paint", "posts", "столб", "покрасил"),
+    ("sold", "sell", "tickets", "билет", "продал"),
+    ("baked", "bake", "pies", None, None),
+    ("counted", "count", "ducks", "утка", "насчитал"),
+    ("fed", "feed", "rabbits", None, None),
+    ("collected", "collect", "shells", "ракушка", "собрал"),
+    ("folded", "fold", "napkins", None, None),
+    ("carried", "carry", "boxes", None, None),
+    ("scored", "score", "points", None, None),
+    ("found", "find", "mushrooms", None, None),
+    ("drew", "draw", "pictures", None, None),
 )
-КОГДА = (("in the morning", "in the afternoon", "утром", "днём"),
-         ("on monday", "on tuesday", "в понедельник", "во вторник"))
+КОГДА = (("in the morning", "in the evening", "утром", "вечером"),
+         ("on Saturday", "on Sunday", "в субботу", "в воскресенье"))
 БОЛЬШЕ_B = (  # две вещи одним делом: (глагол прош., основа, вещь1, вещь2, глагол RU, RU1, RU2)
-    ("used", "use", "cups of flour", "cups of sugar", "использовал", ("чашка", " муки"), ("чашка", " сахара")),
-    ("made", "make", "cakes", "pastries", "испёк", ("торт", ""), ("булочка", "")),
-    ("read", "read", "pages of math", "pages of reading", "прочитал", ("страница", " математики"), ("страница", " чтения")),
-    ("bought", "buy", "bottles of regular soda", "bottles of diet soda", None, None, None),
-    ("did", "do", "push-ups", "crunches", None, None, None),
-    ("completed", "complete", "pages of reading homework", "pages of math homework", None, None, None),
-    ("watched", "watch", "movies", "episodes", None, None, None),
-    ("removed", "remove", "figures", "books", None, None, None),
+    ("bought", "buy", "kilograms of apples", "kilograms of plums", "купил", ("килограмм", " яблок"), ("килограмм", " слив")),
+    # «write» берёт ПИСЬМЕННОЕ (`verbthings`): открытка там зовётся «cards», и «wrote postcards» дверь
+    # отвергает по праву объявления — вещь берётся та, какую глагол берёт, а не та, что пришла на ум
+    ("wrote", "write", "letters", "cards", "написал", ("письмо", ""), ("открытка", "")),
+    ("painted", "paint", "tables", "posts", "покрасил", ("стол", ""), ("столб", "")),
+    ("collected", "collect", "shells", "stones", "собрал", ("ракушка", ""), ("камень", "")),
+    ("washed", "wash", "cups", "plates", "вымыл", ("чашка", ""), ("тарелка", "")),
+    ("baked", "bake", "pies", "cakes", None, None, None),
+    ("sold", "sell", "roses", "tulips", None, None, None),
+    ("picked", "pick", "pears", "plums", "собрал", ("груша", ""), ("слива", "")),
 )
-# ДВА ДЕЯТЕЛЯ, ОДНО ДЕЛО (e9: «the grasshopper jumped 9 inches, the mouse jumped
-# 3 inches» — сравнение прыжков; «ann brought 5 balloons and jake brought 3»):
-# (деятель 1, деятель 2, глагол прош., основа, вещь)
+# ДВА ДЕЯТЕЛЯ, ОДНО ДЕЛО: (деятель 1, деятель 2, глагол прош., основа, вещь)
 БОЛЬШЕ_E = (
-    ("the grasshopper", "the mouse", "jumped", "jump", "inches"),
-    ("the frog", "the rabbit", "jumped", "jump", "feet"),
-    ("ann", "dan", "brought", "bring", "balloons"),
-    ("ida", "omar", "did", "do", "push-ups"),
-    # ОДНО ПИСЬМО ЕДИНИЦЫ В ОДНОМ МИРЕ (07.09, вечер). Здесь стояло «metres» при
-    # восьмидесяти четырёх «meters» того же мира и при соседях-дюймах и футах: перепись
-    # двух орфографий нашла ЕДИНСТВЕННЫЙ случай во всём своде, где два письма одного
-    # слова стоя́т в строках ОДНОГО языка одного мира. Прочие двадцать пять пар оказались
-    # не орфографией, а ДВУМЯ ЯЗЫКАМИ: «meter» нидерландское против «metre» английского,
-    # «color» испанское против «colour» английского, «kilometer» нидерландское против
-    # «kilometre» турецкого.
-    #
-    #     МЕРА, НЕ ЗНАЮЩАЯ ЯЗЫКА СТРОКИ, ЗОВЁТ ДОЛГОМ ЧУЖОЕ ПИСЬМО. Из двадцати шести
-    #     подозрений двадцать пять были о чужом языке, и только одно — о доме.
-    ("the kangaroo", "the cat", "jumped", "jump", "meters"),
-    ("vera", "tom", "won", "win", "games"),
+    ("the red team", "the blue team", "scored", "score", "points"),
+    ("the old pump", "the new pump", "filled", "fill", "buckets"),
+    ("the owl", "the fox", "caught", "catch", "mice"),
+    ("the first boat", "the second boat", "carried", "carry", "passengers"),
+    ("Grace", "Hugo", "baked", "bake", "pies"),
+    ("Ida", "Omar", "sold", "sell", "tickets"),
 )
 БОЛЬШЕ_C = (  # «there were A and B где»: (A, B, где, A RU, B RU, где RU)
-    ("storks", "birds", "on the fence", "аист", "воробей", "на заборе"),
-    ("red flowers", "white flowers", "in the garden", None, None, None),
+    ("apples", "pears", "in the basket", "яблоко", "груша", "в корзине"),
+    ("ducks", "swans", "on the lake", None, None, None),
 )
 БОЛЬШЕ_D = (  # деньги: (на что 1, на что 2, RU 1, RU 2)
-    ("on the shirt", "on the hat", "на рубашку", "на шляпу"),
-    ("on books", "on pens", "на книги", "на ручки"),
+    ("on train tickets", "on lunch", "на билеты", "на обед"),
+    ("on paint", "on brushes", "на краску", "на кисти"),
 )
 
 
@@ -791,7 +886,7 @@ def больше(шаг, i):
                 return f"if {имя} {г} {x} {в} {к1} and {y} {в} {к2}, how many fewer {в} did {имя} {г0} {к2} than {к1}? {x} − {y} = {d}."
             return f"{ру_имя} {гл(ру_имя, г_ру)} {р1} {x} {ру(в_ру, x)}, а {р2} {y} {ру(в_ру, y)}; {р1} на {d} {ру(в_ру, d)} больше, чем {р2}: {x} − {y} = {d}."
         if ф == 2:
-            return f"{имя} {г} {x} {в} {к1} and {y} {в} {к2}; {имя} did not {г0} {d + 1} more {в} {к1} than {к2}: {d} more."
+            return f"{имя} {г} {x} {в} {к1} and {y} {в} {к2}; {имя} did not {г0} {d + 1} more {в} {к1} than {к2}: {d} more, because {x} − {y} = {d}."
         return f"if {имя} {г} {x} {в} {к1} and {y} {в} {к2}, how many more {в} did {имя} {г0} {к1} than {к2}? {x} − {y} = {d}."
     if оч == 1:
         г, г0, в1, в2, г_ру, р1, р2 = п["слова"]
@@ -804,7 +899,7 @@ def больше(шаг, i):
                 return f"if {имя} {г} {x} {в1} and {y} {в2}, how many fewer {в2} than {в1} did {имя} {г0}? {x} − {y} = {d}."
             return f"{ру_имя} {гл(ру_имя, г_ру)} {x} {ру(р1[0], x)}{р1[1]} и {y} {ру(р2[0], y)}{р2[1]}; {ру(р1[0], 5)}{р1[1]} на {d} больше, чем {ру(р2[0], 5)}{р2[1]}: {x} − {y} = {d}."
         if ф == 2:
-            return f"{имя} {г} {x} {в1} and {y} {в2}; {имя} did not {г0} {d + 1} more {в1} than {в2}: {d} more."
+            return f"{имя} {г} {x} {в1} and {y} {в2}; {имя} did not {г0} {d + 1} more {в1} than {в2}: {d} more, because {x} − {y} = {d}."
         return f"if {имя} {г} {x} {в1} and {y} {в2}, how many more {в1} than {в2} did {имя} {г0}? {x} − {y} = {d}."
     if оч == 2:
         a, b, где, a_ру, b_ру, где_ру = п["слова"]
@@ -817,7 +912,7 @@ def больше(шаг, i):
                 return f"if there were {x} {a} and {y} {b} {где}, how many fewer {b} than {a} were there? {x} − {y} = {d}."
             return f"{где_ру} было {x} {ру(a_ру, x)} и {y} {ру(b_ру, y)}; {ру(a_ру, 5)} на {d} больше, чем {ру(b_ру, 5)}: {x} − {y} = {d}."
         if ф == 2:
-            return f"there were {x} {a} and {y} {b} {где}; there were not {d + 1} more {a} than {b}: {d} more."
+            return f"there were {x} {a} and {y} {b} {где}; there were not {d + 1} more {a} than {b}: {d} more, because {x} − {y} = {d}."
         return f"if there were {x} {a} and {y} {b} {где}, how many more {a} than {b} were there? {x} − {y} = {d}."
     if оч == 4:
         д1, д2, г, г0, в = п["слова"]
@@ -826,7 +921,7 @@ def больше(шаг, i):
         if ф == 1:
             return f"if {д1} {г} {x} {в} and {д2} {г} {y} {в}, how many fewer {в} did {д2} {г0} than {д1}? {x} − {y} = {d}."
         if ф == 2:
-            return f"{д1} {г} {x} {в} and {д2} {г} {y} {в}; {д1} did not {г0} {d + 1} more {в} than {д2}: {d} more."
+            return f"{д1} {г} {x} {в} and {д2} {г} {y} {в}; {д1} did not {г0} {d + 1} more {в} than {д2}: {d} more, because {x} − {y} = {d}."
         return f"if {д1} {г} {x} {в} and {д2} {г} {y} {в}, how many more {в} did {д1} {г0} than {д2}? {x} − {y} = {d}."
     на1, на2, р1, р2 = п["слова"]
     if ф == 0:
@@ -836,20 +931,20 @@ def больше(шаг, i):
     if ф == 1:
         return f"{ру_имя} {гл(ру_имя, 'потратил')} {x} {ру('доллар', x)} {р1} и {y} {ру('доллар', y)} {р2}; {р1} на {d} {ру('доллар', d)} больше, чем {р2}: {x} − {y} = {d}."
     if ф == 2:
-        return f"{имя} spent {x} {by_count(x, 'dollars')} {на1} and {y} {by_count(y, 'dollars')} {на2}; {имя} did not spend {d + 1} {by_count(d + 1, 'dollars')} more {на1} than {на2}: {d} more."
+        return f"{имя} spent {x} {by_count(x, 'dollars')} {на1} and {y} {by_count(y, 'dollars')} {на2}; {имя} did not spend {d + 1} {by_count(d + 1, 'dollars')} more {на1} than {на2}: {d} more, because {x} − {y} = {d}."
     return f"if {имя} spent {x} {by_count(x, 'dollars')} {на1} and {y} {by_count(y, 'dollars')} {на2}, how much more money did {имя} spend {на1} than {на2}? {x} − {y} = {d} {by_count(d, 'dollars')}."
 
 
-# --- 23. отбор среди отвлекающих чисел: how many X did A V in the afternoon ---
+# --- 23. отбор среди отвлекающих чисел: how many X did A V on Tuesday ---
 ОТБОР = (  # (глагол прош., основа, вещь, глагол RU, вещь RU)
-    ("received", "receive", "emails", "получил", "письмо"),
-    ("sold", "sell", "books", "продал", "книга"),
-    ("cut", "cut", "roses", "срезал", "роза"),
-    ("found", "find", "bottle caps", None, None),
-    ("played with", "play with", "kids", None, None),
+    ("picked", "pick", "plums", "собрал", "слива"),
+    ("washed", "wash", "cups", "вымыл", "чашка"),
+    ("sold", "sell", "tickets", "продал", "билет"),
+    ("counted", "count", "boats", None, None),
+    ("fed", "feed", "rabbits", None, None),
 )
-СРОКИ = ("in the morning", "in the afternoon", "in the evening")
-СРОКИ_RU = ("утром", "днём", "вечером")
+СРОКИ = ("on Monday", "on Tuesday", "on Wednesday")
+СРОКИ_RU = ("в понедельник", "во вторник", "в среду")
 
 
 def п_отбор(шаг, i):
@@ -868,55 +963,66 @@ def отбор(шаг, i):
     имя, ру_имя = ИМЕНА_EN[(шаг + i) % len(ИМЕНА_EN)], ИМЕНА_RU[(шаг + i) % len(ИМЕНА_RU)]
     г, г0, в, г_ру, в_ру = п["слова"]
     когда = СРОКИ[срок]
+    дни = f"{a} {в} {СРОКИ[0]}, {b} {СРОКИ[1]} and {c} {СРОКИ[2]}"
     ф = ((шаг + i) // 4 + шаг) % 4
     чужое = (a, b, c)[(срок + 1) % 3]
     if ф == 0:
-        return f"{имя} {г} {a} {в} in the morning, {b} in the afternoon and {c} in the evening; {когда} {имя} {г} {отв} {в}."
+        return f"{имя} {г} {дни}; {когда} {имя} {г} {отв} {в}."
     if ф == 1 and _ру_вопрос(шаг, i) and в_ру is not None:
-        return f"если {ру_имя} {гл(ру_имя, г_ру)} утром {a} {ру(в_ру, a)}, днём {b} и вечером {c}, сколько {ру(в_ру, 5)} {ру_имя} {гл(ру_имя, г_ру)} {СРОКИ_RU[срок]}? {отв} {СРОКИ_RU[срок]}."
+        return (f"если {ру_имя} {гл(ру_имя, г_ру)} {СРОКИ_RU[0]} {a} {ру(в_ру, a)}, {СРОКИ_RU[1]} {b} и {СРОКИ_RU[2]} {c}, "
+                f"сколько {ру(в_ру, 5)} {ру_имя} {гл(ру_имя, г_ру)} {СРОКИ_RU[срок]}? {отв} {СРОКИ_RU[срок]}.")
     if ф == 1:
         if в_ру is None:
-            return f"if {имя} {г} {a} {в} in the morning, {b} in the afternoon and {c} in the evening, how many {в} did {имя} {г0} in all? {a} + {b} + {c} = {a + b + c}."
-        return f"{ру_имя} {гл(ру_имя, г_ру)} утром {a} {ру(в_ру, a)}, днём {b} и вечером {c}; {СРОКИ_RU[срок]} {ру_имя} {гл(ру_имя, г_ру)} {отв} {ру(в_ру, отв)}."
+            return f"if {имя} {г} {дни}, how many {в} did {имя} {г0} in all? {a} + {b} + {c} = {a + b + c}."
+        return (f"{ру_имя} {гл(ру_имя, г_ру)} {СРОКИ_RU[0]} {a} {ру(в_ру, a)}, {СРОКИ_RU[1]} {b} и {СРОКИ_RU[2]} {c}; "
+                f"{СРОКИ_RU[срок]} {ру_имя} {гл(ру_имя, г_ру)} {отв} {ру(в_ру, отв)}.")
     if ф == 2:
-        return f"{имя} {г} {a} {в} in the morning, {b} in the afternoon and {c} in the evening; {имя} did not {г0} {чужое} {в} {когда}: {имя} {г} {отв}."
-    return f"if {имя} {г} {a} {в} in the morning, {b} in the afternoon and {c} in the evening, how many {в} did {имя} {г0} {когда}? {отв} {когда}."
+        return f"{имя} {г} {дни}; {имя} did not {г0} {чужое} {в} {когда}: {имя} {г} {отв}."
+    return f"if {имя} {г} {дни}, how many {в} did {имя} {г0} {когда}? {отв} {когда}."
 
 
-# --- 24. остаток при отвлекающем: how many cakes would the baker still have ---
+# --- 24. остаток при отвлекающем: how many apples would the gardener still have ---
 def п_остаток(шаг, i):
     n = 10 + (шаг * 7 + i * 3) % 40
     m = 5 + (шаг + i * 5) % 30
     k = 2 + (шаг * 3 + i) % 8
-    свои = (шаг + i) % 2 == 1  # продано СВОЁ (торты) или чужое (булочки)
+    свои = (шаг + i) % 2 == 1  # продано СВОЁ (яблоки) или чужое (груши)
     return dict(n=n, m=m, k=k, свои=свои, ответ=n - k if свои else n)
 
 
 def остаток(шаг, i):
     п = п_остаток(шаг, i)
     n, m, k, свои, r = п["n"], п["m"], п["k"], п["свои"], п["ответ"]
-    что = "cakes" if свои else "pastries"
-    что_ру = ру("торт", k) if свои else ру("булочка", k)
-    основание = f"{n} − {k} = {r}" if свои else "the pastries sold are not cakes"
+    что = "apples" if свои else "pears"
+    что_ру = ру("яблоко", k) if свои else ру("груша", k)
+    основание = f"{n} − {k} = {r}" if свои else "the pears sold are not apples"
+    сад = f"the gardener picked {n} apples and {m} pears and sold {k} {что}"
+    # ПО-РУССКИ ДЕЯТЕЛЬ — ИМЯ ДОМА ИМЁН, А НЕ «САДОВНИК»: перед «собрал» свод ставит лицо, и
+    # закон зачина (`actors.порча`) зовёт иное слово на этом месте порчей — по праву: купи он
+    # «садовника», он перестал бы видеть «Вер собрал».
+    ру_имя = ИМЕНА_RU[(шаг + i) % len(ИМЕНА_RU)]
+    собрал, продал = гл(ру_имя, "собрал"), гл(ру_имя, "продал")
     ф = ((шаг + i) // 2 + шаг) % 4
     if ф == 0:
-        return f"the baker made {n} {by_count(n, 'cakes')} and {m} pastries and sold {k} {что}; the baker still has {r} {by_count(r, 'cakes')}: {основание}."
+        return f"{сад}; the gardener still has {r} {by_count(r, 'apples')}: {основание}."
     if ф == 1 and _ру_вопрос(шаг, i):
-        return (f"если пекарь испёк {n} {ру('торт', n)} и {m} {ру('булочка', m)} и продал {k} {что_ру}, сколько тортов осталось? "
-                f"{n} {ру('торт', n)}; {m} {ру('булочка', m)} не в счёт; {n} − {k} = {r}." if свои else
-                f"если пекарь испёк {n} {ру('торт', n)} и {m} {ру('булочка', m)} и продал {k} {что_ру}, сколько тортов осталось? "
-                f"{n} {ру('торт', n)}: проданы булочки, не торты.")
+        return (f"если {ру_имя} {собрал} {n} {ру('яблоко', n)} и {m} {ру('груша', m)} и {продал} {k} {что_ру}, сколько яблок осталось? "
+                f"{n} {ру('яблоко', n)}; {m} {ру('груша', m)} не в счёт; {n} − {k} = {r}." if свои else
+                f"если {ру_имя} {собрал} {n} {ру('яблоко', n)} и {m} {ру('груша', m)} и {продал} {k} {что_ру}, сколько яблок осталось? "
+                f"{n} {ру('яблоко', n)}: проданы груши, не яблоки.")
     if ф == 1:
-        осн_ру = f"{n} − {k} = {r}" if свои else "проданы булочки, не торты"
-        return f"пекарь испёк {n} {ру('торт', n)} и {m} {ру('булочка', m)} и продал {k} {что_ру}; тортов осталось {r}: {осн_ру}."
+        осн_ру = f"{n} − {k} = {r}" if свои else "проданы груши, не яблоки"
+        return f"{ру_имя} {собрал} {n} {ру('яблоко', n)} и {m} {ру('груша', m)} и {продал} {k} {что_ру}; яблок осталось {r}: {осн_ру}."
     if ф == 2:
-        return f"the baker made {n} {by_count(n, 'cakes')} and {m} pastries and sold {k} {что}; the baker does not still have {r + 1} {by_count(r + 1, 'cakes')}: the baker has {r}."
+        хвост = f", because {n} − {k} = {r}" if свои else ""
+        return f"{сад}; the gardener does not still have {r + 1} apples: the gardener has {r}{хвост}."
     if свои:
-        return f"if the baker made {n} {by_count(n, 'cakes')} and {m} pastries and sold {k} {by_count(k, 'cakes')}, how many cakes would the baker still have? {n} {by_count(n, 'cakes')}; the {m} pastries do not count; {n} − {k} = {r}."
-    return f"if the baker made {n} {by_count(n, 'cakes')} and {m} pastries and sold {k} pastries, how many cakes would the baker still have? {n} {by_count(n, 'cakes')}; the pastries sold are not cakes."
+        return (f"if {сад}, how many apples would the gardener still have? "
+                f"{n} apples; the {m} pears do not count; {n} − {k} = {r}.")
+    return f"if {сад}, how many apples would the gardener still have? {n} apples; the pears sold are not apples."
 
 
-# --- 25. класс: сумма и разность носителей ---
+# --- 25. части целого: жители двух этажей ---
 def п_класс(шаг, i):
     g, b = 5 + (шаг * 3 + i) % 12, 4 + (шаг + i * 5) % 11
     род = (шаг + i) % 2
@@ -928,24 +1034,26 @@ def класс(шаг, i):
     g, b, s, род = п["g"], п["b"], п["s"], п["род"]
     ф = ((шаг + i) // 2 + шаг) % 4
     if род == 0:
+        этажи = f"there are {g} residents on the first floor and {b} on the second floor"
         if ф == 0:
-            return f"there are {g} {by_count(g, 'girls')} and {b} {by_count(b, 'boys')} in the class; the class has {s} {by_count(s, 'pupils')}: {g} + {b} = {s}."
+            return f"{этажи}; the house has {s} residents: {g} + {b} = {s}."
         if ф == 1 and _ру_вопрос(шаг, i):
-            return f"если в классе {g} {ру('девочка', g)} и {b} {ру('мальчик', b)}, сколько учеников в классе? {g} + {b} = {s}."
+            return f"если на первом этаже {g} {ру('житель', g)}, а на втором {b}, сколько жителей в доме? {g} + {b} = {s}."
         if ф == 1:
-            return f"в классе {g} {ру('девочка', g)} и {b} {ру('мальчик', b)}; в классе {s} {ру('ученик', s)}: {g} + {b} = {s}."
+            return f"на первом этаже {g} {ру('житель', g)}, а на втором {b}; в доме {s} {ру('житель', s)}: {g} + {b} = {s}."
         if ф == 2:
-            return f"there are {g} {by_count(g, 'girls')} and {b} {by_count(b, 'boys')} in the class; the class does not have {s + 1} {by_count(s + 1, 'pupils')}: it has {s}."
-        return f"if there are {g} {by_count(g, 'girls')} and {b} {by_count(b, 'boys')} in the class, how many pupils are there in the class? {g} + {b} = {s}."
+            return f"{этажи}; the house does not have {s + 1} residents: it has {s}, because {g} + {b} = {s}."
+        return f"if {этажи}, how many residents does the house have? {g} + {b} = {s}."
+    дом = f"the house has {s} residents and {g} of them live on the first floor"
     if ф == 0:
-        return f"there are {s} {by_count(s, 'pupils')} in the class and {g} of them are girls; there are {b} {by_count(b, 'boys')} in the class: {s} − {g} = {b}."
+        return f"{дом}; {b} residents live on the second floor: {s} − {g} = {b}."
     if ф == 1 and _ру_вопрос(шаг, i):
-        return f"если в классе {s} {ру('ученик', s)}, из них {g} {ру('девочка', g)}, сколько мальчиков в классе? {s} − {g} = {b}."
+        return f"если в доме {s} {ру('житель', s)}, из них {g} живут на первом этаже, сколько жителей на втором этаже? {s} − {g} = {b}."
     if ф == 1:
-        return f"в классе {s} {ру('ученик', s)}, из них {g} {ру('девочка', g)}; в классе {b} {ру('мальчик', b)}: {s} − {g} = {b}."
+        return f"в доме {s} {ру('житель', s)}, из них {g} живут на первом этаже; на втором этаже {b} {ру('житель', b)}: {s} − {g} = {b}."
     if ф == 2:
-        return f"there are {s} {by_count(s, 'pupils')} in the class and {g} of them are girls; there are not {b + 1} {by_count(b + 1, 'boys')} in the class: there are {b}."
-    return f"if there are {s} {by_count(s, 'pupils')} in the class and {g} of them are girls, how many boys are there in the class? {s} − {g} = {b}."
+        return f"{дом}; the number of residents on the second floor is not {b + 1}: it is {b}, because {s} − {g} = {b}."
+    return f"if {дом}, how many residents live on the second floor? {s} − {g} = {b}."
 
 
 # --- 26. деньги: потратил n × p; осталось a − b ---
@@ -971,7 +1079,8 @@ def деньги(шаг, i):
         if ф == 1:
             return f"{ру_имя} {гл(ру_имя, 'купил')} {n} {ру(вещь, n)} по {p} {ру('доллар', p)}; {ру_имя} {гл(ру_имя, 'потратил')} {отв} {ру('доллар', отв)}: {n} × {p} = {отв}."
         if ф == 2:
-            return f"{имя} bought {n} {by_count(n, en)} at {p} {by_count(p, 'dollars')} each; {имя} did not spend {отв + p} {by_count(отв + p, 'dollars')}: {имя} spent {отв}."
+            return (f"{имя} bought {n} {by_count(n, en)} at {p} {by_count(p, 'dollars')} each; {имя} did not spend {отв + p} {by_count(отв + p, 'dollars')}: "
+                    f"{имя} spent {отв}, because {n} × {p} = {отв}.")
         return f"if {имя} bought {n} {by_count(n, en)} at {p} {by_count(p, 'dollars')} each, how much money did {имя} spend? {n} × {p} = {отв} {by_count(отв, 'dollars')}."
     if ф == 0:
         return f"{имя} had {a} {by_count(a, 'dollars')} and spent {b} {by_count(b, 'dollars')}; {имя} has {отв} {by_count(отв, 'dollars')} left: {a} − {b} = {отв}."
@@ -980,11 +1089,12 @@ def деньги(шаг, i):
     if ф == 1:
         return f"у {кого(ру_имя)} было {a} {ру('доллар', a)}, {ру_имя} {гл(ру_имя, 'потратил')} {b} {ру('доллар', b)}; осталось {отв} {ру('доллар', отв)}: {a} − {b} = {отв}."
     if ф == 2:
-        return f"{имя} had {a} {by_count(a, 'dollars')} and spent {b} {by_count(b, 'dollars')}; {имя} does not have {отв + 1} {by_count(отв + 1, 'dollars')} left: {имя} has {отв}."
+        return (f"{имя} had {a} {by_count(a, 'dollars')} and spent {b} {by_count(b, 'dollars')}; {имя} does not have {отв + 1} {by_count(отв + 1, 'dollars')} left: "
+                f"{имя} has {отв}, because {a} − {b} = {отв}.")
     return f"if {имя} had {a} {by_count(a, 'dollars')} and spent {b} {by_count(b, 'dollars')}, how much money is left? {a} − {b} = {отв} {by_count(отв, 'dollars')}."
 
 
-# --- 27. сдача: n купюр по b за вещь ценой p (g1.38) ---
+# --- 27. сдача: n купюр по b за вещь ценой p — лампа ---
 def п_сдача(шаг, i):
     n = 2 + (шаг + i) % 4
     b = (5, 10, 20, 50)[(шаг * 3 + i) % 4]
@@ -996,20 +1106,24 @@ def сдача(шаг, i):
     п = п_сдача(шаг, i)
     n, b, p, c = п["n"], п["b"], п["p"], п["ответ"]
     имя, ру_имя = ИМЕНА_EN[(шаг + i) % len(ИМЕНА_EN)], ИМЕНА_RU[(шаг + i) % len(ИМЕНА_RU)]
+    лампа = f"a lamp costs {p} {by_count(p, 'dollars')} and {имя} hands over {n} {b}-dollar bills"
     ф = (шаг + i) % 4
     if ф == 0:
-        return f"{имя} gave the craftsman {n} {b}-dollar bills for a hat worth {p} {by_count(p, 'dollars')}; the change is {c} {by_count(c, 'dollars')}: {n} × {b} − {p} = {c}."
+        return f"{лампа}; the change is {c} {by_count(c, 'dollars')}: {n} × {b} − {p} = {c}."
     if ф == 1 and _ру_вопрос(шаг, i):
-        return f"если {ру_имя} {гл(ру_имя, 'дал')} мастеру {n} {ру('купюра', n)} по {b} {ру('доллар', b)} за шляпу ценой {p} {ру('доллар', p)}, какова сдача? {n} × {b} − {p} = {c}."
+        return (f"если лампа стоит {p} {ру('доллар', p)}, а {ру_имя} даёт {n} {ру('купюра', n)} по {b} {ру('доллар', b)}, "
+                f"какова сдача? {n} × {b} − {p} = {c}.")
     if ф == 1:
-        return f"{ру_имя} {гл(ру_имя, 'дал')} мастеру {n} {ру('купюра', n)} по {b} {ру('доллар', b)} за шляпу ценой {p} {ру('доллар', p)}; сдача {c} {ру('доллар', c)}: {n} × {b} − {p} = {c}."
+        return (f"лампа стоит {p} {ру('доллар', p)}, {ру_имя} даёт {n} {ру('купюра', n)} по {b} {ру('доллар', b)}; "
+                f"сдача {c} {ру('доллар', c)}: {n} × {b} − {p} = {c}.")
     if ф == 2:
-        return f"{имя} gave the craftsman {n} {b}-dollar bills for a hat worth {p} {by_count(p, 'dollars')}; the change is not {c + 1} {by_count(c + 1, 'dollars')}: it is {c}."
-    return f"if {имя} gave the craftsman {n} {b}-dollar bills for a hat worth {p} {by_count(p, 'dollars')}, how much change did {имя} get? {n} × {b} − {p} = {c} {by_count(c, 'dollars')}."
+        return f"{лампа}; the change is not {c + 1} {by_count(c + 1, 'dollars')}: it is {c}, because {n} × {b} − {p} = {c}."
+    return f"if {лампа}, how much change does {имя} get? {n} × {b} − {p} = {c} {by_count(c, 'dollars')}."
 
 
-# --- 28. прибыль при цене a/b от закупочной (g1.58) ---
-ДРОБИ = ((11, 8), (5, 4), (7, 5), (3, 2), (9, 8))
+# --- 28. прибыль при цене a/b от закупочной — велосипед ---
+# ДРОБИ СВОИ: одиннадцать восьмых, стоявшие здесь, были дробью самой задачи полосы.
+ДРОБИ = ((5, 4), (7, 5), (3, 2), (9, 8), (4, 3))
 
 
 def п_прибыль(шаг, i):
@@ -1022,19 +1136,23 @@ def прибыль(шаг, i):
     п = п_прибыль(шаг, i)
     a, b, p, r = п["a"], п["b"], п["p"], п["ответ"]
     имя, ру_имя = ИМЕНА_EN[(шаг + i) % len(ИМЕНА_EN)], ИМЕНА_RU[(шаг + i) % len(ИМЕНА_RU)]
+    магазин = f"{имя} bought a bicycle for {p} {by_count(p, 'dollars')} and sells it at {a}/{b} of that price"
+    выкладка = f"{p} × {a} ÷ {b} − {p} = {r}"
     ф = (шаг + i) % 4
     if ф == 0:
-        return f"{имя} bought the magazines at {p} {by_count(p, 'dollars')} and sells them at {a}/{b} of the price; the profit is {r} {by_count(r, 'dollars')}: {p} × {a} ÷ {b} − {p} = {r}."
+        return f"{магазин}; the profit is {r} {by_count(r, 'dollars')}: {выкладка}."
     if ф == 1 and _ру_вопрос(шаг, i):
-        return f"если {ру_имя} {гл(ру_имя, 'купил')} журналы за {p} {ру('доллар', p)} и продаёт их за {a}/{b} цены, какова прибыль? {p} × {a} ÷ {b} − {p} = {r}."
+        return (f"если {ру_имя} {гл(ру_имя, 'купил')} велосипед за {p} {ру('доллар', p)} и продаёт его за {a}/{b} этой цены, "
+                f"какова прибыль? {выкладка}.")
     if ф == 1:
-        return f"{ру_имя} {гл(ру_имя, 'купил')} журналы за {p} {ру('доллар', p)} и продаёт их за {a}/{b} цены; прибыль {r} {ру('доллар', r)}: {p} × {a} ÷ {b} − {p} = {r}."
+        return (f"{ру_имя} {гл(ру_имя, 'купил')} велосипед за {p} {ру('доллар', p)} и продаёт его за {a}/{b} этой цены; "
+                f"прибыль {r} {ру('доллар', r)}: {выкладка}.")
     if ф == 2:
-        return f"{имя} bought the magazines at {p} {by_count(p, 'dollars')} and sells them at {a}/{b} of the price; the profit is not {r + 1} {by_count(r + 1, 'dollars')}: it is {r}."
-    return f"if {имя} bought the magazines at {p} {by_count(p, 'dollars')} and sells them at {a}/{b} of the price, what is the profit? {p} × {a} ÷ {b} − {p} = {r} {by_count(r, 'dollars')}."
+        return f"{магазин}; the profit is not {r + 1} {by_count(r + 1, 'dollars')}: it is {r}, because {выкладка}."
+    return f"if {магазин}, what is the profit? {выкладка} {by_count(r, 'dollars')}."
 
 
-# --- 29. завышение на q процентов (g1.45) ---
+# --- 29. завышение на q процентов — гости праздника ---
 ЗАВЫШЕНИЯ = ((20, 5), (25, 4), (50, 2), (10, 10))  # (проценты, шаг истинного числа)
 
 
@@ -1048,19 +1166,23 @@ def завышение(шаг, i):
     п = п_завышение(шаг, i)
     q, n, r = п["q"], п["n"], п["ответ"]
     имя, ру_имя = ИМЕНА_EN[(шаг + i) % len(ИМЕНА_EN)], ИМЕНА_RU[(шаг + i) % len(ИМЕНА_RU)]
+    слова = f"{имя} said {n} guests came to the party, overstating the number by {q} percent"
+    выкладка = f"{n} × 100 ÷ (100 + {q}) = {r}"
     ф = (шаг + i) % 4
     if ф == 0:
-        return f"{имя} reported {n} {by_count(n, 'people')} at the concert, overstating the number by {q} percent; {r} {by_count(r, 'people')} really attended: {n} × 100 ÷ (100 + {q}) = {r}."
+        return f"{слова}; {r} guests really came: {выкладка}."
     if ф == 1 and _ру_вопрос(шаг, i):
-        return f"если {ру_имя} {гл(ру_имя, 'сообщил')}, что на концерте было {n} {ру('человек', n)}, завысив число на {q} {ру('процент', q)}, сколько человек было на самом деле? {n} × 100 ÷ (100 + {q}) = {r}."
+        return (f"если {ру_имя} {гл(ру_имя, 'сказал')}, что гостей на празднике было {n}, но {гл(ру_имя, 'завысил')} число "
+                f"на {q} {ру('процент', q)}, сколько гостей было на самом деле? {выкладка}.")
     if ф == 1:
-        return f"{ру_имя} {гл(ру_имя, 'сообщил')}, что на концерте было {n} {ру('человек', n)}, завысив число на {q} {ру('процент', q)}; на самом деле было {r} {ру('человек', r)}: {n} × 100 ÷ (100 + {q}) = {r}."
+        return (f"{ру_имя} {гл(ру_имя, 'сказал')}, что гостей на празднике было {n}, но {гл(ру_имя, 'завысил')} число "
+                f"на {q} {ру('процент', q)}; на самом деле гостей было {r}: {выкладка}.")
     if ф == 2:
-        return f"{имя} reported {n} {by_count(n, 'people')} at the concert, overstating the number by {q} percent; the real number is not {n}: it is {r}."
-    return f"if {имя} reported {n} {by_count(n, 'people')} at the concert, overstating the number by {q} percent, how many people really attended? {n} × 100 ÷ (100 + {q}) = {r}."
+        return f"{слова}; the real number is not {n}: it is {r}, because {выкладка}."
+    return f"if {слова}, how many guests really came? {выкладка}."
 
 
-# --- 30. половина / кратно и всего (g1.10) ---
+# --- 30. половина / кратно и всего — яблоки и груши в корзине ---
 КРАТНОСТИ_ВСЕГО = (("half as many", "вдвое меньше", 2, True), ("twice as many", "вдвое больше", 2, False),
                    ("three times as many", "втрое больше", 3, False))
 
@@ -1068,31 +1190,32 @@ def завышение(шаг, i):
 def п_половина(шаг, i):
     слово, слово_ру, k, делить = КРАТНОСТИ_ВСЕГО[(шаг + i) % 3]
     n = 2 * (3 + (шаг * 3 + i) % 12) if делить else 3 + (шаг * 3 + i) % 12
-    жуки = n // k if делить else n * k
-    return dict(слово=слово, слово_ру=слово_ру, k=k, делить=делить, n=n, ответ=n + жуки)
+    груш = n // k if делить else n * k
+    return dict(слово=слово, слово_ру=слово_ру, k=k, делить=делить, n=n, ответ=n + груш)
 
 
 def половина(шаг, i):
     п = п_половина(шаг, i)
     слово, слово_ру, k, делить, n, t = п["слово"], п["слово_ру"], п["k"], п["делить"], п["n"], п["ответ"]
     осн = f"{n} + {n} ÷ {k} = {t}" if делить else f"{n} + {n} × {k} = {t}"
+    корзина = f"there were {n} apples and {слово} pears as apples in the basket"
     ф = (шаг + i) % 4
     if ф == 0:
-        return f"there were {n} ants and {слово} bugs as ants in the garden; there were {t} insects in all: {осн}."
+        return f"{корзина}; there were {t} apples and pears in all: {осн}."
     if ф == 1 and _ру_вопрос(шаг, i):
-        return f"если в саду было {n} {ру('муравей', n)} и {слово_ру} жуков, сколько всего муравьёв и жуков? {осн}."
+        return f"если в корзине было {n} {ру('яблоко', n)} и {слово_ру} груш, сколько всего яблок и груш? {осн}."
     if ф == 1:
-        return f"в саду было {n} {ру('муравей', n)} и {слово_ру} жуков; всего муравьёв и жуков {t}: {осн}."
+        return f"в корзине было {n} {ру('яблоко', n)} и {слово_ру} груш; всего яблок и груш {t}: {осн}."
     if ф == 2:
-        return f"there were {n} ants and {слово} bugs as ants in the garden; there were not {t + 1} insects in all: there were {t}."
-    return f"if there were {n} ants and {слово} bugs as ants in the garden, how many insects were there in all? {осн}."
+        return f"{корзина}; there were not {t + 1} apples and pears in all: there were {t}, because {осн}."
+    return f"if {корзина}, how many apples and pears were there in all? {осн}."
 
 
-# ---------- 31. part and its multiple give the whole (e9 04.09, g1 ~15 problems) ----------
+# ---------- 31. part and its multiple give the whole: the boat and the trailer ----------
 def п_части(шаг, i):
     k = (2, 3, 4)[(шаг + i) % 3]
     лот = 10 * (2 + (шаг * 7 + i * 3) % 12)
-    # the multiplier by word on even shows, by number on odd (SVAMP writes both)
+    # the multiplier by word on even shows, by number on odd
     слово = ("twice", "three times", "four times")[k - 2] if i % 2 == 0 else f"{k} times"
     return dict(k=k, лот=лот, дом=лот * k, всего=лот * (k + 1), слово=слово,
                 ру_слово=("вдвое", "втрое", "вчетверо")[k - 2], ответ=лот)
@@ -1100,52 +1223,47 @@ def п_части(шаг, i):
 
 def части(шаг, i):
     п = п_части(шаг, i)
-    k, лот, дом, всего, слово, ру_ = п["k"], п["лот"], п["дом"], п["всего"], п["слово"], п["ру_слово"]
-    # the whole opens the ledger (М-145: the answer opens with the question's
-    # first quantity); the link «k + 1» that made the divisor stands after it
-    # ДВА МЕСТА ЗАКОНУ НЕ ОТДАНЫ, И СКАЗАНО ПОЧЕМУ (08.09). Ниже слово «dollars» стои́т ПОСЛЕ
-    # ЛЕДЖЕРА, а не после счёта: «…how much did the lot cost? 330 ÷ 3 = 110, 2 + 1 = 3 dollars».
-    # Числом, правящим формой, было бы 110 — ответ, — а не 3, последнее число цепи. Позвать сюда
-    # закон значило бы согласовать имя с ЧУЖИМ числом, и прибор половинчатого закона считает эти
-    # два места по праву: долг тут не в вызове, а в самой фразе, где мера прилипла к леджеру.
-    лот_осн = f"{всего} ÷ {k + 1} = {лот}, {k} + 1 = {k + 1}"
-    дом_осн = f"{всего} ÷ {k + 1} = {лот}, {лот} × {k} = {дом}"
+    k, прицеп, лодка, всего, слово, ру_ = п["k"], п["лот"], п["дом"], п["всего"], п["слово"], п["ру_слово"]
+    # the whole opens the ledger (М-145: the answer opens with the question's first quantity);
+    # the link «k + 1» that made the divisor stands after it. ДВА МЕСТА ЗАКОНУ НЕ ОТДАНЫ (08.09):
+    # слово «dollars» стои́т ПОСЛЕ ЛЕДЖЕРА, а не после счёта, и число, правящее формой, было бы
+    # ответом, а не последним числом цепи; долг — в самой фразе, где мера прилипла к леджеру.
+    прицеп_осн = f"{всего} ÷ {k + 1} = {прицеп}, {k} + 1 = {k + 1}"
+    лодка_осн = f"{всего} ÷ {k + 1} = {прицеп}, {прицеп} × {k} = {лодка}"
+    пара = f"a boat and a trailer cost {всего} {by_count(всего, 'dollars')} and the boat cost {слово} as much as the trailer"
     ф = (шаг + i) % 4
     if ф == 0:
-        return f"a house and a lot cost {всего} {by_count(всего, 'dollars')} and the house cost {слово} as much as the lot; the lot cost {лот} {by_count(лот, 'dollars')}: {лот_осн}."
+        return f"{пара}; the trailer cost {прицеп} {by_count(прицеп, 'dollars')}: {прицеп_осн}."
     if ф == 1 and _ру_вопрос(шаг, i):
-        return f"если дом и участок стоили {всего} {ру('доллар', всего)}, а дом стоил {ру_} дороже участка, сколько стоил участок? {лот} {ру('доллар', лот)}: {лот_осн}."
+        return (f"если лодка и прицеп стоили {всего} {ру('доллар', всего)}, а лодка стоила {ру_} дороже прицепа, сколько стоил прицеп? "
+                f"{прицеп} {ру('доллар', прицеп)}: {прицеп_осн}.")
     if ф == 1:
-        return f"дом и участок стоили {всего} {ру('доллар', всего)}, а дом стоил {ру_} дороже участка; участок стоил {лот} {ру('доллар', лот)}: {лот_осн}."
+        return (f"лодка и прицеп стоили {всего} {ру('доллар', всего)}, а лодка стоила {ру_} дороже прицепа; "
+                f"прицеп стоил {прицеп} {ру('доллар', прицеп)}: {прицеп_осн}.")
     if ф == 2:
-        return f"a house and a lot cost {всего} {by_count(всего, 'dollars')} and the house cost {слово} as much as the lot; the house cost {дом} {by_count(дом, 'dollars')}: {дом_осн}."
+        return f"{пара}; the boat cost {лодка} {by_count(лодка, 'dollars')}: {лодка_осн}."
     if ((шаг + i) // 4) % 2 == 0:
-        return f"if a house and a lot cost {всего} {by_count(всего, 'dollars')} and the house cost {слово} as much as the lot, how much did the lot cost? {лот_осн} {by_count(лот, 'dollars')}."
-    return f"if a house and a lot cost {всего} {by_count(всего, 'dollars')} and the house cost {слово} as much as the lot, how much did the house cost? {дом_осн} {by_count(дом, 'dollars')}."
+        return f"if {пара}, how much did the trailer cost? {прицеп_осн} {by_count(прицеп, 'dollars')}."
+    return f"if {пара}, how much did the boat cost? {лодка_осн} {by_count(лодка, 'dollars')}."
 
 
-# ФОРМУЛЫ СЕМЕЙСТВ — ЗАКОН ОТВЕТА ОТ ВЕЛИЧИН ВОПРОСА (заказ holon 03.09: таблица
-# родов с формулами как эталон суда охвата — какие рамки ДОЛЖНЫ купиться, и
-# ложь есть купленная рамка с чужой формулой). Имена величин — имена полей
-# функции параметров п_*; формула — то, что пересчитывает суд семейства.
-# ГЛАГОЛЫ ПОЛОС ТОЧКАМИ (e9 04.09, семейство 22 на b4583a8c: организм не купил ни
-# одного глагола полосы — все показы «jumped N» стояли внутри вопросов «if …, how
-# many …?» или отрицаний, а рынок глаголов историй голосует только по
-# УТВЕРЖДЕНИЯМ, М-138). Каждому глаголу — утвердительные показы точками, ≥ 2
-# деятелей и ≥ 2 вещей на глагол: (глагол прош., основа, деятели — None значит
-# имена пакета, вещи по дому глагол–вещь). Десять глаголов, по два слота на
-# каждый за пять проходов: восемь показов, из них шесть утвердительных.
+# ГЛАГОЛЫ ПОЛОС ТОЧКАМИ (e9 04.09, семейство 22: рынок глаголов историй голосует только по
+# УТВЕРЖДЕНИЯМ, М-138, а все показы «V N» стояли внутри вопросов и отрицаний). Каждому глаголу —
+# утвердительные показы точками, ≥ 2 деятелей и ≥ 2 вещей на глагол: (глагол прош., основа,
+# деятели — None значит имена пакета, вещи). Десять глаголов, по два слота на каждый за пять
+# проходов. ГЛАГОЛЫ И ВЕЩИ СВОИ С 23.09: прыжки кузнечика, отжимания и выброшенные крышки были
+# сценами самой полосы.
 ПОЛОСЫ = (
-    ("jumped", "jump", ("the grasshopper", "the mouse", "the frog"), ("inches", "feet")),
-    ("did", "do", None, ("push-ups", "crunches")),
-    ("completed", "complete", None, ("pages", "laps")),
-    ("watched", "watch", None, ("movies", "episodes")),
-    ("won", "win", None, ("games", "medals")),
-    ("sent", "send", None, ("letters", "cards")),
-    ("lost", "lose", None, ("coins", "marbles")),
-    ("removed", "remove", None, ("books", "stickers")),
-    ("raised", "raise", ("the class", "the team", "the club"), ("dollars",)),
-    ("threw away", "throw away", None, ("caps", "bottles")),
+    ("climbed", "climb", ("the goat", "the dog", "the fox"), ("steps", "meters")),
+    ("baked", "bake", None, ("pies", "loaves")),
+    ("painted", "paint", None, ("posts", "boards")),
+    ("picked", "pick", None, ("plums", "pears")),
+    ("won", "win", None, ("matches", "races")),
+    ("sent", "send", None, ("parcels", "postcards")),
+    ("lost", "lose", None, ("buttons", "keys")),
+    ("watched", "watch", None, ("films", "plays")),
+    ("sold", "sell", ("the bakery", "the cafe", "the shop"), ("cakes",)),
+    ("washed", "wash", None, ("cups", "plates")),
 )
 
 
@@ -1163,8 +1281,8 @@ def п_полосы(шаг, i):
 
 
 # РУССКИЕ ПОЛОСЫ (15.09, последний долг щербатости). Глаголы и вещи взяты СВОИ, а не
-# переведённые: «the grasshopper jumped» требует зверя, чьё имя склоняется, и русская полоса
-# берёт вместо зверей ИМЕНА дома, а вместо дюймов — страницы, письма и монеты, объявленные
+# переведённые: английская полоса требовала зверя, чьё имя склоняется, и русская полоса
+# берёт вместо зверей ИМЕНА дома, а вместо мер — страницы, письма и монеты, объявленные
 # пакетом счётными формами.
 #
 #     ГЛАГОЛ ПОЛОСЫ СОГЛАСУЕТСЯ С ИМЕНЕМ, А ИМЯ ИМЕЕТ РОД. Оттого всякий глагол объявлен
@@ -1187,9 +1305,7 @@ def п_полосы(шаг, i):
 
 
 def полосы(шаг, i):
-    # РОД ЕСТЬ ДЕЛО, А НЕ ЯЗЫК: русская полоса идёт в ТОТ ЖЕ род, что английская, — как
-    # идут в свои роды русские поверхности прочих семейств. Заводить «полосы_ru» отдельным
-    # родом значило бы сказать, будто два языка учат разному делу.
+    # РОД ЕСТЬ ДЕЛО, А НЕ ЯЗЫК: русская полоса идёт в ТОТ ЖЕ род, что английская.
     if _ру_вопрос(шаг, i):
         return полосы_ru(шаг, i)
     п = п_полосы(шаг, i)
@@ -1226,14 +1342,17 @@ def полосы_ru(шаг, i):
                 f"чем {и1}: {x} − {y} = {d}.")
     if ф == 2:
         # МНОЖЕСТВЕННОЕ ПРОШЕДШЕЕ НЕ ЕСТЬ ФОРМА ПО РОДУ ИМЕНИ: «вместе они написали» берёт
-        # окончание «-и», какого помощник `гл` не знает вовсе — он знает лишь мужское и
-        # женское. Форма объявлена рядом с основой, как объявлены прочие пары дома.
+        # окончание «-и», какого помощник `гл` не знает вовсе.
         мн = МНОЖЕСТВЕННОЕ_RU.get(гл_пр, гл_пр + "и" if гл_пр.endswith("л") else гл_пр)
         return f"{факты} вместе они {мн} {s} {ру(вещь, s)}: {x} + {y} = {s}."
     return (f"{факты} на сколько {ру(вещь, 5)} больше {гл(и1, гл_пр)} {и1}, "
             f"чем {и2}? {x} − {y} = {d}.")
 
 
+# ФОРМУЛЫ СЕМЕЙСТВ — ЗАКОН ОТВЕТА ОТ ВЕЛИЧИН ВОПРОСА (заказ holon 03.09: таблица
+# родов с формулами как эталон суда охвата — какие рамки ДОЛЖНЫ купиться, и
+# ложь есть купленная рамка с чужой формулой). Имена величин — имена полей
+# функции параметров п_*; формула — то, что пересчитывает суд семейства.
 ФОРМУЛЫ = {
     "сумма": "ответ = x + y", "температура": "ответ = t0 ± d (падение: −)", "процент": "ответ = часть × 100 ÷ всего",
     "фунты": "ответ = унц ÷ 16", "глубина": "ответ = v ÷ (w × l)", "вероятность": "ответ = r/(r + b)",
@@ -1243,10 +1362,10 @@ def полосы_ru(шаг, i):
     "ставка": "ответ = в_час × часы", "листки": "ответ = было − раз − два", "разница": "ответ = x − y",
     "скидка": "ответ = цена − скидка", "всего": "ответ = x + y (в одной и другой) | x − y (отдал)", "группы": "ответ = всего ÷ n",
     "остаток_деления": "ответ = всего − n × (всего ÷ n), 1 ≤ ответ < n",
-    "больше": "ответ = x − y", "отбор": "ответ = величина названного срока (a | b | c)", "остаток": "ответ = n − k (проданы торты) | n (проданы булочки)",
+    "больше": "ответ = x − y", "отбор": "ответ = величина названного срока (a | b | c)", "остаток": "ответ = n − k (проданы яблоки) | n (проданы груши)",
     "класс": "ответ = g + b | s − g", "деньги": "ответ = n × p | a − b", "сдача": "ответ = n × b − p",
     "прибыль": "ответ = p × a ÷ b − p", "завышение": "ответ = n × 100 ÷ (100 + q)", "половина": "ответ = n + n ÷ k (половина) | n + n × k (кратно)",
-    "части": "ответ = всего ÷ (k + 1) (участок) | всего ÷ (k + 1) × k (дом)",
+    "части": "ответ = всего ÷ (k + 1) (прицеп) | всего ÷ (k + 1) × k (лодка)",
     "полосы": "ответ = x − y (more | fewer) | x + y (together)",
 }
 
@@ -1282,12 +1401,35 @@ def язык_показа(показ):
     return "ru" if re.search(r"[а-яё]", показ) else "en"
 
 
+# ПРЕДЛОЖЕНИЕ ОТВЕТА ПОВТОРЯЕТ ОТВЕТ, А НЕ ПОСЛЕДНЕЕ ЧИСЛО (23.09). Правило брало последнее
+# число страницы и десять страниц мира писали «сколько стоил участок? 50 долларов: 250 ÷ 5 = 50,
+# 4 + 1 = 5. значит ответ: 5.» — последний шаг был ЗВЕНОМ (делителем, выведенным после), а суд
+# сверял предложение с последним шагом и звал ложь истиной.
+#
+#     ШАГ, ЧЕЙ ИТОГ УЖЕ СТОЯЛ ЧИСЛОМ В ПРЕЖНЕМ ШАГЕ, ЕСТЬ ЗВЕНО, А НЕ ОТВЕТ; ДРОБЬ — ОТВЕТ, НО
+#     НЕ ЧИСЛО. Ни того, ни другого предложение ответа повторять не вправе.
+ЧИСЛО_ШАГА = re.compile(r"−?\d+")
+
+
+def ответ_не_последний(хвост):
+    """Последний шаг — звено («650 ÷ 5 = 130, 4 + 1 = 5») или ответ — дробь («4 + 1 = 5: 4/5»)."""
+    if re.search(r"\d/\d", хвост):
+        return True
+    шаги = [ш for ш in хвост.split(", ") if " = " in ш]
+    if len(шаги) < 2:
+        return False
+    итог = ЧИСЛО_ШАГА.findall(шаги[-1].rsplit(" = ", 1)[1])
+    прежние = {ч for ш in шаги[:-1] for ч in ЧИСЛО_ШАГА.findall(ш.rsplit(" = ", 1)[0])}
+    return bool(итог) and итог[0] in прежние
+
+
 def с_ответом(показ, шаг, i):
     """Вопрос с уравнением получает предложение ответа (каждый второй)."""
     if "?" not in показ or (шаг * 5 + i) % 2 == 0:
         return показ
+    хвост = показ.split("? ")[-1]
     м = ПОСЛЕДНЕЕ_ЧИСЛО.search(показ)
-    if not м or " = " not in показ.split("? ")[-1]:
+    if not м or " = " not in хвост or ответ_не_последний(хвост):
         return показ
     return показ + " " + ОТВЕТ_ПРЕДЛОЖЕНИЕМ[язык_показа(показ)].format(n=м.group(1))
 

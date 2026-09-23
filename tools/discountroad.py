@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
-"""THE MONEY ROAD WITH A DISCOUNT — «each pack costs $76, the discount is $25» (05.09).
+"""THE MONEY ROAD WITH A DISCOUNT — «each bottle costs $30, the discount is $3» (05.09; scenes 23.09).
 
 The SECOND gate of the silence atlas by d5's measure: 72–76 turns of the grove stop on the
 money road. The shape that stops them is not arithmetic — it is a price with a DISCOUNT and a
 question that may ask for one of four different things over the same two numbers:
 
-    THE PRICE AFTER THE DISCOUNT.   «how much is paid for one pack? $51: 76 − 25 = 51.»
-    THE BILL FOR SEVERAL.           «how much is paid for 5 packs? $255: 5 × 51 = 255.»
-    HOW MANY FIT INTO A SUM.        «how many packs can be bought for $380? 5: 380 ÷ 76 = 5.»
-    HOW MANY AT THE DISCOUNTED PRICE. «for $255? 5: 255 ÷ 51 = 5.»
+    THE PRICE AFTER THE DISCOUNT.   «how much is paid for one bottle? $27: 30 − 3 = 27.»
+    THE BILL FOR SEVERAL.           «how much is paid for 5 bottles? $135: 5 × 27 = 135.»
+    HOW MANY FIT INTO A SUM.        «how many bottles can be bought for $150? 5: 150 ÷ 30 = 5.»
+    HOW MANY AT THE DISCOUNTED PRICE. «for $135? 5: 135 ÷ 27 = 5.»
 
 A reader that has bought «price × count» and nothing else answers the first question with the
 price and the third with a multiplication. The four questions stand over ONE pair of numbers
@@ -25,6 +25,12 @@ of a price, a discount, a bill and a purchase, and the currency sign with its si
 
 WHAT IS NOT MEASURED, NAMED: a discount in per cent (the percent house owns it), a discount on
 the whole bill rather than on each item, and change from a payment.
+
+REWRITTEN 23.09 (the owner's word: a band is an instrument, never a source). The pages said the
+band's own sentence — «each pack costs $76. the discount is $25 on each pack» was SVAMP chal-1,
+numbers and all, and the leak court named it. The construction stays (a price, a discount on
+each item, four questions over one pair); the goods are the house's own (a bottle and a glass,
+whose gender fits the declared frames in all nine languages) and the grid is drawn by a rule.
 """
 import pathlib
 import re
@@ -35,29 +41,45 @@ import asking  # noqa: E402 — the house of the pair declares which openers a q
 import priceforms as P  # noqa: E402 — the pack's counting rule (P.форма)
 
 ЯЗЫКИ = ("ru", "en", "de", "fr", "es", "it", "pt", "nl", "pl")
-# ПАРЫ (цена, скидка) — скидка всегда меньше цены, и разность больше единицы
-ЦЕНЫ = ((76, 25), (48, 17), (95, 38), (63, 29), (52, 14), (87, 46), (39, 21), (71, 33),
-        (84, 27), (56, 19), (68, 35), (92, 44), (44, 15), (58, 23), (66, 31), (74, 39),
-        (82, 47), (96, 55), (35, 12), (47, 18), (59, 26), (73, 34), (85, 42), (91, 49))
+# ПАРЫ (цена, скидка) ВЫВОДЯТСЯ ПРАВИЛОМ, А НЕ ПЕРЕПИСЫВАЮТСЯ (23.09): цена от 30 до 96, скидка
+# от 10 до 45 % цены, разность не меньше трёх, цены не повторяются. Прежняя таблица начиналась
+# парой (76, 25) — числами самой задачи полосы.
+def _сетка():
+    вон = []
+    for i in range(80):
+        ц = 30 + (i * 17) % 67
+        с = max(3, ц * (10 + (i * 7) % 36) // 100)
+        if ц - с < 3 or any(п[0] == ц for п in вон):
+            continue
+        вон.append((ц, с))
+        if len(вон) == 24:
+            break
+    return tuple(вон)
+
+
+ЦЕНЫ = _сетка()
 СЧЁТ = (2, 3, 4, 5)
 ЗНАК = {"ru": ("₽", "после"), "en": ("$", "до"), "de": ("€", "после"), "fr": ("€", "после"),
         "es": ("€", "после"), "it": ("€", "после"), "pt": ("€", "после"), "nl": ("€", "после"),
         "pl": ("zł", "после")}
 # ДВЕ ВЕЩИ, КОТОРЫЕ ПОКУПАЮТ ЧИСЛОМ. Счётная форма — по правилу пакета, а не по трём таблицам.
+# РОД ВЕЩИ ПОДОБРАН ПОД ОБЪЯВЛЕННЫЕ РАМКИ, А НЕ РАМКИ ПОД ВЕЩЬ: первая — женского рода там, где
+# рамка говорит «каждая / jede / każda», мужского при «un / um», среднего при «elk»; вторая —
+# по рамкам `РАМКА2`. Бутылка и стакан ложатся в обе линейки на всех девяти языках.
 ТОВАРЫ = {
-    "ru": (dict(one="пачка", few="пачки", many="пачек"), dict(one="билет", few="билета", many="билетов")),
-    "en": (dict(one="pack", many="packs"), dict(one="ticket", many="tickets")),
-    "de": (dict(one="Packung", many="Packungen"), dict(one="Karte", many="Karten")),
-    "fr": (dict(one="paquet", many="paquets"), dict(one="billet", many="billets")),
-    "es": (dict(one="paquete", many="paquetes"), dict(one="billete", many="billetes")),
-    "it": (dict(one="pacco", many="pacchi"), dict(one="biglietto", many="biglietti")),
-    "pt": (dict(one="pacote", many="pacotes"), dict(one="bilhete", many="bilhetes")),
-    "nl": (dict(one="pak", many="pakken"), dict(one="kaartje", many="kaartjes")),
-    "pl": (dict(one="paczka", few="paczki", many="paczek"), dict(one="bilet", few="bilety", many="biletów")),
+    "ru": (dict(one="бутылка", few="бутылки", many="бутылок"), dict(one="стакан", few="стакана", many="стаканов")),
+    "en": (dict(one="bottle", many="bottles"), dict(one="glass", many="glasses")),
+    "de": (dict(one="Flasche", many="Flaschen"), dict(one="Tasse", many="Tassen")),
+    "fr": (dict(one="flacon", many="flacons"), dict(one="gobelet", many="gobelets")),
+    "es": (dict(one="frasco", many="frascos"), dict(one="vaso", many="vasos")),
+    "it": (dict(one="flacone", many="flaconi"), dict(one="bicchiere", many="bicchieri")),
+    "pt": (dict(one="frasco", many="frascos"), dict(one="copo", many="copos")),
+    "nl": (dict(one="flesje", many="flesjes"), dict(one="kopje", many="kopjes")),
+    "pl": (dict(one="butelka", few="butelki", many="butelek"), dict(one="kubek", few="kubki", many="kubków")),
 }
 # ВИНИТЕЛЬНЫЙ ПАДЕЖ ТАМ, ГДЕ ЯЗЫК ЕГО ГНЁТ: «на каждую пачкУ», «na każdą paczkĘ». Падеж
 # пишется, а не выводится из именительного — иначе «на каждую пачка» уходит в свод.
-ВИН = {"ru": ("пачку", "билет"), "pl": ("paczkę", "bilet")}
+ВИН = {"ru": ("бутылку", "стакан"), "pl": ("butelkę", "kubek")}
 # РОД ТОВАРА ТАМ, ГДЕ ВОПРОСНОЕ СЛОВО ЕГО ДЕРЖИТ
 РОД = {"es": ("m", "m"), "it": ("m", "m"), "pt": ("m", "m")}
 КСК = {"es": {"m": "¿cuántos", "f": "¿cuántas"}, "it": {"m": "quanti", "f": "quante"},
@@ -296,42 +318,61 @@ def _судить_образцом(строка):
     return (True, False) if совпал else (False, False)
 
 
+def подсадки():
+    """ПРЕДСТАВЛЕННОЕ «НЕТ» (М-106), ВЫВЕДЕННОЕ ИЗ ПЕРВОЙ ПАРЫ СЕТКИ (23.09), — [(род, битая)].
+
+    Суд мира держал подсадки литералами прежней сетки («each pack costs $76. the discount is $25»
+    — это задача SVAMP chal-1), и перепись сцен и сетки оставила его без единой пойманной: 0 из 8.
+    Литералы «= 51.» пережили бы и следующую смену, заменяя ничто на ничто, — порча берётся у
+    страницы, которую дом пишет сейчас. Одна дверь на две проверки: самопроверка и суд мира."""
+    ц0, с0 = ЦЕНЫ[0]
+    п0, k0 = ц0 - с0, 5
+    вон = []
+    for язык in ЯЗЫКИ:
+        # (1) СКИДКА НЕ ВЫЧТЕНА: платят полную цену
+        ц = страница(язык, "цена_со_скидкой", 0, ц0, с0)
+        вон.append(("скидка не вычтена", ц, ц.replace(f"= {п0}.", f"= {ц0}.")))
+        # (2) СЧЁТ ВЗЯТ ПО ПОЛНОЙ ЦЕНЕ, А НЕ ПО ЦЕНЕ СО СКИДКОЙ
+        с = страница(язык, "счёт_со_скидкой", 0, ц0, с0, k0)
+        вон.append(("счёт по полной цене", с,
+                    с.replace(f"{k0} × {п0} = {k0 * п0}", f"{k0} × {ц0} = {k0 * ц0}")
+                     .replace(_цена(язык, k0 * п0), _цена(язык, k0 * ц0))))
+        # (3) СКОЛЬКО ВОЙДЁТ В СУММУ: делено не на то
+        д = страница(язык, "сколько_за_сумму", 0, ц0, с0, k0)
+        вон.append(("сумма делена не на ту цену", д, д.replace(f"÷ {ц0} = {k0}", f"÷ {п0} = {k0}")))
+        # (4) СУММА СО СКИДКОЙ ДЕЛЕНА НА ПОЛНУЮ ЦЕНУ
+        дс = страница(язык, "сколько_со_скидкой", 0, ц0, с0, k0)
+        вон.append(("сумма со скидкой делена на полную цену", дс, дс.replace(f"÷ {п0} = {k0}", f"÷ {ц0} = {k0}")))
+        # (5) СУММА НЕ ДЕЛИТСЯ НА ЦЕНУ, А СЧЁТ НАЗВАН ЦЕЛЫМ
+        вон.append(("сумма не делится", д, д.replace(str(ц0 * k0), str(ц0 * k0 + 1))))
+    for род, было, битая in вон:
+        assert битая != было, (род, было)
+    return [(род, битая) for род, _, битая in вон]
+
+
 def _самопроверка():
     for показ in ПОКАЗЫ:
         assert судить(показ) == (True, True), показ
-    мутанты = 0
+    ц0, с0 = ЦЕНЫ[0]
+    п0, k0 = ц0 - с0, 5
     for язык in ЯЗЫКИ:
-        # (1) СКИДКА НЕ ВЫЧТЕНА: платят полную цену
-        ц = страница(язык, "цена_со_скидкой", 0, 76, 25)
-        assert судить(ц) == (True, True), ц
-        битая = ц.replace("= 51.", "= 76.")
-        assert судить(битая) == (True, False), битая
-        # (2) СЧЁТ ВЗЯТ ПО ПОЛНОЙ ЦЕНЕ, А НЕ ПО ЦЕНЕ СО СКИДКОЙ
-        с = страница(язык, "счёт_со_скидкой", 0, 76, 25, 5)
-        assert судить(с) == (True, True), с
-        битая = с.replace("5 × 51 = 255", "5 × 76 = 380").replace(_цена(язык, 255), _цена(язык, 380))
-        assert судить(битая) == (True, False), битая
-        # (3) СКОЛЬКО ВОЙДЁТ В СУММУ: делено не на то
-        д = страница(язык, "сколько_за_сумму", 0, 76, 25, 5)
-        assert судить(д) == (True, True), д
-        битая = д.replace("÷ 76 = 5", "÷ 51 = 5")
-        assert судить(битая) == (True, False), битая
-        # (4) СУММА СО СКИДКОЙ ДЕЛЕНА НА ПОЛНУЮ ЦЕНУ
-        дс = страница(язык, "сколько_со_скидкой", 0, 76, 25, 5)
-        assert судить(дс) == (True, True), дс
-        битая = дс.replace("÷ 51 = 5", "÷ 76 = 5")
-        assert судить(битая) == (True, False), битая
-        мутанты += 4
-        # (5) ЗАЧИН ВОПРОСА ОБЪЯВЛЕН ДОМОМ ПАРЫ
-        for стр in (ц, с, д, дс):
+        for форма in ФОРМЫ:
+            стр = страница(язык, форма, 0, ц0, с0, k0)
+            assert судить(стр) == (True, True), стр
+            # ЗАЧИН ВОПРОСА ОБЪЯВЛЕН ДОМОМ ПАРЫ
             вопрос = стр[:стр.index("?") + 1].split(". ")[-1]
             assert asking.зачин_объявлен(вопрос) is not False, (язык, вопрос)
+    мутанты = 0
+    for род, битая in подсадки():
+        assert судить(битая) == (True, False), (род, битая)
+        мутанты += 1
+    ц1, с1 = ЦЕНЫ[1]
     for язык in ЯЗЫКИ:
-        print("  ", страница(язык, "цена_со_скидкой", 0, 76, 25))
+        print("  ", страница(язык, "цена_со_скидкой", 0, ц0, с0))
     for язык in ("ru", "en", "de", "pl"):
-        print("  ", страница(язык, "счёт_со_скидкой", 0, 76, 25, 5))
-        print("  ", страница(язык, "сколько_за_сумму", 1, 48, 17, 4))
-        print("  ", страница(язык, "сколько_со_скидкой", 1, 48, 17, 4))
+        print("  ", страница(язык, "счёт_со_скидкой", 0, ц0, с0, k0))
+        print("  ", страница(язык, "сколько_за_сумму", 1, ц1, с1, 4))
+        print("  ", страница(язык, "сколько_со_скидкой", 1, ц1, с1, 4))
     по_форме = {}
     for _, (язык, форма) in ПОКАЗЫ.items():
         по_форме[форма] = по_форме.get(форма, 0) + 1

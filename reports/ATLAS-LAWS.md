@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 597 законов
+# УКАЗАТЕЛЬ ЗАКОНОВ — общее право свода: 599 законов
 
 Собран из докстрингов и комментариев `tools`, `courts`, `scripts` орудием
 `tools/law_atlas.py`. Взяты ОБЩИЕ законы — те, что держатся не одним файлом.
@@ -6,7 +6,7 @@
     ЗАКОН, СКАЗАННЫЙ ОДНАЖДЫ В ОДНОМ ФАЙЛЕ, ЕСТЬ РАССУЖДЕНИЕ ЭТОГО ФАЙЛА;
     ЗАКОН, ПОВТОРЁННЫЙ ДВАДЦАТЬЮ ФАЙЛАМИ, ЕСТЬ ОБЩЕЕ ПРАВО СВОДА.
 
-Всего в дереве 7561 разных законов на 9694 упоминаний; сказанных однажды — 6964, и они остаются при своём месте.
+Всего в дереве 7600 разных законов на 9734 упоминаний; сказанных однажды — 7001, и они остаются при своём месте.
 
 
 ## Держат 85 файлов
@@ -190,8 +190,6 @@
   tools/gen_genesis_homo.py, tools/gen_genesis_measure.py, tools/gen_genesis_median.py, tools/gen_genesis_numline.py, tools/gen_genesis_overlap.py, tools/gen_genesis_pctbase.py … и ещё 4
 - **ОБЕ СТОРОНЫ ЛОВУШКИ ОБЯЗАНЫ БЫТЬ ПОКАЗАНЫ**  
   tools/angleforms.py, tools/condforms.py, tools/homoforms.py, tools/medianforms.py, tools/numlineforms.py, tools/overlapforms.py … и ещё 4
-- **ОТВЕТ И ЕГО КУЗНИЦА — ДВЕ ПОВЕРХНОСТИ ОДНОГО ФАКТА**  
-  tools/gen_genesis_aggregate.py, tools/gen_genesis_compare.py, tools/gen_genesis_depletion.py, tools/gen_genesis_gsmlex.py, tools/gen_genesis_gsmwide.py, tools/gen_genesis_heads.py … и ещё 4
 - **ПРОЗВИЩЕ, ОБЪЯВЛЕННОЕ ОДИНАКОВО ВО ВСЕХ КУЗНЯХ, ВИДИТ УСТРОЙСТВО**  
   tools/gen_genesis_equation.py, tools/gen_genesis_gsmforms.py, tools/gen_genesis_inquiry_de_fr.py, tools/gen_genesis_inquiry_es_it.py, tools/gen_genesis_inquiry_pl_tr.py, tools/gen_genesis_inquiry_pt_nl.py … и ещё 4
 - **ПЯТЬ ЛОЖНЫХ ВЫВОДОВ, ОТНИМАЕМЫХ У ЧИТАТЕЛЯ**  
@@ -209,6 +207,8 @@
   tools/absforms.py, tools/deplurforms.py, tools/elisionforms.py, tools/genderforms.py, tools/hayforms.py, tools/homoforms.py … и ещё 3
 - **ОТКАЗ ЕСТЬ ТАКОЕ ЖЕ УТВЕРЖДЕНИЕ**  
   courts/algo_court.py, courts/compsci_court.py, courts/formula_court.py, courts/linalg_court.py, courts/machine_court.py, courts/sequence_court.py … и ещё 3
+- **РЕГИСТР ИМЕНИ ЧИТАЕТСЯ ИЗ ПАКЕТА**  
+  tools/gen_genesis_aggregate.py, tools/gen_genesis_compare.py, tools/gen_genesis_gsmlex.py, tools/gen_genesis_gsmwide.py, tools/gen_genesis_heads.py, tools/gen_genesis_items.py … и ещё 3
 - **РОДЫ, ЧЬЁ ЧИСЛО СТРАНИЦ ЕСТЬ ФАКТ О ПРЕДМЕТЕ, А НЕ ВЫБОР ДОМА**  
   tools/compsciforms.py, tools/geomforms.py, tools/homoforms.py, tools/linalgforms.py, tools/mathspaceforms.py, tools/notationforms.py … и ещё 3
 - **СКЕЛЕТ ПРОВЕРЯЕТСЯ У СТРОКИ, КОТОРУЮ ДОМ ПРИЗНАЛ СВОЕЙ ПО НАБОРУ**  
@@ -228,8 +228,8 @@
   tools/gen_genesis_action_pages.py, tools/gen_genesis_holes.py, tools/gen_genesis_joints.py, tools/gen_genesis_linalg.py, tools/gen_genesis_notationvar.py, tools/gen_genesis_numbers.py … и ещё 2
 - **ДОМ, НЕ ЗНАЮЩИЙ СВОЕГО МЕСТА В РЯДУ, УЗНАЁТ О НЁМ ИЗ ЧУЖОГО**  
   tools/chancetrapforms.py, tools/dimforms.py, tools/genderforms.py, tools/measuregrowforms.py, tools/measureprecforms.py, tools/negquantforms.py … и ещё 2
-- **РЕГИСТР ИМЕНИ ЧИТАЕТСЯ ИЗ ПАКЕТА**  
-  tools/gen_genesis_aggregate.py, tools/gen_genesis_compare.py, tools/gen_genesis_gsmlex.py, tools/gen_genesis_gsmwide.py, tools/gen_genesis_heads.py, tools/gen_genesis_realverbs.py … и ещё 2
+- **ОТВЕТ И ЕГО КУЗНИЦА — ДВЕ ПОВЕРХНОСТИ ОДНОГО ФАКТА**  
+  tools/gen_genesis_aggregate.py, tools/gen_genesis_compare.py, tools/gen_genesis_depletion.py, tools/gen_genesis_heads.py, tools/gen_genesis_realverbs.py, tools/gen_genesis_verbs.py … и ещё 2
 - **РЕЧЬ, СОВПАВШУЮ С НИМ ФОРМОЙ**  
   courts/deplur_court.py, courts/hay_court.py, tools/countlawforms.py, tools/deplurforms.py, tools/elisionforms.py, tools/hayforms.py … и ещё 2
 - **СЛУЧАЙ РЕДКИЙ, И ПОТОМУ НАЗВАН ВСЛУХ**  
@@ -912,6 +912,8 @@
   tools/gen_genesis_conversions.py, tools/gen_genesis_units.py
 - **ПОСЛЕДНИЕ ДВА ЗЕРКАЛЬНЫ И ОТТОГО ИДУТ ВМЕСТЕ**  
   tools/measuregrowforms.py, tools/ratetrapforms.py
+- **ПОСТОЯННАЯ ГОВОРИТСЯ В САМОЙ СТРАНИЦЕ**  
+  tools/gen_genesis_units.py, tools/timeunits.py
 - **ПРАВИЛО ДОПУСКА ФАЙЛА БЕРЁТСЯ У УКАЗАТЕЛЯ, А НЕ ПИШЕТСЯ ЗДЕСЬ ВТОРОЙ РАЗ**  
   scripts/house_promise.py, scripts/house_skew.py
 - **ПРАВИЛО ПРОВЕРЯЕТСЯ НА ЗАВЕДОМО ИЗВЕСТНОМ, А НЕ ТОЛЬКО НА СВОИХ СТРАНИЦАХ**  
@@ -1068,6 +1070,8 @@
   tools/episodeforms.py, tools/toolforms.py
 - **СВЯЗЬ ПЕРЕДАЁТСЯ, А БЛИЗОСТЬ НЕТ**  
   courts/roadpath_court.py, tools/roadpath.py
+- **СКЛАДЫВАЕТСЯ ДЛИНА, А НЕ ВЕС**  
+  tools/actionmeasure.py, tools/measurelangs.py
 - **СКОБКА В РЯДУ ЕСТЬ ПАМЯТЬ О ТОМ, ЧТО ОТКРЫТО**  
   courts/dyck_court.py, tools/dyckforms.py
 - **СКОБКА В ФОРМУЛЕ ЕСТЬ ЗНАК ПРИ ЧИСЛАХ**  

@@ -34,7 +34,8 @@ sys.path.insert(0, str(КОРЕНЬ / "tools"))
 
 import onepattern  # noqa: E402
 from genesis import Unreadable, worlds  # noqa: E402
-from gsm_items import ANIMATE, ITEMS, PACKAGEABLE  # noqa: E402
+from gsm_items import ITEMS, PACKAGEABLE  # noqa: E402
+from animacy import ANIMATE  # noqa: E402
 from plural import singular
 import verbthings  # noqa: E402
 import rugram  # noqa: E402
@@ -583,9 +584,16 @@ def _ру_держание(м):
 # more … how many more did he make than sell?»): один глагол у одного
 # носителя дважды — величины складываются, потом сравниваются; оба звена
 # стоят в ответе, и суд считает оба.
+#
+# ПАРА АКТОВ ОБЪЯВЛЕНА, А НЕ ВПИСАНА (23.09): сцена «made … sold» была сценой самой полосы (SVAMP
+# chal-220, пекарь и торты), и дом переписал её своей — «wrote … sent», письма. Суд читает ОБЕ
+# объявленные пары, и основа вопроса обязана быть основой той же пары («did X write than send»).
+ПАРЫ_НАКОПЛЕНИЯ = {("made", "sold"): ("make", "sell"), ("wrote", "sent"): ("write", "send")}
+# ИМЯ ПРИ «ЕЩЁ» СОГЛАСУЕТСЯ С ЧИСЛОМ («then Vera wrote 1 card»): вещь третьего звена читается своей
+# группой и сверяется с числом — одна при единице, множественная при прочих.
 НАКОПЛЕНИЕ = re.compile(
-    rf"^({С}) made (\d+) ({С})\. \1 sold (\d+) of them\. then \1 made (\d+)(?: more)? \3\. "
-    rf"how many more \3 did \1 make than sell\? (\d+) \+ (\d+) = (\d+), (\d+) − (\d+) = (\d+)\.$")
+    rf"^({С}) (made|wrote) (\d+) ({С})\. \1 (sold|sent) (\d+) of them\. then \1 \2 (\d+)(?: more)? ({С})\. "
+    rf"how many more \4 did \1 (make|write) than (sell|send)\? (\d+) \+ (\d+) = (\d+), (\d+) − (\d+) = (\d+)\.$")
 СТАВКА = re.compile(
     rf"^({С}) ({С}) (\d+) ({С}) (?:every|each|a) (?:day|night)\. "
     rf"how much in (\d+) ({С})\? \1 \2 (\d+) \4 in \5 \6\.$")
@@ -1061,8 +1069,12 @@ def _судить(строка, слой=None):
         return True, _ру_держание(m)
     m = НАКОПЛЕНИЕ.match(с)
     if m:
-        n, k, m2, n2, m3, t, t2, k2, d = (int(m.group(i)) for i in (2, 4, 5, 6, 7, 8, 9, 10, 11))
-        return True, ((n2, m3) == (n, m2) and t == n + m2 and t2 == t and k2 == k
+        пара, основы = (m.group(2), m.group(5)), (m.group(9), m.group(10))
+        n, k, m2, n2, m3, t, t2, k2, d = (int(m.group(i)) for i in (3, 6, 7, 11, 12, 13, 14, 15, 16))
+        вещь, вещь3 = m.group(4), m.group(8)
+        from plural import by_count as _by_count  # noqa: PLC0415 — форма при числе, одна дверь
+        return True, (ПАРЫ_НАКОПЛЕНИЯ.get(пара) == основы and вещь3 == _by_count(m2, вещь)
+                      and (n2, m3) == (n, m2) and t == n + m2 and t2 == t and k2 == k
                       and k <= n and d == t - k >= 0)
     m = СТАВКА.match(с)
     if m:

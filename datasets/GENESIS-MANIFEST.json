@@ -31,7 +31,7 @@
     {
       "name": "action_measure",
       "file": "datasets/genesis_action_measure.txt",
-      "genre": "ACTION MEASURE — the number that MEASURES the act, not counts the goods, and the number that counts the BEARERS, not the things. Named by d5 on the live SVAMP band (05.09): of 726 tacts, 46 carry a measured act («jumped 12 inches», «weighed 5 pounds») and 130 a number before the subject («6 birds were sitting on the fence. 4 more birds came») — 112 of them are held by NOTHING a frame «actor — verb — number — goods» can read. The house declares what the band showed and nothing beyond: two verbs of measure (jump — length, weigh — weight) with their units and count forms, sums of two measures with their ledger, bearers with an arrival and a departure. THE UNIT BELONGS TO THE VERB: «jumped 12 pounds» is a lie by unit before any number is checked. Every page carries its question. Two languages, as its sibling measure_story; the world is closed (courts/action_measure_court.py).",
+      "genre": "ACTION MEASURE — the number that MEASURES the act, not counts the goods, and the number that counts the BEARERS, not the things. Named by d5 on the live SVAMP band (05.09): of 726 tacts, 46 carry a measured act («jumped N inches», «weighed N pounds») and 130 a number before the subject («N X were sitting … M more came») — 112 of them are held by NOTHING a frame «actor — verb — number — goods» can read. The house declares what the band showed and nothing beyond: two verbs of measure (jump — length, weigh — weight) with their units and count forms, sums of two LENGTHS with their ledger (a weight does not add over time), bearers with an arrival and a departure. THE UNIT BELONGS TO THE VERB: «jumped 12 pounds» is a lie by unit before any number is checked. Every page carries its question. Two languages, as its sibling measure_story; the world is closed (courts/action_measure_court.py). SCENES REWRITTEN 23.09 by the owner's word (a band is an instrument, never a source): the construction stays; the band's text, build and numbers go; the leak court (scripts/bench_leak.py) names none of this world's pages by words.",
       "act": [
         "recount",
         "compare"
@@ -49,12 +49,13 @@
         "full",
         "school"
       ],
-      "actors": []
+      "actors": [],
+      "обороты_полос": []
     },
     {
       "name": "action_measure_langs",
       "file": "datasets/genesis_action_measure_langs.txt",
-      "genre": "ACTION MEASURE IN SEVEN MORE LANGUAGES (d5's genus, the owner's word: every language in surplus) — «der Frosch sprang 12 Zentimeter. wie weit sprang der Frosch? 12 Zentimeter.», «la grenouille a sauté de 12 centimètres.», «żaba skoczyła na 12 centymetrów.», the sum of two measures, and the bearers at a place with an arrival or a departure («auf dem Zaun saßen 6 Vögel. 4 weitere Vögel kamen dazu.», «na płocie siedziało 6 ptaków. przyleciały jeszcze 4 ptaki.») in de/fr/es/it/pt/nl/pl. The unit belongs to the verb; count forms of units and bearers are declared (Polish three, Romance two, German and Dutch one) and chosen by the pack's rule; the Polish verb of the bearers bends with the count form. Frames declared per language, read by the court through the same tables (tools/measurelangs.py). CLOSED world.",
+      "genre": "ACTION MEASURE IN SEVEN MORE LANGUAGES (d5's genus, the owner's word: every language in surplus) — «der Hase sprang 14 Zentimeter. wie weit sprang der Hase? 14 Zentimeter.», «le lapin a sauté de 14 centimètres.», «królik skoczył na 14 centymetrów.», the sum of two measures, and the bearers at a place with an arrival or a departure («auf dem See schwammen 7 Schwäne. 5 weitere Schwäne kamen dazu.», «na jeziorze pływało 7 łabędzi. przyleciało jeszcze 5 łabędzi.») in de/fr/es/it/pt/nl/pl. The unit belongs to the verb; count forms of units and bearers are declared (Polish three, Romance two, German and Dutch one) and chosen by the pack's rule; the Polish verb of the bearers bends with the count form. Frames declared per language, read by the court through the same tables (tools/measurelangs.py). CLOSED world. SCENES REWRITTEN 23.09 by the owner's word (a band is an instrument, never a source): the construction stays; the band's text, build and numbers go; the leak court (scripts/bench_leak.py) names none of this world's pages by words.",
       "act": [
         "recount",
         "compare"
@@ -72,7 +73,8 @@
         "full",
         "school"
       ],
-      "actors": []
+      "actors": [],
+      "обороты_полос": []
     },
     {
       "name": "action_pages",
@@ -814,7 +816,8 @@
       ],
       "actors": [
         "person_names:en"
-      ]
+      ],
+      "обороты_полос": []
     },
     {
       "name": "algebra",
@@ -1629,7 +1632,7 @@
     {
       "name": "cmpframes",
       "file": "datasets/genesis_cmpframes.txt",
-      "genre": "FRAMES OF COMPARISON — the largest class of the reader's lies on the held-out key (05.09: twelve of fifteen — «9 flexiones más que», «in più/in meno di», «meer/minder dan», «więcej/mniej niż»: the marker is not bought and the answer takes a neighbouring number). Four frames on nine languages over two bearer groups (a deed done and a holding held): more by N, fewer by N, twice/three times as many, and the reverse question «by how many more». The answer is a full sentence with the bearer, the number and the thing, then the ledger; the sign of the ledger is a hole, and «more» with a minus is a lie BY SIGN. Bearers, goods and count forms from the action-pages house and the packs; multiplicity words, Slavic past-tense gender and the gender of es/it/pt goods declared here (tools/cmpframes.py). CLOSED world.",
+      "genre": "FRAMES OF COMPARISON — the largest class of the reader's lies on the held-out key (05.09: twelve of fifteen — a comparison marker on a non-English page answered by a neighbouring number: the marker is not bought). Four frames on nine languages over two bearer groups (trees planted and goods held — jars, mushrooms, pears, stamps, nuts, photos): more by N, fewer by N, twice/three times as many, and the reverse question «by how many more». The answer is a full sentence with the bearer, the number and the thing, then the ledger; the sign of the ledger is a hole, and «more» with a minus is a lie BY SIGN. Bearers from the action-pages house, goods, count forms and the gender of es/it/pt goods from the story house (svampforms); multiplicity words and the Slavic past-tense gender (the TIMES question too) declared here (tools/cmpframes.py). CLOSED world. SCENES REWRITTEN 23.09 by the owner's word (a band is an instrument, never a source): the construction stays; the band's text, build and numbers go; the leak court (scripts/bench_leak.py) names none of this world's pages by words.",
       "act": [
         "compare",
         "recount"
@@ -1644,7 +1647,8 @@
       ],
       "assemblies": [
         "school"
-      ]
+      ],
+      "обороты_полос": []
     },
     {
       "name": "cmpshare",
@@ -2059,7 +2063,8 @@
       ],
       "actors": [
         "person_names:en"
-      ]
+      ],
+      "обороты_полос": []
     },
     {
       "name": "deplur",
@@ -2203,7 +2208,7 @@
     {
       "name": "discountroad",
       "file": "datasets/genesis_discountroad.txt",
-      "genre": "THE MONEY ROAD WITH A DISCOUNT (05.09, the SECOND gate of the silence atlas by d5's measure: 72–76 turns of the grove stop on the money road). A price, a discount ON EACH item, and FOUR questions over one and the same pair of numbers: the price after the discount («how much is paid for one pack? $51: 76 − 25 = 51»), the bill for several («for 5 packs? $255: 5 × 51 = 255» — the discounted price multiplies, not the full one), how many items fit into a sum at the FULL price («for $380? 5: 380 ÷ 76 = 5») and how many at the DISCOUNTED price («for $255? 5: 255 ÷ 51 = 5»). The four stand over one pair on purpose: the market must buy the QUESTION, the arithmetic it already has. The currency sign stands where the language puts it, and the accusative is written where the language bends it («на каждую пачку», «na każdą paczkę») (tools/discountroad.py). CLOSED world.",
+      "genre": "THE MONEY ROAD WITH A DISCOUNT (05.09, the SECOND gate of the silence atlas by d5's measure: 72–76 turns of the grove stop on the money road). A price, a discount ON EACH item, and FOUR questions over one and the same pair of numbers: the price after the discount («how much is paid for one bottle? $27: 30 − 3 = 27»), the bill for several («for 5 bottles? $135: 5 × 27 = 135» — the discounted price multiplies, not the full one), how many items fit into a sum at the FULL price («for $150? 5: 150 ÷ 30 = 5») and how many at the DISCOUNTED price («for $135? 5: 135 ÷ 27 = 5»). The four stand over one pair on purpose: the market must buy the QUESTION, the arithmetic it already has. The currency sign stands where the language puts it, and the accusative is written where the language bends it («на каждую бутылку», «na każdą butelkę») (tools/discountroad.py). CLOSED world. SCENES REWRITTEN 23.09 by the owner's word (a band is an instrument, never a source): the construction stays; the band's text, build and numbers go; the leak court (scripts/bench_leak.py) names none of this world's pages by words.",
       "act": [
         "recount"
       ],
@@ -2218,7 +2223,8 @@
         "school"
       ],
       "actors": "",
-      "text": "shows"
+      "text": "shows",
+      "обороты_полос": []
     },
     {
       "name": "disj",
@@ -3338,10 +3344,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 45310966,
+      "size": 46866723,
       "tiers": [],
       "text": "mix",
-      "lines": 473343
+      "lines": 486224
     },
     {
       "name": "fuseprep",
@@ -3412,7 +3418,8 @@
       "actors": [
         "person_names:pl",
         "person_names:ru"
-      ]
+      ],
+      "обороты_полос": []
     },
     {
       "name": "genesis_bignum",
@@ -3720,7 +3727,7 @@
     {
       "name": "gsmforms",
       "file": "datasets/genesis_gsmforms.txt",
-      "genre": "school forms of GSM8K (owner's word 03.09: band g1 to 100 %; e9's FORM-MUTE named the question families whose form with an answer lives in no world) — first layer of eight families: the total number of X (sum over carriers), temperature in degrees below zero, percentage of a share (whole percents only), weight in pounds from ounces, a tank's water depth from volume and base, probability expressed as a fraction, a part given as quarters back to the whole, the complement (originally / missing / people on the bus); second layer (03.09) of nine families and four SVAMP genera: a share of the whole population (half, a quarter, a fifth, a tenth), boys and girls on a team, N times as much (car and house), a design doubled or tripled then reduced, the flight around the earth from circumference and speed, the average rope from total length and count, three carriers (more than / times as many), a rate times hours (candles), post-it notes left after two uses; SVAMP: how many more (morning vs afternoon), a discount off the price, in all / altogether / left, groups of N; every family as a school story with the ground after the colon, both polarities where a verdict exists, explicit deltas and relations, and the question with its answer in the same line — the answer opens with the question's first quantity and names all of them in the question's order, a step of the computation allowed between (the pair house; multiplicative words read as the numbers they name, quantity_words of the packs); numbers by residues, names from the houses of names of both packs; the court recomputes every line by a law over the frame's numbers",
+      "genre": "school forms — constructions named mute by e9's FORM-MUTE census of the public bands (03.09), each family a construction and a formula, the scene our own — first layer of eight families: the total number of X (sum over carriers), temperature in degrees below zero, percentage of a share (whole percents only), weight in pounds from ounces, the depth of sand in a pit from volume and base, probability written as a fraction (buttons in a jar), pages given as quarters of a book back to the whole, the complement (ducks originally on a pond / stamps missing from an album / guests at a party now); second layer (03.09) of nine families and four SVAMP genera: a share of the whole (half, a quarter, a fifth, a tenth of a library's books), books and magazines on a shelf, N times as much (a tractor and a barn), an order doubled or tripled then reduced, a ride around a lake from its length and speed, the average pole from total height and count, three carriers of shells (more than / times as many), a rate times hours (postcards signed), candies left after two bowls; how many more (posts painted yesterday and today), a pupil's ticket after a discount, in all / altogether / left, plates in piles, eggs in boxes with a remainder; money, change for a lamp, profit on a bicycle, an overstated count of guests, apples and pears, a boat and a trailer; every family as a school story with the ground after the colon, both polarities where a verdict exists, explicit deltas and relations, and the question with its answer in the same line — the answer opens with the question's first quantity and names all of them in the question's order, a step of the computation allowed between (the pair house; multiplicative words read as the numbers they name, quantity_words of the packs); numbers by residues, names from the houses of names of both packs; every page carries the equation of its answer, negations too («…: it is 16, because 11 + 5 = 16»); the court recomputes every line by a law over the frame's numbers SCENES REWRITTEN 23.09 by the owner's word (a band is an instrument, never a source): the construction stays; the band's text, build and numbers go; the leak court (scripts/bench_leak.py) names none of this world's pages by words.",
       "act": [
         "recount",
         "decide"
@@ -3740,12 +3747,13 @@
       "actors": [
         "person_names:en",
         "person_names:ru"
-      ]
+      ],
+      "обороты_полос": []
     },
     {
       "name": "gsmlex",
       "file": "datasets/genesis_gsmlex.txt",
-      "genre": "ШАГ В ЕДИНИЦУ, СКАЗАННЫЙ ШИРОКИМ СЛОВАРЁМ ДЕЙСТВИЙ: «Felix makes 12 points. Felix uses 1 point away. how many points does Felix keep? Felix keeps 11 points». Одно и то же прибавление или убавление единицы, названное ДЕСЯТКАМИ РАЗНЫХ ГЛАГОЛОВ — makes, has, takes, sold, adds, — и всякий раз итог пересчитан. Мир проверяет, что счёт НЕ ЗАВИСИТ ОТ ГЛАГОЛА, которым о нём сказано. Отличается от `gsmwide` узостью ПРЕДМЕТОВ при широте глаголов, а от `realverbs` — тем, что глаголы здесь общие, а не ремесленные (замер 12.09: 400 строк, 400 вопросов, 200 равенств, ни одной кириллицы).",
+      "genre": "ШАГ В ЕДИНИЦУ, СКАЗАННЫЙ ШИРОКИМ СЛОВАРЁМ ДЕЙСТВИЙ: «Ben has 12 nuts. Ben gives 1 nut away. how many nuts does Ben keep? Ben keeps 11 nuts: 12 − 1 = 11». Одно и то же прибавление или убавление единицы, названное ДЕСЯТКАМИ РАЗНЫХ ГЛАГОЛОВ — makes, has, takes, sold, adds, — и всякий раз итог пересчитан. Мир проверяет, что счёт НЕ ЗАВИСИТ ОТ ГЛАГОЛА, которым о нём сказано. Отличается от `gsmwide` узостью ПРЕДМЕТОВ при широте глаголов, а от `realverbs` — тем, что глаголы здесь общие, а не ремесленные (замер 12.09: 400 строк, 400 вопросов, 200 равенств, ни одной кириллицы). SCENES REWRITTEN 23.09 by the owner's word (a band is an instrument, never a source): the construction stays; the band's text, build and numbers go; the leak court (scripts/bench_leak.py) names none of this world's pages by words.",
       "act": [
         "recount"
       ],
@@ -3764,12 +3772,13 @@
       ],
       "actors": [
         "person_names:en"
-      ]
+      ],
+      "обороты_полос": []
     },
     {
       "name": "gsmwide",
       "file": "datasets/genesis_gsmwide.txt",
-      "genre": "ТОТ ЖЕ ШАГ В ЕДИНИЦУ, НО ШИРОКИМ СЛОВАРЁМ ПРЕДМЕТОВ: eggs, degrees, packs, dollars, days, pounds — «Iris weighs 7 pounds. Iris loses 1 pound away. how many pounds does Iris save?». Где `gsmlex` множит ГЛАГОЛЫ при немногих предметах, здесь множатся ПРЕДМЕТЫ, и вместе они показывают, что счёт не зависит ни от того, ни от другого. Мир вдвое больше соседа (замер 12.09: 900 строк и 900 вопросов, 450 равенств, ни одной кириллицы).",
+      "genre": "ТОТ ЖЕ ШАГ В ЕДИНИЦУ, НО ШИРОКИМ СЛОВАРЁМ ПРЕДМЕТОВ: eggs, degrees, packs, dollars, days, pounds — «Ava has 9 dollars. Ava spends 4 dollars. how many dollars does Ava have left?». Где `gsmlex` множит ГЛАГОЛЫ при немногих предметах, здесь множатся ПРЕДМЕТЫ, и вместе они показывают, что счёт не зависит ни от того, ни от другого. Мир вдвое больше соседа (замер 23.09, после переписи сцен: 888 строк, 888 вопросов и 888 равенств — у каждой страницы уравнение, — ни одной кириллицы). SCENES REWRITTEN 23.09 by the owner's word (a band is an instrument, never a source): the construction stays; the band's text, build and numbers go; the leak court (scripts/bench_leak.py) names none of this world's pages by words.",
       "act": [
         "recount"
       ],
@@ -3788,7 +3797,8 @@
       ],
       "actors": [
         "person_names:en"
-      ]
+      ],
+      "обороты_полос": []
     },
     {
       "name": "gutenberg_aho_rautatie",
@@ -7060,7 +7070,7 @@
     {
       "name": "items",
       "file": "datasets/genesis_items.txt",
-      "genre": "THE THING NAMED BEFORE IT IS COUNTED — declared until 12.09 in eight words. Measured 12.09: 2357 lines, English only; 1391 asking and 1253 carrying an equals sign. The world does two deeds and the first pays for the second. IT NAMES: 812 lines where a thing simply IS somewhere or is liked or looked at («the apples are on the table», «umar likes the apps», «vera looks at the year»), 228 opening with «there are» and 122 asking «what are the …?» — a bare inventory with no arithmetic in it at all. IT COUNTS: 305 lines run a ledger of three steps over the very same things («ida made 3 roses. ida sold 1 of them. then ida made 1 more roses»), and 1253 ask «how many». A READER CANNOT COUNT WHAT HE CANNOT NAME: the naming half is not filler but the ground of the counting half, and that is why the act of this world is `name` though half its lines add and subtract. The things are deliberately strange — acres, apps, calories, vlogs — so that the answer cannot come from knowing the noun. Boundary: whole totals only and no negative value in 2357 lines, both measured; 650 lines add and 908 subtract, and a holding never falls below none.",
+      "genre": "THE THING NAMED BEFORE IT IS COUNTED — declared until 12.09 in eight words. SINCE 23.09 THE THINGS ARE OUR LEXICON (tools/gsm_items.py: the en pack's nouns in the classes of tools/verbthings.py), not the census of the public bands; counting frames and bare forms carry things and the living, never measures; the chain of acts is written of letters and cards («wrote — sent — wrote more»). The history below is the world before the rewrite. Measured 12.09: 2357 lines, English only; 1391 asking and 1253 carrying an equals sign. The world does two deeds and the first pays for the second. IT NAMES: 812 lines where a thing simply IS somewhere or is liked or looked at («the apples are on the table», «umar likes the apps», «vera looks at the year»), 228 opening with «there are» and 122 asking «what are the …?» — a bare inventory with no arithmetic in it at all. IT COUNTS: 305 lines run a ledger of three steps over the very same things («ida made 3 roses. ida sold 1 of them. then ida made 1 more roses»), and 1253 ask «how many». A READER CANNOT COUNT WHAT HE CANNOT NAME: the naming half is not filler but the ground of the counting half, and that is why the act of this world is `name` though half its lines add and subtract. The things are deliberately strange — acres, apps, calories, vlogs — so that the answer cannot come from knowing the noun. Boundary: whole totals only and no negative value in 2357 lines, both measured; 650 lines add and 908 subtract, and a holding never falls below none. SCENES REWRITTEN 23.09 by the owner's word (a band is an instrument, never a source): the construction stays; the band's text, build and numbers go; the leak court (scripts/bench_leak.py) names none of this world's pages by words.",
       "act": [
         "name"
       ],
@@ -7080,7 +7090,8 @@
       ],
       "actors": [
         "person_names:en"
-      ]
+      ],
+      "обороты_полос": []
     },
     {
       "name": "jaclass",
@@ -11152,7 +11163,8 @@
       "text": "shows",
       "assemblies": [
         "school"
-      ]
+      ],
+      "обороты_полос": []
     },
     {
       "name": "remainders_langs",
@@ -11594,10 +11606,10 @@
       "boundary": [
         "assembled_only"
       ],
-      "size": 37209788,
+      "size": 38765545,
       "tiers": [],
       "text": "mix",
-      "lines": 424876
+      "lines": 437757
     },
     {
       "name": "school_biling_v2c",
@@ -12186,7 +12198,7 @@
     {
       "name": "subjcount",
       "file": "datasets/genesis_subjcount.txt",
-      "genre": "THE COUNT OF THE SUBJECT — the number stands with WHO ACTS, not with what is owned (07.09). Asked for by holon-f9 on the atlas of the reader's unread numbers (tomograph st48, omega-ad): of 539 refusals on base p156, 420 stories are classified, and THE COUNT OF THE SUBJECT is the third largest class — 104 stories, e.g. «43 children were riding on the bus. 82 children got on the bus. how many children are on the bus now?». A NUMBER AT THE SUBJECT IS A DIFFERENT READING FROM A NUMBER AT THE OBJECT: the whole corpus teaches counting POSSESSIONS — «Ben had 22 books» — where the number stands with a thing a BEARER owns and the frame hunts for that bearer. Here there is no bearer at all: the ACTORS THEMSELVES are counted, and the place (bus, fence, shop) is a SCENE, not an owner. The census that bought the house, on the свод of 07.09 (378 361 lines): «N X got off …» 6 pages, «N X flew away …» 6, «N X were riding …» 15, «N X got on the …» 8 — not even LAW³ = 8 for most; while the EXISTENTIAL «there are/were N X» stands 4 165 times, which is a different form and a different class of the atlas (92 stories). The corpus can say «there were 43 kids on the bus» and almost cannot say «43 kids were riding on the bus»: THE DIFFERENCE IS NOT IN THE SENSE BUT IN THE PLACE OF THE NUMBER — after an empty «there», or at the HEAD, at the subject, where the reader's frame must look for it. So this house writes WITHOUT «there», on purpose. Four frames: gain (added), loss (subtracted), two steps (subtracted then added, the order stated by the ledger), and THE QUESTION ABOUT THE ACT ITSELF («how many children got on the bus?»), whose answer is the SECOND number and not the total — a gate against a reader answering by position, and its answer REPEATS THE FACT WHOLE, because a page without a ledger stands only by memory and the court of memory needs a fact to check against. The scene is a PLACE and the question names it, so a reader who loses the scene has nothing to answer with. The verb of motion takes only what moves by itself, and the genus is declared INSIDE this house and not in the common `verbthings`: that is bought by the scar of 06.09, when seven bridge verbs put into the common `ГЛАГОЛ_БЕРЁТ` felled the episode court with 986 false lines in eleven worlds. Verb and scene agree by a declared table — a bird does not get off a bus and a customer does not fly off a fence. The ledger stands on the page, so the court of arithmetic reads it without a house of its own (tools/subjcount.py). CLOSED world. МИР ОДНОЯЗЫЧЕН — ТОЛЬКО АНГЛИЙСКИЙ (1105 строк, второй язык берёт НОЛЬ). Число при действующем лице согласуется в русском с родом и падежом, и рамка эта живёт у домов русского счёта; здесь показан английский случай, где согласования нет.",
+      "genre": "THE COUNT OF THE SUBJECT — the number stands with WHO ACTS, not with what is owned (07.09). Asked for by holon-f9 on the atlas of the reader's unread numbers (tomograph st48, omega-ad): of 539 refusals on base p156, 420 stories are classified, and THE COUNT OF THE SUBJECT is the third largest class — 104 stories, e.g. a count of riders who got on a vehicle and the question «how many are on it now?». A NUMBER AT THE SUBJECT IS A DIFFERENT READING FROM A NUMBER AT THE OBJECT: the whole corpus teaches counting POSSESSIONS — «Ben had 22 books» — where the number stands with a thing a BEARER owns and the frame hunts for that bearer. Here there is no bearer at all: the ACTORS THEMSELVES are counted, and the place (a ferry, a wall, a shop) is a SCENE, not an owner. The census that bought the house, on the свод of 07.09 (378 361 lines): «N X got off …» 6 pages, «N X flew away …» 6, «N X were riding …» 15, «N X got on the …» 8 — not even LAW³ = 8 for most; while the EXISTENTIAL «there are/were N X» stands 4 165 times, which is a different form and a different class of the atlas (92 stories). The corpus can say «there were 43 kids on the bus» and almost cannot say «43 kids were riding on the bus»: THE DIFFERENCE IS NOT IN THE SENSE BUT IN THE PLACE OF THE NUMBER — after an empty «there», or at the HEAD, at the subject, where the reader's frame must look for it. So this house writes WITHOUT «there», on purpose. Four frames: gain (added), loss (subtracted), two steps (subtracted then added, the order stated by the ledger), and THE QUESTION ABOUT THE ACT ITSELF («how many children got on the bus?»), whose answer is the SECOND number and not the total — a gate against a reader answering by position, and its answer REPEATS THE FACT WHOLE, because a page without a ledger stands only by memory and the court of memory needs a fact to check against. The scene is a PLACE and the question names it, so a reader who loses the scene has nothing to answer with. The verb of motion takes only what moves by itself, and the genus is declared INSIDE this house and not in the common `verbthings`: that is bought by the scar of 06.09, when seven bridge verbs put into the common `ГЛАГОЛ_БЕРЁТ` felled the episode court with 986 false lines in eleven worlds. Verb and scene agree by a declared table — a bird does not get off a bus and a customer does not fly off a fence. The ledger stands on the page, so the court of arithmetic reads it without a house of its own (tools/subjcount.py). CLOSED world. МИР ОДНОЯЗЫЧЕН — ТОЛЬКО АНГЛИЙСКИЙ (1105 строк, второй язык берёт НОЛЬ). Число при действующем лице согласуется в русском с родом и падежом, и рамка эта живёт у домов русского счёта; здесь показан английский случай, где согласования нет. SCENES REWRITTEN 23.09 by the owner's word (a band is an instrument, never a source): the construction stays; the band's text, build and numbers go; the leak court (scripts/bench_leak.py) names none of this world's pages by words.",
       "act": [
         "recount",
         "translate"
@@ -12201,7 +12213,8 @@
         "school"
       ],
       "actors": "",
-      "text": "shows"
+      "text": "shows",
+      "обороты_полос": []
     },
     {
       "name": "summaryforms",
@@ -12245,7 +12258,7 @@
     {
       "name": "svamp",
       "file": "datasets/genesis_svamp.txt",
-      "genre": "SVAMP SHAPES — the eight shapes of the live SVAMP band that no frame of the corpus held (d5, 06.09, by weight on 726 tacts): the hidden quantity «some» and the heads of the total (in all, altogether, in total, a total of, now has N left); the oblique pronoun as a pronoun (gave 5 of them, gave him 20); the hypothetical act in the question (if she gives away 5, how many will she have?); the words of time order (at first … then); transfer with a direction (gave 5 coins to Ann, took 5 from her); the unit before the number ($ 3 — English only, declared); goods outside the lexicon (pages of reading homework). English and Russian twins; names and things are the house of action pages, pronouns declared by gender; every answer carries its ledger, recomputed by the court (tools/svampforms.py). CLOSED world. ФРАНЦУЗСКАЯ ЭЛИЗИЯ ПРИМЕНЕНА ПОСЛЕ ПОДСТАНОВКИ (12.09): рамка несёт «que» и «de» целыми, а «que une» и «de histoires» суть французские ОШИБКИ, а не варианты. Закон взят у дома языка (`frgram.элизия`), а не переписан. РАМКА, СОБРАННАЯ ИЗ ЦЕЛЫХ СЛОВ, НЕ ЗНАЕТ, ЧТО ДВА ИЗ НИХ СЛИВАЮТСЯ. БЛИЗКАЯ РОДНЯ, НАЗВАННАЯ С РАЗЛИЧИЕМ. `holes` меняет, КАКАЯ РОЛЬ одной и той же рамки спрошена, — здесь же меняется САМА ОДЕЖДА рассказа: скрытое количество, голова итога, порядок сообщения. Там движется дыра, тут — платье вокруг неё. `worldfacts` спрашивает ПОЧЕМУ и ЧТО ДАЛЬШЕ о вещах; здесь всякий вопрос кончается ЧИСЛОМ. `scale` сравнивает сами вещи без чисел («слон больше мыши»); здесь без числа нет ответа вовсе.",
+      "genre": "STORY SHAPES — eight constructions that a census of the live public band named mute (d5, 06.09, by weight on 726 tacts): the hidden quantity «some» and the heads of the total (in all, altogether, in total, a total of, now has N left); the oblique pronoun as a pronoun (gave 5 of them, gave him 20); the hypothetical act in the question (if she gives away k, how many will she have?); the words of time order (at first … then); transfer with a direction (gave 5 coins to Ann, took 5 from her); the unit before the number ($ 3 — English only, declared); goods outside the lexicon; and the acts the band's stories stand on, each in a scene of our own — oaks and birches planted, ducks on a pond, the cars of a train, stamps collected on two days. Nine languages; names and things are the house of action pages, pronouns declared by gender; every answer carries its ledger, recomputed by the court (tools/svampforms.py). CLOSED world. ФРАНЦУЗСКАЯ ЭЛИЗИЯ ПРИМЕНЕНА ПОСЛЕ ПОДСТАНОВКИ (12.09): рамка несёт «que» и «de» целыми, а «que une» и «de histoires» суть французские ОШИБКИ, а не варианты. Закон взят у дома языка (`frgram.элизия`), а не переписан. РАМКА, СОБРАННАЯ ИЗ ЦЕЛЫХ СЛОВ, НЕ ЗНАЕТ, ЧТО ДВА ИЗ НИХ СЛИВАЮТСЯ. БЛИЗКАЯ РОДНЯ, НАЗВАННАЯ С РАЗЛИЧИЕМ. `holes` меняет, КАКАЯ РОЛЬ одной и той же рамки спрошена, — здесь же меняется САМА ОДЕЖДА рассказа: скрытое количество, голова итога, порядок сообщения. Там движется дыра, тут — платье вокруг неё. `worldfacts` спрашивает ПОЧЕМУ и ЧТО ДАЛЬШЕ о вещах; здесь всякий вопрос кончается ЧИСЛОМ. `scale` сравнивает сами вещи без чисел («слон больше мыши»); здесь без числа нет ответа вовсе. SCENES REWRITTEN 23.09 by the owner's word (a band is an instrument, never a source): the construction stays; the band's text, build and numbers go; the leak court (scripts/bench_leak.py) names none of this world's pages by words.",
       "act": [
         "recount"
       ],
@@ -12262,7 +12275,21 @@
         "full",
         "school"
       ],
-      "actors": []
+      "actors": [],
+      "обороты_полос": [
+        {
+          "оборот": "lost # of them how many books does",
+          "страниц": 9
+        },
+        {
+          "оборот": "has # cards left how many cards did",
+          "страниц": 3
+        },
+        {
+          "оборот": "# apples left how many apples did he",
+          "страниц": 2
+        }
+      ]
     },
     {
       "name": "swclass",
@@ -12877,7 +12904,7 @@
     {
       "name": "verbs",
       "file": "datasets/genesis_verbs.txt",
-      "genre": "THE VERB FORM OVER ONE FACT — declared until 12.09 in eight words. Measured 12.09: 620 lines, English only, 310 asking and 310 carrying an addition. THE FACT IS ONE AND THE FORM IS MANY, and the world says the same holding twice in a row so that the two forms stand side by side: «Tara has baked 8 batches. Tara baked 8 batches.» Counted: the perfect «has baked» — 140; the simple past — 70; the third person singular with «every day» — 155; the plural «they» over the same fact — 155 («Sven delivers 9 meals every day. they deliver 9 meals every day.»); and the question with «did» — 240. A READER WHO KNOWS ONE FORM OF A VERB DOES NOT KNOW THE FACT: «did Vera plant» and «Vera planted» carry one event, and a corpus that shows only the second leaves the first unread. THE PAIR STANDS IN ONE LINE ON PURPOSE — two forms of one fact apart would be two facts, and the reader would have nothing to match. The arithmetic underneath is plain addition («Vera planted 4 flowers. Vera planted 4 flowers more. how many flowers did Vera plant in all?»), and it is plain deliberately: WHEN THE FORM IS WHAT IS TAUGHT, THE COUNTING MUST NOT COMPETE FOR THE READER. Boundary: whole totals only and no negative value in 620 lines, both measured.",
+      "genre": "THE VERB FORM OVER ONE FACT — declared until 12.09 in eight words. Measured 23.09, after the scenes were rewritten: 600 lines, English only, 300 asking and 300 carrying an addition. THE FACT IS ONE AND THE FORM IS MANY, and the world says the same holding twice in a row so that the two forms stand side by side: «Tara has baked 8 batches. Tara baked 8 batches.» Counted: the perfect «has baked» — 140; the simple past — 70; the third person singular with «every day» — 155; the plural «they» over the same fact — 155 («Sven delivers 9 meals every day. they deliver 9 meals every day.»); and the question with «did» — 240. A READER WHO KNOWS ONE FORM OF A VERB DOES NOT KNOW THE FACT: «did Vera plant» and «Vera planted» carry one event, and a corpus that shows only the second leaves the first unread. THE PAIR STANDS IN ONE LINE ON PURPOSE — two forms of one fact apart would be two facts, and the reader would have nothing to match. The arithmetic underneath is plain addition («Vera planted 4 flowers. Vera planted 4 flowers more. how many flowers did Vera plant in all?»), and it is plain deliberately: WHEN THE FORM IS WHAT IS TAUGHT, THE COUNTING MUST NOT COMPETE FOR THE READER. Boundary: whole totals only and no negative value in 620 lines, both measured.",
       "act": [
         "inflect"
       ],
@@ -12897,7 +12924,8 @@
       ],
       "actors": [
         "person_names:en"
-      ]
+      ],
+      "обороты_полос": []
     },
     {
       "name": "verifyforms",
@@ -13205,7 +13233,8 @@
       "file": "datasets/genesis_perunit.txt",
       "genre": "THE RATE PER UNIT — ONE RELATION, THREE UNKNOWNS, FOUR FORMS, TEN LANGUAGES (23.09, the lead's order through a peer, then the rate hand's «ORDER TO THE CORPUS» of 11:45; measured by its census `canon/judges/tools/rate_order_census.py` on the bake pin d382f90b and on tree 4d91732). The relation «per unit» (each / per / every) stands in 441 of the 1 422 rows of the public key, and the reader does not buy it: the rate word was bought as a PRONOUN, and «each bag has 41 cookies» is answered with 41. The market buys a relation by the EQUALITY OF THE PAGE, and beside the rate word the corpus wrote almost none: total = rate × units with an equation — en 98, de 19, NONE in ru, uk, fr, it, es, pt, nl, pl; units = total ÷ rate — about 96 per language, all from one house; rate = total ÷ units — NONE in any language. THE RATE WORD IS THE HEAD OF A UNIT, NOT A BEARER: «each box has 6 apples» speaks of EVERY box, and 6 is the measure of a box. On every triple (rate a, units b, total c = a·b) the house asks all three questions — the total («each box has 6 apples. how many apples are in 4 boxes? 24 apples: 4 × 6 = 24.»), the number of units («24 apples are packed into boxes, 6 apples in each box. how many boxes are there? 4 boxes: 24 ÷ 6 = 4.») and the rate itself («24 apples are packed equally into 4 boxes. how many apples are in each box? 6 apples: 24 ÷ 4 = 6.»); four forms of the rate: the rate word BEFORE the number (C1 «each box has 6 apples»), AFTER it (C2 «there are 6 apples in each box»), PER a unit that is not time (C3 «6 apples per box», «на коробку приходится 6 яблок») and the price EACH after the price (C4 «4 apples are sold at 3 dollars each»; the question of the price carries the rate word at the good: «how much does each apple cost?»); C1 against C2 is a minimal pair by the place of the rate word, C3 against C2 by the word itself. Polish and Ukrainian verbs agree with the cell of their number («są 3 jabłka», «jest 6 jabłek»; «3 jabłka kosztują», «5 jabłek kosztuje»). The operation is taken from THE QUESTION. Rate 3…9, units 2…9, rate ≠ units (else the two divisions give one number and the page does not say which was asked). The goods, the currency and the pack's counting rule are the door of goods (`priceforms`; Ukrainian goods in its table of languages without a price frame); the container of each good (a box of apples, a shelf of books, a case of pencils) is declared in the forms its language bends — the case is WRITTEN, not derived (tools/perunitforms.py). CLOSED world.",
       "act": [
-        "compute"
+        "recount",
+        "invert"
       ],
       "oracle": [
         "recompute"

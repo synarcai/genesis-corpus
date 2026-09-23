@@ -1,5 +1,15 @@
 #!/usr/bin/env python3
-"""GENESIS layer: THE LIVING ITEM LEXICON OF GSM8K.
+"""GENESIS layer: THE LIVING ITEM LEXICON — our doors' things, named and counted (rewritten 23.09).
+
+REWRITTEN 23.09 BY THE OWNER'S WORD (path «a» of the lead). The lexicon below was the census of the
+public GSM8K bands, shown so that the reader would buy the band's own items; it is now OUR lexicon
+(`tools/gsm_items.py`: the en pack's nouns in the classes of `tools/verbthings.py`). The frames stay;
+what they may carry is narrowed to what they can say truly: counting frames and bare forms take
+THINGS (the packable) and THE LIVING, never measures («packed 6 hours», «likes the inches»); «away»
+stands only after a verb that takes it («gave 4 away», never «used 4 away»); the chain «made — sold
+— made more» is written only of baked goods; names are written as the pack writes them.
+
+HISTORY OF THE HOUSE, KEPT:
 
 The g1 band stood at 0 of 65 with the mechanism alive: the real items
 of the benchmark (lollipops, crates, sandwiches, vlogs, tablespoons)
@@ -40,7 +50,8 @@ count chooses the form through the shared `plural` organ.
 from layer import Сбор, emit
 
 
-from gsm_items import ANIMATE, ITEMS
+from gsm_items import ITEMS, PACKAGEABLE, ТОВАРЫ
+from animacy import ANIMATE
 import verbthings  # noqa: E402
 from plural import by_count, singular
 
@@ -51,8 +62,27 @@ from plural import by_count, singular
 
 # ИМЕНА, ЧУЖИЕ БЕНЧМАРКУ: агенты не должны совпадать с носителями
 # вопросов, иначе слой начнёт узнаваться по имени, а не по роду.
-NAMES = ["ida", "omar", "pia", "rosa", "sven",
-         "tara", "umar", "vera"]
+NAMES_HOUSE = ["ida", "omar", "pia", "rosa", "sven",
+               "tara", "umar", "vera"]
+# РЕГИСТР ИМЕНИ ЧИТАЕТСЯ ИЗ ПАКЕТА (как у соседей `gsmwide`, `verbs`): дом выбирает лица, пакет
+# объявляет их письмо, и «umar counted» без заглавной больше не пишется.
+import json as _json  # noqa: E402
+import pathlib as _pathlib  # noqa: E402
+_ИМЕНА_ПАКЕТА = set(_json.loads((_pathlib.Path(__file__).resolve().parent / "langpacks"
+                                  / "en.json").read_text(encoding="utf-8"))["person_names"])
+_ПО_СТРОЧНОМУ = {и.lower(): и for и in _ИМЕНА_ПАКЕТА}
+NAMES = [_ПО_СТРОЧНОМУ.get(и, и) for и in NAMES_HOUSE]
+assert set(NAMES) <= _ИМЕНА_ПАКЕТА, "имя не объявлено пакетом en"
+# ДОМ НАЗЫВАЕТ И СЧИТАЕТ ВЕЩИ И ЖИВЫХ, НЕ МЕРЫ: мера («hours», «miles», «pounds») стоит в словаре
+# ради домов мер, а «packed 6 hours» и «likes the inches» ложны о мире при верной грамматике.
+# КУПЛЯ И ПРОДАЖА БЕРУТ ТОЛЬКО ТОВАР (`gsm_items.ТОВАРЫ`): «bought 3 leaves» дверь `verbthings`
+# не судит (глагол купли ей не объявлен), и граница стоит здесь, у глаголов, которые дом пишет.
+КУПЛЯ_ПРОДАЖА = frozenset({"bought", "buys", "sold", "sells"})
+# ЦЕПЬ «написал — отослал — написал ещё» — о письмах и открытках: прежняя цепь «made — sold» о
+# тортах была сценой самой полосы (SVAMP chal-220), и суд утечки назвал её шинглы. Вещь цепи
+# берут оба глагола по двери `verbthings`.
+ПИШУТ_И_ОТСЫЛАЮТ = frozenset(it for it in ITEMS
+                             if verbthings.берёт("wrote", it) and verbthings.берёт("sent", it))
 
 # Census of bench/suites/t7_gsm8k_g1+g2 (2026-09-01): after a number
 # >= LAW times AND inside a number-free «how many/much X» frame, then
@@ -60,19 +90,20 @@ NAMES = ["ida", "omar", "pia", "rosa", "sven",
 # (add-verb pair, ask, answer-verb) — real GSM8K prose verbs
 # places of holding without a holder; the question of the decrease in three forms
 МЕСТА_ВЕЩЕЙ = ("on the shelf", "in the box", "on the table", "in the basket", "in the bag")
-МЕСТА_ЛЮДЕЙ = ("in the yard", "in the room", "at the party", "on the bus")
+МЕСТА_ЛЮДЕЙ = ("in the yard", "in the room", "at the party", "in the hall")
 ВОПРОСЫ_ДЕРЖАНИЯ = ("how many {it} are left?", "how many {it} are there now?", "how many {it} remain?")
-ADD_PAIRS = [("counted", "found"), ("bought", "got")]
-SUB_PAIRS = [("packed", "used"), ("picked", "gave")]
+ADD_PAIRS = [("bought", "got"), ("found", "collected")]
+# (глагол своего, глагол убыли, хвост убыли): «away» — у того, кто отдаёт, и только у него
+SUB_PAIRS = [("had", "gave", " away"), ("bought", "lost", ""), ("picked", "ate", "")]
 # A THING IS BOUGHT AND PACKED; A PERSON IS NOT. «ida bought 3 friends»
 # is grammatical and false about the world, so animate items carry
 # their own verbs and their own ask — the animacy itself is declared in
 # gsm_items, where no census could have found it.
 ADD_ANIM = [("counted", "met"), ("greeted", "met")]
 SUB_ANIM = [("counted", "missed"), ("greeted", "missed")]
-# (add-ask, add-verb, sub-tail, sub-ask, sub-verb)
-ASK_THING = ("hold now", "holds", " away", "keep", "keeps")
-ASK_ANIM = ("know now", "knows", "", "still know", "knows")
+# (add-ask, add-verb, sub-ask, sub-verb); хвост убыли вещей — у пары глаголов, живых — пустой
+ASK_THING = ("have now", "has", "keep", "keeps")
+ASK_ANIM = ("know now", "knows", "still know", "knows")
 # NUMBER-FREE frames: the item must live where no digit stands
 BARE_PLURAL = [
     "{a} likes the {it}.",
@@ -100,15 +131,36 @@ BARE_SINGULAR_ANIM = [
 # не род, а ПРЕДМЕТ: она меняет глаголы и вопрос, но не дело.
 ПРИБАВКА = "прибавка: акт и ещё акт того же носителя"
 УБЫЛЬ = "убыль: отдано не больше своего"
-ЦЕПЬ_АКТОВ = "цепь актов: сделал, продал, сделал ещё — на сколько больше сделал"
+ЦЕПЬ_АКТОВ = "цепь актов: написал, отослал, написал ещё — на сколько больше написал"
 БЕЗ_НОСИТЕЛЯ = "держание без носителя: страница открывается МЕСТОМ, а не лицом"
 МНОЖЕСТВЕННОЕ = "голая форма множественного при вещи"
 ЕДИНСТВЕННОЕ = "голая форма единственного при вещи"
 
 
+def _пары(it):
+    """(пары прибавки, пары убыли), какие вещь ПО ПРАВДЕ берёт: судимый глагол — по двери,
+    глагол купли-продажи — лишь товар, прочие несудимые — всякую вещь и всякого живого."""
+    anim = it in ANIMATE
+    add = ADD_ANIM if anim else ADD_PAIRS
+    sub = [(v1, v2, "") for v1, v2 in SUB_ANIM] if anim else SUB_PAIRS
+
+    def годен(г):
+        if г in verbthings.ГЛАГОЛ_БЕРЁТ:
+            return verbthings.берёт(г, it)
+        return anim or г not in КУПЛЯ_ПРОДАЖА or it in ТОВАРЫ
+
+    return ([п for п in add if all(годен(г) for г in п)],
+            [п for п in sub if all(годен(г) for г in п[:2])])
+
+
+# ВЕЩЬ ВХОДИТ В ДОМ, ЕСЛИ БЕРЁТ И ПАРУ ПРИБАВКИ, И ПАРУ УБЫЛИ; иначе закон дома («страница
+# вопреки закону не пишется») остановил бы кузницу — и вещь уходит из дома с этим основанием.
+ВЕЩИ_ДОМА = [it for it in ITEMS if (it in PACKAGEABLE or it in ANIMATE) and all(_пары(it))]
+
+
 def pass_shows(pass_i):
     out = Сбор()
-    for i, it in enumerate(ITEMS):
+    for i, it in enumerate(ВЕЩИ_ДОМА):
         seed = pass_i * 31 + i * 7
         a = NAMES[seed % len(NAMES)]
         b = NAMES[(seed + 3) % len(NAMES)]
@@ -116,9 +168,7 @@ def pass_shows(pass_i):
         n = seed % 8 + 3          # 3..10
         m = seed % 4 + 1          # 1..4
         anim = it in ANIMATE
-        add = ADD_ANIM if anim else ADD_PAIRS
-        sub = SUB_ANIM if anim else SUB_PAIRS
-        q1, a1, tail, q2, a2 = (
+        q1, a1, q2, a2 = (
             ASK_ANIM if anim else ASK_THING)
         # A VERB TAKES ITS OWN KIND OF THINGS (tools/verbthings.py): the page
         # is per thing, so the PAIR follows the thing — «picked 4 miles» no more.
@@ -136,15 +186,14 @@ def pass_shows(pass_i):
         # правки не меняется ни на байт; меняется то, что случится ЗАВТРА, когда
         # заведут вещь без пары: дом ОСТАНОВИТСЯ с именем вещи в руках вместо того,
         # чтобы написать «picked 4 miles» и промолчать.
-        add = [п for п in add if all(verbthings.берёт(г, it) for г in п)]
-        sub = [п for п in sub if all(verbthings.берёт(г, it) for г in п)]
+        add, sub = _пары(it)
         if not add or not sub:
             raise AssertionError(
                 "вещь «%s» не берёт ни одной объявленной пары (%s): объяви пару в "
                 "tools/verbthings.py или убери вещь — страница вопреки закону не "
                 "пишется" % (it, "сложения" if not add else "вычитания"))
         v1, v2 = add[seed % len(add)]
-        s1, s2 = sub[seed % len(sub)]
+        s1, s2, tail = sub[seed % len(sub)]
         out.род = ПРИБАВКА
         out.append(
             f"{a} {v1} {n} {by_count(n, it)}. "
@@ -162,21 +211,9 @@ def pass_shows(pass_i):
             f"how many {it} does {b} {q2}? "
             f"{b} {a2} {n - gave} {by_count(n - gave, it)}: {n} − {gave} = {n - gave}."
         )
-        # НАКОПЛЕНИЕ ПОВТОРЁННОГО АКТА (e9 04.09): «made … sold … of them.
-        # then made N more … how many more did X make than sell?» — оба
-        # звена цепью; вещи только неодушевлённые.
-        if not anim:
-            out.род = ЦЕПЬ_АКТОВ
-            sold = min(n, m)
-            # с «more» и без него поровну (e9): иначе «more» купится как
-            # условие суммы, а SVAMP пишет обе формы
-            ещё = " more" if seed % 2 == 0 else ""
-            out.append(
-                f"{a} made {n} {by_count(n, it)}. {a} sold {sold} of them. "
-                f"then {a} made {m}{ещё} {it}. "
-                f"how many more {it} did {a} make than sell? "
-                f"{n} + {m} = {n + m}, {n + m} − {sold} = {n + m - sold}."
-            )
+        # НАКОПЛЕНИЕ ПОВТОРЁННОГО АКТА (конструкция названа переписью e9 04.09): «wrote … sent … of
+        # them. then wrote N more … how many more did X write than send?» — оба звена цепью. Число
+        # при «ещё» согласует имя («1 more letter»): прежняя рамка писала «made 1 more keys».
         # HOLDING WITHOUT A HOLDER (e9 04.09, SVAMP: «there are/were N … »
         # opens 44 of 726 problems): the page opens with the place, not with
         # an actor; the three question forms of the decrease alternate.
@@ -198,6 +235,24 @@ def pass_shows(pass_i):
         for tpl in (BARE_SINGULAR_ANIM if anim
                     else BARE_SINGULAR):
             out.append(tpl.format(a=b, one=one))
+    # ЦЕПЬ ИДЁТ СВОИМ ОБХОДОМ: письменное не упаковывают, и в ряд вещей дома письма не входят, а
+    # цепь о них есть. Три показа на вещь за проход — род несёт массу (LAW³ = 8), а не одну строку.
+    for j, it in enumerate(sorted(ПИШУТ_И_ОТСЫЛАЮТ)):
+        for r in range(3):
+            seed = pass_i * 31 + j * 11 + r * 17
+            a = NAMES[seed % len(NAMES)]
+            n = seed % 8 + 3          # 3..10
+            m = seed % 4 + 1          # 1..4
+            out.род = ЦЕПЬ_АКТОВ
+            sold = min(n, m)
+            # с «more» и без него поровну (e9): иначе «more» купится как условие суммы
+            ещё = " more" if seed % 2 == 0 else ""
+            out.append(
+                f"{a} wrote {n} {by_count(n, it)}. {a} sent {sold} of them. "
+                f"then {a} wrote {m}{ещё} {by_count(m, it)}. "
+                f"how many more {it} did {a} write than send? "
+                f"{n} + {m} = {n + m}, {n + m} − {sold} = {n + m - sold}."
+            )
     return out
 
 
@@ -217,8 +272,8 @@ def pass_shows(pass_i):
 ЗАЧЕМ_РОДА = {
     ПРИБАВКА: "n + m, и глагол берётся из пар, какие ДАННАЯ вещь принимает",
     УБЫЛЬ: "n − m, где отданное не больше своего: «keeps −1 coins» есть ложь о мире",
-    ЦЕПЬ_АКТОВ: "два звена цепью: «сделал n, продал столько-то, сделал ещё m — на сколько "
-                "больше сделал, чем продал»",
+    ЦЕПЬ_АКТОВ: "два звена цепью: «написал n, отослал столько-то, написал ещё m — на сколько "
+                "больше написал, чем отослал»",
     БЕЗ_НОСИТЕЛЯ: "«there were N … » — страница открывается МЕСТОМ, а не лицом: 44 задачи "
                   "из 726 в SVAMP устроены так",
     МНОЖЕСТВЕННОЕ: "голая форма множественного числа при этой вещи",

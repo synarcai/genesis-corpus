@@ -29,7 +29,8 @@ import pathlib
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-from gsm_items import ANIMATE, ITEMS  # noqa: E402
+from gsm_items import ITEMS  # noqa: E402
+from animacy import ANIMATE  # noqa: E402
 from layer import Сбор, emit  # noqa: E402
 from plural import by_count  # noqa: E402
 
@@ -59,42 +60,43 @@ THINGS = [w for w in ITEMS if w not in ANIMATE]
 # be done to what. The same cure as the rates layer: the verb declares
 # its items, and a check at build time refuses anything not in the
 # census lexicon.
+# ВЕЩИ ПРИ ГЛАГОЛАХ — ИЗ НАШЕГО СЛОВАРЯ (23.09): словарь `gsm_items` заменён дверями пакета и
+# `verbthings`, и вещи, какие брались лишь у полосы (cupcakes, vlogs, tablespoons, signatures,
+# bandages, lollipops, newspapers, paintings, reports, meals, packs, batches, ounces, yards),
+# ушли вместе с ним. «upload» держался на одних «vlogs» и ушёл с ними; прочие глаголы — общие
+# глаголы языка, и при каждом стоят вещи, какие он по правде берёт.
 VERBS = [
     ("collect", "collects", "collected", "collected", ['cards', 'stickers', 'shells', 'marbles']),
-    ("bake", "bakes", "baked", "baked", ['cookies', 'cupcakes', 'batches']),
-    ("order", "orders", "ordered", "ordered", ['books', 'packs', 'meals']),
-    ("plant", "plants", "planted", "planted", ['roses', 'flowers']),
-    ("deliver", "delivers", "delivered", "delivered", ['newspapers', 'packs', 'meals']),
-    ("upload", "uploads", "uploaded", "uploaded", ['vlogs', 'paintings']),
-    ("receive", "receives", "received", "received", ['cards', 'reports', 'signatures']),
-    ("produce", "produces", "produced", "produced", ['eggs', 'reports', 'paintings']),
+    ("bake", "bakes", "baked", "baked", ['cookies', 'cakes', 'loaves']),
+    ("order", "orders", "ordered", "ordered", ['books', 'pens', 'sandwiches']),
+    ("plant", "plants", "planted", "planted", ['flowers', 'trees', 'seeds']),
+    ("deliver", "delivers", "delivered", "delivered", ['letters', 'boxes']),
+    ("receive", "receives", "received", "received", ['cards', 'letters', 'stamps']),
+    ("produce", "produces", "produced", "produced", ['eggs', 'cakes']),
     ("score", "scores", "scored", "scored", ['points']),
     ("count", "counts", "counted", "counted", ['marbles', 'balloons', 'cards']),
-    ("weigh", "weighs", "weighed", "weighed", ['pounds', 'kilograms', 'ounces']),
-    ("walk", "walks", "walked", "walked", ['miles', 'kilometers', 'yards']),
-    ("need", "needs", "needed", "needed", ['cups', 'gallons', 'tablespoons']),
-    ("use", "uses", "used", "used", ['pens', 'bandages', 'tablespoons']),
+    ("weigh", "weighs", "weighed", "weighed", ['pounds', 'kilograms', 'grams']),
+    ("walk", "walks", "walked", "walked", ['miles', 'kilometers', 'meters']),
+    ("need", "needs", "needed", "needed", ['cups', 'gallons', 'eggs']),
+    ("use", "uses", "used", "used", ['pens', 'pencils', 'stamps']),
     ("buy", "buys", "bought", "bought", ['books', 'apples', 'bananas']),
     ("sell", "sells", "sold", "sold", ['cookies', 'books', 'flowers']),
-    ("make", "makes", "made", "made", ['cupcakes', 'paintings', 'sandwiches']),
+    ("make", "makes", "made", "made", ['cakes', 'sandwiches', 'cookies']),
     ("hold", "holds", "held", "held", ['marbles', 'balloons', 'cards']),
     ("take", "takes", "took", "taken", ['minutes', 'hours', 'seconds']),
-    ("give", "gives", "gave", "given", ['stickers', 'candies', 'lollipops']),
+    ("give", "gives", "gave", "given", ['stickers', 'candies', 'sweets']),
     ("eat", "eats", "ate", "eaten", ['apples', 'cookies', 'sandwiches']),
-    ("run", "runs", "ran", "run", ['miles', 'kilometers', 'yards']),
-    ("grow", "grows", "grew", "grown", ['roses', 'flowers']),
-    ("see", "sees", "saw", "seen", ['paintings', 'balloons', 'flowers']),
-    # «catch» просил e9: g1.46 пишет «Alex has caught 5 more than Stan»,
-    # и перфект этого глагола не был показан ни разу.
+    ("run", "runs", "ran", "run", ['miles', 'kilometers', 'meters']),
+    ("grow", "grows", "grew", "grown", ['flowers', 'trees']),
+    ("see", "sees", "saw", "seen", ['balloons', 'flowers', 'trees']),
     ("catch", "catches", "caught", "caught", ['balls', 'cards', 'balloons']),
     ("put", "puts", "put", "put", ['marbles', 'cards', 'balloons']),
     ("spend", "spends", "spent", "spent", ['minutes', 'hours', 'dollars']),
     ("pay", "pays", "paid", "paid", ['dollars']),
-    ("read", "reads", "read", "read", ['pages', 'books', 'newspapers']),
-    # «gets» и «drinks» перепись назвала третьими лицами, стоящими перед
-    # числом: «she gets 20 marbles», «ingrid drinks 8 cups».
+    ("read", "reads", "read", "read", ['pages', 'books', 'letters']),
+    # «gets» и «drinks» — третьи лица, стоящие перед числом: «she gets 20 marbles».
     ("get", "gets", "got", "got", ['marbles', 'cards', 'points']),
-    ("drink", "drinks", "drank", "drunk", ['cups', 'gallons', 'ounces']),
+    ("drink", "drinks", "drank", "drunk", ['cups', 'gallons', 'bottles']),
 ]
 
 

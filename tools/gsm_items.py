@@ -1,100 +1,86 @@
 #!/usr/bin/env python3
-"""THE ITEM LEXICON OF GSM8K — one source, read by every layer.
+"""THE ITEM LEXICON — one source, read by every layer; OUR lexicon since 23.09.
 
-Two layers needed the same list and would have drifted apart the first
-time either was touched, so the list lives here alone.
+Two layers needed the same list and would have drifted apart the first time either was touched,
+so the list lives here alone.
 
-DERIVED, NOT INVENTED, AND THE DERIVER IS IN THE REPOSITORY:
-`tools/gsm_census.py` produces this list from bench/suites and can be
-run against it (`--court`). A derived list whose deriver lives in a
-scratchpad is a hand-written list wearing the word «measured».
+ЗАМЕНЁН 23.09 ПО СЛОВУ ВЛАДЕЛЬЦА (решение ведущего omega-90, путь «а»). До того здесь стояли 66
+слов, выведенных переписью ПУБЛИЧНЫХ полос GSM8K g1/g2 (`tools/gsm_census.py`): «chimichangas»,
+«vlogs», «tablespoons» были показаны затем, чтобы читатель купил словарь самих задач меры.
 
-A word earns its place by two independent witnesses — it stands after
-a number at least LAW times AND in a NUMBER-FREE question frame — and
-is then certified by the `plural` organ. The window between the count
-and the thing admits the comparatives and determiners that lawfully
-stand there («7 more players»): demanding adjacency measured the
-SURFACE, not the role, and cost three true items.
+    СЛОВАРЬ, ВЫВЕДЕННЫЙ ИЗ МЕРЫ, ЕСТЬ ТЕЧЬ ПО САМОЙ ДВЕРИ: всякий дом, читающий его, учит
+    читателя словам полосы, какими бы своими ни были его рамки и числа.
 
-WHAT IS DERIVED BUT NOT SHIPPED IS NAMED, NOT DROPPED. The court
-compares the deriver's output against ITEMS plus WITHHELD, so a word
-can leave the layer only with a written reason.
+ОТКУДА СЛОВАРЬ ТЕПЕРЬ. Из двух наших дверей и ни из какой полосы:
+  · существительные пакета en (`tools/langpacks/en.json`, `noun_forms` — множественное), и
+  · школьные классы двери «глагол берёт свою вещь» (`tools/verbthings.py`): еда, питьё,
+    выпечка, письменное, чтение, путь и время, вес, очки, деньги, посев, сбор, вещи в руке.
+Вещь входит, если пакет её склоняет И класс её объявляет; одушевлённые (`tools/animacy.py`) —
+если их склоняет пакет. Классы полосных глаголов (прыжок, упражнения, просмотр…) сюда не входят:
+их вещи были взяты у полосы.
+
+ОДНО ПИСЬМО МЕРЫ В ОДНОМ СЛОВАРЕ: где пакет даёт и британское, и американское письмо единицы,
+берётся американское (письмо домов мер — «amer»); чья пара письма — говорит дверь единиц
+(`tools/units.py`), а не список здесь.
+
+Перепись полос (`tools/gsm_census.py`) осталась ПРИБОРОМ: она мерит, сколько слов полосы наш
+словарь покрывает, и не диктует ему ни слова.
 """
+import json
+import pathlib
+import sys
 
-ITEMS = [
-    "acres", "apples", "apps", "balloons", "balls", "bananas",
-    "bandages", "batches", "bolts", "books", "calories", "candies",
-    "cards", "cars", "centimeters", "children", "chimichangas",
-    "cookies", "crates", "cupcakes", "cups", "days", "degrees",
-    "dollars", "eggs", "feet", "flowers", "friends", "gallons", "guns",
-    "hours", "inches", "jewels", "kids", "kilograms", "kilometers",
-    "lollipops", "marbles", "meals", "miles", "minutes", "newspapers",
-    "ounces", "packs", "pages", "paintings", "pairs", "pens", "people",
-    "pieces", "players", "points", "pounds", "puppies", "reports",
-    "roses", "sandwiches", "seconds", "shells", "signatures", "spoons",
-    "stickers", "students", "tablespoons", "teachers", "toys", "vlogs",
-    "yards", "years",
-]
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import units  # noqa: E402 — пары письма единиц
+import verbthings  # noqa: E402 — классы вещей по глаголу
+from animacy import ANIMATE  # noqa: E402 — одушевлённость: свой дом (23.09)
 
-# Derived by the census, kept OUT of the layers on purpose:
+ШКОЛЬНЫЕ_КЛАССЫ = ("ЕДА", "ПИТЬЁ", "ВЫПЕЧКА", "ПИСЬМЕННОЕ", "ЧТЕНИЕ", "РАССТОЯНИЕ_ВРЕМЯ", "ВЕС",
+                   "ОЧКИ", "ДЕНЬГИ", "ПОСЕВ", "СБОР", "ВРЕМЯ", "В_РУКЕ")
+
+_ПАКЕТ = json.loads((pathlib.Path(__file__).resolve().parent / "langpacks" / "en.json")
+                    .read_text(encoding="utf-8"))
+_МНОЖЕСТВЕННЫЕ = frozenset(_ПАКЕТ["noun_forms"].values())
+_В_КЛАССАХ = frozenset().union(*(getattr(verbthings, к) for к in ШКОЛЬНЫЕ_КЛАССЫ))
+# британское письмо, чья американская пара тоже склоняется пакетом, — лишнее письмо той же меры
+_БРИТАНСКИЕ = frozenset(
+    en["brit"][1] for en, *_ in units.ФОРМЫ_ВСЕХ.values()
+    if isinstance(en, dict) and "brit" in en and "amer" in en and en["brit"] != en["amer"]
+    and en["amer"][1] in _МНОЖЕСТВЕННЫЕ)
+
+ITEMS = sorted(((_МНОЖЕСТВЕННЫЕ & _В_КЛАССАХ) - _БРИТАНСКИЕ) | (_МНОЖЕСТВЕННЫЕ & ANIMATE))
+
+# СЛОВА, КАКИЕ ДВЕРИ ДАЮТ, НО СЛОВАРЬ НЕ БЕРЁТ, НАЗЫВАЮТСЯ, А НЕ РОНЯЮТСЯ МОЛЧА. Прежде здесь
+# стояли три слова переписи полос; ныне — слова наших дверей, выведенные из словаря с причиной.
 WITHHELD = {
     "fish": (
-        "invariant — its singular IS its plural, and a corpus that "
-        "certifies agreement by its own use cannot tell the two "
-        "apart "
-    ),
-    "is": (
-        "not a noun at all: the organ's -s fallback misfires on it "
-        "(«is» -> «i»), and the two witnesses cannot see that "
-    ),
-    "times": (
-        "a multiplier in this benchmark, not a thing counted («3 "
-        "times as many»); shipping it would teach a false role "
+        "invariant — its singular IS its plural, and a corpus that certifies agreement by its "
+        "own use cannot tell the two apart"
     ),
 }
+ITEMS = [w for w in ITEMS if w not in WITHHELD]
 
-# ANIMATE ITEMS TAKE DIFFERENT VERBS, AND NO CENSUS CAN SEE IT.
-# «how many children do they hold?» and «ida bought 3 friends» are
-# grammatical and false about the world — the same class of fault as
-# «peter keeps -1 coins», and the same cure: name it, do not guess it.
-# Animacy is not derivable from the two witnesses that earn an item its
-# place (position after a number, life in a question frame), so it is
-# DECLARED here, beside the list it qualifies, and a layer that pastes
-# a possession verb onto these words is wrong by construction.
-ANIMATE = {
-    "children",
-    "friends",
-    "kids",
-    "people",
-    "players",
-    "puppies",
-    "students",
-    "teachers",
-}
+# УПАКОВАТЬ МОЖНО ВЕЩЬ, НО НЕ МЕРУ (М-103). «acres come 2 to a pack», «centimeters come 4 to a
+# crate» безупречны грамматически и ложны о мире. Упаковываемое есть ВЕЩЬ дверей — в руке,
+# выпечка, сбор, еда, — минус всё, что те же двери объявили мерой (путь и время, вес, очки,
+# деньги, питьё мерой), и минус живое.
+_МЕРЫ = frozenset().union(*(getattr(verbthings, к) for к in ("РАССТОЯНИЕ_ВРЕМЯ", "ВЕС", "ОЧКИ",
+                                                              "ДЕНЬГИ", "ВРЕМЯ")))
+# КАЛОРИЯ СТОИ́Т В КЛАССЕ ЕДЫ («ate 300 calories»), но она мера еды, а не еда, и сказано это ЗДЕСЬ,
+# при упаковке, где различие и работает; глагол «съел» её берёт по праву.
+_МЕРА_ЕДЫ = frozenset({"calories"})
+PACKAGEABLE = frozenset(
+    w for w in ITEMS
+    if w in (verbthings.В_РУКЕ | verbthings.ВЫПЕЧКА | verbthings.СБОР | verbthings.ЕДА)
+    and w not in _МЕРЫ and w not in _МЕРА_ЕДЫ and w not in ANIMATE)
 
+# ТОВАР — ТО, ЧТО ПОКУПАЮТ И ПРОДАЮТ, А НЕ ВСЁ, ЧТО В РУКЕ. Лист, прутик и камень находят,
+# кусок отламывают; «bought 3 leaves», «sells 2 pieces» верны грамматикой и ложны о мире. Глагол
+# купли-продажи дверь `verbthings` не судит, и дома, пишущие его, берут вещи отсюда.
+НАХОДЯТ_А_НЕ_ПОКУПАЮТ = frozenset({"leaves", "sticks", "stones", "pieces"})
+ТОВАРЫ = frozenset(PACKAGEABLE - НАХОДЯТ_А_НЕ_ПОКУПАЮТ)
 
-# УПАКОВАТЬ МОЖНО ВЕЩЬ, НО НЕ МЕРУ — И ПЕРЕПИСЬ ЭТОГО НЕ ВИДИТ (М-103).
-# «acres come 2 to a pack», «centimeters come 4 to a crate» безупречны
-# грамматически и ложны о мире: акр и сантиметр суть МЕРЫ, у них нет
-# штук, которые кладут в коробку. Различие не выводится ни из позиции
-# после числа, ни из вопросной рамки — оно объявляется здесь, рядом со
-# списком, который уточняет.
-#
-# Список положительный, а не дополнение: сказать, ЧТО упаковывается,
-# честнее, чем сказать, что не упаковывается, — второе молча впустит
-# всякое новое слово.
-PACKAGEABLE = {
-    "apples", "balloons", "bananas", "bandages", "bolts", "books",
-    "candies", "cards", "chimichangas", "cookies", "cupcakes",
-    "eggs", "flowers", "guns", "jewels", "lollipops", "marbles",
-    "newspapers", "paintings", "pens", "roses",
-    "sandwiches", "shells", "spoons", "stickers", "toys",
-}
-
-# ВСЯКОЕ ОБЪЯВЛЕНИЕ О СЛОВАРЕ ПРОВЕРЯЕТСЯ ИМ ЖЕ. Первая редакция назвала
-# упаковываемыми «seeds», «seashells» и «pencils» — слов, которых
-# перепись не давала вовсе: объявление о списке, вышедшее за список,
-# есть выдумка под видом уточнения.
+# ВСЯКОЕ ОБЪЯВЛЕНИЕ О СЛОВАРЕ ПРОВЕРЯЕТСЯ ИМ ЖЕ.
 assert PACKAGEABLE <= set(ITEMS), sorted(PACKAGEABLE - set(ITEMS))
 assert not (PACKAGEABLE & ANIMATE), sorted(PACKAGEABLE & ANIMATE)
-
+assert not (set(ITEMS) & _БРИТАНСКИЕ), sorted(set(ITEMS) & _БРИТАНСКИЕ)

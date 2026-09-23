@@ -30,12 +30,9 @@ def main():
     import collections
     from genesis import worlds
     # ПРЕДСТАВЛЕННОЕ «НЕТ» (М-106): единица не по глаголу; сумма не сходится; носители не сходятся; польская форма не по числу
-    подсадки = (
-        "der Frosch sprang 12 Kilogramm. wie weit sprang der Frosch? 12 Kilogramm.",
-        "la rana saltó 12 centímetros y luego 8 centímetros. ¿cuánto saltó la rana en total? 20 centímetros: 12 + 8 = 21.",
-        "auf dem Zaun saßen 6 Vögel. 4 weitere Vögel kamen dazu. wie viele Vögel sind jetzt auf dem Zaun? 10 Vögel: 6 + 4 = 11.",
-        "żaba skoczyła na 12 centymetry. ile centymetrów skoczyła żaba? na 12 centymetry.",
-    )
+    # С 23.09 подсадки выводит ДОМ из своих таблиц (`measurelangs.подсадки`): литералы прежних
+    # сцен после переписи сцен стали чужими строками, и суд не поймал ни одной — 0 из 4.
+    подсадки = tuple(битая for _, битая in F.подсадки())
     пойманы = sum(1 for п in подсадки if _судить(п) == (True, False))
     if пойманы != len(подсадки):
         for п in подсадки:

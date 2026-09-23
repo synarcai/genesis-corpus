@@ -19,7 +19,7 @@ count (plural.by_count); i//8 decoupling.
 from layer import Сбор, emit
 
 
-from gsm_items import ANIMATE
+from animacy import ANIMATE
 from gsm_items import ITEMS as CENSUS_ITEMS
 from plural import by_count
 

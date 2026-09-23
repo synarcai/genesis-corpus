@@ -9,7 +9,7 @@ contrary. One house declares what each verb takes; the generators draw their
 things from it, and the episode court refuses a known verb with a thing of
 the wrong kind (an unknown verb or an unknown thing is not judged here).
 """
-from gsm_items import ANIMATE
+from animacy import ANIMATE  # одушевлённость: свой дом (23.09, решение ведущего)
 from plural import singular
 
 # ПАСПОРТ КОРНЯ (07.09): кто читает род глагола. Правка ГЛАГОЛ_БЕРЁТ или ANIMATE есть правка

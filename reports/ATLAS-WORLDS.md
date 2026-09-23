@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 348 миров, 473343 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 349 миров, 486224 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -11,14 +11,16 @@
 
 ## АКТ «recount» — пересчитать величину: строка утверждает число
 
-Миров 160, строк 239773.
+Миров 161, строк 253749.
 
 - **`links`** (17566 строк; declared, whole_only)  
   **CONVERSATION LINKS** — a question whose subject stands in the PREVIOUS reply (the owner's order, 04.09, item 5; the BESEDA band measures this genus mute 15 of 15).
+- **`perunit`** (15020 строк; recompute, whole_only, exact_only)  
+  **THE RATE PER UNIT** — ONE RELATION, THREE UNKNOWNS, FOUR FORMS, TEN LANGUAGES (23.09, the lead's order through a peer, then the rate hand's «ORDER TO THE CORPUS» of 11:45; measured by its census `canon/judges/tools/rate_order_census.py` on the bake pin d3…
 - **`school_biling_v2c`** (11440 строк; recompute, whole_only)  
   **THE SCHOOL OF ARITHMETIC IN THREE SURFACES** — the largest show world of the corpus (11 380 lines, 470 858 bytes) and, until 12.09, the one that said least about itself: thirty characters of declaration, «arithmetic school (3 surfaces)».
-- **`svamp`** (10445 строк; recompute, whole_only)  
-  **SVAMP SHAPES** — the eight shapes of the live SVAMP band that no frame of the corpus held (d5, 06.09, by weight on 726 tacts): the hidden quantity «some» and the heads of the total (in all, altogether, in total, a total of, now has N left); the oblique pr…
+- **`svamp`** (9413 строк; recompute, whole_only)  
+  **STORY SHAPES** — eight constructions that a census of the live public band named mute (d5, 06.09, by weight on 726 tacts): the hidden quantity «some» and the heads of the total (in all, altogether, in total, a total of, now has N left); the oblique pronou…
 - **`holdforms`** (6777 строк; declared, whole_only)  
   **HOLDINGS WITHOUT A VERB** — the first show «only by frames» (05.09, the owner's word through holon: prototype ONE BEARER, a story read only by frames).
 - **`holes`** (6640 строк; recompute, unsigned_only)  
@@ -62,7 +64,7 @@
 - **`genesis_story`** (2686 строк; recompute, whole_only, unsigned_only)  
   **THE STORY AS A THIRD SURFACE** — THE OPERATION IS CARRIED BY THE VERB AND NOT BY A SIGN, declared until 12.09 in five words: «story as third surface (verb algebra)».
 - **`gsmforms`** (2591 строк; recompute, exact_only)  
-  **school forms of GSM8K (owner's word 03.09: band g1 to 100 %; e9's FORM-MUTE named the question families whose form with an answer lives in no world)** — first layer of eight families: the total number of X (sum over carriers), temperature in degrees below…
+  **school forms** — constructions named mute by e9's FORM-MUTE census of the public bands (03.09), each family a construction and a formula, the scene our own — first layer of eight families: the total number of X (sum over carriers), temperature in degrees …
 - **`planforms`** (2520 строк; recompute, whole_only)  
   **THE PLAN** — «task · steps · checkable end» (05.09, the agent architecture, the third market and its critical path): a plan is a chain whose EVERY step is checked by a number, and whose end is a verdict about the task.
 - **`sequences`** (2432 строк; recompute, whole_only, unsigned_only)  
@@ -145,12 +147,12 @@
   **БОЛЬШОЕ ЧИСЛО ТЕМИ ЖЕ ЧЕТЫРЬМЯ ДЕЙСТВИЯМИ: сложение, вычитание, умножение и деление на сотнях и тысячах** — «сколько будет 200 − 100?», «what is 610 + 10?», «compute 950 − 100».
 - **`calendar`** (902 строк; recompute, whole_only, unsigned_only)  
   **ДЕНЬ ЧЕРЕЗ ДЕНЬ, И ШАГ ДОКАЗАН СЛОЖЕНИЕМ ПО НОМЕРУ: «через 3 дня после понедельника наступает четверг: 1 + 3 = 4, день 4** — четверг».
-- **`gsmwide`** (900 строк; recompute, whole_only, unsigned_only)  
-  **ТОТ ЖЕ ШАГ В ЕДИНИЦУ, НО ШИРОКИМ СЛОВАРЁМ ПРЕДМЕТОВ: eggs, degrees, packs, dollars, days, pounds** — «Iris weighs 7 pounds.
 - **`story_chain`** (890 строк; recompute, declared, whole_only, unsigned_only)  
   **the three-part chain: one bearer, one thing, THREE different verbs in ONE show** — «Tom picked 12 apples and gave away 5; Tom keeps 7 apples».
 - **`programs`** (888 строк; recompute, whole_only, unsigned_only)  
   **ПРОГРАММА КАК УТВЕРЖДЕНИЕ О СВОЁМ ИТОГЕ: «sum for i from 1 to 4 is 10», «if 3 < 5 then y = 1 else y = 2; y = 1», произведение по счётчику** — и ГРАНИЦА РЕКУРСИИ, сказанная прямо: «рекурсия без основания есть зависание, а не программа; factorial(0) = 1».
+- **`gsmwide`** (888 строк; recompute, whole_only, unsigned_only)  
+  **ТОТ ЖЕ ШАГ В ЕДИНИЦУ, НО ШИРОКИМ СЛОВАРЁМ ПРЕДМЕТОВ: eggs, degrees, packs, dollars, days, pounds** — «Ava has 9 dollars.
 - **`mixedunits`** (882 строк; recompute, whole_only, exact_only)  
   **THE MIXED MEASURE** — the carry that is a thousand, and the one that is a hundred (06.09).
 - **`pronobject`** (864 строк; recompute, whole_only)  
@@ -242,7 +244,7 @@
 - **`divshare`** (466 строк; recompute, whole_only)  
   **DIVIDING BY A SHARE** — division DOES NOT ALWAYS DECREASE, and the question itself sounds different.
 - **`action_measure_langs`** (462 строк; recompute, whole_only)  
-  **ACTION MEASURE IN SEVEN MORE LANGUAGES (d5's genus, the owner's word: every language in surplus)** — «der Frosch sprang 12 Zentimeter. wie weit sprang der Frosch? 12 Zentimeter.», «la grenouille a sauté de 12 centimètres.», «żaba skoczyła na 12 centymetró…
+  **ACTION MEASURE IN SEVEN MORE LANGUAGES (d5's genus, the owner's word: every language in surplus)** — «der Hase sprang 14 Zentimeter. wie weit sprang der Hase? 14 Zentimeter.», «le lapin a sauté de 14 centimètres.», «królik skoczył na 14 centymetrów.», the…
 - **`factor`** (456 строк; recompute, whole_only)  
   **FACTORS AND DIVISIBILITY** — a factorisation names ALL the divisors at once.
 - **`neg`** (442 строк; recompute, whole_only)  
@@ -258,7 +260,7 @@
 - **`depletion`** (404 строк; recompute, whole_only)  
   **УБЫВАНИЕ ЗАПАСА, СЧИТАННОЕ ДО КОНЦА: «у иды было 70 книг. половина книг ушла. сколько книг осталось? осталось 35 книг: 70 ÷ 2 = 35». Имя носителя, начальный запас, доля или число ушедшего** — и остаток, ДОКАЗАННЫЙ действием, а не объявленный.
 - **`gsmlex`** (400 строк; recompute, whole_only, unsigned_only)  
-  **ШАГ В ЕДИНИЦУ, СКАЗАННЫЙ ШИРОКИМ СЛОВАРЁМ ДЕЙСТВИЙ: «Felix makes 12 points. Felix uses 1 point away. how many points does Felix keep? Felix keeps 11 points». Одно и то же прибавление или убавление единицы, названное ДЕСЯТКАМИ РАЗНЫХ ГЛАГОЛОВ** — makes, ha…
+  **ШАГ В ЕДИНИЦУ, СКАЗАННЫЙ ШИРОКИМ СЛОВАРЁМ ДЕЙСТВИЙ: «Ben has 12 nuts. Ben gives 1 nut away. how many nuts does Ben keep? Ben keeps 11 nuts: 12 − 1 = 11». Одно и то же прибавление или убавление единицы, названное ДЕСЯТКАМИ РАЗНЫХ ГЛАГОЛОВ** — makes, has, t…
 - **`wordnum`** (392 строк; recompute, whole_only)  
   **NUMBERS OF THE STORY WRITTEN AS WORDS** — «Ann had fifteen coins», not «Ann had 15 coins» (21.09).
 - **`dec`** (388 строк; recompute, finite_decimal_only)  
@@ -339,7 +341,7 @@
 Миров 63, строк 23100.
 
 - **`cmpframes`** (6480 строк; recompute, whole_only)  
-  **FRAMES OF COMPARISON** — the largest class of the reader's lies on the held-out key (05.09: twelve of fifteen — «9 flexiones más que», «in più/in meno di», «meer/minder dan», «więcej/mniej niż»: the marker is not bought and the answer takes a neighbouring…
+  **FRAMES OF COMPARISON** — the largest class of the reader's lies on the held-out key (05.09: twelve of fifteen — a comparison marker on a non-English page answered by a neighbouring number: the marker is not bought).
 - **`compare_mult`** (2759 строк; recompute, whole_only, unsigned_only)  
   **multiple comparison, and the two frames English keeps apart standing SIDE BY SIDE ON THE SAME NUMBERS: «as many as» for the countable and «as much as» for the uncountable** — the organism had bought one and not the other because they never stood together;…
 - **`genesis_compare`** (1440 строк; recompute, whole_only, unsigned_only)  
@@ -554,7 +556,7 @@
 
 ## АКТ «inflect» — поставить слово в форму по объявленному правилу
 
-Миров 34, строк 113245.
+Миров 34, строк 113234.
 
 - **`lang_de`** (8274 строк; declared, whole_only)  
   **THE GERMAN LAYER** — FOUR CASES CARRIED BY THE ARTICLE, EACH IN ITS OWN FRAME. Declared until 12.09 in nine words.
@@ -614,11 +616,11 @@
   **amharic: the sixth script, ethiopic, where a sign carries the consonant TOGETHER WITH its vowel** — not a mark beside it but part of the sign itself, and there are some 270 of them (tier 1: structure green, forms agree with the pack's own rules)
 - **`lang_ta`** (1830 строк; declared, tier1_unverified, whole_only)  
   **tamil: an abugida like hindi but with its OWN marks** — the direct second test of the law that a combining mark is a letter by office; it passed with plain spaced cutting and NO change to the instrument.
-- **`genderverb`** (1123 строк; recompute, additive_only)  
+- **`genderverb`** (1132 строк; recompute, additive_only)  
   **the gender ending of the past tense: «сделал + а = сделала», the ending named as a gender and TIED TO THE BEARER'S declared gender** — the place of the bearer where the subject is dropped (ru and pl only: seven of nine languages have no gender in the past)
 - **`unit_counts`** (720 строк; declared, whole_only)  
   **COUNTED UNITS** — «1 day, 2 days, 5 days» IN ONE FRAME (32's tomograph of the rate, 03.09): the market of count forms buys the pair «day / days» only inside ONE frame carrying at least three different numbers, and the corpus said «worked on 1 day» in one …
-- **`verbs`** (620 строк; declared, recompute, whole_only, unsigned_only)  
+- **`verbs`** (600 строк; declared, recompute, whole_only, unsigned_only)  
   **THE VERB FORM OVER ONE FACT** — declared until 12.09 in eight words.
 - **`ruverbs`** (355 строк; declared, whole_only, unsigned_only)  
   **РУССКИЙ ГЛАГОЛ, УПРАВЛЯЮЩИЙ ПАДЕЖОМ СЧЁТА: «Юрий ест 8 яблок», «где лежат …», «где стоят …», «у Петра …»** — и форма имени при числе берётся не наугад, а по объявлению языка.
@@ -627,7 +629,7 @@
 
 ## АКТ «name» — назвать: что вещь ЕСТЬ и как она зовётся
 
-Миров 25, строк 48921.
+Миров 25, строк 47837.
 
 - **`notationvar`** (10696 строк; recompute, reversibility, declared_pairs_only)  
   **one sign, two scripts: the same record written in ASCII and in typography, and the court reduces both to one canon. The corpus knew every sign in ONE script only, and in different signs** — in DIFFERENT ones: «x^2» 1702 times and «x²» ZERO, «≤» 351 and «<…
@@ -635,8 +637,6 @@
   **MORPHOLOGY WRITTEN AS ADDITION** — «ei + er = eier».
 - **`inquiry`** (3902 строк; recompute, whole_only)  
   **the ladder of inquiry: for six genera** — primality, divisibility, the sum of odd numbers, the conditional, injectivity, the square — four rungs are shown, definition then a decided case with its ground then a counterexample then the law; both tongues, ev…
-- **`items`** (2357 строк; recompute, declared, whole_only, unsigned_only)  
-  **THE THING NAMED BEFORE IT IS COUNTED** — declared until 12.09 in eight words.
 - **`dialogue`** (2246 строк; declared, whole_only)  
   **EVERYDAY SPEECH** — the first word a person writes (the owner's order, 04.09).
 - **`definitions`** (2141 строк; declared, whole_only, unsigned_only)  
@@ -661,6 +661,8 @@
   **the ladder of inquiry on equations: what a root IS, a case DECIDED by substitution with the arithmetic beside the verdict, Vieta shown as sum and product of the roots rather than a formula recited, a refusal with its ground («no whole root between 0 and 1…
 - **`topics`** (1284 строк; declared, whole_only)  
   **EVERYDAY TOPICS** — what a person asks about first (the owner's order, 04.09, item 4; the BESEDA band measures this genus mute 16 of 20, and names its cause: SUBJ-UNKNOWN — the reader does not know the SUBJECT of the question.
+- **`items`** (1273 строк; recompute, declared, whole_only, unsigned_only)  
+  **THE THING NAMED BEFORE IT IS COUNTED** — declared until 12.09 in eight words.
 - **`mathfound`** (1198 строк; declared, recompute, finite_explicit_only)  
   **ОСНОВАНИЯ МАТЕМАТИКИ И НАЗВАННЫЙ ПАДЕЖ** — ОДИН МИР, И ЭТО НЕ СЛУЧАЙНОСТЬ: функция как ОДИН ПРЕДМЕТ («функция f на множестве {1 2 3} задана правилом f(x) = 4x; f(1) = 4»), инъекция свидетелем, счётность, доказательство от противного, индукция — и рядом ше…
 - **`glyphs`** (1101 строк; declared, declared_pairs_only)  
@@ -775,5 +777,5 @@
     ОБЪЯВЛЕНИЕ В ТРИДЦАТЬ ЗНАКОВ НЕ ЛЖЁТ И НЕ ГОВОРИТ: читатель узнаёт имя мира
     и ничего сверх него.
 
-Миров: **0** из 348.
+Миров: **0** из 349.
 

@@ -1,13 +1,15 @@
 #!/usr/bin/env python3
 """[ШКОЛЬНЫЕ ФОРМЫ g1] — счёт основания пересчитывается, полярность судится итогом.
 
-Мир gsmforms (tools/gen_genesis_gsmforms.py) показывает семейства вопросов
-GSM8K, немые по прибору FORM-MUTE (e9): сумма по носителям, температура
-ниже нуля, процент от доли, унции в фунты, глубина воды, вероятность
-долей, доля от целого назад, дополнение. Суд не сверяет с записанным:
-он считает из данных строки и сравнивает с итогом, с основанием после
-двоеточия и с полярностью («is not N: it is M»); вопрос судится своим
-ответом в той же строке.
+Мир gsmforms (tools/gen_genesis_gsmforms.py) показывает семейства конструкций,
+немых по прибору FORM-MUTE (e9): сумма по носителям, температура ниже нуля,
+процент от доли, унции в фунты, глубина из объёма, вероятность дробью, доля от
+целого назад, дополнение. Суд не сверяет с записанным: он считает из данных строки
+и сравнивает с итогом, с основанием после двоеточия и с полярностью («is not N: it
+is M, because …»); вопрос судится своим ответом в той же строке.
+
+СЦЕНЫ ДОМА ПЕРЕПИСАНЫ 23.09 (полоса — прибор, а не источник), и слова образцов
+переписаны вслед: законы рамок — те же лямбды над теми же числами.
 """
 import json
 import pathlib
@@ -115,8 +117,9 @@ def _глубина_не(м):
 
 # 6. вероятность
 def _вероятность(м):
-    r, b, num, den, or_, on = (_n(x) for x in м.groups())
-    return num == r and den == r + b and (or_, on) == (r, r + b)
+    """Дробь ответа и выкладка суммы: «is 3/8: 3 + 5 = 8 buttons, 3 of them black»."""
+    r, b, num, den, or_, ob, on, or2 = (_n(x) for x in м.groups())
+    return num == r and den == r + b and (or_, ob, on, or2) == (r, b, r + b, r)
 
 
 def _вероятность_не(м):
@@ -130,9 +133,12 @@ def _вероятность_не(м):
 
 
 def _четверти(м):
-    часть, слово, целое, o_ч, ok, o4 = м.groups()
+    """ИТОГ ВЫКЛАДКИ СВЕРЯЕТСЯ (23.09): образец держал «= \\d+» без группы, и итог
+    «3 ÷ 1 × 4 = 13» при целом 12 судом не читался вовсе."""
+    часть, слово, целое, o_ч, ok, o4, итог = м.groups()
     часть, целое, k = _n(часть), _n(целое), СЛОВА_ЧЕТВЕРТЕЙ[слово]
-    return часть * 4 == целое * k and (_n(o_ч), _n(ok)) == (часть, k) and o4 == "4"
+    return (часть * 4 == целое * k and (_n(o_ч), _n(ok)) == (часть, k) and o4 == "4"
+            and _n(итог) == целое)
 
 
 def _четверти_не(м):
@@ -226,7 +232,7 @@ def _остаток_общий(T, n, g, r, on, og, ng, oT, ong, orr):
 def _остаток_en(*г):
     if len(г) == 11:                      # рассказ: со словом при остатке
         T, n, g, r, сл, on, og, ng, oT, ong, orr = г
-        if сл != ("pupil" if r == 1 else "pupils"):
+        if сл != ("egg" if r == 1 else "eggs"):
             return False
     elif len(г) == 8:                     # вопрос: остаток стои́т лишь в леджере
         T, n, on, og, ng, oT, ong, orr = г
@@ -237,15 +243,15 @@ def _остаток_en(*г):
 
 
 def _остаток_ru(*г):
-    if len(г) == 12:
-        T, с_T, n, g, r, с_r, on, og, ng, oT, ong, orr = г
-        if not (_форма_ru(с_T, T) and _форма_ru(с_r, r)):
+    """«яиц 14, … и осталось 2 яйца» — число всего стоит после имени (согласования нет),
+    форма остатка сверяется со счётом."""
+    if len(г) == 11:
+        T, n, g, r, с_r, on, og, ng, oT, ong, orr = г
+        if not _форма_ru(с_r, r):
             return False
-    elif len(г) == 9:
-        T, с_T, n, on, og, ng, oT, ong, orr = г
+    elif len(г) == 8:
+        T, n, on, og, ng, oT, ong, orr = г
         g, r = og, orr
-        if not _форма_ru(с_T, T):
-            return False
     else:
         return False
     return _остаток_общий(T, n, g, r, on, og, ng, oT, ong, orr)
@@ -291,140 +297,140 @@ def _рамка(закон):
     (rf"^the temperature was {Ч} degrees? and (fell|rose) by {Ч} degrees?\. what is the temperature in degrees now\? {Ч} ([+−]) {Ч} = {Ч}\.$", _температура_qa),
     (rf"^температура была {Ч} градус(?:а|ов)? и (упала|поднялась) на {Ч} градус(?:а|ов)?; теперь температура — {Ч} градус(?:а|ов)?: {Ч} ([+−]) {Ч} = {Ч}\.$", _температура),
     (rf"^the temperature was {Ч} degrees? and (fell|rose) by {Ч} degrees?; the temperature in degrees is not {Ч}: it is {Ч}\.$", _температура_не),
-    (rf"^the class has {Ч} pupils and {Ч} of them are girls; the percentage of girls is {Ч} %: {Ч} ÷ {Ч} × 100 = {Ч}\.$", _процент),
-    (rf"^the class has {Ч} pupils and {Ч} of them are girls\. what percentage of the class are girls\? {Ч} pupils and {Ч} girls: {Ч} ÷ {Ч} × 100 = {Ч} %\.$", _процент_qa),
-    (rf"^в классе {Ч} учени(?:к|ка|ков), из них {Ч} — девоч(?:ка|ки|ек); доля девочек — {Ч} %: {Ч} ÷ {Ч} × 100 = {Ч}\.$", _процент),
-    (rf"^the class has {Ч} pupils and {Ч} of them are girls; the percentage of girls is not {Ч} %: it is {Ч} %\.$", _процент_не),
-    (rf"^the parcel weighs {Ч} ounces and a pound is 16 ounces; the weight in pounds is {Ч}: {Ч} ÷ 16 = {Ч}\.$", _фунты),
-    (rf"^the parcel weighs {Ч} ounces and a pound is 16 ounces\. what is the weight in pounds\? {Ч} ounces: {Ч} ÷ 16 = {Ч}\.$", _рамка(lambda у, o_у0, o_у, ф: (o_у0, o_у) == (у, у) and у == 16 * ф)),
-    (rf"^посылка весит {Ч} унци[йия], а в фунте 16 унций; вес в фунтах — {Ч} фунт(?:а|ов)?: {Ч} ÷ 16 = {Ч}\.$", _фунты),
-    (rf"^the parcel weighs {Ч} ounces and a pound is 16 ounces; the weight in pounds is not {Ч}: it is {Ч}\.$", _фунты_не),
-    (rf"^the tank is {Ч} feet wide and {Ч} feet long and holds {Ч} cubic feet of water; the tank's water depth is {Ч} f(?:ee|oo)t: {Ч} ÷ \({Ч} × {Ч}\) = {Ч}\.$", _глубина),
-    (rf"^the tank is {Ч} feet wide and {Ч} feet long and holds {Ч} cubic feet of water\. what is the tank's water depth\? {Ч} by {Ч} holding {Ч}: {Ч} ÷ \({Ч} × {Ч}\) = {Ч} f(?:ee|oo)t\.$", _глубина_qa),
-    (rf"^бак шириной {Ч} фут(?:а|ов)? и длиной {Ч} фут(?:а|ов)? вмещает {Ч} кубических футов воды; глубина воды в баке — {Ч} фут(?:а|ов)?: {Ч} ÷ \({Ч} × {Ч}\) = {Ч}\.$", _глубина),
-    (rf"^the tank is {Ч} feet wide and {Ч} feet long and holds {Ч} cubic feet of water; the tank's water depth is not {Ч} feet: it is {Ч} f(?:ee|oo)t\.$", _глубина_не),
-    (rf"^a bag holds {Ч} red marbles? and {Ч} blue marbles?; the probability of drawing a red marble, expressed as a fraction, is {Ч}/{Ч}: {Ч} red out of {Ч}\.$", _вероятность),
-    (rf"^a bag holds {Ч} red marbles? and {Ч} blue marbles?\. what is the probability of drawing a red marble, expressed as a fraction\? {Ч} red and {Ч} blue make {Ч}: {Ч}/{Ч}\.$", _вероятность_qa),
-    (rf"^в мешке {Ч} шар(?:а|ов)? красных и {Ч} шар(?:а|ов)? синих; вероятность вынуть красный шар, выраженная дробью, — {Ч}/{Ч}: {Ч} красных из {Ч}\.$", _вероятность),
-    (rf"^a bag holds {Ч} red marbles? and {Ч} blue marbles?; the probability of drawing a red marble, expressed as a fraction, is not {Ч}/{Ч}: it is {Ч}/{Ч}\.$", _вероятность_не),
-    (rf"^if {Ч} is (one quarter|two quarters|three quarters) of the class, the class has {Ч} pupils: {Ч} ÷ {Ч} × (4) = \d+\.$", _четверти),
-    (rf"^if {Ч} is (one quarter|two quarters|three quarters) of the class, how many pupils does the class have\? {Ч} ÷ {Ч} × (4) = {Ч}\.$", _четверти_qa),
-    (rf"^если {Ч} — это (четверть|две четверти|три четверти) класса, в классе {Ч} учени(?:к|ка|ков): {Ч} ÷ {Ч} × (4) = \d+\.$", _четверти),
-    (rf"^if {Ч} is (one quarter|two quarters|three quarters) of the class, the class does not have {Ч} pupils: it has {Ч}\.$", _четверти_не),
-    (rf"^there were originally {Ч} cars in the lot and {Ч} drove away; {Ч} cars? remain: {Ч} − {Ч} = {Ч}\.$", _разность),
-    (rf"^if there were originally {Ч} cars in the lot and {Ч} drove away, how many cars remain\? {Ч} − {Ч} = {Ч}\.$", _разность_qa),
-    (rf"^на стоянке изначально было {Ч} машин[аы]?, {Ч} уехали; осталось {Ч} машин[аы]?: {Ч} − {Ч} = {Ч}\.$", _разность),
-    (rf"^there were originally {Ч} cars in the lot and {Ч} drove away; {Ч} cars do not remain: {Ч} remain\.$", _разность_не),
-    (rf"^the set has {Ч} pieces and {Ч} are in the box; {Ч} pieces? (?:are|is) missing: {Ч} − {Ч} = {Ч}\.$", _разность),
-    (rf"^the set has {Ч} pieces and {Ч} are in the box\. how many pieces are missing\? {Ч} − {Ч} = {Ч}\.$", _разность_qa),
-    (rf"^в наборе {Ч} детал(?:ь|и|ей), в коробке {Ч} детал(?:ь|и|ей); не хватает {Ч} детал(?:ь|и|ей): {Ч} − {Ч} = {Ч}\.$", _разность),
-    (rf"^the set has {Ч} pieces and {Ч} are in the box; {Ч} pieces are not missing: {Ч} (?:are|is) missing\.$", _разность_не),
-    (rf"^there were {Ч} people on the bus and {Ч} got off; {Ч} people are on the bus now: {Ч} − {Ч} = {Ч}\.$", _разность),
-    (rf"^if there were {Ч} people on the bus and {Ч} got off, how many people are on the bus now\? {Ч} − {Ч} = {Ч}\.$", _разность_qa),
-    (rf"^в автобусе было {Ч} человек[а]?, {Ч} вышли; теперь в автобусе {Ч} человек[а]?: {Ч} − {Ч} = {Ч}\.$", _разность),
-    (rf"^there were {Ч} people on the bus and {Ч} got off; the number of people on the bus now is not {Ч}: it is {Ч}\.$", _разность_не),
+    (rf"^the orchard has {Ч} trees and {Ч} of them (?:is a pear tree|are pear trees); the percentage of pear trees is {Ч} %: {Ч} ÷ {Ч} × 100 = {Ч}\.$", _процент),
+    (rf"^the orchard has {Ч} trees and {Ч} of them (?:is a pear tree|are pear trees)\. what percentage of the trees are pear trees\? {Ч} trees and {Ч} pear trees?: {Ч} ÷ {Ч} × 100 = {Ч} %\.$", _процент_qa),
+    (rf"^в саду {Ч} дерев(?:о|а|ьев), из них {Ч} груш(?:а|и)?; доля груш — {Ч} %: {Ч} ÷ {Ч} × 100 = {Ч}\.$", _процент),
+    (rf"^the orchard has {Ч} trees and {Ч} of them (?:is a pear tree|are pear trees); the percentage of pear trees is not {Ч} %: it is {Ч} %\.$", _процент_не),
+    (rf"^a bag of apples weighs {Ч} ounces and a pound is 16 ounces; the weight in pounds is {Ч}: {Ч} ÷ 16 = {Ч}\.$", _фунты),
+    (rf"^a bag of apples weighs {Ч} ounces and a pound is 16 ounces\. what is the weight in pounds\? {Ч} ounces: {Ч} ÷ 16 = {Ч}\.$", _рамка(lambda у, o_у0, o_у, ф: (o_у0, o_у) == (у, у) and у == 16 * ф)),
+    (rf"^мешок яблок весит {Ч} унци[йия], а в фунте 16 унций; вес в фунтах — {Ч} фунт(?:а|ов)?: {Ч} ÷ 16 = {Ч}\.$", _фунты),
+    (rf"^a bag of apples weighs {Ч} ounces and a pound is 16 ounces; the weight in pounds is not {Ч}: it is {Ч}\.$", _фунты_не),
+    (rf"^the pit is {Ч} meters wide and {Ч} meters long and holds {Ч} cubic meters of sand; the sand in the pit is {Ч} meters? deep: {Ч} ÷ \({Ч} × {Ч}\) = {Ч}\.$", _глубина),
+    (rf"^the pit is {Ч} meters wide and {Ч} meters long and holds {Ч} cubic meters of sand\. how deep is the sand in the pit\? {Ч} by {Ч} holding {Ч}: {Ч} ÷ \({Ч} × {Ч}\) = {Ч} meters?\.$", _глубина_qa),
+    (rf"^яма шириной {Ч} метр(?:а|ов)? и длиной {Ч} метр(?:а|ов)? вмещает {Ч} кубическ(?:ий|их) метр(?:а|ов)? песка; слой песка в яме — {Ч} метр(?:а|ов)?: {Ч} ÷ \({Ч} × {Ч}\) = {Ч}\.$", _глубина),
+    (rf"^the pit is {Ч} meters wide and {Ч} meters long and holds {Ч} cubic meters of sand; the sand in the pit is not {Ч} meters? deep: it is {Ч} meters? deep\.$", _глубина_не),
+    (rf"^a jar holds {Ч} black buttons? and {Ч} white buttons?; the probability of taking a black button, written as a fraction, is {Ч}/{Ч}: {Ч} \+ {Ч} = {Ч} buttons, {Ч} of them black\.$", _вероятность),
+    (rf"^a jar holds {Ч} black buttons? and {Ч} white buttons?\. what is the probability of taking a black button, written as a fraction\? {Ч} \+ {Ч} = {Ч}: {Ч}/{Ч}\.$", _вероятность_qa),
+    (rf"^в банке чёрных пуговиц {Ч}, а белых {Ч}; вероятность взять чёрную пуговицу, записанная дробью, — {Ч}/{Ч}: {Ч} \+ {Ч} = {Ч}, из них чёрных {Ч}\.$", _вероятность),
+    (rf"^a jar holds {Ч} black buttons? and {Ч} white buttons?; the probability of taking a black button, written as a fraction, is not {Ч}/{Ч}: it is {Ч}/{Ч}\.$", _вероятность_не),
+    (rf"^if {Ч} pages are (one quarter|two quarters|three quarters) of the book, the book has {Ч} pages: {Ч} ÷ {Ч} × (4) = {Ч}\.$", _четверти),
+    (rf"^if {Ч} pages are (one quarter|two quarters|three quarters) of the book, how many pages does the book have\? {Ч} ÷ {Ч} × (4) = {Ч}\.$", _четверти_qa),
+    (rf"^если {Ч} страниц(?:а|ы)? — это (четверть|две четверти|три четверти) книги, в книге {Ч} страниц(?:а|ы)?: {Ч} ÷ {Ч} × (4) = {Ч}\.$", _четверти),
+    (rf"^if {Ч} pages are (one quarter|two quarters|three quarters) of the book, the book does not have {Ч} pages: it has {Ч}\.$", _четверти_не),
+    (rf"^there were originally {Ч} ducks on the pond and {Ч} flew away; {Ч} ducks? remains?: {Ч} − {Ч} = {Ч}\.$", _разность),
+    (rf"^if there were originally {Ч} ducks on the pond and {Ч} flew away, how many ducks remain\? {Ч} − {Ч} = {Ч}\.$", _разность_qa),
+    (rf"^на пруду изначально было {Ч} ут(?:ка|ки|ок), {Ч} улетел[аи]; осталось {Ч} ут(?:ка|ки|ок): {Ч} − {Ч} = {Ч}\.$", _разность),
+    (rf"^there were originally {Ч} ducks on the pond and {Ч} flew away; {Ч} ducks do not remain: {Ч} remains?\.$", _разность_не),
+    (rf"^the album has room for {Ч} stamps and {Ч} (?:is|are) glued in; {Ч} stamps? (?:are|is) missing: {Ч} − {Ч} = {Ч}\.$", _разность),
+    (rf"^the album has room for {Ч} stamps and {Ч} (?:is|are) glued in\. how many stamps are missing\? {Ч} − {Ч} = {Ч}\.$", _разность_qa),
+    (rf"^мест для марок в альбоме {Ч}, вклеен[ао] {Ч} мар(?:ка|ки|ок); не хватает {Ч}: {Ч} − {Ч} = {Ч}\.$", _разность),
+    (rf"^the album has room for {Ч} stamps and {Ч} (?:is|are) glued in; {Ч} stamps are not missing: {Ч} (?:are|is) missing\.$", _разность_не),
+    (rf"^there were {Ч} guests at the party and {Ч} went home; {Ч} guests? (?:are|is) at the party now: {Ч} − {Ч} = {Ч}\.$", _разность),
+    (rf"^if there were {Ч} guests at the party and {Ч} went home, how many guests are at the party now\? {Ч} − {Ч} = {Ч}\.$", _разность_qa),
+    (rf"^на празднике было {Ч} гост(?:ь|я|ей), {Ч} (?:ушёл|ушли) домой; теперь на празднике {Ч} гост(?:ь|я|ей): {Ч} − {Ч} = {Ч}\.$", _разность),
+    (rf"^there were {Ч} guests at the party and {Ч} went home; the number of guests at the party now is not {Ч}: it is {Ч}\.$", _разность_не),
 )
 ОБРАЗЦЫ_2 = (
     # 9 население: всего, доля, часть, всего, доля, часть
-    (rf"^the town has {Ч} people and {ДОЛЯ} of the whole population lives in the centre; {Ч} people live in the centre: {Ч} ÷ {Ч} = {Ч}\.$",
+    (rf"^the library has {Ч} books and {ДОЛЯ} of all the books stand in the reading room; {Ч} books stand in the reading room: {Ч} ÷ {Ч} = {Ч}\.$",
      _рамка(lambda N, d, c, oN, od, oc: N == d * c and (oN, od, oc) == (N, d, c))),
-    (rf"^в городе {Ч} человек[а]?, и {ДОЛЯ} всего населения живёт в центре; в центре живёт {Ч} человек[а]?: {Ч} ÷ {Ч} = {Ч}\.$",
+    (rf"^в библиотеке {Ч} книг[аи]?, и {ДОЛЯ} всех книг стоит в читальном зале; в читальном зале стоит {Ч} книг[аи]?: {Ч} ÷ {Ч} = {Ч}\.$",
      _рамка(lambda N, d, c, oN, od, oc: N == d * c and (oN, od, oc) == (N, d, c))),
-    (rf"^the town has {Ч} people and {ДОЛЯ} of the whole population lives in the centre; the number living in the centre is not {Ч}: it is {Ч}\.$",
+    (rf"^the library has {Ч} books and {ДОЛЯ} of all the books stand in the reading room; the number of books in the reading room is not {Ч}: it is {Ч}\.$",
      _рамка(lambda N, d, ч, и: N == d * и and ч != и)),
-    (rf"^if the town has {Ч} people and {ДОЛЯ} of the whole population lives in the centre, how many people live in the centre\? {Ч} people: {Ч} ÷ {Ч} = {Ч}\.$",
+    (rf"^if the library has {Ч} books and {ДОЛЯ} of all the books stand in the reading room, how many books stand in the reading room\? {Ч} books: {Ч} ÷ {Ч} = {Ч}\.$",
      _рамка(lambda N, d, oN0, oN, od, c: (oN0, oN, od) == (N, N, d) and N == d * c)),
     # 10 команда
-    (rf"^the number of boys on the team is {Ч} and the number of girls is {Ч}; the team has {Ч} players: {Ч} \+ {Ч} = {Ч}\.$",
+    (rf"^the number of books on the shelf is {Ч} and the number of magazines is {Ч}; the shelf holds {Ч} items: {Ч} \+ {Ч} = {Ч}\.$",
      _рамка(lambda m, d, s, om, od, os: m + d == s and (om, od, os) == (m, d, s))),
-    (rf"^в команде {Ч} мальчик(?:а|ов)? и {Ч} девоч(?:ка|ки|ек); всего в команде {Ч} человек[а]?: {Ч} \+ {Ч} = {Ч}\.$",
+    (rf"^на полке {Ч} книг[аи]? и {Ч} журнал(?:а|ов)?; всего на полке {Ч} предмет(?:а|ов)?: {Ч} \+ {Ч} = {Ч}\.$",
      _рамка(lambda m, d, s, om, od, os: m + d == s and (om, od, os) == (m, d, s))),
-    (rf"^the number of boys on the team is {Ч} and the number of girls is {Ч}; the team does not have {Ч} players: it has {Ч}\.$",
+    (rf"^the number of books on the shelf is {Ч} and the number of magazines is {Ч}; the shelf does not hold {Ч} items: it holds {Ч}\.$",
      _рамка(lambda m, d, ч, и: m + d == и and ч != и)),
-    (rf"^if the number of boys on the team is {Ч} and the number of girls is {Ч}, how many players does the team have\? {Ч} \+ {Ч} = {Ч}\.$",
+    (rf"^if the number of books on the shelf is {Ч} and the number of magazines is {Ч}, how many items does the shelf hold\? {Ч} \+ {Ч} = {Ч}\.$",
      _рамка(lambda m, d, om, od, s: (om, od) == (m, d) and m + d == s)),
     # 11 кратно
-    (rf"^the car cost {Ч} dollars and the house cost {КРАТ} as much as the car; the house cost {Ч} dollars: {Ч} × {Ч} = {Ч}\.$",
+    (rf"^the tractor cost {Ч} dollars and the barn cost {КРАТ} as much as the tractor; the barn cost {Ч} dollars: {Ч} × {Ч} = {Ч}\.$",
      _рамка(lambda c, k, h, oc, ok, oh: h == k * c and (oc, ok, oh) == (c, k, h))),
-    (rf"^машина стоила {Ч} доллар(?:а|ов)?, а дом стоил {КРАТ} дороже машины; дом стоил {Ч} доллар(?:а|ов)?: {Ч} × {Ч} = {Ч}\.$",
+    (rf"^трактор стоил {Ч} доллар(?:а|ов)?, а амбар стоил {КРАТ} дороже трактора; амбар стоил {Ч} доллар(?:а|ов)?: {Ч} × {Ч} = {Ч}\.$",
      _рамка(lambda c, k, h, oc, ok, oh: h == k * c and (oc, ok, oh) == (c, k, h))),
-    (rf"^the car cost {Ч} dollars and the house cost {КРАТ} as much as the car; the house did not cost {Ч} dollars: it cost {Ч}\.$",
+    (rf"^the tractor cost {Ч} dollars and the barn cost {КРАТ} as much as the tractor; the barn did not cost {Ч} dollars: it cost {Ч}\.$",
      _рамка(lambda c, k, ч, и: и == k * c and ч != и)),
-    (rf"^if the car cost {Ч} dollars and the house cost {КРАТ} as much as the car, how much did the house cost\? {Ч} × {Ч} = {Ч} dollars\.$",
+    (rf"^if the tractor cost {Ч} dollars and the barn cost {КРАТ} as much as the tractor, how much did the barn cost\? {Ч} × {Ч} = {Ч} dollars\.$",
      _рамка(lambda c, k, oc, ok, h: (oc, ok) == (c, k) and h == k * c)),
     # 12 проект
-    (rf"^the design started with {Ч} panels, was {УДВ} and then reduced by {Ч}; the final design has {Ч} panels: {Ч} × {Ч} − {Ч} = {Ч}\.$",
+    (rf"^the order started with {Ч} boxes, was {УДВ} and then reduced by {Ч}; the final order has {Ч} boxes: {Ч} × {Ч} − {Ч} = {Ч}\.$",
      _рамка(lambda s0, k, m, f, os0, ok, om, of: f == s0 * k - m and (os0, ok, om, of) == (s0, k, m, f))),
-    (rf"^проект начался с {Ч} панел(?:ь|и|ей), его {УДВ} и потом убавили на {Ч}; в итоговом проекте {Ч} панел(?:ь|и|ей): {Ч} × {Ч} − {Ч} = {Ч}\.$",
+    (rf"^заказ начинался с {Ч} короб(?:ки|ок), его {УДВ} и потом убавили на {Ч}; в итоговом заказе {Ч} короб(?:ка|ки|ок): {Ч} × {Ч} − {Ч} = {Ч}\.$",
      _рамка(lambda s0, k, m, f, os0, ok, om, of: f == s0 * k - m and (os0, ok, om, of) == (s0, k, m, f))),
-    (rf"^the design started with {Ч} panels, was {УДВ} and then reduced by {Ч}; the final design does not have {Ч} panels: it has {Ч}\.$",
+    (rf"^the order started with {Ч} boxes, was {УДВ} and then reduced by {Ч}; the final order does not have {Ч} boxes: it has {Ч}\.$",
      _рамка(lambda s0, k, m, ч, и: и == s0 * k - m and ч != и)),
-    (rf"^if the design started with {Ч} panels, was {УДВ} and then reduced by {Ч}, how many panels does the final design have\? {Ч} × {Ч} − {Ч} = {Ч}\.$",
+    (rf"^if the order started with {Ч} boxes, was {УДВ} and then reduced by {Ч}, how many boxes does the final order have\? {Ч} × {Ч} − {Ч} = {Ч}\.$",
      _рамка(lambda s0, k, m, os0, ok, om, f: (os0, ok, om) == (s0, k, m) and f == s0 * k - m)),
     # 13 окружность
-    (rf"^the circumference of the earth is taken as {Ч} miles and the plane flies {Ч} miles per hour; the flight around the earth takes {Ч} hours: {Ч} ÷ {Ч} = {Ч}\.$",
+    (rf"^the road around the lake is {Ч} kilometers long and the cyclist rides {Ч} kilometers per hour; the ride around the lake takes {Ч} hours: {Ч} ÷ {Ч} = {Ч}\.$",
      _рамка(lambda L, v, t, oL, ov, ot: L == v * t and (oL, ov, ot) == (L, v, t))),
-    (rf"^длину окружности земли берут за {Ч} мил[иья], самолёт летит {Ч} мил[иья] в час; полёт вокруг земли занимает {Ч} час(?:а|ов)?: {Ч} ÷ {Ч} = {Ч}\.$",
+    (rf"^дорога вокруг озера длиной {Ч} километр(?:а|ов)?, велосипедист едет {Ч} километр(?:а|ов)? в час; поездка вокруг озера занимает {Ч} час(?:а|ов)?: {Ч} ÷ {Ч} = {Ч}\.$",
      _рамка(lambda L, v, t, oL, ov, ot: L == v * t and (oL, ov, ot) == (L, v, t))),
-    (rf"^the circumference of the earth is taken as {Ч} miles and the plane flies {Ч} miles per hour; the flight around the earth does not take {Ч} hours: it takes {Ч}\.$",
+    (rf"^the road around the lake is {Ч} kilometers long and the cyclist rides {Ч} kilometers per hour; the ride around the lake does not take {Ч} hours: it takes {Ч}\.$",
      _рамка(lambda L, v, ч, и: L == v * и and ч != и)),
-    (rf"^if the circumference of the earth is {Ч} miles and the plane flies {Ч} miles per hour, how many hours does the flight around the earth take\? {Ч} ÷ {Ч} = {Ч}\.$",
+    (rf"^if the road around the lake is {Ч} kilometers long and the cyclist rides {Ч} kilometers per hour, how many hours does the ride around the lake take\? {Ч} ÷ {Ч} = {Ч}\.$",
      _рамка(lambda L, v, oL, ov, t: (oL, ov) == (L, v) and L == v * t)),
     # 14 верёвки
-    (rf"^the {Ч} ropes had a total length of {Ч} meters; the average rope is {Ч} meters long: {Ч} ÷ {Ч} = {Ч}\.$",
+    (rf"^the {Ч} poles had a total height of {Ч} meters; the average pole is {Ч} meters tall: {Ч} ÷ {Ч} = {Ч}\.$",
      _рамка(lambda n, T, a, oT, on, oa: T == n * a and (oT, on, oa) == (T, n, a))),
-    (rf"^{Ч} верёв(?:ка|ки|ок) имели общую длину {Ч} метр(?:а|ов)?; средняя верёвка длиной {Ч} метр(?:а|ов)?: {Ч} ÷ {Ч} = {Ч}\.$",
+    (rf"^{Ч} столб(?:а|ов)? имели общую высоту {Ч} метр(?:а|ов)?; средний столб высотой {Ч} метр(?:а|ов)?: {Ч} ÷ {Ч} = {Ч}\.$",
      _рамка(lambda n, T, a, oT, on, oa: T == n * a and (oT, on, oa) == (T, n, a))),
-    (rf"^the {Ч} ropes had a total length of {Ч} meters; the average rope is not {Ч} meters long: it is {Ч} meters\.$",
+    (rf"^the {Ч} poles had a total height of {Ч} meters; the average pole is not {Ч} meters tall: it is {Ч} meters\.$",
      _рамка(lambda n, T, ч, и: T == n * и and ч != и)),
-    (rf"^if the total length of the ropes is {Ч} meters and there are {Ч} ropes, how long is the average rope\? {Ч} ÷ {Ч} = {Ч} meters\.$",
+    (rf"^if the total height of the poles is {Ч} meters and there are {Ч} poles, how tall is the average pole\? {Ч} ÷ {Ч} = {Ч} meters\.$",
      _рамка(lambda T, n, oT, on, a: (oT, on) == (T, n) and T == n * a)),
     # 15 трое
-    (rf"^{С} has {Ч} books, {С} has {Ч} more books than {С}, and {С} has {КРАТ} as many books as {С}; together {С}, {С} and {С} have {Ч} books: {Ч} \+ \({Ч} \+ {Ч}\) \+ {Ч} × {Ч} = {Ч}\.$",
+    (rf"^{С} has {Ч} shells, {С} has {Ч} more shells than {С}, and {С} has {КРАТ} as many shells as {С}; together {С}, {С} and {С} have {Ч} shells: {Ч} \+ \({Ч} \+ {Ч}\) \+ {Ч} × {Ч} = {Ч}\.$",
      _рамка(lambda x, a, y, b, x2, z, k, x3, x4, y2, z2, s, oa, oa2, ob, ok, oa3, os: x == x2 == x3 == x4 and y == y2 and z == z2 and (oa, oa2, ob, ok, oa3) == (a, a, b, k, a) and s == os == a + (a + b) + k * a)),
-    (rf"^{ИМЯ} имеет {Ч} книг[иа]?, {ИМЯ} имеет на {Ч} книг[иа]? больше, чем {ИМЯ}, а {ИМЯ} имеет {КРАТ} больше книг, чем {ИМЯ}; вместе у них {Ч} книг[иа]?: {Ч} \+ \({Ч} \+ {Ч}\) \+ {Ч} × {Ч} = {Ч}\.$",
+    (rf"^{ИМЯ} имеет {Ч} ракуш(?:ка|ки|ек), {ИМЯ} имеет на {Ч} ракуш(?:ка|ки|ек) больше, чем {ИМЯ}, а {ИМЯ} имеет {КРАТ} больше ракушек, чем {ИМЯ}; вместе у них {Ч} ракуш(?:ка|ки|ек): {Ч} \+ \({Ч} \+ {Ч}\) \+ {Ч} × {Ч} = {Ч}\.$",
      _рамка(lambda x, a, y, b, x2, z, k, x3, s, oa, oa2, ob, ok, oa3, os: x == x2 == x3 and (oa, oa2, ob, ok, oa3) == (a, a, b, k, a) and s == os == a + (a + b) + k * a)),
-    (rf"^{С} has {Ч} books, {С} has {Ч} more books than {С}, and {С} has {КРАТ} as many books as {С}; together they do not have {Ч} books: they have {Ч}\.$",
+    (rf"^{С} has {Ч} shells, {С} has {Ч} more shells than {С}, and {С} has {КРАТ} as many shells as {С}; together they do not have {Ч} shells: they have {Ч}\.$",
      _рамка(lambda x, a, y, b, x2, z, k, x3, ч, и: x == x2 == x3 and и == a + (a + b) + k * a and ч != и)),
-    (rf"^if {С} has {Ч} books, {С} has {Ч} more books than {С}, and {С} has {КРАТ} as many books as {С}, how many books do they have together\? {Ч} \+ \({Ч} \+ {Ч}\) \+ {Ч} × {Ч} = {Ч}\.$",
+    (rf"^if {С} has {Ч} shells, {С} has {Ч} more shells than {С}, and {С} has {КРАТ} as many shells as {С}, how many shells do they have together\? {Ч} \+ \({Ч} \+ {Ч}\) \+ {Ч} × {Ч} = {Ч}\.$",
      _рамка(lambda x, a, y, b, x2, z, k, x3, oa, oa2, ob, ok, oa3, s: x == x2 == x3 and (oa, oa2, ob, ok, oa3) == (a, a, b, k, a) and s == a + (a + b) + k * a)),
     # 16 ставка
-    (rf"^{С} makes {Ч} candles an hour and works {Ч} hours; {С} makes {Ч} candles: {Ч} × {Ч} = {Ч}\.$",
+    (rf"^{С} signs {Ч} postcards an hour and works {Ч} hours; {С} signs {Ч} postcards: {Ч} × {Ч} = {Ч}\.$",
      _рамка(lambda n1, r, t, n2, s, or_, ot, os: n1 == n2 and s == r * t and (or_, ot, os) == (r, t, s))),
-    (rf"^{ИМЯ} делает {Ч} свеч(?:а|и|ей) в час и работает {Ч} час(?:а|ов)?; {ИМЯ} делает {Ч} свеч(?:а|и|ей): {Ч} × {Ч} = {Ч}\.$",
+    (rf"^{ИМЯ} подписывает {Ч} открыт(?:ка|ки|ок) в час и работает {Ч} час(?:а|ов)?; {ИМЯ} подписывает {Ч} открыт(?:ка|ки|ок): {Ч} × {Ч} = {Ч}\.$",
      _рамка(lambda n1, r, t, n2, s, or_, ot, os: n1 == n2 and s == r * t and (or_, ot, os) == (r, t, s))),
-    (rf"^{С} makes {Ч} candles an hour and works {Ч} hours; {С} does not make {Ч} candles: {С} makes {Ч}\.$",
+    (rf"^{С} signs {Ч} postcards an hour and works {Ч} hours; {С} does not sign {Ч} postcards: {С} signs {Ч}\.$",
      _рамка(lambda n1, r, t, n2, ч, n3, и: n1 == n2 == n3 and и == r * t and ч != и)),
-    (rf"^if {С} makes {Ч} candles an hour and works {Ч} hours, how many candles does {С} make\? {Ч} × {Ч} = {Ч}\.$",
+    (rf"^if {С} signs {Ч} postcards an hour and works {Ч} hours, how many postcards does {С} sign\? {Ч} × {Ч} = {Ч}\.$",
      _рамка(lambda n1, r, t, n2, or_, ot, s: n1 == n2 and (or_, ot) == (r, t) and s == r * t)),
     # 17 листки
-    (rf"^{С} had {Ч} post-it notes, used {Ч} on the fridge and {Ч} on the door; {С} has {Ч} post-it notes left: {Ч} − {Ч} − {Ч} = {Ч}\.$",
+    (rf"^{С} had {Ч} candies, put {Ч} in the red bowl and {Ч} in the blue bowl; {С} has {Ч} candies left: {Ч} − {Ч} − {Ч} = {Ч}\.$",
      _рамка(lambda n1, b, r, d, n2, s, ob, or_, od, os: n1 == n2 and s == b - r - d and (ob, or_, od, os) == (b, r, d, s))),
-    (rf"^у {ИМЯ} было {Ч} лист(?:ок|ка|ков), {Ч} ушли на холодильник и {Ч} на дверь; осталось {Ч} лист(?:ок|ка|ков): {Ч} − {Ч} − {Ч} = {Ч}\.$",
+    (rf"^у {ИМЯ} было {Ч} конфет(?:а|ы)?, {Ч} ушли в красную вазу и {Ч} в синюю; осталось {Ч} конфет(?:а|ы)?: {Ч} − {Ч} − {Ч} = {Ч}\.$",
      _рамка(lambda n1, b, r, d, s, ob, or_, od, os: s == b - r - d and (ob, or_, od, os) == (b, r, d, s))),
-    (rf"^{С} had {Ч} post-it notes, used {Ч} on the fridge and {Ч} on the door; {С} does not have {Ч} post-it notes left: {С} has {Ч}\.$",
+    (rf"^{С} had {Ч} candies, put {Ч} in the red bowl and {Ч} in the blue bowl; {С} does not have {Ч} candies left: {С} has {Ч}\.$",
      _рамка(lambda n1, b, r, d, n2, ч, n3, и: n1 == n2 == n3 and и == b - r - d and ч != и)),
-    (rf"^if {С} had {Ч} post-it notes, used {Ч} on the fridge and {Ч} on the door, how many post-it notes does {С} have left\? {Ч} − {Ч} − {Ч} = {Ч}\.$",
+    (rf"^if {С} had {Ч} candies, put {Ч} in the red bowl and {Ч} in the blue bowl, how many candies does {С} have left\? {Ч} − {Ч} − {Ч} = {Ч}\.$",
      _рамка(lambda n1, b, r, d, n2, ob, or_, od, s: n1 == n2 and (ob, or_, od) == (b, r, d) and s == b - r - d)),
-    # SVAMP разница
-    (rf"^{С} planted {Ч} trees in the morning and {Ч} trees in the afternoon; {С} planted {Ч} more trees in the morning than in the afternoon: {Ч} − {Ч} = {Ч}\.$",
+    # разница: столбы, покрашенные вчера и сегодня
+    (rf"^{С} painted {Ч} posts yesterday and {Ч} posts today; {С} painted {Ч} more posts yesterday than today: {Ч} − {Ч} = {Ч}\.$",
      _рамка(lambda n1, x, y, n2, d, ox, oy, od: n1 == n2 and d == x - y > 0 and (ox, oy, od) == (x, y, d))),
-    (rf"^{ИМЯ} утром посадила? {Ч} дерев(?:о|а|ьев), а днём {Ч} дерев(?:о|а|ьев); утром на {Ч} дерев(?:о|а|ьев) больше, чем днём: {Ч} − {Ч} = {Ч}\.$",
+    (rf"^{ИМЯ} вчера покрасила? {Ч} столб(?:а|ов)?, а сегодня {Ч} столб(?:а|ов)?; вчера на {Ч} столб(?:а|ов)? больше, чем сегодня: {Ч} − {Ч} = {Ч}\.$",
      _рамка(lambda n1, x, y, d, ox, oy, od: d == x - y > 0 and (ox, oy, od) == (x, y, d))),
-    (rf"^{С} planted {Ч} trees in the morning and {Ч} trees in the afternoon; {С} did not plant {Ч} more trees in the morning than in the afternoon: {Ч} more\.$",
+    (rf"^{С} painted {Ч} posts yesterday and {Ч} posts today; {С} did not paint {Ч} more posts yesterday than today: {Ч} more\.$",
      _рамка(lambda n1, x, y, n2, ч, и: n1 == n2 and и == x - y > 0 and ч != и)),
-    (rf"^if {С} planted {Ч} trees in the morning and {Ч} trees in the afternoon, how many more trees did {С} plant in the morning than in the afternoon\? {Ч} − {Ч} = {Ч}\.$",
+    (rf"^if {С} painted {Ч} posts yesterday and {Ч} posts today, how many more posts did {С} paint yesterday than today\? {Ч} − {Ч} = {Ч}\.$",
      _рамка(lambda n1, x, y, n2, ox, oy, d: n1 == n2 and (ox, oy) == (x, y) and d == x - y > 0)),
-    # SVAMP скидка
-    (rf"^each pack costs {Ч} dollars and there is a discount of {Ч} dollars on each pack; you have to pay {Ч} dollars for each pack: {Ч} − {Ч} = {Ч}\.$",
+    # скидка: билет ученика
+    (rf"^a ticket costs {Ч} dollars and pupils get a discount of {Ч} dollars on each ticket; a pupil pays {Ч} dollars for a ticket: {Ч} − {Ч} = {Ч}\.$",
      _рамка(lambda c, s, p, oc, os, op: p == c - s and (oc, os, op) == (c, s, p))),
-    (rf"^каждая пачка стоит {Ч} доллар(?:а|ов)?, и на каждую пачку скидка {Ч} доллар(?:а|ов)?; за каждую пачку надо заплатить {Ч} доллар(?:а|ов)?: {Ч} − {Ч} = {Ч}\.$",
+    (rf"^билет стоит {Ч} доллар(?:а|ов)?, и ученикам на каждый билет скидка {Ч} доллар(?:а|ов)?; ученик платит за билет {Ч} доллар(?:а|ов)?: {Ч} − {Ч} = {Ч}\.$",
      _рамка(lambda c, s, p, oc, os, op: p == c - s and (oc, os, op) == (c, s, p))),
-    (rf"^each pack costs {Ч} dollars and there is a discount of {Ч} dollars on each pack; you do not have to pay {Ч} dollars for each pack: you pay {Ч}\.$",
+    (rf"^a ticket costs {Ч} dollars and pupils get a discount of {Ч} dollars on each ticket; a pupil does not pay {Ч} dollars for a ticket: a pupil pays {Ч}\.$",
      _рамка(lambda c, s, ч, и: и == c - s and ч != и)),
-    (rf"^if each pack costs {Ч} dollars and there is a discount of {Ч} dollars on each pack, how much do you have to pay for each pack\? {Ч} dollars: {Ч} − {Ч} = {Ч} dollars\.$",
+    (rf"^if a ticket costs {Ч} dollars and pupils get a discount of {Ч} dollars on each ticket, how much does a pupil pay for a ticket\? {Ч} dollars: {Ч} − {Ч} = {Ч} dollars\.$",
      _рамка(lambda c, s, oc0, oc, os, p: (oc0, oc, os) == (c, c, s) and p == c - s)),
-    # SVAMP всего / left
+    # всего / left
     (rf"^{С} had {Ч} {С} and gave away {Ч}; {С} has {Ч} {С} left: {Ч} − {Ч} = {Ч}\.$",
      _рамка(lambda n1, x, в1, y, n2, s, в2, ox, oy, os: n1 == n2 and s == x - y and (ox, oy, os) == (x, y, s))),
     (rf"^у {ИМЯ} было {Ч} {С}, {ИМЯ} отдала? {Ч}; осталось {Ч} {С}: {Ч} − {Ч} = {Ч}\.$",
@@ -441,14 +447,14 @@ def _рамка(закон):
      _рамка(lambda n1, x, в1, y, в2, n2, ч, в3, слово, n3, и: n1 == n2 == n3 and и == x + y and ч != и)),
     (rf"^if {С} has {Ч} {С} in one box and {Ч} {С} in another, how many {С} does {С} have (in all|altogether)\? {Ч} \+ {Ч} = {Ч}\.$",
      _рамка(lambda n1, x, в1, y, в2, в3, n2, слово, ox, oy, s: n1 == n2 and (ox, oy) == (x, y) and s == x + y)),
-    # SVAMP группы
-    (rf"^there are {Ч} pupils and they stand in groups of {Ч}; there are {Ч} groups: {Ч} ÷ {Ч} = {Ч}\.$",
+    # группы: тарелки стопками
+    (rf"^there are {Ч} plates and they are stacked in piles of {Ч}; there are {Ч} piles: {Ч} ÷ {Ч} = {Ч}\.$",
      _рамка(lambda T, n, g, oT, on, og: T == n * g and (oT, on, og) == (T, n, g))),
-    (rf"^{Ч} учени(?:к|ка|ков) стоят группами по {Ч}; групп {Ч}: {Ч} ÷ {Ч} = {Ч}\.$",
+    (rf"^тарелок {Ч}, их сложили стопками по {Ч}; стопок {Ч}: {Ч} ÷ {Ч} = {Ч}\.$",
      _рамка(lambda T, n, g, oT, on, og: T == n * g and (oT, on, og) == (T, n, g))),
-    (rf"^there are {Ч} pupils and they stand in groups of {Ч}; there are not {Ч} groups: there are {Ч}\.$",
+    (rf"^there are {Ч} plates and they are stacked in piles of {Ч}; there are not {Ч} piles: there are {Ч}\.$",
      _рамка(lambda T, n, ч, и: T == n * и and ч != и)),
-    (rf"^if there are {Ч} pupils and they stand in groups of {Ч}, how many groups are there\? {Ч} ÷ {Ч} = {Ч}\.$",
+    (rf"^if there are {Ч} plates and they are stacked in piles of {Ч}, how many piles are there\? {Ч} ÷ {Ч} = {Ч}\.$",
      _рамка(lambda T, n, oT, on, g: (oT, on) == (T, n) and T == n * g)),
     # ОСТАТОК ДЕЛЕНИЯ (08.09): группы не полны — и ФОРМУ ИМЕНИ ПРИ ОСТАТКЕ СУД ЧИТАЕТ САМ.
     # Половинчатый закон завёлся бы здесь в один шаг: довольно было написать «pupils» буквой
@@ -459,13 +465,13 @@ def _рамка(закон):
     # рассказ отдельным образцом есть род без вопросной поверхности, сколько бы вопросов ни
     # стояло рядом. Здесь обе половины сведены в одно чередование с общим хвостом-леджером —
     # тот же приём, каким живёт суд календаря, — и род выходит один, с вопросом.
-    (rf"^(?:there are {Ч} pupils and they stand in groups of {Ч}; there are {Ч} groups and {Ч} "
-     rf"(pupil|pupils) left over"
-     rf"|if there are {Ч} pupils and they stand in groups of {Ч}, how many pupils are left over)"
+    (rf"^(?:there are {Ч} eggs and they are packed in boxes of {Ч}; there are {Ч} full boxes and {Ч} "
+     rf"(egg|eggs) left over"
+     rf"|if there are {Ч} eggs and they are packed in boxes of {Ч}, how many eggs are left over)"
      rf"[:?] {Ч} × {Ч} = {Ч}, {Ч} − {Ч} = {Ч}\.$", _рамка(lambda *г: _остаток_en(*г))),
-    (rf"^(?:{Ч} (учени(?:к|ка|ков)) стоят группами по {Ч}; групп {Ч}, вне групп {Ч} "
-     rf"(учени(?:к|ка|ков))"
-     rf"|если {Ч} (учени(?:к|ка|ков)) стоят группами по {Ч}, сколько учеников вне групп)"
+    (rf"^(?:яиц {Ч}, их разложили по коробкам по {Ч}; полных коробок {Ч}, и осталось {Ч} "
+     rf"(яйц(?:о|а)|яиц)"
+     rf"|если яиц {Ч} и их разложили по коробкам по {Ч}, сколько яиц останется)"
      rf"[:?] {Ч} × {Ч} = {Ч}, {Ч} − {Ч} = {Ч}\.$", _рамка(lambda *г: _остаток_ru(*г))),
 
 )
@@ -473,17 +479,19 @@ def _рамка(закон):
 # замкнутые множества суда (своё чтение таблиц генератора); закон — над числами.
 СЛ = r"([а-яё]+)"
 СЛОВА = r"([а-яё ]+?)"
-ГЛ_A = r"(received|ate|played with|jumped|did|completed|watched|won|sent|lost|removed|raised|grew|threw away)"
-ГЛ_A0 = r"(receive|eat|play with|jump|do|complete|watch|win|send|lose|remove|raise|grow|throw away)"
-ВЕЩЬ_A = r"(emails|cookies|kids|inches|push-ups|pages|movies|games|letters|coins|books|dollars|flowers|caps)"
-КОГДА_EN = r"(in the morning|in the afternoon|on monday|on tuesday)"
-КОГДА_RU = r"(утром|днём|в понедельник|во вторник)"
-ОСНОВА = {"received": "receive", "ate": "eat", "played with": "play with", "used": "use", "made": "make",
-          "read": "read", "bought": "buy", "sold": "sell", "cut": "cut", "found": "find", "jumped": "jump", "did": "do", "completed": "complete", "watched": "watch", "won": "win", "sent": "send", "lost": "lose", "removed": "remove", "raised": "raise", "grew": "grow", "threw away": "throw away", "brought": "bring"}
-ГЛ_B, ГЛ_B0 = r"(used|made|read|bought|did|completed|watched|removed)", r"(use|make|read|buy|do|complete|watch|remove)"
-ВЕЩЬ_B = r"(cups of flour|cups of sugar|cakes|pastries|pages of math|pages of reading|bottles of regular soda|bottles of diet soda|push-ups|crunches|pages of reading homework|pages of math homework|movies|episodes|figures|books)"
-# 22E два деятеля, одно дело (e9 04.09: «the grasshopper jumped 9 inches and the mouse jumped 3 inches»)
-ДЕЯТЕЛЬ_E = r"((?:the )?[A-Za-z]+)"
+ГЛ_A = r"(picked|washed|wrote|painted|sold|baked|counted|fed|collected|folded|carried|scored|found|drew)"
+ГЛ_A0 = r"(pick|wash|write|paint|sell|bake|count|feed|collect|fold|carry|score|find|draw)"
+ВЕЩЬ_A = r"(plums|plates|letters|posts|tickets|pies|ducks|rabbits|shells|napkins|boxes|points|mushrooms|pictures)"
+КОГДА_EN = r"(in the morning|in the evening|on Saturday|on Sunday)"
+КОГДА_RU = r"(утром|вечером|в субботу|в воскресенье)"
+ОСНОВА = {"picked": "pick", "washed": "wash", "wrote": "write", "painted": "paint", "sold": "sell", "baked": "bake",
+          "counted": "count", "fed": "feed", "collected": "collect", "folded": "fold", "carried": "carry",
+          "scored": "score", "found": "find", "drew": "draw", "bought": "buy", "filled": "fill", "caught": "catch",
+          "climbed": "climb", "won": "win", "sent": "send", "lost": "lose", "watched": "watch"}
+ГЛ_B, ГЛ_B0 = r"(bought|wrote|painted|collected|washed|baked|sold|picked)", r"(buy|write|paint|collect|wash|bake|sell|pick)"
+ВЕЩЬ_B = r"(kilograms of apples|kilograms of plums|letters|cards|tables|posts|shells|stones|cups|plates|pies|cakes|roses|tulips|pears|plums)"
+# 22E два деятеля, одно дело: деятель — имя или «the» с одним-двумя словами («the red team»)
+ДЕЯТЕЛЬ_E = r"((?:the )?[A-Za-z]+(?: [a-z]+)?)"
 # ДВА СПИСКА ОДНОГО ЗАКОНА РАСХОДЯТСЯ МОЛЧА (07.09, вечер). Дом объявляет вещи в
 # `tools/gen_genesis_gsmforms.py:БОЛЬШЕ_E`, суд — здесь, второй раз. Я поменял в доме
 # «metres» на «meters» (одно письмо единицы в одном мире) — и суд ПЕРЕСТАЛ ЧИТАТЬ свой
@@ -496,16 +504,16 @@ def _рамка(закон):
 # Долг назван и оставлен назван: свести списки в одно место — работа отдельная, ибо
 # суд держит их полтора десятка, и всякий свод их через дом рискует кругом ввоза
 # (дом зовёт ворота записи, ворота зовут палату, палата ввозит этот суд).
-ГЛ_E, ГЛ_E0, ВЕЩЬ_E = r"(jumped|brought|did|won)", r"(jump|bring|do|win)", r"(inches|feet|balloons|push-ups|meters|metres|games)"
-ВЕЩЬ_C, ГДЕ = r"(storks|birds|red flowers|white flowers)", r"(on the fence|in the garden)"
+ГЛ_E, ГЛ_E0, ВЕЩЬ_E = r"(scored|filled|caught|carried|baked|sold)", r"(score|fill|catch|carry|bake|sell)", r"(points|buckets|mice|passengers|pies|tickets)"
+ВЕЩЬ_C, ГДЕ = r"(apples|pears|ducks|swans)", r"(in the basket|on the lake)"
 # 22П глаголы полос точками: деятель — имя, зверь или группа
 ДЕЯТЕЛЬ_П = r"((?:the )?[A-Za-z]+)"
-ГЛ_П = r"(jumped|did|completed|watched|won|sent|lost|removed|raised|threw away)"
-ГЛ_П0 = r"(jump|do|complete|watch|win|send|lose|remove|raise|throw away)"
-ВЕЩЬ_П = r"(inches|feet|push-ups|crunches|pages|laps|movies|episodes|games|medals|letters|cards|coins|marbles|books|stickers|dollars|caps|bottles)"
-НА, НА_RU = r"(on the shirt|on the hat|on books|on pens)", r"(на рубашку|на шляпу|на книги|на ручки)"
-ГЛ_O, ГЛ_O0, ВЕЩЬ_O = r"(received|sold|cut|found|played with)", r"(receive|sell|cut|find|play with)", r"(emails|books|roses|bottle caps|kids)"
-СРОК, СРОК_RU = r"(in the morning|in the afternoon|in the evening)", r"(утром|днём|вечером)"
+ГЛ_П = r"(climbed|baked|painted|picked|won|sent|lost|watched|sold|washed)"
+ГЛ_П0 = r"(climb|bake|paint|pick|win|send|lose|watch|sell|wash)"
+ВЕЩЬ_П = r"(steps|meters|pies|loaves|posts|boards|plums|pears|matches|races|parcels|postcards|buttons|keys|films|plays|cakes|cups|plates)"
+НА, НА_RU = r"(on train tickets|on lunch|on paint|on brushes)", r"(на билеты|на обед|на краску|на кисти)"
+ГЛ_O, ГЛ_O0, ВЕЩЬ_O = r"(picked|washed|sold|counted|fed)", r"(pick|wash|sell|count|feed)", r"(plums|cups|tickets|boats|rabbits)"
+СРОК, СРОК_RU = r"(on Monday|on Tuesday|on Wednesday)", r"(в понедельник|во вторник|в среду)"
 С_ВЕЩЬ = r"(pens|books|apples|coins|cards)"
 КР, КР_RU = r"(half as many|twice as many|three times as many)", r"(вдвое меньше|вдвое больше|втрое больше)"
 КР_К = {"half as many": (2, True), "twice as many": (2, False), "three times as many": (3, False),
@@ -513,11 +521,11 @@ def _рамка(закон):
 
 
 def _срок(w, a, b, c):
-    return {"in the morning": a, "in the afternoon": b, "in the evening": c, "утром": a, "днём": b, "вечером": c}[w]
+    return {"on Monday": a, "on Tuesday": b, "on Wednesday": c, "в понедельник": a, "во вторник": b, "в среду": c}[w]
 
 
 def _остаток(n, m, k, что, r, *осн):
-    if что.startswith(("cakes", "торт")):
+    if что.startswith(("apples", "ябло")):
         return tuple(осн) == (n, k, r) and r == n - k >= 0
     return not осн and r == n
 
@@ -578,7 +586,7 @@ def _части_дом(всего, кр, дом, ов, k1, ол, ол2, k, од)
     # 22C there were A and B где
     (rf"^there were {Ч} {ВЕЩЬ_C} and {Ч} {ВЕЩЬ_C} {ГДЕ}; there were {Ч} more {ВЕЩЬ_C} than {ВЕЩЬ_C}: {Ч} − {Ч} = {Ч}\.$",
      _рамка(lambda x, a, y, b, где, d, a2, b2, ox, oy, od: (a, b) == (a2, b2) and d == x - y > 0 and (ox, oy, od) == (x, y, d))),
-    (rf"^на заборе было {Ч} {СЛ} и {Ч} {СЛ}; {СЛ} на {Ч} больше, чем {СЛ}: {Ч} − {Ч} = {Ч}\.$",
+    (rf"^в корзине было {Ч} {СЛ} и {Ч} {СЛ}; {СЛ} на {Ч} больше, чем {СЛ}: {Ч} − {Ч} = {Ч}\.$",
      _рамка(lambda x, a, y, b, a2, d, b2, ox, oy, od: d == x - y > 0 and (ox, oy, od) == (x, y, d))),
     (rf"^there were {Ч} {ВЕЩЬ_C} and {Ч} {ВЕЩЬ_C} {ГДЕ}; there were not {Ч} more {ВЕЩЬ_C} than {ВЕЩЬ_C}: {Ч} more\.$",
      _рамка(lambda x, a, y, b, где, ч, a2, b2, и: (a, b) == (a2, b2) and и == x - y > 0 and ч != и)),
@@ -596,43 +604,43 @@ def _части_дом(всего, кр, дом, ов, k1, ол, ол2, k, од)
     (rf"^if {С} spent {Ч} dollars {НА} and {Ч} dollars {НА}, how much more money did {С} spend {НА} than {НА}\? {Ч} − {Ч} = {Ч} dollars?\.$",
      _рамка(lambda n1, x, на1, y, на2, n2, на3, на4, ox, oy, d: n1 == n2 and (на1, на2) == (на3, на4) and (ox, oy) == (x, y) and d == x - y > 0)),
     # 23 отбор среди отвлекающих
-    (rf"^{С} {ГЛ_O} {Ч} {ВЕЩЬ_O} in the morning, {Ч} in the afternoon and {Ч} in the evening; {СРОК} {С} {ГЛ_O} {Ч} {ВЕЩЬ_O}\.$",
+    (rf"^{С} {ГЛ_O} {Ч} {ВЕЩЬ_O} on Monday, {Ч} on Tuesday and {Ч} on Wednesday; {СРОК} {С} {ГЛ_O} {Ч} {ВЕЩЬ_O}\.$",
      _рамка(lambda n1, g1, a, t1, b, c, w, n2, g2, v, t2: n1 == n2 and g1 == g2 and t1 == t2 and len({a, b, c}) == 3 and v == _срок(w, a, b, c))),
-    (rf"^{ИМЯ} {СЛ} утром {Ч} {СЛ}, днём {Ч} и вечером {Ч}; {СРОК_RU} {ИМЯ} {СЛ} {Ч} {СЛ}\.$",
+    (rf"^{ИМЯ} {СЛ} в понедельник {Ч} {СЛ}, во вторник {Ч} и в среду {Ч}; {СРОК_RU} {ИМЯ} {СЛ} {Ч} {СЛ}\.$",
      _рамка(lambda n1, g1, a, s1, b, c, w, n2, g2, v, s2: n1 == n2 and g1 == g2 and len({a, b, c}) == 3 and v == _срок(w, a, b, c))),
-    (rf"^if {С} {ГЛ_O} {Ч} {ВЕЩЬ_O} in the morning, {Ч} in the afternoon and {Ч} in the evening, how many {ВЕЩЬ_O} did {С} {ГЛ_O0} in all\? {Ч} \+ {Ч} \+ {Ч} = {Ч}\.$",
+    (rf"^if {С} {ГЛ_O} {Ч} {ВЕЩЬ_O} on Monday, {Ч} on Tuesday and {Ч} on Wednesday, how many {ВЕЩЬ_O} did {С} {ГЛ_O0} in all\? {Ч} \+ {Ч} \+ {Ч} = {Ч}\.$",
      _рамка(lambda n1, g1, a, t1, b, c, t2, n2, g0, oa, ob, oc, s: n1 == n2 and ОСНОВА[g1] == g0 and t1 == t2 and (oa, ob, oc) == (a, b, c) and s == a + b + c)),
-    (rf"^{С} {ГЛ_O} {Ч} {ВЕЩЬ_O} in the morning, {Ч} in the afternoon and {Ч} in the evening; {С} did not {ГЛ_O0} {Ч} {ВЕЩЬ_O} {СРОК}: {С} {ГЛ_O} {Ч}\.$",
+    (rf"^{С} {ГЛ_O} {Ч} {ВЕЩЬ_O} on Monday, {Ч} on Tuesday and {Ч} on Wednesday; {С} did not {ГЛ_O0} {Ч} {ВЕЩЬ_O} {СРОК}: {С} {ГЛ_O} {Ч}\.$",
      _рамка(lambda n1, g1, a, t1, b, c, n2, g0, ч, t2, w, n3, g2, и: n1 == n2 == n3 and ОСНОВА[g1] == g0 and g1 == g2 and t1 == t2 and len({a, b, c}) == 3 and и == _срок(w, a, b, c) and ч != и)),
-    (rf"^if {С} {ГЛ_O} {Ч} {ВЕЩЬ_O} in the morning, {Ч} in the afternoon and {Ч} in the evening, how many {ВЕЩЬ_O} did {С} {ГЛ_O0} {СРОК}\? {Ч} {СРОК}\.$",
+    (rf"^if {С} {ГЛ_O} {Ч} {ВЕЩЬ_O} on Monday, {Ч} on Tuesday and {Ч} on Wednesday, how many {ВЕЩЬ_O} did {С} {ГЛ_O0} {СРОК}\? {Ч} {СРОК}\.$",
      _рамка(lambda n1, g1, a, t1, b, c, t2, n2, g0, w, v, w2: n1 == n2 and ОСНОВА[g1] == g0 and t1 == t2 and w == w2 and len({a, b, c}) == 3 and v == _срок(w, a, b, c))),
     # 24 остаток при отвлекающем
-    (rf"^the baker made {Ч} cakes and {Ч} pastries and sold {Ч} (cakes|pastries); the baker still has {Ч} cakes: (?:{Ч} − {Ч} = {Ч}|the pastries sold are not cakes)\.$",
+    (rf"^the gardener picked {Ч} apples and {Ч} pears and sold {Ч} (apples|pears); the gardener still has {Ч} apples?: (?:{Ч} − {Ч} = {Ч}|the pears sold are not apples)\.$",
      _рамка(_остаток)),
-    (rf"^пекарь {СЛ} {Ч} {СЛ} и {Ч} {СЛ} и {СЛ} {Ч} (торт[а-я]*|булоч[а-я]*); тортов осталось {Ч}: (?:{Ч} − {Ч} = {Ч}|проданы булочки, не торты)\.$",
-     _рамка(lambda g, n, s1, m, s2, g2, k, что, r, *осн: _остаток(n, m, k, что, r, *осн))),
-    (rf"^the baker made {Ч} cakes and {Ч} pastries and sold {Ч} (cakes|pastries); the baker does not still have {Ч} cakes: the baker has {Ч}\.$",
-     _рамка(lambda n, m, k, что, ч, и: и == (n - k if что == "cakes" else n) and ч != и)),
-    (rf"^if the baker made {Ч} cakes and {Ч} pastries and sold {Ч} cakes, how many cakes would the baker still have\? {Ч} cakes; the {Ч} pastries do not count; {Ч} − {Ч} = {Ч}\.$",
+    (rf"^{ИМЯ} {СЛ} {Ч} {СЛ} и {Ч} {СЛ} и {СЛ} {Ч} (ябло[а-я]*|груш[а-я]*); яблок осталось {Ч}: (?:{Ч} − {Ч} = {Ч}|проданы груши, не яблоки)\.$",
+     _рамка(lambda имя, g, n, s1, m, s2, g2, k, что, r, *осн: _остаток(n, m, k, что, r, *осн))),
+    (rf"^the gardener picked {Ч} apples and {Ч} pears and sold {Ч} (apples|pears); the gardener does not still have {Ч} apples: the gardener has {Ч}\.$",
+     _рамка(lambda n, m, k, что, ч, и: и == (n - k if что == "apples" else n) and ч != и)),
+    (rf"^if the gardener picked {Ч} apples and {Ч} pears and sold {Ч} apples, how many apples would the gardener still have\? {Ч} apples; the {Ч} pears do not count; {Ч} − {Ч} = {Ч}\.$",
      _рамка(lambda n, m, k, on, om, on2, ok, r: (on, om, on2, ok) == (n, m, n, k) and r == n - k >= 0)),
-    (rf"^if the baker made {Ч} cakes and {Ч} pastries and sold {Ч} pastries, how many cakes would the baker still have\? {Ч} cakes; the pastries sold are not cakes\.$",
+    (rf"^if the gardener picked {Ч} apples and {Ч} pears and sold {Ч} pears, how many apples would the gardener still have\? {Ч} apples; the pears sold are not apples\.$",
      _рамка(lambda n, m, k, on: on == n)),
     # 25 класс
-    (rf"^there are {Ч} girls and {Ч} boys in the class; the class has {Ч} pupils: {Ч} \+ {Ч} = {Ч}\.$",
+    (rf"^there are {Ч} residents on the first floor and {Ч} on the second floor; the house has {Ч} residents: {Ч} \+ {Ч} = {Ч}\.$",
      _рамка(lambda g, b, s, og, ob, os: s == g + b and (og, ob, os) == (g, b, s))),
-    (rf"^в классе {Ч} {СЛ} и {Ч} {СЛ}; в классе {Ч} {СЛ}: {Ч} \+ {Ч} = {Ч}\.$",
-     _рамка(lambda g, s1, b, s2, s, s3, og, ob, os: s == g + b and (og, ob, os) == (g, b, s))),
-    (rf"^there are {Ч} girls and {Ч} boys in the class; the class does not have {Ч} pupils: it has {Ч}\.$",
+    (rf"^на первом этаже {Ч} {СЛ}, а на втором {Ч}; в доме {Ч} {СЛ}: {Ч} \+ {Ч} = {Ч}\.$",
+     _рамка(lambda g, s1, b, s, s3, og, ob, os: s == g + b and (og, ob, os) == (g, b, s))),
+    (rf"^there are {Ч} residents on the first floor and {Ч} on the second floor; the house does not have {Ч} residents: it has {Ч}\.$",
      _рамка(lambda g, b, ч, и: и == g + b and ч != и)),
-    (rf"^if there are {Ч} girls and {Ч} boys in the class, how many pupils are there in the class\? {Ч} \+ {Ч} = {Ч}\.$",
+    (rf"^if there are {Ч} residents on the first floor and {Ч} on the second floor, how many residents does the house have\? {Ч} \+ {Ч} = {Ч}\.$",
      _рамка(lambda g, b, og, ob, s: (og, ob) == (g, b) and s == g + b)),
-    (rf"^there are {Ч} pupils in the class and {Ч} of them are girls; there are {Ч} boys in the class: {Ч} − {Ч} = {Ч}\.$",
+    (rf"^the house has {Ч} residents and {Ч} of them live on the first floor; {Ч} residents live on the second floor: {Ч} − {Ч} = {Ч}\.$",
      _рамка(lambda s, g, b, os, og, ob: b == s - g > 0 and (os, og, ob) == (s, g, b))),
-    (rf"^в классе {Ч} {СЛ}, из них {Ч} {СЛ}; в классе {Ч} {СЛ}: {Ч} − {Ч} = {Ч}\.$",
-     _рамка(lambda s, s1, g, s2, b, s3, os, og, ob: b == s - g > 0 and (os, og, ob) == (s, g, b))),
-    (rf"^there are {Ч} pupils in the class and {Ч} of them are girls; there are not {Ч} boys in the class: there are {Ч}\.$",
+    (rf"^в доме {Ч} {СЛ}, из них {Ч} живут на первом этаже; на втором этаже {Ч} {СЛ}: {Ч} − {Ч} = {Ч}\.$",
+     _рамка(lambda s, s1, g, b, s3, os, og, ob: b == s - g > 0 and (os, og, ob) == (s, g, b))),
+    (rf"^the house has {Ч} residents and {Ч} of them live on the first floor; the number of residents on the second floor is not {Ч}: it is {Ч}\.$",
      _рамка(lambda s, g, ч, и: и == s - g > 0 and ч != и)),
-    (rf"^if there are {Ч} pupils in the class and {Ч} of them are girls, how many boys are there in the class\? {Ч} − {Ч} = {Ч}\.$",
+    (rf"^if the house has {Ч} residents and {Ч} of them live on the first floor, how many residents live on the second floor\? {Ч} − {Ч} = {Ч}\.$",
      _рамка(lambda s, g, os, og, b: (os, og) == (s, g) and b == s - g > 0)),
     # 26 деньги
     (rf"^{С} bought {Ч} {С_ВЕЩЬ} at {Ч} dollars each; {С} spent {Ч} dollars: {Ч} × {Ч} = {Ч}\.$",
@@ -652,51 +660,51 @@ def _части_дом(всего, кр, дом, ов, k1, ол, ол2, k, од)
     (rf"^if {С} had {Ч} dollars and spent {Ч} dollars, how much money is left\? {Ч} − {Ч} = {Ч} dollars\.$",
      _рамка(lambda n1, a, b, oa, ob, c: (oa, ob) == (a, b) and c == a - b > 0)),
     # 27 сдача
-    (rf"^{С} gave the craftsman {Ч} {Ч}-dollar bills for a hat worth {Ч} dollars; the change is {Ч} dollars: {Ч} × {Ч} − {Ч} = {Ч}\.$",
-     _рамка(lambda n1, n, b, p, c, on, ob, op, oc: c == n * b - p > 0 and (on, ob, op, oc) == (n, b, p, c))),
-    (rf"^{ИМЯ} {СЛ} мастеру {Ч} {СЛ} по {Ч} {СЛ} за шляпу ценой {Ч} {СЛ}; сдача {Ч} {СЛ}: {Ч} × {Ч} − {Ч} = {Ч}\.$",
-     _рамка(lambda n1, g, n, s1, b, s2, p, s3, c, s4, on, ob, op, oc: c == n * b - p > 0 and (on, ob, op, oc) == (n, b, p, c))),
-    (rf"^{С} gave the craftsman {Ч} {Ч}-dollar bills for a hat worth {Ч} dollars; the change is not {Ч} dollars: it is {Ч}\.$",
-     _рамка(lambda n1, n, b, p, ч, и: и == n * b - p > 0 and ч != и)),
-    (rf"^if {С} gave the craftsman {Ч} {Ч}-dollar bills for a hat worth {Ч} dollars, how much change did {С} get\? {Ч} × {Ч} − {Ч} = {Ч} dollars\.$",
-     _рамка(lambda n1, n, b, p, n2, on, ob, op, c: n1 == n2 and (on, ob, op) == (n, b, p) and c == n * b - p > 0)),
+    (rf"^a lamp costs {Ч} dollars? and {С} hands over {Ч} {Ч}-dollar bills; the change is {Ч} dollars: {Ч} × {Ч} − {Ч} = {Ч}\.$",
+     _рамка(lambda p, n1, n, b, c, on, ob, op, oc: c == n * b - p > 0 and (on, ob, op, oc) == (n, b, p, c))),
+    (rf"^лампа стоит {Ч} {СЛ}, {ИМЯ} даёт {Ч} {СЛ} по {Ч} {СЛ}; сдача {Ч} {СЛ}: {Ч} × {Ч} − {Ч} = {Ч}\.$",
+     _рамка(lambda p, s0, n1, n, s1, b, s2, c, s4, on, ob, op, oc: c == n * b - p > 0 and (on, ob, op, oc) == (n, b, p, c))),
+    (rf"^a lamp costs {Ч} dollars? and {С} hands over {Ч} {Ч}-dollar bills; the change is not {Ч} dollars: it is {Ч}\.$",
+     _рамка(lambda p, n1, n, b, ч, и: и == n * b - p > 0 and ч != и)),
+    (rf"^if a lamp costs {Ч} dollars? and {С} hands over {Ч} {Ч}-dollar bills, how much change does {С} get\? {Ч} × {Ч} − {Ч} = {Ч} dollars\.$",
+     _рамка(lambda p, n1, n, b, n2, on, ob, op, c: n1 == n2 and (on, ob, op) == (n, b, p) and c == n * b - p > 0)),
     # 28 прибыль
-    (rf"^{С} bought the magazines at {Ч} dollars and sells them at {Ч}/{Ч} of the price; the profit is {Ч} dollars: {Ч} × {Ч} ÷ {Ч} − {Ч} = {Ч}\.$",
+    (rf"^{С} bought a bicycle for {Ч} dollars and sells it at {Ч}/{Ч} of that price; the profit is {Ч} dollars: {Ч} × {Ч} ÷ {Ч} − {Ч} = {Ч}\.$",
      _рамка(lambda n1, p, a, b, r, op, oa, ob, op2, or_: p % b == 0 and r == p * a // b - p > 0 and (op, oa, ob, op2, or_) == (p, a, b, p, r))),
-    (rf"^{ИМЯ} {СЛ} журналы за {Ч} {СЛ} и продаёт их за {Ч}/{Ч} цены; прибыль {Ч} {СЛ}: {Ч} × {Ч} ÷ {Ч} − {Ч} = {Ч}\.$",
+    (rf"^{ИМЯ} {СЛ} велосипед за {Ч} {СЛ} и продаёт его за {Ч}/{Ч} этой цены; прибыль {Ч} {СЛ}: {Ч} × {Ч} ÷ {Ч} − {Ч} = {Ч}\.$",
      _рамка(lambda n1, g, p, s1, a, b, r, s2, op, oa, ob, op2, or_: p % b == 0 and r == p * a // b - p > 0 and (op, oa, ob, op2, or_) == (p, a, b, p, r))),
-    (rf"^{С} bought the magazines at {Ч} dollars and sells them at {Ч}/{Ч} of the price; the profit is not {Ч} dollars: it is {Ч}\.$",
+    (rf"^{С} bought a bicycle for {Ч} dollars and sells it at {Ч}/{Ч} of that price; the profit is not {Ч} dollars: it is {Ч}\.$",
      _рамка(lambda n1, p, a, b, ч, и: p % b == 0 and и == p * a // b - p > 0 and ч != и)),
-    (rf"^if {С} bought the magazines at {Ч} dollars and sells them at {Ч}/{Ч} of the price, what is the profit\? {Ч} × {Ч} ÷ {Ч} − {Ч} = {Ч} dollars\.$",
+    (rf"^if {С} bought a bicycle for {Ч} dollars and sells it at {Ч}/{Ч} of that price, what is the profit\? {Ч} × {Ч} ÷ {Ч} − {Ч} = {Ч} dollars\.$",
      _рамка(lambda n1, p, a, b, op, oa, ob, op2, r: p % b == 0 and (op, oa, ob, op2) == (p, a, b, p) and r == p * a // b - p > 0)),
     # 29 завышение
-    (rf"^{С} reported {Ч} people at the concert, overstating the number by {Ч} percent; {Ч} people really attended: {Ч} × 100 ÷ \(100 \+ {Ч}\) = {Ч}\.$",
+    (rf"^{С} said {Ч} guests came to the party, overstating the number by {Ч} percent; {Ч} guests really came: {Ч} × 100 ÷ \(100 \+ {Ч}\) = {Ч}\.$",
      _рамка(lambda n1, n, q, r, on, oq, or_: r * (100 + q) == n * 100 and (on, oq, or_) == (n, q, r))),
-    (rf"^{ИМЯ} {СЛ}, что на концерте было {Ч} {СЛ}, завысив число на {Ч} {СЛ}; на самом деле было {Ч} {СЛ}: {Ч} × 100 ÷ \(100 \+ {Ч}\) = {Ч}\.$",
-     _рамка(lambda n1, g, n, s1, q, s2, r, s3, on, oq, or_: r * (100 + q) == n * 100 and (on, oq, or_) == (n, q, r))),
-    (rf"^{С} reported {Ч} people at the concert, overstating the number by {Ч} percent; the real number is not {Ч}: it is {Ч}\.$",
+    (rf"^{ИМЯ} {СЛ}, что гостей на празднике было {Ч}, но {СЛ} число на {Ч} {СЛ}; на самом деле гостей было {Ч}: {Ч} × 100 ÷ \(100 \+ {Ч}\) = {Ч}\.$",
+     _рамка(lambda n1, g, n, g2, q, s2, r, on, oq, or_: r * (100 + q) == n * 100 and (on, oq, or_) == (n, q, r))),
+    (rf"^{С} said {Ч} guests came to the party, overstating the number by {Ч} percent; the real number is not {Ч}: it is {Ч}\.$",
      _рамка(lambda n1, n, q, ч, и: и * (100 + q) == n * 100 and ч != и)),
-    (rf"^if {С} reported {Ч} people at the concert, overstating the number by {Ч} percent, how many people really attended\? {Ч} × 100 ÷ \(100 \+ {Ч}\) = {Ч}\.$",
+    (rf"^if {С} said {Ч} guests came to the party, overstating the number by {Ч} percent, how many guests really came\? {Ч} × 100 ÷ \(100 \+ {Ч}\) = {Ч}\.$",
      _рамка(lambda n1, n, q, on, oq, r: (on, oq) == (n, q) and r * (100 + q) == n * 100)),
     # 30 половина / кратно и всего
-    (rf"^there were {Ч} ants and {КР} bugs as ants in the garden; there were {Ч} insects in all: {Ч} \+ {Ч} (÷|×) {Ч} = {Ч}\.$",
+    (rf"^there were {Ч} apples and {КР} pears as apples in the basket; there were {Ч} apples and pears in all: {Ч} \+ {Ч} (÷|×) {Ч} = {Ч}\.$",
      _рамка(_всего_насекомых)),
-    (rf"^в саду было {Ч} {СЛ} и {КР_RU} жуков; всего муравьёв и жуков {Ч}: {Ч} \+ {Ч} (÷|×) {Ч} = {Ч}\.$",
+    (rf"^в корзине было {Ч} {СЛ} и {КР_RU} груш; всего яблок и груш {Ч}: {Ч} \+ {Ч} (÷|×) {Ч} = {Ч}\.$",
      _рамка(lambda n, s, кр, t, on, on2, знак, k, ot: _всего_насекомых(n, кр, t, on, on2, знак, k, ot))),
-    (rf"^there were {Ч} ants and {КР} bugs as ants in the garden; there were not {Ч} insects in all: there were {Ч}\.$",
+    (rf"^there were {Ч} apples and {КР} pears as apples in the basket; there were not {Ч} apples and pears in all: there were {Ч}\.$",
      _рамка(lambda n, кр, ч, и: и == n + (n // КР_К[кр][0] if КР_К[кр][1] else n * КР_К[кр][0]) and (not КР_К[кр][1] or n % КР_К[кр][0] == 0) and ч != и)),
-    (rf"^if there were {Ч} ants and {КР} bugs as ants in the garden, how many insects were there in all\? {Ч} \+ {Ч} (÷|×) {Ч} = {Ч}\.$",
+    (rf"^if there were {Ч} apples and {КР} pears as apples in the basket, how many apples and pears were there in all\? {Ч} \+ {Ч} (÷|×) {Ч} = {Ч}\.$",
      _рамка(lambda n, кр, on, on2, знак, k, t: _всего_насекомых(n, кр, t, on, on2, знак, k, t))),
     # 31 части: часть и её кратное дают целое
-    (rf"^a house and a lot cost {Ч} dollars and the house cost {КРАТ_Ч} as much as the lot; the lot cost {Ч} dollars: {Ч} ÷ {Ч} = {Ч}, {Ч} \+ 1 = {Ч}\.$",
+    (rf"^a boat and a trailer cost {Ч} dollars and the boat cost {КРАТ_Ч} as much as the trailer; the trailer cost {Ч} dollars: {Ч} ÷ {Ч} = {Ч}, {Ч} \+ 1 = {Ч}\.$",
      _рамка(lambda всего, кр, лот, ов, k1, ол, k, k1b: _части_лот(всего, кр, лот, ов, k1, ол, k, k1b))),
-    (rf"^дом и участок стоили {Ч} {СЛ}, а дом стоил {КРАТ_Ч} дороже участка; участок стоил {Ч} {СЛ}: {Ч} ÷ {Ч} = {Ч}, {Ч} \+ 1 = {Ч}\.$",
+    (rf"^лодка и прицеп стоили {Ч} {СЛ}, а лодка стоила {КРАТ_Ч} дороже прицепа; прицеп стоил {Ч} {СЛ}: {Ч} ÷ {Ч} = {Ч}, {Ч} \+ 1 = {Ч}\.$",
      _рамка(lambda всего, с1, кр, лот, с2, ов, k1, ол, k, k1b: _части_лот(всего, кр, лот, ов, k1, ол, k, k1b))),
-    (rf"^a house and a lot cost {Ч} dollars and the house cost {КРАТ_Ч} as much as the lot; the house cost {Ч} dollars: {Ч} ÷ {Ч} = {Ч}, {Ч} × {Ч} = {Ч}\.$",
+    (rf"^a boat and a trailer cost {Ч} dollars and the boat cost {КРАТ_Ч} as much as the trailer; the boat cost {Ч} dollars: {Ч} ÷ {Ч} = {Ч}, {Ч} × {Ч} = {Ч}\.$",
      _рамка(lambda всего, кр, дом, ов, k1, ол, ол2, k, од: _части_дом(всего, кр, дом, ов, k1, ол, ол2, k, од))),
-    (rf"^if a house and a lot cost {Ч} dollars and the house cost {КРАТ_Ч} as much as the lot, how much did the lot cost\? {Ч} ÷ {Ч} = {Ч}, {Ч} \+ 1 = {Ч} dollars\.$",
+    (rf"^if a boat and a trailer cost {Ч} dollars and the boat cost {КРАТ_Ч} as much as the trailer, how much did the trailer cost\? {Ч} ÷ {Ч} = {Ч}, {Ч} \+ 1 = {Ч} dollars\.$",
      _рамка(lambda всего, кр, ов, k1, ол, k, k1b: _части_лот(всего, кр, ол, ов, k1, ол, k, k1b))),
-    (rf"^if a house and a lot cost {Ч} dollars and the house cost {КРАТ_Ч} as much as the lot, how much did the house cost\? {Ч} ÷ {Ч} = {Ч}, {Ч} × {Ч} = {Ч} dollars\.$",
+    (rf"^if a boat and a trailer cost {Ч} dollars and the boat cost {КРАТ_Ч} as much as the trailer, how much did the boat cost\? {Ч} ÷ {Ч} = {Ч}, {Ч} × {Ч} = {Ч} dollars\.$",
      _рамка(lambda всего, кр, ов, k1, ол, ол2, k, од: _части_дом(всего, кр, од, ов, k1, ол, ол2, k, од))),
     # 22E два деятеля, одно дело
     (rf"^{ДЕЯТЕЛЬ_E} {ГЛ_E} {Ч} {ВЕЩЬ_E} and {ДЕЯТЕЛЬ_E} {ГЛ_E} {Ч} {ВЕЩЬ_E}; {ДЕЯТЕЛЬ_E} {ГЛ_E} {Ч} more {ВЕЩЬ_E} than {ДЕЯТЕЛЬ_E}: {Ч} − {Ч} = {Ч}\.$",
@@ -762,7 +770,7 @@ _СЕМЕЙСТВА_ОСНОВА = (
     ("полосы", ОБРАЗЦЫ_3[70:74]),
 )
 # RU QA-ФОРМЫ СЕМЕЙСТВ (М-146: вопросная поверхность на каждом языке рамки).
-СРОК_RU2 = r"(утром|днём|вечером)"
+СРОК_RU2 = r"(в понедельник|во вторник|в среду)"
 ЧЕТВЕРТИ_RU = r"(четверть|две четверти|три четверти)"
 
 
@@ -776,80 +784,81 @@ def _четверти_ru(часть, слово, o_ч, k, целое):
                _рамка(lambda n1, x, в1, n2, y, в2, в3, ox, oy, s: (ox, oy) == (x, y) and s == x + y))],
     "температура": [(rf"^если температура была {Ч} {СЛ} и (упала|поднялась) на {Ч} {СЛ}, какова температура теперь\? {Ч} ([+−]) {Ч} = {Ч}\.$",
                      _рамка(lambda t0, s1, г, d, s2, ot0, зн, od, t1: (ot0, od) == (t0, d) and зн == ("−" if г == "упала" else "+") and t1 == t0 + (-d if г == "упала" else d)))],
-    "процент": [(rf"^если в классе {Ч} {СЛ}, из них {Ч} — {СЛ}, какова доля девочек в процентах\? {Ч} {СЛ} и {Ч} {СЛ}: {Ч} ÷ {Ч} × 100 = {Ч}\.$",
+    "процент": [(rf"^если в саду {Ч} {СЛ}, из них {Ч} {СЛ}, какова доля груш в процентах\? {Ч} {СЛ} и {Ч} {СЛ}: {Ч} ÷ {Ч} × 100 = {Ч}\.$",
                  _рамка(lambda всего, s1, часть, s2, o_в, s3, o_ч, s4, o_ч2, o_в2, p: (o_в, o_ч, o_ч2, o_в2) == (всего, часть, часть, всего) and часть * 100 == p * всего))],
-    "фунты": [(rf"^если посылка весит {Ч} {СЛ}, а в фунте 16 унций, каков вес в фунтах\? {Ч} ÷ 16 = {Ч}\.$",
+    "фунты": [(rf"^если мешок яблок весит {Ч} {СЛ}, а в фунте 16 унций, каков вес в фунтах\? {Ч} ÷ 16 = {Ч}\.$",
                _рамка(lambda у, s, o_у, ф: o_у == у and ф * 16 == у))],
-    "глубина": [(rf"^если бак шириной {Ч} {СЛ} и длиной {Ч} {СЛ} вмещает {Ч} кубических футов воды, какова глубина воды в баке\? {Ч} на {Ч} при {Ч}: {Ч} ÷ \({Ч} × {Ч}\) = {Ч}\.$",
+    "глубина": [(rf"^если яма шириной {Ч} {СЛ} и длиной {Ч} {СЛ} вмещает {Ч} кубическ(?:ий|их) метр(?:а|ов)? песка, какой толщины слой песка в яме\? {Ч} на {Ч} при {Ч}: {Ч} ÷ \({Ч} × {Ч}\) = {Ч}\.$",
                  _рамка(lambda w, s1, l, s2, v, ow, ol, ov, ov2, ow2, ol2, h: (ow, ol, ov, ov2, ow2, ol2) == (w, l, v, v, w, l) and h * w * l == v))],
-    "вероятность": [(rf"^если в мешке {Ч} {СЛ} красных и {Ч} {СЛ} синих, какова вероятность вынуть красный шар, выраженная дробью\? {Ч} красных и {Ч} синих: {Ч}/{Ч}\.$",
-                     _рамка(lambda r, s1, b, s2, or_, ob, r2, n: (or_, ob, r2) == (r, b, r) and n == r + b))],
-    "четверти": [(rf"^если {Ч} — это {ЧЕТВЕРТИ_RU} класса, сколько учеников в классе\? {Ч} ÷ {Ч} × 4 = {Ч}\.$", _рамка(_четверти_ru))],
-    "дополнение": [(rf"^если на стоянке изначально было {Ч} {СЛ}, а {Ч} уехали, сколько машин осталось\? {Ч} − {Ч} = {Ч}\.$",
+    "вероятность": [(rf"^если в банке чёрных пуговиц {Ч}, а белых {Ч}, какова вероятность взять чёрную пуговицу, записанная дробью\? {Ч} \+ {Ч} = {Ч}: {Ч}/{Ч}\.$",
+                     _рамка(lambda r, b, or_, ob, n, num, den: (or_, ob) == (r, b) and n == r + b and (num, den) == (r, n)))],
+    "четверти": [(rf"^если {Ч} {СЛ} — это {ЧЕТВЕРТИ_RU} книги, сколько страниц в книге\? {Ч} ÷ {Ч} × 4 = {Ч}\.$",
+                  _рамка(lambda часть, сл, слово, o_ч, k, целое: _четверти_ru(часть, слово, o_ч, k, целое)))],
+    "дополнение": [(rf"^если на пруду изначально было {Ч} {СЛ}, а {Ч} улетел[аи], сколько уток осталось\? {Ч} − {Ч} = {Ч}\.$",
                     _рамка(lambda б, s, у, o_б, o_у, о: (o_б, o_у) == (б, у) and о == б - у)),
-                   (rf"^если в наборе {Ч} {СЛ}, а в коробке {Ч} {СЛ}, сколько деталей не хватает\? {Ч} − {Ч} = {Ч}\.$",
-                    _рамка(lambda б, s1, о, s2, o_б, o_о, у: (o_б, o_о) == (б, о) and у == б - о)),
-                   (rf"^если в автобусе было {Ч} {СЛ}, а {Ч} вышли, сколько человек в автобусе теперь\? {Ч} − {Ч} = {Ч}\.$",
+                   (rf"^если мест для марок в альбоме {Ч}, а вклеен[ао] {Ч} {СЛ}, сколько марок не хватает\? {Ч} − {Ч} = {Ч}\.$",
+                    _рамка(lambda б, о, s2, o_б, o_о, у: (o_б, o_о) == (б, о) and у == б - о)),
+                   (rf"^если на празднике было {Ч} {СЛ}, а {Ч} (?:ушёл|ушли) домой, сколько гостей на празднике теперь\? {Ч} − {Ч} = {Ч}\.$",
                     _рамка(lambda б, s, у, o_б, o_у, о: (o_б, o_у) == (б, у) and о == б - у))],
-    "население": [(rf"^если в городе {Ч} {СЛ}, и {ДОЛЯ} всего населения живёт в центре, сколько человек живёт в центре\? {Ч} ÷ {Ч} = {Ч}\.$",
+    "население": [(rf"^если в библиотеке {Ч} {СЛ}, и {ДОЛЯ} всех книг стоит в читальном зале, сколько книг стоит в читальном зале\? {Ч} ÷ {Ч} = {Ч}\.$",
                    _рамка(lambda N, s, d, oN, od, c: (oN, od) == (N, d) and N == d * c))],
-    "команда": [(rf"^если в команде {Ч} {СЛ} и {Ч} {СЛ}, сколько человек в команде\? {Ч} \+ {Ч} = {Ч}\.$",
+    "команда": [(rf"^если на полке {Ч} {СЛ} и {Ч} {СЛ}, сколько всего предметов на полке\? {Ч} \+ {Ч} = {Ч}\.$",
                  _рамка(lambda m, s1, d, s2, om, od, s: (om, od) == (m, d) and s == m + d))],
-    "кратно": [(rf"^если машина стоила {Ч} {СЛ}, а дом стоил {КРАТ} дороже машины, сколько стоил дом\? {Ч} {СЛ}: {Ч} × {Ч} = {Ч}\.$",
+    "кратно": [(rf"^если трактор стоил {Ч} {СЛ}, а амбар стоил {КРАТ} дороже трактора, сколько стоил амбар\? {Ч} {СЛ}: {Ч} × {Ч} = {Ч}\.$",
                 _рамка(lambda c, s, k, oc0, s2, oc, ok, h: (oc0, oc, ok) == (c, c, k) and h == c * k))],
-    "проект": [(rf"^если проект начался с {Ч} {СЛ}, его {УДВ} и потом убавили на {Ч}, сколько панелей в итоговом проекте\? {Ч} × {Ч} − {Ч} = {Ч}\.$",
+    "проект": [(rf"^если заказ начинался с {Ч} {СЛ}, его {УДВ} и потом убавили на {Ч}, сколько коробок в итоговом заказе\? {Ч} × {Ч} − {Ч} = {Ч}\.$",
                 _рамка(lambda s0, s, k, m, os0, ok, om, f: (os0, ok, om) == (s0, k, m) and f == s0 * k - m))],
-    "окружность": [(rf"^если длину окружности земли берут за {Ч} {СЛ}, а самолёт летит {Ч} {СЛ} в час, сколько часов занимает полёт вокруг земли\? {Ч} ÷ {Ч} = {Ч}\.$",
+    "окружность": [(rf"^если дорога вокруг озера длиной {Ч} {СЛ}, а велосипедист едет {Ч} {СЛ} в час, сколько часов занимает поездка вокруг озера\? {Ч} ÷ {Ч} = {Ч}\.$",
                     _рамка(lambda L, s1, v, s2, oL, ov, t: (oL, ov) == (L, v) and L == v * t))],
-    "верёвки": [(rf"^если общая длина верёвок {Ч} {СЛ}, а верёвок {Ч}, какова длина средней верёвки\? {Ч} ÷ {Ч} = {Ч}\.$",
+    "верёвки": [(rf"^если общая высота столбов {Ч} {СЛ}, а столбов {Ч}, какова высота среднего столба\? {Ч} ÷ {Ч} = {Ч}\.$",
                  _рамка(lambda T, s, n, oT, on, a: (oT, on) == (T, n) and T == n * a))],
-    "трое": [(rf"^если {ИМЯ} имеет {Ч} {СЛ}, {ИМЯ} имеет на {Ч} {СЛ} больше, чем {ИМЯ}, а {ИМЯ} имеет {КРАТ} больше книг, чем {ИМЯ}, сколько книг у них вместе\? {Ч} \+ \({Ч} \+ {Ч}\) \+ {Ч} × {Ч} = {Ч}\.$",
+    "трое": [(rf"^если {ИМЯ} имеет {Ч} {СЛ}, {ИМЯ} имеет на {Ч} {СЛ} больше, чем {ИМЯ}, а {ИМЯ} имеет {КРАТ} больше ракушек, чем {ИМЯ}, сколько ракушек у них вместе\? {Ч} \+ \({Ч} \+ {Ч}\) \+ {Ч} × {Ч} = {Ч}\.$",
               _рамка(lambda x, a, s1, y, b, s2, x2, z, k, x3, oa, oa2, ob, ok, oa3, s: x == x2 == x3 and (oa, oa2, ob, ok, oa3) == (a, a, b, k, a) and s == a + (a + b) + k * a))],
-    "ставка": [(rf"^если {ИМЯ} делает {Ч} {СЛ} в час и работает {Ч} {СЛ}, сколько свечей делает {ИМЯ}\? {Ч} × {Ч} = {Ч}\.$",
+    "ставка": [(rf"^если {ИМЯ} подписывает {Ч} {СЛ} в час и работает {Ч} {СЛ}, сколько открыток подписывает {ИМЯ}\? {Ч} × {Ч} = {Ч}\.$",
                 _рамка(lambda n1, r, s1, t, s2, n2, or_, ot, s: n1 == n2 and (or_, ot) == (r, t) and s == r * t))],
-    "листки": [(rf"^если у {ИМЯ} было {Ч} {СЛ}, {Ч} ушли на холодильник и {Ч} на дверь, сколько листков осталось\? {Ч} − {Ч} − {Ч} = {Ч}\.$",
+    "листки": [(rf"^если у {ИМЯ} было {Ч} {СЛ}, {Ч} ушли в красную вазу и {Ч} в синюю, сколько конфет осталось\? {Ч} − {Ч} − {Ч} = {Ч}\.$",
                 _рамка(lambda n, b, s, r, d, ob, or_, od, k: (ob, or_, od) == (b, r, d) and k == b - r - d))],
-    "разница": [(rf"^если {ИМЯ} утром посадила? {Ч} {СЛ}, а днём {Ч} {СЛ}, на сколько деревьев больше утром, чем днём\? {Ч} − {Ч} = {Ч}\.$",
+    "разница": [(rf"^если {ИМЯ} вчера покрасила? {Ч} {СЛ}, а сегодня {Ч} {СЛ}, на сколько столбов больше вчера, чем сегодня\? {Ч} − {Ч} = {Ч}\.$",
                  _рамка(lambda n, x, s1, y, s2, ox, oy, d: (ox, oy) == (x, y) and d == x - y > 0))],
-    "скидка": [(rf"^если каждая пачка стоит {Ч} {СЛ}, и на каждую пачку скидка {Ч} {СЛ}, сколько надо заплатить за каждую пачку\? {Ч} − {Ч} = {Ч}\.$",
+    "скидка": [(rf"^если билет стоит {Ч} {СЛ}, и ученикам на каждый билет скидка {Ч} {СЛ}, сколько ученик платит за билет\? {Ч} − {Ч} = {Ч}\.$",
                 _рамка(lambda c, s1, s, s2, oc, os, p: (oc, os) == (c, s) and p == c - s))],
     "всего": [(rf"^если у {ИМЯ} было {Ч} {СЛ}, а {ИМЯ} отдала? {Ч}, сколько {СЛ} осталось\? {Ч} {СЛ}: {Ч} − {Ч} = {Ч}\.$",
                _рамка(lambda n1, x, s1, n2, y, s2, ox0, s3, ox, oy, s: _тот_же(n1, n2) and (ox0, ox, oy) == (x, x, y) and s == x - y)),
               (rf"^если у {ИМЯ} {Ч} {СЛ} в одной коробке и {Ч} {СЛ} в другой, сколько всего {СЛ} у {ИМЯ}\? {Ч} \+ {Ч} = {Ч}\.$",
                _рамка(lambda n1, x, s1, y, s2, s3, n2, ox, oy, s: n1 == n2 and (ox, oy) == (x, y) and s == x + y))],
-    "группы": [(rf"^если {Ч} {СЛ} стоят группами по {Ч}, сколько групп\? {Ч} ÷ {Ч} = {Ч}\.$",
-                _рамка(lambda T, s, n, oT, on, g: (oT, on) == (T, n) and T == n * g))],
+    "группы": [(rf"^если тарелок {Ч} и их сложили стопками по {Ч}, сколько стопок\? {Ч} ÷ {Ч} = {Ч}\.$",
+                _рамка(lambda T, n, oT, on, g: (oT, on) == (T, n) and T == n * g))],
     "больше_A": [(rf"^если {ИМЯ} {СЛ} {КОГДА_RU} {Ч} {СЛ}, а {КОГДА_RU} {Ч} {СЛ}, на сколько {СЛ} больше {КОГДА_RU}, чем {КОГДА_RU}\? {Ч} {СЛ} {КОГДА_RU}: {Ч} − {Ч} = {Ч}\.$",
                   _рамка(lambda n, g, w1, x, s1, w2, y, s2, s3, w3, w4, ox0, s4, w5, ox, oy, d: (w1, w2, w1) == (w3, w4, w5) and (ox0, ox, oy) == (x, x, y) and d == x - y > 0))],
     "больше_B": [(rf"^если {ИМЯ} {СЛ} {Ч} {СЛОВА} и {Ч} {СЛОВА}, на сколько {СЛОВА} больше, чем {СЛОВА}\? {Ч} − {Ч} = {Ч}\.$",
                   _рамка(lambda n, g, x, s1, y, s2, s3, s4, ox, oy, d: (ox, oy) == (x, y) and d == x - y > 0))],
-    "больше_C": [(rf"^если на заборе было {Ч} {СЛ} и {Ч} {СЛ}, на сколько {СЛ} больше, чем {СЛ}\? {Ч} − {Ч} = {Ч}\.$",
+    "больше_C": [(rf"^если в корзине было {Ч} {СЛ} и {Ч} {СЛ}, на сколько {СЛ} больше, чем {СЛ}\? {Ч} − {Ч} = {Ч}\.$",
                   _рамка(lambda x, a, y, b, a2, b2, ox, oy, d: (ox, oy) == (x, y) and d == x - y > 0))],
     "больше_D": [(rf"^если {ИМЯ} {СЛ} {Ч} {СЛ} {НА_RU} и {Ч} {СЛ} {НА_RU}, на сколько долларов больше потрачено {НА_RU}, чем {НА_RU}\? {Ч} − {Ч} = {Ч}\.$",
                   _рамка(lambda n, g, x, s1, на1, y, s2, на2, на3, на4, ox, oy, d: (на1, на2) == (на3, на4) and (ox, oy) == (x, y) and d == x - y > 0))],
-    "отбор": [(rf"^если {ИМЯ} {СЛ} утром {Ч} {СЛ}, днём {Ч} и вечером {Ч}, сколько {СЛ} {ИМЯ} {СЛ} {СРОК_RU2}\? {Ч} {СРОК_RU2}\.$",
+    "отбор": [(rf"^если {ИМЯ} {СЛ} в понедельник {Ч} {СЛ}, во вторник {Ч} и в среду {Ч}, сколько {СЛ} {ИМЯ} {СЛ} {СРОК_RU2}\? {Ч} {СРОК_RU2}\.$",
                _рамка(lambda n1, g1, a, s1, b, c, s2, n2, g2, w, v, w2: n1 == n2 and g1 == g2 and w == w2 and len({a, b, c}) == 3 and v == _срок(w, a, b, c)))],
-    "остаток": [(rf"^если пекарь испёк {Ч} {СЛ} и {Ч} {СЛ} и продал {Ч} (торт[а-я]*), сколько тортов осталось\? {Ч} {СЛ}; {Ч} {СЛ} не в счёт; {Ч} − {Ч} = {Ч}\.$",
-                 _рамка(lambda n, s1, m, s2, k, что, on, s3, om, s4, on2, ok, r: (on, om, on2, ok) == (n, m, n, k) and r == n - k >= 0)),
-                (rf"^если пекарь испёк {Ч} {СЛ} и {Ч} {СЛ} и продал {Ч} (булоч[а-я]*), сколько тортов осталось\? {Ч} {СЛ}: проданы булочки, не торты\.$",
-                 _рамка(lambda n, s1, m, s2, k, что, on, s3: on == n))],
-    "класс": [(rf"^если в классе {Ч} {СЛ} и {Ч} {СЛ}, сколько учеников в классе\? {Ч} \+ {Ч} = {Ч}\.$",
-               _рамка(lambda g, s1, b, s2, og, ob, s: (og, ob) == (g, b) and s == g + b)),
-              (rf"^если в классе {Ч} {СЛ}, из них {Ч} {СЛ}, сколько мальчиков в классе\? {Ч} − {Ч} = {Ч}\.$",
-               _рамка(lambda s, s1, g, s2, os, og, b: (os, og) == (s, g) and b == s - g > 0))],
+    "остаток": [(rf"^если {ИМЯ} {СЛ} {Ч} {СЛ} и {Ч} {СЛ} и {СЛ} {Ч} (ябло[а-я]*), сколько яблок осталось\? {Ч} {СЛ}; {Ч} {СЛ} не в счёт; {Ч} − {Ч} = {Ч}\.$",
+                 _рамка(lambda имя, g, n, s1, m, s2, g2, k, что, on, s3, om, s4, on2, ok, r: (on, om, on2, ok) == (n, m, n, k) and r == n - k >= 0)),
+                (rf"^если {ИМЯ} {СЛ} {Ч} {СЛ} и {Ч} {СЛ} и {СЛ} {Ч} (груш[а-я]*), сколько яблок осталось\? {Ч} {СЛ}: проданы груши, не яблоки\.$",
+                 _рамка(lambda имя, g, n, s1, m, s2, g2, k, что, on, s3: on == n))],
+    "класс": [(rf"^если на первом этаже {Ч} {СЛ}, а на втором {Ч}, сколько жителей в доме\? {Ч} \+ {Ч} = {Ч}\.$",
+               _рамка(lambda g, s1, b, og, ob, s: (og, ob) == (g, b) and s == g + b)),
+              (rf"^если в доме {Ч} {СЛ}, из них {Ч} живут на первом этаже, сколько жителей на втором этаже\? {Ч} − {Ч} = {Ч}\.$",
+               _рамка(lambda s, s1, g, os, og, b: (os, og) == (s, g) and b == s - g > 0))],
     "деньги": [(rf"^если {ИМЯ} {СЛ} {Ч} {СЛ} по {Ч} {СЛ}, сколько денег {ИМЯ} {СЛ}\? {Ч} × {Ч} = {Ч}\.$",
                 _рамка(lambda n1, g, n, s1, p, s2, n2, g2, on, op, t: n1 == n2 and (on, op) == (n, p) and t == n * p)),
                (rf"^если у {ИМЯ} было {Ч} {СЛ}, а {ИМЯ} {СЛ} {Ч} {СЛ}, сколько денег осталось\? {Ч} − {Ч} = {Ч}\.$",
                 _рамка(lambda n1, a, s1, n2, g, b, s2, oa, ob, c: _тот_же(n1, n2) and (oa, ob) == (a, b) and c == a - b > 0))],
-    "сдача": [(rf"^если {ИМЯ} {СЛ} мастеру {Ч} {СЛ} по {Ч} {СЛ} за шляпу ценой {Ч} {СЛ}, какова сдача\? {Ч} × {Ч} − {Ч} = {Ч}\.$",
-               _рамка(lambda n1, g, n, s1, b, s2, p, s3, on, ob, op, c: (on, ob, op) == (n, b, p) and c == n * b - p > 0))],
-    "прибыль": [(rf"^если {ИМЯ} {СЛ} журналы за {Ч} {СЛ} и продаёт их за {Ч}/{Ч} цены, какова прибыль\? {Ч} × {Ч} ÷ {Ч} − {Ч} = {Ч}\.$",
+    "сдача": [(rf"^если лампа стоит {Ч} {СЛ}, а {ИМЯ} даёт {Ч} {СЛ} по {Ч} {СЛ}, какова сдача\? {Ч} × {Ч} − {Ч} = {Ч}\.$",
+               _рамка(lambda p, s0, n1, n, s1, b, s2, on, ob, op, c: (on, ob, op) == (n, b, p) and c == n * b - p > 0))],
+    "прибыль": [(rf"^если {ИМЯ} {СЛ} велосипед за {Ч} {СЛ} и продаёт его за {Ч}/{Ч} этой цены, какова прибыль\? {Ч} × {Ч} ÷ {Ч} − {Ч} = {Ч}\.$",
                  _рамка(lambda n1, g, p, s, a, b, op, oa, ob, op2, r: p % b == 0 and (op, oa, ob, op2) == (p, a, b, p) and r == p * a // b - p > 0))],
-    "завышение": [(rf"^если {ИМЯ} {СЛ}, что на концерте было {Ч} {СЛ}, завысив число на {Ч} {СЛ}, сколько человек было на самом деле\? {Ч} × 100 ÷ \(100 \+ {Ч}\) = {Ч}\.$",
+    "завышение": [(rf"^если {ИМЯ} {СЛ}, что гостей на празднике было {Ч}, но {СЛ} число на {Ч} {СЛ}, сколько гостей было на самом деле\? {Ч} × 100 ÷ \(100 \+ {Ч}\) = {Ч}\.$",
                    _рамка(lambda n1, g, n, s1, q, s2, on, oq, r: (on, oq) == (n, q) and r * (100 + q) == n * 100))],
-    "половина": [(rf"^если в саду было {Ч} {СЛ} и {КР_RU} жуков, сколько всего муравьёв и жуков\? {Ч} \+ {Ч} (÷|×) {Ч} = {Ч}\.$",
+    "половина": [(rf"^если в корзине было {Ч} {СЛ} и {КР_RU} груш, сколько всего яблок и груш\? {Ч} \+ {Ч} (÷|×) {Ч} = {Ч}\.$",
                   _рамка(lambda n, s, кр, on, on2, знак, k, t: _всего_насекомых(n, кр, t, on, on2, знак, k, t)))],
-    "части": [(rf"^если дом и участок стоили {Ч} {СЛ}, а дом стоил {КРАТ_Ч} дороже участка, сколько стоил участок\? {Ч} {СЛ}: {Ч} ÷ {Ч} = {Ч}, {Ч} \+ 1 = {Ч}\.$",
+    "части": [(rf"^если лодка и прицеп стоили {Ч} {СЛ}, а лодка стоила {КРАТ_Ч} дороже прицепа, сколько стоил прицеп\? {Ч} {СЛ}: {Ч} ÷ {Ч} = {Ч}, {Ч} \+ 1 = {Ч}\.$",
                _рамка(lambda всего, с1, кр, лот, с2, ов, k1, ол, k, k1b: _части_лот(всего, кр, лот, ов, k1, ол, k, k1b)))],
     # РУССКИЕ ПОЛОСЫ (15.09): два деятеля, одно дело, четыре поверхности — как у английской
     # стороны, и судятся тем же пересчётом. Сверх счёта суд читает СОГЛАСОВАНИЕ ГЛАГОЛА с
@@ -984,6 +993,107 @@ def _согласование_ru(с):
 # судится своей рамкой, и названный ответ обязан быть итогом уравнения.
 ХВОСТ_ОТВЕТА = re.compile(r"^(.+ = (−?\d+)\.) (?:so the answer is|значит ответ:) (−?\d+)\.$")
 
+# ЗВЕНО НЕ ЕСТЬ ОТВЕТ (23.09). Предложение ответа сверялось с итогом ПОСЛЕДНЕГО шага, и
+# десять страниц мира говорили «250 ÷ 5 = 50, 4 + 1 = 5. значит ответ: 5» при ответе 50:
+# последний шаг был звеном — делителем, выведенным после. Шаг, чей итог уже стоял числом
+# в прежнем шаге, есть звено; дробь («4 + 1 = 5: 4/5») — ответ, но не число. Ни того, ни
+# другого предложение ответа повторять не вправе. Чтение своё, не дома: суд не ввозит того,
+# кого судит.
+_ЧИСЛО_ШАГА = re.compile(r"−?\d+")
+
+
+def _звено_или_дробь(хвост):
+    if re.search(r"\d/\d", хвост):
+        return True
+    шаги = [ш for ш in хвост.split(", ") if " = " in ш]
+    if len(шаги) < 2:
+        return False
+    итог = _ЧИСЛО_ШАГА.findall(шаги[-1].rsplit(" = ", 1)[1])
+    прежние = {ч for ш in шаги[:-1] for ч in _ЧИСЛО_ШАГА.findall(ш.rsplit(" = ", 1)[0])}
+    return bool(итог) and итог[0] in прежние
+
+
+# ОТРИЦАНИЕ НЕСЁТ ВЫКЛАДКУ (23.09, требование ядра: уравнение ответа на каждой странице):
+# «…: it is 16, because 11 + 5 = 16.» Тело судится своей рамкой отрицания, выкладка — счётом:
+# она верна точно, её итог есть названный телом ответ, и всякое её число стоит в теле ЦИФРОЙ
+# либо СЛОВОМ, названным словарями этого же суда: доля («a fifth» — 5), кратность («twice» —
+# 2), четверти («three quarters» — 3 и 4), процент — сотня. Число, не названное ни так, ни
+# этак, есть число со стороны, и выкладка с ним не пересчитывает условие.
+ХВОСТ_ПОТОМУ = re.compile(r"^(.+), because ([−\d][\d ()+−×÷]*?) = (−?\d+)\.$")
+
+
+def _названные_словом(тело):
+    """Числа, какие тело называет словом, — по словарям суда, а не списком рядом."""
+    низ = тело.lower()
+    вон = {str(v) for слово, v in {**СЛОВА_ДОЛЕЙ, **СЛОВА_КРАТНОСТИ}.items()
+           if isinstance(v, int) and re.search(rf"\b{re.escape(слово)}\b", низ)}
+    вон |= {str(v) for слово, v in СЛОВА_ЧЕТВЕРТЕЙ.items() if re.search(rf"\b{re.escape(слово)}\b", низ)}
+    if "quarter" in низ or "четверт" in низ:
+        вон.add("4")
+    if "percent" in низ or "%" in низ or "процент" in низ:
+        вон.add("100")
+    return вон
+
+
+def _счёт(выраж):
+    """Точное значение выкладки: + − × ÷, скобки, унарный минус; None — не выкладка."""
+    from fractions import Fraction
+    лексемы = re.findall(r"\d+|[+−×÷()]", выраж)
+    if "".join(лексемы) != re.sub(r"\s+", "", выраж):
+        return None
+    поз = 0
+
+    def сумма():
+        nonlocal поз
+        v = произведение()
+        while поз < len(лексемы) and лексемы[поз] in "+−":
+            зн = лексемы[поз]
+            поз += 1
+            w = произведение()
+            v = v + w if зн == "+" else v - w
+        return v
+
+    def произведение():
+        nonlocal поз
+        v = множитель()
+        while поз < len(лексемы) and лексемы[поз] in "×÷":
+            зн = лексемы[поз]
+            поз += 1
+            w = множитель()
+            v = v * w if зн == "×" else v / w
+        return v
+
+    def множитель():
+        nonlocal поз
+        л = лексемы[поз]
+        поз += 1
+        if л == "−":
+            return -множитель()
+        if л == "(":
+            v = сумма()
+            if лексемы[поз] != ")":
+                raise ValueError("скобка")
+            поз += 1
+            return v
+        return Fraction(int(л))
+
+    try:
+        v = сумма()
+    except (IndexError, ValueError, ZeroDivisionError):
+        return None
+    return v if поз == len(лексемы) else None
+
+
+def _потому_верно(тело, выраж, итог):
+    значение = _счёт(выраж)
+    if значение is None or значение != int(итог.replace("−", "-")):
+        return False
+    числа_тела = re.findall(r"−?\d+", тело)
+    if not числа_тела or числа_тела[-1] != итог:
+        return False
+    в_теле = {ч.lstrip("−") for ч in числа_тела} | _названные_словом(тело)
+    return all(ч in в_теле for ч in re.findall(r"\d+", выраж))
+
 
 def _судить(строка):
     """(судимо, истинно) для одной строки."""
@@ -992,7 +1102,14 @@ def _судить(строка):
     if м and "?" in м.group(1):
         судимо, истинно = судить(м.group(1))
         if судимо:
-            return True, истинно and м.group(2) == м.group(3)
+            хвост = м.group(1).split("? ")[-1]
+            return True, истинно and м.group(2) == м.group(3) and not _звено_или_дробь(хвост)
+    м = ХВОСТ_ПОТОМУ.match(с)
+    if м:
+        тело = м.group(1) + "."
+        судимо, истинно = судить(тело)
+        if судимо:
+            return True, истинно and _потому_верно(тело, м.group(2), м.group(3))
     for образец, проверить in ПРАВИЛА:
         м = образец.match(с)
         if м:

@@ -31,7 +31,8 @@ import pathlib
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import rugram  # noqa: E402 — счётные формы объявлены пакетом, не домом
-from gsm_items import ANIMATE, ITEMS  # noqa: E402
+from gsm_items import ITEMS  # noqa: E402
+from animacy import ANIMATE  # noqa: E402
 from layer import Сбор, emit  # noqa: E402
 from plural import by_count  # noqa: E402
 
