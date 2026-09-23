@@ -57,6 +57,10 @@ def main():
     ап.add_argument("--цель", default="datasets/GENESIS-UNIQ.txt")
     ап.add_argument("--отчёт", type=pathlib.Path, default=КОРЕНЬ / "reports" / "UNIQ-CUTS-2026-09-04.tsv")
     а = ап.parse_args()
+    # ПУТЬ ОТЧЁТА — ОТ КОРНЯ, А НЕ ОТ ТОГО, ГДЕ СТОИШЬ (23.09): относительный путь писался от
+    # текущего каталога, а печать его падала на `relative_to` уже ПОСЛЕ записи свода.
+    if not а.отчёт.is_absolute():
+        а.отчёт = КОРЕНЬ / а.отчёт
     тело, перепись = собрать()
     путь = КОРЕНЬ / а.цель
     путь.write_text(тело, encoding="utf-8")
