@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 349 миров, 485970 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 349 миров, 486148 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -629,7 +629,7 @@
 
 ## АКТ «name» — назвать: что вещь ЕСТЬ и как она зовётся
 
-Миров 25, строк 47943.
+Миров 25, строк 48121.
 
 - **`notationvar`** (10696 строк; recompute, reversibility, declared_pairs_only)  
   **one sign, two scripts: the same record written in ASCII and in typography, and the court reduces both to one canon. The corpus knew every sign in ONE script only, and in different signs** — in DIFFERENT ones: «x^2» 1702 times and «x²» ZERO, «≤» 351 and «<…
@@ -657,14 +657,14 @@
   **DEFINITIONS BY GENUS AND DIFFERENCE** — THE GENUS, THE DIFFERENCE AND FOUR QUESTIONS OF ONE FACT IN ONE LINE (the measure of the shelf, 03.09: «связка без числа» — a copula without a number — is fourteen per cent of the sentences of books, the largest kin…
 - **`inquiry_es_it`** (1480 строк; recompute, whole_only)  
   the ladder of inquiry in SPANISH and ITALIAN, with the marks those tongues require and no others: the inverted question mark that opens a Spanish question, and the accent that separates «sí» from «si»
+- **`items`** (1403 строк; recompute, declared, whole_only, unsigned_only)  
+  **THE THING NAMED BEFORE IT IS COUNTED** — declared until 12.09 in eight words.
 - **`equation`** (1366 строк; recompute, whole_only)  
   **the ladder of inquiry on equations: what a root IS, a case DECIDED by substitution with the arithmetic beside the verdict, Vieta shown as sum and product of the roots rather than a formula recited, a refusal with its ground («no whole root between 0 and 1…
-- **`mathfound`** (1304 строк; declared, recompute, finite_explicit_only)  
+- **`mathfound`** (1352 строк; declared, recompute, finite_explicit_only)  
   **ОСНОВАНИЯ МАТЕМАТИКИ И НАЗВАННЫЙ ПАДЕЖ** — ОДИН МИР, И ЭТО НЕ СЛУЧАЙНОСТЬ: функция как ОДИН ПРЕДМЕТ («функция f на множестве {1 2 3} задана правилом f(x) = 4x; f(1) = 4»), инъекция свидетелем, счётность, доказательство от противного, индукция — и рядом ше…
 - **`topics`** (1284 строк; declared, whole_only)  
   **EVERYDAY TOPICS** — what a person asks about first (the owner's order, 04.09, item 4; the BESEDA band measures this genus mute 16 of 20, and names its cause: SUBJ-UNKNOWN — the reader does not know the SUBJECT of the question.
-- **`items`** (1273 строк; recompute, declared, whole_only, unsigned_only)  
-  **THE THING NAMED BEFORE IT IS COUNTED** — declared until 12.09 in eight words.
 - **`glyphs`** (1101 строк; declared, declared_pairs_only)  
   **the glyph world v0 (embodied-reasoning mandate 02.09, L5): every symbol** — digits, Latin and Cyrillic letters of both cases, signs — as a 5×7 bit grid with a name (tools/glyphs.py, one font table that is also the court's law); shows «grid → symbol», «sym…
 - **`numlabel`** (828 строк; recompute, whole_only)  
