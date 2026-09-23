@@ -110,7 +110,7 @@ recache.установить()
            # 29 языках, страницы действия — и АРИФМЕТИКА ЯЗЫКОВОГО ПЛАСТА,
            # которая пересчитывает равенство, сказанное словами языка, вместо
            # прежнего зачёта словарём (долг судимости 03.09)
-           "search_langs_court", "remainders_langs_court", "primes_langs_court",
+           "search_langs_court", "remainders_langs_court", "primes_langs_court", "remainders_court",
            "money_story_court", "relations_story_court", "shares_percent_court",
            "chains_langs_court", "action_pages_court", "langmath_court",
            # …и ПОРОЖДЕНИЕ ПЛАСТА С ЧИСЛОМ: строка судима тем, порождается ли

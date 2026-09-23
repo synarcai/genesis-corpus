@@ -104,6 +104,8 @@ def _звено_итога(m, a, b, знак, итог):
     rf"|{С} likes the ({С})\."
     rf"|{С} looks at the ({С})\.)$")
 ПРЕДМЕТЫ = set(ITEMS) | {singular(w) for w in ITEMS}
+ПРЕДМЕТЫ_МН = frozenset(ITEMS)
+ПРЕДМЕТЫ_ЕД = frozenset(singular(w) for w in ITEMS)
 
 # РОД ВЕЩИ ОБЪЯВЛЕН РЯДОМ СО СПИСКОМ, И ПОТОМУ ПРОВЕРЯЕМ (М-103).
 # «the teacher is a thing» и «the books are here» безупречны
@@ -1060,7 +1062,13 @@ def _судить(строка, слой=None):
     m = ЖИЗНЬ.match(с)
     if m:
         слово = next(г for г in m.groups() if г)
-        return True, слово in ПРЕДМЕТЫ
+        # ЧИСЛО ИМЕНИ ГОЛОЙ РАМКИ ЕСТЬ ЕЁ УТВЕРЖДЕНИЕ (24.09, прибор [ПОКРЫТИЕ ВЕРДИКТА]): закон
+        # «is при единственном, are при множественном» объявлен выше, а судья брал любое число, и
+        # «what are the nut?» проходило. Рамки дома вещей: are, who are, likes — множественное;
+        # is a thing, is a person, what is, looks at — единственное.
+        множ = (" are " in f" {с} " or с.startswith("what are ") or с.startswith("who are ")
+                or " likes the " in с)
+        return True, слово in (ПРЕДМЕТЫ_МН if множ else ПРЕДМЕТЫ_ЕД)
     m = ЖИЗНЬ_РОДА.match(с)
     if m:
         слово = next(г for г in m.groups() if г)
