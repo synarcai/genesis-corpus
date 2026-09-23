@@ -13199,6 +13199,26 @@
       "size": 60543,
       "tiers": [],
       "text": "shows"
+    },
+    {
+      "name": "perunit",
+      "file": "datasets/genesis_perunit.txt",
+      "genre": "THE RATE PER UNIT — ONE RELATION, THREE UNKNOWNS, FOUR FORMS, TEN LANGUAGES (23.09, the lead's order through a peer, then the rate hand's «ORDER TO THE CORPUS» of 11:45; measured by its census `canon/judges/tools/rate_order_census.py` on the bake pin d382f90b and on tree 4d91732). The relation «per unit» (each / per / every) stands in 441 of the 1 422 rows of the public key, and the reader does not buy it: the rate word was bought as a PRONOUN, and «each bag has 41 cookies» is answered with 41. The market buys a relation by the EQUALITY OF THE PAGE, and beside the rate word the corpus wrote almost none: total = rate × units with an equation — en 98, de 19, NONE in ru, uk, fr, it, es, pt, nl, pl; units = total ÷ rate — about 96 per language, all from one house; rate = total ÷ units — NONE in any language. THE RATE WORD IS THE HEAD OF A UNIT, NOT A BEARER: «each box has 6 apples» speaks of EVERY box, and 6 is the measure of a box. On every triple (rate a, units b, total c = a·b) the house asks all three questions — the total («each box has 6 apples. how many apples are in 4 boxes? 24 apples: 4 × 6 = 24.»), the number of units («24 apples are packed into boxes, 6 apples in each box. how many boxes are there? 4 boxes: 24 ÷ 6 = 4.») and the rate itself («24 apples are packed equally into 4 boxes. how many apples are in each box? 6 apples: 24 ÷ 4 = 6.»); four forms of the rate: the rate word BEFORE the number (C1 «each box has 6 apples»), AFTER it (C2 «there are 6 apples in each box»), PER a unit that is not time (C3 «6 apples per box», «на коробку приходится 6 яблок») and the price EACH after the price (C4 «4 apples are sold at 3 dollars each»; the question of the price carries the rate word at the good: «how much does each apple cost?»); C1 against C2 is a minimal pair by the place of the rate word, C3 against C2 by the word itself. Polish and Ukrainian verbs agree with the cell of their number («są 3 jabłka», «jest 6 jabłek»; «3 jabłka kosztują», «5 jabłek kosztuje»). The operation is taken from THE QUESTION. Rate 3…9, units 2…9, rate ≠ units (else the two divisions give one number and the page does not say which was asked). The goods, the currency and the pack's counting rule are the door of goods (`priceforms`; Ukrainian goods in its table of languages without a price frame); the container of each good (a box of apples, a shelf of books, a case of pencils) is declared in the forms its language bends — the case is WRITTEN, not derived (tools/perunitforms.py). CLOSED world.",
+      "act": [
+        "compute"
+      ],
+      "oracle": [
+        "recompute"
+      ],
+      "boundary": [
+        "whole_only",
+        "exact_only"
+      ],
+      "actors": "",
+      "text": "shows",
+      "assemblies": [
+        "school"
+      ]
     }
   ]
 }
