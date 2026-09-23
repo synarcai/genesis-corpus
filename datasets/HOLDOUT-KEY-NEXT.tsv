@@ -2685,77 +2685,77 @@ tak: żadna zasada nie zabrania przenoszenia	pierwsza zasada: nie usuwaj plików
 140	wydałem 37 zł. zostało mi 103 zł. ile pieniędzy miałem na wstępie?	140 zł: 103 + 37 = 140.	beforetails · потратил
 160	wydałem 43 zł. zostało mi 117 zł. ile pieniędzy miałem przedtem?	160 zł: 117 + 43 = 160.	beforetails · потратил
 66	каждая бутылка стоит 103 ₽. скидка 37 ₽ на каждую бутылку. сколько платить за одну бутылку?	66 ₽: 103 − 37 = 66.	discountroad · цена_со_скидкой
-198	каждая бутылка стоит 103 ₽. скидка 37 ₽ на каждую бутылку. сколько платить за 3 бутылки?	198 ₽: 3 × 66 = 198.	discountroad · счёт_со_скидкой
+198	каждая бутылка стоит 103 ₽. скидка 37 ₽ на каждую бутылку. сколько платить за 3 бутылки?	198 ₽: 103 − 37 = 66, 3 × 66 = 198.	discountroad · счёт_со_скидкой
 4	каждая бутылка стоит 103 ₽. скидка 37 ₽ на каждую бутылку. сколько бутылок можно купить за 412 ₽?	4 бутылки: 412 ÷ 103 = 4.	discountroad · сколько_за_сумму
-5	каждая бутылка стоит 103 ₽. скидка 37 ₽ на каждую бутылку. сколько бутылок можно купить за 330 ₽?	5 бутылок: 330 ÷ 66 = 5.	discountroad · сколько_со_скидкой
+5	каждая бутылка стоит 103 ₽. скидка 37 ₽ на каждую бутылку. сколько бутылок можно купить за 330 ₽?	5 бутылок: 103 − 37 = 66, 330 ÷ 66 = 5.	discountroad · сколько_со_скидкой
 68	каждый стакан стоит 111 ₽. скидка 43 ₽ на каждый стакан. сколько платить за один стакан?	68 ₽: 111 − 43 = 68.	discountroad · цена_со_скидкой
-204	каждый стакан стоит 111 ₽. скидка 43 ₽ на каждый стакан. сколько платить за 3 стакана?	204 ₽: 3 × 68 = 204.	discountroad · счёт_со_скидкой
+204	каждый стакан стоит 111 ₽. скидка 43 ₽ на каждый стакан. сколько платить за 3 стакана?	204 ₽: 111 − 43 = 68, 3 × 68 = 204.	discountroad · счёт_со_скидкой
 4	каждый стакан стоит 111 ₽. скидка 43 ₽ на каждый стакан. сколько стаканов можно купить за 444 ₽?	4 стакана: 444 ÷ 111 = 4.	discountroad · сколько_за_сумму
-5	каждый стакан стоит 111 ₽. скидка 43 ₽ на каждый стакан. сколько стаканов можно купить за 340 ₽?	5 стаканов: 340 ÷ 68 = 5.	discountroad · сколько_со_скидкой
+5	каждый стакан стоит 111 ₽. скидка 43 ₽ на каждый стакан. сколько стаканов можно купить за 340 ₽?	5 стаканов: 111 − 43 = 68, 340 ÷ 68 = 5.	discountroad · сколько_со_скидкой
 66	each bottle costs $103. the discount is $37 on each bottle. how much is paid for one bottle?	$66: 103 − 37 = 66.	discountroad · цена_со_скидкой
-198	each bottle costs $103. the discount is $37 on each bottle. how much is paid for 3 bottles?	$198: 3 × 66 = 198.	discountroad · счёт_со_скидкой
+198	each bottle costs $103. the discount is $37 on each bottle. how much is paid for 3 bottles?	$198: 103 − 37 = 66, 3 × 66 = 198.	discountroad · счёт_со_скидкой
 4	each bottle costs $103. the discount is $37 on each bottle. how many bottles can be bought for $412?	4 bottles: 412 ÷ 103 = 4.	discountroad · сколько_за_сумму
-5	each bottle costs $103. the discount is $37 on each bottle. how many bottles can be bought for $330?	5 bottles: 330 ÷ 66 = 5.	discountroad · сколько_со_скидкой
+5	each bottle costs $103. the discount is $37 on each bottle. how many bottles can be bought for $330?	5 bottles: 103 − 37 = 66, 330 ÷ 66 = 5.	discountroad · сколько_со_скидкой
 68	each glass costs $111. the discount is $43 on each glass. how much is paid for one glass?	$68: 111 − 43 = 68.	discountroad · цена_со_скидкой
-204	each glass costs $111. the discount is $43 on each glass. how much is paid for 3 glasses?	$204: 3 × 68 = 204.	discountroad · счёт_со_скидкой
+204	each glass costs $111. the discount is $43 on each glass. how much is paid for 3 glasses?	$204: 111 − 43 = 68, 3 × 68 = 204.	discountroad · счёт_со_скидкой
 4	each glass costs $111. the discount is $43 on each glass. how many glasses can be bought for $444?	4 glasses: 444 ÷ 111 = 4.	discountroad · сколько_за_сумму
-5	each glass costs $111. the discount is $43 on each glass. how many glasses can be bought for $340?	5 glasses: 340 ÷ 68 = 5.	discountroad · сколько_со_скидкой
+5	each glass costs $111. the discount is $43 on each glass. how many glasses can be bought for $340?	5 glasses: 111 − 43 = 68, 340 ÷ 68 = 5.	discountroad · сколько_со_скидкой
 66	jede Flasche kostet 103 €. der Rabatt beträgt 37 € auf jede Flasche. wie viel zahlt man für eine Flasche?	66 €: 103 − 37 = 66.	discountroad · цена_со_скидкой
-198	jede Flasche kostet 103 €. der Rabatt beträgt 37 € auf jede Flasche. wie viel zahlt man für 3 Flaschen?	198 €: 3 × 66 = 198.	discountroad · счёт_со_скидкой
+198	jede Flasche kostet 103 €. der Rabatt beträgt 37 € auf jede Flasche. wie viel zahlt man für 3 Flaschen?	198 €: 103 − 37 = 66, 3 × 66 = 198.	discountroad · счёт_со_скидкой
 4	jede Flasche kostet 103 €. der Rabatt beträgt 37 € auf jede Flasche. wie viele Flaschen kann man für 412 € kaufen?	4 Flaschen: 412 ÷ 103 = 4.	discountroad · сколько_за_сумму
-5	jede Flasche kostet 103 €. der Rabatt beträgt 37 € auf jede Flasche. wie viele Flaschen kann man für 330 € kaufen?	5 Flaschen: 330 ÷ 66 = 5.	discountroad · сколько_со_скидкой
+5	jede Flasche kostet 103 €. der Rabatt beträgt 37 € auf jede Flasche. wie viele Flaschen kann man für 330 € kaufen?	5 Flaschen: 103 − 37 = 66, 330 ÷ 66 = 5.	discountroad · сколько_со_скидкой
 68	jede Tasse kostet 111 €. der Rabatt beträgt 43 € auf jede Tasse. wie viel zahlt man für eine Tasse?	68 €: 111 − 43 = 68.	discountroad · цена_со_скидкой
-204	jede Tasse kostet 111 €. der Rabatt beträgt 43 € auf jede Tasse. wie viel zahlt man für 3 Tassen?	204 €: 3 × 68 = 204.	discountroad · счёт_со_скидкой
+204	jede Tasse kostet 111 €. der Rabatt beträgt 43 € auf jede Tasse. wie viel zahlt man für 3 Tassen?	204 €: 111 − 43 = 68, 3 × 68 = 204.	discountroad · счёт_со_скидкой
 4	jede Tasse kostet 111 €. der Rabatt beträgt 43 € auf jede Tasse. wie viele Tassen kann man für 444 € kaufen?	4 Tassen: 444 ÷ 111 = 4.	discountroad · сколько_за_сумму
-5	jede Tasse kostet 111 €. der Rabatt beträgt 43 € auf jede Tasse. wie viele Tassen kann man für 340 € kaufen?	5 Tassen: 340 ÷ 68 = 5.	discountroad · сколько_со_скидкой
+5	jede Tasse kostet 111 €. der Rabatt beträgt 43 € auf jede Tasse. wie viele Tassen kann man für 340 € kaufen?	5 Tassen: 111 − 43 = 68, 340 ÷ 68 = 5.	discountroad · сколько_со_скидкой
 66	chaque flacon coûte 103 €. la remise est de 37 € sur chaque flacon. combien paie-t-on pour un flacon ?	66 € : 103 − 37 = 66.	discountroad · цена_со_скидкой
-198	chaque flacon coûte 103 €. la remise est de 37 € sur chaque flacon. combien paie-t-on pour 3 flacons ?	198 € : 3 × 66 = 198.	discountroad · счёт_со_скидкой
+198	chaque flacon coûte 103 €. la remise est de 37 € sur chaque flacon. combien paie-t-on pour 3 flacons ?	198 € : 103 − 37 = 66, 3 × 66 = 198.	discountroad · счёт_со_скидкой
 4	chaque flacon coûte 103 €. la remise est de 37 € sur chaque flacon. combien de flacons peut-on acheter pour 412 € ?	4 flacons : 412 ÷ 103 = 4.	discountroad · сколько_за_сумму
-5	chaque flacon coûte 103 €. la remise est de 37 € sur chaque flacon. combien de flacons peut-on acheter pour 330 € ?	5 flacons : 330 ÷ 66 = 5.	discountroad · сколько_со_скидкой
+5	chaque flacon coûte 103 €. la remise est de 37 € sur chaque flacon. combien de flacons peut-on acheter pour 330 € ?	5 flacons : 103 − 37 = 66, 330 ÷ 66 = 5.	discountroad · сколько_со_скидкой
 68	chaque gobelet coûte 111 €. la remise est de 43 € sur chaque gobelet. combien paie-t-on pour un gobelet ?	68 € : 111 − 43 = 68.	discountroad · цена_со_скидкой
-204	chaque gobelet coûte 111 €. la remise est de 43 € sur chaque gobelet. combien paie-t-on pour 3 gobelets ?	204 € : 3 × 68 = 204.	discountroad · счёт_со_скидкой
+204	chaque gobelet coûte 111 €. la remise est de 43 € sur chaque gobelet. combien paie-t-on pour 3 gobelets ?	204 € : 111 − 43 = 68, 3 × 68 = 204.	discountroad · счёт_со_скидкой
 4	chaque gobelet coûte 111 €. la remise est de 43 € sur chaque gobelet. combien de gobelets peut-on acheter pour 444 € ?	4 gobelets : 444 ÷ 111 = 4.	discountroad · сколько_за_сумму
-5	chaque gobelet coûte 111 €. la remise est de 43 € sur chaque gobelet. combien de gobelets peut-on acheter pour 340 € ?	5 gobelets : 340 ÷ 68 = 5.	discountroad · сколько_со_скидкой
+5	chaque gobelet coûte 111 €. la remise est de 43 € sur chaque gobelet. combien de gobelets peut-on acheter pour 340 € ?	5 gobelets : 111 − 43 = 68, 340 ÷ 68 = 5.	discountroad · сколько_со_скидкой
 66	cada frasco cuesta 103 €. el descuento es de 37 € en cada frasco. ¿cuánto se paga por un frasco?	66 €: 103 − 37 = 66.	discountroad · цена_со_скидкой
-198	cada frasco cuesta 103 €. el descuento es de 37 € en cada frasco. ¿cuánto se paga por 3 frascos?	198 €: 3 × 66 = 198.	discountroad · счёт_со_скидкой
+198	cada frasco cuesta 103 €. el descuento es de 37 € en cada frasco. ¿cuánto se paga por 3 frascos?	198 €: 103 − 37 = 66, 3 × 66 = 198.	discountroad · счёт_со_скидкой
 4	cada frasco cuesta 103 €. el descuento es de 37 € en cada frasco. ¿cuántos frascos se pueden comprar por 412 €?	4 frascos: 412 ÷ 103 = 4.	discountroad · сколько_за_сумму
-5	cada frasco cuesta 103 €. el descuento es de 37 € en cada frasco. ¿cuántos frascos se pueden comprar por 330 €?	5 frascos: 330 ÷ 66 = 5.	discountroad · сколько_со_скидкой
+5	cada frasco cuesta 103 €. el descuento es de 37 € en cada frasco. ¿cuántos frascos se pueden comprar por 330 €?	5 frascos: 103 − 37 = 66, 330 ÷ 66 = 5.	discountroad · сколько_со_скидкой
 68	cada vaso cuesta 111 €. el descuento es de 43 € en cada vaso. ¿cuánto se paga por un vaso?	68 €: 111 − 43 = 68.	discountroad · цена_со_скидкой
-204	cada vaso cuesta 111 €. el descuento es de 43 € en cada vaso. ¿cuánto se paga por 3 vasos?	204 €: 3 × 68 = 204.	discountroad · счёт_со_скидкой
+204	cada vaso cuesta 111 €. el descuento es de 43 € en cada vaso. ¿cuánto se paga por 3 vasos?	204 €: 111 − 43 = 68, 3 × 68 = 204.	discountroad · счёт_со_скидкой
 4	cada vaso cuesta 111 €. el descuento es de 43 € en cada vaso. ¿cuántos vasos se pueden comprar por 444 €?	4 vasos: 444 ÷ 111 = 4.	discountroad · сколько_за_сумму
-5	cada vaso cuesta 111 €. el descuento es de 43 € en cada vaso. ¿cuántos vasos se pueden comprar por 340 €?	5 vasos: 340 ÷ 68 = 5.	discountroad · сколько_со_скидкой
+5	cada vaso cuesta 111 €. el descuento es de 43 € en cada vaso. ¿cuántos vasos se pueden comprar por 340 €?	5 vasos: 111 − 43 = 68, 340 ÷ 68 = 5.	discountroad · сколько_со_скидкой
 66	ogni flacone costa 103 €. lo sconto è di 37 € su ogni flacone. quanto si paga per un flacone?	66 €: 103 − 37 = 66.	discountroad · цена_со_скидкой
-198	ogni flacone costa 103 €. lo sconto è di 37 € su ogni flacone. quanto si paga per 3 flaconi?	198 €: 3 × 66 = 198.	discountroad · счёт_со_скидкой
+198	ogni flacone costa 103 €. lo sconto è di 37 € su ogni flacone. quanto si paga per 3 flaconi?	198 €: 103 − 37 = 66, 3 × 66 = 198.	discountroad · счёт_со_скидкой
 4	ogni flacone costa 103 €. lo sconto è di 37 € su ogni flacone. quanti flaconi si possono comprare con 412 €?	4 flaconi: 412 ÷ 103 = 4.	discountroad · сколько_за_сумму
-5	ogni flacone costa 103 €. lo sconto è di 37 € su ogni flacone. quanti flaconi si possono comprare con 330 €?	5 flaconi: 330 ÷ 66 = 5.	discountroad · сколько_со_скидкой
+5	ogni flacone costa 103 €. lo sconto è di 37 € su ogni flacone. quanti flaconi si possono comprare con 330 €?	5 flaconi: 103 − 37 = 66, 330 ÷ 66 = 5.	discountroad · сколько_со_скидкой
 68	ogni bicchiere costa 111 €. lo sconto è di 43 € su ogni bicchiere. quanto si paga per un bicchiere?	68 €: 111 − 43 = 68.	discountroad · цена_со_скидкой
-204	ogni bicchiere costa 111 €. lo sconto è di 43 € su ogni bicchiere. quanto si paga per 3 bicchieri?	204 €: 3 × 68 = 204.	discountroad · счёт_со_скидкой
+204	ogni bicchiere costa 111 €. lo sconto è di 43 € su ogni bicchiere. quanto si paga per 3 bicchieri?	204 €: 111 − 43 = 68, 3 × 68 = 204.	discountroad · счёт_со_скидкой
 4	ogni bicchiere costa 111 €. lo sconto è di 43 € su ogni bicchiere. quanti bicchieri si possono comprare con 444 €?	4 bicchieri: 444 ÷ 111 = 4.	discountroad · сколько_за_сумму
-5	ogni bicchiere costa 111 €. lo sconto è di 43 € su ogni bicchiere. quanti bicchieri si possono comprare con 340 €?	5 bicchieri: 340 ÷ 68 = 5.	discountroad · сколько_со_скидкой
+5	ogni bicchiere costa 111 €. lo sconto è di 43 € su ogni bicchiere. quanti bicchieri si possono comprare con 340 €?	5 bicchieri: 111 − 43 = 68, 340 ÷ 68 = 5.	discountroad · сколько_со_скидкой
 66	cada frasco custa 103 €. o desconto é de 37 € em cada frasco. quanto se paga por um frasco?	66 €: 103 − 37 = 66.	discountroad · цена_со_скидкой
-198	cada frasco custa 103 €. o desconto é de 37 € em cada frasco. quanto se paga por 3 frascos?	198 €: 3 × 66 = 198.	discountroad · счёт_со_скидкой
+198	cada frasco custa 103 €. o desconto é de 37 € em cada frasco. quanto se paga por 3 frascos?	198 €: 103 − 37 = 66, 3 × 66 = 198.	discountroad · счёт_со_скидкой
 4	cada frasco custa 103 €. o desconto é de 37 € em cada frasco. quantos frascos se podem comprar por 412 €?	4 frascos: 412 ÷ 103 = 4.	discountroad · сколько_за_сумму
-5	cada frasco custa 103 €. o desconto é de 37 € em cada frasco. quantos frascos se podem comprar por 330 €?	5 frascos: 330 ÷ 66 = 5.	discountroad · сколько_со_скидкой
+5	cada frasco custa 103 €. o desconto é de 37 € em cada frasco. quantos frascos se podem comprar por 330 €?	5 frascos: 103 − 37 = 66, 330 ÷ 66 = 5.	discountroad · сколько_со_скидкой
 68	cada copo custa 111 €. o desconto é de 43 € em cada copo. quanto se paga por um copo?	68 €: 111 − 43 = 68.	discountroad · цена_со_скидкой
-204	cada copo custa 111 €. o desconto é de 43 € em cada copo. quanto se paga por 3 copos?	204 €: 3 × 68 = 204.	discountroad · счёт_со_скидкой
+204	cada copo custa 111 €. o desconto é de 43 € em cada copo. quanto se paga por 3 copos?	204 €: 111 − 43 = 68, 3 × 68 = 204.	discountroad · счёт_со_скидкой
 4	cada copo custa 111 €. o desconto é de 43 € em cada copo. quantos copos se podem comprar por 444 €?	4 copos: 444 ÷ 111 = 4.	discountroad · сколько_за_сумму
-5	cada copo custa 111 €. o desconto é de 43 € em cada copo. quantos copos se podem comprar por 340 €?	5 copos: 340 ÷ 68 = 5.	discountroad · сколько_со_скидкой
+5	cada copo custa 111 €. o desconto é de 43 € em cada copo. quantos copos se podem comprar por 340 €?	5 copos: 111 − 43 = 68, 340 ÷ 68 = 5.	discountroad · сколько_со_скидкой
 66	elk flesje kost 103 €. de korting is 37 € op elk flesje. hoeveel betaalt men voor één flesje?	66 €: 103 − 37 = 66.	discountroad · цена_со_скидкой
-198	elk flesje kost 103 €. de korting is 37 € op elk flesje. hoeveel betaalt men voor 3 flesjes?	198 €: 3 × 66 = 198.	discountroad · счёт_со_скидкой
+198	elk flesje kost 103 €. de korting is 37 € op elk flesje. hoeveel betaalt men voor 3 flesjes?	198 €: 103 − 37 = 66, 3 × 66 = 198.	discountroad · счёт_со_скидкой
 4	elk flesje kost 103 €. de korting is 37 € op elk flesje. hoeveel flesjes kan men kopen voor 412 €?	4 flesjes: 412 ÷ 103 = 4.	discountroad · сколько_за_сумму
-5	elk flesje kost 103 €. de korting is 37 € op elk flesje. hoeveel flesjes kan men kopen voor 330 €?	5 flesjes: 330 ÷ 66 = 5.	discountroad · сколько_со_скидкой
+5	elk flesje kost 103 €. de korting is 37 € op elk flesje. hoeveel flesjes kan men kopen voor 330 €?	5 flesjes: 103 − 37 = 66, 330 ÷ 66 = 5.	discountroad · сколько_со_скидкой
 68	elk kopje kost 111 €. de korting is 43 € op elk kopje. hoeveel betaalt men voor één kopje?	68 €: 111 − 43 = 68.	discountroad · цена_со_скидкой
-204	elk kopje kost 111 €. de korting is 43 € op elk kopje. hoeveel betaalt men voor 3 kopjes?	204 €: 3 × 68 = 204.	discountroad · счёт_со_скидкой
+204	elk kopje kost 111 €. de korting is 43 € op elk kopje. hoeveel betaalt men voor 3 kopjes?	204 €: 111 − 43 = 68, 3 × 68 = 204.	discountroad · счёт_со_скидкой
 4	elk kopje kost 111 €. de korting is 43 € op elk kopje. hoeveel kopjes kan men kopen voor 444 €?	4 kopjes: 444 ÷ 111 = 4.	discountroad · сколько_за_сумму
-5	elk kopje kost 111 €. de korting is 43 € op elk kopje. hoeveel kopjes kan men kopen voor 340 €?	5 kopjes: 340 ÷ 68 = 5.	discountroad · сколько_со_скидкой
+5	elk kopje kost 111 €. de korting is 43 € op elk kopje. hoeveel kopjes kan men kopen voor 340 €?	5 kopjes: 111 − 43 = 68, 340 ÷ 68 = 5.	discountroad · сколько_со_скидкой
 66	każda butelka kosztuje 103 zł. rabat wynosi 37 zł na każdą butelkę. ile płaci się za jedną butelkę?	66 zł: 103 − 37 = 66.	discountroad · цена_со_скидкой
-198	każda butelka kosztuje 103 zł. rabat wynosi 37 zł na każdą butelkę. ile płaci się za 3 butelki?	198 zł: 3 × 66 = 198.	discountroad · счёт_со_скидкой
+198	każda butelka kosztuje 103 zł. rabat wynosi 37 zł na każdą butelkę. ile płaci się za 3 butelki?	198 zł: 103 − 37 = 66, 3 × 66 = 198.	discountroad · счёт_со_скидкой
 4	każda butelka kosztuje 103 zł. rabat wynosi 37 zł na każdą butelkę. ile butelek można kupić za 412 zł?	4 butelki: 412 ÷ 103 = 4.	discountroad · сколько_за_сумму
-5	każda butelka kosztuje 103 zł. rabat wynosi 37 zł na każdą butelkę. ile butelek można kupić za 330 zł?	5 butelek: 330 ÷ 66 = 5.	discountroad · сколько_со_скидкой
+5	każda butelka kosztuje 103 zł. rabat wynosi 37 zł na każdą butelkę. ile butelek można kupić za 330 zł?	5 butelek: 103 − 37 = 66, 330 ÷ 66 = 5.	discountroad · сколько_со_скидкой
 68	każdy kubek kosztuje 111 zł. rabat wynosi 43 zł na każdy kubek. ile płaci się za jeden kubek?	68 zł: 111 − 43 = 68.	discountroad · цена_со_скидкой
-204	każdy kubek kosztuje 111 zł. rabat wynosi 43 zł na każdy kubek. ile płaci się za 3 kubki?	204 zł: 3 × 68 = 204.	discountroad · счёт_со_скидкой
+204	każdy kubek kosztuje 111 zł. rabat wynosi 43 zł na każdy kubek. ile płaci się za 3 kubki?	204 zł: 111 − 43 = 68, 3 × 68 = 204.	discountroad · счёт_со_скидкой
 4	każdy kubek kosztuje 111 zł. rabat wynosi 43 zł na każdy kubek. ile kubków można kupić za 444 zł?	4 kubki: 444 ÷ 111 = 4.	discountroad · сколько_за_сумму
-5	każdy kubek kosztuje 111 zł. rabat wynosi 43 zł na każdy kubek. ile kubków można kupić za 340 zł?	5 kubków: 340 ÷ 68 = 5.	discountroad · сколько_со_скидкой
+5	każdy kubek kosztuje 111 zł. rabat wynosi 43 zł na każdy kubek. ile kubków można kupić za 340 zł?	5 kubków: 111 − 43 = 68, 340 ÷ 68 = 5.	discountroad · сколько_со_скидкой
 27	в папке 27 файлов. сколько файлов в папке?	в папке 27 файлов.	nomention · место_названо
 не знаю: о ящике не сказано	в папке 27 файлов. сколько файлов в ящике?	не знаю: о ящике не сказано.	nomention · место_чужое
 не знаю: о записях не сказано	в папке 27 файлов. сколько записей в папке?	не знаю: о записях не сказано.	nomention · вещь_чужая

@@ -198,7 +198,7 @@ def числа(шаг):
                        f"of {много} is {один}.")
     for один, много in sorted(units.МН_ИСКЛЮЧЕНИЯ.items()):
         вон.append(f"the plural of {один} is {много}, not "
-                   f"{один + 's'}: it does not follow the rule.")
+                   f"{units.мн_без_исключений(один)}: it does not follow the rule.")
     вон.extend(_числа_ру(шаг))
     return вон
 

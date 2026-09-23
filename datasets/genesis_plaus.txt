@@ -1,817 +1,517 @@
-ученик весит 72 килограмма, и это правдоподобно: 72 больше 10, и 72 меньше 100.
-счёт сошёлся, а ответ невозможен: 2 × 2160 = 4320, и 4320 больше 1000.
-счёт сошёлся, а ответ невозможен: 2 × 363 = 726, и 726 больше 200.
-счёт сошёлся, а ответ невозможен: 2 × 957 = 1914, и 1914 больше 200.
-счёт сошёлся, а ответ невозможен: 2 × 4320 = 8640, и 8640 больше 3000.
-ученик весит 33 килограмма, и это правдоподобно: 33 больше 10, и 33 меньше 100.
-ученик весит 87 килограммов, и это правдоподобно: 87 больше 10, и 87 меньше 100.
-книга несёт 480 страниц, и это правдоподобно: 480 больше 10, и 480 меньше 1000.
-счёт сошёлся, а ответ невозможен: 2 × 480 = 960, и 960 больше 200.
-счёт сошёлся, а ответ невозможен: 2 × 1815 = 3630, и 3630 больше 3000.
-счёт сошёлся, а ответ невозможен: 2 × 4785 = 9570, и 9570 больше 3000.
-ученик весит 48 килограммов, и это правдоподобно: 48 больше 10, и 48 меньше 100.
-книга несёт 220 страниц, и это правдоподобно: 220 больше 10, и 220 меньше 1000.
-книга несёт 580 страниц, и это правдоподобно: 580 больше 10, и 580 меньше 1000.
-счёт сошёлся, а ответ невозможен: 2 × 756 = 1512, и 1512 больше 200.
-счёт сошёлся, а ответ невозможен: 2 × 2400 = 4800, и 4800 больше 3000.
-счёт сошёлся, а ответ невозможен: 2 × 5100 = 10200, и 10200 больше 3000.
-ученик весит 63 килограмма, и это правдоподобно: 63 больше 10, и 63 меньше 100.
-книга несёт 320 страниц, и это правдоподобно: 320 больше 10, и 320 меньше 1000.
-книга несёт 680 страниц, и это правдоподобно: 680 больше 10, и 680 меньше 1000.
-ученик делает 162 шага, и это правдоподобно: 162 больше 10, и 162 меньше 200.
-счёт сошёлся, а ответ невозможен: 2 × 3780 = 7560, и 7560 больше 3000.
-ученик прожил 17 лет, и это правдоподобно: 17 больше 6, и 17 меньше 18.
-счёт сошёлся, а ответ невозможен: 2 × 429 = 858, и 858 больше 100.
-книга несёт 420 страниц, и это правдоподобно: 420 больше 10, и 420 меньше 1000.
-ученик делает 84 шага, и это правдоподобно: 84 больше 10, и 84 меньше 200.
-ученик делает 192 шага, и это правдоподобно: 192 больше 10, и 192 меньше 200.
-книга стоит 810 рублей, и это правдоподобно: 810 больше 10, и 810 меньше 3000.
-счёт сошёлся, а ответ невозможен: 2 × 195 = 390, и 390 больше 100.
-счёт сошёлся, а ответ невозможен: 2 × 465 = 930, и 930 больше 100.
-счёт сошёлся, а ответ невозможен: 2 × 2860 = 5720, и 5720 больше 1000.
-ученик делает 114 шагов, и это правдоподобно: 114 больше 10, и 114 меньше 200.
-книга стоит 420 рублей, и это правдоподобно: 420 больше 10, и 420 меньше 3000.
-книга стоит 960 рублей, и это правдоподобно: 960 больше 10, и 960 меньше 3000.
-счёт сошёлся, а ответ невозможен: 2 × 324 = 648, и 648 больше 100.
-счёт сошёлся, а ответ невозможен: 2 × 1300 = 2600, и 2600 больше 1000.
-счёт сошёлся, а ответ невозможен: 2 × 3100 = 6200, и 6200 больше 1000.
-счёт сошёлся, а ответ невозможен: 2 × 864 = 1728, и 1728 больше 200.
-книга стоит 570 рублей, и это правдоподобно: 570 больше 10, и 570 меньше 3000.
-счёт сошёлся, а ответ невозможен: 2 × 84 = 168, и 168 больше 18.
+4 ученика весят вместе 108 килограммов, и ответ «ученик весит 432 килограмма» невозможен: один ученик весит меньше, чем 4 ученика вместе, хоть счёт и сошёлся: 108 × 4 = 432, и 432 больше 108.
+ребёнок обычно спит больше 8 и меньше 14 часов в сутки, и 11 часов в сутки — это правдоподобно: 11 больше 8, и 11 меньше 14.
+ребёнок спит 72 часа за 6 дней, и ответ «ребёнок спит 432 часа в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 72 × 6 = 432, и 432 больше 24.
+ученик ходит в школу 66 дней за 11 недель, и ответ «ученик ходит в школу 726 дней в неделю» невозможен: в неделе 7 дней, хоть счёт и сошёлся: 66 × 11 = 726, и 726 больше 7.
+ученик обычно весит больше 20 и меньше 90 килограммов, и 51 килограмм — это правдоподобно: 51 больше 20, и 51 меньше 90.
+рост ученика обычно больше 110 и меньше 190 сантиметров, и 168 сантиметров — это правдоподобно: 168 больше 110, и 168 меньше 190.
+ребёнок спит 22 часа за 2 дня, и ответ «ребёнок спит 44 часа в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 22 × 2 = 44, и 44 больше 24.
+ученик ходит в школу 35 дней за 7 недель, и ответ «ученик ходит в школу 245 дней в неделю» невозможен: в неделе 7 дней, хоть счёт и сошёлся: 35 × 7 = 245, и 245 больше 7.
+ученик ходит в школу 120 месяцев за 12 лет, и ответ «ученик ходит в школу 1440 месяцев в году» невозможен: в году 12 месяцев, хоть счёт и сошёлся: 120 × 12 = 1440, и 1440 больше 12.
+3 ученика весят вместе 171 килограмм, и ответ «ученик весит 513 килограммов» невозможен: один ученик весит меньше, чем 3 ученика вместе, хоть счёт и сошёлся: 171 × 3 = 513, и 513 больше 171.
+ребёнок спит 81 час за 9 дней, и ответ «ребёнок спит 729 часов в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 81 × 9 = 729, и 729 больше 24.
+ребёнок спит 65 часов за 5 дней, и ответ «ребёнок спит 325 часов в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 65 × 5 = 325, и 325 больше 24.
+ученик ходит в школу 72 месяца за 8 лет, и ответ «ученик ходит в школу 576 месяцев в году» невозможен: в году 12 месяцев, хоть счёт и сошёлся: 72 × 8 = 576, и 576 больше 12.
+ученик обычно весит больше 20 и меньше 90 килограммов, и 81 килограмм — это правдоподобно: 81 больше 20, и 81 меньше 90.
+ученику обычно больше 6 и меньше 18 лет, и 15 лет — это правдоподобно: 15 больше 6, и 15 меньше 18.
+ребёнок спит 132 часа за 12 дней, и ответ «ребёнок спит 1584 часа в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 132 × 12 = 1584, и 1584 больше 24.
+ученик ходит в школу 36 дней за 6 недель, и ответ «ученик ходит в школу 216 дней в неделю» невозможен: в неделе 7 дней, хоть счёт и сошёлся: 36 × 6 = 216, и 216 больше 7.
+ученик обычно весит больше 20 и меньше 90 килограммов, и 36 килограммов — это правдоподобно: 36 больше 20, и 36 меньше 90.
+2 ученика весят вместе 174 килограмма, и ответ «ученик весит 348 килограммов» невозможен: один ученик весит меньше, чем 2 ученика вместе, хоть счёт и сошёлся: 174 × 2 = 348, и 348 больше 174.
+ребёнок спит 80 часов за 8 дней, и ответ «ребёнок спит 640 часов в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 80 × 8 = 640, и 640 больше 24.
+ученик ходит в школу 10 дней за 2 недели, и ответ «ученик ходит в школу 20 дней в неделю» невозможен: в неделе 7 дней, хоть счёт и сошёлся: 10 × 2 = 20, и 20 больше 7.
+ученик ходит в школу 70 месяцев за 7 лет, и ответ «ученик ходит в школу 490 месяцев в году» невозможен: в году 12 месяцев, хоть счёт и сошёлся: 70 × 7 = 490, и 490 больше 12.
+9 учеников весят вместе 378 килограммов, и ответ «ученик весит 3402 килограмма» невозможен: один ученик весит меньше, чем 9 учеников вместе, хоть счёт и сошёлся: 378 × 9 = 3402, и 3402 больше 378.
+ребёнок спит 36 часов за 4 дня, и ответ «ребёнок спит 144 часа в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 36 × 4 = 144, и 144 больше 24.
+ребёнок спит 132 часа за 11 дней, и ответ «ребёнок спит 1452 часа в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 132 × 11 = 1452, и 1452 больше 24.
+ученик ходит в школу 27 месяцев за 3 года, и ответ «ученик ходит в школу 81 месяц в году» невозможен: в году 12 месяцев, хоть счёт и сошёлся: 27 × 3 = 81, и 81 больше 12.
+ученик обычно весит больше 20 и меньше 90 килограммов, и 66 килограммов — это правдоподобно: 66 больше 20, и 66 меньше 90.
+ученику обычно больше 6 и меньше 18 лет, и 10 лет — это правдоподобно: 10 больше 6, и 10 меньше 18.
+ребёнок спит 77 часов за 7 дней, и ответ «ребёнок спит 539 часов в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 77 × 7 = 539, и 539 больше 24.
+ученик ходит в школу 60 дней за 12 недель, и ответ «ученик ходит в школу 720 дней в неделю» невозможен: в неделе 7 дней, хоть счёт и сошёлся: 60 × 12 = 720, и 720 больше 7.
+ученик обычно весит больше 20 и меньше 90 килограммов, и 21 килограмм — это правдоподобно: 21 больше 20, и 21 меньше 90.
+8 учеников весят вместе 576 килограммов, и ответ «ученик весит 4608 килограммов» невозможен: один ученик весит меньше, чем 8 учеников вместе, хоть счёт и сошёлся: 576 × 8 = 4608, и 4608 больше 576.
+ребёнок спит 30 часов за 3 дня, и ответ «ребёнок спит 90 часов в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 30 × 3 = 90, и 90 больше 24.
+ребёнок спит 130 часов за 10 дней, и ответ «ребёнок спит 1300 часов в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 130 × 10 = 1300, и 1300 больше 24.
+ученик ходит в школу 20 месяцев за 2 года, и ответ «ученик ходит в школу 40 месяцев в году» невозможен: в году 12 месяцев, хоть счёт и сошёлся: 20 × 2 = 40, и 40 больше 12.
 
-ученик не может весить 3 килограмма, ибо это в 23 раза меньше обычного: 69 ÷ 3 = 23.
-книга не может нести 4320 страниц, ибо это 12 обычных: 4320 ÷ 360 = 12.
-книга не может нести 7 страниц, ибо это в 100 раз меньше обычного: 700 ÷ 7 = 100.
-ученик не может делать 1680 шагов, ибо это 10 обычных: 1680 ÷ 168 = 10.
-книга не может стоить 6 рублей, ибо это в 110 раз меньше обычного: 660 ÷ 6 = 110.
-ученик не может прожить 204 года, ибо это 12 обычных: 204 ÷ 17 = 12.
-ученик не может весить 858 килограммов, ибо это 11 обычных: 858 ÷ 78 = 11.
-книга не может нести 8 страниц, ибо это в 50 раз меньше обычного: 400 ÷ 8 = 50.
-ученик не может делать 780 шагов, ибо это 10 обычных: 780 ÷ 78 = 10.
-ученик не может делать 9 шагов, ибо это в 20 раз меньше обычного: 180 ÷ 9 = 20.
-книга не может стоить 7500 рублей, ибо это 10 обычных: 7500 ÷ 750 = 10.
-ученик не может весить 363 килограмма, ибо это 11 обычных: 363 ÷ 33 = 11.
-ученик не может весить 7 килограммов, ибо это в 12 раз меньше обычного: 84 ÷ 7 = 12.
-книга не может нести 5060 страниц, ибо это 11 обычных: 5060 ÷ 460 = 11.
-ученик не может делать 9 шагов, ибо это в 10 раз меньше обычного: 90 ÷ 9 = 10.
-ученик не может делать 2376 шагов, ибо это 12 обычных: 2376 ÷ 198 = 12.
-книга не может стоить 9 рублей, ибо это в 90 раз меньше обычного: 810 ÷ 9 = 90.
-ученик не может весить 3 килограмма, ибо это в 13 раз меньше обычного: 39 ÷ 3 = 13.
-ученик не может весить 930 килограммов, ибо это 10 обычных: 930 ÷ 93 = 10.
-книга не может нести 5 страниц, ибо это в 100 раз меньше обычного: 500 ÷ 5 = 100.
-ученик не может делать 1296 шагов, ибо это 12 обычных: 1296 ÷ 108 = 12.
-книга не может стоить 9 рублей, ибо это в 40 раз меньше обычного: 360 ÷ 9 = 40.
-книга не может стоить 10800 рублей, ибо это 12 обычных: 10800 ÷ 900 = 12.
-ученик не может весить 480 килограммов, ибо это 10 обычных: 480 ÷ 48 = 10.
-ученик не может весить 9 килограммов, ибо это в 11 раз меньше обычного: 99 ÷ 9 = 11.
-книга не может нести 5600 страниц, ибо это 10 обычных: 5600 ÷ 560 = 10.
-ученик не может делать 8 шагов, ибо это в 15 раз меньше обычного: 120 ÷ 8 = 15.
-книга не может стоить 5400 рублей, ибо это 12 обычных: 5400 ÷ 450 = 12.
-книга не может стоить 8 рублей, ибо это в 120 раз меньше обычного: 960 ÷ 8 = 120.
-ученик не может весить 9 килограммов, ибо это в 6 раз меньше обычного: 54 ÷ 9 = 6.
-книга не может нести 2600 страниц, ибо это 10 обычных: 2600 ÷ 260 = 10.
-книга не может нести 8 страниц, ибо это в 75 раз меньше обычного: 600 ÷ 8 = 75.
-ученик не может делать 1518 шагов, ибо это 11 обычных: 1518 ÷ 138 = 11.
-книга не может стоить 6 рублей, ибо это в 85 раз меньше обычного: 510 ÷ 6 = 85.
-книга не может стоить 11550 рублей, ибо это 11 обычных: 11550 ÷ 1050 = 11.
-ученик не может весить 756 килограммов, ибо это 12 обычных: 756 ÷ 63 = 12.
-книга не может нести 6 страниц, ибо это в 50 раз меньше обычного: 300 ÷ 6 = 50.
-книга не может нести 7920 страниц, ибо это 12 обычных: 7920 ÷ 660 = 12.
-ученик не может делать 6 шагов, ибо это в 25 раз меньше обычного: 150 ÷ 6 = 25.
-книга не может стоить 6600 рублей, ибо это 11 обычных: 6600 ÷ 600 = 11.
-ученик не может прожить 2 года, ибо это в 7 раз меньше обычного: 14 ÷ 2 = 7.
+рост ученика обычно 140 сантиметров, и рост ученика не может быть 1 сантиметр, ибо это в 140 раз меньше обычного: 140 ÷ 1 = 140.
+ученик обычно ходит в школу 5 дней в неделю, и ученик не может ходить в школу 70 дней в неделю, ибо это в 14 раз больше обычного: 70 ÷ 5 = 14.
+рост ученика обычно 140 сантиметров, и рост ученика не может быть 1540 сантиметров, ибо это в 11 раз больше обычного: 1540 ÷ 140 = 11.
+ребёнок обычно спит 10 часов в сутки, и ребёнок не может спать 160 часов в сутки, ибо это в 16 раз больше обычного: 160 ÷ 10 = 16.
+ученик обычно весит 30 килограммов, и ученик не может весить 450 килограммов, ибо это в 15 раз больше обычного: 450 ÷ 30 = 15.
+ученику обычно 12 лет, и ученику не может быть 216 лет, ибо это в 18 раз больше обычного: 216 ÷ 12 = 18.
+ученик обычно ходит в школу 9 месяцев в году, и ученик не может ходить в школу 162 месяца в году, ибо это в 18 раз больше обычного: 162 ÷ 9 = 18.
+рост ученика обычно 140 сантиметров, и рост ученика не может быть 10 сантиметров, ибо это в 14 раз меньше обычного: 140 ÷ 10 = 14.
+ученик обычно ходит в школу 5 дней в неделю, и ученик не может ходить в школу 95 дней в неделю, ибо это в 19 раз больше обычного: 95 ÷ 5 = 19.
+рост ученика обычно 140 сантиметров, и рост ученика не может быть 2240 сантиметров, ибо это в 16 раз больше обычного: 2240 ÷ 140 = 16.
+ребёнок обычно спит 10 часов в сутки, и ребёнок не может спать 1 час в сутки, ибо это в 10 раз меньше обычного: 10 ÷ 1 = 10.
+ученик обычно весит 30 килограммов, и ученик не может весить 600 килограммов, ибо это в 20 раз больше обычного: 600 ÷ 30 = 20.
+ребёнок обычно спит 10 часов в сутки, и ребёнок не может спать 110 часов в сутки, ибо это в 11 раз больше обычного: 110 ÷ 10 = 11.
+ученик обычно весит 30 килограммов, и ученик не может весить 300 килограммов, ибо это в 10 раз больше обычного: 300 ÷ 30 = 10.
+ученику обычно 12 лет, и ученику не может быть 156 лет, ибо это в 13 раз больше обычного: 156 ÷ 12 = 13.
+ученик обычно ходит в школу 9 месяцев в году, и ученик не может ходить в школу 117 месяцев в году, ибо это в 13 раз больше обычного: 117 ÷ 9 = 13.
 
-a pupil weighs 72 kilograms, and that is plausible: 72 is greater than 10, and 72 is less than 100.
-the counting adds up and the answer is impossible: 2 × 2160 = 4320, and 4320 is greater than 1000.
-the counting adds up and the answer is impossible: 2 × 363 = 726, and 726 is greater than 200.
-the counting adds up and the answer is impossible: 2 × 957 = 1914, and 1914 is greater than 200.
-the counting adds up and the answer is impossible: 2 × 4320 = 8640, and 8640 is greater than 3000.
-a pupil weighs 33 kilograms, and that is plausible: 33 is greater than 10, and 33 is less than 100.
-a pupil weighs 87 kilograms, and that is plausible: 87 is greater than 10, and 87 is less than 100.
-a book holds 480 pages, and that is plausible: 480 is greater than 10, and 480 is less than 1000.
-the counting adds up and the answer is impossible: 2 × 480 = 960, and 960 is greater than 200.
-the counting adds up and the answer is impossible: 2 × 1815 = 3630, and 3630 is greater than 3000.
-the counting adds up and the answer is impossible: 2 × 4785 = 9570, and 9570 is greater than 3000.
-a pupil weighs 48 kilograms, and that is plausible: 48 is greater than 10, and 48 is less than 100.
-a book holds 220 pages, and that is plausible: 220 is greater than 10, and 220 is less than 1000.
-a book holds 580 pages, and that is plausible: 580 is greater than 10, and 580 is less than 1000.
-the counting adds up and the answer is impossible: 2 × 756 = 1512, and 1512 is greater than 200.
-the counting adds up and the answer is impossible: 2 × 2400 = 4800, and 4800 is greater than 3000.
-the counting adds up and the answer is impossible: 2 × 5100 = 10200, and 10200 is greater than 3000.
-a pupil weighs 63 kilograms, and that is plausible: 63 is greater than 10, and 63 is less than 100.
-a book holds 320 pages, and that is plausible: 320 is greater than 10, and 320 is less than 1000.
-a book holds 680 pages, and that is plausible: 680 is greater than 10, and 680 is less than 1000.
-a pupil makes 162 steps, and that is plausible: 162 is greater than 10, and 162 is less than 200.
-the counting adds up and the answer is impossible: 2 × 3780 = 7560, and 7560 is greater than 3000.
-a pupil has lived 17 years, and that is plausible: 17 is greater than 6, and 17 is less than 18.
-the counting adds up and the answer is impossible: 2 × 429 = 858, and 858 is greater than 100.
-a book holds 420 pages, and that is plausible: 420 is greater than 10, and 420 is less than 1000.
-a pupil makes 84 steps, and that is plausible: 84 is greater than 10, and 84 is less than 200.
-a pupil makes 192 steps, and that is plausible: 192 is greater than 10, and 192 is less than 200.
-a book costs 810 roubles, and that is plausible: 810 is greater than 10, and 810 is less than 3000.
-the counting adds up and the answer is impossible: 2 × 195 = 390, and 390 is greater than 100.
-the counting adds up and the answer is impossible: 2 × 465 = 930, and 930 is greater than 100.
-the counting adds up and the answer is impossible: 2 × 2860 = 5720, and 5720 is greater than 1000.
-a pupil makes 114 steps, and that is plausible: 114 is greater than 10, and 114 is less than 200.
-a book costs 420 roubles, and that is plausible: 420 is greater than 10, and 420 is less than 3000.
-a book costs 960 roubles, and that is plausible: 960 is greater than 10, and 960 is less than 3000.
-the counting adds up and the answer is impossible: 2 × 324 = 648, and 648 is greater than 100.
-the counting adds up and the answer is impossible: 2 × 1300 = 2600, and 2600 is greater than 1000.
-the counting adds up and the answer is impossible: 2 × 3100 = 6200, and 6200 is greater than 1000.
-the counting adds up and the answer is impossible: 2 × 864 = 1728, and 1728 is greater than 200.
-a book costs 570 roubles, and that is plausible: 570 is greater than 10, and 570 is less than 3000.
-the counting adds up and the answer is impossible: 2 × 84 = 168, and 168 is greater than 18.
+4 pupils weigh 108 kilograms together, and the answer «a pupil weighs 432 kilograms» is impossible: one pupil weighs less than 4 pupils together, though the counting adds up: 108 × 4 = 432, and 432 is greater than 108.
+a child usually sleeps more than 8 and less than 14 hours a day, and 11 hours a day is plausible: 11 is greater than 8, and 11 is less than 14.
+a child sleeps 72 hours in 6 days, and the answer «a child sleeps 432 hours a day» is impossible: a day has 24 hours, though the counting adds up: 72 × 6 = 432, and 432 is greater than 24.
+a pupil goes to school 66 days in 11 weeks, and the answer «a pupil goes to school 726 days a week» is impossible: a week has 7 days, though the counting adds up: 66 × 11 = 726, and 726 is greater than 7.
+a pupil usually weighs more than 20 and less than 90 kilograms, and 51 kilograms is plausible: 51 is greater than 20, and 51 is less than 90.
+a pupil is usually more than 110 and less than 190 centimeters tall, and 168 centimeters is plausible: 168 is greater than 110, and 168 is less than 190.
+a child sleeps 22 hours in 2 days, and the answer «a child sleeps 44 hours a day» is impossible: a day has 24 hours, though the counting adds up: 22 × 2 = 44, and 44 is greater than 24.
+a pupil goes to school 35 days in 7 weeks, and the answer «a pupil goes to school 245 days a week» is impossible: a week has 7 days, though the counting adds up: 35 × 7 = 245, and 245 is greater than 7.
+a pupil goes to school 120 months in 12 years, and the answer «a pupil goes to school 1440 months a year» is impossible: a year has 12 months, though the counting adds up: 120 × 12 = 1440, and 1440 is greater than 12.
+3 pupils weigh 171 kilograms together, and the answer «a pupil weighs 513 kilograms» is impossible: one pupil weighs less than 3 pupils together, though the counting adds up: 171 × 3 = 513, and 513 is greater than 171.
+a child sleeps 81 hours in 9 days, and the answer «a child sleeps 729 hours a day» is impossible: a day has 24 hours, though the counting adds up: 81 × 9 = 729, and 729 is greater than 24.
+a child sleeps 65 hours in 5 days, and the answer «a child sleeps 325 hours a day» is impossible: a day has 24 hours, though the counting adds up: 65 × 5 = 325, and 325 is greater than 24.
+a pupil goes to school 72 months in 8 years, and the answer «a pupil goes to school 576 months a year» is impossible: a year has 12 months, though the counting adds up: 72 × 8 = 576, and 576 is greater than 12.
+a pupil usually weighs more than 20 and less than 90 kilograms, and 81 kilograms is plausible: 81 is greater than 20, and 81 is less than 90.
+a pupil is usually more than 6 and less than 18 years old, and 15 years is plausible: 15 is greater than 6, and 15 is less than 18.
+a child sleeps 132 hours in 12 days, and the answer «a child sleeps 1584 hours a day» is impossible: a day has 24 hours, though the counting adds up: 132 × 12 = 1584, and 1584 is greater than 24.
+a pupil goes to school 36 days in 6 weeks, and the answer «a pupil goes to school 216 days a week» is impossible: a week has 7 days, though the counting adds up: 36 × 6 = 216, and 216 is greater than 7.
+a pupil usually weighs more than 20 and less than 90 kilograms, and 36 kilograms is plausible: 36 is greater than 20, and 36 is less than 90.
+2 pupils weigh 174 kilograms together, and the answer «a pupil weighs 348 kilograms» is impossible: one pupil weighs less than 2 pupils together, though the counting adds up: 174 × 2 = 348, and 348 is greater than 174.
+a child sleeps 80 hours in 8 days, and the answer «a child sleeps 640 hours a day» is impossible: a day has 24 hours, though the counting adds up: 80 × 8 = 640, and 640 is greater than 24.
+a pupil goes to school 10 days in 2 weeks, and the answer «a pupil goes to school 20 days a week» is impossible: a week has 7 days, though the counting adds up: 10 × 2 = 20, and 20 is greater than 7.
+a pupil goes to school 70 months in 7 years, and the answer «a pupil goes to school 490 months a year» is impossible: a year has 12 months, though the counting adds up: 70 × 7 = 490, and 490 is greater than 12.
+9 pupils weigh 378 kilograms together, and the answer «a pupil weighs 3402 kilograms» is impossible: one pupil weighs less than 9 pupils together, though the counting adds up: 378 × 9 = 3402, and 3402 is greater than 378.
+a child sleeps 36 hours in 4 days, and the answer «a child sleeps 144 hours a day» is impossible: a day has 24 hours, though the counting adds up: 36 × 4 = 144, and 144 is greater than 24.
+a child sleeps 132 hours in 11 days, and the answer «a child sleeps 1452 hours a day» is impossible: a day has 24 hours, though the counting adds up: 132 × 11 = 1452, and 1452 is greater than 24.
+a pupil goes to school 27 months in 3 years, and the answer «a pupil goes to school 81 months a year» is impossible: a year has 12 months, though the counting adds up: 27 × 3 = 81, and 81 is greater than 12.
+a pupil usually weighs more than 20 and less than 90 kilograms, and 66 kilograms is plausible: 66 is greater than 20, and 66 is less than 90.
+a pupil is usually more than 6 and less than 18 years old, and 10 years is plausible: 10 is greater than 6, and 10 is less than 18.
+a child sleeps 77 hours in 7 days, and the answer «a child sleeps 539 hours a day» is impossible: a day has 24 hours, though the counting adds up: 77 × 7 = 539, and 539 is greater than 24.
+a pupil goes to school 60 days in 12 weeks, and the answer «a pupil goes to school 720 days a week» is impossible: a week has 7 days, though the counting adds up: 60 × 12 = 720, and 720 is greater than 7.
+a pupil usually weighs more than 20 and less than 90 kilograms, and 21 kilograms is plausible: 21 is greater than 20, and 21 is less than 90.
+8 pupils weigh 576 kilograms together, and the answer «a pupil weighs 4608 kilograms» is impossible: one pupil weighs less than 8 pupils together, though the counting adds up: 576 × 8 = 4608, and 4608 is greater than 576.
+a child sleeps 30 hours in 3 days, and the answer «a child sleeps 90 hours a day» is impossible: a day has 24 hours, though the counting adds up: 30 × 3 = 90, and 90 is greater than 24.
+a child sleeps 130 hours in 10 days, and the answer «a child sleeps 1300 hours a day» is impossible: a day has 24 hours, though the counting adds up: 130 × 10 = 1300, and 1300 is greater than 24.
+a pupil goes to school 20 months in 2 years, and the answer «a pupil goes to school 40 months a year» is impossible: a year has 12 months, though the counting adds up: 20 × 2 = 40, and 40 is greater than 12.
 
-a pupil cannot weighs 3 kilograms, for that is 23 times less than usual: 69 ÷ 3 = 23.
-a book cannot holds 4320 pages, for that is 12 usual ones: 4320 ÷ 360 = 12.
-a book cannot holds 7 pages, for that is 100 times less than usual: 700 ÷ 7 = 100.
-a pupil cannot makes 1680 steps, for that is 10 usual ones: 1680 ÷ 168 = 10.
-a book cannot costs 6 roubles, for that is 110 times less than usual: 660 ÷ 6 = 110.
-a pupil cannot has 204 years, for that is 12 usual ones: 204 ÷ 17 = 12.
-a pupil cannot weighs 858 kilograms, for that is 11 usual ones: 858 ÷ 78 = 11.
-a book cannot holds 8 pages, for that is 50 times less than usual: 400 ÷ 8 = 50.
-a pupil cannot makes 780 steps, for that is 10 usual ones: 780 ÷ 78 = 10.
-a pupil cannot makes 9 steps, for that is 20 times less than usual: 180 ÷ 9 = 20.
-a book cannot costs 7500 roubles, for that is 10 usual ones: 7500 ÷ 750 = 10.
-a pupil cannot weighs 363 kilograms, for that is 11 usual ones: 363 ÷ 33 = 11.
-a pupil cannot weighs 7 kilograms, for that is 12 times less than usual: 84 ÷ 7 = 12.
-a book cannot holds 5060 pages, for that is 11 usual ones: 5060 ÷ 460 = 11.
-a pupil cannot makes 9 steps, for that is 10 times less than usual: 90 ÷ 9 = 10.
-a pupil cannot makes 2376 steps, for that is 12 usual ones: 2376 ÷ 198 = 12.
-a book cannot costs 9 roubles, for that is 90 times less than usual: 810 ÷ 9 = 90.
-a pupil cannot weighs 3 kilograms, for that is 13 times less than usual: 39 ÷ 3 = 13.
-a pupil cannot weighs 930 kilograms, for that is 10 usual ones: 930 ÷ 93 = 10.
-a book cannot holds 5 pages, for that is 100 times less than usual: 500 ÷ 5 = 100.
-a pupil cannot makes 1296 steps, for that is 12 usual ones: 1296 ÷ 108 = 12.
-a book cannot costs 9 roubles, for that is 40 times less than usual: 360 ÷ 9 = 40.
-a book cannot costs 10800 roubles, for that is 12 usual ones: 10800 ÷ 900 = 12.
-a pupil cannot weighs 480 kilograms, for that is 10 usual ones: 480 ÷ 48 = 10.
-a pupil cannot weighs 9 kilograms, for that is 11 times less than usual: 99 ÷ 9 = 11.
-a book cannot holds 5600 pages, for that is 10 usual ones: 5600 ÷ 560 = 10.
-a pupil cannot makes 8 steps, for that is 15 times less than usual: 120 ÷ 8 = 15.
-a book cannot costs 5400 roubles, for that is 12 usual ones: 5400 ÷ 450 = 12.
-a book cannot costs 8 roubles, for that is 120 times less than usual: 960 ÷ 8 = 120.
-a pupil cannot weighs 9 kilograms, for that is 6 times less than usual: 54 ÷ 9 = 6.
-a book cannot holds 2600 pages, for that is 10 usual ones: 2600 ÷ 260 = 10.
-a book cannot holds 8 pages, for that is 75 times less than usual: 600 ÷ 8 = 75.
-a pupil cannot makes 1518 steps, for that is 11 usual ones: 1518 ÷ 138 = 11.
-a book cannot costs 6 roubles, for that is 85 times less than usual: 510 ÷ 6 = 85.
-a book cannot costs 11550 roubles, for that is 11 usual ones: 11550 ÷ 1050 = 11.
-a pupil cannot weighs 756 kilograms, for that is 12 usual ones: 756 ÷ 63 = 12.
-a book cannot holds 6 pages, for that is 50 times less than usual: 300 ÷ 6 = 50.
-a book cannot holds 7920 pages, for that is 12 usual ones: 7920 ÷ 660 = 12.
-a pupil cannot makes 6 steps, for that is 25 times less than usual: 150 ÷ 6 = 25.
-a book cannot costs 6600 roubles, for that is 11 usual ones: 6600 ÷ 600 = 11.
-a pupil cannot has 2 years, for that is 7 times less than usual: 14 ÷ 2 = 7.
+a pupil is usually 140 centimeters tall, and a pupil cannot be 1 centimeter tall, for that is 140 times less than usual: 140 ÷ 1 = 140.
+a pupil usually goes to school 5 days a week, and a pupil cannot go to school 70 days a week, for that is 14 times more than usual: 70 ÷ 5 = 14.
+a pupil is usually 140 centimeters tall, and a pupil cannot be 1540 centimeters tall, for that is 11 times more than usual: 1540 ÷ 140 = 11.
+a child usually sleeps 10 hours a day, and a child cannot sleep 160 hours a day, for that is 16 times more than usual: 160 ÷ 10 = 16.
+a pupil usually weighs 30 kilograms, and a pupil cannot weigh 450 kilograms, for that is 15 times more than usual: 450 ÷ 30 = 15.
+a pupil is usually 12 years old, and a pupil cannot be 216 years old, for that is 18 times more than usual: 216 ÷ 12 = 18.
+a pupil usually goes to school 9 months a year, and a pupil cannot go to school 162 months a year, for that is 18 times more than usual: 162 ÷ 9 = 18.
+a pupil is usually 140 centimeters tall, and a pupil cannot be 10 centimeters tall, for that is 14 times less than usual: 140 ÷ 10 = 14.
+a pupil usually goes to school 5 days a week, and a pupil cannot go to school 95 days a week, for that is 19 times more than usual: 95 ÷ 5 = 19.
+a pupil is usually 140 centimeters tall, and a pupil cannot be 2240 centimeters tall, for that is 16 times more than usual: 2240 ÷ 140 = 16.
+a child usually sleeps 10 hours a day, and a child cannot sleep 1 hour a day, for that is 10 times less than usual: 10 ÷ 1 = 10.
+a pupil usually weighs 30 kilograms, and a pupil cannot weigh 600 kilograms, for that is 20 times more than usual: 600 ÷ 30 = 20.
+a child usually sleeps 10 hours a day, and a child cannot sleep 110 hours a day, for that is 11 times more than usual: 110 ÷ 10 = 11.
+a pupil usually weighs 30 kilograms, and a pupil cannot weigh 300 kilograms, for that is 10 times more than usual: 300 ÷ 30 = 10.
+a pupil is usually 12 years old, and a pupil cannot be 156 years old, for that is 13 times more than usual: 156 ÷ 12 = 13.
+a pupil usually goes to school 9 months a year, and a pupil cannot go to school 117 months a year, for that is 13 times more than usual: 117 ÷ 9 = 13.
 
-счёт сошёлся, а ответ невозможен: 2 × 240 = 480, и 480 больше 100.
-счёт сошёлся, а ответ невозможен: 2 × 2520 = 5040, и 5040 больше 1000.
-ученик делает 150 шагов, и это правдоподобно: 150 больше 10, и 150 меньше 200.
-книга стоит 900 рублей, и это правдоподобно: 900 больше 10, и 900 меньше 3000.
-ученик весит 81 килограмм, и это правдоподобно: 81 больше 10, и 81 меньше 100.
-книга несёт 640 страниц, и это правдоподобно: 640 больше 10, и 640 меньше 1000.
-книга стоит 360 рублей, и это правдоподобно: 360 больше 10, и 360 меньше 3000.
-счёт сошёлся, а ответ невозможен: 2 × 102 = 204, и 204 больше 18.
-книга несёт 280 страниц, и это правдоподобно: 280 больше 10, и 280 меньше 1000.
-ученик делает 102 шага, и это правдоподобно: 102 больше 10, и 102 меньше 200.
-книга стоит 660 рублей, и это правдоподобно: 660 больше 10, и 660 меньше 3000.
-ученик весит 57 килограммов, и это правдоподобно: 57 больше 10, и 57 меньше 100.
-счёт сошёлся, а ответ невозможен: 2 × 2880 = 5760, и 5760 больше 1000.
-счёт сошёлся, а ответ невозможен: 2 × 972 = 1944, и 1944 больше 200.
-счёт сошёлся, а ответ невозможен: 2 × 5280 = 10560, и 10560 больше 3000.
-счёт сошёлся, а ответ невозможен: 3 × 319 = 957, и 957 больше 100.
-счёт сошёлся, а ответ невозможен: 2 × 3400 = 6800, и 6800 больше 1000.
-счёт сошёлся, а ответ невозможен: 2 × 2310 = 4620, и 4620 больше 3000.
-счёт сошёлся, а ответ невозможен: 3 × 121 = 363, и 363 больше 100.
-счёт сошёлся, а ответ невозможен: 2 × 1600 = 3200, и 3200 больше 1000.
-счёт сошёлся, а ответ невозможен: 2 × 570 = 1140, и 1140 больше 200.
-книга стоит 750 рублей, и это правдоподобно: 750 больше 10, и 750 меньше 3000.
-счёт сошёлся, а ответ невозможен: 2 × 378 = 756, и 756 больше 100.
-книга несёт 540 страниц, и это правдоподобно: 540 больше 10, и 540 меньше 1000.
-ученик делает 180 шагов, и это правдоподобно: 180 больше 10, и 180 меньше 200.
-книга стоит 1050 рублей, и это правдоподобно: 1050 больше 10, и 1050 меньше 3000.
-ученик весит 96 килограммов, и это правдоподобно: 96 больше 10, и 96 меньше 100.
-ученик делает 72 шага, и это правдоподобно: 72 больше 10, и 72 меньше 200.
-книга стоит 510 рублей, и это правдоподобно: 510 больше 10, и 510 меньше 3000.
-ученик весит 42 килограмма, и это правдоподобно: 42 больше 10, и 42 меньше 100.
-книга несёт 380 страниц, и это правдоподобно: 380 больше 10, и 380 меньше 1000.
-ученик делает 132 шага, и это правдоподобно: 132 больше 10, и 132 меньше 200.
-счёт сошёлся, а ответ невозможен: 2 × 4860 = 9720, и 9720 больше 3000.
-счёт сошёлся, а ответ невозможен: 2 × 432 = 864, и 864 больше 100.
-счёт сошёлся, а ответ невозможен: 2 × 3190 = 6380, и 6380 больше 1000.
-счёт сошёлся, а ответ невозможен: 2 × 1056 = 2112, и 2112 больше 200.
-ученик прожил 15 лет, и это правдоподобно: 15 больше 6, и 15 меньше 18.
-счёт сошёлся, а ответ невозможен: 2 × 1210 = 2420, и 2420 больше 1000.
-счёт сошёлся, а ответ невозможен: 2 × 462 = 924, и 924 больше 200.
-счёт сошёлся, а ответ невозможен: 2 × 2850 = 5700, и 5700 больше 3000.
+ученик обычно весит больше 20 и меньше 90 килограммов, и 54 килограмма — это правдоподобно: 54 больше 20, и 54 меньше 90.
+ребёнок обычно спит больше 8 и меньше 14 часов в сутки, и 12 часов в сутки — это правдоподобно: 12 больше 8, и 12 меньше 14.
+ребёнок спит 143 часа за 11 дней, и ответ «ребёнок спит 1573 часа в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 143 × 11 = 1573, и 1573 больше 24.
+ученик обычно весит больше 20 и меньше 90 килограммов, и 39 килограммов — это правдоподобно: 39 больше 20, и 39 меньше 90.
+ученику обычно больше 6 и меньше 18 лет, и 16 лет — это правдоподобно: 16 больше 6, и 16 меньше 18.
+ребёнок спит 78 часов за 6 дней, и ответ «ребёнок спит 468 часов в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 78 × 6 = 468, и 468 больше 24.
+ученик обычно весит больше 20 и меньше 90 килограммов, и 24 килограмма — это правдоподобно: 24 больше 20, и 24 меньше 90.
+ученику обычно больше 6 и меньше 18 лет, и 11 лет — это правдоподобно: 11 больше 6, и 11 меньше 18.
+ребёнок спит 144 часа за 12 дней, и ответ «ребёнок спит 1728 часов в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 144 × 12 = 1728, и 1728 больше 24.
+ученик ходит в школу 80 месяцев за 8 лет, и ответ «ученик ходит в школу 640 месяцев в году» невозможен: в году 12 месяцев, хоть счёт и сошёлся: 80 × 8 = 640, и 640 больше 12.
+рост ученика обычно больше 110 и меньше 190 сантиметров, и 182 сантиметра — это правдоподобно: 182 больше 110, и 182 меньше 190.
+ребёнок спит 84 часа за 7 дней, и ответ «ребёнок спит 588 часов в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 84 × 7 = 588, и 588 больше 24.
+ученик ходит в школу 30 месяцев за 3 года, и ответ «ученик ходит в школу 90 месяцев в году» невозможен: в году 12 месяцев, хоть счёт и сошёлся: 30 × 3 = 90, и 90 больше 12.
+рост ученика обычно больше 110 и меньше 190 сантиметров, и 112 сантиметров — это правдоподобно: 112 больше 110, и 112 меньше 190.
+ребёнок спит 24 часа за 2 дня, и ответ «ребёнок спит 48 часов в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 24 × 2 = 48, и 48 больше 24.
+ученик ходит в школу 81 месяц за 9 лет, и ответ «ученик ходит в школу 729 месяцев в году» невозможен: в году 12 месяцев, хоть счёт и сошёлся: 81 × 9 = 729, и 729 больше 12.
+9 учеников весят вместе 675 килограммов, и ответ «ученик весит 6075 килограммов» невозможен: один ученик весит меньше, чем 9 учеников вместе, хоть счёт и сошёлся: 675 × 9 = 6075, и 6075 больше 675.
+ребёнок спит 88 часов за 8 дней, и ответ «ребёнок спит 704 часа в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 88 × 8 = 704, и 704 больше 24.
+ученик ходит в школу 36 месяцев за 4 года, и ответ «ученик ходит в школу 144 месяца в году» невозможен: в году 12 месяцев, хоть счёт и сошёлся: 36 × 4 = 144, и 144 больше 12.
+4 ученика весят вместе 240 килограммов, и ответ «ученик весит 960 килограммов» невозможен: один ученик весит меньше, чем 4 ученика вместе, хоть счёт и сошёлся: 240 × 4 = 960, и 960 больше 240.
+ребёнок спит 33 часа за 3 дня, и ответ «ребёнок спит 99 часов в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 33 × 3 = 99, и 99 больше 24.
+ученик ходит в школу 72 дня за 12 недель, и ответ «ученик ходит в школу 864 дня в неделю» невозможен: в неделе 7 дней, хоть счёт и сошёлся: 72 × 12 = 864, и 864 больше 7.
+10 учеников весят вместе 450 килограммов, и ответ «ученик весит 4500 килограммов» невозможен: один ученик весит меньше, чем 10 учеников вместе, хоть счёт и сошёлся: 450 × 10 = 4500, и 4500 больше 450.
+ребёнок спит 90 часов за 9 дней, и ответ «ребёнок спит 810 часов в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 90 × 9 = 810, и 810 больше 24.
+ученик ходит в школу 42 дня за 7 недель, и ответ «ученик ходит в школу 294 дня в неделю» невозможен: в неделе 7 дней, хоть счёт и сошёлся: 42 × 7 = 294, и 294 больше 7.
+5 учеников весят вместе 150 килограммов, и ответ «ученик весит 750 килограммов» невозможен: один ученик весит меньше, чем 5 учеников вместе, хоть счёт и сошёлся: 150 × 5 = 750, и 750 больше 150.
+ребёнок спит 40 часов за 4 дня, и ответ «ребёнок спит 160 часов в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 40 × 4 = 160, и 160 больше 24.
+ученик ходит в школу 12 дней за 2 недели, и ответ «ученик ходит в школу 24 дня в неделю» невозможен: в неделе 7 дней, хоть счёт и сошёлся: 12 × 2 = 24, и 24 больше 7.
+ученик обычно весит больше 20 и меньше 90 килограммов, и 84 килограмма — это правдоподобно: 84 больше 20, и 84 меньше 90.
+ребёнок спит 90 часов за 10 дней, и ответ «ребёнок спит 900 часов в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 90 × 10 = 900, и 900 больше 24.
+ученик ходит в школу 40 дней за 8 недель, и ответ «ученик ходит в школу 320 дней в неделю» невозможен: в неделе 7 дней, хоть счёт и сошёлся: 40 × 8 = 320, и 320 больше 7.
+ученик обычно весит больше 20 и меньше 90 килограммов, и 69 килограммов — это правдоподобно: 69 больше 20, и 69 меньше 90.
+ребёнок спит 45 часов за 5 дней, и ответ «ребёнок спит 225 часов в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 45 × 5 = 225, и 225 больше 24.
+ученик ходит в школу 15 дней за 3 недели, и ответ «ученик ходит в школу 45 дней в неделю» невозможен: в неделе 7 дней, хоть счёт и сошёлся: 15 × 3 = 45, и 45 больше 7.
 
-ученик не может весить 8 килограммов, ибо это в 6 раз меньше обычного: 48 ÷ 8 = 6.
-книга не может нести 5040 страниц, ибо это 12 обычных: 5040 ÷ 420 = 12.
-ученик не может делать 6 шагов, ибо это в 23 раза меньше обычного: 138 ÷ 6 = 23.
-книга не может стоить 8400 рублей, ибо это 10 обычных: 8400 ÷ 840 = 10.
-ученик не может весить 864 килограмма, ибо это 12 обычных: 864 ÷ 72 = 12.
-книга не может нести 8 страниц, ибо это в 70 раз меньше обычного: 560 ÷ 8 = 70.
-ученик не может делать 1860 шагов, ибо это 10 обычных: 1860 ÷ 186 = 10.
-книга не может стоить 7 рублей, ибо это в 150 раз меньше обычного: 1050 ÷ 7 = 150.
-ученик не может весить 3 килограмма, ибо это в 31 раз меньше обычного: 93 ÷ 3 = 31.
-ученик не может делать 726 шагов, ибо это 11 обычных: 726 ÷ 66 = 11.
-книга не может стоить 9 рублей, ибо это в 50 раз меньше обычного: 450 ÷ 9 = 50.
-ученик не может весить 3 килограмма, ибо это в 11 раз меньше обычного: 33 ÷ 3 = 11.
-книга не может нести 3200 страниц, ибо это 10 обычных: 3200 ÷ 320 = 10.
-ученик не может делать 9 шагов, ибо это в 12 раз меньше обычного: 108 ÷ 9 = 12.
-книга не может стоить 7590 рублей, ибо это 11 обычных: 7590 ÷ 690 = 11.
-ученик не может весить 570 килограммов, ибо это 10 обычных: 570 ÷ 57 = 10.
-книга не может нести 5 страниц, ибо это в 92 раза меньше обычного: 460 ÷ 5 = 92.
-ученик не может делать 1716 шагов, ибо это 11 обычных: 1716 ÷ 156 = 11.
-книга не может стоить 9 рублей, ибо это в 100 раз меньше обычного: 900 ÷ 9 = 100.
-ученик не может весить 6 килограммов, ибо это в 13 раз меньше обычного: 78 ÷ 6 = 13.
-книга не может нести 6200 страниц, ибо это 10 обычных: 6200 ÷ 620 = 10.
-ученик не может делать 9 шагов, ибо это в 22 раза меньше обычного: 198 ÷ 9 = 22.
-ученик не может прожить 150 лет, ибо это 10 обычных: 150 ÷ 15 = 10.
-книга не может нести 2420 страниц, ибо это 11 обычных: 2420 ÷ 220 = 11.
-ученик не может делать 6 шагов, ибо это в 13 раз меньше обычного: 78 ÷ 6 = 13.
-книга не может стоить 6480 рублей, ибо это 12 обычных: 6480 ÷ 540 = 12.
-ученик не может весить 462 килограмма, ибо это 11 обычных: 462 ÷ 42 = 11.
-книга не может нести 9 страниц, ибо это в 40 раз меньше обычного: 360 ÷ 9 = 40.
-ученик не может делать 1512 шагов, ибо это 12 обычных: 1512 ÷ 126 = 12.
-книга не может стоить 6 рублей, ибо это в 125 раз меньше обычного: 750 ÷ 6 = 125.
-ученик не может весить 9 килограммов, ибо это в 7 раз меньше обычного: 63 ÷ 9 = 7.
-книга не может нести 5720 страниц, ибо это 11 обычных: 5720 ÷ 520 = 11.
-ученик не может делать 8 шагов, ибо это в 21 раз меньше обычного: 168 ÷ 8 = 21.
-книга не может стоить 11880 рублей, ибо это 12 обычных: 11880 ÷ 990 = 12.
-ученик не может весить 957 килограммов, ибо это 11 обычных: 957 ÷ 87 = 11.
-книга не может нести 6 страниц, ибо это в 110 раз меньше обычного: 660 ÷ 6 = 110.
-книга не может стоить 3900 рублей, ибо это 10 обычных: 3900 ÷ 390 = 10.
-ученик не может прожить 1 год, ибо это в 17 раз меньше обычного: 17 ÷ 1 = 17.
-книга не может нести 5 страниц, ибо это в 52 раза меньше обычного: 260 ÷ 5 = 52.
-ученик не может делать 960 шагов, ибо это 10 обычных: 960 ÷ 96 = 10.
-книга не может стоить 8 рублей, ибо это в 75 раз меньше обычного: 600 ÷ 8 = 75.
+ученик обычно весит 30 килограммов, и ученик не может весить 1 килограмм, ибо это в 30 раз меньше обычного: 30 ÷ 1 = 30.
+ученик обычно ходит в школу 5 дней в неделю, и ученик не может ходить в школу 100 дней в неделю, ибо это в 20 раз больше обычного: 100 ÷ 5 = 20.
+ученику обычно 12 лет, и ученику не может быть 228 лет, ибо это в 19 раз больше обычного: 228 ÷ 12 = 19.
+рост ученика обычно 140 сантиметров, и рост ученика не может быть 1680 сантиметров, ибо это в 12 раз больше обычного: 1680 ÷ 140 = 12.
+ученик обычно ходит в школу 9 месяцев в году, и ученик не может ходить в школу 126 месяцев в году, ибо это в 14 раз больше обычного: 126 ÷ 9 = 14.
+ребёнок обычно спит 10 часов в сутки, и ребёнок не может спать 120 часов в сутки, ибо это в 12 раз больше обычного: 120 ÷ 10 = 12.
+рост ученика обычно 140 сантиметров, и рост ученика не может быть 2380 сантиметров, ибо это в 17 раз больше обычного: 2380 ÷ 140 = 17.
+ученик обычно ходит в школу 9 месяцев в году, и ученик не может ходить в школу 171 месяц в году, ибо это в 19 раз больше обычного: 171 ÷ 9 = 19.
+ребёнок обычно спит 10 часов в сутки, и ребёнок не может спать 170 часов в сутки, ибо это в 17 раз больше обычного: 170 ÷ 10 = 17.
+рост ученика обычно 140 сантиметров, и рост ученика не может быть 2 сантиметра, ибо это в 70 раз меньше обычного: 140 ÷ 2 = 70.
+ученик обычно весит 30 килограммов, и ученик не может весить 330 килограммов, ибо это в 11 раз больше обычного: 330 ÷ 30 = 11.
+ученик обычно ходит в школу 5 дней в неделю, и ученик не может ходить в школу 50 дней в неделю, ибо это в 10 раз больше обычного: 50 ÷ 5 = 10.
+рост ученика обычно 140 сантиметров, и рост ученика не может быть 14 сантиметров, ибо это в 10 раз меньше обычного: 140 ÷ 14 = 10.
+ученик обычно весит 30 килограммов, и ученик не может весить 480 килограммов, ибо это в 16 раз больше обычного: 480 ÷ 30 = 16.
+ученик обычно ходит в школу 5 дней в неделю, и ученик не может ходить в школу 75 дней в неделю, ибо это в 15 раз больше обычного: 75 ÷ 5 = 15.
+ученику обычно 12 лет, и ученику не может быть 168 лет, ибо это в 14 раз больше обычного: 168 ÷ 12 = 14.
 
-the counting adds up and the answer is impossible: 2 × 240 = 480, and 480 is greater than 100.
-the counting adds up and the answer is impossible: 2 × 2520 = 5040, and 5040 is greater than 1000.
-a pupil makes 150 steps, and that is plausible: 150 is greater than 10, and 150 is less than 200.
-a book costs 900 roubles, and that is plausible: 900 is greater than 10, and 900 is less than 3000.
-a pupil weighs 81 kilograms, and that is plausible: 81 is greater than 10, and 81 is less than 100.
-a book holds 640 pages, and that is plausible: 640 is greater than 10, and 640 is less than 1000.
-a book costs 360 roubles, and that is plausible: 360 is greater than 10, and 360 is less than 3000.
-the counting adds up and the answer is impossible: 2 × 102 = 204, and 204 is greater than 18.
-a book holds 280 pages, and that is plausible: 280 is greater than 10, and 280 is less than 1000.
-a pupil makes 102 steps, and that is plausible: 102 is greater than 10, and 102 is less than 200.
-a book costs 660 roubles, and that is plausible: 660 is greater than 10, and 660 is less than 3000.
-a pupil weighs 57 kilograms, and that is plausible: 57 is greater than 10, and 57 is less than 100.
-the counting adds up and the answer is impossible: 2 × 2880 = 5760, and 5760 is greater than 1000.
-the counting adds up and the answer is impossible: 2 × 972 = 1944, and 1944 is greater than 200.
-the counting adds up and the answer is impossible: 2 × 5280 = 10560, and 10560 is greater than 3000.
-the counting adds up and the answer is impossible: 3 × 319 = 957, and 957 is greater than 100.
-the counting adds up and the answer is impossible: 2 × 3400 = 6800, and 6800 is greater than 1000.
-the counting adds up and the answer is impossible: 2 × 2310 = 4620, and 4620 is greater than 3000.
-the counting adds up and the answer is impossible: 3 × 121 = 363, and 363 is greater than 100.
-the counting adds up and the answer is impossible: 2 × 1600 = 3200, and 3200 is greater than 1000.
-the counting adds up and the answer is impossible: 2 × 570 = 1140, and 1140 is greater than 200.
-a book costs 750 roubles, and that is plausible: 750 is greater than 10, and 750 is less than 3000.
-the counting adds up and the answer is impossible: 2 × 378 = 756, and 756 is greater than 100.
-a book holds 540 pages, and that is plausible: 540 is greater than 10, and 540 is less than 1000.
-a pupil makes 180 steps, and that is plausible: 180 is greater than 10, and 180 is less than 200.
-a book costs 1050 roubles, and that is plausible: 1050 is greater than 10, and 1050 is less than 3000.
-a pupil weighs 96 kilograms, and that is plausible: 96 is greater than 10, and 96 is less than 100.
-a pupil makes 72 steps, and that is plausible: 72 is greater than 10, and 72 is less than 200.
-a book costs 510 roubles, and that is plausible: 510 is greater than 10, and 510 is less than 3000.
-a pupil weighs 42 kilograms, and that is plausible: 42 is greater than 10, and 42 is less than 100.
-a book holds 380 pages, and that is plausible: 380 is greater than 10, and 380 is less than 1000.
-a pupil makes 132 steps, and that is plausible: 132 is greater than 10, and 132 is less than 200.
-the counting adds up and the answer is impossible: 2 × 4860 = 9720, and 9720 is greater than 3000.
-the counting adds up and the answer is impossible: 2 × 432 = 864, and 864 is greater than 100.
-the counting adds up and the answer is impossible: 2 × 3190 = 6380, and 6380 is greater than 1000.
-the counting adds up and the answer is impossible: 2 × 1056 = 2112, and 2112 is greater than 200.
-a pupil has lived 15 years, and that is plausible: 15 is greater than 6, and 15 is less than 18.
-the counting adds up and the answer is impossible: 2 × 1210 = 2420, and 2420 is greater than 1000.
-the counting adds up and the answer is impossible: 2 × 462 = 924, and 924 is greater than 200.
-the counting adds up and the answer is impossible: 2 × 2850 = 5700, and 5700 is greater than 3000.
+a pupil usually weighs more than 20 and less than 90 kilograms, and 54 kilograms is plausible: 54 is greater than 20, and 54 is less than 90.
+a child usually sleeps more than 8 and less than 14 hours a day, and 12 hours a day is plausible: 12 is greater than 8, and 12 is less than 14.
+a child sleeps 143 hours in 11 days, and the answer «a child sleeps 1573 hours a day» is impossible: a day has 24 hours, though the counting adds up: 143 × 11 = 1573, and 1573 is greater than 24.
+a pupil usually weighs more than 20 and less than 90 kilograms, and 39 kilograms is plausible: 39 is greater than 20, and 39 is less than 90.
+a pupil is usually more than 6 and less than 18 years old, and 16 years is plausible: 16 is greater than 6, and 16 is less than 18.
+a child sleeps 78 hours in 6 days, and the answer «a child sleeps 468 hours a day» is impossible: a day has 24 hours, though the counting adds up: 78 × 6 = 468, and 468 is greater than 24.
+a pupil usually weighs more than 20 and less than 90 kilograms, and 24 kilograms is plausible: 24 is greater than 20, and 24 is less than 90.
+a pupil is usually more than 6 and less than 18 years old, and 11 years is plausible: 11 is greater than 6, and 11 is less than 18.
+a child sleeps 144 hours in 12 days, and the answer «a child sleeps 1728 hours a day» is impossible: a day has 24 hours, though the counting adds up: 144 × 12 = 1728, and 1728 is greater than 24.
+a pupil goes to school 80 months in 8 years, and the answer «a pupil goes to school 640 months a year» is impossible: a year has 12 months, though the counting adds up: 80 × 8 = 640, and 640 is greater than 12.
+a pupil is usually more than 110 and less than 190 centimeters tall, and 182 centimeters is plausible: 182 is greater than 110, and 182 is less than 190.
+a child sleeps 84 hours in 7 days, and the answer «a child sleeps 588 hours a day» is impossible: a day has 24 hours, though the counting adds up: 84 × 7 = 588, and 588 is greater than 24.
+a pupil goes to school 30 months in 3 years, and the answer «a pupil goes to school 90 months a year» is impossible: a year has 12 months, though the counting adds up: 30 × 3 = 90, and 90 is greater than 12.
+a pupil is usually more than 110 and less than 190 centimeters tall, and 112 centimeters is plausible: 112 is greater than 110, and 112 is less than 190.
+a child sleeps 24 hours in 2 days, and the answer «a child sleeps 48 hours a day» is impossible: a day has 24 hours, though the counting adds up: 24 × 2 = 48, and 48 is greater than 24.
+a pupil goes to school 81 months in 9 years, and the answer «a pupil goes to school 729 months a year» is impossible: a year has 12 months, though the counting adds up: 81 × 9 = 729, and 729 is greater than 12.
+9 pupils weigh 675 kilograms together, and the answer «a pupil weighs 6075 kilograms» is impossible: one pupil weighs less than 9 pupils together, though the counting adds up: 675 × 9 = 6075, and 6075 is greater than 675.
+a child sleeps 88 hours in 8 days, and the answer «a child sleeps 704 hours a day» is impossible: a day has 24 hours, though the counting adds up: 88 × 8 = 704, and 704 is greater than 24.
+a pupil goes to school 36 months in 4 years, and the answer «a pupil goes to school 144 months a year» is impossible: a year has 12 months, though the counting adds up: 36 × 4 = 144, and 144 is greater than 12.
+4 pupils weigh 240 kilograms together, and the answer «a pupil weighs 960 kilograms» is impossible: one pupil weighs less than 4 pupils together, though the counting adds up: 240 × 4 = 960, and 960 is greater than 240.
+a child sleeps 33 hours in 3 days, and the answer «a child sleeps 99 hours a day» is impossible: a day has 24 hours, though the counting adds up: 33 × 3 = 99, and 99 is greater than 24.
+a pupil goes to school 72 days in 12 weeks, and the answer «a pupil goes to school 864 days a week» is impossible: a week has 7 days, though the counting adds up: 72 × 12 = 864, and 864 is greater than 7.
+10 pupils weigh 450 kilograms together, and the answer «a pupil weighs 4500 kilograms» is impossible: one pupil weighs less than 10 pupils together, though the counting adds up: 450 × 10 = 4500, and 4500 is greater than 450.
+a child sleeps 90 hours in 9 days, and the answer «a child sleeps 810 hours a day» is impossible: a day has 24 hours, though the counting adds up: 90 × 9 = 810, and 810 is greater than 24.
+a pupil goes to school 42 days in 7 weeks, and the answer «a pupil goes to school 294 days a week» is impossible: a week has 7 days, though the counting adds up: 42 × 7 = 294, and 294 is greater than 7.
+5 pupils weigh 150 kilograms together, and the answer «a pupil weighs 750 kilograms» is impossible: one pupil weighs less than 5 pupils together, though the counting adds up: 150 × 5 = 750, and 750 is greater than 150.
+a child sleeps 40 hours in 4 days, and the answer «a child sleeps 160 hours a day» is impossible: a day has 24 hours, though the counting adds up: 40 × 4 = 160, and 160 is greater than 24.
+a pupil goes to school 12 days in 2 weeks, and the answer «a pupil goes to school 24 days a week» is impossible: a week has 7 days, though the counting adds up: 12 × 2 = 24, and 24 is greater than 7.
+a pupil usually weighs more than 20 and less than 90 kilograms, and 84 kilograms is plausible: 84 is greater than 20, and 84 is less than 90.
+a child sleeps 90 hours in 10 days, and the answer «a child sleeps 900 hours a day» is impossible: a day has 24 hours, though the counting adds up: 90 × 10 = 900, and 900 is greater than 24.
+a pupil goes to school 40 days in 8 weeks, and the answer «a pupil goes to school 320 days a week» is impossible: a week has 7 days, though the counting adds up: 40 × 8 = 320, and 320 is greater than 7.
+a pupil usually weighs more than 20 and less than 90 kilograms, and 69 kilograms is plausible: 69 is greater than 20, and 69 is less than 90.
+a child sleeps 45 hours in 5 days, and the answer «a child sleeps 225 hours a day» is impossible: a day has 24 hours, though the counting adds up: 45 × 5 = 225, and 225 is greater than 24.
+a pupil goes to school 15 days in 3 weeks, and the answer «a pupil goes to school 45 days a week» is impossible: a week has 7 days, though the counting adds up: 15 × 3 = 45, and 45 is greater than 7.
 
-a pupil cannot weighs 8 kilograms, for that is 6 times less than usual: 48 ÷ 8 = 6.
-a book cannot holds 5040 pages, for that is 12 usual ones: 5040 ÷ 420 = 12.
-a pupil cannot makes 6 steps, for that is 23 times less than usual: 138 ÷ 6 = 23.
-a book cannot costs 8400 roubles, for that is 10 usual ones: 8400 ÷ 840 = 10.
-a pupil cannot weighs 864 kilograms, for that is 12 usual ones: 864 ÷ 72 = 12.
-a book cannot holds 8 pages, for that is 70 times less than usual: 560 ÷ 8 = 70.
-a pupil cannot makes 1860 steps, for that is 10 usual ones: 1860 ÷ 186 = 10.
-a book cannot costs 7 roubles, for that is 150 times less than usual: 1050 ÷ 7 = 150.
-a pupil cannot weighs 3 kilograms, for that is 31 times less than usual: 93 ÷ 3 = 31.
-a pupil cannot makes 726 steps, for that is 11 usual ones: 726 ÷ 66 = 11.
-a book cannot costs 9 roubles, for that is 50 times less than usual: 450 ÷ 9 = 50.
-a pupil cannot weighs 3 kilograms, for that is 11 times less than usual: 33 ÷ 3 = 11.
-a book cannot holds 3200 pages, for that is 10 usual ones: 3200 ÷ 320 = 10.
-a pupil cannot makes 9 steps, for that is 12 times less than usual: 108 ÷ 9 = 12.
-a book cannot costs 7590 roubles, for that is 11 usual ones: 7590 ÷ 690 = 11.
-a pupil cannot weighs 570 kilograms, for that is 10 usual ones: 570 ÷ 57 = 10.
-a book cannot holds 5 pages, for that is 92 times less than usual: 460 ÷ 5 = 92.
-a pupil cannot makes 1716 steps, for that is 11 usual ones: 1716 ÷ 156 = 11.
-a book cannot costs 9 roubles, for that is 100 times less than usual: 900 ÷ 9 = 100.
-a pupil cannot weighs 6 kilograms, for that is 13 times less than usual: 78 ÷ 6 = 13.
-a book cannot holds 6200 pages, for that is 10 usual ones: 6200 ÷ 620 = 10.
-a pupil cannot makes 9 steps, for that is 22 times less than usual: 198 ÷ 9 = 22.
-a pupil cannot has 150 years, for that is 10 usual ones: 150 ÷ 15 = 10.
-a book cannot holds 2420 pages, for that is 11 usual ones: 2420 ÷ 220 = 11.
-a pupil cannot makes 6 steps, for that is 13 times less than usual: 78 ÷ 6 = 13.
-a book cannot costs 6480 roubles, for that is 12 usual ones: 6480 ÷ 540 = 12.
-a pupil cannot weighs 462 kilograms, for that is 11 usual ones: 462 ÷ 42 = 11.
-a book cannot holds 9 pages, for that is 40 times less than usual: 360 ÷ 9 = 40.
-a pupil cannot makes 1512 steps, for that is 12 usual ones: 1512 ÷ 126 = 12.
-a book cannot costs 6 roubles, for that is 125 times less than usual: 750 ÷ 6 = 125.
-a pupil cannot weighs 9 kilograms, for that is 7 times less than usual: 63 ÷ 9 = 7.
-a book cannot holds 5720 pages, for that is 11 usual ones: 5720 ÷ 520 = 11.
-a pupil cannot makes 8 steps, for that is 21 times less than usual: 168 ÷ 8 = 21.
-a book cannot costs 11880 roubles, for that is 12 usual ones: 11880 ÷ 990 = 12.
-a pupil cannot weighs 957 kilograms, for that is 11 usual ones: 957 ÷ 87 = 11.
-a book cannot holds 6 pages, for that is 110 times less than usual: 660 ÷ 6 = 110.
-a book cannot costs 3900 roubles, for that is 10 usual ones: 3900 ÷ 390 = 10.
-a pupil cannot has 1 year, for that is 17 times less than usual: 17 ÷ 1 = 17.
-a book cannot holds 5 pages, for that is 52 times less than usual: 260 ÷ 5 = 52.
-a pupil cannot makes 960 steps, for that is 10 usual ones: 960 ÷ 96 = 10.
-a book cannot costs 8 roubles, for that is 75 times less than usual: 600 ÷ 8 = 75.
+a pupil usually weighs 30 kilograms, and a pupil cannot weigh 1 kilogram, for that is 30 times less than usual: 30 ÷ 1 = 30.
+a pupil usually goes to school 5 days a week, and a pupil cannot go to school 100 days a week, for that is 20 times more than usual: 100 ÷ 5 = 20.
+a pupil is usually 12 years old, and a pupil cannot be 228 years old, for that is 19 times more than usual: 228 ÷ 12 = 19.
+a pupil is usually 140 centimeters tall, and a pupil cannot be 1680 centimeters tall, for that is 12 times more than usual: 1680 ÷ 140 = 12.
+a pupil usually goes to school 9 months a year, and a pupil cannot go to school 126 months a year, for that is 14 times more than usual: 126 ÷ 9 = 14.
+a child usually sleeps 10 hours a day, and a child cannot sleep 120 hours a day, for that is 12 times more than usual: 120 ÷ 10 = 12.
+a pupil is usually 140 centimeters tall, and a pupil cannot be 2380 centimeters tall, for that is 17 times more than usual: 2380 ÷ 140 = 17.
+a pupil usually goes to school 9 months a year, and a pupil cannot go to school 171 months a year, for that is 19 times more than usual: 171 ÷ 9 = 19.
+a child usually sleeps 10 hours a day, and a child cannot sleep 170 hours a day, for that is 17 times more than usual: 170 ÷ 10 = 17.
+a pupil is usually 140 centimeters tall, and a pupil cannot be 2 centimeters tall, for that is 70 times less than usual: 140 ÷ 2 = 70.
+a pupil usually weighs 30 kilograms, and a pupil cannot weigh 330 kilograms, for that is 11 times more than usual: 330 ÷ 30 = 11.
+a pupil usually goes to school 5 days a week, and a pupil cannot go to school 50 days a week, for that is 10 times more than usual: 50 ÷ 5 = 10.
+a pupil is usually 140 centimeters tall, and a pupil cannot be 14 centimeters tall, for that is 10 times less than usual: 140 ÷ 14 = 10.
+a pupil usually weighs 30 kilograms, and a pupil cannot weigh 480 kilograms, for that is 16 times more than usual: 480 ÷ 30 = 16.
+a pupil usually goes to school 5 days a week, and a pupil cannot go to school 75 days a week, for that is 15 times more than usual: 75 ÷ 5 = 15.
+a pupil is usually 12 years old, and a pupil cannot be 168 years old, for that is 14 times more than usual: 168 ÷ 12 = 14.
 
-книга несёт 240 страниц, и это правдоподобно: 240 больше 10, и 240 меньше 1000.
-ученик делает 138 шагов, и это правдоподобно: 138 больше 10, и 138 меньше 200.
-счёт сошёлся, а ответ невозможен: 2 × 5775 = 11550, и 11550 больше 3000.
-счёт сошёлся, а ответ невозможен: 2 × 1900 = 3800, и 3800 больше 1000.
-счёт сошёлся, а ответ невозможен: 2 × 1080 = 2160, и 2160 больше 200.
-счёт сошёлся, а ответ невозможен: 2 × 231 = 462, и 462 больше 100.
-счёт сошёлся, а ответ невозможен: 2 × 3240 = 6480, и 6480 больше 1000.
-книга стоит 450 рублей, и это правдоподобно: 450 больше 10, и 450 меньше 3000.
-ученик весит 66 килограммов, и это правдоподобно: 66 больше 10, и 66 меньше 100.
-книга несёт 700 страниц, и это правдоподобно: 700 больше 10, и 700 меньше 1000.
-книга стоит 690 рублей, и это правдоподобно: 690 больше 10, и 690 меньше 3000.
-ученик весит 90 килограммов, и это правдоподобно: 90 больше 10, и 90 меньше 100.
-счёт сошёлся, а ответ невозможен: 2 × 561 = 1122, и 1122 больше 200.
-счёт сошёлся, а ответ невозможен: 2 × 5400 = 10800, и 10800 больше 3000.
-счёт сошёлся, а ответ невозможен: 2 × 1540 = 3080, и 3080 больше 1000.
-счёт сошёлся, а ответ невозможен: 2 × 750 = 1500, и 1500 больше 200.
-счёт сошёлся, а ответ невозможен: 2 × 75 = 150, и 150 больше 18.
-книга несёт 440 страниц, и это правдоподобно: 440 больше 10, и 440 меньше 1000.
-ученик делает 198 шагов, и это правдоподобно: 198 больше 10, и 198 меньше 200.
-ученик весит 51 килограмм, и это правдоподобно: 51 больше 10, и 51 меньше 100.
-книга несёт 600 страниц, и это правдоподобно: 600 больше 10, и 600 меньше 1000.
-счёт сошёлся, а ответ невозможен: 2 × 2805 = 5610, и 5610 больше 3000.
-ученик весит 75 килограммов, и это правдоподобно: 75 больше 10, и 75 меньше 100.
-счёт сошёлся, а ответ невозможен: 2 × 432 = 864, и 864 больше 200.
-счёт сошёлся, а ответ невозможен: 2 × 3750 = 7500, и 7500 больше 3000.
-счёт сошёлся, а ответ невозможен: 2 × 528 = 1056, и 1056 больше 100.
-ученик делает 120 шагов, и это правдоподобно: 120 больше 10, и 120 меньше 200.
-книга стоит 990 рублей, и это правдоподобно: 990 больше 10, и 990 меньше 3000.
-книга несёт 340 страниц, и это правдоподобно: 340 больше 10, и 340 меньше 1000.
-ученик делает 168 шагов, и это правдоподобно: 168 больше 10, и 168 меньше 200.
-ученик весит 36 килограммов, и это правдоподобно: 36 больше 10, и 36 меньше 100.
-книга несёт 500 страниц, и это правдоподобно: 500 больше 10, и 500 меньше 1000.
-счёт сошёлся, а ответ невозможен: 2 × 2160 = 4320, и 4320 больше 3000.
-счёт сошёлся, а ответ невозможен: 2 × 285 = 570, и 570 больше 100.
-счёт сошёлся, а ответ невозможен: 2 × 3520 = 7040, и 7040 больше 1000.
-книга стоит 600 рублей, и это правдоподобно: 600 больше 10, и 600 меньше 3000.
-счёт сошёлся, а ответ невозможен: 2 × 486 = 972, и 972 больше 100.
-ученик делает 90 шагов, и это правдоподобно: 90 больше 10, и 90 меньше 200.
-книга стоит 840 рублей, и это правдоподобно: 840 больше 10, и 840 меньше 3000.
+рост ученика обычно больше 110 и меньше 190 сантиметров, и 126 сантиметров — это правдоподобно: 126 больше 110, и 126 меньше 190.
+ребёнок спит 26 часов за 2 дня, и ответ «ребёнок спит 52 часа в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 26 × 2 = 52, и 52 больше 24.
+ученик обычно весит больше 20 и меньше 90 килограммов, и 42 килограмма — это правдоподобно: 42 больше 20, и 42 меньше 90.
+ребёнок спит 54 часа за 6 дней, и ответ «ребёнок спит 324 часа в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 54 × 6 = 324, и 324 больше 24.
+ученик ходит в школу 18 дней за 3 недели, и ответ «ученик ходит в школу 54 дня в неделю» невозможен: в неделе 7 дней, хоть счёт и сошёлся: 18 × 3 = 54, и 54 больше 7.
+11 учеников весят вместе 528 килограммов, и ответ «ученик весит 5808 килограммов» невозможен: один ученик весит меньше, чем 11 учеников вместе, хоть счёт и сошёлся: 528 × 11 = 5808, и 5808 больше 528.
+ребёнок спит 99 часов за 9 дней, и ответ «ребёнок спит 891 час в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 99 × 9 = 891, и 891 больше 24.
+ученик ходит в школу 40 месяцев за 4 года, и ответ «ученик ходит в школу 160 месяцев в году» невозможен: в году 12 месяцев, хоть счёт и сошёлся: 40 × 4 = 160, и 160 больше 12.
+ученику обычно больше 6 и меньше 18 лет, и 12 лет — это правдоподобно: 12 больше 6, и 12 меньше 18.
+ребёнок спит 156 часов за 12 дней, и ответ «ребёнок спит 1872 часа в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 156 × 12 = 1872, и 1872 больше 24.
+ученик обычно весит больше 20 и меньше 90 килограммов, и 72 килограмма — это правдоподобно: 72 больше 20, и 72 меньше 90.
+ребёнок спит 50 часов за 5 дней, и ответ «ребёнок спит 250 часов в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 50 × 5 = 250, и 250 больше 24.
+ученик обычно ходит в школу больше 8 и меньше 11 месяцев в году, и 9 месяцев в году — это правдоподобно: 9 больше 8, и 9 меньше 11.
+10 учеников весят вместе 780 килограммов, и ответ «ученик весит 7800 килограммов» невозможен: один ученик весит меньше, чем 10 учеников вместе, хоть счёт и сошёлся: 780 × 10 = 7800, и 7800 больше 780.
+ребёнок спит 96 часов за 8 дней, и ответ «ребёнок спит 768 часов в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 96 × 8 = 768, и 768 больше 24.
+ученик обычно весит больше 20 и меньше 90 килограммов, и 27 килограммов — это правдоподобно: 27 больше 20, и 27 меньше 90.
+ребёнок обычно спит больше 8 и меньше 14 часов в сутки, и 13 часов в сутки — это правдоподобно: 13 больше 8, и 13 меньше 14.
+ученик ходит в школу 45 дней за 9 недель, и ответ «ученик ходит в школу 405 дней в неделю» невозможен: в неделе 7 дней, хоть счёт и сошёлся: 45 × 9 = 405, и 405 больше 7.
+6 учеников весят вместе 198 килограммов, и ответ «ученик весит 1188 килограммов» невозможен: один ученик весит меньше, чем 6 учеников вместе, хоть счёт и сошёлся: 198 × 6 = 1188, и 1188 больше 198.
+ребёнок спит 44 часа за 4 дня, и ответ «ребёнок спит 176 часов в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 44 × 4 = 176, и 176 больше 24.
+ученик ходит в школу 90 месяцев за 10 лет, и ответ «ученик ходит в школу 900 месяцев в году» невозможен: в году 12 месяцев, хоть счёт и сошёлся: 90 × 10 = 900, и 900 больше 12.
+ученику обычно больше 6 и меньше 18 лет, и 7 лет — это правдоподобно: 7 больше 6, и 7 меньше 18.
+ребёнок спит 91 час за 7 дней, и ответ «ребёнок спит 637 часов в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 91 × 7 = 637, и 637 больше 24.
+ученик обычно весит больше 20 и меньше 90 килограммов, и 57 килограммов — это правдоподобно: 57 больше 20, и 57 меньше 90.
+ребёнок спит 99 часов за 11 дней, и ответ «ребёнок спит 1089 часов в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 99 × 11 = 1089, и 1089 больше 24.
+ученик ходит в школу 48 дней за 8 недель, и ответ «ученик ходит в школу 384 дня в неделю» невозможен: в неделе 7 дней, хоть счёт и сошёлся: 48 × 8 = 384, и 384 больше 7.
+5 учеников весят вместе 315 килограммов, и ответ «ученик весит 1575 килограммов» невозможен: один ученик весит меньше, чем 5 учеников вместе, хоть счёт и сошёлся: 315 × 5 = 1575, и 1575 больше 315.
+ребёнок спит 36 часов за 3 дня, и ответ «ребёнок спит 108 часов в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 36 × 3 = 108, и 108 больше 24.
+ученик ходит в школу 90 месяцев за 9 лет, и ответ «ученик ходит в школу 810 месяцев в году» невозможен: в году 12 месяцев, хоть счёт и сошёлся: 90 × 9 = 810, и 810 больше 12.
+ученику обычно больше 6 и меньше 18 лет, и 17 лет — это правдоподобно: 17 больше 6, и 17 меньше 18.
+ученик ходит в школу 20 дней за 4 недели, и ответ «ученик ходит в школу 80 дней в неделю» невозможен: в неделе 7 дней, хоть счёт и сошёлся: 20 × 4 = 80, и 80 больше 7.
+ученик обычно весит больше 20 и меньше 90 килограммов, и 87 килограммов — это правдоподобно: 87 больше 20, и 87 меньше 90.
+ребёнок спит 100 часов за 10 дней, и ответ «ребёнок спит 1000 часов в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 100 × 10 = 1000, и 1000 больше 24.
+ученик ходит в школу 45 месяцев за 5 лет, и ответ «ученик ходит в школу 225 месяцев в году» невозможен: в году 12 месяцев, хоть счёт и сошёлся: 45 × 5 = 225, и 225 больше 12.
 
-книга не может нести 5 страниц, ибо это в 44 раза меньше обычного: 220 ÷ 5 = 44.
-ученик не может делать 1140 шагов, ибо это 10 обычных: 1140 ÷ 114 = 10.
-книга не может стоить 8 рублей, ибо это в 105 раз меньше обычного: 840 ÷ 8 = 105.
-ученик не может весить 1056 килограммов, ибо это 11 обычных: 1056 ÷ 96 = 11.
-ученик не может делать 8 шагов, ибо это в 12 раз меньше обычного: 96 ÷ 8 = 12.
-книга не может стоить 8580 рублей, ибо это 11 обычных: 8580 ÷ 780 = 11.
-ученик не может весить 3 килограмма, ибо это в 29 раз меньше обычного: 87 ÷ 3 = 29.
-ученик не может делать 924 шага, ибо это 11 обычных: 924 ÷ 84 = 11.
-книга не может стоить 6 рублей, ибо это в 115 раз меньше обычного: 690 ÷ 6 = 115.
-ученик не может весить 972 килограмма, ибо это 12 обычных: 972 ÷ 81 = 12.
-ученик не может делать 6 шагов, ибо это в 11 раз меньше обычного: 66 ÷ 6 = 11.
-книга не может стоить 7560 рублей, ибо это 12 обычных: 7560 ÷ 630 = 12.
-ученик не может весить 9 килограммов, ибо это в 8 раз меньше обычного: 72 ÷ 9 = 8.
-книга не может нести 6800 страниц, ибо это 10 обычных: 6800 ÷ 680 = 10.
-книга не может стоить 9 рублей, ибо это в 60 раз меньше обычного: 540 ÷ 9 = 60.
-ученик не может весить 660 килограммов, ибо это 10 обычных: 660 ÷ 66 = 10.
-книга не может нести 5 страниц, ибо это в 124 раза меньше обычного: 620 ÷ 5 = 124.
-книга не может стоить 4800 рублей, ибо это 10 обычных: 4800 ÷ 480 = 10.
-ученик не может весить 3 килограмма, ибо это в 19 раз меньше обычного: 57 ÷ 3 = 19.
-книга не может нести 6380 страниц, ибо это 11 обычных: 6380 ÷ 580 = 11.
-книга не может стоить 6 рублей, ибо это в 65 раз меньше обычного: 390 ÷ 6 = 65.
-ученик не может весить 561 килограмм, ибо это 11 обычных: 561 ÷ 51 = 11.
-книга не может нести 8 страниц, ибо это в 65 раз меньше обычного: 520 ÷ 8 = 65.
-книга не может стоить 3630 рублей, ибо это 11 обычных: 3630 ÷ 330 = 11.
-ученик не может весить 7 килограммов, ибо это в 6 раз меньше обычного: 42 ÷ 7 = 6.
-книга не может нести 5760 страниц, ибо это 12 обычных: 5760 ÷ 480 = 12.
-ученик не может делать 6 шагов, ибо это в 31 раз меньше обычного: 186 ÷ 6 = 31.
-ученик не может весить 432 килограмма, ибо это 12 обычных: 432 ÷ 36 = 12.
-книга не может нести 7 страниц, ибо это в 60 раз меньше обычного: 420 ÷ 7 = 60.
-ученик не может делать 1914 шагов, ибо это 11 обычных: 1914 ÷ 174 = 11.
-ученик не может прожить 5 лет, ибо это в 3 раза меньше обычного: 15 ÷ 5 = 3.
-книга не может нести 3800 страниц, ибо это 10 обычных: 3800 ÷ 380 = 10.
-ученик не может делать 6 шагов, ибо это в 26 раз меньше обычного: 156 ÷ 6 = 26.
-ученик не может прожить 143 года, ибо это 11 обычных: 143 ÷ 13 = 11.
-книга не может нести 8 страниц, ибо это в 40 раз меньше обычного: 320 ÷ 8 = 40.
-ученик не может делать 1728 шагов, ибо это 12 обычных: 1728 ÷ 144 = 12.
-книга не может стоить 9 рублей, ибо это в 110 раз меньше обычного: 990 ÷ 9 = 110.
-книга не может нести 3080 страниц, ибо это 11 обычных: 3080 ÷ 280 = 11.
-ученик не может делать 9 шагов, ибо это в 14 раз меньше обычного: 126 ÷ 9 = 14.
-книга не может стоить 9300 рублей, ибо это 10 обычных: 9300 ÷ 930 = 10.
+ребёнок обычно спит 10 часов в сутки, и ребёнок не может спать 130 часов в сутки, ибо это в 13 раз больше обычного: 130 ÷ 10 = 13.
+ученику обычно 12 лет, и ученику не может быть 120 лет, ибо это в 10 раз больше обычного: 120 ÷ 12 = 10.
+рост ученика обычно 140 сантиметров, и рост ученика не может быть 1820 сантиметров, ибо это в 13 раз больше обычного: 1820 ÷ 140 = 13.
+ученик обычно весит 30 килограммов, и ученик не может весить 360 килограммов, ибо это в 12 раз больше обычного: 360 ÷ 30 = 12.
+ученик обычно ходит в школу 9 месяцев в году, и ученик не может ходить в школу 90 месяцев в году, ибо это в 10 раз больше обычного: 90 ÷ 9 = 10.
+ребёнок обычно спит 10 часов в сутки, и ребёнок не может спать 180 часов в сутки, ибо это в 18 раз больше обычного: 180 ÷ 10 = 18.
+ученику обычно 12 лет, и ученику не может быть 180 лет, ибо это в 15 раз больше обычного: 180 ÷ 12 = 15.
+рост ученика обычно 140 сантиметров, и рост ученика не может быть 2520 сантиметров, ибо это в 18 раз больше обычного: 2520 ÷ 140 = 18.
+ученик обычно весит 30 килограммов, и ученик не может весить 510 килограммов, ибо это в 17 раз больше обычного: 510 ÷ 30 = 17.
+ученик обычно ходит в школу 9 месяцев в году, и ученик не может ходить в школу 135 месяцев в году, ибо это в 15 раз больше обычного: 135 ÷ 9 = 15.
+ученик обычно ходит в школу 5 дней в неделю, и ученик не может ходить в школу 55 дней в неделю, ибо это в 11 раз больше обычного: 55 ÷ 5 = 11.
+ученику обычно 12 лет, и ученику не может быть 240 лет, ибо это в 20 раз больше обычного: 240 ÷ 12 = 20.
+рост ученика обычно 140 сантиметров, и рост ученика не может быть 4 сантиметра, ибо это в 35 раз меньше обычного: 140 ÷ 4 = 35.
+ученик обычно весит 30 килограммов, и ученик не может весить 2 килограмма, ибо это в 15 раз меньше обычного: 30 ÷ 2 = 15.
+ученик обычно ходит в школу 9 месяцев в году, и ученик не может ходить в школу 180 месяцев в году, ибо это в 20 раз больше обычного: 180 ÷ 9 = 20.
+ученик обычно ходит в школу 5 дней в неделю, и ученик не может ходить в школу 80 дней в неделю, ибо это в 16 раз больше обычного: 80 ÷ 5 = 16.
 
-a book holds 240 pages, and that is plausible: 240 is greater than 10, and 240 is less than 1000.
-a pupil makes 138 steps, and that is plausible: 138 is greater than 10, and 138 is less than 200.
-the counting adds up and the answer is impossible: 2 × 5775 = 11550, and 11550 is greater than 3000.
-the counting adds up and the answer is impossible: 2 × 1900 = 3800, and 3800 is greater than 1000.
-the counting adds up and the answer is impossible: 2 × 1080 = 2160, and 2160 is greater than 200.
-the counting adds up and the answer is impossible: 2 × 231 = 462, and 462 is greater than 100.
-the counting adds up and the answer is impossible: 2 × 3240 = 6480, and 6480 is greater than 1000.
-a book costs 450 roubles, and that is plausible: 450 is greater than 10, and 450 is less than 3000.
-a pupil weighs 66 kilograms, and that is plausible: 66 is greater than 10, and 66 is less than 100.
-a book holds 700 pages, and that is plausible: 700 is greater than 10, and 700 is less than 1000.
-a book costs 690 roubles, and that is plausible: 690 is greater than 10, and 690 is less than 3000.
-a pupil weighs 90 kilograms, and that is plausible: 90 is greater than 10, and 90 is less than 100.
-the counting adds up and the answer is impossible: 2 × 561 = 1122, and 1122 is greater than 200.
-the counting adds up and the answer is impossible: 2 × 5400 = 10800, and 10800 is greater than 3000.
-the counting adds up and the answer is impossible: 2 × 1540 = 3080, and 3080 is greater than 1000.
-the counting adds up and the answer is impossible: 2 × 750 = 1500, and 1500 is greater than 200.
-the counting adds up and the answer is impossible: 2 × 75 = 150, and 150 is greater than 18.
-a book holds 440 pages, and that is plausible: 440 is greater than 10, and 440 is less than 1000.
-a pupil makes 198 steps, and that is plausible: 198 is greater than 10, and 198 is less than 200.
-a pupil weighs 51 kilograms, and that is plausible: 51 is greater than 10, and 51 is less than 100.
-a book holds 600 pages, and that is plausible: 600 is greater than 10, and 600 is less than 1000.
-the counting adds up and the answer is impossible: 2 × 2805 = 5610, and 5610 is greater than 3000.
-a pupil weighs 75 kilograms, and that is plausible: 75 is greater than 10, and 75 is less than 100.
-the counting adds up and the answer is impossible: 2 × 432 = 864, and 864 is greater than 200.
-the counting adds up and the answer is impossible: 2 × 3750 = 7500, and 7500 is greater than 3000.
-the counting adds up and the answer is impossible: 2 × 528 = 1056, and 1056 is greater than 100.
-a pupil makes 120 steps, and that is plausible: 120 is greater than 10, and 120 is less than 200.
-a book costs 990 roubles, and that is plausible: 990 is greater than 10, and 990 is less than 3000.
-a book holds 340 pages, and that is plausible: 340 is greater than 10, and 340 is less than 1000.
-a pupil makes 168 steps, and that is plausible: 168 is greater than 10, and 168 is less than 200.
-a pupil weighs 36 kilograms, and that is plausible: 36 is greater than 10, and 36 is less than 100.
-a book holds 500 pages, and that is plausible: 500 is greater than 10, and 500 is less than 1000.
-the counting adds up and the answer is impossible: 2 × 2160 = 4320, and 4320 is greater than 3000.
-the counting adds up and the answer is impossible: 2 × 285 = 570, and 570 is greater than 100.
-the counting adds up and the answer is impossible: 2 × 3520 = 7040, and 7040 is greater than 1000.
-a book costs 600 roubles, and that is plausible: 600 is greater than 10, and 600 is less than 3000.
-the counting adds up and the answer is impossible: 2 × 486 = 972, and 972 is greater than 100.
-a pupil makes 90 steps, and that is plausible: 90 is greater than 10, and 90 is less than 200.
-a book costs 840 roubles, and that is plausible: 840 is greater than 10, and 840 is less than 3000.
+a pupil is usually more than 110 and less than 190 centimeters tall, and 126 centimeters is plausible: 126 is greater than 110, and 126 is less than 190.
+a child sleeps 26 hours in 2 days, and the answer «a child sleeps 52 hours a day» is impossible: a day has 24 hours, though the counting adds up: 26 × 2 = 52, and 52 is greater than 24.
+a pupil usually weighs more than 20 and less than 90 kilograms, and 42 kilograms is plausible: 42 is greater than 20, and 42 is less than 90.
+a child sleeps 54 hours in 6 days, and the answer «a child sleeps 324 hours a day» is impossible: a day has 24 hours, though the counting adds up: 54 × 6 = 324, and 324 is greater than 24.
+a pupil goes to school 18 days in 3 weeks, and the answer «a pupil goes to school 54 days a week» is impossible: a week has 7 days, though the counting adds up: 18 × 3 = 54, and 54 is greater than 7.
+11 pupils weigh 528 kilograms together, and the answer «a pupil weighs 5808 kilograms» is impossible: one pupil weighs less than 11 pupils together, though the counting adds up: 528 × 11 = 5808, and 5808 is greater than 528.
+a child sleeps 99 hours in 9 days, and the answer «a child sleeps 891 hours a day» is impossible: a day has 24 hours, though the counting adds up: 99 × 9 = 891, and 891 is greater than 24.
+a pupil goes to school 40 months in 4 years, and the answer «a pupil goes to school 160 months a year» is impossible: a year has 12 months, though the counting adds up: 40 × 4 = 160, and 160 is greater than 12.
+a pupil is usually more than 6 and less than 18 years old, and 12 years is plausible: 12 is greater than 6, and 12 is less than 18.
+a child sleeps 156 hours in 12 days, and the answer «a child sleeps 1872 hours a day» is impossible: a day has 24 hours, though the counting adds up: 156 × 12 = 1872, and 1872 is greater than 24.
+a pupil usually weighs more than 20 and less than 90 kilograms, and 72 kilograms is plausible: 72 is greater than 20, and 72 is less than 90.
+a child sleeps 50 hours in 5 days, and the answer «a child sleeps 250 hours a day» is impossible: a day has 24 hours, though the counting adds up: 50 × 5 = 250, and 250 is greater than 24.
+a pupil usually goes to school more than 8 and less than 11 months a year, and 9 months a year is plausible: 9 is greater than 8, and 9 is less than 11.
+10 pupils weigh 780 kilograms together, and the answer «a pupil weighs 7800 kilograms» is impossible: one pupil weighs less than 10 pupils together, though the counting adds up: 780 × 10 = 7800, and 7800 is greater than 780.
+a child sleeps 96 hours in 8 days, and the answer «a child sleeps 768 hours a day» is impossible: a day has 24 hours, though the counting adds up: 96 × 8 = 768, and 768 is greater than 24.
+a pupil usually weighs more than 20 and less than 90 kilograms, and 27 kilograms is plausible: 27 is greater than 20, and 27 is less than 90.
+a child usually sleeps more than 8 and less than 14 hours a day, and 13 hours a day is plausible: 13 is greater than 8, and 13 is less than 14.
+a pupil goes to school 45 days in 9 weeks, and the answer «a pupil goes to school 405 days a week» is impossible: a week has 7 days, though the counting adds up: 45 × 9 = 405, and 405 is greater than 7.
+6 pupils weigh 198 kilograms together, and the answer «a pupil weighs 1188 kilograms» is impossible: one pupil weighs less than 6 pupils together, though the counting adds up: 198 × 6 = 1188, and 1188 is greater than 198.
+a child sleeps 44 hours in 4 days, and the answer «a child sleeps 176 hours a day» is impossible: a day has 24 hours, though the counting adds up: 44 × 4 = 176, and 176 is greater than 24.
+a pupil goes to school 90 months in 10 years, and the answer «a pupil goes to school 900 months a year» is impossible: a year has 12 months, though the counting adds up: 90 × 10 = 900, and 900 is greater than 12.
+a pupil is usually more than 6 and less than 18 years old, and 7 years is plausible: 7 is greater than 6, and 7 is less than 18.
+a child sleeps 91 hours in 7 days, and the answer «a child sleeps 637 hours a day» is impossible: a day has 24 hours, though the counting adds up: 91 × 7 = 637, and 637 is greater than 24.
+a pupil usually weighs more than 20 and less than 90 kilograms, and 57 kilograms is plausible: 57 is greater than 20, and 57 is less than 90.
+a child sleeps 99 hours in 11 days, and the answer «a child sleeps 1089 hours a day» is impossible: a day has 24 hours, though the counting adds up: 99 × 11 = 1089, and 1089 is greater than 24.
+a pupil goes to school 48 days in 8 weeks, and the answer «a pupil goes to school 384 days a week» is impossible: a week has 7 days, though the counting adds up: 48 × 8 = 384, and 384 is greater than 7.
+5 pupils weigh 315 kilograms together, and the answer «a pupil weighs 1575 kilograms» is impossible: one pupil weighs less than 5 pupils together, though the counting adds up: 315 × 5 = 1575, and 1575 is greater than 315.
+a child sleeps 36 hours in 3 days, and the answer «a child sleeps 108 hours a day» is impossible: a day has 24 hours, though the counting adds up: 36 × 3 = 108, and 108 is greater than 24.
+a pupil goes to school 90 months in 9 years, and the answer «a pupil goes to school 810 months a year» is impossible: a year has 12 months, though the counting adds up: 90 × 9 = 810, and 810 is greater than 12.
+a pupil is usually more than 6 and less than 18 years old, and 17 years is plausible: 17 is greater than 6, and 17 is less than 18.
+a pupil goes to school 20 days in 4 weeks, and the answer «a pupil goes to school 80 days a week» is impossible: a week has 7 days, though the counting adds up: 20 × 4 = 80, and 80 is greater than 7.
+a pupil usually weighs more than 20 and less than 90 kilograms, and 87 kilograms is plausible: 87 is greater than 20, and 87 is less than 90.
+a child sleeps 100 hours in 10 days, and the answer «a child sleeps 1000 hours a day» is impossible: a day has 24 hours, though the counting adds up: 100 × 10 = 1000, and 1000 is greater than 24.
+a pupil goes to school 45 months in 5 years, and the answer «a pupil goes to school 225 months a year» is impossible: a year has 12 months, though the counting adds up: 45 × 5 = 225, and 225 is greater than 12.
 
-a book cannot holds 5 pages, for that is 44 times less than usual: 220 ÷ 5 = 44.
-a pupil cannot makes 1140 steps, for that is 10 usual ones: 1140 ÷ 114 = 10.
-a book cannot costs 8 roubles, for that is 105 times less than usual: 840 ÷ 8 = 105.
-a pupil cannot weighs 1056 kilograms, for that is 11 usual ones: 1056 ÷ 96 = 11.
-a pupil cannot makes 8 steps, for that is 12 times less than usual: 96 ÷ 8 = 12.
-a book cannot costs 8580 roubles, for that is 11 usual ones: 8580 ÷ 780 = 11.
-a pupil cannot weighs 3 kilograms, for that is 29 times less than usual: 87 ÷ 3 = 29.
-a pupil cannot makes 924 steps, for that is 11 usual ones: 924 ÷ 84 = 11.
-a book cannot costs 6 roubles, for that is 115 times less than usual: 690 ÷ 6 = 115.
-a pupil cannot weighs 972 kilograms, for that is 12 usual ones: 972 ÷ 81 = 12.
-a pupil cannot makes 6 steps, for that is 11 times less than usual: 66 ÷ 6 = 11.
-a book cannot costs 7560 roubles, for that is 12 usual ones: 7560 ÷ 630 = 12.
-a pupil cannot weighs 9 kilograms, for that is 8 times less than usual: 72 ÷ 9 = 8.
-a book cannot holds 6800 pages, for that is 10 usual ones: 6800 ÷ 680 = 10.
-a book cannot costs 9 roubles, for that is 60 times less than usual: 540 ÷ 9 = 60.
-a pupil cannot weighs 660 kilograms, for that is 10 usual ones: 660 ÷ 66 = 10.
-a book cannot holds 5 pages, for that is 124 times less than usual: 620 ÷ 5 = 124.
-a book cannot costs 4800 roubles, for that is 10 usual ones: 4800 ÷ 480 = 10.
-a pupil cannot weighs 3 kilograms, for that is 19 times less than usual: 57 ÷ 3 = 19.
-a book cannot holds 6380 pages, for that is 11 usual ones: 6380 ÷ 580 = 11.
-a book cannot costs 6 roubles, for that is 65 times less than usual: 390 ÷ 6 = 65.
-a pupil cannot weighs 561 kilograms, for that is 11 usual ones: 561 ÷ 51 = 11.
-a book cannot holds 8 pages, for that is 65 times less than usual: 520 ÷ 8 = 65.
-a book cannot costs 3630 roubles, for that is 11 usual ones: 3630 ÷ 330 = 11.
-a pupil cannot weighs 7 kilograms, for that is 6 times less than usual: 42 ÷ 7 = 6.
-a book cannot holds 5760 pages, for that is 12 usual ones: 5760 ÷ 480 = 12.
-a pupil cannot makes 6 steps, for that is 31 times less than usual: 186 ÷ 6 = 31.
-a pupil cannot weighs 432 kilograms, for that is 12 usual ones: 432 ÷ 36 = 12.
-a book cannot holds 7 pages, for that is 60 times less than usual: 420 ÷ 7 = 60.
-a pupil cannot makes 1914 steps, for that is 11 usual ones: 1914 ÷ 174 = 11.
-a pupil cannot has 5 years, for that is 3 times less than usual: 15 ÷ 5 = 3.
-a book cannot holds 3800 pages, for that is 10 usual ones: 3800 ÷ 380 = 10.
-a pupil cannot makes 6 steps, for that is 26 times less than usual: 156 ÷ 6 = 26.
-a pupil cannot has 143 years, for that is 11 usual ones: 143 ÷ 13 = 11.
-a book cannot holds 8 pages, for that is 40 times less than usual: 320 ÷ 8 = 40.
-a pupil cannot makes 1728 steps, for that is 12 usual ones: 1728 ÷ 144 = 12.
-a book cannot costs 9 roubles, for that is 110 times less than usual: 990 ÷ 9 = 110.
-a book cannot holds 3080 pages, for that is 11 usual ones: 3080 ÷ 280 = 11.
-a pupil cannot makes 9 steps, for that is 14 times less than usual: 126 ÷ 9 = 14.
-a book cannot costs 9300 roubles, for that is 10 usual ones: 9300 ÷ 930 = 10.
+a child usually sleeps 10 hours a day, and a child cannot sleep 130 hours a day, for that is 13 times more than usual: 130 ÷ 10 = 13.
+a pupil is usually 12 years old, and a pupil cannot be 120 years old, for that is 10 times more than usual: 120 ÷ 12 = 10.
+a pupil is usually 140 centimeters tall, and a pupil cannot be 1820 centimeters tall, for that is 13 times more than usual: 1820 ÷ 140 = 13.
+a pupil usually weighs 30 kilograms, and a pupil cannot weigh 360 kilograms, for that is 12 times more than usual: 360 ÷ 30 = 12.
+a pupil usually goes to school 9 months a year, and a pupil cannot go to school 90 months a year, for that is 10 times more than usual: 90 ÷ 9 = 10.
+a child usually sleeps 10 hours a day, and a child cannot sleep 180 hours a day, for that is 18 times more than usual: 180 ÷ 10 = 18.
+a pupil is usually 12 years old, and a pupil cannot be 180 years old, for that is 15 times more than usual: 180 ÷ 12 = 15.
+a pupil is usually 140 centimeters tall, and a pupil cannot be 2520 centimeters tall, for that is 18 times more than usual: 2520 ÷ 140 = 18.
+a pupil usually weighs 30 kilograms, and a pupil cannot weigh 510 kilograms, for that is 17 times more than usual: 510 ÷ 30 = 17.
+a pupil usually goes to school 9 months a year, and a pupil cannot go to school 135 months a year, for that is 15 times more than usual: 135 ÷ 9 = 15.
+a pupil usually goes to school 5 days a week, and a pupil cannot go to school 55 days a week, for that is 11 times more than usual: 55 ÷ 5 = 11.
+a pupil is usually 12 years old, and a pupil cannot be 240 years old, for that is 20 times more than usual: 240 ÷ 12 = 20.
+a pupil is usually 140 centimeters tall, and a pupil cannot be 4 centimeters tall, for that is 35 times less than usual: 140 ÷ 4 = 35.
+a pupil usually weighs 30 kilograms, and a pupil cannot weigh 2 kilograms, for that is 15 times less than usual: 30 ÷ 2 = 15.
+a pupil usually goes to school 9 months a year, and a pupil cannot go to school 180 months a year, for that is 20 times more than usual: 180 ÷ 9 = 20.
+a pupil usually goes to school 5 days a week, and a pupil cannot go to school 80 days a week, for that is 16 times more than usual: 80 ÷ 5 = 16.
 
-ученик весит 69 килограммов, и это правдоподобно: 69 больше 10, и 69 меньше 100.
-ученик делает 108 шагов, и это правдоподобно: 108 больше 10, и 108 меньше 200.
-ученик прожил 16 лет, и это правдоподобно: 16 больше 6, и 16 меньше 18.
-счёт сошёлся, а ответ невозможен: 2 × 3600 = 7200, и 7200 больше 1000.
-книга стоит 780 рублей, и это правдоподобно: 780 больше 10, и 780 меньше 3000.
-счёт сошёлся, а ответ невозможен: 2 × 1870 = 3740, и 3740 больше 1000.
-книга стоит 390 рублей, и это правдоподобно: 390 больше 10, и 390 меньше 3000.
-ученик весит 84 килограмма, и это правдоподобно: 84 больше 10, и 84 меньше 100.
-счёт сошёлся, а ответ невозможен: 2 × 759 = 1518, и 1518 больше 200.
-ученик весит 45 килограммов, и это правдоподобно: 45 больше 10, и 45 меньше 100.
-счёт сошёлся, а ответ невозможен: 2 × 3850 = 7700, и 7700 больше 1000.
-книга стоит 930 рублей, и это правдоподобно: 930 больше 10, и 930 меньше 3000.
-книга несёт 460 страниц, и это правдоподобно: 460 больше 10, и 460 меньше 1000.
-книга стоит 540 рублей, и это правдоподобно: 540 больше 10, и 540 меньше 3000.
-ученик весит 99 килограммов, и это правдоподобно: 99 больше 10, и 99 меньше 100.
-счёт сошёлся, а ответ невозможен: 2 × 840 = 1680, и 1680 больше 200.
-ученик весит 60 килограммов, и это правдоподобно: 60 больше 10, и 60 меньше 100.
-счёт сошёлся, а ответ невозможен: 2 × 540 = 1080, и 1080 больше 200.
-ученик прожил 13 лет, и это правдоподобно: 13 больше 6, и 13 меньше 18.
-книга несёт 560 страниц, и это правдоподобно: 560 больше 10, и 560 меньше 1000.
-счёт сошёлся, а ответ невозможен: 2 × 3795 = 7590, и 7590 больше 3000.
-книга несёт 300 страниц, и это правдоподобно: 300 больше 10, и 300 меньше 1000.
-счёт сошёлся, а ответ невозможен: 2 × 1188 = 2376, и 2376 больше 200.
-счёт сошёлся, а ответ невозможен: 2 × 375 = 750, и 750 больше 100.
-счёт сошёлся, а ответ невозможен: 2 × 660 = 1320, и 1320 больше 200.
-счёт сошёлся, а ответ невозможен: 2 × 216 = 432, и 432 больше 100.
-книга несёт 660 страниц, и это правдоподобно: 660 больше 10, и 660 меньше 1000.
-счёт сошёлся, а ответ невозможен: 2 × 4200 = 8400, и 8400 больше 3000.
-книга несёт 400 страниц, и это правдоподобно: 400 больше 10, и 400 меньше 1000.
-счёт сошёлся, а ответ невозможен: 2 × 2700 = 5400, и 5400 больше 3000.
-счёт сошёлся, а ответ невозможен: 2 × 540 = 1080, и 1080 больше 100.
-ученик делает 156 шагов, и это правдоподобно: 156 больше 10, и 156 меньше 200.
-счёт сошёлся, а ответ невозможен: 3 × 187 = 561, и 561 больше 100.
-ученик делает 78 шагов, и это правдоподобно: 78 больше 10, и 78 меньше 200.
-счёт сошёлся, а ответ невозможен: 2 × 5940 = 11880, и 11880 больше 3000.
-счёт сошёлся, а ответ невозможен: 2 × 2500 = 5000, и 5000 больше 1000.
-счёт сошёлся, а ответ невозможен: 2 × 3300 = 6600, и 6600 больше 3000.
-счёт сошёлся, а ответ невозможен: 2 × 1440 = 2880, и 2880 больше 1000.
-ученик делает 186 шагов, и это правдоподобно: 186 больше 10, и 186 меньше 200.
+2 ученика весят вместе 42 килограмма, и ответ «ученик весит 84 килограмма» невозможен: один ученик весит меньше, чем 2 ученика вместе, хоть счёт и сошёлся: 42 × 2 = 84, и 84 больше 42.
+ребёнок спит 104 часа за 8 дней, и ответ «ребёнок спит 832 часа в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 104 × 8 = 832, и 832 больше 24.
+11 учеников весят вместе 891 килограмм, и ответ «ученик весит 9801 килограмм» невозможен: один ученик весит меньше, чем 11 учеников вместе, хоть счёт и сошёлся: 891 × 11 = 9801, и 9801 больше 891.
+ученик ходит в школу 24 дня за 4 недели, и ответ «ученик ходит в школу 96 дней в неделю» невозможен: в неделе 7 дней, хоть счёт и сошёлся: 24 × 4 = 96, и 96 больше 7.
+ребёнок обычно спит больше 8 и меньше 14 часов в сутки, и 9 часов в сутки — это правдоподобно: 9 больше 8, и 9 меньше 14.
+ученик ходит в школу 99 месяцев за 11 лет, и ответ «ученик ходит в школу 1089 месяцев в году» невозможен: в году 12 месяцев, хоть счёт и сошёлся: 99 × 11 = 1089, и 1089 больше 12.
+ребёнок спит 60 часов за 6 дней, и ответ «ребёнок спит 360 часов в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 60 × 6 = 360, и 360 больше 24.
+ученик обычно весит больше 20 и меньше 90 килограммов, и 45 килограммов — это правдоподобно: 45 больше 20, и 45 меньше 90.
+ребёнок спит 48 часов за 4 дня, и ответ «ребёнок спит 192 часа в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 48 × 4 = 192, и 192 больше 24.
+7 учеников весят вместе 252 килограмма, и ответ «ученик весит 1764 килограмма» невозможен: один ученик весит меньше, чем 7 учеников вместе, хоть счёт и сошёлся: 252 × 7 = 1764, и 1764 больше 252.
+ученик обычно ходит в школу больше 4 и меньше 7 дней в неделю, и 5 дней в неделю — это правдоподобно: 5 больше 4, и 5 меньше 7.
+рост ученика обычно больше 110 и меньше 190 сантиметров, и 140 сантиметров — это правдоподобно: 140 больше 110, и 140 меньше 190.
+ученик ходит в школу 54 дня за 9 недель, и ответ «ученик ходит в школу 486 дней в неделю» невозможен: в неделе 7 дней, хоть счёт и сошёлся: 54 × 9 = 486, и 486 больше 7.
+ребёнок спит 18 часов за 2 дня, и ответ «ребёнок спит 36 часов в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 18 × 2 = 36, и 36 больше 24.
+ученик ходит в школу 50 месяцев за 5 лет, и ответ «ученик ходит в школу 250 месяцев в году» невозможен: в году 12 месяцев, хоть счёт и сошёлся: 50 × 5 = 250, и 250 больше 12.
+ребёнок спит 110 часов за 11 дней, и ответ «ребёнок спит 1210 часов в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 110 × 11 = 1210, и 1210 больше 24.
+ученик обычно весит больше 20 и меньше 90 килограммов, и 60 килограммов — это правдоподобно: 60 больше 20, и 60 меньше 90.
+ребёнок спит 108 часов за 9 дней, и ответ «ребёнок спит 972 часа в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 108 × 9 = 972, и 972 больше 24.
+12 учеников весят вместе 612 килограммов, и ответ «ученик весит 7344 килограмма» невозможен: один ученик весит меньше, чем 12 учеников вместе, хоть счёт и сошёлся: 612 × 12 = 7344, и 7344 больше 612.
+ученик ходит в школу 25 дней за 5 недель, и ответ «ученик ходит в школу 125 дней в неделю» невозможен: в неделе 7 дней, хоть счёт и сошёлся: 25 × 5 = 125, и 125 больше 7.
+ученику обычно больше 6 и меньше 18 лет, и 8 лет — это правдоподобно: 8 больше 6, и 8 меньше 18.
+ученик обычно ходит в школу больше 8 и меньше 11 месяцев в году, и 10 месяцев в году — это правдоподобно: 10 больше 8, и 10 меньше 11.
+ребёнок спит 63 часа за 7 дней, и ответ «ребёнок спит 441 час в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 63 × 7 = 441, и 441 больше 24.
+ученик ходит в школу 100 месяцев за 10 лет, и ответ «ученик ходит в школу 1000 месяцев в году» невозможен: в году 12 месяцев, хоть счёт и сошёлся: 100 × 10 = 1000, и 1000 больше 12.
+ребёнок спит 55 часов за 5 дней, и ответ «ребёнок спит 275 часов в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 55 × 5 = 275, и 275 больше 24.
+ученик обычно весит больше 20 и меньше 90 килограммов, и 75 килограммов — это правдоподобно: 75 больше 20, и 75 меньше 90.
+ребёнок спит 39 часов за 3 дня, и ответ «ребёнок спит 117 часов в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 39 × 3 = 117, и 117 больше 24.
+6 учеников весят вместе 396 килограммов, и ответ «ученик весит 2376 килограммов» невозможен: один ученик весит меньше, чем 6 учеников вместе, хоть счёт и сошёлся: 396 × 6 = 2376, и 2376 больше 396.
+ученик ходит в школу 50 дней за 10 недель, и ответ «ученик ходит в школу 500 дней в неделю» невозможен: в неделе 7 дней, хоть счёт и сошёлся: 50 × 10 = 500, и 500 больше 7.
+ученику обычно больше 6 и меньше 18 лет, и 13 лет — это правдоподобно: 13 больше 6, и 13 меньше 18.
+ученик ходит в школу 54 месяца за 6 лет, и ответ «ученик ходит в школу 324 месяца в году» невозможен: в году 12 месяцев, хоть счёт и сошёлся: 54 × 6 = 324, и 324 больше 12.
+ребёнок спит 108 часов за 12 дней, и ответ «ребёнок спит 1296 часов в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 108 × 12 = 1296, и 1296 больше 24.
+ученик обычно весит больше 20 и меньше 90 килограммов, и 30 килограммов — это правдоподобно: 30 больше 20, и 30 меньше 90.
+ребёнок спит 110 часов за 10 дней, и ответ «ребёнок спит 1100 часов в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 110 × 10 = 1100, и 1100 больше 24.
 
-ученик не может весить 6 килограммов, ибо это в 11 раз меньше обычного: 66 ÷ 6 = 11.
-ученик не может делать 1122 шага, ибо это 11 обычных: 1122 ÷ 102 = 11.
-ученик не может прожить 1 год, ибо это в 13 раз меньше обычного: 13 ÷ 1 = 13.
-книга не может нести 6480 страниц, ибо это 12 обычных: 6480 ÷ 540 = 12.
-книга не может стоить 9 рублей, ибо это в 70 раз меньше обычного: 630 ÷ 9 = 70.
-книга не может нести 2880 страниц, ибо это 12 обычных: 2880 ÷ 240 = 12.
-ученик не может делать 6 шагов, ибо это в 29 раз меньше обычного: 174 ÷ 6 = 29.
-ученик не может весить 660 килограммов, ибо это 11 обычных: 660 ÷ 60 = 11.
-ученик не может делать 7 шагов, ибо это в 12 раз меньше обычного: 84 ÷ 7 = 12.
-книга не может стоить 10200 рублей, ибо это 10 обычных: 10200 ÷ 1020 = 10.
-книга не может нести 8 страниц, ибо это в 60 раз меньше обычного: 480 ÷ 8 = 60.
-книга не может стоить 5700 рублей, ибо это 10 обычных: 5700 ÷ 570 = 10.
-ученик не может весить 8 килограммов, ибо это в 12 раз меньше обычного: 96 ÷ 8 = 12.
-ученик не может делать 1944 шага, ибо это 12 обычных: 1944 ÷ 162 = 12.
-ученик не может весить 3 килограмма, ибо это в 17 раз меньше обычного: 51 ÷ 3 = 17.
-ученик не может делать 864 шага, ибо это 12 обычных: 864 ÷ 72 = 12.
-книга не может стоить 6 рублей, ибо это в 155 раз меньше обычного: 930 ÷ 6 = 155.
-книга не может нести 4400 страниц, ибо это 10 обычных: 4400 ÷ 440 = 10.
-книга не может стоить 8 рублей, ибо это в 60 раз меньше обычного: 480 ÷ 8 = 60.
-ученик не может весить 1080 килограммов, ибо это 12 обычных: 1080 ÷ 90 = 12.
-ученик не может делать 9 шагов, ибо это в 16 раз меньше обычного: 144 ÷ 9 = 16.
-ученик не может весить 540 килограммов, ибо это 12 обычных: 540 ÷ 45 = 12.
-книга не может нести 8 страниц, ибо это в 85 раз меньше обычного: 680 ÷ 8 = 85.
-книга не может стоить 9570 рублей, ибо это 11 обычных: 9570 ÷ 870 = 11.
-книга не может нести 5 страниц, ибо это в 76 раз меньше обычного: 380 ÷ 5 = 76.
-книга не может стоить 4620 рублей, ибо это 11 обычных: 4620 ÷ 420 = 11.
-ученик не может весить 9 килограммов, ибо это в 9 раз меньше обычного: 81 ÷ 9 = 9.
-ученик не может делать 1320 шагов, ибо это 10 обычных: 1320 ÷ 132 = 10.
-ученик не может весить 9 килограммов, ибо это в 4 раза меньше обычного: 36 ÷ 9 = 4.
-книга не может нести 7040 страниц, ибо это 11 обычных: 7040 ÷ 640 = 11.
-книга не может стоить 6 рублей, ибо это в 130 раз меньше обычного: 780 ÷ 6 = 130.
-книга не может нести 3740 страниц, ибо это 11 обычных: 3740 ÷ 340 = 11.
-книга не может стоить 6 рублей, ибо это в 55 раз меньше обычного: 330 ÷ 6 = 55.
-ученик не может весить 750 килограммов, ибо это 10 обычных: 750 ÷ 75 = 10.
-ученик не может делать 6 шагов, ибо это в 19 раз меньше обычного: 114 ÷ 6 = 19.
-ученик не может прожить 176 лет, ибо это 11 обычных: 176 ÷ 16 = 11.
-книга не может нести 5 страниц, ибо это в 116 раз меньше обычного: 580 ÷ 5 = 116.
-книга не может стоить 8640 рублей, ибо это 12 обычных: 8640 ÷ 720 = 12.
-книга не может нести 8 страниц, ибо это в 35 раз меньше обычного: 280 ÷ 8 = 35.
-ученик не может делать 2112 шагов, ибо это 11 обычных: 2112 ÷ 192 = 11.
+рост ученика обычно 140 сантиметров, и рост ученика не может быть 2660 сантиметров, ибо это в 19 раз больше обычного: 2660 ÷ 140 = 19.
+ученику обычно 12 лет, и ученику не может быть 132 года, ибо это в 11 раз больше обычного: 132 ÷ 12 = 11.
+ученику обычно 12 лет, и ученику не может быть 1 год, ибо это в 12 раз меньше обычного: 12 ÷ 1 = 12.
+ребёнок обычно спит 10 часов в сутки, и ребёнок не может спать 190 часов в сутки, ибо это в 19 раз больше обычного: 190 ÷ 10 = 19.
+ученик обычно ходит в школу 5 дней в неделю, и ученик не может ходить в школу 85 дней в неделю, ибо это в 17 раз больше обычного: 85 ÷ 5 = 17.
+ученик обычно ходит в школу 9 месяцев в году, и ученик не может ходить в школу 144 месяца в году, ибо это в 16 раз больше обычного: 144 ÷ 9 = 16.
+ученик обычно весит 30 килограммов, и ученик не может весить 540 килограммов, ибо это в 18 раз больше обычного: 540 ÷ 30 = 18.
+рост ученика обычно 140 сантиметров, и рост ученика не может быть 1960 сантиметров, ибо это в 14 раз больше обычного: 1960 ÷ 140 = 14.
+рост ученика обычно 140 сантиметров, и рост ученика не может быть 5 сантиметров, ибо это в 28 раз меньше обычного: 140 ÷ 5 = 28.
+ученику обычно 12 лет, и ученику не может быть 192 года, ибо это в 16 раз больше обычного: 192 ÷ 12 = 16.
+ребёнок обычно спит 10 часов в сутки, и ребёнок не может спать 140 часов в сутки, ибо это в 14 раз больше обычного: 140 ÷ 10 = 14.
+ученик обычно ходит в школу 5 дней в неделю, и ученик не может ходить в школу 60 дней в неделю, ибо это в 12 раз больше обычного: 60 ÷ 5 = 12.
+ученик обычно ходит в школу 9 месяцев в году, и ученик не может ходить в школу 99 месяцев в году, ибо это в 11 раз больше обычного: 99 ÷ 9 = 11.
+ученик обычно весит 30 килограммов, и ученик не может весить 390 килограммов, ибо это в 13 раз больше обычного: 390 ÷ 30 = 13.
+ученик обычно весит 30 килограммов, и ученик не может весить 3 килограмма, ибо это в 10 раз меньше обычного: 30 ÷ 3 = 10.
 
-a pupil weighs 69 kilograms, and that is plausible: 69 is greater than 10, and 69 is less than 100.
-a pupil makes 108 steps, and that is plausible: 108 is greater than 10, and 108 is less than 200.
-a pupil has lived 16 years, and that is plausible: 16 is greater than 6, and 16 is less than 18.
-the counting adds up and the answer is impossible: 2 × 3600 = 7200, and 7200 is greater than 1000.
-a book costs 780 roubles, and that is plausible: 780 is greater than 10, and 780 is less than 3000.
-the counting adds up and the answer is impossible: 2 × 1870 = 3740, and 3740 is greater than 1000.
-a book costs 390 roubles, and that is plausible: 390 is greater than 10, and 390 is less than 3000.
-a pupil weighs 84 kilograms, and that is plausible: 84 is greater than 10, and 84 is less than 100.
-the counting adds up and the answer is impossible: 2 × 759 = 1518, and 1518 is greater than 200.
-a pupil weighs 45 kilograms, and that is plausible: 45 is greater than 10, and 45 is less than 100.
-the counting adds up and the answer is impossible: 2 × 3850 = 7700, and 7700 is greater than 1000.
-a book costs 930 roubles, and that is plausible: 930 is greater than 10, and 930 is less than 3000.
-a book holds 460 pages, and that is plausible: 460 is greater than 10, and 460 is less than 1000.
-a book costs 540 roubles, and that is plausible: 540 is greater than 10, and 540 is less than 3000.
-a pupil weighs 99 kilograms, and that is plausible: 99 is greater than 10, and 99 is less than 100.
-the counting adds up and the answer is impossible: 2 × 840 = 1680, and 1680 is greater than 200.
-a pupil weighs 60 kilograms, and that is plausible: 60 is greater than 10, and 60 is less than 100.
-the counting adds up and the answer is impossible: 2 × 540 = 1080, and 1080 is greater than 200.
-a pupil has lived 13 years, and that is plausible: 13 is greater than 6, and 13 is less than 18.
-a book holds 560 pages, and that is plausible: 560 is greater than 10, and 560 is less than 1000.
-the counting adds up and the answer is impossible: 2 × 3795 = 7590, and 7590 is greater than 3000.
-a book holds 300 pages, and that is plausible: 300 is greater than 10, and 300 is less than 1000.
-the counting adds up and the answer is impossible: 2 × 1188 = 2376, and 2376 is greater than 200.
-the counting adds up and the answer is impossible: 2 × 375 = 750, and 750 is greater than 100.
-the counting adds up and the answer is impossible: 2 × 660 = 1320, and 1320 is greater than 200.
-the counting adds up and the answer is impossible: 2 × 216 = 432, and 432 is greater than 100.
-a book holds 660 pages, and that is plausible: 660 is greater than 10, and 660 is less than 1000.
-the counting adds up and the answer is impossible: 2 × 4200 = 8400, and 8400 is greater than 3000.
-a book holds 400 pages, and that is plausible: 400 is greater than 10, and 400 is less than 1000.
-the counting adds up and the answer is impossible: 2 × 2700 = 5400, and 5400 is greater than 3000.
-the counting adds up and the answer is impossible: 2 × 540 = 1080, and 1080 is greater than 100.
-a pupil makes 156 steps, and that is plausible: 156 is greater than 10, and 156 is less than 200.
-the counting adds up and the answer is impossible: 3 × 187 = 561, and 561 is greater than 100.
-a pupil makes 78 steps, and that is plausible: 78 is greater than 10, and 78 is less than 200.
-the counting adds up and the answer is impossible: 2 × 5940 = 11880, and 11880 is greater than 3000.
-the counting adds up and the answer is impossible: 2 × 2500 = 5000, and 5000 is greater than 1000.
-the counting adds up and the answer is impossible: 2 × 3300 = 6600, and 6600 is greater than 3000.
-the counting adds up and the answer is impossible: 2 × 1440 = 2880, and 2880 is greater than 1000.
-a pupil makes 186 steps, and that is plausible: 186 is greater than 10, and 186 is less than 200.
+2 pupils weigh 42 kilograms together, and the answer «a pupil weighs 84 kilograms» is impossible: one pupil weighs less than 2 pupils together, though the counting adds up: 42 × 2 = 84, and 84 is greater than 42.
+a child sleeps 104 hours in 8 days, and the answer «a child sleeps 832 hours a day» is impossible: a day has 24 hours, though the counting adds up: 104 × 8 = 832, and 832 is greater than 24.
+11 pupils weigh 891 kilograms together, and the answer «a pupil weighs 9801 kilograms» is impossible: one pupil weighs less than 11 pupils together, though the counting adds up: 891 × 11 = 9801, and 9801 is greater than 891.
+a pupil goes to school 24 days in 4 weeks, and the answer «a pupil goes to school 96 days a week» is impossible: a week has 7 days, though the counting adds up: 24 × 4 = 96, and 96 is greater than 7.
+a child usually sleeps more than 8 and less than 14 hours a day, and 9 hours a day is plausible: 9 is greater than 8, and 9 is less than 14.
+a pupil goes to school 99 months in 11 years, and the answer «a pupil goes to school 1089 months a year» is impossible: a year has 12 months, though the counting adds up: 99 × 11 = 1089, and 1089 is greater than 12.
+a child sleeps 60 hours in 6 days, and the answer «a child sleeps 360 hours a day» is impossible: a day has 24 hours, though the counting adds up: 60 × 6 = 360, and 360 is greater than 24.
+a pupil usually weighs more than 20 and less than 90 kilograms, and 45 kilograms is plausible: 45 is greater than 20, and 45 is less than 90.
+a child sleeps 48 hours in 4 days, and the answer «a child sleeps 192 hours a day» is impossible: a day has 24 hours, though the counting adds up: 48 × 4 = 192, and 192 is greater than 24.
+7 pupils weigh 252 kilograms together, and the answer «a pupil weighs 1764 kilograms» is impossible: one pupil weighs less than 7 pupils together, though the counting adds up: 252 × 7 = 1764, and 1764 is greater than 252.
+a pupil usually goes to school more than 4 and less than 7 days a week, and 5 days a week is plausible: 5 is greater than 4, and 5 is less than 7.
+a pupil is usually more than 110 and less than 190 centimeters tall, and 140 centimeters is plausible: 140 is greater than 110, and 140 is less than 190.
+a pupil goes to school 54 days in 9 weeks, and the answer «a pupil goes to school 486 days a week» is impossible: a week has 7 days, though the counting adds up: 54 × 9 = 486, and 486 is greater than 7.
+a child sleeps 18 hours in 2 days, and the answer «a child sleeps 36 hours a day» is impossible: a day has 24 hours, though the counting adds up: 18 × 2 = 36, and 36 is greater than 24.
+a pupil goes to school 50 months in 5 years, and the answer «a pupil goes to school 250 months a year» is impossible: a year has 12 months, though the counting adds up: 50 × 5 = 250, and 250 is greater than 12.
+a child sleeps 110 hours in 11 days, and the answer «a child sleeps 1210 hours a day» is impossible: a day has 24 hours, though the counting adds up: 110 × 11 = 1210, and 1210 is greater than 24.
+a pupil usually weighs more than 20 and less than 90 kilograms, and 60 kilograms is plausible: 60 is greater than 20, and 60 is less than 90.
+a child sleeps 108 hours in 9 days, and the answer «a child sleeps 972 hours a day» is impossible: a day has 24 hours, though the counting adds up: 108 × 9 = 972, and 972 is greater than 24.
+12 pupils weigh 612 kilograms together, and the answer «a pupil weighs 7344 kilograms» is impossible: one pupil weighs less than 12 pupils together, though the counting adds up: 612 × 12 = 7344, and 7344 is greater than 612.
+a pupil goes to school 25 days in 5 weeks, and the answer «a pupil goes to school 125 days a week» is impossible: a week has 7 days, though the counting adds up: 25 × 5 = 125, and 125 is greater than 7.
+a pupil is usually more than 6 and less than 18 years old, and 8 years is plausible: 8 is greater than 6, and 8 is less than 18.
+a pupil usually goes to school more than 8 and less than 11 months a year, and 10 months a year is plausible: 10 is greater than 8, and 10 is less than 11.
+a child sleeps 63 hours in 7 days, and the answer «a child sleeps 441 hours a day» is impossible: a day has 24 hours, though the counting adds up: 63 × 7 = 441, and 441 is greater than 24.
+a pupil goes to school 100 months in 10 years, and the answer «a pupil goes to school 1000 months a year» is impossible: a year has 12 months, though the counting adds up: 100 × 10 = 1000, and 1000 is greater than 12.
+a child sleeps 55 hours in 5 days, and the answer «a child sleeps 275 hours a day» is impossible: a day has 24 hours, though the counting adds up: 55 × 5 = 275, and 275 is greater than 24.
+a pupil usually weighs more than 20 and less than 90 kilograms, and 75 kilograms is plausible: 75 is greater than 20, and 75 is less than 90.
+a child sleeps 39 hours in 3 days, and the answer «a child sleeps 117 hours a day» is impossible: a day has 24 hours, though the counting adds up: 39 × 3 = 117, and 117 is greater than 24.
+6 pupils weigh 396 kilograms together, and the answer «a pupil weighs 2376 kilograms» is impossible: one pupil weighs less than 6 pupils together, though the counting adds up: 396 × 6 = 2376, and 2376 is greater than 396.
+a pupil goes to school 50 days in 10 weeks, and the answer «a pupil goes to school 500 days a week» is impossible: a week has 7 days, though the counting adds up: 50 × 10 = 500, and 500 is greater than 7.
+a pupil is usually more than 6 and less than 18 years old, and 13 years is plausible: 13 is greater than 6, and 13 is less than 18.
+a pupil goes to school 54 months in 6 years, and the answer «a pupil goes to school 324 months a year» is impossible: a year has 12 months, though the counting adds up: 54 × 6 = 324, and 324 is greater than 12.
+a child sleeps 108 hours in 12 days, and the answer «a child sleeps 1296 hours a day» is impossible: a day has 24 hours, though the counting adds up: 108 × 12 = 1296, and 1296 is greater than 24.
+a pupil usually weighs more than 20 and less than 90 kilograms, and 30 kilograms is plausible: 30 is greater than 20, and 30 is less than 90.
+a child sleeps 110 hours in 10 days, and the answer «a child sleeps 1100 hours a day» is impossible: a day has 24 hours, though the counting adds up: 110 × 10 = 1100, and 1100 is greater than 24.
 
-a pupil cannot weighs 6 kilograms, for that is 11 times less than usual: 66 ÷ 6 = 11.
-a pupil cannot makes 1122 steps, for that is 11 usual ones: 1122 ÷ 102 = 11.
-a pupil cannot has 1 year, for that is 13 times less than usual: 13 ÷ 1 = 13.
-a book cannot holds 6480 pages, for that is 12 usual ones: 6480 ÷ 540 = 12.
-a book cannot costs 9 roubles, for that is 70 times less than usual: 630 ÷ 9 = 70.
-a book cannot holds 2880 pages, for that is 12 usual ones: 2880 ÷ 240 = 12.
-a pupil cannot makes 6 steps, for that is 29 times less than usual: 174 ÷ 6 = 29.
-a pupil cannot weighs 660 kilograms, for that is 11 usual ones: 660 ÷ 60 = 11.
-a pupil cannot makes 7 steps, for that is 12 times less than usual: 84 ÷ 7 = 12.
-a book cannot costs 10200 roubles, for that is 10 usual ones: 10200 ÷ 1020 = 10.
-a book cannot holds 8 pages, for that is 60 times less than usual: 480 ÷ 8 = 60.
-a book cannot costs 5700 roubles, for that is 10 usual ones: 5700 ÷ 570 = 10.
-a pupil cannot weighs 8 kilograms, for that is 12 times less than usual: 96 ÷ 8 = 12.
-a pupil cannot makes 1944 steps, for that is 12 usual ones: 1944 ÷ 162 = 12.
-a pupil cannot weighs 3 kilograms, for that is 17 times less than usual: 51 ÷ 3 = 17.
-a pupil cannot makes 864 steps, for that is 12 usual ones: 864 ÷ 72 = 12.
-a book cannot costs 6 roubles, for that is 155 times less than usual: 930 ÷ 6 = 155.
-a book cannot holds 4400 pages, for that is 10 usual ones: 4400 ÷ 440 = 10.
-a book cannot costs 8 roubles, for that is 60 times less than usual: 480 ÷ 8 = 60.
-a pupil cannot weighs 1080 kilograms, for that is 12 usual ones: 1080 ÷ 90 = 12.
-a pupil cannot makes 9 steps, for that is 16 times less than usual: 144 ÷ 9 = 16.
-a pupil cannot weighs 540 kilograms, for that is 12 usual ones: 540 ÷ 45 = 12.
-a book cannot holds 8 pages, for that is 85 times less than usual: 680 ÷ 8 = 85.
-a book cannot costs 9570 roubles, for that is 11 usual ones: 9570 ÷ 870 = 11.
-a book cannot holds 5 pages, for that is 76 times less than usual: 380 ÷ 5 = 76.
-a book cannot costs 4620 roubles, for that is 11 usual ones: 4620 ÷ 420 = 11.
-a pupil cannot weighs 9 kilograms, for that is 9 times less than usual: 81 ÷ 9 = 9.
-a pupil cannot makes 1320 steps, for that is 10 usual ones: 1320 ÷ 132 = 10.
-a pupil cannot weighs 9 kilograms, for that is 4 times less than usual: 36 ÷ 9 = 4.
-a book cannot holds 7040 pages, for that is 11 usual ones: 7040 ÷ 640 = 11.
-a book cannot costs 6 roubles, for that is 130 times less than usual: 780 ÷ 6 = 130.
-a book cannot holds 3740 pages, for that is 11 usual ones: 3740 ÷ 340 = 11.
-a book cannot costs 6 roubles, for that is 55 times less than usual: 330 ÷ 6 = 55.
-a pupil cannot weighs 750 kilograms, for that is 10 usual ones: 750 ÷ 75 = 10.
-a pupil cannot makes 6 steps, for that is 19 times less than usual: 114 ÷ 6 = 19.
-a pupil cannot has 176 years, for that is 11 usual ones: 176 ÷ 16 = 11.
-a book cannot holds 5 pages, for that is 116 times less than usual: 580 ÷ 5 = 116.
-a book cannot costs 8640 roubles, for that is 12 usual ones: 8640 ÷ 720 = 12.
-a book cannot holds 8 pages, for that is 35 times less than usual: 280 ÷ 8 = 35.
-a pupil cannot makes 2112 steps, for that is 11 usual ones: 2112 ÷ 192 = 11.
+a pupil is usually 140 centimeters tall, and a pupil cannot be 2660 centimeters tall, for that is 19 times more than usual: 2660 ÷ 140 = 19.
+a pupil is usually 12 years old, and a pupil cannot be 132 years old, for that is 11 times more than usual: 132 ÷ 12 = 11.
+a pupil is usually 12 years old, and a pupil cannot be 1 year old, for that is 12 times less than usual: 12 ÷ 1 = 12.
+a child usually sleeps 10 hours a day, and a child cannot sleep 190 hours a day, for that is 19 times more than usual: 190 ÷ 10 = 19.
+a pupil usually goes to school 5 days a week, and a pupil cannot go to school 85 days a week, for that is 17 times more than usual: 85 ÷ 5 = 17.
+a pupil usually goes to school 9 months a year, and a pupil cannot go to school 144 months a year, for that is 16 times more than usual: 144 ÷ 9 = 16.
+a pupil usually weighs 30 kilograms, and a pupil cannot weigh 540 kilograms, for that is 18 times more than usual: 540 ÷ 30 = 18.
+a pupil is usually 140 centimeters tall, and a pupil cannot be 1960 centimeters tall, for that is 14 times more than usual: 1960 ÷ 140 = 14.
+a pupil is usually 140 centimeters tall, and a pupil cannot be 5 centimeters tall, for that is 28 times less than usual: 140 ÷ 5 = 28.
+a pupil is usually 12 years old, and a pupil cannot be 192 years old, for that is 16 times more than usual: 192 ÷ 12 = 16.
+a child usually sleeps 10 hours a day, and a child cannot sleep 140 hours a day, for that is 14 times more than usual: 140 ÷ 10 = 14.
+a pupil usually goes to school 5 days a week, and a pupil cannot go to school 60 days a week, for that is 12 times more than usual: 60 ÷ 5 = 12.
+a pupil usually goes to school 9 months a year, and a pupil cannot go to school 99 months a year, for that is 11 times more than usual: 99 ÷ 9 = 11.
+a pupil usually weighs 30 kilograms, and a pupil cannot weigh 390 kilograms, for that is 13 times more than usual: 390 ÷ 30 = 13.
+a pupil usually weighs 30 kilograms, and a pupil cannot weigh 3 kilograms, for that is 10 times less than usual: 30 ÷ 3 = 10.
 
-счёт сошёлся, а ответ невозможен: 2 × 2200 = 4400, и 4400 больше 1000.
-книга стоит 630 рублей, и это правдоподобно: 630 больше 10, и 630 меньше 3000.
-книга несёт 360 страниц, и это правдоподобно: 360 больше 10, и 360 меньше 1000.
-счёт сошёлся, а ответ невозможен: 2 × 3240 = 6480, и 6480 больше 3000.
-счёт сошёлся, а ответ невозможен: 2 × 1800 = 3600, и 3600 больше 1000.
-книга стоит 480 рублей, и это правдоподобно: 480 больше 10, и 480 меньше 3000.
-книга несёт 260 страниц, и это правдоподобно: 260 больше 10, и 260 меньше 1000.
-счёт сошёлся, а ответ невозможен: 2 × 1950 = 3900, и 3900 больше 3000.
-счёт сошёлся, а ответ невозможен: 2 × 594 = 1188, и 1188 больше 100.
-книга стоит 330 рублей, и это правдоподобно: 330 больше 10, и 330 меньше 3000.
-ученик весит 93 килограмма, и это правдоподобно: 93 больше 10, и 93 меньше 100.
-счёт сошёлся, а ответ невозможен: 2 × 930 = 1860, и 1860 больше 200.
-счёт сошёлся, а ответ невозможен: 2 × 420 = 840, и 840 больше 100.
-ученик делает 174 шага, и это правдоподобно: 174 больше 10, и 174 меньше 200.
-ученик весит 78 килограммов, и это правдоподобно: 78 больше 10, и 78 меньше 100.
-счёт сошёлся, а ответ невозможен: 2 × 858 = 1716, и 1716 больше 200.
-счёт сошёлся, а ответ невозможен: 3 × 253 = 759, и 759 больше 100.
-ученик делает 144 шага, и это правдоподобно: 144 больше 10, и 144 меньше 200.
-счёт сошёлся, а ответ невозможен: 2 × 330 = 660, и 660 больше 100.
-ученик делает 126 шагов, и это правдоподобно: 126 больше 10, и 126 меньше 200.
-ученик весит 54 килограмма, и это правдоподобно: 54 больше 10, и 54 меньше 100.
-счёт сошёлся, а ответ невозможен: 2 × 648 = 1296, и 1296 больше 200.
-счёт сошёлся, а ответ невозможен: 2 × 270 = 540, и 540 больше 100.
-ученик делает 96 шагов, и это правдоподобно: 96 больше 10, и 96 меньше 200.
-ученик весит 39 килограммов, и это правдоподобно: 39 больше 10, и 39 меньше 100.
-счёт сошёлся, а ответ невозможен: 2 × 390 = 780, и 780 больше 200.
-счёт сошёлся, а ответ невозможен: 2 × 88 = 176, и 176 больше 18.
-ученик делает 66 шагов, и это правдоподобно: 66 больше 10, и 66 меньше 200.
-ученик прожил 14 лет, и это правдоподобно: 14 больше 6, и 14 меньше 18.
-счёт сошёлся, а ответ невозможен: 2 × 3960 = 7920, и 7920 больше 1000.
-книга стоит 1020 рублей, и это правдоподобно: 1020 больше 10, и 1020 меньше 3000.
-книга несёт 620 страниц, и это правдоподобно: 620 больше 10, и 620 меньше 1000.
-счёт сошёлся, а ответ невозможен: 2 × 4650 = 9300, и 9300 больше 3000.
-счёт сошёлся, а ответ невозможен: 2 × 2800 = 5600, и 5600 больше 1000.
-книга стоит 870 рублей, и это правдоподобно: 870 больше 10, и 870 меньше 3000.
-книга несёт 520 страниц, и это правдоподобно: 520 больше 10, и 520 меньше 1000.
-счёт сошёлся, а ответ невозможен: 2 × 4290 = 8580, и 8580 больше 3000.
-счёт сошёлся, а ответ невозможен: 2 × 2530 = 5060, и 5060 больше 1000.
-книга стоит 720 рублей, и это правдоподобно: 720 больше 10, и 720 меньше 3000.
+ребёнок обычно спит больше 8 и меньше 14 часов в сутки, и 10 часов в сутки — это правдоподобно: 10 больше 8, и 10 меньше 14.
+ученик ходит в школу 108 месяцев за 12 лет, и ответ «ученик ходит в школу 1296 месяцев в году» невозможен: в году 12 месяцев, хоть счёт и сошёлся: 108 × 12 = 1296, и 1296 больше 12.
+ребёнок спит 70 часов за 7 дней, и ответ «ребёнок спит 490 часов в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 70 × 7 = 490, и 490 больше 24.
+ученик обычно весит больше 20 и меньше 90 килограммов, и 48 килограммов — это правдоподобно: 48 больше 20, и 48 меньше 90.
+ребёнок спит 60 часов за 5 дней, и ответ «ребёнок спит 300 часов в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 60 × 5 = 300, и 300 больше 24.
+8 учеников весят вместе 312 килограммов, и ответ «ученик весит 2496 килограммов» невозможен: один ученик весит меньше, чем 8 учеников вместе, хоть счёт и сошёлся: 312 × 8 = 2496, и 2496 больше 312.
+ученик обычно ходит в школу больше 4 и меньше 7 дней в неделю, и 6 дней в неделю — это правдоподобно: 6 больше 4, и 6 меньше 7.
+рост ученика обычно больше 110 и меньше 190 сантиметров, и 154 сантиметра — это правдоподобно: 154 больше 110, и 154 меньше 190.
+ученик ходит в школу 60 дней за 10 недель, и ответ «ученик ходит в школу 600 дней в неделю» невозможен: в неделе 7 дней, хоть счёт и сошёлся: 60 × 10 = 600, и 600 больше 7.
+ребёнок спит 27 часов за 3 дня, и ответ «ребёнок спит 81 час в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 27 × 3 = 81, и 81 больше 24.
+ученик ходит в школу 60 месяцев за 6 лет, и ответ «ученик ходит в школу 360 месяцев в году» невозможен: в году 12 месяцев, хоть счёт и сошёлся: 60 × 6 = 360, и 360 больше 12.
+ребёнок спит 120 часов за 12 дней, и ответ «ребёнок спит 1440 часов в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 120 × 12 = 1440, и 1440 больше 24.
+ученик обычно весит больше 20 и меньше 90 килограммов, и 63 килограмма — это правдоподобно: 63 больше 20, и 63 меньше 90.
+ребёнок спит 120 часов за 10 дней, и ответ «ребёнок спит 1200 часов в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 120 × 10 = 1200, и 1200 больше 24.
+2 ученика весят вместе 108 килограммов, и ответ «ученик весит 216 килограммов» невозможен: один ученик весит меньше, чем 2 ученика вместе, хоть счёт и сошёлся: 108 × 2 = 216, и 216 больше 108.
+ученик ходит в школу 30 дней за 6 недель, и ответ «ученик ходит в школу 180 дней в неделю» невозможен: в неделе 7 дней, хоть счёт и сошёлся: 30 × 6 = 180, и 180 больше 7.
+ученику обычно больше 6 и меньше 18 лет, и 9 лет — это правдоподобно: 9 больше 6, и 9 меньше 18.
+ученик ходит в школу 18 месяцев за 2 года, и ответ «ученик ходит в школу 36 месяцев в году» невозможен: в году 12 месяцев, хоть счёт и сошёлся: 18 × 2 = 36, и 36 больше 12.
+ребёнок спит 72 часа за 8 дней, и ответ «ребёнок спит 576 часов в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 72 × 8 = 576, и 576 больше 24.
+ученик ходит в школу 110 месяцев за 11 лет, и ответ «ученик ходит в школу 1210 месяцев в году» невозможен: в году 12 месяцев, хоть счёт и сошёлся: 110 × 11 = 1210, и 1210 больше 12.
+ребёнок спит 66 часов за 6 дней, и ответ «ребёнок спит 396 часов в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 66 × 6 = 396, и 396 больше 24.
+ученик обычно весит больше 20 и меньше 90 килограммов, и 78 килограммов — это правдоподобно: 78 больше 20, и 78 меньше 90.
+ребёнок спит 52 часа за 4 дня, и ответ «ребёнок спит 208 часов в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 52 × 4 = 208, и 208 больше 24.
+7 учеников весят вместе 483 килограмма, и ответ «ученик весит 3381 килограмм» невозможен: один ученик весит меньше, чем 7 учеников вместе, хоть счёт и сошёлся: 483 × 7 = 3381, и 3381 больше 483.
+ученик ходит в школу 55 дней за 11 недель, и ответ «ученик ходит в школу 605 дней в неделю» невозможен: в неделе 7 дней, хоть счёт и сошёлся: 55 × 11 = 605, и 605 больше 7.
+ученику обычно больше 6 и меньше 18 лет, и 14 лет — это правдоподобно: 14 больше 6, и 14 меньше 18.
+ученик ходит в школу 63 месяца за 7 лет, и ответ «ученик ходит в школу 441 месяц в году» невозможен: в году 12 месяцев, хоть счёт и сошёлся: 63 × 7 = 441, и 441 больше 12.
+ребёнок спит 20 часов за 2 дня, и ответ «ребёнок спит 40 часов в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 20 × 2 = 40, и 40 больше 24.
+ученик обычно весит больше 20 и меньше 90 килограммов, и 33 килограмма — это правдоподобно: 33 больше 20, и 33 меньше 90.
+ребёнок спит 121 час за 11 дней, и ответ «ребёнок спит 1331 час в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 121 × 11 = 1331, и 1331 больше 24.
+3 ученика весят вместе 72 килограмма, и ответ «ученик весит 216 килограммов» невозможен: один ученик весит меньше, чем 3 ученика вместе, хоть счёт и сошёлся: 72 × 3 = 216, и 216 больше 72.
+ребёнок спит 117 часов за 9 дней, и ответ «ребёнок спит 1053 часа в сутки» невозможен: в сутках 24 часа, хоть счёт и сошёлся: 117 × 9 = 1053, и 1053 больше 24.
+12 учеников весят вместе 1008 килограммов, и ответ «ученик весит 12096 килограммов» невозможен: один ученик весит меньше, чем 12 учеников вместе, хоть счёт и сошёлся: 1008 × 12 = 12096, и 12096 больше 1008.
+ученик ходит в школу 30 дней за 5 недель, и ответ «ученик ходит в школу 150 дней в неделю» невозможен: в неделе 7 дней, хоть счёт и сошёлся: 30 × 5 = 150, и 150 больше 7.
 
-книга не может нести 4400 страниц, ибо это 11 обычных: 4400 ÷ 400 = 11.
-книга не может стоить 6 рублей, ибо это в 95 раз меньше обычного: 570 ÷ 6 = 95.
-книга не может нести 3600 страниц, ибо это 12 обычных: 3600 ÷ 300 = 12.
-книга не может стоить 7 рублей, ибо это в 60 раз меньше обычного: 420 ÷ 7 = 60.
-ученик не может весить 1188 килограммов, ибо это 12 обычных: 1188 ÷ 99 = 12.
-ученик не может делать 8 шагов, ибо это в 24 раза меньше обычного: 192 ÷ 8 = 24.
-ученик не может весить 840 килограммов, ибо это 10 обычных: 840 ÷ 84 = 10.
-ученик не может делать 9 шагов, ибо это в 18 раз меньше обычного: 162 ÷ 9 = 18.
-ученик не может весить 759 килограммов, ибо это 11 обычных: 759 ÷ 69 = 11.
-ученик не может делать 6 шагов, ибо это в 22 раза меньше обычного: 132 ÷ 6 = 22.
-ученик не может весить 648 килограммов, ибо это 12 обычных: 648 ÷ 54 = 12.
-ученик не может делать 6 шагов, ибо это в 17 раз меньше обычного: 102 ÷ 6 = 17.
-ученик не может весить 390 килограммов, ибо это 10 обычных: 390 ÷ 39 = 10.
-ученик не может делать 9 шагов, ибо это в 8 раз меньше обычного: 72 ÷ 9 = 8.
-ученик не может прожить 168 лет, ибо это 12 обычных: 168 ÷ 14 = 12.
-книга не может нести 8 страниц, ибо это в 80 раз меньше обычного: 640 ÷ 8 = 80.
-книга не может стоить 10560 рублей, ибо это 11 обычных: 10560 ÷ 960 = 11.
-книга не может нести 9 страниц, ибо это в 60 раз меньше обычного: 540 ÷ 9 = 60.
-книга не может стоить 9720 рублей, ибо это 12 обычных: 9720 ÷ 810 = 12.
-книга не может нести 8 страниц, ибо это в 55 раз меньше обычного: 440 ÷ 8 = 55.
-книга не может стоить 6600 рублей, ибо это 10 обычных: 6600 ÷ 660 = 10.
-книга не может нести 5 страниц, ибо это в 68 раз меньше обычного: 340 ÷ 5 = 68.
-книга не может стоить 5610 рублей, ибо это 11 обычных: 5610 ÷ 510 = 11.
-книга не может нести 8 страниц, ибо это в 30 раз меньше обычного: 240 ÷ 8 = 30.
-книга не может стоить 4320 рублей, ибо это 12 обычных: 4320 ÷ 360 = 12.
-ученик не может весить 9 килограммов, ибо это в 10 раз меньше обычного: 90 ÷ 9 = 10.
-ученик не может делать 2160 шагов, ибо это 12 обычных: 2160 ÷ 180 = 12.
-ученик не может весить 5 килограммов, ибо это в 15 раз меньше обычного: 75 ÷ 5 = 15.
-ученик не может делать 1500 шагов, ибо это 10 обычных: 1500 ÷ 150 = 10.
-ученик не может весить 6 килограммов, ибо это в 10 раз меньше обычного: 60 ÷ 6 = 10.
-ученик не может делать 1320 шагов, ибо это 11 обычных: 1320 ÷ 120 = 11.
-ученик не может весить 9 килограммов, ибо это в 5 раз меньше обычного: 45 ÷ 9 = 5.
-ученик не может делать 1080 шагов, ибо это 12 обычных: 1080 ÷ 90 = 12.
-ученик не может прожить 4 года, ибо это в 4 раза меньше обычного: 16 ÷ 4 = 4.
-книга не может нести 7700 страниц, ибо это 11 обычных: 7700 ÷ 700 = 11.
-книга не может стоить 6 рублей, ибо это в 170 раз меньше обычного: 1020 ÷ 6 = 170.
-книга не может нести 7200 страниц, ибо это 12 обычных: 7200 ÷ 600 = 12.
-книга не может стоить 6 рублей, ибо это в 145 раз меньше обычного: 870 ÷ 6 = 145.
-книга не может нести 5000 страниц, ибо это 10 обычных: 5000 ÷ 500 = 10.
-книга не может стоить 9 рублей, ибо это в 80 раз меньше обычного: 720 ÷ 9 = 80.
+ученик обычно ходит в школу 5 дней в неделю, и ученик не может ходить в школу 90 дней в неделю, ибо это в 18 раз больше обычного: 90 ÷ 5 = 18.
+ученик обычно весит 30 килограммов, и ученик не может весить 570 килограммов, ибо это в 19 раз больше обычного: 570 ÷ 30 = 19.
+рост ученика обычно 140 сантиметров, и рост ученика не может быть 7 сантиметров, ибо это в 20 раз меньше обычного: 140 ÷ 7 = 20.
+ребёнок обычно спит 10 часов в сутки, и ребёнок не может спать 150 часов в сутки, ибо это в 15 раз больше обычного: 150 ÷ 10 = 15.
+ученик обычно ходит в школу 9 месяцев в году, и ученик не может ходить в школу 108 месяцев в году, ибо это в 12 раз больше обычного: 108 ÷ 9 = 12.
+рост ученика обычно 140 сантиметров, и рост ученика не может быть 1400 сантиметров, ибо это в 10 раз больше обычного: 1400 ÷ 140 = 10.
+ученику обычно 12 лет, и ученику не может быть 144 года, ибо это в 12 раз больше обычного: 144 ÷ 12 = 12.
+ребёнок обычно спит 10 часов в сутки, и ребёнок не может спать 200 часов в сутки, ибо это в 20 раз больше обычного: 200 ÷ 10 = 20.
+ученик обычно ходит в школу 9 месяцев в году, и ученик не может ходить в школу 153 месяца в году, ибо это в 17 раз больше обычного: 153 ÷ 9 = 17.
+рост ученика обычно 140 сантиметров, и рост ученика не может быть 2100 сантиметров, ибо это в 15 раз больше обычного: 2100 ÷ 140 = 15.
+ученику обычно 12 лет, и ученику не может быть 204 года, ибо это в 17 раз больше обычного: 204 ÷ 12 = 17.
+ученик обычно ходит в школу 5 дней в неделю, и ученик не может ходить в школу 65 дней в неделю, ибо это в 13 раз больше обычного: 65 ÷ 5 = 13.
+ученик обычно весит 30 килограммов, и ученик не может весить 420 килограммов, ибо это в 14 раз больше обычного: 420 ÷ 30 = 14.
+рост ученика обычно 140 сантиметров, и рост ученика не может быть 2800 сантиметров, ибо это в 20 раз больше обычного: 2800 ÷ 140 = 20.
+ребёнок обычно спит 10 часов в сутки, и ребёнок не может спать 100 часов в сутки, ибо это в 10 раз больше обычного: 100 ÷ 10 = 10.
 
-the counting adds up and the answer is impossible: 2 × 2200 = 4400, and 4400 is greater than 1000.
-a book costs 630 roubles, and that is plausible: 630 is greater than 10, and 630 is less than 3000.
-a book holds 360 pages, and that is plausible: 360 is greater than 10, and 360 is less than 1000.
-the counting adds up and the answer is impossible: 2 × 3240 = 6480, and 6480 is greater than 3000.
-the counting adds up and the answer is impossible: 2 × 1800 = 3600, and 3600 is greater than 1000.
-a book costs 480 roubles, and that is plausible: 480 is greater than 10, and 480 is less than 3000.
-a book holds 260 pages, and that is plausible: 260 is greater than 10, and 260 is less than 1000.
-the counting adds up and the answer is impossible: 2 × 1950 = 3900, and 3900 is greater than 3000.
-the counting adds up and the answer is impossible: 2 × 594 = 1188, and 1188 is greater than 100.
-a book costs 330 roubles, and that is plausible: 330 is greater than 10, and 330 is less than 3000.
-a pupil weighs 93 kilograms, and that is plausible: 93 is greater than 10, and 93 is less than 100.
-the counting adds up and the answer is impossible: 2 × 930 = 1860, and 1860 is greater than 200.
-the counting adds up and the answer is impossible: 2 × 420 = 840, and 840 is greater than 100.
-a pupil makes 174 steps, and that is plausible: 174 is greater than 10, and 174 is less than 200.
-a pupil weighs 78 kilograms, and that is plausible: 78 is greater than 10, and 78 is less than 100.
-the counting adds up and the answer is impossible: 2 × 858 = 1716, and 1716 is greater than 200.
-the counting adds up and the answer is impossible: 3 × 253 = 759, and 759 is greater than 100.
-a pupil makes 144 steps, and that is plausible: 144 is greater than 10, and 144 is less than 200.
-the counting adds up and the answer is impossible: 2 × 330 = 660, and 660 is greater than 100.
-a pupil makes 126 steps, and that is plausible: 126 is greater than 10, and 126 is less than 200.
-a pupil weighs 54 kilograms, and that is plausible: 54 is greater than 10, and 54 is less than 100.
-the counting adds up and the answer is impossible: 2 × 648 = 1296, and 1296 is greater than 200.
-the counting adds up and the answer is impossible: 2 × 270 = 540, and 540 is greater than 100.
-a pupil makes 96 steps, and that is plausible: 96 is greater than 10, and 96 is less than 200.
-a pupil weighs 39 kilograms, and that is plausible: 39 is greater than 10, and 39 is less than 100.
-the counting adds up and the answer is impossible: 2 × 390 = 780, and 780 is greater than 200.
-the counting adds up and the answer is impossible: 2 × 88 = 176, and 176 is greater than 18.
-a pupil makes 66 steps, and that is plausible: 66 is greater than 10, and 66 is less than 200.
-a pupil has lived 14 years, and that is plausible: 14 is greater than 6, and 14 is less than 18.
-the counting adds up and the answer is impossible: 2 × 3960 = 7920, and 7920 is greater than 1000.
-a book costs 1020 roubles, and that is plausible: 1020 is greater than 10, and 1020 is less than 3000.
-a book holds 620 pages, and that is plausible: 620 is greater than 10, and 620 is less than 1000.
-the counting adds up and the answer is impossible: 2 × 4650 = 9300, and 9300 is greater than 3000.
-the counting adds up and the answer is impossible: 2 × 2800 = 5600, and 5600 is greater than 1000.
-a book costs 870 roubles, and that is plausible: 870 is greater than 10, and 870 is less than 3000.
-a book holds 520 pages, and that is plausible: 520 is greater than 10, and 520 is less than 1000.
-the counting adds up and the answer is impossible: 2 × 4290 = 8580, and 8580 is greater than 3000.
-the counting adds up and the answer is impossible: 2 × 2530 = 5060, and 5060 is greater than 1000.
-a book costs 720 roubles, and that is plausible: 720 is greater than 10, and 720 is less than 3000.
+a child usually sleeps more than 8 and less than 14 hours a day, and 10 hours a day is plausible: 10 is greater than 8, and 10 is less than 14.
+a pupil goes to school 108 months in 12 years, and the answer «a pupil goes to school 1296 months a year» is impossible: a year has 12 months, though the counting adds up: 108 × 12 = 1296, and 1296 is greater than 12.
+a child sleeps 70 hours in 7 days, and the answer «a child sleeps 490 hours a day» is impossible: a day has 24 hours, though the counting adds up: 70 × 7 = 490, and 490 is greater than 24.
+a pupil usually weighs more than 20 and less than 90 kilograms, and 48 kilograms is plausible: 48 is greater than 20, and 48 is less than 90.
+a child sleeps 60 hours in 5 days, and the answer «a child sleeps 300 hours a day» is impossible: a day has 24 hours, though the counting adds up: 60 × 5 = 300, and 300 is greater than 24.
+8 pupils weigh 312 kilograms together, and the answer «a pupil weighs 2496 kilograms» is impossible: one pupil weighs less than 8 pupils together, though the counting adds up: 312 × 8 = 2496, and 2496 is greater than 312.
+a pupil usually goes to school more than 4 and less than 7 days a week, and 6 days a week is plausible: 6 is greater than 4, and 6 is less than 7.
+a pupil is usually more than 110 and less than 190 centimeters tall, and 154 centimeters is plausible: 154 is greater than 110, and 154 is less than 190.
+a pupil goes to school 60 days in 10 weeks, and the answer «a pupil goes to school 600 days a week» is impossible: a week has 7 days, though the counting adds up: 60 × 10 = 600, and 600 is greater than 7.
+a child sleeps 27 hours in 3 days, and the answer «a child sleeps 81 hours a day» is impossible: a day has 24 hours, though the counting adds up: 27 × 3 = 81, and 81 is greater than 24.
+a pupil goes to school 60 months in 6 years, and the answer «a pupil goes to school 360 months a year» is impossible: a year has 12 months, though the counting adds up: 60 × 6 = 360, and 360 is greater than 12.
+a child sleeps 120 hours in 12 days, and the answer «a child sleeps 1440 hours a day» is impossible: a day has 24 hours, though the counting adds up: 120 × 12 = 1440, and 1440 is greater than 24.
+a pupil usually weighs more than 20 and less than 90 kilograms, and 63 kilograms is plausible: 63 is greater than 20, and 63 is less than 90.
+a child sleeps 120 hours in 10 days, and the answer «a child sleeps 1200 hours a day» is impossible: a day has 24 hours, though the counting adds up: 120 × 10 = 1200, and 1200 is greater than 24.
+2 pupils weigh 108 kilograms together, and the answer «a pupil weighs 216 kilograms» is impossible: one pupil weighs less than 2 pupils together, though the counting adds up: 108 × 2 = 216, and 216 is greater than 108.
+a pupil goes to school 30 days in 6 weeks, and the answer «a pupil goes to school 180 days a week» is impossible: a week has 7 days, though the counting adds up: 30 × 6 = 180, and 180 is greater than 7.
+a pupil is usually more than 6 and less than 18 years old, and 9 years is plausible: 9 is greater than 6, and 9 is less than 18.
+a pupil goes to school 18 months in 2 years, and the answer «a pupil goes to school 36 months a year» is impossible: a year has 12 months, though the counting adds up: 18 × 2 = 36, and 36 is greater than 12.
+a child sleeps 72 hours in 8 days, and the answer «a child sleeps 576 hours a day» is impossible: a day has 24 hours, though the counting adds up: 72 × 8 = 576, and 576 is greater than 24.
+a pupil goes to school 110 months in 11 years, and the answer «a pupil goes to school 1210 months a year» is impossible: a year has 12 months, though the counting adds up: 110 × 11 = 1210, and 1210 is greater than 12.
+a child sleeps 66 hours in 6 days, and the answer «a child sleeps 396 hours a day» is impossible: a day has 24 hours, though the counting adds up: 66 × 6 = 396, and 396 is greater than 24.
+a pupil usually weighs more than 20 and less than 90 kilograms, and 78 kilograms is plausible: 78 is greater than 20, and 78 is less than 90.
+a child sleeps 52 hours in 4 days, and the answer «a child sleeps 208 hours a day» is impossible: a day has 24 hours, though the counting adds up: 52 × 4 = 208, and 208 is greater than 24.
+7 pupils weigh 483 kilograms together, and the answer «a pupil weighs 3381 kilograms» is impossible: one pupil weighs less than 7 pupils together, though the counting adds up: 483 × 7 = 3381, and 3381 is greater than 483.
+a pupil goes to school 55 days in 11 weeks, and the answer «a pupil goes to school 605 days a week» is impossible: a week has 7 days, though the counting adds up: 55 × 11 = 605, and 605 is greater than 7.
+a pupil is usually more than 6 and less than 18 years old, and 14 years is plausible: 14 is greater than 6, and 14 is less than 18.
+a pupil goes to school 63 months in 7 years, and the answer «a pupil goes to school 441 months a year» is impossible: a year has 12 months, though the counting adds up: 63 × 7 = 441, and 441 is greater than 12.
+a child sleeps 20 hours in 2 days, and the answer «a child sleeps 40 hours a day» is impossible: a day has 24 hours, though the counting adds up: 20 × 2 = 40, and 40 is greater than 24.
+a pupil usually weighs more than 20 and less than 90 kilograms, and 33 kilograms is plausible: 33 is greater than 20, and 33 is less than 90.
+a child sleeps 121 hours in 11 days, and the answer «a child sleeps 1331 hours a day» is impossible: a day has 24 hours, though the counting adds up: 121 × 11 = 1331, and 1331 is greater than 24.
+3 pupils weigh 72 kilograms together, and the answer «a pupil weighs 216 kilograms» is impossible: one pupil weighs less than 3 pupils together, though the counting adds up: 72 × 3 = 216, and 216 is greater than 72.
+a child sleeps 117 hours in 9 days, and the answer «a child sleeps 1053 hours a day» is impossible: a day has 24 hours, though the counting adds up: 117 × 9 = 1053, and 1053 is greater than 24.
+12 pupils weigh 1008 kilograms together, and the answer «a pupil weighs 12096 kilograms» is impossible: one pupil weighs less than 12 pupils together, though the counting adds up: 1008 × 12 = 12096, and 12096 is greater than 1008.
+a pupil goes to school 30 days in 5 weeks, and the answer «a pupil goes to school 150 days a week» is impossible: a week has 7 days, though the counting adds up: 30 × 5 = 150, and 150 is greater than 7.
 
-a book cannot holds 4400 pages, for that is 11 usual ones: 4400 ÷ 400 = 11.
-a book cannot costs 6 roubles, for that is 95 times less than usual: 570 ÷ 6 = 95.
-a book cannot holds 3600 pages, for that is 12 usual ones: 3600 ÷ 300 = 12.
-a book cannot costs 7 roubles, for that is 60 times less than usual: 420 ÷ 7 = 60.
-a pupil cannot weighs 1188 kilograms, for that is 12 usual ones: 1188 ÷ 99 = 12.
-a pupil cannot makes 8 steps, for that is 24 times less than usual: 192 ÷ 8 = 24.
-a pupil cannot weighs 840 kilograms, for that is 10 usual ones: 840 ÷ 84 = 10.
-a pupil cannot makes 9 steps, for that is 18 times less than usual: 162 ÷ 9 = 18.
-a pupil cannot weighs 759 kilograms, for that is 11 usual ones: 759 ÷ 69 = 11.
-a pupil cannot makes 6 steps, for that is 22 times less than usual: 132 ÷ 6 = 22.
-a pupil cannot weighs 648 kilograms, for that is 12 usual ones: 648 ÷ 54 = 12.
-a pupil cannot makes 6 steps, for that is 17 times less than usual: 102 ÷ 6 = 17.
-a pupil cannot weighs 390 kilograms, for that is 10 usual ones: 390 ÷ 39 = 10.
-a pupil cannot makes 9 steps, for that is 8 times less than usual: 72 ÷ 9 = 8.
-a pupil cannot has 168 years, for that is 12 usual ones: 168 ÷ 14 = 12.
-a book cannot holds 8 pages, for that is 80 times less than usual: 640 ÷ 8 = 80.
-a book cannot costs 10560 roubles, for that is 11 usual ones: 10560 ÷ 960 = 11.
-a book cannot holds 9 pages, for that is 60 times less than usual: 540 ÷ 9 = 60.
-a book cannot costs 9720 roubles, for that is 12 usual ones: 9720 ÷ 810 = 12.
-a book cannot holds 8 pages, for that is 55 times less than usual: 440 ÷ 8 = 55.
-a book cannot costs 6600 roubles, for that is 10 usual ones: 6600 ÷ 660 = 10.
-a book cannot holds 5 pages, for that is 68 times less than usual: 340 ÷ 5 = 68.
-a book cannot costs 5610 roubles, for that is 11 usual ones: 5610 ÷ 510 = 11.
-a book cannot holds 8 pages, for that is 30 times less than usual: 240 ÷ 8 = 30.
-a book cannot costs 4320 roubles, for that is 12 usual ones: 4320 ÷ 360 = 12.
-a pupil cannot weighs 9 kilograms, for that is 10 times less than usual: 90 ÷ 9 = 10.
-a pupil cannot makes 2160 steps, for that is 12 usual ones: 2160 ÷ 180 = 12.
-a pupil cannot weighs 5 kilograms, for that is 15 times less than usual: 75 ÷ 5 = 15.
-a pupil cannot makes 1500 steps, for that is 10 usual ones: 1500 ÷ 150 = 10.
-a pupil cannot weighs 6 kilograms, for that is 10 times less than usual: 60 ÷ 6 = 10.
-a pupil cannot makes 1320 steps, for that is 11 usual ones: 1320 ÷ 120 = 11.
-a pupil cannot weighs 9 kilograms, for that is 5 times less than usual: 45 ÷ 9 = 5.
-a pupil cannot makes 1080 steps, for that is 12 usual ones: 1080 ÷ 90 = 12.
-a pupil cannot has 4 years, for that is 4 times less than usual: 16 ÷ 4 = 4.
-a book cannot holds 7700 pages, for that is 11 usual ones: 7700 ÷ 700 = 11.
-a book cannot costs 6 roubles, for that is 170 times less than usual: 1020 ÷ 6 = 170.
-a book cannot holds 7200 pages, for that is 12 usual ones: 7200 ÷ 600 = 12.
-a book cannot costs 6 roubles, for that is 145 times less than usual: 870 ÷ 6 = 145.
-a book cannot holds 5000 pages, for that is 10 usual ones: 5000 ÷ 500 = 10.
-a book cannot costs 9 roubles, for that is 80 times less than usual: 720 ÷ 9 = 80.
+a pupil usually goes to school 5 days a week, and a pupil cannot go to school 90 days a week, for that is 18 times more than usual: 90 ÷ 5 = 18.
+a pupil usually weighs 30 kilograms, and a pupil cannot weigh 570 kilograms, for that is 19 times more than usual: 570 ÷ 30 = 19.
+a pupil is usually 140 centimeters tall, and a pupil cannot be 7 centimeters tall, for that is 20 times less than usual: 140 ÷ 7 = 20.
+a child usually sleeps 10 hours a day, and a child cannot sleep 150 hours a day, for that is 15 times more than usual: 150 ÷ 10 = 15.
+a pupil usually goes to school 9 months a year, and a pupil cannot go to school 108 months a year, for that is 12 times more than usual: 108 ÷ 9 = 12.
+a pupil is usually 140 centimeters tall, and a pupil cannot be 1400 centimeters tall, for that is 10 times more than usual: 1400 ÷ 140 = 10.
+a pupil is usually 12 years old, and a pupil cannot be 144 years old, for that is 12 times more than usual: 144 ÷ 12 = 12.
+a child usually sleeps 10 hours a day, and a child cannot sleep 200 hours a day, for that is 20 times more than usual: 200 ÷ 10 = 20.
+a pupil usually goes to school 9 months a year, and a pupil cannot go to school 153 months a year, for that is 17 times more than usual: 153 ÷ 9 = 17.
+a pupil is usually 140 centimeters tall, and a pupil cannot be 2100 centimeters tall, for that is 15 times more than usual: 2100 ÷ 140 = 15.
+a pupil is usually 12 years old, and a pupil cannot be 204 years old, for that is 17 times more than usual: 204 ÷ 12 = 17.
+a pupil usually goes to school 5 days a week, and a pupil cannot go to school 65 days a week, for that is 13 times more than usual: 65 ÷ 5 = 13.
+a pupil usually weighs 30 kilograms, and a pupil cannot weigh 420 kilograms, for that is 14 times more than usual: 420 ÷ 30 = 14.
+a pupil is usually 140 centimeters tall, and a pupil cannot be 2800 centimeters tall, for that is 20 times more than usual: 2800 ÷ 140 = 20.
+a child usually sleeps 10 hours a day, and a child cannot sleep 100 hours a day, for that is 10 times more than usual: 100 ÷ 10 = 10.

@@ -1,4 +1,4 @@
-# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 349 миров, 486198 строк
+# УКАЗАТЕЛЬ МИРОВ ПОКАЗА — 349 миров, 485970 строк
 
 Собран из `datasets/GENESIS-MANIFEST.json` прибором `scripts/world_atlas.py`,
 а не написан рукой: суть каждого мира — первая фраза его собственного объявления,
@@ -11,7 +11,7 @@
 
 ## АКТ «recount» — пересчитать величину: строка утверждает число
 
-Миров 161, строк 253689.
+Миров 161, строк 253389.
 
 - **`links`** (17566 строк; declared, whole_only)  
   **CONVERSATION LINKS** — a question whose subject stands in the PREVIOUS reply (the owner's order, 04.09, item 5; the BESEDA band measures this genus mute 15 of 15).
@@ -165,8 +165,6 @@
   **mathematical spaces v0 (mandate 02.09, L3; notations agreed with holon): four spans, four groups per pass** — Euclidean points «(3, 4)» (exact distance by Pythagorean triples, integer midpoint, shift, reflection, rotation about the origin), graphs «graph …
 - **`mulshare`** (810 строк; recompute, whole_only)  
   **MULTIPLYING SHARES** — multiplication DOES NOT ALWAYS INCREASE, and that is shown by counting.
-- **`plaus`** (798 строк; recompute, whole_only)  
-  **PLAUSIBILITY** — THE COUNTING ADDS UP AND THE ANSWER IS IMPOSSIBLE. Measured 11.09 across the 247 show worlds: «может ли быть», «правдоподобн», «plausible» — NONE. The world of estimation counts approximately, the world of facts declares facts, the world …
 - **`money_story`** (795 строк; recompute, unsigned_only)  
   **STORIES OF MONEY IN THREE LANGUAGES (e9's order 03.09, the organ of money): «tom has $5.20. he spends $1.50. how much money does he have now? 520 − 150 = 370 cents. 370 cents is $3.70.»** — the verbs of money with their signs (spends/spent, pays/paid — mi…
 - **`translate`** (792 строк; recompute, whole_only)  
@@ -227,6 +225,8 @@
   **TIME UNITS IN NINE LANGUAGES** — «сколько минут в двух часах? 120: 2 × 60 = 120.», hour → minutes, minute → seconds, week → days, day → hours, for two to five of the larger unit, the count in words for two to four in the case the phrase needs (в двух часа…
 - **`money`** (500 строк; recompute, unsigned_only)  
   **money in CENTS and the bridge to the decimal writing (e9's order 04.09, band g1: 15 of 65 problems carry «$16.50», and the organism is honestly mute on decimals): prices, sums, multiples and change counted in whole cents and kopecks** — «a pen costs 250 c…
+- **`plaus`** (498 строк; recompute, whole_only)  
+  **PLAUSIBILITY** — THE COUNTING ADDS UP AND THE ANSWER IS IMPOSSIBLE. Measured 11.09 across the 247 show worlds: «может ли быть», «правдоподобн», «plausible» — NONE. The world of estimation counts approximately, the world of facts declares facts, the world …
 - **`kinbearer`** (486 строк; recompute, whole_only)  
   **THE ACTING RELATIVE** — a bearer that is not a name, and that ACTS (06.09).
 - **`verbbridge`** (480 строк; same_object, whole_only)  
@@ -629,7 +629,7 @@
 
 ## АКТ «name» — назвать: что вещь ЕСТЬ и как она зовётся
 
-Миров 25, строк 47871.
+Миров 25, строк 47943.
 
 - **`notationvar`** (10696 строк; recompute, reversibility, declared_pairs_only)  
   **one sign, two scripts: the same record written in ASCII and in typography, and the court reduces both to one canon. The corpus knew every sign in ONE script only, and in different signs** — in DIFFERENT ones: «x^2» 1702 times and «x²» ZERO, «≤» 351 and «<…
@@ -659,12 +659,12 @@
   the ladder of inquiry in SPANISH and ITALIAN, with the marks those tongues require and no others: the inverted question mark that opens a Spanish question, and the accent that separates «sí» from «si»
 - **`equation`** (1366 строк; recompute, whole_only)  
   **the ladder of inquiry on equations: what a root IS, a case DECIDED by substitution with the arithmetic beside the verdict, Vieta shown as sum and product of the roots rather than a formula recited, a refusal with its ground («no whole root between 0 and 1…
+- **`mathfound`** (1304 строк; declared, recompute, finite_explicit_only)  
+  **ОСНОВАНИЯ МАТЕМАТИКИ И НАЗВАННЫЙ ПАДЕЖ** — ОДИН МИР, И ЭТО НЕ СЛУЧАЙНОСТЬ: функция как ОДИН ПРЕДМЕТ («функция f на множестве {1 2 3} задана правилом f(x) = 4x; f(1) = 4»), инъекция свидетелем, счётность, доказательство от противного, индукция — и рядом ше…
 - **`topics`** (1284 строк; declared, whole_only)  
   **EVERYDAY TOPICS** — what a person asks about first (the owner's order, 04.09, item 4; the BESEDA band measures this genus mute 16 of 20, and names its cause: SUBJ-UNKNOWN — the reader does not know the SUBJECT of the question.
 - **`items`** (1273 строк; recompute, declared, whole_only, unsigned_only)  
   **THE THING NAMED BEFORE IT IS COUNTED** — declared until 12.09 in eight words.
-- **`mathfound`** (1232 строк; declared, recompute, finite_explicit_only)  
-  **ОСНОВАНИЯ МАТЕМАТИКИ И НАЗВАННЫЙ ПАДЕЖ** — ОДИН МИР, И ЭТО НЕ СЛУЧАЙНОСТЬ: функция как ОДИН ПРЕДМЕТ («функция f на множестве {1 2 3} задана правилом f(x) = 4x; f(1) = 4»), инъекция свидетелем, счётность, доказательство от противного, индукция — и рядом ше…
 - **`glyphs`** (1101 строк; declared, declared_pairs_only)  
   **the glyph world v0 (embodied-reasoning mandate 02.09, L5): every symbol** — digits, Latin and Cyrillic letters of both cases, signs — as a 5×7 bit grid with a name (tools/glyphs.py, one font table that is also the court's law); shows «grid → symbol», «sym…
 - **`numlabel`** (828 строк; recompute, whole_only)  
