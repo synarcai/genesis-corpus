@@ -1,5 +1,5 @@
 # суд	судит	один	ломтей 348/348	строк 473343
-langcount	135907	0
+langcount	135602	0
 langform	86583	0
 engram	43331	0
 script	20966	0
@@ -17,9 +17,8 @@ shares_percent	3345	0
 discountroad	2808	0
 nomention	2160	0
 article	2089	0
-relations_story	1989	0
 actturn	1872	0
-numgender	1702	0
+numgender	1729	0
 ceilfloor	1340	0
 measure_story	1105	0
 digitlen	1064	0
@@ -123,7 +122,7 @@ pctbase	104	60
 bothlists	60	60
 median	80	65
 soundarticle	116	68
-rugram	28267	70
+rugram	27889	70
 measureprec	96	70
 twokeys	70	70
 swclass	80	71
@@ -224,6 +223,7 @@ propcompare	360	360
 datecmp	364	364
 clockwords	378	378
 letters	414	388
+relations_story	1989	405
 doctree	516	408
 personplace	434	434
 dosupport	660	440
@@ -252,8 +252,8 @@ statistics	1236	780
 translate	792	792
 average	1300	802
 sceneforms	3818	805
+langgen	115486	810
 nature	1050	824
-langgen	115486	837
 geometry_langs	960	840
 speech	1984	854
 notation	1254	864
@@ -293,7 +293,7 @@ goal	2124	2052
 space	2301	2088
 definitions	2141	2132
 linalg	3726	2176
-arith	178532	2236
+arith	178127	2236
 dialogue	2246	2236
 markdown	3848	2588
 numberline	5330	2647
